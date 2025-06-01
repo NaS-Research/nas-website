@@ -1,7 +1,7 @@
 import HeroSection from "@/components/sections/HeroSection";
 import Featured from "@/components/sections/Featured";
-import NowSection from "@/components/sections/NowSection";
-import ContactStrip from "@/components/sections/ContactStrip";
+import LatestResearch from "@/components/sections/LatestResearch";
+import Support from "@/components/sections/Support";
 import Footer from "@/components/Footer";
 
 // Thin white bars on the left & right edges
@@ -18,8 +18,8 @@ export default function Home() {
       <HeroSection />
 
       <Featured />
-      <NowSection />
-      <ContactStrip />
+      <LatestResearch />
+      <Support />
 
       <EdgeSpacer />
       <Footer />
