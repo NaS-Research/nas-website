@@ -1,5 +1,5 @@
 import HeroSection from "@/components/sections/HeroSection";
-import LatestRibbon from "@/components/sections/LatestRibbon";
+import Featured from "@/components/sections/Featured";
 import NowSection from "@/components/sections/NowSection";
 import ContactStrip from "@/components/sections/ContactStrip";
 import Footer from "@/components/Footer";
@@ -16,9 +16,8 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <EdgeSpacer />
 
-      <LatestRibbon />
+      <Featured />
       <NowSection />
       <ContactStrip />
 

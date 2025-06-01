@@ -28,7 +28,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className={`fixed inset-x-0 top-0 z-40 bg-transparent transition-transform duration-300 ${show ? 'translate-y-0' : '-translate-y-full'}`}>
+    <header className={`fixed inset-x-0 top-0 z-40 bg-black transition-transform duration-300 ${show ? 'translate-y-0' : '-translate-y-full'}`}>
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center h-20 text-neutral-200">
         {/* Logo */}
         <Link href="/" className="flex items-center transition-transform duration-150 ease-out hover:scale-110 active:scale-95">

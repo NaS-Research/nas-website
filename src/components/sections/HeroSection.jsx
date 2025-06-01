@@ -1,6 +1,6 @@
 "use client";
 
-import { FiArrowUpRight } from "react-icons/fi";
+import { FiArrowUp } from "react-icons/fi";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -58,17 +58,21 @@ export default function HeroSection() {
           <button
             type="submit"
             aria-label="Submit prompt"
-            className="p-4 pr-5 text-neutral-400 hover:text-white transition flex-shrink-0"
+            className="p-3 text-neutral-400 hover:text-white transition flex-shrink-0 bg-neutral-700 rounded-full translate-x-[-6px] translate-y-[14px] cursor-pointer"
           >
-            <FiArrowUpRight size={20} />
+            <FiArrowUp size={24} />
           </button>
         </form>
       </div>
 
       {/* Scroll hint */}
-      <p className="absolute bottom-10 text-sm text-neutral-500">
+      <button
+        type="button"
+        onClick={() => document.getElementById('next-section').scrollIntoView({ behavior: 'smooth' })}
+        className="absolute bottom-0 mb-4 text-base text-neutral-500 hover:text-white transition cursor-pointer"
+      >
         ↓ Scroll to explore
-      </p>
+      </button>
     </section>
   );
 }
