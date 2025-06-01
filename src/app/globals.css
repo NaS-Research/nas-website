@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "Willington";
+  src: url("/assets/fonts/Willington.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import "tailwindcss";
+
+
+/* ─────────────────────────────
+   Global design tokens
+   ────────────────────────────*/
+:root {
+  --accent-gold: #d4af37;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: var(--accent-gold);
+  color: #ffffff;
+}
+
+/* Utility class for the dark footer */
+.footer-dark {
+  @apply bg-neutral-900 text-neutral-100;
+}
+
+/* ─────────────────────────────
+   Typography & base elements
+   ────────────────────────────*/
+
+/* Default font for body text */
+body {
+  @apply bg-white text-neutral-900 leading-relaxed overflow-x-hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* Headings inherit system font with tight tracking */
+h1, h2, h3, h4, h5, h6 {
+  @apply tracking-tight font-medium text-neutral-900;
+}
+
+/* Anchor defaults */
+a:not(.no-underline) {
+  @apply underline-offset-4 transition;
+}
+
+/* Section block helper — top & bottom padding for consistent rhythm */
+.section-block {
+  @apply py-24 md:py-32;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+/* Hide page titles and subtitles when lightbox viewer is open */
+body.viewer-open h1,
+body.viewer-open p {
+  display: none;
+}
