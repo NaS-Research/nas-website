@@ -2,69 +2,52 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 export const metadata = {
   /* ---------- Basic identity ---------- */
-  title: "Dalron J. Robertson | AI/ML Researcher, Engineer & Founder of NaS",
+  title: "NaS Research | Computational Tools for Life‑Science",
   description:
-    "AI/ML researcher, engineer, and founder advancing innovation across life sciences, healthcare technology, computational biology, pharmacology, and intelligent systems.",
-  authors: [
-    { name: "Dalron J. Robertson", url: "https://dalronjrobertson.com" },
-  ],
+    "NaS Research builds open computational tools, AI models, and automated systems that accelerate discovery across biology, medicine, and biotechnology.",
+  authors: [{ name: "NaS Research", url: "https://nasresearch.bio" }],
   keywords: [
-    "Dalron J. Robertson",
-    "Dalron Robertson",
-    "AGNDJ",
-    "A Guy Named DJ",
+    "NaS Research",
     "NaS",
-    "Nicole Antoinette Shaw",
-    "Nicole",
-    "Dalron",
-    "AI pharmacology",
     "computational biology",
-    "machine learning",
-    "drug discovery",
-    "life-science research",
-    "high-performance computing",
-    "biomedical engineering",
-    "scientific research",
-    "health technology",
-    "precision medicine",
-    "quantum computing",
-    "bioinformatics"
+    "AI drug discovery",
+    "life‑science engineering",
+    "robotic labs",
+    "bioinformatics",
+    "high‑performance computing",
+    "biotechnology",
+    "precision medicine"
   ],
-  metadataBase: new URL("https://dalronjrobertson.com"),
+  metadataBase: new URL("https://nasresearch.bio"),
 
   /* ---------- Icons ---------- */
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
-    other: [
-      { rel: "mask-icon", url: "/safari-pinned-tab.svg", color: "#000000" },
-    ],
+    other: [{ rel: "mask-icon", url: "/safari-pinned-tab.svg", color: "#000000" }],
   },
 
   /* ---------- Open Graph / social preview ---------- */
   openGraph: {
-    title: "Dalron J. Robertson",
+    title: "NaS Research",
     description:
-      "Researcher and engineer creating intelligent systems for groundbreaking discoveries in biology, medicine, and AI-driven pharmacology.",
-    url: "https://dalronjrobertson.com",
-    siteName: "Dalron J. Robertson",
+      "Building computational tools and AI-driven platforms for next‑generation life‑science research.",
+    url: "https://nasresearch.bio",
+    siteName: "NaS Research",
     locale: "en_US",
-    type: "profile",
+    type: "website",
     images: [
       {
-        url: new URL("/og.png", new URL("https://dalronrobertson.com")).href,
+        url: new URL("/og.png", new URL("https://nasresearch.bio")).href,
         width: 1200,
         height: 630,
-        alt: "Dalron J. Robertson site preview",
+        alt: "NaS Research site preview",
       },
     ],
   },
 
-
   /* ---------- SEO helpers ---------- */
-  alternates: {
-    canonical: "https://dalronrobertson.com",
-  },
+  alternates: { canonical: "https://nasresearch.bio" },
   robots: {
     index: true,
     follow: true,
@@ -74,46 +57,17 @@ export const metadata = {
   /* ---------- Structured Data (JSON-LD) ---------- */
   structuredData: {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Dalron J. Robertson",
-    "url": "https://dalronrobertson.com",
+    "@type": "Organization",
+    "name": "NaS Research",
+    "url": "https://nasresearch.bio",
     "sameAs": [
-      "https://linkedin.com/in/dalronjrobertson",
-      "https://instagram.com/AGuyNamedDJ"
+      "https://www.linkedin.com/company/nasresearch/",
+      "https://www.instagram.com/nasresearch/"
     ],
-    "jobTitle": "Researcher and Engineer",
-    "affiliation": {
-      "@type": "Organization",
-      "name": "NaS"
-    },
-    "alumniOf": [
-      {
-        "@type": "EducationalOrganization",
-        "name": "Chicago State University"
-      },
-      {
-        "@type": "EducationalOrganization",
-        "name": "Jackson State University"
-      },
-      {
-        "@type": "EducationalOrganization",
-        "name": "Mississippi College"
-      }
-    ],
-    "memberOf": [
-      {
-        "@type": "Organization",
-        "name": "Scale AI"
-      },
-      {
-        "@type": "Organization",
-        "name": "Medication Management Partners"
-      },
-      {
-        "@type": "Organization",
-        "name": "CVS Pharmacy"
-      }
-    ]
+    "founder": {
+      "@type": "Person",
+      "name": "Dalron J. Robertson"
+    }
   }
 };
 
