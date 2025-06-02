@@ -51,8 +51,8 @@ export default function Navbar() {
   }, [sidebarOpen]);
 
   return (
-    <header className={`fixed inset-x-0 top-0 z-40 bg-black transition-transform duration-300 ${show ? 'translate-y-0' : '-translate-y-full'}`}>
-      <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center h-20 text-neutral-200">
+    <header className={`fixed inset-x-0 top-0 z-60 bg-black transition-transform duration-300 ${show ? 'translate-y-0' : '-translate-y-full'}`}>
+      <nav className="relative z-50 mx-auto max-w-7xl px-2 sm:px-4 lg:px-6 flex items-center h-20 text-neutral-200">
         {/* Logo */}
         <Link href="/" className="flex items-center transition-transform duration-150 ease-out hover:scale-110 active:scale-95">
           <Image
@@ -67,8 +67,8 @@ export default function Navbar() {
 
         {/* Sidebar / menu button */}
         <button
-          aria-label="Open menu"
-          onClick={() => setSidebarOpen(true)}
+          aria-label="Toggle menu"
+          onClick={() => setSidebarOpen(prev => !prev)}
           className="ml-3 text-neutral-200 p-3.5 rounded-md hover:bg-neutral-700/60 focus:outline-none focus:ring-2 focus:ring-white transition"
         >
           <FiMenu size={26} />
@@ -108,23 +108,7 @@ export default function Navbar() {
           sidebarOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <div className="flex items-center justify-between px-6 h-20">
-          <Image
-            src="/assets/images/NaSLogonbg.png"
-            alt="NaS Logo"
-            width={48}
-            height={48}
-            className="rounded-full"
-          />
-          <button
-            aria-label="Close menu"
-            onClick={() => setSidebarOpen(false)}
-            className="text-neutral-400 hover:text-white p-2"
-          >
-            <FiMenu size={22} />
-          </button>
-        </div>
-        <nav className="flex flex-col gap-4 px-6 mt-6 text-lg">
+        <nav className="flex flex-col gap-4 px-8 pt-[20vh] text-xl">
           <Link href="/research" onClick={() => setSidebarOpen(false)}>Research</Link>
           <Link href="/support" onClick={() => setSidebarOpen(false)}>Support</Link>
           <Link href="/careers" onClick={() => setSidebarOpen(false)}>Careers</Link>
