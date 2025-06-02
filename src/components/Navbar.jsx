@@ -5,10 +5,12 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { IconLayoutSidebar, IconLayoutSidebarRight } from "@tabler/icons-react";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
+import ComingSoonModal from "@/components/sections/ComingSoonModal";
 
 export default function Navbar() {
   const [show, setShow] = useState(true);
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     let lastY = window.scrollY;
@@ -92,12 +94,13 @@ export default function Navbar() {
           </button>
 
           {/* Log‑in link */}
-          <Link
-            href="/login"
+          <button
             className="px-6 py-2.5 rounded-full bg-neutral-800/80 text-base font-medium text-neutral-200 hover:bg-neutral-700/80 focus:outline-none focus:ring-2 focus:ring-white transition"
+            onClick={() => setShowModal(true)}
+            type="button"
           >
             Log&nbsp;in
-          </Link>
+          </button>
         </div>
       </nav>
 
@@ -123,6 +126,8 @@ export default function Navbar() {
           <Link href="/contact" onClick={() => setSidebarOpen(false)}>Contact</Link>
         </nav>
       </aside>
+      {/* Coming Soon Modal */}
+      <ComingSoonModal open={showModal} onClose={() => setShowModal(false)} />
     </header>
   );
 }

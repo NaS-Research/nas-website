@@ -3,6 +3,7 @@
 import { FiArrowUp } from "react-icons/fi";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import ComingSoonModal from "@/components/sections/ComingSoonModal";
 
 export default function HeroSection() {
   const prompts = [
@@ -17,6 +18,7 @@ export default function HeroSection() {
   ];
   const [currentPrompt, setCurrentPrompt] = useState(prompts[0]);
   const [userInput, setUserInput] = useState("");
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     if (userInput.trim() === "") {
@@ -56,13 +58,18 @@ export default function HeroSection() {
             </AnimatePresence>
           </div>
           <button
-            type="submit"
+            type="button"
             aria-label="Submit prompt"
+            onClick={() => setShowModal(true)}
             className="p-3 text-neutral-400 hover:text-white transition flex-shrink-0 bg-neutral-700 rounded-full translate-x-[-6px] translate-y-[14px] cursor-pointer"
           >
             <FiArrowUp size={24} />
           </button>
         </form>
+        {/* Teaser text below the prompt */}
+        <p className="mt-6 text-center text-neutral-400 text-base">
+          Coming soon.
+        </p>
       </div>
 
       {/* Scroll hint */}
@@ -73,6 +80,8 @@ export default function HeroSection() {
       >
         ↓ Scroll to explore
       </button>
+
+      <ComingSoonModal open={showModal} onClose={() => setShowModal(false)} />
     </section>
   );
 }
