@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { FiMenu, FiSearch } from "react-icons/fi";
+import { IconLayoutSidebar, IconLayoutSidebarRight } from "@tabler/icons-react";
+import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 
 export default function Navbar() {
   const [show, setShow] = useState(true);
@@ -34,7 +35,7 @@ export default function Navbar() {
     if (!main) return;
 
     if (sidebarOpen) {
-      main.style.transition = "transform 0.3s ease-out";
+      main.style.transition = "transform 0.5s ease-in-out";
       main.style.transform = "translateX(240px)"; // width of sidebar (w-60)
       main.style.overflowX = "hidden";
     } else {
@@ -69,9 +70,13 @@ export default function Navbar() {
         <button
           aria-label="Toggle menu"
           onClick={() => setSidebarOpen(prev => !prev)}
-          className="ml-3 text-neutral-200 p-3.5 rounded-md hover:bg-neutral-700/60 focus:outline-none focus:ring-2 focus:ring-white transition"
+          className="group ml-3 p-3.5 rounded-md cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white transition"
         >
-          <FiMenu size={26} />
+          {sidebarOpen ? (
+            <IconLayoutSidebarRight className="w-6 h-6 text-neutral-200 opacity-60 group-hover:opacity-100 transition-opacity duration-150" />
+          ) : (
+            <IconLayoutSidebar className="w-6 h-6 text-neutral-200 opacity-60 group-hover:opacity-100 transition-opacity duration-150" />
+          )}
         </button>
 
         {/* Right‑side controls */}
@@ -79,9 +84,9 @@ export default function Navbar() {
           {/* Search button */}
           <button
             aria-label="Search"
-            className="text-neutral-200 p-3.5 rounded-md hover:bg-neutral-700/60 focus:outline-none focus:ring-2 focus:ring-white transition"
+            className="group p-3.5 rounded-md cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white transition"
           >
-            <FiSearch size={26} />
+            <MagnifyingGlassIcon className="w-6 h-6 text-neutral-200 opacity-60 group-hover:opacity-100 transition-opacity duration-150" />
           </button>
 
           {/* Log‑in link */}
@@ -104,7 +109,7 @@ export default function Navbar() {
 
       {/* Sidebar panel */}
       <aside
-        className={`fixed top-0 left-0 z-40 h-full w-60 bg-black text-neutral-200 transform transition-transform duration-300 ${
+        className={`fixed top-0 left-0 z-40 h-full w-60 bg-black text-neutral-200 transform transition-transform duration-500 ease-in-out ${
           sidebarOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
