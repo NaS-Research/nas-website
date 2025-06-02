@@ -30,7 +30,7 @@ export default function Footer() {
           <Link href="https://www.instagram.com/nasresearch/?hl=en" aria-label="Instagram" className="hover:text-white transition-colors">
             <SiInstagram className="w-6 h-6" />
           </Link>
-          <Link href="https://www.linkedin.com/company/nas-research" aria-label="LinkedIn" className="hover:text-white transition-colors">
+          <Link href="https://www.linkedin.com/company/nasresearch/" aria-label="LinkedIn" className="hover:text-white transition-colors">
             <SiLinkedin className="w-6 h-6" />
           </Link>
         </div>
