@@ -20,11 +20,10 @@ export const metadata = {
   ],
   metadataBase: new URL("https://nasresearch.bio"),
 
-  /* ---------- Icons ---------- */
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
-    other: [{ rel: "mask-icon", url: "/safari-pinned-tab.svg", color: "#000000" }],
+    other: [{ rel: "mask-icon", url: "/favicon.svg", color: "#000000" }],
   },
 
   /* ---------- Open Graph / social preview ---------- */
@@ -78,7 +77,16 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <head />
+      <head>
+        {/* Favicons & PWA assets */}
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="96x96"  href="/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/web-app-manifest-192x192.png" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/web-app-manifest-512x512.png" />
+        <link rel="mask-icon" href="/favicon.svg" color="#000000" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="theme-color" content="#000000" />
+      </head>
       <body className="bg-red-500 min-h-screen antialiased">
         <Navbar />
         <main>
