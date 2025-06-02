@@ -121,7 +121,7 @@ export default function Navbar() {
 
           {/* Log‑in link */}
           <button
-            className="px-6 py-2.5 rounded-full bg-neutral-800/80 text-base font-medium text-neutral-200 hover:bg-neutral-700/80 focus:outline-none focus:ring-2 focus:ring-white transition"
+            className="px-6 py-2.5 rounded-full bg-neutral-800/80 text-base font-medium text-neutral-200 hover:bg-neutral-700/80 focus:outline-none transition active:scale-95 transform transition-transform duration-100 cursor-pointer"
             onClick={() => setShowModal(true)}
             type="button"
           >
