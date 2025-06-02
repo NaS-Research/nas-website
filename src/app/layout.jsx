@@ -127,7 +127,9 @@ export default function RootLayout({ children }) {
       <head />
       <body className="bg-red-500 min-h-screen antialiased">
         <Navbar />
-        {children}
+        <main>
+          {children}
+        </main>
       </body>
     </html>
   );

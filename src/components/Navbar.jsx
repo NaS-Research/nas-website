@@ -7,6 +7,7 @@ import { FiMenu, FiSearch } from "react-icons/fi";
 
 export default function Navbar() {
   const [show, setShow] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   useEffect(() => {
     let lastY = window.scrollY;
@@ -27,6 +28,28 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Shift only <main> when the sidebar toggles
+  useEffect(() => {
+    const main = document.querySelector("main");
+    if (!main) return;
+
+    if (sidebarOpen) {
+      main.style.transition = "transform 0.3s ease-out";
+      main.style.transform = "translateX(240px)"; // width of sidebar (w-60)
+      main.style.overflowX = "hidden";
+    } else {
+      main.style.transform = "";
+      main.style.overflowX = "";
+    }
+
+    return () => {
+      if (main) {
+        main.style.transform = "";
+        main.style.overflowX = "";
+      }
+    };
+  }, [sidebarOpen]);
+
   return (
     <header className={`fixed inset-x-0 top-0 z-40 bg-black transition-transform duration-300 ${show ? 'translate-y-0' : '-translate-y-full'}`}>
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center h-20 text-neutral-200">
@@ -42,16 +65,17 @@ export default function Navbar() {
           />
         </Link>
 
+        {/* Sidebar / menu button */}
+        <button
+          aria-label="Open menu"
+          onClick={() => setSidebarOpen(true)}
+          className="ml-3 text-neutral-200 p-3.5 rounded-md hover:bg-neutral-700/60 focus:outline-none focus:ring-2 focus:ring-white transition"
+        >
+          <FiMenu size={26} />
+        </button>
+
         {/* Right‑side controls */}
         <div className="ml-auto flex items-center gap-3">
-          {/* Sidebar / menu button */}
-          <button
-            aria-label="Open menu"
-            className="text-neutral-200 p-3.5 rounded-md hover:bg-neutral-700/60 focus:outline-none focus:ring-2 focus:ring-white transition"
-          >
-            <FiMenu size={26} />
-          </button>
-
           {/* Search button */}
           <button
             aria-label="Search"
@@ -69,6 +93,45 @@ export default function Navbar() {
           </Link>
         </div>
       </nav>
+
+      {/* Sidebar overlay */}
+      {sidebarOpen && (
+        <div
+          className="fixed inset-0 z-30 bg-black/80"
+          onClick={() => setSidebarOpen(false)}
+        />
+      )}
+
+      {/* Sidebar panel */}
+      <aside
+        className={`fixed top-0 left-0 z-40 h-full w-60 bg-black text-neutral-200 transform transition-transform duration-300 ${
+          sidebarOpen ? "translate-x-0" : "-translate-x-full"
+        }`}
+      >
+        <div className="flex items-center justify-between px-6 h-20">
+          <Image
+            src="/assets/images/NaSLogonbg.png"
+            alt="NaS Logo"
+            width={48}
+            height={48}
+            className="rounded-full"
+          />
+          <button
+            aria-label="Close menu"
+            onClick={() => setSidebarOpen(false)}
+            className="text-neutral-400 hover:text-white p-2"
+          >
+            <FiMenu size={22} />
+          </button>
+        </div>
+        <nav className="flex flex-col gap-4 px-6 mt-6 text-lg">
+          <Link href="/research" onClick={() => setSidebarOpen(false)}>Research</Link>
+          <Link href="/support" onClick={() => setSidebarOpen(false)}>Support</Link>
+          <Link href="/careers" onClick={() => setSidebarOpen(false)}>Careers</Link>
+          <Link href="/about" onClick={() => setSidebarOpen(false)}>About NaS</Link>
+          <Link href="/contact" onClick={() => setSidebarOpen(false)}>Contact</Link>
+        </nav>
+      </aside>
     </header>
   );
 }
