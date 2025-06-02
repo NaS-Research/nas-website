@@ -31,26 +31,52 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Shift only <main> when the sidebar toggles
+  // Shift only <main> when the sidebar toggles and keep the right edge fixed
   useEffect(() => {
     const main = document.querySelector("main");
     if (!main) return;
 
+    const sidebarWidth = 240; // Tailwind w‑60 (15rem)
+
     if (sidebarOpen) {
-      main.style.transition = "transform 0.5s ease-in-out, width 0.5s ease-in-out";
-      main.style.transform = "translateX(240px)";  // width of sidebar (w-60)
-      main.style.width = "calc(100% - 240px)";
+      // 1. Freeze current width in pixels so 'auto' → length becomes animatable
+      const startWidth = main.getBoundingClientRect().width;
+      main.style.transition = "none";
+      main.style.width = `${startWidth}px`;
+      main.style.marginLeft = "0px";
       main.style.overflowX = "hidden";
+
+      // 2. Next frame: animate both width and margin‑left together
+      requestAnimationFrame(() => {
+        main.style.transition =
+          "margin-left 0.6s cubic-bezier(0.4,0,0.2,1), width 0.6s cubic-bezier(0.4,0,0.2,1)";
+        main.style.willChange = "margin-left, width";
+        main.style.width = `calc(100% - ${sidebarWidth}px)`;
+        main.style.marginLeft = `${sidebarWidth}px`;
+      });
     } else {
-      main.style.transform = "";
-      main.style.width = "";
-      main.style.overflowX = "";
+      // Reverse animation: pixel width → 100% while margin‑left goes to 0
+      const startWidth = main.getBoundingClientRect().width;
+      main.style.transition = "none";
+      main.style.width = `${startWidth}px`;
+      main.style.marginLeft = `${sidebarWidth}px`;
+
+      requestAnimationFrame(() => {
+        main.style.transition =
+          "margin-left 0.6s cubic-bezier(0.4,0,0.2,1), width 0.6s cubic-bezier(0.4,0,0.2,1)";
+        main.style.willChange = "margin-left, width";
+        main.style.width = "";
+        main.style.marginLeft = "";
+      });
     }
 
     return () => {
       if (main) {
-        main.style.transform = "";
+        main.style.marginLeft = "";
+        main.style.width = "";
         main.style.overflowX = "";
+        main.style.willChange = "";
+        main.style.transition = "";
       }
     };
   }, [sidebarOpen]);
