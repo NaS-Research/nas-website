@@ -35,11 +35,13 @@ export default function Navbar() {
     if (!main) return;
 
     if (sidebarOpen) {
-      main.style.transition = "transform 0.5s ease-in-out";
-      main.style.transform = "translateX(240px)"; // width of sidebar (w-60)
+      main.style.transition = "transform 0.5s ease-in-out, width 0.5s ease-in-out";
+      main.style.transform = "translateX(240px)";  // width of sidebar (w-60)
+      main.style.width = "calc(100% - 240px)";
       main.style.overflowX = "hidden";
     } else {
       main.style.transform = "";
+      main.style.width = "";
       main.style.overflowX = "";
     }
 
