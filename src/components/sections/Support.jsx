@@ -17,13 +17,13 @@ export default function Support() {
           viewport={{ once: true }}
           className="mb-12"
         >
-          <h2 className="text-5xl font-semibold text-left mb-4">Help us push science forward.</h2>
-          <p className="text-xl text-left mb-6">
+          <h2 className="text-[1.8rem] leading-tight sm:text-5xl sm:leading-snug font-semibold text-left mb-4">Help us push science forward.</h2>
+          <p className="text-[1rem] sm:text-xl text-left mb-6">
             Your support equips us with the advanced tools and technology essential for breakthroughs in science and AI.
           </p>
           <button
             onClick={() => setShowModal(true)}
-            className="bg-[#D3A15C] text-black font-bold px-6 py-3 rounded hover:bg-[#BF8E48] transition transform active:scale-95 cursor-pointer"
+            className="bg-[#D3A15C] text-black font-bold px-5 py-2.5 sm:px-6 sm:py-3 text-sm sm:text-base rounded hover:bg-[#BF8E48] transition transform active:scale-95 cursor-pointer"
           >
             GIVE NOW
           </button>
@@ -46,7 +46,7 @@ export default function Support() {
               <p className="text-sm text-neutral-300">Support our research directly or partner with us to build the future of scientific innovation.</p>
               <button
                 onClick={() => setShowModal(true)}
-                className="mt-4 inline-block text-[#D3A15C] font-semibold cursor-pointer transition-opacity duration-200 hover:opacity-70 active:scale-95 transform"
+                className="mt-4 inline-block text-[0.95rem] sm:text-base text-[#D3A15C] font-semibold cursor-pointer transition-opacity duration-200 hover:opacity-70 active:scale-95 transform"
               >
                 WAYS TO GIVE »
               </button>
@@ -69,7 +69,7 @@ export default function Support() {
               <p className="text-sm text-neutral-300">See exactly how your contribution provides the technology and resources needed for groundbreaking discoveries.</p>
               <button
                 onClick={() => setShowModal(true)}
-                className="mt-4 inline-block text-[#D3A15C] font-semibold cursor-pointer transition-opacity duration-200 hover:opacity-70 active:scale-95 transform"
+                className="mt-4 inline-block text-[0.95rem] sm:text-base text-[#D3A15C] font-semibold cursor-pointer transition-opacity duration-200 hover:opacity-70 active:scale-95 transform"
               >
                 YOUR IMPACT »
               </button>

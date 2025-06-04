@@ -33,16 +33,16 @@ export default function HeroSection() {
     }
   }, [userInput]);
   return (
-    <section className="relative h-screen w-full flex flex-col items-center justify-center px-4 -translate-y-[5%]">
+    <section className="relative h-[90vh] sm:h-screen w-full flex flex-col items-center justify-center px-4 -translate-y-[5%]">
       {/* Greeting headline */}
-      <h1 className="text-2xl md:text-4xl font-semibold text-white text-center mb-10">
+      <h1 className="text-2xl md:text-4xl font-semibold text-white text-center mb-6 sm:mb-10">
         What can I help you discover?
       </h1>
 
       {/* Prompt input container */}
-      <div className="w-full max-w-4xl">
+      <div className="w-10/12 sm:w-full max-w-4xl">
         <form className="flex items-center bg-neutral-800/80 rounded-3xl ring-1 ring-neutral-700 backdrop-blur">
-          <div className="relative flex-1 overflow-hidden px-14 py-12">
+          <div className="relative flex-1 overflow-hidden px-4 py-10 sm:px-14 sm:py-12">
             <AnimatePresence mode="wait">
               <motion.textarea
                 key={currentPrompt}
@@ -53,7 +53,7 @@ export default function HeroSection() {
                 placeholder={currentPrompt}
                 value={userInput}
                 onChange={(e) => setUserInput(e.target.value)}
-                className="absolute top-2 bottom-4 left-4 right-1 resize-none overflow-auto bg-transparent text-neutral-200 placeholder-neutral-500 outline-none pl-4 pr-0 py-2 text-xl"
+                className="absolute top-2 bottom-4 left-4 right-1 resize-none overflow-auto bg-transparent text-neutral-200 placeholder-neutral-500 outline-none pl-4 pr-0 py-2 text-sm sm:text-lg"
               />
             </AnimatePresence>
           </div>
@@ -61,9 +61,9 @@ export default function HeroSection() {
             type="button"
             aria-label="Submit prompt"
             onClick={() => setShowModal(true)}
-            className="p-3 text-neutral-400 hover:text-white transition flex-shrink-0 bg-neutral-700 rounded-full translate-x-[-6px] translate-y-[14px] cursor-pointer"
+            className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center text-neutral-400 hover:text-white transition flex-shrink-0 bg-neutral-700 rounded-full translate-x-[-4px] translate-y-[12px] cursor-pointer"
           >
-            <FiArrowUp size={24} />
+            <FiArrowUp className="w-4 h-4 sm:w-5 sm:h-5" />
           </button>
         </form>
         {/* Teaser text below the prompt */}

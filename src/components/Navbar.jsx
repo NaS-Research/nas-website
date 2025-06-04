@@ -36,7 +36,7 @@ export default function Navbar() {
     const main = document.querySelector("main");
     if (!main) return;
 
-    const sidebarWidth = 240; // Tailwind w‑60 (15rem)
+    const sidebarWidth = window.innerWidth < 640 ? 180 : 240; // w‑48 on mobile, w‑60 otherwise
 
     if (sidebarOpen) {
       // 1. Freeze current width in pixels so 'auto' → length becomes animatable
@@ -133,14 +133,14 @@ export default function Navbar() {
       {/* Sidebar overlay */}
       {sidebarOpen && (
         <div
-          className="fixed inset-0 z-30 bg-black/80"
+          className="fixed inset-0 z-30 bg-black/90 backdrop-blur-2xl backdrop-saturate-200 sm:backdrop-blur-none sm:bg-black/80"
           onClick={() => setSidebarOpen(false)}
         />
       )}
 
       {/* Sidebar panel */}
       <aside
-        className={`fixed top-0 left-0 z-40 h-full w-60 bg-black text-neutral-200 transform transition-transform duration-500 ease-in-out ${
+        className={`fixed top-0 left-0 z-40 h-full w-48 sm:w-60 bg-black text-neutral-200 transform transition-transform duration-500 ease-in-out ${
           sidebarOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >

@@ -10,7 +10,7 @@ export default function LatestResearch() {
     <section className="py-16 px-8 bg-black text-neutral-200">
       <div className="max-w-6xl mx-auto space-y-8">
         <div className="flex items-center justify-between">
-          <h2 className="text-4xl font-semibold text-white">Latest Research</h2>
+          <h2 className="text-[1.4rem] sm:text-4xl font-semibold text-white">Latest Research</h2>
           <button
             onClick={() => setShowModal(true)}
             className="text-white text-base transition-opacity duration-200 hover:opacity-70 active:scale-95 transform transition-transform duration-100 cursor-pointer"

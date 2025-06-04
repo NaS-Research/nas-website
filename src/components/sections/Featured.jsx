@@ -19,8 +19,8 @@ export default function Featured() {
             />
           </div>
           <div className="space-y-3">
-            <h2 className="text-4xl font-semibold text-white">Chicago: Our Chosen Home</h2>
-            <p className="text-lg"><span className="text-white">Release</span> · <span className="text-neutral-400">May 8, 2025</span></p>
+            <h2 className="text-[1.9rem] sm:text-4xl font-semibold text-white">Chicago: Our Chosen Home</h2>
+            <p className="text-base sm:text-lg"><span className="text-white">Release</span> · <span className="text-neutral-400">May 8, 2025</span></p>
           </div>
         </div>
 
