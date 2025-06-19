@@ -3,6 +3,7 @@
 import { FiArrowUp } from "react-icons/fi";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 import ComingSoonModal from "@/components/sections/ComingSoonModal";
 
 export default function HeroSection() {
@@ -19,6 +20,7 @@ export default function HeroSection() {
   const [currentPrompt, setCurrentPrompt] = useState(prompts[0]);
   const [userInput, setUserInput] = useState("");
   const [showModal, setShowModal] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     if (userInput.trim() === "") {
@@ -60,7 +62,10 @@ export default function HeroSection() {
           <button
             type="button"
             aria-label="Submit prompt"
-            onClick={() => setShowModal(true)}
+            onClick={() => {
+              const prompt = userInput.trim() || currentPrompt;
+              router.push(`/nicole?prompt=${encodeURIComponent(prompt)}`);
+            }}
             className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center text-neutral-400 hover:text-white transition flex-shrink-0 bg-neutral-700 rounded-full translate-x-[-4px] translate-y-[12px] cursor-pointer"
           >
             <FiArrowUp className="w-4 h-4 sm:w-5 sm:h-5" />
