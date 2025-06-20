@@ -7,8 +7,8 @@ import suggestedPrompts from '@/data/suggestedPrompts';
 export default function NicoleChat({ initialPrompt = "", userName = null }) {
   const [messages, setMessages] = useState([
     { role: 'assistant', text: 'Hello! I’m Nicole. What can I help you explore today?' },
-    { role: 'user', text: 'Could you explain the nitrogen cycle in simple terms?' },
-    { role: 'assistant', text: 'Certainly! The nitrogen cycle describes how nitrogen moves between the atmosphere, soil, plants, animals, and microbes…' }
+    { role: 'user', text: 'Hi Nicole. When will you be available for us to use?' },
+    { role: 'assistant', text: 'Very soon! Our team is polishing the final details. Stay tuned!' }
   ]);
   const [input, setInput] = useState(initialPrompt);
   const endRef = useRef(null);
