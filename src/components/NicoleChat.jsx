@@ -5,7 +5,11 @@ import { FiArrowUp } from "react-icons/fi";
 import suggestedPrompts from '@/data/suggestedPrompts';
 
 export default function NicoleChat({ initialPrompt = "", userName = null }) {
-  const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState([
+    { role: 'assistant', text: 'Hello! I’m Nicole. What can I help you explore today?' },
+    { role: 'user', text: 'Could you explain the nitrogen cycle in simple terms?' },
+    { role: 'assistant', text: 'Certainly! The nitrogen cycle describes how nitrogen moves between the atmosphere, soil, plants, animals, and microbes…' }
+  ]);
   const [input, setInput] = useState(initialPrompt);
   const endRef = useRef(null);
   const isEmpty = messages.length === 0;
@@ -36,10 +40,10 @@ export default function NicoleChat({ initialPrompt = "", userName = null }) {
     <div className="flex flex-col h-screen bg-black text-white overflow-hidden">
       {/* Chat history or welcome splash */}
       <div
-        className={`flex-1 w-full max-w-2xl mx-auto px-4 space-y-6 ${
+        className={`flex-1 pt-20 bg-black w-full max-w-5xl mx-auto px-4 ${
           isEmpty
             ? 'flex flex-col items-center justify-center overflow-hidden'
-            : 'overflow-y-auto py-12'
+            : 'pt-32 pb-24 overflow-y-auto space-y-4'
         }`}
       >
         {isEmpty ? (
@@ -61,7 +65,7 @@ export default function NicoleChat({ initialPrompt = "", userName = null }) {
               />
               <button
                 onClick={handleSend}
-                className="w-9 h-9 flex items-center justify-center text-neutral-400 hover:text-white transition bg-neutral-700 rounded-full disabled:opacity-40 absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer"
+                className="w-9 h-9 flex items-center justify-center text-neutral-400 hover:text-white transition bg-neutral-700 rounded-full disabled:opacity-40 absolute right-5 top-1/2 -translate-y-[60%] cursor-pointer"
                 disabled={!input.trim()}
               >
                 <FiArrowUp className="w-4 h-4" />
@@ -82,25 +86,30 @@ export default function NicoleChat({ initialPrompt = "", userName = null }) {
                 </button>
               ))}
             </div>
+            <p className="mt-6 text-xs text-neutral-500 text-center">
+              Nicole may generate content that reflects current scientific understanding but is not a substitute for professional judgment.
+            </p>
           </div>
         ) : (
           messages.map((m, i) => (
             <div
               key={i}
-              className={`flex ${m.role === 'user' ? 'justify-end' : 'justify-start'}`}
+              className={`flex ${m.role === 'user' ? 'justify-end' : 'justify-start'} mb-6`}
             >
+              {/* Assistant icon on left messages */}
               {m.role === 'assistant' && (
-                <HiSparkles className="text-indigo-400 w-5 h-5 mt-1 mr-2 shrink-0" />
+                <HiSparkles className="text-[#c7a069] w-5 h-5 mt-3 mr-2 shrink-0" />
               )}
-              <p
-                className={`max-w-prose px-4 py-3 rounded-2xl whitespace-pre-wrap ${
+
+              <div
+                className={`px-4 py-3 rounded-xl whitespace-pre-wrap leading-relaxed ${
                   m.role === 'user'
-                    ? 'bg-indigo-600 text-white'
-                    : 'bg-neutral-800 text-neutral-100'
+                    ? 'bg-neutral-700 text-white max-w-[60%]'
+                    : 'bg-transparent text-neutral-100 max-w-4xl'
                 }`}
               >
                 {m.text}
-              </p>
+              </div>
             </div>
           ))
         )}
@@ -109,8 +118,8 @@ export default function NicoleChat({ initialPrompt = "", userName = null }) {
 
       {/* Input bar */}
       {!isEmpty && (
-        <div className="w-full sticky bottom-0 bg-black border-t border-neutral-800">
-          <div className="max-w-2xl mx-auto relative p-4">
+        <div className="w-full sticky bottom-4 bg-black">
+          <div className="max-w-3xl mx-auto relative p-4">
             <input
               className="w-full bg-neutral-900/70 border border-neutral-700 rounded-2xl px-6 py-6 pr-14 focus:outline-none focus:ring-[#c7a069] focus:border-[#c7a069] text-base placeholder:text-neutral-500"
               placeholder="Ask Nicole…"
@@ -120,11 +129,14 @@ export default function NicoleChat({ initialPrompt = "", userName = null }) {
             />
             <button
               onClick={handleSend}
-              className="w-9 h-9 flex items-center justify-center text-neutral-400 hover:text-white transition bg-neutral-700 rounded-full cursor-pointer disabled:opacity-40 absolute right-4 top-1/2 -translate-y-1/2"
+              className="w-9 h-9 flex items-center justify-center text-neutral-400 hover:text-white transition bg-neutral-700 rounded-full cursor-pointer disabled:opacity-40 absolute right-6 top-1/2 -translate-y-[70%]"
               disabled={!input.trim()}
             >
               <FiArrowUp className="w-4 h-4" />
             </button>
+            <p className="mt-6 text-xs text-neutral-500 text-center">
+              Nicole may generate content that reflects current scientific understanding but is not a substitute for professional judgment.
+            </p>
           </div>
         </div>
       )}

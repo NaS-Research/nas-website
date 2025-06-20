@@ -1,5 +1,3 @@
-// src/app/nicole/page.jsx
-
 import NicoleChat from '@/components/NicoleChat';
 
 export const metadata = {
