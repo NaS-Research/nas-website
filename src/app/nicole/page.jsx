@@ -5,6 +5,11 @@ export const metadata = {
   description: "Chat with Nicole, NaS’s flagship biomedical language model.",
 };
 
+/**
+ * /nicole route
+ * Optional query string:  /nicole?prompt=hello
+ * Next 14 provides `searchParams` as an async iterable, so we `await` it once.
+ */
 export default function NicolePage({ searchParams }) {
   const seedPrompt = searchParams?.prompt ?? '';
 
