@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Footer from "@/components/Footer";
+import CortexNativeVisual from "@/components/research/CortexNativeVisual";
 import PublicationActions from "@/components/research/PublicationActions";
 import { getResearchItem, researchItems } from "@/data/researchLibrary";
 
@@ -105,12 +106,7 @@ export default async function ResearchPublicationPage({ params }) {
                 <PublicationBlock block={block} key={`${section.id}-${index}`} />
               ))}
               {item.visualsBySection?.[section.id]?.map((visual) => (
-                <figure className="publication-visual" key={visual.src}>
-                  <a href={visual.src} target="_blank" rel="noreferrer" aria-label={`Open full-size image: ${visual.caption}`}>
-                    <img src={visual.src} alt={visual.alt} loading="lazy" />
-                  </a>
-                  <figcaption>{visual.caption}</figcaption>
-                </figure>
+                <CortexNativeVisual visual={visual} key={visual.kind === "table" ? visual.number : visual.title} />
               ))}
             </section>
           ))}
