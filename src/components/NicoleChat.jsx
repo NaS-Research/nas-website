@@ -153,7 +153,7 @@ export default function NicoleChat({ initialPrompt = '', userName = null }) {
                 onKeyDown={e => e.key === 'Enter' && handleSend()}
               />
               <button
-                onClick={handleSend}
+                onClick={() => handleSend()}
                 className="w-9 h-9 flex items-center justify-center text-neutral-400 hover:text-white transition bg-neutral-700 rounded-full disabled:opacity-40 absolute right-5 top-1/2 -translate-y-[60%]"
                 disabled={!input.trim()}
               >
@@ -238,7 +238,7 @@ export default function NicoleChat({ initialPrompt = '', userName = null }) {
               onKeyDown={e => e.key === 'Enter' && handleSend()}
             />
             <button
-              onClick={handleSend}
+              onClick={() => handleSend()}
               className="w-9 h-9 flex items-center justify-center text-neutral-400 hover:text-white transition bg-neutral-700 rounded-full cursor-pointer disabled:opacity-40 absolute right-6 top-1/2 -translate-y-[70%]"
               disabled={!input.trim() || loading}
             >
