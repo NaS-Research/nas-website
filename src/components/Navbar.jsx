@@ -11,9 +11,34 @@ import ComingSoonModal from "@/components/sections/ComingSoonModal";
 export default function Navbar() {
   const pathname = usePathname();
   const isHome = pathname === "/";
+  const [homeHeroVisible, setHomeHeroVisible] = useState(isHome);
   const [show, setShow] = useState(true);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const showHomeWordmark = isHome && homeHeroVisible;
+
+  useEffect(() => {
+    if (!isHome) {
+      setHomeHeroVisible(false);
+      return undefined;
+    }
+
+    const hero = document.querySelector(".home-mark-hero");
+    if (!hero) {
+      setHomeHeroVisible(false);
+      return undefined;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setHomeHeroVisible(entry.isIntersecting && entry.intersectionRatio > 0.35);
+      },
+      { threshold: [0, 0.35, 0.7] },
+    );
+
+    observer.observe(hero);
+    return () => observer.disconnect();
+  }, [isHome]);
 
   useEffect(() => {
     let lastY = window.scrollY;
@@ -96,7 +121,7 @@ export default function Navbar() {
           <span
             aria-hidden="true"
             className={`absolute left-1 text-[1.35rem] font-semibold tracking-[-0.045em] text-neutral-100 transition-all duration-500 ${
-              isHome ? "translate-y-0 opacity-100" : "-translate-y-1 opacity-0"
+              showHomeWordmark ? "translate-y-0 opacity-100" : "-translate-y-1 opacity-0"
             }`}
           >
             NaS
@@ -107,7 +132,7 @@ export default function Navbar() {
             width={60}
             height={60}
             className={`absolute inset-0 rounded-full object-cover transition-all duration-500 ${
-              isHome ? "translate-y-1 scale-90 opacity-0" : "translate-y-0 scale-100 opacity-100"
+              showHomeWordmark ? "translate-y-1 scale-90 opacity-0" : "translate-y-0 scale-100 opacity-100"
             }`}
             priority
           />
