@@ -147,7 +147,6 @@ export default function Navbar() {
         <nav className="flex flex-col gap-4 px-8 pt-[20vh] text-xl">
           <Link href="/research" onClick={() => setSidebarOpen(false)}>Research</Link>
           <Link href="/support" onClick={() => setSidebarOpen(false)}>Support</Link>
-          <Link href="/careers" onClick={() => setSidebarOpen(false)}>Careers</Link>
           <Link href="/about" onClick={() => setSidebarOpen(false)}>About NaS</Link>
           <Link href="/contact" onClick={() => setSidebarOpen(false)}>Contact</Link>
         </nav>

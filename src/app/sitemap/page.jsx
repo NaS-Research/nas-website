@@ -1,9 +1,21 @@
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 export const metadata = {
-  title: "Sitemap | Dalron J. Robertson",
-  description: "Website sitemap for Dalron J. Robertson.",
+  title: "Sitemap | NaS Research",
+  description: "Explore the pages available on the NaS Research website.",
 };
+
+const links = [
+  ["Home", "/"],
+  ["Research", "/research"],
+  ["Support", "/support"],
+  ["About NaS", "/about"],
+  ["Contact", "/contact"],
+  ["Nicole", "/nicole"],
+  ["Privacy Policy", "/legal/privacy"],
+  ["Terms of Service", "/legal/terms"],
+];
 
 export default function SitemapPage() {
   return (
@@ -17,41 +29,13 @@ export default function SitemapPage() {
         </h1>
 
         <ul className="text-neutral-400 list-disc pl-8 space-y-4 text-lg leading-relaxed">
-          <li>
-            <a href="/" className="hover:underline hover:text-white transition-colors duration-200">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="/about" className="hover:underline hover:text-white transition-colors duration-200">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="/work" className="hover:underline hover:text-white transition-colors duration-200">
-              Work
-            </a>
-          </li>
-          <li>
-            <a href="/writing" className="hover:underline hover:text-white transition-colors duration-200">
-              Writing
-            </a>
-          </li>
-          <li>
-            <a href="/connect" className="hover:underline hover:text-white transition-colors duration-200">
-              Connect
-            </a>
-          </li>
-          <li>
-            <a href="/legal/privacy" className="hover:underline hover:text-white transition-colors duration-200">
-              Privacy Policy
-            </a>
-          </li>
-          <li>
-            <a href="/legal/terms" className="hover:underline hover:text-white transition-colors duration-200">
-              Terms of Service
-            </a>
-          </li>
+          {links.map(([label, href]) => (
+            <li key={href}>
+              <Link href={href} className="hover:underline hover:text-white transition-colors duration-200">
+                {label}
+              </Link>
+            </li>
+          ))}
         </ul>
       </section>
       <Footer />
