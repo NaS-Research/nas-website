@@ -36,7 +36,6 @@ export default async function ResearchPublicationPage({ params }) {
             <time dateTime={item.dateISO}>{item.date}</time>
             <span>{item.area}</span>
             <span>{item.type}</span>
-            <span className="research-status">{item.status}</span>
           </div>
           <h1>{item.title}</h1>
           <p className="publication-abstract">{item.abstract}</p>
@@ -65,7 +64,6 @@ export default async function ResearchPublicationPage({ params }) {
             <p className="publication-section-label">Summary</p>
             <p>{item.summary}</p>
             <dl>
-              <div><dt>Status</dt><dd>{item.status}</dd></div>
               <div><dt>Research area</dt><dd>{item.area}</dd></div>
               <div><dt>Document type</dt><dd>{item.type}</dd></div>
               <div><dt>Version</dt><dd>{item.version}</dd></div>
@@ -83,7 +81,7 @@ export default async function ResearchPublicationPage({ params }) {
             <h2>Citation</h2>
             <p>{citation}</p>
             <p className="publication-note">
-              {item.publicationNote ?? "This web publication is the current version of record. Material marked “In development” or “Working paper” may change substantially before formal publication."}
+              {item.publicationNote ?? "This web publication is the current version of record. Updates will be reflected through the document’s version history."}
             </p>
           </section>
 

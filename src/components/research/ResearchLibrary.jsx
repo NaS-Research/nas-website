@@ -13,20 +13,17 @@ const typeGroups = {
 export default function ResearchLibrary({ items, types }) {
   const [activeType, setActiveType] = useState("All");
   const [area, setArea] = useState("All areas");
-  const [status, setStatus] = useState("All statuses");
   const [sort, setSort] = useState("newest");
   const [query, setQuery] = useState("");
   const [view, setView] = useState("list");
 
   const areas = [...new Set(items.map((item) => item.area))].sort();
-  const statuses = [...new Set(items.map((item) => item.status))].sort();
 
   const filteredItems = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
     return items
       .filter((item) => activeType === "All" || typeGroups[activeType]?.includes(item.type))
       .filter((item) => area === "All areas" || item.area === area)
-      .filter((item) => status === "All statuses" || item.status === status)
       .filter((item) =>
         !normalizedQuery ||
         `${item.title} ${item.abstract} ${item.area} ${item.type}`
@@ -38,12 +35,11 @@ export default function ResearchLibrary({ items, types }) {
         if (sort === "title") return a.title.localeCompare(b.title);
         return b.dateISO.localeCompare(a.dateISO);
       });
-  }, [activeType, area, items, query, sort, status]);
+  }, [activeType, area, items, query, sort]);
 
   const clearFilters = () => {
     setActiveType("All");
     setArea("All areas");
-    setStatus("All statuses");
     setQuery("");
   };
 
@@ -85,13 +81,6 @@ export default function ResearchLibrary({ items, types }) {
             </select>
           </label>
           <label>
-            <span className="sr-only">Filter by publication status</span>
-            <select value={status} onChange={(event) => setStatus(event.target.value)}>
-              <option>All statuses</option>
-              {statuses.map((option) => <option key={option}>{option}</option>)}
-            </select>
-          </label>
-          <label>
             <span className="sr-only">Sort research</span>
             <select value={sort} onChange={(event) => setSort(event.target.value)}>
               <option value="newest">Newest first</option>
@@ -108,7 +97,7 @@ export default function ResearchLibrary({ items, types }) {
 
       <div className="research-results-meta" aria-live="polite">
         <span>{filteredItems.length} {filteredItems.length === 1 ? "entry" : "entries"}</span>
-        {(activeType !== "All" || area !== "All areas" || status !== "All statuses" || query) && (
+        {(activeType !== "All" || area !== "All areas" || query) && (
           <button type="button" onClick={clearFilters}>Clear filters</button>
         )}
       </div>
@@ -120,7 +109,6 @@ export default function ResearchLibrary({ items, types }) {
               <div className="research-result__meta">
                 <span>{item.area}</span>
                 <time dateTime={item.dateISO}>{item.date}</time>
-                <span className="research-status">{item.status}</span>
               </div>
               <div className="research-result__content">
                 <p className="research-result__type">{item.type}</p>
