@@ -3,65 +3,6 @@ import { cortexNativeVisualsBySection } from "@/data/cortexNativeVisuals";
 
 export const researchItems = [
   {
-    slug: "nicole-biomedical-language-model",
-    title: "Nicole: A Biomedical Language Model for Scientific Discovery",
-    shortTitle: "Nicole Model Overview",
-    type: "Model Card",
-    area: "Biomedical AI",
-    date: "July 20, 2026",
-    dateISO: "2026-07-20",
-    version: "0.1",
-    authors: ["Dalron J. Robertson"],
-    readTime: "9 min read",
-    pdfUrl: null,
-    abstract:
-      "An early overview of Nicole, NaS Research’s biomedical language-model initiative, including its intended scientific role, development principles, and current limitations.",
-    summary:
-      "Nicole is being developed as a specialized interface for exploring biomedical knowledge and supporting carefully scoped scientific workflows. This document describes the direction of the project; it does not represent a completed or clinically validated system.",
-    sections: [
-      {
-        id: "purpose",
-        title: "1. Purpose",
-        paragraphs: [
-          "NaS Research is exploring how specialized language models can help researchers navigate complex biomedical information, formulate clearer questions, and connect evidence across disciplines. Nicole is the working name for that effort.",
-          "The goal is not to replace scientific judgment. The project is intended to investigate how computational systems can support literature exploration, research planning, and communication while keeping human expertise at the center of consequential decisions.",
-        ],
-      },
-      {
-        id: "research-context",
-        title: "2. Research context",
-        paragraphs: [
-          "Biomedical research spans rapidly changing literature, heterogeneous datasets, and specialized vocabularies. General-purpose systems can be useful, but scientific work also requires provenance, uncertainty awareness, domain constraints, and clear boundaries between hypothesis and evidence.",
-          "Nicole is therefore being approached as a research platform rather than a finished assistant. Its design will be shaped by evaluation, documented limitations, and feedback from qualified domain experts.",
-        ],
-      },
-      {
-        id: "intended-capabilities",
-        title: "3. Intended capabilities",
-        paragraphs: [
-          "Initial areas of investigation include biomedical question answering, literature-oriented synthesis, terminology clarification, research-context retrieval, and structured exploration of scientific topics.",
-          "Any capability described here is aspirational until supported by published evaluations. Future versions of this document will distinguish demonstrated performance from planned functionality and will link to the relevant evidence.",
-        ],
-      },
-      {
-        id: "responsible-development",
-        title: "4. Responsible development",
-        paragraphs: [
-          "Biomedical systems require careful treatment of privacy, safety, bias, source quality, and potential misuse. NaS intends to document evaluations and known limitations alongside any public release of Nicole.",
-          "Nicole is not a medical professional and is not intended to diagnose, treat, or replace consultation with qualified clinicians. Research outputs must be independently verified before they inform scientific or clinical decisions.",
-        ],
-      },
-      {
-        id: "current-status",
-        title: "5. Current status",
-        paragraphs: [
-          "Nicole remains in active development. The current public interface is an early demonstration, and the surrounding model, retrieval, evaluation, and governance systems will continue to evolve.",
-          "This model overview will be versioned as the project matures. Formal architecture details, benchmarks, datasets, and evaluation results will be added only when they are ready for responsible publication.",
-        ],
-      },
-    ],
-  },
-  {
     slug: "introducing-nas-cortex",
     title: "The NaS Cortex: A Knowledge Architecture for the Life Sciences",
     shortTitle: "The NaS Cortex",
@@ -308,53 +249,6 @@ export const researchItems = [
       { title: "City Colleges of Chicago — Biotechnology AAS", url: "https://catalog.ccc.edu/academic-program-requirements/biotechnology-aas/" },
       { title: "U.S. Census Bureau — Chicago QuickFacts", url: "https://www.census.gov/quickfacts/fact/table/chicagocityillinois/RHI725224" },
       { title: "Choose Chicago — Neighborhoods and cultural institutions", url: "https://www.choosechicago.com/neighborhoods/" },
-    ],
-  },
-  {
-    slug: "toward-automated-discovery",
-    title: "Toward Automated Discovery: Connecting Models, Data, and Experiments",
-    shortTitle: "Toward Automated Discovery",
-    type: "Technical Report",
-    area: "Laboratory Automation",
-    date: "July 2026",
-    dateISO: "2026-07-01",
-    version: "0.1",
-    authors: ["Dalron J. Robertson"],
-    readTime: "11 min read",
-    pdfUrl: null,
-    abstract:
-      "A preliminary systems view of how computational models, structured data, and laboratory automation could support more iterative scientific workflows.",
-    summary:
-      "This early technical direction explores the interfaces required to connect computational reasoning with measurable experiments while preserving traceability and human oversight.",
-    sections: [
-      {
-        id: "motivation",
-        title: "1. Motivation",
-        paragraphs: [
-          "Scientific progress depends on cycles of observation, hypothesis, experiment, and revision. Better computational coordination could make parts of that cycle faster without weakening the standards used to evaluate evidence.",
-        ],
-      },
-      {
-        id: "system-boundaries",
-        title: "2. System boundaries",
-        paragraphs: [
-          "Any automated workflow must define what a model may propose, what software may execute, which operations require human approval, and how every action is recorded for later review.",
-        ],
-      },
-      {
-        id: "proposed-layers",
-        title: "3. Proposed layers",
-        paragraphs: [
-          "The working architecture separates knowledge retrieval, planning, simulation, experiment execution, measurement, and evaluation. This separation supports independent testing and clearer accountability.",
-        ],
-      },
-      {
-        id: "open-questions",
-        title: "4. Open questions",
-        paragraphs: [
-          "Future research must address experimental reliability, safety constraints, provenance, uncertainty, access control, and the appropriate role of autonomous systems in consequential scientific environments.",
-        ],
-      },
     ],
   },
 ];
