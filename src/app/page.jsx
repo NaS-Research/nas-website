@@ -15,6 +15,10 @@ const EdgeSpacer = () => (
 export default function Home() {
   return (
     <>
+      {/*
+        The original Nicole prompt hero is preserved in
+        components/sections/LegacyChatHero.jsx for a future public release.
+      */}
       <HeroSection />
 
       <Featured />
