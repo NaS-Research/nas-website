@@ -14,7 +14,7 @@ export default function HeroSection() {
       <div className="home-mark" aria-hidden="true">
         <div className="home-mark__halo" />
         <Image
-          src="/assets/images/NaSLogo.jpeg"
+          src="/assets/images/NaSLogo-transparent.png"
           alt=""
           width={512}
           height={512}
@@ -22,7 +22,7 @@ export default function HeroSection() {
           className="home-mark__image home-mark__image--base"
         />
         <Image
-          src="/assets/images/NaSLogo.jpeg"
+          src="/assets/images/NaSLogo-transparent.png"
           alt=""
           width={512}
           height={512}
