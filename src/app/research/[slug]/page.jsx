@@ -60,7 +60,10 @@ export default async function ResearchPublicationPage({ params }) {
           <p className="publication-abstract">{item.abstract}</p>
           <div className="publication-byline">
             <p>By {item.authors.join(", ")}</p>
-            <p>Version {item.version} · {item.readTime}</p>
+            <p>
+              Version {item.version} · {item.readTime}
+              {item.updatedDate ? ` · Updated ${item.updatedDate}` : ""}
+            </p>
           </div>
           <PublicationActions citation={citation} pdfUrl={item.pdfUrl} />
         </div>
@@ -80,6 +83,7 @@ export default async function ResearchPublicationPage({ params }) {
                 {section.title.replace(/^\d+(?:\.\d+)?\s*/, "")}
               </a>
             ))}
+            {item.sources?.length > 0 && <a href="#sources">Sources</a>}
             <a href="#citation">Citation</a>
           </nav>
         </aside>
@@ -110,6 +114,25 @@ export default async function ResearchPublicationPage({ params }) {
               ))}
             </section>
           ))}
+
+          {item.sources?.length > 0 && (
+            <section id="sources" className="publication-section publication-sources">
+              <h2>Sources and further reading</h2>
+              <p>
+                This essay draws on current institutional, government, and regional sources. Links open in a new tab.
+              </p>
+              <ol>
+                {item.sources.map((source) => (
+                  <li key={source.url}>
+                    <a href={source.url} target="_blank" rel="noreferrer">
+                      {source.title}
+                      <span aria-hidden="true"> ↗</span>
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </section>
+          )}
 
           <section id="citation" className="publication-section publication-citation">
             <h2>Citation</h2>
