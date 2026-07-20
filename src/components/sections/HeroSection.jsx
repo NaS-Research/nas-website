@@ -6,11 +6,6 @@ export default function HeroSection() {
     <section className="home-mark-hero" aria-labelledby="home-mark-title">
       <div className="home-mark-hero__atmosphere" aria-hidden="true" />
 
-      <div className="home-mark-hero__identity">
-        <p>Biology · Medicine · Biotechnology</p>
-        <span>Computational · Evidence-grounded · Open to scrutiny</span>
-      </div>
-
       <div className="home-mark" aria-hidden="true">
         <div className="home-mark__halo" />
         <Image
