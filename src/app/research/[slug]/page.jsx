@@ -82,7 +82,9 @@ export default async function ResearchPublicationPage({ params }) {
           <section id="citation" className="publication-section publication-citation">
             <h2>Citation</h2>
             <p>{citation}</p>
-            <p className="publication-note">This web publication is the current version of record. Material marked “In development” or “Working paper” may change substantially before formal publication.</p>
+            <p className="publication-note">
+              {item.publicationNote ?? "This web publication is the current version of record. Material marked “In development” or “Working paper” may change substantially before formal publication."}
+            </p>
           </section>
 
           {related.length > 0 && (
