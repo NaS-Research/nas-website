@@ -4,6 +4,24 @@ import Footer from "@/components/Footer";
 import PublicationActions from "@/components/research/PublicationActions";
 import { getResearchItem, researchItems } from "@/data/researchLibrary";
 
+function PublicationBlock({ block }) {
+  if (!block.includes("●")) return <p>{block.replaceAll("*", "")}</p>;
+
+  const [intro, ...items] = block.split("●").map((part) => part.trim()).filter(Boolean);
+  const hasIntro = !block.trimStart().startsWith("●");
+
+  return (
+    <>
+      {hasIntro && <p>{intro.replaceAll("*", "")}</p>}
+      <ul className="publication-list">
+        {(hasIntro ? items : [intro, ...items]).map((item) => (
+          <li key={item}>{item.replaceAll("*", "")}</li>
+        ))}
+      </ul>
+    </>
+  );
+}
+
 export function generateStaticParams() {
   return researchItems.map((item) => ({ slug: item.slug }));
 }
@@ -53,7 +71,13 @@ export default async function ResearchPublicationPage({ params }) {
           <nav>
             <a href="#summary">Summary</a>
             {item.sections.map((section) => (
-              <a href={`#${section.id}`} key={section.id}>{section.title.replace(/^\d+\.\s*/, "")}</a>
+              <a
+                href={`#${section.id}`}
+                className={section.level === 2 ? "publication-toc__subsection" : undefined}
+                key={section.id}
+              >
+                {section.title.replace(/^\d+(?:\.\d+)?\s*/, "")}
+              </a>
             ))}
             <a href="#citation">Citation</a>
           </nav>
@@ -71,9 +95,15 @@ export default async function ResearchPublicationPage({ params }) {
           </section>
 
           {item.sections.map((section) => (
-            <section id={section.id} className="publication-section" key={section.id}>
-              <h2>{section.title}</h2>
-              {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+            <section
+              id={section.id}
+              className={`publication-section publication-section--level-${section.level ?? 1}`}
+              key={section.id}
+            >
+              {section.level === 2 ? <h3>{section.title}</h3> : <h2>{section.title}</h2>}
+              {(section.blocks ?? section.paragraphs).map((block, index) => (
+                <PublicationBlock block={block} key={`${section.id}-${index}`} />
+              ))}
             </section>
           ))}
 

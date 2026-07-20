@@ -826,6 +826,10 @@ body {
   color: var(--nas-text);
 }
 
+.publication-toc a.publication-toc__subsection {
+  color: #717171;
+}
+
 .publication-body {
   min-width: 0;
 }
@@ -893,6 +897,15 @@ body {
   line-height: 1.05;
 }
 
+.publication-section h3 {
+  margin-bottom: 1.5rem;
+  color: var(--nas-text);
+  font-size: clamp(1.35rem, 2.8vw, 2rem);
+  font-weight: 520;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
 .publication-section > p {
   max-width: 47rem;
   color: #b8b8b8;
@@ -902,6 +915,34 @@ body {
 
 .publication-section > p + p {
   margin-top: 1.5rem;
+}
+
+.publication-section--level-0,
+.publication-section--level-2 {
+  margin-top: 2rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border: 1px solid var(--nas-line);
+  border-radius: 1rem;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.025), rgba(255, 255, 255, 0.008));
+}
+
+.publication-section--level-0 h2 {
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+}
+
+.publication-list {
+  display: grid;
+  gap: 0.85rem;
+  max-width: 47rem;
+  margin-top: 1.5rem;
+  padding-left: 1.25rem;
+  color: #b8b8b8;
+  font-size: clamp(1rem, 1.6vw, 1.1rem);
+  line-height: 1.7;
+}
+
+.publication-list li::marker {
+  color: var(--nas-gold);
 }
 
 .publication-citation > p:first-of-type {
@@ -984,7 +1025,10 @@ body {
   .publication-toc nav {
     display: grid;
     gap: 0;
+    max-height: calc(100vh - 12rem);
     overflow: visible;
+    overflow-y: auto;
+    scrollbar-width: thin;
   }
 
   .publication-toc a {
@@ -997,6 +1041,11 @@ body {
   .publication-toc a:hover {
     border-color: var(--nas-gold);
     background: rgba(199, 160, 105, 0.055);
+  }
+
+  .publication-toc a.publication-toc__subsection {
+    padding-left: 1.75rem;
+    font-size: 0.7rem;
   }
 }
 

@@ -1,3 +1,5 @@
+import { cortexPaperSections } from "@/data/cortexPaper";
+
 export const researchItems = [
   {
     slug: "nicole-biomedical-language-model",
@@ -68,15 +70,16 @@ export const researchItems = [
     dateISO: "2025-05-12",
     version: "1.0",
     authors: ["NaS"],
-    readTime: "35 min read",
+    readTime: "42 min read",
     pdfUrl: "/research/papers/nas-cortex-knowledge-architecture.pdf",
     abstract:
       "A knowledge architecture for the life sciences built around eight domain-specific gyri, sparse expert activation, incremental training, and a staged compute roadmap for Nicole.",
     summary:
       "The NaS Cortex proposes an intelligent-systems stack designed to shorten the path from raw life-science data to validated therapies. The architecture organizes knowledge into eight specialized gyri coordinated by Nicole, with selective ingestion, sparse activation, retrieval, adapter-based updates, and staged hardware scaling.",
     publicationNote:
-      "This web edition presents the white paper’s principal sections and findings. The original 31-page PDF is the complete version of record, including all subsections, tables, projections, disclaimers, and references.",
-    sections: [
+      "This complete web edition is provided for accessible reading and navigation. The original 31-page PDF remains the fixed version of record.",
+    sections: cortexPaperSections,
+    overviewSections: [
       {
         id: "biological-imperative",
         title: "1. Introduction: The Biological Imperative",
