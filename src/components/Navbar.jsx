@@ -3,11 +3,14 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { IconLayoutSidebar, IconLayoutSidebarRight } from "@tabler/icons-react";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import ComingSoonModal from "@/components/sections/ComingSoonModal";
 
 export default function Navbar() {
+  const pathname = usePathname();
+  const isHome = pathname === "/";
   const [show, setShow] = useState(true);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -84,14 +87,28 @@ export default function Navbar() {
   return (
     <header className={`fixed inset-x-0 top-0 z-60 bg-black transition-transform duration-300 ${show ? 'translate-y-0' : '-translate-y-full'}`}>
       <nav className="relative z-50 mx-auto max-w-7xl px-2 sm:px-4 lg:px-6 flex items-center h-20 text-neutral-200">
-        {/* Logo */}
-        <Link href="/" className="flex items-center transition-transform duration-150 ease-out hover:scale-110 active:scale-95">
+        {/* Homepage uses the wordmark because the emblem is already the hero centerpiece. */}
+        <Link
+          href="/"
+          aria-label="NaS home"
+          className="relative flex h-[60px] w-[60px] items-center transition-transform duration-150 ease-out hover:scale-105 active:scale-95"
+        >
+          <span
+            aria-hidden="true"
+            className={`absolute left-1 text-[1.35rem] font-semibold tracking-[-0.045em] text-neutral-100 transition-all duration-500 ${
+              isHome ? "translate-y-0 opacity-100" : "-translate-y-1 opacity-0"
+            }`}
+          >
+            NaS
+          </span>
           <Image
             src="/assets/images/NaSLogonbg.png"
-            alt="Logo"
+            alt=""
             width={60}
             height={60}
-            className="rounded-full object-cover"
+            className={`absolute inset-0 rounded-full object-cover transition-all duration-500 ${
+              isHome ? "translate-y-1 scale-90 opacity-0" : "translate-y-0 scale-100 opacity-100"
+            }`}
             priority
           />
         </Link>

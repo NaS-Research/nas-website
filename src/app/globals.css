@@ -86,15 +86,15 @@ body {
   left: max(1.25rem, 4vw);
   display: grid;
   gap: 0.35rem;
-  color: #8b8174;
-  font-size: 0.68rem;
+  color: #a79b8a;
+  font-size: 0.7rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
 .home-mark-hero__identity p {
-  color: #e1c594;
-  font-size: 0.73rem;
+  color: #ead2a8;
+  font-size: 0.76rem;
   font-weight: 650;
   letter-spacing: 0.22em;
 }
@@ -143,14 +143,14 @@ body {
 .home-mark-hero__statement {
   align-self: end;
   z-index: 1;
-  max-width: 35rem;
+  max-width: 45rem;
   margin-bottom: 1.15rem;
 }
 
 .home-mark-hero__eyebrow {
   margin-bottom: 0.85rem;
-  color: #a89577;
-  font-size: 0.7rem;
+  color: #c4ad88;
+  font-size: 0.74rem;
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -158,7 +158,7 @@ body {
 
 .home-mark-hero__statement h1 {
   color: #f3f0eb;
-  font-size: clamp(2.15rem, 4.8vw, 5rem);
+  font-size: clamp(2.15rem, 4.5vw, 4.65rem);
   font-weight: 520;
   letter-spacing: -0.055em;
   line-height: 0.98;
@@ -176,9 +176,9 @@ body {
 .home-mark-hero__actions a {
   border: 1px solid rgba(225, 197, 148, 0.22);
   border-radius: 999px;
-  padding: 0.7rem 1rem;
-  color: #c7b79d;
-  font-size: 0.75rem;
+  padding: 0.82rem 1.15rem;
+  color: #e0d2bb;
+  font-size: 0.8rem;
   transition: border-color 180ms ease, background-color 180ms ease, color 180ms ease;
 }
 
@@ -188,18 +188,34 @@ body {
   color: #f2e5cf;
 }
 
+.home-mark-hero__actions a.home-mark-hero__action--primary {
+  border-color: #e4cda7;
+  background: #e4cda7;
+  color: #17120d;
+}
+
+.home-mark-hero__actions a.home-mark-hero__action--primary:hover {
+  border-color: #f0dfc1;
+  background: #f0dfc1;
+  color: #090705;
+}
+
 .home-mark-hero__scroll {
   position: absolute;
   bottom: 1.25rem;
   left: 50%;
-  color: #70685d;
-  font-size: 0.72rem;
+  border-bottom: 1px solid rgba(228, 205, 167, 0.28);
+  padding-bottom: 0.2rem;
+  color: #c1b39e;
+  font-size: 0.78rem;
+  font-weight: 500;
   transform: translateX(-50%);
   transition: color 180ms ease;
 }
 
 .home-mark-hero__scroll:hover {
-  color: #c8b79b;
+  border-color: rgba(228, 205, 167, 0.72);
+  color: #f0dfc1;
 }
 
 @keyframes home-mark-light {
@@ -239,7 +255,7 @@ body {
   }
 
   .home-mark-hero__statement {
-    max-width: 22rem;
+    max-width: 25rem;
     margin-bottom: 6rem;
   }
 
@@ -251,6 +267,13 @@ body {
     right: auto;
     bottom: 3.5rem;
     left: 1.25rem;
+    flex-wrap: wrap;
+    max-width: calc(100% - 2.5rem);
+  }
+
+  .home-mark-hero__actions a {
+    padding: 0.72rem 0.9rem;
+    font-size: 0.74rem;
   }
 
   .home-mark-hero__scroll {

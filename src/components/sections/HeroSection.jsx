@@ -7,8 +7,8 @@ export default function HeroSection() {
       <div className="home-mark-hero__atmosphere" aria-hidden="true" />
 
       <div className="home-mark-hero__identity">
-        <p>NaS Research</p>
-        <span>Chicago · Life sciences · Intelligent systems</span>
+        <p>The next era of life-science research</p>
+        <span>Computational · Evidence-grounded · Built for discovery</span>
       </div>
 
       <div className="home-mark" aria-hidden="true">
@@ -32,17 +32,19 @@ export default function HeroSection() {
       </div>
 
       <div className="home-mark-hero__statement">
-        <p className="home-mark-hero__eyebrow">Independent research for the life sciences</p>
-        <h1 id="home-mark-title">Building systems for scientific discovery.</h1>
+        <p className="home-mark-hero__eyebrow">NaS is an independent research institution.</p>
+        <h1 id="home-mark-title">We build intelligent systems to understand life.</h1>
       </div>
 
       <div className="home-mark-hero__actions" aria-label="Explore NaS Research">
-        <Link href="/research">Explore research <span aria-hidden="true">↗</span></Link>
-        <Link href="/about">About NaS <span aria-hidden="true">↗</span></Link>
+        <Link className="home-mark-hero__action--primary" href="/research">
+          Read our publications <span aria-hidden="true">↗</span>
+        </Link>
+        <Link href="/about">Discover our mission <span aria-hidden="true">↗</span></Link>
       </div>
 
       <a className="home-mark-hero__scroll" href="#next-section">
-        <span aria-hidden="true">↓</span> Scroll to explore
+        See our current work <span aria-hidden="true">↓</span>
       </a>
     </section>
   );
