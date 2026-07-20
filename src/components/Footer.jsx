@@ -2,10 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import {
-  SiInstagram,
-  SiLinkedin
-} from "react-icons/si";
+import { SiInstagram } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa";
 import { HiOutlineArrowCircleUp } from "react-icons/hi";
 import { useState } from "react";
 import ComingSoonModal from "@/components/sections/ComingSoonModal";
@@ -31,7 +29,7 @@ export default function Footer() {
             <SiInstagram className="w-4 h-4 sm:w-6 sm:h-6" />
           </Link>
           <Link href="https://www.linkedin.com/company/nasresearch/" aria-label="LinkedIn" className="hover:text-white transition-colors">
-            <SiLinkedin className="w-4 h-4 sm:w-6 sm:h-6" />
+            <FaLinkedin className="w-4 h-4 sm:w-6 sm:h-6" />
           </Link>
         </div>
       </div>

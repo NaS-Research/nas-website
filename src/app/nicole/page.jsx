@@ -1,4 +1,5 @@
 import NicoleChat from '@/components/NicoleChat';
+import { Suspense } from 'react';
 
 export const metadata = {
   title: 'Talk to Nicole — NaS',
@@ -15,7 +16,9 @@ export default function NicolePage({ searchParams }) {
 
   return (
     <main className="h-screen flex items-center justify-center overflow-hidden">
-      <NicoleChat initialPrompt={seedPrompt} />
+      <Suspense fallback={null}>
+        <NicoleChat initialPrompt={seedPrompt} />
+      </Suspense>
     </main>
   );
 }
