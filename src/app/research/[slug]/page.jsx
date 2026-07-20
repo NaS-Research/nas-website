@@ -104,6 +104,14 @@ export default async function ResearchPublicationPage({ params }) {
               {(section.blocks ?? section.paragraphs).map((block, index) => (
                 <PublicationBlock block={block} key={`${section.id}-${index}`} />
               ))}
+              {item.visualsBySection?.[section.id]?.map((visual) => (
+                <figure className="publication-visual" key={visual.src}>
+                  <a href={visual.src} target="_blank" rel="noreferrer" aria-label={`Open full-size image: ${visual.caption}`}>
+                    <img src={visual.src} alt={visual.alt} loading="lazy" />
+                  </a>
+                  <figcaption>{visual.caption}</figcaption>
+                </figure>
+              ))}
             </section>
           ))}
 

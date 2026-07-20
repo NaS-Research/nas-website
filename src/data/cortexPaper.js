@@ -328,3 +328,103 @@ export const cortexPaperSections = [
     ]
   }
 ];
+
+export const cortexVisualsBySection = {
+  "gyri-graphs": [
+    {
+      src: "/research/cortex/visuals/nicole-digital-cortex.png",
+      alt: "Nicole's digital cortex with eight domain-specific life-science gyri arranged around Nicole",
+      caption: "Nicole's Digital Cortex - domain-specific gyri for life-science reasoning.",
+    },
+  ],
+  "capacity-signals": [
+    {
+      src: "/research/cortex/visuals/table-01-training-time-scale-up.png",
+      alt: "Table 1: Estimated training time for scale-up targets on the current node",
+      caption: "Table 1. Estimated Training Time for Scale-Up Targets on Current Node.",
+    },
+  ],
+  "precision-roadmap": [
+    {
+      src: "/research/cortex/visuals/table-02-default-precision-targets.png",
+      alt: "Table 2: Default precision targets across core modeling stages",
+      caption: "Table 2. Default Precision Targets Across Core Modeling Stages.",
+    },
+    {
+      src: "/research/cortex/visuals/table-03-precision-selection-strategies.png",
+      alt: "Table 3: Precision selection strategies by model lifecycle stage",
+      caption: "Table 3. Precision Selection Strategies by Model Lifecycle Stage.",
+    },
+  ],
+  "nvidia-rack": [
+    {
+      src: "/research/cortex/visuals/table-04-blackwell-gpu-comparison.png",
+      alt: "Table 4: NVIDIA Blackwell-class GPU comparison",
+      caption: "Table 4. NVIDIA Blackwell-Class GPU Comparison: Pro vs. Consumer Line.",
+    },
+    {
+      src: "/research/cortex/visuals/table-05-multi-gpu-memory-tradeoffs.png",
+      alt: "Table 5: Multi-GPU compute versus memory trade-offs in four-card towers",
+      caption: "Table 5. Multi-GPU Compute vs. Memory Trade-offs in 4-Card Towers.",
+    },
+    {
+      src: "/research/cortex/visuals/table-06-residential-power-constraints.png",
+      alt: "Table 6: Residential power constraints for multi-GPU deployment",
+      caption: "Table 6. Residential Power Constraints for Multi-GPU Deployment.",
+    },
+    {
+      src: "/research/cortex/visuals/table-07-gpu-model-capacity.png",
+      alt: "Table 7: Projected model capacity by prototype GPU configuration",
+      caption: "Table 7. Projected Model Capacity by Prototype GPU Configuration.",
+    },
+    {
+      src: "/research/cortex/visuals/table-08-hardware-epoch-duration.png",
+      alt: "Table 8: Estimated epoch duration by hardware tier and TFLOP scale",
+      caption: "Table 8. Estimated Epoch Duration by Hardware Tier and TFLOP Scale.",
+    },
+    {
+      src: "/research/cortex/visuals/table-09-wall-clock-estimates.png",
+      alt: "Table 9: Measured wall-clock estimates using observed FP16 efficiency",
+      caption: "Table 9. Measured Wall-Clock Estimates Using Observed FP16 Efficiency.",
+    },
+  ],
+  "apple-cluster": [
+    {
+      src: "/research/cortex/visuals/table-10-apple-workstation-performance.png",
+      alt: "Table 10: Projected performance and configurations for Apple workstation nodes",
+      caption: "Table 10. Projected Performance and Configurations for Apple Workstation Nodes.",
+    },
+    {
+      src: "/research/cortex/visuals/table-11-m3-ultra-power-capacity.png",
+      alt: "Table 11: Capacity scaling under power constraints for M3 Ultra workstations",
+      caption: "Table 11. Capacity Scaling Under Power Constraints for M3 Ultra Workstations.",
+    },
+    {
+      src: "/research/cortex/visuals/table-12-m3-ultra-training-outlook.png",
+      alt: "Table 12: Practical training-time outlook on M3 Ultra",
+      caption: "Table 12. Practical Training-Time Outlook on M3 Ultra (1.5 B Tokens, 2 Epochs).",
+    },
+    {
+      src: "/research/cortex/visuals/table-13-m3-ultra-runtime-projection.png",
+      alt: "Table 13: Runtime projection for training a 30-billion-parameter model on M3 Ultra nodes",
+      caption: "Table 13. Runtime Projection for Training a 30B-Parameter Model on M3 Ultra Nodes.",
+    },
+    {
+      src: "/research/cortex/visuals/table-14-corpus-epoch-duration.png",
+      alt: "Table 14: Epoch duration across corpus sizes comparing Mac Studio mesh and RTX 5090",
+      caption: "Table 14. Epoch Duration Across Corpus Sizes: Mac Studio Mesh vs. RTX 5090.",
+    },
+    {
+      src: "/research/cortex/visuals/table-15-precision-tier-strategy.png",
+      alt: "Table 15: NaS precision tier strategy for present capabilities and planned infrastructure",
+      caption: "Table 15. NaS Precision Tier Strategy: Present Capabilities and Planned Infrastructure.",
+    },
+  ],
+  "candidate-solutions": [
+    {
+      src: "/research/cortex/visuals/table-16-distributed-runtime-options.png",
+      alt: "Table 16: Distributed runtime options for NaS including paths, capabilities, and ownership",
+      caption: "Table 16. Distributed Runtime Options for NaS: Paths, Capabilities, and Ownership.",
+    },
+  ],
+};

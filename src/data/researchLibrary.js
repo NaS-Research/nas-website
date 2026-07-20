@@ -1,4 +1,4 @@
-import { cortexPaperSections } from "@/data/cortexPaper";
+import { cortexPaperSections, cortexVisualsBySection } from "@/data/cortexPaper";
 
 export const researchItems = [
   {
@@ -79,6 +79,7 @@ export const researchItems = [
     publicationNote:
       "This complete web edition is provided for accessible reading and navigation. The original 31-page PDF remains the fixed version of record.",
     sections: cortexPaperSections,
+    visualsBySection: cortexVisualsBySection,
     overviewSections: [
       {
         id: "biological-imperative",
