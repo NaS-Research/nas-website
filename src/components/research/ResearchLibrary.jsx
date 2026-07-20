@@ -3,6 +3,13 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 
+const typeGroups = {
+  Publications: ["Publication", "Technical Report", "White Paper"],
+  "Model Cards": ["Model Card"],
+  "Research Notes": ["Research Note"],
+  Releases: ["Release"],
+};
+
 export default function ResearchLibrary({ items, types }) {
   const [activeType, setActiveType] = useState("All");
   const [area, setArea] = useState("All areas");
@@ -17,7 +24,7 @@ export default function ResearchLibrary({ items, types }) {
   const filteredItems = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
     return items
-      .filter((item) => activeType === "All" || item.type === activeType)
+      .filter((item) => activeType === "All" || typeGroups[activeType]?.includes(item.type))
       .filter((item) => area === "All areas" || item.area === area)
       .filter((item) => status === "All statuses" || item.status === status)
       .filter((item) =>

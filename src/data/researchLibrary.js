@@ -204,11 +204,10 @@ export const researchItems = [
 
 export const researchTypes = [
   "All",
-  "Publication",
-  "Model Card",
-  "Research Note",
-  "Technical Report",
-  "Release",
+  "Publications",
+  "Model Cards",
+  "Research Notes",
+  "Releases",
 ];
 
 export function getResearchItem(slug) {
