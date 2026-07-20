@@ -1375,7 +1375,6 @@ body {
     overflow-wrap: anywhere;
   }
 
-  .publication-layout,
   .publication-body,
   .publication-section,
   .publication-summary,
@@ -1389,6 +1388,9 @@ body {
 
   .publication-layout {
     display: block;
+    width: calc(100% - 2.5rem);
+    max-width: 76rem;
+    margin-inline: auto;
     padding-block: 2rem 5rem;
   }
 
@@ -1429,7 +1431,7 @@ body {
 
   .native-research-table__scroll {
     width: 100%;
-    max-width: calc(100vw - 2rem);
+    max-width: calc(100vw - 2.5rem);
     overscroll-behavior-inline: contain;
   }
 }
