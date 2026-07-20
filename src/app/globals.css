@@ -144,6 +144,41 @@ body {
   padding-block: clamp(5.5rem, 10vw, 9rem);
 }
 
+.nas-facts {
+  border-bottom: 1px solid var(--nas-line);
+  background: rgba(255, 255, 255, 0.012);
+}
+
+.nas-facts__grid {
+  display: grid;
+}
+
+.nas-fact {
+  display: grid;
+  gap: 0.55rem;
+  padding-block: 1.5rem;
+  border-bottom: 1px solid var(--nas-line-soft);
+}
+
+.nas-fact:last-child {
+  border-bottom: 0;
+}
+
+.nas-fact span {
+  color: #656565;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.nas-fact strong {
+  color: #d4d4d1;
+  font-size: 0.88rem;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
 .nas-section-heading {
   display: grid;
   gap: 1rem;
@@ -312,6 +347,34 @@ body {
   color: var(--nas-gold-light);
 }
 
+.nas-contact-note {
+  max-width: 38rem;
+  margin-top: 1.25rem;
+  color: #777;
+  font-size: 0.82rem;
+  line-height: 1.65;
+}
+
+.nas-contact-section {
+  border-top: 1px solid var(--nas-line);
+}
+
+.nas-contact-guidance {
+  display: grid;
+  gap: 1.5rem;
+  padding: clamp(2rem, 5vw, 4rem);
+  border: 1px solid var(--nas-line);
+  border-radius: 1.25rem;
+  background: var(--nas-panel);
+}
+
+.nas-contact-guidance > p:last-child {
+  max-width: 50rem;
+  color: var(--nas-muted);
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  line-height: 1.75;
+}
+
 @media (min-width: 48rem) {
   .nas-shell {
     width: min(100% - 5rem, 76rem);
@@ -320,6 +383,23 @@ body {
   .nas-hero-summary {
     grid-template-columns: minmax(0, 1fr) 15rem;
     align-items: end;
+  }
+
+  .nas-facts__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .nas-fact {
+    padding: 1.75rem 2rem;
+    border-right: 1px solid var(--nas-line-soft);
+  }
+
+  .nas-fact:nth-child(2n) {
+    border-right: 0;
+  }
+
+  .nas-fact:nth-last-child(-n + 2) {
+    border-bottom: 0;
   }
 
   .nas-section-heading {
@@ -342,6 +422,22 @@ body {
   .nas-closing-panel {
     grid-template-columns: minmax(0, 1fr) auto;
     align-items: end;
+  }
+}
+
+@media (min-width: 70rem) {
+  .nas-facts__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .nas-fact,
+  .nas-fact:nth-child(2n) {
+    border-right: 1px solid var(--nas-line-soft);
+    border-bottom: 0;
+  }
+
+  .nas-fact:last-child {
+    border-right: 0;
   }
 }
 

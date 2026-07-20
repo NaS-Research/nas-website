@@ -7,20 +7,28 @@ export const metadata = {
 
 const sections = [
   {
-    title: "Collaborate",
-    copy: "Researchers, engineers, clinicians, and scientific organizations can help shape projects through technical collaboration and shared expertise.",
+    title: "Scientific collaboration",
+    copy: "Researchers, clinicians, engineers, and domain specialists can contribute through technical discussion, research critique, evaluation design, data curation, and carefully defined collaborative projects.",
   },
   {
-    title: "Provide Resources",
-    copy: "Compute, laboratory access, datasets, equipment, and professional services can meaningfully accelerate an independent research program.",
+    title: "Independent review",
+    copy: "Thoughtful criticism strengthens early work. Qualified reviewers can help examine assumptions, identify missing evidence, challenge technical claims, and improve the clarity and rigor of future publications.",
   },
   {
-    title: "Fund the Work",
-    copy: "Future sponsorship and philanthropic support will help NaS develop open tools, conduct experiments, and expand access to scientific infrastructure.",
+    title: "Compute and infrastructure",
+    copy: "Access to appropriate compute, storage, datasets, software, laboratory resources, and technical services can materially accelerate the development and evaluation of independent scientific systems.",
   },
   {
-    title: "Share the Mission",
-    copy: "Introducing NaS to aligned researchers, institutions, funders, and builders is a simple way to strengthen the community around the work.",
+    title: "Funding the work",
+    copy: "Future sponsorship, research grants, and philanthropic support can help fund model evaluation, computing infrastructure, public research resources, and the careful expansion of the organization.",
+  },
+  {
+    title: "Institutional introductions",
+    copy: "Introductions to aligned laboratories, universities, hospitals, scientific organizations, funders, and experienced builders can help NaS develop the relationships required for durable research programs.",
+  },
+  {
+    title: "Share the research",
+    copy: "Reading, discussing, and sharing NaS publications helps the work reach people who can evaluate it, improve it, or contribute relevant expertise. Serious engagement is more valuable than attention alone.",
   },
 ];
 
@@ -28,13 +36,19 @@ export default function SupportPage() {
   return (
     <InformationalPage
       eyebrow="Support NaS"
-      title="Help ambitious scientific work move forward."
-      introduction="NaS is currently founder-led and being built deliberately. We welcome thoughtful conversations with people and organizations that believe scientific tools should be more capable and more accessible."
+      title="Help build durable capacity for independent science."
+      introduction="NaS is founder-led and being built deliberately. We welcome thoughtful conversations with people and organizations that can strengthen the research through expertise, critical review, infrastructure, funding, or aligned institutional relationships."
+      facts={[
+        { label: "Current stage", value: "Early and founder-led" },
+        { label: "Most useful now", value: "Expertise, review, and infrastructure" },
+        { label: "Partnership standard", value: "Mission and scientific alignment" },
+        { label: "First step", value: "A direct conversation" },
+      ]}
       sections={sections}
       sectionLabel="Ways to contribute"
-      sectionTitle="Build meaningful scientific capacity with us."
+      sectionTitle="Contributions that make the research stronger."
       closingTitle="Interested in supporting NaS?"
-      closingCopy="Formal support programs are still being developed. For now, reach out directly to start a conversation about collaboration, resources, or funding."
+      closingCopy="Formal sponsorship and support programs are still being developed. For now, contact the founder directly with a concise description of your interests, relevant expertise or resources, and the kind of involvement you have in mind."
       actionLabel="Start a conversation"
     />
   );

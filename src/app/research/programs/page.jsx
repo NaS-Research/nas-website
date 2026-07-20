@@ -7,20 +7,28 @@ export const metadata = {
 
 const sections = [
   {
-    title: "Biomedical AI",
-    copy: "We are developing specialized computational systems designed to help researchers interpret complex biomedical information and move from questions to testable ideas faster.",
+    title: "Biomedical intelligence",
+    copy: "We are investigating specialized language and reasoning systems for biomedical knowledge work. Nicole is the central initiative: a research platform intended to help organize literature, connect evidence across domains, and support carefully scoped scientific workflows.",
   },
   {
-    title: "Computational Biology",
-    copy: "Our work connects biological data, scalable computing, and modern modeling techniques to support discovery across genetics, medicine, and biotechnology.",
+    title: "The NaS Cortex",
+    copy: "The Cortex is our proposed knowledge architecture for the life sciences. It organizes expertise into domain-specific gyri that can be updated, evaluated, and selectively coordinated rather than forcing every biological discipline into one undifferentiated system.",
   },
   {
-    title: "Scientific Infrastructure",
-    copy: "NaS is exploring tools that make advanced research workflows more accessible, reproducible, and useful to independent scientists and growing teams.",
+    title: "Computational biology",
+    copy: "This program connects biological data, scientific literature, modern modeling, and scalable compute. Areas of interest include genomics, disease biology, systems-level reasoning, and methods that make large bodies of evidence more tractable.",
   },
   {
-    title: "Automated Discovery",
-    copy: "Long term, we aim to connect intelligent software with laboratory automation so scientific ideas can be evaluated with greater speed and rigor.",
+    title: "Scientific infrastructure",
+    copy: "Capable research depends on more than a model. We are exploring retrieval, provenance, evaluation, data pipelines, efficient training, distributed systems, and interfaces that make computational research more reproducible and useful.",
+  },
+  {
+    title: "Automated discovery",
+    copy: "Our long-term direction is to connect computational reasoning with simulation, measurement, and laboratory automation. Any such system must preserve traceability, clear authorization boundaries, human oversight, and independent verification.",
+  },
+  {
+    title: "Evaluation and governance",
+    copy: "Biomedical systems require unusually high standards. This program focuses on source grounding, uncertainty, privacy, security, misuse prevention, expert review, and the difference between promising internal results and independently validated performance.",
   },
 ];
 
@@ -28,13 +36,19 @@ export default function ResearchProgramsPage() {
   return (
     <InformationalPage
       eyebrow="Research programs"
-      title="Building tools for the next era of life science."
-      introduction="NaS Research is an independent research organization working at the intersection of biology, computation, and artificial intelligence."
+      title="Building the computational foundations of life-science discovery."
+      introduction="NaS works across knowledge systems, biomedical intelligence, computational biology, and scientific infrastructure. The programs are connected by one objective: make rigorous scientific iteration faster without weakening the standards used to evaluate evidence."
+      facts={[
+        { label: "Core initiative", value: "Nicole" },
+        { label: "Knowledge architecture", value: "The NaS Cortex" },
+        { label: "Research mode", value: "Computational and systems-focused" },
+        { label: "Development principle", value: "Human oversight and documented limits" },
+      ]}
       sections={sections}
       sectionLabel="Programs"
-      sectionTitle="From biological questions to computational systems."
+      sectionTitle="From biological questions to dependable scientific systems."
       closingTitle="Explore the research library."
-      closingCopy="Read NaS research notes, model documentation, technical reports, and institutional releases in the public library."
+      closingCopy="The public library is the source for NaS publications, model documentation, research notes, and institutional releases. It will grow as work becomes ready for responsible publication."
       actionLabel="View publications"
       actionHref="/research"
     />

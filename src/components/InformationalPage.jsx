@@ -5,6 +5,7 @@ export default function InformationalPage({
   eyebrow,
   title,
   introduction,
+  facts = [],
   sections,
   sectionLabel = "Areas of focus",
   sectionTitle = "Where we are directing our attention.",
@@ -26,6 +27,19 @@ export default function InformationalPage({
           </div>
         </div>
       </section>
+
+      {facts.length > 0 && (
+        <section className="nas-facts" aria-label="At a glance">
+          <div className="nas-shell nas-facts__grid">
+            {facts.map((fact) => (
+              <div className="nas-fact" key={fact.label}>
+                <span>{fact.label}</span>
+                <strong>{fact.value}</strong>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="nas-content-section">
         <div className="nas-shell">
