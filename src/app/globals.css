@@ -35,7 +35,8 @@ body {
 }
 
 .nas-shell {
-  width: min(100% - 2rem, 76rem);
+  width: calc(100% - 2rem);
+  max-width: 76rem;
   margin-inline: auto;
 }
 
@@ -377,7 +378,7 @@ body {
 
 @media (min-width: 48rem) {
   .nas-shell {
-    width: min(100% - 5rem, 76rem);
+    width: calc(100% - 5rem);
   }
 
   .nas-hero-summary {
@@ -1362,6 +1363,75 @@ body {
   color: var(--nas-text);
   font-size: 0.95rem;
   font-weight: 500;
+}
+
+@media (max-width: 47.99rem) {
+  .publication-hero {
+    padding-block: 7rem 3.5rem;
+  }
+
+  .publication-hero h1 {
+    font-size: clamp(2.7rem, 13vw, 4.25rem);
+    overflow-wrap: anywhere;
+  }
+
+  .publication-layout,
+  .publication-body,
+  .publication-section,
+  .publication-summary,
+  .publication-related,
+  .native-research-visual,
+  .publication-visual {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .publication-layout {
+    display: block;
+    padding-block: 2rem 5rem;
+  }
+
+  .publication-toc {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .publication-toc nav {
+    max-width: 100%;
+    padding-bottom: 0.35rem;
+  }
+
+  .publication-section h2,
+  .publication-section h3,
+  .publication-section > p,
+  .publication-summary > p,
+  .publication-citation > p,
+  .publication-related strong,
+  .publication-sources a {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .publication-section h2 {
+    font-size: clamp(1.9rem, 9vw, 2.75rem);
+    line-height: 1.08;
+  }
+
+  .publication-related a {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .publication-related a > span:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .native-research-table__scroll {
+    width: 100%;
+    max-width: calc(100vw - 2rem);
+    overscroll-behavior-inline: contain;
+  }
 }
 
 @media (min-width: 48rem) {
