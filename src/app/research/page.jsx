@@ -15,7 +15,7 @@ export default function ResearchPage() {
         <div className="nas-shell">
           <div className="research-index-heading">
             <div>
-              <p className="nas-kicker">NaS Research Library</p>
+              <p className="nas-kicker">Publications & documentation</p>
               <h1>Research</h1>
             </div>
             <div className="research-index-intro">
