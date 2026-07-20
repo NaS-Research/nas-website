@@ -7,8 +7,8 @@ export default function HeroSection() {
       <div className="home-mark-hero__atmosphere" aria-hidden="true" />
 
       <div className="home-mark-hero__identity">
-        <p>The next era of life-science research</p>
-        <span>Computational · Evidence-grounded · Built for discovery</span>
+        <p>Biology · Medicine · Biotechnology</p>
+        <span>Computational · Evidence-grounded · Open to scrutiny</span>
       </div>
 
       <div className="home-mark" aria-hidden="true">
@@ -32,8 +32,8 @@ export default function HeroSection() {
       </div>
 
       <div className="home-mark-hero__statement">
-        <p className="home-mark-hero__eyebrow">NaS is an independent research institution.</p>
-        <h1 id="home-mark-title">We build intelligent systems to understand life.</h1>
+        <p className="home-mark-hero__eyebrow">Biology asks difficult questions.</p>
+        <h1 id="home-mark-title">We build the systems to investigate them.</h1>
       </div>
 
       <div className="home-mark-hero__actions" aria-label="Explore NaS Research">
