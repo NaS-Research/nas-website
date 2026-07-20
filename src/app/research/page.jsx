@@ -1,39 +1,35 @@
-import InformationalPage from "@/components/InformationalPage";
+import Link from "next/link";
+import Footer from "@/components/Footer";
+import ResearchLibrary from "@/components/research/ResearchLibrary";
+import { researchItems, researchTypes } from "@/data/researchLibrary";
 
 export const metadata = {
-  title: "Research | NaS Research",
-  description: "Explore the scientific and computational research areas being developed at NaS Research.",
+  title: "Research Library | NaS Research",
+  description: "Browse publications, model cards, technical reports, research notes, and releases from NaS Research.",
 };
-
-const sections = [
-  {
-    title: "Biomedical AI",
-    copy: "We are developing specialized computational systems designed to help researchers interpret complex biomedical information and move from questions to testable ideas faster.",
-  },
-  {
-    title: "Computational Biology",
-    copy: "Our work connects biological data, scalable computing, and modern modeling techniques to support discovery across genetics, medicine, and biotechnology.",
-  },
-  {
-    title: "Scientific Infrastructure",
-    copy: "NaS is exploring tools that make advanced research workflows more accessible, reproducible, and useful to independent scientists and growing teams.",
-  },
-  {
-    title: "Automated Discovery",
-    copy: "Long term, we aim to connect intelligent software with laboratory automation so that scientific ideas can be evaluated with greater speed and rigor.",
-  },
-];
 
 export default function ResearchPage() {
   return (
-    <InformationalPage
-      eyebrow="Research at NaS"
-      title="Building tools for the next era of life science."
-      introduction="NaS Research is an independent research organization working at the intersection of biology, computation, and artificial intelligence. This page is an early view of the programs we are developing."
-      sections={sections}
-      closingTitle="Research updates are coming."
-      closingCopy="Detailed projects, publications, technical notes, and opportunities to collaborate will be added as the work develops."
-      actionLabel="Discuss research"
-    />
+    <div className="nas-page research-index-page">
+      <header className="research-index-header">
+        <div className="nas-shell">
+          <div className="research-index-heading">
+            <div>
+              <p className="nas-kicker">NaS Research Library</p>
+              <h1>Research</h1>
+            </div>
+            <div className="research-index-intro">
+              <p>Publications, technical documentation, research notes, and institutional releases from NaS.</p>
+              <Link href="/research/programs">Explore research programs <span aria-hidden="true">↗</span></Link>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main className="nas-shell research-index-main">
+        <ResearchLibrary items={researchItems} types={researchTypes} />
+      </main>
+      <Footer />
+    </div>
   );
 }

@@ -31,6 +31,8 @@ export default function AboutPage() {
       title="An independent home for ambitious life-science research."
       introduction="NaS Research was created to explore what becomes possible when modern computation, artificial intelligence, and scientific experimentation are developed as one connected system."
       sections={sections}
+      sectionLabel="The institution"
+      sectionTitle="A focused foundation for long-term discovery."
       closingTitle="We are at the beginning."
       closingCopy="The organization, its research programs, and its public resources will continue to take shape as the work progresses."
       actionLabel="Contact the founder"

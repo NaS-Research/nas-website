@@ -6,52 +6,56 @@ export default function InformationalPage({
   title,
   introduction,
   sections,
+  sectionLabel = "Areas of focus",
+  sectionTitle = "Where we are directing our attention.",
+  status = "Independent research · Chicago",
   closingTitle,
   closingCopy,
   actionLabel = "Contact NaS",
   actionHref = "mailto:dalronj.robertson@gmail.com",
 }) {
   return (
-    <div className="min-h-screen bg-black text-white">
-      <section className="border-b border-white/10 px-6 pb-20 pt-36 sm:px-10 sm:pb-28 sm:pt-44">
-        <div className="mx-auto max-w-6xl">
-          <p className="mb-6 text-sm font-medium uppercase tracking-[0.3em] text-[#c7a069]">
-            {eyebrow}
-          </p>
-          <h1 className="max-w-5xl text-5xl font-semibold leading-[0.95] tracking-tight sm:text-7xl lg:text-8xl">
-            {title}
-          </h1>
-          <p className="mt-10 max-w-3xl text-lg leading-8 text-neutral-400 sm:text-xl">
-            {introduction}
-          </p>
+    <div className="nas-page">
+      <section className="nas-hero">
+        <div className="nas-shell">
+          <p className="nas-kicker">{eyebrow}</p>
+          <h1 className="nas-title">{title}</h1>
+          <div className="nas-hero-summary">
+            <p className="nas-introduction">{introduction}</p>
+            <p className="nas-status">{status}</p>
+          </div>
         </div>
       </section>
 
-      <section className="px-6 py-20 sm:px-10 sm:py-28">
-        <div className="mx-auto grid max-w-6xl gap-px overflow-hidden rounded-3xl border border-white/10 bg-white/10 md:grid-cols-2">
+      <section className="nas-content-section">
+        <div className="nas-shell">
+          <header className="nas-section-heading">
+            <p className="nas-section-label">{sectionLabel}</p>
+            <h2 className="nas-section-title">{sectionTitle}</h2>
+          </header>
+          <div className="nas-card-grid">
           {sections.map((section, index) => (
-            <article key={section.title} className="bg-neutral-950 p-8 sm:p-10">
-              <span className="text-sm tabular-nums text-neutral-600">
+            <article key={section.title} className="nas-card">
+              <span className="nas-card-number">
                 {String(index + 1).padStart(2, "0")}
               </span>
-              <h2 className="mt-8 text-2xl font-medium sm:text-3xl">
-                {section.title}
-              </h2>
-              <p className="mt-4 leading-7 text-neutral-400">{section.copy}</p>
+              <h3 className="nas-card-title">{section.title}</h3>
+              <p className="nas-card-copy">{section.copy}</p>
             </article>
           ))}
+          </div>
         </div>
       </section>
 
-      <section className="px-6 pb-24 sm:px-10 sm:pb-32">
-        <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 rounded-3xl bg-neutral-900 px-8 py-10 sm:px-12 sm:py-14 md:flex-row md:items-center">
+      <section className="nas-closing">
+        <div className="nas-shell nas-closing-panel">
           <div>
-            <h2 className="text-3xl font-medium sm:text-4xl">{closingTitle}</h2>
-            <p className="mt-3 max-w-2xl leading-7 text-neutral-400">{closingCopy}</p>
+            <h2 className="nas-closing-title">{closingTitle}</h2>
+            <p className="nas-closing-copy">{closingCopy}</p>
           </div>
           <Link
             href={actionHref}
-            className="shrink-0 rounded-full bg-white px-7 py-3 font-medium text-black transition hover:bg-[#c7a069] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c7a069] focus-visible:ring-offset-4 focus-visible:ring-offset-neutral-900"
+            className="nas-button"
           >
             {actionLabel}
           </Link>

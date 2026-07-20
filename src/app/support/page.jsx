@@ -31,6 +31,8 @@ export default function SupportPage() {
       title="Help ambitious scientific work move forward."
       introduction="NaS is currently founder-led and being built deliberately. We welcome thoughtful conversations with people and organizations that believe scientific tools should be more capable and more accessible."
       sections={sections}
+      sectionLabel="Ways to contribute"
+      sectionTitle="Build meaningful scientific capacity with us."
       closingTitle="Interested in supporting NaS?"
       closingCopy="Formal support programs are still being developed. For now, reach out directly to start a conversation about collaboration, resources, or funding."
       actionLabel="Start a conversation"
