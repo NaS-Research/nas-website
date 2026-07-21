@@ -345,6 +345,80 @@ export const researchItems = [
       },
     ],
   },
+  {
+    slug: "why-hyde-park",
+    title: "Why Hyde Park",
+    shortTitle: "Why Hyde Park",
+    type: "Institutional Essay",
+    area: "Community",
+    date: "July 21, 2026",
+    dateISO: "2026-07-21",
+    version: "1.0",
+    authors: ["NaS Research"],
+    readTime: "5 min read",
+    pdfUrl: null,
+    heroVideo: "/assets/videos/ChicagoThree.mp4#t=2",
+    abstract:
+      "Why NaS is being built in Hyde Park: a place our founder calls home, a community shaped by inquiry and creativity, and a responsibility to serve Chicago’s South Side.",
+    summary:
+      "Hyde Park was home to our founder before it became home to NaS. The neighborhood gives serious ideas room to develop through its intellectual culture, creative community, relationship with the University of Chicago, and setting along Lake Michigan. Being rooted on the South Side also creates an obligation. As NaS grows, our presence should produce meaningful value for the community around us.",
+    pullQuote:
+      "We did not choose Hyde Park from a map. We chose it because it is home.",
+    pullQuoteAttribution: "NaS Research",
+    publicationNote:
+      "This institutional essay describes why NaS chose Hyde Park and the principles that should guide our relationship with the surrounding community.",
+    sections: [
+      {
+        id: "home-before-strategy",
+        title: "1. Home Before Strategy",
+        paragraphs: [
+          "We did not choose Hyde Park through a corporate search for the most advantageous address. Hyde Park was home to our founder before it became home to NaS. It is where the institution’s earliest ideas took shape and where our purpose found a community capable of giving those ideas room to grow.",
+          "That personal connection matters. An institution should understand the place in which it intends to build, not simply arrive because the location appears useful. Our roots here give NaS a starting point based on belonging, memory, and responsibility rather than convenience alone.",
+        ],
+      },
+      {
+        id: "room-for-ideas",
+        title: "2. A Place That Makes Room for Ideas",
+        paragraphs: [
+          "Hyde Park has a rare intellectual and creative character. Scientists, students, artists, writers, musicians, activists, lifelong residents, and people from many traditions share the neighborhood. Different pursuits coexist here, and unusual ideas are allowed to become serious work.",
+          "The University of Chicago strengthens that culture through its commitment to rigorous inquiry, interdisciplinary research, and the testing of difficult ideas. But Hyde Park is larger than the university. Its bookstores, theaters, museums, music, architecture, conversations, and community institutions create an environment where scholarship remains connected to public and creative life.",
+        ],
+      },
+      {
+        id: "beauty-and-place",
+        title: "3. Beauty Is Part of the Place",
+        paragraphs: [
+          "Hyde Park sits beside Lake Michigan, surrounded by parks, paths, museums, historic buildings, and streets made for walking and reflection. The lake changes the scale of the neighborhood. It gives people space to think, breathe, gather, and return to their work with a different perspective.",
+          "Beauty is not separate from institution-building. Difficult work asks people to remain with a problem for years. Places retain thoughtful and creative people when those people can also find community, movement, culture, and a life worth inhabiting. Hyde Park offers that depth.",
+        ],
+      },
+      {
+        id: "the-south-side",
+        title: "4. Our Responsibility to the South Side",
+        paragraphs: [
+          "Hyde Park belongs to Chicago’s South Side. That identity carries pride and responsibility. The South Side has given the world extraordinary science, medicine, literature, music, architecture, political thought, and cultural invention. It has also experienced persistent disinvestment, unequal access to care, food insecurity, and serious health disparities.",
+          "UChicago Medicine’s 2024 to 2025 Community Health Needs Assessment gathered input from nearly 1,800 South Side residents. It identified chronic disease, trauma and behavioral health, and social inequities such as access to care, food insecurity, and workforce development as continuing priorities. These are not abstractions. They shape the lives of the communities surrounding us.",
+          "NaS cannot claim to solve those conditions simply by being present. Presence alone is not contribution. But where we build determines whom we can listen to, whom we can learn from, and whom our work should ultimately benefit. We believe we can serve our community best by remaining close to it.",
+        ],
+      },
+      {
+        id: "worthy-of-home",
+        title: "5. Becoming Worthy of Our Home",
+        paragraphs: [
+          "As NaS grows, our presence should create value beyond the boundaries of the institution. That may eventually include scientific tools, educational pathways, research opportunities, technical employment, and work that strengthens local capacity in the life sciences. We will define those efforts with community partners when we possess the resources and relationships required to do them well.",
+          "We are early, so we will not announce commitments before we can honor them. Our responsibility now is to produce credible work, listen carefully, build relationships, and ensure that the future of NaS develops with an awareness of the place that made its beginning possible.",
+          "Hyde Park gives us a place to think, create, and grow. This is our home. We intend to become worthy of it.",
+        ],
+      },
+    ],
+    sources: [
+      { title: "University of Chicago Harris School: Hyde Park neighborhood", url: "https://harris.uchicago.edu/student-life/harris-experience/our-campus/hyde-park" },
+      { title: "University of Chicago Office of the Provost: Research and rigorous inquiry", url: "https://provost.uchicago.edu/initiatives/research" },
+      { title: "Smart Museum of Art: Hyde Park and the Culture Coast", url: "https://smartmuseum.uchicago.edu/visit/explore-hyde-park/" },
+      { title: "UChicago Medicine: 2024 to 2025 Community Health Needs Assessment", url: "https://www.uchicagomedicine.org/forefront/community-articles/chna-2024-2025" },
+      { title: "City of Chicago: Reducing disparities between neighborhoods", url: "https://resilient.chicago.gov/challenges" },
+    ],
+  },
 ];
 
 export const researchTypes = [

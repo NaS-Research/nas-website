@@ -45,12 +45,27 @@ export default async function ResearchPublicationPage({ params }) {
   if (!item) notFound();
 
   const isOriginStory = item.variant === "institutional-origin";
+  const hasHeroVideo = Boolean(item.heroVideo);
   const citation = `${item.authors.join(", ")} (${item.date.slice(-4)}). ${item.title}. NaS Research. Version ${item.version}. https://nasresearch.bio/research/${item.slug}`;
   const related = researchItems.filter((candidate) => candidate.slug !== item.slug && candidate.area === item.area).slice(0, 2);
 
   return (
     <div className="nas-page publication-page">
-      <header className={`publication-hero ${isOriginStory ? "publication-hero--origin" : ""}`}>
+      <header className={`publication-hero ${isOriginStory ? "publication-hero--origin" : ""} ${hasHeroVideo ? "publication-hero--place" : ""}`}>
+        {hasHeroVideo && (
+          <>
+            <video
+              className="publication-hero__place-video"
+              src={item.heroVideo}
+              autoPlay
+              loop
+              muted
+              playsInline
+              aria-hidden="true"
+            />
+            <div className="publication-hero__place-shade" aria-hidden="true" />
+          </>
+        )}
         {isOriginStory && (
           <div className="publication-hero__origin-mark" aria-hidden="true">
             <Image

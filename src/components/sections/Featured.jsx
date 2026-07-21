@@ -62,10 +62,14 @@ export default function Featured() {
             </div>
           </Link>
 
-          {/* Community Engagement */}
-          <div className="space-y-4">
+          {/* Hyde Park */}
+          <Link
+            href="/research/why-hyde-park"
+            className="group block space-y-4 rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#dfc18f] focus-visible:ring-offset-4 focus-visible:ring-offset-black"
+            aria-label="Read Why Hyde Park"
+          >
             <div className="overflow-hidden rounded-xl aspect-square">
-              <div className="transform transition-transform duration-300 hover:scale-105 w-full h-full">
+              <div className="transform transition-transform duration-300 group-hover:scale-105 w-full h-full">
                 <video
                   src="/assets/videos/ChicagoThree.mp4#t=2"
                   muted
@@ -77,15 +81,15 @@ export default function Featured() {
               </div>
             </div>
             <div className="space-y-3">
-              <h3 className="text-xl font-medium text-white">
-                Investing in Hyde Park and Chicago’s Future
+              <h3 className="text-xl font-medium text-white transition-colors group-hover:text-[#dfc18f]">
+                Why Hyde Park <span aria-hidden="true" className="inline-block text-[0.7em] transition-transform group-hover:translate-x-1">↗</span>
               </h3>
               <p className="text-base">
                 <span className="text-white">Community</span> ·{" "}
-                <span className="text-neutral-400">3&nbsp;min read</span>
+                <span className="text-neutral-400">5&nbsp;min read</span>
               </p>
             </div>
-          </div>
+          </Link>
 
           {/* Institutional origin */}
           <Link
