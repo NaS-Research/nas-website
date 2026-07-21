@@ -87,10 +87,14 @@ export default function Featured() {
             </div>
           </div>
 
-          {/* Founding of NaS */}
-          <div className="space-y-4">
+          {/* Founder's Letter */}
+          <Link
+            href="/research/why-nas-exists"
+            className="group block space-y-4 rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#dfc18f] focus-visible:ring-offset-4 focus-visible:ring-offset-black"
+            aria-label="Read Why NaS Exists"
+          >
             <div className="overflow-hidden rounded-xl aspect-square">
-              <div className="transform transition-transform duration-300 hover:scale-105 w-full h-full">
+              <div className="transform transition-transform duration-300 group-hover:scale-105 w-full h-full">
                 <Image
                   src="/assets/images/NaSLogo.jpeg"
                   alt="NaS logo"
@@ -102,13 +106,15 @@ export default function Featured() {
               </div>
             </div>
             <div className="space-y-3">
-              <h3 className="text-xl font-medium text-white">The Birth of NaS</h3>
+              <h3 className="text-xl font-medium text-white transition-colors group-hover:text-[#dfc18f]">
+                Why NaS Exists <span aria-hidden="true" className="inline-block text-[0.7em] transition-transform group-hover:translate-x-1">↗</span>
+              </h3>
               <p className="text-base">
-                <span className="text-white">Release</span> ·{" "}
-                <span className="text-neutral-400">3&nbsp;min read</span>
+                <span className="text-white">Founder’s Letter</span> ·{" "}
+                <span className="text-neutral-400">8&nbsp;min read</span>
               </p>
             </div>
-          </div>
+          </Link>
         </div>
 
       </div>

@@ -7,7 +7,7 @@ const typeGroups = {
   Publications: ["Publication", "Technical Report", "White Paper"],
   "Model Cards": ["Model Card"],
   "Research Notes": ["Research Note"],
-  Releases: ["Release"],
+  Releases: ["Release", "Founder's Letter"],
 };
 
 export default function ResearchLibrary({ items, types }) {

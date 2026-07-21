@@ -251,6 +251,97 @@ export const researchItems = [
       { title: "Choose Chicago — Neighborhoods and cultural institutions", url: "https://www.choosechicago.com/neighborhoods/" },
     ],
   },
+  {
+    slug: "why-nas-exists",
+    title: "Why NaS Exists",
+    shortTitle: "Why NaS Exists",
+    type: "Founder's Letter",
+    area: "Institutional",
+    date: "July 20, 2026",
+    dateISO: "2026-07-20",
+    version: "1.0",
+    authors: ["Dalron J. Robertson"],
+    readTime: "8 min read",
+    pdfUrl: null,
+    variant: "founder-letter",
+    abstract:
+      "Founder Dalron J. Robertson on the technological mismatch that led to NaS—and the ambition to place extraordinary tools in the hands of people pursuing extraordinary questions.",
+    summary:
+      "NaS began with a mismatch its founder could not ignore. Modern software had created extraordinary leverage, yet researchers confronting biology’s hardest questions often worked across fragmented information and disconnected tools. NaS exists to build stronger foundations for scientists: knowledge systems, instruments, and environments that expand what they are able to investigate and discover.",
+    pullQuote:
+      "NaS exists to place extraordinary tools in the hands of people pursuing extraordinary questions.",
+    publicationNote:
+      "This founder’s letter describes the origin and long-term purpose of NaS. It reflects the institution’s direction as of July 20, 2026.",
+    sections: [
+      {
+        id: "the-mismatch",
+        title: "1. A Mismatch I Could Not Ignore",
+        paragraphs: [
+          "I did not begin NaS because I wanted to start another technology company. I began it because I could see what modern technology was capable of—and I could see where that capability was not going.",
+          "My background is in biology, but I also worked as a software engineer for a company in Silicon Valley. There, I encountered systems that could organize enormous amounts of information, automate complex work, and give small teams capabilities that would have seemed impossible only a few years earlier. I saw sophisticated infrastructure, intelligent software, and an engineering culture capable of turning an idea into a tool used at extraordinary scale.",
+          "Then I looked back toward biology. Scientists were working on questions of profound consequence: how disease begins, why treatment fails, how living systems interact, and what might allow a patient to live longer or better. Yet the tools surrounding much of that work often felt fragmented, inaccessible, or generations behind what software had already made possible elsewhere.",
+          "The contrast disturbed me. Some of the world’s most capable technical systems were being used to improve advertising, optimize attention, or move another commercial metric by another percentage point. Those may be legitimate business problems. But I could not accept that our best tools should stop there while people pursuing the deepest questions in life science remained comparatively under-equipped.",
+        ],
+      },
+      {
+        id: "scientists-deserve-better",
+        title: "2. Scientists Deserve Better Tools",
+        paragraphs: [
+          "The problem was never that scientists lacked intelligence, imagination, or discipline. The problem was that their working environment did not always compound those qualities. Biological knowledge was distributed across papers, databases, specialties, institutions, and formats that were never designed to function as one coherent system. Valuable time was spent finding information, reconciling terminology, moving between incompatible tools, and rebuilding context that should have remained available.",
+          "Modern software had already shown what happens when people receive better abstractions and better infrastructure. A well-designed tool does not diminish expertise. It gives expertise reach. It removes unnecessary friction, preserves context, and allows a person to spend more of their attention on the part of the work that only they can do.",
+          "I wanted scientists to have that leverage. Not technology imposed upon them from a distance, and not systems that pretend scientific judgment can be replaced by a prediction. I wanted foundations built around the realities of scientific work—tools that help researchers ask stronger questions, connect more evidence, design better investigations, and move with greater clarity from an idea toward a discovery.",
+        ],
+      },
+      {
+        id: "stopped-waiting",
+        title: "3. I Stopped Waiting",
+        paragraphs: [
+          "For a time, I expected someone else to build it. The need seemed too obvious and the opportunity too important. I looked for an institution that would bring the full force of contemporary software engineering to the life sciences without reducing biology to a marketing category or treating researchers as an afterthought.",
+          "Eventually, I stopped waiting.",
+          "NaS began with a straightforward decision: if I could not find the institution I believed should exist, I would begin building it. That decision did not arrive with a laboratory, a large team, or a finished platform. It began with the willingness to take the first problem seriously, construct what was possible with the resources available, and let credible work earn the right to become something larger.",
+          "NaS is therefore not technology in search of an application. It begins with the questions science has not yet been adequately equipped to answer.",
+        ],
+      },
+      {
+        id: "shovels-for-discovery",
+        title: "4. Shovels for Discovery",
+        paragraphs: [
+          "The purpose of NaS is to empower scientists. We want to give them the foundations, resources, and instruments required to explore—to build the modern shovels with which new scientific ground can be opened.",
+          "A shovel does not decide where to dig. A microscope does not determine which observation matters. A knowledge system does not replace the scientist who understands the experiment, recognizes the anomaly, or sees a possibility that no benchmark anticipated. The instrument matters because of what it allows a capable person to do.",
+          "That distinction will remain central to NaS. We are not building systems to make scientists peripheral to science. We are building systems intended to increase their range: to help them navigate evidence, preserve provenance, work across disciplines, test ideas, and approach questions that would otherwise be too large, too fragmented, or too slow to pursue.",
+          "The standard is not whether a tool appears impressive in isolation. The standard is whether it helps serious people do more serious work.",
+        ],
+      },
+      {
+        id: "the-oasis",
+        title: "5. An Oasis for Scientific Work",
+        paragraphs: [
+          "The long-term ambition of NaS is larger than a single model, application, or publication. I want NaS to become an oasis for scientific work: a place where biologists, researchers, clinicians, engineers, and other life-science people can find the knowledge, tools, infrastructure, and freedom required to pursue difficult questions.",
+          "An oasis does not promise that every experiment will succeed. Science advances through uncertainty, failed hypotheses, incomplete evidence, and patient revision. What it can provide is the environment in which ambitious investigation remains possible—the time to think, the instruments to test, the systems to remember, and the company of people who understand why the question is worth pursuing.",
+          "I want researchers at NaS to be able to chase what appears impossible. Not because impossibility is a slogan, but because many discoveries begin as questions that existing institutions, incentives, or tools make impractical to ask. The responsibility of NaS is to expand the boundary of the practical.",
+        ],
+      },
+      {
+        id: "where-we-begin",
+        title: "6. Where We Begin",
+        paragraphs: [
+          "We begin with the systems we can build now. The NaS Cortex is an early expression of the mission: a knowledge architecture intended to organize life-science information into specialized domains while preserving the relationships needed for scientific reasoning. It is not the final form of NaS. It is the first foundation.",
+          "This work starts in software because software can extend the reach of a small, early institution. It allows us to develop architectures, study scientific information, create tools, publish our reasoning, and learn before claiming capabilities we have not yet earned. Over time, those systems can support richer forms of investigation, stronger collaborations, experimental infrastructure, and research programs that move between computation and the physical world.",
+          "NaS remains founder-led and early. Our responsibility is to describe that reality honestly, distinguish aspiration from demonstrated capability, and build in the open where doing so is responsible. Ambition becomes credible through accumulated evidence—not through the size of the promise.",
+        ],
+      },
+      {
+        id: "the-work-ahead",
+        title: "7. The Work Ahead",
+        paragraphs: [
+          "NaS will be built over a long horizon. Individual technologies will change. Models will be replaced, research directions will evolve, and some experiments will fail. The institution must be more durable than any one implementation. Its purpose is to keep learning how better systems can serve scientific discovery—and to turn those lessons into tools researchers can actually use.",
+          "We will organize knowledge. We will develop scientific instruments. We will create stronger foundations for discovery. We will work toward an environment in which researchers have more freedom to explore, create, and attempt what presently appears beyond reach.",
+          "I began NaS because I had seen what technology could do, and I believed science deserved more of that power. I still do.",
+          "That is why NaS exists.",
+        ],
+      },
+    ],
+  },
 ];
 
 export const researchTypes = [

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Footer from "@/components/Footer";
@@ -43,12 +44,24 @@ export default async function ResearchPublicationPage({ params }) {
   const item = getResearchItem(slug);
   if (!item) notFound();
 
+  const isFounderLetter = item.variant === "founder-letter";
   const citation = `${item.authors.join(", ")} (${item.date.slice(-4)}). ${item.title}. NaS Research. Version ${item.version}. https://nasresearch.bio/research/${item.slug}`;
   const related = researchItems.filter((candidate) => candidate.slug !== item.slug && candidate.area === item.area).slice(0, 2);
 
   return (
     <div className="nas-page publication-page">
-      <header className="publication-hero">
+      <header className={`publication-hero ${isFounderLetter ? "publication-hero--founder" : ""}`}>
+        {isFounderLetter && (
+          <div className="publication-hero__founder-mark" aria-hidden="true">
+            <Image
+              src="/assets/images/NaSLogo-transparent.png"
+              alt=""
+              width={800}
+              height={800}
+              priority
+            />
+          </div>
+        )}
         <div className="nas-shell publication-hero__inner">
           <Link href="/research" className="publication-back">← Research library</Link>
           <div className="publication-meta-line">
@@ -98,6 +111,14 @@ export default async function ResearchPublicationPage({ params }) {
               <div><dt>Version</dt><dd>{item.version}</dd></div>
             </dl>
           </section>
+
+          {item.pullQuote && (
+            <blockquote className="publication-pullquote">
+              <span aria-hidden="true">“</span>
+              <p>{item.pullQuote}</p>
+              <cite>Dalron J. Robertson · Founder, NaS</cite>
+            </blockquote>
+          )}
 
           {item.sections.map((section) => (
             <section
