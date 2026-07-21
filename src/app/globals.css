@@ -80,6 +80,46 @@ body {
     #030303;
 }
 
+.home-mark-hero__current {
+  position: absolute;
+  z-index: 1;
+  top: 7rem;
+  left: max(1.25rem, 4vw);
+  display: grid;
+  gap: 0.28rem;
+  max-width: 20rem;
+  padding-left: 0.9rem;
+  border-left: 1px solid rgba(228, 205, 167, 0.28);
+}
+
+.home-mark-hero__current > span {
+  color: #9d8c72;
+  font-size: 0.63rem;
+  font-weight: 600;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.home-mark-hero__current strong {
+  color: #eee8df;
+  font-size: 1rem;
+  font-weight: 540;
+  letter-spacing: -0.02em;
+  transition: color 180ms ease;
+}
+
+.home-mark-hero__current small {
+  color: #8f877c;
+  font-size: 0.73rem;
+  line-height: 1.45;
+  transition: color 180ms ease;
+}
+
+.home-mark-hero__current:hover strong,
+.home-mark-hero__current:hover small {
+  color: #e7cfa8;
+}
+
 .home-mark {
   position: absolute;
   top: 49%;
@@ -219,6 +259,12 @@ body {
   .home-mark-hero::after {
     inset: 18% -20% 20%;
     transform: none;
+  }
+
+  .home-mark-hero__current {
+    top: 6.25rem;
+    left: 1.25rem;
+    max-width: 15rem;
   }
 
   .home-mark {

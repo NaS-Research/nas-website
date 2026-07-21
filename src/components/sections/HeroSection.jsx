@@ -6,6 +6,14 @@ export default function HeroSection() {
     <section className="home-mark-hero" aria-labelledby="home-mark-title">
       <div className="home-mark-hero__atmosphere" aria-hidden="true" />
 
+      <Link className="home-mark-hero__current" href="/research/introducing-nas-cortex">
+        <span>Current work</span>
+        <strong>The NaS Cortex</strong>
+        <small>
+          Knowledge architecture for the life sciences <span aria-hidden="true">↗</span>
+        </small>
+      </Link>
+
       <div className="home-mark" aria-hidden="true">
         <div className="home-mark__halo" />
         <Image
