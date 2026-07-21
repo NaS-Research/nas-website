@@ -25,6 +25,315 @@ body {
   color: var(--nas-black);
 }
 
+.nas-navbar {
+  position: fixed;
+  z-index: 60;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 5rem;
+  border-bottom: 1px solid transparent;
+  background: rgba(3, 3, 3, 0.16);
+  transition:
+    height 300ms ease,
+    transform 300ms ease,
+    border-color 300ms ease,
+    background-color 300ms ease,
+    backdrop-filter 300ms ease;
+}
+
+.nas-navbar--visible {
+  transform: translateY(0);
+}
+
+.nas-navbar--hidden {
+  transform: translateY(-100%);
+}
+
+.nas-navbar--scrolled,
+.nas-navbar--open {
+  height: 4.35rem;
+  border-color: rgba(255, 255, 255, 0.075);
+  background: rgba(3, 3, 3, 0.84);
+  backdrop-filter: blur(20px) saturate(125%);
+}
+
+.nas-navbar__inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 80rem;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 3vw, 2rem);
+}
+
+.nas-navbar__brand {
+  position: relative;
+  display: block;
+  width: 3.65rem;
+  height: 3.65rem;
+  flex: 0 0 auto;
+}
+
+.nas-navbar__wordmark,
+.nas-navbar__mark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  opacity: 0;
+  transform: translateY(calc(-50% + 0.25rem)) scale(0.94);
+  transition: opacity 420ms ease, transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nas-navbar__wordmark {
+  color: #f2f0ec;
+  font-size: 1.3rem;
+  font-weight: 610;
+  letter-spacing: -0.05em;
+}
+
+.nas-navbar__mark {
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nas-navbar__brand-layer--visible {
+  opacity: 1;
+  transform: translateY(-50%) scale(1);
+}
+
+.nas-navbar__links {
+  display: none;
+}
+
+.nas-navbar__contact {
+  display: none;
+}
+
+.nas-navbar__menu-trigger {
+  position: relative;
+  width: 2.75rem;
+  height: 2.75rem;
+  margin-left: auto;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 50%;
+  color: var(--nas-text);
+  cursor: pointer;
+  transition: border-color 180ms ease, background-color 180ms ease;
+}
+
+.nas-navbar__menu-trigger:hover {
+  border-color: rgba(223, 193, 143, 0.48);
+  background: rgba(223, 193, 143, 0.065);
+}
+
+.nas-navbar__menu-trigger span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.95rem;
+  height: 1px;
+  background: currentColor;
+  transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nas-navbar__menu-trigger span:first-child {
+  transform: translate(-50%, -0.2rem);
+}
+
+.nas-navbar__menu-trigger span:last-child {
+  transform: translate(-50%, 0.2rem);
+}
+
+.nas-navbar__menu-trigger--open span:first-child {
+  transform: translate(-50%, 0) rotate(45deg);
+}
+
+.nas-navbar__menu-trigger--open span:last-child {
+  transform: translate(-50%, 0) rotate(-45deg);
+}
+
+.nas-mobile-menu {
+  position: fixed;
+  z-index: 1;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 7rem 1.25rem 2rem;
+  background:
+    radial-gradient(circle at 85% 12%, rgba(199, 160, 105, 0.12), transparent 22rem),
+    #050505;
+  animation: nas-menu-in 260ms ease both;
+}
+
+.nas-mobile-menu__nav {
+  margin: auto 0;
+  border-top: 1px solid var(--nas-line);
+}
+
+.nas-mobile-menu__link {
+  display: grid;
+  grid-template-columns: 2rem 1fr auto;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--nas-line);
+  color: #e9e6e0;
+}
+
+.nas-mobile-menu__link > span:first-child {
+  color: #766d61;
+  font-size: 0.64rem;
+  letter-spacing: 0.12em;
+}
+
+.nas-mobile-menu__link strong {
+  font-size: clamp(1.75rem, 8vw, 2.75rem);
+  font-weight: 460;
+  letter-spacing: -0.045em;
+  line-height: 1;
+}
+
+.nas-mobile-menu__link > span:last-child {
+  color: #8d8170;
+  font-size: 0.85rem;
+}
+
+.nas-mobile-menu__link--active strong,
+.nas-mobile-menu__link:hover strong {
+  color: var(--nas-gold-light);
+}
+
+.nas-mobile-menu__current {
+  display: grid;
+  gap: 0.1rem;
+  margin-top: 2rem;
+  padding-left: 0.8rem;
+  border-left: 1px solid rgba(223, 193, 143, 0.3);
+}
+
+.nas-mobile-menu__current span {
+  color: #8d806e;
+  font-size: 0.61rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.nas-mobile-menu__current strong {
+  color: #e9e4dc;
+  font-size: 0.92rem;
+  font-weight: 550;
+}
+
+.nas-mobile-menu__current small {
+  color: #837d74;
+  font-size: 0.7rem;
+}
+
+@keyframes nas-menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(-0.5rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 48rem) {
+  .nas-navbar__links {
+    display: flex;
+    align-items: center;
+    gap: 0.15rem;
+    margin-left: clamp(1rem, 3vw, 2.75rem);
+  }
+
+  .nas-navbar__link {
+    position: relative;
+    padding: 0.55rem 0.75rem;
+    color: #9b9995;
+    font-size: 0.79rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    transition: color 180ms ease;
+  }
+
+  .nas-navbar__link::after {
+    position: absolute;
+    right: 0.75rem;
+    bottom: 0.2rem;
+    left: 0.75rem;
+    height: 1px;
+    content: "";
+    background: var(--nas-gold);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 220ms ease;
+  }
+
+  .nas-navbar__link:hover,
+  .nas-navbar__link--active {
+    color: #f0ede8;
+  }
+
+  .nas-navbar__link--active::after {
+    transform: scaleX(1);
+  }
+
+  .nas-navbar__contact {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-left: auto;
+    padding: 0.65rem 1rem;
+    border: 1px solid rgba(223, 193, 143, 0.34);
+    border-radius: 999px;
+    color: #dfceb2;
+    font-size: 0.78rem;
+    font-weight: 520;
+    transition: color 180ms ease, border-color 180ms ease, background-color 180ms ease;
+  }
+
+  .nas-navbar__contact:hover,
+  .nas-navbar__contact--active {
+    border-color: #e4cda7;
+    background: #e4cda7;
+    color: #17120d;
+  }
+
+  .nas-navbar__contact span {
+    transition: transform 180ms ease;
+  }
+
+  .nas-navbar__contact:hover span {
+    transform: translate(0.1rem, -0.1rem);
+  }
+
+  .nas-navbar__menu-trigger {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nas-navbar,
+  .nas-navbar__wordmark,
+  .nas-navbar__mark,
+  .nas-navbar__menu-trigger span,
+  .nas-mobile-menu {
+    animation: none;
+    transition: none;
+  }
+}
+
 .nas-page {
   min-height: 100vh;
   overflow: hidden;
