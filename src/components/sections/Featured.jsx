@@ -87,7 +87,7 @@ export default function Featured() {
             </div>
           </div>
 
-          {/* Founder's Letter */}
+          {/* Institutional origin */}
           <Link
             href="/research/why-nas-exists"
             className="group block space-y-4 rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#dfc18f] focus-visible:ring-offset-4 focus-visible:ring-offset-black"
@@ -110,7 +110,7 @@ export default function Featured() {
                 Why NaS Exists <span aria-hidden="true" className="inline-block text-[0.7em] transition-transform group-hover:translate-x-1">↗</span>
               </h3>
               <p className="text-base">
-                <span className="text-white">Founder’s Letter</span> ·{" "}
+                <span className="text-white">Institutional Essay</span> ·{" "}
                 <span className="text-neutral-400">8&nbsp;min read</span>
               </p>
             </div>

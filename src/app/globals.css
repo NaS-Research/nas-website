@@ -1353,7 +1353,7 @@ body {
   background: radial-gradient(circle at 50% 30%, rgba(199, 160, 105, 0.075), transparent 28rem);
 }
 
-.publication-hero--founder {
+.publication-hero--origin {
   position: relative;
   display: grid;
   min-height: min(90svh, 58rem);
@@ -1365,7 +1365,7 @@ body {
     #030303;
 }
 
-.publication-hero--founder::before {
+.publication-hero--origin::before {
   position: absolute;
   z-index: -2;
   inset: 8% 12%;
@@ -1375,7 +1375,7 @@ body {
   transform: scaleX(1.5);
 }
 
-.publication-hero__founder-mark {
+.publication-hero__origin-mark {
   position: absolute;
   z-index: -1;
   top: 50%;
@@ -1387,17 +1387,17 @@ body {
   pointer-events: none;
 }
 
-.publication-hero__founder-mark img {
+.publication-hero__origin-mark img {
   width: 100%;
   height: auto;
 }
 
-.publication-hero--founder .publication-hero__inner {
+.publication-hero--origin .publication-hero__inner {
   position: relative;
   z-index: 1;
 }
 
-.publication-hero--founder h1 {
+.publication-hero--origin h1 {
   color: #f3eee6;
   text-shadow: 0 0 4rem rgba(0, 0, 0, 0.9);
 }

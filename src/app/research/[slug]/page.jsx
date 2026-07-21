@@ -44,15 +44,15 @@ export default async function ResearchPublicationPage({ params }) {
   const item = getResearchItem(slug);
   if (!item) notFound();
 
-  const isFounderLetter = item.variant === "founder-letter";
+  const isOriginStory = item.variant === "institutional-origin";
   const citation = `${item.authors.join(", ")} (${item.date.slice(-4)}). ${item.title}. NaS Research. Version ${item.version}. https://nasresearch.bio/research/${item.slug}`;
   const related = researchItems.filter((candidate) => candidate.slug !== item.slug && candidate.area === item.area).slice(0, 2);
 
   return (
     <div className="nas-page publication-page">
-      <header className={`publication-hero ${isFounderLetter ? "publication-hero--founder" : ""}`}>
-        {isFounderLetter && (
-          <div className="publication-hero__founder-mark" aria-hidden="true">
+      <header className={`publication-hero ${isOriginStory ? "publication-hero--origin" : ""}`}>
+        {isOriginStory && (
+          <div className="publication-hero__origin-mark" aria-hidden="true">
             <Image
               src="/assets/images/NaSLogo-transparent.png"
               alt=""
@@ -116,7 +116,7 @@ export default async function ResearchPublicationPage({ params }) {
             <blockquote className="publication-pullquote">
               <span aria-hidden="true">“</span>
               <p>{item.pullQuote}</p>
-              <cite>Dalron J. Robertson · Founder, NaS</cite>
+              <cite>{item.pullQuoteAttribution ?? item.authors.join(", ")}</cite>
             </blockquote>
           )}
 
