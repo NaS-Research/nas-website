@@ -85,7 +85,7 @@ export default function ResearchLibrary({ items, types }) {
             <select value={sort} onChange={(event) => setSort(event.target.value)}>
               <option value="newest">Newest first</option>
               <option value="oldest">Oldest first</option>
-              <option value="title">Title A–Z</option>
+              <option value="title">Title A to Z</option>
             </select>
           </label>
           <div className="research-view-toggle" aria-label="Display style">

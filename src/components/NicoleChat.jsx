@@ -161,7 +161,7 @@ export default function NicoleChat({ initialPrompt = '', userName = null }) {
               </button>
             </div>
 
-            {/* Suggested prompts – 3 on first row, 2 on second */}
+            {/* Suggested prompts: 3 on first row, 2 on second */}
             <div className="flex flex-col items-center gap-3 mt-4">
               {/* Row 1 */}
               <div className="flex justify-center gap-3">
