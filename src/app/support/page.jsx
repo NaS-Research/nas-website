@@ -2,33 +2,33 @@ import InformationalPage from "@/components/InformationalPage";
 
 export const metadata = {
   title: "Support | NaS Research",
-  description: "Learn how to support and collaborate with NaS Research.",
+  description: "Ways to strengthen NaS Research through expertise, critical review, infrastructure, resources, and focused collaboration.",
 };
 
 const sections = [
   {
-    title: "Scientific collaboration",
-    copy: "Researchers, clinicians, engineers, and domain specialists can contribute through technical discussion, research critique, evaluation design, data curation, and carefully defined collaborative projects.",
+    title: "Work with us",
+    copy: "Researchers, clinicians, engineers, and specialists can contribute through focused technical discussion, evaluation design, data curation, and clearly defined projects. A useful collaboration begins with a specific question and a clear reason to work together.",
   },
   {
-    title: "Independent review",
-    copy: "Thoughtful criticism strengthens early work. Qualified reviewers can help examine assumptions, identify missing evidence, challenge technical claims, and improve the clarity and rigor of future publications.",
+    title: "Challenge the work",
+    copy: "Serious criticism makes research stronger. Qualified reviewers can examine assumptions, identify missing evidence, test technical claims, and improve the clarity of future publications. Agreement is less valuable than careful judgment.",
   },
   {
-    title: "Compute and infrastructure",
-    copy: "Access to appropriate compute, storage, datasets, software, laboratory resources, and technical services can materially accelerate the development and evaluation of independent scientific systems.",
+    title: "Expand our capabilities",
+    copy: "Access to appropriate computing, storage, laboratory resources, software, and technical services can accelerate work that would otherwise remain out of reach. The right infrastructure matters when it is connected to a real scientific need.",
   },
   {
-    title: "Funding the work",
-    copy: "Future sponsorship, research grants, and philanthropic support can help fund model evaluation, computing infrastructure, public research resources, and the careful expansion of the organization.",
+    title: "Share resources responsibly",
+    copy: "Useful datasets, research materials, publications, and access to specialized facilities can open new directions. Any resource must be shared with appropriate permission, documentation, privacy protections, and respect for the people or communities represented in the data.",
   },
   {
-    title: "Institutional introductions",
-    copy: "Introductions to aligned laboratories, universities, hospitals, scientific organizations, funders, and experienced builders can help NaS develop the relationships required for durable research programs.",
+    title: "Support specific research",
+    copy: "Funding, sponsorship, or in-kind support is most useful when attached to a defined research need, such as evaluation, infrastructure, publication, or access to scientific resources. We are open to conversations grounded in the work rather than visibility alone.",
   },
   {
-    title: "Share the research",
-    copy: "Reading, discussing, and sharing NaS publications helps the work reach people who can evaluate it, improve it, or contribute relevant expertise. Serious engagement is more valuable than attention alone.",
+    title: "Connect serious people",
+    copy: "A thoughtful introduction to a laboratory, university, hospital, scientific organization, funder, or experienced builder can be valuable when there is a clear point of connection. The aim is not a larger network. It is a more capable one.",
   },
 ];
 
@@ -36,20 +36,21 @@ export default function SupportPage() {
   return (
     <InformationalPage
       eyebrow="Support NaS"
-      title="Help build durable capacity for independent science."
-      introduction="NaS is founder-led and being built deliberately. We welcome thoughtful conversations with people and organizations that can strengthen the research through expertise, critical review, infrastructure, funding, or aligned institutional relationships."
+      title="Help make the work stronger."
+      introduction="The most valuable support improves what NaS can investigate, build, test, or publish. We welcome serious contributions of expertise, critical review, infrastructure, resources, and focused collaboration."
+      status="Founder-led · Hyde Park, Chicago"
       facts={[
-        { label: "Current stage", value: "Early and founder-led" },
+        { label: "Current focus", value: "Build and validate the work" },
         { label: "Most useful now", value: "Expertise, review, and infrastructure" },
-        { label: "Partnership standard", value: "Mission and scientific alignment" },
+        { label: "Working standard", value: "Clear purpose and scientific alignment" },
         { label: "First step", value: "A direct conversation" },
       ]}
       sections={sections}
-      sectionLabel="Ways to contribute"
-      sectionTitle="Contributions that make the research stronger."
-      closingTitle="Interested in supporting NaS?"
-      closingCopy="Formal sponsorship and support programs are still being developed. For now, contact the founder directly with a concise description of your interests, relevant expertise or resources, and the kind of involvement you have in mind."
-      actionLabel="Start a conversation"
+      sectionLabel="Where support matters"
+      sectionTitle="Contribute something the work can use."
+      closingTitle="Start with a specific idea."
+      closingCopy="NaS does not currently operate a public donation program. If you can contribute expertise, infrastructure, responsible access to resources, funding for a defined need, or a serious introduction, write with a concise proposal and the outcome you believe it could enable."
+      actionLabel="Contact NaS"
     />
   );
 }
