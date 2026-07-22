@@ -1,22 +1,48 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+
+const siteDescription =
+  "NaS Research builds systems, knowledge foundations, and scientific instruments for investigating difficult questions across the life sciences.";
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "NaS Research",
+  url: "https://nasresearch.bio",
+  logo: "https://nasresearch.bio/web-app-manifest-512x512.png",
+  description: siteDescription,
+  foundingLocation: {
+    "@type": "Place",
+    name: "Chicago, Illinois",
+  },
+  sameAs: [
+    "https://www.linkedin.com/company/nasresearch/",
+    "https://www.instagram.com/nasresearch/",
+  ],
+  founder: {
+    "@type": "Person",
+    name: "Dalron J. Robertson",
+  },
+};
+
 export const metadata = {
   /* ---------- Basic identity ---------- */
-  title: "NaS Research | Computational Tools for Life‑Science",
-  description:
-    "NaS Research builds open computational tools, AI models, and automated systems that accelerate discovery across biology, medicine, and biotechnology.",
+  title: "NaS Research | Life Science Research",
+  description: siteDescription,
   authors: [{ name: "NaS Research", url: "https://nasresearch.bio" }],
+  creator: "NaS Research",
+  publisher: "NaS Research",
+  category: "Science and research",
   keywords: [
     "NaS Research",
     "NaS",
-    "computational biology",
-    "AI drug discovery",
-    "life‑science engineering",
-    "robotic labs",
-    "bioinformatics",
-    "high‑performance computing",
-    "biotechnology",
-    "precision medicine"
+    "life science research",
+    "scientific discovery",
+    "scientific infrastructure",
+    "biomedical research",
+    "knowledge systems",
+    "research tools",
+    "Chicago research",
   ],
   metadataBase: new URL("https://nasresearch.bio"),
 
@@ -29,8 +55,7 @@ export const metadata = {
   /* ---------- Open Graph / social preview ---------- */
   openGraph: {
     title: "NaS Research",
-    description:
-      "Building computational tools and AI-driven platforms for next‑generation life‑science research.",
+    description: siteDescription,
     url: "https://nasresearch.bio",
     siteName: "NaS Research",
     locale: "en_US",
@@ -45,6 +70,13 @@ export const metadata = {
     ],
   },
 
+  twitter: {
+    card: "summary_large_image",
+    title: "NaS Research",
+    description: siteDescription,
+    images: ["/og.png"],
+  },
+
   /* ---------- SEO helpers ---------- */
   alternates: { canonical: "https://nasresearch.bio" },
   robots: {
@@ -53,21 +85,6 @@ export const metadata = {
     googleBot: { index: true, follow: true },
   },
 
-  /* ---------- Structured Data (JSON-LD) ---------- */
-  structuredData: {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "NaS Research",
-    "url": "https://nasresearch.bio",
-    "sameAs": [
-      "https://www.linkedin.com/company/nasresearch/",
-      "https://www.instagram.com/nasresearch/"
-    ],
-    "founder": {
-      "@type": "Person",
-      "name": "Dalron J. Robertson"
-    }
-  }
 };
 
 export const viewport = {
@@ -80,6 +97,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationJsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
         {/* Favicons & PWA assets */}
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="96x96"  href="/favicon-96x96.png" />
