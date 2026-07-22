@@ -2,33 +2,33 @@ import InformationalPage from "@/components/InformationalPage";
 
 export const metadata = {
   title: "Research Programs | NaS Research",
-  description: "Explore the scientific and computational research programs being developed at NaS Research.",
+  description: "Explore NaS Core, the oncology research program, and the governed studies currently being developed at NaS Research.",
 };
 
 const sections = [
   {
-    title: "Biomedical intelligence",
-    copy: "We are investigating specialized language and reasoning systems for biomedical knowledge work. Nicole is the central initiative: a research platform intended to help organize literature, connect evidence across domains, and support carefully scoped scientific workflows.",
+    title: "NaS Core",
+    copy: "NaS Core is the research system through which we turn a scientific question into a governed study. It records the question, protocol, data provenance, code revision, analysis, review, and release state so the path from evidence to claim can be examined and reproduced.",
   },
   {
-    title: "The NaS Cortex",
-    copy: "The Cortex is our proposed knowledge architecture for the life sciences. It organizes expertise into domain-specific gyri that can be updated, evaluated, and selectively coordinated rather than forcing every biological discipline into one undifferentiated system.",
+    title: "Oncology research",
+    copy: "Breast cancer research is the first serious proving ground for NaS Core. The oncology program is designed to test the complete research process, from question selection and literature review through data qualification, statistical analysis, external validation, and responsible publication.",
   },
   {
-    title: "Computational biology",
-    copy: "This program connects biological data, scientific literature, modern modeling, and scalable compute. Areas of interest include genomics, disease biology, systems-level reasoning, and methods that make large bodies of evidence more tractable.",
+    title: "NAS-BRCA-001: Qualifying the system",
+    copy: "Our first study uses public TCGA-BRCA data to reproduce the established association between pathologic stage and overall survival. Its purpose is to test whether Cortex can enforce analysis gates, preserve provenance, retain failed diagnostics, and produce an honest platform judgment. The first run remains a conditional pass and is not approved for public release.",
   },
   {
-    title: "Scientific infrastructure",
-    copy: "Capable research depends on more than a model. We are exploring retrieval, provenance, evaluation, data pipelines, efficient training, distributed systems, and interfaces that make computational research more reproducible and useful.",
+    title: "NAS-BRCA-002: Molecular discordance",
+    copy: "Our proposed discovery study asks whether clinically HR-positive and HER2-negative breast cancers can be separated into stable luminal, stable non-luminal, and molecularly uncertain groups. The project is undergoing a bounded novelty and data-feasibility audit. No molecular outcome analysis, novelty claim, or clinical claim has been authorized.",
   },
   {
-    title: "Automated discovery",
-    copy: "Our long-term direction is to connect computational reasoning with simulation, measurement, and laboratory automation. Any such system must preserve traceability, clear authorization boundaries, human oversight, and independent verification.",
+    title: "Evidence that survives review",
+    copy: "Numerical results come from deterministic executed code, not generated prose. Research plans are versioned before outcome analysis. Data receipts, checksums, diagnostics, failed models, null findings, limitations, and review decisions remain part of the permanent record rather than disappearing when they are inconvenient.",
   },
   {
-    title: "Evaluation and governance",
-    copy: "Biomedical systems require unusually high standards. This program focuses on source grounding, uncertainty, privacy, security, misuse prevention, expert review, and the difference between promising internal results and independently validated performance.",
+    title: "The release must be earned",
+    copy: "An active study is not a publication. Work remains outside the public research library until its protocol, evidence, analysis, limitations, and approvals are assembled into a frozen release. The web edition, figures, tables, citations, and version of record must all agree before NaS presents a result publicly.",
   },
 ];
 
@@ -36,20 +36,21 @@ export default function ResearchProgramsPage() {
   return (
     <InformationalPage
       eyebrow="Research programs"
-      title="Building the computational foundations of life-science discovery."
-      introduction="NaS works across knowledge systems, biomedical intelligence, computational biology, and scientific infrastructure. The programs are connected by one objective: make rigorous scientific iteration faster without weakening the standards used to evaluate evidence."
+      title="Research should be able to show its work."
+      introduction="NaS Core is the system through which we develop research from question to release. It connects scientific reasoning, evidence, data, deterministic analysis, review, and publication without allowing any one layer to hide the others."
+      status="Current research · Hyde Park, Chicago"
       facts={[
-        { label: "Core initiative", value: "Nicole" },
-        { label: "Knowledge architecture", value: "The NaS Cortex" },
-        { label: "Research mode", value: "Computational and systems-focused" },
-        { label: "Development principle", value: "Human oversight and documented limits" },
+        { label: "Research system", value: "NaS Core" },
+        { label: "Active program", value: "Oncology" },
+        { label: "Current studies", value: "NAS-BRCA-001 and NAS-BRCA-002" },
+        { label: "Release standard", value: "Reviewed, frozen, and reproducible" },
       ]}
       sections={sections}
-      sectionLabel="Programs"
-      sectionTitle="From biological questions to dependable scientific systems."
-      closingTitle="Explore the research library."
-      closingCopy="The public library is the source for NaS publications, model documentation, research notes, and institutional releases. It will grow as work becomes ready for responsible publication."
-      actionLabel="View publications"
+      sectionLabel="Current program"
+      sectionTitle="A research system tested through real questions."
+      closingTitle="Public work begins after the gate."
+      closingCopy="The research library contains work that NaS has released publicly. Current studies will enter it only after their evidence, analysis, limitations, and review records support a responsible release."
+      actionLabel="Read published research"
       actionHref="/research"
     />
   );
