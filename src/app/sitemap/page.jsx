@@ -1,44 +1,94 @@
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import { researchItems } from "@/data/researchLibrary";
 
 export const metadata = {
   title: "Sitemap | NaS Research",
-  description: "Explore the pages available on the NaS Research website.",
+  description: "A complete directory of NaS Research pages, programs, publications, and legal information.",
+  alternates: { canonical: "/sitemap" },
 };
 
-const links = [
-  ["Home", "/"],
-  ["Research", "/research"],
-  ["Support", "/support"],
-  ["About NaS", "/about"],
-  ["Contact", "/contact"],
-  ["Nicole", "/nicole"],
-  ["Privacy Policy", "/legal/privacy"],
-  ["Terms of Service", "/legal/terms"],
+const groups = [
+  {
+    title: "NaS",
+    links: [
+      { label: "Home", href: "/", detail: "The work and current publications" },
+      { label: "About NaS", href: "/about", detail: "Mission, direction, and long-term vision" },
+      { label: "Support", href: "/support", detail: "Ways to strengthen the research" },
+      { label: "Contact", href: "/contact", detail: "Direct correspondence with NaS" },
+    ],
+  },
+  {
+    title: "Research",
+    links: [
+      { label: "Research Library", href: "/research", detail: "All public research and institutional writing" },
+      { label: "Research Programs", href: "/research/programs", detail: "Current areas of scientific work" },
+      { label: "Nicole", href: "/nicole", detail: "Biomedical research interface" },
+    ],
+  },
+  {
+    title: "Legal",
+    links: [
+      { label: "Privacy Policy", href: "/legal/privacy", detail: "How information is handled" },
+      { label: "Terms of Use", href: "/legal/terms", detail: "Rules for using the website and research tools" },
+    ],
+  },
 ];
 
 export default function SitemapPage() {
   return (
-    <main className="min-h-screen flex flex-col bg-black text-white">
-      <section className="flex-grow max-w-4xl mx-auto px-6 py-20">
-        <h1
-          className="text-5xl font-extrabold mb-10 tracking-tight py-12"
-          style={{ color: "#FFFFFF" }}
-        >
-          Sitemap
-        </h1>
+    <div className="nas-page sitemap-page">
+      <header className="sitemap-hero">
+        <div className="nas-shell">
+          <p className="nas-kicker">NaS Research</p>
+          <h1>Sitemap</h1>
+          <p>
+            Every public page, program, and publication from NaS, organized in one place.
+          </p>
+        </div>
+      </header>
 
-        <ul className="text-neutral-400 list-disc pl-8 space-y-4 text-lg leading-relaxed">
-          {links.map(([label, href]) => (
-            <li key={href}>
-              <Link href={href} className="hover:underline hover:text-white transition-colors duration-200">
-                {label}
+      <main className="nas-shell sitemap-directory">
+        {groups.map((group, groupIndex) => (
+          <section className="sitemap-group" key={group.title}>
+            <header>
+              <span>{String(groupIndex + 1).padStart(2, "0")}</span>
+              <h2>{group.title}</h2>
+            </header>
+            <div className="sitemap-links">
+              {group.links.map((item) => (
+                <Link href={item.href} key={item.href}>
+                  <span>
+                    <strong>{item.label}</strong>
+                    <small>{item.detail}</small>
+                  </span>
+                  <span aria-hidden="true">↗</span>
+                </Link>
+              ))}
+            </div>
+          </section>
+        ))}
+
+        <section className="sitemap-group sitemap-publications">
+          <header>
+            <span>04</span>
+            <h2>Publications</h2>
+          </header>
+          <div className="sitemap-links">
+            {researchItems.map((item) => (
+              <Link href={`/research/${item.slug}`} key={item.slug}>
+                <span>
+                  <strong>{item.title}</strong>
+                  <small>{item.type} · {item.date}</small>
+                </span>
+                <span aria-hidden="true">↗</span>
               </Link>
-            </li>
-          ))}
-        </ul>
-      </section>
+            ))}
+          </div>
+        </section>
+      </main>
+
       <Footer />
-    </main>
+    </div>
   );
 }
