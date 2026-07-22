@@ -1,6 +1,6 @@
 import HeroSection from "@/components/sections/HeroSection";
 import Featured from "@/components/sections/Featured";
-import LatestResearch from "@/components/sections/LatestResearch";
+import CurrentResearch from "@/components/sections/CurrentResearch";
 import Support from "@/components/sections/Support";
 import Footer from "@/components/Footer";
 
@@ -22,7 +22,7 @@ export default function Home() {
       <HeroSection />
 
       <Featured />
-      <LatestResearch />
+      <CurrentResearch />
       <Support />
 
       <Footer />
