@@ -1,16 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { SiInstagram } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
-import { HiOutlineArrowCircleUp } from "react-icons/hi";
-import { useState } from "react";
-import ComingSoonModal from "@/components/sections/ComingSoonModal";
 
 export default function Footer() {
-  const [showModal, setShowModal] = useState(false);
-
   return (
     <footer className="bg-black text-neutral-400 py-6 text-base">
       <div className="mx-auto max-w-6xl px-6 flex flex-wrap items-center justify-center md:justify-between gap-3 sm:gap-4">
@@ -21,8 +15,8 @@ export default function Footer() {
           >
             NaS
           </button>
-          <button onClick={() => setShowModal(true)} className="text-sm sm:text-base hover:underline cursor-pointer">Privacy</button>
-          <button onClick={() => setShowModal(true)} className="text-sm sm:text-base hover:underline cursor-pointer">Terms</button>
+          <Link href="/legal/privacy" className="text-sm sm:text-base hover:underline">Privacy</Link>
+          <Link href="/legal/terms" className="text-sm sm:text-base hover:underline">Terms</Link>
         </div>
         <div className="flex items-center gap-3 sm:gap-4">
           <Link href="https://www.instagram.com/nasresearch/?hl=en" aria-label="Instagram" className="hover:text-white transition-colors">
@@ -33,7 +27,6 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <ComingSoonModal open={showModal} onClose={() => setShowModal(false)} />
     </footer>
   );
 }
