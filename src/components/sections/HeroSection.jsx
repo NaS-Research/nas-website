@@ -17,18 +17,20 @@ export default function HeroSection() {
       <div className="home-mark" aria-hidden="true">
         <div className="home-mark__halo" />
         <Image
-          src="/assets/images/NaSLogo-transparent.png"
+          src="/assets/images/NaSLogo-transparent-hd.png"
           alt=""
-          width={512}
-          height={512}
+          width={2048}
+          height={2048}
+          sizes="(max-width: 767px) 88vw, 55vmin"
           priority
           className="home-mark__image home-mark__image--base"
         />
         <Image
-          src="/assets/images/NaSLogo-transparent.png"
+          src="/assets/images/NaSLogo-transparent-hd.png"
           alt=""
-          width={512}
-          height={512}
+          width={2048}
+          height={2048}
+          sizes="(max-width: 767px) 88vw, 55vmin"
           priority
           className="home-mark__image home-mark__image--light"
         />
