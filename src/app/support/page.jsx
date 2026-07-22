@@ -1,8 +1,8 @@
 import InformationalPage from "@/components/InformationalPage";
 
 export const metadata = {
-  title: "Support | NaS Research",
-  description: "Ways to strengthen NaS Research through expertise, critical review, infrastructure, resources, and focused collaboration.",
+  title: "Work with NaS | NaS Research",
+  description: "Ways to strengthen NaS Research through expertise, critical review, infrastructure, responsible resources, and focused collaboration.",
 };
 
 const sections = [
@@ -23,8 +23,8 @@ const sections = [
     copy: "Useful datasets, research materials, publications, and access to specialized facilities can open new directions. Any resource must be shared with appropriate permission, documentation, privacy protections, and respect for the people or communities represented in the data.",
   },
   {
-    title: "Support specific research",
-    copy: "Funding, sponsorship, or in-kind support is most useful when attached to a defined research need, such as evaluation, infrastructure, publication, or access to scientific resources. We are open to conversations grounded in the work rather than visibility alone.",
+    title: "Enable a defined need",
+    copy: "In-kind resources and practical support are most useful when attached to a defined research need, such as evaluation, infrastructure, publication, or access to scientific materials. We are open to conversations grounded in the work rather than visibility alone.",
   },
   {
     title: "Connect serious people",
@@ -35,7 +35,7 @@ const sections = [
 export default function SupportPage() {
   return (
     <InformationalPage
-      eyebrow="Support NaS"
+      eyebrow="Work with NaS"
       title="Help make the work stronger."
       introduction="The most valuable support improves what NaS can investigate, build, test, or publish. We welcome serious contributions of expertise, critical review, infrastructure, resources, and focused collaboration."
       status="Founder-led · Hyde Park, Chicago"
@@ -49,7 +49,7 @@ export default function SupportPage() {
       sectionLabel="Where support matters"
       sectionTitle="Contribute something the work can use."
       closingTitle="Start with a specific idea."
-      closingCopy="NaS does not currently operate a public donation program. If you can contribute expertise, infrastructure, responsible access to resources, funding for a defined need, or a serious introduction, write with a concise proposal and the outcome you believe it could enable."
+      closingCopy="NaS does not currently operate a public donation program. If you can contribute expertise, infrastructure, responsible access to resources, practical support for a defined need, or a serious introduction, write with a concise proposal and the outcome you believe it could enable."
       actionLabel="Contact NaS"
     />
   );

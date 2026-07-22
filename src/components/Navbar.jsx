@@ -9,7 +9,7 @@ const navigation = [
   { label: "Research", href: "/research" },
   { label: "Programs", href: "/research/programs" },
   { label: "About", href: "/about" },
-  { label: "Support", href: "/support" },
+  { label: "Work with NaS", href: "/support" },
 ];
 
 const mobileNavigation = [

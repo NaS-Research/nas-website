@@ -1,7 +1,7 @@
 import HeroSection from "@/components/sections/HeroSection";
 import Featured from "@/components/sections/Featured";
 import CurrentResearch from "@/components/sections/CurrentResearch";
-import Support from "@/components/sections/Support";
+import WorkWithNas from "@/components/sections/WorkWithNas";
 import Footer from "@/components/Footer";
 
 // Thin white bars on the left & right edges
@@ -23,7 +23,7 @@ export default function Home() {
 
       <Featured />
       <CurrentResearch />
-      <Support />
+      <WorkWithNas />
 
       <Footer />
     </>
