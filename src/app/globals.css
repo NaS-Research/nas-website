@@ -1645,17 +1645,20 @@ body {
 }
 
 .publication-hero__visual-image {
-  z-index: -2;
-  object-fit: contain;
-  object-position: center;
-  opacity: 0.36;
-  filter: invert(1) grayscale(1) sepia(0.55) contrast(1.3) brightness(1.3);
-  mix-blend-mode: screen;
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  background-image: var(--publication-hero-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.1;
+  pointer-events: none;
 }
 
 .publication-hero__visual-shade {
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   inset: 0;
   background:
     linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.14) 48%, rgba(0, 0, 0, 0.9)),
@@ -1689,7 +1692,7 @@ body {
 
 .publication-hero--visual .publication-hero__inner {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .publication-hero--place h1,
@@ -2347,6 +2350,11 @@ body {
 @media (max-width: 47.99rem) {
   .publication-hero {
     padding-block: 7rem 3.5rem;
+  }
+
+  .publication-hero__visual-image {
+    background-size: auto 72%;
+    opacity: 0.12;
   }
 
   .publication-hero h1 {

@@ -69,13 +69,9 @@ export default async function ResearchPublicationPage({ params }) {
         )}
         {hasHeroImage && (
           <>
-            <Image
+            <div
               className="publication-hero__visual-image"
-              src={item.heroImage}
-              alt=""
-              fill
-              priority
-              sizes="100vw"
+              style={{ "--publication-hero-image": `url("${item.heroImage}")` }}
               aria-hidden="true"
             />
             <div className="publication-hero__visual-shade" aria-hidden="true" />

@@ -14,7 +14,7 @@ export const researchItems = [
     authors: ["NaS"],
     readTime: "42 min read",
     pdfUrl: "/research/papers/nas-cortex-knowledge-architecture.pdf",
-    heroImage: "/research/cortex/visuals/nicole-digital-cortex.png",
+    heroImage: "/research/cortex/visuals/nicole-digital-cortex-hero.png",
     abstract:
       "A knowledge architecture for the life sciences built around eight domain-specific gyri, sparse expert activation, incremental training, and a staged compute roadmap for Nicole.",
     summary:
