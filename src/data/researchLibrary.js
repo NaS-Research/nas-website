@@ -14,6 +14,7 @@ export const researchItems = [
     authors: ["NaS"],
     readTime: "42 min read",
     pdfUrl: "/research/papers/nas-cortex-knowledge-architecture.pdf",
+    heroImage: "/research/cortex/visuals/nicole-digital-cortex.png",
     abstract:
       "A knowledge architecture for the life sciences built around eight domain-specific gyri, sparse expert activation, incremental training, and a staged compute roadmap for Nicole.",
     summary:
@@ -104,6 +105,7 @@ export const researchItems = [
     authors: ["NaS Research"],
     readTime: "18 min read",
     pdfUrl: null,
+    heroVideo: "/assets/videos/ChicagoThree.mp4#t=2",
     abstract:
       "Why NaS Research chose Chicago: a life-science, medical, manufacturing, educational, and global city with the depth required to build a durable scientific institution.",
     summary:

@@ -46,12 +46,13 @@ export default async function ResearchPublicationPage({ params }) {
 
   const isOriginStory = item.variant === "institutional-origin";
   const hasHeroVideo = Boolean(item.heroVideo);
+  const hasHeroImage = Boolean(item.heroImage);
   const citation = `${item.authors.join(", ")} (${item.date.slice(-4)}). ${item.title}. NaS Research. Version ${item.version}. https://nasresearch.bio/research/${item.slug}`;
   const related = researchItems.filter((candidate) => candidate.slug !== item.slug && candidate.area === item.area).slice(0, 2);
 
   return (
     <div className="nas-page publication-page">
-      <header className={`publication-hero ${isOriginStory ? "publication-hero--origin" : ""} ${hasHeroVideo ? "publication-hero--place" : ""}`}>
+      <header className={`publication-hero ${isOriginStory ? "publication-hero--origin" : ""} ${hasHeroVideo ? "publication-hero--place" : ""} ${hasHeroImage ? "publication-hero--visual" : ""}`}>
         {hasHeroVideo && (
           <>
             <video
@@ -64,6 +65,20 @@ export default async function ResearchPublicationPage({ params }) {
               aria-hidden="true"
             />
             <div className="publication-hero__place-shade" aria-hidden="true" />
+          </>
+        )}
+        {hasHeroImage && (
+          <>
+            <Image
+              className="publication-hero__visual-image"
+              src={item.heroImage}
+              alt=""
+              fill
+              priority
+              sizes="100vw"
+              aria-hidden="true"
+            />
+            <div className="publication-hero__visual-shade" aria-hidden="true" />
           </>
         )}
         {isOriginStory && (
