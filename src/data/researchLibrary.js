@@ -265,6 +265,7 @@ export const researchItems = [
     authors: ["NaS Research"],
     readTime: "8 min read",
     pdfUrl: null,
+    pdfStatus: "none",
     variant: "institutional-origin",
     abstract:
       "Why NaS was created, the technological mismatch that shaped our beginning, and our ambition to place extraordinary tools in the hands of people pursuing extraordinary questions.",
@@ -357,6 +358,7 @@ export const researchItems = [
     authors: ["NaS Research"],
     readTime: "5 min read",
     pdfUrl: null,
+    pdfStatus: "none",
     heroVideo: "/assets/videos/ChicagoThree.mp4#t=2",
     abstract:
       "Why NaS is being built in Hyde Park: a place our founder calls home, a community shaped by inquiry and creativity, and a responsibility to serve Chicago’s South Side.",

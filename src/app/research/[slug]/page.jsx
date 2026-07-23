@@ -93,7 +93,7 @@ export default async function ResearchPublicationPage({ params }) {
               {item.updatedDate ? ` · Updated ${item.updatedDate}` : ""}
             </p>
           </div>
-          <PublicationActions citation={citation} pdfUrl={item.pdfUrl} />
+          <PublicationActions citation={citation} pdfUrl={item.pdfUrl} showPdfStatus={item.pdfStatus !== "none"} />
         </div>
       </header>
 

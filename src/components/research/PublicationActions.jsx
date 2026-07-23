@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export default function PublicationActions({ citation, pdfUrl }) {
+export default function PublicationActions({ citation, pdfUrl, showPdfStatus = true }) {
   const [copied, setCopied] = useState(false);
 
   async function copyCitation() {
@@ -25,9 +25,9 @@ export default function PublicationActions({ citation, pdfUrl }) {
     <div className="publication-actions">
       {pdfUrl ? (
         <a className="publication-action publication-action--primary" href={pdfUrl} target="_blank" rel="noreferrer">View PDF ↗</a>
-      ) : (
+      ) : showPdfStatus ? (
         <span className="publication-action publication-action--disabled" title="A PDF has not been published for this document">PDF forthcoming</span>
-      )}
+      ) : null}
       <button className="publication-action" type="button" onClick={copyCitation}>{copied ? "Copied" : "Copy citation"}</button>
       <button className="publication-action" type="button" onClick={sharePublication}>Share</button>
     </div>
