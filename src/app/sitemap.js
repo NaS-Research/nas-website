@@ -1,4 +1,5 @@
 import { researchItems } from "@/data/researchLibrary";
+import { researchProjects } from "@/data/researchProjects";
 
 const baseUrl = "https://nasresearch.bio";
 
@@ -23,6 +24,13 @@ export default function sitemap() {
     priority: item.type === "White Paper" ? 0.9 : 0.7,
   }));
 
+  const projectPages = researchProjects.map((project) => ({
+    url: `${baseUrl}/research/projects/${project.slug}`,
+    lastModified: new Date(project.updatedDateISO),
+    changeFrequency: "weekly",
+    priority: 0.8,
+  }));
+
   return [
     ...pages.map((page) => ({
       url: `${baseUrl}${page.path}`,
@@ -30,6 +38,7 @@ export default function sitemap() {
       changeFrequency: page.changeFrequency,
       priority: page.priority,
     })),
+    ...projectPages,
     ...publicationPages,
   ];
 }

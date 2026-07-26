@@ -1,27 +1,9 @@
 import Link from "next/link";
-
-const studies = [
-  {
-    id: "NAS-BRCA-002",
-    title: "Molecular Discordance in Breast Cancer",
-    status: "Novelty and feasibility audit",
-    description:
-      "NaS is investigating when clinically HR-positive and HER2-negative breast cancers reflect stable molecular differences and when their PAM50 subtype classification is uncertain. Independent validation is required before any scientific claim.",
-    video: "/assets/videos/Lab.mp4",
-  },
-  {
-    id: "NAS-BRCA-001",
-    title: "Qualifying the NaS Cortex for Cancer Research",
-    status: "Methods and statistical remediation",
-    description:
-      "A governed TCGA-BRCA survival study is being used to test whether the Cortex can preserve provenance, enforce analysis gates, reproduce established evidence, and retain limitations without hiding failed diagnostics.",
-    video: "/assets/videos/Coding.mp4",
-  },
-];
+import { researchProjects } from "@/data/researchProjects";
 
 export default function CurrentResearch() {
   return (
-    <section className="bg-black px-5 py-20 text-neutral-200 sm:px-8 sm:py-24">
+    <section id="current-research" className="scroll-mt-20 bg-black px-5 py-20 text-neutral-200 sm:px-8 sm:py-24">
       <div className="mx-auto max-w-6xl">
         <header className="mb-10 grid gap-6 border-t border-white/10 pt-6 md:grid-cols-[1fr_1.25fr] md:items-end">
           <div>
@@ -46,8 +28,13 @@ export default function CurrentResearch() {
         </header>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-          {studies.map((study) => (
+          {researchProjects.map((study) => (
             <article className="group" key={study.id}>
+              <Link
+                href={`/research/projects/${study.slug}`}
+                className="block focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#c7a069]"
+                aria-label={`Read the ${study.id} project brief`}
+              >
               <div className="h-72 overflow-hidden rounded-xl border border-white/10 bg-neutral-950 sm:h-80">
                 <video
                   src={study.video}
@@ -70,7 +57,11 @@ export default function CurrentResearch() {
                 <p className="max-w-xl text-sm leading-6 text-neutral-400 sm:text-base sm:leading-7">
                   {study.description}
                 </p>
+                <span className="mt-1 text-sm text-[#dfc18f]">
+                  Read project brief <span aria-hidden="true">↗</span>
+                </span>
               </div>
+              </Link>
             </article>
           ))}
         </div>

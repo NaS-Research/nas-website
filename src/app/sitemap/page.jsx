@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import { researchItems } from "@/data/researchLibrary";
+import { researchProjects } from "@/data/researchProjects";
 
 export const metadata = {
   title: "Sitemap | NaS Research",
@@ -23,6 +24,11 @@ const groups = [
     links: [
       { label: "Research Library", href: "/research", detail: "All public research and institutional writing" },
       { label: "Research Programs", href: "/research/programs", detail: "Current areas of scientific work" },
+      ...researchProjects.map((project) => ({
+        label: `${project.id}: ${project.shortTitle}`,
+        href: `/research/projects/${project.slug}`,
+        detail: `${project.role} · ${project.status}`,
+      })),
       { label: "Nicole", href: "/nicole", detail: "Biomedical research interface" },
     ],
   },

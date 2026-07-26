@@ -16,11 +16,11 @@ const sections = [
   },
   {
     title: "NAS-BRCA-001: Qualifying the system",
-    copy: "Our first study uses public TCGA-BRCA data to reproduce the established association between pathologic stage and overall survival. Its purpose is to test whether Cortex can enforce analysis gates, preserve provenance, retain failed diagnostics, and produce an honest platform judgment. The first run remains a conditional pass and is not approved for public release.",
+    copy: "Our first study uses public TCGA-BRCA data to reproduce the established association between pathologic stage and overall survival. Its purpose is to test whether NaS Core can enforce analysis gates, preserve provenance, retain failed diagnostics, and produce an honest platform judgment. A governed run has been completed, but its findings remain withheld during pre-publication review.",
   },
   {
-    title: "NAS-BRCA-002: Molecular discordance",
-    copy: "Our proposed discovery study asks whether clinically HR-positive and HER2-negative breast cancers can be separated into stable luminal, stable non-luminal, and molecularly uncertain groups. The project is undergoing a bounded novelty and data-feasibility audit. No molecular outcome analysis, novelty claim, or clinical claim has been authorized.",
+    title: "NAS-BRCA-002: PAM50 reliability and abstention",
+    copy: "Our proposed discovery study asks whether a fixed, patient-independent PAM50 procedure can identify analysis-ready, unstable, insufficient-data, and abstain states without claiming biological truth or clinical utility. The revised question remains in evidence review and bounded metadata feasibility work. Molecular and outcome analysis have not been authorized.",
   },
   {
     title: "Evidence that survives review",
