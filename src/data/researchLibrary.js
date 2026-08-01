@@ -105,6 +105,7 @@ export const researchItems = [
     authors: ["NaS Research"],
     readTime: "18 min read",
     pdfUrl: null,
+    pdfStatus: "none",
     heroVideo: "/assets/videos/ChicagoThree.mp4#t=2",
     abstract:
       "Why NaS Research chose Chicago: a life-science, medical, manufacturing, educational, and global city with the depth required to build a durable scientific institution.",
