@@ -60,8 +60,17 @@ const focusRotations = {
 
 const surfaceHeartUid = "3f8072336ce94d18b3d0d055a1ece089";
 
-function SurfaceHeartViewer() {
+const surfaceFocus = {
+  "Left ventricle": { yaw: -0.34, zoom: 0.72, x: 0.07, y: -0.12, calloutX: "67%", calloutY: "66%" },
+  "Right ventricle": { yaw: 0.32, zoom: 0.72, x: -0.06, y: -0.1, calloutX: "43%", calloutY: "65%" },
+  "Left atrium": { yaw: 2.48, zoom: 0.76, x: 0.06, y: 0.1, calloutX: "64%", calloutY: "39%" },
+  "Right atrium": { yaw: 0.52, zoom: 0.76, x: -0.07, y: 0.1, calloutX: "38%", calloutY: "40%" },
+};
+
+function SurfaceHeartViewer({ selected }) {
   const frameRef = useRef();
+  const baseCameraRef = useRef();
+  const [viewerApi, setViewerApi] = useState(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -86,6 +95,11 @@ function SurfaceHeartViewer() {
           api.start();
           api.addEventListener("viewerready", () => {
             api.setBackground({ color: [0, 0, 0] });
+            api.getCameraLookAt((error, camera) => {
+              if (error || cancelled) return;
+              baseCameraRef.current = camera;
+              setViewerApi(api);
+            });
           });
         },
       });
@@ -110,14 +124,58 @@ function SurfaceHeartViewer() {
     };
   }, []);
 
+  useEffect(() => {
+    const camera = baseCameraRef.current;
+    if (!viewerApi || !camera) return;
+
+    if (!selected || !surfaceFocus[selected]) {
+      viewerApi.setCameraLookAt(camera.position, camera.target, 0.9);
+      return;
+    }
+
+    const preset = surfaceFocus[selected];
+    const vector = camera.position.map((value, index) => value - camera.target[index]);
+    const distance = Math.hypot(...vector);
+    const cosine = Math.cos(preset.yaw);
+    const sine = Math.sin(preset.yaw);
+    const rotated = [
+      vector[0] * cosine + vector[2] * sine,
+      vector[1],
+      -vector[0] * sine + vector[2] * cosine,
+    ];
+    const target = [
+      camera.target[0] + distance * preset.x,
+      camera.target[1] + distance * preset.y,
+      camera.target[2],
+    ];
+    const position = rotated.map((value, index) => target[index] + value * preset.zoom);
+
+    viewerApi.setCameraEasing("easeInOutCubic");
+    viewerApi.setCameraLookAt(position, target, 1.1);
+  }, [selected, viewerApi]);
+
+  const callout = selected ? surfaceFocus[selected] : null;
+
   return (
-    <iframe
-      ref={frameRef}
-      className="heart-lab__surface-viewer"
-      title="Realistic interactive exterior model of the human heart"
-      allow="autoplay; fullscreen; xr-spatial-tracking"
-      allowFullScreen
-    />
+    <>
+      <iframe
+        ref={frameRef}
+        className="heart-lab__surface-viewer"
+        title="Realistic interactive exterior model of the human heart"
+        allow="autoplay; fullscreen; xr-spatial-tracking"
+        allowFullScreen
+      />
+      {callout && (
+        <div
+          className="heart-lab__surface-callout"
+          style={{ "--callout-x": callout.calloutX, "--callout-y": callout.calloutY }}
+          aria-hidden="true"
+        >
+          <span>{selected}</span>
+          <i />
+        </div>
+      )}
+    </>
   );
 }
 
@@ -346,7 +404,7 @@ export default function HeartModelViewer({ activeMode }) {
 
       <div className={`heart-lab__canvas heart-lab__canvas--${view}`} role="group" aria-label="Interactive three dimensional model of the human heart">
         {view === "surface" ? (
-          <SurfaceHeartViewer />
+          <SurfaceHeartViewer selected={selected} />
         ) : (
           <>
             <HeartStage
