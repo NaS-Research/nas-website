@@ -3856,24 +3856,45 @@ body {
   content: "/";
 }
 
-.heart-lab__reset {
+.heart-lab__view-controls {
   position: absolute;
   z-index: 3;
   right: 0.8rem;
   bottom: 0.65rem;
+  display: flex;
+  overflow: hidden;
   border: 1px solid #302a27;
   border-radius: 999px;
-  padding: 0.45rem 0.65rem;
   background: rgba(8, 8, 8, 0.72);
-  color: #95887f;
-  font-size: 0.58rem;
-  cursor: pointer;
   backdrop-filter: blur(0.75rem);
 }
 
-.heart-lab__reset:hover {
+.heart-lab__view-controls:focus-within,
+.heart-lab__view-controls:hover {
   border-color: #665043;
+}
+
+.heart-lab__view-controls button {
+  min-width: 2rem;
+  padding: 0.45rem 0.6rem;
+  border-right: 1px solid #302a27;
   color: #e0c096;
+  font-size: 0.62rem;
+  cursor: pointer;
+}
+
+.heart-lab__view-controls button:nth-child(2) {
+  color: #95887f;
+  font-size: 0.55rem;
+}
+
+.heart-lab__view-controls button:last-child {
+  border-right: 0;
+}
+
+.heart-lab__view-controls button:hover {
+  background: rgba(199, 160, 105, 0.12);
+  color: #f0d19e;
 }
 
 .heart-lab__readout {
@@ -3914,12 +3935,24 @@ body {
 }
 
 .heart-lab__structures button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.42rem;
   border: 1px solid #292421;
   border-radius: 999px;
   padding: 0.43rem 0.62rem;
   color: #777;
   font-size: 0.58rem;
   cursor: pointer;
+}
+
+.heart-lab__structures button i {
+  width: 0.42rem;
+  height: 0.42rem;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--structure-color);
+  box-shadow: 0 0 0.65rem color-mix(in srgb, var(--structure-color) 58%, transparent);
 }
 
 .heart-lab__structures button:hover,

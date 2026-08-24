@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Bounds, Center, ContactShadows, OrbitControls, useGLTF } from "@react-three/drei";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import * as THREE from "three";
 
 const structureDetails = {
@@ -62,21 +62,18 @@ function classifyStructure(name = "") {
 
 function structureColor(name) {
   const structure = classifyStructure(name);
-  if (structure === "Left ventricle") return "#7c211d";
-  if (structure === "Left atrium") return "#9d3b31";
-  if (structure === "Right ventricle") return "#552237";
-  if (structure === "Right atrium") return "#6d2b45";
-  if (structureDetails[structure]?.group === "Valve") return "#d7b47a";
-  if (structure === "Papillary muscles") return "#b8654c";
-  return "#742720";
+  if (structure === "Left ventricle") return "#bd4938";
+  if (structure === "Left atrium") return "#e07b62";
+  if (structure === "Right ventricle") return "#315e94";
+  if (structure === "Right atrium") return "#4f8aa8";
+  if (structureDetails[structure]?.group === "Valve") return "#e8ca8e";
+  if (structure === "Papillary muscles") return "#a85a48";
+  return "#9d342b";
 }
 
 function HeartMesh({ activeMode, onSelect, selected, onQuizAnswer, quizActive, resetSignal }) {
   const { scene } = useGLTF("/learn/models/heart-z-anatomy.glb");
-  const modelRef = useRef();
   const boundsRef = useRef();
-  const hoveredRef = useRef(null);
-  const reducedMotionRef = useRef(false);
 
   const model = useMemo(() => {
     const clone = scene.clone(true);
@@ -100,7 +97,6 @@ function HeartMesh({ activeMode, onSelect, selected, onQuizAnswer, quizActive, r
   }, [scene]);
 
   useEffect(() => {
-    reducedMotionRef.current = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     return () => {
       model.traverse((object) => {
         if (object.isMesh) object.material.dispose();
@@ -133,10 +129,7 @@ function HeartMesh({ activeMode, onSelect, selected, onQuizAnswer, quizActive, r
     return () => window.clearTimeout(timer);
   }, [resetSignal]);
 
-  useFrame((state, delta) => {
-    if (modelRef.current && !reducedMotionRef.current) {
-      modelRef.current.rotation.y += delta * 0.075;
-    }
+  useFrame((state) => {
     if (activeMode === "safety") {
       const pulse = 0.12 + (Math.sin(state.clock.elapsedTime * 3.2) + 1) * 0.08;
       model.traverse((object) => {
@@ -156,19 +149,17 @@ function HeartMesh({ activeMode, onSelect, selected, onQuizAnswer, quizActive, r
 
   function handlePointerOver(event) {
     event.stopPropagation();
-    hoveredRef.current = event.object;
     document.body.style.cursor = "pointer";
   }
 
   function handlePointerOut() {
-    hoveredRef.current = null;
     document.body.style.cursor = "default";
   }
 
   return (
-    <Bounds ref={boundsRef} fit clip observe margin={1.18}>
+    <Bounds ref={boundsRef} clip margin={1.18}>
       <Center>
-        <group ref={modelRef} rotation={[-0.08, -0.38, -0.05]}>
+        <group rotation={[-0.08, -0.38, -0.05]}>
           <primitive
             object={model}
             onClick={handlePointer}
@@ -181,7 +172,18 @@ function HeartMesh({ activeMode, onSelect, selected, onQuizAnswer, quizActive, r
   );
 }
 
-function HeartStage({ activeMode, onSelect, selected, onQuizAnswer, quizActive, resetSignal }) {
+function CameraZoom({ level }) {
+  const { camera } = useThree();
+
+  useEffect(() => {
+    camera.zoom = THREE.MathUtils.clamp(Math.pow(1.28, level), 0.72, 3.45);
+    camera.updateProjectionMatrix();
+  }, [camera, level]);
+
+  return null;
+}
+
+function HeartStage({ activeMode, onSelect, selected, onQuizAnswer, quizActive, resetSignal, zoomLevel }) {
   return (
     <Canvas
       dpr={[1, 1.8]}
@@ -202,6 +204,7 @@ function HeartStage({ activeMode, onSelect, selected, onQuizAnswer, quizActive, 
         quizActive={quizActive}
         resetSignal={resetSignal}
       />
+      <CameraZoom level={zoomLevel} />
       <ContactShadows position={[0, -1.25, 0]} opacity={0.32} scale={4} blur={2.8} far={3} color="#240b0b" />
       <OrbitControls makeDefault enablePan={false} minDistance={1.6} maxDistance={6} dampingFactor={0.075} />
     </Canvas>
@@ -214,6 +217,7 @@ export default function HeartModelViewer({ activeMode }) {
   const [quizTarget, setQuizTarget] = useState("Right ventricle");
   const [quizResult, setQuizResult] = useState("");
   const [resetSignal, setResetSignal] = useState(0);
+  const [zoomLevel, setZoomLevel] = useState(0);
   const detail = structureDetails[selected] || {
     group: "Anatomy",
     summary: "Select another visible structure to continue exploring the model.",
@@ -245,11 +249,16 @@ export default function HeartModelViewer({ activeMode }) {
           onQuizAnswer={handleQuizAnswer}
           quizActive={quizActive}
           resetSignal={resetSignal}
+          zoomLevel={zoomLevel}
         />
         <div className="heart-lab__instructions" aria-hidden="true">
           <span>Drag to rotate</span><span>Scroll or pinch to zoom</span><span>Select a structure</span>
         </div>
-        <button type="button" className="heart-lab__reset" onClick={() => setResetSignal((value) => value + 1)}>Reset view</button>
+        <div className="heart-lab__view-controls" aria-label="3D model view controls">
+          <button type="button" aria-label="Zoom out" onClick={() => setZoomLevel((value) => Math.max(-1, value - 1))}>−</button>
+          <button type="button" onClick={() => { setZoomLevel(0); setResetSignal((value) => value + 1); }}>Reset</button>
+          <button type="button" aria-label="Zoom in" onClick={() => setZoomLevel((value) => Math.min(5, value + 1))}>+</button>
+        </div>
       </div>
 
       <div className="heart-lab__readout" aria-live="polite">
@@ -261,6 +270,7 @@ export default function HeartModelViewer({ activeMode }) {
         <div className="heart-lab__structures" aria-label="Select a heart structure">
           {quizTargets.map((structure) => (
             <button type="button" className={selected === structure ? "is-active" : ""} onClick={() => setSelected(structure)} key={structure}>
+              <i style={{ "--structure-color": structureColor(structure) }} aria-hidden="true" />
               {structure}
             </button>
           ))}
