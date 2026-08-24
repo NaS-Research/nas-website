@@ -1,51 +1,62 @@
-import InformationalPage from "@/components/InformationalPage";
+import Link from "next/link";
+import Footer from "@/components/Footer";
+import LearningLibrary from "@/components/learn/LearningLibrary";
+import { pharmacyLessons } from "@/data/pharmacyLearning";
 
 export const metadata = {
-  title: "Learning | NaS Research",
+  title: "NaS Learn | Pharmacy and Life Science Education",
   description:
-    "Clear, carefully sourced learning guides across pharmacy and the life sciences from NaS Research.",
+    "Explore carefully sourced, connected learning guides from NaS Research, beginning with pharmacy.",
   alternates: { canonical: "/learn" },
 };
 
-const sections = [
-  {
-    title: "Pharmacy",
-    copy: "The first collection will grow from topics encountered in pharmacy education, including pharmacology, therapeutics, medicinal chemistry, pharmacokinetics, patient care, and the biological foundations behind drug action.",
-  },
-  {
-    title: "Built for understanding",
-    copy: "Each guide will begin with the central question, establish the underlying biology, explain mechanisms and clinical relevance, define important terms, and separate foundational knowledge from details that require deeper study.",
-  },
-  {
-    title: "Sources beside the explanation",
-    copy: "References, publication dates, and review dates will remain visible. As standards and evidence change, guides can be corrected, expanded, and versioned without hiding what changed.",
-  },
-  {
-    title: "Educational use",
-    copy: "Learning guides are created for education and scientific discussion. They are not medical advice, clinical guidelines, or a substitute for current prescribing information, institutional policy, or professional judgment.",
-  },
-];
-
 export default function LearningPage() {
   return (
-    <InformationalPage
-      eyebrow="NaS Learning"
-      title="Understand the science. Keep building from there."
-      introduction="Learning is where NaS will organize clear, carefully sourced guides across pharmacy and the life sciences. The collection will begin with the subjects being studied now and grow one serious topic at a time."
-      status="Educational material · Pharmacy and life sciences"
-      facts={[
-        { label: "First collection", value: "Pharmacy" },
-        { label: "Format", value: "Structured learning guides" },
-        { label: "Standard", value: "Clear, sourced, and revisable" },
-        { label: "Purpose", value: "Education and scientific discussion" },
-      ]}
-      sections={sections}
-      sectionLabel="The learning library"
-      sectionTitle="A durable place for what we learn."
-      closingTitle="The first guide begins with the next topic."
-      closingCopy="Each new subject can become part of a connected learning library instead of disappearing into isolated notes. Over time, the collection should make relationships across drugs, diseases, biological systems, and scientific methods easier to see."
-      actionLabel="Explore the research"
-      actionHref="/research"
-    />
+    <div className="nas-page learning-index-page">
+      <header className="learning-index-hero">
+        <div className="nas-shell learning-index-hero__inner">
+          <div>
+            <p className="nas-kicker">NaS Learn</p>
+            <h1>Knowledge should connect.</h1>
+          </div>
+          <div className="learning-index-hero__intro">
+            <p>A growing educational system for understanding medications, disease, biology, and the decisions that connect them.</p>
+            <span>Pharmacy is the first discipline.</span>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section className="nas-shell learning-discipline" aria-labelledby="pharmacy-title">
+          <div className="learning-discipline__identity">
+            <span>01</span>
+            <p>Active discipline</p>
+          </div>
+          <div className="learning-discipline__body">
+            <p className="nas-section-label">Pharmacy</p>
+            <h2 id="pharmacy-title">Understand the medicine, the patient, and the system around them.</h2>
+            <p>Pharmacy brings chemistry, physiology, evidence, formulation, safety, and human behavior into the same decision. This collection is designed to make those relationships visible.</p>
+            <Link href="/learn/pharmacy" className="learning-primary-link">Enter Pharmacy <span aria-hidden="true">↗</span></Link>
+          </div>
+          <div className="learning-discipline__map" aria-label="Pharmacy subject preview">
+            <span>Foundations</span><span>Calculations</span><span>Therapeutics</span><span>Safety</span><span>Patient care</span>
+          </div>
+        </section>
+
+        <div className="nas-shell"><LearningLibrary lessons={pharmacyLessons} /></div>
+
+        <section className="learning-standard">
+          <div className="nas-shell learning-standard__grid">
+            <div><p className="nas-section-label">The NaS standard</p><h2>Designed to be learned, checked, and revised.</h2></div>
+            <div className="learning-standard__principles">
+              <article><span>01</span><h3>Begin with the mechanism</h3><p>Build understanding before asking for recall.</p></article>
+              <article><span>02</span><h3>Connect the decisions</h3><p>Show how evidence becomes therapy, monitoring, and counseling.</p></article>
+              <article><span>03</span><h3>Keep the sources visible</h3><p>Every guide carries references, dates, and a revision record.</p></article>
+            </div>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </div>
   );
 }

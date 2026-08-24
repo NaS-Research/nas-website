@@ -1,5 +1,6 @@
 import { researchItems } from "@/data/researchLibrary";
 import { researchProjects } from "@/data/researchProjects";
+import { pharmacyLessons } from "@/data/pharmacyLearning";
 
 const baseUrl = "https://nasresearch.bio";
 
@@ -9,6 +10,7 @@ export default function sitemap() {
     { path: "/research", lastModified: "2026-07-21", changeFrequency: "weekly", priority: 0.9 },
     { path: "/research/programs", lastModified: "2026-07-20", changeFrequency: "monthly", priority: 0.8 },
     { path: "/learn", lastModified: "2026-08-24", changeFrequency: "weekly", priority: 0.8 },
+    { path: "/learn/pharmacy", lastModified: "2026-08-24", changeFrequency: "weekly", priority: 0.85 },
     { path: "/about", lastModified: "2026-07-20", changeFrequency: "monthly", priority: 0.7 },
     { path: "/support", lastModified: "2026-07-20", changeFrequency: "monthly", priority: 0.6 },
     { path: "/contact", lastModified: "2026-07-20", changeFrequency: "monthly", priority: 0.6 },
@@ -32,6 +34,13 @@ export default function sitemap() {
     priority: 0.8,
   }));
 
+  const learningPages = pharmacyLessons.map((lesson) => ({
+    url: `${baseUrl}/learn/pharmacy/${lesson.slug}`,
+    lastModified: new Date(lesson.reviewedDateISO),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
   return [
     ...pages.map((page) => ({
       url: `${baseUrl}${page.path}`,
@@ -41,5 +50,6 @@ export default function sitemap() {
     })),
     ...projectPages,
     ...publicationPages,
+    ...learningPages,
   ];
 }

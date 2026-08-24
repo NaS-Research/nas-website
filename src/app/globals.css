@@ -3083,3 +3083,1000 @@ body {
     grid-column: 1 / -1;
   }
 }
+
+/* NaS Learn */
+.learning-index-page,
+.pharmacy-index-page,
+.pharmacy-lesson-page {
+  background:
+    radial-gradient(circle at 82% 4%, rgba(199, 160, 105, 0.075), transparent 27rem),
+    var(--nas-black);
+}
+
+.learning-index-hero,
+.pharmacy-index-hero {
+  padding-block: clamp(10rem, 18vw, 15rem) clamp(4rem, 8vw, 7rem);
+  border-bottom: 1px solid var(--nas-line);
+}
+
+.learning-index-hero__inner,
+.pharmacy-index-hero__heading {
+  display: grid;
+  gap: 3rem;
+}
+
+.learning-index-hero h1,
+.pharmacy-index-hero h1 {
+  max-width: 62rem;
+  margin-top: 1.15rem;
+  color: var(--nas-text);
+  font-size: clamp(4rem, 10.5vw, 9rem);
+  font-weight: 520;
+  letter-spacing: -0.07em;
+  line-height: 0.88;
+  text-wrap: balance;
+}
+
+.learning-index-hero__intro,
+.pharmacy-index-hero__heading > div:last-child {
+  align-self: end;
+  max-width: 33rem;
+}
+
+.learning-index-hero__intro p,
+.pharmacy-index-hero__heading > div:last-child p {
+  color: #c2c2c2;
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  line-height: 1.55;
+}
+
+.learning-index-hero__intro span,
+.pharmacy-index-hero__heading > div:last-child span {
+  display: block;
+  margin-top: 1.4rem;
+  color: var(--nas-gold-light);
+  font-size: 0.72rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.learning-discipline {
+  display: grid;
+  gap: 3rem;
+  padding-block: clamp(4rem, 9vw, 7rem);
+  border-bottom: 1px solid var(--nas-line);
+}
+
+.learning-discipline__identity {
+  color: #747474;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.learning-discipline__identity span {
+  display: block;
+  margin-bottom: 0.7rem;
+  color: var(--nas-gold-light);
+  font-size: 1.4rem;
+  letter-spacing: -0.02em;
+}
+
+.learning-discipline__body h2,
+.learning-library__heading h2,
+.pharmacy-curriculum__heading h2,
+.learning-standard h2 {
+  max-width: 54rem;
+  margin-top: 0.8rem;
+  color: var(--nas-text);
+  font-size: clamp(2.3rem, 5vw, 4.6rem);
+  font-weight: 510;
+  letter-spacing: -0.055em;
+  line-height: 1;
+  text-wrap: balance;
+}
+
+.learning-discipline__body > p:not(.nas-section-label) {
+  max-width: 45rem;
+  margin-top: 1.5rem;
+  color: var(--nas-muted);
+  line-height: 1.75;
+}
+
+.learning-primary-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  border-radius: 999px;
+  padding: 0.85rem 1.2rem;
+  background: var(--nas-gold-light);
+  color: #17120c;
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: background-color 180ms ease, transform 180ms ease;
+}
+
+.learning-primary-link:hover {
+  background: #efd2a2;
+  transform: translateY(-2px);
+}
+
+.learning-discipline__map {
+  display: grid;
+  align-self: end;
+  border-top: 1px solid var(--nas-line);
+}
+
+.learning-discipline__map span {
+  padding-block: 0.75rem;
+  border-bottom: 1px solid var(--nas-line);
+  color: #8d8d8d;
+  font-size: 0.8rem;
+}
+
+.learning-library,
+.pharmacy-curriculum {
+  padding-block: clamp(5rem, 10vw, 8rem);
+}
+
+.learning-library__heading,
+.pharmacy-curriculum__heading {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.learning-library__heading > p,
+.pharmacy-curriculum__heading > p {
+  max-width: 31rem;
+  align-self: end;
+  color: var(--nas-muted);
+  line-height: 1.65;
+}
+
+.learning-toolbar {
+  display: grid;
+  gap: 0.8rem;
+  padding-block: 1rem;
+  border-top: 1px solid var(--nas-line);
+  border-bottom: 1px solid var(--nas-line);
+}
+
+.learning-search {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 0.7rem;
+  color: #777;
+}
+
+.learning-search input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--nas-text);
+  font-size: 0.9rem;
+}
+
+.learning-search input::placeholder {
+  color: #777;
+}
+
+.learning-filter select {
+  width: 100%;
+  appearance: none;
+  border: 1px solid var(--nas-line);
+  border-radius: 999px;
+  padding: 0.65rem 2.5rem 0.65rem 1rem;
+  outline: 0;
+  background-color: var(--nas-panel);
+  background-image: linear-gradient(45deg, transparent 50%, #777 50%), linear-gradient(135deg, #777 50%, transparent 50%);
+  background-position: calc(100% - 1rem) 50%, calc(100% - 0.75rem) 50%;
+  background-repeat: no-repeat;
+  background-size: 0.3rem 0.3rem;
+  color: #b5b5b5;
+  font-size: 0.78rem;
+}
+
+.learning-filter select:focus-visible {
+  border-color: var(--nas-gold);
+}
+
+.learning-library__meta {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1.4rem 0.8rem;
+  color: #6f6f6f;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.learning-library__meta button,
+.learning-empty button {
+  color: var(--nas-gold-light);
+  cursor: pointer;
+}
+
+.learning-results {
+  border-top: 1px solid var(--nas-line);
+}
+
+.learning-result {
+  display: grid;
+  gap: 1.5rem;
+  padding-block: 2rem;
+  border-bottom: 1px solid var(--nas-line);
+  transition: padding 180ms ease, background-color 180ms ease;
+}
+
+.learning-result:hover {
+  padding-inline: 1rem;
+  background: linear-gradient(90deg, rgba(199, 160, 105, 0.06), transparent 75%);
+}
+
+.learning-result__number,
+.learning-result__body > p,
+.learning-result__details {
+  color: #777;
+  font-size: 0.72rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.learning-result__body h3 {
+  margin-top: 0.7rem;
+  color: var(--nas-text);
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+.learning-result__body > span {
+  display: block;
+  max-width: 47rem;
+  margin-top: 0.9rem;
+  color: var(--nas-muted);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.learning-result__details {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start;
+  gap: 0.75rem 1.2rem;
+}
+
+.learning-result__details strong {
+  width: 100%;
+  color: #d0d0d0;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.learning-empty {
+  display: grid;
+  min-height: 18rem;
+  place-content: center;
+  gap: 1rem;
+  border-bottom: 1px solid var(--nas-line);
+  color: var(--nas-muted);
+  text-align: center;
+}
+
+.learning-standard {
+  border-top: 1px solid var(--nas-line);
+  background: #080808;
+}
+
+.learning-standard__grid {
+  display: grid;
+  gap: 4rem;
+  padding-block: clamp(5rem, 10vw, 8rem);
+}
+
+.learning-standard__principles {
+  border-top: 1px solid var(--nas-line);
+}
+
+.learning-standard__principles article {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  gap: 0.3rem 1rem;
+  padding-block: 1.3rem;
+  border-bottom: 1px solid var(--nas-line);
+}
+
+.learning-standard__principles span {
+  grid-row: 1 / 3;
+  color: var(--nas-gold-light);
+  font-size: 0.72rem;
+}
+
+.learning-standard__principles h3 {
+  color: var(--nas-text);
+  font-size: 1rem;
+  font-weight: 550;
+}
+
+.learning-standard__principles p {
+  color: #858585;
+  font-size: 0.85rem;
+}
+
+/* Pharmacy curriculum */
+.learning-back {
+  display: inline-block;
+  margin-bottom: 4rem;
+  color: #a0a0a0;
+  font-size: 0.8rem;
+  transition: color 180ms ease;
+}
+
+.learning-back:hover {
+  color: var(--nas-gold-light);
+}
+
+.pharmacy-orientation {
+  display: grid;
+  border-bottom: 1px solid var(--nas-line);
+}
+
+.pharmacy-orientation div {
+  display: grid;
+  gap: 0.35rem;
+  padding-block: 1.4rem;
+  border-bottom: 1px solid var(--nas-line);
+}
+
+.pharmacy-orientation span {
+  color: #707070;
+  font-size: 0.67rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.pharmacy-orientation strong {
+  color: #c9c9c9;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.pharmacy-curriculum {
+  border-bottom: 1px solid var(--nas-line);
+}
+
+.pharmacy-curriculum__grid {
+  display: grid;
+  gap: 1px;
+  border: 1px solid var(--nas-line);
+  background: var(--nas-line);
+}
+
+.curriculum-card {
+  min-width: 0;
+  padding: clamp(1.35rem, 3vw, 2rem);
+  background: var(--nas-black);
+}
+
+.curriculum-card__topline {
+  display: flex;
+  justify-content: space-between;
+  color: #696969;
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.curriculum-card__topline span:first-child {
+  color: var(--nas-gold-light);
+}
+
+.curriculum-card h3 {
+  max-width: 24rem;
+  margin-top: 2.5rem;
+  color: var(--nas-text);
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
+  font-weight: 510;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+}
+
+.curriculum-card > p {
+  max-width: 29rem;
+  margin-top: 1rem;
+  color: #8d8d8d;
+  font-size: 0.85rem;
+  line-height: 1.65;
+}
+
+.curriculum-card > ul {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 2rem;
+  color: #b4b4b4;
+  font-size: 0.78rem;
+  list-style: none;
+}
+
+.curriculum-card > ul li::before {
+  margin-right: 0.65rem;
+  content: "·";
+  color: var(--nas-gold);
+}
+
+.curriculum-card__guides {
+  display: grid;
+  margin-top: 1.8rem;
+  border-top: 1px solid var(--nas-line);
+}
+
+.curriculum-card__guides a {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 0.8rem;
+  border-bottom: 1px solid var(--nas-line);
+  color: var(--nas-gold-light);
+  font-size: 0.78rem;
+}
+
+.pharmacy-use-note {
+  border-top: 1px solid var(--nas-line);
+  background: #080808;
+}
+
+.pharmacy-use-note__inner {
+  display: grid;
+  gap: 2rem;
+  padding-block: 4rem;
+}
+
+.pharmacy-use-note__inner > p:last-child {
+  max-width: 48rem;
+  color: #a0a0a0;
+  line-height: 1.75;
+}
+
+/* Pharmacy learning guide */
+.lesson-hero {
+  padding-block: 9rem clamp(4rem, 9vw, 7rem);
+  border-bottom: 1px solid var(--nas-line);
+  background:
+    linear-gradient(120deg, rgba(199, 160, 105, 0.07), transparent 46%),
+    repeating-linear-gradient(90deg, transparent, transparent calc(25% - 1px), rgba(255, 255, 255, 0.025) 25%);
+}
+
+.lesson-hero__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1.5rem;
+  color: #888;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.lesson-hero__meta span:first-child {
+  color: var(--nas-gold-light);
+}
+
+.lesson-hero h1 {
+  max-width: 66rem;
+  margin-top: 1.5rem;
+  color: var(--nas-text);
+  font-size: clamp(3.25rem, 8vw, 7rem);
+  font-weight: 510;
+  letter-spacing: -0.065em;
+  line-height: 0.95;
+  text-wrap: balance;
+}
+
+.lesson-hero__inner > p {
+  max-width: 47rem;
+  margin-top: 2rem;
+  color: #b8b8b8;
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  line-height: 1.65;
+}
+
+.lesson-hero__dates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem 1.5rem;
+  margin-top: 2.3rem;
+  padding-top: 1.3rem;
+  border-top: 1px solid var(--nas-line);
+  color: #777;
+  font-size: 0.72rem;
+}
+
+.lesson-layout {
+  display: grid;
+  gap: 3rem;
+  padding-block: 3rem 8rem;
+}
+
+.lesson-navigation {
+  min-width: 0;
+  align-self: start;
+  overflow: hidden;
+}
+
+.lesson-navigation > p {
+  margin-bottom: 1rem;
+  color: var(--nas-text);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.lesson-navigation nav {
+  display: flex;
+  gap: 0.55rem;
+  overflow-x: auto;
+  padding-bottom: 0.4rem;
+  scrollbar-width: none;
+}
+
+.lesson-navigation nav::-webkit-scrollbar {
+  display: none;
+}
+
+.lesson-navigation a {
+  flex: 0 0 auto;
+  border: 1px solid var(--nas-line);
+  border-radius: 999px;
+  padding: 0.55rem 0.8rem;
+  color: #8d8d8d;
+  font-size: 0.72rem;
+}
+
+.lesson-body {
+  min-width: 0;
+}
+
+.lesson-objectives,
+.lesson-takeaways {
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border: 1px solid rgba(223, 193, 143, 0.18);
+  border-radius: 1rem;
+  background: linear-gradient(145deg, rgba(199, 160, 105, 0.075), rgba(255, 255, 255, 0.012));
+  scroll-margin-top: 6rem;
+}
+
+.lesson-objectives h2,
+.lesson-takeaways h2,
+.lesson-references h2 {
+  max-width: 42rem;
+  margin-top: 0.8rem;
+  color: var(--nas-text);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 510;
+  letter-spacing: -0.045em;
+  line-height: 1.08;
+}
+
+.lesson-objectives ol,
+.lesson-takeaways ol {
+  display: grid;
+  gap: 0;
+  margin-top: 2rem;
+  padding: 0;
+  list-style: none;
+  counter-reset: lesson-item;
+}
+
+.lesson-objectives li,
+.lesson-takeaways li {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  gap: 0.75rem;
+  padding-block: 0.9rem;
+  border-top: 1px solid var(--nas-line);
+  color: #c5c5c5;
+  line-height: 1.55;
+  counter-increment: lesson-item;
+}
+
+.lesson-objectives li::before,
+.lesson-takeaways li::before {
+  content: counter(lesson-item, decimal-leading-zero);
+  color: var(--nas-gold-light);
+  font-size: 0.7rem;
+}
+
+.lesson-orientation {
+  display: grid;
+  gap: 1px;
+  margin-top: 1px;
+  border: 1px solid var(--nas-line);
+  background: var(--nas-line);
+  scroll-margin-top: 6rem;
+}
+
+.lesson-orientation div {
+  display: grid;
+  gap: 0.65rem;
+  padding: 1.2rem;
+  background: var(--nas-black);
+}
+
+.lesson-orientation span {
+  color: #757575;
+  font-size: 0.67rem;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.lesson-orientation strong {
+  color: #c7c7c7;
+  font-size: 0.86rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.lesson-section,
+.lesson-references {
+  padding-block: clamp(4rem, 8vw, 6rem);
+  border-bottom: 1px solid var(--nas-line);
+  scroll-margin-top: 5rem;
+}
+
+.lesson-section > h2 {
+  max-width: 50rem;
+  margin-bottom: 2rem;
+  color: var(--nas-text);
+  font-size: clamp(2.1rem, 5vw, 3.75rem);
+  font-weight: 510;
+  letter-spacing: -0.05em;
+  line-height: 1.04;
+  text-wrap: balance;
+}
+
+.lesson-section > p,
+.lesson-references > p:not(.nas-section-label) {
+  max-width: 47rem;
+  color: #b8b8b8;
+  font-size: clamp(1rem, 1.5vw, 1.08rem);
+  line-height: 1.85;
+}
+
+.lesson-section > p + p {
+  margin-top: 1.5rem;
+}
+
+.lesson-callout {
+  display: grid;
+  gap: 1rem;
+  max-width: 50rem;
+  margin-top: 2.5rem;
+  border-left: 2px solid var(--nas-gold);
+  padding: 1.25rem 1.5rem;
+  background: rgba(199, 160, 105, 0.055);
+}
+
+.lesson-callout span {
+  color: var(--nas-gold-light);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.lesson-callout p {
+  color: #e4e0d9;
+  font-size: clamp(1.2rem, 2.6vw, 1.75rem);
+  line-height: 1.45;
+}
+
+.lesson-points {
+  display: grid;
+  max-width: 47rem;
+  margin-top: 2.5rem;
+  border-top: 1px solid var(--nas-line);
+  list-style: none;
+}
+
+.lesson-points li {
+  padding: 1rem 0 1rem 1.5rem;
+  border-bottom: 1px solid var(--nas-line);
+  color: #b8b8b8;
+  line-height: 1.65;
+}
+
+.lesson-points li::before {
+  float: left;
+  margin-left: -1.5rem;
+  content: "●";
+  color: var(--nas-gold);
+  font-size: 0.5rem;
+}
+
+.lesson-table-wrap {
+  max-width: 100%;
+  margin-top: 3rem;
+  overflow-x: auto;
+  border: 1px solid var(--nas-line);
+  border-radius: 0.75rem;
+}
+
+.lesson-table {
+  width: 100%;
+  min-width: 42rem;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.lesson-table th,
+.lesson-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--nas-line);
+  color: #a6a6a6;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  vertical-align: top;
+}
+
+.lesson-table thead th {
+  background: #101010;
+  color: #777;
+  font-size: 0.66rem;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.lesson-table tbody th {
+  color: var(--nas-text);
+  font-weight: 540;
+}
+
+.lesson-table tr:last-child > * {
+  border-bottom: 0;
+}
+
+.lesson-steps {
+  display: grid;
+  gap: 1px;
+  margin-top: 3rem;
+  border: 1px solid var(--nas-line);
+  background: var(--nas-line);
+}
+
+.lesson-steps article {
+  padding: 1.4rem;
+  background: var(--nas-black);
+}
+
+.lesson-steps span {
+  color: var(--nas-gold-light);
+  font-size: 0.68rem;
+}
+
+.lesson-steps h3 {
+  margin-top: 1.5rem;
+  color: var(--nas-text);
+  font-size: 1.2rem;
+  font-weight: 540;
+}
+
+.lesson-steps p {
+  margin-top: 0.7rem;
+  color: #8e8e8e;
+  font-size: 0.84rem;
+  line-height: 1.65;
+}
+
+.lesson-questions {
+  margin-top: 2.5rem;
+  border-top: 1px solid var(--nas-line);
+}
+
+.lesson-questions details {
+  border-bottom: 1px solid var(--nas-line);
+}
+
+.lesson-questions summary {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  gap: 0.8rem;
+  padding-block: 1.25rem;
+  color: #d0d0d0;
+  line-height: 1.5;
+  cursor: pointer;
+  list-style: none;
+}
+
+.lesson-questions summary::-webkit-details-marker {
+  display: none;
+}
+
+.lesson-questions summary span {
+  color: var(--nas-gold-light);
+  font-size: 0.7rem;
+}
+
+.lesson-questions details > p {
+  max-width: 44rem;
+  padding: 0 0 1.5rem 2.8rem;
+  color: #969696;
+  line-height: 1.7;
+}
+
+.lesson-takeaways {
+  margin-top: clamp(4rem, 8vw, 6rem);
+}
+
+.lesson-references > p:not(.nas-section-label) {
+  margin-top: 1.5rem;
+  color: #8f8f8f;
+  font-size: 0.9rem;
+}
+
+.lesson-references ol {
+  display: grid;
+  margin-top: 2rem;
+  padding: 0;
+  border-top: 1px solid var(--nas-line);
+  list-style: none;
+  counter-reset: reference;
+}
+
+.lesson-references li {
+  border-bottom: 1px solid var(--nas-line);
+  counter-increment: reference;
+}
+
+.lesson-references a {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr) auto;
+  gap: 0.75rem;
+  padding-block: 1rem;
+  color: #b9b9b9;
+  font-size: 0.82rem;
+}
+
+.lesson-references a::before {
+  content: counter(reference, decimal-leading-zero);
+  color: var(--nas-gold-light);
+}
+
+.lesson-disclaimer {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 3rem;
+  padding: 1.4rem;
+  border: 1px solid var(--nas-line);
+  border-radius: 0.75rem;
+  color: #858585;
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+.lesson-disclaimer strong {
+  color: #c5c5c5;
+  font-weight: 550;
+}
+
+@media (min-width: 48rem) {
+  .learning-index-hero__inner,
+  .pharmacy-index-hero__heading,
+  .learning-library__heading,
+  .pharmacy-curriculum__heading,
+  .learning-standard__grid,
+  .pharmacy-use-note__inner {
+    grid-template-columns: minmax(0, 1fr) minmax(19rem, 0.55fr);
+  }
+
+  .learning-discipline {
+    grid-template-columns: 8rem minmax(0, 1.5fr) minmax(12rem, 0.5fr);
+  }
+
+  .learning-toolbar {
+    grid-template-columns: minmax(12rem, 1fr) auto;
+    align-items: center;
+  }
+
+  .learning-filter select {
+    min-width: 12rem;
+  }
+
+  .learning-result {
+    grid-template-columns: 3rem minmax(0, 1fr) 10rem;
+    gap: 2.5rem;
+    padding-block: 2.6rem;
+  }
+
+  .pharmacy-orientation {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .pharmacy-orientation div {
+    padding: 1.4rem;
+    border-right: 1px solid var(--nas-line);
+    border-bottom: 0;
+  }
+
+  .pharmacy-orientation div:first-child {
+    padding-left: 0;
+  }
+
+  .pharmacy-orientation div:last-child {
+    border-right: 0;
+  }
+
+  .pharmacy-curriculum__grid,
+  .lesson-orientation,
+  .lesson-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lesson-layout {
+    grid-template-columns: 13rem minmax(0, 1fr);
+    gap: clamp(3rem, 7vw, 7rem);
+    padding-top: 4rem;
+  }
+
+  .lesson-navigation {
+    position: sticky;
+    top: 7rem;
+  }
+
+  .lesson-navigation nav {
+    display: grid;
+    gap: 0;
+    max-height: calc(100vh - 11rem);
+    overflow-y: auto;
+  }
+
+  .lesson-navigation a {
+    border: 0;
+    border-left: 1px solid var(--nas-line);
+    border-radius: 0;
+    padding: 0.62rem 1rem;
+    white-space: normal;
+    transition: color 180ms ease, border-color 180ms ease, background-color 180ms ease;
+  }
+
+  .lesson-navigation a:hover {
+    border-color: var(--nas-gold);
+    background: rgba(199, 160, 105, 0.05);
+    color: var(--nas-text);
+  }
+}
+
+@media (min-width: 70rem) {
+  .pharmacy-curriculum__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 34rem) {
+  .learning-index-hero h1,
+  .pharmacy-index-hero h1,
+  .lesson-hero h1 {
+    overflow-wrap: anywhere;
+  }
+
+  .lesson-layout {
+    width: calc(100% - 2.5rem);
+    max-width: 76rem;
+    margin-inline: auto;
+  }
+
+  .lesson-table-wrap {
+    max-width: calc(100vw - 2.5rem);
+  }
+
+  .lesson-section > h2,
+  .lesson-section > p,
+  .lesson-callout,
+  .lesson-objectives,
+  .lesson-takeaways,
+  .lesson-references {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+}

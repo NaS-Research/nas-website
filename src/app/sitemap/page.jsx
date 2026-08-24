@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 import { researchItems } from "@/data/researchLibrary";
 import { researchProjects } from "@/data/researchProjects";
+import { pharmacyLessons } from "@/data/pharmacyLearning";
 
 export const metadata = {
   title: "Sitemap | NaS Research",
@@ -35,7 +36,13 @@ const groups = [
   {
     title: "Learning",
     links: [
-      { label: "Learning Library", href: "/learn", detail: "Educational guides across pharmacy and the life sciences" },
+      { label: "NaS Learn", href: "/learn", detail: "Connected educational guides across pharmacy and the life sciences" },
+      { label: "Pharmacy", href: "/learn/pharmacy", detail: "The Pharmacy curriculum and learning library" },
+      ...pharmacyLessons.map((lesson) => ({
+        label: lesson.title,
+        href: `/learn/pharmacy/${lesson.slug}`,
+        detail: `${lesson.collection} · ${lesson.readTime}`,
+      })),
     ],
   },
   {
