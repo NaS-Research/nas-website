@@ -87,6 +87,7 @@ function SurfaceHeartViewer({ selected }) {
         preload: 0,
         ui_controls: 0,
         ui_help: 0,
+        ui_hint: 0,
         ui_infos: 0,
         ui_settings: 0,
         ui_stop: 0,
@@ -171,7 +172,7 @@ function SurfaceHeartViewer({ selected }) {
           style={{ "--callout-x": callout.calloutX, "--callout-y": callout.calloutY }}
           aria-hidden="true"
         >
-          <span>{selected}</span>
+          <span><small>Guided focus</small><strong>{selected}</strong></span>
           <i />
         </div>
       )}
