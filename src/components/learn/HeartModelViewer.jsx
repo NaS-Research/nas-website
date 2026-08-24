@@ -58,6 +58,69 @@ const focusRotations = {
   "Papillary muscles": [-0.46, -0.1, 0.02],
 };
 
+const surfaceHeartUid = "3f8072336ce94d18b3d0d055a1ece089";
+
+function SurfaceHeartViewer() {
+  const frameRef = useRef();
+
+  useEffect(() => {
+    let cancelled = false;
+    let script = document.getElementById("sketchfab-viewer-api");
+
+    function initializeViewer() {
+      if (cancelled || !frameRef.current || !window.Sketchfab) return;
+
+      const client = new window.Sketchfab("1.12.1", frameRef.current);
+      client.init(surfaceHeartUid, {
+        autostart: 1,
+        camera: 0,
+        dnt: 1,
+        preload: 0,
+        ui_controls: 0,
+        ui_help: 0,
+        ui_infos: 0,
+        ui_settings: 0,
+        ui_stop: 0,
+        success(api) {
+          if (cancelled) return;
+          api.start();
+          api.addEventListener("viewerready", () => {
+            api.setBackground({ color: [0, 0, 0] });
+          });
+        },
+      });
+    }
+
+    if (window.Sketchfab) {
+      initializeViewer();
+    } else if (script) {
+      script.addEventListener("load", initializeViewer, { once: true });
+    } else {
+      script = document.createElement("script");
+      script.id = "sketchfab-viewer-api";
+      script.src = "https://static.sketchfab.com/api/sketchfab-viewer-1.12.1.js";
+      script.async = true;
+      script.addEventListener("load", initializeViewer, { once: true });
+      document.head.appendChild(script);
+    }
+
+    return () => {
+      cancelled = true;
+      script?.removeEventListener("load", initializeViewer);
+    };
+  }, []);
+
+  return (
+    <iframe
+      ref={frameRef}
+      className="heart-lab__surface-viewer"
+      title="Realistic interactive exterior model of the human heart"
+      allow="autoplay; fullscreen; xr-spatial-tracking"
+      allowFullScreen
+    />
+  );
+}
+
 function classifyStructure(name = "") {
   const normalizedName = name
     .replace(/[_-]+/g, " ")
@@ -283,14 +346,7 @@ export default function HeartModelViewer({ activeMode }) {
 
       <div className={`heart-lab__canvas heart-lab__canvas--${view}`} role="group" aria-label="Interactive three dimensional model of the human heart">
         {view === "surface" ? (
-          <iframe
-            className="heart-lab__surface-viewer"
-            title="Realistic interactive exterior model of the human heart"
-            src="https://sketchfab.com/models/3f8072336ce94d18b3d0d055a1ece089/embed?autostart=1&preload=1&ui_infos=0&ui_controls=0&ui_help=0&ui_settings=0&ui_stop=0&ui_watermark=0"
-            allow="autoplay; fullscreen; xr-spatial-tracking"
-            loading="lazy"
-            allowFullScreen
-          />
+          <SurfaceHeartViewer />
         ) : (
           <>
             <HeartStage
@@ -323,16 +379,16 @@ export default function HeartModelViewer({ activeMode }) {
 
       <div className="heart-lab__readout" aria-live="polite">
         <div>
-          <span>{view === "surface" ? "External anatomy" : detail.group}</span>
-          <h4>{view === "surface" ? "Examine the living form" : selected || "Explore the heart"}</h4>
-          <p>{view === "surface" ? "Inspect the heart's muscular surface, major vessels, coronary pathways, and natural tissue variation. Switch to Internal to identify chambers and complete structure checks." : detail.summary}</p>
+          <span>{view === "surface" && !selected ? "External anatomy" : detail.group}</span>
+          <h4>{view === "surface" && !selected ? "Examine the living form" : selected || "Explore the heart"}</h4>
+          <p>{view === "surface" && !selected ? "Inspect the heart's muscular surface, major vessels, coronary pathways, and natural tissue variation. Choose a structure to study it without leaving the surface model." : detail.summary}</p>
         </div>
         <div className="heart-lab__structures" aria-label="Select a heart structure">
           <button type="button" className={view === "surface" ? "is-active" : ""} onClick={() => { setView("surface"); setSelected(null); }}>
             Exterior view
           </button>
           {quizTargets.map((structure) => (
-            <button type="button" className={view === "internal" && selected === structure ? "is-active" : ""} onClick={() => { setView("internal"); setSelected(structure); }} key={structure}>
+            <button type="button" className={selected === structure ? "is-active" : ""} onClick={() => setSelected(structure)} key={structure}>
               <i style={{ "--structure-color": structureColor(structure) }} aria-hidden="true" />
               {structure}
             </button>
