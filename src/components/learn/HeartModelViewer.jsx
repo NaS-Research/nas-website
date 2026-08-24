@@ -244,6 +244,7 @@ function HeartStage({ activeMode, onSelect, selected, onQuizAnswer, quizActive, 
 }
 
 export default function HeartModelViewer({ activeMode }) {
+  const [view, setView] = useState("surface");
   const [selected, setSelected] = useState(null);
   const [quizActive, setQuizActive] = useState(false);
   const [quizTarget, setQuizTarget] = useState("Right ventricle");
@@ -270,48 +271,68 @@ export default function HeartModelViewer({ activeMode }) {
     <div className="heart-lab">
       <div className="heart-lab__topline">
         <div><span>3D anatomy</span><strong>Human heart</strong></div>
-        <span className="heart-lab__live"><i /> Interactive</span>
+        <div className="heart-lab__view-switch" aria-label="Heart model view">
+          <button type="button" className={view === "surface" ? "is-active" : ""} onClick={() => { setView("surface"); setSelected(null); }}>
+            Surface
+          </button>
+          <button type="button" className={view === "internal" ? "is-active" : ""} onClick={() => setView("internal")}>
+            Internal
+          </button>
+        </div>
       </div>
 
-      <div className="heart-lab__canvas" role="group" aria-label="Interactive three dimensional model of the human heart">
-        <HeartStage
-          activeMode={activeMode}
-          onSelect={setSelected}
-          selected={selected}
-          onQuizAnswer={handleQuizAnswer}
-          quizActive={quizActive}
-          resetSignal={resetSignal}
-          zoomLevel={zoomLevel}
-        />
-        {selected && (
-          <div className="heart-lab__selection-card" aria-live="polite">
-            <span>Selected · {detail.group}</span>
-            <strong>{selected}</strong>
-            <p>{detail.summary}</p>
-          </div>
+      <div className={`heart-lab__canvas heart-lab__canvas--${view}`} role="group" aria-label="Interactive three dimensional model of the human heart">
+        {view === "surface" ? (
+          <iframe
+            className="heart-lab__surface-viewer"
+            title="Realistic interactive exterior model of the human heart"
+            src="https://sketchfab.com/models/3f8072336ce94d18b3d0d055a1ece089/embed?autostart=1&preload=1&ui_infos=0&ui_controls=0&ui_help=0&ui_settings=0&ui_stop=0&ui_watermark=0"
+            allow="autoplay; fullscreen; xr-spatial-tracking"
+            loading="lazy"
+            allowFullScreen
+          />
+        ) : (
+          <>
+            <HeartStage
+              activeMode={activeMode}
+              onSelect={setSelected}
+              selected={selected}
+              onQuizAnswer={handleQuizAnswer}
+              quizActive={quizActive}
+              resetSignal={resetSignal}
+              zoomLevel={zoomLevel}
+            />
+            {selected && (
+              <div className="heart-lab__selection-card" aria-live="polite">
+                <span>Selected · {detail.group}</span>
+                <strong>{selected}</strong>
+                <p>{detail.summary}</p>
+              </div>
+            )}
+            <div className="heart-lab__view-controls" aria-label="3D model view controls">
+              <button type="button" aria-label="Zoom out" onClick={() => setZoomLevel((value) => Math.max(-1, value - 1))}>−</button>
+              <button type="button" onClick={() => { setZoomLevel(2); setResetSignal((value) => value + 1); }}>Reset</button>
+              <button type="button" aria-label="Zoom in" onClick={() => setZoomLevel((value) => Math.min(5, value + 1))}>+</button>
+            </div>
+          </>
         )}
         <div className="heart-lab__instructions" aria-hidden="true">
-          <span>Drag to rotate</span><span>Scroll or pinch to zoom</span><span>Select a structure</span>
-        </div>
-        <div className="heart-lab__view-controls" aria-label="3D model view controls">
-          <button type="button" aria-label="Zoom out" onClick={() => setZoomLevel((value) => Math.max(-1, value - 1))}>−</button>
-          <button type="button" onClick={() => { setZoomLevel(2); setResetSignal((value) => value + 1); }}>Reset</button>
-          <button type="button" aria-label="Zoom in" onClick={() => setZoomLevel((value) => Math.min(5, value + 1))}>+</button>
+          <span>Drag to rotate</span><span>Scroll or pinch to zoom</span><span>{view === "surface" ? "Study surface anatomy" : "Select a structure"}</span>
         </div>
       </div>
 
       <div className="heart-lab__readout" aria-live="polite">
         <div>
-          <span>{detail.group}</span>
-          <h4>{selected || "Explore the heart"}</h4>
-          <p>{detail.summary}</p>
+          <span>{view === "surface" ? "External anatomy" : detail.group}</span>
+          <h4>{view === "surface" ? "Examine the living form" : selected || "Explore the heart"}</h4>
+          <p>{view === "surface" ? "Inspect the heart's muscular surface, major vessels, coronary pathways, and natural tissue variation. Switch to Internal to identify chambers and complete structure checks." : detail.summary}</p>
         </div>
         <div className="heart-lab__structures" aria-label="Select a heart structure">
-          <button type="button" className={!selected ? "is-active" : ""} onClick={() => setSelected(null)}>
+          <button type="button" className={view === "surface" ? "is-active" : ""} onClick={() => { setView("surface"); setSelected(null); }}>
             Exterior view
           </button>
           {quizTargets.map((structure) => (
-            <button type="button" className={selected === structure ? "is-active" : ""} onClick={() => setSelected(structure)} key={structure}>
+            <button type="button" className={view === "internal" && selected === structure ? "is-active" : ""} onClick={() => { setView("internal"); setSelected(structure); }} key={structure}>
               <i style={{ "--structure-color": structureColor(structure) }} aria-hidden="true" />
               {structure}
             </button>
@@ -325,13 +346,13 @@ export default function HeartModelViewer({ activeMode }) {
           <strong>{quizActive ? `Find the ${quizTarget}.` : "Test spatial recognition."}</strong>
           {quizResult && <p>{quizResult}</p>}
         </div>
-        <button type="button" onClick={quizActive ? startQuiz : () => setQuizActive(true)}>
+        <button type="button" onClick={() => { setView("internal"); if (quizActive) startQuiz(); else setQuizActive(true); }}>
           {quizActive ? "New prompt" : "Begin"}
         </button>
       </div>
 
       <p className="heart-lab__credit">
-        Anatomy adapted from BodyParts3D and <a href="https://github.com/Z-Anatomy/Models-of-human-anatomy" target="_blank" rel="noreferrer">Z-Anatomy</a> under <a href="https://github.com/Z-Anatomy/Models-of-human-anatomy/blob/master/License.txt" target="_blank" rel="noreferrer">Creative Commons licenses</a>. Geometry optimized by NaS Research.
+        Surface anatomy: <a href="https://sketchfab.com/3d-models/realistic-human-heart-3f8072336ce94d18b3d0d055a1ece089" target="_blank" rel="noreferrer">Realistic Human Heart</a> by neshallads, licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">CC BY 4.0</a>. Internal anatomy adapted from BodyParts3D and <a href="https://github.com/Z-Anatomy/Models-of-human-anatomy" target="_blank" rel="noreferrer">Z-Anatomy</a> under Creative Commons licenses.
       </p>
     </div>
   );

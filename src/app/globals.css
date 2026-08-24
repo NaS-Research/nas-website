@@ -3988,6 +3988,36 @@ body {
   font-weight: 500;
 }
 
+.heart-lab__view-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px;
+  border: 1px solid rgba(230, 198, 151, 0.2);
+  border-radius: 999px;
+  background: rgba(8, 5, 4, 0.78);
+}
+
+.heart-lab__view-switch button {
+  appearance: none;
+  border: 0;
+  border-radius: 999px;
+  padding: 7px 13px;
+  color: rgba(245, 236, 224, 0.56);
+  background: transparent;
+  font: inherit;
+  font-size: 0.69rem;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: color 180ms ease, background-color 180ms ease;
+}
+
+.heart-lab__view-switch button:hover,
+.heart-lab__view-switch button.is-active {
+  color: #1b1008;
+  background: #e5c18c;
+}
+
 .heart-lab__live {
   display: flex;
   align-items: center;
@@ -4029,6 +4059,22 @@ body {
 .heart-lab__canvas canvas {
   position: relative;
   z-index: 1;
+}
+
+.heart-lab__surface-viewer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #171515;
+}
+
+.heart-lab__canvas--surface::after {
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(13, 8, 7, 0.13), transparent 23%, transparent 76%, rgba(13, 8, 7, 0.35)),
+    radial-gradient(circle at 50% 46%, transparent 42%, rgba(11, 6, 5, 0.12) 100%);
 }
 
 .heart-lab__selection-card {
