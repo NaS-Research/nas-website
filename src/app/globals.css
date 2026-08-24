@@ -3754,6 +3754,268 @@ body {
   height: 32rem;
 }
 
+.heart-lab {
+  min-width: 0;
+  border-bottom: 1px solid var(--nas-line);
+  background:
+    radial-gradient(circle at 50% 34%, rgba(139, 42, 31, 0.16), transparent 18rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.015), transparent 38%);
+}
+
+.heart-lab__topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  border-bottom: 1px solid var(--nas-line-soft);
+}
+
+.heart-lab__topline > div {
+  display: flex;
+  align-items: baseline;
+  gap: 0.65rem;
+}
+
+.heart-lab__topline span {
+  color: #666;
+  font-size: 0.58rem;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.heart-lab__topline strong {
+  color: #b9b9b9;
+  font-size: 0.74rem;
+  font-weight: 500;
+}
+
+.heart-lab__live {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.heart-lab__live i {
+  width: 0.38rem;
+  height: 0.38rem;
+  border-radius: 50%;
+  background: #c98d72;
+  box-shadow: 0 0 0.75rem rgba(201, 141, 114, 0.72);
+}
+
+.heart-lab__canvas {
+  position: relative;
+  height: clamp(24rem, 48vw, 34rem);
+  min-height: 24rem;
+  overflow: hidden;
+  border-bottom: 1px solid var(--nas-line-soft);
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+    radial-gradient(circle at 50% 48%, rgba(120, 39, 32, 0.12), transparent 55%);
+  background-size: 4rem 4rem, 4rem 4rem, auto;
+  touch-action: none;
+}
+
+.heart-lab__canvas::after {
+  position: absolute;
+  inset: 12% 8%;
+  border: 1px solid rgba(216, 154, 130, 0.08);
+  border-radius: 50%;
+  content: "";
+  pointer-events: none;
+  transform: rotate(-12deg);
+}
+
+.heart-lab__canvas canvas {
+  position: relative;
+  z-index: 1;
+}
+
+.heart-lab__instructions {
+  position: absolute;
+  z-index: 2;
+  bottom: 0.9rem;
+  left: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.9rem;
+  max-width: calc(100% - 8rem);
+  pointer-events: none;
+}
+
+.heart-lab__instructions span {
+  color: #666;
+  font-size: 0.58rem;
+}
+
+.heart-lab__instructions span + span::before {
+  margin-right: 0.9rem;
+  color: #393939;
+  content: "/";
+}
+
+.heart-lab__reset {
+  position: absolute;
+  z-index: 3;
+  right: 0.8rem;
+  bottom: 0.65rem;
+  border: 1px solid #302a27;
+  border-radius: 999px;
+  padding: 0.45rem 0.65rem;
+  background: rgba(8, 8, 8, 0.72);
+  color: #95887f;
+  font-size: 0.58rem;
+  cursor: pointer;
+  backdrop-filter: blur(0.75rem);
+}
+
+.heart-lab__reset:hover {
+  border-color: #665043;
+  color: #e0c096;
+}
+
+.heart-lab__readout {
+  display: grid;
+  gap: 1.25rem;
+  padding: 1.2rem;
+  border-bottom: 1px solid var(--nas-line-soft);
+}
+
+.heart-lab__readout > div:first-child > span,
+.heart-lab__quiz span {
+  color: #9d765c;
+  font-size: 0.57rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.heart-lab__readout h4 {
+  margin-top: 0.35rem;
+  color: #e3e0dc;
+  font-size: clamp(1.25rem, 2vw, 1.55rem);
+  font-weight: 510;
+  letter-spacing: -0.035em;
+}
+
+.heart-lab__readout p {
+  max-width: 36rem;
+  margin-top: 0.5rem;
+  color: #888;
+  font-size: 0.72rem;
+  line-height: 1.6;
+}
+
+.heart-lab__structures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.heart-lab__structures button {
+  border: 1px solid #292421;
+  border-radius: 999px;
+  padding: 0.43rem 0.62rem;
+  color: #777;
+  font-size: 0.58rem;
+  cursor: pointer;
+}
+
+.heart-lab__structures button:hover,
+.heart-lab__structures button.is-active {
+  border-color: #8b644b;
+  background: rgba(199, 160, 105, 0.07);
+  color: #dfc49d;
+}
+
+.heart-lab__quiz {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid var(--nas-line-soft);
+  background: rgba(255, 255, 255, 0.012);
+}
+
+.heart-lab__quiz > div {
+  display: grid;
+  gap: 0.28rem;
+}
+
+.heart-lab__quiz strong {
+  color: #a8a8a8;
+  font-size: 0.73rem;
+  font-weight: 500;
+}
+
+.heart-lab__quiz p {
+  color: #806f66;
+  font-size: 0.62rem;
+}
+
+.heart-lab__quiz.is-active strong {
+  color: #e4d0b3;
+}
+
+.heart-lab__quiz > button {
+  flex: 0 0 auto;
+  border: 1px solid #8a664c;
+  border-radius: 999px;
+  padding: 0.55rem 0.75rem;
+  color: #d4b78f;
+  font-size: 0.61rem;
+  cursor: pointer;
+}
+
+.heart-lab__quiz > button:hover {
+  background: #d9b986;
+  color: #17100a;
+}
+
+.heart-lab__credit {
+  padding: 0.75rem 1.2rem 1rem;
+  color: #4f4f4f;
+  font-size: 0.54rem;
+  line-height: 1.5;
+}
+
+.heart-lab__credit a {
+  color: #71655e;
+  text-decoration: underline;
+  text-decoration-color: #3b332f;
+  text-underline-offset: 0.16rem;
+}
+
+.heart-lab__credit a:hover {
+  color: #c4a67d;
+}
+
+.heart-lab--loading {
+  display: grid;
+  min-height: 36rem;
+  place-items: center;
+  gap: 0.75rem;
+  color: #6f625a;
+  font-size: 0.67rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.heart-lab--loading span {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid #3c312a;
+  border-top-color: #c7a069;
+  border-radius: 50%;
+  animation: heart-lab-loading 900ms linear infinite;
+}
+
+@keyframes heart-lab-loading {
+  to { transform: rotate(360deg); }
+}
+
 .pharmacy-explorer__detail {
   min-width: 0;
   padding: clamp(1.5rem, 4vw, 2.5rem);
@@ -4516,6 +4778,16 @@ body {
     border-right: 1px solid var(--nas-line);
     border-bottom: 0;
   }
+
+  .heart-lab {
+    border-right: 1px solid var(--nas-line);
+    border-bottom: 0;
+  }
+
+  .heart-lab__readout {
+    grid-template-columns: minmax(0, 1fr) minmax(9rem, 0.58fr);
+    align-items: end;
+  }
 }
 
 @media (min-width: 70rem) {
@@ -4549,5 +4821,28 @@ body {
   .lesson-references {
     max-width: 100%;
     overflow-wrap: anywhere;
+  }
+
+  .heart-lab__topline {
+    padding-inline: 0.9rem;
+  }
+
+  .heart-lab__canvas {
+    height: 27rem;
+  }
+
+  .heart-lab__instructions span:nth-child(2) {
+    display: none;
+  }
+
+  .heart-lab__readout,
+  .heart-lab__quiz {
+    padding-inline: 0.9rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heart-lab--loading span {
+    animation: none;
   }
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import dynamic from "next/dynamic";
 import {
   IconActivity,
   IconBrain,
@@ -10,6 +11,16 @@ import {
   IconPill,
 } from "@tabler/icons-react";
 import { explorerModes, explorerSources, explorerSystems } from "@/data/pharmacyExplorer";
+
+const HeartModelViewer = dynamic(() => import("./HeartModelViewer"), {
+  ssr: false,
+  loading: () => (
+    <div className="heart-lab heart-lab--loading" role="status">
+      <span />
+      Preparing the 3D anatomy lab
+    </div>
+  ),
+});
 
 const icons = {
   activity: IconActivity,
@@ -77,35 +88,39 @@ export default function PharmacyExplorer() {
           ))}
         </nav>
 
-        <div className="pharmacy-body-map" aria-label="Interactive body system map">
-          <div className="pharmacy-body-map__figure" aria-hidden="true">
-            <span className="pharmacy-body-map__head" />
-            <span className="pharmacy-body-map__neck" />
-            <span className="pharmacy-body-map__torso" />
-            <span className="pharmacy-body-map__pelvis" />
-            <span className="pharmacy-body-map__leg pharmacy-body-map__leg--left" />
-            <span className="pharmacy-body-map__leg pharmacy-body-map__leg--right" />
+        {activeSystem === "cardiovascular" ? (
+          <HeartModelViewer activeMode={activeMode} />
+        ) : (
+          <div className="pharmacy-body-map" aria-label="Interactive body system map">
+            <div className="pharmacy-body-map__figure" aria-hidden="true">
+              <span className="pharmacy-body-map__head" />
+              <span className="pharmacy-body-map__neck" />
+              <span className="pharmacy-body-map__torso" />
+              <span className="pharmacy-body-map__pelvis" />
+              <span className="pharmacy-body-map__leg pharmacy-body-map__leg--left" />
+              <span className="pharmacy-body-map__leg pharmacy-body-map__leg--right" />
+            </div>
+            {explorerSystems.map((item) => {
+              const Icon = icons[item.icon];
+              return (
+                <button
+                  type="button"
+                  className={`pharmacy-body-node pharmacy-body-node--${item.position} ${activeSystem === item.id ? "is-active" : ""}`}
+                  style={{ "--system-accent": item.accent }}
+                  aria-label={`Explore ${item.label}`}
+                  aria-pressed={activeSystem === item.id}
+                  onClick={() => setActiveSystem(item.id)}
+                  key={item.id}
+                >
+                  <Icon size={22} stroke={1.5} aria-hidden="true" />
+                  <span>{item.shortLabel}</span>
+                </button>
+              );
+            })}
+            <div className="pharmacy-body-map__orbit pharmacy-body-map__orbit--one" aria-hidden="true" />
+            <div className="pharmacy-body-map__orbit pharmacy-body-map__orbit--two" aria-hidden="true" />
           </div>
-          {explorerSystems.map((item) => {
-            const Icon = icons[item.icon];
-            return (
-              <button
-                type="button"
-                className={`pharmacy-body-node pharmacy-body-node--${item.position} ${activeSystem === item.id ? "is-active" : ""}`}
-                style={{ "--system-accent": item.accent }}
-                aria-label={`Explore ${item.label}`}
-                aria-pressed={activeSystem === item.id}
-                onClick={() => setActiveSystem(item.id)}
-                key={item.id}
-              >
-                <Icon size={22} stroke={1.5} aria-hidden="true" />
-                <span>{item.shortLabel}</span>
-              </button>
-            );
-          })}
-          <div className="pharmacy-body-map__orbit pharmacy-body-map__orbit--one" aria-hidden="true" />
-          <div className="pharmacy-body-map__orbit pharmacy-body-map__orbit--two" aria-hidden="true" />
-        </div>
+        )}
 
         <article className="pharmacy-explorer__detail" aria-live="polite">
           <div className="pharmacy-explorer__detail-kicker">
