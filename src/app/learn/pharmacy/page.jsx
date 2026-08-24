@@ -37,6 +37,10 @@ export default function PharmacyLearningPage() {
         </section>
 
         <div className="nas-shell">
+          <section className="drug-library-entry" aria-labelledby="drug-entry-title">
+            <div><p className="nas-section-label">Drug library</p><h2 id="drug-entry-title">From the core 200 to the full medication vocabulary.</h2></div>
+            <div><p>Search generic and brand names, open structured drug profiles, examine product appearance, and move into the official label when the details matter.</p><Link href="/learn/pharmacy/drugs">Open the drug library <span aria-hidden="true">↗</span></Link></div>
+          </section>
           <PharmacyExplorer />
           <PharmacyCurriculum collections={pharmacyCollections} lessons={pharmacyLessons} />
           <LearningLibrary lessons={pharmacyLessons} />

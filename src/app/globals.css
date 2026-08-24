@@ -3452,6 +3452,204 @@ body {
 }
 
 /* Interactive pharmacy explorer */
+.drug-library-entry {
+  display: grid;
+  gap: 2rem;
+  margin-top: clamp(4rem, 8vw, 7rem);
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border: 1px solid #403329;
+  border-radius: 1.25rem;
+  background: radial-gradient(circle at 80% 20%, rgba(199, 160, 105, 0.11), transparent 23rem), #080808;
+}
+
+.drug-library-entry h2 {
+  max-width: 48rem;
+  margin-top: 0.8rem;
+  color: #e5e5e5;
+  font-size: clamp(2rem, 4.5vw, 4rem);
+  font-weight: 500;
+  letter-spacing: -0.055em;
+  line-height: 1;
+}
+
+.drug-library-entry > div:last-child { align-self: end; }
+.drug-library-entry > div:last-child p { max-width: 30rem; color: #8b8b8b; font-size: 0.82rem; line-height: 1.7; }
+.drug-library-entry a { display: inline-flex; margin-top: 1.3rem; border-radius: 999px; padding: 0.75rem 1rem; background: var(--nas-gold-light); color: #18120c; font-size: 0.7rem; }
+
+.drug-library-page {
+  background: #050505;
+}
+
+.drug-library-back {
+  display: inline-flex;
+  margin-top: 8rem;
+}
+
+.drug-library {
+  padding-block: clamp(3rem, 7vw, 6rem) 8rem;
+}
+
+.drug-library__hero {
+  display: grid;
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+
+.drug-library__hero h1 {
+  max-width: 54rem;
+  margin-top: 0.85rem;
+  color: var(--nas-text);
+  font-size: clamp(3rem, 7vw, 6.6rem);
+  font-weight: 510;
+  letter-spacing: -0.065em;
+  line-height: 0.94;
+  text-wrap: balance;
+}
+
+.drug-library__hero > p {
+  max-width: 30rem;
+  align-self: end;
+  color: #929292;
+  line-height: 1.7;
+}
+
+.drug-library__tabs {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--nas-line);
+}
+
+.drug-library__tabs button {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: -1px;
+  padding: 0.9rem 0.1rem;
+  border-bottom: 1px solid transparent;
+  color: #727272;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+
+.drug-library__tabs button + button { margin-left: 1.25rem; }
+.drug-library__tabs button span { color: #4f4f4f; font-size: 0.6rem; }
+.drug-library__tabs button.is-active { border-color: var(--nas-gold-light); color: #e3e3e3; }
+
+.drug-library__toolbar {
+  display: grid;
+  gap: 0.8rem;
+  padding-block: 1.25rem;
+  border-bottom: 1px solid var(--nas-line);
+}
+
+.drug-library__toolbar label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.drug-library__toolbar label i { color: #777; font-style: normal; }
+.drug-library__toolbar input { width: 100%; color: #ddd; font-size: 0.9rem; outline: 0; }
+.drug-library__toolbar input::placeholder { color: #606060; }
+.drug-library__toolbar p { color: #5d5d5d; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em; }
+
+.drug-library__letters {
+  display: flex;
+  gap: 0.25rem;
+  overflow-x: auto;
+  padding-block: 1rem;
+  scrollbar-width: none;
+}
+
+.drug-library__letters::-webkit-scrollbar { display: none; }
+.drug-library__letters button { min-width: 1.75rem; padding: 0.35rem; color: #5e5e5e; font-size: 0.62rem; cursor: pointer; }
+.drug-library__letters button:hover,
+.drug-library__letters button.is-active { color: #e3c38f; }
+
+.drug-library__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid var(--nas-line);
+  background: var(--nas-line);
+}
+
+.drug-card {
+  display: grid;
+  min-width: 0;
+  min-height: 12rem;
+  padding: 1rem;
+  background: #080808;
+}
+
+.drug-card--featured { background: radial-gradient(circle at 100% 0, rgba(199, 160, 105, 0.1), transparent 55%), #090909; }
+.drug-card__number { color: #4c4c4c; font-size: 0.58rem; letter-spacing: 0.1em; }
+.drug-card__body { align-self: end; min-width: 0; }
+.drug-card__body > span { color: #6a5c52; font-size: 0.55rem; letter-spacing: 0.08em; text-transform: uppercase; }
+.drug-card h2 { margin-top: 0.4rem; color: #d8d8d8; font-size: clamp(1rem, 2.2vw, 1.35rem); font-weight: 500; letter-spacing: -0.035em; overflow-wrap: anywhere; }
+.drug-card p { margin-top: 0.3rem; color: #777; font-size: 0.68rem; }
+.drug-card > a { display: flex; justify-content: space-between; gap: 0.5rem; margin-top: 1.25rem; padding-top: 0.7rem; border-top: 1px solid #242424; color: #8d8d8d; font-size: 0.62rem; }
+.drug-card > a:hover { color: var(--nas-gold-light); }
+
+.drug-library__more {
+  display: block;
+  margin: 1.5rem auto 0;
+  border: 1px solid #39322b;
+  border-radius: 999px;
+  padding: 0.7rem 1rem;
+  color: #c5a77c;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.drug-library__rxnorm { min-height: 28rem; border-bottom: 1px solid var(--nas-line); }
+.drug-library__prompt { display: grid; min-height: 20rem; place-content: center; gap: 0.5rem; text-align: center; }
+.drug-library__prompt strong { color: #aaa; font-weight: 500; }
+.drug-library__prompt p { color: #5e5e5e; font-size: 0.75rem; }
+.drug-library__rxnorm-result { display: grid; grid-template-columns: 7rem minmax(0, 1fr) auto; gap: 1rem; align-items: center; padding: 1rem 0; border-bottom: 1px solid var(--nas-line); }
+.drug-library__rxnorm-result span { color: #5f5f5f; font-size: 0.62rem; }
+.drug-library__rxnorm-result strong { color: #bcbcbc; font-size: 0.8rem; font-weight: 500; }
+.drug-library__rxnorm-result i { color: #7a6859; font-style: normal; }
+.drug-library__source { max-width: 52rem; margin-top: 1.5rem; color: #545454; font-size: 0.63rem; line-height: 1.6; }
+
+.drug-profile-hero { padding-top: 9rem; padding-bottom: clamp(3rem, 8vw, 7rem); }
+.drug-profile-hero__grid { display: grid; gap: 2rem; margin-top: 3rem; }
+.drug-profile-hero h1 { color: var(--nas-text); font-size: clamp(4rem, 10vw, 9rem); font-weight: 500; letter-spacing: -0.075em; line-height: 0.88; }
+.drug-profile-hero__grid > div:last-child { display: grid; align-content: end; gap: 0.35rem; }
+.drug-profile-hero__grid span { color: #656565; font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; }
+.drug-profile-hero__grid strong { color: #ddd; font-size: 1.2rem; font-weight: 500; }
+.drug-profile-hero__grid p { color: #8a8a8a; font-size: 0.78rem; }
+.drug-profile-layout { display: grid; gap: 1rem; padding-bottom: 8rem; }
+.drug-profile-facts,
+.drug-appearance,
+.drug-official-records,
+.drug-profile-safety { border: 1px solid var(--nas-line); border-radius: 1rem; padding: clamp(1.25rem, 3vw, 2rem); background: #080808; }
+.drug-profile-facts h2,
+.drug-appearance h2,
+.drug-official-records h2 { max-width: 38rem; margin-top: 0.8rem; color: #e0e0e0; font-size: clamp(2rem, 4vw, 3.4rem); font-weight: 500; letter-spacing: -0.05em; line-height: 1; }
+.drug-profile-facts dl { margin-top: 2rem; }
+.drug-profile-facts dl div { display: grid; grid-template-columns: minmax(8rem, 0.5fr) 1fr; gap: 1rem; padding-block: 0.9rem; border-top: 1px solid var(--nas-line); }
+.drug-profile-facts dt { color: #626262; font-size: 0.68rem; }
+.drug-profile-facts dd { color: #aaa; font-size: 0.72rem; }
+.drug-appearance__heading { display: flex; justify-content: space-between; gap: 1rem; }
+.drug-appearance__heading > span { color: #705f50; font-size: 0.58rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.drug-appearance__stage { position: relative; display: grid; min-height: 24rem; place-items: center; overflow: hidden; margin-top: 1.5rem; border: 1px solid #211f1d; border-radius: 0.8rem; background: radial-gradient(circle, rgba(82, 112, 65, 0.13), transparent 58%), #050505; }
+.capsule-model { position: relative; z-index: 2; display: flex; width: min(76%, 25rem); aspect-ratio: 3.6 / 1; filter: drop-shadow(0 1.8rem 1.4rem rgba(0, 0, 0, 0.7)); transform: rotate(-12deg); }
+.capsule-model span { display: grid; width: 50%; place-items: center; font-family: Arial, sans-serif; font-size: clamp(1rem, 4vw, 2rem); font-weight: 700; text-shadow: 0 1px rgba(255,255,255,0.18); }
+.capsule-model__cap { border-radius: 999px 0 0 999px; background: linear-gradient(180deg, #567446, #1f3521 72%, #132418); color: #101710; }
+.capsule-model__body { border-radius: 0 999px 999px 0; background: linear-gradient(180deg, #f1ead8, #bbb29d 72%, #958b78); color: #24221c; }
+.drug-appearance__orbit { position: absolute; width: 80%; height: 55%; border: 1px solid rgba(199, 160, 105, 0.12); border-radius: 50%; transform: rotate(-12deg); }
+.drug-appearance__facts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; margin-top: 1rem; background: var(--nas-line); }
+.drug-appearance__facts div { display: grid; gap: 0.35rem; padding: 0.9rem; background: #080808; }
+.drug-appearance__facts span { color: #5e5e5e; font-size: 0.58rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.drug-appearance__facts strong { color: #aaa; font-size: 0.72rem; font-weight: 500; }
+.drug-appearance > p,
+.drug-official-records > p { max-width: 48rem; margin-top: 1.25rem; color: #818181; font-size: 0.75rem; line-height: 1.65; }
+.drug-appearance > a,
+.drug-official-records > a { display: inline-block; margin-top: 1.25rem; color: #d2b27f; font-size: 0.7rem; }
+.drug-profile-safety strong { color: #a99374; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em; }
+.drug-profile-safety p { margin-top: 0.6rem; color: #707070; font-size: 0.7rem; line-height: 1.6; }
+
 .pharmacy-explorer {
   padding-block: clamp(5rem, 10vw, 8rem);
   border-bottom: 1px solid var(--nas-line);
@@ -4687,12 +4885,18 @@ body {
 @media (min-width: 48rem) {
   .learning-index-hero__inner,
   .pharmacy-index-hero__heading,
+  .drug-library__hero,
+  .drug-profile-hero__grid,
   .learning-library__heading,
   .pharmacy-explorer__heading,
   .pharmacy-curriculum__heading,
   .learning-standard__grid,
   .pharmacy-use-note__inner {
     grid-template-columns: minmax(0, 1fr) minmax(19rem, 0.55fr);
+  }
+
+  .drug-library-entry {
+    grid-template-columns: minmax(0, 1.2fr) minmax(18rem, 0.7fr);
   }
 
   .learning-discipline {
@@ -4716,6 +4920,33 @@ body {
 
   .pharmacy-orientation {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .drug-library__toolbar {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+  }
+
+  .drug-library__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .drug-card {
+    min-height: 14rem;
+    padding: 1.3rem;
+  }
+
+  .drug-profile-layout {
+    grid-template-columns: minmax(16rem, 0.7fr) minmax(0, 1.3fr);
+  }
+
+  .drug-appearance,
+  .drug-official-records {
+    grid-row: span 2;
+  }
+
+  .drug-appearance__facts {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .pharmacy-orientation div {

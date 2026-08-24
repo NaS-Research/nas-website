@@ -3,6 +3,7 @@ import Link from "next/link";
 import { researchItems } from "@/data/researchLibrary";
 import { researchProjects } from "@/data/researchProjects";
 import { pharmacyLessons } from "@/data/pharmacyLearning";
+import { featuredDrugs } from "@/data/drugLibrary";
 
 export const metadata = {
   title: "Sitemap | NaS Research",
@@ -38,6 +39,12 @@ const groups = [
     links: [
       { label: "NaS Learn", href: "/learn", detail: "Connected educational guides across pharmacy and the life sciences" },
       { label: "Pharmacy", href: "/learn/pharmacy", detail: "The Pharmacy curriculum and learning library" },
+      { label: "Drug Library", href: "/learn/pharmacy/drugs", detail: "The Core 200 and current RxNorm medication search" },
+      ...featuredDrugs.map((drug) => ({
+        label: drug.generic.replace(/\b\w/g, (letter) => letter.toUpperCase()),
+        href: `/learn/pharmacy/drugs/${drug.slug}`,
+        detail: `${drug.className} · ${drug.brand}`,
+      })),
       ...pharmacyLessons.map((lesson) => ({
         label: lesson.title,
         href: `/learn/pharmacy/${lesson.slug}`,
