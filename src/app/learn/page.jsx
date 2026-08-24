@@ -20,8 +20,8 @@ export default function LearningPage() {
             <h1>Knowledge should connect.</h1>
           </div>
           <div className="learning-index-hero__intro">
-            <p>A growing educational system for understanding medications, disease, biology, and the decisions that connect them.</p>
-            <span>Pharmacy is the first discipline.</span>
+            <p>An educational system for understanding medications, disease, biology, and the decisions that connect them.</p>
+            <span>Pharmacy, understood as a connected science.</span>
           </div>
         </div>
       </header>
@@ -29,8 +29,8 @@ export default function LearningPage() {
       <main>
         <section className="nas-shell learning-discipline" aria-labelledby="pharmacy-title">
           <div className="learning-discipline__identity">
-            <span>01</span>
-            <p>Active discipline</p>
+            <span>Rx</span>
+            <p>NaS Learn</p>
           </div>
           <div className="learning-discipline__body">
             <p className="nas-section-label">Pharmacy</p>

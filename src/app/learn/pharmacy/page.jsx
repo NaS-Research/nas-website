@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import LearningLibrary from "@/components/learn/LearningLibrary";
+import PharmacyExplorer from "@/components/learn/PharmacyExplorer";
 import PharmacyCurriculum from "@/components/learn/PharmacyCurriculum";
 import { pharmacyCollections, pharmacyLessons } from "@/data/pharmacyLearning";
 
@@ -18,7 +19,7 @@ export default function PharmacyLearningPage() {
         <div className="nas-shell">
           <Link href="/learn" className="learning-back">← NaS Learn</Link>
           <div className="pharmacy-index-hero__heading">
-            <div><p className="nas-kicker">Discipline 01</p><h1>Pharmacy</h1></div>
+            <div><p className="nas-kicker">NaS Learn</p><h1>Pharmacy</h1></div>
             <div>
               <p>Learn the science of medications as a connected system, from molecular behavior and dosage-form design to therapeutic decisions and patient care.</p>
               <span>Original educational material from NaS Research</span>
@@ -36,6 +37,7 @@ export default function PharmacyLearningPage() {
         </section>
 
         <div className="nas-shell">
+          <PharmacyExplorer />
           <PharmacyCurriculum collections={pharmacyCollections} lessons={pharmacyLessons} />
           <LearningLibrary lessons={pharmacyLessons} />
         </div>

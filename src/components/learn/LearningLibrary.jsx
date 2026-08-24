@@ -25,7 +25,7 @@ export default function LearningLibrary({ lessons }) {
       <div className="learning-library__heading">
         <div>
           <p className="nas-section-label">Learning library</p>
-          <h2 id="learning-library-title">Start with what is available now.</h2>
+          <h2 id="learning-library-title">Study the science in context.</h2>
         </div>
         <p>
           Every published guide is written for the web, reviewed, sourced, and connected to the larger curriculum.

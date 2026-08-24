@@ -7,7 +7,7 @@ export default function PharmacyCurriculum({ collections, lessons }) {
         <p className="nas-section-label">Curriculum map</p>
         <h2 id="curriculum-title">Build the foundation, then connect the systems.</h2>
         <p>
-          The map organizes the full field. Guides appear in the library only when they are complete enough to study.
+          Move from foundational principles into therapeutics, safety, and patient care without losing the relationships between them.
         </p>
       </header>
 
@@ -18,7 +18,7 @@ export default function PharmacyCurriculum({ collections, lessons }) {
             <article className="curriculum-card" id={collection.slug} key={collection.slug}>
               <div className="curriculum-card__topline">
                 <span>{collection.number}</span>
-                <span>{published.length ? `${published.length} guide${published.length === 1 ? "" : "s"}` : "Curriculum area"}</span>
+                <span>{published.length ? `${published.length} guide${published.length === 1 ? "" : "s"}` : collection.topics.length + " topics"}</span>
               </div>
               <h3>{collection.title}</h3>
               <p>{collection.description}</p>
