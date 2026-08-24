@@ -8,6 +8,7 @@ export default function sitemap() {
     { path: "", lastModified: "2026-07-22", changeFrequency: "weekly", priority: 1 },
     { path: "/research", lastModified: "2026-07-21", changeFrequency: "weekly", priority: 0.9 },
     { path: "/research/programs", lastModified: "2026-07-20", changeFrequency: "monthly", priority: 0.8 },
+    { path: "/learn", lastModified: "2026-08-24", changeFrequency: "weekly", priority: 0.8 },
     { path: "/about", lastModified: "2026-07-20", changeFrequency: "monthly", priority: 0.7 },
     { path: "/support", lastModified: "2026-07-20", changeFrequency: "monthly", priority: 0.6 },
     { path: "/contact", lastModified: "2026-07-20", changeFrequency: "monthly", priority: 0.6 },

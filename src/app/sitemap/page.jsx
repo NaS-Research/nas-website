@@ -33,6 +33,12 @@ const groups = [
     ],
   },
   {
+    title: "Learning",
+    links: [
+      { label: "Learning Library", href: "/learn", detail: "Educational guides across pharmacy and the life sciences" },
+    ],
+  },
+  {
     title: "Legal",
     links: [
       { label: "Privacy Policy", href: "/legal/privacy", detail: "How information is handled" },
@@ -77,7 +83,7 @@ export default function SitemapPage() {
 
         <section className="sitemap-group sitemap-publications">
           <header>
-            <span>04</span>
+            <span>05</span>
             <h2>Publications</h2>
           </header>
           <div className="sitemap-links">
