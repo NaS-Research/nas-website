@@ -46,6 +46,18 @@ const structureDetails = {
 
 const quizTargets = ["Left ventricle", "Right ventricle", "Left atrium", "Right atrium"];
 
+const focusRotations = {
+  "Left ventricle": [-0.08, -0.38, -0.05],
+  "Right ventricle": [-0.05, 0.5, -0.03],
+  "Left atrium": [0.05, 2.45, 0.08],
+  "Right atrium": [0.02, 1.5, 0.06],
+  "Aortic valve": [-0.34, 2.78, 0.12],
+  "Pulmonary valve": [-0.3, 0.72, -0.08],
+  "Mitral valve": [-0.32, 2.25, 0.08],
+  "Tricuspid valve": [-0.32, 0.95, -0.05],
+  "Papillary muscles": [-0.46, -0.1, 0.02],
+};
+
 function classifyStructure(name = "") {
   const lowerName = name.toLowerCase();
   if (lowerName.includes("left atrium")) return "Left atrium";
@@ -74,6 +86,7 @@ function structureColor(name) {
 function HeartMesh({ activeMode, onSelect, selected, onQuizAnswer, quizActive, resetSignal }) {
   const { scene } = useGLTF("/learn/models/heart-z-anatomy.glb");
   const boundsRef = useRef();
+  const modelRef = useRef();
 
   const model = useMemo(() => {
     const clone = scene.clone(true);
@@ -117,10 +130,16 @@ function HeartMesh({ activeMode, onSelect, selected, onQuizAnswer, quizActive, r
       if (activeMode === "pharmacology" && isRightHeart) base.lerp(new THREE.Color("#8f4861"), 0.28);
       if (activeMode === "clinical" && structure.includes("ventricle")) base.lerp(new THREE.Color("#b64a36"), 0.18);
 
-      object.material.color.copy(isSelected ? new THREE.Color("#edc98b") : base);
-      object.material.emissive.set(isSelected ? "#6e401b" : "#180302");
-      object.material.emissiveIntensity = isSelected ? 0.58 : activeMode === "safety" ? 0.15 : 0.045;
-      object.material.clearcoat = isSelected ? 0.52 : 0.24;
+      if (!isSelected) base.multiplyScalar(0.38);
+      object.material.color.copy(isSelected ? base.clone().lerp(new THREE.Color("#ffd08a"), 0.28) : base);
+      object.material.emissive.copy(isSelected ? base : new THREE.Color("#080101"));
+      object.material.emissiveIntensity = isSelected ? 0.9 : activeMode === "safety" ? 0.08 : 0.015;
+      object.material.clearcoat = isSelected ? 0.68 : 0.12;
+      object.material.roughness = isSelected ? 0.3 : 0.62;
+      object.material.transparent = !isSelected;
+      object.material.opacity = isSelected ? 1 : 0.3;
+      object.material.depthWrite = isSelected;
+      object.renderOrder = isSelected ? 2 : 0;
     });
   }, [activeMode, model, selected]);
 
@@ -129,7 +148,13 @@ function HeartMesh({ activeMode, onSelect, selected, onQuizAnswer, quizActive, r
     return () => window.clearTimeout(timer);
   }, [resetSignal]);
 
-  useFrame((state) => {
+  useFrame((state, delta) => {
+    const target = focusRotations[selected] || focusRotations["Left ventricle"];
+    if (modelRef.current) {
+      modelRef.current.rotation.x = THREE.MathUtils.damp(modelRef.current.rotation.x, target[0], 5.2, delta);
+      modelRef.current.rotation.y = THREE.MathUtils.damp(modelRef.current.rotation.y, target[1], 5.2, delta);
+      modelRef.current.rotation.z = THREE.MathUtils.damp(modelRef.current.rotation.z, target[2], 5.2, delta);
+    }
     if (activeMode === "safety") {
       const pulse = 0.12 + (Math.sin(state.clock.elapsedTime * 3.2) + 1) * 0.08;
       model.traverse((object) => {
@@ -159,7 +184,7 @@ function HeartMesh({ activeMode, onSelect, selected, onQuizAnswer, quizActive, r
   return (
     <Bounds ref={boundsRef} clip margin={1.18}>
       <Center>
-        <group rotation={[-0.08, -0.38, -0.05]}>
+        <group ref={modelRef} rotation={focusRotations["Left ventricle"]}>
           <primitive
             object={model}
             onClick={handlePointer}
@@ -251,6 +276,11 @@ export default function HeartModelViewer({ activeMode }) {
           resetSignal={resetSignal}
           zoomLevel={zoomLevel}
         />
+        <div className="heart-lab__selection-card" aria-live="polite">
+          <span>Selected · {detail.group}</span>
+          <strong>{selected}</strong>
+          <p>{detail.summary}</p>
+        </div>
         <div className="heart-lab__instructions" aria-hidden="true">
           <span>Drag to rotate</span><span>Scroll or pinch to zoom</span><span>Select a structure</span>
         </div>
