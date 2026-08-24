@@ -127,6 +127,7 @@ function HeartMesh({ activeMode, onSelect, selected, onQuizAnswer, quizActive, r
       if (!object.isMesh) return;
       const structure = classifyStructure(object.name);
       const isSelected = selected === structure;
+      const hasSelection = Boolean(selected);
       const isValve = structureDetails[structure]?.group === "Valve";
       const isRightHeart = structure.startsWith("Right");
       const base = new THREE.Color(object.userData.nasBaseColor);
@@ -134,16 +135,17 @@ function HeartMesh({ activeMode, onSelect, selected, onQuizAnswer, quizActive, r
       if (activeMode === "interactions" && isValve) base.lerp(new THREE.Color("#e3c58d"), 0.55);
       if (activeMode === "pharmacology" && isRightHeart) base.lerp(new THREE.Color("#8f4861"), 0.28);
       if (activeMode === "clinical" && structure.includes("ventricle")) base.lerp(new THREE.Color("#b64a36"), 0.18);
+      if (!hasSelection) base.set("#8f2e25");
 
-      if (!isSelected) base.multiplyScalar(0.38);
+      if (hasSelection && !isSelected) base.multiplyScalar(0.38);
       object.material.color.copy(isSelected ? base.clone().lerp(new THREE.Color("#ffd08a"), 0.28) : base);
       object.material.emissive.copy(isSelected ? base : new THREE.Color("#080101"));
       object.material.emissiveIntensity = isSelected ? 0.9 : activeMode === "safety" ? 0.08 : 0.015;
-      object.material.clearcoat = isSelected ? 0.68 : 0.12;
-      object.material.roughness = isSelected ? 0.3 : 0.62;
-      object.material.transparent = !isSelected;
-      object.material.opacity = isSelected ? 1 : 0.3;
-      object.material.depthWrite = isSelected;
+      object.material.clearcoat = isSelected ? 0.68 : hasSelection ? 0.12 : 0.3;
+      object.material.roughness = isSelected ? 0.3 : hasSelection ? 0.62 : 0.44;
+      object.material.transparent = hasSelection && !isSelected;
+      object.material.opacity = hasSelection && !isSelected ? 0.3 : 1;
+      object.material.depthWrite = !hasSelection || isSelected;
       object.renderOrder = isSelected ? 2 : 0;
     });
   }, [activeMode, model, selected]);
@@ -242,15 +244,15 @@ function HeartStage({ activeMode, onSelect, selected, onQuizAnswer, quizActive, 
 }
 
 export default function HeartModelViewer({ activeMode }) {
-  const [selected, setSelected] = useState("Left ventricle");
+  const [selected, setSelected] = useState(null);
   const [quizActive, setQuizActive] = useState(false);
   const [quizTarget, setQuizTarget] = useState("Right ventricle");
   const [quizResult, setQuizResult] = useState("");
   const [resetSignal, setResetSignal] = useState(0);
   const [zoomLevel, setZoomLevel] = useState(2);
   const detail = structureDetails[selected] || {
-    group: "Anatomy",
-    summary: "Select another visible structure to continue exploring the model.",
+    group: "Whole organ",
+    summary: "Rotate the heart freely, then select a chamber to bring its anatomy into focus.",
   };
 
   function startQuiz() {
@@ -281,11 +283,13 @@ export default function HeartModelViewer({ activeMode }) {
           resetSignal={resetSignal}
           zoomLevel={zoomLevel}
         />
-        <div className="heart-lab__selection-card" aria-live="polite">
-          <span>Selected · {detail.group}</span>
-          <strong>{selected}</strong>
-          <p>{detail.summary}</p>
-        </div>
+        {selected && (
+          <div className="heart-lab__selection-card" aria-live="polite">
+            <span>Selected · {detail.group}</span>
+            <strong>{selected}</strong>
+            <p>{detail.summary}</p>
+          </div>
+        )}
         <div className="heart-lab__instructions" aria-hidden="true">
           <span>Drag to rotate</span><span>Scroll or pinch to zoom</span><span>Select a structure</span>
         </div>
@@ -299,10 +303,13 @@ export default function HeartModelViewer({ activeMode }) {
       <div className="heart-lab__readout" aria-live="polite">
         <div>
           <span>{detail.group}</span>
-          <h4>{selected}</h4>
+          <h4>{selected || "Explore the heart"}</h4>
           <p>{detail.summary}</p>
         </div>
         <div className="heart-lab__structures" aria-label="Select a heart structure">
+          <button type="button" className={!selected ? "is-active" : ""} onClick={() => setSelected(null)}>
+            Exterior view
+          </button>
           {quizTargets.map((structure) => (
             <button type="button" className={selected === structure ? "is-active" : ""} onClick={() => setSelected(structure)} key={structure}>
               <i style={{ "--structure-color": structureColor(structure) }} aria-hidden="true" />
