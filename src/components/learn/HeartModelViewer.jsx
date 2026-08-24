@@ -59,7 +59,12 @@ const focusRotations = {
 };
 
 function classifyStructure(name = "") {
-  const lowerName = name.toLowerCase();
+  const normalizedName = name
+    .replace(/[_-]+/g, " ")
+    .replace(/\.\d+$/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+  const lowerName = normalizedName.toLowerCase();
   if (lowerName.includes("left atrium")) return "Left atrium";
   if (lowerName.includes("left ventricle")) return "Left ventricle";
   if (lowerName.includes("right atrium")) return "Right atrium";
@@ -69,7 +74,7 @@ function classifyStructure(name = "") {
   if (lowerName.includes("pulmonary valve")) return "Pulmonary valve";
   if (lowerName.includes("left atrioventricular") || lowerName.includes("mitral")) return "Mitral valve";
   if (lowerName.includes("right atrioventricular") || lowerName.includes("tricuspid")) return "Tricuspid valve";
-  return name || "Heart structure";
+  return normalizedName || "Heart structure";
 }
 
 function structureColor(name) {
