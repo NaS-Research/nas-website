@@ -242,7 +242,7 @@ export default function HeartModelViewer({ activeMode }) {
   const [quizTarget, setQuizTarget] = useState("Right ventricle");
   const [quizResult, setQuizResult] = useState("");
   const [resetSignal, setResetSignal] = useState(0);
-  const [zoomLevel, setZoomLevel] = useState(0);
+  const [zoomLevel, setZoomLevel] = useState(2);
   const detail = structureDetails[selected] || {
     group: "Anatomy",
     summary: "Select another visible structure to continue exploring the model.",
@@ -286,7 +286,7 @@ export default function HeartModelViewer({ activeMode }) {
         </div>
         <div className="heart-lab__view-controls" aria-label="3D model view controls">
           <button type="button" aria-label="Zoom out" onClick={() => setZoomLevel((value) => Math.max(-1, value - 1))}>−</button>
-          <button type="button" onClick={() => { setZoomLevel(0); setResetSignal((value) => value + 1); }}>Reset</button>
+          <button type="button" onClick={() => { setZoomLevel(2); setResetSignal((value) => value + 1); }}>Reset</button>
           <button type="button" aria-label="Zoom in" onClick={() => setZoomLevel((value) => Math.min(5, value + 1))}>+</button>
         </div>
       </div>
