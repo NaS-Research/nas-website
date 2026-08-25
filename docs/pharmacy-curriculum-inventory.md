@@ -182,6 +182,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 343 static pages generated
 - Goodnotes note: the dedicated adrenoceptor-activating lecture export remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
+### Adrenergic Antagonists
+
+- Course scope: competitive alpha and beta blockade, reflex physiology, vascular and urinary alpha blockers, beta blocker diversity, formulation-specific cardiovascular selection, safety, withdrawal, and acute toxicity
+- Cross reference completed: RxPrep NAPLEX 2023 cardiovascular, urinary, pulmonary, metabolic, interaction, toxicology, and monitoring scope
+- Current references reviewed: current DailyMed metoprolol succinate extended-release, carvedilol, propranolol, and tamsulosin labeling, IUPHAR and BPS adrenoceptor nomenclature, and national poison center resources
+- Learning structure: six lessons, six native blockade, selection, safety, and toxicity diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions spanning competitive occupancy, receptor selectivity, reflexes, orthostasis, uroselectivity, CYP interactions, eye procedures, intrinsic sympathomimetic activity, distribution, clearance, formulation, heart failure, conduction, airway reserve, hypoglycemia, withdrawal, and overdose; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: beta-1 selectivity was treated as exposure dependent; alpha blocker urinary preference was separated from systemic safety; immediate-release and extended-release metoprolol were not treated as interchangeable; heart failure initiation was limited to stable patients and evidence-specific products; advanced overdose therapy was kept within current poison center or medical toxicology protocols
+- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 344 static pages generated
+- Goodnotes note: the dedicated adrenergic-antagonist lecture export remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -258,7 +270,7 @@ Available documents:
 Target modules:
 
 1. Adrenergic Agonists (`built`, 100 question bank; Goodnotes reconciliation pending)
-2. Adrenergic Antagonists
+2. Adrenergic Antagonists (`built`, 100 question bank; Goodnotes reconciliation pending)
 3. Adrenergic Medicinal Chemistry
 4. Diuretic Pharmacology
 5. Diuretic Medicinal Chemistry
