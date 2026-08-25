@@ -1,126 +1,33 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
 
+const features = [
+  { href: "/research/introducing-nas-cortex", label: "Research", detail: "5 min read", title: "Introducing the NaS Cortex: Life Science’s Digital Brain", image: "/assets/images/ArticleOne.png", imageAlt: "The NaS Cortex white paper cover", paper: true },
+  { href: "/research/why-hyde-park", label: "Community", detail: "5 min read", title: "Why Hyde Park", video: "/assets/videos/ChicagoThree.mp4#t=2" },
+  { href: "/research/why-nas-exists", label: "Institutional essay", detail: "8 min read", title: "Why NaS Exists", image: "/assets/images/NaSLogo.jpeg", imageAlt: "NaS mark" },
+];
+
 export default function Featured() {
   return (
-    <section id="next-section" className="min-h-screen py-16 px-8 bg-black text-neutral-200">
-      <div className="max-w-6xl mx-auto space-y-10">
-
-        {/* Main Feature */}
-        <Link
-          href="/research/chicago-our-chosen-home"
-          className="group block space-y-4 rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#dfc18f] focus-visible:ring-offset-4 focus-visible:ring-offset-black"
-          aria-label="Read Chicago: Our Chosen Home"
-        >
-          <div className="rounded-xl overflow-hidden h-[480px]">
-            <video
-              src="/assets/videos/ChicagoOne.mp4"
-              className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.015]"
-              autoPlay
-              loop
-              muted
-              playsInline
-            />
-          </div>
-          <div className="space-y-3">
-            <h2 className="text-[1.9rem] sm:text-4xl font-semibold text-white transition-colors group-hover:text-[#dfc18f]">
-              Chicago: Our Chosen Home <span aria-hidden="true" className="inline-block text-[0.62em] transition-transform group-hover:translate-x-1">↗</span>
-            </h2>
-            <p className="text-base sm:text-lg"><span className="text-white">Release</span> · <span className="text-neutral-400">May 8, 2025</span></p>
-          </div>
+    <section id="next-section" className="home-featured">
+      <div className="home-featured__inner">
+        <header className="home-editorial-heading"><p>Selected work</p><h2>Research begins with where we choose to stand.</h2></header>
+        <Link href="/research/chicago-our-chosen-home" className="home-featured__lead">
+          <div className="home-featured__lead-media"><video src="/assets/videos/ChicagoOne.mp4" autoPlay loop muted playsInline /></div>
+          <div className="home-featured__lead-copy"><div><span>Release</span><span>May 8, 2025</span></div><h3>Chicago: Our Chosen Home</h3><span className="home-arrow" aria-hidden="true">↗</span></div>
         </Link>
-
-        {/* Smaller Feature Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Latest White Paper */}
-          <Link
-            href="/research/introducing-nas-cortex"
-            className="group block space-y-4 rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#dfc18f] focus-visible:ring-offset-4 focus-visible:ring-offset-black"
-            aria-label="Read Introducing the NaS Cortex: Life Science’s Digital Brain"
-          >
-            <div className="overflow-hidden rounded-xl aspect-square bg-white">
-              <div className="transform transition-transform duration-300 group-hover:scale-105 w-full h-full">
-                <Image
-                  src="/assets/images/ArticleOne.png"
-                  alt="White paper cover"
-                  width={800}
-                  height={800}
-                  className="object-contain w-full h-full scale-100 translate-y-4"
-                  priority={false}
-                />
+        <div className="home-featured__grid">
+          {features.map((feature) => (
+            <Link href={feature.href} className="home-featured__item" key={feature.href}>
+              <div className={`home-featured__item-media ${feature.paper ? "home-featured__item-media--paper" : ""}`}>
+                {feature.video ? <video src={feature.video} muted autoPlay loop playsInline /> : <Image src={feature.image} alt={feature.imageAlt} width={900} height={650} />}
               </div>
-            </div>
-            <div className="space-y-3">
-              <h3 className="text-xl font-medium text-white transition-colors group-hover:text-[#dfc18f]">
-                Introducing the NaS Cortex: Life Science’s Digital Brain <span aria-hidden="true" className="inline-block text-[0.7em] transition-transform group-hover:translate-x-1">↗</span>
-              </h3>
-              <p className="text-base">
-                <span className="text-white">Research</span> ·{" "}
-                <span className="text-neutral-400">5&nbsp;min read</span>
-              </p>
-            </div>
-          </Link>
-
-          {/* Hyde Park */}
-          <Link
-            href="/research/why-hyde-park"
-            className="group block space-y-4 rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#dfc18f] focus-visible:ring-offset-4 focus-visible:ring-offset-black"
-            aria-label="Read Why Hyde Park"
-          >
-            <div className="overflow-hidden rounded-xl aspect-square">
-              <div className="transform transition-transform duration-300 group-hover:scale-105 w-full h-full">
-                <video
-                  src="/assets/videos/ChicagoThree.mp4#t=2"
-                  muted
-                  autoPlay
-                  loop
-                  playsInline
-                  className="object-cover w-full h-full"
-                />
-              </div>
-            </div>
-            <div className="space-y-3">
-              <h3 className="text-xl font-medium text-white transition-colors group-hover:text-[#dfc18f]">
-                Why Hyde Park <span aria-hidden="true" className="inline-block text-[0.7em] transition-transform group-hover:translate-x-1">↗</span>
-              </h3>
-              <p className="text-base">
-                <span className="text-white">Community</span> ·{" "}
-                <span className="text-neutral-400">5&nbsp;min read</span>
-              </p>
-            </div>
-          </Link>
-
-          {/* Institutional origin */}
-          <Link
-            href="/research/why-nas-exists"
-            className="group block space-y-4 rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#dfc18f] focus-visible:ring-offset-4 focus-visible:ring-offset-black"
-            aria-label="Read Why NaS Exists"
-          >
-            <div className="overflow-hidden rounded-xl aspect-square">
-              <div className="transform transition-transform duration-300 group-hover:scale-105 w-full h-full">
-                <Image
-                  src="/assets/images/NaSLogo.jpeg"
-                  alt="NaS logo"
-                  width={800}
-                  height={800}
-                  className="object-cover w-full h-full"
-                  priority={false}
-                />
-              </div>
-            </div>
-            <div className="space-y-3">
-              <h3 className="text-xl font-medium text-white transition-colors group-hover:text-[#dfc18f]">
-                Why NaS Exists <span aria-hidden="true" className="inline-block text-[0.7em] transition-transform group-hover:translate-x-1">↗</span>
-              </h3>
-              <p className="text-base">
-                <span className="text-white">Institutional Essay</span> ·{" "}
-                <span className="text-neutral-400">8&nbsp;min read</span>
-              </p>
-            </div>
-          </Link>
+              <div className="home-featured__item-copy"><p><span>{feature.label}</span><span>{feature.detail}</span></p><h3>{feature.title}</h3><span className="home-arrow" aria-hidden="true">↗</span></div>
+            </Link>
+          ))}
         </div>
-
       </div>
     </section>
   );
