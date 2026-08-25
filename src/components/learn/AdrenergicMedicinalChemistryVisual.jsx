@@ -1,0 +1,17 @@
+const diagrams = {
+  "adr-medchem-pharmacophore": { eyebrow: "Agonist pharmacophore", title: "Aromatic ring, ethanolamine chain, and cationic nitrogen.", accent: "#c78e73", columns: [["Ring", "Hydrophobic + polar contacts", "Hydroxyl pattern changes affinity and metabolism"], ["Beta carbon", "Alcohol + stereocenter", "Direct binding and configuration"], ["Two-carbon span", "Positions the amine", "Geometry supports receptor recognition"], ["Amine", "Usually protonated", "Substitution shifts alpha and beta profile"]] },
+  "adr-medchem-catechol": { eyebrow: "Ring substitution", title: "Catechol binding power trades against metabolic stability.", accent: "#b29a71", columns: [["3,4 dihydroxy", "Strong polar binding", "COMT substrate and low oral stability"], ["Single phenol", "Less COMT liability", "Different receptor profile"], ["Resorcinol", "3,5 dihydroxy", "Beta 2 designs with COMT resistance"], ["Saligenin", "Hydroxymethyl pattern", "Longer airway activity in selected scaffolds"]] },
+  "adr-medchem-amine": { eyebrow: "Side-chain design", title: "Nitrogen bulk and alpha substitution reshape selectivity and exposure.", accent: "#809fbb", columns: [["Small N group", "Alpha activity retained", "Norepinephrine-like profile"], ["Larger N group", "Beta recognition rises", "Beta 2 preference can increase"], ["Alpha methyl", "MAO resistance", "Oral activity and indirect action"], ["No beta hydroxyl", "More lipophilic", "Central access and transmitter release"]] },
+  "adr-medchem-stereo": { eyebrow: "Stereochemistry", title: "Configuration changes fit before it changes the name.", accent: "#89a88f", columns: [["Agonists", "Beta hydroxyl center", "One configuration commonly binds more strongly"], ["Beta blockers", "Propanolamine center", "S enantiomer often has greater beta affinity"], ["Racemate", "Two exposures", "Pharmacology can differ by enantiomer"], ["Metabolism", "COMT + MAO + CYP", "Structure determines pathway access"]] },
+  "adr-medchem-beta-blockers": { eyebrow: "Beta blocker scaffold", title: "Aryloxypropanolamine links an aromatic domain to a basic amine.", accent: "#a68dbd", columns: [["Aryl group", "Hydrophobic anchor", "Naphthalene increases lipophilicity"], ["Oxypropanolamine", "Three-atom bridge", "Alcohol and amine orient binding"], ["Para substituent", "Tuned polarity", "Can support beta 1 preference"], ["Extra motif", "Alpha block or soft ester", "Carvedilol and esmolol diverge"]] },
+  "adr-medchem-alpha-blockers": { eyebrow: "Alpha antagonist scaffolds", title: "Different cores reach vascular and urinary alpha receptors.", accent: "#c77668", columns: [["Quinazoline", "Prazosin family", "Alpha 1 blockade and vascular effects"], ["Sulfonamide", "Tamsulosin", "Alpha 1A preference and CYP exposure"], ["Phenoxybenzamine", "Reactive haloalkylamine", "Long-lasting covalent antagonism"], ["Integration", "Structure to product", "Scaffold never replaces label evidence"]] },
+};
+
+export default function AdrenergicMedicinalChemistryVisual({ type }) {
+  const diagram = diagrams[type];
+  if (!diagram) return null;
+  return <figure className="chol-visual" style={{ "--chol-accent": diagram.accent }} aria-label={diagram.title}>
+    <figcaption><span>{diagram.eyebrow}</span><strong>{diagram.title}</strong></figcaption>
+    <div className="chol-visual__grid">{diagram.columns.map(([name, action, detail], index) => <div key={name}><span>{String(index + 1).padStart(2, "0")}</span><strong>{name}</strong><em>{action}</em><p>{detail}</p></div>)}</div>
+  </figure>;
+}

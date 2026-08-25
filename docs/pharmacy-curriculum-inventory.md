@@ -194,6 +194,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 344 static pages generated
 - Goodnotes note: the dedicated adrenergic-antagonist lecture export remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
+### Adrenergic Medicinal Chemistry
+
+- Course scope: phenylethanolamine pharmacophore, catechol and noncatechol ring design, nitrogen and alpha-carbon substitution, stereochemistry, metabolism, aryloxypropanolamine beta blockers, and reversible or covalent alpha antagonist scaffolds
+- Cross reference completed: RxPrep NAPLEX 2023 adrenergic agonist, beta blocker, alpha blocker, interaction, formulation, and medicinal chemistry scope
+- Current references reviewed: NIH PubChem chemical records for epinephrine, phenylephrine, propranolol, metoprolol, tamsulosin, and phenoxybenzamine, plus IUPHAR and BPS adrenoceptor nomenclature
+- Learning structure: six lessons, six native pharmacophore, ring, side-chain, stereochemistry, beta blocker, and alpha blocker diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions spanning three-dimensional pharmacophore recognition, hydroxyl patterns, COMT, MAO, conjugation, nitrogen bulk, alpha substitution, direct and indirect activity, stereochemistry, aryloxypropanolamine recognition, lipophilicity, soft-drug design, quinazolines, tamsulosin, and covalent alpha blockade; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: structure-activity relationships were framed as trends rather than absolute receptor rules; catechol binding was separated from oral exposure; beta-1 preference was treated as whole-molecule and concentration dependent; ionizable amines were not treated as permanently charged; structural prediction was explicitly separated from approved indication and clinical outcomes
+- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 345 static pages generated
+- Goodnotes note: the dedicated adrenergic agonist and antagonist medicinal-chemistry lecture export remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -271,7 +283,7 @@ Target modules:
 
 1. Adrenergic Agonists (`built`, 100 question bank; Goodnotes reconciliation pending)
 2. Adrenergic Antagonists (`built`, 100 question bank; Goodnotes reconciliation pending)
-3. Adrenergic Medicinal Chemistry
+3. Adrenergic Medicinal Chemistry (`built`, 100 question bank; Goodnotes reconciliation pending)
 4. Diuretic Pharmacology
 5. Diuretic Medicinal Chemistry
 6. Glaucoma Pharmacotherapy
