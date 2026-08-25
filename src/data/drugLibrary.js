@@ -1,4 +1,5 @@
 import { drugCategoryByName } from "./drugCategories.js";
+import { getTherapeuticClass } from "./drugTherapeuticClasses.js";
 
 const coreDrugNames = [
   "atorvastatin", "levothyroxine", "metformin", "amlodipine", "lisinopril", "albuterol", "losartan", "metoprolol", "rosuvastatin", "omeprazole",
@@ -165,6 +166,7 @@ export const coreDrugs = coreDrugNames.map((generic, index) => ({
   slug: slugify(generic),
   number: index + 1,
   category: drugCategoryByName[generic] || "Other",
+  therapeuticClass: getTherapeuticClass(generic, drugCategoryByName[generic] || "Other"),
   ...(featured[generic] || {}),
 }));
 
