@@ -6614,6 +6614,133 @@ body {
   background: linear-gradient(115deg, rgb(185 130 68 / 7%), transparent 58%);
 }
 
+.pharmacy-submodule__study {
+  margin-top: 2rem;
+  border-top: 1px solid rgba(232, 198, 143, 0.22);
+  padding-top: 1.5rem;
+}
+
+.pharmacy-submodule__study-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.pharmacy-submodule__study-heading > span,
+.pharmacy-submodule__exam-focus > span {
+  color: var(--nas-gold, #d5ae72);
+  font-size: 0.7rem;
+  font-weight: 650;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.pharmacy-submodule__study-heading p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.42);
+  font-size: 0.78rem;
+  text-align: right;
+}
+
+.pharmacy-submodule__study-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.pharmacy-submodule__study-grid article {
+  min-height: 10rem;
+  padding: 1.35rem;
+  background: rgba(255, 255, 255, 0.018);
+}
+
+.pharmacy-submodule__study-grid article:nth-child(odd) {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pharmacy-submodule__study-grid article:nth-child(-n + 2) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pharmacy-submodule__study-grid article > span {
+  display: block;
+  margin-bottom: 0.8rem;
+  color: rgba(213, 174, 114, 0.62);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+}
+
+.pharmacy-submodule__study-grid article p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: clamp(1rem, 1.15vw, 1.12rem);
+  line-height: 1.65;
+}
+
+.pharmacy-submodule__exam-focus {
+  display: grid;
+  grid-template-columns: 9rem 1fr;
+  gap: 1.25rem;
+  margin-top: 1rem;
+  padding: 1.15rem 1.25rem;
+  border-radius: 0.85rem;
+  background: linear-gradient(110deg, rgba(181, 124, 61, 0.14), rgba(181, 124, 61, 0.035));
+}
+
+.pharmacy-submodule__exam-focus ul {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pharmacy-submodule__exam-focus li {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.pharmacy-submodule__exam-focus li::before {
+  content: "→";
+  margin-right: 0.6rem;
+  color: var(--nas-gold, #d5ae72);
+}
+
+@media (max-width: 700px) {
+  .pharmacy-submodule__study-heading {
+    display: block;
+  }
+
+  .pharmacy-submodule__study-heading p {
+    margin-top: 0.45rem;
+    text-align: left;
+  }
+
+  .pharmacy-submodule__study-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pharmacy-submodule__study-grid article {
+    min-height: 0;
+    border-right: 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .pharmacy-submodule__study-grid article:last-child {
+    border-bottom: 0;
+  }
+
+  .pharmacy-submodule__exam-focus {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+  }
+}
+
 .pharmacy-submodule__application p {
   max-width: 44rem;
   color: #aaa39b;

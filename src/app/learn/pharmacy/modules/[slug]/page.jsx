@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Footer from "@/components/Footer";
 import PharmacyAssessment from "@/components/learn/PharmacyAssessment";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
+import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
 export function generateStaticParams() {
   return pharmacyModules.map((module) => ({ slug: module.slug }));
@@ -57,6 +58,9 @@ export default async function PharmacyModulePage({ params }) {
         <article className="pharmacy-module-content">
           {module.submodules.map((submodule, index) => (
             <section className="pharmacy-submodule" id={submodule.slug} key={submodule.slug}>
+              {(() => {
+                const study = getPharmacyStudyContent(submodule.slug);
+                return <>
               <div className="pharmacy-submodule__number">{module.number}.{String(index + 1).padStart(2, "0")}</div>
               <p className="nas-section-label">Submodule</p>
               <h2>{submodule.title}</h2>
@@ -65,8 +69,23 @@ export default async function PharmacyModulePage({ params }) {
                 <span>What to learn</span>
                 <ul>{submodule.concepts.map((concept) => <li key={concept}>{concept}</li>)}</ul>
               </div>
+              {study && <div className="pharmacy-submodule__study">
+                <div className="pharmacy-submodule__study-heading">
+                  <span>High-yield study notes</span>
+                  <p>{study.sourceTopics.join(" · ")}</p>
+                </div>
+                <div className="pharmacy-submodule__study-grid">
+                  {study.mustKnow.map((point, pointIndex) => <article key={point}><span>{String(pointIndex + 1).padStart(2, "0")}</span><p>{point}</p></article>)}
+                </div>
+                <aside className="pharmacy-submodule__exam-focus">
+                  <span>NAPLEX focus</span>
+                  <ul>{study.examFocus.map((point) => <li key={point}>{point}</li>)}</ul>
+                </aside>
+              </div>}
               <aside className="pharmacy-submodule__application"><span>Clinical lens</span><p>{submodule.application}</p></aside>
               {submodule.href && <Link className="pharmacy-submodule__guide" href={submodule.href}>Open the full study guide <span aria-hidden="true">↗</span></Link>}
+                </>;
+              })()}
             </section>
           ))}
 
