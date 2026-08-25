@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { IconEye, IconEyeOff } from "@tabler/icons-react";
 
 const bodyLayers = [
   { id: "muscular", name: "Muscular", shortName: "Muscles", color: "#9f4b43", description: "The muscular envelope that produces movement and shapes the exterior form." },
@@ -118,7 +119,8 @@ export default function FullBodyAtlas({ initialFocus = null, onOpenHeart }) {
                   <div><strong>{layer.shortName}</strong><small>{layer.description}</small></div>
                 </button>
                 <button type="button" className="full-body-atlas__layer-visibility" aria-label={`${isVisible ? "Hide" : "Show"} ${layer.name}`} aria-pressed={isVisible} onClick={() => toggleLayer(layer.id)}>
-                  {isVisible ? "Visible" : "Hidden"}
+                  {isVisible ? <IconEye size={15} stroke={1.8} aria-hidden="true" /> : <IconEyeOff size={15} stroke={1.8} aria-hidden="true" />}
+                  <span>{isVisible ? "Visible" : "Hidden"}</span>
                 </button>
               </div>
             );
@@ -131,15 +133,17 @@ export default function FullBodyAtlas({ initialFocus = null, onOpenHeart }) {
           </button>
         )}
 
-        <div className="full-body-atlas__selection" aria-live="polite">
-          <span>Selected structure</span>
-          {selected ? <><strong>{cleanStructureName(selected.meshName)}</strong><small>{selectedLayer?.name}</small></> : <p>Select any visible structure to identify it.</p>}
+        <div className="full-body-atlas__panel-footer">
+          <div className="full-body-atlas__selection" aria-live="polite">
+            <span>Selected structure</span>
+            {selected ? <><strong>{cleanStructureName(selected.meshName)}</strong><small>{selectedLayer?.name}</small></> : <p>Select any visible structure to identify it.</p>}
+          </div>
+          <div className="full-body-atlas__panel-meta">
+            <button type="button" className="full-body-atlas__reset" onClick={resetBody}>Reset body map</button>
+            <p className="full-body-atlas__credit">Anatomical models from Z-Anatomy and BodyParts3D, adapted under CC BY-SA 4.0.</p>
+          </div>
         </div>
-
-        <button type="button" className="full-body-atlas__reset" onClick={resetBody}>Reset body map</button>
-        <p className="full-body-atlas__credit">Anatomical models from Z-Anatomy and BodyParts3D, adapted under CC BY-SA 4.0.</p>
       </aside>
     </div>
   );
 }
-

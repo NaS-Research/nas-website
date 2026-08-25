@@ -5070,6 +5070,209 @@ body {
   }
 }
 
+/* NaS atlas console */
+.full-body-atlas {
+  grid-template-columns: minmax(0, 1fr);
+  height: auto;
+  min-height: 0;
+}
+
+.full-body-atlas__stage {
+  height: clamp(42rem, 65vw, 58rem);
+  border-bottom: 1px solid var(--nas-line);
+  background:
+    linear-gradient(90deg, transparent 49.95%, rgba(229, 193, 139, 0.045) 50%, transparent 50.05%),
+    radial-gradient(circle at 50% 43%, rgba(102, 45, 38, 0.18), transparent 31%),
+    radial-gradient(circle at 50% 46%, rgba(209, 179, 133, 0.045), transparent 55%),
+    #020202;
+}
+
+.full-body-atlas__stage::before {
+  inset: auto 1.5rem 1.5rem auto;
+  width: 5rem;
+  height: 5rem;
+  border: 0;
+  border-right: 1px solid rgba(229, 196, 145, 0.12);
+  border-bottom: 1px solid rgba(229, 196, 145, 0.12);
+  border-radius: 0;
+  transform: none;
+}
+
+.full-body-atlas__panel {
+  display: grid;
+  overflow: visible;
+  border-left: 0;
+  background: #070707;
+}
+
+.full-body-atlas__panel header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.6fr);
+  column-gap: 3rem;
+  padding: 1.8rem 2rem;
+}
+
+.full-body-atlas__panel header > p,
+.full-body-atlas__panel header h3 { grid-column: 1; }
+
+.full-body-atlas__panel header h3 {
+  font-size: clamp(1.65rem, 3vw, 2.4rem);
+}
+
+.full-body-atlas__panel header > span {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: end;
+  margin-top: 0;
+}
+
+.full-body-atlas__panel-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.9rem 2rem;
+}
+
+.full-body-atlas__panel-actions button {
+  border-radius: 999px;
+  padding: 0.58rem 0.9rem;
+}
+
+.full-body-atlas__layers {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1px;
+  padding: 1px 0;
+  background: var(--nas-line-soft);
+}
+
+.full-body-atlas__layer {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(8.5rem, 1fr) auto;
+  align-items: stretch;
+  border: 0;
+  border-radius: 0;
+  background: #070707;
+}
+
+.full-body-atlas__layer + .full-body-atlas__layer { margin-top: 0; }
+
+.full-body-atlas__layer.is-focused {
+  border-color: transparent;
+  background: linear-gradient(145deg, rgba(224, 190, 137, 0.08), transparent 62%), #080808;
+}
+
+.full-body-atlas__layer-main {
+  padding: 1.15rem 1rem;
+}
+
+.full-body-atlas__layer-visibility {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  margin: 0 1rem 1rem;
+  border: 1px solid rgba(229, 193, 139, 0.52);
+  border-radius: 0.5rem;
+  padding: 0.62rem 0.7rem;
+  background: rgba(229, 193, 139, 0.12);
+  color: #eccb95;
+  font-size: 0.56rem;
+  font-weight: 650;
+  transition: border-color 180ms ease, background-color 180ms ease, color 180ms ease;
+}
+
+.full-body-atlas__layer-visibility[aria-pressed="false"] {
+  border-color: #34302b;
+  background: #0c0c0c;
+  color: #77716a;
+  text-decoration: none;
+}
+
+.full-body-atlas__layer-visibility:hover,
+.full-body-atlas__layer-visibility:focus-visible {
+  border-color: #e5c18b;
+  color: #f5dbb2;
+  outline: 0;
+}
+
+.full-body-atlas__heart-entry {
+  margin: 1rem 2rem;
+}
+
+.full-body-atlas__panel-footer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.7fr);
+  align-items: center;
+  border-top: 1px solid var(--nas-line-soft);
+}
+
+.full-body-atlas__selection {
+  margin-top: 0;
+  padding: 1.3rem 2rem;
+  border-top: 0;
+}
+
+.full-body-atlas__panel-meta {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1.3rem 2rem;
+  border-left: 1px solid var(--nas-line-soft);
+}
+
+.full-body-atlas__reset {
+  align-self: auto;
+  width: fit-content;
+  margin: 0;
+}
+
+.full-body-atlas__credit {
+  max-width: 24rem;
+  padding: 0;
+}
+
+@media (max-width: 54.99rem) {
+  .full-body-atlas__layers {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .full-body-atlas__panel header {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding-inline: 1rem;
+  }
+
+  .full-body-atlas__panel header > span {
+    grid-column: 1;
+    grid-row: auto;
+    margin-top: 0.7rem;
+  }
+
+  .full-body-atlas__panel-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .full-body-atlas__panel-meta {
+    border-top: 1px solid var(--nas-line-soft);
+    border-left: 0;
+  }
+}
+
+@media (max-width: 34rem) {
+  .full-body-atlas__stage {
+    height: 36rem;
+  }
+
+  .full-body-atlas__layers {
+    grid-template-columns: 1fr;
+  }
+
+  .full-body-atlas__panel-actions,
+  .full-body-atlas__selection,
+  .full-body-atlas__panel-meta {
+    padding-inline: 1rem;
+  }
+}
+
 .heart-lab {
   min-width: 0;
   border-bottom: 1px solid var(--nas-line);
