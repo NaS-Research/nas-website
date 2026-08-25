@@ -741,6 +741,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 391 static pages generated
 - Goodnotes note: the HHS and hyperglycemic-emergency lectures, cases, and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
+### Thyroid Disorders
+
+- Course scope: hypothalamic, pituitary, and thyroid feedback; hormone synthesis, transport, conversion, and testing; primary, central, overt, and subclinical hypothyroidism; Hashimoto thyroiditis and treatment-related causes; levothyroxine selection, dosing, formulation, administration, absorption, interactions, monitoring, unstable TSH investigation, and overreplacement; severe hypothyroidism and myxedema coma; Graves disease, toxic nodules, destructive thyroiditis, exogenous hormone, iodine, and amiodarone-related thyrotoxicosis; methimazole and propylthiouracil selection, toxicity, counseling, and monitoring; beta blockade, iodide, glucocorticoids, and selected adjuncts; radioactive iodine, thyroidectomy, and long-term follow-up; thyroid storm diagnosis and treatment sequence; and preconception, pregnancy, fetal, lactation, and postpartum care
+- Current references reviewed: American Thyroid Association guideline library, 2014 hypothyroidism guideline and current patient guidance, 2016 hyperthyroidism guideline and current patient guidance, 2026 thyroid disease in preconception, pregnancy, and postpartum guideline materials, current methimazole and propylthiouracil prescribing information, current Synthroid prescribing information, and the RxPrep 2023 thyroid chapter for historical scope comparison
+- Learning structure: eleven content-driven lessons, eleven native feedback, diagnostic, replacement, emergency, cause, treatment, and reproductive-care diagrams, and eleven embedded knowledge checks
+- Assessment: 100 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: fixed hormone ranges were replaced by laboratory and clinical context; TSH was not used alone in central disease; positive antibodies with normal function did not trigger automatic replacement; levothyroxine remained standard therapy while dose and formulation were individualized; unstable TSH prompted exposure and absorption review before escalation; myxedema coma included organ support and adrenal coverage; thyrotoxicosis was separated from increased synthesis so destructive thyroiditis did not receive ineffective thionamides; methimazole remained preferred for most routine nonpregnant care while PTU was reserved for thyroid storm, selected early pregnancy, or defined intolerance because of its boxed hepatic warning; fever or severe sore throat triggered urgent agranulocytosis evaluation; iodide followed thionamide in synthesis-driven crisis; radioactive iodine was prohibited in pregnancy and lactation; definitive therapy was selected from patient and disease constraints rather than a universal preference; thyroid storm was treated as an organ-failure syndrome with hemodynamically tailored beta blockade; and pregnancy care used current reproductive guidance, early levothyroxine reassessment, gestation-aware antithyroid selection, and Graves-antibody fetal risk assessment
+- Automated verification: 100 unique question IDs, four unique choices per question, valid lesson links, eleven diagrams, and no em dash or en dash characters in public prose
+- Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, eleven diagrams, all eleven embedded knowledge checks, ten-question randomized attempts with changed question sets and answer order, complete scoring, ten explanations and remediation links, and no browser errors or warnings
+- Build verification: Next.js production build passed August 25, 2026 with 392 static pages generated
+- Goodnotes note: the thyroid lectures, medicinal-chemistry materials, cases, and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -982,7 +994,7 @@ Target modules:
 3. Insulin Therapy (`built`, 100 question bank; Goodnotes reconciliation pending)
 4. Diabetic Ketoacidosis (`built`, 100 question bank; Goodnotes reconciliation pending)
 5. Hyperosmolar Hyperglycemic State (`built`, 100 question bank; Goodnotes reconciliation pending)
-6. Thyroid Disorders
+6. Thyroid Disorders (`built`, 100 question bank; Goodnotes reconciliation pending)
 7. Thyroid Medicinal Chemistry
 
 #### Adrenal and reproductive health
