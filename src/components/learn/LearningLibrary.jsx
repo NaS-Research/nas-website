@@ -21,7 +21,7 @@ export default function LearningLibrary({ lessons }) {
   }, [collection, lessons, query]);
 
   return (
-    <section className="learning-library" aria-labelledby="learning-library-title">
+    <section className="learning-library" id="learning-library" aria-labelledby="learning-library-title">
       <div className="learning-library__heading">
         <div>
           <p className="nas-section-label">Learning library</p>

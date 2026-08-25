@@ -3087,11 +3087,82 @@ body {
 /* NaS Learn */
 .learning-index-page,
 .pharmacy-index-page,
-.pharmacy-lesson-page {
+.pharmacy-lesson-page,
+.pharmacy-atlas-page {
   background:
     radial-gradient(circle at 82% 4%, rgba(199, 160, 105, 0.075), transparent 27rem),
     var(--nas-black);
 }
+
+.pharmacy-tool-menu {
+  position: fixed;
+  z-index: 80;
+  right: clamp(1rem, 3vw, 2rem);
+  bottom: clamp(1rem, 3vw, 2rem);
+  width: min(18rem, calc(100vw - 2rem));
+  color: #eee5d8;
+}
+
+.pharmacy-tool-menu summary {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 0.75rem;
+  margin-left: auto;
+  width: max-content;
+  padding: 0.62rem 0.72rem 0.62rem 0.9rem;
+  border: 1px solid rgba(230, 198, 151, 0.3);
+  border-radius: 999px;
+  background: rgba(7, 5, 4, 0.9);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.38);
+  list-style: none;
+  cursor: pointer;
+  backdrop-filter: blur(18px);
+}
+
+.pharmacy-tool-menu summary::-webkit-details-marker { display: none; }
+.pharmacy-tool-menu summary span { color: #8f806f; font-size: 0.58rem; letter-spacing: 0.11em; text-transform: uppercase; }
+.pharmacy-tool-menu summary strong { font-size: 0.7rem; font-weight: 520; }
+.pharmacy-tool-menu summary i {
+  display: grid;
+  place-items: center;
+  width: 1.65rem;
+  height: 1.65rem;
+  border-radius: 50%;
+  color: #17100a;
+  background: var(--nas-gold-light);
+  font-size: 1rem;
+  font-style: normal;
+  transition: transform 180ms ease;
+}
+
+.pharmacy-tool-menu[open] summary i { transform: rotate(45deg); }
+.pharmacy-tool-menu nav {
+  display: grid;
+  margin-bottom: 0.55rem;
+  overflow: hidden;
+  border: 1px solid rgba(230, 198, 151, 0.22);
+  border-radius: 1rem;
+  background: rgba(7, 5, 4, 0.94);
+  box-shadow: 0 1.25rem 4rem rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(22px);
+}
+
+.pharmacy-tool-menu[open] { display: flex; flex-direction: column-reverse; }
+.pharmacy-tool-menu nav a {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  align-items: center;
+  padding: 0.82rem 0.95rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  color: #d5d0c9;
+  font-size: 0.75rem;
+  transition: color 160ms ease, background-color 160ms ease;
+}
+
+.pharmacy-tool-menu nav a:last-child { border-bottom: 0; }
+.pharmacy-tool-menu nav a span { color: #796d5f; font-size: 0.58rem; }
+.pharmacy-tool-menu nav a:hover { color: #fff; background: rgba(225, 190, 137, 0.08); }
 
 .learning-index-hero,
 .pharmacy-index-hero {
@@ -3446,6 +3517,164 @@ body {
   font-size: 0.85rem;
   font-weight: 500;
 }
+
+.pharmacy-platform {
+  padding-block: clamp(4rem, 9vw, 8rem);
+  border-bottom: 1px solid var(--nas-line);
+}
+
+.pharmacy-platform__heading {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: clamp(2rem, 5vw, 4rem);
+}
+
+.pharmacy-platform__heading h2 {
+  max-width: 46rem;
+  margin-top: 0.8rem;
+  color: #ecebea;
+  font-size: clamp(2.5rem, 5vw, 4.8rem);
+  font-weight: 510;
+  letter-spacing: -0.06em;
+  line-height: 0.96;
+}
+
+.pharmacy-platform__heading > p {
+  align-self: end;
+  max-width: 31rem;
+  color: #96918b;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.pharmacy-platform__grid {
+  display: grid;
+  border-top: 1px solid var(--nas-line);
+  border-left: 1px solid var(--nas-line);
+}
+
+.pharmacy-platform-card {
+  position: relative;
+  display: flex;
+  min-height: 20rem;
+  overflow: hidden;
+  border-right: 1px solid var(--nas-line);
+  border-bottom: 1px solid var(--nas-line);
+  padding: clamp(1.4rem, 3vw, 2.2rem);
+  color: inherit;
+  background: #050505;
+  transition: background-color 200ms ease;
+}
+
+.pharmacy-platform-card:hover { background: #0a0908; }
+.pharmacy-platform-card.is-featured { min-height: 27rem; }
+.pharmacy-platform-card__topline {
+  position: absolute;
+  z-index: 2;
+  top: 1.4rem;
+  right: 1.5rem;
+  left: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  color: #766c60;
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.pharmacy-platform-card__body {
+  position: relative;
+  z-index: 2;
+  align-self: end;
+}
+
+.pharmacy-platform-card__body h3 {
+  color: #efeeec;
+  font-size: clamp(1.7rem, 3vw, 2.6rem);
+  font-weight: 510;
+  letter-spacing: -0.045em;
+  line-height: 1;
+}
+
+.pharmacy-platform-card__body p {
+  max-width: 32rem;
+  margin-top: 1rem;
+  color: #85817c;
+  font-size: 0.78rem;
+  line-height: 1.65;
+}
+
+.pharmacy-platform-card__body strong {
+  display: inline-block;
+  margin-top: 1.4rem;
+  color: #d9bc91;
+  font-size: 0.68rem;
+  font-weight: 520;
+}
+
+.pharmacy-platform-card__visual {
+  position: absolute;
+  inset: 8% 0 0 38%;
+  overflow: hidden;
+}
+
+.pharmacy-platform-card__visual::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(90deg, #050505 0%, transparent 38%), linear-gradient(0deg, #050505 0%, transparent 48%);
+  pointer-events: none;
+}
+
+.pharmacy-platform-card__visual img {
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(0.86) contrast(1.08) brightness(0.82);
+}
+
+.pharmacy-platform-card__orbit {
+  position: absolute;
+  z-index: 1;
+  inset: 11%;
+  border: 1px solid rgba(222, 179, 119, 0.14);
+  border-radius: 50%;
+  transform: rotate(-18deg);
+}
+
+.pharmacy-platform-card__orbit--two { inset: 25% 3%; transform: rotate(26deg); }
+
+.pharmacy-curriculum,
+.learning-library { scroll-margin-top: 7rem; }
+
+.pharmacy-atlas-hero {
+  padding-block: clamp(9rem, 15vw, 13rem) clamp(3rem, 6vw, 5rem);
+  border-bottom: 1px solid var(--nas-line);
+}
+
+.pharmacy-atlas-hero .nas-kicker { margin-top: 4rem; }
+.pharmacy-atlas-hero > div > div {
+  display: grid;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.pharmacy-atlas-hero h1 {
+  color: #f1f0ee;
+  font-size: clamp(4rem, 10vw, 8rem);
+  font-weight: 510;
+  letter-spacing: -0.07em;
+  line-height: 0.9;
+}
+
+.pharmacy-atlas-hero > div > div p {
+  align-self: end;
+  max-width: 34rem;
+  color: #aaa49d;
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  line-height: 1.55;
+}
+
+.pharmacy-atlas-main { padding-bottom: clamp(5rem, 10vw, 9rem); }
 
 .pharmacy-curriculum {
   border-bottom: 1px solid var(--nas-line);
@@ -5055,9 +5284,11 @@ body {
 @media (min-width: 48rem) {
   .learning-index-hero__inner,
   .pharmacy-index-hero__heading,
+  .pharmacy-atlas-hero > div > div,
   .drug-library__hero,
   .drug-profile-hero__grid,
   .learning-library__heading,
+  .pharmacy-platform__heading,
   .pharmacy-explorer__heading,
   .pharmacy-curriculum__heading,
   .learning-standard__grid,
@@ -5090,6 +5321,14 @@ body {
 
   .pharmacy-orientation {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .pharmacy-platform__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pharmacy-platform-card.is-featured {
+    grid-column: span 2;
   }
 
   .drug-library__toolbar {
@@ -5225,6 +5464,14 @@ body {
 }
 
 @media (min-width: 70rem) {
+  .pharmacy-platform__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .pharmacy-platform-card.is-featured {
+    grid-column: span 2;
+  }
+
   .pharmacy-curriculum__grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -5282,6 +5529,15 @@ body {
   .heart-lab__readout,
   .heart-lab__quiz {
     padding-inline: 0.9rem;
+  }
+
+  .pharmacy-tool-menu summary span {
+    display: none;
+  }
+
+  .pharmacy-platform-card__visual {
+    inset: 6% -8% 19% 48%;
+    opacity: 0.72;
   }
 }
 

@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import LearningLibrary from "@/components/learn/LearningLibrary";
-import PharmacyExplorer from "@/components/learn/PharmacyExplorer";
 import PharmacyCurriculum from "@/components/learn/PharmacyCurriculum";
+import PharmacyPlatformHome from "@/components/learn/PharmacyPlatformHome";
 import { pharmacyCollections, pharmacyLessons } from "@/data/pharmacyLearning";
 
 export const metadata = {
@@ -37,11 +37,7 @@ export default function PharmacyLearningPage() {
         </section>
 
         <div className="nas-shell">
-          <section className="drug-library-entry" aria-labelledby="drug-entry-title">
-            <div><p className="nas-section-label">Drug library</p><h2 id="drug-entry-title">From the core 200 to the full medication vocabulary.</h2></div>
-            <div><p>Search generic and brand names, open structured drug profiles, examine product appearance, and move into the official label when the details matter.</p><Link href="/learn/pharmacy/drugs">Open the drug library <span aria-hidden="true">↗</span></Link></div>
-          </section>
-          <PharmacyExplorer />
+          <PharmacyPlatformHome />
           <PharmacyCurriculum collections={pharmacyCollections} lessons={pharmacyLessons} />
           <LearningLibrary lessons={pharmacyLessons} />
         </div>

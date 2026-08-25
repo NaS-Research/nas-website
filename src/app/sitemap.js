@@ -12,6 +12,7 @@ export default function sitemap() {
     { path: "/research/programs", lastModified: "2026-07-20", changeFrequency: "monthly", priority: 0.8 },
     { path: "/learn", lastModified: "2026-08-24", changeFrequency: "weekly", priority: 0.8 },
     { path: "/learn/pharmacy", lastModified: "2026-08-24", changeFrequency: "weekly", priority: 0.85 },
+    { path: "/learn/pharmacy/atlas", lastModified: "2026-08-24", changeFrequency: "weekly", priority: 0.85 },
     { path: "/learn/pharmacy/drugs", lastModified: "2026-08-24", changeFrequency: "weekly", priority: 0.85 },
     { path: "/about", lastModified: "2026-07-20", changeFrequency: "monthly", priority: 0.7 },
     { path: "/support", lastModified: "2026-07-20", changeFrequency: "monthly", priority: 0.6 },

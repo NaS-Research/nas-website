@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function PharmacyCurriculum({ collections, lessons }) {
   return (
-    <section className="pharmacy-curriculum" aria-labelledby="curriculum-title">
+    <section className="pharmacy-curriculum" id="curriculum" aria-labelledby="curriculum-title">
       <header className="pharmacy-curriculum__heading">
         <p className="nas-section-label">Curriculum map</p>
         <h2 id="curriculum-title">Build the foundation, then connect the systems.</h2>

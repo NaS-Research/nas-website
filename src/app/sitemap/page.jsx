@@ -39,6 +39,7 @@ const groups = [
     links: [
       { label: "NaS Learn", href: "/learn", detail: "Connected educational guides across pharmacy and the life sciences" },
       { label: "Pharmacy", href: "/learn/pharmacy", detail: "The Pharmacy curriculum and learning library" },
+      { label: "Visual Atlas", href: "/learn/pharmacy/atlas", detail: "Interactive anatomy and connected medication knowledge" },
       { label: "Drug Library", href: "/learn/pharmacy/drugs", detail: "The Core 200 and current RxNorm medication search" },
       ...featuredDrugs.map((drug) => ({
         label: drug.generic.replace(/\b\w/g, (letter) => letter.toUpperCase()),
