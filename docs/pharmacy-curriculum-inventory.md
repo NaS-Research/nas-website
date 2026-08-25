@@ -158,6 +158,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 341 static pages generated
 - Goodnotes note: the dedicated anticholinergic medicinal-chemistry lecture export remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
+### Cholinergic Toxicology and Cholinesterase Regeneration
+
+- Course source: exported cholinoceptor lecture sections on cholinergic excess, muscarinic toxicity, atropine, and acetylcholinesterase inhibition; dedicated cholinoceptor-blocker and regenerator lecture reconciliation remains pending
+- Cross reference completed: RxPrep NAPLEX 2023 toxicology, pesticide exposure, antidote, emergency stabilization, and monitoring scope
+- Current references reviewed: current DailyMed atropine sulfate and pralidoxime labeling, CDC and ATSDR exposure-response resources, NIH PubChem pralidoxime chemistry, and IUPHAR and BPS receptor nomenclature
+- Learning structure: six lessons, six native exposure, receptor-domain, decontamination, antidote, and recovery diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions spanning exposure reconstruction, muscarinic, nicotinic, and central findings, responder protection, decontamination, atropine endpoints, pralidoxime reactivation, aging, recurrent toxicity, intermediate weakness, and delayed neuropathy; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: airway and ventilation were prioritized over mnemonic diagnosis; heart rate and pupil size were rejected as sole severity or atropinization endpoints; atropine was separated from nicotinic recovery; oxime benefit and aging were made agent and time dependent; decontamination was integrated with protected resuscitation
+- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 342 static pages generated
+- Goodnotes note: the dedicated cholinoceptor-blocker and cholinesterase-regenerator lecture export remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -218,7 +230,7 @@ Target modules:
 3. Antimuscarinic Pharmacology (`built`, 100 question bank; Goodnotes reconciliation pending)
 4. Cholinergic Medicinal Chemistry (`built`, 100 question bank)
 5. Anticholinergic Medicinal Chemistry (`built`, 100 question bank; Goodnotes reconciliation pending)
-6. Cholinergic Toxicology and Cholinesterase Regeneration
+6. Cholinergic Toxicology and Cholinesterase Regeneration (`built`, 100 question bank; Goodnotes reconciliation pending)
 
 #### Adrenergic, diuretic, and ocular pharmacology
 

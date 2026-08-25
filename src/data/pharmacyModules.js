@@ -11,6 +11,7 @@ import { cholinergicAgonistsInhibitorsModule } from "@/data/modules/cholinergicA
 import { antimuscarinicPharmacologyModule } from "@/data/modules/antimuscarinicPharmacology";
 import { cholinergicMedicinalChemistryModule } from "@/data/modules/cholinergicMedicinalChemistry";
 import { anticholinergicMedicinalChemistryModule } from "@/data/modules/anticholinergicMedicinalChemistry";
+import { cholinergicToxicologyModule } from "@/data/modules/cholinergicToxicology";
 
 const sources = {
   foundation: "Foundation",
@@ -418,6 +419,6 @@ export function getPharmacyModule(slug) {
   return [...pharmacyModules, ...legacyPharmacyModules].find((module) => module.slug === slug);
 }
 
-export const pharmacyModules = [nutritionScreeningAssessmentModule, fluidElectrolyteTherapyModule, acidBaseInterpretationModule, calciumPhosphorusHomeostasisModule, enteralNutritionModule, parenteralNutritionModule, parenteralNutritionCalculationsModule, pediatricParenteralNutritionModule, autonomicNervousSystemFoundationsModule, cholinergicAgonistsInhibitorsModule, antimuscarinicPharmacologyModule, cholinergicMedicinalChemistryModule, anticholinergicMedicinalChemistryModule];
+export const pharmacyModules = [nutritionScreeningAssessmentModule, fluidElectrolyteTherapyModule, acidBaseInterpretationModule, calciumPhosphorusHomeostasisModule, enteralNutritionModule, parenteralNutritionModule, parenteralNutritionCalculationsModule, pediatricParenteralNutritionModule, autonomicNervousSystemFoundationsModule, cholinergicAgonistsInhibitorsModule, antimuscarinicPharmacologyModule, cholinergicMedicinalChemistryModule, anticholinergicMedicinalChemistryModule, cholinergicToxicologyModule];
 
 export const pharmacySubmoduleCount = pharmacyModules.reduce((total, module) => total + module.submodules.length, 0);
