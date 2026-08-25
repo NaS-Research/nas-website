@@ -374,6 +374,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 359 static pages generated
 - Goodnotes note: the dedicated anticoagulation lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
+### Venous Thromboembolism
+
+- Course scope: Virchow triad, reversible and persistent risk, proximal and distal DVT, upper-extremity and catheter thrombosis, pretest probability, D-dimer, compression ultrasound, PE symptoms and differential, CT pulmonary angiography and ventilation-perfusion imaging, 2026 acute PE categories A through E, home and hospital disposition, prompt anticoagulation, LMWH and UFH selection, DOAC oral pathways, advanced PE therapy, PERT, IVC filters, treatment phases, extended therapy, cancer, pregnancy, post-thrombotic symptoms, and chronic thromboembolic disease surveillance
+- Cross reference completed: RxPrep NAPLEX 2023 VTE diagnosis, anticoagulant selection, duration, interaction, monitoring, special-population, and counseling scope
+- Current references reviewed: 2026 multisociety acute PE guideline and official top-things resource, ASH VTE treatment guidance, and 2021 CHEST VTE guidance
+- Learning structure: six lessons, six native risk, DVT diagnosis, PE category, initial-treatment, duration, and follow-up diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions spanning Virchow triad, provoking and persistent factors, proximal DVT, probability and D-dimer, ultrasound, distal and catheter DVT, PE symptoms, probability and imaging, acute PE categories, outpatient and inpatient care, prompt anticoagulation, LMWH preference, DOAC selection, advanced therapies, PERT, IVC filters, treatment phases, extended therapy, cancer, pregnancy, and post-PE CTEPD surveillance; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: provoking factors were classified by strength and persistence; positive D-dimer was not treated as diagnostic; distal DVT surveillance required active serial imaging; PE severity used the 2026 A through E categories rather than anatomy alone; category A and selected category B pathways included implementation screening; LMWH was preferred when parenteral acute PE therapy was required; DOACs were preferred for eligible oral treatment but product initiation rules remained distinct; advanced therapy was limited to severe categories; extended therapy followed persistent recurrence risk; PE symptoms were screened at every visit for at least one year
+- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 360 static pages generated
+- Goodnotes note: the dedicated VTE and PE lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -514,7 +526,7 @@ Target modules:
 2. Acute Coronary Syndromes (`built`, 100 question bank; Goodnotes reconciliation pending)
 3. Antiplatelet Pharmacology (`built`, 100 question bank; Goodnotes reconciliation pending)
 4. Coagulation and Anticoagulant Pharmacology (`built`, 100 question bank; Goodnotes reconciliation pending)
-5. Venous Thromboembolism
+5. Venous Thromboembolism (`built`, 100 question bank; Goodnotes reconciliation pending)
 6. Warfarin Management
 7. Direct Oral Anticoagulants
 8. Parenteral Anticoagulants
