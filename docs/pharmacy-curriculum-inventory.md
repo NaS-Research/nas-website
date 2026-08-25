@@ -350,6 +350,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 357 static pages generated
 - Goodnotes note: the dedicated ACS lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
+### Antiplatelet Pharmacology
+
+- Course scope: platelet adhesion, activation, secretion, and aggregation; aspirin and thromboxane; oral P2Y12 inhibitors; clopidogrel activation and CYP2C19 variability; prasugrel contraindications and bleeding selection; ticagrelor kinetics, aspirin pairing, dyspnea, and CYP3A interactions; cangrelor; GPIIb/IIIa inhibitors; renal dosing; thrombocytopenia; testing; switching; bleeding; procedures; and counseling
+- Cross reference completed: RxPrep NAPLEX 2023 antiplatelet mechanism, indication, interaction, adverse-effect, monitoring, and counseling scope
+- Current references reviewed: 2025 AHA and ACC acute coronary syndromes guideline and current DailyMed labeling for clopidogrel, prasugrel, ticagrelor, cangrelor, eptifibatide, and tirofiban
+- Learning structure: six lessons, six native platelet-pathway, aspirin, oral P2Y12, intravenous-agent, variability, and bleeding diagrams, and six embedded knowledge checks
+- Assessment: 104 original questions spanning vWF and GPIb, platelet agonists, GPIIb/IIIa, aspirin mechanism and formulation, GI safety, hypersensitivity, clopidogrel activation and interaction, prasugrel selection, ticagrelor kinetics and adverse effects, cangrelor transitions, intravenous GPIIb/IIIa use, renal adjustment, thrombocytopenia, selected testing, procedural interruption, major bleeding, and counseling; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: aspirin plasma exposure was separated from irreversible platelet effect; clopidogrel poor metabolism was tied to active-metabolite formation; prasugrel was excluded after stroke or TIA and age and weight bleeding factors were explicit; ticagrelor used current low-dose aspirin maintenance labeling; cangrelor transition timing differed by oral agent; GPIIb/IIIa use was selective and included renal and platelet surveillance; testing was limited to actionable decisions
+- Automated verification: 104 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 358 static pages generated
+- Goodnotes note: the dedicated antiplatelet lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -488,7 +500,7 @@ Target modules:
 
 1. Chronic Coronary Disease (`built`, 100 question bank; Goodnotes reconciliation pending)
 2. Acute Coronary Syndromes (`built`, 100 question bank; Goodnotes reconciliation pending)
-3. Antiplatelet Pharmacology
+3. Antiplatelet Pharmacology (`built`, 100 question bank; Goodnotes reconciliation pending)
 4. Coagulation and Anticoagulant Pharmacology
 5. Venous Thromboembolism
 6. Warfarin Management
