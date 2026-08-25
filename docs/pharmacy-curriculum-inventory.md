@@ -398,6 +398,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 361 static pages generated
 - Goodnotes note: the dedicated warfarin lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
+### Direct Oral Anticoagulants
+
+- Course scope: direct factor Xa and thrombin inhibition, rapid onset and offset, eligibility, indication-specific apixaban, rivaroxaban, edoxaban, and dabigatran regimens, treatment phases, kidney and hepatic criteria, age and weight criteria, food and dosage-form requirements, P-gp and CYP3A interactions, adherence, missed doses, absorption, laboratory limitations, transitions, procedures, neuraxial care, major bleeding, idarucizumab, factor Xa inhibitor reversal, and anticoagulation resumption
+- Cross reference completed: RxPrep NAPLEX 2023 DOAC mechanism, indication, dosing, interaction, adverse-effect, monitoring, reversal, and counseling scope
+- Current references reviewed: current DailyMed labeling for apixaban, rivaroxaban, edoxaban, dabigatran, idarucizumab, and andexanet alfa, plus the 2026 multisociety acute PE guideline
+- Learning structure: six lessons, six native target, oral factor Xa inhibitor, dabigatran, selection, procedure, and bleeding diagrams, and six embedded knowledge checks
+- Assessment: 104 original questions spanning targets, clinical eligibility, rapid onset, all four product regimens, treatment phases, renal and hepatic criteria, food, dosage-form handling, P-gp and CYP3A interactions, adherence, missed doses, transitions, procedures, laboratory interpretation, major bleeding, reversal, and resumption; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: DOAC doses remained product, indication, and phase specific; atrial fibrillation dose-reduction criteria were not imported into acute VTE treatment; edoxaban high-creatinine-clearance atrial fibrillation restriction and VTE lead-in were explicit; dabigatran renal, P-gp, storage, and capsule-handling risks were retained; normal routine coagulation tests were not used to exclude exposure; reversal was agent matched and paired with source control and a restart plan
+- Automated verification: 104 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 362 static pages generated
+- Goodnotes note: the dedicated DOAC lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -540,7 +552,7 @@ Target modules:
 4. Coagulation and Anticoagulant Pharmacology (`built`, 100 question bank; Goodnotes reconciliation pending)
 5. Venous Thromboembolism (`built`, 100 question bank; Goodnotes reconciliation pending)
 6. Warfarin Management (`built`, 100 question bank; Goodnotes reconciliation pending)
-7. Direct Oral Anticoagulants
+7. Direct Oral Anticoagulants (`built`, 104 question bank; Goodnotes reconciliation pending)
 8. Parenteral Anticoagulants
 
 #### Arrhythmias
