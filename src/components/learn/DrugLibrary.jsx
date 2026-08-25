@@ -136,11 +136,7 @@ export default function DrugLibrary() {
                   {drug.brand && <p>{drug.brand}</p>}
                   {drug.commonUses && <em>{drug.commonUses.slice(0, 2).join(" · ")}</em>}
                 </div>
-                {drug.brand ? (
-                  <Link href={`/learn/pharmacy/drugs/${drug.slug}`}>Study profile <span aria-hidden="true">↗</span></Link>
-                ) : (
-                  <a href={`https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=${encodeURIComponent(drug.generic)}`} target="_blank" rel="noreferrer">Official labels <span aria-hidden="true">↗</span></a>
-                )}
+                <Link href={`/learn/pharmacy/drugs/${drug.slug}`}>{drug.brand ? "Study profile" : "Open profile"} <span aria-hidden="true">↗</span></Link>
               </article>
             ))}
           </div>

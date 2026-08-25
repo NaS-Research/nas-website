@@ -4323,6 +4323,138 @@ body {
 .drug-profile-safety p { margin-top: 0.6rem; color: #707070; font-size: 0.7rem; line-height: 1.6; }
 .drug-profile-safety a { display: inline-flex; align-self: end; color: #d2b27f; font-size: 0.68rem; }
 
+.official-label-card {
+  grid-column: 1 / -1;
+  overflow: hidden;
+  border: 1px solid var(--nas-line);
+  border-radius: 1rem;
+  background: radial-gradient(circle at 94% 2%, rgba(199, 160, 105, 0.08), transparent 27%), #080808;
+}
+
+.official-label-card > header {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: end;
+  padding: clamp(1.4rem, 4vw, 2.5rem);
+  border-bottom: 1px solid var(--nas-line);
+}
+
+.official-label-card > header h2 {
+  max-width: 48rem;
+  margin-top: 0.8rem;
+  color: #e2e2e2;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 500;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+}
+
+.official-label-card > header > span {
+  flex: 0 0 auto;
+  color: #766650;
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.official-label-card__identity {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--nas-line);
+}
+
+.official-label-card__identity > div {
+  display: grid;
+  gap: 0.55rem;
+  padding: 1.2rem;
+  background: #080808;
+}
+
+.official-label-card__identity dt,
+.official-label-card__records > span {
+  color: #665a4d;
+  font-size: 0.56rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.official-label-card__identity dd {
+  color: #a7a39e;
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+
+.official-label-card__sections details {
+  border-bottom: 1px solid var(--nas-line);
+}
+
+.official-label-card__sections summary {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.2rem clamp(1.2rem, 4vw, 2.5rem);
+  cursor: pointer;
+  list-style: none;
+}
+
+.official-label-card__sections summary::-webkit-details-marker { display: none; }
+.official-label-card__sections summary span { color: #705f4c; font-size: 0.58rem; letter-spacing: 0.1em; }
+.official-label-card__sections summary strong { color: #bcb8b2; font-size: 0.75rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; }
+.official-label-card__sections summary i { color: #866f52; font-size: 1rem; font-style: normal; transition: transform 180ms ease; }
+.official-label-card__sections details[open] summary i { transform: rotate(45deg); }
+.official-label-card__sections details > p { max-width: 66rem; padding: 0 clamp(1.2rem, 4vw, 2.5rem) 2rem calc(clamp(1.2rem, 4vw, 2.5rem) + 4rem); color: #92908c; font-size: 0.78rem; line-height: 1.8; }
+
+.official-label-card__records {
+  display: grid;
+  padding: clamp(1.4rem, 4vw, 2.5rem);
+  background: #060606;
+}
+
+.official-label-card__records > span { margin-bottom: 0.8rem; }
+.official-label-card__records a { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 1rem; align-items: center; padding: 0.9rem 0; border-top: 1px solid #202020; }
+.official-label-card__records a strong { color: #9d9993; font-size: 0.68rem; font-weight: 500; line-height: 1.45; }
+.official-label-card__records a small { color: #605c56; font-size: 0.58rem; }
+.official-label-card__records a i { color: #927651; font-style: normal; }
+.official-label-card__note { padding: 1rem clamp(1.4rem, 4vw, 2.5rem); border-top: 1px solid var(--nas-line); color: #595652; font-size: 0.61rem; line-height: 1.6; }
+.official-label-card__unavailable { display: grid; gap: 0.45rem; min-height: 14rem; place-content: center; padding: 2rem; text-align: center; }
+.official-label-card__unavailable strong { color: #aaa49d; font-size: 0.78rem; font-weight: 500; }
+.official-label-card__unavailable p { color: #68645f; font-size: 0.68rem; }
+
+.official-label-card--loading {
+  display: grid;
+  min-height: 28rem;
+  place-content: center;
+  justify-items: center;
+  gap: 0.8rem;
+  color: #7d756b;
+  font-size: 0.7rem;
+}
+
+.official-label-card--loading > span {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #4b4033;
+  border-top-color: #d5b37d;
+  border-radius: 50%;
+  animation: atlas-loading 850ms linear infinite;
+}
+
+@media (max-width: 48rem) {
+  .official-label-card > header { display: grid; }
+  .official-label-card__identity { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 34rem) {
+  .official-label-card__identity { grid-template-columns: 1fr; }
+  .official-label-card__sections details > p { padding-left: 1.2rem; }
+  .official-label-card__records a { grid-template-columns: minmax(0, 1fr) auto; }
+  .official-label-card__records a small { grid-column: 1; grid-row: 2; }
+  .official-label-card__records a i { grid-column: 2; grid-row: 1 / span 2; }
+}
+
 .drug-study-card {
   grid-column: 1 / -1;
   overflow: hidden;

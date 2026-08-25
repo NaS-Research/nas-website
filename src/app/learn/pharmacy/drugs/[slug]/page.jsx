@@ -1,19 +1,22 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Footer from "@/components/Footer";
-import { featuredDrugs, getCoreDrug } from "@/data/drugLibrary";
+import OfficialLabelProfile from "@/components/learn/OfficialLabelProfile";
+import { coreDrugs, getCoreDrug } from "@/data/drugLibrary";
 
 export function generateStaticParams() {
-  return featuredDrugs.map((drug) => ({ slug: drug.slug }));
+  return coreDrugs.map((drug) => ({ slug: drug.slug }));
 }
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const drug = getCoreDrug(slug);
-  if (!drug?.brand) return {};
+  if (!drug) return {};
   return {
     title: `${drug.generic.replace(/\b\w/g, (letter) => letter.toUpperCase())} | NaS Drug Library`,
-    description: `Study ${drug.generic}, including common uses, mechanism, safety, monitoring, counseling, and current official medication references.`,
+    description: drug.brand
+      ? `Study ${drug.generic}, including common uses, mechanism, safety, monitoring, counseling, and current official medication references.`
+      : `Review ${drug.generic} through its ranked study context and current public medication label records.`,
     alternates: { canonical: `/learn/pharmacy/drugs/${drug.slug}` },
   };
 }
@@ -33,7 +36,8 @@ const studySections = [
 export default async function DrugProfilePage({ params }) {
   const { slug } = await params;
   const drug = getCoreDrug(slug);
-  if (!drug?.brand) notFound();
+  if (!drug) notFound();
+  const hasReviewedCard = Boolean(drug.brand);
   const isFluoxetine = drug.generic === "fluoxetine";
 
   return (
@@ -43,7 +47,7 @@ export default async function DrugProfilePage({ params }) {
           <Link href="/learn/pharmacy/drugs" className="learning-back">← Drug library</Link>
           <div className="drug-profile-hero__grid">
             <div><p className="nas-kicker">Medication profile</p><h1>{titleCase(drug.generic)}</h1></div>
-            <div><span>Common brand reference</span><strong>{drug.brand}</strong><p>{drug.className}</p></div>
+            <div>{hasReviewedCard ? <><span>Common brand reference</span><strong>{drug.brand}</strong><p>{drug.className}</p></> : <><span>Ranked medication collection</span><strong>#{drug.number} of 300</strong><p>Official label study profile</p></>}</div>
           </div>
         </header>
 
@@ -53,14 +57,14 @@ export default async function DrugProfilePage({ params }) {
             <h2 id="profile-overview">Place the medication before memorizing it.</h2>
             <dl>
               <div><dt>Generic name</dt><dd>{titleCase(drug.generic)}</dd></div>
-              <div><dt>Common brand reference</dt><dd>{drug.brand}</dd></div>
-              <div><dt>Pharmacologic class</dt><dd>{drug.className}</dd></div>
-              <div><dt>Learning system</dt><dd>{drug.system}</dd></div>
-              <div><dt>Dosage-form context</dt><dd>{drug.form}</dd></div>
+              <div><dt>Top 300 rank</dt><dd>{drug.number}</dd></div>
+              {hasReviewedCard && <><div><dt>Common brand reference</dt><dd>{drug.brand}</dd></div><div><dt>Pharmacologic class</dt><dd>{drug.className}</dd></div><div><dt>Learning system</dt><dd>{drug.system}</dd></div><div><dt>Dosage-form context</dt><dd>{drug.form}</dd></div></>}
             </dl>
           </section>
 
-          {isFluoxetine ? (
+          {!hasReviewedCard ? (
+            <OfficialLabelProfile generic={drug.generic} />
+          ) : isFluoxetine ? (
             <section className="drug-appearance" aria-labelledby="appearance-title">
               <div className="drug-appearance__heading"><div><p className="nas-section-label">Medication appearance</p><h2 id="appearance-title">Fluoxetine 20 mg capsule</h2></div><span>Example product · E 91</span></div>
               <div className="drug-appearance__stage">
@@ -83,7 +87,7 @@ export default async function DrugProfilePage({ params }) {
             </section>
           )}
 
-          <section className="drug-study-card" aria-labelledby="study-card-title">
+          {hasReviewedCard && <section className="drug-study-card" aria-labelledby="study-card-title">
             <header className="drug-study-card__header">
               <div>
                 <p className="nas-section-label">NaS study card</p>
@@ -116,7 +120,7 @@ export default async function DrugProfilePage({ params }) {
                 </section>
               ))}
             </div>
-          </section>
+          </section>}
 
           <aside className="drug-profile-safety">
             <div>
