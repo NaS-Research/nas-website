@@ -290,6 +290,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 352 static pages generated
 - Goodnotes note: the dedicated antihypertensive medicinal-chemistry lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
+### Dyslipidemia Pathophysiology and Risk
+
+- Course scope: lipoprotein architecture, intestinal and hepatic apoB transport, LDL receptor clearance, LDL-C, non-HDL-C, apoB, cumulative exposure, triglyceride-rich remnants, pancreatitis risk, familial chylomicronemia, lipoprotein(a), familial hypercholesterolemia, secondary causes, screening, measurement limits, PREVENT-ASCVD, risk enhancers, coronary artery calcium, secondary prevention, and special populations
+- Cross reference completed: RxPrep NAPLEX 2023 dyslipidemia, cardiovascular risk, triglyceride, inherited disease, laboratory, and monitoring scope
+- Current references reviewed: 2026 ACC and AHA dyslipidemia guideline, 2026 guideline patient and clinician resources, AHA lipoprotein(a) scientific statement, and AHA clinical Lp(a) toolkit
+- Learning structure: seven lessons, six native transport, particle-burden, remnant, phenotype, screening, and risk-reclassification diagrams, and seven embedded knowledge checks
+- Assessment: 100 original questions spanning particle structure, chylomicron and VLDL metabolism, LDL receptor clearance, LDL-C, non-HDL-C, apoB, discordance, cumulative exposure, remnants, severe triglycerides, familial chylomicronemia, Lp(a), familial hypercholesterolemia, secondary causes, adult and childhood screening, fasting status, calculated LDL limits, PREVENT, 2026 risk categories, enhancers, coronary calcium, secondary prevention, and special-population risk; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: the 2026 guideline replaced the 2018 framework; PREVENT replaced pooled cohort equations; new 3, 5, and 10 percent risk thresholds were used; LDL-C and non-HDL-C goals returned; universal adult screening begins at 19 and childhood screening at 9 to 11; Lp(a) is measured at least once in adulthood; apoB was positioned as a selected discordance tool; mass and molar Lp(a) units were not converted with a fixed factor
+- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 353 static pages generated
+- Goodnotes note: the dedicated dyslipidemia lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -404,7 +416,7 @@ Available documents:
 
 Target modules:
 
-1. Dyslipidemia Pathophysiology and Risk
+1. Dyslipidemia Pathophysiology and Risk (`built`, 100 question bank; Goodnotes reconciliation pending)
 2. Lipid-Lowering Pharmacology
 3. Dyslipidemia Therapeutics
 

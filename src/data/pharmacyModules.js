@@ -22,6 +22,7 @@ import { hypertensionFoundationsModule } from "@/data/modules/hypertensionFounda
 import { resistantSecondaryHypertensionModule } from "@/data/modules/resistantSecondaryHypertension";
 import { hypertensiveEmergenciesModule } from "@/data/modules/hypertensiveEmergencies";
 import { antihypertensiveMedicinalChemistryModule } from "@/data/modules/antihypertensiveMedicinalChemistry";
+import { dyslipidemiaRiskModule } from "@/data/modules/dyslipidemiaRisk";
 
 const sources = {
   foundation: "Foundation",
@@ -429,6 +430,6 @@ export function getPharmacyModule(slug) {
   return [...pharmacyModules, ...legacyPharmacyModules].find((module) => module.slug === slug);
 }
 
-export const pharmacyModules = [nutritionScreeningAssessmentModule, fluidElectrolyteTherapyModule, acidBaseInterpretationModule, calciumPhosphorusHomeostasisModule, enteralNutritionModule, parenteralNutritionModule, parenteralNutritionCalculationsModule, pediatricParenteralNutritionModule, autonomicNervousSystemFoundationsModule, cholinergicAgonistsInhibitorsModule, antimuscarinicPharmacologyModule, cholinergicMedicinalChemistryModule, anticholinergicMedicinalChemistryModule, cholinergicToxicologyModule, adrenergicAgonistsModule, adrenergicAntagonistsModule, adrenergicMedicinalChemistryModule, diureticPharmacologyModule, diureticMedicinalChemistryModule, glaucomaPharmacotherapyModule, hypertensionFoundationsModule, resistantSecondaryHypertensionModule, hypertensiveEmergenciesModule, antihypertensiveMedicinalChemistryModule];
+export const pharmacyModules = [nutritionScreeningAssessmentModule, fluidElectrolyteTherapyModule, acidBaseInterpretationModule, calciumPhosphorusHomeostasisModule, enteralNutritionModule, parenteralNutritionModule, parenteralNutritionCalculationsModule, pediatricParenteralNutritionModule, autonomicNervousSystemFoundationsModule, cholinergicAgonistsInhibitorsModule, antimuscarinicPharmacologyModule, cholinergicMedicinalChemistryModule, anticholinergicMedicinalChemistryModule, cholinergicToxicologyModule, adrenergicAgonistsModule, adrenergicAntagonistsModule, adrenergicMedicinalChemistryModule, diureticPharmacologyModule, diureticMedicinalChemistryModule, glaucomaPharmacotherapyModule, hypertensionFoundationsModule, resistantSecondaryHypertensionModule, hypertensiveEmergenciesModule, antihypertensiveMedicinalChemistryModule, dyslipidemiaRiskModule];
 
 export const pharmacySubmoduleCount = pharmacyModules.reduce((total, module) => total + module.submodules.length, 0);
