@@ -615,6 +615,17 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 380 static pages generated
 - Goodnotes note: the allergic-rhinitis lecture and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
+### Asthma
+
+- Course scope: variable respiratory symptoms, objective variable expiratory airflow, spirometry and bronchodilator testing, peak-flow variability, bronchial challenge, differential diagnosis, Type 2 and non-Type 2 treatable traits, current symptom control, future exacerbation and mortality risk, prior severe events, SABA exposure, inhaler implementation, step-up and step-down trials, beta2 agonist pharmacology, rapid-onset formoterol, inhaled corticosteroid mechanisms and safety, LABA safety, LAMA and leukotriene boundaries, device selection, GINA Track 1 AIR-only and MART, Track 2 ICS-containing alternatives, albuterol-budesonide rescue labeling, guideline and US-label distinction, pediatric pathways, pregnancy, exercise, difficult-to-treat and severe asthma, biologic phenotype selection, acute severity assessment, bronchodilator and corticosteroid treatment, anaphylaxis, discharge, written action plans, and early follow-up
+- Current references reviewed: GINA 2026 Strategy Report, GINA 2026 Summary Guide, GINA 2026 severe-asthma resources, current FDA Airsupra prescribing information, FDA current product labeling, and DailyMed
+- Learning structure: six lessons, six native diagnosis, risk, airway-pharmacology, controller-strategy, severe-asthma, and acute-care diagrams, and six embedded knowledge checks
+- Assessment: 104 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: asthma required both variable symptoms and objective variable expiratory airflow; normal testing on a good day did not exclude variable disease; urgent treatment preceded elective confirmation; biomarkers guided phenotype rather than replacing diagnosis; symptom control remained separate from future severe-event risk; every attack triggered a system review; adherence, access and observed technique preceded step-up; step-down preserved adult and adolescent ICS exposure; bronchodilation remained distinct from inflammation control; LABA never stood alone; only rapid-onset formoterol supported selected AIR and MART pathways; GINA Track 1 AIR-only was separated from MART; Track 2 retained ICS exposure and included a 2026 ICS-SABA Step 1 alternative; adult albuterol-budesonide remained rescue rather than maintenance treatment; international strategy and US product labeling remained explicit separate layers; severe asthma required documented optimization before phenotype-targeted biologic selection; anaphylaxis required intramuscular epinephrine first; discharge treatment closed the prevention loop
+- Automated verification: 104 unique question IDs, four unique choices per question, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 381 static pages generated
+- Goodnotes note: the asthma lecture and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -838,7 +849,7 @@ Available documents include allergic rhinitis, asthma, COPD, pulmonary arterial 
 Target modules:
 
 1. Allergic Rhinitis (`built`, 100 question bank; Goodnotes reconciliation pending)
-2. Asthma
+2. Asthma (`built`, 104 question bank; Goodnotes reconciliation pending)
 3. Chronic Obstructive Pulmonary Disease
 4. Pulmonary Arterial Hypertension
 5. Cystic Fibrosis

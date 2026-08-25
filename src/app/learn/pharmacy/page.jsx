@@ -14,6 +14,20 @@ export const metadata = {
 };
 
 export default function PharmacyLearningPage() {
+  const curriculumCollections = pharmacyModules.map((module) => ({
+    slug: module.slug,
+    title: module.title,
+    description: module.description,
+    topics: module.topics,
+    lessonCount: module.submodules.length,
+    lessonCollectionSlug: module.lessonCollectionSlug,
+  }));
+  const curriculumLessons = pharmacyLessons.map((lesson) => ({
+    slug: lesson.slug,
+    shortTitle: lesson.shortTitle,
+    collectionSlug: lesson.collectionSlug,
+  }));
+
   return (
     <div className="nas-page pharmacy-index-page">
       <header className="pharmacy-index-hero">
@@ -39,7 +53,7 @@ export default function PharmacyLearningPage() {
 
         <div className="nas-shell">
           <PharmacyPlatformHome />
-          <PharmacyCurriculum collections={pharmacyModules} lessons={pharmacyLessons} />
+          <PharmacyCurriculum collections={curriculumCollections} lessons={curriculumLessons} />
           <LearningLibrary lessons={pharmacyLessons} />
         </div>
 
