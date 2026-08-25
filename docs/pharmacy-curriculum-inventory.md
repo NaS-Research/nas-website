@@ -45,6 +45,17 @@ This inventory records the source material available in the founder's Goodnotes 
 - Browser verification: desktop and 390 pixel mobile viewport, no horizontal overflow, ten remediation links after submission, different question set on repeat attempt, and no console warnings or errors
 - Build verification: Next.js production build passed August 25, 2026
 
+### Calcium and Phosphorus Homeostasis
+
+- DAST sources: Calcium & Phosphorus, 48 pages, and Chapter 71: Calcium and Phosphorus Homeostasis, 36 pages, exported and text verified
+- Cross reference completed: RxPrep NAPLEX 2023 acute care, renal, osteoporosis, and oncology mineral-disorder coverage
+- Current references reviewed: KDIGO CKD mineral and bone disorder guideline, Endocrine Society hypercalcemia of malignancy guideline, Society for Endocrinology emergency guidance, and current FDA labeling for calcium gluconate, zoledronic acid, denosumab, palopegteriparatide, and ferric carboxymaltose
+- Learning structure: six lessons, six native clinical diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions with unique identifiers and nonduplicated answer choices, ten sampled without replacement per attempt, answer order randomized
+- Browser verification completed: desktop and 390 pixel mobile rendering, six visuals, ten questions per attempt, and a different question set on repeat attempt
+- Build verification: Next.js production build passed August 25, 2026
+- Source reconciliation: legacy fixed dosing and monitoring language was reframed as local protocol content; current chronic hypoparathyroidism therapy, hypercalciuria prevention, ferric carboxymaltose risk, acute phosphate toxicity, and long-term aluminum avoidance were added
+
 ## Goodnotes availability
 
 ### Books
@@ -82,7 +93,7 @@ Target modules:
 1. Nutrition Screening, Assessment, and Malnutrition (`built`, 100 question bank)
 2. Fluid and Electrolyte Therapy (`built`, 100 question bank)
 3. Acid-Base Interpretation (`built`, 100 question bank)
-4. Calcium and Phosphorus Homeostasis
+4. Calcium and Phosphorus Homeostasis (`built`, 100 question bank)
 5. Enteral Nutrition
 6. Parenteral Nutrition
 7. Parenteral Nutrition Calculations

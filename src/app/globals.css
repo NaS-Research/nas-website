@@ -6955,6 +6955,194 @@ body {
   font-style: normal;
 }
 
+.mineral-visual {
+  margin-top: clamp(2.5rem, 6vw, 4.5rem);
+  padding-block: clamp(1.5rem, 4vw, 2.5rem);
+  border-block: 1px solid var(--nas-line);
+}
+
+.mineral-visual figcaption {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.mineral-visual figcaption span,
+.mineral-visual__regulation span,
+.mineral-visual__sequence span,
+.mineral-visual__response span,
+.mineral-visual__balance span {
+  color: #806b54;
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.mineral-visual figcaption strong {
+  color: #e7e3dc;
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  font-weight: 480;
+}
+
+.mineral-visual__regulation {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: stretch;
+  gap: 1px;
+  background: #29241e;
+}
+
+.mineral-visual__regulation > div {
+  display: grid;
+  gap: 0.6rem;
+  min-height: 9rem;
+  padding: 1.25rem;
+  background: #090806;
+}
+
+.mineral-visual__regulation i {
+  display: grid;
+  place-items: center;
+  min-width: 2.5rem;
+  color: #6d4c2f;
+  background: #090806;
+  font-style: normal;
+}
+
+.mineral-visual__regulation strong,
+.mineral-visual__response strong,
+.mineral-visual__balance strong {
+  color: #d9d5ce;
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.mineral-visual__regulation small,
+.mineral-visual__response small,
+.mineral-visual__fraction small {
+  color: #74706b;
+  font-size: 0.68rem;
+  line-height: 1.5;
+}
+
+.mineral-visual__fractions {
+  display: grid;
+  grid-template-columns: 5fr 4fr 1fr;
+  gap: 1px;
+  background: #29241e;
+}
+
+.mineral-visual__fraction {
+  display: grid;
+  align-content: end;
+  gap: 0.45rem;
+  min-height: 11rem;
+  padding: 1.25rem;
+  background: #090806;
+}
+
+.mineral-visual__fraction--active {
+  background: linear-gradient(145deg, #21170d, #090806 72%);
+}
+
+.mineral-visual__fraction strong {
+  color: #e3bd86;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  font-weight: 470;
+}
+
+.mineral-visual__fraction span {
+  color: #d8d4ce;
+  font-size: 0.78rem;
+}
+
+.mineral-visual__fractions > p,
+.mineral-visual__balance > p {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 1.1rem 1.25rem;
+  color: #85817a;
+  background: #090806;
+  font-size: 0.72rem;
+  line-height: 1.6;
+}
+
+.mineral-visual__sequence,
+.mineral-visual__response {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
+  background: #29241e;
+}
+
+.mineral-visual__response {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.mineral-visual__sequence > div,
+.mineral-visual__response > div {
+  display: grid;
+  align-content: start;
+  gap: 0.7rem;
+  min-height: 8rem;
+  padding: 1.25rem;
+  background: #090806;
+}
+
+.mineral-visual__sequence strong {
+  color: #d9d5ce;
+  font-size: 0.78rem;
+  font-weight: 480;
+  line-height: 1.5;
+}
+
+.mineral-visual__balance {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: #29241e;
+}
+
+.mineral-visual__balance > div {
+  display: grid;
+  gap: 0.8rem;
+  min-height: 8rem;
+  padding: 1.25rem;
+  background: #090806;
+}
+
+.mineral-visual__ckd {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: #29241e;
+}
+
+.mineral-visual__ckd > div {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  align-items: center;
+  gap: 1rem;
+  min-height: 5.5rem;
+  padding: 1.1rem;
+  background: #090806;
+}
+
+.mineral-visual__ckd strong {
+  color: #e3bd86;
+  font-size: 1.05rem;
+  font-weight: 520;
+}
+
+.mineral-visual__ckd span {
+  color: #8b8780;
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+
 @media (max-width: 760px) {
   .fluid-visual figcaption {
     display: grid;
@@ -7011,6 +7199,36 @@ body {
 
   .acid-visual__gap i {
     display: none;
+  }
+
+  .mineral-visual figcaption {
+    display: grid;
+  }
+
+  .mineral-visual__regulation,
+  .mineral-visual__fractions,
+  .mineral-visual__sequence,
+  .mineral-visual__response,
+  .mineral-visual__balance,
+  .mineral-visual__ckd {
+    grid-template-columns: 1fr;
+  }
+
+  .mineral-visual__regulation i {
+    display: none;
+  }
+
+  .mineral-visual__regulation > div,
+  .mineral-visual__fraction,
+  .mineral-visual__sequence > div,
+  .mineral-visual__response > div,
+  .mineral-visual__balance > div {
+    min-height: 0;
+  }
+
+  .mineral-visual__fractions > p,
+  .mineral-visual__balance > p {
+    grid-column: auto;
   }
 }
 
