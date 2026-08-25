@@ -135,6 +135,17 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 339 static pages generated
 - Goodnotes note: the cholinoceptor-blocker lecture export remains pending because the Mac was locked during this milestone; its eventual review will be recorded as a source-reconciliation pass without blocking work on other accessible modules
 
+### Cholinergic Medicinal Chemistry
+
+- Course source: exported 42-page cholinoceptor-activating and cholinesterase-inhibiting lecture, including choline-ester comparison, hydrolysis, direct agonist, enzyme-inhibitor, and medicinal-chemistry terminology sections
+- Cross reference completed: RxPrep NAPLEX 2023 cholinergic pharmacology and product-use scope
+- Current references reviewed: NIH PubChem chemical records for acetylcholine, methacholine, carbachol, bethanechol, neostigmine, pyridostigmine, and physostigmine, plus IUPHAR and BPS receptor nomenclature
+- Learning structure: six lessons, six native structure and mechanism diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions spanning ionization, cationic recognition, spacing, stereochemistry, choline-ester substitution, direct-agonist scaffolds, local delivery, enzyme binding, carbamylation, phosphorylation, aging, central access, and structure-to-clinic reasoning; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: simplified lecture tables were reframed as relative structure-activity relationships rather than absolute activity scores; the historical anionic-site model was updated to an aromatic active-site gorge; organophosphate aging and oxime response were made agent and time dependent; in vitro potency was explicitly separated from clinical effect
+- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 340 static pages generated
+
 ## Goodnotes availability
 
 ### Books
@@ -193,7 +204,7 @@ Target modules:
 1. Autonomic Nervous System Foundations (`built`, 100 question bank)
 2. Cholinergic Agonists and Cholinesterase Inhibitors (`built`, 100 question bank)
 3. Antimuscarinic Pharmacology (`built`, 100 question bank; Goodnotes reconciliation pending)
-4. Cholinergic Medicinal Chemistry
+4. Cholinergic Medicinal Chemistry (`built`, 100 question bank)
 5. Anticholinergic Medicinal Chemistry
 6. Cholinergic Toxicology and Cholinesterase Regeneration
 

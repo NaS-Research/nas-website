@@ -12,6 +12,7 @@ import PediatricParenteralNutritionVisual from "@/components/learn/PediatricPare
 import AutonomicNervousSystemVisual from "@/components/learn/AutonomicNervousSystemVisual";
 import CholinergicAgonistsVisual from "@/components/learn/CholinergicAgonistsVisual";
 import AntimuscarinicVisual from "@/components/learn/AntimuscarinicVisual";
+import CholinergicMedicinalChemistryVisual from "@/components/learn/CholinergicMedicinalChemistryVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -23,6 +24,7 @@ const pediatricParenteralVisualTypes = ["peds-pn-decision", "peds-pn-glucose", "
 const autonomicVisualTypes = ["ans-architecture", "ans-transmitter-map", "ans-receptor-signaling", "ans-cholinergic-cycle", "ans-adrenergic-cycle", "ans-reflex-integration"];
 const cholinergicVisualTypes = ["chol-classification", "chol-direct-agonists", "chol-clinical-selection", "chol-peripheral-inhibitors", "chol-central-inhibitors", "chol-safety"];
 const antimuscarinicVisualTypes = ["antimuscarinic-mechanism", "antimuscarinic-burden", "antimuscarinic-bladder", "antimuscarinic-airway", "antimuscarinic-applications", "antimuscarinic-safety"];
+const cholinergicMedicinalChemistryVisualTypes = ["medchem-choline-pharmacophore", "medchem-choline-esters", "medchem-direct-agonists", "medchem-ache-binding", "medchem-ache-access", "medchem-design-integration"];
 
 export function generateStaticParams() {
   return pharmacyModules.map((module) => ({ slug: module.slug }));
@@ -89,7 +91,7 @@ export default async function PharmacyModulePage({ params }) {
                 <span>What to learn</span>
                 <ul>{submodule.concepts.map((concept) => <li key={concept}>{concept}</li>)}</ul>
               </div>
-              {submodule.visual && !submodule.visual.startsWith("acid-") && !calciumVisualTypes.includes(submodule.visual) && !enteralVisualTypes.includes(submodule.visual) && !parenteralVisualTypes.includes(submodule.visual) && !parenteralCalculationVisualTypes.includes(submodule.visual) && !pediatricParenteralVisualTypes.includes(submodule.visual) && !autonomicVisualTypes.includes(submodule.visual) && !cholinergicVisualTypes.includes(submodule.visual) && !antimuscarinicVisualTypes.includes(submodule.visual) && <FluidElectrolyteVisual type={submodule.visual} />}
+              {submodule.visual && !submodule.visual.startsWith("acid-") && !calciumVisualTypes.includes(submodule.visual) && !enteralVisualTypes.includes(submodule.visual) && !parenteralVisualTypes.includes(submodule.visual) && !parenteralCalculationVisualTypes.includes(submodule.visual) && !pediatricParenteralVisualTypes.includes(submodule.visual) && !autonomicVisualTypes.includes(submodule.visual) && !cholinergicVisualTypes.includes(submodule.visual) && !antimuscarinicVisualTypes.includes(submodule.visual) && !cholinergicMedicinalChemistryVisualTypes.includes(submodule.visual) && <FluidElectrolyteVisual type={submodule.visual} />}
               {submodule.visual?.startsWith("acid-") && <AcidBaseVisual type={submodule.visual} />}
               {calciumVisualTypes.includes(submodule.visual) && <CalciumPhosphorusVisual type={submodule.visual} />}
               {enteralVisualTypes.includes(submodule.visual) && <EnteralNutritionVisual type={submodule.visual} />}
@@ -99,6 +101,7 @@ export default async function PharmacyModulePage({ params }) {
               {autonomicVisualTypes.includes(submodule.visual) && <AutonomicNervousSystemVisual type={submodule.visual} />}
               {cholinergicVisualTypes.includes(submodule.visual) && <CholinergicAgonistsVisual type={submodule.visual} />}
               {antimuscarinicVisualTypes.includes(submodule.visual) && <AntimuscarinicVisual type={submodule.visual} />}
+              {cholinergicMedicinalChemistryVisualTypes.includes(submodule.visual) && <CholinergicMedicinalChemistryVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
