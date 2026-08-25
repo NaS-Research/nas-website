@@ -170,6 +170,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 342 static pages generated
 - Goodnotes note: the dedicated cholinoceptor-blocker and cholinesterase-regenerator lecture export remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
+### Adrenergic Agonists
+
+- Course scope: adrenoceptor signaling, direct and indirect sympathomimetics, vasopressors and inotropes, inhaled beta-2 agonists, peripheral and central alpha agonists, and integrated safety
+- Cross reference completed: RxPrep NAPLEX 2023 emergency, pulmonary, cardiovascular, orthostatic, attention, sedation, interaction, and monitoring scope
+- Current references reviewed: current DailyMed epinephrine, norepinephrine, albuterol, midodrine, clonidine, and related product labeling, plus IUPHAR and BPS alpha and beta adrenoceptor nomenclature
+- Learning structure: six lessons, six native receptor, hemodynamic, airway, alpha-agonist, and safety diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions spanning receptor coupling, direct and reflex response, catecholamine spectra, indirect release, anaphylaxis, shock, inotropy, extravasation, beta-2 device use, potassium and lactate, central alpha-2 withdrawal, and interaction burden; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: rigid dopamine dose zones were rejected; pressure was separated from perfusion; beta-2 rescue was separated from anti-inflammatory disease control; heart-rate and blood-pressure changes were interpreted through direct and reflex physiology; receptor preference was not treated as absolute selectivity
+- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 343 static pages generated
+- Goodnotes note: the dedicated adrenoceptor-activating lecture export remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -245,7 +257,7 @@ Available documents:
 
 Target modules:
 
-1. Adrenergic Agonists
+1. Adrenergic Agonists (`built`, 100 question bank; Goodnotes reconciliation pending)
 2. Adrenergic Antagonists
 3. Adrenergic Medicinal Chemistry
 4. Diuretic Pharmacology

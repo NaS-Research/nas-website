@@ -15,6 +15,7 @@ import AntimuscarinicVisual from "@/components/learn/AntimuscarinicVisual";
 import CholinergicMedicinalChemistryVisual from "@/components/learn/CholinergicMedicinalChemistryVisual";
 import AnticholinergicMedicinalChemistryVisual from "@/components/learn/AnticholinergicMedicinalChemistryVisual";
 import CholinergicToxicologyVisual from "@/components/learn/CholinergicToxicologyVisual";
+import AdrenergicAgonistsVisual from "@/components/learn/AdrenergicAgonistsVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -29,6 +30,7 @@ const antimuscarinicVisualTypes = ["antimuscarinic-mechanism", "antimuscarinic-b
 const cholinergicMedicinalChemistryVisualTypes = ["medchem-choline-pharmacophore", "medchem-choline-esters", "medchem-direct-agonists", "medchem-ache-binding", "medchem-ache-access", "medchem-design-integration"];
 const anticholinergicMedicinalChemistryVisualTypes = ["antichol-medchem-pharmacophore", "antichol-medchem-tropanes", "antichol-medchem-access", "antichol-medchem-duration", "antichol-medchem-bladder", "antichol-medchem-integration"];
 const cholinergicToxicologyVisualTypes = ["tox-exposure-pathway", "tox-syndrome-domains", "tox-decontamination", "tox-atropine", "tox-oxime", "tox-postacute"];
+const adrenergicAgonistVisualTypes = ["adr-receptor-map", "adr-transmitter-actions", "adr-vasopressors", "adr-beta2", "adr-alpha-applications", "adr-safety"];
 
 export function generateStaticParams() {
   return pharmacyModules.map((module) => ({ slug: module.slug }));
@@ -95,7 +97,7 @@ export default async function PharmacyModulePage({ params }) {
                 <span>What to learn</span>
                 <ul>{submodule.concepts.map((concept) => <li key={concept}>{concept}</li>)}</ul>
               </div>
-              {submodule.visual && !submodule.visual.startsWith("acid-") && !calciumVisualTypes.includes(submodule.visual) && !enteralVisualTypes.includes(submodule.visual) && !parenteralVisualTypes.includes(submodule.visual) && !parenteralCalculationVisualTypes.includes(submodule.visual) && !pediatricParenteralVisualTypes.includes(submodule.visual) && !autonomicVisualTypes.includes(submodule.visual) && !cholinergicVisualTypes.includes(submodule.visual) && !antimuscarinicVisualTypes.includes(submodule.visual) && !cholinergicMedicinalChemistryVisualTypes.includes(submodule.visual) && !anticholinergicMedicinalChemistryVisualTypes.includes(submodule.visual) && !cholinergicToxicologyVisualTypes.includes(submodule.visual) && <FluidElectrolyteVisual type={submodule.visual} />}
+              {submodule.visual && !submodule.visual.startsWith("acid-") && !calciumVisualTypes.includes(submodule.visual) && !enteralVisualTypes.includes(submodule.visual) && !parenteralVisualTypes.includes(submodule.visual) && !parenteralCalculationVisualTypes.includes(submodule.visual) && !pediatricParenteralVisualTypes.includes(submodule.visual) && !autonomicVisualTypes.includes(submodule.visual) && !cholinergicVisualTypes.includes(submodule.visual) && !antimuscarinicVisualTypes.includes(submodule.visual) && !cholinergicMedicinalChemistryVisualTypes.includes(submodule.visual) && !anticholinergicMedicinalChemistryVisualTypes.includes(submodule.visual) && !cholinergicToxicologyVisualTypes.includes(submodule.visual) && !adrenergicAgonistVisualTypes.includes(submodule.visual) && <FluidElectrolyteVisual type={submodule.visual} />}
               {submodule.visual?.startsWith("acid-") && <AcidBaseVisual type={submodule.visual} />}
               {calciumVisualTypes.includes(submodule.visual) && <CalciumPhosphorusVisual type={submodule.visual} />}
               {enteralVisualTypes.includes(submodule.visual) && <EnteralNutritionVisual type={submodule.visual} />}
@@ -108,6 +110,7 @@ export default async function PharmacyModulePage({ params }) {
               {cholinergicMedicinalChemistryVisualTypes.includes(submodule.visual) && <CholinergicMedicinalChemistryVisual type={submodule.visual} />}
               {anticholinergicMedicinalChemistryVisualTypes.includes(submodule.visual) && <AnticholinergicMedicinalChemistryVisual type={submodule.visual} />}
               {cholinergicToxicologyVisualTypes.includes(submodule.visual) && <CholinergicToxicologyVisual type={submodule.visual} />}
+              {adrenergicAgonistVisualTypes.includes(submodule.visual) && <AdrenergicAgonistsVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
