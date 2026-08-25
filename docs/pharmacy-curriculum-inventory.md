@@ -67,6 +67,17 @@ This inventory records the source material available in the founder's Goodnotes 
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, six diagrams, ten questions per attempt, a different question set on repeat attempt, scoring feedback, remediation links, and no console errors
 - Build verification: Next.js production build passed August 25, 2026
 
+### Parenteral Nutrition
+
+- DAST source: Parenteral Nutrition, 91 pages, exported and text verified
+- Cross reference completed: RxPrep NAPLEX 2023 nutrition support, sterile-product, compatibility, and monitoring scope
+- Current references reviewed: ASPEN PN appropriateness and care pathway, ASPEN adult lipid safety and filtration recommendations, current FDA SMOFlipid labeling, current USP chapter 797, CDC catheter-infection prevention guidance, and ASPEN refeeding consensus recommendations
+- Learning structure: six lessons, six native clinical diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions with indication, access, macronutrient, GIR, lipid, micronutrient, compatibility, monitoring, and transition cases, ten sampled without replacement per attempt, answer order randomized
+- Source reconciliation: the legacy 0.22 micron filter convention was replaced with the current 1.2 micron ASPEN recommendation for all PN; obsolete USP risk levels and fixed beyond-use dates were removed; fixed electrolyte, peripheral-osmolarity, taper, liver-protein, trace-element, and shortage rules were reframed as patient-specific or protocol-dependent decisions
+- Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, six diagrams, ten questions per attempt, different questions and answer order on repeat attempt, complete scoring with remediation links, and no current browser errors or warnings
+- Build verification: Next.js production build passed August 25, 2026
+
 ## Goodnotes availability
 
 ### Books
@@ -106,7 +117,7 @@ Target modules:
 3. Acid-Base Interpretation (`built`, 100 question bank)
 4. Calcium and Phosphorus Homeostasis (`built`, 100 question bank)
 5. Enteral Nutrition (`built`, 100 question bank)
-6. Parenteral Nutrition
+6. Parenteral Nutrition (`built`, 100 question bank)
 7. Parenteral Nutrition Calculations
 8. Pediatric Parenteral Nutrition
 
