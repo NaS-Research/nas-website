@@ -254,6 +254,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 349 static pages generated
 - Goodnotes note: the dedicated hypertension lecture export remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
+### Resistant and Secondary Hypertension
+
+- Course scope: apparent and true resistant hypertension, controlled resistance, standardized and out-of-office confirmation, treatment exposure, interfering medicines and substances, sodium and volume, secondary-cause screening architecture, primary aldosteronism, renal parenchymal and renovascular disease, obstructive sleep apnea, endocrine and structural causes, stepwise therapy, specialist care, and renal denervation
+- Cross reference completed: RxPrep NAPLEX 2023 hypertension, renal, endocrine, sleep, interaction, monitoring, and patient-counseling scope
+- Current references reviewed: 2025 AHA and ACC adult high blood pressure guideline, 2025 Endocrine Society primary aldosteronism guideline, AHA resistant hypertension scientific statement, current FDA Tryvio labeling, and FDA renal denervation device information
+- Learning structure: six lessons, six native phenotype, pseudoresistance, screening, aldosterone, cause-directed, and stepwise-treatment diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions spanning apparent and true resistance, controlled resistance, white-coat effect, measurement error, medication exposure, regimen quality, pressure-raising agents, sodium and volume, aldosterone-renin screening, potassium, subtype evaluation, mineralocorticoid antagonists, kidney disease, renovascular clues, sleep apnea, catecholamine and cortisol testing, thyroid disease, coarctation, diuretic optimization, spironolactone, aprocitentan, renal denervation, and specialist referral; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: resistant hypertension was defined only after excluding pseudoresistance and verifying out-of-office pressure; controlled pressure on at least four agents remained a resistant phenotype; the 2025 broad conditional primary aldosteronism screening recommendation replaced a hypokalemia-only trigger; imaging alone was rejected for aldosterone laterality; newer aprocitentan and renal denervation pathways were placed after foundational optimization and multidisciplinary review
+- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 350 static pages generated
+- Goodnotes note: the dedicated hypertension lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -351,7 +363,7 @@ Available documents:
 Target modules:
 
 1. Hypertension Foundations and Chronic Therapy (`built`, 100 question bank; Goodnotes reconciliation pending)
-2. Resistant and Secondary Hypertension
+2. Resistant and Secondary Hypertension (`built`, 100 question bank; Goodnotes reconciliation pending)
 3. Hypertensive Emergencies
 4. Antihypertensive Medicinal Chemistry
 

@@ -22,6 +22,7 @@ import DiureticPharmacologyVisual from "@/components/learn/DiureticPharmacologyV
 import DiureticMedicinalChemistryVisual from "@/components/learn/DiureticMedicinalChemistryVisual";
 import GlaucomaPharmacotherapyVisual from "@/components/learn/GlaucomaPharmacotherapyVisual";
 import HypertensionFoundationsVisual from "@/components/learn/HypertensionFoundationsVisual";
+import ResistantSecondaryHypertensionVisual from "@/components/learn/ResistantSecondaryHypertensionVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -43,6 +44,7 @@ const diureticPharmacologyVisualTypes = ["diuretic-nephron-map", "diuretic-loop"
 const diureticMedicinalChemistryVisualTypes = ["diuretic-medchem-ca", "diuretic-medchem-loop", "diuretic-medchem-thiazide", "diuretic-medchem-mra", "diuretic-medchem-enac", "diuretic-medchem-integration"];
 const glaucomaPharmacotherapyVisualTypes = ["glaucoma-flow-map", "glaucoma-prostaglandins", "glaucoma-production", "glaucoma-outflow", "glaucoma-selection", "glaucoma-technique"];
 const hypertensionFoundationsVisualTypes = ["htn-measurement", "htn-risk-goal", "htn-lifestyle", "htn-first-line", "htn-combination", "htn-monitoring"];
+const resistantSecondaryHypertensionVisualTypes = ["resistant-confirmation", "resistant-contributors", "secondary-screening", "primary-aldosteronism", "secondary-causes", "resistant-treatment"];
 
 export function generateStaticParams() {
   return pharmacyModules.map((module) => ({ slug: module.slug }));
@@ -109,7 +111,7 @@ export default async function PharmacyModulePage({ params }) {
                 <span>What to learn</span>
                 <ul>{submodule.concepts.map((concept) => <li key={concept}>{concept}</li>)}</ul>
               </div>
-              {submodule.visual && !submodule.visual.startsWith("acid-") && !calciumVisualTypes.includes(submodule.visual) && !enteralVisualTypes.includes(submodule.visual) && !parenteralVisualTypes.includes(submodule.visual) && !parenteralCalculationVisualTypes.includes(submodule.visual) && !pediatricParenteralVisualTypes.includes(submodule.visual) && !autonomicVisualTypes.includes(submodule.visual) && !cholinergicVisualTypes.includes(submodule.visual) && !antimuscarinicVisualTypes.includes(submodule.visual) && !cholinergicMedicinalChemistryVisualTypes.includes(submodule.visual) && !anticholinergicMedicinalChemistryVisualTypes.includes(submodule.visual) && !cholinergicToxicologyVisualTypes.includes(submodule.visual) && !adrenergicAgonistVisualTypes.includes(submodule.visual) && !adrenergicAntagonistVisualTypes.includes(submodule.visual) && !adrenergicMedicinalChemistryVisualTypes.includes(submodule.visual) && !diureticPharmacologyVisualTypes.includes(submodule.visual) && !diureticMedicinalChemistryVisualTypes.includes(submodule.visual) && !glaucomaPharmacotherapyVisualTypes.includes(submodule.visual) && !hypertensionFoundationsVisualTypes.includes(submodule.visual) && <FluidElectrolyteVisual type={submodule.visual} />}
+              {submodule.visual && !submodule.visual.startsWith("acid-") && !calciumVisualTypes.includes(submodule.visual) && !enteralVisualTypes.includes(submodule.visual) && !parenteralVisualTypes.includes(submodule.visual) && !parenteralCalculationVisualTypes.includes(submodule.visual) && !pediatricParenteralVisualTypes.includes(submodule.visual) && !autonomicVisualTypes.includes(submodule.visual) && !cholinergicVisualTypes.includes(submodule.visual) && !antimuscarinicVisualTypes.includes(submodule.visual) && !cholinergicMedicinalChemistryVisualTypes.includes(submodule.visual) && !anticholinergicMedicinalChemistryVisualTypes.includes(submodule.visual) && !cholinergicToxicologyVisualTypes.includes(submodule.visual) && !adrenergicAgonistVisualTypes.includes(submodule.visual) && !adrenergicAntagonistVisualTypes.includes(submodule.visual) && !adrenergicMedicinalChemistryVisualTypes.includes(submodule.visual) && !diureticPharmacologyVisualTypes.includes(submodule.visual) && !diureticMedicinalChemistryVisualTypes.includes(submodule.visual) && !glaucomaPharmacotherapyVisualTypes.includes(submodule.visual) && !hypertensionFoundationsVisualTypes.includes(submodule.visual) && !resistantSecondaryHypertensionVisualTypes.includes(submodule.visual) && <FluidElectrolyteVisual type={submodule.visual} />}
               {submodule.visual?.startsWith("acid-") && <AcidBaseVisual type={submodule.visual} />}
               {calciumVisualTypes.includes(submodule.visual) && <CalciumPhosphorusVisual type={submodule.visual} />}
               {enteralVisualTypes.includes(submodule.visual) && <EnteralNutritionVisual type={submodule.visual} />}
@@ -129,6 +131,7 @@ export default async function PharmacyModulePage({ params }) {
               {diureticMedicinalChemistryVisualTypes.includes(submodule.visual) && <DiureticMedicinalChemistryVisual type={submodule.visual} />}
               {glaucomaPharmacotherapyVisualTypes.includes(submodule.visual) && <GlaucomaPharmacotherapyVisual type={submodule.visual} />}
               {hypertensionFoundationsVisualTypes.includes(submodule.visual) && <HypertensionFoundationsVisual type={submodule.visual} />}
+              {resistantSecondaryHypertensionVisualTypes.includes(submodule.visual) && <ResistantSecondaryHypertensionVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
