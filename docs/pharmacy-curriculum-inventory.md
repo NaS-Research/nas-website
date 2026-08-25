@@ -470,6 +470,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 367 static pages generated
 - Goodnotes note: the dedicated ventricular arrhythmia lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
+### Antiarrhythmic Pharmacology and Medicinal Chemistry
+
+- Course scope: substrate-first drug selection, fast and slow response tissue, state and use dependence, reverse use dependence, Vaughan Williams strengths and limits, proarrhythmia, class IA, IB, and IC sodium-channel blockers, local-anesthetic pharmacophore, procainamide and NAPA, lidocaine, mexiletine, flecainide, propafenone, IKr blockade, dofetilide, sotalol, ibutilide, amiodarone, dronedarone, adenosine, beta blockers, nondihydropyridine calcium-channel blockers, digoxin, pill-in-the-pocket therapy, structural-heart restrictions, initiation protocols, interactions, and longitudinal surveillance
+- Cross reference completed: RxPrep NAPLEX 2023 antiarrhythmic mechanism, medicinal chemistry, dosing, interaction, monitoring, adverse-effect, and counseling scope
+- Current references reviewed: 2023 AHA and ACC atrial fibrillation guidance, 2025 AHA adult advanced life support guidance, AHA and ACC ventricular arrhythmia and sudden cardiac death guidance, and current DailyMed antiarrhythmic labeling
+- Learning structure: six lessons, six native framework, sodium-channel, potassium-channel, multichannel-and-nodal, substrate-selection, and safety-operating-system diagrams, and six embedded knowledge checks
+- Assessment: 104 original questions spanning tissue and circuit, state and use dependence, proarrhythmia, all major sodium-channel groups, active metabolites, medicinal chemistry, IKr blockers, multichannel drugs, nodal agents, structural substrate, initiation, ECG surveillance, organ function, interactions, and longitudinal benefit; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: Vaughan Williams classes were retained as a map rather than a complete description; channel state and recovery kinetics explained rate dependence; local-anesthetic structural motifs were linked to access without overpredicting clinical behavior; procainamide monitoring included NAPA; class IC therapy excluded important ischemic and structural substrate; dofetilide and sotalol were tied to renal and QT protocols; amiodarone efficacy was paired with whole-organ surveillance; dronedarone was not presented as toxicity-free amiodarone; adenosine was restricted to appropriate AV-node-dependent rhythm use; drug selection included ablation rather than indefinite escalation
+- Automated verification: 104 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 368 static pages generated
+- Goodnotes note: the dedicated antiarrhythmic pharmacology and medicinal-chemistry lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -632,7 +644,7 @@ Target modules:
 2. Arrhythmia Pathophysiology (`built`, 104 question bank; Goodnotes reconciliation pending)
 3. Atrial Arrhythmias (`built`, 104 question bank; Goodnotes reconciliation pending)
 4. Ventricular Arrhythmias (`built`, 100 question bank; Goodnotes reconciliation pending)
-5. Antiarrhythmic Pharmacology and Medicinal Chemistry
+5. Antiarrhythmic Pharmacology and Medicinal Chemistry (`built`, 104 question bank; Goodnotes reconciliation pending)
 
 #### Heart failure and peripheral arterial disease
 
