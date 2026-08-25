@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { coreDrugs } from "@/data/drugLibrary";
 import { drugQuestions } from "@/data/drugQuestions";
 import { getTherapeuticClassColor, therapeuticClasses } from "@/data/drugTherapeuticClasses";
@@ -15,6 +15,7 @@ function displayName(name) {
 }
 
 export default function DrugLibrary() {
+  const classMenuRef = useRef(null);
   const [mode, setMode] = useState("core");
   const [query, setQuery] = useState("");
   const [letter, setLetter] = useState("All");
@@ -106,20 +107,36 @@ export default function DrugLibrary() {
 
       {mode === "core" ? (
         <>
-          <div className="drug-library__categories" aria-label="Filter medications by therapeutic class">
-            {studyClasses.map((item) => (
-              <button
-                type="button"
-                className={therapeuticClass === item ? "is-active" : ""}
-                style={item === "All classes" ? undefined : { "--drug-class-color": getTherapeuticClassColor(item) }}
-                onClick={() => { setTherapeuticClass(item); setLetter("All"); setLimit(36); }}
-                key={item}
-              >
-                {item !== "All classes" && <i aria-hidden="true" />}
-                {item}
-              </button>
-            ))}
-          </div>
+          <details className="drug-library__class-menu" ref={classMenuRef}>
+            <summary>
+              <span>Therapeutic class</span>
+              <strong>
+                {therapeuticClass !== "All classes" && <i style={{ "--drug-class-color": getTherapeuticClassColor(therapeuticClass) }} aria-hidden="true" />}
+                {therapeuticClass}
+              </strong>
+              <b aria-hidden="true">⌄</b>
+            </summary>
+            <div className="drug-library__class-options" aria-label="Filter medications by therapeutic class">
+              {studyClasses.map((item) => (
+                <button
+                  type="button"
+                  className={therapeuticClass === item ? "is-active" : ""}
+                  style={item === "All classes" ? undefined : { "--drug-class-color": getTherapeuticClassColor(item) }}
+                  onClick={() => {
+                    setTherapeuticClass(item);
+                    setLetter("All");
+                    setLimit(36);
+                    classMenuRef.current?.removeAttribute("open");
+                  }}
+                  key={item}
+                >
+                  {item !== "All classes" && <i aria-hidden="true" />}
+                  <span>{item}</span>
+                  {therapeuticClass === item && <b aria-hidden="true">✓</b>}
+                </button>
+              ))}
+            </div>
+          </details>
           <div className="drug-library__letters" aria-label="Filter by first letter">
             {letters.map((item) => <button type="button" className={letter === item ? "is-active" : ""} onClick={() => { setLetter(item); setLimit(36); }} key={item}>{item}</button>)}
           </div>

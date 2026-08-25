@@ -4152,20 +4152,89 @@ body {
   padding-block: 1rem;
   scrollbar-width: none;
 }
-.drug-library__categories,
 .drug-questions__categories { display: flex; gap: 0.55rem; overflow-x: auto; padding-block: 1rem; border-bottom: 1px solid var(--nas-line); scrollbar-width: none; }
-.drug-library__categories::-webkit-scrollbar,
 .drug-questions__categories::-webkit-scrollbar { display: none; }
-.drug-library__categories button,
 .drug-questions__categories button { flex: 0 0 auto; border: 1px solid #242424; border-radius: 999px; padding: 0.55rem 0.8rem; color: #666; font-size: 0.61rem; cursor: pointer; }
-.drug-library__categories button { display: inline-flex; align-items: center; gap: 0.45rem; }
-.drug-library__categories button i,
+.drug-library__class-menu {
+  position: relative;
+  padding-block: 1rem;
+  border-bottom: 1px solid var(--nas-line);
+}
+.drug-library__class-menu summary {
+  display: grid;
+  grid-template-columns: minmax(7rem, 0.45fr) minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: center;
+  min-height: 3.25rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid #292929;
+  background: #080808;
+  color: #d2d2d2;
+  cursor: pointer;
+  list-style: none;
+}
+.drug-library__class-menu summary::-webkit-details-marker { display: none; }
+.drug-library__class-menu summary > span {
+  color: #666;
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.drug-library__class-menu summary strong {
+  display: inline-flex;
+  gap: 0.55rem;
+  align-items: center;
+  min-width: 0;
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+.drug-library__class-menu summary > b { color: #8d775d; font-size: 0.9rem; font-weight: 400; transition: transform 180ms ease; }
+.drug-library__class-menu[open] summary > b { transform: rotate(180deg); }
+.drug-library__class-menu[open] summary { border-color: #594c3d; }
+.drug-library__class-options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 0.5rem;
+  border: 1px solid #292929;
+  background: #080808;
+}
+.drug-library__class-options button {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 0.6rem;
+  align-items: center;
+  min-height: 3.2rem;
+  padding: 0.7rem 0.85rem;
+  border-right: 1px solid #202020;
+  border-bottom: 1px solid #202020;
+  color: #777;
+  font-size: 0.64rem;
+  line-height: 1.35;
+  text-align: left;
+  cursor: pointer;
+}
+.drug-library__class-options button:nth-child(3n) { border-right: 0; }
+.drug-library__class-options button:hover { background: #0e0e0e; color: #d4d4d4; }
+.drug-library__class-options button.is-active { background: color-mix(in srgb, var(--drug-class-color, #c7a069) 9%, #090909); color: #eee; }
+.drug-library__class-options button > b { color: var(--drug-class-color, var(--nas-gold-light)); font-weight: 500; }
+.drug-library__class-menu i,
+.drug-library__class-options button i,
 .drug-card__class-dot { width: 0.45rem; height: 0.45rem; flex: 0 0 auto; border-radius: 50%; background: var(--drug-class-color); box-shadow: 0 0 0 1px color-mix(in srgb, var(--drug-class-color) 52%, transparent); }
-.drug-library__categories button:hover,
+@media (max-width: 62rem) {
+  .drug-library__class-options { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .drug-library__class-options button:nth-child(3n) { border-right: 1px solid #202020; }
+  .drug-library__class-options button:nth-child(2n) { border-right: 0; }
+}
+@media (max-width: 40rem) {
+  .drug-library__class-menu summary { grid-template-columns: minmax(0, 1fr) auto; gap: 0.4rem 1rem; }
+  .drug-library__class-menu summary > span { grid-column: 1 / -1; }
+  .drug-library__class-options { grid-template-columns: 1fr; }
+  .drug-library__class-options button,
+  .drug-library__class-options button:nth-child(2n),
+  .drug-library__class-options button:nth-child(3n) { border-right: 0; }
+}
 .drug-questions__categories button:hover,
 .drug-questions__categories button.is-active { border-color: #725f46; background: rgba(199, 160, 105, 0.08); color: #d5b987; }
-.drug-library__categories button:hover,
-.drug-library__categories button.is-active { border-color: color-mix(in srgb, var(--drug-class-color, #c7a069) 72%, #303030); background: color-mix(in srgb, var(--drug-class-color, #c7a069) 10%, transparent); color: #e5e1da; }
 .drug-card__body > span { display: inline-flex; align-items: center; gap: 0.45rem; }
 
 .drug-library__letters::-webkit-scrollbar { display: none; }
