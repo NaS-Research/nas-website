@@ -2,25 +2,89 @@
 
 import { useMemo, useState } from "react";
 
-export default function PharmacyAssessment({ questions, compact = false }) {
+function shuffle(values) {
+  const result = [...values];
+  for (let index = result.length - 1; index > 0; index -= 1) {
+    const target = Math.floor(Math.random() * (index + 1));
+    [result[index], result[target]] = [result[target], result[index]];
+  }
+  return result;
+}
+
+function prepareQuestion(question) {
+  const choices = shuffle(question.choices.map((choice, index) => ({ choice, correct: index === question.answer })));
+  return {
+    ...question,
+    choices: choices.map((item) => item.choice),
+    answer: choices.findIndex((item) => item.correct),
+  };
+}
+
+function createAttempt(questions, questionCount, previousIds) {
+  const count = Math.min(questionCount, questions.length);
+  let selected = shuffle(questions).slice(0, count);
+  const selectionKey = selected.map((question) => question.id).sort().join("|");
+  if (questions.length > count && selectionKey === previousIds) {
+    selected = [...selected.slice(1), shuffle(questions.filter((question) => !selected.includes(question)))[0]];
+  }
+  return shuffle(selected.map(prepareQuestion));
+}
+
+export default function PharmacyAssessment({ questions, compact = false, moduleId = "pharmacy-review", questionCount, randomize = false }) {
   const [answers, setAnswers] = useState({});
   const [submitted, setSubmitted] = useState(false);
+  const [attempt, setAttempt] = useState(randomize ? [] : questions);
+  const [previousIds, setPreviousIds] = useState("");
+  const [attemptNumber, setAttemptNumber] = useState(0);
 
-  const displayQuestions = useMemo(() => questions.map((question, index) => {
-    const shift = ((index * 3) + 1) % question.choices.length;
-    return {
-      ...question,
-      choices: [...question.choices.slice(shift), ...question.choices.slice(0, shift)],
-      answer: (question.answer - shift + question.choices.length) % question.choices.length,
-    };
-  }), [questions]);
+  const displayQuestions = useMemo(() => attempt, [attempt]);
 
   const answered = Object.keys(answers).length;
   const score = useMemo(() => displayQuestions.reduce((total, question) => total + (answers[question.id] === question.answer ? 1 : 0), 0), [answers, displayQuestions]);
 
-  function reset() {
+  function beginAttempt() {
+    const nextAttempt = createAttempt(questions, questionCount || questions.length, previousIds);
+    setAttempt(nextAttempt);
+    setPreviousIds(nextAttempt.map((question) => question.id).sort().join("|"));
     setAnswers({});
     setSubmitted(false);
+    setAttemptNumber((current) => current + 1);
+  }
+
+  function submitAttempt() {
+    setSubmitted(true);
+    if (typeof window === "undefined") return;
+    const key = `nas-learn:${moduleId}:assessment`;
+    let existing = {};
+    try {
+      existing = JSON.parse(window.localStorage.getItem(key) || "{}");
+    } catch {
+      existing = {};
+    }
+    const history = Array.isArray(existing.history) ? existing.history : [];
+    const result = {
+      attempt: attemptNumber,
+      score,
+      total: displayQuestions.length,
+      completedAt: new Date().toISOString(),
+    };
+    window.localStorage.setItem(key, JSON.stringify({
+      bestScore: Math.max(existing.bestScore || 0, score),
+      attempts: (existing.attempts || 0) + 1,
+      latest: result,
+      history: [...history.slice(-9), result],
+    }));
+  }
+
+  if (randomize && displayQuestions.length === 0) {
+    return (
+      <div className={`pharmacy-assessment pharmacy-assessment--launch ${compact ? "pharmacy-assessment--compact" : ""}`}>
+        <span>{questions.length} questions in this module bank</span>
+        <strong>{Math.min(questionCount || questions.length, questions.length)} questions per attempt</strong>
+        <p>Each attempt draws a fresh set and rearranges the answer choices.</p>
+        <button type="button" onClick={beginAttempt}>Begin module test</button>
+      </div>
+    );
   }
 
   return (
@@ -40,21 +104,21 @@ export default function PharmacyAssessment({ questions, compact = false }) {
               {question.case && <p className="pharmacy-question__case">{question.case}</p>}
               <div className="pharmacy-question__choices">
                 {question.choices.map((choice, choiceIndex) => (
-                  <label className={submitted && choiceIndex === question.answer ? "is-answer" : submitted && choiceIndex === selected ? "is-incorrect" : ""} key={choice}>
+                  <label className={submitted && choiceIndex === question.answer ? "is-answer" : submitted && choiceIndex === selected ? "is-incorrect" : ""} key={`${question.id}-${choiceIndex}`}>
                     <input type="radio" name={question.id} checked={selected === choiceIndex} disabled={submitted} onChange={() => setAnswers((current) => ({ ...current, [question.id]: choiceIndex }))} />
                     <span>{String.fromCharCode(65 + choiceIndex)}</span>
                     <strong>{choice}</strong>
                   </label>
                 ))}
               </div>
-              {submitted && <div className={`pharmacy-question__feedback ${isCorrect ? "is-correct" : ""}`}><strong>{isCorrect ? "Correct" : "Review this concept"}</strong><p>{question.rationale}</p></div>}
+              {submitted && <div className={`pharmacy-question__feedback ${isCorrect ? "is-correct" : ""}`}><strong>{isCorrect ? "Correct" : "Review this concept"}</strong><p>{question.rationale}</p>{question.reviewHref && <a href={question.reviewHref}>Review the lesson section</a>}</div>}
             </fieldset>
           );
         })}
       </div>
 
       <div className="pharmacy-assessment__actions">
-        {!submitted ? <button type="button" disabled={answered !== displayQuestions.length} onClick={() => setSubmitted(true)}>Submit answers</button> : <button type="button" onClick={reset}>Try again</button>}
+        {!submitted ? <button type="button" disabled={answered !== displayQuestions.length} onClick={submitAttempt}>Submit answers</button> : <button type="button" onClick={randomize ? beginAttempt : () => { setAnswers({}); setSubmitted(false); }}>Start another attempt</button>}
         <span>{answered !== displayQuestions.length && !submitted ? "Answer every question to submit." : submitted ? `${Math.round((score / displayQuestions.length) * 100)}% complete` : "Ready to score."}</span>
       </div>
     </div>

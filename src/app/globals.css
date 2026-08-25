@@ -6649,6 +6649,61 @@ body {
   color: var(--nas-gold);
 }
 
+.pharmacy-submodule__lesson {
+  margin-top: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+.pharmacy-submodule__lesson > section {
+  display: grid;
+  grid-template-columns: minmax(10rem, 0.7fr) minmax(0, 1.6fr);
+  gap: clamp(1.5rem, 5vw, 5rem);
+  padding-block: clamp(1.6rem, 3vw, 2.4rem);
+  border-top: 1px solid var(--nas-line);
+}
+
+.pharmacy-submodule__lesson h3 {
+  color: #e7e4df;
+  font-size: clamp(1.05rem, 1.8vw, 1.4rem);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+
+.pharmacy-submodule__lesson section > p {
+  color: #aaa6a1;
+  font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+  line-height: 1.8;
+}
+
+.pharmacy-submodule__lesson > aside {
+  display: grid;
+  grid-template-columns: minmax(10rem, 0.7fr) minmax(0, 1.6fr);
+  gap: clamp(1.5rem, 5vw, 5rem);
+  padding-block: 1.6rem;
+  border-block: 1px solid rgb(213 174 114 / 24%);
+}
+
+.pharmacy-submodule__lesson > aside > span {
+  color: var(--nas-gold-light);
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.pharmacy-submodule__lesson > aside ul {
+  display: grid;
+  gap: 0.7rem;
+  color: #bbb5ad;
+  font-size: 0.82rem;
+  line-height: 1.65;
+  list-style: none;
+}
+
+.pharmacy-submodule__lesson > aside li::before {
+  margin-right: 0.7rem;
+  content: "·";
+  color: var(--nas-gold);
+}
+
 .pharmacy-submodule__application {
   display: grid;
   grid-template-columns: 9rem 1fr;
@@ -6801,6 +6856,14 @@ body {
   font-size: 0.78rem;
 }
 
+.pharmacy-submodule__check {
+  margin-top: clamp(3rem, 6vw, 5rem);
+}
+
+.pharmacy-submodule__check .pharmacy-assessment {
+  margin-top: 1rem;
+}
+
 .pharmacy-module-test {
   padding-block: clamp(4rem, 8vw, 6rem);
   scroll-margin-top: 7rem;
@@ -6814,8 +6877,80 @@ body {
   line-height: 1.7;
 }
 
+.pharmacy-module-references {
+  padding-block: clamp(4rem, 8vw, 6rem);
+  border-top: 1px solid var(--nas-line);
+}
+
+.pharmacy-module-references h2 {
+  max-width: 38rem;
+  margin-top: 0.8rem;
+  color: var(--nas-text);
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-weight: 480;
+  letter-spacing: -0.05em;
+  line-height: 1.02;
+}
+
+.pharmacy-module-references > p:not(.nas-section-label) {
+  max-width: 42rem;
+  margin-top: 1.2rem;
+  color: #929292;
+  line-height: 1.7;
+}
+
+.pharmacy-module-references ol {
+  margin-top: 2rem;
+  border-top: 1px solid var(--nas-line);
+  list-style-position: inside;
+}
+
+.pharmacy-module-references li {
+  border-bottom: 1px solid var(--nas-line);
+  color: #635c54;
+  font-size: 0.72rem;
+}
+
+.pharmacy-module-references a {
+  display: inline-flex;
+  justify-content: space-between;
+  width: calc(100% - 2rem);
+  padding: 1.15rem 0 1.15rem 1rem;
+  color: #b8b3ad;
+  line-height: 1.5;
+}
+
+.pharmacy-module-references a span {
+  color: var(--nas-gold-light);
+}
+
 .pharmacy-assessment {
   margin-top: 3rem;
+}
+
+.pharmacy-assessment--launch {
+  display: grid;
+  justify-items: start;
+  gap: 0.65rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem) 0;
+  border-block: 1px solid var(--nas-line);
+}
+.pharmacy-assessment--launch > span {
+  color: #70665c;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.pharmacy-assessment--launch > strong { color: #dedbd6; font-size: clamp(1.15rem, 2vw, 1.5rem); font-weight: 500; }
+.pharmacy-assessment--launch > p { max-width: 34rem; color: #85817d; font-size: 0.78rem; line-height: 1.65; }
+.pharmacy-assessment--launch > button {
+  margin-top: 0.7rem;
+  border-radius: 999px;
+  padding: 0.8rem 1.1rem;
+  background: var(--nas-gold-light);
+  color: #17120c;
+  font-size: 0.7rem;
+  cursor: pointer;
 }
 
 .pharmacy-assessment__status {
@@ -6948,6 +7083,7 @@ body {
   font-size: 0.77rem;
   line-height: 1.6;
 }
+.pharmacy-question__feedback a { display: inline-flex; margin-top: 0.75rem; color: var(--nas-gold-light); font-size: 0.68rem; }
 
 .pharmacy-assessment__actions {
   display: flex;
@@ -7097,6 +7233,12 @@ body {
 
   .pharmacy-submodule__concepts ul {
     grid-template-columns: 1fr;
+  }
+
+  .pharmacy-submodule__lesson > section,
+  .pharmacy-submodule__lesson > aside {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
   }
 
   .pharmacy-question legend {

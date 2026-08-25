@@ -25,10 +25,11 @@ export default async function PharmacyModulePage({ params }) {
   const module = getPharmacyModule(slug);
   if (!module) notFound();
 
-  const questions = module.submodules.map((submodule) => ({
+  const embeddedQuestions = module.submodules.map((submodule) => ({
     ...submodule.check,
     id: `${module.slug}-${submodule.slug}`,
   }));
+  const questions = module.questionBank || embeddedQuestions;
 
   const currentIndex = pharmacyModules.findIndex((item) => item.slug === module.slug);
   const previous = pharmacyModules[currentIndex - 1];
@@ -69,6 +70,16 @@ export default async function PharmacyModulePage({ params }) {
                 <span>What to learn</span>
                 <ul>{submodule.concepts.map((concept) => <li key={concept}>{concept}</li>)}</ul>
               </div>
+              {submodule.lesson && <div className="pharmacy-submodule__lesson">
+                {submodule.lesson.map((section) => <section key={section.heading}>
+                  <h3>{section.heading}</h3>
+                  <p>{section.body}</p>
+                </section>)}
+                {submodule.keyPoints && <aside>
+                  <span>Decision points</span>
+                  <ul>{submodule.keyPoints.map((point) => <li key={point}>{point}</li>)}</ul>
+                </aside>}
+              </div>}
               {study && <div className="pharmacy-submodule__study">
                 <div className="pharmacy-submodule__study-heading">
                   <span>High-yield study notes</span>
@@ -84,6 +95,10 @@ export default async function PharmacyModulePage({ params }) {
               </div>}
               <aside className="pharmacy-submodule__application"><span>Clinical lens</span><p>{submodule.application}</p></aside>
               {submodule.href && <Link className="pharmacy-submodule__guide" href={submodule.href}>Open the full study guide <span aria-hidden="true">↗</span></Link>}
+              {submodule.lesson && <div className="pharmacy-submodule__check">
+                <p className="nas-section-label">Quick check</p>
+                <PharmacyAssessment questions={[{ ...submodule.check, id: `${module.slug}-${submodule.slug}-check` }]} compact moduleId={`${module.slug}:${submodule.slug}`} />
+              </div>}
                 </>;
               })()}
             </section>
@@ -92,9 +107,16 @@ export default async function PharmacyModulePage({ params }) {
           <section className="pharmacy-module-test" id="module-test">
             <p className="nas-section-label">Module test</p>
             <h2>Check the connections.</h2>
-            <p>Answer one question from each submodule. Submit the full set to reveal the reasoning.</p>
-            <PharmacyAssessment questions={questions} compact />
+            <p>{module.questionBank ? `Each attempt draws 10 questions from the complete ${module.questionBank.length} question bank.` : "Answer one question from each submodule. Submit the full set to reveal the reasoning."}</p>
+            <PharmacyAssessment questions={questions} compact moduleId={module.slug} questionCount={module.questionBank ? 10 : questions.length} randomize={Boolean(module.questionBank)} />
           </section>
+
+          {module.references && <section className="pharmacy-module-references" aria-labelledby="module-references-title">
+            <p className="nas-section-label">References</p>
+            <h2 id="module-references-title">Current clinical foundation.</h2>
+            <p>Lecture material was synthesized with the following contemporary guidance. Verify local policy and current guidance before applying clinical information.</p>
+            <ol>{module.references.map((reference) => <li key={reference.href}><a href={reference.href} target="_blank" rel="noreferrer">{reference.label}<span aria-hidden="true">↗</span></a></li>)}</ol>
+          </section>}
 
           <nav className="pharmacy-module-sequence" aria-label="Module sequence">
             {previous ? <Link href={`/learn/pharmacy/modules/${previous.slug}`}><span>Previous</span><strong>{previous.title}</strong></Link> : <span />}

@@ -4,10 +4,10 @@ export default function PharmacyCurriculum({ collections, lessons }) {
   return (
     <section className="pharmacy-curriculum" id="curriculum" aria-labelledby="curriculum-title">
       <header className="pharmacy-curriculum__heading">
-        <p className="nas-section-label">Therapeutics sequence</p>
-        <h2 id="curriculum-title">Learn in the order the knowledge builds.</h2>
+        <p className="nas-section-label">Focused modules</p>
+        <h2 id="curriculum-title">Study one clinical problem at a time.</h2>
         <p>
-          Begin with drug action, then move through organ systems, infectious disease, oncology, and acute care. Each block prepares you for the next.
+          Each module turns the lecture material into a complete lesson, short knowledge checks, and a fresh ten question assessment drawn from a larger bank.
         </p>
       </header>
 
@@ -18,7 +18,7 @@ export default function PharmacyCurriculum({ collections, lessons }) {
             <article className="curriculum-card" id={collection.slug} key={collection.slug}>
               <div className="curriculum-card__topline">
                 <span>{collection.number}</span>
-                <span>{published.length ? `${published.length} guide${published.length === 1 ? "" : "s"}` : `Block ${collection.number}`}</span>
+                <span>{collection.questionBank ? `${collection.questionBank.length} test questions` : `${published.length} guide${published.length === 1 ? "" : "s"}`}</span>
               </div>
               <h3>{collection.title}</h3>
               <p>{collection.description}</p>
@@ -26,7 +26,7 @@ export default function PharmacyCurriculum({ collections, lessons }) {
                 {collection.topics.map((topic) => <li key={topic}>{topic}</li>)}
               </ul>
               <Link className="curriculum-card__open" href={`/learn/pharmacy/modules/${collection.slug}`}>
-                <span>Explore {collection.submodules.length} submodules</span>
+                <span>Open {collection.submodules.length} lessons</span>
                 <span aria-hidden="true">↗</span>
               </Link>
               {published.length > 0 && (
@@ -43,10 +43,10 @@ export default function PharmacyCurriculum({ collections, lessons }) {
           );
         })}
       </div>
-      <Link className="pharmacy-curriculum__review" href="/learn/pharmacy/review">
+      {collections.length > 1 && <Link className="pharmacy-curriculum__review" href="/learn/pharmacy/review">
         <div><span>Cumulative review</span><strong>Test the complete sequence with direct questions and patient cases.</strong></div>
         <span aria-hidden="true">↗</span>
-      </Link>
+      </Link>}
     </section>
   );
 }

@@ -1,3 +1,5 @@
+import { nutritionScreeningAssessmentModule } from "@/data/modules/nutritionScreeningAssessment";
+
 const sources = {
   foundation: "Foundation",
   fall: "Early systems",
@@ -6,7 +8,7 @@ const sources = {
   review: "Comprehensive review",
 };
 
-export const pharmacyModules = [
+export const legacyPharmacyModules = [
   {
     slug: "drug-action-therapeutic-foundations",
     lessonCollectionSlug: "foundations",
@@ -401,7 +403,9 @@ export const pharmacyModules = [
 ];
 
 export function getPharmacyModule(slug) {
-  return pharmacyModules.find((module) => module.slug === slug);
+  return [...pharmacyModules, ...legacyPharmacyModules].find((module) => module.slug === slug);
 }
+
+export const pharmacyModules = [nutritionScreeningAssessmentModule];
 
 export const pharmacySubmoduleCount = pharmacyModules.reduce((total, module) => total + module.submodules.length, 0);
