@@ -46,6 +46,7 @@ import ChronicHeartFailureVisual from "@/components/learn/ChronicHeartFailureVis
 import AcuteDecompensatedHeartFailureVisual from "@/components/learn/AcuteDecompensatedHeartFailureVisual";
 import HeartFailureMedicinalChemistryVisual from "@/components/learn/HeartFailureMedicinalChemistryVisual";
 import PeripheralArterialDiseaseVisual from "@/components/learn/PeripheralArterialDiseaseVisual";
+import AcuteIschemicStrokeVisual from "@/components/learn/AcuteIschemicStrokeVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -91,6 +92,7 @@ const chronicHeartFailureVisualTypes = ["hf-treatment-pillars", "hf-ras-mra", "h
 const acuteDecompensatedHeartFailureVisualTypes = ["adhf-assessment", "adhf-decongestion", "adhf-cardiorenal", "adhf-vasoactive", "adhf-shock", "adhf-transition"];
 const heartFailureMedicinalChemistryVisualTypes = ["hf-medchem-ras", "hf-medchem-arni", "hf-medchem-beta", "hf-medchem-mra", "hf-medchem-renal", "hf-medchem-vasodilator", "hf-medchem-integrated"];
 const peripheralArterialDiseaseVisualTypes = ["pad-spectrum", "pad-diagnosis", "pad-risk-therapy", "pad-function", "pad-revascularization", "pad-limb-emergency"];
+const acuteIschemicStrokeVisualTypes = ["ais-system", "ais-diagnosis", "ais-thrombolysis", "ais-thrombectomy", "ais-support", "ais-transition"];
 
 export function generateStaticParams() {
   return pharmacyModules.map((module) => ({ slug: module.slug }));
@@ -201,6 +203,7 @@ export default async function PharmacyModulePage({ params }) {
               {acuteDecompensatedHeartFailureVisualTypes.includes(submodule.visual) && <AcuteDecompensatedHeartFailureVisual type={submodule.visual} />}
               {heartFailureMedicinalChemistryVisualTypes.includes(submodule.visual) && <HeartFailureMedicinalChemistryVisual type={submodule.visual} />}
               {peripheralArterialDiseaseVisualTypes.includes(submodule.visual) && <PeripheralArterialDiseaseVisual type={submodule.visual} />}
+              {acuteIschemicStrokeVisualTypes.includes(submodule.visual) && <AcuteIschemicStrokeVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
