@@ -314,6 +314,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 354 static pages generated
 - Goodnotes note: the dedicated dyslipidemia lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
+### Dyslipidemia Therapeutics
+
+- Course scope: baseline phenotype, absolute and percentage treatment goals, PREVENT primary prevention, risk enhancers, CAC reclassification, secondary prevention, very-high-risk goals, combination therapy, therapeutic inertia, severe hypertriglyceridemia, pancreatitis prevention, FCS, HeFH, HoFH, Lp(a), diabetes, CKD, HIV, reproductive and pediatric planning, statin-attributed muscle symptoms, adherence, and access
+- Cross reference completed: RxPrep NAPLEX 2023 dyslipidemia therapeutics, cardiovascular prevention, statin-intolerance, triglyceride, familial disease, monitoring, and counseling scope
+- Current references reviewed: full 2026 ACC and AHA dyslipidemia guideline, ACC 2026 practice implementation summary, AHA statin-safety scientific statement, and AHA Lp(a) scientific statement
+- Learning structure: six lessons, six native goal, primary-prevention, secondary-prevention, triglyceride, familial-disease, and implementation diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions spanning baseline phenotype, absolute goals, percentage response, monitoring, PREVENT categories, CAC, secondary-prevention classification, LDL-C and non-HDL-C goals, nonstatin sequencing, therapeutic inertia, secondary triglyceride causes, 500 and 1000 mg/dL pathways, FCS, HeFH, HoFH, Lp(a), diabetes, CKD, HIV, statin-attributed muscle symptoms, adherence, and access; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: 2026 LDL-C and non-HDL-C goals were layered onto percentage response; borderline, intermediate, and high PREVENT categories were kept distinct; CAC was not used to de-risk FH or established disease; very-high-risk secondary prevention used below 55 and below 85 mg/dL goals; severe triglyceride care separated ASCVD from pancreatitis objectives; fenofibrate was preferred to gemfibrozil with statins; HoFH escalation accounted for residual receptor function; access was treated as part of exposure
+- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 355 static pages generated
+- Goodnotes note: the dedicated dyslipidemia lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -430,7 +442,7 @@ Target modules:
 
 1. Dyslipidemia Pathophysiology and Risk (`built`, 100 question bank; Goodnotes reconciliation pending)
 2. Lipid-Lowering Pharmacology (`built`, 100 question bank; Goodnotes reconciliation pending)
-3. Dyslipidemia Therapeutics
+3. Dyslipidemia Therapeutics (`built`, 100 question bank; Goodnotes reconciliation pending)
 
 #### Coronary disease, acute coronary syndromes, and anticoagulation
 
