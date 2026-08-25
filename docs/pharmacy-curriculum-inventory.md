@@ -326,6 +326,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 355 static pages generated
 - Goodnotes note: the dedicated dyslipidemia lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
+### Chronic Coronary Disease
+
+- Course scope: obstructive and nonobstructive coronary disease, plaque progression, oxygen supply and demand, anginal equivalents, unstable symptom triage, activity, cardiac rehabilitation, tobacco treatment, lipid and pressure control, cardiometabolic outcome therapy, single and dual antiplatelet therapy, oral-anticoagulant overlap, beta blockers, calcium channel blockers, nitrates, ranolazine, revascularization, routine testing, INOCA, follow-up, access, and supplements
+- Cross reference completed: RxPrep NAPLEX 2023 coronary disease, antianginal, secondary-prevention, antithrombotic, interaction, monitoring, and counseling scope
+- Current references reviewed: 2023 AHA and ACC chronic coronary disease guideline, 2026 AHA and ACC dyslipidemia guideline, 2021 AHA and ACC chest pain guideline, and 2025 AHA nonobstructive coronary disease scientific statement
+- Learning structure: six lessons, six native disease-spectrum, prevention, antithrombotic, angina, testing, and longitudinal-care diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions spanning CCD phenotypes, plaque, supply and demand, symptom equivalents, acute triage, rehabilitation, tobacco, lipids, pressure, SGLT2 and GLP-1 therapies, antiplatelets, DAPT, P2Y12 monotherapy, oral anticoagulation, beta-blocker indications, calcium channel blockers, nitrates, ranolazine, revascularization, surveillance testing, INOCA, changed symptoms, follow-up, and supplements; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: symptom relief was separated from event prevention; successful PCI was not treated as cure of systemic atherosclerosis; current 2026 lipid goals superseded the older lipid framework; long-term beta-blocker outcome use was limited to current indications; post-PCI antithrombotic duration remained risk selected; oral-anticoagulant overlap was minimized in stable disease; routine surveillance testing without clinical change was rejected; nonobstructive anatomy did not invalidate ischemic symptoms
+- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 356 static pages generated
+- Goodnotes note: the dedicated coronary disease lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -462,7 +474,7 @@ Available documents:
 
 Target modules:
 
-1. Chronic Coronary Disease
+1. Chronic Coronary Disease (`built`, 100 question bank; Goodnotes reconciliation pending)
 2. Acute Coronary Syndromes
 3. Antiplatelet Pharmacology
 4. Coagulation and Anticoagulant Pharmacology
