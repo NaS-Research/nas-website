@@ -24,28 +24,20 @@ export default function OfficialLabelProfile({ generic }) {
   }, [generic]);
 
   if (loading) {
-    return <section className="official-label-card official-label-card--loading" aria-live="polite"><span /><p>Retrieving current official label records</p></section>;
+    return <section className="official-label-card official-label-card--loading" aria-live="polite"><span /><p>Loading label data</p></section>;
   }
 
   const profile = data?.profile;
   const labels = data?.labels || [];
 
   return (
-    <section className="official-label-card" aria-labelledby="official-label-title">
-      <header>
-        <div>
-          <p className="nas-section-label">Official label study view</p>
-          <h2 id="official-label-title">Read the medication in its current labeled context.</h2>
-        </div>
-        {profile?.effectiveDate && <span>Label effective {formatDate(profile.effectiveDate)}</span>}
-      </header>
-
+    <section className="official-label-card">
       {profile && (
         <dl className="official-label-card__identity">
-          <div><dt>Brand names in record</dt><dd>{profile.brandNames.slice(0, 4).join(", ") || "Not supplied"}</dd></div>
+          <div><dt>Brand names</dt><dd>{profile.brandNames.slice(0, 4).join(", ") || "Not supplied"}</dd></div>
           <div><dt>Dosage forms</dt><dd>{profile.dosageForms.join(", ") || "See individual labels"}</dd></div>
           <div><dt>Routes</dt><dd>{profile.routes.join(", ") || "See individual labels"}</dd></div>
-          <div><dt>Labeler</dt><dd>{profile.manufacturers.slice(0, 2).join(", ") || "See individual labels"}</dd></div>
+          <div><dt>Label date</dt><dd>{profile.effectiveDate ? formatDate(profile.effectiveDate) : "Not supplied"}</dd></div>
         </dl>
       )}
 
@@ -53,7 +45,7 @@ export default function OfficialLabelProfile({ generic }) {
         <div className="official-label-card__sections">
           {profile.sections.map((section, index) => (
             <details open={index === 0} key={section.key}>
-              <summary><span>{String(index + 1).padStart(2, "0")}</span><strong>{section.label}</strong><i aria-hidden="true">+</i></summary>
+              <summary><strong>{section.label}</strong><i aria-hidden="true">+</i></summary>
               <p>{section.text}</p>
             </details>
           ))}
@@ -63,7 +55,7 @@ export default function OfficialLabelProfile({ generic }) {
       )}
 
       <div className="official-label-card__records">
-        <span>Current DailyMed records</span>
+        <span>Sources</span>
         {labels.length > 0 ? labels.map((label) => (
           <a href={`https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=${label.setId}`} target="_blank" rel="noreferrer" key={label.setId}>
             <strong>{label.title}</strong><small>{label.publishedDate} · Version {label.version}</small><i aria-hidden="true">↗</i>
@@ -71,7 +63,7 @@ export default function OfficialLabelProfile({ generic }) {
         )) : <a href={`https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=${encodeURIComponent(generic)}`} target="_blank" rel="noreferrer"><strong>Search DailyMed for {generic}</strong><i aria-hidden="true">↗</i></a>}
       </div>
 
-      <p className="official-label-card__note">This page organizes a current public label record for study. Product labels differ by manufacturer, formulation, route, and approval status. Verify the specific product and current prescribing information before applying any clinical detail.</p>
+      <p className="official-label-card__note">Labels differ by manufacturer, formulation, route, and approval status.</p>
     </section>
   );
 }
