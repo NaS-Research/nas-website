@@ -111,6 +111,17 @@ This inventory records the source material available in the founder's Goodnotes 
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, six diagrams, ten questions per attempt, different questions and answer order on repeat attempt, complete scoring with explanations and ten remediation links, and no browser errors or warnings
 - Build verification: Next.js production build passed August 25, 2026 with 337 static pages generated
 
+### Cholinergic Agonists and Cholinesterase Inhibitors
+
+- DAST source: Cholinoceptor-Activating and Cholinesterase-Inhibiting Drugs, 42 pages, exported and text verified
+- Cross reference completed: RxPrep NAPLEX 2023 cholinergic pharmacology, myasthenia gravis, dementia, ophthalmic, urinary, and toxicology scope
+- Current references reviewed: current DailyMed labeling for bethanechol, pilocarpine, cevimeline, neostigmine, pyridostigmine, donepezil, rivastigmine, galantamine, and methacholine, plus IUPHAR and BPS receptor nomenclature
+- Learning structure: six lessons, six native mechanism and decision diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions with mechanism, structure and distribution, direct agonist, urinary, salivary, ocular, bronchial challenge, myasthenia, neuromuscular reversal, dementia, safety, and integrated clinical cases; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: obsolete broad claims about routine glaucoma treatment, fixed dementia response percentages, and simplified muscarinic subtype distribution were replaced with product-specific labeling, patient-centered benefit assessment, current titration rules, objective neuromuscular monitoring, and explicit separation of muscarinic, nicotinic, and central toxicity
+- Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, six diagrams, ten questions per attempt, different questions and answer order on repeat attempt, complete scoring with explanations and ten remediation links, and no browser errors or warnings
+- Build verification: Next.js production build passed August 25, 2026 with 338 static pages generated
+
 ## Goodnotes availability
 
 ### Books
@@ -159,7 +170,7 @@ Target modules:
 Available documents:
 
 - Intro: Autonomic Nervous System (`exported`, 65 pages)
-- Cholinoceptor-Activating and Cholinesterase-Inhibiting Drugs
+- Cholinoceptor-Activating and Cholinesterase-Inhibiting Drugs (`exported`, 42 pages)
 - Cholinoceptor Blockers and Cholinesterase Regenerators
 - Cholinergic Agents Medicinal Chemistry
 - Anticholinergic Medicinal Chemistry
@@ -167,7 +178,7 @@ Available documents:
 Target modules:
 
 1. Autonomic Nervous System Foundations (`built`, 100 question bank)
-2. Cholinergic Agonists and Cholinesterase Inhibitors
+2. Cholinergic Agonists and Cholinesterase Inhibitors (`built`, 100 question bank)
 3. Antimuscarinic Pharmacology
 4. Cholinergic Medicinal Chemistry
 5. Anticholinergic Medicinal Chemistry

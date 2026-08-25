@@ -10,6 +10,7 @@ import ParenteralNutritionVisual from "@/components/learn/ParenteralNutritionVis
 import ParenteralNutritionCalculationVisual from "@/components/learn/ParenteralNutritionCalculationVisual";
 import PediatricParenteralNutritionVisual from "@/components/learn/PediatricParenteralNutritionVisual";
 import AutonomicNervousSystemVisual from "@/components/learn/AutonomicNervousSystemVisual";
+import CholinergicAgonistsVisual from "@/components/learn/CholinergicAgonistsVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -19,6 +20,7 @@ const parenteralVisualTypes = ["pn-decision", "venous-access", "macronutrient-de
 const parenteralCalculationVisualTypes = ["pn-calc-foundations", "pn-calc-protein-energy", "pn-calc-dextrose", "pn-calc-lipid", "pn-calc-stock", "pn-calc-audit"];
 const pediatricParenteralVisualTypes = ["peds-pn-decision", "peds-pn-glucose", "peds-pn-macros", "peds-pn-micros", "peds-pn-safety", "peds-pn-audit"];
 const autonomicVisualTypes = ["ans-architecture", "ans-transmitter-map", "ans-receptor-signaling", "ans-cholinergic-cycle", "ans-adrenergic-cycle", "ans-reflex-integration"];
+const cholinergicVisualTypes = ["chol-classification", "chol-direct-agonists", "chol-clinical-selection", "chol-peripheral-inhibitors", "chol-central-inhibitors", "chol-safety"];
 
 export function generateStaticParams() {
   return pharmacyModules.map((module) => ({ slug: module.slug }));
@@ -85,7 +87,7 @@ export default async function PharmacyModulePage({ params }) {
                 <span>What to learn</span>
                 <ul>{submodule.concepts.map((concept) => <li key={concept}>{concept}</li>)}</ul>
               </div>
-              {submodule.visual && !submodule.visual.startsWith("acid-") && !calciumVisualTypes.includes(submodule.visual) && !enteralVisualTypes.includes(submodule.visual) && !parenteralVisualTypes.includes(submodule.visual) && !parenteralCalculationVisualTypes.includes(submodule.visual) && !pediatricParenteralVisualTypes.includes(submodule.visual) && !autonomicVisualTypes.includes(submodule.visual) && <FluidElectrolyteVisual type={submodule.visual} />}
+              {submodule.visual && !submodule.visual.startsWith("acid-") && !calciumVisualTypes.includes(submodule.visual) && !enteralVisualTypes.includes(submodule.visual) && !parenteralVisualTypes.includes(submodule.visual) && !parenteralCalculationVisualTypes.includes(submodule.visual) && !pediatricParenteralVisualTypes.includes(submodule.visual) && !autonomicVisualTypes.includes(submodule.visual) && !cholinergicVisualTypes.includes(submodule.visual) && <FluidElectrolyteVisual type={submodule.visual} />}
               {submodule.visual?.startsWith("acid-") && <AcidBaseVisual type={submodule.visual} />}
               {calciumVisualTypes.includes(submodule.visual) && <CalciumPhosphorusVisual type={submodule.visual} />}
               {enteralVisualTypes.includes(submodule.visual) && <EnteralNutritionVisual type={submodule.visual} />}
@@ -93,6 +95,7 @@ export default async function PharmacyModulePage({ params }) {
               {parenteralCalculationVisualTypes.includes(submodule.visual) && <ParenteralNutritionCalculationVisual type={submodule.visual} />}
               {pediatricParenteralVisualTypes.includes(submodule.visual) && <PediatricParenteralNutritionVisual type={submodule.visual} />}
               {autonomicVisualTypes.includes(submodule.visual) && <AutonomicNervousSystemVisual type={submodule.visual} />}
+              {cholinergicVisualTypes.includes(submodule.visual) && <CholinergicAgonistsVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
