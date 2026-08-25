@@ -659,6 +659,17 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 384 static pages generated
 - Goodnotes note: the cystic-fibrosis lecture, chapter, and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
+### Drug-Induced Pulmonary Disease
+
+- Course scope: airway, parenchymal, vascular, pleural, neuromuscular, and central ventilatory phenotypes; inflammatory injury and established fibrosis; direct, immune, cumulative, oxidative, and tissue-retention mechanisms; severity assessment; dated exposure reconstruction; latency; competing diagnoses; high-resolution CT, pulmonary function, diffusion, bronchoalveolar lavage, and biopsy roles; dechallenge and rechallenge evidence; amiodarone, nitrofurantoin, methotrexate, and bleomycin toxicity; checkpoint inhibitor pneumonitis; CTCAE-linked management; targeted therapy and radiation injury; ACE inhibitor cough; drug-triggered bronchospasm; pulmonary vascular and pleural effects; hypoventilation and respiratory muscle weakness; stabilization; culprit withdrawal; corticosteroid selection; recovery; relapse; documentation; pharmacovigilance; and prevention
+- Current references reviewed: ASCO immune-related adverse-event guideline update and current FDA prescribing information for nitrofurantoin, amiodarone, and bleomycin
+- Learning structure: six lessons, six native phenotype, causal-reasoning, classic-toxicant, oncology, nonpneumonitis, and management diagrams, and six embedded knowledge checks
+- Assessment: 104 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: pulmonary toxicity was treated as a family of compartment-specific phenotypes rather than one CT diagnosis; inflammatory injury was separated from fixed fibrosis; severity and phenotype were assessed independently; the exposure history included dates, dose, cumulative exposure, organ function, oxygen, radiation, and procedures; latency supported but did not independently prove causality; infection, edema, embolism, tumor, radiation, hemorrhage, and underlying lung disease remained active alternatives; imaging, PFTs, BAL, and biopsy contributed decision-specific evidence rather than a pathognomonic answer; improvement after withdrawal supported causality while diagnostic rechallenge was discouraged; amiodarone management accounted for tissue persistence and the underlying arrhythmia; nitrofurantoin was separated into acute hypersensitivity and chronic fibrotic patterns; methotrexate pneumonitis retained an infectious and inflammatory differential; bleomycin risk increased with cumulative exposure without a guaranteed safe threshold; checkpoint pneumonitis followed symptom, extent, oxygen, and response-based grading; Grade 2 treatment used a prolonged prednisone taper and reassessment within 48 to 72 hours; severe disease required hospitalization, permanent discontinuation, IV corticosteroid, and specialist-led rescue immunosuppression when refractory; product-specific oncology labels were not replaced by generalized checkpoint guidance; cough, bronchospasm, vascular disease, pleural disease, hypoventilation, and weakness received mechanism-specific care; corticosteroids were reserved for compatible inflammatory phenotypes; and every withdrawal plan preserved treatment for the original disease
+- Automated verification: 104 unique question IDs, four unique choices per question, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 385 static pages generated
+- Goodnotes note: the drug-induced pulmonary disease lecture and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -886,7 +897,7 @@ Target modules:
 3. Chronic Obstructive Pulmonary Disease (`built`, 100 question bank; Goodnotes reconciliation pending)
 4. Pulmonary Arterial Hypertension (`built`, 100 question bank; Goodnotes reconciliation pending)
 5. Cystic Fibrosis (`built`, 100 question bank; Goodnotes reconciliation pending)
-6. Drug-Induced Pulmonary Disease
+6. Drug-Induced Pulmonary Disease (`built`, 104 question bank; Goodnotes reconciliation pending)
 7. Pituitary Pharmacology
 
 #### Diabetes and thyroid

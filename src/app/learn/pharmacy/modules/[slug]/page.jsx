@@ -57,6 +57,7 @@ import AsthmaVisual from "@/components/learn/AsthmaVisual";
 import ChronicObstructivePulmonaryDiseaseVisual from "@/components/learn/ChronicObstructivePulmonaryDiseaseVisual";
 import PulmonaryArterialHypertensionVisual from "@/components/learn/PulmonaryArterialHypertensionVisual";
 import CysticFibrosisVisual from "@/components/learn/CysticFibrosisVisual";
+import DrugInducedPulmonaryDiseaseVisual from "@/components/learn/DrugInducedPulmonaryDiseaseVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -113,6 +114,7 @@ const asthmaVisualTypes = ["asthma-diagnosis", "asthma-risk", "asthma-pharmacolo
 const chronicObstructivePulmonaryDiseaseVisualTypes = ["copd-diagnosis", "copd-assessment", "copd-pharmacology", "copd-strategy", "copd-nonpharmacologic", "copd-acute"];
 const pulmonaryArterialHypertensionVisualTypes = ["pah-hemodynamics", "pah-diagnosis", "pah-risk", "pah-pharmacology", "pah-strategy", "pah-special"];
 const cysticFibrosisVisualTypes = ["cf-biology", "cf-airway", "cf-infection", "cf-modulators", "cf-nutrition", "cf-longitudinal"];
+const drugInducedPulmonaryDiseaseVisualTypes = ["dipd-patterns", "dipd-causality", "dipd-classic", "dipd-oncology", "dipd-airway-vascular", "dipd-management"];
 
 export function generateStaticParams() {
   return pharmacyModules.map((module) => ({ slug: module.slug }));
@@ -234,6 +236,7 @@ export default async function PharmacyModulePage({ params }) {
               {chronicObstructivePulmonaryDiseaseVisualTypes.includes(submodule.visual) && <ChronicObstructivePulmonaryDiseaseVisual type={submodule.visual} />}
               {pulmonaryArterialHypertensionVisualTypes.includes(submodule.visual) && <PulmonaryArterialHypertensionVisual type={submodule.visual} />}
               {cysticFibrosisVisualTypes.includes(submodule.visual) && <CysticFibrosisVisual type={submodule.visual} />}
+              {drugInducedPulmonaryDiseaseVisualTypes.includes(submodule.visual) && <DrugInducedPulmonaryDiseaseVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
