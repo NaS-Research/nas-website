@@ -458,6 +458,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 366 static pages generated
 - Goodnotes note: the dedicated atrial arrhythmia lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
+### Ventricular Arrhythmias
+
+- Course scope: premature ventricular complexes, PVC-mediated cardiomyopathy, nonsustained VT, wide-complex tachycardia diagnosis, structural and inherited risk assessment, stable and unstable monomorphic VT, procainamide, amiodarone, polymorphic VT, torsades, acquired and congenital long QT, ventricular fibrillation, shock-refractory VF or pulseless VT, electrical storm, ICD shock evaluation, Brugada syndrome, CPVT, arrhythmogenic cardiomyopathy, inflammatory ventricular arrhythmia, secondary and primary prevention ICDs, and VT ablation
+- Cross reference completed: RxPrep NAPLEX 2023 ventricular arrhythmia, antiarrhythmic, ECG, electrolyte, resuscitation, interaction, monitoring, and counseling scope
+- Current references reviewed: 2025 AHA adult advanced life support guidance, AHA and ACC ventricular arrhythmia and sudden cardiac death guidance, and 2022 ESC ventricular arrhythmia guidance summarized by the American College of Cardiology
+- Learning structure: six lessons, six native risk-map, monomorphic-VT, polymorphic-VT, arrest-and-storm, inherited-syndrome, and sudden-death-prevention diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions spanning PVC and NSVT risk, wide-complex diagnosis, structural evaluation, monomorphic and polymorphic VT, torsades, long-QT syndromes, VF resuscitation, electrical storm, ICD shocks, inherited and inflammatory syndromes, ICD selection, and catheter ablation; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: substrate determined PVC and NSVT risk; uncertain regular wide-complex tachycardia was handled cautiously as VT; instability required synchronized cardioversion; torsades was separated from normal-QT polymorphic VT; magnesium was not presented as universal therapy for normal-QT polymorphic VT; early defibrillation remained central for VF; electrical-storm care extended beyond repeated shocks; inherited phenotypes required specialist evaluation; ICD timing accounted for reversibility and recovery; ablation reduced recurrence without replacing longitudinal device protection
+- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 367 static pages generated
+- Goodnotes note: the dedicated ventricular arrhythmia lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -619,7 +631,7 @@ Target modules:
 1. ECG Interpretation (`built`, 108 question bank; Goodnotes reconciliation pending)
 2. Arrhythmia Pathophysiology (`built`, 104 question bank; Goodnotes reconciliation pending)
 3. Atrial Arrhythmias (`built`, 104 question bank; Goodnotes reconciliation pending)
-4. Ventricular Arrhythmias
+4. Ventricular Arrhythmias (`built`, 100 question bank; Goodnotes reconciliation pending)
 5. Antiarrhythmic Pharmacology and Medicinal Chemistry
 
 #### Heart failure and peripheral arterial disease
