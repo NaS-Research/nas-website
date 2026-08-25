@@ -12,6 +12,122 @@
   --nas-gold-light: #dfc18f;
 }
 
+.enteral-visual {
+  --enteral-accent: #d7b37a;
+  position: relative;
+  margin: 2.5rem 0 3rem;
+  padding: clamp(1.4rem, 3vw, 2.4rem);
+  overflow: hidden;
+  border: 1px solid rgba(215, 179, 122, 0.18);
+  border-radius: 1.75rem;
+  background:
+    radial-gradient(circle at 92% 5%, rgba(215, 179, 122, 0.1), transparent 36%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.025), transparent 55%);
+}
+
+.enteral-visual figcaption {
+  display: grid;
+  gap: 0.55rem;
+  max-width: 39rem;
+  margin-bottom: 2rem;
+}
+
+.enteral-visual figcaption span,
+.enteral-visual__index {
+  color: var(--enteral-accent);
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.enteral-visual figcaption strong {
+  max-width: 22ch;
+  color: #f5f1eb;
+  font-size: clamp(1.55rem, 3vw, 2.7rem);
+  font-weight: 480;
+  letter-spacing: -0.045em;
+  line-height: 1.02;
+}
+
+.enteral-visual__rail {
+  position: absolute;
+  top: 8.8rem;
+  right: 2.6rem;
+  bottom: 2.5rem;
+  width: 1px;
+  background: linear-gradient(transparent, rgba(215, 179, 122, 0.45), transparent);
+}
+
+.enteral-visual__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+  border-left: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.enteral-visual__node {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(3.6rem, auto) 1fr;
+  gap: 1rem;
+  min-height: 8.8rem;
+  padding: 1.4rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.09);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.enteral-visual__node strong {
+  display: block;
+  margin-bottom: 0.6rem;
+  color: #eee9e2;
+  font-size: 1rem;
+  font-weight: 520;
+}
+
+.enteral-visual__node p {
+  max-width: 26rem;
+  margin: 0;
+  color: rgba(238, 233, 226, 0.57);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.enteral-visual__arrow {
+  position: absolute;
+  right: 1rem;
+  bottom: 0.8rem;
+  color: rgba(215, 179, 122, 0.42);
+  font-size: 1.15rem;
+}
+
+.enteral-visual--access-route { --enteral-accent: #c99b7c; }
+.enteral-visual--delivery-prescription { --enteral-accent: #d3c17f; }
+.enteral-visual--formula-selection { --enteral-accent: #9dbb9a; }
+.enteral-visual--medication-administration { --enteral-accent: #b4a5cf; }
+.enteral-visual--monitoring-complications { --enteral-accent: #d38e7d; }
+
+@media (max-width: 720px) {
+  .enteral-visual {
+    margin: 2rem 0 2.5rem;
+    padding: 1.2rem;
+    border-radius: 1.35rem;
+  }
+
+  .enteral-visual__rail {
+    display: none;
+  }
+
+  .enteral-visual__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .enteral-visual__node {
+    grid-template-columns: minmax(3rem, auto) 1fr;
+    min-height: 7rem;
+    padding: 1.15rem;
+  }
+}
+
 html,
 body {
   @apply bg-black text-neutral-200 min-h-screen leading-relaxed overflow-x-hidden scroll-smooth;

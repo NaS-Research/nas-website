@@ -56,6 +56,17 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026
 - Source reconciliation: legacy fixed dosing and monitoring language was reframed as local protocol content; current chronic hypoparathyroidism therapy, hypercalciuria prevention, ferric carboxymaltose risk, acute phosphate toxicity, and long-term aluminum avoidance were added
 
+### Enteral Nutrition
+
+- DAST source: Enteral Nutrition, 81 pages, exported and text verified
+- Cross reference completed: RxPrep NAPLEX 2023 nutrition support, dosage-form, interaction, and calculation coverage
+- Current references reviewed: ASPEN enteral nutrition safe practices, ASPEN and SCCM adult critical care nutrition guidance, ASPEN refeeding consensus recommendations, and FDA enteral connector safety guidance
+- Learning structure: six lessons, six native clinical diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions with rate, delivered-volume, free-water, access, medication, and complication cases, ten sampled without replacement per attempt, answer order randomized
+- Source reconciliation: outdated routine residual monitoring, blanket medication hold intervals, formula marketing claims, and rigid hang-time language were narrowed to current evidence, manufacturer instructions, and facility protocol
+- Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, six diagrams, ten questions per attempt, a different question set on repeat attempt, scoring feedback, remediation links, and no console errors
+- Build verification: Next.js production build passed August 25, 2026
+
 ## Goodnotes availability
 
 ### Books
@@ -94,7 +105,7 @@ Target modules:
 2. Fluid and Electrolyte Therapy (`built`, 100 question bank)
 3. Acid-Base Interpretation (`built`, 100 question bank)
 4. Calcium and Phosphorus Homeostasis (`built`, 100 question bank)
-5. Enteral Nutrition
+5. Enteral Nutrition (`built`, 100 question bank)
 6. Parenteral Nutrition
 7. Parenteral Nutrition Calculations
 8. Pediatric Parenteral Nutrition
