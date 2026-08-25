@@ -4286,8 +4286,8 @@ body {
 
 .drug-profile-hero { padding-top: 9rem; padding-bottom: clamp(2.5rem, 6vw, 5rem); }
 .drug-profile-hero h1 { margin-top: 2.5rem; color: var(--nas-text); font-size: clamp(3.5rem, 9vw, 8rem); font-weight: 500; letter-spacing: -0.07em; line-height: 0.9; }
-.drug-profile-hero__meta { display: flex; flex-wrap: wrap; gap: 0.6rem 1rem; align-items: center; margin-top: 1.5rem; color: #858585; font-size: 0.75rem; }
-.drug-profile-hero__meta strong { color: #d0d0d0; font-size: 0.85rem; font-weight: 500; }
+.drug-profile-hero__meta { display: flex; flex-wrap: wrap; gap: 0.6rem 1rem; align-items: center; margin-top: 1.5rem; color: #858585; font-size: 0.82rem; }
+.drug-profile-hero__meta strong { color: #d0d0d0; font-size: 0.92rem; font-weight: 500; }
 .drug-profile-hero__meta span + span { padding-left: 1rem; border-left: 1px solid var(--nas-line); }
 .drug-profile-layout { display: grid; gap: 1rem; padding-bottom: 8rem; }
 .drug-profile-facts,
@@ -4318,8 +4318,8 @@ body {
 .drug-appearance > a,
 .drug-official-records > a { display: inline-block; margin-top: 1.25rem; color: #d2b27f; font-size: 0.7rem; }
 .drug-profile-safety { display: flex; justify-content: space-between; gap: 1rem; align-items: center; }
-.drug-profile-safety p { color: #707070; font-size: 0.7rem; line-height: 1.6; }
-.drug-profile-safety a { display: inline-flex; align-self: end; color: #d2b27f; font-size: 0.68rem; }
+.drug-profile-safety p { color: #777; font-size: 0.78rem; line-height: 1.65; }
+.drug-profile-safety a { display: inline-flex; align-self: end; color: #d2b27f; font-size: 0.76rem; }
 
 .official-label-card {
   grid-column: 1 / -1;
@@ -4353,7 +4353,7 @@ body {
 
 .official-label-card__identity dd {
   color: #a7a39e;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   line-height: 1.5;
 }
 
@@ -4372,10 +4372,10 @@ body {
 }
 
 .official-label-card__sections summary::-webkit-details-marker { display: none; }
-.official-label-card__sections summary strong { color: #bcb8b2; font-size: 0.75rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; }
+.official-label-card__sections summary strong { color: #bcb8b2; font-size: 0.82rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; }
 .official-label-card__sections summary i { color: #866f52; font-size: 1rem; font-style: normal; transition: transform 180ms ease; }
 .official-label-card__sections details[open] summary i { transform: rotate(45deg); }
-.official-label-card__sections details > p { max-width: 66rem; padding: 0 clamp(1.2rem, 4vw, 2.5rem) 2rem; color: #92908c; font-size: 0.78rem; line-height: 1.8; }
+.official-label-card__sections details > p { max-width: 66rem; padding: 0 clamp(1.2rem, 4vw, 2.5rem) 2rem; color: #999691; font-size: 0.9rem; line-height: 1.8; }
 
 .official-label-card__records {
   display: grid;
@@ -4385,10 +4385,10 @@ body {
 
 .official-label-card__records > span { margin-bottom: 0.8rem; }
 .official-label-card__records a { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 1rem; align-items: center; padding: 0.9rem 0; border-top: 1px solid #202020; }
-.official-label-card__records a strong { color: #9d9993; font-size: 0.68rem; font-weight: 500; line-height: 1.45; }
-.official-label-card__records a small { color: #605c56; font-size: 0.58rem; }
+.official-label-card__records a strong { color: #9d9993; font-size: 0.78rem; font-weight: 500; line-height: 1.45; }
+.official-label-card__records a small { color: #68635d; font-size: 0.66rem; }
 .official-label-card__records a i { color: #927651; font-style: normal; }
-.official-label-card__note { padding: 1rem clamp(1.4rem, 4vw, 2.5rem); border-top: 1px solid var(--nas-line); color: #595652; font-size: 0.61rem; line-height: 1.6; }
+.official-label-card__note { padding: 1rem clamp(1.4rem, 4vw, 2.5rem); border-top: 1px solid var(--nas-line); color: #625f5a; font-size: 0.7rem; line-height: 1.6; }
 .official-label-card__unavailable { display: grid; gap: 0.45rem; min-height: 14rem; place-content: center; padding: 2rem; text-align: center; }
 .official-label-card__unavailable strong { color: #aaa49d; font-size: 0.78rem; font-weight: 500; }
 .official-label-card__unavailable p { color: #68645f; font-size: 0.68rem; }
@@ -4434,13 +4434,13 @@ body {
 }
 .drug-study-card__mechanism { padding: clamp(1.4rem, 4vw, 2.25rem); border-bottom: 1px solid var(--nas-line); }
 .drug-study-card__mechanism h2 { color: #bdbdbd; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; }
-.drug-study-card__mechanism p { max-width: 55rem; margin-top: 1rem; color: #a2a2a2; font-size: 0.8rem; line-height: 1.65; }
+.drug-study-card__mechanism p { max-width: 55rem; margin-top: 1rem; color: #a8a8a8; font-size: 0.92rem; line-height: 1.65; }
 .drug-study-card__grid { display: grid; }
 .drug-study-card__section { min-width: 0; padding: clamp(1.4rem, 4vw, 2.25rem); border-bottom: 1px solid var(--nas-line); }
 .drug-study-card__section-title { display: flex; gap: 0.85rem; align-items: baseline; }
 .drug-study-card__section h3 { color: #bdbdbd; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; }
 .drug-study-card__section ul { display: grid; gap: 0.75rem; margin-top: 1.4rem; padding: 0; list-style: none; }
-.drug-study-card__section li { position: relative; padding-left: 1rem; color: #898989; font-size: 0.75rem; line-height: 1.55; }
+.drug-study-card__section li { position: relative; padding-left: 1rem; color: #929292; font-size: 0.86rem; line-height: 1.6; }
 .drug-study-card__section li::before { position: absolute; top: 0.62em; left: 0; width: 0.25rem; height: 0.25rem; border-radius: 50%; background: #8d704f; content: ""; }
 .drug-study-card__section--seriousRisks { background: linear-gradient(150deg, rgba(129, 55, 45, 0.1), transparent 70%); }
 .drug-study-card__section--seriousRisks li::before { background: #a95e51; }
