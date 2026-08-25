@@ -422,6 +422,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 363 static pages generated
 - Goodnotes note: the dedicated parenteral anticoagulant lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
+### ECG Interpretation
+
+- Course scope: electrical vectors, lead orientation, calibration, artifact, rate calculation, sinus rhythm, atrial fibrillation and flutter, PR, QRS, QTc, axis, AV block, bundle-branch block, ST and T changes, acute occlusion patterns, potassium and magnesium, medication effects, wide-complex tachycardia, unstable tachycardia, symptomatic bradycardia, and an instability-first interpretation workflow
+- Cross reference completed: RxPrep NAPLEX 2023 ECG, electrolyte, antiarrhythmic, ischemia, medication-safety, and emergency-cardiovascular scope
+- Current references reviewed: 2025 AHA adult advanced life support guideline and tachyarrhythmia algorithm, 2023 AHA and ACC atrial fibrillation guidance, and 2025 AHA and ACC acute coronary syndromes guidance
+- Learning structure: six lessons, six native signal, rhythm, interval, conduction, ischemia and metabolic, and emergency-workflow diagrams, and six embedded knowledge checks
+- Assessment: 108 original questions spanning calibration, vectors, P waves, QRS, regular and irregular rate calculation, sinus rhythm, AF, flutter, PR, QTc, axis, AV blocks, RBBB, LBBB, ST elevation and depression, T waves, electrolyte and drug effects, wide-complex tachycardia, unstable tachycardia, symptomatic bradycardia, artifact, and lead reversal; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: ECG interpretation began with calibration and clinical stability; automated measurements required manual verification when consequential; sinus rhythm required sinus P waves; atrial flutter was sought in regular rates near 150; QT correction limitations were explicit; AV block used atrial and ventricular relationships; LBBB neither proved nor excluded infarction; early negative troponin did not delay an occlusion pathway; normal ECG did not exclude dangerous hyperkalemia; unstable rhythms were treated before exhaustive taxonomy
+- Automated verification: 108 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 364 static pages generated
+- Goodnotes note: the dedicated ECG lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -580,7 +592,7 @@ Available documents:
 
 Target modules:
 
-1. ECG Interpretation
+1. ECG Interpretation (`built`, 108 question bank; Goodnotes reconciliation pending)
 2. Arrhythmia Pathophysiology
 3. Atrial Arrhythmias
 4. Ventricular Arrhythmias

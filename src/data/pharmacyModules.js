@@ -33,6 +33,7 @@ import { venousThromboembolismModule } from "@/data/modules/venousThromboembolis
 import { warfarinManagementModule } from "@/data/modules/warfarinManagement";
 import { directOralAnticoagulantsModule } from "@/data/modules/directOralAnticoagulants";
 import { parenteralAnticoagulantsModule } from "@/data/modules/parenteralAnticoagulants";
+import { ecgInterpretationModule } from "@/data/modules/ecgInterpretation";
 
 const sources = {
   foundation: "Foundation",
@@ -440,6 +441,6 @@ export function getPharmacyModule(slug) {
   return [...pharmacyModules, ...legacyPharmacyModules].find((module) => module.slug === slug);
 }
 
-export const pharmacyModules = [nutritionScreeningAssessmentModule, fluidElectrolyteTherapyModule, acidBaseInterpretationModule, calciumPhosphorusHomeostasisModule, enteralNutritionModule, parenteralNutritionModule, parenteralNutritionCalculationsModule, pediatricParenteralNutritionModule, autonomicNervousSystemFoundationsModule, cholinergicAgonistsInhibitorsModule, antimuscarinicPharmacologyModule, cholinergicMedicinalChemistryModule, anticholinergicMedicinalChemistryModule, cholinergicToxicologyModule, adrenergicAgonistsModule, adrenergicAntagonistsModule, adrenergicMedicinalChemistryModule, diureticPharmacologyModule, diureticMedicinalChemistryModule, glaucomaPharmacotherapyModule, hypertensionFoundationsModule, resistantSecondaryHypertensionModule, hypertensiveEmergenciesModule, antihypertensiveMedicinalChemistryModule, dyslipidemiaRiskModule, lipidLoweringPharmacologyModule, dyslipidemiaTherapeuticsModule, chronicCoronaryDiseaseModule, acuteCoronarySyndromesModule, antiplateletPharmacologyModule, coagulationAnticoagulantPharmacologyModule, venousThromboembolismModule, warfarinManagementModule, directOralAnticoagulantsModule, parenteralAnticoagulantsModule];
+export const pharmacyModules = [nutritionScreeningAssessmentModule, fluidElectrolyteTherapyModule, acidBaseInterpretationModule, calciumPhosphorusHomeostasisModule, enteralNutritionModule, parenteralNutritionModule, parenteralNutritionCalculationsModule, pediatricParenteralNutritionModule, autonomicNervousSystemFoundationsModule, cholinergicAgonistsInhibitorsModule, antimuscarinicPharmacologyModule, cholinergicMedicinalChemistryModule, anticholinergicMedicinalChemistryModule, cholinergicToxicologyModule, adrenergicAgonistsModule, adrenergicAntagonistsModule, adrenergicMedicinalChemistryModule, diureticPharmacologyModule, diureticMedicinalChemistryModule, glaucomaPharmacotherapyModule, hypertensionFoundationsModule, resistantSecondaryHypertensionModule, hypertensiveEmergenciesModule, antihypertensiveMedicinalChemistryModule, dyslipidemiaRiskModule, lipidLoweringPharmacologyModule, dyslipidemiaTherapeuticsModule, chronicCoronaryDiseaseModule, acuteCoronarySyndromesModule, antiplateletPharmacologyModule, coagulationAnticoagulantPharmacologyModule, venousThromboembolismModule, warfarinManagementModule, directOralAnticoagulantsModule, parenteralAnticoagulantsModule, ecgInterpretationModule];
 
 export const pharmacySubmoduleCount = pharmacyModules.reduce((total, module) => total + module.submodules.length, 0);
