@@ -237,6 +237,102 @@
   .pn-calc-visual__step strong { margin-top: 0.85rem; }
 }
 
+.peds-pn-visual {
+  position: relative;
+  margin: 2.5rem 0 3rem;
+  padding: clamp(1.4rem, 3vw, 2.5rem);
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--peds-pn-accent) 24%, transparent);
+  border-radius: 1.75rem;
+  background:
+    radial-gradient(circle at 93% 5%, color-mix(in srgb, var(--peds-pn-accent) 12%, transparent), transparent 36%),
+    linear-gradient(135deg, color-mix(in srgb, var(--peds-pn-accent) 5%, transparent), transparent 48%),
+    #080808;
+}
+
+.peds-pn-visual figcaption {
+  display: grid;
+  gap: 0.55rem;
+  margin-bottom: 2rem;
+}
+
+.peds-pn-visual figcaption span,
+.peds-pn-visual__step > span {
+  color: var(--peds-pn-accent);
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.peds-pn-visual figcaption strong {
+  max-width: 24ch;
+  color: #f4f1ec;
+  font-size: clamp(1.6rem, 3vw, 2.75rem);
+  font-weight: 480;
+  letter-spacing: -0.045em;
+  line-height: 1.02;
+}
+
+.peds-pn-visual__flow {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.peds-pn-visual__step {
+  position: relative;
+  min-height: 10.75rem;
+  padding: 1.3rem 1.15rem 1.25rem 0;
+}
+
+.peds-pn-visual__step:not(:last-child) {
+  margin-right: 1.15rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.peds-pn-visual__step strong {
+  display: block;
+  margin: 1.8rem 0 0.55rem;
+  color: #f0ede8;
+  font-size: 0.98rem;
+  font-weight: 540;
+}
+
+.peds-pn-visual__step p {
+  margin: 0;
+  color: rgba(240, 237, 232, 0.55);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+.peds-pn-visual__step i {
+  position: absolute;
+  top: 1.05rem;
+  right: 0.7rem;
+  color: color-mix(in srgb, var(--peds-pn-accent) 60%, transparent);
+  font-style: normal;
+}
+
+@media (max-width: 860px) {
+  .peds-pn-visual__flow { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .peds-pn-visual__step:nth-child(2) { margin-right: 0; border-right: 0; }
+}
+
+@media (max-width: 560px) {
+  .peds-pn-visual { padding: 1.2rem; border-radius: 1.3rem; }
+  .peds-pn-visual__flow { grid-template-columns: 1fr; }
+  .peds-pn-visual__step,
+  .peds-pn-visual__step:nth-child(2) {
+    min-height: 0;
+    margin-right: 0;
+    padding: 1.1rem 0 1.3rem;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .peds-pn-visual__step:last-child { border-bottom: 0; }
+  .peds-pn-visual__step strong { margin-top: 0.85rem; }
+}
+
 .enteral-visual {
   --enteral-accent: #d7b37a;
   position: relative;

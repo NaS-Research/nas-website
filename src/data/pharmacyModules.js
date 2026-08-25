@@ -5,6 +5,7 @@ import { calciumPhosphorusHomeostasisModule } from "@/data/modules/calciumPhosph
 import { enteralNutritionModule } from "@/data/modules/enteralNutrition";
 import { parenteralNutritionModule } from "@/data/modules/parenteralNutrition";
 import { parenteralNutritionCalculationsModule } from "@/data/modules/parenteralNutritionCalculations";
+import { pediatricParenteralNutritionModule } from "@/data/modules/pediatricParenteralNutrition";
 
 const sources = {
   foundation: "Foundation",
@@ -412,6 +413,6 @@ export function getPharmacyModule(slug) {
   return [...pharmacyModules, ...legacyPharmacyModules].find((module) => module.slug === slug);
 }
 
-export const pharmacyModules = [nutritionScreeningAssessmentModule, fluidElectrolyteTherapyModule, acidBaseInterpretationModule, calciumPhosphorusHomeostasisModule, enteralNutritionModule, parenteralNutritionModule, parenteralNutritionCalculationsModule];
+export const pharmacyModules = [nutritionScreeningAssessmentModule, fluidElectrolyteTherapyModule, acidBaseInterpretationModule, calciumPhosphorusHomeostasisModule, enteralNutritionModule, parenteralNutritionModule, parenteralNutritionCalculationsModule, pediatricParenteralNutritionModule];
 
 export const pharmacySubmoduleCount = pharmacyModules.reduce((total, module) => total + module.submodules.length, 0);
