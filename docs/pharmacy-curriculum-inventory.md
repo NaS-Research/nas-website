@@ -549,6 +549,17 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 374 static pages generated
 - Goodnotes note: the dedicated stroke lecture, chapter, and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
+### Secondary Stroke Prevention
+
+- Course scope: mechanism-based diagnostic ownership, emergency TIA evaluation, infarct-pattern interpretation, prolonged rhythm monitoring, adherence reconstruction, single antiplatelet options, early short-course aspirin and clopidogrel, symptomatic intracranial stenosis, long-term DAPT boundaries, antiplatelet and anticoagulant combination boundaries, atrial-fibrillation anticoagulation, start timing after infarction, product-specific DOAC dosing, mechanical valves, ventricular thrombus, symptomatic extracranial carotid stenosis, endarterectomy versus stenting, intracranial atherosclerosis, intensive lipid lowering, blood-pressure control, PFO closure, ESUS, cervical dissection, small-vessel stroke, behavior change, access, rehabilitation, recurrence recognition, and follow-up ownership
+- Current references reviewed: current AHA and ASA secondary stroke prevention guidance, current ACC implementation summary, and current DailyMed antithrombotic labeling
+- Learning structure: six lessons, six native mechanism, antithrombotic, atherosclerosis, cardioembolic, special-mechanism, and lifelong-prevention diagrams, and six embedded knowledge checks
+- Assessment: 104 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: prevention was assigned by mechanism rather than event label; TIA remained an emergency; prescribed therapy was separated from actual exposure; DAPT remained short and indication specific; antiplatelet plus anticoagulant therapy required a separate indication; AF generally required anticoagulation; start timing used infarct and hemorrhage rather than a universal day; DOAC reduction rules remained product specific; mechanical valves retained warfarin; carotid intervention required a symptomatic ipsilateral lesion; intracranial stenting was not first line; PFO closure required plausible causality; ESUS did not justify empiric anticoagulation or ticagrelor; behavior support and social access were treated as part of treatment exposure
+- Automated verification: 104 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 375 static pages generated
+- Goodnotes note: the stroke chapter and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -757,7 +768,7 @@ Available documents:
 Target modules:
 
 1. Acute Ischemic Stroke (`built`, 100 question bank; Goodnotes reconciliation pending)
-2. Secondary Stroke Prevention
+2. Secondary Stroke Prevention (`built`, 104 question bank; Goodnotes reconciliation pending)
 3. Acute Kidney Injury
 4. Chronic Kidney Disease
 5. CKD Complications
