@@ -61,6 +61,7 @@ import DrugInducedPulmonaryDiseaseVisual from "@/components/learn/DrugInducedPul
 import PituitaryPharmacologyVisual from "@/components/learn/PituitaryPharmacologyVisual";
 import DiabetesPathophysiologyMonitoringVisual from "@/components/learn/DiabetesPathophysiologyMonitoringVisual";
 import NoninsulinDiabetesPharmacotherapyVisual from "@/components/learn/NoninsulinDiabetesPharmacotherapyVisual";
+import InsulinTherapyVisual from "@/components/learn/InsulinTherapyVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -121,6 +122,7 @@ const drugInducedPulmonaryDiseaseVisualTypes = ["dipd-patterns", "dipd-causality
 const pituitaryPharmacologyVisualTypes = ["pituitary-axis", "pituitary-acromegaly", "pituitary-prolactin", "pituitary-replacement", "pituitary-vasopressin", "pituitary-emergencies"];
 const diabetesPathophysiologyMonitoringVisualTypes = ["diabetes-physiology", "diabetes-diagnosis", "diabetes-targets", "diabetes-monitoring", "diabetes-complications", "diabetes-longitudinal"];
 const noninsulinDiabetesPharmacotherapyVisualTypes = ["noninsulin-selection", "noninsulin-metformin", "noninsulin-sglt2", "noninsulin-glp1", "noninsulin-dpp4", "noninsulin-secretagogues", "noninsulin-tzd", "noninsulin-other", "noninsulin-outcomes", "noninsulin-combination"];
+const insulinTherapyVisualTypes = ["insulin-physiology", "insulin-profiles", "insulin-calculations", "insulin-type1", "insulin-basal", "insulin-intensification", "insulin-devices", "insulin-administration", "insulin-safety", "insulin-transitions"];
 
 export function generateStaticParams() {
   return pharmacyModules.map((module) => ({ slug: module.slug }));
@@ -246,6 +248,7 @@ export default async function PharmacyModulePage({ params }) {
               {pituitaryPharmacologyVisualTypes.includes(submodule.visual) && <PituitaryPharmacologyVisual type={submodule.visual} />}
               {diabetesPathophysiologyMonitoringVisualTypes.includes(submodule.visual) && <DiabetesPathophysiologyMonitoringVisual type={submodule.visual} />}
               {noninsulinDiabetesPharmacotherapyVisualTypes.includes(submodule.visual) && <NoninsulinDiabetesPharmacotherapyVisual type={submodule.visual} />}
+              {insulinTherapyVisualTypes.includes(submodule.visual) && <InsulinTherapyVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>

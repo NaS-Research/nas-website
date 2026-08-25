@@ -705,6 +705,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 388 static pages generated
 - Goodnotes note: the diabetes pharmacology lectures, workshop cases, and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
+### Insulin Therapy
+
+- Course scope: physiologic basal, prandial, and correction roles; high-alert medication safety; rapid, ultra-rapid, regular, NPH, long-acting, ultra-long, premixed, inhaled, and concentrated insulin profiles; total daily dose, basal fraction, carbohydrate ratio, correction factor, active insulin, quantity, and days-supply calculations; type 1 basal-bolus therapy; basal continuity during fasting; pattern adjustment; type 2 basal initiation and titration; overbasalization; basal-plus, basal-bolus, premixed, and GLP-1 combination intensification; pens, syringes, connected pens, pumps, CGM, and automated insulin delivery; pump interruption and backup injection planning; priming, injection, site rotation, lipohypertrophy, mixing, storage, stability, and disposal; hypoglycemia recognition, treatment, glucagon, exercise, alcohol, and sick-day care; scheduled inpatient insulin, nutrition and steroid adaptation, IV to subcutaneous transition, procedures, discharge reconciliation, access, and simplification
+- Current references reviewed: ADA Standards of Care in Diabetes 2026 sections on pharmacologic treatment, diabetes technology, glycemic goals and hypoglycemia, and inpatient care; current FDA prescribing-information database; and the RxPrep 2023 insulin chapter for historical scope comparison
+- Learning structure: ten content-driven lessons, ten native physiology, profile, calculation, type 1, basal, intensification, device, administration, safety, and transition diagrams, and ten embedded knowledge checks
+- Assessment: 100 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: insulin was organized by physiologic purpose before brand or schedule; product profiles and concentrations remained distinct; current guidance replaced the outdated assumption that every basal-bolus plan must be exactly half basal; type 1 diabetes preserved continuous basal insulin during fasting; type 2 basal initiation began conservatively and stopped escalating when fasting glucose was controlled; prandial coverage targeted the observed excursion; premixed insulin retained its fixed-ratio and meal-regularity tradeoff; AID remained preferred for appropriate insulin-treated populations but required education and a manual backup plan; pump interruption retained rapid ketosis risk; concentrated pen insulin was never withdrawn into a syringe; in-use stability remained product and device specific rather than a universal 28-day rule; site rotation included lipohypertrophy and changing absorption; glucagon accompanied insulin therapy; sick-day care preserved basal insulin and ketone monitoring; correction-only inpatient treatment remained discouraged; and IV to subcutaneous transitions included basal overlap
+- Automated verification: 100 unique question IDs, four unique choices per question, valid lesson links, ten diagrams, and no em dash or en dash characters in public prose
+- Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, ten diagrams, and all ten embedded knowledge checks with no console errors or warnings
+- Build verification: Next.js production build passed August 25, 2026 with 389 static pages generated
+- Goodnotes note: the insulin lectures, workshop cases, and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -943,7 +955,7 @@ Target modules:
 
 1. Diabetes Pathophysiology and Monitoring (`built`, 100 question bank; Goodnotes reconciliation pending)
 2. Noninsulin Diabetes Pharmacotherapy (`built`, 104 question bank; Goodnotes reconciliation pending)
-3. Insulin Therapy
+3. Insulin Therapy (`built`, 100 question bank; Goodnotes reconciliation pending)
 4. Diabetic Ketoacidosis
 5. Hyperosmolar Hyperglycemic State
 6. Thyroid Disorders
