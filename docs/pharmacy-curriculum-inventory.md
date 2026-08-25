@@ -494,6 +494,17 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 369 static pages generated
 - Goodnotes note: the dedicated heart-failure pathophysiology lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
+### Chronic Heart Failure Pharmacotherapy
+
+- Course scope: four-pillar HFrEF therapy, rapid sequencing, ARNI, ACE-inhibitor washout, ACE inhibitor and ARB alternatives, evidence-based beta blockers, MRA, SGLT2 inhibitors, loop diuretics, diuretic resistance, hydralazine and isosorbide dinitrate, ivabradine, digoxin, vericiguat, iron deficiency, HFmrEF, HFpEF, obesity-related HFpEF, HFimpEF, hypotension, kidney trajectory, adherence, access, devices, and advanced referral
+- Current references reviewed: 2022 AHA, ACC, and HFSA heart failure guidance, 2024 ACC HFrEF expert consensus, 2026 ACC HFpEF expert consensus, and current DailyMed labeling
+- Learning structure: six lessons, six native treatment-pillar, RAS-and-MRA, rate-strategy, SGLT2-and-diuresis, residual-risk, and phenotype-implementation diagrams, and six embedded checks
+- Assessment: 104 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: broad early pillar coverage replaced a rigid one-drug ladder; beta blockade followed compensation; ACE-to-ARNI transition retained the 36-hour washout; SGLT2 benefit extended beyond diabetes; loop diuresis was separated from disease modification; HFpEF used 2026 multisystem and obesity guidance; HFimpEF retained therapy; laboratory and pressure changes were interpreted by trajectory; adherence barriers were treated as clinical data
+- Automated verification: 104 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 370 static pages generated
+- Goodnotes note: the dedicated chronic heart-failure lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -678,7 +689,7 @@ Available documents:
 Target modules:
 
 1. Heart Failure Pathophysiology (`built`, 104 question bank; Goodnotes reconciliation pending)
-2. Chronic Heart Failure Pharmacotherapy
+2. Chronic Heart Failure Pharmacotherapy (`built`, 104 question bank; Goodnotes reconciliation pending)
 3. Acute Decompensated Heart Failure
 4. Heart Failure Medicinal Chemistry
 5. Peripheral Arterial Disease

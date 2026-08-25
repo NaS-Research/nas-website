@@ -42,6 +42,7 @@ import AtrialArrhythmiasVisual from "@/components/learn/AtrialArrhythmiasVisual"
 import VentricularArrhythmiasVisual from "@/components/learn/VentricularArrhythmiasVisual";
 import AntiarrhythmicPharmacologyVisual from "@/components/learn/AntiarrhythmicPharmacologyVisual";
 import HeartFailurePathophysiologyVisual from "@/components/learn/HeartFailurePathophysiologyVisual";
+import ChronicHeartFailureVisual from "@/components/learn/ChronicHeartFailureVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -83,6 +84,7 @@ const atrialArrhythmiasVisualTypes = ["atrial-arrhythmia-map", "atrial-af-framew
 const ventricularArrhythmiasVisualTypes = ["ventricular-risk-map", "ventricular-monomorphic", "ventricular-polymorphic", "ventricular-arrest-storm", "ventricular-inherited", "ventricular-prevention"];
 const antiarrhythmicPharmacologyVisualTypes = ["antiarrhythmic-framework", "antiarrhythmic-sodium", "antiarrhythmic-potassium", "antiarrhythmic-multichannel", "antiarrhythmic-selection", "antiarrhythmic-monitoring"];
 const heartFailurePathophysiologyVisualTypes = ["hf-definition-stages", "hf-pump-mechanics", "hf-neurohormonal", "hf-congestion-cardiorenal", "hf-phenotypes", "hf-diagnostic-trajectory"];
+const chronicHeartFailureVisualTypes = ["hf-treatment-pillars", "hf-ras-mra", "hf-beta-rate", "hf-sglt2-diuresis", "hf-additional-therapy", "hf-phenotype-implementation"];
 
 export function generateStaticParams() {
   return pharmacyModules.map((module) => ({ slug: module.slug }));
@@ -189,6 +191,7 @@ export default async function PharmacyModulePage({ params }) {
               {ventricularArrhythmiasVisualTypes.includes(submodule.visual) && <VentricularArrhythmiasVisual type={submodule.visual} />}
               {antiarrhythmicPharmacologyVisualTypes.includes(submodule.visual) && <AntiarrhythmicPharmacologyVisual type={submodule.visual} />}
               {heartFailurePathophysiologyVisualTypes.includes(submodule.visual) && <HeartFailurePathophysiologyVisual type={submodule.visual} />}
+              {chronicHeartFailureVisualTypes.includes(submodule.visual) && <ChronicHeartFailureVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
