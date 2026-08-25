@@ -100,6 +100,17 @@ This inventory records the source material available in the founder's Goodnotes 
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, six diagrams, ten questions per attempt, different questions and answer order on repeat attempt, complete scoring with explanations and ten remediation links, and no current browser errors or warnings
 - Build verification: Next.js production build passed August 25, 2026 with 336 static pages generated
 
+### Autonomic Nervous System Foundations
+
+- DAST source: Intro to Autonomic Nervous System, 65 pages, exported and text verified
+- Cross reference completed: RxPrep NAPLEX 2023 autonomic pharmacology scope
+- Current references reviewed: IUPHAR and BPS muscarinic, nicotinic, adrenoceptor, and vesicular amine transporter resources, plus the 2024 American Physiological Society review of cardiac autonomic regulation
+- Learning structure: six lessons, six native mechanistic diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions with anatomy, transmitter mapping, receptor signaling, cholinergic and adrenergic transmission, organ-response, toxidrome, and baroreflex cases; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: the lecture's simplified receptor and organ rules were retained only as entry points, then expanded to distinguish receptor subtype, tissue context, baseline tone, cotransmission, direct effect, and reflex compensation; NET was identified as a major local norepinephrine termination mechanism rather than presenting COMT as the sole off-switch
+- Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, six diagrams, ten questions per attempt, different questions and answer order on repeat attempt, complete scoring with explanations and ten remediation links, and no browser errors or warnings
+- Build verification: Next.js production build passed August 25, 2026 with 337 static pages generated
+
 ## Goodnotes availability
 
 ### Books
@@ -147,7 +158,7 @@ Target modules:
 
 Available documents:
 
-- Intro: Autonomic Nervous System
+- Intro: Autonomic Nervous System (`exported`, 65 pages)
 - Cholinoceptor-Activating and Cholinesterase-Inhibiting Drugs
 - Cholinoceptor Blockers and Cholinesterase Regenerators
 - Cholinergic Agents Medicinal Chemistry
@@ -155,7 +166,7 @@ Available documents:
 
 Target modules:
 
-1. Autonomic Nervous System Foundations
+1. Autonomic Nervous System Foundations (`built`, 100 question bank)
 2. Cholinergic Agonists and Cholinesterase Inhibitors
 3. Antimuscarinic Pharmacology
 4. Cholinergic Medicinal Chemistry

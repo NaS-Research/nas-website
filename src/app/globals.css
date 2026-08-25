@@ -9941,3 +9941,175 @@ summary:focus-visible {
     flex-direction: column;
   }
 }
+.ans-visual {
+  --ans-accent: #c89b75;
+  margin: clamp(2rem, 5vw, 4rem) 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  padding: clamp(1.5rem, 4vw, 2.75rem) 0;
+  overflow: hidden;
+}
+
+.ans-visual figcaption {
+  display: grid;
+  gap: 0.45rem;
+  margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.ans-visual figcaption span {
+  color: var(--ans-accent);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.ans-visual figcaption strong {
+  color: #f5f3ef;
+  font-size: clamp(1.45rem, 3.4vw, 2.35rem);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  line-height: 1.05;
+}
+
+.ans-visual__flow,
+.ans-visual__cycle,
+.ans-visual__receptors {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.ans-visual__cycle {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.ans-visual__node,
+.ans-visual__cycle > div,
+.ans-visual__receptors > div {
+  min-height: 9.5rem;
+  padding: 1.15rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+  position: relative;
+}
+
+.ans-visual__node:first-child,
+.ans-visual__cycle > div:first-child,
+.ans-visual__receptors > div:first-child {
+  border-left-color: var(--ans-accent);
+}
+
+.ans-visual__node > span,
+.ans-visual__cycle span {
+  display: block;
+  color: var(--ans-accent);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.ans-visual__node strong,
+.ans-visual__cycle strong,
+.ans-visual__receptors strong {
+  color: #f4f1ec;
+  display: block;
+  font-size: 1rem;
+  font-weight: 520;
+  line-height: 1.2;
+}
+
+.ans-visual__node p,
+.ans-visual__cycle p,
+.ans-visual__receptors p {
+  color: rgba(244, 241, 236, 0.57);
+  font-size: 0.78rem;
+  line-height: 1.45;
+  margin: 0.55rem 0 0;
+}
+
+.ans-visual__node i {
+  color: var(--ans-accent);
+  font-style: normal;
+  position: absolute;
+  right: -0.45rem;
+  top: 50%;
+  z-index: 1;
+}
+
+.ans-visual__lanes {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.ans-visual__lanes > div {
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: 1fr 1.25fr auto 1.35fr 0.85fr;
+  min-height: 4.2rem;
+}
+
+.ans-visual__lanes strong {
+  color: #f4f1ec;
+  font-size: 0.9rem;
+  font-weight: 520;
+}
+
+.ans-visual__lanes span,
+.ans-visual__lanes em {
+  color: rgba(244, 241, 236, 0.62);
+  font-size: 0.78rem;
+  font-style: normal;
+}
+
+.ans-visual__lanes i {
+  color: var(--ans-accent);
+  font-style: normal;
+}
+
+.ans-visual__receptors > div span,
+.ans-visual__receptors > div em {
+  display: block;
+  font-size: 0.72rem;
+  font-style: normal;
+  margin-top: 0.45rem;
+}
+
+.ans-visual__receptors > div span {
+  color: var(--ans-accent);
+  font-weight: 650;
+}
+
+.ans-visual__receptors > div em {
+  color: rgba(244, 241, 236, 0.42);
+}
+
+@media (max-width: 720px) {
+  .ans-visual__flow,
+  .ans-visual__cycle,
+  .ans-visual__receptors {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ans-visual__node:nth-child(3),
+  .ans-visual__cycle > div:nth-child(3),
+  .ans-visual__cycle > div:nth-child(5),
+  .ans-visual__receptors > div:nth-child(3) {
+    border-left-color: var(--ans-accent);
+  }
+
+  .ans-visual__node i {
+    display: none;
+  }
+
+  .ans-visual__lanes > div {
+    align-items: start;
+    gap: 0.35rem;
+    grid-template-columns: 1fr;
+    padding: 1rem 0;
+  }
+
+  .ans-visual__lanes i {
+    display: none;
+  }
+}
