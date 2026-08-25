@@ -446,6 +446,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 365 static pages generated
 - Goodnotes note: the dedicated arrhythmia pathophysiology lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
+### Atrial Arrhythmias
+
+- Course scope: clinical AF confirmation and staging, atrial flutter, focal and multifocal atrial tachycardia, AF burden, substrate modification, AF-mediated cardiomyopathy, unstable cardioversion, acute and chronic rate control, digoxin, rhythm-drug selection, pill-in-the-pocket therapy, thromboembolic and bleeding risk, DOAC and warfarin selection, left atrial appendage occlusion, vagal maneuvers, adenosine, AVNRT, AVRT, preexcited AF, and catheter ablation
+- Cross reference completed: RxPrep NAPLEX 2023 atrial arrhythmia, antiarrhythmic, anticoagulation, ECG, interaction, monitoring, and counseling scope
+- Current references reviewed: 2023 AHA and ACC atrial fibrillation guidance, AHA and ACC SVT guidance, and 2025 AHA emergency cardiovascular guidance
+- Learning structure: six lessons, six native rhythm-map, AF-framework, rate-and-rhythm, stroke-prevention, SVT-circuit, and high-risk-state diagrams, and six embedded knowledge checks
+- Assessment: 104 original questions spanning AF diagnosis and stages, flutter, focal AT, MAT, risk-factor modification, burden, cardiomyopathy, unstable AF, rate and rhythm drugs, cardioversion, anticoagulation, bleeding mitigation, appendage occlusion, vagal maneuvers, adenosine, AVNRT, AVRT, concealed pathways, preexcited AF, and ablation; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: wearable alerts did not substitute for clinician-confirmed AF; permanent AF remained a shared strategy decision; MAT retained organized P waves and a systemic-disease focus; AF risk-factor care was integrated with rhythm therapy; instability overrode elective cardioversion sequencing; negative inotropy shaped rate control; antiarrhythmic selection followed structural substrate; aspirin was not presented as anticoagulation; bleeding scores did not automatically deny stroke prevention; AV nodal blockers were excluded from preexcited AF; ablation success did not automatically stop anticoagulation
+- Automated verification: 104 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 366 static pages generated
+- Goodnotes note: the dedicated atrial arrhythmia lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -606,7 +618,7 @@ Target modules:
 
 1. ECG Interpretation (`built`, 108 question bank; Goodnotes reconciliation pending)
 2. Arrhythmia Pathophysiology (`built`, 104 question bank; Goodnotes reconciliation pending)
-3. Atrial Arrhythmias
+3. Atrial Arrhythmias (`built`, 104 question bank; Goodnotes reconciliation pending)
 4. Ventricular Arrhythmias
 5. Antiarrhythmic Pharmacology and Medicinal Chemistry
 
