@@ -482,6 +482,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 368 static pages generated
 - Goodnotes note: the dedicated antiarrhythmic pharmacology and medicinal-chemistry lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
+### Heart Failure Pathophysiology
+
+- Course scope: clinical definition, stages A through D, HFrEF, HFmrEF, HFpEF, HFimpEF, ejection-fraction limitations, pressure-volume loops, preload, compliance, afterload, contractility, Frank-Starling response, systolic and diastolic dysfunction, sympathetic and RAAS activation, natriuretic peptides, remodeling, pulmonary and systemic congestion, cardiorenal syndrome, low-output physiology, right-ventricular failure, biomarkers, multimodality imaging, hemodynamic confirmation, decompensation triggers, trajectory, and advanced heart failure
+- Cross reference completed: RxPrep NAPLEX 2023 heart failure pathophysiology, biomarker, diagnostic, hemodynamic, renal, electrolyte, and monitoring scope
+- Current references reviewed: 2022 AHA, ACC, and HFSA heart failure guidance, 2023 ACC HFpEF expert consensus, and 2024 ACC hospitalized heart failure expert consensus update
+- Learning structure: six lessons, six native staging, pump-mechanics, neurohormonal, congestion-and-cardiorenal, phenotype, and diagnostic-trajectory diagrams, and six embedded knowledge checks
+- Assessment: 104 original questions spanning definition, stage, phenotype, ejection fraction, pressure-volume mechanics, loading, contractility, systolic and diastolic dysfunction, neurohormonal signaling, peptides, remodeling, pulmonary and systemic congestion, kidney interaction, low output, right-heart failure, biomarkers, imaging, triggers, and advanced disease; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: symptoms required objective cardiac support; stage remained distinct from ejection-fraction phenotype; improved ejection fraction was treated as remission rather than cure; ejection fraction was not treated as direct contractility or output; filling pressure was separated from volume; afterload included vascular, valve, and geometric load; compensation was framed as time-dependent; natriuretic peptides retained obesity, AF, kidney, age, and treatment context; venous congestion was an active organ-injury mechanism; creatinine changes were interpreted against decongestion and perfusion; HFpEF required evidence and mimic exclusion; advanced-care referral preceded overt shock
+- Automated verification: 104 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 369 static pages generated
+- Goodnotes note: the dedicated heart-failure pathophysiology lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -665,7 +677,7 @@ Available documents:
 
 Target modules:
 
-1. Heart Failure Pathophysiology
+1. Heart Failure Pathophysiology (`built`, 104 question bank; Goodnotes reconciliation pending)
 2. Chronic Heart Failure Pharmacotherapy
 3. Acute Decompensated Heart Failure
 4. Heart Failure Medicinal Chemistry
