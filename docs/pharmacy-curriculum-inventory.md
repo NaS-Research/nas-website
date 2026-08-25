@@ -560,6 +560,17 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 375 static pages generated
 - Goodnotes note: the stroke chapter and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
+### Acute Kidney Injury
+
+- Course scope: time-based AKI definition and staging, baseline reconstruction, creatinine kinetics, urine output, pseudoAKI, hemodynamic AKI, acute tubular injury, interstitial nephritis, glomerular disease, obstruction, fluid responsiveness, balanced crystalloids, vasopressor-supported perfusion, venous congestion, fluid overload, nephrotoxin mechanisms, unstable-function drug dosing, loading and maintenance doses, contrast-associated AKI, RAAS and SGLT2 transitions, hyperkalemia, metabolic acidosis, kidney replacement indications and modalities, native recovery, drug redosing, AKD, and post-AKI follow-up
+- Current references reviewed: published KDIGO 2012 AKI guidance, acute kidney disease consensus, current DailyMed labeling, and the 2026 KDIGO AKI and AKD public-review draft clearly labeled as draft
+- Learning structure: six lessons, six native detection, cause, hemodynamic, medication, complication, and recovery diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: AKI remained a trajectory rather than a single creatinine; stage used the worse creatinine or urine-output criterion; steady-state eGFR was rejected during rapidly changing function; pseudoAKI was separated from structural injury; prerenal labeling did not replace hemodynamic reasoning; fluid responsiveness was separated from need for fluid; congestion was treated as an active kidney insult; drug effects were classified by mechanism; loading and maintenance doses were separated; contrast decisions used net benefit; medication holds received restart plans; diuretics treated overload rather than kidney injury; KRT began for clinical homeostatic failure rather than a creatinine threshold; the 2026 update remained draft pending final publication
+- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 376 static pages generated
+- Goodnotes note: the AKI lecture, chapter, and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -769,7 +780,7 @@ Target modules:
 
 1. Acute Ischemic Stroke (`built`, 100 question bank; Goodnotes reconciliation pending)
 2. Secondary Stroke Prevention (`built`, 104 question bank; Goodnotes reconciliation pending)
-3. Acute Kidney Injury
+3. Acute Kidney Injury (`built`, 100 question bank; Goodnotes reconciliation pending)
 4. Chronic Kidney Disease
 5. CKD Complications
 6. Renal Replacement Therapy
