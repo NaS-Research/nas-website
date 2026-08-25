@@ -55,12 +55,14 @@ export default function FullBodyAtlas({ initialFocus = null, onOpenHeart }) {
   }, [focusedLayer, viewerReady, visibleLayers]);
 
   const selectedLayer = selected ? bodyLayers.find((layer) => layer.id === selected.layerId) : null;
+  const stageLabel = focusedLayer
+    ? bodyLayers.find((layer) => layer.id === focusedLayer)?.name
+    : visibleLayers.size === 0 ? "No layers visible" : "Whole body";
 
   function toggleLayer(layerId) {
     setVisibleLayers((current) => {
       const next = new Set(current);
       if (next.has(layerId)) {
-        if (next.size === 1) return next;
         next.delete(layerId);
         if (focusedLayer === layerId) setFocusedLayer(null);
       } else {
@@ -88,7 +90,7 @@ export default function FullBodyAtlas({ initialFocus = null, onOpenHeart }) {
       <div className="full-body-atlas__stage">
         <div className="full-body-atlas__stage-heading">
           <span>3D body map</span>
-          <strong>{focusedLayer ? bodyLayers.find((layer) => layer.id === focusedLayer)?.name : "Whole body"}</strong>
+          <strong>{stageLabel}</strong>
         </div>
         <iframe ref={frameRef} src="/learn/body-atlas/index.html" className="full-body-atlas__viewer" title="Interactive layered three dimensional human body" />
         <div className="full-body-atlas__instructions" aria-hidden="true">
