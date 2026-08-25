@@ -593,6 +593,17 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 378 static pages generated
 - Goodnotes note: the CKD secondary-complications chapter and CKD notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
+### Renal Replacement Therapy
+
+- Course scope: clinical initiation indications, transplant and modality choice, comprehensive conservative care, urgent versus planned start, ESKD Life-Plan, vessel preservation, diffusion, convection, adsorption, ultrafiltration, Kt/V, residual kidney function, hemodialysis blood and dialysate flow, membrane and duration, dialysate composition, ultrafiltration rate and target weight, delivered-dose audit, CAPD and APD, PD exchange mechanics, dextrose and icodextrin, peritoneal transport testing, total PD adequacy, fistula, graft and catheter selection, access examination and dysfunction, central venous and PD catheter infection, peritonitis evaluation and empiric therapy, dialysis disequilibrium, drug dialyzability, loading, maintenance and supplemental doses, goal-directed adequacy, and transitions across hospitalization, recovery, transplant and modality change
+- Current references reviewed: KDIGO dialysis initiation, modality, access and prescription report, KDIGO home dialysis report, KDOQI vascular access guideline and implementation tools, current ISPD guideline suite, KDIGO symptom-based dialysis complications resources, and current DailyMed labeling
+- Learning structure: six lessons, six native choice, transport-mechanics, hemodialysis, peritoneal-dialysis, access-safety, and longitudinal-care diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: dialysis started for clinical consequences rather than eGFR or BUN; urgent-start logistics did not become a permanent modality choice; transplant, home therapies and conservative care were presented as complete pathways; access selection followed an ESKD Life-Plan rather than a universal fistula-first slogan; fluid removal remained separate from solute clearance; Kt/V remained one dimension of adequacy; residual kidney function contributed to both prescription and drug dosing; dialysate composition was treated as an active medication; delivered treatment was audited instead of assuming the written prescription occurred; PD dwell time separated solute equilibration from osmotic-gradient loss; peritonitis required immediate effluent studies and prompt empiric intraperitoneal treatment; initial severe azotemia triggered gentler clearance to reduce disequilibrium risk; dialyzability combined drug properties with the actual prescription; loading, maintenance and replacement doses remained separate; patient-valued outcomes remained part of adequacy
+- Automated verification: 100 unique question IDs, four unique choices per question, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 379 static pages generated
+- Goodnotes note: the renal replacement therapy document remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -805,7 +816,7 @@ Target modules:
 3. Acute Kidney Injury (`built`, 100 question bank; Goodnotes reconciliation pending)
 4. Chronic Kidney Disease (`built`, 100 question bank; Goodnotes reconciliation pending)
 5. CKD Complications (`built`, 100 question bank; Goodnotes reconciliation pending)
-6. Renal Replacement Therapy
+6. Renal Replacement Therapy (`built`, 100 question bank; Goodnotes reconciliation pending)
 
 ### DAST IV
 
