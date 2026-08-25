@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const learningPaths = [
@@ -29,12 +28,12 @@ export default function HomeLearnFeature() {
         <header className="home-learn__header">
           <div>
             <p className="home-learn__kicker">NaS Learn</p>
-            <h2 id="home-learn-title">Pharmacy, built to be explored.</h2>
+            <h2 id="home-learn-title">Learn the medicine. See the whole system.</h2>
           </div>
           <div className="home-learn__introduction">
             <p>
-              A connected learning environment for understanding medications through
-              anatomy, pharmacology, clinical reasoning, safety, and interactions.
+              Pharmacy becomes clearer when mechanism, anatomy, evidence, and patient
+              care are studied together. NaS Learn is built around those connections.
             </p>
             <Link href="/learn/pharmacy">
               Enter NaS Learn <span aria-hidden="true">↗</span>
@@ -44,27 +43,36 @@ export default function HomeLearnFeature() {
 
         <div className="home-learn__showcase">
           <Link
-            href="/learn/pharmacy/atlas"
-            className="home-learn__visual"
-            aria-label="Open the interactive pharmacy visual atlas"
+            href="/learn/pharmacy/drug-formulations-and-routes"
+            className="home-learn__workspace"
+            aria-label="Study drug formulations and routes in NaS Learn"
           >
-            <div className="home-learn__visual-bar">
-              <span>Interactive anatomy</span>
-              <span>Human heart</span>
+            <div className="home-learn__workspace-bar">
+              <span>Connected learning</span>
+              <span>Pharmacy · Foundations</span>
             </div>
-            <div className="home-learn__image-wrap">
-              <div className="home-learn__orbit" aria-hidden="true" />
-              <Image
-                src="/learn/models/realistic-heart-preview.jpeg"
-                alt="Detailed anatomical model of the human heart"
-                width={1200}
-                height={1200}
-                sizes="(max-width: 767px) 100vw, 58vw"
-                className="home-learn__image"
-              />
-              <span className="home-learn__visual-cta">
-                Open Visual Atlas <span aria-hidden="true">↗</span>
-              </span>
+            <div className="home-learn__module">
+              <div className="home-learn__module-index" aria-hidden="true">01</div>
+              <div className="home-learn__module-copy">
+                <span>Current module</span>
+                <h3>Drug formulations and routes</h3>
+                <p>Follow a medicine from dosage form to delivery, absorption, and clinical use.</p>
+              </div>
+
+              <div className="home-learn__concept-path" aria-label="Medication learning pathway">
+                <span><small>01</small><strong>Dosage form</strong></span>
+                <i aria-hidden="true">→</i>
+                <span><small>02</small><strong>Route</strong></span>
+                <i aria-hidden="true">→</i>
+                <span><small>03</small><strong>Absorption</strong></span>
+                <i aria-hidden="true">→</i>
+                <span><small>04</small><strong>Clinical effect</strong></span>
+              </div>
+
+              <div className="home-learn__module-footer">
+                <div><span>Read</span><span>Explore</span><span>Test</span></div>
+                <strong>Open module <span aria-hidden="true">↗</span></strong>
+              </div>
             </div>
           </Link>
 
