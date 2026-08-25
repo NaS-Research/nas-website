@@ -4120,6 +4120,59 @@ body {
 .drug-library__toolbar input::placeholder { color: #606060; }
 .drug-library__toolbar p { color: #5d5d5d; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em; }
 
+.drug-library__filter-deck {
+  display: grid;
+  gap: 1rem;
+  align-items: end;
+  padding-block: 1rem;
+  border-bottom: 1px solid var(--nas-line);
+}
+
+.drug-library__collections {
+  display: flex;
+  width: fit-content;
+  overflow: hidden;
+  border: 1px solid #29251f;
+  border-radius: 999px;
+}
+
+.drug-library__collections button {
+  min-width: 5.2rem;
+  padding: 0.7rem 1rem;
+  color: #747474;
+  font-size: 0.66rem;
+  cursor: pointer;
+}
+
+.drug-library__collections button + button { border-left: 1px solid #29251f; }
+.drug-library__collections button:hover { color: #d5b987; }
+.drug-library__collections button.is-active { background: var(--nas-gold-light); color: #17120c; }
+
+.drug-library__class-filter {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.drug-library__class-filter span {
+  color: #5d5d5d;
+  font-size: 0.57rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.drug-library__class-filter select {
+  width: 100%;
+  border: 1px solid #29251f;
+  border-radius: 999px;
+  padding: 0.7rem 2.5rem 0.7rem 1rem;
+  background: #080808;
+  color: #a4a4a4;
+  font-size: 0.68rem;
+  outline: 0;
+}
+
+.drug-library__class-filter select:focus { border-color: #725f46; }
+
 .drug-library__letters {
   display: flex;
   gap: 0.25rem;
@@ -4189,6 +4242,10 @@ body {
 .drug-library__rxnorm-result strong { color: #bcbcbc; font-size: 0.8rem; font-weight: 500; }
 .drug-library__rxnorm-result i { color: #7a6859; font-style: normal; }
 .drug-library__source { max-width: 52rem; margin-top: 1.5rem; color: #545454; font-size: 0.63rem; line-height: 1.6; }
+.drug-library__source a { color: #8e7859; text-decoration: underline; text-underline-offset: 0.16rem; }
+.drug-library__empty { display: grid; min-height: 15rem; place-content: center; gap: 0.45rem; border: 1px solid var(--nas-line); text-align: center; }
+.drug-library__empty strong { color: #aaa; font-weight: 500; }
+.drug-library__empty p { color: #5e5e5e; font-size: 0.72rem; }
 
 .drug-questions { padding-top: clamp(2.5rem, 6vw, 5rem); }
 .drug-questions__header { display: grid; gap: 2rem; }
@@ -6196,6 +6253,11 @@ body {
   .drug-library__toolbar {
     grid-template-columns: minmax(0, 1fr) auto;
     align-items: center;
+  }
+
+  .drug-library__filter-deck {
+    grid-template-columns: auto minmax(15rem, 22rem);
+    justify-content: space-between;
   }
 
   .drug-library__grid {

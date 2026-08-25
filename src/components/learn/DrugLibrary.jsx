@@ -6,7 +6,8 @@ import { coreDrugs } from "@/data/drugLibrary";
 import DrugQuestionBank from "@/components/learn/DrugQuestionBank";
 
 const letters = ["All", ..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
-const studyCategories = ["All categories", "Cardiovascular", "Endocrine", "Neurology and psychiatry", "Respiratory", "Gastrointestinal"];
+const studySystems = ["All systems", ...new Set(coreDrugs.map((drug) => drug.system).filter(Boolean))];
+const studyClasses = ["All classes", ...new Set(coreDrugs.map((drug) => drug.className).filter(Boolean))];
 
 function displayName(name) {
   return name.replace(/\b\w/g, (letter) => letter.toUpperCase());
@@ -16,7 +17,9 @@ export default function DrugLibrary() {
   const [mode, setMode] = useState("core");
   const [query, setQuery] = useState("");
   const [letter, setLetter] = useState("All");
-  const [category, setCategory] = useState("All categories");
+  const [collectionSize, setCollectionSize] = useState("300");
+  const [system, setSystem] = useState("All systems");
+  const [classFilter, setClassFilter] = useState("All classes");
   const [limit, setLimit] = useState(36);
   const [rxResults, setRxResults] = useState([]);
   const [searching, setSearching] = useState(false);
@@ -27,10 +30,12 @@ export default function DrugLibrary() {
     return coreDrugs.filter((drug) => {
       const matchesLetter = letter === "All" || drug.generic.startsWith(letter.toLowerCase());
       const matchesQuery = !normalized || `${drug.generic} ${drug.brand || ""} ${drug.className || ""}`.toLowerCase().includes(normalized);
-      const matchesCategory = category === "All categories" || drug.system === category;
-      return matchesLetter && matchesQuery && matchesCategory;
+      const matchesCollection = drug.number <= Number(collectionSize);
+      const matchesSystem = system === "All systems" || drug.system === system;
+      const matchesClass = classFilter === "All classes" || drug.className === classFilter;
+      return matchesLetter && matchesQuery && matchesCollection && matchesSystem && matchesClass;
     });
-  }, [category, letter, query]);
+  }, [classFilter, collectionSize, letter, query, system]);
 
   useEffect(() => {
     if (mode !== "all" || query.trim().length < 2) {
@@ -65,7 +70,9 @@ export default function DrugLibrary() {
     setMode(nextMode);
     setQuery("");
     setLetter("All");
-    setCategory("All categories");
+    setCollectionSize("300");
+    setSystem("All systems");
+    setClassFilter("All classes");
     setLimit(36);
   }
 
@@ -76,12 +83,12 @@ export default function DrugLibrary() {
           <p className="nas-section-label">Medication library</p>
           <h1 id="drug-library-title">Know the drug. See the product. Connect the science.</h1>
         </div>
-        <p>Study the core 200, then search the current RxNorm vocabulary for medications beyond the card set.</p>
+        <p>Study the ranked top 300 outpatient medications, then search the current RxNorm vocabulary beyond the curated card set.</p>
       </header>
 
       <div className="drug-library__tabs" role="tablist" aria-label="Drug collections">
         <button type="button" role="tab" aria-selected={mode === "core"} className={mode === "core" ? "is-active" : ""} onClick={() => changeMode("core")}>
-          Core 200 <span>200</span>
+          Top drugs <span>300</span>
         </button>
         <button type="button" role="tab" aria-selected={mode === "all"} className={mode === "all" ? "is-active" : ""} onClick={() => changeMode("all")}>
           All medications <span>RxNorm</span>
@@ -102,8 +109,19 @@ export default function DrugLibrary() {
 
       {mode === "core" ? (
         <>
-          <div className="drug-library__categories" aria-label="Filter by therapeutic category">
-            {studyCategories.map((item) => <button type="button" className={category === item ? "is-active" : ""} onClick={() => { setCategory(item); setLetter("All"); setLimit(36); }} key={item}>{item}</button>)}
+          <div className="drug-library__filter-deck">
+            <div className="drug-library__collections" aria-label="Select ranked medication collection">
+              {["100", "200", "300"].map((size) => <button type="button" className={collectionSize === size ? "is-active" : ""} onClick={() => { setCollectionSize(size); setLimit(36); }} key={size}>Top {size}</button>)}
+            </div>
+            <label className="drug-library__class-filter">
+              <span>Completed profile class</span>
+              <select value={classFilter} onChange={(event) => { setClassFilter(event.target.value); setSystem("All systems"); setLetter("All"); setLimit(36); }}>
+                {studyClasses.map((item) => <option value={item} key={item}>{item}</option>)}
+              </select>
+            </label>
+          </div>
+          <div className="drug-library__categories" aria-label="Filter completed profiles by body system">
+            {studySystems.map((item) => <button type="button" className={system === item ? "is-active" : ""} onClick={() => { setSystem(item); setClassFilter("All classes"); setLetter("All"); setLimit(36); }} key={item}>{item}</button>)}
           </div>
           <div className="drug-library__letters" aria-label="Filter by first letter">
             {letters.map((item) => <button type="button" className={letter === item ? "is-active" : ""} onClick={() => { setLetter(item); setLimit(36); }} key={item}>{item}</button>)}
@@ -126,13 +144,14 @@ export default function DrugLibrary() {
               </article>
             ))}
           </div>
+          {filtered.length === 0 && <div className="drug-library__empty"><strong>No medications match these filters.</strong><p>Try another ranked collection, class, system, letter, or search term.</p></div>}
           {limit < filtered.length && <button type="button" className="drug-library__more" onClick={() => setLimit((value) => value + 36)}>Load more medications</button>}
         </>
       ) : mode === "all" ? (
         <div className="drug-library__rxnorm" aria-live="polite">
           {query.trim().length < 2 && <div className="drug-library__prompt"><strong>Search beyond the core set.</strong><p>Enter a generic name, brand name, strength, or dosage form.</p></div>}
           {searching && <div className="drug-library__prompt"><strong>Searching RxNorm</strong><p>Checking the current national medication vocabulary.</p></div>}
-          {!searching && serviceUnavailable && <div className="drug-library__prompt"><strong>Search is temporarily unavailable.</strong><p>The Core 200 remains available above.</p></div>}
+          {!searching && serviceUnavailable && <div className="drug-library__prompt"><strong>Search is temporarily unavailable.</strong><p>The ranked Top 300 collection remains available above.</p></div>}
           {!searching && !serviceUnavailable && query.trim().length >= 2 && rxResults.map((drug) => (
             <a className="drug-library__rxnorm-result" href={`https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=${drug.rxcui}`} target="_blank" rel="noreferrer" key={drug.rxcui}>
               <span>RxCUI {drug.rxcui}</span><strong>{drug.name}</strong><i aria-hidden="true">↗</i>
@@ -143,7 +162,7 @@ export default function DrugLibrary() {
         <DrugQuestionBank />
       )}
 
-      <p className="drug-library__source">This product uses publicly available data from the U.S. National Library of Medicine. NLM does not endorse or recommend this product. Medication appearance and labeling vary by manufacturer and product.</p>
+      <p className="drug-library__source">Ranked collections use the <a href="https://clincalc.com/DrugStats/Top300Drugs.aspx" target="_blank" rel="noreferrer">ClinCalc Top 300 Drugs of 2024</a>, DrugStats Database version 2026.08, based on the Medical Expenditure Panel Survey. Live search uses publicly available data from the <a href="https://www.nlm.nih.gov/research/umls/rxnorm/index.html" target="_blank" rel="noreferrer">U.S. National Library of Medicine RxNorm</a>. Neither source endorses or recommends this product. Medication appearance and labeling vary by manufacturer and product.</p>
     </section>
   );
 }
