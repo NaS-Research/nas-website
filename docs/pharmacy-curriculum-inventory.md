@@ -670,6 +670,17 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 385 static pages generated
 - Goodnotes note: the drug-induced pulmonary disease lecture and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
+### Pituitary Pharmacology
+
+- Course scope: hypothalamic releasing and inhibitory signals; anterior and posterior pituitary physiology; target-gland feedback; pulsatility, circadian timing, and assay context; central versus primary endocrine patterns; sellar mass hormonal and visual assessment; cortisol-first replacement sequencing; growth hormone and IGF-1 physiology; 2024 acromegaly diagnostic criteria; transsphenoidal surgery; injectable and oral somatostatin receptor ligands; octreotide, lanreotide, pasireotide, oral octreotide, and paltusotine; pegvisomant; selected cabergoline use; acromegaly comorbidity; prolactin regulation; physiologic, medication, systemic, stalk, and tumor causes of hyperprolactinemia; macroprolactin; high-dose hook effect; cabergoline efficacy and safety; dopamine agonist withdrawal; fertility and pregnancy; central adrenal insufficiency; central hypothyroidism; central hypogonadism; adult growth hormone deficiency; arginine vasopressin physiology; hypotonic polyuria; dynamic diagnostic testing; desmopressin formulations and sodium safety; postoperative water-balance transitions; pituitary apoplexy; visual compromise; perioperative management; axis reassessment; and lifelong surveillance
+- Current references reviewed: 2024 acromegaly diagnosis and remission consensus; 2023 Pituitary Society prolactinoma consensus; Endocrine Society hypopituitarism guidance; current FDA Palsonify, Somavert, and Desmoda prescribing information
+- Learning structure: six lessons, six native axis, acromegaly, prolactin, replacement, vasopressin, and sellar-emergency diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: pituitary values were interpreted as axes rather than isolated concentrations; pulsatility, timing, illness, pregnancy, age, and assay context were preserved; a sellar lesion triggered evaluation for both hormone excess and deficiency plus formal fields when the optic apparatus was threatened; glucocorticoid sufficiency preceded levothyroxine; in a typical phenotype, IGF-1 above 1.3 times the age-adjusted upper limit of normal followed the 2024 acromegaly consensus; equivocal biochemistry was repeated with a validated assay and could use glucose-suppressed GH testing; imaging followed biochemical evidence; expert surgery remained first treatment for many resectable GH-secreting tumors; injectable and oral somatostatin receptor ligands retained product-specific populations, fasting rules, receptor profiles, metabolic risks, and interactions; new oral paltusotine was included under its 2025 US indication; pegvisomant was titrated to IGF-1 rather than GH; prolactin evaluation excluded physiologic, medication, thyroid, kidney, stalk, macroprolactin, and assay-saturation causes; cabergoline remained preferred for most prolactinomas while selected expert surgery and withdrawal were discussed; medication-related prolactin elevation preserved psychiatric and medical stability; central adrenal insufficiency retained aldosterone and required emergency education; central hypothyroidism used free T4 rather than TSH; fertility therapy was separated from sex-steroid replacement; adult GH deficiency required validated context; vasopressin deficiency required confirmed hypotonic polyuria and differentiation from solute diuresis, renal resistance, and primary polydipsia; desmopressin products were not treated as dose equivalent; fluid guidance, breakthrough aquaresis, and sodium surveillance prevented water intoxication; early postoperative fixed desmopressin was avoided because physiology can transition through deficiency and SIADH; and apoplexy combined urgent visual, neurosurgical, endocrine, and glucocorticoid action
+- Automated verification: 100 unique question IDs, four unique choices per question, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 386 static pages generated
+- Goodnotes note: the pituitary and neuroendocrine lecture and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -898,7 +909,7 @@ Target modules:
 4. Pulmonary Arterial Hypertension (`built`, 100 question bank; Goodnotes reconciliation pending)
 5. Cystic Fibrosis (`built`, 100 question bank; Goodnotes reconciliation pending)
 6. Drug-Induced Pulmonary Disease (`built`, 104 question bank; Goodnotes reconciliation pending)
-7. Pituitary Pharmacology
+7. Pituitary Pharmacology (`built`, 100 question bank; Goodnotes reconciliation pending)
 
 #### Diabetes and thyroid
 

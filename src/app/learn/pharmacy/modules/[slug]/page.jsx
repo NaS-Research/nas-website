@@ -58,6 +58,7 @@ import ChronicObstructivePulmonaryDiseaseVisual from "@/components/learn/Chronic
 import PulmonaryArterialHypertensionVisual from "@/components/learn/PulmonaryArterialHypertensionVisual";
 import CysticFibrosisVisual from "@/components/learn/CysticFibrosisVisual";
 import DrugInducedPulmonaryDiseaseVisual from "@/components/learn/DrugInducedPulmonaryDiseaseVisual";
+import PituitaryPharmacologyVisual from "@/components/learn/PituitaryPharmacologyVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -115,6 +116,7 @@ const chronicObstructivePulmonaryDiseaseVisualTypes = ["copd-diagnosis", "copd-a
 const pulmonaryArterialHypertensionVisualTypes = ["pah-hemodynamics", "pah-diagnosis", "pah-risk", "pah-pharmacology", "pah-strategy", "pah-special"];
 const cysticFibrosisVisualTypes = ["cf-biology", "cf-airway", "cf-infection", "cf-modulators", "cf-nutrition", "cf-longitudinal"];
 const drugInducedPulmonaryDiseaseVisualTypes = ["dipd-patterns", "dipd-causality", "dipd-classic", "dipd-oncology", "dipd-airway-vascular", "dipd-management"];
+const pituitaryPharmacologyVisualTypes = ["pituitary-axis", "pituitary-acromegaly", "pituitary-prolactin", "pituitary-replacement", "pituitary-vasopressin", "pituitary-emergencies"];
 
 export function generateStaticParams() {
   return pharmacyModules.map((module) => ({ slug: module.slug }));
@@ -237,6 +239,7 @@ export default async function PharmacyModulePage({ params }) {
               {pulmonaryArterialHypertensionVisualTypes.includes(submodule.visual) && <PulmonaryArterialHypertensionVisual type={submodule.visual} />}
               {cysticFibrosisVisualTypes.includes(submodule.visual) && <CysticFibrosisVisual type={submodule.visual} />}
               {drugInducedPulmonaryDiseaseVisualTypes.includes(submodule.visual) && <DrugInducedPulmonaryDiseaseVisual type={submodule.visual} />}
+              {pituitaryPharmacologyVisualTypes.includes(submodule.visual) && <PituitaryPharmacologyVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
