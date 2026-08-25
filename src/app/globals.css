@@ -4652,6 +4652,303 @@ body {
   height: 32rem;
 }
 
+.pharmacy-mode-workspace {
+  margin-top: 1rem;
+  overflow: hidden;
+  border: 1px solid var(--nas-line);
+  border-radius: 1.25rem;
+  background: #050505;
+}
+
+.pharmacy-mode-workspace__systems {
+  display: flex;
+  gap: 0.45rem;
+  overflow-x: auto;
+  padding: 1rem;
+  border-bottom: 1px solid var(--nas-line);
+  scrollbar-width: none;
+}
+
+.pharmacy-mode-workspace__systems::-webkit-scrollbar { display: none; }
+
+.pharmacy-mode-workspace__systems button {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 0.55rem;
+  border: 1px solid #242424;
+  border-radius: 999px;
+  padding: 0.62rem 0.82rem;
+  color: #737373;
+  font-size: 0.68rem;
+  cursor: pointer;
+}
+
+.pharmacy-mode-workspace__systems button > span {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--system-accent);
+  opacity: 0.5;
+}
+
+.pharmacy-mode-workspace__systems button.is-active {
+  border-color: color-mix(in srgb, var(--system-accent) 52%, #2a2a2a);
+  background: color-mix(in srgb, var(--system-accent) 9%, #080808);
+  color: #ddd;
+}
+
+.pharmacy-mode-workspace__systems button.is-active > span {
+  opacity: 1;
+  box-shadow: 0 0 0.85rem var(--system-accent);
+}
+
+.pharmacy-mode-workspace__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(18rem, 0.65fr);
+}
+
+.pharmacy-mode-workspace__visual {
+  position: relative;
+  min-width: 0;
+  min-height: 39rem;
+  overflow: hidden;
+  padding: 1.5rem;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.022) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.022) 1px, transparent 1px),
+    radial-gradient(circle at 50% 50%, rgba(199, 160, 105, 0.08), transparent 48%),
+    #030303;
+  background-size: 4rem 4rem, 4rem 4rem, auto, auto;
+}
+
+.pharmacy-mode-workspace__visual > header {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pharmacy-mode-workspace__visual > header p,
+.pharmacy-mode-workspace__visual > header span,
+.pharmacy-mode-workspace__related > span {
+  color: #766858;
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.pharmacy-mode-workspace__visual > header span { color: #5f5f5f; }
+
+.pharmacy-mode-workspace__detail {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  padding: clamp(1.5rem, 3vw, 2.4rem);
+  border-left: 1px solid var(--nas-line);
+  background: radial-gradient(circle at 10% 5%, rgba(199, 160, 105, 0.07), transparent 34%), #080808;
+}
+
+.pharmacy-mode-workspace__detail h3 {
+  margin-top: 2rem;
+  color: #eceae7;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-weight: 500;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+}
+
+.pharmacy-mode-workspace__detail > p {
+  margin-top: 1.5rem;
+  color: #92908c;
+  font-size: 0.82rem;
+  line-height: 1.75;
+}
+
+.pharmacy-mode-workspace__related {
+  margin-top: auto;
+  padding-top: 2rem;
+}
+
+.pharmacy-mode-workspace__related > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.8rem;
+}
+
+.pharmacy-mode-workspace__related > div span {
+  border: 1px solid #282828;
+  border-radius: 999px;
+  padding: 0.48rem 0.7rem;
+  color: #777;
+  font-size: 0.6rem;
+}
+
+.mode-pathway {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: center;
+  min-height: 32rem;
+}
+
+.mode-pathway__step {
+  position: relative;
+  display: grid;
+  min-height: 9rem;
+  align-content: space-between;
+  margin-right: 1rem;
+  border: 1px solid #2d2924;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  background: rgba(10, 9, 8, 0.9);
+}
+
+.mode-pathway__step:not(:last-child)::after {
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 0.15rem);
+  width: 0.7rem;
+  height: 1px;
+  background: #7a6242;
+  content: "";
+}
+
+.mode-pathway__step span,
+.mode-clinical__step > span,
+.mode-network__node span {
+  color: #75634e;
+  font-size: 0.56rem;
+  letter-spacing: 0.1em;
+}
+
+.mode-pathway__step strong {
+  color: #c9c3bb;
+  font-size: 0.78rem;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.mode-clinical {
+  display: grid;
+  align-content: center;
+  min-height: 32rem;
+  padding-inline: clamp(0rem, 4vw, 3rem);
+}
+
+.mode-clinical__step {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+  padding: 1.15rem 0;
+  border-bottom: 1px solid #242424;
+}
+
+.mode-clinical__step div { display: grid; grid-template-columns: minmax(8rem, 0.45fr) 1fr; gap: 1rem; align-items: baseline; }
+.mode-clinical__step strong { color: #d1ccc5; font-size: 0.9rem; font-weight: 500; }
+.mode-clinical__step small { color: #74706b; font-size: 0.7rem; line-height: 1.45; }
+
+.mode-safety {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  min-height: 32rem;
+  align-content: center;
+  background: #26211e;
+}
+
+.mode-safety__signal {
+  position: relative;
+  display: grid;
+  min-height: 12rem;
+  align-content: space-between;
+  padding: 1.2rem;
+  background: linear-gradient(145deg, rgba(139, 60, 47, 0.1), transparent 65%), #080808;
+}
+
+.mode-safety__signal span { color: #8c5e53; font-size: 0.56rem; letter-spacing: 0.1em; text-transform: uppercase; }
+.mode-safety__signal strong { max-width: 15rem; color: #c9c1ba; font-size: 0.9rem; font-weight: 500; line-height: 1.45; }
+.mode-safety__signal i { position: absolute; top: 1.2rem; right: 1.2rem; width: 0.5rem; height: 0.5rem; border: 1px solid #9c5b4c; border-radius: 50%; box-shadow: 0 0 1rem rgba(156, 91, 76, 0.35); }
+
+.mode-network {
+  position: relative;
+  min-height: 32rem;
+}
+
+.mode-network::before,
+.mode-network::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px solid rgba(199, 160, 105, 0.11);
+  border-radius: 50%;
+  content: "";
+  transform: translate(-50%, -50%);
+}
+
+.mode-network::before { width: 19rem; height: 19rem; }
+.mode-network::after { width: 27rem; height: 27rem; }
+
+.mode-network__center,
+.mode-network__node {
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  align-content: center;
+  border: 1px solid #312b24;
+  background: rgba(8, 8, 8, 0.94);
+}
+
+.mode-network__center {
+  top: 50%;
+  left: 50%;
+  width: 9rem;
+  height: 9rem;
+  place-items: center;
+  border-color: color-mix(in srgb, var(--system-accent) 54%, #262626);
+  border-radius: 50%;
+  box-shadow: 0 0 3rem color-mix(in srgb, var(--system-accent) 16%, transparent);
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.mode-network__center span { color: #716b64; font-size: 0.54rem; letter-spacing: 0.1em; text-transform: uppercase; }
+.mode-network__center strong { color: #ddd6ce; font-size: 1rem; font-weight: 500; }
+.mode-network__node { width: 11rem; min-height: 5rem; gap: 0.45rem; border-radius: 0.7rem; padding: 0.8rem; }
+.mode-network__node strong { color: #aaa49d; font-size: 0.68rem; font-weight: 500; line-height: 1.4; }
+.mode-network__node--1 { top: 12%; left: 8%; }
+.mode-network__node--2 { top: 12%; right: 8%; }
+.mode-network__node--3 { bottom: 12%; left: 8%; }
+.mode-network__node--4 { right: 8%; bottom: 12%; }
+
+@media (max-width: 54.99rem) {
+  .pharmacy-mode-workspace__grid { grid-template-columns: 1fr; }
+  .pharmacy-mode-workspace__detail { min-height: 28rem; border-top: 1px solid var(--nas-line); border-left: 0; }
+  .mode-pathway { min-height: 28rem; }
+}
+
+@media (max-width: 34rem) {
+  .pharmacy-mode-workspace__visual { min-height: 34rem; padding: 1rem; }
+  .mode-pathway { grid-template-columns: 1fr; gap: 0.45rem; align-content: center; min-height: 29rem; }
+  .mode-pathway__step { min-height: 5.25rem; margin-right: 0; }
+  .mode-pathway__step:not(:last-child)::after { display: none; }
+  .mode-clinical { min-height: 29rem; }
+  .mode-clinical__step div { grid-template-columns: 1fr; gap: 0.25rem; }
+  .mode-safety { min-height: 29rem; }
+  .mode-safety__signal { min-height: 10rem; }
+  .mode-network { min-height: 29rem; }
+  .mode-network::after { display: none; }
+  .mode-network__node { width: 8.4rem; }
+  .mode-network__node--1,
+  .mode-network__node--3 { left: 0; }
+  .mode-network__node--2,
+  .mode-network__node--4 { right: 0; }
+}
+
 .full-body-atlas {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(18rem, 21rem);

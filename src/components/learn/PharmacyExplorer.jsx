@@ -11,6 +11,7 @@ import {
   IconPill,
 } from "@tabler/icons-react";
 import { explorerModes, explorerSources, explorerSystems } from "@/data/pharmacyExplorer";
+import PharmacyModeWorkspace from "./PharmacyModeWorkspace";
 
 const HeartModelViewer = dynamic(() => import("./HeartModelViewer"), {
   ssr: false,
@@ -55,10 +56,10 @@ export default function PharmacyExplorer() {
       <header className="pharmacy-explorer__heading">
         <div>
           <p className="nas-section-label">Interactive pharmacy</p>
-          <h2 id="pharmacy-explorer-title">Explore the body through the medicine.</h2>
+          <h2 id="pharmacy-explorer-title">Explore medicine from every angle.</h2>
         </div>
         <p>
-          Choose a system, then change the lens. Anatomy becomes mechanism, clinical reasoning, safety, and interaction knowledge without leaving the map.
+          Move between anatomy, mechanism, clinical reasoning, safety, and interactions. Each lens has a workspace designed for the question being asked.
         </p>
       </header>
 
@@ -69,7 +70,10 @@ export default function PharmacyExplorer() {
             role="tab"
             aria-selected={activeMode === item.id}
             className={activeMode === item.id ? "is-active" : ""}
-            onClick={() => setActiveMode(item.id)}
+            onClick={() => {
+              setActiveMode(item.id);
+              if (item.id !== "anatomy") setAtlasLevel("body");
+            }}
             key={item.id}
           >
             <span>{String(explorerModes.indexOf(item) + 1).padStart(2, "0")}</span>
@@ -83,7 +87,16 @@ export default function PharmacyExplorer() {
         <p>{mode.description}</p>
       </div>
 
-      {atlasLevel === "body" ? (
+      {activeMode !== "anatomy" ? (
+        <PharmacyModeWorkspace
+          mode={mode}
+          systems={explorerSystems}
+          activeSystem={activeSystem}
+          onSelectSystem={setActiveSystem}
+          system={system}
+          content={content}
+        />
+      ) : atlasLevel === "body" ? (
         <FullBodyAtlas
           initialFocus={bodyFocus}
           onOpenHeart={() => {
