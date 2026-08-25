@@ -8,7 +8,7 @@ import { pharmacyCollections, pharmacyLessons } from "@/data/pharmacyLearning";
 export const metadata = {
   title: "Pharmacy | NaS Learn",
   description:
-    "Study pharmacy through connected, carefully sourced guides covering foundations, therapeutics, calculations, safety, and patient care.",
+    "Study pharmacy through a sequenced curriculum covering drug action, organ systems, therapeutics, safety, and patient care.",
   alternates: { canonical: "/learn/pharmacy" },
 };
 
@@ -30,10 +30,10 @@ export default function PharmacyLearningPage() {
 
       <main>
         <section className="nas-shell pharmacy-orientation" aria-label="How to use this collection">
-          <div><span>Begin</span><strong>Start with foundations</strong></div>
-          <div><span>Connect</span><strong>Move across body systems</strong></div>
-          <div><span>Apply</span><strong>Use cases and study checks</strong></div>
-          <div><span>Verify</span><strong>Follow current sources</strong></div>
+          <div><span>Begin</span><strong>Understand drug action</strong></div>
+          <div><span>Sequence</span><strong>Learn system by system</strong></div>
+          <div><span>Apply</span><strong>Work through therapeutics</strong></div>
+          <div><span>Practice</span><strong>Test what you know</strong></div>
         </section>
 
         <div className="nas-shell">

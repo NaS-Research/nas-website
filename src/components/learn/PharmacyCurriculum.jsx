@@ -4,10 +4,10 @@ export default function PharmacyCurriculum({ collections, lessons }) {
   return (
     <section className="pharmacy-curriculum" id="curriculum" aria-labelledby="curriculum-title">
       <header className="pharmacy-curriculum__heading">
-        <p className="nas-section-label">Curriculum map</p>
-        <h2 id="curriculum-title">Build the foundation, then connect the systems.</h2>
+        <p className="nas-section-label">Therapeutics sequence</p>
+        <h2 id="curriculum-title">Learn in the order the knowledge builds.</h2>
         <p>
-          Move from foundational principles into therapeutics, safety, and patient care without losing the relationships between them.
+          Begin with drug action, then move through organ systems, infectious disease, oncology, and acute care. Each block prepares you for the next.
         </p>
       </header>
 
@@ -18,7 +18,7 @@ export default function PharmacyCurriculum({ collections, lessons }) {
             <article className="curriculum-card" id={collection.slug} key={collection.slug}>
               <div className="curriculum-card__topline">
                 <span>{collection.number}</span>
-                <span>{published.length ? `${published.length} guide${published.length === 1 ? "" : "s"}` : collection.topics.length + " topics"}</span>
+                <span>{published.length ? `${published.length} guide${published.length === 1 ? "" : "s"}` : `Block ${collection.number}`}</span>
               </div>
               <h3>{collection.title}</h3>
               <p>{collection.description}</p>

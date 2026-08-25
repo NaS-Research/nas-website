@@ -31,7 +31,7 @@ const platformAreas = [
     number: "04",
     label: "Organize",
     title: "Curriculum",
-    description: "Move through foundations, calculations, therapeutics, safety, and patient care in a coherent sequence.",
+    description: "Follow a pharmacy-school sequence from drug action through organ systems, infectious disease, oncology, and acute care.",
     href: "/learn/pharmacy#curriculum",
     action: "View the curriculum",
   },
