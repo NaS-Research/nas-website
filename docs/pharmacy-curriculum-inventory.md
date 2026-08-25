@@ -626,6 +626,17 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 381 static pages generated
 - Goodnotes note: the asthma lecture and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
+### Chronic Obstructive Pulmonary Disease
+
+- Course scope: heterogeneous airway and alveolar disease, persistent airflow obstruction, post-bronchodilator spirometry, fixed-ratio interpretation, reversibility limits, chronic bronchitis, small-airway disease, emphysema, gas trapping, hyperinflation, diffusion and vascular change, tobacco and nontobacco etiotypes, alpha-1 antitrypsin deficiency, abnormal lung development, pre-COPD, PRISm, GOLD airflow grade, mMRC and CAAT, 2026 ABE classification, disease activity, multimorbidity, LABA and LAMA pharmacology, inhaled corticosteroid benefit and harm, eosinophil interpretation, roflumilast, ensifentrine, device selection, initial and follow-up algorithms, ICS withdrawal, azithromycin, biologic therapy, tobacco treatment, vaccination, pulmonary rehabilitation, nutrition, long-term oxygen, noninvasive ventilation, advanced emphysema intervention, palliative care, acute exacerbation differential, bronchodilator, systemic corticosteroid, antibiotic, controlled oxygen, ventilation, discharge, and recurrence prevention
+- Current references reviewed: GOLD 2026 Report and Pocket Guide, GOLD 2026 Key Changes Summary, current FDA Ohtuvayre prescribing information, current FDA labeling, and DailyMed
+- Learning structure: six lessons, six native diagnostic, multidimensional-assessment, pharmacology, treatment-strategy, nonpharmacologic, and acute-care diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: COPD required post-bronchodilator obstruction in a compatible clinical context; pre-bronchodilator testing could help exclude but did not confirm disease; borderline fixed ratios received repeat quality testing; reversibility did not distinguish COPD from asthma; COPD included tobacco and nontobacco life-course etiotypes; pre-COPD and PRISm remained risk states rather than automatic COPD diagnoses; FEV1 grade did not replace symptom, attack, function or comorbidity assessment; GOLD 2026 moved treatment-naive patients with one moderate or severe prior-year exacerbation into Group E; initial and follow-up treatment algorithms remained separate; LABA-LAMA anchored most Group B and Group E initial treatment; triple therapy replaced routine LABA-ICS when ICS was indicated; eosinophils estimated ICS benefit rather than serving as an absolute diagnosis; persistent dyspnea did not independently justify ICS; roflumilast remained anti-inflammatory rather than rescue treatment; ensifentrine remained twice-daily nebulized adult maintenance treatment rather than rescue; advanced biologics followed eosinophilic phenotype and current labeling; rehabilitation remained core therapy; long-term oxygen followed severe chronic resting hypoxemia criteria; exacerbations retained a cardiopulmonary differential; controlled oxygen and noninvasive ventilation were integrated with short evidence-based drug courses and recurrence prevention
+- Automated verification: 100 unique question IDs, four unique choices per question, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 382 static pages generated
+- Goodnotes note: the COPD lecture, chapter, and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -850,7 +861,7 @@ Target modules:
 
 1. Allergic Rhinitis (`built`, 100 question bank; Goodnotes reconciliation pending)
 2. Asthma (`built`, 104 question bank; Goodnotes reconciliation pending)
-3. Chronic Obstructive Pulmonary Disease
+3. Chronic Obstructive Pulmonary Disease (`built`, 100 question bank; Goodnotes reconciliation pending)
 4. Pulmonary Arterial Hypertension
 5. Cystic Fibrosis
 6. Drug-Induced Pulmonary Disease

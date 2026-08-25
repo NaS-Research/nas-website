@@ -1,0 +1,19 @@
+const diagrams = {
+  "copd-diagnosis": { accent: "#8aa0a8", eyebrow: "Diagnostic sequence", title: "Context, persistent obstruction, then cause", columns: [["Suspect", "Symptoms and exposure", "Dyspnea, cough, sputum, infection, and lifetime lung injury"], ["Confirm", "Post-bronchodilator ratio", "FEV1 divided by FVC below 0.70 with quality review"], ["Explain", "Etiotype and structure", "Airway, emphysema, development, genetics, and environment"]] },
+  "copd-assessment": { accent: "#b69b74", eyebrow: "Multidimensional burden", title: "Airflow, symptoms, events, activity, and comorbidity", columns: [["Function", "FEV1 and physiology", "Obstruction, hyperinflation, diffusion, gas exchange, and exercise"], ["Experience", "mMRC and CAAT", "Breathlessness, activity, cough, sleep, energy, and daily impact"], ["Risk", "Exacerbation and trajectory", "One moderate or severe event now activates Group E"]] },
+  "copd-pharmacology": { accent: "#7fa08d", eyebrow: "Airway treatment", title: "Bronchodilate first, add inflammation control selectively", columns: [["Beta2", "Increase cyclic AMP", "LABA relaxes airway smooth muscle through adrenergic signaling"], ["Muscarinic", "Block M3 signaling", "LAMA reduces cholinergic bronchoconstrictor tone"], ["Inflammation", "Phenotype the benefit", "ICS, PDE inhibition, macrolide, or biologic with safety review"]] },
+  "copd-strategy": { accent: "#c49a63", eyebrow: "Treatment logic", title: "Initial group and follow-up trait are different decisions", columns: [["Initial", "A, B, or E", "Bronchodilator for A, LABA-LAMA for most B and E"], ["Dyspnea", "Improve bronchodilation", "Then audit device, diagnosis, rehabilitation, and comorbidity"], ["Exacerbation", "Estimate ICS benefit", "Use events, eosinophils, infection risk, and current regimen"]] },
+  "copd-nonpharmacologic": { accent: "#9a8ba8", eyebrow: "Whole-person therapy", title: "Protect the lung, restore capacity, support gas exchange", columns: [["Prevent", "Exposure and infection", "Tobacco treatment, clean air, and current vaccination"], ["Rebuild", "Pulmonary rehabilitation", "Exercise, education, self-management, nutrition, and psychosocial care"], ["Support", "Oxygen and ventilation", "Use physiologic criteria, reassessment, and patient-centered goals"]] },
+  "copd-acute": { accent: "#bd7165", eyebrow: "Acute deterioration", title: "Find the cause, support ventilation, prevent the next event", columns: [["Differentiate", "Exacerbation or mimic", "Infection, pollution, pneumonia, embolism, heart failure, or pneumothorax"], ["Stabilize", "Airflow and gas exchange", "SABA, selected SAMA, controlled oxygen, steroid, antibiotic, and NIV"], ["Recover", "Close the loop", "Maintenance therapy, technique, rehabilitation, action plan, and follow-up"]] },
+};
+
+export default function ChronicObstructivePulmonaryDiseaseVisual({ type }) {
+  const diagram = diagrams[type];
+  if (!diagram) return null;
+  return <figure className="chol-visual" style={{ "--chol-accent": diagram.accent }} aria-label={diagram.title}>
+    <figcaption><span>{diagram.eyebrow}</span><strong>{diagram.title}</strong></figcaption>
+    <div className="chol-visual__grid">{diagram.columns.map(([name, mechanism, explanation], index) => <div key={name}>
+      <span>{String(index + 1).padStart(2, "0")}</span><strong>{name}</strong><em>{mechanism}</em><p>{explanation}</p>
+    </div>)}</div>
+  </figure>;
+}

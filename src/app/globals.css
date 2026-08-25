@@ -4509,34 +4509,6 @@ body {
 .pharmacy-curriculum,
 .learning-library { scroll-margin-top: 7rem; }
 
-.pharmacy-atlas-hero {
-  padding-block: clamp(9rem, 15vw, 13rem) clamp(3rem, 6vw, 5rem);
-  border-bottom: 1px solid var(--nas-line);
-}
-
-.pharmacy-atlas-hero .nas-kicker { margin-top: 4rem; }
-.pharmacy-atlas-hero > div > div {
-  display: grid;
-  gap: 2rem;
-  margin-top: 1rem;
-}
-
-.pharmacy-atlas-hero h1 {
-  color: #f1f0ee;
-  font-size: clamp(4rem, 10vw, 8rem);
-  font-weight: 510;
-  letter-spacing: -0.07em;
-  line-height: 0.9;
-}
-
-.pharmacy-atlas-hero > div > div p {
-  align-self: end;
-  max-width: 34rem;
-  color: #aaa49d;
-  font-size: clamp(1rem, 2vw, 1.35rem);
-  line-height: 1.55;
-}
-
 .pharmacy-atlas-main { padding-bottom: clamp(5rem, 10vw, 9rem); }
 
 .pharmacy-curriculum {
@@ -8884,7 +8856,6 @@ body {
 @media (min-width: 48rem) {
   .learning-index-hero__inner,
   .pharmacy-index-hero__heading,
-  .pharmacy-atlas-hero > div > div,
   .drug-library__hero,
   .drug-questions__header,
   .drug-profile-hero__grid,
