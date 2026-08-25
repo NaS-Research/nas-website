@@ -18,7 +18,6 @@ export default function DrugLibrary() {
   const [mode, setMode] = useState("core");
   const [query, setQuery] = useState("");
   const [letter, setLetter] = useState("All");
-  const [collectionSize, setCollectionSize] = useState("300");
   const [therapeuticClass, setTherapeuticClass] = useState("All classes");
   const [limit, setLimit] = useState(36);
   const [rxResults, setRxResults] = useState([]);
@@ -27,14 +26,15 @@ export default function DrugLibrary() {
 
   const filtered = useMemo(() => {
     const normalized = query.toLowerCase();
-    return coreDrugs.filter((drug) => {
-      const matchesLetter = letter === "All" || drug.generic.startsWith(letter.toLowerCase());
-      const matchesQuery = !normalized || `${drug.generic} ${drug.brand || ""} ${drug.className || ""} ${drug.therapeuticClass}`.toLowerCase().includes(normalized);
-      const matchesCollection = drug.number <= Number(collectionSize);
-      const matchesClass = therapeuticClass === "All classes" || drug.therapeuticClass === therapeuticClass;
-      return matchesLetter && matchesQuery && matchesCollection && matchesClass;
-    });
-  }, [collectionSize, letter, query, therapeuticClass]);
+    return coreDrugs
+      .filter((drug) => {
+        const matchesLetter = letter === "All" || drug.generic.startsWith(letter.toLowerCase());
+        const matchesQuery = !normalized || `${drug.generic} ${drug.brand || ""} ${drug.className || ""} ${drug.therapeuticClass}`.toLowerCase().includes(normalized);
+        const matchesClass = therapeuticClass === "All classes" || drug.therapeuticClass === therapeuticClass;
+        return matchesLetter && matchesQuery && matchesClass;
+      })
+      .sort((a, b) => a.generic.localeCompare(b.generic));
+  }, [letter, query, therapeuticClass]);
 
   useEffect(() => {
     if (mode !== "all" || query.trim().length < 2) {
@@ -69,7 +69,6 @@ export default function DrugLibrary() {
     setMode(nextMode);
     setQuery("");
     setLetter("All");
-    setCollectionSize("300");
     setTherapeuticClass("All classes");
     setLimit(36);
   }
@@ -81,15 +80,15 @@ export default function DrugLibrary() {
           <p className="nas-section-label">Medication library</p>
           <h1 id="drug-library-title">Know the drug. See the product. Connect the science.</h1>
         </div>
-        <p>Study the ranked top 300 outpatient medications, then search the current RxNorm vocabulary beyond the curated card set.</p>
+        <p>Browse a growing medication library organized by generic name and therapeutic class, or search the current RxNorm vocabulary.</p>
       </header>
 
       <div className="drug-library__tabs" role="tablist" aria-label="Drug collections">
         <button type="button" role="tab" aria-selected={mode === "core"} className={mode === "core" ? "is-active" : ""} onClick={() => changeMode("core")}>
-          Top drugs <span>300</span>
+          Drug library
         </button>
         <button type="button" role="tab" aria-selected={mode === "all"} className={mode === "all" ? "is-active" : ""} onClick={() => changeMode("all")}>
-          All medications <span>RxNorm</span>
+          Medication search <span>RxNorm</span>
         </button>
         <button type="button" role="tab" aria-selected={mode === "questions"} className={mode === "questions" ? "is-active" : ""} onClick={() => changeMode("questions")}>
           Questions <span>{drugQuestions.length}</span>
@@ -107,11 +106,6 @@ export default function DrugLibrary() {
 
       {mode === "core" ? (
         <>
-          <div className="drug-library__filter-deck">
-            <div className="drug-library__collections" aria-label="Select ranked medication collection">
-              {["100", "200", "300"].map((size) => <button type="button" className={collectionSize === size ? "is-active" : ""} onClick={() => { setCollectionSize(size); setLimit(36); }} key={size}>Top {size}</button>)}
-            </div>
-          </div>
           <div className="drug-library__categories" aria-label="Filter medications by therapeutic class">
             {studyClasses.map((item) => (
               <button
@@ -132,7 +126,6 @@ export default function DrugLibrary() {
           <div className="drug-library__grid">
             {filtered.slice(0, limit).map((drug) => (
               <article className={`drug-card ${drug.appearance ? "drug-card--featured" : ""}`} key={drug.generic}>
-                <div className="drug-card__number">{String(drug.number).padStart(3, "0")}</div>
                 <div className="drug-card__body">
                   <span><i className="drug-card__class-dot" style={{ "--drug-class-color": getTherapeuticClassColor(drug.therapeuticClass) }} aria-hidden="true" />{drug.therapeuticClass}</span>
                   <h2>{displayName(drug.generic)}</h2>
@@ -143,14 +136,14 @@ export default function DrugLibrary() {
               </article>
             ))}
           </div>
-          {filtered.length === 0 && <div className="drug-library__empty"><strong>No medications match these filters.</strong><p>Try another ranked collection, therapeutic class, letter, or search term.</p></div>}
+          {filtered.length === 0 && <div className="drug-library__empty"><strong>No medications match these filters.</strong><p>Try another therapeutic class, letter, or search term.</p></div>}
           {limit < filtered.length && <button type="button" className="drug-library__more" onClick={() => setLimit((value) => value + 36)}>Load more medications</button>}
         </>
       ) : mode === "all" ? (
         <div className="drug-library__rxnorm" aria-live="polite">
           {query.trim().length < 2 && <div className="drug-library__prompt"><strong>Search beyond the core set.</strong><p>Enter a generic name, brand name, strength, or dosage form.</p></div>}
           {searching && <div className="drug-library__prompt"><strong>Searching RxNorm</strong><p>Checking the current national medication vocabulary.</p></div>}
-          {!searching && serviceUnavailable && <div className="drug-library__prompt"><strong>Search is temporarily unavailable.</strong><p>The ranked Top 300 collection remains available above.</p></div>}
+          {!searching && serviceUnavailable && <div className="drug-library__prompt"><strong>Search is temporarily unavailable.</strong><p>The NaS medication library remains available above.</p></div>}
           {!searching && !serviceUnavailable && query.trim().length >= 2 && rxResults.map((drug) => (
             <a className="drug-library__rxnorm-result" href={`https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=${drug.rxcui}`} target="_blank" rel="noreferrer" key={drug.rxcui}>
               <span>RxCUI {drug.rxcui}</span><strong>{drug.name}</strong><i aria-hidden="true">↗</i>
@@ -161,7 +154,7 @@ export default function DrugLibrary() {
         <DrugQuestionBank />
       )}
 
-      <p className="drug-library__source">Ranked collections use the <a href="https://clincalc.com/DrugStats/Top300Drugs.aspx" target="_blank" rel="noreferrer">ClinCalc Top 300 Drugs of 2024</a>, DrugStats Database version 2026.08, based on the Medical Expenditure Panel Survey. Therapeutic filters follow the NaS pharmacy study-card taxonomy and will be refined as each card is reviewed. Live search uses RxNorm. These sources do not endorse or recommend this product. Medication appearance and labeling vary by manufacturer and product.</p>
+      <p className="drug-library__source">The initial catalog was seeded from the <a href="https://clincalc.com/DrugStats/Top300Drugs.aspx" target="_blank" rel="noreferrer">ClinCalc DrugStats Database</a> and is expanded as additional medication profiles are reviewed. Therapeutic filters follow the NaS pharmacy study-card taxonomy. Live search uses RxNorm. These sources do not endorse or recommend this product. Medication appearance and labeling vary by manufacturer and product.</p>
     </section>
   );
 }

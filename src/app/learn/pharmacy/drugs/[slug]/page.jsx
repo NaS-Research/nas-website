@@ -16,7 +16,7 @@ export async function generateMetadata({ params }) {
     title: `${drug.generic.replace(/\b\w/g, (letter) => letter.toUpperCase())} | NaS Drug Library`,
     description: drug.brand
       ? `Study ${drug.generic}, including common uses, mechanism, safety, monitoring, counseling, and current official medication references.`
-      : `Review ${drug.generic} through its ranked study context and current public medication label records.`,
+      : `Review ${drug.generic} through its medication profile and current public medication label records.`,
     alternates: { canonical: `/learn/pharmacy/drugs/${drug.slug}` },
   };
 }

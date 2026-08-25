@@ -4120,34 +4120,6 @@ body {
 .drug-library__toolbar input::placeholder { color: #606060; }
 .drug-library__toolbar p { color: #5d5d5d; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em; }
 
-.drug-library__filter-deck {
-  display: grid;
-  gap: 1rem;
-  align-items: end;
-  padding-block: 1rem;
-  border-bottom: 1px solid var(--nas-line);
-}
-
-.drug-library__collections {
-  display: flex;
-  width: fit-content;
-  overflow: hidden;
-  border: 1px solid #29251f;
-  border-radius: 999px;
-}
-
-.drug-library__collections button {
-  min-width: 5.2rem;
-  padding: 0.7rem 1rem;
-  color: #747474;
-  font-size: 0.66rem;
-  cursor: pointer;
-}
-
-.drug-library__collections button + button { border-left: 1px solid #29251f; }
-.drug-library__collections button:hover { color: #d5b987; }
-.drug-library__collections button.is-active { background: var(--nas-gold-light); color: #17120c; }
-
 .drug-library__class-filter {
   display: grid;
   gap: 0.5rem;
@@ -4218,7 +4190,6 @@ body {
 }
 
 .drug-card--featured { background: radial-gradient(circle at 100% 0, rgba(199, 160, 105, 0.1), transparent 55%), #090909; }
-.drug-card__number { color: #4c4c4c; font-size: 0.58rem; letter-spacing: 0.1em; }
 .drug-card__body { align-self: end; min-width: 0; }
 .drug-card__body > span { color: #6a5c52; font-size: 0.55rem; letter-spacing: 0.08em; text-transform: uppercase; }
 .drug-card h2 { margin-top: 0.4rem; color: #d8d8d8; font-size: clamp(1rem, 2.2vw, 1.35rem); font-weight: 500; letter-spacing: -0.035em; overflow-wrap: anywhere; }
@@ -7573,11 +7544,6 @@ body {
   .drug-library__toolbar {
     grid-template-columns: minmax(0, 1fr) auto;
     align-items: center;
-  }
-
-  .drug-library__filter-deck {
-    grid-template-columns: auto minmax(15rem, 22rem);
-    justify-content: space-between;
   }
 
   .drug-library__grid {

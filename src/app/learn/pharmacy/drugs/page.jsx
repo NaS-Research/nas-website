@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Drug Library | NaS Learn",
-  description: "Study ranked Top 100, 200, and 300 medication collections, filter completed profiles by class, and search current RxNorm medication concepts.",
+  description: "Browse medication profiles alphabetically, filter by therapeutic class, and search current RxNorm medication concepts.",
   alternates: { canonical: "/learn/pharmacy/drugs" },
 };
 

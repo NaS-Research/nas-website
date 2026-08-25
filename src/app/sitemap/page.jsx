@@ -41,7 +41,7 @@ const groups = [
       { label: "NaS Learn", href: "/learn", detail: "Connected educational guides across pharmacy and the life sciences" },
       { label: "Pharmacy", href: "/learn/pharmacy", detail: "The Pharmacy curriculum and learning library" },
       { label: "Visual Atlas", href: "/learn/pharmacy/atlas", detail: "Interactive anatomy and connected medication knowledge" },
-      { label: "Drug Library", href: "/learn/pharmacy/drugs", detail: "The Top 300 and current RxNorm medication search" },
+      { label: "Drug Library", href: "/learn/pharmacy/drugs", detail: "Alphabetical medication profiles and current RxNorm search" },
       { label: "Cumulative Pharmacy Review", href: "/learn/pharmacy/review", detail: "Direct questions and patient cases across the full sequence" },
       ...pharmacyModules.map((module) => ({
         label: `${module.number}. ${module.title}`,
