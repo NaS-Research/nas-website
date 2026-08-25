@@ -13,7 +13,7 @@ export async function generateMetadata({ params }) {
   if (!drug?.brand) return {};
   return {
     title: `${drug.generic.replace(/\b\w/g, (letter) => letter.toUpperCase())} | NaS Drug Library`,
-    description: `Study ${drug.generic}, including its drug class, dosage forms, product appearance context, and official medication references.`,
+    description: `Study ${drug.generic}, including common uses, mechanism, safety, monitoring, counseling, and current official medication references.`,
     alternates: { canonical: `/learn/pharmacy/drugs/${drug.slug}` },
   };
 }
@@ -21,6 +21,14 @@ export async function generateMetadata({ params }) {
 function titleCase(value) {
   return value.replace(/\b\w/g, (letter) => letter.toUpperCase());
 }
+
+const studySections = [
+  { key: "commonUses", number: "01", label: "Common uses" },
+  { key: "commonEffects", number: "03", label: "Common effects" },
+  { key: "seriousRisks", number: "04", label: "Serious risks" },
+  { key: "monitoring", number: "05", label: "Monitor" },
+  { key: "counseling", number: "06", label: "Counseling" },
+];
 
 export default async function DrugProfilePage({ params }) {
   const { slug } = await params;
@@ -75,8 +83,47 @@ export default async function DrugProfilePage({ params }) {
             </section>
           )}
 
+          <section className="drug-study-card" aria-labelledby="study-card-title">
+            <header className="drug-study-card__header">
+              <div>
+                <p className="nas-section-label">NaS study card</p>
+                <h2 id="study-card-title">The knowledge that travels with the drug.</h2>
+              </div>
+              <div className="drug-study-card__stamp">
+                <span>Reviewed</span>
+                <strong>August 24, 2026</strong>
+              </div>
+            </header>
+
+            <div className="drug-study-card__mechanism">
+              <span>02</span>
+              <div>
+                <p>Mechanism</p>
+                <strong>{drug.mechanism}</strong>
+              </div>
+            </div>
+
+            <div className="drug-study-card__grid">
+              {studySections.map((section) => (
+                <section className={`drug-study-card__section drug-study-card__section--${section.key}`} key={section.key}>
+                  <div className="drug-study-card__section-title">
+                    <span>{section.number}</span>
+                    <h3>{section.label}</h3>
+                  </div>
+                  <ul>
+                    {drug[section.key].map((item) => <li key={item}>{item}</li>)}
+                  </ul>
+                </section>
+              ))}
+            </div>
+          </section>
+
           <aside className="drug-profile-safety">
-            <strong>Educational use</strong><p>This profile supports study and navigation. It is not a pill-identification service and does not replace current prescribing information or professional judgment.</p>
+            <div>
+              <strong>Educational use</strong>
+              <p>This profile supports study and navigation. It does not provide dosing or patient specific advice, identify an unknown product, or replace current prescribing information and professional judgment.</p>
+            </div>
+            <a href={`https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=${encodeURIComponent(drug.generic)}`} target="_blank" rel="noreferrer">Review current DailyMed labels ↗</a>
           </aside>
         </div>
       </main>

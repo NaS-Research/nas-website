@@ -105,6 +105,7 @@ export default function DrugLibrary() {
                   <span>{drug.className || "Medication profile"}</span>
                   <h2>{displayName(drug.generic)}</h2>
                   {drug.brand && <p>{drug.brand}</p>}
+                  {drug.commonUses && <em>{drug.commonUses.slice(0, 2).join(" · ")}</em>}
                 </div>
                 {drug.brand ? (
                   <Link href={`/learn/pharmacy/drugs/${drug.slug}`}>Study profile <span aria-hidden="true">↗</span></Link>
