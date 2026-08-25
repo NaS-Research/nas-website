@@ -60,6 +60,7 @@ import CysticFibrosisVisual from "@/components/learn/CysticFibrosisVisual";
 import DrugInducedPulmonaryDiseaseVisual from "@/components/learn/DrugInducedPulmonaryDiseaseVisual";
 import PituitaryPharmacologyVisual from "@/components/learn/PituitaryPharmacologyVisual";
 import DiabetesPathophysiologyMonitoringVisual from "@/components/learn/DiabetesPathophysiologyMonitoringVisual";
+import NoninsulinDiabetesPharmacotherapyVisual from "@/components/learn/NoninsulinDiabetesPharmacotherapyVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -119,6 +120,7 @@ const cysticFibrosisVisualTypes = ["cf-biology", "cf-airway", "cf-infection", "c
 const drugInducedPulmonaryDiseaseVisualTypes = ["dipd-patterns", "dipd-causality", "dipd-classic", "dipd-oncology", "dipd-airway-vascular", "dipd-management"];
 const pituitaryPharmacologyVisualTypes = ["pituitary-axis", "pituitary-acromegaly", "pituitary-prolactin", "pituitary-replacement", "pituitary-vasopressin", "pituitary-emergencies"];
 const diabetesPathophysiologyMonitoringVisualTypes = ["diabetes-physiology", "diabetes-diagnosis", "diabetes-targets", "diabetes-monitoring", "diabetes-complications", "diabetes-longitudinal"];
+const noninsulinDiabetesPharmacotherapyVisualTypes = ["noninsulin-selection", "noninsulin-metformin", "noninsulin-sglt2", "noninsulin-glp1", "noninsulin-dpp4", "noninsulin-secretagogues", "noninsulin-tzd", "noninsulin-other", "noninsulin-outcomes", "noninsulin-combination"];
 
 export function generateStaticParams() {
   return pharmacyModules.map((module) => ({ slug: module.slug }));
@@ -243,6 +245,7 @@ export default async function PharmacyModulePage({ params }) {
               {drugInducedPulmonaryDiseaseVisualTypes.includes(submodule.visual) && <DrugInducedPulmonaryDiseaseVisual type={submodule.visual} />}
               {pituitaryPharmacologyVisualTypes.includes(submodule.visual) && <PituitaryPharmacologyVisual type={submodule.visual} />}
               {diabetesPathophysiologyMonitoringVisualTypes.includes(submodule.visual) && <DiabetesPathophysiologyMonitoringVisual type={submodule.visual} />}
+              {noninsulinDiabetesPharmacotherapyVisualTypes.includes(submodule.visual) && <NoninsulinDiabetesPharmacotherapyVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>

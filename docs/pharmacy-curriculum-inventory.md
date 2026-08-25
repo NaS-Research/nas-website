@@ -9,6 +9,7 @@ This inventory records the source material available in the founder's Goodnotes 
 - Goodnotes materials remain private and are excluded from Git.
 - A source is marked `exported` only after a local PDF has been saved and verified.
 - A module is marked `built` only after its lesson, embedded checks, 100-question bank, randomized 10-question assessment, references, responsive behavior, and production build have all been verified.
+- Lesson and visual counts are determined by the subject's natural structure. Six is not a template requirement, and broader modules are divided into additional coherent lessons when needed.
 - Current medical claims require verification against authoritative contemporary references before publication.
 - Legacy pregnancy letter categories are not used as the current clinical standard.
 
@@ -692,6 +693,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 387 static pages generated
 - Goodnotes note: the diabetes lectures, workshop cases, and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
+### Noninsulin Diabetes Pharmacotherapy
+
+- Course scope: person-centered treatment selection; independent glycemic, cardiovascular, kidney, heart-failure, weight, liver, burden, and access goals; severe hyperglycemia and insulin thresholds; initial combination therapy; metformin mechanism, formulations, titration, kidney thresholds, contrast and acute-illness interruption, lactic acidosis, and vitamin B12; SGLT2 renal physiology, cardiorenal outcomes, declining glycemic efficacy at lower eGFR, euglycemic ketoacidosis, procedure interruption, volume depletion, genital and serious urinary infections, and foot risk; GLP-1 receptor agonist and dual GIP/GLP-1 mechanisms, product-specific outcome evidence, initiation and titration, gastrointestinal tolerability, thyroid C-cell warning, pancreatitis, gallbladder, kidney, retinopathy, anesthesia, formulation, and absorption considerations; DPP-4 mechanism, renal dosing, heart-failure warnings, pancreatitis, arthralgia, hypersensitivity, and bullous pemphigoid; sulfonylurea and meglitinide secretion, meal timing, hypoglycemia, weight, kidney risk, and interactions; thiazolidinedione transcriptional mechanism, delayed effect, fluid retention, heart failure, fracture, eye, liver, bladder, and reproductive considerations; alpha-glucosidase inhibitors; pramlintide; colesevelam; bromocriptine-QR; ASCVD, heart-failure, CKD, obesity, HFpEF, and metabolic liver integration; rational combination; mechanistic redundancy; deintensification; fasting, procedure, and acute-illness planning; and cost, access, and transitions
+- Current references reviewed: ADA Standards of Care in Diabetes 2026 pharmacologic treatment and obesity sections; current FDA prescribing information for empagliflozin, semaglutide, and tirzepatide; current FDA prescribing-information database; and the RxPrep 2023 diabetes chapter for historical scope comparison
+- Learning structure: ten content-driven lessons, ten native selection, metformin, SGLT2, incretin, DPP-4, secretagogue, thiazolidinedione, narrow-agent, outcome-integration, and combination-strategy diagrams, and ten embedded knowledge checks
+- Assessment: 104 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: treatment selection began with the intended outcome rather than a fixed metformin-first ladder; cardiorenal and weight indications could be independent of A1C; symptomatic or severe hyperglycemia retained an insulin threshold; metformin remained effective and accessible but followed current eGFR and interruption rules; SGLT2 glycemic and cardiorenal effects were separated; ketoacidosis was evaluated regardless of marked hyperglycemia; surgical holds were agent specific; genital, urinary, volume, and foot safety followed current product context; GLP-1 and dual GIP/GLP-1 therapy retained formulation, dose-escalation, boxed-warning, gastrointestinal, gallbladder, kidney, retinopathy, aspiration, and absorption considerations; outcome claims remained product and population specific; DPP-4 plus GLP-1 therapy was rejected as redundant; DPP-4 renal dosing and heart-failure warnings remained product specific; secretagogue affordability did not erase hypoglycemia, weight, meal, kidney, and interaction risk; pioglitazone benefits did not erase fluid, heart-failure, fracture, eye, liver, bladder, or reproductive risk; alpha-glucosidase treatment of hypoglycemia required glucose; pramlintide initiation required a 50 percent mealtime-insulin reduction; and every combination, hold, restart, and deintensification decision preserved an explicit clinical reason
+- Automated verification: 104 unique question IDs, four unique choices per question, valid lesson links, ten diagrams, and no em dash or en dash characters in public prose
+- Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, ten diagrams, all ten embedded knowledge checks, and no console errors or warnings
+- Build verification: Next.js production build passed August 25, 2026 with 388 static pages generated
+- Goodnotes note: the diabetes pharmacology lectures, workshop cases, and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -929,7 +942,7 @@ Available documents include diabetes pharmacology and therapeutics, diabetes wor
 Target modules:
 
 1. Diabetes Pathophysiology and Monitoring (`built`, 100 question bank; Goodnotes reconciliation pending)
-2. Noninsulin Diabetes Pharmacotherapy
+2. Noninsulin Diabetes Pharmacotherapy (`built`, 104 question bank; Goodnotes reconciliation pending)
 3. Insulin Therapy
 4. Diabetic Ketoacidosis
 5. Hyperosmolar Hyperglycemic State
