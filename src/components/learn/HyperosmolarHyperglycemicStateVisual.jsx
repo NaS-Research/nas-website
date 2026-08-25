@@ -1,0 +1,18 @@
+const diagrams = {
+  "hhs-pathway": ["Hyperosmolar cascade", "Water loss transforms hyperglycemia into neurologic crisis", ["Produce", "Relative insulin deficiency", "Increase hepatic glucose without major ketogenesis"], ["Excrete", "Osmotic diuresis", "Lose water and electrolytes through glucosuria"], ["Concentrate", "Hyperosmolality", "Impair kidney perfusion and cognitive function"]],
+  "hhs-diagnosis": ["Four-part diagnosis", "Confirm glucose, osmolality, ketones, and acid-base status", ["G", "Glucose", "At least 600 mg/dL"], ["O", "Osmolality", "Effective above 300 or total above 320"], ["K and A", "Minimal ketones and no acidosis", "Beta-hydroxybutyrate below 3, pH at least 7.3"]],
+  "hhs-causes": ["Cause and overlap", "Treat the trigger and classify the crisis", ["Stress", "Acute illness", "Infection, ischemia, stroke, trauma, or surgery"], ["Access", "Water and treatment", "Function, cognition, cost, caregiving, or medication"], ["Overlap", "DKA features", "Significant ketones or acidosis change insulin intensity"]],
+  "hhs-fluids": ["Fluid restoration", "Restore perfusion before forcing glucose downward", ["Assess", "Hemodynamics", "Cognition, perfusion, output, heart, and kidney reserve"], ["Resuscitate", "Isotonic crystalloid", "Begin 500 to 1,000 mL/h when reserve permits"], ["Individualize", "Limited reserve", "Use smaller increments and frequent reassessment"]],
+  "hhs-osmolality": ["Controlled correction", "Lower tonicity within neurologic safety limits", ["Glucose", "90 to 120 mg/dL/h maximum", "Avoid rapid intracellular water shifts"], ["Osmolality", "3 to 8 mOsm/kg/h", "Trend sodium and glucose together"], ["Sodium", "10 mmol/L per day maximum decline", "Do not react to the expected early rise alone"]],
+  "hhs-insulin": ["Treatment sequence", "Potassium and fluids determine when insulin begins", ["Gate", "Potassium above 3.5", "Replace first when lower"], ["Dose", "0.05 units/kg/h", "Use for pure HHS after initial fluid replacement"], ["Escalate", "0.1 units/kg/h", "Use when significant DKA features coexist"]],
+  "hhs-monitoring": ["Resolution dashboard", "Recovery spans chemistry, perfusion, and cognition", ["Trend", "Every 1 to 4 hours", "Glucose, electrolytes, creatinine, and osmolality"], ["Resolve", "Osmolality below 300", "Glucose below 250 and output above 0.5 mL/kg/h"], ["Confirm", "Cognitive improvement", "Investigate persistent or new neurologic findings"]],
+  "hhs-complications": ["Treatment safety", "Prevent injury during controlled reversal", ["Brain", "Osmotic injury", "Avoid rapid glucose, sodium, and osmolality change"], ["Circulation", "Thrombosis and kidney injury", "Restore perfusion and assess prophylaxis"], ["Reserve", "Fluid overload", "Adjust treatment to heart, kidney, age, and pregnancy"]],
+  "hhs-transition": ["Prevention bridge", "Build a treatment system the patient can use", ["Overlap", "Subcutaneous therapy", "Activate basal coverage before IV insulin stops"], ["Correct", "Precipitating cause", "Treat illness and medication or access failures"], ["Equip", "Hydration and follow-up", "Provide supplies, support, instructions, and rapid review"]],
+};
+
+export default function HyperosmolarHyperglycemicStateVisual({ type }) {
+  const item = diagrams[type];
+  if (!item) return null;
+  const [eyebrow, title, ...columns] = item;
+  return <figure className="chol-visual" aria-label={title}><figcaption><span>{eyebrow}</span><strong>{title}</strong></figcaption><div className="chol-visual__flow">{columns.map(([name, focus, detail], index) => <div className="chol-visual__node" key={name}><span>{String(index + 1).padStart(2, "0")}</span><strong>{name}</strong><em>{focus}</em><p>{detail}</p></div>)}</div></figure>;
+}
