@@ -206,6 +206,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 345 static pages generated
 - Goodnotes note: the dedicated adrenergic agonist and antagonist medicinal-chemistry lecture export remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
+### Diuretic Pharmacology
+
+- Course scope: segmental nephron transport, target-site delivery, loop, thiazide-like, mineralocorticoid antagonist, ENaC blocker, carbonic anhydrase inhibitor, osmotic, aquaretic, and SGLT2 pharmacology, plus resistance and sequential blockade
+- Cross reference completed: RxPrep NAPLEX 2023 renal, cardiovascular, electrolyte, acid-base, interaction, toxicology, and monitoring scope
+- Current references reviewed: current DailyMed furosemide, chlorthalidone, spironolactone, acetazolamide, mannitol, and tolvaptan product information
+- Learning structure: six lessons, six native nephron, loop, thiazide, collecting-duct, specialized-agent, and resistance diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions spanning tubular secretion, segment capacity, distal sodium delivery, effective circulating volume, NKCC2, NCC, calcium and magnesium, ototoxicity, hyponatremia, lithium, aldosterone, ENaC, hyperkalemia, bicarbonaturia, osmotic compartment shifts, aquaresis, SGLT2 physiology, early response, post-diuretic retention, sequential blockade, and NSAID interactions; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: decongestion was separated from intravascular depletion; dose equivalence was framed as approximate and response based; cardio-renal worsening was not interpreted from creatinine alone; aquaresis was separated from natriuresis; advanced combination therapy was paired with explicit electrolyte and perfusion monitoring
+- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 346 static pages generated
+- Goodnotes note: the dedicated diuretic pharmacology lecture export remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -284,7 +296,7 @@ Target modules:
 1. Adrenergic Agonists (`built`, 100 question bank; Goodnotes reconciliation pending)
 2. Adrenergic Antagonists (`built`, 100 question bank; Goodnotes reconciliation pending)
 3. Adrenergic Medicinal Chemistry (`built`, 100 question bank; Goodnotes reconciliation pending)
-4. Diuretic Pharmacology
+4. Diuretic Pharmacology (`built`, 100 question bank; Goodnotes reconciliation pending)
 5. Diuretic Medicinal Chemistry
 6. Glaucoma Pharmacotherapy
 
