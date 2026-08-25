@@ -4409,6 +4409,424 @@ body {
   height: 32rem;
 }
 
+.full-body-atlas {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 21rem);
+  height: clamp(44rem, 72vw, 57rem);
+  min-height: 44rem;
+  margin-top: 1rem;
+  overflow: hidden;
+  border: 1px solid var(--nas-line);
+  border-radius: 1.25rem;
+  background: #030303;
+}
+
+.full-body-atlas__stage {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 43%, rgba(102, 45, 38, 0.2), transparent 34%),
+    radial-gradient(circle at 50% 46%, rgba(209, 179, 133, 0.06), transparent 57%),
+    #020202;
+  isolation: isolate;
+}
+
+.full-body-atlas__stage::before {
+  position: absolute;
+  inset: 7% 18%;
+  border: 1px solid rgba(229, 196, 145, 0.07);
+  border-radius: 50%;
+  content: "";
+  pointer-events: none;
+  transform: scaleX(0.72);
+}
+
+.full-body-atlas__stage canvas {
+  position: relative;
+  z-index: 1;
+}
+
+.full-body-atlas__viewer {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: transparent;
+}
+
+.full-body-atlas__stage-heading {
+  position: absolute;
+  z-index: 3;
+  top: 1.35rem;
+  left: 1.5rem;
+  display: grid;
+  gap: 0.35rem;
+  pointer-events: none;
+}
+
+.full-body-atlas__stage-heading span,
+.full-body-atlas__panel header > p,
+.full-body-atlas__selection > span {
+  color: #756a5c;
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.full-body-atlas__stage-heading strong {
+  color: #d9d2c8;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.full-body-atlas__instructions {
+  position: absolute;
+  z-index: 3;
+  bottom: 1.35rem;
+  left: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: #5f5a54;
+  font-size: 0.62rem;
+  pointer-events: none;
+}
+
+.full-body-atlas__instructions i {
+  width: 1.2rem;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.full-body-atlas__loading {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: #a39a8f;
+  font-size: 0.72rem;
+  white-space: nowrap;
+}
+
+.full-body-atlas__loading::before,
+.full-body-atlas--loading > span {
+  width: 0.55rem;
+  height: 0.55rem;
+  border: 1px solid rgba(229, 193, 139, 0.28);
+  border-top-color: #e5c18b;
+  border-radius: 50%;
+  content: "";
+  animation: atlas-loading 850ms linear infinite;
+}
+
+.full-body-atlas--loading {
+  min-height: 44rem;
+  place-items: center;
+  color: #8d857b;
+  font-size: 0.75rem;
+}
+
+@keyframes atlas-loading {
+  to { transform: rotate(360deg); }
+}
+
+.full-body-atlas__panel {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  overflow-y: auto;
+  border-left: 1px solid var(--nas-line);
+  background: rgba(6, 6, 6, 0.96);
+}
+
+.full-body-atlas__panel header {
+  padding: 1.6rem 1.4rem 1.3rem;
+  border-bottom: 1px solid var(--nas-line-soft);
+}
+
+.full-body-atlas__panel header h3 {
+  margin-top: 0.55rem;
+  color: #f2eee8;
+  font-size: 1.65rem;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+
+.full-body-atlas__panel header > span {
+  display: block;
+  margin-top: 0.7rem;
+  color: #817b73;
+  font-size: 0.75rem;
+  line-height: 1.55;
+}
+
+.full-body-atlas__panel-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.4rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--nas-line-soft);
+}
+
+.full-body-atlas__panel-actions button {
+  border: 1px solid var(--nas-line);
+  border-radius: 0.45rem;
+  padding: 0.6rem;
+  color: #8d857d;
+  background: #090909;
+  font-size: 0.64rem;
+  cursor: pointer;
+  transition: border-color 180ms ease, color 180ms ease;
+}
+
+.full-body-atlas__panel-actions button:hover {
+  border-color: rgba(229, 193, 139, 0.35);
+  color: #e5c18b;
+}
+
+.full-body-atlas__layers {
+  padding: 0.5rem;
+}
+
+.full-body-atlas__layer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 0.7rem;
+  transition: border-color 180ms ease, background-color 180ms ease;
+}
+
+.full-body-atlas__layer + .full-body-atlas__layer {
+  margin-top: 0.15rem;
+}
+
+.full-body-atlas__layer.is-focused {
+  border-color: rgba(224, 190, 137, 0.17);
+  background: rgba(224, 190, 137, 0.035);
+}
+
+.full-body-atlas__layer-main {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.7rem;
+  align-items: start;
+  padding: 0.85rem 0.45rem 0.85rem 0.75rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.full-body-atlas__layer-main > span {
+  width: 0.56rem;
+  height: 0.56rem;
+  margin-top: 0.2rem;
+  border-radius: 50%;
+  background: var(--layer-color);
+  box-shadow: 0 0 0.8rem color-mix(in srgb, var(--layer-color) 30%, transparent);
+}
+
+.full-body-atlas__layer-main div {
+  min-width: 0;
+}
+
+.full-body-atlas__layer-main strong,
+.full-body-atlas__layer-main small {
+  display: block;
+}
+
+.full-body-atlas__layer-main strong {
+  color: #c9c3bb;
+  font-size: 0.8rem;
+  font-weight: 520;
+}
+
+.full-body-atlas__layer-main small {
+  margin-top: 0.25rem;
+  color: #68635e;
+  font-size: 0.62rem;
+  line-height: 1.4;
+}
+
+.full-body-atlas__layer-visibility {
+  margin-right: 0.5rem;
+  border: 1px solid var(--nas-line-soft);
+  border-radius: 999px;
+  padding: 0.38rem 0.48rem;
+  color: #827b73;
+  font-size: 0.5rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.full-body-atlas__layer-visibility[aria-pressed="false"] {
+  color: #4f4b47;
+  text-decoration: line-through;
+}
+
+.full-body-atlas__heart-entry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0.45rem 1rem 1rem;
+  border: 1px solid rgba(229, 193, 139, 0.32);
+  border-radius: 0.8rem;
+  padding: 0.9rem 1rem;
+  color: #ead9bd;
+  background: linear-gradient(110deg, rgba(132, 55, 41, 0.17), rgba(229, 193, 139, 0.04));
+  text-align: left;
+  cursor: pointer;
+}
+
+.full-body-atlas__heart-entry span,
+.full-body-atlas__heart-entry small,
+.full-body-atlas__heart-entry strong {
+  display: block;
+}
+
+.full-body-atlas__heart-entry small {
+  margin-bottom: 0.3rem;
+  color: #8f7860;
+  font-size: 0.54rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.full-body-atlas__heart-entry strong {
+  font-size: 0.82rem;
+  font-weight: 520;
+}
+
+.full-body-atlas__heart-entry i {
+  font-size: 0.9rem;
+  font-style: normal;
+  transition: transform 180ms ease;
+}
+
+.full-body-atlas__heart-entry:hover i {
+  transform: translate(0.18rem, -0.18rem);
+}
+
+.full-body-atlas__selection {
+  margin-top: auto;
+  padding: 1.1rem 1.4rem;
+  border-top: 1px solid var(--nas-line-soft);
+}
+
+.full-body-atlas__selection strong,
+.full-body-atlas__selection small {
+  display: block;
+}
+
+.full-body-atlas__selection strong {
+  margin-top: 0.55rem;
+  color: #e9e3da;
+  font-size: 0.92rem;
+  font-weight: 520;
+  text-transform: capitalize;
+}
+
+.full-body-atlas__selection small,
+.full-body-atlas__selection p {
+  margin-top: 0.35rem;
+  color: #6f6962;
+  font-size: 0.66rem;
+  line-height: 1.5;
+}
+
+.full-body-atlas__credit {
+  padding: 0.85rem 1.4rem 1.2rem;
+  color: #504c47;
+  font-size: 0.55rem;
+  line-height: 1.5;
+}
+
+.full-body-atlas__reset {
+  align-self: flex-start;
+  margin: 0.25rem 1.4rem 0;
+  border-bottom: 1px solid rgba(229, 193, 139, 0.22);
+  padding-bottom: 0.2rem;
+  color: #756b60;
+  font-size: 0.6rem;
+  cursor: pointer;
+}
+
+.full-body-atlas__reset:hover {
+  border-color: rgba(229, 193, 139, 0.6);
+  color: #d9bd91;
+}
+
+.pharmacy-explorer__systems button.pharmacy-explorer__systems-overview > span {
+  border: 1px solid rgba(229, 193, 139, 0.5);
+  background: transparent;
+}
+
+@media (max-width: 54.99rem) {
+  .full-body-atlas {
+    grid-template-columns: 1fr;
+    height: auto;
+    min-height: 0;
+  }
+
+  .full-body-atlas__stage {
+    height: clamp(34rem, 132vw, 46rem);
+    min-height: 34rem;
+    border-bottom: 1px solid var(--nas-line);
+  }
+
+  .full-body-atlas__panel {
+    max-height: none;
+    border-left: 0;
+  }
+
+  .full-body-atlas__layers {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.2rem;
+  }
+
+  .full-body-atlas__layer + .full-body-atlas__layer {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 34rem) {
+  .full-body-atlas__stage {
+    height: 36rem;
+  }
+
+  .full-body-atlas__stage-heading {
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .full-body-atlas__instructions {
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    justify-content: center;
+    font-size: 0.56rem;
+  }
+
+  .full-body-atlas__instructions span:nth-of-type(3),
+  .full-body-atlas__instructions i:nth-of-type(2) {
+    display: none;
+  }
+
+  .full-body-atlas__layers {
+    grid-template-columns: 1fr;
+  }
+
+  .full-body-atlas__panel header {
+    padding-inline: 1rem;
+  }
+}
+
 .heart-lab {
   min-width: 0;
   border-bottom: 1px solid var(--nas-line);

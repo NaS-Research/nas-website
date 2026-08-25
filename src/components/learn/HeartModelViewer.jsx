@@ -70,7 +70,21 @@ const surfaceFocus = {
 function SurfaceHeartViewer({ selected }) {
   const frameRef = useRef();
   const baseCameraRef = useRef();
+  const idleTimerRef = useRef();
+  const spinBusyRef = useRef(false);
   const [viewerApi, setViewerApi] = useState(null);
+  const [idleSpin, setIdleSpin] = useState(true);
+
+  function pauseIdleSpin() {
+    window.clearTimeout(idleTimerRef.current);
+    setIdleSpin(false);
+  }
+
+  function resumeIdleSpin() {
+    window.clearTimeout(idleTimerRef.current);
+    if (selected) return;
+    idleTimerRef.current = window.setTimeout(() => setIdleSpin(true), 5000);
+  }
 
   useEffect(() => {
     let cancelled = false;
@@ -121,9 +135,46 @@ function SurfaceHeartViewer({ selected }) {
 
     return () => {
       cancelled = true;
+      window.clearTimeout(idleTimerRef.current);
       script?.removeEventListener("load", initializeViewer);
     };
   }, []);
+
+  useEffect(() => {
+    if (!viewerApi || !idleSpin || selected) return;
+
+    const spin = window.setInterval(() => {
+      if (spinBusyRef.current) return;
+      spinBusyRef.current = true;
+      viewerApi.getCameraLookAt((error, camera) => {
+        if (error || !camera) {
+          spinBusyRef.current = false;
+          return;
+        }
+
+        const angle = 0.008;
+        const cosine = Math.cos(angle);
+        const sine = Math.sin(angle);
+        const x = camera.position[0] - camera.target[0];
+        const y = camera.position[1] - camera.target[1];
+        const position = [
+          camera.target[0] + x * cosine - y * sine,
+          camera.target[1] + x * sine + y * cosine,
+          camera.position[2],
+        ];
+
+        viewerApi.setCameraEasing("linear");
+        viewerApi.setCameraLookAt(position, camera.target, 0.24, () => {
+          spinBusyRef.current = false;
+        });
+      });
+    }, 250);
+
+    return () => {
+      window.clearInterval(spin);
+      spinBusyRef.current = false;
+    };
+  }, [idleSpin, selected, viewerApi]);
 
   useEffect(() => {
     const camera = baseCameraRef.current;
@@ -131,8 +182,11 @@ function SurfaceHeartViewer({ selected }) {
 
     if (!selected || !surfaceFocus[selected]) {
       viewerApi.setCameraLookAt(camera.position, camera.target, 0.9);
+      resumeIdleSpin();
       return;
     }
+
+    pauseIdleSpin();
 
     const preset = surfaceFocus[selected];
     const vector = camera.position.map((value, index) => value - camera.target[index]);
@@ -165,6 +219,12 @@ function SurfaceHeartViewer({ selected }) {
         title="Realistic interactive exterior model of the human heart"
         allow="autoplay; fullscreen; xr-spatial-tracking"
         allowFullScreen
+        onMouseEnter={pauseIdleSpin}
+        onMouseLeave={resumeIdleSpin}
+        onTouchStart={pauseIdleSpin}
+        onTouchEnd={resumeIdleSpin}
+        onFocus={pauseIdleSpin}
+        onBlur={resumeIdleSpin}
       />
       {callout && (
         <div
@@ -346,12 +406,32 @@ function CameraZoom({ level }) {
 }
 
 function HeartStage({ activeMode, onSelect, selected, onQuizAnswer, quizActive, resetSignal, zoomLevel }) {
+  const idleTimerRef = useRef();
+  const [idleSpin, setIdleSpin] = useState(true);
+
+  function pauseIdleSpin() {
+    window.clearTimeout(idleTimerRef.current);
+    setIdleSpin(false);
+  }
+
+  function resumeIdleSpin() {
+    window.clearTimeout(idleTimerRef.current);
+    idleTimerRef.current = window.setTimeout(() => setIdleSpin(true), 5000);
+  }
+
+  useEffect(() => () => window.clearTimeout(idleTimerRef.current), []);
+
   return (
     <Canvas
       dpr={[1, 1.8]}
       camera={{ position: [0, 0.1, 3.7], fov: 32 }}
       gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }}
       shadows
+      onPointerEnter={pauseIdleSpin}
+      onPointerLeave={resumeIdleSpin}
+      onPointerDown={pauseIdleSpin}
+      onPointerUp={resumeIdleSpin}
+      onWheel={pauseIdleSpin}
     >
       <ambientLight intensity={0.62} />
       <hemisphereLight color="#f2d3aa" groundColor="#17070a" intensity={1.25} />
@@ -368,7 +448,17 @@ function HeartStage({ activeMode, onSelect, selected, onQuizAnswer, quizActive, 
       />
       <CameraZoom level={zoomLevel} />
       <ContactShadows position={[0, -1.25, 0]} opacity={0.32} scale={4} blur={2.8} far={3} color="#240b0b" />
-      <OrbitControls makeDefault enablePan={false} minDistance={1.6} maxDistance={6} dampingFactor={0.075} />
+      <OrbitControls
+        makeDefault
+        enablePan={false}
+        minDistance={1.6}
+        maxDistance={6}
+        dampingFactor={0.075}
+        autoRotate={idleSpin}
+        autoRotateSpeed={0.42}
+        onStart={pauseIdleSpin}
+        onEnd={resumeIdleSpin}
+      />
     </Canvas>
   );
 }

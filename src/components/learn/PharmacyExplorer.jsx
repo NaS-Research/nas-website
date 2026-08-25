@@ -22,6 +22,16 @@ const HeartModelViewer = dynamic(() => import("./HeartModelViewer"), {
   ),
 });
 
+const FullBodyAtlas = dynamic(() => import("./FullBodyAtlas"), {
+  ssr: false,
+  loading: () => (
+    <div className="full-body-atlas full-body-atlas--loading" role="status">
+      <span />
+      Preparing the whole body atlas
+    </div>
+  ),
+});
+
 const icons = {
   activity: IconActivity,
   brain: IconBrain,
@@ -34,6 +44,8 @@ const icons = {
 export default function PharmacyExplorer() {
   const [activeMode, setActiveMode] = useState("anatomy");
   const [activeSystem, setActiveSystem] = useState("cardiovascular");
+  const [atlasLevel, setAtlasLevel] = useState("body");
+  const [bodyFocus, setBodyFocus] = useState(null);
   const mode = explorerModes.find((item) => item.id === activeMode);
   const system = explorerSystems.find((item) => item.id === activeSystem);
   const content = system.modes[activeMode];
@@ -71,15 +83,42 @@ export default function PharmacyExplorer() {
         <p>{mode.description}</p>
       </div>
 
+      {atlasLevel === "body" ? (
+        <FullBodyAtlas
+          initialFocus={bodyFocus}
+          onOpenHeart={() => {
+            setActiveSystem("cardiovascular");
+            setAtlasLevel("heart");
+          }}
+        />
+      ) : (
       <div className="pharmacy-explorer__workspace">
         <nav className="pharmacy-explorer__systems" aria-label="Organ systems">
           <p>Choose a system</p>
+          <button
+            type="button"
+            className="pharmacy-explorer__systems-overview"
+            onClick={() => {
+              setBodyFocus(null);
+              setAtlasLevel("body");
+            }}
+          >
+            <span aria-hidden="true" />
+            Whole body
+          </button>
           {explorerSystems.map((item) => (
             <button
               type="button"
               className={activeSystem === item.id ? "is-active" : ""}
               aria-pressed={activeSystem === item.id}
-              onClick={() => setActiveSystem(item.id)}
+              onClick={() => {
+                setActiveSystem(item.id);
+                if (item.id !== "cardiovascular") {
+                  const bodyLayer = item.id === "nervous" ? "nervous" : "visceral";
+                  setBodyFocus(bodyLayer);
+                  setAtlasLevel("body");
+                }
+              }}
               key={item.id}
             >
               <span style={{ "--system-accent": item.accent }} aria-hidden="true" />
@@ -141,6 +180,7 @@ export default function PharmacyExplorer() {
           </div>
         </article>
       </div>
+      )}
 
       <p className="pharmacy-explorer__note">
         The explorer is an educational relationship map. Medication specific decisions require current labeling, clinical guidance, and patient specific assessment.
