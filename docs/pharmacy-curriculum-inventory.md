@@ -362,6 +362,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 358 static pages generated
 - Goodnotes note: the dedicated antiplatelet lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
+### Coagulation and Anticoagulant Pharmacology
+
+- Course scope: primary and secondary hemostasis, tissue factor initiation, factor Xa, thrombin, fibrin, fibrinolysis, antithrombin-dependent anticoagulants, vitamin K antagonism, direct factor Xa and thrombin inhibitors, prevention and treatment intensity, PT and INR, aPTT, anti-Xa and thrombin-sensitive testing, routine-test limitations, kidney and liver function, age, weight, pregnancy, interactions, additive bleeding, transitions, bridging, neuraxial procedures, major bleeding, reversal, and HIT
+- Cross reference completed: RxPrep NAPLEX 2023 anticoagulant mechanism, laboratory, interaction, adverse-effect, reversal, monitoring, HIT, and counseling scope
+- Current references reviewed: ASH VTE clinical guideline collection, 2021 CHEST VTE guidance, and current DailyMed labeling for heparin, warfarin, apixaban, rivaroxaban, edoxaban, fondaparinux, and andexanet alfa
+- Learning structure: six lessons, six native hemostasis, target, laboratory, selection, transition, and critical-safety diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions spanning primary and secondary hemostasis, tissue factor, factor Xa, thrombin, fibrinolysis, antithrombin, vitamin K, direct Xa and thrombin inhibition, anticoagulant intensity, PT and INR, aPTT, anti-Xa, thrombin time, routine-test limits, kidney and liver function, age, weight, pregnancy, P-gp and CYP interactions, additive bleeding, transitions, neuraxial procedures, major bleeding, reversal, and HIT; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: the cell-based model replaced isolated-cascade memorization; D-dimer was not treated as diagnostic by itself; INR was limited to vitamin K antagonist monitoring; routine PT and aPTT were not used to exclude all DOAC exposure; dose criteria stayed product and indication specific; pregnancy letters were not used; bridging was risk selected; reversal was paired to agent and source control; HIT was treated as a prothrombotic emergency
+- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 359 static pages generated
+- Goodnotes note: the dedicated anticoagulation lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -501,7 +513,7 @@ Target modules:
 1. Chronic Coronary Disease (`built`, 100 question bank; Goodnotes reconciliation pending)
 2. Acute Coronary Syndromes (`built`, 100 question bank; Goodnotes reconciliation pending)
 3. Antiplatelet Pharmacology (`built`, 100 question bank; Goodnotes reconciliation pending)
-4. Coagulation and Anticoagulant Pharmacology
+4. Coagulation and Anticoagulant Pharmacology (`built`, 100 question bank; Goodnotes reconciliation pending)
 5. Venous Thromboembolism
 6. Warfarin Management
 7. Direct Oral Anticoagulants
