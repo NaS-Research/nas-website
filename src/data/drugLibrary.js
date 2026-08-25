@@ -1,3 +1,5 @@
+import { drugCategoryByName } from "./drugCategories.js";
+
 const coreDrugNames = [
   "atorvastatin", "levothyroxine", "metformin", "amlodipine", "lisinopril", "albuterol", "losartan", "metoprolol", "rosuvastatin", "omeprazole",
   "gabapentin", "sertraline", "escitalopram", "semaglutide", "amphetamine and dextroamphetamine", "pantoprazole", "bupropion", "hydrochlorothiazide", "fluoxetine", "trazodone",
@@ -162,6 +164,7 @@ export const coreDrugs = coreDrugNames.map((generic, index) => ({
   generic,
   slug: slugify(generic),
   number: index + 1,
+  category: drugCategoryByName[generic] || "Other",
   ...(featured[generic] || {}),
 }));
 

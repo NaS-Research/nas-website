@@ -7,8 +7,22 @@ import { drugQuestions } from "@/data/drugQuestions";
 import DrugQuestionBank from "@/components/learn/DrugQuestionBank";
 
 const letters = ["All", ..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
-const studySystems = ["All systems", ...new Set(coreDrugs.map((drug) => drug.system).filter(Boolean))];
-const studyClasses = ["All classes", ...new Set(coreDrugs.map((drug) => drug.className).filter(Boolean))];
+const categoryOrder = [
+  "Cardiovascular and renal",
+  "Endocrine and metabolic",
+  "Neurology and psychiatry",
+  "Pain and musculoskeletal",
+  "Gastrointestinal",
+  "Respiratory and allergy",
+  "Infectious diseases",
+  "Hematology",
+  "Oncology and immunology",
+  "Reproductive and genitourinary",
+  "Dermatology",
+  "Ophthalmology and otology",
+  "Vitamins and supplements",
+];
+const studyCategories = ["All categories", ...categoryOrder.filter((item) => coreDrugs.some((drug) => drug.category === item))];
 
 function displayName(name) {
   return name.replace(/\b\w/g, (letter) => letter.toUpperCase());
@@ -19,8 +33,7 @@ export default function DrugLibrary() {
   const [query, setQuery] = useState("");
   const [letter, setLetter] = useState("All");
   const [collectionSize, setCollectionSize] = useState("300");
-  const [system, setSystem] = useState("All systems");
-  const [classFilter, setClassFilter] = useState("All classes");
+  const [category, setCategory] = useState("All categories");
   const [limit, setLimit] = useState(36);
   const [rxResults, setRxResults] = useState([]);
   const [searching, setSearching] = useState(false);
@@ -30,13 +43,12 @@ export default function DrugLibrary() {
     const normalized = query.toLowerCase();
     return coreDrugs.filter((drug) => {
       const matchesLetter = letter === "All" || drug.generic.startsWith(letter.toLowerCase());
-      const matchesQuery = !normalized || `${drug.generic} ${drug.brand || ""} ${drug.className || ""}`.toLowerCase().includes(normalized);
+      const matchesQuery = !normalized || `${drug.generic} ${drug.brand || ""} ${drug.className || ""} ${drug.category}`.toLowerCase().includes(normalized);
       const matchesCollection = drug.number <= Number(collectionSize);
-      const matchesSystem = system === "All systems" || drug.system === system;
-      const matchesClass = classFilter === "All classes" || drug.className === classFilter;
-      return matchesLetter && matchesQuery && matchesCollection && matchesSystem && matchesClass;
+      const matchesCategory = category === "All categories" || drug.category === category;
+      return matchesLetter && matchesQuery && matchesCollection && matchesCategory;
     });
-  }, [classFilter, collectionSize, letter, query, system]);
+  }, [category, collectionSize, letter, query]);
 
   useEffect(() => {
     if (mode !== "all" || query.trim().length < 2) {
@@ -72,8 +84,7 @@ export default function DrugLibrary() {
     setQuery("");
     setLetter("All");
     setCollectionSize("300");
-    setSystem("All systems");
-    setClassFilter("All classes");
+    setCategory("All categories");
     setLimit(36);
   }
 
@@ -114,15 +125,9 @@ export default function DrugLibrary() {
             <div className="drug-library__collections" aria-label="Select ranked medication collection">
               {["100", "200", "300"].map((size) => <button type="button" className={collectionSize === size ? "is-active" : ""} onClick={() => { setCollectionSize(size); setLimit(36); }} key={size}>Top {size}</button>)}
             </div>
-            <label className="drug-library__class-filter">
-              <span>Completed profile class</span>
-              <select value={classFilter} onChange={(event) => { setClassFilter(event.target.value); setSystem("All systems"); setLetter("All"); setLimit(36); }}>
-                {studyClasses.map((item) => <option value={item} key={item}>{item}</option>)}
-              </select>
-            </label>
           </div>
-          <div className="drug-library__categories" aria-label="Filter completed profiles by body system">
-            {studySystems.map((item) => <button type="button" className={system === item ? "is-active" : ""} onClick={() => { setSystem(item); setClassFilter("All classes"); setLetter("All"); setLimit(36); }} key={item}>{item}</button>)}
+          <div className="drug-library__categories" aria-label="Filter medications by therapeutic category">
+            {studyCategories.map((item) => <button type="button" className={category === item ? "is-active" : ""} onClick={() => { setCategory(item); setLetter("All"); setLimit(36); }} key={item}>{item}</button>)}
           </div>
           <div className="drug-library__letters" aria-label="Filter by first letter">
             {letters.map((item) => <button type="button" className={letter === item ? "is-active" : ""} onClick={() => { setLetter(item); setLimit(36); }} key={item}>{item}</button>)}
@@ -132,7 +137,7 @@ export default function DrugLibrary() {
               <article className={`drug-card ${drug.appearance ? "drug-card--featured" : ""}`} key={drug.generic}>
                 <div className="drug-card__number">{String(drug.number).padStart(3, "0")}</div>
                 <div className="drug-card__body">
-                  <span>{drug.className || "Medication profile"}</span>
+                  <span>{drug.className || drug.category}</span>
                   <h2>{displayName(drug.generic)}</h2>
                   {drug.brand && <p>{drug.brand}</p>}
                   {drug.commonUses && <em>{drug.commonUses.slice(0, 2).join(" · ")}</em>}
@@ -141,7 +146,7 @@ export default function DrugLibrary() {
               </article>
             ))}
           </div>
-          {filtered.length === 0 && <div className="drug-library__empty"><strong>No medications match these filters.</strong><p>Try another ranked collection, class, system, letter, or search term.</p></div>}
+          {filtered.length === 0 && <div className="drug-library__empty"><strong>No medications match these filters.</strong><p>Try another ranked collection, therapeutic category, letter, or search term.</p></div>}
           {limit < filtered.length && <button type="button" className="drug-library__more" onClick={() => setLimit((value) => value + 36)}>Load more medications</button>}
         </>
       ) : mode === "all" ? (
@@ -159,7 +164,7 @@ export default function DrugLibrary() {
         <DrugQuestionBank />
       )}
 
-      <p className="drug-library__source">Ranked collections use the <a href="https://clincalc.com/DrugStats/Top300Drugs.aspx" target="_blank" rel="noreferrer">ClinCalc Top 300 Drugs of 2024</a>, DrugStats Database version 2026.08, based on the Medical Expenditure Panel Survey. Live search uses publicly available data from the <a href="https://www.nlm.nih.gov/research/umls/rxnorm/index.html" target="_blank" rel="noreferrer">U.S. National Library of Medicine RxNorm</a>. Neither source endorses or recommends this product. Medication appearance and labeling vary by manufacturer and product.</p>
+      <p className="drug-library__source">Ranked collections use the <a href="https://clincalc.com/DrugStats/Top300Drugs.aspx" target="_blank" rel="noreferrer">ClinCalc Top 300 Drugs of 2024</a>, DrugStats Database version 2026.08, based on the Medical Expenditure Panel Survey. Therapeutic categories use relationships from the <a href="https://rxnav.nlm.nih.gov/RxClassIntro.html" target="_blank" rel="noreferrer">U.S. National Library of Medicine RxClass</a> and the ATC classification, with pharmacy-focused placement for combination products. Live search uses RxNorm. These sources do not endorse or recommend this product. Medication appearance and labeling vary by manufacturer and product.</p>
     </section>
   );
 }
