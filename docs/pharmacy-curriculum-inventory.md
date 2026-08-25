@@ -516,6 +516,17 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 371 static pages generated
 - Goodnotes note: the dedicated acute heart-failure lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
+### Heart Failure Medicinal Chemistry
+
+- Course scope: ACE zinc-binding strategies, captopril, enalapril activation, lisinopril, ARB acidic aromatic pharmacophores, sacubitril activation to LBQ657, valsartan complement, beta-blocker aryloxypropanolamine structure, carvedilol stereochemistry, metoprolol formulation and CYP2D6, bisoprolol selectivity, steroidal and nonsteroidal MRA design, SGLT2 C-glucosides, loop-diuretic tubular secretion and scaffold differences, hydralazine acetylation, nitrate bioactivation, ivabradine channel access, digoxin architecture and transport, vericiguat, and structure-to-clinic evidence integration
+- Current references reviewed: current PubChem molecular records, current DailyMed labeling, and contemporary heart-failure guidance
+- Learning structure: seven lessons, seven native RAS, ARNI, beta-blocker, MRA, renal-delivery, vasodilator and rate-control, and integrated molecular diagrams, and seven embedded knowledge checks
+- Assessment: 108 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: molecular scaffold was separated from clinical outcome evidence; prodrugs were traced to active species; shared targets did not imply interchangeable disposition or labeling; stereochemistry and formulation were connected to exposure; renal-target drugs were traced to target access; active metabolites and transporters were included where clinically consequential; structure was used to generate hypotheses rather than replace labeling, trials, or guidance
+- Automated verification: 108 unique question IDs, no duplicate answer choices, valid lesson links, seven diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 372 static pages generated
+- Goodnotes note: the dedicated heart-failure medicinal-chemistry lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -702,7 +713,7 @@ Target modules:
 1. Heart Failure Pathophysiology (`built`, 104 question bank; Goodnotes reconciliation pending)
 2. Chronic Heart Failure Pharmacotherapy (`built`, 104 question bank; Goodnotes reconciliation pending)
 3. Acute Decompensated Heart Failure (`built`, 104 question bank; Goodnotes reconciliation pending)
-4. Heart Failure Medicinal Chemistry
+4. Heart Failure Medicinal Chemistry (`built`, 108 question bank; Goodnotes reconciliation pending)
 5. Peripheral Arterial Disease
 
 #### Stroke and kidney disease
