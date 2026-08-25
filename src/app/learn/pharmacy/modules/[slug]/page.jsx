@@ -55,6 +55,7 @@ import RenalReplacementTherapyVisual from "@/components/learn/RenalReplacementTh
 import AllergicRhinitisVisual from "@/components/learn/AllergicRhinitisVisual";
 import AsthmaVisual from "@/components/learn/AsthmaVisual";
 import ChronicObstructivePulmonaryDiseaseVisual from "@/components/learn/ChronicObstructivePulmonaryDiseaseVisual";
+import PulmonaryArterialHypertensionVisual from "@/components/learn/PulmonaryArterialHypertensionVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -109,6 +110,7 @@ const renalReplacementTherapyVisualTypes = ["rrt-choice", "rrt-mechanics", "rrt-
 const allergicRhinitisVisualTypes = ["ar-phenotype", "ar-immunology", "ar-technique", "ar-therapy", "ar-safety", "ar-immunotherapy"];
 const asthmaVisualTypes = ["asthma-diagnosis", "asthma-risk", "asthma-pharmacology", "asthma-strategy", "asthma-severe", "asthma-acute"];
 const chronicObstructivePulmonaryDiseaseVisualTypes = ["copd-diagnosis", "copd-assessment", "copd-pharmacology", "copd-strategy", "copd-nonpharmacologic", "copd-acute"];
+const pulmonaryArterialHypertensionVisualTypes = ["pah-hemodynamics", "pah-diagnosis", "pah-risk", "pah-pharmacology", "pah-strategy", "pah-special"];
 
 export function generateStaticParams() {
   return pharmacyModules.map((module) => ({ slug: module.slug }));
@@ -228,6 +230,7 @@ export default async function PharmacyModulePage({ params }) {
               {allergicRhinitisVisualTypes.includes(submodule.visual) && <AllergicRhinitisVisual type={submodule.visual} />}
               {asthmaVisualTypes.includes(submodule.visual) && <AsthmaVisual type={submodule.visual} />}
               {chronicObstructivePulmonaryDiseaseVisualTypes.includes(submodule.visual) && <ChronicObstructivePulmonaryDiseaseVisual type={submodule.visual} />}
+              {pulmonaryArterialHypertensionVisualTypes.includes(submodule.visual) && <PulmonaryArterialHypertensionVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>

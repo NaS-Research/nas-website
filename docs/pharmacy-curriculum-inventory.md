@@ -637,6 +637,17 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 382 static pages generated
 - Goodnotes note: the COPD lecture, chapter, and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
+### Pulmonary Arterial Hypertension
+
+- Course scope: five clinical pulmonary hypertension groups, current invasive hemodynamic definitions, pulmonary vascular resistance calculation, precapillary and postcapillary differentiation, pulmonary vascular remodeling, right ventricular adaptation and failure, clinical warning signs, echocardiographic probability, right-heart catheterization, ventilation-perfusion screening for chronic thromboembolic disease, associated and heritable PAH, WHO functional class, exercise capacity, natriuretic peptides, right-heart imaging, invasive risk markers, congestion and diuresis, exercise and supportive care, PDE5 inhibition, soluble guanylate cyclase stimulation, endothelin receptor antagonism, prostacyclin analogues, IP receptor agonism, sotatercept and activin signaling, initial dual oral therapy, high-risk parenteral prostacyclin, follow-up escalation, transplant referral, acute vasoreactivity, calcium channel blocker responders, pregnancy, pulmonary veno-occlusive disease, and right-heart decompensation
+- Current references reviewed: 2022 ESC/ERS pulmonary hypertension guideline, current FDA Winrevair prescribing information, current FDA Letairis prescribing information, current FDA Uptravi prescribing information, and current FDA product labeling
+- Learning structure: six lessons, six native hemodynamic, diagnostic, right-heart-risk, pathway-pharmacology, treatment-strategy, and special-situation diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: pulmonary hypertension remained a hemodynamic finding with five clinical groups rather than a synonym for PAH; Group 1 PAH required precapillary hemodynamics plus exclusion of lung, left-heart, thromboembolic, and other mechanisms; echocardiography estimated probability but did not replace right-heart catheterization; PVR calculation preserved wedge pressure and cardiac output; V/Q imaging remained the screening test for chronic thromboembolic disease; risk integrated functional, exercise, biomarker, imaging, and invasive domains; baseline three-strata and follow-up four-strata assessment were separated; the target remained a low-risk state; diuresis balanced congestion against preload and output; anticoagulation remained individualized; nitrate and PDE5 inhibitor, and riociguat and PDE5 inhibitor, combinations were prohibited; ERA safety followed current product-specific labeling rather than obsolete class assumptions; parenteral prostacyclin interruption was treated as an emergency; sotatercept was positioned as a nonvasodilator activin-pathway treatment with weight-based dosing and hematologic monitoring; initial dual oral therapy fit many low or intermediate-risk patients without major cardiopulmonary comorbidity; high-risk disease brought parenteral prostacyclin and transplant planning forward; calcium channel blockers were restricted to selected positive vasoreactivity responders; pregnancy, PVOD, and acute right-heart failure triggered specialized management
+- Automated verification: 100 unique question IDs, four unique choices per question, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 383 static pages generated
+- Goodnotes note: the pulmonary arterial hypertension lecture and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -862,7 +873,7 @@ Target modules:
 1. Allergic Rhinitis (`built`, 100 question bank; Goodnotes reconciliation pending)
 2. Asthma (`built`, 104 question bank; Goodnotes reconciliation pending)
 3. Chronic Obstructive Pulmonary Disease (`built`, 100 question bank; Goodnotes reconciliation pending)
-4. Pulmonary Arterial Hypertension
+4. Pulmonary Arterial Hypertension (`built`, 100 question bank; Goodnotes reconciliation pending)
 5. Cystic Fibrosis
 6. Drug-Induced Pulmonary Disease
 7. Pituitary Pharmacology
