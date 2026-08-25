@@ -582,6 +582,17 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 377 static pages generated
 - Goodnotes note: the CKD lecture, chapter, and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
+### Complications of Chronic Kidney Disease
+
+- Course scope: risk-based surveillance, trend interpretation, diagnostic closure, interacting complications, anemia differential, ferritin and TSAT interpretation, oral and IV iron, current initiation and withholding boundaries, ESA goals and risk, HIF-PHI labeling, phosphate retention, FGF23 and PTH, serial CKD-MBD interpretation, secondary hyperparathyroidism, phosphate-lowering therapy, calcium exposure, bone density and turnover, acute versus chronic hyperkalemia, medication and dietary contributors, potassium binders, metabolic acidosis and alkali safety, congestion, diuretic resistance, protein-energy wasting, sarcopenia, uremic symptoms, kidney failure preparation, and comprehensive conservative kidney management
+- Current references reviewed: final KDIGO 2026 anemia in CKD guideline and executive summary, KDIGO 2017 CKD-MBD guideline suite, final KDIGO 2024 CKD guidance, KDIGO potassium-management resources, and current DailyMed labeling
+- Learning structure: six lessons, six native surveillance, anemia, mineral-bone, electrolyte, volume-nutrition, and advanced-care diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: CKD did not replace a complete anemia differential; ferritin and TSAT remained separate signals; 2026 iron thresholds were divided by hemodialysis status; routine iron withholding boundaries were made explicit; ESA therapy minimized exposure rather than normalizing hemoglobin; US HIF-PHI use followed current product labeling; CKD-MBD treatment followed serial calcium, phosphate, and PTH relationships; nondialysis PTH elevation triggered correction of modifiable drivers before routine active vitamin D; phosphate therapy targeted overt progressive elevation; DXA predicted fracture but not turnover; acute potassium danger was separated from chronic recurrence prevention; beneficial RAAS therapy was preserved when safe mitigation was feasible; alkali was monitored for sodium and volume harm; albumin was not treated as a stand-alone nutrition diagnosis; uremia remained a syndrome rather than a numerical threshold; conservative kidney management was presented as active care
+- Automated verification: 100 unique question IDs, four unique choices per question, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 378 static pages generated
+- Goodnotes note: the CKD secondary-complications chapter and CKD notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -793,7 +804,7 @@ Target modules:
 2. Secondary Stroke Prevention (`built`, 104 question bank; Goodnotes reconciliation pending)
 3. Acute Kidney Injury (`built`, 100 question bank; Goodnotes reconciliation pending)
 4. Chronic Kidney Disease (`built`, 100 question bank; Goodnotes reconciliation pending)
-5. CKD Complications
+5. CKD Complications (`built`, 100 question bank; Goodnotes reconciliation pending)
 6. Renal Replacement Therapy
 
 ### DAST IV
