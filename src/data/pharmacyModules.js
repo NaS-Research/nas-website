@@ -23,6 +23,7 @@ import { resistantSecondaryHypertensionModule } from "@/data/modules/resistantSe
 import { hypertensiveEmergenciesModule } from "@/data/modules/hypertensiveEmergencies";
 import { antihypertensiveMedicinalChemistryModule } from "@/data/modules/antihypertensiveMedicinalChemistry";
 import { dyslipidemiaRiskModule } from "@/data/modules/dyslipidemiaRisk";
+import { lipidLoweringPharmacologyModule } from "@/data/modules/lipidLoweringPharmacology";
 
 const sources = {
   foundation: "Foundation",
@@ -430,6 +431,6 @@ export function getPharmacyModule(slug) {
   return [...pharmacyModules, ...legacyPharmacyModules].find((module) => module.slug === slug);
 }
 
-export const pharmacyModules = [nutritionScreeningAssessmentModule, fluidElectrolyteTherapyModule, acidBaseInterpretationModule, calciumPhosphorusHomeostasisModule, enteralNutritionModule, parenteralNutritionModule, parenteralNutritionCalculationsModule, pediatricParenteralNutritionModule, autonomicNervousSystemFoundationsModule, cholinergicAgonistsInhibitorsModule, antimuscarinicPharmacologyModule, cholinergicMedicinalChemistryModule, anticholinergicMedicinalChemistryModule, cholinergicToxicologyModule, adrenergicAgonistsModule, adrenergicAntagonistsModule, adrenergicMedicinalChemistryModule, diureticPharmacologyModule, diureticMedicinalChemistryModule, glaucomaPharmacotherapyModule, hypertensionFoundationsModule, resistantSecondaryHypertensionModule, hypertensiveEmergenciesModule, antihypertensiveMedicinalChemistryModule, dyslipidemiaRiskModule];
+export const pharmacyModules = [nutritionScreeningAssessmentModule, fluidElectrolyteTherapyModule, acidBaseInterpretationModule, calciumPhosphorusHomeostasisModule, enteralNutritionModule, parenteralNutritionModule, parenteralNutritionCalculationsModule, pediatricParenteralNutritionModule, autonomicNervousSystemFoundationsModule, cholinergicAgonistsInhibitorsModule, antimuscarinicPharmacologyModule, cholinergicMedicinalChemistryModule, anticholinergicMedicinalChemistryModule, cholinergicToxicologyModule, adrenergicAgonistsModule, adrenergicAntagonistsModule, adrenergicMedicinalChemistryModule, diureticPharmacologyModule, diureticMedicinalChemistryModule, glaucomaPharmacotherapyModule, hypertensionFoundationsModule, resistantSecondaryHypertensionModule, hypertensiveEmergenciesModule, antihypertensiveMedicinalChemistryModule, dyslipidemiaRiskModule, lipidLoweringPharmacologyModule];
 
 export const pharmacySubmoduleCount = pharmacyModules.reduce((total, module) => total + module.submodules.length, 0);

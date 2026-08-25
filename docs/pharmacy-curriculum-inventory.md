@@ -302,6 +302,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 353 static pages generated
 - Goodnotes note: the dedicated dyslipidemia lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
+### Lipid-Lowering Pharmacology
+
+- Course scope: statin target pharmacology, LDL receptor upregulation, intensity, disposition and interactions, muscle and liver safety, current reproductive labeling, ezetimibe, bile acid sequestrants, PCSK9 antibodies, inclisiran, bempedoic acid, fibrates, prescription omega-3 products, olezarsen, evinacumab, and lomitapide
+- Cross reference completed: RxPrep NAPLEX 2023 dyslipidemia pharmacology, dosing, administration, interaction, monitoring, and rare-disease scope
+- Current references reviewed: 2026 ACC and AHA dyslipidemia guideline and current FDA or DailyMed prescribing information for rosuvastatin, evolocumab, inclisiran, bempedoic acid, ezetimibe, fenofibrate, gemfibrozil, olezarsen, and evinacumab
+- Learning structure: six lessons, six native synthesis, intestinal, receptor-recycling, ATP-citrate lyase, triglyceride, and rare-disease diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions spanning HMG-CoA reductase, LDL receptor expression, statin intensity, disposition, transporter and enzyme interactions, muscle symptoms, liver safety, pregnancy and lactation, NPC1L1, bile acid binding, absorption interactions, PCSK9 biology, antibodies, inclisiran RNA interference, injectable implementation, ATP-citrate lyase, liver-selective bempedoic acid activation, urate and tendon safety, PPAR-alpha, gemfibrozil interactions, prescription omega-3 distinctions, icosapent ethyl, apoC-III, ANGPTL3, and MTP; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: statin intensity was not treated as milligram equivalence; interaction pathways remained product specific; current pregnancy narrative labeling replaced retired letter categories; inclisiran was distinguished from monoclonal antibodies; gemfibrozil was separated from fenofibrate; prescription omega-3 evidence was not generalized to supplements; olezarsen was limited to adult familial chylomicronemia; receptor-independent and apoB-assembly rare-disease pathways were separated
+- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 354 static pages generated
+- Goodnotes note: the dedicated dyslipidemia lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -417,7 +429,7 @@ Available documents:
 Target modules:
 
 1. Dyslipidemia Pathophysiology and Risk (`built`, 100 question bank; Goodnotes reconciliation pending)
-2. Lipid-Lowering Pharmacology
+2. Lipid-Lowering Pharmacology (`built`, 100 question bank; Goodnotes reconciliation pending)
 3. Dyslipidemia Therapeutics
 
 #### Coronary disease, acute coronary syndromes, and anticoagulation
