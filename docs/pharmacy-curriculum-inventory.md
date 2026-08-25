@@ -266,6 +266,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 350 static pages generated
 - Goodnotes note: the dedicated hypertension lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
+### Hypertensive Emergencies
+
+- Course scope: severe hypertension triage, acute target-organ injury, autoregulation, condition-specific reduction, titrated intravenous therapy, ischemic stroke, intracerebral hemorrhage, hypertensive encephalopathy, PRES, acute aortic syndrome, acute coronary syndrome, hypertensive pulmonary edema, pregnancy and postpartum emergencies, catecholamine crisis, acute kidney injury, oral transition, and recurrence prevention
+- Cross reference completed: RxPrep NAPLEX 2023 emergency, stroke, cardiovascular, renal, obstetric, toxicology, interaction, and monitoring scope
+- Current references reviewed: 2025 AHA and ACC adult high blood pressure guideline, 2024 AHA acute-care elevated pressure statement, 2026 AHA and ASA ischemic stroke guideline, 2022 AHA and ASA intracerebral hemorrhage guideline, 2022 ACC and AHA aortic disease guideline, and ACOG severe pregnancy hypertension resources
+- Learning structure: six lessons, six native triage, perfusion, neurologic, cardiovascular, special-population, and transition diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions spanning emergency definition, severe pressure without injury, repeat measurement, organ screening, autoregulation, reduction strategy, titratable agents, nicardipine, clevidipine, labetalol, ischemic stroke, intracerebral hemorrhage, encephalopathy, PRES, aortic anti-impulse therapy, pulmonary edema, coronary syndrome, nitrates, pregnancy, magnesium, catecholamine crisis, kidney injury, intravenous-to-oral transition, pressure variability, access, and handoff; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: the term emergency was reserved for acute target-organ injury; routine rapid treatment of hospitalized severe pressure without acute injury was rejected; newer 2026 stroke guidance against intensive systolic lowering below 140 after reperfusion was included; ICH used smooth 130 to 150 maintenance in the selected mild-to-moderate population and avoided reduction below 130; aortic therapy prioritized anti-impulse control; magnesium seizure therapy was separated from pregnancy pressure treatment
+- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 351 static pages generated
+- Goodnotes note: the dedicated hypertensive emergencies lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -364,7 +376,7 @@ Target modules:
 
 1. Hypertension Foundations and Chronic Therapy (`built`, 100 question bank; Goodnotes reconciliation pending)
 2. Resistant and Secondary Hypertension (`built`, 100 question bank; Goodnotes reconciliation pending)
-3. Hypertensive Emergencies
+3. Hypertensive Emergencies (`built`, 100 question bank; Goodnotes reconciliation pending)
 4. Antihypertensive Medicinal Chemistry
 
 ### DAST III
