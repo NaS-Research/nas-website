@@ -59,6 +59,7 @@ import PulmonaryArterialHypertensionVisual from "@/components/learn/PulmonaryArt
 import CysticFibrosisVisual from "@/components/learn/CysticFibrosisVisual";
 import DrugInducedPulmonaryDiseaseVisual from "@/components/learn/DrugInducedPulmonaryDiseaseVisual";
 import PituitaryPharmacologyVisual from "@/components/learn/PituitaryPharmacologyVisual";
+import DiabetesPathophysiologyMonitoringVisual from "@/components/learn/DiabetesPathophysiologyMonitoringVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -117,6 +118,7 @@ const pulmonaryArterialHypertensionVisualTypes = ["pah-hemodynamics", "pah-diagn
 const cysticFibrosisVisualTypes = ["cf-biology", "cf-airway", "cf-infection", "cf-modulators", "cf-nutrition", "cf-longitudinal"];
 const drugInducedPulmonaryDiseaseVisualTypes = ["dipd-patterns", "dipd-causality", "dipd-classic", "dipd-oncology", "dipd-airway-vascular", "dipd-management"];
 const pituitaryPharmacologyVisualTypes = ["pituitary-axis", "pituitary-acromegaly", "pituitary-prolactin", "pituitary-replacement", "pituitary-vasopressin", "pituitary-emergencies"];
+const diabetesPathophysiologyMonitoringVisualTypes = ["diabetes-physiology", "diabetes-diagnosis", "diabetes-targets", "diabetes-monitoring", "diabetes-complications", "diabetes-longitudinal"];
 
 export function generateStaticParams() {
   return pharmacyModules.map((module) => ({ slug: module.slug }));
@@ -240,6 +242,7 @@ export default async function PharmacyModulePage({ params }) {
               {cysticFibrosisVisualTypes.includes(submodule.visual) && <CysticFibrosisVisual type={submodule.visual} />}
               {drugInducedPulmonaryDiseaseVisualTypes.includes(submodule.visual) && <DrugInducedPulmonaryDiseaseVisual type={submodule.visual} />}
               {pituitaryPharmacologyVisualTypes.includes(submodule.visual) && <PituitaryPharmacologyVisual type={submodule.visual} />}
+              {diabetesPathophysiologyMonitoringVisualTypes.includes(submodule.visual) && <DiabetesPathophysiologyMonitoringVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>

@@ -681,6 +681,17 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 386 static pages generated
 - Goodnotes note: the pituitary and neuroendocrine lecture and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
+### Diabetes Pathophysiology and Monitoring
+
+- Course scope: fasting and fed glucose physiology; beta-cell insulin secretion; alpha-cell glucagon; liver, muscle, adipose, kidney, gut, and brain contributions; insulin resistance and progressive beta-cell failure; autoimmune and other specific diabetes phenotypes; current diagnostic thresholds; confirmatory testing; prediabetes; A1C limitations; autoantibody and C-peptide classification; individualized A1C goals; continuous glucose monitoring goals; time in range and time below range; A1C and CGM discordance; deintensification; blood glucose meter accuracy; interstitial sensor lag; ambulatory glucose profile interpretation; technology training and access; kidney, retinal, neurologic, foot, cardiovascular, and heart-failure surveillance; hypoglycemia classification and rescue; impaired awareness; glucagon preparedness; diabetes self-management education; and social, cognitive, functional, and psychosocial context
+- Current references reviewed: ADA Standards of Care in Diabetes 2026 sections on diagnosis and classification, glycemic goals and hypoglycemia, diabetes technology, chronic kidney disease and risk management, retinopathy, neuropathy, and foot care, and cardiovascular disease and risk management
+- Learning structure: six lessons, six native glucose-network, diagnostic-reasoning, glycemic-target, monitoring, complication-surveillance, and longitudinal-safety diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: glucose was presented as an integrated organ network rather than a pancreas-only model; type 1 diabetes remained autoimmune insulin deficiency that can present at any age; type 2 diabetes combined resistance with progressive secretory failure; other specific etiologies remained visible; laboratory A1C and plasma glucose criteria were separated from home meter and CGM monitoring; absent unequivocal hyperglycemia, two abnormal results were required; prediabetes retained three accepted laboratory pathways; A1C was interpreted through red-cell and assay context; antibodies and C-peptide supported classification only when clinically useful and properly contextualized; an A1C below 7 percent remained appropriate for many nonpregnant adults but was individualized; common CGM goals included more than 70 percent time from 70 to 180 mg/dL, less than 4 percent below 70, and less than 1 percent below 54; discordance between A1C and CGM triggered investigation rather than averaging; deintensification remained active safety care; CGM users retained BGM backup; AGP review prioritized hypoglycemia and reproducible patterns; kidney surveillance paired urinary albumin with estimated filtration; type 2 retinal screening began at diagnosis; monofilament testing remained part of a complete foot examination; cardiovascular and heart-failure risk were not reduced to A1C; level 3 hypoglycemia was defined by need for assistance regardless of measured glucose; and education, access, cognition, distress, culture, schedule, and support remained part of treatment design
+- Automated verification: 100 unique question IDs, four unique choices per question, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 387 static pages generated
+- Goodnotes note: the diabetes lectures, workshop cases, and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -917,7 +928,7 @@ Available documents include diabetes pharmacology and therapeutics, diabetes wor
 
 Target modules:
 
-1. Diabetes Pathophysiology and Monitoring
+1. Diabetes Pathophysiology and Monitoring (`built`, 100 question bank; Goodnotes reconciliation pending)
 2. Noninsulin Diabetes Pharmacotherapy
 3. Insulin Therapy
 4. Diabetic Ketoacidosis
