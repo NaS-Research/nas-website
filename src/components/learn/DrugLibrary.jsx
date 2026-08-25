@@ -3,8 +3,10 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { coreDrugs } from "@/data/drugLibrary";
+import DrugQuestionBank from "@/components/learn/DrugQuestionBank";
 
 const letters = ["All", ..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
+const studyCategories = ["All categories", "Cardiovascular", "Endocrine", "Neurology and psychiatry", "Respiratory", "Gastrointestinal"];
 
 function displayName(name) {
   return name.replace(/\b\w/g, (letter) => letter.toUpperCase());
@@ -14,6 +16,7 @@ export default function DrugLibrary() {
   const [mode, setMode] = useState("core");
   const [query, setQuery] = useState("");
   const [letter, setLetter] = useState("All");
+  const [category, setCategory] = useState("All categories");
   const [limit, setLimit] = useState(36);
   const [rxResults, setRxResults] = useState([]);
   const [searching, setSearching] = useState(false);
@@ -24,9 +27,10 @@ export default function DrugLibrary() {
     return coreDrugs.filter((drug) => {
       const matchesLetter = letter === "All" || drug.generic.startsWith(letter.toLowerCase());
       const matchesQuery = !normalized || `${drug.generic} ${drug.brand || ""} ${drug.className || ""}`.toLowerCase().includes(normalized);
-      return matchesLetter && matchesQuery;
+      const matchesCategory = category === "All categories" || drug.system === category;
+      return matchesLetter && matchesQuery && matchesCategory;
     });
-  }, [letter, query]);
+  }, [category, letter, query]);
 
   useEffect(() => {
     if (mode !== "all" || query.trim().length < 2) {
@@ -61,6 +65,7 @@ export default function DrugLibrary() {
     setMode(nextMode);
     setQuery("");
     setLetter("All");
+    setCategory("All categories");
     setLimit(36);
   }
 
@@ -81,19 +86,25 @@ export default function DrugLibrary() {
         <button type="button" role="tab" aria-selected={mode === "all"} className={mode === "all" ? "is-active" : ""} onClick={() => changeMode("all")}>
           All medications <span>RxNorm</span>
         </button>
+        <button type="button" role="tab" aria-selected={mode === "questions"} className={mode === "questions" ? "is-active" : ""} onClick={() => changeMode("questions")}>
+          Questions <span>24</span>
+        </button>
       </div>
 
-      <div className="drug-library__toolbar">
+      {mode !== "questions" && <div className="drug-library__toolbar">
         <label>
           <span className="sr-only">Search medications</span>
           <i aria-hidden="true">⌕</i>
           <input value={query} onChange={(event) => { setQuery(event.target.value); setLimit(36); }} placeholder={mode === "core" ? "Search generic, brand, or class" : "Search the national medication vocabulary"} />
         </label>
         <p>{mode === "core" ? `${filtered.length} medications` : "Current RxNorm concepts"}</p>
-      </div>
+      </div>}
 
       {mode === "core" ? (
         <>
+          <div className="drug-library__categories" aria-label="Filter by therapeutic category">
+            {studyCategories.map((item) => <button type="button" className={category === item ? "is-active" : ""} onClick={() => { setCategory(item); setLetter("All"); setLimit(36); }} key={item}>{item}</button>)}
+          </div>
           <div className="drug-library__letters" aria-label="Filter by first letter">
             {letters.map((item) => <button type="button" className={letter === item ? "is-active" : ""} onClick={() => { setLetter(item); setLimit(36); }} key={item}>{item}</button>)}
           </div>
@@ -117,7 +128,7 @@ export default function DrugLibrary() {
           </div>
           {limit < filtered.length && <button type="button" className="drug-library__more" onClick={() => setLimit((value) => value + 36)}>Load more medications</button>}
         </>
-      ) : (
+      ) : mode === "all" ? (
         <div className="drug-library__rxnorm" aria-live="polite">
           {query.trim().length < 2 && <div className="drug-library__prompt"><strong>Search beyond the core set.</strong><p>Enter a generic name, brand name, strength, or dosage form.</p></div>}
           {searching && <div className="drug-library__prompt"><strong>Searching RxNorm</strong><p>Checking the current national medication vocabulary.</p></div>}
@@ -128,6 +139,8 @@ export default function DrugLibrary() {
             </a>
           ))}
         </div>
+      ) : (
+        <DrugQuestionBank />
       )}
 
       <p className="drug-library__source">This product uses publicly available data from the U.S. National Library of Medicine. NLM does not endorse or recommend this product. Medication appearance and labeling vary by manufacturer and product.</p>

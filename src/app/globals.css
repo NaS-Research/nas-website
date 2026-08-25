@@ -4127,6 +4127,16 @@ body {
   padding-block: 1rem;
   scrollbar-width: none;
 }
+.drug-library__categories,
+.drug-questions__categories { display: flex; gap: 0.55rem; overflow-x: auto; padding-block: 1rem; border-bottom: 1px solid var(--nas-line); scrollbar-width: none; }
+.drug-library__categories::-webkit-scrollbar,
+.drug-questions__categories::-webkit-scrollbar { display: none; }
+.drug-library__categories button,
+.drug-questions__categories button { flex: 0 0 auto; border: 1px solid #242424; border-radius: 999px; padding: 0.55rem 0.8rem; color: #666; font-size: 0.61rem; cursor: pointer; }
+.drug-library__categories button:hover,
+.drug-library__categories button.is-active,
+.drug-questions__categories button:hover,
+.drug-questions__categories button.is-active { border-color: #725f46; background: rgba(199, 160, 105, 0.08); color: #d5b987; }
 
 .drug-library__letters::-webkit-scrollbar { display: none; }
 .drug-library__letters button { min-width: 1.75rem; padding: 0.35rem; color: #5e5e5e; font-size: 0.62rem; cursor: pointer; }
@@ -4179,6 +4189,43 @@ body {
 .drug-library__rxnorm-result strong { color: #bcbcbc; font-size: 0.8rem; font-weight: 500; }
 .drug-library__rxnorm-result i { color: #7a6859; font-style: normal; }
 .drug-library__source { max-width: 52rem; margin-top: 1.5rem; color: #545454; font-size: 0.63rem; line-height: 1.6; }
+
+.drug-questions { padding-top: clamp(2.5rem, 6vw, 5rem); }
+.drug-questions__header { display: grid; gap: 2rem; }
+.drug-questions__header h2 { max-width: 47rem; margin-top: 0.8rem; color: #e4e4e4; font-size: clamp(2.6rem, 6vw, 5.5rem); font-weight: 500; letter-spacing: -0.065em; line-height: 0.94; }
+.drug-questions__header > p { max-width: 30rem; color: #7c7c7c; font-size: 0.78rem; line-height: 1.7; }
+.drug-questions__categories { margin-top: 2.5rem; border-top: 1px solid var(--nas-line); }
+.drug-question { overflow: hidden; margin-top: 1.5rem; border: 1px solid var(--nas-line); border-radius: 1rem; background: radial-gradient(circle at 94% 0, rgba(199, 160, 105, 0.08), transparent 30%), #080808; }
+.drug-question__meta { display: grid; grid-template-columns: 5rem minmax(0, 1fr) auto; gap: 1rem; align-items: center; padding: 1rem clamp(1.2rem, 3vw, 2rem); border-bottom: 1px solid var(--nas-line); }
+.drug-question__meta > span { color: #60584e; font-size: 0.58rem; letter-spacing: 0.08em; text-transform: uppercase; }
+.drug-question__meta > span:last-child { text-align: right; }
+.drug-question__meta div { display: flex; gap: 0.7rem; align-items: baseline; }
+.drug-question__meta strong { color: #bbb; font-size: 0.72rem; font-weight: 500; }
+.drug-question__meta i { color: #686868; font-size: 0.6rem; font-style: normal; }
+.drug-question > h3 { max-width: 56rem; padding: clamp(1.5rem, 4vw, 3rem) clamp(1.2rem, 4vw, 3rem) 1.5rem; color: #dedede; font-size: clamp(1.5rem, 3.5vw, 2.8rem); font-weight: 500; letter-spacing: -0.045em; line-height: 1.15; }
+.drug-question__choices { display: grid; gap: 0.55rem; padding: 0 clamp(1.2rem, 4vw, 3rem) clamp(1.5rem, 4vw, 3rem); }
+.drug-question__choices button { display: grid; grid-template-columns: 2rem minmax(0, 1fr) auto; gap: 0.8rem; align-items: center; width: 100%; border: 1px solid #222; border-radius: 0.7rem; padding: 0.9rem 1rem; color: #969696; text-align: left; cursor: pointer; transition: border-color 160ms ease, background 160ms ease, color 160ms ease; }
+.drug-question__choices button:hover { border-color: #554736; color: #c9c9c9; }
+.drug-question__choices button.is-selected { border-color: #8d704f; background: rgba(199, 160, 105, 0.07); color: #ddd; }
+.drug-question__choices button.is-correct { border-color: #52765a; background: rgba(65, 119, 77, 0.12); }
+.drug-question__choices button.is-incorrect { border-color: #7e4e47; background: rgba(128, 62, 52, 0.11); }
+.drug-question__choices button > span { display: grid; width: 1.7rem; height: 1.7rem; place-items: center; border: 1px solid #303030; border-radius: 50%; color: #777; font-size: 0.58rem; }
+.drug-question__choices button > strong { font-size: 0.74rem; font-weight: 400; line-height: 1.5; }
+.drug-question__choices button > i { color: #8d8d8d; font-size: 0.58rem; font-style: normal; text-transform: uppercase; letter-spacing: 0.08em; }
+.drug-question__rationale { display: grid; grid-template-columns: 6rem minmax(0, 1fr); gap: 1.25rem; margin-inline: clamp(1.2rem, 4vw, 3rem); padding: 1.2rem 0; border-top: 1px solid var(--nas-line); }
+.drug-question__rationale span { color: #b49567; font-size: 0.6rem; letter-spacing: 0.08em; text-transform: uppercase; }
+.drug-question__rationale p { max-width: 48rem; color: #929292; font-size: 0.72rem; line-height: 1.65; }
+.drug-question__actions { display: flex; justify-content: space-between; gap: 1rem; align-items: center; padding: 1rem clamp(1.2rem, 4vw, 3rem); border-top: 1px solid var(--nas-line); }
+.drug-question__actions span { color: #565656; font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.drug-question__actions button,
+.drug-questions__complete button { border-radius: 999px; padding: 0.75rem 1rem; background: #d9b77e; color: #18120c; font-size: 0.66rem; cursor: pointer; }
+.drug-question__actions button:disabled { opacity: 0.35; cursor: default; }
+.drug-questions__complete { display: grid; min-height: 31rem; place-content: center; justify-items: center; gap: 1rem; margin-top: 1.5rem; border: 1px solid var(--nas-line); border-radius: 1rem; background: radial-gradient(circle, rgba(199, 160, 105, 0.09), transparent 52%), #080808; text-align: center; }
+.drug-questions__complete > span { color: #766450; font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; }
+.drug-questions__complete > strong { color: #e5c58e; font-size: clamp(4rem, 10vw, 7rem); font-weight: 400; letter-spacing: -0.06em; line-height: 1; }
+.drug-questions__complete h3 { max-width: 28rem; color: #bcbcbc; font-size: clamp(1.3rem, 3vw, 2rem); font-weight: 400; }
+.drug-questions__complete button { margin-top: 1rem; }
+.drug-questions__note { max-width: 50rem; margin-top: 1.5rem; color: #515151; font-size: 0.63rem; line-height: 1.65; }
 
 .drug-profile-hero { padding-top: 9rem; padding-bottom: clamp(3rem, 8vw, 7rem); }
 .drug-profile-hero__grid { display: grid; gap: 2rem; margin-top: 3rem; }
@@ -6100,6 +6147,7 @@ body {
   .pharmacy-index-hero__heading,
   .pharmacy-atlas-hero > div > div,
   .drug-library__hero,
+  .drug-questions__header,
   .drug-profile-hero__grid,
   .learning-library__heading,
   .pharmacy-platform__heading,
