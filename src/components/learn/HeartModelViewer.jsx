@@ -61,10 +61,10 @@ const focusRotations = {
 const surfaceHeartUid = "3f8072336ce94d18b3d0d055a1ece089";
 
 const surfaceFocus = {
-  "Left ventricle": { yaw: -0.34, zoom: 0.72, x: 0.07, y: -0.12, calloutX: "67%", calloutY: "66%" },
-  "Right ventricle": { yaw: 0.32, zoom: 0.72, x: -0.06, y: -0.1, calloutX: "43%", calloutY: "65%" },
-  "Left atrium": { yaw: 2.48, zoom: 0.76, x: 0.06, y: 0.1, calloutX: "64%", calloutY: "39%" },
-  "Right atrium": { yaw: 0.52, zoom: 0.76, x: -0.07, y: 0.1, calloutX: "38%", calloutY: "40%" },
+  "Left ventricle": { yaw: -0.34, zoom: 0.72, x: 0.07, y: -0.12, calloutX: "67%", calloutY: "66%", labelSide: "left" },
+  "Right ventricle": { yaw: 0.32, zoom: 0.72, x: -0.06, y: -0.1, calloutX: "43%", calloutY: "65%", labelSide: "right" },
+  "Left atrium": { yaw: 2.48, zoom: 0.76, x: 0.06, y: 0.1, calloutX: "64%", calloutY: "39%", labelSide: "left" },
+  "Right atrium": { yaw: 0.52, zoom: 0.76, x: -0.07, y: 0.1, calloutX: "38%", calloutY: "40%", labelSide: "right" },
 };
 
 function SurfaceHeartViewer({ selected }) {
@@ -170,10 +170,18 @@ function SurfaceHeartViewer({ selected }) {
         <div
           className="heart-lab__surface-callout"
           style={{ "--callout-x": callout.calloutX, "--callout-y": callout.calloutY }}
+          data-side={callout.labelSide}
           aria-hidden="true"
         >
-          <span><small>Guided focus</small><strong>{selected}</strong></span>
-          <i />
+          <svg viewBox="0 0 190 70" preserveAspectRatio="none">
+            <path d="M188 62 L154 27 H8" />
+            <circle cx="188" cy="62" r="3.25" />
+            <circle cx="188" cy="62" r="1.15" className="heart-lab__surface-callout-dot" />
+          </svg>
+          <span>
+            <small>Cardiac anatomy · {structureDetails[selected]?.group || "Structure"}</small>
+            <strong>{selected}</strong>
+          </span>
         </div>
       )}
     </>
