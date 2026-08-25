@@ -527,6 +527,17 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 372 static pages generated
 - Goodnotes note: the dedicated heart-failure medicinal-chemistry lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
+### Peripheral Arterial Disease
+
+- Course scope: systemic atherosclerotic biology, asymptomatic PAD, chronic symptomatic PAD and claudication, chronic limb-threatening ischemia, acute limb ischemia, PAD risk amplifiers and health inequity, resting and exercise ABI, noncompressible arteries, toe and tissue-perfusion testing, anatomic imaging, single antiplatelet therapy, vascular-dose rivaroxaban plus aspirin, full-anticoagulation boundaries, lipid lowering, pressure, diabetes and tobacco treatment, structured exercise, cilostazol, ineffective claudication therapies, preventive foot care, patient-centered revascularization, postprocedure antithrombotic planning, surveillance, WIfI staging, acute limb viability, reperfusion, wound care, rehabilitation, and functional limb preservation
+- Current references reviewed: 2024 AHA and ACC lower-extremity PAD guideline, 2024 ACC implementation summary, and current DailyMed labeling
+- Learning structure: six lessons, six native clinical-spectrum, hemodynamic-diagnosis, vascular-risk, function-and-foot, revascularization, and limb-emergency diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: four clinical subsets replaced a symptom-only model; asymptomatic disease retained functional and cardiovascular risk; ABI technique and noncompressibility were explicit; tissue-perfusion tests supplemented rather than replaced clinical limb staging; antithrombotic dose and indication were separated; full anticoagulation was rejected for PAD alone; structured exercise was treated as a prescription; cilostazol retained the heart-failure contraindication; claudication procedures targeted function while CLTI procedures targeted limb preservation; procedural patency was separated from healing, mobility, survival, and access
+- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 373 static pages generated
+- Goodnotes note: the dedicated PAD lectures and chapters remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -714,7 +725,7 @@ Target modules:
 2. Chronic Heart Failure Pharmacotherapy (`built`, 104 question bank; Goodnotes reconciliation pending)
 3. Acute Decompensated Heart Failure (`built`, 104 question bank; Goodnotes reconciliation pending)
 4. Heart Failure Medicinal Chemistry (`built`, 108 question bank; Goodnotes reconciliation pending)
-5. Peripheral Arterial Disease
+5. Peripheral Arterial Disease (`built`, 100 question bank; Goodnotes reconciliation pending)
 
 #### Stroke and kidney disease
 
