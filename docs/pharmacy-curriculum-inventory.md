@@ -571,6 +571,17 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 376 static pages generated
 - Goodnotes note: the AKI lecture, chapter, and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
+### Chronic Kidney Disease
+
+- Course scope: CKD definition and three-month chronicity, structural and functional markers, cause evaluation, diagnostic red flags, G1 through G5 filtration categories, A1 through A3 albuminuria categories, quantitative urine ACR, creatinine and cystatin C filtration estimates, the CGA heat map, eGFR trajectory, the Kidney Failure Risk Equation, risk-based monitoring, nephrology referral, standardized blood pressure, RAAS blockade, expected hemodynamic filtration changes, lifestyle and cardiovascular protection, SGLT2 inhibition, finerenone, GLP-1 receptor agonists, renal medication dosing, nephrotoxin stewardship, illness and procedure planning, and transition ownership
+- Current references reviewed: final KDIGO 2024 CKD guideline and executive summary, 2026 FDA Farxiga labeling, 2025 FDA Kerendia labeling, and current DailyMed labeling
+- Learning structure: six lessons, six native definition, CGA, risk, foundational-care, disease-modification, and medication-stewardship diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: one abnormal result did not establish chronicity; G1 and G2 required a separate kidney-damage marker; cause remained part of the diagnosis; albuminuria added risk at every GFR; combined creatinine and cystatin C estimation was reserved for decisions needing better precision; status, trajectory, and absolute risk remained distinct; KFRE was constrained to validated populations; a standardized blood-pressure target was not applied to casual readings; one maximally tolerated RAAS blocker replaced dual blockade; expected early eGFR changes were separated from progressive injury; SGLT2 benefit extended beyond glucose lowering; finerenone required potassium and CYP3A4 screening; drug dosing used the metric specified by current labeling; every temporary hold received restart criteria and ownership
+- Automated verification: 100 unique question IDs, four choices per question, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 377 static pages generated
+- Goodnotes note: the CKD lecture, chapter, and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -781,7 +792,7 @@ Target modules:
 1. Acute Ischemic Stroke (`built`, 100 question bank; Goodnotes reconciliation pending)
 2. Secondary Stroke Prevention (`built`, 104 question bank; Goodnotes reconciliation pending)
 3. Acute Kidney Injury (`built`, 100 question bank; Goodnotes reconciliation pending)
-4. Chronic Kidney Disease
+4. Chronic Kidney Disease (`built`, 100 question bank; Goodnotes reconciliation pending)
 5. CKD Complications
 6. Renal Replacement Therapy
 
