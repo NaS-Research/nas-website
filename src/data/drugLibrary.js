@@ -104,6 +104,18 @@ const featured = {
     monitoring: ["TSH", "Free thyroxine when appropriate", "Symptoms and adherence", "Changes in interacting medicines or products"],
     counseling: ["Take consistently on an empty stomach as directed", "Separate from calcium, iron, and other binding products", "Stay with a consistent product when possible", "Report persistent symptoms of underreplacement or excess"],
   },
+  levetiracetam: {
+    brand: "Keppra", className: "Antiseizure medication", system: "Neurology and psychiatry", form: "Immediate release tablet, extended release tablet, oral solution, and injection",
+    commonUses: ["Partial-onset seizures", "Myoclonic seizures in juvenile myoclonic epilepsy", "Primary generalized tonic-clonic seizures"],
+    mechanism: "Its precise antiseizure mechanism is not fully established. Binding to synaptic vesicle protein SV2A may help regulate vesicle exocytosis and contribute to its antiseizure activity.",
+    administration: ["Immediate release products are generally divided into twice-daily administration", "Pediatric dosing depends on age and body weight", "Adult dosing must be adjusted for renal impairment", "Avoid abrupt withdrawal because seizure frequency and status epilepticus can increase"],
+    commonEffects: ["Somnolence", "Fatigue or asthenia", "Dizziness", "Behavioral changes or irritability"],
+    seriousRisks: ["Suicidal thoughts or behavior", "Psychotic symptoms or marked behavioral change", "Anaphylaxis or angioedema", "Serious skin reactions and DRESS", "Withdrawal seizures"],
+    contraindications: ["Known hypersensitivity to levetiracetam, including previous anaphylaxis or angioedema"],
+    interactions: ["Clinically important CYP-mediated pharmacokinetic interactions are unlikely", "Label studies found no meaningful pharmacokinetic effect with phenytoin, valproate, warfarin, digoxin, or a studied combined oral contraceptive", "Review concomitant medicines that may worsen somnolence or impaired coordination"],
+    monitoring: ["Seizure frequency and adherence", "Mood, behavior, and suicidal thinking", "Somnolence, gait, and coordination", "Renal function for dose selection", "Rash, fever, or evidence of systemic hypersensitivity"],
+    counseling: ["Do not stop the medication abruptly", "Avoid driving until individual effects are understood", "Report new aggression, depression, unusual behavior, or suicidal thoughts promptly", "Seek care for facial swelling, breathing difficulty, rash, fever, or swollen lymph nodes"],
+  },
   omeprazole: {
     brand: "Prilosec", className: "Proton pump inhibitor", system: "Gastrointestinal", form: "Delayed release capsules, tablets, and oral suspension products",
     commonUses: ["Gastroesophageal reflux disease", "Erosive esophagitis", "Peptic ulcer disease", "Helicobacter pylori treatment regimens"],

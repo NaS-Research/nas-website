@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { coreDrugs } from "@/data/drugLibrary";
+import { drugQuestions } from "@/data/drugQuestions";
 import DrugQuestionBank from "@/components/learn/DrugQuestionBank";
 
 const letters = ["All", ..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
@@ -94,7 +95,7 @@ export default function DrugLibrary() {
           All medications <span>RxNorm</span>
         </button>
         <button type="button" role="tab" aria-selected={mode === "questions"} className={mode === "questions" ? "is-active" : ""} onClick={() => changeMode("questions")}>
-          Questions <span>24</span>
+          Questions <span>{drugQuestions.length}</span>
         </button>
       </div>
 

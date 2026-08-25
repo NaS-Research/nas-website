@@ -27,10 +27,13 @@ function titleCase(value) {
 
 const studySections = [
   { key: "commonUses", number: "01", label: "Common uses" },
-  { key: "commonEffects", number: "03", label: "Common effects" },
-  { key: "seriousRisks", number: "04", label: "Serious risks" },
-  { key: "monitoring", number: "05", label: "Monitor" },
-  { key: "counseling", number: "06", label: "Counseling" },
+  { key: "administration", number: "03", label: "Administration" },
+  { key: "commonEffects", number: "04", label: "Common effects" },
+  { key: "seriousRisks", number: "05", label: "Serious risks" },
+  { key: "contraindications", number: "06", label: "Contraindications" },
+  { key: "interactions", number: "07", label: "Interactions" },
+  { key: "monitoring", number: "08", label: "Monitor" },
+  { key: "counseling", number: "09", label: "Counseling" },
 ];
 
 export default async function DrugProfilePage({ params }) {
@@ -108,7 +111,7 @@ export default async function DrugProfilePage({ params }) {
             </div>
 
             <div className="drug-study-card__grid">
-              {studySections.map((section) => (
+              {studySections.filter((section) => drug[section.key]?.length).map((section) => (
                 <section className={`drug-study-card__section drug-study-card__section--${section.key}`} key={section.key}>
                   <div className="drug-study-card__section-title">
                     <span>{section.number}</span>

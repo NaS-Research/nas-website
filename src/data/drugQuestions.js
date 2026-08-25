@@ -149,6 +149,20 @@ export const drugQuestions = [
     rationale: "Abrupt discontinuation can produce symptoms. A planned taper may be appropriate under prescriber guidance.",
   },
   {
+    drug: "levetiracetam", category: "Neurology and psychiatry", topic: "Mechanism",
+    prompt: "Which protein is associated with levetiracetam's antiseizure activity?",
+    choices: ["Synaptic vesicle protein SV2A", "Gastric hydrogen potassium ATPase", "Angiotensin converting enzyme", "Coagulation factor Xa"],
+    answer: 0,
+    rationale: "The precise mechanism is not fully established, but levetiracetam binding to synaptic vesicle protein SV2A may contribute to its antiseizure activity.",
+  },
+  {
+    drug: "levetiracetam", category: "Neurology and psychiatry", topic: "Monitoring",
+    prompt: "Which patient factor most directly affects levetiracetam dose selection?",
+    choices: ["Renal function", "Hair color", "Blood type", "Visual acuity"],
+    answer: 0,
+    rationale: "Levetiracetam clearance decreases with renal impairment, so adult dosing is individualized using estimated renal function.",
+  },
+  {
     drug: "albuterol", category: "Respiratory", topic: "Mechanism",
     prompt: "Albuterol relieves bronchospasm primarily by activating which receptor?",
     choices: ["Beta 2 adrenergic receptor", "Mineralocorticoid receptor", "Dopamine D2 receptor", "Histamine H2 receptor"],
