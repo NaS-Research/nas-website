@@ -278,6 +278,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 351 static pages generated
 - Goodnotes note: the dedicated hypertensive emergencies lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
+### Antihypertensive Medicinal Chemistry
+
+- Course scope: ACE inhibitor zinc-binding motifs, peptide-mimetic stereochemistry, active drug and ester-prodrug design, ARB acidic pharmacophores, hydrophobic recognition, active metabolites, direct renin inhibition, dihydropyridine and nondihydropyridine calcium-channel blocker scaffolds, central adrenergic activation, direct vasodilator chemistry, salts, stereochemistry, formulations, and structure-to-clinic boundaries
+- Cross reference completed: RxPrep NAPLEX 2023 antihypertensive, cardiovascular, renal, formulation, interaction, pharmacokinetic, and medicinal-chemistry scope
+- Current references reviewed: NIH PubChem chemical records for captopril, lisinopril, losartan, aliskiren, amlodipine, and hydralazine, plus current FDA Tryvio labeling
+- Learning structure: six lessons, six native zinc-binding, RAAS ligand, calcium-channel scaffold, central access, direct-vasodilator, and product-integration diagrams, and six embedded knowledge checks
+- Assessment: 104 original questions spanning zinc coordination, thiol chemistry, ester prodrugs, active nonprodrugs, phosphinate binding, tetrazole and carboxylate recognition, biphenyl hydrophobic domains, active metabolites, renin peptidomimetic design, dihydropyridine oxidation, amlodipine ionization, release systems, central access, false-transmitter activation, aryloxypropanolamines, hydralazine acetylation, minoxidil sulfation, nitro donor chemistry, endothelin antagonism, salts, stereochemistry, active species, and evidence boundaries; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: class suffixes were not treated as proof of prodrug status; losartan was described as an active parent with a more potent active metabolite; high target affinity was separated from oral exposure; calcium-channel formulation was treated as part of pharmacokinetics; reactive and donor chemistry was paired with product-specific toxicity; structural predictions were explicitly limited by labeling and clinical evidence
+- Automated verification: 104 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 352 static pages generated
+- Goodnotes note: the dedicated antihypertensive medicinal-chemistry lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -377,7 +389,7 @@ Target modules:
 1. Hypertension Foundations and Chronic Therapy (`built`, 100 question bank; Goodnotes reconciliation pending)
 2. Resistant and Secondary Hypertension (`built`, 100 question bank; Goodnotes reconciliation pending)
 3. Hypertensive Emergencies (`built`, 100 question bank; Goodnotes reconciliation pending)
-4. Antihypertensive Medicinal Chemistry
+4. Antihypertensive Medicinal Chemistry (`built`, 104 question bank; Goodnotes reconciliation pending)
 
 ### DAST III
 
