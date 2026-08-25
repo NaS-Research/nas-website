@@ -78,6 +78,17 @@ This inventory records the source material available in the founder's Goodnotes 
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, six diagrams, ten questions per attempt, different questions and answer order on repeat attempt, complete scoring with remediation links, and no current browser errors or warnings
 - Build verification: Next.js production build passed August 25, 2026
 
+### Parenteral Nutrition Calculations
+
+- DAST source: TPN Calculations, 7 handwritten pages, exported and visually verified
+- Cross reference completed: RxPrep NAPLEX 2023 nutrition-support calculations scope
+- Current references reviewed: ASPEN parenteral nutrition dosing and safety resources, CDC adult BMI guidance, the original Mifflin St Jeor resting-energy equation, and current FDA SMOFlipid labeling
+- Learning structure: six lessons, six native calculation diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions with anthropometric conversion, BMI, ideal and adjusted weight conventions, Mifflin St Jeor, protein, dextrose, GIR, lipid, stock-solution, additive, volume, rate, and final-order cases; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: handwritten equations were preserved as calculation conventions where appropriate; BMI, ideal body weight, adjusted body weight, fluid estimates, and predictive energy equations are explicitly framed as estimates rather than universal physiologic rules; product-specific lipid labeling and current clinical monitoring supersede fixed classroom assumptions
+- Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, six diagrams, ten questions per attempt, different questions and answer order on repeat attempt, complete scoring with explanations and ten remediation links, and no current browser errors or warnings
+- Build verification: Next.js production build passed August 25, 2026 with 335 static pages generated
+
 ## Goodnotes availability
 
 ### Books
@@ -108,7 +119,7 @@ Available documents:
 - Nutrition Study Guide
 - Parenteral Nutrition
 - Pediatric TPN
-- TPN Calculations
+- TPN Calculations (`exported`, 7 pages)
 
 Target modules:
 
@@ -118,7 +129,7 @@ Target modules:
 4. Calcium and Phosphorus Homeostasis (`built`, 100 question bank)
 5. Enteral Nutrition (`built`, 100 question bank)
 6. Parenteral Nutrition (`built`, 100 question bank)
-7. Parenteral Nutrition Calculations
+7. Parenteral Nutrition Calculations (`built`, 100 question bank)
 8. Pediatric Parenteral Nutrition
 
 #### Autonomic nervous system
