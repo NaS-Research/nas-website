@@ -648,6 +648,17 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 383 static pages generated
 - Goodnotes note: the pulmonary arterial hypertension lecture and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
+### Cystic Fibrosis
+
+- Course scope: CFTR chloride and bicarbonate transport, airway-surface hydration, multiorgan pathophysiology, mutation classes, F508del processing, newborn screening, sweat chloride, genetic and functional testing, CRMS and CFSPID, individualized airway clearance, exercise, bronchodilators, hypertonic saline, dornase alfa, inhaled sequencing, nebulizer hygiene, longitudinal respiratory microbiology, Pseudomonas eradication, chronic inhaled antibiotics, azithromycin and NTM safety, pulmonary exacerbations, correctors, potentiators, ivacaftor, elexacaftor-tezacaftor-ivacaftor, vanzacaftor-tezacaftor-deutivacaftor, genotype eligibility, fat-containing food, CYP3A interactions, hepatic and eye monitoring, pancreatic insufficiency, PERT calculations and safety boundaries, nutrition in the modulator era, fat-soluble vitamins, salt, CFRD, GI and hepatobiliary disease, bone health, infection prevention, hemoptysis, pneumothorax, reproductive health, advanced lung disease, and transplant referral
+- Current references reviewed: Cystic Fibrosis Foundation diagnosis, airway-clearance, chronic-medication, pulmonary-exacerbation, infection-prevention, pancreatic-enzyme, nutrition, CFRD, and advanced-lung-disease guidance; current FDA Alyftrek, Trikafta, and Kalydeco prescribing information
+- Learning structure: six lessons, six native CFTR-biology, airway-sequence, infection, modulator, nutrition, and longitudinal-care diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: newborn screening initiated but did not complete diagnosis; sweat chloride was interpreted with test quality, genotype, phenotype, and intermediate-state follow-up; variant mechanism explained but did not replace current product-specific eligibility; airway clearance remained individualized rather than device-branded; exercise complemented but did not automatically replace clearance; hypertonic saline and dornase retained distinct mechanisms; inhaled sequencing and equipment hygiene were treated as delivery science; microbiology was longitudinal; new Pseudomonas prompted eradication while chronic infection prompted suppressive strategy; azithromycin use preserved NTM screening and resistance safety; exacerbations followed change from baseline plus culture and prior-response history; correctors and potentiators retained distinct molecular roles; fixed combinations were not treated as interchangeable; food and CYP3A altered exposure; current modulator liver warnings used complete and scheduled testing; PERT was calculated in lipase units with colon-protective boundaries; OGTT rather than A1c alone screened for CFRD; nutrition was individualized for both malnutrition and modulator-era metabolic change; major hemoptysis, pneumothorax, reproductive planning, and transplant referral changed routine care
+- Automated verification: 100 unique question IDs, four unique choices per question, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 384 static pages generated
+- Goodnotes note: the cystic-fibrosis lecture, chapter, and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -874,7 +885,7 @@ Target modules:
 2. Asthma (`built`, 104 question bank; Goodnotes reconciliation pending)
 3. Chronic Obstructive Pulmonary Disease (`built`, 100 question bank; Goodnotes reconciliation pending)
 4. Pulmonary Arterial Hypertension (`built`, 100 question bank; Goodnotes reconciliation pending)
-5. Cystic Fibrosis
+5. Cystic Fibrosis (`built`, 100 question bank; Goodnotes reconciliation pending)
 6. Drug-Induced Pulmonary Disease
 7. Pituitary Pharmacology
 
