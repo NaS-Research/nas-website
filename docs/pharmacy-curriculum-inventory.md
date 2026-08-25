@@ -410,6 +410,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 362 static pages generated
 - Goodnotes note: the dedicated DOAC lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
+### Parenteral Anticoagulants
+
+- Course scope: antithrombin-dependent and direct mechanisms, UFH, LMWH, fondaparinux, argatroban, bivalirudin, prophylaxis versus treatment, product concentration, weight and renal dosing, aPTT, anti-Xa, ACT, heparin resistance, administration technique, postoperative timing, direct thrombin inhibitor organ clearance, HIT, protamine, neuraxial procedures, bleeding, and transitions
+- Cross reference completed: RxPrep NAPLEX 2023 parenteral anticoagulant mechanism, dosing, laboratory, interaction, adverse-effect, monitoring, HIT, reversal, and counseling scope
+- Current references reviewed: current DailyMed labeling for heparin, enoxaparin, fondaparinux, argatroban, bivalirudin, and protamine sulfate, plus current ASH HIT guidance
+- Learning structure: six lessons, six native target, UFH, LMWH, fondaparinux, direct-thrombin-inhibitor, and critical-safety diagrams, and six embedded knowledge checks
+- Assessment: 112 original questions spanning antithrombin dependence, target selectivity, UFH concentration and initiation, aPTT and anti-Xa interpretation, heparin resistance, LMWH indication, renal function, body weight, anti-Xa testing and technique, fondaparinux timing, weight tiers, renal restriction and HIT context, argatroban, bivalirudin, protamine, HIT response, neuraxial safety, and transitions; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: injectable anticoagulants were not treated as interchangeable; UFH laboratory response was separated from delivery error and assay discordance; LMWH prophylaxis and treatment intensities remained distinct; routine LMWH anti-Xa testing was avoided; fondaparinux used current weight and renal constraints; argatroban hepatic clearance and INR effect were explicit; bivalirudin remained tied to PCI labeling; HIT used 4Ts-guided immediate action; protamine was not presented as a universal antidote
+- Automated verification: 112 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 363 static pages generated
+- Goodnotes note: the dedicated parenteral anticoagulant lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -553,7 +565,7 @@ Target modules:
 5. Venous Thromboembolism (`built`, 100 question bank; Goodnotes reconciliation pending)
 6. Warfarin Management (`built`, 100 question bank; Goodnotes reconciliation pending)
 7. Direct Oral Anticoagulants (`built`, 104 question bank; Goodnotes reconciliation pending)
-8. Parenteral Anticoagulants
+8. Parenteral Anticoagulants (`built`, 112 question bank; Goodnotes reconciliation pending)
 
 #### Arrhythmias
 
