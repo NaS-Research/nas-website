@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const learningPaths = [
-  { number: "01", title: "Pharmacy", description: "Enter the first discipline available in NaS Learn.", href: "/learn/pharmacy" },
+  { number: "01", title: "Pharmacy", description: "Explore medications, therapeutics, and clinical reasoning.", href: "/learn/pharmacy" },
   { number: "02", title: "Visual Atlas", description: "Explore anatomy through interactive, clinically connected models.", href: "/learn/pharmacy/atlas" },
   { number: "03", title: "Drug Library", description: "Move from medication identity to mechanism, use, and safety.", href: "/learn/pharmacy/drugs" },
   { number: "04", title: "Practice", description: "Turn study into active recall with focused questions and review.", href: "/learn/pharmacy/review" },
