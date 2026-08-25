@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Footer from "@/components/Footer";
 import PharmacyAssessment from "@/components/learn/PharmacyAssessment";
+import FluidElectrolyteVisual from "@/components/learn/FluidElectrolyteVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -70,6 +71,7 @@ export default async function PharmacyModulePage({ params }) {
                 <span>What to learn</span>
                 <ul>{submodule.concepts.map((concept) => <li key={concept}>{concept}</li>)}</ul>
               </div>
+              {submodule.visual && <FluidElectrolyteVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>

@@ -6653,6 +6653,205 @@ body {
   margin-top: clamp(2.5rem, 6vw, 4.5rem);
 }
 
+.fluid-visual {
+  margin-top: clamp(2.5rem, 6vw, 4.5rem);
+  padding-block: clamp(1.5rem, 4vw, 2.5rem);
+  border-block: 1px solid var(--nas-line);
+}
+
+.fluid-visual figcaption {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.fluid-visual figcaption span {
+  color: #70665a;
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.fluid-visual figcaption strong {
+  color: #e6e2dc;
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  font-weight: 480;
+}
+
+.fluid-visual > p {
+  max-width: 46rem;
+  margin-top: 1.5rem;
+  color: #6f6b66;
+  font-size: 0.7rem;
+  line-height: 1.65;
+}
+
+.fluid-visual__body-water {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  max-width: 28rem;
+  margin-inline: auto;
+  padding: 1rem 1.2rem;
+  border: 1px solid #634a2e;
+  border-radius: 999px;
+  background: linear-gradient(110deg, rgb(188 132 70 / 13%), transparent);
+}
+
+.fluid-visual__body-water span,
+.fluid-visual__compartment-grid span,
+.fluid-visual__steps strong,
+.fluid-visual__pathway strong,
+.fluid-visual__potassium strong,
+.fluid-visual__loop strong {
+  color: #ded9d2;
+  font-size: 0.8rem;
+  font-weight: 480;
+}
+
+.fluid-visual__body-water strong,
+.fluid-visual__compartment-grid strong {
+  color: var(--nas-gold-light);
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+.fluid-visual__branch {
+  width: 1px;
+  height: 2rem;
+  margin-inline: auto;
+  background: #473726;
+}
+
+.fluid-visual__compartment-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1px;
+  max-width: 48rem;
+  margin-inline: auto;
+  background: #302a23;
+}
+
+.fluid-visual__compartment-grid > div {
+  display: grid;
+  gap: 0.45rem;
+  min-height: 8rem;
+  padding: 1.5rem;
+  background: #090806;
+}
+
+.fluid-visual__compartment-grid small,
+.fluid-visual__steps small,
+.fluid-visual__pathway small,
+.fluid-visual__potassium small {
+  color: #77716b;
+  font-size: 0.68rem;
+  line-height: 1.5;
+}
+
+.fluid-visual__steps,
+.fluid-visual__loop {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  border-block: 1px solid #24211d;
+}
+
+.fluid-visual__steps > div,
+.fluid-visual__loop > div {
+  display: grid;
+  align-content: start;
+  gap: 0.7rem;
+  min-height: 10rem;
+  padding: 1.25rem;
+  border-right: 1px solid #24211d;
+}
+
+.fluid-visual__steps > div:last-child,
+.fluid-visual__loop > div:last-child {
+  border-right: 0;
+}
+
+.fluid-visual__steps span,
+.fluid-visual__pathway span,
+.fluid-visual__potassium span,
+.fluid-visual__loop span {
+  color: #8c6b46;
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.fluid-visual__pathway {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  align-items: center;
+  gap: 1rem;
+}
+
+.fluid-visual__pathway > div {
+  display: grid;
+  gap: 0.55rem;
+  min-width: 0;
+}
+
+.fluid-visual__pathway i {
+  color: #5a4430;
+  font-style: normal;
+}
+
+.fluid-visual__potassium {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: #2c261f;
+}
+
+.fluid-visual__potassium > div {
+  display: grid;
+  gap: 0.7rem;
+  min-height: 10rem;
+  padding: 1.5rem;
+  background: #090806;
+}
+
+.fluid-visual__loop > div {
+  min-height: 7rem;
+}
+
+@media (max-width: 760px) {
+  .fluid-visual figcaption {
+    display: grid;
+  }
+
+  .fluid-visual__steps,
+  .fluid-visual__loop {
+    grid-template-columns: 1fr;
+  }
+
+  .fluid-visual__steps > div,
+  .fluid-visual__loop > div {
+    min-height: 0;
+    border-right: 0;
+    border-bottom: 1px solid #24211d;
+  }
+
+  .fluid-visual__pathway {
+    grid-template-columns: 1fr;
+  }
+
+  .fluid-visual__pathway i {
+    transform: rotate(90deg);
+    transform-origin: left center;
+  }
+
+  .fluid-visual__potassium,
+  .fluid-visual__compartment-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .pharmacy-submodule__lesson > section {
   display: grid;
   grid-template-columns: minmax(10rem, 0.7fr) minmax(0, 1.6fr);

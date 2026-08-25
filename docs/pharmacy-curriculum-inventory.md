@@ -24,6 +24,16 @@ This inventory records the source material available in the founder's Goodnotes 
 - Browser verification: desktop and 390 pixel mobile viewport, no horizontal overflow
 - Build verification: Next.js production build passed August 25, 2026
 
+### Fluid and Electrolyte Therapy
+
+- DAST sources: Fluids and Electrolytes, 41 pages, and Na Water K & Mg, 72 pages, exported and text verified
+- Cross reference: RxPrep NAPLEX 2023 scope and calculation conventions
+- Current references: NICE adult IV fluid guideline, European hyponatremia guideline, Society for Endocrinology emergency guidance, KDIGO acute hyperkalemia report, and current FDA labeling for tolvaptan, potassium chloride, sodium zirconium cyclosilicate, and magnesium sulfate
+- Learning structure: six lessons, five native concept visuals, and six embedded knowledge checks
+- Assessment: 100 original questions, ten sampled without replacement per attempt, answer order randomized
+- Source reconciliation: the archived correction ceiling above 12 mmol/L per day was replaced by the cited contemporary hyponatremia limits; legacy universal claims for bicarbonate, potassium response, starch solutions, and emergency potassium binders were narrowed or removed
+- Build verification: Next.js production build passed August 25, 2026
+
 ## Goodnotes availability
 
 ### Books
@@ -47,9 +57,9 @@ Available documents:
 - Calcium & Phosphorus
 - Chapter 71: Calcium and Phosphorus Homeostasis
 - Enteral Nutrition
-- Fluids and Electrolytes
+- Fluids and Electrolytes (`exported`, 41 pages)
 - Intro to Nutrition (`exported`, 66 pages)
-- Na Water K & Mg
+- Na Water K & Mg (`exported`, 72 pages)
 - Nutrition Monitoring
 - Nutrition Study Guide
 - Parenteral Nutrition
@@ -59,7 +69,7 @@ Available documents:
 Target modules:
 
 1. Nutrition Screening, Assessment, and Malnutrition (`built`, 100 question bank)
-2. Fluid and Electrolyte Therapy
+2. Fluid and Electrolyte Therapy (`built`, 100 question bank)
 3. Acid-Base Interpretation
 4. Calcium and Phosphorus Homeostasis
 5. Enteral Nutrition
