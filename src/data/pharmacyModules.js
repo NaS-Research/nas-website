@@ -8,6 +8,7 @@ import { parenteralNutritionCalculationsModule } from "@/data/modules/parenteral
 import { pediatricParenteralNutritionModule } from "@/data/modules/pediatricParenteralNutrition";
 import { autonomicNervousSystemFoundationsModule } from "@/data/modules/autonomicNervousSystemFoundations";
 import { cholinergicAgonistsInhibitorsModule } from "@/data/modules/cholinergicAgonistsInhibitors";
+import { antimuscarinicPharmacologyModule } from "@/data/modules/antimuscarinicPharmacology";
 
 const sources = {
   foundation: "Foundation",
@@ -415,6 +416,6 @@ export function getPharmacyModule(slug) {
   return [...pharmacyModules, ...legacyPharmacyModules].find((module) => module.slug === slug);
 }
 
-export const pharmacyModules = [nutritionScreeningAssessmentModule, fluidElectrolyteTherapyModule, acidBaseInterpretationModule, calciumPhosphorusHomeostasisModule, enteralNutritionModule, parenteralNutritionModule, parenteralNutritionCalculationsModule, pediatricParenteralNutritionModule, autonomicNervousSystemFoundationsModule, cholinergicAgonistsInhibitorsModule];
+export const pharmacyModules = [nutritionScreeningAssessmentModule, fluidElectrolyteTherapyModule, acidBaseInterpretationModule, calciumPhosphorusHomeostasisModule, enteralNutritionModule, parenteralNutritionModule, parenteralNutritionCalculationsModule, pediatricParenteralNutritionModule, autonomicNervousSystemFoundationsModule, cholinergicAgonistsInhibitorsModule, antimuscarinicPharmacologyModule];
 
 export const pharmacySubmoduleCount = pharmacyModules.reduce((total, module) => total + module.submodules.length, 0);

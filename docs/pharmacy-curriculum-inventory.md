@@ -122,6 +122,19 @@ This inventory records the source material available in the founder's Goodnotes 
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, six diagrams, ten questions per attempt, different questions and answer order on repeat attempt, complete scoring with explanations and ten remediation links, and no browser errors or warnings
 - Build verification: Next.js production build passed August 25, 2026 with 338 static pages generated
 
+### Antimuscarinic Pharmacology
+
+- Course scope: cholinoceptor blockade, organ-system applications, cumulative anticholinergic burden, and acute antimuscarinic syndrome
+- Cross reference completed: RxPrep NAPLEX 2023 dementia, gastrointestinal, urinary, pulmonary, movement-disorder, and toxicology scope
+- Current references reviewed: current DailyMed product labeling for atropine, scopolamine, glycopyrrolate, tiotropium, oxybutynin, trospium, and dicyclomine, plus IUPHAR and BPS muscarinic receptor nomenclature
+- Learning structure: six lessons, six native mechanism and clinical-decision diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions spanning receptor mechanism, molecular access, anticholinergic burden, urinary selection, inhaled and perioperative use, ocular, gastrointestinal, vestibular, neurologic, interaction, monitoring, and toxicity decisions; ten sampled without replacement per attempt with answer order randomized
+- Scope boundary: detailed physostigmine selection, organophosphate poisoning, and cholinesterase regeneration remain reserved for the dedicated toxicology module
+- Source reconciliation: broad class claims were replaced with product-specific labeling, formulation and organ-function review, whole-regimen burden assessment, explicit cognitive and thermoregulatory risk, and stabilization before antidote selection
+- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 339 static pages generated
+- Goodnotes note: the cholinoceptor-blocker lecture export remains pending because the Mac was locked during this milestone; its eventual review will be recorded as a source-reconciliation pass without blocking work on other accessible modules
+
 ## Goodnotes availability
 
 ### Books
@@ -179,7 +192,7 @@ Target modules:
 
 1. Autonomic Nervous System Foundations (`built`, 100 question bank)
 2. Cholinergic Agonists and Cholinesterase Inhibitors (`built`, 100 question bank)
-3. Antimuscarinic Pharmacology
+3. Antimuscarinic Pharmacology (`built`, 100 question bank; Goodnotes reconciliation pending)
 4. Cholinergic Medicinal Chemistry
 5. Anticholinergic Medicinal Chemistry
 6. Cholinergic Toxicology and Cholinesterase Regeneration
