@@ -434,6 +434,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 364 static pages generated
 - Goodnotes note: the dedicated ECG lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
+### Arrhythmia Pathophysiology
+
+- Course scope: fast-response and slow-response action potentials, conduction velocity, refractory period, enhanced and abnormal automaticity, overdrive suppression, ectopic focus localization, early and delayed afterdepolarizations, digoxin and catecholamine triggers, reentry requirements, AVNRT, AVRT, accessory pathways, scar-mediated VT, atrial remodeling, ischemia, heart failure, autonomic and electrolyte modulation, hemodynamic consequences, tachycardia-mediated cardiomyopathy, escape rhythms, drugs, ablation, and devices
+- Cross reference completed: RxPrep NAPLEX 2023 electrophysiology, antiarrhythmic, electrolyte, digoxin, ECG, atrial arrhythmia, and ventricular arrhythmia scope
+- Current references reviewed: 2025 AHA adult advanced life support guidance, 2023 AHA and ACC atrial fibrillation guidance, AHA and ACC SVT guidance, and AHA and ACC ventricular arrhythmia and sudden-death guidance
+- Learning structure: six lessons, six native electrophysiology, automaticity, triggered-activity, reentry, substrate, and mechanism-to-treatment diagrams, and six embedded knowledge checks
+- Assessment: 104 original questions spanning action-potential currents, nodal physiology, refractoriness, conduction, automaticity, ectopic foci, EADs, DADs, digoxin, catecholamines, AVNRT, AVRT, preexcited AF, scar VT, AF remodeling, ischemia, heart failure, autonomic and metabolic modulation, tachycardia hemodynamics, cardiomyopathy, escape rhythms, drugs, ablation, and devices; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: tissue-specific currents replaced one universal action-potential model; appropriate sinus tachycardia was separated from primary arrhythmia; EAD and DAD mechanisms remained distinct; digoxin toxicity combined triggered activity and conduction block; reentry required circuit, unidirectional block, and conduction delay; AV nodal blockers were excluded from preexcited AF; AF risk-factor care was treated as substrate modification; acute termination was separated from recurrence and sudden-death prevention
+- Automated verification: 104 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 365 static pages generated
+- Goodnotes note: the dedicated arrhythmia pathophysiology lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -593,7 +605,7 @@ Available documents:
 Target modules:
 
 1. ECG Interpretation (`built`, 108 question bank; Goodnotes reconciliation pending)
-2. Arrhythmia Pathophysiology
+2. Arrhythmia Pathophysiology (`built`, 104 question bank; Goodnotes reconciliation pending)
 3. Atrial Arrhythmias
 4. Ventricular Arrhythmias
 5. Antiarrhythmic Pharmacology and Medicinal Chemistry
