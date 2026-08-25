@@ -13,7 +13,7 @@ export default function HomeLearnFeature() {
       <div className="home-learn__inner">
         <header className="home-learn__header">
           <div><p className="home-learn__kicker">Introducing</p><h2 id="home-learn-title">NaS Learn.</h2></div>
-          <div className="home-learn__introduction"><p>A learning platform for the life sciences. Pharmacy is the first discipline.</p><Link href="/learn">Explore NaS Learn <span aria-hidden="true">↗</span></Link></div>
+          <div className="home-learn__introduction"><p>Study the life sciences with depth, clarity, and context.</p><Link href="/learn">Explore NaS Learn <span aria-hidden="true">↗</span></Link></div>
         </header>
         <div className="home-learn__statement"><span>Built for understanding</span><h3>Learn beyond the page.</h3><p>Read the concept, examine the system, test what you know, and return with a sharper question.</p></div>
         <div className="home-learn__paths" aria-label="Explore NaS Learn">
