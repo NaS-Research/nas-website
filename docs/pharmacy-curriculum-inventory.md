@@ -218,6 +218,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 346 static pages generated
 - Goodnotes note: the dedicated diuretic pharmacology lecture export remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
+### Diuretic Medicinal Chemistry
+
+- Course scope: carbonic anhydrase zinc-binding sulfonamides, acidic loop scaffolds, thiazide and thiazide-like structure activity, steroidal and nonsteroidal mineralocorticoid antagonists, ENaC blockers, osmotic polyols, V2 antagonists, and target-site exposure
+- Cross reference completed: RxPrep NAPLEX 2023 diuretic pharmacology, formulation, allergy, interaction, renal delivery, and medicinal chemistry scope
+- Current references reviewed: NIH PubChem chemical records for acetazolamide, furosemide, hydrochlorothiazide, spironolactone, amiloride, mannitol, and tolvaptan
+- Learning structure: six lessons, six native zinc-binding, loop, thiazide, mineralocorticoid, ENaC and osmole, and structure-to-exposure diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions spanning sulfonamide ionization, zinc coordination, heterocycle electronics, isozyme access, loop acidic scaffolds, ethacrynic reactivity, benzothiadiazine evolution, nonantibiotic sulfonamide distinctions, steroid receptor selectivity, active metabolites, ENaC pore blockers, osmotic physicochemistry, V2 receptor access, albumin binding, tubular secretion, clearance, salts, and formulation; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: sulfonamide was treated as a functional motif rather than a universal allergy class; potency trends were not converted into fixed dose equivalence; kidney target was separated from elimination pathway; receptor and channel chemistry was separated from product-specific clinical outcomes
+- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 347 static pages generated
+- Goodnotes note: the dedicated diuretic medicinal-chemistry lecture export remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -297,7 +309,7 @@ Target modules:
 2. Adrenergic Antagonists (`built`, 100 question bank; Goodnotes reconciliation pending)
 3. Adrenergic Medicinal Chemistry (`built`, 100 question bank; Goodnotes reconciliation pending)
 4. Diuretic Pharmacology (`built`, 100 question bank; Goodnotes reconciliation pending)
-5. Diuretic Medicinal Chemistry
+5. Diuretic Medicinal Chemistry (`built`, 100 question bank; Goodnotes reconciliation pending)
 6. Glaucoma Pharmacotherapy
 
 #### Hypertension

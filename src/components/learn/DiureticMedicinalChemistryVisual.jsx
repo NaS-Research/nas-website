@@ -1,0 +1,17 @@
+const diagrams = {
+  "diuretic-medchem-ca": { eyebrow: "Carbonic anhydrase", title: "A deprotonated sulfonamide coordinates catalytic zinc.", accent: "#77a6b8", columns: [["Sulfonamide", "Ionizable zinc ligand", "Anion binds the active-site metal"], ["Heterocycle", "Orients the group", "Electronics tune acidity and affinity"], ["Polarity", "Limited passive access", "Distribution defines isozyme exposure"], ["Result", "Bicarbonate handling", "Target chemistry becomes acid-base physiology"]] },
+  "diuretic-medchem-loop": { eyebrow: "Loop scaffolds", title: "Acidic secreted molecules converge on NKCC2.", accent: "#c57966", columns: [["Furosemide", "Anthranilic acid", "Carboxylate + sulfonamide"], ["Bumetanide", "Sulfamoylbenzoic acid", "High potency with distinct side chain"], ["Torsemide", "Sulfonylurea-like", "Different exposure profile"], ["Ethacrynic acid", "Aryloxyacetic acid", "No sulfonamide, reactive unsaturation"]] },
+  "diuretic-medchem-thiazide": { eyebrow: "Thiazide evolution", title: "Benzothiadiazine design grew from sulfonamide carbonic anhydrase chemistry.", accent: "#c1a063", columns: [["Sulfonamide", "Acidic recognition motif", "Contributes target and secretion behavior"], ["Benzothiadiazine", "Cyclized scaffold", "Hydrochlorothiazide family"], ["Electron withdrawal", "Acidity rises", "Can strengthen activity"], ["Thiazide-like", "Different ring systems", "NCC activity without the same core"]] },
+  "diuretic-medchem-mra": { eyebrow: "Aldosterone antagonists", title: "Steroid geometry buys receptor fit and creates selectivity challenges.", accent: "#8fa77b", columns: [["Spironolactone", "Steroid lactone + thioacetyl", "Active metabolites and endocrine spillover"], ["Eplerenone", "Epoxy and ester changes", "Greater receptor selectivity"], ["Finerenone", "Nonsteroidal", "Different distribution and kinetics"], ["Lesson", "Scaffold to receptor", "Outcome evidence remains product specific"]] },
+  "diuretic-medchem-enac": { eyebrow: "ENaC and osmoles", title: "Small polar channel blockers contrast with filtered osmotic agents.", accent: "#9b8cb9", columns: [["Amiloride", "Acylguanidine", "Cationic ENaC pore block"], ["Triamterene", "Pteridine", "Distinct ENaC blocker and crystalluria risk"], ["Mannitol", "Polyol", "Filtered, poorly reabsorbed osmole"], ["Tolvaptan", "Lipophilic receptor ligand", "V2 antagonism and CYP exposure"]] },
+  "diuretic-medchem-integration": { eyebrow: "Structure to exposure", title: "Ionization, protein binding, secretion, and metabolism control target access.", accent: "#c98a75", columns: [["Acidic", "Albumin bound", "Organic anion secretion to lumen"], ["Polar", "Filtered or luminal", "Kidney function shapes exposure"], ["Lipophilic", "Receptor and CYP", "Distribution and interactions grow"], ["Product", "Salt + formulation + route", "Chemistry predicts, label confirms"]] },
+};
+
+export default function DiureticMedicinalChemistryVisual({ type }) {
+  const diagram = diagrams[type];
+  if (!diagram) return null;
+  return <figure className="chol-visual" style={{ "--chol-accent": diagram.accent }} aria-label={diagram.title}>
+    <figcaption><span>{diagram.eyebrow}</span><strong>{diagram.title}</strong></figcaption>
+    <div className="chol-visual__grid">{diagram.columns.map(([name, action, detail], index) => <div key={name}><span>{String(index + 1).padStart(2, "0")}</span><strong>{name}</strong><em>{action}</em><p>{detail}</p></div>)}</div>
+  </figure>;
+}
