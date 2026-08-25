@@ -717,6 +717,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 389 static pages generated
 - Goodnotes note: the insulin lectures, workshop cases, and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
+### Diabetic Ketoacidosis
+
+- Course scope: insulin deficiency and counterregulatory stress; lipolysis, ketogenesis, osmotic diuresis, electrolyte loss, and acidosis; current three-part diagnosis; euglycemic DKA; severity and care setting; precipitating causes; balanced crystalloid and isotonic saline strategies; potassium-directed treatment sequencing; fixed-rate IV insulin; dextrose-supported ketone clearance; selected subcutaneous pathways; bicarbonate and phosphate limits; serial glucose, electrolyte, ketone, kidney, and acid-base monitoring; current biochemical resolution; treatment complications; SGLT2-associated DKA; IV to subcutaneous insulin overlap; discharge readiness; sick-day planning; ketone tools; insulin access; and recurrence prevention
+- Current references reviewed: 2024 international consensus report on hyperglycemic crises in adults with diabetes; ADA Standards of Care in Diabetes 2026 sections on glycemic goals, hyperglycemic crises, and hospital care; and the RxPrep 2023 DKA chapter for historical scope comparison
+- Learning structure: nine content-driven lessons, nine native pathophysiology, diagnosis, precipitant, fluid, potassium, insulin, monitoring, complication, and transition diagrams, and nine embedded knowledge checks
+- Assessment: 100 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: current diagnosis requires diabetes or glucose at least 200 mg/dL, elevated ketones, and metabolic acidosis; blood beta-hydroxybutyrate is preferred to urine ketones; euglycemic DKA remains visible; anion gap is not the preferred resolution marker; fluids are individualized for cardiac and kidney reserve; insulin waits when potassium is below 3.5 mmol/L; dextrose begins below 250 mg/dL so insulin can continue clearing ketones; routine bicarbonate is limited to severe acidosis below pH 7.0; routine phosphate replacement is rejected; and transition requires current biochemical resolution plus basal insulin overlap, access, education, and precipitant correction
+- Automated verification: 100 unique question IDs, four unique choices per question, valid lesson links, nine diagrams, and no em dash or en dash characters in public prose
+- Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, nine diagrams, all nine embedded knowledge checks, and no console errors or warnings
+- Build verification: Next.js production build passed August 25, 2026 with 390 static pages generated
+- Goodnotes note: the DKA lectures, workshop cases, and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -956,7 +968,7 @@ Target modules:
 1. Diabetes Pathophysiology and Monitoring (`built`, 100 question bank; Goodnotes reconciliation pending)
 2. Noninsulin Diabetes Pharmacotherapy (`built`, 104 question bank; Goodnotes reconciliation pending)
 3. Insulin Therapy (`built`, 100 question bank; Goodnotes reconciliation pending)
-4. Diabetic Ketoacidosis
+4. Diabetic Ketoacidosis (`built`, 100 question bank; Goodnotes reconciliation pending)
 5. Hyperosmolar Hyperglycemic State
 6. Thyroid Disorders
 7. Thyroid Medicinal Chemistry

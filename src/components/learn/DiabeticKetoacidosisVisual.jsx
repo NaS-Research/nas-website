@@ -1,0 +1,18 @@
+const diagrams = {
+  "dka-pathway": ["Metabolic cascade", "Insulin deficiency becomes ketone acidosis", ["Release", "Counterregulatory stress", "Increase hepatic glucose and adipose lipolysis"], ["Convert", "Free fatty acids", "Generate beta-hydroxybutyrate and acetoacetate"], ["Lose", "Osmotic diuresis", "Deplete water, sodium, potassium, and phosphate"]],
+  "dka-diagnosis": ["Three-part diagnosis", "Confirm glucose or diabetes, ketones, and acidosis", ["D", "Diabetes or glucose", "History of diabetes or glucose at least 200 mg/dL"], ["K", "Ketonemia", "Beta-hydroxybutyrate at least 3.0 mmol/L"], ["A", "Acidosis", "Venous pH below 7.3 or bicarbonate below 18"]],
+  "dka-causes": ["Trigger investigation", "Find why insulin became insufficient", ["Delivery", "Insulin interruption", "Missed dose, access, technique, pump, or infusion set"], ["Demand", "Acute stress", "Infection, ischemia, trauma, surgery, or pregnancy"], ["Drug and context", "Euglycemic risk", "SGLT2 inhibitor, fasting, alcohol, or low intake"]],
+  "dka-fluids": ["Fluid strategy", "Restore perfusion while controlling osmotic change", ["Resuscitate", "Isotonic crystalloid", "Restore circulating volume and kidney perfusion"], ["Reassess", "Sodium and osmolality", "Interpret expected shifts as glucose falls"], ["Individualize", "Limited reserve", "Use smaller increments in heart or kidney failure"]],
+  "dka-potassium": ["Electrolyte gate", "Potassium determines when insulin can begin", ["Below 3.5", "Replace first", "Delay insulin until potassium is safe"], ["Below 5.0", "Add replacement", "Maintain a target of 4 to 5 mmol/L"], ["After insulin", "Measure repeatedly", "Recheck early, then at least every four hours"]],
+  "dka-insulin": ["Ketone clearance", "Insulin continues after glucose improves", ["Start", "0.1 units/kg/h", "Stop ketogenesis after potassium safety"], ["Add", "Dextrose below 250", "Prevent hypoglycemia while insulin continues"], ["Reduce", "0.05 units/kg/h", "Maintain glucose near 200 until resolution"]],
+  "dka-monitoring": ["Resolution dashboard", "Follow ketones and acid-base recovery", ["Hourly", "Glucose", "Check every one to two hours"], ["Four-hour", "Chemistry and ketones", "Trend electrolytes, pH, creatinine, and beta-hydroxybutyrate"], ["Resolve", "Ketones plus pH", "Use beta-hydroxybutyrate below 0.6 and pH or bicarbonate recovery"]],
+  "dka-complications": ["Treatment safety", "Prevent harm while reversing the crisis", ["Glucose", "Hypoglycemia", "Add dextrose and adjust insulin"], ["Potassium", "Arrhythmia and weakness", "Replace before and during insulin"], ["Volume", "Overload or osmotic injury", "Adjust fluids to age, heart, kidney, and neurologic risk"]],
+  "dka-transition": ["Prevention bridge", "Resolution is followed by reliable access and action", ["Overlap", "Basal insulin", "Activate subcutaneous coverage before IV insulin stops"], ["Correct", "Precipitating cause", "Treat illness, device, access, and medication failures"], ["Equip", "Sick-day plan", "Provide insulin, ketones, hydration, rescue, and follow-up"]],
+};
+
+export default function DiabeticKetoacidosisVisual({ type }) {
+  const item = diagrams[type];
+  if (!item) return null;
+  const [eyebrow, title, ...columns] = item;
+  return <figure className="chol-visual" aria-label={title}><figcaption><span>{eyebrow}</span><strong>{title}</strong></figcaption><div className="chol-visual__flow">{columns.map(([name, focus, detail], index) => <div className="chol-visual__node" key={name}><span>{String(index + 1).padStart(2, "0")}</span><strong>{name}</strong><em>{focus}</em><p>{detail}</p></div>)}</div></figure>;
+}
