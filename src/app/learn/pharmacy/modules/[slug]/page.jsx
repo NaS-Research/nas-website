@@ -52,6 +52,7 @@ import AcuteKidneyInjuryVisual from "@/components/learn/AcuteKidneyInjuryVisual"
 import ChronicKidneyDiseaseVisual from "@/components/learn/ChronicKidneyDiseaseVisual";
 import CkdComplicationsVisual from "@/components/learn/CkdComplicationsVisual";
 import RenalReplacementTherapyVisual from "@/components/learn/RenalReplacementTherapyVisual";
+import AllergicRhinitisVisual from "@/components/learn/AllergicRhinitisVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -103,6 +104,7 @@ const acuteKidneyInjuryVisualTypes = ["aki-detect", "aki-cause", "aki-hemodynami
 const chronicKidneyDiseaseVisualTypes = ["ckd-definition", "ckd-cga", "ckd-risk", "ckd-foundations", "ckd-therapy", "ckd-stewardship"];
 const ckdComplicationsVisualTypes = ["ckdc-surveillance", "ckdc-anemia", "ckdc-mbd", "ckdc-electrolytes", "ckdc-volume", "ckdc-advanced"];
 const renalReplacementTherapyVisualTypes = ["rrt-choice", "rrt-mechanics", "rrt-hd", "rrt-pd", "rrt-safety", "rrt-longitudinal"];
+const allergicRhinitisVisualTypes = ["ar-phenotype", "ar-immunology", "ar-technique", "ar-therapy", "ar-safety", "ar-immunotherapy"];
 
 export function generateStaticParams() {
   return pharmacyModules.map((module) => ({ slug: module.slug }));
@@ -219,6 +221,7 @@ export default async function PharmacyModulePage({ params }) {
               {chronicKidneyDiseaseVisualTypes.includes(submodule.visual) && <ChronicKidneyDiseaseVisual type={submodule.visual} />}
               {ckdComplicationsVisualTypes.includes(submodule.visual) && <CkdComplicationsVisual type={submodule.visual} />}
               {renalReplacementTherapyVisualTypes.includes(submodule.visual) && <RenalReplacementTherapyVisual type={submodule.visual} />}
+              {allergicRhinitisVisualTypes.includes(submodule.visual) && <AllergicRhinitisVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>

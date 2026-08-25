@@ -604,6 +604,17 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 379 static pages generated
 - Goodnotes note: the renal replacement therapy document remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
+### Allergic Rhinitis
+
+- Course scope: allergic, nonallergic, mixed, infectious, structural and medication-related rhinitis phenotypes, severity and functional burden, urgent red flags, IgE and mast-cell biology, early and late response, sensitization versus clinical allergy, skin-prick and serum specific IgE testing, whole-airway comorbidity, allergen-specific exposure control, safe saline irrigation, nasal spray technique, adherence diagnosis, intranasal corticosteroids and antihistamines, fixed intranasal combinations, second-generation oral antihistamines, ipratropium and ocular treatment, topical decongestant limits, montelukast boundaries, pediatric and pregnancy care, anticholinergic and sedative safety, specialist referral, SCIT, approved SLIT tablets, asthma screening, anaphylaxis readiness, and longitudinal immunotherapy adherence
+- Current references reviewed: ARIA-EAACI 2024 to 2025 intranasal treatment guideline, ARIA-EAACI oral and ocular treatment guideline, AAAAI and ACAAI Rhinitis 2020 practice parameter, current FDA allergenic-product information, and current DailyMed labeling
+- Learning structure: six lessons, six native phenotype, immunology, delivery-technique, treatment, safety, and immunotherapy diagrams, and six embedded knowledge checks
+- Assessment: 100 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: allergic pattern was separated from nonallergic, mixed, structural, infectious and dangerous unilateral disease; sensitization did not equal causation; testing followed a clinical hypothesis; food panels were excluded from routine rhinitis evaluation; lower-airway assessment remained part of nasal care; exposure control targeted clinically relevant allergens; irrigation water and device hygiene were explicit safety issues; spray technique was verified before escalation; intranasal corticosteroids remained broad foundational therapy; current ARIA-EAACI guidance supported intranasal antihistamine and fixed combination escalation; second-generation oral antihistamines replaced first-generation sedation; topical decongestants received a stop date; montelukast followed its limited role and neuropsychiatric warning; pediatric and pregnancy decisions used age-specific labeling and benefit-risk context; immunotherapy required clinically relevant sensitization, controlled asthma, product-specific protocols, and anaphylaxis readiness
+- Automated verification: 100 unique question IDs, four unique choices per question, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 25, 2026 with 380 static pages generated
+- Goodnotes note: the allergic-rhinitis lecture and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -826,7 +837,7 @@ Available documents include allergic rhinitis, asthma, COPD, pulmonary arterial 
 
 Target modules:
 
-1. Allergic Rhinitis
+1. Allergic Rhinitis (`built`, 100 question bank; Goodnotes reconciliation pending)
 2. Asthma
 3. Chronic Obstructive Pulmonary Disease
 4. Pulmonary Arterial Hypertension
