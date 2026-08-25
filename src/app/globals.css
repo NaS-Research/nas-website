@@ -6350,6 +6350,599 @@ body {
   border-top: 1px solid var(--nas-line);
 }
 
+.curriculum-card__open {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.8rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid #4c3b24;
+  border-radius: 999px;
+  color: var(--nas-gold-light);
+  font-size: 0.76rem;
+  transition: border-color 180ms ease, background 180ms ease;
+}
+
+.curriculum-card__open:hover {
+  border-color: var(--nas-gold);
+  background: rgb(202 155 92 / 8%);
+}
+
+.pharmacy-curriculum__review {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 1px;
+  padding: clamp(1.5rem, 4vw, 2.75rem);
+  border: 1px solid var(--nas-line);
+  background: linear-gradient(105deg, #0d0a07, #050505 60%);
+}
+
+.pharmacy-curriculum__review div {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.pharmacy-curriculum__review div span {
+  color: var(--nas-gold-light);
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.pharmacy-curriculum__review strong {
+  max-width: 42rem;
+  color: var(--nas-text);
+  font-size: clamp(1.05rem, 2vw, 1.45rem);
+  font-weight: 480;
+}
+
+.pharmacy-curriculum__review > span {
+  color: var(--nas-gold-light);
+  font-size: 1.4rem;
+}
+
+/* Pharmacy modules and assessments */
+.pharmacy-module-hero,
+.pharmacy-review-hero {
+  padding-block: clamp(8rem, 15vw, 12rem) clamp(4rem, 9vw, 7rem);
+  border-bottom: 1px solid var(--nas-line);
+  background:
+    radial-gradient(circle at 78% 24%, rgb(178 125 66 / 11%), transparent 28rem),
+    #030303;
+}
+
+.pharmacy-module-hero .learning-back,
+.pharmacy-review-hero .learning-back {
+  display: inline-block;
+  margin-bottom: 4rem;
+}
+
+.pharmacy-module-hero__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1.6rem;
+  color: #83796c;
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.pharmacy-module-hero h1,
+.pharmacy-review-hero h1 {
+  max-width: 65rem;
+  margin-top: 1.4rem;
+  color: var(--nas-text);
+  font-size: clamp(3rem, 7.5vw, 6.6rem);
+  font-weight: 480;
+  letter-spacing: -0.065em;
+  line-height: 0.96;
+}
+
+.pharmacy-module-hero > div > p,
+.pharmacy-review-hero > div > p {
+  max-width: 49rem;
+  margin-top: 1.8rem;
+  color: #a4a4a4;
+  font-size: clamp(1rem, 1.7vw, 1.2rem);
+  line-height: 1.75;
+}
+
+.pharmacy-module-hero__outcomes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: clamp(3rem, 7vw, 5.5rem);
+  border-block: 1px solid var(--nas-line);
+}
+
+.pharmacy-module-hero__outcomes div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.8rem;
+  padding: 1.25rem;
+  border-right: 1px solid var(--nas-line);
+}
+
+.pharmacy-module-hero__outcomes div:last-child {
+  border-right: 0;
+}
+
+.pharmacy-module-hero__outcomes span {
+  color: var(--nas-gold-light);
+  font-size: 0.62rem;
+}
+
+.pharmacy-module-hero__outcomes p {
+  color: #a5a5a5;
+  font-size: 0.76rem;
+  line-height: 1.55;
+}
+
+.pharmacy-module-layout {
+  display: grid;
+  grid-template-columns: minmax(12rem, 18rem) minmax(0, 1fr);
+  gap: clamp(3rem, 8vw, 8rem);
+  padding-block: clamp(4rem, 9vw, 8rem);
+}
+
+.pharmacy-module-nav {
+  position: sticky;
+  top: 7rem;
+  align-self: start;
+  max-height: calc(100vh - 9rem);
+  overflow-y: auto;
+}
+
+.pharmacy-module-nav > p {
+  margin-bottom: 1rem;
+  color: #686868;
+  font-size: 0.62rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.pharmacy-module-nav nav {
+  display: grid;
+  border-top: 1px solid var(--nas-line);
+}
+
+.pharmacy-module-nav nav a {
+  padding-block: 0.8rem;
+  border-bottom: 1px solid var(--nas-line);
+  color: #8a8a8a;
+  font-size: 0.75rem;
+  line-height: 1.35;
+  transition: color 180ms ease, padding-left 180ms ease;
+}
+
+.pharmacy-module-nav nav a:hover {
+  padding-left: 0.35rem;
+  color: var(--nas-text);
+}
+
+.pharmacy-module-nav__test {
+  display: inline-block;
+  margin-top: 1.4rem;
+  color: var(--nas-gold-light);
+  font-size: 0.73rem;
+}
+
+.pharmacy-module-content {
+  min-width: 0;
+}
+
+.pharmacy-submodule {
+  position: relative;
+  padding-block: 1rem clamp(5rem, 10vw, 8rem);
+  scroll-margin-top: 7rem;
+}
+
+.pharmacy-submodule + .pharmacy-submodule {
+  padding-top: clamp(4rem, 8vw, 6rem);
+  border-top: 1px solid var(--nas-line);
+}
+
+.pharmacy-submodule__number {
+  position: absolute;
+  top: 1.2rem;
+  right: 0;
+  color: #403b35;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.04em;
+}
+
+.pharmacy-submodule h2,
+.pharmacy-module-test h2 {
+  max-width: 46rem;
+  margin-top: 0.8rem;
+  color: var(--nas-text);
+  font-size: clamp(2.1rem, 5vw, 4.2rem);
+  font-weight: 480;
+  letter-spacing: -0.055em;
+  line-height: 1;
+}
+
+.pharmacy-submodule__summary {
+  max-width: 46rem;
+  margin-top: 1.6rem;
+  color: #adadad;
+  font-size: clamp(1rem, 1.7vw, 1.15rem);
+  line-height: 1.8;
+}
+
+.pharmacy-submodule__concepts {
+  display: grid;
+  grid-template-columns: 9rem 1fr;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  padding-block: 1.5rem;
+  border-block: 1px solid var(--nas-line);
+}
+
+.pharmacy-submodule__concepts > span,
+.pharmacy-submodule__application > span {
+  color: #6e655a;
+  font-size: 0.62rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.pharmacy-submodule__concepts ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.85rem 2rem;
+  color: #c1c1c1;
+  font-size: 0.8rem;
+  list-style: none;
+}
+
+.pharmacy-submodule__concepts li::before {
+  margin-right: 0.65rem;
+  content: "·";
+  color: var(--nas-gold);
+}
+
+.pharmacy-submodule__application {
+  display: grid;
+  grid-template-columns: 9rem 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #2c251d;
+  background: linear-gradient(115deg, rgb(185 130 68 / 7%), transparent 58%);
+}
+
+.pharmacy-submodule__application p {
+  max-width: 44rem;
+  color: #aaa39b;
+  font-size: 0.83rem;
+  line-height: 1.7;
+}
+
+.pharmacy-submodule__guide {
+  display: inline-flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  color: var(--nas-gold-light);
+  font-size: 0.78rem;
+}
+
+.pharmacy-module-test {
+  padding-block: clamp(4rem, 8vw, 6rem);
+  scroll-margin-top: 7rem;
+  border-top: 1px solid var(--nas-line);
+}
+
+.pharmacy-module-test > p:not(.nas-section-label) {
+  max-width: 42rem;
+  margin-top: 1.2rem;
+  color: #929292;
+  line-height: 1.7;
+}
+
+.pharmacy-assessment {
+  margin-top: 3rem;
+}
+
+.pharmacy-assessment__status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1rem;
+  border-block: 1px solid var(--nas-line);
+  color: #777;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.pharmacy-assessment__status strong {
+  color: var(--nas-gold-light);
+}
+
+.pharmacy-assessment__questions {
+  display: grid;
+}
+
+.pharmacy-question {
+  min-width: 0;
+  margin: 0;
+  padding: clamp(1.5rem, 4vw, 2.5rem) 0;
+  border: 0;
+  border-bottom: 1px solid var(--nas-line);
+}
+
+.pharmacy-question legend {
+  display: grid;
+  grid-template-columns: 2.4rem 1fr;
+  gap: 0.8rem;
+  max-width: 52rem;
+  color: var(--nas-text);
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  font-weight: 480;
+  line-height: 1.5;
+}
+
+.pharmacy-question legend span {
+  color: var(--nas-gold-light);
+  font-size: 0.65rem;
+  padding-top: 0.32rem;
+}
+
+.pharmacy-question__case {
+  max-width: 50rem;
+  margin: 1rem 0 0 3.2rem;
+  padding: 1rem 1.2rem;
+  border-left: 2px solid #8b673c;
+  background: #0b0907;
+  color: #a9a39d;
+  font-size: 0.82rem;
+  line-height: 1.65;
+}
+
+.pharmacy-question__choices {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin: 1.4rem 0 0 3.2rem;
+}
+
+.pharmacy-question__choices label {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  align-items: center;
+  gap: 0.65rem;
+  min-width: 0;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--nas-line);
+  border-radius: 0.6rem;
+  color: #a0a0a0;
+  cursor: pointer;
+  transition: border-color 180ms ease, background 180ms ease;
+}
+
+.pharmacy-question__choices label:has(input:checked) {
+  border-color: #8b673c;
+  background: rgb(190 139 77 / 8%);
+}
+
+.pharmacy-question__choices label.is-answer {
+  border-color: #58735f;
+  background: rgb(65 113 78 / 11%);
+}
+
+.pharmacy-question__choices label.is-incorrect {
+  border-color: #784d48;
+  background: rgb(127 63 57 / 10%);
+}
+
+.pharmacy-question__choices input {
+  accent-color: var(--nas-gold);
+}
+
+.pharmacy-question__choices label > span {
+  color: #6e655a;
+  font-size: 0.62rem;
+}
+
+.pharmacy-question__choices strong {
+  min-width: 0;
+  font-size: 0.76rem;
+  font-weight: 430;
+  line-height: 1.45;
+}
+
+.pharmacy-question__feedback {
+  margin: 1rem 0 0 3.2rem;
+  padding: 1rem 1.2rem;
+  border-left: 2px solid #80564d;
+  background: #090706;
+}
+
+.pharmacy-question__feedback.is-correct {
+  border-left-color: #607c66;
+}
+
+.pharmacy-question__feedback strong {
+  color: var(--nas-text);
+  font-size: 0.75rem;
+}
+
+.pharmacy-question__feedback p {
+  margin-top: 0.35rem;
+  color: #969696;
+  font-size: 0.77rem;
+  line-height: 1.6;
+}
+
+.pharmacy-assessment__actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.pharmacy-assessment__actions button {
+  padding: 0.85rem 1.25rem;
+  border: 1px solid #85643e;
+  border-radius: 999px;
+  background: var(--nas-gold-light);
+  color: #15100b;
+  font-size: 0.75rem;
+}
+
+.pharmacy-assessment__actions button:disabled {
+  border-color: var(--nas-line);
+  background: #171717;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.pharmacy-assessment__actions span {
+  color: #717171;
+  font-size: 0.7rem;
+}
+
+.pharmacy-module-sequence {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 5rem;
+  border: 1px solid var(--nas-line);
+  background: var(--nas-line);
+}
+
+.pharmacy-module-sequence a {
+  display: grid;
+  gap: 0.55rem;
+  padding: 1.5rem;
+  background: var(--nas-black);
+}
+
+.pharmacy-module-sequence a:last-child {
+  text-align: right;
+}
+
+.pharmacy-module-sequence span {
+  color: #6f6f6f;
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.pharmacy-module-sequence strong {
+  color: var(--nas-text);
+  font-size: 0.84rem;
+  font-weight: 450;
+}
+
+.pharmacy-review-hero .nas-kicker {
+  color: var(--nas-gold-light);
+}
+
+.pharmacy-review-hero > div > div:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 2.4rem;
+}
+
+.pharmacy-review-hero > div > div:last-child span {
+  padding: 0.6rem 0.85rem;
+  border: 1px solid #30281f;
+  border-radius: 999px;
+  color: #8f857a;
+  font-size: 0.66rem;
+}
+
+.pharmacy-review-main {
+  padding-block: clamp(3rem, 8vw, 7rem);
+}
+
+.pharmacy-review-main .pharmacy-assessment {
+  max-width: 64rem;
+  margin-inline: auto;
+}
+
+.pharmacy-review-main .lesson-disclaimer {
+  max-width: 64rem;
+  margin: 4rem auto 0;
+}
+
+@media (max-width: 860px) {
+  .pharmacy-module-hero__outcomes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pharmacy-module-hero__outcomes div:nth-child(2) {
+    border-right: 0;
+  }
+
+  .pharmacy-module-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .pharmacy-module-nav {
+    position: static;
+    max-height: none;
+  }
+}
+
+@media (max-width: 620px) {
+  .pharmacy-module-hero h1,
+  .pharmacy-review-hero h1 {
+    font-size: clamp(2.65rem, 14vw, 4rem);
+  }
+
+  .pharmacy-module-hero__outcomes,
+  .pharmacy-question__choices,
+  .pharmacy-module-sequence {
+    grid-template-columns: 1fr;
+  }
+
+  .pharmacy-module-hero__outcomes div {
+    border-right: 0;
+    border-bottom: 1px solid var(--nas-line);
+  }
+
+  .pharmacy-module-hero__outcomes div:last-child {
+    border-bottom: 0;
+  }
+
+  .pharmacy-submodule__number {
+    position: static;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .pharmacy-submodule__concepts,
+  .pharmacy-submodule__application {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .pharmacy-submodule__concepts ul {
+    grid-template-columns: 1fr;
+  }
+
+  .pharmacy-question legend {
+    grid-template-columns: 1fr;
+  }
+
+  .pharmacy-question__case,
+  .pharmacy-question__choices,
+  .pharmacy-question__feedback {
+    margin-left: 0;
+  }
+
+  .pharmacy-assessment__actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
 .curriculum-card__guides a {
   display: flex;
   justify-content: space-between;

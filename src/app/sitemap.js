@@ -1,6 +1,7 @@
 import { researchItems } from "@/data/researchLibrary";
 import { researchProjects } from "@/data/researchProjects";
 import { pharmacyLessons } from "@/data/pharmacyLearning";
+import { pharmacyModules } from "@/data/pharmacyModules";
 import { featuredDrugs } from "@/data/drugLibrary";
 
 const baseUrl = "https://nasresearch.bio";
@@ -14,6 +15,7 @@ export default function sitemap() {
     { path: "/learn/pharmacy", lastModified: "2026-08-24", changeFrequency: "weekly", priority: 0.85 },
     { path: "/learn/pharmacy/atlas", lastModified: "2026-08-24", changeFrequency: "weekly", priority: 0.85 },
     { path: "/learn/pharmacy/drugs", lastModified: "2026-08-24", changeFrequency: "weekly", priority: 0.85 },
+    { path: "/learn/pharmacy/review", lastModified: "2026-08-24", changeFrequency: "monthly", priority: 0.8 },
     { path: "/about", lastModified: "2026-07-20", changeFrequency: "monthly", priority: 0.7 },
     { path: "/support", lastModified: "2026-07-20", changeFrequency: "monthly", priority: 0.6 },
     { path: "/contact", lastModified: "2026-07-20", changeFrequency: "monthly", priority: 0.6 },
@@ -44,6 +46,13 @@ export default function sitemap() {
     priority: 0.8,
   }));
 
+  const modulePages = pharmacyModules.map((module) => ({
+    url: `${baseUrl}/learn/pharmacy/modules/${module.slug}`,
+    lastModified: new Date("2026-08-24"),
+    changeFrequency: "monthly",
+    priority: 0.82,
+  }));
+
   const drugPages = featuredDrugs.map((drug) => ({
     url: `${baseUrl}/learn/pharmacy/drugs/${drug.slug}`,
     lastModified: new Date("2026-08-24"),
@@ -61,6 +70,7 @@ export default function sitemap() {
     ...projectPages,
     ...publicationPages,
     ...learningPages,
+    ...modulePages,
     ...drugPages,
   ];
 }

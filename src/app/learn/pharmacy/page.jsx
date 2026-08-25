@@ -3,7 +3,8 @@ import Footer from "@/components/Footer";
 import LearningLibrary from "@/components/learn/LearningLibrary";
 import PharmacyCurriculum from "@/components/learn/PharmacyCurriculum";
 import PharmacyPlatformHome from "@/components/learn/PharmacyPlatformHome";
-import { pharmacyCollections, pharmacyLessons } from "@/data/pharmacyLearning";
+import { pharmacyLessons } from "@/data/pharmacyLearning";
+import { pharmacyModules } from "@/data/pharmacyModules";
 
 export const metadata = {
   title: "Pharmacy | NaS Learn",
@@ -38,7 +39,7 @@ export default function PharmacyLearningPage() {
 
         <div className="nas-shell">
           <PharmacyPlatformHome />
-          <PharmacyCurriculum collections={pharmacyCollections} lessons={pharmacyLessons} />
+          <PharmacyCurriculum collections={pharmacyModules} lessons={pharmacyLessons} />
           <LearningLibrary lessons={pharmacyLessons} />
         </div>
 

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { researchItems } from "@/data/researchLibrary";
 import { researchProjects } from "@/data/researchProjects";
 import { pharmacyLessons } from "@/data/pharmacyLearning";
+import { pharmacyModules } from "@/data/pharmacyModules";
 import { featuredDrugs } from "@/data/drugLibrary";
 
 export const metadata = {
@@ -40,7 +41,13 @@ const groups = [
       { label: "NaS Learn", href: "/learn", detail: "Connected educational guides across pharmacy and the life sciences" },
       { label: "Pharmacy", href: "/learn/pharmacy", detail: "The Pharmacy curriculum and learning library" },
       { label: "Visual Atlas", href: "/learn/pharmacy/atlas", detail: "Interactive anatomy and connected medication knowledge" },
-      { label: "Drug Library", href: "/learn/pharmacy/drugs", detail: "The Core 200 and current RxNorm medication search" },
+      { label: "Drug Library", href: "/learn/pharmacy/drugs", detail: "The Top 300 and current RxNorm medication search" },
+      { label: "Cumulative Pharmacy Review", href: "/learn/pharmacy/review", detail: "Direct questions and patient cases across the full sequence" },
+      ...pharmacyModules.map((module) => ({
+        label: `${module.number}. ${module.title}`,
+        href: `/learn/pharmacy/modules/${module.slug}`,
+        detail: `${module.submodules.length} submodules · ${module.source}`,
+      })),
       ...featuredDrugs.map((drug) => ({
         label: drug.generic.replace(/\b\w/g, (letter) => letter.toUpperCase()),
         href: `/learn/pharmacy/drugs/${drug.slug}`,

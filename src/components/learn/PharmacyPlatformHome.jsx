@@ -38,10 +38,10 @@ const platformAreas = [
   {
     number: "05",
     label: "Practice",
-    title: "Knowledge Checks",
-    description: "Commit to an answer, reveal the reasoning, and connect foundational knowledge to practical pharmacy decisions.",
-    href: "/learn/pharmacy/drug-formulations-and-routes#study-check",
-    action: "Start a study check",
+    title: "Cumulative Review",
+    description: "Move between mechanisms, monitoring, counseling, and patient cases, then reveal the reasoning behind every answer.",
+    href: "/learn/pharmacy/review",
+    action: "Start the review",
   },
 ];
 

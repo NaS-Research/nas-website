@@ -13,7 +13,7 @@ export default function PharmacyCurriculum({ collections, lessons }) {
 
       <div className="pharmacy-curriculum__grid">
         {collections.map((collection) => {
-          const published = lessons.filter((lesson) => lesson.collectionSlug === collection.slug);
+          const published = lessons.filter((lesson) => lesson.collectionSlug === (collection.lessonCollectionSlug || collection.slug));
           return (
             <article className="curriculum-card" id={collection.slug} key={collection.slug}>
               <div className="curriculum-card__topline">
@@ -25,6 +25,10 @@ export default function PharmacyCurriculum({ collections, lessons }) {
               <ul>
                 {collection.topics.map((topic) => <li key={topic}>{topic}</li>)}
               </ul>
+              <Link className="curriculum-card__open" href={`/learn/pharmacy/modules/${collection.slug}`}>
+                <span>Explore {collection.submodules.length} submodules</span>
+                <span aria-hidden="true">↗</span>
+              </Link>
               {published.length > 0 && (
                 <div className="curriculum-card__guides">
                   {published.map((lesson) => (
@@ -39,6 +43,10 @@ export default function PharmacyCurriculum({ collections, lessons }) {
           );
         })}
       </div>
+      <Link className="pharmacy-curriculum__review" href="/learn/pharmacy/review">
+        <div><span>Cumulative review</span><strong>Test the complete sequence with direct questions and patient cases.</strong></div>
+        <span aria-hidden="true">↗</span>
+      </Link>
     </section>
   );
 }
