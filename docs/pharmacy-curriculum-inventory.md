@@ -2040,6 +2040,10 @@ Current source reconciliations:
 - Retired pregnancy letters are excluded. Pregnancy, lactation, pediatric, and infant-contact decisions use the exact product, route, age, weight, renal function, treated site, exposure, and current labeling.
 - Goodnotes was retried again during module development, but the Mac session still returned a locked state. Any dedicated HSV lecture will receive a documented reconciliation pass after manual unlock.
 
+### Seborrheic Dermatitis and Dandruff
+
+The Seborrheic Dermatitis and Dandruff module connects multifactorial disease biology, dandruff and inflammatory phenotypes, common mimics, scalp shampoo selection, hair-texture-aware delivery, non-scalp antifungals, corticosteroid rescue, steroid-sparing therapy, topical PDE4 inhibition, cradle cap, skin tone, pregnancy and lactation, label-directed technique, maintenance, monitoring, and referral. It contains nine focused lessons, nine original interactive diagrams, nine embedded checks, and a 112-question assessment bank across 28 concepts and four reasoning levels. The 457-page production build, desktop layout, 390 pixel phone layout, overflow-free responsive diagrams, ten-question sampling, scoring, ten remediation links, and a subsequent attempt with zero repeated questions were verified on August 26, 2026.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
