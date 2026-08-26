@@ -93,6 +93,7 @@ import MedicationSafetyQualityVisual from "@/components/learn/MedicationSafetyQu
 import InfectionPreventionControlVisual from "@/components/learn/InfectionPreventionControlVisual";
 import DrugAllergiesAdverseReactionsVisual from "@/components/learn/DrugAllergiesAdverseReactionsVisual";
 import PharmacokineticsVisual from "@/components/learn/PharmacokineticsVisual";
+import PharmacogenomicsVisual from "@/components/learn/PharmacogenomicsVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -184,6 +185,7 @@ const medicationSafetyQualityVisualTypes = ["safety-taxonomy", "safety-systems",
 const infectionPreventionControlVisualTypes = ["ipc-chain", "ipc-standard", "ipc-transmission", "ipc-hands", "ipc-environment", "ipc-devices", "ipc-injections", "ipc-sharps", "ipc-surveillance", "ipc-governance"];
 const drugAllergiesAdverseReactionsVisualTypes = ["adr-taxonomy-map", "adr-causality-map", "adr-safety-system", "adr-immune-pathways", "adr-anaphylaxis", "adr-scar-triage", "adr-beta-lactam", "adr-cross-reactivity", "adr-testing-pathway", "adr-longitudinal-record"];
 const pharmacokineticsVisualTypes = ["pk-adme-map", "pk-bioavailability", "pk-distribution", "pk-metabolism", "pk-clearance", "pk-saturation", "pk-decay", "pk-half-life", "pk-dosing", "pk-tdm"];
+const pharmacogenomicsVisualTypes = ["pgx-foundations", "pgx-translation", "pgx-evidence", "pgx-hla", "pgx-cyp2d6", "pgx-clopidogrel", "pgx-antiseizure", "pgx-antimetabolites", "pgx-multigene", "pgx-oncology"];
 const diarrheaAssessmentVisualTypes = ["diarrhea-phenotype", "diarrhea-triage", "diarrhea-causes", "diarrhea-rehydration", "diarrhea-testing", "diarrhea-supportive", "diarrhea-bismuth", "diarrhea-antimotility", "diarrhea-travel", "diarrhea-persistent"];
 
 export function generateStaticParams() {
@@ -342,6 +344,7 @@ export default async function PharmacyModulePage({ params }) {
               {infectionPreventionControlVisualTypes.includes(submodule.visual) && <InfectionPreventionControlVisual type={submodule.visual} />}
               {drugAllergiesAdverseReactionsVisualTypes.includes(submodule.visual) && <DrugAllergiesAdverseReactionsVisual type={submodule.visual} />}
               {pharmacokineticsVisualTypes.includes(submodule.visual) && <PharmacokineticsVisual type={submodule.visual} />}
+              {pharmacogenomicsVisualTypes.includes(submodule.visual) && <PharmacogenomicsVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>

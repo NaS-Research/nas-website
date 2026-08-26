@@ -1151,6 +1151,7 @@ Target modules presently supported:
 9. Infection Prevention and Control (`built`, 136 question bank; Goodnotes reconciliation pending)
 10. Drug Allergies and Adverse Drug Reactions (`built`, 136 question bank; Goodnotes reconciliation pending)
 11. Pharmacokinetics (`built`, 140 question bank; Goodnotes reconciliation pending)
+12. Pharmacogenomics (`built`, 140 question bank; Goodnotes reconciliation pending)
 
 ### Gastroesophageal Reflux Disease
 
@@ -1295,6 +1296,19 @@ Target modules presently supported:
 - Automated verification: 140 unique question IDs, 35 distinct concept groups, no duplicate answer choices, four difficulty levels, ten diagrams, and no em dash or en dash characters in public module prose
 - Browser verification: 1280 pixel desktop and 390 pixel mobile production rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, ten questions per attempt, a second attempt with no exact question overlap in the verified run, scoring with ten explanations and ten remediation links, and zero browser console warnings or errors
 - Build verification: Next.js production build passed August 26, 2026 with 420 static pages generated
+
+### Pharmacogenomics
+
+- RxPrep source: NAPLEX 2023 Chapter 79 pharmacogenomics content, PDF pages 978 through 982, visually reviewed in full
+- Current references reviewed: FDA Table of Pharmacogenetic Associations, FDA Pharmacogenomic Biomarkers in Drug Labeling, FDA authorized companion diagnostic device list, current CPIC guideline index, and current CPIC guidance for clopidogrel, opioids, thiopurines, fluoropyrimidines, phenytoin, carbamazepine, oxcarbazepine, and allopurinol
+- Learning structure: ten focused lessons, ten native translation and decision diagrams, and ten embedded knowledge checks
+- Assessment: 140 original questions across 35 distinct concept groups spanning genotype and phenotype, germline and somatic variation, alleles, haplotypes, diplotypes, star alleles, activity scores, copy number, phenoconversion, ancestry boundaries, FDA and CPIC roles, companion diagnostics, assay coverage, consent, documentation, HLA safety, CYP2D6 opioids, CYP2C19 clopidogrel, antiseizure pharmacogenomics, TPMT, NUDT15, DPYD, warfarin, SLCO1B1, UGT1A1, HER2, RAS, and tumor evolution
+- Source reconciliation: extensive metabolizer was replaced with normal metabolizer; race and ancestry were not treated as genotype; FDA table inclusion was separated from a testing mandate; CPIC was framed as guidance for using available results; phenoconversion was added; HLA alleles were assigned drug-specific risk boundaries; CYP2C19 clopidogrel recommendations were separated by cardiovascular and neurovascular context; TPMT and NUDT15 were combined for thiopurine interpretation; partial and complete DPD deficiency were separated; and inherited pharmacogenomics was distinguished from somatic tumor companion diagnostics
+- Scope boundary: population-wide testing policy, laboratory accreditation, reimbursement, germline cancer-risk counseling, tumor board decision-making, and complete gene-by-gene prescribing tables remain in dedicated implementation or disease modules
+- Goodnotes note: dedicated pharmacogenomics lecture reconciliation remains pending while direct Goodnotes export is unavailable; the RxPrep and current-source synthesis is complete and will receive a documented pass when access is restored
+- Automated verification: 140 unique question IDs, 35 distinct concept groups, no duplicate answer choices, valid links to all ten lessons, four difficulty levels, ten diagrams, and no em dash or en dash characters in public module prose
+- Browser verification: 1280 pixel desktop and 390 pixel mobile production rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, eleven current reference links, ten questions per attempt, a second attempt with no exact question overlap in the verified run, scoring with ten explanations and ten remediation links, and zero browser console warnings or errors
+- Build verification: Next.js production build passed August 26, 2026 with 421 static pages generated
 
 ### DAST IV reproductive and gynecologic sequence
 
