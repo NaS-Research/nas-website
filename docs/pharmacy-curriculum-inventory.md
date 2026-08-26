@@ -1939,6 +1939,29 @@ Current source reconciliations:
 - Current CDC tetanus wound guidance replaces memorized legacy schedules, and retired pregnancy letters are excluded from every medication and vaccine decision.
 - Goodnotes was retried after the user reported access restored, but the Mac session still returned a locked state. Any dedicated burn lecture will receive a documented reconciliation pass after manual unlock.
 
+### Poison Ivy, Oak, and Sumac
+
+The Poison Ivy, Oak, and Sumac module separates direct, indirect, pet-mediated, dead-plant, and smoke exposure; urushiol chemistry; hapten formation; T cell sensitization; rash recognition; skin and nail decontamination; household transfer control; symptom relief; topical corticosteroid use; severe disease; infection and differential diagnosis; and prevention. It contains ten focused lessons, ten original interactive diagrams, ten embedded checks, and a 112-question assessment bank across 28 concepts and four reasoning levels. The 453-page production build, desktop layout, 390 pixel phone layout, overflow-free responsive diagrams, ten-question sampling, scoring, ten remediation links, and a subsequent attempt with zero repeated questions were verified on August 26, 2026.
+
+Current source reconciliations:
+
+- The Toxicodendron portion of RxPrep 2023 Chapter 39 was reviewed for plant exposure, urushiol, decontamination, OTC care, corticosteroids, and counseling. Its prose, tables, plant images, and questions were not reproduced.
+- The familiar leaves-of-three rule is not taught as a complete identification method. Current CDC material notes that poison oak may have three to five leaflets and poison sumac has more paired leaflets, so regional identification and plant form remain necessary.
+- Allergic contact dermatitis is taught as a delayed, urushiol-specific T cell response. The current NIOSH bulletin's antibody wording is explicitly superseded by peer-reviewed human T cell evidence and established type IV hypersensitivity biology.
+- Direct plant contact is only one route. Clothing, shoes, tools, sports equipment, pet fur, vehicles, household surfaces, dead vegetation, ash, and smoke are incorporated into the exposure map.
+- Blister fluid is not presented as contagious. Apparently spreading rash is explained by delayed expression across sites, separate exposure, or residual urushiol on skin, nails, fomites, or animals.
+- Decontamination is time-sensitive but remains useful as source control. Prompt gentle washing with an appropriate cleanser and plenty of water, cleaning beneath nails, removing exposed clothing, and protecting helpers replace delayed or injurious scrubbing.
+- Smoke exposure is separated from uncomplicated skin disease. Breathing or swallowing difficulty, voice change, choking sensation, major facial or throat swelling, eye symptoms, or significant contaminated-smoke exposure receives emergency evaluation.
+- Mild localized symptom care uses cool compresses, cool showers or short lukewarm baths, calamine, colloidal oatmeal, aluminum acetate when appropriate, and blister protection. Topical antihistamines are excluded because they can worsen allergic contact dermatitis.
+- Oral antihistamines are not described as disease-modifying treatment for this T cell process. Any sleep benefit from a sedating product is weighed against driving, falls, cognition, anticholinergic burden, alcohol, and other sedatives.
+- OTC hydrocortisone is kept within product-specific labeling. One current 1 percent label allows adults and children at least two years old to apply three to four times daily, directs younger children to clinician advice, and requires reassessment for worsening, persistence beyond seven days, or rapid recurrence.
+- Face, eye, mouth, genital, extensive, severely swollen, blistering, disabling, infected, uncertain, or treatment-resistant disease is not managed by escalating unsupervised OTC corticosteroid exposure.
+- Prescription systemic corticosteroids are clinician-directed. Diagnosis, infection, diabetes, blood pressure, psychiatric risk, pregnancy and lactation, interactions, duration, follow-up, and rebound from an inadequate course remain visible.
+- Clear vesicle fluid is separated from bacterial infection. Increasing tenderness, purulence, soft yellow crust, spreading pain, fever, odor, and systemic illness trigger reassessment rather than automatic antibiotics for every weeping lesion.
+- Bentoquatam is presented only as a labeled pre-exposure barrier used with avoidance and PPE. It does not treat established dermatitis, and dead or suspect plants should never be burned.
+- Retired pregnancy letters are excluded. Reproductive and lactation decisions use the specific product, route, potency, area, duration, timing, alternatives, and patient goals.
+- Goodnotes remains pending because the Mac session was still locked at the latest retry. Any dedicated Toxicodendron lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
