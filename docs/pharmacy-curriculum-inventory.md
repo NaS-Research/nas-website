@@ -1119,10 +1119,13 @@ Completed production modules:
 1. Gonadal Hormone Pharmacology
 2. Menstrual and Gynecologic Disorders
 3. Infertility Evaluation and Ovulation Induction
+4. Contraceptive Pharmacotherapy
 
 The menstrual and gynecologic module includes menstrual assessment, PALM-COEIN classification, acute abnormal uterine bleeding, chronic heavy menstrual bleeding, dysmenorrhea, premenstrual disorders, endometriosis, and uterine fibroids. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 100-question assessment bank.
 
 The infertility module includes evaluation timing, the fertile window, female and male evaluation, PCOS-related ovulation induction, clomiphene and metformin, gonadotropin stimulation, trigger and luteal protocols, assisted reproduction, and OHSS prevention. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 100-question assessment bank.
+
+The contraception module includes person-centered selection, U.S. MEC, combined methods, estrogen eligibility, progestin-only methods, IUDs, the etonogestrel implant, emergency contraception, quick start, missed-use management, and drug interactions. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 100-question assessment bank.
 
 Current guidance reconciliations:
 
@@ -1135,10 +1138,12 @@ Current guidance reconciliations:
 - AMH and antral follicle count are taught as ovarian-response adjuncts, not measures of egg quality or guaranteed natural fertility.
 - Semen analysis is interpreted as a variable clinical profile rather than a binary declaration of fertility or sterility.
 - Current ASRM OHSS prevention emphasizes individualized stimulation, antagonist protocols, an agonist trigger in suitable cycles, cabergoline, and freeze-all strategies rather than lower-dose hCG or aspirin alone.
+- CDC U.S. MEC 2024 replaces broad class warnings with method-specific eligibility categories, including category 4 combined hormonal contraception for migraine with aura and for patients age 35 or older who smoke at least 15 cigarettes daily.
+- CDC U.S. SPR 2024 supports quick start when pregnancy is reasonably excluded, product-specific missed-dose instructions, self-administered DMPA-SC, and person-centered IUD pain planning without routine misoprostol.
+- Emergency contraception now distinguishes the copper IUD, ulipristal, and levonorgestrel by timing, effectiveness, and the required hormonal restart plan.
 
 Deferred into focused modules:
 
-- Contraception
 - Menopause
 - Vulvovaginal infection and pelvic inflammatory disease
 - Pregnancy complications
