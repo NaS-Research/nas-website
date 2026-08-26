@@ -1149,6 +1149,7 @@ Target modules presently supported:
 7. Motion Sickness (`built`, 120 question bank; Goodnotes reconciliation pending)
 8. Medication Safety and Quality Improvement (`built`, 136 question bank; Goodnotes reconciliation pending)
 9. Infection Prevention and Control (`built`, 136 question bank; Goodnotes reconciliation pending)
+10. Drug Allergies and Adverse Drug Reactions (`built`, 136 question bank; Goodnotes reconciliation pending)
 
 ### Gastroesophageal Reflux Disease
 
@@ -1267,6 +1268,19 @@ Target modules presently supported:
 - Automated verification: 136 unique question IDs, 34 distinct concept groups, no duplicate answer choices, valid links to all ten lessons, four difficulty levels, ten diagrams, and no em dash or en dash characters in public module prose
 - Browser verification: 1280 pixel desktop and 390 pixel mobile production rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, ten distinct concepts per attempt, a different second sample, scoring with ten explanations and ten remediation links, and zero browser console warnings or errors
 - Build verification: Next.js production build passed August 26, 2026 with 418 static pages generated
+
+### Drug Allergies and Adverse Drug Reactions
+
+- RxPrep source: NAPLEX 2023 Chapter 77 drug-allergy and adverse-reaction content, PDF pages 957 through 965, visually reviewed in full
+- Current references reviewed: 2022 AAAAI and ACAAI Drug Allergy Practice Parameter, 2023 Anaphylaxis Practice Parameter update, 2025 CDC penicillin-allergy clinical guidance, CDC penicillin-allergy treatment guidance, FDA MedWatch, FAERS, REMS, current safety communications, a 2024 DRESS review, and CPIC HLA guidance for carbamazepine and allopurinol
+- Learning structure: ten focused lessons, ten native mechanism and decision diagrams, and ten embedded knowledge checks
+- Assessment: 136 original questions across 34 distinct concept groups spanning adverse-reaction taxonomy, medication-error boundaries, predictability, severity, preventability, phenotype, latency, dechallenge, causality tools, boxed warnings, Medication Guides, REMS, MedWatch, FAERS, immediate and delayed immune mechanisms, nonimmune mediator release, intolerance, anaphylaxis, epinephrine, adjuncts, auto-injectors, SJS, TEN, DRESS, AGEP, penicillin evaluation, direct challenge, skin testing, beta-lactam side chains, sulfonamides, NSAID phenotypes, desensitization, documentation, delabeling, and genomic prevention
+- Source reconciliation: Type A and Type B are retained only as historical shorthand; Naranjo scoring is not treated as proof; FAERS reports do not establish incidence or causality; the discontinued clozapine REMS is identified as obsolete; intramuscular epinephrine precedes antihistamines, bronchodilators, and corticosteroids in anaphylaxis; severe cutaneous reactions prohibit routine rechallenge and desensitization; beta-lactam decisions are risk and side-chain informed; sulfonamide antibiotic allergy does not imply broad nonantibiotic cross-reactivity; NSAID reactions are phenotype specific; and food allergy alone does not create blanket avoidance of propofol, vaccines, or iodinated contrast
+- Scope boundary: detailed treatment of specific toxicities, vaccine reactions, contrast protocols, hereditary angioedema, mast-cell disorders, and organ-specific drug injury remain in focused modules or specialist pathways
+- Goodnotes note: the dedicated drug-allergy or adverse-reaction lecture remains pending while direct Goodnotes export is unavailable; the RxPrep and current-source synthesis is complete and will receive a documented reconciliation pass when access is restored
+- Automated verification: 136 unique question IDs, 34 distinct concept groups, no duplicate answer choices, valid links to all ten lessons, four difficulty levels, ten diagrams, and no em dash or en dash characters in public module prose
+- Browser verification: 1280 pixel desktop and 390 pixel mobile production rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, twelve current reference links, ten distinct questions per attempt, a different second sample, scoring with ten explanations and ten remediation links, and zero browser console warnings or errors
+- Build verification: Next.js production build passed August 26, 2026 with 419 static pages generated
 
 ### DAST IV reproductive and gynecologic sequence
 
