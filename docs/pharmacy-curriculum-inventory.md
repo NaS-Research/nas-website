@@ -1350,6 +1350,19 @@ Target modules presently supported:
 - Browser verification: 1280 pixel desktop and 390 pixel mobile production rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, thirteen current reference links, ten questions per attempt, a second sample with zero overlap, scoring with ten explanations and ten remediation links, and zero browser console warnings or errors.
 - Build verification: Next.js production build passed August 26, 2026 with 424 static pages generated.
 
+### Systemic Glucocorticoid Pharmacology and Safe Use
+
+- Primary course source: RxPrep 2023, Chapter 46 systemic steroids, PDF pages 642 through 645, printed pages 634 through 637. Every page was rendered and reviewed visually before synthesis.
+- Current verification sources: 2024 European Society of Endocrinology and Endocrine Society glucocorticoid-induced adrenal insufficiency guideline; CDC altered-immunocompetence vaccination guidance; 2022 American College of Rheumatology glucocorticoid-induced osteoporosis guideline and vaccination guideline; ADA Standards of Care in Diabetes 2026 hospital guidance; current DailyMed prednisone, methylprednisolone, and dexamethasone labeling; and Endocrine Society primary adrenal insufficiency resources.
+- Learning structure: ten focused lessons, ten native mechanism and clinical-decision diagrams, and ten embedded knowledge checks.
+- Assessment: 160 original questions across 40 distinct concept groups and four difficulty levels. Each attempt samples ten questions without replacement and randomizes answer order.
+- Source reconciliation: short courses under three to four weeks were separated from long-term adrenal-recovery tapering; tapering was linked to disease control and slowed near physiologic exposure; morning cortisol interpretation and retesting follow the 2024 guideline; stress coverage and adrenal-crisis response account for route and absorption; glucocorticoid-induced adrenal insufficiency was separated from primary adrenal failure; cumulative exposure includes every route; adrenal-risk thresholds were separated from CDC live-vaccine thresholds; non-live vaccines were not treated as contraindicated; fracture-risk assessment begins with contemporary ACR thresholds; prednisone-associated glucose patterns were aligned with current ADA guidance; and retired pregnancy letters were replaced with current narrative labeling.
+- Scope boundary: disease-specific glucocorticoid regimens remain in their focused rheumatology, pulmonary, neurologic, gastrointestinal, dermatologic, oncology, and transplant modules.
+- Goodnotes note: dedicated lecture reconciliation remains pending while direct Goodnotes export is unavailable. The RxPrep and current-source synthesis is complete and will receive a documented pass when access is restored.
+- Automated verification: 160 unique question IDs, 40 concept groups, four difficulty levels, no duplicate answer-choice sets, valid links to all ten lessons, ten distinct diagrams, ten embedded checks, ten current references, and no em dash or en dash characters in public module prose.
+- Browser verification: 1280 pixel desktop and 390 pixel mobile production rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, ten questions per attempt, a second sample with zero overlap, scoring with ten explanations and ten remediation links, and zero browser console warnings or errors.
+- Build verification: Next.js production build passed August 26, 2026 with 425 static pages generated.
+
 ### DAST IV reproductive and gynecologic sequence
 
 Reviewed source documents:

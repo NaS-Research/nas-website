@@ -97,6 +97,7 @@ import PharmacogenomicsVisual from "@/components/learn/PharmacogenomicsVisual";
 import DietarySupplementsComplementaryMedicineVisual from "@/components/learn/DietarySupplementsComplementaryMedicineVisual";
 import ToxicologyAntidotesVisual from "@/components/learn/ToxicologyAntidotesVisual";
 import TobaccoUseCessationVisual from "@/components/learn/TobaccoUseCessationVisual";
+import SystemicGlucocorticoidsVisual from "@/components/learn/SystemicGlucocorticoidsVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -192,6 +193,7 @@ const pharmacogenomicsVisualTypes = ["pgx-foundations", "pgx-translation", "pgx-
 const dietarySupplementsVisualTypes = ["supp-regulation", "supp-evidence", "supp-reconciliation", "supp-bleeding", "supp-organ-risk", "supp-neuroactive", "supp-cardiometabolic", "supp-vitamins", "supp-special-categories", "supp-care-plan"];
 const toxicologyAntidotesVisualTypes = ["tox-stabilization", "tox-decontamination", "tox-patterns", "tox-acetaminophen", "tox-opioids", "tox-cardiotoxic", "tox-cellular", "tox-neuro", "tox-metabolic", "tox-preparedness"];
 const tobaccoUseCessationVisualTypes = ["tobacco-dependence", "tobacco-plan", "tobacco-nrt-system", "tobacco-patch", "tobacco-oral-nrt", "tobacco-prescription-nrt", "tobacco-varenicline", "tobacco-bupropion", "tobacco-special-populations", "tobacco-longitudinal"];
+const systemicGlucocorticoidsVisualTypes = ["gc-signaling", "gc-equivalence", "gc-treatment-plan", "gc-hpa-risk", "gc-taper", "gc-stress", "gc-metabolic", "gc-infection-vaccine", "gc-bone-tissue", "gc-longitudinal"];
 const diarrheaAssessmentVisualTypes = ["diarrhea-phenotype", "diarrhea-triage", "diarrhea-causes", "diarrhea-rehydration", "diarrhea-testing", "diarrhea-supportive", "diarrhea-bismuth", "diarrhea-antimotility", "diarrhea-travel", "diarrhea-persistent"];
 
 export function generateStaticParams() {
@@ -354,6 +356,7 @@ export default async function PharmacyModulePage({ params }) {
               {dietarySupplementsVisualTypes.includes(submodule.visual) && <DietarySupplementsComplementaryMedicineVisual type={submodule.visual} />}
               {toxicologyAntidotesVisualTypes.includes(submodule.visual) && <ToxicologyAntidotesVisual type={submodule.visual} />}
               {tobaccoUseCessationVisualTypes.includes(submodule.visual) && <TobaccoUseCessationVisual type={submodule.visual} />}
+              {systemicGlucocorticoidsVisualTypes.includes(submodule.visual) && <SystemicGlucocorticoidsVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
