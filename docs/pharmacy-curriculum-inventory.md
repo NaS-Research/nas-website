@@ -1772,6 +1772,29 @@ Current source reconciliations:
 - Retired pregnancy letters are excluded. Pregnancy and lactation use narrative benefit-risk reasoning, product-specific evidence, disease risk, and reduction of avoidable nasolacrimal exposure.
 - Goodnotes was retried before this build, but macOS still reported the session as locked. Any dedicated lecture will receive a documented reconciliation pass after manual unlock.
 
+### Common Ear Conditions
+
+The common ear conditions module focuses on anatomic symptom localization, sudden hearing loss, diffuse acute otitis externa, pain, obstructed topical delivery, tympanic-membrane status, invasive infection risk, otic pharmacotherapy, ear-drop technique, cerumen impaction, tinnitus, special populations, and closed-loop follow-up. It contains eight focused lessons, eight original interactive diagrams, eight embedded checks, and a 112-question assessment bank across 28 concepts and four reasoning levels. The 445-page production build, desktop layout, 390 pixel phone layout, overflow-free responsive diagrams, ten-question sampling, scoring, ten remediation links, and a subsequent attempt with zero repeated questions were verified on August 26, 2026.
+
+Current source reconciliations:
+
+- The ear portion of RxPrep 2023 Chapter 38 was reviewed for topical dosage forms, otitis externa, analgesia, cerumen impaction, tinnitus, and administration counseling. Its prose, tables, and questions were not reproduced.
+- Sudden unilateral hearing loss, especially with tinnitus or vertigo, is routed to urgent audiologic and otolaryngology evaluation rather than a prolonged wax-treatment trial.
+- Severe persistent pain, mastoid findings, cranial neuropathy, systemic toxicity, trauma, foreign body, sudden hearing loss, and invasive disease risk in diabetes or immune compromise are separated from routine self-care.
+- AAO-HNS guidance replaces routine oral-antibiotic treatment of uncomplicated diffuse acute otitis externa with topical initial therapy, adequate analgesia, restoration of topical access when edema or debris obstructs the canal, and reassessment within 48 to 72 hours when improvement is absent.
+- Systemic antibiotics remain limited to extension beyond the canal and defined host, disease, or delivery factors rather than being added automatically.
+- Tympanostomy tubes, known or suspected perforation, trauma, surgery, or inability to visualize the membrane change product safety. A non-ototoxic preparation is used when middle-ear exposure is possible, and an unseen membrane is not assumed intact.
+- Current ciprofloxacin and dexamethasone labeling confirms otic-only use, suspension shaking, gentle hand warming, exact product dosing, age and indication boundaries, and exclusion of viral and fungal canal infection.
+- Ophthalmic and otic formulations are not treated as automatically interchangeable. Otic products are never placed in the eye, and any ophthalmic product used in the ear requires a clinician-directed product-specific decision.
+- Ear-drop teaching includes plain-language laterality, formulation preparation, age-appropriate pinna movement, sterile tip clearance, gentle tragal distribution when directed, adequate dwell time, wick instructions, and observed return technique.
+- Broad prohibitions on flying, headphones, or every water exposure are not copied as universal rules. Activity and water precautions follow the diagnosis, membrane, procedure, symptoms, and clinician plan, while canal trauma and moisture during active external infection are minimized.
+- Cerumen is treated only when it causes symptoms or prevents needed examination. Perforation, tubes, surgery, canal anatomy, anticoagulation, diabetes, immune status, dermatologic disease, devices, and communication ability determine whether cerumenolysis, irrigation, manual removal, or referral is safest.
+- Cotton swabs, ear candling, blind probing, and uncontrolled pressurized devices are rejected. Persistent symptoms after successful wax removal trigger evaluation for another cause.
+- Tinnitus is classified by pulse synchrony, laterality, sudden or gradual onset, associated hearing change, vertigo, neurologic findings, duration, and burden. Pulsatile, asymmetric, focal, or sudden patterns receive targeted evaluation.
+- Persistent bothersome primary tinnitus is managed through education, hearing assessment, cognitive behavioral therapy, hearing aids when indicated, selected sound strategies, and attention to sleep and mood. Routine drug or supplement cures are not promised.
+- The current AAO-HNS guideline directory identifies a tinnitus update as in development. The module therefore avoids presenting the older guideline as newly updated and will be reviewed when the replacement is published.
+- Goodnotes was retried during the preceding source audit, but macOS still reported the session as locked. Any dedicated lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
