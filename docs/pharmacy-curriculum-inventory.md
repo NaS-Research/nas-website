@@ -1087,7 +1087,7 @@ Target modules:
 2. Menopausal Hormone Therapy (`built`, 100 question bank; 61-page dedicated Goodnotes lecture reconciled)
 3. Benign Prostatic Hyperplasia (`built`, 104 question bank; dedicated Goodnotes lecture reconciliation pending)
 4. Erectile Dysfunction
-5. Urinary Incontinence
+5. Urinary Incontinence (`built`, 104 question bank; dedicated Goodnotes lecture reconciliation pending)
 6. Osteoporosis
 7. Genitourinary Medicinal Chemistry
 
@@ -1123,6 +1123,7 @@ Completed production modules:
 5. Pregnancy and Lactation Pharmacotherapy
 6. Menopausal Hormone Therapy
 7. Benign Prostatic Hyperplasia
+8. Urinary Incontinence
 
 The menstrual and gynecologic module includes menstrual assessment, PALM-COEIN classification, acute abnormal uterine bleeding, chronic heavy menstrual bleeding, dysmenorrhea, premenstrual disorders, endometriosis, and uterine fibroids. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 100-question assessment bank.
 
@@ -1135,6 +1136,8 @@ The pregnancy and lactation module includes pregnancy context, maternal pharmaco
 The menopausal hormone therapy module includes the menopausal transition, vasomotor neurobiology, estrogen pharmacology and routes, progestogen regimens, endometrial protection, bleeding surveillance, nonhormonal vasomotor treatment, genitourinary syndrome, risk stratification, prevention boundaries, and longitudinal reassessment. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 100-question assessment bank. Desktop and 390 pixel mobile layouts, ten-question assessment launch, fresh question sampling, answer randomization, scoring, explanations, ten remediation links, an overflow-free mobile layout, and the production build were verified on August 25, 2026.
 
 The benign prostatic hyperplasia module includes LUTS terminology, transition-zone biology, initial evaluation, red-flag triage, conservative care, alpha blockers, 5-alpha-reductase inhibitors, tadalafil, persistent storage symptoms, acute retention, procedural selection, and longitudinal medication management. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 104-question assessment bank. Desktop and 390 pixel mobile layouts, ten-question sampling without repetition, a fresh subsequent attempt, randomized answer support, valid remediation links, an overflow-free mobile layout, zero browser console errors, and the 403-page production build were verified on August 25, 2026. The complete RxPrep 2023 BPH chapter was reviewed visually. The dedicated Goodnotes lecture remains pending because the Mac was locked during this build and will receive a documented reconciliation pass when access is restored.
+
+The urinary incontinence module includes urgency, stress, mixed, overflow, functional, and continuous leakage patterns; initial evaluation and red-flag triage; bladder neurophysiology; bladder and pelvic-floor training; antimuscarinics; beta-3 agonists; combination therapy; onabotulinumtoxinA; tibial and sacral neuromodulation; stress-incontinence support; nocturnal polyuria; and desmopressin safety. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 104-question assessment bank. Desktop and 390 pixel mobile layouts, ten-question sampling without repetition, a fresh subsequent attempt, randomized answer support, valid remediation links, an overflow-free mobile layout, zero browser console errors, and the 404-page production build were verified on August 25, 2026. The complete six-page RxPrep 2023 urinary-incontinence chapter was reviewed visually. The dedicated Goodnotes lecture remains pending because the Mac was locked during this build and will receive a documented reconciliation pass when access is restored.
 
 Current guidance reconciliations:
 
@@ -1166,6 +1169,12 @@ Current guidance reconciliations:
 - Tadalafil is taught as the 5 mg once-daily BPH regimen, with nitrate and guanylate-cyclase stimulator contraindications, renal boundaries, vasodilator interactions, and the current 26-week limit when initiating it with finasteride.
 - Persistent storage symptoms require a distinct bladder and emptying assessment. Current EAU guidance advises against alpha blocker plus antimuscarinic therapy when post-void residual exceeds 150 mL.
 - Acute urinary retention requires prompt decompression. For BPH-related retention, current AUA guidance supports oral alpha blockade for at least three days before a trial without catheter when clinically appropriate.
+- The 2024 AUA and SUFU OAB guideline replaces the older rigid step ladder with shared decisions across noninvasive, pharmacologic, and minimally invasive categories. Bladder training and behavioral therapy remain core options, but a patient need not fail every oral drug before discussing a procedure.
+- Chronic antimuscarinic exposure now includes an explicit cognitive-impairment and dementia-risk discussion. Molecule and formulation can modify central exposure, but no antimuscarinic is presented as cognitively risk free.
+- Mirabegron and vibegron are taught as distinct beta-3 agonists. Mirabegron includes blood-pressure, CYP2D6, renal, and hepatic considerations; vibegron includes digoxin, administration, angioedema, and current BPH-associated OAB labeling.
+- Current onabotulinumtoxinA labeling requires a retention and catheterization plan, baseline residual assessment, infection screening, and post-treatment residual monitoring. Botulinum toxin units are product specific.
+- The older RxPrep suggestion of sympathomimetic or duloxetine treatment for female stress incontinence is not converted into routine US care. No oral medication is FDA approved in the United States specifically for female stress urinary incontinence.
+- Sublingual desmopressin is restricted to confirmed nocturnal polyuria with sex-specific dosing, strict fluid restriction, baseline and early repeat serum sodium monitoring, and full boxed-warning contraindication screening.
 
 Deferred into focused modules:
 
