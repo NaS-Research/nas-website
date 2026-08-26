@@ -1878,6 +1878,25 @@ Current source reconciliations:
 - Retired pregnancy letters are excluded. Reproductive decisions use product-specific evidence, route, exposed surface, timing, weight, alternatives, lactation, and patient goals.
 - Goodnotes remains unavailable because the Mac session is locked. Any dedicated lecture will receive a documented reconciliation pass after manual unlock.
 
+### Minor Wound Assessment and First Aid
+
+The minor wound assessment and first-aid module separates cuts, lacerations, abrasions, punctures, hemorrhage, contamination, healing biology, moist covered care, topical stewardship, tetanus prevention, high-risk wounds, infection, delayed healing, and follow-up. It contains nine focused lessons, nine original interactive diagrams, nine embedded checks, and a 112-question assessment bank across 28 concepts and four reasoning levels. The 450-page production build, desktop layout, 390 pixel phone layout, overflow-free responsive diagrams, ten-question sampling, scoring, ten remediation links, and a subsequent attempt with zero repeated questions were verified on August 26, 2026.
+
+Current source reconciliations:
+
+- The wound-care portion of RxPrep 2023 was reviewed for wound types, bleeding control, cleansing, dressings, topical products, tetanus prevention, infection, and referral. Its prose, tables, and questions were not reproduced.
+- Dry, uncovered wound care is retired. Current dermatology guidance favors gentle cleaning, plain petroleum when appropriate, and a clean covered environment that supports moist healing.
+- Routine topical antibiotics are not presented as necessary for uncomplicated minor wounds. Their contact dermatitis and stewardship costs are weighed against plain petroleum and appropriate follow-up.
+- Irrigation, visible debris removal, and clinician-directed debridement are separated from harsh antiseptic exposure inside viable tissue.
+- Uncontrolled bleeding, suspected arterial injury, deep or gaping wounds, loss of sensation or movement, retained foreign bodies, contaminated punctures, and injury near the eye, hand, joint, tendon, nerve, or vessel receive explicit escalation pathways.
+- Current CDC tetanus guidance replaces memorized legacy schedules. Clean minor wounds and dirty or major wounds use different booster thresholds, and tetanus immune globulin is never used for clean minor wounds.
+- Completed primary vaccination with a last tetanus dose less than five years ago requires no booster for any wound. Clean minor wounds use a ten-year threshold, while dirty or major wounds use a five-year threshold.
+- Tetanus immune globulin is reserved for dirty or major wounds in patients with an unknown, absent, or incomplete primary series, and in selected patients with HIV or severe immunodeficiency. Antibiotics are not used to prevent tetanus.
+- Puncture wounds, hand and joint injuries, diabetes, vascular disease, immune compromise, anticoagulation, and impaired healing change the threshold for clinician evaluation and follow-up.
+- Infection surveillance distinguishes expected local healing from spreading erythema, increasing pain, purulence, fever, lymphangitic streaking, loss of function, systemic illness, and delayed healing.
+- Retired pregnancy letters are excluded. Reproductive and lactation decisions use product-specific evidence, route, exposed area, timing, alternatives, and patient goals.
+- Goodnotes was retried after the user reported access restored, but the Mac session still returned a locked state. Any dedicated lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
