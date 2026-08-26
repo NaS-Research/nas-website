@@ -1363,6 +1363,19 @@ Target modules presently supported:
 - Browser verification: 1280 pixel desktop and 390 pixel mobile production rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, ten questions per attempt, a second sample with zero overlap, scoring with ten explanations and ten remediation links, and zero browser console warnings or errors.
 - Build verification: Next.js production build passed August 26, 2026 with 425 static pages generated.
 
+### Rheumatoid Arthritis
+
+- Primary course source: RxPrep 2023, Chapter 46 rheumatoid arthritis section, PDF pages 646 through 651, printed pages 638 through 643. Every page was rendered and reviewed visually before synthesis.
+- Current verification sources: 2021 American College of Rheumatology rheumatoid arthritis treatment guideline; 2022 EULAR rheumatoid arthritis management update; 2022 ACR integrative rheumatoid arthritis guideline and vaccination guideline; FDA JAK inhibitor safety communication; and current DailyMed labeling for methotrexate, hydroxychloroquine, leflunomide, adalimumab, rituximab, tocilizumab, and upadacitinib.
+- Learning structure: ten focused lessons, ten native mechanism and clinical-decision diagrams, and ten embedded knowledge checks.
+- Assessment: 148 original questions across 37 distinct concept groups and four difficulty levels. Each attempt samples ten questions without replacement and randomizes answer order.
+- Source reconciliation: treat-to-target monitoring and reassessment timelines were made explicit; methotrexate was positioned as the preferred anchor for many patients with moderate or high disease activity and its weekly schedule was emphasized; folate supplementation, route optimization, and monitoring were integrated; long-term glucocorticoid use was discouraged; current hydroxychloroquine retinal-risk dosing, leflunomide elimination, infection screening, hepatitis B precautions, and IL-6 marker suppression were incorporated; FDA JAK inhibitor boxed risks and current United States sequencing were added; vaccine timing was reconciled with ACR guidance; remission tapering was distinguished from complete DMARD cessation; and retired pregnancy letters were excluded.
+- Scope boundary: systemic lupus erythematosus, multiple sclerosis, celiac disease, myasthenia gravis, Sjogren syndrome, and psoriasis remain in separate focused modules so each disease retains its own pathophysiology and therapeutic framework.
+- Goodnotes note: dedicated rheumatoid arthritis lecture reconciliation remains pending because the Mac remained locked when local Goodnotes access was retried on August 26, 2026. The RxPrep and current-source synthesis is complete and will receive a documented lecture pass when access is restored.
+- Automated verification: 148 unique question IDs, 37 concept groups, four difficulty levels, no duplicate answer-choice sets, valid links to all ten lessons, ten distinct diagrams, ten embedded checks, twelve current references, and no em dash or en dash characters in public module prose.
+- Browser verification: 1280 pixel desktop and 390 pixel mobile production rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, twelve current reference links, ten questions per attempt, a second sample with zero overlap, scoring with ten explanations and ten remediation links, and zero browser console warnings or errors.
+- Build verification: Next.js production build passed August 26, 2026 with 426 static pages generated.
+
 ### DAST IV reproductive and gynecologic sequence
 
 Reviewed source documents:
