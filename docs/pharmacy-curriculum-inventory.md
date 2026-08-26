@@ -1962,6 +1962,30 @@ Current source reconciliations:
 - Retired pregnancy letters are excluded. Reproductive and lactation decisions use the specific product, route, potency, area, duration, timing, alternatives, and patient goals.
 - Goodnotes remains pending because the Mac session was still locked at the latest retry. Any dedicated Toxicodendron lecture will receive a documented reconciliation pass after manual unlock.
 
+### Topical Corticosteroid Pharmacology and Safe Use
+
+The topical corticosteroid module separates glucocorticoid receptor signaling, inflammatory transcription, potency classification, vehicle-dependent delivery, body-site selection, diagnostic uncertainty, fingertip-unit dosing, application schedules, local toxicity, systemic absorption, HPA-axis suppression, pediatric exposure, older and fragile skin, pregnancy and lactation, monitoring, and steroid-sparing care. It contains ten focused lessons, ten original interactive diagrams, ten embedded checks, and a 116-question assessment bank across 28 concepts, four reasoning levels, and four fingertip-unit calculations. The 454-page production build, desktop layout, 390 pixel phone layout, overflow-free responsive diagrams, ten-question sampling, scoring, ten remediation links, and a subsequent attempt with zero repeated questions were verified on August 26, 2026.
+
+Current source reconciliations:
+
+- The inflammation, rash, topical steroid, potency, vehicle, adverse-effect, and fingertip-unit portions of RxPrep 2023 Chapter 39 were reviewed. Their prose, tables, potency chart, and questions were not reproduced.
+- A topical corticosteroid name is not assigned one universal potency. Molecule, concentration, vehicle, assay, and exact product determine classification, so formulation verification precedes substitution or counseling.
+- The source vehicle hierarchy is replaced by a delivery model. Ointments hydrate and occlude, creams improve acceptance, and solutions, foams, gels, oils, sprays, and shampoos can improve hair-bearing access, but each exact product retains its own potency and safety profile.
+- Thin skin, folds, eyelids, face, groin, and genital sites receive a larger safety margin. Palms, soles, and lichenified plaques can require different delivery, but thick skin does not justify uncontrolled potency or duration.
+- Infection and diagnostic mimics are assessed before escalation. Tinea incognito, bacterial or viral progression, acneiform eruption, rosacea, perioral dermatitis, and contact allergy can appear quieter while the underlying process worsens.
+- The fingertip unit replaces vague use-sparingly language. One adult unit is the semisolid expressed from the distal index-finger crease to the tip through a standard nozzle, is approximately one-half gram, and covers about two percent adult body surface area.
+- Course quantities are calculated from units per application, applications per day, and treatment days, then compared with product maximums and package size. Nozzle, formulation, hand, and waste make the result an approximation rather than an exact mass.
+- Once- or twice-daily application is common, but the source's potency-based frequency rule is not treated as universal. Exact product labeling, disease evidence, treated site, response, and maintenance plan determine the schedule.
+- Every high-intensity course includes a control target, stop or step-down point, barrier plan, and reassessment trigger. Continuing until the tube is empty is explicitly rejected.
+- Local toxicity includes atrophy, striae, telangiectasia, purpura, pigment change, acneiform and periorificial eruption, infection masking, delayed healing, and allergy to the drug or vehicle.
+- Current triamcinolone and fluticasone labeling supports a cumulative systemic-risk model that includes potency, treated area, duration, occlusion, barrier disruption, multiple corticosteroid products, childhood, and impaired organ reserve.
+- Current clobetasol emollient cream labeling is used as a product-specific example. Responsive dermatosis treatment is generally limited to two consecutive weeks, total use must not exceed 50 grams per week, and face, groin, axillae, atrophic skin, age, and indication restrictions remain visible. These numbers are not generalized to every clobetasol formulation.
+- HPA-axis suppression, Cushing features, hyperglycemia, glucosuria, growth effects, and glucocorticoid insufficiency after withdrawal are linked to total exposure. Laboratory assessment is proportional to risk rather than performed indiscriminately.
+- Children are treated as a higher systemic-exposure group because their skin surface area is larger relative to body mass, and diapers can create unintended occlusion. Older and already atrophic skin receives a wider structural safety margin.
+- Retired pregnancy letters are excluded. Pregnancy and lactation decisions use exact product evidence, potency, area, duration, site, pregnancy timing, feeding, and prevention of infant skin or oral contact.
+- Current AAD and AAAAI/ACAAI guidance supports moisturizers, topical corticosteroids, and indicated nonsteroid therapies. Calcineurin inhibitors, PDE4 inhibitors, JAK inhibitors, aryl hydrocarbon receptor agonists, phototherapy, and systemic options are presented only within disease-, age-, site-, and safety-specific roles.
+- Goodnotes remains pending because the Mac session was locked at the latest retry. Any dedicated topical pharmacology lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
