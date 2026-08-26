@@ -1337,6 +1337,19 @@ Target modules presently supported:
 - Browser verification: 1280 pixel desktop and 390 pixel mobile production rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, thirteen current reference links, ten questions per attempt, a second sample with zero overlap, scoring with ten explanations and ten remediation links, and zero browser console warnings or errors.
 - Build verification: Next.js production build passed August 26, 2026 with 423 static pages generated.
 
+### Tobacco Use Disorder and Cessation
+
+- Primary course source: RxPrep 2023, Chapter 43, Tobacco Cessation, PDF pages 606 through 610. Every page was rendered and reviewed visually before synthesis.
+- Current verification sources: current USPSTF adult and pregnancy recommendation; 2020 ATS adult pharmacotherapy guideline; 2025 ATS adolescent nicotine guideline; CDC cessation, medication, quitline, vaping, and Surgeon General resources; current DailyMed labeling for varenicline, bupropion SR, nicotine oral inhaler, and nicotine nasal spray; and MHRA tobacco-smoke interaction guidance.
+- Learning structure: ten focused lessons, ten native mechanism and clinical-decision diagrams, and ten embedded knowledge checks.
+- Assessment: 160 original questions across 40 distinct concept groups and four difficulty levels. Each attempt samples ten questions without replacement and randomizes answer order.
+- Source reconciliation: pack-years were separated from current dependence; combination NRT was framed as baseline patch plus rapid rescue; stable cardiovascular disease was not treated as a universal NRT exclusion; current varenicline labeling replaced a rigid quit-date rule and the outdated claim that every seizure history is a formal contraindication; current bupropion SR contraindications, dose spacing, formulation integrity, and blood-pressure monitoring were preserved; the 2025 ATS adolescent guideline replaced a blanket no-medication rule; USPSTF pregnancy evidence boundaries replaced routine adult treatment and obsolete letter categories; psychiatric comorbidity was separated from treatment denial; no e-cigarette was presented as FDA approved for cessation; and tobacco-smoke CYP1A2 induction was distinguished from nicotine exposure.
+- Scope boundary: detailed lung-cancer screening, chronic disease management, vaccination schedules, and treatment of non-nicotine substance use remain in their focused modules.
+- Goodnotes note: dedicated lecture reconciliation remains pending while direct Goodnotes export is unavailable. The RxPrep and current-source synthesis is complete and will receive a documented pass when access is restored.
+- Automated verification: 160 unique question IDs, 40 concept groups, four difficulty levels, no duplicate answer-choice sets, valid lesson links, ten distinct diagrams, ten embedded checks, thirteen current references, and no em dash or en dash characters in public module prose.
+- Browser verification: 1280 pixel desktop and 390 pixel mobile production rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, thirteen current reference links, ten questions per attempt, a second sample with zero overlap, scoring with ten explanations and ten remediation links, and zero browser console warnings or errors.
+- Build verification: Next.js production build passed August 26, 2026 with 424 static pages generated.
+
 ### DAST IV reproductive and gynecologic sequence
 
 Reviewed source documents:
