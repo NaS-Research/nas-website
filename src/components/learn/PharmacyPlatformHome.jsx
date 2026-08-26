@@ -3,16 +3,21 @@ import Image from "next/image";
 
 const platformAreas = [
   {
-    number: "01",
-    label: "Interactive",
+    label: "Learn",
+    title: "Curriculum",
+    description: "Move through focused modules that connect foundational science, therapeutics, patient care, and current evidence.",
+    href: "/learn/pharmacy#curriculum",
+    action: "View the curriculum",
+  },
+  {
+    label: "Explore",
     title: "Visual Atlas",
-    description: "Rotate anatomical models, focus structures, and change the lens from anatomy to pharmacology, clinical care, safety, and interactions.",
+    description: "Inspect anatomy and connect structure to mechanism, treatment, and safety through interactive models.",
     href: "/learn/pharmacy/atlas",
     action: "Open the atlas",
     featured: true,
   },
   {
-    number: "02",
     label: "Reference",
     title: "Drug Library",
     description: "Search medications, review structured profiles, recognize product appearance, and move into current official labeling.",
@@ -20,26 +25,9 @@ const platformAreas = [
     action: "Search medications",
   },
   {
-    number: "03",
-    label: "Learn",
-    title: "Study Guides",
-    description: "Read connected lessons built for the web, with objectives, comparisons, sources, and knowledge checks.",
-    href: "/learn/pharmacy#learning-library",
-    action: "Browse the library",
-  },
-  {
-    number: "04",
-    label: "Organize",
-    title: "Curriculum",
-    description: "Follow a pharmacy-school sequence from drug action through organ systems, infectious disease, oncology, and acute care.",
-    href: "/learn/pharmacy#curriculum",
-    action: "View the curriculum",
-  },
-  {
-    number: "05",
     label: "Practice",
     title: "Cumulative Review",
-    description: "Move between mechanisms, monitoring, counseling, and patient cases, then reveal the reasoning behind every answer.",
+    description: "Draw a fresh set from every module, work through direct questions and patient cases, then review the reasoning.",
     href: "/learn/pharmacy/review",
     action: "Start the review",
   },
@@ -51,25 +39,24 @@ export default function PharmacyPlatformHome() {
       <header className="pharmacy-platform__heading">
         <div>
           <p className="nas-section-label">Learning workspace</p>
-          <h2 id="pharmacy-platform-title">Choose what the question requires.</h2>
+          <h2 id="pharmacy-platform-title">Learn, see, and test.</h2>
         </div>
-        <p>Read deeply, inspect anatomy, find a medication, or test the idea. Each tool supports the same connected body of knowledge.</p>
+        <p>Follow the curriculum, inspect anatomy, find a medication, or test what you know. Every tool connects back to the same body of knowledge.</p>
       </header>
       <div className="pharmacy-platform__grid">
         {platformAreas.map((area) => (
           <Link href={area.href} className={area.featured ? "pharmacy-platform-card is-featured" : "pharmacy-platform-card"} key={area.title}>
-            <div className="pharmacy-platform-card__topline"><span>{area.number}</span><span>{area.label}</span></div>
+            <div className="pharmacy-platform-card__topline"><span>{area.label}</span></div>
             {area.featured && (
               <div className="pharmacy-platform-card__visual" aria-hidden="true">
-                <Image src="/learn/models/realistic-heart-preview.jpeg" alt="" fill loading="eager" sizes="(min-width: 70rem) 45vw, 80vw" />
-                <span className="pharmacy-platform-card__orbit pharmacy-platform-card__orbit--one" />
-                <span className="pharmacy-platform-card__orbit pharmacy-platform-card__orbit--two" />
+                <Image src="/learn/models/realistic-heart-preview-hd.jpeg" alt="" fill loading="eager" sizes="(min-width: 48rem) 50vw, 100vw" />
               </div>
             )}
             <div className="pharmacy-platform-card__body">
               <h3>{area.title}</h3>
               <p>{area.description}</p>
               <strong>{area.action} <span aria-hidden="true">↗</span></strong>
+              {area.featured && <small>Heart model by neshallads · CC BY 4.0</small>}
             </div>
           </Link>
         ))}

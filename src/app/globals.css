@@ -4412,6 +4412,7 @@ body {
 
 .pharmacy-platform__grid {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   border-top: 1px solid var(--nas-line);
   border-left: 1px solid var(--nas-line);
 }
@@ -4430,7 +4431,7 @@ body {
 }
 
 .pharmacy-platform-card:hover { background: #0a0908; }
-.pharmacy-platform-card.is-featured { min-height: 27rem; }
+.pharmacy-platform-card.is-featured { min-height: 24rem; }
 .pharmacy-platform-card__topline {
   position: absolute;
   z-index: 2;
@@ -4438,7 +4439,7 @@ body {
   right: 1.5rem;
   left: 1.5rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   color: #766c60;
   font-size: 0.58rem;
   letter-spacing: 0.12em;
@@ -4475,36 +4476,34 @@ body {
   font-weight: 520;
 }
 
+.pharmacy-platform-card__body small {
+  display: block;
+  margin-top: 0.75rem;
+  color: #5f5a55;
+  font-size: 0.56rem;
+  letter-spacing: 0.04em;
+}
+
 .pharmacy-platform-card__visual {
   position: absolute;
-  inset: 8% 0 0 38%;
+  inset: 0 0 0 38%;
   overflow: hidden;
+  background: #050505;
 }
 
 .pharmacy-platform-card__visual::after {
   position: absolute;
   inset: 0;
   content: "";
-  background: linear-gradient(90deg, #050505 0%, transparent 38%), linear-gradient(0deg, #050505 0%, transparent 48%);
+  background: linear-gradient(90deg, #050505 0%, rgba(5, 5, 5, 0.72) 20%, transparent 48%), linear-gradient(0deg, #050505 0%, transparent 34%);
   pointer-events: none;
 }
 
 .pharmacy-platform-card__visual img {
   object-fit: cover;
   object-position: center;
-  filter: saturate(0.86) contrast(1.08) brightness(0.82);
+  filter: saturate(0.92) contrast(1.12) brightness(0.8);
 }
-
-.pharmacy-platform-card__orbit {
-  position: absolute;
-  z-index: 1;
-  inset: 11%;
-  border: 1px solid rgba(222, 179, 119, 0.14);
-  border-radius: 50%;
-  transform: rotate(-18deg);
-}
-
-.pharmacy-platform-card__orbit--two { inset: 25% 3%; transform: rotate(26deg); }
 
 .pharmacy-curriculum,
 .learning-library { scroll-margin-top: 7rem; }
@@ -8896,14 +8895,6 @@ body {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .pharmacy-platform__grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .pharmacy-platform-card.is-featured {
-    grid-column: span 2;
-  }
-
   .drug-library__toolbar {
     grid-template-columns: minmax(0, 1fr) auto;
     align-items: center;
@@ -9037,16 +9028,14 @@ body {
 }
 
 @media (min-width: 70rem) {
-  .pharmacy-platform__grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .pharmacy-platform-card.is-featured {
-    grid-column: span 2;
-  }
-
   .pharmacy-curriculum__grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 47.99rem) {
+  .pharmacy-platform__grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -9111,8 +9100,8 @@ body {
   }
 
   .pharmacy-platform-card__visual {
-    inset: 6% -8% 19% 48%;
-    opacity: 0.72;
+    inset: 0 -18% 24% 38%;
+    opacity: 0.82;
   }
 }
 
