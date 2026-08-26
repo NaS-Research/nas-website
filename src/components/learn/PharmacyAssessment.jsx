@@ -20,12 +20,40 @@ function prepareQuestion(question) {
   };
 }
 
+function questionGroup(question) {
+  return String(question.id || question.question).replace(/-(principle|application|safety|case)$/, "");
+}
+
+function sampleDistinctConcepts(questions, count) {
+  const selected = [];
+  const groups = new Set();
+  const shuffled = shuffle(questions);
+
+  for (const question of shuffled) {
+    const group = questionGroup(question);
+    if (groups.has(group)) continue;
+    selected.push(question);
+    groups.add(group);
+    if (selected.length === count) return selected;
+  }
+
+  for (const question of shuffled) {
+    if (selected.includes(question)) continue;
+    selected.push(question);
+    if (selected.length === count) break;
+  }
+
+  return selected;
+}
+
 function createAttempt(questions, questionCount, previousIds) {
   const count = Math.min(questionCount, questions.length);
-  let selected = shuffle(questions).slice(0, count);
+  let selected = sampleDistinctConcepts(questions, count);
   const selectionKey = selected.map((question) => question.id).sort().join("|");
   if (questions.length > count && selectionKey === previousIds) {
-    selected = [...selected.slice(1), shuffle(questions.filter((question) => !selected.includes(question)))[0]];
+    const remainingGroups = new Set(selected.slice(1).map(questionGroup));
+    const replacement = shuffle(questions.filter((question) => !selected.includes(question) && !remainingGroups.has(questionGroup(question))))[0];
+    selected = replacement ? [...selected.slice(1), replacement] : sampleDistinctConcepts(questions, count);
   }
   return shuffle(selected.map(prepareQuestion));
 }

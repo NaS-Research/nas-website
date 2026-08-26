@@ -1142,7 +1142,7 @@ Target modules presently supported:
 
 1. Gastroesophageal Reflux Disease (`built`, 120 question bank; Goodnotes reconciliation pending)
 2. Peptic Ulcer Disease (`built`, 120 question bank; Goodnotes reconciliation pending)
-3. Irritable Bowel Syndrome
+3. Irritable Bowel Syndrome (`built`, 124 question bank; Goodnotes reconciliation pending)
 
 ### Gastroesophageal Reflux Disease
 
@@ -1169,6 +1169,20 @@ Target modules presently supported:
 - Automated verification: 120 unique question IDs, no duplicate answer choices, valid lesson links, ten diagrams, and no em dash or en dash characters in public module prose
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, ten questions per attempt, a different second sample, scoring with ten explanations and ten remediation links, and responsive restoration after testing
 - Build verification: Next.js production build passed August 26, 2026 with 411 static pages generated
+
+### Irritable Bowel Syndrome
+
+- RxPrep source: NAPLEX 2023 Chapter 73 constipation and diarrhea sections, PDF pages 921 through 930, visually reviewed in full
+- Current references reviewed: 2021 ACG IBS guideline, 2022 AGA IBS-C and IBS-D pharmacology guidelines, and current DailyMed labeling for linaclotide, plecanatide, lubiprostone, tenapanor, rifaximin, eluxadoline, alosetron, and dicyclomine
+- Learning structure: ten lessons, ten native mechanism and decision diagrams, and ten embedded knowledge checks
+- Assessment: 124 original questions spanning gut-brain biology, positive diagnosis, alarm features, targeted testing, medication causes, Bristol-based subtypes, soluble fiber, low-FODMAP care, gut-directed behavioral therapy, pain pharmacology, IBS-C and IBS-D treatment, product-specific safety, pregnancy and lactation review, stop rules, and longitudinal reassessment; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: older relief-with-defecation wording was replaced by Rome IV recurrent-abdominal-pain criteria; celiac and inflammatory testing were assigned to the appropriate diarrhea phenotype; a limited low-FODMAP trial now includes reintroduction; PEG is distinguished as a stool-directed treatment rather than reliable global IBS-C therapy; ACG and AGA differences on antispasmodics are explicit; current linaclotide labeling includes IBS-C from age 7 while retaining the contraindication below age 2; and every secretagogue, rifaximin, eluxadoline, and alosetron regimen follows its current label
+- Scope boundary: chronic idiopathic constipation, opioid-induced constipation, acute infectious diarrhea, inflammatory bowel disease, and pelvic-floor disorders remain distinct conditions rather than being absorbed into IBS
+- Goodnotes note: a new reconciliation attempt on August 26, 2026 still returned a locked-Mac state despite the reported access restoration; the dedicated PUD, GERD, and IBS 2026 lecture remains pending and will receive a documented pass when the desktop session is manually unlocked
+- Automated verification: 124 unique question IDs, no duplicate answer choices, valid lesson links, four difficulty levels, ten diagrams, and no em dash or en dash characters in public module prose
+- Assessment-engine improvement: sampling now prefers distinct concept groups, preventing multiple principle, application, safety, or case variants of the same concept from crowding one attempt when the bank has sufficient breadth
+- Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, ten distinct concepts per attempt, a different second sample, scoring with ten explanations and ten remediation links, and responsive restoration after testing
+- Build verification: Next.js production build passed August 26, 2026 with 412 static pages generated
 
 ### DAST IV reproductive and gynecologic sequence
 
