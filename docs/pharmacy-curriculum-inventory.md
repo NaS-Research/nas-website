@@ -1795,6 +1795,25 @@ Current source reconciliations:
 - The current AAO-HNS guideline directory identifies a tinnitus update as in development. The module therefore avoids presenting the older guideline as newly updated and will be reviewed when the replacement is published.
 - Goodnotes was retried during the preceding source audit, but macOS still reported the session as locked. Any dedicated lecture will receive a documented reconciliation pass after manual unlock.
 
+### Acne
+
+The acne module follows the follicle from microcomedone formation through sebum, Cutibacterium acnes, inflammatory injury, nodules, pigment change, and scarring, then connects that biology to diagnosis, topical retinoids, benzoyl peroxide, topical antibiotics, azelaic and salicylic acids, clascoterone, oral antibiotics, hormonal therapy, isotretinoin, pregnancy, age, skin care, maintenance, and closed-loop follow-up. It contains nine focused lessons, nine original interactive diagrams, nine embedded checks, and a 108-question assessment bank across 27 concepts and four reasoning levels. The 446-page production build, desktop layout, 390 pixel phone layout, overflow-free responsive diagrams, ten-question sampling, scoring, ten remediation links, and a subsequent attempt with zero repeated questions were verified on August 26, 2026.
+
+Current source reconciliations:
+
+- The acne portion of RxPrep 2023 Chapter 39 was reviewed for morphology, pathogenesis, legacy severity framing, topical and systemic therapy, adverse effects, and counseling. Its prose, tables, and questions were not reproduced. Psoriasis remains in its existing dedicated module, while the rest of the broad skin chapter will be separated into additional focused modules.
+- The 2024 American Academy of Dermatology guideline replaces antibiotic-centered or rigid step tables with complementary mechanisms, benzoyl peroxide, topical retinoids, topical antibiotics, clascoterone, salicylic acid, azelaic acid, doxycycline, minocycline, sarecycline, combined oral contraceptives, spironolactone, and isotretinoin selected through disease and patient context.
+- Acne severity is not reduced to a lesion count. Nodules, scarring, trunk involvement, pigment change, pain, treatment failure, and psychosocial burden can justify earlier escalation.
+- Topical retinoids are differentiated by molecule, receptor selectivity, stability, vehicle, age, site, irritation, and reproductive context. They are applied to the acne-prone field because the microcomedone precedes a visible lesion.
+- Benzoyl peroxide is paired with topical or systemic antibiotics to support resistance prevention. Neither topical nor oral antibiotics are presented as indefinite monotherapy, and every systemic course has a response checkpoint and nonantibiotic maintenance plan.
+- Clascoterone is described precisely as a topical androgen receptor inhibitor whose exact acne mechanism is not fully established. Current labeling limits use to acne vulgaris in patients age 12 and older, directs twice-daily thin-layer use, and keeps local irritation, pediatric susceptibility, HPA axis suppression, and observed potassium signals visible.
+- Tetracycline counseling is product specific. Cation chelation, food, posture, photosensitivity, vestibular effects, organ function, pregnancy, swallowing, and intracranial hypertension risk are reviewed without treating every product as interchangeable.
+- Combined oral contraceptives retain full contraceptive eligibility, thrombosis, migraine, pressure, smoking, postpartum, interaction, and pregnancy-goal assessment. Spironolactone monitoring is individualized around kidney function, potassium risk, blood pressure, interacting medicines, and reproductive planning rather than one universal laboratory schedule.
+- Isotretinoin candidacy includes severe or treatment-refractory disease, scarring risk, and major psychosocial burden. Current FDA iPLEDGE requirements replace the older chapter workflow, and the February 2026 approved modifications are presented with their official implementation timing rather than as already active before that date.
+- Isotretinoin monitoring targets pregnancy prevention when applicable, lipids, liver context, mucocutaneous toxicity, headache and vision, mood, musculoskeletal symptoms, alcohol, vitamin A, tetracyclines, and other medicines. Expected dryness is separated from urgent symptoms.
+- Topical retinoids are avoided during pregnancy. Every prescription, OTC active, and cosmetic ingredient is reconciled because topical route alone does not establish reproductive safety.
+- Goodnotes was retried after the user reported access restored, but macOS still returned a locked-session state. Any dedicated acne lecture will receive a documented reconciliation pass after manual unlock, with conflicts flagged rather than silently imported.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
