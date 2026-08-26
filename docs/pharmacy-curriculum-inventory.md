@@ -1855,6 +1855,29 @@ Current source reconciliations:
 - Retired pregnancy letters are excluded. Reproductive decisions use product-specific human and animal evidence, route, area, timing, alternatives, lactation, fertility, and patient goals.
 - Goodnotes was retried after the user reported service restoration, but macOS still returned a locked-session state. Any dedicated lecture will receive a documented reconciliation pass after manual unlock.
 
+### Lice and Scabies
+
+The lice and scabies module separates head, body, and pubic lice from classic and crusted scabies, then connects arthropod habitat, life cycle, objective diagnosis, pediculicide selection, application technique, retreatment, contact management, proportionate environmental control, school inclusion, sexual-health care, classic scabies therapy, postscabetic itch, crusted disease, institutional outbreak control, special populations, and closed-loop failure analysis. It contains ten focused lessons, ten original interactive diagrams, ten embedded checks, and a 112-question assessment bank across 28 concepts and four reasoning levels. The 449-page production build, desktop layout, 390 pixel phone layout, overflow-free responsive diagrams, ten-question sampling, scoring, ten remediation links, and a subsequent attempt with zero repeated questions were verified on August 26, 2026.
+
+Current source reconciliations:
+
+- The lice and scabies section of RxPrep 2023 Chapter 39 was reviewed for organism distinctions, legacy products, age thresholds, application, retreatment, nit removal, household cleaning, permethrin, ivermectin, malathion, spinosad, and counseling. Its prose, tables, and questions were not reproduced.
+- Active head lice are anchored to a live crawling nymph or adult. Nits firmly attached near the scalp support recent infestation, while dandruff, debris, distant nits, and empty casings are not treated automatically.
+- Current CDC guidance rejects hygiene blame and no-nit school exclusion. A child need not leave school early and may return after appropriate treatment begins.
+- Environmental control is proportionate to off-host survival. Recently used clothing and bedding receive hot laundering, combs receive hot-water soaking, and relevant surfaces receive vacuuming. Exhaustive cleaning, fumigant sprays, and fogs are rejected.
+- Permethrin 1 percent and pyrethrins remain non-ovicidal or incompletely ovicidal options whose retreatment interrupts newly hatched lice. Allergy, age, resistance, hair preparation, saturation, contact time, and repeat timing are explicit.
+- Current OTC labeling replaces the older prescription-only framing for ivermectin lotion 0.5 percent. It begins at age six months, uses one dry-hair application, and is not repeated without clinician direction.
+- Current spinosad labeling is indication specific. Head lice treatment begins at age six months, covers dry scalp and hair for ten minutes, and repeats only for live lice at day seven. Scabies treatment begins at age four, covers neck to toes, dries before dressing, and remains at least six hours.
+- Malathion remains connected to age, partial ovicidal activity, long contact time, and serious flammability precautions while hair is wet. Electrical heat, smoking, and open flame are excluded.
+- Pubic lice trigger recent partner notification, synchronized treatment, avoidance of sexual contact until control, and evaluation for other sexually transmitted infections. Eyebrow and eyelash disease receives clinician-directed ocular care.
+- Body lice are localized primarily to clothing seams. Bathing, clean clothing changes, hot laundering, bedding, and access to hygiene and housing resources are the primary treatment system.
+- Current CDC scabies care confirms that no OTC product is approved. Permethrin 5 percent begins at age two months and uses comprehensive body coverage for eight to fourteen hours, with repeat application about a week later when needed.
+- Oral ivermectin for classic scabies remains off label. Expert use is two 200 microgram per kilogram doses with food seven to fourteen days apart, with unestablished safety below 15 kg and during pregnancy.
+- Residual itch is separated from active failure. Hypersensitivity can persist for several weeks, while new burrows, new papules, live organisms, untreated contacts, infection, or prolonged symptoms drive reassessment.
+- Crusted scabies is treated as a high-burden infection-control emergency. Specialist-directed oral ivermectin plus frequent topical permethrin, keratolysis, contact precautions, exposure tracking, and institutional coordination replace a routine single application.
+- Retired pregnancy letters are excluded. Reproductive decisions use product-specific evidence, route, exposed surface, timing, weight, alternatives, lactation, and patient goals.
+- Goodnotes remains unavailable because the Mac session is locked. Any dedicated lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
