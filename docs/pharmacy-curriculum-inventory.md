@@ -1600,9 +1600,27 @@ Current source reconciliations:
 
 Deferred into focused modules:
 
-- Cervicitis and pelvic inflammatory disease
 - Gynecologic oncology
 - Pelvic organ prolapse and fistula care
+
+### Cervicitis and Pelvic Inflammatory Disease
+
+The cervicitis and pelvic inflammatory disease module separates lower-tract cervical inflammation from ascending upper-tract disease and then reconnects them through one diagnostic and therapeutic system. It includes cervical exudate and friability; bleeding and discharge presentations; chlamydia, gonorrhea, trichomoniasis, herpes, and Mycoplasma genitalium; low-value organism testing to avoid; BV and trichomoniasis overlap; PID screening in cervicitis; NAAT selection; risk-based presumptive cervicitis treatment; doxycycline and gonorrhea coverage; partner management; three-month retesting; genital tract anatomy; polymicrobial ascent; tubal injury; infertility, ectopic pregnancy, and chronic pelvic pain; the low PID treatment threshold; minimum and supportive diagnostic criteria; surgical and obstetric emergencies; hospitalization criteria; tubo-ovarian abscess; the 72-hour response checkpoint; outpatient ceftriaxone, doxycycline, and metronidazole; the ceftriaxone weight qualifier; administration and adherence; recommended and alternative parenteral regimens; oral bioavailability; IV-to-oral transition; total duration; persistent disease; M. genitalium resistance; pregnancy; IUD management; adolescence; HIV; beta-lactam allergy; temporary abstinence; and long-term reproductive follow-up. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 132-question assessment bank across 33 concepts and four reasoning levels.
+
+Current source reconciliations:
+
+- The RxPrep 2023 sexually transmitted infection treatment tables were visually reviewed for chlamydia, gonorrhea, trichomoniasis, and related medication context. They do not supply a complete upper-tract PID framework, so the module uses current CDC primary guidance for diagnosis, disposition, regimen architecture, partner care, and follow-up.
+- Cervicitis is anchored to mucopurulent endocervical exudate and easily induced sustained endocervical bleeding. Chlamydia and gonorrhea remain common identified causes, while trichomoniasis, primary genital herpes, and M. genitalium remain associated causes. Routine Ureaplasma, Mycoplasma hominis, and group B streptococcal genital testing is absent.
+- Every cervicitis assessment screens for upper-tract disease. A negative endocervical gonorrhea or chlamydia NAAT does not exclude PID, and a negative trichomonas wet mount does not end evaluation when suspicion remains.
+- Presumptive cervicitis therapy depends on age, exposure, gonorrhea prevalence, NAAT access, and follow-up reliability. Recommended doxycycline is separated from the 14-day, broad-spectrum PID regimen, and detected BV or trichomoniasis receives syndrome-specific treatment.
+- PID uses a deliberately sensitive clinical threshold. One or more of cervical motion, uterine, or adnexal tenderness can justify presumptive treatment in an at-risk patient with pelvic pain and no better identified cause, while ectopic pregnancy, appendicitis, torsion, abscess, and other urgent alternatives remain active.
+- Hospitalization criteria include pregnancy, tubo-ovarian abscess, severe illness or temperature above 38.5 C, inability to tolerate or complete outpatient therapy, inability to exclude a surgical emergency, and outpatient nonresponse. Age alone is not treated as a hospitalization criterion for adolescents.
+- Recommended outpatient therapy is ceftriaxone 500 mg IM once plus doxycycline 100 mg twice daily for 14 days with metronidazole 500 mg twice daily for 14 days. The 1 g ceftriaxone adjustment is restricted to patients weighing at least 150 kg who have documented gonococcal infection.
+- Recommended inpatient therapy includes ceftriaxone 1 g IV every 24 hours plus doxycycline and metronidazole every 12 hours. Oral doxycycline and metronidazole bioavailability is recognized, transition follows 24 to 48 hours of clinical improvement, and total therapy remains 14 days.
+- Standard PID regimens are not treated as reliably effective against M. genitalium. Selected recurrent cervicitis receives FDA-cleared NAAT and resistance-aware treatment, single-dose azithromycin is rejected for M. genitalium, and routine moxifloxacin expansion to every PID case is avoided because directed-treatment benefit remains uncertain.
+- Pregnancy uses narrative risk and requires hospital, IV, and specialist care for suspected PID. An IUD generally remains during initial treatment with reassessment at 48 to 72 hours. Retired pregnancy letters are absent.
+- Clinical improvement is measured within 72 hours. Partners from the preceding 60 days receive chlamydia and gonorrhea evaluation and presumptive therapy, temporary abstinence lasts through patient completion, symptom resolution, and partner treatment, and chlamydial or gonococcal PID is retested at three months.
+- Goodnotes was rechecked before this build after access was reported restored, but macOS still presented the desktop session as locked. A dedicated cervicitis or PID lecture will receive a documented reconciliation pass when the session is manually unlocked.
 
 ## First production sequence
 
