@@ -2048,6 +2048,10 @@ The Seborrheic Dermatitis and Dandruff module connects multifactorial disease bi
 
 The Alopecia and Hair Loss module connects follicular cycling, shedding and breakage, patterned miniaturization, diagnostic morphology, topical minoxidil activation and technique, finasteride medicinal chemistry and safety, off-label systemic options, telogen and anagen effluvium, medication causality, supplement stewardship, alopecia areata, approved JAK inhibitors, traction, tinea capitis, scarring disease, longitudinal monitoring, and psychosocial support. It contains nine focused lessons, nine original interactive diagrams, nine embedded checks, and a 112-question assessment bank across 28 concepts and four reasoning levels. The 458-page production build, desktop layout, 390 pixel phone layout, overflow-free responsive diagrams, ten-question sampling, scoring, ten remediation links, and a subsequent attempt with zero repeated questions were verified on August 26, 2026.
 
+### Diaper Dermatitis
+
+The Diaper Dermatitis module connects occlusion and barrier injury, exposure chemistry, morphology, exposure control, barrier products, zinc oxide and petrolatum technique, Candida recognition and antifungal therapy, low-potency corticosteroid safety, bacterial disease, contact and systemic mimics, newborn and preterm skin, diarrhea, incontinence-associated dermatitis, monitoring, and referral. It contains nine focused lessons, nine original interactive diagrams, nine embedded checks, and a 112-question assessment bank across 28 concepts and four reasoning levels. The 459-page production build, desktop layout, 390 pixel phone layout, overflow-free responsive diagrams, ten-question sampling, scoring, ten remediation links, and a subsequent attempt with zero repeated questions were verified on August 26, 2026.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
