@@ -1129,7 +1129,7 @@ Target modules:
 4. Sexual Dysfunction (`built`, 112 question bank; dedicated Goodnotes lecture reconciliation pending)
 5. Urinary Incontinence (`built`, 104 question bank; dedicated Goodnotes lecture reconciliation pending)
 6. Osteoporosis (`built`, 104 question bank; dedicated Goodnotes lecture reconciliation pending)
-7. Genitourinary Medicinal Chemistry
+7. Genitourinary Medicinal Chemistry (`built`, 128 question bank; dedicated Goodnotes lecture reconciliation pending)
 
 ### DAST V
 
@@ -1561,6 +1561,22 @@ Current guidance reconciliations:
 - Erythroderma and generalized pustular disease use urgent whole patient stabilization rather than routine outpatient topical escalation.
 - The complete two-page RxPrep 2023 psoriasis source block was reviewed visually. It predates modern topical PDE4 and AhR therapy, TYK2 inhibition, IL-17A and F blockade, the current spesolimab prevention pathway, and several label expansions, all of which were reconciled with current authoritative sources.
 - A dedicated Goodnotes psoriasis lecture remains pending because the Mac was still locked on the fourth access attempt on August 26, 2026. The module will receive a documented lecture reconciliation pass when the desktop session is unlocked.
+
+### Genitourinary Medicinal Chemistry
+
+The genitourinary medicinal chemistry module integrates the molecular design shared across reproductive and urinary pharmacology without duplicating the surrounding clinical modules. It includes steroid nucleus recognition; stereochemistry; intracellular receptor signaling; route dependent first pass and local exposure; ethinyl estradiol; estradiol ester depots; micronized, conjugated, and selective estrogen receptor modulator products; progestin structural families; levonorgestrel stereochemistry; desogestrel activation to etonogestrel; drospirenone receptor behavior; finasteride and dutasteride; DHT pathway interpretation; PDE5 inhibitor catalytic recognition; sildenafil, vardenafil, and tadalafil scaffold distinctions; cGMP pathway interactions; tertiary and quaternary bladder antimuscarinics; oxybutynin active metabolite and formulation effects; trospium distribution; mirabegron and vibegron; alpha blocker scaffold diversity; extended release systems; local delivery devices; salts; active moieties; and the boundary between molecular prediction and clinical evidence. It contains eight focused lessons, eight original interactive diagrams, eight embedded checks, and a 128-question assessment bank across 32 concepts and four reasoning levels.
+
+Current source reconciliations:
+
+- The complete RxPrep 2023 male and female health sequence was reviewed for scope across contraception, pregnancy and lactation, menopause, sexual dysfunction, BPH, and urinary incontinence. This module synthesizes chemistry rather than reproducing its prose or proprietary questions.
+- Steroid and progestin family names are treated as starting maps rather than complete predictors of receptor selectivity, clinical safety, or interchangeability. Stereochemistry, active species, route, dose, metabolism, formulation, and evidence remain explicit.
+- Ethinyl substitution is presented as an oral exposure strategy that also changes hepatic pharmacology. Estradiol ester mass is not treated as direct estradiol equivalence, and conjugated or micronized products are not collapsed into one generic estrogen identity.
+- Finasteride preferential type 2 and dutasteride type 1 and type 2 enzyme inhibition are separated from androgen receptor antagonism and from alpha adrenergic blockade. Current finasteride labeling is used for product indication, prostate-enlargement context, PSA surveillance, and the absence of a prostate-cancer prevention indication.
+- PDE5 scaffolds are linked to preservation rather than creation of nitric oxide and cGMP signaling. Current tadalafil labeling anchors daily and as-needed product distinctions, nitrate and guanylate-cyclase stimulator contraindications, CYP3A interactions, organ-function boundaries, and the current 26-week limit when initiating BPH therapy with finasteride.
+- Oxybutynin parent and active-metabolite exposure is separated across immediate release, extended release, and transdermal delivery. Current extended-release labeling is used for dosage-form integrity and pediatric boundaries.
+- Mirabegron and vibegron are treated as chemically and dispositionally distinct beta 3 agonists. Current mirabegron labeling anchors beta 3 mechanism, CYP2D6, pressure, outlet-obstruction, renal, hepatic, and dosage-form considerations rather than extrapolating one class profile to every molecule.
+- Permanent versus pH-dependent charge is used as one predictor of CNS distribution, not as a guarantee of cognitive safety. Sulfonamide is treated as a functional motif rather than automatic proof of antibiotic cross-allergy.
+- A dedicated Goodnotes genitourinary medicinal chemistry lecture remains pending because macOS still reported a locked session on August 26, 2026. The module will receive a documented lecture reconciliation pass when desktop access is restored.
 
 Deferred into focused modules:
 
