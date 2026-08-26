@@ -1543,6 +1543,25 @@ Current guidance reconciliations:
 - Anti-SSA and anti-SSB positive pregnancy includes preconception medicine review, maternal fetal medicine coordination, guideline based fetal echocardiography, and current conditional hydroxychloroquine guidance.
 - The complete RxPrep 2023 Sjogren syndrome source block was reviewed visually. A matching Goodnotes reconciliation remains pending because the Mac was still locked on the third access attempt during this build.
 
+### Psoriasis
+
+The psoriasis module includes IL-23, type 17, TNF, and keratinocyte biology; plaque, inverse, guttate, nail, scalp, palmoplantar, genital, erythrodermic, and generalized pustular phenotypes; multidimensional severity; psoriatic arthritis and systemic comorbidity screening; vehicle and corticosteroid design; vitamin D analogs and steroid sparing topicals; tapinarof; roflumilast cream and foam; narrowband and targeted UVB; PUVA; methotrexate; cyclosporine; acitretin; apremilast; deucravacitinib; TNF, IL-12/23, IL-17, and IL-23 biologics; biosimilars; spesolimab; emergency stabilization; vaccination; pregnancy planning; treatment targets; and switching. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 128-question assessment bank across 32 concepts and four reasoning levels.
+
+Current guidance reconciliations:
+
+- Severity integrates BSA, global morphology, symptoms, special sites, function, quality of life, psoriatic arthritis, comorbidity, and treatment response. Low BSA disease is not automatically mild.
+- Face, genital, scalp, nail, palm, sole, and inverse disease receive site specific vehicle, potency, and steroid sparing plans rather than one topical regimen.
+- Roflumilast cream 0.3 percent is current for plaque psoriasis from age two, while roflumilast foam 0.3 percent is current for scalp and body plaque psoriasis from age 12. Moderate to severe hepatic impairment remains a contraindication.
+- Tapinarof cream 1 percent remains labeled for adult plaque psoriasis and is distinguished from its pediatric atopic dermatitis indication.
+- Narrowband UVB and targeted UVB are presented as controlled medical treatment, not as tanning. PUVA retains photosensitizer, eye, interaction, and cumulative exposure safeguards.
+- Acitretin retains pregnancy prevention for at least three years after discontinuation. Methotrexate retains strict weekly dosing and organ, interaction, and reproductive safeguards.
+- Apremilast includes current pediatric labeling and adult severe renal impairment maintenance at 30 mg once daily. Deucravacitinib includes the June 2026 active adult psoriatic arthritis indication in addition to adult moderate to severe plaque psoriasis.
+- Biologic selection integrates skin, joint, bowel, infection, pregnancy, liver, mood, injection, and access constraints. Brodalumab retains its boxed suicidality warning and restricted REMS. Bimekizumab is correctly described as combined IL-17A and IL-17F antagonism.
+- Generalized pustular psoriasis is separated from plaque psoriasis. Current spesolimab labeling includes patients age 12 and older who weigh at least 40 kg, a 900 mg intravenous flare regimen, and a subcutaneous between flare regimen.
+- Erythroderma and generalized pustular disease use urgent whole patient stabilization rather than routine outpatient topical escalation.
+- The complete two-page RxPrep 2023 psoriasis source block was reviewed visually. It predates modern topical PDE4 and AhR therapy, TYK2 inhibition, IL-17A and F blockade, the current spesolimab prevention pathway, and several label expansions, all of which were reconciled with current authoritative sources.
+- A dedicated Goodnotes psoriasis lecture remains pending because the Mac was still locked on the fourth access attempt on August 26, 2026. The module will receive a documented lecture reconciliation pass when the desktop session is unlocked.
+
 Deferred into focused modules:
 
 - Vulvovaginal infection and pelvic inflammatory disease
