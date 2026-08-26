@@ -1144,6 +1144,7 @@ Target modules presently supported:
 2. Peptic Ulcer Disease (`built`, 120 question bank; Goodnotes reconciliation pending)
 3. Irritable Bowel Syndrome (`built`, 124 question bank; Goodnotes reconciliation pending)
 4. Chronic Idiopathic Constipation (`built`, 128 question bank; Goodnotes reconciliation pending)
+5. Diarrhea Assessment and Pharmacotherapy (`built`, 128 question bank; Goodnotes reconciliation pending)
 
 ### Gastroesophageal Reflux Disease
 
@@ -1197,6 +1198,19 @@ Target modules presently supported:
 - Automated verification: 128 unique question IDs, 32 distinct concept groups, no duplicate answer choices, valid lesson links, four difficulty levels, ten diagrams, and no em dash or en dash characters in public module prose
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, ten distinct concepts per attempt, a different second sample, scoring with ten explanations and ten remediation links, and responsive restoration after testing
 - Build verification: Next.js production build passed August 26, 2026 with 413 static pages generated
+
+### Diarrhea Assessment and Pharmacotherapy
+
+- RxPrep source: NAPLEX 2023 Chapter 73 diarrhea section, PDF pages 927 through 930, visually reviewed in full
+- Current references reviewed: CDC Yellow Book 2026 travelers' diarrhea guidance, current IDSA infectious diarrhea guideline, AGA chronic watery diarrhea evaluation guidance, WHO reduced-osmolarity oral rehydration guidance, FDA loperamide cardiac safety communication, and current DailyMed labeling for loperamide, bismuth subsalicylate, and diphenoxylate with atropine
+- Learning structure: ten lessons, ten native mechanism and decision diagrams, and ten embedded knowledge checks
+- Assessment: 128 original questions spanning duration and stool phenotype, osmotic and secretory physiology, dehydration, inflammatory features, high-risk hosts, exposure and medication causes, oral rehydration, continued nutrition, diagnostic testing, C. difficile, chronic watery diarrhea, transmission control, probiotics, bismuth subsalicylate, loperamide, diphenoxylate with atropine, travelers' diarrhea, antibiotic stewardship, persistent post-travel illness, bile acid diarrhea, and longitudinal reassessment
+- Source reconciliation: oral rehydration is positioned before symptom suppression; broad sports-drink substitution is limited to mild loss while balanced oral rehydration solution is preferred for clinically important losses; loperamide self-care follows the lower OTC limit rather than importing the prescription maximum; high-dose cardiac toxicity is explicit; bismuth dosing is concentration-aware; current pediatric and infectious exclusions replace generalized class advice; travelers' diarrhea uses functional severity; and persistent or chronic diarrhea triggers cause-directed testing rather than indefinite antimotility therapy
+- Scope boundary: IBS-D, inflammatory bowel disease, C. difficile treatment, pathogen-specific infectious disease therapy, pancreatic disease, and pediatric gastroenteritis remain distinct modules or cause-specific pathways
+- Goodnotes note: the dedicated gastrointestinal lecture remains pending while the desktop Goodnotes session is locked; the RxPrep and current-source synthesis is complete and will receive a documented lecture reconciliation pass when access is restored
+- Automated verification: 128 unique question IDs, 32 distinct concept groups, no duplicate answer choices, valid links to all ten lessons, four difficulty levels, ten diagrams, and no em dash or en dash characters in public module prose
+- Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, ten distinct concepts per attempt, a different second sample with no overlap in the verified run, scoring with ten explanations and ten remediation links, and responsive restoration after testing
+- Build verification: Next.js production build passed August 26, 2026 with 414 static pages generated
 
 ### DAST IV reproductive and gynecologic sequence
 
