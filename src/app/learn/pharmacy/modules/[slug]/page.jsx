@@ -116,6 +116,7 @@ import ImmunoglobulinTherapyVisual, { immunoglobulinTherapyVisualTypes } from "@
 import AnemiaVisual, { anemiaVisualTypes } from "@/components/learn/AnemiaVisual";
 import SickleCellDiseaseVisual, { sickleCellDiseaseVisualTypes } from "@/components/learn/SickleCellDiseaseVisual";
 import CoughCommonColdVisual, { coughCommonColdVisualTypes } from "@/components/learn/CoughCommonColdVisual";
+import CommonEyeConditionsVisual, { commonEyeConditionsVisualTypes } from "@/components/learn/CommonEyeConditionsVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -398,6 +399,7 @@ export default async function PharmacyModulePage({ params }) {
               {anemiaVisualTypes.includes(submodule.visual) && <AnemiaVisual type={submodule.visual} />}
               {sickleCellDiseaseVisualTypes.includes(submodule.visual) && <SickleCellDiseaseVisual type={submodule.visual} />}
               {coughCommonColdVisualTypes.includes(submodule.visual) && <CoughCommonColdVisual type={submodule.visual} />}
+              {commonEyeConditionsVisualTypes.includes(submodule.visual) && <CommonEyeConditionsVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>

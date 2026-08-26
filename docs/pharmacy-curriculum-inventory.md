@@ -1750,6 +1750,28 @@ Current source reconciliations:
 - FDA's statement that no homeopathic cough and cold product is FDA approved is explicit. Natural or homeopathic marketing does not replace accurate dosing, age protection, or evaluation of a concerning trajectory.
 - Goodnotes remains inaccessible because the Mac session still reports a locked state. Any dedicated lecture will receive a documented reconciliation pass after manual unlock.
 
+### Common Eye Conditions
+
+The common eye conditions module excludes glaucoma, which remains in its completed dedicated module, and focuses on red-eye triage, infectious and allergic conjunctivitis, blepharitis, meibomian gland dysfunction, Demodex disease, dry eye, ocular inflammation, medication injury, ophthalmic dosage forms, sterility, contact lenses, preservatives, special populations, and follow-up. It contains eleven focused lessons, eleven original interactive diagrams, eleven embedded checks, and a 128-question assessment bank across 32 concepts and four reasoning levels. The 444-page production build, desktop layout, 390 pixel phone layout, overflow-free responsive diagrams, ten-question sampling, scoring, ten remediation links, and a subsequent attempt with zero repeated questions were verified on August 26, 2026.
+
+Current source reconciliations:
+
+- RxPrep 2023 Chapter 38 was reviewed for eye and ear dosage forms, glaucoma, conjunctivitis, blepharitis, symptom-based ocular treatment, medication-induced ocular effects, ear conditions, and counseling. Its prose, tables, and questions were not reproduced. Glaucoma content routes to the existing Glaucoma Pharmacotherapy module, while ear content is reserved for a focused Common Ear Conditions module.
+- Current CDC guidance replaces routine antimicrobial framing. Most acute infectious conjunctivitis in adults is viral and self-limited, while contact-lens bacterial conjunctivitis requires lens removal, topical antibiotic treatment, and prompt ophthalmology evaluation because of keratitis risk.
+- School and work return is not reduced to one fixed interval after antibiotics. Systemic illness, ability to avoid close contact, clinician approval, public-health guidance, and local policy shape the return plan.
+- Pain, photophobia, reduced vision, trauma, chemical exposure, corneal opacity, abnormal pupil, severe swelling, neonatal disease, contact-lens risk, and marked unilateral disease are routed away from routine pink-eye self-care.
+- Chemical exposure begins with immediate copious irrigation rather than waiting for perfect substance identification.
+- Allergic conjunctivitis is anchored to bilateral itching, watery tearing, and relevant exposure. Topical antihistamine and dual-action therapy are separated from cosmetic vasoconstrictor redness relief, and pain or visual change is rejected as routine allergy.
+- Blepharitis is separated into anterior, meibomian, rosacea-associated, and Demodex patterns. Current lotilaner labeling replaces the older chapter's lack of a specific FDA-approved Demodex therapy, while improvised ocular tea-tree exposure is not treated as equivalent.
+- Dry eye is framed as mixed tear-film and ocular-surface dysfunction rather than simple low tear volume. Aqueous supply, lipid-layer evaporation, blinking, lids, inflammation, neural signaling, environment, medicines, systemic disease, and lens wear are integrated.
+- Lifitegrast, cyclosporine, lubricants, tear-pathway options, and clinician-directed anti-inflammatory treatment remain formulation specific. Current label instructions, tolerability, onset, preservatives, single-use handling, and response measurement are included.
+- Ocular corticosteroids are restricted to a defined clinician-directed indication with infection, corneal, intraocular-pressure, lens, duration, and response monitoring. Leftover steroid drops are explicitly rejected for an undiagnosed red eye.
+- FDA's current eye-drop safety guidance adds reliable sourcing, seal and expiration checks, recall review, sterile tip clearance, and warnings against unapproved homeopathic products, iris-color claims, and OTC products marketed for serious ocular diseases.
+- Contact-lens removal and reinsertion follow the exact product and disease pathway rather than a universal wait time. Infection, corneal injury, and some procedures require a longer no-lens interval.
+- Ophthalmic delivery uses plain-language laterality, one well-placed drop, product-specific preparation, gentle eyelid closure and punctal occlusion when appropriate, spacing to prevent washout, thicker formulations last, and observed return technique.
+- Retired pregnancy letters are excluded. Pregnancy and lactation use narrative benefit-risk reasoning, product-specific evidence, disease risk, and reduction of avoidable nasolacrimal exposure.
+- Goodnotes was retried before this build, but macOS still reported the session as locked. Any dedicated lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
