@@ -2056,6 +2056,10 @@ The Diaper Dermatitis module connects occlusion and barrier injury, exposure che
 
 The Hyperhidrosis module connects eccrine thermoregulation, sympathetic cholinergic signaling, primary and secondary diagnosis, medication causes, severity and quality of life, aluminum antiperspirant technique, glycopyrronium cloth, sofpironium gel, quaternary antimuscarinic chemistry, ocular transfer, urinary retention, heat illness, additive anticholinergic burden, botulinum toxin, iontophoresis, energy and surgical procedures, off-label systemic therapy, event-specific treatment, site and age selection, monitoring, and referral. It contains nine focused lessons, nine original interactive diagrams, nine embedded checks, and a 112-question assessment bank across 28 concepts and four reasoning levels. The 460-page production build, desktop layout, 390 pixel phone layout, overflow-free responsive diagrams, ten-question sampling, scoring, ten remediation links, and a subsequent attempt with zero repeated questions were verified on August 26, 2026.
 
+### Hemorrhoids
+
+The Hemorrhoids module connects normal anal-cushion function, dentate-line sensory anatomy, internal and external patterns, prolapse grading, thrombosis, rectal bleeding differential, cancer and inflammatory bowel red flags, fiber and bowel mechanics, individualized fluid planning, toilet behavior, protectants, witch hazel, phenylephrine, local anesthetics, hydrocortisone safety, dosage-form technique, office procedures, excisional surgery, special populations, monitoring, and referral. It contains nine focused lessons, nine original interactive diagrams, nine embedded checks, and a 112-question assessment bank across 28 concepts and four reasoning levels. The 461-page production build, desktop layout, 390 pixel phone layout, overflow-free responsive diagrams, ten-question sampling, scoring, ten remediation links, and a subsequent attempt with zero repeated questions were verified on August 26, 2026.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:

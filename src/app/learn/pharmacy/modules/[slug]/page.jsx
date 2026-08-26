@@ -133,6 +133,7 @@ import SeborrheicDermatitisVisual, { seborrheicDermatitisVisualTypes } from "@/c
 import AlopeciaVisual, { alopeciaVisualTypes } from "@/components/learn/AlopeciaVisual";
 import DiaperDermatitisVisual, { diaperDermatitisVisualTypes } from "@/components/learn/DiaperDermatitisVisual";
 import HyperhidrosisVisual, { hyperhidrosisVisualTypes } from "@/components/learn/HyperhidrosisVisual";
+import HemorrhoidsVisual, { hemorrhoidsVisualTypes } from "@/components/learn/HemorrhoidsVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -432,6 +433,7 @@ export default async function PharmacyModulePage({ params }) {
               {alopeciaVisualTypes.includes(submodule.visual) && <AlopeciaVisual type={submodule.visual} />}
               {diaperDermatitisVisualTypes.includes(submodule.visual) && <DiaperDermatitisVisual type={submodule.visual} />}
               {hyperhidrosisVisualTypes.includes(submodule.visual) && <HyperhidrosisVisual type={submodule.visual} />}
+              {hemorrhoidsVisualTypes.includes(submodule.visual) && <HemorrhoidsVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
