@@ -777,6 +777,20 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 394 static pages generated
 - Goodnotes note: the dedicated adrenal pharmacology lectures and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
+### Cushing Syndrome
+
+- Course scope: syndrome and disease terminology; exogenous exposure reconstruction; discriminating clinical features and pseudo-Cushing states; late-night salivary cortisol, urine free cortisol, and dexamethasone suppression testing; cyclic disease and false-positive interpretation; ACTH-dependent and ACTH-independent classification; pituitary, adrenal, and ectopic source localization; inferior petrosal sinus sampling; infection, thrombosis, potassium, glucose, pressure, bone, and psychiatric risk; cause-directed surgery, postoperative hypocortisolism, HPA recovery, and recurrence; osilodrostat, metyrapone, levoketoconazole, and block-and-replace therapy; pasireotide, cabergoline, and mifepristone; radiation, bilateral adrenalectomy, corticotroph tumor surveillance, and long-term recovery
+- Course source reviewed: Steroids of Adrenal Glands, 127 pages, including the glucocorticoid antagonist and adrenal steroidogenesis inhibitor sections
+- Cross reference completed: RxPrep NAPLEX 2023 Cushing syndrome and systemic corticosteroid scope
+- Current references reviewed: Endocrine Society diagnosis and treatment guidelines for Cushing syndrome; the 2021 Pituitary Society Cushing disease consensus; and current US prescribing information for osilodrostat, levoketoconazole, pasireotide, and mifepristone
+- Learning structure: nine content-driven lessons, nine native recognition, testing, classification, localization, severity, surgery, enzyme-inhibitor, targeted-therapy, and long-term-care diagrams, and nine embedded knowledge checks
+- Assessment: 100 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: Cushing disease was restricted to pituitary ACTH disease; exogenous exposure was excluded before endocrine testing; random cortisol, random ACTH, and imaging were rejected as screening tests; testing was interpreted through circadian timing, collection quality, renal function, binding, and dexamethasone interactions; images were treated as localization evidence rather than proof of secretion; severe disease triggered parallel cortisol control and source evaluation; steroidogenesis inhibitors were separated by enzyme target and precursor effects; historical aminoglutethimide and trilostane emphasis was replaced by current treatment options; pasireotide glycemic toxicity and mifepristone clinical rather than cortisol monitoring were made explicit; and bilateral adrenalectomy was paired with lifelong replacement and corticotroph surveillance
+- Automated verification: 100 unique question IDs, four unique choices per question, valid lesson links, nine diagrams, and no em dash or en dash characters in public prose
+- Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, nine diagrams, all nine embedded knowledge checks, ten-question randomized attempts with changed question sets, complete scoring, ten remediation links, and no browser errors or warnings
+- Build verification: Next.js production build passed August 25, 2026 with 395 static pages generated
+- Goodnotes note: other dedicated Cushing syndrome lectures, cases, and notes remain pending if they become accessible; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -1028,7 +1042,7 @@ Available documents include adrenal disorders, Cushing syndrome, Addison disease
 Target modules:
 
 1. Adrenal Pharmacology (`built`, 104 question bank; Goodnotes reconciliation pending)
-2. Cushing Syndrome
+2. Cushing Syndrome (`built`, 100 question bank; Goodnotes reconciliation pending)
 3. Adrenal Insufficiency and Adrenal Crisis
 4. Gonadal Hormones
 5. Gynecologic Disorders
