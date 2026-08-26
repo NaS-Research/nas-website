@@ -1141,7 +1141,7 @@ Currently accessible documents:
 Target modules presently supported:
 
 1. Gastroesophageal Reflux Disease (`built`, 120 question bank; Goodnotes reconciliation pending)
-2. Peptic Ulcer Disease
+2. Peptic Ulcer Disease (`built`, 120 question bank; Goodnotes reconciliation pending)
 3. Irritable Bowel Syndrome
 
 ### Gastroesophageal Reflux Disease
@@ -1156,6 +1156,19 @@ Target modules presently supported:
 - Automated verification: 120 unique question IDs, no duplicate answer choices, valid lesson links, ten diagrams, and no em dash or en dash characters in public module prose
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, ten questions per attempt, a second attempt with a different set and no overlap in the verified run, scoring with ten explanations and ten remediation links, and responsive restoration after testing
 - Build verification: Next.js production build passed August 26, 2026 with 410 static pages generated
+
+### Peptic Ulcer Disease
+
+- RxPrep source: NAPLEX 2023 Chapter 72 peptic-ulcer section, PDF pages 917 through 920, visually reviewed in full
+- Current references reviewed: 2024 ACG H. pylori guideline and highlights, 2021 ACG upper gastrointestinal and ulcer bleeding guideline, evidence-based peptic-ulcer guidance, and current DailyMed labeling for Pylera, Talicia, Voquezna Dual Pak, misoprostol, and sucralfate
+- Learning structure: ten lessons, ten native mechanism and decision diagrams, and ten embedded knowledge checks
+- Assessment: 120 original questions spanning mucosal defense, ulcer recognition, emergency triage, cause audit, H. pylori testing, optimized bismuth quadruple therapy, packaged-product distinctions, alternative and salvage therapy, universal test of cure, ulcer healing, cytoprotection, NSAID gastroprotection, ulcer bleeding, and recurrence prevention; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: empiric clarithromycin triple therapy was replaced by the current susceptibility-aware sequence; treatment-naive optimized bismuth quadruple therapy uses a 14-day regimen; Pylera remains distinct as a labeled 10-day fixed-dose pack; cure testing is universal and uses current medication holds; rifabutin triple and vonoprazan-amoxicillin dual therapy were added as current options; ulcer-bleeding care now follows the 2021 ACG endoscopic and post-hemostasis PPI sequence; and obsolete pregnancy-letter language was excluded
+- Scope boundary: gastroesophageal reflux disease and irritable bowel syndrome remain separate modules rather than being merged with peptic ulcer disease
+- Goodnotes note: the dedicated PUD, GERD, and IBS 2026 lecture remains pending because the Mac was locked on August 26, 2026; it will receive a documented reconciliation pass when access is restored
+- Automated verification: 120 unique question IDs, no duplicate answer choices, valid lesson links, ten diagrams, and no em dash or en dash characters in public module prose
+- Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, ten questions per attempt, a different second sample, scoring with ten explanations and ten remediation links, and responsive restoration after testing
+- Build verification: Next.js production build passed August 26, 2026 with 411 static pages generated
 
 ### DAST IV reproductive and gynecologic sequence
 
