@@ -2052,6 +2052,10 @@ The Alopecia and Hair Loss module connects follicular cycling, shedding and brea
 
 The Diaper Dermatitis module connects occlusion and barrier injury, exposure chemistry, morphology, exposure control, barrier products, zinc oxide and petrolatum technique, Candida recognition and antifungal therapy, low-potency corticosteroid safety, bacterial disease, contact and systemic mimics, newborn and preterm skin, diarrhea, incontinence-associated dermatitis, monitoring, and referral. It contains nine focused lessons, nine original interactive diagrams, nine embedded checks, and a 112-question assessment bank across 28 concepts and four reasoning levels. The 459-page production build, desktop layout, 390 pixel phone layout, overflow-free responsive diagrams, ten-question sampling, scoring, ten remediation links, and a subsequent attempt with zero repeated questions were verified on August 26, 2026.
 
+### Hyperhidrosis
+
+The Hyperhidrosis module connects eccrine thermoregulation, sympathetic cholinergic signaling, primary and secondary diagnosis, medication causes, severity and quality of life, aluminum antiperspirant technique, glycopyrronium cloth, sofpironium gel, quaternary antimuscarinic chemistry, ocular transfer, urinary retention, heat illness, additive anticholinergic burden, botulinum toxin, iontophoresis, energy and surgical procedures, off-label systemic therapy, event-specific treatment, site and age selection, monitoring, and referral. It contains nine focused lessons, nine original interactive diagrams, nine embedded checks, and a 112-question assessment bank across 28 concepts and four reasoning levels. The 460-page production build, desktop layout, 390 pixel phone layout, overflow-free responsive diagrams, ten-question sampling, scoring, ten remediation links, and a subsequent attempt with zero repeated questions were verified on August 26, 2026.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
