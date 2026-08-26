@@ -1147,6 +1147,7 @@ Target modules presently supported:
 5. Diarrhea Assessment and Pharmacotherapy (`built`, 128 question bank; Goodnotes reconciliation pending)
 6. Inflammatory Bowel Disease (`built`, 124 question bank; Goodnotes reconciliation pending)
 7. Motion Sickness (`built`, 120 question bank; Goodnotes reconciliation pending)
+8. Medication Safety and Quality Improvement (`built`, 136 question bank; Goodnotes reconciliation pending)
 
 ### Gastroesophageal Reflux Disease
 
@@ -1239,6 +1240,19 @@ Target modules presently supported:
 - Automated verification: 120 unique question IDs, 30 distinct concept groups, no duplicate answer choices, valid links to all eight lessons, four difficulty levels, eight diagrams, and no em dash or en dash characters in public module prose
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, eight lessons, eight diagrams, eight embedded checks, ten distinct concepts per attempt, a different second sample with no overlap in the verified run, scoring with ten explanations and ten remediation links, and zero browser console errors
 - Build verification: Next.js production build passed August 26, 2026 with 416 static pages generated
+
+### Medication Safety and Quality Improvement
+
+- RxPrep source: NAPLEX 2023 Chapter 76 medication-safety and quality-improvement content, PDF pages 942 through 953, visually reviewed in full
+- Current references reviewed: the Joint Commission 2026 National Performance Goals and medication-management requirements, the 2024 ISMP high-alert medication list, NCC MERP taxonomy, FDA MedWatch reporting instructions, and AHRQ resources on systems thinking, RCA2, FMEA, CPOE, event response, and medication reconciliation
+- Learning structure: ten focused lessons, ten native systems and decision diagrams, and ten embedded knowledge checks
+- Assessment: 136 original questions across 34 distinct concept groups spanning safety taxonomy, NCC MERP outcome classification, systems thinking, human factors, just culture, event response, disclosure, reporting, RCA2, FMEA, corrective-action strength, measurement, patient identity, dose notation, look-alike and sound-alike controls, high-alert medications, independent double checks, medication reconciliation, care transitions, CPOE and clinical decision support, barcode administration, automated dispensing cabinets, smart pumps, the five rights, PCA safety, patient partnership, accessibility, the 2026 National Performance Goals, medication management, antibiotic stewardship, and integrated case analysis
+- Source reconciliation: hospital National Patient Safety Goals were replaced by the 14 National Performance Goals effective January 1, 2026; high-alert teaching uses the current setting-specific ISMP list; independent double checks are selective rather than universal; the five rights are presented as a bedside verification framework rather than a complete safety system; RCA2 ends in assigned and measured action; and CPOE, barcoding, ADCs, and smart pumps are evaluated for workarounds and unintended effects as well as intended benefit
+- Scope boundary: infection-prevention material on PDF pages 954 through 956 is reserved for a dedicated Infection Prevention module; detailed adverse-reaction and drug-allergy content begins in the next RxPrep chapter and remains separate
+- Goodnotes note: the dedicated medication-safety lecture remains pending while the desktop Goodnotes session is locked; the RxPrep and current-source synthesis is complete and will receive a documented lecture reconciliation pass when access is restored
+- Automated verification: 136 unique question IDs, 34 distinct concept groups, no duplicate answer choices, valid links to all ten lessons, four difficulty levels, ten diagrams, current reference links, and no em dash or en dash characters in public module prose
+- Browser verification: 1280 pixel production rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, nine current reference links, ten distinct questions per attempt, a different second sample with no overlap in the verified run, scoring with explanations and ten remediation links, and zero browser console errors; the shared module shell retains its previously verified 390 pixel behavior, and the new diagram grid has an explicit two-column mobile breakpoint with no fixed-width content
+- Build verification: Next.js production build passed August 26, 2026 with 417 static pages generated
 
 ### DAST IV reproductive and gynecologic sequence
 
