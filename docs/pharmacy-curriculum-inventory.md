@@ -1471,7 +1471,7 @@ Current guidance reconciliations:
 - Fezolinetant now includes the current boxed hepatotoxicity warning, baseline hepatic testing, monthly testing for three months, and repeat testing at months 6 and 9.
 - Elinzanetant, approved in 2025, is included as an NK1 and NK3 antagonist with its own bedtime regimen, sedation precautions, interactions, and dose-modification guidance.
 - USPSTF prevention guidance is separated from symptom treatment: systemic hormone therapy is not initiated solely for primary prevention of cardiovascular disease, dementia, or other chronic conditions.
-- The lecture's 2017 to 2018 gender-affirming hormone material was not folded into the menopause module. It remains a clinically distinct future module that requires contemporary, source-complete reconciliation before publication.
+- The lecture's 2017 to 2018 gender-affirming hormone material was not folded into the menopause module. A separate current Gender-Affirming Hormone Care module now replaces that older framework.
 - Current AUA and 2026 EAU guidance separates LUTS, prostate enlargement, and obstruction; initial evaluation uses history, examination, IPSS, and urinalysis rather than PSA alone.
 - Alpha blockers are taught as rapid symptom therapies that do not shrink the prostate or prevent long-term progression. Selection includes orthostasis, ejaculation, interactions, exact product instructions, and current or prior cataract-surgery exposure.
 - Finasteride and dutasteride are reserved for evidence of enlargement and progression risk. Their slow onset, sexual and reproductive counseling, PSA suppression, treated PSA trend, and lack of a prostate-cancer prevention indication are explicit.
@@ -1652,6 +1652,29 @@ Current source reconciliations:
 - Repair timing follows tissue readiness rather than a universal interval. Diversion, infection control, healthy vascular tissue, tension-free watertight closure, route selection, ureteric and sphincter protection, postoperative drainage, and specialist experience are integrated.
 - Recovery includes kidneys, skin, nutrition, continence, bowel function, pain, sexual health, fertility, trauma, relationships, work, access, and social inclusion. Obstetric access, prompt injury recognition, referral, and reliable pessary follow-up remain prevention responsibilities.
 - Goodnotes was retried on August 26, 2026, but macOS still reported that the session was locked. The module will receive a documented lecture reconciliation pass when the Mac session is manually unlocked.
+
+### Gender-Affirming Hormone Care
+
+The gender-affirming hormone care module organizes adult hormone care around person-defined goals, informed choice, individualized and nonbinary regimens, baseline health assessment, fertility preservation, contraception, estradiol molecule and route, androgen reduction, feminizing follow-up, testosterone products, masculinizing follow-up, reproductive health, organ-based preventive care, perioperative planning, medication continuity, and harm reduction. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 148-question assessment bank across 37 concepts and four reasoning levels.
+
+Current source reconciliations:
+
+- The older 2017 to 2018 reproductive lecture was not treated as current authority. RxPrep 2023 contains no dedicated gender-affirming hormone chapter, so current WPATH SOC8, the Endocrine Society resource, reaffirmed ACOG guidance, and current FDA labeling form the clinical framework.
+- Hormone care begins with the person's desired, undesired, and optional changes. Dose can influence pace and magnitude but cannot guarantee isolated tissue effects, and lower-dose or nonbinary regimens are not described as fully reversible.
+- Common estradiol, testosterone, and adjunct products generally are not FDA approved specifically for gender affirmation in the United States. The module distinguishes off-label evidence and guidelines from labeled indications while retaining current product-specific safety warnings.
+- Prepubertal and adolescent treatment is not derived from an adult regimen. Development, consent, fertility, bone, family and social context, and local requirements are routed to an experienced multidisciplinary team.
+- Baseline assessment identifies conditions that estradiol, testosterone, gonadal suppression, or adjuncts can worsen and converts them into route, monitoring, coordination, or stabilization decisions. Comorbidity is not treated as an automatic exclusion.
+- Fertility preservation is discussed before potentially suppressive therapy. Amenorrhea, reduced sperm production, testosterone, estradiol, and GnRH therapy are not treated as contraception.
+- WPATH guidance against ethinyl estradiol is explicit. Conjugated estrogens are avoided when estradiol is available, and transdermal estradiol is preferred when age above 45 years or previous VTE raises thrombotic concern.
+- Estradiol and testosterone concentrations are interpreted with exact product, route, administration, sampling time, clinical response, safety, and the person's goals. Supraphysiologic escalation is rejected as a shortcut to faster or greater physical change.
+- Spironolactone retains its kidney, potassium, blood pressure, and volume pharmacology when used for androgen reduction. GnRH analogues, 5-alpha reductase inhibitors, and progestogens remain mechanism and goal specific rather than interchangeable or routine.
+- Testosterone products are not treated as interchangeable. Concentration, route, interval, peak and trough behavior, sterile technique, skin-transfer prevention, CBC, hematocrit, sleep apnea, and blood pressure are integrated with product-specific administration.
+- FDA's 2025 removal of older boxed cardiovascular language is not interpreted as proof of no cardiovascular risk. Current class-wide blood pressure warnings, hematocrit, conventional risk prevention, and product labeling remain active.
+- Persistent uterine bleeding, genital pain or dryness, limited physical response, or adverse effects trigger an exposure and diagnostic audit rather than automatic hormone escalation.
+- Preventive screening follows the organs and tissues present, age, symptoms, exposure, family history, and current screening guidance. Bone assessment follows prolonged hypogonadism and standard fracture risks rather than identity alone.
+- Perioperative hormone decisions are individualized by procedure, mobility, VTE risk, route, gonadal status, withdrawal effects, and postoperative needs. Hospital and transfer reconciliation preserves exact product, concentration, route, last dose, supply, monitoring, and follow-up ownership.
+- Self-sourced hormone exposure is approached with nonjudgmental reconciliation and harm reduction. Product verification, injection safety, reliable prescribing, monitoring, and access barriers replace punitive discontinuation.
+- Goodnotes was retried before this build, but macOS continued to report a locked session. The older lecture will receive a documented reconciliation pass after manual unlock, with any conflict flagged rather than silently imported.
 
 ## First production sequence
 
