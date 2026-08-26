@@ -1499,6 +1499,13 @@ Current guidance reconciliations:
 - Current EULAR guidance places a dihydropyridine calcium antagonist, usually oral nifedipine, first for systemic-sclerosis-associated Raynaud, supports considering PDE5 inhibitors, and reserves intravenous iloprost for severe disease after oral therapy fails.
 - Topical nitrate exposure is reconciled as systemic nitrate exposure. It is never combined with sildenafil or another PDE5 inhibitor.
 - Digital ulcer, rest pain, failure to rewarm, infection, neurologic change, and necrosis use an urgent perfusion and wound pathway rather than routine outpatient titration.
+- Celiac disease is taught as a multisystem immune-mediated enteropathy rather than a simple food intolerance. Testing remains on a gluten-containing diet, initial serology pairs tTG-IgA with total IgA, and high clinical probability can justify biopsy despite negative screening.
+- Duodenal confirmation uses multiple bulb and distal-duodenum specimens. Compatible HLA is used mainly for its exclusion value, and the narrow pediatric nonbiopsy pathway is not generalized to every adult.
+- The gluten-free diet is lifelong disease-modifying treatment. FDA food-labeling standards, cross-contact, gluten-free oats, nutrition, food access, and expert dietitian care are taught as one sustainable system.
+- Current FDA medication guidance replaces the older broad warning that oral medicines commonly contain harmful gluten. Excipient questions are resolved by exact product and manufacturer, current labeling, and manufacturer confirmation when necessary.
+- Dermatitis herpetiformis keeps gluten-free treatment foundational. Dapsone is presented as rapid skin-symptom control that does not heal intestinal disease and requires CBC, hemoglobin, liver, G6PD-context, methemoglobin, rash, and neurologic surveillance.
+- Follow-up integrates symptoms, expert diet review, serology, nutritional recovery, growth, bone health, vaccination, and selected mucosal reassessment. Serologic remission is not presented as proof of intestinal healing.
+- Nonresponsive celiac disease triggers reconfirmation of the original diagnosis, expert exposure review, and phenotype-directed evaluation of competing disorders before rare refractory disease is considered.
 
 Deferred into focused modules:
 

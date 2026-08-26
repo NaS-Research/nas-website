@@ -102,6 +102,7 @@ import RheumatoidArthritisVisual from "@/components/learn/RheumatoidArthritisVis
 import SystemicLupusErythematosusVisual from "@/components/learn/SystemicLupusErythematosusVisual";
 import MultipleSclerosisVisual from "@/components/learn/MultipleSclerosisVisual";
 import RaynaudPhenomenonVisual from "@/components/learn/RaynaudPhenomenonVisual";
+import CeliacDiseaseVisual from "@/components/learn/CeliacDiseaseVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -202,6 +203,7 @@ const rheumatoidArthritisVisualTypes = ["ra-recognition", "ra-target", "ra-metho
 const systemicLupusErythematosusVisualTypes = ["sle-recognition", "sle-immunity", "sle-targets", "sle-hcq", "sle-organs", "sle-conventional", "sle-biologics", "sle-nephritis", "sle-prevention", "sle-longitudinal"];
 const multipleSclerosisVisualTypes = ["ms-recognition", "ms-course", "ms-relapse", "ms-injectables", "ms-orals", "ms-s1p", "ms-biologics", "ms-reconstitution", "ms-rehabilitation", "ms-longitudinal"];
 const raynaudPhenomenonVisualTypes = ["raynaud-recognition", "raynaud-mechanism", "raynaud-evaluation", "raynaud-prevention", "raynaud-ccb", "raynaud-pde5", "raynaud-nitrates", "raynaud-ischemia", "raynaud-secondary", "raynaud-longitudinal"];
+const celiacDiseaseVisualTypes = ["celiac-mechanism", "celiac-spectrum", "celiac-serology", "celiac-biopsy", "celiac-diet", "celiac-nutrition", "celiac-dh", "celiac-medicines", "celiac-followup", "celiac-nonresponsive"];
 const diarrheaAssessmentVisualTypes = ["diarrhea-phenotype", "diarrhea-triage", "diarrhea-causes", "diarrhea-rehydration", "diarrhea-testing", "diarrhea-supportive", "diarrhea-bismuth", "diarrhea-antimotility", "diarrhea-travel", "diarrhea-persistent"];
 
 export function generateStaticParams() {
@@ -369,6 +371,7 @@ export default async function PharmacyModulePage({ params }) {
               {systemicLupusErythematosusVisualTypes.includes(submodule.visual) && <SystemicLupusErythematosusVisual type={submodule.visual} />}
               {multipleSclerosisVisualTypes.includes(submodule.visual) && <MultipleSclerosisVisual type={submodule.visual} />}
               {raynaudPhenomenonVisualTypes.includes(submodule.visual) && <RaynaudPhenomenonVisual type={submodule.visual} />}
+              {celiacDiseaseVisualTypes.includes(submodule.visual) && <CeliacDiseaseVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
