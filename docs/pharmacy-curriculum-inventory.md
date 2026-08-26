@@ -1507,6 +1507,24 @@ Current guidance reconciliations:
 - Follow-up integrates symptoms, expert diet review, serology, nutritional recovery, growth, bone health, vaccination, and selected mucosal reassessment. Serologic remission is not presented as proof of intestinal healing.
 - Nonresponsive celiac disease triggers reconfirmation of the original diagnosis, expert exposure review, and phenotype-directed evaluation of competing disorders before rare refractory disease is considered.
 
+### Myasthenia Gravis
+
+The myasthenia gravis module includes neuromuscular junction physiology; AChR, MuSK, LRP4, and seronegative phenotypes; ocular, bulbar, limb, and respiratory recognition; antibody and electrodiagnostic testing; thymic imaging; pyridostigmine pharmacology and medicinal chemistry; conventional immunotherapy; thymectomy; myasthenic crisis; plasma exchange and IV immune globulin; FcRn blockers; complement inhibitors; medication cautions; pregnancy; anesthesia; and longitudinal safety. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 108-question assessment bank.
+
+Current guidance reconciliations:
+
+- Myasthenic respiratory decline is assessed with cough, secretion control, bulbar function, serial FVC and NIF, gas exchange, work of breathing, and trajectory. Normal oxygen saturation is not treated as proof of preserved ventilatory reserve.
+- Pyridostigmine remains symptomatic therapy. Dose timing is tied to meals and function, renal elimination and cholinergic excess are explicit, and worsening weakness does not automatically trigger dose escalation.
+- Corticosteroids can transiently worsen weakness early. Conventional steroid sparing therapy is taught with delayed onset, baseline monitoring, reproductive review, and a defined bridge and reassessment plan.
+- Thymectomy is separated into thymoma management and immune disease modification. The clearest nonthymoma evidence is for younger adults with generalized AChR positive disease, and routine immune benefit is not extrapolated to MuSK, LRP4, or agrin antibody disease.
+- Crisis care integrates early airway support, PLEX or IV immune globulin, precipitant treatment, secretion management, nutrition, thrombosis prevention, and extubation readiness. MuSK disease is recognized as often especially responsive to plasma exchange.
+- The older RxPrep page is updated with the current FcRn pathway. Efgartigimod labeling expanded in May 2026 to adult generalized MG beyond its former AChR restriction, Rystiggo remains for AChR or MuSK positive adults, and Imaavy includes AChR or MuSK positive patients age 12 and older.
+- Complement inhibitors remain phenotype specific under current US labeling. Eculizumab includes AChR positive patients age 6 and older, while ravulizumab and zilucoplan are adult AChR positive options.
+- MenACWY and MenB vaccination, urgent prophylaxis when required, REMS responsibilities, emergency symptom counseling, and residual meningococcal risk despite vaccination are treated as one safety system.
+- Zilucoplan includes baseline lipase and amylase, pancreatitis and pancreatic cyst awareness, and interruption during suspected pancreatitis.
+- Medication cautions are calibrated by evidence, necessity, route, dose, alternatives, and monitoring. Telithromycin avoidance, the fluoroquinolone boxed warning, IV magnesium risk, and procedure and pregnancy planning are distinguished from a universal forbidden list.
+- The complete RxPrep 2023 myasthenia gravis source block was reviewed visually. The matching Goodnotes lecture remains pending because the Mac stayed locked during this build and will receive a documented reconciliation pass when access is restored.
+
 Deferred into focused modules:
 
 - Vulvovaginal infection and pelvic inflammatory disease
