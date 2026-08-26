@@ -1148,6 +1148,7 @@ Target modules presently supported:
 6. Inflammatory Bowel Disease (`built`, 124 question bank; Goodnotes reconciliation pending)
 7. Motion Sickness (`built`, 120 question bank; Goodnotes reconciliation pending)
 8. Medication Safety and Quality Improvement (`built`, 136 question bank; Goodnotes reconciliation pending)
+9. Infection Prevention and Control (`built`, 136 question bank; Goodnotes reconciliation pending)
 
 ### Gastroesophageal Reflux Disease
 
@@ -1253,6 +1254,19 @@ Target modules presently supported:
 - Automated verification: 136 unique question IDs, 34 distinct concept groups, no duplicate answer choices, valid links to all ten lessons, four difficulty levels, ten diagrams, current reference links, and no em dash or en dash characters in public module prose
 - Browser verification: 1280 pixel production rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, nine current reference links, ten distinct questions per attempt, a different second sample with no overlap in the verified run, scoring with explanations and ten remediation links, and zero browser console errors; the shared module shell retains its previously verified 390 pixel behavior, and the new diagram grid has an explicit two-column mobile breakpoint with no fixed-width content
 - Build verification: Next.js production build passed August 26, 2026 with 417 static pages generated
+
+### Infection Prevention and Control
+
+- RxPrep source: NAPLEX 2023 infection-control content, PDF pages 954 through 956, visually reviewed in full
+- Current references reviewed: CDC Core Infection Prevention and Control Practices, Standard Precautions, Transmission-Based Precautions, hand-hygiene clinical guidance, safe-injection guidance, central-line and urinary-catheter prevention guidance, NHSN surveillance definitions, OSHA Bloodborne Pathogens requirements, FDA sharps-container guidance, and Joint Commission National Performance Goal 5
+- Learning structure: ten focused lessons, ten native systems and decision diagrams, and ten embedded knowledge checks
+- Assessment: 136 original questions across 34 distinct concept groups spanning the chain of infection, hierarchy of controls, Standard Precautions, task-based PPE, respiratory hygiene, Contact, Droplet, and Airborne Precautions, placement and transport, alcohol hand rub, soap and water, gloves, environmental cleaning, Spaulding classification, device necessity, CLABSI, CAUTI, VAP, injection safety, single-dose and multidose vials, infusion systems, spinal procedures, engineered sharps, disposal, occupational exposure, vaccination, surveillance definitions, device-day rates, clusters, feedback, governance, and high-consequence pathogen preparedness
+- Source reconciliation: the obsolete Universal Precautions framing was replaced by Standard Precautions for every patient; alcohol hand rub remains preferred in most clinical situations and is not categorically banned for C. difficile care; soap and water is required for visible soil and can be added during outbreaks; central-line antisepsis is product and population aware rather than reduced to one legacy concentration; contaminated needles are not routinely recapped; and single-dose containers, multidose vials, infusion systems, and spinal procedures follow current CDC injection guidance
+- Scope boundary: detailed organism-specific treatment, HIV and hepatitis postexposure regimens, antimicrobial pharmacotherapy, surgical prophylaxis, immunization schedules, and occupational-health protocol remain in focused infectious-disease or preventive-care modules
+- Goodnotes note: the dedicated infection-prevention lecture remains pending while the desktop Goodnotes session is locked; the RxPrep and current-source synthesis is complete and will receive a documented lecture reconciliation pass when access is restored
+- Automated verification: 136 unique question IDs, 34 distinct concept groups, no duplicate answer choices, valid links to all ten lessons, four difficulty levels, ten diagrams, and no em dash or en dash characters in public module prose
+- Browser verification: 1280 pixel desktop and 390 pixel mobile production rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, ten distinct concepts per attempt, a different second sample, scoring with ten explanations and ten remediation links, and zero browser console warnings or errors
+- Build verification: Next.js production build passed August 26, 2026 with 418 static pages generated
 
 ### DAST IV reproductive and gynecologic sequence
 

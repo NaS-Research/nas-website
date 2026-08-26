@@ -21,7 +21,7 @@ function prepareQuestion(question) {
 }
 
 function questionGroup(question) {
-  return String(question.id || question.question).replace(/-(principle|application|safety|case)$/, "");
+  return question.conceptGroup || String(question.id || question.question).replace(/-(principle|application|failure|safety|case)$/, "");
 }
 
 function sampleDistinctConcepts(questions, count) {
@@ -139,7 +139,7 @@ export default function PharmacyAssessment({ questions, compact = false, moduleI
                   </label>
                 ))}
               </div>
-              {submitted && <div className={`pharmacy-question__feedback ${isCorrect ? "is-correct" : ""}`}><strong>{isCorrect ? "Correct" : "Review this concept"}</strong><p>{question.rationale}</p>{question.reviewHref && <a href={question.reviewHref}>Review the lesson section</a>}</div>}
+              {submitted && <div className={`pharmacy-question__feedback ${isCorrect ? "is-correct" : ""}`}><strong>{isCorrect ? "Correct" : "Review this concept"}</strong><p>{question.explanation || question.rationale}</p>{question.reviewHref && <a href={question.reviewHref}>Review the lesson section</a>}</div>}
             </fieldset>
           );
         })}
