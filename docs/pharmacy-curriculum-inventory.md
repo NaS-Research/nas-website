@@ -1323,6 +1323,20 @@ Target modules presently supported:
 - Browser verification: 1280 pixel desktop and 390 pixel mobile production rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, twelve current reference links, ten questions per attempt, a substantially different second sample, scoring with ten explanations and ten remediation links, and zero browser console warnings or errors
 - Build verification: Next.js production build passed August 26, 2026 with 422 static pages generated
 
+### Clinical Toxicology and Antidotes
+
+- Primary course source: RxPrep 2023, Chapter 81, Toxicology and Antidotes, PDF pages 992 through 998. Every page was rendered and reviewed visually before synthesis.
+- Current verification sources: American Heart Association poisoning guidance; the United States and Canada acetaminophen consensus statement; American Academy of Clinical Toxicology position statements; American College of Medical Toxicology salicylate guidance; National Capital Poison Center button battery guidance; and current DailyMed labeling for acetylcysteine, naloxone, hydroxocobalamin, methylene blue, fomepizole, glucarpidase, uridine triacetate, and digoxin immune Fab.
+- Learning structure: ten focused lessons, ten native mechanism and clinical-decision diagrams, and ten embedded knowledge checks.
+- Assessment: 160 original questions across 40 distinct concept groups and four difficulty levels. Each attempt samples ten questions without replacement and randomizes answer order.
+- Source reconciliation: stabilization and ventilation precede antidote certainty; activated charcoal is selective rather than routine; toxidromes guide but do not prove one toxin; routine drug screens have important limitations; the acetaminophen nomogram is restricted to a valid known-time acute exposure with a concentration obtained at least four hours after ingestion; current acetylcysteine therapy can use eligible two-bag or three-bag regimens and ends by clinical criteria; naloxone requires continued breathing support and recurrence monitoring; flumazenil is not routine empiric therapy; high-dose insulin requires structured glucose and potassium monitoring; severe salicylate poisoning is assessed from the whole patient and prompts early dialysis planning; and current labeling defines methylene blue, glucarpidase, and uridine triacetate safety and timing boundaries.
+- Operational scope: antidote stock, preparation, administration, monitoring, poison-center coordination, envenomation response, rabies exposure triage, and disaster medication continuity are taught as one readiness system.
+- Scope boundary: detailed anticoagulation reversal, immunization and rabies schedules, oncology protocols, and substance-use treatment remain in focused modules where their full clinical context can be preserved.
+- Goodnotes note: dedicated lecture reconciliation remains pending while direct Goodnotes export is unavailable. The RxPrep and current-source synthesis is complete and will receive a documented pass when access is restored.
+- Automated verification: 160 unique question IDs, 40 concept groups, four difficulty levels, no duplicate answer-choice sets, valid links to all ten lessons, ten distinct diagrams, ten embedded checks, thirteen current references, and no em dash or en dash characters in public module prose.
+- Browser verification: 1280 pixel desktop and 390 pixel mobile production rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, thirteen current reference links, ten questions per attempt, a second sample with zero overlap, scoring with ten explanations and ten remediation links, and zero browser console warnings or errors.
+- Build verification: Next.js production build passed August 26, 2026 with 423 static pages generated.
+
 ### DAST IV reproductive and gynecologic sequence
 
 Reviewed source documents:
