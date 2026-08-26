@@ -1495,6 +1495,10 @@ Current guidance reconciliations:
 - Current teriparatide labeling replaces the older absolute two-year lifetime prohibition. Use beyond two years is reserved for patients who remain at or return to high fracture risk, while increased osteosarcoma-risk conditions remain exclusions.
 - Current Evenity labeling limits romosozumab to 12 monthly doses, requires two injections per dose, prevents initiation within the preceding year after myocardial infarction or stroke, and requires antiresorptive follow-on therapy.
 - Oral bisphosphonate administration, zoledronic-acid renal limits, site-specific fracture evidence, rare ONJ and atypical-femur risk, and risk-based holiday decisions replace a single class-wide duration rule.
+- Raynaud phenomenon is separated into primary and secondary patterns, with persistent or asymmetric ischemia protected from a benign label.
+- Current EULAR guidance places a dihydropyridine calcium antagonist, usually oral nifedipine, first for systemic-sclerosis-associated Raynaud, supports considering PDE5 inhibitors, and reserves intravenous iloprost for severe disease after oral therapy fails.
+- Topical nitrate exposure is reconciled as systemic nitrate exposure. It is never combined with sildenafil or another PDE5 inhibitor.
+- Digital ulcer, rest pain, failure to rewarm, infection, neurologic change, and necrosis use an urgent perfusion and wound pathway rather than routine outpatient titration.
 
 Deferred into focused modules:
 
