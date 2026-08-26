@@ -1598,10 +1598,6 @@ Current source reconciliations:
 - Retired pregnancy letters are absent. Pregnancy uses seven days of topical azole therapy for VVC under current CDC guidance, while BV, trichomoniasis, lactation, partner management, and follow-up remain syndrome and product specific.
 - Goodnotes was rechecked before this build, but macOS still reported a locked desktop session. A dedicated vaginitis or infectious-disease lecture will receive a documented reconciliation pass when direct access is restored.
 
-Deferred into focused modules:
-
-- Pelvic organ prolapse and fistula care
-
 ### Cervicitis and Pelvic Inflammatory Disease
 
 The cervicitis and pelvic inflammatory disease module separates lower-tract cervical inflammation from ascending upper-tract disease and then reconnects them through one diagnostic and therapeutic system. It includes cervical exudate and friability; bleeding and discharge presentations; chlamydia, gonorrhea, trichomoniasis, herpes, and Mycoplasma genitalium; low-value organism testing to avoid; BV and trichomoniasis overlap; PID screening in cervicitis; NAAT selection; risk-based presumptive cervicitis treatment; doxycycline and gonorrhea coverage; partner management; three-month retesting; genital tract anatomy; polymicrobial ascent; tubal injury; infertility, ectopic pregnancy, and chronic pelvic pain; the low PID treatment threshold; minimum and supportive diagnostic criteria; surgical and obstetric emergencies; hospitalization criteria; tubo-ovarian abscess; the 72-hour response checkpoint; outpatient ceftriaxone, doxycycline, and metronidazole; the ceftriaxone weight qualifier; administration and adherence; recommended and alternative parenteral regimens; oral bioavailability; IV-to-oral transition; total duration; persistent disease; M. genitalium resistance; pregnancy; IUD management; adolescence; HIV; beta-lactam allergy; temporary abstinence; and long-term reproductive follow-up. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 132-question assessment bank across 33 concepts and four reasoning levels.
@@ -1638,6 +1634,24 @@ Current source reconciliations:
 - Recurrent cervical therapy integrates PD-L1 selection, platinum and taxane therapy, bevacizumab tissue-healing and fistula risk, and tisotumab vedotin ocular prophylaxis. Selected local salvage remains distinct from systemic disease control.
 - Retired pregnancy letters are absent. Fertility, menopause, sexual health, symptom relief, palliative care, survivorship, practical access, hereditary implications, and clinical trials are integrated longitudinally rather than isolated from anticancer therapy.
 - Goodnotes was rechecked after access was reported restored, but macOS still presented a locked desktop session. The module will receive a documented lecture reconciliation pass when the session is manually unlocked.
+
+### Pelvic Organ Prolapse and Fistula Care
+
+The pelvic organ prolapse and fistula care module connects pelvic support anatomy, symptom burden, POP-Q examination, targeted urinary and bowel testing, conservative care, pelvic floor therapy, vaginal tissue care, pessary fitting and maintenance, reconstructive and obliterative surgery, continence decisions, mesh safety, fistula localization, repair principles, recovery, and prevention. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 144-question assessment bank across 36 concepts and four reasoning levels.
+
+Current source reconciliations:
+
+- RxPrep 2023 contains adjacent medication and self-care context but no dedicated pelvic organ prolapse or urogenital fistula chapter. Current ACOG, NICE, FDA, WHO, and EAU guidance therefore supplies the clinical framework.
+- Symptoms and function lead the assessment. POP-Q standardizes anatomy, but stage alone does not determine treatment and uncomplicated prolapse shown clearly on examination does not require routine imaging.
+- Conservative care includes observation, pressure and bowel management, supervised pelvic floor muscle training, and treatment of menopause-associated vaginal symptoms when appropriate. Vaginal estrogen is not presented as structural repair.
+- Pessary use is taught as an active care system. Selection, fitting, bladder and bowel function, self-management or clinic ownership, warning signs, removal, tissue surveillance, and neglect complications remain connected.
+- Surgical counseling begins with desired function, uterine preference, intercourse, fertility, recurrence tolerance, recovery, health, and anatomy. Reconstructive surgery is separated from colpocleisis and meaningful apical support is incorporated into repair planning.
+- Prolapse reduction testing can reveal occult stress urinary incontinence. Concurrent continence surgery may reduce postoperative stress leakage but adds voiding and procedural risk, so staged and concurrent strategies remain preference sensitive.
+- The 2019 FDA action is described precisely. Mesh for transvaginal prolapse repair is no longer marketed in the United States, while abdominal sacrocolpopexy mesh and stress incontinence slings remain distinct categories.
+- Continuous leakage after obstructed labor, pelvic surgery, radiation, malignancy, foreign body, or tissue injury is localized by the organs connected. Direct examination, dye testing, cystoscopy, fluid creatinine, excretory CT, and selected MRI answer different anatomic questions.
+- Repair timing follows tissue readiness rather than a universal interval. Diversion, infection control, healthy vascular tissue, tension-free watertight closure, route selection, ureteric and sphincter protection, postoperative drainage, and specialist experience are integrated.
+- Recovery includes kidneys, skin, nutrition, continence, bowel function, pain, sexual health, fertility, trauma, relationships, work, access, and social inclusion. Obstetric access, prompt injury recognition, referral, and reliable pessary follow-up remain prevention responsibilities.
+- Goodnotes was retried on August 26, 2026, but macOS still reported that the session was locked. The module will receive a documented lecture reconciliation pass when the Mac session is manually unlocked.
 
 ## First production sequence
 
