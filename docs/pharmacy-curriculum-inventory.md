@@ -765,6 +765,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 393 static pages generated
 - Goodnotes note: the thyroid medicinal-chemistry lectures and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
+### Adrenal Pharmacology
+
+- Course scope: HPA axis control through CRH, ACTH, MC2R, MRAP, circadian timing, stress response, and feedback; adrenal cortex zones and their dominant outputs; cholesterol entry through StAR and the CYP11A1, CYP17A1, CYP21A2, CYP11B1, and CYP11B2 pathways; glucocorticoid and mineralocorticoid receptor signaling; 11-beta-HSD2 tissue protection; corticosteroid scaffold and structure activity relationships; the clinical glucocorticoid family; prednisone and cortisone activation; protein binding, CYP3A4 disposition, and local delivery; dose equivalence and conversion; cumulative exposure, HPA suppression, withdrawal, and tapering
+- Current references reviewed: NCBI Endotext chapters on ACTH action, adrenal steroidogenesis, congenital adrenal hyperplasia, and adrenal suppression; the 2024 Endocrine Society and European Society of Endocrinology guideline on glucocorticoid-induced adrenal insufficiency; the Endocrine Society primary adrenal insufficiency guideline; current DailyMed methylprednisolone and dexamethasone prescribing information; and the RxPrep 2023 systemic corticosteroid chapter for historical scope comparison
+- Learning structure: ten content-driven lessons, ten native control, zone, synthesis, receptor, protection, scaffold, family, disposition, equivalence, and exposure diagrams, and ten embedded knowledge checks
+- Assessment: 104 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: disease-specific Cushing syndrome and adrenal insufficiency treatment remain reserved for their dedicated modules; the older simplified rule that systemic treatment beyond fourteen days always requires tapering was replaced by the current guideline recommendation that short-term treatment under three to four weeks generally does not require tapering solely for HPA protection; long-term tapering begins only after the treated disease is controlled; oral and nonoral glucocorticoid exposure are counted together; strong CYP3A4 inhibition and long-acting agents were included as suppression risks; and equivalence values were presented as approximate anti-inflammatory comparisons rather than exact patient-specific substitutions
+- Automated verification: 104 unique question IDs, four unique choices per question, valid lesson links, ten diagrams, and no em dash or en dash characters in public prose
+- Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, ten diagrams, all ten embedded knowledge checks, ten-question randomized attempts with changed question sets, complete scoring, ten remediation links, and no browser errors or warnings
+- Build verification: Next.js production build passed August 25, 2026 with 394 static pages generated
+- Goodnotes note: the dedicated adrenal pharmacology lectures and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -1015,7 +1027,7 @@ Available documents include adrenal disorders, Cushing syndrome, Addison disease
 
 Target modules:
 
-1. Adrenal Pharmacology
+1. Adrenal Pharmacology (`built`, 104 question bank; Goodnotes reconciliation pending)
 2. Cushing Syndrome
 3. Adrenal Insufficiency and Adrenal Crisis
 4. Gonadal Hormones
