@@ -141,6 +141,7 @@ import BetaLactamPharmacologyVisual, { betaLactamPharmacologyVisualTypes } from 
 import AminoglycosidePharmacologyVisual, { aminoglycosidePharmacologyVisualTypes } from "@/components/learn/AminoglycosidePharmacologyVisual";
 import FluoroquinolonePharmacologyVisual, { fluoroquinolonePharmacologyVisualTypes } from "@/components/learn/FluoroquinolonePharmacologyVisual";
 import MacrolidePharmacologyVisual, { macrolidePharmacologyVisualTypes } from "@/components/learn/MacrolidePharmacologyVisual";
+import TetracyclinePharmacologyVisual, { tetracyclinePharmacologyVisualTypes } from "@/components/learn/TetracyclinePharmacologyVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -448,6 +449,7 @@ export default async function PharmacyModulePage({ params }) {
               {aminoglycosidePharmacologyVisualTypes.includes(submodule.visual) && <AminoglycosidePharmacologyVisual type={submodule.visual} />}
               {fluoroquinolonePharmacologyVisualTypes.includes(submodule.visual) && <FluoroquinolonePharmacologyVisual type={submodule.visual} />}
               {macrolidePharmacologyVisualTypes.includes(submodule.visual) && <MacrolidePharmacologyVisual type={submodule.visual} />}
+              {tetracyclinePharmacologyVisualTypes.includes(submodule.visual) && <TetracyclinePharmacologyVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
