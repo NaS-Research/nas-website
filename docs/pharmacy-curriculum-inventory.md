@@ -844,6 +844,19 @@ This inventory records the source material available in the founder's Goodnotes 
 - Browser verification: 390 pixel mobile rendering, ten diagrams, all ten embedded knowledge checks, ten-question randomized attempts with unique questions, changed question sets, complete scoring, explanations, and ten remediation links
 - Build verification: Next.js production build passed August 26, 2026 with 408 static pages generated
 
+### Perioperative and Critical-Care Pharmacology
+
+- Course scope: stress-related upper gastrointestinal bleeding risk, proton pump inhibitors, histamine-2 receptor antagonists, enteral nutrition and deprescribing, local-anesthetic ionization and sodium-channel pharmacology, amide and ester disposition, additive exposure, local anesthetic systemic toxicity, 20 percent lipid emulsion, modified resuscitation, propofol, etomidate, ketamine, malignant hyperthermia, dantrolene, depolarizing and nondepolarizing neuromuscular block, succinylcholine hyperkalemia and pediatric warnings, pseudocholinesterase deficiency, rocuronium, vecuronium, cisatracurium, Hofmann elimination, neuromuscular-blocker storage and bedside safety, quantitative train-of-four monitoring, sugammadex, neostigmine, tranexamic acid, aminocaproic acid, renal adjustment, and neuraxial route-error prevention
+- Course source reviewed: RxPrep NAPLEX 2023 Acute and Critical Care Medicine chapter, PDF pages 726 through 728, visually inspected in full as part of the complete chapter audit
+- Current references reviewed: 2024 SCCM and ASHP stress-related upper gastrointestinal bleeding guideline, 2023 ASA neuromuscular-blockade monitoring and antagonism guideline, current ASRA LAST checklist, MHAUS crisis guidance, ISMP neuromuscular-blocker safeguards, and current DailyMed labeling for bupivacaine, succinylcholine, rocuronium, sugammadex, neostigmine, ketamine, tranexamic acid, and aminocaproic acid
+- Learning structure: eleven content-driven lessons, eleven native risk, local-anesthetic, toxicity-rescue, induction, malignant-hyperthermia, neuromuscular-foundation, succinylcholine, nondepolarizing-agent, paralysis-safety, monitoring-reversal, and antifibrinolytic diagrams, and eleven embedded knowledge checks
+- Assessment: 112 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: mechanical ventilation alone was removed as an automatic stress-ulcer indication; low-risk enterally fed patients do not receive routine prophylaxis; PPI and H2RA options remain acceptable in selected at-risk adults; local-anesthetic toxicity uses early 20 percent lipid emulsion and modified rather than unaltered ACLS medication choices; induction agents are selected through physiology rather than one universal hierarchy; malignant hyperthermia treatment begins with the early hypermetabolic pattern and repeated actual-weight dantrolene; neuromuscular blockers are explicitly separated from analgesia and unconsciousness; succinylcholine teaching includes receptor-upregulation hyperkalemia, pediatric boxed-warning, trigger, bradycardia, and prolonged-block risk; paralysis is paired with ISMP storage and complete bedside protections; clinical strength tests and elapsed time do not replace quantitative adductor-pollicis monitoring; extubation requires a train-of-four ratio of at least 0.9; reversal follows agent and measured depth; and tranexamic-acid neuraxial route errors plus renal handling are taught as high-priority safeguards
+- Automated verification: 112 unique question IDs, 112 unique prompts, four unique choices per question, valid lesson links, eleven diagrams, and no em dash or en dash characters in public prose
+- Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, eleven diagrams, all eleven embedded knowledge checks, ten-question randomized attempts with unique questions, a different subsequent set and order, complete scoring, explanations, ten remediation links, and no browser errors or warnings
+- Build verification: Next.js production build passed August 26, 2026 with 409 static pages generated
+- Source routing: intravenous immunoglobulin material on RxPrep page 718 remains reserved for a future immunoglobulin-focused module; the acute and critical-care chapter is otherwise fully routed across existing focused modules
+
 ## Goodnotes availability
 
 ### Books
@@ -852,7 +865,7 @@ This inventory records the source material available in the founder's Goodnotes 
 
 The RxPrep text is available locally for scope comparison and calculations review. It is not stored in Git and its prose or proprietary questions are not reproduced.
 
-The Acute and Critical Care Medicine chapter has been audited completely. Its material is routed to the existing Fluid and Electrolyte Therapy and Acute Decompensated Heart Failure modules, the completed Shock and Vasoactive Pharmacotherapy and ICU Analgesia, Sedation, and Delirium modules, and future focused modules for perioperative pharmacology and remaining critical-care topics.
+The Acute and Critical Care Medicine chapter has been audited completely. Its material is routed to the existing Fluid and Electrolyte Therapy and Acute Decompensated Heart Failure modules, the completed Shock and Vasoactive Pharmacotherapy, ICU Analgesia, Sedation, and Delirium, and Perioperative and Critical-Care Pharmacology modules. Intravenous immunoglobulin material remains reserved for a future immunoglobulin-focused module.
 
 ### DAST I
 
