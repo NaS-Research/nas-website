@@ -1920,6 +1920,25 @@ Current source reconciliations:
 - Bite wounds contaminated with saliva use current CDC dirty or major tetanus rules. Retired pregnancy letters are excluded from every vaccine and antimicrobial decision.
 - Goodnotes remains unavailable because the Mac session is locked. Any dedicated lecture will receive a documented reconciliation pass after manual unlock.
 
+### Burn Assessment and Initial Care
+
+The burn assessment and initial-care module separates emergency stabilization, inhalation injury, circumferential restriction, modern burn depth, TBSA estimation, thermal first aid, chemical and electrical injury, current burn-center referral, minor wound care, topical stewardship, silver sulfadiazine safety, burn-shock resuscitation, infection, tetanus, rehabilitation, scar care, and psychosocial recovery. It contains ten focused lessons, ten original interactive diagrams, ten embedded checks, and a 116-question assessment bank across 28 concepts, four reasoning levels, and four calculations. The 452-page production build, desktop layout, 390 pixel phone layout, overflow-free responsive diagrams, ten-question sampling, scoring, ten remediation links, and a subsequent attempt with zero repeated questions were verified on August 26, 2026.
+
+Current source reconciliations:
+
+- The burn-care portion of RxPrep 2023 was reviewed for depth, extent, referral, first aid, topical treatment, complications, and self-care. Its prose, tables, and questions were not reproduced.
+- First-, second-, and third-degree terminology is retired in the instructional sequence. Current depth language uses superficial, superficial partial-thickness, deep partial-thickness, and full-thickness injury.
+- Superficial epidermal erythema is excluded from TBSA estimation for resuscitation. Partial-thickness and full-thickness areas are counted using a declared palmar, rule-of-nines, or age-adjusted Lund and Browder method.
+- Current American Burn Association criteria replace universal two-inch and location-only thresholds. Depth, TBSA, critical site, inhalation, chemical or electrical mechanism, trauma, comorbidity, pain, age, and local capability shape consultation and transfer.
+- Thermal first aid uses cool running water, never ice. Constricting items are removed early, adherent material is left in place, the wound is covered cleanly, and systemic hypothermia is prevented.
+- Chemical decontamination and electrical source control have separate pathways because rescuer exposure, ongoing tissue injury, arrhythmia, muscle damage, compartment syndrome, and trauma can be hidden beneath limited skin findings.
+- Selected minor burns use gentle cleaning, plain petroleum jelly, and nonstick protection. Routine topical antibiotics and contaminated home remedies are not presented as default care.
+- Silver sulfadiazine is placed within its current labeled adjunctive role for wound sepsis prevention and treatment in second- and third-degree burns, not as a universal first-aid cream. Systemic absorption, severe skin reactions, leukopenia, G6PD-associated hemolysis, organ dysfunction, age, pregnancy timing, treated area, and duration remain visible.
+- Current ABA burn-shock guidance is used for adults with burns of at least twenty percent TBSA. The initial estimate is two milliliters per kilogram per percent TBSA over the first twenty-four hours, timed from the burn and titrated to urine output and whole-patient physiology rather than treated as a fixed endpoint.
+- Pediatric proportions, broad pediatric consultation, safeguarding, critical-site function, rehabilitation, contracture prevention, nutrition, scar protection, and psychological recovery are integrated rather than postponed until wound closure.
+- Current CDC tetanus wound guidance replaces memorized legacy schedules, and retired pregnancy letters are excluded from every medication and vaccine decision.
+- Goodnotes was retried after the user reported access restored, but the Mac session still returned a locked state. Any dedicated burn lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:

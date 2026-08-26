@@ -124,6 +124,7 @@ import SuperficialFungalSkinInfectionsVisual, { superficialFungalSkinInfectionsV
 import LiceScabiesVisual, { liceScabiesVisualTypes } from "@/components/learn/LiceScabiesVisual";
 import MinorWoundCareVisual, { minorWoundCareVisualTypes } from "@/components/learn/MinorWoundCareVisual";
 import AnimalHumanBitesVisual, { animalHumanBitesVisualTypes } from "@/components/learn/AnimalHumanBitesVisual";
+import BurnAssessmentInitialCareVisual, { burnAssessmentInitialCareVisualTypes } from "@/components/learn/BurnAssessmentInitialCareVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -414,6 +415,7 @@ export default async function PharmacyModulePage({ params }) {
               {liceScabiesVisualTypes.includes(submodule.visual) && <LiceScabiesVisual type={submodule.visual} />}
               {minorWoundCareVisualTypes.includes(submodule.visual) && <MinorWoundCareVisual type={submodule.visual} />}
               {animalHumanBitesVisualTypes.includes(submodule.visual) && <AnimalHumanBitesVisual type={submodule.visual} />}
+              {burnAssessmentInitialCareVisualTypes.includes(submodule.visual) && <BurnAssessmentInitialCareVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
