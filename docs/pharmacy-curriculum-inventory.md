@@ -1814,6 +1814,26 @@ Current source reconciliations:
 - Topical retinoids are avoided during pregnancy. Every prescription, OTC active, and cosmetic ingredient is reconciled because topical route alone does not establish reproductive safety.
 - Goodnotes was retried after the user reported access restored, but macOS still returned a locked-session state. Any dedicated acne lecture will receive a documented reconciliation pass after manual unlock, with conflicts flagged rather than silently imported.
 
+### Atopic Dermatitis
+
+The atopic dermatitis module connects clinical diagnosis and whole-patient severity to barrier biology, type 2 inflammation, neural itch, skin care, topical corticosteroids, calcineurin inhibitors, crisaborole, tapinarof, roflumilast, topical ruxolitinib, infection, wet wraps, bleach baths, phototherapy, biologics, oral JAK inhibitors, conventional immunosuppressants, pregnancy, pediatrics, skin color, comorbidities, and closed-loop follow-up. It contains ten focused lessons, ten original interactive diagrams, ten embedded checks, and a 112-question assessment bank across 28 concepts and four reasoning levels. The 447-page production build, desktop layout, 390 pixel phone layout, overflow-free responsive diagrams, ten-question sampling, scoring, ten remediation links, and a subsequent attempt with zero repeated questions were verified on August 26, 2026.
+
+Current source reconciliations:
+
+- The eczema portion of RxPrep 2023 Chapter 39 was reviewed for presentation, triggers, moisturizer, topical corticosteroids, calcineurin inhibitors, crisaborole, dupilumab, ruxolitinib, upadacitinib, adverse effects, and counseling. Its prose, tables, and questions were not reproduced.
+- Current AAD adult and pediatric guidance replaces the older sequence. Moisturizers, topical corticosteroids, calcineurin inhibitors, PDE4 inhibitors, JAK inhibitors, and newer aryl hydrocarbon receptor therapy are integrated by age, site, severity, prior control, and label.
+- The AAD 2025 focused update adds strong adult recommendations for tapinarof, roflumilast, lebrikizumab, and nemolizumab with concomitant topical therapy.
+- Tapinarof cream 1 percent is correctly labeled once daily for atopic dermatitis from age two. Its atopic dermatitis age range is distinguished from its adult-only plaque psoriasis indication.
+- Current roflumilast labeling uses cream 0.15 percent from age six and cream 0.05 percent from age two through five for mild to moderate atopic dermatitis. The psoriasis strength is not substituted, and moderate to severe hepatic impairment remains a contraindication.
+- June 2026 ruxolitinib cream labeling expands short-term and noncontinuous chronic treatment to non-immunocompromised patients age two and older. The 20 percent body surface limit, no occlusion, age-specific tube limits, boxed warnings, and combination restrictions remain explicit.
+- Routine topical antimicrobials, antiseptics, oral antibiotics, and antihistamines are not treated as core therapy for uninfected disease. Clinical infection is classified by organism and severity, while eczema herpeticum receives an urgent antiviral pathway.
+- Wet wraps and dilute bleach baths are presented as selected clinician-directed adjuncts whose concentration, product, area, duration, absorption, infection risk, ventilation, and caregiver technique determine safety.
+- Dupilumab, tralokinumab, lebrikizumab, and nemolizumab are separated by target, age, weight, loading, maintenance, topical companion use, eye risk, vaccination, infection, and current product label rather than grouped as interchangeable monoclonal antibodies.
+- Abrocitinib and upadacitinib require structured infection, tuberculosis, hepatitis, malignancy, cardiovascular, thrombosis, blood count, liver, lipid, pregnancy, vaccination, smoking, and interaction screening. Selection is not based on speed alone.
+- Cyclosporine, methotrexate, azathioprine, and mycophenolate remain conditional specialist options with drug-specific monitoring. Routine systemic corticosteroids are rejected because transient control, rebound, and cumulative toxicity do not create durable care.
+- Retired pregnancy letters are excluded. Reproductive decisions use product-specific evidence, disease burden, route, exposure area, timing, alternatives, lactation, and shared goals.
+- Goodnotes remains inaccessible because the Mac session reports a locked state. Any dedicated lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:

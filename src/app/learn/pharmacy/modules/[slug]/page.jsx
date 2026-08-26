@@ -119,6 +119,7 @@ import CoughCommonColdVisual, { coughCommonColdVisualTypes } from "@/components/
 import CommonEyeConditionsVisual, { commonEyeConditionsVisualTypes } from "@/components/learn/CommonEyeConditionsVisual";
 import CommonEarConditionsVisual, { commonEarConditionsVisualTypes } from "@/components/learn/CommonEarConditionsVisual";
 import AcneVisual, { acneVisualTypes } from "@/components/learn/AcneVisual";
+import AtopicDermatitisVisual, { atopicDermatitisVisualTypes } from "@/components/learn/AtopicDermatitisVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -404,6 +405,7 @@ export default async function PharmacyModulePage({ params }) {
               {commonEyeConditionsVisualTypes.includes(submodule.visual) && <CommonEyeConditionsVisual type={submodule.visual} />}
               {commonEarConditionsVisualTypes.includes(submodule.visual) && <CommonEarConditionsVisual type={submodule.visual} />}
               {acneVisualTypes.includes(submodule.visual) && <AcneVisual type={submodule.visual} />}
+              {atopicDermatitisVisualTypes.includes(submodule.visual) && <AtopicDermatitisVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
