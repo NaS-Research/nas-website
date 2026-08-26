@@ -1728,6 +1728,28 @@ Current source reconciliations:
 - The older universal estrogen prohibition is not copied. Pregnancy and contraception use current individualized risk, organ status, thrombosis, treatment, fertility, and patient goals.
 - Goodnotes was retried before this build, but macOS continued to report a locked session. Any dedicated lecture will receive a documented reconciliation pass after manual unlock, with conflicts flagged rather than silently imported.
 
+### Cough and Common Cold
+
+The cough and common cold module separates uncomplicated viral illness from influenza, COVID-19, pneumonia, and other urgent pathways, then organizes symptom-targeted ingredient selection, Drug Facts reconciliation, supportive care, pediatric care, guaifenesin, dextromethorphan, benzonatate, opioid antitussives, systemic and topical decongestants, interactions, natural-product evidence, antibiotic stewardship, and closed-loop follow-up. It contains nine focused lessons, nine original interactive diagrams, nine embedded checks, and a 128-question assessment bank across 32 concepts and four reasoning levels. Desktop and 390 pixel mobile layouts, ten-question sampling without repetition, scoring, explanations, ten remediation links, a subsequent attempt with zero overlap, an overflow-free mobile layout, zero browser warnings or errors, and the 443-page production build were verified on August 26, 2026.
+
+Current source reconciliations:
+
+- The cough and common-cold portion of RxPrep 2023 Chapter 37 was reviewed for scope, symptom treatment, legacy doses, combinations, pediatric cautions, natural products, and counseling. Its prose, tables, and questions were not reproduced.
+- Current CDC guidance replaces the older pediatric dose table. CDC advises against OTC cough and cold medicines in children younger than six, FDA does not recommend them below age two, and many manufacturers label products not to use below age four. The most protective applicable current instruction controls the recommendation.
+- Cold-like symptoms are not automatically labeled a common cold. The module protects time-sensitive influenza and COVID-19 antiviral evaluation and routes breathing difficulty, dehydration, abnormal vital signs, focal lung findings, prolonged fever, symptoms beyond ten days without improvement, and double worsening to reassessment.
+- Colored mucus is not used to diagnose bacterial infection. Antibiotics are rejected for uncomplicated viral colds and routine acute bronchitis unless a defined bacterial indication is established.
+- Product selection begins with active ingredients rather than brand names. Every ingredient must answer a present symptom, and total daily acetaminophen, dextromethorphan, antihistamine, and decongestant exposure is reconciled across single and combination products.
+- Guaifenesin is correctly presented as an expectorant rather than a mucolytic or direct cough suppressant. The recommendation requires a productive secretion target and the exact current label.
+- Dextromethorphan includes MAOI, serotonergic, sedative, CYP2D6, overdose, and misuse reasoning. Serotonin toxicity is separated from ordinary viral fever.
+- Benzonatate remains limited to patients age ten and older, must be swallowed whole, and receives prominent secure-storage counseling because small accidental pediatric ingestions can produce rapid severe or fatal toxicity.
+- FDA's adult-only restriction for prescription codeine and hydrocodone cough products replaces any older pediatric use. Adult use still requires respiratory, sedative, alcohol, misuse, addiction, overdose, and breastfeeding risk review.
+- FDA's proposed order to remove oral phenylephrine from the OTC monograph is described accurately as an unresolved efficacy action rather than a completed withdrawal or a new safety recall. Current status must be rechecked before future publication updates.
+- Pseudoephedrine and topical decongestants are separated by systemic exposure, expected benefit, cardiovascular and urinary risk, MAOI interaction, duration, and rebound congestion. Topical use receives a short label-consistent stop date.
+- Supportive care includes fluids according to clinical need, rest, clean cool-mist humidification, saline, gentle suction, honey only from age one, and analgesic exposure calculated across all products.
+- Oral zinc receives cautious discussion of early, formulation-dependent, modest possible benefit. Intranasal zinc is rejected because of loss-of-smell risk. Vitamin C and echinacea claims remain limited by inconsistent evidence and heterogeneous products.
+- FDA's statement that no homeopathic cough and cold product is FDA approved is explicit. Natural or homeopathic marketing does not replace accurate dosing, age protection, or evaluation of a concerning trajectory.
+- Goodnotes remains inaccessible because the Mac session still reports a locked state. Any dedicated lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
