@@ -130,6 +130,7 @@ import TopicalCorticosteroidVisual, { topicalCorticosteroidVisualTypes } from "@
 import SunscreenPhotoprotectionVisual, { sunscreenPhotoprotectionVisualTypes } from "@/components/learn/SunscreenPhotoprotectionVisual";
 import HerpesLabialisVisual, { herpesLabialisVisualTypes } from "@/components/learn/HerpesLabialisVisual";
 import SeborrheicDermatitisVisual, { seborrheicDermatitisVisualTypes } from "@/components/learn/SeborrheicDermatitisVisual";
+import AlopeciaVisual, { alopeciaVisualTypes } from "@/components/learn/AlopeciaVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -426,6 +427,7 @@ export default async function PharmacyModulePage({ params }) {
               {sunscreenPhotoprotectionVisualTypes.includes(submodule.visual) && <SunscreenPhotoprotectionVisual type={submodule.visual} />}
               {herpesLabialisVisualTypes.includes(submodule.visual) && <HerpesLabialisVisual type={submodule.visual} />}
               {seborrheicDermatitisVisualTypes.includes(submodule.visual) && <SeborrheicDermatitisVisual type={submodule.visual} />}
+              {alopeciaVisualTypes.includes(submodule.visual) && <AlopeciaVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
