@@ -1376,6 +1376,19 @@ Target modules presently supported:
 - Browser verification: 1280 pixel desktop and 390 pixel mobile production rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, twelve current reference links, ten questions per attempt, a second sample with zero overlap, scoring with ten explanations and ten remediation links, and zero browser console warnings or errors.
 - Build verification: Next.js production build passed August 26, 2026 with 426 static pages generated.
 
+### Systemic Lupus Erythematosus
+
+- Primary course source: RxPrep 2023, Chapter 46 systemic lupus erythematosus section, PDF pages 652 and 653, printed pages 644 and 645. Both pages were rendered and reviewed visually before synthesis.
+- Current verification sources: 2025 American College of Rheumatology systemic lupus erythematosus treatment guideline; 2024 ACR lupus nephritis guideline summary; 2019 EULAR and ACR classification criteria; 2020 ACR reproductive health guideline; ACR vaccination guidance; and current DailyMed labeling for hydroxychloroquine, belimumab, anifrolumab, voclosporin, and obinutuzumab.
+- Learning structure: ten focused lessons, ten native mechanism and clinical-decision diagrams, and ten embedded knowledge checks.
+- Assessment: 160 original questions across 40 distinct concept groups and four difficulty levels. Each attempt samples ten questions without replacement and randomizes answer order.
+- Source reconciliation: ANA is taught as an entry criterion within a classification framework rather than a diagnosis; flare, infection, toxicity, thrombosis, and damage are assessed in parallel; hydroxychloroquine is presented as routine and generally indefinite foundation therapy with average long-term exposure of 5 mg/kg actual body weight daily or less; eye and systemic toxicity are both monitored; glucocorticoids are minimized through early organ-specific steroid-sparing therapy; the April 2026 anifrolumab label includes adult intravenous and subcutaneous routes; current pediatric belimumab labeling replaces older adult-only summaries; current obinutuzumab labeling is distinguished from selected guideline use of rituximab; and lupus nephritis follows the current biopsy threshold, combination-treatment framework, and renal-response schedule.
+- Scope boundary: multiple sclerosis, Raynaud phenomenon, celiac disease, myasthenia gravis, Sjogren syndrome, and psoriasis remain separate focused modules.
+- Goodnotes note: dedicated systemic lupus erythematosus lecture reconciliation remains pending because the Mac was locked when local Goodnotes access was retried on August 26, 2026. The RxPrep and current-source synthesis is complete and will receive a documented lecture pass when access is restored.
+- Automated verification: 160 unique question IDs, 40 concept groups, four difficulty levels, 160 unique question prompts, no duplicate choices within an item, valid links to all ten lessons, ten distinct diagrams, ten embedded checks, eleven current references, and no em dash or en dash characters in public module prose.
+- Browser verification: 1280 pixel desktop and 390 pixel mobile production rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, eleven current reference links, ten questions per attempt, a second sample with zero overlap, scoring with ten explanations and ten remediation links, and zero browser console warnings or errors.
+- Build verification: Next.js production build passed August 26, 2026 with 427 static pages generated.
+
 ### DAST IV reproductive and gynecologic sequence
 
 Reviewed source documents:
