@@ -107,6 +107,7 @@ import MyastheniaGravisVisual, { myastheniaGravisVisualTypes } from "@/component
 import SjogrenDiseaseVisual, { sjogrenDiseaseVisualTypes } from "@/components/learn/SjogrenDiseaseVisual";
 import PsoriasisVisual, { psoriasisVisualTypes } from "@/components/learn/PsoriasisVisual";
 import GenitourinaryMedicinalChemistryVisual, { genitourinaryMedicinalChemistryVisualTypes } from "@/components/learn/GenitourinaryMedicinalChemistryVisual";
+import VaginitisVulvovaginalVisual, { vaginitisVulvovaginalVisualTypes } from "@/components/learn/VaginitisVulvovaginalVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -380,6 +381,7 @@ export default async function PharmacyModulePage({ params }) {
               {sjogrenDiseaseVisualTypes.includes(submodule.visual) && <SjogrenDiseaseVisual type={submodule.visual} />}
               {psoriasisVisualTypes.includes(submodule.visual) && <PsoriasisVisual type={submodule.visual} />}
               {genitourinaryMedicinalChemistryVisualTypes.includes(submodule.visual) && <GenitourinaryMedicinalChemistryVisual type={submodule.visual} />}
+              {vaginitisVulvovaginalVisualTypes.includes(submodule.visual) && <VaginitisVulvovaginalVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
