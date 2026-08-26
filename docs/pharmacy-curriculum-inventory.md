@@ -1085,7 +1085,7 @@ Target modules:
 
 1. Contraception
 2. Menopausal Hormone Therapy (`built`, 100 question bank; 61-page dedicated Goodnotes lecture reconciled)
-3. Benign Prostatic Hyperplasia
+3. Benign Prostatic Hyperplasia (`built`, 104 question bank; dedicated Goodnotes lecture reconciliation pending)
 4. Erectile Dysfunction
 5. Urinary Incontinence
 6. Osteoporosis
@@ -1122,6 +1122,7 @@ Completed production modules:
 4. Contraceptive Pharmacotherapy
 5. Pregnancy and Lactation Pharmacotherapy
 6. Menopausal Hormone Therapy
+7. Benign Prostatic Hyperplasia
 
 The menstrual and gynecologic module includes menstrual assessment, PALM-COEIN classification, acute abnormal uterine bleeding, chronic heavy menstrual bleeding, dysmenorrhea, premenstrual disorders, endometriosis, and uterine fibroids. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 100-question assessment bank.
 
@@ -1132,6 +1133,8 @@ The contraception module includes person-centered selection, U.S. MEC, combined 
 The pregnancy and lactation module includes pregnancy context, maternal pharmacokinetics, placental transfer, developmental timing, FDA labeling, common symptom management, diabetes, preeclampsia, venous thromboembolism, lactation exposure science, and drug-specific breastfeeding counseling. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 100-question assessment bank. Desktop and 390 pixel mobile layouts, ten-question assessment launch, answer randomization support, remediation anchors, and the production build were verified on August 25, 2026.
 
 The menopausal hormone therapy module includes the menopausal transition, vasomotor neurobiology, estrogen pharmacology and routes, progestogen regimens, endometrial protection, bleeding surveillance, nonhormonal vasomotor treatment, genitourinary syndrome, risk stratification, prevention boundaries, and longitudinal reassessment. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 100-question assessment bank. Desktop and 390 pixel mobile layouts, ten-question assessment launch, fresh question sampling, answer randomization, scoring, explanations, ten remediation links, an overflow-free mobile layout, and the production build were verified on August 25, 2026.
+
+The benign prostatic hyperplasia module includes LUTS terminology, transition-zone biology, initial evaluation, red-flag triage, conservative care, alpha blockers, 5-alpha-reductase inhibitors, tadalafil, persistent storage symptoms, acute retention, procedural selection, and longitudinal medication management. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 104-question assessment bank. Desktop and 390 pixel mobile layouts, ten-question sampling without repetition, a fresh subsequent attempt, randomized answer support, valid remediation links, an overflow-free mobile layout, zero browser console errors, and the 403-page production build were verified on August 25, 2026. The complete RxPrep 2023 BPH chapter was reviewed visually. The dedicated Goodnotes lecture remains pending because the Mac was locked during this build and will receive a documented reconciliation pass when access is restored.
 
 Current guidance reconciliations:
 
@@ -1157,6 +1160,12 @@ Current guidance reconciliations:
 - Elinzanetant, approved in 2025, is included as an NK1 and NK3 antagonist with its own bedtime regimen, sedation precautions, interactions, and dose-modification guidance.
 - USPSTF prevention guidance is separated from symptom treatment: systemic hormone therapy is not initiated solely for primary prevention of cardiovascular disease, dementia, or other chronic conditions.
 - The lecture's 2017 to 2018 gender-affirming hormone material was not folded into the menopause module. It remains a clinically distinct future module that requires contemporary, source-complete reconciliation before publication.
+- Current AUA and 2026 EAU guidance separates LUTS, prostate enlargement, and obstruction; initial evaluation uses history, examination, IPSS, and urinalysis rather than PSA alone.
+- Alpha blockers are taught as rapid symptom therapies that do not shrink the prostate or prevent long-term progression. Selection includes orthostasis, ejaculation, interactions, exact product instructions, and current or prior cataract-surgery exposure.
+- Finasteride and dutasteride are reserved for evidence of enlargement and progression risk. Their slow onset, sexual and reproductive counseling, PSA suppression, treated PSA trend, and lack of a prostate-cancer prevention indication are explicit.
+- Tadalafil is taught as the 5 mg once-daily BPH regimen, with nitrate and guanylate-cyclase stimulator contraindications, renal boundaries, vasodilator interactions, and the current 26-week limit when initiating it with finasteride.
+- Persistent storage symptoms require a distinct bladder and emptying assessment. Current EAU guidance advises against alpha blocker plus antimuscarinic therapy when post-void residual exceeds 150 mL.
+- Acute urinary retention requires prompt decompression. For BPH-related retention, current AUA guidance supports oral alpha blockade for at least three days before a trial without catheter when clinically appropriate.
 
 Deferred into focused modules:
 
