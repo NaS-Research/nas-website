@@ -104,6 +104,7 @@ import MultipleSclerosisVisual from "@/components/learn/MultipleSclerosisVisual"
 import RaynaudPhenomenonVisual from "@/components/learn/RaynaudPhenomenonVisual";
 import CeliacDiseaseVisual from "@/components/learn/CeliacDiseaseVisual";
 import MyastheniaGravisVisual, { myastheniaGravisVisualTypes } from "@/components/learn/MyastheniaGravisVisual";
+import SjogrenDiseaseVisual, { sjogrenDiseaseVisualTypes } from "@/components/learn/SjogrenDiseaseVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -374,6 +375,7 @@ export default async function PharmacyModulePage({ params }) {
               {raynaudPhenomenonVisualTypes.includes(submodule.visual) && <RaynaudPhenomenonVisual type={submodule.visual} />}
               {celiacDiseaseVisualTypes.includes(submodule.visual) && <CeliacDiseaseVisual type={submodule.visual} />}
               {myastheniaGravisVisualTypes.includes(submodule.visual) && <MyastheniaGravisVisual type={submodule.visual} />}
+              {sjogrenDiseaseVisualTypes.includes(submodule.visual) && <SjogrenDiseaseVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>

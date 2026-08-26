@@ -21,7 +21,7 @@ function prepareQuestion(question) {
 }
 
 function questionGroup(question) {
-  return question.conceptGroup || String(question.id || question.question).replace(/-(principle|application|failure|safety|case)$/, "");
+  return question.conceptGroup || question.concept || String(question.id || question.question || question.prompt).replace(/-(principle|application|failure|safety|case)$/, "");
 }
 
 function sampleDistinctConcepts(questions, count) {
@@ -128,7 +128,7 @@ export default function PharmacyAssessment({ questions, compact = false, moduleI
           const isCorrect = selected === question.answer;
           return (
             <fieldset className="pharmacy-question" key={question.id}>
-              <legend><span>{String(index + 1).padStart(2, "0")}</span>{question.question}</legend>
+              <legend><span>{String(index + 1).padStart(2, "0")}</span>{question.question || question.prompt}</legend>
               {question.case && <p className="pharmacy-question__case">{question.case}</p>}
               <div className="pharmacy-question__choices">
                 {question.choices.map((choice, choiceIndex) => (

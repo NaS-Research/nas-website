@@ -1525,6 +1525,24 @@ Current guidance reconciliations:
 - Medication cautions are calibrated by evidence, necessity, route, dose, alternatives, and monitoring. Telithromycin avoidance, the fluoroquinolone boxed warning, IV magnesium risk, and procedure and pregnancy planning are distinguished from a universal forbidden list.
 - The complete RxPrep 2023 myasthenia gravis source block was reviewed visually. The matching Goodnotes lecture remains pending because the Mac stayed locked during this build and will receive a documented reconciliation pass when access is restored.
 
+### Sjogren Disease
+
+The Sjogren disease module includes autoimmune exocrine biology; primary and associated disease; ocular, oral, systemic, and urgent recognition; the complete 2016 ACR EULAR weighted classification system; classification versus diagnosis; mechanism and severity based dry eye care; topical cyclosporine and lifitegrast; advanced ocular procedures; topical fluoride and dental prevention; noncariogenic salivary support; candidiasis and nutrition; pilocarpine and cevimeline pharmacology; organ directed systemic therapy; lymphoma surveillance; anti-SSA and anti-SSB pregnancy planning; and longitudinal multidisciplinary care. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 112-question assessment bank.
+
+Current guidance reconciliations:
+
+- Sjogren disease is presented as a systemic autoimmune disease rather than isolated dry eye and dry mouth. Neurologic, pulmonary, renal, vascular, hematologic, glandular, and constitutional manifestations are integrated into recognition and follow-up.
+- The 2016 ACR EULAR criteria replace unweighted symptom lists. Anti-SSA and qualifying labial salivary gland biopsy each contribute three points, while ocular staining, Schirmer testing, and unstimulated salivary flow each contribute one. Four points classifies an eligible patient.
+- Classification criteria are separated from clinical diagnosis. A subthreshold score does not permanently exclude early disease when the phenotype remains convincing.
+- Dry eye therapy is organized by aqueous deficiency, meibomian gland dysfunction, severity, and ocular surface injury. Preservative free lubrication, nighttime ointment, anti-inflammatory therapy, tear conservation, serum tears, scleral lenses, and urgent corneal care occupy distinct roles.
+- Current lifitegrast labeling confirms one drop in each eye twice daily about 12 hours apart, single dose container disposal, contact lens removal, and a 15 minute wait before reinsertion. Dysgeusia and instillation irritation are explicit.
+- Topical fluoride is treated as foundational caries prevention. Water, xylitol, saliva substitutes, diet, medication burden, candidiasis, swallowing, nutrition, and safe dosage form modification form one oral protection system.
+- Current US labeling is used for secretagogues. Pilocarpine is 5 mg four times daily for Sjogren xerostomia, while cevimeline is 30 mg three times daily. Uncontrolled asthma, conditions where miosis is undesirable, cardiovascular and pulmonary caution, and systemic cholinergic toxicity are explicit.
+- Systemic immunotherapy is reserved for active systemic disease rather than dryness alone. Hydroxychloroquine is not presented as reliable therapy for isolated dryness or fatigue, and glucocorticoid, conventional, and biologic choices are organ and severity directed.
+- Persistent salivary gland enlargement, lymphadenopathy, purpura, low complement, cryoglobulins, cytopenias, monoclonal gammopathy, clonal lymphocytosis, splenomegaly, and B symptoms are integrated into risk based lymphoma surveillance.
+- Anti-SSA and anti-SSB positive pregnancy includes preconception medicine review, maternal fetal medicine coordination, guideline based fetal echocardiography, and current conditional hydroxychloroquine guidance.
+- The complete RxPrep 2023 Sjogren syndrome source block was reviewed visually. A matching Goodnotes reconciliation remains pending because the Mac was still locked on the third access attempt during this build.
+
 Deferred into focused modules:
 
 - Vulvovaginal infection and pelvic inflammatory disease
