@@ -1,0 +1,29 @@
+export const aminoglycosidePharmacologyVisualTypes = [
+  "structure-mechanism", "clinical-spectrum", "dosing-weight", "traditional-monitoring", "extended-interval-dosing",
+  "pk-calculations", "renal-toxicity", "auditory-vestibular", "special-risks-interactions", "clinical-integration",
+];
+
+const diagrams = {
+  "structure-mechanism": ["Molecular route", "Follow charge, bacterial entry, ribosomal error, and renal exit", ["Deliver", "Parenteral systemic exposure", "Polycationic structure prevents reliable passive oral absorption"], ["Enter", "Oxygen-dependent uptake", "Anaerobic and acidic environments restrict bacterial access"], ["Misread", "Bind the 30S subunit", "Initiation fails and mistranslated proteins disrupt bacterial function"], ["Clear", "Glomerular filtration", "Changing renal function changes exposure and accumulation"]],
+  "clinical-spectrum": ["Therapeutic role", "Give each aminoglycoside dose a microbiologic purpose", ["Target", "Aerobic gram-negative", "Confirm organism, AST, site, and resistance mechanism"], ["Partner", "Temporary combination or synergy", "The regimen role determines dose and concentration target"], ["Differentiate", "Agent and formulation", "Gentamicin, tobramycin, amikacin, streptomycin, and plazomicin differ"], ["Exit", "Narrow or stop", "Remove toxic exposure when the added purpose disappears"]],
+  "dosing-weight": ["Weight logic", "Resolve the dosing scalar before multiplying", ["Measure", "Height and current weight", "Verify units, trend, edema, amputation, and fluid status"], ["Compare", "Total versus ideal", "Protocol thresholds determine when obesity adjustment applies"], ["Adjust", "Estimate distribution mass", "A common method adds a fraction of excess weight to IBW"], ["Translate", "Milligrams to product", "Carry units, round once, and verify concentration and volume"]],
+  "traditional-monitoring": ["Concentration timeline", "Place every level beside the exact dose history", ["Infuse", "Record start and end", "Administration time anchors every later interpretation"], ["Distribute", "Wait for the protocol interval", "An early sample can overstate the interpreted peak"], ["Measure", "Peak and trough", "Each concentration answers a different exposure question"], ["Adjust", "Dose or interval", "Use timing, renal trajectory, MIC, response, and toxicity together"]],
+  "extended-interval-dosing": ["Nomogram gate", "Four conditions must match before a point is plotted", ["Patient", "Eligible population", "Exclude states outside the protocol's validation"], ["Dose", "Exact milligrams per kilogram", "A different initial dose changes the entire curve"], ["Time", "Validated sampling window", "Anchor the sample to infusion start, not result time"], ["Interval", "Plot and reassess", "Renal change can invalidate the next planned dose"]],
+  "pk-calculations": ["PK calculation", "Move from two concentrations to one defensible decision", ["Verify", "Chronology and model", "Both samples must be postdistribution with no intervening dose"], ["Slope", "Calculate elimination k", "Use ln(C1/C2) divided by elapsed time"], ["Translate", "Half-life and distribution", "Carry units and state assumptions"], ["Apply", "Loading or maintenance", "Distribution and clearance solve different dosing problems"]],
+  "renal-toxicity": ["Kidney defense", "Detect accumulation before injury becomes advanced", ["Baseline", "Function and exposure burden", "Record renal trend, fluids, hemodynamics, and nephrotoxins"], ["Follow", "Concentration and creatinine", "A normal starting value cannot protect a changing patient"], ["Reduce", "Duration and additive harm", "Remove redundant therapy and avoidable nephrotoxins"], ["Act", "Adjust, hold, stop, or replace", "Tie every signal to a specific response"]],
+  "auditory-vestibular": ["Eighth-nerve map", "Monitor hearing and balance as separate vulnerable systems", ["Cochlea", "High-frequency hearing", "Tinnitus or subtle hearing change can precede recognized loss"], ["Vestibule", "Gaze and balance", "Oscillopsia, vertigo, and gait instability may occur without hearing symptoms"], ["Exposure", "Delayed irreversible injury", "Risk can persist after the last dose"], ["Respond", "Stop and evaluate", "Correct accumulation, reduce ototoxins, and arrange specialty care"]],
+  "special-risks-interactions": ["Risk perimeter", "Look beyond the serum concentration before every dose", ["Muscle", "Neuromuscular blockade", "Myasthenia, paralytics, anesthesia, and critical illness increase danger"], ["Pregnancy", "Placental exposure", "Use current drug-specific fetal-risk evidence and active alternatives"], ["Burden", "Nephrotoxins and ototoxins", "Concurrent and sequential exposures can compound harm"], ["Route", "Product-specific technique", "Injection, inhaled, ophthalmic, otic, and topical products differ"]],
+  "clinical-integration": ["Closed-loop regimen", "Connect the culture, calculation, monitoring, and endpoint", ["Purpose", "Indication and organism", "Arithmetic cannot establish the need for therapy"], ["Order", "Weight, dose, route, and timing", "Make the exposure plan reproducible"], ["Measure", "Response, levels, and toxicity", "Interpret every concentration through chronology"], ["Conclude", "Narrow, stop, or continue", "State duration, review date, pending evidence, and owner"]],
+};
+
+export default function AminoglycosidePharmacologyVisual({ type }) {
+  const diagram = diagrams[type];
+  if (!diagram) return null;
+  const [eyebrow, title, ...nodes] = diagram;
+  return <figure className="chol-visual aminoglycoside-pharmacology-visual" aria-label={title}>
+    <figcaption><span>{eyebrow}</span><strong>{title}</strong></figcaption>
+    <div className="chol-visual__grid">{nodes.map(([verb, focus, detail], index) => <div key={focus}>
+      <span>{String(index + 1).padStart(2, "0")}</span><strong>{verb}</strong><em>{focus}</em><p>{detail}</p>
+    </div>)}</div>
+  </figure>;
+}
