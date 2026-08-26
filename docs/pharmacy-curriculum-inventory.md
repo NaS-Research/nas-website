@@ -1897,6 +1897,29 @@ Current source reconciliations:
 - Retired pregnancy letters are excluded. Reproductive and lactation decisions use product-specific evidence, route, exposed area, timing, alternatives, and patient goals.
 - Goodnotes was retried after the user reported access restored, but the Mac session still returned a locked state. Any dedicated lecture will receive a documented reconciliation pass after manual unlock.
 
+### Animal and Human Bites
+
+The animal and human bites module separates emergency triage, dog and cat injury patterns, direct human bites, closed-fist injuries, wound cleansing, exploration, closure, polymicrobial ecology, antibiotic prophylaxis, infected-bite treatment, rabies risk assessment, rabies postexposure prophylaxis, tetanus, bloodborne exposure, safeguarding, and follow-up. It contains ten focused lessons, ten original interactive diagrams, ten embedded checks, and a 112-question assessment bank across 28 concepts and four reasoning levels. The 451-page production build, desktop layout, 390 pixel phone layout, overflow-free responsive diagrams, ten-question sampling, scoring, ten remediation links, and a subsequent attempt with zero repeated questions were verified on August 26, 2026.
+
+Current source reconciliations:
+
+- The bites portion of RxPrep 2023 Chapter 39 and the rabies antidote table were reviewed. Their prose, tables, and questions were not reproduced, and venomous bites remain separated for a later toxicology module.
+- The source statement that nearly every non-insect bite should never receive first aid alone is replaced by structured triage. Emergency injury, deep anatomy, infection risk, rabies, tetanus, blood exposure, animal availability, and host reserve determine the pathway.
+- Dog bites are assessed for crush, tear, devitalized tissue, fracture, and neurovascular injury. Cat punctures are treated as deep inoculation risks, especially near hand tendons, joints, and bone.
+- Closed-fist injuries are examined with attention to the position of the hand during impact because the superficial tract can shift away from deeper joint and tendon injury when the fist opens.
+- Prompt soap-and-water cleansing and copious irrigation remain central. Antibiotics, rabies PEP, tetanus prevention, and cosmetic closure do not replace mechanical inoculum reduction, exploration, debridement, drainage, or source control.
+- IDSA and NICE guidance replace universal antibiotic use with risk-based prophylaxis. Human bites that draw blood and high-risk animal wounds, anatomic sites, hosts, delays, or closure plans receive stronger consideration.
+- Amoxicillin clavulanate is presented as a common oral first choice because relevant bite infections can include aerobic and anaerobic oral flora. Allergy alternatives must preserve Pasteurella, Eikenella, streptococcal, staphylococcal, and anaerobic coverage rather than substituting one narrow agent automatically.
+- Eikenella resistance to first-generation cephalosporins, macrolides, clindamycin, and aminoglycosides remains visible in human-bite selection. Capnocytophaga sepsis risk lowers the threshold for care in asplenia, immune compromise, and alcohol use disorder.
+- Purulence, abscess, deep-space disease, septic arthritis, tenosynovitis, osteomyelitis, necrotizing infection, and sepsis are separated from uncomplicated cellulitis because culture quality, source control, route, duration, imaging, surgery, and specialist care change.
+- Current CDC rabies assessment replaces species-only memorization. Exposure route, mammal species, geography, behavior, animal health, travel, severity, and animal availability are presented to public health for a formal risk decision.
+- A healthy dog, cat, or ferret can undergo a coordinated ten-day observation. Bat contact that cannot be definitively excluded, reservoir species, foreign-country dog exposure, multiple wounds, head or neck exposure, and young children receive prompt assessment.
+- Current United States PEP for an unvaccinated immunocompetent patient combines immediate wound cleansing, one dose of HRIG infiltrated around wounds when feasible, and vaccine on days zero, three, seven, and fourteen. Vaccine is not administered in the gluteal area.
+- Previously vaccinated people receive vaccine on days zero and three without HRIG. Immunocompromised unvaccinated people receive a fifth vaccine dose on day twenty-eight with response planning.
+- Human bites without blood exposure do not routinely indicate HIV nPEP. Visibly bloody saliva contacting mucosa or non-intact skin triggers urgent case-by-case HIV, hepatitis B, and hepatitis C evaluation for both exposure directions.
+- Bite wounds contaminated with saliva use current CDC dirty or major tetanus rules. Retired pregnancy letters are excluded from every vaccine and antimicrobial decision.
+- Goodnotes remains unavailable because the Mac session is locked. Any dedicated lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
