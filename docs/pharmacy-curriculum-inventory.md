@@ -1834,6 +1834,27 @@ Current source reconciliations:
 - Retired pregnancy letters are excluded. Reproductive decisions use product-specific evidence, disease burden, route, exposure area, timing, alternatives, lactation, and shared goals.
 - Goodnotes remains inaccessible because the Mac session reports a locked state. Any dedicated lecture will receive a documented reconciliation pass after manual unlock.
 
+### Superficial Fungal Skin Infections
+
+The superficial fungal skin infections module separates dermatophyte and candidal disease by tissue and site, then follows morphology, diagnostic sampling, body and groin disease, tinea pedis, candidal intertrigo, topical allylamine and azole pharmacology, scalp infection, nail disease, systemic safety, transmission, treatment failure, tinea incognito, emerging resistance, special populations, and closed-loop follow-up. It contains nine focused lessons, nine original interactive diagrams, nine embedded checks, and a 112-question assessment bank across 28 concepts and four reasoning levels. The 448-page production build, desktop layout, 390 pixel phone layout, overflow-free responsive diagrams, ten-question sampling, scoring, ten remediation links, and a subsequent attempt with zero repeated questions were verified on August 26, 2026.
+
+Current source reconciliations:
+
+- The superficial fungal portion of RxPrep 2023 Chapter 39 was reviewed for body, groin, feet, folds, topical antifungals, scalp, nails, systemic agents, adverse effects, and counseling. Its prose, tables, and questions were not reproduced.
+- Current CDC guidance replaces a single treatment table with tissue-specific care. Localized skin disease is generally treated topically, while scalp disease requires systemic therapy and suspected fungal nail disease receives clinician testing and treatment planning.
+- Tinea is not diagnosed from an anatomic label alone. Morphology, active-border sampling, potassium hydroxide microscopy, culture, histopathology, or molecular testing are selected according to uncertainty, tissue, systemic exposure, and failure.
+- Corticosteroid and antifungal combination products are not treated as harmless rash creams. Steroids can worsen infection, alter morphology, promote tinea incognito, and contribute to the conditions associated with emerging antifungal resistance.
+- Body and groin recurrence triggers inspection of feet and nails, household and animal exposure, clothing and towels, moisture, friction, adherence, duration, and product application boundary.
+- Intertrigo is not equated with Candida. Satellite lesions, dermatophyte morphology, erythrasma, bacterial disease, inverse psoriasis, irritant exposure, testing, and recurrent metabolic or immune drivers remain visible.
+- Allylamines are connected to squalene epoxidase, while azoles are connected to lanosterol 14 alpha demethylase. Drug target is integrated with organism likelihood, vehicle, infected compartment, application technique, and duration.
+- Tinea capitis is routed to systemic therapy because creams do not reliably reach infected hair shafts and follicles. Kerion and potential scarring receive prompt evaluation, while adjunctive shampoo and contact measures are presented as transmission tools rather than substitutes for oral therapy.
+- Griseofulvin microsize and ultramicrosize formulations are not treated as interchangeable. Weight, food, formulation, liver disease, porphyria, lupus, reproductive context, alcohol, warfarin, contraception, and duration are reconciled.
+- Nail dystrophy is confirmed as fungal before prolonged oral therapy. Current terbinafine labeling supplies the 250 mg once-daily six-week fingernail and twelve-week toenail regimens, chronic or active liver disease contraindication, pretreatment transaminases, periodic liver assessment, interaction review, and hepatic, taste, smell, mood, blood, and severe skin reaction counseling.
+- Visible nail clearing is not expected at the moment of mycologic cure. Proximal healthy growth, nail rate, photography, tinea pedis control, and clinical toxicity distinguish normal delay from failure.
+- The February 2026 CDC clinician brief adds T indotineae, terbinafine-resistant T rubrum, and TMVII to current failure reasoning. Severe, widespread, atypical, or persistent disease after a verified adequate course can require reference-laboratory molecular identification and susceptibility testing.
+- Retired pregnancy letters are excluded. Reproductive decisions use product-specific human and animal evidence, route, area, timing, alternatives, lactation, fertility, and patient goals.
+- Goodnotes was retried after the user reported service restoration, but macOS still returned a locked-session state. Any dedicated lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
