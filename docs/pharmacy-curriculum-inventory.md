@@ -1707,6 +1707,27 @@ Current source reconciliations:
 - Transfusion is not controlled by one universal hemoglobin value. Instability, active bleeding, ischemia, symptoms, chronicity, cardiopulmonary reserve, alternatives, alloimmunization, volume risk, and patient values determine the plan.
 - Goodnotes was rechecked after access was reported restored, but macOS still returned a locked-session state. The dedicated anemia lecture will receive a documented reconciliation pass when the Mac session is manually unlocked.
 
+### Sickle Cell Disease
+
+The sickle cell disease module follows HbS from deoxygenation and polymerization through hemolysis, vaso-occlusion, functional asplenia, infection prevention, acute pain, acute chest syndrome, stroke, sequestration, aplasia, priapism, hydroxyurea, current disease modification, transfusion, alloimmunization, hyperhemolysis, iron overload, chronic organ protection, reproductive care, transplant, gene therapy, transition, equity, and closed-loop ownership. It contains ten focused lessons, ten original interactive diagrams, ten embedded checks, and a 160-question assessment bank across 40 concepts and four reasoning levels. Desktop and 390 pixel mobile layouts, ten-question sampling without repetition, scoring, explanations, ten remediation links, a subsequent attempt with zero overlap, an overflow-free mobile layout, zero browser warnings or errors, and the 442-page production build were verified on August 26, 2026.
+
+Current source reconciliations:
+
+- The complete RxPrep 2023 Sickle Cell Disease chapter was reviewed for scope, mechanisms, legacy drug summaries, transfusion, chelation, and counseling. Its prose, tables, and questions were not reproduced.
+- Current CDC guidance replaces the fixed older prevention table. Functional asplenia requires routine immunization plus current risk-based pneumococcal, meningococcal, and Hib protection, and CDC recommends daily prescribed penicillin or another antibiotic for children under age five.
+- Fever is treated as an urgent infection signal. Patients and caregivers receive an explicit temperature, contact, and destination plan rather than reassurance based on early appearance alone.
+- Acute VOC treatment uses timely individualized analgesia, repeated efficacy and safety assessment, targeted correction of hypoxemia and volume deficit, and simultaneous screening for acute chest syndrome, infection, stroke, sequestration, aplasia, and priapism. Routine transfusion for uncomplicated pain or chronic baseline anemia is rejected.
+- Hydroxyurea dosing, titration, interruption, and monitoring are tied to the exact product, age, organ function, counts, and specialist protocol. Clinical event reduction is assessed alongside HbF and MCV exposure signals.
+- Voxelotor is removed from active treatment because Oxbryta was voluntarily withdrawn in September 2024 after FDA concluded benefit no longer outweighed risk. Historical medication lists are explicitly identified as obsolete.
+- Crizanlizumab is retained as a current US option. The June 2026 FDA label continues Adakveo for reduction of VOC frequency in adults and pediatric patients age 16 and older, despite different regulatory decisions outside the United States.
+- Transfusion begins with extended antigen profiling and preservation of every historical antibody. Simple and exchange transfusion are separated by clinical goal, while delayed hemolysis, hyperhemolysis, alloimmunization, viscosity, volume, and iron burden remain visible.
+- Chronic care uses ASH guidance for cerebrovascular, cardiopulmonary, kidney, transfusion, pain, and transplant decisions. Targeted cardiopulmonary testing follows symptoms and findings rather than indiscriminate advanced screening in every asymptomatic patient.
+- The older statement that only bone marrow transplant can be curative is retired. Allogeneic transplant is compared with Casgevy and Lyfgenia as distinct potentially curative strategies.
+- FDA's July 2026 expansion of Casgevy to patients age two and older with recurrent VOCs is incorporated. Casgevy is explained as CRISPR/Cas9 editing of the erythroid BCL11A enhancer, while Lyfgenia is explained as lentiviral addition of modified beta-globin from age 12 with a hematologic malignancy warning.
+- Autologous gene therapy is not presented as a simple infusion. Collection, manufacturing, myeloablative conditioning, engraftment, infection, fertility, access, and long-term product-specific surveillance are integrated into consent.
+- The older universal estrogen prohibition is not copied. Pregnancy and contraception use current individualized risk, organ status, thrombosis, treatment, fertility, and patient goals.
+- Goodnotes was retried before this build, but macOS continued to report a locked session. Any dedicated lecture will receive a documented reconciliation pass after manual unlock, with conflicts flagged rather than silently imported.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:

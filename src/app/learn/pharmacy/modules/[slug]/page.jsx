@@ -114,6 +114,7 @@ import PelvicOrganProlapseFistulaCareVisual, { pelvicOrganProlapseFistulaCareVis
 import GenderAffirmingHormoneCareVisual, { genderAffirmingHormoneCareVisualTypes } from "@/components/learn/GenderAffirmingHormoneCareVisual";
 import ImmunoglobulinTherapyVisual, { immunoglobulinTherapyVisualTypes } from "@/components/learn/ImmunoglobulinTherapyVisual";
 import AnemiaVisual, { anemiaVisualTypes } from "@/components/learn/AnemiaVisual";
+import SickleCellDiseaseVisual, { sickleCellDiseaseVisualTypes } from "@/components/learn/SickleCellDiseaseVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -394,6 +395,7 @@ export default async function PharmacyModulePage({ params }) {
               {genderAffirmingHormoneCareVisualTypes.includes(submodule.visual) && <GenderAffirmingHormoneCareVisual type={submodule.visual} />}
               {immunoglobulinTherapyVisualTypes.includes(submodule.visual) && <ImmunoglobulinTherapyVisual type={submodule.visual} />}
               {anemiaVisualTypes.includes(submodule.visual) && <AnemiaVisual type={submodule.visual} />}
+              {sickleCellDiseaseVisualTypes.includes(submodule.visual) && <SickleCellDiseaseVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
