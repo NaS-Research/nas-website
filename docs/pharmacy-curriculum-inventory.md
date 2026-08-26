@@ -855,7 +855,20 @@ This inventory records the source material available in the founder's Goodnotes 
 - Automated verification: 112 unique question IDs, 112 unique prompts, four unique choices per question, valid lesson links, eleven diagrams, and no em dash or en dash characters in public prose
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, eleven diagrams, all eleven embedded knowledge checks, ten-question randomized attempts with unique questions, a different subsequent set and order, complete scoring, explanations, ten remediation links, and no browser errors or warnings
 - Build verification: Next.js production build passed August 26, 2026 with 409 static pages generated
-- Source routing: intravenous immunoglobulin material on RxPrep page 718 remains reserved for a future immunoglobulin-focused module; the acute and critical-care chapter is otherwise fully routed across existing focused modules
+- Source routing: intravenous immunoglobulin material on RxPrep page 718 is now incorporated into the dedicated Immunoglobulin Therapy module; the acute and critical-care chapter is fully routed across focused modules
+
+### Immunoglobulin Therapy
+
+- Course scope: pooled polyclonal IgG biology, passive immunity, manufacturing safeguards, replacement therapy, immunomodulatory therapy, pathogen-specific hyperimmune products, IVIG prescribing, dosing-weight transparency, infusion-rate design, conventional and facilitated SCIG, product conversion, home administration, product and formulation selection, IgA-related hypersensitivity, infusion reactions, anaphylaxis, thrombosis, kidney injury, hemolysis, aseptic meningitis, TRALI, volume stress, clinical monitoring, passive serology, vaccine timing, hyperviscosity, pediatrics, older adults, pregnancy and lactation, obesity, renal and cardiovascular risk, product substitution, continuity, stewardship, and handoff ownership
+- Course source reviewed: RxPrep NAPLEX 2023 Acute and Critical Care Medicine intravenous immunoglobulin section, PDF page 718, text and layout content audited
+- Current references reviewed: current FDA immune-globulin product index and labeling, current FDA labeling for Gamunex-C, Privigen, Hizentra, and HyQvia, and current CDC timing and spacing guidance for antibody-containing products and vaccines
+- Learning structure: ten content-driven lessons, ten native biologic, indication, IVIG, SCIG, selection, reaction, toxicity, monitoring, population, and continuity diagrams, and ten embedded knowledge checks
+- Assessment: 160 original questions across 40 concepts and four reasoning levels, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: the short RxPrep summary was retained as a starting point but not treated as a class-wide prescription; replacement, immunomodulatory, and hyperimmune roles are separated; indication and route remain product specific; dosing weight is explicit rather than automatically fixed to ideal or adjusted weight; SCIG conversion follows the selected label; conventional and facilitated SCIG are distinguished; IgA deficiency alone is not presented as a universal contraindication; renal risk distinguishes patient factors and product formulation without implying that every product contains sucrose; thrombosis can occur without known risk factors; hemolysis, aseptic meningitis, TRALI, volume stress, passive serology, and hyperviscosity are integrated; CDC dose-dependent MMR and varicella intervals replace a universal three-month rule; and product or route changes are treated as new clinical transitions
+- Automated verification: 160 unique question IDs, 160 unique prompts, four unique choices per question, valid answer indexes, explanations, ten lesson links, ten diagrams, and no em dash or en dash characters in public prose
+- Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, ten diagrams, all ten embedded knowledge checks, 10 questions and 40 answer choices per assessment, complete scoring, ten remediation links, zero overlap in the verified repeat attempt, and no mobile browser warnings or errors
+- Build verification: Next.js production build passed August 26, 2026 with 440 static pages generated
+- Goodnotes reconciliation: direct access was retried after the user reported restoration, but macOS still reported a locked session; relevant slides will receive a documented reconciliation pass after manual unlock
 
 ## Goodnotes availability
 
@@ -865,7 +878,7 @@ This inventory records the source material available in the founder's Goodnotes 
 
 The RxPrep text is available locally for scope comparison and calculations review. It is not stored in Git and its prose or proprietary questions are not reproduced.
 
-The Acute and Critical Care Medicine chapter has been audited completely. Its material is routed to the existing Fluid and Electrolyte Therapy and Acute Decompensated Heart Failure modules, the completed Shock and Vasoactive Pharmacotherapy, ICU Analgesia, Sedation, and Delirium, and Perioperative and Critical-Care Pharmacology modules. Intravenous immunoglobulin material remains reserved for a future immunoglobulin-focused module.
+The Acute and Critical Care Medicine chapter has been audited completely. Its material is routed to the existing Fluid and Electrolyte Therapy and Acute Decompensated Heart Failure modules, the completed Shock and Vasoactive Pharmacotherapy, ICU Analgesia, Sedation, and Delirium, Perioperative and Critical-Care Pharmacology, and Immunoglobulin Therapy modules.
 
 ### DAST I
 
