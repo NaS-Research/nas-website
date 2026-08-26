@@ -77,6 +77,7 @@ import PregnancyLactationPharmacotherapyVisual from "@/components/learn/Pregnanc
 import MenopausalHormoneTherapyVisual from "@/components/learn/MenopausalHormoneTherapyVisual";
 import BenignProstaticHyperplasiaVisual from "@/components/learn/BenignProstaticHyperplasiaVisual";
 import UrinaryIncontinenceVisual from "@/components/learn/UrinaryIncontinenceVisual";
+import SexualDysfunctionVisual from "@/components/learn/SexualDysfunctionVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -153,6 +154,7 @@ const pregnancyLactationPharmacotherapyVisualTypes = ["perinatal-context", "peri
 const menopausalHormoneTherapyVisualTypes = ["mht-transition", "mht-thermoregulation", "mht-estrogen", "mht-endometrium", "mht-bleeding", "mht-nonhormonal", "mht-gsm", "mht-risk", "mht-prevention", "mht-followup"];
 const benignProstaticHyperplasiaVisualTypes = ["bph-framework", "bph-evaluation", "bph-goals", "bph-alpha", "bph-fiveari", "bph-tadalafil", "bph-storage", "bph-retention", "bph-procedures", "bph-followup"];
 const urinaryIncontinenceVisualTypes = ["ui-phenotypes", "ui-evaluation", "ui-neurophysiology", "ui-behavioral", "ui-antimuscarinics", "ui-beta3", "ui-combination", "ui-procedures", "ui-other-phenotypes", "ui-nocturia"];
+const sexualDysfunctionVisualTypes = ["sexual-health-framework", "ed-evaluation", "erection-physiology", "pde5-selection", "pde5-safety", "pde5-response", "nonoral-ed", "hsdd-evaluation", "flibanserin-safety", "bremelanotide-safety"];
 
 export function generateStaticParams() {
   return pharmacyModules.map((module) => ({ slug: module.slug }));
@@ -294,6 +296,7 @@ export default async function PharmacyModulePage({ params }) {
               {menopausalHormoneTherapyVisualTypes.includes(submodule.visual) && <MenopausalHormoneTherapyVisual type={submodule.visual} />}
               {benignProstaticHyperplasiaVisualTypes.includes(submodule.visual) && <BenignProstaticHyperplasiaVisual type={submodule.visual} />}
               {urinaryIncontinenceVisualTypes.includes(submodule.visual) && <UrinaryIncontinenceVisual type={submodule.visual} />}
+              {sexualDysfunctionVisualTypes.includes(submodule.visual) && <SexualDysfunctionVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>

@@ -1086,7 +1086,7 @@ Target modules:
 1. Contraception
 2. Menopausal Hormone Therapy (`built`, 100 question bank; 61-page dedicated Goodnotes lecture reconciled)
 3. Benign Prostatic Hyperplasia (`built`, 104 question bank; dedicated Goodnotes lecture reconciliation pending)
-4. Erectile Dysfunction
+4. Sexual Dysfunction (`built`, 112 question bank; dedicated Goodnotes lecture reconciliation pending)
 5. Urinary Incontinence (`built`, 104 question bank; dedicated Goodnotes lecture reconciliation pending)
 6. Osteoporosis
 7. Genitourinary Medicinal Chemistry
@@ -1124,6 +1124,7 @@ Completed production modules:
 6. Menopausal Hormone Therapy
 7. Benign Prostatic Hyperplasia
 8. Urinary Incontinence
+9. Sexual Dysfunction
 
 The menstrual and gynecologic module includes menstrual assessment, PALM-COEIN classification, acute abnormal uterine bleeding, chronic heavy menstrual bleeding, dysmenorrhea, premenstrual disorders, endometriosis, and uterine fibroids. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 100-question assessment bank.
 
@@ -1138,6 +1139,8 @@ The menopausal hormone therapy module includes the menopausal transition, vasomo
 The benign prostatic hyperplasia module includes LUTS terminology, transition-zone biology, initial evaluation, red-flag triage, conservative care, alpha blockers, 5-alpha-reductase inhibitors, tadalafil, persistent storage symptoms, acute retention, procedural selection, and longitudinal medication management. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 104-question assessment bank. Desktop and 390 pixel mobile layouts, ten-question sampling without repetition, a fresh subsequent attempt, randomized answer support, valid remediation links, an overflow-free mobile layout, zero browser console errors, and the 403-page production build were verified on August 25, 2026. The complete RxPrep 2023 BPH chapter was reviewed visually. The dedicated Goodnotes lecture remains pending because the Mac was locked during this build and will receive a documented reconciliation pass when access is restored.
 
 The urinary incontinence module includes urgency, stress, mixed, overflow, functional, and continuous leakage patterns; initial evaluation and red-flag triage; bladder neurophysiology; bladder and pelvic-floor training; antimuscarinics; beta-3 agonists; combination therapy; onabotulinumtoxinA; tibial and sacral neuromodulation; stress-incontinence support; nocturnal polyuria; and desmopressin safety. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 104-question assessment bank. Desktop and 390 pixel mobile layouts, ten-question sampling without repetition, a fresh subsequent attempt, randomized answer support, valid remediation links, an overflow-free mobile layout, zero browser console errors, and the 404-page production build were verified on August 25, 2026. The complete six-page RxPrep 2023 urinary-incontinence chapter was reviewed visually. The dedicated Goodnotes lecture remains pending because the Mac was locked during this build and will receive a documented reconciliation pass when access is restored.
+
+The sexual dysfunction module includes respectful domain-based assessment; erectile dysfunction evaluation and cardiovascular risk; nitric oxide, cGMP, and PDE5 pharmacology; sildenafil, tadalafil, vardenafil, and avanafil selection; nitrate, guanylate-cyclase stimulator, alpha-blocker, and CYP3A4 safety; oral-treatment response auditing; vacuum devices; intraurethral and intracavernosal alprostadil; penile prostheses; HSDD evaluation; flibanserin; and bremelanotide. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 112-question assessment bank. Desktop and 390 pixel mobile layouts, ten-question sampling without repetition, a fresh subsequent attempt with no overlap, randomized answer support, scoring, explanations, valid remediation links, an overflow-free mobile layout, and the 405-page production build were verified on August 25, 2026. The complete five-page RxPrep 2023 sexual-dysfunction chapter was reviewed visually. The dedicated Goodnotes lecture remains pending and will receive a documented reconciliation pass when access is available.
 
 Current guidance reconciliations:
 
@@ -1173,6 +1176,12 @@ Current guidance reconciliations:
 - Chronic antimuscarinic exposure now includes an explicit cognitive-impairment and dementia-risk discussion. Molecule and formulation can modify central exposure, but no antimuscarinic is presented as cognitively risk free.
 - Mirabegron and vibegron are taught as distinct beta-3 agonists. Mirabegron includes blood-pressure, CYP2D6, renal, and hepatic considerations; vibegron includes digoxin, administration, angioedema, and current BPH-associated OAB labeling.
 - Current onabotulinumtoxinA labeling requires a retention and catheterization plan, baseline residual assessment, infection screening, and post-treatment residual monitoring. Botulinum toxin units are product specific.
+- Erectile dysfunction is taught as both a sexual concern and a cardiovascular risk marker. Current AUA guidance supports medical, sexual, and psychosocial history, examination, selective testing, morning total testosterone, lifestyle risk reduction, and discussion of all suitable treatment modalities through shared decisions.
+- PDE5 inhibitors are differentiated by exact timing, food effects, duration, organ-function limits, alpha-blocker strategy, CYP3A4 exposure, QT considerations, and label-specific dosing. Nitrates and soluble guanylate-cyclase stimulators are contraindicated, and priapism beyond four hours or sudden vision or hearing loss requires urgent action.
+- Apparent PDE5 nonresponse triggers an audit of dose, timing, food, stimulation, adherence, repeated attempts, diagnosis, testosterone, vascular risk, and psychosocial context before escalation.
+- Current alprostadil labeling and AUA guidance support supervised initiation, lowest-effective-dose titration, priapism planning, injection-site rotation, and longitudinal examination for penile fibrosis.
+- The December 2025 flibanserin label replaces the RxPrep 2023 premenopausal-only boundary. Eligible patients are now women younger than 65 with acquired generalized HSDD, including postmenopausal women, after other causes are excluded.
+- Flibanserin is taught with current alcohol timing, bedtime and alertness counseling, hepatic and CYP3A4 contraindications, interaction washouts, and an eight-week stopping rule. Bremelanotide remains limited to premenopausal women and retains cardiovascular, blood-pressure, nausea, pigmentation, gastric-emptying, naltrexone, and pregnancy precautions.
 - The older RxPrep suggestion of sympathomimetic or duloxetine treatment for female stress incontinence is not converted into routine US care. No oral medication is FDA approved in the United States specifically for female stress urinary incontinence.
 - Sublingual desmopressin is restricted to confirmed nocturnal polyuria with sex-specific dosing, strict fluid restriction, baseline and early repeat serum sodium monitoring, and full boxed-warning contraindication screening.
 
