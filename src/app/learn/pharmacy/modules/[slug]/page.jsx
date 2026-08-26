@@ -127,6 +127,7 @@ import AnimalHumanBitesVisual, { animalHumanBitesVisualTypes } from "@/component
 import BurnAssessmentInitialCareVisual, { burnAssessmentInitialCareVisualTypes } from "@/components/learn/BurnAssessmentInitialCareVisual";
 import PoisonPlantDermatitisVisual, { poisonPlantDermatitisVisualTypes } from "@/components/learn/PoisonPlantDermatitisVisual";
 import TopicalCorticosteroidVisual, { topicalCorticosteroidVisualTypes } from "@/components/learn/TopicalCorticosteroidVisual";
+import SunscreenPhotoprotectionVisual, { sunscreenPhotoprotectionVisualTypes } from "@/components/learn/SunscreenPhotoprotectionVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -420,6 +421,7 @@ export default async function PharmacyModulePage({ params }) {
               {burnAssessmentInitialCareVisualTypes.includes(submodule.visual) && <BurnAssessmentInitialCareVisual type={submodule.visual} />}
               {poisonPlantDermatitisVisualTypes.includes(submodule.visual) && <PoisonPlantDermatitisVisual type={submodule.visual} />}
               {topicalCorticosteroidVisualTypes.includes(submodule.visual) && <TopicalCorticosteroidVisual type={submodule.visual} />}
+              {sunscreenPhotoprotectionVisualTypes.includes(submodule.visual) && <SunscreenPhotoprotectionVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>

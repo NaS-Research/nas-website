@@ -1986,6 +1986,32 @@ Current source reconciliations:
 - Current AAD and AAAAI/ACAAI guidance supports moisturizers, topical corticosteroids, and indicated nonsteroid therapies. Calcineurin inhibitors, PDE4 inhibitors, JAK inhibitors, aryl hydrocarbon receptor agonists, phototherapy, and systemic options are presented only within disease-, age-, site-, and safety-specific roles.
 - Goodnotes remains pending because the Mac session was locked at the latest retry. Any dedicated topical pharmacology lecture will receive a documented reconciliation pass after manual unlock.
 
+### Sunscreen and Photoprotection
+
+The Sunscreen and Photoprotection module separates ultraviolet biology, visible-light effects, label interpretation, filter pharmacology, application quantity, reapplication, water resistance, layered protection, special populations, medication photosensitivity, product hazards, monitoring, and counseling. It contains ten focused lessons, ten original interactive diagrams, ten embedded checks, and a 116-question assessment bank across 28 concepts, four reasoning levels, and four application calculations. The 455-page production build, desktop layout, 390 pixel phone layout, overflow-free responsive diagrams, ten-question sampling, scoring, ten remediation links, and a subsequent attempt with zero repeated questions were verified on August 26, 2026.
+
+Current source reconciliations:
+
+- The sunscreen portion of RxPrep 2023 Chapter 39 was reviewed for ultraviolet exposure, SPF, broad-spectrum protection, product selection, application, reapplication, water resistance, infants, and oral supplements. Its prose, tables, and questions were not reproduced.
+- The source time-to-burn formula is retired. SPF represents a standardized ultraviolet-dose relationship weighted mainly toward UVB erythema and cannot be multiplied by personal baseline burn time to create a safe outdoor countdown.
+- Current AAD consumer guidance is used for broad-spectrum, water-resistant SPF 30 or higher selection. FDA labeling is used to distinguish that recommendation from the federal broad-spectrum SPF 15 threshold for specific skin-cancer and skin-aging claims.
+- Broad spectrum means UVA and UVB protection. SPF alone does not establish UVA protection, and visible-light protection is considered separately for melasma and hyperpigmentation.
+- Water-resistant products state either 40 or 80 minutes of tested performance during swimming or sweating. Waterproof, sweatproof, sunblock, all-day, and unlimited-exposure reasoning are rejected.
+- Application is treated as a dose. Current FDA and AAD guidance supports application about 15 minutes before exposure, at least about one ounce for full exposed-body coverage in most adults, adequate facial coverage, protection of commonly missed sites, and broad-spectrum SPF 30 or higher lip balm.
+- Reapplication occurs at least every two hours while outdoors and immediately after swimming, sweating, or toweling. Package quantity, access, reminders, storage, heat, expiration, and container integrity are included as adherence variables.
+- Zinc oxide and titanium dioxide are not described as reflection-only barriers. Mineral and organic filters are taught by wavelength absorption, finished-product testing, film formation, vehicle, tolerance, and adherence.
+- An FDA request for additional ingredient data is not presented as proof that an ingredient is unsafe. Product selection avoids simplistic chemical-bad and mineral-good claims.
+- Sunscreen is one layer within shade, clothing, UPF, a wide-brim hat, UV-protective sunglasses, schedule, ultraviolet index, and reflected-exposure planning. Indoor tanning is not a safe base-tan or vitamin D strategy.
+- For infants younger than six months, shade and lightweight protective clothing lead. Small amounts on limited exposed areas are considered only when shade and clothing are inadequate, with attention to overheating and pediatric guidance.
+- Tinted broad-spectrum SPF 30 or higher products containing iron oxides can add visible-light protection and reduce white cast, especially when pigmentary disease or darker skin tone makes those goals important.
+- Medication photosensitivity is separated into phototoxic and photoallergic patterns. Exact prescription, OTC, topical, and supplement labels are reconciled rather than relying on a static universal drug list or stopping essential therapy without coordination.
+- Current doxycycline labeling is used as a representative example of an exaggerated sunburn reaction and counseling to minimize natural and artificial ultraviolet exposure.
+- Spray coverage, inhalation, eye exposure, aerosol flammability, damaged skin, product irritation, contact allergy, excessive heat, and direct-sun storage are treated as product-safety questions.
+- Intentional ultraviolet exposure is not recommended for vitamin D. Diet, fortified foods, supplements, testing when indicated, and clinician-guided management avoid preventable carcinogenic exposure.
+- Oral sunscreen supplements and antioxidants are not presented as substitutes for labeled topical sunscreen or physical photoprotection.
+- Retired pregnancy letters are excluded. Pregnancy and lactation decisions use the exact product, ingredients, treated area, skin integrity, infant contact, alternatives, and patient preference.
+- Goodnotes was retried after the user reported access restored, but the Mac session still returned a locked state. Any dedicated photoprotection lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
