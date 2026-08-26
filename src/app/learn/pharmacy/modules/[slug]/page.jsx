@@ -73,6 +73,7 @@ import GonadalHormonePharmacologyVisual from "@/components/learn/GonadalHormoneP
 import GynecologicDisordersVisual from "@/components/learn/GynecologicDisordersVisual";
 import InfertilityOvulationInductionVisual from "@/components/learn/InfertilityOvulationInductionVisual";
 import ContraceptivePharmacotherapyVisual from "@/components/learn/ContraceptivePharmacotherapyVisual";
+import PregnancyLactationPharmacotherapyVisual from "@/components/learn/PregnancyLactationPharmacotherapyVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -145,6 +146,7 @@ const gonadalHormonePharmacologyVisualTypes = ["gonadal-hpg-axis", "gonadal-test
 const gynecologicDisordersVisualTypes = ["gyn-cycle-triage", "gyn-palm-coein", "gyn-acute-aub", "gyn-hmb-selection", "gyn-pain-pathway", "gyn-pmdd-cycle", "gyn-endometriosis-map", "gyn-endometriosis-therapy", "gyn-fibroid-map", "gyn-longitudinal-care"];
 const infertilityOvulationInductionVisualTypes = ["infertility-evaluation-clock", "infertility-fertile-window", "infertility-female-workup", "infertility-male-workup", "infertility-pcos-letrozole", "infertility-clomiphene-metformin", "infertility-gonadotropins", "infertility-protocol-control", "infertility-art-pathway", "infertility-ohss-care"];
 const contraceptivePharmacotherapyVisualTypes = ["contraception-selection", "contraception-combined", "contraception-estrogen-risk", "contraception-progestin", "contraception-iuds", "contraception-implant", "contraception-emergency", "contraception-quick-start", "contraception-interactions", "contraception-care-loop"];
+const pregnancyLactationPharmacotherapyVisualTypes = ["perinatal-context", "perinatal-pk", "perinatal-placenta", "perinatal-evidence", "perinatal-symptoms", "perinatal-diabetes", "perinatal-preeclampsia", "perinatal-vte", "perinatal-lactation-pk", "perinatal-lactation-care"];
 
 export function generateStaticParams() {
   return pharmacyModules.map((module) => ({ slug: module.slug }));
@@ -282,6 +284,7 @@ export default async function PharmacyModulePage({ params }) {
               {gynecologicDisordersVisualTypes.includes(submodule.visual) && <GynecologicDisordersVisual type={submodule.visual} />}
               {infertilityOvulationInductionVisualTypes.includes(submodule.visual) && <InfertilityOvulationInductionVisual type={submodule.visual} />}
               {contraceptivePharmacotherapyVisualTypes.includes(submodule.visual) && <ContraceptivePharmacotherapyVisual type={submodule.visual} />}
+              {pregnancyLactationPharmacotherapyVisualTypes.includes(submodule.visual) && <PregnancyLactationPharmacotherapyVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>

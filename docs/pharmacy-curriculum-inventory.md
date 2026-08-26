@@ -1073,9 +1073,9 @@ Target modules:
 2. Cushing Syndrome (`built`, 100 question bank; Goodnotes reconciliation pending)
 3. Adrenal Insufficiency and Adrenal Crisis (`built`, 104 question bank; Goodnotes reconciliation pending)
 4. Gonadal Hormone Pharmacology (`built`, 100 question bank; dedicated Goodnotes lecture reconciled)
-5. Gynecologic Disorders
-6. Infertility Pharmacotherapy
-7. Pregnancy and Lactation Pharmacotherapy
+5. Gynecologic Disorders (`built`, 100 question bank; dedicated Goodnotes lectures reconciled)
+6. Infertility Pharmacotherapy (`built`, 100 question bank; dedicated Goodnotes lectures reconciled)
+7. Pregnancy and Lactation Pharmacotherapy (`built`, 100 question bank; 58-page dedicated Goodnotes lecture reconciled)
 
 #### Contraception, genitourinary care, and bone health
 
@@ -1120,12 +1120,15 @@ Completed production modules:
 2. Menstrual and Gynecologic Disorders
 3. Infertility Evaluation and Ovulation Induction
 4. Contraceptive Pharmacotherapy
+5. Pregnancy and Lactation Pharmacotherapy
 
 The menstrual and gynecologic module includes menstrual assessment, PALM-COEIN classification, acute abnormal uterine bleeding, chronic heavy menstrual bleeding, dysmenorrhea, premenstrual disorders, endometriosis, and uterine fibroids. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 100-question assessment bank.
 
 The infertility module includes evaluation timing, the fertile window, female and male evaluation, PCOS-related ovulation induction, clomiphene and metformin, gonadotropin stimulation, trigger and luteal protocols, assisted reproduction, and OHSS prevention. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 100-question assessment bank.
 
 The contraception module includes person-centered selection, U.S. MEC, combined methods, estrogen eligibility, progestin-only methods, IUDs, the etonogestrel implant, emergency contraception, quick start, missed-use management, and drug interactions. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 100-question assessment bank.
+
+The pregnancy and lactation module includes pregnancy context, maternal pharmacokinetics, placental transfer, developmental timing, FDA labeling, common symptom management, diabetes, preeclampsia, venous thromboembolism, lactation exposure science, and drug-specific breastfeeding counseling. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 100-question assessment bank. Desktop and 390 pixel mobile layouts, ten-question assessment launch, answer randomization support, remediation anchors, and the production build were verified on August 25, 2026.
 
 Current guidance reconciliations:
 
@@ -1141,12 +1144,15 @@ Current guidance reconciliations:
 - CDC U.S. MEC 2024 replaces broad class warnings with method-specific eligibility categories, including category 4 combined hormonal contraception for migraine with aura and for patients age 35 or older who smoke at least 15 cigarettes daily.
 - CDC U.S. SPR 2024 supports quick start when pregnancy is reasonably excluded, product-specific missed-dose instructions, self-administered DMPA-SC, and person-centered IUD pain planning without routine misoprostol.
 - Emergency contraception now distinguishes the copper IUD, ulipristal, and levonorgestrel by timing, effectiveness, and the required hormonal restart plan.
+- FDA PLLR narrative sections replace the retired pregnancy letter categories, and molecular weight is taught as one placental-transfer factor rather than an absolute barrier.
+- ADA Standards of Care 2026 targets and treatment priorities replace the lecture's older gestational-diabetes hierarchy, including insulin as the preferred medication when lifestyle therapy is insufficient and postpartum oral glucose tolerance testing at 4 to 12 weeks.
+- ACOG guidance replaces the older fixed preeclampsia prevention dose with 81 mg aspirin for eligible patients between 12 and 28 weeks, optimally before 16 weeks.
+- NIH LactMed and current FDA labeling replace broad lactation avoidance lists and a universal relative infant dose cutoff; codeine and tramadol are specifically identified as not recommended during breastfeeding.
 
 Deferred into focused modules:
 
 - Menopause
 - Vulvovaginal infection and pelvic inflammatory disease
-- Pregnancy complications
 - Gynecologic oncology
 - Pelvic organ prolapse and fistula care
 
