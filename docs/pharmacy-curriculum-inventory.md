@@ -1143,6 +1143,7 @@ Target modules presently supported:
 1. Gastroesophageal Reflux Disease (`built`, 120 question bank; Goodnotes reconciliation pending)
 2. Peptic Ulcer Disease (`built`, 120 question bank; Goodnotes reconciliation pending)
 3. Irritable Bowel Syndrome (`built`, 124 question bank; Goodnotes reconciliation pending)
+4. Chronic Idiopathic Constipation (`built`, 128 question bank; Goodnotes reconciliation pending)
 
 ### Gastroesophageal Reflux Disease
 
@@ -1183,6 +1184,19 @@ Target modules presently supported:
 - Assessment-engine improvement: sampling now prefers distinct concept groups, preventing multiple principle, application, safety, or case variants of the same concept from crowding one attempt when the bank has sufficient breadth
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, ten distinct concepts per attempt, a different second sample, scoring with ten explanations and ten remediation links, and responsive restoration after testing
 - Build verification: Next.js production build passed August 26, 2026 with 412 static pages generated
+
+### Chronic Idiopathic Constipation
+
+- RxPrep source: NAPLEX 2023 Chapter 73 constipation section, PDF pages 921 through 926, visually reviewed in full
+- Current references reviewed: 2023 joint AGA and ACG guideline for pharmacologic management of chronic idiopathic constipation, 2026 AGA clinical practice update for refractory constipation, and current DailyMed labeling for polyethylene glycol, lubiprostone, linaclotide, plecanatide, and prucalopride
+- Learning structure: ten lessons, ten native mechanism and decision diagrams, and ten embedded knowledge checks
+- Assessment: 128 original questions spanning constipation phenotype, IBS-C distinction, alarm features, secondary causes, medication review, obstruction, anorectal examination, manometry, balloon expulsion, biofeedback, fiber, hydration, toileting mechanics, osmotic and stimulant laxatives, docusate evidence, secretagogues, prucalopride, refractory testing, surgical selection, reproductive safety, and longitudinal care
+- Source reconciliation: constipation is defined beyond weekly stool count; PEG is the only over-the-counter therapy strongly recommended for chronic treatment; bisacodyl and sodium picosulfate carry strong short-term or rescue support; docusate is not presented as an evidence-backed default; renal safety constrains magnesium; current product-specific CIC doses replace class-level generalizations; and the refractory pathway requires outlet evaluation and adequate treatment before transit testing or surgery
+- Scope boundary: IBS-C, opioid-induced constipation, pediatric functional constipation, pregnancy-associated constipation, acute obstruction, and structural defecatory disorders remain distinct conditions rather than being absorbed into CIC
+- Goodnotes note: the dedicated gastrointestinal lecture remains pending while the desktop Goodnotes session is locked; the RxPrep and current-source synthesis is complete and will receive a documented lecture reconciliation pass when access is restored
+- Automated verification: 128 unique question IDs, 32 distinct concept groups, no duplicate answer choices, valid lesson links, four difficulty levels, ten diagrams, and no em dash or en dash characters in public module prose
+- Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, ten distinct concepts per attempt, a different second sample, scoring with ten explanations and ten remediation links, and responsive restoration after testing
+- Build verification: Next.js production build passed August 26, 2026 with 413 static pages generated
 
 ### DAST IV reproductive and gynecologic sequence
 
