@@ -1689,6 +1689,24 @@ Current source reconciliations:
 - Self-sourced hormone exposure is approached with nonjudgmental reconciliation and harm reduction. Product verification, injection safety, reliable prescribing, monitoring, and access barriers replace punitive discontinuation.
 - Goodnotes was retried before this build, but macOS continued to report a locked session. The older lecture will receive a documented reconciliation pass after manual unlock, with any conflict flagged rather than silently imported.
 
+### Anemia
+
+The anemia module begins with oxygen delivery, physiologic stability, time course, production, blood loss, destruction, and corrected reticulocyte reasoning. It then integrates microcytic, normocytic, macrocytic, and mixed patterns; iron stores and availability; source evaluation; oral iron product and interaction design; intravenous iron selection and infusion safety; ferric carboxymaltose hypophosphatemia; vitamin B12 and folate pathways; the KDIGO 2026 CKD anemia system; ESA risk and hyporesponse; hemolysis; G6PD testing limits; aplastic anemia; transfusion decisions; medication reconciliation; counseling; referral; and longitudinal ownership. It contains nine focused lessons, nine original interactive diagrams, nine embedded checks, and a 144-question assessment bank across 36 concepts and four reasoning levels. Desktop and 390 pixel mobile layouts, ten-question sampling without repetition, scoring, explanations, ten remediation links, a subsequent attempt with zero overlap, randomized answer support, an overflow-free mobile layout, zero browser warnings or errors, and the 441-page production build were verified on August 26, 2026.
+
+Current source reconciliations:
+
+- The complete RxPrep 2023 Anemia chapter, PDF pages 516 through 522, was reviewed as a source for clinical scope, diagnostic patterns, iron products, vitamin replacement, ESA pharmacology, hemolysis, G6PD deficiency, and counseling. Its prose, tables, and questions were not reproduced.
+- MCV is treated as a starting branch rather than a diagnosis. RDW, corrected reticulocyte response, smear, other cell lines, biochemical tests, tempo, transfusion, inflammation, and mixed disease remain visible.
+- Iron deficiency is paired with a source evaluation. Menstrual and gastrointestinal blood loss, dietary restriction, pregnancy, repeated donation, celiac disease, inflammatory bowel disease, bariatric or gastric surgery, acid suppression, NSAIDs, and antithrombotics receive a cause and time-course review.
+- Oral iron is calculated from elemental content rather than tablet or salt mass. Administration balances absorption with adherence, while product-specific separation protects levothyroxine, tetracyclines, fluoroquinolones, bisphosphonates, and selected integrase inhibitors.
+- Intravenous iron products are not presented as interchangeable. Current ferric carboxymaltose labeling replaces the older product summary with present indications, course options, hypersensitivity observation, extravasation precautions, hypertension, and symptomatic hypophosphatemia safeguards.
+- Folate is never used to conceal unrecognized vitamin B12 deficiency. Neurologic findings trigger prompt treatment, metabolite interpretation includes kidney function, and replacement route and duration follow severity, absorption, and persistence of the cause.
+- The final KDIGO 2026 Anemia in CKD guideline replaces the RxPrep summary of the 2012 guideline. Dialysis status changes the iron algorithm, routine iron withholding is reasonable above ferritin 700 ng/mL or TSAT at least 40 percent, route selection includes benefits and burden, and ESA decisions remain individualized around transfusion avoidance and serious cardiovascular or thrombotic risk.
+- ESA therapy is not described as a route to normal hemoglobin or guaranteed quality-of-life improvement. Reversible causes and iron are addressed first, current product labeling supplies the lowest-effective-dose principle, and hyporesponsiveness triggers a causal evaluation rather than repeated escalation.
+- Hemolysis uses a converging reticulocyte, bilirubin, LDH, haptoglobin, urine, smear, DAT, exposure, and timing pattern. G6PD testing during acute hemolysis can be falsely reassuring, and pancytopenia or severe marrow clues trigger urgent hematology evaluation.
+- Transfusion is not controlled by one universal hemoglobin value. Instability, active bleeding, ischemia, symptoms, chronicity, cardiopulmonary reserve, alternatives, alloimmunization, volume risk, and patient values determine the plan.
+- Goodnotes was rechecked after access was reported restored, but macOS still returned a locked-session state. The dedicated anemia lecture will receive a documented reconciliation pass when the Mac session is manually unlocked.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
