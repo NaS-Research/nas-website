@@ -1104,6 +1104,38 @@ Target modules presently supported:
 2. Peptic Ulcer Disease
 3. Irritable Bowel Syndrome
 
+### DAST IV reproductive and gynecologic sequence
+
+Reviewed source documents:
+
+- DAST IV Gonadal Hormones
+- DAST IV Gynecological Disorders
+- Gynecological Agents Updated
+
+Completed production modules:
+
+1. Gonadal Hormone Pharmacology
+2. Menstrual and Gynecologic Disorders
+
+The menstrual and gynecologic module includes menstrual assessment, PALM-COEIN classification, acute abnormal uterine bleeding, chronic heavy menstrual bleeding, dysmenorrhea, premenstrual disorders, endometriosis, and uterine fibroids. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 100-question assessment bank.
+
+Current guidance reconciliations:
+
+- Current ASRM guidance begins primary amenorrhea evaluation by age 15 with normal secondary sexual development, replacing the older age 16 lecture threshold.
+- Heavy menstrual bleeding is taught through patient-defined functional burden and iron loss rather than requiring a measured 80 mL threshold.
+- Elagolix is correctly classified as a GnRH receptor antagonist, not a GnRH agonist.
+- Current PALM-COEIN terminology replaces older labels such as dysfunctional uterine bleeding and menorrhagia.
+
+Deferred into focused modules:
+
+- Contraception
+- Infertility and ovulation induction
+- Menopause
+- Vulvovaginal infection and pelvic inflammatory disease
+- Pregnancy complications
+- Gynecologic oncology
+- Pelvic organ prolapse and fistula care
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
