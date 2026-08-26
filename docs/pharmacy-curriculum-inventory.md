@@ -2012,6 +2012,34 @@ Current source reconciliations:
 - Retired pregnancy letters are excluded. Pregnancy and lactation decisions use the exact product, ingredients, treated area, skin integrity, infant contact, alternatives, and patient preference.
 - Goodnotes was retried after the user reported access restored, but the Mac session still returned a locked state. Any dedicated photoprotection lecture will receive a documented reconciliation pass after manual unlock.
 
+### Herpes Labialis
+
+The Herpes Labialis module separates HSV entry, replication, sensory-neuron latency, reactivation, primary oral infection, recurrent disease, differential diagnosis, ocular and neurologic red flags, transmission, asymptomatic shedding, autoinoculation, early episodic treatment, topical and oral antiviral selection, renal safety, symptom care, prevention, immune compromise, eczema herpeticum, secondary infection, and special populations. It contains eight focused lessons, eight original interactive diagrams, eight embedded checks, and a 112-question assessment bank across 28 concepts and four reasoning levels. The 456-page production build, desktop layout, 390 pixel phone layout, overflow-free responsive diagrams, ten-question sampling, scoring, ten remediation links, and a subsequent attempt with zero repeated questions were verified on August 26, 2026.
+
+Current source reconciliations:
+
+- The cold-sore portion of RxPrep 2023 Chapter 39 was reviewed for HSV type, transmission, prodrome, triggers, topical and oral treatment, recurrence, and lysine. Its prose, table, and questions were not reproduced.
+- Oral and genital site are not treated as perfect proxies for HSV type. Either HSV-1 or HSV-2 can infect either site, so anatomy, exposure, testing context, and clinical pattern remain visible.
+- Surface healing is not a virologic cure. HSV establishes lifelong sensory-neuron latency, and current nucleoside analogs suppress active replication without eliminating the neuronal reservoir.
+- A localized familiar prodrome and grouped vesicles near the vermilion border are separated from diffuse primary gingivostomatitis, impetigo, angular cheilitis, aphthae, contact dermatitis, candidiasis, trauma, and persistent malignant mimics.
+- Eye pain, photophobia, visual change, gritty tearing, severe headache, confusion, seizure, focal neurologic findings, or systemic illness trigger urgent evaluation rather than topical self-care.
+- Visible lesions raise transmission risk, but no-lesion intervals are not described as zero risk because asymptomatic shedding can occur. Kissing, oral contact, shared lip products, lesion touching, eye transfer, infant exposure, atopic dermatitis, and immunocompromised contacts are addressed directly.
+- Episodic treatment begins at the prodrome or earliest lesion sign. Waiting for a mature vesicle or crust loses much of the available antiviral window.
+- Current OTC docosanol 10 percent labeling is used for external cold sores on the face or lips, with application five times daily from the first sign until healed. Eye, mouth, and nose use is excluded.
+- Current acyclovir and penciclovir cream labeling is product-, age-, site-, and immune-status specific. Penciclovir is applied every two waking hours for four days, and the frequent schedule and modest average benefit remain visible.
+- Current valacyclovir labeling supports 2 grams every 12 hours for one day in adults and patients at least 12 years old when normal renal dosing applies. Cold sore dosing is not borrowed from genital herpes or zoster regimens.
+- Buccal acyclovir is treated as a distinct single-dose upper-gum formulation used within one hour of prodrome in immunocompetent adults. It is not swallowed, crushed, chewed, or treated as an ordinary tablet.
+- Acyclovir activation in infected cells, viral DNA-polymerase inhibition, chain termination, valacyclovir conversion, and route-dependent exposure connect pharmacology to the clinical window.
+- Renal function, age, weight, dialysis, hydration, nephrotoxins, dose duplication, acute kidney injury, and neurotoxicity are reconciled before oral therapy. A normal-looking serum creatinine alone does not prove normal clearance in an older or low-muscle-mass patient.
+- Confusion, agitation, hallucinations, tremor, myoclonus, or seizure during therapy can indicate antiviral accumulation. Severe skin reactions, hemolysis, thrombocytopenia, or renal decline receive prompt evaluation.
+- Cool compresses, bland lip protection, adequate intake, age-appropriate analgesia, and avoidance of picking support healing. Caustic home remedies are excluded.
+- Broad-spectrum SPF 30 or higher lip protection is presented as trigger reduction for patients with sunlight-associated recurrence, not as guaranteed prevention.
+- Lysine is not presented as a proven substitute for episodic or suppressive antiviral treatment. Product quality, cost, kidney disease, pregnancy, lactation, and delayed care remain part of supplement counseling.
+- Prevention decisions use recurrence burden, pain, duration, work or school impact, immune status, trigger predictability, response, and patient goals rather than one arbitrary episode count alone.
+- Painful monomorphic vesicles or punched-out erosions spreading across atopic dermatitis with fever or eye symptoms are treated as possible eczema herpeticum and urgent systemic disease.
+- Retired pregnancy letters are excluded. Pregnancy, lactation, pediatric, and infant-contact decisions use the exact product, route, age, weight, renal function, treated site, exposure, and current labeling.
+- Goodnotes was retried again during module development, but the Mac session still returned a locked state. Any dedicated HSV lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
