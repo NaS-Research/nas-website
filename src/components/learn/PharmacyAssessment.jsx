@@ -48,12 +48,15 @@ function sampleDistinctConcepts(questions, count) {
 
 function createAttempt(questions, questionCount, previousIds) {
   const count = Math.min(questionCount, questions.length);
-  let selected = sampleDistinctConcepts(questions, count);
+  const previous = new Set(previousIds ? previousIds.split("|") : []);
+  const freshQuestions = questions.filter((question) => !previous.has(question.id));
+  const pool = freshQuestions.length >= count ? freshQuestions : questions;
+  let selected = sampleDistinctConcepts(pool, count);
   const selectionKey = selected.map((question) => question.id).sort().join("|");
-  if (questions.length > count && selectionKey === previousIds) {
+  if (pool.length > count && selectionKey === previousIds) {
     const remainingGroups = new Set(selected.slice(1).map(questionGroup));
-    const replacement = shuffle(questions.filter((question) => !selected.includes(question) && !remainingGroups.has(questionGroup(question))))[0];
-    selected = replacement ? [...selected.slice(1), replacement] : sampleDistinctConcepts(questions, count);
+    const replacement = shuffle(pool.filter((question) => !selected.includes(question) && !remainingGroups.has(questionGroup(question))))[0];
+    selected = replacement ? [...selected.slice(1), replacement] : sampleDistinctConcepts(pool, count);
   }
   return shuffle(selected.map(prepareQuestion));
 }

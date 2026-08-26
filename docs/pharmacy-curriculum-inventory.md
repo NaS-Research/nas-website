@@ -1600,7 +1600,6 @@ Current source reconciliations:
 
 Deferred into focused modules:
 
-- Gynecologic oncology
 - Pelvic organ prolapse and fistula care
 
 ### Cervicitis and Pelvic Inflammatory Disease
@@ -1621,6 +1620,24 @@ Current source reconciliations:
 - Pregnancy uses narrative risk and requires hospital, IV, and specialist care for suspected PID. An IUD generally remains during initial treatment with reassessment at 48 to 72 hours. Retired pregnancy letters are absent.
 - Clinical improvement is measured within 72 hours. Partners from the preceding 60 days receive chlamydia and gonorrhea evaluation and presumptive therapy, temporary abstinence lasts through patient completion, symptom resolution, and partner treatment, and chlamydial or gonococcal PID is retested at three months.
 - Goodnotes was rechecked before this build after access was reported restored, but macOS still presented the desktop session as locked. A dedicated cervicitis or PID lecture will receive a documented reconciliation pass when the session is manually unlocked.
+
+### Gynecologic Oncology
+
+The gynecologic oncology module organizes ovarian, fallopian tube, primary peritoneal, endometrial, and cervical cancer around anatomy, histology, stage, operability, molecular phenotype, treatment intent, prior therapy, and patient goals. It includes surgical staging and cytoreduction; primary ovarian platinum and taxane therapy; bevacizumab; BRCA and HRD-directed maintenance; product-specific PARP safety; platinum-sensitive and platinum-resistant recurrence; FRalpha-directed mirvetuximab; KRAS-mutated low-grade serous therapy; localized and fertility-sparing endometrial care; molecularly refined adjuvant therapy; advanced endometrial chemoimmunotherapy; dMMR and MSI-H disease; endocrine therapy; HER2-positive uterine serous disease; HPV prevention; early cervical local therapy; definitive chemoradiation; stage-defined pembrolizumab with chemoradiation; recurrent cervical systemic therapy; tisotumab vedotin; carboplatin Calvert calculation; toxicity attribution; fertility; menopause; sexual health; palliative care; survivorship; clinical trials; and access. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 136-question assessment bank across 34 concepts and four reasoning levels.
+
+Current source reconciliations:
+
+- The complete RxPrep 2023 general oncology sequence was reviewed visually for cytotoxic, endocrine, targeted, immune, and supportive-care pharmacology. It does not provide a complete gynecologic oncology framework, so site-specific treatment architecture is grounded in current NCI professional guidance and current FDA labeling.
+- Ovarian, fallopian tube, and primary peritoneal cancers share a treatment continuum, but histology is preserved. Primary cytoreduction and neoadjuvant therapy are selected by resectability, disease distribution, operative risk, tissue confirmation, and patient goals rather than stage alone.
+- Carboplatin plus paclitaxel is presented as a core ovarian and endometrial backbone. Carboplatin exposure uses the Calvert formula with the protocol-specified renal estimate, while paclitaxel safety includes hypersensitivity prevention, marrow, liver, and cumulative neuropathy monitoring.
+- Current PARP maintenance is product and biomarker specific. Old all-comer niraparib language is not used. Persistent cytopenias trigger investigation, and rare MDS or AML risk remains explicit.
+- Mirvetuximab is restricted to companion-diagnostic FRalpha-positive, platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal cancer after one to three prior regimens, with ocular prophylaxis and monitoring treated as part of every dose.
+- Avutometinib plus defactinib is restricted to KRAS-mutated recurrent low-grade serous ovarian cancer after prior systemic therapy and is identified as an accelerated-approval pathway with its calendar and organ-specific monitoring intact.
+- Endometrial therapy integrates POLE, MMR or MSI, p53, histology, stage, grade, invasion, nodes, and HER2 when relevant. Pembrolizumab and dostarlimab combination pathways are separated from the dMMR-specific durvalumab pathway.
+- Cervical care separates HPV prevention and screening from treatment of invasive disease. Definitive chemoradiation preserves external-beam radiation, brachytherapy, and concurrent weekly cisplatin, while pembrolizumab with chemoradiation remains limited to the current stage-defined indication.
+- Recurrent cervical therapy integrates PD-L1 selection, platinum and taxane therapy, bevacizumab tissue-healing and fistula risk, and tisotumab vedotin ocular prophylaxis. Selected local salvage remains distinct from systemic disease control.
+- Retired pregnancy letters are absent. Fertility, menopause, sexual health, symptom relief, palliative care, survivorship, practical access, hereditary implications, and clinical trials are integrated longitudinally rather than isolated from anticancer therapy.
+- Goodnotes was rechecked after access was reported restored, but macOS still presented a locked desktop session. The module will receive a documented lecture reconciliation pass when the session is manually unlocked.
 
 ## First production sequence
 
