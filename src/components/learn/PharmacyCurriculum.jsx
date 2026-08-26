@@ -20,11 +20,13 @@ export default function PharmacyCurriculum({ collections, lessons }) {
 
   const visibleCollections = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
-    return collections.filter((collection) => {
-      const matchesArea = area === "All" || getArea(collection) === area;
-      const searchable = [collection.title, collection.description, ...(collection.topics || [])].join(" ").toLowerCase();
-      return matchesArea && (!normalizedQuery || searchable.includes(normalizedQuery));
-    });
+    return collections
+      .filter((collection) => {
+        const matchesArea = area === "All" || getArea(collection) === area;
+        const searchable = [collection.title, collection.description, ...(collection.topics || [])].join(" ").toLowerCase();
+        return matchesArea && (!normalizedQuery || searchable.includes(normalizedQuery));
+      })
+      .sort((left, right) => Number(right.number) - Number(left.number));
   }, [area, collections, query]);
 
   return (

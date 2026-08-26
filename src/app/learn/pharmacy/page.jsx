@@ -16,6 +16,7 @@ export const metadata = {
 export default function PharmacyLearningPage() {
   const curriculumCollections = pharmacyModules.map((module) => ({
     slug: module.slug,
+    number: module.number,
     title: module.title,
     description: module.description,
     topics: module.topics,
