@@ -819,6 +819,19 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 397 static pages generated
 - Goodnotes reconciliation: complete for the dedicated 31-page gonadal-hormone lecture; the separate DAST IV reproductive review remains reserved for cross-module reconciliation after the related contraception, infertility, gynecologic, and pregnancy modules are built
 
+### Shock and Vasoactive Pharmacotherapy
+
+- Course scope: shock recognition, compensated and normotensive shock, perfusion trajectories, distributive, hypovolemic, cardiogenic, and obstructive phenotypes, mean arterial pressure, cardiac output, systemic vascular resistance, oxygen delivery, dynamic fluid responsiveness, fluid tolerance, balanced crystalloid selection, septic-shock sequencing, source control, catecholamine receptor pharmacology, norepinephrine, epinephrine, dopamine, phenylephrine, vasopressin, angiotensin II, dobutamine, milrinone, anaphylaxis, obstructive shock, nitroglycerin, nitroprusside, high-alert infusion calculations, extravasation response, monitoring, titration, and de-escalation
+- Course source reviewed: RxPrep NAPLEX 2023 Acute and Critical Care Medicine chapter, PDF pages 714 through 728, visually inspected in full
+- Current references reviewed: 2026 Surviving Sepsis Campaign adult guidance, 2025 ACC cardiogenic-shock guidance, 2023 anaphylaxis practice parameter, and current DailyMed labeling for norepinephrine, vasopressin, angiotensin II, milrinone, and nitroprusside
+- Learning structure: ten content-driven lessons, ten native perfusion, hemodynamic, fluid, sepsis, catecholamine, noncatecholamine, cardiogenic, cause-directed, vasodilator, and infusion-safety diagrams, and ten embedded knowledge checks
+- Assessment: 124 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: 2026 sepsis guidance replaced older fixed sequencing with dynamic fluid assessment, early peripheral vasopressor initiation when needed, an initial MAP near 65 mm Hg, current older-adult targets, and simultaneous antimicrobial and source-control work; cardiogenic shock uses serial phenotype and SCAI-stage reasoning rather than hypotension alone; norepinephrine remains the default first vasopressor in septic shock and a reasonable first choice for most hypotensive cardiogenic shock; vasopressin, angiotensin II, inotropes, vasodilators, and corticosteroids retain indication-specific boundaries; pressure response is separated from restored flow; and every high-alert infusion includes concentration, line, monitoring, titration, extravasation, and stop planning
+- Automated verification: 124 unique question IDs, 124 unique prompts, four unique choices per question, valid lesson links, ten diagrams, and no em dash or en dash characters in public prose
+- Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, ten diagrams, all ten embedded knowledge checks, ten-question randomized attempts with unique questions, changed question sets, complete scoring, explanations, and ten remediation links
+- Build verification: Next.js production build passed August 26, 2026 with 407 static pages generated
+- Source routing: fluid and electrolyte overlap remains in Fluid and Electrolyte Therapy; acute decompensated heart-failure overlap remains in its dedicated module; ICU analgesia, sedation, delirium, perioperative pharmacology, and remaining critical-care material are reserved for focused modules rather than compressed here
+
 ## Goodnotes availability
 
 ### Books
@@ -826,6 +839,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - RxPrep NAPLEX 2023, 1,032 pages
 
 The RxPrep text is available locally for scope comparison and calculations review. It is not stored in Git and its prose or proprietary questions are not reproduced.
+
+The Acute and Critical Care Medicine chapter has been audited completely. Its material is routed to the existing Fluid and Electrolyte Therapy and Acute Decompensated Heart Failure modules, the completed Shock and Vasoactive Pharmacotherapy module, and future focused modules for ICU analgesia, sedation, delirium, perioperative pharmacology, and remaining critical-care topics.
 
 ### DAST I
 
