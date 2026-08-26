@@ -1083,12 +1083,12 @@ Available documents include contraception, osteoporosis, benign prostatic hyperp
 
 Target modules:
 
-1. Contraception
+1. Contraception (`built`, 100 question bank; 62-page dedicated Goodnotes lecture reconciled)
 2. Menopausal Hormone Therapy (`built`, 100 question bank; 61-page dedicated Goodnotes lecture reconciled)
 3. Benign Prostatic Hyperplasia (`built`, 104 question bank; dedicated Goodnotes lecture reconciliation pending)
 4. Sexual Dysfunction (`built`, 112 question bank; dedicated Goodnotes lecture reconciliation pending)
 5. Urinary Incontinence (`built`, 104 question bank; dedicated Goodnotes lecture reconciliation pending)
-6. Osteoporosis
+6. Osteoporosis (`built`, 104 question bank; dedicated Goodnotes lecture reconciliation pending)
 7. Genitourinary Medicinal Chemistry
 
 ### DAST V
@@ -1123,6 +1123,9 @@ Completed production modules:
 5. Pregnancy and Lactation Pharmacotherapy
 6. Menopausal Hormone Therapy
 7. Benign Prostatic Hyperplasia
+8. Urinary Incontinence
+9. Sexual Dysfunction
+10. Osteoporosis
 8. Urinary Incontinence
 9. Sexual Dysfunction
 
