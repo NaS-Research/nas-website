@@ -1084,7 +1084,7 @@ Available documents include contraception, osteoporosis, benign prostatic hyperp
 Target modules:
 
 1. Contraception
-2. Menopausal Hormone Therapy
+2. Menopausal Hormone Therapy (`built`, 100 question bank; 61-page dedicated Goodnotes lecture reconciled)
 3. Benign Prostatic Hyperplasia
 4. Erectile Dysfunction
 5. Urinary Incontinence
@@ -1121,6 +1121,7 @@ Completed production modules:
 3. Infertility Evaluation and Ovulation Induction
 4. Contraceptive Pharmacotherapy
 5. Pregnancy and Lactation Pharmacotherapy
+6. Menopausal Hormone Therapy
 
 The menstrual and gynecologic module includes menstrual assessment, PALM-COEIN classification, acute abnormal uterine bleeding, chronic heavy menstrual bleeding, dysmenorrhea, premenstrual disorders, endometriosis, and uterine fibroids. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 100-question assessment bank.
 
@@ -1129,6 +1130,8 @@ The infertility module includes evaluation timing, the fertile window, female an
 The contraception module includes person-centered selection, U.S. MEC, combined methods, estrogen eligibility, progestin-only methods, IUDs, the etonogestrel implant, emergency contraception, quick start, missed-use management, and drug interactions. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 100-question assessment bank.
 
 The pregnancy and lactation module includes pregnancy context, maternal pharmacokinetics, placental transfer, developmental timing, FDA labeling, common symptom management, diabetes, preeclampsia, venous thromboembolism, lactation exposure science, and drug-specific breastfeeding counseling. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 100-question assessment bank. Desktop and 390 pixel mobile layouts, ten-question assessment launch, answer randomization support, remediation anchors, and the production build were verified on August 25, 2026.
+
+The menopausal hormone therapy module includes the menopausal transition, vasomotor neurobiology, estrogen pharmacology and routes, progestogen regimens, endometrial protection, bleeding surveillance, nonhormonal vasomotor treatment, genitourinary syndrome, risk stratification, prevention boundaries, and longitudinal reassessment. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 100-question assessment bank. Desktop and 390 pixel mobile layouts, ten-question assessment launch, fresh question sampling, answer randomization, scoring, explanations, ten remediation links, an overflow-free mobile layout, and the production build were verified on August 25, 2026.
 
 Current guidance reconciliations:
 
@@ -1148,10 +1151,15 @@ Current guidance reconciliations:
 - ADA Standards of Care 2026 targets and treatment priorities replace the lecture's older gestational-diabetes hierarchy, including insulin as the preferred medication when lifestyle therapy is insufficient and postpartum oral glucose tolerance testing at 4 to 12 weeks.
 - ACOG guidance replaces the older fixed preeclampsia prevention dose with 81 mg aspirin for eligible patients between 12 and 28 weeks, optimally before 16 weeks.
 - NIH LactMed and current FDA labeling replace broad lactation avoidance lists and a universal relative infant dose cutoff; codeine and tramadol are specifically identified as not recommended during breastfeeding.
+- The Menopause Society timing framework replaces a universal hormone-therapy rule with individualized assessment by symptom target, age, time since menopause, route, uterus status, history, and patient preference.
+- FDA's 2026 menopausal hormone-therapy labeling changes remove several legacy boxed-warning statements and the blanket shortest-duration phrase from updated products; current product-specific labeling and periodic reassessment are taught instead.
+- Fezolinetant now includes the current boxed hepatotoxicity warning, baseline hepatic testing, monthly testing for three months, and repeat testing at months 6 and 9.
+- Elinzanetant, approved in 2025, is included as an NK1 and NK3 antagonist with its own bedtime regimen, sedation precautions, interactions, and dose-modification guidance.
+- USPSTF prevention guidance is separated from symptom treatment: systemic hormone therapy is not initiated solely for primary prevention of cardiovascular disease, dementia, or other chronic conditions.
+- The lecture's 2017 to 2018 gender-affirming hormone material was not folded into the menopause module. It remains a clinically distinct future module that requires contemporary, source-complete reconciliation before publication.
 
 Deferred into focused modules:
 
-- Menopause
 - Vulvovaginal infection and pelvic inflammatory disease
 - Gynecologic oncology
 - Pelvic organ prolapse and fistula care
