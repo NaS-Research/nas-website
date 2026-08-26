@@ -100,6 +100,7 @@ import TobaccoUseCessationVisual from "@/components/learn/TobaccoUseCessationVis
 import SystemicGlucocorticoidsVisual from "@/components/learn/SystemicGlucocorticoidsVisual";
 import RheumatoidArthritisVisual from "@/components/learn/RheumatoidArthritisVisual";
 import SystemicLupusErythematosusVisual from "@/components/learn/SystemicLupusErythematosusVisual";
+import MultipleSclerosisVisual from "@/components/learn/MultipleSclerosisVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -198,6 +199,7 @@ const tobaccoUseCessationVisualTypes = ["tobacco-dependence", "tobacco-plan", "t
 const systemicGlucocorticoidsVisualTypes = ["gc-signaling", "gc-equivalence", "gc-treatment-plan", "gc-hpa-risk", "gc-taper", "gc-stress", "gc-metabolic", "gc-infection-vaccine", "gc-bone-tissue", "gc-longitudinal"];
 const rheumatoidArthritisVisualTypes = ["ra-recognition", "ra-target", "ra-methotrexate", "ra-csdmards", "ra-biologics", "ra-jak", "ra-prevention", "ra-supportive", "ra-remission", "ra-longitudinal"];
 const systemicLupusErythematosusVisualTypes = ["sle-recognition", "sle-immunity", "sle-targets", "sle-hcq", "sle-organs", "sle-conventional", "sle-biologics", "sle-nephritis", "sle-prevention", "sle-longitudinal"];
+const multipleSclerosisVisualTypes = ["ms-recognition", "ms-course", "ms-relapse", "ms-injectables", "ms-orals", "ms-s1p", "ms-biologics", "ms-reconstitution", "ms-rehabilitation", "ms-longitudinal"];
 const diarrheaAssessmentVisualTypes = ["diarrhea-phenotype", "diarrhea-triage", "diarrhea-causes", "diarrhea-rehydration", "diarrhea-testing", "diarrhea-supportive", "diarrhea-bismuth", "diarrhea-antimotility", "diarrhea-travel", "diarrhea-persistent"];
 
 export function generateStaticParams() {
@@ -363,6 +365,7 @@ export default async function PharmacyModulePage({ params }) {
               {systemicGlucocorticoidsVisualTypes.includes(submodule.visual) && <SystemicGlucocorticoidsVisual type={submodule.visual} />}
               {rheumatoidArthritisVisualTypes.includes(submodule.visual) && <RheumatoidArthritisVisual type={submodule.visual} />}
               {systemicLupusErythematosusVisualTypes.includes(submodule.visual) && <SystemicLupusErythematosusVisual type={submodule.visual} />}
+              {multipleSclerosisVisualTypes.includes(submodule.visual) && <MultipleSclerosisVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>

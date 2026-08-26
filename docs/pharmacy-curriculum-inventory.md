@@ -1389,6 +1389,19 @@ Target modules presently supported:
 - Browser verification: 1280 pixel desktop and 390 pixel mobile production rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, eleven current reference links, ten questions per attempt, a second sample with zero overlap, scoring with ten explanations and ten remediation links, and zero browser console warnings or errors.
 - Build verification: Next.js production build passed August 26, 2026 with 427 static pages generated.
 
+### Multiple Sclerosis
+
+- Primary course source: RxPrep 2023, Chapter 46 multiple sclerosis section, PDF pages 653 through 656, printed pages 645 through 648. All four pages were rendered and reviewed visually before synthesis.
+- Current verification sources: 2024 McDonald diagnostic criteria published in 2025; American Academy of Neurology disease-modifying therapy guidance reaffirmed in 2024; June 2024 Department of Veterans Affairs national DMT recommendations; VA relapse guidance; and current prescribing information for ublituximab, ofatumumab, subcutaneous ocrelizumab, and natalizumab.
+- Learning structure: ten focused lessons, ten native diagnostic and clinical-decision diagrams, and ten embedded knowledge checks.
+- Assessment: 100 original questions across 25 distinct concept groups and four difficulty levels. Each attempt samples ten questions without replacement and randomizes answer order.
+- Source reconciliation: the optic nerve is taught as a fifth diagnostic location; the central vein sign, paramagnetic rim lesions, and CSF kappa free light chains are incorporated within their current evidence boundaries; MS mimics remain explicit; relapse is separated from pseudo-relapse and progression; high-dose glucocorticoids and plasma exchange are framed as acute treatments rather than DMT; platform, oral, S1P, anti-CD20, natalizumab, cladribine, and alemtuzumab strategies are differentiated by exact product and risk system; ublituximab and subcutaneous ocrelizumab are included; PML, rebound, reproductive, vaccination, infection, and transition risks are integrated; and dalfampridine retains its seizure and renal contraindications.
+- Scope boundary: Raynaud phenomenon, celiac disease, myasthenia gravis, Sjogren syndrome, and psoriasis remain separate focused modules.
+- Goodnotes note: Goodnotes access was restored on August 26, 2026. A library-wide search found multiple sclerosis material only inside the RxPrep volume and did not identify a dedicated lecture deck. This module will receive a documented reconciliation pass if a course lecture is later added.
+- Automated verification: 100 unique question IDs, 25 concept groups, four difficulty levels, 100 unique question prompts, no duplicate choices within an item, valid links to all ten lessons, ten distinct diagrams, ten embedded checks, ten references, and no em dash or en dash characters in public module prose.
+- Browser verification: 1280 pixel desktop and 390 pixel mobile production rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, ten current reference links, ten unique questions per attempt, different successive samples, scoring with ten explanations and ten remediation links, and zero browser console warnings or errors.
+- Build verification: Next.js production build passed August 26, 2026 with 428 static pages generated.
+
 ### DAST IV reproductive and gynecologic sequence
 
 Reviewed source documents:
