@@ -1140,9 +1140,22 @@ Currently accessible documents:
 
 Target modules presently supported:
 
-1. Gastroesophageal Reflux Disease
+1. Gastroesophageal Reflux Disease (`built`, 120 question bank; Goodnotes reconciliation pending)
 2. Peptic Ulcer Disease
 3. Irritable Bowel Syndrome
+
+### Gastroesophageal Reflux Disease
+
+- RxPrep source: NAPLEX 2023 Chapter 72 GERD section, PDF pages 912 through 916, visually reviewed in full
+- Current references reviewed: ACG diagnosis and management guideline, AGA proton pump inhibitor deprescribing update, and current DailyMed labeling for omeprazole, famotidine, dexlansoprazole, and metoclopramide
+- Learning structure: ten lessons, ten native mechanism and decision diagrams, and ten embedded knowledge checks
+- Assessment: 120 original questions spanning barrier physiology, clearance, symptom triage, cardiac and extraesophageal mimics, diagnostic testing, lifestyle care, antacids, alginate, H2-receptor antagonists, PPI pharmacology and administration, treatment selection, persistent symptoms, maintenance, deprescribing, adverse-event evidence, and interactions; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: routine food prohibition lists were replaced by mechanism-based and patient-specific interventions; normal endoscopy was separated from absence of GERD; off-therapy and on-therapy reflux testing were assigned distinct roles; famotidine renal adjustment and neurologic risk were updated; PPI safety associations were separated from causal evidence; and routine prokinetic use was rejected without an appropriate indication
+- Scope boundary: peptic ulcer disease and irritable bowel syndrome remain separate modules rather than being merged with GERD
+- Goodnotes note: the dedicated PUD, GERD, and IBS 2026 lecture remains pending because the Mac was locked on August 26, 2026; it will receive a documented reconciliation pass when access is restored
+- Automated verification: 120 unique question IDs, no duplicate answer choices, valid lesson links, ten diagrams, and no em dash or en dash characters in public module prose
+- Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, ten questions per attempt, a second attempt with a different set and no overlap in the verified run, scoring with ten explanations and ten remediation links, and responsive restoration after testing
+- Build verification: Next.js production build passed August 26, 2026 with 410 static pages generated
 
 ### DAST IV reproductive and gynecologic sequence
 
