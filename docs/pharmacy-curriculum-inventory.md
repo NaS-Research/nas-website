@@ -1150,6 +1150,7 @@ Target modules presently supported:
 8. Medication Safety and Quality Improvement (`built`, 136 question bank; Goodnotes reconciliation pending)
 9. Infection Prevention and Control (`built`, 136 question bank; Goodnotes reconciliation pending)
 10. Drug Allergies and Adverse Drug Reactions (`built`, 136 question bank; Goodnotes reconciliation pending)
+11. Pharmacokinetics (`built`, 140 question bank; Goodnotes reconciliation pending)
 
 ### Gastroesophageal Reflux Disease
 
@@ -1281,6 +1282,19 @@ Target modules presently supported:
 - Automated verification: 136 unique question IDs, 34 distinct concept groups, no duplicate answer choices, valid links to all ten lessons, four difficulty levels, ten diagrams, and no em dash or en dash characters in public module prose
 - Browser verification: 1280 pixel desktop and 390 pixel mobile production rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, twelve current reference links, ten distinct questions per attempt, a different second sample, scoring with ten explanations and ten remediation links, and zero browser console warnings or errors
 - Build verification: Next.js production build passed August 26, 2026 with 419 static pages generated
+
+### Pharmacokinetics
+
+- RxPrep source: NAPLEX 2023 Chapter 78 pharmacokinetics content, PDF pages 966 through 977, visually reviewed in full
+- Current references reviewed: FDA bioavailability guidance, FDA population pharmacokinetics guidance, ICH M12 drug-interaction guidance, current FDA enzyme and transporter tables, current DailyMed phenytoin labeling, and the AACT and EAPCCT urine-alkalinization position paper
+- Learning structure: ten focused lessons, ten native calculation and decision diagrams, and ten embedded knowledge checks
+- Assessment: 140 original questions across 35 distinct concept groups spanning PK and PD, ADME, route and formulation, dissolution, first-pass loss, absolute and relative bioavailability, AUC, Cmax, Tmax, distribution, protein binding, unbound phenytoin, apparent volume, metabolic phases, metabolites, enzymes, transporters, renal and hepatic clearance, urine pH boundaries, linear and nonlinear kinetics, Michaelis-Menten elimination, phenytoin nonlinearity, elimination rate constants, exponential prediction, half-life, steady state, loading and maintenance design, dosing intervals, and therapeutic drug monitoring
+- Source reconciliation: universal formulation-onset rankings were removed; orally disintegrating tablets are not assumed to absorb faster; bioavailability is taught as a dose-normalized continuum; metabolic phases are not presented as a mandatory sequence; direct unbound phenytoin measurement is preferred when binding is substantially altered; urinary acidification is rejected as routine treatment; Michaelis-Menten behavior replaces proportional phenytoin dose scaling; and therapeutic ranges are treated as population references rather than automatic individual targets
+- Scope boundary: drug-specific population models, Bayesian software implementation, physiologically based pharmacokinetic modeling, detailed renal-replacement extraction, and disease-specific therapeutic drug monitoring remain in focused modules
+- Goodnotes note: dedicated pharmacokinetics lecture reconciliation remains pending while direct Goodnotes export is unavailable; the RxPrep and current-source synthesis is complete and will receive a documented pass when access is restored
+- Automated verification: 140 unique question IDs, 35 distinct concept groups, no duplicate answer choices, four difficulty levels, ten diagrams, and no em dash or en dash characters in public module prose
+- Browser verification: 1280 pixel desktop and 390 pixel mobile production rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, ten questions per attempt, a second attempt with no exact question overlap in the verified run, scoring with ten explanations and ten remediation links, and zero browser console warnings or errors
+- Build verification: Next.js production build passed August 26, 2026 with 420 static pages generated
 
 ### DAST IV reproductive and gynecologic sequence
 
