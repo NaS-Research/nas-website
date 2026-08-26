@@ -68,6 +68,7 @@ import ThyroidDisordersVisual from "@/components/learn/ThyroidDisordersVisual";
 import ThyroidMedicinalChemistryVisual from "@/components/learn/ThyroidMedicinalChemistryVisual";
 import AdrenalPharmacologyVisual from "@/components/learn/AdrenalPharmacologyVisual";
 import CushingSyndromeVisual from "@/components/learn/CushingSyndromeVisual";
+import AdrenalInsufficiencyVisual from "@/components/learn/AdrenalInsufficiencyVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -135,6 +136,7 @@ const thyroidDisordersVisualTypes = ["thyroid-axis", "thyroid-hypothyroidism", "
 const thyroidMedicinalChemistryVisualTypes = ["thychem-biosynthesis", "thychem-scaffold", "thychem-stereo", "thychem-deiodination", "thychem-analogs", "thychem-thionamides", "thychem-iodine", "thychem-formulation"];
 const adrenalPharmacologyVisualTypes = ["adrenal-hpa", "adrenal-zones", "adrenal-steroidogenesis", "adrenal-gr", "adrenal-mr", "adrenal-sar", "adrenal-family", "adrenal-disposition", "adrenal-equivalence", "adrenal-safety"];
 const cushingSyndromeVisualTypes = ["cushing-recognition", "cushing-testing", "cushing-acth", "cushing-localization", "cushing-severity", "cushing-surgery", "cushing-steroidogenesis", "cushing-directed", "cushing-longterm"];
+const adrenalInsufficiencyVisualTypes = ["ai-levels", "ai-primary", "ai-central", "ai-patterns", "ai-testing", "ai-glucocorticoid", "ai-mineralocorticoid", "ai-preparedness", "ai-crisis", "ai-follow-up"];
 
 export function generateStaticParams() {
   return pharmacyModules.map((module) => ({ slug: module.slug }));
@@ -171,7 +173,7 @@ export default async function PharmacyModulePage({ params }) {
       <header className="pharmacy-module-hero">
         <div className="nas-shell">
           <Link href="/learn/pharmacy#curriculum" className="learning-back">← Pharmacy curriculum</Link>
-          <div className="pharmacy-module-hero__meta"><span>Module {module.number}</span><span>{module.submodules.length} submodules</span><span>{module.source}</span></div>
+          <div className="pharmacy-module-hero__meta"><span>Module {module.number}</span><span>{module.submodules.length} lessons</span><span>{module.source}</span></div>
           <h1>{module.title}</h1>
           <p>{module.description}</p>
           <div className="pharmacy-module-hero__outcomes">
@@ -194,14 +196,14 @@ export default async function PharmacyModulePage({ params }) {
                 const study = getPharmacyStudyContent(submodule.slug);
                 return <>
               <div className="pharmacy-submodule__number">{module.number}.{String(index + 1).padStart(2, "0")}</div>
-              <p className="nas-section-label">Submodule</p>
+              <p className="nas-section-label">Lesson</p>
               <h2>{submodule.title}</h2>
               <p className="pharmacy-submodule__summary">{submodule.summary}</p>
               <div className="pharmacy-submodule__concepts">
                 <span>What to learn</span>
                 <ul>{submodule.concepts.map((concept) => <li key={concept}>{concept}</li>)}</ul>
               </div>
-              {submodule.visual && !submodule.visual.startsWith("acid-") && !calciumVisualTypes.includes(submodule.visual) && !enteralVisualTypes.includes(submodule.visual) && !parenteralVisualTypes.includes(submodule.visual) && !parenteralCalculationVisualTypes.includes(submodule.visual) && !pediatricParenteralVisualTypes.includes(submodule.visual) && !autonomicVisualTypes.includes(submodule.visual) && !cholinergicVisualTypes.includes(submodule.visual) && !antimuscarinicVisualTypes.includes(submodule.visual) && !cholinergicMedicinalChemistryVisualTypes.includes(submodule.visual) && !anticholinergicMedicinalChemistryVisualTypes.includes(submodule.visual) && !cholinergicToxicologyVisualTypes.includes(submodule.visual) && !adrenergicAgonistVisualTypes.includes(submodule.visual) && !adrenergicAntagonistVisualTypes.includes(submodule.visual) && !adrenergicMedicinalChemistryVisualTypes.includes(submodule.visual) && !diureticPharmacologyVisualTypes.includes(submodule.visual) && !diureticMedicinalChemistryVisualTypes.includes(submodule.visual) && !glaucomaPharmacotherapyVisualTypes.includes(submodule.visual) && !hypertensionFoundationsVisualTypes.includes(submodule.visual) && !resistantSecondaryHypertensionVisualTypes.includes(submodule.visual) && !hypertensiveEmergenciesVisualTypes.includes(submodule.visual) && !antihypertensiveMedicinalChemistryVisualTypes.includes(submodule.visual) && !dyslipidemiaRiskVisualTypes.includes(submodule.visual) && !lipidLoweringPharmacologyVisualTypes.includes(submodule.visual) && !dyslipidemiaTherapeuticsVisualTypes.includes(submodule.visual) && !chronicCoronaryDiseaseVisualTypes.includes(submodule.visual) && !acuteCoronarySyndromesVisualTypes.includes(submodule.visual) && !antiplateletPharmacologyVisualTypes.includes(submodule.visual) && !coagulationAnticoagulantVisualTypes.includes(submodule.visual) && !venousThromboembolismVisualTypes.includes(submodule.visual) && !warfarinManagementVisualTypes.includes(submodule.visual) && !directOralAnticoagulantsVisualTypes.includes(submodule.visual) && !parenteralAnticoagulantsVisualTypes.includes(submodule.visual) && !ecgInterpretationVisualTypes.includes(submodule.visual) && !arrhythmiaPathophysiologyVisualTypes.includes(submodule.visual) && !atrialArrhythmiasVisualTypes.includes(submodule.visual) && !ventricularArrhythmiasVisualTypes.includes(submodule.visual) && !antiarrhythmicPharmacologyVisualTypes.includes(submodule.visual) && !heartFailurePathophysiologyVisualTypes.includes(submodule.visual) && !diabeticKetoacidosisVisualTypes.includes(submodule.visual) && !hyperosmolarHyperglycemicStateVisualTypes.includes(submodule.visual) && !thyroidDisordersVisualTypes.includes(submodule.visual) && !thyroidMedicinalChemistryVisualTypes.includes(submodule.visual) && !adrenalPharmacologyVisualTypes.includes(submodule.visual) && !cushingSyndromeVisualTypes.includes(submodule.visual) && <FluidElectrolyteVisual type={submodule.visual} />}
+              {submodule.visual && !submodule.visual.startsWith("acid-") && !calciumVisualTypes.includes(submodule.visual) && !enteralVisualTypes.includes(submodule.visual) && !parenteralVisualTypes.includes(submodule.visual) && !parenteralCalculationVisualTypes.includes(submodule.visual) && !pediatricParenteralVisualTypes.includes(submodule.visual) && !autonomicVisualTypes.includes(submodule.visual) && !cholinergicVisualTypes.includes(submodule.visual) && !antimuscarinicVisualTypes.includes(submodule.visual) && !cholinergicMedicinalChemistryVisualTypes.includes(submodule.visual) && !anticholinergicMedicinalChemistryVisualTypes.includes(submodule.visual) && !cholinergicToxicologyVisualTypes.includes(submodule.visual) && !adrenergicAgonistVisualTypes.includes(submodule.visual) && !adrenergicAntagonistVisualTypes.includes(submodule.visual) && !adrenergicMedicinalChemistryVisualTypes.includes(submodule.visual) && !diureticPharmacologyVisualTypes.includes(submodule.visual) && !diureticMedicinalChemistryVisualTypes.includes(submodule.visual) && !glaucomaPharmacotherapyVisualTypes.includes(submodule.visual) && !hypertensionFoundationsVisualTypes.includes(submodule.visual) && !resistantSecondaryHypertensionVisualTypes.includes(submodule.visual) && !hypertensiveEmergenciesVisualTypes.includes(submodule.visual) && !antihypertensiveMedicinalChemistryVisualTypes.includes(submodule.visual) && !dyslipidemiaRiskVisualTypes.includes(submodule.visual) && !lipidLoweringPharmacologyVisualTypes.includes(submodule.visual) && !dyslipidemiaTherapeuticsVisualTypes.includes(submodule.visual) && !chronicCoronaryDiseaseVisualTypes.includes(submodule.visual) && !acuteCoronarySyndromesVisualTypes.includes(submodule.visual) && !antiplateletPharmacologyVisualTypes.includes(submodule.visual) && !coagulationAnticoagulantVisualTypes.includes(submodule.visual) && !venousThromboembolismVisualTypes.includes(submodule.visual) && !warfarinManagementVisualTypes.includes(submodule.visual) && !directOralAnticoagulantsVisualTypes.includes(submodule.visual) && !parenteralAnticoagulantsVisualTypes.includes(submodule.visual) && !ecgInterpretationVisualTypes.includes(submodule.visual) && !arrhythmiaPathophysiologyVisualTypes.includes(submodule.visual) && !atrialArrhythmiasVisualTypes.includes(submodule.visual) && !ventricularArrhythmiasVisualTypes.includes(submodule.visual) && !antiarrhythmicPharmacologyVisualTypes.includes(submodule.visual) && !heartFailurePathophysiologyVisualTypes.includes(submodule.visual) && !diabeticKetoacidosisVisualTypes.includes(submodule.visual) && !hyperosmolarHyperglycemicStateVisualTypes.includes(submodule.visual) && !thyroidDisordersVisualTypes.includes(submodule.visual) && !thyroidMedicinalChemistryVisualTypes.includes(submodule.visual) && !adrenalPharmacologyVisualTypes.includes(submodule.visual) && !cushingSyndromeVisualTypes.includes(submodule.visual) && !adrenalInsufficiencyVisualTypes.includes(submodule.visual) && <FluidElectrolyteVisual type={submodule.visual} />}
               {submodule.visual?.startsWith("acid-") && <AcidBaseVisual type={submodule.visual} />}
               {calciumVisualTypes.includes(submodule.visual) && <CalciumPhosphorusVisual type={submodule.visual} />}
               {enteralVisualTypes.includes(submodule.visual) && <EnteralNutritionVisual type={submodule.visual} />}
@@ -267,6 +269,7 @@ export default async function PharmacyModulePage({ params }) {
               {thyroidMedicinalChemistryVisualTypes.includes(submodule.visual) && <ThyroidMedicinalChemistryVisual type={submodule.visual} />}
               {adrenalPharmacologyVisualTypes.includes(submodule.visual) && <AdrenalPharmacologyVisual type={submodule.visual} />}
               {cushingSyndromeVisualTypes.includes(submodule.visual) && <CushingSyndromeVisual type={submodule.visual} />}
+              {adrenalInsufficiencyVisualTypes.includes(submodule.visual) && <AdrenalInsufficiencyVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
@@ -304,7 +307,7 @@ export default async function PharmacyModulePage({ params }) {
           <section className="pharmacy-module-test" id="module-test">
             <p className="nas-section-label">Module test</p>
             <h2>Check the connections.</h2>
-            <p>{module.questionBank ? `Each attempt draws 10 questions from the complete ${module.questionBank.length} question bank.` : "Answer one question from each submodule. Submit the full set to reveal the reasoning."}</p>
+            <p>{module.questionBank ? `Each attempt draws 10 questions from the complete ${module.questionBank.length} question bank.` : "Answer one question from each lesson. Submit the full set to reveal the reasoning."}</p>
             <PharmacyAssessment questions={questions} compact moduleId={module.slug} questionCount={module.questionBank ? 10 : questions.length} randomize={Boolean(module.questionBank)} />
           </section>
 

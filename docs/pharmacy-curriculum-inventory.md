@@ -791,6 +791,20 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 395 static pages generated
 - Goodnotes note: other dedicated Cushing syndrome lectures, cases, and notes remain pending if they become accessible; their eventual review will be recorded as a formal reconciliation pass
 
+### Adrenal Insufficiency and Adrenal Crisis
+
+- Course scope: HPA-axis levels of failure; primary, secondary, tertiary, and glucocorticoid-induced adrenal insufficiency; autoimmune Addison disease; acquired adrenal destruction; hyperpigmentation; cortisol, ACTH, renin, aldosterone, sodium, potassium, glucose, and hemodynamic patterns; morning cortisol; standard corticotropin stimulation; glucocorticoid recovery thresholds; physiologic hydrocortisone and prednisolone replacement; clinical monitoring for under- and over-replacement; fludrocortisone selection and titration; oral sick-day dosing; emergency injection technique; medical identification; procedure planning; adrenal crisis recognition; immediate hydrocortisone and fluid resuscitation; pregnancy, labor, and post-crisis prevention review
+- Course source reviewed: Steroids of Adrenal Glands, 127 pages, including hydrocortisone, prednisone, corticosteroid structure, and steroidogenesis material
+- Cross reference completed: RxPrep NAPLEX 2023 Addison disease, systemic corticosteroid, replacement, potency, monitoring, and adrenal-crisis scope
+- Current references reviewed: Endocrine Society primary adrenal insufficiency guideline; 2024 ESE and Endocrine Society glucocorticoid-induced adrenal insufficiency guideline; Endocrine Society hypopituitarism hormone-replacement guideline; Society for Endocrinology adrenal-crisis guidance; current 2026 NIH Endotext adrenal-insufficiency chapter; and current US prescribing information for Cortef, Solu-Cortef, and fludrocortisone
+- Learning structure: ten content-driven lessons, ten native failure, cause, exposure, pattern, testing, glucocorticoid, mineralocorticoid, preparedness, crisis, and follow-up diagrams, and ten embedded knowledge checks
+- Assessment: 104 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: Addison disease was restricted to primary adrenal insufficiency while adrenal crisis was used for the emergency syndrome; primary disease was separated from central disease by ACTH and mineralocorticoid physiology; central and glucocorticoid-induced disease did not receive routine fludrocortisone; the older fixed fourteen-day taper rule was replaced by current dose and duration thresholds; oral and nonoral glucocorticoid exposure plus CYP3A4 interactions were counted together; morning cortisol recovery was treated as a continuum; dynamic testing was not required routinely during every taper; standard corticotropin testing was reserved for stable diagnostic evaluation; clinical instability triggered immediate hydrocortisone before confirmation; routine replacement used morning-weighted physiologic dosing and clinical monitoring; and vomiting, major stress, anesthesia, or hemodynamic instability triggered parenteral coverage
+- Automated verification: 104 unique question IDs, four unique choices per question, valid lesson links, ten diagrams, and no em dash or en dash characters in public prose
+- Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, ten diagrams, all ten embedded knowledge checks, ten-question randomized attempts with changed question sets, complete scoring, and ten remediation links
+- Build verification: Next.js production build passed August 25, 2026 with 396 static pages generated
+- Goodnotes note: dedicated adrenal-insufficiency cases and notes remain pending if additional Goodnotes material becomes accessible; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -1043,7 +1057,7 @@ Target modules:
 
 1. Adrenal Pharmacology (`built`, 104 question bank; Goodnotes reconciliation pending)
 2. Cushing Syndrome (`built`, 100 question bank; Goodnotes reconciliation pending)
-3. Adrenal Insufficiency and Adrenal Crisis
+3. Adrenal Insufficiency and Adrenal Crisis (`built`, 104 question bank; Goodnotes reconciliation pending)
 4. Gonadal Hormones
 5. Gynecologic Disorders
 6. Infertility Pharmacotherapy
