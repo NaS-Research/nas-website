@@ -2060,6 +2060,10 @@ The Hyperhidrosis module connects eccrine thermoregulation, sympathetic choliner
 
 The Hemorrhoids module connects normal anal-cushion function, dentate-line sensory anatomy, internal and external patterns, prolapse grading, thrombosis, rectal bleeding differential, cancer and inflammatory bowel red flags, fiber and bowel mechanics, individualized fluid planning, toilet behavior, protectants, witch hazel, phenylephrine, local anesthetics, hydrocortisone safety, dosage-form technique, office procedures, excisional surgery, special populations, monitoring, and referral. It contains nine focused lessons, nine original interactive diagrams, nine embedded checks, and a 112-question assessment bank across 28 concepts and four reasoning levels. The 461-page production build, desktop layout, 390 pixel phone layout, overflow-free responsive diagrams, ten-question sampling, scoring, ten remediation links, and a subsequent attempt with zero repeated questions were verified on August 26, 2026.
 
+### Pinworm Infection
+
+The Pinworm Infection module connects the Enterobius life cycle, nocturnal egg deposition, hand-to-mouth transmission, household clustering, differential diagnosis, three-morning tape testing, pyrantel pamoate pharmacology and active-base calculations, mebendazole and albendazole regimens, administration, interactions, repeat-dose logic, household hygiene, special populations, monitoring, reinfection, and referral. It contains nine focused lessons, nine original interactive diagrams, nine embedded checks, and a 112-question assessment bank across 28 concepts and four reasoning levels. The 462-page production build, desktop layout, 390 pixel phone layout, overflow-free responsive diagrams, ten-question sampling, scoring, ten remediation links, and a subsequent attempt with zero repeated questions were verified on August 26, 2026. Goodnotes was retried after the user reported restored access, but the Mac remained locked. Any dedicated parasitology lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
