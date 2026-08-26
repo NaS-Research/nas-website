@@ -80,6 +80,7 @@ import UrinaryIncontinenceVisual from "@/components/learn/UrinaryIncontinenceVis
 import SexualDysfunctionVisual from "@/components/learn/SexualDysfunctionVisual";
 import OsteoporosisVisual from "@/components/learn/OsteoporosisVisual";
 import ShockVasoactiveVisual from "@/components/learn/ShockVasoactiveVisual";
+import IcuAnalgesiaSedationVisual from "@/components/learn/IcuAnalgesiaSedationVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -159,6 +160,7 @@ const urinaryIncontinenceVisualTypes = ["ui-phenotypes", "ui-evaluation", "ui-ne
 const sexualDysfunctionVisualTypes = ["sexual-health-framework", "ed-evaluation", "erection-physiology", "pde5-selection", "pde5-safety", "pde5-response", "nonoral-ed", "hsdd-evaluation", "flibanserin-safety", "bremelanotide-safety"];
 const osteoporosisVisualTypes = ["bone-remodeling", "risk-screening", "dxa-frax", "prevention-foundations", "treatment-framework", "bisphosphonates", "denosumab", "bone-forming-therapy", "selective-options", "longitudinal-care"];
 const shockVasoactiveVisualTypes = ["shock-recognition", "hemodynamic-phenotypes", "fluid-responsiveness", "septic-shock", "catecholamine-vasopressors", "noncatecholamine-vasopressors", "cardiogenic-inotropes", "cause-directed-shock", "vasodilators-afterload", "infusion-safety"];
+const icuAnalgesiaSedationVisualTypes = ["icu-pain-assessment", "icu-opioid-selection", "icu-multimodal-analgesia", "icu-sedation-target", "icu-sedative-selection", "icu-propofol-safety", "icu-dexmedetomidine-safety", "icu-delirium-detection", "icu-delirium-management", "icu-liberation"];
 
 export function generateStaticParams() {
   return pharmacyModules.map((module) => ({ slug: module.slug }));
@@ -303,6 +305,7 @@ export default async function PharmacyModulePage({ params }) {
               {sexualDysfunctionVisualTypes.includes(submodule.visual) && <SexualDysfunctionVisual type={submodule.visual} />}
               {osteoporosisVisualTypes.includes(submodule.visual) && <OsteoporosisVisual type={submodule.visual} />}
               {shockVasoactiveVisualTypes.includes(submodule.visual) && <ShockVasoactiveVisual type={submodule.visual} />}
+              {icuAnalgesiaSedationVisualTypes.includes(submodule.visual) && <IcuAnalgesiaSedationVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>

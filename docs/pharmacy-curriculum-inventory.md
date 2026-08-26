@@ -830,7 +830,19 @@ This inventory records the source material available in the founder's Goodnotes 
 - Automated verification: 124 unique question IDs, 124 unique prompts, four unique choices per question, valid lesson links, ten diagrams, and no em dash or en dash characters in public prose
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, ten diagrams, all ten embedded knowledge checks, ten-question randomized attempts with unique questions, changed question sets, complete scoring, explanations, and ten remediation links
 - Build verification: Next.js production build passed August 26, 2026 with 407 static pages generated
-- Source routing: fluid and electrolyte overlap remains in Fluid and Electrolyte Therapy; acute decompensated heart-failure overlap remains in its dedicated module; ICU analgesia, sedation, delirium, perioperative pharmacology, and remaining critical-care material are reserved for focused modules rather than compressed here
+- Source routing: fluid and electrolyte overlap remains in Fluid and Electrolyte Therapy; acute decompensated heart-failure overlap remains in its dedicated module; ICU analgesia, sedation, and delirium are now built separately; perioperative pharmacology and remaining critical-care material are reserved for focused modules rather than compressed here
+
+### ICU Analgesia, Sedation, and Delirium
+
+- Course scope: patient self report, CPOT, BPS, procedural pain, fentanyl, morphine, hydromorphone, opioid metabolites, analgesia-first sedation, multimodal analgesia, acetaminophen, regional strategies, ketamine, RASS, light and deep sedation, spontaneous awakening and breathing assessment, dexmedetomidine, propofol, benzodiazepines, propofol infusion syndrome, lipid and metabolic surveillance, aseptic delivery, dexmedetomidine hemodynamics and extubation, CAM-ICU, ICDSC, hypoactive delirium, delirium differential, nonpharmacologic care, antipsychotic evidence limits, melatonin, ABCDEF, enhanced mobility, post-intensive care syndrome, and transition ownership
+- Course source reviewed: RxPrep NAPLEX 2023 Acute and Critical Care Medicine chapter, PDF pages 723 through 725, visually inspected in full as part of the complete chapter audit
+- Current references reviewed: 2025 SCCM adult PADIS focused update, 2018 SCCM adult PADIS guideline, SCCM ICU Liberation ABCDEF framework, and current DailyMed labeling for propofol and dexmedetomidine
+- Learning structure: ten content-driven lessons, ten native pain, opioid, multimodal, sedation-target, sedative-selection, propofol, dexmedetomidine, delirium-detection, delirium-management, and recovery diagrams, and ten embedded knowledge checks
+- Assessment: 112 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: self report and validated behavioral tools replace vital-sign-only pain inference; pain treatment precedes unnecessary hypnotic escalation; light sedation remains the usual target when safe; the 2025 focused update conditionally favors dexmedetomidine over propofol when light sedation or delirium reduction is a leading priority; propofol and dexmedetomidine labeling boundaries are separated from broader bedside practice; benzodiazepines retain seizure and withdrawal indications rather than routine default status; propofol infusion syndrome and aseptic delivery are taught as time-critical safety systems; delirium screening includes the quiet phenotype; antipsychotics are not presented as proven routine outcome-improving treatment; melatonin remains a conditional sleep option; and ICU recovery is organized through the full ABCDEF bundle and transition planning
+- Automated verification: 112 unique question IDs, 112 unique prompts, four unique choices per question, valid lesson links, ten diagrams, and no em dash or en dash characters in public prose
+- Browser verification: 390 pixel mobile rendering, ten diagrams, all ten embedded knowledge checks, ten-question randomized attempts with unique questions, changed question sets, complete scoring, explanations, and ten remediation links
+- Build verification: Next.js production build passed August 26, 2026 with 408 static pages generated
 
 ## Goodnotes availability
 
@@ -840,7 +852,7 @@ This inventory records the source material available in the founder's Goodnotes 
 
 The RxPrep text is available locally for scope comparison and calculations review. It is not stored in Git and its prose or proprietary questions are not reproduced.
 
-The Acute and Critical Care Medicine chapter has been audited completely. Its material is routed to the existing Fluid and Electrolyte Therapy and Acute Decompensated Heart Failure modules, the completed Shock and Vasoactive Pharmacotherapy module, and future focused modules for ICU analgesia, sedation, delirium, perioperative pharmacology, and remaining critical-care topics.
+The Acute and Critical Care Medicine chapter has been audited completely. Its material is routed to the existing Fluid and Electrolyte Therapy and Acute Decompensated Heart Failure modules, the completed Shock and Vasoactive Pharmacotherapy and ICU Analgesia, Sedation, and Delirium modules, and future focused modules for perioperative pharmacology and remaining critical-care topics.
 
 ### DAST I
 
