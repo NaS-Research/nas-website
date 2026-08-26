@@ -1111,13 +1111,18 @@ Reviewed source documents:
 - DAST IV Gonadal Hormones
 - DAST IV Gynecological Disorders
 - Gynecological Agents Updated
+- DAST IV Infertility
+- Infertility
 
 Completed production modules:
 
 1. Gonadal Hormone Pharmacology
 2. Menstrual and Gynecologic Disorders
+3. Infertility Evaluation and Ovulation Induction
 
 The menstrual and gynecologic module includes menstrual assessment, PALM-COEIN classification, acute abnormal uterine bleeding, chronic heavy menstrual bleeding, dysmenorrhea, premenstrual disorders, endometriosis, and uterine fibroids. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 100-question assessment bank.
+
+The infertility module includes evaluation timing, the fertile window, female and male evaluation, PCOS-related ovulation induction, clomiphene and metformin, gonadotropin stimulation, trigger and luteal protocols, assisted reproduction, and OHSS prevention. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 100-question assessment bank.
 
 Current guidance reconciliations:
 
@@ -1125,11 +1130,15 @@ Current guidance reconciliations:
 - Heavy menstrual bleeding is taught through patient-defined functional burden and iron loss rather than requiring a measured 80 mL threshold.
 - Elagolix is correctly classified as a GnRH receptor antagonist, not a GnRH agonist.
 - Current PALM-COEIN terminology replaces older labels such as dysfunctional uterine bleeding and menorrhagia.
+- Current ASRM timing replaces a universal one-year wait: evaluation begins after 6 months at age 35 or older and sooner above age 40 or when a known risk is present.
+- Letrozole replaces the older clomiphene-first PCOS algorithm as first-line pharmacologic ovulation induction when no other infertility factor is present.
+- AMH and antral follicle count are taught as ovarian-response adjuncts, not measures of egg quality or guaranteed natural fertility.
+- Semen analysis is interpreted as a variable clinical profile rather than a binary declaration of fertility or sterility.
+- Current ASRM OHSS prevention emphasizes individualized stimulation, antagonist protocols, an agonist trigger in suitable cycles, cabergoline, and freeze-all strategies rather than lower-dose hCG or aspirin alone.
 
 Deferred into focused modules:
 
 - Contraception
-- Infertility and ovulation induction
 - Menopause
 - Vulvovaginal infection and pelvic inflammatory disease
 - Pregnancy complications
