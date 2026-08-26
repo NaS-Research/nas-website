@@ -753,6 +753,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed August 25, 2026 with 392 static pages generated
 - Goodnotes note: the thyroid lectures, medicinal-chemistry materials, cases, and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
+### Thyroid Medicinal Chemistry
+
+- Course scope: sodium iodide symporter and apical iodide movement; TPO, hydrogen peroxide, oxidation, organification, MIT and DIT formation, coupling, thyroglobulin storage, proteolytic release, and iodide recycling; thyronine diphenyl ether, alpha-amino-acid side chain, phenolic hydroxyl, iodine count and position; L configuration, membrane transport, thyroid receptor alpha and beta recognition, and transcriptional signaling; DIO1, DIO2, DIO3, outer-ring activation, inner-ring inactivation, reverse T3, and selenium-dependent catalysis; levothyroxine, liothyronine, active moiety, sodium salts, protein binding, half-life, onset, and concentration fluctuation; methimazole mercaptoimidazole and propylthiouracil thiouracil scaffolds, sulfur functionality, TPO inhibition, stored-hormone delay, and PTU inhibition of peripheral T4 to T3 conversion; stable iodide, acute pharmacologic iodine effects, iodine uptake competition, I-123 diagnostics, I-131 treatment, and reproductive and radiation constraints; microgram potency, formulation, dissolution, complexation, adsorption, food and enteral-feed effects, storage, manufacturer switching, and planned reassessment
+- Current references reviewed: NIH PubChem chemical records for levothyroxine, liothyronine, methimazole, and propylthiouracil; NCBI Endotext thyroid hormone synthesis and secretion chapter; IUPHAR thyroid hormone receptor family; current Synthroid, Cytomel, methimazole, and propylthiouracil prescribing information; and the RxPrep 2023 thyroid chapter for historical scope comparison
+- Learning structure: eight content-driven lessons, eight native synthesis, scaffold, stereochemistry, deiodination, analog, thionamide, radioiodine, and formulation diagrams, and eight embedded knowledge checks
+- Assessment: 100 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: the clinical Thyroid Disorders module remained separate from the chemical sequence; RxPrep's brief T3 structure and clinically oriented treatment summary were expanded through primary sources into a scaffold-to-function course; NIS transport was separated from TPO chemistry; TPO oxidation, organification, and coupling were separated from peripheral deiodination; iodine position rather than iodine loss alone determined activation or inactivation; the natural L configuration and membrane transport were included in receptor exposure; T4 was framed as a buffered replacement reservoir while direct T3 was framed as faster and shorter; pharmaceutical sodium salts were distinguished from active hormone moieties; methimazole and PTU were distinguished by heterocyclic scaffold and PTU's additional peripheral conversion effect; high-dose stable iodide, I-123, and I-131 were assigned separate purposes; and unstable replacement exposure was connected to microgram potency, dissolution, complexation, adsorption, storage, and product switching
+- Automated verification: 100 unique question IDs, four unique choices per question, valid lesson links, eight diagrams, and no em dash or en dash characters in public prose
+- Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, eight diagrams, all eight embedded knowledge checks, ten-question randomized attempts with changed question sets and answer order, complete scoring, ten remediation links, and no browser errors or warnings
+- Build verification: Next.js production build passed August 25, 2026 with 393 static pages generated
+- Goodnotes note: the thyroid medicinal-chemistry lectures and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+
 ## Goodnotes availability
 
 ### Books
@@ -995,7 +1007,7 @@ Target modules:
 4. Diabetic Ketoacidosis (`built`, 100 question bank; Goodnotes reconciliation pending)
 5. Hyperosmolar Hyperglycemic State (`built`, 100 question bank; Goodnotes reconciliation pending)
 6. Thyroid Disorders (`built`, 100 question bank; Goodnotes reconciliation pending)
-7. Thyroid Medicinal Chemistry
+7. Thyroid Medicinal Chemistry (`built`, 100 question bank; Goodnotes reconciliation pending)
 
 #### Adrenal and reproductive health
 
