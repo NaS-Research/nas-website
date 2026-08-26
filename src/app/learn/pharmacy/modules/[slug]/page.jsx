@@ -78,6 +78,7 @@ import MenopausalHormoneTherapyVisual from "@/components/learn/MenopausalHormone
 import BenignProstaticHyperplasiaVisual from "@/components/learn/BenignProstaticHyperplasiaVisual";
 import UrinaryIncontinenceVisual from "@/components/learn/UrinaryIncontinenceVisual";
 import SexualDysfunctionVisual from "@/components/learn/SexualDysfunctionVisual";
+import OsteoporosisVisual from "@/components/learn/OsteoporosisVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -155,6 +156,7 @@ const menopausalHormoneTherapyVisualTypes = ["mht-transition", "mht-thermoregula
 const benignProstaticHyperplasiaVisualTypes = ["bph-framework", "bph-evaluation", "bph-goals", "bph-alpha", "bph-fiveari", "bph-tadalafil", "bph-storage", "bph-retention", "bph-procedures", "bph-followup"];
 const urinaryIncontinenceVisualTypes = ["ui-phenotypes", "ui-evaluation", "ui-neurophysiology", "ui-behavioral", "ui-antimuscarinics", "ui-beta3", "ui-combination", "ui-procedures", "ui-other-phenotypes", "ui-nocturia"];
 const sexualDysfunctionVisualTypes = ["sexual-health-framework", "ed-evaluation", "erection-physiology", "pde5-selection", "pde5-safety", "pde5-response", "nonoral-ed", "hsdd-evaluation", "flibanserin-safety", "bremelanotide-safety"];
+const osteoporosisVisualTypes = ["bone-remodeling", "risk-screening", "dxa-frax", "prevention-foundations", "treatment-framework", "bisphosphonates", "denosumab", "bone-forming-therapy", "selective-options", "longitudinal-care"];
 
 export function generateStaticParams() {
   return pharmacyModules.map((module) => ({ slug: module.slug }));
@@ -297,6 +299,7 @@ export default async function PharmacyModulePage({ params }) {
               {benignProstaticHyperplasiaVisualTypes.includes(submodule.visual) && <BenignProstaticHyperplasiaVisual type={submodule.visual} />}
               {urinaryIncontinenceVisualTypes.includes(submodule.visual) && <UrinaryIncontinenceVisual type={submodule.visual} />}
               {sexualDysfunctionVisualTypes.includes(submodule.visual) && <SexualDysfunctionVisual type={submodule.visual} />}
+              {osteoporosisVisualTypes.includes(submodule.visual) && <OsteoporosisVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>

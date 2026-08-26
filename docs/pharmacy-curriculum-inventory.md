@@ -1,6 +1,6 @@
 # NaS Learn Pharmacy Curriculum Inventory
 
-Last reviewed: August 25, 2026
+Last reviewed: August 26, 2026
 
 This inventory records the source material available in the founder's Goodnotes library. It is an internal production record, not public course copy. Original NaS modules must synthesize the sources and must not reproduce slides, textbooks, or question banks verbatim.
 
@@ -1142,6 +1142,10 @@ The urinary incontinence module includes urgency, stress, mixed, overflow, funct
 
 The sexual dysfunction module includes respectful domain-based assessment; erectile dysfunction evaluation and cardiovascular risk; nitric oxide, cGMP, and PDE5 pharmacology; sildenafil, tadalafil, vardenafil, and avanafil selection; nitrate, guanylate-cyclase stimulator, alpha-blocker, and CYP3A4 safety; oral-treatment response auditing; vacuum devices; intraurethral and intracavernosal alprostadil; penile prostheses; HSDD evaluation; flibanserin; and bremelanotide. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 112-question assessment bank. Desktop and 390 pixel mobile layouts, ten-question sampling without repetition, a fresh subsequent attempt with no overlap, randomized answer support, scoring, explanations, valid remediation links, an overflow-free mobile layout, and the 405-page production build were verified on August 25, 2026. The complete five-page RxPrep 2023 sexual-dysfunction chapter was reviewed visually. The dedicated Goodnotes lecture remains pending and will receive a documented reconciliation pass when access is available.
 
+### Osteoporosis
+
+The osteoporosis module includes bone remodeling and skeletal strength; fragility-fracture recognition; secondary causes; 2025 USPSTF screening; DXA and FRAX interpretation; calcium, vitamin D, exercise, and fall prevention; treatment thresholds and risk sequencing; oral and intravenous bisphosphonates; denosumab; teriparatide; abaloparatide; romosozumab; raloxifene; estrogen-containing options; calcitonin; glucocorticoid-induced osteoporosis; and longitudinal monitoring. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 104-question assessment bank. Desktop and 390 pixel mobile layouts, ten-question sampling without repetition, a different subsequent attempt, randomized answer support, scoring, explanations, valid remediation links, an overflow-free mobile layout, and the 406-page production build were verified on August 26, 2026. The complete eight-page RxPrep 2023 osteoporosis chapter was reviewed visually. The dedicated Goodnotes lecture remains pending and will receive a documented reconciliation pass when access is available.
+
 Current guidance reconciliations:
 
 - Current ASRM guidance begins primary amenorrhea evaluation by age 15 with normal secondary sexual development, replacing the older age 16 lecture threshold.
@@ -1184,6 +1188,12 @@ Current guidance reconciliations:
 - Flibanserin is taught with current alcohol timing, bedtime and alertness counseling, hepatic and CYP3A4 contraindications, interaction washouts, and an eight-week stopping rule. Bremelanotide remains limited to premenopausal women and retains cardiovascular, blood-pressure, nausea, pigmentation, gastric-emptying, naltrexone, and pregnancy precautions.
 - The older RxPrep suggestion of sympathomimetic or duloxetine treatment for female stress incontinence is not converted into routine US care. No oral medication is FDA approved in the United States specifically for female stress urinary incontinence.
 - Sublingual desmopressin is restricted to confirmed nocturnal polyuria with sex-specific dosing, strict fluid restriction, baseline and early repeat serum sodium monitoring, and full boxed-warning contraindication screening.
+- USPSTF 2025 screening guidance replaces the older universal men-at-age-70 rule. Women age 65 or older should be screened, younger postmenopausal women are screened after risk assessment when risk is increased, and evidence remains insufficient for population screening in men.
+- DXA and FRAX are taught as complementary tools with technical and clinical limits. A hip or vertebral fragility fracture remains an independent treatment indication regardless of BMD, and an osteoporosis diagnosis persists after a later treatment-era T-score improves.
+- Current Prolia labeling adds the boxed warning for severe hypocalcemia in advanced CKD and requires CKD-MBD evaluation, expert supervision, supplementation, and mineral monitoring. Denosumab is never presented as a drug-holiday therapy and requires subsequent antiresorptive protection when stopped.
+- Current teriparatide labeling replaces the older absolute two-year lifetime prohibition. Use beyond two years is reserved for patients who remain at or return to high fracture risk, while increased osteosarcoma-risk conditions remain exclusions.
+- Current Evenity labeling limits romosozumab to 12 monthly doses, requires two injections per dose, prevents initiation within the preceding year after myocardial infarction or stroke, and requires antiresorptive follow-on therapy.
+- Oral bisphosphonate administration, zoledronic-acid renal limits, site-specific fracture evidence, rare ONJ and atypical-femur risk, and risk-based holiday decisions replace a single class-wide duration rule.
 
 Deferred into focused modules:
 
