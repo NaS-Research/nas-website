@@ -203,6 +203,7 @@ import MucosalEsophagealCandidiasisVisual, { mucosalEsophagealCandidiasisVisualT
 import CoccidioidomycosisVisual, { coccidioidomycosisVisualTypes } from "@/components/learn/CoccidioidomycosisVisual";
 import BlastomycosisVisual, { blastomycosisVisualTypes } from "@/components/learn/BlastomycosisVisual";
 import AspergillosisVisual, { aspergillosisVisualTypes } from "@/components/learn/AspergillosisVisual";
+import MucormycosisVisual, { mucormycosisVisualTypes } from "@/components/learn/MucormycosisVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -587,6 +588,7 @@ export default async function PharmacyModulePage({ params }) {
               {module.slug === "coccidioidomycosis" && coccidioidomycosisVisualTypes.includes(submodule.visual) && <CoccidioidomycosisVisual type={submodule.visual} />}
               {module.slug === "blastomycosis" && blastomycosisVisualTypes.includes(submodule.visual) && <BlastomycosisVisual type={submodule.visual} />}
               {module.slug === "aspergillosis" && aspergillosisVisualTypes.includes(submodule.visual) && <AspergillosisVisual type={submodule.visual} />}
+              {module.slug === "mucormycosis" && mucormycosisVisualTypes.includes(submodule.visual) && <MucormycosisVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>

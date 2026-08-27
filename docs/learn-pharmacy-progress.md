@@ -21,6 +21,7 @@ This ledger records modules verified under the current curriculum-build workflow
 | Coccidioidomycosis | Infectious Diseases | 100 original questions | RxPrep 2023 endemic-fungal and amphotericin material on printed page 389 and related azole pages | NIH Adult and Adolescent OI coccidioidomycosis guidance reviewed March 16, 2026 and IDSA coccidioidomycosis guidance | Production build passed, 528 pages generated |
 | Blastomycosis | Infectious Diseases | 100 original questions | RxPrep 2023 dimorphic-fungal, amphotericin, and itraconazole material on printed pages 389 through 392 | Current CDC clinical overview and 2008 IDSA blastomycosis guideline, with guideline age explicitly flagged | Production build passed, 529 pages generated |
 | Aspergillosis | Infectious Diseases | 100 original questions | RxPrep 2023 mold spectrum, voriconazole, isavuconazonium, amphotericin, interaction, and dosing material on printed pages 389 through 392 and related calculation material | CDC clinical overview, 2016 IDSA treatment guideline, 2026 IDSA solid-organ-transplant prevention update, 2024 ISHAM ABPA guidance, and current FDA labeling | Production build passed, 530 pages generated |
+| Mucormycosis | Infectious Diseases | 100 original questions | RxPrep 2023 Mucorales classification, amphotericin, isavuconazonium, posaconazole, interaction, and formulation material on printed pages 389 through 395 | CDC clinical overview, 2019 ECMM and MSG ERC global guideline, and current FDA labeling | Production build passed, 531 pages generated |
 
 Each module assessment randomly draws 10 questions from its complete bank through the shared pharmacy assessment system. The system randomizes question order and answer choices, prevents duplicate questions in one attempt, reports score and explanations, and links each answer back to its lesson section.
 
@@ -51,11 +52,13 @@ Each module assessment randomly draws 10 questions from its complete bank throug
 - The blastomycosis module uses current CDC clinical information and explicitly identifies that the disease-specific IDSA guideline was published in 2008, so learners can distinguish the established guideline foundation from current verification needs.
 - Goodnotes remained unavailable because macOS was locked during the focused aspergillosis search attempt. The local RxPrep copy was reviewed for mold biology, amphotericin spectrum, voriconazole as the primary Aspergillus agent, adult loading and maintenance dosing, TDM, SBECD route considerations, interactions, toxicities, isavuconazonium, and an amphotericin calculation case.
 - The aspergillosis module separates allergic, colonizing, aspergilloma, chronic pulmonary, invasive pulmonary, and extrapulmonary syndromes. It also distinguishes the 2016 disease-treatment guideline from the new 2026 prevention update, which currently addresses adult solid-organ-transplant recipients rather than replacing all treatment guidance.
+- Goodnotes remained unavailable because macOS was locked during the focused mucormycosis search attempt. The local RxPrep copy was reviewed for Mucorales classification, amphotericin spectrum and toxicity, inactive voriconazole coverage, isavuconazonium, posaconazole formulation and absorption differences, CYP interactions, and QT effects.
+- The mucormycosis module reconciles the compact course foundation with current CDC clinical information and the 2019 global guideline. It centers angioinvasion, deep-tissue diagnosis, immediate liposomal amphotericin, repeated surgical source control, host-factor reversal, active azole transition, and prolonged site-specific follow-up.
 - Obsolete or changing source content is reconciled explicitly. Discontinued agents are identified as historical, uncommon older agents are separated from current practice, and pregnancy-letter classifications are not used.
 
 ## Next verified-build target
 
-Continue the invasive fungal sequence with mucormycosis. Search the restored Goodnotes library for dedicated lecture material, then reconcile accessible course content with current CDC, ECMM, IDSA, and FDA guidance before implementation.
+Continue the invasive fungal sequence with candidemia and invasive candidiasis. Search the restored Goodnotes library for dedicated lecture material, then reconcile accessible course content with current CDC, IDSA, and FDA guidance before implementation.
 
 ## Remaining-work rule
 

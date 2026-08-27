@@ -1,0 +1,55 @@
+const concepts = [
+  ["organism", "Mucormycosis is caused by molds in the order Mucorales, including Rhizopus, Mucor, Lichtheimia, and related genera.", "Connect broad ribbon-like sparsely septate hyphae and tissue invasion to urgent culture and molecular identification.", "Calling every invasive mold Aspergillus can lead to voriconazole exposure without Mucorales activity."],
+  ["angioinvasion", "Mucorales invade blood vessels, producing thrombosis, ischemia, hemorrhage, and rapidly progressive tissue necrosis.", "Treat new necrosis, cranial neuropathy, visual change, or infarct-like lesions as an emergency requiring antifungal and surgical action.", "Waiting for a black eschar before acting can miss earlier invasive disease."],
+  ["diabetes", "Uncontrolled diabetes, especially ketoacidosis, strongly predisposes to rhino-orbital-cerebral mucormycosis.", "Correct hyperglycemia, acidosis, volume, and electrolyte abnormalities while definitive antifungal and surgical treatment proceeds.", "Insulin alone cannot reverse established angioinvasive tissue infection."],
+  ["hematology", "Prolonged neutropenia, hematologic malignancy, transplantation, corticosteroids, and other immune impairment increase pulmonary and disseminated disease risk.", "Define the immune trajectory and pursue rapid chest imaging and site evidence when compatible symptoms occur.", "A normal early chest radiograph does not exclude pulmonary mucormycosis in profound neutropenia."],
+  ["iron-trauma", "Iron overload, deferoxamine exposure, burns, trauma, surgery, contaminated wounds, injection drug use, malnutrition, and extreme prematurity are additional risk settings.", "Match the suspected portal of entry and clinical site to the history and specimen plan.", "Restricting risk assessment to diabetes overlooks important cutaneous, gastrointestinal, and disseminated disease."],
+  ["rhino-orbital-cerebral", "Unilateral facial pain or swelling, sinus symptoms, cranial neuropathy, ophthalmoplegia, proptosis, vision loss, palatal change, or necrosis suggests rhino-orbital-cerebral disease.", "Obtain urgent sinus and orbital imaging, endoscopic tissue, ophthalmologic and neurologic assessment, and surgical consultation.", "Delaying debridement until final culture can permit irreversible orbital and cerebral spread."],
+  ["pulmonary", "Pulmonary mucormycosis can cause fever, cough, pleuritic pain, hemoptysis, nodules, consolidation, cavitation, vascular occlusion, and rapid progression.", "Use chest CT and tissue-directed diagnosis while starting active therapy when suspicion is high.", "Voriconazole breakthrough disease should raise concern for Mucorales rather than justify automatic voriconazole escalation."],
+  ["other-sites", "Cutaneous, gastrointestinal, renal, CNS, and disseminated mucormycosis occur and often require site-specific imaging, tissue, and surgery.", "Perform a full symptom, skin, neurologic, abdominal, ocular, and renal review to identify additional compartments.", "A lung-only plan can miss surgically actionable or disseminated disease."],
+  ["diagnosis", "Definitive diagnosis usually requires histopathologic evidence or culture from involved tissue, with experienced pathology and microbiology support.", "Obtain deep tissue rather than a superficial swab and divide specimens for pathology, culture, and molecular testing when available.", "Grinding fragile Mucorales tissue can reduce culture recovery and obscure the organism."],
+  ["biomarker-gap", "Aspergillus galactomannan and beta-D-glucan do not reliably detect Mucorales.", "Use negative mold biomarkers to refine the differential, not to exclude mucormycosis in a compatible host and syndrome.", "A negative galactomannan result does not make progressive Mucorales disease safe to observe."],
+  ["early-combined-care", "Mucormycosis requires immediate active antifungal therapy, aggressive surgery when feasible, and reversal of predisposing factors in parallel.", "Mobilize infectious-disease, surgery, pathology, radiology, pharmacy, and the relevant organ specialists on the day of suspicion.", "Sequentially waiting for one discipline to finish before the next begins wastes time during angioinvasion."],
+  ["liposomal-amphotericin", "Liposomal amphotericin B is the strongly recommended first-line drug in the 2019 global guideline.", "Use 5 to 10 mg/kg IV daily according to site and severity, with higher dosing often used for CNS involvement and full-dose treatment from day one.", "Amphotericin formulations are not interchangeable milligram for milligram."],
+  ["amphotericin-safety", "Liposomal amphotericin B can still cause nephrotoxicity, potassium and magnesium wasting, anemia, infusion reactions, and volume complications.", "Monitor creatinine, potassium, magnesium, CBC, liver tests, infusion response, volume, and concurrent nephrotoxins closely.", "Calling a lipid formulation nontoxic removes essential monitoring."],
+  ["isavuconazole", "Isavuconazonium is FDA approved for invasive mucormycosis and is a guideline-supported first-line alternative or salvage option.", "Load 372 mg every 8 hours for six doses, then use 372 mg once daily while reviewing CYP3A4 interactions and QT shortening.", "Use in familial short QT syndrome is contraindicated."],
+  ["posaconazole", "Posaconazole delayed-release tablets or IV are guideline-supported alternatives and salvage options, while the oral suspension has unreliable exposure for invasive disease.", "Distinguish formulation, load appropriately, review food and absorption issues, and use TDM where applicable.", "Substituting suspension milligram for milligram for delayed-release tablets can cause treatment failure."],
+  ["inactive-agents", "Voriconazole, fluconazole, and echinocandins do not provide reliable treatment for Mucorales.", "When the mold differential includes Aspergillus and Mucorales, select an agent with adequate spectrum while obtaining tissue evidence.", "Continuing voriconazole alone in proven mucormycosis leaves the disease untreated."],
+  ["surgery", "Early complete surgical debridement or resection of infected tissue improves control when anatomy permits.", "Repeat debridement as needed and coordinate margins, pathology, culture, reconstruction, and organ preservation.", "A single operation without reassessment may leave advancing necrotic tissue behind."],
+  ["host-reversal", "Control of hyperglycemia and acidosis, reduction of immunosuppression, recovery from neutropenia, and removal of contaminated devices or necrotic tissue are treatment components.", "Balance immune restoration against rejection, inflammatory injury, and the underlying disease with specialty input.", "Antifungal drug exposure cannot compensate fully for persistent ischemic necrosis and uncontrolled host risk."],
+  ["cns", "CNS mucormycosis requires urgent high-intensity liposomal amphotericin, neuroimaging, surgical assessment, and prolonged follow-up.", "Use the upper end of guideline dosing when appropriate and track neurologic, renal, imaging, and procedural response.", "An oral-only low-intensity start can permit irreversible CNS progression."],
+  ["combination", "Routine combination antifungal therapy is not supported by strong clinical evidence, though selected salvage or extensive disease plans may use it with expert input.", "Define the purpose, spectrum, toxicity, interaction, and stopping rule before combining agents.", "Adding multiple drugs without surgical or host control does not solve the major drivers of failure."],
+  ["duration", "Treatment continues for weeks to months until symptoms resolve, imaging substantially improves, cultures or pathology are controlled when measurable, and immunosuppression is reversed when possible.", "Use clinical, radiographic, mycologic, exposure, surgical, and immune evidence rather than a fixed calendar alone.", "Stopping after initial symptom improvement while necrosis or immunosuppression persists risks relapse."],
+  ["stepdown", "Stable patients responding to liposomal amphotericin can transition to isavuconazole or posaconazole delayed-release or IV therapy when exposure is reliable.", "Confirm source control, route, loading, interactions, organ function, TDM plan, access, and follow-up before transition.", "A treatment gap during step-down can allow rapid regrowth."],
+  ["resistance-species", "Mucorales genera and species can differ in antifungal susceptibility, and clinical response also depends heavily on site and host.", "Obtain species identification and susceptibility support for unusual organisms, breakthrough, or nonresponse while prioritizing proven active therapy.", "An in-vitro value without surgical, exposure, and host context cannot alone predict cure."],
+  ["prevention", "There is no universal medication strategy for every at-risk patient, so prevention focuses on risk-specific prophylaxis, environmental controls, metabolic control, and rapid evaluation of warning symptoms.", "Review local mold epidemiology and prior azole exposure when selecting prophylaxis for defined high-risk populations.", "Broad prophylaxis without population evidence can add toxicity and select breakthrough molds."],
+  ["closed-loop", "Complete mucormycosis care links host risk, portal of entry, site, tissue evidence, immediate active drug, surgery, exposure, organ toxicity, host reversal, and prolonged response assessment.", "Assign ownership for pathology, culture, imaging, debridement, drug delivery, electrolytes, immune recovery, transition, and relapse surveillance.", "A prescription without surgical and diagnostic ownership leaves angioinvasive progression invisible."],
+];
+
+const dimensions = [
+  ["principle", "Which statement is most accurate?", 0],
+  ["action", "Which action best applies the evidence?", 1],
+  ["assessment", "Which plan demonstrates the strongest clinical reasoning?", 1],
+  ["hazard", "Which error creates the greatest avoidable risk?", 2],
+];
+const generic = [
+  "Use one isolated result without considering host, site, tissue viability, or prior antifungal exposure.",
+  "Continue the same plan despite advancing necrosis and no diagnostic or surgical reassessment.",
+  "Assume every mold, amphotericin formulation, and triazole has interchangeable activity and dosing.",
+];
+
+export const mucormycosisQuestionBank = concepts.flatMap(([slug, principle, action, hazard], conceptIndex) => dimensions.map(([dimension, stem, answerType], dimensionIndex) => {
+  const correct = [principle, action, hazard][answerType];
+  const choices = dimension === "hazard"
+    ? [hazard, principle, action, generic[(conceptIndex + dimensionIndex) % 3]]
+    : [correct, hazard, generic[(conceptIndex + dimensionIndex) % 3], generic[(conceptIndex + dimensionIndex + 1) % 3]];
+  return {
+    id: `mucormycosis-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`,
+    question: `${stem} Focus: ${slug.replaceAll("-", " ")}.`,
+    choices,
+    answer: 0,
+    rationale: `${principle} ${action}`,
+    reviewHref: `#${slug}`,
+    difficulty: dimensionIndex < 2 ? "foundational" : "advanced",
+  };
+}));
