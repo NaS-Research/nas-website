@@ -2312,6 +2312,17 @@ Current source reconciliations:
 - It contains eleven focused lessons, eleven responsive diagrams, eleven embedded checks, and a validated 184-question assessment bank.
 - Goodnotes remains unavailable because macOS reports a locked session. Any matching pharyngitis lecture will receive a documented reconciliation pass after manual unlock.
 
+### Acute Bacterial Rhinosinusitis
+
+- Built from the acute sinusitis section of RxPrep 2023 Chapter 23 and reconciled with the 2025 AAO-HNS adult sinusitis guideline, current CDC adult and pediatric outpatient guidance, current amoxicillin-clavulanate labeling, and FDA fluoroquinolone safety communications.
+- The module remains distinct from Allergic Rhinitis and Cough and the Common Cold. It focuses on sinonasal drainage, mucociliary clearance, bacterial trajectories, orbital and intracranial danger, dental sources, testing limits, observation, supportive care, focused antibiotics, exact dosing, and failure.
+- Current adult guidance centers persistence without improvement for at least 10 days and double worsening. CDC and pediatric guidance also retain severe onset, so the source and patient population remain visible rather than collapsed into one unqualified rule.
+- The 2025 adult guideline recommends offering watchful waiting when follow-up is assured and permits amoxicillin with or without clavulanate for 5 to 7 days when antibiotics are chosen. This replaces unqualified reliance on the archived 2012 IDSA preference for clavulanate.
+- Pediatric observation is limited to persistent illness with reliable reassessment. Severe or worsening pediatric disease receives antibiotics, and dose selection remains tied to current weight, formulation ratio, resistance risk, age, and local protocol.
+- Saline safety, intranasal corticosteroid technique, analgesia, decongestant limits, allergy phenotyping, doxycycline constraints, macrolide resistance, and FDA fluoroquinolone reserve language are integrated into a single selection system.
+- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 168-question assessment bank.
+- Goodnotes was retried after the user reported restored access, but macOS still reported a locked session. Any matching sinusitis lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
