@@ -2524,7 +2524,8 @@ Current source reconciliations:
 - Pregnancy teaching stratifies neonatal risk by acquisition timing, begins recurrent disease suppression at 36 weeks, and selects delivery management from lesions and prodrome at labor. Obsolete pregnancy letter categories are not used.
 - Neonatal skin, eye, and mouth disease receives IV acyclovir for 14 days after invasive disease is excluded. CNS or disseminated disease receives at least 21 days with end of therapy CSF reassessment when the CNS is involved.
 - Counseling addresses lifelong latency, uncertainty about transmission timing, partner disclosure, safer sex, pregnancy planning, psychosocial distress, and stigma without moral judgment.
-- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 130-question assessment bank.
+- The assessment now gives fuller counseling and prevention coverage. It tests layered transmission reduction, symptomatic and asymptomatic partner pathways, disclosure safety, pregnancy planning, obstetric and newborn handoffs, and the limits of condoms and suppressive therapy.
+- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 138-question assessment bank across all ten lessons.
 - Goodnotes remains unavailable because macOS reports a locked session. Any matching genital herpes lecture will receive a documented reconciliation pass after manual unlock.
 
 ### Anogenital HPV and Warts
