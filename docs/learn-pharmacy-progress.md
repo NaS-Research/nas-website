@@ -32,6 +32,7 @@ This ledger records modules verified under the current curriculum-build workflow
 | Major Depressive Disorder | Psychiatric Conditions | 100 original questions | RxPrep 2023 depression chapter on printed pages 834 through 844 | 2022 VA/DoD MDD guideline and current SPRAVATO, ZURZUVAE, VRAYLAR, and CAPLYTA labeling | Production build passed, 539 pages generated |
 | Schizophrenia and Psychosis | Psychiatric Conditions | 100 original questions | RxPrep 2023 schizophrenia and psychosis chapter on printed pages 845 through 851 | 2023 VA/DoD first-episode psychosis and schizophrenia guideline, 2020 APA schizophrenia guideline, and 2025 FDA clozapine REMS removal | Production build passed, 540 pages generated |
 | Bipolar Disorder | Psychiatric Conditions | 100 original questions | RxPrep 2023 bipolar disorder chapter on printed pages 853 through 856 | 2023 VA/DoD bipolar disorder guideline and current lithium and valproate labeling | Production build passed, 541 pages generated |
+| Attention Deficit Hyperactivity Disorder | Psychiatric Conditions | 100 original questions | Goodnotes Mental Health and Pain lecture pages 13, 14, and 35 plus RxPrep 2023 ADHD chapter on printed pages 857 through 863 | 2019 AAP guideline, 2023 FDA stimulant safety communication, and current atomoxetine and viloxazine labeling | Production build passed, 542 pages generated |
 
 Each module assessment randomly draws 10 questions from its complete bank through the shared pharmacy assessment system. The system randomizes question order and answer choices, prevents duplicate questions in one attempt, reports score and explanations, and links each answer back to its lesson section.
 
@@ -101,11 +102,15 @@ Each module assessment randomly draws 10 questions from its complete bank throug
 - Goodnotes remained unavailable behind the locked macOS session during the focused bipolar-disorder source check. The local RxPrep copy was reviewed across printed pages 853 through 856 for bipolar classification, mania, bipolar depression, acute and maintenance treatment, pregnancy, anticonvulsants, antipsychotics, lithium dosing, monitoring, interactions, counseling, and formulation conversion.
 - The bipolar-disorder module replaces older broad treatment statements with the 2023 VA/DoD episode-specific framework. It distinguishes acute mania, acute bipolar depression, and recurrence prevention; identifies lithium and quetiapine as preferred acute-mania monotherapies in that guideline; and gives lamotrigine its evidence-based depressive-recurrence role rather than an acute antimanic role.
 - The module replaces simplified comparative pregnancy claims with current drug-specific reproductive counseling. Valproate is generally avoided for bipolar disorder during pregnancy or planned pregnancy unless alternatives fail or are unacceptable, while lithium, lamotrigine, antipsychotics, lactation, sleep protection, and postpartum relapse prevention require individualized planning.
+- Goodnotes access was restored for the focused ADHD source review. The Mental Health and Pain lecture pages 13, 14, and 35 were visually reviewed for neurodevelopmental framing, attention and inhibitory-control networks, the older adult pharmacotherapy tree, atomoxetine pharmacology, and CYP2D6 pharmacogenomics.
+- The local RxPrep copy was reviewed across printed pages 857 through 863 for diagnostic criteria, age-specific behavioral care, stimulant classes and formulations, dosing, administration, safety, monitoring, atomoxetine, guanfacine extended release, and clonidine extended release.
+- The ADHD module replaces the older source algorithm with current care. It adds viloxazine extended release for pediatric patients age six and older and adults, uses the 2023 FDA class-wide stimulant warning for misuse, abuse, addiction, overdose, death, sharing, storage, and disposal, and treats CYP2D6 inhibitor exposure as clinically similar to poor-metabolizer exposure for atomoxetine.
+- The module also replaces blanket stimulant restrictions for tic disorders and universal baseline ECG language with individualized tic monitoring and cardiovascular history, family history, examination, vital signs, and targeted testing when findings indicate risk.
 - Obsolete or changing source content is reconciled explicitly. Discontinued agents are identified as historical, uncommon older agents are separated from current practice, and pregnancy-letter classifications are not used.
 
 ## Next verified-build target
 
-Re-enter the unlocked Goodnotes library and reconcile the new psychiatric and hepatology modules against any dedicated lecture material, then inventory Attention Deficit Hyperactivity Disorder as the next psychiatric source candidate.
+Continue through the unlocked Goodnotes Mental Health and Pain source, inventory the next clinically distinct topic, and reconcile it with the matching RxPrep chapter and current authoritative guidance.
 
 ## Remaining-work rule
 
