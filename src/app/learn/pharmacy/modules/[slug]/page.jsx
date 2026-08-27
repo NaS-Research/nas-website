@@ -148,6 +148,7 @@ import DaptomycinPharmacologyVisual, { daptomycinPharmacologyVisualTypes } from 
 import LinezolidTedizolidPharmacologyVisual, { linezolidTedizolidPharmacologyVisualTypes } from "@/components/learn/LinezolidTedizolidPharmacologyVisual";
 import TigecyclinePharmacologyVisual, { tigecyclinePharmacologyVisualTypes } from "@/components/learn/TigecyclinePharmacologyVisual";
 import PolymyxinPharmacologyVisual, { polymyxinPharmacologyVisualTypes } from "@/components/learn/PolymyxinPharmacologyVisual";
+import ClindamycinPharmacologyVisual, { clindamycinPharmacologyVisualTypes } from "@/components/learn/ClindamycinPharmacologyVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -477,6 +478,7 @@ export default async function PharmacyModulePage({ params }) {
               {module.slug === "linezolid-tedizolid-pharmacology" && linezolidTedizolidPharmacologyVisualTypes.includes(submodule.visual) && <LinezolidTedizolidPharmacologyVisual type={submodule.visual} />}
               {module.slug === "tigecycline-pharmacology" && tigecyclinePharmacologyVisualTypes.includes(submodule.visual) && <TigecyclinePharmacologyVisual type={submodule.visual} />}
               {module.slug === "polymyxin-pharmacology" && polymyxinPharmacologyVisualTypes.includes(submodule.visual) && <PolymyxinPharmacologyVisual type={submodule.visual} />}
+              {module.slug === "clindamycin-pharmacology" && clindamycinPharmacologyVisualTypes.includes(submodule.visual) && <ClindamycinPharmacologyVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
