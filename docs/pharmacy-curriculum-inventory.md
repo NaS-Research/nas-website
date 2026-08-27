@@ -153,8 +153,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: six lessons, six native structure and mechanism diagrams, and six embedded knowledge checks
 - Assessment: 100 original questions spanning ionization, cationic recognition, spacing, stereochemistry, choline-ester substitution, direct-agonist scaffolds, local delivery, enzyme binding, carbamylation, phosphorylation, aging, central access, and structure-to-clinic reasoning; ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: simplified lecture tables were reframed as relative structure-activity relationships rather than absolute activity scores; the historical anionic-site model was updated to an aromatic active-site gorge; organophosphate aging and oxime response were made agent and time dependent; in vitro potency was explicitly separated from clinical effect
-- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 25, 2026 with 340 static pages generated
+- Automated verification: 100 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 8 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
 
 ### Anticholinergic Medicinal Chemistry
 
