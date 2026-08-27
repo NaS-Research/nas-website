@@ -180,6 +180,7 @@ import { amphotericinFlucytosinePharmacologyModule } from "@/data/modules/amphot
 import { triazoleAntifungalPharmacologyModule } from "@/data/modules/triazoleAntifungalPharmacology";
 import { echinocandinPharmacologyModule } from "@/data/modules/echinocandinPharmacology";
 import { terbinafineGriseofulvinPharmacologyModule } from "@/data/modules/terbinafineGriseofulvinPharmacology";
+import { localOropharyngealAntifungalPharmacologyModule } from "@/data/modules/localOropharyngealAntifungalPharmacology";
 
 const sources = {
   foundation: "Foundation",
@@ -595,5 +596,6 @@ pharmacyModules.push(amphotericinFlucytosinePharmacologyModule);
 pharmacyModules.push(triazoleAntifungalPharmacologyModule);
 pharmacyModules.push(echinocandinPharmacologyModule);
 pharmacyModules.push(terbinafineGriseofulvinPharmacologyModule);
+pharmacyModules.push(localOropharyngealAntifungalPharmacologyModule);
 
 export const pharmacySubmoduleCount = pharmacyModules.reduce((total, module) => total + module.submodules.length, 0);

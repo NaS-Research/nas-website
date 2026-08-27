@@ -2688,6 +2688,27 @@ Current source reconciliations:
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 176-question assessment bank.
 - Goodnotes source reconciliation remains pending until the local macOS session is unlocked and the library is readable through the application.
 
+### Local Oropharyngeal Antifungal Pharmacology
+
+- Built from the focused candidiasis material in RxPrep 2023 Chapter 24 and reconciled with current nystatin suspension, clotrimazole troche, and Oravig miconazole buccal labeling, plus current NIH candidiasis guidance.
+- Candida colonization, symptomatic mucosal disease, common mimics, host defense, removable plaques, erythema, recurrence, dysphagia, and odynophagia establish the diagnostic compartment before treatment selection.
+- Mild localized disease is separated from moderate, severe, refractory, esophageal, and systemic disease. Local therapy is selected only when mucosal contact, adherence, age, host, interaction, allergy, and formulation fit are defensible.
+- Nystatin polyene structure, amphipathicity, direct membrane sterol binding, permeability, intracellular leakage, negligible gastrointestinal absorption, and systemic-treatment boundary connect medicinal chemistry to local exposure.
+- The current 100000 units per mL suspension concentration, child and adult 4 to 6 mL four-times-daily regimen, infant 2 mL regimen, calibrated measurement, bilateral coating, prolonged retention, feeding interval, shaking, storage, and continuation endpoint are operationalized.
+- Nystatin irritation, gastrointestinal intolerance, sensitization, rare hypersensitivity, very rare severe skin reactions, current reproductive narrative, and nonresponse audit have explicit action pathways.
+- Clotrimazole imidazole structure, fungal CYP51 inhibition, slow troche dissolution, prolonged salivary concentrations, low systemic exposure, current 10 mg five-times-daily 14-day treatment regimen, and narrower prophylaxis context are separated clearly.
+- Clotrimazole diagnosis confirmation, liver-test observations, periodic hepatic assessment, safe slow-dissolve capability, age and cognition, xerostomia, aspiration risk, and exact interaction review form the product safety system.
+- Miconazole CYP51 inhibition, upper-gum mucoadhesion, prolonged local release, current 50 mg once-daily 14-day regimen, low systemic absorption, and persistent CYP2C9 and CYP3A4 inhibition are connected without minimizing interaction risk.
+- The exact morning placement, dry-hand technique, canine-fossa location, 30-second pressure, side alternation, food and gum instructions, and time-dependent early or late detachment and one-replacement pathway are included.
+- Milk protein concentrate hypersensitivity, anaphylaxis, warfarin and INR, oral hypoglycemics, phenytoin, ergot alkaloids, hepatic impairment, pediatric limits, choking risk, pregnancy, and lactation are translated into patient-specific selection and monitoring.
+- Recurrence prevention joins denture care, inhaled corticosteroid technique, mouth rinsing, glucose, xerostomia, antibiotics, nutrition, immune status, response definition, escalation, ownership, and the educational boundary.
+- It contains eleven focused lessons, eleven responsive diagrams, eleven embedded checks, and a validated 192-question assessment bank.
+- RxPrep ranges that included shorter clotrimazole or miconazole courses were reconciled to the current product labels, which specify 14 consecutive treatment days.
+- Automated verification: 192 unique question IDs and prompts, four distinct answer choices per question, valid lesson links, eleven lesson sections, eleven diagrams, and no em dash or en dash characters in public module prose.
+- Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, eleven lessons, eleven diagrams, eleven embedded checks, ten questions per test, a different second random set, scoring with explanations and remediation links, and zero console errors.
+- Build verification: Next.js production build passed August 27, 2026 with 511 static pages generated.
+- Goodnotes source reconciliation remains pending until the local macOS session is unlocked and the library is readable through the application.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
