@@ -15,6 +15,10 @@ const visualCopy = {
     title: "Three different jobs",
     note: "Membrane stabilization, intracellular shifting, and potassium removal are complementary, not interchangeable.",
   },
+  magnesium: {
+    title: "Connect concentration to physiology",
+    note: "Symptoms, kidney function, potassium, calcium, and cardiac rhythm determine the urgency and safety of treatment.",
+  },
   monitoring: {
     title: "Prescribe a feedback loop",
     note: "The monitoring interval must match the acuity, intervention, and risk of overshoot.",
@@ -59,6 +63,12 @@ export default function FluidElectrolyteVisual({ type }) {
         <div><span>Protect</span><strong>Stabilize the myocardium</strong><small>IV calcium when indicated by ECG toxicity</small></div>
         <div><span>Shift</span><strong>Move potassium into cells</strong><small>Insulin with glucose and an inhaled beta agonist</small></div>
         <div><span>Remove</span><strong>Lower total body potassium</strong><small>Kidney, gastrointestinal, or extracorporeal removal</small></div>
+      </div>}
+
+      {type === "magnesium" && <div className="fluid-visual__potassium">
+        <div><span>Deficit</span><strong>Find the cause</strong><small>Intake, gastrointestinal loss, medicine exposure, or renal wasting</small></div>
+        <div><span>Replace</span><strong>Match route to urgency</strong><small>Oral for stable deficiency, IV for severe symptoms or selected arrhythmias</small></div>
+        <div><span>Excess</span><strong>Protect and remove</strong><small>Stop exposure, use IV calcium for toxicity, and assess elimination</small></div>
       </div>}
 
       {type === "monitoring" && <div className="fluid-visual__loop">

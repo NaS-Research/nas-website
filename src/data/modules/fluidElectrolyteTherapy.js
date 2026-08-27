@@ -82,6 +82,7 @@ export const fluidElectrolyteTherapyModule = {
       title: "Magnesium Disorders",
       summary: "Magnesium influences neuromuscular function, cardiac repolarization, and potassium handling. Renal function changes both the cause and the safety of treatment.",
       concepts: ["Hypomagnesemia", "Refractory hypokalemia", "IV magnesium safety", "Hypermagnesemia"],
+      visual: "magnesium",
       application: "Choose route and intensity by symptoms, concentration, gastrointestinal tolerance, kidney function, and the urgency of associated arrhythmia or electrolyte disturbance.",
       lesson: [
         { heading: "Recognize deficiency and its partners", body: "Diarrhea, malabsorption, alcohol use disorder, proton pump inhibitors, aminoglycosides, cisplatin, and renal wasting can lower magnesium. Deficiency may coexist with hypokalemia and hypocalcemia and can contribute to tremor, weakness, seizures, and ventricular arrhythmia." },

@@ -104,7 +104,7 @@ const fluidDecisionCases = [
   ["A patient develops dyspnea and crackles during an infusion", "Stop and reassess for fluid-related harm", "iv-fluid-selection"],
   ["A patient with severe symptomatic hypotonic hyponatremia has a seizure", "Urgent monitored hypertonic saline strategy", "sodium-water-disorders"],
   ["A shocked patient with hypernatremia has inadequate perfusion", "Restore circulation before controlled free-water correction", "sodium-water-disorders"],
-].map(([caseText, correct, lesson], index) => q(`08${index + 1}`, "Which action best matches the clinical purpose?", [correct, "Give dextrose 5 percent in water as rapid resuscitation", "Use a fixed indefinite infusion without monitoring", "Treat the laboratory value without assessing the patient"], 0, `The scenario calls for: ${correct.toLowerCase()}.`, lesson, { case: caseText }));
+].map(([caseText, correct, lesson], index) => q(`08${index + 1}`, `${caseText}. Which action best matches the clinical purpose?`, [correct, "Give dextrose 5 percent in water as rapid resuscitation", "Use a fixed indefinite infusion without monitoring", "Treat the laboratory value without assessing the patient"], 0, `The scenario calls for: ${correct.toLowerCase()}.`, lesson));
 
 const electrolyteDecisionCases = [
   ["Potassium 6.9 mmol/L with a widened QRS complex", "Give IV calcium while initiating shifting and removal therapies", "potassium-disorders"],
@@ -117,7 +117,7 @@ const electrolyteDecisionCases = [
   ["Hypernatremia with polyuria and urine that remains very dilute", "Evaluate a water diuresis such as diabetes insipidus", "sodium-water-disorders"],
   ["Euvolemic hypotonic hyponatremia begins after a new implicated medicine", "Remove the cause when possible and evaluate an SIADH pattern", "sodium-water-disorders"],
   ["A clinician proposes tolvaptan for hypovolemic hyponatremia", "Reject the plan because hypovolemic hyponatremia is a labeled contraindication", "sodium-water-disorders"],
-].map(([caseText, correct, lesson], index) => q(`09${index + 1}`, "What is the best next clinical action?", [correct, "Ignore the trajectory and repeat testing tomorrow", "Use an oral potassium binder as the only emergency intervention", "Normalize every value immediately without a correction limit"], 0, correct, lesson, { case: caseText }));
+].map(([caseText, correct, lesson], index) => q(`09${index + 1}`, `${caseText}. What is the best next clinical action?`, [correct, "Ignore the trajectory and repeat testing tomorrow", "Use an oral potassium binder as the only emergency intervention", "Normalize every value immediately without a correction limit"], 0, correct, lesson));
 
 export const fluidElectrolyteTherapyQuestionBank = [
   ...coreQuestions,

@@ -30,10 +30,11 @@ This inventory records the source material available in the founder's Goodnotes 
 - DAST sources: Fluids and Electrolytes, 41 pages, and Na Water K & Mg, 72 pages, exported and text verified
 - Cross reference: RxPrep NAPLEX 2023 scope and calculation conventions
 - Current references: NICE adult IV fluid guideline, European hyponatremia guideline, Society for Endocrinology emergency guidance, KDIGO acute hyperkalemia report, and current FDA labeling for tolvaptan, potassium chloride, sodium zirconium cyclosilicate, and magnesium sulfate
-- Learning structure: six lessons, five native concept visuals, and six embedded knowledge checks
+- Learning structure: six lessons, six native concept visuals, and six embedded knowledge checks
 - Assessment: 100 original questions, ten sampled without replacement per attempt, answer order randomized
+- Automated verification: 100 unique questions, valid review links, and a minimum of twelve questions mapped to every lesson
 - Source reconciliation: the archived correction ceiling above 12 mmol/L per day was replaced by the cited contemporary hyponatremia limits; legacy universal claims for bicarbonate, potassium response, starch solutions, and emergency potassium binders were narrowed or removed
-- Build verification: Next.js production build passed August 25, 2026
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
 
 ### Acid-Base Interpretation
 
