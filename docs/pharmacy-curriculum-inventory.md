@@ -2672,6 +2672,22 @@ Current source reconciliations:
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 176-question assessment bank.
 - Goodnotes source reconciliation remains pending until the local macOS session is unlocked and the library is readable through the application.
 
+### Terbinafine and Griseofulvin Pharmacology
+
+- Built from the focused dermatophyte material in RxPrep 2023 Chapter 24 and reconciled with current oral terbinafine and microsize and ultramicrosize griseofulvin labeling.
+- Dermatophyte genera, keratinized skin, hair, nail, diagnostic confirmation, anatomic depth, tissue growth, and site-specific duration establish the biological treatment system before a drug is selected.
+- Terbinafine allylamine structure, lipophilicity, fungal squalene epoxidase inhibition, ergosterol depletion, squalene accumulation, tissue persistence, and fungicidal dermatophyte activity connect medicinal chemistry to clinical exposure.
+- Multi-enzyme terbinafine metabolism and current CYP2D6 inhibition are explicit. The older broad summary that terbinafine is a general CYP3A4 inducer is flagged as unsupported by current official labeling rather than silently retained.
+- Topical and oral terbinafine are separated by site and safety burden. Current oral nail courses, delayed visible cure, diagnostic confirmation, recurrence reservoirs, and failure audits remain visible.
+- Hepatic injury, taste and smell loss, nutritional and psychiatric consequences, severe neutropenia, serious skin and hypersensitivity reactions, lupus exacerbation, depression, and thrombotic microangiopathy have symptom and laboratory action pathways.
+- Terbinafine interaction reasoning covers CYP2D6 substrates, rifampin, cimetidine, fluconazole, exposure direction, monitoring endpoints, persistent effects, and patient-owned stopping rules.
+- Griseofulvin mitotic disruption, fungistatic dermatophyte activity, keratin precursor deposition, protected new keratin, tinea capitis exposure, and organism boundaries connect target to duration.
+- Microsize and ultramicrosize products are not treated as equal-milligram substitutes. Food effects, weight conversion, formulation-specific mg/kg logic, dosage-form verification, and site duration are included.
+- Pregnancy, porphyria, hepatocellular failure, photosensitivity, alcohol effects, lupus, severe skin and hepatic reactions, warfarin, hormonal contraception, and periodic hepatic, renal, and hematopoietic monitoring form the longitudinal griseofulvin safety system.
+- Integrated selection joins site, organism, formulation, host, reproductive context, interactions, keratin replacement, reinfection prevention, follow-up ownership, and the educational boundary.
+- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 176-question assessment bank.
+- Goodnotes source reconciliation remains pending until the local macOS session is unlocked and the library is readable through the application.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
