@@ -212,6 +212,7 @@ import AlcoholAssociatedLiverDiseaseVisual, { alcoholAssociatedLiverDiseaseVisua
 import DrugInducedLiverInjuryVisual, { drugInducedLiverInjuryVisualTypes } from "@/components/learn/DrugInducedLiverInjuryVisual";
 import AcuteLiverFailureVisual, { acuteLiverFailureVisualTypes } from "@/components/learn/AcuteLiverFailureVisual";
 import MajorDepressiveDisorderVisual, { majorDepressiveDisorderVisualTypes } from "@/components/learn/MajorDepressiveDisorderVisual";
+import SchizophreniaPsychosisVisual, { schizophreniaPsychosisVisualTypes } from "@/components/learn/SchizophreniaPsychosisVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -605,6 +606,7 @@ export default async function PharmacyModulePage({ params }) {
               {module.slug === "drug-induced-liver-injury" && drugInducedLiverInjuryVisualTypes.includes(submodule.visual) && <DrugInducedLiverInjuryVisual type={submodule.visual} />}
               {module.slug === "acute-liver-failure" && acuteLiverFailureVisualTypes.includes(submodule.visual) && <AcuteLiverFailureVisual type={submodule.visual} />}
               {module.slug === "major-depressive-disorder" && majorDepressiveDisorderVisualTypes.includes(submodule.visual) && <MajorDepressiveDisorderVisual type={submodule.visual} />}
+              {module.slug === "schizophrenia-psychosis" && schizophreniaPsychosisVisualTypes.includes(submodule.visual) && <SchizophreniaPsychosisVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>

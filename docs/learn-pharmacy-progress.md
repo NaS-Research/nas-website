@@ -30,6 +30,7 @@ This ledger records modules verified under the current curriculum-build workflow
 | Drug-Induced Liver Injury | Renal & Liver Disease | 100 original questions | RxPrep 2023 liver-test, natural-product, and DILI material on printed pages 301 and 302 | 2023 AASLD practice guidance, NIH LiverTox, FDA DILI guidance, and July 2025 ACETADOTE labeling | Production build passed, 537 pages generated |
 | Acute Liver Failure | Renal & Liver Disease | 100 original questions | RxPrep 2023 acetaminophen, acetylcysteine, toxicology, and liver-injury material on printed pages 754, 984, and 985 | Current AASLD acute liver failure education, active AASLD position paper with age identified, July 2025 ACETADOTE labeling, and current poison-center practice | Production build passed, 538 pages generated |
 | Major Depressive Disorder | Psychiatric Conditions | 100 original questions | RxPrep 2023 depression chapter on printed pages 834 through 844 | 2022 VA/DoD MDD guideline and current SPRAVATO, ZURZUVAE, VRAYLAR, and CAPLYTA labeling | Production build passed, 539 pages generated |
+| Schizophrenia and Psychosis | Psychiatric Conditions | 100 original questions | RxPrep 2023 schizophrenia and psychosis chapter on printed pages 845 through 851 | 2023 VA/DoD first-episode psychosis and schizophrenia guideline, 2020 APA schizophrenia guideline, and 2025 FDA clozapine REMS removal | Production build passed, 540 pages generated |
 
 Each module assessment randomly draws 10 questions from its complete bank through the shared pharmacy assessment system. The system randomizes question order and answer choices, prevents duplicate questions in one attempt, reports score and explanations, and links each answer back to its lesson section.
 
@@ -93,11 +94,14 @@ Each module assessment randomly draws 10 questions from its complete bank throug
 - The local RxPrep copy was reviewed across the depression chapter on printed pages 834 through 844 for diagnosis, bipolar screening, psychotherapy, antidepressant classes, serotonin toxicity, discontinuation, suicidality, pregnancy, postpartum depression, and inadequate response.
 - The major-depressive-disorder module replaces the source's 2016 VA/DoD framing with the 2022 guideline and avoids presenting depression as a proven simple chemical imbalance. It adds measurement-based care, direct suicide-risk assessment, functional recovery, patient-specific selection, pseudo-resistance auditing, and explicit switch, augmentation, TMS, and ECT reasoning.
 - Current labeling adds oral zuranolone for postpartum depression, permits supervised SPRAVATO monotherapy for adult treatment-resistant depression, includes cariprazine adjunctive MDD dosing, and includes the November 2025 lumateperone adjunctive MDD indication. The module distinguishes those current indications from older course material.
+- Goodnotes remained unavailable behind the locked macOS session during the focused schizophrenia and psychosis source check. The local RxPrep copy was reviewed across printed pages 845 through 851 for symptom domains, dopamine pathways, first- and second-generation antipsychotics, movement disorders, formulations, long-acting injections, clozapine, acute agitation, interactions, counseling, and Parkinson disease psychosis.
+- The schizophrenia and psychosis module replaces the 2023 course book's mandatory Clozapine REMS language. The FDA removed that REMS effective June 13, 2025, so enrollment and ANC reporting to the program are no longer required, while baseline and ongoing ANC monitoring remain recommended.
+- The module adds first-episode coordinated specialty care, a multidomain recovery model, structured EPS and tardive-dyskinesia differentiation, neuroleptic malignant syndrome, whole-system clozapine monitoring, product-level LAI initiation and missed-dose planning, smoking-change pharmacokinetics, trauma-informed agitation care, and physical-health equity.
 - Obsolete or changing source content is reconciled explicitly. Discontinued agents are identified as historical, uncommon older agents are separated from current practice, and pregnancy-letter classifications are not used.
 
 ## Next verified-build target
 
-Re-enter the unlocked Goodnotes library, reconcile Major Depressive Disorder and the hepatology sequence against any dedicated lecture material, then inventory schizophrenia and psychosis as the next psychiatric source candidate.
+Re-enter the unlocked Goodnotes library, reconcile Major Depressive Disorder, Schizophrenia and Psychosis, and the hepatology sequence against any dedicated lecture material, then inventory Bipolar Disorder as the next psychiatric source candidate.
 
 ## Remaining-work rule
 
