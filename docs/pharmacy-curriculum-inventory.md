@@ -2291,6 +2291,15 @@ Current source reconciliations:
 - It contains ten original responsive diagrams, ten embedded checks, and a validated 172-question assessment bank.
 - Goodnotes remains unavailable because macOS reports a locked session. Any matching meningitis lecture will receive a documented reconciliation pass after manual unlock.
 
+### Acute Otitis Media
+
+- Built from the acute otitis media section of RxPrep 2023 Chapter 23 and reconciled with current CDC pediatric outpatient guidance, the AAP acute otitis media guideline and decision tools, the 2024 to 2027 AAP Red Book, the 2022 AAO-HNS tympanostomy tube guideline, and current amoxicillin-clavulanate labeling.
+- The module is distinct from Common Ear Conditions. It focuses on eustachian-tube and middle-ear pathophysiology, strict AOM diagnostic criteria, OME and otitis externa differentiation, pain, observation, antibiotics, pediatric calculations, failure, recurrence, hearing, and development.
+- It requires tympanic-membrane bulging or qualifying new otorrhea plus middle-ear effusion rather than treating redness alone. Observation is an active 48 to 72 hour plan limited by age, laterality, otorrhea, severity, and reliable rescue access.
+- High-dose amoxicillin remains focused first-line therapy when recent exposure, purulent conjunctivitis, recurrent nonresponse, and allergy do not change selection. The ES-600 amoxicillin to clavulanate ratio, formulation-specific calculations, age and severity durations, and tube candidacy with effusion are made explicit.
+- It contains ten original responsive diagrams, ten embedded checks, and a validated 168-question assessment bank.
+- Goodnotes remains unavailable because macOS reports a locked session. Any matching otitis lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
