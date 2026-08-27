@@ -2249,6 +2249,39 @@ Current source reconciliations:
 - The module contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a 160-question bank across thirty-eight concepts and four reasoning levels plus eight original phenotype, quantity, HE, IBS-D, exposure, CDI-sequence, and integration cases.
 - Goodnotes was not required to advance this RxPrep-defined milestone. Any later matching lecture material will receive a documented reconciliation pass.
 
+### Fosfomycin Pharmacology
+
+- Built from the fosfomycin section of RxPrep 2023 Chapter 22 and reconciled with current fosfomycin labeling, FDA-recognized susceptibility criteria, and current resistant gram-negative guidance.
+- The module separates the oral tromethamine packet used for selected uncomplicated cystitis from intravenous fosfomycin products used outside the United States and from unapproved multidose oral strategies.
+- MurA inhibition, early peptidoglycan synthesis, GlpT and UhpT transport, urinary exposure, spectrum boundaries, single-dose administration, resistance, renal evidence, pregnancy and lactation narratives, and stewardship are connected across ten lessons.
+- It contains ten original responsive diagrams, ten embedded checks, and a validated assessment bank exceeding 100 original questions.
+- Goodnotes could not be rechecked because macOS reported a locked session. Any matching lecture will receive a documented reconciliation pass after manual unlock.
+
+### Nitrofurantoin Pharmacology
+
+- Built from the nitrofurantoin section of RxPrep 2023 Chapter 22 and reconciled with current labeling, current uncomplicated cystitis guidance, the modern renal-function threshold, and geriatric safety guidance.
+- The module distinguishes macrocrystals from the monohydrate and macrocrystal product, lower urinary exposure from systemic treatment, treatment from prophylaxis, and current renal evidence from the older label cutoff.
+- Reductive activation, multiple bacterial targets, urine concentration, food effects, dosing, pulmonary and hepatic toxicity, neuropathy, hemolysis, G6PD context, pregnancy and lactation narratives, monitoring, and stewardship are connected across ten lessons.
+- It contains ten original responsive diagrams, ten embedded checks, and a validated assessment bank exceeding 100 original questions.
+- Goodnotes could not be rechecked because macOS reported a locked session. Any matching lecture will receive a documented reconciliation pass after manual unlock.
+
+### Mupirocin Pharmacology and Decolonization
+
+- Built from the mupirocin section of RxPrep 2023 Chapter 22 and reconciled with current dermal labeling, the former dedicated nasal label, FDA's 2025 withdrawal determination, current CDC decolonization guidance, and the current SHEA, IDSA, and APIC MRSA-prevention update.
+- The module distinguishes dermal ointment, cream, and the discontinued dedicated nasal product; local infection from colonization; targeted from universal decolonization; and one nasal intervention from the complete prevention bundle.
+- Isoleucyl transfer RNA synthetase inhibition, product vehicles, impetigo, nasal technique, ICU and surgical protocols, chlorhexidine, resistance, pregnancy and lactation narratives, monitoring, and stewardship are connected across ten lessons.
+- It contains ten original responsive diagrams, ten embedded checks, and a validated 172-question assessment bank.
+- Goodnotes was retried after the user reported restored access, but macOS still reported a locked session. Any matching lecture will receive a documented reconciliation pass after manual unlock.
+
+### Perioperative Antimicrobial Prophylaxis
+
+- Built from the perioperative prophylaxis section of RxPrep 2023 Chapter 23 and reconciled with the current SHEA, IDSA, APIC, AHA, and Joint Commission SSI update, the current MRSA-prevention update, and 2026 cefazolin and vancomy labeling.
+- The module separates prevention from treatment, selects spectrum from the operative field, schedules exposure around incision, applies weight, infusion rate, operative duration, and blood-loss redosing, and uses an allergy phenotype rather than an unexamined label.
+- Cefazolin remains first-line for many procedures. Vancomycin is reserved for defined MRSA circumstances and does not erase other procedure-specific coverage. Elective colorectal surgery uses coordinated oral, parenteral, and mechanical preparation components.
+- The current cefazolin label still describes postoperative dosing for 24 hours, while current high-quality SSI guidance recommends discontinuation at incision closure. The module exposes this conflict and ties implementation to current evidence-based institutional governance rather than silently choosing one source.
+- It contains ten original responsive diagrams, ten embedded checks, and a validated assessment bank exceeding 100 original questions.
+- Goodnotes was retried before development, but macOS still reported a locked session. Any matching perioperative lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
