@@ -1,7 +1,7 @@
 import { heartFailurePathophysiologyQuestionBank } from "@/data/questionBanks/heartFailurePathophysiology";
 
 export const heartFailurePathophysiologyModule = {
-  slug: "heart-failure-pathophysiology", number: "41", title: "Heart Failure Pathophysiology", source: "Contemporary AHA, ACC, and HFSA heart failure guidance and current HFpEF consensus",
+  slug: "heart-failure-pathophysiology", number: "41", title: "Heart Failure Pathophysiology", source: "2022 AHA, ACC, and HFSA heart failure guidance, 2024 ACC hospitalized heart failure trajectory guidance, and 2026 ACC HFpEF consensus",
   description: "Build a mechanistic model of heart failure from pump mechanics and neurohormonal compensation through congestion, cardiorenal dysfunction, phenotype confirmation, etiology, decompensation, and advanced disease.",
   topics: ["Definition and staging", "Pump mechanics", "Neurohormonal compensation", "Congestion and cardiorenal physiology", "Heart failure phenotypes", "Diagnostic trajectory"],
   outcomes: ["Distinguish heart failure stage from ejection-fraction phenotype and explain why improved ejection fraction is not synonymous with cure.", "Interpret pressure-volume relationships using preload, afterload, contractility, compliance, rhythm, valve function, and ventricular interaction.", "Explain how sympathetic, RAAS, natriuretic, inflammatory, and remodeling pathways shift from compensation to disease amplification.", "Differentiate pulmonary and systemic congestion, low-output physiology, cardiorenal syndrome, and right-ventricular failure.", "Confirm HFrEF, HFmrEF, HFpEF, and HFimpEF using clinical, imaging, biomarker, and hemodynamic evidence.", "Identify etiology, decompensation triggers, mimics, and advanced-disease signals that require specialist escalation."],
@@ -46,7 +46,7 @@ export const heartFailurePathophysiologyModule = {
   references: [
     { label: "American College of Cardiology. 2022 AHA, ACC, and HFSA Heart Failure Guideline", href: "https://www.acc.org/Guidelines/Guidelines/2022/03/30/16/38/2022-Heart-Failure" },
     { label: "American Heart Association. 2022 Heart Failure Guideline", href: "https://professional.heart.org/en/guidelines-statements/2022-ahaacchfsa-guideline-for-the-management-of-heart-failure-a-report-of-thecir0000000000001063" },
-    { label: "American College of Cardiology. 2023 HFpEF Expert Consensus", href: "https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2023/04/17/16/40/2023-acc-expert-consensus-on-hfpef" },
+    { label: "American College of Cardiology. 2026 HFpEF Expert Consensus", href: "https://www.acc.org/latest-in-cardiology/journal-scans/2026/07/22/17/25/updated-acc-ecdp-addresses-management-of-hfpef" },
     { label: "American College of Cardiology. 2024 Hospitalized Heart Failure Expert Consensus Update", href: "https://www.acc.org/latest-in-cardiology/articles/2024/08/07/10/16/new-ecdp-updates-guidance-on-hf-management-treatment" },
   ], questionBank: heartFailurePathophysiologyQuestionBank,
 };
