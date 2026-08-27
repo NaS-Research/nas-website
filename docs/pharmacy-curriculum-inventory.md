@@ -2461,6 +2461,21 @@ Current source reconciliations:
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 130-question assessment bank.
 - Goodnotes remains unavailable because macOS reports a locked session. Any matching travel-health lecture will receive a documented reconciliation pass after manual unlock.
 
+### Syphilis
+
+- Built from the syphilis section of RxPrep 2023 Chapter 23 and reconciled with CDC STI treatment guidance, the CDC 2024 laboratory recommendations, current pregnancy and congenital syphilis guidance, and current product-supply safety notices.
+- The module follows T. pallidum from inoculation through primary, secondary, latent, tertiary, neurologic, ocular, and auditory disease while rejecting overreliance on a single classic lesion or rash.
+- Traditional and reverse serologic algorithms use both nontreponemal and treponemal test families. Discordant reverse results receive second-treponemal adjudication, RPR and VDRL are not treated as interchangeable for serial titers, and treponemal tests are not used to monitor cure.
+- Primary, secondary, and early latent disease use benzathine penicillin G 2.4 million units IM once. Routine extra doses are rejected for uncomplicated early disease in nonpregnant adults, including people with HIV.
+- Late latent and unknown-duration disease use three weekly 2.4 million unit doses. Recency requires evidence from seroconversion, sustained fourfold rise, unequivocal early symptoms, a documented early-syphilis partner, or a confined exposure window. Titer magnitude alone does not prove early latency.
+- Neurosyphilis, ocular syphilis, and otosyphilis use aqueous crystalline penicillin G 18 to 24 million units per day IV for 10 to 14 days. Ocular disease receives this regimen even with normal CSF, and isolated auditory disease is not delayed for routine lumbar puncture.
+- Pregnancy uses stage-appropriate penicillin only, with allergy evaluation and desensitization when necessary. Screening, third-trimester retesting by risk, fetal evaluation, Jarisch-Herxheimer obstetric warnings, delivery documentation, and the strict greater-than-nine-day restart rule are explicit.
+- Bicillin L-A and Bicillin C-R are separated, deep IM administration is verified, IV administration is prohibited, and current supply pathways require exact product documentation.
+- Follow-up uses the same quantitative nontreponemal assay. Fourfold change is taught as two dilution steps, with early disease followed at 6 and 12 months and latent disease at 6, 12, and 24 months.
+- Partner windows, presumptive treatment after exposure within 90 days, HIV testing, PrEP, public-health reporting, barriers to care, and reinfection prevention close the system.
+- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 130-question assessment bank.
+- Goodnotes remains unavailable because macOS reports a locked session. Any matching syphilis lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
