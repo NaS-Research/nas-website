@@ -2509,6 +2509,23 @@ Current source reconciliations:
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 130-question assessment bank.
 - Goodnotes remains unavailable because macOS reports a locked session. Any matching chlamydia lecture will receive a documented reconciliation pass after manual unlock.
 
+### Genital Herpes
+
+- Built from the genital herpes section of RxPrep 2023 Chapter 23 and reconciled with CDC genital herpes, genital ulcer, pregnancy, neonatal, and current valacyclovir labeling.
+- The module connects mucocutaneous replication, sensory ganglion latency, reactivation, asymptomatic shedding, and type specific recurrence patterns. Antivirals are presented as control of active replication rather than eradication of latent virus.
+- A fresh lesion receives type specific HSV NAAT or PCR as the preferred direct test. Culture remains useful when an isolate is needed for phenotypic susceptibility, while selected serology requires awareness of low positive false results and the lack of value of HSV IgM.
+- Every first clinical episode receives systemic therapy for 7 to 10 days with acyclovir 400 mg three times daily, valacyclovir 1 g twice daily, or famciclovir 250 mg three times daily. Incomplete healing can justify extension after clinical reassessment.
+- Recurrent episodic therapy begins during prodrome or within one day of lesion onset. Validated acyclovir, valacyclovir, and famciclovir schedules are kept separate from first episode, suppressive, zoster, and CNS regimens.
+- Daily suppression uses recurrence burden, quality of life, transmission goals, and patient preference rather than a rigid episode threshold. Valacyclovir 500 mg daily is identified as potentially less effective with at least 10 recurrences per year.
+- Suppression, condoms, disclosure, and avoidance during prodrome or lesions reduce but do not eliminate transmission. Long term therapy is reviewed annually without forced drug holidays or routine laboratory monitoring for most otherwise healthy patients.
+- Severe systemic HSV, meningitis, and encephalitis use distinct IV acyclovir pathways. Hydration, renal adjustment, infusion practice, creatinine, urine output, and neurologic monitoring address crystal nephropathy and neurotoxicity.
+- Persistent lesions during adherent therapy trigger an adherence, exposure, immune status, diagnosis, and culture based resistance audit. Acyclovir resistance usually includes valacyclovir cross resistance, while foscarnet requires intensive renal and electrolyte monitoring.
+- Pregnancy teaching stratifies neonatal risk by acquisition timing, begins recurrent disease suppression at 36 weeks, and selects delivery management from lesions and prodrome at labor. Obsolete pregnancy letter categories are not used.
+- Neonatal skin, eye, and mouth disease receives IV acyclovir for 14 days after invasive disease is excluded. CNS or disseminated disease receives at least 21 days with end of therapy CSF reassessment when the CNS is involved.
+- Counseling addresses lifelong latency, uncertainty about transmission timing, partner disclosure, safer sex, pregnancy planning, psychosocial distress, and stigma without moral judgment.
+- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 130-question assessment bank.
+- Goodnotes remains unavailable because macOS reports a locked session. Any matching genital herpes lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
