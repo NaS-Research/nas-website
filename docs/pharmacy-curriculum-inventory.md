@@ -1154,10 +1154,10 @@ Currently accessible documents:
 
 Target modules presently supported:
 
-1. Gastroesophageal Reflux Disease (`built`, 120 question bank; Goodnotes reconciliation pending)
-2. Peptic Ulcer Disease (`built`, 120 question bank; Goodnotes reconciliation pending)
-3. Irritable Bowel Syndrome (`built`, 124 question bank; Goodnotes reconciliation pending)
-4. Chronic Idiopathic Constipation (`built`, 128 question bank; Goodnotes reconciliation pending)
+1. Gastroesophageal Reflux Disease (`verified`, 120 question bank; Goodnotes reconciled)
+2. Peptic Ulcer Disease (`verified`, 124 question bank; Goodnotes reconciled)
+3. Irritable Bowel Syndrome (`verified`, 132 question bank; Goodnotes reconciled)
+4. Chronic Idiopathic Constipation (`verified`, 144 question bank; Goodnotes reconciled)
 5. Diarrhea Assessment and Pharmacotherapy (`built`, 128 question bank; Goodnotes reconciliation pending)
 6. Inflammatory Bowel Disease (`built`, 124 question bank; Goodnotes reconciliation pending)
 7. Motion Sickness (`built`, 120 question bank; Goodnotes reconciliation pending)
@@ -1198,11 +1198,11 @@ Target modules presently supported:
 - RxPrep source: NAPLEX 2023 Chapter 73 constipation and diarrhea sections, PDF pages 921 through 930, visually reviewed in full
 - Current references reviewed: 2021 ACG IBS guideline, 2022 AGA IBS-C and IBS-D pharmacology guidelines, and current DailyMed labeling for linaclotide, plecanatide, lubiprostone, tenapanor, rifaximin, eluxadoline, alosetron, and dicyclomine
 - Learning structure: ten lessons, ten native mechanism and decision diagrams, and ten embedded knowledge checks
-- Assessment: 124 original questions spanning gut-brain biology, positive diagnosis, alarm features, targeted testing, medication causes, Bristol-based subtypes, soluble fiber, low-FODMAP care, gut-directed behavioral therapy, pain pharmacology, IBS-C and IBS-D treatment, product-specific safety, pregnancy and lactation review, stop rules, and longitudinal reassessment; ten sampled without replacement per attempt with answer order randomized
+- Assessment: 132 original questions spanning gut-brain biology, positive diagnosis, alarm features, targeted testing, medication causes, Bristol-based subtypes, soluble fiber, low-FODMAP care, gut-directed behavioral therapy, pain pharmacology, antimuscarinic medicinal chemistry, IBS-C and IBS-D treatment, product-specific safety, pregnancy and lactation review, stop rules, and longitudinal reassessment; ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: older relief-with-defecation wording was replaced by Rome IV recurrent-abdominal-pain criteria; celiac and inflammatory testing were assigned to the appropriate diarrhea phenotype; a limited low-FODMAP trial now includes reintroduction; PEG is distinguished as a stool-directed treatment rather than reliable global IBS-C therapy; ACG and AGA differences on antispasmodics are explicit; current linaclotide labeling includes IBS-C from age 7 while retaining the contraindication below age 2; and every secretagogue, rifaximin, eluxadoline, and alosetron regimen follows its current label
 - Scope boundary: chronic idiopathic constipation, opioid-induced constipation, acute infectious diarrhea, inflammatory bowel disease, and pelvic-floor disorders remain distinct conditions rather than being absorbed into IBS
-- Goodnotes note: a new reconciliation attempt on August 26, 2026 still returned a locked-Mac state despite the reported access restoration; the dedicated PUD, GERD, and IBS 2026 lecture remains pending and will receive a documented pass when the desktop session is manually unlocked
-- Automated verification: 124 unique question IDs, no duplicate answer choices, valid lesson links, four difficulty levels, ten diagrams, and no em dash or en dash characters in public module prose
+- Goodnotes note: restored searches identified RxPrep as the dedicated IBS source and the Anticholinergic Medicinal Chemistry lecture as a relevant supporting source. The chemistry page was visually reviewed and reconciled with current dicyclomine and chlordiazepoxide and clidinium labeling.
+- Automated verification: 132 unique question IDs, no duplicate answer choices, valid lesson links, four difficulty levels, ten diagrams, and no em dash or en dash characters in public module prose
 - Assessment-engine improvement: sampling now prefers distinct concept groups, preventing multiple principle, application, safety, or case variants of the same concept from crowding one attempt when the bank has sufficient breadth
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, ten distinct concepts per attempt, a different second sample, scoring with ten explanations and ten remediation links, and responsive restoration after testing
 - Build verification: Next.js production build passed August 26, 2026 with 412 static pages generated
@@ -1212,13 +1212,13 @@ Target modules presently supported:
 - RxPrep source: NAPLEX 2023 Chapter 73 constipation section, PDF pages 921 through 926, visually reviewed in full
 - Current references reviewed: 2023 joint AGA and ACG guideline for pharmacologic management of chronic idiopathic constipation, 2026 AGA clinical practice update for refractory constipation, and current DailyMed labeling for polyethylene glycol, lubiprostone, linaclotide, plecanatide, and prucalopride
 - Learning structure: ten lessons, ten native mechanism and decision diagrams, and ten embedded knowledge checks
-- Assessment: 128 original questions spanning constipation phenotype, IBS-C distinction, alarm features, secondary causes, medication review, obstruction, anorectal examination, manometry, balloon expulsion, biofeedback, fiber, hydration, toileting mechanics, osmotic and stimulant laxatives, docusate evidence, secretagogues, prucalopride, refractory testing, surgical selection, reproductive safety, and longitudinal care
-- Source reconciliation: constipation is defined beyond weekly stool count; PEG is the only over-the-counter therapy strongly recommended for chronic treatment; bisacodyl and sodium picosulfate carry strong short-term or rescue support; docusate is not presented as an evidence-backed default; renal safety constrains magnesium; current product-specific CIC doses replace class-level generalizations; and the refractory pathway requires outlet evaluation and adequate treatment before transit testing or surgery
+- Assessment: 144 original questions spanning constipation phenotype, IBS-C distinction, alarm features, secondary causes, medication review, obstruction, anorectal examination, manometry, balloon expulsion, biofeedback, fiber, hydration, toileting mechanics, osmotic and stimulant laxatives, docusate evidence, secretagogues, current linaclotide age and indication boundaries, prucalopride, tegaserod source reconciliation, refractory testing, selected adjuncts, surgical selection, reproductive safety, and longitudinal care
+- Source reconciliation: constipation is defined beyond weekly stool count; PEG is the only over-the-counter therapy strongly recommended for chronic treatment; bisacodyl and sodium picosulfate carry strong short-term or rescue support; docusate is not presented as an evidence-backed default; renal safety constrains magnesium; current product-specific CIC doses replace class-level generalizations; the obsolete blanket pediatric linaclotide warning is corrected; tegaserod is historical rather than current; and the 2026 refractory pathway includes complete medical and behavioral trials before transit testing or surgery
 - Scope boundary: IBS-C, opioid-induced constipation, pediatric functional constipation, pregnancy-associated constipation, acute obstruction, and structural defecatory disorders remain distinct conditions rather than being absorbed into CIC
-- Goodnotes note: the dedicated gastrointestinal lecture remains pending while the desktop Goodnotes session is locked; the RxPrep and current-source synthesis is complete and will receive a documented lecture reconciliation pass when access is restored
-- Automated verification: 128 unique question IDs, 32 distinct concept groups, no duplicate answer choices, valid lesson links, four difficulty levels, ten diagrams, and no em dash or en dash characters in public module prose
+- Goodnotes note: restored searches for constipation, lubiprostone, prucalopride, and pelvic floor biofeedback confirmed RxPrep as the only dedicated constipation source. Other document matches were secondary-cause or incidental context rather than a dedicated constipation lecture.
+- Automated verification: 144 unique question IDs, 36 distinct concept groups, no duplicate answer choices, valid lesson links, four difficulty levels, ten diagrams, and no em dash or en dash characters in public module prose
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, ten distinct concepts per attempt, a different second sample, scoring with ten explanations and ten remediation links, and responsive restoration after testing
-- Build verification: Next.js production build passed August 26, 2026 with 413 static pages generated
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
 
 ### Diarrhea Assessment and Pharmacotherapy
 
