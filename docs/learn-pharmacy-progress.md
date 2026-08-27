@@ -15,6 +15,7 @@ This ledger records modules verified under the current curriculum-build workflow
 | HIV Prevention, PrEP, and PEP | Infectious Diseases | 168 original questions | RxPrep 2023 HIV prevention pages 417 and 418 | 2025 and 2026 CDC, U.S. Public Health Service, NIH, and current FDA guidance | Production build passed, 522 pages generated |
 | Disseminated Mycobacterium avium Complex | Infectious Diseases | 136 original questions | RxPrep 2023 opportunistic-infection pages 404 and 405 | NIH Adult and Adolescent OI guideline updated May 27, 2026 | Production build passed, 523 pages generated |
 | Toxoplasma gondii Encephalitis | Infectious Diseases | 136 original questions | RxPrep 2023 opportunistic-infection pages 404 and 405 | NIH Adult and Adolescent OI guideline updated September 9, 2025 and reviewed June 23, 2026 | Production build passed, 524 pages generated |
+| Cryptococcal Meningitis | Infectious Diseases | 100 original questions | RxPrep 2023 antifungal pages 389 and 390 and opportunistic-infection page 405 | NIH Adult and Adolescent OI cryptococcosis guidance reviewed March 16, 2026 | Production build passed, 525 pages generated |
 
 Each module assessment randomly draws 10 questions from its complete bank through the shared pharmacy assessment system. The system randomizes question order and answer choices, prevents duplicate questions in one attempt, reports score and explanations, and links each answer back to its lesson section.
 
@@ -32,11 +33,13 @@ Each module assessment randomly draws 10 questions from its complete bank throug
 - RxPrep printed pages 404 and 405 were visually reviewed for primary prophylaxis, active-disease exclusion, the macrolide and ethambutol treatment backbone, intensification options, and maintenance therapy.
 - Focused Goodnotes searches for `toxoplasma encephalitis`, `Toxoplasma gondii`, `pyrimethamine`, and `toxoplasmosis prophylaxis` found RxPrep as the only dedicated TE source. Other pregnancy and antimicrobial-class matches were contextual rather than dedicated TE teaching sources.
 - RxPrep printed pages 404 and 405 were reviewed for TE prophylaxis criteria, TMP-SMX, pyrimethamine, sulfadiazine, leucovorin rescue, acute treatment, alternatives, and maintenance therapy.
+- Goodnotes reported as restored on August 27, 2026, but macOS remained locked during the cryptococcal search attempts. Direct Goodnotes confirmation remains pending until the unlocked application is visible.
+- The local RxPrep copy was reviewed for cryptococcal meningitis across printed antifungal pages 389 and 390 and the opportunistic-infection table on printed page 405. The module covers organism biology, CrAg and CSF staging, liposomal amphotericin B plus flucytosine induction, pressure management, culture-guided consolidation, maintenance, delayed ART, interactions, and special populations.
 - Obsolete or changing source content is reconciled explicitly. Discontinued agents are identified as historical, uncommon older agents are separated from current practice, and pregnancy-letter classifications are not used.
 
 ## Next verified-build target
 
-Continue the HIV-related opportunistic infection sequence with cryptococcal meningitis. Search the restored Goodnotes library for dedicated lecture material, then reconcile accessible course content with current NIH guidance and FDA labeling before implementation.
+Continue the HIV-related opportunistic infection sequence with histoplasmosis. Search the restored Goodnotes library for dedicated lecture material, then reconcile accessible course content with current NIH and IDSA guidance and FDA labeling before implementation.
 
 ## Remaining-work rule
 
