@@ -10,7 +10,7 @@ export const inflammatoryBowelDiseaseModule = {
   slug: "inflammatory-bowel-disease",
   number: "87",
   title: "Inflammatory Bowel Disease",
-  source: "NaS synthesis of RxPrep 2023 with current ACG, AGA, FDA, and DailyMed guidance",
+  source: "NaS synthesis of the Goodnotes RxPrep 2023 inflammatory bowel disease chapter with current ACG, AGA, FDA, and DailyMed guidance",
   description: "Distinguish ulcerative colitis from Crohn disease, measure inflammatory burden, select induction and maintenance therapy, manage advanced medicines safely, and recognize the complications that require hospitalization, drainage, endoscopy, or surgery.",
   topics: ["Ulcerative colitis", "Crohn disease", "Diagnosis", "Treat-to-target care", "Mesalamine", "Corticosteroids", "Advanced therapy", "Immunomodulators", "Acute severe colitis", "Structural complications"],
   outcomes: [
@@ -95,6 +95,14 @@ export const inflammatoryBowelDiseaseModule = {
       ["Avoid routine distractions", "Routine broad-spectrum antibiotics without infection and parenteral nutrition solely for bowel rest do not improve acute severe ulcerative colitis. Antimotility and anticholinergic drugs can worsen dilation and are generally avoided."],
       ["Plan Crohn procedures and recurrence prevention", "Abscess requires source control, fistulas need coordinated medical and surgical care, and fibrotic obstruction may require intervention. After resection, high-risk patients need preventive therapy and ileocolonoscopy in about 6 to 12 months because recurrence can precede symptoms."],
     ], ["Acute severe colitis is a hospital emergency.", "Day three is a rescue decision point.", "Surgery is treatment, not failure.", "Crohn structural disease requires procedural planning."], { question: "A hospitalized patient with acute severe ulcerative colitis has not adequately responded after three days of intravenous corticosteroids. What is the next step?", choices: ["Begin rescue therapy or proceed through the surgical decision pathway", "Continue the same ineffective dose indefinitely", "Start routine loperamide", "Use parenteral nutrition solely for bowel rest"], answer: 0, rationale: "Current ACG guidance uses day three to trigger infliximab or cyclosporine rescue and coordinated surgical planning.", reviewHref: "#ibd-acute-severe" }),
+  ],
+  references: [
+    { label: "ACG 2025 ulcerative colitis guideline summary", href: "https://gi.org/journals-publications/ebgi/alkazzi_aug2025/" },
+    { label: "ACG 2025 Crohn disease guideline summary", href: "https://gi.org/journals-publications/ebgi/zhai_dalal_sep2025/" },
+    { label: "ACG 2025 Crohn disease guideline highlights", href: "https://gi.org/wp-content/uploads/2018/04/ACG_CrohnsHighight2025.pdf" },
+    { label: "AGA living guideline for moderate to severe ulcerative colitis", href: "https://gastro.org/clinical-guidance/living-guideline-for-moderate-to-severe-ulcerative-colitis/" },
+    { label: "ACG inflammatory bowel disease preventive care guideline", href: "https://gi.org/guidelines/" },
+    { label: "DailyMed current drug labeling", href: "https://dailymed.nlm.nih.gov/dailymed/" },
   ],
   questionBank: inflammatoryBowelDiseaseQuestionBank,
 };

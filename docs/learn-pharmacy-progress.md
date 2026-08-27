@@ -166,10 +166,13 @@ Each module assessment randomly draws 10 questions from its complete bank throug
 - The local RxPrep copy was visually and textually reviewed across printed pages 917 through 920 for fluid and electrolyte replacement, oral rehydration products, medication causes, bismuth subsalicylate, loperamide, diphenoxylate with atropine, product limits, contraindications, adverse effects, and counseling.
 - The diarrhea module retains hydration before symptom suppression, concentration-aware bismuth dosing, functional travelers' diarrhea severity, and cause-directed persistent-diarrhea testing. Current March 2026 CDC guidance and current DailyMed labeling confirm the treatment boundaries, while the loperamide section now includes QRS toxicity, concomitant QT-prolonging products, congenital long QT syndrome, rhythm disease, and electrolyte abnormalities.
 - The assessment contains 128 unique original questions. Focused validation found no malformed entries, duplicate identifiers, duplicate answer sets, invalid lesson links, or prohibited dash characters in the module, question bank, or native visual component.
+- Restored Goodnotes searches for `inflammatory bowel disease`, `Crohn disease`, `ulcerative colitis`, `mesalamine`, `vedolizumab`, and `risankizumab` confirmed RxPrep as the only dedicated inflammatory bowel disease source. Diabetes, renal replacement, pediatric and parenteral nutrition, nutrition monitoring, introductory nutrition, pulmonary, and calculations matches were incidental or comorbidity context rather than dedicated inflammatory bowel disease lectures.
+- The built module remains aligned with the 2025 ACG ulcerative colitis and Crohn disease guidelines and the AGA living ulcerative colitis guideline, which was reviewed again in March 2026 without a recommendation change. The module now exposes its authoritative guideline and current-label references directly in the learning interface.
+- The assessment contains 124 unique original questions. Focused validation found no malformed entries, duplicate identifiers, duplicate questions, duplicate answer sets, invalid lesson links, or prohibited dash characters in the module, question bank, or native visual component.
 
 ## Next verified-build target
 
-Continue through the unlocked Goodnotes library with Inflammatory Bowel Disease as the next clinically distinct gastrointestinal module requiring a restored Goodnotes reconciliation pass. Reconcile any dedicated lecture material with the already built RxPrep and current-guideline synthesis before advancing to the next incomplete module.
+Continue through the unlocked Goodnotes library with Motion Sickness as the next built module requiring a restored Goodnotes reconciliation pass. Reconcile any dedicated lecture material with the already built RxPrep and current-guideline synthesis before advancing to the next incomplete module.
 
 ## Remaining-work rule
 
