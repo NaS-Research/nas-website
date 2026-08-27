@@ -206,6 +206,7 @@ import { chronicHepatitisBModule } from "@/data/modules/chronicHepatitisB";
 import { hepatitisCModule } from "@/data/modules/hepatitisC";
 import { cirrhosisDecompensatedLiverDiseaseModule } from "@/data/modules/cirrhosisDecompensatedLiverDisease";
 import { alcoholAssociatedLiverDiseaseModule } from "@/data/modules/alcoholAssociatedLiverDisease";
+import { drugInducedLiverInjuryModule } from "@/data/modules/drugInducedLiverInjury";
 
 const sources = {
   foundation: "Foundation",
@@ -648,6 +649,7 @@ basePharmacyModules.push(
   hepatitisCModule,
   cirrhosisDecompensatedLiverDiseaseModule,
   alcoholAssociatedLiverDiseaseModule,
+  drugInducedLiverInjuryModule,
 );
 
 const curriculumAreaGroups = [
@@ -661,7 +663,7 @@ const curriculumAreaGroups = [
   },
   {
     area: "Renal & Liver Disease",
-    modules: [acuteKidneyInjuryModule, chronicKidneyDiseaseModule, ckdComplicationsModule, renalReplacementTherapyModule, cirrhosisDecompensatedLiverDiseaseModule, alcoholAssociatedLiverDiseaseModule],
+    modules: [acuteKidneyInjuryModule, chronicKidneyDiseaseModule, ckdComplicationsModule, renalReplacementTherapyModule, cirrhosisDecompensatedLiverDiseaseModule, alcoholAssociatedLiverDiseaseModule, drugInducedLiverInjuryModule],
   },
   {
     area: "Immunizations & Travel",
