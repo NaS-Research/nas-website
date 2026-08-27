@@ -16,7 +16,7 @@ export const pepticUlcerDiseaseModule = {
   slug: "peptic-ulcer-disease",
   number: "83",
   title: "Peptic Ulcer Disease",
-  source: "RxPrep 2023 Peptic Ulcer Disease material on printed pages 907 through 910. Focused Goodnotes searches found RxPrep as the only dedicated ulcer source, while matches in adrenal, pharmacogenomics, peripheral arterial disease, and dyslipidemia material were incidental. Reconciled with the 2024 ACG H. pylori guideline, current upper gastrointestinal bleeding guidance, and current FDA labeling.",
+  source: "RxPrep 2023 Peptic Ulcer Disease material on printed pages 907 through 910, reconciled with the 2024 ACG H. pylori guideline, current upper gastrointestinal bleeding guidance, and current FDA labeling.",
   description: "Connect gastric defense and ulcer cause to reliable H. pylori testing, susceptibility-aware eradication, NSAID risk reduction, ulcer healing, and complication management.",
   topics: ["Mucosal defense", "Complication triage", "H. pylori testing", "Eradication therapy", "Test of cure", "Ulcer healing", "Cytoprotection", "NSAID risk", "Ulcer bleeding", "Recurrence prevention"],
   outcomes: [

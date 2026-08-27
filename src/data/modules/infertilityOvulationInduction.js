@@ -10,7 +10,7 @@ export const infertilityOvulationInductionModule = {
   slug: "infertility-ovulation-induction",
   number: "71",
   title: "Infertility Evaluation and Ovulation Induction",
-  source: "DAST IV infertility lectures, RxPrep foundations, ASRM guidance, AUA and ASRM male-infertility guidance, the 2023 International PCOS Guideline, FDA labeling, and DailyMed",
+  source: "RxPrep foundations, ASRM guidance, AUA and ASRM male-infertility guidance, the 2023 International PCOS Guideline, FDA labeling, and DailyMed",
   description: "Build a parallel fertility evaluation, identify the barrier to conception, and use oral induction, controlled stimulation, assisted reproduction, and OHSS prevention safely.",
   topics: ["Evaluation timing", "Fertile window", "Female evaluation", "Male evaluation", "PCOS induction", "Clomiphene and metformin", "Gonadotropins", "Protocol control", "IUI and IVF", "OHSS prevention"],
   outcomes: [

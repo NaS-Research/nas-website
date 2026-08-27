@@ -8,7 +8,7 @@ export const linezolidTedizolidPharmacologyModule = {
   slug: "linezolid-tedizolid-pharmacology",
   number: "145",
   title: "Linezolid and Tedizolid Pharmacology",
-  source: "RxPrep 2023 Chapter 22 and the Goodnotes cystic-fibrosis material, reconciled with June 2026 linezolid labeling, February 2026 SIVEXTRO labeling, and current FDA susceptibility-recognition resources",
+  source: "RxPrep 2023 Chapter 22, reconciled with June 2026 linezolid labeling, February 2026 SIVEXTRO labeling, and current FDA susceptibility-recognition resources",
   description: "Connect oxazolidinone structure and ribosomal initiation blockade to gram-positive selection, agent-specific indications, route conversion, pediatric dosing, preparation, marrow and neurologic toxicity, serotonin and blood-pressure interactions, and closed-loop monitoring.",
   topics: ["Oxazolidinone medicinal chemistry", "50S initiation blockade", "Gram-positive spectrum", "Linezolid and tedizolid selection", "Pharmacokinetics", "Pediatric tedizolid dosing", "IV preparation", "Myelosuppression", "Neurologic and mitochondrial toxicity", "Monoamine interactions"],
   outcomes: [

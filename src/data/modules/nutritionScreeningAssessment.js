@@ -4,7 +4,7 @@ export const nutritionScreeningAssessmentModule = {
   slug: "nutrition-screening-assessment",
   number: "01",
   title: "Nutrition Screening, Assessment, and Malnutrition",
-  source: "DAST II · Nutrition",
+  source: "NaS synthesis of current nutrition assessment guidance",
   description: "Move from a rapid nutrition risk screen to a defensible assessment, diagnosis, and monitoring plan.",
   topics: ["Nutrition risk", "Anthropometrics", "Physical assessment", "Malnutrition diagnosis"],
   outcomes: [

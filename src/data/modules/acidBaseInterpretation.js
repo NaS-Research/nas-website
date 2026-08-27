@@ -4,7 +4,7 @@ export const acidBaseInterpretationModule = {
   slug: "acid-base-interpretation",
   number: "03",
   title: "Acid-Base Interpretation",
-  source: "DAST II · Nutrition",
+  source: "NaS synthesis of current acid-base interpretation guidance",
   description: "Move from pH, PaCO₂, bicarbonate, and clinical context to a complete diagnosis that exposes compensation, mixed disorders, cause, and treatment priorities.",
   topics: ["Blood gas reasoning", "Expected compensation", "Anion gap", "Cause-directed treatment"],
   outcomes: [

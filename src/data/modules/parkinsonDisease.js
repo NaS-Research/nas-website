@@ -17,7 +17,7 @@ export const parkinsonDiseaseModule = {
   slug: "parkinson-disease",
   number: "217",
   title: "Parkinson Disease",
-  source: "RxPrep 2023 Parkinson Disease chapter on printed pages 876 through 880. Goodnotes searches identified RxPrep as the only dedicated Parkinson source and a pharmacogenomics workshop with incidental levodopa references. Reconciled with the 2021 AAN early motor-treatment guideline, NICE NG71 reviewed in 2024 and updated through 2026, the 2026 SINEMET label, the 2024 VYALEV label, current pimavanserin labeling, and current advanced-therapy guidance.",
+  source: "RxPrep 2023 Parkinson Disease chapter on printed pages 876 through 880, reconciled with the 2021 AAN early motor-treatment guideline, NICE NG71 reviewed in 2024 and updated through 2026, the 2026 SINEMET label, the 2024 VYALEV label, current pimavanserin labeling, and current advanced-therapy guidance.",
   description: "Connect nigrostriatal disease to motor and nonmotor symptoms, build an individualized levodopa-centered plan, manage fluctuations and dyskinesia, and protect function across advanced disease.",
   topics: ["Motor circuits", "Diagnosis", "Nonmotor disease", "Levodopa", "Dose timing", "Adjuncts", "Dyskinesia", "Advanced therapy", "Psychosis", "Autonomic care", "Medication safety", "Recovery"],
   outcomes: [

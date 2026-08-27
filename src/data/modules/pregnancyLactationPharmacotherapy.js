@@ -10,7 +10,7 @@ export const pregnancyLactationPharmacotherapyModule = {
   slug: "pregnancy-lactation-pharmacotherapy",
   number: "73",
   title: "Pregnancy and Lactation Pharmacotherapy",
-  source: "NaS reconciliation of the Spring 2026 pregnancy and lactation lecture, FDA PLLR and labeling resources, NIH LactMed, ADA Standards of Care 2026, ACOG guidance, and current product labeling",
+  source: "NaS synthesis of FDA PLLR and labeling resources, NIH LactMed, ADA Standards of Care 2026, ACOG guidance, and current product labeling",
   description: "Evaluate medication benefit, fetal or infant exposure, maternal disease, monitoring, and counseling across pregnancy, delivery, and lactation.",
   topics: ["Pregnancy context", "Maternal pharmacokinetics", "Placental transfer", "FDA labeling", "Common symptoms", "Diabetes", "Preeclampsia", "Anticoagulation", "Milk exposure", "Lactation counseling"],
   outcomes: [

@@ -10,7 +10,7 @@ export const diarrheaAssessmentPharmacotherapyModule = {
   slug: "diarrhea-assessment-pharmacotherapy",
   number: "86",
   title: "Diarrhea Assessment and Pharmacotherapy",
-  source: "NaS synthesis of the Goodnotes RxPrep 2023 diarrhea chapter with current CDC, IDSA, AGA, FDA, WHO, and DailyMed guidance",
+  source: "NaS synthesis of the RxPrep 2023 diarrhea chapter with current CDC, IDSA, AGA, FDA, WHO, and DailyMed guidance",
   description: "Classify acute, persistent, and chronic diarrhea, protect hydration first, identify causes that require testing or escalation, and use symptom therapy only within clear diagnostic and safety boundaries.",
   topics: ["Diarrhea phenotype", "Dehydration triage", "Exposure and medication causes", "Oral rehydration", "Diagnostic testing", "Supportive care", "Bismuth subsalicylate", "Antimotility therapy", "Travelers' diarrhea", "Persistent diarrhea"],
   outcomes: [

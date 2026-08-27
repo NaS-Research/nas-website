@@ -4,7 +4,7 @@ export const fluidElectrolyteTherapyModule = {
   slug: "fluid-electrolyte-therapy",
   number: "02",
   title: "Fluid and Electrolyte Therapy",
-  source: "DAST II · Nutrition",
+  source: "NaS synthesis of current fluid and electrolyte guidance",
   description: "Reason from compartments, tonicity, symptoms, and organ function to a fluid or electrolyte plan that can be measured and revised.",
   topics: ["IV fluid therapy", "Sodium and water", "Potassium", "Magnesium and monitoring"],
   outcomes: [
@@ -54,7 +54,7 @@ export const fluidElectrolyteTherapyModule = {
       application: "In a sodium emergency, state both the immediate neurologic goal and the maximum acceptable correction trajectory. Measure often enough to detect an unexpected water diuresis before overshoot occurs.",
       lesson: [
         { heading: "Classify hyponatremia in order", body: "Confirm that hyponatremia is hypotonic. Isotonic results may reflect measurement artifact from marked lipids or proteins, while hypertonic hyponatremia may occur with glucose or another effective osmole. For hypotonic hyponatremia, severe symptoms determine urgency and clinical volume status narrows the cause." },
-        { heading: "Correct symptoms without creating osmotic injury", body: "European guidance for severe symptomatic hyponatremia targets an initial rise of about 5 mmol/L, then limits the total increase to 10 mmol/L in the first 24 hours and 8 mmol/L in each 24 hours thereafter. People at high risk for osmotic demyelination may require a more conservative ceiling under specialist guidance. The older lecture ceiling above 12 mmol/L per day is not used in this module." },
+        { heading: "Correct symptoms without creating osmotic injury", body: "European guidance for severe symptomatic hyponatremia targets an initial rise of about 5 mmol/L, then limits the total increase to 10 mmol/L in the first 24 hours and 8 mmol/L in each 24 hours thereafter. People at high risk for osmotic demyelination may require a more conservative ceiling under specialist guidance. An older ceiling above 12 mmol/L per day is not used in this module." },
         { heading: "Treat cause and water balance", body: "Hypovolemic hypotonic hyponatremia often responds to isotonic volume restoration, but the resulting suppression of antidiuretic hormone can accelerate correction. SIADH management begins with the cause, medication review, and fluid restriction when appropriate. Tolvaptan has a narrow labeled role, must be initiated or reinitiated in hospital, and is limited by liver injury risk and other contraindications." },
         { heading: "Approach hypernatremia as a water problem", body: "Assess duration, symptoms, access to water, renal and extrarenal losses, urine concentration, and volume status. Restore circulation first when shock is present, then replace free water gradually with repeated sodium measurements. Central diabetes insipidus may respond to desmopressin. Nephrogenic disease requires removal of the cause and a tailored strategy." },
       ],

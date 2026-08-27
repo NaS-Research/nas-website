@@ -6,7 +6,7 @@ const section = (slug, title, summary, concepts, application, lesson, keyPoints,
 
 export const vancomycinPharmacologyModule = {
   slug: "vancomycin-pharmacology", number: "143", title: "Vancomycin Pharmacology",
-  source: "Goodnotes Interpreting Lab Values and Drug Levels lecture and RxPrep 2023 Chapter 22 reconciled with current IV and oral prescribing information, ASHP-PIDS-SIDP-IDSA AUC-monitoring consensus guidance, and IDSA-SHEA C. difficile guidance",
+  source: "RxPrep 2023 Chapter 22 reconciled with current IV and oral prescribing information, ASHP-PIDS-SIDP-IDSA AUC-monitoring consensus guidance, and IDSA-SHEA C. difficile guidance",
   description: "Connect glycopeptide structure and D-Ala-D-Ala binding to gram-positive selection, route-specific therapy, individualized PK, AUC-guided monitoring, infusion science, nephrotoxicity, oral CDI use, resistance, and stewardship.",
   topics: ["Glycopeptide pharmacology", "Spectrum and resistance", "Route selection", "Individualized dosing", "AUC monitoring", "Infusion administration", "Nephrotoxicity", "Systemic safety", "Oral CDI therapy", "Clinical integration"],
   outcomes: [

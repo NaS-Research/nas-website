@@ -16,7 +16,7 @@ export const gonadalHormonePharmacologyModule = {
   slug: "gonadal-hormone-pharmacology",
   number: "69",
   title: "Gonadal Hormone Pharmacology",
-  source: "DAST IV lecture, RxPrep foundations, current endocrine guidance, NIH references, FDA labeling, and DailyMed",
+  source: "RxPrep foundations, current endocrine guidance, NIH references, FDA labeling, and DailyMed",
   description: "Trace gonadal hormones from hypothalamic signaling through tissue response, then use that physiology to interpret hypogonadism, hormone replacement, safety monitoring, and pathway-directed therapy.",
   topics: ["HPG axis", "Ovarian physiology", "Testicular physiology", "Steroidogenesis", "Receptor signaling", "Hypogonadism", "Testosterone products", "Safety monitoring", "Estrogen and progestogen foundations", "GnRH modulation"],
   outcomes: [

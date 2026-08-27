@@ -10,7 +10,7 @@ export const gynecologicDisordersModule = {
   slug: "gynecologic-disorders",
   number: "70",
   title: "Menstrual and Gynecologic Disorders",
-  source: "DAST IV gynecologic disorders and medicinal chemistry lectures, RxPrep foundations, ACOG guidance, ASRM guidance, NICE NG88, FDA labeling, and DailyMed",
+  source: "RxPrep foundations, ACOG guidance, ASRM guidance, NICE NG88, FDA labeling, and DailyMed",
   description: "Move from menstrual pattern and diagnostic triage to evidence-based care for abnormal uterine bleeding, dysmenorrhea, premenstrual disorders, endometriosis, and symptomatic uterine fibroids.",
   topics: ["Menstrual assessment", "AUB classification", "Acute bleeding", "Heavy menstrual bleeding", "Dysmenorrhea", "PMS and PMDD", "Endometriosis", "GnRH pharmacology", "Uterine fibroids", "Longitudinal care"],
   outcomes: [
@@ -79,8 +79,8 @@ export const gynecologicDisordersModule = {
   ],
   questionBank: gynecologicDisordersQuestionBank,
   sourceNotes: {
-    reviewed: ["DAST IV Gynecological Disorders", "Gynecological Agents Updated"],
-    reconciled: ["The lecture's age 16 threshold for primary amenorrhea was updated to current ASRM guidance, which begins evaluation by age 15 with normal secondary sexual development.", "The fixed 80 mL definition was replaced with patient-centered functional burden while retaining anemia assessment.", "The lecture grouped elagolix with GnRH agonists; it is correctly taught as a GnRH receptor antagonist.", "Older terms such as menorrhagia and dysfunctional uterine bleeding were replaced with current bleeding-pattern language and PALM-COEIN classification."],
+    reviewed: ["RxPrep gynecologic foundations", "Current gynecology and reproductive guidance"],
+    reconciled: ["An older age 16 threshold for primary amenorrhea was updated to current ASRM guidance, which begins evaluation by age 15 with normal secondary sexual development.", "The fixed 80 mL definition was replaced with patient-centered functional burden while retaining anemia assessment.", "Elagolix is correctly taught as a GnRH receptor antagonist rather than grouped with GnRH agonists.", "Older terms such as menorrhagia and dysfunctional uterine bleeding were replaced with current bleeding-pattern language and PALM-COEIN classification."],
     deferred: ["Contraception", "Infertility and ovulation induction", "Menopause", "Vulvovaginal infection and pelvic inflammatory disease", "Pregnancy complications", "Gynecologic oncology", "Pelvic organ prolapse and fistula care"],
   },
 };

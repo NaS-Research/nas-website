@@ -10,7 +10,7 @@ export const menopausalHormoneTherapyModule = {
   slug: "menopausal-hormone-therapy",
   number: "74",
   title: "Menopausal Hormone Therapy",
-  source: "NaS reconciliation of the Spring 2026 hormone therapy lecture, The Menopause Society position statements, ACOG guidance, USPSTF recommendations, 2026 FDA labeling changes, and current DailyMed labeling",
+  source: "NaS synthesis of The Menopause Society position statements, ACOG guidance, USPSTF recommendations, 2026 FDA labeling changes, and current DailyMed labeling",
   description: "Diagnose the menopausal transition, match symptoms to hormonal and nonhormonal therapies, protect the endometrium, and build an individualized monitoring plan.",
   topics: ["Menopause", "Vasomotor symptoms", "Estrogen", "Progestogens", "Endometrial protection", "Nonhormonal therapy", "Genitourinary syndrome", "Risk assessment", "Prevention limits", "Monitoring"],
   outcomes: [

@@ -6,7 +6,7 @@ const section = (slug, title, summary, concepts, application, lesson, keyPoints,
 
 export const daptomycinPharmacologyModule = {
   slug: "daptomycin-pharmacology", number: "144", title: "Daptomycin Pharmacology",
-  source: "RxPrep 2023 Chapter 22 and the Goodnotes drug-induced pulmonary disease material, reconciled with current daptomycin and CUBICIN RF prescribing information, FDA daptomycin susceptibility recognition decisions, current IDSA and ESCMID S. aureus bacteremia guidance, and primary membrane-mechanism evidence",
+  source: "RxPrep 2023 Chapter 22, reconciled with current daptomycin and CUBICIN RF prescribing information, FDA daptomycin susceptibility recognition decisions, current IDSA and ESCMID S. aureus bacteremia guidance, and primary membrane-mechanism evidence",
   description: "Connect cyclic-lipopeptide structure and calcium-dependent membrane insertion to gram-positive selection, site restrictions, dose assumptions, renal timing, exact product preparation, muscle surveillance, pulmonary immune toxicity, laboratory interference, resistance, and stewardship.",
   topics: ["Lipopeptide medicinal chemistry", "Membrane pharmacology", "Spectrum and resistance", "Site selection", "Weight-based dosing", "Renal and dialysis dosing", "Product preparation", "Myopathy monitoring", "Pulmonary and immune toxicity", "Clinical integration"],
   outcomes: [

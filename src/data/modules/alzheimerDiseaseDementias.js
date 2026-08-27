@@ -10,7 +10,7 @@ export const alzheimerDiseaseDementiasModule = {
   slug: "alzheimer-disease-related-dementias",
   number: "218",
   title: "Alzheimer Disease and Related Dementias",
-  source: "RxPrep 2023 Alzheimer Disease chapter on printed pages 881 through 885, Goodnotes cholinoceptor lecture pages 37 through 39, and the Goodnotes cholinergic medicinal chemistry lecture page 14. Reconciled with the 2024 Alzheimer Association diagnostic and staging criteria, the 2024 DETeCD-ADRD evaluation guideline, the 2025 blood-based biomarker guideline, current FDA lecanemab and donanemab labeling, and the November 2024 withdrawal of aducanumab approval.",
+  source: "RxPrep 2023 Alzheimer Disease chapter on printed pages 881 through 885, reconciled with the 2024 Alzheimer Association diagnostic and staging criteria, the 2024 DETeCD-ADRD evaluation guideline, the 2025 blood-based biomarker guideline, current FDA lecanemab and donanemab labeling, and the November 2024 withdrawal of aducanumab approval.",
   description: "Differentiate cognitive syndromes, build a modern etiologic workup, use symptomatic and anti-amyloid therapies safely, and connect longitudinal treatment to function, autonomy, and care-partner capacity.",
   topics: ["Cognitive syndromes", "Diagnostic workup", "Biology", "Biomarkers", "Cholinergic therapy", "Memantine", "Anti-amyloid therapy", "ARIA", "Behavior", "Safety", "Care partners", "Longitudinal care"],
   outcomes: [

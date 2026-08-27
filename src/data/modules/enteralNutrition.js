@@ -4,7 +4,7 @@ export const enteralNutritionModule = {
   slug: "enteral-nutrition",
   number: "05",
   title: "Enteral Nutrition",
-  source: "DAST II · Nutrition",
+  source: "NaS synthesis of current enteral nutrition guidance",
   description: "Translate gastrointestinal function, access, formula composition, medication handling, and monitoring into a safe enteral nutrition plan.",
   topics: ["Indications and timing", "Access and delivery", "Formula selection", "Medication safety", "Monitoring and complications"],
   outcomes: [

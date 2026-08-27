@@ -4,7 +4,7 @@ export const calciumPhosphorusHomeostasisModule = {
   slug: "calcium-phosphorus-homeostasis",
   number: "04",
   title: "Calcium and Phosphorus Homeostasis",
-  source: "DAST II · Nutrition",
+  source: "NaS synthesis of current mineral homeostasis guidance",
   description: "Connect mineral physiology, laboratory interpretation, symptoms, and organ function to safe treatment of calcium and phosphorus disorders.",
   topics: ["Mineral regulation", "Calcium disorders", "Phosphate disorders", "CKD mineral and bone disorder"],
   outcomes: [

@@ -10,7 +10,7 @@ export const chronicIdiopathicConstipationModule = {
   slug: "chronic-idiopathic-constipation",
   number: "85",
   title: "Chronic Idiopathic Constipation",
-  source: "NaS synthesis of RxPrep 2023 pages 911-916, restored Goodnotes source searches, current AGA and ACG guidance, and current prescribing information",
+  source: "NaS synthesis of RxPrep 2023 pages 911 through 916, current AGA and ACG guidance, and current prescribing information",
   description: "Distinguish chronic idiopathic constipation from secondary and evacuation disorders, then build an outcome-based treatment sequence from fiber and laxatives through prescription therapy and motility testing.",
   topics: ["Constipation phenotype", "Secondary causes", "Alarm features", "Pelvic floor function", "Fiber and behavior", "Osmotic laxatives", "Stimulant laxatives", "Secretagogues", "Prucalopride", "Refractory care"],
   outcomes: [

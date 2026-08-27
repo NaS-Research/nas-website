@@ -10,7 +10,7 @@ export const contraceptivePharmacotherapyModule = {
   slug: "contraceptive-pharmacotherapy",
   number: "72",
   title: "Contraceptive Pharmacotherapy",
-  source: "DAST IV gynecologic agents medicinal chemistry and reproductive review lectures, RxPrep foundations, CDC U.S. MEC 2024, CDC U.S. SPR 2024, ACOG guidance, FDA labeling, and DailyMed",
+  source: "RxPrep foundations, CDC U.S. MEC 2024, CDC U.S. SPR 2024, ACOG guidance, FDA labeling, and DailyMed",
   description: "Select, initiate, counsel, and monitor contraceptive methods through reproductive goals, medical eligibility, real-world use, emergency options, and drug interactions.",
   topics: ["Method selection", "Combined methods", "Estrogen eligibility", "Progestin methods", "IUDs", "Implant", "Emergency contraception", "Quick start", "Missed methods", "Interactions"],
   outcomes: [

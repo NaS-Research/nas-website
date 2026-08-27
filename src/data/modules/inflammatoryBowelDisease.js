@@ -10,7 +10,7 @@ export const inflammatoryBowelDiseaseModule = {
   slug: "inflammatory-bowel-disease",
   number: "87",
   title: "Inflammatory Bowel Disease",
-  source: "NaS synthesis of the Goodnotes RxPrep 2023 inflammatory bowel disease chapter with current ACG, AGA, FDA, and DailyMed guidance",
+  source: "NaS synthesis of the RxPrep 2023 inflammatory bowel disease chapter with current ACG, AGA, FDA, and DailyMed guidance",
   description: "Distinguish ulcerative colitis from Crohn disease, measure inflammatory burden, select induction and maintenance therapy, manage advanced medicines safely, and recognize the complications that require hospitalization, drainage, endoscopy, or surgery.",
   topics: ["Ulcerative colitis", "Crohn disease", "Diagnosis", "Treat-to-target care", "Mesalamine", "Corticosteroids", "Advanced therapy", "Immunomodulators", "Acute severe colitis", "Structural complications"],
   outcomes: [

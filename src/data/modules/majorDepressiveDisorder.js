@@ -4,7 +4,7 @@ const s=(slug,title,summary,concepts,application,lesson,keyPoints,check)=>({slug
 
 export const majorDepressiveDisorderModule={
   slug:"major-depressive-disorder",number:"211",title:"Major Depressive Disorder",
-  source:"RxPrep 2023 depression chapter on printed pages 834 to 844, reconciled with the 2022 VA/DoD MDD guideline and current FDA labeling for SPRAVATO, ZURZUVAE, VRAYLAR, and CAPLYTA. Goodnotes lecture reconciliation remains pending until the desktop library is unlocked.",
+  source:"RxPrep 2023 depression chapter on printed pages 834 to 844, reconciled with the 2022 VA/DoD MDD guideline and current FDA labeling for SPRAVATO, ZURZUVAE, VRAYLAR, and CAPLYTA.",
   description:"Diagnose major depressive disorder, protect safety, select and monitor individualized treatment, recognize toxicity, and build a measured pathway from acute response to durable recovery.",
   topics:["Diagnosis","Differential","Suicide safety","Measurement-based care","Psychotherapy","SSRIs","SNRIs","Other antidepressants","TCAs and MAOIs","Perinatal care","Treatment resistance","Neuromodulation"],
   outcomes:["Apply DSM-5-TR episode criteria and exclusions.","Screen for bipolarity and secondary causes.","Build an urgent suicide-safety pathway.","Use measurement-based follow-up.","Match psychotherapy and medication to patient goals.","Compare antidepressant pharmacology and selection.","Prevent interaction and discontinuation harm.","Plan perinatal and postpartum care without obsolete pregnancy letters.","Confirm an adequate trial before declaring resistance.","Choose switching, augmentation, esketamine, TMS, or ECT appropriately.","Monitor treatment-specific safety.","Design continuation, maintenance, and relapse-prevention care."],
@@ -89,6 +89,6 @@ export const majorDepressiveDisorderModule={
     {label:"FDA VRAYLAR Prescribing Information",href:"https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/204370s009lbl.pdf"},
     {label:"FDA CAPLYTA Prescribing Information, 2025",href:"https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/209500s016lbl.pdf"},
   ],
-  disclaimer:"This module supports advanced education about major depressive disorder. RxPrep 2023 cites older APA 2010 and VA/DoD 2016 guidance, so treatment framing is reconciled with the 2022 VA/DoD guideline and current FDA labeling. Goodnotes lecture reconciliation is pending because the desktop library remained locked during this milestone. Anyone in immediate danger or considering self-harm should contact emergency services or the 988 Suicide and Crisis Lifeline in the United States. This is not patient-specific medical advice.",
+  disclaimer:"This module supports advanced education about major depressive disorder. RxPrep 2023 cites older APA 2010 and VA/DoD 2016 guidance, so treatment framing is reconciled with the 2022 VA/DoD guideline and current FDA labeling. Anyone in immediate danger or considering self-harm should contact emergency services or the 988 Suicide and Crisis Lifeline in the United States. This is not patient-specific medical advice.",
   questionBank:majorDepressiveDisorderQuestionBank,
 };

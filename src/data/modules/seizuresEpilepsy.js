@@ -10,7 +10,7 @@ export const seizuresEpilepsyModule = {
   slug: "seizures-epilepsy",
   number: "219",
   title: "Seizures and Epilepsy",
-  source: "RxPrep 2023 Seizures and Epilepsy chapter on printed pages 886 through 900, supported by Goodnotes material on antiseizure drug levels and reproductive counseling. Reconciled with the 2025 ILAE seizure classification, current AES guidance for convulsive status epilepticus, the 2024 AAN, AES, and SMFM pregnancy guideline, current FDA rescue-product labeling, and FDA lamotrigine cardiac safety communication.",
+  source: "RxPrep 2023 Seizures and Epilepsy chapter on printed pages 886 through 900, reconciled with the 2025 ILAE seizure classification, current AES guidance for convulsive status epilepticus, the 2024 AAN, AES, and SMFM pregnancy guideline, current FDA rescue-product labeling, and FDA lamotrigine cardiac safety communication.",
   description: "Classify seizures with current language, connect neural targets to treatment, individualize chronic therapy, interpret concentrations, plan reproductive care, and act decisively during seizure emergencies.",
   topics: ["Seizure classification", "Diagnosis", "Network pharmacology", "Medication selection", "Broad-spectrum therapy", "Focused agents", "Phenytoin", "Interactions", "Pregnancy", "Status epilepticus", "Rescue care", "Longitudinal care"],
   outcomes: [

@@ -16,7 +16,7 @@ export const gastroesophagealRefluxDiseaseModule = {
   slug: "gastroesophageal-reflux-disease",
   number: "82",
   title: "Gastroesophageal Reflux Disease",
-  source: "RxPrep 2023 Gastroesophageal Reflux Disease chapter on printed pages 902 through 907. Focused Goodnotes searches found RxPrep as the only dedicated GERD source, while matches in pulmonary, cardiovascular, and renal material were incidental. Reconciled with the current ACG GERD guideline, AGA personalized GERD and extraesophageal reflux updates, AGA PPI deprescribing guidance, and current FDA labeling.",
+  source: "RxPrep 2023 Gastroesophageal Reflux Disease chapter on printed pages 902 through 907, reconciled with the current ACG GERD guideline, AGA personalized GERD and extraesophageal reflux updates, AGA PPI deprescribing guidance, and current FDA labeling.",
   description: "Move from antireflux-barrier physiology and symptom triage to intentional testing, acid-suppression pharmacology, treatment optimization, maintenance, and safe deprescribing.",
   topics: ["Antireflux barrier", "Alarm features", "Diagnostic testing", "Lifestyle care", "Antacids and alginate", "H2-receptor antagonists", "Proton pump inhibitors", "Persistent symptoms", "Maintenance", "Safety and interactions"],
   outcomes: [

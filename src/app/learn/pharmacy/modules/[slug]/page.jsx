@@ -665,7 +665,7 @@ export default async function PharmacyModulePage({ params }) {
           {module.references && <section className="pharmacy-module-references" aria-labelledby="module-references-title">
             <p className="nas-section-label">References</p>
             <h2 id="module-references-title">Current clinical foundation.</h2>
-            <p>Lecture material was synthesized with the following contemporary guidance. Verify local policy and current guidance before applying clinical information.</p>
+            <p>Core source material was synthesized with the following contemporary guidance. Verify local policy and current guidance before applying clinical information.</p>
             <ol>{module.references.map((reference) => <li key={reference.href}><a href={reference.href} target="_blank" rel="noreferrer">{reference.label}<span aria-hidden="true">↗</span></a></li>)}</ol>
           </section>}
 
