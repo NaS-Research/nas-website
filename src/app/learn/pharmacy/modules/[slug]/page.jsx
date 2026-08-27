@@ -146,6 +146,7 @@ import SulfonamideTrimethoprimPharmacologyVisual, { sulfonamideTrimethoprimPharm
 import VancomycinPharmacologyVisual, { vancomycinPharmacologyVisualTypes } from "@/components/learn/VancomycinPharmacologyVisual";
 import DaptomycinPharmacologyVisual, { daptomycinPharmacologyVisualTypes } from "@/components/learn/DaptomycinPharmacologyVisual";
 import LinezolidTedizolidPharmacologyVisual, { linezolidTedizolidPharmacologyVisualTypes } from "@/components/learn/LinezolidTedizolidPharmacologyVisual";
+import TigecyclinePharmacologyVisual, { tigecyclinePharmacologyVisualTypes } from "@/components/learn/TigecyclinePharmacologyVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -258,6 +259,7 @@ const scopedAntibioticVisualModules = new Set([
   "vancomycin-pharmacology",
   "daptomycin-pharmacology",
   "linezolid-tedizolid-pharmacology",
+  "tigecycline-pharmacology",
 ]);
 
 export function generateStaticParams() {
@@ -471,6 +473,7 @@ export default async function PharmacyModulePage({ params }) {
               {module.slug === "vancomycin-pharmacology" && vancomycinPharmacologyVisualTypes.includes(submodule.visual) && <VancomycinPharmacologyVisual type={submodule.visual} />}
               {module.slug === "daptomycin-pharmacology" && daptomycinPharmacologyVisualTypes.includes(submodule.visual) && <DaptomycinPharmacologyVisual type={submodule.visual} />}
               {module.slug === "linezolid-tedizolid-pharmacology" && linezolidTedizolidPharmacologyVisualTypes.includes(submodule.visual) && <LinezolidTedizolidPharmacologyVisual type={submodule.visual} />}
+              {module.slug === "tigecycline-pharmacology" && tigecyclinePharmacologyVisualTypes.includes(submodule.visual) && <TigecyclinePharmacologyVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>

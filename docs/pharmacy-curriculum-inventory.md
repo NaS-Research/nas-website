@@ -2137,6 +2137,24 @@ Current source reconciliations:
 - Reagent-dependent false PT or INR elevation is verified near the daptomycin trough or with an alternative method while true anticoagulation causes are still evaluated.
 - Retired pregnancy letters are excluded. Pregnancy and lactation decisions use current narrative evidence, infection severity, patient factors, and alternatives.
 
+### Tigecycline Pharmacology
+
+The Tigecycline Pharmacology module connects the glycylcycline scaffold, the 30S ribosomal A site, aminoacyl-tRNA exclusion, protein-synthesis inhibition, reduced vulnerability to common tetracycline efflux and ribosomal protection, multidrug efflux resistance, gram-positive, gram-negative, anaerobic, and atypical activity, Pseudomonas and Proteeae gaps, adult cSSSI, cIAI, and community-acquired bacterial pneumonia indications, diabetic foot, HAP, and VAP exclusions, the boxed all-cause mortality warning, the VAP cure and mortality signal, low serum exposure, large tissue distribution, adult loading and maintenance dosing, syndrome-specific duration, biliary elimination, severe hepatic-impairment adjustment, exact vial preparation, final dilution, color inspection, gastrointestinal intolerance, acute pancreatitis, hepatic dysfunction, C. difficile-associated diarrhea, hypofibrinogenemia, warfarin monitoring, calcineurin-inhibitor concentration monitoring, developmental risk, pediatric reserve use, lactation, source control, response, and explicit exit criteria. It contains ten focused lessons, ten original responsive diagrams, ten embedded checks, and a 140-question assessment bank across 33 concepts and four reasoning levels plus eight original dosing, hepatic, pneumonia, coagulation, preparation, pancreatic, interaction, and pediatric cases. The source synthesis uses RxPrep 2023 Chapter 22, November 2025 TYGACIL prescribing information, and current FDA susceptibility-recognition resources. The 474-page production build, desktop layout, 390 pixel phone layout, overflow-free responsive diagrams, randomized ten-question sampling and answer order, scoring, remediation links, a subsequent attempt with zero repeated questions, and zero browser errors were verified on August 26, 2026.
+
+Current source reconciliations:
+
+- The current label requires baseline blood coagulation parameters including fibrinogen and regular monitoring throughout treatment. Monitoring INR alone is incomplete.
+- Current labeling adds measured tacrolimus or cyclosporine trough monitoring because calcineurin-inhibitor concentrations can rise during tigecycline therapy.
+- The boxed warning is treated as an agent-selection requirement. Tigecycline is reserved for situations in which suitable alternatives are unavailable or inappropriate.
+- Tigecycline is not indicated for diabetic foot infection or hospital-acquired pneumonia including ventilator-associated pneumonia. Community-acquired pneumonia evidence is not transferred to those syndromes.
+- The VAP subgroup had lower cure and higher mortality with standard-dose tigecycline, and the mortality signal was especially concerning when baseline bacteremia was present.
+- The large distribution volume is used to explain high tissue movement and relatively low serum exposure. It is not presented as proof of adequate treatment for primary bloodstream or endovascular infection.
+- The adult regimen is 100 mg IV once followed by 50 mg every 12 hours. Severe Child Pugh C hepatic impairment preserves the load and reduces maintenance to 25 mg every 12 hours.
+- Each 50 mg vial is reconstituted with 5.3 mL of an approved diluent to 10 mg/mL. Five milliliters supplies 50 mg, and the dose is further diluted before a 30 to 60 minute infusion.
+- Routine use below age 18 is not recommended. Suggested pediatric doses are discussed only for circumstances in which no suitable alternative is available.
+- Retired pregnancy letters are excluded. Pregnancy, lactation, dental, bone, and pediatric decisions use current narrative risk, developmental timing, infection severity, and alternatives.
+- Goodnotes could not be rechecked for a dedicated tigecycline lecture because macOS remained locked during this milestone. Any matching Goodnotes content will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
