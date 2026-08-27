@@ -2300,6 +2300,18 @@ Current source reconciliations:
 - It contains ten original responsive diagrams, ten embedded checks, and a validated 168-question assessment bank.
 - Goodnotes remains unavailable because macOS reports a locked session. Any matching otitis lecture will receive a documented reconciliation pass after manual unlock.
 
+### Streptococcal Pharyngitis
+
+- Built from the streptococcal pharyngitis section of RxPrep 2023 Chapter 23 and reconciled with the November 2025 CDC group A streptococcal pharyngitis guidance, the October 2025 IDSA diagnostic guideline update, current CDC acute rheumatic fever guidance, and current amoxicillin labeling.
+- The module remains distinct from Cough and the Common Cold. It focuses on group A strep biology, viral and bacterial differentiation, clinical scoring, microbiologic confirmation, specimen quality, supportive care, focused therapy, allergy phenotype, calculations, transmission, complications, recurrence, and carriage.
+- Current IDSA guidance replaces score-driven empiric treatment with a scoring system used to decide who should be tested. High-risk household exposure, prior rheumatic fever, scarlet fever, abscess, and systemic disease remain reasons to test even when a score appears low.
+- Current CDC guidance requires culture confirmation after a negative RADT in symptomatic children age 3 or older, while routine backup culture is not indicated in adults. The module assigns ownership to every pending result and callback plan.
+- Penicillin V, amoxicillin, and benzathine penicillin G remain focused first-line options. Exact weight-based doses, maximums, oral liquid calculations, 10-day oral courses, the one-dose intramuscular pathway, and the changing 5-day azithromycin schedule are explicit.
+- Allergy teaching separates intolerance, nonimmediate reactions, immediate hypersensitivity, and severe delayed injury. Cephalexin and cefadroxil are excluded from immediate hypersensitivity, while macrolide and clindamycin use requires current local resistance and toxicity review.
+- Scarlet fever, peritonsillar and retropharyngeal abscess, acute rheumatic fever, post-streptococcal glomerulonephritis, return-to-school timing, expected response, test-of-cure limits, household contacts, and asymptomatic carriage are integrated into one follow-up system.
+- It contains eleven focused lessons, eleven responsive diagrams, eleven embedded checks, and a validated 184-question assessment bank.
+- Goodnotes remains unavailable because macOS reports a locked session. Any matching pharyngitis lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:

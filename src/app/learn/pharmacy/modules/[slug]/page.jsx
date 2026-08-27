@@ -159,6 +159,7 @@ import MupirocinDecolonizationVisual, { mupirocinDecolonizationVisualTypes } fro
 import PerioperativeAntimicrobialProphylaxisVisual, { perioperativeAntimicrobialProphylaxisVisualTypes } from "@/components/learn/PerioperativeAntimicrobialProphylaxisVisual";
 import AcuteBacterialMeningitisVisual, { acuteBacterialMeningitisVisualTypes } from "@/components/learn/AcuteBacterialMeningitisVisual";
 import AcuteOtitisMediaVisual, { acuteOtitisMediaVisualTypes } from "@/components/learn/AcuteOtitisMediaVisual";
+import StreptococcalPharyngitisVisual, { streptococcalPharyngitisVisualTypes } from "@/components/learn/StreptococcalPharyngitisVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -499,6 +500,7 @@ export default async function PharmacyModulePage({ params }) {
               {module.slug === "perioperative-antimicrobial-prophylaxis" && perioperativeAntimicrobialProphylaxisVisualTypes.includes(submodule.visual) && <PerioperativeAntimicrobialProphylaxisVisual type={submodule.visual} />}
               {module.slug === "acute-bacterial-meningitis" && acuteBacterialMeningitisVisualTypes.includes(submodule.visual) && <AcuteBacterialMeningitisVisual type={submodule.visual} />}
               {module.slug === "acute-otitis-media" && acuteOtitisMediaVisualTypes.includes(submodule.visual) && <AcuteOtitisMediaVisual type={submodule.visual} />}
+              {module.slug === "streptococcal-pharyngitis" && streptococcalPharyngitisVisualTypes.includes(submodule.visual) && <StreptococcalPharyngitisVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
