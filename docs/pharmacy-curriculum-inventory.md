@@ -2604,6 +2604,24 @@ Current source reconciliations:
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 178-question assessment bank.
 - Goodnotes remains unavailable because macOS reports a locked session. Any matching tularemia lecture will receive a documented reconciliation pass after manual unlock.
 
+### Systemic Antifungal Foundations
+
+- Built from the systemic antifungal foundation in RxPrep 2023 Chapter 24 and reconciled with current CDC fungal disease and Candida auris resources, FDA 2026 antifungal susceptibility criteria, and IDSA candidiasis and aspergillosis guidance.
+- Fungal cell architecture connects ergosterol, beta glucan, yeast, mold, dimorphism, tissue form, and eukaryotic host overlap to selective targets and toxicity.
+- Host reasoning separates colonization, mucosal disease, invasive infection, and contamination. Neutropenia, T-cell defects, transplant, corticosteroids, mucosal injury, critical illness, devices, surgery, obstruction, and necrosis are tied to different pathogen and compartment risks.
+- Candidozyma auris colonization is separated from clinical infection. Screening drives infection control, only clinical infection receives treatment, accurate identification matters, and state or local public health reporting remains visible.
+- Diagnostic strategy integrates specimen quality, blood culture limits, tissue handling, histopathology, culture, molecular assays, beta-D-glucan, galactomannan, imaging, bronchoscopy, and host-specific test performance.
+- Polyenes, azoles, echinocandins, flucytosine, terbinafine, griseofulvin, and nystatin are mapped to fungal targets without treating individual agents or formulations as interchangeable.
+- Susceptibility interpretation uses organism, method, MIC, current breakpoint, dose, and site. FDA recognition of 2026 CLSI yeast and filamentous-fungi standards is explicit, as are drugs without recognized criteria.
+- Formal CLSI C auris breakpoints remain unavailable, so CDC tentative criteria are labeled as expert and related-species based rather than presented as a formal species standard.
+- ERG pathway changes, efflux, FKS mutations, biofilm, transmitted strains, C auris, resistant Candida parapsilosis, resistant Aspergillus, and environmental azole pressure connect mechanism to surveillance and stewardship.
+- Loading, PK and PD, tissue penetration, formulation, food, gastric pH, route, renal and hepatic function, selected IV vehicles, and TDM are built into one exposure system.
+- Bidirectional CYP and transporter interactions include initiation and discontinuation effects. QT prolongation is separated from isavuconazole-associated QT shortening and familial short QT risk.
+- Toxicity surveillance uses agent-specific kidney, electrolyte, liver, marrow, skin, vision, neurologic, cardiac, infusion, and concentration plans rather than one generic laboratory panel.
+- Empiric, preemptive, source-control, de-escalation, step-down, failure-audit, and educational boundaries close the module before later drug-class and fungal-syndrome modules.
+- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 176-question assessment bank.
+- Goodnotes remains unavailable because macOS reports a locked session. Any matching systemic antifungal lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
