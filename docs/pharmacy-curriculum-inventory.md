@@ -2208,6 +2208,18 @@ Current source reconciliations:
 - Retired pregnancy letters are excluded. CDC considers metronidazole low risk when pregnancy treatment is indicated, advises avoiding tinidazole in pregnancy, and current labels provide agent-specific breastfeeding interruption intervals.
 - Goodnotes was not required to advance this RxPrep-defined milestone. Any later matching lecture material will receive a documented reconciliation pass.
 
+### Lefamulin Pharmacology
+
+- Built from the lefamulin section of RxPrep 2023 Chapter 22, then reconciled with the February 2026 XENLETA label, current FDA susceptibility resources, and the IDSA adult community-acquired pneumonia clinical pathway.
+- The module teaches pleuromutilin medicinal chemistry, induced-fit binding at A and P sites of the 50S peptidyl transferase center, tRNA displacement, organism-specific static or cidal effects, and target-protection or target-modification resistance.
+- The labeled adult CABP organisms are separated from major gaps. Lefamulin does not cover Enterobacterales or Pseudomonas, and in vitro MRSA activity is not presented as proven MRSA pneumonia efficacy.
+- IDSA pathway positioning is preserved. Lefamulin is presented as an option for selected nonsevere adult CAP when standard beta-lactam, macrolide, or fluoroquinolone approaches are unsuitable, not as default or severe CAP monotherapy.
+- Oral 600 mg every 12 hours for five days, IV 150 mg every 12 hours over 60 minutes for five to seven days, IV to oral transition, renal principles, and route-specific hepatic restrictions are taught separately.
+- Tablet fasting, whole-tablet water, and missed-dose requirements are translated into an executable daily schedule. Intravenous dilution, supplied buffered diluent, compatibility limits, pump calculations, and temperature-specific storage receive their own preparation lesson.
+- QT risk integrates baseline ECG, arrhythmia history, electrolytes, organ failure, other QT drugs, concentration, infusion rate, and monitoring. Oral and IV CYP3A effects are kept distinct.
+- Current pregnancy testing, two-day contraception, two-day lactation interruption, route-specific common effects, liver testing, and C. difficile response replace retired letter categories and passive warning lists.
+- Goodnotes was not required to advance this RxPrep-defined milestone. Any later matching lecture material will receive a documented reconciliation pass.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
