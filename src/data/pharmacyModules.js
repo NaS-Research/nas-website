@@ -178,6 +178,7 @@ import { tularemiaModule } from "@/data/modules/tularemia";
 import { systemicAntifungalFoundationsModule } from "@/data/modules/systemicAntifungalFoundations";
 import { amphotericinFlucytosinePharmacologyModule } from "@/data/modules/amphotericinFlucytosinePharmacology";
 import { triazoleAntifungalPharmacologyModule } from "@/data/modules/triazoleAntifungalPharmacology";
+import { echinocandinPharmacologyModule } from "@/data/modules/echinocandinPharmacology";
 
 const sources = {
   foundation: "Foundation",
@@ -591,5 +592,6 @@ pharmacyModules.push(tularemiaModule);
 pharmacyModules.push(systemicAntifungalFoundationsModule);
 pharmacyModules.push(amphotericinFlucytosinePharmacologyModule);
 pharmacyModules.push(triazoleAntifungalPharmacologyModule);
+pharmacyModules.push(echinocandinPharmacologyModule);
 
 export const pharmacySubmoduleCount = pharmacyModules.reduce((total, module) => total + module.submodules.length, 0);

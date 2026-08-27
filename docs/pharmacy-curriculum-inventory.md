@@ -2657,6 +2657,21 @@ Current source reconciliations:
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 176-question assessment bank.
 - Goodnotes source reconciliation remains pending until the local macOS session is unlocked and the library is readable through the application.
 
+### Echinocandin Pharmacology
+
+- Built from the focused echinocandin material in RxPrep 2023 Chapter 24 and reconciled with current caspofungin, micafungin, anidulafungin, and rezafungin labeling, IDSA candidiasis and aspergillosis guidance, and current CDC Candida auris guidance.
+- Cyclic lipopeptide structure, membrane association, Fks glucan synthase, beta-1,3-D-glucan depletion, wall failure, Candida killing, and partial Aspergillus hyphal activity are connected from medicinal chemistry to clinical role.
+- Invasive candidiasis selection separates species, compartment, host, source, colonization, clinical Candida auris infection, and the intrinsically higher Candida parapsilosis MIC pattern.
+- Caspofungin loading, maintenance, moderate hepatic adjustment, specified inducer response, pediatric body-surface-area dosing, dextrose incompatibility, and approximately one-hour infusion are kept product specific.
+- Micafungin invasive, esophageal, and HSCT prophylaxis doses are separated. Pediatric age and weight, neonatal CNS evidence limits, hepatic, renal, hematologic, infusion, and sirolimus, itraconazole, or nifedipine interaction monitoring remain visible.
+- Anidulafungin loading, maintenance, slow chemical ring opening, limited CYP involvement, no labeled renal or hepatic adjustment, and the 1.1 mg-per-minute maximum infusion rate are joined into one calculation and safety pathway.
+- Current 2026 rezafungin eligibility for patients age 12 years or older with limited or no alternatives is explicit. The 400 mg load, 200 mg weekly maintenance, late-dose calendar, four-dose safety boundary, photosensitivity, infusion, and hepatic warnings are incorporated.
+- Product identity, diluent, concentration, co-infusion, line, storage, pump, and reaction phenotype are verified independently rather than generalized across the intravenous class.
+- FKS1 and FKS2 target resistance, prior exposure, species-specific susceptibility, Candida glabrata failure, Candida auris infection control and reporting, and breakthrough audits connect microbiology to bedside response.
+- Repeat cultures, source control, metastatic-site evaluation, duration after documented clearance, and susceptibility-supported oral step-down close the treatment sequence.
+- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 176-question assessment bank.
+- Goodnotes source reconciliation remains pending until the local macOS session is unlocked and the library is readable through the application.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
