@@ -332,8 +332,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: six lessons, six native goal, primary-prevention, secondary-prevention, triglyceride, familial-disease, and implementation diagrams, and six embedded knowledge checks
 - Assessment: 100 original questions spanning baseline phenotype, absolute goals, percentage response, monitoring, PREVENT categories, CAC, secondary-prevention classification, LDL-C and non-HDL-C goals, nonstatin sequencing, therapeutic inertia, secondary triglyceride causes, 500 and 1000 mg/dL pathways, FCS, HeFH, HoFH, Lp(a), diabetes, CKD, HIV, statin-attributed muscle symptoms, adherence, and access; ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: 2026 LDL-C and non-HDL-C goals were layered onto percentage response; borderline, intermediate, and high PREVENT categories were kept distinct; CAC was not used to de-risk FH or established disease; very-high-risk secondary prevention used below 55 and below 85 mg/dL goals; severe triglyceride care separated ASCVD from pancreatitis objectives; fenofibrate was preferred to gemfibrozil with statins; HoFH escalation accounted for residual receptor function; access was treated as part of exposure
-- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 25, 2026 with 355 static pages generated
+- Automated verification: 100 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 12 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
 - Goodnotes note: the dedicated dyslipidemia lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
 ### Chronic Coronary Disease
