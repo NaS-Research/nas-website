@@ -41,11 +41,12 @@ This inventory records the source material available in the founder's Goodnotes 
 - DAST source: Acid Base Disorders, 51 pages, exported and visually verified
 - Cross reference: RxPrep NAPLEX 2023 acid-base scope and DiPiro topic structure identified in the lecture bibliography
 - Current references: French expert panel guideline on metabolic acidosis, BICARICU-2 randomized clinical trial, 2024 adult hyperglycemic crises consensus, and British Thoracic Society oxygen guideline
-- Learning structure: six lessons, five native reasoning diagrams, and six embedded knowledge checks
-- Assessment: 100 original questions, ten sampled without replacement per attempt, answer order randomized
+- Learning structure: six lessons, six native reasoning diagrams, and six embedded knowledge checks
+- Assessment: 101 original questions, ten sampled without replacement per attempt, answer order randomized
+- Automated verification: 101 unique questions, valid review links, and a minimum of eight questions mapped to every lesson
 - Source reconciliation: MUDPILES was replaced with the more complete GOLD MARK framework; bicarbonate indications were narrowed using current evidence; paper-bag rebreathing was removed as unsafe; albumin correction, expected compensation, mixed disorders, and peri-intubation risk were added
 - Browser verification: desktop and 390 pixel mobile viewport, no horizontal overflow, ten remediation links after submission, different question set on repeat attempt, and no console warnings or errors
-- Build verification: Next.js production build passed August 25, 2026
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
 
 ### Calcium and Phosphorus Homeostasis
 
@@ -909,7 +910,7 @@ Target modules:
 
 1. Nutrition Screening, Assessment, and Malnutrition (`built`, 103 question bank)
 2. Fluid and Electrolyte Therapy (`built`, 100 question bank)
-3. Acid-Base Interpretation (`built`, 100 question bank)
+3. Acid-Base Interpretation (`built`, 101 question bank)
 4. Calcium and Phosphorus Homeostasis (`built`, 100 question bank)
 5. Enteral Nutrition (`built`, 100 question bank)
 6. Parenteral Nutrition (`built`, 100 question bank)

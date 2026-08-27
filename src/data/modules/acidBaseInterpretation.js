@@ -94,6 +94,7 @@ export const acidBaseInterpretationModule = {
     {
       slug: "respiratory-integrated",
       title: "Respiratory Disorders and Integrated Cases",
+      visual: "acid-integrated",
       summary: "Respiratory acid-base disorders are ventilation disorders. Treatment protects gas exchange and reverses the trigger while the complete pattern is reassessed.",
       concepts: ["Acute and chronic hypoventilation", "Hyperventilation and hypoxemia", "Ventilatory failure", "Medication and toxicologic causes"],
       application: "A patient who is tiring during compensation can deteriorate rapidly. Treat airway, breathing, oxygenation, and the cause before attempting to normalize a number pharmacologically.",

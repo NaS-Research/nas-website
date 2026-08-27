@@ -34,6 +34,12 @@ const cards = {
       {["Stabilize immediate threats", "Reverse the cause", "Restore ventilation or perfusion", "Replace what was lost", "Use alkali only for a defined indication", "Measure the response and complications"].map((text, index) => <div key={text}><span>{String(index + 1).padStart(2, "0")}</span><strong>{text}</strong></div>)}
     </div>,
   },
+  "acid-integrated": {
+    title: "Protect ventilation while treating the cause",
+    content: <div className="acid-visual__sequence">{[
+      ["01", "Identify the ventilatory problem"], ["02", "Stabilize oxygenation and airway"], ["03", "Compare measured and expected compensation"], ["04", "Reverse the driver"], ["05", "Preserve compensatory minute ventilation"], ["06", "Recheck the complete physiology"],
+    ].map(([n, text]) => <div key={n}><span>{n}</span><strong>{text}</strong></div>)}</div>,
+  },
 };
 
 export default function AcidBaseVisual({ type }) {
