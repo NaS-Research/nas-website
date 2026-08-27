@@ -157,6 +157,7 @@ import FosfomycinPharmacologyVisual, { fosfomycinPharmacologyVisualTypes } from 
 import NitrofurantoinPharmacologyVisual, { nitrofurantoinPharmacologyVisualTypes } from "@/components/learn/NitrofurantoinPharmacologyVisual";
 import MupirocinDecolonizationVisual, { mupirocinDecolonizationVisualTypes } from "@/components/learn/MupirocinDecolonizationVisual";
 import PerioperativeAntimicrobialProphylaxisVisual, { perioperativeAntimicrobialProphylaxisVisualTypes } from "@/components/learn/PerioperativeAntimicrobialProphylaxisVisual";
+import AcuteBacterialMeningitisVisual, { acuteBacterialMeningitisVisualTypes } from "@/components/learn/AcuteBacterialMeningitisVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -495,6 +496,7 @@ export default async function PharmacyModulePage({ params }) {
               {module.slug === "nitrofurantoin-pharmacology" && nitrofurantoinPharmacologyVisualTypes.includes(submodule.visual) && <NitrofurantoinPharmacologyVisual type={submodule.visual} />}
               {module.slug === "mupirocin-decolonization" && mupirocinDecolonizationVisualTypes.includes(submodule.visual) && <MupirocinDecolonizationVisual type={submodule.visual} />}
               {module.slug === "perioperative-antimicrobial-prophylaxis" && perioperativeAntimicrobialProphylaxisVisualTypes.includes(submodule.visual) && <PerioperativeAntimicrobialProphylaxisVisual type={submodule.visual} />}
+              {module.slug === "acute-bacterial-meningitis" && acuteBacterialMeningitisVisualTypes.includes(submodule.visual) && <AcuteBacterialMeningitisVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>

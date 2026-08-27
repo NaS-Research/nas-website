@@ -2282,6 +2282,15 @@ Current source reconciliations:
 - It contains ten original responsive diagrams, ten embedded checks, and a validated assessment bank exceeding 100 original questions.
 - Goodnotes was retried before development, but macOS still reported a locked session. Any matching perioperative lecture will receive a documented reconciliation pass after manual unlock.
 
+### Acute Bacterial Meningitis
+
+- Built from the acute bacterial meningitis section of RxPrep 2023 Chapter 23 and reconciled with the 2025 WHO meningitis guideline, 2024 NICE NG240, current CDC meningococcal guidance, and current ceftriaxone labeling.
+- The module treats bacterial meningitis as a neurologic and systemic emergency, preserves blood and cerebrospinal fluid diagnostic yield without delaying antibiotics, and separates community-acquired, neonatal, and healthcare-associated pathways.
+- Current WHO guidance replaces the older RxPrep age threshold with age over 60 years, pregnancy, or immunocompromise as major Listeria risk triggers. Vancomycin is placed according to pneumococcal resistance risk and institutional epidemiology rather than used without a defined role.
+- Dexamethasone timing, organism-guided continuation, meningitis dosing, neonatal ceftriaxone contraindications, meningococcal carriage eradication, close-contact prophylaxis, complication surveillance, and longitudinal hearing and neurologic care are integrated across ten lessons.
+- It contains ten original responsive diagrams, ten embedded checks, and a validated 172-question assessment bank.
+- Goodnotes remains unavailable because macOS reports a locked session. Any matching meningitis lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
