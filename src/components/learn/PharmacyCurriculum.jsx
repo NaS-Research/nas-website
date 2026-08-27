@@ -15,13 +15,14 @@ export default function PharmacyCurriculum({ areas, collections, lessons }) {
 
   const visibleCollections = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
+    const shouldAlphabetize = Boolean(normalizedQuery) || area !== "All";
     return collections
       .filter((collection) => {
         const matchesArea = area === "All" || collection.area === area;
         const searchable = [collection.area, collection.title, collection.description, ...(collection.topics || [])].join(" ").toLowerCase();
         return matchesArea && (!normalizedQuery || searchable.includes(normalizedQuery));
       })
-      .sort((left, right) => normalizedQuery
+      .sort((left, right) => shouldAlphabetize
         ? left.title.localeCompare(right.title, undefined, { sensitivity: "base" })
         : Number(right.number) - Number(left.number));
   }, [area, collections, query]);

@@ -747,7 +747,12 @@ const curriculumAreaGroups = [
   },
 ];
 
-export const pharmacyCurriculumAreas = ["All", ...curriculumAreaGroups.map(({ area }) => area)];
+export const pharmacyCurriculumAreas = [
+  "All",
+  ...curriculumAreaGroups
+    .map(({ area }) => area)
+    .sort((left, right) => left.localeCompare(right, undefined, { sensitivity: "base" })),
+];
 
 const curriculumAreaByModule = new Map(
   curriculumAreaGroups.flatMap(({ area, modules }) => modules.map((module) => [module, area])),
