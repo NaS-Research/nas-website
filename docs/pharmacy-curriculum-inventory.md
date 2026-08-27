@@ -1249,7 +1249,7 @@ Target modules presently supported:
 ### Motion Sickness
 
 - RxPrep source: NAPLEX 2023 Chapter 75 motion sickness section, PDF pages 938 through 940, visually reviewed in full
-- Current references reviewed: CDC Yellow Book 2026 motion-sickness guidance, the FDA 2025 scopolamine hyperthermia safety communication, and current DailyMed labeling for transdermal scopolamine, dimenhydrinate, and meclizine
+- Current references reviewed: CDC Yellow Book 2026 motion-sickness guidance, the FDA 2025 scopolamine hyperthermia safety communication and revised prescribing information, and current DailyMed labeling for transdermal scopolamine, dimenhydrinate, and meclizine. Five authoritative references are exposed directly in the module interface.
 - Learning structure: eight focused lessons, eight native mechanism and decision diagrams, and eight embedded knowledge checks
 - Assessment: 120 original questions across 30 distinct concept groups spanning sensory conflict, central vestibular signaling, syndrome recognition, dangerous mimics, habituation, visual and postural countermeasures, evidence limits for supplements, preexposure timing, gastric stasis, mechanism-based drug selection, dimenhydrinate, meclizine, anticholinergic burden, promethazine boundaries, scopolamine application, ocular and urinary safety, hyperthermia, neuropsychiatric risk, MRI removal, post-removal symptoms, children, older adults, pregnancy and lactation, occupational impairment, acute supportive care, and persistent post-motion symptoms
 - Source reconciliation: the sensory-conflict model and habituation evidence were retained; minimally sedating antihistamines and 5-HT3 antagonists are not presented as effective vestibular prevention; prevention is timed before exposure because established symptoms can impair oral absorption; product-specific current labeling replaces class-level dosing assumptions; the 2025 FDA hyperthermia warning, MRI removal, pediatric avoidance, geriatric anticholinergic risk, and delayed post-removal symptoms were added; and obsolete pregnancy letters were excluded
@@ -1257,7 +1257,7 @@ Target modules presently supported:
 - Goodnotes note: the dedicated gastrointestinal lecture remains pending while the desktop Goodnotes session is locked; the RxPrep and current-source synthesis is complete and will receive a documented lecture reconciliation pass when access is restored
 - Automated verification: 120 unique question IDs, 30 distinct concept groups, no duplicate answer choices, valid links to all eight lessons, four difficulty levels, eight diagrams, and no em dash or en dash characters in public module prose
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, eight lessons, eight diagrams, eight embedded checks, ten distinct concepts per attempt, a different second sample with no overlap in the verified run, scoring with ten explanations and ten remediation links, and zero browser console errors
-- Build verification: Next.js production build passed August 26, 2026 with 416 static pages generated
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated after the current-reference interface update; the Goodnotes reconciliation remains pending an unlocked desktop session
 
 ### Medication Safety and Quality Improvement
 

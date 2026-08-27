@@ -80,5 +80,12 @@ export const motionSicknessModule = {
       ["Recognize persistent post-motion syndromes", "Brief rocking after disembarkation often resolves within hours. Symptoms lasting weeks, spontaneous recurrent vertigo, hearing change, neurologic findings, or functional decline warrant vestibular or neurologic referral rather than prolonged sedating therapy."],
     ], ["Stop or reduce the provoking motion.", "Hydration can become the immediate treatment.", "Do not repeatedly redose through gastric stasis.", "Persistent rocking or spontaneous vertigo requires reassessment."], { question: "Rocking and disequilibrium persist for three weeks after a cruise. What is the best next step?", choices: ["Refer for vestibular and neurologic evaluation", "Continue indefinite OTC sedation", "Assume dehydration without assessment", "Apply multiple scopolamine patches"], answer: 0, rationale: "Persistent post-motion symptoms exceed the usual transient adaptation period and can represent mal de debarquement syndrome or another disorder.", reviewHref: "#motion-recovery" }),
   ],
+  references: [
+    { label: "CDC Yellow Book 2026: Motion Sickness", href: "https://www.cdc.gov/yellow-book/hcp/travel-air-sea/motion-sickness.html" },
+    { label: "FDA 2025 scopolamine hyperthermia safety communication", href: "https://www.fda.gov/drugs/drug-safety-communications/fda-adds-warning-about-serious-risk-heat-related-complications-antinausea-patch-transderm-scop" },
+    { label: "FDA 2025 Transderm Scop prescribing information", href: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/017874s053lbl.pdf" },
+    { label: "DailyMed current scopolamine transdermal system labeling", href: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8455ce88-1270-440b-b62e-fe5fef1415ac" },
+    { label: "DailyMed current dimenhydrinate Drug Facts", href: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00a327c6-6b86-4702-8c04-55c405c1404c" },
+  ],
   questionBank: motionSicknessQuestionBank,
 };
