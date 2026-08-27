@@ -9219,6 +9219,28 @@ summary:focus-visible {
   background: rgba(0, 0, 0, 0.9);
 }
 
+.nas-navbar--open {
+  height: 100dvh;
+  min-height: 100svh;
+  overflow: visible;
+  background: #050505;
+}
+
+.nas-navbar--open .nas-navbar__inner {
+  height: 3.75rem;
+}
+
+.nas-navbar--open .nas-mobile-menu {
+  min-height: 100svh;
+  height: 100dvh;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  padding-top: max(5.75rem, calc(4.75rem + env(safe-area-inset-top)));
+  padding-right: max(1.25rem, env(safe-area-inset-right));
+  padding-bottom: max(2rem, calc(1rem + env(safe-area-inset-bottom)));
+  padding-left: max(1.25rem, env(safe-area-inset-left));
+}
+
 .nas-navbar__inner {
   max-width: var(--nas-wide);
   padding-inline: var(--nas-gutter);
