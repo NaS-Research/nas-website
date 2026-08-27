@@ -2493,6 +2493,22 @@ Current source reconciliations:
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 130-question assessment bank.
 - Goodnotes remains unavailable because macOS reports a locked session. Any matching gonorrhea lecture will receive a documented reconciliation pass after manual unlock.
 
+### Chlamydial Infections
+
+- Built from the chlamydia section of RxPrep 2023 Chapter 23 and reconciled with CDC chlamydia, LGV, proctitis, neonatal, screening, and 2024 doxycycline PEP guidance.
+- The module connects the elementary-body and reticulate-body cycle to silent mucosal infection, ascending reproductive injury, reinfection, and the need for anatomy-based screening.
+- Site-specific NAAT uses optimal vaginal, first-catch urine, rectal, and selected pharyngeal specimens. Validated patient self-collection and point-of-care testing are included as access and stewardship tools.
+- Nonpregnant adolescents and adults receive doxycycline 100 mg twice daily for 7 days as the preferred cross-site regimen. Delayed-release 200 mg once daily, azithromycin 1 g once, and levofloxacin 500 mg daily for 7 days retain explicit formulation, adherence, efficacy, and safety boundaries.
+- Rectal infection receives special emphasis because doxycycline outperforms single-dose azithromycin, concomitant rectal infection in women is not reliably predicted by reported exposure, and persistent rectal infection can contribute to urogenital autoinoculation.
+- Pregnancy uses azithromycin 1 g once, with amoxicillin 500 mg three times daily for 7 days as an alternative. NAAT test of cure at about 4 weeks, retesting at 3 months, risk-based third-trimester rescreening, and maternal-newborn communication are mandatory parts of the plan.
+- Neonatal conjunctivitis is separated from gonococcal ophthalmia and treated systemically. Infant chlamydial pneumonia is recognized by its 1 to 3 month onset, afebrile staccato cough, tachypnea, hyperinflation, diffuse infiltrates, and frequent eosinophilia.
+- Neonatal erythromycin 50 mg/kg/day divided four times daily for 14 days and azithromycin 20 mg/kg daily for 3 days include exact calculation, limited efficacy data, repeat-course possibility, and infantile hypertrophic pyloric stenosis monitoring.
+- LGV is recognized from bloody proctitis, tenesmus, mucosal ulcers, severe inguinal lymphadenopathy, or buboes and treated presumptively with doxycycline 100 mg twice daily for 21 days. Alternative regimens and their validation limits remain visible.
+- Nonpregnant routine test of cure is rejected unless adherence, symptoms, or reinfection create a reason. NAAT before 4 weeks is avoided because residual nucleic acid can produce false-positive results, while every treated patient is retested at about 3 months.
+- Partner care covers the preceding 60 days and the most recent partner, lawful EPT, exact abstinence timing, HIV, gonorrhea, and syphilis testing, HIV PrEP, and population-specific doxy PEP shared decision-making.
+- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 130-question assessment bank.
+- Goodnotes remains unavailable because macOS reports a locked session. Any matching chlamydia lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
