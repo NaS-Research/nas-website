@@ -4,7 +4,7 @@ export const resistantSecondaryHypertensionModule = {
   slug: "resistant-secondary-hypertension",
   number: "22",
   title: "Resistant and Secondary Hypertension",
-  source: "2025 resistant hypertension guidance, current endocrine screening, and cause-directed evaluation",
+  source: "2025 AHA and ACC hypertension guidance, 2025 Endocrine Society primary aldosteronism guidance, and FDA device and medicine information current through August 2026",
   description: "Distinguish apparent from true resistance, find treatment and measurement barriers, identify secondary hypertension from its phenotype, and build a monitored stepwise plan that reaches specialist and device therapy only when the evidence supports it.",
   topics: ["Confirming resistance", "Pseudoresistance", "Secondary-cause architecture", "Primary aldosteronism", "Cause-directed testing", "Stepwise treatment"],
   outcomes: [
@@ -72,7 +72,7 @@ export const resistantSecondaryHypertensionModule = {
       application: "A normal potassium does not exclude primary aldosteronism, and an adrenal nodule does not prove unilateral hormone production.",
       lesson: [
         { heading: "Screen with aldosterone and renin", body: "The 2025 Endocrine Society guideline conditionally suggests screening all individuals with hypertension when resources and capacity support it. Screening measures aldosterone and renin and calculates their ratio. Potassium is measured to support interpretation, not as the screening test itself." },
-        { heading: "Prepare and interpret the sample", body: "Low potassium can suppress aldosterone and should be corrected when possible. Sodium intake, posture, time, kidney function, assay method, and medicines that alter renin or aldosterone affect the result. Follow a local protocol rather than using an isolated ratio without context." },
+        { heading: "Prepare and interpret the sample", body: "Low potassium can suppress aldosterone and should be corrected when possible. Sodium intake, posture, time, kidney function, assay method, and medicines that alter renin or aldosterone affect the result. Current guidance allows most antihypertensives other than mineralocorticoid receptor antagonists to continue for initial screening when clinically appropriate, with repeat testing under an adjusted regimen when a negative or borderline result conflicts with high pretest probability. Follow a local protocol rather than using an isolated ratio without context." },
         { heading: "Confirm and determine subtype", body: "The need for suppression testing depends on the screening pattern and clinical setting. Patients pursuing surgery generally need expert subtype evaluation. Cross-sectional imaging identifies anatomy, but adrenal venous sampling is often required because incidental nodules do not establish laterality." },
         { heading: "Treat the aldosterone source", body: "Unilateral disease may be treated with adrenalectomy in a suitable surgical candidate. Bilateral disease or nonsurgical care uses a mineralocorticoid receptor antagonist. Monitor pressure, potassium, kidney function, and product-specific adverse effects." },
       ],
