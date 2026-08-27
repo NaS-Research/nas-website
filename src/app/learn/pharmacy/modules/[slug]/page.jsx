@@ -219,6 +219,7 @@ import AnxietyDisordersVisual, { anxietyDisordersVisualTypes } from "@/component
 import SleepDisordersVisual, { sleepDisordersVisualTypes } from "@/components/learn/SleepDisordersVisual";
 import ParkinsonDiseaseVisual, { parkinsonDiseaseVisualTypes } from "@/components/learn/ParkinsonDiseaseVisual";
 import AlzheimerDiseaseDementiasVisual, { alzheimerDiseaseDementiasVisualTypes } from "@/components/learn/AlzheimerDiseaseDementiasVisual";
+import SeizuresEpilepsyVisual, { seizuresEpilepsyVisualTypes } from "@/components/learn/SeizuresEpilepsyVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -619,6 +620,7 @@ export default async function PharmacyModulePage({ params }) {
               {module.slug === "sleep-disorders" && sleepDisordersVisualTypes.includes(submodule.visual) && <SleepDisordersVisual type={submodule.visual} />}
               {module.slug === "parkinson-disease" && parkinsonDiseaseVisualTypes.includes(submodule.visual) && <ParkinsonDiseaseVisual type={submodule.visual} />}
               {module.slug === "alzheimer-disease-related-dementias" && alzheimerDiseaseDementiasVisualTypes.includes(submodule.visual) && <AlzheimerDiseaseDementiasVisual type={submodule.visual} />}
+              {module.slug === "seizures-epilepsy" && seizuresEpilepsyVisualTypes.includes(submodule.visual) && <SeizuresEpilepsyVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
