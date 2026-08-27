@@ -215,6 +215,7 @@ import { attentionDeficitHyperactivityDisorderModule } from "@/data/modules/atte
 import { anxietyDisordersModule } from "@/data/modules/anxietyDisorders";
 import { sleepDisordersModule } from "@/data/modules/sleepDisorders";
 import { parkinsonDiseaseModule } from "@/data/modules/parkinsonDisease";
+import { alzheimerDiseaseDementiasModule } from "@/data/modules/alzheimerDiseaseDementias";
 
 const sources = {
   foundation: "Foundation",
@@ -666,6 +667,7 @@ basePharmacyModules.push(
   anxietyDisordersModule,
   sleepDisordersModule,
   parkinsonDiseaseModule,
+  alzheimerDiseaseDementiasModule,
 );
 
 const curriculumAreaGroups = [
@@ -723,7 +725,7 @@ const curriculumAreaGroups = [
   },
   {
     area: "Neurologic Conditions",
-    modules: [parkinsonDiseaseModule, multipleSclerosisModule, myastheniaGravisModule],
+    modules: [alzheimerDiseaseDementiasModule, parkinsonDiseaseModule, multipleSclerosisModule, myastheniaGravisModule],
   },
   {
     area: "Psychiatric Conditions",
