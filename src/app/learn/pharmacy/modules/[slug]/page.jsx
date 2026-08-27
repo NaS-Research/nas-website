@@ -188,6 +188,7 @@ import InfluenzaAntiviralPharmacologyVisual, { influenzaAntiviralPharmacologyVis
 import HerpesSimplexVaricellaAntiviralPharmacologyVisual, { herpesSimplexVaricellaAntiviralPharmacologyVisualTypes } from "@/components/learn/HerpesSimplexVaricellaAntiviralPharmacologyVisual";
 import CytomegalovirusPharmacotherapyVisual, { cytomegalovirusPharmacotherapyVisualTypes } from "@/components/learn/CytomegalovirusPharmacotherapyVisual";
 import PneumocystisJiroveciiPneumoniaVisual, { pneumocystisJiroveciiPneumoniaVisualTypes } from "@/components/learn/PneumocystisJiroveciiPneumoniaVisual";
+import HivFoundationsCareVisual, { hivFoundationsCareVisualTypes } from "@/components/learn/HivFoundationsCareVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -557,6 +558,7 @@ export default async function PharmacyModulePage({ params }) {
               {module.slug === "herpes-simplex-varicella-antiviral-pharmacology" && herpesSimplexVaricellaAntiviralPharmacologyVisualTypes.includes(submodule.visual) && <HerpesSimplexVaricellaAntiviralPharmacologyVisual type={submodule.visual} />}
               {module.slug === "cytomegalovirus-pharmacotherapy" && cytomegalovirusPharmacotherapyVisualTypes.includes(submodule.visual) && <CytomegalovirusPharmacotherapyVisual type={submodule.visual} />}
               {module.slug === "pneumocystis-jirovecii-pneumonia" && pneumocystisJiroveciiPneumoniaVisualTypes.includes(submodule.visual) && <PneumocystisJiroveciiPneumoniaVisual type={submodule.visual} />}
+              {module.slug === "hiv-foundations-diagnosis-care" && hivFoundationsCareVisualTypes.includes(submodule.visual) && <HivFoundationsCareVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>

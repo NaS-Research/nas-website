@@ -2794,6 +2794,27 @@ Current source reconciliations:
 - Build verification: Next.js production build passed August 27, 2026 with 515 static pages generated.
 - Goodnotes source reconciliation remains pending until the local library can be read through an unlocked application session.
 
+### HIV Foundations, Diagnosis, and Care
+
+- Built from the HIV foundations and initial-care material in RxPrep 2023 and reconciled with the NIH Adult and Adolescent Antiretroviral Guidelines current through August 2026 plus the CDC and APHL laboratory diagnostic algorithm.
+- HIV envelope structure, RNA genome, reverse transcriptase, integrase, protease, CD4 and chemokine coreceptors, immune injury, high viral turnover, error-prone replication, and combination-treatment pressure establish the biologic system.
+- Attachment, fusion, reverse transcription, integration, assembly, budding, and maturation are mapped to antiretroviral targets without treating entry agents or reverse-transcriptase classes as interchangeable.
+- Sexual, blood, and perinatal transmission are organized by infectious fluid, susceptible route, timing, and source virology. PEP urgency, PrEP context, and maintained HIV RNA below 200 copies per milliliter for U equals U are distinguished precisely.
+- Acute HIV syndrome, asymptomatic chronic infection, HIV RNA, CD4, stage 3 HIV, AIDS-defining conditions, opportunistic risk, and symptom-driven urgent evaluation connect clinical course to testing and immune status.
+- The diagnostic pathway uses an HIV-1 and HIV-2 antigen-antibody screen, antibody differentiation, and HIV-1 NAT for discordant results. Strong acute suspicion after a negative early screen and preliminary self-test limitations are explicit.
+- Rapid ART includes diagnostic confirmation, pretreatment specimen collection, a robust initial regimen, pending-result review, pharmacy access, confidentiality, structural barriers, and named follow-up ownership. Baseline results are not used as a universal reason to delay treatment.
+- Baseline HIV RNA, CD4, CBC, kidney, liver, glucose, lipid, urinalysis, pregnancy context, hepatitis status, prior PrEP or PEP, immunization, sexually transmitted infection, opportunistic disease, and social context are tied to the decisions they can change.
+- Standard reverse-transcriptase and protease genotype, added integrase testing after relevant cabotegravir or INSTI exposure, HLA-B*5701 before abacavir, and tropism before maraviroc are separated by purpose.
+- Viral-load response, CD4 monitoring, durable suppression, low-level blips, persistent rebound, regimen-specific safety, adherence, access, interactions, absorption, and resistance form the longitudinal monitoring system.
+- Treatment goals, complete combination therapy, resistance barrier, functional monotherapy risk, lifelong continuity, current second-generation INSTI pathways, HBV-active backbone needs, two-drug exclusions, and CAB-LA breakthrough logic establish the bridge to later drug-class modules.
+- Person-centered selection joins potency and resistance to formulation, privacy, reproductive goals, preference, mental health, substance use, housing, insurance, pharmacy supply, language, stigma-free counseling, and educational boundaries.
+- It contains twelve focused lessons, twelve responsive diagrams, twelve embedded checks, and a validated 216-question assessment bank.
+- RxPrep's older 2023 initial-regimen summary was not silently retained. Current NIH selection gives additional weight to prior CAB-LA exposure, integrase resistance risk, HBV, and the defined limits of dolutegravir plus lamivudine.
+- Automated verification: 216 unique question IDs and prompts, four distinct answer choices per question, valid lesson links, twelve lesson sections, twelve diagrams, and no em dash or en dash characters in public module prose.
+- Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, twelve lessons, twelve diagrams, twelve embedded checks, ten questions per test, a completely different second random set, scoring with rationales and ten remediation links, and zero console warnings or errors.
+- Build verification: Next.js production build passed August 27, 2026 with 516 static pages generated.
+- Goodnotes source reconciliation remains pending because the Mac was still locked when access was retried. The module will receive a documented lecture comparison after the application session is readable.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:

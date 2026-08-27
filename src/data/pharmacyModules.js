@@ -185,6 +185,7 @@ import { influenzaAntiviralPharmacologyModule } from "@/data/modules/influenzaAn
 import { herpesSimplexVaricellaAntiviralPharmacologyModule } from "@/data/modules/herpesSimplexVaricellaAntiviralPharmacology";
 import { cytomegalovirusPharmacotherapyModule } from "@/data/modules/cytomegalovirusPharmacotherapy";
 import { pneumocystisJiroveciiPneumoniaModule } from "@/data/modules/pneumocystisJiroveciiPneumonia";
+import { hivFoundationsCareModule } from "@/data/modules/hivFoundationsCare";
 
 const sources = {
   foundation: "Foundation",
@@ -605,5 +606,6 @@ pharmacyModules.push(influenzaAntiviralPharmacologyModule);
 pharmacyModules.push(herpesSimplexVaricellaAntiviralPharmacologyModule);
 pharmacyModules.push(cytomegalovirusPharmacotherapyModule);
 pharmacyModules.push(pneumocystisJiroveciiPneumoniaModule);
+pharmacyModules.push(hivFoundationsCareModule);
 
 export const pharmacySubmoduleCount = pharmacyModules.reduce((total, module) => total + module.submodules.length, 0);
