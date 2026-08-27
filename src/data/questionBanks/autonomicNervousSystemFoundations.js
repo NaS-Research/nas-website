@@ -67,7 +67,7 @@ const receptorCases = [
   ["058", "beta-2", "Gs", "uterine smooth-muscle relaxation", "autonomic-organ-reflex-integration"],
   ["059", "M3", "Gq", "endothelial nitric oxide production", "autonomic-receptor-signaling"],
   ["060", "Nn", "ligand-gated cation channel", "chromaffin-cell excitation in the adrenal medulla", "autonomic-transmitter-map"],
-].map(([id, receptor, transducer, effect, lesson]) => q(id, `Which pairing best describes ${receptor} receptor signaling in the stated context?`, [`${transducer}, producing ${effect}`, `Gs, producing direct skeletal muscle paralysis`, `A nuclear receptor, producing immediate ion flux`, `Acetylcholinesterase, producing catecholamine synthesis`], 0, `${receptor} signaling in this context is best represented by ${transducer}, producing ${effect}.`, lesson));
+].map(([id, receptor, transducer, effect, lesson]) => q(id, `Which pairing best describes ${receptor} receptor signaling when it mediates ${effect}?`, [`${transducer}, producing ${effect}`, `Gs, producing direct skeletal muscle paralysis`, `A nuclear receptor, producing immediate ion flux`, `Acetylcholinesterase, producing catecholamine synthesis`], 0, `${receptor} signaling in this context is best represented by ${transducer}, producing ${effect}.`, lesson));
 
 const organCases = [
   ["061", "heart sinoatrial node", "parasympathetic M2 activation", "slower firing and heart rate"],

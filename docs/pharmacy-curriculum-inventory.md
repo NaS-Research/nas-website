@@ -115,9 +115,10 @@ This inventory records the source material available in the founder's Goodnotes 
 - Current references reviewed: IUPHAR and BPS muscarinic, nicotinic, adrenoceptor, and vesicular amine transporter resources, plus the 2024 American Physiological Society review of cardiac autonomic regulation
 - Learning structure: six lessons, six native mechanistic diagrams, and six embedded knowledge checks
 - Assessment: 100 original questions with anatomy, transmitter mapping, receptor signaling, cholinergic and adrenergic transmission, organ-response, toxidrome, and baroreflex cases; ten sampled without replacement per attempt with answer order randomized
+- Automated assessment verification: 100 unique questions, valid lesson review links, and at least 10 questions mapped to every lesson
 - Source reconciliation: the lecture's simplified receptor and organ rules were retained only as entry points, then expanded to distinguish receptor subtype, tissue context, baseline tone, cotransmission, direct effect, and reflex compensation; NET was identified as a major local norepinephrine termination mechanism rather than presenting COMT as the sole off-switch
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, six diagrams, ten questions per attempt, different questions and answer order on repeat attempt, complete scoring with explanations and ten remediation links, and no browser errors or warnings
-- Build verification: Next.js production build passed August 25, 2026 with 337 static pages generated
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
 
 ### Cholinergic Agonists and Cholinesterase Inhibitors
 
