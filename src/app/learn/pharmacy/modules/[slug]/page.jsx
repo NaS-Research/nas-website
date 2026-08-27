@@ -191,6 +191,7 @@ import PneumocystisJiroveciiPneumoniaVisual, { pneumocystisJiroveciiPneumoniaVis
 import HivFoundationsCareVisual, { hivFoundationsCareVisualTypes } from "@/components/learn/HivFoundationsCareVisual";
 import NucleosideReverseTranscriptaseInhibitorVisual, { nucleosideReverseTranscriptaseInhibitorVisualTypes } from "@/components/learn/NucleosideReverseTranscriptaseInhibitorVisual";
 import NonNucleosideReverseTranscriptaseInhibitorVisual, { nonNucleosideReverseTranscriptaseInhibitorVisualTypes } from "@/components/learn/NonNucleosideReverseTranscriptaseInhibitorVisual";
+import HivProteaseInhibitorVisual, { hivProteaseInhibitorVisualTypes } from "@/components/learn/HivProteaseInhibitorVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -563,6 +564,7 @@ export default async function PharmacyModulePage({ params }) {
               {module.slug === "hiv-foundations-diagnosis-care" && hivFoundationsCareVisualTypes.includes(submodule.visual) && <HivFoundationsCareVisual type={submodule.visual} />}
               {module.slug === "nucleoside-reverse-transcriptase-inhibitors" && nucleosideReverseTranscriptaseInhibitorVisualTypes.includes(submodule.visual) && <NucleosideReverseTranscriptaseInhibitorVisual type={submodule.visual} />}
               {module.slug === "non-nucleoside-reverse-transcriptase-inhibitors" && nonNucleosideReverseTranscriptaseInhibitorVisualTypes.includes(submodule.visual) && <NonNucleosideReverseTranscriptaseInhibitorVisual type={submodule.visual} />}
+              {module.slug === "hiv-protease-inhibitors" && hivProteaseInhibitorVisualTypes.includes(submodule.visual) && <HivProteaseInhibitorVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
