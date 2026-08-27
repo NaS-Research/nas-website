@@ -192,6 +192,7 @@ import HivFoundationsCareVisual, { hivFoundationsCareVisualTypes } from "@/compo
 import NucleosideReverseTranscriptaseInhibitorVisual, { nucleosideReverseTranscriptaseInhibitorVisualTypes } from "@/components/learn/NucleosideReverseTranscriptaseInhibitorVisual";
 import NonNucleosideReverseTranscriptaseInhibitorVisual, { nonNucleosideReverseTranscriptaseInhibitorVisualTypes } from "@/components/learn/NonNucleosideReverseTranscriptaseInhibitorVisual";
 import HivProteaseInhibitorVisual, { hivProteaseInhibitorVisualTypes } from "@/components/learn/HivProteaseInhibitorVisual";
+import HivEntryAttachmentInhibitorVisual, { hivEntryAttachmentInhibitorVisualTypes } from "@/components/learn/HivEntryAttachmentInhibitorVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -565,6 +566,7 @@ export default async function PharmacyModulePage({ params }) {
               {module.slug === "nucleoside-reverse-transcriptase-inhibitors" && nucleosideReverseTranscriptaseInhibitorVisualTypes.includes(submodule.visual) && <NucleosideReverseTranscriptaseInhibitorVisual type={submodule.visual} />}
               {module.slug === "non-nucleoside-reverse-transcriptase-inhibitors" && nonNucleosideReverseTranscriptaseInhibitorVisualTypes.includes(submodule.visual) && <NonNucleosideReverseTranscriptaseInhibitorVisual type={submodule.visual} />}
               {module.slug === "hiv-protease-inhibitors" && hivProteaseInhibitorVisualTypes.includes(submodule.visual) && <HivProteaseInhibitorVisual type={submodule.visual} />}
+              {module.slug === "hiv-entry-attachment-inhibitors" && hivEntryAttachmentInhibitorVisualTypes.includes(submodule.visual) && <HivEntryAttachmentInhibitorVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
