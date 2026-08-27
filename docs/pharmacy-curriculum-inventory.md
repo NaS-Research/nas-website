@@ -2622,6 +2622,25 @@ Current source reconciliations:
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 176-question assessment bank.
 - Goodnotes remains unavailable because macOS reports a locked session. Any matching systemic antifungal lecture will receive a documented reconciliation pass after manual unlock.
 
+### Amphotericin B and Flucytosine Pharmacology
+
+- Built from the focused amphotericin B and flucytosine material in RxPrep 2023 Chapter 24 and reconciled with the June 2025 AmBisome label, current amphotericin B deoxycholate and Ancobon labels, and the 2024 global cryptococcosis guideline.
+- Amphotericin's amphipathic polyene structure is connected to ergosterol binding, membrane channel formation, monovalent ion leakage, fungal killing, mammalian cholesterol exposure, and the resulting therapeutic margin.
+- Deoxycholate, liposomal amphotericin, and lipid complex amphotericin are treated as different products. Product name, indication, dosing weight, mg per kg, final milligrams, concentration, diluent, line, filter, pump, and rate require an independent verification pathway.
+- The conventional deoxycholate ceiling of 1.5 mg/kg per day is explicit. Higher numerical liposomal doses are never transferred to deoxycholate, and milligram-for-milligram substitution is identified as a potentially fatal medication error.
+- Broad activity against severe yeast, mold, and endemic fungal disease is joined to organism, syndrome, compartment, host, susceptibility, source control, immune recovery, and current guidance rather than presented as universal coverage.
+- AmBisome reconstitution with sterile water, dextrose line preparation, saline incompatibility, product-specific filter requirements, and controlled infusion are separated from the conventional deoxycholate preparation and infusion pathway.
+- Fever, chills, rigors, blood pressure change, dyspnea, liposomal back or chest pain, and anaphylaxis are classified by timing and physiology. Premedication is individualized from prior reaction and risk rather than presented as a mandatory universal cocktail.
+- Renal perfusion injury, tubular injury, urine output, creatinine, potassium, magnesium, arrhythmia risk, digoxin and QT burden, nephrotoxin review, hydration, and sodium tolerance are managed as one dynamic system.
+- Flucytosine uptake by cytosine permease, intracellular conversion by cytosine deaminase, RNA incorporation, thymidylate synthase inhibition, rapid monotherapy resistance, oral absorption, CNS penetration, and renal elimination are connected from molecule to bedside.
+- Weight-based calculations distinguish total daily from per-dose units. Available 250 mg and 500 mg capsules, renal reassessment, concentration timing, CBC, liver tests, and symptom surveillance create an operational exposure plan.
+- Prolonged flucytosine concentrations above 100 mcg/mL are identified as a toxicity signal. Severe marrow suppression, hepatic injury, gastrointestinal and neurologic toxicity, and the contraindication in complete DPD deficiency are incorporated without obsolete pregnancy letters.
+- The 2024 high-income-setting induction option of liposomal amphotericin 3 to 4 mg/kg daily plus flucytosine 25 mg/kg four times daily is taught with its syndrome, host, and resource context. Resource-limited single-dose evidence is not silently generalized to unstudied populations.
+- Amphotericin-associated kidney injury is explicitly linked to reduced flucytosine elimination, so creatinine, concentration, CBC, liver tests, potassium, magnesium, and clinical response are monitored as a coupled combination-therapy system.
+- Baseline verification, result ownership, failure audit, induction-to-consolidation transition, pregnancy and lactation context, teach back, and the educational boundary close the module.
+- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 176-question assessment bank.
+- Goodnotes remains unavailable because macOS reports a locked session. Any matching amphotericin or flucytosine lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:

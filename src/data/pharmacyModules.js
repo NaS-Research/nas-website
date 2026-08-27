@@ -176,6 +176,7 @@ import { rickettsialEhrlichialAnaplasmaModule } from "@/data/modules/rickettsial
 import { lymeDiseaseModule } from "@/data/modules/lymeDisease";
 import { tularemiaModule } from "@/data/modules/tularemia";
 import { systemicAntifungalFoundationsModule } from "@/data/modules/systemicAntifungalFoundations";
+import { amphotericinFlucytosinePharmacologyModule } from "@/data/modules/amphotericinFlucytosinePharmacology";
 
 const sources = {
   foundation: "Foundation",
@@ -587,5 +588,6 @@ export const pharmacyModules = [nutritionScreeningAssessmentModule, fluidElectro
 
 pharmacyModules.push(tularemiaModule);
 pharmacyModules.push(systemicAntifungalFoundationsModule);
+pharmacyModules.push(amphotericinFlucytosinePharmacologyModule);
 
 export const pharmacySubmoduleCount = pharmacyModules.reduce((total, module) => total + module.submodules.length, 0);
