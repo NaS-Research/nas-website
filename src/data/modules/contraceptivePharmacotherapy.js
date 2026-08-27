@@ -77,5 +77,10 @@ export const contraceptivePharmacotherapyModule = {
       ["Plan transitions", "Coordinate overlap or backup when switching methods, account for return-to-fertility timing, and provide preconception care when pregnancy becomes the goal."],
     ], ["Teach-back reveals instruction gaps.", "Expected bleeding and dangerous bleeding are not the same.", "Switching can require overlap or backup.", "The reproductive plan can change at any time."], { question: "What is the strongest way to confirm that a patient understands a new contraceptive schedule?", choices: ["Use teach-back with the exact start, backup, and missed-use plan", "Ask only whether they have questions", "Provide a brand name without instructions", "Delay all counseling until follow-up"], answer: 0, rationale: "Teach-back demonstrates whether the patient can carry out the regimen.", reviewHref: "#integrated-care" }),
   ],
+  references: [
+    { label: "CDC. U.S. Medical Eligibility Criteria for Contraceptive Use, 2024", href: "https://www.cdc.gov/mmwr/volumes/73/rr/rr7304a1.htm" },
+    { label: "CDC. U.S. Selected Practice Recommendations for Contraceptive Use, 2024", href: "https://www.cdc.gov/mmwr/volumes/73/rr/rr7303a1.htm" },
+    { label: "CDC. Routine Follow-Up After Contraceptive Initiation", href: "https://www.cdc.gov/contraception/hcp/usspr/follow-after-contraception.html" },
+  ],
   questionBank: contraceptivePharmacotherapyQuestionBank,
 };
