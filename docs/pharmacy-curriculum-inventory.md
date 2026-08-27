@@ -2582,6 +2582,28 @@ Current source reconciliations:
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 156-question assessment bank.
 - Goodnotes was retried after the reported reconnection, but macOS still returned a locked session. Any matching Lyme disease lecture will receive a documented reconciliation pass after manual unlock.
 
+### Tularemia
+
+- Built from the brief tularemia section of RxPrep 2023 Chapter 23 and reconciled with the CDC 2025 tularemia antimicrobial treatment and prophylaxis recommendations plus current clinical, diagnostic, laboratory safety, occupational exposure, infection control, and surveillance resources.
+- The module identifies Francisella tularensis as a highly infectious, fastidious, intracellular gram negative coccobacillus with a low infectious inoculum. That biology is connected to diagnostic delay, intrinsic antimicrobial limits, laboratory acquisition risk, and biothreat preparedness.
+- Exposure teaching includes Dermacentor and Amblyomma ticks, deer flies, rabbits, hares, rodents, cats, hunting, skinning, bites, scratches, contaminated water, ingestion, eye splash, farming, mowing, aerosol, and laboratory material. A denied tick bite does not close the history.
+- Ulceroglandular, glandular, oculoglandular, oropharyngeal, pneumonic, and typhoidal disease are organized by portal and anatomy. Severe respiratory, systemic, and neurologic disease can occur without a visible ulcer.
+- Severity triage uses hemodynamics, oxygenation, neurologic state, end organ injury, sepsis, source control, and care reliability. Suppurative nodes are separated from microbiologic failure and can require aspiration or drainage.
+- Microbiology must be alerted before culture or aerosol generating work. Ulcer material, conjunctival swab, node aspirate or biopsy, blood, respiratory material, and pleural fluid are selected by form and laboratory guidance.
+- Culture, PCR, immunohistochemistry, sequencing, and paired serology are given distinct roles. Antibodies often are not detectable until two to three weeks, so an early negative result does not exclude disease and persistent antibody is not a test of cure.
+- The outdated aminoglycoside only summary is replaced with the 2025 first line framework: ciprofloxacin, levofloxacin, gentamicin, or doxycycline. Streptomycin is now third tier because of toxicity, availability, and administration concerns.
+- Adult treatment exposure is exact: ciprofloxacin 400 mg IV every 8 hours or 750 mg orally every 12 hours for 10 days, levofloxacin 750 mg IV or orally every 24 hours for 10 days, gentamicin 6 mg/kg IV or IM every 24 hours for 10 days, or doxycycline 200 mg once then 100 mg every 12 hours for 14 to 21 days.
+- Delayed treatment favors ciprofloxacin, levofloxacin, or gentamicin over doxycycline because of relapse concern. Severe disease favors initial aminoglycoside exposure and can justify two active classes.
+- Administration and monitoring integrate fluoroquinolone cation, QT, tendon, neurologic, glycemic, and aortic risk; doxycycline water, posture, cation, feed, and photosensitivity planning; and gentamicin renal, concentration, auditory, vestibular, neuromuscular, and nephrotoxin monitoring.
+- Neuroinvasive tularemia uses gentamicin plus ciprofloxacin or levofloxacin, with gentamicin plus doxycycline as an alternative. Aminoglycoside therapy continues for at least 10 days and an active agent completes a 21 day total course.
+- Penicillins, cephalosporins, carbapenems, glycopeptides, polymyxins, and sulfonamides are identified as ineffective for tularemia. Familiar syndrome based beta lactam monotherapy is not mistaken for Francisella coverage.
+- Pregnancy, lactation, children, neonates, older adults, immune compromise, formulation, weight, organ function, and interactions use current narrative benefit risk reasoning. Obsolete pregnancy letters are not used.
+- Adult occupational PEP includes ciprofloxacin 500 mg twice daily for 7 days, levofloxacin 500 mg daily for 7 days, or doxycycline 100 mg twice daily for 10 to 14 days. PEP is not routine after every natural exposure or for routine health care contact using standard precautions.
+- Intentional release response separates exposed well persons from symptomatic patients. PEP begins as soon as possible, ideally within 48 hours, while active illness receives treatment and initially uses two distinct effective classes because engineered resistance is possible.
+- Result ownership, public health reporting, exposure investigation, laboratory safety, source control, response audit, adverse effect monitoring, and teach back close the system.
+- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 178-question assessment bank.
+- Goodnotes remains unavailable because macOS reports a locked session. Any matching tularemia lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:

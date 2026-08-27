@@ -177,6 +177,7 @@ import GenitalHerpesVisual, { genitalHerpesVisualTypes } from "@/components/lear
 import AnogenitalHpvWartsVisual, { anogenitalHpvWartsVisualTypes } from "@/components/learn/AnogenitalHpvWartsVisual";
 import RickettsialEhrlichialAnaplasmaVisual, { rickettsialEhrlichialAnaplasmaVisualTypes } from "@/components/learn/RickettsialEhrlichialAnaplasmaVisual";
 import LymeDiseaseVisual, { lymeDiseaseVisualTypes } from "@/components/learn/LymeDiseaseVisual";
+import TularemiaVisual, { tularemiaVisualTypes } from "@/components/learn/TularemiaVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -535,6 +536,7 @@ export default async function PharmacyModulePage({ params }) {
               {module.slug === "anogenital-hpv-warts" && anogenitalHpvWartsVisualTypes.includes(submodule.visual) && <AnogenitalHpvWartsVisual type={submodule.visual} />}
               {module.slug === "rickettsial-ehrlichial-anaplasma-infections" && rickettsialEhrlichialAnaplasmaVisualTypes.includes(submodule.visual) && <RickettsialEhrlichialAnaplasmaVisual type={submodule.visual} />}
               {module.slug === "lyme-disease" && lymeDiseaseVisualTypes.includes(submodule.visual) && <LymeDiseaseVisual type={submodule.visual} />}
+              {module.slug === "tularemia" && tularemiaVisualTypes.includes(submodule.visual) && <TularemiaVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
