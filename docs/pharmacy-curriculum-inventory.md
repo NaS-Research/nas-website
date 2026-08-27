@@ -356,8 +356,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: six lessons, six native thrombosis, diagnosis, antithrombotic, reperfusion, PCI and shock, and discharge diagrams, and six embedded knowledge checks
 - Assessment: 100 original questions spanning type 1 and type 2 MI, thrombosis, symptoms, injury versus infarction, ECG, troponin, oxygen, nitrates, mimics, aspirin, P2Y12 selection and timing, anticoagulation, DAPT, STEMI PCI, fibrinolysis, NSTE-ACS risk and timing, radial access, imaging, complete revascularization, shock, bleeding, lipids, and rehabilitation; ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: troponin elevation was not equated with type 1 MI; diagnostic STEMI did not wait for biomarkers; oxygen was not given routinely in normoxemia; nitrate contraindications were explicit; ticagrelor and prasugrel preference was tied to PCI and bleeding context; prasugrel was excluded after stroke or TIA; NSTE-ACS pretreatment followed angiography timing; default DAPT was at least 12 months when bleeding risk was not high; shock used culprit-vessel emergency PCI without routine immediate nonculprit PCI; discharge lipid follow-up used 4 to 8 weeks
-- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 25, 2026 with 357 static pages generated
+- Automated verification: 100 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 12 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
 - Goodnotes note: the dedicated ACS lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
 ### Antiplatelet Pharmacology
