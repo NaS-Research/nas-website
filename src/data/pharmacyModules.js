@@ -210,6 +210,7 @@ import { drugInducedLiverInjuryModule } from "@/data/modules/drugInducedLiverInj
 import { acuteLiverFailureModule } from "@/data/modules/acuteLiverFailure";
 import { majorDepressiveDisorderModule } from "@/data/modules/majorDepressiveDisorder";
 import { schizophreniaPsychosisModule } from "@/data/modules/schizophreniaPsychosis";
+import { bipolarDisorderModule } from "@/data/modules/bipolarDisorder";
 
 const sources = {
   foundation: "Foundation",
@@ -656,6 +657,7 @@ basePharmacyModules.push(
   acuteLiverFailureModule,
   majorDepressiveDisorderModule,
   schizophreniaPsychosisModule,
+  bipolarDisorderModule,
 );
 
 const curriculumAreaGroups = [
@@ -717,7 +719,7 @@ const curriculumAreaGroups = [
   },
   {
     area: "Psychiatric Conditions",
-    modules: [schizophreniaPsychosisModule, majorDepressiveDisorderModule],
+    modules: [bipolarDisorderModule, schizophreniaPsychosisModule, majorDepressiveDisorderModule],
   },
   {
     area: "Gastrointestinal Conditions",
