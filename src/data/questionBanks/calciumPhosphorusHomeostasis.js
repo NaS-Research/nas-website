@@ -95,7 +95,7 @@ const diagnosticCases = [
   ["A patient with lymphoma has suppressed PTH, high calcitriol, and hypercalcemia.", "Use a glucocorticoid-directed strategy and escalate antiresorptive therapy if needed", "Calcitriol-mediated malignancy hypercalcemia is glucocorticoid responsive.", "hypercalcemia"],
   ["A patient with severe hypophosphatemia has potassium 5.8 mEq/L and oliguric kidney injury.", "Avoid automatic potassium phosphate and obtain specialist protocol guidance", "The cation and impaired elimination make routine replacement hazardous.", "hypophosphatemia"],
   ["A dialysis patient takes sevelamer two hours after meals and remains hyperphosphatemic.", "Move binder dosing to phosphate-containing meals and reassess the full regimen", "Binders must be present in the gastrointestinal tract with dietary phosphate.", "hyperphosphatemia-ckd-mbd"],
-].map(([caseText, correct, rationale, lesson], index) => q(`09${index}`, "Which interpretation or action is most defensible?", [correct, "Treat the isolated number without evaluating the mechanism", "Ignore kidney function and symptoms", "Delay urgent stabilization until every test returns"], 0, rationale, lesson, { case: caseText }));
+].map(([caseText, correct, rationale, lesson], index) => q(`09${index}`, `${caseText} Which interpretation or action is most defensible?`, [correct, "Treat the isolated number without evaluating the mechanism", "Ignore kidney function and symptoms", "Delay urgent stabilization until every test returns"], 0, rationale, lesson));
 
 const integrationCases = [
   ["A patient with severe hypercalcemia is dehydrated and confused but has heart failure with pulmonary congestion.", "Use carefully titrated isotonic fluid with frequent congestion and perfusion reassessment, then add mechanism-specific therapy", "Both calcium urgency and limited fluid tolerance must shape the plan.", "hypercalcemia"],
@@ -108,7 +108,7 @@ const integrationCases = [
   ["A patient needs IV phosphate and is receiving a calcium infusion through the only available peripheral line.", "Do not co-infuse without verified compatibility and obtain safe access planning", "Calcium-phosphate precipitation can obstruct the line or harm the patient.", "hypophosphatemia"],
   ["A patient has low calcium, high phosphate, low PTH, and normal magnesium after neck surgery.", "Postoperative hypoparathyroidism is likely", "Low PTH fails to conserve calcium or promote phosphate excretion.", "hypocalcemia"],
   ["A CKD patient reports taking every binder but often skips meals and takes the tablets at bedtime.", "Reconcile each dose with actual phosphate-containing food", "Adherence includes correct timing and indication, not tablet count alone.", "hyperphosphatemia-ckd-mbd"],
-].map(([caseText, correct, rationale, lesson], index) => q(`10${index}`, "What is the best next interpretation or management principle?", [correct, "Normalize one laboratory value without a mechanism", "Use the same fixed plan for every patient", "Ignore medication timing"], 0, rationale, lesson, { case: caseText }));
+].map(([caseText, correct, rationale, lesson], index) => q(`10${index}`, `${caseText} What is the best next interpretation or management principle?`, [correct, "Normalize one laboratory value without a mechanism", "Use the same fixed plan for every patient", "Ignore medication timing"], 0, rationale, lesson));
 
 export const calciumPhosphorusHomeostasisQuestionBank = [
   ...core,

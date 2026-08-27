@@ -55,8 +55,9 @@ This inventory records the source material available in the founder's Goodnotes 
 - Current references reviewed: KDIGO CKD mineral and bone disorder guideline, Endocrine Society hypercalcemia of malignancy guideline, Society for Endocrinology emergency guidance, and current FDA labeling for calcium gluconate, zoledronic acid, denosumab, palopegteriparatide, and ferric carboxymaltose
 - Learning structure: six lessons, six native clinical diagrams, and six embedded knowledge checks
 - Assessment: 100 original questions with unique identifiers and nonduplicated answer choices, ten sampled without replacement per attempt, answer order randomized
+- Automated verification: 100 unique questions, valid review links, and a minimum of eight questions mapped to every lesson
 - Browser verification completed: desktop and 390 pixel mobile rendering, six visuals, ten questions per attempt, and a different question set on repeat attempt
-- Build verification: Next.js production build passed August 25, 2026
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
 - Source reconciliation: legacy fixed dosing and monitoring language was reframed as local protocol content; current chronic hypoparathyroidism therapy, hypercalciuria prevention, ferric carboxymaltose risk, acute phosphate toxicity, and long-term aluminum avoidance were added
 
 ### Enteral Nutrition
