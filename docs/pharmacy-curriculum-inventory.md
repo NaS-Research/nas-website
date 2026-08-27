@@ -2506,7 +2506,8 @@ Current source reconciliations:
 - LGV is recognized from bloody proctitis, tenesmus, mucosal ulcers, severe inguinal lymphadenopathy, or buboes and treated presumptively with doxycycline 100 mg twice daily for 21 days. Alternative regimens and their validation limits remain visible.
 - Nonpregnant routine test of cure is rejected unless adherence, symptoms, or reinfection create a reason. NAAT before 4 weeks is avoided because residual nucleic acid can produce false-positive results, while every treated patient is retested at about 3 months.
 - Partner care covers the preceding 60 days and the most recent partner, lawful EPT, exact abstinence timing, HIV, gonorrhea, and syphilis testing, HIV PrEP, and population-specific doxy PEP shared decision-making.
-- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 130-question assessment bank.
+- The assessment now gives dedicated coverage to prevention integration and clinical integration. It tests exact abstinence timing, partner completion, linked STI and HIV prevention, doxy PEP eligibility and monitoring, site and host modifiers, follow-up deadlines, handoffs, escalation, and named ownership.
+- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 138-question assessment bank across all ten lessons.
 - Goodnotes remains unavailable because macOS reports a locked session. Any matching chlamydia lecture will receive a documented reconciliation pass after manual unlock.
 
 ### Genital Herpes
