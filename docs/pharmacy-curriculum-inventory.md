@@ -2368,6 +2368,23 @@ Current source reconciliations:
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 180-question assessment bank.
 - Goodnotes remains unavailable because macOS reports a locked session. Any matching tuberculosis lecture will receive a documented reconciliation pass after manual unlock.
 
+### Infective Endocarditis
+
+- Built from the infective endocarditis section of RxPrep 2023 Chapter 23 and reconciled with the 2023 ESC endocarditis guideline and 2025 corrigendum, the 2023 Duke-ISCVID criteria, the 2025 AHA blood culture-negative endocarditis statement, current AHA dental prophylaxis guidance, and current FDA labeling.
+- The module connects endothelial injury, platelet and fibrin deposition, bacteremia, microbial adhesion, vegetation and biofilm growth, valve destruction, left- and right-sided embolization, and acute or subacute presentation.
+- Diagnosis now uses the 2023 Duke-ISCVID framework instead of presenting the 2000 Modified Duke criteria as current. Three pretherapy blood culture sets, 24- to 48-hour clearance cultures, surgical and molecular evidence, and the staged 72-hour blood culture-negative pathway are explicit.
+- TTE, TEE, repeat imaging, cardiac CT, FDG PET CT, WBC imaging, and extracardiac imaging are organized by the question each modality must answer. A negative TTE does not close prosthetic, device, or otherwise high-probability disease.
+- Empiric therapy is designed from valve and device type, acquisition, prior antibiotics, allergy phenotype, organ function, and local ecology. It is narrowed within 24 to 48 hours when identification and susceptibility permit.
+- Streptococcal and HACEK therapy includes current penicillin G and ceftriaxone dose and duration frames, a narrow boundary for short aminoglycoside synergy, and colon evaluation after Streptococcus gallolyticus.
+- MSSA therapy prioritizes nafcillin, oxacillin, or appropriate cefazolin over continued vancomycin. MRSA content separates FDA-labeled daptomycin 6 mg/kg for S. aureus bacteremia including right-sided IE from higher guideline doses used in difficult disease.
+- Older routine staphylococcal native-valve gentamicin is removed. Prosthetic-valve rifampin is presented as a susceptible foreign-body strategy delayed until 3 to 5 days of effective therapy and bloodstream clearance, with weak evidence and major interaction burden stated clearly.
+- Enterococcal therapy includes ampicillin 2 g every 4 hours plus ceftriaxone 2 g every 12 hours, HLAR and aminoglycoside toxicity, and specialist pathways for VRE, non-HACEK gram-negative, and fungal disease.
+- Heart failure, uncontrolled infection, abscess, conduction change, prosthetic destruction, embolic risk, neurologic complications, and definite CIED infection activate early Endocarditis Team and surgical or extraction pathways.
+- Monitoring links microbiology, hemodynamics, valve function, drug exposure, organ toxicity, metastatic disease, OPAT or selected oral consolidation eligibility, substance use treatment, access, completion, and recurrence follow-up.
+- Dental prophylaxis is limited to both a highest-risk cardiac condition and a qualifying dental procedure. Current adult doses are included, clindamycin is removed, cephalosporin allergy boundaries are explicit, and routine prophylaxis for clean nondental procedures is rejected.
+- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 180-question assessment bank.
+- Goodnotes remains unavailable because macOS reports a locked session. Any matching endocarditis lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
