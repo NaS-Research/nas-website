@@ -2476,6 +2476,23 @@ Current source reconciliations:
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 130-question assessment bank.
 - Goodnotes remains unavailable because macOS reports a locked session. Any matching syphilis lecture will receive a documented reconciliation pass after manual unlock.
 
+### Gonococcal Infections
+
+- Built from the gonorrhea section of RxPrep 2023 Chapter 23 and reconciled with CDC STI treatment guidance, current screening recommendations, CDC 2024 doxycycline PEP guidance, and the December 2025 FDA approvals for Nuzolvence and Blujepa.
+- The module treats gonorrhea as an anatomic-site disease. Urogenital, rectal, pharyngeal, conjunctival, and disseminated compartments receive exposure-specific history, specimens, complications, and follow-up.
+- NAAT is used for sensitive site-specific detection. Culture is preserved when antimicrobial susceptibility testing is needed, especially for persistent symptoms, positive pharyngeal follow-up, or suspected treatment failure.
+- Uncomplicated infection uses ceftriaxone 500 mg IM once below 150 kg and 1 g IM once at or above 150 kg. Doxycycline is added for 7 days in nonpregnant adults only when chlamydia has not been excluded.
+- Pharyngeal infection has no reliable CDC alternative to ceftriaxone and always receives culture or NAAT test of cure 7 to 14 days after treatment. Correctly treated uncomplicated urogenital and rectal disease does not receive routine test of cure, but every treated patient is retested at 3 months.
+- Cefixime 800 mg once is framed as an availability alternative for selected nonpharyngeal disease. Gentamicin 240 mg IM plus azithromycin 2 g once is restricted to severe cephalosporin allergy with attention to gastrointestinal intolerance and weaker pharyngeal evidence.
+- Nuzolvence is taught as zoliflodacin 3 g orally once for eligible patients at least 12 years old and 35 kg with uncomplicated urogenital gonorrhea. Pregnancy and reproductive warnings are explicit.
+- Blujepa is taught as gepotidacin 3,000 mg orally followed by another 3,000 mg about 12 hours later for eligible patients at least 12 years old and 45 kg with uncomplicated urogenital gonorrhea who have few or no treatment alternatives. QT, cholinergic, interaction, and label boundaries are explicit.
+- Pregnancy keeps the weight-based ceftriaxone regimen while concurrent chlamydia treatment follows pregnancy guidance. Maternal screening, neonatal prophylaxis, established ophthalmia, and adult conjunctivitis are separated.
+- DGI teaching connects acral pustules, tenosynovitis, asymmetric polyarthralgia, and septic arthritis to ceftriaxone 1 g every 24 hours, site and blood cultures, joint care, and AST-guided step-down. Meningitis and endocarditis use higher sustained IV exposure and specialist-directed duration.
+- Suspected cephalosporin failure triggers an audit for reinfection, exact regimen and weight, culture and AST before retreatment when possible, expert consultation, and public-health reporting within 24 hours.
+- Partner care covers the preceding 60 days, lawful expedited partner therapy, 7-day abstinence through partner treatment, three-month retesting, anatomy-based screening, HIV testing and PrEP, and population-specific doxy PEP shared decision-making.
+- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 130-question assessment bank.
+- Goodnotes remains unavailable because macOS reports a locked session. Any matching gonorrhea lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
