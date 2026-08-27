@@ -260,8 +260,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: six lessons, six native measurement, risk, lifestyle, first-line, combination, and longitudinal-control diagrams, and six embedded knowledge checks
 - Assessment: 100 original questions spanning technique, cuff fit, repeated averages, white-coat and masked patterns, classification, PREVENT risk, target selection, diet, sodium, potassium, activity, thiazide-like therapy, ACE inhibitors, ARBs, dihydropyridine calcium-channel blockers, beta blocker indications, single-pill combinations, albuminuric CKD, pregnancy risk, home monitoring, laboratory follow-up, and adherence barriers; ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: the current 2025 treatment framework and PREVENT threshold replaced older risk-threshold language; cuffless watches were excluded from clinical decision-making; the goal below 130 over 80 was paired with individual tolerance; dual RAAS blockade was rejected; class-specific monitoring and nonjudgmental access assessment were made part of the treatment plan
-- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 25, 2026 with 349 static pages generated
+- Automated verification: 100 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 12 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
 - Goodnotes note: the dedicated hypertension lecture export remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
 ### Resistant and Secondary Hypertension
