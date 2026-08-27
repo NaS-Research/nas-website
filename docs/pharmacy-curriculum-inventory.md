@@ -2526,6 +2526,24 @@ Current source reconciliations:
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 130-question assessment bank.
 - Goodnotes remains unavailable because macOS reports a locked session. Any matching genital herpes lecture will receive a documented reconciliation pass after manual unlock.
 
+### Anogenital HPV and Warts
+
+- Built from the genital warts section of RxPrep 2023 Chapter 23 and reconciled with CDC anogenital wart, HPV, vaccination, immunization schedule, and current Gardasil 9 labeling.
+- The module separates infection, visible warts, and pathologic precancer. HPV types 6 and 11 cause about 90 percent of anogenital warts, while persistent oncogenic types drive the principal precancer and cancer risk.
+- Typical flat, papular, or pedunculated warts are diagnosed visually. Pigmented, indurated, fixed, bleeding, ulcerated, worsening, uncertain, or treatment resistant lesions move to biopsy consideration, particularly with immune compromise.
+- HPV testing is kept inside its screening and abnormal-result role. It is not used to confirm a wart, test a partner, or function as a general STI test. Condyloma lata and neoplasia remain visible in the differential.
+- Observation is presented as a valid shared choice because untreated warts can resolve, remain unchanged, or enlarge. Treatment selection uses anatomy, lesion burden, reach, pregnancy, immune status, cost, adverse effects, convenience, expertise, and patient goals.
+- Imiquimod 5 percent uses bedtime application three times weekly for up to 16 weeks, while 3.75 percent uses nightly application for up to 8 weeks. Both are washed off after 6 to 10 hours and include local inflammatory and barrier method counseling.
+- Podofilox 0.5 percent uses twice daily application for 3 days followed by 4 days without therapy for up to four cycles. Total wart area and daily volume limits, external anatomy, tissue injury, and pregnancy exclusion are explicit.
+- Sinecatechins 15 percent uses three daily applications for no more than 16 weeks and is not washed off between applications. Pregnancy, immune compromise, genital herpes, local injury, and sexual contact boundaries remain visible.
+- Cryotherapy, surgical removal, laser, electrosurgery, TCA, and BCA are compared by burden, anesthesia, healing, recurrence, scarring, pigment change, plume safety, and caustic spread.
+- External anal disease triggers consideration of anal canal inspection. Cervical lesions require specialist assessment and biopsy evaluation for HSIL, vaginal cryoprobes are rejected, and intra-anal disease moves to colorectal specialist care.
+- Immune compromise lowers the biopsy threshold. Pregnancy excludes podofilox, podophyllin, and sinecatechins, and generally avoids imiquimod until more data are available. Cesarean delivery is not used solely to prevent neonatal HPV.
+- Gardasil 9 is taught as a noninfectious L1 virus like particle vaccine that prevents new infection but does not treat established disease. Routine, catch-up, shared decision, two dose, three dose, minimum interval, immune status, pregnancy delay, and interrupted series rules are integrated.
+- Counseling addresses recurrence, partner sharing, uncertainty about acquisition timing, partial condom protection, vaccination, screening, smoking, immune status, and stigma without blame.
+- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 134-question assessment bank.
+- Goodnotes remains unavailable because macOS reports a locked session. Any matching HPV or genital wart lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
