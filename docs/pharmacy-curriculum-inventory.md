@@ -2753,6 +2753,27 @@ Current source reconciliations:
 - Build verification: Next.js production build passed August 27, 2026 with 513 static pages generated.
 - Goodnotes source reconciliation remains pending until the local library can be read through the unlocked application session.
 
+### Cytomegalovirus Pharmacotherapy
+
+- Built from the focused CMV antiviral material in RxPrep 2023 and reconciled with the NIH adult and adolescent opportunistic-infection guideline updated July 2025 and reviewed March 2026 plus current anti-CMV product labeling.
+- CMV latency, advanced HIV, transplant serostatus, immunosuppression, organ-specific warning signs, immune recovery, and urgency establish the decision state before prophylaxis or treatment.
+- Organ-specific examination, ocular fluid, tissue histopathology, cerebrospinal fluid, blood testing limits, shedding, and competing diagnoses separate CMV detection from end-organ disease.
+- Ganciclovir acyclic guanine structure, pUL97 activation, host phosphorylation, active triphosphate, pUL54 polymerase inhibition, UL97 resistance, UL54 resistance, and cross-resistance connect medicinal chemistry to clinical response.
+- Intravenous ganciclovir induction, maintenance, renal adjustment, sterile-water reconstitution, paraben precipitation risk, dilution, one-hour infusion, hazardous handling, blood-count monitoring, renal surveillance, and organ response form one accountable delivery system.
+- Valganciclovir L-valyl prodrug chemistry, food effect, oral exposure, induction, maintenance, tablet and oral-solution administration, renal tables, and pediatric body-surface-area and modified-Schwartz dosing are explicit.
+- Severe marrow suppression, renal accumulation, fetal toxicity, impaired fertility, mutagenesis, carcinogenesis, pregnancy, lactation, contraception, handling, spill response, and caregiver counseling are translated into active safety decisions.
+- Foscarnet kinase-independent pyrophosphate-site inhibition is connected to renal dosing, hydration, infusion rate, calcium, magnesium, potassium, phosphate, QT, torsades, seizures, sodium burden, and genital ulceration.
+- Cidofovir host-kinase activation, polymerase inhibition, weekly induction, every-other-week maintenance, the complete four-gram probenecid schedule, saline hydration, renal exclusions, proteinuria, nephrotoxin separation, and ocular toxicity are treated as one inseparable system.
+- Letermovir terminase-complex inhibition, current HSCT and high-risk donor-positive recipient-negative kidney-transplant prophylaxis, route, duration, cyclosporine dose reduction, immunosuppressant monitoring, contraindications, and transporter interactions replace older HSCT-only teaching.
+- Maribavir direct pUL97 inhibition, refractory post-transplant eligibility, age and weight limits, twice-daily dosing, enteral administration, inducer adjustments, immunosuppressant interactions, dysgeusia, relapse, and mechanistic antagonism with ganciclovir are integrated.
+- Retinitis, immediately sight-threatening disease, gastrointestinal disease, pneumonia, neurologic disease, intravitreal therapy, systemic protection, duration, maintenance, immune recovery, pregnancy, failure analysis, resistance testing, and follow-up ownership close the clinical loop.
+- It contains twelve focused lessons, twelve responsive diagrams, twelve embedded checks, and an original assessment bank exceeding the 100-question requirement.
+- The older RxPrep statement that letermovir is approved only after allogeneic HSCT is not retained. Current labeling also includes prophylaxis for selected high-risk kidney-transplant recipients.
+- Automated verification: 208 unique question IDs and prompts, four distinct answer choices per question, valid lesson links, twelve lesson sections, twelve diagrams, and no em dash or en dash characters in public module prose.
+- Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, twelve lessons, twelve diagrams, twelve embedded checks, ten questions per test, a different second random set, scoring with explanations and ten remediation links, and zero console errors.
+- Build verification: Next.js production build passed August 27, 2026 with 514 static pages generated.
+- Goodnotes source reconciliation remains pending until the local library can be read through an unlocked application session.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:

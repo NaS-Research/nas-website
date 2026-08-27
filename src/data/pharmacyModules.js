@@ -183,6 +183,7 @@ import { terbinafineGriseofulvinPharmacologyModule } from "@/data/modules/terbin
 import { localOropharyngealAntifungalPharmacologyModule } from "@/data/modules/localOropharyngealAntifungalPharmacology";
 import { influenzaAntiviralPharmacologyModule } from "@/data/modules/influenzaAntiviralPharmacology";
 import { herpesSimplexVaricellaAntiviralPharmacologyModule } from "@/data/modules/herpesSimplexVaricellaAntiviralPharmacology";
+import { cytomegalovirusPharmacotherapyModule } from "@/data/modules/cytomegalovirusPharmacotherapy";
 
 const sources = {
   foundation: "Foundation",
@@ -601,5 +602,6 @@ pharmacyModules.push(terbinafineGriseofulvinPharmacologyModule);
 pharmacyModules.push(localOropharyngealAntifungalPharmacologyModule);
 pharmacyModules.push(influenzaAntiviralPharmacologyModule);
 pharmacyModules.push(herpesSimplexVaricellaAntiviralPharmacologyModule);
+pharmacyModules.push(cytomegalovirusPharmacotherapyModule);
 
 export const pharmacySubmoduleCount = pharmacyModules.reduce((total, module) => total + module.submodules.length, 0);
