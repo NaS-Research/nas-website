@@ -2234,6 +2234,21 @@ Current source reconciliations:
 - Hypersensitivity, macrolide-allergy context, gastrointestinal effects, bleeding, cytopenias, P-gp evidence, pregnancy, lactation, response, recurrence follow-up, stewardship, contact precautions, and sporicidal cleaning receive actionable ownership.
 - Goodnotes was not required to advance this RxPrep-defined milestone. Any later matching lecture material will receive a documented reconciliation pass.
 
+### Rifaximin Pharmacology
+
+- Built from the rifaximin section of RxPrep 2023 Chapter 22, then reconciled with the June 2025 XIFAXAN label, CDC Yellow Book 2026 travelers' diarrhea guidance, the 2026 ACG hepatic encephalopathy guideline highlights, current ACG IBS guidance, and current IDSA and SHEA CDI guidance.
+- The module teaches the rifamycin scaffold, beta-subunit binding to bacterial DNA-dependent RNA polymerase, transcription inhibition, rpoB-mediated resistance, class cross-resistance, limited oral absorption, fecal recovery, systemic-treatment limits, food flexibility, and the renal-evidence boundary.
+- The three labeled indications remain separate. Noninvasive travelers' diarrhea uses 200 mg three times daily for three days from age 12, hepatic encephalopathy recurrence prevention uses 550 mg twice daily in adults, and adult IBS-D uses 550 mg three times daily for fourteen days with up to two identical retreatments.
+- Travelers' diarrhea selection begins with functional severity, hydration, fever, blood, and invasive-pathogen risk. Mild illness does not receive routine antibiotics, while dysentery or febrile diarrhea follows an invasive-disease pathway rather than rifaximin.
+- Hepatic encephalopathy teaching preserves acute stabilization, neurologic alternatives, precipitant correction, lactulose titration, nutrition, function, and transplant context. Rifaximin is presented as recurrence prevention, not as a replacement for diagnosis or precipitant management.
+- IBS-D teaching uses a confirmed phenotype, alarm-feature assessment, a fixed course, patient-centered response measures, and explicit retreatment counting rather than continuous unbounded therapy or a microbiome test of cure.
+- Quantity calculations remain visible: nine 200 mg tablets for travelers' diarrhea, forty-two 550 mg tablets for one IBS-D course, and sixty 550 mg tablets for thirty days of hepatic encephalopathy prevention.
+- Child-Pugh A, B, and C exposure increases, severe hepatic-impairment caution, cyclosporine-mediated transporter inhibition, additive exposure risk, warfarin INR ownership, and CYP3A uncertainty in severe liver disease receive actionable monitoring.
+- Current rifamycin hypersensitivity, indication-specific adverse effects, C. difficile-associated diarrhea, pregnancy, lactation, renal, and indication-specific pediatric evidence replace passive warning lists and retired pregnancy letters.
+- The recurrent-CDI boundary is explicit. Rifaximin is not routine CDI monotherapy. A selected adult with multiple recurrences may receive oral vancomycin followed by off-label rifaximin 400 mg three times daily for twenty days, with resistance and alternative recurrence strategies reviewed.
+- The module contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a 160-question bank across thirty-eight concepts and four reasoning levels plus eight original phenotype, quantity, HE, IBS-D, exposure, CDI-sequence, and integration cases.
+- Goodnotes was not required to advance this RxPrep-defined milestone. Any later matching lecture material will receive a documented reconciliation pass.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
