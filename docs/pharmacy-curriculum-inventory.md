@@ -2352,6 +2352,22 @@ Current source reconciliations:
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 174-question assessment bank.
 - Goodnotes remains unavailable because macOS reports a locked session. Any matching HAP or VAP lecture will receive a documented reconciliation pass after manual unlock.
 
+### Tuberculosis
+
+- Built from the tuberculosis section of RxPrep 2023 Chapter 23 and reconciled with the 2025 ATS, CDC, ERS, and IDSA treatment update, current CDC diagnosis and public-health guidance, the preferred latent-infection regimen table, four-month rifapentine and moxifloxacin implementation guidance, and current CDC adverse-event, pregnancy, lactation, and HIV guidance.
+- The module separates latent infection, active pulmonary disease, extrapulmonary disease, and ongoing transmission. Granuloma biology, immune suppression, aerosol generation, disease site, burden, ventilation, exposure duration, and treatment response determine the clinical and public-health frame.
+- TST and IGRA are treated as immune-sensitization tests rather than active-disease tests. BCG history, return feasibility, risk-specific TST thresholds, false-negative boundaries, and a complete disease-exclusion plan are explicit.
+- Presumed pulmonary disease activates airborne precautions, at least three sputum specimens collected 8 to 24 hours apart with one early-morning specimen, smear, NAA, culture, molecular and growth-based susceptibility, and prompt public-health reporting.
+- LTBI selection prioritizes short rifamycin pathways when safe. Exact adult 3HP, 4R, 3HR, 6H, and 9H doses and dose counts, source susceptibility, pregnancy, pyridoxine, HIV therapy, organ risk, interaction ownership, and completion are included.
+- First-line pharmacology connects isoniazid activation and mycolic-acid synthesis, rifamycin RNA polymerase inhibition and induction, pyrazinamide sterilizing activity, ethambutol arabinosyl transferase inhibition, and moxifloxacin inside the evidence-matched regimen to actionable safety monitoring.
+- The current four-month HPZM pathway is taught precisely as 56 daily doses of rifapentine, moxifloxacin, isoniazid, and weight-based pyrazinamide followed by 63 daily doses of rifapentine, moxifloxacin, and isoniazid. Age, weight, pregnancy, lactation, site, susceptibility, QT, interaction, and prior-exposure exclusions remain visible.
+- The standard six-month HRZE and HR pathway remains essential, with dose-based completion and selective continuation extension. The distinct four-month pediatric pathway is limited to the guideline-defined nonsevere phenotype.
+- Monthly clinical monitoring, hepatic warning symptoms, ethambutol visual toxicity, isoniazid neuropathy, linezolid toxicity, microbiologic response, rifamycin interactions, ART timing, pregnancy and lactation narratives, and kidney and liver disease are linked to named actions.
+- The 2023 default of prolonged injectable-heavy resistant-TB treatment is flagged as outdated. Eligible rifampin-resistant disease now follows the 2025 six-month all-oral BPaLM or BPaL pathways according to fluoroquinolone susceptibility, with expert and public-health oversight.
+- DOT and vDOT, missed-dose support, response failure, culture conversion, contact investigation, dose-count completion, treatment records, and recurrence ownership close the loop from first dose to community protection.
+- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 180-question assessment bank.
+- Goodnotes remains unavailable because macOS reports a locked session. Any matching tuberculosis lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
