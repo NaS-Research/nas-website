@@ -371,7 +371,7 @@ export default async function PharmacyModulePage({ params }) {
       <header className="pharmacy-module-hero">
         <div className="nas-shell">
           <Link href="/learn/pharmacy#curriculum" className="learning-back">← Pharmacy curriculum</Link>
-          <div className="pharmacy-module-hero__meta"><span>Module {module.number}</span><span>{module.submodules.length} lessons</span><span>{module.source}</span></div>
+          <div className="pharmacy-module-hero__meta"><span>Module {module.number}</span><span>{module.submodules.length} lessons</span></div>
           <h1>{module.title}</h1>
           <p>{module.description}</p>
           <div className="pharmacy-module-hero__outcomes">
