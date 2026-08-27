@@ -154,6 +154,7 @@ import LefamulinPharmacologyVisual, { lefamulinPharmacologyVisualTypes } from "@
 import FidaxomicinPharmacologyVisual, { fidaxomicinPharmacologyVisualTypes } from "@/components/learn/FidaxomicinPharmacologyVisual";
 import RifaximinPharmacologyVisual, { rifaximinPharmacologyVisualTypes } from "@/components/learn/RifaximinPharmacologyVisual";
 import FosfomycinPharmacologyVisual, { fosfomycinPharmacologyVisualTypes } from "@/components/learn/FosfomycinPharmacologyVisual";
+import NitrofurantoinPharmacologyVisual, { nitrofurantoinPharmacologyVisualTypes } from "@/components/learn/NitrofurantoinPharmacologyVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -489,6 +490,7 @@ export default async function PharmacyModulePage({ params }) {
               {module.slug === "fidaxomicin-pharmacology" && fidaxomicinPharmacologyVisualTypes.includes(submodule.visual) && <FidaxomicinPharmacologyVisual type={submodule.visual} />}
               {module.slug === "rifaximin-pharmacology" && rifaximinPharmacologyVisualTypes.includes(submodule.visual) && <RifaximinPharmacologyVisual type={submodule.visual} />}
               {module.slug === "fosfomycin-pharmacology" && fosfomycinPharmacologyVisualTypes.includes(submodule.visual) && <FosfomycinPharmacologyVisual type={submodule.visual} />}
+              {module.slug === "nitrofurantoin-pharmacology" && nitrofurantoinPharmacologyVisualTypes.includes(submodule.visual) && <NitrofurantoinPharmacologyVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
