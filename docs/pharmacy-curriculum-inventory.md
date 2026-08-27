@@ -404,8 +404,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: six lessons, six native vitamin-K-cycle, initiation, INR, interaction, reversal, and longitudinal-care diagrams, and six embedded knowledge checks
 - Assessment: 100 original questions spanning VKORC1, factor turnover, protein C and S, stereochemistry, warfarin-preferred indications, INR goals, initial dosing, VTE overlap, acute HIT, weekly dosing, INR trend, TTR, missed doses, vitamin K diet, CYP inhibition and induction, illness, pharmacodynamic bleeding, elevated INR, major bleeding reversal, procedures, pregnancy, rare toxicity, organ dysfunction, and home testing; ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: warfarin effect followed factor turnover rather than plasma exposure; early INR did not substitute for required acute VTE overlap; DOACs were not offered for mechanical valves; valve INR goals remained prosthesis and risk specific; acute HIT excluded early warfarin; dose changes used actual total weekly exposure and trend; vitamin K consistency replaced food avoidance; interaction monitoring covered onset and offset; major bleeding used source control, four-factor PCC, and intravenous vitamin K; bridging was risk selected; pregnancy used narrative risk and specialist planning rather than letter categories
-- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 25, 2026 with 361 static pages generated
+- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, at least 12 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
 - Goodnotes note: the dedicated warfarin lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
 ### Direct Oral Anticoagulants
