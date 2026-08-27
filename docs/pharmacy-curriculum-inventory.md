@@ -296,8 +296,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: six lessons, six native zinc-binding, RAAS ligand, calcium-channel scaffold, central access, direct-vasodilator, and product-integration diagrams, and six embedded knowledge checks
 - Assessment: 104 original questions spanning zinc coordination, thiol chemistry, ester prodrugs, active nonprodrugs, phosphinate binding, tetrazole and carboxylate recognition, biphenyl hydrophobic domains, active metabolites, renin peptidomimetic design, dihydropyridine oxidation, amlodipine ionization, release systems, central access, false-transmitter activation, aryloxypropanolamines, hydralazine acetylation, minoxidil sulfation, nitro donor chemistry, endothelin antagonism, salts, stereochemistry, active species, and evidence boundaries; ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: class suffixes were not treated as proof of prodrug status; losartan was described as an active parent with a more potent active metabolite; high target affinity was separated from oral exposure; calcium-channel formulation was treated as part of pharmacokinetics; reactive and donor chemistry was paired with product-specific toxicity; structural predictions were explicitly limited by labeling and clinical evidence
-- Automated verification: 104 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 25, 2026 with 352 static pages generated
+- Automated verification: 104 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 12 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
 - Goodnotes note: the dedicated antihypertensive medicinal-chemistry lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
 ### Dyslipidemia Pathophysiology and Risk
