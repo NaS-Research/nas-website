@@ -26,6 +26,7 @@ This ledger records modules verified under the current curriculum-build workflow
 | Chronic Hepatitis B | Infectious Diseases | 100 original questions | RxPrep 2023 hepatitis background, serology, polymerase-inhibitor, interferon, vaccine, monitoring, and coinfection material on printed pages 296 through 301 | 2025 AASLD and IDSA practice guideline, 2024 and 2026 WHO guidance, current CDC screening, pregnancy, vaccine and perinatal recommendations, and current FDA labeling | Production build passed, 533 pages generated |
 | Hepatitis C | Infectious Diseases | 100 original questions | RxPrep 2023 hepatitis C, direct-acting antiviral, interaction, ribavirin, and monitoring material on printed pages 296 through 300 | May 2026 AASLD and IDSA HCV Guidance, current CDC testing recommendations, and current MAVYRET, EPCLUSA, and VOSEVI labeling | Production build passed, 534 pages generated |
 | Cirrhosis and Decompensated Liver Disease | Renal & Liver Disease | 100 original questions | RxPrep 2023 chronic liver disease, portal hypertension, variceal bleeding, hepatic encephalopathy, ascites, SBP, and HRS material on printed pages 301 through 306 | Current AASLD portal-hypertension, ascites, SBP, HRS, outpatient-cirrhosis, and encephalopathy materials plus current TERLIVAZ and XIFAXAN labeling | Production build passed, 535 pages generated |
+| Alcohol-Associated Liver Disease | Renal & Liver Disease | 100 original questions | RxPrep 2023 alcohol-associated liver disease, withdrawal, AUD medication, and nutrition material on printed pages 302 and 303 | 2024 ACG guideline, 2019 AASLD guidance with age identified, 2020 ASAM withdrawal guideline, and current medication labeling | Production build passed, 536 pages generated |
 
 Each module assessment randomly draws 10 questions from its complete bank through the shared pharmacy assessment system. The system randomizes question order and answer choices, prevents duplicate questions in one attempt, reports score and explanations, and links each answer back to its lesson section.
 
@@ -73,11 +74,14 @@ Each module assessment randomly draws 10 questions from its complete bank throug
 - The local RxPrep copy was reviewed for liver severity, portal hypertension, variceal bleeding, hepatic encephalopathy, ascites, SBP, HRS, diuretics, albumin, paracentesis, vasoactive therapy, antibiotic prophylaxis, and transplant referral.
 - The cirrhosis module replaces the 2023 midodrine plus octreotide emphasis for HRS with current FDA-labeled terlipressin plus albumin, including the boxed respiratory-failure warning, oxygenation requirements, ischemia contraindications, and volume-risk controls.
 - The module also identifies that the formal AASLD hepatic encephalopathy guideline is from 2014 and uses newer AASLD clinical updates for current lactulose, rifaximin, ammonia, nutrition, and precipitant-management teaching.
+- Goodnotes remained unavailable because macOS was locked during the focused alcohol-associated-liver-disease source check. The local RxPrep copy was reviewed for alcohol injury, withdrawal, AUD pharmacotherapy, nutrition, thiamine, and Wernicke prevention.
+- The alcohol-associated-liver-disease module replaces the 2023 medication list with current organ-specific selection. It identifies acamprosate renal constraints, naltrexone opioid and liver constraints, baclofen's off-label role, and the current ACG recommendation against disulfiram across ALD.
+- The module uses the 2024 ACG MELD threshold for severe alcohol-associated hepatitis, day 4 or 7 Lille response testing, corticosteroid stop logic, adjunctive intravenous NAC, active nutrition therapy, and modern transplant selection rather than a rigid abstinence-duration rule.
 - Obsolete or changing source content is reconciled explicitly. Discontinued agents are identified as historical, uncommon older agents are separated from current practice, and pregnancy-letter classifications are not used.
 
 ## Next verified-build target
 
-Continue the hepatology sequence with alcohol-associated liver disease. Search the restored Goodnotes library for dedicated lecture material when the Mac is unlocked, then reconcile accessible course content with current AASLD guidance and current FDA labeling before implementation.
+Continue the hepatology sequence with drug-induced liver injury. Search the restored Goodnotes library for dedicated lecture material when the Mac is unlocked, then reconcile accessible course content with current AASLD guidance, LiverTox, and current FDA labeling before implementation.
 
 ## Remaining-work rule
 

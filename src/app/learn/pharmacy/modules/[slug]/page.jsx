@@ -208,6 +208,7 @@ import InvasiveCandidiasisVisual, { invasiveCandidiasisVisualTypes } from "@/com
 import ChronicHepatitisBVisual, { chronicHepatitisBVisualTypes } from "@/components/learn/ChronicHepatitisBVisual";
 import HepatitisCVisual, { hepatitisCVisualTypes } from "@/components/learn/HepatitisCVisual";
 import CirrhosisDecompensatedVisual, { cirrhosisDecompensatedVisualTypes } from "@/components/learn/CirrhosisDecompensatedVisual";
+import AlcoholAssociatedLiverDiseaseVisual, { alcoholAssociatedLiverDiseaseVisualTypes } from "@/components/learn/AlcoholAssociatedLiverDiseaseVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -597,6 +598,7 @@ export default async function PharmacyModulePage({ params }) {
               {module.slug === "chronic-hepatitis-b" && chronicHepatitisBVisualTypes.includes(submodule.visual) && <ChronicHepatitisBVisual type={submodule.visual} />}
               {module.slug === "hepatitis-c" && hepatitisCVisualTypes.includes(submodule.visual) && <HepatitisCVisual type={submodule.visual} />}
               {module.slug === "cirrhosis-decompensated-liver-disease" && cirrhosisDecompensatedVisualTypes.includes(submodule.visual) && <CirrhosisDecompensatedVisual type={submodule.visual} />}
+              {module.slug === "alcohol-associated-liver-disease" && alcoholAssociatedLiverDiseaseVisualTypes.includes(submodule.visual) && <AlcoholAssociatedLiverDiseaseVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
