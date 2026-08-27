@@ -165,6 +165,7 @@ import CommunityAcquiredPneumoniaAdultsVisual, { communityAcquiredPneumoniaAdult
 import HospitalVentilatorAssociatedPneumoniaVisual, { hospitalVentilatorAssociatedPneumoniaVisualTypes } from "@/components/learn/HospitalVentilatorAssociatedPneumoniaVisual";
 import TuberculosisVisual, { tuberculosisVisualTypes } from "@/components/learn/TuberculosisVisual";
 import InfectiveEndocarditisVisual, { infectiveEndocarditisVisualTypes } from "@/components/learn/InfectiveEndocarditisVisual";
+import IntraAbdominalInfectionsVisual, { intraAbdominalInfectionsVisualTypes } from "@/components/learn/IntraAbdominalInfectionsVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -511,6 +512,7 @@ export default async function PharmacyModulePage({ params }) {
               {module.slug === "hospital-ventilator-associated-pneumonia" && hospitalVentilatorAssociatedPneumoniaVisualTypes.includes(submodule.visual) && <HospitalVentilatorAssociatedPneumoniaVisual type={submodule.visual} />}
               {module.slug === "tuberculosis" && tuberculosisVisualTypes.includes(submodule.visual) && <TuberculosisVisual type={submodule.visual} />}
               {module.slug === "infective-endocarditis" && infectiveEndocarditisVisualTypes.includes(submodule.visual) && <InfectiveEndocarditisVisual type={submodule.visual} />}
+              {module.slug === "intra-abdominal-infections" && intraAbdominalInfectionsVisualTypes.includes(submodule.visual) && <IntraAbdominalInfectionsVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>

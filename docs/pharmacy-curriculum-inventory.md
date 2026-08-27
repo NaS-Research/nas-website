@@ -2385,6 +2385,21 @@ Current source reconciliations:
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 180-question assessment bank.
 - Goodnotes remains unavailable because macOS reports a locked session. Any matching endocarditis lecture will receive a documented reconciliation pass after manual unlock.
 
+### Intra-Abdominal Infections
+
+- Built from the intra-abdominal infection section of RxPrep 2023 Chapter 23 and reconciled with the 2024 IDSA complicated intra-abdominal infection update, the 2024 Surgical Infection Society guideline update, STOP-IT, the 2024 IDSA and ASM microbiology laboratory guide, and current AASLD ascites and spontaneous bacterial peritonitis guidance.
+- The module distinguishes uncomplicated and complicated infection, primary, secondary, and tertiary peritonitis, physiology, acquisition, host reserve, and source-control delay. Complicated describes anatomic extension rather than severity alone.
+- Imaging is organized by the question it must answer. Contrast-enhanced CT defines most adult abscess and postoperative anatomy, ultrasound begins biliary evaluation, ultrasound or MRI can reduce radiation in pregnancy, and persistent illness triggers repeat imaging.
+- Fresh fluid or tissue obtained during source control is prioritized over old-drain swabs. Blood cultures are selected by shock, organ dysfunction, immune state, cholangitis, healthcare exposure, and resistance risk, then used to narrow therapy.
+- Drainage, debridement, repair, removal, and decompression are treated as therapeutic interventions rather than procedural footnotes. A completed procedure is not assumed to be adequate when leak, necrosis, obstruction, loculation, or drain failure remains.
+- Community therapy centers enteric gram-negative and anaerobic activity. Pseudomonas, ESBL, enterococcal, MRSA, and Candida coverage each requires a named risk, local ecology, source evidence, or culture result.
+- Common adult regimen frames include ceftriaxone 2 g daily plus metronidazole 500 mg every 8 to 12 hours, piperacillin-tazobactam, cefepime plus metronidazole, meropenem, and ertapenem with explicit organ, toxicity, and spectrum boundaries.
+- The older RxPrep default of 4 to 7 days for mild to moderate disease, 7 to 14 days for severe disease, and at least 14 days for abscess is flagged as outdated after adequate source control. Current evidence supports no more than four days, or 96 hours, for most controlled cIAI. Persistent illness requires imaging and source reassessment instead of blind extension.
+- Cholecystitis is linked to definitive gallbladder management, while septic cholangitis requires prompt antibiotics and urgent biliary decompression. Drainage changes the remaining duration and culture-narrowing plan.
+- SBP teaching includes the ascitic PMN threshold of at least 250 cells per cubic millimeter, bedside bottle inoculation, third-generation cephalosporin therapy, albumin 1.5 g/kg on day 1 and 1 g/kg on day 3 when indicated, secondary-peritonitis clues, and narrow prophylaxis indications.
+- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 172-question assessment bank.
+- Goodnotes remains unavailable because macOS reports a locked session. Any matching intra-abdominal infection lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
