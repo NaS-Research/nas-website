@@ -208,6 +208,7 @@ import { cirrhosisDecompensatedLiverDiseaseModule } from "@/data/modules/cirrhos
 import { alcoholAssociatedLiverDiseaseModule } from "@/data/modules/alcoholAssociatedLiverDisease";
 import { drugInducedLiverInjuryModule } from "@/data/modules/drugInducedLiverInjury";
 import { acuteLiverFailureModule } from "@/data/modules/acuteLiverFailure";
+import { majorDepressiveDisorderModule } from "@/data/modules/majorDepressiveDisorder";
 
 const sources = {
   foundation: "Foundation",
@@ -652,6 +653,7 @@ basePharmacyModules.push(
   alcoholAssociatedLiverDiseaseModule,
   drugInducedLiverInjuryModule,
   acuteLiverFailureModule,
+  majorDepressiveDisorderModule,
 );
 
 const curriculumAreaGroups = [
@@ -710,6 +712,10 @@ const curriculumAreaGroups = [
   {
     area: "Neurologic Conditions",
     modules: [multipleSclerosisModule, myastheniaGravisModule],
+  },
+  {
+    area: "Psychiatric Conditions",
+    modules: [majorDepressiveDisorderModule],
   },
   {
     area: "Gastrointestinal Conditions",
