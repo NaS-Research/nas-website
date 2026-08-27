@@ -2446,6 +2446,21 @@ Current source reconciliations:
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 130-question assessment bank.
 - Goodnotes remains unavailable because macOS reports a locked session. Any matching CDI lecture will receive a documented reconciliation pass after manual unlock.
 
+### Travelers' Diarrhea
+
+- Built from the travelers' diarrhea section of RxPrep 2023 Chapter 23 and reconciled with the 2026 CDC Yellow Book travelers' diarrhea, post-travel diarrhea, pregnancy travel, pediatric travel, and current rifaximin labeling.
+- Destination, itinerary, food and water, timing, stool phenotype, functional impact, duration, host reserve, and antimicrobial exposure define the initial syndrome.
+- The older stool-count-centered approach is replaced by functional severity. Mild disease is tolerable and receives no antibiotic, moderate disease interferes with activities and allows individualized antibiotic use, and severe disease is incapacitating and should receive an antibiotic. All dysentery is severe.
+- Oral rehydration solution, exact mixing volume, safe water, continued breastfeeding and nutrition, dehydration signs, and escalation to IV support form the physiologic core of treatment.
+- Adult loperamide uses 4 mg initially and 2 mg after each loose stool to a maximum of 16 mg per day. It is not used as monotherapy with fever or bloody diarrhea. Bismuth safety includes salicylate, anticoagulant, kidney, pregnancy, pediatric, gout, bleeding, and tinnitus boundaries.
+- Azithromycin is preferred for dysentery, febrile diarrhea, South or Southeast Asia, and suspected fluoroquinolone resistance. Adult single-dose and three-day regimens are included.
+- Fluoroquinolone therapy is limited by Campylobacter and Shigella resistance plus tendon, nerve, CNS, glycemic, QT, aortic, pregnancy, and CDI risk.
+- Rifaximin 200 mg three times daily for three days and rifamycin SV 388 mg twice daily for three days are limited to noninvasive disease. Fever, blood, or suspected Campylobacter, Salmonella, or Shigella requires another plan.
+- Routine antibiotic prophylaxis is discouraged because resistant colonization, CDI, adverse effects, and lost future options outweigh benefit for most travelers.
+- Children, pregnancy, older adults, immune compromise, persistent symptoms beyond 14 days, Giardia and other parasites, CDI, postinfectious syndromes, travel-kit instructions, and post-travel handoff are integrated.
+- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 130-question assessment bank.
+- Goodnotes remains unavailable because macOS reports a locked session. Any matching travel-health lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:

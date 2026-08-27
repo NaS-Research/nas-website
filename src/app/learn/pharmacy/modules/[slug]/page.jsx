@@ -169,6 +169,7 @@ import IntraAbdominalInfectionsVisual, { intraAbdominalInfectionsVisualTypes } f
 import SkinSoftTissueInfectionsVisual, { skinSoftTissueInfectionsVisualTypes } from "@/components/learn/SkinSoftTissueInfectionsVisual";
 import UrinaryTractInfectionsVisual, { urinaryTractInfectionsVisualTypes } from "@/components/learn/UrinaryTractInfectionsVisual";
 import ClostridioidesDifficileInfectionVisual, { clostridioidesDifficileInfectionVisualTypes } from "@/components/learn/ClostridioidesDifficileInfectionVisual";
+import TravelersDiarrheaVisual, { travelersDiarrheaVisualTypes } from "@/components/learn/TravelersDiarrheaVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -519,6 +520,7 @@ export default async function PharmacyModulePage({ params }) {
               {module.slug === "skin-soft-tissue-infections" && skinSoftTissueInfectionsVisualTypes.includes(submodule.visual) && <SkinSoftTissueInfectionsVisual type={submodule.visual} />}
               {module.slug === "urinary-tract-infections" && urinaryTractInfectionsVisualTypes.includes(submodule.visual) && <UrinaryTractInfectionsVisual type={submodule.visual} />}
               {module.slug === "clostridioides-difficile-infection" && clostridioidesDifficileInfectionVisualTypes.includes(submodule.visual) && <ClostridioidesDifficileInfectionVisual type={submodule.visual} />}
+              {module.slug === "travelers-diarrhea" && travelersDiarrheaVisualTypes.includes(submodule.visual) && <TravelersDiarrheaVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
