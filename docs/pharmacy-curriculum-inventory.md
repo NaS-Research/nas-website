@@ -212,8 +212,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: six lessons, six native pharmacophore, ring, side-chain, stereochemistry, beta blocker, and alpha blocker diagrams, and six embedded knowledge checks
 - Assessment: 100 original questions spanning three-dimensional pharmacophore recognition, hydroxyl patterns, COMT, MAO, conjugation, nitrogen bulk, alpha substitution, direct and indirect activity, stereochemistry, aryloxypropanolamine recognition, lipophilicity, soft-drug design, quinazolines, tamsulosin, and covalent alpha blockade; ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: structure-activity relationships were framed as trends rather than absolute receptor rules; catechol binding was separated from oral exposure; beta-1 preference was treated as whole-molecule and concentration dependent; ionizable amines were not treated as permanently charged; structural prediction was explicitly separated from approved indication and clinical outcomes
-- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 25, 2026 with 345 static pages generated
+- Automated verification: 100 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 12 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
 - Goodnotes note: the dedicated adrenergic agonist and antagonist medicinal-chemistry lecture export remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
 ### Diuretic Pharmacology
