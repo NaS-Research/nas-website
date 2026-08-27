@@ -1438,12 +1438,10 @@ Completed production modules:
 8. Urinary Incontinence
 9. Sexual Dysfunction
 10. Osteoporosis
-8. Urinary Incontinence
-9. Sexual Dysfunction
 
 The menstrual and gynecologic module includes menstrual assessment, PALM-COEIN classification, acute abnormal uterine bleeding, chronic heavy menstrual bleeding, dysmenorrhea, premenstrual disorders, endometriosis, and uterine fibroids. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 100-question assessment bank.
 
-The infertility module includes evaluation timing, the fertile window, female and male evaluation, PCOS-related ovulation induction, clomiphene and metformin, gonadotropin stimulation, trigger and luteal protocols, assisted reproduction, and OHSS prevention. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 100-question assessment bank.
+The infertility module includes evaluation timing, the fertile window, female and male evaluation, PCOS-related ovulation induction, clomiphene and metformin, gonadotropin stimulation, trigger and luteal protocols, assisted reproduction, and OHSS prevention. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 100-question assessment bank. Focused verification confirmed 100 unique identifiers and prompts, valid remediation links for all 10 lessons, at least eight questions per lesson, no malformed or duplicate answer choices, and no prohibited dash characters. The Next.js production build passed August 27, 2026 with 547 static pages generated.
 
 The contraception module includes person-centered selection, U.S. MEC, combined methods, estrogen eligibility, progestin-only methods, IUDs, the etonogestrel implant, emergency contraception, quick start, missed-use management, drug interactions, teach-back, method transitions, and reproductive planning. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, 3 directly exposed CDC guidance references, and a 108-question assessment bank across 27 concepts with coverage of every lesson. Focused verification confirmed 108 unique identifiers and prompts, four difficulty levels, valid links to all ten lessons, no malformed or duplicate answer choices, and no prohibited dash characters. The Next.js production build passed August 27, 2026 with 547 static pages generated.
 
