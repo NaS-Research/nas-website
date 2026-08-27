@@ -2544,6 +2544,24 @@ Current source reconciliations:
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 134-question assessment bank.
 - Goodnotes remains unavailable because macOS reports a locked session. Any matching HPV or genital wart lecture will receive a documented reconciliation pass after manual unlock.
 
+### Rickettsial, Ehrlichial, and Anaplasma Infections
+
+- Built from the rickettsial and related infections section of RxPrep 2023 Chapter 23 and reconciled with current CDC RMSF, ehrlichiosis, anaplasmosis, diagnostic, treatment, and tickborne disease guidance.
+- The module begins with a nonspecific febrile syndrome and builds probability from illness day, season, geography, travel, outdoor exposure, pets, host risk, rash evolution, CBC, sodium, liver tests, and organ findings. A remembered tick bite is not required.
+- Rickettsia rickettsii endothelial infection is connected to systemic vasculitis, capillary leak, tissue ischemia, cerebral edema, ARDS, shock, renal failure, DIC, necrosis, and limb injury. Rash can be late or absent, and early laboratory findings can be normal.
+- Ehrlichia monocyte infection and Anaplasma granulocyte infection are compared through leukopenia, thrombocytopenia, transaminitis, rash patterns, immune status, severity, PCR yield, and morulae limitations.
+- Ixodes coinfection teaching separates Borrelia findings from Babesia hemolysis. Doxycycline activity against anaplasmosis and many Lyme presentations is not misrepresented as babesiosis treatment.
+- Severity triage uses hemodynamics, oxygenation, neurologic findings, bleeding, renal and hepatic injury, cytopenias, oral tolerance, and follow-up reliability. IV doxycycline protects delivery in severe illness but does not have a different bacterial target from oral therapy.
+- Whole blood PCR is placed early for ehrlichiosis and anaplasmosis and loses sensitivity after doxycycline. RMSF whole blood PCR has lower sensitivity because infection centers in endothelium, while rash or eschar tissue can improve organism detection.
+- Paired acute and convalescent IgG IFA with a fourfold rise is the serologic confirmation pathway. Early negative serology, a negative RMSF blood PCR, or absence of morulae cannot justify withholding or stopping treatment.
+- Adults and patients at least 45 kg receive doxycycline 100 mg every 12 hours. Children below 45 kg receive 2.2 mg/kg per dose every 12 hours to a maximum of 100 mg per dose. Cation separation, tube feeds, water, posture, photosensitivity, and route reliability protect exposure.
+- RMSF and ehrlichiosis continue for at least 3 days after defervescence and clinical improvement, with a minimum 5 to 7 day total course. Anaplasmosis uses 10 to 14 days to cover possible concurrent Borrelia infection.
+- Lack of improvement within 48 hours activates reassessment for diagnosis, dangerous mimics, coinfection, complications, dose, cation exposure, vomiting, adherence, and source rather than automatic extension or unsupported resistance assumptions.
+- Doxycycline remains recommended for children of every age and for suspected RMSF during pregnancy. Short recommended pediatric courses have not shown permanent tooth staining. Severe allergy can require inpatient desensitization, while rifampin remains limited to selected mild anaplasmosis with expert input.
+- Asymptomatic tick bites do not receive prophylaxis for RMSF, ehrlichiosis, or anaplasmosis. Prevention, mechanical removal, a 2-week symptom watch, convalescent specimen ownership, and public health reporting close the system.
+- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 138-question assessment bank.
+- Goodnotes remains unavailable because macOS reports a locked session. Any matching tickborne infection lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:

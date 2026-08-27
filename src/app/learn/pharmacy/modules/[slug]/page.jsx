@@ -175,6 +175,7 @@ import GonococcalInfectionsVisual, { gonococcalInfectionsVisualTypes } from "@/c
 import ChlamydialInfectionsVisual, { chlamydialInfectionsVisualTypes } from "@/components/learn/ChlamydialInfectionsVisual";
 import GenitalHerpesVisual, { genitalHerpesVisualTypes } from "@/components/learn/GenitalHerpesVisual";
 import AnogenitalHpvWartsVisual, { anogenitalHpvWartsVisualTypes } from "@/components/learn/AnogenitalHpvWartsVisual";
+import RickettsialEhrlichialAnaplasmaVisual, { rickettsialEhrlichialAnaplasmaVisualTypes } from "@/components/learn/RickettsialEhrlichialAnaplasmaVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -531,6 +532,7 @@ export default async function PharmacyModulePage({ params }) {
               {module.slug === "chlamydial-infections" && chlamydialInfectionsVisualTypes.includes(submodule.visual) && <ChlamydialInfectionsVisual type={submodule.visual} />}
               {module.slug === "genital-herpes" && genitalHerpesVisualTypes.includes(submodule.visual) && <GenitalHerpesVisual type={submodule.visual} />}
               {module.slug === "anogenital-hpv-warts" && anogenitalHpvWartsVisualTypes.includes(submodule.visual) && <AnogenitalHpvWartsVisual type={submodule.visual} />}
+              {module.slug === "rickettsial-ehrlichial-anaplasma-infections" && rickettsialEhrlichialAnaplasmaVisualTypes.includes(submodule.visual) && <RickettsialEhrlichialAnaplasmaVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
