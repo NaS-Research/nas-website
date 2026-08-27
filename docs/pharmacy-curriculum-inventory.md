@@ -2197,6 +2197,17 @@ Current source reconciliations:
 - Retired pregnancy letters are excluded. Pregnancy and lactation decisions use exact route, systemic exposure, timing, infection severity, alternatives, maternal evidence, milk transfer, infant context, and follow-up.
 - Goodnotes could not be rechecked for a dedicated clindamycin lecture because macOS remained locked during this milestone. Any matching Goodnotes material will receive a documented reconciliation pass after manual unlock.
 
+### Nitroimidazole Pharmacology
+
+- Built from the metronidazole and related-drugs section of RxPrep 2023 Chapter 22, then reconciled with current metronidazole, tinidazole, and secnidazole labeling and CDC bacterial vaginosis and trichomoniasis guidance.
+- The module teaches 5-nitroimidazole reductive activation, reactive intermediates, DNA injury, useful anaerobic and protozoal activity, aerobic gaps, source control, resistance mechanisms, and the current C. difficile treatment boundary.
+- Bacterial vaginosis is separated from trichomoniasis. The module uses CDC's oral and vaginal BV options, sex-specific trichomoniasis regimens, partner management, abstinence counseling, three-month retesting for women, and the minimum three-week interval before NAAT in persistent disease.
+- Metronidazole, tinidazole, and secnidazole retain agent-specific dosing, administration, approved-use, alcohol, pregnancy, and lactation instructions rather than one class-wide shortcut.
+- Alcohol counseling explicitly distinguishes CDC's finding that convincing evidence is lacking from the current product labels that still instruct avoidance. Metronidazole and tinidazole use three-day post-treatment intervals, while secnidazole uses at least two days.
+- Disulfiram separation, warfarin and INR ownership, severe hepatic impairment, end-stage renal disease surveillance, neurologic toxicity, severe skin reactions, Cockayne syndrome, blood effects, and post-treatment candidiasis are taught as actionable decisions.
+- Retired pregnancy letters are excluded. CDC considers metronidazole low risk when pregnancy treatment is indicated, advises avoiding tinidazole in pregnancy, and current labels provide agent-specific breastfeeding interruption intervals.
+- Goodnotes was not required to advance this RxPrep-defined milestone. Any later matching lecture material will receive a documented reconciliation pass.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
