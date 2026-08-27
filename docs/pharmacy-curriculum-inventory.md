@@ -141,8 +141,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Assessment: 100 original questions spanning receptor mechanism, molecular access, anticholinergic burden, urinary selection, inhaled and perioperative use, ocular, gastrointestinal, vestibular, neurologic, interaction, monitoring, and toxicity decisions; ten sampled without replacement per attempt with answer order randomized
 - Scope boundary: detailed physostigmine selection, organophosphate poisoning, and cholinesterase regeneration remain reserved for the dedicated toxicology module
 - Source reconciliation: broad class claims were replaced with product-specific labeling, formulation and organ-function review, whole-regimen burden assessment, explicit cognitive and thermoregulatory risk, and stabilization before antidote selection
-- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 25, 2026 with 339 static pages generated
+- Automated verification: 100 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 16 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
 - Goodnotes note: the cholinoceptor-blocker lecture export remains pending because the Mac was locked during this milestone; its eventual review will be recorded as a source-reconciliation pass without blocking work on other accessible modules
 
 ### Cholinergic Medicinal Chemistry
