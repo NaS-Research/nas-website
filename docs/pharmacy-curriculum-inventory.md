@@ -344,8 +344,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: six lessons, six native disease-spectrum, prevention, antithrombotic, angina, testing, and longitudinal-care diagrams, and six embedded knowledge checks
 - Assessment: 100 original questions spanning CCD phenotypes, plaque, supply and demand, symptom equivalents, acute triage, rehabilitation, tobacco, lipids, pressure, SGLT2 and GLP-1 therapies, antiplatelets, DAPT, P2Y12 monotherapy, oral anticoagulation, beta-blocker indications, calcium channel blockers, nitrates, ranolazine, revascularization, surveillance testing, INOCA, changed symptoms, follow-up, and supplements; ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: symptom relief was separated from event prevention; successful PCI was not treated as cure of systemic atherosclerosis; current 2026 lipid goals superseded the older lipid framework; long-term beta-blocker outcome use was limited to current indications; post-PCI antithrombotic duration remained risk selected; oral-anticoagulant overlap was minimized in stable disease; routine surveillance testing without clinical change was rejected; nonobstructive anatomy did not invalidate ischemic symptoms
-- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 25, 2026 with 356 static pages generated
+- Automated verification: 100 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 8 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
 - Goodnotes note: the dedicated coronary disease lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
 ### Acute Coronary Syndromes
