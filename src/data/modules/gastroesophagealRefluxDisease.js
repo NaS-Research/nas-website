@@ -16,7 +16,7 @@ export const gastroesophagealRefluxDiseaseModule = {
   slug: "gastroesophageal-reflux-disease",
   number: "82",
   title: "Gastroesophageal Reflux Disease",
-  source: "NaS synthesis of RxPrep 2023 with current ACG, AGA, FDA, and DailyMed guidance",
+  source: "RxPrep 2023 Gastroesophageal Reflux Disease chapter on printed pages 902 through 907. Focused Goodnotes searches found RxPrep as the only dedicated GERD source, while matches in pulmonary, cardiovascular, and renal material were incidental. Reconciled with the current ACG GERD guideline, AGA personalized GERD and extraesophageal reflux updates, AGA PPI deprescribing guidance, and current FDA labeling.",
   description: "Move from antireflux-barrier physiology and symptom triage to intentional testing, acid-suppression pharmacology, treatment optimization, maintenance, and safe deprescribing.",
   topics: ["Antireflux barrier", "Alarm features", "Diagnostic testing", "Lifestyle care", "Antacids and alginate", "H2-receptor antagonists", "Proton pump inhibitors", "Persistent symptoms", "Maintenance", "Safety and interactions"],
   outcomes: [
@@ -94,7 +94,10 @@ export const gastroesophagealRefluxDiseaseModule = {
     ], ["Continue treatment when a durable indication exists.", "Step down when benefit can be preserved at lower intensity.", "Rebound symptoms can be temporary.", "Monitoring follows patient risk, not fear alone."], { question: "A patient with a healed peptic stricture asks to stop a chronic PPI because of online claims about dementia. What is the best response?", choices: ["Preserve the indicated therapy and explain the evidence and patient-specific risks", "Stop immediately because every association is causal", "Replace it with scheduled antacid only", "Double the dose without review"], answer: 0, rationale: "Complicated GERD usually supports continued PPI therapy, and deprescribing decisions should be driven by indication rather than fear of observational associations.", reviewHref: "#gerd-maintenance-safety" }),
   ],
   references: [
+    { label: "RxPrep 2023 Gastroesophageal Reflux Disease chapter, printed pages 902 through 907", href: "/learn/pharmacy" },
     { label: "American College of Gastroenterology clinical guideline for diagnosis and management of GERD", href: "https://pubmed.ncbi.nlm.nih.gov/34807007/" },
+    { label: "AGA clinical practice update on the personalized approach to GERD", href: "https://pubmed.ncbi.nlm.nih.gov/35123084/" },
+    { label: "AGA clinical practice update on extraesophageal GERD", href: "https://pubmed.ncbi.nlm.nih.gov/37061897/" },
     { label: "AGA clinical practice update on proton pump inhibitor deprescribing", href: "https://pubmed.ncbi.nlm.nih.gov/35183361/" },
     { label: "DailyMed omeprazole delayed-release prescribing information", href: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8090d4c3-3184-7812-53d7-aa30e14b79d1" },
     { label: "DailyMed famotidine prescribing information", href: "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=4421ceb7-a114-436c-871a-7bc5444f8154&version=1" },
