@@ -200,8 +200,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: six lessons, six native blockade, selection, safety, and toxicity diagrams, and six embedded knowledge checks
 - Assessment: 100 original questions spanning competitive occupancy, receptor selectivity, reflexes, orthostasis, uroselectivity, CYP interactions, eye procedures, intrinsic sympathomimetic activity, distribution, clearance, formulation, heart failure, conduction, airway reserve, hypoglycemia, withdrawal, and overdose; ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: beta-1 selectivity was treated as exposure dependent; alpha blocker urinary preference was separated from systemic safety; immediate-release and extended-release metoprolol were not treated as interchangeable; heart failure initiation was limited to stable patients and evidence-specific products; advanced overdose therapy was kept within current poison center or medical toxicology protocols
-- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 25, 2026 with 344 static pages generated
+- Automated verification: 100 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 8 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
 - Goodnotes note: the dedicated adrenergic-antagonist lecture export remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
 ### Adrenergic Medicinal Chemistry
