@@ -147,6 +147,7 @@ import VancomycinPharmacologyVisual, { vancomycinPharmacologyVisualTypes } from 
 import DaptomycinPharmacologyVisual, { daptomycinPharmacologyVisualTypes } from "@/components/learn/DaptomycinPharmacologyVisual";
 import LinezolidTedizolidPharmacologyVisual, { linezolidTedizolidPharmacologyVisualTypes } from "@/components/learn/LinezolidTedizolidPharmacologyVisual";
 import TigecyclinePharmacologyVisual, { tigecyclinePharmacologyVisualTypes } from "@/components/learn/TigecyclinePharmacologyVisual";
+import PolymyxinPharmacologyVisual, { polymyxinPharmacologyVisualTypes } from "@/components/learn/PolymyxinPharmacologyVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -260,6 +261,7 @@ const scopedAntibioticVisualModules = new Set([
   "daptomycin-pharmacology",
   "linezolid-tedizolid-pharmacology",
   "tigecycline-pharmacology",
+  "polymyxin-pharmacology",
 ]);
 
 export function generateStaticParams() {
@@ -474,6 +476,7 @@ export default async function PharmacyModulePage({ params }) {
               {module.slug === "daptomycin-pharmacology" && daptomycinPharmacologyVisualTypes.includes(submodule.visual) && <DaptomycinPharmacologyVisual type={submodule.visual} />}
               {module.slug === "linezolid-tedizolid-pharmacology" && linezolidTedizolidPharmacologyVisualTypes.includes(submodule.visual) && <LinezolidTedizolidPharmacologyVisual type={submodule.visual} />}
               {module.slug === "tigecycline-pharmacology" && tigecyclinePharmacologyVisualTypes.includes(submodule.visual) && <TigecyclinePharmacologyVisual type={submodule.visual} />}
+              {module.slug === "polymyxin-pharmacology" && polymyxinPharmacologyVisualTypes.includes(submodule.visual) && <PolymyxinPharmacologyVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
