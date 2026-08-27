@@ -144,6 +144,7 @@ import MacrolidePharmacologyVisual, { macrolidePharmacologyVisualTypes } from "@
 import TetracyclinePharmacologyVisual, { tetracyclinePharmacologyVisualTypes } from "@/components/learn/TetracyclinePharmacologyVisual";
 import SulfonamideTrimethoprimPharmacologyVisual, { sulfonamideTrimethoprimPharmacologyVisualTypes } from "@/components/learn/SulfonamideTrimethoprimPharmacologyVisual";
 import VancomycinPharmacologyVisual, { vancomycinPharmacologyVisualTypes } from "@/components/learn/VancomycinPharmacologyVisual";
+import DaptomycinPharmacologyVisual, { daptomycinPharmacologyVisualTypes } from "@/components/learn/DaptomycinPharmacologyVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -246,6 +247,16 @@ const multipleSclerosisVisualTypes = ["ms-recognition", "ms-course", "ms-relapse
 const raynaudPhenomenonVisualTypes = ["raynaud-recognition", "raynaud-mechanism", "raynaud-evaluation", "raynaud-prevention", "raynaud-ccb", "raynaud-pde5", "raynaud-nitrates", "raynaud-ischemia", "raynaud-secondary", "raynaud-longitudinal"];
 const celiacDiseaseVisualTypes = ["celiac-mechanism", "celiac-spectrum", "celiac-serology", "celiac-biopsy", "celiac-diet", "celiac-nutrition", "celiac-dh", "celiac-medicines", "celiac-followup", "celiac-nonresponsive"];
 const diarrheaAssessmentVisualTypes = ["diarrhea-phenotype", "diarrhea-triage", "diarrhea-causes", "diarrhea-rehydration", "diarrhea-testing", "diarrhea-supportive", "diarrhea-bismuth", "diarrhea-antimotility", "diarrhea-travel", "diarrhea-persistent"];
+const scopedAntibioticVisualModules = new Set([
+  "beta-lactam-pharmacology",
+  "aminoglycoside-pharmacology",
+  "fluoroquinolone-pharmacology",
+  "macrolide-pharmacology",
+  "tetracycline-pharmacology",
+  "sulfonamide-trimethoprim-pharmacology",
+  "vancomycin-pharmacology",
+  "daptomycin-pharmacology",
+]);
 
 export function generateStaticParams() {
   return pharmacyModules.map((module) => ({ slug: module.slug }));
@@ -312,6 +323,7 @@ export default async function PharmacyModulePage({ params }) {
                 <span>What to learn</span>
                 <ul>{submodule.concepts.map((concept) => <li key={concept}>{concept}</li>)}</ul>
               </div>
+              {!scopedAntibioticVisualModules.has(module.slug) && <>
               {submodule.visual && !submodule.visual.startsWith("acid-") && !calciumVisualTypes.includes(submodule.visual) && !enteralVisualTypes.includes(submodule.visual) && !parenteralVisualTypes.includes(submodule.visual) && !parenteralCalculationVisualTypes.includes(submodule.visual) && !pediatricParenteralVisualTypes.includes(submodule.visual) && !autonomicVisualTypes.includes(submodule.visual) && !cholinergicVisualTypes.includes(submodule.visual) && !antimuscarinicVisualTypes.includes(submodule.visual) && !cholinergicMedicinalChemistryVisualTypes.includes(submodule.visual) && !anticholinergicMedicinalChemistryVisualTypes.includes(submodule.visual) && !cholinergicToxicologyVisualTypes.includes(submodule.visual) && !adrenergicAgonistVisualTypes.includes(submodule.visual) && !adrenergicAntagonistVisualTypes.includes(submodule.visual) && !adrenergicMedicinalChemistryVisualTypes.includes(submodule.visual) && !diureticPharmacologyVisualTypes.includes(submodule.visual) && !diureticMedicinalChemistryVisualTypes.includes(submodule.visual) && !glaucomaPharmacotherapyVisualTypes.includes(submodule.visual) && !hypertensionFoundationsVisualTypes.includes(submodule.visual) && !resistantSecondaryHypertensionVisualTypes.includes(submodule.visual) && !hypertensiveEmergenciesVisualTypes.includes(submodule.visual) && !antihypertensiveMedicinalChemistryVisualTypes.includes(submodule.visual) && !dyslipidemiaRiskVisualTypes.includes(submodule.visual) && !lipidLoweringPharmacologyVisualTypes.includes(submodule.visual) && !dyslipidemiaTherapeuticsVisualTypes.includes(submodule.visual) && !chronicCoronaryDiseaseVisualTypes.includes(submodule.visual) && !acuteCoronarySyndromesVisualTypes.includes(submodule.visual) && !antiplateletPharmacologyVisualTypes.includes(submodule.visual) && !coagulationAnticoagulantVisualTypes.includes(submodule.visual) && !venousThromboembolismVisualTypes.includes(submodule.visual) && !warfarinManagementVisualTypes.includes(submodule.visual) && !directOralAnticoagulantsVisualTypes.includes(submodule.visual) && !parenteralAnticoagulantsVisualTypes.includes(submodule.visual) && !ecgInterpretationVisualTypes.includes(submodule.visual) && !arrhythmiaPathophysiologyVisualTypes.includes(submodule.visual) && !atrialArrhythmiasVisualTypes.includes(submodule.visual) && !ventricularArrhythmiasVisualTypes.includes(submodule.visual) && !antiarrhythmicPharmacologyVisualTypes.includes(submodule.visual) && !heartFailurePathophysiologyVisualTypes.includes(submodule.visual) && !diabeticKetoacidosisVisualTypes.includes(submodule.visual) && !hyperosmolarHyperglycemicStateVisualTypes.includes(submodule.visual) && !thyroidDisordersVisualTypes.includes(submodule.visual) && !thyroidMedicinalChemistryVisualTypes.includes(submodule.visual) && !adrenalPharmacologyVisualTypes.includes(submodule.visual) && !cushingSyndromeVisualTypes.includes(submodule.visual) && !adrenalInsufficiencyVisualTypes.includes(submodule.visual) && !gonadalHormonePharmacologyVisualTypes.includes(submodule.visual) && !gynecologicDisordersVisualTypes.includes(submodule.visual) && !infertilityOvulationInductionVisualTypes.includes(submodule.visual) && !contraceptivePharmacotherapyVisualTypes.includes(submodule.visual) && !gastroesophagealRefluxDiseaseVisualTypes.includes(submodule.visual) && !pepticUlcerDiseaseVisualTypes.includes(submodule.visual) && !irritableBowelSyndromeVisualTypes.includes(submodule.visual) && !chronicIdiopathicConstipationVisualTypes.includes(submodule.visual) && !diarrheaAssessmentVisualTypes.includes(submodule.visual) && !inflammatoryBowelDiseaseVisualTypes.includes(submodule.visual) && !motionSicknessVisualTypes.includes(submodule.visual) && !medicationSafetyQualityVisualTypes.includes(submodule.visual) && !infectionPreventionControlVisualTypes.includes(submodule.visual) && !drugAllergiesAdverseReactionsVisualTypes.includes(submodule.visual) && !pharmacokineticsVisualTypes.includes(submodule.visual) && !toxicologyAntidotesVisualTypes.includes(submodule.visual) && !gynecologicOncologyVisualTypes.includes(submodule.visual) && !pelvicOrganProlapseFistulaCareVisualTypes.includes(submodule.visual) && !genderAffirmingHormoneCareVisualTypes.includes(submodule.visual) && !immunoglobulinTherapyVisualTypes.includes(submodule.visual) && !anemiaVisualTypes.includes(submodule.visual) && <FluidElectrolyteVisual type={submodule.visual} />}
               {submodule.visual?.startsWith("acid-") && <AcidBaseVisual type={submodule.visual} />}
               {calciumVisualTypes.includes(submodule.visual) && <CalciumPhosphorusVisual type={submodule.visual} />}
@@ -447,13 +459,15 @@ export default async function PharmacyModulePage({ params }) {
               {pinwormInfectionVisualTypes.includes(submodule.visual) && <PinwormInfectionVisual type={submodule.visual} />}
               {travelHealthPlanningVisualTypes.includes(submodule.visual) && <TravelHealthPlanningVisual type={submodule.visual} />}
               {antimicrobialFoundationsStewardshipVisualTypes.includes(submodule.visual) && <AntimicrobialFoundationsStewardshipVisual type={submodule.visual} />}
-              {betaLactamPharmacologyVisualTypes.includes(submodule.visual) && <BetaLactamPharmacologyVisual type={submodule.visual} />}
-              {aminoglycosidePharmacologyVisualTypes.includes(submodule.visual) && <AminoglycosidePharmacologyVisual type={submodule.visual} />}
-              {fluoroquinolonePharmacologyVisualTypes.includes(submodule.visual) && <FluoroquinolonePharmacologyVisual type={submodule.visual} />}
-              {macrolidePharmacologyVisualTypes.includes(submodule.visual) && <MacrolidePharmacologyVisual type={submodule.visual} />}
-              {tetracyclinePharmacologyVisualTypes.includes(submodule.visual) && <TetracyclinePharmacologyVisual type={submodule.visual} />}
-              {sulfonamideTrimethoprimPharmacologyVisualTypes.includes(submodule.visual) && <SulfonamideTrimethoprimPharmacologyVisual type={submodule.visual} />}
-              {vancomycinPharmacologyVisualTypes.includes(submodule.visual) && <VancomycinPharmacologyVisual type={submodule.visual} />}
+              </>}
+              {module.slug === "beta-lactam-pharmacology" && betaLactamPharmacologyVisualTypes.includes(submodule.visual) && <BetaLactamPharmacologyVisual type={submodule.visual} />}
+              {module.slug === "aminoglycoside-pharmacology" && aminoglycosidePharmacologyVisualTypes.includes(submodule.visual) && <AminoglycosidePharmacologyVisual type={submodule.visual} />}
+              {module.slug === "fluoroquinolone-pharmacology" && fluoroquinolonePharmacologyVisualTypes.includes(submodule.visual) && <FluoroquinolonePharmacologyVisual type={submodule.visual} />}
+              {module.slug === "macrolide-pharmacology" && macrolidePharmacologyVisualTypes.includes(submodule.visual) && <MacrolidePharmacologyVisual type={submodule.visual} />}
+              {module.slug === "tetracycline-pharmacology" && tetracyclinePharmacologyVisualTypes.includes(submodule.visual) && <TetracyclinePharmacologyVisual type={submodule.visual} />}
+              {module.slug === "sulfonamide-trimethoprim-pharmacology" && sulfonamideTrimethoprimPharmacologyVisualTypes.includes(submodule.visual) && <SulfonamideTrimethoprimPharmacologyVisual type={submodule.visual} />}
+              {module.slug === "vancomycin-pharmacology" && vancomycinPharmacologyVisualTypes.includes(submodule.visual) && <VancomycinPharmacologyVisual type={submodule.visual} />}
+              {module.slug === "daptomycin-pharmacology" && daptomycinPharmacologyVisualTypes.includes(submodule.visual) && <DaptomycinPharmacologyVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>

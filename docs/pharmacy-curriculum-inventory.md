@@ -2113,6 +2113,26 @@ Current source reconciliations:
 - Vancomycin infusion reaction is differentiated from IgE-mediated anaphylaxis, delayed immune disease, and severe cutaneous reactions.
 - Current CDI guidance conditionally prefers fidaxomicin for an initial episode when feasible while retaining oral vancomycin as an acceptable alternative. Fulminant disease with ileus requires urgent multi-route and surgical reasoning.
 
+### Daptomycin Pharmacology
+
+The Daptomycin Pharmacology module connects the cyclic lipopeptide scaffold, calcium-dependent membrane association, phosphatidylglycerol recruitment, rapid bactericidal activity, gram-positive spectrum, absent gram-negative coverage, species-specific enterococcal interpretation, resistance emergence, complicated skin infection, S. aureus bacteremia, right-sided endocarditis, pneumonia exclusion, source control, labeled and specialist off-label dosing, weight calculations, renal interval adaptation, hemodialysis timing, exact product preparation, age-specific administration, CPK surveillance, statin overlap, myopathy and rhabdomyolysis thresholds, eosinophilic pneumonia, severe immune reactions, tubulointerstitial nephritis, neuropathy, false PT or INR elevation, and explicit exit criteria. It contains ten focused lessons, ten original responsive diagrams, ten embedded checks, and a 136-question assessment bank across 32 concepts and four reasoning levels plus eight original dosing, renal, muscle-safety, pulmonary, laboratory, site-selection, pediatric-administration, and susceptibility cases. The source synthesis uses RxPrep 2023 Chapter 22, the Goodnotes Drug-Induced Pulmonary Diseases material, current daptomycin and CUBICIN RF prescribing information, the FDA daptomycin breakpoint rationale, current IDSA and ESCMID S. aureus bacteremia guidance, and primary membrane and pulmonary-surfactant evidence. The 472-page production build, desktop layout, 390 pixel phone layout, overflow-free responsive diagrams, randomized ten-question sampling, scoring, ten remediation links, a subsequent attempt with zero repeated questions, and zero browser warnings or errors were verified on August 26, 2026. Shared antibiotic visual identifiers were also isolated by module so each antibiotic lesson now renders only its own diagram.
+
+Current source reconciliations:
+
+- Goodnotes access is restored. The global library search found daptomycin in RxPrep and in the Drug-Induced Pulmonary Diseases material, and both were reviewed directly.
+- Calcium-dependent membrane interaction is taught as the primary antibacterial event rather than direct ribosomal or penicillin-binding-protein inhibition.
+- Daptomycin is restricted to susceptible gram-positive organisms and does not provide gram-negative coverage.
+- Adult labeled regimens distinguish 4 mg/kg every 24 hours for complicated skin infection from 6 mg/kg every 24 hours for S. aureus bacteremia. Higher specialist regimens remain indication-, organism-, MIC-, and evidence-specific off-label strategies.
+- The E. faecium susceptible-dose-dependent category is tied to an 8 to 12 mg/kg exposure assumption and does not establish universal susceptibility or a new FDA indication.
+- Pulmonary surfactant inhibition makes daptomycin unsuitable for primary alveolar pneumonia even when a respiratory isolate appears susceptible in vitro.
+- Current labeling supports S. aureus bacteremia including right-sided endocarditis but does not indicate daptomycin for left-sided S. aureus endocarditis. Prosthetic-valve evidence remains limited.
+- Adults with creatinine clearance below 30 mL/min, including hemodialysis and CAPD, use the labeled every-48-hour interval, with administration after hemodialysis when possible. Pediatric renal dosing is not established.
+- Product-specific reconstitution, dextrose incompatibility for CUBICIN RF, line handling, and pediatric infusion durations replace a universal preparation recipe.
+- CPK is monitored at least weekly and more often with renal impairment, symptoms, rising values, or statin exposure. Labeled discontinuation thresholds distinguish symptomatic CPK above 1,000 U/L from asymptomatic CPK at or above 2,000 U/L.
+- The Goodnotes pulmonary material adds dry cough, chest discomfort, bilateral ground-glass or diffuse imaging changes, and bronchoalveolar lavage eosinophil context to the current-label pattern of fever, dyspnea, hypoxemia, and onset commonly after two to four weeks. Stabilization and immediate drug withdrawal are not delayed for testing.
+- Reagent-dependent false PT or INR elevation is verified near the daptomycin trough or with an alternative method while true anticoagulation causes are still evaluated.
+- Retired pregnancy letters are excluded. Pregnancy and lactation decisions use current narrative evidence, infection severity, patient factors, and alternatives.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
