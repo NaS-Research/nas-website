@@ -368,8 +368,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: six lessons, six native platelet-pathway, aspirin, oral P2Y12, intravenous-agent, variability, and bleeding diagrams, and six embedded knowledge checks
 - Assessment: 104 original questions spanning vWF and GPIb, platelet agonists, GPIIb/IIIa, aspirin mechanism and formulation, GI safety, hypersensitivity, clopidogrel activation and interaction, prasugrel selection, ticagrelor kinetics and adverse effects, cangrelor transitions, intravenous GPIIb/IIIa use, renal adjustment, thrombocytopenia, selected testing, procedural interruption, major bleeding, and counseling; ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: aspirin plasma exposure was separated from irreversible platelet effect; clopidogrel poor metabolism was tied to active-metabolite formation; prasugrel was excluded after stroke or TIA and age and weight bleeding factors were explicit; ticagrelor used current low-dose aspirin maintenance labeling; cangrelor transition timing differed by oral agent; GPIIb/IIIa use was selective and included renal and platelet surveillance; testing was limited to actionable decisions
-- Automated verification: 104 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 25, 2026 with 358 static pages generated
+- Automated verification: 104 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, at least 12 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
 - Goodnotes note: the dedicated antiplatelet lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
 ### Coagulation and Anticoagulant Pharmacology
