@@ -308,8 +308,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: seven lessons, six native transport, particle-burden, remnant, phenotype, screening, and risk-reclassification diagrams, and seven embedded knowledge checks
 - Assessment: 100 original questions spanning particle structure, chylomicron and VLDL metabolism, LDL receptor clearance, LDL-C, non-HDL-C, apoB, discordance, cumulative exposure, remnants, severe triglycerides, familial chylomicronemia, Lp(a), familial hypercholesterolemia, secondary causes, adult and childhood screening, fasting status, calculated LDL limits, PREVENT, 2026 risk categories, enhancers, coronary calcium, secondary prevention, and special-population risk; ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: the 2026 guideline replaced the 2018 framework; PREVENT replaced pooled cohort equations; new 3, 5, and 10 percent risk thresholds were used; LDL-C and non-HDL-C goals returned; universal adult screening begins at 19 and childhood screening at 9 to 11; Lp(a) is measured at least once in adulthood; apoB was positioned as a selected discordance tool; mass and molar Lp(a) units were not converted with a fixed factor
-- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 25, 2026 with 353 static pages generated
+- Automated verification: 100 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 8 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
 - Goodnotes note: the dedicated dyslipidemia lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
 ### Lipid-Lowering Pharmacology
