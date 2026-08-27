@@ -2323,6 +2323,20 @@ Current source reconciliations:
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 168-question assessment bank.
 - Goodnotes was retried after the user reported restored access, but macOS still reported a locked session. Any matching sinusitis lecture will receive a documented reconciliation pass after manual unlock.
 
+### Community-Acquired Pneumonia in Adults
+
+- Built from the community-acquired pneumonia section of RxPrep 2023 Chapter 23 and reconciled with the 2025 ATS adult CAP update, the 2025 IDSA position statement, the 2019 ATS and IDSA adult CAP guideline, the focused 2026 IDSA and PIDS pediatric effusion update, current CDC guidance, and current medication safety information.
+- The module remains distinct from Cough and the Common Cold, chronic pulmonary disease, and the individual antimicrobial pharmacology modules. It focuses on alveolar infection, diagnostic imaging, severity and disposition, microbiology, outpatient and inpatient selection, resistant-pathogen risk, viral coinfection, duration, follow-up, and prevention.
+- Adult diagnosis requires a compatible lower-respiratory syndrome plus a new infiltrate. The 2025 ATS update conditionally accepts expert lung ultrasound as an alternative to chest radiography when local acquisition and interpretation expertise are available.
+- PSI supports hospitalization decisions, while one major severe-CAP criterion or at least three minor criteria identifies severe disease. Oxygen, function, oral intake, support, medication access, and reliable return access remain part of the disposition decision.
+- Outpatient and inpatient regimens retain exact 2019 guideline pathways. Macrolide monotherapy depends on local pneumococcal resistance below 25 percent, severe CAP requires combination therapy, and MRSA or Pseudomonas coverage requires validated risk plus microbiologic and de-escalation ownership.
+- The 2025 ATS and IDSA disagreement is explicit. They differ on routine empiric antibiotics for virus-positive outpatients with comorbidity and virus-positive nonsevere inpatients, so the module teaches an individualized, documented decision rather than presenting false consensus.
+- Current duration teaching replaces the older universal five-day minimum. Stable outpatient or nonsevere inpatient disease may qualify for less than five days with a minimum of three days, while severe CAP requires at least five days and resistant pathogens, necrosis, empyema, abscess, bacteremia, or another deep focus can require longer therapy.
+- Corticosteroids are not routine for nonsevere CAP. Selected severe noninfluenza CAP can qualify under a supported protocol with deliberate glucose, infection, gastrointestinal, and neuropsychiatric monitoring.
+- The 2026 pediatric update is kept within its actual scope. It informs parapneumonic effusion and empyema management but is not represented as a complete replacement for pediatric CAP guidance.
+- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 172-question assessment bank.
+- Goodnotes remains unavailable because macOS reports a locked session. Any matching pneumonia lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
