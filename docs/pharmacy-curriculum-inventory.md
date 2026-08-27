@@ -284,8 +284,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: six lessons, six native triage, perfusion, neurologic, cardiovascular, special-population, and transition diagrams, and six embedded knowledge checks
 - Assessment: 100 original questions spanning emergency definition, severe pressure without injury, repeat measurement, organ screening, autoregulation, reduction strategy, titratable agents, nicardipine, clevidipine, labetalol, ischemic stroke, intracerebral hemorrhage, encephalopathy, PRES, aortic anti-impulse therapy, pulmonary edema, coronary syndrome, nitrates, pregnancy, magnesium, catecholamine crisis, kidney injury, intravenous-to-oral transition, pressure variability, access, and handoff; ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: the term emergency was reserved for acute target-organ injury; routine rapid treatment of hospitalized severe pressure without acute injury was rejected; newer 2026 stroke guidance against intensive systolic lowering below 140 after reperfusion was included; ICH used smooth 130 to 150 maintenance in the selected mild-to-moderate population and avoided reduction below 130; aortic therapy prioritized anti-impulse control; magnesium seizure therapy was separated from pregnancy pressure treatment
-- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 25, 2026 with 351 static pages generated
+- Automated verification: 100 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 16 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
 - Goodnotes note: the dedicated hypertensive emergencies lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
 ### Antihypertensive Medicinal Chemistry
