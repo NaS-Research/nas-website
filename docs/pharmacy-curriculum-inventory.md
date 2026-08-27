@@ -2730,6 +2730,29 @@ Current source reconciliations:
 - Build verification: Next.js production build passed August 27, 2026 with 512 static pages generated.
 - Goodnotes source reconciliation remains pending until the local macOS session is unlocked and the library is readable through the application.
 
+### Herpes Simplex and Varicella Antiviral Pharmacology
+
+- Built from the focused HSV and VZV antiviral material in RxPrep 2023 and reconciled with current CDC genital herpes and shingles guidance plus current acyclovir injection, valacyclovir, and famciclovir labeling.
+- HSV latency, asymptomatic shedding, VZV reactivation, lesion testing, compartment, host risk, emergency findings, and transmission establish the decision state before a product or regimen is selected.
+- Viral thymidine kinase, host phosphorylation, active triphosphate, viral DNA polymerase inhibition, chain elongation, target resistance, cross resistance, and failure review connect viral biology to antiviral response.
+- Acyclovir acyclic guanine structure, selective activation, competitive polymerase inhibition, DNA incorporation, chain termination, HSV and VZV activity differences, and unchanged renal elimination connect medicinal chemistry to clinical exposure.
+- Intravenous acyclovir dilution, compatible concentration, at least one-hour infusion, hydration, crystal nephropathy, kidney surveillance, neurologic toxicity, dialysis review, and accountable obesity-dosing policy form one high-risk delivery system.
+- The older RxPrep blanket ideal-body-weight rule is not presented as a universal current-label requirement. Current labeling and an accountable institutional obesity protocol govern the patient-specific dosing scalar.
+- Valacyclovir L-valyl prodrug chemistry, conversion to acyclovir, improved oral exposure, syndrome-specific regimens, indication-specific renal tables, dialysis timing, hydration, renal failure, central nervous system effects, serious skin reactions, and current labeling are explicit.
+- Famciclovir deacetylation and aldehyde-oxidase conversion, active penciclovir triphosphate, intracellular persistence, polymerase inhibition, renal adjustment, labeled indications, serious reactions, and interaction review are joined from molecule to bedside.
+- The current famciclovir label says efficacy is not established for a first genital episode, while CDC includes famciclovir among recommended first-episode regimens. The label and guideline distinction is surfaced rather than silently collapsed.
+- Herpes labialis care includes prodrome recognition, advance self-start planning, exact one-day systemic regimens, topical-treatment boundaries, hand and eye safety, and transmission counseling.
+- Genital herpes care separates first episode, episodic recurrence, suppression, frequent recurrence, transmission reduction, disclosure, condoms, pregnancy plans, severe disease, and periodic goal reassessment.
+- HSV encephalitis, meningitis, disseminated or visceral disease, pregnancy, delivery, neonatal exposure, urgent empiric intravenous treatment, diagnostic testing, duration, and shared specialty ownership form the invasive-disease pathway.
+- Herpes zoster care separates early treatment from a rigid 72-hour cutoff, uses distinct higher-exposure regimens, identifies ophthalmic, otic, neurologic, respiratory, and disseminated complications, addresses pain, and connects recovery to recombinant vaccination.
+- Prior zoster or prior Zostavax does not remove the current Shingrix recommendation. Active shingles remains a treatment state rather than a vaccination moment.
+- Renal exposure, serious immune and skin reactions, resistance, failure audit, prevention, follow-up ownership, current-source verification, and the educational boundary close the module.
+- It contains eleven focused lessons, eleven responsive diagrams, eleven embedded checks, and a validated 192-question assessment bank.
+- Automated verification: 192 unique question IDs and prompts, four distinct answer choices per question, valid lesson links, eleven lesson sections, eleven diagrams, and no em dash or en dash characters in public module prose.
+- Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, eleven lessons, eleven diagrams, eleven embedded checks, ten questions per test, a different second random set, scoring with explanations and ten remediation links, and zero console errors.
+- Build verification: Next.js production build passed August 27, 2026 with 513 static pages generated.
+- Goodnotes source reconciliation remains pending until the local library can be read through the unlocked application session.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:

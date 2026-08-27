@@ -185,6 +185,7 @@ import EchinocandinPharmacologyVisual, { echinocandinPharmacologyVisualTypes } f
 import TerbinafineGriseofulvinPharmacologyVisual, { terbinafineGriseofulvinPharmacologyVisualTypes } from "@/components/learn/TerbinafineGriseofulvinPharmacologyVisual";
 import LocalOropharyngealAntifungalPharmacologyVisual, { localOropharyngealAntifungalPharmacologyVisualTypes } from "@/components/learn/LocalOropharyngealAntifungalPharmacologyVisual";
 import InfluenzaAntiviralPharmacologyVisual, { influenzaAntiviralPharmacologyVisualTypes } from "@/components/learn/InfluenzaAntiviralPharmacologyVisual";
+import HerpesSimplexVaricellaAntiviralPharmacologyVisual, { herpesSimplexVaricellaAntiviralPharmacologyVisualTypes } from "@/components/learn/HerpesSimplexVaricellaAntiviralPharmacologyVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -551,6 +552,7 @@ export default async function PharmacyModulePage({ params }) {
               {module.slug === "terbinafine-griseofulvin-pharmacology" && terbinafineGriseofulvinPharmacologyVisualTypes.includes(submodule.visual) && <TerbinafineGriseofulvinPharmacologyVisual type={submodule.visual} />}
               {module.slug === "local-oropharyngeal-antifungal-pharmacology" && localOropharyngealAntifungalPharmacologyVisualTypes.includes(submodule.visual) && <LocalOropharyngealAntifungalPharmacologyVisual type={submodule.visual} />}
               {module.slug === "influenza-antiviral-pharmacology" && influenzaAntiviralPharmacologyVisualTypes.includes(submodule.visual) && <InfluenzaAntiviralPharmacologyVisual type={submodule.visual} />}
+              {module.slug === "herpes-simplex-varicella-antiviral-pharmacology" && herpesSimplexVaricellaAntiviralPharmacologyVisualTypes.includes(submodule.visual) && <HerpesSimplexVaricellaAntiviralPharmacologyVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>

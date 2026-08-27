@@ -182,6 +182,7 @@ import { echinocandinPharmacologyModule } from "@/data/modules/echinocandinPharm
 import { terbinafineGriseofulvinPharmacologyModule } from "@/data/modules/terbinafineGriseofulvinPharmacology";
 import { localOropharyngealAntifungalPharmacologyModule } from "@/data/modules/localOropharyngealAntifungalPharmacology";
 import { influenzaAntiviralPharmacologyModule } from "@/data/modules/influenzaAntiviralPharmacology";
+import { herpesSimplexVaricellaAntiviralPharmacologyModule } from "@/data/modules/herpesSimplexVaricellaAntiviralPharmacology";
 
 const sources = {
   foundation: "Foundation",
@@ -599,5 +600,6 @@ pharmacyModules.push(echinocandinPharmacologyModule);
 pharmacyModules.push(terbinafineGriseofulvinPharmacologyModule);
 pharmacyModules.push(localOropharyngealAntifungalPharmacologyModule);
 pharmacyModules.push(influenzaAntiviralPharmacologyModule);
+pharmacyModules.push(herpesSimplexVaricellaAntiviralPharmacologyModule);
 
 export const pharmacySubmoduleCount = pharmacyModules.reduce((total, module) => total + module.submodules.length, 0);
