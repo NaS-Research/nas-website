@@ -1,6 +1,6 @@
 # NaS Learn Pharmacy Curriculum Inventory
 
-Last reviewed: August 26, 2026
+Last reviewed: August 27, 2026
 
 This inventory records the source material available in the founder's Goodnotes library. It is an internal production record, not public course copy. Original NaS modules must synthesize the sources and must not reproduce slides, textbooks, or question banks verbatim.
 
@@ -20,10 +20,10 @@ This inventory records the source material available in the founder's Goodnotes 
 - DAST source: Intro to Nutrition, 66 pages, exported and visually verified
 - Cross reference: RxPrep NAPLEX 2023 scope and terminology
 - Current references: ASPEN adult screening and assessment practice tool, GLIM consensus report and five year update, ASPEN visceral protein position paper
-- Learning structure: six lessons and six embedded knowledge checks
-- Assessment: 100 original questions, ten sampled without replacement per attempt, answer order randomized
-- Browser verification: desktop and 390 pixel mobile viewport, no horizontal overflow
-- Build verification: Next.js production build passed August 25, 2026
+- Learning structure: six lessons, six native responsive concept visuals, and six embedded knowledge checks
+- Assessment: 103 original questions, ten sampled without replacement per attempt, answer order randomized
+- Automated verification: 103 unique questions, valid review links, and a minimum of eight questions mapped to every lesson
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
 
 ### Fluid and Electrolyte Therapy
 
@@ -906,7 +906,7 @@ Available documents:
 
 Target modules:
 
-1. Nutrition Screening, Assessment, and Malnutrition (`built`, 100 question bank)
+1. Nutrition Screening, Assessment, and Malnutrition (`built`, 103 question bank)
 2. Fluid and Electrolyte Therapy (`built`, 100 question bank)
 3. Acid-Base Interpretation (`built`, 100 question bank)
 4. Calcium and Phosphorus Homeostasis (`built`, 100 question bank)

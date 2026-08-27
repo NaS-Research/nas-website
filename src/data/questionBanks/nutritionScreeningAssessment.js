@@ -73,7 +73,7 @@ const weightCases = [
 
 const weightQuestions = weightCases.map(([id, usual, current, interval]) => {
   const percent = Number((((usual - current) / usual) * 100).toFixed(1));
-  return q(id, "What is the percent weight loss?", [`${percent}%`, `${Number((percent + 2.5).toFixed(1))}%`, `${Number(Math.max(0.5, percent - 2).toFixed(1))}%`, `${Number((100 - percent).toFixed(1))}%`], 0, "Percent weight loss equals usual weight minus current weight, divided by usual weight, multiplied by 100.", "anthropometrics-body-composition", `Usual weight was ${usual} kg. Current weight is ${current} kg after ${interval}.`);
+  return q(id, `Usual weight was ${usual} kg and current weight is ${current} kg after ${interval}. What is the percent weight loss?`, [`${percent}%`, `${Number((percent + 2.5).toFixed(1))}%`, `${Number(Math.max(0.5, percent - 2).toFixed(1))}%`, `${Number((100 - percent).toFixed(1))}%`], 0, "Percent weight loss equals usual weight minus current weight, divided by usual weight, multiplied by 100.", "anthropometrics-body-composition");
 });
 
 const bmiCases = [
@@ -84,7 +84,7 @@ const bmiCases = [
 
 const bmiQuestions = bmiCases.map(([id, weight, height]) => {
   const bmi = Number((weight / (height ** 2)).toFixed(1));
-  return q(id, "What is the calculated BMI?", [`${bmi} kg/m²`, `${Number((weight / height).toFixed(1))} kg/m²`, `${Number((height ** 2 / weight).toFixed(2))} kg/m²`, `${Number((weight * height).toFixed(1))} kg/m²`], 0, "BMI equals weight in kilograms divided by height in meters squared.", "anthropometrics-body-composition", `Measured weight is ${weight} kg and measured height is ${height.toFixed(2)} m.`);
+  return q(id, `Measured weight is ${weight} kg and measured height is ${height.toFixed(2)} m. What is the calculated BMI?`, [`${bmi} kg/m²`, `${Number((weight / height).toFixed(1))} kg/m²`, `${Number((height ** 2 / weight).toFixed(2))} kg/m²`, `${Number((weight * height).toFixed(1))} kg/m²`], 0, "BMI equals weight in kilograms divided by height in meters squared.", "anthropometrics-body-composition");
 });
 
 const advancedQuestions = [
@@ -108,6 +108,9 @@ const advancedQuestions = [
   q("098", "A model uses low BMI as the only phenotype. What subgroup is most likely to be underdetected?", ["Patients with obesity and clinically important muscle loss", "Patients whose BMI is already low", "Patients with measured height", "Patients without edema"], 0, "A BMI only approach can miss malnutrition across higher body size categories.", "diagnostic-frameworks"),
   q("099", "Which method best reduces anchoring on a referral diagnosis?", ["Review the raw history, measurements, and examination before applying criteria", "Copy the prior label", "Use one laboratory result", "Avoid documenting contradictory evidence"], 0, "Independent evidence review reduces diagnostic anchoring and makes discrepancies visible.", "diagnostic-frameworks"),
   q("100", "What makes a nutrition assessment scientifically defensible?", ["A transparent chain from source data to criteria, uncertainty, intervention, and follow up", "A diagnosis without supporting findings", "The longest possible note", "A single proprietary score"], 0, "Transparent reasoning allows the plan to be reviewed, reproduced, and improved.", "plan-monitor-communicate"),
+  q("101", "Which medication-focused intervention best addresses a newly identified nutrition barrier?", ["Identify the causal medicine, define a safe adjustment with the prescriber, and measure whether intake improves", "Stop every medicine without review", "Add supplements while leaving severe nausea untreated", "Document poor intake without assigning action"], 0, "Medication review should connect a plausible mechanism to a safe intervention and a measurable follow up outcome.", "plan-monitor-communicate"),
+  q("102", "A patient at high refeeding risk begins nutrition support. Which monitoring plan is most defensible?", ["Define electrolyte, glucose, fluid, vital-sign, intake, and clinical reassessment intervals with action thresholds", "Measure body weight at discharge only", "Use albumin as the sole safety marker", "Wait for symptoms before planning surveillance"], 0, "High-risk nutrition support needs prospective surveillance for electrolyte shifts, glucose changes, fluid intolerance, and clinical deterioration.", "plan-monitor-communicate"),
+  q("103", "What information most clearly closes the loop after a nutrition recommendation?", ["The responsible clinician, action date, outcome measure, escalation threshold, and next review", "A copied problem list", "The phrase continue to monitor", "A list of every available nutrition product"], 0, "Closed-loop care makes responsibility, timing, measurement, and escalation explicit.", "plan-monitor-communicate"),
 ];
 
 export const nutritionScreeningAssessmentQuestionBank = [

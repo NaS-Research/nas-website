@@ -17,6 +17,7 @@ export const nutritionScreeningAssessmentModule = {
     {
       slug: "screening-to-assessment",
       title: "From Screening to Assessment",
+      visual: "nutrition-screening-flow",
       summary: "Screening identifies who may be at risk. Assessment determines what is happening, why it is happening, and what should happen next.",
       concepts: ["Validated screening tools", "Risk versus diagnosis", "Referral and escalation", "Repeat screening after clinical change"],
       application: "A positive screen is a signal to perform a more complete assessment. It is not, by itself, a malnutrition diagnosis.",
@@ -36,6 +37,7 @@ export const nutritionScreeningAssessmentModule = {
     {
       slug: "history-intake-disease",
       title: "History, Intake, and Disease Burden",
+      visual: "nutrition-history-trajectory",
       summary: "Nutrition status is a trajectory. The history explains the direction and speed of change better than a single measurement.",
       concepts: ["Usual and recent intake", "Unintentional weight change", "Symptoms and assimilation", "Inflammation and disease burden"],
       application: "Reconstruct what changed, when it changed, and why. Separate poor access, poor appetite, impaired swallowing, malabsorption, losses, and elevated metabolic demand.",
@@ -55,6 +57,7 @@ export const nutritionScreeningAssessmentModule = {
     {
       slug: "anthropometrics-body-composition",
       title: "Anthropometrics and Body Composition",
+      visual: "nutrition-anthropometrics",
       summary: "Weight and BMI are useful when their limitations are visible. Muscle and fat loss may be clinically important even when body weight appears ordinary.",
       concepts: ["Measured height and weight", "BMI and weight change", "Fluid confounding", "Muscle mass and body composition"],
       application: "Use measured values when possible, compare them with a credible baseline, calculate percent change, and interpret the result alongside edema, ascites, obesity, amputation, and body composition.",
@@ -74,6 +77,7 @@ export const nutritionScreeningAssessmentModule = {
     {
       slug: "physical-functional-assessment",
       title: "Physical and Functional Assessment",
+      visual: "nutrition-physical-function",
       summary: "The bedside examination turns suspected tissue loss into observable evidence and helps distinguish fat, muscle, fluid, and function.",
       concepts: ["Subcutaneous fat stores", "Muscle groups", "Edema and ascites", "Functional change"],
       application: "Compare bilateral sites when appropriate, consider age and baseline habitus, and document the location and degree of loss rather than writing a vague global impression.",
@@ -93,6 +97,7 @@ export const nutritionScreeningAssessmentModule = {
     {
       slug: "diagnostic-frameworks",
       title: "Diagnostic Frameworks",
+      visual: "nutrition-diagnostic-frameworks",
       summary: "Diagnostic frameworks organize evidence. They do not replace clinical judgment, and their criteria should not be mixed casually.",
       concepts: ["GLIM phenotypic criteria", "GLIM etiologic criteria", "Academy and ASPEN characteristics", "Severity and etiology"],
       application: "Name the framework, show the criteria that are present, explain confounders, and document severity using that framework rather than combining thresholds from unrelated systems.",
@@ -116,6 +121,7 @@ export const nutritionScreeningAssessmentModule = {
     {
       slug: "plan-monitor-communicate",
       title: "Plan, Monitor, and Communicate",
+      visual: "nutrition-care-loop",
       summary: "The assessment matters only when it changes care. A complete plan states the problem, intervention, surveillance, and decision points.",
       concepts: ["Problem prioritization", "Interdisciplinary intervention", "Medication review", "Outcome and safety monitoring"],
       application: "Write a plan that another clinician can execute. Include who will act, what will be measured, when it will be measured, and what finding will trigger escalation.",
