@@ -2624,7 +2624,8 @@ Current source reconciliations:
 - Bidirectional CYP and transporter interactions include initiation and discontinuation effects. QT prolongation is separated from isavuconazole-associated QT shortening and familial short QT risk.
 - Toxicity surveillance uses agent-specific kidney, electrolyte, liver, marrow, skin, vision, neurologic, cardiac, infusion, and concentration plans rather than one generic laboratory panel.
 - Empiric, preemptive, source-control, de-escalation, step-down, failure-audit, and educational boundaries close the module before later drug-class and fungal-syndrome modules.
-- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 176-question assessment bank.
+- Interaction coverage now tests both directions of an antifungal transition. Starting an inhibitor can raise substrate exposure, while stopping it can remove inhibition and lower a narrow therapeutic index substrate below target. Strong enzyme induction is treated as an antifungal exposure and failure risk rather than a problem solved by guessing at an unsupported dose.
+- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 184-question assessment bank across all ten lessons.
 - Goodnotes remains unavailable because macOS reports a locked session. Any matching systemic antifungal lecture will receive a documented reconciliation pass after manual unlock.
 
 ### Amphotericin B and Flucytosine Pharmacology
