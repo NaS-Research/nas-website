@@ -594,20 +594,115 @@ export function getPharmacyModule(slug) {
   return [...pharmacyModules, ...legacyPharmacyModules].find((module) => module.slug === slug);
 }
 
-export const pharmacyModules = [nutritionScreeningAssessmentModule, fluidElectrolyteTherapyModule, acidBaseInterpretationModule, calciumPhosphorusHomeostasisModule, enteralNutritionModule, parenteralNutritionModule, parenteralNutritionCalculationsModule, pediatricParenteralNutritionModule, autonomicNervousSystemFoundationsModule, cholinergicAgonistsInhibitorsModule, antimuscarinicPharmacologyModule, cholinergicMedicinalChemistryModule, anticholinergicMedicinalChemistryModule, cholinergicToxicologyModule, adrenergicAgonistsModule, adrenergicAntagonistsModule, adrenergicMedicinalChemistryModule, diureticPharmacologyModule, diureticMedicinalChemistryModule, glaucomaPharmacotherapyModule, hypertensionFoundationsModule, resistantSecondaryHypertensionModule, hypertensiveEmergenciesModule, antihypertensiveMedicinalChemistryModule, dyslipidemiaRiskModule, lipidLoweringPharmacologyModule, dyslipidemiaTherapeuticsModule, chronicCoronaryDiseaseModule, acuteCoronarySyndromesModule, antiplateletPharmacologyModule, coagulationAnticoagulantPharmacologyModule, venousThromboembolismModule, warfarinManagementModule, directOralAnticoagulantsModule, parenteralAnticoagulantsModule, ecgInterpretationModule, arrhythmiaPathophysiologyModule, atrialArrhythmiasModule, ventricularArrhythmiasModule, antiarrhythmicPharmacologyModule, heartFailurePathophysiologyModule, chronicHeartFailureModule, acuteDecompensatedHeartFailureModule, heartFailureMedicinalChemistryModule, peripheralArterialDiseaseModule, acuteIschemicStrokeModule, secondaryStrokePreventionModule, acuteKidneyInjuryModule, chronicKidneyDiseaseModule, ckdComplicationsModule, renalReplacementTherapyModule, allergicRhinitisModule, asthmaModule, chronicObstructivePulmonaryDiseaseModule, pulmonaryArterialHypertensionModule, cysticFibrosisModule, drugInducedPulmonaryDiseaseModule, pituitaryPharmacologyModule, diabetesPathophysiologyMonitoringModule, noninsulinDiabetesPharmacotherapyModule, insulinTherapyModule, diabeticKetoacidosisModule, hyperosmolarHyperglycemicStateModule, thyroidDisordersModule, thyroidMedicinalChemistryModule, adrenalPharmacologyModule, cushingSyndromeModule, adrenalInsufficiencyModule, gonadalHormonePharmacologyModule, gynecologicDisordersModule, infertilityOvulationInductionModule, contraceptivePharmacotherapyModule, pregnancyLactationPharmacotherapyModule, menopausalHormoneTherapyModule, benignProstaticHyperplasiaModule, urinaryIncontinenceModule, sexualDysfunctionModule, osteoporosisModule, shockVasoactivePharmacotherapyModule, icuAnalgesiaSedationDeliriumModule, perioperativeCriticalCarePharmacologyModule, gastroesophagealRefluxDiseaseModule, pepticUlcerDiseaseModule, irritableBowelSyndromeModule, chronicIdiopathicConstipationModule, diarrheaAssessmentPharmacotherapyModule, inflammatoryBowelDiseaseModule, motionSicknessModule, medicationSafetyQualityModule, infectionPreventionControlModule, drugAllergiesAdverseReactionsModule, pharmacokineticsModule, pharmacogenomicsModule, dietarySupplementsComplementaryMedicineModule, toxicologyAntidotesModule, tobaccoUseCessationModule, systemicGlucocorticoidsModule, rheumatoidArthritisModule, systemicLupusErythematosusModule, multipleSclerosisModule, raynaudPhenomenonModule, celiacDiseaseModule, myastheniaGravisModule, sjogrenDiseaseModule, psoriasisModule, genitourinaryMedicinalChemistryModule, vaginitisVulvovaginalInfectionsModule, cervicitisPelvicInflammatoryDiseaseModule, gynecologicOncologyModule, pelvicOrganProlapseFistulaCareModule, genderAffirmingHormoneCareModule, immunoglobulinTherapyModule, anemiaModule, sickleCellDiseaseModule, coughCommonColdModule, commonEyeConditionsModule, commonEarConditionsModule, acneModule, atopicDermatitisModule, superficialFungalSkinInfectionsModule, liceScabiesModule, minorWoundCareModule, animalHumanBitesModule, burnAssessmentInitialCareModule, poisonPlantDermatitisModule, topicalCorticosteroidSafeUseModule, sunscreenPhotoprotectionModule, herpesLabialisModule, seborrheicDermatitisModule, alopeciaModule, diaperDermatitisModule, hyperhidrosisModule, hemorrhoidsModule, pinwormInfectionModule, travelHealthPlanningModule, antimicrobialFoundationsStewardshipModule, betaLactamPharmacologyModule, aminoglycosidePharmacologyModule, fluoroquinolonePharmacologyModule, macrolidePharmacologyModule, tetracyclinePharmacologyModule, sulfonamideTrimethoprimPharmacologyModule, vancomycinPharmacologyModule, daptomycinPharmacologyModule, linezolidTedizolidPharmacologyModule, tigecyclinePharmacologyModule, polymyxinPharmacologyModule, clindamycinPharmacologyModule, nitroimidazolePharmacologyModule, lefamulinPharmacologyModule, fidaxomicinPharmacologyModule, rifaximinPharmacologyModule, fosfomycinPharmacologyModule, nitrofurantoinPharmacologyModule, mupirocinDecolonizationModule, perioperativeAntimicrobialProphylaxisModule, acuteBacterialMeningitisModule, acuteOtitisMediaModule, streptococcalPharyngitisModule, acuteBacterialRhinosinusitisModule, communityAcquiredPneumoniaAdultsModule, hospitalVentilatorAssociatedPneumoniaModule, tuberculosisModule, infectiveEndocarditisModule, intraAbdominalInfectionsModule, skinSoftTissueInfectionsModule, urinaryTractInfectionsModule, clostridioidesDifficileInfectionModule, travelersDiarrheaModule, syphilisModule, gonococcalInfectionsModule, chlamydialInfectionsModule, genitalHerpesModule, anogenitalHpvWartsModule, rickettsialEhrlichialAnaplasmaModule, lymeDiseaseModule];
+const basePharmacyModules = [nutritionScreeningAssessmentModule, fluidElectrolyteTherapyModule, acidBaseInterpretationModule, calciumPhosphorusHomeostasisModule, enteralNutritionModule, parenteralNutritionModule, parenteralNutritionCalculationsModule, pediatricParenteralNutritionModule, autonomicNervousSystemFoundationsModule, cholinergicAgonistsInhibitorsModule, antimuscarinicPharmacologyModule, cholinergicMedicinalChemistryModule, anticholinergicMedicinalChemistryModule, cholinergicToxicologyModule, adrenergicAgonistsModule, adrenergicAntagonistsModule, adrenergicMedicinalChemistryModule, diureticPharmacologyModule, diureticMedicinalChemistryModule, glaucomaPharmacotherapyModule, hypertensionFoundationsModule, resistantSecondaryHypertensionModule, hypertensiveEmergenciesModule, antihypertensiveMedicinalChemistryModule, dyslipidemiaRiskModule, lipidLoweringPharmacologyModule, dyslipidemiaTherapeuticsModule, chronicCoronaryDiseaseModule, acuteCoronarySyndromesModule, antiplateletPharmacologyModule, coagulationAnticoagulantPharmacologyModule, venousThromboembolismModule, warfarinManagementModule, directOralAnticoagulantsModule, parenteralAnticoagulantsModule, ecgInterpretationModule, arrhythmiaPathophysiologyModule, atrialArrhythmiasModule, ventricularArrhythmiasModule, antiarrhythmicPharmacologyModule, heartFailurePathophysiologyModule, chronicHeartFailureModule, acuteDecompensatedHeartFailureModule, heartFailureMedicinalChemistryModule, peripheralArterialDiseaseModule, acuteIschemicStrokeModule, secondaryStrokePreventionModule, acuteKidneyInjuryModule, chronicKidneyDiseaseModule, ckdComplicationsModule, renalReplacementTherapyModule, allergicRhinitisModule, asthmaModule, chronicObstructivePulmonaryDiseaseModule, pulmonaryArterialHypertensionModule, cysticFibrosisModule, drugInducedPulmonaryDiseaseModule, pituitaryPharmacologyModule, diabetesPathophysiologyMonitoringModule, noninsulinDiabetesPharmacotherapyModule, insulinTherapyModule, diabeticKetoacidosisModule, hyperosmolarHyperglycemicStateModule, thyroidDisordersModule, thyroidMedicinalChemistryModule, adrenalPharmacologyModule, cushingSyndromeModule, adrenalInsufficiencyModule, gonadalHormonePharmacologyModule, gynecologicDisordersModule, infertilityOvulationInductionModule, contraceptivePharmacotherapyModule, pregnancyLactationPharmacotherapyModule, menopausalHormoneTherapyModule, benignProstaticHyperplasiaModule, urinaryIncontinenceModule, sexualDysfunctionModule, osteoporosisModule, shockVasoactivePharmacotherapyModule, icuAnalgesiaSedationDeliriumModule, perioperativeCriticalCarePharmacologyModule, gastroesophagealRefluxDiseaseModule, pepticUlcerDiseaseModule, irritableBowelSyndromeModule, chronicIdiopathicConstipationModule, diarrheaAssessmentPharmacotherapyModule, inflammatoryBowelDiseaseModule, motionSicknessModule, medicationSafetyQualityModule, infectionPreventionControlModule, drugAllergiesAdverseReactionsModule, pharmacokineticsModule, pharmacogenomicsModule, dietarySupplementsComplementaryMedicineModule, toxicologyAntidotesModule, tobaccoUseCessationModule, systemicGlucocorticoidsModule, rheumatoidArthritisModule, systemicLupusErythematosusModule, multipleSclerosisModule, raynaudPhenomenonModule, celiacDiseaseModule, myastheniaGravisModule, sjogrenDiseaseModule, psoriasisModule, genitourinaryMedicinalChemistryModule, vaginitisVulvovaginalInfectionsModule, cervicitisPelvicInflammatoryDiseaseModule, gynecologicOncologyModule, pelvicOrganProlapseFistulaCareModule, genderAffirmingHormoneCareModule, immunoglobulinTherapyModule, anemiaModule, sickleCellDiseaseModule, coughCommonColdModule, commonEyeConditionsModule, commonEarConditionsModule, acneModule, atopicDermatitisModule, superficialFungalSkinInfectionsModule, liceScabiesModule, minorWoundCareModule, animalHumanBitesModule, burnAssessmentInitialCareModule, poisonPlantDermatitisModule, topicalCorticosteroidSafeUseModule, sunscreenPhotoprotectionModule, herpesLabialisModule, seborrheicDermatitisModule, alopeciaModule, diaperDermatitisModule, hyperhidrosisModule, hemorrhoidsModule, pinwormInfectionModule, travelHealthPlanningModule, antimicrobialFoundationsStewardshipModule, betaLactamPharmacologyModule, aminoglycosidePharmacologyModule, fluoroquinolonePharmacologyModule, macrolidePharmacologyModule, tetracyclinePharmacologyModule, sulfonamideTrimethoprimPharmacologyModule, vancomycinPharmacologyModule, daptomycinPharmacologyModule, linezolidTedizolidPharmacologyModule, tigecyclinePharmacologyModule, polymyxinPharmacologyModule, clindamycinPharmacologyModule, nitroimidazolePharmacologyModule, lefamulinPharmacologyModule, fidaxomicinPharmacologyModule, rifaximinPharmacologyModule, fosfomycinPharmacologyModule, nitrofurantoinPharmacologyModule, mupirocinDecolonizationModule, perioperativeAntimicrobialProphylaxisModule, acuteBacterialMeningitisModule, acuteOtitisMediaModule, streptococcalPharyngitisModule, acuteBacterialRhinosinusitisModule, communityAcquiredPneumoniaAdultsModule, hospitalVentilatorAssociatedPneumoniaModule, tuberculosisModule, infectiveEndocarditisModule, intraAbdominalInfectionsModule, skinSoftTissueInfectionsModule, urinaryTractInfectionsModule, clostridioidesDifficileInfectionModule, travelersDiarrheaModule, syphilisModule, gonococcalInfectionsModule, chlamydialInfectionsModule, genitalHerpesModule, anogenitalHpvWartsModule, rickettsialEhrlichialAnaplasmaModule, lymeDiseaseModule];
 
-pharmacyModules.push(tularemiaModule);
-pharmacyModules.push(systemicAntifungalFoundationsModule);
-pharmacyModules.push(amphotericinFlucytosinePharmacologyModule);
-pharmacyModules.push(triazoleAntifungalPharmacologyModule);
-pharmacyModules.push(echinocandinPharmacologyModule);
-pharmacyModules.push(terbinafineGriseofulvinPharmacologyModule);
-pharmacyModules.push(localOropharyngealAntifungalPharmacologyModule);
-pharmacyModules.push(influenzaAntiviralPharmacologyModule);
-pharmacyModules.push(herpesSimplexVaricellaAntiviralPharmacologyModule);
-pharmacyModules.push(cytomegalovirusPharmacotherapyModule);
-pharmacyModules.push(pneumocystisJiroveciiPneumoniaModule);
-pharmacyModules.push(hivFoundationsCareModule);
-pharmacyModules.push(nucleosideReverseTranscriptaseInhibitorModule);
+basePharmacyModules.push(
+  tularemiaModule,
+  systemicAntifungalFoundationsModule,
+  amphotericinFlucytosinePharmacologyModule,
+  triazoleAntifungalPharmacologyModule,
+  echinocandinPharmacologyModule,
+  terbinafineGriseofulvinPharmacologyModule,
+  localOropharyngealAntifungalPharmacologyModule,
+  influenzaAntiviralPharmacologyModule,
+  herpesSimplexVaricellaAntiviralPharmacologyModule,
+  cytomegalovirusPharmacotherapyModule,
+  pneumocystisJiroveciiPneumoniaModule,
+  hivFoundationsCareModule,
+  nucleosideReverseTranscriptaseInhibitorModule,
+);
+
+const curriculumAreaGroups = [
+  {
+    area: "Calculations & Nutrition",
+    modules: [nutritionScreeningAssessmentModule, fluidElectrolyteTherapyModule, acidBaseInterpretationModule, calciumPhosphorusHomeostasisModule, enteralNutritionModule, parenteralNutritionModule, parenteralNutritionCalculationsModule, pediatricParenteralNutritionModule],
+  },
+  {
+    area: "Pharmacy Foundations",
+    modules: [autonomicNervousSystemFoundationsModule, cholinergicAgonistsInhibitorsModule, antimuscarinicPharmacologyModule, cholinergicMedicinalChemistryModule, anticholinergicMedicinalChemistryModule, adrenergicAgonistsModule, adrenergicAntagonistsModule, adrenergicMedicinalChemistryModule, pharmacokineticsModule, pharmacogenomicsModule, dietarySupplementsComplementaryMedicineModule],
+  },
+  {
+    area: "Renal & Liver Disease",
+    modules: [acuteKidneyInjuryModule, chronicKidneyDiseaseModule, ckdComplicationsModule, renalReplacementTherapyModule],
+  },
+  {
+    area: "Immunizations & Travel",
+    modules: [travelHealthPlanningModule],
+  },
+  {
+    area: "Infectious Diseases",
+    modules: [infectionPreventionControlModule, vaginitisVulvovaginalInfectionsModule, cervicitisPelvicInflammatoryDiseaseModule, animalHumanBitesModule, pinwormInfectionModule, antimicrobialFoundationsStewardshipModule, betaLactamPharmacologyModule, aminoglycosidePharmacologyModule, fluoroquinolonePharmacologyModule, macrolidePharmacologyModule, tetracyclinePharmacologyModule, sulfonamideTrimethoprimPharmacologyModule, vancomycinPharmacologyModule, daptomycinPharmacologyModule, linezolidTedizolidPharmacologyModule, tigecyclinePharmacologyModule, polymyxinPharmacologyModule, clindamycinPharmacologyModule, nitroimidazolePharmacologyModule, lefamulinPharmacologyModule, fidaxomicinPharmacologyModule, rifaximinPharmacologyModule, fosfomycinPharmacologyModule, nitrofurantoinPharmacologyModule, mupirocinDecolonizationModule, perioperativeAntimicrobialProphylaxisModule, acuteBacterialMeningitisModule, acuteOtitisMediaModule, streptococcalPharyngitisModule, acuteBacterialRhinosinusitisModule, communityAcquiredPneumoniaAdultsModule, hospitalVentilatorAssociatedPneumoniaModule, tuberculosisModule, infectiveEndocarditisModule, intraAbdominalInfectionsModule, skinSoftTissueInfectionsModule, urinaryTractInfectionsModule, clostridioidesDifficileInfectionModule, travelersDiarrheaModule, syphilisModule, gonococcalInfectionsModule, chlamydialInfectionsModule, genitalHerpesModule, anogenitalHpvWartsModule, rickettsialEhrlichialAnaplasmaModule, lymeDiseaseModule, tularemiaModule, systemicAntifungalFoundationsModule, amphotericinFlucytosinePharmacologyModule, triazoleAntifungalPharmacologyModule, echinocandinPharmacologyModule, terbinafineGriseofulvinPharmacologyModule, localOropharyngealAntifungalPharmacologyModule, influenzaAntiviralPharmacologyModule, herpesSimplexVaricellaAntiviralPharmacologyModule, cytomegalovirusPharmacotherapyModule, pneumocystisJiroveciiPneumoniaModule, hivFoundationsCareModule, nucleosideReverseTranscriptaseInhibitorModule],
+  },
+  {
+    area: "Cardiovascular Conditions",
+    modules: [diureticPharmacologyModule, diureticMedicinalChemistryModule, hypertensionFoundationsModule, resistantSecondaryHypertensionModule, hypertensiveEmergenciesModule, antihypertensiveMedicinalChemistryModule, dyslipidemiaRiskModule, lipidLoweringPharmacologyModule, dyslipidemiaTherapeuticsModule, chronicCoronaryDiseaseModule, acuteCoronarySyndromesModule, antiplateletPharmacologyModule, ecgInterpretationModule, arrhythmiaPathophysiologyModule, atrialArrhythmiasModule, ventricularArrhythmiasModule, antiarrhythmicPharmacologyModule, heartFailurePathophysiologyModule, chronicHeartFailureModule, acuteDecompensatedHeartFailureModule, heartFailureMedicinalChemistryModule, peripheralArterialDiseaseModule, acuteIschemicStrokeModule, secondaryStrokePreventionModule, raynaudPhenomenonModule],
+  },
+  {
+    area: "Anticoagulation & Blood Disorders",
+    modules: [coagulationAnticoagulantPharmacologyModule, venousThromboembolismModule, warfarinManagementModule, directOralAnticoagulantsModule, parenteralAnticoagulantsModule, anemiaModule, sickleCellDiseaseModule],
+  },
+  {
+    area: "Eyes, Ears, Nose & Skin",
+    modules: [glaucomaPharmacotherapyModule, allergicRhinitisModule, coughCommonColdModule, commonEyeConditionsModule, commonEarConditionsModule, acneModule, atopicDermatitisModule, superficialFungalSkinInfectionsModule, liceScabiesModule, minorWoundCareModule, burnAssessmentInitialCareModule, poisonPlantDermatitisModule, topicalCorticosteroidSafeUseModule, sunscreenPhotoprotectionModule, herpesLabialisModule, seborrheicDermatitisModule, alopeciaModule, diaperDermatitisModule, hyperhidrosisModule, psoriasisModule],
+  },
+  {
+    area: "Pulmonary Conditions",
+    modules: [asthmaModule, chronicObstructivePulmonaryDiseaseModule, pulmonaryArterialHypertensionModule, drugInducedPulmonaryDiseaseModule, tobaccoUseCessationModule],
+  },
+  {
+    area: "Endocrine & Autoimmune",
+    modules: [pituitaryPharmacologyModule, diabetesPathophysiologyMonitoringModule, noninsulinDiabetesPharmacotherapyModule, insulinTherapyModule, diabeticKetoacidosisModule, hyperosmolarHyperglycemicStateModule, thyroidDisordersModule, thyroidMedicinalChemistryModule, adrenalPharmacologyModule, cushingSyndromeModule, adrenalInsufficiencyModule, systemicGlucocorticoidsModule, rheumatoidArthritisModule, systemicLupusErythematosusModule, sjogrenDiseaseModule],
+  },
+  {
+    area: "Reproductive & Genitourinary",
+    modules: [gonadalHormonePharmacologyModule, gynecologicDisordersModule, infertilityOvulationInductionModule, contraceptivePharmacotherapyModule, pregnancyLactationPharmacotherapyModule, menopausalHormoneTherapyModule, benignProstaticHyperplasiaModule, urinaryIncontinenceModule, sexualDysfunctionModule, osteoporosisModule, genitourinaryMedicinalChemistryModule, pelvicOrganProlapseFistulaCareModule, genderAffirmingHormoneCareModule],
+  },
+  {
+    area: "Special Populations",
+    modules: [cysticFibrosisModule, shockVasoactivePharmacotherapyModule, icuAnalgesiaSedationDeliriumModule, perioperativeCriticalCarePharmacologyModule, immunoglobulinTherapyModule],
+  },
+  {
+    area: "Oncology",
+    modules: [gynecologicOncologyModule],
+  },
+  {
+    area: "Neurologic Conditions",
+    modules: [multipleSclerosisModule, myastheniaGravisModule],
+  },
+  {
+    area: "Gastrointestinal Conditions",
+    modules: [gastroesophagealRefluxDiseaseModule, pepticUlcerDiseaseModule, irritableBowelSyndromeModule, chronicIdiopathicConstipationModule, diarrheaAssessmentPharmacotherapyModule, inflammatoryBowelDiseaseModule, motionSicknessModule, celiacDiseaseModule, hemorrhoidsModule],
+  },
+  {
+    area: "Medication Safety & Quality",
+    modules: [medicationSafetyQualityModule, drugAllergiesAdverseReactionsModule],
+  },
+  {
+    area: "Toxicology & Antidotes",
+    modules: [cholinergicToxicologyModule, toxicologyAntidotesModule],
+  },
+];
+
+export const pharmacyCurriculumAreas = ["All", ...curriculumAreaGroups.map(({ area }) => area)];
+
+const curriculumAreaByModule = new Map(
+  curriculumAreaGroups.flatMap(({ area, modules }) => modules.map((module) => [module, area])),
+);
+
+const uncategorizedModules = basePharmacyModules.filter((module) => !curriculumAreaByModule.has(module));
+const duplicateAssignments = curriculumAreaGroups
+  .flatMap(({ modules }) => modules)
+  .filter((module, index, modules) => modules.indexOf(module) !== index);
+
+if (uncategorizedModules.length || duplicateAssignments.length) {
+  const missing = uncategorizedModules.map((module) => module.slug).join(", ") || "none";
+  const duplicates = duplicateAssignments.map((module) => module.slug).join(", ") || "none";
+  throw new Error(`Invalid pharmacy curriculum taxonomy. Missing: ${missing}. Duplicates: ${duplicates}.`);
+}
+
+export const pharmacyModules = basePharmacyModules.map((module) => ({
+  ...module,
+  area: curriculumAreaByModule.get(module),
+}));
 
 export const pharmacySubmoduleCount = pharmacyModules.reduce((total, module) => total + module.submodules.length, 0);

@@ -6899,29 +6899,35 @@ body {
 
 .curriculum-search input::placeholder { color: #676767; }
 
-.curriculum-filters {
-  display: flex;
+.curriculum-area-filter {
+  display: grid;
   gap: 0.45rem;
-  overflow-x: auto;
-  padding-bottom: 0.15rem;
-  scrollbar-width: thin;
+  width: min(100%, 24rem);
 }
 
-.curriculum-filters button {
-  flex: 0 0 auto;
+.curriculum-area-filter span {
+  color: #686868;
+  font-size: 0.64rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.curriculum-area-filter select {
+  width: 100%;
   border: 1px solid #2b2b2b;
   border-radius: 999px;
-  padding: 0.62rem 0.9rem;
-  background: transparent;
-  color: #858585;
+  padding: 0.72rem 2.5rem 0.72rem 1rem;
+  background: #080808;
+  color: #d1d1d1;
   font: inherit;
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   cursor: pointer;
-  transition: border-color 180ms ease, background-color 180ms ease, color 180ms ease;
 }
 
-.curriculum-filters button:hover { border-color: #59462e; color: #d1d1d1; }
-.curriculum-filters button.is-active { border-color: var(--nas-gold); background: var(--nas-gold-light); color: #17120c; }
+.curriculum-area-filter select:focus-visible {
+  outline: 2px solid var(--nas-gold-light);
+  outline-offset: 3px;
+}
 
 .curriculum-results {
   color: #686868;

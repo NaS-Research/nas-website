@@ -4,7 +4,7 @@ import LearningLibrary from "@/components/learn/LearningLibrary";
 import PharmacyCurriculum from "@/components/learn/PharmacyCurriculum";
 import PharmacyPlatformHome from "@/components/learn/PharmacyPlatformHome";
 import { pharmacyLessons } from "@/data/pharmacyLearning";
-import { pharmacyModules } from "@/data/pharmacyModules";
+import { pharmacyCurriculumAreas, pharmacyModules } from "@/data/pharmacyModules";
 
 export const metadata = {
   title: "Pharmacy | NaS Learn",
@@ -22,6 +22,7 @@ export default function PharmacyLearningPage() {
     topics: module.topics,
     lessonCount: module.submodules.length,
     lessonCollectionSlug: module.lessonCollectionSlug,
+    area: module.area,
   }));
   const curriculumLessons = pharmacyLessons.map((lesson) => ({
     slug: lesson.slug,
@@ -54,7 +55,7 @@ export default function PharmacyLearningPage() {
 
         <div className="nas-shell">
           <PharmacyPlatformHome />
-          <PharmacyCurriculum collections={curriculumCollections} lessons={curriculumLessons} />
+          <PharmacyCurriculum areas={pharmacyCurriculumAreas} collections={curriculumCollections} lessons={curriculumLessons} />
           <LearningLibrary lessons={pharmacyLessons} />
         </div>
 

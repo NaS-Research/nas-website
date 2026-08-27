@@ -3,18 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 
-const areas = ["All", "Nutrition", "Foundations", "Cardiovascular", "Renal", "Pulmonary"];
-
-function getArea(collection) {
-  const value = `${collection.slug} ${collection.title}`.toLowerCase();
-  if (/nutrition|fluid|electrolyte|acid-base|calcium|phosphorus|enteral|parenteral/.test(value)) return "Nutrition";
-  if (/kidney|renal|ckd/.test(value)) return "Renal";
-  if (/rhinitis|asthma|pulmonary|copd|cystic/.test(value)) return "Pulmonary";
-  if (/hypertension|lipid|coronary|platelet|coagulation|thrombo|warfarin|anticoagul|ecg|arrhythm|heart-failure|arterial-disease|stroke/.test(value)) return "Cardiovascular";
-  return "Foundations";
-}
-
-export default function PharmacyCurriculum({ collections, lessons }) {
+export default function PharmacyCurriculum({ areas, collections, lessons }) {
   const [query, setQuery] = useState("");
   const [area, setArea] = useState("All");
 
@@ -22,8 +11,8 @@ export default function PharmacyCurriculum({ collections, lessons }) {
     const normalizedQuery = query.trim().toLowerCase();
     return collections
       .filter((collection) => {
-        const matchesArea = area === "All" || getArea(collection) === area;
-        const searchable = [collection.title, collection.description, ...(collection.topics || [])].join(" ").toLowerCase();
+        const matchesArea = area === "All" || collection.area === area;
+        const searchable = [collection.area, collection.title, collection.description, ...(collection.topics || [])].join(" ").toLowerCase();
         return matchesArea && (!normalizedQuery || searchable.includes(normalizedQuery));
       })
       .sort((left, right) => Number(right.number) - Number(left.number));
@@ -42,9 +31,12 @@ export default function PharmacyCurriculum({ collections, lessons }) {
           <span aria-hidden="true">⌕</span>
           <input aria-label="Search curriculum" value={query} onChange={(event) => setQuery(event.target.value)} type="search" placeholder="Search modules and topics" />
         </label>
-        <div className="curriculum-filters" aria-label="Filter curriculum by subject area">
-          {areas.map((option) => <button className={area === option ? "is-active" : ""} type="button" aria-pressed={area === option} onClick={() => setArea(option)} key={option}>{option}</button>)}
-        </div>
+        <label className="curriculum-area-filter">
+          <span>Subject area</span>
+          <select aria-label="Filter curriculum by subject area" value={area} onChange={(event) => setArea(event.target.value)}>
+            {areas.map((option) => <option value={option} key={option}>{option === "All" ? "All subject areas" : option}</option>)}
+          </select>
+        </label>
         <p className="curriculum-results" aria-live="polite">{visibleCollections.length} {visibleCollections.length === 1 ? "module" : "modules"}</p>
       </div>
 
@@ -53,7 +45,7 @@ export default function PharmacyCurriculum({ collections, lessons }) {
           const published = lessons.filter((lesson) => lesson.collectionSlug === (collection.lessonCollectionSlug || collection.slug));
           return (
             <article className="curriculum-card" id={collection.slug} key={collection.slug}>
-              <div className="curriculum-card__topline"><span>{getArea(collection)}</span><span>{collection.lessonCount} lessons</span></div>
+              <div className="curriculum-card__topline"><span>{collection.area}</span><span>{collection.lessonCount} lessons</span></div>
               <h3>{collection.title}</h3>
               <p>{collection.description}</p>
               <ul>{collection.topics.map((topic) => <li key={topic}>{topic}</li>)}</ul>
