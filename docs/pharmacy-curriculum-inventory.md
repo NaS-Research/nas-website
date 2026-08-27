@@ -176,8 +176,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: six lessons, six native exposure, receptor-domain, decontamination, antidote, and recovery diagrams, and six embedded knowledge checks
 - Assessment: 100 original questions spanning exposure reconstruction, muscarinic, nicotinic, and central findings, responder protection, decontamination, atropine endpoints, pralidoxime reactivation, aging, recurrent toxicity, intermediate weakness, and delayed neuropathy; ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: airway and ventilation were prioritized over mnemonic diagnosis; heart rate and pupil size were rejected as sole severity or atropinization endpoints; atropine was separated from nicotinic recovery; oxime benefit and aging were made agent and time dependent; decontamination was integrated with protected resuscitation
-- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 25, 2026 with 342 static pages generated
+- Automated verification: 100 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 12 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
 - Goodnotes note: the dedicated cholinoceptor-blocker and cholinesterase-regenerator lecture export remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
 ### Adrenergic Agonists
