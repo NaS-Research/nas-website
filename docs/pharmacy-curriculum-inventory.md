@@ -2583,7 +2583,8 @@ Current source reconciliations:
 - Children, pregnancy, lactation, allergy, dosage form, and adherence use current narrative benefit risk reasoning. Obsolete pregnancy letters and automatic age based doxycycline slogans are not used.
 - Persistent fever, cytopenias, transaminitis, or hemolysis opens an Anaplasma or Babesia coinfection audit. Doxycycline activity against Lyme disease and anaplasmosis is not misrepresented as babesiosis treatment.
 - Prolonged fatigue, pain, or cognitive symptoms are validated and investigated broadly. Without objective reinfection or treatment failure, additional antibiotics are not recommended, while symptom, function, and shared goal care remain active.
-- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 156-question assessment bank.
+- Integrated cases require learners to identify the objective manifestation and immediate threat before choosing testing, care setting, route, regimen, or duration. The closing plan must assign pending results, response checkpoints, red flags, and follow-up ownership rather than ending with a prescription or repeat antibody titer.
+- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 164-question assessment bank across all ten lessons.
 - Goodnotes was retried after the reported reconnection, but macOS still returned a locked session. Any matching Lyme disease lecture will receive a documented reconciliation pass after manual unlock.
 
 ### Tularemia
