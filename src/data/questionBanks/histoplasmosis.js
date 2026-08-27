@@ -24,7 +24,41 @@ const concepts = [
   ["prophylaxis", "Primary prophylaxis with itraconazole 200 mg daily is reserved for CD4 below 150 plus occupational or hyperendemic exposure risk, not for every patient with HIV.", "Assess geography, occupation, local incidence, ART, and interaction burden before prophylaxis.", "Routine prophylaxis in low-risk settings adds interaction and toxicity without clear benefit."],
   ["pulmonary-idsa", "Most immunocompetent patients with mild acute pulmonary disease recover without antifungal therapy; prolonged, progressive, moderate, or immunocompromised disease favors treatment.", "Use shared decision-making and distinguish pulmonary duration from HIV dissemination regimens.", "Do not apply a universal treat-all or treat-none rule."],
   ["pregnancy", "When treatment is necessary in pregnancy, maternal-fetal and infectious-disease specialists should weigh severity; avoid azoles in the first trimester when possible and use liposomal amphotericin B for serious disease.", "Balance fetal risk against the maternal danger of untreated invasive infection.", "Pregnancy does not justify undertreating life-threatening disseminated disease."],
+  ["monitoring-trajectory", "Response assessment joins symptoms, antigen trend, cultures, organ recovery, drug exposure, toxicity, adherence, immune status, and treatment phase.", "Compare current findings with baseline and the preceding treatment phase, then investigate any discordant trajectory.", "Do not use one antigen or laboratory value as the sole proof of cure or treatment failure."],
+  ["integrated-triage", "Initial triage identifies pulmonary, disseminated, or CNS disease and names severity and host risk before choosing a test or regimen.", "Stabilize organ failure, obtain high-value specimens when safe, and begin active therapy without waiting for slow cultures in severe disease.", "Do not apply a mild pulmonary observation pathway to an unstable patient with disseminated disease."],
+  ["transition-ownership", "A closed plan owns the amphotericin-to-itraconazole transition, exact formulation, loading, concentration checks, pending results, ART, duration, and suppression decisions.", "Assign each transition, result, monitoring checkpoint, and relapse threshold to a named clinician and date.", "Do not end the care plan at the first prescription or at early symptom improvement."],
 ];
+
+const lessonByConcept = {
+  environment: "exposure-biology",
+  dimorphism: "exposure-biology",
+  "host-defense": "exposure-biology",
+  "pulmonary-syndrome": "syndromes-severity",
+  dissemination: "syndromes-severity",
+  severity: "syndromes-severity",
+  antigen: "diagnosis",
+  "culture-pathology": "diagnosis",
+  "severe-induction": "severe-treatment",
+  "mild-disseminated": "severe-treatment",
+  "amphotericin-safety": "severe-treatment",
+  "cns-disease": "cns-treatment",
+  "cns-treatment": "cns-treatment",
+  "itraconazole-loading": "itraconazole-system",
+  formulations: "itraconazole-system",
+  tdm: "itraconazole-system",
+  interaction: "itraconazole-system",
+  "cardiac-hepatic": "itraconazole-system",
+  "response-antigen": "monitoring-response",
+  "monitoring-trajectory": "monitoring-response",
+  art: "art-suppression",
+  suppression: "art-suppression",
+  "stop-restart": "art-suppression",
+  prophylaxis: "art-suppression",
+  "pulmonary-idsa": "pulmonary-special",
+  pregnancy: "pulmonary-special",
+  "integrated-triage": "integrated-case",
+  "transition-ownership": "integrated-case",
+};
 
 const dimensions = [
   ["principle", "Which statement is most accurate?", 1],
@@ -39,8 +73,14 @@ const distractors = [
   "Assume every antifungal formulation and dose can be substituted without verification.",
 ];
 
-export const histoplasmosisQuestionBank = concepts.flatMap(([slug, principle, action, hazard], conceptIndex) =>
-  dimensions.map(([dimension, stem, answerType], dimensionIndex) => {
+export const histoplasmosisQuestionBank = concepts.flatMap(([slug, principle, action, hazard], conceptIndex) => {
+  const lesson = lessonByConcept[slug];
+
+  if (!lesson) {
+    throw new Error(`Missing Histoplasmosis lesson mapping for ${slug}`);
+  }
+
+  return dimensions.map(([dimension, stem, answerType], dimensionIndex) => {
     const correct = answerType === 1 ? principle : answerType === 2 ? action : hazard;
     const choices = dimension === "hazard"
       ? [hazard, principle, action, distractors[(conceptIndex + dimensionIndex) % distractors.length]]
@@ -51,8 +91,8 @@ export const histoplasmosisQuestionBank = concepts.flatMap(([slug, principle, ac
       choices,
       answer: 0,
       rationale: `${principle} ${action}`,
-      reviewHref: `#${slug}`,
+      reviewHref: `#${lesson}`,
       difficulty: dimensionIndex < 2 ? "foundational" : "advanced",
     };
-  })
-);
+  });
+});
