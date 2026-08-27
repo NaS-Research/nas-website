@@ -2431,6 +2431,21 @@ Current source reconciliations:
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 130-question assessment bank.
 - Goodnotes remains unavailable because macOS reports a locked session. Any matching urinary infection lecture will receive a documented reconciliation pass after manual unlock.
 
+### Clostridioides difficile Infection
+
+- Built from the CDI section of RxPrep 2023 Chapter 23 and reconciled with the 2021 IDSA and SHEA focused update, the 2024 AGA microbiota therapy guideline, 2026 CDC clinical guidance, and current FDA labeling.
+- The module distinguishes asymptomatic colonization from toxin-mediated disease and limits testing to new unexplained clinically significant diarrhea using an appropriate unformed specimen.
+- NAAT, GDH, toxin assays, and multistep algorithms are interpreted through pretest probability. A positive molecular test is not presented as proof of symptomatic disease, and tests of cure are rejected.
+- Severity teaching separates nonsevere and severe laboratory frames from fulminant physiology. Hypotension, shock, ileus, and megacolon activate immediate resuscitation, multidisciplinary coordination, and surgical readiness.
+- Eligible initial nonfulminant disease uses fidaxomicin 200 mg twice daily for 10 days as the preferred regimen when feasible, while oral vancomycin 125 mg four times daily for 10 days remains acceptable. Metronidazole is retained only as an access-limited option for initial nonsevere disease.
+- Fulminant CDI uses vancomycin 500 mg enterally four times daily plus metronidazole 500 mg IV every 8 hours, with rectal vancomycin considered for ileus. IV vancomycin alone is explicitly rejected for colonic treatment.
+- First and later recurrences use symptom confirmation, fidaxomicin, tapered and pulsed vancomycin, and other evidence-supported strategies rather than automatic repetition of the prior regimen.
+- VOWST, REBYOTA, and conventional FMT are presented as recurrence-prevention strategies after antibacterial treatment, with route, product, immune-status, safety, and regulatory boundaries kept visible.
+- Isolation on suspicion, gown and gloves, dedicated equipment, EPA List K sporicidal cleaning, hand hygiene, antibiotic stewardship, transfer communication, and at least 48 hours of precautions after diarrhea resolves form one prevention system.
+- Pregnancy and lactation use current narrative evidence instead of obsolete letters. Pediatrics, inflammatory bowel disease, immune compromise, response monitoring, recurrence counseling, and ownership at handoff are integrated.
+- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 130-question assessment bank.
+- Goodnotes remains unavailable because macOS reports a locked session. Any matching CDI lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
