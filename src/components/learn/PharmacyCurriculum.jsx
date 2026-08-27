@@ -7,6 +7,12 @@ export default function PharmacyCurriculum({ areas, collections, lessons }) {
   const [query, setQuery] = useState("");
   const [area, setArea] = useState("All");
 
+  const orderedAreas = useMemo(() => [...areas].sort((left, right) => {
+    if (left === "All") return -1;
+    if (right === "All") return 1;
+    return left.localeCompare(right, undefined, { sensitivity: "base" });
+  }), [areas]);
+
   const visibleCollections = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
     return collections
@@ -15,7 +21,9 @@ export default function PharmacyCurriculum({ areas, collections, lessons }) {
         const searchable = [collection.area, collection.title, collection.description, ...(collection.topics || [])].join(" ").toLowerCase();
         return matchesArea && (!normalizedQuery || searchable.includes(normalizedQuery));
       })
-      .sort((left, right) => Number(right.number) - Number(left.number));
+      .sort((left, right) => normalizedQuery
+        ? left.title.localeCompare(right.title, undefined, { sensitivity: "base" })
+        : Number(right.number) - Number(left.number));
   }, [area, collections, query]);
 
   return (
@@ -34,7 +42,7 @@ export default function PharmacyCurriculum({ areas, collections, lessons }) {
         <label className="curriculum-area-filter">
           <span>Subject area</span>
           <select aria-label="Filter curriculum by subject area" value={area} onChange={(event) => setArea(event.target.value)}>
-            {areas.map((option) => <option value={option} key={option}>{option === "All" ? "All subject areas" : option}</option>)}
+            {orderedAreas.map((option) => <option value={option} key={option}>{option === "All" ? "All subject areas" : option}</option>)}
           </select>
         </label>
         <p className="curriculum-results" aria-live="polite">{visibleCollections.length} {visibleCollections.length === 1 ? "module" : "modules"}</p>
