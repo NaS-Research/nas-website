@@ -380,8 +380,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: six lessons, six native hemostasis, target, laboratory, selection, transition, and critical-safety diagrams, and six embedded knowledge checks
 - Assessment: 100 original questions spanning primary and secondary hemostasis, tissue factor, factor Xa, thrombin, fibrinolysis, antithrombin, vitamin K, direct Xa and thrombin inhibition, anticoagulant intensity, PT and INR, aPTT, anti-Xa, thrombin time, routine-test limits, kidney and liver function, age, weight, pregnancy, P-gp and CYP interactions, additive bleeding, transitions, neuraxial procedures, major bleeding, reversal, and HIT; ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: the cell-based model replaced isolated-cascade memorization; D-dimer was not treated as diagnostic by itself; INR was limited to vitamin K antagonist monitoring; routine PT and aPTT were not used to exclude all DOAC exposure; dose criteria stayed product and indication specific; pregnancy letters were not used; bridging was risk selected; reversal was paired to agent and source control; HIT was treated as a prothrombotic emergency
-- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 25, 2026 with 359 static pages generated
+- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, at least 12 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
 - Goodnotes note: the dedicated anticoagulation lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
 ### Venous Thromboembolism
