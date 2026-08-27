@@ -127,9 +127,10 @@ This inventory records the source material available in the founder's Goodnotes 
 - Current references reviewed: current DailyMed labeling for bethanechol, pilocarpine, cevimeline, neostigmine, pyridostigmine, donepezil, rivastigmine, galantamine, and methacholine, plus IUPHAR and BPS receptor nomenclature
 - Learning structure: six lessons, six native mechanism and decision diagrams, and six embedded knowledge checks
 - Assessment: 100 original questions with mechanism, structure and distribution, direct agonist, urinary, salivary, ocular, bronchial challenge, myasthenia, neuromuscular reversal, dementia, safety, and integrated clinical cases; ten sampled without replacement per attempt with answer order randomized
+- Automated assessment verification: 100 unique questions, valid lesson review links, and at least 12 questions mapped to every lesson
 - Source reconciliation: obsolete broad claims about routine glaucoma treatment, fixed dementia response percentages, and simplified muscarinic subtype distribution were replaced with product-specific labeling, patient-centered benefit assessment, current titration rules, objective neuromuscular monitoring, and explicit separation of muscarinic, nicotinic, and central toxicity
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, six diagrams, ten questions per attempt, different questions and answer order on repeat attempt, complete scoring with explanations and ten remediation links, and no browser errors or warnings
-- Build verification: Next.js production build passed August 25, 2026 with 338 static pages generated
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
 
 ### Antimuscarinic Pharmacology
 
