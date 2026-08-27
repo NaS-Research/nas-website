@@ -2416,6 +2416,21 @@ Current source reconciliations:
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 170-question assessment bank.
 - Goodnotes was retried after the user reported restored access, but macOS still reported a locked session. Any matching SSTI or DFI lecture will receive a documented reconciliation pass after manual unlock.
 
+### Urinary Tract Infections
+
+- Built from the urinary tract infection and pregnancy bacteriuria sections of RxPrep 2023 Chapter 23 and reconciled with the 2025 IDSA complicated UTI guideline, 2019 IDSA asymptomatic bacteriuria guideline, 2023 ACOG pregnancy UTI consensus, current IDSA resistant gram-negative guidance, and current product labeling.
+- The module uses the 2025 clinically relevant distinction between infection confined to the bladder and infection beyond the bladder. Sex no longer functions as the sole shortcut for calling every UTI in a man complicated, while prostatitis, obstruction, hardware, pregnancy, host risk, and source control remain visible modifiers.
+- Symptoms define the syndrome. Pyuria and nitrites support but do not independently diagnose UTI, and specimen quality, mixed growth, colony count, prior antibiotics, catheter status, and the decision a culture can change determine interpretation.
+- Bladder therapy includes nitrofurantoin 100 mg twice daily for five days, TMP-SMX DS twice daily for three days when susceptibility or local resistance supports it, fosfomycin 3 g once for selected disease, and beta-lactam or fluoroquinolone boundaries.
+- Nitrofurantoin and oral fosfomycin are explicitly excluded from pyelonephritis because bladder concentration does not provide adequate renal parenchymal exposure.
+- The old routine 10 to 14 day cUTI default is replaced. Improving eligible cUTI including acute pyelonephritis generally receives 5 to 7 days of an effective fluoroquinolone or seven days of an effective nonfluoroquinolone. Improving cUTI with gram-negative bacteremia can also use seven days when exposure and source control are reliable.
+- IV-to-oral transition follows stability, active susceptibility, bioavailability, tissue penetration, absorption, adherence, and source control. Obstruction, abscess, infected stones, catheters, stents, and other devices trigger removal, exchange, decompression, or drainage rather than blind antibiotic extension.
+- Asymptomatic bacteriuria is not treated in most nonpregnant adults, older adults, diabetes, catheters, or spinal cord injury. Pregnancy and selected endourologic procedures involving mucosal trauma remain the principal screening and treatment exceptions.
+- Pregnancy teaching includes one early culture, 4 to 7 days for ASB, 5 to 7 days for acute cystitis, avoidance of empiric ampicillin or amoxicillin, narrative trimester risk for nitrofurantoin and sulfonamides, and inpatient initial management of pyelonephritis.
+- Recurrence, catheter-associated infection, phenazopyridine, resistant gram-negative disease, allergy, kidney trajectory, dialysis, G6PD, potassium, QT, interactions, prophylaxis, and explicit stop ownership are integrated into one longitudinal system.
+- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 130-question assessment bank.
+- Goodnotes remains unavailable because macOS reports a locked session. Any matching urinary infection lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
