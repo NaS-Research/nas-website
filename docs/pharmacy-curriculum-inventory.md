@@ -67,9 +67,10 @@ This inventory records the source material available in the founder's Goodnotes 
 - Current references reviewed: ASPEN enteral nutrition safe practices, ASPEN and SCCM adult critical care nutrition guidance, ASPEN refeeding consensus recommendations, and FDA enteral connector safety guidance
 - Learning structure: six lessons, six native clinical diagrams, and six embedded knowledge checks
 - Assessment: 100 original questions with rate, delivered-volume, free-water, access, medication, and complication cases, ten sampled without replacement per attempt, answer order randomized
+- Automated verification: 100 unique questions, valid review links, and a minimum of nine questions mapped to every lesson
 - Source reconciliation: outdated routine residual monitoring, blanket medication hold intervals, formula marketing claims, and rigid hang-time language were narrowed to current evidence, manufacturer instructions, and facility protocol
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, six diagrams, ten questions per attempt, a different question set on repeat attempt, scoring feedback, remediation links, and no console errors
-- Build verification: Next.js production build passed August 25, 2026
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
 
 ### Parenteral Nutrition
 

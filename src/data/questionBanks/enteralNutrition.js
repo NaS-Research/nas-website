@@ -102,7 +102,7 @@ const diagnosticCases = [
   ["A stable patient with a mature gastrostomy wants daytime mobility and tolerates gastric feeds.", "Consider bolus or cyclic delivery based on goals and tolerance", "Mature gastric access provides flexible delivery options.", "delivery-prescription"],
   ["A crushed extended-release antihypertensive was administered through a tube and hypotension follows.", "Recognize dose dumping and perform a dosage-form safety review", "Crushing altered-release products can release the full dose rapidly.", "medication-administration"],
   ["A feeding pump shows the prescribed rate, but only 55 percent of the daily target has been delivered for three days.", "Audit interruptions and redesign the safe delivery schedule", "The actual volume, not the displayed rate alone, determines nutrition received.", "delivery-prescription"],
-].map(([caseText, correct, rationale, lesson], index) => q(`09${index}`, "What is the best next action?", [correct, "Continue the same plan without reassessment", "Change formula based on one isolated detail", "Ignore the access route"], 0, rationale, lesson, { case: caseText }));
+].map(([caseText, correct, rationale, lesson], index) => q(`09${index}`, `${caseText} What is the best next action?`, [correct, "Continue the same plan without reassessment", "Change formula based on one isolated detail", "Ignore the access route"], 0, rationale, lesson));
 
 const integrationCases = [
   ["A patient in shock has escalating vasopressors, abdominal distention, and rising lactate while feeds advance.", "Stop advancement and urgently evaluate perfusion and bowel ischemia", "The pattern suggests unsafe gastrointestinal hypoperfusion.", "enteral-decision"],
@@ -115,7 +115,7 @@ const integrationCases = [
   ["A patient on warfarin changes from intermittent feeding to continuous feeding and INR falls.", "Reconcile vitamin K exposure, delivery timing, adherence, and INR response", "Both formula exposure and administration pattern can alter anticoagulation.", "medication-administration"],
   ["A formula bag is repeatedly topped off instead of being replaced and the patient develops fever and diarrhea.", "Discard the system and investigate contamination while following safe preparation and hang-time practice", "Topping off extends exposure and can propagate microbial contamination.", "monitoring-complications"],
   ["A patient receives 60 mL per hour for 24 hours, but the goal is 1,800 mL daily.", "Recognize a 360 mL daily deficit and revise the safe rate or schedule", "The current prescription delivers 1,440 mL, which is below target.", "delivery-prescription"],
-].map(([caseText, correct, rationale, lesson], index) => q(`10${index}`, "Which interpretation or management plan is most defensible?", [correct, "Use a fixed plan that ignores clinical change", "Treat the formula name as the diagnosis", "Delay all action until the next routine visit"], 0, rationale, lesson, { case: caseText }));
+].map(([caseText, correct, rationale, lesson], index) => q(`10${index}`, `${caseText} Which interpretation or management plan is most defensible?`, [correct, "Use a fixed plan that ignores clinical change", "Treat the formula name as the diagnosis", "Delay all action until the next routine visit"], 0, rationale, lesson));
 
 export const enteralNutritionQuestionBank = [
   ...core,
