@@ -2543,7 +2543,8 @@ Current source reconciliations:
 - Immune compromise lowers the biopsy threshold. Pregnancy excludes podofilox, podophyllin, and sinecatechins, and generally avoids imiquimod until more data are available. Cesarean delivery is not used solely to prevent neonatal HPV.
 - Gardasil 9 is taught as a noninfectious L1 virus like particle vaccine that prevents new infection but does not treat established disease. Routine, catch-up, shared decision, two dose, three dose, minimum interval, immune status, pregnancy delay, and interrupted series rules are integrated.
 - Counseling addresses recurrence, partner sharing, uncertainty about acquisition timing, partial condom protection, vaccination, screening, smoking, immune status, and stigma without blame.
-- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 134-question assessment bank.
+- The assessment now gives fuller counseling and follow-up coverage. It tests partner notification without source attribution, the limits of partner HPV testing, STI evaluation, disclosure safety, treatment-response checkpoints, toxicity, diagnostic reconsideration, recurrence, vaccination, and continued screening.
+- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 142-question assessment bank across all ten lessons.
 - Goodnotes remains unavailable because macOS reports a locked session. Any matching HPV or genital wart lecture will receive a documented reconciliation pass after manual unlock.
 
 ### Rickettsial, Ehrlichial, and Anaplasma Infections
