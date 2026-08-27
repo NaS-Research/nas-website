@@ -199,6 +199,7 @@ import DisseminatedMacVisual, { disseminatedMacVisualTypes } from "@/components/
 import ToxoplasmaEncephalitisVisual, { toxoplasmaEncephalitisVisualTypes } from "@/components/learn/ToxoplasmaEncephalitisVisual";
 import CryptococcalMeningitisVisual, { cryptococcalMeningitisVisualTypes } from "@/components/learn/CryptococcalMeningitisVisual";
 import HistoplasmosisVisual, { histoplasmosisVisualTypes } from "@/components/learn/HistoplasmosisVisual";
+import MucosalEsophagealCandidiasisVisual, { mucosalEsophagealCandidiasisVisualTypes } from "@/components/learn/MucosalEsophagealCandidiasisVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -579,6 +580,7 @@ export default async function PharmacyModulePage({ params }) {
               {module.slug === "toxoplasma-gondii-encephalitis" && toxoplasmaEncephalitisVisualTypes.includes(submodule.visual) && <ToxoplasmaEncephalitisVisual type={submodule.visual} />}
               {module.slug === "cryptococcal-meningitis" && cryptococcalMeningitisVisualTypes.includes(submodule.visual) && <CryptococcalMeningitisVisual type={submodule.visual} />}
               {module.slug === "histoplasmosis" && histoplasmosisVisualTypes.includes(submodule.visual) && <HistoplasmosisVisual type={submodule.visual} />}
+              {module.slug === "mucosal-esophageal-candidiasis" && mucosalEsophagealCandidiasisVisualTypes.includes(submodule.visual) && <MucosalEsophagealCandidiasisVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>

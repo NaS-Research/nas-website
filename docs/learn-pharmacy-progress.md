@@ -17,6 +17,7 @@ This ledger records modules verified under the current curriculum-build workflow
 | Toxoplasma gondii Encephalitis | Infectious Diseases | 136 original questions | RxPrep 2023 opportunistic-infection pages 404 and 405 | NIH Adult and Adolescent OI guideline updated September 9, 2025 and reviewed June 23, 2026 | Production build passed, 524 pages generated |
 | Cryptococcal Meningitis | Infectious Diseases | 100 original questions | RxPrep 2023 antifungal pages 389 and 390 and opportunistic-infection page 405 | NIH Adult and Adolescent OI cryptococcosis guidance reviewed March 16, 2026 | Production build passed, 525 pages generated |
 | Histoplasmosis | Infectious Diseases | 100 original questions | RxPrep 2023 antifungal pages 389 through 392 and HIV opportunistic-infection material | NIH Adult and Adolescent OI histoplasmosis guidance reviewed March 16, 2026 and 2025 IDSA pulmonary update | Production build passed, 526 pages generated |
+| Mucosal and Esophageal Candidiasis | Infectious Diseases | 100 original questions | RxPrep 2023 antifungal pages 390 through 394 and HIV opportunistic-infection material | NIH Adult and Adolescent OI candidiasis guidance reviewed March 16, 2026 and IDSA candidiasis guidance | Production build passed, 527 pages generated |
 
 Each module assessment randomly draws 10 questions from its complete bank through the shared pharmacy assessment system. The system randomizes question order and answer choices, prevents duplicate questions in one attempt, reports score and explanations, and links each answer back to its lesson section.
 
@@ -38,11 +39,13 @@ Each module assessment randomly draws 10 questions from its complete bank throug
 - The local RxPrep copy was reviewed for cryptococcal meningitis across printed antifungal pages 389 and 390 and the opportunistic-infection table on printed page 405. The module covers organism biology, CrAg and CSF staging, liposomal amphotericin B plus flucytosine induction, pressure management, culture-guided consolidation, maintenance, delayed ART, interactions, and special populations.
 - Goodnotes remained unavailable because macOS was locked during focused histoplasmosis search attempts. The local RxPrep copy was reviewed for dimorphic fungi, amphotericin formulations and safety, itraconazole indications, formulation-dependent absorption, CYP interactions, administration, and HIV opportunistic-infection context. Direct Goodnotes confirmation remains pending until the unlocked application is visible.
 - The histoplasmosis module reconciles the course foundation with NIH HIV-specific disseminated and CNS regimens and the 2025 IDSA update that recommends against routinely treating most mild acute pulmonary disease in immunocompetent patients.
+- Goodnotes remained unavailable because macOS was locked during focused candidiasis search attempts. The local RxPrep copy was reviewed for oral thrush, Candida species and fluconazole activity, local dosage forms, azole safety, and oral versus esophageal treatment distinctions. Direct Goodnotes confirmation remains pending until the unlocked application is visible.
+- The disease-focused candidiasis module complements rather than duplicates the existing local oropharyngeal antifungal pharmacology module. It adds compartment diagnosis, systemic esophageal therapy, the 7-day nonresponse threshold for endoscopy, refractory-disease investigation, ART, suppression, pregnancy, and closed-loop follow-up.
 - Obsolete or changing source content is reconciled explicitly. Discontinued agents are identified as historical, uncommon older agents are separated from current practice, and pregnancy-letter classifications are not used.
 
 ## Next verified-build target
 
-Continue the HIV-related opportunistic infection sequence with mucosal and esophageal candidiasis. Search the restored Goodnotes library for dedicated lecture material, then reconcile accessible course content with current NIH and IDSA guidance and FDA labeling before implementation.
+Continue the endemic fungal and HIV-related opportunistic infection sequence with coccidioidomycosis. Search the restored Goodnotes library for dedicated lecture material, then reconcile accessible course content with current NIH and IDSA guidance and FDA labeling before implementation.
 
 ## Remaining-work rule
 
