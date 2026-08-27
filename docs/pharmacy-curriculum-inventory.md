@@ -2562,6 +2562,26 @@ Current source reconciliations:
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 138-question assessment bank.
 - Goodnotes remains unavailable because macOS reports a locked session. Any matching tickborne infection lecture will receive a documented reconciliation pass after manual unlock.
 
+### Lyme Disease
+
+- Built from the brief Lyme disease section of RxPrep 2023 Chapter 23 and expanded through current CDC clinical care, testing, prevention, and prolonged symptom resources plus the AAN, ACR, and IDSA Lyme disease guideline.
+- The module separates tick removal, observation, and prophylaxis. A high risk decision uses Ixodes identity, endemicity, engorgement or at least 36 hours of attachment, treatment within 72 hours of removal, doxycycline safety, and patient preference.
+- Eligible adults receive doxycycline 200 mg once for prophylaxis. Children of any age receive 4.4 mg/kg once to a maximum of 200 mg. Counseling makes clear that one dose does not guarantee prevention or cover every pathogen transmitted by Ixodes.
+- Erythema migrans is taught as an expanding lesion with variable morphology rather than a mandatory bullseye. Tinea, cellulitis, arthropod reaction, erythema multiforme, fixed drug eruption, and STARI remain visible in the differential.
+- Multiple skin lesions, facial palsy, meningitis, radiculoneuritis, carditis, and objective arthritis mark disseminated or later disease and change the diagnostic, setting, and treatment pathway.
+- Typical erythema migrans with credible exposure is a clinical diagnosis because early serology can be falsely negative. Other compatible manifestations use FDA cleared standard or modified two tier testing interpreted through pretest probability and illness duration.
+- The serologic window, isolated IgM after more than 30 days, persistent IgG, prior infection, reinfection, and the absence of a serologic test of cure are separated explicitly.
+- Adult localized disease regimens preserve exact exposure: doxycycline 100 mg twice daily for 10 days, amoxicillin 500 mg three times daily for 14 days, or cefuroxime 500 mg twice daily for 14 days. Pediatric regimens use current weight, divided daily dosing, maximums, and formulation checks.
+- Doxycycline counseling protects exposure through cation and tube feed separation, water, upright posture, photosensitivity planning, and adherence. Early inflammatory worsening is distinguished from allergy, sepsis, and later clinical deterioration.
+- Facial palsy includes corneal protection. Meningitis, cranial neuropathy, and radiculoneuritis without parenchymal disease can use oral doxycycline or an appropriate IV beta lactam for 14 to 21 days, while objective brain or spinal cord parenchymal disease uses specialist directed IV therapy.
+- Carditis uses symptoms and conduction risk. Mild first degree block with PR below 300 milliseconds can use oral treatment, while symptoms, PR at least 300 milliseconds, higher degree block, another serious arrhythmia, or myopericarditis requires hospitalization, monitoring, and initial IV ceftriaxone. Temporary pacing protects a usually reversible process.
+- Initial objective Lyme arthritis receives 28 days of oral therapy. Partial improvement can be observed or receive a second oral course, minimal response can receive IV ceftriaxone for 14 to 28 days, and synovitis after adequate oral and IV care moves to rheumatology rather than repeated antibiotics.
+- Children, pregnancy, lactation, allergy, dosage form, and adherence use current narrative benefit risk reasoning. Obsolete pregnancy letters and automatic age based doxycycline slogans are not used.
+- Persistent fever, cytopenias, transaminitis, or hemolysis opens an Anaplasma or Babesia coinfection audit. Doxycycline activity against Lyme disease and anaplasmosis is not misrepresented as babesiosis treatment.
+- Prolonged fatigue, pain, or cognitive symptoms are validated and investigated broadly. Without objective reinfection or treatment failure, additional antibiotics are not recommended, while symptom, function, and shared goal care remain active.
+- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 156-question assessment bank.
+- Goodnotes was retried after the reported reconnection, but macOS still returned a locked session. Any matching Lyme disease lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
