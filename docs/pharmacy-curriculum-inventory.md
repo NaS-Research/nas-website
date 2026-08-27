@@ -103,9 +103,10 @@ This inventory records the source material available in the founder's Goodnotes 
 - Current references reviewed: 2023 ASPEN preterm PN guideline, ASPEN neonatal and pediatric lipid safety recommendations, ASPEN appropriate PN dosing tool, current FDA SMOFlipid labeling, and FDA aluminum-content guidance
 - Learning structure: six lessons, six native clinical diagrams, and six embedded knowledge checks
 - Assessment: 100 original questions with indication, access, maintenance fluid, dextrose, GIR, amino acid, lipid, mineral, trace-element, compatibility, aluminum, filtration, photoprotection, monitoring, and transition cases; ten sampled without replacement per attempt with answer order randomized
+- Automated assessment verification: 100 unique questions, valid lesson review links, and at least 8 questions mapped to every lesson
 - Source reconciliation: the lecture's routine 4 g/kg/day preterm amino-acid ceiling was replaced by the 2023 ASPEN maximum target of 3.5 g/kg/day and recommendation against an initial dose above 3 g/kg/day; fixed glucose thresholds, blanket renal and hepatic protein restriction, product-independent lipid rates, routine 200 mg/dL triglyceride rules, peripheral concentration limits, and separate-lipid-only language were reframed as patient, product, access, and policy-specific decisions
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, six diagrams, ten questions per attempt, different questions and answer order on repeat attempt, complete scoring with explanations and ten remediation links, and no current browser errors or warnings
-- Build verification: Next.js production build passed August 25, 2026 with 336 static pages generated
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
 
 ### Autonomic Nervous System Foundations
 
