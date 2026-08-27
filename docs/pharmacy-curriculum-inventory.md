@@ -2709,6 +2709,27 @@ Current source reconciliations:
 - Build verification: Next.js production build passed August 27, 2026 with 511 static pages generated.
 - Goodnotes source reconciliation remains pending until the local macOS session is unlocked and the library is readable through the application.
 
+### Influenza Antiviral Pharmacology
+
+- Built from the influenza antiviral material in RxPrep 2023 and reconciled with CDC clinical guidance updated March 2026 plus current Tamiflu, Relenza, Rapivab, and Xofluza labeling.
+- Influenza A and B syndrome recognition, high-risk hosts, hospitalization, severe or progressive disease, competing diagnoses, bacterial complications, vaccination, and priority treatment establish the clinical state before product selection.
+- Neuraminidase-mediated virion release, polymerase acidic endonuclease-mediated cap snatching, adamantane resistance, target-specific escape, and the broader treatment-failure audit connect viral biology to therapy.
+- The early-treatment principle is separated from the care of hospitalized, severe, progressive, or high-risk patients. A 48-hour window is not presented as a universal reason to withhold treatment.
+- Hospitalized care centers oral or enteric oseltamivir. Uncomplicated outpatient selection compares oseltamivir, inhaled zanamivir, intravenous peramivir, and baloxavir by setting, age, weight, route, airway status, renal function, pregnancy, lactation, immune status, interaction burden, and evidence limits.
+- Oseltamivir ester prodrug activation, active carboxylate, neuraminidase inhibition, non-CYP disposition, renal filtration and secretion, and indication-specific renal adjustment connect medicinal chemistry to exposure.
+- Adult and pediatric treatment, prophylaxis, the 6 mg per mL suspension, volume calculation, food, commercial suspension storage, renal impairment, dialysis, and caregiver technique are operationalized.
+- Oseltamivir gastrointestinal effects, serious immune reactions, neuropsychiatric findings, bacterial complications, sorbitol exposure, pregnancy, and lactation have explicit monitoring and action pathways.
+- Zanamivir dose construction, Diskhaler technique, inspiratory delivery, asthma and COPD bronchospasm risk, milk-protein allergy, hypersensitivity, neuropsychiatric findings, and live attenuated vaccine timing are treated as one product system.
+- Peramivir age and weight dosing, 600 mg maximum, renal reduction, compatible dilution, final concentration, infusion time, allergy monitoring, and limits in prophylaxis and hospitalized serious disease are included.
+- Baloxavir prodrug chemistry, PA endonuclease inhibition, age-5 eligibility, weight-based tablets and liquid, cation separation, ten-hour bottle stability, resistance, allergy, pregnancy, lactation, immunocompromise, and setting limits are explicit.
+- Older RxPrep age limits were not silently retained. Current baloxavir approval begins at age 5 and current peramivir approval begins at age 6 months. Oseltamivir labeling and CDC off-label infant guidance are distinguished precisely.
+- Treatment and post-exposure prophylaxis, live vaccine timing, deterioration, secondary bacterial pneumonia, resistance, seasonal susceptibility, reassessment ownership, and the educational boundary close the clinical loop.
+- It contains eleven focused lessons, eleven responsive diagrams, eleven embedded checks, and a validated 192-question assessment bank.
+- Automated verification: 192 unique question IDs and prompts, four distinct answer choices per question, valid lesson links, eleven lesson sections, eleven diagrams, and no em dash or en dash characters in public module prose.
+- Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, eleven lessons, eleven diagrams, eleven embedded checks, ten questions per test, a different second random set, scoring with explanations and remediation links, and zero console errors.
+- Build verification: Next.js production build passed August 27, 2026 with 512 static pages generated.
+- Goodnotes source reconciliation remains pending until the local macOS session is unlocked and the library is readable through the application.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:

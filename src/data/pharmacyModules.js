@@ -181,6 +181,7 @@ import { triazoleAntifungalPharmacologyModule } from "@/data/modules/triazoleAnt
 import { echinocandinPharmacologyModule } from "@/data/modules/echinocandinPharmacology";
 import { terbinafineGriseofulvinPharmacologyModule } from "@/data/modules/terbinafineGriseofulvinPharmacology";
 import { localOropharyngealAntifungalPharmacologyModule } from "@/data/modules/localOropharyngealAntifungalPharmacology";
+import { influenzaAntiviralPharmacologyModule } from "@/data/modules/influenzaAntiviralPharmacology";
 
 const sources = {
   foundation: "Foundation",
@@ -597,5 +598,6 @@ pharmacyModules.push(triazoleAntifungalPharmacologyModule);
 pharmacyModules.push(echinocandinPharmacologyModule);
 pharmacyModules.push(terbinafineGriseofulvinPharmacologyModule);
 pharmacyModules.push(localOropharyngealAntifungalPharmacologyModule);
+pharmacyModules.push(influenzaAntiviralPharmacologyModule);
 
 export const pharmacySubmoduleCount = pharmacyModules.reduce((total, module) => total + module.submodules.length, 0);
