@@ -18,6 +18,7 @@ This ledger records modules verified under the current curriculum-build workflow
 | Cryptococcal Meningitis | Infectious Diseases | 100 original questions | RxPrep 2023 antifungal pages 389 and 390 and opportunistic-infection page 405 | NIH Adult and Adolescent OI cryptococcosis guidance reviewed March 16, 2026 | Production build passed, 525 pages generated |
 | Histoplasmosis | Infectious Diseases | 100 original questions | RxPrep 2023 antifungal pages 389 through 392 and HIV opportunistic-infection material | NIH Adult and Adolescent OI histoplasmosis guidance reviewed March 16, 2026 and 2025 IDSA pulmonary update | Production build passed, 526 pages generated |
 | Mucosal and Esophageal Candidiasis | Infectious Diseases | 100 original questions | RxPrep 2023 antifungal pages 390 through 394 and HIV opportunistic-infection material | NIH Adult and Adolescent OI candidiasis guidance reviewed March 16, 2026 and IDSA candidiasis guidance | Production build passed, 527 pages generated |
+| Coccidioidomycosis | Infectious Diseases | 100 original questions | RxPrep 2023 endemic-fungal and amphotericin material on printed page 389 and related azole pages | NIH Adult and Adolescent OI coccidioidomycosis guidance reviewed March 16, 2026 and IDSA coccidioidomycosis guidance | Production build passed, 528 pages generated |
 
 Each module assessment randomly draws 10 questions from its complete bank through the shared pharmacy assessment system. The system randomizes question order and answer choices, prevents duplicate questions in one attempt, reports score and explanations, and links each answer back to its lesson section.
 
@@ -41,11 +42,13 @@ Each module assessment randomly draws 10 questions from its complete bank throug
 - The histoplasmosis module reconciles the course foundation with NIH HIV-specific disseminated and CNS regimens and the 2025 IDSA update that recommends against routinely treating most mild acute pulmonary disease in immunocompetent patients.
 - Goodnotes remained unavailable because macOS was locked during focused candidiasis search attempts. The local RxPrep copy was reviewed for oral thrush, Candida species and fluconazole activity, local dosage forms, azole safety, and oral versus esophageal treatment distinctions. Direct Goodnotes confirmation remains pending until the unlocked application is visible.
 - The disease-focused candidiasis module complements rather than duplicates the existing local oropharyngeal antifungal pharmacology module. It adds compartment diagnosis, systemic esophageal therapy, the 7-day nonresponse threshold for endoscopy, refractory-disease investigation, ART, suppression, pregnancy, and closed-loop follow-up.
+- Goodnotes remained unavailable because macOS was locked during focused coccidioidomycosis search attempts. The local RxPrep copy was reviewed for Coccidioides dimorphism, inhaled-spore disease, chronic immunosuppression, amphotericin spectrum and product toxicity, and triazole pharmacology. Direct Goodnotes confirmation remains pending until the unlocked application is visible.
+- The coccidioidomycosis module reconciles the compact RxPrep foundation with current site-specific care, including serology, focal and diffuse pulmonary disease, osteoarticular disease, high-dose lifelong meningitis treatment, hydrocephalus, HIV prophylaxis, ART timing, and pregnancy.
 - Obsolete or changing source content is reconciled explicitly. Discontinued agents are identified as historical, uncommon older agents are separated from current practice, and pregnancy-letter classifications are not used.
 
 ## Next verified-build target
 
-Continue the endemic fungal and HIV-related opportunistic infection sequence with coccidioidomycosis. Search the restored Goodnotes library for dedicated lecture material, then reconcile accessible course content with current NIH and IDSA guidance and FDA labeling before implementation.
+Continue the endemic fungal sequence with blastomycosis. Search the restored Goodnotes library for dedicated lecture material, then reconcile accessible course content with current CDC and IDSA guidance and FDA labeling before implementation.
 
 ## Remaining-work rule
 
