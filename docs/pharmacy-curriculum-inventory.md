@@ -164,8 +164,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: six lessons, six native structure and exposure diagrams, and six embedded knowledge checks
 - Assessment: 100 original questions spanning pharmacophore recognition, stereochemistry, charge, central access, route, receptor residence, soft-drug design, device deposition, active metabolites, renal elimination, metabolic prediction, and multiple meanings of selectivity; ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: receptor preference was separated from kinetic, tissue, functional, and clinical selectivity; quaternary charge was framed as limiting rather than abolishing central access; local delivery was not treated as zero systemic exposure; theoretical metabolic sites were separated from clinically important clearance pathways
-- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 25, 2026 with 341 static pages generated
+- Automated verification: 100 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 16 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
 - Goodnotes note: the dedicated anticholinergic medicinal-chemistry lecture export remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
 ### Cholinergic Toxicology and Cholinesterase Regeneration
