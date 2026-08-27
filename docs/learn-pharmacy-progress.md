@@ -23,6 +23,7 @@ This ledger records modules verified under the current curriculum-build workflow
 | Aspergillosis | Infectious Diseases | 100 original questions | RxPrep 2023 mold spectrum, voriconazole, isavuconazonium, amphotericin, interaction, and dosing material on printed pages 389 through 392 and related calculation material | CDC clinical overview, 2016 IDSA treatment guideline, 2026 IDSA solid-organ-transplant prevention update, 2024 ISHAM ABPA guidance, and current FDA labeling | Production build passed, 530 pages generated |
 | Mucormycosis | Infectious Diseases | 100 original questions | RxPrep 2023 Mucorales classification, amphotericin, isavuconazonium, posaconazole, interaction, and formulation material on printed pages 389 through 395 | CDC clinical overview, 2019 ECMM and MSG ERC global guideline, and current FDA labeling | Production build passed, 531 pages generated |
 | Candidemia and Invasive Candidiasis | Infectious Diseases | 100 original questions | RxPrep 2023 Candida species, bloodstream-treatment, echinocandin, azole, amphotericin, and monitoring material on printed pages 389 through 395 | CDC invasive-candidiasis and Candida auris guidance, 2016 IDSA candidiasis guideline with age and eye-screening conflict flagged, 2025 CDC resistance update, and current FDA labeling | Production build passed, 532 pages generated |
+| Chronic Hepatitis B | Infectious Diseases | 100 original questions | RxPrep 2023 hepatitis background, serology, polymerase-inhibitor, interferon, vaccine, monitoring, and coinfection material on printed pages 296 through 301 | 2025 AASLD and IDSA practice guideline, 2024 and 2026 WHO guidance, current CDC screening, pregnancy, vaccine and perinatal recommendations, and current FDA labeling | Production build passed, 533 pages generated |
 
 Each module assessment randomly draws 10 questions from its complete bank through the shared pharmacy assessment system. The system randomizes question order and answer choices, prevents duplicate questions in one attempt, reports score and explanations, and links each answer back to its lesson section.
 
@@ -59,11 +60,15 @@ Each module assessment randomly draws 10 questions from its complete bank throug
 - The local RxPrep copy was reviewed for Candida species, bloodstream treatment, echinocandin and azole pharmacology, formulations, interactions, dosing, and monitoring.
 - The invasive-candidiasis module complements the existing echinocandin and mucosal-candidiasis modules. It centers bloodstream clearance, source control, deep compartments, resistance, Candida auris, and safe step-down.
 - The module visibly identifies the age of the 2016 IDSA disease guideline and the disagreement between infectious-disease and later ophthalmology guidance on routine eye screening.
+- Goodnotes was reported as restored on August 27, 2026, but macOS remained locked during the focused chronic-hepatitis-B source check. Direct Goodnotes confirmation remains pending until the unlocked application is visible.
+- The local RxPrep copy was reviewed for viral-hepatitis background, serology, interferon, TDF, TAF, entecavir, legacy antivirals, dosing, monitoring, vaccination, pregnancy, and HIV coinfection.
+- The chronic-hepatitis-B module explicitly replaces the 2023 risk-only screening statement with current CDC universal adult triple-panel screening and identifies the December 2025 CDC infant birth-dose change.
+- The module reconciles the compact course material with the 2025 AASLD and IDSA treatment update, including dynamic disease phases, expanded treatment reasoning, pregnancy, treatment discontinuation, reactivation, and HCC surveillance.
 - Obsolete or changing source content is reconciled explicitly. Discontinued agents are identified as historical, uncommon older agents are separated from current practice, and pregnancy-letter classifications are not used.
 
 ## Next verified-build target
 
-Continue the invasive fungal sequence with candidemia and invasive candidiasis. Search the restored Goodnotes library for dedicated lecture material, then reconcile accessible course content with current CDC, IDSA, and FDA guidance before implementation.
+Continue the viral-hepatitis sequence with hepatitis C. Search the restored Goodnotes library for dedicated lecture material when the Mac is unlocked, then reconcile accessible course content with current AASLD and IDSA HCV Guidance, CDC recommendations, and current FDA labeling before implementation.
 
 ## Remaining-work rule
 
