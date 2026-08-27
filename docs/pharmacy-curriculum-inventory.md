@@ -2562,7 +2562,8 @@ Current source reconciliations:
 - Lack of improvement within 48 hours activates reassessment for diagnosis, dangerous mimics, coinfection, complications, dose, cation exposure, vomiting, adherence, and source rather than automatic extension or unsupported resistance assumptions.
 - Doxycycline remains recommended for children of every age and for suspected RMSF during pregnancy. Short recommended pediatric courses have not shown permanent tooth staining. Severe allergy can require inpatient desensitization, while rifampin remains limited to selected mild anaplasmosis with expert input.
 - Asymptomatic tick bites do not receive prophylaxis for RMSF, ehrlichiosis, or anaplasmosis. Prevention, mechanical removal, a 2-week symptom watch, convalescent specimen ownership, and public health reporting close the system.
-- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 138-question assessment bank.
+- The assessment now reaches the previously uncovered coinfection and differential lesson directly. Ixodes coinfection, Babesia hemolysis, Lyme manifestations, meningococcemia, sepsis, TTP, DIC, and parallel empiric coverage are classified and tested in that lesson rather than being hidden under organism or severity headings.
+- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 138-question assessment bank across all ten lessons.
 - Goodnotes remains unavailable because macOS reports a locked session. Any matching tickborne infection lecture will receive a documented reconciliation pass after manual unlock.
 
 ### Lyme Disease
