@@ -2715,6 +2715,18 @@ Current source reconciliations:
 - Build verification: Next.js production build passed August 27, 2026 with 511 static pages generated.
 - Goodnotes source reconciliation remains pending until the local macOS session is unlocked and the library is readable through the application.
 
+### Disseminated Mycobacterium avium Complex
+
+- Built from the focused HIV opportunistic-infection material in RxPrep 2023 and reconciled with NIH Adult and Adolescent Opportunistic Infection guidance updated May 27, 2026.
+- Ten focused lessons connect environmental acquisition and advanced immune failure to syndrome recognition, sterile-site confirmation, primary prophylaxis, multidrug treatment, ART, interactions, response, IRIS, special populations, and closed-loop follow-up.
+- Primary prophylaxis is not automatic for a CD4 count below 50. The module requires absent ART, persistent viremia, or no fully suppressive option and excludes active disease before any prophylactic monotherapy.
+- Initial treatment uses a macrolide plus ethambutol, with added activity tied to severity, mortality risk, high mycobacterial burden, prior prophylaxis failure, absent ART, or absent virologic suppression.
+- Interaction reasoning follows rifabutin, clarithromycin, boosters, and other regimen changes through initiation, steady state, discontinuation, toxicity, HIV RNA response, and antimycobacterial exposure.
+- Response and duration integrate symptoms, sterile-site cultures, susceptibility, medication delivery, organ toxicity, HIV RNA, CD4 trajectory, at least 12 months of therapy, and the criteria for stopping or restarting maintenance.
+- Integrated cases now require syndrome confirmation, severity and resistance-risk grading, prevention-versus-treatment separation, ART coordination, interaction-safe transitions, failure reconstruction, and named ownership of every result and follow-up date.
+- The assessment contains 148 unique original questions across 37 concept groups, with valid remediation links and coverage of all ten lessons. Each attempt samples ten questions without replacement and randomizes answer order.
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated.
+
 ### Histoplasmosis
 
 - Built from the focused endemic-fungal and HIV opportunistic-infection material in RxPrep 2023 and reconciled with current NIH Adult and Adolescent Opportunistic Infection guidance plus the 2025 IDSA pulmonary histoplasmosis update.
