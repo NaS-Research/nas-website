@@ -180,6 +180,7 @@ import LymeDiseaseVisual, { lymeDiseaseVisualTypes } from "@/components/learn/Ly
 import TularemiaVisual, { tularemiaVisualTypes } from "@/components/learn/TularemiaVisual";
 import SystemicAntifungalFoundationsVisual, { systemicAntifungalFoundationsVisualTypes } from "@/components/learn/SystemicAntifungalFoundationsVisual";
 import AmphotericinFlucytosinePharmacologyVisual, { amphotericinFlucytosinePharmacologyVisualTypes } from "@/components/learn/AmphotericinFlucytosinePharmacologyVisual";
+import TriazoleAntifungalPharmacologyVisual, { triazoleAntifungalPharmacologyVisualTypes } from "@/components/learn/TriazoleAntifungalPharmacologyVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -541,6 +542,7 @@ export default async function PharmacyModulePage({ params }) {
               {module.slug === "tularemia" && tularemiaVisualTypes.includes(submodule.visual) && <TularemiaVisual type={submodule.visual} />}
               {module.slug === "systemic-antifungal-foundations" && systemicAntifungalFoundationsVisualTypes.includes(submodule.visual) && <SystemicAntifungalFoundationsVisual type={submodule.visual} />}
               {module.slug === "amphotericin-flucytosine-pharmacology" && amphotericinFlucytosinePharmacologyVisualTypes.includes(submodule.visual) && <AmphotericinFlucytosinePharmacologyVisual type={submodule.visual} />}
+              {module.slug === "triazole-antifungal-pharmacology" && triazoleAntifungalPharmacologyVisualTypes.includes(submodule.visual) && <TriazoleAntifungalPharmacologyVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>

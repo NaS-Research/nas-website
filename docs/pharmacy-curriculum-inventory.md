@@ -2641,6 +2641,22 @@ Current source reconciliations:
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 176-question assessment bank.
 - Goodnotes remains unavailable because macOS reports a locked session. Any matching amphotericin or flucytosine lecture will receive a documented reconciliation pass after manual unlock.
 
+### Triazole Antifungal Pharmacology
+
+- Built from the focused azole material in RxPrep 2023 Chapter 24 and reconciled with current fluconazole, itraconazole, voriconazole, posaconazole, isavuconazonium, and oral ketoconazole labeling, plus current IDSA candidiasis, aspergillosis, and histoplasmosis guidance.
+- Azole nitrogens, CYP51 heme coordination, ergosterol depletion, abnormal sterol accumulation, fungal membrane dysfunction, triazole selectivity, host CYP effects, target alteration, target overexpression, and efflux are connected from medicinal chemistry through resistance.
+- Agent selection is separated by organism, susceptibility, site, host, disease phase, source, formulation, toxicity, and evidence. Fluconazole is not presented as mold active, and systemic ketoconazole is restricted according to its current boxed safety labeling.
+- Fluconazole oral reliability, loading versus maintenance, renal elimination, Candida krusei intrinsic resistance, Candida glabrata susceptibility context, invasive-disease step-down, liver injury, QT effects, skin reactions, and CYP interactions are joined into one exposure system.
+- Conventional itraconazole capsules, oral solution, and enhanced-absorption products are treated as noninterchangeable. Product-specific food and gastric-pH rules, heart failure risk, hydroxyitraconazole, assay interpretation, and TDM are explicit.
+- Voriconazole nonlinear adult pharmacokinetics, CYP2C19 variability, concentration monitoring, visual and CNS effects, photosensitivity, cutaneous malignancy, periostitis, fluorosis, liver function, inflammation, and interacting drugs are managed longitudinally.
+- Posaconazole formulations are explicitly non-substitutable. Current delayed-release tablet administration with or without food is distinguished from oral suspension food requirements, and pseudoaldosteronism is recognized through hypertension, hypokalemia, alkalosis, and exposure context.
+- Isavuconazonium prodrug mass is separated from active isavuconazole equivalent mass. The six-dose adult loading sequence, oral and intravenous route equivalence, QT shortening, familial short QT contraindication, and major CYP3A4 interactions are translated without ambiguity.
+- Every interaction is followed through initiation, steady state, discontinuation, and offset. Strong induction, narrow-therapeutic-index substrates, electrolyte and QT burden, organ function, and result ownership remain visible.
+- TDM is ordered only with a defined clinical question, interpretable timing, target context, and action. Active-drug renal clearance is separated from intravenous vehicle concerns, and current pregnancy and lactation narratives replace obsolete letter categories.
+- Baseline verification, breakthrough audit, source control, step-down readiness, longitudinal toxicity, follow-up ownership, and the educational boundary close the module.
+- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 176-question assessment bank.
+- Goodnotes source reconciliation remains pending until the local macOS session is unlocked and the library is readable through the application.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
