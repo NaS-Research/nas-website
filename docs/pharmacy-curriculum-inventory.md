@@ -2715,6 +2715,18 @@ Current source reconciliations:
 - Build verification: Next.js production build passed August 27, 2026 with 511 static pages generated.
 - Goodnotes source reconciliation remains pending until the local macOS session is unlocked and the library is readable through the application.
 
+### Cryptococcal Meningitis
+
+- Built from the focused antifungal and HIV opportunistic-infection material in RxPrep 2023 and reconciled with current NIH Adult and Adolescent Opportunistic Infection guidance.
+- Nine focused lessons connect advanced immune failure and encapsulated-yeast biology to antigen and CSF staging, fungicidal induction, pressure control, culture-guided consolidation, delayed ART, maintenance, interactions, special sites, and closed-loop follow-up.
+- Preferred United States induction uses exact liposomal amphotericin B and weight-based flucytosine exposure with kidney, electrolyte, marrow, hepatic, infusion, and concentration surveillance.
+- Intracranial pressure is treated as an independent emergency. The module now includes urgent repeat LP for ongoing headache, strong consideration of repeat therapeutic LP within 72 hours despite minimal symptoms or baseline pressure below 25 cm water, and daily drainage when pressure or symptoms remain elevated.
+- Planned LP and CSF culture around day 7 and day 14 document clinical response and viable-organism clearance while also creating additional pressure checkpoints.
+- CSF culture, not antigen titer or elapsed time, governs the transition from induction to consolidation. Persistent culture extends fungicidal therapy and resets the eight-week consolidation clock from confirmed sterility.
+- Integrated cases join fungal killing, pressure management, culture evidence, fluconazole consolidation, four-to-six-week ART delay, maintenance, relapse-versus-IRIS reasoning, interaction transitions, and named ownership of every procedure and result.
+- The assessment contains 116 unique original questions across 29 concept groups, with valid remediation links and coverage of all nine lessons. Each attempt samples ten questions without replacement and randomizes answer order.
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated.
+
 ### Disseminated Mycobacterium avium Complex
 
 - Built from the focused HIV opportunistic-infection material in RxPrep 2023 and reconciled with NIH Adult and Adolescent Opportunistic Infection guidance updated May 27, 2026.
