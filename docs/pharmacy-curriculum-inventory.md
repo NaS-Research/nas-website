@@ -2400,6 +2400,22 @@ Current source reconciliations:
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 172-question assessment bank.
 - Goodnotes remains unavailable because macOS reports a locked session. Any matching intra-abdominal infection lecture will receive a documented reconciliation pass after manual unlock.
 
+### Skin and Soft-Tissue Infections
+
+- Built from the skin and soft-tissue infection and diabetes-related foot infection sections of RxPrep 2023 Chapter 23 and reconciled with the current IDSA SSTI guideline, 2025 CDC impetigo and necrotizing fasciitis guidance, the 2023 IWGDF and IDSA DFI guideline, and current vancomycin therapeutic-monitoring consensus.
+- Morphology, purulence, tissue depth, physiology, host reserve, and source-control need define the initial pathway. Mimics and portals are included so bilateral inflammatory disease, edema, tinea, ischemia, thrombosis, gout, and drug reactions do not receive reflex antibiotic escalation.
+- Impetigo teaching separates a few lesions suitable for topical mupirocin or retapamulin from numerous lesions requiring oral therapy. Folliculitis, furuncle, and carbuncle are separated by depth and drainage need, with transmission control integrated into treatment.
+- Typical nonpurulent cellulitis centers streptococcal activity, uses a five-day improving default, and opens the MRSA gate only for penetrating trauma, MRSA elsewhere or colonization, injection drug use, purulence, or severe systemic disease.
+- Abscess management centers incision and drainage. Adjunct MRSA-active therapy follows systemic signs, lesion burden, anatomy, host risk, failure, and surrounding disease rather than being automatic for every collection.
+- The old RxPrep severe-SSTI vancomycin trough target of 10 to 15 mcg/mL is not presented as a universal modern goal. Serious MRSA monitoring uses AUC/MIC 400 to 600 mg-hour/L when applicable, with exact dose, sample timing, kidney trajectory, weight, dialysis, and nephrotoxin ownership.
+- Necrotizing infection activates immediate surgical exploration, resuscitation, complete empiric therapy, deep cultures, and repeated debridement. Imaging and LRINEC cannot delay surgery in a high-probability syndrome. Confirmed group A streptococcal disease uses high-dose penicillin plus clindamycin with current susceptibility awareness.
+- Diabetes-related foot infection is diagnosed clinically and graded with the IWGDF and IDSA scheme. Clinically uninfected ulcers receive no antibiotics, debrided tissue is preferred to superficial swabs, mild disease centers gram-positive pathogens, and routine empiric Pseudomonas coverage is rejected in temperate climates without a credible risk.
+- Soft-tissue DFI usually receives 1 to 2 weeks. Ten days can be sufficient after surgical debridement of moderate or severe soft-tissue disease, while selected slow extensive disease or severe PAD can require up to 3 to 4 weeks.
+- Osteomyelitis uses probe-to-bone, radiographs, biomarkers, MRI when doubt remains, and bone culture when organism definition matters. Duration is up to three weeks after minor amputation with positive bone margins and six weeks without bone resection.
+- Limb preservation integrates drainage and debridement, perfusion and revascularization, off-loading, wound care, glycemic management, nutrition, footwear, allergy clarification, safe drug exposure, and lifelong surveillance.
+- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 170-question assessment bank.
+- Goodnotes was retried after the user reported restored access, but macOS still reported a locked session. Any matching SSTI or DFI lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
