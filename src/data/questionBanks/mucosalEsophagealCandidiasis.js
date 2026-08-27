@@ -24,15 +24,57 @@ const concepts = [
   ["monitor-response", "Oral lesions, pain, swallowing, intake, weight, adherence, adverse effects, and immune recovery are practical response measures.", "Define an expected response date and an escalation pathway before treatment begins.", "Follow-up without a time threshold allows persistent disease to become a new baseline."],
   ["differentiate-invasive", "Mucosal candidiasis is distinct from candidemia and deep invasive candidiasis even though the organism genus overlaps.", "Look for systemic instability, bloodstream risk, organ involvement, devices, and cultures when invasive disease is possible.", "Using a mucosal regimen for candidemia can be fatal."],
   ["closed-loop", "Complete care links compartment, host, organism probability, product, route, exposure, interactions, response, ART, and recurrence prevention.", "Assign ownership for pending cultures, endoscopy, medication access, interaction changes, follow-up, and escalation.", "A prescription without follow-through leaves diagnostic and treatment failure invisible."],
+  ["population-fit", "Age, pregnancy, lactation, organ function, immune status, swallowing ability, cognition, dexterity, saliva, and medication burden can change the safest effective product.", "Select the exact formulation and monitoring plan from the patient's clinical and practical constraints rather than from drug name alone.", "Do not treat a product as suitable merely because its active ingredient appears in a guideline."],
+  ["renal-route-transition", "A fluconazole loading dose establishes exposure promptly, while subsequent dosing and route must reflect kidney function, swallowing, stability, and recovery.", "Document the renal plan and the objective conditions for intravenous, suspension, or tablet transitions before treatment begins.", "Do not omit loading solely because maintenance exposure requires renal adjustment."],
+  ["integrated-triage", "Initial triage identifies oral, esophageal, or invasive disease and names host risk, severity, hydration, nutrition, and immediate threats before therapy is selected.", "Stabilize intake and systemic illness, choose compartment-appropriate exposure, and define the response deadline and escalation pathway.", "Do not apply a mild oral topical pathway to odynophagia, dehydration, or systemic instability."],
+  ["followup-ownership", "Closed-loop care assigns every culture, endoscopy decision, medication-access issue, interaction change, response checkpoint, ART need, and recurrence driver to a named owner and date.", "Use the expected clinical trajectory to decide when to continue, change, investigate, or escalate therapy.", "Do not let early pain improvement erase the full duration, diagnostic, or prevention plan."],
 ];
+
+const lessonByConcept = {
+  "candida-ecology": "ecology-syndrome",
+  "immune-risk": "ecology-syndrome",
+  "differentiate-invasive": "ecology-syndrome",
+  "oral-pattern": "oral-diagnosis",
+  "local-drivers": "oral-diagnosis",
+  "esophageal-pattern": "esophageal-diagnosis",
+  "diagnostic-trial": "esophageal-diagnosis",
+  "nutrition-hydration": "esophageal-diagnosis",
+  "oral-fluconazole": "oropharyngeal-treatment",
+  "oral-topical": "oropharyngeal-treatment",
+  "esophageal-fluconazole": "esophageal-treatment",
+  "systemic-required": "esophageal-treatment",
+  "iv-alternatives": "esophageal-treatment",
+  species: "refractory-disease",
+  "refractory-definition": "refractory-disease",
+  "refractory-options": "refractory-disease",
+  "azole-resistance": "refractory-disease",
+  "fluconazole-pk": "safety-pk",
+  "fluconazole-safety": "safety-pk",
+  "chronic-suppression": "prevention-art",
+  art: "prevention-art",
+  "no-primary-prophylaxis": "prevention-art",
+  pregnancy: "pregnancy-populations",
+  "population-fit": "pregnancy-populations",
+  "renal-route-transition": "pregnancy-populations",
+  "monitor-response": "integrated-case",
+  "closed-loop": "integrated-case",
+  "integrated-triage": "integrated-case",
+  "followup-ownership": "integrated-case",
+};
 
 const dimensions = [["principle", "Which statement is most accurate?", 0], ["action", "Which action best applies the evidence?", 1], ["assessment", "Which plan demonstrates the strongest clinical reasoning?", 1], ["hazard", "Which error creates the greatest avoidable risk?", 2]];
 const generic = ["Use one isolated finding without checking compartment, host, or treatment exposure.", "Continue the same plan despite objective nonresponse and no diagnostic reassessment.", "Assume every Candida syndrome and antifungal formulation is interchangeable."];
 
-export const mucosalEsophagealCandidiasisQuestionBank = concepts.flatMap(([slug, principle, action, hazard], conceptIndex) =>
-  dimensions.map(([dimension, stem, answerType], dimensionIndex) => {
+export const mucosalEsophagealCandidiasisQuestionBank = concepts.flatMap(([slug, principle, action, hazard], conceptIndex) => {
+  const lesson = lessonByConcept[slug];
+
+  if (!lesson) {
+    throw new Error(`Missing mucosal candidiasis lesson mapping for ${slug}`);
+  }
+
+  return dimensions.map(([dimension, stem, answerType], dimensionIndex) => {
     const correct = [principle, action, hazard][answerType];
     const choices = dimension === "hazard" ? [hazard, principle, action, generic[(conceptIndex + dimensionIndex) % 3]] : [correct, hazard, generic[(conceptIndex + dimensionIndex) % 3], generic[(conceptIndex + dimensionIndex + 1) % 3]];
-    return { id: `mucosal-esophageal-candidiasis-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${stem} Focus: ${slug.replaceAll("-", " ")}.`, choices, answer: 0, rationale: `${principle} ${action}`, reviewHref: `#${slug}`, difficulty: dimensionIndex < 2 ? "foundational" : "advanced" };
-  })
-);
+    return { id: `mucosal-esophageal-candidiasis-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${stem} Focus: ${slug.replaceAll("-", " ")}.`, choices, answer: 0, rationale: `${principle} ${action}`, reviewHref: `#${lesson}`, difficulty: dimensionIndex < 2 ? "foundational" : "advanced" };
+  });
+});

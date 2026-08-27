@@ -2727,6 +2727,19 @@ Current source reconciliations:
 - The assessment contains 112 unique original questions across 28 concept groups, with valid remediation links and coverage of all ten lessons. Each attempt samples ten questions without replacement and randomizes answer order.
 - Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated.
 
+### Mucosal and Esophageal Candidiasis
+
+- Built from the focused mucosal Candida and HIV opportunistic-infection material in RxPrep 2023 and reconciled with current NIH Adult and Adolescent Opportunistic Infection guidance plus the IDSA candidiasis guideline.
+- Ten focused lessons distinguish colonization, oropharyngeal disease, esophageal disease, refractory infection, and possible invasive disease before selecting a product or route.
+- Oral morphology, removable plaques, mimics, odynophagia, dysphagia, hydration, nutrition, immune risk, local drivers, and the seven-day response threshold organize diagnosis and escalation.
+- Oropharyngeal treatment separates systemic fluconazole from selected local miconazole, clotrimazole, or nystatin therapy according to severity, compartment, technique, interaction burden, and adherence.
+- Esophageal disease always receives systemic therapy for 14 to 21 days. The module preserves loading, oral suspension and intravenous options, renal planning, oral transition, and the higher relapse reported after echinocandins.
+- Refractory disease triggers a full audit of diagnosis, exposure, adherence, interactions, species, susceptibility, immune status, and competing CMV, HSV, or structural disease before salvage therapy is selected.
+- Pregnancy, lactation, age, kidney and liver function, swallowing, cognition, dexterity, saliva, immune status, and medication burden are translated into product-specific selection rather than generic active-ingredient assumptions.
+- Integrated cases now require compartment and severity triage, intake stabilization, response deadlines, endoscopy criteria, ART coordination, recurrence-driver correction, and named ownership of each pending result and transition.
+- The assessment contains 116 unique original questions across 29 concept groups, with valid remediation links and coverage of all ten lessons. Each attempt samples ten questions without replacement and randomizes answer order.
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated.
+
 ### Influenza Antiviral Pharmacology
 
 - Built from the influenza antiviral material in RxPrep 2023 and reconciled with CDC clinical guidance updated March 2026 plus current Tamiflu, Relenza, Rapivab, and Xofluza labeling.
