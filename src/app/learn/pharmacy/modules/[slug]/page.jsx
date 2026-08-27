@@ -187,6 +187,7 @@ import LocalOropharyngealAntifungalPharmacologyVisual, { localOropharyngealAntif
 import InfluenzaAntiviralPharmacologyVisual, { influenzaAntiviralPharmacologyVisualTypes } from "@/components/learn/InfluenzaAntiviralPharmacologyVisual";
 import HerpesSimplexVaricellaAntiviralPharmacologyVisual, { herpesSimplexVaricellaAntiviralPharmacologyVisualTypes } from "@/components/learn/HerpesSimplexVaricellaAntiviralPharmacologyVisual";
 import CytomegalovirusPharmacotherapyVisual, { cytomegalovirusPharmacotherapyVisualTypes } from "@/components/learn/CytomegalovirusPharmacotherapyVisual";
+import PneumocystisJiroveciiPneumoniaVisual, { pneumocystisJiroveciiPneumoniaVisualTypes } from "@/components/learn/PneumocystisJiroveciiPneumoniaVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -555,6 +556,7 @@ export default async function PharmacyModulePage({ params }) {
               {module.slug === "influenza-antiviral-pharmacology" && influenzaAntiviralPharmacologyVisualTypes.includes(submodule.visual) && <InfluenzaAntiviralPharmacologyVisual type={submodule.visual} />}
               {module.slug === "herpes-simplex-varicella-antiviral-pharmacology" && herpesSimplexVaricellaAntiviralPharmacologyVisualTypes.includes(submodule.visual) && <HerpesSimplexVaricellaAntiviralPharmacologyVisual type={submodule.visual} />}
               {module.slug === "cytomegalovirus-pharmacotherapy" && cytomegalovirusPharmacotherapyVisualTypes.includes(submodule.visual) && <CytomegalovirusPharmacotherapyVisual type={submodule.visual} />}
+              {module.slug === "pneumocystis-jirovecii-pneumonia" && pneumocystisJiroveciiPneumoniaVisualTypes.includes(submodule.visual) && <PneumocystisJiroveciiPneumoniaVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>

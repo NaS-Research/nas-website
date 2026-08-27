@@ -2774,6 +2774,26 @@ Current source reconciliations:
 - Build verification: Next.js production build passed August 27, 2026 with 514 static pages generated.
 - Goodnotes source reconciliation remains pending until the local library can be read through an unlocked application session.
 
+### Pneumocystis Pneumonia
+
+- Built from the focused opportunistic-infection material in RxPrep 2023 and reconciled with the NIH adult and adolescent Pneumocystis guideline updated May 2026 plus current TMP-SMX, atovaquone, and pentamidine labeling.
+- Pneumocystis jirovecii biology, HIV and non-HIV host risk, cell-mediated immune failure, alveolar injury, different clinical tempos, airborne evidence, and current infection-control limits establish the host and pulmonary state.
+- Progressive dyspnea, fever, nonproductive cough, exertional desaturation, ground-glass imaging, normal early radiographs, cystic disease, pneumothorax, induced sputum, BAL, staining, PCR, beta-D-glucan, colonization, and competing diagnoses form the diagnostic pathway.
+- Room-air PaO2, the alveolar gas equation, PAO2, the A-a gradient, mild, moderate, and severe categories, the corticosteroid threshold, and worked oxygenation calculations connect physiology directly to treatment intensity.
+- Sequential folate blockade, TMP-component dosing, the 15 to 20 mg per kg per day TMP target, SS and DS conversion, route, renal adaptation, creatinine interpretation, potassium, sodium, marrow, liver, hypersensitivity, and interaction monitoring form the preferred-therapy system.
+- Moderate-to-severe and mild-to-moderate disease are separated by oxygenation, route reliability, preferred treatment, valid alternatives, oral transition, treatment site, absorption, G6PD activity, and a complete 21-day course.
+- The adjunctive prednisone pathway includes room-air PaO2 below 70 or A-a at least 35, initiation ideally within 72 hours, the complete 40 mg twice daily, 40 mg daily, and 20 mg daily schedule, IV methylprednisolone conversion, and toxicity monitoring.
+- Pentamidine reconstitution, D5W dilution, infusion, hypotension, kidney injury, pancreatic and glucose toxicity, electrolyte injury, ECG risk, cytopenia, and delayed surveillance are joined as one high-risk delivery system.
+- Dapsone and primaquine G6PD testing, hemolysis, methemoglobinemia, saturation-gap reasoning, clindamycin gastrointestinal toxicity, and atovaquone food, absorption, interaction, liver, and severe-disease limits are explicit.
+- Primary prophylaxis includes current CD4, ART, HIV RNA, preferred TMP-SMX regimens, Toxoplasma serostatus, alternatives, sustained immune-recovery stop criteria, restart criteria, mild-reaction reintroduction, and permanent SJS or TEN avoidance.
+- Secondary prophylaxis begins immediately after treatment and connects ART within two weeks, sustained immune recovery, the high-CD4 recurrence exception, uncommon PCP-associated IRIS, and long-term follow-up.
+- Early inflammatory worsening, the four-to-eight-day objective efficacy-failure window, ABG trajectory, competing infection or noninfectious disease, BAL reassessment, toxicity-driven change, pregnancy, non-HIV specialty prevention, and educational boundaries close the clinical loop.
+- It contains twelve focused lessons, twelve responsive diagrams, twelve embedded checks, and a validated 208-question assessment bank.
+- Automated verification: 208 unique question IDs and prompts, four distinct answer choices per question, valid lesson links, twelve lesson sections, twelve diagrams, and no em dash or en dash characters in public module prose.
+- Browser verification: desktop and 390 pixel mobile rendering, no visible horizontal overflow, twelve lessons, twelve diagrams, twelve embedded checks, ten questions per test, a completely different second random set, scoring with explanations and ten remediation links, and no rendered runtime error or Next.js error overlay.
+- Build verification: Next.js production build passed August 27, 2026 with 515 static pages generated.
+- Goodnotes source reconciliation remains pending until the local library can be read through an unlocked application session.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
