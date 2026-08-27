@@ -248,8 +248,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: six lessons, six native aqueous-flow, prostaglandin, production, conventional-outflow, selection, and administration diagrams, and six embedded knowledge checks
 - Assessment: 100 original questions spanning pressure and progression, angle anatomy, production and outflow, pigmentation, inflammation and macular risk, systemic ophthalmic beta blockade, pediatric alpha-2 toxicity, topical carbonic anhydrase inhibition, punctal occlusion, Rho kinase, pilocarpine, laser, surgery, fixed-combination duplication, delivery failure, contamination, product spacing, contact lenses, and acute angle closure; ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: intraocular pressure was treated as a modifiable risk factor rather than the complete diagnosis; target pressure was made dynamic and progression based; topical products were treated as systemic exposures; laser was included as an early treatment option rather than medication failure; technique and active-ingredient reconciliation were made part of pharmacotherapy
-- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 25, 2026 with 348 static pages generated
+- Automated verification: 100 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 12 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
 - Goodnotes note: the dedicated glaucoma lecture export remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
 ### Hypertension Foundations and Chronic Therapy
