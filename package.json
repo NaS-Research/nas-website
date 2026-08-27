@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "audit:pharmacy": "node --experimental-loader ./scripts/esm-alias-loader.mjs ./scripts/audit-pharmacy-assessments.mjs",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"

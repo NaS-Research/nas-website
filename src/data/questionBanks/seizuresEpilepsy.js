@@ -24,6 +24,13 @@ const concepts = [
   ["rescue", "Community rescue products include patient-specific rectal or intranasal benzodiazepines for seizure clusters or prolonged events.", "Create a written action plan defining when to administer, when a second dose is permitted, when to call emergency services, and how to avoid respiratory depressant stacking.", "Dispensing a rescue product without caregiver demonstration and a response threshold can make it unusable during an emergency."],
   ["refractory", "Persistent seizures after adequate emergent first-line and second-line therapy require critical-care escalation, continuous EEG, anesthetic therapy, and cause-directed management.", "Verify actual doses and timing, search for toxic, infectious, metabolic, structural, and adherence causes, and anticipate airway support.", "Repeated small rescue doses without escalation can prolong status while increasing respiratory risk."],
   ["longitudinal", "Successful epilepsy care balances seizure freedom, adverse effects, cognition, mood, sleep, bone and reproductive health, driving and safety, adherence, and the person's goals.", "Use a seizure and exposure record, address SUDEP risk through convulsive-seizure control and adherence, and consider surgery, devices, or diet for drug-resistant epilepsy.", "Continuing ineffective medication combinations indefinitely can delay evaluation for potentially effective non-drug treatment."],
+  ["acute-versus-unprovoked", "An acute symptomatic seizure is temporally linked to a reversible systemic or neurologic insult, while an unprovoked seizure occurs without an immediate provoking condition.", "Document the timing and strength of the provoking factor before assigning recurrence risk or committing the patient to long-term antiseizure therapy.", "Calling a remote risk factor an immediate provoking cause can underestimate recurrence risk and delay an epilepsy evaluation."],
+  ["selection-audit", "A defensible initial regimen fits the seizure class and syndrome while accounting for age, organ function, comorbidities, interactions, reproductive goals, access, and the patient's priorities.", "State why the selected agent fits this patient, define a titration and monitoring plan, and identify the finding that would prompt a change.", "Selecting from seizure type alone can produce avoidable psychiatric, cognitive, metabolic, reproductive, or interaction harm."],
+  ["broad-spectrum-tradeoffs", "Broad-spectrum activity does not make lamotrigine, levetiracetam, topiramate, and valproate clinically interchangeable.", "Compare titration speed, mood and cognitive effects, weight, organ clearance, reproductive risk, interactions, and syndrome-specific efficacy before choosing among broad-spectrum options.", "Using the phrase broad spectrum as the entire treatment rationale hides major differences in patient-specific benefit and harm."],
+  ["interaction-reconciliation", "Epilepsy interaction review must include enzyme induction or inhibition, hormonal contraception, anticoagulants, psychotropics, rescue sedatives, alcohol, supplements, and changes in organ function.", "Reconcile every exposure at initiation, transition, pregnancy planning, hospital discharge, and any unexplained change in seizure control or toxicity.", "Checking interactions only when the first prescription is written can miss clinically important changes in exposure later."],
+  ["reproductive-documentation", "Reproductive care requires shared planning before conception, preservation of seizure control, current product-specific pregnancy and lactation evidence, folic acid, and exposure monitoring when pharmacokinetics change.", "Document the patient's goals, chosen regimen, counseling, baseline effective exposure when useful, monitoring schedule, and postpartum dose plan.", "Abruptly stopping an effective antiseizure medicine after pregnancy recognition can expose both patient and fetus to dangerous convulsive seizures."],
+  ["rescue-readiness", "A rescue prescription is incomplete until caregivers can recognize the treatment threshold, administer the exact product, monitor response and breathing, and follow second-dose and emergency instructions.", "Use teach-back and demonstration, then place the same clear action plan in the home, school, workplace, and health record when appropriate.", "Assuming a caregiver can infer product-specific technique during a seizure cluster can delay treatment or cause unsafe repeat dosing."],
+  ["quality-of-life", "Seizure outcomes include participation, cognition, mood, sleep, medication burden, injuries, independence, stigma, and confidence in the emergency plan as well as seizure count.", "Ask what the patient is unable or afraid to do, then align treatment, safety counseling, referrals, and follow-up with the outcomes that matter to that person.", "Declaring success from a lower seizure count alone can miss disabling adverse effects and major restrictions in daily life."],
 ];
 
 const dimensions = [
@@ -38,6 +45,39 @@ const distractors = [
   "Use a population reference range as the only measure of efficacy and safety.",
 ];
 
+const reviewSections = {
+  "acute-causes": "classification-diagnosis",
+  classification: "classification-diagnosis",
+  consciousness: "classification-diagnosis",
+  diagnosis: "classification-diagnosis",
+  mimics: "classification-diagnosis",
+  "network-mechanisms": "network-pharmacology",
+  "sodium-channels": "network-pharmacology",
+  "calcium-sv2a": "network-pharmacology",
+  "gaba-glutamate": "network-pharmacology",
+  "initial-selection": "drug-selection",
+  lamotrigine: "focused-agents",
+  levetiracetam: "focused-agents",
+  valproate: "focused-agents",
+  "topiramate-zonisamide": "focused-agents",
+  "carbamazepine-oxcarbazepine": "focused-agents",
+  phenytoin: "phenytoin-levels",
+  "drug-levels": "phenytoin-levels",
+  interactions: "interactions-safety",
+  pregnancy: "reproductive-care",
+  status: "status-epilepticus",
+  refractory: "status-epilepticus",
+  rescue: "rescue-first-aid",
+  longitudinal: "longitudinal-care",
+  "acute-versus-unprovoked": "seizure-epilepsy",
+  "selection-audit": "drug-selection",
+  "broad-spectrum-tradeoffs": "broad-spectrum",
+  "interaction-reconciliation": "interactions-safety",
+  "reproductive-documentation": "reproductive-care",
+  "rescue-readiness": "rescue-first-aid",
+  "quality-of-life": "longitudinal-care",
+};
+
 export const seizuresEpilepsyQuestionBank = concepts.flatMap(([slug, principle, action, hazard], i) =>
   dimensions.map(([dimension, stem, type], j) => {
     const correct = [principle, action, hazard][type];
@@ -50,7 +90,7 @@ export const seizuresEpilepsyQuestionBank = concepts.flatMap(([slug, principle, 
       choices,
       answer: 0,
       rationale: `${principle} ${action}`,
-      reviewHref: `#${slug}`,
+      reviewHref: `#${reviewSections[slug] ?? slug}`,
       difficulty: j < 2 ? "foundational" : "advanced",
     };
   }),
