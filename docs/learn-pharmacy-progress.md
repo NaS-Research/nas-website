@@ -34,6 +34,7 @@ This ledger records modules verified under the current curriculum-build workflow
 | Bipolar Disorder | Psychiatric Conditions | 100 original questions | RxPrep 2023 bipolar disorder chapter on printed pages 853 through 856 | 2023 VA/DoD bipolar disorder guideline and current lithium and valproate labeling | Production build passed, 541 pages generated |
 | Attention Deficit Hyperactivity Disorder | Psychiatric Conditions | 100 original questions | Goodnotes Mental Health and Pain lecture pages 13, 14, and 35 plus RxPrep 2023 ADHD chapter on printed pages 857 through 863 | 2019 AAP guideline, 2023 FDA stimulant safety communication, and current atomoxetine and viloxazine labeling | Production build passed, 542 pages generated |
 | Anxiety Disorders | Psychiatric Conditions | 100 original questions | RxPrep 2023 Anxiety Disorders chapter on printed pages 864 through 866 | NICE CG113, last reviewed in 2024, 2020 FDA benzodiazepine safety communication, and current product labeling | Production build passed, 543 pages generated |
+| Sleep Disorders | Psychiatric Conditions | 100 original questions | RxPrep 2023 Sleep Disorders chapter on printed pages 868 through 875 | 2025 VA/DoD insomnia and OSA guideline, 2025 AASM RLS guideline, 2021 AASM hypersomnolence guideline, and current hypnotic labeling | Production build passed, 544 pages generated |
 
 Each module assessment randomly draws 10 questions from its complete bank through the shared pharmacy assessment system. The system randomizes question order and answer choices, prevents duplicate questions in one attempt, reports score and explanations, and links each answer back to its lesson section.
 
@@ -111,11 +112,16 @@ Each module assessment randomly draws 10 questions from its complete bank throug
 - The local RxPrep copy was reviewed across printed pages 864 through 866 for GAD, panic disorder, social anxiety, CBT, lifestyle care, medication and substance causes, SSRIs, SNRIs, buspirone, pregabalin, hydroxyzine, propranolol, benzodiazepines, interactions, counseling, and natural products.
 - The anxiety module does not retain the source's statement that most anxiety is caused by depression. It treats anxiety disorders as distinct diagnoses that can coexist with depression and requires a medical, substance, medication, sleep, and psychiatric differential.
 - The source's fixed one to two week benzodiazepine statement is replaced with current indication-specific guidance, the 2020 FDA boxed warning for abuse, misuse, addiction, physical dependence, and withdrawal, and an individualized taper without a universal schedule. NICE CG113 is identified as an older guideline that was updated in 2020 and reviewed in 2024.
+- Focused Goodnotes searches for `insomnia`, `restless legs syndrome`, and `narcolepsy` found no dedicated sleep-disorders lecture. An insomnia reference in the major-depressive-disorder material and an RLS reference in the chronic-kidney-disease material were incidental. RxPrep was the only dedicated source.
+- The local RxPrep copy was reviewed across printed pages 868 through 875 for insomnia diagnosis, CBT-I, hypnotics, Z drugs, dual orexin receptor antagonists, melatonin-receptor agonists, low-dose doxepin, RLS, iron assessment, dopamine agonists, narcolepsy, modafinil and armodafinil, solriamfetol, pitolisant, oxybate, interactions, and safety.
+- The sleep-disorders module replaces the source's simplified preference for nonbenzodiazepine hypnotics in long-term treatment with CBT-I as first-line chronic-insomnia care and retains the full dependence, impairment, falls, and boxed complex-sleep-behavior risks of Z drugs. It also adds daridorexant and the current dual orexin receptor antagonist class.
+- The RLS sequence replaces the older routine dopamine-agonist emphasis with the 2025 AASM pathway favoring appropriate iron treatment and alpha-2-delta ligands for many adults. Dopamine agonists are framed as selected-use options because augmentation can progressively worsen disease.
+- The narcolepsy sequence uses the 2021 AASM strong adult recommendations for modafinil, pitolisant, sodium oxybate, and solriamfetol. It also includes hormonal-contraceptive counseling for modafinil and armodafinil, restricted oxybate distribution, and current CNS and respiratory safeguards.
 - Obsolete or changing source content is reconciled explicitly. Discontinued agents are identified as historical, uncommon older agents are separated from current practice, and pregnancy-letter classifications are not used.
 
 ## Next verified-build target
 
-Continue through the unlocked Goodnotes library, inventory Sleep Disorders as the next clinically distinct psychiatric topic, and reconcile it with the matching RxPrep chapter and current authoritative guidance.
+Continue through the unlocked Goodnotes library with Parkinson Disease as the next clinically distinct neurologic topic. Replace the legacy combined placeholder with a focused module reconciled against the matching RxPrep chapter and current authoritative guidance.
 
 ## Remaining-work rule
 

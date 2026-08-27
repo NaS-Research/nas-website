@@ -213,6 +213,7 @@ import { schizophreniaPsychosisModule } from "@/data/modules/schizophreniaPsycho
 import { bipolarDisorderModule } from "@/data/modules/bipolarDisorder";
 import { attentionDeficitHyperactivityDisorderModule } from "@/data/modules/attentionDeficitHyperactivityDisorder";
 import { anxietyDisordersModule } from "@/data/modules/anxietyDisorders";
+import { sleepDisordersModule } from "@/data/modules/sleepDisorders";
 
 const sources = {
   foundation: "Foundation",
@@ -662,6 +663,7 @@ basePharmacyModules.push(
   bipolarDisorderModule,
   attentionDeficitHyperactivityDisorderModule,
   anxietyDisordersModule,
+  sleepDisordersModule,
 );
 
 const curriculumAreaGroups = [
@@ -723,7 +725,7 @@ const curriculumAreaGroups = [
   },
   {
     area: "Psychiatric Conditions",
-    modules: [anxietyDisordersModule, attentionDeficitHyperactivityDisorderModule, bipolarDisorderModule, schizophreniaPsychosisModule, majorDepressiveDisorderModule],
+    modules: [sleepDisordersModule, anxietyDisordersModule, attentionDeficitHyperactivityDisorderModule, bipolarDisorderModule, schizophreniaPsychosisModule, majorDepressiveDisorderModule],
   },
   {
     area: "Gastrointestinal Conditions",
