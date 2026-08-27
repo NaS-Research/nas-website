@@ -91,9 +91,10 @@ This inventory records the source material available in the founder's Goodnotes 
 - Current references reviewed: ASPEN parenteral nutrition dosing and safety resources, CDC adult BMI guidance, the original Mifflin St Jeor resting-energy equation, and current FDA SMOFlipid labeling
 - Learning structure: six lessons, six native calculation diagrams, and six embedded knowledge checks
 - Assessment: 100 original questions with anthropometric conversion, BMI, ideal and adjusted weight conventions, Mifflin St Jeor, protein, dextrose, GIR, lipid, stock-solution, additive, volume, rate, and final-order cases; ten sampled without replacement per attempt with answer order randomized
+- Automated assessment verification: 100 unique questions, valid lesson review links, and at least 8 questions mapped to every lesson
 - Source reconciliation: handwritten equations were preserved as calculation conventions where appropriate; BMI, ideal body weight, adjusted body weight, fluid estimates, and predictive energy equations are explicitly framed as estimates rather than universal physiologic rules; product-specific lipid labeling and current clinical monitoring supersede fixed classroom assumptions
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, six diagrams, ten questions per attempt, different questions and answer order on repeat attempt, complete scoring with explanations and ten remediation links, and no current browser errors or warnings
-- Build verification: Next.js production build passed August 25, 2026 with 335 static pages generated
+- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
 
 ### Pediatric Parenteral Nutrition
 
