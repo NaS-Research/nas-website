@@ -2337,6 +2337,21 @@ Current source reconciliations:
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 172-question assessment bank.
 - Goodnotes remains unavailable because macOS reports a locked session. Any matching pneumonia lecture will receive a documented reconciliation pass after manual unlock.
 
+### Hospital-Acquired and Ventilator-Associated Pneumonia
+
+- Built from the HAP and VAP section of RxPrep 2023 Chapter 23 and reconciled with the current core ATS and IDSA HAP and VAP guideline, the 2022 acute-care prevention update, the 2026 IDSA resistant gram-negative guidance, the 2026 beta-lactam dose-individualization consensus, the 2026 Surviving Sepsis Campaign, and current FDA HABP and VABP information.
+- The 2016 ATS and IDSA document remains the current core treatment guideline. Newer prevention, resistant-pathogen, sepsis, and beta-lactam exposure sources are identified separately rather than represented as content from the older guideline.
+- The module distinguishes HAP, VAP, ventilator-associated events, aspiration pneumonitis, and community disease through admission and intubation timelines, clinical patterns, imaging, airway context, and alternative diagnoses.
+- Noninvasive endotracheal semiquantitative culture is the routine VAP sampling strategy. Specimen quality, prior therapy, airway colonization, Gram stain, organism burden, result ownership, and the decision each result can change are explicit.
+- Empiric breadth is tied to prior isolates, recent IV antibiotics, unit-specific susceptibility, structural lung disease, septic shock, and ventilatory support. MRSA and dual gram-negative gates are conditional and include their own de-escalation plan.
+- HAP and VAP treatment paths specify the baseline ecology, vancomycin or linezolid selection, complementary antipseudomonal classes, toxic-agent boundaries, exact exposure ownership, and a 48 to 72 hour antibiotic time-out.
+- Critical-illness dosing separates loading from maintenance, treats prolonged infusion as an administration strategy rather than automatic personalization, and uses measured concentrations as the defining evidence for true beta-lactam dose individualization.
+- Definitive therapy incorporates current pathways for MRSA, susceptible Pseudomonas, invasive ESBL Enterobacterales disease, DTR Pseudomonas, and CRAB. Modern active beta-lactams and protected sulbactam exposure replace unqualified reliance on toxic legacy combinations.
+- Seven days remains the standard duration for most improving HAP and VAP. De-escalation, the limited role of PCT for discontinuation, complications, source control, exposure failure, diagnostic failure, and the final stop plan remain visible.
+- Prevention is updated around avoiding unnecessary intubation, ventilator liberation, sedation reduction, mobility, aspiration reduction, early enteral nutrition, mechanical oral care, and equipment stewardship. Routine chlorhexidine was removed in favor of daily toothbrushing without chlorhexidine.
+- It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 174-question assessment bank.
+- Goodnotes remains unavailable because macOS reports a locked session. Any matching HAP or VAP lecture will receive a documented reconciliation pass after manual unlock.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
