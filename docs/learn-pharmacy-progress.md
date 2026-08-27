@@ -24,6 +24,7 @@ This ledger records modules verified under the current curriculum-build workflow
 | Mucormycosis | Infectious Diseases | 100 original questions | RxPrep 2023 Mucorales classification, amphotericin, isavuconazonium, posaconazole, interaction, and formulation material on printed pages 389 through 395 | CDC clinical overview, 2019 ECMM and MSG ERC global guideline, and current FDA labeling | Production build passed, 531 pages generated |
 | Candidemia and Invasive Candidiasis | Infectious Diseases | 100 original questions | RxPrep 2023 Candida species, bloodstream-treatment, echinocandin, azole, amphotericin, and monitoring material on printed pages 389 through 395 | CDC invasive-candidiasis and Candida auris guidance, 2016 IDSA candidiasis guideline with age and eye-screening conflict flagged, 2025 CDC resistance update, and current FDA labeling | Production build passed, 532 pages generated |
 | Chronic Hepatitis B | Infectious Diseases | 100 original questions | RxPrep 2023 hepatitis background, serology, polymerase-inhibitor, interferon, vaccine, monitoring, and coinfection material on printed pages 296 through 301 | 2025 AASLD and IDSA practice guideline, 2024 and 2026 WHO guidance, current CDC screening, pregnancy, vaccine and perinatal recommendations, and current FDA labeling | Production build passed, 533 pages generated |
+| Hepatitis C | Infectious Diseases | 100 original questions | RxPrep 2023 hepatitis C, direct-acting antiviral, interaction, ribavirin, and monitoring material on printed pages 296 through 300 | May 2026 AASLD and IDSA HCV Guidance, current CDC testing recommendations, and current MAVYRET, EPCLUSA, and VOSEVI labeling | Production build passed, 534 pages generated |
 
 Each module assessment randomly draws 10 questions from its complete bank through the shared pharmacy assessment system. The system randomizes question order and answer choices, prevents duplicate questions in one attempt, reports score and explanations, and links each answer back to its lesson section.
 
@@ -64,11 +65,14 @@ Each module assessment randomly draws 10 questions from its complete bank throug
 - The local RxPrep copy was reviewed for viral-hepatitis background, serology, interferon, TDF, TAF, entecavir, legacy antivirals, dosing, monitoring, vaccination, pregnancy, and HIV coinfection.
 - The chronic-hepatitis-B module explicitly replaces the 2023 risk-only screening statement with current CDC universal adult triple-panel screening and identifies the December 2025 CDC infant birth-dose change.
 - The module reconciles the compact course material with the 2025 AASLD and IDSA treatment update, including dynamic disease phases, expanded treatment reasoning, pregnancy, treatment discontinuation, reactivation, and HCC surveillance.
+- Goodnotes remained unavailable because macOS was locked during the focused hepatitis-C source check. The local RxPrep copy was reviewed for HCV diagnosis, DAA targets, Mavyret, Epclusa, Vosevi, legacy regimens, interaction rules, ribavirin, and monitoring.
+- The hepatitis-C module reconciles the 2023 course foundation with the May 2026 AASLD and IDSA initial-treatment guidance and current CDC reflex-RNA testing. It identifies current pangenotypic regimens and keeps Viekira Pak and interferon-era combinations in historical context rather than presenting them as routine initial therapy.
+- Current labeling added acute HCV to the MAVYRET indication in June 2025. The module therefore uses a current test-and-treat pathway for confirmed acute infection instead of an older wait-for-clearance approach.
 - Obsolete or changing source content is reconciled explicitly. Discontinued agents are identified as historical, uncommon older agents are separated from current practice, and pregnancy-letter classifications are not used.
 
 ## Next verified-build target
 
-Continue the viral-hepatitis sequence with hepatitis C. Search the restored Goodnotes library for dedicated lecture material when the Mac is unlocked, then reconcile accessible course content with current AASLD and IDSA HCV Guidance, CDC recommendations, and current FDA labeling before implementation.
+Continue the hepatology sequence with cirrhosis and chronic liver disease. Search the restored Goodnotes library for dedicated lecture material when the Mac is unlocked, then reconcile accessible course content with current AASLD guidance and current FDA labeling before implementation.
 
 ## Remaining-work rule
 
