@@ -33,6 +33,7 @@ This ledger records modules verified under the current curriculum-build workflow
 | Schizophrenia and Psychosis | Psychiatric Conditions | 100 original questions | RxPrep 2023 schizophrenia and psychosis chapter on printed pages 845 through 851 | 2023 VA/DoD first-episode psychosis and schizophrenia guideline, 2020 APA schizophrenia guideline, and 2025 FDA clozapine REMS removal | Production build passed, 540 pages generated |
 | Bipolar Disorder | Psychiatric Conditions | 100 original questions | RxPrep 2023 bipolar disorder chapter on printed pages 853 through 856 | 2023 VA/DoD bipolar disorder guideline and current lithium and valproate labeling | Production build passed, 541 pages generated |
 | Attention Deficit Hyperactivity Disorder | Psychiatric Conditions | 100 original questions | Goodnotes Mental Health and Pain lecture pages 13, 14, and 35 plus RxPrep 2023 ADHD chapter on printed pages 857 through 863 | 2019 AAP guideline, 2023 FDA stimulant safety communication, and current atomoxetine and viloxazine labeling | Production build passed, 542 pages generated |
+| Anxiety Disorders | Psychiatric Conditions | 100 original questions | RxPrep 2023 Anxiety Disorders chapter on printed pages 864 through 866 | NICE CG113, last reviewed in 2024, 2020 FDA benzodiazepine safety communication, and current product labeling | Production build passed, 543 pages generated |
 
 Each module assessment randomly draws 10 questions from its complete bank through the shared pharmacy assessment system. The system randomizes question order and answer choices, prevents duplicate questions in one attempt, reports score and explanations, and links each answer back to its lesson section.
 
@@ -106,11 +107,15 @@ Each module assessment randomly draws 10 questions from its complete bank throug
 - The local RxPrep copy was reviewed across printed pages 857 through 863 for diagnostic criteria, age-specific behavioral care, stimulant classes and formulations, dosing, administration, safety, monitoring, atomoxetine, guanfacine extended release, and clonidine extended release.
 - The ADHD module replaces the older source algorithm with current care. It adds viloxazine extended release for pediatric patients age six and older and adults, uses the 2023 FDA class-wide stimulant warning for misuse, abuse, addiction, overdose, death, sharing, storage, and disposal, and treats CYP2D6 inhibitor exposure as clinically similar to poor-metabolizer exposure for atomoxetine.
 - The module also replaces blanket stimulant restrictions for tic disorders and universal baseline ECG language with individualized tic monitoring and cardiovascular history, family history, examination, vital signs, and targeted testing when findings indicate risk.
+- Focused Goodnotes searches for `anxiety`, `generalized anxiety disorder`, and `buspirone` found RxPrep as the only dedicated anxiety pharmacotherapy source. Matches in thyroid, pulmonary, cardiovascular, and other documents were incidental and were not used as anxiety lectures.
+- The local RxPrep copy was reviewed across printed pages 864 through 866 for GAD, panic disorder, social anxiety, CBT, lifestyle care, medication and substance causes, SSRIs, SNRIs, buspirone, pregabalin, hydroxyzine, propranolol, benzodiazepines, interactions, counseling, and natural products.
+- The anxiety module does not retain the source's statement that most anxiety is caused by depression. It treats anxiety disorders as distinct diagnoses that can coexist with depression and requires a medical, substance, medication, sleep, and psychiatric differential.
+- The source's fixed one to two week benzodiazepine statement is replaced with current indication-specific guidance, the 2020 FDA boxed warning for abuse, misuse, addiction, physical dependence, and withdrawal, and an individualized taper without a universal schedule. NICE CG113 is identified as an older guideline that was updated in 2020 and reviewed in 2024.
 - Obsolete or changing source content is reconciled explicitly. Discontinued agents are identified as historical, uncommon older agents are separated from current practice, and pregnancy-letter classifications are not used.
 
 ## Next verified-build target
 
-Continue through the unlocked Goodnotes Mental Health and Pain source, inventory the next clinically distinct topic, and reconcile it with the matching RxPrep chapter and current authoritative guidance.
+Continue through the unlocked Goodnotes library, inventory Sleep Disorders as the next clinically distinct psychiatric topic, and reconcile it with the matching RxPrep chapter and current authoritative guidance.
 
 ## Remaining-work rule
 

@@ -215,6 +215,7 @@ import MajorDepressiveDisorderVisual, { majorDepressiveDisorderVisualTypes } fro
 import SchizophreniaPsychosisVisual, { schizophreniaPsychosisVisualTypes } from "@/components/learn/SchizophreniaPsychosisVisual";
 import BipolarDisorderVisual, { bipolarDisorderVisualTypes } from "@/components/learn/BipolarDisorderVisual";
 import AttentionDeficitHyperactivityDisorderVisual, { attentionDeficitHyperactivityDisorderVisualTypes } from "@/components/learn/AttentionDeficitHyperactivityDisorderVisual";
+import AnxietyDisordersVisual, { anxietyDisordersVisualTypes } from "@/components/learn/AnxietyDisordersVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -611,6 +612,7 @@ export default async function PharmacyModulePage({ params }) {
               {module.slug === "schizophrenia-psychosis" && schizophreniaPsychosisVisualTypes.includes(submodule.visual) && <SchizophreniaPsychosisVisual type={submodule.visual} />}
               {module.slug === "bipolar-disorder" && bipolarDisorderVisualTypes.includes(submodule.visual) && <BipolarDisorderVisual type={submodule.visual} />}
               {module.slug === "attention-deficit-hyperactivity-disorder" && attentionDeficitHyperactivityDisorderVisualTypes.includes(submodule.visual) && <AttentionDeficitHyperactivityDisorderVisual type={submodule.visual} />}
+              {module.slug === "anxiety-disorders" && anxietyDisordersVisualTypes.includes(submodule.visual) && <AnxietyDisordersVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
