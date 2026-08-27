@@ -195,6 +195,7 @@ import HivProteaseInhibitorVisual, { hivProteaseInhibitorVisualTypes } from "@/c
 import HivEntryAttachmentInhibitorVisual, { hivEntryAttachmentInhibitorVisualTypes } from "@/components/learn/HivEntryAttachmentInhibitorVisual";
 import IntegraseStrandTransferInhibitorVisual, { integraseStrandTransferInhibitorVisualTypes } from "@/components/learn/IntegraseStrandTransferInhibitorVisual";
 import HivPreventionPrepPepVisual, { hivPreventionPrepPepVisualTypes } from "@/components/learn/HivPreventionPrepPepVisual";
+import DisseminatedMacVisual, { disseminatedMacVisualTypes } from "@/components/learn/DisseminatedMacVisual";
 import { getPharmacyModule, pharmacyModules } from "@/data/pharmacyModules";
 import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 
@@ -571,6 +572,7 @@ export default async function PharmacyModulePage({ params }) {
               {module.slug === "hiv-entry-attachment-inhibitors" && hivEntryAttachmentInhibitorVisualTypes.includes(submodule.visual) && <HivEntryAttachmentInhibitorVisual type={submodule.visual} />}
               {module.slug === "integrase-strand-transfer-inhibitors" && integraseStrandTransferInhibitorVisualTypes.includes(submodule.visual) && <IntegraseStrandTransferInhibitorVisual type={submodule.visual} />}
               {module.slug === "hiv-prevention-prep-pep" && hivPreventionPrepPepVisualTypes.includes(submodule.visual) && <HivPreventionPrepPepVisual type={submodule.visual} />}
+              {module.slug === "disseminated-mycobacterium-avium-complex" && disseminatedMacVisualTypes.includes(submodule.visual) && <DisseminatedMacVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>

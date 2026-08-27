@@ -13,6 +13,7 @@ This ledger records modules verified under the current curriculum-build workflow
 | HIV Entry and Attachment Inhibitors | Infectious Diseases | 136 original questions | RxPrep 2023 maraviroc, fostemsavir, ibalizumab, and enfuvirtide material | NIH Adult, Adolescent, Pediatric, and Perinatal HIV Guidelines and current FDA labeling | Production build passed, 520 pages generated |
 | Integrase Strand Transfer Inhibitors | Infectious Diseases | 156 original questions | RxPrep 2023 integrase inhibitor material | NIH Adult, Adolescent, and Perinatal HIV Guidelines and current FDA labeling | Production build passed, 521 pages generated |
 | HIV Prevention, PrEP, and PEP | Infectious Diseases | 168 original questions | RxPrep 2023 HIV prevention pages 417 and 418 | 2025 and 2026 CDC, U.S. Public Health Service, NIH, and current FDA guidance | Production build passed, 522 pages generated |
+| Disseminated Mycobacterium avium Complex | Infectious Diseases | 136 original questions | RxPrep 2023 opportunistic-infection pages 404 and 405 | NIH Adult and Adolescent OI guideline updated May 27, 2026 | Production build passed, 523 pages generated |
 
 Each module assessment randomly draws 10 questions from its complete bank through the shared pharmacy assessment system. The system randomizes question order and answer choices, prevents duplicate questions in one attempt, reports score and explanations, and links each answer back to its lesson section.
 
@@ -26,11 +27,13 @@ Each module assessment randomly draws 10 questions from its complete bank throug
 - Other search matches were incidental mentions in unrelated course documents and were not treated as HIV lecture sources.
 - RxPrep printed pages 411 through 415 were visually reviewed for the current HIV class sequence, booster material, and entry, attachment, post-attachment, and fusion inhibitors.
 - RxPrep printed pages 417 and 418 were visually reviewed for treatment as prevention, PrEP, nonoccupational PEP, occupational PEP, baseline testing, monitoring, and product comparisons.
+- Focused Goodnotes searches for `Mycobacterium avium`, `disseminated MAC`, `azithromycin prophylaxis`, and `CD4 50` found RxPrep as the only dedicated MAC source. A syllabus mention and unrelated short-query matches were excluded.
+- RxPrep printed pages 404 and 405 were visually reviewed for primary prophylaxis, active-disease exclusion, the macrolide and ethambutol treatment backbone, intensification options, and maintenance therapy.
 - Obsolete or changing source content is reconciled explicitly. Discontinued agents are identified as historical, uncommon older agents are separated from current practice, and pregnancy-letter classifications are not used.
 
 ## Next verified-build target
 
-Continue the HIV-related opportunistic infection sequence with disseminated Mycobacterium avium complex prevention and treatment. Reconcile accessible course material with current NIH guidance and FDA labeling before implementation.
+Continue the HIV-related opportunistic infection sequence with toxoplasma encephalitis. Search the restored Goodnotes library for dedicated lecture material, then reconcile accessible course content with current NIH guidance and FDA labeling before implementation.
 
 ## Remaining-work rule
 
