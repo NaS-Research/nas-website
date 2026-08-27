@@ -12,6 +12,7 @@ This ledger records modules verified under the current curriculum-build workflow
 | HIV Protease Inhibitors | Infectious Diseases | 144 original questions | RxPrep 2023 HIV PI and booster material | NIH Adult, Adolescent, and Perinatal HIV Guidelines and current FDA labeling | Production build passed |
 | HIV Entry and Attachment Inhibitors | Infectious Diseases | 136 original questions | RxPrep 2023 maraviroc, fostemsavir, ibalizumab, and enfuvirtide material | NIH Adult, Adolescent, Pediatric, and Perinatal HIV Guidelines and current FDA labeling | Production build passed, 520 pages generated |
 | Integrase Strand Transfer Inhibitors | Infectious Diseases | 156 original questions | RxPrep 2023 integrase inhibitor material | NIH Adult, Adolescent, and Perinatal HIV Guidelines and current FDA labeling | Production build passed, 521 pages generated |
+| HIV Prevention, PrEP, and PEP | Infectious Diseases | 168 original questions | RxPrep 2023 HIV prevention pages 417 and 418 | 2025 and 2026 CDC, U.S. Public Health Service, NIH, and current FDA guidance | Production build passed, 522 pages generated |
 
 Each module assessment randomly draws 10 questions from its complete bank through the shared pharmacy assessment system. The system randomizes question order and answer choices, prevents duplicate questions in one attempt, reports score and explanations, and links each answer back to its lesson section.
 
@@ -21,13 +22,15 @@ Each module assessment randomly draws 10 questions from its complete bank throug
 - Searches for `HIV` and `protease inhibitor` found the RxPrep NAPLEX 2023 book as the only dedicated HIV pharmacotherapy source in the accessible Goodnotes library.
 - Focused Goodnotes searches for `maraviroc`, `fostemsavir`, `ibalizumab`, and `enfuvirtide` also found RxPrep as the only dedicated source. No separate entry-inhibitor lecture deck was available.
 - Focused Goodnotes searches for `integrase inhibitor`, `bictegravir`, `dolutegravir`, `raltegravir`, and `cabotegravir` found RxPrep as the only dedicated source. One dolutegravir match in an atrial-arrhythmia deck was incidental and was not used as an HIV source.
+- Focused Goodnotes searches for `pre-exposure prophylaxis`, `post-exposure prophylaxis`, `tenofovir emtricitabine`, and `Apretude` found RxPrep as the only dedicated HIV-prevention source. Short-query matches for `PrEP` and `PEP` in unrelated course files were OCR collisions and were not used.
 - Other search matches were incidental mentions in unrelated course documents and were not treated as HIV lecture sources.
 - RxPrep printed pages 411 through 415 were visually reviewed for the current HIV class sequence, booster material, and entry, attachment, post-attachment, and fusion inhibitors.
+- RxPrep printed pages 417 and 418 were visually reviewed for treatment as prevention, PrEP, nonoccupational PEP, occupational PEP, baseline testing, monitoring, and product comparisons.
 - Obsolete or changing source content is reconciled explicitly. Discontinued agents are identified as historical, uncommon older agents are separated from current practice, and pregnancy-letter classifications are not used.
 
 ## Next verified-build target
 
-Continue the RxPrep HIV sequence with HIV prevention, pre-exposure prophylaxis, and post-exposure prophylaxis. Reconcile the 2023 course material with current CDC, NIH, and FDA sources before implementation.
+Continue the HIV-related opportunistic infection sequence with disseminated Mycobacterium avium complex prevention and treatment. Reconcile accessible course material with current NIH guidance and FDA labeling before implementation.
 
 ## Remaining-work rule
 
