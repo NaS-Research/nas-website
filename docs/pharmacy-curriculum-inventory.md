@@ -2220,6 +2220,20 @@ Current source reconciliations:
 - Current pregnancy testing, two-day contraception, two-day lactation interruption, route-specific common effects, liver testing, and C. difficile response replace retired letter categories and passive warning lists.
 - Goodnotes was not required to advance this RxPrep-defined milestone. Any later matching lecture material will receive a documented reconciliation pass.
 
+### Fidaxomicin Pharmacology
+
+- Built from the fidaxomicin section of RxPrep 2023 Chapter 22, then reconciled with the November 2025 DIFICID label, current IDSA and SHEA CDI guidance, and current CDC clinical, diagnostic, and infection-prevention guidance.
+- The module corrects the older shorthand by teaching bacterial RNA polymerase and RNA synthesis as the direct target. Reduced protein production is downstream and fidaxomicin is not presented as a ribosomal inhibitor.
+- Local gastrointestinal exposure, the OP-1118 metabolite, minimal plasma concentrations, in vitro bactericidal activity, post-antibiotic effect, and the systemic-infection boundary remain connected.
+- Symptomatic CDI is separated from asymptomatic colonization. Stool frequency, laxatives, alternative causes, appropriate testing, inciting-antibiotic review, and avoidance of tests of cure are required before and after therapy.
+- Current adult guidance is represented as a conditional preference for fidaxomicin in initial and recurrent nonfulminant CDI when feasible. Oral vancomycin remains acceptable, and fulminant CDI with shock, ileus, or megacolon follows an urgent multi-route pathway.
+- The adult regimen is 200 mg orally twice daily for ten days with or without food. No renal adjustment is recommended, while hepatic impairment remains incompletely studied.
+- Pediatric use begins at six months. Tablet eligibility requires at least 12.5 kg plus safe swallowing, and suspension doses use the current 2, 3, 4, and 5 mL weight bands.
+- The 40 mg/mL suspension lesson includes professional reconstitution with 130 mL purified water, homogeneity checks, oral-syringe measurement, refrigeration at 2 to 8 degrees Celsius, and a 12-day discard date.
+- Sustained response is distinguished from initial cure. Recurrent symptoms trigger clinical reassessment rather than automatic refilling, and extended-pulsed use is distinguished from the standard FDA-labeled course.
+- Hypersensitivity, macrolide-allergy context, gastrointestinal effects, bleeding, cytopenias, P-gp evidence, pregnancy, lactation, response, recurrence follow-up, stewardship, contact precautions, and sporicidal cleaning receive actionable ownership.
+- Goodnotes was not required to advance this RxPrep-defined milestone. Any later matching lecture material will receive a documented reconciliation pass.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
