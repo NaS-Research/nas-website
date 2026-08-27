@@ -2815,6 +2815,28 @@ Current source reconciliations:
 - Build verification: Next.js production build passed August 27, 2026 with 516 static pages generated.
 - Goodnotes source reconciliation remains pending because the Mac was still locked when access was retried. The module will receive a documented lecture comparison after the application session is readable.
 
+### Nucleoside Reverse Transcriptase Inhibitors
+
+- Built from the focused NRTI material in RxPrep 2023 and reconciled with the NIH Adult and Adolescent Antiretroviral Guidelines current through August 2026 plus current FDA labeling.
+- Nucleoside and nucleotide scaffold distinctions, altered sugar geometry, oral prodrugs, intracellular phosphorylation, active triphosphates, tenofovir diphosphate, substrate competition, incorporation, and chain termination connect medicinal chemistry to antiviral effect.
+- Dual-NRTI backbone construction, low resistance barrier, M184V and M184I, K65R, thymidine analog mutations, complete resistance history, companion-drug activity, and functional monotherapy define the resistance system.
+- TDF and TAF are compared through prodrug stability, plasma tenofovir, intracellular tenofovir diphosphate, approved product strength, transporter induction, pharmacokinetic boosting, and coformulation-specific instructions rather than tablet milligrams alone.
+- TDF kidney and bone safety joins proximal tubular injury, Fanconi syndrome, normoglycemic glucosuria, phosphate wasting, bicarbonate and potassium loss, acute kidney injury, bone mineral density, osteomalacia, nephrotoxins, and product-specific renal tables.
+- TAF selection preserves its comparative renal and bone advantages while retaining residual kidney risk, product restrictions, lipid and weight context, HBV activity, interaction screening, and the metabolic consequences of removing TDF.
+- Lamivudine and emtricitabine are treated as related cytidine analog alternatives, not a rational pair. Intracellular activation, overlapping resistance, kidney elimination, fixed-dose limitations, emtricitabine-associated hyperpigmentation, and the lower-dose HBV lamivudine product are explicit.
+- HIV and HBV coinfection includes HBV screening, tenofovir plus lamivudine or emtricitabine, complete HIV suppression, avoidance of single-agent HBV pressure, severe withdrawal flare, replacement therapy, liver monitoring, and safe regimen simplification.
+- Abacavir safety joins HLA-B*5701 testing, multisystem hypersensitivity recognition, immediate discontinuation, permanent avoidance, pharmacy and allergy documentation, negative-test limitations, and the unresolved cardiovascular signal.
+- Zidovudine marrow suppression, macrocytosis, neutropenia, myopathy, current specialized use, didanosine pancreatitis and neuropathy, stavudine neuropathy and lipoatrophy, discontinued United States availability, and historical-treatment interpretation replace obsolete routine-use framing.
+- Mitochondrial polymerase gamma inhibition, impaired oxidative phosphorylation, lactic acidosis, hepatic steatosis, myopathy, neuropathy, lipoatrophy, urgent syndrome recognition, and the lower incidence with current agents form one mechanistic safety pathway.
+- Final selection integrates cumulative resistance, prior prevention exposure, HBV, kidney and urine data, bone health, marrow status, cardiovascular risk, lipids, pregnancy and lactation guidance, interactions, product labeling, access, response, and follow-up ownership.
+- It contains twelve focused lessons, twelve responsive diagrams, twelve embedded checks, and a validated 208-question assessment bank.
+- RxPrep's older fixed-dose renal cutoff shortcut was not retained. Current labeling is product specific, and single agents can have different renal instructions from coformulations.
+- RxPrep's older positioning of zidovudine and other legacy NRTIs was not presented as routine current United States practice. NIH now identifies zidovudine, didanosine, and stavudine as no longer recommended for routine use because of toxicity, with didanosine and stavudine discontinued in the United States.
+- Automated verification: 208 unique question IDs and prompts, four distinct answer choices per question, valid lesson links, twelve lesson sections, twelve diagrams, and no em dash or en dash characters in public module prose.
+- Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, twelve lessons, twelve diagrams, twelve embedded checks, ten questions per test, a completely different second random set, scoring with rationales and ten remediation links, and zero console warnings or errors.
+- Build verification: Next.js production build passed August 27, 2026 with 517 static pages generated.
+- Goodnotes source reconciliation remains pending until the reported restored library connection is re-audited and the relevant lecture material is identified.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
