@@ -416,8 +416,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: six lessons, six native target, oral factor Xa inhibitor, dabigatran, selection, procedure, and bleeding diagrams, and six embedded knowledge checks
 - Assessment: 104 original questions spanning targets, clinical eligibility, rapid onset, all four product regimens, treatment phases, renal and hepatic criteria, food, dosage-form handling, P-gp and CYP3A interactions, adherence, missed doses, transitions, procedures, laboratory interpretation, major bleeding, reversal, and resumption; ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: DOAC doses remained product, indication, and phase specific; atrial fibrillation dose-reduction criteria were not imported into acute VTE treatment; edoxaban high-creatinine-clearance atrial fibrillation restriction and VTE lead-in were explicit; dabigatran renal, P-gp, storage, and capsule-handling risks were retained; normal routine coagulation tests were not used to exclude exposure; reversal was agent matched and paired with source control and a restart plan
-- Automated verification: 104 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 25, 2026 with 362 static pages generated
+- Automated verification: 104 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, at least 12 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 30, 2026 with 547 static pages generated
 - Goodnotes note: the dedicated DOAC lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
 ### Parenteral Anticoagulants
