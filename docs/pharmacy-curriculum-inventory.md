@@ -452,8 +452,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: six lessons, six native electrophysiology, automaticity, triggered-activity, reentry, substrate, and mechanism-to-treatment diagrams, and six embedded knowledge checks
 - Assessment: 104 original questions spanning action-potential currents, nodal physiology, refractoriness, conduction, automaticity, ectopic foci, EADs, DADs, digoxin, catecholamines, AVNRT, AVRT, preexcited AF, scar VT, AF remodeling, ischemia, heart failure, autonomic and metabolic modulation, tachycardia hemodynamics, cardiomyopathy, escape rhythms, drugs, ablation, and devices; ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: tissue-specific currents replaced one universal action-potential model; appropriate sinus tachycardia was separated from primary arrhythmia; EAD and DAD mechanisms remained distinct; digoxin toxicity combined triggered activity and conduction block; reentry required circuit, unidirectional block, and conduction delay; AV nodal blockers were excluded from preexcited AF; AF risk-factor care was treated as substrate modification; acute termination was separated from recurrence and sudden-death prevention
-- Automated verification: 104 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 25, 2026 with 365 static pages generated
+- Automated verification: 104 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, at least 16 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 30, 2026 with 547 static pages generated
 - Goodnotes note: the dedicated arrhythmia pathophysiology lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
 ### Atrial Arrhythmias
