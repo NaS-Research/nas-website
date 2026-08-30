@@ -476,8 +476,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: six lessons, six native risk-map, monomorphic-VT, polymorphic-VT, arrest-and-storm, inherited-syndrome, and sudden-death-prevention diagrams, and six embedded knowledge checks
 - Assessment: 100 original questions spanning PVC and NSVT risk, wide-complex diagnosis, structural evaluation, monomorphic and polymorphic VT, torsades, long-QT syndromes, VF resuscitation, electrical storm, ICD shocks, inherited and inflammatory syndromes, ICD selection, and catheter ablation; ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: substrate determined PVC and NSVT risk; uncertain regular wide-complex tachycardia was handled cautiously as VT; instability required synchronized cardioversion; torsades was separated from normal-QT polymorphic VT; magnesium was not presented as universal therapy for normal-QT polymorphic VT; early defibrillation remained central for VF; electrical-storm care extended beyond repeated shocks; inherited phenotypes required specialist evaluation; ICD timing accounted for reversibility and recovery; ablation reduced recurrence without replacing longitudinal device protection
-- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 25, 2026 with 367 static pages generated
+- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, at least 12 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 30, 2026 with 547 static pages generated
 - Goodnotes note: the dedicated ventricular arrhythmia lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
 ### Antiarrhythmic Pharmacology and Medicinal Chemistry
