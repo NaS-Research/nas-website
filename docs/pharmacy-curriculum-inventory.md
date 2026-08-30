@@ -464,8 +464,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: six lessons, six native rhythm-map, AF-framework, rate-and-rhythm, stroke-prevention, SVT-circuit, and high-risk-state diagrams, and six embedded knowledge checks
 - Assessment: 104 original questions spanning AF diagnosis and stages, flutter, focal AT, MAT, risk-factor modification, burden, cardiomyopathy, unstable AF, rate and rhythm drugs, cardioversion, anticoagulation, bleeding mitigation, appendage occlusion, vagal maneuvers, adenosine, AVNRT, AVRT, concealed pathways, preexcited AF, and ablation; ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: wearable alerts did not substitute for clinician-confirmed AF; permanent AF remained a shared strategy decision; MAT retained organized P waves and a systemic-disease focus; AF risk-factor care was integrated with rhythm therapy; instability overrode elective cardioversion sequencing; negative inotropy shaped rate control; antiarrhythmic selection followed structural substrate; aspirin was not presented as anticoagulation; bleeding scores did not automatically deny stroke prevention; AV nodal blockers were excluded from preexcited AF; ablation success did not automatically stop anticoagulation
-- Automated verification: 104 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 25, 2026 with 366 static pages generated
+- Automated verification: 104 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, at least eight questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 30, 2026 with 547 static pages generated
 - Goodnotes note: the dedicated atrial arrhythmia lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
 ### Ventricular Arrhythmias
