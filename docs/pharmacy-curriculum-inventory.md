@@ -428,8 +428,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: six lessons, six native target, UFH, LMWH, fondaparinux, direct-thrombin-inhibitor, and critical-safety diagrams, and six embedded knowledge checks
 - Assessment: 112 original questions spanning antithrombin dependence, target selectivity, UFH concentration and initiation, aPTT and anti-Xa interpretation, heparin resistance, LMWH indication, renal function, body weight, anti-Xa testing and technique, fondaparinux timing, weight tiers, renal restriction and HIT context, argatroban, bivalirudin, protamine, HIT response, neuraxial safety, and transitions; ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: injectable anticoagulants were not treated as interchangeable; UFH laboratory response was separated from delivery error and assay discordance; LMWH prophylaxis and treatment intensities remained distinct; routine LMWH anti-Xa testing was avoided; fondaparinux used current weight and renal constraints; argatroban hepatic clearance and INR effect were explicit; bivalirudin remained tied to PCI labeling; HIT used 4Ts-guided immediate action; protamine was not presented as a universal antidote
-- Automated verification: 112 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 25, 2026 with 363 static pages generated
+- Automated verification: 112 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, at least 16 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 30, 2026 with 547 static pages generated
 - Goodnotes note: the dedicated parenteral anticoagulant lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
 ### ECG Interpretation
