@@ -555,8 +555,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: six lessons, six native stroke-system, imaging, thrombolysis, thrombectomy, supportive-care, and transition diagrams, and six embedded knowledge checks
 - Assessment: 100 original questions, ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: last known well remained distinct from discovery time; disability was not reduced to NIHSS total; imaging proceeded in parallel without delaying eligible IV therapy; alteplase and tenecteplase were both endorsed within the 4.5-hour guideline window while the tenecteplase label remained a separate evidence layer; stroke and STEMI tenecteplase doses were separated; nondisabling minor stroke favored dual antiplatelet therapy when eligible; selected large-core and basilar occlusions entered EVT pathways; intensive systolic lowering below 140 after reperfusion and intensive glucose control to 80 to 130 were rejected; acute care ended with mechanism-specific prevention and recovery ownership
-- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 25, 2026 with 374 static pages generated
+- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, at least eight questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 30, 2026 with 547 static pages generated
 - Goodnotes note: the dedicated stroke lecture, chapter, and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
 ### Secondary Stroke Prevention
