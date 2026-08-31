@@ -533,8 +533,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: seven lessons, seven native RAS, ARNI, beta-blocker, MRA, renal-delivery, vasodilator and rate-control, and integrated molecular diagrams, and seven embedded knowledge checks
 - Assessment: 108 original questions, ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: molecular scaffold was separated from clinical outcome evidence; prodrugs were traced to active species; shared targets did not imply interchangeable disposition or labeling; stereochemistry and formulation were connected to exposure; renal-target drugs were traced to target access; active metabolites and transporters were included where clinically consequential; structure was used to generate hypotheses rather than replace labeling, trials, or guidance
-- Automated verification: 108 unique question IDs, no duplicate answer choices, valid lesson links, seven diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 25, 2026 with 372 static pages generated
+- Automated verification: 108 unique question IDs, no duplicate answer choices, valid lesson links, seven diagrams, at least eight questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 30, 2026 with 547 static pages generated
 - Goodnotes note: the dedicated heart-failure medicinal-chemistry lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
 
 ### Peripheral Arterial Disease
