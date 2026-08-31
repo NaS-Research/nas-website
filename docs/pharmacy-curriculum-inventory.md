@@ -522,8 +522,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: six lessons, six native assessment, decongestion, cardiorenal, vasoactive, shock, and transition diagrams, and six embedded checks
 - Assessment: 104 original questions, ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: the acute syndrome required objective support and mimic exclusion; congestion and perfusion were separate axes; low ejection fraction alone did not justify inotropes; loop response was measured within hours; resistance was diagnosed before sequential blockade; weight was not the sole decongestion endpoint; creatinine was interpreted against perfusion and congestion; vasodilators required pressure reserve; inotropes required a hypoperfusion goal and exit strategy; pressure support did not prove restored flow; mechanical support required a defined bridge; discharge tested the oral regimen and assigned follow-up ownership
-- Automated verification: 104 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 25, 2026 with 371 static pages generated
+- Automated verification: 104 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, at least 12 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 30, 2026 with 547 static pages generated
 - Goodnotes note: the dedicated acute heart-failure lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
 ### Heart Failure Medicinal Chemistry
