@@ -566,8 +566,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: six lessons, six native mechanism, antithrombotic, atherosclerosis, cardioembolic, special-mechanism, and lifelong-prevention diagrams, and six embedded knowledge checks
 - Assessment: 104 original questions, ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: prevention was assigned by mechanism rather than event label; TIA remained an emergency; prescribed therapy was separated from actual exposure; DAPT remained short and indication specific; antiplatelet plus anticoagulant therapy required a separate indication; AF generally required anticoagulation; start timing used infarct and hemorrhage rather than a universal day; DOAC reduction rules remained product specific; mechanical valves retained warfarin; carotid intervention required a symptomatic ipsilateral lesion; intracranial stenting was not first line; PFO closure required plausible causality; ESUS did not justify empiric anticoagulation or ticagrelor; behavior support and social access were treated as part of treatment exposure
-- Automated verification: 104 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 25, 2026 with 375 static pages generated
+- Automated verification: 104 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, at least eight questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 30, 2026 with 547 static pages generated
 - Goodnotes note: the stroke chapter and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
 ### Acute Kidney Injury
