@@ -544,8 +544,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: six lessons, six native clinical-spectrum, hemodynamic-diagnosis, vascular-risk, function-and-foot, revascularization, and limb-emergency diagrams, and six embedded knowledge checks
 - Assessment: 100 original questions, ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: four clinical subsets replaced a symptom-only model; asymptomatic disease retained functional and cardiovascular risk; ABI technique and noncompressibility were explicit; tissue-perfusion tests supplemented rather than replaced clinical limb staging; antithrombotic dose and indication were separated; full anticoagulation was rejected for PAD alone; structured exercise was treated as a prescription; cilostazol retained the heart-failure contraindication; claudication procedures targeted function while CLTI procedures targeted limb preservation; procedural patency was separated from healing, mobility, survival, and access
-- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 25, 2026 with 373 static pages generated
+- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, at least eight questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 30, 2026 with 547 static pages generated
 - Goodnotes note: the dedicated PAD lectures and chapters remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
 ### Acute Ischemic Stroke
