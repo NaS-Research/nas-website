@@ -1340,7 +1340,7 @@ Target modules:
 3. Benign Prostatic Hyperplasia (`built`, 104 question bank; dedicated Goodnotes lecture reconciliation pending)
 4. Sexual Dysfunction (`built`, 112 question bank; dedicated Goodnotes lecture reconciliation pending)
 5. Urinary Incontinence (`built`, 104 question bank; dedicated Goodnotes lecture reconciliation pending)
-6. Osteoporosis (`built`, 104 question bank; dedicated Goodnotes lecture reconciliation pending)
+6. Osteoporosis (`built`, 112 question bank; dedicated Goodnotes lecture reconciliation pending)
 7. Genitourinary Medicinal Chemistry (`built`, 128 question bank; dedicated Goodnotes lecture reconciliation pending)
 8. Vaginitis and Vulvovaginal Infections (`built`, 132 question bank; dedicated Goodnotes lecture reconciliation pending)
 
@@ -1656,7 +1656,7 @@ The sexual dysfunction module includes respectful domain-based assessment; erect
 
 ### Osteoporosis
 
-The osteoporosis module includes bone remodeling and skeletal strength; fragility-fracture recognition; secondary causes; 2025 USPSTF screening; DXA and FRAX interpretation; calcium, vitamin D, exercise, and fall prevention; treatment thresholds and risk sequencing; oral and intravenous bisphosphonates; denosumab; teriparatide; abaloparatide; romosozumab; raloxifene; estrogen-containing options; calcitonin; glucocorticoid-induced osteoporosis; and longitudinal monitoring. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 104-question assessment bank. Desktop and 390 pixel mobile layouts, ten-question sampling without repetition, a different subsequent attempt, randomized answer support, scoring, explanations, valid remediation links, an overflow-free mobile layout, and the 406-page production build were verified on August 26, 2026. The complete eight-page RxPrep 2023 osteoporosis chapter was reviewed visually. The dedicated Goodnotes lecture remains pending and will receive a documented reconciliation pass when access is available.
+The osteoporosis module includes bone remodeling and skeletal strength; fragility-fracture recognition; secondary causes; 2025 USPSTF screening; the boundary between screening and diagnostic evaluation; DXA and FRAX interpretation; calcium, vitamin D, exercise, and fall prevention; treatment thresholds and multidimensional risk sequencing; oral and intravenous bisphosphonates; denosumab; teriparatide; abaloparatide; romosozumab; raloxifene; estrogen-containing options; calcitonin; glucocorticoid-induced osteoporosis; and longitudinal monitoring. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 112-question assessment bank across 28 concepts and four reasoning levels. Focused verification confirmed 112 unique question IDs, valid remediation links, and at least eight questions mapped to every lesson. The Next.js production build passed September 2, 2026 with 547 static pages generated. The complete eight-page RxPrep 2023 osteoporosis chapter was reviewed visually. The dedicated Goodnotes lecture remains pending and will receive a documented reconciliation pass when access is available.
 
 Current guidance reconciliations:
 
