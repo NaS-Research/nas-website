@@ -969,6 +969,16 @@ This inventory records the source material available in the founder's Goodnotes 
 - Automated verification: 124 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
 - Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
 
+### Drug-Induced Liver Injury
+
+- Course scope: liver-test interpretation, DILI thresholds, normalized R-ratio calculation, biochemical patterns, exposure latency and dechallenge, competing causes and causality tools, Hy's law, acute liver failure, intrinsic and idiosyncratic injury, acute and repeated acetaminophen exposure, acetylcysteine, supplement traceability, characteristic drug signatures, management, rechallenge governance, special populations, complete case workup, and transition ownership
+- Current references reviewed: 2023 AASLD DILI practice guidance, NIH LiverTox, FDA DILI clinical-evaluation guidance, current acetylcysteine labeling, current toxicology principles, and RxPrep 2023 liver-test, supplement, and DILI scope for historical comparison
+- Learning structure: twelve content-driven lessons, twelve native testing-pattern, threshold, timeline-causality, severity, acetaminophen, supplement, drug-signature, management, rechallenge, special-population, case-workup, and closed-loop diagrams, and twelve embedded knowledge checks
+- Assessment: 112 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: injury markers were separated from liver function and severity; the R ratio used values normalized to each laboratory's ULN; current DILI thresholds triggered evaluation rather than one universal drug-stopping rule; complete exposure chronology included finished courses and nonprescription products; RUCAM supported but did not replace clinical causality reasoning; Hy's law remained a serious safety signal rather than proof of a culprit; falling aminotransferases did not reassure when organ failure worsened; the acute nomogram was not applied to repeated or unknown-time acetaminophen exposure; acetylcysteine duration followed recovery criteria; supplement product identity remained traceable; corticosteroids retained narrow phenotype-specific roles; and intentional rechallenge remained exceptional and governed
+- Automated verification: 112 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
+
 ## Goodnotes availability
 
 ### Books

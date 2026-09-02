@@ -23,8 +23,26 @@ const concepts = [
   ["management", "Withdrawal of the suspected agent and supportive care are the foundation of most idiosyncratic DILI management.", "Balance liver risk against the risk of stopping essential therapy, choose alternatives, and assign ownership for repeat tests and symptom escalation.", "There is no universal antidote, and unplanned discontinuation of essential therapy can also cause harm."],
   ["selected-therapies", "Acetylcysteine is standard for acetaminophen toxicity and may be considered in selected early non-acetaminophen acute liver failure, while corticosteroids have limited phenotype-specific roles.", "Use antidotes and immunosuppression only for the mechanism, severity, and evidence that support them.", "Routine corticosteroids for all DILI can worsen infection and obscure the true course."],
   ["rechallenge", "Intentional rechallenge is generally avoided after convincing DILI because recurrence may be faster and more severe.", "Consider re-exposure only when benefit is compelling, alternatives are inadequate, the phenotype permits it, and specialist monitoring is explicit.", "The older suggestion that rechallenge can simply be tried when clinically necessary understates recurrence risk."],
+  ["rechallenge-governance", "An exceptional intentional rechallenge requires a documented benefit that outweighs recurrence risk, inadequate alternatives, informed discussion, baseline status, monitoring intervals, and stopping criteria.", "Name the responsible specialist, testing schedule, emergency symptoms, replacement plan, and permanent-record update before any re-exposure occurs.", "An undocumented test dose or casual restart can reproduce liver injury more rapidly and severely without a rescue plan."],
+  ["workup-documentation", "A defensible DILI assessment states the biochemical pattern, severity, complete exposure timeline, competing causes, causality confidence, and the evidence still pending.", "Document likely, possible, and unlikely agents plus the next result or trajectory that would change the diagnosis or management.", "Naming one culprit without recording uncertainty and competing evidence can anchor future clinicians to an unsupported conclusion."],
   ["closed-loop-care", "Safe DILI care requires a documented culprit list, avoidance plan, follow-up trajectory, patient counseling, adverse-event reporting when appropriate, and communication across transitions.", "Tell the patient which products to stop, which symptoms require urgent care, when tests occur, who reviews them, and what alternatives replace essential therapy.", "A discharge note that says only 'avoid hepatotoxins' does not prevent re-exposure or missed deterioration."],
+  ["transition-ownership", "Liver injury can worsen after drug withdrawal, and care transitions can lose laboratory trends, product identity, essential-therapy replacement, or adverse-reaction documentation.", "At discharge or transfer, reconcile every suspected product, exact phenotype, severity, replacement, next laboratory date, escalation threshold, and named result owner.", "A follow-up order without confirmed ownership can miss rising bilirubin, coagulopathy, chronic injury, or accidental re-exposure."],
 ];
+
+const reviewLessonByConcept = {
+  "liver-tests": "tests-patterns", "r-ratio": "tests-patterns", "injury-pattern": "tests-patterns",
+  "case-definition": "diagnostic-thresholds", "intrinsic-idiosyncratic": "diagnostic-thresholds",
+  latency: "timeline-causality", dechallenge: "timeline-causality",
+  "hy-law": "severity-hys-law", severity: "severity-hys-law",
+  "acute-acetaminophen": "acetaminophen", "repeated-acetaminophen": "acetaminophen", acetylcysteine: "acetaminophen",
+  "hds-history": "supplements", "hds-signatures": "supplements",
+  "amoxicillin-clavulanate": "drug-signatures", isoniazid: "drug-signatures", "autoimmune-like": "drug-signatures",
+  management: "management", "selected-therapies": "management",
+  rechallenge: "rechallenge", "rechallenge-governance": "rechallenge",
+  "chronic-signatures": "special-populations", "immune-mediated": "special-populations",
+  "competing-causes": "case-workup", "causality-tools": "case-workup", "workup-documentation": "case-workup",
+  "closed-loop-care": "closed-loop", "transition-ownership": "closed-loop",
+};
 
 const dimensions = [["principle", "Which statement is most accurate?", 0], ["action", "Which action best applies the evidence?", 1], ["integration", "Which plan demonstrates the strongest clinical reasoning?", 1], ["hazard", "Which error creates the greatest avoidable risk?", 2]];
 const generic = [
@@ -36,5 +54,5 @@ const generic = [
 export const drugInducedLiverInjuryQuestionBank = concepts.flatMap(([slug, principle, action, hazard], conceptIndex) => dimensions.map(([dimension, stem, answerType], dimensionIndex) => {
   const correct = [principle, action, hazard][answerType];
   const choices = dimension === "hazard" ? [hazard, principle, action, generic[(conceptIndex + dimensionIndex) % 3]] : [correct, hazard, generic[(conceptIndex + dimensionIndex) % 3], generic[(conceptIndex + dimensionIndex + 1) % 3]];
-  return { id: `drug-induced-liver-injury-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${stem} Focus: ${slug.replaceAll("-", " ")}.`, choices, answer: 0, rationale: `${principle} ${action}`, reviewHref: `#${slug}`, difficulty: dimensionIndex < 2 ? "foundational" : "advanced" };
+  return { id: `drug-induced-liver-injury-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${stem} Focus: ${slug.replaceAll("-", " ")}.`, choices, answer: 0, rationale: `${principle} ${action}`, reviewHref: `#${reviewLessonByConcept[slug]}`, difficulty: dimensionIndex < 2 ? "foundational" : "advanced" };
 }));
