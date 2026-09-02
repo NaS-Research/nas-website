@@ -2417,6 +2417,7 @@ Current source reconciliations:
 - Tablet fasting, whole-tablet water, and missed-dose requirements are translated into an executable daily schedule. Intravenous dilution, supplied buffered diluent, compatibility limits, pump calculations, and temperature-specific storage receive their own preparation lesson.
 - QT risk integrates baseline ECG, arrhythmia history, electrolytes, organ failure, other QT drugs, concentration, infusion rate, and monitoring. Oral and IV CYP3A effects are kept distinct.
 - Current pregnancy testing, two-day contraception, two-day lactation interruption, route-specific common effects, liver testing, and C. difficile response replace retired letter categories and passive warning lists.
+- Ten focused lessons, ten original responsive diagrams, ten embedded checks, and a 168-question assessment bank cover 40 concepts across four reasoning levels plus eight original dosing, administration, hepatic, QT, interaction, spectrum, and integration cases. Focused verification confirmed 168 unique question IDs, valid remediation links, and at least nine questions mapped to every lesson. The Next.js production build passed September 2, 2026 with 547 static pages generated.
 - Goodnotes was not required to advance this RxPrep-defined milestone. Any later matching lecture material will receive a documented reconciliation pass.
 
 ### Fidaxomicin Pharmacology
