@@ -190,15 +190,14 @@ This inventory records the source material available in the founder's Goodnotes 
 
 ### Adrenergic Antagonists
 
-- Course scope: competitive alpha and beta blockade, reflex physiology, vascular and urinary alpha blockers, beta blocker diversity, formulation-specific cardiovascular selection, safety, withdrawal, and acute toxicity
+- Course source: complete 18-page `Adrenoceptor Blockers` source recovered from the local Goodnotes library, rendered page by page, and visually reviewed September 3, 2026
 - Cross reference completed: RxPrep NAPLEX 2023 cardiovascular, urinary, pulmonary, metabolic, interaction, toxicology, and monitoring scope
-- Current references reviewed: current DailyMed metoprolol succinate extended-release, carvedilol, propranolol, and tamsulosin labeling, IUPHAR and BPS adrenoceptor nomenclature, and national poison center resources
+- Current references reviewed: current DailyMed metoprolol succinate extended-release, carvedilol, propranolol, tamsulosin, phenoxybenzamine, and labetalol labeling, IUPHAR and BPS adrenoceptor nomenclature, and national poison center resources
 - Learning structure: six lessons, six native blockade, selection, safety, and toxicity diagrams, and six embedded knowledge checks
-- Assessment: 100 original questions spanning competitive occupancy, receptor selectivity, reflexes, orthostasis, uroselectivity, CYP interactions, eye procedures, intrinsic sympathomimetic activity, distribution, clearance, formulation, heart failure, conduction, airway reserve, hypoglycemia, withdrawal, and overdose; ten sampled without replacement per attempt with answer order randomized
-- Source reconciliation: beta-1 selectivity was treated as exposure dependent; alpha blocker urinary preference was separated from systemic safety; immediate-release and extended-release metoprolol were not treated as interchangeable; heart failure initiation was limited to stable patients and evidence-specific products; advanced overdose therapy was kept within current poison center or medical toxicology protocols
-- Automated verification: 100 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 8 questions mapped to every lesson, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
-- Goodnotes note: the dedicated adrenergic-antagonist lecture export remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
+- Assessment: 112 original questions spanning competitive occupancy, receptor selectivity, reflexes, epinephrine reversal, orthostasis, phenoxybenzamine sequencing, uroselectivity, CYP interactions, eye procedures, intrinsic sympathomimetic activity, distribution, clearance, labetalol mixed blockade, formulation, heart failure, conduction, airway reserve, hypoglycemia, withdrawal, and overdose; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: epinephrine reversal was added as a receptor-balance demonstration; phenoxybenzamine was added for long-lasting alpha blockade in pheochromocytoma with alpha-before-beta sequencing; labetalol was connected to simultaneous alpha-1 and beta blockade and route-dependent exposure. Yohimbine was not presented as contemporary erectile-dysfunction therapy; beta-1 selectivity remained exposure dependent; urinary preference remained separate from systemic safety; formulation-specific evidence and specialist toxicology protocols were preserved.
+- Automated verification: 112 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 8 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 3, 2026 with 549 static pages generated after complete source reconciliation
 
 ### Adrenergic Medicinal Chemistry
 
@@ -1169,7 +1168,7 @@ Available documents:
 Target modules:
 
 1. Adrenergic Agonists (`built`, 112 question bank; Goodnotes reconciliation complete)
-2. Adrenergic Antagonists (`built`, 100 question bank; Goodnotes reconciliation pending)
+2. Adrenergic Antagonists (`built`, 112 question bank; Goodnotes reconciliation complete)
 3. Adrenergic Medicinal Chemistry (`built`, 100 question bank; Goodnotes reconciliation pending)
 4. Diuretic Pharmacology (`built`, 100 question bank; Goodnotes reconciliation pending)
 5. Diuretic Medicinal Chemistry (`built`, 100 question bank; Goodnotes reconciliation pending)
