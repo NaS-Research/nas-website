@@ -218,6 +218,7 @@ import { sleepDisordersModule } from "@/data/modules/sleepDisorders";
 import { parkinsonDiseaseModule } from "@/data/modules/parkinsonDisease";
 import { alzheimerDiseaseDementiasModule } from "@/data/modules/alzheimerDiseaseDementias";
 import { seizuresEpilepsyModule } from "@/data/modules/seizuresEpilepsy";
+import { nonsteroidalAntiInflammatoryDrugPharmacologyModule } from "@/data/modules/nonsteroidalAntiInflammatoryDrugPharmacology";
 
 const sources = {
   foundation: "Foundation",
@@ -672,6 +673,7 @@ basePharmacyModules.push(
   parkinsonDiseaseModule,
   alzheimerDiseaseDementiasModule,
   seizuresEpilepsyModule,
+  nonsteroidalAntiInflammatoryDrugPharmacologyModule,
 );
 
 const curriculumAreaGroups = [
@@ -742,6 +744,10 @@ const curriculumAreaGroups = [
   {
     area: "Medication Safety & Quality",
     modules: [medicationSafetyQualityModule, drugAllergiesAdverseReactionsModule],
+  },
+  {
+    area: "Pain & Inflammation",
+    modules: [nonsteroidalAntiInflammatoryDrugPharmacologyModule],
   },
   {
     area: "Toxicology & Antidotes",
