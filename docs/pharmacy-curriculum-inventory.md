@@ -909,6 +909,16 @@ This inventory records the source material available in the founder's Goodnotes 
 - Automated verification: 112 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
 - Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
 
+### Mucormycosis
+
+- Course scope: Mucorales biology and angioinvasion; diabetes, ketoacidosis, hematologic, transplant, steroid, iron, trauma, and wound risks; rhino-orbital-cerebral, pulmonary, cutaneous, gastrointestinal, renal, CNS, and disseminated disease; tissue diagnosis and biomarker limits; immediate combined care; liposomal amphotericin B; isavuconazole and posaconazole transitions; inactive agents; surgery; host reversal; response; duration; breakthrough; prevention; and care-transition ownership
+- Current references reviewed: the global ECMM and MSG mucormycosis guideline; current CDC mucormycosis clinical guidance; current FDA labeling for liposomal amphotericin B, isavuconazonium, and posaconazole products; and RxPrep 2023 mold-active antifungal scope for historical comparison
+- Learning structure: twelve content-driven lessons, twelve native organism, host-risk, craniofacial, other-site, diagnostic, immediate-treatment, amphotericin, azole-transition, source-control, response, breakthrough-prevention, and integrated-care diagrams, and twelve embedded knowledge checks
+- Assessment: 108 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: angioinvasion and necrosis were treated as time-critical perfusion and source-control emergencies; diabetes was not used as the only risk model; deep tissue was prioritized over superficial sampling; negative Aspergillus biomarkers did not exclude Mucorales; active antifungal therapy, surgery, and host reversal began in parallel; liposomal amphotericin B formulation identity remained part of the dose; azole product, loading, absorption, interactions, and exposure were explicit; voriconazole, fluconazole, and echinocandins were not presented as reliable Mucorales treatment; source control was reassessed serially; and duration, oral transition, breakthrough investigation, and follow-up were tied to objective disease and immune recovery
+- Automated verification: 108 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
+
 ## Goodnotes availability
 
 ### Books

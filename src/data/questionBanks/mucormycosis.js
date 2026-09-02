@@ -16,6 +16,7 @@ const concepts = [
   ["posaconazole", "Posaconazole delayed-release tablets or IV are guideline-supported alternatives and salvage options, while the oral suspension has unreliable exposure for invasive disease.", "Distinguish formulation, load appropriately, review food and absorption issues, and use TDM where applicable.", "Substituting suspension milligram for milligram for delayed-release tablets can cause treatment failure."],
   ["inactive-agents", "Voriconazole, fluconazole, and echinocandins do not provide reliable treatment for Mucorales.", "When the mold differential includes Aspergillus and Mucorales, select an agent with adequate spectrum while obtaining tissue evidence.", "Continuing voriconazole alone in proven mucormycosis leaves the disease untreated."],
   ["surgery", "Early complete surgical debridement or resection of infected tissue improves control when anatomy permits.", "Repeat debridement as needed and coordinate margins, pathology, culture, reconstruction, and organ preservation.", "A single operation without reassessment may leave advancing necrotic tissue behind."],
+  ["debridement-reassessment", "Angioinvasive necrosis can continue beyond the first operation, so source control is a serial clinical and surgical process rather than a one-time event.", "Reassess wound appearance, margins, imaging, pathology, perfusion, and organ function with the surgical team and return to debridement when viable control has not been achieved.", "Assuming that one procedure completed source control despite new necrosis can leave poorly perfused infected tissue beyond effective drug delivery."],
   ["host-reversal", "Control of hyperglycemia and acidosis, reduction of immunosuppression, recovery from neutropenia, and removal of contaminated devices or necrotic tissue are treatment components.", "Balance immune restoration against rejection, inflammatory injury, and the underlying disease with specialty input.", "Antifungal drug exposure cannot compensate fully for persistent ischemic necrosis and uncontrolled host risk."],
   ["cns", "CNS mucormycosis requires urgent high-intensity liposomal amphotericin, neuroimaging, surgical assessment, and prolonged follow-up.", "Use the upper end of guideline dosing when appropriate and track neurologic, renal, imaging, and procedural response.", "An oral-only low-intensity start can permit irreversible CNS progression."],
   ["combination", "Routine combination antifungal therapy is not supported by strong clinical evidence, though selected salvage or extensive disease plans may use it with expert input.", "Define the purpose, spectrum, toxicity, interaction, and stopping rule before combining agents.", "Adding multiple drugs without surgical or host control does not solve the major drivers of failure."],
@@ -24,7 +25,38 @@ const concepts = [
   ["resistance-species", "Mucorales genera and species can differ in antifungal susceptibility, and clinical response also depends heavily on site and host.", "Obtain species identification and susceptibility support for unusual organisms, breakthrough, or nonresponse while prioritizing proven active therapy.", "An in-vitro value without surgical, exposure, and host context cannot alone predict cure."],
   ["prevention", "There is no universal medication strategy for every at-risk patient, so prevention focuses on risk-specific prophylaxis, environmental controls, metabolic control, and rapid evaluation of warning symptoms.", "Review local mold epidemiology and prior azole exposure when selecting prophylaxis for defined high-risk populations.", "Broad prophylaxis without population evidence can add toxicity and select breakthrough molds."],
   ["closed-loop", "Complete mucormycosis care links host risk, portal of entry, site, tissue evidence, immediate active drug, surgery, exposure, organ toxicity, host reversal, and prolonged response assessment.", "Assign ownership for pathology, culture, imaging, debridement, drug delivery, electrolytes, immune recovery, transition, and relapse surveillance.", "A prescription without surgical and diagnostic ownership leaves angioinvasive progression invisible."],
+  ["transition-ownership", "Mucormycosis transitions are high risk because drug formulation, dose, absorption, interactions, surgery, laboratory replacement, imaging, and immune recovery must remain synchronized.", "At each transfer, name the clinician responsible for the antifungal supply, laboratory schedule, pending results, next imaging, surgical review, and criteria for escalation.", "An oral transition without verified access, exposure, and follow-up ownership can create an invisible treatment gap during rapidly destructive disease."],
 ];
+
+const reviewLessonByConcept = {
+  organism: "organism-angioinvasion",
+  angioinvasion: "organism-angioinvasion",
+  diabetes: "host-risk",
+  hematology: "host-risk",
+  "iron-trauma": "host-risk",
+  "rhino-orbital-cerebral": "rhino-orbital-cerebral",
+  cns: "rhino-orbital-cerebral",
+  pulmonary: "pulmonary-other-sites",
+  "other-sites": "pulmonary-other-sites",
+  diagnosis: "diagnostic-evidence",
+  "biomarker-gap": "diagnostic-evidence",
+  "early-combined-care": "immediate-treatment",
+  "host-reversal": "immediate-treatment",
+  "liposomal-amphotericin": "amphotericin-system",
+  "amphotericin-safety": "amphotericin-system",
+  isavuconazole: "azole-transition",
+  posaconazole: "azole-transition",
+  "inactive-agents": "azole-transition",
+  surgery: "surgery-source-control",
+  "debridement-reassessment": "surgery-source-control",
+  duration: "response-duration",
+  stepdown: "response-duration",
+  "resistance-species": "breakthrough-prevention",
+  prevention: "breakthrough-prevention",
+  combination: "breakthrough-prevention",
+  "closed-loop": "integrated-case",
+  "transition-ownership": "integrated-case",
+};
 
 const dimensions = [
   ["principle", "Which statement is most accurate?", 0],
@@ -49,7 +81,7 @@ export const mucormycosisQuestionBank = concepts.flatMap(([slug, principle, acti
     choices,
     answer: 0,
     rationale: `${principle} ${action}`,
-    reviewHref: `#${slug}`,
+    reviewHref: `#${reviewLessonByConcept[slug]}`,
     difficulty: dimensionIndex < 2 ? "foundational" : "advanced",
   };
 }));
