@@ -11,7 +11,7 @@ export const anticholinergicMedicinalChemistryModule = {
     "Identify the recurring cationic, linker, hydrophobic, and geometric features of muscarinic antagonists.",
     "Compare atropine, scopolamine, ipratropium, and tiotropium through scaffold, charge, stereochemistry, and receptor residence.",
     "Predict central access and local persistence from ionization, permanent charge, route, and formulation.",
-    "Explain how metabolism, active metabolites, renal elimination, and device deposition alter clinical exposure.",
+    "Explain how metabolism, prodrug activation, active metabolites, renal elimination, and device deposition alter clinical exposure.",
     "Distinguish receptor preference, kinetic selectivity, tissue exposure, and proven clinical selectivity.",
   ],
   submodules: [
@@ -25,10 +25,11 @@ export const anticholinergicMedicinalChemistryModule = {
       lesson: [
         { heading: "Retain recognition while blocking activation", body: "Antimuscarinic ligands often preserve a protonated or permanent cation that can interact with the conserved orthosteric site. Larger hydrophobic groups occupy adjacent pockets and stabilize inactive receptor states. Recognition and antagonism therefore emerge from the complete scaffold, not from the nitrogen alone." },
         { heading: "Recognize flexible pharmacophore boundaries", body: "Classic aminoalcohol esters contain a cationic nitrogen separated from an ester and bulky aromatic or cycloalkyl groups. Ether, amide, carbamate, and nonester linkers can reproduce the required spatial arrangement. A pharmacophore describes three-dimensional features, not one mandatory chemical formula." },
+        { heading: "Map the classical spatial pattern", body: "A useful classical model places a tertiary or quaternary nitrogen near two to four atoms from the central linker region, with two bulky carbocyclic or heterocyclic groups and an optional hydroxyl or hydroxymethyl feature. Two-carbon spacing and an ester often support strong activity, but neither is universal. The model is a recognition map for comparing scaffolds, not a rule that excludes active ethers, amides, carbamates, or newer chemotypes." },
         { heading: "Use steric bulk to understand antagonism", body: "Compared with acetylcholine, antagonist scaffolds are larger and more hydrophobic. The added bulk increases contacts within receptor pockets but interferes with the compact geometry associated with agonist activation. Greater lipophilicity can also increase nonspecific distribution and central exposure when charge permits." },
         { heading: "Separate affinity from clinical selectivity", body: "Affinity differences measured at isolated receptor subtypes do not automatically predict organ selectivity. Free concentration, active metabolites, receptor reserve, tissue exposure, dose, and time can erase modest in vitro preferences. Clinical claims require product-specific evidence." },
       ],
-      keyPoints: ["A cationic center supports orthosteric recognition.", "Bulky hydrophobes favor antagonism.", "Multiple linkers can express the same pharmacophore.", "Affinity preference is not guaranteed clinical selectivity."],
+      keyPoints: ["A cationic center supports orthosteric recognition.", "Two bulky regions and short spacing commonly support antagonism.", "Multiple linkers can express the same pharmacophore.", "Affinity preference is not guaranteed clinical selectivity."],
       check: { question: "Which feature most clearly separates many antimuscarinic antagonists from acetylcholine?", choices: ["Two bulky hydrophobic regions arranged around a cationic recognition center", "Complete absence of nitrogen", "A steroid nucleus in every agent", "An obligatory catechol ring"], answer: 0, rationale: "Bulky hydrophobic groups help stabilize antagonist binding while the cationic center supports recognition.", reviewHref: "#antimuscarinic-pharmacophore-design" },
     },
     {
@@ -74,9 +75,10 @@ export const anticholinergicMedicinalChemistryModule = {
         { heading: "Separate short and long receptor residence", body: "Ipratropium dissociates more rapidly from airway muscarinic receptors than tiotropium and is used in shorter-acting roles. Tiotropium's prolonged M1 and M3 occupancy supports once-daily maintenance for labeled products. Neither molecular duration nor formulation converts a maintenance product into immediate rescue." },
         { heading: "Use plasma instability to limit systemic persistence", body: "Aclidinium was designed for long airway action with rapid hydrolysis in plasma to inactive metabolites. This illustrates a soft-drug strategy: retain target-site activity while building a metabolic off-switch after systemic escape." },
         { heading: "Recognize product-specific kinetic design", body: "Glycopyrronium, umeclidinium, revefenacin, and other inhaled antagonists use distinct scaffolds and formulations. Duration emerges from receptor kinetics, lung retention, local concentration, and dosing system. Do not transfer one product's dosing or device instructions to another." },
+        { heading: "Place revefenacin in the nebulized pathway", body: "Revefenacin is a once-daily long-acting muscarinic antagonist delivered as an inhalation solution through a compatible standard jet nebulizer for COPD maintenance. Its label describes similar affinity across M1 through M5 receptors and a predominantly site-specific airway effect through M3 inhibition. Clinical localization comes from inhaled exposure, not absolute receptor-subtype exclusivity." },
         { heading: "Treat the inhaler as part of the molecule's exposure", body: "Particle size, aerosol velocity, inspiratory flow, breath hold, nebulization, priming, and device resistance change pulmonary deposition. A high-affinity ligand cannot work if poor technique prevents adequate target delivery." },
       ],
-      keyPoints: ["Ipratropium has a shorter inhaled role.", "Tiotropium uses prolonged receptor residence.", "Aclidinium illustrates a metabolic soft-drug strategy.", "Device technique controls target exposure."],
+      keyPoints: ["Ipratropium has a shorter inhaled role.", "Tiotropium uses prolonged receptor residence.", "Aclidinium illustrates a metabolic soft-drug strategy.", "Revefenacin adds a once-daily nebulized maintenance option.", "Device technique controls target exposure."],
       check: { question: "What is the medicinal-chemistry purpose of rapid plasma hydrolysis for aclidinium?", choices: ["Limit systemic persistence after useful airway exposure", "Increase permanent central accumulation", "Convert it into a nicotinic agonist", "Prevent all receptor binding"], answer: 0, rationale: "A metabolic off-switch can reduce exposure after the drug leaves the target compartment.", reviewHref: "#inhaled-antimuscarinic-duration" },
     },
     {
@@ -89,10 +91,11 @@ export const anticholinergicMedicinalChemistryModule = {
       lesson: [
         { heading: "Read oxybutynin as a tertiary amino ester", body: "Oxybutynin contains a tertiary diethylamino group, ester, tertiary alcohol, and bulky phenyl and cyclohexyl regions. It is marketed as a racemate. Immediate-release, extended-release, and transdermal products change parent-drug and metabolite exposure, which helps explain formulation-dependent tolerability." },
         { heading: "Include active metabolites in tolterodine exposure", body: "Tolterodine is oxidized to an active hydroxymethyl metabolite in many patients. CYP2D6 phenotype and interacting medicines can shift the balance between parent and metabolite, while alternate pathways become more important in poor metabolizers. The total active moiety matters more than parent concentration alone." },
+        { heading: "Use fesoterodine as a deliberate prodrug", body: "Fesoterodine is rapidly hydrolyzed by nonspecific esterases to 5-hydroxymethyl tolterodine, the same active metabolite formed from tolterodine. The active metabolite produces the antimuscarinic effect, so kidney function, hepatic function, CYP3A4 interactions, dose limits, and extended-release administration must be evaluated through the current product label." },
         { heading: "Use trospium as the quaternary contrast", body: "Trospium is a bulky quaternary ammonium ester with limited passive central access and important renal elimination. Its permanent charge does not remove dry mouth, constipation, or retention risk, and kidney function remains central to labeled use." },
         { heading: "Interpret M3 preference cautiously", body: "Darifenacin has substantial M3 receptor preference in vitro, while solifenacin is often described as bladder or M3 preferring. Clinical tissue selectivity depends on exposure and receptor reserve, and M3 blockade still affects salivary glands, gut, eye, and sweat glands. Preference is not exclusivity." },
       ],
-      keyPoints: ["Oxybutynin formulation changes exposure.", "Tolterodine has an active metabolite.", "Trospium combines quaternary charge with renal elimination.", "M3 preference does not eliminate nonbladder effects."],
+      keyPoints: ["Oxybutynin formulation changes exposure.", "Tolterodine has an active metabolite.", "Fesoterodine is converted directly to that active metabolite.", "Trospium combines quaternary charge with renal elimination.", "M3 preference does not eliminate nonbladder effects."],
       check: { question: "Why can tolterodine exposure vary with CYP2D6 phenotype?", choices: ["Parent drug and an active hydroxymethyl metabolite contribute differently across metabolic phenotypes", "The drug contains no metabolizable groups", "CYP2D6 permanently charges the molecule", "Only an inactive parent reaches the bladder"], answer: 0, rationale: "The active moiety includes parent and metabolite, so metabolic phenotype changes their relative contributions.", reviewHref: "#urinary-antimuscarinic-scaffolds" },
     },
     {
@@ -121,6 +124,9 @@ export const anticholinergicMedicinalChemistryModule = {
     { label: "PubChem. Oxybutynin", href: "https://pubchem.ncbi.nlm.nih.gov/compound/Oxybutynin" },
     { label: "PubChem. Trospium", href: "https://pubchem.ncbi.nlm.nih.gov/compound/Trospium" },
     { label: "IUPHAR/BPS Guide to Pharmacology. Muscarinic acetylcholine receptors", href: "https://www.guidetopharmacology.org/GRAC/FamilyDisplayForward?familyId=2" },
+    { label: "DailyMed. Atropine Sulfate Injection Prescribing Information.", href: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bfc8a727-0cb8-3152-e053-2995a90a28ba" },
+    { label: "DailyMed. Fesoterodine Fumarate Extended-Release Tablets Prescribing Information.", href: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc8f6158-3c2b-4ec0-a951-e04468b83bb1" },
+    { label: "DailyMed. Yupelri Revefenacin Inhalation Solution Prescribing Information.", href: "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=6dfebf04-7c90-436a-9b16-750d3c1ee0a6" },
   ],
   questionBank: anticholinergicMedicinalChemistryQuestionBank,
 };

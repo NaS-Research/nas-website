@@ -158,15 +158,14 @@ This inventory records the source material available in the founder's Goodnotes 
 
 ### Anticholinergic Medicinal Chemistry
 
-- Course scope: atropine-like pharmacophore, tropane stereochemistry, tertiary and quaternary access, inhaled antagonist duration, urinary-antimuscarinic scaffolds, and structure-to-clinic reasoning
+- Course source: complete 11-page `Anticholinergic Medicinal Chemistry 11-3-25` source recovered from the local Goodnotes library, rendered page by page, and visually reviewed September 3, 2026
 - Cross reference completed: RxPrep NAPLEX 2023 anticholinergic, pulmonary, urinary, movement-disorder, gastrointestinal, and safety scope
-- Current references reviewed: NIH PubChem chemical records for atropine, scopolamine, ipratropium, tiotropium, glycopyrrolate, oxybutynin, trospium, solifenacin, and darifenacin, plus IUPHAR and BPS muscarinic receptor nomenclature
+- Current references reviewed: seven NIH PubChem chemical records, IUPHAR and BPS muscarinic receptor nomenclature, and current DailyMed labeling for atropine, fesoterodine, and revefenacin
 - Learning structure: six lessons, six native structure and exposure diagrams, and six embedded knowledge checks
-- Assessment: 100 original questions spanning pharmacophore recognition, stereochemistry, charge, central access, route, receptor residence, soft-drug design, device deposition, active metabolites, renal elimination, metabolic prediction, and multiple meanings of selectivity; ten sampled without replacement per attempt with answer order randomized
-- Source reconciliation: receptor preference was separated from kinetic, tissue, functional, and clinical selectivity; quaternary charge was framed as limiting rather than abolishing central access; local delivery was not treated as zero systemic exposure; theoretical metabolic sites were separated from clinically important clearance pathways
-- Automated verification: 100 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 16 questions mapped to every lesson, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
-- Goodnotes note: the dedicated anticholinergic medicinal-chemistry lecture export remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
+- Assessment: 112 original questions spanning pharmacophore recognition, stereochemistry, charge, central access, route, receptor residence, soft-drug design, device deposition, prodrug activation, active metabolites, renal elimination, metabolic prediction, and multiple meanings of selectivity; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: the recurring two-bulky-group, short-spacer antagonist pattern was added without presenting ester chemistry as mandatory; revefenacin was added as a once-daily nebulized COPD maintenance option; fesoterodine was connected to direct esterase formation of 5-hydroxymethyl tolterodine. Receptor preference was separated from kinetic, tissue, functional, and clinical selectivity; quaternary charge was framed as limiting rather than abolishing central access; local delivery was not treated as zero systemic exposure; theoretical metabolic sites were separated from clinically important clearance pathways. Unsupported or outdated source claims about absolute subtype selectivity, zero central exposure, product availability, and glycopyrrolate cardiovascular effects were not carried forward.
+- Automated verification: 112 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 16 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 3, 2026 with 549 static pages generated after complete source reconciliation
 
 ### Cholinergic Toxicology and Cholinesterase Regeneration
 
@@ -1156,7 +1155,7 @@ Target modules:
 2. Cholinergic Agonists and Cholinesterase Inhibitors (`built`, 100 question bank)
 3. Antimuscarinic Pharmacology (`built`, 100 question bank; Goodnotes reconciliation pending)
 4. Cholinergic Medicinal Chemistry (`built`, 100 question bank)
-5. Anticholinergic Medicinal Chemistry (`built`, 100 question bank; Goodnotes reconciliation pending)
+5. Anticholinergic Medicinal Chemistry (`built`, 112 question bank; Goodnotes reconciliation complete)
 6. Cholinergic Toxicology and Cholinesterase Regeneration (`built`, 100 question bank; Goodnotes reconciliation pending)
 
 #### Adrenergic, diuretic, and ocular pharmacology
