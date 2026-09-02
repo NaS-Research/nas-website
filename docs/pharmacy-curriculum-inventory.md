@@ -849,9 +849,9 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: ten content-driven lessons, ten native pain, opioid, multimodal, sedation-target, sedative-selection, propofol, dexmedetomidine, delirium-detection, delirium-management, and recovery diagrams, and ten embedded knowledge checks
 - Assessment: 112 original questions, ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: self report and validated behavioral tools replace vital-sign-only pain inference; pain treatment precedes unnecessary hypnotic escalation; light sedation remains the usual target when safe; the 2025 focused update conditionally favors dexmedetomidine over propofol when light sedation or delirium reduction is a leading priority; propofol and dexmedetomidine labeling boundaries are separated from broader bedside practice; benzodiazepines retain seizure and withdrawal indications rather than routine default status; propofol infusion syndrome and aseptic delivery are taught as time-critical safety systems; delirium screening includes the quiet phenotype; antipsychotics are not presented as proven routine outcome-improving treatment; melatonin remains a conditional sleep option; and ICU recovery is organized through the full ABCDEF bundle and transition planning
-- Automated verification: 112 unique question IDs, 112 unique prompts, four unique choices per question, valid lesson links, ten diagrams, and no em dash or en dash characters in public prose
+- Automated verification: 112 unique question IDs, 112 unique prompts, four unique choices per question, valid lesson links, ten diagrams, at least eight questions mapped to every lesson, and no em dash or en dash characters in public prose
 - Browser verification: 390 pixel mobile rendering, ten diagrams, all ten embedded knowledge checks, ten-question randomized attempts with unique questions, changed question sets, complete scoring, explanations, and ten remediation links
-- Build verification: Next.js production build passed August 26, 2026 with 408 static pages generated
+- Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
 
 ### Perioperative and Critical-Care Pharmacology
 
