@@ -999,6 +999,16 @@ This inventory records the source material available in the founder's Goodnotes 
 - Automated verification: 104 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
 - Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
 
+### Schizophrenia and Psychosis
+
+- Course scope: longitudinal diagnosis, first-episode psychosis, medical and substance differential, symptom domains, dopamine pathways, agent selection, metabolic, movement, prolactin, and QT monitoring, FGA and SGA receptor tradeoffs, dopamine partial agonists, clozapine indications and safety, long-acting injectables, acute agitation, smoking and other exposure changes, formulations, pregnancy, older adults, Parkinson disease psychosis, psychosocial treatment, practical recovery supports, and longitudinal care transitions
+- Current references reviewed: current schizophrenia treatment guidance, current FDA antipsychotic and clozapine safety information, the June 2025 removal of the Clozapine REMS requirement, and RxPrep 2023 antipsychotic scope for historical comparison
+- Learning structure: twelve content-driven lessons, twelve native diagnosis, symptom-pathway, selection-monitoring, movement, receptor, clozapine, LAI, agitation, interaction-formulation, special-population, psychosocial-recovery, and integrated-plan diagrams, and twelve embedded knowledge checks
+- Assessment: 116 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: psychosis was treated as a syndrome requiring longitudinal differential diagnosis; positive, negative, cognitive, mood, catatonic, and functional domains remain distinct; generation labels do not replace agent-specific risk assessment; movement syndromes require identification before treatment; clozapine is offered after two adequate trials and monitoring extends beyond ANC; current prescribing no longer requires obsolete REMS enrollment; each LAI retains product-specific loading, overlap, organ, observation, and missed-dose rules; acute agitation care begins with de-escalation and cause assessment; tobacco combustion rather than nicotine drives CYP1A2 induction; formulations are not treated as milligram-interchangeable; dementia-related psychosis mortality risk, Parkinson motor risk, and reproductive context remain explicit; and recovery includes practical access, function, physical health, crisis planning, and named transition ownership
+- Automated verification: 116 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
+
 ## Goodnotes availability
 
 ### Books

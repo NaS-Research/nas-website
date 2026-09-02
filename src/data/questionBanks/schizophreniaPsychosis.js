@@ -24,7 +24,43 @@ const concepts = [
   ["older-adults", "Antipsychotics increase mortality in older adults with dementia-related psychosis and are not approved for that use, with limited exceptions for other specific indications.", "Investigate delirium, pain, infection, medications, environment, and nonpharmacologic strategies before using an antipsychotic for behavior.", "Using an antipsychotic as routine chemical restraint exposes patients to preventable stroke, falls, aspiration, and death."],
   ["parkinson-psychosis", "Pimavanserin acts primarily at serotonin 5-HT2A receptors and is labeled for hallucinations and delusions associated with Parkinson disease psychosis.", "Choose treatment that minimizes motor worsening and review QT, cognition, orthostasis, and interacting drugs.", "Potent D2 blockade can worsen parkinsonism even when psychosis improves."],
   ["recovery", "Longitudinal schizophrenia care measures symptoms, function, quality of life, physical health, substance use, housing, cognition, adherence, adverse effects, and patient goals.", "Use one shared plan with crisis instructions, relapse signals, medication details, monitoring, and follow-up ownership.", "A refill without functional and safety review is not a complete maintenance visit."],
+  ["acute-monitoring", "Medication used for acute agitation can change consciousness, ventilation, blood pressure, temperature, QT risk, and the ability to reassess the underlying cause.", "Document baseline physiology when feasible, observe response at appropriate intervals, and escalate monitoring when parenteral combinations, intoxication, restraint, or medical instability increase risk.", "Repeated dosing without reassessing sedation, breathing, circulation, temperature, and the original diagnosis can convert behavioral control into preventable medical harm."],
+  ["formulation-exposure", "Antipsychotic tablets, orally disintegrating products, liquids, short-acting injections, and long-acting injections can differ in administration, kinetics, adherence visibility, and recovery after a missed dose.", "Verify the exact product, route, food requirement, organ constraints, interaction profile, and missed-dose instructions whenever the formulation or care setting changes.", "Substituting one formulation or injectable product milligram for milligram without product-specific instructions can produce underexposure or toxicity."],
+  ["practical-recovery", "Housing, transportation, food access, insurance, digital access, stigma, cognition, and medication storage can determine whether an otherwise sound schizophrenia plan is usable.", "Build practical supports around the patient's stated goals and revisit them when symptoms, housing, employment, or caregiving conditions change.", "Describing repeated access failures as lack of motivation leaves the actual treatment barrier intact."],
+  ["care-transition", "Emergency, inpatient, outpatient, pharmacy, primary-care, and community teams may each hold different parts of the schizophrenia treatment history.", "Reconcile diagnosis, prior trials, last doses, injection dates, adverse effects, monitoring results, relapse signals, crisis instructions, and named follow-up ownership at every transition.", "A discharge list without the next injection date, missed-dose plan, monitoring needs, or responsible clinician creates predictable treatment gaps."],
 ];
+
+const reviewLessonByConcept = {
+  diagnosis: "diagnosis-first-episode",
+  "first-episode": "diagnosis-first-episode",
+  "symptom-domains": "symptoms-pathways",
+  "dopamine-pathways": "symptoms-pathways",
+  selection: "selection-monitoring",
+  metabolic: "selection-monitoring",
+  qt: "selection-monitoring",
+  eps: "movement-syndromes",
+  "tardive-dyskinesia": "movement-syndromes",
+  nms: "movement-syndromes",
+  prolactin: "fga-sga",
+  "fga-sga": "fga-sga",
+  "partial-agonists": "fga-sga",
+  "clozapine-indication": "clozapine",
+  "clozapine-anc": "clozapine",
+  "clozapine-other": "clozapine",
+  lai: "long-acting-injectables",
+  adherence: "long-acting-injectables",
+  agitation: "acute-agitation",
+  "acute-monitoring": "acute-agitation",
+  smoking: "interactions-formulations",
+  "formulation-exposure": "interactions-formulations",
+  pregnancy: "special-populations",
+  "older-adults": "special-populations",
+  "parkinson-psychosis": "special-populations",
+  psychosocial: "psychosocial-recovery",
+  "practical-recovery": "psychosocial-recovery",
+  recovery: "integrated-plan",
+  "care-transition": "integrated-plan",
+};
 const dimensions=[["principle","Which statement is most accurate?",0],["action","Which action best applies the evidence?",1],["integration","Which plan demonstrates the strongest clinical reasoning?",1],["hazard","Which error creates the greatest avoidable risk?",2]];
 const distractors=["Use one symptom as the entire diagnosis and treatment plan.","Change treatment without reviewing cause, prior response, adverse effects, or patient preference.","Delay reassessment until severe harm or relapse becomes unavoidable."];
-export const schizophreniaPsychosisQuestionBank=concepts.flatMap(([slug,principle,action,hazard],i)=>dimensions.map(([dimension,stem,type],j)=>{const correct=[principle,action,hazard][type];const choices=dimension==="hazard"?[hazard,principle,action,distractors[(i+j)%3]]:[correct,hazard,distractors[(i+j)%3],distractors[(i+j+1)%3]];return{id:`schizophrenia-psychosis-${String(i*4+j+1).padStart(3,"0")}`,question:`${stem} Focus: ${slug.replaceAll("-"," ")}.`,choices,answer:0,rationale:`${principle} ${action}`,reviewHref:`#${slug}`,difficulty:j<2?"foundational":"advanced"};}));
+export const schizophreniaPsychosisQuestionBank=concepts.flatMap(([slug,principle,action,hazard],i)=>dimensions.map(([dimension,stem,type],j)=>{const correct=[principle,action,hazard][type];const choices=dimension==="hazard"?[hazard,principle,action,distractors[(i+j)%3]]:[correct,hazard,distractors[(i+j)%3],distractors[(i+j+1)%3]];return{id:`schizophrenia-psychosis-${String(i*4+j+1).padStart(3,"0")}`,question:`${stem} Focus: ${slug.replaceAll("-"," ")}.`,choices,answer:0,rationale:`${principle} ${action}`,reviewHref:`#${reviewLessonByConcept[slug]}`,difficulty:j<2?"foundational":"advanced"};}));
