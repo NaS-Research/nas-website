@@ -1059,6 +1059,16 @@ This inventory records the source material available in the founder's Goodnotes 
 - Automated verification: 116 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
 - Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
 
+### Alzheimer Disease and Related Dementias
+
+- Course scope: cognitive syndrome definition, mild cognitive impairment, dementia, delirium, differential diagnosis, comprehensive evaluation, cognitive screening, Alzheimer biology, amyloid and tau biomarkers, cholinergic medicinal chemistry, donepezil, rivastigmine, galantamine, memantine, formulation and stage selection, medication-exposure auditing, anticholinergic burden, lecanemab and donanemab eligibility, ARIA monitoring, APOE counseling, antithrombotic risk, behavioral care, antipsychotic safety, function, decision capacity, care-partner capacity, future planning, and longitudinal care
+- Current references reviewed: current Alzheimer and dementia diagnostic frameworks, current FDA cholinesterase-inhibitor, memantine, lecanemab, and donanemab labeling, current anti-amyloid safety principles, the November 2024 aducanumab withdrawal, and RxPrep 2023 dementia pharmacotherapy scope for historical comparison
+- Learning structure: twelve content-driven lessons, twelve native cognitive-syndrome, diagnostic-workup, biology-biomarker, cholinergic, symptomatic-therapy, medication-safety, anti-amyloid-selection, ARIA, behavioral-care, function-safety, care-partner, and longitudinal-care diagrams, and twelve embedded knowledge checks
+- Assessment: 116 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: delirium was separated from chronic neurocognitive decline; screening does not establish etiology; biological Alzheimer disease was separated from clinical stage and function; biomarker use requires a defined interpretive setting and decision; cholinesterase inhibitors retain product, formulation, organ, and interruption differences; anticholinergic prescribing cascades receive explicit review; memantine remains tied to its stage and renal constraints; lecanemab and donanemab remain limited to early symptomatic disease with confirmed amyloid and product-specific MRI surveillance; ARIA symptoms are not treated reflexively as ordinary ischemic stroke; APOE testing includes counseling; aducanumab is taught as historical; behavioral medication requires a defined severe target and repeated review; capacity remains task specific; and caregiver labor is assessed as a finite clinical resource
+- Automated verification: 116 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
+
 ## Goodnotes availability
 
 ### Books
