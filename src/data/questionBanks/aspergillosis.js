@@ -2,6 +2,7 @@ const concepts = [
   ["environment", "Aspergillus spores are inhaled from soil, dust, decomposing plant material, and construction environments, but exposure alone rarely produces invasive disease.", "Combine exposure with host immunity, lung structure, symptoms, and objective evidence before diagnosing disease.", "Treating environmental exposure or an isolated culture as invasive disease creates avoidable toxicity."],
   ["morphology", "Aspergillus classically produces septate hyphae with acute-angle branching in tissue, but morphology alone may not identify the species.", "Preserve tissue for histopathology and culture so invasion and organism identity can both be assessed.", "Calling every septate mold Aspergillus without culture or molecular context can miss another mold."],
   ["host-risk", "Prolonged neutropenia, hematologic malignancy, stem-cell or solid-organ transplant, high-dose corticosteroids, and other major immunosuppression increase invasive aspergillosis risk.", "Define the depth and expected duration of immune impairment when setting diagnostic urgency and prophylaxis strategy.", "A normal initial chest radiograph does not safely exclude invasive disease in a high-risk host."],
+  ["immune-trajectory", "Aspergillosis risk changes over time as neutrophils, corticosteroid exposure, graft function, rejection therapy, and other immune pressures change.", "Reassess the expected immune trajectory at diagnosis and during follow-up so diagnostic intensity, treatment duration, and prevention remain proportional to current risk.", "Using a historical transplant or malignancy label without examining present immune function can overestimate or underestimate invasive-disease risk."],
   ["syndrome-map", "Aspergillus can produce allergic disease, colonization, aspergilloma, chronic pulmonary disease, invasive pulmonary disease, or extrapulmonary invasion.", "Name the syndrome before selecting therapy because host, evidence, drug, and duration differ substantially.", "Using one treatment pathway for every positive respiratory culture confuses colonization, allergy, chronic disease, and invasion."],
   ["ct", "Chest CT is preferred when invasive pulmonary aspergillosis is suspected, even when chest radiography is unrevealing.", "Use CT pattern and lesion location to guide bronchoscopy, biopsy, and urgent treatment decisions.", "Waiting for a dense chest-radiograph infiltrate can delay diagnosis in neutropenia."],
   ["bal", "Bronchoscopy with BAL should be attempted when safe and sent for culture, cytology, and nonculture assays.", "Match the procedure to lesion location, bleeding risk, oxygenation, and the need for tissue evidence.", "A biomarker without compartment or host context cannot replace a complete diagnostic evaluation."],
@@ -23,8 +24,41 @@ const concepts = [
   ["chronic-pulmonary", "Chronic cavitary pulmonary aspergillosis combines at least three months of symptoms or progression, characteristic cavities, Aspergillus IgG or microbiologic evidence, and underlying lung disease.", "Observe stable minimally symptomatic disease selectively, but treat symptomatic or progressive disease with a mold-active oral azole for at least six months.", "A single positive sputum culture without chronic clinical and imaging criteria does not establish chronic cavitary disease."],
   ["allergic", "Allergic bronchopulmonary aspergillosis is an immune-mediated airway syndrome associated with asthma or cystic fibrosis, not tissue invasion.", "Integrate asthma or cystic fibrosis, total and Aspergillus-specific IgE, eosinophilia, imaging, and pulmonary function.", "Managing allergic disease as neutropenic invasive pneumonia exposes the patient to the wrong treatment model."],
   ["prevention", "The 2026 IDSA update favors targeted rather than universal prophylaxis in high-risk liver transplant recipients and finds important knowledge gaps in lung transplant strategies.", "Select prophylaxis from transplant type, risk factors, local epidemiology, toxicity, interactions, administration, and stewardship.", "Claiming that every solid-organ transplant recipient needs universal mold prophylaxis contradicts current evidence."],
+  ["prophylaxis-implementation", "An aspergillosis prevention strategy is complete only when the team defines the eligible population, agent, route, duration, interaction plan, toxicity monitoring, and criteria for reassessment.", "Document the transplant-specific risk factors and assign ownership for medication reconciliation, laboratory monitoring, breakthrough evaluation, and prophylaxis discontinuation.", "Starting prophylaxis without a stop rule or interaction surveillance can prolong avoidable toxicity and obscure breakthrough infection."],
   ["closed-loop", "Complete aspergillosis care links syndrome, immune host, imaging, site evidence, exact antifungal, measured exposure, resistance, source control, immune recovery, and duration.", "Assign ownership for cultures, biomarkers, imaging, levels, interactions, transitions, prophylaxis, and relapse surveillance.", "A prescription without result ownership and longitudinal reassessment leaves treatment failure invisible."],
+  ["transition-ownership", "Transitions between inpatient, outpatient, transplant, infectious-disease, pharmacy, and procedural teams create predictable gaps in antifungal exposure and result follow-up.", "At every transition, reconcile the exact product, dose, route, administration conditions, interactions, monitoring dates, pending results, and named clinician responsible for action.", "A discharge plan that lists an antifungal but leaves levels, imaging, cultures, and interaction changes unassigned can convert a treatable problem into silent failure."],
 ];
+
+const reviewLessonByConcept = {
+  environment: "biology-syndromes",
+  morphology: "biology-syndromes",
+  "host-risk": "host-prevention",
+  "immune-trajectory": "host-prevention",
+  ct: "diagnostic-evidence",
+  bal: "diagnostic-evidence",
+  galactomannan: "diagnostic-evidence",
+  "syndrome-map": "syndrome-separation",
+  "beta-glucan": "syndrome-separation",
+  "early-treatment": "primary-treatment",
+  voriconazole: "primary-treatment",
+  duration: "primary-treatment",
+  "voriconazole-tdm": "voriconazole-system",
+  "voriconazole-safety": "voriconazole-system",
+  "voriconazole-renal": "voriconazole-system",
+  isavuconazole: "alternatives-salvage",
+  "liposomal-amphotericin": "alternatives-salvage",
+  echinocandin: "alternatives-salvage",
+  "cns-other-sites": "site-source-control",
+  aspergilloma: "site-source-control",
+  "chronic-pulmonary": "chronic-allergic",
+  allergic: "chronic-allergic",
+  resistance: "response-resistance",
+  breakthrough: "response-resistance",
+  prevention: "transplant-prevention",
+  "prophylaxis-implementation": "transplant-prevention",
+  "closed-loop": "integrated-case",
+  "transition-ownership": "integrated-case",
+};
 
 const dimensions = [
   ["principle", "Which statement is most accurate?", 0],
@@ -50,7 +84,7 @@ export const aspergillosisQuestionBank = concepts.flatMap(([slug, principle, act
     choices,
     answer: 0,
     rationale: `${principle} ${action}`,
-    reviewHref: `#${slug}`,
+    reviewHref: `#${reviewLessonByConcept[slug]}`,
     difficulty: dimensionIndex < 2 ? "foundational" : "advanced",
   };
 }));

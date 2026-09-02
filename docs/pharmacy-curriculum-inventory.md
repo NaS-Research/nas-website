@@ -899,6 +899,16 @@ This inventory records the source material available in the founder's Goodnotes 
 - Automated verification: 104 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all ten lessons, at least eight questions mapped to every lesson, ten diagrams, and no em dash or en dash characters in public prose
 - Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
 
+### Aspergillosis
+
+- Course scope: inhaled conidia and invasive hyphae; immune and structural host risk; pulmonary, chronic, allergic, cavitary, and disseminated syndromes; CT, bronchoscopy, tissue, culture, galactomannan, and beta-D-glucan; early mold-active therapy; voriconazole exposure and safety; isavuconazole, liposomal amphotericin B, and selected salvage strategies; site-specific source control; resistance and breakthrough evaluation; transplant prevention; duration; response; and transition ownership
+- Current references reviewed: current IDSA aspergillosis treatment guidance and 2026 solid-organ transplant prevention update; current FDA labeling for voriconazole and isavuconazonium; and RxPrep 2023 mold-active antifungal scope for historical comparison
+- Learning structure: twelve content-driven lessons, twelve native biology, host-risk, diagnostic, syndrome, primary-treatment, voriconazole, alternative-treatment, site, chronic-allergic, response-resistance, transplant-prevention, and integrated-care diagrams, and twelve embedded knowledge checks
+- Assessment: 112 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: exposure was separated from disease; respiratory detection was separated among colonization, allergy, chronic disease, fungal ball, and invasion; diagnostic evidence was interpreted by host, specimen, prior mold-active exposure, and pretest probability; early therapy did not wait for final culture in a deteriorating high-risk patient; fluconazole was not treated as mold active; voriconazole route, nonlinear exposure, interactions, toxicity, therapeutic monitoring, and intravenous vehicle were explicit; alternative therapy followed the mechanism of failure; amphotericin formulations were not treated as milligram-interchangeable; extrapulmonary sites triggered penetration and source-control planning; duration followed immune and objective response; and current transplant prevention evidence was not generalized beyond the population it addresses
+- Automated verification: 112 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
+
 ## Goodnotes availability
 
 ### Books
