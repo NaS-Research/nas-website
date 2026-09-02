@@ -588,8 +588,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: six lessons, six native definition, CGA, risk, foundational-care, disease-modification, and medication-stewardship diagrams, and six embedded knowledge checks
 - Assessment: 100 original questions, ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: one abnormal result did not establish chronicity; G1 and G2 required a separate kidney-damage marker; cause remained part of the diagnosis; albuminuria added risk at every GFR; combined creatinine and cystatin C estimation was reserved for decisions needing better precision; status, trajectory, and absolute risk remained distinct; KFRE was constrained to validated populations; a standardized blood-pressure target was not applied to casual readings; one maximally tolerated RAAS blocker replaced dual blockade; expected early eGFR changes were separated from progressive injury; SGLT2 benefit extended beyond glucose lowering; finerenone required potassium and CYP3A4 screening; drug dosing used the metric specified by current labeling; every temporary hold received restart criteria and ownership
-- Automated verification: 100 unique question IDs, four choices per question, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 25, 2026 with 377 static pages generated
+- Automated verification: 100 unique question IDs, four choices per question, valid lesson links, six diagrams, at least 16 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
 - Goodnotes note: the CKD lecture, chapter, and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
 ### Complications of Chronic Kidney Disease
