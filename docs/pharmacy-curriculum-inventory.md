@@ -960,6 +960,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Automated verification: 112 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
 - Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
 
+### Metabolic Dysfunction-Associated Steatotic Liver Disease
+
+- Goodnotes source reviewed: the metabolic liver disease and MASH trial material contained in the complete 62-page cirrhosis source, including resmetirom and efruxifermin slides, reviewed September 3, 2026
+- Course scope: current SLD, MASLD, MASH, and MetALD nomenclature; insulin resistance, lipotoxicity, inflammation, and fibrosis; metabolic phenotype and competing causes; FIB-4 calculation and age limits; VCTE, ELF, MRE, and selective biopsy; supported nutrition, activity, and weight treatment; cardiovascular and metabolic risk reduction; resmetirom and semaglutide eligibility, pharmacology, dosing, interactions, safety, monitoring, and selection; cirrhosis boundaries; investigational therapy; and longitudinal ownership
+- Current references reviewed: current AASLD MASLD practice guidance and its October 2024 resmetirom and November 2025 semaglutide updates; current FDA prescribing information for Rezdiffra and Wegovy; and current AASLD noninvasive fibrosis-assessment education
+- Learning structure: twelve content-driven lessons, twelve native responsive disease-spectrum, mechanism, phenotype, FIB-4, sequential-assessment, lifestyle, cardiometabolic, resmetirom, semaglutide, selection, cirrhosis-boundary, and integrated-care diagrams, and twelve embedded knowledge checks
+- Assessment: 120 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: the restored source's resmetirom content was updated to current dosing, interaction, statin, hepatotoxicity, and gallbladder safeguards. Its description of resmetirom as the only approved MASH therapy was not retained because Wegovy received an accelerated-approval MASH indication in August 2025. Both therapies remain limited to the labeled adult noncirrhotic F2 to F3 population. Historical NAFLD and NASH terminology was translated into the current SLD, MASLD, and MASH framework. Efruxifermin remained explicitly investigational. FIB-4 was treated as an age-sensitive triage tool followed by sequential noninvasive assessment, not as a diagnosis or a substitute for cirrhosis evaluation.
+- Automated verification: 120 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no Goodnotes, lecture, DAST, PPK, em dash, or en dash language in public source files
+- Complete assessment verification: 220 modules, 27,708 questions, zero hard errors, and zero thin lessons
+- Build verification: Next.js production build passed September 3, 2026 with 548 static pages generated
+
 ### Alcohol-Associated Liver Disease
 
 - Course scope: alcohol metabolism and liver injury, ALD spectrum and progression risk, neutral AUD screening, exposure biomarkers, fibrosis assessment, abstinence and recovery engagement, withdrawal severity and pharmacotherapy, thiamine and nutrition, organ-specific AUD medication selection, alcohol-associated hepatitis diagnosis and severity, corticosteroid and Lille decisions, NAC and organ support, established cirrhosis, transplant selection and post-transplant recovery, and transition ownership

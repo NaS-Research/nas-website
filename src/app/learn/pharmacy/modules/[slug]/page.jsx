@@ -209,6 +209,7 @@ import InvasiveCandidiasisVisual, { invasiveCandidiasisVisualTypes } from "@/com
 import ChronicHepatitisBVisual, { chronicHepatitisBVisualTypes } from "@/components/learn/ChronicHepatitisBVisual";
 import HepatitisCVisual, { hepatitisCVisualTypes } from "@/components/learn/HepatitisCVisual";
 import CirrhosisDecompensatedVisual, { cirrhosisDecompensatedVisualTypes } from "@/components/learn/CirrhosisDecompensatedVisual";
+import MasldVisual, { masldVisualTypes } from "@/components/learn/MasldVisual";
 import AlcoholAssociatedLiverDiseaseVisual, { alcoholAssociatedLiverDiseaseVisualTypes } from "@/components/learn/AlcoholAssociatedLiverDiseaseVisual";
 import DrugInducedLiverInjuryVisual, { drugInducedLiverInjuryVisualTypes } from "@/components/learn/DrugInducedLiverInjuryVisual";
 import AcuteLiverFailureVisual, { acuteLiverFailureVisualTypes } from "@/components/learn/AcuteLiverFailureVisual";
@@ -613,6 +614,7 @@ export default async function PharmacyModulePage({ params }) {
               {module.slug === "chronic-hepatitis-b" && chronicHepatitisBVisualTypes.includes(submodule.visual) && <ChronicHepatitisBVisual type={submodule.visual} />}
               {module.slug === "hepatitis-c" && hepatitisCVisualTypes.includes(submodule.visual) && <HepatitisCVisual type={submodule.visual} />}
               {module.slug === "cirrhosis-decompensated-liver-disease" && cirrhosisDecompensatedVisualTypes.includes(submodule.visual) && <CirrhosisDecompensatedVisual type={submodule.visual} />}
+              {module.slug === "metabolic-dysfunction-associated-steatotic-liver-disease" && masldVisualTypes.includes(submodule.visual) && <MasldVisual type={submodule.visual} />}
               {module.slug === "alcohol-associated-liver-disease" && alcoholAssociatedLiverDiseaseVisualTypes.includes(submodule.visual) && <AlcoholAssociatedLiverDiseaseVisual type={submodule.visual} />}
               {module.slug === "drug-induced-liver-injury" && drugInducedLiverInjuryVisualTypes.includes(submodule.visual) && <DrugInducedLiverInjuryVisual type={submodule.visual} />}
               {module.slug === "acute-liver-failure" && acuteLiverFailureVisualTypes.includes(submodule.visual) && <AcuteLiverFailureVisual type={submodule.visual} />}

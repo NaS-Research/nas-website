@@ -205,6 +205,7 @@ import { invasiveCandidiasisModule } from "@/data/modules/invasiveCandidiasis";
 import { chronicHepatitisBModule } from "@/data/modules/chronicHepatitisB";
 import { hepatitisCModule } from "@/data/modules/hepatitisC";
 import { cirrhosisDecompensatedLiverDiseaseModule } from "@/data/modules/cirrhosisDecompensatedLiverDisease";
+import { metabolicDysfunctionAssociatedSteatoticLiverDiseaseModule } from "@/data/modules/metabolicDysfunctionAssociatedSteatoticLiverDisease";
 import { alcoholAssociatedLiverDiseaseModule } from "@/data/modules/alcoholAssociatedLiverDisease";
 import { drugInducedLiverInjuryModule } from "@/data/modules/drugInducedLiverInjury";
 import { acuteLiverFailureModule } from "@/data/modules/acuteLiverFailure";
@@ -658,6 +659,7 @@ basePharmacyModules.push(
   chronicHepatitisBModule,
   hepatitisCModule,
   cirrhosisDecompensatedLiverDiseaseModule,
+  metabolicDysfunctionAssociatedSteatoticLiverDiseaseModule,
   alcoholAssociatedLiverDiseaseModule,
   drugInducedLiverInjuryModule,
   acuteLiverFailureModule,
@@ -683,7 +685,7 @@ const curriculumAreaGroups = [
   },
   {
     area: "Renal & Liver Disease",
-    modules: [acuteKidneyInjuryModule, chronicKidneyDiseaseModule, ckdComplicationsModule, renalReplacementTherapyModule, cirrhosisDecompensatedLiverDiseaseModule, alcoholAssociatedLiverDiseaseModule, drugInducedLiverInjuryModule, acuteLiverFailureModule],
+    modules: [acuteKidneyInjuryModule, chronicKidneyDiseaseModule, ckdComplicationsModule, renalReplacementTherapyModule, metabolicDysfunctionAssociatedSteatoticLiverDiseaseModule, cirrhosisDecompensatedLiverDiseaseModule, alcoholAssociatedLiverDiseaseModule, drugInducedLiverInjuryModule, acuteLiverFailureModule],
   },
   {
     area: "Immunizations & Travel",
