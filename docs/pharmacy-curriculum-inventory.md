@@ -577,8 +577,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: six lessons, six native detection, cause, hemodynamic, medication, complication, and recovery diagrams, and six embedded knowledge checks
 - Assessment: 100 original questions, ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: AKI remained a trajectory rather than a single creatinine; stage used the worse creatinine or urine-output criterion; steady-state eGFR was rejected during rapidly changing function; pseudoAKI was separated from structural injury; prerenal labeling did not replace hemodynamic reasoning; fluid responsiveness was separated from need for fluid; congestion was treated as an active kidney insult; drug effects were classified by mechanism; loading and maintenance doses were separated; contrast decisions used net benefit; medication holds received restart plans; diuretics treated overload rather than kidney injury; KRT began for clinical homeostatic failure rather than a creatinine threshold; the 2026 update remained draft pending final publication
-- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 25, 2026 with 376 static pages generated
+- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, at least eight questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed August 31, 2026 with 547 static pages generated
 - Goodnotes note: the AKI lecture, chapter, and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
 ### Chronic Kidney Disease
