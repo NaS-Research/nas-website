@@ -23,8 +23,37 @@ const concepts = [
   ["pregnancy", "When systemic treatment is required in pregnancy, amphotericin is generally preferred, especially early pregnancy, while azole use requires current risk-benefit and specialist review.", "Use maternal-fetal and infectious-disease expertise rather than obsolete pregnancy letters.", "Withholding treatment from life-threatening maternal disease can harm both patient and fetus."],
   ["response", "Clinical recovery, oxygenation, imaging, site healing, cultures, and measured azole exposure together demonstrate response.", "Define follow-up intervals and relapse signals before discharge.", "A single negative antigen cannot prove cure because cross-reactivity and assay limitations remain."],
   ["differential", "Blastomycosis can mimic bacterial pneumonia, tuberculosis, lung cancer, skin cancer, pyoderma, and other endemic fungi.", "Use travel history, morphology, culture, pathology, and response to avoid diagnostic anchoring.", "Anchoring on malignancy or bacteria without tissue review can delay curative antifungal therapy."],
+  ["transition-ownership", "A safe amphotericin-to-azole transition requires clinical improvement, an exact oral product, reliable administration, interaction review, exposure monitoring, and uninterrupted access.", "Name the clinician responsible for pending cultures, drug concentrations, organ monitoring, imaging, treatment duration, and recurrent symptoms before discharge.", "Stopping induction without verified oral delivery or follow-up creates an avoidable treatment gap and makes early failure difficult to detect."],
   ["closed-loop", "Complete care links exposure, syndrome, site evidence, severity, exact antifungal product, measured azole exposure, immune host, and duration.", "Assign ownership for cultures, pathology, imaging, levels, interactions, transition, and relapse surveillance.", "A prescription without result and follow-up ownership leaves treatment failure invisible."],
 ];
+const reviewLessonByConcept = {
+  environment: "environment-biology",
+  dimorphism: "environment-biology",
+  pulmonary: "syndromes-sites",
+  skin: "syndromes-sites",
+  bone: "syndromes-sites",
+  cns: "syndromes-sites",
+  gu: "syndromes-sites",
+  diagnosis: "diagnosis",
+  culture: "diagnosis",
+  severity: "severe-treatment",
+  "mild-treatment": "mild-treatment",
+  duration: "response-relapse",
+  "severe-induction": "severe-treatment",
+  stepdown: "severe-treatment",
+  "cns-induction": "cns-treatment",
+  "cns-stepdown": "cns-treatment",
+  "itraconazole-form": "mild-treatment",
+  "itraconazole-tdm": "mild-treatment",
+  "itraconazole-safety": "exposure-safety",
+  "amphotericin-safety": "exposure-safety",
+  immunocompromise: "special-hosts",
+  pregnancy: "special-hosts",
+  response: "response-relapse",
+  differential: "diagnosis",
+  "transition-ownership": "integrated-case",
+  "closed-loop": "integrated-case",
+};
 const dimensions=[["principle","Which statement is most accurate?",0],["action","Which action best applies the evidence?",1],["assessment","Which plan demonstrates the strongest clinical reasoning?",1],["hazard","Which error creates the greatest avoidable risk?",2]];
 const generic=["Use one isolated result without considering site, severity, host, or exposure.","Continue the same plan despite objective progression and no diagnostic reassessment.","Assume every endemic fungus, azole product, and amphotericin formulation is interchangeable."];
-export const blastomycosisQuestionBank=concepts.flatMap(([slug,principle,action,hazard],i)=>dimensions.map(([dimension,stem,type],j)=>{const correct=[principle,action,hazard][type];const choices=dimension==="hazard"?[hazard,principle,action,generic[(i+j)%3]]:[correct,hazard,generic[(i+j)%3],generic[(i+j+1)%3]];return{id:`blastomycosis-${String(i*4+j+1).padStart(3,"0")}`,question:`${stem} Focus: ${slug.replaceAll("-"," ")}.`,choices,answer:0,rationale:`${principle} ${action}`,reviewHref:`#${slug}`,difficulty:j<2?"foundational":"advanced"};}));
+export const blastomycosisQuestionBank=concepts.flatMap(([slug,principle,action,hazard],i)=>dimensions.map(([dimension,stem,type],j)=>{const correct=[principle,action,hazard][type];const choices=dimension==="hazard"?[hazard,principle,action,generic[(i+j)%3]]:[correct,hazard,generic[(i+j)%3],generic[(i+j+1)%3]];return{id:`blastomycosis-${String(i*4+j+1).padStart(3,"0")}`,question:`${stem} Focus: ${slug.replaceAll("-"," ")}.`,choices,answer:0,rationale:`${principle} ${action}`,reviewHref:`#${reviewLessonByConcept[slug]}`,difficulty:j<2?"foundational":"advanced"};}));

@@ -889,6 +889,16 @@ This inventory records the source material available in the founder's Goodnotes 
 - Automated verification: 108 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all ten lessons, at least eight questions mapped to every lesson, ten diagrams, and no em dash or en dash characters in public prose
 - Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
 
+### Blastomycosis
+
+- Course scope: moist-soil and water-adjacent exposure; conidia and broad-based budding yeast; pulmonary, cutaneous, osteoarticular, genitourinary, and CNS disease; microscopy, pathology, culture, antigen cross-reactivity, and site-directed sampling; mild and severe treatment; itraconazole formulation and therapeutic monitoring; amphotericin induction and toxicity; CNS step-down; immunocompromise; pregnancy; site-specific duration; response; relapse; and transition ownership
+- Current references reviewed: current CDC blastomycosis clinical overview and patient guidance; the published IDSA disease-specific guideline; and RxPrep 2023 dimorphic-fungal, amphotericin, and itraconazole scope for historical comparison
+- Learning structure: ten content-driven lessons, ten native environment, syndrome, diagnosis, mild-treatment, severe-treatment, CNS, exposure-safety, special-host, response, and integrated-care diagrams, and ten embedded knowledge checks
+- Assessment: 104 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: tissue broad-based budding yeast was separated from environmental conidia; antigen cross-reactivity with Histoplasma prevented species-level certainty; severity and CNS involvement were assigned distinct amphotericin induction pathways; itraconazole loading, exact formulation, administration, interactions, and measured exposure were explicit; amphotericin formulations were not treated as milligram-interchangeable; immunocompromise, pregnancy, and structural disease altered treatment planning; and response, duration, oral transition, and relapse surveillance received named ownership rather than ending with the prescription
+- Automated verification: 104 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all ten lessons, at least eight questions mapped to every lesson, ten diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
+
 ## Goodnotes availability
 
 ### Books
