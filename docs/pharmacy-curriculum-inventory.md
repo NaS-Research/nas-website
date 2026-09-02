@@ -1039,6 +1039,16 @@ This inventory records the source material available in the founder's Goodnotes 
 - Automated verification: 108 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
 - Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
 
+### Sleep Disorders
+
+- Course scope: twenty four hour sleep assessment, circadian timing, sleep opportunity, chronic insomnia, differential diagnosis, CBT-I, stimulus control, sleep restriction and compression, hypnotic selection, Z drugs, complex sleep behaviors, orexin antagonists, ramelteon, low-dose doxepin, nonprescription sedatives, older adults, real-world safety windows, restless legs syndrome, iron biology, augmentation, narcolepsy diagnosis, cataplexy, wake-promoting agents, pitolisant, oxybate therapy, daytime safety, recovery, and care transitions
+- Current references reviewed: current sleep-medicine insomnia, restless-legs, and narcolepsy guidance, current FDA hypnotic and narcolepsy-product safety information, and RxPrep 2023 sleep-disorder pharmacotherapy scope for historical comparison
+- Learning structure: twelve content-driven lessons, twelve native sleep-system, insomnia, CBT-I, hypnotic-selection, GABA-hypnotic, orexin-melatonin, safety, RLS-diagnosis, RLS-treatment, narcolepsy-diagnosis, narcolepsy-treatment, and integrated-recovery diagrams, and twelve embedded knowledge checks
+- Assessment: 112 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: sleep complaints were mapped across the full day before medication selection; chronic insomnia requires adequate opportunity and daytime impairment; sleep hygiene alone was separated from complete CBT-I; sleep restriction includes safety boundaries; medication is matched to onset, maintenance, early awakening, and the required sleep window; complex sleep behavior requires discontinuation and avoidance of re-exposure; orexin antagonists remain contraindicated in narcolepsy; nonprescription sedatives retain cognitive, fall, interaction, and product-quality risks; RLS assessment includes iron status even without anemia; current RLS care places gabapentinoids and iron ahead of routine dopamine-agonist use for many adults; augmentation is not treated with automatic dose escalation; narcolepsy testing follows normalized sleep and alternative-cause assessment; and nighttime benefit is judged together with daytime alertness, driving, cognition, breathing, and function
+- Automated verification: 112 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
+
 ## Goodnotes availability
 
 ### Books

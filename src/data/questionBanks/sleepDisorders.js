@@ -24,7 +24,41 @@ const concepts = [
   ["pitolisant", "Pitolisant is an H3 receptor inverse agonist that increases histamine signaling and can treat sleepiness and cataplexy in narcolepsy.", "Review QT risk, CYP2D6 and CYP3A4 interactions, liver and kidney limits, and hormonal contraceptive counseling.", "Ignoring a QT prolonging combination can create avoidable arrhythmia risk."],
   ["oxybate", "Sodium oxybate and related oxybate products consolidate nighttime sleep and can improve daytime sleepiness and cataplexy but carry CNS depression, abuse, and respiratory risks.", "Use the required restricted distribution process, avoid alcohol and sedative hypnotics, and assess breathing and psychiatric risk.", "Combining oxybate with alcohol or another sedative hypnotic can cause fatal respiratory depression."],
   ["sleep-recovery", "Sleep disorder recovery includes nighttime sleep, daytime alertness, driving and occupational safety, cognition, mood, adherence, and patient defined function.", "Track disorder specific outcomes and adverse effects with a relapse and safety plan.", "A longer recorded sleep duration without improved alertness or safety may not represent recovery."],
+  ["circadian-opportunity", "Sleep timing reflects circadian phase, homeostatic sleep pressure, actual sleep opportunity, light exposure, work and school schedules, naps, substances, and behavior across the full day.", "Map at least one representative twenty four hour schedule before deciding whether insomnia, insufficient sleep, circadian misalignment, or another disorder best explains the complaint.", "Treating a timing mismatch with escalating sedation can worsen morning impairment while leaving the underlying circadian problem unchanged."],
+  ["hypnotic-safety-window", "A hypnotic plan is only usable when the patient can remain in bed for the required interval and awaken without unsafe sedation, impaired driving, falls, respiratory compromise, or interaction burden.", "Verify the exact dose, formulation, timing, sleep window, next-morning responsibilities, breathing risk, co-ingestants, and stop criteria before use.", "Taking an additional hypnotic dose after a nighttime awakening without enough remaining sleep time can create dangerous morning impairment."],
+  ["sleep-care-transition", "Sleep care transitions can lose the diary pattern, diagnostic rationale, device use, exact medication timing, controlled-product requirements, driving restrictions, and response to behavioral treatment.", "Transfer one reconciled plan with nighttime and daytime outcomes, safety restrictions, current exposure, adherence barriers, follow-up timing, and named ownership.", "A medication list without timing, sleep window, diagnostic target, or daytime safety information is not a complete sleep handoff."],
 ];
+
+const reviewLessonByConcept = {
+  "sleep-assessment": "sleep-system-map",
+  "circadian-opportunity": "sleep-system-map",
+  "insomnia-diagnosis": "chronic-insomnia",
+  differential: "chronic-insomnia",
+  cbti: "cbti-system",
+  "stimulus-control": "cbti-system",
+  "sleep-restriction": "cbti-system",
+  "drug-selection": "hypnotic-selection",
+  "otc-products": "hypnotic-selection",
+  "z-drugs": "gaba-hypnotics",
+  "complex-sleep": "gaba-hypnotics",
+  "orexin-antagonists": "orexin-melatonin",
+  ramelteon: "orexin-melatonin",
+  doxepin: "orexin-melatonin",
+  "older-adults": "special-safety",
+  "hypnotic-safety-window": "special-safety",
+  "rls-diagnosis": "rls-diagnosis-iron",
+  "rls-iron": "rls-diagnosis-iron",
+  "rls-exacerbators": "rls-diagnosis-iron",
+  "rls-gabapentinoids": "rls-treatment",
+  "rls-augmentation": "rls-treatment",
+  "narcolepsy-diagnosis": "narcolepsy-diagnosis",
+  "narcolepsy-type1": "narcolepsy-diagnosis",
+  "wake-promoting": "narcolepsy-treatment",
+  pitolisant: "narcolepsy-treatment",
+  oxybate: "narcolepsy-treatment",
+  "sleep-recovery": "integrated-sleep-recovery",
+  "sleep-care-transition": "integrated-sleep-recovery",
+};
 const dimensions = [["principle","Which statement is most accurate?",0],["action","Which action best applies the evidence?",1],["integration","Which plan demonstrates the strongest clinical reasoning?",1],["hazard","Which error creates the greatest avoidable risk?",2]];
 const distractors = ["Use one symptom as the complete diagnosis.","Choose treatment without reviewing sleep timing, safety, interactions, or function.","Add several sedatives without targets, monitoring, or follow-up."];
-export const sleepDisordersQuestionBank = concepts.flatMap(([slug,principle,action,hazard],i)=>dimensions.map(([dimension,stem,type],j)=>{const correct=[principle,action,hazard][type];const choices=dimension==="hazard"?[hazard,principle,action,distractors[(i+j)%3]]:[correct,hazard,distractors[(i+j)%3],distractors[(i+j+1)%3]];return{id:`sleep-disorders-${String(i*4+j+1).padStart(3,"0")}`,question:`${stem} Focus: ${slug.replaceAll("-"," ")}.`,choices,answer:0,rationale:`${principle} ${action}`,reviewHref:`#${slug}`,difficulty:j<2?"foundational":"advanced"};}));
+export const sleepDisordersQuestionBank = concepts.flatMap(([slug,principle,action,hazard],i)=>dimensions.map(([dimension,stem,type],j)=>{const correct=[principle,action,hazard][type];const choices=dimension==="hazard"?[hazard,principle,action,distractors[(i+j)%3]]:[correct,hazard,distractors[(i+j)%3],distractors[(i+j+1)%3]];return{id:`sleep-disorders-${String(i*4+j+1).padStart(3,"0")}`,question:`${stem} Focus: ${slug.replaceAll("-"," ")}.`,choices,answer:0,rationale:`${principle} ${action}`,reviewHref:`#${reviewLessonByConcept[slug]}`,difficulty:j<2?"foundational":"advanced"};}));
