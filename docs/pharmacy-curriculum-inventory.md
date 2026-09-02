@@ -879,6 +879,16 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
 - Goodnotes reconciliation: direct access was retried after the user reported restoration, but macOS still reported a locked session; relevant slides will receive a documented reconciliation pass after manual unlock
 
+### Coccidioidomycosis
+
+- Course scope: endemic exposure; arthroconidia and tissue spherules; focal and diffuse pulmonary disease; skin, bone, joint, and meningeal dissemination; serology, complement fixation, culture, pathology, and laboratory safety; host and HIV risk; focal triazole therapy; amphotericin induction; meningitis suppression; hydrocephalus; antifungal exposure and toxicity; ART; treatment duration; pregnancy and postpartum risk; and longitudinal relapse surveillance
+- Current references reviewed: NIH Adult and Adolescent Opportunistic Infection guidance for coccidioidomycosis and first-episode prevention; IDSA coccidioidomycosis guidance; and RxPrep 2023 endemic-fungal and antifungal scope for historical comparison
+- Learning structure: ten content-driven lessons, ten native environment, syndrome, diagnosis, focal-treatment, severe-disease, meningitis, exposure-safety, HIV-care, pregnancy, and integrated-care diagrams, and ten embedded knowledge checks
+- Assessment: 108 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: tissue spherules were separated from environmental arthroconidia; early or immunosuppressed seronegativity did not exclude disease; focal, diffuse, nonmeningeal disseminated, osteoarticular, and meningeal syndromes use distinct treatment and duration pathways; amphotericin product identity remains part of the dose; itraconazole formulation and measured exposure are explicit; hydrocephalus receives mechanical evaluation rather than antifungal escalation alone; focal and disseminated stopping criteria are not interchangeable; meningitis suppression remains lifelong; and pregnancy decisions use gestational and syndrome-specific evidence rather than obsolete letter categories
+- Automated verification: 108 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all ten lessons, at least eight questions mapped to every lesson, ten diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
+
 ## Goodnotes availability
 
 ### Books

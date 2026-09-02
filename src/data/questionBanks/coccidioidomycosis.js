@@ -23,12 +23,43 @@ const concepts = [
   ["stop-focal", "Focal pneumonia treatment can be stopped after 3 to 6 months when clinical response is present, CD4 is at least 250, HIV is suppressed, and follow-up is arranged.", "Use symptoms, imaging, serology, ART, and immune recovery together before stopping.", "Elapsed time alone does not prove safe discontinuation."],
   ["stop-disseminated", "Diffuse pulmonary or nonmeningeal disseminated therapy generally continues at least 12 months, and stopping requires expert, clinical, serologic, and immune assessment.", "Continue surveillance after stopping because relapse remains possible.", "Using the focal-pneumonia stopping rule for disseminated disease shortens treatment incorrectly."],
   ["pregnancy", "Pregnancy increases severe disease risk, especially later pregnancy and postpartum; amphotericin is preferred in the first trimester and azoles may be considered later.", "Use maternal-fetal and infectious-disease expertise to balance disease control, gestational age, and drug risk.", "Applying obsolete pregnancy letters or abruptly stopping lifelong meningitis therapy without a replacement plan is dangerous."],
+  ["postpartum-risk", "Risk for severe coccidioidomycosis remains important in the immediate postpartum period rather than ending at delivery.", "Maintain a low threshold for prompt evaluation of new pulmonary, neurologic, skin, bone, or joint symptoms after delivery when endemic exposure is plausible.", "Treating delivery as the end of heightened clinical vigilance can delay recognition of progressive or disseminated disease."],
+  ["relapse-surveillance", "Longitudinal control depends on syndrome-specific duration, immune recovery, antifungal exposure, structural recovery, and surveillance after transitions.", "Assign an owner and date to symptoms, imaging, titers, cultures, drug concentrations, interactions, organ monitoring, and relapse signals.", "Ending follow-up when the prescription ends can leave recurrent pulmonary or disseminated disease undetected."],
   ["closed-loop", "Complete care links geography, syndrome, immune host, serology, tissue evidence, exact antifungal product, exposure, ART, structural complications, and duration.", "Assign ownership for pending cultures, titers, imaging, drug levels, interaction changes, follow-up, and relapse signals.", "A prescription without longitudinal follow-through leaves dissemination and relapse invisible."],
 ];
+const reviewLessonByConcept = {
+  environment: "environment-biology",
+  morphology: "environment-biology",
+  pulmonary: "syndromes-risk",
+  "focal-diffuse": "syndromes-risk",
+  dissemination: "syndromes-risk",
+  meningitis: "meningitis",
+  serology: "diagnosis-serology",
+  "culture-pathology": "diagnosis-serology",
+  "hiv-risk": "art-prevention",
+  "asymptomatic-serology": "art-prevention",
+  "focal-treatment": "focal-treatment",
+  itraconazole: "focal-treatment",
+  "severe-treatment": "severe-disseminated",
+  "amphotericin-dose": "severe-disseminated",
+  "meningitis-treatment": "meningitis",
+  lifelong: "meningitis",
+  hydrocephalus: "meningitis",
+  "bone-joint": "focal-treatment",
+  "fluconazole-safety": "exposure-safety",
+  "itraconazole-safety": "exposure-safety",
+  art: "art-prevention",
+  "stop-focal": "art-prevention",
+  "stop-disseminated": "severe-disseminated",
+  pregnancy: "pregnancy-special",
+  "postpartum-risk": "pregnancy-special",
+  "relapse-surveillance": "integrated-case",
+  "closed-loop": "integrated-case",
+};
 const dimensions = [["principle", "Which statement is most accurate?", 0], ["action", "Which action best applies the evidence?", 1], ["assessment", "Which plan shows the strongest clinical reasoning?", 1], ["hazard", "Which error creates the greatest avoidable risk?", 2]];
 const generic = ["Use one isolated result without considering site, immune host, or treatment phase.", "Continue the same plan despite objective progression and no diagnostic reassessment.", "Assume every fungal syndrome, azole product, and amphotericin formulation is interchangeable."];
 export const coccidioidomycosisQuestionBank = concepts.flatMap(([slug, principle, action, hazard], conceptIndex) => dimensions.map(([dimension, stem, answerType], dimensionIndex) => {
   const correct = [principle, action, hazard][answerType];
   const choices = dimension === "hazard" ? [hazard, principle, action, generic[(conceptIndex + dimensionIndex) % 3]] : [correct, hazard, generic[(conceptIndex + dimensionIndex) % 3], generic[(conceptIndex + dimensionIndex + 1) % 3]];
-  return { id: `coccidioidomycosis-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${stem} Focus: ${slug.replaceAll("-", " ")}.`, choices, answer: 0, rationale: `${principle} ${action}`, reviewHref: `#${slug}`, difficulty: dimensionIndex < 2 ? "foundational" : "advanced" };
+  return { id: `coccidioidomycosis-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${stem} Focus: ${slug.replaceAll("-", " ")}.`, choices, answer: 0, rationale: `${principle} ${action}`, reviewHref: `#${reviewLessonByConcept[slug]}`, difficulty: dimensionIndex < 2 ? "foundational" : "advanced" };
 }));
