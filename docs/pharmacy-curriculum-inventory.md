@@ -939,6 +939,16 @@ This inventory records the source material available in the founder's Goodnotes 
 - Automated verification: 112 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
 - Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
 
+### Hepatitis C
+
+- Course scope: HCV virology, natural history, blood-borne transmission, adult and pregnancy screening, antibody and reflex RNA diagnosis, acute infection, fibrosis staging, simplified-treatment eligibility, DAA targets and combination pressure, pangenotypic initial regimens, pretreatment safety, interactions, treatment delivery, SVR12, cirrhosis, retreatment, reinfection prevention, and transition ownership
+- Current references reviewed: current AASLD and IDSA HCV Guidance; current CDC screening and testing guidance; current FDA labeling for glecaprevir and pibrentasvir, sofosbuvir and velpatasvir, and relevant salvage therapy; and RxPrep 2023 hepatitis scope for historical comparison
+- Learning structure: twelve content-driven lessons, twelve native virus, screening, fibrosis, mechanism, regimen, pretreatment, interaction, delivery, SVR, cirrhosis, retreatment-prevention, and integrated-care diagrams, and twelve embedded knowledge checks
+- Assessment: 108 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: antibody exposure was separated from current RNA-confirmed infection; confirmed acute infection moved directly to treatment rather than an automatic observation interval; fibrosis and compensation determined pathway eligibility and follow-up; simplified eligibility was not confused with overall treatment eligibility; pangenotypic regimens retained their exact food, duration, liver, and interaction requirements; protease inhibitors remained excluded from current or prior decompensation; HBV reactivation planning preceded treatment; acid suppression, inducers, transporters, statins, amiodarone, diabetes therapy, and warfarin received product-specific plans; cure required SVR12 rather than end-of-treatment RNA; and cure did not erase cirrhosis or reinfection risk
+- Automated verification: 108 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
+
 ## Goodnotes availability
 
 ### Books
