@@ -821,11 +821,11 @@ This inventory records the source material available in the founder's Goodnotes 
 - Cross reference completed: RxPrep NAPLEX 2023 menstrual-cycle physiology, hypogonadism, testosterone-product, counseling, monitoring, and safety scope
 - Current references reviewed: Endocrine Society testosterone-therapy and hypopituitarism guidance; Endocrine Society 2026 testosterone-replacement statement; FDA 2025 class-wide testosterone-labeling update; current DailyMed labeling for testosterone gel, Jatenzo, Xyosted, leuprolide, degarelix, and relugolix; and NIH Endotext chapters on puberty, menstrual-cycle physiology, androgen physiology, male reproduction, and spermatogenesis
 - Learning structure: ten content-driven lessons, ten native axis, testicular, ovarian, steroidogenesis, receptor, diagnosis, formulation, safety, estrogen-progestogen, and pathway-therapy diagrams, and ten embedded knowledge checks
-- Assessment: 100 original questions, ten sampled without replacement per attempt with answer order randomized
+- Assessment: 104 original questions, ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: the lecture's hormone-replacement, contraception, infertility, gynecologic, and oncology references were separated into dedicated future modules rather than compressed into this foundation; diethylstilbestrol and historical agents were not presented as routine modern options; broad or unsupported androgen uses were removed; testosterone diagnosis now requires compatible findings plus repeat accurate morning measurements; primary and central hypogonadism were separated with LH and FSH; reversible causes were included before lifelong therapy; exogenous testosterone was explicitly separated from fertility-preserving treatment; formulation-specific instructions replaced class-wide assumptions; FDA's 2025 removal of older boxed cardiovascular language was paired with the current blood-pressure warning rather than interpreted as no cardiovascular risk; estrogen and progestogen risk was framed by molecule, route, uterus status, indication, and patient context; GnRH agonist flare was separated from antagonist direct suppression; and obsolete pregnancy-letter language was excluded
-- Automated verification: 100 unique question IDs, four unique choices per question, valid lesson links, ten diagrams, and no em dash or en dash characters in public prose
+- Automated verification: 104 unique question IDs, four unique choices per question, valid lesson links, ten diagrams, at least eight questions mapped to every lesson, and no em dash or en dash characters in public prose
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, ten diagrams, all ten embedded knowledge checks, ten-question randomized attempts with changed question sets, complete scoring, explanations, and ten remediation links
-- Build verification: Next.js production build passed August 25, 2026 with 397 static pages generated
+- Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
 - Goodnotes reconciliation: complete for the dedicated 31-page gonadal-hormone lecture; the separate DAST IV reproductive review remains reserved for cross-module reconciliation after the related contraception, infertility, gynecologic, and pregnancy modules are built
 
 ### Shock and Vasoactive Pharmacotherapy
@@ -1134,7 +1134,7 @@ Target modules:
 1. Adrenal Pharmacology (`built`, 104 question bank; Goodnotes reconciliation pending)
 2. Cushing Syndrome (`built`, 100 question bank; Goodnotes reconciliation pending)
 3. Adrenal Insufficiency and Adrenal Crisis (`built`, 104 question bank; Goodnotes reconciliation pending)
-4. Gonadal Hormone Pharmacology (`built`, 100 question bank; dedicated Goodnotes lecture reconciled)
+4. Gonadal Hormone Pharmacology (`built`, 104 question bank; dedicated Goodnotes lecture reconciled)
 5. Gynecologic Disorders (`built`, 100 question bank; dedicated Goodnotes lectures reconciled)
 6. Infertility Pharmacotherapy (`built`, 100 question bank; dedicated Goodnotes lectures reconciled)
 7. Pregnancy and Lactation Pharmacotherapy (`built`, 100 question bank; 58-page dedicated Goodnotes lecture reconciled)
