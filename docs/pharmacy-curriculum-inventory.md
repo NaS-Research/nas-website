@@ -223,15 +223,14 @@ This inventory records the source material available in the founder's Goodnotes 
 
 ### Diuretic Medicinal Chemistry
 
-- Course scope: carbonic anhydrase zinc-binding sulfonamides, acidic loop scaffolds, thiazide and thiazide-like structure activity, steroidal and nonsteroidal mineralocorticoid antagonists, ENaC blockers, osmotic polyols, V2 antagonists, and target-site exposure
+- Course source: complete 17-page `Medicinal Chemistry of Diuretics` source recovered from the local Goodnotes library, rendered page by page, and visually reviewed September 3, 2026
 - Cross reference completed: RxPrep NAPLEX 2023 diuretic pharmacology, formulation, allergy, interaction, renal delivery, and medicinal chemistry scope
-- Current references reviewed: NIH PubChem chemical records for acetazolamide, furosemide, hydrochlorothiazide, spironolactone, amiloride, mannitol, and tolvaptan
+- Current references reviewed: NIH PubChem chemical records for acetazolamide, methazolamide, furosemide, hydrochlorothiazide, spironolactone, amiloride, mannitol, and tolvaptan, plus current DailyMed triamterene and amiloride product information
 - Learning structure: six lessons, six native zinc-binding, loop, thiazide, mineralocorticoid, ENaC and osmole, and structure-to-exposure diagrams, and six embedded knowledge checks
-- Assessment: 100 original questions spanning sulfonamide ionization, zinc coordination, heterocycle electronics, isozyme access, loop acidic scaffolds, ethacrynic reactivity, benzothiadiazine evolution, nonantibiotic sulfonamide distinctions, steroid receptor selectivity, active metabolites, ENaC pore blockers, osmotic physicochemistry, V2 receptor access, albumin binding, tubular secretion, clearance, salts, and formulation; ten sampled without replacement per attempt with answer order randomized
-- Source reconciliation: sulfonamide was treated as a functional motif rather than a universal allergy class; potency trends were not converted into fixed dose equivalence; kidney target was separated from elimination pathway; receptor and channel chemistry was separated from product-specific clinical outcomes
-- Automated verification: 100 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 12 questions mapped to every lesson, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
-- Goodnotes note: the dedicated diuretic medicinal-chemistry lecture export remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
+- Assessment: 112 original questions spanning sulfonamide ionization, zinc coordination, heterocycle electronics, methazolamide distribution, isozyme access, loop acidic scaffolds, ethacrynic reactivity, benzothiadiazine positional structure and activity, nonantibiotic sulfonamide distinctions, steroid receptor selectivity, active metabolites, ENaC pore blockers and disposition, osmotic physicochemistry, V2 receptor access, albumin binding, tubular secretion, clearance, salts, and formulation; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: methazolamide methyl substitution was connected to altered ionization and tissue access; the carbon 6, carbon 7, nitrogen 2, and carbon 3 thiazide series rules were added without converting them into universal dose ratios; triamterene metabolism and calculus risk were contrasted with unchanged renal excretion of amiloride. Sulfonamide remained a functional motif rather than a universal allergy class; obsolete organomercurial therapy and older acute renal failure claims for osmotic agents were not carried forward; target pharmacology remained separate from disposition and current clinical use.
+- Automated verification: 112 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 16 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 3, 2026 with 549 static pages generated after complete source reconciliation
 
 ### Glaucoma Pharmacotherapy
 
@@ -1169,7 +1168,7 @@ Target modules:
 2. Adrenergic Antagonists (`built`, 112 question bank; Goodnotes reconciliation complete)
 3. Adrenergic Medicinal Chemistry (`built`, 112 question bank; Goodnotes reconciliation complete)
 4. Diuretic Pharmacology (`built`, 116 question bank; Goodnotes reconciliation complete)
-5. Diuretic Medicinal Chemistry (`built`, 100 question bank; Goodnotes reconciliation pending)
+5. Diuretic Medicinal Chemistry (`built`, 112 question bank; Goodnotes reconciliation complete)
 6. Glaucoma Pharmacotherapy (`built`, 100 question bank; Goodnotes reconciliation pending)
 
 #### Hypertension
