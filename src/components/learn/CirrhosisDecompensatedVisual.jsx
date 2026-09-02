@@ -1,6 +1,6 @@
 const views = {
-  "compensation-portal": ["Fibrosis", "Portal pressure", "Collaterals", "Decompensation"],
-  "severity-assessment": ["Child-Pugh", "MELD 3.0", "Trajectory", "Referral"],
+  "compensation-portal": ["Hepatocyte work", "Fibrosis", "Portal pressure", "Decompensation"],
+  "severity-assessment": ["Injury markers", "Bilirubin", "Albumin + INR", "Trajectory"],
   "ascites-diagnosis": ["Paracentesis", "SAAG", "PMN count", "Culture"],
   "ascites-treatment": ["Sodium", "Spironolactone", "Furosemide", "Weight"],
   "paracentesis-refractory": ["Large volume", "Albumin", "TIPS", "Transplant"],
