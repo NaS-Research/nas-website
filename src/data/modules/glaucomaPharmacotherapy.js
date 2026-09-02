@@ -19,12 +19,14 @@ export const glaucomaPharmacotherapyModule = {
       slug: "aqueous-humor-and-glaucoma-risk",
       title: "Aqueous Humor, Intraocular Pressure, and Optic Nerve Risk",
       summary: "Glaucoma is progressive optic neuropathy. Intraocular pressure is the major modifiable risk factor, but damage depends on susceptibility, baseline structure, visual function, pressure pattern, and time.",
-      concepts: ["Ciliary production", "Trabecular outflow", "Uveoscleral outflow", "Optic nerve progression"],
+      concepts: ["Anterior segment flow", "Trabecular and uveoscleral outflow", "Optic disc cupping", "Optic nerve progression"],
       visual: "glaucoma-flow-map",
       application: "Use pressure as a treatment variable, not a complete diagnosis. Pair it with angle anatomy, optic nerve and retinal nerve fiber structure, visual fields, corneal context, and progression rate.",
       lesson: [
         { heading: "Follow aqueous humor flow", body: "The ciliary processes produce aqueous humor, which moves through the pupil into the anterior chamber. It exits mainly through the trabecular meshwork and Schlemm canal, with an additional uveoscleral pathway through ciliary muscle spaces." },
+        { heading: "Keep aqueous and vitreous compartments distinct", body: "Aqueous humor is continuously produced and drained in the anterior segment. Vitreous humor is the gelatinous material behind the lens and is not the fluid that normally cycles through the trabecular meshwork. This distinction prevents incorrect mechanism maps and explains why angle anatomy is central to aqueous outflow disease." },
         { heading: "Separate open and closed angle mechanisms", body: "Open-angle disease has an anatomically accessible angle with impaired outflow or optic nerve vulnerability. Angle closure involves mechanical obstruction of the drainage angle and may become an emergency. A pressure-lowering medicine does not replace definitive angle evaluation." },
+        { heading: "Connect cupping to lost neural tissue", body: "Glaucomatous optic neuropathy progressively injures retinal ganglion cell axons and remodels the optic nerve head. Increasing cup-to-disc appearance can support the diagnosis, but asymmetry, rim configuration, retinal nerve fiber imaging, and reproducible visual-field loss matter more than a single ratio." },
         { heading: "Individualize target pressure", body: "A target is a working range chosen from untreated pressure, damage severity, life expectancy, corneal and measurement context, risk factors, and rate of progression. It must be revised if the optic nerve or visual field worsens despite reaching the previous target." },
         { heading: "Measure structure and function", body: "Pressure fluctuates and does not directly report neuronal survival. Serial optic nerve examination, retinal nerve fiber imaging, visual fields, gonioscopy when indicated, and adherence assessment reveal whether treatment protects vision." },
       ],
@@ -73,6 +75,7 @@ export const glaucomaPharmacotherapyModule = {
       lesson: [
         { heading: "Relax trabecular resistance", body: "Netarsudil inhibits Rho kinase and improves conventional outflow, with additional effects on episcleral venous pressure and production described for the product. Conjunctival hyperemia, corneal verticillata, instillation pain, and conjunctival hemorrhage are notable local effects." },
         { heading: "Use pilocarpine by mechanism", body: "Muscarinic M3 activation contracts ciliary muscle and can open trabecular spaces while producing miosis and accommodative spasm. Headache, brow ache, reduced night vision, retinal concerns, and systemic cholinergic effects limit broad chronic use." },
+        { heading: "Relieve pupillary block definitively", body: "In acute primary angle closure caused by pupillary block, pressure-lowering medicines stabilize the eye and improve the ability to perform definitive treatment. Laser peripheral iridotomy creates another route from the posterior to the anterior chamber and relieves the block. Persistent closure after a patent iridotomy requires reassessment for plateau iris, synechiae, lens, or another nonpupillary mechanism." },
         { heading: "Use laser as treatment, not failure", body: "Selective laser trabeculoplasty targets pigmented trabecular cells and can be initial or adjunctive therapy in appropriate open-angle disease. Effect may diminish, repeatability and anatomy vary, and early pressure response still requires monitoring." },
         { heading: "Create a new pathway when needed", body: "Trabeculectomy, drainage devices, and minimally invasive glaucoma procedures alter outflow through different routes and risk profiles. Surgery becomes appropriate when the probability of vision loss exceeds the burden and risk of intervention." },
       ],
@@ -118,6 +121,8 @@ export const glaucomaPharmacotherapyModule = {
     { label: "DailyMed. Brimonidine tartrate ophthalmic solution", href: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=87c5a534-4321-46c7-9938-84dca34b6506" },
     { label: "DailyMed. Dorzolamide hydrochloride ophthalmic solution", href: "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=ed9d1658-43cc-4c78-b3d8-e7d980a6b673" },
     { label: "DailyMed. Netarsudil ophthalmic solution", href: "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=netarsudil" },
+    { label: "National Eye Institute. Types of glaucoma", href: "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/glaucoma/types-glaucoma" },
+    { label: "American Academy of Ophthalmology. Laser peripheral iridotomy", href: "https://eyewiki.aao.org/Laser_Peripheral_Iridotomy" },
   ],
   questionBank: glaucomaPharmacotherapyQuestionBank,
 };

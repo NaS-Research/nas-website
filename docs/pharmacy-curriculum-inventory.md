@@ -234,15 +234,14 @@ This inventory records the source material available in the founder's Goodnotes 
 
 ### Glaucoma Pharmacotherapy
 
-- Course scope: aqueous humor production and outflow, optic nerve progression, prostaglandin pathway agents, ophthalmic beta blockers, alpha-2 agonists, carbonic anhydrase inhibitors, Rho kinase inhibitors, cholinergic therapy, laser, surgery, selection, and administration
+- Course source: complete 30-page `Glaucoma` source recovered from the local Goodnotes library, rendered page by page, and visually reviewed September 3, 2026
 - Cross reference completed: RxPrep NAPLEX 2023 ophthalmic, autonomic, cardiovascular, pulmonary, pediatric, interaction, device, and counseling scope
-- Current references reviewed: current DailyMed latanoprost, timolol maleate, brimonidine, dorzolamide, and netarsudil product information
+- Current references reviewed: current DailyMed latanoprost, timolol maleate, brimonidine, dorzolamide, and netarsudil product information, National Eye Institute glaucoma classification, and American Academy of Ophthalmology laser peripheral iridotomy guidance
 - Learning structure: six lessons, six native aqueous-flow, prostaglandin, production, conventional-outflow, selection, and administration diagrams, and six embedded knowledge checks
-- Assessment: 100 original questions spanning pressure and progression, angle anatomy, production and outflow, pigmentation, inflammation and macular risk, systemic ophthalmic beta blockade, pediatric alpha-2 toxicity, topical carbonic anhydrase inhibition, punctal occlusion, Rho kinase, pilocarpine, laser, surgery, fixed-combination duplication, delivery failure, contamination, product spacing, contact lenses, and acute angle closure; ten sampled without replacement per attempt with answer order randomized
-- Source reconciliation: intraocular pressure was treated as a modifiable risk factor rather than the complete diagnosis; target pressure was made dynamic and progression based; topical products were treated as systemic exposures; laser was included as an early treatment option rather than medication failure; technique and active-ingredient reconciliation were made part of pharmacotherapy
-- Automated verification: 100 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 12 questions mapped to every lesson, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
-- Goodnotes note: the dedicated glaucoma lecture export remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
+- Assessment: 112 original questions spanning anterior segment flow, aqueous and vitreous compartment distinctions, pressure and progression, angle anatomy, optic disc cupping, production and outflow, pigmentation, inflammation and macular risk, systemic ophthalmic beta blockade, pediatric alpha-2 toxicity, topical carbonic anhydrase inhibition, punctal occlusion, Rho kinase, pilocarpine, pupillary block, laser iridotomy, trabeculoplasty, surgery, fixed-combination duplication, delivery failure, contamination, product spacing, contact lenses, and acute angle closure; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: intraocular pressure was retained as a modifiable risk factor rather than the complete diagnosis; population percentages and one fixed pressure cutoff were not used for individual diagnosis; aqueous and vitreous compartments were separated; optic disc cupping was tied to rim, retinal nerve fiber, and visual-field evidence; target pressure remained dynamic and progression based; topical products were treated as systemic exposures; laser was retained as an early option; acute pupillary block was connected to urgent stabilization and definitive iridotomy; blanket coronary-disease beta-blocker exclusions, universal bimatoprost superiority, fixed carbonic-anhydrase-inhibitor sequencing, routine long-acting cholinesterase inhibitors, and reversible iris-pigmentation language were not carried forward
+- Automated verification: 112 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 12 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 3, 2026 with 549 static pages generated after complete source reconciliation
 
 ### Hypertension Foundations and Chronic Therapy
 
@@ -1169,7 +1168,7 @@ Target modules:
 3. Adrenergic Medicinal Chemistry (`built`, 112 question bank; Goodnotes reconciliation complete)
 4. Diuretic Pharmacology (`built`, 116 question bank; Goodnotes reconciliation complete)
 5. Diuretic Medicinal Chemistry (`built`, 112 question bank; Goodnotes reconciliation complete)
-6. Glaucoma Pharmacotherapy (`built`, 100 question bank; Goodnotes reconciliation pending)
+6. Glaucoma Pharmacotherapy (`built`, 112 question bank; Goodnotes reconciliation complete)
 
 #### Hypertension
 
