@@ -733,9 +733,9 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: nine content-driven lessons, nine native pathophysiology, diagnosis, precipitant, fluid, potassium, insulin, monitoring, complication, and transition diagrams, and nine embedded knowledge checks
 - Assessment: 100 original questions, ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: current diagnosis requires diabetes or glucose at least 200 mg/dL, elevated ketones, and metabolic acidosis; blood beta-hydroxybutyrate is preferred to urine ketones; euglycemic DKA remains visible; anion gap is not the preferred resolution marker; fluids are individualized for cardiac and kidney reserve; insulin waits when potassium is below 3.5 mmol/L; dextrose begins below 250 mg/dL so insulin can continue clearing ketones; routine bicarbonate is limited to severe acidosis below pH 7.0; routine phosphate replacement is rejected; and transition requires current biochemical resolution plus basal insulin overlap, access, education, and precipitant correction
-- Automated verification: 100 unique question IDs, four unique choices per question, valid lesson links, nine diagrams, and no em dash or en dash characters in public prose
+- Automated verification: 100 unique question IDs, four unique choices per question, valid lesson links, nine diagrams, at least eight questions mapped to every lesson, and no em dash or en dash characters in public prose
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, nine diagrams, all nine embedded knowledge checks, and no console errors or warnings
-- Build verification: Next.js production build passed August 25, 2026 with 390 static pages generated
+- Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
 - Goodnotes note: the DKA lectures, workshop cases, and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
 ### Hyperosmolar Hyperglycemic State
