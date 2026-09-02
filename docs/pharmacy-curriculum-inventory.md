@@ -1377,10 +1377,15 @@ Currently accessible documents:
 - PUD, GERD, and IBS 2026
 - DAST 6335 Cirrhosis
 - DAST V syllabus
+- DAST V Student Version Fall 2026 August 31 2026
+- Liver phys path
+- NSAID DMARD
+- PHRM6335 Lecture 14 NSAIDS Dr. Martin (full)
+- PHRM6335 lec 3 4 GERD PUD IBS med chem Dr Martin a
 
 Target modules presently supported:
 
-1. Gastroesophageal Reflux Disease (`verified`, 120 question bank; Goodnotes reconciled)
+1. Gastroesophageal Reflux Disease (`verified`, 128 question bank; Goodnotes reconciled)
 2. Peptic Ulcer Disease (`verified`, 124 question bank; Goodnotes reconciled)
 3. Irritable Bowel Syndrome (`verified`, 136 question bank; Goodnotes reconciled)
 4. Chronic Idiopathic Constipation (`verified`, 144 question bank; Goodnotes reconciled)
@@ -1396,15 +1401,15 @@ Target modules presently supported:
 ### Gastroesophageal Reflux Disease
 
 - RxPrep source: NAPLEX 2023 Chapter 72 GERD section, PDF pages 912 through 916, visually reviewed in full
-- Current references reviewed: ACG diagnosis and management guideline, AGA proton pump inhibitor deprescribing update, and current DailyMed labeling for omeprazole, famotidine, dexlansoprazole, and metoclopramide
+- Current references reviewed: ACG diagnosis and management guideline, AGA proton pump inhibitor deprescribing update, current DailyMed labeling for omeprazole, cimetidine, famotidine, dexlansoprazole, and metoclopramide, and the November 2025 FDA approval notice for reformulated ranitidine
 - Learning structure: ten lessons, ten native mechanism and decision diagrams, and ten embedded knowledge checks
-- Assessment: 120 original questions spanning barrier physiology, clearance, symptom triage, cardiac and extraesophageal mimics, diagnostic testing, lifestyle care, antacids, alginate, H2-receptor antagonists, PPI pharmacology and administration, treatment selection, persistent symptoms, maintenance, deprescribing, adverse-event evidence, and interactions; ten sampled without replacement per attempt with answer order randomized
-- Source reconciliation: routine food prohibition lists were replaced by mechanism-based and patient-specific interventions; normal endoscopy was separated from absence of GERD; off-therapy and on-therapy reflux testing were assigned distinct roles; famotidine renal adjustment and neurologic risk were updated; PPI safety associations were separated from causal evidence; and routine prokinetic use was rejected without an appropriate indication
+- Assessment: 128 original questions spanning barrier physiology, clearance, symptom triage, cardiac and extraesophageal mimics, diagnostic testing, lifestyle care, antacids, alginate, H2-receptor-antagonist pharmacophores and product differences, PPI pharmacology and administration, treatment selection, persistent symptoms, maintenance, deprescribing, adverse-event evidence, and interactions; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: routine food prohibition lists were replaced by mechanism-based and patient-specific interventions; normal endoscopy was separated from absence of GERD; off-therapy and on-therapy reflux testing were assigned distinct roles; cimetidine hepatic interaction liability and famotidine renal adjustment were made product-specific; the 2020 removal of legacy ranitidine was reconciled with FDA approval of reformulated tablets in November 2025; PPI safety associations were separated from causal evidence; and routine prokinetic use was rejected without an appropriate indication
 - Scope boundary: peptic ulcer disease and irritable bowel syndrome remain separate modules rather than being merged with GERD
-- Goodnotes reconciliation: the complete 36-page PUD, GERD, and IBS 2026 source was recovered from the local Goodnotes library and reviewed September 3, 2026. Its acid physiology, symptom, complication, pharmacology, and counseling scope is represented, while older universal food restrictions, ranitidine inclusion, broad interaction claims, and symptom-only diagnostic framing remain superseded by the current references above.
-- Automated verification: 120 unique question IDs, no duplicate answer choices, valid lesson links, ten diagrams, and no em dash or en dash characters in public module prose
+- Goodnotes reconciliation: the complete 36-page PUD, GERD, and IBS 2026 source and the complete 85-page PHRM6335 lec 3 4 GERD PUD IBS med chem Dr Martin a source were recovered from the local Goodnotes library and reviewed September 2, 2026. Their acid physiology, symptom, complication, pharmacology, medicinal chemistry, and counseling scope is represented. The deeper source reconciliation added the H2 antagonist ring, spacer, and terminal-group architecture, cimetidine and famotidine structural distinctions, and product-specific interaction reasoning. Older universal food restrictions, obsolete ranitidine status, broad class interaction claims, and symptom-only diagnostic framing remain superseded by the current references above.
+- Automated verification: 128 unique question IDs, no duplicate answer choices, valid lesson links, a minimum of eight questions mapped to every lesson, ten diagrams, and no em dash or en dash characters in public module prose
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, ten lessons, ten diagrams, ten embedded checks, ten questions per attempt, a second attempt with a different set and no overlap in the verified run, scoring with ten explanations and ten remediation links, and responsive restoration after testing
-- Build verification: Next.js production build passed September 3, 2026 with 547 static pages generated after Goodnotes source reconciliation
+- Build verification: Next.js production build passed September 2, 2026 with 549 static pages generated after the medicinal chemistry enhancement
 
 ### Peptic Ulcer Disease
 
