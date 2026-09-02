@@ -134,16 +134,15 @@ This inventory records the source material available in the founder's Goodnotes 
 
 ### Antimuscarinic Pharmacology
 
-- Course scope: cholinoceptor blockade, organ-system applications, cumulative anticholinergic burden, and acute antimuscarinic syndrome
+- Course source: complete 25-page `Cholinoceptor Blockers & Cholinesterase Regenerators` source recovered from the local Goodnotes library, rendered page by page, and visually reviewed September 3, 2026, with the antimuscarinic sections reconciled here
 - Cross reference completed: RxPrep NAPLEX 2023 dementia, gastrointestinal, urinary, pulmonary, movement-disorder, and toxicology scope
 - Current references reviewed: current DailyMed product labeling for atropine, scopolamine, glycopyrrolate, tiotropium, oxybutynin, trospium, and dicyclomine, plus IUPHAR and BPS muscarinic receptor nomenclature
 - Learning structure: six lessons, six native mechanism and clinical-decision diagrams, and six embedded knowledge checks
-- Assessment: 100 original questions spanning receptor mechanism, molecular access, anticholinergic burden, urinary selection, inhaled and perioperative use, ocular, gastrointestinal, vestibular, neurologic, interaction, monitoring, and toxicity decisions; ten sampled without replacement per attempt with answer order randomized
+- Assessment: 112 original questions spanning receptor mechanism, molecular access, tissue-dependent dose response, anticholinergic burden, urgency and stress incontinence differentiation, urinary selection, inhaled and perioperative use, ocular, gastrointestinal, vestibular, neurologic, interaction, monitoring, and toxicity decisions; ten sampled without replacement per attempt with answer order randomized
 - Scope boundary: detailed physostigmine selection, organophosphate poisoning, and cholinesterase regeneration remain reserved for the dedicated toxicology module
-- Source reconciliation: broad class claims were replaced with product-specific labeling, formulation and organ-function review, whole-regimen burden assessment, explicit cognitive and thermoregulatory risk, and stabilization before antidote selection
-- Automated verification: 100 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 16 questions mapped to every lesson, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
-- Goodnotes note: the cholinoceptor-blocker lecture export remains pending because the Mac was locked during this milestone; its eventual review will be recorded as a source-reconciliation pass without blocking work on other accessible modules
+- Source reconciliation: tissue-dependent response thresholds, the distinction between mydriasis and cycloplegia, and lacrimal-sac compression were added. The source's stress-incontinence classification was corrected to urgency-based overactive bladder treatment, its broad glaucoma contraindication was reframed around product labeling and angle anatomy, and its rigid dose-effect sequence and obsolete product-status claims were not carried forward. Broad class claims remain replaced with product-specific labeling, formulation and organ-function review, whole-regimen burden assessment, explicit cognitive and thermoregulatory risk, and stabilization before antidote selection.
+- Automated verification: 112 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 16 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 3, 2026 with 549 static pages generated after complete source reconciliation
 
 ### Cholinergic Medicinal Chemistry
 
@@ -1153,7 +1152,7 @@ Target modules:
 
 1. Autonomic Nervous System Foundations (`built`, 100 question bank)
 2. Cholinergic Agonists and Cholinesterase Inhibitors (`built`, 100 question bank)
-3. Antimuscarinic Pharmacology (`built`, 100 question bank; Goodnotes reconciliation pending)
+3. Antimuscarinic Pharmacology (`built`, 112 question bank; Goodnotes reconciliation complete)
 4. Cholinergic Medicinal Chemistry (`built`, 100 question bank)
 5. Anticholinergic Medicinal Chemistry (`built`, 112 question bank; Goodnotes reconciliation complete)
 6. Cholinergic Toxicology and Cholinesterase Regeneration (`built`, 100 question bank; Goodnotes reconciliation pending)
