@@ -1009,6 +1009,16 @@ This inventory records the source material available in the founder's Goodnotes 
 - Automated verification: 116 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
 - Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
 
+### Bipolar Disorder
+
+- Course scope: bipolar I and II diagnosis, mania, hypomania, mixed features, longitudinal differential, immediate safety, crisis containment, acute mania, bipolar depression, maintenance, rapid cycling, lithium pharmacology, levels, interactions, monitoring, calculations, and toxicity, valproate, lamotrigine, carbamazepine, antipsychotics, antidepressant destabilization, perinatal and postpartum care, psychotherapy, social rhythms, comorbidity, recovery, and care transitions
+- Current references reviewed: current bipolar-disorder treatment guidance, current FDA mood-stabilizer and antipsychotic labeling, current reproductive safety principles, and RxPrep 2023 bipolar-disorder scope for historical comparison
+- Learning structure: twelve content-driven lessons, twelve native diagnosis, safety, acute-mania, bipolar-depression, maintenance, lithium-system, lithium-toxicity, anticonvulsant, antipsychotic, perinatal, psychosocial-rhythm, and integrated-recovery diagrams, and twelve embedded knowledge checks
+- Assessment: 116 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: diagnosis follows lifetime episode course rather than current mood alone; mixed symptoms retain elevated suicide and destabilization risk; acute safety and sleep restoration precede regimen refinement; acute treatment is linked to a sustainable maintenance plan; bipolar depression uses phase-specific evidence rather than automatic unipolar algorithms; lithium levels are interpreted with timing, formulation, symptoms, kidney function, sodium, hydration, and interactions; chronic lithium monitoring extends beyond the concentration; mood stabilizers retain distinct episode roles and reproductive risks; antipsychotic evidence and monitoring remain product specific; postpartum psychosis is treated as an emergency; rapid cycling is separated from daily mood variability; and transitions identify which acute medications remain temporary
+- Automated verification: 116 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
+
 ## Goodnotes availability
 
 ### Books

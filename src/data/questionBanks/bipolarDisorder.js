@@ -24,7 +24,43 @@ const concepts=[
  ["rapid-cycling","Rapid cycling is at least four mood episodes in a year and should trigger review of thyroid disease, substances, antidepressants, adherence, and treatment fit.","Confirm true episodes and reduce destabilizing contributors before adding complexity.","Ordinary daily mood variability is not equivalent to rapid cycling."],
  ["comorbidity","Anxiety, substance use, ADHD, PTSD, obesity, cardiovascular disease, migraine, and sleep disorders can alter both presentation and treatment.","Treat comorbidity without destabilizing mood and coordinate overlapping medications and risks.","Stimulant or antidepressant treatment without confirming mood stability can worsen selected patients."],
  ["recovery","Bipolar recovery requires episode prevention, sleep and rhythm stability, physical health, cognition, relationships, work or school, autonomy, and a personalized relapse plan.","Track early warning signs, medication exposure, adverse effects, function, safety, and patient goals in one shared plan.","A normal mood score at one visit does not prove durable recovery."],
+ ["crisis-containment","A manic, mixed, depressive, or psychotic crisis may impair judgment, sleep, nutrition, hydration, financial safety, driving, medication use, and the ability to collaborate with outpatient care.","Match supervision, environmental control, hospitalization, lethal-means safety, and protection from exploitation to the current risk and capacity assessment.","Relying on a future clinic appointment when the patient cannot maintain immediate safety can allow preventable injury or loss."],
+ ["mania-response","Acute mania response is measured through sleep, activation, psychosis, impulsivity, agitation, function, adverse effects, and the ability to transition safely into maintenance care.","Reassess early, optimize an evidence-based regimen, and define which acute components should continue, taper, or change after stabilization.","Escalating several sedating drugs without measuring target symptoms or cumulative adverse effects can obscure deterioration and delay a sustainable plan."],
+ ["antipsychotic-monitoring","Antipsychotic monitoring in bipolar disorder depends on the exact agent, dose, route, treatment phase, metabolic risk, movement findings, prolactin effects, QT context, sedation, orthostasis, and interactions.","Establish relevant baseline measures and a time-specific follow-up plan that connects each risk to an action threshold.","Using one generic class checklist without adjusting for the selected drug can miss high-priority toxicity and create unnecessary testing."],
+ ["care-transition","Bipolar care transitions require a shared account of episode polarity, safety events, effective and ineffective trials, levels, adverse effects, reproductive goals, early warning signs, and crisis ownership.","Reconcile the acute regimen with the maintenance plan and give every monitoring task, taper, follow-up visit, and emergency response a named owner and date.","Discharge without explaining which acute medications remain temporary can lead to indefinite polypharmacy, recurrence, or abrupt unsupervised stopping."],
 ];
+
+const reviewLessonByConcept = {
+ diagnosis:"diagnosis-episode-map",
+ mania:"diagnosis-episode-map",
+ "mixed-features":"diagnosis-episode-map",
+ differential:"diagnosis-episode-map",
+ safety:"safety-triage",
+ "crisis-containment":"safety-triage",
+ "acute-mania":"acute-mania",
+ "mania-response":"acute-mania",
+ "bipolar-depression":"bipolar-depression",
+ antidepressants:"bipolar-depression",
+ maintenance:"maintenance",
+ "rapid-cycling":"maintenance",
+ "lithium-mechanism":"lithium-system",
+ "lithium-level":"lithium-system",
+ "lithium-monitoring":"lithium-system",
+ "lithium-calculation":"lithium-system",
+ "lithium-interactions":"lithium-toxicity",
+ "lithium-toxicity":"lithium-toxicity",
+ valproate:"anticonvulsants",
+ lamotrigine:"anticonvulsants",
+ carbamazepine:"anticonvulsants",
+ antipsychotics:"antipsychotics",
+ "antipsychotic-monitoring":"antipsychotics",
+ pregnancy:"perinatal-care",
+ postpartum:"perinatal-care",
+ psychotherapy:"psychosocial-rhythm",
+ comorbidity:"psychosocial-rhythm",
+ recovery:"integrated-recovery",
+ "care-transition":"integrated-recovery",
+};
 const dimensions=[["principle","Which statement is most accurate?",0],["action","Which action best applies the evidence?",1],["integration","Which plan demonstrates the strongest clinical reasoning?",1],["hazard","Which error creates the greatest avoidable risk?",2]];
 const distractors=["Use one symptom or screening score as the complete diagnosis.","Choose treatment without reviewing episode, safety, interactions, or patient preference.","Change several therapies without targets, monitoring, or follow-up."];
-export const bipolarDisorderQuestionBank=concepts.flatMap(([slug,principle,action,hazard],i)=>dimensions.map(([dimension,stem,type],j)=>{const correct=[principle,action,hazard][type];const choices=dimension==="hazard"?[hazard,principle,action,distractors[(i+j)%3]]:[correct,hazard,distractors[(i+j)%3],distractors[(i+j+1)%3]];return{id:`bipolar-disorder-${String(i*4+j+1).padStart(3,"0")}`,question:`${stem} Focus: ${slug.replaceAll("-"," ")}.`,choices,answer:0,rationale:`${principle} ${action}`,reviewHref:`#${slug}`,difficulty:j<2?"foundational":"advanced"};}));
+export const bipolarDisorderQuestionBank=concepts.flatMap(([slug,principle,action,hazard],i)=>dimensions.map(([dimension,stem,type],j)=>{const correct=[principle,action,hazard][type];const choices=dimension==="hazard"?[hazard,principle,action,distractors[(i+j)%3]]:[correct,hazard,distractors[(i+j)%3],distractors[(i+j+1)%3]];return{id:`bipolar-disorder-${String(i*4+j+1).padStart(3,"0")}`,question:`${stem} Focus: ${slug.replaceAll("-"," ")}.`,choices,answer:0,rationale:`${principle} ${action}`,reviewHref:`#${reviewLessonByConcept[slug]}`,difficulty:j<2?"foundational":"advanced"};}));
