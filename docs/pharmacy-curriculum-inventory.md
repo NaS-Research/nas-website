@@ -1049,6 +1049,16 @@ This inventory records the source material available in the founder's Goodnotes 
 - Automated verification: 112 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
 - Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
 
+### Parkinson Disease
+
+- Course scope: basal-ganglia motor circuitry, clinical diagnosis and differential, nonmotor disease, levodopa and carbidopa pharmacology, administration and formulation selection, dose timing, wearing off, dyskinesia, dopamine agonists and withdrawal, MAO-B and COMT inhibitors, amantadine, anticholinergics, rescue products, advanced infusion and device therapy, psychosis, autonomic dysfunction, swallowing, hospital medication safety, dopaminergic withdrawal emergency, rehabilitation, recovery, and care transitions
+- Current references reviewed: current Parkinson disease treatment guidance, current FDA dopaminergic, device-aided, psychosis, and rescue-product labeling, current hospital medication-safety principles, and RxPrep 2023 Parkinson pharmacotherapy scope for historical comparison
+- Learning structure: twelve content-driven lessons, twelve native motor-circuit, diagnosis, nonmotor, levodopa-system, dose-timing, adjunct, dyskinesia, advanced-therapy, psychosis, autonomic, hospital-safety, and recovery diagrams, and twelve embedded knowledge checks
+- Assessment: 116 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: motor-circuit reasoning was retained without implying that dopamine replacement stops neurodegeneration; diagnosis remains clinical and longitudinal; nonmotor surveillance includes acute reversible causes; levodopa is not delayed solely to avoid future fluctuations; protein and iron timing is balanced against nutrition; formulations are not converted milligram for milligram without product guidance; dose, meal, motor, dyskinesia, rescue, and sleep patterns are mapped before exposure changes; dopamine-agonist behavioral and withdrawal risks are explicit; adjuncts retain product-specific interactions and organ constraints; advanced therapy referral occurs before frailty or cognitive decline removes options; psychosis care protects motor function and first excludes delirium; and hospital doses remain time critical with alternative-route planning when swallowing fails
+- Automated verification: 116 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
+
 ## Goodnotes availability
 
 ### Books
