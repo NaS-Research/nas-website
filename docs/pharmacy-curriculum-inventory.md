@@ -1019,6 +1019,16 @@ This inventory records the source material available in the founder's Goodnotes 
 - Automated verification: 116 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
 - Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
 
+### Attention-Deficit/Hyperactivity Disorder
+
+- Course scope: lifespan diagnosis, current presentation, childhood onset, cross-setting impairment, differential diagnosis, baseline assessment, behavioral and environmental care, preschool treatment, methylphenidate and amphetamine pharmacology, formulation engineering, titration, cardiovascular and growth monitoring, sleep, misuse and diversion prevention, psychiatric safety, atomoxetine and CYP2D6, alpha2 agonists, viloxazine, tics, special populations, functional outcomes, and care transitions
+- Current references reviewed: current ADHD diagnostic and treatment guidance, current FDA stimulant class warnings and product labeling, current nonstimulant labeling, and RxPrep 2023 ADHD pharmacotherapy scope for historical comparison
+- Learning structure: twelve content-driven lessons, twelve native diagnosis, differential, behavioral, stimulant, formulation, titration, stewardship, atomoxetine, alpha2-agonist, viloxazine, special-population, and integrated-outcome diagrams, and twelve embedded knowledge checks
+- Assessment: 116 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: diagnosis requires developmental onset, impairment, and evidence across settings rather than one rating scale; adult concentration problems receive a full differential; preschool care begins with evidence-based behavioral intervention; methylphenidate and amphetamine families remain pharmacologically distinct; extended-release products are not substituted milligram for milligram; titration follows function with explicit safety limits; current stimulant boxed warnings include misuse, abuse, addiction, overdose, and death; stimulant response does not prove diagnosis; atomoxetine exposure incorporates CYP2D6 genotype, inhibitors, and phenoconversion; alpha2 agonists require gradual tapering; viloxazine retains distinct interaction and safety requirements; tic disorders are not blanket stimulant contraindications; and outcomes prioritize the patient's meaningful function and autonomy
+- Automated verification: 116 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
+
 ## Goodnotes availability
 
 ### Books
