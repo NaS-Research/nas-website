@@ -929,6 +929,16 @@ This inventory records the source material available in the founder's Goodnotes 
 - Automated verification: 120 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
 - Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
 
+### Chronic Hepatitis B
+
+- Course scope: HBV structure, cccDNA, immune-mediated injury, transmission, adult screening, complete serology interpretation, acute-versus-chronic disease, phase and fibrosis staging, current treatment eligibility, high-barrier polymerase inhibitors, peginterferon selection, renal and bone considerations, HIV, HCV, and HDV coinfection, pregnancy, infant immunoprophylaxis, response, stopping flares, reactivation, vaccination, HCC surveillance, and longitudinal ownership
+- Current references reviewed: current CDC HBV screening and immunization guidance; 2025 AASLD and 2024 WHO chronic HBV treatment frameworks; current FDA labeling for TDF, TAF, entecavir, and peginterferon; and RxPrep 2023 hepatitis scope for historical comparison
+- Learning structure: twelve content-driven lessons, twelve native virus, serology, phase, treatment-decision, polymerase-therapy, peginterferon, special-population, pregnancy-infant, monitoring, reactivation, prevention-surveillance, and integrated-care diagrams, and twelve embedded knowledge checks
+- Assessment: 112 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: current universal adult triple-panel screening replaced older symptom or risk-only assumptions; complete marker patterns were interpreted before labeling infection or immunity; treatment decisions extended beyond one ALT or DNA threshold; TDF, TAF, and entecavir retained distinct renal, bone, food, liver, resistance, and HIV constraints; peginterferon remained finite but not low burden; HIV required a fully suppressive regimen with two HBV-active agents; maternal suppression complemented rather than replaced newborn immunoprophylaxis; treatment interruption and reactivation remained active safety risks; and viral suppression did not remove HCC surveillance when risk persisted
+- Automated verification: 112 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
+
 ## Goodnotes availability
 
 ### Books
