@@ -949,6 +949,16 @@ This inventory records the source material available in the founder's Goodnotes 
 - Automated verification: 108 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
 - Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
 
+### Cirrhosis and Decompensated Liver Disease
+
+- Course scope: compensation and decompensation, portal hypertension, Child-Pugh and MELD 3.0 context, diagnostic paracentesis, SAAG, ascites physiology and diuresis, refractory ascites, large-volume paracentesis and albumin, SBP, HRS-AKI and terlipressin, primary variceal prevention, acute variceal hemorrhage, TIPS, hepatic encephalopathy, nutrition, medication safety, HCC surveillance, transplant referral, symptom-centered care, and transition ownership
+- Current references reviewed: current AASLD guidance for ascites, SBP, HRS, portal hypertensive bleeding, hepatic encephalopathy, and HCC surveillance; current FDA labeling for terlipressin and rifaximin; and RxPrep 2023 cirrhosis scope for historical comparison
+- Learning structure: twelve content-driven lessons, twelve native compensation, severity, ascites-diagnosis, ascites-treatment, refractory-ascites, SBP, HRS-AKI, portal-varices, acute-bleeding, encephalopathy, longitudinal-care, and integrated-care diagrams, and twelve embedded knowledge checks
+- Assessment: 112 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: historical decompensation remained prognostically relevant; scores supplemented rather than replaced urgent bedside assessment; prompt diagnostic paracentesis did not depend on fever or pain; ascites treatment preserved kidney function, pressure, sodium, potassium, and nutrition; refractory ascites triggered advanced-therapy and transplant evaluation rather than unsafe diuretic escalation; SBP treatment followed the PMN threshold and local resistance context; HRS-AKI required competing-cause evaluation and terlipressin respiratory safeguards; beta blockade depended on the hemodynamic window; acute bleeding used simultaneous resuscitation, vasoactive therapy, antibiotics, endoscopy, and defined escalation; ammonia did not replace clinical encephalopathy assessment; and routine protein restriction was not retained
+- Automated verification: 112 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
+
 ## Goodnotes availability
 
 ### Books
