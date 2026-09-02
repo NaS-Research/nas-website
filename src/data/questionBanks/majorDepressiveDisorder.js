@@ -24,7 +24,37 @@ const concepts = [
   ["neuromodulation", "ECT is highly effective for severe, psychotic, catatonic, or urgent depression, while TMS offers a noninvasive option for selected patients.", "Escalate early when severity, psychosis, catatonia, nutrition, suicidality, or prior treatment history makes delay dangerous.", "Treating ECT as a last resort in every case can delay a rapid and effective intervention."],
   ["maintenance", "Continuation treatment consolidates remission, and maintenance duration increases with recurrence, chronicity, severity, residual symptoms, comorbidity, and patient preference.", "Define remission and recovery using symptoms, function, safety, and patient goals, then plan follow-up and relapse prevention.", "Stopping immediately after initial response raises relapse risk because response is not yet durable recovery."],
   ["integrated-care", "Collaborative care links systematic follow-up, a care manager, measurement-based treatment adjustment, primary care, behavioral health, and psychiatric consultation.", "Use a shared plan with diagnosis, safety status, target outcomes, treatment, adherence, adverse effects, next review, and escalation criteria.", "Fragmented prescribing without ownership or measurement can leave nonresponse and safety changes invisible."],
+  ["lethal-means-safety", "Lethal-means safety reduces immediate access to highly lethal methods during a period of elevated risk and is distinct from a promise not to attempt suicide.", "Collaboratively involve the patient and trusted supports when possible, secure or remove lethal means, define emergency contacts, and document who owns each action.", "Relying on a no-suicide contract without changing access, supervision, or follow-up can create false reassurance."],
 ];
+
+const reviewLessonByConcept = {
+  diagnosis: "diagnosis-differential",
+  differential: "diagnosis-differential",
+  "suicide-safety": "suicide-safety",
+  "lethal-means-safety": "suicide-safety",
+  measurement: "measurement-psychotherapy",
+  psychotherapy: "measurement-psychotherapy",
+  ssri: "ssri-selection",
+  "adverse-effects": "ssri-selection",
+  snri: "snri-selection",
+  interactions: "snri-selection",
+  bupropion: "other-antidepressants",
+  mirtazapine: "other-antidepressants",
+  multimodal: "other-antidepressants",
+  tca: "tca-maoi",
+  maoi: "tca-maoi",
+  "serotonin-toxicity": "toxicity-discontinuation",
+  discontinuation: "toxicity-discontinuation",
+  perinatal: "perinatal-postpartum",
+  postpartum: "perinatal-postpartum",
+  "adequate-trial": "inadequate-response",
+  "switch-augment": "inadequate-response",
+  augmentation: "advanced-treatment",
+  esketamine: "advanced-treatment",
+  neuromodulation: "advanced-treatment",
+  maintenance: "recovery-plan",
+  "integrated-care": "recovery-plan",
+};
 
 const dimensions = [["principle", "Which statement is most accurate?", 0], ["action", "Which action best applies the evidence?", 1], ["integration", "Which plan demonstrates the strongest clinical reasoning?", 1], ["hazard", "Which error creates the greatest avoidable risk?", 2]];
 const distractors = ["Use one symptom or one score as the complete diagnosis and treatment plan.", "Choose therapy without reviewing safety, prior response, interactions, or patient preference.", "Change several treatments at once without a target, measurement plan, or follow-up date."];
@@ -32,5 +62,5 @@ const distractors = ["Use one symptom or one score as the complete diagnosis and
 export const majorDepressiveDisorderQuestionBank = concepts.flatMap(([slug, principle, action, hazard], conceptIndex) => dimensions.map(([dimension, stem, answerType], dimensionIndex) => {
   const correct = [principle, action, hazard][answerType];
   const choices = dimension === "hazard" ? [hazard, principle, action, distractors[(conceptIndex + dimensionIndex) % 3]] : [correct, hazard, distractors[(conceptIndex + dimensionIndex) % 3], distractors[(conceptIndex + dimensionIndex + 1) % 3]];
-  return { id: `major-depressive-disorder-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${stem} Focus: ${slug.replaceAll("-", " ")}.`, choices, answer: 0, rationale: `${principle} ${action}`, reviewHref: `#${slug}`, difficulty: dimensionIndex < 2 ? "foundational" : "advanced" };
+  return { id: `major-depressive-disorder-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${stem} Focus: ${slug.replaceAll("-", " ")}.`, choices, answer: 0, rationale: `${principle} ${action}`, reviewHref: `#${reviewLessonByConcept[slug]}`, difficulty: dimensionIndex < 2 ? "foundational" : "advanced" };
 }));

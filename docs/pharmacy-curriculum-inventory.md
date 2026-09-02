@@ -989,6 +989,16 @@ This inventory records the source material available in the founder's Goodnotes 
 - Automated verification: 120 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
 - Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
 
+### Major Depressive Disorder
+
+- Course scope: syndromic diagnosis, bipolar and medical differential, suicide assessment, lethal-means safety, measurement-based care, psychotherapy, SSRI and SNRI selection, bupropion, mirtazapine, multimodal antidepressants, TCAs, MAOIs, serotonin toxicity, discontinuation, adverse effects, interactions, perinatal and postpartum treatment, trial adequacy, switching, augmentation, esketamine, neuromodulation, continuation, maintenance, relapse prevention, and collaborative care
+- Current references reviewed: current psychiatric diagnostic standards, current FDA antidepressant and esketamine labeling, current perinatal mental-health treatment principles, and RxPrep 2023 antidepressant scope for historical comparison
+- Learning structure: twelve content-driven lessons, twelve native diagnosis, safety, measurement, SSRI, SNRI, other-antidepressant, TCA-MAOI, toxicity, perinatal, response, advanced-treatment, and recovery diagrams, and twelve embedded knowledge checks
+- Assessment: 104 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: symptom count was paired with duration, impairment, exclusions, and episode context; bipolar screening precedes antidepressant selection; suicide screening was separated from complete risk assessment and actionable lethal-means safety; validated scales supplement rather than replace function, safety, adherence, and goals; antidepressant classes retain agent-specific interaction, organ, adverse-effect, and withdrawal differences; serotonin toxicity was separated from discontinuation and relapse; perinatal decisions compare untreated illness with treatment evidence without obsolete pregnancy letters; apparent resistance requires reconstruction of diagnosis, dose, duration, adherence, tolerability, and access; and augmentation, esketamine, TMS, and ECT retain distinct indications and monitoring systems
+- Automated verification: 104 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
+
 ## Goodnotes availability
 
 ### Books
