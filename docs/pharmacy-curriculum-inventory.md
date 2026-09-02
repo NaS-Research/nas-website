@@ -1325,7 +1325,7 @@ Target modules:
 2. Cushing Syndrome (`built`, 100 question bank; Goodnotes reconciliation pending)
 3. Adrenal Insufficiency and Adrenal Crisis (`built`, 104 question bank; Goodnotes reconciliation pending)
 4. Gonadal Hormone Pharmacology (`built`, 104 question bank; dedicated Goodnotes lecture reconciled)
-5. Gynecologic Disorders (`built`, 100 question bank; dedicated Goodnotes lectures reconciled)
+5. Gynecologic Disorders (`built`, 104 question bank; dedicated Goodnotes lectures reconciled)
 6. Infertility Pharmacotherapy (`built`, 100 question bank; dedicated Goodnotes lectures reconciled)
 7. Pregnancy and Lactation Pharmacotherapy (`built`, 100 question bank; 58-page dedicated Goodnotes lecture reconciled)
 
@@ -1638,7 +1638,7 @@ Completed production modules:
 9. Sexual Dysfunction
 10. Osteoporosis
 
-The menstrual and gynecologic module includes menstrual assessment, PALM-COEIN classification, acute abnormal uterine bleeding, chronic heavy menstrual bleeding, dysmenorrhea, premenstrual disorders, endometriosis, and uterine fibroids. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 100-question assessment bank.
+The menstrual and gynecologic module includes menstrual assessment, PALM-COEIN classification, acute abnormal uterine bleeding, chronic heavy menstrual bleeding, dysmenorrhea, premenstrual disorders, endometriosis, uterine fibroids, treatment-failure reassessment, and longitudinal reconciliation of safety with reproductive goals. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 104-question assessment bank across 26 concepts and four reasoning levels. Focused verification confirmed 104 unique question IDs, valid remediation links, and at least eight questions mapped to every lesson. The Next.js production build passed September 2, 2026 with 547 static pages generated.
 
 The infertility module includes evaluation timing, the fertile window, female and male evaluation, PCOS-related ovulation induction, clomiphene and metformin, gonadotropin stimulation, trigger and luteal protocols, assisted reproduction, and OHSS prevention. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 100-question assessment bank. Focused verification confirmed 100 unique identifiers and prompts, valid remediation links for all 10 lessons, at least eight questions per lesson, no malformed or duplicate answer choices, and no prohibited dash characters. The Next.js production build passed August 27, 2026 with 547 static pages generated.
 
