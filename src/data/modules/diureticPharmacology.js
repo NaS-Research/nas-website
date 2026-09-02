@@ -51,7 +51,7 @@ export const diureticPharmacologyModule = {
       slug: "thiazide-like-diuretics",
       title: "Thiazide and Thiazide-Like Diuretics",
       summary: "Hydrochlorothiazide, chlorthalidone, indapamide, and metolazone inhibit NCC in the distal convoluted tubule, with meaningful differences in duration, evidence, and use during reduced kidney function.",
-      concepts: ["NCC inhibition", "Calcium retention", "Hyponatremia and hypokalemia", "Metabolic and interaction effects"],
+      concepts: ["NCC inhibition", "Calcium retention", "Hyponatremia and hypokalemia", "Nephrogenic diabetes insipidus"],
       visual: "diuretic-thiazide",
       application: "Select the exact product by blood pressure, edema strategy, duration, kidney function, and evidence, then monitor sodium and potassium early enough to detect clinically important depletion.",
       lesson: [
@@ -59,8 +59,9 @@ export const diureticPharmacologyModule = {
         { heading: "Reverse the loop calcium pattern", body: "NCC inhibition favors distal calcium reabsorption and can reduce urinary calcium. This differs from loop diuretics. The effect can be useful in selected calcium-stone contexts but can also contribute to hypercalcemia in susceptible patients." },
         { heading: "Recognize sodium and potassium risk", body: "Hyponatremia may be severe, especially in older adults, patients with low solute intake, small body size, high water intake, or interacting medicines. Hypokalemia and metabolic alkalosis reflect distal sodium delivery and aldosterone-supported secretion." },
         { heading: "Audit urate, glucose, lithium, and NSAIDs", body: "Thiazide-like therapy can raise uric acid and affect glucose tolerance. Sodium depletion can reduce lithium clearance and cause toxicity. Nonsteroidal anti-inflammatory drugs can blunt the renal response and worsen kidney risk in susceptible patients." },
+        { heading: "Explain paradoxical antidiuresis", body: "In selected patients with nephrogenic diabetes insipidus, a thiazide can reduce urine volume rather than increase it. Mild extracellular volume contraction increases proximal sodium and water reclamation, leaving less fluid for delivery to the collecting duct. Treatment still requires cause-specific care, an appropriate low-solute strategy, and close monitoring of sodium, volume, potassium, and kidney function." },
       ],
-      keyPoints: ["Thiazide-like agents block NCC.", "Urinary calcium generally falls.", "Hyponatremia can be profound.", "Lithium and NSAID interactions matter."],
+      keyPoints: ["Thiazide-like agents block NCC.", "Urinary calcium generally falls.", "Hyponatremia can be profound.", "Paradoxical antidiuresis can reduce urine volume in nephrogenic diabetes insipidus."],
       check: { question: "Which urinary calcium effect commonly distinguishes thiazide-like therapy from loop therapy?", choices: ["Thiazide-like therapy tends to reduce urinary calcium", "Thiazide-like therapy always causes massive calciuria", "Both classes have no calcium effect", "Thiazide-like therapy blocks intestinal calcium only"], answer: 0, rationale: "NCC inhibition enhances distal calcium reabsorption and often lowers urinary calcium excretion.", reviewHref: "#thiazide-like-diuretics" },
     },
     {
@@ -73,6 +74,7 @@ export const diureticPharmacologyModule = {
       lesson: [
         { heading: "Block aldosterone signaling", body: "Spironolactone and eplerenone antagonize intracellular mineralocorticoid receptors, reducing ENaC and sodium potassium ATPase expression over time. Their clinical value can extend beyond weak natriuresis because mineralocorticoid signaling affects cardiovascular remodeling." },
         { heading: "Block ENaC directly", body: "Amiloride and triamterene act at the luminal epithelial sodium channel in the collecting duct. Amiloride has specific value when excessive ENaC activity is central, while product and indication determine its broader use. Direct channel block acts without waiting for receptor-mediated gene expression." },
+        { heading: "Reduce lithium entry with amiloride", body: "Chronic lithium exposure can impair collecting-duct water conservation and produce nephrogenic diabetes insipidus. Amiloride blocks epithelial sodium channels through which lithium can enter principal cells, so it may be considered when lithium-associated polyuria is clinically important. Management must also address hydration, sodium balance, lithium exposure, kidney function, and potassium risk." },
         { heading: "Protect against hyperkalemia", body: "Reduced sodium entry lowers the electrical drive for potassium and hydrogen secretion. Hyperkalemia and non-anion-gap metabolic acidosis become more likely with kidney impairment, diabetes, high potassium intake, supplements, salt substitutes, RAAS blockers, or another potassium-sparing agent." },
         { heading: "Distinguish endocrine and metabolic profiles", body: "Spironolactone can interact with androgen and progesterone pathways, causing gynecomastia, breast symptoms, sexual effects, or menstrual changes. Eplerenone is more receptor selective but has important CYP3A interaction constraints. Monitor by the exact product." },
       ],
@@ -87,9 +89,9 @@ export const diureticPharmacologyModule = {
       visual: "diuretic-other",
       application: "Name what enters the urine: sodium, bicarbonate, glucose, an administered osmole, or electrolyte-free water, then predict the serum consequence.",
       lesson: [
-        { heading: "Use acetazolamide to produce bicarbonaturia", body: "Carbonic anhydrase inhibition reduces proximal bicarbonate reclamation and can produce alkaline urine with hyperchloremic metabolic acidosis, hypokalemia, and reduced effectiveness after bicarbonate stores fall. Product-specific uses extend beyond edema to ocular, neurologic, and altitude contexts." },
+        { heading: "Use acetazolamide to produce bicarbonaturia", body: "Carbonic anhydrase inhibition reduces proximal bicarbonate reclamation and can produce alkaline urine with hyperchloremic metabolic acidosis, hypokalemia, and reduced effectiveness after bicarbonate stores fall. Labeled uses include prevention or improvement of symptoms associated with acute mountain sickness, not motion sickness. Cirrhosis is a contraindication because impaired ammonium handling can precipitate hepatic encephalopathy." },
         { heading: "Respect mannitol compartment shifts", body: "Mannitol is filtered and poorly reabsorbed, increasing tubular fluid osmolality. Before excretion, intravenous osmotic expansion can worsen pulmonary congestion or hyponatremia in susceptible patients. Later water loss can produce hypernatremia and hypovolemia if replacement is inadequate." },
-        { heading: "Distinguish aquaresis from natriuresis", body: "Vasopressin V2 antagonism reduces collecting-duct water permeability and increases electrolyte-free water excretion. Serum sodium can rise rapidly, so diagnosis, baseline sodium, access to water, liver considerations, and product-specific initiation requirements are essential." },
+        { heading: "Distinguish aquaresis from natriuresis", body: "Vasopressin V2 antagonism reduces collecting-duct water permeability and increases electrolyte-free water excretion. For SAMSCA, initiation and reinitiation occur in a hospital with close sodium monitoring. Avoid fluid restriction during the first 24 hours, allow access to water in response to thirst, and limit treatment to 30 days because of liver injury risk. It is not the treatment for hyponatremia that requires urgent sodium correction." },
         { heading: "Place SGLT2 inhibition in a broader outcomes model", body: "SGLT2 inhibitors reduce proximal glucose and sodium reabsorption and produce modest osmotic and natriuretic effects. Their cardiovascular and kidney benefits cannot be explained as simple diuresis alone. Volume status, genital infections, ketoacidosis risk, kidney function, and peri-procedure holding plans remain important." },
       ],
       keyPoints: ["Acetazolamide causes bicarbonate loss.", "Mannitol expands extracellular volume before excretion.", "V2 antagonists produce aquaresis.", "SGLT2 outcomes exceed their diuretic effect."],
@@ -116,9 +118,10 @@ export const diureticPharmacologyModule = {
     { label: "DailyMed. Furosemide tablets", href: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9be5c3b-4b18-7ad2-e053-2995a90a4a8b" },
     { label: "DailyMed. Chlorthalidone tablets", href: "https://dailymed.nlm.nih.gov/dailymed/getFile.cfm?setid=f46fd743-3661-41b7-b12d-30d96692f0ee&type=pdf" },
     { label: "DailyMed. Spironolactone tablets", href: "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=ce792c44-421d-4274-a333-01e2297ee0a3" },
-    { label: "DailyMed. Acetazolamide tablets", href: "https://dailymed.nlm.nih.gov/dailymed/getFile.cfm?setid=d6fba129-ac6e-4d04-bd09-8470be4e7ecc" },
-    { label: "DailyMed. Mannitol injection", href: "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=mannitol%20injection" },
-    { label: "DailyMed. Tolvaptan tablets", href: "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=tolvaptan" },
+    { label: "DailyMed. Acetazolamide tablets", href: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=71f1fbbb-428e-4bf7-bc20-2946c1079bd3" },
+    { label: "DailyMed. Mannitol injection", href: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8ad3145e-00e7-4412-b9a5-06f00f264f30" },
+    { label: "DailyMed. Lithium oral solution", href: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ff9baf45-830f-4a8a-8986-5caeaa1b38cf" },
+    { label: "DailyMed. SAMSCA tablets", href: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5526617c-c7b9-4556-886d-729bbabbc566" },
   ],
   questionBank: diureticPharmacologyQuestionBank,
 };

@@ -212,15 +212,14 @@ This inventory records the source material available in the founder's Goodnotes 
 
 ### Diuretic Pharmacology
 
-- Course scope: segmental nephron transport, target-site delivery, loop, thiazide-like, mineralocorticoid antagonist, ENaC blocker, carbonic anhydrase inhibitor, osmotic, aquaretic, and SGLT2 pharmacology, plus resistance and sequential blockade
+- Course source: complete 36-page `Diuretics MN 2025` source recovered from the local Goodnotes library, rendered page by page, and visually reviewed September 3, 2026
 - Cross reference completed: RxPrep NAPLEX 2023 renal, cardiovascular, electrolyte, acid-base, interaction, toxicology, and monitoring scope
-- Current references reviewed: current DailyMed furosemide, chlorthalidone, spironolactone, acetazolamide, mannitol, and tolvaptan product information
+- Current references reviewed: current DailyMed furosemide, chlorthalidone, spironolactone, acetazolamide, mannitol, lithium, and SAMSCA product information
 - Learning structure: six lessons, six native nephron, loop, thiazide, collecting-duct, specialized-agent, and resistance diagrams, and six embedded knowledge checks
-- Assessment: 100 original questions spanning tubular secretion, segment capacity, distal sodium delivery, effective circulating volume, NKCC2, NCC, calcium and magnesium, ototoxicity, hyponatremia, lithium, aldosterone, ENaC, hyperkalemia, bicarbonaturia, osmotic compartment shifts, aquaresis, SGLT2 physiology, early response, post-diuretic retention, sequential blockade, and NSAID interactions; ten sampled without replacement per attempt with answer order randomized
-- Source reconciliation: decongestion was separated from intravascular depletion; dose equivalence was framed as approximate and response based; cardio-renal worsening was not interpreted from creatinine alone; aquaresis was separated from natriuresis; advanced combination therapy was paired with explicit electrolyte and perfusion monitoring
-- Automated verification: 100 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 16 questions mapped to every lesson, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
-- Goodnotes note: the dedicated diuretic pharmacology lecture export remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
+- Assessment: 116 original questions spanning tubular secretion, segment capacity, distal sodium delivery, effective circulating volume, NKCC2, NCC, calcium and magnesium, ototoxicity, hyponatremia, lithium, paradoxical antidiuresis, aldosterone, ENaC, hyperkalemia, bicarbonaturia, osmotic compartment shifts, aquaresis, SGLT2 physiology, early response, post-diuretic retention, sequential blockade, and NSAID interactions; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: thiazide treatment of nephrogenic diabetes insipidus was added through its paradoxical proximal-reclamation mechanism; amiloride was connected to reduced lithium entry through ENaC; acetazolamide was corrected from motion sickness to acute mountain sickness and paired with its cirrhosis contraindication; SAMSCA was paired with hospital initiation, controlled sodium correction, access to water, and the 30-day liver-safety limit. Forced diuresis for anion overdose, blanket sulfonamide contraindication language, universal torsemide superiority, a unique fatal quinidine interaction, and peptic-ulcer contraindication language were not carried forward.
+- Automated verification: 116 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 16 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 3, 2026 with 549 static pages generated after complete source reconciliation
 
 ### Diuretic Medicinal Chemistry
 
@@ -1169,7 +1168,7 @@ Target modules:
 1. Adrenergic Agonists (`built`, 112 question bank; Goodnotes reconciliation complete)
 2. Adrenergic Antagonists (`built`, 112 question bank; Goodnotes reconciliation complete)
 3. Adrenergic Medicinal Chemistry (`built`, 112 question bank; Goodnotes reconciliation complete)
-4. Diuretic Pharmacology (`built`, 100 question bank; Goodnotes reconciliation pending)
+4. Diuretic Pharmacology (`built`, 116 question bank; Goodnotes reconciliation complete)
 5. Diuretic Medicinal Chemistry (`built`, 100 question bank; Goodnotes reconciliation pending)
 6. Glaucoma Pharmacotherapy (`built`, 100 question bank; Goodnotes reconciliation pending)
 
