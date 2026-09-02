@@ -979,6 +979,16 @@ This inventory records the source material available in the founder's Goodnotes 
 - Automated verification: 112 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
 - Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
 
+### Acute Liver Failure
+
+- Course scope: syndrome definition and tempo, parallel etiologic investigation, acute and repeated acetaminophen exposure, acetylcysteine rescue, early ICU and transplant-center transfer, airway and transport planning, encephalopathy, ammonia, cerebral edema, continuous renal replacement therapy, hemodynamic and metabolic support, infection, nutrition, coagulopathy, procedural hemostasis, viral, autoimmune, Wilson, pregnancy-related, vascular, and ischemic causes, prognostication, emergency transplantation, medication stewardship, integrated rescue planning, recovery, and recurrence prevention
+- Current references reviewed: current AASLD acute liver failure guidance and educational update, current acetylcysteine labeling, established transplant prognostic criteria, and RxPrep 2023 liver-failure and toxicology scope for historical comparison
+- Learning structure: twelve content-driven lessons, twelve native syndrome, cause, acetaminophen, transfer, neurologic, organ-support, coagulation, cause-specific, prognosis, medication-stewardship, integrated-case, and recovery diagrams, and twelve embedded knowledge checks
+- Assessment: 120 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: acute liver injury was separated from the full ALF syndrome; transfer and transplant evaluation begin before diagnostic certainty; unknown-time and repeated acetaminophen exposure are not evaluated with the acute nomogram; acetylcysteine duration follows biochemical and clinical recovery rather than a fixed infusion sequence; selected non-acetaminophen use does not replace cause-specific rescue; neurologic care accounts for rapid cerebral edema risk; continuous renal replacement therapy can support ammonia, acid-base, kidney, and fluid control; INR is preserved as a prognostic marker and not corrected routinely in the absence of bleeding or procedure need; viral, autoimmune, Wilson, pregnancy-related, vascular, and ischemic pathways remain distinct; prognostic scores inform but do not delay transplant-team judgment; and recovery includes hepatic, cognitive, functional, medication, mental-health, and recurrence-prevention ownership
+- Automated verification: 120 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
+
 ## Goodnotes availability
 
 ### Books

@@ -24,7 +24,45 @@ const concepts = [
   ["transplant", "Emergency liver transplantation is definitive therapy for selected ALF patients unlikely to recover spontaneously.", "Begin medical, psychosocial, infectious, cardiovascular, financial, and surgical evaluation in parallel with ICU care.", "Treating transplant referral as a final step after all medical therapy fails wastes critical time."],
   ["bleeding-procedures", "Spontaneous major bleeding is less common than INR suggests, but invasive procedures and gastrointestinal bleeding still require careful planning.", "Use the least invasive diagnostic route, ultrasound guidance, viscoelastic testing when available, and targeted blood products for bleeding or procedures.", "Correcting every laboratory abnormality prophylactically exposes patients to transfusion and volume complications."],
   ["closed-loop", "ALF management depends on minute-to-minute trends, clear team ownership, cause-specific therapy, transplant decisions, family communication, and recovery planning.", "Use a shared checklist for neurologic grade, glucose, ammonia, INR, lactate, kidneys, infection, hemodynamics, treatment milestones, and listing status.", "Fragmented specialty notes without one time-stamped plan can produce contradictory medications and delayed escalation."],
+  ["airway-transport", "Worsening encephalopathy can rapidly impair airway protection, while intubation, sedation, ventilation, and transport can alter cerebral perfusion and obscure the neurologic examination.", "Plan airway management with critical care and transplant teams before urgent transport, using hemodynamically cautious induction and the least sedation needed for safety.", "Delaying airway planning until aspiration, severe agitation, or profound coma develops can make stabilization and transfer more dangerous."],
+  ["dose-route-review", "Changing hepatic clearance, kidney function, perfusion, enteral absorption, and neurologic status can alter the benefit and harm of every medication used during ALF.", "Reassess indication, dose, interval, route, formulation, vehicle, interactions, and measurable stop criteria after every meaningful organ change.", "Continuing admission medication doses unchanged during evolving multiorgan failure can compound sedation, hypotension, kidney injury, or toxicity."],
+  ["integrated-priorities", "A useful ALF plan separates immediate threats from time-sensitive diagnostic work, cause-specific rescue, organ support, and transplant decisions without treating them as sequential tasks.", "Assign an owner and deadline to each parallel priority, then update the shared plan when new trends or results change the risk hierarchy.", "Completing the diagnostic workup before beginning stabilization, antidotal therapy, or transplant evaluation creates preventable delay."],
+  ["recovery-follow-up", "Survival from ALF does not by itself establish complete hepatic, cognitive, physical, or medication recovery.", "Arrange follow-up for liver tests, function, cognition, nutrition, rehabilitation, medication reconciliation, and cause-specific specialty care.", "Discharging a survivor without confirming ownership of laboratory and functional follow-up can allow persistent injury or disability to go unrecognized."],
+  ["recurrence-prevention", "Preventing recurrent injury requires a cause-specific plan that patients and caregivers can apply after hospitalization.", "Document avoidances, safe medication use, vaccination or infection prevention when relevant, warning symptoms, emergency contacts, and mental-health support after intentional exposure.", "Generic advice to avoid all medicines can create fear and undertreatment while failing to address the actual cause of liver failure."],
 ];
+
+const reviewLessonByConcept = {
+  definition: "definition-tempo",
+  "hyperacute-subacute": "definition-tempo",
+  etiology: "etiology-workup",
+  "initial-workup": "etiology-workup",
+  "acetaminophen-mechanism": "acetaminophen-rescue",
+  acetylcysteine: "acetaminophen-rescue",
+  "non-apap-nac": "acetaminophen-rescue",
+  "icu-transfer": "icu-transfer",
+  "airway-transport": "icu-transfer",
+  "neurologic-monitoring": "brain-ammonia",
+  "cerebral-edema": "brain-ammonia",
+  "ammonia-rrt": "brain-ammonia",
+  hemodynamics: "organ-support",
+  "renal-metabolic": "organ-support",
+  infection: "organ-support",
+  coagulopathy: "coagulation-procedures",
+  "bleeding-procedures": "coagulation-procedures",
+  "viral-alf": "cause-specific-treatment",
+  "autoimmune-alf": "cause-specific-treatment",
+  "wilson-alf": "cause-specific-treatment",
+  "pregnancy-alf": "cause-specific-treatment",
+  "vascular-ischemic": "cause-specific-treatment",
+  prognostication: "prognosis-transplant",
+  transplant: "prognosis-transplant",
+  "nutrition-medication": "medication-stewardship",
+  "dose-route-review": "medication-stewardship",
+  "closed-loop": "integrated-case",
+  "integrated-priorities": "integrated-case",
+  "recovery-follow-up": "closed-loop",
+  "recurrence-prevention": "closed-loop",
+};
 
 const dimensions = [["principle", "Which statement is most accurate?", 0], ["action", "Which action best applies the evidence?", 1], ["integration", "Which plan demonstrates the strongest clinical reasoning?", 1], ["hazard", "Which error creates the greatest avoidable risk?", 2]];
 const generic = ["Wait for every diagnostic result before contacting a transplant center.", "Use aminotransferase height alone to decide whether the patient is improving.", "Normalize every laboratory value without considering physiology, trajectory, or treatment consequences."];
@@ -32,5 +70,5 @@ const generic = ["Wait for every diagnostic result before contacting a transplan
 export const acuteLiverFailureQuestionBank = concepts.flatMap(([slug, principle, action, hazard], conceptIndex) => dimensions.map(([dimension, stem, answerType], dimensionIndex) => {
   const correct = [principle, action, hazard][answerType];
   const choices = dimension === "hazard" ? [hazard, principle, action, generic[(conceptIndex + dimensionIndex) % 3]] : [correct, hazard, generic[(conceptIndex + dimensionIndex) % 3], generic[(conceptIndex + dimensionIndex + 1) % 3]];
-  return { id: `acute-liver-failure-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${stem} Focus: ${slug.replaceAll("-", " ")}.`, choices, answer: 0, rationale: `${principle} ${action}`, reviewHref: `#${slug}`, difficulty: dimensionIndex < 2 ? "foundational" : "advanced" };
+  return { id: `acute-liver-failure-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${stem} Focus: ${slug.replaceAll("-", " ")}.`, choices, answer: 0, rationale: `${principle} ${action}`, reviewHref: `#${reviewLessonByConcept[slug]}`, difficulty: dimensionIndex < 2 ? "foundational" : "advanced" };
 }));
