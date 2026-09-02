@@ -781,9 +781,9 @@ This inventory records the source material available in the founder's Goodnotes 
 - Learning structure: ten content-driven lessons, ten native control, zone, synthesis, receptor, protection, scaffold, family, disposition, equivalence, and exposure diagrams, and ten embedded knowledge checks
 - Assessment: 104 original questions, ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: disease-specific Cushing syndrome and adrenal insufficiency treatment remain reserved for their dedicated modules; the older simplified rule that systemic treatment beyond fourteen days always requires tapering was replaced by the current guideline recommendation that short-term treatment under three to four weeks generally does not require tapering solely for HPA protection; long-term tapering begins only after the treated disease is controlled; oral and nonoral glucocorticoid exposure are counted together; strong CYP3A4 inhibition and long-acting agents were included as suppression risks; and equivalence values were presented as approximate anti-inflammatory comparisons rather than exact patient-specific substitutions
-- Automated verification: 104 unique question IDs, four unique choices per question, valid lesson links, ten diagrams, and no em dash or en dash characters in public prose
+- Automated verification: 104 unique question IDs, four unique choices per question, valid lesson links, ten diagrams, at least eight questions mapped to every lesson, and no em dash or en dash characters in public prose
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, ten diagrams, all ten embedded knowledge checks, ten-question randomized attempts with changed question sets, complete scoring, ten remediation links, and no browser errors or warnings
-- Build verification: Next.js production build passed August 25, 2026 with 394 static pages generated
+- Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
 - Goodnotes note: the dedicated adrenal pharmacology lectures and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
 
 ### Cushing Syndrome
