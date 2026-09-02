@@ -2403,6 +2403,8 @@ Current source reconciliations:
 - Alcohol counseling explicitly distinguishes CDC's finding that convincing evidence is lacking from the current product labels that still instruct avoidance. Metronidazole and tinidazole use three-day post-treatment intervals, while secnidazole uses at least two days.
 - Disulfiram separation, warfarin and INR ownership, severe hepatic impairment, end-stage renal disease surveillance, neurologic toxicity, severe skin reactions, Cockayne syndrome, blood effects, and post-treatment candidiasis are taught as actionable decisions.
 - Retired pregnancy letters are excluded. CDC considers metronidazole low risk when pregnancy treatment is indicated, advises avoiding tinidazole in pregnancy, and current labels provide agent-specific breastfeeding interruption intervals.
+- Assessment coverage includes 160 original questions across 38 concepts and four reasoning levels, with explicit molecule and formulation selection, definitive response reassessment, and at least eight questions mapped to every lesson.
+- Focused assessment audit, public-language scan, remediation links, and the 547-page Next.js production build passed September 2, 2026.
 - Goodnotes was not required to advance this RxPrep-defined milestone. Any later matching lecture material will receive a documented reconciliation pass.
 
 ### Lefamulin Pharmacology
