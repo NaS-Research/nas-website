@@ -1029,6 +1029,16 @@ This inventory records the source material available in the founder's Goodnotes 
 - Automated verification: 116 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
 - Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
 
+### Anxiety Disorders
+
+- Course scope: anxiety syndrome mapping, generalized anxiety, panic attacks and panic disorder, social and performance anxiety, medical and psychiatric differential, direct safety assessment, CBT and exposure, stepped care, SSRIs and SNRIs, activation, buspirone, benzodiazepine pharmacology and tapering, propranolol, hydroxyzine, pregabalin evidence boundaries, older adults, pregnancy and lactation, natural products, nonresponse, functional recovery, and relapse prevention
+- Current references reviewed: current anxiety-disorder treatment guidance, current FDA antidepressant and benzodiazepine safety information, current buspirone and nonstimulant product labeling, and RxPrep 2023 anxiety pharmacotherapy scope for historical comparison
+- Learning structure: twelve content-driven lessons, twelve native syndrome, differential-risk, CBT-exposure, stepped-care, antidepressant, buspirone, benzodiazepine, panic, social-anxiety, special-population, nonresponse, and integrated-recovery diagrams, and twelve embedded knowledge checks
+- Assessment: 108 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: anxiety was separated into distinct fear, worry, arousal, avoidance, and functional patterns; medical danger is excluded without reinforcing endless reassurance; screening scales do not replace diagnosis or direct safety assessment; exposure is collaborative corrective learning rather than forced distress; antidepressant treatment includes activation, bipolar screening, adequate duration, and taper planning; buspirone is scheduled therapy rather than immediate rescue; benzodiazepine counseling incorporates current misuse, dependence, withdrawal, opioid, alcohol, driving, fall, and respiratory risks; propranolol remains limited to selected performance symptoms; pregabalin evidence is distinguished from U.S. labeling; obsolete pregnancy letters were excluded; and nonresponse requires a diagnostic, exposure, psychotherapy, comorbidity, and access audit before adding treatment burden
+- Automated verification: 108 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
+
 ## Goodnotes availability
 
 ### Books
