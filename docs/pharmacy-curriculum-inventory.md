@@ -179,15 +179,14 @@ This inventory records the source material available in the founder's Goodnotes 
 
 ### Adrenergic Agonists
 
-- Course scope: adrenoceptor signaling, direct and indirect sympathomimetics, vasopressors and inotropes, inhaled beta-2 agonists, peripheral and central alpha agonists, and integrated safety
+- Course source: complete 32-page `Adrenoceptor activating drugs` source recovered from the local Goodnotes library, rendered page by page, and visually reviewed September 3, 2026
 - Cross reference completed: RxPrep NAPLEX 2023 emergency, pulmonary, cardiovascular, orthostatic, attention, sedation, interaction, and monitoring scope
-- Current references reviewed: current DailyMed epinephrine, norepinephrine, albuterol, midodrine, clonidine, and related product labeling, plus IUPHAR and BPS alpha and beta adrenoceptor nomenclature
+- Current references reviewed: current DailyMed epinephrine, norepinephrine, dopamine, ephedrine, albuterol, midodrine, clonidine, and related product labeling, plus IUPHAR and BPS alpha, beta, and dopamine receptor nomenclature
 - Learning structure: six lessons, six native receptor, hemodynamic, airway, alpha-agonist, and safety diagrams, and six embedded knowledge checks
-- Assessment: 100 original questions spanning receptor coupling, direct and reflex response, catecholamine spectra, indirect release, anaphylaxis, shock, inotropy, extravasation, beta-2 device use, potassium and lactate, central alpha-2 withdrawal, and interaction burden; ten sampled without replacement per attempt with answer order randomized
-- Source reconciliation: rigid dopamine dose zones were rejected; pressure was separated from perfusion; beta-2 rescue was separated from anti-inflammatory disease control; heart-rate and blood-pressure changes were interpreted through direct and reflex physiology; receptor preference was not treated as absolute selectivity
-- Automated verification: 100 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 12 questions mapped to every lesson, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
-- Goodnotes note: the dedicated adrenoceptor-activating lecture export remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
+- Assessment: 112 original questions spanning receptor coupling, dopamine D1-like vascular signaling, direct and reflex response, catecholamine spectra, indirect release, ephedrine mixed action, baroreflex compensation, anaphylaxis, shock, inotropy, extravasation, beta-2 device use, potassium and lactate, central alpha-2 withdrawal, and interaction burden; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: dopamine receptors were added as a distinct signaling family; ephedrine was added as a mixed direct and indirect sympathomimetic; pressor effects were connected to baroreflex compensation. Rigid dopamine dose zones and kidney-protection claims were rejected; pressure was separated from perfusion; beta-2 rescue was separated from anti-inflammatory disease control; obsolete phenylpropanolamine use or status claims and broad contraindication simplifications were not carried forward; receptor preference was not treated as absolute selectivity.
+- Automated verification: 112 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 12 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 3, 2026 with 549 static pages generated after complete source reconciliation
 
 ### Adrenergic Antagonists
 
@@ -1169,7 +1168,7 @@ Available documents:
 
 Target modules:
 
-1. Adrenergic Agonists (`built`, 100 question bank; Goodnotes reconciliation pending)
+1. Adrenergic Agonists (`built`, 112 question bank; Goodnotes reconciliation complete)
 2. Adrenergic Antagonists (`built`, 100 question bank; Goodnotes reconciliation pending)
 3. Adrenergic Medicinal Chemistry (`built`, 100 question bank; Goodnotes reconciliation pending)
 4. Diuretic Pharmacology (`built`, 100 question bank; Goodnotes reconciliation pending)
