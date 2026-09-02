@@ -168,15 +168,14 @@ This inventory records the source material available in the founder's Goodnotes 
 
 ### Cholinergic Toxicology and Cholinesterase Regeneration
 
-- Course source: exported cholinoceptor lecture sections on cholinergic excess, muscarinic toxicity, atropine, and acetylcholinesterase inhibition; dedicated cholinoceptor-blocker and regenerator lecture reconciliation remains pending
+- Course source: exported cholinoceptor sections on cholinergic excess, muscarinic toxicity, atropine, and acetylcholinesterase inhibition, plus the complete 25-page `Cholinoceptor Blockers & Cholinesterase Regenerators` source recovered from the local Goodnotes library, rendered page by page, and visually reviewed September 3, 2026
 - Cross reference completed: RxPrep NAPLEX 2023 toxicology, pesticide exposure, antidote, emergency stabilization, and monitoring scope
 - Current references reviewed: current DailyMed atropine sulfate and pralidoxime labeling, CDC and ATSDR exposure-response resources, NIH PubChem pralidoxime chemistry, and IUPHAR and BPS receptor nomenclature
 - Learning structure: six lessons, six native exposure, receptor-domain, decontamination, antidote, and recovery diagrams, and six embedded knowledge checks
-- Assessment: 100 original questions spanning exposure reconstruction, muscarinic, nicotinic, and central findings, responder protection, decontamination, atropine endpoints, pralidoxime reactivation, aging, recurrent toxicity, intermediate weakness, and delayed neuropathy; ten sampled without replacement per attempt with answer order randomized
-- Source reconciliation: airway and ventilation were prioritized over mnemonic diagnosis; heart rate and pupil size were rejected as sole severity or atropinization endpoints; atropine was separated from nicotinic recovery; oxime benefit and aging were made agent and time dependent; decontamination was integrated with protected resuscitation
-- Automated verification: 100 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 12 questions mapped to every lesson, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
-- Goodnotes note: the dedicated cholinoceptor-blocker and cholinesterase-regenerator lecture export remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
+- Assessment: 112 original questions spanning exposure reconstruction, muscarinic, nicotinic, and central findings, wet-versus-dry toxidrome differentiation, responder protection, decontamination, atropine endpoints, pralidoxime reactivation, aging, administration rate, renal exposure, adverse-effect attribution, recurrent toxicity, intermediate weakness, and delayed neuropathy; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: the source's adjacent atropine-toxicity and cholinesterase-poisoning material was separated into receptor-domain patterns; pralidoxime muscle weakness was reframed as one possible treatment-associated finding that overlaps with poison effects; current label guidance on slow administration and renal exposure was added. Airway and ventilation remain prioritized over mnemonic diagnosis; heart rate and pupil size remain rejected as sole severity or atropinization endpoints; atropine remains separated from nicotinic recovery; oxime benefit and aging remain agent and time dependent; decontamination remains integrated with protected resuscitation.
+- Automated verification: 112 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 12 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 3, 2026 with 549 static pages generated after complete source reconciliation
 
 ### Adrenergic Agonists
 
@@ -1155,7 +1154,7 @@ Target modules:
 3. Antimuscarinic Pharmacology (`built`, 112 question bank; Goodnotes reconciliation complete)
 4. Cholinergic Medicinal Chemistry (`built`, 100 question bank)
 5. Anticholinergic Medicinal Chemistry (`built`, 112 question bank; Goodnotes reconciliation complete)
-6. Cholinergic Toxicology and Cholinesterase Regeneration (`built`, 100 question bank; Goodnotes reconciliation pending)
+6. Cholinergic Toxicology and Cholinesterase Regeneration (`built`, 112 question bank; Goodnotes reconciliation complete)
 
 #### Adrenergic, diuretic, and ocular pharmacology
 
