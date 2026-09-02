@@ -14,6 +14,7 @@ const concepts = [
   ["clearance-duration", "Uncomplicated candidemia is generally treated for 14 days after documented bloodstream clearance and symptom resolution.", "Start the duration clock from the first negative culture that remains negative, after excluding metastatic complications.", "Counting 14 days from the first positive culture can shorten therapy."],
   ["catheter-source", "Central venous catheter removal is recommended as early as possible in nonneutropenic candidemia when the catheter is the presumed source and removal is safe.", "Individualize removal in neutropenia and balance line necessity, source probability, culture persistence, and procedural risk.", "Leaving a removable infected catheter in place can sustain fungemia and biofilm."],
   ["persistent-fungemia", "Persistent candidemia suggests an uncontrolled catheter or abdominal source, endocarditis, thrombophlebitis, deep abscess, resistant isolate, or inadequate exposure.", "Rebuild source, species, susceptibility, compartment, device, dose, and exposure assessment rather than simply extending the same plan.", "Persistent positive cultures should not be normalized as slow clearance."],
+  ["persistence-timeline", "The timing and pattern of persistent blood cultures can distinguish an uncleared source, delayed drug activity, inadequate exposure, or a previously unrecognized deep compartment.", "Build a dated timeline of every culture, antifungal dose, line decision, procedure, susceptibility result, and clinical change before declaring pharmacologic failure.", "Escalating therapy without reconstructing the culture and source-control timeline can add toxicity while leaving the true driver unchanged."],
   ["eye-conflict", "The 2016 IDSA guideline recommends routine dilated eye examination, while later ophthalmology guidance questions routine screening in asymptomatic patients because yield is low.", "Flag the conflict and use current institutional guidance, symptoms, host risk, candidemia persistence, and specialist input.", "Presenting either position as universally uncontested conceals a meaningful guideline conflict."],
   ["endophthalmitis", "Candida chorioretinitis or endophthalmitis requires ophthalmologic staging and an antifungal that reaches the posterior eye, with intravitreal therapy or surgery when indicated.", "Use lesion location, vitritis, species, susceptibility, systemic infection, and serial examination to design therapy.", "An echinocandin-only bloodstream regimen may not provide adequate vitreous exposure."],
   ["endocarditis", "Candida endocarditis usually requires valve or device surgery plus prolonged high-dose echinocandin or lipid amphotericin with flucytosine, followed by susceptible azole step-down and sometimes chronic suppression.", "Engage cardiac surgery and infectious-disease expertise early and assess embolic and metastatic sites.", "Treating fungal endocarditis as uncomplicated 14-day candidemia risks relapse and embolic harm."],
@@ -23,8 +24,45 @@ const concepts = [
   ["neutropenia", "Neutropenic candidemia requires echinocandin or appropriate alternative therapy, source evaluation, clearance cultures, and treatment through clinical and bloodstream resolution with attention to neutrophil recovery.", "Coordinate antifungal therapy with hematologic recovery and evaluate hepatosplenic or other deep disease.", "Assuming fever resolution before neutrophil recovery proves cure can miss persistent disease."],
   ["neonate", "Neonatal candidemia differs in drug choice, CNS and urinary evaluation, catheter management, dosing, and developmental pharmacology.", "Use neonatal expertise, blood and urine cultures, lumbar puncture when feasible, eye assessment, and current age-specific labeling.", "Copying an adult echinocandin regimen into a neonate can produce the wrong exposure and miss CNS disease."],
   ["candida-auris", "Candida auris clinical infection is treated initially with an echinocandin in most patients older than two months, while colonization without infection is not treated.", "Report cases as required, maintain infection-control precautions, obtain susceptibility testing, and communicate status during transfer.", "Treating an asymptomatic screening swab does not eradicate colonization and adds resistance pressure."],
+  ["candida-auris-transfer", "Candida auris colonization can persist and spread across healthcare settings even when no active infection requires antifungal treatment.", "Communicate colonization or infection status before transfer and preserve current contact precautions, environmental cleaning, screening, and public-health coordination.", "Omitting Candida auris status from a handoff can expose the receiving facility before appropriate precautions begin."],
+  ["device-prevention", "Central lines, urinary devices, parenteral nutrition, abdominal leaks, and other modifiable exposures should be reassessed because prevention begins with reducing avoidable portals and sources.", "Review daily device necessity, insertion and maintenance quality, nutrition route, antimicrobial pressure, wound or anastomotic integrity, and removal opportunities.", "Using prophylactic antifungals as a substitute for device and source stewardship preserves the conditions that produce invasive infection."],
+  ["antifungal-stewardship", "Antifungal stewardship aligns diagnostic probability, local epidemiology, agent spectrum, dose, source control, susceptibility, duration, toxicity, and de-escalation.", "Set a review point for every empiric regimen and document the evidence required to stop, narrow, continue, or redirect therapy.", "Continuing broad antifungal therapy without a diagnostic and source reassessment adds toxicity and selection pressure without proving benefit."],
   ["closed-loop", "Complete invasive candidiasis care links host risk, cultures, species, susceptibility, source control, exact antifungal, clearance, deep-site assessment, duration, and infection prevention.", "Assign ownership for cultures, line decisions, imaging, procedures, eye strategy, dose, transition, resistance, and follow-up.", "A prescription without clearance and source ownership leaves treatment failure invisible."],
+  ["transition-ownership", "Invasive candidiasis care crosses laboratory, inpatient, procedural, pharmacy, outpatient, and infection-prevention teams, so every transition can alter exposure or lose a pending result.", "At transfer or discharge, reconcile the exact agent, dose, route, renal plan, interaction plan, duration anchor, pending cultures, procedures, and named follow-up owner.", "A discharge prescription without culture, source, and duration ownership can hide recurrence or stop therapy from the wrong date."],
 ];
+
+const reviewLessonByConcept = {
+  syndrome: "risk-pathogenesis",
+  risk: "risk-pathogenesis",
+  "blood-culture": "diagnostic-evidence",
+  "beta-glucan": "diagnostic-evidence",
+  species: "diagnostic-evidence",
+  "initial-echinocandin": "initial-therapy",
+  caspofungin: "initial-therapy",
+  micafungin: "initial-therapy",
+  anidulafungin: "initial-therapy",
+  rezafungin: "initial-therapy",
+  "clearance-duration": "clearance-source",
+  "catheter-source": "clearance-source",
+  "fluconazole-initial": "stepdown-exposure",
+  stepdown: "stepdown-exposure",
+  "persistent-fungemia": "persistent-fungemia",
+  "persistence-timeline": "persistent-fungemia",
+  "eye-conflict": "eye-endocardial",
+  endophthalmitis: "eye-endocardial",
+  endocarditis: "eye-endocardial",
+  intraabdominal: "deep-compartments",
+  urinary: "deep-compartments",
+  "cns-bone": "deep-compartments",
+  neutropenia: "neutropenia-neonate",
+  neonate: "neutropenia-neonate",
+  "candida-auris": "candida-auris",
+  "candida-auris-transfer": "candida-auris",
+  "device-prevention": "prevention-stewardship",
+  "antifungal-stewardship": "prevention-stewardship",
+  "closed-loop": "integrated-case",
+  "transition-ownership": "integrated-case",
+};
 
 const dimensions = [["principle", "Which statement is most accurate?", 0], ["action", "Which action best applies the evidence?", 1], ["assessment", "Which plan demonstrates the strongest clinical reasoning?", 1], ["hazard", "Which error creates the greatest avoidable risk?", 2]];
 const generic = ["Use one isolated result without considering source, species, site, host, or prior antifungal exposure.", "Continue the same plan despite persistent fungemia and no source reassessment.", "Assume every Candida species, echinocandin, and body compartment is interchangeable."];
@@ -32,5 +70,5 @@ const generic = ["Use one isolated result without considering source, species, s
 export const invasiveCandidiasisQuestionBank = concepts.flatMap(([slug, principle, action, hazard], conceptIndex) => dimensions.map(([dimension, stem, answerType], dimensionIndex) => {
   const correct = [principle, action, hazard][answerType];
   const choices = dimension === "hazard" ? [hazard, principle, action, generic[(conceptIndex + dimensionIndex) % 3]] : [correct, hazard, generic[(conceptIndex + dimensionIndex) % 3], generic[(conceptIndex + dimensionIndex + 1) % 3]];
-  return { id: `invasive-candidiasis-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${stem} Focus: ${slug.replaceAll("-", " ")}.`, choices, answer: 0, rationale: `${principle} ${action}`, reviewHref: `#${slug}`, difficulty: dimensionIndex < 2 ? "foundational" : "advanced" };
+  return { id: `invasive-candidiasis-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${stem} Focus: ${slug.replaceAll("-", " ")}.`, choices, answer: 0, rationale: `${principle} ${action}`, reviewHref: `#${reviewLessonByConcept[slug]}`, difficulty: dimensionIndex < 2 ? "foundational" : "advanced" };
 }));

@@ -919,6 +919,16 @@ This inventory records the source material available in the founder's Goodnotes 
 - Automated verification: 108 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
 - Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
 
+### Candidemia and Invasive Candidiasis
+
+- Course scope: commensal biology and barrier failure; bloodstream and deep-organ infection; host and device risk; blood culture, beta-D-glucan, species, and susceptibility evidence; echinocandin and selected fluconazole initiation; source control; bloodstream clearance; duration; oral transition; persistent fungemia; ocular and endocardial disease; abdominal, urinary, CNS, bone, joint, and hepatosplenic compartments; neutropenia; neonatal disease; Candida auris; prevention; stewardship; and transition ownership
+- Current references reviewed: IDSA candidiasis guidance; current CDC Candida auris clinical, infection-control, and transfer guidance; current FDA labeling for caspofungin, micafungin, anidulafungin, rezafungin, and fluconazole; and RxPrep 2023 systemic-antifungal scope for historical comparison
+- Learning structure: twelve content-driven lessons, twelve native pathogenesis, diagnostic, initial-therapy, clearance-source, step-down, persistence, eye-endocardial, deep-compartment, neutropenia-neonate, Candida auris, prevention-stewardship, and integrated-care diagrams, and twelve embedded knowledge checks
+- Assessment: 120 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: bloodstream and deep-organ disease were separated from colonization; negative blood cultures did not exclude deep invasive disease; species and susceptibility informed definitive treatment; echinocandin products retained their exact loading and maintenance requirements; selected fluconazole use required a defined host and resistance context; the duration clock began after documented sustained clearance and symptom resolution; source control and metastatic-site evaluation were not replaced by drug escalation; step-down required stability, susceptibility, clearance, and reliable delivery; persistent fungemia triggered a dated causal reconstruction; eye-screening guideline disagreement remained visible; deep compartments used site-specific exposure and duration; and Candida auris infection treatment was separated from colonization, infection control, and transfer communication
+- Automated verification: 120 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
+
 ## Goodnotes availability
 
 ### Books
