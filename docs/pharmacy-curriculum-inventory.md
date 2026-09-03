@@ -2880,7 +2880,7 @@ Current source reconciliations:
 - Empiric, preemptive, source-control, de-escalation, step-down, failure-audit, and educational boundaries close the module before later drug-class and fungal-syndrome modules.
 - Interaction coverage now tests both directions of an antifungal transition. Starting an inhibitor can raise substrate exposure, while stopping it can remove inhibition and lower a narrow therapeutic index substrate below target. Strong enzyme induction is treated as an antifungal exposure and failure risk rather than a problem solved by guessing at an unsupported dose.
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 184-question assessment bank across all ten lessons.
-- Goodnotes remains unavailable because macOS reports a locked session. Any matching systemic antifungal lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search for antifungal therapy, mycoses, candidiasis, and aspergillosis returned 45 matching RxPrep pages and no separate dedicated systemic-antifungal lecture. The remaining matches were incidental interaction, adverse-effect, comorbidity, case, or endocrine-use references in anticoagulation, cardiovascular, pulmonary, kidney, reproductive-health, documentation, and adrenal material. Those cross-topic references do not add a separate systemic-antifungal teaching block, so the existing RxPrep, current-label, CDC, FDA, CLSI, and IDSA synthesis covers the complete accessible source set.
 
 ### Amphotericin B and Flucytosine Pharmacology
 
