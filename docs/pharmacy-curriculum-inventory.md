@@ -2525,7 +2525,7 @@ Current source reconciliations:
 - The module distinguishes dermal ointment, cream, and the discontinued dedicated nasal product; local infection from colonization; targeted from universal decolonization; and one nasal intervention from the complete prevention bundle.
 - Isoleucyl transfer RNA synthetase inhibition, product vehicles, impetigo, nasal technique, ICU and surgical protocols, chlorhexidine, resistance, pregnancy and lactation narratives, monitoring, and stewardship are connected across ten lessons.
 - It contains ten original responsive diagrams, ten embedded checks, and a validated 172-question assessment bank.
-- Goodnotes was retried after the user reported restored access, but macOS still reported a locked session. Any matching lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search found nine mupirocin pages in the complete RxPrep sequence plus one cystic-fibrosis page and no dedicated mupirocin lecture. The cystic-fibrosis source describes a highly selected, multi-component MRSA eradication protocol that includes nasal mupirocin, systemic agents, chlorhexidine, and environmental decontamination. That disease-specific regimen remains assigned to the cystic-fibrosis module. The decolonization module already teaches that nasal therapy is one component of a population-specific bundle, so no unsupported duplicate content was added.
 
 ### Perioperative Antimicrobial Prophylaxis
 
