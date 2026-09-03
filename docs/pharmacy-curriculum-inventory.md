@@ -2930,7 +2930,7 @@ Current source reconciliations:
 - FKS1 and FKS2 target resistance, prior exposure, species-specific susceptibility, Candida glabrata failure, Candida auris infection control and reporting, and breakthrough audits connect microbiology to bedside response.
 - Repeat cultures, source control, metastatic-site evaluation, duration after documented clearance, and susceptibility-supported oral step-down close the treatment sequence.
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 176-question assessment bank.
-- Goodnotes source reconciliation remains pending until the local macOS session is unlocked and the library is readable through the application.
+- Goodnotes reconciliation: complete. A restored library-wide full-text search for echinocandin, caspofungin, micafungin, anidulafungin, and rezafungin returned fourteen matching pages, all within RxPrep. No separate echinocandin lecture is present in the indexed library, so the incorporated RxPrep course material and current labeling and guideline synthesis constitute the complete accessible source set.
 
 ### Terbinafine and Griseofulvin Pharmacology
 
