@@ -892,7 +892,7 @@ This inventory records the source material available in the founder's Goodnotes 
 - Automated verification: 160 unique question IDs, 160 unique prompts, four unique choices per question, valid answer indexes, explanations, ten lesson links, ten diagrams, at least 16 questions mapped to every lesson, and no em dash or en dash characters in public prose
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, ten diagrams, all ten embedded knowledge checks, 10 questions and 40 answer choices per assessment, complete scoring, ten remediation links, zero overlap in the verified repeat attempt, and no mobile browser warnings or errors
 - Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
-- Goodnotes reconciliation: direct access was retried after the user reported restoration, but macOS still reported a locked session; relevant slides will receive a documented reconciliation pass after manual unlock
+- Goodnotes reconciliation: complete. A restored library-wide full-text search for immunoglobulin, IVIG, and SCIG found no dedicated immunoglobulin course beyond the RxPrep lesson already incorporated. Matches in asthma, chronic kidney disease, dyslipidemia, heart failure, immunization, pulmonary disease, and device material were incidental biologic, abbreviation, or comorbidity references rather than additional immunoglobulin instruction.
 
 ### Coccidioidomycosis
 
