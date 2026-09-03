@@ -438,15 +438,16 @@ This inventory records the source material available in the founder's Goodnotes 
 
 ### ECG Interpretation
 
-- Course scope: electrical vectors, lead orientation, calibration, artifact, rate calculation, sinus rhythm, atrial fibrillation and flutter, PR, QRS, QTc, axis, AV block, bundle-branch block, ST and T changes, acute occlusion patterns, potassium and magnesium, medication effects, wide-complex tachycardia, unstable tachycardia, symptomatic bradycardia, and an instability-first interpretation workflow
+- Course source: the complete 45-page `EKG Interpretation` source was recovered from the local Goodnotes library, rendered page by page, and visually reviewed September 2, 2026
+- Course scope: electrical vectors, 12-lead electrode placement, lead orientation, calibration, artifact, rate calculation, sinus rhythm, atrial fibrillation and flutter, PR, QRS, QTc, axis, AV block, bundle-branch block, ST and T changes, acute occlusion patterns, potassium and magnesium, medication effects, monomorphic and polymorphic ventricular tachycardia, ventricular fibrillation, pulseless electrical activity, asystole, unstable tachycardia, symptomatic bradycardia, and an instability-first interpretation workflow
 - Cross reference completed: RxPrep NAPLEX 2023 ECG, electrolyte, antiarrhythmic, ischemia, medication-safety, and emergency-cardiovascular scope
-- Current references reviewed: 2025 AHA adult advanced life support guideline and tachyarrhythmia algorithm, 2023 AHA and ACC atrial fibrillation guidance, and 2025 AHA and ACC acute coronary syndromes guidance
+- Current references reviewed: 2025 AHA adult advanced life support guideline, cardiac arrest algorithm, and tachyarrhythmia algorithm; 2023 AHA and ACC atrial fibrillation guidance; 2025 AHA and ACC acute coronary syndromes guidance; and FDA E14 QT and QTc guidance
 - Learning structure: six lessons, six native signal, rhythm, interval, conduction, ischemia and metabolic, and emergency-workflow diagrams, and six embedded knowledge checks
-- Assessment: 108 original questions spanning calibration, vectors, P waves, QRS, regular and irregular rate calculation, sinus rhythm, AF, flutter, PR, QTc, axis, AV blocks, RBBB, LBBB, ST elevation and depression, T waves, electrolyte and drug effects, wide-complex tachycardia, unstable tachycardia, symptomatic bradycardia, artifact, and lead reversal; ten sampled without replacement per attempt with answer order randomized
-- Source reconciliation: ECG interpretation began with calibration and clinical stability; automated measurements required manual verification when consequential; sinus rhythm required sinus P waves; atrial flutter was sought in regular rates near 150; QT correction limitations were explicit; AV block used atrial and ventricular relationships; LBBB neither proved nor excluded infarction; early negative troponin did not delay an occlusion pathway; normal ECG did not exclude dangerous hyperkalemia; unstable rhythms were treated before exhaustive taxonomy
-- Automated verification: 108 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, at least 12 questions mapped to every lesson, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 30, 2026 with 547 static pages generated
-- Goodnotes note: the dedicated ECG lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
+- Assessment: 120 original questions spanning calibration, vectors, electrode placement, P waves, QRS, regular and irregular rate calculation, sinus rhythm, AF, flutter, PR, QTc, axis, AV blocks, RBBB, LBBB, ST elevation and depression, T waves, electrolyte and drug effects, wide-complex tachycardia, monomorphic and polymorphic VT, PEA, asystole, unstable tachycardia, symptomatic bradycardia, artifact, and lead reversal; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: the source sequence was retained as a systematic reading workflow, while fixed sex-specific QT thresholds, the claim that first-degree AV block never causes hemodynamic disturbance, the blanket description of Mobitz I as benign, and isolated ST elevation as proof of infarction were not reproduced. The completed module requires calibration and electrode verification, manual review of consequential automated measurements, atrial and ventricular relationship mapping, clinical assessment of pulse and perfusion, contextual ischemia interpretation, and separation of shockable from nonshockable arrest rhythms.
+- Automated verification: 120 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, at least 12 questions mapped to every lesson, and no em dash or en dash characters in public prose; the complete 221-module audit passed with 28,216 questions and no hard errors
+- Build verification: Next.js production build passed September 2, 2026 with 549 static pages generated
+- Goodnotes reconciliation: complete for the dedicated 45-page ECG interpretation source
 
 ### Arrhythmia Pathophysiology
 
@@ -1243,8 +1244,8 @@ Target modules:
 4. Coagulation and Anticoagulant Pharmacology (`built`, 116 question bank; Goodnotes reconciliation complete)
 5. Venous Thromboembolism (`built`, 120 question bank; Goodnotes reconciliation complete)
 6. Warfarin Management (`built`, 116 question bank; Goodnotes reconciliation complete)
-7. Direct Oral Anticoagulants (`built`, 104 question bank; Goodnotes reconciliation pending)
-8. Parenteral Anticoagulants (`built`, 112 question bank; Goodnotes reconciliation pending)
+7. Direct Oral Anticoagulants (`built`, 116 question bank; Goodnotes reconciliation complete)
+8. Parenteral Anticoagulants (`built`, 124 question bank; Goodnotes reconciliation complete)
 
 #### Arrhythmias
 
@@ -1259,7 +1260,7 @@ Available documents:
 
 Target modules:
 
-1. ECG Interpretation (`built`, 108 question bank; Goodnotes reconciliation pending)
+1. ECG Interpretation (`built`, 120 question bank; Goodnotes reconciliation complete)
 2. Arrhythmia Pathophysiology (`built`, 104 question bank; Goodnotes reconciliation pending)
 3. Atrial Arrhythmias (`built`, 104 question bank; Goodnotes reconciliation pending)
 4. Ventricular Arrhythmias (`built`, 100 question bank; Goodnotes reconciliation pending)
