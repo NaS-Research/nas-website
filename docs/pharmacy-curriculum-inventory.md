@@ -2509,7 +2509,7 @@ Current source reconciliations:
 - The module separates the oral tromethamine packet used for selected uncomplicated cystitis from intravenous fosfomycin products used outside the United States and from unapproved multidose oral strategies.
 - MurA inhibition, early peptidoglycan synthesis, GlpT and UhpT transport, urinary exposure, spectrum boundaries, single-dose administration, resistance, renal evidence, pregnancy and lactation narratives, and stewardship are connected across ten lessons.
 - It contains ten original responsive diagrams, ten embedded checks, and a validated assessment bank exceeding 100 original questions.
-- Goodnotes could not be rechecked because macOS reported a locked session. Any matching lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search found five fosfomycin pages in the complete RxPrep sequence and no separate course lecture, case, or associated document. The existing module already reconciles that source with current oral fosfomycin labeling, susceptibility criteria, and resistant gram-negative guidance, so no unsupported duplicate content was added.
 
 ### Nitrofurantoin Pharmacology
 
