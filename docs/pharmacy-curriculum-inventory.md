@@ -2543,7 +2543,7 @@ Current source reconciliations:
 - Current WHO guidance replaces the older RxPrep age threshold with age over 60 years, pregnancy, or immunocompromise as major Listeria risk triggers. Vancomycin is placed according to pneumococcal resistance risk and institutional epidemiology rather than used without a defined role.
 - Dexamethasone timing, organism-guided continuation, meningitis dosing, neonatal ceftriaxone contraindications, meningococcal carriage eradication, close-contact prophylaxis, complication surveillance, and longitudinal hearing and neurologic care are integrated across ten lessons.
 - It contains ten original responsive diagrams, ten embedded checks, and a validated 172-question assessment bank.
-- Goodnotes remains unavailable because macOS reports a locked session. Any matching meningitis lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search found 23 meningitis pages in the complete RxPrep sequence, one CSF-analysis teaching page, and one incidental stroke-differential reference, with no separate meningitis lecture. The CSF material reinforces the module's existing pattern-based interpretation of opening pressure, neutrophilic pleocytosis, glucose, protein, Gram stain, and culture. The stroke reference only identifies meningitis as a possible fever source and does not add disease-specific instruction, so no unsupported duplicate content was added.
 
 ### Acute Otitis Media
 
