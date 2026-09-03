@@ -3009,6 +3009,8 @@ Current source reconciliations:
 ### Histoplasmosis
 
 - Built from the focused endemic-fungal and HIV opportunistic-infection material in RxPrep 2023 and reconciled with current NIH Adult and Adolescent Opportunistic Infection guidance plus the 2025 IDSA pulmonary histoplasmosis update.
+- Goodnotes source reconciliation is complete. A library-wide search found three matching pages, all in the complete RxPrep source already used for this module, with no separate histoplasmosis lecture, case, or associated document.
+- The reviewed RxPrep pages cover amphotericin B spectrum, exact formulation safety, dimorphic fungi, itraconazole use and formulation-dependent exposure, CYP interactions, administration, and histoplasmosis as an HIV opportunistic infection. These points were already represented in the module and required no clinical-content correction.
 - Ten focused lessons connect environmental acquisition and thermal dimorphism to pulmonary, disseminated, severe, and CNS syndromes, rapid antigen testing, organism evidence, severity-based therapy, itraconazole exposure, ART, suppression, and longitudinal follow-through.
 - Severe disseminated disease uses exact liposomal amphotericin B product and weight-based dosing, toxicity surveillance, objective transition readiness, conventional itraconazole loading, measured exposure, and at least 12 months of total therapy.
 - CNS disease retains its distinct liposomal amphotericin B dose and four-to-six-week induction, followed by prolonged itraconazole until both minimum duration and CSF recovery criteria are met.
@@ -3016,7 +3018,7 @@ Current source reconciliations:
 - Monitoring integrates symptoms, cultures, antigen trajectory, organ recovery, drug exposure, toxicity, adherence, immune restoration, and treatment phase rather than treating one marker as proof of cure or failure.
 - Integrated cases now require syndrome and severity triage, urgent stabilization, high-value specimens without unsafe treatment delay, exact phase transitions, ART coordination, suppression decisions, and named ownership of every result and checkpoint.
 - The assessment contains 112 unique original questions across 28 concept groups, with valid remediation links and coverage of all ten lessons. Each attempt samples ten questions without replacement and randomizes answer order.
-- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated.
+- Build verification: Next.js production build passed August 27, 2026 with 550 static pages generated.
 
 ### Mucosal and Esophageal Candidiasis
 
