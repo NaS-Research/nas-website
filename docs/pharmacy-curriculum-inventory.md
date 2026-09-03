@@ -2210,7 +2210,7 @@ Current source reconciliations:
 - Clear vesicle fluid is separated from bacterial infection. Increasing tenderness, purulence, soft yellow crust, spreading pain, fever, odor, and systemic illness trigger reassessment rather than automatic antibiotics for every weeping lesion.
 - Bentoquatam is presented only as a labeled pre-exposure barrier used with avoidance and PPE. It does not treat established dermatitis, and dead or suspect plants should never be burned.
 - Retired pregnancy letters are excluded. Reproductive and lactation decisions use the specific product, route, potency, area, duration, timing, alternatives, and patient goals.
-- Goodnotes remains pending because the Mac session was still locked at the latest retry. Any dedicated Toxicodendron lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search for Toxicodendron, poison ivy, poison oak, poison sumac, urushiol, and allergic contact dermatitis found two matching RxPrep pages and no separate dedicated lecture. One match was an incidental compounding reference, while the focused treatment page is already incorporated into the module. The existing RxPrep and current-authority synthesis therefore covers the complete accessible Toxicodendron source set.
 
 ### Topical Corticosteroid Pharmacology and Safe Use
 
