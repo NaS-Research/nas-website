@@ -6,7 +6,7 @@ export const ckdComplicationsModule = {
   title: "Complications of Chronic Kidney Disease",
   source: "KDIGO 2026 anemia, KDIGO 2017 CKD-MBD, and KDIGO 2024 CKD guidance",
   description: "Recognize the systemic consequences of declining kidney function, connect each abnormality to its mechanism, and treat anemia, mineral and bone disorder, potassium, acid-base, volume, nutrition, and symptoms without losing the whole patient.",
-  topics: ["Complication surveillance", "Anemia", "Mineral and bone disorder", "Potassium and acidosis", "Volume and nutrition", "Advanced CKD symptoms"],
+  topics: ["Complication surveillance", "Anemia", "Mineral and bone disorder", "Potassium and acidosis", "Volume and nutrition", "Cardiovascular and skin burden", "Advanced CKD symptoms"],
   outcomes: [
     "Build risk-based surveillance for hematologic, mineral, electrolyte, acid-base, nutritional, cardiovascular, and symptom complications.",
     "Evaluate anemia beyond erythropoietin deficiency and select iron, ESA, HIF-PHI, or transfusion strategies according to setting, goals, and risk.",
@@ -38,7 +38,7 @@ export const ckdComplicationsModule = {
       lesson: [
         { heading: "Evaluate before attributing", body: "Confirm hemoglobin, indices, reticulocyte response, ferritin, TSAT, B12, folate, blood loss, hemolysis, inflammation, infection, medications, nutrition, thyroid disease, and marrow clues as indicated. Erythropoietin deficiency is important, but unexplained rapid or disproportionate anemia requires another cause." },
         { heading: "Use ferritin and TSAT together", body: "Ferritin reflects stores but rises with inflammation, while TSAT estimates circulating iron available for erythropoiesis. KDIGO 2026 suggests iron initiation in nonhemodialysis CKD when ferritin is below 100 ng/mL with TSAT below 40%, or ferritin is 100 to 300 ng/mL with TSAT below 25%. Individualize and withhold routine iron when ferritin exceeds 700 ng/mL or TSAT is at least 40%." },
-        { heading: "Choose route and monitor response", body: "Oral or IV iron can be used in CKD not receiving hemodialysis according to severity, tolerance, efficacy, access, and preference. IV iron is generally favored in hemodialysis. Monitor hemoglobin, ferritin, TSAT, symptoms, hypersensitivity, infection context, and treatment response rather than repeating iron indefinitely." },
+        { heading: "Choose route and monitor response", body: "Oral or IV iron can be used in CKD not receiving hemodialysis according to severity, tolerance, efficacy, access, and preference. In G5 hemodialysis, KDIGO 2026 suggests initiating iron when ferritin is 500 ng/mL or lower and TSAT is 30% or lower, and generally favors IV iron. Monitor hemoglobin, ferritin, TSAT, symptoms, hypersensitivity, infection context, and treatment response rather than repeating iron indefinitely." },
         { heading: "Use erythropoiesis therapy carefully", body: "ESA initiation is individualized by symptoms, transfusion risk, hemoglobin trajectory, transplant candidacy, cardiovascular and thrombotic risk, malignancy, and treatment setting. Use the lowest dose that meets the goal and avoid targeting a normal hemoglobin. HIF-PHIs have specific eligibility and safety boundaries, and in the United States daprodustat is labeled for adults receiving dialysis for at least four months." },
       ],
       keyPoints: ["Anemia needs a differential.", "Ferritin and TSAT answer different questions.", "Route depends on setting and patient factors.", "Normalizing hemoglobin can cause harm."],
@@ -85,6 +85,20 @@ export const ckdComplicationsModule = {
       ],
       keyPoints: ["Edema is not a complete volume diagnosis.", "Measure diuretic response.", "Albumin is not nutrition alone.", "Preserve muscle and function."],
       check: { question: "Why is serum albumin insufficient as a stand-alone nutrition assessment in CKD?", choices: ["Inflammation and volume status strongly affect it", "It measures only calcium", "It is never measured", "It rises only with dialysis"], answer: 0, rationale: "Albumin is influenced by inflammation, illness, and distribution as well as intake.", reviewHref: "#volume-nutrition-and-metabolic-health" },
+    },
+    {
+      slug: "cardiovascular-and-cutaneous-burden", title: "Cardiovascular and Cutaneous Burden", visual: "ckdc-cardioskin",
+      summary: "Cardiovascular disease, pruritus, and calcific skin injury are not peripheral concerns in advanced CKD. They can dominate survival, sleep, function, and quality of life.",
+      concepts: ["Cardiovascular burden", "Lipid strategy", "CKD-associated pruritus", "Calciphylaxis", "Treatment safety"],
+      application: "Integrate cardiovascular prevention with symptom-centered skin care, recognize high-risk calcific injury early, and avoid therapies whose accumulation or adverse effects worsen frailty, cognition, or arrhythmia risk.",
+      lesson: [
+        { heading: "Treat cardiovascular risk as a primary outcome", body: "People with CKD face high risks of atherosclerotic disease, heart failure, arrhythmia, stroke, and sudden death. Control pressure, diabetes, tobacco exposure, volume, anemia, mineral metabolism, and lipids as one cardiorenal plan. Do not assume every chest symptom or troponin change is simply renal." },
+        { heading: "Use lipid therapy by treatment setting", body: "Statin-based therapy reduces atherosclerotic events in many adults with nondialysis CKD. Starting a statin solely for primary prevention after a patient is already dialysis dependent is generally not recommended, while established therapy may often continue. Secondary prevention and other clear indications remain individualized." },
+        { heading: "Phenotype CKD-associated pruritus", body: "Ask about distribution, timing, sleep, excoriations, dialysis relationship, skin disease, neuropathy, liver or thyroid disease, iron status, phosphate control, and medication causes. Optimize emollients and dialysis care, then choose symptom therapy with renal dosing and fall, cognition, and sedation risk in mind. Difelikefalin is a labeled option for moderate to severe CKD-associated pruritus in adults receiving hemodialysis." },
+        { heading: "Recognize calciphylaxis as an emergency", body: "Severe pain that precedes retiform purpura, plaques, or necrotic ulcers in a person with advanced CKD should trigger urgent multidisciplinary evaluation. Address wound and infection care, pain, calcium and phosphate exposure, warfarin and other contributors, and kidney replacement factors. No single laboratory value excludes the diagnosis." },
+      ],
+      keyPoints: ["Cardiovascular risk can exceed kidney-failure risk.", "Dialysis status changes lipid decisions.", "Pruritus needs a differential.", "Painful retiform skin injury requires urgent evaluation."],
+      check: { question: "Which skin presentation in advanced CKD requires the most urgent evaluation?", choices: ["Severe pain with retiform purpura or evolving necrosis", "Stable dry skin without symptoms", "A painless healed scar", "Transient blanching after pressure"], answer: 0, rationale: "Painful retiform or necrotic lesions can represent calciphylaxis and require urgent multidisciplinary care.", reviewHref: "#cardiovascular-and-cutaneous-burden" },
     },
     {
       slug: "uremia-symptoms-and-advanced-care", title: "Uremia, Symptoms, and Advanced Care", visual: "ckdc-advanced",
