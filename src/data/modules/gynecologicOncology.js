@@ -106,5 +106,21 @@ export const gynecologicOncologyModule = {
       ["Revisit goals, trials, and access", "At every transition, reassess what matters to the patient, what treatment can realistically accomplish, clinical-trial eligibility, transportation, financial toxicity, caregiving, and advance care planning."],
     ], ["Fertility discussions happen before treatment when possible.", "Menopause and sexual health require active care.", "Palliative care can begin during anticancer therapy.", "Survivorship reflects treatment exposure and recurrence risk.", "Goals and access must be revisited at every transition."], { question: "When should fertility and reproductive goals first enter a gynecologic oncology plan?", choices: ["Before potentially fertility-altering treatment whenever the clinical timeline permits", "Only after all treatment is complete", "Only if recurrence occurs", "Never during oncology care"], answer: 0, rationale: "Options can narrow quickly after surgery, radiation, or gonadotoxic therapy, so early discussion preserves informed choice.", reviewHref: "#survivorship-palliative" }),
   ],
+  references: [
+    { label: "NCI: Ovarian Epithelial, Fallopian Tube, and Primary Peritoneal Cancer Treatment", href: "https://www.cancer.gov/types/ovarian/hp/ovarian-epithelial-treatment-pdq" },
+    { label: "NCI: Endometrial Cancer Treatment", href: "https://www.cancer.gov/types/uterine/hp/endometrial-treatment-pdq" },
+    { label: "NCI: Cervical Cancer Treatment", href: "https://www.cancer.gov/types/cervical/hp/cervical-treatment-pdq" },
+    { label: "FDA: Mirvetuximab Soravtansine for FRalpha-Positive Ovarian Cancer", href: "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-mirvetuximab-soravtansine-gynx-fra-positive-platinum-resistant-epithelial-ovarian" },
+    { label: "FDA: Avutometinib and Defactinib for KRAS-Mutated Low-Grade Serous Ovarian Cancer", href: "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-combination-avutometinib-and-defactinib-kras-mutated-recurrent-low" },
+    { label: "FDA: Pembrolizumab with Chemoradiotherapy for Stage III to IVA Cervical Cancer", href: "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-pembrolizumab-chemoradiotherapy-figo-2014-stage-iii-iva-cervical-cancer" },
+    { label: "FDA: Oncology Approval Notifications", href: "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancerhematologic-malignancies-approval-notifications" },
+    { label: "FDA: TIVDAK Prescribing Information", href: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761208s010lbl.pdf" },
+  ],
+  disclaimer: "This module supports advanced education about gynecologic oncology. Cancer diagnosis, staging, biomarker interpretation, surgery, radiation, systemic therapy, fertility preservation, toxicity management, and surveillance require specialist evaluation and current disease-specific protocols. New bleeding, severe pain, fever, breathing difficulty, neurologic change, visual symptoms, or other acute treatment concerns require prompt clinical assessment. This is not patient-specific medical advice.",
   questionBank: gynecologicOncologyQuestionBank,
+  sourceNotes: {
+    reviewed: ["RxPrep gynecologic oncology foundations", "Current NCI ovarian, endometrial, and cervical treatment summaries", "Current FDA oncology approvals and product labeling through August 2026"],
+    reconciled: ["Ovarian, endometrial, and cervical cancers remain separate disease pathways organized by site, histology, stage, molecular context, prior therapy, and treatment intent.", "PARP maintenance is taught as a product-specific and biomarker-specific decision rather than an interchangeable all-comer class effect.", "Broad pembrolizumab and dostarlimab endometrial combination indications are distinguished from the dMMR-specific durvalumab combination.", "Pembrolizumab with definitive cervical chemoradiotherapy is limited to the FDA stage-defined population.", "Mirvetuximab, tisotumab, and avutometinib plus defactinib retain their separate biomarker, prior-treatment, ocular, and accelerated-approval boundaries."],
+    deferred: ["Detailed chemotherapy preparation and administration protocols", "Vulvar and vaginal cancer treatment", "Operative technique and radiation planning"],
+  },
 };
