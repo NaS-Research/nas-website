@@ -2780,7 +2780,7 @@ Current source reconciliations:
 - Counseling addresses lifelong latency, uncertainty about transmission timing, partner disclosure, safer sex, pregnancy planning, psychosocial distress, and stigma without moral judgment.
 - The assessment now gives fuller counseling and prevention coverage. It tests layered transmission reduction, symptomatic and asymptomatic partner pathways, disclosure safety, pregnancy planning, obstetric and newborn handoffs, and the limits of condoms and suppressive therapy.
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 138-question assessment bank across all ten lessons.
-- Goodnotes remains unavailable because macOS reports a locked session. Any matching genital herpes lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search found the complete RxPrep sequence plus one chronic-kidney-disease dosing page and no separate STI or herpes lecture. The kidney source identifies acyclovir and valacyclovir as medicines requiring renal-dose review, which is already explicit through the module's kidney-function, hydration, neurotoxicity, and exposure safeguards. The existing RxPrep, CDC, pregnancy, neonatal, and current-label synthesis therefore covers the complete accessible source set.
 
 ### Anogenital HPV and Warts
 
