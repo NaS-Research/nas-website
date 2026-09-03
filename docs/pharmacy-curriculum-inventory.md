@@ -1937,7 +1937,7 @@ Current source reconciliations:
 - Preventive screening follows the organs and tissues present, age, symptoms, exposure, family history, and current screening guidance. Bone assessment follows prolonged hypogonadism and standard fracture risks rather than identity alone.
 - Perioperative hormone decisions are individualized by procedure, mobility, VTE risk, route, gonadal status, withdrawal effects, and postoperative needs. Hospital and transfer reconciliation preserves exact product, concentration, route, last dose, supply, monitoring, and follow-up ownership.
 - Self-sourced hormone exposure is approached with nonjudgmental reconciliation and harm reduction. Product verification, injection safety, reliable prescribing, monitoring, and access barriers replace punitive discontinuation.
-- Goodnotes was retried before this build, but macOS continued to report a locked session. The older lecture will receive a documented reconciliation pass after manual unlock, with any conflict flagged rather than silently imported.
+- Goodnotes source reconciliation is complete. A restored library-wide search for gender-affirming, transgender, feminizing, masculinizing, and gender-dysphoria terminology found no dedicated pharmacy lecture. Two heart-failure pages mention transgender populations only in broader equity and pregnancy contexts, while four business-book matches are unrelated. The module therefore correctly remains grounded in current WPATH, Endocrine Society, ACOG, and product-specific evidence, with no older lecture left to reconcile.
 
 ### Anemia
 
