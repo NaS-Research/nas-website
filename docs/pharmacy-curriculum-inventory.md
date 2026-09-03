@@ -2260,7 +2260,7 @@ Current source reconciliations:
 - Intentional ultraviolet exposure is not recommended for vitamin D. Diet, fortified foods, supplements, testing when indicated, and clinician-guided management avoid preventable carcinogenic exposure.
 - Oral sunscreen supplements and antioxidants are not presented as substitutes for labeled topical sunscreen or physical photoprotection.
 - Retired pregnancy letters are excluded. Pregnancy and lactation decisions use the exact product, ingredients, treated area, skin integrity, infant contact, alternatives, and patient preference.
-- Goodnotes was retried after the user reported access restored, but the Mac session still returned a locked state. Any dedicated photoprotection lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search for sunscreen, photoprotection, sun protection, sunburn, ultraviolet exposure, broad-spectrum labeling, zinc oxide, and titanium dioxide found the complete RxPrep sequence but no dedicated photoprotection lecture. One medication-counseling page identifies hydrochlorothiazide photosensitivity and advises sunscreen during prolonged sun exposure. The module already includes thiazides in its exact-medication reconciliation framework and teaches protection beyond sunscreen alone, so that page reinforces rather than changes the current synthesis. An unrelated leadership-book match was excluded. The existing RxPrep, FDA, dermatology, current-label, and peer-reviewed synthesis covers the complete accessible course source set.
 
 ### Herpes Labialis
 
