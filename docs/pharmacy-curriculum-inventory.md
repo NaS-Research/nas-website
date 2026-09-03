@@ -1786,7 +1786,7 @@ Current guidance reconciliations:
 
 ### Sjogren Disease
 
-The Sjogren disease module includes autoimmune exocrine biology; primary and associated disease; ocular, oral, systemic, and urgent recognition; the complete 2016 ACR EULAR weighted classification system; classification versus diagnosis; mechanism and severity based dry eye care; topical cyclosporine and lifitegrast; advanced ocular procedures; topical fluoride and dental prevention; noncariogenic salivary support; candidiasis and nutrition; pilocarpine and cevimeline pharmacology; organ directed systemic therapy; lymphoma surveillance; anti-SSA and anti-SSB pregnancy planning; and longitudinal multidisciplinary care. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 112-question assessment bank.
+The Sjogren disease module includes autoimmune exocrine biology; primary and associated disease; ocular, oral, systemic, and urgent recognition; the complete 2016 ACR EULAR weighted classification system; classification versus diagnosis; mechanism and severity based dry eye care; topical cyclosporine and lifitegrast; advanced ocular procedures; topical fluoride and dental prevention; noncariogenic salivary support; candidiasis and nutrition; pilocarpine and cevimeline pharmacology and molecular identity; organ directed systemic therapy; lymphoma surveillance; anti-SSA and anti-SSB pregnancy planning; and longitudinal multidisciplinary care. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 116-question assessment bank.
 
 Current guidance reconciliations:
 
@@ -1800,7 +1800,7 @@ Current guidance reconciliations:
 - Systemic immunotherapy is reserved for active systemic disease rather than dryness alone. Hydroxychloroquine is not presented as reliable therapy for isolated dryness or fatigue, and glucocorticoid, conventional, and biologic choices are organ and severity directed.
 - Persistent salivary gland enlargement, lymphadenopathy, purpura, low complement, cryoglobulins, cytopenias, monoclonal gammopathy, clonal lymphocytosis, splenomegaly, and B symptoms are integrated into risk based lymphoma surveillance.
 - Anti-SSA and anti-SSB positive pregnancy includes preconception medicine review, maternal fetal medicine coordination, guideline based fetal echocardiography, and current conditional hydroxychloroquine guidance.
-- The complete RxPrep 2023 Sjogren syndrome source block was reviewed visually. A matching Goodnotes reconciliation remains pending because the Mac was still locked on the third access attempt during this build.
+- Goodnotes source reconciliation is complete. Five focused pages across `Cholinoceptor-Activating and Cholinesterase-Inhibiting Drugs` and `Cholinergic Agents Medicinal Chemistry 10-29-25` reinforce pilocarpine salivary stimulation, muscarinic toxicity, pilocarpine's plant-derived imidazole-alkaloid identity, cevimeline's distinct synthetic scaffold, and the illustrated hydrolysis and epimerization of pilocarpine. Glaucoma, allergic-rhinitis, and unrelated xerostomia matches were reviewed as cross-topic references rather than Sjogren teaching. The module and its 116-question bank now connect molecular identity and stability to product selection while retaining current labeling as the authority for dosing and handling.
 
 ### Psoriasis
 
