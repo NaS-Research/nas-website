@@ -2745,7 +2745,7 @@ Current source reconciliations:
 - Suspected cephalosporin failure triggers an audit for reinfection, exact regimen and weight, culture and AST before retreatment when possible, expert consultation, and public-health reporting within 24 hours.
 - Partner care covers the preceding 60 days, lawful expedited partner therapy, 7-day abstinence through partner treatment, three-month retesting, anatomy-based screening, HIV testing and PrEP, and population-specific doxy PEP shared decision-making.
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 138-question assessment bank. Focused verification confirms unique identifiers and prompts, valid links to all ten lessons, four reasoning dimensions, no malformed or duplicate answer choices, and no prohibited dash characters. The Next.js production build passed August 27, 2026 with 547 static pages generated.
-- Goodnotes remains unavailable because macOS reports a locked session. Any matching gonorrhea lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search found three focused gonorrhea pages, all within the complete RxPrep sequence, and no separate STI lecture, case, or associated document. The existing RxPrep, CDC screening and treatment, site-specific diagnosis, resistance, doxycycline PEP, and current FDA-label synthesis therefore covers the complete accessible source set without unsupported duplication.
 
 ### Chlamydial Infections
 
