@@ -2915,7 +2915,7 @@ Current source reconciliations:
 - TDM is ordered only with a defined clinical question, interpretable timing, target context, and action. Active-drug renal clearance is separated from intravenous vehicle concerns, and current pregnancy and lactation narratives replace obsolete letter categories.
 - Baseline verification, breakthrough audit, source control, step-down readiness, longitudinal toxicity, follow-up ownership, and the educational boundary close the module.
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 176-question assessment bank.
-- Goodnotes source reconciliation remains pending until the local macOS session is unlocked and the library is readable through the application.
+- Goodnotes reconciliation: complete. A restored library-wide full-text search for antifungal, fluconazole, azole, echinocandin, and terbinafine found RxPrep as the only dedicated systemic antifungal course source. Matches in adrenal, anticoagulation, cardiovascular, kidney, reproductive-health, and order-verification documents were incidental interaction, adverse-effect, or comorbidity references rather than a separate triazole lecture.
 
 ### Echinocandin Pharmacology
 
