@@ -2683,7 +2683,7 @@ Current source reconciliations:
 - Pregnancy teaching includes one early culture, 4 to 7 days for ASB, 5 to 7 days for acute cystitis, avoidance of empiric ampicillin or amoxicillin, narrative trimester risk for nitrofurantoin and sulfonamides, and inpatient initial management of pyelonephritis.
 - Recurrence, catheter-associated infection, phenazopyridine, resistant gram-negative disease, allergy, kidney trajectory, dialysis, G6PD, potassium, QT, interactions, prophylaxis, and explicit stop ownership are integrated into one longitudinal system.
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 130-question assessment bank.
-- Goodnotes remains unavailable because macOS reports a locked session. Any matching urinary infection lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search found the complete RxPrep sequence plus kidney, heart-failure, diabetes, pulmonary, cholinergic, medication-counseling, interaction, and laboratory references, with no separate dedicated UTI lecture. Diabetes sources reinforce SGLT2-associated urinary warning symptoms but remain assigned to diabetes pharmacology. An interaction case reinforces the module's existing requirement to assess potassium when TMP-SMX is combined with renin-angiotensin or mineralocorticoid-receptor drugs. The remaining matches concern disease differentials, adverse-effect lists, or organ-specific context already assigned to their focused modules.
 
 ### Clostridioides difficile Infection
 
