@@ -2564,7 +2564,7 @@ Current source reconciliations:
 - Allergy teaching separates intolerance, nonimmediate reactions, immediate hypersensitivity, and severe delayed injury. Cephalexin and cefadroxil are excluded from immediate hypersensitivity, while macrolide and clindamycin use requires current local resistance and toxicity review.
 - Scarlet fever, peritonsillar and retropharyngeal abscess, acute rheumatic fever, post-streptococcal glomerulonephritis, return-to-school timing, expected response, test-of-cure limits, household contacts, and asymptomatic carriage are integrated into one follow-up system.
 - It contains eleven focused lessons, eleven responsive diagrams, eleven embedded checks, and a validated 184-question assessment bank.
-- Goodnotes remains unavailable because macOS reports a locked session. Any matching pharyngitis lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search found four streptococcal-pharyngitis pages in the complete RxPrep sequence and no separate course lecture, case, or associated document. The existing module already reconciles that source with current diagnostic, treatment, allergy, complication-prevention, and public-health guidance, so no unsupported duplicate content was added.
 
 ### Acute Bacterial Rhinosinusitis
 
