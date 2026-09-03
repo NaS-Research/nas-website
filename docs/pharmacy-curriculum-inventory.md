@@ -2713,7 +2713,7 @@ Current source reconciliations:
 - Routine antibiotic prophylaxis is discouraged because resistant colonization, CDI, adverse effects, and lost future options outweigh benefit for most travelers.
 - Children, pregnancy, older adults, immune compromise, persistent symptoms beyond 14 days, Giardia and other parasites, CDI, postinfectious syndromes, travel-kit instructions, and post-travel handoff are integrated.
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 130-question assessment bank.
-- Goodnotes remains unavailable because macOS reports a locked session. Any matching travel-health lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search found fourteen focused travelers' diarrhea and rifaximin pages, all within the complete RxPrep sequence, and no separate travel-health lecture, case, or associated document. The existing RxPrep, 2026 CDC Yellow Book, post-travel, pregnancy, pediatric, and current-label synthesis therefore covers the complete accessible source set without unsupported duplication.
 
 ### Syphilis
 
