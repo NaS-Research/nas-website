@@ -44,5 +44,44 @@ export const rifaximinPharmacologyModule = {
 
     section("integration", "Close the Rifaximin Loop", "Rifaximin is safe to prescribe only when indication, phenotype, strength, schedule, organ function, interactions, evidence boundaries, response, and exit criteria agree.", ["Indication", "Phenotype", "Regimen", "Monitoring", "Exit"], "Reconstruct the indication, exclusions, age, product, quantity, hepatic status, P-gp and warfarin context, safety, response checkpoint, retreatment or refill logic, and escalation plan.", [["Start with the indication", "A familiar 550 mg tablet cannot tell you whether the patient needs HE prevention or an IBS-D course. Diagnosis controls the schedule."], ["Exclude the wrong phenotype", "Invasive diarrhea, systemic infection, unexplained cognitive change, alarm-feature chronic diarrhea, and initial CDI monotherapy all require a different path."], ["Make monitoring actionable", "Assign ownership for symptoms, liver trajectory, bowel plan, INR when relevant, recurrence, adverse effects, adherence, and access."], ["Define the exit before the first dose", "TD and IBS-D have course endpoints and response checks. HE requires continuing prevention with periodic reassessment. Off-label CDI use ends after its exact sequence."]], ["Indication comes before strength.", "Phenotype controls eligibility.", "Exposure modifiers need review.", "Every regimen needs an endpoint or reassessment plan."], check("Which sequence best prevents a rifaximin prescribing error?", ["Confirm indication and phenotype, select the exact regimen, review exposure modifiers, and define response and exit criteria", "Choose a tablet strength before reviewing the diagnosis", "Use one schedule for every indication", "Ignore liver function because absorption is low"], "Closed-loop prescribing makes the indication control every downstream decision.", "integration")),
   ],
+  references: [
+    {
+      label: "DailyMed. XIFAXAN rifaximin prescribing information.",
+      href: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c5e8e2fd-7087-4b78-9181-cc259c0be2f1",
+    },
+    {
+      label: "CDC Yellow Book 2026. Travelers' Diarrhea.",
+      href: "https://www.cdc.gov/yellow-book/hcp/preparing-international-travelers/travelers-diarrhea.html",
+    },
+    {
+      label: "American College of Gastroenterology. 2026 hepatic encephalopathy guideline highlights.",
+      href: "https://webfiles.gi.org/GuidelineHighlights/ACGHepaticEncephGH.pdf",
+    },
+    {
+      label: "American College of Gastroenterology. Clinical guideline for management of irritable bowel syndrome.",
+      href: "https://webfiles.gi.org/links/virtgrandround/Intl_ACGVGR_Lacy_IBS_Guidelines.pdf",
+    },
+    {
+      label: "SHEA and IDSA. 2017 guideline for Clostridioides difficile infection in adults and children.",
+      href: "https://www.idsociety.org/practice-guideline/clostridium-difficile/",
+    },
+  ],
+  disclaimer: "This module is for advanced education and is not patient-specific medical advice. Fever, bloody stool, severe dehydration, systemic toxicity, acute confusion, gastrointestinal bleeding, worsening liver disease, severe hypersensitivity, or persistent or worsening diarrhea requires clinical evaluation. Confirm the indication, phenotype, age, regimen, hepatic status, interactions, and current product information with the treating team.",
+  sourceNotes: {
+    reviewed: "The complete RxPrep rifaximin sequence was reconciled with current XIFAXAN labeling, the CDC Yellow Book 2026, current American College of Gastroenterology hepatic encephalopathy and IBS guidance, and current SHEA and IDSA CDI guidance.",
+    reconciled: [
+      "Rifamycin structure, bacterial RNA polymerase inhibition, limited systemic exposure, fecal recovery, and resistance",
+      "Noninvasive travelers' diarrhea selection, functional severity, invasive-disease exclusions, hydration, and backup planning",
+      "Overt hepatic encephalopathy recurrence reduction, lactulose context, precipitant correction, nutrition, and longitudinal function",
+      "Finite IBS-D treatment, patient-centered response, and the label limit of two retreatment courses",
+      "Indication-specific dosing and quantities, severe hepatic exposure, cyclosporine, warfarin monitoring, and population boundaries",
+      "The narrow off-label post-vancomycin rifaximin option for selected adults with multiple CDI recurrences",
+    ],
+    deferred: [
+      "Institution-specific hepatic encephalopathy, travelers' diarrhea, IBS-D, and recurrent-CDI pathways",
+      "Patient-specific transplant evaluation, severe liver-disease interaction management, and anticoagulation adjustment",
+      "Jurisdiction and payer-specific access, authorization, dispensing, travel prescribing, and follow-up workflows",
+    ],
+  },
   questionBank: rifaximinPharmacologyQuestionBank,
 };
