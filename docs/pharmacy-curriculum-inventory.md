@@ -3144,7 +3144,7 @@ Current source reconciliations:
 - Automated verification: 208 unique question IDs and prompts, four distinct answer choices per question, valid lesson links, twelve lesson sections, twelve diagrams, and no em dash or en dash characters in public module prose.
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, twelve lessons, twelve diagrams, twelve embedded checks, ten questions per test, a completely different second random set, scoring with rationales and ten remediation links, and zero console warnings or errors.
 - Build verification: Next.js production build passed August 27, 2026 with 517 static pages generated.
-- Goodnotes source reconciliation remains pending until the reported restored library connection is re-audited and the relevant lecture material is identified.
+- Goodnotes source reconciliation is complete. A restored library-wide search for abacavir, zidovudine, lamivudine, emtricitabine, tenofovir, and nucleoside or nucleotide reverse-transcriptase inhibitors returned 42 matching RxPrep pages plus five relevant pharmacogenomics pages. The supplemental pharmacogenomics material reinforces pre-exposure HLA-B*5701 testing, the association with abacavir hypersensitivity, immediate discontinuation when a compatible reaction is suspected, and the danger of rechallenge. These principles are explicitly represented in the module's abacavir lesson, embedded check, and assessment bank. No separate dedicated NRTI lecture was found, so the RxPrep, pharmacogenomics-course, current NIH, and current-label synthesis covers the complete accessible source set.
 
 ### Clinical Drug Interactions
 
