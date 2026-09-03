@@ -2458,7 +2458,7 @@ Current source reconciliations:
 - Retired pregnancy letters are excluded. CDC considers metronidazole low risk when pregnancy treatment is indicated, advises avoiding tinidazole in pregnancy, and current labels provide agent-specific breastfeeding interruption intervals.
 - Assessment coverage includes 160 original questions across 38 concepts and four reasoning levels, with explicit molecule and formulation selection, definitive response reassessment, and at least eight questions mapped to every lesson.
 - Focused assessment audit, public-language scan, remediation links, and the 547-page Next.js production build passed September 2, 2026.
-- Goodnotes was not required to advance this RxPrep-defined milestone. Any later matching lecture material will receive a documented reconciliation pass.
+- Goodnotes source reconciliation is complete. A restored library-wide search found 35 pages in the complete RxPrep sequence plus one metronidazole reference in Anticoagulation Pharmacology and one in the warfarin treatment lecture, with no dedicated nitroimidazole lecture. Both course references identify metronidazole as a clinically important cause of increased INR during warfarin therapy. The module already assigns interaction review, INR monitoring, and response ownership, so no unsupported duplicate content was added.
 
 ### Lefamulin Pharmacology
 
