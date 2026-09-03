@@ -1039,7 +1039,7 @@ This inventory records the source material available in the founder's Goodnotes 
 - Assessment: 112 original questions, ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: injury markers were separated from liver function and severity; the R ratio used values normalized to each laboratory's ULN; current DILI thresholds triggered evaluation rather than one universal drug-stopping rule; complete exposure chronology included finished courses and nonprescription products; RUCAM supported but did not replace clinical causality reasoning; Hy's law remained a serious safety signal rather than proof of a culprit; falling aminotransferases did not reassure when organ failure worsened; the acute nomogram was not applied to repeated or unknown-time acetaminophen exposure; acetylcysteine duration followed recovery criteria; supplement product identity remained traceable; corticosteroids retained narrow phenotype-specific roles; and intentional rechallenge remained exceptional and governed
 - Automated verification: 112 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
+- Build verification: Next.js production build passed September 2, 2026 with 550 static pages generated
 
 ### Acute Liver Failure
 
