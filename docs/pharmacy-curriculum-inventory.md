@@ -2187,7 +2187,7 @@ Current source reconciliations:
 - Current ABA burn-shock guidance is used for adults with burns of at least twenty percent TBSA. The initial estimate is two milliliters per kilogram per percent TBSA over the first twenty-four hours, timed from the burn and titrated to urine output and whole-patient physiology rather than treated as a fixed endpoint.
 - Pediatric proportions, broad pediatric consultation, safeguarding, critical-site function, rehabilitation, contracture prevention, nutrition, scar protection, and psychological recovery are integrated rather than postponed until wound closure.
 - Current CDC tetanus wound guidance replaces memorized legacy schedules, and retired pregnancy letters are excluded from every medication and vaccine decision.
-- Goodnotes was retried after the user reported access restored, but the Mac session still returned a locked state. Any dedicated burn lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search for burn injury, burn wounds, thermal, chemical, and electrical burns, inhalation injury, silver sulfadiazine, the Parkland formula, and total body surface area found the focused RxPrep sequence but no separate burn lecture. Two nutrition-course matches concern chlorhexidine and silver sulfadiazine impregnated central-line materials rather than burn treatment, so they were correctly excluded. The existing RxPrep, American Burn Association, CDC, dermatology, and current-label synthesis covers the complete accessible burn source set.
 
 ### Poison Ivy, Oak, and Sumac
 
