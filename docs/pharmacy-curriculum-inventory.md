@@ -2604,7 +2604,7 @@ Current source reconciliations:
 - Seven days remains the standard duration for most improving HAP and VAP. De-escalation, the limited role of PCT for discontinuation, complications, source control, exposure failure, diagnostic failure, and the final stop plan remain visible.
 - Prevention is updated around avoiding unnecessary intubation, ventilator liberation, sedation reduction, mobility, aspiration reduction, early enteral nutrition, mechanical oral care, and equipment stewardship. Routine chlorhexidine was removed in favor of daily toothbrushing without chlorhexidine.
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 174-question assessment bank.
-- Goodnotes remains unavailable because macOS reports a locked session. Any matching HAP or VAP lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search found six focused hospital-acquired and ventilator-associated-pneumonia pages in the complete RxPrep sequence and no separate course lecture, case, or associated document. The existing module already reconciles that source with current diagnostic, resistance-risk, empiric-coverage, de-escalation, duration, and prevention guidance, so no unsupported duplicate content was added.
 
 ### Tuberculosis
 
