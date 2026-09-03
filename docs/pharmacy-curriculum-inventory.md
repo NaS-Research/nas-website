@@ -2946,7 +2946,7 @@ Current source reconciliations:
 - Pregnancy, porphyria, hepatocellular failure, photosensitivity, alcohol effects, lupus, severe skin and hepatic reactions, warfarin, hormonal contraception, and periodic hepatic, renal, and hematopoietic monitoring form the longitudinal griseofulvin safety system.
 - Integrated selection joins site, organism, formulation, host, reproductive context, interactions, keratin replacement, reinfection prevention, follow-up ownership, and the educational boundary.
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 176-question assessment bank.
-- Goodnotes source reconciliation remains pending until the local macOS session is unlocked and the library is readable through the application.
+- Goodnotes reconciliation: complete. A restored library-wide full-text search for terbinafine, griseofulvin, dermatophyte, and squalene epoxidase returned thirteen matching pages, all within RxPrep. No separate dermatophyte pharmacology or medicinal-chemistry lecture is present in the indexed library, so the incorporated RxPrep material and current product labeling form the complete accessible source set.
 
 ### Local Oropharyngeal Antifungal Pharmacology
 
