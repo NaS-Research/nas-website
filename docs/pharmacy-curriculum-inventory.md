@@ -2471,7 +2471,7 @@ Current source reconciliations:
 - QT risk integrates baseline ECG, arrhythmia history, electrolytes, organ failure, other QT drugs, concentration, infusion rate, and monitoring. Oral and IV CYP3A effects are kept distinct.
 - Current pregnancy testing, two-day contraception, two-day lactation interruption, route-specific common effects, liver testing, and C. difficile response replace retired letter categories and passive warning lists.
 - Ten focused lessons, ten original responsive diagrams, ten embedded checks, and a 168-question assessment bank cover 40 concepts across four reasoning levels plus eight original dosing, administration, hepatic, QT, interaction, spectrum, and integration cases. Focused verification confirmed 168 unique question IDs, valid remediation links, and at least nine questions mapped to every lesson. The Next.js production build passed September 2, 2026 with 547 static pages generated.
-- Goodnotes was not required to advance this RxPrep-defined milestone. Any later matching lecture material will receive a documented reconciliation pass.
+- Goodnotes source reconciliation is complete. A restored library-wide search found five lefamulin pages in the complete RxPrep sequence and no separate course lecture, case, or associated document. The existing module already reconciles that source with current labeling, susceptibility resources, and adult community-acquired-pneumonia guidance, so no unsupported duplicate content was added.
 
 ### Fidaxomicin Pharmacology
 
