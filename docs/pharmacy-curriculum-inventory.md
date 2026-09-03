@@ -2839,7 +2839,7 @@ Current source reconciliations:
 - Prolonged fatigue, pain, or cognitive symptoms are validated and investigated broadly. Without objective reinfection or treatment failure, additional antibiotics are not recommended, while symptom, function, and shared goal care remain active.
 - Integrated cases require learners to identify the objective manifestation and immediate threat before choosing testing, care setting, route, regimen, or duration. The closing plan must assign pending results, response checkpoints, red flags, and follow-up ownership rather than ending with a prescription or repeat antibody titer.
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 164-question assessment bank across all ten lessons.
-- Goodnotes was retried after the reported reconnection, but macOS still returned a locked session. Any matching Lyme disease lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search for Lyme disease, Borrelia burgdorferi, and erythema migrans found three matching pages, all within the RxPrep source already used to build the module, and no separate Lyme disease lecture. The existing RxPrep, CDC, and AAN, ACR, and IDSA synthesis therefore covers the complete accessible source set.
 
 ### Tularemia
 
