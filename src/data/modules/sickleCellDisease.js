@@ -105,5 +105,51 @@ export const sickleCellDiseaseModule = {
       ["Close every loop", "For each medicine, vaccine, laboratory, referral, or acute-care change, state the target, date, failure rule, danger sign, and person responsible for review. The next encounter should begin with what happened to the last plan."],
     ], ["The care plan must travel across settings.", "Transition is a process, not an age cutoff.", "Barriers require neutral investigation.", "Equity can be measured operationally.", "Every action needs a target, date, and owner."], { question: "What makes a sickle cell care plan closed loop?", choices: ["A target, follow-up date, failure rule, danger sign, and named owner", "A medication list without history", "A referral with no receiving appointment", "An old vaccine schedule"], answer: 0, rationale: "Closed-loop care links each action to verification, escalation, and accountability.", reviewHref: "#integration" }),
   ],
+  references: [
+    {
+      label: "American Society of Hematology. Clinical Practice Guidelines on Sickle Cell Disease.",
+      href: "https://www.hematology.org/education/clinicians/guidelines-and-quality-care/clinical-practice-guidelines/sickle-cell-disease-guidelines",
+    },
+    {
+      label: "CDC. Complications of Sickle Cell Disease: Infection.",
+      href: "https://www.cdc.gov/sickle-cell/complications/complications-of-scd-infection.html",
+    },
+    {
+      label: "FDA. Voluntary withdrawal of Oxbryta from the market due to safety concerns.",
+      href: "https://www.fda.gov/drugs/drug-alerts-and-statements/fda-alerting-patients-and-health-care-professionals-about-voluntary-withdrawal-oxbryta-market-due",
+    },
+    {
+      label: "DailyMed. Siklos hydroxyurea prescribing information.",
+      href: "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=76957c0d-0f98-4376-bb06-eee651adc09d",
+    },
+    {
+      label: "DailyMed. Adakveo crizanlizumab prescribing information.",
+      href: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b2b7f8b4-fe9a-4a86-8129-9e43f99a20c6",
+    },
+    {
+      label: "FDA. Casgevy product information.",
+      href: "https://www.fda.gov/vaccines-blood-biologics/casgevy",
+    },
+    {
+      label: "FDA. Lyfgenia product information.",
+      href: "https://www.fda.gov/vaccines-blood-biologics/lyfgenia",
+    },
+  ],
+  disclaimer: "This module is for advanced education and is not patient-specific medical advice. Fever, breathing difficulty, chest pain, new neurologic findings, severe anemia, splenic enlargement with weakness, prolonged painful erection, suspected sepsis, or a severe transfusion reaction requires urgent clinical evaluation. Disease-modifying therapy, transfusion, transplant, and gene therapy require specialist oversight and current product information.",
+  sourceNotes: {
+    reviewed: "The complete RxPrep sickle cell sequence and accessible course material were reconciled with current CDC prevention guidance, ASH clinical practice guidelines, current hydroxyurea and crizanlizumab labeling, the FDA voxelotor withdrawal alert, and current Casgevy and Lyfgenia product information.",
+    reconciled: [
+      "HbS polymer biology, functional asplenia prevention, urgent fever response, and rapid individualized vaso-occlusive pain care",
+      "Hydroxyurea product-specific dosing and monitoring, including device-specific continuous glucose monitor interference",
+      "Current United States crizanlizumab status and removal of voxelotor from active treatment after its 2024 withdrawal",
+      "Extended antigen matching, simple versus exchange transfusion, delayed hemolysis, hyperhemolysis, and iron surveillance",
+      "Allogeneic transplant, Casgevy from age two for recurrent vaso-occlusive crises, and Lyfgenia from age 12 as distinct potentially curative pathways",
+    ],
+    deferred: [
+      "Institution-specific emergency analgesia, transfusion, exchange, and antimicrobial order sets",
+      "Center-specific transplant conditioning and gene-therapy manufacturing protocols",
+      "Jurisdiction and payer-specific authorization pathways for advanced therapies",
+    ],
+  },
   questionBank: sickleCellDiseaseQuestionBank,
 };
