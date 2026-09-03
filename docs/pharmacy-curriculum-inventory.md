@@ -3060,7 +3060,7 @@ Current source reconciliations:
 - Automated verification: 192 unique question IDs and prompts, four distinct answer choices per question, valid lesson links, eleven lesson sections, eleven diagrams, and no em dash or en dash characters in public module prose.
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, eleven lessons, eleven diagrams, eleven embedded checks, ten questions per test, a different second random set, scoring with explanations and ten remediation links, and zero console errors.
 - Build verification: Next.js production build passed August 27, 2026 with 513 static pages generated.
-- Goodnotes source reconciliation remains pending until the local library can be read through the unlocked application session.
+- Goodnotes source reconciliation is complete. A restored library-wide search for acyclovir, valacyclovir, famciclovir, herpes zoster, and varicella zoster returned 31 matching RxPrep pages and no separate dedicated HSV or VZV antiviral lecture. The only additional matches were two zoster-vaccination or adverse-effect references in a chronic obstructive pulmonary disease chapter and one renal-dosing list in chronic kidney disease. Those incidental cross-topic references do not add a separate antiviral teaching block, so the existing RxPrep, current CDC, and current-label synthesis covers the complete accessible source set.
 
 ### Cytomegalovirus Pharmacotherapy
 
