@@ -514,14 +514,14 @@ This inventory records the source material available in the founder's Goodnotes 
 
 ### Chronic Heart Failure Pharmacotherapy
 
-- Course scope: four-pillar HFrEF therapy, rapid sequencing, ARNI, ACE-inhibitor washout, ACE inhibitor and ARB alternatives, evidence-based beta blockers, MRA, SGLT2 inhibitors, loop diuretics, diuretic resistance, hydralazine and isosorbide dinitrate, ivabradine, digoxin, vericiguat, iron deficiency, HFmrEF, HFpEF, obesity-related HFpEF, HFimpEF, hypotension, kidney trajectory, adherence, access, devices, and advanced referral
+- Course scope: four-pillar HFrEF therapy, rapid sequencing, ARNI, ACE-inhibitor washout, ACE inhibitor and ARB alternatives, evidence-based beta blockers, MRA, SGLT2 inhibitors, loop diuretics, diuretic resistance, hydralazine and isosorbide dinitrate, ivabradine, digoxin concentration timing and interpretation, vericiguat, iron deficiency, medications that worsen heart failure, individualized self-monitoring, post-discharge implementation, HFmrEF, HFpEF, obesity-related HFpEF, HFimpEF, hypotension, kidney trajectory, adherence, access, devices, and advanced referral
 - Current references reviewed: 2022 AHA, ACC, and HFSA heart failure guidance, 2024 ACC HFrEF expert consensus, 2026 ACC HFpEF expert consensus, and current DailyMed labeling
 - Learning structure: six lessons, six native treatment-pillar, RAS-and-MRA, rate-strategy, SGLT2-and-diuresis, residual-risk, and phenotype-implementation diagrams, and six embedded checks
-- Assessment: 104 original questions, ten sampled without replacement per attempt with answer order randomized
-- Source reconciliation: broad early pillar coverage replaced a rigid one-drug ladder; beta blockade followed compensation; ACE-to-ARNI transition retained the 36-hour washout; SGLT2 benefit extended beyond diabetes; loop diuresis was separated from disease modification; HFpEF used 2026 multisystem and obesity guidance; HFimpEF retained therapy; laboratory and pressure changes were interpreted by trajectory; adherence barriers were treated as clinical data
-- Automated verification: 104 unique question IDs and prompts, no duplicate answer choices, valid remediation links for all six lessons, at least eight questions per lesson, six diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 30, 2026 with 547 static pages generated
-- Goodnotes note: the dedicated chronic heart-failure lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+- Assessment: 120 original questions across 30 concepts, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: the complete 91-page Chronic Heart Failure lecture and complete 57-page Chronic Heart Failure chapter were reviewed visually; broad early pillar coverage replaced a rigid one-drug ladder; beta blockade followed compensation; ACE-to-ARNI transition retained the 36-hour washout; SGLT2 benefit extended beyond diabetes; loop diuresis was separated from disease modification; digoxin concentrations gained explicit post-dose sampling timing and heart-failure exposure context; medication-related worsening prompted full prescription and nonprescription reconciliation; home monitoring used individualized signals linked to named actions rather than a universal threshold; post-discharge care assigned medication, laboratory, symptom, access, and titration ownership; HFpEF used 2026 multisystem and obesity guidance; HFimpEF retained therapy; laboratory and pressure changes were interpreted by trajectory; adherence barriers were treated as clinical data
+- Automated verification: 120 unique question IDs and prompts, 30 concepts, no duplicate answer choices, valid remediation links for all six lessons, at least 16 questions per lesson, six diagrams, and no em dash or en dash characters in public prose; the complete 221-module audit passed with 28,308 questions and no hard errors
+- Build verification: Next.js production build passed September 2, 2026 with 549 static pages generated
+- Goodnotes reconciliation: complete for the dedicated 91-page Chronic Heart Failure lecture and 57-page Chronic Heart Failure chapter
 
 ### Acute Decompensated Heart Failure
 
@@ -1289,7 +1289,7 @@ Available documents:
 Target modules:
 
 1. Heart Failure Pathophysiology (`built`, 120 question bank; Goodnotes reconciliation complete)
-2. Chronic Heart Failure Pharmacotherapy (`built`, 104 question bank; Goodnotes reconciliation pending)
+2. Chronic Heart Failure Pharmacotherapy (`built`, `verified`, and Goodnotes reconciled; 120 question bank)
 3. Acute Decompensated Heart Failure (`built`, 104 question bank; Goodnotes reconciliation pending)
 4. Heart Failure Medicinal Chemistry (`built`, 108 question bank; Goodnotes reconciliation pending)
 5. Peripheral Arterial Disease (`built`, 100 question bank; Goodnotes reconciliation pending)
