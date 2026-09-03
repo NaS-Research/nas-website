@@ -6,7 +6,7 @@ export const thyroidDisordersModule = {
   slug: "thyroid-disorders",
   number: "64",
   title: "Thyroid Disorders",
-  source: "ATA guidance through 2026 and current US prescribing information",
+  source: "Complete pituitary and thyroid lecture, ATA guidance through 2026, and current US prescribing information",
   description: "Interpret thyroid physiology, distinguish the major causes of dysfunction, and design safe replacement, antithyroid, definitive, emergency, and pregnancy care.",
   topics: ["Thyroid axis and testing", "Hypothyroidism", "Levothyroxine", "Thyrotoxicosis", "Antithyroid therapy", "Definitive and emergency care", "Pregnancy and postpartum"],
   outcomes: [
