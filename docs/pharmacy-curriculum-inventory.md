@@ -2861,7 +2861,7 @@ Current source reconciliations:
 - Intentional release response separates exposed well persons from symptomatic patients. PEP begins as soon as possible, ideally within 48 hours, while active illness receives treatment and initially uses two distinct effective classes because engineered resistance is possible.
 - Result ownership, public health reporting, exposure investigation, laboratory safety, source control, response audit, adverse effect monitoring, and teach back close the system.
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 178-question assessment bank.
-- Goodnotes remains unavailable because macOS reports a locked session. Any matching tularemia lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search for tularemia and Francisella tularensis found one matching page, within the RxPrep source already used to build the module, and no separate tularemia lecture. The existing RxPrep and current CDC synthesis therefore covers the complete accessible source set.
 
 ### Systemic Antifungal Foundations
 
