@@ -953,6 +953,9 @@ This inventory records the source material available in the founder's Goodnotes 
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, ten diagrams, all ten embedded knowledge checks, 10 questions and 40 answer choices per assessment, complete scoring, ten remediation links, zero overlap in the verified repeat attempt, and no mobile browser warnings or errors
 - Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
 - Goodnotes reconciliation: complete. A restored library-wide full-text search for immunoglobulin, IVIG, and SCIG found no dedicated immunoglobulin course beyond the RxPrep lesson already incorporated. Matches in asthma, chronic kidney disease, dyslipidemia, heart failure, immunization, pulmonary disease, and device material were incidental biologic, abbreviation, or comorbidity references rather than additional immunoglobulin instruction.
+- The public reader now exposes current FDA guidance, CDC immunization timing guidance, and current intravenous, conventional subcutaneous, and facilitated subcutaneous product labels plus a focused educational safety notice. Reconciliation preserves product-specific indications and conversion, complete infusion orders, serious-toxicity safeguards, passive-serology interpretation, and dose-dependent vaccine intervals.
+- Focused verification confirms 160 unique original questions, valid remediation links, at least 16 questions mapped to every lesson, no source gap, and no em dash or en dash characters in public module prose.
+- The full 222-module audit passes with 29,348 questions, no hard errors, and no thin lessons. The Next.js production build passes with 550 static pages generated.
 
 ### Coccidioidomycosis
 
@@ -3278,4 +3281,4 @@ This order follows prerequisite relationships while keeping every topic in its o
 - Current inventory: 222 clinically named modules and 29,348 original assessment questions.
 - The curriculum contract audit now verifies taxonomy, module and lesson structure, source statements, learning outcomes, visuals, embedded checks, assessment integrity, explanations, remediation links, educational safety framing, and public prose punctuation.
 - Current automated result: no structural errors and no lessons below the eight-question assessment-coverage threshold.
-- Authoritative reference-link reconciliation remains open for 7 modules whose source syntheses are present but whose module pages do not yet expose module-level reference links. The audit reports these separately as source gaps so they remain visible in the completion queue.
+- Authoritative reference-link reconciliation remains open for 6 modules whose source syntheses are present but whose module pages do not yet expose module-level reference links. The audit reports these separately as source gaps so they remain visible in the completion queue.

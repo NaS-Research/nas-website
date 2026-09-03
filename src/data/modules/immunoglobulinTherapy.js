@@ -106,5 +106,43 @@ export const immunoglobulinTherapyModule = {
       ["Close the handoff", "Name the clinician and pharmacy responsible for orders, authorization, supply, laboratory review, infusion records, adverse events, vaccines, and reassessment. A list of doses without ownership is not continuity."],
     ], ["Every product or route change is clinical.", "Reconciliation includes rate and reaction history.", "Stewardship protects access and safety.", "Home therapy needs escalation pathways.", "Every next decision needs an owner."], { question: "What is required when supply forces a change to another immune globulin product?", choices: ["Reassess indication, label, conversion, rate, risks, training, and monitoring", "Substitute the same volume without review", "Assume all concentrations are equal", "Delete the previous reaction history"], answer: 0, rationale: "A product change can alter concentration, excipients, route, approved use, conversion, and tolerability.", reviewHref: "#continuity-stewardship" }),
   ],
+  references: [
+    {
+      label: "FDA. Safety, Efficacy, and Pharmacokinetic Studies to Support Marketing of Immune Globulin Intravenous as Replacement Therapy for Primary Humoral Immunodeficiency.",
+      href: "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/safety-efficacy-and-pharmacokinetic-studies-support-marketing-immune-globulin-intravenous-human",
+    },
+    {
+      label: "CDC. Timing and Spacing of Immunobiologics.",
+      href: "https://www.cdc.gov/vaccines/hcp/imz-best-practices/timing-spacing-immunobiologics.html",
+    },
+    {
+      label: "DailyMed. Privigen immune globulin intravenous prescribing information.",
+      href: "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=7e5649da-75be-4a42-8eeb-4aeba562c401",
+    },
+    {
+      label: "DailyMed. Hizentra immune globulin subcutaneous prescribing information.",
+      href: "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=7b58f5ff-0316-49a3-b585-1f6003ddb953",
+    },
+    {
+      label: "DailyMed. HyQvia immune globulin infusion with recombinant human hyaluronidase prescribing information.",
+      href: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7ca2c26f-4be2-48cd-be5b-486e350654ba",
+    },
+  ],
+  disclaimer: "This module is for advanced education and is not patient-specific medical advice. Immune globulin indication, product, dose, route, infusion rate, vaccine timing, and monitoring require exact current labeling and qualified clinical oversight. Wheezing, hypotension, chest pain, focal neurologic symptoms, severe headache, dark urine, jaundice, reduced urine output, hypoxemia, or progressive dyspnea during or after treatment requires prompt clinical evaluation.",
+  sourceNotes: {
+    reviewed: "Current FDA guidance, CDC immunization timing guidance, and current intravenous, conventional subcutaneous, and facilitated subcutaneous immune globulin labeling were reviewed against the complete RxPrep source sequence.",
+    reconciled: [
+      "Replacement, immunomodulatory, and pathogen-specific immune globulin as separate indication and dosing systems",
+      "Exact product, route, concentration, weight basis, rate, preparation, lot traceability, and response endpoint as parts of the prescription",
+      "Label-specific conversion between intravenous, conventional subcutaneous, and facilitated subcutaneous products",
+      "Thrombosis, kidney injury, hemolysis, aseptic meningitis, anaphylaxis, hyperviscosity, and pulmonary injury safeguards",
+      "Dose-dependent CDC intervals between antibody-containing products and measles or varicella vaccination",
+    ],
+    deferred: [
+      "Institution-specific formulary substitution, infusion-center, and home-service protocols",
+      "Disease-specific off-label immunomodulatory regimens outside the focused indication framework",
+      "Pathogen-specific hyperimmune globulin dosing, which remains governed by each product and exposure protocol",
+    ],
+  },
   questionBank: immunoglobulinTherapyQuestionBank,
 };
