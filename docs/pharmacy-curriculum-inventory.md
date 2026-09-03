@@ -2589,7 +2589,7 @@ Current source reconciliations:
 - Corticosteroids are not routine for nonsevere CAP. Selected severe noninfluenza CAP can qualify under a supported protocol with deliberate glucose, infection, gastrointestinal, and neuropsychiatric monitoring.
 - The 2026 pediatric update is kept within its actual scope. It informs parapneumonic effusion and empyema management but is not represented as a complete replacement for pediatric CAP guidance.
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 172-question assessment bank.
-- Goodnotes remains unavailable because macOS reports a locked session. Any matching pneumonia lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search found four focused community-acquired-pneumonia pages in the complete RxPrep sequence plus one order-verification case and no dedicated pneumonia lecture. The case reinforces syndrome confirmation, oxygenation and severity assessment, cultures when feasible, allergy history, empiric treatment, and culture-directed narrowing, all already explicit in the module. No unsupported duplicate content was added.
 
 ### Hospital-Acquired and Ventilator-Associated Pneumonia
 
