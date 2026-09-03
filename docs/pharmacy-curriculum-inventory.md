@@ -1878,7 +1878,7 @@ Current source reconciliations:
 - Standard PID regimens are not treated as reliably effective against M. genitalium. Selected recurrent cervicitis receives FDA-cleared NAAT and resistance-aware treatment, single-dose azithromycin is rejected for M. genitalium, and routine moxifloxacin expansion to every PID case is avoided because directed-treatment benefit remains uncertain.
 - Pregnancy uses narrative risk and requires hospital, IV, and specialist care for suspected PID. An IUD generally remains during initial treatment with reassessment at 48 to 72 hours. Retired pregnancy letters are absent.
 - Clinical improvement is measured within 72 hours. Partners from the preceding 60 days receive chlamydia and gonorrhea evaluation and presumptive therapy, temporary abstinence lasts through patient completion, symptom resolution, and partner treatment, and chlamydial or gonococcal PID is retested at three months.
-- Goodnotes was rechecked before this build after access was reported restored, but macOS still presented the desktop session as locked. A dedicated cervicitis or PID lecture will receive a documented reconciliation pass when the session is manually unlocked.
+- Goodnotes source reconciliation is complete. A restored library-wide search for cervicitis, pelvic inflammatory disease, endometritis, mucopurulent cervicitis, and cervical motion tenderness found no dedicated lecture. The only non-RxPrep match was one infertility slide identifying PID as a cause of tubal blockage, a reproductive consequence already explicit in the module. The existing RxPrep and current CDC synthesis therefore covers the complete accessible course set without weakening its upper-tract diagnostic and treatment framework.
 
 ### Gynecologic Oncology
 
