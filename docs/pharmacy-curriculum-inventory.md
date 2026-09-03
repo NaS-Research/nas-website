@@ -2652,7 +2652,7 @@ Current source reconciliations:
 - Cholecystitis is linked to definitive gallbladder management, while septic cholangitis requires prompt antibiotics and urgent biliary decompression. Drainage changes the remaining duration and culture-narrowing plan.
 - SBP teaching includes the ascitic PMN threshold of at least 250 cells per cubic millimeter, bedside bottle inoculation, third-generation cephalosporin therapy, albumin 1.5 g/kg on day 1 and 1 g/kg on day 3 when indicated, secondary-peritonitis clues, and narrow prophylaxis indications.
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 172-question assessment bank.
-- Goodnotes remains unavailable because macOS reports a locked session. Any matching intra-abdominal infection lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search found the complete RxPrep sequence plus acute-kidney-injury, enteral-nutrition, laboratory-interpretation, and renal-replacement references, with no separate dedicated intra-abdominal-infection lecture. The kidney source reinforces albumin use in selected spontaneous bacterial peritonitis, which is already explicit. Active peritonitis as an enteral-feeding contraindication and peritoneal-dialysis-associated peritonitis remain assigned to their focused modules. An older laboratory slide uses a less precise ascitic-cell threshold and was not imported over the current PMN-based diagnostic standard.
 
 ### Skin and Soft-Tissue Infections
 
