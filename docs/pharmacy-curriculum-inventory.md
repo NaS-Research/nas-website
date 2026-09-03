@@ -2552,7 +2552,7 @@ Current source reconciliations:
 - It requires tympanic-membrane bulging or qualifying new otorrhea plus middle-ear effusion rather than treating redness alone. Observation is an active 48 to 72 hour plan limited by age, laterality, otorrhea, severity, and reliable rescue access.
 - High-dose amoxicillin remains focused first-line therapy when recent exposure, purulent conjunctivitis, recurrent nonresponse, and allergy do not change selection. The ES-600 amoxicillin to clavulanate ratio, formulation-specific calculations, age and severity durations, and tube candidacy with effusion are made explicit.
 - It contains ten original responsive diagrams, ten embedded checks, and a validated 168-question assessment bank.
-- Goodnotes remains unavailable because macOS reports a locked session. Any matching otitis lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search found 11 otitis-media pages in the complete RxPrep sequence plus one allergic-rhinitis self-care page and no dedicated otitis lecture. The rhinitis source uses ear pain, tugging, hearing change, and related findings as referral signals during self-care triage, which remains assigned to the allergic-rhinitis module. It does not add distinct otitis-treatment instruction, so no unsupported duplicate content was added.
 
 ### Streptococcal Pharyngitis
 
