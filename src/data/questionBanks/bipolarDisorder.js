@@ -28,6 +28,7 @@ const concepts=[
  ["mania-response","Acute mania response is measured through sleep, activation, psychosis, impulsivity, agitation, function, adverse effects, and the ability to transition safely into maintenance care.","Reassess early, optimize an evidence-based regimen, and define which acute components should continue, taper, or change after stabilization.","Escalating several sedating drugs without measuring target symptoms or cumulative adverse effects can obscure deterioration and delay a sustainable plan."],
  ["antipsychotic-monitoring","Antipsychotic monitoring in bipolar disorder depends on the exact agent, dose, route, treatment phase, metabolic risk, movement findings, prolactin effects, QT context, sedation, orthostasis, and interactions.","Establish relevant baseline measures and a time-specific follow-up plan that connects each risk to an action threshold.","Using one generic class checklist without adjusting for the selected drug can miss high-priority toxicity and create unnecessary testing."],
  ["care-transition","Bipolar care transitions require a shared account of episode polarity, safety events, effective and ineffective trials, levels, adverse effects, reproductive goals, early warning signs, and crisis ownership.","Reconcile the acute regimen with the maintenance plan and give every monitoring task, taper, follow-up visit, and emergency response a named owner and date.","Discharge without explaining which acute medications remain temporary can lead to indefinite polypharmacy, recurrence, or abrupt unsupervised stopping."],
+ ["lamotrigine-estrogen","Estrogen-containing contraceptives can increase lamotrigine clearance, while exposure can rise during the inactive-hormone interval or after estrogen is stopped.","Coordinate contraception and lamotrigine changes, monitor mood and concentration-related adverse effects, and follow product-specific maintenance-dose guidance without accelerating initial titration.","Ignoring a start, stop, or cycling change in estrogen exposure can produce loss of mood stability or concentration-related toxicity."],
 ];
 
 const reviewLessonByConcept = {
@@ -60,6 +61,7 @@ const reviewLessonByConcept = {
  comorbidity:"psychosocial-rhythm",
  recovery:"integrated-recovery",
  "care-transition":"integrated-recovery",
+ "lamotrigine-estrogen":"anticonvulsants",
 };
 const dimensions=[["principle","Which statement is most accurate?",0],["action","Which action best applies the evidence?",1],["integration","Which plan demonstrates the strongest clinical reasoning?",1],["hazard","Which error creates the greatest avoidable risk?",2]];
 const distractors=["Use one symptom or screening score as the complete diagnosis.","Choose treatment without reviewing episode, safety, interactions, or patient preference.","Change several therapies without targets, monitoring, or follow-up."];
