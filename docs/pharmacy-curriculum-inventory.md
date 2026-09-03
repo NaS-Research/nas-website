@@ -2445,7 +2445,7 @@ Current source reconciliations:
 - The boxed C. difficile warning changes selection, counseling, follow-up, and response. Disease can begin during therapy or more than two months after exposure.
 - Severe hypersensitivity, acute kidney injury, liver abnormalities, neutropenia, agranulocytosis, thrombocytopenia, CYP3A interactions, and neuromuscular-blocker potentiation receive actionable monitoring rather than a passive adverse-effect list.
 - Retired pregnancy letters are excluded. Pregnancy and lactation decisions use exact route, systemic exposure, timing, infection severity, alternatives, maternal evidence, milk transfer, infant context, and follow-up.
-- Goodnotes could not be rechecked for a dedicated clindamycin lecture because macOS remained locked during this milestone. Any matching Goodnotes material will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search found 21 pages in the complete RxPrep sequence, six pages in an order-verification chart, and one susceptibility example in a medical-chart exercise, with no dedicated clindamycin lecture. The chart material reinforces accurate allergy documentation, culture review, and isolate-specific susceptibility, including a clindamycin-resistant result. Those decisions and the related D-zone workflow are already explicit in the module, so no unsupported duplicate content was added.
 
 ### Nitroimidazole Pharmacology
 
