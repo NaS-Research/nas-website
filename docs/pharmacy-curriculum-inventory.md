@@ -3101,7 +3101,7 @@ Current source reconciliations:
 - Automated verification: 208 unique question IDs and prompts, four distinct answer choices per question, valid lesson links, twelve lesson sections, twelve diagrams, and no em dash or en dash characters in public module prose.
 - Browser verification: desktop and 390 pixel mobile rendering, no visible horizontal overflow, twelve lessons, twelve diagrams, twelve embedded checks, ten questions per test, a completely different second random set, scoring with explanations and ten remediation links, and no rendered runtime error or Next.js error overlay.
 - Build verification: Next.js production build passed August 27, 2026 with 515 static pages generated.
-- Goodnotes source reconciliation remains pending until the local library can be read through an unlocked application session.
+- Goodnotes source reconciliation is complete. A restored library-wide search for Pneumocystis, jirovecii, pentamidine, atovaquone, and primaquine returned 18 matching RxPrep pages and no separate dedicated Pneumocystis lecture. The only additional matches were a pentamidine-associated diabetes entry in endocrine material and a pentamidine torsades-risk entry in ventricular-arrhythmia material. Those cross-topic adverse-effect references are already represented in the module's glucose, electrolyte, and electrocardiographic safety instruction, so the existing RxPrep, current NIH, and current-label synthesis covers the complete accessible source set.
 
 ### HIV Foundations, Diagnosis, and Care
 
