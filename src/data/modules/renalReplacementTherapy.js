@@ -6,12 +6,12 @@ export const renalReplacementTherapyModule = {
   title: "Renal Replacement Therapy",
   source: "KDIGO dialysis reports, KDOQI vascular access, and current ISPD guidance",
   description: "Choose and prescribe kidney replacement therapy from physiology and patient goals, then protect access, residual kidney function, medication exposure, treatment delivery, and life beyond the machine.",
-  topics: ["Initiation and choice", "Clearance mechanics", "Hemodialysis", "Peritoneal dialysis", "Access and complications", "Longitudinal treatment"],
+  topics: ["Initiation and choice", "Clearance mechanics", "Hemodialysis", "Peritoneal dialysis", "Continuous and hybrid therapy", "Access and complications", "Longitudinal treatment"],
   outcomes: [
     "Initiate kidney replacement therapy for symptoms or failed homeostasis rather than an isolated eGFR or BUN threshold.",
     "Compare transplant, in-center and home hemodialysis, peritoneal dialysis, and comprehensive conservative care through shared decisions.",
     "Calculate and interpret clearance, Kt/V, ultrafiltration, dialysate flow, and residual kidney contribution from treatment mechanics.",
-    "Design a hemodialysis or peritoneal dialysis prescription and explain how access, membrane, dwell, frequency, and duration change delivery.",
+    "Design intermittent, peritoneal, continuous, or prolonged intermittent therapy and explain how access, membrane, flows, dwell, frequency, and duration change delivery.",
     "Recognize access infection, dysfunction, peritonitis, hemodynamic instability, disequilibrium, and other urgent complications.",
     "Reconcile medications and patient goals across initiation, hospitalization, recovery, modality change, transplant, and supportive care.",
   ],
@@ -22,12 +22,12 @@ export const renalReplacementTherapyModule = {
       concepts: ["Clinical indications", "Shared decision-making", "Transplant", "Home therapies", "Conservative care"],
       application: "State the indication, urgency, reversibility, treatment goal, feasible modalities, access plan, transplant pathway, and patient priorities before recommending a start.",
       lesson: [
-        { heading: "Start for clinical need", body: "Dialysis is initiated for refractory hyperkalemia, acidosis, volume overload, uremic complications, progressive nutritional or functional decline attributable to kidney failure, or another failure of homeostasis. eGFR and BUN inform the trajectory but do not create a universal start threshold." },
+        { heading: "Start for clinical need", body: "Dialysis is initiated for refractory hyperkalemia, acidosis, volume overload, uremic complications, selected dialyzable poisonings, progressive nutritional or functional decline attributable to kidney failure, or another failure of homeostasis. eGFR and BUN inform the trajectory but do not create a universal start threshold." },
         { heading: "Compare complete care pathways", body: "Discuss preemptive or subsequent transplant, peritoneal dialysis, home or in-center hemodialysis, incremental strategies when appropriate, and comprehensive conservative kidney management. Explain likely routines, benefits, burdens, access, caregiver needs, travel, work, cost, and emergency backup without steering by clinician convenience." },
         { heading: "Build an ESKD Life-Plan", body: "A life plan connects the current modality to future access, transplant, anticipated transitions, vessel preservation, residual kidney function, and patient goals. Avoid blood pressure cuffs, venipuncture, and PICC placement in veins that may be needed for hemodialysis access when feasible." },
         { heading: "Prepare without locking the choice", body: "Early education and access planning reduce crisis starts, but preferences and health change. Revisit modality after hospitalization, loss of function, caregiver change, access failure, transplant evaluation, or treatment burden. An urgent start should not permanently determine the long-term modality." },
       ],
-      keyPoints: ["Start for clinical consequences.", "Offer every feasible pathway.", "Access belongs to a life plan.", "Urgent start is not permanent choice."],
+      keyPoints: ["Start for clinical consequences.", "Kidney replacement does not restore endocrine kidney function.", "Offer every feasible pathway.", "Access belongs to a life plan.", "Urgent start is not permanent choice."],
       check: { question: "Which finding most strongly supports dialysis initiation?", choices: ["Refractory pulmonary edema despite appropriate medical therapy", "An eGFR of 12 without symptoms or complications", "A BUN of 70 alone", "Patient age above 70"], answer: 0, rationale: "Dialysis begins for failed homeostasis or clinical consequences rather than an isolated number.", reviewHref: "#initiation-modality-and-life-plan" },
     },
     {
@@ -73,6 +73,20 @@ export const renalReplacementTherapyModule = {
       check: { question: "Why can a very long high-glucose dwell lose ultrafiltration effectiveness?", choices: ["The glucose osmotic gradient dissipates as glucose is absorbed", "Diffusion permanently stops after one hour", "The catheter always occludes", "Residual kidney function doubles"], answer: 0, rationale: "Absorption of glucose reduces the osmotic gradient that drives water removal.", reviewHref: "#peritoneal-dialysis-prescription" },
     },
     {
+      slug: "continuous-and-hybrid-kidney-replacement", title: "Continuous and Hybrid Kidney Replacement", visual: "rrt-continuous",
+      summary: "CRRT and prolonged intermittent therapies spread fluid and solute removal across more time. They can improve physiologic tolerance in selected critically ill patients, but modality alone has not established a survival advantage.",
+      concepts: ["CRRT and prolonged intermittent therapy", "CVVH, CVVHD, and CVVHDF", "Effluent dose", "Circuit anticoagulation", "Dynamic medication dosing"],
+      application: "Choose a modality from hemodynamics, intracranial pressure, fluid and solute goals, access, staffing, and local capability, then prescribe and verify blood flow, effluent, fluid balance, anticoagulation, electrolyte replacement, and medication exposure.",
+      lesson: [
+        { heading: "Choose time and intensity deliberately", body: "CRRT is physiologically attractive when unstable pressure, difficult fluid balance, or increased intracranial pressure makes rapid intermittent shifts undesirable. Prolonged intermittent therapy offers an intermediate duration. Randomized evidence has not shown that continuous therapy itself improves survival or kidney recovery, so patient physiology and reliable delivery should drive selection." },
+        { heading: "Name the transport mode", body: "CVVH emphasizes convection through replacement-fluid-supported hemofiltration. CVVHD emphasizes diffusion through dialysate flow. CVVHDF combines diffusive and convective clearance. Slow continuous ultrafiltration primarily targets fluid. The acronym is less important than tracing blood flow, dialysate, replacement fluid, effluent, and net patient fluid removal." },
+        { heading: "Prescribe delivered effluent", body: "For adults receiving CRRT for AKI, current KDIGO guidance supports a delivered effluent volume of 20 to 25 mL/kg/h rather than augmented intensity for small-solute clearance. Interruptions, filter clotting, procedures, and downtime reduce delivery, so the ordered rate may need a margin and the actual delivered dose must be audited." },
+        { heading: "Prevent treatment-created deficits", body: "Monitor temperature, pressure, acid-base status, sodium, potassium, phosphate, magnesium, calcium, glucose, nutrition, bleeding, citrate balance when used, and circuit life. CRRT can continuously remove medicines and nutrients. Recalculate antimicrobial and other narrow-index regimens whenever effluent rate, downtime, residual kidney function, or modality changes." },
+      ],
+      keyPoints: ["Tolerance guides modality choice.", "Transport mode follows circuit flows.", "Audit delivered effluent, not only the order.", "Continuous therapy continuously changes exposure."],
+      check: { question: "Which statement best describes CVVHDF?", choices: ["It combines dialysate-based diffusion with replacement-fluid-supported convection", "It removes fluid without meaningful solute transport", "It is identical to peritoneal dialysis", "It guarantees better survival than intermittent therapy"], answer: 0, rationale: "CVVHDF uses both diffusive and convective clearance, while outcomes still depend on indication, prescription, delivery, and patient physiology.", reviewHref: "#continuous-and-hybrid-kidney-replacement" },
+    },
+    {
       slug: "access-infection-and-acute-complications", title: "Access, Infection, and Acute Complications", visual: "rrt-safety",
       summary: "Vascular and peritoneal access are lifelines and infection portals. Complications require rapid recognition, cultures or imaging when indicated, source control, treatment, and a plan to preserve future access.",
       concepts: ["AV fistula and graft", "Central venous catheter", "PD catheter", "Peritonitis", "Disequilibrium and hypotension"],
@@ -103,6 +117,7 @@ export const renalReplacementTherapyModule = {
   ],
   references: [
     { label: "KDIGO Dialysis Initiation, Modality, Access, and Prescription Report", href: "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Dialysis-Initiation-conf-report-FINAL.pdf" },
+    { label: "KDIGO Acute Kidney Injury and Acute Kidney Disease Guideline Suite", href: "https://kdigo.org/guidelines/acute-kidney-injury/" },
     { label: "KDIGO Home Dialysis Conference Report", href: "https://kdigo.org/kdigo-announces-publication-of-dialysis-conference-report/" },
     { label: "KDOQI Vascular Access Guideline and Tools", href: "https://www.kidney.org/professionals/kdoqi/guidelines-and-commentaries/vascular-access" },
     { label: "ISPD Guidelines and Educational Resources", href: "https://ispd.org/guidelines/" },
