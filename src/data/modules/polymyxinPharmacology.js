@@ -44,5 +44,44 @@ export const polymyxinPharmacologyModule = {
 
     section("integration", "Close the Loop Before the First Unit Is Ordered", "A defensible polymyxin plan makes the resistant infection, current evidence, exact product, unit convention, site, source, dose source, preparation, toxicity ownership, response, and exit criteria visible to every person in the care chain.", ["Diagnosis and organism", "MIC and category", "Alternative analysis", "Exact product and units", "Monitoring and exit"], "Present one patient from diagnostic threshold through culture, source control, preferred-agent exclusion, agent selection, calculation, preparation, monitoring, response, de-escalation, and stop criteria.", [["Start with evidence, not last-line reputation", "Name the syndrome, organism, resistance mechanism, MIC method and category, burden, source, and severity. State why current preferred and alternative agents are inactive, unsafe, unavailable, or unsuitable."], ["Make the order reconstructable", "Write colistimethate or polymyxin B, the strength convention, patient weight and weight type, loading and maintenance source, dose, route, interval, vial count, concentration, final solution, infusion, and discard time."], ["Assign safety ownership", "Specify renal and urine-output frequency, electrolytes, neurologic and respiratory checks, interacting nephrotoxins and paralytics, response measures, laboratory owners, and thresholds for escalation."], ["Write the exit before exposure accumulates", "Define culture review, source intervention, clinical response, toxicity limits, availability of a safer active agent, duration endpoint, and the conditions that will narrow, replace, or stop the polymyxin."]], ["The infection and alternative analysis must be explicit.", "Never omit the agent and unit convention.", "Assign renal, electrolyte, neurologic, and respiratory monitoring.", "Every rescue regimen needs an exit plan."], check("Which polymyxin order is complete?", ["A documented resistant syndrome and source, current MIC category, failed alternatives, exact agent and units, dose source, preparation, monitoring owners, response, and exit criteria", "Polymyxin for broad coverage", "Colistin 150 mg without specifying CBA or product", "Polymyxin B for a resistant isolate with no source or monitoring plan"], "A closed-loop order makes the evidence, product, units, exposure, safety, response, and exit reconstructable.", "integration")),
   ],
+  references: [
+    {
+      label: "IDSA. 2026 Guidance on the Treatment of Antimicrobial Resistant Gram-Negative Infections.",
+      href: "https://www.idsociety.org/practice-guideline/amr-guidance/",
+    },
+    {
+      label: "FDA. Rationale for breakpoint recognition for polymyxins and selected gram-negative organisms.",
+      href: "https://www.fda.gov/drugs/development-resources/fda-rationale-breakpoints-recognition-decision-polymyxins-and-enterobacterales-pseudomonas",
+    },
+    {
+      label: "DailyMed. Colistimethate sodium prescribing information.",
+      href: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a335659-03b0-4a2d-9cd4-7dcf7da96fe6",
+    },
+    {
+      label: "DailyMed. Polymyxin B for Injection prescribing information.",
+      href: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b56f18c0-ef5e-4ed9-a5af-f79f3cd189b6",
+    },
+    {
+      label: "International Consensus Guidelines for the Optimal Use of the Polymyxins.",
+      href: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7437259/",
+    },
+  ],
+  disclaimer: "This module is for advanced education and is not patient-specific medical advice. Polymyxins have a narrow therapeutic window and can cause acute kidney injury, electrolyte wasting, neurotoxicity, neuromuscular blockade, apnea, and death. Selection, susceptibility interpretation, dose conversion, preparation, monitoring, and source conflicts require infectious-disease, pharmacy, laboratory, and institutional-protocol oversight using the current product label.",
+  sourceNotes: {
+    reviewed: "The complete RxPrep polymyxin sequence and accessible course context were reconciled with current United States colistimethate and polymyxin B labeling, the 2026 IDSA resistant gram-negative guidance, the current FDA breakpoint-recognition rationale, and the endorsed international polymyxin consensus.",
+    reconciled: [
+      "Colistimethate prodrug conversion, active colistin, active polymyxin B, and noninterchangeable dose conventions",
+      "Current FDA intermediate and resistant categories without a susceptible category, plus susceptibility-testing limitations",
+      "Reserve use, urinary and systemic agent selection, poor pulmonary exposure, and the current invasive CRAB combination role",
+      "United States label dosing and preparation for colistimethate, with exact CBA language and renal adjustment",
+      "The direct conflict between polymyxin B label renal reduction and consensus nonadjustment, preserved for specialist resolution",
+      "Acute kidney injury, pseudo-Bartter physiology, neurotoxicity, neuromuscular respiratory failure, and closed-loop monitoring",
+    ],
+    deferred: [
+      "Institution-specific resistant-organism pathways, compounding procedures, and independent-check requirements",
+      "Patient-specific renal replacement therapy, therapeutic drug monitoring, and rapidly changing renal dosing",
+      "Local microbiology methods, formulary access, susceptibility reporting, and outbreak-control procedures",
+    ],
+  },
   questionBank: polymyxinPharmacologyQuestionBank,
 };
