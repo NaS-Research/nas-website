@@ -2168,7 +2168,7 @@ Current source reconciliations:
 - Previously vaccinated people receive vaccine on days zero and three without HRIG. Immunocompromised unvaccinated people receive a fifth vaccine dose on day twenty-eight with response planning.
 - Human bites without blood exposure do not routinely indicate HIV nPEP. Visibly bloody saliva contacting mucosa or non-intact skin triggers urgent case-by-case HIV, hepatitis B, and hepatitis C evaluation for both exposure directions.
 - Bite wounds contaminated with saliva use current CDC dirty or major tetanus rules. Retired pregnancy letters are excluded from every vaccine and antimicrobial decision.
-- Goodnotes remains unavailable because the Mac session is locked. Any dedicated lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search for animal bites, human bites, dog bites, cat bites, closed-fist injuries, fight bites, rabies, Pasteurella multocida, and Eikenella corrodens found nine matching pages, all within the complete RxPrep sequence already reviewed for this module. No separate bite-wound or rabies lecture is present in the indexed library, so the existing RxPrep, CDC, IDSA, NICE, and current exposure-guidance synthesis covers the complete accessible course source set.
 
 ### Burn Assessment and Initial Care
 
