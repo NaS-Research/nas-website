@@ -60,7 +60,7 @@ export const anemiaModule = {
     lesson("intravenous-iron", "Prescribe Intravenous Iron as an Exact Product", "Intravenous iron can replete stores rapidly and bypass gastrointestinal absorption, but products differ in indication, dose, concentration, infusion time, visit burden, pediatric use, and important toxicities.", "intravenous-iron", ["Product selection", "Total course", "Hypersensitivity", "Hypophosphatemia", "Extravasation", "Monitoring"], "Use the current label for the chosen product and write dose, dilution, rate, observation, reaction response, and reassessment as one order.", [
       ["Match product to setting", "Iron sucrose, ferric gluconate, ferric carboxymaltose, ferric derisomaltose, ferumoxytol, iron dextran, and dialysis-specific products are not operationally interchangeable. Compare approved indication, total course, visit burden, kidney setting, age, and payer access."],
       ["Prepare for hypersensitivity", "Serious reactions are uncommon but possible. Administer in a setting with trained staff and immediate treatment, observe for the product-specific period, and document any prior infusion reaction by phenotype rather than using the vague label allergy."],
-      ["Protect phosphate with ferric carboxymaltose", "Current Injectafer labeling warns about symptomatic hypophosphatemia and osteomalacia, especially with repeated courses or predisposing conditions. Assess risk and monitor serum phosphate before repeat treatment when indicated."],
+      ["Protect phosphate with ferric carboxymaltose", "Current Injectafer labeling carries a boxed warning for severe, prolonged symptomatic hypophosphatemia, including hospitalization, osteomalacia, and fractures. Correct pre-existing hypophosphatemia and check serum phosphate before a repeat course in an at-risk patient or whenever retreatment occurs within three months."],
       ["Prevent administration injury", "Follow exact dilution, concentration, infusion or push rate, and line instructions. Extravasation can cause persistent brown skin discoloration, so stop administration at the affected site."],
       ["Time the response", "Document product, dose, date, reaction, CBC plan, iron-study timing, phosphate plan when relevant, and criteria for another course. Early assays can be distorted by recent parenteral iron."],
     ], ["IV iron products are not interchangeable.", "Reaction readiness is mandatory.", "Ferric carboxymaltose has a phosphate warning.", "Extravasation can cause lasting discoloration.", "Repeat treatment requires documented recurrence."], { question: "Which toxicity deserves specific attention with repeat ferric carboxymaltose courses?", choices: ["Symptomatic hypophosphatemia and osteomalacia", "Permanent hypernatremia in every patient", "Universal agranulocytosis", "Retinal detachment"], answer: 0, rationale: "Current labeling identifies serious symptomatic hypophosphatemia, including osteomalacia and fractures.", reviewHref: "#intravenous-iron" }),
@@ -97,5 +97,39 @@ export const anemiaModule = {
       ["Assign ownership", "Name who will review pending studies, evaluate the bleeding source, renew or stop treatment, manage infusion reactions, repeat a questionable test, and determine whether the anemia has truly resolved."],
     ], ["A diagnosis needs source control.", "Monitoring should answer a decision.", "Medication review is mechanism based.", "Counseling includes danger signs and next steps.", "Every unresolved action needs an owner."], { question: "What makes an anemia plan closed loop?", choices: ["A cause, treatment, response target, timing, failure rule, escalation trigger, and owner", "A prescription without follow-up", "A normal MCV alone", "Indefinite replacement with no source evaluation"], answer: 0, rationale: "Closed-loop care connects treatment to verification and accountability.", reviewHref: "#integration" }),
   ],
+  references: [
+    {
+      label: "KDIGO. 2026 Clinical Practice Guideline for the Management of Anemia in Chronic Kidney Disease.",
+      href: "https://kdigo.org/guidelines/anemia-in-ckd/",
+    },
+    {
+      label: "AABB. Red Blood Cell Transfusion: 2023 International Guidelines.",
+      href: "https://www.aabb.org/news-resources/resources/clinical-practice-resources",
+    },
+    {
+      label: "DailyMed. Injectafer ferric carboxymaltose prescribing information.",
+      href: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=517b4a19-45b3-4286-9f6a-ced4e10447de",
+    },
+    {
+      label: "DailyMed. Epogen epoetin alfa prescribing information.",
+      href: "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=1f2d0b28-9cc5-4523-80b8-637fdaf3f7a5",
+    },
+  ],
+  disclaimer: "This module is for advanced education and is not patient-specific medical advice. Anemia with active bleeding, hypotension, ischemic symptoms, severe dyspnea, altered mental status, rapid hemoglobin decline, severe hemolysis, pancytopenia, or progressive neurologic findings requires prompt clinical evaluation. Transfusion, intravenous iron, erythropoiesis-stimulating therapy, and cause-specific treatment require qualified clinical oversight and current product labeling.",
+  sourceNotes: {
+    reviewed: "The complete RxPrep anemia sequence and accessible kidney-course material were reconciled with the KDIGO 2026 anemia in CKD guideline, current AABB transfusion guidance, and current ferric carboxymaltose and epoetin alfa labeling.",
+    reconciled: [
+      "Physiologic stability, tempo, production, blood loss, and hemolysis before morphology-driven classification",
+      "Iron deficiency confirmation, source evaluation, elemental oral iron, interaction planning, and measurable response",
+      "Exact intravenous iron product selection and the August 2026 Injectafer boxed warning for severe symptomatic hypophosphatemia",
+      "Vitamin B12 neurologic protection, folate sequencing, and cause-directed replacement duration",
+      "KDIGO 2026 dialysis-specific iron and erythropoiesis pathways, lowest-effective ESA exposure, and individualized transfusion decisions",
+    ],
+    deferred: [
+      "Institution-specific transfusion, intravenous iron, and erythropoiesis order sets",
+      "Detailed hematopathology and bone-marrow procedural interpretation",
+      "Disease-specific anemia management already assigned to oncology, obstetric, hemoglobinopathy, and critical-care modules",
+    ],
+  },
   questionBank: anemiaQuestionBank,
 };
