@@ -2605,10 +2605,11 @@ Current source reconciliations:
 ### Fosfomycin Pharmacology
 
 - Built from the fosfomycin section of RxPrep 2023 Chapter 22 and reconciled with current fosfomycin labeling, FDA-recognized susceptibility criteria, and current resistant gram-negative guidance.
-- The module separates the oral tromethamine packet used for selected uncomplicated cystitis from intravenous fosfomycin products used outside the United States and from unapproved multidose oral strategies.
+- The module separates the oral tromethamine packet used for selected uncomplicated cystitis from CONTEPO, the distinct intravenous fosfomycin product FDA approved in October 2025 for selected adult complicated UTI and acute pyelonephritis, and from unapproved multidose oral strategies.
 - MurA inhibition, early peptidoglycan synthesis, GlpT and UhpT transport, urinary exposure, spectrum boundaries, single-dose administration, resistance, renal evidence, pregnancy and lactation narratives, and stewardship are connected across ten lessons.
 - It contains ten original responsive diagrams, ten embedded checks, and a validated assessment bank exceeding 100 original questions.
 - Goodnotes source reconciliation is complete. A restored library-wide search found five fosfomycin pages in the complete RxPrep sequence and no separate course lecture, case, or associated document. The existing module already reconciles that source with current oral fosfomycin labeling, susceptibility criteria, and resistant gram-negative guidance, so no unsupported duplicate content was added.
+- The public reader now exposes current oral fosfomycin and intravenous CONTEPO labeling, FDA susceptibility criteria, the 2026 IDSA resistant gram-negative guidance, and the 2025 IDSA complicated UTI guideline. The reconciliation corrects the former United States availability statement and preserves exact product, route, indication, dose, exposure, and safety boundaries. The educational safety notice makes upper-tract, systemic, persistent-symptom, and product-selection boundaries explicit. Focused verification confirms 168 unique original questions, valid remediation links, at least 16 questions mapped to every lesson, no source gap, and no em dash or en dash characters in public module prose.
 
 ### Nitrofurantoin Pharmacology
 
@@ -3291,4 +3292,4 @@ This order follows prerequisite relationships while keeping every topic in its o
 - Current inventory: 222 clinically named modules and 29,348 original assessment questions.
 - The curriculum contract audit now verifies taxonomy, module and lesson structure, source statements, learning outcomes, visuals, embedded checks, assessment integrity, explanations, remediation links, educational safety framing, and public prose punctuation.
 - Current automated result: no structural errors and no lessons below the eight-question assessment-coverage threshold.
-- Authoritative reference-link reconciliation remains open for 1 module whose source synthesis is present but whose module page does not yet expose module-level reference links. The audit reports this separately as a source gap so it remains visible in the completion queue.
+- Authoritative reference-link reconciliation is complete across all 222 modules. The curriculum contract audit reports no remaining source gaps.
