@@ -2043,7 +2043,7 @@ Current source reconciliations:
 - Tinnitus is classified by pulse synchrony, laterality, sudden or gradual onset, associated hearing change, vertigo, neurologic findings, duration, and burden. Pulsatile, asymmetric, focal, or sudden patterns receive targeted evaluation.
 - Persistent bothersome primary tinnitus is managed through education, hearing assessment, cognitive behavioral therapy, hearing aids when indicated, selected sound strategies, and attention to sleep and mood. Routine drug or supplement cures are not promised.
 - The current AAO-HNS guideline directory identifies a tinnitus update as in development. The module therefore avoids presenting the older guideline as newly updated and will be reviewed when the replacement is published.
-- Goodnotes was retried during the preceding source audit, but macOS still reported the session as locked. Any dedicated lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search for otitis externa, cerumen, ear drops, tympanic-membrane status, tinnitus, carbamide peroxide, ciprofloxacin and dexamethasone, and sudden hearing loss found the complete RxPrep ear sequence but no dedicated ear-conditions lecture. Cardiovascular and arrhythmia materials mention tinnitus only as an adverse effect of salicylates, lidocaine, or mexiletine, while the diuretic medicinal-chemistry course identifies loop-diuretic ototoxicity and interacting ototoxins. Those exposure signals are already captured by the module's medication-linked tinnitus assessment and do not replace the focused diagnostic and otic-treatment framework. No accessible course source adds a conflicting or missing ear-care pathway.
 
 ### Acne
 
