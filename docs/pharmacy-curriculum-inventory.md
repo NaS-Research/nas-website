@@ -2967,7 +2967,7 @@ Current source reconciliations:
 - Automated verification: 192 unique question IDs and prompts, four distinct answer choices per question, valid lesson links, eleven lesson sections, eleven diagrams, and no em dash or en dash characters in public module prose.
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, eleven lessons, eleven diagrams, eleven embedded checks, ten questions per test, a different second random set, scoring with explanations and remediation links, and zero console errors.
 - Build verification: Next.js production build passed August 27, 2026 with 511 static pages generated.
-- Goodnotes source reconciliation remains pending until the local macOS session is unlocked and the library is readable through the application.
+- Goodnotes reconciliation: complete. A restored library-wide full-text search for nystatin, clotrimazole, Oravig, oral candidiasis, and oropharyngeal candidiasis found RxPrep as the only dedicated local-antifungal course source. Matches in asthma, chronic obstructive pulmonary disease, pulmonary pharmacotherapy, sexual-health, medication-list, and SOAP-note documents were incidental thrush prevention, medication-history, or case references rather than a separate treatment lecture.
 
 ### Cryptococcal Meningitis
 
