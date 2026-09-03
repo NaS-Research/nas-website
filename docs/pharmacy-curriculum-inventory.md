@@ -2424,7 +2424,7 @@ Current source reconciliations:
 - Serum creatinine alone does not exclude renal toxicity. Current labels identify pseudo-Bartter renal tubulopathy with hypokalemic metabolic alkalosis, magnesium and calcium loss, urinary potassium wasting, normal blood pressure, and sometimes normal creatinine.
 - Neurologic symptoms can progress to neuromuscular blockade, apnea, respiratory arrest, and death, especially with renal accumulation, anesthesia, or muscle relaxants.
 - Retired pregnancy letters are excluded. Pregnancy and lactation decisions use current narrative evidence, timing, infection severity, route, alternatives, and maternal and infant monitoring.
-- Goodnotes was rechecked for a dedicated polymyxin lecture, but macOS remained locked and automatic access could not unlock it. Any matching Goodnotes material will receive a documented reconciliation pass after the Mac is manually unlocked.
+- Goodnotes source reconciliation is complete. A restored library-wide search found 25 pages in the complete RxPrep sequence and four cystic-fibrosis pages, with no dedicated polymyxin lecture. The cystic-fibrosis material places colistimethate within resistant Pseudomonas treatment and inhaled-antibiotic context, which remains assigned to the focused cystic-fibrosis module. It does not change the polymyxin module's existing distinctions among prodrug conversion, systemic and urinary selection, pulmonary limitations, susceptibility uncertainty, reserve use, dosing conventions, and toxicity. No unsupported duplicate content was added.
 
 ### Clindamycin Pharmacology
 
