@@ -562,11 +562,11 @@ This inventory records the source material available in the founder's Goodnotes 
 - Course scope: stroke-system recognition, last known well, disabling deficit, prehospital destination, mobile stroke units, focused mimic evaluation, noncontrast brain imaging, vascular imaging, core and penumbra, imaging-selected extended-window thrombolysis, large-vessel occlusion, alteplase and tenecteplase selection and dosing, thrombolysis pressure thresholds, nondisabling minor stroke, post-thrombolysis surveillance, early and late-window thrombectomy, selected large-core EVT, basilar occlusion, pediatric pathways, pressure without reperfusion, glucose and temperature, dysphagia, cerebral edema, etiologic classification, antithrombotic transition, rehabilitation, and follow-up ownership
 - Current references reviewed: 2026 AHA and ASA acute ischemic stroke guideline, 2026 AHA implementation summary, and current FDA tenecteplase labeling
 - Learning structure: six lessons, six native stroke-system, imaging, thrombolysis, thrombectomy, supportive-care, and transition diagrams, and six embedded knowledge checks
-- Assessment: 100 original questions, ten sampled without replacement per attempt with answer order randomized
-- Source reconciliation: last known well remained distinct from discovery time; disability was not reduced to NIHSS total; imaging proceeded in parallel without delaying eligible IV therapy; alteplase and tenecteplase were both endorsed within the 4.5-hour guideline window while the tenecteplase label remained a separate evidence layer; stroke and STEMI tenecteplase doses were separated; nondisabling minor stroke favored dual antiplatelet therapy when eligible; selected large-core and basilar occlusions entered EVT pathways; intensive systolic lowering below 140 after reperfusion and intensive glucose control to 80 to 130 were rejected; acute care ended with mechanism-specific prevention and recovery ownership
-- Automated verification: 100 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, at least eight questions mapped to every lesson, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 30, 2026 with 547 static pages generated
-- Goodnotes note: the dedicated stroke lecture, chapter, and notes remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+- Assessment: 120 original questions, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: all 83 pages of the Acute Ischemic Stroke lecture, 34 pages of the stroke chapter, 44 pages of the stroke risk-assessment deck, and the one-page handwritten stroke note were recovered and reviewed. The 161 PDF pages were rendered and inspected visually. Last known well remained distinct from discovery time; the focused examination became bilateral and repeatable; disability was not reduced to NIHSS total; posterior circulation findings and NIHSS limitations were explicit; imaging proceeded in parallel without delaying eligible IV therapy; alteplase and tenecteplase were both endorsed within the 4.5-hour guideline window while the tenecteplase label remained a separate evidence layer; stroke and STEMI tenecteplase doses were separated; tenecteplase preparation, dextrose incompatibility, administration, and procedural bleeding precautions were added; nondisabling minor stroke favored dual antiplatelet therapy when eligible; selected large-core and basilar occlusions entered EVT pathways; intensive systolic lowering below 140 after reperfusion and intensive glucose control to 80 to 130 were rejected; immobility prevention and early rehabilitation were added; and acute care ended with mechanism-specific prevention and recovery ownership
+- Automated verification: 120 unique question IDs across 30 concepts, no duplicate answer choices, valid lesson links, six diagrams, at least eight questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 3, 2026 with 549 static pages generated
+- Goodnotes reconciliation: complete for the 162-page acute stroke source family on September 3, 2026
 
 ### Secondary Stroke Prevention
 
@@ -1313,7 +1313,7 @@ Available documents:
 
 Target modules:
 
-1. Acute Ischemic Stroke (`built`, 100 question bank; Goodnotes reconciliation pending)
+1. Acute Ischemic Stroke (`complete`, 120 question bank; Goodnotes reconciliation complete September 3, 2026)
 2. Secondary Stroke Prevention (`built`, 104 question bank; Goodnotes reconciliation pending)
 3. Acute Kidney Injury (`built`, 100 question bank; Goodnotes reconciliation pending)
 4. Chronic Kidney Disease (`built`, 100 question bank; Goodnotes reconciliation pending)
