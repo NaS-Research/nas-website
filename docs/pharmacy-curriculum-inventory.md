@@ -3037,7 +3037,7 @@ Current source reconciliations:
 - Automated verification: 192 unique question IDs and prompts, four distinct answer choices per question, valid lesson links, eleven lesson sections, eleven diagrams, and no em dash or en dash characters in public module prose.
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, eleven lessons, eleven diagrams, eleven embedded checks, ten questions per test, a different second random set, scoring with explanations and remediation links, and zero console errors.
 - Build verification: Next.js production build passed August 27, 2026 with 512 static pages generated.
-- Goodnotes source reconciliation remains pending until the local macOS session is unlocked and the library is readable through the application.
+- Goodnotes source reconciliation is complete. A restored library-wide search for oseltamivir, zanamivir, peramivir, baloxavir, and influenza antiviral therapy returned 17 matching RxPrep pages and no separate dedicated influenza-antiviral lecture. Two additional pages in a chronic-kidney-disease reference mention oseltamivir carboxylate only as an OAT3 substrate in a vadadustat interaction table. That incidental interaction is not a separate influenza teaching source, so the existing RxPrep, current CDC, and current-label synthesis covers the complete accessible source set.
 
 ### Herpes Simplex and Varicella Antiviral Pharmacology
 
