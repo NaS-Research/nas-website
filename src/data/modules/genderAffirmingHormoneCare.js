@@ -107,5 +107,39 @@ export const genderAffirmingHormoneCareModule = {
       ["Design the handoff", "At discharge or transfer, document the regimen, pending tests, next dose, monitoring, warning signs, supply, and clinician responsible for follow-up."],
     ], ["Continuity is medication safety.", "Perioperative plans are individualized.", "Gonadal status changes interruption risk.", "Self-sourced exposure deserves harm reduction.", "Every handoff needs an owner."], { question: "What is the safest perioperative hormone strategy?", choices: ["Coordinate an individualized plan using procedure, mobility, VTE risk, route, gonadal status, and postoperative needs", "Stop every hormone for every operation", "Continue every medicine regardless of acute contraindication", "Leave the decision undocumented"], answer: 0, rationale: "Perioperative risk and the harm of interruption vary, so one universal stop rule is inappropriate.", reviewHref: "#continuity-safety" }),
   ],
+  references: [
+    {
+      label: "World Professional Association for Transgender Health. Standards of Care for the Health of Transgender and Gender Diverse People, Version 8.",
+      href: "https://wpath.org/publications/soc8/",
+    },
+    {
+      label: "Endocrine Society. Gender Dysphoria and Gender Incongruence Guideline Resources.",
+      href: "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
+    },
+    {
+      label: "ACOG. Health Care for Transgender and Gender Diverse Individuals. Committee Opinion No. 823.",
+      href: "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2021/03/health-care-for-transgender-and-gender-diverse-individuals",
+    },
+    {
+      label: "FDA. Class-wide labeling changes for testosterone products.",
+      href: "https://www.fda.gov/drugs/drug-alerts-and-statements/fda-issues-class-wide-labeling-changes-testosterone-products",
+    },
+  ],
+  disclaimer: "This module is for advanced education and is not patient-specific medical advice. Hormone selection, reproductive planning, laboratory monitoring, and perioperative decisions require individualized care from qualified clinicians. Chest pain, shortness of breath, unilateral leg swelling, severe headache, neurologic symptoms, pregnancy, severe bleeding, or other acute concerns require prompt clinical evaluation.",
+  sourceNotes: {
+    reviewed: "Current WPATH SOC8, the Endocrine Society guideline resource, reaffirmed ACOG guidance, and the current FDA testosterone safety action were reviewed for adult hormone care, reproductive health, monitoring, prevention, and continuity.",
+    reconciled: [
+      "Person-defined outcomes, informed choice, coupled hormone effects, and individualized or nonbinary regimens",
+      "Estradiol molecule and route selection, avoidance of ethinyl estradiol, and thrombotic-risk planning",
+      "Mechanism-specific androgen reduction and product-specific testosterone administration and laboratory timing",
+      "Fertility preservation, contraception, pregnancy, retained-organ screening, bone health, and cardiovascular prevention",
+      "The 2025 FDA removal of older boxed cardiovascular language together with the class-wide testosterone blood pressure warning",
+    ],
+    deferred: [
+      "Pediatric and adolescent prescribing protocols, which require a specialized multidisciplinary pathway",
+      "Procedure-specific surgical technique and institution-specific perioperative protocols",
+      "Jurisdiction-specific consent, coverage, and prescribing requirements",
+    ],
+  },
   questionBank: genderAffirmingHormoneCareQuestionBank,
 };

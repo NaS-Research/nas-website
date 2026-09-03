@@ -2021,6 +2021,9 @@ Current source reconciliations:
 - Perioperative hormone decisions are individualized by procedure, mobility, VTE risk, route, gonadal status, withdrawal effects, and postoperative needs. Hospital and transfer reconciliation preserves exact product, concentration, route, last dose, supply, monitoring, and follow-up ownership.
 - Self-sourced hormone exposure is approached with nonjudgmental reconciliation and harm reduction. Product verification, injection safety, reliable prescribing, monitoring, and access barriers replace punitive discontinuation.
 - Goodnotes source reconciliation is complete. A restored library-wide search for gender-affirming, transgender, feminizing, masculinizing, and gender-dysphoria terminology found no dedicated pharmacy lecture. Two heart-failure pages mention transgender populations only in broader equity and pregnancy contexts, while four business-book matches are unrelated. The module therefore correctly remains grounded in current WPATH, Endocrine Society, ACOG, and product-specific evidence, with no older lecture left to reconcile.
+- The public reader now exposes WPATH SOC8, the Endocrine Society guideline resource, reaffirmed ACOG guidance, and the current FDA testosterone safety action plus a focused educational safety notice. Reconciliation preserves person-defined goals, estradiol route and thrombotic-risk decisions, formulation-specific monitoring, reproductive planning, organ-based prevention, and the 2025 class-wide testosterone blood pressure warning.
+- Focused verification confirms 148 unique original questions, valid remediation links, at least 12 questions mapped to every lesson, no source gap, and no em dash or en dash characters in public module prose.
+- The full 222-module audit passes with 29,348 questions, no hard errors, and no thin lessons. The Next.js production build passes with 550 static pages generated.
 
 ### Anemia
 
@@ -3275,4 +3278,4 @@ This order follows prerequisite relationships while keeping every topic in its o
 - Current inventory: 222 clinically named modules and 29,348 original assessment questions.
 - The curriculum contract audit now verifies taxonomy, module and lesson structure, source statements, learning outcomes, visuals, embedded checks, assessment integrity, explanations, remediation links, educational safety framing, and public prose punctuation.
 - Current automated result: no structural errors and no lessons below the eight-question assessment-coverage threshold.
-- Authoritative reference-link reconciliation remains open for 8 modules whose source syntheses are present but whose module pages do not yet expose module-level reference links. The audit reports these separately as source gaps so they remain visible in the completion queue.
+- Authoritative reference-link reconciliation remains open for 7 modules whose source syntheses are present but whose module pages do not yet expose module-level reference links. The audit reports these separately as source gaps so they remain visible in the completion queue.
