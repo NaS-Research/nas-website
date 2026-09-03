@@ -1896,7 +1896,7 @@ Current source reconciliations:
 - Cervical care separates HPV prevention and screening from treatment of invasive disease. Definitive chemoradiation preserves external-beam radiation, brachytherapy, and concurrent weekly cisplatin, while pembrolizumab with chemoradiation remains limited to the current stage-defined indication.
 - Recurrent cervical therapy integrates PD-L1 selection, platinum and taxane therapy, bevacizumab tissue-healing and fistula risk, and tisotumab vedotin ocular prophylaxis. Selected local salvage remains distinct from systemic disease control.
 - Retired pregnancy letters are absent. Fertility, menopause, sexual health, symptom relief, palliative care, survivorship, practical access, hereditary implications, and clinical trials are integrated longitudinally rather than isolated from anticancer therapy.
-- Goodnotes was rechecked after access was reported restored, but macOS still presented a locked desktop session. The module will receive a documented lecture reconciliation pass when the session is manually unlocked.
+- Goodnotes source reconciliation is complete. A restored library-wide search across ovarian, fallopian tube, primary peritoneal, endometrial, and cervical cancers plus current targeted agents found seven relevant RxPrep pages and no dedicated gynecologic oncology lecture. One gonadal-hormone slide provides only a broad contraception and cancer-risk association, while one professional-practice calculation match is unrelated. The existing RxPrep, NCI, and current-label synthesis therefore covers the complete accessible course set without importing low-specificity material.
 
 ### Pelvic Organ Prolapse and Fistula Care
 
