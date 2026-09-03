@@ -2668,7 +2668,7 @@ Current source reconciliations:
 - Osteomyelitis uses probe-to-bone, radiographs, biomarkers, MRI when doubt remains, and bone culture when organism definition matters. Duration is up to three weeks after minor amputation with positive bone margins and six weeks without bone resection.
 - Limb preservation integrates drainage and debridement, perfusion and revascularization, off-loading, wound care, glycemic management, nutrition, footwear, allergy clarification, safe drug exposure, and lifelong surveillance.
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 170-question assessment bank.
-- Goodnotes was retried after the user reported restored access, but macOS still reported a locked session. Any matching SSTI or DFI lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search found the complete RxPrep sequence plus isolated chronic-heart-failure, chronic-kidney-disease, and peripheral-arterial-disease references, with no separate dedicated SSTI or diabetes-related foot-infection lecture. Heart-failure counseling and kidney-associated pruritus complications remain assigned to those focused modules. The peripheral-arterial-disease source reinforces the interaction between infection, tissue oxygen demand, ischemia, and limb risk, which is already explicit in the module's perfusion, revascularization, and limb-preservation pathway.
 
 ### Urinary Tract Infections
 
