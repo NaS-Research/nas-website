@@ -1274,7 +1274,7 @@ Target modules:
 2. Arrhythmia Pathophysiology (`built`, 116 question bank; Goodnotes reconciliation complete)
 3. Atrial Arrhythmias (`built`, 120 question bank; Goodnotes reconciliation complete)
 4. Ventricular Arrhythmias (`built`, 120 question bank; Goodnotes reconciliation complete)
-5. Antiarrhythmic Pharmacology and Medicinal Chemistry (`built`, 104 question bank; Goodnotes reconciliation pending)
+5. Antiarrhythmic Pharmacology and Medicinal Chemistry (`complete`, 120 question bank; Goodnotes reconciliation complete)
 
 #### Heart failure and peripheral arterial disease
 
@@ -1297,9 +1297,9 @@ Target modules:
 
 1. Heart Failure Pathophysiology (`built`, 120 question bank; Goodnotes reconciliation complete)
 2. Chronic Heart Failure Pharmacotherapy (`built`, `verified`, and Goodnotes reconciled; 120 question bank)
-3. Acute Decompensated Heart Failure (`built`, 104 question bank; Goodnotes reconciliation pending)
+3. Acute Decompensated Heart Failure (`complete`, 120 question bank; Goodnotes reconciliation complete)
 4. Heart Failure Medicinal Chemistry (`built`, `verified`, and Goodnotes reconciled; 120 question bank)
-5. Peripheral Arterial Disease (`built`, 100 question bank; Goodnotes reconciliation pending)
+5. Peripheral Arterial Disease (`complete`, 120 question bank; Goodnotes reconciliation complete)
 
 #### Stroke and kidney disease
 
@@ -1334,7 +1334,7 @@ Available documents include allergic rhinitis, asthma, COPD, pulmonary arterial 
 
 Target modules:
 
-1. Allergic Rhinitis (`built`, 100 question bank; Goodnotes reconciliation pending)
+1. Allergic Rhinitis (`complete`, 120 question bank; Goodnotes reconciliation complete)
 2. Asthma (`complete`, 120 question bank; source reconciliation complete September 5, 2026)
 3. Chronic Obstructive Pulmonary Disease (`complete`, 120 question bank; source reconciliation complete September 5, 2026)
 4. Pulmonary Arterial Hypertension (`complete`, 120 question bank; source reconciliation complete)
@@ -3144,6 +3144,18 @@ Current source reconciliations:
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, twelve lessons, twelve diagrams, twelve embedded checks, ten questions per test, a completely different second random set, scoring with rationales and ten remediation links, and zero console warnings or errors.
 - Build verification: Next.js production build passed August 27, 2026 with 517 static pages generated.
 - Goodnotes source reconciliation remains pending until the reported restored library connection is re-audited and the relevant lecture material is identified.
+
+### Clinical Drug Interactions
+
+- Course source: the complete 51-page Drug Interactions course was recovered from the local Goodnotes library, rendered page by page, and visually reviewed.
+- Course scope: clinical significance and triage; pharmacodynamic interactions; additive central nervous system depression; bleeding; hyperkalemia; nephrotoxicity; absorption and chelation; protein binding; active drugs and prodrugs; inhibition and induction; CYP enzymes; transporters; renal elimination; drug-food interactions; drug-disease interactions; transitions; monitoring; counseling; and pharmacist-led management.
+- Current references reviewed: FDA Drug Development and Drug Interactions resources, FDA's current enzyme and transporter examples, FDA M12 drug interaction guidance, current clopidogrel labeling, and current sulfamethoxazole-trimethoprim labeling.
+- Learning structure: ten content-driven lessons, ten native responsive diagrams, and ten embedded knowledge checks.
+- Assessment: 160 original questions across 40 concept groups and four reasoning dimensions. Each attempt samples ten questions without replacement and randomizes answer order.
+- Source reconciliation: interaction-database ratings are treated as triage signals rather than final clinical decisions. Active parent drugs are distinguished from prodrugs before predicting inhibition or induction effects. Onset and offset differ for inhibition and induction. Transporter effects depend on location and direction. Protein-binding displacement alone does not justify an intervention without evidence of a meaningful unbound-exposure or clinical effect. Grapefruit, food, and smoking interactions remain product and mechanism specific. Smoking-related induction is attributed to combustion products rather than nicotine alone. Warfarin counseling emphasizes consistent vitamin K intake rather than total avoidance. Current labeling supports avoiding omeprazole or esomeprazole with clopidogrel and identifies hyperkalemia risk with sulfamethoxazole-trimethoprim, including at usual doses in susceptible patients.
+- Automated verification: 160 unique question IDs and prompts, four distinct answer choices per question, valid answer indexes, valid links to all ten lessons, ten diagrams, and no em dash or en dash characters in public module prose. The complete curriculum audit passed with 222 modules, 29,252 questions, no hard errors, and no thin lessons.
+- Goodnotes reconciliation: complete for the dedicated 51-page Drug Interactions course.
+- Build verification: Next.js production build passed with 550 static pages generated.
 
 ## First production sequence
 

@@ -96,6 +96,7 @@ import DrugAllergiesAdverseReactionsVisual from "@/components/learn/DrugAllergie
 import PharmacokineticsVisual from "@/components/learn/PharmacokineticsVisual";
 import PharmacogenomicsVisual from "@/components/learn/PharmacogenomicsVisual";
 import DietarySupplementsComplementaryMedicineVisual from "@/components/learn/DietarySupplementsComplementaryMedicineVisual";
+import ClinicalDrugInteractionsVisual, { clinicalDrugInteractionsVisualTypes } from "@/components/learn/ClinicalDrugInteractionsVisual";
 import ToxicologyAntidotesVisual from "@/components/learn/ToxicologyAntidotesVisual";
 import TobaccoUseCessationVisual from "@/components/learn/TobaccoUseCessationVisual";
 import SystemicGlucocorticoidsVisual from "@/components/learn/SystemicGlucocorticoidsVisual";
@@ -501,6 +502,7 @@ export default async function PharmacyModulePage({ params }) {
               {pharmacokineticsVisualTypes.includes(submodule.visual) && <PharmacokineticsVisual type={submodule.visual} />}
               {pharmacogenomicsVisualTypes.includes(submodule.visual) && <PharmacogenomicsVisual type={submodule.visual} />}
               {dietarySupplementsVisualTypes.includes(submodule.visual) && <DietarySupplementsComplementaryMedicineVisual type={submodule.visual} />}
+              {clinicalDrugInteractionsVisualTypes.includes(submodule.visual) && <ClinicalDrugInteractionsVisual type={submodule.visual} />}
               {toxicologyAntidotesVisualTypes.includes(submodule.visual) && <ToxicologyAntidotesVisual type={submodule.visual} />}
               {tobaccoUseCessationVisualTypes.includes(submodule.visual) && <TobaccoUseCessationVisual type={submodule.visual} />}
               {systemicGlucocorticoidsVisualTypes.includes(submodule.visual) && <SystemicGlucocorticoidsVisual type={submodule.visual} />}

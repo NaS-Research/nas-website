@@ -194,7 +194,9 @@ Each module assessment randomly draws 10 questions from its complete bank throug
 
 ## Next verified-build target
 
-Continue through the Goodnotes library when the Mac session is unlocked, beginning with Motion Sickness and Pharmacokinetics. Reconcile any dedicated lecture material with the already built RxPrep and current-guideline syntheses before advancing through remaining incomplete modules.
+- Clinical Drug Interactions is complete. The dedicated 51-page Goodnotes course was recovered and visually reviewed in full. Ten lessons now connect pharmacodynamic and pharmacokinetic mechanisms to patient-specific significance, monitoring, counseling, and transition ownership. Ten native diagrams, ten embedded checks, and 160 original assessment questions were verified. Current FDA interaction guidance and current clopidogrel and sulfamethoxazole-trimethoprim labeling were reconciled with the course source. The complete curriculum audit passed with 222 modules and 29,252 questions.
+
+Continue through the restored Goodnotes library by identifying the next accessible source that has not already received a complete reconciliation. Reconcile dedicated course material with the existing RxPrep and current-guideline synthesis before advancing through remaining incomplete modules.
 
 ## Remaining-work rule
 
