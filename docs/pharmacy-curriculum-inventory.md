@@ -2214,7 +2214,7 @@ Current source reconciliations:
 
 ### Topical Corticosteroid Pharmacology and Safe Use
 
-The topical corticosteroid module separates glucocorticoid receptor signaling, inflammatory transcription, potency classification, vehicle-dependent delivery, body-site selection, diagnostic uncertainty, fingertip-unit dosing, application schedules, local toxicity, systemic absorption, HPA-axis suppression, pediatric exposure, older and fragile skin, pregnancy and lactation, monitoring, and structured steroid-sparing escalation. It contains ten focused lessons, ten original interactive diagrams, ten embedded checks, and a 120-question assessment bank across 29 concepts, four reasoning levels, and four fingertip-unit calculations. Focused verification confirmed 120 unique question IDs, valid remediation links, and at least eight questions mapped to every lesson. The Next.js production build passed September 2, 2026 with 547 static pages generated.
+The topical corticosteroid module separates glucocorticoid receptor signaling, inflammatory transcription, medicinal chemistry, potency classification, vehicle-dependent delivery, body-site selection, diagnostic uncertainty, fingertip-unit dosing, application schedules, local toxicity, systemic absorption, HPA-axis suppression, pediatric exposure, older and fragile skin, pregnancy and lactation, monitoring, and structured steroid-sparing escalation. It contains ten focused lessons, ten original interactive diagrams, ten embedded checks, and a 124-question assessment bank across 30 concepts, four reasoning levels, and four fingertip-unit calculations.
 
 Current source reconciliations:
 
@@ -2234,7 +2234,7 @@ Current source reconciliations:
 - Children are treated as a higher systemic-exposure group because their skin surface area is larger relative to body mass, and diapers can create unintended occlusion. Older and already atrophic skin receives a wider structural safety margin.
 - Retired pregnancy letters are excluded. Pregnancy and lactation decisions use exact product evidence, potency, area, duration, site, pregnancy timing, feeding, and prevention of infant skin or oral contact.
 - Current AAD and AAAAI/ACAAI guidance supports moisturizers, topical corticosteroids, and indicated nonsteroid therapies. Calcineurin inhibitors, PDE4 inhibitors, JAK inhibitors, aryl hydrocarbon receptor agonists, phototherapy, and systemic options are presented only within disease-, age-, site-, and safety-specific roles.
-- Goodnotes remains pending because the Mac session was locked at the latest retry. Any dedicated topical pharmacology lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search found ten relevant RxPrep pages, four pages in the dedicated adrenal-steroid medicinal-chemistry source, four duplicate chemistry pages in the pulmonary course, and one incidental intranasal-steroid page. The focused chemistry establishes triamcinolone acetonide as a distinct active molecule rather than a triamcinolone prodrug and connects its 9 alpha fluoro and 16 alpha,17 acetonide substitutions to activity and disposition. The module now teaches those relationships while retaining exact formulation data and current labeling as the authority for potency and use.
 
 ### Sunscreen and Photoprotection
 
