@@ -335,14 +335,15 @@ This inventory records the source material available in the founder's Goodnotes 
 ### Chronic Coronary Disease
 
 - Course scope: obstructive and nonobstructive coronary disease, plaque progression, oxygen supply and demand, anginal equivalents, unstable symptom triage, activity, cardiac rehabilitation, tobacco treatment, lipid and pressure control, cardiometabolic outcome therapy, single and dual antiplatelet therapy, oral-anticoagulant overlap, beta blockers, calcium channel blockers, nitrates, ranolazine, revascularization, routine testing, INOCA, follow-up, access, and supplements
+- Course sources: the complete 51-page Coronary Heart Disease source was recovered from the local Goodnotes library, rendered page by page, and visually reviewed September 3, 2026
 - Cross reference completed: RxPrep NAPLEX 2023 coronary disease, antianginal, secondary-prevention, antithrombotic, interaction, monitoring, and counseling scope
-- Current references reviewed: 2023 AHA and ACC chronic coronary disease guideline, 2026 AHA and ACC dyslipidemia guideline, 2021 AHA and ACC chest pain guideline, and 2025 AHA nonobstructive coronary disease scientific statement
+- Current references reviewed: 2023 AHA and ACC chronic coronary disease guideline, 2026 AHA and ACC dyslipidemia guideline, 2021 AHA and ACC chest pain guideline, 2025 AHA nonobstructive coronary disease scientific statement, and current nitroglycerin sublingual prescribing information
 - Learning structure: six lessons, six native disease-spectrum, prevention, antithrombotic, angina, testing, and longitudinal-care diagrams, and six embedded knowledge checks
-- Assessment: 100 original questions spanning CCD phenotypes, plaque, supply and demand, symptom equivalents, acute triage, rehabilitation, tobacco, lipids, pressure, SGLT2 and GLP-1 therapies, antiplatelets, DAPT, P2Y12 monotherapy, oral anticoagulation, beta-blocker indications, calcium channel blockers, nitrates, ranolazine, revascularization, surveillance testing, INOCA, changed symptoms, follow-up, and supplements; ten sampled without replacement per attempt with answer order randomized
-- Source reconciliation: symptom relief was separated from event prevention; successful PCI was not treated as cure of systemic atherosclerosis; current 2026 lipid goals superseded the older lipid framework; long-term beta-blocker outcome use was limited to current indications; post-PCI antithrombotic duration remained risk selected; oral-anticoagulant overlap was minimized in stable disease; routine surveillance testing without clinical change was rejected; nonobstructive anatomy did not invalidate ischemic symptoms
-- Automated verification: 100 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 8 questions mapped to every lesson, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
-- Goodnotes note: the dedicated coronary disease lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+- Assessment: 116 original questions spanning CCD phenotypes, plaque, supply and demand, symptom equivalents, acute triage, Levine's sign, rehabilitation, tobacco, lipids, pressure, SGLT2 and GLP-1 therapies, antiplatelets, DAPT, P2Y12 monotherapy, oral anticoagulation, beta-blocker indications, calcium channel blockers, nitrates, nitroglycerin response and storage, vasospastic angina, ranolazine, exercise and pharmacologic stress selection, revascularization, surveillance testing, INOCA, changed symptoms, follow-up, and supplements; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: the recovered source's anatomy, disease, symptom, diagnostic, prevention, antithrombotic, antianginal, nitrate, ranolazine, and integrated case scope is represented. Levine's sign was retained only as a limited observation, not a universal diagnostic sign; stress-agent memorization was replaced by patient and modality selection; vasospasm was separated from fixed exertional disease; and sublingual nitroglycerin was paired with storage and emergency-response counseling. Symptom relief remained separate from event prevention; successful PCI was not treated as cure of systemic atherosclerosis; current 2026 lipid goals superseded the older lipid framework; long-term beta-blocker outcome use was limited to current indications; old fixed bare-metal, drug-eluting, and post-CABG DAPT durations were not carried forward; aspirin was not made universal when anticoagulation changes the plan; routine surveillance testing without clinical change was rejected; and nonobstructive anatomy did not invalidate ischemic symptoms.
+- Automated verification: 116 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 8 questions mapped to every lesson, and no em dash or en dash characters in public prose; the complete 221-module audit passed with 28,100 questions and no hard errors
+- Build verification: Next.js production build passed September 3, 2026 with 549 static pages generated after complete source reconciliation
+- Goodnotes reconciliation: complete for the 51-page Coronary Heart Disease source
 
 ### Acute Coronary Syndromes
 
@@ -1229,7 +1230,7 @@ Available documents:
 
 Target modules:
 
-1. Chronic Coronary Disease (`built`, 100 question bank; Goodnotes reconciliation pending)
+1. Chronic Coronary Disease (`built`, 116 question bank; Goodnotes reconciliation complete)
 2. Acute Coronary Syndromes (`built`, 100 question bank; Goodnotes reconciliation pending)
 3. Antiplatelet Pharmacology (`built`, 100 question bank; Goodnotes reconciliation pending)
 4. Coagulation and Anticoagulant Pharmacology (`built`, 100 question bank; Goodnotes reconciliation pending)
