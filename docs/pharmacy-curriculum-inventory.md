@@ -855,6 +855,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Automated verification: the focused curriculum contract audit passes with 104 unique questions, valid answer choices and remediation links, ten visuals, ten embedded checks, at least eight questions mapped to every lesson, no structural errors, no source gap, and no prohibited dash characters in public prose.
 - Goodnotes reconciliation: complete for the dedicated gynecologic source set.
 
+### Infertility Evaluation and Ovulation Induction
+
+- Course scope: age-sensitive evaluation timing, natural-fertility counseling, ovulation assessment, uterine and tubal evaluation, ovarian-reserve interpretation, semen analysis, male-factor evaluation, PCOS-related ovulation induction, clomiphene and metformin, gonadotropin stimulation, protocol control, assisted reproduction, and OHSS prevention.
+- Course sources reviewed: the dedicated infertility course material and RxPrep fertility foundations, with contraception, pregnancy, menopause, and gynecologic disorders retained in their own focused modules.
+- Current references reviewed: the 2021 ASRM female-fertility evaluation opinion, the AUA and ASRM male-infertility guideline amended in 2024, the 2023 International PCOS Guideline, the 2023 ASRM OHSS-prevention guideline, FDA GONAL-F and CLOMID labeling, and current DailyMed ganirelix labeling.
+- Learning structure: ten focused lessons, ten native evaluation, physiology, treatment, assisted-reproduction, and safety diagrams, and ten embedded knowledge checks.
+- Assessment: 100 original questions, with ten sampled without replacement per attempt and answer order randomized.
+- Source reconciliation: female and male evaluation proceeds in parallel when applicable; evaluation begins earlier with age or a known risk factor; ovarian reserve predicts stimulation response rather than guaranteed natural fertility; letrozole is first-line pharmacologic induction for appropriate anovulatory infertility in PCOS; exogenous testosterone is identified as a suppressor of spermatogenesis; procedure selection follows the barrier to conception; and OHSS prevention uses repeated risk assessment, individualized stimulation, antagonist protocols, agonist trigger in suitable cycles, and cryopreservation when indicated.
+- Automated verification: the focused curriculum contract audit passes with 100 unique questions, valid answer choices and remediation links, ten visuals, ten embedded checks, at least eight questions mapped to every lesson, no structural errors, no source gap, and no prohibited dash characters in public prose.
+- Build verification: the Next.js production build passed September 3, 2026 with 550 static pages generated.
+- Goodnotes reconciliation: complete for the dedicated infertility source set.
+
 ### Contraceptive Pharmacotherapy
 
 - Course scope: person-centered method selection, U.S. MEC eligibility, combined pills, patches, vaginal rings, progestin-only pills, DMPA, levonorgestrel and copper IUDs, etonogestrel implant, emergency contraception, quick start, missed use, switching, interactions, bleeding, follow-up, and reproductive planning
@@ -3216,4 +3228,4 @@ This order follows prerequisite relationships while keeping every topic in its o
 - Current inventory: 222 clinically named modules and 29,348 original assessment questions.
 - The curriculum contract audit now verifies taxonomy, module and lesson structure, source statements, learning outcomes, visuals, embedded checks, assessment integrity, explanations, remediation links, educational safety framing, and public prose punctuation.
 - Current automated result: no structural errors and no lessons below the eight-question assessment-coverage threshold.
-- Authoritative reference-link reconciliation remains open for 17 modules whose source syntheses are present but whose module pages do not yet expose module-level reference links. The audit reports these separately as source gaps so they remain visible in the completion queue.
+- Authoritative reference-link reconciliation remains open for 14 modules whose source syntheses are present but whose module pages do not yet expose module-level reference links. The audit reports these separately as source gaps so they remain visible in the completion queue.

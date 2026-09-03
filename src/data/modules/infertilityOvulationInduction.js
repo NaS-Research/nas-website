@@ -10,7 +10,7 @@ export const infertilityOvulationInductionModule = {
   slug: "infertility-ovulation-induction",
   number: "71",
   title: "Infertility Evaluation and Ovulation Induction",
-  source: "RxPrep foundations, ASRM guidance, AUA and ASRM male-infertility guidance, the 2023 International PCOS Guideline, FDA labeling, and DailyMed",
+  source: "RxPrep fertility foundations reconciled with current ASRM fertility and OHSS guidance, the 2024 AUA and ASRM male-infertility guideline, the 2023 International PCOS Guideline, FDA labeling, and DailyMed",
   description: "Build a parallel fertility evaluation, identify the barrier to conception, and use oral induction, controlled stimulation, assisted reproduction, and OHSS prevention safely.",
   topics: ["Evaluation timing", "Fertile window", "Female evaluation", "Male evaluation", "PCOS induction", "Clomiphene and metformin", "Gonadotropins", "Protocol control", "IUI and IVF", "OHSS prevention"],
   outcomes: [
@@ -77,5 +77,20 @@ export const infertilityOvulationInductionModule = {
       ["Escalate and support", "Rapid weight gain, tense abdominal distension, vomiting, oliguria, dyspnea, chest pain, syncope, or neurologic symptoms require urgent assessment. Repeated treatment also warrants explicit attention to grief, anxiety, cost, autonomy, and the option to pause."],
     ], ["OHSS risk changes during stimulation.", "A freeze-all strategy can reduce late OHSS.", "Severe symptoms require urgent evaluation.", "Psychosocial support is part of fertility care."], { question: "A patient one week after retrieval has dyspnea, marked distension, and very low urine output. What is the best action?", choices: ["Arrange urgent evaluation for severe OHSS", "Wait until the next scheduled cycle", "Take an unmonitored hCG dose", "Begin aspirin as sole therapy"], answer: 0, rationale: "Respiratory symptoms and oliguria after stimulation suggest severe OHSS and possible organ compromise.", reviewHref: "#ohss-prevention" }),
   ],
+  references: [
+    { label: "ASRM Committee Opinion: Fertility Evaluation of Infertile Women, 2021", href: "https://www.asrm.org/practice-guidance/practice-committee-documents/fertility-evaluation-of-infertile-women-a-committee-opinion-2021/" },
+    { label: "AUA and ASRM Guideline: Diagnosis and Treatment of Infertility in Men, Amended 2024", href: "https://www.auanet.org/documents/Guidelines/PDF/2024%20Guidelines/Male%20Infertility%20Unabridged%20Final.pdf" },
+    { label: "International Evidence-based Guideline for PCOS, 2023", href: "https://www.asrm.org/practice-guidance/practice-committee-documents/recommendations-from-the-2023-international-evidence-based-guideline-for-the-assessment-and-management-of-polyendocrine-metabolic-ovarian-syndrome-2023/" },
+    { label: "ASRM Guideline: Prevention of Moderate and Severe OHSS, 2023", href: "https://prod.asrm.org/practice-guidance/practice-committee-documents/prevention-of-moderate-and-severe-ovarian-hyperstimulation-syndrome-a-guideline-2023/" },
+    { label: "FDA GONAL-F Prescribing Information", href: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/020378s045%2Cs067%2Cs075lbl.pdf" },
+    { label: "FDA CLOMID Prescribing Information", href: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2017/016131s028lbl.pdf" },
+    { label: "DailyMed Ganirelix Acetate Prescribing Information", href: "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=1f067dfb-f9c7-4020-ab7b-da2ba695ab32" },
+  ],
+  disclaimer: "This module supports advanced education about infertility evaluation, ovulation induction, and assisted reproduction. Fertility drugs require individualized specialist protocols, ultrasound and laboratory monitoring, and product-specific instructions. Severe pain, breathing difficulty, reduced urine output, neurologic symptoms, or rapid abdominal distension after stimulation require urgent clinical assessment. This is not patient-specific medical advice.",
   questionBank: infertilityOvulationInductionQuestionBank,
+  sourceNotes: {
+    reviewed: ["RxPrep fertility foundations", "Current fertility evaluation, male infertility, PCOS, OHSS, and product-label guidance"],
+    reconciled: ["Evaluation timing is age sensitive and begins without delay when a known infertility risk is present.", "Female and male evaluation proceeds concurrently when applicable.", "Letrozole is presented as first-line pharmacologic ovulation induction for appropriate anovulatory infertility in PCOS.", "OHSS prevention prioritizes individualized stimulation, antagonist protocols, agonist trigger in suitable cycles, and embryo cryopreservation when clinically indicated."],
+    deferred: ["Pregnancy and lactation pharmacotherapy", "Menopausal hormone therapy", "Gynecologic infection and oncology"],
+  },
 };
