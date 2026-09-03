@@ -1382,7 +1382,7 @@ Target modules:
 4. Sexual Dysfunction (`built`, 124 question bank; dedicated lecture reconciliation complete)
 5. Urinary Incontinence (`built`, 108 question bank; source reconciliation complete)
 6. Osteoporosis (`built`, 128 question bank; three dedicated source documents reconciled)
-7. Genitourinary Medicinal Chemistry (`built`, 128 question bank; dedicated Goodnotes lecture reconciliation pending)
+7. Genitourinary Medicinal Chemistry (`built`, 144 question bank; 52-page dedicated source reconciled)
 8. Vaginitis and Vulvovaginal Infections (`built`, 132 question bank; dedicated Goodnotes lecture reconciliation pending)
 
 ### DAST V
@@ -1822,7 +1822,7 @@ Current guidance reconciliations:
 
 ### Genitourinary Medicinal Chemistry
 
-The genitourinary medicinal chemistry module integrates the molecular design shared across reproductive and urinary pharmacology without duplicating the surrounding clinical modules. It includes steroid nucleus recognition; stereochemistry; intracellular receptor signaling; route dependent first pass and local exposure; ethinyl estradiol; estradiol ester depots; micronized, conjugated, and selective estrogen receptor modulator products; progestin structural families; levonorgestrel stereochemistry; desogestrel activation to etonogestrel; drospirenone receptor behavior; finasteride and dutasteride; DHT pathway interpretation; PDE5 inhibitor catalytic recognition; sildenafil, vardenafil, and tadalafil scaffold distinctions; cGMP pathway interactions; tertiary and quaternary bladder antimuscarinics; oxybutynin active metabolite and formulation effects; trospium distribution; mirabegron and vibegron; alpha blocker scaffold diversity; extended release systems; local delivery devices; salts; active moieties; and the boundary between molecular prediction and clinical evidence. It contains eight focused lessons, eight original interactive diagrams, eight embedded checks, and a 128-question assessment bank across 32 concepts and four reasoning levels.
+The genitourinary medicinal chemistry module integrates the molecular design shared across reproductive and urinary pharmacology without duplicating the surrounding clinical modules. It includes steroid nucleus recognition; stereochemistry; intracellular receptor signaling; route dependent first pass and local exposure; ethinyl estradiol; estradiol ester depots; micronized, conjugated, and selective estrogen receptor modulator products; progestin structural families; levonorgestrel stereochemistry; desogestrel activation to etonogestrel; drospirenone receptor behavior; finasteride and dutasteride; DHT pathway interpretation; PDE5 inhibitor catalytic recognition; sildenafil, vardenafil, and tadalafil scaffold distinctions; cGMP pathway interactions; tertiary and quaternary bladder antimuscarinics; oxybutynin active metabolite and formulation effects; trospium distribution; mirabegron and vibegron; alpha blocker scaffold diversity; extended release systems; local delivery devices; salts; active moieties; and the boundary between molecular prediction and clinical evidence. It contains eight focused lessons, eight original interactive diagrams, eight embedded checks, and a 144-question assessment bank across 36 concepts and four reasoning levels.
 
 Current source reconciliations:
 
@@ -1834,7 +1834,10 @@ Current source reconciliations:
 - Oxybutynin parent and active-metabolite exposure is separated across immediate release, extended release, and transdermal delivery. Current extended-release labeling is used for dosage-form integrity and pediatric boundaries.
 - Mirabegron and vibegron are treated as chemically and dispositionally distinct beta 3 agonists. Current mirabegron labeling anchors beta 3 mechanism, CYP2D6, pressure, outlet-obstruction, renal, hepatic, and dosage-form considerations rather than extrapolating one class profile to every molecule.
 - Permanent versus pH-dependent charge is used as one predictor of CNS distribution, not as a guarantee of cognitive safety. Sulfonamide is treated as a functional motif rather than automatic proof of antibiotic cross-allergy.
-- A dedicated Goodnotes genitourinary medicinal chemistry lecture remains pending because macOS still reported a locked session on August 26, 2026. The module will receive a documented lecture reconciliation pass when desktop access is restored.
+- The complete 52-page `Genitourinary Agents` source was reviewed visually. Its reliable material was reconciled into original NaS explanations and graphics, including tolterodine and fesoterodine active-species maps, muscarinic subtype preference, alprostadil and local PGE1 signaling, and the United States indication boundary for duloxetine.
+- Obsolete or inaccurate source statements were not retained. Current DailyMed labeling was used to verify fesoterodine disposition, alprostadil product safety, and duloxetine indications.
+- Dedicated source reconciliation is complete. The focused audit and subsequent full curriculum audit confirmed the module structure, lesson coverage, question-bank integrity, and assessment routing.
+- The full curriculum audit passed with 221 modules, 28,832 questions, no hard errors, and no thin lessons. The production build passed with 549 generated static pages.
 
 ### Vaginitis and Vulvovaginal Infections
 
