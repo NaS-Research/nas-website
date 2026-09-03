@@ -2126,7 +2126,7 @@ Current source reconciliations:
 - Residual itch is separated from active failure. Hypersensitivity can persist for several weeks, while new burrows, new papules, live organisms, untreated contacts, infection, or prolonged symptoms drive reassessment.
 - Crusted scabies is treated as a high-burden infection-control emergency. Specialist-directed oral ivermectin plus frequent topical permethrin, keratolysis, contact precautions, exposure tracking, and institutional coordination replace a routine single application.
 - Retired pregnancy letters are excluded. Reproductive decisions use product-specific evidence, route, exposed surface, timing, weight, alternatives, lactation, and patient goals.
-- Goodnotes remains unavailable because the Mac session is locked. Any dedicated lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search for lice, pediculosis, scabies, permethrin, ivermectin, spinosad, and malathion found the complete RxPrep sequence and one focused medicinal-chemistry page. That page identifies malathion as a relatively weak acetylcholinesterase inhibitor that is bioactivated to malaoxon in insects, connecting metabolic activation to selective insect toxicity. The module and assessment now teach that mechanistic distinction while preserving current product-label exposure and flammability precautions. No separate lice or scabies lecture remains unreviewed.
 
 ### Minor Wound Assessment and First Aid
 
