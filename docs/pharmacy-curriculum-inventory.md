@@ -3081,7 +3081,7 @@ Current source reconciliations:
 - Automated verification: 208 unique question IDs and prompts, four distinct answer choices per question, valid lesson links, twelve lesson sections, twelve diagrams, and no em dash or en dash characters in public module prose.
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, twelve lessons, twelve diagrams, twelve embedded checks, ten questions per test, a different second random set, scoring with explanations and ten remediation links, and zero console errors.
 - Build verification: Next.js production build passed August 27, 2026 with 514 static pages generated.
-- Goodnotes source reconciliation remains pending until the local library can be read through an unlocked application session.
+- Goodnotes source reconciliation is complete. A restored library-wide search for cytomegalovirus, ganciclovir, valganciclovir, foscarnet, cidofovir, letermovir, and maribavir returned 24 matching RxPrep pages and no separate dedicated CMV pharmacotherapy lecture. The only additional matches were a congenital-CMV mention in diabetes material, a foscarnet drug-nutrient interaction list in pediatric parenteral nutrition, and a cidofovir renal-avoidance list in chronic kidney disease. Those incidental cross-topic references do not add a separate CMV teaching block, so the existing RxPrep, current NIH, and current-label synthesis covers the complete accessible source set.
 
 ### Pneumocystis Pneumonia
 
