@@ -270,14 +270,15 @@ This inventory records the source material available in the founder's Goodnotes 
 ### Hypertensive Emergencies
 
 - Course scope: severe hypertension triage, acute target-organ injury, autoregulation, condition-specific reduction, titrated intravenous therapy, ischemic stroke, intracerebral hemorrhage, hypertensive encephalopathy, PRES, acute aortic syndrome, acute coronary syndrome, hypertensive pulmonary edema, pregnancy and postpartum emergencies, catecholamine crisis, acute kidney injury, oral transition, and recurrence prevention
+- Course source: the complete 33-page Hypertensive Emergencies and Severe Hypertension in Non-Pregnant and Non-Stroke Patients deck was recovered from the local Goodnotes library, rendered page by page, and visually reviewed September 3, 2026
 - Cross reference completed: RxPrep NAPLEX 2023 emergency, stroke, cardiovascular, renal, obstetric, toxicology, interaction, and monitoring scope
 - Current references reviewed: 2025 AHA and ACC adult high blood pressure guideline, 2024 AHA acute-care elevated pressure statement, 2026 AHA and ASA ischemic stroke guideline, 2022 AHA and ASA intracerebral hemorrhage guideline, 2022 ACC and AHA aortic disease guideline, and ACOG severe pregnancy hypertension resources
 - Learning structure: six lessons, six native triage, perfusion, neurologic, cardiovascular, special-population, and transition diagrams, and six embedded knowledge checks
-- Assessment: 100 original questions spanning emergency definition, severe pressure without injury, repeat measurement, organ screening, autoregulation, reduction strategy, titratable agents, nicardipine, clevidipine, labetalol, ischemic stroke, intracerebral hemorrhage, encephalopathy, PRES, aortic anti-impulse therapy, pulmonary edema, coronary syndrome, nitrates, pregnancy, magnesium, catecholamine crisis, kidney injury, intravenous-to-oral transition, pressure variability, access, and handoff; ten sampled without replacement per attempt with answer order randomized
-- Source reconciliation: the term emergency was reserved for acute target-organ injury; routine rapid treatment of hospitalized severe pressure without acute injury was rejected; newer 2026 stroke guidance against intensive systolic lowering below 140 after reperfusion was included; ICH used smooth 130 to 150 maintenance in the selected mild-to-moderate population and avoided reduction below 130; aortic therapy prioritized anti-impulse control; magnesium seizure therapy was separated from pregnancy pressure treatment
-- Automated verification: 100 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 16 questions mapped to every lesson, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
-- Goodnotes note: the dedicated hypertensive emergencies lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
+- Assessment: 116 original questions spanning emergency definition, severe pressure without injury, repeat measurement, organ screening, autoregulation, reduction strategy, titratable agents, nicardipine, clevidipine formulation safety, labetalol, nitroprusside toxic metabolites, fenoldopam selection, ischemic stroke, intracerebral hemorrhage, encephalopathy, PRES, aortic anti-impulse therapy, pulmonary edema, coronary syndrome, nitrates, pregnancy, magnesium, catecholamine crisis, phentolamine, kidney injury, intravenous-to-oral transition, pressure variability, access, and handoff; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: the term emergency was reserved for acute target-organ injury; routine rapid treatment of hospitalized severe pressure without acute injury was rejected; the source medication tables were converted into mechanism, formulation, contraindication, and monitoring decisions rather than copied as fixed universal dosing; clevidipine lipid-emulsion safety, nitroprusside toxic-metabolite risk, fenoldopam ocular and sulfite considerations, and phentolamine crisis use were added; newer 2026 stroke guidance against intensive systolic lowering below 140 after reperfusion was included; ICH used smooth 130 to 150 maintenance in the selected mild-to-moderate population and avoided reduction below 130; aortic therapy prioritized anti-impulse control; magnesium seizure therapy was separated from pregnancy pressure treatment. Older urgency terminology, categorical comorbidity tables, fixed dose ceilings, and overbroad class contraindications were not carried forward.
+- Automated verification: 116 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 16 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 3, 2026 with 549 static pages generated after complete source reconciliation
+- Goodnotes reconciliation: complete for the dedicated 33-page hypertensive emergencies source
 
 ### Antihypertensive Medicinal Chemistry
 
@@ -1186,7 +1187,7 @@ Target modules:
 
 1. Hypertension Foundations and Chronic Therapy (`built`, 116 question bank; Goodnotes reconciliation complete)
 2. Resistant and Secondary Hypertension (`built`, 116 question bank; Goodnotes reconciliation complete)
-3. Hypertensive Emergencies (`built`, 100 question bank; Goodnotes reconciliation pending)
+3. Hypertensive Emergencies (`built`, 116 question bank; Goodnotes reconciliation complete)
 4. Antihypertensive Medicinal Chemistry (`built`, 104 question bank; Goodnotes reconciliation pending)
 
 ### DAST III
