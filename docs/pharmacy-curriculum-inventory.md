@@ -3122,7 +3122,7 @@ Current source reconciliations:
 - Automated verification: 216 unique question IDs and prompts, four distinct answer choices per question, valid lesson links, twelve lesson sections, twelve diagrams, and no em dash or en dash characters in public module prose.
 - Browser verification: desktop and 390 pixel mobile rendering, no horizontal overflow, twelve lessons, twelve diagrams, twelve embedded checks, ten questions per test, a completely different second random set, scoring with rationales and ten remediation links, and zero console warnings or errors.
 - Build verification: Next.js production build passed August 27, 2026 with 516 static pages generated.
-- Goodnotes source reconciliation remains pending because the Mac was still locked when access was retried. The module will receive a documented lecture comparison after the application session is readable.
+- Goodnotes source reconciliation is complete. A restored library-wide search for HIV diagnosis, HIV-1, antiretroviral therapy, bictegravir, dolutegravir, and tenofovir found RxPrep as the only dedicated HIV instructional source. Other matches were limited to abacavir pharmacogenomics, HIV-associated pulmonary hypertension, antiretroviral contraception interactions, dolutegravir interaction screening, and incidental disease-list references. Those cross-topic materials do not form a separate HIV foundations lecture, and their relevant safety concepts are already represented in this module or the linked drug-class modules. The existing RxPrep, current NIH, CDC, APHL, and current-label synthesis therefore covers the complete accessible source set.
 
 ### Nucleoside Reverse Transcriptase Inhibitors
 
