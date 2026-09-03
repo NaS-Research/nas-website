@@ -322,14 +322,15 @@ This inventory records the source material available in the founder's Goodnotes 
 ### Dyslipidemia Therapeutics
 
 - Course scope: baseline phenotype, absolute and percentage treatment goals, PREVENT primary prevention, risk enhancers, CAC reclassification, secondary prevention, very-high-risk goals, combination therapy, therapeutic inertia, severe hypertriglyceridemia, pancreatitis prevention, FCS, HeFH, HoFH, Lp(a), diabetes, CKD, HIV, reproductive and pediatric planning, statin-attributed muscle symptoms, adherence, and access
+- Course sources: the complete 66-page Dyslipidemia Pharmacology source, 222-page Hyperlipidemia and Medicinal Chemistry source, 118-page Dyslipidemia Therapeutics source, and 35-page active-learning source were recovered from the local Goodnotes library, rendered page by page, and visually reviewed September 3, 2026. The 441-page source family was mapped across the three focused dyslipidemia modules rather than reproduced as one combined course.
 - Cross reference completed: RxPrep NAPLEX 2023 dyslipidemia therapeutics, cardiovascular prevention, statin-intolerance, triglyceride, familial disease, monitoring, and counseling scope
-- Current references reviewed: full 2026 ACC and AHA dyslipidemia guideline, ACC 2026 practice implementation summary, AHA statin-safety scientific statement, and AHA Lp(a) scientific statement
+- Current references reviewed: full 2026 ACC and AHA dyslipidemia guideline, ACC 2026 practice implementation summary, AHA statin-safety scientific statement, AHA Lp(a) scientific statement, ADA 2026 cardiovascular risk standards, current NIH HIV statin guidance, and the FDA pregnancy safety communication
 - Learning structure: six lessons, six native goal, primary-prevention, secondary-prevention, triglyceride, familial-disease, and implementation diagrams, and six embedded knowledge checks
-- Assessment: 100 original questions spanning baseline phenotype, absolute goals, percentage response, monitoring, PREVENT categories, CAC, secondary-prevention classification, LDL-C and non-HDL-C goals, nonstatin sequencing, therapeutic inertia, secondary triglyceride causes, 500 and 1000 mg/dL pathways, FCS, HeFH, HoFH, Lp(a), diabetes, CKD, HIV, statin-attributed muscle symptoms, adherence, and access; ten sampled without replacement per attempt with answer order randomized
-- Source reconciliation: 2026 LDL-C and non-HDL-C goals were layered onto percentage response; borderline, intermediate, and high PREVENT categories were kept distinct; CAC was not used to de-risk FH or established disease; very-high-risk secondary prevention used below 55 and below 85 mg/dL goals; severe triglyceride care separated ASCVD from pancreatitis objectives; fenofibrate was preferred to gemfibrozil with statins; HoFH escalation accounted for residual receptor function; access was treated as part of exposure
-- Automated verification: 100 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 12 questions mapped to every lesson, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
-- Goodnotes note: the dedicated dyslipidemia lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+- Assessment: 116 original questions spanning baseline phenotype, absolute goals, percentage response, monitoring, PREVENT categories, CAC, secondary-prevention classification, LDL-C and non-HDL-C goals, nonstatin sequencing, therapeutic inertia, secondary triglyceride causes, 500 and 1000 mg/dL pathways, FCS, HeFH, HoFH, Lp(a), diabetes risk strata, HIV and antiretroviral interactions, reproductive safety, older-adult decisions, CKD, statin-attributed muscle symptoms, adherence, and access; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: the recovered source family's case and special-population material was reconciled with current guidance. Diabetes primary and secondary prevention were separated by total risk; HIV treatment was tied to exact antiretroviral interactions; the FDA pregnancy labeling change was distinguished from routine continuation; and decisions after age 75 were framed by net benefit rather than age alone. The 2026 LDL-C and non-HDL-C goals were layered onto percentage response; borderline, intermediate, and high PREVENT categories were kept distinct; CAC was not used to de-risk FH or established disease; very-high-risk secondary prevention used below 55 and below 85 mg/dL goals; severe triglyceride care separated ASCVD from pancreatitis objectives; fenofibrate was preferred to gemfibrozil with statins; HoFH escalation accounted for residual receptor function; access was treated as part of exposure. Older fixed targets, obsolete risk calculators, retired pregnancy categories, universal fasting assumptions, and historical product claims were not carried forward.
+- Automated verification: 116 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 12 questions mapped to every lesson, and no em dash or en dash characters in public prose; the complete 221-module audit passed with 28,084 questions and no hard errors
+- Build verification: Next.js production build passed September 3, 2026 with 549 static pages generated after complete source reconciliation
+- Goodnotes reconciliation: complete for the therapeutic and case-based content distributed across the 441-page dyslipidemia source family
 
 ### Chronic Coronary Disease
 
@@ -1208,7 +1209,7 @@ Target modules:
 
 1. Dyslipidemia Pathophysiology and Risk (`built`, 116 question bank; Goodnotes reconciliation complete)
 2. Lipid-Lowering Pharmacology (`built`, 116 question bank; Goodnotes reconciliation complete)
-3. Dyslipidemia Therapeutics (`built`, 100 question bank; Goodnotes reconciliation pending)
+3. Dyslipidemia Therapeutics (`built`, 116 question bank; Goodnotes reconciliation complete)
 
 #### Coronary disease, acute coronary syndromes, and anticoagulation
 
