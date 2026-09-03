@@ -2637,7 +2637,7 @@ Current source reconciliations:
 - Monitoring links microbiology, hemodynamics, valve function, drug exposure, organ toxicity, metastatic disease, OPAT or selected oral consolidation eligibility, substance use treatment, access, completion, and recurrence follow-up.
 - Dental prophylaxis is limited to both a highest-risk cardiac condition and a qualifying dental procedure. Current adult doses are included, clindamycin is removed, cephalosporin allergy boundaries are explicit, and routine prophylaxis for clean nondental procedures is rejected.
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 180-question assessment bank.
-- Goodnotes remains unavailable because macOS reports a locked session. Any matching endocarditis lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search found the complete RxPrep sequence plus three stroke-text pages and two order-verification chart pages, with no separate dedicated endocarditis lecture. The stroke material addresses substance-use risk reduction and infective endocarditis as a thrombolysis exclusion, which remains assigned to the stroke module. The order-verification case documents a negative echocardiographic evaluation during a pneumonia workup and adds no distinct endocarditis-treatment instruction. The existing RxPrep and current-guideline synthesis therefore covers the complete accessible endocarditis source set without unsupported duplication.
 
 ### Intra-Abdominal Infections
 
