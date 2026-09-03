@@ -44,5 +44,44 @@ export const fidaxomicinPharmacologyModule = {
 
     section("integration", "Close the CDI Loop Before Dispensing", "Fidaxomicin use is complete only when true nonfulminant CDI, episode history, access, exact product and regimen, pediatric calculations when relevant, safety, response, recurrence follow-up, and transmission prevention agree.", ["True CDI", "Episode and severity", "Exact product", "Response", "Infection control"], "Reconstruct the diagnosis, episode, severity, access, formulation, dose, duration, preparation, medication review, monitoring owner, response threshold, recurrence plan, isolation, cleaning, and handoff.", [["Diagnosis controls exposure", "Treat symptomatic CDI, not colonization or an unexplained positive assay. Confirm stool pattern and alternative causes before the first dose."], ["Severity controls the pathway", "Nonfulminant disease can fit fidaxomicin. Shock, ileus, or megacolon requires urgent fulminant CDI management."], ["Product controls execution", "Adults use 200 mg twice daily for ten days. Pediatric formulation and suspension volume depend on age, weight, and swallowing."], ["Exit includes recurrence and transmission", "Finish the course, assess clinical recovery, avoid tests of cure, teach recurrence symptoms, reduce unnecessary antibiotics, and coordinate contact precautions and sporicidal cleaning."]], ["Confirm symptomatic nonfulminant CDI.", "Secure access before discharge.", "Execute exact formulation and dosing.", "Own response, recurrence, and infection control."], check("Which plan best represents complete fidaxomicin use?", ["Confirm symptomatic nonfulminant CDI, define episode history, secure access, execute exact dosing, monitor response and safety, and plan recurrence and infection control", "Treat every positive molecular test", "Use IV fidaxomicin for bacteremia", "Repeat NAAT after symptom resolution"], "A complete plan aligns diagnosis, disease state, access, execution, monitoring, follow-up, and transmission prevention.", "integration")),
   ],
+  references: [
+    {
+      label: "DailyMed. DIFICID fidaxomicin prescribing information.",
+      href: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dd966338-c820-4270-b704-09ef75fa3ceb",
+    },
+    {
+      label: "SHEA and IDSA. 2021 focused update for management of Clostridioides difficile infection in adults.",
+      href: "https://www.idsociety.org/practice-guideline/clostridioides-difficile-2021-focused-update/",
+    },
+    {
+      label: "SHEA and IDSA. 2017 guideline for Clostridioides difficile infection in adults and children.",
+      href: "https://www.idsociety.org/practice-guideline/clostridium-difficile/",
+    },
+    {
+      label: "CDC. Clinical guidance for C. diff infection prevention in acute care facilities.",
+      href: "https://www.cdc.gov/c-diff/hcp/clinical-guidance/index.html",
+    },
+    {
+      label: "CDC. Clinical testing and diagnosis for C. diff infection.",
+      href: "https://www.cdc.gov/c-diff/hcp/diagnosis-testing/index.html",
+    },
+  ],
+  disclaimer: "This module is for advanced education and is not patient-specific medical advice. Severe abdominal pain or distention, hypotension, ileus, megacolon, sepsis, dehydration, gastrointestinal bleeding, or clinical deterioration requires urgent evaluation. Confirm symptomatic infection, episode history, severity, product, dose, access, and current guidance with the treating team and institution.",
+  sourceNotes: {
+    reviewed: "The complete RxPrep fidaxomicin sequence was reconciled with current DIFICID labeling, the SHEA and IDSA adult focused update and complete CDI guideline, and current CDC diagnostic and infection-prevention guidance.",
+    reconciled: [
+      "Bacterial RNA polymerase inhibition, local gastrointestinal exposure, minimal systemic absorption, and the systemic-infection boundary",
+      "Symptomatic CDI versus colonization, appropriate unformed-stool testing, alternative diarrhea causes, and avoidance of tests of cure",
+      "Conditional preference for initial and recurrent nonfulminant CDI, with vancomycin retained as an acceptable alternative",
+      "The fulminant CDI boundary, including urgent pathways for hypotension, shock, ileus, or megacolon",
+      "Adult and pediatric label dosing, weight-banded suspension volumes, preparation, refrigeration, and discard timing",
+      "Sustained response, recurrence reassessment, hypersensitivity, special-population uncertainty, stewardship, and infection control",
+    ],
+    deferred: [
+      "Institution-specific CDI diagnostic algorithms, isolation duration, environmental-services procedures, and fulminant order sets",
+      "Patient-specific recurrent-CDI sequencing, microbiota-based therapies, and surgical or gastroenterology escalation",
+      "Jurisdiction and payer-specific access, authorization, dispensing, and postdischarge follow-up workflows",
+    ],
+  },
   questionBank: fidaxomicinPharmacologyQuestionBank,
 };
