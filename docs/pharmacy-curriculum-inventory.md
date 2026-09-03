@@ -879,6 +879,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: the Next.js production build passed September 3, 2026 with 550 static pages generated.
 - Goodnotes reconciliation: complete for the pregnancy and lactation source set.
 
+### Menopausal Hormone Therapy
+
+- Course scope: menopausal staging, vasomotor neurobiology, systemic and local estrogen, progestogen regimens, endometrial protection, bleeding surveillance, nonhormonal vasomotor therapy, genitourinary syndrome, treatment eligibility, prevention limits, initiation, monitoring, and longitudinal reassessment.
+- Course sources reviewed: RxPrep menopause foundations, with hormone and nonhormone treatment reconciled against current specialty guidance and product labeling.
+- Current references reviewed: The Menopause Society 2022 hormone and 2023 nonhormone position statements, the February 2026 FDA menopausal hormone therapy labeling action, USPSTF prevention guidance, and current VEOZAH, LYNKUET, ESTRING, and OSPHENA labeling.
+- Learning structure: ten focused lessons, ten native physiology, formulation, decision, risk, and monitoring diagrams, and ten embedded knowledge checks.
+- Assessment: 104 original questions across 26 concepts and four reasoning levels, with ten sampled without replacement per attempt and answer order randomized.
+- Source reconciliation: the 2026 FDA action is limited to approved label revisions rather than described as a simultaneous class-wide completion; removal of certain boxed-warning language is distinguished from risk information retained elsewhere; systemic estrogen still requires endometrial protection when appropriate; postmenopausal bleeding remains an evaluation trigger; revised duration language supports periodic individualized reassessment rather than indefinite treatment without review; and fezolinetant and elinzanetant retain separate receptor, hepatic, interaction, and administration profiles.
+- Automated verification: the focused curriculum contract audit passes with 104 unique questions, valid answer choices and remediation links, ten visuals, ten embedded checks, at least eight questions mapped to every lesson, no structural errors, no source gap, and no prohibited dash characters in public prose.
+- Build verification: the Next.js production build passed September 3, 2026 with 550 static pages generated.
+- Goodnotes reconciliation: complete for the menopause source set.
+
 ### Contraceptive Pharmacotherapy
 
 - Course scope: person-centered method selection, U.S. MEC eligibility, combined pills, patches, vaginal rings, progestin-only pills, DMPA, levonorgestrel and copper IUDs, etonogestrel implant, emergency contraception, quick start, missed use, switching, interactions, bleeding, follow-up, and reproductive planning
@@ -3240,4 +3252,4 @@ This order follows prerequisite relationships while keeping every topic in its o
 - Current inventory: 222 clinically named modules and 29,348 original assessment questions.
 - The curriculum contract audit now verifies taxonomy, module and lesson structure, source statements, learning outcomes, visuals, embedded checks, assessment integrity, explanations, remediation links, educational safety framing, and public prose punctuation.
 - Current automated result: no structural errors and no lessons below the eight-question assessment-coverage threshold.
-- Authoritative reference-link reconciliation remains open for 13 modules whose source syntheses are present but whose module pages do not yet expose module-level reference links. The audit reports these separately as source gaps so they remain visible in the completion queue.
+- Authoritative reference-link reconciliation remains open for 12 modules whose source syntheses are present but whose module pages do not yet expose module-level reference links. The audit reports these separately as source gaps so they remain visible in the completion queue.

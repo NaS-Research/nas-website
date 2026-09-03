@@ -77,5 +77,21 @@ export const menopausalHormoneTherapyModule = {
       ["Individualize duration", "Current FDA labeling updates remove the blanket shortest-duration phrase from revised menopausal hormone products. Continue, adjust, taper, or stop through periodic shared decisions. Recurrence after stopping can justify a new benefit and risk discussion rather than a rigid deadline."],
     ], ["Define a measurable treatment target.", "Monitoring is product specific.", "Reassess risks and goals periodically.", "Duration is individualized rather than fixed."], { question: "What is the best current approach to treatment duration?", choices: ["Reassess periodically and individualize continuation, adjustment, or discontinuation", "Stop every product at exactly one year", "Continue forever without review", "Use age alone as the only stopping rule"], answer: 0, rationale: "Current guidance and revised labeling emphasize individualized treatment and periodic reassessment rather than a universal deadline.", reviewHref: "#initiation-followup" }),
   ],
+  references: [
+    { label: "The Menopause Society: 2022 Hormone Therapy Position Statement", href: "https://menopause.org/professional-resources/position-statements" },
+    { label: "The Menopause Society: 2023 Nonhormone Therapy Position Statement", href: "https://www.menopause.org/docs/default-source/professional/2023-nonhormone-therapy-position-statement.pdf" },
+    { label: "FDA: Approved Menopausal Hormone Therapy Labeling Changes, 2026", href: "https://www.fda.gov/news-events/press-announcements/fda-approves-labeling-changes-menopausal-hormone-therapy-products" },
+    { label: "USPSTF: Hormone Therapy for Primary Prevention of Chronic Conditions", href: "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/menopausal-hormone-therapy-preventive-medication" },
+    { label: "FDA VEOZAH Prescribing Information", href: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/216578s004lbl.pdf" },
+    { label: "FDA LYNKUET Prescribing Information", href: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219469s000lbl.pdf" },
+    { label: "FDA ESTRING Prescribing Information, 2026", href: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/020472s022lbl.pdf" },
+    { label: "FDA OSPHENA Prescribing Information", href: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/203505s018lbl.pdf" },
+  ],
+  disclaimer: "This module supports advanced education about menopausal symptoms and treatment. Hormone and nonhormone therapy require individualized assessment of symptoms, uterus status, bleeding, cancer and thrombotic history, cardiovascular and liver risk, interactions, and current product labeling. Unexplained postmenopausal bleeding requires clinical evaluation. This is not patient-specific medical advice.",
   questionBank: menopausalHormoneTherapyQuestionBank,
+  sourceNotes: {
+    reviewed: ["RxPrep menopause foundations", "Current menopause, prevention, and product-label guidance"],
+    reconciled: ["The 2026 FDA action is described as an approved labeling change for specific products rather than a claim that every label changed simultaneously.", "Cardiovascular disease, breast cancer, and probable dementia language removed from certain boxed warnings remains distinct from risk information retained elsewhere in labeling.", "The blanket shortest-duration phrase was removed from revised labels, while treatment still requires periodic individualized reassessment.", "Fezolinetant and elinzanetant are separated by receptor profile, monitoring, interactions, and current product instructions."],
+    deferred: ["Primary ovarian insufficiency", "Osteoporosis pharmacotherapy", "Gynecologic oncology"],
+  },
 };
