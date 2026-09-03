@@ -2799,7 +2799,7 @@ Current source reconciliations:
 - Counseling addresses recurrence, partner sharing, uncertainty about acquisition timing, partial condom protection, vaccination, screening, smoking, immune status, and stigma without blame.
 - The assessment now gives fuller counseling and follow-up coverage. It tests partner notification without source attribution, the limits of partner HPV testing, STI evaluation, disclosure safety, treatment-response checkpoints, toxicity, diagnostic reconsideration, recurrence, vaccination, and continued screening.
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 142-question assessment bank across all ten lessons.
-- Goodnotes remains unavailable because macOS reports a locked session. Any matching HPV or genital wart lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search for anogenital warts, genital warts, human papillomavirus, and Gardasil found six matching pages, all within the RxPrep source already used to build the module, and no separate HPV or genital-warts lecture. The existing RxPrep, CDC, immunization, screening, and current Gardasil 9 labeling synthesis therefore covers the complete accessible source set.
 
 ### Rickettsial, Ehrlichial, and Anaplasma Infections
 
