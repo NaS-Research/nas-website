@@ -102,5 +102,19 @@ export const celiacDiseaseModule = {
       ["Refer suspected refractory disease", "Refractory celiac disease means persistent symptoms or malabsorption with villous atrophy despite strict gluten-free treatment for at least 12 months after other causes are excluded. It is rare, has serious complications, and requires expert multidisciplinary care."],
     ], ["Reconfirm the original diagnosis first.", "Inadvertent exposure requires expert dietary review.", "Persistent symptoms have many possible causes.", "Repeat biopsy can distinguish symptoms from persistent enteropathy.", "Refractory disease is rare and specialist managed."], { question: "What is the best first framework for persistent symptoms after a gluten-free diet?", choices: ["Reconfirm the diagnosis, review exposure with an expert dietitian, and investigate phenotype-directed alternatives", "Diagnose refractory celiac disease immediately", "Add dapsone for abdominal pain", "Remove every medication without review"], answer: 0, rationale: "Nonresponsive disease requires a structured reassessment before rare refractory disease is considered.", reviewHref: "#nonresponsive-refractory" }),
   ],
+  references: [
+    { label: "American College of Gastroenterology: Diagnosis and Management of Celiac Disease", href: "https://pubmed.ncbi.nlm.nih.gov/36602836/" },
+    { label: "ESPGHAN: Guidelines for Diagnosing Coeliac Disease", href: "https://www.espghan.org/knowledge-center/publications/Gastroenterology/2019_ESPGHAN_guidelines_for_diagnosing_coeliac_disease" },
+    { label: "FDA: Questions and Answers on Gluten-Free Food Labeling", href: "https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/questions-and-answers-gluten-free-food-labeling-final-rule" },
+    { label: "FDA: Medications and Gluten", href: "https://www.fda.gov/drugs/buying-using-medicine-safely/medications-and-gluten" },
+    { label: "DailyMed: Dapsone Tablets", href: "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=93028aff-54f0-4f94-b925-a91400118294" },
+    { label: "CDC: Pneumococcal Vaccine Recommendations", href: "https://www.cdc.gov/pneumococcal/hcp/vaccine-recommendations/index.html" },
+  ],
+  disclaimer: "This module supports advanced education about celiac disease. Diagnostic testing should be planned before a patient changes gluten exposure, and treatment requires individualized assessment of symptoms, nutrition, bone health, medicines, and current guidance. Dapsone requires clinician supervision and laboratory monitoring. New cyanosis, breathing difficulty, jaundice, fever, sore throat, severe weakness, or a serious rash requires urgent clinical assessment. This is not patient-specific medical advice.",
   questionBank: celiacDiseaseQuestionBank,
+  sourceNotes: {
+    reviewed: ["RxPrep celiac disease foundations", "Current ACG and ESPGHAN diagnostic guidance", "Current FDA food, medication-excipient, vaccine, and dapsone-label information"],
+    reconciled: ["Serology is taught during gluten exposure, with total IgA and an IgG-based pathway when IgA deficiency changes test interpretation.", "Adult biopsy confirmation and selected pediatric nonbiopsy criteria remain distinct rather than being presented as one universal pathway.", "The United States gluten-free food threshold is separated from product-specific medication-excipient review.", "Dapsone is presented as monitored skin-symptom therapy that does not replace the gluten-free diet or heal intestinal disease.", "Pneumococcal vaccination is reviewed through current age, risk, and prior-vaccine guidance rather than a fixed celiac-specific schedule."],
+    deferred: ["Other malabsorptive enteropathies", "Detailed nutrition-deficiency replacement", "Specialist treatment of refractory celiac disease"],
+  },
 };

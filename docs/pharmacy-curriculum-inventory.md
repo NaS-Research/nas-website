@@ -3234,6 +3234,18 @@ Current source reconciliations:
 - Goodnotes reconciliation: complete for the dedicated 51-page Drug Interactions course.
 - Build verification: Next.js production build passed with 550 static pages generated.
 
+### Celiac Disease
+
+- Built from the celiac-disease material in RxPrep 2023 and reconciled with the 2023 American College of Gastroenterology guideline, the ESPGHAN pediatric diagnostic guideline, current FDA food-labeling and medication-excipient information, current dapsone labeling, and current CDC pneumococcal guidance.
+- The diagnostic sequence preserves gluten exposure before testing, pairs tTG-IgA with total IgA, adapts testing for IgA deficiency, and distinguishes adult biopsy confirmation from selected pediatric nonbiopsy criteria.
+- Multiple duodenal samples, HLA testing as an exclusion tool, competing causes of villous injury, and structured reassessment of persistent disease prevent premature or unsupported diagnosis.
+- Lifelong gluten-free treatment integrates the United States less-than-20-parts-per-million food-labeling threshold, cross-contact prevention, expert dietitian support, nutritional recovery, bone health, growth, and individualized preventive care.
+- Medication questions are resolved by exact manufacturer and product rather than the generic name alone. Current FDA information is used to calibrate concern without encouraging abrupt interruption of necessary therapy.
+- Dermatitis herpetiformis instruction separates the underlying gluten-free treatment from dapsone symptom control and makes hematologic, hepatic, cardiopulmonary, and urgent symptom safeguards explicit.
+- It contains ten focused lessons, ten original responsive diagrams, ten embedded checks, and a validated 104-question assessment bank with at least eight questions linked to every lesson.
+- Automated verification: 104 unique questions, valid answer indexes and remediation links, complete lesson coverage, no source gap, and no em dash or en dash characters in public module prose.
+- Build verification: Next.js production build passed with 550 static pages generated.
+
 ## First production sequence
 
 The first source-complete sequence will be built in this order:
@@ -3252,4 +3264,4 @@ This order follows prerequisite relationships while keeping every topic in its o
 - Current inventory: 222 clinically named modules and 29,348 original assessment questions.
 - The curriculum contract audit now verifies taxonomy, module and lesson structure, source statements, learning outcomes, visuals, embedded checks, assessment integrity, explanations, remediation links, educational safety framing, and public prose punctuation.
 - Current automated result: no structural errors and no lessons below the eight-question assessment-coverage threshold.
-- Authoritative reference-link reconciliation remains open for 12 modules whose source syntheses are present but whose module pages do not yet expose module-level reference links. The audit reports these separately as source gaps so they remain visible in the completion queue.
+- Authoritative reference-link reconciliation remains open for 11 modules whose source syntheses are present but whose module pages do not yet expose module-level reference links. The audit reports these separately as source gaps so they remain visible in the completion queue.
