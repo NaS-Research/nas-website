@@ -2403,7 +2403,7 @@ Current source reconciliations:
 - Each 50 mg vial is reconstituted with 5.3 mL of an approved diluent to 10 mg/mL. Five milliliters supplies 50 mg, and the dose is further diluted before a 30 to 60 minute infusion.
 - Routine use below age 18 is not recommended. Suggested pediatric doses are discussed only for circumstances in which no suitable alternative is available.
 - Retired pregnancy letters are excluded. Pregnancy, lactation, dental, bone, and pediatric decisions use current narrative risk, developmental timing, infection severity, and alternatives.
-- Goodnotes could not be rechecked for a dedicated tigecycline lecture because macOS remained locked during this milestone. Any matching Goodnotes content will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search found nine tigecycline pages in the complete RxPrep sequence and one anticoagulation-course reference. No dedicated tigecycline lecture is present. The anticoagulation course lists tigecycline among CYP2C9 inhibitors that may increase INR, but current TYGACIL labeling states that tigecycline is not expected to alter metabolism by the major tested CYP pathways. The public module already resolves this conflict correctly by requiring measured warfarin effect rather than assigning an unsupported CYP mechanism or interaction direction. No public lesson change was required.
 
 ### Polymyxin Pharmacology
 
