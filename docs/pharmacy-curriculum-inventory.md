@@ -2762,7 +2762,7 @@ Current source reconciliations:
 - Partner care covers the preceding 60 days and the most recent partner, lawful EPT, exact abstinence timing, HIV, gonorrhea, and syphilis testing, HIV PrEP, and population-specific doxy PEP shared decision-making.
 - The assessment now gives dedicated coverage to prevention integration and clinical integration. It tests exact abstinence timing, partner completion, linked STI and HIV prevention, doxy PEP eligibility and monitoring, site and host modifiers, follow-up deadlines, handoffs, escalation, and named ownership.
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 138-question assessment bank across all ten lessons.
-- Goodnotes remains unavailable because macOS reports a locked session. Any matching chlamydia lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search found the complete RxPrep chlamydia sequence plus asthma and COPD references to respiratory *Chlamydia pneumoniae*, with no separate STI lecture, case, or associated document. The respiratory species and airway-disease context remain assigned to their pulmonary modules and were not conflated with sexually transmitted *C. trachomatis*. The existing RxPrep and current CDC screening, treatment, LGV, proctitis, neonatal, partner-care, and doxycycline-PEP synthesis covers the complete accessible STI source set.
 
 ### Genital Herpes
 
