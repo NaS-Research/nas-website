@@ -10,7 +10,7 @@ export const pregnancyLactationPharmacotherapyModule = {
   slug: "pregnancy-lactation-pharmacotherapy",
   number: "73",
   title: "Pregnancy and Lactation Pharmacotherapy",
-  source: "NaS synthesis of FDA PLLR and labeling resources, NIH LactMed, ADA Standards of Care 2026, ACOG guidance, and current product labeling",
+  source: "NaS synthesis of FDA pregnancy and lactation labeling resources, NIH LactMed, ADA Standards of Care 2026, current ACOG guidance, and current product labeling",
   description: "Evaluate medication benefit, fetal or infant exposure, maternal disease, monitoring, and counseling across pregnancy, delivery, and lactation.",
   topics: ["Pregnancy context", "Maternal pharmacokinetics", "Placental transfer", "FDA labeling", "Common symptoms", "Diabetes", "Preeclampsia", "Anticoagulation", "Milk exposure", "Lactation counseling"],
   outcomes: [
@@ -77,5 +77,20 @@ export const pregnancyLactationPharmacotherapyModule = {
       ["Monitor what matters", "Define infant signs such as sedation, poor feeding, respiratory depression, diarrhea, rash, jaundice, irritability, or inadequate weight gain according to the drug. Include maternal response, milk supply, duration, and an escalation plan."],
     ], ["Use LactMed and current labeling.", "Avoid blanket class rules.", "Codeine and tramadol are not recommended during breastfeeding.", "Monitoring should be drug and infant specific."], { question: "Which resource is designed for drug-specific evidence during breastfeeding?", choices: ["NIH LactMed", "The retired FDA letter categories", "A universal avoid list", "A brand advertisement"], answer: 0, rationale: "LactMed summarizes drug levels, infant effects, milk-production effects, and alternatives using current evidence.", reviewHref: "#lactation-care" }),
   ],
+  references: [
+    { label: "FDA Pregnancy and Lactation Labeling Resources", href: "https://www.fda.gov/drugs/labeling-information-drug-products/pregnancy-and-lactation-labeling-drugs-final-rule" },
+    { label: "NIH Drugs and Lactation Database, LactMed", href: "https://www.ncbi.nlm.nih.gov/books/NBK501922/" },
+    { label: "ADA Standards of Care 2026: Management of Diabetes in Pregnancy", href: "https://diabetesjournals.org/care/article/49/Supplement_1/S321/163918/15-Management-of-Diabetes-in-Pregnancy-Standards" },
+    { label: "ACOG: Low-Dose Aspirin Use During Pregnancy", href: "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2018/07/low-dose-aspirin-use-during-pregnancy" },
+    { label: "ACOG: Morning Sickness, Nausea and Vomiting of Pregnancy", href: "https://www.acog.org/womens-health/faqs/morning-sickness-nausea-and-vomiting-of-pregnancy" },
+    { label: "ACOG Practice Bulletin: Thromboembolism in Pregnancy, Reaffirmed 2025", href: "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2018/07/thromboembolism-in-pregnancy" },
+    { label: "FDA Codeine and Tramadol Breastfeeding Safety Information", href: "https://www.fda.gov/drugs/postmarket-drug-safety-information-patients-and-providers/codeine-information" },
+  ],
+  disclaimer: "This module supports advanced education about medication use during pregnancy and lactation. Decisions require drug-specific evidence, gestational or infant context, current labeling, and coordinated maternal, obstetric, pediatric, and pharmacy judgment. Urgent maternal or infant symptoms require immediate clinical assessment. This is not patient-specific medical advice.",
   questionBank: pregnancyLactationPharmacotherapyQuestionBank,
+  sourceNotes: {
+    reviewed: ["RxPrep pregnancy and lactation foundations", "Current FDA, NIH, ADA, and ACOG guidance"],
+    reconciled: ["Retired FDA pregnancy letter categories were replaced with current narrative labeling sections.", "Medication risk is compared with the consequences of untreated maternal disease rather than treated as exposure alone.", "Insulin remains the preferred pharmacologic treatment when gestational diabetes targets are not met, while metformin and glyburide are not framed as universal first-line substitutes.", "Lactation decisions use drug-specific milk exposure, infant vulnerability, milk-production effects, and current labeling rather than blanket class rules."],
+    deferred: ["Disease-specific pregnancy treatment outside this module", "Neonatal pharmacotherapy", "Infertility and menopausal hormone therapy"],
+  },
 };

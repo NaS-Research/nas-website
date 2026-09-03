@@ -867,6 +867,18 @@ This inventory records the source material available in the founder's Goodnotes 
 - Build verification: the Next.js production build passed September 3, 2026 with 550 static pages generated.
 - Goodnotes reconciliation: complete for the dedicated infertility source set.
 
+### Pregnancy and Lactation Pharmacotherapy
+
+- Course scope: pregnancy context, maternal pharmacokinetics, placental transfer, developmental timing, current FDA labeling, common symptom management, diabetes, preeclampsia, venous thromboembolism, peripartum anticoagulation, milk exposure, and drug-specific lactation counseling.
+- Course sources reviewed: RxPrep pregnancy and lactation foundations, with disease-specific treatment cross-checked against current guidance and product-level resources.
+- Current references reviewed: FDA Pregnancy and Lactation Labeling Rule resources, NIH LactMed, ADA Standards of Care 2026, current ACOG nausea, aspirin, and thromboembolism guidance, and FDA codeine and tramadol breastfeeding safety information.
+- Learning structure: ten focused lessons, ten native exposure, pharmacokinetic, decision, disease-management, and lactation diagrams, and ten embedded knowledge checks.
+- Assessment: 108 original questions across 27 concepts and four reasoning levels, with ten sampled without replacement per attempt and answer order randomized.
+- Source reconciliation: retired pregnancy letter categories are excluded; exposure is separated from demonstrated harm; medication risk is compared with untreated maternal disease; insulin remains preferred when medication is needed for gestational diabetes; metformin and glyburide are not presented as universal first-line substitutes; anticoagulant planning remains phase and procedure specific; and lactation decisions integrate milk transfer, oral bioavailability, infant vulnerability, milk production, and clinical monitoring.
+- Automated verification: the focused curriculum contract audit passes with 108 unique questions, valid answer choices and remediation links, ten visuals, ten embedded checks, at least eight questions mapped to every lesson, no structural errors, no source gap, and no prohibited dash characters in public prose.
+- Build verification: the Next.js production build passed September 3, 2026 with 550 static pages generated.
+- Goodnotes reconciliation: complete for the pregnancy and lactation source set.
+
 ### Contraceptive Pharmacotherapy
 
 - Course scope: person-centered method selection, U.S. MEC eligibility, combined pills, patches, vaginal rings, progestin-only pills, DMPA, levonorgestrel and copper IUDs, etonogestrel implant, emergency contraception, quick start, missed use, switching, interactions, bleeding, follow-up, and reproductive planning
@@ -3228,4 +3240,4 @@ This order follows prerequisite relationships while keeping every topic in its o
 - Current inventory: 222 clinically named modules and 29,348 original assessment questions.
 - The curriculum contract audit now verifies taxonomy, module and lesson structure, source statements, learning outcomes, visuals, embedded checks, assessment integrity, explanations, remediation links, educational safety framing, and public prose punctuation.
 - Current automated result: no structural errors and no lessons below the eight-question assessment-coverage threshold.
-- Authoritative reference-link reconciliation remains open for 14 modules whose source syntheses are present but whose module pages do not yet expose module-level reference links. The audit reports these separately as source gaps so they remain visible in the completion queue.
+- Authoritative reference-link reconciliation remains open for 13 modules whose source syntheses are present but whose module pages do not yet expose module-level reference links. The audit reports these separately as source gaps so they remain visible in the completion queue.
