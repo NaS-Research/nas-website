@@ -2698,7 +2698,7 @@ Current source reconciliations:
 - Isolation on suspicion, gown and gloves, dedicated equipment, EPA List K sporicidal cleaning, hand hygiene, antibiotic stewardship, transfer communication, and at least 48 hours of precautions after diarrhea resolves form one prevention system.
 - Pregnancy and lactation use current narrative evidence instead of obsolete letters. Pediatrics, inflammatory bowel disease, immune compromise, response monitoring, recurrence counseling, and ownership at handoff are integrated.
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 130-question assessment bank.
-- Goodnotes remains unavailable because macOS reports a locked session. Any matching CDI lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search found the complete RxPrep sequence plus one general infectious-diarrhea laboratory page and no separate dedicated CDI lecture. The laboratory page compares watery and inflammatory stool patterns but does not alter the module's symptom-qualified testing, assay-interpretation, severity, treatment, recurrence, microbiota-therapy, or infection-control pathways, so it remains assigned to laboratory interpretation.
 
 ### Travelers' Diarrhea
 
