@@ -103,7 +103,7 @@ export const tobaccoUseCessationModule = {
     { label: "CDC. Quit Smoking Medicines.", href: "https://www.cdc.gov/tobacco/campaign/tips/quit-smoking/quit-smoking-medications/how-to-use-quit-smoking-medicines/" },
     { label: "CDC. How Quit Smoking Medicines Work.", href: "https://www.cdc.gov/tobacco/campaign/tips/quit-smoking/quit-smoking-medications/how-quit-smoking-medicines-work/" },
     { label: "CDC. Vaping and Quitting.", href: "https://www.cdc.gov/tobacco/e-cigarettes/quitting.html" },
-    { label: "DailyMed. Varenicline Tablets Prescribing Information.", href: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1624125c-a0c7-49ee-be00-9bfae4ff9bf5" },
+    { label: "DailyMed. Varenicline Tablets Prescribing Information, revised November 2025.", href: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf20c4cc-1731-4873-8de1-b93d17591e9f" },
     { label: "DailyMed. Bupropion Hydrochloride Extended-Release Tablets SR Prescribing Information.", href: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2bb61b34-653a-43b4-9682-705d5b82d18e" },
     { label: "DailyMed. Nicotrol Inhaler Prescribing Information.", href: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=62245d7d-b50d-48d9-9f03-071c61620ccf" },
     { label: "DailyMed. Nicotrol NS Prescribing Information.", href: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acb7d02d-249b-4645-ac1b-8ff9a56dd244" },
