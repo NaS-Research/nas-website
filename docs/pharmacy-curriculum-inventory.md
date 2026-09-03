@@ -245,15 +245,14 @@ This inventory records the source material available in the founder's Goodnotes 
 
 ### Hypertension Foundations and Chronic Therapy
 
-- Course scope: standardized office and home blood pressure measurement, diagnostic patterns, 2025 risk-based treatment thresholds, individualized targets, lifestyle therapy, first-line medicines, combination therapy, comorbidity selection, monitoring, adherence, access, and team-based control
+- Course sources: complete 62-page and 57-page `Hypertension` clinical decks recovered from the local Goodnotes library, rendered page by page, and visually reviewed September 3, 2026
 - Cross reference completed: RxPrep NAPLEX 2023 hypertension, cardiovascular, renal, interaction, monitoring, and patient-counseling scope
 - Current references reviewed: 2025 AHA and ACC adult high blood pressure guideline resources, the AHA PREVENT risk decision framework, and KDIGO blood pressure guidance for CKD
 - Learning structure: six lessons, six native measurement, risk, lifestyle, first-line, combination, and longitudinal-control diagrams, and six embedded knowledge checks
-- Assessment: 100 original questions spanning technique, cuff fit, repeated averages, white-coat and masked patterns, classification, PREVENT risk, target selection, diet, sodium, potassium, activity, thiazide-like therapy, ACE inhibitors, ARBs, dihydropyridine calcium-channel blockers, beta blocker indications, single-pill combinations, albuminuric CKD, pregnancy risk, home monitoring, laboratory follow-up, and adherence barriers; ten sampled without replacement per attempt with answer order randomized
-- Source reconciliation: the current 2025 treatment framework and PREVENT threshold replaced older risk-threshold language; cuffless watches were excluded from clinical decision-making; the goal below 130 over 80 was paired with individual tolerance; dual RAAS blockade was rejected; class-specific monitoring and nonjudgmental access assessment were made part of the treatment plan
-- Automated verification: 100 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 12 questions mapped to every lesson, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
-- Goodnotes note: the dedicated hypertension lecture export remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
+- Assessment: 116 original questions spanning technique, cuff fit, repeated averages, white-coat and masked patterns, secondary-cause signals, pressure physiology, classification, PREVENT risk, target selection, diet, sodium, potassium, activity, thiazide-like therapy, ACE inhibitors, ARBs, dihydropyridine calcium-channel blockers, beta blocker indications, single-pill combinations, apparent resistance, albuminuric CKD, pregnancy risk, home monitoring, orthostatic assessment, laboratory follow-up, and adherence barriers; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: cardiac output and systemic vascular resistance were connected to the measured pressure; secondary disease, medicine, and substance clues were added; apparent resistance now requires measurement, outside-office, adherence, ingredient, regimen, exposure, access, and secondary-cause review before escalation; orthostatic pressure and pulse assessment were made explicit. The current 2025 treatment framework and PREVENT threshold remained authoritative over older threshold language; cuffless watches remained excluded from clinical decisions; the goal below 130 over 80 remained paired with tolerance; dual RAAS blockade remained rejected; older fixed dose tables, blanket loop-diuretic superiority, non-dihydropyridine first-line positioning, and class-wide adverse-effect claims were not carried forward.
+- Automated verification: 116 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 16 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 3, 2026 with 549 static pages generated after complete source reconciliation
 
 ### Resistant and Secondary Hypertension
 
@@ -1184,7 +1183,7 @@ Available documents:
 
 Target modules:
 
-1. Hypertension Foundations and Chronic Therapy (`built`, 100 question bank; Goodnotes reconciliation pending)
+1. Hypertension Foundations and Chronic Therapy (`built`, 116 question bank; Goodnotes reconciliation complete)
 2. Resistant and Secondary Hypertension (`built`, 100 question bank; Goodnotes reconciliation pending)
 3. Hypertensive Emergencies (`built`, 100 question bank; Goodnotes reconciliation pending)
 4. Antihypertensive Medicinal Chemistry (`built`, 104 question bank; Goodnotes reconciliation pending)
