@@ -537,14 +537,14 @@ This inventory records the source material available in the founder's Goodnotes 
 
 ### Heart Failure Medicinal Chemistry
 
-- Course scope: ACE zinc-binding strategies, captopril, enalapril activation, lisinopril, ARB acidic aromatic pharmacophores, sacubitril activation to LBQ657, valsartan complement, beta-blocker aryloxypropanolamine structure, carvedilol stereochemistry, metoprolol formulation and CYP2D6, bisoprolol selectivity, steroidal and nonsteroidal MRA design, SGLT2 C-glucosides, loop-diuretic tubular secretion and scaffold differences, hydralazine acetylation, nitrate bioactivation, ivabradine channel access, digoxin architecture and transport, vericiguat, and structure-to-clinic evidence integration
-- Current references reviewed: current PubChem molecular records, current DailyMed labeling, and contemporary heart-failure guidance
+- Course scope: ACE zinc-binding strategies, ACE and kininase II biology, captopril, enalapril activation, lisinopril, ARB acidic aromatic pharmacophores, sacubitril activation to LBQ657, valsartan complement, beta-blocker aryloxypropanolamine structure, carvedilol stereochemistry, metoprolol formulation and CYP2D6, bisoprolol selectivity, steroidal and nonsteroidal MRA design, SGLT2 C-glucosides, loop-diuretic tubular secretion to NKCC2, distal NCC inhibition, sequential nephron blockade, hydralazine acetylation, nitrate bioactivation, ivabradine channel access, dobutamine receptor signaling, milrinone PDE3 inhibition, digoxin architecture, sodium-calcium coupling, transport and electrolyte sensitivity, vericiguat, and structure-to-clinic evidence integration
+- Current references reviewed: current PubChem molecular records, current DailyMed milrinone and digoxin labeling, 2022 AHA, ACC, and HFSA heart failure guidance, and reconciled pharmacology source material
 - Learning structure: seven lessons, seven native RAS, ARNI, beta-blocker, MRA, renal-delivery, vasodilator and rate-control, and integrated molecular diagrams, and seven embedded knowledge checks
-- Assessment: 108 original questions, ten sampled without replacement per attempt with answer order randomized
-- Source reconciliation: molecular scaffold was separated from clinical outcome evidence; prodrugs were traced to active species; shared targets did not imply interchangeable disposition or labeling; stereochemistry and formulation were connected to exposure; renal-target drugs were traced to target access; active metabolites and transporters were included where clinically consequential; structure was used to generate hypotheses rather than replace labeling, trials, or guidance
-- Automated verification: 108 unique question IDs, no duplicate answer choices, valid lesson links, seven diagrams, at least eight questions mapped to every lesson, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 30, 2026 with 547 static pages generated
-- Goodnotes note: the dedicated heart-failure medicinal-chemistry lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
+- Assessment: 120 original questions across 30 concepts, ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: all 52 pages of `Heart Failure_Pharmacology` were visually reviewed; the source was identified as an older clinical-pharmacology deck rather than a dedicated medicinal-chemistry lecture; reliable target and signaling material was routed into ACE and bradykinin biology, NKCC2 versus NCC target location, dobutamine versus milrinone cAMP signaling, and digoxin sodium-calcium and electrolyte relationships; obsolete sequencing, old digoxin concentration targets, inaccurate statistics, mislabeled dopamine content, and source questions were not imported; molecular scaffold remained separated from clinical outcome evidence; prodrugs were traced to active species; shared targets did not imply interchangeable disposition or labeling; structure was used to generate hypotheses rather than replace labeling, trials, or guidance
+- Automated verification: 120 unique question IDs and prompts, 30 concepts, no duplicate answer choices, valid lesson links, seven diagrams, at least eight questions mapped to every lesson, and no em dash or en dash characters in public prose; the complete 221-module audit passed with 28,336 questions and no hard errors
+- Build verification: Next.js production build passed September 2, 2026 with 549 static pages generated
+- Goodnotes reconciliation: complete for the dedicated 52-page `Heart Failure_Pharmacology` source
 
 ### Peripheral Arterial Disease
 
@@ -1292,7 +1292,7 @@ Target modules:
 1. Heart Failure Pathophysiology (`built`, 120 question bank; Goodnotes reconciliation complete)
 2. Chronic Heart Failure Pharmacotherapy (`built`, `verified`, and Goodnotes reconciled; 120 question bank)
 3. Acute Decompensated Heart Failure (`built`, 104 question bank; Goodnotes reconciliation pending)
-4. Heart Failure Medicinal Chemistry (`built`, 108 question bank; Goodnotes reconciliation pending)
+4. Heart Failure Medicinal Chemistry (`built`, `verified`, and Goodnotes reconciled; 120 question bank)
 5. Peripheral Arterial Disease (`built`, 100 question bank; Goodnotes reconciliation pending)
 
 #### Stroke and kidney disease
