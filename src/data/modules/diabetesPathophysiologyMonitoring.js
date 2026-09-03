@@ -4,7 +4,7 @@ export const diabetesPathophysiologyMonitoringModule = {
   slug: "diabetes-pathophysiology-monitoring",
   number: "59",
   title: "Diabetes Pathophysiology and Monitoring",
-  source: "ADA Standards of Care in Diabetes 2026",
+  source: "Complete endocrine pancreas and diabetes lecture plus ADA Standards of Care in Diabetes 2026",
   description: "Connect glucose physiology and diabetes phenotype to diagnostic evidence, individualized glycemic targets, glucose-monitoring data, hypoglycemia risk, and lifelong complication surveillance.",
   topics: ["Glucose physiology", "Diabetes phenotypes", "Diagnosis", "Glycemic targets", "CGM and BGM", "Complication surveillance"],
   outcomes: [
