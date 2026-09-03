@@ -844,6 +844,17 @@ This inventory records the source material available in the founder's Goodnotes 
 - Goodnotes reconciliation: complete for the dedicated 31-page gonadal-hormone lecture; the separate DAST IV reproductive review remains reserved for cross-module reconciliation after the related contraception, infertility, gynecologic, and pregnancy modules are built
 - Module-level references are now exposed directly in the reader, and the strengthened curriculum contract audit reports no source gap for this module.
 
+### Menstrual and Gynecologic Disorders
+
+- Course scope: menstrual pattern and triage, PALM-COEIN classification, acute abnormal uterine bleeding, chronic heavy menstrual bleeding, dysmenorrhea, premenstrual disorders, endometriosis recognition and treatment, uterine fibroids, monitoring, reproductive goals, and escalation.
+- Course sources reviewed: DAST IV Gynecological Disorders and Gynecological Agents Updated, with overlapping gonadal-hormone and reproductive-review material routed to the appropriate focused modules.
+- Current references reviewed: ACOG abnormal uterine bleeding guidance, the 2023 ACOG premenstrual-disorders guideline, the 2026 ACOG endometriosis diagnostic guideline, NICE NG88, the 2024 ASRM amenorrhea opinion, and current FDA labeling for relugolix combination therapy and elagolix.
+- Learning structure: ten content-driven lessons, ten native cycle, classification, treatment, pain, endometriosis, fibroid, and longitudinal-care diagrams, and ten embedded knowledge checks.
+- Assessment: 104 original questions, ten sampled without replacement per attempt with answer order randomized.
+- Source reconciliation: pregnancy and instability precede routine bleeding classification; PALM-COEIN replaces nonspecific historical terminology; heavy bleeding is evaluated by patient burden and iron effects rather than a fixed volume alone; prospective timing distinguishes premenstrual disorders from persistent mood disease; the 2026 ACOG pathway supports clinical endometriosis diagnosis without mandatory surgery for every patient; GnRH agonist flare is separated from direct antagonist suppression; product-specific bone, mood, pregnancy, interaction, and duration limits remain explicit; and every medical or procedural choice preserves the patient's reproductive goals.
+- Automated verification: the focused curriculum contract audit passes with 104 unique questions, valid answer choices and remediation links, ten visuals, ten embedded checks, at least eight questions mapped to every lesson, no structural errors, no source gap, and no prohibited dash characters in public prose.
+- Goodnotes reconciliation: complete for the dedicated gynecologic source set.
+
 ### Contraceptive Pharmacotherapy
 
 - Course scope: person-centered method selection, U.S. MEC eligibility, combined pills, patches, vaginal rings, progestin-only pills, DMPA, levonorgestrel and copper IUDs, etonogestrel implant, emergency contraception, quick start, missed use, switching, interactions, bleeding, follow-up, and reproductive planning

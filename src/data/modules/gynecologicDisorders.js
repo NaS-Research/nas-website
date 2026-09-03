@@ -10,7 +10,7 @@ export const gynecologicDisordersModule = {
   slug: "gynecologic-disorders",
   number: "70",
   title: "Menstrual and Gynecologic Disorders",
-  source: "RxPrep foundations, ACOG guidance, ASRM guidance, NICE NG88, FDA labeling, and DailyMed",
+  source: "RxPrep foundations reconciled with ACOG guidance for abnormal uterine bleeding, premenstrual disorders, and the 2026 endometriosis diagnostic pathway; the 2024 ASRM amenorrhea opinion; NICE NG88; and current FDA labeling.",
   description: "Move from menstrual pattern and diagnostic triage to evidence-based care for abnormal uterine bleeding, dysmenorrhea, premenstrual disorders, endometriosis, and symptomatic uterine fibroids.",
   topics: ["Menstrual assessment", "AUB classification", "Acute bleeding", "Heavy menstrual bleeding", "Dysmenorrhea", "PMS and PMDD", "Endometriosis", "GnRH pharmacology", "Uterine fibroids", "Longitudinal care"],
   outcomes: [
@@ -77,6 +77,16 @@ export const gynecologicDisordersModule = {
       ["Escalate with purpose", "Refer or re-evaluate for persistent intermenstrual bleeding, postcoital bleeding, postmenopausal bleeding, new mass or pressure, progressive pain, infertility, anemia despite therapy, treatment failure, or suspected malignancy."],
     ], ["Set a follow-up interval and success target at initiation.", "Medication safety depends on comorbidities and reproductive plans.", "Changing symptoms can change the diagnosis.", "Patient preference remains central across medical and procedural options."], { question: "A patient has persistent heavy bleeding and worsening iron deficiency despite adherent therapy. What is the best response?", choices: ["Reassess the diagnosis and escalate evaluation or treatment", "Continue unchanged indefinitely", "Stop iron because it masks the source", "Assume the symptoms are expected"], answer: 0, rationale: "Treatment failure and progressive iron loss require renewed diagnostic and therapeutic assessment.", reviewHref: "#longitudinal-care" }),
   ],
+  references: [
+    { label: "ACOG Clinical Practice Guideline: Diagnosis of Endometriosis, 2026", href: "https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2026/03/diagnosis-of-endometriosis" },
+    { label: "ACOG Clinical Practice Guideline: Management of Premenstrual Disorders, 2023", href: "https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2023/12/management-of-premenstrual-disorders" },
+    { label: "ACOG: Management of Acute Abnormal Uterine Bleeding", href: "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2013/04/management-of-acute-abnormal-uterine-bleeding-in-nonpregnant-reproductive-aged-women" },
+    { label: "NICE NG88: Heavy Menstrual Bleeding Assessment and Management", href: "https://www.nice.org.uk/guidance/ng88/chapter/Recommendations" },
+    { label: "ASRM Committee Opinion: Current Evaluation of Amenorrhea, 2024", href: "https://www.asrm.org/practice-guidance/practice-committee-documents/current-evaluation-of-amenorrhea/" },
+    { label: "FDA MYFEMBREE Prescribing Information, 2025", href: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/214846s012lbl.pdf" },
+    { label: "FDA ORILISSA Prescribing Information", href: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/210450s009lbl.pdf" },
+  ],
+  disclaimer: "This module supports advanced education about menstrual and gynecologic disorders. It reconciles older course foundations with current diagnostic guidance and product labeling. Acute bleeding, pregnancy-related bleeding, severe pain, malignancy concerns, and treatment selection require qualified clinical evaluation. This is not patient-specific medical advice.",
   questionBank: gynecologicDisordersQuestionBank,
   sourceNotes: {
     reviewed: ["RxPrep gynecologic foundations", "Current gynecology and reproductive guidance"],
