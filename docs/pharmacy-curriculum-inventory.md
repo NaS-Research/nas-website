@@ -1819,7 +1819,7 @@ Current guidance reconciliations:
 - Generalized pustular psoriasis is separated from plaque psoriasis. Current spesolimab labeling includes patients age 12 and older who weigh at least 40 kg, a 900 mg intravenous flare regimen, and a subcutaneous between flare regimen.
 - Erythroderma and generalized pustular disease use urgent whole patient stabilization rather than routine outpatient topical escalation.
 - The complete two-page RxPrep 2023 psoriasis source block was reviewed visually. It predates modern topical PDE4 and AhR therapy, TYK2 inhibition, IL-17A and F blockade, the current spesolimab prevention pathway, and several label expansions, all of which were reconciled with current authoritative sources.
-- A dedicated Goodnotes psoriasis lecture remains pending because the Mac was still locked on the fourth access attempt on August 26, 2026. The module will receive a documented lecture reconciliation pass when the desktop session is unlocked.
+- Goodnotes source reconciliation is complete. A restored library-wide search across psoriasis, psoriatic disease, and the major targeted biologics found 23 relevant pages in the already reviewed RxPrep source and no separate psoriasis lecture. The only additional matches were two incidental references in a drug-induced pulmonary disease chapter. The existing RxPrep and current-authority synthesis therefore covers the complete accessible psoriasis source set without importing unrelated material.
 
 ### Genitourinary Medicinal Chemistry
 
