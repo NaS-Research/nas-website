@@ -2517,7 +2517,7 @@ Current source reconciliations:
 - The module distinguishes macrocrystals from the monohydrate and macrocrystal product, lower urinary exposure from systemic treatment, treatment from prophylaxis, and current renal evidence from the older label cutoff.
 - Reductive activation, multiple bacterial targets, urine concentration, food effects, dosing, pulmonary and hepatic toxicity, neuropathy, hemolysis, G6PD context, pregnancy and lactation narratives, monitoring, and stewardship are connected across ten lessons.
 - It contains ten original responsive diagrams, ten embedded checks, and a validated assessment bank exceeding 100 original questions.
-- Goodnotes could not be rechecked because macOS reported a locked session. Any matching lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search found 16 nitrofurantoin pages in the complete RxPrep sequence, 13 pages in a 2026 drug-induced pulmonary-disease chapter, one chronic-kidney-disease reference, and one infertility medication-history reference. The pulmonary source reinforces acute eosinophilic or hypersensitivity injury, chronic interstitial disease and fibrosis after prolonged exposure, impaired-clearance risk, and prompt discontinuation, all already explicit in the module. The kidney reference reinforces renal selection limits. The infertility material only includes nitrofurantoin in medication-history collection and does not establish a causal rule, so it was not converted into an unsupported fertility claim.
 
 ### Mupirocin Pharmacology and Decolonization
 
