@@ -3023,6 +3023,7 @@ Current source reconciliations:
 ### Mucosal and Esophageal Candidiasis
 
 - Built from the focused mucosal Candida and HIV opportunistic-infection material in RxPrep 2023 and reconciled with current NIH Adult and Adolescent Opportunistic Infection guidance plus the IDSA candidiasis guideline.
+- Goodnotes source reconciliation is complete. A library-wide search found RxPrep as the only dedicated candidiasis source. Additional pulmonary pharmacotherapy, inhaler-counseling, medication-list, and SOAP-note matches addressed inhaled corticosteroid associated oral candidiasis, mouth rinsing, and device technique. Those contextual points were already represented as modifiable local drivers and prevention counseling.
 - Ten focused lessons distinguish colonization, oropharyngeal disease, esophageal disease, refractory infection, and possible invasive disease before selecting a product or route.
 - Oral morphology, removable plaques, mimics, odynophagia, dysphagia, hydration, nutrition, immune risk, local drivers, and the seven-day response threshold organize diagnosis and escalation.
 - Oropharyngeal treatment separates systemic fluconazole from selected local miconazole, clotrimazole, or nystatin therapy according to severity, compartment, technique, interaction burden, and adherence.
@@ -3031,7 +3032,7 @@ Current source reconciliations:
 - Pregnancy, lactation, age, kidney and liver function, swallowing, cognition, dexterity, saliva, immune status, and medication burden are translated into product-specific selection rather than generic active-ingredient assumptions.
 - Integrated cases now require compartment and severity triage, intake stabilization, response deadlines, endoscopy criteria, ART coordination, recurrence-driver correction, and named ownership of each pending result and transition.
 - The assessment contains 116 unique original questions across 29 concept groups, with valid remediation links and coverage of all ten lessons. Each attempt samples ten questions without replacement and randomizes answer order.
-- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated.
+- Build verification: Next.js production build passed August 27, 2026 with 550 static pages generated.
 
 ### Influenza Antiviral Pharmacology
 
