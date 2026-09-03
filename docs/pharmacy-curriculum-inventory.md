@@ -2145,7 +2145,7 @@ Current source reconciliations:
 - Puncture wounds, hand and joint injuries, diabetes, vascular disease, immune compromise, anticoagulation, and impaired healing change the threshold for clinician evaluation and follow-up.
 - Infection surveillance distinguishes expected local healing from spreading erythema, increasing pain, purulence, fever, lymphangitic streaking, loss of function, systemic illness, and delayed healing.
 - Retired pregnancy letters are excluded. Reproductive and lactation decisions use product-specific evidence, route, exposed area, timing, alternatives, and patient goals.
-- Goodnotes was retried after the user reported access restored, but the Mac session still returned a locked state. Any dedicated lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search for minor wounds, lacerations, abrasions, puncture wounds, wound care, tetanus prophylaxis, topical antibiotics, and petrolatum found 33 matching pages, all within the complete RxPrep sequence already reviewed for this module. No separate wound-care or first-aid lecture is present in the indexed library, so the existing RxPrep, CDC, dermatology, and current first-aid synthesis covers the complete accessible course source set.
 
 ### Animal and Human Bites
 
