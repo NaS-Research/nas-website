@@ -1914,7 +1914,7 @@ Current source reconciliations:
 - Continuous leakage after obstructed labor, pelvic surgery, radiation, malignancy, foreign body, or tissue injury is localized by the organs connected. Direct examination, dye testing, cystoscopy, fluid creatinine, excretory CT, and selected MRI answer different anatomic questions.
 - Repair timing follows tissue readiness rather than a universal interval. Diversion, infection control, healthy vascular tissue, tension-free watertight closure, route selection, ureteric and sphincter protection, postoperative drainage, and specialist experience are integrated.
 - Recovery includes kidneys, skin, nutrition, continence, bowel function, pain, sexual health, fertility, trauma, relationships, work, access, and social inclusion. Obstetric access, prompt injury recognition, referral, and reliable pessary follow-up remain prevention responsibilities.
-- Goodnotes was retried on August 26, 2026, but macOS still reported that the session was locked. The module will receive a documented lecture reconciliation pass when the Mac session is manually unlocked.
+- Goodnotes source reconciliation is complete. A restored library-wide search for pelvic organ prolapse, uterine prolapse, cystocele, rectocele, pessary care, and urogenital or vesicovaginal fistula found no matching lecture pages. The module therefore correctly remains grounded in current ACOG, NICE, FDA, WHO, and EAU guidance, with no inaccessible course source left to reconcile.
 
 ### Gender-Affirming Hormone Care
 
