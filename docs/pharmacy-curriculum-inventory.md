@@ -2899,7 +2899,7 @@ Current source reconciliations:
 - Amphotericin-associated kidney injury is explicitly linked to reduced flucytosine elimination, so creatinine, concentration, CBC, liver tests, potassium, magnesium, and clinical response are monitored as a coupled combination-therapy system.
 - Baseline verification, result ownership, failure audit, induction-to-consolidation transition, pregnancy and lactation context, teach back, and the educational boundary close the module.
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 176-question assessment bank.
-- Goodnotes remains unavailable because macOS reports a locked session. Any matching amphotericin or flucytosine lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search for amphotericin, flucytosine, AmBisome, and Ancobon returned 22 matching RxPrep pages and no separate dedicated amphotericin or flucytosine lecture. The remaining seven pages were brief nephrotoxicity, renal-dosing, electrolyte-interaction, or parenteral-nutrition references in acute kidney injury, chronic kidney disease, diuretic, interaction, and pediatric nutrition material. Those cross-topic safety references are already represented in the module's renal, electrolyte, interaction, and monitoring instruction, so the existing RxPrep, current-label, and cryptococcosis-guideline synthesis covers the complete accessible source set.
 
 ### Triazole Antifungal Pharmacology
 
