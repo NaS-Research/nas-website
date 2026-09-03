@@ -25,6 +25,8 @@ const concepts = [
   ["maintenance", "Continuation treatment consolidates remission, and maintenance duration increases with recurrence, chronicity, severity, residual symptoms, comorbidity, and patient preference.", "Define remission and recovery using symptoms, function, safety, and patient goals, then plan follow-up and relapse prevention.", "Stopping immediately after initial response raises relapse risk because response is not yet durable recovery."],
   ["integrated-care", "Collaborative care links systematic follow-up, a care manager, measurement-based treatment adjustment, primary care, behavioral health, and psychiatric consultation.", "Use a shared plan with diagnosis, safety status, target outcomes, treatment, adherence, adverse effects, next review, and escalation criteria.", "Fragmented prescribing without ownership or measurement can leave nonresponse and safety changes invisible."],
   ["lethal-means-safety", "Lethal-means safety reduces immediate access to highly lethal methods during a period of elevated risk and is distinct from a promise not to attempt suicide.", "Collaboratively involve the patient and trusted supports when possible, secure or remove lethal means, define emergency contacts, and document who owns each action.", "Relying on a no-suicide contract without changing access, supervision, or follow-up can create false reassurance."],
+  ["ssri-pharmacogenomics", "Current CPIC guidance uses selected CYP2D6, CYP2C19, and CYP2B6 phenotypes to inform prescribing for specific serotonin reuptake inhibitors when results are available.", "Match the phenotype to the named drug recommendation, assess interacting inhibitors and inducers, and integrate response, tolerability, organ function, and patient goals.", "Applying one gene result to every antidepressant or using SLC6A4 and HTR2A as established prescribing tests exceeds current CPIC evidence."],
+  ["tca-pharmacogenomics", "CYP2D6 phenotype can alter amitriptyline and nortriptyline exposure, while CYP2C19 also affects amitriptyline metabolism and the balance of parent drug and active metabolite.", "Use complete phenotype information, interacting drugs, indication, therapeutic monitoring when appropriate, and the current CPIC recommendation to select or adjust therapy.", "Treating a single allele as a complete dose instruction can ignore diplotype, phenoconversion, combined gene effects, and the patient's clinical response."],
 ];
 
 const reviewLessonByConcept = {
@@ -54,6 +56,8 @@ const reviewLessonByConcept = {
   neuromodulation: "advanced-treatment",
   maintenance: "recovery-plan",
   "integrated-care": "recovery-plan",
+  "ssri-pharmacogenomics": "ssri-selection",
+  "tca-pharmacogenomics": "tca-maoi",
 };
 
 const dimensions = [["principle", "Which statement is most accurate?", 0], ["action", "Which action best applies the evidence?", 1], ["integration", "Which plan demonstrates the strongest clinical reasoning?", 1], ["hazard", "Which error creates the greatest avoidable risk?", 2]];
