@@ -106,5 +106,18 @@ export const cervicitisPelvicInflammatoryDiseaseModule = {
       ["Follow long-term outcomes", "Recurrent pain, infertility concerns, ectopic pregnancy risk, or recurrent symptoms need gynecologic and reproductive follow-up. Prevention includes barrier counseling, screening, rapid treatment, and accessible partner services."],
     ], ["Clinical response is measured within 72 hours.", "Partners from the prior 60 days need care.", "Abstinence lasts through treatment, symptom resolution, and partner treatment.", "Chlamydial or gonococcal PID needs three-month retesting.", "Long-term reproductive outcomes remain visible."], { question: "Which statement correctly closes a PID treatment plan?", choices: ["Retest chlamydial or gonococcal PID at three months and ensure partners from the prior 60 days receive care", "No follow-up is needed after the injection", "Resume sex as soon as pain improves", "Partner treatment depends on symptoms"], answer: 0, rationale: "Reinfection prevention and retesting are required even when symptoms resolve.", reviewHref: "#follow-up-prevention" }),
   ],
+  references: [
+    { label: "CDC: Urethritis and Cervicitis", href: "https://www.cdc.gov/std/treatment-guidelines/urethritis-and-cervicitis.htm" },
+    { label: "CDC: Pelvic Inflammatory Disease", href: "https://www.cdc.gov/std/treatment-guidelines/pid.htm" },
+    { label: "CDC: Mycoplasma genitalium", href: "https://www.cdc.gov/std/treatment-guidelines/mycoplasmagenitalium.htm" },
+    { label: "CDC: Management of IUDs When Users Have PID", href: "https://www.cdc.gov/contraception/hcp/usspr/intrauterine-devices-pid.html" },
+    { label: "CDC: STI Treatment Guidelines", href: "https://www.cdc.gov/std/treatment-guidelines/default.htm" },
+  ],
+  disclaimer: "This module supports advanced education about cervicitis and pelvic inflammatory disease. Pelvic or lower abdominal pain can reflect an obstetric, surgical, or other urgent condition, and suspected PID requires timely clinical evaluation and empiric treatment when the diagnostic threshold is met. Pregnancy, severe illness, tubo-ovarian abscess, inability to tolerate outpatient therapy, or lack of improvement requires escalation. This is not patient-specific medical advice.",
   questionBank: cervicitisPelvicInflammatoryDiseaseQuestionBank,
+  sourceNotes: {
+    reviewed: ["RxPrep cervicitis and pelvic inflammatory disease foundations", "Current CDC cervicitis, PID, Mycoplasma genitalium, partner-care, and contraceptive-practice guidance"],
+    reconciled: ["Cervicitis and PID remain distinct syndromes with different antimicrobial breadth and duration.", "The low PID treatment threshold is preserved while pregnancy and surgical or obstetric alternatives remain under active evaluation.", "Ceftriaxone weight adjustment is limited to documented gonococcal infection in a patient at or above the stated weight threshold.", "Standard PID regimens are not presented as reliable Mycoplasma genitalium therapy, and single-dose azithromycin is not used for that organism.", "IUD retention with close reassessment is separated from removal after nonresponse or according to patient preference."],
+    deferred: ["Individual pathogen modules for chlamydia, gonorrhea, trichomoniasis, and genital herpes", "Infertility evaluation after tubal injury", "Operative management of tubo-ovarian abscess"],
+  },
 };

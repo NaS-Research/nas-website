@@ -1951,6 +1951,9 @@ Current source reconciliations:
 - Pregnancy uses narrative risk and requires hospital, IV, and specialist care for suspected PID. An IUD generally remains during initial treatment with reassessment at 48 to 72 hours. Retired pregnancy letters are absent.
 - Clinical improvement is measured within 72 hours. Partners from the preceding 60 days receive chlamydia and gonorrhea evaluation and presumptive therapy, temporary abstinence lasts through patient completion, symptom resolution, and partner treatment, and chlamydial or gonococcal PID is retested at three months.
 - Goodnotes source reconciliation is complete. A restored library-wide search for cervicitis, pelvic inflammatory disease, endometritis, mucopurulent cervicitis, and cervical motion tenderness found no dedicated lecture. The only non-RxPrep match was one infertility slide identifying PID as a cause of tubal blockage, a reproductive consequence already explicit in the module. The existing RxPrep and current CDC synthesis therefore covers the complete accessible course set without weakening its upper-tract diagnostic and treatment framework.
+- The public reader now exposes current CDC cervicitis, PID, Mycoplasma genitalium, IUD-management, and complete STI-treatment guidance, along with an explicit educational safety notice.
+- Focused verification confirms 132 unique original questions, valid remediation links, at least 12 questions mapped to every lesson, no source gap, and no em dash or en dash characters in public module prose.
+- The full 222-module audit passes with 29,348 questions, no hard errors, and no thin lessons. The Next.js production build passes with 550 static pages generated.
 
 ### Gynecologic Oncology
 
@@ -3264,4 +3267,4 @@ This order follows prerequisite relationships while keeping every topic in its o
 - Current inventory: 222 clinically named modules and 29,348 original assessment questions.
 - The curriculum contract audit now verifies taxonomy, module and lesson structure, source statements, learning outcomes, visuals, embedded checks, assessment integrity, explanations, remediation links, educational safety framing, and public prose punctuation.
 - Current automated result: no structural errors and no lessons below the eight-question assessment-coverage threshold.
-- Authoritative reference-link reconciliation remains open for 11 modules whose source syntheses are present but whose module pages do not yet expose module-level reference links. The audit reports these separately as source gaps so they remain visible in the completion queue.
+- Authoritative reference-link reconciliation remains open for 10 modules whose source syntheses are present but whose module pages do not yet expose module-level reference links. The audit reports these separately as source gaps so they remain visible in the completion queue.
