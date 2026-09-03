@@ -2991,6 +2991,7 @@ Current source reconciliations:
 - CSF culture, not antigen titer or elapsed time, governs the transition from induction to consolidation. Persistent culture extends fungicidal therapy and resets the eight-week consolidation clock from confirmed sterility.
 - Integrated cases join fungal killing, pressure management, culture evidence, fluconazole consolidation, four-to-six-week ART delay, maintenance, relapse-versus-IRIS reasoning, interaction transitions, and named ownership of every procedure and result.
 - The assessment contains 116 unique original questions across 29 concept groups, with valid remediation links and coverage of all nine lessons. Each attempt samples ten questions without replacement and randomizes answer order.
+- Goodnotes source reconciliation is complete. A restored library-wide search for cryptococcosis, cryptococcal meningitis, and flucytosine found seven matching pages, all within the complete RxPrep antifungal and opportunistic-infection sequence already used for the module, and no separate cryptococcosis lecture, case, or associated document. The existing RxPrep, current NIH guidance, and current-label synthesis therefore covers the complete accessible source set.
 - Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated.
 
 ### Disseminated Mycobacterium avium Complex
