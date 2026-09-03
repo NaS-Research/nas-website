@@ -2534,7 +2534,7 @@ Current source reconciliations:
 - Cefazolin remains first-line for many procedures. Vancomycin is reserved for defined MRSA circumstances and does not erase other procedure-specific coverage. Elective colorectal surgery uses coordinated oral, parenteral, and mechanical preparation components.
 - The current cefazolin label still describes postoperative dosing for 24 hours, while current high-quality SSI guidance recommends discontinuation at incision closure. The module exposes this conflict and ties implementation to current evidence-based institutional governance rather than silently choosing one source.
 - It contains ten original responsive diagrams, ten embedded checks, and a validated assessment bank exceeding 100 original questions.
-- Goodnotes was retried before development, but macOS still reported a locked session. Any matching perioperative lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search found the perioperative antimicrobial-prophylaxis material only in the complete RxPrep sequence and no separate course lecture, case, or associated document. The existing module already reconciles that source with current SSI, MRSA-prevention, labeling, and accreditation guidance, including the label-versus-guideline discontinuation conflict, so no unsupported duplicate content was added.
 
 ### Acute Bacterial Meningitis
 
