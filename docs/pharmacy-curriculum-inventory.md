@@ -361,14 +361,15 @@ This inventory records the source material available in the founder's Goodnotes 
 ### Antiplatelet Pharmacology
 
 - Course scope: platelet adhesion, activation, secretion, and aggregation; aspirin and thromboxane; oral P2Y12 inhibitors; clopidogrel activation and CYP2C19 variability; prasugrel contraindications and bleeding selection; ticagrelor kinetics, aspirin pairing, dyspnea, and CYP3A interactions; cangrelor; GPIIb/IIIa inhibitors; renal dosing; thrombocytopenia; testing; switching; bleeding; procedures; and counseling
+- Course sources: the complete 32-page coronary disease and ACS pharmacology source and the clopidogrel-focused pages within the complete 51-page anticoagulant and antiplatelet pharmacogenetics source were recovered from the local Goodnotes library, rendered page by page, and visually reviewed September 3, 2026
 - Cross reference completed: RxPrep NAPLEX 2023 antiplatelet mechanism, indication, interaction, adverse-effect, monitoring, and counseling scope
-- Current references reviewed: 2025 AHA and ACC acute coronary syndromes guideline and current DailyMed labeling for clopidogrel, prasugrel, ticagrelor, cangrelor, eptifibatide, and tirofiban
+- Current references reviewed: 2025 AHA and ACC acute coronary syndromes guideline, 2022 CPIC CYP2C19 and clopidogrel guideline, 2024 AHA CYP2C19 genetic testing scientific statement, and current DailyMed labeling for clopidogrel, prasugrel, ticagrelor, cangrelor, eptifibatide, and tirofiban
 - Learning structure: six lessons, six native platelet-pathway, aspirin, oral P2Y12, intravenous-agent, variability, and bleeding diagrams, and six embedded knowledge checks
-- Assessment: 104 original questions spanning vWF and GPIb, platelet agonists, GPIIb/IIIa, aspirin mechanism and formulation, GI safety, hypersensitivity, clopidogrel activation and interaction, prasugrel selection, ticagrelor kinetics and adverse effects, cangrelor transitions, intravenous GPIIb/IIIa use, renal adjustment, thrombocytopenia, selected testing, procedural interruption, major bleeding, and counseling; ten sampled without replacement per attempt with answer order randomized
-- Source reconciliation: aspirin plasma exposure was separated from irreversible platelet effect; clopidogrel poor metabolism was tied to active-metabolite formation; prasugrel was excluded after stroke or TIA and age and weight bleeding factors were explicit; ticagrelor used current low-dose aspirin maintenance labeling; cangrelor transition timing differed by oral agent; GPIIb/IIIa use was selective and included renal and platelet surveillance; testing was limited to actionable decisions
-- Automated verification: 104 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, at least 12 questions mapped to every lesson, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
-- Goodnotes note: the dedicated antiplatelet lectures remain pending because the Mac is locked; their eventual review will be recorded as a formal reconciliation pass
+- Assessment: 116 original questions spanning vWF and GPIb, platelet agonists, GPIIb/IIIa, aspirin mechanism and formulation, GI safety, hypersensitivity, clopidogrel activation and interaction, CYP2C19 diplotype and phenotype translation, indication-specific genotype action, assay coverage and ancestry, prasugrel selection, ticagrelor kinetics and adverse effects, cangrelor transitions, intravenous GPIIb/IIIa use, renal adjustment, thrombocytopenia, selected testing, procedural interruption, major bleeding, and counseling; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: the recovered source family's platelet, aspirin, clopidogrel, prasugrel, ticagrelor, GPIIb/IIIa, and CYP2C19 pharmacogenetic scope is represented. Aspirin plasma exposure was separated from irreversible platelet effect; clopidogrel poor metabolism was tied to active-metabolite formation; one and two loss-of-function alleles were separated through current phenotype translation; pharmacogenetic action was tied to the clinical indication; panel limitations and ancestry were explicit without using race as a genotype proxy; prasugrel was excluded after stroke or TIA and age and weight bleeding factors were explicit; ticagrelor used current low-dose aspirin maintenance labeling; cangrelor transition timing differed by oral agent; GPIIb/IIIa use was selective and included renal and platelet surveillance; and testing was limited to actionable decisions. Historical phenotype terminology, old routine-testing language, fixed stent-era DAPT claims, and routine glycoprotein IIb/IIIa use were not carried forward.
+- Automated verification: 116 unique question IDs, no duplicate answer choices, valid lesson links, six diagrams, at least 12 questions mapped to every lesson, and no em dash or en dash characters in public prose; the complete 221-module audit passed with 28,128 questions and no hard errors
+- Build verification: Next.js production build passed September 3, 2026 with 549 static pages generated after complete source reconciliation
+- Goodnotes reconciliation: complete for the shared 83-page ACS pharmacology and anticoagulant and antiplatelet pharmacogenetics source family
 
 ### Coagulation and Anticoagulant Pharmacology
 
@@ -1233,7 +1234,7 @@ Target modules:
 
 1. Chronic Coronary Disease (`built`, 116 question bank; Goodnotes reconciliation complete)
 2. Acute Coronary Syndromes (`built`, 116 question bank; Goodnotes reconciliation complete)
-3. Antiplatelet Pharmacology (`built`, 100 question bank; Goodnotes reconciliation pending)
+3. Antiplatelet Pharmacology (`built`, 116 question bank; Goodnotes reconciliation complete)
 4. Coagulation and Anticoagulant Pharmacology (`built`, 100 question bank; Goodnotes reconciliation pending)
 5. Venous Thromboembolism (`built`, 100 question bank; Goodnotes reconciliation pending)
 6. Warfarin Management (`built`, 100 question bank; Goodnotes reconciliation pending)
