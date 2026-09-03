@@ -2288,7 +2288,7 @@ Current source reconciliations:
 - Prevention decisions use recurrence burden, pain, duration, work or school impact, immune status, trigger predictability, response, and patient goals rather than one arbitrary episode count alone.
 - Painful monomorphic vesicles or punched-out erosions spreading across atopic dermatitis with fever or eye symptoms are treated as possible eczema herpeticum and urgent systemic disease.
 - Retired pregnancy letters are excluded. Pregnancy, lactation, pediatric, and infant-contact decisions use the exact product, route, age, weight, renal function, treated site, exposure, and current labeling.
-- Goodnotes was retried again during module development, but the Mac session still returned a locked state. Any dedicated HSV lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search for herpes labialis, cold sores, orolabial and recurrent herpes, docosanol, penciclovir, acyclovir cream, and valacyclovir found the complete RxPrep sequence but no dedicated oral-HSV lecture. One chronic-kidney-disease slide identifies acyclovir and valacyclovir as drugs requiring renal-dose review. The module already makes renal function, dialysis, hydration, nephrotoxins, accumulation, acute kidney injury, and neurotoxicity explicit before oral therapy, so this course source reinforces rather than changes the current framework. The existing RxPrep and current-label synthesis covers the complete accessible source set.
 
 ### Seborrheic Dermatitis and Dandruff
 
