@@ -106,5 +106,43 @@ export const pelvicOrganProlapseFistulaCareModule = {
       ["Prevent the preventable", "Obstetric fistula prevention depends on timely quality obstetric care and referral. Iatrogenic prevention depends on surgical recognition and prompt management. Pessary injury prevention depends on reliable maintenance ownership."],
     ], ["Complexity changes the team and plan.", "Mixed fistulas need multiorgan evaluation.", "Skin and nutrition care start early.", "Recovery includes mental and social health.", "Prevention is a health-system responsibility."], { question: "Why is anatomic fistula closure alone an incomplete success measure?", choices: ["Persistent incontinence, pain, sexual dysfunction, trauma, renal injury, and social exclusion may remain", "Closure always resolves every consequence", "Mental health is unrelated to fistula", "Nutrition has no role in healing"], answer: 0, rationale: "Whole-person recovery includes function, health, agency, and social reintegration beyond the opening itself.", reviewHref: "#recovery-prevention" }),
   ],
+  references: [
+    {
+      label: "ACOG. Pelvic Organ Prolapse. Practice Bulletin No. 214.",
+      href: "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2019/11/pelvic-organ-prolapse",
+    },
+    {
+      label: "NICE. Urinary incontinence and pelvic organ prolapse in women: management. NG123 recommendations.",
+      href: "https://www.nice.org.uk/guidance/ng123/chapter/recommendations",
+    },
+    {
+      label: "FDA. Pelvic Organ Prolapse Surgical Mesh Considerations and Recommendations.",
+      href: "https://www.fda.gov/medical-devices/urogynecologic-surgical-mesh-implants/pelvic-organ-prolapse-pop-surgical-mesh-considerations-and-recommendations",
+    },
+    {
+      label: "European Association of Urology. Non-neurogenic Female Lower Urinary Tract Symptoms, disease management.",
+      href: "https://uroweb.org/guidelines/non-neurogenic-female-luts/chapter/disease-management",
+    },
+    {
+      label: "World Health Organization. Obstetric fistula: guiding principles for clinical management and programme development.",
+      href: "https://www.who.int/publications-detail-redirect/9241593679",
+    },
+  ],
+  disclaimer: "This module is for advanced education. Bleeding, urinary retention, severe pain, fever, inability to remove a pessary, continuous urine or stool leakage, or suspected urinary tract injury requires prompt clinical evaluation. Device, surgical, and fistula care must be individualized by qualified clinicians and this content is not patient-specific medical advice.",
+  sourceNotes: {
+    reviewed: "Current ACOG, NICE, FDA, EAU, and WHO guidance was reviewed for pelvic organ prolapse assessment, conservative treatment, pessary care, operative decision-making, mesh safety, urinary fistula diagnosis, reconstruction, and recovery.",
+    reconciled: [
+      "Pelvic support anatomy, symptom correlation, POP-Q examination, and question-directed urinary and bowel testing",
+      "At least 16 weeks of supervised pelvic floor muscle training for selected symptomatic stage 1 or 2 prolapse and a pessary removal interval no longer than six months",
+      "The FDA status of transvaginal mesh for prolapse, kept distinct from abdominal sacrocolpopexy mesh and stress urinary incontinence slings",
+      "Anatomy-directed fistula localization, individualized timing after unhealthy tissue resolves, and protection of the first repair",
+      "Renal, skin, nutritional, continence, sexual, psychological, and social recovery as part of the treatment outcome",
+    ],
+    deferred: [
+      "Stepwise operative technique and surgeon-specific procedural instruction",
+      "Detailed management of complex colorectal and inflammatory bowel disease fistulas",
+      "Institution-specific postoperative catheter, imaging, and rehabilitation protocols",
+    ],
+  },
   questionBank: pelvicOrganProlapseFistulaCareQuestionBank,
 };

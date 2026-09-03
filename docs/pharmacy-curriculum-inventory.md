@@ -1995,6 +1995,9 @@ Current source reconciliations:
 - Repair timing follows tissue readiness rather than a universal interval. Diversion, infection control, healthy vascular tissue, tension-free watertight closure, route selection, ureteric and sphincter protection, postoperative drainage, and specialist experience are integrated.
 - Recovery includes kidneys, skin, nutrition, continence, bowel function, pain, sexual health, fertility, trauma, relationships, work, access, and social inclusion. Obstetric access, prompt injury recognition, referral, and reliable pessary follow-up remain prevention responsibilities.
 - Goodnotes source reconciliation is complete. A restored library-wide search for pelvic organ prolapse, uterine prolapse, cystocele, rectocele, pessary care, and urogenital or vesicovaginal fistula found no matching lecture pages. The module therefore correctly remains grounded in current ACOG, NICE, FDA, WHO, and EAU guidance, with no inaccessible course source left to reconcile.
+- The public reader now exposes the current ACOG, NICE, FDA, EAU, and WHO source set plus a focused educational safety notice. Reconciliation preserves the 16-week supervised pelvic floor training pathway, the six-month maximum pessary removal interval, precise United States transvaginal prolapse-mesh status, anatomy-directed fistula localization, individualized repair timing, and whole-person recovery.
+- Focused verification confirms 144 unique original questions, valid remediation links, at least 12 questions mapped to every lesson, no source gap, and no em dash or en dash characters in public module prose.
+- The full 222-module audit passes with 29,348 questions, no hard errors, and no thin lessons. The Next.js production build passes with 550 static pages generated.
 
 ### Gender-Affirming Hormone Care
 
@@ -3272,4 +3275,4 @@ This order follows prerequisite relationships while keeping every topic in its o
 - Current inventory: 222 clinically named modules and 29,348 original assessment questions.
 - The curriculum contract audit now verifies taxonomy, module and lesson structure, source statements, learning outcomes, visuals, embedded checks, assessment integrity, explanations, remediation links, educational safety framing, and public prose punctuation.
 - Current automated result: no structural errors and no lessons below the eight-question assessment-coverage threshold.
-- Authoritative reference-link reconciliation remains open for 9 modules whose source syntheses are present but whose module pages do not yet expose module-level reference links. The audit reports these separately as source gaps so they remain visible in the completion queue.
+- Authoritative reference-link reconciliation remains open for 8 modules whose source syntheses are present but whose module pages do not yet expose module-level reference links. The audit reports these separately as source gaps so they remain visible in the completion queue.
