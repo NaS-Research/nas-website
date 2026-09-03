@@ -6,7 +6,7 @@ export const chronicObstructivePulmonaryDiseaseModule = {
   title: "Chronic Obstructive Pulmonary Disease",
   source: "GOLD 2026 strategy and current US labeling",
   description: "Confirm persistent airflow obstruction, connect airway and alveolar injury to symptoms and progression, select bronchodilator and anti-inflammatory treatment by symptoms and exacerbation risk, restore function, and manage acute respiratory deterioration safely.",
-  topics: ["Diagnosis and etiotypes", "Assessment and risk", "Inhaled pharmacology", "Long-term treatment", "Rehabilitation and oxygen", "Exacerbations"],
+  topics: ["Disease biology", "Diagnosis and etiotypes", "Assessment and risk", "Inhaled pharmacology", "Advanced pharmacology", "Long-term treatment", "Rehabilitation and oxygen", "Exacerbations"],
   outcomes: [
     "Confirm COPD with post-bronchodilator spirometry in the appropriate clinical and exposure context.",
     "Describe airway, alveolar, vascular, developmental, genetic, and environmental contributors across the life course.",
@@ -16,6 +16,20 @@ export const chronicObstructivePulmonaryDiseaseModule = {
     "Differentiate an exacerbation from pneumonia, heart failure, pulmonary embolism, pneumothorax, and other mimics, then treat and prevent recurrence.",
   ],
   submodules: [
+    {
+      slug: "airway-alveolar-and-systemic-biology", title: "Airway, Alveolar, and Systemic Biology", visual: "copd-biology",
+      summary: "COPD emerges from interacting small-airway, alveolar, vascular, immune, and systemic processes. Mucus obstruction, loss of elastic recoil, gas trapping, diffusion impairment, and deconditioning create different clinical patterns.",
+      concepts: ["Small-airway disease", "Chronic bronchitis", "Emphysema", "Gas trapping and hyperinflation", "Systemic consequences"],
+      application: "Translate the dominant structural and physiologic process into symptoms, testing, functional limits, and a treatment plan rather than treating FEV1 as the entire disease.",
+      lesson: [
+        { heading: "Begin in the small airway", body: "Repeated inhaled injury activates epithelial and immune responses, increases mucus, disrupts ciliary clearance, thickens airway walls, and narrows bronchioles. Neutrophils, macrophages, lymphocytes, protease activity, oxidative stress, infection, and altered repair can all contribute. Chronic bronchitis describes cough and sputum clinically, but mucus burden and small-airway disease extend beyond that label." },
+        { heading: "Follow the loss of elastic recoil", body: "Emphysematous destruction removes alveolar surface area and the attachments that hold small airways open during expiration. Air leaves slowly, gas becomes trapped, and end-expiratory lung volume rises. Dynamic hyperinflation during activity can cause severe breathlessness even when resting oxygenation appears acceptable." },
+        { heading: "Connect ventilation to gas exchange", body: "Ventilation-perfusion mismatch, diffusion loss, hypoventilation, and pulmonary vascular change can produce hypoxemia and, in advanced disease, hypercapnia or pulmonary hypertension. Pulse oximetry cannot reveal carbon dioxide or acid-base status, so blood gas testing is required when ventilatory failure is possible." },
+        { heading: "Treat the disease outside the lung", body: "Inactivity, skeletal muscle dysfunction, weight loss, frailty, osteoporosis, cardiovascular disease, anxiety, depression, and social barriers amplify respiratory disability. Pulmonary rehabilitation, nutrition, comorbidity care, exposure reduction, and medication therapy operate on connected parts of the same illness." },
+      ],
+      keyPoints: ["Small-airway and alveolar disease coexist.", "Hyperinflation drives exertional dyspnea.", "Oximetry does not measure ventilation.", "Systemic burden is part of COPD care."],
+      check: { question: "Why can emphysema produce marked exertional dyspnea even when resting oxygen saturation is acceptable?", choices: ["Loss of elastic recoil and dynamic hyperinflation can sharply restrict inspiratory capacity during activity", "Resting oximetry measures every component of ventilatory mechanics", "Emphysema affects only mucus production", "FEV1 always normalizes during exercise"], answer: 0, rationale: "Gas trapping and rising end-expiratory volume can create severe mechanical limitation during exertion.", reviewHref: "#airway-alveolar-and-systemic-biology" },
+    },
     {
       slug: "definition-diagnosis-and-etiotypes", title: "Definition, Diagnosis, and Etiotypes", visual: "copd-diagnosis",
       summary: "COPD is a heterogeneous condition with chronic respiratory symptoms caused by airway and or alveolar abnormalities that produce persistent, often progressive airflow obstruction.",
@@ -57,6 +71,20 @@ export const chronicObstructivePulmonaryDiseaseModule = {
       ],
       keyPoints: ["LABA and LAMA are complementary.", "ICS targets exacerbation risk, not dyspnea alone.", "Roflumilast is not a bronchodilator.", "Ensifentrine is maintenance, not rescue."],
       check: { question: "Which statement about ensifentrine is correct?", choices: ["It is nebulized twice-daily maintenance therapy and does not replace rescue medication", "It is an oral rescue PDE4 inhibitor", "It is an inhaled corticosteroid", "It is indicated only for acute exacerbations"], answer: 0, rationale: "FDA labeling defines ensifentrine as adult maintenance treatment delivered by standard jet nebulizer.", reviewHref: "#bronchodilators-anti-inflammatory-drugs-and-devices" },
+    },
+    {
+      slug: "advanced-anti-inflammatory-and-phenotype-therapy", title: "Advanced Anti-Inflammatory and Phenotype Therapy", visual: "copd-advanced",
+      summary: "Persistent exacerbations after optimized bronchodilation require a phenotype and implementation review. ICS, roflumilast, macrolide prevention, and biologic therapy address different risk patterns and carry different harms.",
+      concepts: ["ICS response probability", "Roflumilast", "Azithromycin prevention", "Dupilumab", "Mepolizumab"],
+      application: "Define the unresolved exacerbation pattern, verify the current inhaled regimen, identify eosinophilic, chronic-bronchitic, infectious, or bronchiectatic traits, and select one advanced intervention with a measurable response plan.",
+      lesson: [
+        { heading: "Estimate corticosteroid benefit", body: "Prior exacerbations and blood eosinophils estimate the probability of ICS benefit. Benefit is generally greater at higher eosinophil counts and low below 100 cells per microliter. Review pneumonia, mycobacterial disease, oral candidiasis, dysphonia, bruising, bone, eye, metabolic, dose, and smoking risks. When ICS is indicated, triple LABA-LAMA-ICS is preferred over routine LABA-ICS." },
+        { heading: "Match roflumilast to chronic bronchitis", body: "Roflumilast is an oral PDE4 anti-inflammatory medicine for selected patients with severe airflow obstruction, chronic bronchitis, and recurrent exacerbations, especially after hospitalization. It is not a bronchodilator. Review hepatic function, low body weight, diarrhea, nausea, sleep, mood, suicidality, and interacting enzyme inducers before and during treatment." },
+        { heading: "Use chronic macrolide therapy deliberately", body: "Azithromycin may reduce exacerbations in selected patients, particularly former smokers, after optimized inhaled treatment. Before long-term use, review QT interval, rhythm and interacting drugs, hearing, liver function, sputum microbiology when indicated, nontuberculous mycobacteria, resistance pressure, bronchiectasis, and a planned duration and response audit." },
+        { heading: "Apply current biologic labels", body: "Dupilumab blocks IL-4 receptor alpha signaling and mepolizumab targets IL-5. Current US labeling supports add-on maintenance use in selected adults with inadequately controlled COPD and an eosinophilic phenotype. Neither treats acute bronchospasm. Confirm label eligibility, background therapy, exacerbations, eosinophil history, injection training, hypersensitivity, comorbidity, access, and response before continuing." },
+      ],
+      keyPoints: ["Eosinophils estimate ICS benefit.", "Roflumilast fits chronic bronchitis and recurrent attacks.", "Macrolide prevention needs resistance and cardiac review.", "Biologics follow current phenotype-specific labels."],
+      check: { question: "Which feature most strongly supports considering roflumilast after optimized inhaled therapy?", choices: ["Severe obstruction with chronic bronchitis and recurrent exacerbations", "Sudden isolated bronchospasm requiring immediate rescue", "Dyspnea with no exacerbation history and normal spirometry", "A desire to replace all inhaled bronchodilators"], answer: 0, rationale: "Roflumilast is a preventive anti-inflammatory option for a selected chronic-bronchitic exacerbation phenotype, not rescue treatment.", reviewHref: "#advanced-anti-inflammatory-and-phenotype-therapy" },
     },
     {
       slug: "initial-and-follow-up-pharmacologic-strategy", title: "Initial and Follow-Up Pharmacologic Strategy", visual: "copd-strategy",
@@ -105,6 +133,8 @@ export const chronicObstructivePulmonaryDiseaseModule = {
     { label: "GOLD 2026 Report and Pocket Guide", href: "https://goldcopd.org/2026-gold-report-and-pocket-guide/" },
     { label: "GOLD 2026 Key Changes Summary", href: "https://goldcopd.org/wp-content/uploads/2025/11/KEY-CHANGES-GOLD-2026-10Nov2025.pdf" },
     { label: "FDA Ohtuvayre Prescribing Information", href: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/217389s000lbl.pdf" },
+    { label: "FDA Dupixent Prescribing Information", href: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761055s072lbl.pdf" },
+    { label: "FDA Nucala Prescribing Information", href: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/125526s007lbl.pdf" },
     { label: "FDA Current Product Labeling", href: "https://labels.fda.gov/" },
     { label: "DailyMed Current Medication Labeling", href: "https://dailymed.nlm.nih.gov/dailymed/" },
   ],
