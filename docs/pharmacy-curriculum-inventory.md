@@ -2818,7 +2818,7 @@ Current source reconciliations:
 - Asymptomatic tick bites do not receive prophylaxis for RMSF, ehrlichiosis, or anaplasmosis. Prevention, mechanical removal, a 2-week symptom watch, convalescent specimen ownership, and public health reporting close the system.
 - The assessment now reaches the previously uncovered coinfection and differential lesson directly. Ixodes coinfection, Babesia hemolysis, Lyme manifestations, meningococcemia, sepsis, TTP, DIC, and parallel empiric coverage are classified and tested in that lesson rather than being hidden under organism or severity headings.
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 138-question assessment bank across all ten lessons.
-- Goodnotes remains unavailable because macOS reports a locked session. Any matching tickborne infection lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search for rickettsial disease, ehrlichiosis, anaplasmosis, and Rocky Mountain spotted fever found five matching pages, all within the RxPrep source already used to build the module, and no separate tickborne-infection lecture. The existing RxPrep and current CDC synthesis therefore covers the complete accessible source set.
 
 ### Lyme Disease
 
