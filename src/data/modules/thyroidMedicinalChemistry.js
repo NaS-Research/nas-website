@@ -6,7 +6,7 @@ export const thyroidMedicinalChemistryModule = {
   slug: "thyroid-medicinal-chemistry",
   number: "65",
   title: "Thyroid Medicinal Chemistry",
-  source: "Current NIH chemical records, thyroid receptor pharmacology, and US prescribing information",
+  source: "Complete pituitary and thyroid lecture, current NIH chemical records, thyroid receptor pharmacology, and US prescribing information",
   description: "Connect iodinated amino-acid chemistry to thyroid hormone synthesis, receptor activity, replacement products, antithyroid drugs, radioiodine, and clinically meaningful formulation behavior.",
   topics: ["Hormone biosynthesis", "Thyronine scaffold", "Stereochemistry and receptors", "Deiodination", "Replacement analogs", "Thionamides", "Iodine and radioiodine", "Formulation chemistry"],
   outcomes: [
