@@ -6,7 +6,7 @@ export const chronicKidneyDiseaseModule = {
   title: "Chronic Kidney Disease",
   source: "KDIGO 2024 CKD guidance and current FDA labeling",
   description: "Confirm chronic kidney disease, classify cause, filtration, and albuminuria, estimate progression risk, protect kidney and cardiovascular health, and build a monitored long-term care plan.",
-  topics: ["Definition and chronicity", "CGA classification", "Risk prediction", "Disease modification", "Diabetes and CKD", "Medication stewardship"],
+  topics: ["Definition and chronicity", "Detection and mechanism", "CGA classification", "Risk prediction", "Disease modification", "Treatment monitoring", "Medication stewardship"],
   outcomes: [
     "Confirm CKD from persistent structural or functional abnormalities and distinguish it from acute kidney disease.",
     "Classify CKD by cause, GFR category, and albuminuria category, then explain how the combined profile changes risk.",
@@ -29,6 +29,20 @@ export const chronicKidneyDiseaseModule = {
       ],
       keyPoints: ["One abnormal result is not chronicity.", "Kidney damage can exist with preserved eGFR.", "Cause is part of the diagnosis.", "Red flags redirect the workup."],
       check: { question: "Which finding can establish CKD despite an eGFR of 92 mL/min/1.73 m2?", choices: ["Persistent albuminuria for more than three months", "One creatinine value after dehydration", "Six hours of oliguria", "A transient urine dipstick after exercise"], answer: 0, rationale: "Persistent albuminuria is a marker of kidney damage and can establish CKD even when filtration is preserved.", reviewHref: "#definition-chronicity-and-cause" },
+    },
+    {
+      slug: "detection-mechanism-and-presentation", title: "Detection, Mechanism, and Presentation", visual: "ckd-mechanism",
+      summary: "CKD is often silent until filtration is substantially reduced. Detection begins with the right population, while mechanism explains why surviving nephrons can preserve function before progressive injury becomes clinically visible.",
+      concepts: ["Risk-based detection", "Hyperfiltration", "Maladaptive nephron response", "Silent progression", "Uremic presentation"],
+      application: "Identify who requires kidney testing, interpret a normal examination without false reassurance, and connect nephron loss to hyperfiltration, albuminuria, progressive fibrosis, and late systemic symptoms.",
+      lesson: [
+        { heading: "Test people at increased risk", body: "Use both a filtration estimate and urine albumin assessment in people at increased risk, including those with diabetes, hypertension, cardiovascular disease, prior AKI, structural or inherited kidney disease, obstruction, recurrent stones, systemic inflammatory disease, or relevant medication exposure. Type 2 diabetes warrants kidney assessment from diagnosis. Type 1 diabetes commonly begins annual assessment five years after diagnosis unless clinical findings justify earlier testing." },
+        { heading: "Follow the surviving nephron", body: "After nephron loss, remaining nephrons increase single-nephron filtration to preserve total GFR. Sustained intraglomerular pressure, angiotensin signaling, protein traffic, oxidative stress, inflammation, and growth-factor activity can turn compensation into podocyte injury, tubular stress, interstitial fibrosis, and further nephron loss." },
+        { heading: "Do not wait for symptoms", body: "People with G1 through G3 CKD are frequently asymptomatic. Edema, resistant hypertension, appetite loss, nausea, pruritus, sleep disturbance, cognitive change, neuropathic symptoms, dyspnea, and altered urine volume are more likely as disease advances, but none is a sensitive screening test. Laboratory surveillance should precede symptom-driven discovery." },
+        { heading: "Separate the syndrome from the number", body: "Advanced CKD affects sodium and water balance, potassium and acid-base regulation, erythropoiesis, mineral metabolism, drug handling, and cardiovascular health. Uremia is a clinical syndrome caused by retained solutes and systemic consequences, not a diagnosis made from one BUN, creatinine, or eGFR threshold." },
+      ],
+      keyPoints: ["Detection is risk based.", "Preserved total GFR can conceal nephron stress.", "Early CKD is commonly silent.", "Uremia is a syndrome, not a single laboratory cutoff."],
+      check: { question: "Why can CKD progress while a patient still feels well?", choices: ["Surviving nephrons can temporarily preserve filtration through compensatory hyperfiltration", "Kidney injury always causes immediate flank pain", "Albuminuria prevents nephron loss", "Serum creatinine directly measures fibrosis"], answer: 0, rationale: "Compensatory single-nephron hyperfiltration can preserve total filtration while maladaptive pressure and signaling continue injury.", reviewHref: "#detection-mechanism-and-presentation" },
     },
     {
       slug: "cga-classification-and-measurement", title: "CGA Classification and Measurement", visual: "ckd-cga",
@@ -85,6 +99,20 @@ export const chronicKidneyDiseaseModule = {
       ],
       keyPoints: ["SGLT2 benefit is not only glycemic.", "An early dip can be expected.", "Finerenone requires potassium surveillance.", "Layer therapies by phenotype and tolerance."],
       check: { question: "A stable patient has a small early eGFR fall after starting an SGLT2 inhibitor. What is the best initial interpretation?", choices: ["It may be an expected hemodynamic effect that requires context and follow-up", "It proves acute tubular necrosis", "The drug must always be stopped", "It means glucose control has failed"], answer: 0, rationale: "A modest early eGFR dip is expected with SGLT2 inhibition and should be interpreted with volume, symptoms, magnitude, and trajectory.", reviewHref: "#disease-modifying-pharmacotherapy" },
+    },
+    {
+      slug: "treatment-monitoring-and-response", title: "Treatment Monitoring and Response", visual: "ckd-monitoring",
+      summary: "A kidney-protective prescription is incomplete until expected changes, safety measurements, response thresholds, and ownership are documented.",
+      concepts: ["RAAS response", "Hyperkalemia mitigation", "SGLT2 safety", "Finerenone titration", "Response ownership"],
+      application: "Translate each disease-modifying therapy into a baseline assessment, timed laboratory plan, expected physiologic response, danger threshold, mitigation strategy, and explicit next action.",
+      lesson: [
+        { heading: "Monitor RAAS blockade as a pathway", body: "Before and after starting or increasing an ACE inhibitor or ARB, assess pressure, creatinine, potassium, volume, NSAID exposure, and interacting medicines. Recheck within two to four weeks, or sooner when risk is high. Continue when changes are expected and stable. A creatinine rise above 30 percent within four weeks prompts evaluation for volume depletion, medications, obstruction, or renal artery disease before a final dose decision." },
+        { heading: "Manage potassium before surrendering benefit", body: "When RAAS therapy causes hyperkalemia, review diet in context, constipation, supplements, salt substitutes, NSAIDs, trimethoprim, potassium-sparing drugs, acidosis, and volume status. Diuretics, bicarbonate for appropriate metabolic acidosis, and potassium binders may preserve indicated therapy. Reduce or stop treatment when hyperkalemia remains uncontrolled or symptomatic hypotension persists despite mitigation." },
+        { heading: "Pair SGLT2 benefit with practical safety", body: "Assess volume and diuretic burden, genital infection history, diabetes medicines, ketosis risk, fasting, and procedures. Counsel on genital hygiene, symptoms of infection, volume depletion, and ketoacidosis. Withhold during prolonged fasting, surgery, or critical illness, then document restart criteria. A reversible early eGFR dip usually does not require extra CKD monitoring by itself." },
+        { heading: "Use potassium to govern finerenone", body: "Confirm type 2 diabetes with CKD, persistent albuminuria, tolerated RAAS inhibition, eGFR eligibility, serum potassium, and absence of a strong CYP3A4 inhibitor. Select the labeled starting dose from eGFR, repeat potassium at about four weeks, and use the current label thresholds to continue, titrate, hold, or restart rather than improvising a fixed rule." },
+      ],
+      keyPoints: ["Every prescription needs a measurement plan.", "A creatinine change triggers context, not reflex discontinuation.", "Mitigate potassium when safe.", "Temporary holds require restart criteria."],
+      check: { question: "A patient's creatinine rises more than 30 percent within four weeks of ACE inhibitor titration. What should happen first?", choices: ["Evaluate volume status, interacting medicines, obstruction, and renovascular disease", "Permanently label ACE inhibitors as an allergy", "Add an ARB", "Ignore the change for one year"], answer: 0, rationale: "A rise beyond the expected range requires a structured search for reversible hemodynamic and obstructive causes before the long-term plan is decided.", reviewHref: "#treatment-monitoring-and-response" },
     },
     {
       slug: "medication-stewardship-and-longitudinal-care", title: "Medication Stewardship and Longitudinal Care", visual: "ckd-stewardship",
