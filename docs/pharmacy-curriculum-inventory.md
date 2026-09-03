@@ -2728,7 +2728,7 @@ Current source reconciliations:
 - Follow-up uses the same quantitative nontreponemal assay. Fourfold change is taught as two dilution steps, with early disease followed at 6 and 12 months and latent disease at 6, 12, and 24 months.
 - Partner windows, presumptive treatment after exposure within 90 days, HIV testing, PrEP, public-health reporting, barriers to care, and reinfection prevention close the system.
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 130-question assessment bank.
-- Goodnotes remains unavailable because macOS reports a locked session. Any matching syphilis lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search found thirteen focused syphilis pages, all within the complete RxPrep sequence, and no separate STI lecture, case, or associated document. The existing RxPrep, CDC laboratory, treatment, pregnancy, congenital-syphilis, follow-up, and public-health synthesis therefore covers the complete accessible source set without unsupported duplication.
 
 ### Gonococcal Infections
 
