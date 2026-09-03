@@ -2575,7 +2575,7 @@ Current source reconciliations:
 - Pediatric observation is limited to persistent illness with reliable reassessment. Severe or worsening pediatric disease receives antibiotics, and dose selection remains tied to current weight, formulation ratio, resistance risk, age, and local protocol.
 - Saline safety, intranasal corticosteroid technique, analgesia, decongestant limits, allergy phenotyping, doxycycline constraints, macrolide resistance, and FDA fluoroquinolone reserve language are integrated into a single selection system.
 - It contains ten focused lessons, ten responsive diagrams, ten embedded checks, and a validated 168-question assessment bank.
-- Goodnotes was retried after the user reported restored access, but macOS still reported a locked session. Any matching sinusitis lecture will receive a documented reconciliation pass after manual unlock.
+- Goodnotes source reconciliation is complete. A restored library-wide search found two focused acute-bacterial-rhinosinusitis pages in the complete RxPrep sequence and no dedicated sinusitis lecture. Other matches concern chronic rhinosinusitis as an asthma or cystic-fibrosis comorbidity and sinusitis symptoms as referral signals in allergic-rhinitis self-care. Those disease-specific contexts remain assigned to their respective modules and do not alter the acute bacterial treatment pathway, so no unsupported duplicate content was added.
 
 ### Community-Acquired Pneumonia in Adults
 
