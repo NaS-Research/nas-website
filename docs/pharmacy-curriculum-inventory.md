@@ -1383,7 +1383,7 @@ Target modules:
 5. Urinary Incontinence (`built`, 108 question bank; source reconciliation complete)
 6. Osteoporosis (`built`, 128 question bank; three dedicated source documents reconciled)
 7. Genitourinary Medicinal Chemistry (`built`, 144 question bank; 52-page dedicated source reconciled)
-8. Vaginitis and Vulvovaginal Infections (`built`, 132 question bank; dedicated Goodnotes lecture reconciliation pending)
+8. Vaginitis and Vulvovaginal Infections (`built`, 148 question bank; two dedicated source documents reconciled)
 
 ### DAST V
 
@@ -1841,7 +1841,7 @@ Current source reconciliations:
 
 ### Vaginitis and Vulvovaginal Infections
 
-The vaginitis and vulvovaginal infections module includes symptom-based diagnostic framing; pH and wet-mount limits; NAAT, culture, and species testing; noninfectious and upper-tract red flags; bacterial vaginosis ecology, Amsel criteria, Nugent scoring, and treatment; oral and intravaginal metronidazole; clindamycin product vehicles; tinidazole; secnidazole; recurrent BV; suppressive regimens; the 2025 ACOG partner-therapy update; trichomoniasis diagnosis, population-specific treatment, partner therapy, retesting, and resistance evaluation; Candida colonization; uncomplicated and complicated VVC; OTC triage; topical azoles; oral fluconazole; recurrent, severe, and non-albicans VVC; ibrexafungerp; oteseconazole; pregnancy; lactation; stigma-aware communication; and longitudinal follow-up. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 132-question assessment bank across 33 concepts and four reasoning levels.
+The vaginitis and vulvovaginal infections module includes symptom-based diagnostic framing; pH and wet-mount limits; NAAT, culture, and species testing; noninfectious and upper-tract red flags; bacterial vaginosis ecology, Amsel criteria, Nugent scoring, and treatment; oral and intravaginal metronidazole; clindamycin product vehicles; tinidazole; secnidazole; recurrent BV; suppressive regimens; the 2025 ACOG partner-therapy update; trichomoniasis diagnosis, population-specific treatment, partner therapy, retesting, and resistance evaluation; Candida colonization; uncomplicated and complicated VVC; OTC triage; topical azoles; oral fluconazole; recurrent, severe, and non-albicans VVC; ibrexafungerp; oteseconazole; pregnancy; lactation; stigma-aware communication; and longitudinal follow-up. It contains 10 focused lessons, 10 original interactive diagrams, 10 embedded checks, and a 148-question assessment bank across 37 concepts and four reasoning levels.
 
 Current source reconciliations:
 
@@ -1853,10 +1853,12 @@ Current source reconciliations:
 - Trichomoniasis uses multidose metronidazole for women, single-dose metronidazole for men, concurrent partner treatment, temporary abstinence, STI evaluation, three-month retesting for women, and reinfection assessment before resistance escalation.
 - Candida detection without compatible symptoms is treated as colonization rather than an indication. Complicated disease includes recurrent, severe, non-albicans, diabetic, immunocompromised, and immunosuppressed phenotypes and triggers organism-directed testing.
 - OTC access does not bypass triage. Exact product strength, duration, placement, vehicle, barrier compatibility, interaction review, treatment-failure rules, and a return pathway are part of every topical or oral regimen.
+- The complete 11-page gynecologic disorders source and 20-page sexual and reproductive health source were reviewed visually. Their reliable lower-tract versus upper-tract distinction, structured pharmacy self-care assessment, first-episode exclusion, exact-course counseling, and escalation thresholds were reconciled into original NaS lessons and assessment concepts.
 - Recurrent C. albicans VVC uses diagnostic confirmation, adequate induction, and time-limited maintenance. Severe and non-albicans disease receive phenotype and species-aware therapy, while intravaginal boric acid is taught with never-oral, storage, pregnancy, and specialist safeguards.
 - Current ibrexafungerp labeling supplies acute and monthly recurrent-disease regimens, boxed embryo-fetal safeguards, pregnancy assessment, contraception, and CYP3A boundaries. Current oteseconazole labeling is restricted to females who are not of reproductive potential and includes food, BCRP, kidney, liver, pregnancy, and lactation boundaries.
 - Retired pregnancy letters are absent. Pregnancy uses seven days of topical azole therapy for VVC under current CDC guidance, while BV, trichomoniasis, lactation, partner management, and follow-up remain syndrome and product specific.
-- Goodnotes was rechecked before this build, but macOS still reported a locked desktop session. A dedicated vaginitis or infectious-disease lecture will receive a documented reconciliation pass when direct access is restored.
+- Dedicated source reconciliation is complete. The focused audit confirmed 10 lessons, 148 questions, valid remediation routing, no hard errors, no thin lessons, and at least eight questions mapped to every lesson.
+- The full curriculum audit passed with 221 modules, 28,848 questions, no hard errors, and no thin lessons. The production build passed with 549 generated static pages.
 
 ### Cervicitis and Pelvic Inflammatory Disease
 
