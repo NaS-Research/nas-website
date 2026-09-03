@@ -283,14 +283,15 @@ This inventory records the source material available in the founder's Goodnotes 
 ### Antihypertensive Medicinal Chemistry
 
 - Course scope: ACE inhibitor zinc-binding motifs, peptide-mimetic stereochemistry, active drug and ester-prodrug design, ARB acidic pharmacophores, hydrophobic recognition, active metabolites, direct renin inhibition, dihydropyridine and nondihydropyridine calcium-channel blocker scaffolds, central adrenergic activation, direct vasodilator chemistry, salts, stereochemistry, formulations, and structure-to-clinic boundaries
+- Course source: the complete 20-page Hypertension and Antihypertensive Agents medicinal chemistry source was recovered from the local Goodnotes library, rendered page by page, and visually reviewed September 3, 2026
 - Cross reference completed: RxPrep NAPLEX 2023 antihypertensive, cardiovascular, renal, formulation, interaction, pharmacokinetic, and medicinal-chemistry scope
-- Current references reviewed: NIH PubChem chemical records for captopril, lisinopril, losartan, aliskiren, amlodipine, and hydralazine, plus current FDA Tryvio labeling
+- Current references reviewed: NIH PubChem chemical records for captopril, lisinopril, losartan, aliskiren, amlodipine, hydralazine, prazosin, labetalol, and guanethidine, plus current FDA Tryvio labeling
 - Learning structure: six lessons, six native zinc-binding, RAAS ligand, calcium-channel scaffold, central access, direct-vasodilator, and product-integration diagrams, and six embedded knowledge checks
-- Assessment: 104 original questions spanning zinc coordination, thiol chemistry, ester prodrugs, active nonprodrugs, phosphinate binding, tetrazole and carboxylate recognition, biphenyl hydrophobic domains, active metabolites, renin peptidomimetic design, dihydropyridine oxidation, amlodipine ionization, release systems, central access, false-transmitter activation, aryloxypropanolamines, hydralazine acetylation, minoxidil sulfation, nitro donor chemistry, endothelin antagonism, salts, stereochemistry, active species, and evidence boundaries; ten sampled without replacement per attempt with answer order randomized
-- Source reconciliation: class suffixes were not treated as proof of prodrug status; losartan was described as an active parent with a more potent active metabolite; high target affinity was separated from oral exposure; calcium-channel formulation was treated as part of pharmacokinetics; reactive and donor chemistry was paired with product-specific toxicity; structural predictions were explicitly limited by labeling and clinical evidence
-- Automated verification: 104 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 12 questions mapped to every lesson, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed August 27, 2026 with 547 static pages generated
-- Goodnotes note: the dedicated antihypertensive medicinal-chemistry lecture remains pending because the Mac is locked; its eventual review will be recorded as a formal reconciliation pass
+- Assessment: 116 original questions spanning zinc coordination, thiol chemistry, ester prodrugs, active nonprodrugs, phosphinate binding, tetrazole and carboxylate recognition, biphenyl hydrophobic domains, active metabolites, renin peptidomimetic design, dihydropyridine oxidation, amlodipine ionization, release systems, central access, false-transmitter activation, aryloxypropanolamines, labetalol stereochemistry, quinazoline alpha-1 blockade, guanethidine neuronal uptake, hydralazine acetylation, minoxidil sulfation, nitro donor chemistry, endothelin antagonism, salts, stereochemistry, active species, and evidence boundaries; ten sampled without replacement per attempt with answer order randomized
+- Source reconciliation: class suffixes were not treated as proof of prodrug status; losartan was described as an active parent with a more potent active metabolite; high target affinity was separated from oral exposure; calcium-channel formulation was treated as part of pharmacokinetics; labetalol's four-stereoisomer mixture, quinazoline alpha-1 blocker design, and transporter-dependent guanethidine mechanism were added; postsynaptic receptor blockade was separated from presynaptic transmitter depletion; reactive and donor chemistry was paired with product-specific toxicity; structural predictions were explicitly limited by labeling and clinical evidence. Older product availability, fixed pharmacokinetic values, stereoisomer marketing claims, and broad class equivalence statements were not carried forward.
+- Automated verification: 116 unique questions, no duplicate answer choices, valid lesson links, six diagrams, at least 12 questions mapped to every lesson, and no em dash or en dash characters in public prose
+- Build verification: Next.js production build passed September 3, 2026 with 549 static pages generated after complete source reconciliation
+- Goodnotes reconciliation: complete for the dedicated 20-page antihypertensive medicinal chemistry source
 
 ### Dyslipidemia Pathophysiology and Risk
 
@@ -1188,7 +1189,7 @@ Target modules:
 1. Hypertension Foundations and Chronic Therapy (`built`, 116 question bank; Goodnotes reconciliation complete)
 2. Resistant and Secondary Hypertension (`built`, 116 question bank; Goodnotes reconciliation complete)
 3. Hypertensive Emergencies (`built`, 116 question bank; Goodnotes reconciliation complete)
-4. Antihypertensive Medicinal Chemistry (`built`, 104 question bank; Goodnotes reconciliation pending)
+4. Antihypertensive Medicinal Chemistry (`built`, 116 question bank; Goodnotes reconciliation complete)
 
 ### DAST III
 
