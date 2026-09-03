@@ -292,6 +292,12 @@ Each module assessment randomly draws 10 questions from its complete bank throug
 
 Continue through the restored Goodnotes library by identifying the next accessible source that has not already received a complete reconciliation. Reconcile dedicated course material with the existing RxPrep and current-guideline synthesis before advancing through remaining incomplete modules.
 
+## Curriculum contract audit
+
+- The automated pharmacy audit now validates the complete module contract across all 222 modules. It checks module identity and taxonomy, source statements, descriptions, topics, learning outcomes, lesson structure, original visual identifiers, clinical applications, decision points, embedded checks, assessment explanations, answer integrity, lesson remediation links, minimum question-bank size, per-lesson assessment coverage, authoritative reference URL shape, educational safety framing, and prohibited dash characters in public learning prose.
+- The module reader now always presents an educational-use notice. Modules with a source-specific disclaimer retain it, while every other module receives a consistent platform notice that the material is not patient-specific medical advice and does not replace current labeling, policy, guidelines, or qualified judgment.
+- The strengthened audit confirms 222 modules, 29,348 questions, no structural errors, and no thin lessons. It also exposes a focused source-metadata backlog: 17 modules contain synthesized source statements but do not yet expose module-level reference links. These modules remain queued for authoritative reference reconciliation rather than being treated as complete by the goal-level audit.
+
 ## Remaining-work rule
 
 The broader goal remains active until every accessible pharmacy and DAST source has been inventoried and converted into focused, clinically named, fully sourced modules with original visuals, embedded checks, and at least 100 questions per completed module.

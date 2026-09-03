@@ -3198,3 +3198,10 @@ The first source-complete sequence will be built in this order:
 6. Parenteral Nutrition Calculations
 
 This order follows prerequisite relationships while keeping every topic in its own module.
+
+## Goal-level verification status
+
+- Current inventory: 222 clinically named modules and 29,348 original assessment questions.
+- The curriculum contract audit now verifies taxonomy, module and lesson structure, source statements, learning outcomes, visuals, embedded checks, assessment integrity, explanations, remediation links, educational safety framing, and public prose punctuation.
+- Current automated result: no structural errors and no lessons below the eight-question assessment-coverage threshold.
+- Authoritative reference-link reconciliation remains open for 17 modules whose source syntheses are present but whose module pages do not yet expose module-level reference links. The audit reports these separately as source gaps so they remain visible in the completion queue.

@@ -679,6 +679,11 @@ export default async function PharmacyModulePage({ params }) {
             <ol>{module.references.map((reference) => <li key={reference.href}><a href={reference.href} target="_blank" rel="noreferrer">{reference.label}<span aria-hidden="true">↗</span></a></li>)}</ol>
           </section>}
 
+          <aside className="lesson-disclaimer">
+            <strong>Educational use only</strong>
+            <p>{module.disclaimer || "This module supports advanced education and is not patient-specific medical advice. It does not replace current prescribing information, institutional policy, clinical guidelines, or qualified professional judgment."}</p>
+          </aside>
+
           <nav className="pharmacy-module-sequence" aria-label="Module sequence">
             {previous ? <Link href={`/learn/pharmacy/modules/${previous.slug}`}><span>Previous</span><strong>{previous.title}</strong></Link> : <span />}
             {next ? <Link href={`/learn/pharmacy/modules/${next.slug}`}><span>Next</span><strong>{next.title}</strong></Link> : <Link href="/learn/pharmacy/review"><span>Next</span><strong>Final review</strong></Link>}
