@@ -6,7 +6,7 @@ export const asthmaModule = {
   title: "Asthma",
   source: "GINA 2026 strategy and current FDA labeling",
   description: "Confirm variable expiratory airflow, connect airway inflammation and bronchoconstriction to treatment, choose an inhaled corticosteroid-containing strategy, teach the actual device, prevent exacerbations, and phenotype severe disease before biologic therapy.",
-  topics: ["Diagnosis and phenotype", "Control and risk", "Pharmacology and devices", "Long-term strategy", "Severe asthma", "Exacerbations"],
+  topics: ["Airway biology", "Diagnosis and phenotype", "Control and risk", "Pharmacology and devices", "Long-term strategy", "Special populations", "Severe asthma", "Exacerbations"],
   outcomes: [
     "Confirm asthma from variable respiratory symptoms and objective variable expiratory airflow while evaluating important mimics.",
     "Separate current symptom control from future exacerbation, airflow, medication, and mortality risk.",
@@ -16,6 +16,20 @@ export const asthmaModule = {
     "Assess and treat acute exacerbations, recognize anaphylaxis and impending respiratory failure, and construct a written action and follow-up plan.",
   ],
   submodules: [
+    {
+      slug: "airway-biology-and-disease-expression", title: "Airway Biology and Disease Expression", visual: "asthma-biology",
+      summary: "Asthma is a variable inflammatory airway disorder. Bronchoconstriction, edema, mucus, hyperresponsiveness, and structural remodeling interact, but their relative importance differs among people and across time.",
+      concepts: ["Airway inflammation", "Bronchoconstriction", "Hyperresponsiveness", "Mucus and edema", "Remodeling"],
+      application: "Connect symptoms and airflow findings to the airway process most likely to be active, then explain why rapid bronchodilation and sustained anti-inflammatory treatment solve different parts of the disease.",
+      lesson: [
+        { heading: "Follow the inflammatory signal", body: "Airway epithelial injury and immune signaling recruit mast cells, eosinophils, lymphocytes, and other inflammatory cells. Type 2 pathways often involve IgE, interleukin 4, interleukin 5, interleukin 13, and epithelial alarmins such as TSLP. Asthma can also occur with low or suppressed Type 2 biomarkers, so one laboratory value does not define the entire disease." },
+        { heading: "Separate narrowing from inflammation", body: "Bronchial smooth muscle contraction can narrow the airway within minutes, while mucosal edema, mucus, and inflammatory signaling prolong obstruction and increase sensitivity to triggers. A beta2 agonist may rapidly improve airflow, but symptom relief does not prove that airway inflammation or future exacerbation risk is controlled." },
+        { heading: "Understand hyperresponsiveness", body: "Inflamed airways may constrict excessively after allergens, viral infection, exercise, cold air, smoke, occupational exposure, or irritants. The trigger does not create the diagnosis by itself. The clinical pattern still requires variable symptoms and objective evidence of variable expiratory airflow whenever confirmation is feasible." },
+        { heading: "Prevent structural loss", body: "Repeated injury can produce smooth muscle growth, subepithelial fibrosis, vascular change, mucus gland enlargement, and less reversible airflow limitation. Early control, avoidance of harmful exposure, and prevention of exacerbations protect function even when the patient feels well between episodes." },
+      ],
+      keyPoints: ["Narrowing and inflammation are related but distinct.", "Trigger sensitivity reflects airway hyperresponsiveness.", "Biomarkers describe traits, not the whole diagnosis.", "Exacerbation prevention protects long-term function."],
+      check: { question: "Why can albuterol improve symptoms without controlling the central disease process?", choices: ["It relaxes airway smooth muscle but does not provide sustained anti-inflammatory control", "It permanently removes airway mucus glands", "It blocks every Type 2 cytokine", "It reverses established fibrosis"], answer: 0, rationale: "Rapid bronchodilation relieves smooth muscle constriction, while corticosteroid-containing therapy addresses inflammatory risk.", reviewHref: "#airway-biology-and-disease-expression" },
+    },
     {
       slug: "definition-diagnosis-and-phenotype", title: "Definition, Diagnosis, and Phenotype", visual: "asthma-diagnosis",
       summary: "Asthma combines variable respiratory symptoms with variable expiratory airflow. Inflammation, hyperresponsiveness, bronchoconstriction, mucus, and remodeling vary across patients and over time.",
@@ -57,6 +71,20 @@ export const asthmaModule = {
       ],
       keyPoints: ["Bronchodilation is not inflammation control.", "Only rapid-onset formoterol supports selected MART regimens.", "LABA never stands alone.", "The device is part of the dose."],
       check: { question: "Why can budesonide-formoterol support a reliever strategy while an ICS-salmeterol product cannot be substituted directly?", choices: ["Formoterol has a rapid onset suitable for symptom relief", "Salmeterol is a corticosteroid", "Budesonide is a SABA", "Formoterol has no beta2 activity"], answer: 0, rationale: "Formoterol combines rapid bronchodilator onset with long duration, unlike slower-onset LABAs.", reviewHref: "#airway-pharmacology-and-inhaler-delivery" },
+    },
+    {
+      slug: "adjunct-drugs-safety-and-monitoring", title: "Adjunct Drugs, Safety, and Monitoring", visual: "asthma-adjuncts",
+      summary: "Add-on medicines target different pathways and carry different monitoring burdens. Their role is narrower than core inhaled corticosteroid-containing treatment, and benefit must be weighed against toxicity, interactions, and treatment complexity.",
+      concepts: ["LAMA", "Leukotriene modifiers", "Theophylline", "Systemic corticosteroids", "Medication triggers"],
+      application: "Identify the clinical reason for every add-on, screen its highest consequence harms and interactions, define a response measure, and remove treatment that adds burden without meaningful benefit.",
+      lesson: [
+        { heading: "Add muscarinic blockade selectively", body: "Ipratropium adds short-term bronchodilation during selected severe exacerbations. Tiotropium and other approved long-acting muscarinic options can be added for persistent uncontrolled asthma in appropriate ages and devices, but expected benefit is generally modest. Review anticholinergic effects, glaucoma exposure, urinary retention, device use, and duplication." },
+        { heading: "Use leukotriene therapy with an explicit safety conversation", body: "Montelukast blocks the cysteinyl leukotriene receptor and may help selected patients with asthma, exercise-related symptoms, allergic rhinitis, or aspirin-exacerbated respiratory disease. It is generally less effective than ICS for preventing exacerbations. FDA requires a boxed warning for serious neuropsychiatric events, so discuss behavioral and mood changes before prescribing and reassess promptly if they occur." },
+        { heading: "Respect narrow therapeutic exposure", body: "Theophylline inhibits phosphodiesterase and has other airway effects, but its limited benefit, variable clearance, extensive interactions, and concentration-related toxicity restrict routine use. Fever, smoking changes, liver or heart disease, age, and CYP inhibitors can raise exposure. Nausea, tremor, tachyarrhythmia, and seizures may signal toxicity and require urgent evaluation." },
+        { heading: "Limit systemic corticosteroid harm", body: "Short systemic corticosteroid courses can be lifesaving in significant exacerbations, but cumulative exposure contributes to hyperglycemia, infection, mood effects, hypertension, bone loss, cataract, adrenal suppression, and other harm. Repeated courses should trigger a prevention review, optimization of inhaled treatment, and specialist evaluation when appropriate." },
+      ],
+      keyPoints: ["Add-ons need a defined purpose.", "Montelukast requires neuropsychiatric counseling.", "Theophylline toxicity is concentration related.", "Repeated steroid bursts signal preventable risk."],
+      check: { question: "Which change can substantially increase theophylline exposure in a previously stable patient?", choices: ["Stopping cigarette smoking while the dose remains unchanged", "Adding a spacer to an ICS inhaler", "Rinsing after inhaled corticosteroid use", "Changing from one peak-flow meter to another"], answer: 0, rationale: "Smoking induces theophylline clearance, so stopping smoking without reassessment can raise concentrations and toxicity risk.", reviewHref: "#adjunct-drugs-safety-and-monitoring" },
     },
     {
       slug: "stepwise-controller-and-reliever-strategy", title: "Stepwise Controller and Reliever Strategy", visual: "asthma-strategy",
@@ -106,6 +134,7 @@ export const asthmaModule = {
     { label: "GINA 2026 Summary Guide", href: "https://ginasthma.org/2026-gina-summary-guide/" },
     { label: "GINA 2026 Severe Asthma Guide", href: "https://ginasthma.org/reports/" },
     { label: "FDA Airsupra Prescribing Information", href: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/214070s001lblCorrected.pdf" },
+    { label: "FDA Montelukast Drug Safety Communication", href: "https://www.fda.gov/drugs/drug-safety-and-availability/fda-requires-boxed-warning-about-serious-mental-health-side-effects-asthma-and-allergy-drug" },
     { label: "FDA Current Asthma Product Labeling", href: "https://nctr-crs.fda.gov/fdalabel/ui/search" },
     { label: "DailyMed Current Medication Labeling", href: "https://dailymed.nlm.nih.gov/dailymed/" },
   ],
