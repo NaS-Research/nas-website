@@ -1070,7 +1070,8 @@ This inventory records the source material available in the founder's Goodnotes 
 - Assessment: 116 original questions, ten sampled without replacement per attempt with answer order randomized
 - Source reconciliation: psychosis was treated as a syndrome requiring longitudinal differential diagnosis; positive, negative, cognitive, mood, catatonic, and functional domains remain distinct; generation labels do not replace agent-specific risk assessment; movement syndromes require identification before treatment; clozapine is offered after two adequate trials and monitoring extends beyond ANC; current prescribing no longer requires obsolete REMS enrollment; each LAI retains product-specific loading, overlap, organ, observation, and missed-dose rules; acute agitation care begins with de-escalation and cause assessment; tobacco combustion rather than nicotine drives CYP1A2 induction; formulations are not treated as milligram-interchangeable; dementia-related psychosis mortality risk, Parkinson motor risk, and reproductive context remain explicit; and recovery includes practical access, function, physical health, crisis planning, and named transition ownership
 - Automated verification: 116 unique question IDs, four unique choices per question, valid answer indexes, explanations, valid links to all twelve lessons, at least eight questions mapped to every lesson, twelve diagrams, and no em dash or en dash characters in public prose
-- Build verification: Next.js production build passed September 2, 2026 with 547 static pages generated
+- Build verification: Next.js production build passed September 2, 2026 with 550 static pages generated
+- Goodnotes reconciliation: complete; RxPrep was the only dedicated schizophrenia and antipsychotic teaching source in the restored library, while all other matches were differential-diagnosis, shared-genetics, comorbidity, interaction, or medication context
 
 ### Bipolar Disorder
 
