@@ -38,7 +38,7 @@ const slides = [
 export default function HeroSection() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [manualPaused, setManualPaused] = useState(false);
-  const [interactionPaused, setInteractionPaused] = useState(false);
+  const [focusPaused, setFocusPaused] = useState(false);
   const [pageHidden, setPageHidden] = useState(false);
   const [reduceMotion, setReduceMotion] = useState(false);
 
@@ -58,12 +58,12 @@ export default function HeroSection() {
   }, []);
 
   useEffect(() => {
-    if (manualPaused || interactionPaused || pageHidden || reduceMotion) return undefined;
+    if (manualPaused || focusPaused || pageHidden || reduceMotion) return undefined;
     const timer = window.setTimeout(() => {
       setActiveIndex((current) => (current + 1) % slides.length);
-    }, 7000);
+    }, 5500);
     return () => window.clearTimeout(timer);
-  }, [activeIndex, interactionPaused, manualPaused, pageHidden, reduceMotion]);
+  }, [activeIndex, focusPaused, manualPaused, pageHidden, reduceMotion]);
 
   const activeSlide = slides[activeIndex];
 
@@ -106,11 +106,9 @@ export default function HeroSection() {
       role="region"
       aria-roledescription="carousel"
       aria-label="Featured NaS Research"
-      onMouseEnter={() => setInteractionPaused(true)}
-      onMouseLeave={() => setInteractionPaused(false)}
-      onFocusCapture={() => setInteractionPaused(true)}
+      onFocusCapture={() => setFocusPaused(true)}
       onBlurCapture={(event) => {
-        if (!event.currentTarget.contains(event.relatedTarget)) setInteractionPaused(false);
+        if (!event.currentTarget.contains(event.relatedTarget)) setFocusPaused(false);
       }}
     >
       <div className="home-mark-hero__atmosphere" aria-hidden="true" />
