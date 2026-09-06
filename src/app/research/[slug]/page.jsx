@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Footer from "@/components/Footer";
 import CortexNativeVisual from "@/components/research/CortexNativeVisual";
+import DenialsWorkflowFigure from "@/components/research/DenialsWorkflowFigure";
 import PublicationActions from "@/components/research/PublicationActions";
 import { getResearchItem, researchItems } from "@/data/researchLibrary";
 
@@ -36,6 +37,29 @@ export async function generateMetadata({ params }) {
     title: `${item.title} | NaS Research`,
     description: item.abstract,
     alternates: { canonical: `/research/${item.slug}` },
+    openGraph: {
+      title: item.title,
+      description: item.abstract,
+      url: `/research/${item.slug}`,
+      siteName: "NaS Research",
+      type: "article",
+      publishedTime: item.dateISO,
+      authors: item.authors,
+      images: [
+        {
+          url: "/og.png",
+          width: 1200,
+          height: 630,
+          alt: `${item.title} by NaS Research`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: item.title,
+      description: item.abstract,
+      images: ["/og.png"],
+    },
   };
 }
 
@@ -156,6 +180,7 @@ export default async function ResearchPublicationPage({ params }) {
               {(section.blocks ?? section.paragraphs).map((block, index) => (
                 <PublicationBlock block={block} key={`${section.id}-${index}`} />
               ))}
+              {item.workflowFigureSection === section.id && <DenialsWorkflowFigure />}
               {item.visualsBySection?.[section.id]?.map((visual) => (
                 <CortexNativeVisual visual={visual} key={visual.kind === "table" ? visual.number : visual.title} />
               ))}
@@ -166,7 +191,7 @@ export default async function ResearchPublicationPage({ params }) {
             <section id="sources" className="publication-section publication-sources">
               <h2>Sources and further reading</h2>
               <p>
-                This essay draws on current institutional, government, and regional sources. Links open in a new tab.
+                This publication draws on the institutional and government sources listed below. Links open in a new tab.
               </p>
               <ol>
                 {item.sources.map((source) => (
@@ -178,6 +203,17 @@ export default async function ResearchPublicationPage({ params }) {
                   </li>
                 ))}
               </ol>
+            </section>
+          )}
+
+          {item.collaboration && (
+            <section className="publication-collaboration" aria-labelledby="publication-collaboration-title">
+              <p className="publication-section-label">{item.collaboration.eyebrow}</p>
+              <h2 id="publication-collaboration-title">{item.collaboration.title}</h2>
+              <p>{item.collaboration.body}</p>
+              <Link className="publication-collaboration__action" href={item.collaboration.href}>
+                {item.collaboration.label} <span aria-hidden="true">↗</span>
+              </Link>
             </section>
           )}
 

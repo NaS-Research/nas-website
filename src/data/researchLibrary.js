@@ -1,7 +1,9 @@
 import { cortexPaperSections } from "@/data/cortexPaper";
 import { cortexNativeVisualsBySection } from "@/data/cortexNativeVisuals";
+import { denialsRelease } from "@/data/denialsRelease";
 
 export const researchItems = [
+  denialsRelease,
   {
     slug: "introducing-nas-cortex",
     title: "The NaS Cortex: A Knowledge Architecture for the Life Sciences",
