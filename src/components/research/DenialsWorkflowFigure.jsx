@@ -4,7 +4,7 @@ const stages = [
   { number: "03", title: "Evidence", detail: "Link support and expose what is missing" },
   { number: "04", title: "Human review", detail: "Approve the clinical and operational assertions" },
   { number: "05", title: "Appeal", detail: "Submit through the customer's authorized channel" },
-  { number: "06", title: "Outcome", detail: "Reconcile the decision and verified payment" },
+  { number: "06", title: "Outcome", detail: "Reconcile the decision and reported payment" },
   { number: "07", title: "Prevention", detail: "Turn recurring causes into upstream tasks" },
 ];
 

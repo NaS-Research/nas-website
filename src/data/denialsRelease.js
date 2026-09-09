@@ -6,7 +6,7 @@ export const denialsRelease = {
   area: "Healthcare Operations",
   date: "September 5, 2026",
   dateISO: "2026-09-05",
-  version: "1.0",
+  version: "1.1",
   authors: ["NaS Research"],
   readTime: "12 min read",
   pdfUrl: "/research/papers/introducing-nas-denials.pdf",
@@ -19,7 +19,7 @@ export const denialsRelease = {
     "A denial should become a traceable case with a policy, an evidence record, a human decision, and a measurable outcome.",
   pullQuoteAttribution: "NaS Research",
   publicationNote:
-    "Published September 5, 2026. Public sources and repository evidence were rechecked on that date. The PDF is the version of record. Product status and limitations are stated as of publication and will change only through versioned updates.",
+    "Published September 5, 2026. Public sources and repository evidence were rechecked on that date. Version 1.1, revised September 8, 2026: clarified consumer appeal statistics and the distinction between remittance-reported payments and verified cash receipts. Engineering results remain dated September 5, 2026. The PDF is the version of record. Product status and limitations are stated as of publication and will change only through versioned updates.",
   collaboration: {
     eyebrow: "Design partner release",
     title: "Help test NaS Denials in a real specialty workflow",
@@ -34,7 +34,7 @@ export const denialsRelease = {
       title: "1 Payment friction after care",
       paragraphs: [
         "The United States spent $5.3 trillion on health care in 2024. Hospital care and physician and clinical services accounted for approximately $2.7 trillion of that total. The financial system surrounding that care remains fragmented across clinical records, claim transactions, clearinghouses, payer rules, remittance files, portals, faxes, and manual work queues.",
-        "Claims denials are one visible result. KFF found that HealthCare.gov insurers denied 20 percent of in-network claims in 2023, although the rate varied widely by insurer and state. Fewer than 1 percent of those denied claims were appealed. These Marketplace figures should not be treated as a universal denial rate for every payer or provider, but they show the scale and variability of payment friction.",
+        "KFF found that HealthCare.gov insurers ultimately denied 20 percent of reported in-network claims in 2023. Consumers internally appealed fewer than 1 percent of those denials. These figures do not measure specialty-practice appeal rates or the share of claims recoverable through NaS. Claims initially denied but subsequently resubmitted and paid are excluded from KFF's reported denial rate.",
         "The cost extends beyond unpaid claims. In its 2026 Costs of Caring report, the American Hospital Association estimated that hospitals spent nearly $18 billion overturning denials in 2025. In its 2024 Index, CAQH estimated a $20.5 billion annual savings opportunity from moving the medical and dental administrative transactions it studied from manual or partially electronic modes to fully electronic transactions. Neither estimate measures the market for NaS Denials, but both show the scale of administrative payment friction. The exact opportunity differs by organization, while the operating problem is familiar: staff must determine what happened, locate the governing rule, reconstruct the record, meet a deadline, and prove the eventual financial result.",
       ],
     },
@@ -60,7 +60,8 @@ export const denialsRelease = {
       title: "4 The operating workflow",
       paragraphs: [
         "The first product is a managed software workflow. NaS and the customer define one exact queue, use controlled file exports before deep integration, and keep the customer's existing staff responsible for decisions and submissions.",
-        "● Intake controlled 837 claim files or claim exports, 835 remittances, denial letters, authorization records, governed policy material, and relevant chart documents. Production use of X12 transactions will require an approved validation service and deployment.● Reconcile every accepted source record and preserve its hash and location.● Classify the denial and select the exact payer, product, jurisdiction, policy version, procedure scope, and appeal level.● Show evidence with page or field citations and label missing, inaccessible, uncertain, or contradictory information.● Route the case to a qualified reviewer and require separate approval before a packet can be treated as ready.● Record external submission and payer decisions as human attestations rather than claiming the software submitted them.● Count recovery only when a matching remittance supports incremental, payment-dated cash, net of later reversals.",
+        "● Intake controlled 837 claim files or claim exports, 835 remittances, denial letters, authorization records, governed policy material, and relevant chart documents. Production use of X12 transactions will require an approved validation service and deployment.● Reconcile every accepted source record and preserve its hash and location.● Classify the denial and select the exact payer, product, jurisdiction, policy version, procedure scope, and appeal level.● Show evidence with page or field citations and label missing, inaccessible, uncertain, or contradictory information.● Route the case to a qualified reviewer and require separate approval before a packet can be treated as ready.● Record external submission and payer decisions as human attestations rather than claiming the software submitted them.● Calculate changes in payer-reported claim payments from validated matching remittances; confirm received cash separately.",
+        "The current software calculates changes in payer-reported claim payments from validated remittances, subject to customer-specific reconciliation rules. These amounts are not independently verified bank receipts. Verified cash recovery will require reconciliation to received funds, applicable adjustments and reversals, and an agreed baseline. Attribution to NaS will require separate customer evaluation.",
       ],
     },
     {
@@ -78,7 +79,7 @@ export const denialsRelease = {
       title: "6 Evidence before automation",
       paragraphs: [
         "NaS uses deterministic logic for identity, permissions, policy applicability, deadlines, arithmetic, approval boundaries, and payment reconciliation. Models may assist with bounded extraction, classification, and drafting, but every consequential output must retain its source and uncertainty. Missing evidence stays missing. A plausible sentence is not evidence.",
-        "The current software foundation implements tenant-scoped access controls, governed policy versions, quarantine-first document intake, human review states, appeal packet controls, hash-chained audit records, retention workflows, operational alerts, and remittance-based recovery reconciliation. On September 5, 2026, the repository passed 224 automated tests locally. A fresh run of the 100-case engineering-created synthetic cohort matched its provisional answer key for evidence state and citation precision, with zero unsupported assertions in that cohort.",
+        "The current software foundation implements tenant-scoped access controls, governed policy versions, quarantine-first document intake, human review states, appeal packet controls, hash-chained audit records, retention workflows, operational alerts, and remittance-based payment reconciliation. On September 5, 2026, the repository passed 224 automated tests locally. A fresh run of the 100-case engineering-created synthetic cohort matched its provisional answer key for evidence state and citation precision, with zero unsupported assertions in that cohort.",
         "Those results are engineering regression evidence, not customer validation. The score artifact is labeled not eligible for sales claim. Synthetic cases cannot establish payer accuracy, clinical reliability, staff time saved, overturn rates, recovered cash, or commercial value.",
       ],
     },
@@ -88,7 +89,7 @@ export const denialsRelease = {
       paragraphs: [
         "A vendor that creates, receives, maintains, or transmits protected health information on behalf of a covered entity is generally a business associate. HHS guidance states that cloud service providers handling electronic protected health information on behalf of covered entities or business associates need appropriate business associate agreements, and that covered entities and business associates must conduct risk analyses. HHS does not endorse or recognize private HIPAA Security Rule certifications.",
         "NaS has implemented and locally tested specific software controls, including tenant-scoped authorization, quarantine-first intake, human approval boundaries, retention logic, and audit integrity checks. Those engineering tests are not a finding of HIPAA compliance. NaS has not completed the contracts, approved cloud deployment, vendor agreements, documented operating evidence, independent penetration testing, incident and recovery exercises, or customer security acceptance required for an electronic protected health information deployment. A fresh internal readiness check on September 5, 2026 therefore returned blocked from ePHI. Prospective partners should share only workflow descriptions, aggregate non-patient statistics, and synthetic examples until NaS and the customer approve a formal data path. Do not send NaS patient records or other patient-level data at this stage.",
-        "The safety model keeps qualified humans responsible for clinical assertions, coding judgments, final appeal approval, and external submission. It also separates potential value, payer-approved value, and verified recovered cash. These boundaries are product requirements, not temporary limitations to be removed for convenience.",
+        "The safety model keeps qualified humans responsible for clinical assertions, coding judgments, final appeal approval, and external submission. It distinguishes potential value, payer-approved amounts, and remittance-reported payments. Confirming received cash will require separate reconciliation. These boundaries are product requirements, not temporary limitations to be removed for convenience.",
       ],
     },
     {
