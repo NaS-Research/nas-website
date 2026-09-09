@@ -6,6 +6,10 @@ from mathutils import Vector
 OUT=Path(os.environ['NAS_ART_OUTPUT'])
 OUT.mkdir(parents=True,exist_ok=True)
 bpy.ops.wm.read_factory_settings(use_empty=True)
+# Large Cycles tile caches must share the external production volume.
+render_cache=OUT/'render-cache'
+render_cache.mkdir(exist_ok=True)
+bpy.context.preferences.filepaths.temporary_directory=str(render_cache)
 scene=bpy.context.scene
 scene.render.engine='CYCLES'
 scene.cycles.samples=int(os.environ.get('NAS_ART_SAMPLES','96'))
