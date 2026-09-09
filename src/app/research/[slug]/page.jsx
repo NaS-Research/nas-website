@@ -189,7 +189,7 @@ export default async function ResearchPublicationPage({ params }) {
               </table></div>}
               {section.figures?.map((figure) => <figure className="publication-study-figure" key={figure.src}>
                 <Image src={figure.src} alt={figure.alt} width={2100} height={figure.height} sizes="(max-width: 800px) 100vw, 900px" />
-                <figcaption>{figure.caption}</figcaption>
+                <figcaption>{figure.caption} <a className="publication-figure-expand" href={figure.src} target="_blank" rel="noopener noreferrer">Open full-size figure ↗</a></figcaption>
               </figure>)}
               {item.workflowFigureSection === section.id && <DenialsWorkflowFigure />}
               {item.visualsBySection?.[section.id]?.map((visual) => (

@@ -129,7 +129,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className={`home-carousel__visual home-carousel__visual--${activeSlide.visual}`} aria-hidden={activeSlide.visual !== "workflow"}>
+        <div className={`home-carousel__visual home-carousel__visual--${activeSlide.visual}`} aria-hidden={activeSlide.visual !== "workflow" && activeSlide.visual !== "atlas"}>
           {activeSlide.visual === "workflow" && <DenialsWorkflowFigure compact theme="dark" />}
           {activeSlide.visual === "mark" && (
             <div className="home-mark">

@@ -52,13 +52,13 @@ export const atlasRelease = {
       ],
       "figures": [
         {
-          "src": "/research/atlas-rnu42/figure-1-score-agreement.png",
+          "src": "/research/atlas-rnu42/figure-1-score-agreement.svg",
           "height": 840,
           "alt": "AVI and CADD scores against experimental cell-fitness loss for 435 RNU4-2 transcript variants",
           "caption": "Figure 1. Predicted scores versus experimental loss. The AVI correlation is 0.144; CADD is 0.088. Each point is a variant. AVI uses the raw API score."
         },
         {
-          "src": "/research/atlas-rnu42/figure-2-performance.png",
+          "src": "/research/atlas-rnu42/figure-2-performance.svg",
           "height": 860,
           "alt": "AVI and CADD correlation and within-position concordance with 95 percent bootstrap intervals",
           "caption": "Figure 2. Paired position-cluster bootstrap intervals from 2,000 resamples. The 0.5 reference applies only to the within-position pair-ordering statistic. Concordance differences in the table are percentage points."
