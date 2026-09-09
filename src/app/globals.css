@@ -10708,3 +10708,26 @@ summary:focus-visible {
     display: none;
   }
 }
+
+/* NaS computational research publications */
+.atlas-benchmark-visual { width:100%; max-width:42rem; padding:2rem; border:1px solid #c7a06940; border-radius:1.5rem; background:radial-gradient(ellipse at 50% 40%,#c7a0690d,transparent 70%),#0b0b0b; }
+.atlas-benchmark-visual__label { display:flex; justify-content:space-between; gap:1rem; color:#c7a069; font-size:.7rem; letter-spacing:.12em; text-transform:uppercase; }
+.atlas-benchmark-visual svg { display:block; width:100%; height:auto; margin:1rem 0; }
+.atlas-benchmark-visual__name { margin:0; color:#f5f5f3; font-size:clamp(2.5rem,5vw,4.5rem); letter-spacing:-.06em; }
+.atlas-benchmark-visual__caption { color:#b8b8b8; font-size:.95rem; margin:.6rem 0 1.8rem; }
+.atlas-benchmark-visual__stats { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; border-top:1px solid #ffffff20; padding-top:1.4rem; }
+.atlas-benchmark-visual__stats p { margin:0; display:grid; gap:.4rem; }
+.atlas-benchmark-visual__stats strong { color:#dfc18f; font-size:1.8rem; font-weight:450; }
+.atlas-benchmark-visual__stats span { color:#aaa; font-size:.7rem; }
+.publication-review-state { text-align:center; color:#c7a069; font-size:.85rem; margin:1.5rem 0 .5rem; }
+.publication-reproduce { display:block; width:fit-content; margin:1rem auto 0; color:#ddd; text-underline-offset:.25rem; text-decoration:underline; font-size:.85rem; }
+.publication-results-table { overflow-x:auto; margin:2rem 0; }
+.publication-results-table table { width:100%; border-collapse:collapse; font-size:.88rem; text-align:left; }
+.publication-results-table caption { text-align:left; color:#aaa; margin-bottom:1rem; font-size:.8rem; }
+.publication-results-table th,.publication-results-table td { padding:1rem .8rem; border-bottom:1px solid #ffffff25; min-width:9rem; }
+.publication-results-table thead { color:#dfc18f; background:#ffffff06; }
+.publication-results-table tbody th { font-weight:500; }
+.publication-study-figure { margin:2.5rem 0; }
+.publication-study-figure img { display:block; width:100%; height:auto; padding:.8rem; background:#fff; border-radius:.4rem; }
+.publication-study-figure figcaption { color:#aaa; font-size:.85rem; line-height:1.6; margin-top:.85rem; }
+@media(max-width:640px) { .atlas-benchmark-visual { padding:1.25rem; } .atlas-benchmark-visual__stats { gap:.5rem; } }

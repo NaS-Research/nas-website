@@ -6,7 +6,7 @@ import Link from "next/link";
 const features = [
   { href: "/research/introducing-nas-cortex", label: "Research", detail: "5 min read", title: "Introducing the NaS Cortex: Life Science’s Digital Brain", image: "/assets/images/ArticleOne.png", imageAlt: "The NaS Cortex white paper cover", paper: true },
   { href: "/research/why-hyde-park", label: "Community", detail: "5 min read", title: "Why Hyde Park", video: "/assets/videos/ChicagoThree.mp4#t=2" },
-  { href: "/research/why-nas-exists", label: "Institutional essay", detail: "8 min read", title: "Why NaS Exists", image: "/assets/images/NaSLogo.jpeg", imageAlt: "NaS mark" },
+  { href: "/research/introducing-nas-denials", label: "White paper", detail: "12 min read", title: "Introducing NaS Denials", image: "/research/denials/paper-cover.png", imageAlt: "NaS Denials white paper cover", paper: true },
 ];
 
 export default function Featured() {

@@ -129,6 +129,8 @@ export default async function ResearchPublicationPage({ params }) {
             </p>
           </div>
           <PublicationActions citation={citation} pdfUrl={item.pdfUrl} showPdfStatus={item.pdfStatus !== "none"} />
+          {item.reviewState && <p className="publication-review-state">{item.reviewState}</p>}
+          {item.reproducibilityUrl && <a className="publication-reproduce" href={item.reproducibilityUrl}>Download data and analysis ↗</a>}
         </div>
       </header>
 
@@ -180,6 +182,15 @@ export default async function ResearchPublicationPage({ params }) {
               {(section.blocks ?? section.paragraphs).map((block, index) => (
                 <PublicationBlock block={block} key={`${section.id}-${index}`} />
               ))}
+              {section.resultsTable && <div className="publication-results-table"><table>
+                <caption>Primary results with 95% position-cluster bootstrap intervals</caption>
+                <thead><tr>{section.resultsTable[0].map((cell) => <th scope="col" key={cell}>{cell}</th>)}</tr></thead>
+                <tbody>{section.resultsTable.slice(1).map((row) => <tr key={row[0]}>{row.map((cell, i) => i === 0 ? <th scope="row" key={i}>{cell}</th> : <td key={i}>{cell}</td>)}</tr>)}</tbody>
+              </table></div>}
+              {section.figures?.map((figure) => <figure className="publication-study-figure" key={figure.src}>
+                <Image src={figure.src} alt={figure.alt} width={2100} height={figure.height} sizes="(max-width: 800px) 100vw, 900px" />
+                <figcaption>{figure.caption}</figcaption>
+              </figure>)}
               {item.workflowFigureSection === section.id && <DenialsWorkflowFigure />}
               {item.visualsBySection?.[section.id]?.map((visual) => (
                 <CortexNativeVisual visual={visual} key={visual.kind === "table" ? visual.number : visual.title} />
@@ -191,7 +202,7 @@ export default async function ResearchPublicationPage({ params }) {
             <section id="sources" className="publication-section publication-sources">
               <h2>Sources and further reading</h2>
               <p>
-                This publication draws on the institutional and government sources listed below. Links open in a new tab.
+                {item.sourcesIntro ?? "This publication draws on the institutional and government sources listed below. Links open in a new tab."}
               </p>
               <ol>
                 {item.sources.map((source) => (

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import DenialsWorkflowFigure from "@/components/research/DenialsWorkflowFigure";
+import AtlasBenchmarkVisual from "@/components/research/AtlasBenchmarkVisual";
 
 const slides = [
   {
@@ -25,13 +26,13 @@ const slides = [
     visual: "mark",
   },
   {
-    id: "cortex",
-    eyebrow: "Current research",
-    title: "The NaS Cortex",
-    summary: "A knowledge architecture designed to organize evidence across the life sciences without obscuring its source or uncertainty.",
-    primary: { href: "/research/introducing-nas-cortex", label: "Explore the Cortex" },
-    secondary: { href: "/research", label: "Research library" },
-    visual: "cortex",
+    id: "atlas",
+    eyebrow: "New research note · NAS-AGA-001",
+    title: "Putting AlphaGenome Atlas to the test.",
+    summary: "A focused comparison of predicted variant impact and experimental cell-fitness effects in RNU4-2. Public data, reproducible methods, and a clear account of the limits.",
+    primary: { href: "/research/alphagenome-atlas-rnu4-2", label: "Read the research" },
+    secondary: { href: "/research/papers/alphagenome-atlas-rnu4-2.pdf", label: "View the paper" },
+    visual: "atlas",
   },
 ];
 
@@ -153,15 +154,7 @@ export default function HeroSection() {
               />
             </div>
           )}
-          {activeSlide.visual === "cortex" && (
-            <div className="home-carousel__cortex">
-              <span>Knowledge</span>
-              <span>Evidence</span>
-              <strong>Cortex</strong>
-              <span>Uncertainty</span>
-              <span>Source</span>
-            </div>
-          )}
+          {activeSlide.visual === "atlas" && <AtlasBenchmarkVisual />}
         </div>
       </div>
 

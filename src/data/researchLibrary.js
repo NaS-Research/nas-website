@@ -1,8 +1,10 @@
 import { cortexPaperSections } from "@/data/cortexPaper";
 import { cortexNativeVisualsBySection } from "@/data/cortexNativeVisuals";
 import { denialsRelease } from "@/data/denialsRelease";
+import { atlasRelease } from "@/data/atlasRelease";
 
 export const researchItems = [
+  atlasRelease,
   denialsRelease,
   {
     slug: "introducing-nas-cortex",
