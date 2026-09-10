@@ -7,9 +7,8 @@ export const atlasRelease = {
   "date": "September 9, 2026",
   "dateISO": "2026-09-09",
   "version": "1.2",
-  "authors": [
-    "NaS Research"
-  ],
+  "authors": ["Dalron J. Robertson"],
+  "affiliation": "NaS Research",
   "readTime": "8 min read",
   "pdfUrl": "/research/papers/alphagenome-atlas-rnu4-2.pdf",
   "reproducibilityUrl": "/research/atlas-rnu42/reproducibility.zip",

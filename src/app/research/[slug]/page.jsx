@@ -36,6 +36,7 @@ export async function generateMetadata({ params }) {
   return {
     title: `${item.title} | NaS Research`,
     description: item.abstract,
+    authors: item.authors.map((name) => ({ name })),
     alternates: { canonical: `/research/${item.slug}` },
     openGraph: {
       title: item.title,
@@ -72,10 +73,25 @@ export default async function ResearchPublicationPage({ params }) {
   const hasHeroVideo = Boolean(item.heroVideo);
   const hasHeroImage = Boolean(item.heroImage);
   const citation = `${item.authors.join(", ")} (${item.date.slice(-4)}). ${item.title}. NaS Research. Version ${item.version}. https://nasresearch.bio/research/${item.slug}`;
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: item.title,
+    description: item.abstract,
+    datePublished: item.dateISO,
+    url: `https://nasresearch.bio/research/${item.slug}`,
+    author: item.authors.map((name) => ({
+      "@type": item.affiliation ? "Person" : "Organization",
+      name,
+      ...(item.affiliation ? { affiliation: { "@type": "Organization", name: item.affiliation } } : {}),
+    })),
+    publisher: { "@type": "Organization", name: "NaS Research", url: "https://nasresearch.bio" },
+  };
   const related = researchItems.filter((candidate) => candidate.slug !== item.slug && candidate.area === item.area).slice(0, 2);
 
   return (
     <div className="nas-page publication-page">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} />
       <header className={`publication-hero ${isOriginStory ? "publication-hero--origin" : ""} ${hasHeroVideo ? "publication-hero--place" : ""} ${hasHeroImage ? "publication-hero--visual" : ""}`}>
         {hasHeroVideo && (
           <>
@@ -122,7 +138,7 @@ export default async function ResearchPublicationPage({ params }) {
           <h1>{item.title}</h1>
           <p className="publication-abstract">{item.abstract}</p>
           <div className="publication-byline">
-            <p>By {item.authors.join(", ")}</p>
+            <p>By {item.authors.join(", ")}{item.affiliation && <span> · {item.affiliation}</span>}</p>
             <p>
               Version {item.version} · {item.readTime}
               {item.updatedDate ? ` · Updated ${item.updatedDate}` : ""}
