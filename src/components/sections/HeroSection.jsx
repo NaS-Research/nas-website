@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import DenialsWorkflowFigure from "@/components/research/DenialsWorkflowFigure";
@@ -38,6 +38,27 @@ const slides = [
 
 export default function HeroSection() {
   const [activeIndex, setActiveIndex] = useState(2);
+
+  useEffect(() => {
+    const preference = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let timer;
+    const schedule = () => {
+      window.clearTimeout(timer);
+      if (!document.hidden && !preference.matches) {
+        timer = window.setTimeout(() => {
+          setActiveIndex((current) => (current + 1) % slides.length);
+        }, 4000);
+      }
+    };
+    schedule();
+    document.addEventListener("visibilitychange", schedule);
+    preference.addEventListener("change", schedule);
+    return () => {
+      window.clearTimeout(timer);
+      document.removeEventListener("visibilitychange", schedule);
+      preference.removeEventListener("change", schedule);
+    };
+  }, [activeIndex]);
 
   const activeSlide = slides[activeIndex];
 
