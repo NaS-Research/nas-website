@@ -1,3 +1,5 @@
+import PublicationArtwork from "@/components/research/PublicationArtwork";
+import "@/components/research/publication-artwork.css";
 import "./publication-refinements.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -72,7 +74,7 @@ export default async function ResearchPublicationPage({ params }) {
 
   const isOriginStory = item.variant === "institutional-origin";
   const hasHeroVideo = Boolean(item.heroVideo);
-  const hasHeroImage = Boolean(item.heroImage);
+  const hasHeroImage = false;
   const citation = `${item.authors.join(", ")} (${item.date.slice(-4)}). ${item.title}. NaS Research. Version ${item.version}. https://nasresearch.bio/research/${item.slug}`;
   const structuredData = {
     "@context": "https://schema.org",
@@ -151,6 +153,7 @@ export default async function ResearchPublicationPage({ params }) {
         </div>
       </header>
 
+      {!hasHeroVideo && !isOriginStory && <PublicationArtwork slug={item.slug} hero />}
       <div className="nas-shell publication-layout">
         <aside className="publication-toc" aria-label="Publication contents">
           <details className="publication-contents" open>

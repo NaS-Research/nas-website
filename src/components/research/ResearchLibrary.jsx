@@ -1,5 +1,7 @@
 "use client";
 
+import PublicationArtwork from "./PublicationArtwork";
+import "./publication-artwork.css";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 
@@ -15,7 +17,7 @@ export default function ResearchLibrary({ items, types }) {
   const [area, setArea] = useState("All areas");
   const [sort, setSort] = useState("newest");
   const [query, setQuery] = useState("");
-  const [view, setView] = useState("list");
+  const [view, setView] = useState("grid");
 
   const areas = [...new Set(items.map((item) => item.area))].sort();
 
@@ -88,9 +90,12 @@ export default function ResearchLibrary({ items, types }) {
               <option value="title">Title A to Z</option>
             </select>
           </label>
-          <div className="research-view-toggle" aria-label="Display style">
-            <button type="button" className={view === "list" ? "is-active" : ""} onClick={() => setView("list")} aria-label="List view">☷</button>
-            <button type="button" className={view === "grid" ? "is-active" : ""} onClick={() => setView("grid")} aria-label="Grid view">⊞</button>
+          <div className="research-view-toggle" role="group" aria-label="Publication layout">
+            {[{ id: "grid", label: "Cards", icon: "⊞" }, { id: "compact", label: "Compact", icon: "☷" }, { id: "preview", label: "Preview", icon: "▣" }].map((option) => (
+              <button key={option.id} type="button" className={view === option.id ? "is-active" : ""} onClick={() => setView(option.id)} aria-pressed={view === option.id}>
+                <span aria-hidden="true">{option.icon}</span> {option.label}
+              </button>
+            ))}
           </div>
         </div>
       </div>
@@ -106,6 +111,7 @@ export default function ResearchLibrary({ items, types }) {
         <div className={`research-results research-results--${view}`}>
           {filteredItems.map((item) => (
             <Link href={`/research/${item.slug}`} className="research-result" key={item.slug}>
+              <PublicationArtwork slug={item.slug} />
               <div className="research-result__meta">
                 <span>{item.area}</span>
                 <time dateTime={item.dateISO}>{item.date}</time>

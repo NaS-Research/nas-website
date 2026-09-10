@@ -1,0 +1,46 @@
+.publication-artwork { margin: 0; min-width: 0; }
+.publication-artwork__frame { position: relative; overflow: hidden; aspect-ratio: 4 / 3; background: #101010; }
+.publication-artwork__frame img, .publication-artwork__frame video { width: 100%; height: 100%; object-fit: cover; transition: transform .7s ease; }
+.publication-artwork--mark img { object-fit: contain; padding: 16%; }
+.publication-artwork--hero { width: calc(100% - 2.5rem); max-width: 72rem; margin: 0 auto 2rem; }
+.publication-artwork--hero .publication-artwork__frame { aspect-ratio: 16 / 9; }
+.publication-artwork--hero figcaption { margin-top: .8rem; font-size: .75rem; line-height: 1.6; color: #999; }
+.research-result:hover .publication-artwork img { transform: scale(1.025); }
+.research-results--grid .research-result { display: flex; flex-direction: column; padding: 0 0 2rem; overflow: hidden; }
+.research-results--grid .publication-artwork { width: 100%; margin-bottom: 1.4rem; }
+.research-results--grid .research-result__meta { margin-bottom: 1rem; }
+.research-results--grid .research-result__content h2 { font-size: clamp(1.4rem, 2.3vw, 2rem); line-height: 1.18; letter-spacing: -.035em; }
+.research-results--list .publication-artwork { display: none; }
+.research-results--grid { gap: 3rem 2rem; }
+@media(min-width: 1100px) { .research-results.research-results--grid { grid-template-columns: repeat(3,minmax(0,1fr)); } }
+@media(prefers-reduced-motion: reduce) { .publication-artwork__frame img { transition: none; } }
+
+.research-library .research-view-toggle { height: auto; padding: .25rem; gap: .2rem; flex-wrap: wrap; }
+.research-library .research-view-toggle button { width: auto; min-height: 40px; padding: .55rem .7rem; display: inline-flex; align-items: center; gap: .4rem; font-size: .75rem; border-radius: .25rem; }
+.research-view-toggle button:focus-visible { outline: 2px solid #d0b184; outline-offset: 3px; }
+.research-results--compact .research-result { display: grid; grid-template-columns: 76px minmax(0,1fr) 10rem; align-items: center; gap: 1.5rem; padding: 1.25rem 0; }
+.research-results--compact .publication-artwork { grid-column: 1; grid-row: 1; }
+.research-results--compact .research-result__content { grid-column: 2; grid-row: 1; }
+.research-results--compact .research-result__meta { grid-column: 3; grid-row: 1; }
+.research-results--compact .research-result__content h2 { font-size: 1rem; line-height: 1.4; letter-spacing: -.015em; }
+.research-results--compact .research-result__content > p:not(.research-result__type), .research-results--compact .research-result__read { display: none; }
+.research-results--compact .research-result__type { margin-bottom: .4rem; }
+.research-results--preview .research-result { display: grid; grid-template-columns: minmax(180px,.8fr) minmax(0,1.2fr); gap: .8rem 2.5rem; padding: 2.5rem 0; }
+.research-results--preview .publication-artwork { grid-column: 1; grid-row: 1 / 3; }
+.research-results--preview .research-result__meta { grid-column: 2; align-self: end; }
+.research-results--preview .research-result__content { grid-column: 2; }
+.research-results--preview .research-result__content h2 { font-size: clamp(1.4rem, 2.5vw, 2.4rem); }
+@media(max-width: 767px) {
+ .research-library .research-controls { flex-wrap: wrap; }
+ .research-library .research-view-toggle { width: 100%; justify-content: space-between; }
+ .research-library .research-view-toggle button { flex: 1; justify-content: center; }
+ .research-results--compact .research-result { grid-template-columns: 60px minmax(0,1fr); gap: .7rem 1rem; }
+ .research-results--compact .research-result__meta { grid-column: 2; grid-row: 2; flex-direction: row; flex-wrap: wrap; font-size: .7rem; }
+ .research-results--preview .research-result { grid-template-columns: minmax(90px,.65fr) minmax(0,1.35fr); gap: .7rem 1rem; }
+ .research-results--preview .research-result__content h2 { font-size: 1.15rem; }
+ .research-results--preview .research-result__content > p:not(.research-result__type) { font-size: .85rem; }
+}
+.research-results.research-results--grid { background: transparent; border: 0; }
+.research-results--grid .research-result, .research-results--grid .research-result:hover { padding: 0 0 2rem; justify-content: flex-start; gap: 0; background: transparent; }
+.research-results--compact .research-result:hover, .research-results--preview .research-result:hover { padding-inline: 0; }
+@media(max-width: 1100px) { .research-library .research-toolbar { grid-template-columns: 1fr; } .research-library .research-controls { flex-wrap: wrap; } }
