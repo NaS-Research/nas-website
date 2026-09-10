@@ -2,6 +2,7 @@ import NicoleChat from '@/components/NicoleChat';
 import { Suspense } from 'react';
 
 export const metadata = {
+  alternates: { canonical: "/nicole" },
   title: 'Talk to Nicole | NaS',
   description: "Chat with Nicole, NaS’s flagship biomedical language model.",
 };

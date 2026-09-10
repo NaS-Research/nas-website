@@ -7,6 +7,7 @@ const siteDescription =
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": "https://nasresearch.bio/#organization",
   name: "NaS Research",
   url: "https://nasresearch.bio",
   logo: "https://nasresearch.bio/web-app-manifest-512x512.png",
@@ -78,11 +79,10 @@ export const metadata = {
   },
 
   /* ---------- SEO helpers ---------- */
-  alternates: { canonical: "https://nasresearch.bio" },
   robots: {
     index: true,
     follow: true,
-    googleBot: { index: true, follow: true },
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 },
   },
 
 };
@@ -100,7 +100,7 @@ export default function RootLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(organizationJsonLd).replace(/</g, "\\u003c"),
+            __html: JSON.stringify([organizationJsonLd, { "@context": "https://schema.org", "@type": "WebSite", "@id": "https://nasresearch.bio/#website", url: "https://nasresearch.bio", name: "NaS Research", publisher: { "@id": "https://nasresearch.bio/#organization" } }]).replace(/</g, "\\u003c"),
           }}
         />
         {/* Favicons & PWA assets */}

@@ -1,6 +1,7 @@
 import InformationalPage from "@/components/InformationalPage";
 
 export const metadata = {
+  alternates: { canonical: "/support" },
   title: "Work with NaS | NaS Research",
   description: "Ways to strengthen NaS Research through expertise, critical review, infrastructure, responsible resources, and focused collaboration.",
 };

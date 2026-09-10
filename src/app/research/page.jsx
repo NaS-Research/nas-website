@@ -4,6 +4,7 @@ import ResearchLibrary from "@/components/research/ResearchLibrary";
 import { researchItems, researchTypes } from "@/data/researchLibrary";
 
 export const metadata = {
+  alternates: { canonical: "/research" },
   title: "Research Library | NaS Research",
   description: "Browse publications, model cards, technical reports, research notes, and releases from NaS Research.",
 };

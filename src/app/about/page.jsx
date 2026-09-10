@@ -1,6 +1,7 @@
 import InformationalPage from "@/components/InformationalPage";
 
 export const metadata = {
+  alternates: { canonical: "/about" },
   title: "About | NaS Research",
   description: "Why NaS exists, what guides the work, and how we are building better foundations for discovery across the life sciences.",
 };

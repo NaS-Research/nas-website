@@ -8,10 +8,10 @@ const baseUrl = "https://nasresearch.bio";
 
 export default function sitemap() {
   const pages = [
-    { path: "", lastModified: "2026-07-22", changeFrequency: "weekly", priority: 1 },
-    { path: "/research", lastModified: "2026-07-21", changeFrequency: "weekly", priority: 0.9 },
+    { path: "", lastModified: "2026-09-10", changeFrequency: "weekly", priority: 1 },
+    { path: "/research", lastModified: "2026-09-10", changeFrequency: "weekly", priority: 0.9 },
     { path: "/research/programs", lastModified: "2026-07-20", changeFrequency: "monthly", priority: 0.8 },
-    { path: "/learn", lastModified: "2026-08-24", changeFrequency: "weekly", priority: 0.8 },
+    { path: "/learn", lastModified: "2026-09-10", changeFrequency: "weekly", priority: 0.8 },
     { path: "/learn/pharmacy", lastModified: "2026-08-24", changeFrequency: "weekly", priority: 0.85 },
     { path: "/learn/pharmacy/atlas", lastModified: "2026-08-24", changeFrequency: "weekly", priority: 0.85 },
     { path: "/learn/pharmacy/drugs", lastModified: "2026-08-24", changeFrequency: "weekly", priority: 0.85 },

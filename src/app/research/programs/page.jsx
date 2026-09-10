@@ -1,6 +1,7 @@
 import InformationalPage from "@/components/InformationalPage";
 
 export const metadata = {
+  alternates: { canonical: "/research/programs" },
   title: "Research Programs | NaS Research",
   description: "Explore NaS Core, the oncology research program, and the governed studies currently being developed at NaS Research.",
 };

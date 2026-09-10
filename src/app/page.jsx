@@ -6,6 +6,8 @@ import CurrentResearch from "@/components/sections/CurrentResearch";
 import WorkWithNas from "@/components/sections/WorkWithNas";
 import Footer from "@/components/Footer";
 
+export const metadata = { alternates: { canonical: "/" } };
+
 export default function Home() {
   return (
     <>

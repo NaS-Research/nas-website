@@ -2,6 +2,7 @@ import Link from "next/link";
 import Footer from "@/components/Footer";
 
 export const metadata = {
+  alternates: { canonical: "/contact" },
   title: "Contact | NaS Research",
   description: "Contact NaS Research and founder Dalron J. Robertson.",
 };

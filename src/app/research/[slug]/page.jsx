@@ -1,3 +1,4 @@
+import { publicationArtwork } from "@/data/publicationArtwork";
 import PublicationArtwork from "@/components/research/PublicationArtwork";
 import "@/components/research/publication-artwork.css";
 import "./publication-refinements.css";
@@ -51,9 +52,7 @@ export async function generateMetadata({ params }) {
       authors: item.authors,
       images: [
         {
-          url: "/og.png",
-          width: 1200,
-          height: 630,
+          url: publicationArtwork[item.slug]?.src || "/og.png",
           alt: `${item.title} by NaS Research`,
         },
       ],
@@ -62,7 +61,7 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title: item.title,
       description: item.abstract,
-      images: ["/og.png"],
+      images: [publicationArtwork[item.slug]?.src || "/og.png"],
     },
   };
 }
@@ -82,13 +81,16 @@ export default async function ResearchPublicationPage({ params }) {
     headline: item.title,
     description: item.abstract,
     datePublished: item.dateISO,
+    ...(item.updatedDateISO ? { dateModified: item.updatedDateISO } : {}),
+    image: `https://nasresearch.bio${publicationArtwork[item.slug]?.src || "/og.png"}`,
+    mainEntityOfPage: `https://nasresearch.bio/research/${item.slug}`,
     url: `https://nasresearch.bio/research/${item.slug}`,
     author: item.authors.map((name) => ({
       "@type": item.affiliation ? "Person" : "Organization",
       name,
       ...(item.affiliation ? { affiliation: { "@type": "Organization", name: item.affiliation } } : {}),
     })),
-    publisher: { "@type": "Organization", name: "NaS Research", url: "https://nasresearch.bio" },
+    publisher: { "@id": "https://nasresearch.bio/#organization", "@type": "Organization", name: "NaS Research", url: "https://nasresearch.bio" },
   };
   const related = researchItems.filter((candidate) => candidate.slug !== item.slug && candidate.area === item.area).slice(0, 2);
 
