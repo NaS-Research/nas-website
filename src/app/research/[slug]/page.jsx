@@ -1,3 +1,4 @@
+import "./publication-refinements.css";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -150,9 +151,10 @@ export default async function ResearchPublicationPage({ params }) {
         </div>
       </header>
 
-      <main className="nas-shell publication-layout">
+      <div className="nas-shell publication-layout">
         <aside className="publication-toc" aria-label="Publication contents">
-          <p>In this publication</p>
+          <details className="publication-contents" open>
+          <summary>In this publication</summary>
           <nav>
             <a href="#summary">Summary</a>
             {item.sections.map((section) => (
@@ -167,17 +169,14 @@ export default async function ResearchPublicationPage({ params }) {
             {item.sources?.length > 0 && <a href="#sources">Sources</a>}
             <a href="#citation">Citation</a>
           </nav>
+          </details>
         </aside>
 
         <article className="publication-body">
           <section id="summary" className="publication-summary">
             <p className="publication-section-label">Summary</p>
             <p>{item.summary}</p>
-            <dl>
-              <div><dt>Research area</dt><dd>{item.area}</dd></div>
-              <div><dt>Document type</dt><dd>{item.type}</dd></div>
-              <div><dt>Version</dt><dd>{item.version}</dd></div>
-            </dl>
+
           </section>
 
           {item.pullQuote && (
@@ -265,7 +264,7 @@ export default async function ResearchPublicationPage({ params }) {
             </section>
           )}
         </article>
-      </main>
+      </div>
       <Footer />
     </div>
   );

@@ -1,0 +1,35 @@
+/* Shared article presentation. Scientific text and figures retain their source data. */
+.publication-page .publication-hero { padding-bottom: clamp(3rem, 6vw, 5rem); }
+.publication-page .publication-back { margin-bottom: 3rem; }
+.publication-page .publication-hero h1 { max-width: 58rem; font-size: clamp(2.5rem, 5.6vw, 5.25rem); font-weight: 450; letter-spacing: -.045em; line-height: 1.08; }
+.publication-page .publication-meta-line { color: #aaa; font-size: .76rem; }
+.publication-page .publication-abstract { max-width: 43rem; margin-top: 1.8rem; font-size: clamp(1.08rem, 1.8vw, 1.3rem); line-height: 1.7; }
+.publication-page .publication-byline { flex-direction: column; gap: .6rem; margin-top: 1.6rem; color: #aaa; line-height: 1.6; }
+.publication-page .publication-byline > p:first-child { color: #e4e4e4; font-size: .9rem; }
+.publication-page .publication-byline > p:first-child span { color: #aaa; }
+.publication-page .publication-actions { margin-top: 2rem; padding-top: 0; border-top: 0; }
+.publication-page .publication-layout { max-width: 72rem; gap: clamp(2rem, 5vw, 5rem); padding-top: 3rem; }
+.publication-page .publication-body { width: 100%; max-width: 48rem; }
+.publication-contents summary { cursor: pointer; color: #ddd; font-size: .8rem; font-weight: 500; margin-bottom: 1rem; }
+.publication-page .publication-toc a { color: #a8a8a8; font-size: .77rem; line-height: 1.5; }
+.publication-page .publication-summary { padding: 0 0 2.5rem; border: 0; border-bottom: 1px solid #ffffff20; border-radius: 0; background: transparent; }
+.publication-page .publication-summary > p:not(.publication-section-label) { color: #d6d6d6; font-size: 1.12rem; line-height: 1.85; }
+.publication-page .publication-section { padding-block: clamp(2.5rem, 5vw, 4rem); }
+.publication-page .publication-section h2 { font-size: clamp(1.8rem, 3vw, 2.65rem); line-height: 1.2; font-weight: 450; letter-spacing: -.035em; margin-bottom: 1.5rem; }
+.publication-page .publication-section h3 { line-height: 1.3; }
+.publication-page .publication-section > p { max-width: 68ch; font-size: 1.06rem; color: #c5c5c5; line-height: 1.85; }
+.publication-page .publication-study-figure { margin-block: 3rem; }
+.publication-page .publication-study-figure img { padding: 0; border-radius: 0; }
+.publication-page .publication-study-figure figcaption { max-width: 65ch; font-size: .82rem; line-height: 1.7; }
+.publication-page .publication-citation > p { overflow-wrap: anywhere; }
+.publication-page a:focus-visible, .publication-page button:focus-visible, .publication-contents summary:focus-visible { outline: 2px solid #d0b184; outline-offset: 5px; }
+@media(min-width: 768px) { .publication-page .publication-layout { grid-template-columns: 11rem minmax(0, 1fr); } }
+@media(max-width: 767px) {
+ .publication-page .publication-hero h1 { font-size: clamp(2.2rem, 9vw, 3.8rem); overflow-wrap: normal; }
+ .publication-page .publication-meta-line { gap: .5rem .7rem; }
+ .publication-page .publication-layout { display: block; padding-top: 1rem; }
+ .publication-page .publication-toc { margin-bottom: 2.25rem; padding: 1.25rem 0; border-top: 1px solid #ffffff20; }
+ .publication-page .publication-toc nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .3rem 1rem; max-height: 16rem; overflow-y: auto; }
+ .publication-page .publication-toc a { border: 0; border-radius: 0; padding: .5rem 0; white-space: normal; }
+ .publication-page .publication-summary > p:not(.publication-section-label), .publication-page .publication-section > p { font-size: 1rem; }
+}
