@@ -20,3 +20,13 @@ the neighborhood panorama is described as Chicago, not a verified Hyde Park view
 All new web images are sRGB WebP. The 2400px Denials render is native, not upscaled.
 The editable scene supports higher-resolution future exports. Existing Atlas
 artwork and Cortex artwork are reused, with conceptual captions on paper heroes.
+
+## Cortex and homepage cover update
+
+Cortex now uses an original eight-domain Blender sculpture around a shared core.
+It represents the proposed architecture conceptually, not anatomy or a measured
+network. Native PNG, EXR, editable scene, and render source are archived under
+`/Volumes/AGNDJ 6TB/NaS-Core-Data/publications/visuals/cortex-domains-v1/`.
+The homepage now uses the same artwork mapping as the library and article heroes,
+replacing the former results-chart and PDF-cover thumbnails. Scientific figures
+and the published PDFs are unchanged.

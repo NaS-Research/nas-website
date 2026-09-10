@@ -19,3 +19,5 @@
 .home-featured--refined a:focus-visible, .home-carousel a:focus-visible, .home-carousel button:focus-visible { outline: 2px solid #d0b184; outline-offset: 6px; }
 @media(max-width: 640px) { .home-featured--refined .home-editorial-heading { grid-template-columns: 1fr; gap: 1.25rem; } .home-library-link { justify-self: start; } .home-featured--refined .home-featured__grid { grid-template-columns: 1fr; gap: 2.5rem; } }
 @media(prefers-reduced-motion: reduce) { .home-carousel *, .home-featured--refined * { animation: none !important; transition: none !important; } }
+.home-featured--refined .publication-artwork__frame { aspect-ratio: 4 / 3; background: #080808; }
+.home-featured--refined .publication-artwork__frame img { padding: 0; object-fit: cover; }
