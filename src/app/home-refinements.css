@@ -1,0 +1,21 @@
+/* Homepage-only refinements: retain the NaS editorial foundation. */
+.home-carousel .home-carousel__copy h1 { font-weight: 450; letter-spacing: -.055em; line-height: 1.04; text-wrap: balance; }
+.home-carousel .home-carousel__summary { max-width: 36rem; line-height: 1.65; color: #bcbcbc; }
+.home-carousel--atlas .atlas-benchmark-visual__art { border-radius: 0; }
+.home-carousel--atlas .atlas-benchmark-visual__label { color: #d0b184; }
+.home-carousel .home-carousel__controls .home-carousel__dot { position: relative; }
+.home-carousel__dot::after { content: ""; position: absolute; inset: -12px; }
+.home-featured--refined .home-editorial-heading { margin-bottom: 3rem; }
+.home-featured--refined .home-featured__grid { padding-top: 0; }
+.home-latest-kicker { color: #c7a069; font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; margin: 0 0 1.4rem; }
+.home-featured--refined .home-editorial-heading h2 { font-size: clamp(2.8rem, 5vw, 4.8rem); font-weight: 450; line-height: 1.08; letter-spacing: -.05em; }
+.home-library-link { justify-self: end; color: #ddd; font-size: .9rem; padding: .75rem 0; }
+.home-library-link span { margin-left: 1rem; }
+.home-featured--refined .home-featured__item-media { aspect-ratio: 4 / 3; }
+.home-featured--refined .home-featured__item-copy { padding-top: 1.5rem; }
+.home-featured--refined .home-featured__item-copy > p:first-child { flex-wrap: wrap; color: #aaa; gap: .5rem 1rem; }
+.home-featured--refined .home-featured__item-copy h3 { line-height: 1.2; font-weight: 450; }
+.home-featured--refined .home-featured__item-copy .home-feature-description { display: block; color: #aaa; font-size: .92rem; line-height: 1.6; margin: .85rem 0 0; }
+.home-featured--refined a:focus-visible, .home-carousel a:focus-visible, .home-carousel button:focus-visible { outline: 2px solid #d0b184; outline-offset: 6px; }
+@media(max-width: 640px) { .home-featured--refined .home-editorial-heading { grid-template-columns: 1fr; gap: 1.25rem; } .home-library-link { justify-self: start; } .home-featured--refined .home-featured__grid { grid-template-columns: 1fr; gap: 2.5rem; } }
+@media(prefers-reduced-motion: reduce) { .home-carousel *, .home-featured--refined * { animation: none !important; transition: none !important; } }

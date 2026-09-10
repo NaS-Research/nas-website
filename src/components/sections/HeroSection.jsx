@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import DenialsWorkflowFigure from "@/components/research/DenialsWorkflowFigure";
@@ -28,8 +28,8 @@ const slides = [
   {
     id: "atlas",
     eyebrow: "New research note · NAS-AGA-001",
-    title: "Putting AlphaGenome Atlas to the test.",
-    summary: "A focused comparison of predicted variant impact and experimental cell-fitness effects in RNU4-2. Public data, reproducible methods, and a clear account of the limits.",
+    title: "AlphaGenome Atlas. A closer look.",
+    summary: "435 variants. One focused benchmark of predicted variant impact against experimental cell-fitness effects in RNU4-2.",
     primary: { href: "/research/alphagenome-atlas-rnu4-2", label: "Read the research" },
     secondary: { href: "/research/papers/alphagenome-atlas-rnu4-2.pdf", label: "View the paper" },
     visual: "atlas",
@@ -37,34 +37,7 @@ const slides = [
 ];
 
 export default function HeroSection() {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [manualPaused, setManualPaused] = useState(false);
-  const [focusPaused, setFocusPaused] = useState(false);
-  const [pageHidden, setPageHidden] = useState(false);
-  const [reduceMotion, setReduceMotion] = useState(false);
-
-  useEffect(() => {
-    const preference = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const updatePreference = () => setReduceMotion(preference.matches);
-    updatePreference();
-    preference.addEventListener("change", updatePreference);
-    return () => preference.removeEventListener("change", updatePreference);
-  }, []);
-
-  useEffect(() => {
-    const updateVisibility = () => setPageHidden(document.hidden);
-    updateVisibility();
-    document.addEventListener("visibilitychange", updateVisibility);
-    return () => document.removeEventListener("visibilitychange", updateVisibility);
-  }, []);
-
-  useEffect(() => {
-    if (manualPaused || focusPaused || pageHidden || reduceMotion) return undefined;
-    const timer = window.setTimeout(() => {
-      setActiveIndex((current) => (current + 1) % slides.length);
-    }, 5500);
-    return () => window.clearTimeout(timer);
-  }, [activeIndex, focusPaused, manualPaused, pageHidden, reduceMotion]);
+  const [activeIndex, setActiveIndex] = useState(2);
 
   const activeSlide = slides[activeIndex];
 
@@ -107,10 +80,7 @@ export default function HeroSection() {
       role="region"
       aria-roledescription="carousel"
       aria-label="Featured NaS Research"
-      onFocusCapture={() => setFocusPaused(true)}
-      onBlurCapture={(event) => {
-        if (!event.currentTarget.contains(event.relatedTarget)) setFocusPaused(false);
-      }}
+
     >
       <div className="home-mark-hero__atmosphere" aria-hidden="true" />
 
@@ -159,16 +129,6 @@ export default function HeroSection() {
       </div>
 
       <div className="home-carousel__controls" aria-label="Choose featured slide">
-        {!reduceMotion && (
-          <button
-            type="button"
-            className="home-carousel__pause"
-            onClick={() => setManualPaused((current) => !current)}
-            aria-label={manualPaused ? "Resume automatic slide rotation" : "Pause automatic slide rotation"}
-          >
-            <span aria-hidden="true">{manualPaused ? "▶" : "Ⅱ"}</span>
-          </button>
-        )}
         {slides.map((slide, index) => (
           <button
             type="button"
