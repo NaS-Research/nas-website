@@ -1,16 +1,36 @@
 "use client";
 
 import Link from "next/link";
-import { SiInstagram } from "react-icons/si";
-import { FaLinkedin } from "react-icons/fa";
+import "./footer.css";
+
+const groups = [
+  { title: "Explore", links: [["Research", "/research"], ["Research programs", "/research/programs"], ["NaS Learn", "/learn"]] },
+  { title: "NaS", links: [["About", "/about"], ["Work with NaS", "/support"], ["Contact", "/contact"]] },
+  { title: "Follow", links: [["Instagram", "https://www.instagram.com/nasresearch/"], ["LinkedIn", "https://www.linkedin.com/company/nasresearch/"]] },
+];
 
 export default function Footer() {
   return (
-    <footer className="nas-footer">
-      <div className="nas-footer__inner">
-        <div className="nas-footer__top"><button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="nas-footer__wordmark">NaS</button><p>Research and tools for the life sciences.</p></div>
-        <div className="nas-footer__links"><nav aria-label="Footer navigation"><Link href="/research">Research</Link><Link href="/learn">Learn</Link><Link href="/about">About</Link><Link href="/contact">Contact</Link></nav><nav aria-label="Social links"><Link href="https://www.instagram.com/nasresearch/?hl=en" aria-label="Instagram"><SiInstagram /></Link><Link href="https://www.linkedin.com/company/nasresearch/" aria-label="LinkedIn"><FaLinkedin /></Link></nav></div>
-        <div className="nas-footer__legal"><span>NaS Research</span><div><Link href="/legal/privacy">Privacy</Link><Link href="/legal/terms">Terms</Link></div></div>
+    <footer className="site-closing" aria-label="Site footer">
+      <div className="site-closing__inner">
+        <div className="site-closing__main">
+          <div className="site-closing__identity">
+            <Link href="/" className="site-closing__brand" aria-label="NaS Research home">NaS<span>Research</span></Link>
+            <p>Research and tools<br />for the life sciences.</p>
+            <span className="site-closing__location">Chicago, Illinois</span>
+          </div>
+          <nav className="site-closing__navigation" aria-label="Footer navigation">
+            {groups.map((group) => <div className="site-closing__group" key={group.title}>
+              <h2>{group.title}</h2>
+              {group.links.map(([label, href]) => <Link key={href} href={href}>{label}{href.startsWith("https:") && <span aria-hidden="true"> ↗</span>}</Link>)}
+            </div>)}
+          </nav>
+        </div>
+        <div className="site-closing__base">
+          <p>© {new Date().getFullYear()} NaS Research</p>
+          <nav aria-label="Legal"><Link href="/legal/privacy">Privacy</Link><Link href="/legal/terms">Terms</Link></nav>
+          <button type="button" onClick={() => window.scrollTo({ top: 0, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" })}>Back to top <span aria-hidden="true">↑</span></button>
+        </div>
       </div>
     </footer>
   );
