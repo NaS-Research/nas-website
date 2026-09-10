@@ -29,6 +29,7 @@ const slides = [
     id: "atlas",
     eyebrow: "New research note · NAS-AGA-001",
     title: "AlphaGenome Atlas. A closer look.",
+    titleLines: ["AlphaGenome Atlas.", "A closer look."],
     summary: "435 variants. One focused benchmark of predicted variant impact against experimental cell-fitness effects in RNU4-2.",
     primary: { href: "/research/alphagenome-atlas-rnu4-2", label: "Read the research" },
     secondary: { href: "/research/papers/alphagenome-atlas-rnu4-2.pdf", label: "View the paper" },
@@ -108,7 +109,7 @@ export default function HeroSection() {
       <div className="home-carousel__slide" key={activeSlide.id} aria-live="off">
         <div className="home-carousel__copy">
           <p className="home-mark-hero__eyebrow">{activeSlide.eyebrow}</p>
-          <h1 id="home-mark-title">{activeSlide.title}</h1>
+          <h1 id="home-mark-title">{activeSlide.titleLines ? activeSlide.titleLines.map((line, index) => <span key={line}>{index > 0 ? " " : ""}{line}</span>) : activeSlide.title}</h1>
           <p className="home-carousel__summary">{activeSlide.summary}</p>
           <div className="home-mark-hero__actions" aria-label={`Explore ${activeSlide.title}`}>
             <Link className="home-mark-hero__action--primary" href={activeSlide.primary.href}>
