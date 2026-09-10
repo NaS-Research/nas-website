@@ -4,15 +4,16 @@ import Link from "next/link";
 import "./footer.css";
 
 const groups = [
-  { title: "Explore", links: [["Research", "/research"], ["Research programs", "/research/programs"], ["NaS Learn", "/learn"]] },
-  { title: "NaS", links: [["About", "/about"], ["Work with NaS", "/support"], ["Contact", "/contact"]] },
-  { title: "Follow", links: [["Instagram", "https://www.instagram.com/nasresearch/"], ["LinkedIn", "https://www.linkedin.com/company/nasresearch/"]] },
+  { title: "Research", links: [["Publications", "/research"], ["Research programs", "/research/programs"], ["NaS Cortex", "/research/introducing-nas-cortex"], ["NaS Denials", "/research/introducing-nas-denials"]] },
+  { title: "Learn", links: [["NaS Learn", "/learn"], ["Pharmacy", "/learn/pharmacy"], ["Visual Atlas", "/learn/pharmacy/atlas"], ["Drug Library", "/learn/pharmacy/drugs"]] },
+  { title: "About NaS", links: [["Our purpose", "/about"], ["Work with NaS", "/support"], ["Contact", "/contact"]] },
 ];
 
 export default function Footer() {
   return (
     <footer className="site-closing" aria-label="Site footer">
       <div className="site-closing__inner">
+        <div className="site-closing__social"><span>Follow NaS</span><a href="https://www.instagram.com/nasresearch/">Instagram ↗</a><a href="https://www.linkedin.com/company/nasresearch/">LinkedIn ↗</a></div>
         <div className="site-closing__main">
           <div className="site-closing__identity">
             <Link href="/" className="site-closing__brand" aria-label="NaS Research home">NaS<span>Research</span></Link>
