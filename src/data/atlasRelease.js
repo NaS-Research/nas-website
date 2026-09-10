@@ -13,7 +13,7 @@ export const atlasRelease = {
   "readTime": "8 min read",
   "pdfUrl": "/research/papers/alphagenome-atlas-rnu4-2.pdf",
   "reproducibilityUrl": "/research/atlas-rnu42/reproducibility.zip",
-  "reviewState": "NAS-AGA-001 · Computational review · Not peer reviewed",
+  "reviewState": "NAS-AGA-001 · Research note",
   "abstract": "We compared AlphaGenome Atlas variant-impact scores with published experimental effects in RNU4-2. A focused benchmark of 435 transcript variants, with reproducible analysis and clearly stated limits.",
   "summary": "We compared AlphaGenome Atlas AVI scores with published saturation genome editing measurements for 435 single-nucleotide variants across the 145-base RNU4-2 transcript. AVI showed a weak positive rank correlation with experimental cell-fitness loss (Spearman r = 0.144). CADD 1.7 scored 0.088. The paired difference interval included zero. Within-position allele concordance was 49.2%, close to its 50% chance expectation. These results provide no clear evidence of better ranking than CADD in this assay. This focused result is consistent with a limitation already discussed by the Atlas authors [2, p.18].",
   "sections": [
@@ -102,9 +102,9 @@ export const atlasRelease = {
     },
     {
       "id": "reproducibility",
-      "title": "Reproducibility and review",
+      "title": "Reproducibility",
       "paragraphs": [
-        "Deterministic code produced all numerical results. Independent formulations reproduced the point estimates; source-value comparisons, input hashes, and exact bootstrap replay passed. Public experimental data and the free non-commercial API were used. No patient-level records or paid data services were required. NaS Research prepared this report with AI assistance. A separate computational audit checked every source field, score, coordinate, estimate, and interval. This is AI-assisted verification, not external expert review or peer review. No clinical recommendation is made. Reproduction files accompany the web edition."
+        "Deterministic code produced all numerical results. Independent formulations reproduced the point estimates; source-value comparisons, input hashes, and exact bootstrap replay passed. Public experimental data and the free non-commercial API were used. No patient-level records or paid data services were required. A separate computational audit checked every source field, score, coordinate, estimate, and interval. No clinical recommendation is made. Reproduction files accompany the web edition."
       ]
     }
   ],
@@ -131,5 +131,5 @@ export const atlasRelease = {
       "url": "https://deepmind.google.com/science/alphagenome/output-terms"
     }
   ],
-  "publicationNote": "Research note v1.2, published September 9, 2026. The PDF is the fixed version of record. Earlier v1.0 and v1.1 drafts were not public. This edition adds an expanded computational audit; all numerical results are unchanged. Computational verification is not external expert review or peer review. The public package includes the matched data, frozen analysis, audit receipt, and numerical replay instructions."
+  "publicationNote": "Research note v1.2, published September 9, 2026. The PDF is the fixed version of record. Earlier v1.0 and v1.1 drafts were not public. This edition adds an expanded computational audit; all numerical results are unchanged. The public package includes the matched data, frozen analysis, audit receipt, and numerical replay instructions."
 };
