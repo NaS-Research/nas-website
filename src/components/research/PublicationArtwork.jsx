@@ -8,6 +8,5 @@ export default function PublicationArtwork({ slug, hero = false }) {
     <div className="publication-artwork__frame">
       {art.video ? <video src={art.video} poster={art.src} autoPlay loop muted playsInline preload="metadata" aria-label={art.alt} /> : <Image src={art.src} alt={art.alt} fill sizes={hero ? "(max-width: 1200px) 92vw, 1152px" : "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 30vw"} priority={hero} />}
     </div>
-    {hero && art.caption && <figcaption>{art.caption}{art.creditUrl && <> <a href={art.creditUrl}>Model credits and license</a></>}</figcaption>}
   </figure>;
 }

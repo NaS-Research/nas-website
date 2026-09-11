@@ -253,6 +253,7 @@ export default async function ResearchPublicationPage({ params }) {
             <h2>Cite this work</h2>
             <p className="publication-citation__text">{citation}</p>
             <PublicationActions citation={citation} pdfUrl={item.pdfUrl} showPdfStatus={false} />
+            {publicationArtwork[item.slug]?.creditUrl && <p className="publication-note"><a href={publicationArtwork[item.slug].creditUrl}>Artwork credits and license ↗</a></p>}
             {item.reproducibilityUrl && <a className="publication-resource-link" href={item.reproducibilityUrl}>Download data and analysis <span aria-hidden="true">↗</span></a>}
             <p className="publication-note">
               {item.publicationNote ?? "This web publication is the current version of record. Updates will be reflected through the document’s version history."}
