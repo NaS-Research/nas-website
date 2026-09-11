@@ -1,0 +1,5 @@
+/* Transparent brand artwork across library cards and the origin article. */
+.publication-artwork.publication-artwork--mark .publication-artwork__frame { background: transparent; border: 0; box-shadow: none; }
+.publication-page .publication-hero--origin { min-height: auto; display: block; background: transparent; }
+.publication-page .publication-hero--origin::before { content: none; }
+.publication-artwork--mark.publication-artwork--hero img { object-fit: contain; padding: 7%; }

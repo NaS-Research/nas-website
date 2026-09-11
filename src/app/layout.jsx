@@ -1,4 +1,5 @@
 import "./globals.css";
+import "./publication-logo.css";
 import Navbar from "@/components/Navbar";
 
 const siteDescription =

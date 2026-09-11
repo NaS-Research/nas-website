@@ -122,17 +122,6 @@ export default async function ResearchPublicationPage({ params }) {
             <div className="publication-hero__visual-shade" aria-hidden="true" />
           </>
         )}
-        {isOriginStory && (
-          <div className="publication-hero__origin-mark" aria-hidden="true">
-            <Image
-              src="/assets/images/NaSLogo-transparent.png"
-              alt=""
-              width={800}
-              height={800}
-              priority
-            />
-          </div>
-        )}
         <div className="nas-shell publication-hero__inner">
           <Link href="/research" className="publication-back">← Research library</Link>
           <div className="publication-meta-line">
@@ -155,7 +144,7 @@ export default async function ResearchPublicationPage({ params }) {
         </div>
       </header>
 
-      {!hasHeroVideo && !isOriginStory && <PublicationArtwork slug={item.slug} hero />}
+      {!hasHeroVideo && <PublicationArtwork slug={item.slug} hero />}
       <div className="nas-shell publication-layout">
         <aside className="publication-toc" aria-label="Publication contents">
           <details className="publication-contents" open>
