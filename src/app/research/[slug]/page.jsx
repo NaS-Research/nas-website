@@ -1,3 +1,4 @@
+import MobileContents from "@/components/research/MobileContents";
 import { publicationArtwork } from "@/data/publicationArtwork";
 import PublicationArtwork from "@/components/research/PublicationArtwork";
 import "@/components/research/publication-artwork.css";
@@ -145,6 +146,7 @@ export default async function ResearchPublicationPage({ params }) {
       </header>
 
       {!hasHeroVideo && <PublicationArtwork slug={item.slug} hero />}
+      <MobileContents sections={item.sections.map(({ id, title }) => ({ id, title }))} hasSources={Boolean(item.sources?.length)} />
       <div className="nas-shell publication-layout">
         <aside className="publication-toc" aria-label="Publication contents">
           <details className="publication-contents" open>
