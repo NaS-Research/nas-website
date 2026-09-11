@@ -44,3 +44,7 @@
 .research-results--grid .research-result, .research-results--grid .research-result:hover { padding: 0 0 2rem; justify-content: flex-start; gap: 0; background: transparent; }
 .research-results--compact .research-result:hover, .research-results--preview .research-result:hover { padding-inline: 0; }
 @media(max-width: 1100px) { .research-library .research-toolbar { grid-template-columns: 1fr; } .research-library .research-controls { flex-wrap: wrap; } }
+
+.artwork-film-control { position: absolute; right: 1rem; bottom: 1rem; width: 2rem; height: 2rem; border: 1px solid #ffffff50; border-radius: 50%; background: #00000060; color: #fff; font-size: .75rem; display: grid; place-items: center; cursor: pointer; }
+.artwork-film-control:focus-visible { outline: 2px solid #d0b184; outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { .artwork-film-control { display: none; } }
