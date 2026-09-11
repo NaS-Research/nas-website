@@ -64,10 +64,10 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: new URL("/og.png", new URL("https://nasresearch.bio")).href,
+        url: new URL("/nas-logo-share-v1.png", new URL("https://nasresearch.bio")).href,
         width: 1200,
         height: 630,
-        alt: "NaS Research site preview",
+        alt: "NaS Research — gold NaS logo on black",
       },
     ],
   },
@@ -76,7 +76,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "NaS Research",
     description: siteDescription,
-    images: ["/og.png"],
+    images: ["/nas-logo-share-v1.png"],
   },
 
   /* ---------- SEO helpers ---------- */
