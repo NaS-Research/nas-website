@@ -194,7 +194,7 @@ export default async function ResearchPublicationPage({ params }) {
                 <PublicationBlock block={block} key={`${section.id}-${index}`} />
               ))}
               {section.resultsTable && <div className="publication-results-table"><table>
-                <caption>Primary results with 95% position-cluster bootstrap intervals</caption>
+                <caption>{section.resultsTableCaption ?? "Primary results with 95% position-cluster bootstrap intervals"}</caption>
                 <thead><tr>{section.resultsTable[0].map((cell) => <th scope="col" key={cell}>{cell}</th>)}</tr></thead>
                 <tbody>{section.resultsTable.slice(1).map((row) => <tr key={row[0]}>{row.map((cell, i) => i === 0 ? <th scope="row" key={i}>{cell}</th> : <td key={i}>{cell}</td>)}</tr>)}</tbody>
               </table></div>}

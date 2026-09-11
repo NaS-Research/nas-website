@@ -167,11 +167,11 @@ export default async function ResearchProjectPage({ params }) {
 
             <section id="release-boundary" className="project-release">
               <p className="project-label">Release boundary</p>
-              <h2>Current research is not published evidence.</h2>
+              <h2>{project.releaseHeading ?? "Current research is not published evidence."}</h2>
               <p>{project.releaseNote}</p>
               <div className="project-release__actions">
-                <Link href="/research" className="nas-button">
-                  Read published research
+                <Link href={project.publicationUrl ?? "/research"} className="nas-button">
+                  {project.publicationUrl ? "Read the public report" : "Read published research"}
                 </Link>
                 <Link href="/research/programs" className="project-text-link">
                   Explore the research program <span aria-hidden="true">↗</span>

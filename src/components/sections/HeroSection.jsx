@@ -4,9 +4,18 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import DenialsWorkflowFigure from "@/components/research/DenialsWorkflowFigure";
-import AtlasBenchmarkVisual from "@/components/research/AtlasBenchmarkVisual";
 
 const slides = [
+  {
+    id: "brca",
+    eyebrow: "New public research report · NAS-BRCA-002",
+    title: "PAM50 repeatability. Tested.",
+    titleLines: ["PAM50 repeatability.", "Tested."],
+    summary: "136 registered technical-repeat pairs. One frozen subtype method. Public data, deterministic analysis, and explicit limits.",
+    primary: { href: "/research/pam50-technical-repeatability", label: "Read the research" },
+    secondary: { href: "/research/papers/nas-brca-002-pam50-repeatability.pdf", label: "View the report" },
+    visual: "brca",
+  },
   {
     id: "denials",
     eyebrow: "New design partner release",
@@ -25,20 +34,10 @@ const slides = [
     secondary: { href: "/about", label: "Discover our mission" },
     visual: "mark",
   },
-  {
-    id: "atlas",
-    eyebrow: "New research note · NAS-AGA-001",
-    title: "AlphaGenome Atlas. A closer look.",
-    titleLines: ["AlphaGenome Atlas.", "A closer look."],
-    summary: "435 variants. One focused benchmark of predicted variant impact against experimental cell-fitness effects in RNU4-2.",
-    primary: { href: "/research/alphagenome-atlas-rnu4-2", label: "Read the research" },
-    secondary: { href: "/research/papers/alphagenome-atlas-rnu4-2.pdf", label: "View the paper" },
-    visual: "atlas",
-  },
 ];
 
 export default function HeroSection() {
-  const [activeIndex, setActiveIndex] = useState(2);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     const preference = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -121,7 +120,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className={`home-carousel__visual home-carousel__visual--${activeSlide.visual}`} aria-hidden={activeSlide.visual !== "workflow" && activeSlide.visual !== "atlas"}>
+        <div className={`home-carousel__visual home-carousel__visual--${activeSlide.visual}`} aria-hidden={!(["workflow", "brca"].includes(activeSlide.visual))}>
           {activeSlide.visual === "workflow" && <DenialsWorkflowFigure compact theme="dark" />}
           {activeSlide.visual === "mark" && (
             <div className="home-mark">
@@ -146,7 +145,21 @@ export default function HeroSection() {
               />
             </div>
           )}
-          {activeSlide.visual === "atlas" && <AtlasBenchmarkVisual />}
+          {activeSlide.visual === "brca" && (
+            <figure className="home-brca-visual">
+              <div className="home-brca-visual__frame">
+                <Image
+                  src="/research/nas-brca-002/figure-1-agreement.png"
+                  alt="Four separate PAM50 technical-repeat agreement estimates with 95 percent Wilson intervals"
+                  width={1600}
+                  height={900}
+                  sizes="(max-width: 767px) 92vw, 48vw"
+                  priority
+                />
+              </div>
+              <figcaption>Separate estimates · cohorts not pooled · not for clinical use</figcaption>
+            </figure>
+          )}
         </div>
       </div>
 

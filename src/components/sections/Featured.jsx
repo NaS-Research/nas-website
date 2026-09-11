@@ -3,9 +3,9 @@ import "@/components/research/publication-artwork.css";
 import Link from "next/link";
 
 const features = [
+  { href: "/research/pam50-technical-repeatability", label: "Research report", detail: "September 11, 2026", title: "PAM50 technical repeatability", description: "A frozen subtype method tested across public technical-repeat data." },
   { href: "/research/alphagenome-atlas-rnu4-2", label: "Research note", detail: "September 9, 2026", title: "AlphaGenome Atlas in RNU4-2", description: "What 435 variants reveal about prediction and experimental agreement." },
   { href: "/research/introducing-nas-denials", label: "White paper", detail: "September 5, 2026", title: "Introducing NaS Denials", description: "A software foundation for specialty denial prevention and appeals." },
-  { href: "/research/introducing-nas-cortex", label: "White paper", detail: "May 12, 2025", title: "The NaS Cortex", description: "A proposed knowledge architecture for the life sciences." },
 ];
 
 export default function Featured() {

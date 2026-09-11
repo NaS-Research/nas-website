@@ -2,8 +2,10 @@ import { cortexPaperSections } from "@/data/cortexPaper";
 import { cortexNativeVisualsBySection } from "@/data/cortexNativeVisuals";
 import { denialsRelease } from "@/data/denialsRelease";
 import { atlasRelease } from "@/data/atlasRelease";
+import { brcaRepeatabilityRelease } from "@/data/brcaRepeatabilityRelease";
 
 export const researchItems = [
+  brcaRepeatabilityRelease,
   atlasRelease,
   denialsRelease,
   {
