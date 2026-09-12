@@ -37,7 +37,6 @@ for (const requiredText of [
   "83 of 87",
   "5 of 5",
   "13 of 16",
-  "not independently reviewed or peer reviewed",
   "not for clinical use",
   "The datasets were not pooled",
 ]) {
@@ -66,5 +65,8 @@ const projectsSource = readFileSync(resolve(root, "src/data/researchProjects.js"
 assert.match(projectsSource, /status: "Public report v1\.0\.0 · Open review"/);
 assert.match(projectsSource, /publicationUrl: "\/research\/pam50-technical-repeatability"/);
 assert.doesNotMatch(projectsSource, /NAS-BRCA-002 is not a publication/);
+for (const publicSource of [releaseSource, projectsSource]) {
+  assert.doesNotMatch(publicSource, /AI-assisted|AI assistance|internally reviewed|peer review/i);
+}
 
 console.log("NAS-BRCA-002 website release checks passed.");

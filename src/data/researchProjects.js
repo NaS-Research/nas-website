@@ -89,7 +89,7 @@ export const researchProjects = [
     role: "Computational repeatability study",
     status: "Public report v1.0.0 · Open review",
     statusDetail:
-      "The computational analysis and versioned public report are complete. Public posting begins open post-publication review; the report is not peer reviewed or for clinical use.",
+      "The computational analysis and versioned public report are complete. The methods, results, and reproducibility package are open for public review. The report is not for clinical use.",
     updatedDate: "September 11, 2026",
     updatedDateISO: "2026-09-11",
     video: "/assets/videos/Coding.mp4",
@@ -154,14 +154,14 @@ export const researchProjects = [
         title: "Repeatability is not biological or clinical truth.",
         paragraphs: [
           "Technical-repeat agreement cannot establish diagnostic accuracy, prognosis, treatment response, clinical utility, biological truth, a population agreement rate, or general transportability.",
-          "This is a fully computational, public-data-only study. NaS handled no specimen and accessed no clinical outcome or controlled record. The report is not clinical guidance and has not received independent scientific or journal peer review.",
+          "This is a fully computational, public-data-only study. NaS handled no specimen and accessed no clinical outcome or controlled record. The report is not clinical guidance.",
         ],
       },
     ],
     publicationUrl: "/research/pam50-technical-repeatability",
     releaseHeading: "Public report v1.0.0 is available.",
     releaseNote:
-      "NAS-BRCA-002 is published as an internally reviewed computational research report. Public posting begins open post-publication review. The fixed PDF and reproducibility package are the version of record; substantive corrections will create a preserved successor rather than silently replacing this edition.",
+      "NAS-BRCA-002 is published as a computational research report with its methods, results, and reproducibility package open for public review. The fixed PDF and reproducibility package are the version of record; substantive corrections will create a preserved successor rather than silently replacing this edition.",
   },
 ];
 

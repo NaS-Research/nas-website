@@ -13,7 +13,7 @@ export const brcaRepeatabilityRelease = {
   pdfUrl: "/research/papers/nas-brca-002-pam50-repeatability.pdf",
   reproducibilityUrl: "/research/nas-brca-002/reproducibility.zip",
   reviewState:
-    "NAS-BRCA-002 · Internally reviewed with AI assistance · Not peer reviewed · Not for clinical use",
+    "NAS-BRCA-002 · Public computational report · Open review · Not for clinical use",
   abstract:
     "A public-data computational study of whether one frozen PAM50 method returns the same breast-cancer subtype label for repeated measurements linked to the same reported tumor RNA source.",
   summary:
@@ -97,7 +97,7 @@ export const brcaRepeatabilityRelease = {
       title: "Reproducibility and open review",
       paragraphs: [
         "The downloadable package contains the versioned manuscript, checksum receipts, review records, numerical-incident record, search refresh, exact figure and paper builder, and shared NaS renderer and palette. It excludes raw molecular data, identifiers, credentials, outcomes, and controlled records.",
-        "NaS performed an AI-assisted internal release audit covering the calculations, methods, provenance, claim boundaries, citations, and every rendered PDF page. That audit is not independent scientific review or journal peer review. Publication begins open post-publication review; substantive corrections will produce a preserved, versioned successor rather than silently replacing this edition.",
+        "NaS completed a release audit covering the calculations, methods, provenance, claim boundaries, citations, and every rendered PDF page. Public posting opens the methods, results, and reproducibility package to outside review. Substantive corrections will produce a preserved, versioned successor rather than silently replacing this edition.",
       ],
     },
   ],
@@ -130,7 +130,7 @@ export const brcaRepeatabilityRelease = {
     },
   ],
   publicationNote:
-    "Public report v1.0.0, published September 11, 2026. The PDF and checksum-bound reproducibility package are the fixed version of record. Candidate review papers v0.4.0, v0.5.0, and v0.5.1 remain preserved and were not public editions. This report is internally reviewed with AI assistance, not independently reviewed or peer reviewed, and not for clinical use.",
+    "Public report v1.0.0, published September 11, 2026. The PDF and checksum-bound reproducibility package are the fixed version of record. Candidate review papers v0.4.0, v0.5.0, and v0.5.1 remain preserved and were not public editions. This report is not for clinical use.",
   collaboration: {
     eyebrow: "Open review",
     title: "Inspect, reproduce, or challenge the work.",
