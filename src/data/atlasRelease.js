@@ -130,5 +130,5 @@ export const atlasRelease = {
       "url": "https://deepmind.google.com/science/alphagenome/output-terms"
     }
   ],
-  "publicationNote": "Research note v1.2, published September 9, 2026. The PDF is the fixed version of record. Earlier v1.0 and v1.1 drafts were not public. This edition adds an expanded computational audit; all numerical results are unchanged. The public package includes the matched data, frozen analysis, audit receipt, and numerical replay instructions."
+  "publicationNote": "Research note v1.2, published September 9, 2026. The PDF is the fixed version of record. Earlier v1.0 and v1.1 drafts were not public. This edition adds an expanded computational audit; all numerical results are unchanged. The public data package includes matched data, unchanged statistical analysis functions, a verification summary, and numerical replay instructions. Data package 1.2.1 updates packaging only; the paper and numerical results are unchanged."
 };
