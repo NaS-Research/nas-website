@@ -43,6 +43,20 @@ for (const requiredText of [
 ]) {
   assert.match(releaseSource.toLowerCase(), new RegExp(requiredText.toLowerCase()));
 }
+assert.match(releaseSource, /\/research\/nas-brca-002\/pam50-method-v1\.webp/);
+assert.match(releaseSource, /not an observed molecular structure, data plot, or study result/);
+
+const artworkSource = readFileSync(resolve(root, "src/data/publicationArtwork.js"), "utf8");
+assert.match(artworkSource, /\/research\/nas-brca-002\/pam50-cover-v1\.webp/);
+
+for (const filename of ["pam50-cover-v1.webp", "pam50-method-v1.webp"]) {
+  const bytes = readFileSync(resolve(releaseRoot, filename));
+  assert.ok(bytes.length > 100_000, `${filename} is unexpectedly small`);
+}
+
+const artworkProvenance = readFileSync(resolve(releaseRoot, "pam50-artwork-v1.txt"), "utf8");
+assert.match(artworkProvenance, /exactly 50 rounded markers/);
+assert.match(artworkProvenance, /not observed molecular\s+structures/);
 
 const librarySource = readFileSync(resolve(root, "src/data/researchLibrary.js"), "utf8");
 assert.match(librarySource, /export const researchItems = \[\s*brcaRepeatabilityRelease,/);

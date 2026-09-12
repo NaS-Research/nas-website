@@ -67,6 +67,15 @@ export const brcaRepeatabilityRelease = {
         "GSE96058 and TCGA-BRCA used a fixed 50-gene panel, an immutable GSE81538 reference, five fixed PAM50 centroids, and Spearman correlation without cohort centering. E-TABM-576 used the preregistered 59-reporter collapse and gene-wise centering against 112 singleton profiles before the same fixed-centroid correlation.",
         "No imputation, outcome-guided adaptation, post-result threshold, or pair exclusion was allowed. Complete executions had to be byte-identical. A first TCGA implementation attempt mishandled two exact log2(0.1) boundary values; that provisional output was rejected, disclosed, and never interpreted. The accepted run applied only the tolerance frozen before molecular access.",
       ],
+      figures: [
+        {
+          src: "/research/nas-brca-002/pam50-method-v1.webp",
+          height: 1181,
+          alt: "Conceptual visualization of two 50-gene PAM50 measurements connected gene by gene and compared with five fixed subtype references",
+          caption:
+            "Conceptual method artwork. The two fields represent repeat measurements of the same fixed 50-gene panel; the five central lenses represent the fixed subtype references. This explanatory image is not an observed molecular structure, data plot, or study result.",
+        },
+      ],
     },
     {
       id: "score-margins",

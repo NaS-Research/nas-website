@@ -1,6 +1,10 @@
 // Original NaS artwork; conceptual images do not represent measured outcomes.
 export const publicationArtwork = {
-  "pam50-technical-repeatability": { src: "/research/nas-brca-002/figure-1-agreement.png", alt: "Four separate PAM50 technical-repeat agreement estimates with 95 percent Wilson intervals" },
+  "pam50-technical-repeatability": {
+    src: "/research/nas-brca-002/pam50-cover-v1.webp",
+    alt: "Conceptual PAM50 sculpture with 50 gold gene markers arranged around five fixed subtype-reference rings",
+    creditUrl: "/research/nas-brca-002/pam50-artwork-v1.txt",
+  },
   "alphagenome-atlas-rnu4-2": { src: "/research/atlas-rnu42/sequence-paper-v1.webp", alt: "Conceptual printed DNA letters on textured white paper, with one gold A; illustrative sequence, not an observed RNU4-2 variant" },
   "introducing-nas-denials": { src: "/research/denials/evidence-optics-v2.webp", alt: "Smoked glass layers with a satin gold center on charcoal" },
   "introducing-nas-cortex": { src: "/research/cortex/visuals/cortex-brain-v2.webp", alt: "Illustration of the cerebral cortex with natural folds and fine surface vessels", creditUrl: "/research/cortex/visuals/brain-attribution-v2.txt" },
