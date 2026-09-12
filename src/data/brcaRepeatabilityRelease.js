@@ -69,11 +69,11 @@ export const brcaRepeatabilityRelease = {
       ],
       figures: [
         {
-          src: "/research/nas-brca-002/pam50-method-v1.webp",
+          src: "/research/nas-brca-002/pam50-method-v2.webp",
           height: 1181,
-          alt: "Conceptual visualization of two 50-gene PAM50 measurements connected gene by gene and compared with five fixed subtype references",
+          alt: "Microscopy-informed conceptual cutaway of a breast-cancer cell showing its nucleus, chromatin, organelles, and single-stranded RNA transcripts",
           caption:
-            "Conceptual method artwork. The two fields represent repeat measurements of the same fixed 50-gene panel; the five central lenses represent the fixed subtype references. This explanatory image is not an observed molecular structure, data plot, or study result.",
+            "Conceptual gene-expression artwork. The cell, nucleus, and single-stranded RNA transcripts provide biological context for measuring a fixed 50-gene expression panel. The strands do not identify particular genes or encode measured values. This is not patient tissue, a microscopy result, a literal PAM50 molecule, a data plot, or an additional study result.",
         },
       ],
     },
