@@ -43,11 +43,12 @@ for (const requiredText of [
 ]) {
   assert.match(releaseSource.toLowerCase(), new RegExp(requiredText.toLowerCase()));
 }
-assert.match(releaseSource, /\/research\/nas-brca-002\/pam50-method-v2\.webp/);
-assert.match(releaseSource, /not patient tissue, a microscopy result, a literal PAM50 molecule/);
-
 const artworkSource = readFileSync(resolve(root, "src/data/publicationArtwork.js"), "utf8");
 assert.match(artworkSource, /\/research\/nas-brca-002\/pam50-cover-v2\.webp/);
+assert.match(artworkSource, /heroSrc: "\/research\/nas-brca-002\/pam50-method-v2\.webp"/);
+
+const artworkComponent = readFileSync(resolve(root, "src/components/research/PublicationArtwork.jsx"), "utf8");
+assert.match(artworkComponent, /hero \? \(art\.heroSrc \?\? art\.src\) : art\.src/);
 
 for (const filename of ["pam50-cover-v2.webp", "pam50-method-v2.webp"]) {
   const bytes = readFileSync(resolve(releaseRoot, filename));

@@ -67,15 +67,6 @@ export const brcaRepeatabilityRelease = {
         "GSE96058 and TCGA-BRCA used a fixed 50-gene panel, an immutable GSE81538 reference, five fixed PAM50 centroids, and Spearman correlation without cohort centering. E-TABM-576 used the preregistered 59-reporter collapse and gene-wise centering against 112 singleton profiles before the same fixed-centroid correlation.",
         "No imputation, outcome-guided adaptation, post-result threshold, or pair exclusion was allowed. Complete executions had to be byte-identical. A first TCGA implementation attempt mishandled two exact log2(0.1) boundary values; that provisional output was rejected, disclosed, and never interpreted. The accepted run applied only the tolerance frozen before molecular access.",
       ],
-      figures: [
-        {
-          src: "/research/nas-brca-002/pam50-method-v2.webp",
-          height: 1181,
-          alt: "Microscopy-informed conceptual cutaway of a breast-cancer cell showing its nucleus, chromatin, organelles, and single-stranded RNA transcripts",
-          caption:
-            "Conceptual gene-expression artwork. The cell, nucleus, and single-stranded RNA transcripts provide biological context for measuring a fixed 50-gene expression panel. The strands do not identify particular genes or encode measured values. This is not patient tissue, a microscopy result, a literal PAM50 molecule, a data plot, or an additional study result.",
-        },
-      ],
     },
     {
       id: "score-margins",
