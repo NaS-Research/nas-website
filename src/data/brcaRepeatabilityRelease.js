@@ -12,8 +12,6 @@ export const brcaRepeatabilityRelease = {
   readTime: "10 min read",
   pdfUrl: "/research/papers/nas-brca-002-pam50-repeatability.pdf",
   reproducibilityUrl: "/research/nas-brca-002/reproducibility.zip",
-  reviewState:
-    "NAS-BRCA-002 · Public computational report · Open review · Not for clinical use",
   abstract:
     "A public-data computational study of whether one frozen PAM50 method returns the same breast-cancer subtype label for repeated measurements linked to the same reported tumor RNA source.",
   summary:
@@ -94,10 +92,10 @@ export const brcaRepeatabilityRelease = {
     },
     {
       id: "reproducibility-and-review",
-      title: "Reproducibility and open review",
+      title: "Reproducibility",
       paragraphs: [
         "The downloadable package contains the versioned manuscript, checksum receipts, review records, numerical-incident record, search refresh, exact figure and paper builder, and shared NaS renderer and palette. It excludes raw molecular data, identifiers, credentials, outcomes, and controlled records.",
-        "NaS completed a release audit covering the calculations, methods, provenance, claim boundaries, citations, and every rendered PDF page. Public posting opens the methods, results, and reproducibility package to outside review. Substantive corrections will produce a preserved, versioned successor rather than silently replacing this edition.",
+        "NaS completed a release audit covering the calculations, methods, provenance, claim boundaries, citations, and every rendered PDF page. Substantive corrections will produce a preserved, versioned successor rather than silently replacing this edition.",
       ],
     },
   ],
@@ -130,12 +128,5 @@ export const brcaRepeatabilityRelease = {
     },
   ],
   publicationNote:
-    "Public report v1.0.0, published September 11, 2026. The PDF and checksum-bound reproducibility package are the fixed version of record. Candidate review papers v0.4.0, v0.5.0, and v0.5.1 remain preserved and were not public editions. This report is not for clinical use.",
-  collaboration: {
-    eyebrow: "Open review",
-    title: "Inspect, reproduce, or challenge the work.",
-    body: "Public posting begins outside review. We welcome specific feedback on the frozen method, data provenance, calculations, interpretation boundaries, or reproducibility package.",
-    href: "/contact",
-    label: "Send research feedback",
-  },
+    "Version 1.0.0 · September 11, 2026.",
 };

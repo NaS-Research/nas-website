@@ -87,9 +87,9 @@ export const researchProjects = [
     shortTitle: "PAM50 Technical Repeatability",
     area: "Breast cancer research",
     role: "Computational repeatability study",
-    status: "Public report v1.0.0 · Open review",
+    status: "Published",
     statusDetail:
-      "The computational analysis and versioned public report are complete. The methods, results, and reproducibility package are open for public review. The report is not for clinical use.",
+      "Version 1.0.0 · September 11, 2026",
     updatedDate: "September 11, 2026",
     updatedDateISO: "2026-09-11",
     video: "/assets/videos/Coding.mp4",
@@ -159,9 +159,9 @@ export const researchProjects = [
       },
     ],
     publicationUrl: "/research/pam50-technical-repeatability",
-    releaseHeading: "Public report v1.0.0 is available.",
+    releaseHeading: "Read the research.",
     releaseNote:
-      "NAS-BRCA-002 is published as a computational research report with its methods, results, and reproducibility package open for public review. The fixed PDF and reproducibility package are the version of record; substantive corrections will create a preserved successor rather than silently replacing this edition.",
+      "The article, paper, and reproducibility package are available.",
   },
 ];
 

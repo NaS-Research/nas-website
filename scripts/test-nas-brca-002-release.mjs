@@ -37,7 +37,6 @@ for (const requiredText of [
   "83 of 87",
   "5 of 5",
   "13 of 16",
-  "not for clinical use",
   "The datasets were not pooled",
 ]) {
   assert.match(releaseSource.toLowerCase(), new RegExp(requiredText.toLowerCase()));
@@ -62,11 +61,12 @@ const librarySource = readFileSync(resolve(root, "src/data/researchLibrary.js"),
 assert.match(librarySource, /export const researchItems = \[\s*brcaRepeatabilityRelease,/);
 
 const projectsSource = readFileSync(resolve(root, "src/data/researchProjects.js"), "utf8");
-assert.match(projectsSource, /status: "Public report v1\.0\.0 · Open review"/);
+assert.match(projectsSource, /status: "Published"/);
 assert.match(projectsSource, /publicationUrl: "\/research\/pam50-technical-repeatability"/);
 assert.doesNotMatch(projectsSource, /NAS-BRCA-002 is not a publication/);
 for (const publicSource of [releaseSource, projectsSource]) {
   assert.doesNotMatch(publicSource, /AI-assisted|AI assistance|internally reviewed|peer review/i);
+  assert.doesNotMatch(publicSource, /open review|public computational report/i);
 }
 
 console.log("NAS-BRCA-002 website release checks passed.");

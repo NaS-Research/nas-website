@@ -8,12 +8,12 @@ import DenialsWorkflowFigure from "@/components/research/DenialsWorkflowFigure";
 const slides = [
   {
     id: "brca",
-    eyebrow: "New public research report · NAS-BRCA-002",
+    eyebrow: "NAS-BRCA-002 · Computational Oncology",
     title: "PAM50 repeatability. Tested.",
     titleLines: ["PAM50 repeatability.", "Tested."],
     summary: "136 registered technical-repeat pairs. One frozen subtype method. Public data, deterministic analysis, and explicit limits.",
     primary: { href: "/research/pam50-technical-repeatability", label: "Read the research" },
-    secondary: { href: "/research/papers/nas-brca-002-pam50-repeatability.pdf", label: "View the report" },
+    secondary: { href: "/research/papers/nas-brca-002-pam50-repeatability.pdf", label: "View the paper" },
     visual: "brca",
   },
   {
@@ -157,7 +157,7 @@ export default function HeroSection() {
                   priority
                 />
               </div>
-              <figcaption>Separate estimates · cohorts not pooled · not for clinical use</figcaption>
+              <figcaption>Separate estimates · cohorts not pooled</figcaption>
             </figure>
           )}
         </div>
