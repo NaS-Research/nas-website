@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Footer from "@/components/Footer";
@@ -61,7 +62,7 @@ export default async function ResearchProjectPage({ params }) {
       />
 
       <header className="project-hero">
-        <video
+        {project.image ? <Image className="project-hero__video" src={project.image} alt={project.imageAlt} fill sizes="100vw" priority /> : <video
           className="project-hero__video"
           src={project.video}
           autoPlay
@@ -69,7 +70,7 @@ export default async function ResearchProjectPage({ params }) {
           muted
           playsInline
           aria-hidden="true"
-        />
+        />}
         <div className="project-hero__shade" aria-hidden="true" />
 
         <div className="nas-shell project-hero__inner">

@@ -1,3 +1,5 @@
+import { publicationArtwork } from "@/data/publicationArtwork";
+
 export const researchProjects = [
   {
     slug: "nas-brca-001",
@@ -92,7 +94,8 @@ export const researchProjects = [
       "Version 1.0.0 · September 11, 2026",
     updatedDate: "September 11, 2026",
     updatedDateISO: "2026-09-11",
-    video: "/assets/videos/Coding.mp4",
+    image: publicationArtwork["pam50-technical-repeatability"].src,
+    imageAlt: publicationArtwork["pam50-technical-repeatability"].alt,
     description:
       "A public-data computational study of whether one frozen PAM50 method returns the same subtype label for repeated measurements linked to the same reported breast-tumor RNA source.",
     question:

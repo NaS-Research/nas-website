@@ -9860,6 +9860,7 @@ summary:focus-visible {
 .home-featured video,
 .home-featured img,
 .home-research video,
+.home-research img,
 .home-work video {
   width: 100%;
   height: 100%;
@@ -9870,7 +9871,8 @@ summary:focus-visible {
 .home-featured__lead:hover video,
 .home-featured__item:hover video,
 .home-featured__item:hover img,
-.home-research__link:hover video {
+.home-research__link:hover video,
+.home-research__link:hover img {
   opacity: 0.88;
   transform: scale(1.012);
 }
@@ -10111,7 +10113,8 @@ summary:focus-visible {
   height: clamp(22rem, 36vw, 36rem);
 }
 
-.home-research__media video {
+.home-research__media video,
+.home-research__media img {
   opacity: 0.72;
   filter: saturate(0.7);
 }
