@@ -4,6 +4,9 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import DenialsWorkflowFigure from "@/components/research/DenialsWorkflowFigure";
+import { publicationArtwork } from "@/data/publicationArtwork";
+
+const pam50Artwork = publicationArtwork["pam50-technical-repeatability"];
 
 const slides = [
   {
@@ -149,15 +152,14 @@ export default function HeroSection() {
             <figure className="home-brca-visual">
               <div className="home-brca-visual__frame">
                 <Image
-                  src="/research/nas-brca-002/figure-1-agreement.png"
-                  alt="Four separate PAM50 technical-repeat agreement estimates with 95 percent Wilson intervals"
+                  src={pam50Artwork.heroSrc ?? pam50Artwork.src}
+                  alt={pam50Artwork.heroAlt ?? pam50Artwork.alt}
                   width={1600}
                   height={900}
                   sizes="(max-width: 767px) 92vw, 48vw"
                   priority
                 />
               </div>
-              <figcaption>Separate estimates · cohorts not pooled</figcaption>
             </figure>
           )}
         </div>
