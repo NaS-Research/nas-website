@@ -3,7 +3,7 @@ export const atlasRelease = {
   "title": "AlphaGenome Atlas in RNU4-2: a focused computational benchmark",
   "shortTitle": "AlphaGenome Atlas in RNU4-2",
   "type": "Research Note",
-  "area": "Computational Genomics",
+  "area": "Genomics",
   "date": "September 9, 2026",
   "dateISO": "2026-09-09",
   "version": "1.2",

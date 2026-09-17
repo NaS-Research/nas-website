@@ -5,12 +5,7 @@ import "./publication-artwork.css";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 
-const typeGroups = {
-  Publications: ["Publication", "Technical Report", "White Paper"],
-  "Model Cards": ["Model Card"],
-  "Research Notes": ["Research Note"],
-  Releases: ["Release", "Institutional Essay"],
-};
+import { matchesResearchType } from "@/data/researchTaxonomy.mjs";
 
 export default function ResearchLibrary({ items, types }) {
   const [activeType, setActiveType] = useState("All");
@@ -24,7 +19,7 @@ export default function ResearchLibrary({ items, types }) {
   const filteredItems = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
     return items
-      .filter((item) => activeType === "All" || typeGroups[activeType]?.includes(item.type))
+      .filter((item) => matchesResearchType(item, activeType))
       .filter((item) => area === "All areas" || item.area === area)
       .filter((item) =>
         !normalizedQuery ||

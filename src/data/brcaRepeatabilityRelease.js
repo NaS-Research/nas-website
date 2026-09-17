@@ -3,7 +3,7 @@ export const brcaRepeatabilityRelease = {
   title: "Technical-repeat sensitivity of fixed-reference PAM50 subtyping",
   shortTitle: "PAM50 technical repeatability",
   type: "Research Report",
-  area: "Computational Oncology",
+  area: "Oncology",
   date: "September 11, 2026",
   dateISO: "2026-09-11",
   version: "1.0.0",

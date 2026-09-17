@@ -11,7 +11,7 @@ const pam50Artwork = publicationArtwork["pam50-technical-repeatability"];
 const slides = [
   {
     id: "brca",
-    eyebrow: "NAS-BRCA-002 · Computational Oncology",
+    eyebrow: "NAS-BRCA-002 · Oncology",
     title: "PAM50 repeatability. Tested.",
     titleLines: ["PAM50 repeatability.", "Tested."],
     summary: "136 registered technical-repeat pairs. One frozen subtype method. Public data, deterministic analysis, and explicit limits.",

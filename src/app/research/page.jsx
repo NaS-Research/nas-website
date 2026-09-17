@@ -6,7 +6,7 @@ import { researchItems, researchTypes } from "@/data/researchLibrary";
 export const metadata = {
   alternates: { canonical: "/research" },
   title: "Research Library | NaS Research",
-  description: "Browse publications, model cards, technical reports, research notes, and releases from NaS Research.",
+  description: "Browse research reports, white papers, research notes, releases, and essays from NaS Research.",
 };
 
 export default function ResearchPage() {
@@ -20,7 +20,7 @@ export default function ResearchPage() {
               <h1>Research</h1>
             </div>
             <div className="research-index-intro">
-              <p>Publications, technical documentation, research notes, and institutional releases from NaS.</p>
+              <p>Research reports, white papers, research notes, releases, and essays from NaS.</p>
               <Link href="/research/programs">Explore research programs <span aria-hidden="true">↗</span></Link>
             </div>
           </div>

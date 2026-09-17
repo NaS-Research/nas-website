@@ -1,3 +1,4 @@
+import { availableResearchTypes } from "@/data/researchTaxonomy.mjs";
 import { cortexPaperSections } from "@/data/cortexPaper";
 import { cortexNativeVisualsBySection } from "@/data/cortexNativeVisuals";
 import { denialsRelease } from "@/data/denialsRelease";
@@ -432,13 +433,7 @@ export const researchItems = [
   },
 ];
 
-export const researchTypes = [
-  "All",
-  "Publications",
-  "Model Cards",
-  "Research Notes",
-  "Releases",
-];
+export const researchTypes = availableResearchTypes(researchItems);
 
 export function getResearchItem(slug) {
   return researchItems.find((item) => item.slug === slug);
