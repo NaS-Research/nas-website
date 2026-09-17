@@ -1,21 +1,19 @@
-/* Ease out of the black page into charcoal without a visible section edge. */
+/* Shared opacity fade reveals each page's own background at the top.
+   It reaches solid charcoal before navigation begins, keeping text readable. */
 .site-closing {
-  --footer-start: #000;
-  --footer-end: #111214;
-  background: linear-gradient(
-    180deg,
-    var(--footer-start) 0%,
-    color-mix(in srgb, var(--footer-start), var(--footer-end) 4%) 12%,
-    color-mix(in srgb, var(--footer-start), var(--footer-end) 15%) 25%,
-    color-mix(in srgb, var(--footer-start), var(--footer-end) 35%) 40%,
-    color-mix(in srgb, var(--footer-start), var(--footer-end) 65%) 60%,
-    color-mix(in srgb, var(--footer-start), var(--footer-end) 85%) 75%,
-    color-mix(in srgb, var(--footer-start), var(--footer-end) 96%) 88%,
-    var(--footer-end) 100%
-  );
+  --footer-blend-height: clamp(22rem, 48vw, 46rem);
+  background: linear-gradient(180deg,
+    rgb(17 18 20 / 0) 0,
+    rgb(17 18 20 / .04) calc(var(--footer-blend-height) * .12),
+    rgb(17 18 20 / .15) calc(var(--footer-blend-height) * .25),
+    rgb(17 18 20 / .35) calc(var(--footer-blend-height) * .40),
+    rgb(17 18 20 / .65) calc(var(--footer-blend-height) * .60),
+    rgb(17 18 20 / .85) calc(var(--footer-blend-height) * .75),
+    rgb(17 18 20 / .96) calc(var(--footer-blend-height) * .88),
+    #111214 var(--footer-blend-height), #111214 100%);
   color: #f0f0f0;
   border-top: 0;
-  padding: clamp(9rem, 20vw, 20rem) 0 2.5rem;
+  padding: var(--footer-blend-height) 0 2.5rem;
 }
 .site-closing__inner { width: calc(100% - (2 * var(--nas-gutter))); max-width: var(--nas-wide); margin-inline: auto; }
 .site-closing__main { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.2fr); gap: 4rem; padding-bottom: clamp(3rem,6vw,5rem); }
@@ -42,9 +40,3 @@
 .site-closing__group h2 { font-size: .95rem; font-weight: 450; color: #f0f0f0; }
 .site-closing__group a { font-size: .85rem; padding-block: .5rem; }
 @media(max-width: 767px) { .site-closing__social { margin-bottom: 2.5rem; gap: 1rem; } .site-closing__navigation { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 2rem; } }
-
-/* Begin the homepage fade before the footer; both edges meet at the same tone. */
-.home-work:has(+ .site-closing) {
-  background: linear-gradient(180deg, #000 0%, #010101 30%, #030304 65%, #050506 100%) bottom / 100% clamp(20rem, 40vw, 36rem) no-repeat, #000;
-}
-.home-work + .site-closing { --footer-start: #050506; }
