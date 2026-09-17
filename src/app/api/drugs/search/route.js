@@ -1,7 +1,10 @@
+import { validateDrugRequest } from "@/lib/drugRequest.mjs";
 import { NextResponse } from "next/server";
 
 export async function GET(request) {
-  const query = request.nextUrl.searchParams.get("q")?.trim().slice(0, 80);
+  const parsed = validateDrugRequest(request, "q", 80);
+  if (parsed.error) return NextResponse.json({ error: parsed.error }, { status: parsed.status, headers: { "Cache-Control": "no-store" } });
+  const query = parsed.value;
   if (!query || query.length < 2) return NextResponse.json({ results: [] });
 
   const endpoint = new URL("https://rxnav.nlm.nih.gov/REST/approximateTerm.json");
@@ -22,6 +25,7 @@ export async function GET(request) {
 
     return NextResponse.json({ results });
   } catch {
-    return NextResponse.json({ results: [], unavailable: true }, { status: 200 });
+    console.warn("drug_search_upstream_unavailable");
+    return NextResponse.json({ results: [], unavailable: true }, { status: 503, headers: { "Cache-Control": "no-store", "Retry-After": "30" } });
   }
 }

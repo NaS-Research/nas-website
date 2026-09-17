@@ -31,7 +31,6 @@ const groups = [
         href: `/research/projects/${project.slug}`,
         detail: `${project.role} · ${project.status}`,
       })),
-      { label: "Nicole", href: "/nicole", detail: "Biomedical research interface" },
     ],
   },
   {
@@ -81,7 +80,7 @@ export default function SitemapPage() {
         </div>
       </header>
 
-      <main className="nas-shell sitemap-directory">
+      <div data-page-main className="nas-shell sitemap-directory">
         {groups.map((group, groupIndex) => (
           <section className="sitemap-group" key={group.title}>
             <header>
@@ -119,7 +118,7 @@ export default function SitemapPage() {
             ))}
           </div>
         </section>
-      </main>
+      </div>
 
       <Footer />
     </div>

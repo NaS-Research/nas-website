@@ -10,9 +10,10 @@ export const metadata = {
 export default function PharmacyAtlasPage() {
   return (
     <div className="nas-page pharmacy-atlas-page">
-      <main className="nas-shell pharmacy-atlas-main">
+      <div data-page-main className="nas-shell pharmacy-atlas-main">
+        <h1 className="sr-only">Visual Atlas</h1>
         <PharmacyExplorer />
-      </main>
+      </div>
       <Footer />
     </div>
   );

@@ -11,7 +11,7 @@ const sections = [
     id: "scope",
     title: "Scope",
     paragraphs: [
-      "This Privacy Policy applies to nasresearch.bio and the public website features operated by NaS Research, including our research library, contact links, and Nicole interface. It does not apply to third-party websites, platforms, or services that may be linked from the site.",
+      "This Privacy Policy applies to nasresearch.bio and the public website features operated by NaS Research, including our research library, educational tools, and contact links. It does not apply to third-party websites, platforms, or services that may be linked from the site.",
       "NaS Research is currently a founder-led research organization based in Chicago, Illinois. In this policy, “NaS,” “we,” “us,” and “our” refer to NaS Research.",
     ],
   },
@@ -20,7 +20,7 @@ const sections = [
     title: "Information we collect",
     paragraphs: [
       "We collect information you choose to provide when you contact us by email. This may include your name, email address, affiliation, the contents of your message, and any attachments you send.",
-      "When you use Nicole, your prompt and related technical request data are sent to the service that generates a response. Do not submit medical records, patient identifiers, confidential research data, trade secrets, or other sensitive personal information through Nicole.",
+      "The public website does not currently provide a working Nicole chat service. Drug searches and label requests are handled by our website and sent to U.S. National Library of Medicine services (RxNorm and DailyMed) and the U.S. Food and Drug Administration (openFDA). Use drug names only; do not enter patient details or other sensitive information.",
       "Our hosting and security providers may automatically process basic technical information needed to deliver and protect the site. This can include an IP address, browser and device information, requested pages, timestamps, referring pages, and error or security logs.",
       "The website does not currently offer user accounts, accept payments, or collect information through a general web form.",
     ],
@@ -30,6 +30,7 @@ const sections = [
     title: "Cookies and similar technologies",
     paragraphs: [
       "NaS does not currently use targeted advertising cookies or intentionally deploy nonessential analytics cookies on this website. Essential technologies used by hosting, delivery, and security providers may operate to make the site available and protect it from misuse.",
+      "Pharmacy assessments save progress in your browser’s local storage. This progress is not an account or a server backup; clearing site data removes it. Some anatomy views load an embedded Sketchfab viewer, which makes requests to Sketchfab and may use its own browser technologies. Our website is hosted by Netlify.",
       "If our use of cookies or analytics changes materially, we will update this policy and provide any choices required by applicable law.",
     ],
   },
@@ -37,7 +38,7 @@ const sections = [
     id: "how-we-use-information",
     title: "How we use information",
     paragraphs: [
-      "We use information to operate, maintain, secure, and improve the website; provide responses through Nicole; answer correspondence; understand interest in our work; investigate errors or misuse; and comply with legal obligations.",
+      "We use information to operate, maintain, secure, and improve the website; provide educational search results; answer correspondence; understand interest in our work; investigate errors or misuse; and comply with legal obligations.",
       "We do not use information submitted through this website to provide medical care, diagnose a condition, or make a clinical decision about an individual.",
     ],
   },
@@ -45,7 +46,7 @@ const sections = [
     id: "how-we-share-information",
     title: "How we share information",
     paragraphs: [
-      "We may share information with service providers that support website hosting, security, email, and the Nicole interface. These providers process information for the services they perform for us and are subject to their own contractual and legal obligations.",
+      "We may share information with service providers that support website hosting, security, email, and educational resources. These providers process information for the services they perform for us and are subject to their own contractual and legal obligations.",
       "We may also disclose information when required by law, to protect the rights or safety of NaS or others, to investigate misuse, in connection with an organizational transaction, or with your direction or consent.",
       "NaS does not sell or rent personal information. We do not share personal information for cross-context behavioral advertising.",
     ],
@@ -110,8 +111,8 @@ export default function PrivacyPolicyPage() {
     <LegalPage
       eyebrow="Legal · NaS Research"
       title="Privacy Policy"
-      summary="A clear account of the information involved when you visit our website, contact NaS, or use the Nicole research interface."
-      effectiveDate="July 21, 2026"
+      summary="How information is handled when you visit NaS, use our educational tools, or contact us."
+      effectiveDate="September 17, 2026"
       sections={sections}
     />
   );

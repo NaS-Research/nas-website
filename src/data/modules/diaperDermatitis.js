@@ -36,7 +36,7 @@ export const diaperDermatitisModule = {
   references: [
     { label: "AAP Common Diaper Rashes and Treatments", href: "https://www.healthychildren.org/English/ages-stages/baby/diapers-clothing/Pages/Diaper-Rash.aspx" },
     { label: "AAP Diaper Rash Symptom Checker", href: "https://www.healthychildren.org/English/tips-tools/Symptom-Checker/Pages/symptomviewer.aspx?symptom=Diaper+Rash" },
-    { label: "FDA OTC Monograph M016 Skin Protectants", href: "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/OTCMonograph_M016SkinProtectantDrugProductsforOTCHumanUse09242021.pdf" },
+    { label: "FDA OTC Monograph M016 Skin Protectants", href: "https://dps-admin.fda.gov/omuf/sites/omuf/files/primary-documents/2022-09/Final%20Administrative%20Order%20OTC000005_M016-Skin%20Protectant%20Drug%20Products%20for%20OTC%20Human%20Use.pdf" },
     { label: "DailyMed Vusion Miconazole Zinc Oxide Petrolatum", href: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b44b452d-3630-4cb5-8ed1-1f8edac4690c" },
     { label: "DailyMed Hydrocortisone Cream", href: "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=2ada9ec2-1c28-4da2-8639-07b3193ffb32&version=4" },
   ],

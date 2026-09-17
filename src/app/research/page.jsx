@@ -27,9 +27,9 @@ export default function ResearchPage() {
         </div>
       </header>
 
-      <main className="nas-shell research-index-main">
+      <div data-page-main className="nas-shell research-index-main">
         <ResearchLibrary items={researchItems} types={researchTypes} />
-      </main>
+      </div>
       <Footer />
     </div>
   );

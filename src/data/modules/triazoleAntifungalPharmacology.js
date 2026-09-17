@@ -102,6 +102,6 @@ export const triazoleAntifungalPharmacologyModule={
     {label:"DailyMed Oral Ketoconazole Label",href:"https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=369f31da-d3c3-49b8-956f-f70598760164"},
     {label:"IDSA Aspergillosis Guideline",href:"https://www.idsociety.org/practice-guideline/aspergillosis/"},
     {label:"IDSA Candidiasis Guideline",href:"https://www.idsociety.org/practice-guideline/candidiasis/"},
-    {label:"IDSA Histoplasmosis Guideline, 2025",href:"https://www.idsociety.org/practice-guideline/histoplasmosis-2025/"}
+    {label:"IDSA Histoplasmosis Guideline, 2025",href:"https://www.idsociety.org/practice-guideline/histoplasmosis"}
   ],questionBank:triazoleAntifungalPharmacologyQuestionBank
 };

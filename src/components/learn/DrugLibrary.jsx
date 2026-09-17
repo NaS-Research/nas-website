@@ -52,7 +52,7 @@ export default function DrugLibrary() {
         const response = await fetch(`/api/drugs/search?q=${encodeURIComponent(query.trim())}`, { signal: controller.signal });
         const payload = await response.json();
         setRxResults(payload.results || []);
-        setServiceUnavailable(Boolean(payload.unavailable));
+        setServiceUnavailable(!response.ok || Boolean(payload.unavailable));
       } catch (error) {
         if (error.name !== "AbortError") setServiceUnavailable(true);
       } finally {

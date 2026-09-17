@@ -1,3 +1,4 @@
+import { validateDrugRequest } from "@/lib/drugRequest.mjs";
 import { NextResponse } from "next/server";
 
 const labelSections = [
@@ -21,7 +22,9 @@ function normalizeText(value) {
 }
 
 export async function GET(request) {
-  const name = request.nextUrl.searchParams.get("name")?.trim().slice(0, 100);
+  const parsed = validateDrugRequest(request, "name", 100);
+  if (parsed.error) return NextResponse.json({ error: parsed.error }, { status: parsed.status, headers: { "Cache-Control": "no-store" } });
+  const name = parsed.value;
   if (!name || name.length < 2) return NextResponse.json({ profile: null, labels: [] });
 
   const escapedName = name.replaceAll("\\", "\\\\").replaceAll('"', '\\"');
@@ -44,7 +47,7 @@ export async function GET(request) {
   let labels = [];
 
   if (openFdaResult.status === "fulfilled" && openFdaResult.value.ok) {
-    const payload = await openFdaResult.value.json();
+    const payload = await openFdaResult.value.json().catch(() => ({}));
     const record = payload.results?.[0];
     if (record) {
       const openFda = record.openfda || {};
@@ -63,7 +66,7 @@ export async function GET(request) {
   }
 
   if (dailyMedResult.status === "fulfilled" && dailyMedResult.value.ok) {
-    const payload = await dailyMedResult.value.json();
+    const payload = await dailyMedResult.value.json().catch(() => ({}));
     labels = (payload.data || []).map((label) => ({
       setId: label.setid,
       title: label.title,
@@ -72,5 +75,11 @@ export async function GET(request) {
     }));
   }
 
-  return NextResponse.json({ profile, labels, unavailable: !profile && labels.length === 0 });
+  const upstreamFailed = [openFdaResult, dailyMedResult].some(result => result.status === "rejected" || (!result.value.ok && result.value.status !== 404));
+  if (upstreamFailed) console.warn("drug_profile_upstream_degraded");
+  const unavailable = !profile && labels.length === 0;
+  return NextResponse.json({ profile, labels, unavailable }, {
+    status: unavailable && upstreamFailed ? 503 : 200,
+    headers: { "Cache-Control": "no-store", ...(unavailable && upstreamFailed ? { "Retry-After": "30" } : {}) },
+  });
 }

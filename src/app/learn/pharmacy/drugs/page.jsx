@@ -11,10 +11,10 @@ export const metadata = {
 export default function DrugLibraryPage() {
   return (
     <div className="nas-page drug-library-page">
-      <main className="nas-shell">
+      <div data-page-main className="nas-shell">
         <Link href="/learn/pharmacy" className="learning-back drug-library-back">← Pharmacy</Link>
         <DrugLibrary />
-      </main>
+      </div>
       <Footer />
     </div>
   );

@@ -384,7 +384,7 @@ export default async function PharmacyModulePage({ params }) {
         </div>
       </header>
 
-      <main className="nas-shell pharmacy-module-layout">
+      <div data-page-main className="nas-shell pharmacy-module-layout">
         <aside className="pharmacy-module-nav" aria-label="Module contents">
           <p>In this module</p>
           <nav>{module.submodules.map((submodule) => <a href={`#${submodule.slug}`} key={submodule.slug}>{submodule.title}</a>)}</nav>
@@ -689,7 +689,7 @@ export default async function PharmacyModulePage({ params }) {
             {next ? <Link href={`/learn/pharmacy/modules/${next.slug}`}><span>Next</span><strong>{next.title}</strong></Link> : <Link href="/learn/pharmacy/review"><span>Next</span><strong>Final review</strong></Link>}
           </nav>
         </article>
-      </main>
+      </div>
       <Footer />
     </div>
   );

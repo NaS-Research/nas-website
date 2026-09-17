@@ -26,7 +26,7 @@ export default function LearningPage() {
         </div>
       </header>
 
-      <main>
+      <div data-page-main>
         <section className="nas-shell learning-discipline" aria-labelledby="pharmacy-title">
           <div className="learning-discipline__identity">
             <span>Rx</span>
@@ -55,7 +55,7 @@ export default function LearningPage() {
             </div>
           </div>
         </section>
-      </main>
+      </div>
       <Footer />
     </div>
   );

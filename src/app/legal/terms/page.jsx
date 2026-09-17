@@ -34,10 +34,9 @@ const sections = [
   },
   {
     id: "nicole",
-    title: "Nicole and generated responses",
+    title: "Nicole development status",
     paragraphs: [
-      "Nicole is a research interface and may produce incomplete, outdated, or incorrect responses. Generated content can omit context or present information with more confidence than the evidence supports. You must independently verify important claims against appropriate primary sources and professional guidance.",
-      "Do not use Nicole to diagnose or treat a person, make an emergency decision, or process patient records or other sensitive personal information. NaS may limit, suspend, change, or discontinue the interface at any time.",
+      "Nicole is in development. The public website does not currently offer a working Nicole chat service. Concept artwork and descriptions do not represent an available clinical or research service.",
     ],
   },
   {
@@ -131,7 +130,7 @@ export default function TermsPage() {
       eyebrow="Legal · NaS Research"
       title="Terms of Use"
       summary="The rules for using our public website, reading NaS publications, and interacting with our experimental research tools."
-      effectiveDate="July 21, 2026"
+      effectiveDate="September 17, 2026"
       sections={sections}
     />
   );

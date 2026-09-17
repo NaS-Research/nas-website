@@ -84,7 +84,7 @@ export default async function PharmacyLessonPage({ params }) {
         </div>
       </header>
 
-      <main className="nas-shell lesson-layout">
+      <div data-page-main className="nas-shell lesson-layout">
         <aside className="lesson-navigation" aria-label="Guide contents">
           <p>In this guide</p>
           <nav>
@@ -123,7 +123,7 @@ export default async function PharmacyLessonPage({ params }) {
             <p>This material is not medical advice and does not replace current prescribing information, institutional policy, clinical guidelines, or professional judgment.</p>
           </aside>
         </article>
-      </main>
+      </div>
       <Footer />
     </div>
   );

@@ -114,10 +114,10 @@ export const hivPreventionPrepPepModule = {
     { label: "CDC 2025 Lenacapavir PrEP Recommendation", href: "https://www.cdc.gov/mmwr/volumes/74/wr/mm7435a1.htm" },
     { label: "CDC 2025 Nonoccupational PEP Guideline", href: "https://www.cdc.gov/mmwr/volumes/74/rr/rr7401a1.htm" },
     { label: "U.S. Public Health Service 2025 Occupational PEP Guideline", href: "https://stacks.cdc.gov/view/cdc/258795/cdc_258795_DS1.pdf" },
-    { label: "FDA Yeztugo Prescribing Information", href: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/220018Orig1s000Lbl.pdf" },
+    { label: "FDA Yeztugo Prescribing Information", href: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/220018s000lbl.pdf" },
     { label: "FDA Apretude Prescribing Information", href: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/215499s009lbl.pdf" },
-    { label: "FDA Truvada Prescribing Information", href: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/021752s067lbl.pdf" },
-    { label: "FDA Descovy Prescribing Information", href: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/208215s026lbl.pdf" }
+    { label: "FDA Truvada Prescribing Information", href: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/021752s064lbl.pdf" },
+    { label: "FDA Descovy Prescribing Information", href: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/208215s023s025lbl.pdf" }
   ],
   disclaimer: "This module supports advanced HIV prevention education. It does not replace current prescribing information, exposure-specific consultation, diagnostic evaluation, occupational health policy, or patient-specific clinical care.",
   questionBank: hivPreventionPrepPepQuestionBank,

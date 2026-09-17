@@ -97,7 +97,7 @@ export default async function ResearchProjectPage({ params }) {
         </div>
       </header>
 
-      <main>
+      <div data-page-main>
         <section className="nas-shell project-overview">
           <div className="project-overview__lead">
             <p className="project-label">Research question</p>
@@ -197,7 +197,7 @@ export default async function ResearchProjectPage({ params }) {
             )}
           </article>
         </div>
-      </main>
+      </div>
 
       <Footer />
     </div>

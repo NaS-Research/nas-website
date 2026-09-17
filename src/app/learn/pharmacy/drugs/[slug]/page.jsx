@@ -45,7 +45,7 @@ export default async function DrugProfilePage({ params }) {
 
   return (
     <div className="nas-page drug-profile-page">
-      <main>
+      <div data-page-main>
         <header className="nas-shell drug-profile-hero">
           <Link href="/learn/pharmacy/drugs" className="learning-back">← Drug library</Link>
           <h1>{titleCase(drug.generic)}</h1>
@@ -101,7 +101,7 @@ export default async function DrugProfilePage({ params }) {
             <a href={`https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=${encodeURIComponent(drug.generic)}`} target="_blank" rel="noreferrer">Review current DailyMed labels ↗</a>
           </aside>
         </div>
-      </main>
+      </div>
       <Footer />
     </div>
   );

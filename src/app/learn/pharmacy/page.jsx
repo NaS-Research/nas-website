@@ -45,7 +45,7 @@ export default function PharmacyLearningPage() {
         </div>
       </header>
 
-      <main>
+      <div data-page-main>
         <section className="nas-shell pharmacy-orientation" aria-label="How to use this collection">
           <div><span>Begin</span><strong>Understand drug action</strong></div>
           <div><span>Sequence</span><strong>Learn system by system</strong></div>
@@ -65,7 +65,7 @@ export default function PharmacyLearningPage() {
             <p>NaS Learn supports education and scientific discussion. It does not replace current prescribing information, institutional policy, clinical guidelines, or professional judgment.</p>
           </div>
         </section>
-      </main>
+      </div>
       <Footer />
     </div>
   );

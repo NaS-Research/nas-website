@@ -36,7 +36,7 @@ export default function ArtworkFilm({ src, poster, alt, showControl = false }) {
     };
   }, [src, paused]);
   return <>
-    <video ref={videoRef} poster={poster} loop muted playsInline preload="none" aria-label={alt} />
+    <video ref={videoRef} poster={poster} loop muted playsInline preload="none" aria-hidden={alt ? undefined : true} aria-label={alt || undefined} />
     {showControl && <button type="button" className="artwork-film-control" onClick={() => setPaused(!paused)} aria-label={paused ? "Play animation" : "Pause animation"}><span aria-hidden="true">{paused ? "▶" : "Ⅱ"}</span></button>}
   </>;
 }

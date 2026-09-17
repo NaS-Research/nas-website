@@ -1,4 +1,5 @@
 import "./globals.css";
+import "./accessibility.css";
 import "./publication-logo.css";
 import Navbar from "@/components/Navbar";
 
@@ -114,8 +115,9 @@ export default function RootLayout({ children }) {
         <meta name="theme-color" content="#000000" />
       </head>
       <body className="bg-red-500 min-h-screen antialiased">
+        <a className="nas-skip-link" href="#main-content">Skip to content</a>
         <Navbar />
-        <main>
+        <main id="main-content" tabIndex={-1}>
           {children}
         </main>
       </body>

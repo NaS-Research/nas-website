@@ -8,7 +8,7 @@ const description = "Explore NaS today and its long-term vision: a life sciences
 export const metadata = { title: "About | NaS Research", description, alternates: { canonical: "/about" }, openGraph: { title: "About NaS Research", description, url: "/about", type: "website" } };
 
 export default function AboutPage() {
-  return <div className="nas-page about-nas"><main>
+  return <div className="nas-page about-nas"><div data-page-main>
     <header className="nas-shell about-opening">
       <p className="about-label">About NaS Research <span>Hyde Park, Chicago</span></p>
       <h1>A home for<br /><span>the life sciences.</span></h1>
@@ -37,5 +37,5 @@ export default function AboutPage() {
       <article><h3>Care & stewardship</h3><p>Protect the people, specimens, and information entrusted to us. Build the safeguards each activity requires before that work begins, and keep testing whether they are effective.</p></article>
     </div></div></section>
     <section className="nas-shell about-principles"><p className="about-label">The work starts now</p><h2>Build from<br />what we can show.</h2><div><p>Read a study, explore a tool, or bring a question to the work. The institution we want to become begins with what we do today.</p><div className="about-purpose-links"><Link className="about-link" href="/research">Research library ↗</Link><Link className="about-link" href="/learn">NaS Learn ↗</Link><Link className="about-link" href="/support">Work with NaS ↗</Link></div></div></section>
-  </main><Footer /></div>;
+  </div><Footer /></div>;
 }

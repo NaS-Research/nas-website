@@ -101,7 +101,7 @@ export const histoplasmosisModule = {
   references: [
     { label: "NIH Histoplasmosis Adult and Adolescent OI Guidance", href: "https://clinicalinfo.hiv.gov/en/guidelines/hiv-clinical-guidelines-adult-and-adolescent-opportunistic-infections/histoplasmosis?view=full" },
     { label: "NIH Treatment of HIV-Associated Opportunistic Infections", href: "https://clinicalinfo.hiv.gov/en/guidelines/hiv-clinical-guidelines-adult-and-adolescent-opportunistic-infections/treatment-hiv-associated" },
-    { label: "IDSA 2025 Histoplasmosis Guideline Update", href: "https://www.idsociety.org/practice-guideline/histoplasmosis-2025/" },
+    { label: "IDSA 2025 Histoplasmosis Guideline Update", href: "https://www.idsociety.org/practice-guideline/histoplasmosis" },
   ],
   disclaimer: "This module supports advanced education about histoplasmosis. It does not replace urgent evaluation, current guidelines, infectious-disease consultation, therapeutic drug monitoring, or patient-specific treatment.",
   questionBank: histoplasmosisQuestionBank,

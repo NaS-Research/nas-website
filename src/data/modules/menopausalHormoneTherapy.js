@@ -79,7 +79,7 @@ export const menopausalHormoneTherapyModule = {
   ],
   references: [
     { label: "The Menopause Society: 2022 Hormone Therapy Position Statement", href: "https://menopause.org/professional-resources/position-statements" },
-    { label: "The Menopause Society: 2023 Nonhormone Therapy Position Statement", href: "https://www.menopause.org/docs/default-source/professional/2023-nonhormone-therapy-position-statement.pdf" },
+    { label: "The Menopause Society: 2023 Nonhormone Therapy Position Statement", href: "https://menopause.org/professional-resources/position-statements" },
     { label: "FDA: Approved Menopausal Hormone Therapy Labeling Changes, 2026", href: "https://www.fda.gov/news-events/press-announcements/fda-approves-labeling-changes-menopausal-hormone-therapy-products" },
     { label: "USPSTF: Hormone Therapy for Primary Prevention of Chronic Conditions", href: "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/menopausal-hormone-therapy-preventive-medication" },
     { label: "FDA VEOZAH Prescribing Information", href: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/216578s004lbl.pdf" },

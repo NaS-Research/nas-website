@@ -22,10 +22,10 @@ export default function PharmacyReviewPage() {
           <div><span>{pharmacyCumulativeReview.length} questions in rotation</span><span>10 per attempt</span><span>Reasoning shown after submission</span></div>
         </div>
       </header>
-      <main className="nas-shell pharmacy-review-main">
+      <div data-page-main className="nas-shell pharmacy-review-main">
         <PharmacyAssessment questions={pharmacyCumulativeReview} questionCount={10} randomize moduleId="pharmacy-cumulative-review" />
         <aside className="lesson-disclaimer"><strong>Educational use only</strong><p>This review supports learning and does not replace current prescribing information, institutional policy, clinical guidelines, or professional judgment.</p></aside>
-      </main>
+      </div>
       <Footer />
     </div>
   );
