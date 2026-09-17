@@ -48,3 +48,9 @@
 .artwork-film-control { position: absolute; right: 1rem; bottom: 1rem; width: 2rem; height: 2rem; border: 1px solid #ffffff50; border-radius: 50%; background: #00000060; color: #fff; font-size: .75rem; display: grid; place-items: center; cursor: pointer; }
 .artwork-film-control:focus-visible { outline: 2px solid #d0b184; outline-offset: 3px; }
 @media (prefers-reduced-motion: reduce) { .artwork-film-control { display: none; } }
+
+/* Decorative covers have no transport UI; blocked playback keeps the still cover. */
+.city-cover-video { position: absolute; inset: 0; background-size: cover; background-position: center; }
+.city-cover-video video { pointer-events: none; }
+.city-cover-video video::-webkit-media-controls,
+.city-cover-video video::-webkit-media-controls-start-playback-button { display: none !important; -webkit-appearance: none; }

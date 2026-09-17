@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function CityCoverVideo({ src, poster, alt }) {
   const ref = useRef(null);
+  const [playing, setPlaying] = useState(false);
   useEffect(() => {
     const video = ref.current;
     const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -37,5 +38,10 @@ export default function CityCoverVideo({ src, poster, alt }) {
       video.pause();
     };
   }, [src]);
-  return <video ref={ref} src={src} poster={poster} autoPlay loop muted playsInline controls={false} preload="metadata" aria-label={alt} />;
+  return <div className="city-cover-video" style={{ backgroundImage: `url("${poster}")` }}>
+    <video ref={ref} src={src} autoPlay loop muted playsInline controls={false}
+      disablePictureInPicture disableRemotePlayback preload="auto" aria-label={alt}
+      onPlaying={() => setPlaying(true)} onPause={() => setPlaying(false)}
+      onError={() => setPlaying(false)} style={{ opacity: playing ? 1 : 0 }} />
+  </div>;
 }
