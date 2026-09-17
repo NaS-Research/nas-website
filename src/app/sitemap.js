@@ -18,7 +18,6 @@ export default function sitemap() {
     { path: "/learn/pharmacy/review", lastModified: "2026-08-24", changeFrequency: "monthly", priority: 0.8 },
     { path: "/about", lastModified: "2026-07-20", changeFrequency: "monthly", priority: 0.7 },
     { path: "/support", lastModified: "2026-07-20", changeFrequency: "monthly", priority: 0.6 },
-    { path: "/contact", lastModified: "2026-07-20", changeFrequency: "monthly", priority: 0.6 },
     { path: "/nicole", lastModified: "2026-07-20", changeFrequency: "monthly", priority: 0.6 },
     { path: "/sitemap", lastModified: "2026-07-22", changeFrequency: "monthly", priority: 0.4 },
     { path: "/legal/privacy", lastModified: "2026-07-21", changeFrequency: "yearly", priority: 0.3 },

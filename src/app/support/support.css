@@ -1,0 +1,38 @@
+.nas-page.support-page { background:#eae6df; color:#302d27; }
+.support-main { padding-top:9rem; padding-bottom:5rem; }
+.support-page main h1,.support-page main h2,.support-page main h3 { font-weight:450; letter-spacing:-.045em; line-height:1.1; margin:0; text-wrap:balance; }
+.support-page main p { font-size:1rem; line-height:1.7; color:#655e52; }
+.support-page main .support-label { font-size:.68rem; letter-spacing:.1em; text-transform:uppercase; color:#746342; margin:0 0 1.5rem; }
+.support-opening { text-align:center; margin-bottom:3.5rem; }
+.support-page main h1 { font-size:clamp(3.2rem,5.8vw,6rem); letter-spacing:-.055em; }
+.support-page h1 em { font-family:Georgia,serif; font-weight:400; color:#887044; }
+.support-opening > p:last-child { margin-top:1.5rem; }
+.support-desk { display:grid; grid-template-columns:1fr 1.45fr; max-width:66rem; margin:auto; background:#f8f7f3; border:1px solid #d4cec3; box-shadow:0 16px 55px #42331908; }
+.support-choices { min-width:0; margin:0; padding:2.5rem 1.5rem; border:0; border-right:1px solid #ded9ce; }
+.support-choices legend { float:left; width:100%; margin:0 0 2rem; padding:0 .75rem; font-size:.75rem; color:#706759; }
+.support-choices label { display:grid; grid-template-columns:1.4rem 1fr 1rem; align-items:center; gap:.7rem; position:relative; clear:both; padding:1.3rem .75rem; margin:.3rem 0; border:1px solid transparent; cursor:pointer; font-size:.9rem; transition:background .2s; }
+.support-choices label:hover { background:#efede6; }
+.support-choices label.is-selected { background:#e8e2d6; border-color:#d8cbb4; }
+.support-choice-number { font-size:.65rem; color:#817052; }
+.support-choices input { position:absolute; width:1px; height:1px; opacity:0; }
+.support-choices label:has(input:focus-visible) { outline:2px solid #796031; outline-offset:3px; }
+.support-choices label > span:last-child { opacity:0; }
+.support-choices label.is-selected > span:last-child { opacity:1; }
+.support-letter { padding:3rem; min-height:34rem; }
+.support-page .support-letter h2 { font-size:clamp(2rem,3vw,3rem); margin-bottom:1.5rem; }
+.support-letter > p { margin-bottom:1.5rem; }
+.support-page .support-letter h3 { font-size:.85rem; letter-spacing:0; margin-block:2rem 1rem; }
+.support-letter ul { padding-left:1.1rem; margin-bottom:2rem; list-style:disc; color:#655e52; font-size:.85rem; line-height:1.8; }
+.support-email-button { display:flex; justify-content:space-between; align-items:center; gap:3rem; width:fit-content; background:#302d27; color:#fffdf8; padding:.9rem 1.3rem; border-radius:3px; font-size:.85rem; }
+.support-email-button:hover { background:#594a32; }
+.support-page .support-mail-note { font-size:.7rem; margin:.6rem 0 0; color:#766e61; }
+.support-related { display:inline-block; margin-top:1.5rem; text-decoration:underline; text-underline-offset:.3rem; font-size:.8rem; }
+.support-address { grid-column:1/-1; display:flex; justify-content:space-between; gap:1rem; padding:1.5rem 2.25rem; border-top:1px solid #ded9ce; font-size:.8rem; color:#706759; }
+.support-address a { color:#302d27; overflow-wrap:anywhere; }
+.support-notes { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:3rem; max-width:66rem; margin:3rem auto 0; }
+.support-notes > div > span { display:block; font-size:.65rem; color:#86724f; margin-bottom:1rem; }
+.support-page .support-notes h2 { font-size:1.1rem; letter-spacing:-.02em; margin-bottom:.7rem; }
+.support-page .support-notes p { font-size:.82rem; margin:0; }
+.support-page main a:focus-visible { outline:2px solid #796031; outline-offset:5px; }
+@media(max-width:760px) { .support-main { padding-top:7rem; padding-bottom:3.5rem; } .support-opening { text-align:left; margin-bottom:2.5rem; } .support-opening br { display:none; } .support-desk { grid-template-columns:1fr; } .support-choices { padding:1.5rem; border-right:0; border-bottom:1px solid #ded9ce; } .support-choices legend { margin-bottom:1rem; } .support-choices label { padding:1rem .75rem; } .support-letter { padding:2rem 1.5rem; min-height:0; } .support-address { flex-direction:column; padding:1.5rem; font-size:.75rem; } .support-notes { grid-template-columns:1fr; gap:1.8rem; } .support-notes > div { border-top:1px solid #cbc3b6; padding-top:1.25rem; } }
+@media(prefers-reduced-motion:reduce) { .support-choices label { transition:none; } }

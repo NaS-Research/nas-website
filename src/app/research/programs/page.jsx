@@ -1,58 +1,21 @@
-import InformationalPage from "@/components/InformationalPage";
+import Image from "next/image";
+import Link from "next/link";
+import Footer from "@/components/Footer";
+import { researchProjects } from "@/data/researchProjects";
+import { publicationArtwork } from "@/data/publicationArtwork";
+import "./programs.css";
 
-export const metadata = {
-  alternates: { canonical: "/research/programs" },
-  title: "Research Programs | NaS Research",
-  description: "Explore NaS Core, the oncology research program, and the governed studies currently being developed at NaS Research.",
-};
-
-const sections = [
-  {
-    title: "NaS Core",
-    copy: "NaS Core is the research system through which we turn a scientific question into a governed study. It records the question, protocol, data provenance, code revision, analysis, review, and release state so the path from evidence to claim can be examined and reproduced.",
-  },
-  {
-    title: "Oncology research",
-    copy: "Breast cancer research is the first serious proving ground for NaS Core. The oncology program is designed to test the complete research process, from question selection and literature review through data qualification, statistical analysis, external validation, and responsible publication.",
-  },
-  {
-    title: "NAS-BRCA-001: Qualifying the system",
-    copy: "Our first study uses public TCGA-BRCA data to reproduce the established association between pathologic stage and overall survival. Its purpose is to test whether NaS Core can enforce analysis gates, preserve provenance, retain failed diagnostics, and produce an honest platform judgment. A governed run has been completed, but its findings remain withheld during pre-publication review.",
-  },
-  {
-    title: "NAS-BRCA-002: PAM50 reliability and abstention",
-    copy: "Our proposed discovery study asks whether a fixed, patient-independent PAM50 procedure can identify analysis-ready, unstable, insufficient-data, and abstain states without claiming biological truth or clinical utility. The revised question remains in evidence review and bounded metadata feasibility work. Molecular and outcome analysis have not been authorized.",
-  },
-  {
-    title: "Evidence that survives review",
-    copy: "Numerical results come from deterministic executed code, not generated prose. Research plans are versioned before outcome analysis. Data receipts, checksums, diagnostics, failed models, null findings, limitations, and review decisions remain part of the permanent record rather than disappearing when they are inconvenient.",
-  },
-  {
-    title: "The release must be earned",
-    copy: "An active study is not a publication. Work remains outside the public research library until its protocol, evidence, analysis, limitations, and approvals are assembled into a frozen release. The web edition, figures, tables, citations, and version of record must all agree before NaS presents a result publicly.",
-  },
-];
+const description = "Explore NaS oncology studies, published research, and work in progress.";
+export const metadata = { title: "Research Programs | NaS Research", description, alternates: { canonical: "/research/programs" }, openGraph: { title: "Research Programs | NaS Research", description, url: "/research/programs" } };
 
 export default function ResearchProgramsPage() {
-  return (
-    <InformationalPage
-      eyebrow="Research programs"
-      title="Research should be able to show its work."
-      introduction="NaS Core is the system through which we develop research from question to release. It connects scientific reasoning, evidence, data, deterministic analysis, review, and publication without allowing any one layer to hide the others."
-      status="Current research · Hyde Park, Chicago"
-      facts={[
-        { label: "Research system", value: "NaS Core" },
-        { label: "Active program", value: "Oncology" },
-        { label: "Current studies", value: "NAS-BRCA-001 and NAS-BRCA-002" },
-        { label: "Release standard", value: "Reviewed, frozen, and reproducible" },
-      ]}
-      sections={sections}
-      sectionLabel="Current program"
-      sectionTitle="A research system tested through real questions."
-      closingTitle="Public work begins after the gate."
-      closingCopy="The research library contains work that NaS has released publicly. Current studies will enter it only after their evidence, analysis, limitations, and review records support a responsible release."
-      actionLabel="Read published research"
-      actionHref="/research"
-    />
-  );
+  const featured = researchProjects.find(project => project.slug === "nas-brca-002");
+  const art = publicationArtwork["pam50-technical-repeatability"];
+  return <div className="nas-page programs-page"><main>
+    <header className="nas-shell programs-opening"><p className="programs-kicker">Research programs</p><div><h1>Questions.<br /><span>Under examination.</span></h1><p>Our current oncology work examines the methods used to study breast cancer. Each study begins with a defined question and keeps its limitations in view.</p></div><nav aria-label="On this page"><a href="#featured-study">Featured study ↓</a><a href="#study-record">All studies ↓</a><a href="#research-method">Our method ↓</a></nav></header>
+    <section id="featured-study" className="nas-shell programs-feature"><div className="programs-feature-art"><Image src={art.heroSrc} alt={art.heroAlt} fill sizes="(max-width: 760px) 100vw, 60vw" preload /><span>Conceptual cell illustration · not an observed specimen</span></div><div className="programs-feature-copy"><p className="programs-kicker">Featured publication / {featured.id}</p><span className="programs-status">{featured.status}</span><h2>The same sample.<br />The same answer?</h2><p>{featured.question}</p><p className="programs-feature-boundary">A study of technical repeatability. It does not establish diagnostic accuracy or clinical utility.</p><Link className="programs-button" href={featured.publicationUrl}>Read the study <span aria-hidden="true">↗</span></Link></div></section>
+    <section id="study-record" className="nas-shell programs-register"><div className="programs-register-heading"><div><p className="programs-kicker">Oncology / Study index</p><h2>The work, on record.</h2></div><p>Published reports and work in progress.</p></div>{[...researchProjects].sort((a,b) => Number(Boolean(b.publicationUrl)) - Number(Boolean(a.publicationUrl))).map(project => <article className="programs-study" key={project.id}><div><p className="programs-kicker">{project.id}</p><span className="programs-status">{project.status}</span></div><div><h3><Link href={project.publicationUrl ?? `/research/projects/${project.slug}`}>{project.shortTitle} <span aria-hidden="true">↗</span></Link></h3><p>{project.question}</p><p className="programs-detail">{project.statusDetail}</p></div></article>)}</section>
+    <section id="research-method" className="programs-method"><div className="nas-shell"><div className="programs-method-heading"><p className="programs-kicker">How a study takes shape</p><h2>A result needs<br />a record behind it.</h2><p>NaS Core keeps the study question, protocol, sources, code revision, and analysis together.</p></div><ol className="programs-steps"><li><span>01</span><h3>Define the question</h3><p>Set the analysis plan before examining results.</p></li><li><span>02</span><h3>Check the method</h3><p>Run the analysis and retain its diagnostics.</p></li><li><span>03</span><h3>Keep the evidence</h3><p>Document results, sources, and limitations together.</p></li><li><span>04</span><h3>Publish the record</h3><p>Release the report and supporting materials that can be shared.</p></li></ol><Link className="programs-link" href="/research">Browse the research library ↗</Link></div></section>
+    <aside className="nas-shell programs-horizon"><p className="programs-kicker">Beyond today’s studies</p><h2>A wider purpose.</h2><p>Our long-term interests extend across genetics, medicine, agriculture, and the environment. The studies above are our current oncology work; the broader institution remains a future ambition.</p><Link className="programs-link" href="/about#vision">Explore the long-term vision ↗</Link></aside>
+  </main><Footer /></div>;
 }

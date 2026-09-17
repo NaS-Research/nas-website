@@ -19,7 +19,6 @@ const groups = [
       { label: "Home", href: "/", detail: "The work and current publications" },
       { label: "About NaS", href: "/about", detail: "Mission, direction, and long-term vision" },
       { label: "Work with NaS", href: "/support", detail: "Ways to strengthen the research" },
-      { label: "Contact", href: "/contact", detail: "Direct correspondence with NaS" },
     ],
   },
   {

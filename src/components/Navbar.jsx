@@ -13,10 +13,7 @@ const navigation = [
   { label: "Work with NaS", href: "/support" },
 ];
 
-const mobileNavigation = [
-  ...navigation,
-  { label: "Contact", href: "/contact" },
-];
+const mobileNavigation = navigation;
 
 function isActivePath(pathname, href) {
   if (href === "/research/programs") {
@@ -158,8 +155,8 @@ export default function Navbar() {
         </div>
 
         <Link
-          href="/contact"
-          className={`nas-navbar__contact ${isActivePath(pathname, "/contact") ? "nas-navbar__contact--active" : ""}`}
+          href="/support"
+          className={`nas-navbar__contact ${isActivePath(pathname, "/support") ? "nas-navbar__contact--active" : ""}`}
         >
           Contact <span aria-hidden="true">↗</span>
         </Link>
