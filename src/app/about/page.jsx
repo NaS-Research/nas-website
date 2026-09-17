@@ -1,4 +1,5 @@
 import Image from "next/image";
+import PageNavigationMotion from "@/components/PageNavigationMotion";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import ArtworkFilm from "@/components/research/ArtworkFilm";
@@ -8,7 +9,7 @@ const description = "Explore NaS today and its long-term vision: a life sciences
 export const metadata = { title: "About | NaS Research", description, alternates: { canonical: "/about" }, openGraph: { title: "About NaS Research", description, url: "/about", type: "website" } };
 
 export default function AboutPage() {
-  return <div className="nas-page about-nas"><div data-page-main>
+  return <div className="nas-page about-nas"><PageNavigationMotion /><div data-page-main>
     <header className="nas-shell about-opening">
       <p className="about-label">About NaS Research <span>Hyde Park, Chicago</span></p>
       <h1>A home for<br /><span>the life sciences.</span></h1>
