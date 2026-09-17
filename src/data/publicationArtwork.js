@@ -1,8 +1,8 @@
 // Original NaS artwork; conceptual images do not represent measured outcomes.
 export const publicationArtwork = {
   "pam50-technical-repeatability": {
-    src: "/research/nas-brca-002/pam50-cover-v2.webp",
-    alt: "Microscopy-informed conceptual illustration of irregular breast-cancer cells with heterogeneous nuclei and extracellular matrix",
+    src: "/research/nas-brca-002/pam50-method-v2.webp",
+    alt: "Microscopy-informed conceptual cutaway of a breast-cancer cell showing its nucleus, chromatin, organelles, and single-stranded RNA transcripts",
     heroSrc: "/research/nas-brca-002/pam50-method-v2.webp",
     heroAlt: "Microscopy-informed conceptual cutaway of a breast-cancer cell showing its nucleus, chromatin, organelles, and single-stranded RNA transcripts",
     creditUrl: "/research/nas-brca-002/pam50-artwork-v1.txt",
