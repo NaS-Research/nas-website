@@ -13,14 +13,16 @@ export default function WorkspaceHeart() {
   const [failed, setFailed] = useState(false);
   const [attempt, setAttempt] = useState(0);
   useEffect(() => {
+    // Prewarm several screens ahead, while visitors are still at the opening.
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) { setActive(true); observer.disconnect(); }
-    }, { rootMargin: "200px" });
+    }, { rootMargin: "10000px" });
     observer.observe(host.current);
     return () => observer.disconnect();
   }, []);
   useEffect(() => {
     if (!active) return;
+    // Start on page mount so the opening gives the detailed model time to load.
     let cancelled = false;
     const timeout = window.setTimeout(() => { if (!cancelled) setFailed(true); }, 45000);
     const fail = () => { if (!cancelled) { setFailed(true); window.clearTimeout(timeout); } };
@@ -32,7 +34,6 @@ export default function WorkspaceHeart() {
         ui_controls: 0, ui_help: 0, ui_hint: 0, ui_infos: 0, ui_settings: 0, ui_stop: 0,
         success(api) {
           if (cancelled) return;
-          api.start();
           api.addEventListener("viewerready", () => {
             if (cancelled) return;
             api.setBackground({ color: [0, 0, 0] });
@@ -46,6 +47,7 @@ export default function WorkspaceHeart() {
               setReady(true);
             });
           });
+          api.start();
         }, error: fail,
       });
     }
@@ -82,8 +84,8 @@ export default function WorkspaceHeart() {
   }
   return <div className="workspace-heart-interactive" ref={host}>
     <div className="workspace-heart-stage">
-      {active && <iframe key={attempt} ref={frame} title="Rotate and zoom the realistic human heart" allow="autoplay; fullscreen" allowFullScreen style={{ opacity: ready && !failed ? 1 : 0 }} />}
-      {(!ready || failed) && <div className="workspace-heart-poster"><Image src="/learn/models/realistic-heart-black.png" alt="Realistic human heart" fill sizes="(max-width: 700px) 100vw, 55vw" /><p role="status">{failed ? <>The 3D viewer could not load. <button onClick={() => { setFailed(false); setReady(false); setAttempt(n => n + 1); }}>Try again</button></> : "Loading interactive heart…"}</p></div>}
+      {active && <iframe key={attempt} ref={frame} title="Rotate and zoom the realistic human heart" allow="autoplay; fullscreen" allowFullScreen />}
+      <div className="workspace-heart-poster" data-ready={ready && !failed} aria-hidden={ready && !failed}><Image src="/learn/models/realistic-heart-black.png" alt="Realistic human heart" fill loading="eager" sizes="(max-width: 700px) 100vw, 55vw" />{failed && <p role="status">The 3D viewer could not load. <button onClick={() => { setFailed(false); setReady(false); setAttempt(n => n + 1); }}>Try again</button></p>}</div>
     </div>
     <div className="workspace-heart-toolbar" aria-label="Heart view controls">
       <span>{ready && !failed ? "Drag to rotate · Pinch or scroll to zoom" : "Interactive 3D preview"}</span>
