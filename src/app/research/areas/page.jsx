@@ -8,7 +8,7 @@ const areas = [
  {name:"Chronic & Metabolic Disease",description:"Chronic disease and the biology of metabolism."},
  {name:"Genomics & Personalized Medicine",description:"Genetic variation, its effects on biology, and its relevance to individual health.",href:"/research/alphagenome-atlas-rnu4-2",title:"AlphaGenome Atlas in RNU4-2"},
  {name:"Infectious Disease & Epidemiology",description:"Pathogens, host responses, and patterns of disease across populations."},
- {name:"Neuro & Degenerative Disease",description:"The nervous system and the processes underlying neurodegenerative disease."},
+ {name:"Neuroscience & Neurodegenerative Disease",description:"The nervous system and the processes underlying neurodegenerative disease."},
  {name:"Oncology",description:"Cancer biology, tumor classification, and the methods used to study them.",href:"/research/pam50-technical-repeatability",title:"PAM50 technical repeatability"},
  {name:"Regenerative Medicine",description:"Repair, restoration, and tissue biology."},
  {name:"Systems Biology",description:"How biological processes interact, from molecular mechanisms to whole systems."},
@@ -16,8 +16,8 @@ const areas = [
 export default function ResearchAreasPage(){return <div className="nas-page areas-page">
  <header className="nas-shell areas-opening"><Link className="areas-back" href="/research">← Research</Link><h1 id="research-areas-title">Research areas</h1><p>The fields guiding our research<br />and long-term direction.</p></header>
  <section className="nas-shell areas-current" aria-labelledby="research-areas-title">
-  {areas.map((area,index)=><article className="areas-feature" key={area.name}>
-   <div className="areas-name"><span>{String(index+1).padStart(2,"0")}</span><h2>{area.name}</h2></div>
+  {areas.map(area=><article className="areas-feature" key={area.name}>
+   <div className="areas-name"><h2>{area.name}</h2></div>
    <div><p className="areas-description">{area.description}</p>
     {area.href && <Link className="areas-study" href={area.href} aria-label={`Explore research: ${area.title}`}>Explore research <span aria-hidden="true">↗</span></Link>}
    </div>
