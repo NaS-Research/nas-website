@@ -1,11 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import { scrollPageTo } from "@/lib/pageScroll.mjs";
 import "./footer.css";
 
 const groups = [
-  { title: "Research", links: [["Publications", "/research"], ["Research programs", "/research/programs"], ["NaS Cortex", "/research/introducing-nas-cortex"], ["NaS Denials", "/research/introducing-nas-denials"]] },
-  { title: "Learn", links: [["NaS Learn", "/learn"], ["Pharmacy", "/learn/pharmacy"], ["Visual Atlas", "/learn/pharmacy/atlas"], ["Drug Library", "/learn/pharmacy/drugs"]] },
+  { title: "Research", links: [["Publications", "/research"], ["Research areas", "/research/areas"], ["Products", "/products"], ["NaS Cortex", "/research/introducing-nas-cortex"], ["NaS Denials", "/research/introducing-nas-denials"]] },
+  { title: "Workspace", links: [["Explore workspace", "/workspace"], ["NaS Learn", "/learn"], ["Pharmacy", "/learn/pharmacy"], ["Visual Atlas", "/learn/pharmacy/atlas"], ["Drug Library", "/learn/pharmacy/drugs"]] },
   { title: "About NaS", links: [["Our purpose", "/about"], ["Work with NaS", "/support"]] },
 ];
 
@@ -30,7 +31,7 @@ export default function Footer() {
         <div className="site-closing__base">
           <p>© {new Date().getFullYear()} NaS Research</p>
           <nav aria-label="Legal"><Link href="/legal/privacy">Privacy</Link><Link href="/legal/terms">Terms</Link></nav>
-          <button type="button" onClick={() => window.scrollTo({ top: 0, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" })}>Back to top <span aria-hidden="true">↑</span></button>
+          <button type="button" onClick={() => scrollPageTo(document.body)}>Back to top <span aria-hidden="true">↑</span></button>
         </div>
       </div>
     </footer>

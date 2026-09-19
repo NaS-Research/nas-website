@@ -1,0 +1,16 @@
+.nas-page.areas-page { background:#080909; color:#ecece8; }
+.areas-opening { padding-block:clamp(8rem,13vw,12rem) clamp(4rem,8vw,7rem); }
+.areas-back { color:#a9a99f; font-size:.85rem; }
+.areas-opening h1 { font-size:clamp(3.2rem,8vw,7.5rem); font-weight:450; line-height:1.05; letter-spacing:-.065em; margin:3rem 0 2rem; }
+.areas-opening>p { color:#a6a6a0; font-size:clamp(1.25rem,2.3vw,2rem); line-height:1.4; letter-spacing:-.025em; }
+.areas-feature { display:grid; grid-template-columns:1fr 1.3fr; gap:4rem; padding:clamp(2rem,4vw,3.5rem) 0; border-top:1px solid #ffffff20; }
+.areas-name>span { font-size:.75rem; color:#b9a27f; }
+.areas-name h2 { font-size:clamp(1.75rem,3vw,2.65rem); font-weight:450; letter-spacing:-.045em; margin:0; line-height:1.2; text-wrap:balance; overflow-wrap:break-word; }
+.areas-description { color:#aaa9a3; font-size:1rem; line-height:1.75; max-width:38rem; }
+.areas-study { display:inline-flex; align-items:center; gap:.6rem; margin-top:1rem; color:#d8c3a3; font-size:.85rem; text-underline-offset:5px; }
+.areas-study:hover { text-decoration:underline; }
+.areas-study:focus-visible { outline:2px solid #b9a27f; outline-offset:6px; border-radius:2px; }
+.areas-outlook { border-top:1px solid #ffffff20; padding-top:2rem; padding-bottom:2rem; }
+.areas-vision { display:inline-block; margin-top:1rem; font-size:.85rem; color:#cbb695; }
+.areas-page>.site-closing { --footer-blend-height:clamp(5rem,10vw,10rem); }
+@media(max-width:700px) { .areas-feature { grid-template-columns:1fr; gap:1rem; } }

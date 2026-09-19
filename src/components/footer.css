@@ -1,4 +1,20 @@
-.site-closing { background: #111214; color: #f0f0f0; border-top: 1px solid #303135; padding: 0 0 2.5rem; }
+/* Shared opacity fade reveals each page's own background at the top.
+   It reaches solid charcoal before navigation begins, keeping text readable. */
+.site-closing {
+  --footer-blend-height: clamp(22rem, 48vw, 46rem);
+  background: linear-gradient(180deg,
+    rgb(17 18 20 / 0) 0,
+    rgb(17 18 20 / .04) calc(var(--footer-blend-height) * .12),
+    rgb(17 18 20 / .15) calc(var(--footer-blend-height) * .25),
+    rgb(17 18 20 / .35) calc(var(--footer-blend-height) * .40),
+    rgb(17 18 20 / .65) calc(var(--footer-blend-height) * .60),
+    rgb(17 18 20 / .85) calc(var(--footer-blend-height) * .75),
+    rgb(17 18 20 / .96) calc(var(--footer-blend-height) * .88),
+    #111214 var(--footer-blend-height), #111214 100%);
+  color: #f0f0f0;
+  border-top: 0;
+  padding: var(--footer-blend-height) 0 2.5rem;
+}
 .site-closing__inner { width: calc(100% - (2 * var(--nas-gutter))); max-width: var(--nas-wide); margin-inline: auto; }
 .site-closing__main { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.2fr); gap: 4rem; padding-bottom: clamp(3rem,6vw,5rem); }
 .site-closing__brand { display: inline-flex; align-items: baseline; gap: .75rem; font-size: 2.8rem; font-weight: 550; letter-spacing: -.075em; line-height: 1; }
@@ -9,7 +25,7 @@
 .site-closing__group h2 { font-size: .75rem; font-weight: 600; margin: 0 0 1.35rem; }
 .site-closing__group a { display: block; width: fit-content; color: #b8b9bd; font-size: .82rem; line-height: 1.5; padding: .4rem 0; }
 .site-closing a:hover { color: #fff; text-decoration: underline; text-underline-offset: .3em; }
-.site-closing__base { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem 2rem; border-top: 1px solid #303135; padding-top: 1.4rem; color: #929398; font-size: .72rem; }
+.site-closing__base { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem 2rem; border-top: 1px solid rgba(255, 255, 255, .075); padding-top: 1.4rem; color: #929398; font-size: .72rem; }
 .site-closing__base p { margin: 0; }
 .site-closing__base nav { display: flex; gap: 1.5rem; }
 .site-closing__base button { margin-left: auto; color: #b8b9bd; padding: .5rem 0 .5rem 1rem; cursor: pointer; }
@@ -17,10 +33,15 @@
 .site-closing a:focus-visible, .site-closing button:focus-visible { outline: 2px solid #786041; outline-offset: 5px; }
 @media(max-width: 767px) { .site-closing__main { grid-template-columns: 1fr; gap: 3rem; } .site-closing__navigation { gap: 1rem; } .site-closing__group a { font-size: .76rem; } .site-closing__base { gap: 1rem; } .site-closing__base p { flex-basis: 100%; } }
 
-.site-closing__social { display: flex; align-items: center; flex-wrap: wrap; gap: 1.5rem 2rem; padding: 2rem 0; margin-bottom: 4rem; border-bottom: 1px solid #303135; font-size: .85rem; }
+.site-closing__social { display: flex; align-items: center; flex-wrap: wrap; gap: 1.5rem 2rem; padding: 2rem 0; margin-bottom: 4rem; border-bottom: 1px solid rgba(255, 255, 255, .075); font-size: .85rem; }
 .site-closing__social > span { color: #f0f0f0; margin-right: 1rem; }
 .site-closing__social a { color: #a7a8ad; }
 .site-closing__identity p { font-size: clamp(1.35rem,2.3vw,2rem); letter-spacing: -.035em; line-height: 1.3; max-width: 18rem; }
 .site-closing__group h2 { font-size: .95rem; font-weight: 450; color: #f0f0f0; }
 .site-closing__group a { font-size: .85rem; padding-block: .5rem; }
 @media(max-width: 767px) { .site-closing__social { margin-bottom: 2.5rem; gap: 1rem; } .site-closing__navigation { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 2rem; } }
+
+
+/* Keep the research directory close to its footer without losing the fade. */
+.research-index-page .research-index-main { padding-bottom: 0; }
+.research-index-page > .site-closing { --footer-blend-height: clamp(5rem, 9vw, 9rem); }

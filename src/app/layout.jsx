@@ -1,6 +1,8 @@
 import "./globals.css";
+import "./accessibility.css";
 import "./publication-logo.css";
 import Navbar from "@/components/Navbar";
+import PageNavigationMotion from "@/components/PageNavigationMotion";
 
 const siteDescription =
   "NaS Research builds systems, knowledge foundations, and scientific instruments for investigating difficult questions across the life sciences.";
@@ -96,7 +98,7 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en">
       <head>
         <script
           type="application/ld+json"
@@ -114,8 +116,10 @@ export default function RootLayout({ children }) {
         <meta name="theme-color" content="#000000" />
       </head>
       <body className="bg-red-500 min-h-screen antialiased">
+        <a className="nas-skip-link" href="#main-content">Skip to content</a>
         <Navbar />
-        <main>
+        <PageNavigationMotion />
+        <main id="main-content" tabIndex={-1}>
           {children}
         </main>
       </body>
