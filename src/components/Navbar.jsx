@@ -30,7 +30,7 @@ function isActivePath(pathname, href) {
   return pathname === href || pathname.startsWith(`${href}/`);
 }
 
-export default function Navbar() {
+export default function Navbar({ authEnabled = false }) {
   const pathname = usePathname();
   const headerRef = useRef(null);
   const triggerRef = useRef(null);
@@ -156,6 +156,7 @@ export default function Navbar() {
           })}
         </div>
 
+        {authEnabled && <Link href="/account" className="nas-nav-login">Log in</Link>}
         <Link href="/workspace" className="nas-nav-workspace" onClick={() => setMenuOpen(false)}>Workspace <span aria-hidden="true">↗</span></Link>
         <button ref={triggerRef} type="button" className="nas-nav-toggle"
           aria-label={menuOpen ? "Close navigation" : "Open navigation"}

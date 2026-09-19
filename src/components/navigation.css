@@ -20,3 +20,7 @@
 @media(max-width:767px) { .nas-navbar .nas-navbar__links { display:none; } .nas-navbar .nas-nav-workspace { font-size:.75rem; padding:.6rem .85rem; } .nas-navbar .nas-nav-toggle { padding-left:1rem; } .nas-nav-panel { padding:2rem 1.5rem; } .nas-nav-grid { grid-template-columns:1fr 1fr; gap:2rem; } .nas-nav-primary { grid-column:1/-1; flex-direction:row; flex-wrap:wrap; gap:1rem 1.5rem; } .nas-nav-primary a {font-size:1.6rem} .nas-nav-group a {font-size:.85rem} .nas-nav-bottom {line-height:1.6; margin-top:2.5rem} }
 @media(prefers-reduced-motion:reduce) { .nas-nav-panel { animation:none; } }
 .nas-navbar.nas-navbar--open { height:3.75rem; min-height:0; }
+
+.nas-navbar .nas-nav-login { margin-left:auto; margin-right:1.5rem; color:#aaa; font-size:.8rem; }
+.nas-nav-login + .nas-nav-workspace { margin-left:0; }
+@media(max-width:767px) { .nas-navbar .nas-nav-login { margin-right:.75rem; font-size:.75rem; } }

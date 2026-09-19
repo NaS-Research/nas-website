@@ -2,6 +2,7 @@ import "./globals.css";
 import "./accessibility.css";
 import "./publication-logo.css";
 import Navbar from "@/components/Navbar";
+import { authReady } from "@/lib/auth/config.mjs";
 import PageNavigationMotion from "@/components/PageNavigationMotion";
 
 const siteDescription =
@@ -117,7 +118,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="bg-red-500 min-h-screen antialiased">
         <a className="nas-skip-link" href="#main-content">Skip to content</a>
-        <Navbar />
+        <Navbar authEnabled={authReady()} />
         <PageNavigationMotion />
         <main id="main-content" tabIndex={-1}>
           {children}
