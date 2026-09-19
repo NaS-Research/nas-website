@@ -40,3 +40,7 @@
 .site-closing__group h2 { font-size: .95rem; font-weight: 450; color: #f0f0f0; }
 .site-closing__group a { font-size: .85rem; padding-block: .5rem; }
 @media(max-width: 767px) { .site-closing__social { margin-bottom: 2.5rem; gap: 1rem; } .site-closing__navigation { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 2rem; } }
+
+/* Keep the research directory close to its footer without losing the fade. */
+.research-index-page .research-index-main { padding-bottom: 0; }
+.research-index-page > .site-closing { --footer-blend-height: clamp(5rem, 9vw, 9rem); }
