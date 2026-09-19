@@ -156,7 +156,7 @@ export default function Navbar({ authEnabled = false }) {
           })}
         </div>
 
-        {authEnabled && <Link href="/account" className="nas-nav-login">Log in</Link>}
+        <Link href={authEnabled ? "/account" : "/login"} className="nas-nav-login">Log in</Link>
         <Link href="/workspace" className="nas-nav-workspace" onClick={() => setMenuOpen(false)}>Workspace <span aria-hidden="true">↗</span></Link>
         <button ref={triggerRef} type="button" className="nas-nav-toggle"
           aria-label={menuOpen ? "Close navigation" : "Open navigation"}
