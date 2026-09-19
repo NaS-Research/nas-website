@@ -9,13 +9,14 @@ const navigation = [
   { label: "About", href: "/about" },
   { label: "Research", href: "/research" },
   { label: "Products", href: "/products" },
-  { label: "Learn", href: "/learn" },
+  { label: "Workspace", href: "/workspace" },
   { label: "Work with NaS", href: "/support" },
 ];
 
 const mobileNavigation = navigation;
 
 function isActivePath(pathname, href) {
+  if (href === "/workspace") return pathname === "/workspace" || pathname === "/learn" || pathname.startsWith("/learn/");
   if (href === "/products") {
     return pathname === href;
   }
