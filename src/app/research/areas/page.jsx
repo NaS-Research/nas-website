@@ -3,21 +3,27 @@ import Footer from "@/components/Footer";
 import "./areas.css";
 const description = "Explore NaS research in oncology and genomics, and the scientific interests guiding our longer-term direction.";
 export const metadata = {title:"Research Areas | NaS Research",description,alternates:{canonical:"/research/areas"},openGraph:{title:"Research areas | NaS Research",description,url:"/research/areas"}};
-const current = [
- {name:"Oncology",number:"01",question:"Understanding the methods behind cancer research.",description:"Our published PAM50 study examines whether repeated measurements from the same reported tumor RNA source produce the same breast-cancer subtype label.",href:"/research/pam50-technical-repeatability",title:"PAM50 technical repeatability"},
- {name:"Genomics",number:"02",question:"Testing how predictions relate to measured biology.",description:"Our RNU4-2 benchmark compares AlphaGenome Atlas variant-impact scores with published experimental measurements, including the limits of that comparison.",href:"/research/alphagenome-atlas-rnu4-2",title:"AlphaGenome Atlas in RNU4-2"},
-];
-const future = [
- ["Immunology","Autoimmune and inflammatory disease."],
- ["Metabolic disease","Chronic disease and the biology of metabolism."],
- ["Infectious disease","Pathogens, host responses, and epidemiology."],
- ["Neuroscience","The nervous system and neurodegenerative disease."],
- ["Regenerative medicine","Repair, restoration, and tissue biology."],
- ["Systems biology","How biological processes work together."],
-];
+const areas = [
+ {name:"Autoimmune & Inflammatory Disease",description:"Immune regulation, autoimmunity, and the mechanisms of inflammation."},
+ {name:"Chronic & Metabolic Disease",description:"Chronic disease and the biology of metabolism."},
+ {name:"Genomics & Personalized Medicine",description:"Our RNU4-2 benchmark compares AlphaGenome Atlas variant-impact scores with published experimental measurements, including the limits of that comparison.",href:"/research/alphagenome-atlas-rnu4-2",title:"AlphaGenome Atlas in RNU4-2"},
+ {name:"Infectious Disease & Epidemiology",description:"Pathogens, host responses, and patterns of disease across populations."},
+ {name:"Neuro & Degenerative Disease",description:"The nervous system and the processes underlying neurodegenerative disease."},
+ {name:"Oncology",description:"Our published PAM50 study examines whether repeated measurements from the same reported tumor RNA source produce the same breast-cancer subtype label.",href:"/research/pam50-technical-repeatability",title:"PAM50 technical repeatability"},
+ {name:"Regenerative Medicine",description:"Repair, restoration, and tissue biology."},
+ {name:"Systems Biology",description:"How biological processes interact, from molecular mechanisms to whole systems."},
+].sort((a,b)=>a.name.localeCompare(b.name));
 export default function ResearchAreasPage(){return <div className="nas-page areas-page">
  <header className="nas-shell areas-opening"><Link className="areas-back" href="/research">← Research</Link><h1>Research areas.</h1><p>Where our work begins.<br />Where it can grow.</p></header>
- <section className="nas-shell areas-current" aria-labelledby="areas-current-title"><div className="areas-section-heading"><h2 id="areas-current-title">Current work</h2><span>Areas with published studies</span></div>{current.map(area=><article className="areas-feature" key={area.name}><div className="areas-name"><span>{area.number}</span><h3>{area.name}</h3></div><div><p className="areas-question">{area.question}</p><p className="areas-description">{area.description}</p><Link className="areas-study" href={area.href}><span><small>Published study</small>{area.title}</span><span aria-hidden="true">↗</span></Link></div></article>)}</section>
- <section className="nas-shell areas-future" aria-labelledby="areas-future-title"><div className="areas-future-intro"><div><p className="areas-eyebrow">The longer view</p><h2 id="areas-future-title">Future interests.</h2></div><p>These fields inform our long-term direction. They are not established NaS research programs; dedicated work will depend on the people, resources, and questions we can responsibly pursue.</p></div><div className="areas-future-grid">{future.map(([name,copy])=><div key={name}><h3>{name}</h3><p>{copy}</p></div>)}</div><Link className="areas-vision" href="/about#vision">Explore the wider NaS vision ↗</Link></section>
+ <section className="nas-shell areas-current" aria-labelledby="areas-current-title">
+  <div className="areas-section-heading"><h2 id="areas-current-title">Eight areas. A long-term direction.</h2><span>Published work and planned areas</span></div>
+  {areas.map((area,index)=><article className="areas-feature" key={area.name}>
+   <div className="areas-name"><span>{String(index+1).padStart(2,"0")}</span><h3>{area.name}</h3></div>
+   <div><p className={`areas-status${area.href ? " areas-status-published" : ""}`}>{area.href ? "Published work" : "Planned area"}</p><p className="areas-description">{area.description}</p>
+    {area.href && <Link className="areas-study" href={area.href}><span><small>Published study</small>{area.title}</span><span aria-hidden="true">↗</span></Link>}
+   </div>
+  </article>)}
+  <div className="areas-outlook"><p>Planned areas describe our longer-term direction. Dedicated research will develop as the people, resources, and questions come together.</p><Link className="areas-vision" href="/about#vision">Explore the wider NaS vision ↗</Link></div>
+ </section>
  <Footer />
  </div>}
