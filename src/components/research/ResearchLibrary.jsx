@@ -7,6 +7,8 @@ import { useEffect, useMemo, useRef, useState } from "react";
 
 import { matchesResearchType } from "@/data/researchTaxonomy.mjs";
 
+const viewPageSizes = { grid: 6, compact: 7, preview: 3 };
+
 export default function ResearchLibrary({ items, types }) {
   const [activeType, setActiveType] = useState("All");
   const [area, setArea] = useState("All areas");
@@ -29,7 +31,7 @@ export default function ResearchLibrary({ items, types }) {
     document.addEventListener("keydown", close);
     return () => { document.removeEventListener("pointerdown", close); document.removeEventListener("keydown", close); };
   }, []);
-  const change = (setter, value) => { setter(value); setLimit(6); };
+  const change = (setter, value) => { setter(value); setLimit(viewPageSizes[view]); };
   const areas = [...new Set(items.map((item) => item.area))].sort();
 
   const filteredItems = useMemo(() => {
@@ -55,7 +57,7 @@ export default function ResearchLibrary({ items, types }) {
     setActiveType("All");
     setArea("All areas");
     setQuery("");
-    setLimit(6);
+    setLimit(viewPageSizes[view]);
   };
 
   return (
@@ -92,7 +94,7 @@ export default function ResearchLibrary({ items, types }) {
         </div>
         <label className="research-search"><span className="sr-only">Search research</span><span aria-hidden="true">⌕</span><input type="search" value={query} onChange={event => change(setQuery, event.target.value)} placeholder="Search" /></label>
         <div className="research-layout-icons" role="group" aria-label="Publication layout">
-          {[{id: "grid", label: "Cards", path: "M3 3h7v7H3z M14 3h7v7h-7z M3 14h7v7H3z M14 14h7v7h-7z"}, {id: "compact", label: "Compact", path: "M3 5h18 M3 12h18 M3 19h18"}, {id: "preview", label: "Preview", path: "M3 3h18v18H3z M3 14h18 M7 18h10"}].map(option => <button key={option.id} type="button" title={option.label} aria-label={option.label} aria-pressed={view === option.id} onClick={() => setView(option.id)}><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden="true"><path d={option.path} /></svg></button>)}
+          {[{id: "grid", label: "Cards", path: "M3 3h7v7H3z M14 3h7v7h-7z M3 14h7v7H3z M14 14h7v7h-7z"}, {id: "compact", label: "Compact", path: "M3 5h18 M3 12h18 M3 19h18"}, {id: "preview", label: "Preview", path: "M3 3h18v18H3z M3 14h18 M7 18h10"}].map(option => <button key={option.id} type="button" title={option.label} aria-label={option.label} aria-pressed={view === option.id} onClick={() => { setView(option.id); setLimit(viewPageSizes[option.id]); }}><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden="true"><path d={option.path} /></svg></button>)}
         </div>
       </div>
 
@@ -127,7 +129,7 @@ export default function ResearchLibrary({ items, types }) {
           <button type="button" onClick={clearFilters}>Reset the directory</button>
         </div>
       )}
-      {limit < filteredItems.length && <div className="research-load-more"><button type="button" onClick={() => setLimit(current => current + 6)}>Load more</button></div>}
+      {limit < filteredItems.length && <div className="research-load-more"><button type="button" onClick={() => setLimit(current => current + viewPageSizes[view])}>Load more</button></div>}
     </div>
   );
 }

@@ -78,3 +78,25 @@
 .research-load-more button { padding:.85rem 1.5rem; background:#f5f5f5; color:#111; border-radius:999px; cursor:pointer; font-size:.9rem; }
 .research-load-more button:hover { background:#ddd; }
 @media(max-width:640px) { .research-library .research-toolbar--minimal { flex-wrap:wrap; gap:.5rem 1rem; } .research-layout-icons { margin-left:auto; } .research-toolbar--minimal .research-search { order:3; width:100%; margin-left:0; } .research-menu-actions { gap:1.25rem; } }
+
+/* A quiet bronze field; focus follows the rounded container, not the input box. */
+.research-toolbar--minimal .research-search {
+  border: 1px solid rgb(169 133 89 / .15);
+  border-radius: 10px;
+  background: linear-gradient(115deg, rgb(126 91 57 / .12), rgb(65 48 35 / .04));
+  padding: .55rem .75rem;
+  transition: border-color .2s ease, background .2s ease;
+}
+.research-toolbar--minimal .research-search input {
+  min-width: 0; width: 100%; background: transparent; color: #e2ded7;
+  border: 0; border-radius: 6px; box-shadow: none;
+}
+.research-toolbar--minimal .research-search input:focus,
+.research-toolbar--minimal .research-search input:focus-visible { outline: none; box-shadow: none; }
+.research-toolbar--minimal .research-search:focus-within {
+  border-color: rgb(190 151 101 / .55);
+  outline: 1px solid rgb(190 151 101 / .3); outline-offset: 2px;
+  background: linear-gradient(115deg, rgb(126 91 57 / .20), rgb(65 48 35 / .09));
+}
+.research-toolbar--minimal .research-search input::placeholder { color: #99938a; }
+@media(prefers-reduced-motion: reduce) { .research-toolbar--minimal .research-search { transition: none; } }
