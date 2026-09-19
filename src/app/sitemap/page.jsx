@@ -24,6 +24,7 @@ const groups = [
   {
     title: "Research",
     links: [
+      { label: "Research areas", href: "/research/areas", detail: "Current work and future scientific interests" },
       { label: "Research Library", href: "/research", detail: "All public research and institutional writing" },
       { label: "Products", href: "/products", detail: "Tools in development for research and healthcare" },
       ...researchProjects.map((project) => ({

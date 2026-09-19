@@ -8,6 +8,7 @@ const baseUrl = "https://nasresearch.bio";
 
 export default function sitemap() {
   const pages = [
+    { path: "/research/areas", lastModified: "2026-09-19", changeFrequency: "monthly", priority: 0.8 },
     { path: "", lastModified: "2026-09-10", changeFrequency: "weekly", priority: 1 },
     { path: "/research", lastModified: "2026-09-10", changeFrequency: "weekly", priority: 0.9 },
     { path: "/products", lastModified: "2026-09-19", changeFrequency: "monthly", priority: 0.8 },

@@ -100,3 +100,7 @@
 }
 .research-toolbar--minimal .research-search input::placeholder { color: #99938a; }
 @media(prefers-reduced-motion: reduce) { .research-toolbar--minimal .research-search { transition: none; } }
+
+.research-heading-row { display:flex; align-items:baseline; justify-content:space-between; gap:1.5rem; flex-wrap:wrap; }
+.research-heading-row>a { color:#bba586; font-size:.85rem; padding:.5rem 0; }
+.research-heading-row>a:hover { text-decoration:underline; text-underline-offset:.3em; }

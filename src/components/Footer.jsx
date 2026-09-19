@@ -4,7 +4,7 @@ import Link from "next/link";
 import "./footer.css";
 
 const groups = [
-  { title: "Research", links: [["Publications", "/research"], ["Products", "/products"], ["NaS Cortex", "/research/introducing-nas-cortex"], ["NaS Denials", "/research/introducing-nas-denials"]] },
+  { title: "Research", links: [["Publications", "/research"], ["Research areas", "/research/areas"], ["Products", "/products"], ["NaS Cortex", "/research/introducing-nas-cortex"], ["NaS Denials", "/research/introducing-nas-denials"]] },
   { title: "Learn", links: [["NaS Learn", "/learn"], ["Pharmacy", "/learn/pharmacy"], ["Visual Atlas", "/learn/pharmacy/atlas"], ["Drug Library", "/learn/pharmacy/drugs"]] },
   { title: "About NaS", links: [["Our purpose", "/about"], ["Work with NaS", "/support"]] },
 ];
