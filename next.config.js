@@ -15,6 +15,7 @@ module.exports = {
   poweredByHeader: false,
   async redirects() {
     return [
+      { source: "/research/programs", destination: "/products", permanent: true },
       { source: "/contact", destination: "/support", permanent: true },
       { source: "/nicole", destination: "/research", permanent: false },
     ];

@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 const navigation = [
   { label: "About", href: "/about" },
   { label: "Research", href: "/research" },
-  { label: "Programs", href: "/research/programs" },
+  { label: "Products", href: "/products" },
   { label: "Learn", href: "/learn" },
   { label: "Work with NaS", href: "/support" },
 ];
@@ -16,12 +16,12 @@ const navigation = [
 const mobileNavigation = navigation;
 
 function isActivePath(pathname, href) {
-  if (href === "/research/programs") {
+  if (href === "/products") {
     return pathname === href;
   }
 
   if (href === "/research") {
-    return pathname === href || (pathname.startsWith("/research/") && pathname !== "/research/programs");
+    return pathname === href || (pathname.startsWith("/research/") && pathname !== "/products");
   }
 
   return pathname === href || pathname.startsWith(`${href}/`);

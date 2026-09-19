@@ -174,8 +174,8 @@ export default async function ResearchProjectPage({ params }) {
                 <Link href={project.publicationUrl ?? "/research"} className="nas-button">
                   {project.publicationUrl ? "Read the public report" : "Read published research"}
                 </Link>
-                <Link href="/research/programs" className="project-text-link">
-                  Explore the research program <span aria-hidden="true">↗</span>
+                <Link href="/research" className="project-text-link">
+                  Browse research <span aria-hidden="true">↗</span>
                 </Link>
               </div>
             </section>
