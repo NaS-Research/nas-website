@@ -3,17 +3,19 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import "./navigation.css";
 
 const navigation = [
-  { label: "About", href: "/about" },
   { label: "Research", href: "/research" },
   { label: "Products", href: "/products" },
-  { label: "Workspace", href: "/workspace" },
-  { label: "Work with NaS", href: "/support" },
+  { label: "Learn", href: "/learn" },
 ];
-
-const mobileNavigation = navigation;
+const sections = [
+ { title:"Discover", links:[["Research library","/research"],["Research areas","/research/areas"],["Product overview","/products"]] },
+ { title:"The institution", links:[["Our purpose","/about"],["Work with NaS","/support"]] },
+ { title:"NaS Learn", links:[["Pharmacy","/learn/pharmacy"],["Visual Atlas","/learn/pharmacy/atlas"],["Drug Library","/learn/pharmacy/drugs"],["Practice","/learn/pharmacy/review"]] },
+];
 
 function isActivePath(pathname, href) {
   if (href === "/workspace") return pathname === "/workspace" || pathname === "/learn" || pathname.startsWith("/learn/");
@@ -30,6 +32,8 @@ function isActivePath(pathname, href) {
 
 export default function Navbar() {
   const pathname = usePathname();
+  const headerRef = useRef(null);
+  const triggerRef = useRef(null);
   const isHome = pathname === "/";
   const [homeHeroVisible, setHomeHeroVisible] = useState(isHome);
   const [show, setShow] = useState(true);
@@ -95,7 +99,13 @@ export default function Navbar() {
     document.body.style.overflow = "hidden";
 
     function onKeyDown(event) {
-      if (event.key === "Escape") setMenuOpen(false);
+      if (event.key === "Escape") { setMenuOpen(false); triggerRef.current?.focus(); }
+      if (event.key === "Tab") {
+        const links = [...headerRef.current.querySelectorAll('a[href],button')].filter(el => el.getClientRects().length);
+        const first = links[0], last = links[links.length-1];
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+      }
     }
 
     window.addEventListener("keydown", onKeyDown);
@@ -105,18 +115,9 @@ export default function Navbar() {
     };
   }, [menuOpen]);
 
-  useEffect(() => {
-    const desktop = window.matchMedia("(min-width: 48rem)");
-    const closeOnDesktop = (event) => {
-      if (event.matches) setMenuOpen(false);
-    };
-
-    desktop.addEventListener("change", closeOnDesktop);
-    return () => desktop.removeEventListener("change", closeOnDesktop);
-  }, []);
 
   return (
-    <header
+    <header ref={headerRef}
       className={`nas-navbar ${show || menuOpen ? "nas-navbar--visible" : "nas-navbar--hidden"} ${
         scrolled ? "nas-navbar--scrolled" : ""
       } ${menuOpen ? "nas-navbar--open" : ""}`}
@@ -155,53 +156,28 @@ export default function Navbar() {
           })}
         </div>
 
-        <Link
-          href="/support"
-          className={`nas-navbar__contact ${isActivePath(pathname, "/support") ? "nas-navbar__contact--active" : ""}`}
-        >
-          Contact <span aria-hidden="true">↗</span>
-        </Link>
-
-        <button
-          type="button"
-          className={`nas-navbar__menu-trigger ${menuOpen ? "nas-navbar__menu-trigger--open" : ""}`}
+        <Link href="/workspace" className="nas-nav-workspace" onClick={() => setMenuOpen(false)}>Workspace <span aria-hidden="true">↗</span></Link>
+        <button ref={triggerRef} type="button" className="nas-nav-toggle"
           aria-label={menuOpen ? "Close navigation" : "Open navigation"}
-          aria-expanded={menuOpen}
-          aria-controls="mobile-navigation"
-          onClick={() => setMenuOpen((open) => !open)}
-        >
-          <span />
-          <span />
+          aria-expanded={menuOpen} aria-controls="nas-navigation-panel"
+          onClick={() => { setMenuOpen(open => !open); setShow(true); }}>
+          {menuOpen ? "Close" : "Menu"}<span aria-hidden="true">{menuOpen ? "×" : "☰"}</span>
         </button>
       </nav>
-
-      {menuOpen && (
-        <div id="mobile-navigation" className="nas-mobile-menu">
-          <nav className="nas-mobile-menu__nav" aria-label="Mobile navigation">
-            {mobileNavigation.map((item, index) => {
-              const active = isActivePath(pathname, item.href);
-              return (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className={`nas-mobile-menu__link ${active ? "nas-mobile-menu__link--active" : ""}`}
-                  aria-current={active ? "page" : undefined}
-                >
-                  <span>{String(index + 1).padStart(2, "0")}</span>
-                  <strong>{item.label}</strong>
-                  <span aria-hidden="true">↗</span>
-                </Link>
-              );
-            })}
+      {menuOpen && <>
+        <div className="nas-nav-backdrop" onClick={() => { setMenuOpen(false); triggerRef.current?.focus(); }} />
+        <div id="nas-navigation-panel" className="nas-nav-panel">
+          <nav aria-label="Explore NaS" onClick={event => { if(event.target.closest('a')) setMenuOpen(false); }}>
+            <p className="nas-nav-eyebrow">Explore NaS</p>
+            <div className="nas-nav-grid">
+              <div className="nas-nav-primary">{[...navigation,{label:"About NaS",href:"/about"}].map(item => <Link key={item.href} href={item.href} aria-current={isActivePath(pathname,item.href) ? "page" : undefined}>{item.label}</Link>)}</div>
+              <div>{sections.slice(0,2).map(section => <div className="nas-nav-group" key={section.title}><h2>{section.title}</h2>{section.links.map(([label,href]) => <Link key={href} href={href}>{label}</Link>)}</div>)}</div>
+              <div className="nas-nav-group"><h2>{sections[2].title}</h2>{sections[2].links.map(([label,href]) => <Link key={href} href={href}>{label}</Link>)}</div>
+            </div>
+            <div className="nas-nav-bottom"><span>Research and tools for the life sciences.</span><Link href="/workspace">Open Workspace ↗</Link></div>
           </nav>
-
-          <Link href="/research/introducing-nas-cortex" className="nas-mobile-menu__current">
-            <span>Current work</span>
-            <strong>The NaS Cortex</strong>
-            <small>Knowledge architecture for the life sciences ↗</small>
-          </Link>
         </div>
-      )}
+      </>}
     </header>
   );
 }
