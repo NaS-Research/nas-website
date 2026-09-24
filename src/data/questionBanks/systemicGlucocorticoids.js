@@ -1,10 +1,3 @@
-const dimensions = [
-  { key: "principle", difficulty: "Foundational", prompt: (c) => `Which statement best explains ${c.name}?`, answer: (c) => c.principle, field: "principle" },
-  { key: "application", difficulty: "Applied", prompt: (c) => `Which action best applies ${c.name}?`, answer: (c) => c.action, field: "action" },
-  { key: "failure", difficulty: "Advanced", prompt: (c) => `Which approach most clearly fails to apply ${c.name}?`, answer: (c) => c.failure, field: "failure" },
-  { key: "case", difficulty: "Expert", prompt: (c) => `${c.caseText} Which response is best?`, answer: (c) => c.caseAnswer, field: "action" },
-];
-
 const c = (key, lesson, name, principle, action, failure, caseText, caseAnswer, rationale) => ({ key, lesson, name, principle, action, failure, caseText, caseAnswer, rationale });
 
 const concepts = [
@@ -18,9 +11,9 @@ const concepts = [
   c("c11-activation", "medicinal-chemistry", "C11 activation of cortisone and prednisone", "Cortisone and prednisone carry an 11-keto group and require reduction to the active 11 beta hydroxyl forms hydrocortisone and prednisolone.", "Distinguish an administered prodrug from its active glucocorticoid when interpreting structure and response.", "Calling prednisone active because its parent concentration rises ignores its required metabolic activation.", "A medicinal chemistry comparison shows prednisone with a C11 ketone and prednisolone with a C11 beta hydroxyl group.", "Identify prednisone as the prodrug and prednisolone as the active glucocorticoid form.", "The C11 oxygen state connects medicinal chemistry to active-drug exposure."),
   c("c1-c2-unsaturation", "medicinal-chemistry", "C1-C2 unsaturation in prednisolone", "Adding a C1-C2 double bond increases glucocorticoid activity relative to hydrocortisone and tends to reduce mineralocorticoid activity.", "Use the structural change to explain why prednisolone and hydrocortisone differ in approximate potency and salt retention.", "Assuming every double bond is decorative misses a deliberate activity-changing modification.", "A learner asks why prednisolone has greater anti-inflammatory potency than hydrocortisone.", "Point to the C1-C2 unsaturation as one structural contributor while retaining clinical equivalence data.", "Unsaturation changes electronic and conformational features that influence corticosteroid activity."),
   c("c9-c16-c6", "medicinal-chemistry", "C9, C16, and C6 substitution", "C9 fluorination can increase glucocorticoid and mineralocorticoid potency, while C16 substitution can reduce mineralocorticoid activity and C6 methyl substitution can favor glucocorticoid activity.", "Interpret substitutions as a coordinated design pattern rather than assigning selectivity from one group in isolation.", "Predicting salt retention from fluorination alone ignores compensating substitutions elsewhere on the scaffold.", "A fluorinated glucocorticoid has minimal clinically meaningful mineralocorticoid activity.", "Inspect C16 and other substitutions that can counterbalance the mineralocorticoid effect of C9 fluorination.", "Whole-molecule structure determines the final activity profile."),
-  c("corticosteroid-esters", "medicinal-chemistry", "corticosteroid ester design", "Esterification changes solubility, absorption, hydrolysis, route suitability, and depot duration without making all esters interchangeable.", "Verify the exact ester, salt, concentration, route, and product before substitution or administration.", "Treating acetate, phosphate, succinate, and other esters as the same preparation can create route and exposure errors.", "A depot acetate product is proposed as a milligram-for-milligram substitute for an aqueous intravenous succinate product.", "Reject automatic substitution and verify product-specific route, release, hydrolysis, and equivalence.", "Ester chemistry is part of the dosage form and clinical delivery system."),
+  c("corticosteroid-esters", "medicinal-chemistry", "corticosteroid ester design", "Esterification changes solubility, absorption, hydrolysis, route suitability, and depot duration without making all esters interchangeable.", "Verify the exact ester, salt, concentration, route, and product before substitution or administration.", "Treating acetate, phosphate, succinate, and other esters as the same preparation can create route and exposure errors.", "A depot acetate product is proposed as a milligram-for-milligram substitute for an aqueous intravenous succinate product.", "Reject automatic substitution and verify product-specific route, release, hydrolysis, and equivalence.", "Ester chemistry changes delivery. In particular, Depo-Medrol acetate suspension is not for IV use; an aqueous succinate product cannot be replaced by that depot suspension."),
 
-  c("equivalence", "selection-equivalence", "anti-inflammatory dose equivalence", "Approximate equivalent doses include hydrocortisone 20 mg, prednisone or prednisolone 5 mg, methylprednisolone 4 mg, and dexamethasone 0.5 mg.", "Convert with an explicit ratio and then reassess the indication, route, duration, and patient response.", "Equating milligram for milligram across agents can create a major overdose or undertreatment.", "A patient receives methylprednisolone 32 mg daily and must transition to prednisone.", "Use 4 mg methylprednisolone to 5 mg prednisone, giving an approximate prednisone equivalent of 40 mg daily.", "Equivalence calculations compare anti-inflammatory potency and remain approximate clinical guides."),
+  c("equivalence", "selection-equivalence", "anti-inflammatory dose equivalence", "Approximate equivalent doses include hydrocortisone 20 mg, prednisone or prednisolone 5 mg, methylprednisolone 4 mg, and dexamethasone 0.5 mg in Table 1 of the 2024 joint endocrine guideline; other tables differ.", "Convert with an explicit ratio and then reassess the indication, route, duration, and patient response.", "Equating milligram for milligram across agents can create a major overdose or undertreatment.", "A patient receives methylprednisolone 32 mg daily and must transition to prednisone.", "Use 4 mg methylprednisolone to 5 mg prednisone, giving an approximate prednisone equivalent of 40 mg daily.", "Equivalence calculations compare anti-inflammatory potency and remain approximate clinical guides."),
   c("duration", "selection-equivalence", "short, intermediate, and long biologic duration", "Hydrocortisone is short acting, prednisone and methylprednisolone are intermediate acting, and dexamethasone is long acting with greater suppression risk during prolonged exposure.", "Match duration to the treatment purpose and favor a shorter-acting agent when a long-acting agent is no longer required.", "Selecting dexamethasone indefinitely because the tablet dose is numerically small ignores its potency and long biologic action.", "A patient tapering chronic dexamethasone no longer needs its long duration.", "Consider conversion to a shorter-acting glucocorticoid before the final recovery phase.", "The 2024 guideline suggests shorter-acting therapy when long-acting exposure is no longer needed."),
   c("prednisone-prodrug", "selection-equivalence", "prednisone activation", "Prednisone is converted in the liver to the active glucocorticoid prednisolone, while prednisolone is already active.", "Consider hepatic function and the exact product when evaluating response or choosing an alternative.", "Calling prednisone and prednisolone different receptor classes misstates their relationship.", "A patient with severe hepatic dysfunction has an uncertain response to prednisone.", "Review whether direct prednisolone exposure is more appropriate with specialist input.", "Prednisone depends on hepatic conversion to prednisolone for activity."),
   c("conversion-limits", "selection-equivalence", "the limits of conversion tables", "Equivalence tables estimate anti-inflammatory potency but do not guarantee identical tissue exposure, onset, mineralocorticoid effect, or disease control.", "Use the conversion as a starting point and monitor the patient after switching.", "Treating a calculated equivalent as proof of identical clinical effect ignores variability and formulation differences.", "A patient flares after a mathematically equivalent steroid switch.", "Verify adherence and formulation, reassess disease activity, and adjust clinically rather than defending the arithmetic alone.", "Conversion guides support decisions but do not replace response monitoring."),
@@ -38,11 +31,11 @@ const concepts = [
 
   c("taper-when", "taper-recovery", "when to begin a glucocorticoid taper", "A long-term taper should begin only when the underlying disease is controlled and glucocorticoid therapy is no longer required.", "Coordinate with the disease plan and taper more rapidly at high supraphysiologic doses, then more slowly near physiologic exposure.", "Tapering solely because a calendar date arrived can destabilize an active disease.", "A patient on chronic prednisone still has uncontrolled vasculitis.", "Treat the active disease and coordinate steroid-sparing care before forcing discontinuation.", "The indication must be controlled before the endocrine taper becomes the primary objective."),
   c("taper-pace", "taper-recovery", "dose-dependent taper pace", "Large decrements can be used at high doses, while small, slower decrements are used near the physiologic range where adrenal recovery becomes relevant.", "Individualize the taper and step back temporarily to the last tolerated dose when severe withdrawal occurs.", "Using the same percentage reduction at every dose can create disproportionate changes near physiologic exposure.", "A patient tolerates rapid reductions from 60 mg but becomes symptomatic near 6 mg prednisone.", "Slow the taper near physiologic exposure and reassess the symptom differential.", "Endocrine recovery and withdrawal make the final portion of a taper different from the early phase."),
-  c("morning-cortisol", "taper-recovery", "morning cortisol assessment of HPA recovery", "When confirmation is needed near physiologic dosing, morning serum cortisol is the preferred first test and is interpreted as a continuum.", "Use the 2024 guide: above 10 mcg/dL supports recovery, 5 to 10 requires continued physiologic dosing and repeat testing, and below 5 supports continued dosing with later reassessment.", "Ordering routine dynamic testing while the patient remains on a high supraphysiologic dose does not answer a useful discontinuation question.", "A patient near the end of a taper has a morning cortisol of 3 mcg/dL.", "Continue physiologic glucocorticoid coverage and repeat assessment later rather than stopping abruptly.", "A low morning cortisol near physiologic dosing does not demonstrate adequate HPA recovery."),
+  c("morning-cortisol", "taper-recovery", "morning cortisol assessment of HPA recovery", "When confirmation is needed near physiologic dosing, morning serum cortisol is the preferred first test and is interpreted as a continuum.", "Use the 2024 guide: above 10 mcg/dL supports recovery, 5 to 10 requires continued physiologic dosing and repeat testing, and below 5 supports continued dosing with later reassessment.", "Ordering routine dynamic testing while the patient remains on a high supraphysiologic dose does not answer a useful discontinuation question.", "A patient at physiologic dosing has an 8 to 9 AM cortisol of 3 mcg/dL after an appropriate clinician-directed glucocorticoid hold.", "Continue physiologic glucocorticoid coverage and repeat assessment later rather than stopping abruptly.", "A low morning cortisol near physiologic dosing does not demonstrate adequate HPA recovery."),
   c("long-recovery", "taper-recovery", "prolonged HPA recovery", "Recovery varies widely and can take months; persistent nonrecovery for a year near physiologic dosing or a history of adrenal crisis warrants endocrinology evaluation.", "Maintain safety education and reassess recovery rather than promising a fixed recovery date.", "Assuming every axis recovers within two weeks can expose a patient to adrenal crisis.", "A patient remains unable to discontinue physiologic replacement after one year.", "Refer for endocrinology evaluation and continue an individualized safety plan.", "The 2024 guideline identifies prolonged nonrecovery as a reason for specialist assessment."),
   c("dynamic-testing", "taper-recovery", "dynamic testing during glucocorticoid recovery", "Routine dynamic testing is not recommended during a taper; morning cortisol is the preferred first assessment near physiologic dosing when confirmation is needed.", "Reserve additional endocrine testing for unresolved or specialized questions after clinical assessment and morning cortisol.", "Ordering repeated stimulation tests while the patient remains on high supraphysiologic therapy adds burden without guiding safe discontinuation.", "A patient on prednisone 30 mg daily is scheduled for weekly ACTH stimulation tests during the early taper.", "Cancel routine dynamic testing and focus on disease control and an appropriate taper until physiologic exposure is approached.", "High-dose treatment already predicts suppression, so testing does not improve the early taper decision."),
 
-  c("stress-coverage", "stress-crisis", "stress-dose coverage", "Current or recent users without proven HPA recovery need additional glucocorticoid coverage during physiologic stress.", "Use oral coverage for minor stress when absorption is reliable and parenteral coverage for major stress, anesthesia, hemodynamic instability, or prolonged vomiting or diarrhea.", "Continuing only the usual small oral dose during shock and vomiting can leave the patient without adequate cortisol effect.", "A recently tapered patient with untested recovery develops severe gastroenteritis and cannot keep tablets down.", "Provide urgent parenteral glucocorticoid coverage and clinical assessment.", "Inability to absorb oral therapy changes both the route and urgency of stress coverage."),
+  c("stress-coverage", "stress-crisis", "stress-dose coverage", "Current or recent users without proven HPA recovery need adequate glucocorticoid coverage during physiologic stress; a current high dose may already meet the requirement.", "Use oral coverage for minor stress when absorption is reliable and parenteral coverage for major stress, anesthesia, hemodynamic instability, or prolonged vomiting or diarrhea.", "Continuing only the usual small oral dose during shock and vomiting can leave the patient without adequate cortisol effect.", "A recently tapered patient with untested recovery develops severe gastroenteritis and cannot keep tablets down.", "Provide urgent parenteral glucocorticoid coverage and clinical assessment.", "Inability to absorb oral therapy changes both the route and urgency of stress coverage."),
   c("adrenal-crisis", "stress-crisis", "recognition and treatment of adrenal crisis", "Hypotension, volume depletion, vomiting, abdominal symptoms, weakness, confusion, hypoglycemia, or electrolyte abnormalities can signal adrenal crisis in an at-risk patient.", "Treat suspected crisis immediately with parenteral glucocorticoid and fluid resuscitation without waiting for confirmatory testing.", "Delaying treatment until a cortisol result returns can be fatal.", "A recent chronic steroid user presents with vomiting, confusion, and refractory hypotension.", "Treat suspected adrenal crisis immediately while obtaining appropriate diagnostic samples when feasible.", "Adrenal crisis is a clinical emergency and treatment must not wait for laboratory confirmation."),
   c("emergency-identity", "stress-crisis", "steroid emergency identification", "People at risk for adrenal crisis benefit from clear medication documentation, emergency instructions, and medical alert identification.", "Provide a written sick-day and emergency plan and ensure other clinicians know about recent glucocorticoid exposure.", "Keeping the taper only in one clinic note can leave emergency teams unaware of adrenal risk.", "A patient with recent HPA suppression is traveling away from their health system.", "Ensure they carry an updated steroid card or medical alert and an actionable emergency plan.", "Portable information supports correct care when the usual record is unavailable."),
   c("fludrocortisone-boundary", "stress-crisis", "the fludrocortisone boundary in glucocorticoid-induced adrenal insufficiency", "Glucocorticoid-induced adrenal insufficiency generally preserves aldosterone because the renin-angiotensin system, not ACTH, is its main regulator.", "Do not add fludrocortisone routinely for glucocorticoid-induced adrenal insufficiency.", "Treating secondary suppression exactly like primary adrenal failure can add unnecessary mineralocorticoid exposure.", "A patient with glucocorticoid-induced adrenal insufficiency is stable on replacement and has no mineralocorticoid deficiency.", "Continue appropriate glucocorticoid management without routine fludrocortisone.", "The 2024 guideline recommends against fludrocortisone for glucocorticoid-induced adrenal insufficiency."),
@@ -53,7 +46,7 @@ const concepts = [
   c("gi-risk", "metabolic-toxicity", "gastrointestinal risk with glucocorticoids", "Glucocorticoids can contribute to dyspepsia and gastrointestinal complications, especially with NSAIDs, anticoagulants, prior ulcer disease, or critical illness.", "Assess combined risk and use prophylaxis only when the complete clinical context supports it.", "Automatically prescribing acid suppression to every outpatient steroid course creates another unnecessary medicine.", "A patient with prior ulcer bleeding takes prednisone, naproxen, and apixaban.", "Escalate the gastrointestinal safety review and coordinate risk reduction rather than relying on food alone.", "Risk is driven by the combined regimen and history, not glucocorticoid exposure in isolation."),
 
   c("infection", "infection-vaccination", "infection risk and masking", "Glucocorticoids suppress immune responses, increase infection risk, and can blunt fever or inflammatory findings.", "Screen for infection risk, teach early reporting, and investigate subtle deterioration rather than waiting for a classic febrile presentation.", "Assuming absence of fever excludes infection is unsafe during immunosuppression.", "A chronic steroid user has new weakness, confusion, and cough without fever.", "Evaluate promptly for infection despite the muted temperature response.", "Glucocorticoids can reduce the signs clinicians often use to recognize infection."),
-  c("live-vaccine", "infection-vaccination", "live vaccines during high-dose systemic glucocorticoids", "CDC considers at least 20 mg prednisone equivalent daily or at least 2 mg/kg daily for at least 14 days sufficiently immunosuppressive to defer live vaccines.", "When feasible, give needed live vaccines at least four weeks before immunosuppression and wait at least one month after stopping high-dose therapy before live vaccination.", "Using the live-vaccine threshold as the universal definition of adrenal suppression confuses vaccine safety with HPA physiology.", "A patient completed prednisone 40 mg daily for three weeks and requests a live vaccine the next day.", "Defer the live vaccine and follow current CDC timing guidance.", "The high-dose duration meets the CDC threshold for temporary live-vaccine deferral."),
+  c("live-vaccine", "infection-vaccination", "live vaccines during high-dose systemic glucocorticoids", "CDC considers at least 20 mg prednisone equivalent daily in people weighing more than 10 kg, or at least 2 mg/kg daily, for at least 14 consecutive days sufficiently immunosuppressive to defer live vaccines.", "When feasible, give needed live vaccines at least four weeks before immunosuppression and wait at least one month after stopping high-dose therapy before live vaccination.", "Using the live-vaccine threshold as the universal definition of adrenal suppression confuses vaccine safety with HPA physiology.", "A patient completed prednisone 40 mg daily for three weeks and requests a live vaccine the next day.", "Defer the live vaccine and follow current CDC timing guidance.", "The high-dose duration meets the CDC threshold for temporary live-vaccine deferral."),
   c("nonlive-vaccine", "infection-vaccination", "non-live vaccines during glucocorticoid therapy", "Non-live vaccines are safe during altered immunocompetence, although immune response can be reduced.", "Update vaccines before immunosuppression when possible and use current disease-specific guidance rather than withholding all vaccines.", "Calling every vaccine contraindicated can leave a high-risk patient unprotected.", "A patient on chronic prednisone is due for an inactivated influenza vaccine.", "Administer according to current guidance while discussing that immune response may be reduced.", "Safety and effectiveness are separate questions for non-live vaccines."),
   c("bone-protection", "bone-tissue-protection", "glucocorticoid-induced osteoporosis prevention", "Fracture risk can rise early and depends on dose, duration, age, prior fracture, bone density, falls, and other risk factors.", "For adults starting or continuing at least 2.5 mg prednisone equivalent for more than three months, assess fracture risk and apply current ACR prevention or treatment guidance.", "Waiting for a fracture before evaluating chronic glucocorticoid bone risk misses a preventable complication.", "A 67-year-old begins long-term prednisone and has never had a fracture-risk assessment.", "Assess bone health promptly and determine whether lifestyle measures and pharmacotherapy are indicated.", "The 2022 ACR guideline calls for early risk assessment during sustained exposure."),
 
@@ -62,24 +55,254 @@ const concepts = [
   c("cyp3a4-induction", "longitudinal-safety", "CYP3A4 induction and glucocorticoid response", "Strong enzyme inducers can reduce exposure to susceptible glucocorticoids and compromise inflammatory control or adrenal replacement.", "Reassess disease response and replacement adequacy when an inducer begins or ends.", "Increasing the steroid permanently without planning for inducer discontinuation can later create toxicity.", "A patient on glucocorticoid replacement starts a strong CYP3A4 inducer.", "Coordinate monitoring and dose adjustment with a plan for future inducer changes.", "Interaction management includes both the start and the eventual stop of the interacting medicine."),
   c("monitoring-handoff", "longitudinal-safety", "a longitudinal glucocorticoid safety handoff", "Safe therapy requires one visible record of indication, agent, route, equivalent exposure, duration, taper status, adverse effects, monitoring, vaccines, bone plan, glucose plan, and adrenal-risk instructions.", "Update the shared medication list and communicate the taper or stress plan across prescribers and transitions of care.", "Allowing multiple clinicians to prescribe steroids without a cumulative-exposure record creates preventable duplication and abrupt stops.", "A patient leaves the hospital on prednisone while primary care, rheumatology, and urgent care each have different instructions.", "Reconcile one authoritative regimen and distribute the monitoring and discontinuation plan.", "A clear handoff protects against duplicate exposure, disease flare, and adrenal crisis."),
   c("pregnancy-lactation", "longitudinal-safety", "pregnancy and lactation assessment during systemic glucocorticoid therapy", "Pregnancy and lactation decisions require the current product label, maternal disease risk, dose, duration, placental or milk exposure, and suitable alternatives rather than obsolete letter categories.", "Use current narrative labeling and condition-specific guidance, then monitor the pregnant or breastfeeding patient and infant when clinically indicated.", "Assigning a retired pregnancy letter and stopping necessary therapy without a risk comparison can harm both parent and fetus.", "A pregnant patient with severe autoimmune disease is told that every systemic steroid is categorically prohibited.", "Review current evidence, the untreated disease risk, agent and dose, and specialty guidance through shared decision-making.", "Current pregnancy and lactation assessment is narrative and indication specific, not a single letter or universal class ban."),
+  c("hbv-preflight", "infection-vaccination", "hbv-preflight", "Medrol labeling calls for HBV screening before immunosuppressive therapy; reactivation can occur with current or previously resolved infection.", "Arrange hepatitis B screening and expert management advice if infection is found.", "Screen only after jaundice appears.", "A patient is about to start prolonged immunosuppressive methylprednisolone and has no documented hepatitis B status.", "Arrange hepatitis B screening and expert management advice if infection is found.", "Medrol labeling calls for HBV screening before immunosuppressive therapy; reactivation can occur with current or previously resolved infection."),
+  c("strongyloides-risk", "infection-vaccination", "strongyloides-risk", "Known or suspected Strongyloides changes the safety assessment before immunosuppression.", "Coordinate urgent infection evaluation and treatment planning because steroid exposure can cause hyperinfection.", "Treat suspected infection as irrelevant to steroid safety.", "A patient needing systemic steroids has suspected Strongyloides infection.", "Coordinate urgent infection evaluation and treatment planning because steroid exposure can cause hyperinfection.", "Known or suspected Strongyloides changes the safety assessment before immunosuppression."),
+  c("varicella-exposure", "infection-vaccination", "varicella-exposure", "The exposure needs timely evaluation; waiting for symptoms can miss the prevention window.", "Arrange prompt clinical assessment for postexposure prophylaxis.", "Wait for a rash before contacting the care team.", "A nonimmune adult on immunosuppressive systemic steroids reports a household varicella exposure.", "Arrange prompt clinical assessment for postexposure prophylaxis.", "The exposure needs timely evaluation; waiting for symptoms can miss the prevention window."),
 ];
 
-export const systemicGlucocorticoidsQuestionBank = concepts.flatMap((concept, conceptIndex) => dimensions.map((dimension, dimensionIndex) => {
-  const distractorIndexes = [1, 13, 27].map((offset) => (conceptIndex + dimensionIndex + offset) % concepts.length);
-  const field = dimension.field;
+const caseDistractors = [
+  [
+    "Interpret low ACTH as proof that prednisone stimulates the pituitary.",
+    "Assume endogenous cortisol must recover immediately after the last dose.",
+    "Diagnose primary adrenal failure from this pattern alone."
+  ],
+  [
+    "Equate biologic duration with plasma half-life alone.",
+    "Explain the effect as permanent adrenal removal.",
+    "Describe the drug as an antibody that neutralizes ACTH."
+  ],
+  [
+    "Select milligram-for-milligram without comparing mineralocorticoid effects.",
+    "Assume every anti-inflammatory equivalent retains identical sodium.",
+    "Choose solely by the smallest tablet number."
+  ],
+  [
+    "Exclude inhalers and joint injections from exposure assessment.",
+    "Stop every steroid abruptly because none is oral.",
+    "Assume local administration prevents all systemic effects."
+  ],
+  [
+    "Stop essential replacement when the inflammatory indication resolves.",
+    "Substitute an NSAID for required cortisol replacement.",
+    "Interpret replacement as an optional dose pack."
+  ],
+  [
+    "Predict identical effects from the shared nucleus alone.",
+    "Ignore formulation because both agents are steroids.",
+    "Assume every substitution changes only the brand name."
+  ],
+  [
+    "Identify prednisolone as the inactive 11-keto prodrug.",
+    "Describe the change as removal of the entire steroid nucleus.",
+    "Treat prednisone as a receptor antibody."
+  ],
+  [
+    "Ignore the double bond when comparing structure.",
+    "Attribute the difference solely to tablet color.",
+    "Assume unsaturation makes prednisolone a mineralocorticoid-only drug."
+  ],
+  [
+    "Predict sodium retention from fluorination alone.",
+    "Ignore C16 because one substituent determines every property.",
+    "Assume all fluorinated steroids have identical selectivity."
+  ],
+  [
+    "Administer the depot acetate intravenously without verifying its label.",
+    "Use ester names as proof of interchangeable routes.",
+    "Assume equal milligrams guarantee equal release."
+  ],
+  [
+    "Use prednisone 32 mg because the milligrams should match.",
+    "Use prednisone 8 mg by stopping after the first calculation step.",
+    "Use prednisone 160 mg by omitting the source equivalent."
+  ],
+  [
+    "Keep dexamethasone indefinitely solely because its milligram dose is small.",
+    "Stop chronic dexamethasone abruptly without assessing recovery.",
+    "Assume biologic duration has no bearing on HPA recovery."
+  ],
+  [
+    "Assume hepatic conversion is irrelevant to prednisone response.",
+    "Treat prednisone and prednisolone as unrelated receptor classes.",
+    "Increase prednisone indefinitely without reassessment."
+  ],
+  [
+    "Insist that correct arithmetic proves identical clinical response.",
+    "Ignore absorption and formulation after a switch.",
+    "Assume symptoms cannot recur after an equivalent conversion."
+  ],
+  [
+    "Dispense based only on the presence of a printed taper.",
+    "Use the same pack for every diagnosis.",
+    "Treat package convenience as proof of dose adequacy."
+  ],
+  [
+    "Move every steroid dose to bedtime.",
+    "Stop chronic therapy abruptly to address insomnia.",
+    "Ignore the indication when changing the schedule."
+  ],
+  [
+    "Reassure that food eliminates all bleeding risk.",
+    "Ignore naproxen because prednisone is taken with meals.",
+    "Treat dyspepsia prevention as equivalent to ulcer prevention."
+  ],
+  [
+    "Require a prolonged adrenal taper after every five-day course.",
+    "Order adrenal testing automatically after every short course.",
+    "Add fludrocortisone routinely when prednisone stops."
+  ],
+  [
+    "Accept the pack solely because it includes a taper.",
+    "Assume six days treats every severe inflammatory condition.",
+    "Skip follow-up because the tablet sequence is printed."
+  ],
+  [
+    "Exclude HPA risk because prednisone is below 20 mg daily.",
+    "Stop without a plan because eight weeks is always safe.",
+    "Use live-vaccine criteria as the sole adrenal-risk test."
+  ],
+  [
+    "Dismiss the symptoms because fluticasone is inhaled.",
+    "Assume CYP3A4 inhibition reduces steroid exposure.",
+    "Diagnose a pituitary tumor without reviewing the interaction."
+  ],
+  [
+    "Label every symptom as an inflammatory flare.",
+    "Assume low-dose prednisone eliminates adrenal risk.",
+    "Stop all coverage before assessing orthostasis."
+  ],
+  [
+    "Count only oral tablets.",
+    "Assume repeated injections have no systemic absorption.",
+    "Ignore potent topical exposure in the medication history."
+  ],
+  [
+    "Force discontinuation solely because the planned date has arrived.",
+    "Ignore ongoing vasculitis activity.",
+    "Treat a taper calendar as more important than disease control."
+  ],
+  [
+    "Continue the same rapid reductions despite new symptoms.",
+    "Assume all symptoms prove permanent adrenal failure.",
+    "Return automatically to 60 mg indefinitely."
+  ],
+  [
+    "Stop because any detectable cortisol proves recovery.",
+    "Add fludrocortisone routinely to correct HPA suppression.",
+    "Interpret 3 mcg/dL as clearly above the recovery guide."
+  ],
+  [
+    "Promise spontaneous recovery within the next two days.",
+    "Stop replacement without further evaluation.",
+    "Dismiss a full year of nonrecovery as requiring no review."
+  ],
+  [
+    "Continue weekly stimulation tests regardless of dose.",
+    "Use supraphysiologic prednisone results to certify recovery.",
+    "Stop disease treatment solely to obtain repeated testing."
+  ],
+  [
+    "Rely on tablets the patient is repeatedly vomiting.",
+    "Wait for a routine appointment despite inability to retain coverage.",
+    "Assume severe illness decreases cortisol requirements."
+  ],
+  [
+    "Delay treatment until cortisol results return.",
+    "Treat hypotension with fludrocortisone alone.",
+    "Exclude crisis because the steroid has already been stopped."
+  ],
+  [
+    "Leave emergency instructions only in an inaccessible clinic record.",
+    "Tell the patient that travel eliminates stress-dose needs.",
+    "Remove recent steroid use from the medication history."
+  ],
+  [
+    "Add fludrocortisone automatically because all adrenal insufficiency is primary.",
+    "Replace glucocorticoid with fludrocortisone alone.",
+    "Assume ACTH suppression necessarily abolishes aldosterone."
+  ],
+  [
+    "Ignore evening values because fasting glucose is normal.",
+    "Use fasting values as the only monitoring endpoint.",
+    "Keep glucose therapy unchanged through every steroid-dose reduction."
+  ],
+  [
+    "Ignore edema because doses are anti-inflammatory equivalents.",
+    "Assume all steroids have identical salt-retaining effects.",
+    "Increase exposure without reviewing congestion."
+  ],
+  [
+    "Dismiss new mania as harmless.",
+    "Wait until the course ends before assessing risky behavior.",
+    "Assume psychiatric toxicity cannot follow prednisone."
+  ],
+  [
+    "Rely on food alone to prevent another bleed.",
+    "Ignore apixaban and prior bleeding in the risk assessment.",
+    "Assume acid suppression alone resolves every medication risk."
+  ],
+  [
+    "Exclude infection because fever is absent.",
+    "Wait for a high temperature before assessing deterioration.",
+    "Assume steroids prevent bacterial and fungal infections."
+  ],
+  [
+    "Administer the live vaccine the next day without reviewing timing.",
+    "Assume three weeks never meets the high-dose duration threshold.",
+    "Use a normal blood pressure as proof of vaccine eligibility."
+  ],
+  [
+    "Withhold every vaccine because prednisone is prescribed.",
+    "Describe an inactivated vaccine as a replicating organism.",
+    "Guarantee a normal immune response during immunosuppression."
+  ],
+  [
+    "Wait until a fragility fracture occurs.",
+    "Assess only if the drug is dexamethasone.",
+    "Assume calcium intake alone makes risk assessment unnecessary."
+  ],
+  [
+    "Ignore growth because blood pressure is normal.",
+    "Assume every growth change is unrelated to treatment.",
+    "Increase steroid dose automatically without reassessment."
+  ],
+  [
+    "Ignore ritonavir because the steroid is inhaled.",
+    "Assume inhibition lowers fluticasone exposure.",
+    "Treat cushingoid changes as proof that adrenal recovery is complete."
+  ],
+  [
+    "Increase the replacement dose permanently with no stop plan for the inducer.",
+    "Assume enzyme induction increases steroid exposure.",
+    "Ignore replacement adequacy after the interaction begins."
+  ],
+  [
+    "Let each conflicting regimen continue independently.",
+    "Count only the discharge prescription and erase earlier exposure.",
+    "Stop all therapy until every record agrees."
+  ],
+  [
+    "Stop all systemic steroids because of an obsolete pregnancy letter.",
+    "Ignore the risk from untreated maternal disease.",
+    "Assume every agent and dose has identical pregnancy and lactation implications."
+  ]
+,
+  ["Screen only after jaundice appears.", "Assume resolved HBV never reactivates.", "Give an antiviral to everyone without assessment."],
+  ["Treat suspected infection as irrelevant to steroid safety.", "Wait for dissemination before evaluating the infection.", "Use lack of fever to exclude parasite-related risk."],
+  ["Wait for a rash before contacting the care team.", "Give live varicella vaccine immediately during high-dose therapy.", "Assume steroid treatment prevents varicella complications."]
+];
+
+export const systemicGlucocorticoidsQuestionBank = concepts.map((concept, index) => {
+  const answer = index % 4;
+  const choices = [...caseDistractors[index]];
+  choices.splice(answer, 0, concept.caseAnswer);
   return {
-    id: `gc-${String(conceptIndex + 1).padStart(2, "0")}-${dimension.key}`,
+    id: `gc-${concept.key}-case`,
     conceptGroup: concept.key,
     lesson: concept.lesson,
-    difficulty: dimension.difficulty,
-    question: dimension.prompt(concept),
-    choices: [dimension.answer(concept), ...distractorIndexes.map((index) => concepts[index][field])],
-    answer: 0,
-    explanation: concept.rationale,
+    difficulty: "application",
+    question: `${concept.caseText} Which response is best?`,
+    choices, answer, explanation: concept.rationale,
     reviewHref: `#${concept.lesson}`,
   };
-}));
-
-if (systemicGlucocorticoidsQuestionBank.length < 100) {
-  throw new Error(`Systemic glucocorticoid question bank must contain at least 100 questions, found ${systemicGlucocorticoidsQuestionBank.length}.`);
-}
+});
