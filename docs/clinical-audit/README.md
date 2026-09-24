@@ -1,6 +1,6 @@
 # NaS Learn clinical content audit
 
-Started September 24, 2026. Status: **in progress**. No clinical module has yet passed this new audit.
+Started September 24, 2026. Status: **in progress**. One clinical module, Sunscreen and Photoprotection, has passed this new audit locally; the remaining curriculum is unverified.
 
 ## Scope and evidence
 
@@ -33,6 +33,9 @@ Use the bundled Node runtime (the system Node is too old for the existing loader
 - Read chapter 1 preparation text, printed pages 3-9 (PDF 15-21), including formula-checklist scope. The rest of chapter 1 is still open.
 - Confirmed a source discrepancy: the textbook's six-area exam blueprint is superseded by NABP's five-domain outline effective May 1, 2025.
 - The missing exam-orientation guide is authored and verified locally. This is a short study-skills guide, not a substitute for clinical modules or a claim that chapter 1's drug lists, diagnostic tests, terms, abbreviations, or formulas have been reviewed.
-- Next: commit and push the verified guide, then read and reconcile the remaining chapter 1 reference sections. Continue chapter 2 onward without losing the additional-curriculum backlog.
+- Guide committed as `381dd5e`. Push rejected by automatic approval review; exact-destination approval requested and pending. Do not retry or route around the rejection without authorization.
+- Chapter 1 drug-list and formula text read through printed page 23; table visual/current-label verification remains pending. Formula review led to the sunscreen module and its corresponding chapter 39 subsection. The resulting sunscreen audit is now locally verified; see its module evidence report.
+- Next: resume chapter 1 diagnostic tests, terminology, abbreviations, and all unresolved reference mappings. Sunscreen is verified locally (119 questions, ten lessons, desktop/mobile and build checks passed). Continue chapter 2 onward without losing the additional-curriculum backlog.
+- Important source finding: PDF offsets change within the book. Do not use a global printed-to-PDF offset. Chapter ledger PDF ranges are deliberately unset until verified.
 
 This is an evidence-based editorial audit, not independent pharmacist certification.
