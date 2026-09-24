@@ -3495,7 +3495,12 @@
       ],
       "questions": 144,
       "status": "unreviewed",
-      "evidence": []
+      "evidence": [
+        "rheumatoid-arthritis.md"
+      ],
+      "openIssues": [
+        "RA cross-check clarified maternal rather than paternal methotrexate exposure in one pregnancy case; full module remains unreviewed"
+      ]
     },
     {
       "slug": "motion-sickness",
@@ -4024,48 +4029,82 @@
       "lessons": [
         {
           "slug": "recognition",
-          "status": "unreviewed"
+          "status": "verified",
+          "evidence": "rheumatoid-arthritis.md"
         },
         {
           "slug": "treat-to-target",
-          "status": "unreviewed"
+          "status": "verified",
+          "evidence": "rheumatoid-arthritis.md"
         },
         {
           "slug": "methotrexate",
-          "status": "unreviewed"
+          "status": "verified",
+          "evidence": "rheumatoid-arthritis.md"
         },
         {
           "slug": "conventional-dmards",
-          "status": "unreviewed"
+          "status": "verified",
+          "evidence": "rheumatoid-arthritis.md"
         },
         {
           "slug": "biologic-dmards",
-          "status": "unreviewed"
+          "status": "verified",
+          "evidence": "rheumatoid-arthritis.md"
         },
         {
           "slug": "targeted-dmards",
-          "status": "unreviewed"
+          "status": "verified",
+          "evidence": "rheumatoid-arthritis.md"
         },
         {
           "slug": "prevention-monitoring",
-          "status": "unreviewed"
+          "status": "verified",
+          "evidence": "rheumatoid-arthritis.md"
         },
         {
           "slug": "supportive-care",
-          "status": "unreviewed"
+          "status": "verified",
+          "evidence": "rheumatoid-arthritis.md"
         },
         {
           "slug": "remission",
-          "status": "unreviewed"
+          "status": "verified",
+          "evidence": "rheumatoid-arthritis.md"
         },
         {
           "slug": "longitudinal-care",
-          "status": "unreviewed"
+          "status": "verified",
+          "evidence": "rheumatoid-arthritis.md"
+        },
+        {
+          "slug": "tnf-dosing",
+          "status": "verified",
+          "evidence": "rheumatoid-arthritis.md"
+        },
+        {
+          "slug": "other-biologic-dosing",
+          "status": "verified",
+          "evidence": "rheumatoid-arthritis.md"
         }
       ],
-      "questions": 160,
-      "status": "unreviewed",
-      "evidence": []
+      "questions": 109,
+      "status": "verified",
+      "evidence": [
+        "diagnostic-reference.md",
+        "rheumatoid-arthritis.md"
+      ],
+      "openIssues": [],
+      "validation": {
+        "assessmentStructure": "passed;109 questions,12 lessons,min8 per lesson",
+        "questionContent": "All109 reviewed against source evidence, including alternatives and rationales",
+        "browser": "desktop 1440x1000 and mobile 390x844; HTTP 200, 12 visuals, 12 embedded feedback results, 10 practice feedback results each; no errors or overflow",
+        "visualInspection": "All 12 desktop and all 12 mobile diagram screenshots inspected",
+        "productionBuild": "Final webpack build passed;556 pages generated",
+        "reviewDate": "2026-09-24"
+      },
+      "reviewedAt": "2026-09-24",
+      "releaseStatus": "local; push pending exact-destination approval"
     },
     {
       "slug": "systemic-lupus-erythematosus",
