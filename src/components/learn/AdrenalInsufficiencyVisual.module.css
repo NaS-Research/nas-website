@@ -1,0 +1,28 @@
+.grid:global(.chol-visual__grid) {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid > div {
+  overflow-wrap: anywhere;
+}
+
+.grid p {
+  color: rgba(244, 241, 236, 0.78);
+  font-size: 0.875rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 720px) {
+  .grid:global(.chol-visual__grid) {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .grid > div {
+    min-height: 0;
+  }
+
+  .grid span {
+    margin-bottom: 0.65rem;
+  }
+}
