@@ -1,6 +1,6 @@
 # NaS Learn clinical content audit
 
-Started September 24, 2026. Status: **in progress**. Eight clinical modules, Sunscreen and Photoprotection, Rheumatoid Arthritis, Systemic Lupus Erythematosus, Multiple Sclerosis, Raynaud Phenomenon, Celiac Disease, Myasthenia Gravis, and Sjogren Disease, have passed this new audit locally; the remaining curriculum is unverified.
+Started September 24, 2026. Status: **in progress**. Nine clinical modules, Sunscreen and Photoprotection, Rheumatoid Arthritis, Systemic Lupus Erythematosus, Multiple Sclerosis, Raynaud Phenomenon, Celiac Disease, Myasthenia Gravis, Sjogren Disease, and Psoriasis, have passed this new audit locally; the remaining curriculum is unverified.
 
 ## Scope and evidence
 
@@ -36,7 +36,7 @@ Use the bundled Node runtime (the system Node is too old for the existing loader
 - Guide committed as `381dd5e`. Push rejected by automatic approval review; exact-destination approval requested and pending. Do not retry or route around the rejection without authorization.
 - Chapter 1 drug-list and formula text read through printed page 23; table visual/current-label verification remains pending. Formula review led to the sunscreen module and its corresponding chapter 39 subsection. The resulting sunscreen audit is now locally verified; see its module evidence report.
 - Diagnostic quick-reference mapping led to the RA subsection (printed638-643/PDF646-651). RA is verified locally:12 lessons,109 questions, source discrepancies and full validation documented in rheumatoid-arthritis.md. Chapter46 remains open.
-- SLE and MS are verified locally; MS has14 lessons and144 questions. Raynaud is now verified locally (ten lessons, 44 teaching sections, 33 original cases). Celiac disease is verified locally with ten lessons and 36 original cases. Myasthenia gravis is verified locally with ten lessons and 38 original cases. Sjogren disease is verified locally with ten lessons and 33 original cases. Next: adjacent psoriasis, preserving chapter1 terminology, abbreviations and unresolved reference mappings as open work. Sunscreen is verified locally (119 questions, ten lessons, desktop/mobile and build checks passed). Continue chapter 2 onward without losing the additional-curriculum backlog.
+- SLE and MS are verified locally; MS has14 lessons and144 questions. Raynaud is now verified locally (ten lessons, 44 teaching sections, 33 original cases). Celiac disease is verified locally with ten lessons and 36 original cases. Myasthenia gravis is verified locally with ten lessons and 38 original cases. Sjogren disease is verified locally with ten lessons and 33 original cases. Psoriasis is now verified locally with ten lessons and 49 original cases. Continue the remaining chapter46 material, preserving chapter1 terminology, abbreviations and unresolved reference mappings as open work. Sunscreen is verified locally (119 questions, ten lessons, desktop/mobile and build checks passed). Continue chapter 2 onward without losing the additional-curriculum backlog.
 - Important source finding: PDF offsets change within the book. Do not use a global printed-to-PDF offset. Chapter ledger PDF ranges are deliberately unset until verified.
 
 This is an evidence-based editorial audit, not independent pharmacist certification.
