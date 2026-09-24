@@ -1,6 +1,6 @@
 # NaS Learn clinical content audit
 
-Started September 24, 2026. Status: **in progress**. Two clinical modules, Sunscreen and Photoprotection and Rheumatoid Arthritis, have passed this new audit locally; the remaining curriculum is unverified.
+Started September 24, 2026. Status: **in progress**. Three clinical modules, Sunscreen and Photoprotection, Rheumatoid Arthritis, and Systemic Lupus Erythematosus, have passed this new audit locally; the remaining curriculum is unverified.
 
 ## Scope and evidence
 

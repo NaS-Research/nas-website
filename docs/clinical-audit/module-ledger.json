@@ -4104,7 +4104,8 @@
         "reviewDate": "2026-09-24"
       },
       "reviewedAt": "2026-09-24",
-      "releaseStatus": "local; push pending exact-destination approval"
+      "releaseStatus": "local; push pending exact-destination approval",
+      "commit": "b4b59d2"
     },
     {
       "slug": "systemic-lupus-erythematosus",
@@ -4113,48 +4114,65 @@
       "lessons": [
         {
           "slug": "recognition",
-          "status": "unreviewed"
+          "status": "verified"
         },
         {
           "slug": "immune-architecture",
-          "status": "unreviewed"
+          "status": "verified"
         },
         {
           "slug": "treatment-targets",
-          "status": "unreviewed"
+          "status": "verified"
         },
         {
           "slug": "hydroxychloroquine",
-          "status": "unreviewed"
+          "status": "verified"
         },
         {
           "slug": "nonrenal-disease",
-          "status": "unreviewed"
+          "status": "verified"
         },
         {
           "slug": "steroid-sparing",
-          "status": "unreviewed"
+          "status": "verified"
         },
         {
           "slug": "biologic-therapy",
-          "status": "unreviewed"
+          "status": "verified"
         },
         {
           "slug": "lupus-nephritis",
-          "status": "unreviewed"
+          "status": "verified"
+        },
+        {
+          "slug": "voclosporin-dosing",
+          "status": "verified",
+          "new": true
         },
         {
           "slug": "prevention-reproduction",
-          "status": "unreviewed"
+          "status": "verified"
         },
         {
           "slug": "longitudinal-care",
-          "status": "unreviewed"
+          "status": "verified"
         }
       ],
-      "questions": 160,
-      "status": "unreviewed",
-      "evidence": []
+      "questions": 113,
+      "status": "verified",
+      "evidence": [
+        "systemic-lupus-erythematosus.md"
+      ],
+      "openIssues": [],
+      "baselineQuestions": 160,
+      "validation": {
+        "structural": "113 questions,11 lessons,minimum8 per lesson; focused audit passed after renal continuation and nonrenal taper clarification",
+        "browser": "Final session57158: desktop/mobile HTTP200,11visuals,11embedded feedback,10sampled bank feedback,no errors/overflow. Final additions inspected in session76114.",
+        "clinical": "All11lessons,113questions, embedded checks and figures reconciled against book and recorded primary sources; cross-module inconsistencies addressed. Verified locally2026-09-24; not independent pharmacist certification.",
+        "build": "Final session23376 webpack production build exited0 after all content changes.",
+        "assessmentClinical": "All113questions, choices, keys/explanations and generator reviewed; numerical examples independently recalculated. Minor wording edits only.",
+        "layout": "All11desktop and11mobile lesson captures inspected; final renal/taper paragraphs checked in viewport session83067. Unfocused skip link confirmed entirely offscreen; tall-capture overlay is an artifact."
+      }
     },
     {
       "slug": "multiple-sclerosis",
@@ -4404,7 +4422,9 @@
       ],
       "questions": 116,
       "status": "unreviewed",
-      "evidence": []
+      "evidence": [
+        "systemic-lupus-erythematosus.md: targeted fetal-surveillance consistency correction only; full module unreviewed"
+      ]
     },
     {
       "slug": "psoriasis",
