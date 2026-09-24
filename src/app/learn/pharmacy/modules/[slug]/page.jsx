@@ -1,3 +1,4 @@
+import AutoimmuneFoundationsVisual from "@/components/learn/AutoimmuneFoundationsVisual";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Footer from "@/components/Footer";
@@ -631,6 +632,7 @@ export default async function PharmacyModulePage({ params }) {
               {module.slug === "parkinson-disease" && parkinsonDiseaseVisualTypes.includes(submodule.visual) && <ParkinsonDiseaseVisual type={submodule.visual} />}
               {module.slug === "alzheimer-disease-related-dementias" && alzheimerDiseaseDementiasVisualTypes.includes(submodule.visual) && <AlzheimerDiseaseDementiasVisual type={submodule.visual} />}
               {module.slug === "seizures-epilepsy" && seizuresEpilepsyVisualTypes.includes(submodule.visual) && <SeizuresEpilepsyVisual type={submodule.visual} />}
+              {module.slug === "autoimmune-foundations" && <AutoimmuneFoundationsVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
