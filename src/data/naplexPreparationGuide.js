@@ -1,0 +1,116 @@
+export const naplexPreparationGuide = {
+  slug: "naplex-preparation-and-study-planning",
+  title: "NAPLEX Preparation and Study Planning",
+  shortTitle: "NAPLEX Preparation",
+  collection: "Drug Action and Therapeutic Foundations",
+  collectionSlug: "foundations",
+  level: "Foundation",
+  readTime: "12 min study",
+  date: "September 24, 2026",
+  dateISO: "2026-09-24",
+  reviewedDate: "September 24, 2026",
+  reviewedDateISO: "2026-09-24",
+  version: "1.0",
+  description: "Build a study plan around the current exam outline, practice clinical reasoning and calculations, and use errors to direct your next review.",
+  objectives: [
+    "Distinguish the current NABP exam outline from older preparation-book blueprints.",
+    "Build a study schedule that covers foundations, patient care, calculations, and professional responsibilities.",
+    "Use unfamiliar practice problems and error analysis to assess progress without assuming a score guarantees passing.",
+    "Locate current exam-day requirements and distinguish NaS practice from the licensure examination.",
+  ],
+  keyIdeas: [
+    { label: "Scope", value: "Use the current NABP outline" },
+    { label: "Practice", value: "Explain the answer before checking it" },
+    { label: "Calculation", value: "Carry units and verify plausibility" },
+    { label: "Progress", value: "Retest the reasoning on a new case" },
+  ],
+  sections: [
+    {
+      id: "current-exam-outline",
+      title: "1. Start with the Current Outline",
+      paragraphs: [
+        "A preparation book organizes learning; NABP defines the examination. The NAPLEX outline effective May 1, 2025 has five domains. An older book may describe six competency areas with different percentages. Use the current outline to check coverage rather than carrying those older weights into a new study schedule.",
+        "The approximate weights are 25% for foundational knowledge, 25% for medication-use processes, 40% for person-centered assessment and treatment planning, 5% for professional practice, and 5% for management and leadership. These describe scored-question distribution, not a promise about which diseases appear or a prescription for how many hours you personally need.",
+        "Keep calculations, compounding, evidence interpretation, counseling, safety, and professional responsibilities in the plan alongside disease treatment. A clinical case may require several skills even though the exam classifies its question under one part of the outline.",
+      ],
+      callout: { label: "Current source", text: "Read the official NABP Content Outline linked below. This guide summarizes its role and does not replace its detailed topic list." },
+    },
+    {
+      id: "build-the-plan",
+      title: "2. Build a Plan You Can Revise",
+      paragraphs: [
+        "Begin with a topic inventory and a short, unfamiliar practice set. Mark whether each missed item reflects missing knowledge, a misread case, incorrect source selection, a calculation error, or a timing problem. Treat correct guesses as unresolved learning needs. This is a planning exercise, not a validated prediction of your exam result.",
+        "Allocate study time according to the breadth of the topic and your demonstrated needs. A focused counseling topic may need a short session; a broad treatment area may require several. Study core pharmacology, dosage forms, patient assessment, and calculation methods early enough to use them throughout the clinical material.",
+        "Alternate focused learning with cumulative review. Leave room for missed sessions and revisit material after a delay. When a schedule slips, revise the schedule rather than deleting entire topics. Any decision to change an exam appointment should account for the current scheduling rules and your individual circumstances.",
+      ],
+      steps: [
+        { number: "01", title: "Locate the gap", text: "Name the skill you could not perform without help." },
+        { number: "02", title: "Study the explanation", text: "Connect the mechanism, patient findings, and decision." },
+        { number: "03", title: "Apply it", text: "Answer a new question with the explanation hidden." },
+        { number: "04", title: "Revisit it", text: "Check the same skill later in a different case." },
+      ],
+    },
+    {
+      id: "read-a-clinical-topic",
+      title: "3. Turn a Topic into a Decision",
+      paragraphs: [
+        "For each condition, explain the treatment goal, information needed before choosing therapy, available options, patient factors that change the choice, and follow-up that establishes benefit or harm. Connect a drug's mechanism to its useful effects and its important risks instead of learning an isolated name list.",
+        "For a medication, learn the generic name, relevant brand or formulation distinctions, indication, administration, major contraindications and interactions, monitoring, and counseling. Product availability and labeling can change. A historical top-drug list is a starting point for recognition, not a current prescribing authority or a complete exam syllabus.",
+        "When a book and a current guideline differ, identify the population, publication date, recommendation, and supporting evidence. When a decision is product-specific, check the exact formulation's labeling. Record the reason for an update rather than silently treating an old recommendation as current.",
+      ],
+    },
+    {
+      id: "calculation-practice",
+      title: "4. Make Calculation Reasoning Visible",
+      paragraphs: [
+        "Write what the problem asks for, identify the relevant quantities and units, and choose a relationship that connects them. Carry units through the calculation. Keep intermediate precision and apply the requested rounding at the end. Then check whether the result is plausible for the stated product, route, and patient.",
+        "For example, a practice problem specifies a solution containing 120 mg in 4 mL and asks for the volume containing 75 mg. The concentration is 30 mg/mL; 75 mg divided by 30 mg/mL gives 2.5 mL. Reverse-checking gives 2.5 mL multiplied by 30 mg/mL, or 75 mg. This arithmetic example does not establish an appropriate clinical dose.",
+        "Memorizing an equation is only part of the work. Learn when its assumptions fail, which weight or concentration definition it requires, and whether the answer is a rate, dose, quantity, or estimate. Do not turn an exam convention into a universal clinical rule. Use the official calculator tutorial to practice the functions you will need.",
+      ],
+    },
+    {
+      id: "assess-progress",
+      title: "5. Use Practice to Find the Next Task",
+      paragraphs: [
+        "Commit to an answer before revealing the explanation. Explain why it fits the case and why plausible alternatives do not. If a question is ambiguous or its answer conflicts with a reliable current source, investigate the item rather than memorizing it as an exception.",
+        "An error log can contain the topic, your reasoning, the corrected principle, the source, and a new practice task. Repeating the same question until its wording is familiar is not the same as applying the principle to a new patient. Mix previously studied topics and reassess after a delay.",
+        "NaS checks provide learning feedback. They are not official NAPLEX items, are not calibrated to its passing standard, and do not predict licensure outcomes. Completing every module or obtaining a high practice percentage cannot guarantee passing. Use several indicators: breadth of coverage, independent reasoning, calculation accuracy, retention, and ability to work within a time limit.",
+      ],
+    },
+    {
+      id: "exam-day-and-integrity",
+      title: "6. Prepare for the Testing Process",
+      paragraphs: [
+        "NABP currently describes a six-hour, 225-question examination with pass/fail reporting. Dividing 360 minutes by 225 gives a pacing average of 1.6 minutes, or 96 seconds, per question. That is an arithmetic planning average, not a separate time allowance or a demand to spend exactly that long on every item.",
+        "Before the appointment, read the current Candidate Application Bulletin for identification, name matching, arrival, breaks, navigation, accommodations, and permitted items. The bulletin provides the operational rules; an older textbook or a practice application's interface may differ. Practice with official sample items and the tutorial to become familiar with the question formats.",
+        "The current bulletin describes an on-screen calculator with scientific and five-function modes; a requested handheld calculator has five functions. Personal calculators are prohibited. Do not assume that equipment or navigation in NaS reproduces the testing center.",
+        "Use authorized practice material. Do not seek, share, or reconstruct protected exam questions. For the remaining steps toward licensure, consult the relevant board of pharmacy; passing the NAPLEX alone does not establish that every jurisdictional requirement has been met.",
+      ],
+    },
+    {
+      id: "study-check",
+      title: "7. Apply the Framework",
+      paragraphs: ["Answer each question before opening its explanation. These are learning checks, not an exam-readiness score."],
+      questions: [
+        { question: "Your preparation book lists six exam areas. Which source should determine the current coverage checklist?", answer: "The current NABP Content Outline. The five-domain outline took effect May 1, 2025; the older book remains useful for subject learning but does not set current exam weights." },
+        { question: "You recognize every answer in a repeated quiz but struggle with a new case on the same topic. What should change?", answer: "Practice the underlying decision in unfamiliar cases, explain the reasoning before viewing feedback, and revisit it later. Familiarity with an answer's wording does not establish transferable understanding." },
+        { question: "A solution contains 180 mg in 6 mL. A practice question asks for 45 mg. What volume and reverse-check are appropriate?", answer: "180 mg / 6 mL = 30 mg/mL. Then 45 mg / 30 mg/mL = 1.5 mL. Reverse-check: 1.5 mL x 30 mg/mL = 45 mg. Clinical appropriateness must be established separately." },
+        { question: "A learner treats 96 seconds as the maximum allowed for every exam item. What is wrong with that interpretation?", answer: "96 seconds is the overall arithmetic average from 360 minutes / 225 questions. It is not a separate per-item time limit; question complexity and time needed vary." },
+        { question: "A strong NaS practice score appears after several attempts. Does it establish readiness to pass the NAPLEX?", answer: "No. These learning questions are not calibrated to the NAPLEX passing standard. Review breadth, retention, unfamiliar-case performance, calculation accuracy, and timing rather than treating a practice percentage as a guarantee." },
+        { question: "An old drug list and current product labeling describe different formulations. What should you do?", answer: "Identify the exact product and verify current labeling and availability. Preserve the useful pharmacology while correcting outdated product information; a historical list does not authorize substitution." },
+      ],
+    },
+  ],
+  takeaways: [
+    "Check the official outline and bulletin for current exam scope and procedures.",
+    "Give each topic enough time for its breadth and your learning needs.",
+    "Show calculation units, assumptions, final rounding, and a plausibility check.",
+    "Use practice errors to choose the next learning task; avoid treating repeated-item recall as mastery.",
+    "NaS provides educational practice, not official exam content or a guarantee of passing.",
+  ],
+  sources: [
+    { title: "NABP: NAPLEX Content Outline, effective May 1, 2025", url: "https://nabp.pharmacy/wp-content/uploads/NAPLEX-Content-Outline.pdf" },
+    { title: "NABP: NAPLEX Test Day Information", url: "https://nabp.pharmacy/programs/examinations/naplex/test-day-information/" },
+    { title: "NABP Candidate Application Bulletin: Taking Your Exams", url: "https://read.nxtbook.com/nabp/bulletin/naplex_mpje_bulletin/taking_your_exams.html" },
+  ],
+};

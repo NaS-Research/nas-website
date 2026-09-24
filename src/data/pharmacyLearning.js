@@ -1,3 +1,5 @@
+import { naplexPreparationGuide } from "./naplexPreparationGuide";
+
 export const pharmacyCollections = [
   {
     slug: "foundations",
@@ -58,6 +60,7 @@ export const pharmacyCollections = [
 ];
 
 export const pharmacyLessons = [
+  naplexPreparationGuide,
   {
     slug: "drug-formulations-and-routes",
     title: "Drug Formulations and Routes of Administration",
