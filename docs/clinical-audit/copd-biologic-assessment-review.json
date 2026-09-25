@@ -1,0 +1,86 @@
+{
+  "module": "chronic-obstructive-pulmonary-disease",
+  "reviewDate": "2026-09-25",
+  "scope": "Four replaced biologic cases and four added advanced-therapy paragraphs.122/126 cases individually reviewed;4 original cases unclosed. Biologic administration/storage details and full module closure remain pending.",
+  "sources": [
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=595f437d-2729-40bb-9c62-c8ece1f82780",
+      "sections": "Current April2026 label1.6,2.8,14.6 actual text and warning highlights read."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=fefb887c-e4ac-431e-8893-e9d1a5a63fea",
+      "sections": "Current label1.3,2.1,5.1\u20135.4,14.3 actual text read."
+    }
+  ],
+  "questions": [
+    {
+      "id": "copd-017",
+      "status": "corrected-clinically-reviewed",
+      "sha256": "ce4a018548f4fa31fc472e33f343ea5bf22c3d1753044528d01993aa863c7537",
+      "reviewedElements": [
+        "stem",
+        "every choice",
+        "answer",
+        "rationale",
+        "lesson target"
+      ],
+      "finding": "Adult eosinophilic COPD add-on maintenance; not rescue or replacement."
+    },
+    {
+      "id": "copd-018",
+      "status": "corrected-clinically-reviewed",
+      "sha256": "b4723ad9ff583966c21c758e8bbe6552fd6ef6f7f9be6912028459017b385bdf",
+      "reviewedElements": [
+        "stem",
+        "every choice",
+        "answer",
+        "rationale",
+        "lesson target"
+      ],
+      "finding": "Dupilumab COPD300mgSCq2wk without importing loading dose."
+    },
+    {
+      "id": "copd-019",
+      "status": "corrected-clinically-reviewed",
+      "sha256": "35d62bb3709150aa37cc2a9ac7b5201db20edc45dff5b97109c3c5233f24f5d8",
+      "reviewedElements": [
+        "stem",
+        "every choice",
+        "answer",
+        "rationale",
+        "lesson target"
+      ],
+      "finding": "Mepolizumab COPD100mgSCq4wk; EGPA/HES300mg not transferred."
+    },
+    {
+      "id": "copd-020",
+      "status": "corrected-clinically-reviewed",
+      "sha256": "8c0e0c9d70245b6bdd0377838b53ebae8529be2eea2b6094c2cc82d219e0af2a",
+      "reviewedElements": [
+        "stem",
+        "every choice",
+        "answer",
+        "rationale",
+        "lesson target"
+      ],
+      "finding": "Label indication distinguished from product-specific trials and historical eosinophils."
+    }
+  ],
+  "validation": {
+    "structural": "126 questions; no hardErrors/sourceGaps/sizeAdvisories/thinLessons",
+    "browser": {
+      "session": 77666,
+      "exitCode": 0,
+      "desktopAttempts": 11,
+      "mobileAttempts": 23,
+      "casesCoveredPerViewport": 4,
+      "result": "Stems, choices, mixed scoring, keys, full rationales, unique targets passed; no errors or horizontal overflow."
+    },
+    "lesson": {
+      "session": 73065,
+      "exitCode": 0,
+      "paragraphs": 13,
+      "result": "All advanced-therapy paragraph text, embedded check/rationale and126 targets checked on1440x1000 and390x844; no errors or overflow."
+    }
+  }
+}

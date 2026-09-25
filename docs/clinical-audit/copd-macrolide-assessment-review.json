@@ -1,0 +1,86 @@
+{
+  "module": "chronic-obstructive-pulmonary-disease",
+  "reviewDate": "2026-09-25",
+  "scope": "Four replaced macrolide cases and two added advanced-therapy paragraphs.118/126 cases individually reviewed;8 original cases unclosed.",
+  "sources": [
+    {
+      "url": "https://goldcopd.org/wp-content/uploads/2026/01/GOLD-REPORT-2026-v1.3-8Dec2025_WMV2.pdf",
+      "pages": "Printed152/PDF163 directly read."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7204798/",
+      "access": "Actual COPD recommendations and GPPs read from EuropePMC fullTextXML after HTML retrieval failed. https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7204798/fullTextXML"
+    }
+  ],
+  "questions": [
+    {
+      "id": "copd-013",
+      "status": "corrected-clinically-reviewed",
+      "sha256": "e4645b0e19fdea27f9754bda7055f2e83638c8c95ad8481ce16972f8aef1fce3",
+      "reviewedElements": [
+        "stem",
+        "every choice",
+        "answer",
+        "rationale",
+        "lesson target"
+      ],
+      "finding": "Selected preventive trial after optimized care and safety screening."
+    },
+    {
+      "id": "copd-014",
+      "status": "corrected-clinically-reviewed",
+      "sha256": "92859f4c5fa14867cc3d27f49cb2da79126eeb5281a2cb3e5c3913c8a9923eed",
+      "reviewedElements": [
+        "stem",
+        "every choice",
+        "answer",
+        "rationale",
+        "lesson target"
+      ],
+      "finding": "468ms exceeds male BTS450ms threshold; no500ms substitution."
+    },
+    {
+      "id": "copd-015",
+      "status": "corrected-clinically-reviewed",
+      "sha256": "9cde5ed81382193970573419b4d266fc18cdd10e2e913cdc247d1a60b6f1ec7d",
+      "reviewedElements": [
+        "stem",
+        "every choice",
+        "answer",
+        "rationale",
+        "lesson target"
+      ],
+      "finding": "NTM identification precludes preventive macrolide monotherapy pending assessment."
+    },
+    {
+      "id": "copd-016",
+      "status": "corrected-clinically-reviewed",
+      "sha256": "e6e9d617590a847a90694eca6b4700c538b80d1f0fdda686f4616fbec95c72c3",
+      "reviewedElements": [
+        "stem",
+        "every choice",
+        "answer",
+        "rationale",
+        "lesson target"
+      ],
+      "finding": "Beyond-one-year efficacy/safety not established; no indefinite extrapolation."
+    }
+  ],
+  "validation": {
+    "structural": "126 questions; no hardErrors/sourceGaps/sizeAdvisories/thinLessons",
+    "browser": {
+      "session": 35770,
+      "exitCode": 0,
+      "desktopAttempts": 14,
+      "mobileAttempts": 9,
+      "casesCoveredPerViewport": 4,
+      "result": "Stems, choices, mixed scoring, keys, full rationales, unique targets passed; no errors or horizontal overflow."
+    },
+    "lesson": {
+      "session": 38074,
+      "exitCode": 0,
+      "paragraphs": 9,
+      "result": "All advanced-therapy paragraph text, embedded check/rationale and126 targets checked on1440x1000 and390x844; no errors or overflow."
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "module": "chronic-obstructive-pulmonary-disease",
+  "reviewDate": "2026-09-25",
+  "scope": "Four replaced ensifentrine cases and three added pharmacology paragraphs.114/126 cases individually reviewed;12 original cases unclosed.",
+  "source": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=e6433c98-41a0-4f99-8f7f-d0e9db6e3f40",
+  "sourceSections": "April2026 label: actual sections1\u20136,8.6\u20138.7,17 and IFU read. Existing roflumilast comparison directly read in previous batch. Ensifentrine initial approval2024 postdates intended2023 book.",
+  "questions": [
+    {
+      "id": "copd-073",
+      "status": "corrected-clinically-reviewed",
+      "sha256": "e4dcb27c18651e2b272bf76e41b6764248b40bf961a179599dd92b335496a906",
+      "reviewedElements": [
+        "stem",
+        "every choice",
+        "answer",
+        "rationale",
+        "lesson target"
+      ],
+      "finding": "Dose, route, device and maintenance role checked; one3mg ampule per dose."
+    },
+    {
+      "id": "copd-074",
+      "status": "corrected-clinically-reviewed",
+      "sha256": "f644b3162bcf29800a3c86c0f06ec0d1b5c53829a94524a6c82b3fc54c038aa5",
+      "reviewedElements": [
+        "stem",
+        "every choice",
+        "answer",
+        "rationale",
+        "lesson target"
+      ],
+      "finding": "No physical mixing; shake suspension before use."
+    },
+    {
+      "id": "copd-075",
+      "status": "corrected-clinically-reviewed",
+      "sha256": "68eff17b89a2e7ec4438f508d6bd634a0e669202c277d8c617926447eabc9adf",
+      "reviewedElements": [
+        "stem",
+        "every choice",
+        "answer",
+        "rationale",
+        "lesson target"
+      ],
+      "finding": "Hepatic caution distinct from roflumilast contraindication."
+    },
+    {
+      "id": "copd-076",
+      "status": "corrected-clinically-reviewed",
+      "sha256": "08360950596e36cfa02f22a6bab7c7deba620af4379323ce1ea9196fa0008d61",
+      "reviewedElements": [
+        "stem",
+        "every choice",
+        "answer",
+        "rationale",
+        "lesson target"
+      ],
+      "finding": "Paradoxical bronchospasm requires immediate discontinuation and acute treatment."
+    }
+  ],
+  "validation": {
+    "structural": "126 questions; no hardErrors/sourceGaps/sizeAdvisories/thinLessons",
+    "browser": {
+      "session": 85318,
+      "exitCode": 0,
+      "desktopAttempts": 23,
+      "mobileAttempts": 15,
+      "casesCoveredPerViewport": 4,
+      "result": "Stems, choices, mixed scoring, keys, full rationales, unique targets passed; no errors or horizontal overflow."
+    },
+    "lesson": {
+      "session": 28642,
+      "exitCode": 0,
+      "paragraphs": 45,
+      "result": "All pharmacology paragraph text, embedded check/rationale and126 targets checked on1440x1000 and390x844; no errors or overflow. First invocation lacked alias loader and failed before browser launch; corrected invocation passed."
+    }
+  }
+}

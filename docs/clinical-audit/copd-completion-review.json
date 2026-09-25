@@ -1,0 +1,66 @@
+{
+  "module": "chronic-obstructive-pulmonary-disease",
+  "reviewDate": "2026-09-25",
+  "status": "verified-locally",
+  "meaning": "Agent content/source reconciliation and local validation completed; not independent pharmacist certification, publication or deployment.",
+  "scope": {
+    "bookChapter": 42,
+    "printedPages": [
+      588,
+      597
+    ],
+    "pdfPages": [
+      596,
+      605
+    ],
+    "subsections": 13,
+    "lessons": 8,
+    "paragraphs": 130,
+    "assessmentQuestions": 126,
+    "embeddedChecks": 8,
+    "figures": 8
+  },
+  "evidence": {
+    "lessons": "copd-lesson-review.json",
+    "assessments": "copd-assessment-record-integrity.json",
+    "figures": [
+      "copd-figure-review.json",
+      "copd-remaining-figure-review.json"
+    ],
+    "sourceReadsAndCorrections": "chronic-obstructive-pulmonary-disease.md"
+  },
+  "validation": {
+    "contentIntegrity": "126/126 questions and8/8 lessons match individual review hashes; latest figure component matches reviewed hash. Integrity verifies correspondence, not independent clinical proof.",
+    "structuralAudit": "126 questions; no hardErrors,sourceGaps,sizeAdvisories,thinLessons",
+    "desktopMobile": {
+      "session": 4731,
+      "exitCode": 0,
+      "viewports": [
+        "1440x1000",
+        "390x844"
+      ],
+      "checks": "All130 paragraph bodies rendered, all8 embedded checks correctly scored with full rationales, all126 review targets unique; no page errors or horizontal overflow."
+    },
+    "assessmentInteraction": "All126 cases individually exercised in prior recorded randomized desktop/mobile batches; unchanged question hashes verified in final pass.",
+    "visualInspection": "All8 figures inspected in16 normal-motion captures across the two prior figure records. Earlier three figures unchanged by later component edits; final component diff inspected.",
+    "build": {
+      "session": 7229,
+      "exitCode": 0,
+      "command": "node node_modules/next/dist/bin/next build --webpack",
+      "result": "Compiled successfully;557/557 static pages generated. Full worktree build includes unrelated changes and is not a claim those changes were audited."
+    },
+    "whitespace": "Scoped git diff --check passed"
+  },
+  "sourceDiscrepancyDisposition": {
+    "issue": "GOLD2026Figure3.9 monotherapy-after-exacerbation eos>=300 direct-triple branch differs from general dual-bronchodilator wording in report prose.",
+    "evidence": "August2026 GOLD-author primary-care accepted manuscriptFigure3 independently repeats the branch; actualPDF13/14 figures visually inspected.",
+    "handling": "Lesson explicitly attributes both and describes later corroboration; assessment098 names the diagram. No invented erratum, universal treatment mandate or claim to have read inaccessible July editorial. This qualifies the teaching rather than concealing source disagreement.",
+    "remainingLimitation": "Formal explanation of the report wording difference was not obtained; documented source uncertainty is preserved."
+  },
+  "release": {
+    "commit": "pending",
+    "push": "pending",
+    "published": false,
+    "deployed": false
+  }
+}
