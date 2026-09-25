@@ -71,6 +71,8 @@ const concepts = [
     "Remove it and rule out pregnancy before restarting; use backup until the new ring has been worn continuously for seven days.", "Thirty-three days exceeds four weeks. The label calls for pregnancy exclusion and seven continuous days of new-ring use before stopping backup."),
   c("Miudella duration", "intrauterine-contraception", "Device durations differ.", "Verify the selected system.", "Assume all copper devices last ten years.", "A patient with Miudella is told that every copper IUD has a ten-year labeled duration.", "Correct the plan: Miudella is labeled for up to three years.", "The ten-year Paragard duration cannot be transferred to Miudella."),
   c("Miudella emergency-use restriction", "emergency-contraception", "EC evidence is product specific.", "Select an established EC option.", "Substitute an unvalidated device.", "A clinic proposes substituting Miudella for Paragard in an emergency-contraception protocol solely because both contain copper.", "Do not substitute: Miudella labeling contraindicates emergency use.", "Copper content alone does not establish equivalent emergency-contraception evidence."),
+  c("cervical cap timing", "nonhormonal-methods", "Barrier timing depends on the device.", "Use the selected cap instructions.", "Remove before the minimum interval.", "A FemCap user plans to remove the device two hours after intercourse.", "Explain that it must remain for at least six hours after intercourse, without exceeding 48 hours total wear.", "The cap's minimum post-intercourse retention and maximum wear both matter; these are not the diaphragm or sponge limits."),
+  c("contraceptive app authorization", "nonhormonal-methods", "Authorization is product specific.", "Verify the contraceptive device and its instructions.", "Treat every tracker as contraception.", "A patient assumes an ordinary period-calendar app prevents pregnancy because Natural Cycles received FDA authorization.", "Explain that authorization of one contraceptive app does not establish efficacy for every cycle tracker.", "Contraceptive software requires a validated product, correct use and protection or abstinence on fertile days."),
 ];
 
 const caseDistractors = [
@@ -291,6 +293,8 @@ const caseDistractors = [
   ["Take a one-week break and restart without pregnancy assessment or backup.", "Keep using the old ring until bleeding starts.", "Use backup for only two days after replacement."],
   ["Confirm ten years for all copper devices.", "Replace it monthly like a vaginal ring.", "Assume no removal deadline applies without hormones."],
   ["Substitute freely because copper devices are interchangeable.", "Use its three-year duration as proof of emergency efficacy.", "Assume all IUDs share one emergency indication."],
+  ["Remove it now because every barrier works only during intercourse.", "Leave it in for a week without cleaning.", "Use the sponge's 30-hour maximum for every cap."],
+  ["Confirm that every calendar app has the same authorization.", "Promise that a predicted low-risk day guarantees no pregnancy.", "Ignore fertile-day instructions if the app is downloaded."],
 ];
 
 export const contraceptivePharmacotherapyQuestionBank = concepts.map((concept, index) => {
