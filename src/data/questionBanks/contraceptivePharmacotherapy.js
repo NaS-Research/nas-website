@@ -76,6 +76,9 @@ const concepts = [
   c("continuous CHC bleeding break", "combined-methods", "Bleeding management must preserve contraception.", "Respect the minimum active-use interval.", "Interrupt hormones too early.", "On day 14 of continuous combined-pill use, a patient with light spotting asks to take a four-day hormone break.", "Avoid that break during the first 21 days; assess the bleeding and discuss an appropriate plan.", "CDC limits this bleeding-management option to after the first 21 days and no more than once monthly."),
   c("combined drospirenone potassium", "combined-methods", "Potassium risk persists in combined products.", "Check the product warning.", "Assume estrogen prevents potassium elevation.", "An otherwise eligible patient takes chronic spironolactone and is starting Yaz.", "Arrange potassium monitoring during the first cycle.", "Drospirenone and potassium-raising medicines require a monitoring plan."),
   c("urgent combined-pill symptoms", "combined-methods", "Urgent symptoms need assessment.", "Escalate possible thromboembolism.", "Dismiss symptoms as adjustment.", "A combined-pill user develops sudden breathlessness and chest pain.", "Arrange emergency assessment now.", "These symptoms can signal a serious vascular event."),
+  c("Lo Loestrin active sequence", "combined-methods", "Ingredients matter more than position in the pack.", "Identify estrogen-only tablets.", "Call the final four tablets placebo.", "A Lo Loestrin Fe user assumes all four tablets after the 24 combination tablets are inactive.", "Explain that the next two contain estrogen and only the final two are nonhormonal iron tablets.", "The labeled sequence is 24 combined, two estrogen-only and two nonhormonal tablets."),
+  c("Seasonique extended sequence", "combined-methods", "Extended packs differ.", "Read the last seven tablets.", "Assume a placebo week.", "A patient describes the last seven Seasonique tablets as hormone-free.", "Explain that they contain ethinyl estradiol and follow 84 combination tablets.", "The 91-day regimen includes seven estrogen-only tablets, not seven placebo tablets."),
+  c("Natazia missed day twenty", "initiation-adherence", "Natazia has a product-specific algorithm.", "Use its pack-day instructions.", "Apply standard combined-pill rules.", "A Natazia user missed only the day-20 tablet and is now 14 hours late. The patient asks for the labeled missed-dose plan.", "Discard the current pack, begin day one of a new pack and use nonhormonal backup for nine days.", "For one pill more than 12 hours late on days 18 through 24, the label uses a new pack and nine-day backup."),
 ];
 
 const caseDistractors = [
@@ -301,6 +304,9 @@ const caseDistractors = [
   ["Take four days off immediately whenever spotting occurs.", "Repeat four-day breaks every week.", "Double estrogen without assessing eligibility or other causes."],
   ["Skip monitoring because Yaz contains estrogen.", "Double spironolactone to improve contraception.", "Assume normal baseline potassium removes all follow-up needs."],
   ["Wait three months for adjustment.", "Take an extra pill.", "Reduce estrogen without evaluating the symptoms."],
+  ["Skip all four because none contains hormones.", "Treat all four as full-dose combined tablets.", "Use the iron tablets alone for contraception."],
+  ["They are all placebo.", "They contain only levonorgestrel.", "The entire pack lasts only 28 days."],
+  ["Continue the same pack without backup because less than 48 hours elapsed.", "Stop tablets for seven days before restarting.", "Take three tablets immediately and omit backup."],
 ];
 
 export const contraceptivePharmacotherapyQuestionBank = concepts.map((concept, index) => {

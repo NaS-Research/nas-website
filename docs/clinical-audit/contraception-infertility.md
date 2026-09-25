@@ -1,6 +1,6 @@
 # Contraception and infertility audit
 
-Status: contraception locally re-verified at13 lessons/figures and74 focused cases; chapter47 subsection reconciliation remains open. Chapter47 printed656–668 / PDF664–676. Review date2026-09-24. All actual lessons/checks, figure definitions and emitted assessment content have been reviewed across the revisions recorded below. Final74-case build and targeted desktop/mobile checks passed. Gonadal hormones and infertility are locally verified, including the preconception addendum. No push or deployment.
+Status: contraception has13 lessons/figures and77 reviewed cases. Pack/counseling additions passed local validation; chapter47 remains reviewing. Final therapeutic-benefit and endometriosis-drug coverage reconciliation remains open. Review date2026-09-24. No push or deployment.
 
 The sections below are a chronological audit record; counts and pending items within earlier entries describe their respective revisions. This opening states the current position.
 
@@ -273,3 +273,14 @@ Read the final four added lesson paragraphs and emitted cases72–74, all12 choi
 Final validation: structural74 reported no hard errors or source gaps. Webpack compilation, TypeScript and557-page static generation passed, exit0. Combined-method lesson navigation, embedded feedback and review link passed at1440x1000 and390x844; HTTP200, no page errors or horizontal overflow. Practice displayed ten questions, graded10/10 correctly and reset to a new attempt on both viewports. All processes ended successfully. Logs: /private/tmp/contraception-structural-74.log, /private/tmp/contraception-build-74.log, /private/tmp/contraception-combined-74.log, /private/tmp/contraception-practice-74.log. Previous unchanged-figure visual evidence is retained.
 
 Module re-verified locally. Chapter47 still needs explicit subsection coverage closure; this is not a whole-curriculum completion claim or independent pharmacist certification. Push remains unavailable following the prior automatic approval rejection pending destination confirmation; no retry or deployment.
+
+
+## Product-pack and counseling reconciliation at77 cases
+
+Reread book printed664–667/PDF672–675 and reconciled prior missed-method, LARC, EC and counseling corrections. Added Lo Loestrin Fe24/2/2 and Seasonique84+7 ingredient sequences, Natazia26 active/four phases plus2 inert tablets, severe abdominal-pain escalation and use of supplied patient information. Targeted primary label sections read: Lo Loestrin Fe March2025 strengths; Seasonique dosage/strengths and counseling (the retrieved repackager label is revised2011, used only for its explicit pack sequence); Natazia June2024 pack/start and missed-day18–24 instructions; levonorgestrel/EE patient warning-sign section. URLs are in module references. These are targeted readings, not full-label claims.
+
+Natazia's first-nine-day backup and one-pill-more-than12-hours-late instructions differ from the generic combined-pill algorithm. Added that exception and an explicit label-based day20/14-hour case. Read all three new emitted cases75–77,12 alternatives, answer indices2/3/0 and explanations. Independently checked24+2+2=28,84+7=91,2+5+17+2=26active plus2inert=28, and20 lies within18–24 while14 exceeds12. No figure/layout code changed.
+
+Validation: structural77 no hard errors/source gaps; final webpack/TypeScript/557-page build exit0. Combined-methods, initiation-adherence and integrated-care navigation, embedded feedback and review links passed at1440x1000 and390x844; HTTP200, no errors/overflow. Ten-question practice grading and new-attempt reset passed on both. All processes exited0. Logs: /private/tmp/contraception-structural-77.log, /private/tmp/contraception-build-77.log, /private/tmp/contraception-browser-77.log, /private/tmp/contraception-practice-77.log. Prior unchanged-figure visual evidence retained.
+
+Remaining chapter therapeutic coverage: explicitly reconcile the book's ovarian/endometrial cancer-benefit claims and named Orilissa/endometriosis treatment. The current module discusses symptom suppression and Oriahnn but no module search hit for Orilissa was found. NCI oral-contraceptive cancer fact sheet was read for the benefit/risk evidence; no new cancer claim has yet been implemented. This prevents chapter closure. Keep therapeutic-uses reviewing rather than extending the earlier verified status to this newly identified gap.
