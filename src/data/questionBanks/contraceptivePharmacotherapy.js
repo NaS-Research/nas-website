@@ -79,6 +79,8 @@ const concepts = [
   c("Lo Loestrin active sequence", "combined-methods", "Ingredients matter more than position in the pack.", "Identify estrogen-only tablets.", "Call the final four tablets placebo.", "A Lo Loestrin Fe user assumes all four tablets after the 24 combination tablets are inactive.", "Explain that the next two contain estrogen and only the final two are nonhormonal iron tablets.", "The labeled sequence is 24 combined, two estrogen-only and two nonhormonal tablets."),
   c("Seasonique extended sequence", "combined-methods", "Extended packs differ.", "Read the last seven tablets.", "Assume a placebo week.", "A patient describes the last seven Seasonique tablets as hormone-free.", "Explain that they contain ethinyl estradiol and follow 84 combination tablets.", "The 91-day regimen includes seven estrogen-only tablets, not seven placebo tablets."),
   c("Natazia missed day twenty", "initiation-adherence", "Natazia has a product-specific algorithm.", "Use its pack-day instructions.", "Apply standard combined-pill rules.", "A Natazia user missed only the day-20 tablet and is now 14 hours late. The patient asks for the labeled missed-dose plan.", "Discard the current pack, begin day one of a new pack and use nonhormonal backup for nine days.", "For one pill more than 12 hours late on days 18 through 24, the label uses a new pack and nine-day backup."),
+  c("cancer association counseling", "therapeutic-uses", "Cancer associations differ by site.", "Discuss benefits and risks.", "Promise universal protection.", "A patient interprets lower ovarian-cancer risk among pill users as proof that oral contraceptives prevent every cancer.", "Explain that associations vary by cancer type and do not erase contraindications.", "Observational benefits for ovarian and endometrial cancer coexist with different breast and cervical risk patterns."),
+  c("Orilissa duration", "therapeutic-uses", "Dose changes duration limits.", "Check the labeled limit.", "Apply the lower-dose limit.", "A patient with normal liver function takes Orilissa 200 mg twice daily and expects 24 months of treatment.", "Explain that this dose is limited to six months.", "The longer limit belongs to the 150 mg daily regimen; bone loss limits exposure."),
 ];
 
 const caseDistractors = [
@@ -307,6 +309,8 @@ const caseDistractors = [
   ["Skip all four because none contains hormones.", "Treat all four as full-dose combined tablets.", "Use the iron tablets alone for contraception."],
   ["They are all placebo.", "They contain only levonorgestrel.", "The entire pack lasts only 28 days."],
   ["Continue the same pack without backup because less than 48 hours elapsed.", "Stop tablets for seven days before restarting.", "Take three tablets immediately and omit backup."],
+  ["Guarantee prevention of every cancer.", "Ignore an existing contraindication because of this association.", "Claim observational studies eliminate all confounding."],
+  ["Confirm 24 months for every dose.", "Continue indefinitely if bleeding stops.", "Assume bone loss cannot occur."],
 ];
 
 export const contraceptivePharmacotherapyQuestionBank = concepts.map((concept, index) => {

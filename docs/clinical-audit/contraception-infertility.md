@@ -1,6 +1,6 @@
 # Contraception and infertility audit
 
-Status: contraception has13 lessons/figures and77 reviewed cases. Pack/counseling additions passed local validation; chapter47 remains reviewing. Final therapeutic-benefit and endometriosis-drug coverage reconciliation remains open. Review date2026-09-24. No push or deployment.
+Status: chapter47 reconciled and verified locally. Printed656–668 / PDF664–676. Gonadal hormones33 cases, infertility43 cases and contraception79 cases have completed the actual-content reviews and local validation documented in their audit records. Review date2026-09-24. No push, publication, deployment or independent pharmacist certification.
 
 The sections below are a chronological audit record; counts and pending items within earlier entries describe their respective revisions. This opening states the current position.
 
@@ -284,3 +284,23 @@ Natazia's first-nine-day backup and one-pill-more-than12-hours-late instructions
 Validation: structural77 no hard errors/source gaps; final webpack/TypeScript/557-page build exit0. Combined-methods, initiation-adherence and integrated-care navigation, embedded feedback and review links passed at1440x1000 and390x844; HTTP200, no errors/overflow. Ten-question practice grading and new-attempt reset passed on both. All processes exited0. Logs: /private/tmp/contraception-structural-77.log, /private/tmp/contraception-build-77.log, /private/tmp/contraception-browser-77.log, /private/tmp/contraception-practice-77.log. Prior unchanged-figure visual evidence retained.
 
 Remaining chapter therapeutic coverage: explicitly reconcile the book's ovarian/endometrial cancer-benefit claims and named Orilissa/endometriosis treatment. The current module discusses symptom suppression and Oriahnn but no module search hit for Orilissa was found. NCI oral-contraceptive cancer fact sheet was read for the benefit/risk evidence; no new cancer claim has yet been implemented. This prevents chapter closure. Keep therapeutic-uses reviewing rather than extending the earlier verified status to this newly identified gap.
+
+
+## Therapeutic coverage closure and chapter reconciliation
+
+Read the NCI oral-contraceptive cancer fact sheet evidence/limitations and the current Orilissa DailyMed indication, dosage table, contraindications and warnings. Added bounded original teaching and cases78–79; sources are in the module references. No full Orilissa label reading is claimed. Read the four final added paragraphs and both emitted cases with all eight choices, keys1/2 and explanations. The dose/duration pairings and hepatic qualifier were checked directly against the label table.
+
+Final79-case structural check has no hard errors/source gaps. Webpack, TypeScript and557 static pages passed, exit0. Therapeutic-uses navigation, embedded feedback and review link passed at1440x1000 and390x844, HTTP200, no errors/overflow. Both practice runs graded ten questions correctly and reset to a new attempt. All processes exited0. Logs: /private/tmp/contraception-structural-79.log, /private/tmp/contraception-build-79.log, /private/tmp/contraception-browser-79.log, /private/tmp/contraception-practice-79.log. Figures unchanged since prior visual inspection.
+
+Final chapter mapping follows the source-page readings and visual inspections recorded above and in the gonadal/infertility audits, plus the actual integrated lesson and assessment readings. It does not infer accuracy from structural success.
+
+| Source pages, printed / PDF | Implemented coverage | Reconciliation evidence |
+| --- | --- | --- |
+|656–657 /664–665|gonadal: reproductive axis and ovarian cycle; infertility: evaluation-timing, fertile-window, trigger-protocol-control|Cycle feedback, LH/temperature limitations, fertile window, home hCG interpretation, folic acid and preconception review; later43-case addendum closes pregnancy-testing gap.|
+|658–659 /666–667|contraception: selection-framework, nonhormonal-methods|Typical-use versus perfect-use, barriers, spermicide, Phexxi, cap, app, LAM and permanent methods; device-specific timing replaces generalizations.|
+|659–663 /667–671|contraception: combined-methods, vaginal-ring-use, combined-eligibility, progestin-methods, therapeutic-uses, interactions-follow-up|Product sequences, eligibility, adverse effects, bleeding management, therapeutic distinctions and interactions reconciled with cited labels/guidelines. Representative packs teach the table's formulation distinctions; redundant brand lists are not duplicated.|
+|664 /672|contraception: initiation-adherence|Pregnancy checklist, quick start, backup, missed pills and illness rules; product exceptions include drospirenone and Natazia. No universal POP schedule retained.|
+|665–667 /673–675|contraception: intrauterine-contraception, implant, emergency-contraception, integrated-care and product lessons|Updated durations and safeguards, EC timing/restart/redosing, label-versus-guideline distinctions, product handling, patient leaflet and warning-symptom counseling.|
+|668 /676|infertility: all ten lessons|Evaluation and mechanisms, oral induction, monitored stimulation, trigger/luteal support, ART and OHSS; current primary sources also cover retained material beyond the short book section.|
+
+Chapter47 has no remaining identified material coverage or accuracy issue after these passes. Outdated epidemiologic snapshots, retail prices, redundant brand mnemonics and proprietary examples were not reproduced. Broad book claims were replaced with the specific evidence and limitations recorded above, rather than retained as class-wide promises. Source material remains private. This chapter closure does not establish completion of any other chapter or the full curriculum.
