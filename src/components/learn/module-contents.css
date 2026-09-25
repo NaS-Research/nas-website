@@ -1,0 +1,69 @@
+/* Keep the document as the scroll container so the lesson rail can stick. */
+html:has(.module-contents),
+body:has(.module-contents) { overflow-x: clip; overflow-y: visible; }
+.nas-page:has(.module-contents) { overflow: clip; }
+.pharmacy-module-layout:has(.module-contents) { align-items: start; }
+.pharmacy-module-nav.module-contents {
+  position: sticky;
+  top: 7rem;
+  align-self: start;
+  overflow: visible;
+  max-height: none;
+  min-width: 0;
+}
+.module-contents > p { color: #b99375; }
+.pharmacy-module-nav.module-contents nav {
+  position: relative;
+  max-height: calc(100dvh - 11rem);
+  overflow: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #725944 transparent;
+  border-top: 0;
+}
+.pharmacy-module-nav.module-contents nav a {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: .7rem;
+  align-items: baseline;
+  padding: .8rem .75rem;
+  border-bottom-color: rgba(185, 147, 117, .12);
+  transition: color 280ms ease;
+}
+.module-contents__number { font-size: .62rem; opacity: .7; font-variant-numeric: tabular-nums; }
+.pharmacy-module-nav.module-contents nav a[aria-current="location"] { color: #d4ad87; }
+.pharmacy-module-nav.module-contents nav a:hover { padding-left: .75rem; color: #e6c6a6; }
+.module-contents nav a:focus-visible { outline: 2px solid #c5a36c; outline-offset: -2px; }
+.module-contents__marker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background: rgba(185, 147, 117, .14);
+  border-left: 2px solid #b99375;
+  border-radius: 0 5px 5px 0;
+  transition: transform 320ms cubic-bezier(.22, 1, .36, 1), width 320ms ease, height 320ms ease;
+}
+@media (max-width: 860px) {
+  .pharmacy-module-nav.module-contents {
+    top: 5rem;
+    z-index: 20;
+    padding-block: .65rem;
+    background: #080808;
+    border-bottom: 1px solid rgba(185, 147, 117, .3);
+  }
+  .module-contents > p { margin-bottom: .45rem; }
+  .pharmacy-module-nav.module-contents nav {
+    display: flex;
+    max-height: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .pharmacy-module-nav.module-contents nav a { flex: 0 0 auto; max-width: 16rem; border-bottom: 0; }
+  .pharmacy-module-page .pharmacy-submodule,
+  .pharmacy-module-page #module-test { scroll-margin-top: 13rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .module-contents__marker, .pharmacy-module-nav.module-contents nav a { transition: none; }
+}

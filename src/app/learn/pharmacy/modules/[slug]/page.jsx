@@ -1,3 +1,4 @@
+import ModuleContents from "@/components/learn/ModuleContents";
 import AutoimmuneFoundationsVisual from "@/components/learn/AutoimmuneFoundationsVisual";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -386,11 +387,7 @@ export default async function PharmacyModulePage({ params }) {
       </header>
 
       <main className="nas-shell pharmacy-module-layout">
-        <aside className="pharmacy-module-nav" aria-label="Module contents">
-          <p>In this module</p>
-          <nav>{module.submodules.map((submodule) => <a href={`#${submodule.slug}`} key={submodule.slug}>{submodule.title}</a>)}</nav>
-          <a className="pharmacy-module-nav__test" href="#module-test">Module test ↓</a>
-        </aside>
+        <ModuleContents sections={module.submodules.map(({ slug, title }) => ({ slug, title }))} />
 
         <article className="pharmacy-module-content">
           {module.submodules.map((submodule, index) => (
