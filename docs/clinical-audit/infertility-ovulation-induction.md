@@ -1,6 +1,6 @@
 # Infertility evaluation and ovulation induction audit
 
-Status: verified locally. Review date: 2026-09-24. Module 71, ten lessons, ten figures and 39 focused assessment cases. No publication or deployment. Chapter 47 as a whole remains open, including gonadal-hormone pharmacology and final contraception reconciliation.
+Status: verified locally. Review date: 2026-09-24. Module 71, ten lessons, ten figures and 42 focused assessment cases. No publication or deployment. Chapter47 remains open for final subsection reconciliation; gonadal and contraception modules are now separately verified locally.
 
 ## Scope and evidence
 
@@ -36,3 +36,15 @@ The amended AUA 2024 PDF returned 403 both through web access and direct downloa
 - Final webpack build after the last wording changes: compile, TypeScript and all 557 generated pages passed. Scoped diff whitespace check passed.
 
 Local logs: `/private/tmp/infertility-39.log`, `/private/tmp/infertility-39-browser.log`, `/private/tmp/infertility-final-practice.log`, `/private/tmp/infertility-final-build.log`. Earlier detailed chapter working notes remain in the chapter audit. No unresolved material issue identified within this module's reviewed scope; broader chapter and cross-curriculum reconciliation continue.
+
+
+## Preconception coverage addendum
+
+Chapter-level reconciliation identified missing practical prevention teaching despite the completed fertility-treatment review. Reread book printed657/PDF665. Expanded evaluation-timing with medication/disease-control review, alcohol/smoking/substance-use support, MMR/varicella preconception intervals, toxoplasmosis precautions and occupational hazardous-drug assessment. The book's excessive-alcohol wording is superseded by counseling to stop while trying to conceive. Existing folic-acid versus DFE correction remains. This is educational preconception counseling, not individualized vaccine or medication prescribing.
+
+Read actual CDC planning-for-pregnancy recommendations, medicine overview's preconception/start-stop passages, MMR/varicella recommendations, toxoplasmosis food/hygiene instructions, and NIOSH occupational antineoplastic exposure guidance. Exact URLs are attached to the module. No claims from the unrelated acetaminophen subsection were imported; that issue requires its own pregnancy-module evidence review. No universal safe occupational exposure level was assumed.
+
+Read all eight integrated paragraphs of the revised evaluation lesson plus its summary/concepts/application/key points/check. Read new emitted cases40–42 with every alternative, key and explanation; earlier full39-case review is preserved. The added MMR interval is28days, distinct from the one-month varicella wording. All other lessons and figures are unchanged. Structural42 and scoped whitespace checks passed. Final build and browser validation are pending at this addendum step; do not infer completion from the prior39-case results.
+
+
+Preconception addendum validation completed: structural42 passed with no hard errors/source gaps; webpack/TypeScript and557-page generation exited0. Desktop1440x1000 and mobile390x844 passed all ten lesson navigation/check-feedback/review links with HTTP200, no page errors or horizontal overflow. Practice checks graded ten displayed cases correctly and reset on both viewports. All processes ended successfully. Logs: /private/tmp/infertility-preconception-42.log, /private/tmp/infertility-preconception-build.log, /private/tmp/infertility-preconception-browser.log, /private/tmp/infertility-preconception-practice.log. No figure content or styling changed; prior complete figure inspection remains applicable. Scoped source changes and whitespace reviewed. Module re-verified locally at42 cases; chapter-wide final reconciliation remains open.
