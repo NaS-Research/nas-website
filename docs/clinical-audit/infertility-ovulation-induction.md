@@ -1,6 +1,6 @@
 # Infertility evaluation and ovulation induction audit
 
-Status: verified locally. Review date: 2026-09-24. Module 71, ten lessons, ten figures and 42 focused assessment cases. No publication or deployment. Chapter47 remains open for final subsection reconciliation; gonadal and contraception modules are now separately verified locally.
+Status: verified locally. Review date: 2026-09-24. Module 71, ten lessons, ten figures and 43 focused assessment cases. No publication or deployment. Chapter47 remains open for final subsection reconciliation; gonadal and contraception modules are now separately verified locally.
 
 ## Scope and evidence
 
@@ -48,3 +48,12 @@ Read all eight integrated paragraphs of the revised evaluation lesson plus its s
 
 
 Preconception addendum validation completed: structural42 passed with no hard errors/source gaps; webpack/TypeScript and557-page generation exited0. Desktop1440x1000 and mobile390x844 passed all ten lesson navigation/check-feedback/review links with HTTP200, no page errors or horizontal overflow. Practice checks graded ten displayed cases correctly and reset on both viewports. All processes ended successfully. Logs: /private/tmp/infertility-preconception-42.log, /private/tmp/infertility-preconception-build.log, /private/tmp/infertility-preconception-browser.log, /private/tmp/infertility-preconception-practice.log. No figure content or styling changed; prior complete figure inspection remains applicable. Scoped source changes and whitespace reviewed. Module re-verified locally at42 cases; chapter-wide final reconciliation remains open.
+
+
+## Chapter pregnancy-testing coverage addendum
+
+Reconciled book printed657/PDF665 pregnancy-testing paragraph with the actual fertility lessons. Added home urine hCG detection, early false-negative limits, first-morning urine and repeat testing after several days to fertile-window. Retained the distinct clinic-directed hCG-trigger warning already in trigger-protocol-control. Read the FDA home-use pregnancy-testing page, including timing, technique, accuracy and interpretation: https://www.fda.gov/medical-devices/home-use-tests/pregnancy . Review date2026-09-24. Did not import its overbroad statements that hCG occurs only in pregnancy or that all medicines should be avoided pending certainty; these would conflict with treatment-related hCG and individualized medication review.
+
+Read the final added paragraph and emitted case43, all four alternatives, answer index2 and explanation. Early negative testing does not establish infertility or exclude pregnancy; LH kits do not replace hCG testing. Total43 individually reviewed cases. No numerical calculation or figure change was introduced.
+
+Validation completed locally: structural43 no hard errors/source gaps; webpack and TypeScript passed with557 static pages, exit0. Fertile-window navigation, embedded check feedback and review link passed on1440x1000 and390x844 withHTTP200, no errors or horizontal overflow. Both practice runs graded ten displayed questions correctly and reset to a new attempt. Logs: /private/tmp/infertility-structural-43.log, /private/tmp/infertility-build-43.log, /private/tmp/infertility-browser-43.log, /private/tmp/infertility-practice-43.log. All processes exited0. Earlier unchanged-figure visual evidence retained. Module verified locally; chapter-wide reconciliation remains separate. No deployment or independent pharmacist certification.

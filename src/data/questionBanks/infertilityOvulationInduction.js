@@ -43,6 +43,7 @@ const concepts = [
   c("preconception medication review", "evaluation-timing", "Disease control and medicine risk must be considered together.", "Plan changes with the treating team.", "Stop all treatment without review.", "A patient planning pregnancy intends to stop every prescription and supplement tonight without contacting the treating clinicians.", "Arrange a medication and disease-control review before making changes.", "Stopping necessary treatment can create avoidable relapse or withdrawal risk; review all products and select an individualized plan."),
   c("MMR conception interval", "evaluation-timing", "MMR requires a preconception interval.", "Use the specific vaccine interval.", "Assume immediate conception is the recommended plan.", "A nonpregnant patient receives an indicated MMR dose and plans to begin trying to conceive tomorrow.", "Advise avoiding conception for 28 days after the vaccine.", "CDC recommends a 28-day interval after MMR. This is not a rule to terminate a pregnancy after inadvertent exposure."),
   c("preconception alcohol counseling", "evaluation-timing", "Counsel before pregnancy recognition.", "Recommend stopping alcohol while trying to conceive.", "Restrict advice to heavy drinking only.", "A patient trying to conceive says they will stop alcohol only after a positive pregnancy test.", "Recommend stopping now and offer support if this is difficult.", "Preconception prevention begins before pregnancy is recognized; advice is not limited to excessive drinking."),
+  c("early negative pregnancy test", "fertile-window", "Early testing can miss pregnancy.", "Repeat at an appropriate interval.", "Treat one early negative as definitive.", "A patient trying to conceive, without fertility medication, has a negative home urine pregnancy test before the expected period.", "Explain that pregnancy is not excluded; repeat after several days using the kit instructions.", "hCG may be below the test detection threshold early in pregnancy. First-morning urine can improve detection."),
 ];
 
 const caseDistractors = [
@@ -236,6 +237,7 @@ const caseDistractors = [
   , ["Stop every medicine immediately, regardless of indication.", "Review prescriptions only and ignore supplements.", "Assume all OTC products are safe in pregnancy."]
   , ["Try tomorrow because the vaccine has no preconception interval.", "Avoid conception permanently after MMR.", "End any pregnancy occurring within that interval automatically."]
   , ["Continue until a pregnancy test becomes positive.", "Limit counseling to heavy drinking only.", "Replace alcohol with smoking to avoid withdrawal concerns."]
+  , ["Guarantee that pregnancy is excluded for the whole cycle.", "Diagnose infertility from this single negative test.", "Use an LH ovulation kit to confirm that pregnancy is absent."]
 ];
 
 export const infertilityOvulationInductionQuestionBank = concepts.map((concept, index) => {
