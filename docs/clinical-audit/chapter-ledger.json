@@ -749,13 +749,189 @@
         571,
         587
       ],
-      "pdfPages": null,
-      "status": "unmapped",
-      "subsectionsComplete": false,
-      "subsections": [],
-      "moduleSlugs": [],
-      "findings": [],
-      "evidence": []
+      "pdfPages": [
+        579,
+        595
+      ],
+      "status": "verified",
+      "subsectionsComplete": true,
+      "subsections": [
+        {
+          "topic": "Diagnosis, spirometry and peak-flow monitoring",
+          "printedPages": [
+            571,
+            572
+          ],
+          "status": "corrected",
+          "targets": [
+            "asthma"
+          ],
+          "evidence": "asthma-lesson-review.json diagnosis record; asthma-assessment-review.json and asthma-figure-review.json. All diagnostic claims reconciled against book571-572 and GINA2026; objective thresholds/denominators, FeNO limitations, supervised on-ICS pathways and calculations corrected. Browser16312 passed; module validation remains open."
+        },
+        {
+          "topic": "Peak-flow meters and action-plan calculations",
+          "printedPages": [
+            583,
+            584
+          ],
+          "status": "corrected",
+          "targets": [
+            "asthma"
+          ],
+          "evidence": "Actual book583\u2013584 reconciled with control and acute lessons: highest valid personal best, highest of three valid blows, technique, symptom override, original500L/min zone example and correct >=80/50\u2013<80/<50 boundaries. Book ml units and inconsistent80% boundaries corrected. Current NHLBI action-plan source directly reviewed; acute/control lesson and assessment/figure records support completed content review. Chapter comparison2026-09-25; module final validation remains open."
+        },
+        {
+          "topic": "Symptom control, future risk and severity",
+          "printedPages": [
+            572,
+            573
+          ],
+          "status": "corrected",
+          "targets": [
+            "asthma"
+          ],
+          "evidence": "asthma-lesson-review.json control-risk record and asthma.md full closure. Book572-573 compared with GINA2026 symptom score, future-risk and retrospective-severity definitions; follow-up and step-up trial timing corrected. Browser93892 passed; module-wide validation remains open."
+        },
+        {
+          "topic": "Leukotriene-modifying agents",
+          "printedPages": [
+            579,
+            580
+          ],
+          "status": "corrected",
+          "targets": [
+            "asthma"
+          ],
+          "evidence": "Actual book579\u2013580 and current adjunct text reconciled: montelukast age/formulation/EIB/food administration, neuropsychiatric action, zafirlukast food/hepatic/storage requirements, IR-versus-ER zileuton dosing/monitoring and named interactions covered. Laboratory-versus-clinical CYP effect and no automatic montelukast dose change corrected. Sources and full direct reads in asthma.md and adjunct lesson record. Chapter comparison2026-09-25; module final validation remains open."
+        },
+        {
+          "topic": "Inhaler device counseling",
+          "printedPages": [
+            585,
+            587
+          ],
+          "status": "corrected",
+          "targets": [
+            "asthma"
+          ],
+          "evidence": "Actual book579 and585\u2013587 device/counseling sections reconciled with current aerosol, powder, nebulized, pharmacology and adjunct teaching. Exact-product preparation/loading/shaking/priming/cleaning/storage and spacer exceptions reviewed against manufacturer instructions; book blanket intervals and Dulera re-priming corrected. Digital-brand discontinuation and actual available-product distinction preserved. Book counter-as-delivery-proof implication corrected. All13figures have individual records and captures; current device lessons have source-linked full reviews. Chapter comparison2026-09-25; final whole-module visual/application validation remains open."
+        },
+        {
+          "topic": "Biologic therapies and molecular targets",
+          "printedPages": [
+            581,
+            581
+          ],
+          "status": "corrected",
+          "targets": [
+            "asthma"
+          ],
+          "evidence": "Actual book581 and current28paragraph targeted-biologic plus11paragraph omalizumab lessons reconciled. Corrected IL5 ligand-versus-receptor and dupilumab IL4/IL13 mechanism, pediatric eligibility, guideline placement, severe safety omissions, omalizumab home criteria and presentation-specific injection limits. Expanded exact doses/preparation/storage/monitoring and original calculations; current depemokimab coverage retained. Source reads/table visuals and hashes in asthma.md/asthma-lesson-review.json. Chapter comparison2026-09-25; module final validation remains open."
+        },
+        {
+          "topic": "Medication classes and treatment algorithm",
+          "printedPages": [
+            574,
+            575
+          ],
+          "status": "corrected",
+          "targets": [
+            "asthma"
+          ],
+          "evidence": "Book574\u2013575 actual comparison reconciled with current pharmacology, stepwise, adjunct, acute and biologic lessons. Current GINA2026 replaces old step-start thresholds; AIR/MART/Track2 roles, age/product boundaries, metered-versus-delivered formoterol ceilings, pre-escalation review and step-down covered. Added missing OTC epinephrine safety topic. Original text/assessment/figure source reviews recorded in asthma.md and individual review files. Module final validation pending."
+        },
+        {
+          "topic": "Beta2 agonists",
+          "printedPages": [
+            576,
+            576
+          ],
+          "status": "corrected",
+          "targets": [
+            "asthma"
+          ],
+          "evidence": "Book576 actual comparison reconciled with current pharmacology, aerosol, powder, nebulized, adjunct and acute lessons. Exact albuterol/levalbuterol age/formulation doses, SABA/ICS boundary, salmeterol maintenance/EIB restrictions, class harms/interactions and OTC epinephrine distinction covered. Product-specific exercise timing replaces blanket five-minute note; old brands distinguished from current products. Sources and original assessment evidence recorded in asthma.md and lesson records. Module final validation pending."
+        },
+        {
+          "topic": "Inhaled corticosteroids and combination inhalers",
+          "printedPages": [
+            577,
+            578
+          ],
+          "status": "corrected",
+          "targets": [
+            "asthma",
+            "chronic-obstructive-pulmonary-disease"
+          ],
+          "evidence": "asthma.md; product-specific dosing/device work plus ICS adverse-effect management and fluticasone CYP3A4 interaction reviewed from actual labeling; full subsection source reconciliation remains pending 2026-09-25: Actual577\u2013578 comparison with current aerosol/DPI/nebulizer and pharmacology lessons identified missing ICS infection counseling; added from fluticasone5.3. Individual asthma product dose/age/device coverage confirmed in those lessons; current dose-category table completeness and COPD-side controller cross-map remain pending. Browser25750 passed; see asthma.md. 2026-09-25: Current GINA Table6 visually read; formulation-specific classification examples and direct table reference added. Serevent/Advair warning distinction added from actual current labels. Asthma-specific dose-category and boxed-warning gaps resolved. Book578 COPD product comparator coverage remains open, with actual COPD pharmacology lesson read and insufficient product-specific detail confirmed. Perforomist COPD comparator added from actual label1/2/5/16/17; browser79310 passed. Other named COPD controller products remain pending. 2026-09-25: COPD comparator expanded to32pharmacology paragraphs with all20named book578products. Actual label comparisons and browser results in chronic-obstructive-pulmonary-disease.md. Lonhala discontinued status and Breztri2026asthma indication/strength difference documented. Final whole-subsection reconciliation remains pending; no full COPD review implied. Final2026-09-25: Fullbook577\u2013578 pages visually re-read; actual asthma pharmacology and named-product dose/device content compared with completed COPD47paragraph product lesson. All controller rows/classes mapped, exact-product and indication-specific distinctions preserved. COPD localcompletion b02e85e and copd-completion-review.json close the comparator gap. No new clinical claim required; chapter-wide final validation remains pending."
+        },
+        {
+          "topic": "Theophylline and anticholinergic therapy",
+          "printedPages": [
+            580,
+            580
+          ],
+          "status": "corrected",
+          "targets": [
+            "asthma"
+          ],
+          "evidence": "Actual book580 and current adjunct/acute text reconciled: mechanism, nonrecommended asthma role, formulation-specific initiation/loading/weight, nonlinear kinetics/metabolites, timed total/unbound concentrations, toxicity, aminophylline rounded-versus-label equivalence, every named interaction and physiology/diet distinction covered. Tiotropium asthma strength/age and ipratropium label-versus-guideline role explicit. Source reconciliation recorded in asthma.md and adjunct lesson record. Chapter comparison2026-09-25; module final validation remains open."
+        },
+        {
+          "topic": "Control and treatment-change case application",
+          "printedPages": [
+            582,
+            582
+          ],
+          "status": "corrected",
+          "targets": [
+            "asthma"
+          ],
+          "evidence": "asthma.md treatment-change reconciliation: full printed582 text reviewed, supply arithmetic checked, original transition teaching and control case added, product-specific timing preserved. Desktop/mobile checks passed; module-wide validation pending."
+        },
+        {
+          "topic": "Nonpharmacologic care, allergy evaluation and immunization",
+          "printedPages": [
+            573,
+            573
+          ],
+          "pdfPages": [
+            581,
+            581
+          ],
+          "status": "corrected",
+          "targets": [
+            "asthma"
+          ],
+          "evidence": "Actual book573 compared with current control-risk and special-populations lessons. Smoke/vaping/exercise/environment/comorbidity guidance, clinically relevant sensitization, supervised SCIT, distinct NAEPP/GINA SLIT recommendations and current Odactra label coverage are present. Influenza and pneumococcal teaching reflects prior direct CDC2026 source reads, including age/severity/history distinctions. See source-linked lesson records and asthma.md. Chapter comparison2026-09-25; module final validation remains open."
+        },
+        {
+          "topic": "Nebulizers and formulation preparation",
+          "printedPages": [
+            583,
+            583
+          ],
+          "status": "corrected",
+          "targets": [
+            "asthma"
+          ],
+          "evidence": "asthma-lesson-review.json nebulized-drug-preparation-and-storage record; full14paragraphs and check reconciled against private book and six named product labels. Aerosol-generator selection added, numeric examples independently verified, browser18312 passed desktop/mobile. Related spacer/peak-flow subsection and module-wide validation remain open."
+        }
+      ],
+      "moduleSlugs": [
+        "asthma",
+        "chronic-obstructive-pulmonary-disease"
+      ],
+      "findings": [
+        "Visually confirmed printed584 peak-flow case uses mL and inconsistent80% boundaries; NaS uses L/min and green>=80%, yellow50\u2013<80%, red<50% per NHLBI. See asthma.md source-page visual reconciliation.",
+        "Visually confirmed printed576 five-minute exercise note belongs to SABA table, not salmeterol. NHLBI template and product labels differ; NaS uses product-specific Ventolin15\u201330min and Serevent>=30min.",
+        "Printed572 ratio definition is imprecise; NaS distinguishes FEV1/FVC from total lung capacity and PEF flow.",
+        "2026-09-25: Actual574\u2013576 comparison identified omitted OTC inhaled epinephrine. Added two original safety paragraphs and MAOI assessment from current Primatene Mist label. Older book Asthmanefrin naming is not used to infer product interchangeability. Remaining chapter coverage reconciliation stays open."
+      ],
+      "evidence": [
+        "docs/clinical-audit/asthma.md",
+        "docs/clinical-audit/asthma-completion-review.json"
+      ]
     },
     {
       "chapter": 42,

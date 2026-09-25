@@ -1,0 +1,59 @@
+{
+  "module": "asthma",
+  "reviewDate": "2026-09-25",
+  "status": "verified-locally",
+  "scope": {
+    "bookChapter": 41,
+    "printedPages": [
+      571,
+      587
+    ],
+    "pdfPages": [
+      579,
+      595
+    ],
+    "subsections": 13,
+    "lessons": 13,
+    "paragraphs": 257,
+    "questions": 174,
+    "embeddedChecks": 13,
+    "figures": 13
+  },
+  "meaning": "Agent source/content reconciliation and local checks; not independent pharmacist certification or publication.",
+  "evidence": [
+    "asthma.md",
+    "asthma-lesson-review.json",
+    "asthma-assessment-review.json",
+    "asthma-figure-review.json",
+    "copd-completion-review.json"
+  ],
+  "validation": {
+    "hashes": "All13 lessons and174 questions match individual review records; current13figure component matches reviewed SHA256.",
+    "browser": {
+      "session": 17514,
+      "exitCode": 0,
+      "viewports": [
+        "1440x1000",
+        "390x844"
+      ],
+      "result": "All257 paragraphs rendered,13embedded checks scored correctly with full rationales,174unique assessment targets, no page errors or horizontal overflow."
+    },
+    "visual": "All26 desktop/mobile figure captures inspected in prior figure record; unchanged component hash verified.",
+    "assessmentInteraction": "Individual assessment interaction checks recorded during question-batch review; no changed question hashes in final pass.",
+    "build": "Production build session7229 exited0, compiled and generated557pages with this unchanged asthma source present. No redundant rebuild for audit-only edits.",
+    "structural": "174questions; no hardErrors/sourceGaps/sizeAdvisories. Five question-count advisories (<8items targeting a lesson) remain; these are not missing-content failures or required uniform lesson lengths. Book/source coverage and all actual items separately reviewed.",
+    "whitespace": "Scoped diff check passed"
+  },
+  "limitations": [
+    "GINA full report and summary differ on withholding selected long-acting bronchodilators; lesson explicitly attributes full-report interval and requires supervised safe withholding.",
+    "Alvesco professional versus patient instructions differ at10days; patient-facing lesson follows and attributes the patient IFU.",
+    "Historical Digihaler distribution/app notice supported by indexed manufacturer document text; direct document retrieval failed. No present inventory or generic availability inferred.",
+    "COPD comparator and its separate GOLD source wording distinction documented in committed COPD evidence."
+  ],
+  "release": {
+    "commit": "pending",
+    "push": "pending-specific-approval",
+    "published": false,
+    "deployed": false
+  }
+}
