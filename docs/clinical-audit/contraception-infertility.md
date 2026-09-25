@@ -1,6 +1,6 @@
 # Contraception and infertility audit
 
-Status: contraception verified locally, chapter47 remains open. Chapter47 printed656-668 / PDF664-676. Review date2026-09-24. Contraception now has13 lessons/figures and71 focused cases. All actual lessons, checks, figure definitions and emitted assessment content were reviewed; final application checks and build passed. Gonadal hormones and infertility are separately verified and locally committed (6ce5b6f and75e1839). Chapter-wide subsection reconciliation and broader preconception coverage still require work. No push or deployment.
+Status: contraception locally re-verified at13 lessons/figures and74 focused cases; chapter47 subsection reconciliation remains open. Chapter47 printed656–668 / PDF664–676. Review date2026-09-24. All actual lessons/checks, figure definitions and emitted assessment content have been reviewed across the revisions recorded below. Final74-case build and targeted desktop/mobile checks passed. Gonadal hormones and infertility are locally verified, including the preconception addendum. No push or deployment.
 
 The sections below are a chronological audit record; counts and pending items within earlier entries describe their respective revisions. This opening states the current position.
 
@@ -254,3 +254,22 @@ Read both emitted added cases with all eight choices, keys and explanations and 
 
 
 Barrier addendum validated: structural71 had no hard errors/source gaps; webpack/TypeScript and557-page build exited0. Targeted nonhormonal lesson navigation, embedded feedback and review link passed at desktop/mobile sizes with HTTP200, no errors or overflow. Both practice runs correctly graded ten displayed questions and reset to new attempts. Unchanged figures retain prior visual inspection. Logs: /private/tmp/contraception-structural-71.log, /private/tmp/contraception-build-71.log, /private/tmp/contraception-nonhormonal-71.log, /private/tmp/contraception-practice-71.log. All processes ended successfully. Module re-verified locally at71 cases; chapter reconciliation remains open.
+
+
+## Hormonal-table and counseling reconciliation continuation
+
+Reread all book text on printed660–667/PDF668–675 against current module coverage. Existing corrections address product schedules, POP distinctions, eligibility, patch/ring rules, interactions, LARC durations and EC restart differences. Identified incomplete extended/continuous CHC spotting management. Read the actual CDC CHC bleeding section and added a bounded management option plus case72; all emitted choices/key/explanation read. Structural72 and whitespace checks pass. Final build/targeted interaction checks are in progress. Remaining chapter reconciliation includes explicit common-adverse-effect and urgent-symptom counseling and the drospirenone combined-product distinction; module reopened for that coverage gate, not considered completely closed by this addendum alone.
+
+
+The72-case addition passed final webpack/TypeScript/557-page generation and targeted combined-method lesson navigation/check-feedback/review links on desktop and mobile (HTTP200, no errors/overflow). Both processes exited0. Logs: /private/tmp/contraception-build-72.log and /private/tmp/contraception-combined-72.log; structural log /private/tmp/contraception-structural-72.log. Remaining coverage gates above stay open; changes are not yet a completed-module commit.
+
+
+## Residual combined-method counseling closure at74 cases
+
+Read the current DailyMed Yaz label hyperkalemia, vascular-risk and patient adverse-effect/urgent-symptom passages (label revised May2023, current listing checked2026-09-24). Added original counseling on common effects, product-specific combined drospirenone safety, and urgent evaluation. Source: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=065f33e4-b587-4e66-b896-ca9ab7b7c876 . Only targeted relevant passages are claimed read, not the whole label. Existing reference retained.
+
+Read the final four added lesson paragraphs and emitted cases72–74, all12 choices, answer indices3/0/1 and explanations. Day14 is before the21-day minimum for a bleeding-management break; chronic spironolactone triggers first-cycle potassium monitoring with Yaz; acute chest pain with breathlessness warrants emergency assessment. The three residual counseling gates listed above are now addressed. No figure or layout implementation changed.
+
+Final validation: structural74 reported no hard errors or source gaps. Webpack compilation, TypeScript and557-page static generation passed, exit0. Combined-method lesson navigation, embedded feedback and review link passed at1440x1000 and390x844; HTTP200, no page errors or horizontal overflow. Practice displayed ten questions, graded10/10 correctly and reset to a new attempt on both viewports. All processes ended successfully. Logs: /private/tmp/contraception-structural-74.log, /private/tmp/contraception-build-74.log, /private/tmp/contraception-combined-74.log, /private/tmp/contraception-practice-74.log. Previous unchanged-figure visual evidence is retained.
+
+Module re-verified locally. Chapter47 still needs explicit subsection coverage closure; this is not a whole-curriculum completion claim or independent pharmacist certification. Push remains unavailable following the prior automatic approval rejection pending destination confirmation; no retry or deployment.

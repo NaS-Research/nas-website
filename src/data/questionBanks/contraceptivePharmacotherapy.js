@@ -73,6 +73,9 @@ const concepts = [
   c("Miudella emergency-use restriction", "emergency-contraception", "EC evidence is product specific.", "Select an established EC option.", "Substitute an unvalidated device.", "A clinic proposes substituting Miudella for Paragard in an emergency-contraception protocol solely because both contain copper.", "Do not substitute: Miudella labeling contraindicates emergency use.", "Copper content alone does not establish equivalent emergency-contraception evidence."),
   c("cervical cap timing", "nonhormonal-methods", "Barrier timing depends on the device.", "Use the selected cap instructions.", "Remove before the minimum interval.", "A FemCap user plans to remove the device two hours after intercourse.", "Explain that it must remain for at least six hours after intercourse, without exceeding 48 hours total wear.", "The cap's minimum post-intercourse retention and maximum wear both matter; these are not the diaphragm or sponge limits."),
   c("contraceptive app authorization", "nonhormonal-methods", "Authorization is product specific.", "Verify the contraceptive device and its instructions.", "Treat every tracker as contraception.", "A patient assumes an ordinary period-calendar app prevents pregnancy because Natural Cycles received FDA authorization.", "Explain that authorization of one contraceptive app does not establish efficacy for every cycle tracker.", "Contraceptive software requires a validated product, correct use and protection or abstinence on fertile days."),
+  c("continuous CHC bleeding break", "combined-methods", "Bleeding management must preserve contraception.", "Respect the minimum active-use interval.", "Interrupt hormones too early.", "On day 14 of continuous combined-pill use, a patient with light spotting asks to take a four-day hormone break.", "Avoid that break during the first 21 days; assess the bleeding and discuss an appropriate plan.", "CDC limits this bleeding-management option to after the first 21 days and no more than once monthly."),
+  c("combined drospirenone potassium", "combined-methods", "Potassium risk persists in combined products.", "Check the product warning.", "Assume estrogen prevents potassium elevation.", "An otherwise eligible patient takes chronic spironolactone and is starting Yaz.", "Arrange potassium monitoring during the first cycle.", "Drospirenone and potassium-raising medicines require a monitoring plan."),
+  c("urgent combined-pill symptoms", "combined-methods", "Urgent symptoms need assessment.", "Escalate possible thromboembolism.", "Dismiss symptoms as adjustment.", "A combined-pill user develops sudden breathlessness and chest pain.", "Arrange emergency assessment now.", "These symptoms can signal a serious vascular event."),
 ];
 
 const caseDistractors = [
@@ -295,6 +298,9 @@ const caseDistractors = [
   ["Substitute freely because copper devices are interchangeable.", "Use its three-year duration as proof of emergency efficacy.", "Assume all IUDs share one emergency indication."],
   ["Remove it now because every barrier works only during intercourse.", "Leave it in for a week without cleaning.", "Use the sponge's 30-hour maximum for every cap."],
   ["Confirm that every calendar app has the same authorization.", "Promise that a predicted low-risk day guarantees no pregnancy.", "Ignore fertile-day instructions if the app is downloaded."],
+  ["Take four days off immediately whenever spotting occurs.", "Repeat four-day breaks every week.", "Double estrogen without assessing eligibility or other causes."],
+  ["Skip monitoring because Yaz contains estrogen.", "Double spironolactone to improve contraception.", "Assume normal baseline potassium removes all follow-up needs."],
+  ["Wait three months for adjustment.", "Take an extra pill.", "Reduce estrogen without evaluating the symptoms."],
 ];
 
 export const contraceptivePharmacotherapyQuestionBank = concepts.map((concept, index) => {
