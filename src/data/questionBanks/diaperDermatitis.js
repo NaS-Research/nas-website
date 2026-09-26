@@ -1,45 +1,381 @@
-const c = (name, lesson, principle, action, assessment, hazard, why) => ({ name, lesson, principle, action, assessment, hazard, why });
-
-const concepts = [
-  c("moisture and occlusion", "barrier-pathophysiology", "Wet occlusion overhydrates the stratum corneum and increases permeability and friction injury", "Reduce contact time with frequent changes, absorbency, gentle drying, and a protectant", "Assess diaper interval, urine and stool exposure, absorbency, fit, air time, maceration, and friction", "Treating wetness as harmless because urine is sterile", "Barrier injury depends on physical and chemical exposure, not infection alone"),
-  c("pH and fecal enzymes", "barrier-pathophysiology", "Urine and stool contact can raise pH and increase protease and lipase injury to barrier proteins and lipids", "Remove stool promptly and preserve a physical barrier between skin and the next exposure", "Assess diarrhea, stool frequency, cleansing, diet change, antibiotics, skin erosion, and barrier use", "Focusing only on urine while ignoring enzyme-rich stool", "Stool chemistry can amplify tissue injury"),
-  c("secondary infection", "barrier-pathophysiology", "Damaged diaper skin is more vulnerable to Candida and bacterial involvement", "Treat the underlying exposure while adding cause-specific therapy only when the pattern supports it", "Assess folds, satellites, pustules, crust, drainage, pain, fever, antibiotics, and immune status", "Using infection treatment without correcting ongoing moisture and friction", "Mixed disease persists when the barrier driver remains"),
-  c("irritant contact pattern", "morphology-differential", "Irritant diaper dermatitis usually affects convex contact surfaces while deep folds are relatively spared", "Begin exposure control and barrier care when morphology and history are uncomplicated", "Assess perineum, buttocks, thighs, lower abdomen, folds, erosions, stool contact, and symptom severity", "Calling every red diaper-area rash Candida", "Distribution helps identify the dominant mechanism"),
-  c("Candida pattern", "morphology-differential", "Candida diaper dermatitis commonly involves folds and has satellite papules or pustules beyond a beefy-red border", "Add an appropriate topical antifungal while continuing barrier care and frequent changes", "Assess fold involvement, satellites, antibiotics, duration, oral thrush, immune status, and prior treatment", "Using fold sparing as evidence for Candida", "Candida thrives in folds and often extends beyond the primary inflamed area"),
-  c("bacterial pattern", "morphology-differential", "Honey crust, bullae, purulence, spreading erythema, fever, or a painful sharply bordered perianal rash can indicate bacterial disease", "Arrange clinical evaluation, testing, and cause-specific antimicrobial care", "Assess crust, bullae, drainage, pain, fever, perianal border, stool pain, nodes, and systemic status", "Treating a painful bacterial pattern with barrier paste alone", "Bacterial disease can progress and requires targeted therapy"),
-  c("persistent unusual rash", "morphology-differential", "Treatment resistance or lesions outside the expected distribution can suggest contact dermatitis, psoriasis, deficiency, immune disease, or another systemic process", "Reopen the diagnosis and examine the whole child rather than stacking products", "Assess growth, feeding, diarrhea, lesions elsewhere, family history, products, immune history, and prior response", "Using increasingly complex combination creams without a diagnosis", "Persistent atypical disease may be a sign of a different disorder"),
-  c("frequent diaper changes", "change-clean-dry", "Prompt removal of urine and stool reduces exposure time and is an active treatment", "Change soon after stool and frequently during active rash or diarrhea", "Assess caregiver capacity, overnight interval, daycare routine, stool pattern, supply access, and skin response", "Waiting for a diaper to become saturated during active dermatitis", "Exposure duration directly contributes to barrier injury"),
-  c("gentle cleansing", "change-clean-dry", "Lukewarm water, a soft cloth, or a fragrance-free alcohol-free wipe can clean without adding unnecessary irritation", "Pat or rinse away soil and avoid repeated rubbing", "Assess wipe ingredients, soap, fragrance, alcohol, pressure, frequency, pain, and residue", "Scrubbing inflamed skin until it looks completely bare", "Mechanical and chemical cleansing injury can prolong the rash"),
-  c("air time and diaper fit", "change-clean-dry", "Brief safe air exposure and a well-fitting superabsorbent diaper reduce wetness and friction", "Use diaper-free time without heat and avoid tight plastic overpants", "Assess fit, leg elastic marks, leakage, overpants, absorbency, room safety, and drying method", "Using a hair dryer or heater on infant skin", "Air drying can help, but heat can burn"),
-  c("petrolatum barrier", "skin-protectant-barriers", "Petrolatum and white petrolatum form an occlusive skin-protectant layer against wetness and irritants", "Apply a visible layer at each change and reapply after removing contaminated material", "Assess product ingredients, lanolin sensitivity, ease of spreading, frequency, adherence, and rash response", "Applying a nearly invisible amount that does not maintain coverage", "Physical continuity is necessary for wetness protection"),
-  c("zinc oxide paste", "skin-protectant-barriers", "Zinc oxide is an FDA-monograph skin protectant that can create a persistent barrier in the diaper area", "Choose paste thickness by exposure burden and caregiver ability to apply and remove it gently", "Assess zinc concentration, paste texture, diarrhea, overnight needs, cleaning friction, and product tolerance", "Teaching zinc oxide only as a desiccant that must be scrubbed off", "Its central role is temporary physical protection from wetness and irritation"),
-  c("barrier removal technique", "skin-protectant-barriers", "Clean barrier material can remain while only stool-contaminated material is gently removed", "Layer fresh protectant over the remaining clean barrier", "Assess rubbing, pain, erosion, water use, cleanser, paste persistence, and caregiver understanding", "Completely stripping the barrier at every change", "Gentle partial removal lowers friction and preserves protection"),
-  c("Candida treatment threshold", "candida-antifungals", "Compatible morphology supports antifungal treatment more than colonization alone", "Treat fold involvement and satellite disease while evaluating mixed causes", "Assess KOH or culture context, folds, satellites, oral thrush, antibiotics, immune status, and clinical response", "Treating a positive surface culture without compatible disease as proof of infection", "Candida can colonize the area without being the dominant cause"),
-  c("nystatin and azoles", "candida-antifungals", "Nystatin and topical azoles are antifungal options with different mechanisms, formulations, schedules, and response patterns", "Use the age and product-specific regimen and reconsider therapy when early response is absent", "Assess exact product, frequency, duration, prior response, irritation, other topicals, and organism suspicion", "Assuming every antifungal cream is interchangeable", "Product and organism differences affect efficacy and safe use"),
-  c("antifungal plus barrier care", "candida-antifungals", "Antifungal therapy does not remove moisture, stool enzymes, friction, or occlusion", "Continue change, cleanse, dry, and protect measures throughout treatment", "Assess diaper frequency, barrier thickness, diarrhea, cleansing, antifungal application, and improvement", "Stopping barrier care because an antifungal was started", "Both the infection and the damaged environment require treatment"),
-  c("low-potency steroid rescue", "anti-inflammatory-safety", "Hydrocortisone 0.5 to 1 percent may be used briefly in a thin layer for selected inflamed rashes under clinician guidance", "Define the potency, frequency, duration, site, stop date, and concurrent infection plan", "Assess age, area, erosion, infection, prior steroid, potency, duration, and response", "Using a topical steroid as routine prevention", "Corticosteroid risk should be limited to a short therapeutic purpose"),
-  c("occlusion and steroid absorption", "anti-inflammatory-safety", "A diaper acts as occlusion and inflamed infant skin can increase topical corticosteroid absorption", "Use the lowest potency and shortest duration while monitoring local and systemic effects", "Assess treated area, diaper occlusion, skin integrity, potency, application amount, duration, growth, and adrenal symptoms", "Assuming a small infant dose cannot produce meaningful exposure", "Infant skin and occlusion narrow the safety margin"),
-  c("potent combination products", "anti-inflammatory-safety", "Potent steroid-antifungal combinations can mask infection and rapidly cause atrophy or systemic exposure in the diaper area", "Avoid these combination shortcuts and treat inflammation and infection with appropriate separate agents", "Assess every active ingredient, potency, source, duration, skin thinning, striae, and infection progression", "Choosing a combination product solely because it contains an antifungal", "The hidden corticosteroid may create more harm than the antifungal prevents"),
-  c("impetigo and bullous disease", "bacterial-other-causes", "Honey crust, flaccid bullae, pustules, or rapidly spreading erythema can indicate staphylococcal or streptococcal infection", "Obtain clinical evaluation and antimicrobial treatment appropriate to severity and local practice", "Assess bullae, crust, drainage, fever, pain, spread, household lesions, immune status, and culture need", "Puncturing bullae and continuing only petrolatum", "Bacterial skin disease can spread and needs cause-specific care"),
-  c("perianal streptococcal dermatitis", "bacterial-other-causes", "A bright sharply demarcated painful perianal ring can represent group A streptococcal disease", "Test and treat systemically when confirmed or strongly suspected", "Assess painful stooling, fissures, blood streaking, fever, pharyngitis exposure, border, and culture", "Calling severe perianal pain ordinary chafing", "The characteristic painful ring has a different treatment pathway"),
-  c("contact and systemic mimics", "bacterial-other-causes", "Wipes, preservatives, fragrances, detergents, topical antibiotics, diapers, psoriasis, deficiency, and systemic disease can mimic ordinary diaper rash", "Remove suspected exposures and refer persistent or multisite disease for diagnosis", "Assess all products, lesion shape, sites outside the diaper, growth, diarrhea, immune status, and family history", "Adding another fragranced or antibiotic product without reviewing exposures", "A product or systemic condition can sustain the rash"),
-  c("newborn and preterm skin", "special-populations", "Newborn and preterm skin is thinner, more permeable, and less tolerant of unnecessary topical exposure", "Use simple barrier care and a lower threshold for clinical review", "Assess gestational age, chronological age, area, erosion, temperature, feeding, fever, products, and caregiver capacity", "Applying multiple adult medicated products to a premature infant", "Barrier immaturity increases absorption and injury risk"),
-  c("diarrhea-associated injury", "special-populations", "Frequent enzyme-rich stool dramatically increases chemical and mechanical exposure", "Increase change frequency, use gentle rinsing, maintain a durable barrier, and protect hydration", "Assess stool frequency, blood, fever, urine output, feeding, dehydration, antibiotics, and skin breakdown", "Treating only the skin while ignoring dehydration or the cause of diarrhea", "The exposure source and systemic fluid risk need simultaneous care"),
-  c("incontinence-associated dermatitis", "special-populations", "Older children and adults with incontinence can develop moisture-associated dermatitis that may coexist with pressure injury or wounds", "Differentiate moisture distribution from pressure geometry and coordinate continence and wound care", "Assess mobility, pressure points, devices, urine and stool exposure, wound depth, pain, infection, and support surface", "Calling every sacral lesion diaper rash", "Pressure injury and moisture injury have different mechanisms and priorities"),
-  c("response timeline", "monitoring-referral", "Uncomplicated irritant disease should begin improving within a few days of effective exposure control and barrier care", "Define a short follow-up window and reassess earlier if worsening occurs", "Assess erythema, area, folds, satellites, erosion, pain, sleep, feeding, fever, and product use each day", "Continuing an ineffective plan for weeks without reevaluation", "Short-interval response provides diagnostic evidence"),
-  c("technique audit", "monitoring-referral", "Failure can result from infrequent changes, cleansing friction, thin barrier, wrong antifungal, hidden steroid, poor fit, or ongoing diarrhea", "Audit the complete routine before assuming resistant disease", "Assess change schedule, wipe, water, rubbing, protectant amount, drug actives, frequency, duration, fit, and stool burden", "Escalating medication without checking how the regimen is used", "A correct product cannot overcome a failed delivery system"),
-  c("referral and urgent care", "monitoring-referral", "Fever, severe pain, bullae, purulence, spreading erythema, ulceration, bleeding, dehydration, lethargy, immune compromise, or persistent disease needs clinical evaluation", "Escalate according to severity rather than continuing routine self-care", "Assess vital concern, feeding, urine output, mental status, infection signs, wound depth, age, duration, and safeguarding", "Reassuring a lethargic infant because diaper rash is common", "Common conditions can coexist with serious infection or systemic illness"),
+// Original applied cases; the assessment interface randomizes choice order.
+export const diaperDermatitisQuestionBank = [
+  {
+    "id": "diaper-dermatitis-001",
+    "lesson": "barrier-pathophysiology",
+    "question": "An infant has mild redness after long intervals in wet diapers, without satellites or fever. Which intervention addresses the main mechanism?",
+    "choices": [
+      "Shorten wet contact and maintain a protective barrier",
+      "Start an antifungal solely because skin is red",
+      "Increase cleansing friction to remove the damaged layer",
+      "Apply a corticosteroid while leaving the change schedule unchanged"
+    ],
+    "answer": 0,
+    "rationale": "Wetness, friction and irritant contact damage the barrier even without infection.",
+    "reviewHref": "#barrier-pathophysiology"
+  },
+  {
+    "id": "diaper-dermatitis-002",
+    "lesson": "barrier-pathophysiology",
+    "question": "During diarrhea, diaper rash worsens despite the same urine output. What explains the increased injury?",
+    "choices": [
+      "More frequent contact with stool enzymes and repeated cleansing",
+      "Diarrhea proves that the rash is fungal",
+      "Reduced urine output is required for dermatitis",
+      "Stool protects skin from friction"
+    ],
+    "answer": 0,
+    "rationale": "Stool exposure adds chemical injury; repeated wiping can add mechanical injury.",
+    "reviewHref": "#barrier-pathophysiology"
+  },
+  {
+    "id": "diaper-dermatitis-003",
+    "lesson": "morphology-differential",
+    "question": "Redness covers the buttock convexities while deep groin folds are relatively clear. Which diagnosis best fits?",
+    "choices": [
+      "Irritant diaper dermatitis",
+      "Candida dermatitis established by distribution alone",
+      "Perianal streptococcal infection",
+      "Zinc deficiency established by distribution alone"
+    ],
+    "answer": 0,
+    "rationale": "Relative fold sparing favors contact irritation, although mixed disease remains possible.",
+    "reviewHref": "#morphology-differential"
+  },
+  {
+    "id": "diaper-dermatitis-004",
+    "lesson": "morphology-differential",
+    "question": "After antibiotics, a rash involves groin folds and has small pustules beyond its main border. What needs consideration?",
+    "choices": [
+      "Candida complicating barrier injury",
+      "Irritation excluded because antibiotics were used",
+      "Routine preventive antifungal treatment for all future antibiotic courses",
+      "A bacterial culture result inferred from appearance"
+    ],
+    "answer": 0,
+    "rationale": "Fold involvement and satellites support Candida evaluation and treatment while barrier care continues.",
+    "reviewHref": "#morphology-differential"
+  },
+  {
+    "id": "diaper-dermatitis-005",
+    "lesson": "morphology-differential",
+    "question": "Persistent diaper dermatitis is accompanied by lesions around the mouth, diarrhea and poor growth. What is the best next step?",
+    "choices": [
+      "Evaluate nutritional or systemic causes, including zinc deficiency",
+      "Increase barrier thickness without assessing growth",
+      "Diagnose Candida from the duration alone",
+      "Start indefinite hydrocortisone"
+    ],
+    "answer": 0,
+    "rationale": "Multisite dermatitis and poor growth require whole-child evaluation beyond routine irritation.",
+    "reviewHref": "#morphology-differential"
+  },
+  {
+    "id": "diaper-dermatitis-006",
+    "lesson": "change-clean-dry",
+    "question": "A caregiver scrubs off every trace of paste at each change; the child cries and has new erosions. What should change?",
+    "choices": [
+      "Remove visible soil gently and preserve clean barrier material",
+      "Use alcohol to dissolve the paste more completely",
+      "Stop all cleansing even after stool",
+      "Replace paste with vigorous dry rubbing"
+    ],
+    "answer": 0,
+    "rationale": "Aggressive removal adds frictional injury; clean barrier material can remain.",
+    "reviewHref": "#change-clean-dry"
+  },
+  {
+    "id": "diaper-dermatitis-007",
+    "lesson": "change-clean-dry",
+    "question": "An infant cries when wipes contact eroded skin. Which alternative reduces friction?",
+    "choices": [
+      "Gentle rinsing with lukewarm water followed by patting or air drying",
+      "Hot air directed at the skin",
+      "Fragranced soap with firm rubbing",
+      "A tighter diaper to reduce air contact"
+    ],
+    "answer": 0,
+    "rationale": "Gentle rinsing removes irritants without repeated wiping or heat injury.",
+    "reviewHref": "#change-clean-dry"
+  },
+  {
+    "id": "diaper-dermatitis-008",
+    "lesson": "skin-protectant-barriers",
+    "question": "A caregiver asks whether zinc oxide must dry the skin completely to work. Which explanation is accurate?",
+    "choices": [
+      "Its principal role here is a protective layer against wetness and irritants",
+      "It must remove all skin moisture to work",
+      "It is an antifungal that replaces diagnosis",
+      "It treats bacterial infection without other care"
+    ],
+    "answer": 0,
+    "rationale": "Zinc oxide is used as a skin protectant; treating it only as a drying agent misses its barrier role.",
+    "reviewHref": "#skin-protectant-barriers"
+  },
+  {
+    "id": "diaper-dermatitis-009",
+    "lesson": "skin-protectant-barriers",
+    "question": "An unscented barrier helps, but redness returns whenever a fragranced paste is used. What should be reviewed?",
+    "choices": [
+      "The full ingredient list and possible irritant or allergic exposure",
+      "Only the percentage of zinc oxide",
+      "The diaper brand alone",
+      "Whether the paste is a prescription product"
+    ],
+    "answer": 0,
+    "rationale": "Inactive ingredients can contribute to dermatitis even when the active protectant is appropriate.",
+    "reviewHref": "#skin-protectant-barriers"
+  },
+  {
+    "id": "diaper-dermatitis-010",
+    "lesson": "candida-antifungals",
+    "question": "A positive surface Candida culture is reported in a child with no compatible yeast morphology. Does this alone satisfy Vusion labeling?",
+    "choices": [
+      "No; its indication requires microscopic evidence of candidiasis in the appropriate patient",
+      "Yes; any Candida culture proves infection",
+      "Yes; age and immune status are irrelevant",
+      "No; Vusion treats only bacterial disease"
+    ],
+    "answer": 0,
+    "rationale": "Culture alone can reflect colonization. The labeled indication requires documented candidiasis and patient eligibility.",
+    "reviewHref": "#candida-antifungals"
+  },
+  {
+    "id": "diaper-dermatitis-011",
+    "lesson": "candida-antifungals",
+    "question": "A healthy eight-week-old has microscopically documented candidal diaper dermatitis and is prescribed Vusion. Which directions match the label?",
+    "choices": [
+      "A thin layer at each diaper change for seven days",
+      "A thick layer once weekly for prevention",
+      "Twice daily indefinitely until every culture is negative",
+      "A thin layer for one day only"
+    ],
+    "answer": 0,
+    "rationale": "Vusion is a medicated combination with a specific seven-day course, unlike ordinary barrier paste.",
+    "reviewHref": "#candida-antifungals"
+  },
+  {
+    "id": "diaper-dermatitis-012",
+    "lesson": "candida-antifungals",
+    "question": "Vusion-treated dermatitis improves on day three without irritation. What should the caregiver do?",
+    "choices": [
+      "Complete the prescribed seven-day course",
+      "Stop immediately because redness improved",
+      "Continue for a month to prevent recurrence",
+      "Use only on days with diarrhea"
+    ],
+    "answer": 0,
+    "rationale": "The labeled course continues for seven days despite early improvement; it is not preventive therapy.",
+    "reviewHref": "#candida-antifungals"
+  },
+  {
+    "id": "diaper-dermatitis-013",
+    "lesson": "candida-antifungals",
+    "question": "Dermatitis becomes more irritated after starting Vusion. Which response is appropriate?",
+    "choices": [
+      "Stop the product and contact the clinician",
+      "Continue until day seven regardless of worsening",
+      "Rub it in more firmly",
+      "Add a potent steroid without evaluation"
+    ],
+    "answer": 0,
+    "rationale": "The label directs stopping and contacting the clinician for irritation or worsening.",
+    "reviewHref": "#candida-antifungals"
+  },
+  {
+    "id": "diaper-dermatitis-014",
+    "lesson": "candida-antifungals",
+    "question": "One gram of Vusion contains 2.5 mg miconazole nitrate. What is its percentage strength?",
+    "choices": [
+      "0.25%",
+      "2.5%",
+      "25%",
+      "0.025%"
+    ],
+    "answer": 0,
+    "rationale": "One gram is 1,000 mg: 2.5 divided by 1,000 times 100 equals 0.25%.",
+    "reviewHref": "#candida-antifungals"
+  },
+  {
+    "id": "diaper-dermatitis-015",
+    "lesson": "candida-antifungals",
+    "question": "A caregiver plans to replace frequent changes with more antifungal ointment. What is the problem?",
+    "choices": [
+      "Antifungal treatment does not remove stool, moisture or friction exposure",
+      "More ointment sterilizes the diaper environment",
+      "Candida therapy requires prolonged wet contact",
+      "Barrier injury stops as soon as an antifungal is applied"
+    ],
+    "answer": 0,
+    "rationale": "Treatment must address both yeast involvement and the environment damaging the skin.",
+    "reviewHref": "#candida-antifungals"
+  },
+  {
+    "id": "diaper-dermatitis-016",
+    "lesson": "anti-inflammatory-safety",
+    "question": "A caregiver wants to start OTC hydrocortisone for an infant without discussing the rash with a clinician. What is the appropriate advice?",
+    "choices": [
+      "Obtain clinician guidance before diaper-area steroid treatment",
+      "Use the adult maximum frequency for a week",
+      "Apply with every diaper change indefinitely",
+      "Choose the strongest available steroid to shorten treatment"
+    ],
+    "answer": 0,
+    "rationale": "Diaper-rash labeling requires medical guidance; occlusion and infant skin change the exposure risk.",
+    "reviewHref": "#anti-inflammatory-safety"
+  },
+  {
+    "id": "diaper-dermatitis-017",
+    "lesson": "anti-inflammatory-safety",
+    "question": "A borrowed antifungal cream also contains a potent corticosteroid. Why is it unsuitable as a routine diaper-rash shortcut?",
+    "choices": [
+      "Occlusion can increase steroid exposure and the steroid may mask worsening infection",
+      "Every antifungal-steroid combination has identical potency",
+      "The antifungal prevents all steroid adverse effects",
+      "The diaper prevents systemic absorption"
+    ],
+    "answer": 0,
+    "rationale": "The full ingredient list and steroid potency matter; antifungal content does not neutralize steroid harm.",
+    "reviewHref": "#anti-inflammatory-safety"
+  },
+  {
+    "id": "diaper-dermatitis-018",
+    "lesson": "anti-inflammatory-safety",
+    "question": "A prescribed low-potency steroid reduces redness, but satellites and discomfort persist. What needs reassessment?",
+    "choices": [
+      "Ongoing infection and the complete treatment plan",
+      "Only the color of the remaining paste",
+      "Whether to extend steroid treatment indefinitely",
+      "Whether to stop all barrier care"
+    ],
+    "answer": 0,
+    "rationale": "Suppressed inflammation does not prove infection has resolved.",
+    "reviewHref": "#anti-inflammatory-safety"
+  },
+  {
+    "id": "diaper-dermatitis-019",
+    "lesson": "bacterial-other-causes",
+    "question": "A child has a sharply bordered painful perianal ring and painful defecation. Which pathway is most appropriate?",
+    "choices": [
+      "Evaluate for perianal streptococcal disease with testing and targeted treatment",
+      "Assume uncomplicated irritant dermatitis",
+      "Use Vusion based only on redness",
+      "Continue preventive steroid treatment"
+    ],
+    "answer": 0,
+    "rationale": "This pattern requires evaluation for a bacterial cause rather than repeated empiric rash products.",
+    "reviewHref": "#bacterial-other-causes"
+  },
+  {
+    "id": "diaper-dermatitis-020",
+    "lesson": "bacterial-other-causes",
+    "question": "A diaper-area eruption develops honey-colored crust and spreading tenderness. What should the caregiver do?",
+    "choices": [
+      "Seek clinical evaluation for bacterial infection",
+      "Begin an OTC antibiotic ointment without assessment",
+      "Treat with barrier alone for several more weeks",
+      "Use a potent antifungal-steroid combination"
+    ],
+    "answer": 0,
+    "rationale": "Crust and spreading tenderness raise concern for infection; empiric OTC ointments may irritate and delay appropriate care.",
+    "reviewHref": "#bacterial-other-causes"
+  },
+  {
+    "id": "diaper-dermatitis-021",
+    "lesson": "bacterial-other-causes",
+    "question": "A chronic erosive rash with petechiae persists despite appropriate initial treatment. What is the safest interpretation?",
+    "choices": [
+      "An unusual disorder requires further evaluation",
+      "Duration proves uncomplicated Candida",
+      "Petechiae are expected from any barrier paste",
+      "More frequent antifungal application is the only next step"
+    ],
+    "answer": 0,
+    "rationale": "Atypical persistent disease may reflect systemic or uncommon cutaneous conditions and warrants escalation.",
+    "reviewHref": "#bacterial-other-causes"
+  },
+  {
+    "id": "diaper-dermatitis-022",
+    "lesson": "special-populations",
+    "question": "A three-week-old is being considered for Vusion. Which limitation matters?",
+    "choices": [
+      "Efficacy is not demonstrated below four weeks of age",
+      "The labeled minimum age is one day",
+      "It is approved for prevention at any age",
+      "A smaller application removes the age limitation"
+    ],
+    "answer": 0,
+    "rationale": "Vusion evidence and labeling do not support simply extrapolating to younger infants.",
+    "reviewHref": "#special-populations"
+  },
+  {
+    "id": "diaper-dermatitis-023",
+    "lesson": "special-populations",
+    "question": "An incontinent adult asks to use a child's Vusion prescription preventively. What is the appropriate response?",
+    "choices": [
+      "Use an individualized adult skin-care plan; Vusion is not for prevention and adult safety and efficacy are not established",
+      "Use it with every change indefinitely",
+      "Assume pediatric approval proves adult efficacy",
+      "Apply it only to pressure injuries"
+    ],
+    "answer": 0,
+    "rationale": "Basic moisture protection can apply across ages, but the medicated product evidence cannot be generalized.",
+    "reviewHref": "#special-populations"
+  },
+  {
+    "id": "diaper-dermatitis-024",
+    "lesson": "special-populations",
+    "question": "Diarrhea-associated dermatitis occurs with fewer wet diapers and poor feeding. What has priority alongside skin care?",
+    "choices": [
+      "Prompt assessment for dehydration and the underlying illness",
+      "Treating only the skin until the rash clears",
+      "Withholding all fluids to reduce stool",
+      "Increasing steroid potency"
+    ],
+    "answer": 0,
+    "rationale": "Systemic hydration and feeding concerns cannot be managed by topical care alone.",
+    "reviewHref": "#special-populations"
+  },
+  {
+    "id": "diaper-dermatitis-025",
+    "lesson": "monitoring-referral",
+    "question": "After three days of appropriate barrier care, a rash is worsening. What is the next step?",
+    "choices": [
+      "Clinical reassessment of diagnosis, technique and possible infection",
+      "Continue unchanged for several weeks",
+      "Add every available rash product at once",
+      "Assume that failure confirms resistant Candida"
+    ],
+    "answer": 0,
+    "rationale": "The short response window should trigger review rather than unexamined escalation.",
+    "reviewHref": "#monitoring-referral"
+  },
+  {
+    "id": "diaper-dermatitis-026",
+    "lesson": "monitoring-referral",
+    "question": "A caregiver reports persistent rash despite medication. Which question can uncover a delivery problem?",
+    "choices": [
+      "How often are diapers changed, and how are cleansing and each product performed?",
+      "Was the most expensive brand purchased?",
+      "Is the rash always described as severe?",
+      "Has every trace of paste been removed each time?"
+    ],
+    "answer": 0,
+    "rationale": "Directly reviewing the routine can reveal ongoing exposure, friction, incorrect application or hidden ingredients.",
+    "reviewHref": "#monitoring-referral"
+  },
+  {
+    "id": "diaper-dermatitis-027",
+    "lesson": "monitoring-referral",
+    "question": "An infant with diaper rash becomes febrile, lethargic and poorly feeding. What is the safest action?",
+    "choices": [
+      "Urgent clinical assessment",
+      "Wait until the seven-day topical course ends",
+      "Replace zinc oxide with another brand first",
+      "Treat the fever as proof of isolated skin irritation"
+    ],
+    "answer": 0,
+    "rationale": "Systemic illness changes urgency regardless of how common diaper dermatitis is.",
+    "reviewHref": "#monitoring-referral"
+  }
 ];
-
-const dimensions = [["principle", "Which principle best characterizes"], ["action", "Which clinical action best applies to"], ["assessment", "Which assessment is most appropriate for"], ["hazard", "Which reasoning hazard is most important to prevent with"]];
-const distractors = (index, field) => [7, 13, 19].map(offset => concepts[(index + offset) % concepts.length][field]);
-
-export const diaperDermatitisQuestionBank = concepts.flatMap((item, index) => dimensions.map(([field, stem], dimension) => ({
-  id: `diaper-dermatitis-${String(index * 4 + dimension + 1).padStart(3, "0")}`,
-  lesson: item.lesson,
-  question: `${stem} ${item.name}?`,
-  choices: [item[field], ...distractors(index, field)],
-  answer: 0,
-  rationale: item.why,
-  reviewHref: `#${item.lesson}`,
-})));

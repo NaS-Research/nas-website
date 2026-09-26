@@ -2,7 +2,7 @@ export const diaperDermatitisVisualTypes = [
   "barrier-pathophysiology", "morphology-differential", "change-clean-dry", "skin-protectant-barriers",
   "candida-antifungals", "anti-inflammatory-safety", "bacterial-other-causes", "special-populations",
   "monitoring-referral",
-];
+].map(type => `diaper-${type}`);
 
 const diagrams = {
   "barrier-pathophysiology": ["Occluded microenvironment", "Follow moisture, enzymes, pH, friction, and occlusion from exposure to barrier failure", ["Wet", "Urine and stool contact", "Hydration increases permeability"], ["Alter", "pH and fecal enzymes", "Protease and lipase activity rises"], ["Rub", "Friction and maceration", "Convex surfaces receive repeated stress"], ["Break", "Inflamed barrier", "Secondary Candida or bacteria can join"]],
@@ -17,7 +17,7 @@ const diagrams = {
 };
 
 export default function DiaperDermatitisVisual({ type }) {
-  const diagram = diagrams[type];
+  const diagram = diagrams[type?.replace(/^diaper-/, "")];
   if (!diagram) return null;
   const [eyebrow, title, ...nodes] = diagram;
   return <figure className="chol-visual diaper-dermatitis-visual" aria-label={title}>
