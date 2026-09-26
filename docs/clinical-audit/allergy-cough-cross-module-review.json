@@ -1,0 +1,112 @@
+{
+  "reviewDate": "2026-09-25",
+  "status": "scoped-cross-module-reconciliation",
+  "modules": [
+    "allergic-rhinitis",
+    "cough-common-cold"
+  ],
+  "method": "Read actual allergy introductory lessons 1-4 and cough triage, product-selection, supportive-care, congestion and interaction-safety teaching. Compare overlapping claims with product-specific source reviews already recorded in both journals. This is not whole-module verification.",
+  "findings": [
+    {
+      "topic": "Phenotype and infection differential",
+      "result": "Both distinguish allergy pattern from viral illness and reject mucus color alone as evidence of bacterial infection. Cough adds explicit respiratory red flags and time-sensitive antiviral assessment."
+    },
+    {
+      "topic": "Irrigation",
+      "result": "Both specify distilled/sterile or boiled/cooled water, CDC one-minute/three-minutes-above-6500-feet durations, clean covered storage, device hygiene, gravity-device positioning and prompt assessment of neurologic/fever symptoms. FDA article longer boiling interval remains an explicitly documented source difference."
+    },
+    {
+      "topic": "Pseudoephedrine and formulation boundaries",
+      "result": "Cough standalone IR/ER schedules differ from exact prescription combination labeling. Allergy combinations preserve hydrochloride versus sulfate names and dose intervals. Retail base-weight purchase limits are explicitly separate from dosing. No cross-product substitution is endorsed."
+    },
+    {
+      "topic": "Age labeling versus allergy guideline preference",
+      "result": "Both retain exact nasal product age permissions while distinguishing ARIA avoidance in children under12 for allergic rhinitis. Pediatric viral cold restrictions are not applied as blanket contraindications to separately labeled pediatric allergy products."
+    },
+    {
+      "topic": "Pregnancy",
+      "result": "Cough explicitly attributes avoiding all pregnancy decongestants to UK SPS; allergy uses US society guidance to avoid pseudoephedrine in first trimester and seek individualized review later. These source-specific approaches are not represented as identical."
+    },
+    {
+      "topic": "PKU excipients",
+      "result": "Cough specific Good Neighbor loratadine ODT example differs from allergy Claritin RediTabs/chewable and other ODT products; both require exact manufacturer/formulation review. Different excipient amounts are not an active-ingredient contradiction."
+    },
+    {
+      "topic": "First-generation safety",
+      "result": "Both prohibit duplicate diphenhydramine including topical products and child-sedation use, and identify additive sedation/anticholinergic harm. Full first-generation book-topic closure still requires remaining precaution mapping."
+    }
+  ],
+  "freshPrimarySourceCheck": {
+    "url": "https://onlinelibrary.wiley.com/doi/10.1111/all.70131",
+    "section": "Table2 and section5.2.3.1",
+    "finding": "Allergy stepwise lesson conditional fixed combination preference and similar average symptom benefit versus INCS are consistent with source; onset and satisfaction contribute to selection."
+  },
+  "remainingGates": [
+    "Final book-topic and source-to-claim closure for allergy",
+    "Final module-wide completion review before selective commit and push"
+  ],
+  "isolatedValidation": {
+    "baseCommit": "008cf88",
+    "changedApplicationFiles": [
+      "src/data/modules/allergicRhinitis.js",
+      "src/data/questionBanks/allergicRhinitis.js",
+      "src/components/learn/AllergicRhinitisVisual.jsx",
+      "src/app/learn/pharmacy/modules/[slug]/page.jsx (allergy visual registration only)"
+    ],
+    "lessonBrowser": {
+      "session": 9175,
+      "exitCode": 0,
+      "desktopAndMobile": true,
+      "lessons": 14,
+      "embeddedChecks": 14,
+      "assessmentTargets": 152,
+      "runtimeErrors": 0,
+      "horizontalOverflow": false
+    },
+    "randomizedAssessmentBrowser": {
+      "session": 89994,
+      "exitCode": 0,
+      "targetIds": "allergic-rhinitis-053 through -064",
+      "desktopAttempts": 25,
+      "mobileAttempts": 34,
+      "all12TargetsObservedBothWidths": true,
+      "checks": [
+        "rendered stems and choices",
+        "incomplete submission disabled",
+        "alternating correct and incorrect scoring",
+        "answer key after choice randomization",
+        "exact rationale",
+        "review anchor existence"
+      ],
+      "scopeLimitation": "Integration exercise of these 12 targets and other randomly rendered questions, not fresh clinical review of all152 questions."
+    },
+    "structuralAudit": "152 questions; zero hard errors or source gaps; advisory lesson question counts retained.",
+    "testHarnessCorrection": "Initial browser script expected uncommitted Review answers label; changed to committed Submit answers and reran successfully. No application correction needed."
+  },
+  "precautionAddendum": {
+    "date": "2026-09-25",
+    "bookPrintedPages": [
+      531,
+      533
+    ],
+    "contentAdded": [
+      "Separate local pollen counts from pollution AQI; practical outdoor exposure measures",
+      "Antihistamine photosensitivity including FDA first- and second-generation examples; original prevention and assessment teaching"
+    ],
+    "sourcesRead": [
+      "https://www.fda.gov/drugs/understanding-over-counter-medicines/sun-and-your-medicine",
+      "https://www.airnow.gov/aqi/aqi-basics/",
+      "https://www.aaaai.org/Aaaai/media/MediaLibrary/PDF%20Documents/Libraries/EL-climate-change-patient-eng.pdf"
+    ],
+    "sourceLimits": "AAAAI2016 sheet used only for practical exposure advice, not current climate estimates or counting-station totals. FDA class examples do not establish universal reactions or equal incidence. AQI versus pollen distinction follows EPA listed pollutant scope.",
+    "validation": {
+      "browserSession": 25813,
+      "exitCode": 0,
+      "desktopMobile": "14 lessons and embedded checks;152 review anchors; no runtime errors or horizontal overflow",
+      "productionBuildSession": 51633,
+      "productionBuildExitCode": 0,
+      "generatedPages": 558,
+      "screenshots": "New precaution and exposure paragraphs inspected at both widths"
+    }
+  }
+}
