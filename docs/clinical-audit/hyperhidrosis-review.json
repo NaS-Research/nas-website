@@ -1,0 +1,161 @@
+{
+  "module": "hyperhidrosis",
+  "reviewDate": "2026-09-26",
+  "status": "verified",
+  "book": {
+    "edition": "2023 RxPrep",
+    "printedPages": [
+      552
+    ],
+    "pdfPages": [
+      560
+    ],
+    "inspection": "Full page image read privately; hyperhidrosis table covers OTC antiperspirants and prescription Qbrexza, with anticholinergic exclusions and handwashing."
+  },
+  "baseline": {
+    "lessons": 9,
+    "assessment": "112 mechanically expanded questions replaced by 35 original clinical cases."
+  },
+  "correctionsImplemented": [
+    {
+      "issue": "Sofdra interaction warning too weak and application details missing",
+      "change": "Added labeled avoidance of strong CYP2D6 inhibitors and other anticholinergics, fire precautions, exercise/deodorant windows, priming, applicator care and 30-dose disposal.",
+      "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=78f86f4f-658c-468b-bd54-49182ddcc7ac"
+    },
+    {
+      "issue": "Glaucoma exclusion narrowed and visual identifiers generic",
+      "change": "Restored label contraindication wording, namespaced nine visuals and replaced ambiguous Occlude instruction with Plug."
+    },
+    {
+      "issue": "BOTOX coverage omitted important off-label site harms and systemic warning",
+      "change": "Added palmar weakness/facial ptosis, toxin safety screening, urgent swallowing/speech/breathing warning with labeled-dose evidence nuance, and independent dilution example.",
+      "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a6f42753-d31e-4b23-8da0-4b990fee4b38"
+    },
+    {
+      "issue": "Topical renal/reproductive uncertainty and accidental-exposure disposal underdeveloped",
+      "change": "Added Qbrexza renal-elimination caution, Sofdra renal/hepatic evidence gap, pregnancy/lactation uncertainty, and child-inaccessible cloth disposal.",
+      "sources": [
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b372650-e56e-47a5-93e2-c0c292017059",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=78f86f4f-658c-468b-bd54-49182ddcc7ac"
+      ]
+    },
+    {
+      "issue": "Current sweat-activated thermal device absent from procedural comparison",
+      "change": "Added adult axillary indication, brief clinician application, skin contraindication and evidence limits; no home-procedure instructions or efficacy guarantee.",
+      "source": "https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN210055.pdf"
+    },
+    {
+      "issue": "Prescription aluminum antiperspirant schedule and surgical selection were underspecified",
+      "change": "Added common 20% aluminum chloride preparation, 6 to 8 hour wash-off, approximately one-week induction as tolerated, individualized maintenance, and refractory-site limits for sympathectomy.",
+      "source": "https://sweathelp.org/treatments-hcp/clinical-guidelines/primary-focal-hyperhidrosis/primary-focal-axillary.html"
+    },
+    {
+      "issue": "Qbrexza fire warning and explicit heat stop rule missing",
+      "change": "Added flammable storage/application precautions and stopping for generalized lack of sweating in hot conditions, with urgent escalation for severe heat illness.",
+      "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b372650-e56e-47a5-93e2-c0c292017059"
+    }
+  ],
+  "openWork": [],
+  "validation": {
+    "clinicalCompletion": true,
+    "calculation": "100 Units / 4 mL = 25 Units/mL; 50 Units / 25 Units/mL = 2 mL per axilla; two axillae total 100 Units.",
+    "structuralAudit": {
+      "log": "/private/tmp/hyperhidrosis-release-audit.log",
+      "globalErrors": 34,
+      "moduleErrors": []
+    },
+    "visualTextReview": "All nine diagram titles, nodes and explanatory text read; consistent with lesson mechanisms and limitations.",
+    "buildBeforeFinalTechniqueEdit": {
+      "exitCode": 0,
+      "log": "/private/tmp/hyperhidrosis-build.log"
+    },
+    "finalClinicalReview": {
+      "lessons": 9,
+      "embeddedChecks": 9,
+      "visuals": 9,
+      "assessmentQuestions": 35,
+      "choices": 140,
+      "keys": 35,
+      "rationales": 35,
+      "scope": "Actual lesson text, summaries, concepts, key points, embedded checks, diagrams and complete question bank read and reconciled with book and sources. No material module-specific clinical issue left open. This is not independent pharmacist review or certification."
+    },
+    "productionBuild": {
+      "result": "passed",
+      "exitCode": 0,
+      "log": "/private/tmp/hyperhidrosis-final-build.log"
+    },
+    "browser": {
+      "route": "http://127.0.0.1:3144/learn/pharmacy/modules/hyperhidrosis",
+      "desktop": "Nine figures rendered; settled section-three anchor showed matching gold highlight and left navigation. Embedded check returned Correct with explanation.",
+      "assessment": "10 of 10 shuffled questions answered and each returned Correct with rationale and review link.",
+      "mobile": "390x844: viewport and document width both 390; heading, body and two-column visual wrap. Shared sticky contents and floating controls overlap portions of reading space.",
+      "preview": "Final build served after restarting local preview; no deployment."
+    }
+  },
+  "sourceCautions": [
+    "AAD public page discusses botulinum treatment at several sites; the FDA label establishes axillary indication only.",
+    "Do not copy broad advice to stop aspirin before procedures without individualized prescriber planning.",
+    "Manufacturer Brella IFU retrieval timed out; FDA De Novo review used for bounded device overview, without claiming current supply or complete operational protocol."
+  ],
+  "assessmentRevision": {
+    "questions": 35,
+    "status": "Clinical reread and browser assessment feedback verified.",
+    "change": "Replaced cross-topic distractor templates with original decisions covering all nine lessons, including dose calculation, ocular/heat/urinary harms, interaction avoidance and procedural limits."
+  },
+  "guidelineDiscrepancies": [
+    "RxPrep 2023 predates Sofdra approval. Current product-specific Sofdra instructions and interactions govern this added coverage.",
+    "Book table lists OTC antiperspirants and Qbrexza; retained and checked beyond-book diagnosis, physiology, procedures and off-label systemic therapy rather than deleting that coverage."
+  ],
+  "sourceReview": [
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b372650-e56e-47a5-93e2-c0c292017059",
+      "scope": "Indication, administration, contraindications, warnings, interactions, renal/reproductive limitations, chemistry, storage and patient information.",
+      "reviewDate": "2026-09-26"
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=78f86f4f-658c-468b-bd54-49182ddcc7ac",
+      "scope": "Indication, strength, administration and full IFU, contraindications, CYP2D6/additive interactions, metabolism and special populations.",
+      "reviewDate": "2026-09-26"
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a6f42753-d31e-4b23-8da0-4b990fee4b38",
+      "scope": "Axillary adult indication, dilution/dose, noninterchangeability, off-label site risks, boxed spread warning and safety screening.",
+      "reviewDate": "2026-09-26"
+    },
+    {
+      "url": "https://www.aad.org/public/diseases/a-z/hyperhidrosis-treatment",
+      "scope": "Diagnosis, site-based treatment, iontophoresis maintenance, procedures, oral anticholinergics and event therapy.",
+      "reviewDate": "2026-09-26"
+    },
+    {
+      "url": "https://sweathelp.org/about-hyperhidrosis/physiology-of-normal-sweating.html",
+      "scope": "Eccrine/apocrine distinctions, cholinergic sympathetic innervation, central regulation and evaporation.",
+      "reviewDate": "2026-09-26"
+    },
+    {
+      "url": "https://sweathelp.org/about-hyperhidrosis/diagnosis-guidelines",
+      "scope": "Primary/secondary pattern and patient-reported functional severity; office dryness does not exclude disease.",
+      "reviewDate": "2026-09-26"
+    },
+    {
+      "url": "https://sweathelp.org/treatments-hcp/clinical-guidelines/primary-focal-hyperhidrosis/primary-focal-axillary.html",
+      "scope": "Aluminum chloride concentration and technique, surgical selection and systemic treatment limits.",
+      "reviewDate": "2026-09-26"
+    },
+    {
+      "url": "https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN210055.pdf",
+      "scope": "Adult primary axillary thermal patch, intact skin, maximum three-minute clinician application and evidence limitations.",
+      "reviewDate": "2026-09-26"
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=9390cfd6-b2e0-48ad-8c4d-ed63cf6b923a&type=display",
+      "scope": "Propranolol asthma/bradycardia contraindications, hypoglycemia and interacting rate-control cautions supporting event therapy screening.",
+      "reviewDate": "2026-09-26"
+    }
+  ],
+  "limitations": [
+    "Shared mobile sticky contents and floating controls overlap some reading space; broader UI issue remains open.",
+    "Full repository audit reports 34 existing errors outside this module; module-specific hard errors are zero.",
+    "Device availability must be confirmed with provider; no claim of current thermal-patch supply."
+  ]
+}
