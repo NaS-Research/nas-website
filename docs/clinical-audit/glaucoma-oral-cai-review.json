@@ -1,0 +1,47 @@
+{
+  "reviewDate": "2026-09-25",
+  "status": "partial_review",
+  "sources": [
+    {
+      "product": "Acetazolamide tablets",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=71f1fbbb-428e-4bf7-bc20-2946c1079bd3",
+      "scope": "Full prescribing text read. Repackager SPL 05/2026 carries PI revision 05/2021; do not mistake SPL date for new clinical revision."
+    },
+    {
+      "product": "Acetazolamide extended-release",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=fb2cf8fe-da81-445e-a18b-9aa9ced1d34a",
+      "scope": "Full prescribing text now read, including dosage, storage and package description; package images not inspected. Storage 20\u201325 C in well-closed containers. Label does not supply a numerical renal-adjustment schedule; marked renal disease remains contraindicated."
+    },
+    {
+      "product": "Methazolamide",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=0c0ba5c7-c53e-4e29-a7ff-48fddc5a9258",
+      "scope": "Full prescribing text read, PI revision 03/2022; label images not inspected."
+    }
+  ],
+  "changes": [
+    "Added four original oral-therapy paragraphs and three original questions",
+    "Separated chronic glaucoma tablet and ER schedules from specialist acute regimens",
+    "Expanded systemic contraindications, lab monitoring, drug interactions and postoperative ocular adverse-event teaching"
+  ],
+  "bookComparison": "Printed page 542 lists both acetazolamide and methazolamide; prior note incorrectly described methazolamide as beyond book scope. Expanded both listed drugs with developed systemic treatment coverage. Do not equate reduced pressure with definitive angle treatment.",
+  "validation": {
+    "arithmetic": "Decimal checked 500 mg twice daily = 1000 mg/day and methazolamide labeled dose endpoints 50 mg twice daily = 100 mg/day; 100 mg three times daily = 300 mg/day.",
+    "visual": "Eight full paragraph-row screenshots inspected at desktop 1440x1000 and mobile 390x844; legible without clipping.",
+    "assessment": "Desktop 24 attempts and mobile 30 attempts each encountered all three new questions. Verified rendered choices, answer mapping, correct/incorrect scoring, explanations and review links. No page errors or horizontal overflow. Other sampled questions checked for UI only."
+  },
+  "remaining": [
+    "Complete pregnancy synthesis",
+    "Final whole-module and assessment consistency verification"
+  ],
+  "hashes": {
+    "src/data/modules/glaucomaPharmacotherapy.js": "537ab579046164d34801766ba0448530326f043deb42d4d6d734f5006ff3733e",
+    "src/data/questionBanks/glaucomaPharmacotherapy.js": "7b6e06c6efb5633262d462fad9383f8f47845c31b8fded0a41ecee0506018b26"
+  },
+  "followup": {
+    "date": "2026-09-26",
+    "acuteProtocol": "glaucoma-acetazolamide-followup-review.json",
+    "ERsourceCompletion": "Read remaining dosage/storage/packaging text directly from DailyMed. Existing 500 mg twice-daily teaching confirmed; no new lesson change required solely for storage-source completion."
+  },
+  "renalAndLactationFollowup": "glaucoma-lactation-renal-review.json records current institutional IV renal guidance and LactMed comparison.",
+  "pregnancyFollowup": "glaucoma-pregnancy-synthesis-review.json records completed targeted pregnancy synthesis and visual validation. Whole-module verification remains open."
+}

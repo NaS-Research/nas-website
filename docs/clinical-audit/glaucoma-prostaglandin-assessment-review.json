@@ -1,0 +1,92 @@
+{
+  "reviewDate": "2026-09-25",
+  "status": "partial_review",
+  "scope": "All twelve actual questions 025\u2013036 read, including each distractor, key, explanation and review link. This does not verify the rest of the assessment bank.",
+  "sources": [
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a98595b3-9f47-48e0-b18d-550a2095f264",
+      "sections": "2,5.1\u20135.5,12.1; mechanism reconfirmed in current label"
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=34ad5cf6-4df0-4104-bddd-4c7631133ded",
+      "sections": "5.3\u20135.5"
+    }
+  ],
+  "items": [
+    {
+      "id": "glaucoma-pharmacotherapy-025",
+      "disposition": "corrected explanation to match mechanism stem",
+      "review": "Read stem, all four choices, keyed answer and explanation"
+    },
+    {
+      "id": "glaucoma-pharmacotherapy-026",
+      "disposition": "retained after clinical review",
+      "review": "Read stem, all four choices, keyed answer and explanation"
+    },
+    {
+      "id": "glaucoma-pharmacotherapy-027",
+      "disposition": "replaced broad generic prompt with product-specific case",
+      "review": "Read stem, all four choices, keyed answer and explanation"
+    },
+    {
+      "id": "glaucoma-pharmacotherapy-028",
+      "disposition": "retained after clinical review",
+      "review": "Read stem, all four choices, keyed answer and explanation"
+    },
+    {
+      "id": "glaucoma-pharmacotherapy-029",
+      "disposition": "retained after clinical review",
+      "review": "Read stem, all four choices, keyed answer and explanation"
+    },
+    {
+      "id": "glaucoma-pharmacotherapy-030",
+      "disposition": "replaced broad generic prompt with product-specific case",
+      "review": "Read stem, all four choices, keyed answer and explanation"
+    },
+    {
+      "id": "glaucoma-pharmacotherapy-031",
+      "disposition": "replaced broad generic prompt with product-specific case",
+      "review": "Read stem, all four choices, keyed answer and explanation"
+    },
+    {
+      "id": "glaucoma-pharmacotherapy-032",
+      "disposition": "retained after clinical review",
+      "review": "Read stem, all four choices, keyed answer and explanation"
+    },
+    {
+      "id": "glaucoma-pharmacotherapy-033",
+      "disposition": "retained after clinical review",
+      "review": "Read stem, all four choices, keyed answer and explanation"
+    },
+    {
+      "id": "glaucoma-pharmacotherapy-034",
+      "disposition": "replaced broad generic prompt with product-specific case",
+      "review": "Read stem, all four choices, keyed answer and explanation"
+    },
+    {
+      "id": "glaucoma-pharmacotherapy-035",
+      "disposition": "replaced broad generic prompt with product-specific case",
+      "review": "Read stem, all four choices, keyed answer and explanation"
+    },
+    {
+      "id": "glaucoma-pharmacotherapy-036",
+      "disposition": "replaced broad generic prompt with product-specific case",
+      "review": "Read stem, all four choices, keyed answer and explanation"
+    }
+  ],
+  "identifiedIssues": [
+    "Question 025 explained extra dosing rather than its mechanism answer",
+    "Broad action/monitoring prompts used alternatives that included other legitimate aspects of eye care; replacement cases narrow the clinical decision",
+    "Added specific distinctions between active ocular disease and past history, and between iris pigmentation and a reason to stop therapy"
+  ],
+  "validation": {
+    "assessment": "Desktop and mobile each took 31 random ten-question attempts to encounter all twelve reviewed IDs. All passed checks for stem, shuffled choices, keyed answer mapping, alternating correct/incorrect scoring, explanation and review-link destination. No page errors or horizontal overflow. Other sampled questions were UI checks only.",
+    "import": "131 questions and 131 unique IDs; reviewed overrides present in exported bank.",
+    "diff": "Targeted git diff --check passed."
+  },
+  "remaining": [
+    "Other original question ranges remain incompletely reviewed",
+    "Whole module and associated visual review still pending"
+  ],
+  "bankHash": "6560155c75603b916105d1a1536e314812bdfb3acd4128411fbd5f9e9f7bd4e6"
+}

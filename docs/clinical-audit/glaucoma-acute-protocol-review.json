@@ -1,0 +1,44 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_review",
+  "sources": [
+    {
+      "url": "https://eugs.org/educational_materials/188",
+      "scope": "Sixth-edition PDF text pages146\u2013147 and beginning148; no procedure figure inspection."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=ba7bf864-8a4d-4262-8fd1-00174fa2f9d1",
+      "revision": "PI May2020; SPL October2025",
+      "scope": "Full prescribing text sections1\u201317 now read; package images not inspected."
+    }
+  ],
+  "changes": [
+    "Lower pressure while preparing definitive care",
+    "Time pilocarpine to the mechanism and pressure",
+    "Screen before hyperosmotic treatment",
+    "Verify the ordered mannitol regimen",
+    "Complete definitive treatment and assess the other eye"
+  ],
+  "discrepancies": [
+    "EGS acute-angle mannitol0.5\u20131.5g/kg differs from ICU Medical IOP label1.5\u20132g/kg. Both attributed; do not combine regimen components."
+  ],
+  "remaining": [
+    "Whole-module and population synthesis"
+  ],
+  "validation": {
+    "syntax": "node --check passed",
+    "visual": "Ten full paragraph screenshots inspected across desktop1440x1000 and mobile390x844. Readable without clipping or horizontal overflow.",
+    "moduleSha256": "473be0faa30ef1e775c6dc8537ebb69669a3f8d555d5798eaf7d0268dcbc2215"
+  },
+  "calculationFollowup": {
+    "example": "60kg \u00d71.5g/kg =90g;20%=0.2g/mL;90/0.2=450mL",
+    "arithmetic": "Independently checked with Python Decimal",
+    "question": "glaucoma-pharmacotherapy-mannitol-volume",
+    "validation": {
+      "assessment": "Case encountered after20 desktop attempts and3 mobile attempts; answer mapping, scoring, rationale and review link passed; no page errors/overflow. Other encountered questions UI-only.",
+      "visual": "Complete worked-example paragraph inspected on desktop1440x1000/mobile390x844; no clipping.",
+      "bankSha256": "885aee0f87d62cc46b6ad3a22f42462513c857e9f2d46aedd079ff27407ef700"
+    }
+  },
+  "acetazolamideFollowup": "glaucoma-acetazolamide-followup-review.json records source reconciliation and desktop/mobile inspection of acute orders, allergy and reconstitution deadline."
+}

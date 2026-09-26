@@ -1,0 +1,41 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_review",
+  "scope": "Actual questions 001\u2013012 read in full; rewrote 003,004,006,007,008,010,011,012 and retained 001,002,005,009. Clinically checked flow-map text; corrected technique diagram and paragraph universal one-drop wording.",
+  "sources": [
+    {
+      "url": "https://eyewiki.aao.org/IOP_and_Tonometry",
+      "scope": "Production and outflow anatomy paragraphs only; page status Update Pending June 2022. Did not adopt its dimensional outflow-resistance wording or blanket anticholinergic avoidance claim."
+    },
+    {
+      "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/glaucoma/glaucoma-and-eye-pressure",
+      "scope": "Pressure and drainage relationship; normal-pressure disease supported by prior NEI types review."
+    },
+    {
+      "url": "https://eugs.org/educational_materials/188",
+      "scope": "Sixth edition page 32: gonioscopy is not replaced by angle imaging."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=7d4f0e3a-5b86-4c43-982a-813b22ae7e22",
+      "scope": "Netarsudil mechanism previously read and documented in glaucoma-product-review.json."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a73519d5-546c-4377-92ed-0d4be2685d60",
+      "scope": "One-to-two-drop solution dose reviewed in glaucoma-beta-solutions-review.json."
+    }
+  ],
+  "bookComparison": "Printed pages 540\u2013542 distinguish secretion/outflow and eye-drop products. General technique must not override specific dosing instructions.",
+  "validation": {
+    "assessment": "001\u2013012 all encountered at desktop 1440x1000 (35 attempts) and mobile 390x844 (42 attempts). Checked rendering, key mapping, scoring, explanation and links. No page errors/overflow.",
+    "visual": "Paragraph, flow map and technique diagram inspected at desktop 1440x1000/mobile 390x1200. Initial technique capture overlapped sticky chrome; recaptured below navigation and inspected complete labels. No clipped content in settled captures."
+  },
+  "remaining": [
+    "Other unreviewed assessment ranges and visual panels",
+    "Remaining clinical guidelines and labels; no whole-module completion claim"
+  ],
+  "hashes": {
+    "src/data/modules/glaucomaPharmacotherapy.js": "a53ebb193cf5320c99e53d02c03aa82ad91b1d117cf7e98d0799b37c897ef95f",
+    "src/data/questionBanks/glaucomaPharmacotherapy.js": "c6b02608a8e284077ef916882c94c8862576e0e9682edc87c8374e1aaf336e77",
+    "src/components/learn/GlaucomaPharmacotherapyVisual.jsx": "daabab9fdfa614e7c94151d27fd3d5c738e2461c4c83cddcce90efbeb9607679"
+  }
+}

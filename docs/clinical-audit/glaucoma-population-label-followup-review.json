@@ -1,0 +1,41 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_review",
+  "sources": [
+    {
+      "product": "Rocklatan",
+      "revision": "01/2026",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=b1d71f41-be06-4a08-94d4-e352198f09c2",
+      "scope": "Remaining sections 8,11\u201314 read including clinical-study text and numeric tables; full prescribing text now read across reviews. Label figures not visually inspected."
+    },
+    {
+      "product": "Lumigan 0.01%",
+      "revision": "06/2024",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a5e67c75-db88-4372-bb07-c8dd15c97631",
+      "scope": "Full prescribing text read including 8.2/8.4 and sections 10\u201314; package images not inspected."
+    },
+    {
+      "product": "Latisse",
+      "revision": "07/2024",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=34f83d9d-2c64-463e-8a90-9a460fedfead",
+      "scope": "Sections 6.2,8,11\u201317 and patient-information text through storage/general information read. Application illustrations not inspected."
+    }
+  ],
+  "changes": [
+    "Added reproductive-evidence paragraph distinguishing inadequate human evidence and animal signals from demonstrated human safety.",
+    "Added Rocklatan pediatric evidence limitation and distinction between Latisse eyelash study and glaucoma indication.",
+    "Added Latisse lens interval, storage, missed-application and discontinuation counseling."
+  ],
+  "validation": {
+    "syntax": "node --check passed",
+    "visual": "All four complete paragraph captures inspected at desktop1440x1000/mobile390x844. Text legible without clipping; browser overflow assertions passed.",
+    "moduleSha256": "ac291c1f3ccb120523a29aedda6528b186959b5c51649d4cc9f0c0941700d3f6"
+  },
+  "remaining": [
+    "Broader pregnancy/lactation synthesis with EGS and LactMed",
+    "Renal dosing synthesis",
+    "Final whole-module and question-bank consistency review",
+    "Final isolated build"
+  ],
+  "pregnancyFollowup": "glaucoma-pregnancy-synthesis-review.json records completed targeted pregnancy synthesis and visual validation. Whole-module verification remains open."
+}

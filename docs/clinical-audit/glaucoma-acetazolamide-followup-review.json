@@ -1,0 +1,47 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_review",
+  "sources": [
+    {
+      "url": "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Allergist%20Resources/Statements%20and%20Practice%20Parameters/Drug-Allergy-2022.pdf",
+      "scope": "Sulfonamides discussion and Table XIV, PDFpage29 (printed1361); not entire guideline."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=85975cf0-1286-4af9-ac7f-94bb2483bf09&type=display",
+      "revision": "February2025",
+      "scope": "Full prescribing text read; images not inspected."
+    },
+    {
+      "url": "https://eugs.org/educational_materials/188",
+      "scope": "Acute-angle recommendations page147 previously read and reconciled here."
+    }
+  ],
+  "changes": [
+    "Clarify the reported sulfonamide reaction",
+    "Verify the acute acetazolamide order",
+    "Separate solution stability from the use deadline"
+  ],
+  "discrepancies": [
+    "EGS advises broad sulfonamide-allergy avoidance; allergy practice parameter distinguishes antimicrobial and nonantimicrobial structures. Lesson preserves product contraindication and individualized severe-reaction assessment.",
+    "Hikma fixed acute doses and EGS10mg/kg differ; explicitly attributed rather than combined.",
+    "Hikma describes3-day refrigerated physical/chemical stability but How Supplied requires use within12h; no3-day usability claim."
+  ],
+  "remaining": [
+    "Population synthesis",
+    "Final module review and validation"
+  ],
+  "validation": {
+    "syntax": "node --check passed in implementation pass.",
+    "visual": "All six complete paragraph screenshots inspected on 2026-09-26: three rows at desktop and mobile. Text is legible with no clipping or horizontal overflow.",
+    "screenshots": [
+      "/private/tmp/acetazolamide-followup-0-row-desktop.png",
+      "/private/tmp/acetazolamide-followup-0-row-mobile.png",
+      "/private/tmp/acetazolamide-followup-1-row-desktop.png",
+      "/private/tmp/acetazolamide-followup-1-row-mobile.png",
+      "/private/tmp/acetazolamide-followup-2-row-desktop.png",
+      "/private/tmp/acetazolamide-followup-2-row-mobile.png"
+    ],
+    "moduleSha256": "dc109101b7b6a351ce7c352beb4ee214ef384eda4390017899b721cfe0b012f7",
+    "scope": "Only the three named paragraphs; no whole-module completion claim."
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "reviewDate": "2026-09-25",
+  "status": "partial_review",
+  "sources": [
+    {
+      "product": "Alphagan P",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=264c4494-c225-486f-888a-caaf36be46b3",
+      "revision": "09/2025",
+      "sectionsRead": [
+        "2",
+        "4\u20138",
+        "12.1",
+        "16\u201317"
+      ]
+    },
+    {
+      "product": "Apraclonidine 0.5% Sandoz",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=04ad82af-e7ba-4f40-a120-be9d33cf0c7b",
+      "revision": "PI 01/2024; SPL 10/2024",
+      "sectionsRead": [
+        "Clinical pharmacology",
+        "Indications",
+        "Contraindications",
+        "Precautions",
+        "Dose",
+        "Storage"
+      ]
+    },
+    {
+      "product": "Lumify multidose",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=022de945-0b26-40ae-8e88-d3fe2464d106",
+      "revision": "03/2026",
+      "sectionsRead": [
+        "Full Drug Facts"
+      ]
+    }
+  ],
+  "changes": [
+    "Added prescription brimonidine schedule, interactions, pediatric and lactation limits",
+    "Added missing apraclonidine 0.5% short-term adjunct role, tolerance, MAOI contraindication, follow-up and discontinuation boundaries",
+    "Separated OTC Lumify redness indication from glaucoma treatment",
+    "Added current Lumify multidose instructions to common-eye-conditions, including age five threshold and ten-minute lens interval",
+    "Replaced four generic brimonidine questions and added three original cases"
+  ],
+  "crossModuleLimits": [
+    "Lumify preservative-free search result found but not fully reconciled; do not extend multidose storage/disposal directions to it",
+    "Apraclonidine 1% targeted label reconciliation now recorded in glaucoma-iopidine-review.json",
+    "Other existing common-eye-conditions content is not verified by the new paragraph",
+    "Pregnancy module search had no brimonidine match; no broad pregnancy curriculum reconciliation claimed"
+  ],
+  "reviewedQuestionIds": [
+    "glaucoma-pharmacotherapy-041",
+    "glaucoma-pharmacotherapy-042",
+    "glaucoma-pharmacotherapy-043",
+    "glaucoma-pharmacotherapy-044",
+    "glaucoma-pharmacotherapy-apraclonidine-duration",
+    "glaucoma-pharmacotherapy-apraclonidine-maoi",
+    "glaucoma-pharmacotherapy-lumify-substitution"
+  ],
+  "clinicalAssessment": "All new stems, choices, keyed answers and rationales read against the three primary labels. Strength and timing numbers checked directly; no derived arithmetic.",
+  "validation": {
+    "assessment": {
+      "desktopAttempts": 23,
+      "mobileAttempts": 30,
+      "targetCasesCoveredEach": 7,
+      "checks": [
+        "stem and choice text",
+        "shuffled keyed answer",
+        "correct and incorrect scoring",
+        "rationale",
+        "review link"
+      ],
+      "pageErrors": 0,
+      "overflow": false
+    },
+    "visual": "Complete Alphagan P, apraclonidine and common-eye Lumify paragraph rows captured and visually inspected at 1440 and 390 pixel page widths; readable and no clipped row content.",
+    "screenshots": [
+      "/private/tmp/alphagan-row-desktop.png",
+      "/private/tmp/alphagan-row-mobile.png",
+      "/private/tmp/apraclonidine-row-desktop.png",
+      "/private/tmp/apraclonidine-row-mobile.png",
+      "/private/tmp/lumify-row-desktop.png",
+      "/private/tmp/lumify-row-mobile.png"
+    ]
+  },
+  "fileHashes": {
+    "src/data/modules/glaucomaPharmacotherapy.js": "c7b5185ea2cf25420db3c212faf647edfaa863f34d2485837dbba82a6202c57e",
+    "src/data/questionBanks/glaucomaPharmacotherapy.js": "7d0d56ae264908289d830cb74906bbe81321cb05473feefa3d675356ad30cb6a",
+    "src/data/modules/commonEyeConditions.js": "8237e74b91cd8351a424a4b78d83cc4af766dc4e8c2beb7ce8bbfa8529e151cc"
+  }
+}

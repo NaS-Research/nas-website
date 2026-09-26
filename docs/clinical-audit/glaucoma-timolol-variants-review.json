@@ -1,0 +1,39 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_review",
+  "sources": [
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=b686bbad-1ef7-4b94-a316-4d182a40b89a",
+      "scope": "Full prescribing text read; package images not inspected",
+      "revision": "PI March 2022; SPL November 2024"
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=4c4318b3-9865-4172-a7bd-9e68913eca1e",
+      "scope": "Full prescribing text read; package images not inspected",
+      "revision": "PI May 2023; SPL October 2023"
+    }
+  ],
+  "changes": [
+    "Identify the once-daily timolol solution",
+    "Handle preservative-free timolol vials correctly"
+  ],
+  "sourceDiscrepancies": [
+    "Ingenus structured ingredient table incorrectly lists 3.4/6.8 mg per mL on timolol base basis. Prescribing description explicitly distinguishes base 2.5/5 from maleate 3.4/6.8; lesson follows description and percentage strength.",
+    "Do not generalize label pupil-constriction language to effusion-mediated angle closure."
+  ],
+  "populationNotes": [
+    "Ingenus supports age 2 and older; once-daily Bausch solution pediatric use not established.",
+    "Breastfeeding wording differs between labels; population evidence synthesis remains pending."
+  ],
+  "validation": {
+    "syntax": "node --check passed",
+    "visual": "Four full paragraph captures inspected at desktop 1440x1000 and mobile 390x844; readable, no clipping or horizontal overflow.",
+    "moduleSha256": "63240891167c6d3a441824d2aadb7ba9dafd1132da7fa8c3492582d123caab09"
+  },
+  "remaining": [
+    "Combination-label gaps",
+    "Population synthesis",
+    "Acute-angle protocol",
+    "Whole-module final clinical and visual review"
+  ]
+}

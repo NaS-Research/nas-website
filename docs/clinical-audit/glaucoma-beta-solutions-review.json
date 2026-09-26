@@ -1,0 +1,47 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_review",
+  "sources": [
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a73519d5-546c-4377-92ed-0d4be2685d60",
+      "scope": "Full prescribing text read; PI May 2023, SPL October 2023 v9."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=571fe550-399d-4296-835c-37aa1ab9b409",
+      "scope": "Full prescribing text read; PI August 2021, current archive v6 February 2022."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=5ab1efbe-530b-4787-b40a-c7dbf18161e1",
+      "scope": "Contraindications, warnings, dosage, storage and ingredient list previously read. Follow-up 2026-09-26: remaining precautions, interactions, animal/reproductive data, pregnancy/nursing/pediatrics/geriatrics, adverse reactions and overdose text read. PI October 2022, SPL July 2024 v13."
+    }
+  ],
+  "changes": [
+    "Added three product-specific paragraphs and original carteolol asthma case; reviewed its choices, answer and explanation.",
+    "Added levobunolol lens interval, interaction and population qualifications. Did not adopt old-label overdose treatment as a current toxicology protocol or generalize miotic use to nonpupillary angle closure."
+  ],
+  "bookComparison": "Extends printed page 542 beta-blocker table with formulation-specific directions and qualifications.",
+  "validation": {
+    "visual": "Inspected six complete paragraph-row screenshots at desktop 1440x1000 and mobile 390x844. Text readable without clipping or horizontal overflow.",
+    "assessment": "New carteolol case encountered within two attempts on each viewport; verified choices, correct-answer mapping, scoring, rationale and review target. No browser errors. Other sampled items tested for UI only.",
+    "syntax": "Question bank node --check passed."
+  },
+  "remaining": [
+    "Population synthesis across glaucoma therapies remains; levobunolol label precautions read.",
+    "Timolol solution products and remaining glaucoma assessment/visual/guideline review"
+  ],
+  "hashes": {
+    "src/data/modules/glaucomaPharmacotherapy.js": "4a6c6c55b4e86ddaf048f5a4ecf24075205650b4d1ab6d9a8ae93178fc75b3b6",
+    "src/data/questionBanks/glaucomaPharmacotherapy.js": "be83846e24181dd4d83bd73fcfe04cc63bc693e918169b56066d050ee216f300"
+  },
+  "followupValidation": {
+    "visual": "New levobunolol paragraph inspected in full at desktop 1440x1000/mobile 390x844; readable without clipping/overflow.",
+    "moduleSha256": "a1822249fea3513c71d86ee066daef1d98543973695559a736621957c14957c3"
+  },
+  "nextSource": {
+    "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=f949fa34-6a9a-40d5-91ab-ff1cbb79b9ea",
+    "revision": "08/2025",
+    "read": "Pediatric/adverse/overdose/dosage/storage/IFU text lines137\u2013296 read. Earlier warnings/interactions remain.",
+    "findings": "Sandoz solution starts 0.25% one drop BID, may increase to0.5%BID, potentially once-daily after control with pressure at different times. Specific IFU: shake once, press bottle bottom not sides, other medicines at least10min before/after, upright15\u201330C light/freeze protection, opened until expiry. Do not apply these device instructions to every timolol bottle.",
+    "status": "Implemented and text reviewed in glaucoma-timolol-solution-review.json; remaining variants tracked there."
+  }
+}

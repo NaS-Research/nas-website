@@ -1,0 +1,106 @@
+{
+  "reviewDate": "2026-09-25",
+  "scope": "Partial product reconciliation, not module verification",
+  "sources": [
+    {
+      "product": "Rhopressa",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=7d4f0e3a-5b86-4c43-982a-813b22ae7e22",
+      "revision": "2026-01",
+      "sectionsRead": [
+        "2",
+        "5",
+        "6",
+        "8",
+        "12.1",
+        "16",
+        "17"
+      ],
+      "changes": [
+        "Added epithelial corneal edema warning and prompt symptom referral",
+        "Added evening dose, missed dose, and separate refrigerated versus room-temperature opened-bottle limits",
+        "Replaced search-only reference with product label"
+      ]
+    },
+    {
+      "product": "Xalatan",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a98595b3-9f47-48e0-b18d-550a2095f264",
+      "revision": "2023-05",
+      "sectionsRead": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "11",
+        "12",
+        "16",
+        "17"
+      ],
+      "changes": [
+        "Added dose, missed-dose approach, duplicate prostaglandin concern, intervals and storage",
+        "Specified active herpes/inflammation boundaries and macular risk",
+        "Added independent drop-volume example"
+      ]
+    },
+    {
+      "study": "Kazemi et al., 2018",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5995263/",
+      "sectionsRead": [
+        "Abstract",
+        "Methods study design",
+        "Table 1",
+        "Results through aqueous flow"
+      ],
+      "changes": [
+        "Preserved additional mechanism discussion while distinguishing exploratory findings from label mechanism; 11 randomized, 10 completed"
+      ]
+    }
+  ],
+  "independentCalculations": [
+    {
+      "expression": "0.005 g / 100 mL \u00d7 1000 mg/g",
+      "result": "0.05 mg/mL"
+    },
+    {
+      "expression": "0.05 mg/mL \u00d7 1000 mcg/mg",
+      "result": "50 mcg/mL"
+    },
+    {
+      "expression": "1.5 mcg/drop / 50 mcg/mL",
+      "result": "approximately 0.03 mL/drop"
+    },
+    {
+      "expression": "0.05 mL/drop \u00d7 50 mcg/mL",
+      "result": "2.5 mcg/drop; illustrates why a universal volume misstates this label estimate"
+    }
+  ],
+  "clinicalQuestionReview": [
+    "glaucoma-pharmacotherapy-053",
+    "glaucoma-pharmacotherapy-054",
+    "glaucoma-pharmacotherapy-055",
+    "glaucoma-pharmacotherapy-056"
+  ],
+  "assessmentBrowserValidation": {
+    "desktopAttempts": 45,
+    "mobileAttempts": 19,
+    "targetsCoveredPerViewport": 5,
+    "targets": "053\u2013056 and miostat-route",
+    "checks": [
+      "rendered stems and choices",
+      "correct and incorrect scoring",
+      "keyed answer highlighting",
+      "rationale rendering",
+      "review links"
+    ],
+    "pageErrors": 0,
+    "horizontalOverflow": false
+  },
+  "limits": [
+    "Existing generated distractors can reuse edited concept text; whole-bank clinical reconciliation remains pending",
+    "No whole-module verification or production build claimed",
+    "Other glaucoma products and all chapter topics remain open"
+  ],
+  "fileHashes": {
+    "src/data/modules/glaucomaPharmacotherapy.js": "d6bae12fc6f6a1231203d77cb2aeed5aafdd66678d61cfe1f3bab178ade57b1d",
+    "src/data/questionBanks/glaucomaPharmacotherapy.js": "20773360ce9b88e4c4ea817200b1b164eb73d7d5355780d5358801e66c1bf09a"
+  }
+}
