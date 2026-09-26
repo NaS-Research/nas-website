@@ -1,0 +1,109 @@
+{
+  "date": "2026-09-26",
+  "status": "verified",
+  "book": {
+    "printedPage": 550,
+    "pdfPage": 558,
+    "scope": "Printed page 550 / PDF page 558 text and full-page rendered image read, including the dandruff narrative and shampoo table.",
+    "discrepancies": [
+      "Book blanket daily shampoo/five-minute contact instructions cannot replace product-specific directions.",
+      "Current roflumilast foam coverage is beyond the 2023 book and was preserved and checked."
+    ]
+  },
+  "readScope": "All nine lessons, embedded checks, diagram definitions and renderer read. Original 116 items reviewed before rewrite. Final explicit 117-question bank read in full, including all choices, keys, rationales and lesson anchors, on 2026-09-26; no material clinical issue remaining in this module.",
+  "roflumilast": {
+    "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f9e0b4a9-a227-4947-b00c-41fb18d16589",
+    "label": "Revised6/2026, DailyMed updated9/2/2026",
+    "scope": "Current label clinical sections, patient insert and full textual IFU read. All five IFU illustrations viewed through browser on 2026-09-26: nozzle preparation, shaking, full inversion, scalp/face and body application. No images copied into curriculum.",
+    "changes": "Added explicit metabolic-interaction categories, mild versus moderate/severe hepatic distinction, pregnancy/labor/lactation precautions and common adverse reactions.",
+    "remaining": "None for the claims taught. Pigment outcomes are qualified in the source record; no drug-specific pigment response rate inferred from pooled small subgroups.",
+    "efficacy": "STRATUM week-8 IGA success (clear/almost clear plus >=2-grade improvement) 79.5% active vs 58.0% vehicle; label adjusted difference 20.6 percentage points is CMH-stratified and must not be presented as raw subtraction. No efficacy percentage added to teaching yet.",
+    "pigmentSourceFollowup": "Read complete STRATUM pigment conference abstract P10.04, CDA 2025, DOI 10.1177/12034754251341249. It reports improvement in both vehicle and active groups, small baseline pigment subgroups, and some new pigment changes. Its aggregate resolution percentages cannot be taught as a drug-specific response rate. No promised pigment clearance or quantitative pigment benefit added."
+  },
+  "validation": "Module-scoped assessment audit passes 117 questions with no hard errors, source gaps or thin lessons. Final webpack production build passes 557 pages. git diff --check passes. Actual browser review performed at 1440x1000 and 390x844 CSS viewport dimensions; no document or figure horizontal overflow. Nine embedded checks and ten randomized practice answers produced expected feedback. Final gel instruction and 117-item count confirmed in rebuilt DOM. No deployment performed.",
+  "shampooReview": {
+    "date": "2026-09-26",
+    "sources": [
+      "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a17b7424-ee7e-4fcc-b6b3-0904932ae319",
+      "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eef13684-751f-47e1-b75e-3401a0e6e20f"
+    ],
+    "changes": [
+      "Added product-specific Nizoral 1% age, schedule, technique and stop rules; current March 2026 label confirms prior directions.",
+      "Added ciclopirox volume, three-minute contact, four-week course and reassessment; distinguished adult indication from trial ages in lessons and question concepts.",
+      "Replaced generic ciclopirox search reference with exact label."
+    ],
+    "remaining": "Closed by formulationReview and otcReview; instructions reconciled product by product."
+  },
+  "formulationReview": {
+    "date": "2026-09-26",
+    "scope": "Read AAD treatment, self-care and morphology prose; ketoconazole 2% shampoo and cream clinical labeling; foam administration/safety/patient instructions; Xolegel sections 1-8 and mechanism. Final Xolegel patient instructions reviewed: three-hour washing restriction and twenty-minute sunscreen/makeup interval added with an original calculation case.",
+    "changes": [
+      "Explicit off-label scalp use versus labeled tinea-versicolor course for 2% shampoo.",
+      "Added separate cream, foam and gel schedules, age/immunocompetence limits and flammability/foam handling.",
+      "Distinguished pigment from erythema.",
+      "Added four original clinical application questions with same-topic alternatives."
+    ],
+    "discrepancies": [
+      "AAD treatment page updated May 2024 says ketoconazole gel twice weekly; manufacturer Xolegel prescribing information states once daily for two weeks. Label governs dosing.",
+      "AAD describes ciclopirox approval from age 16, whereas cited current generic professional indication says adults and trial population starts at 16. Preserve distinction.",
+      "AAD cites pigment improvement with roflumilast; prior journal description of pigment claim as unsupported was too broad. Diagram now avoids promising pigment clearance; original trial pigment endpoints still to verify."
+    ],
+    "sources": [
+      "https://www.aad.org/public/diseases/a-z/seborrheic-dermatitis-treatment",
+      "https://www.aad.org/public/diseases/a-z/seborrheic-dermatitis-self-care",
+      "https://www.aad.org/public/diseases/a-z/seborrheic-dermatitis-symptoms",
+      "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00c1cac8-a865-4583-aaba-3a0f21fb31e6",
+      "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=bf3e48fd-e063-42e6-acd1-580ddc6e93be",
+      "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=513370d5-2e9f-4677-a0f2-63ff76142909",
+      "https://almiralladvantage.com/wp-content/uploads/2023/06/Xolegel_USPI_final_Dec2019.pdf"
+    ]
+  },
+  "assessmentReview": {
+    "finding": "Rotated distractors are often true and can also be reasonable answers to broad best-action or assessment stems. Clinical keys are not sufficiently discriminating throughout the generated bank.",
+    "changes": "All 112 generated questions replaced by explicit original cases preserving stable IDs and anchors. Five new formulation/application cases added; final bank 117.",
+    "remaining": "None. Full final bank clinically read; nine embedded checks and one randomized ten-question application attempt verified separately.",
+    "numericalCheck": "Ciclopirox Monday/Thursday yields three days then four days between applications, satisfying the minimum three-day interval; labeled 5 mL initial amount and up to 10 mL for long hair checked against label. Xolegel case: 7:00 AM plus 20 minutes is 7:20 AM; plus three hours is 10:00 AM. These are different restrictions and not shampoo hold times."
+  },
+  "otcReview": {
+    "sources": [
+      "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=c0e4f8cb-74fc-4c0d-9721-f87aa2aa1992&version=13",
+      "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=35430ff4-d4ff-4102-a352-69496ff5b709",
+      "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=3c11da1d-0b24-743a-e063-6394a90a0699",
+      "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=61bf3788-b1e8-4d7e-ac56-cf209ba39085"
+    ],
+    "scope": "Selenium Drug Facts, T/Sal Drug Facts, zinc directions, coal tar warnings read.",
+    "changes": "Added selenium rinse-time distinction for chemically treated/gray hair and coal tar 24-hour sunburn/combination-therapy precautions; exact primary references added."
+  },
+  "differentialReview": {
+    "source": "https://www.cdc.gov/ringworm/treatment/",
+    "date": "2026-09-26",
+    "scope": "Scalp treatment and steroid cautions read; also read CDC clinical overview diagnostic testing recommendation.",
+    "change": "Added explicit scalp ringworm systemic-treatment and steroid-masking teaching to support the differential questions.",
+    "limitation": "CDC public page also lists Xolegel among nonprescription ringworm options; that unrelated list conflicts with its prescription seborrheic-dermatitis labeling and is not adopted. Product-label restrictions govern ketoconazole gel teaching."
+  },
+  "calcineurinReview": {
+    "date": "2026-09-26",
+    "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6601e43e-ce7d-446a-8568-8e7b24b86f06",
+    "scope": "Pimecrolimus boxed warning, indication, dosing and full warnings through 5.6 read. Tacrolimus label located and relevant warning/indication text checked.",
+    "changes": "Added balanced malignancy-warning language, limits on continuous treatment, pimecrolimus immune-status and infection precautions, and UV advice."
+  },
+  "visualRoutingReview": {
+    "date": "2026-09-26",
+    "finding": "Shared phenotype-differential visual ID caused both seborrheic dermatitis and alopecia diagrams to render in either module. Generic IDs also risk other cross-module collisions.",
+    "change": "Namespaced all nine seborrheic visual IDs with sebderm-, preserving lesson URLs and question anchors. The module renderer can now select only the intended visual component.",
+    "remaining": "None. Reciprocal alopecia route has its nine intended diagrams without the seborrheic differential figure; this routing check does not verify the alopecia module clinical content.",
+    "validation": "Both module routes inspected after namespacing. Seborrheic route has exactly nine intended figures, including PDE4. All nine embedded checks and one ten-item shuffled practice attempt returned expected keys, explanations and anchors."
+  },
+  "uiReview": {
+    "date": "2026-09-26",
+    "desktop": "1440x1000 CSS viewport. Repeated sidebar navigation from differential to PDE4 and back to shampoo reached target top ~112px; rail stayed at112px and correct gold item highlighted. Earlier footer screenshot did not recur after settled navigation; no shared navigation change made.",
+    "mobile": "390x844 CSS viewport confirmed; document scrollWidth390 and all nine figures without horizontal overflow. Mobile headings and body wrap legibly. Active horizontal contents rail and floating save/tools can overlap content at some scroll positions; content remains scroll-accessible. This pre-existing shared layout limitation is not certified fixed by the content commit.",
+    "practice": "Nine embedded checks and one ten-item practice attempt returned expected feedback. This does not substitute for final full-bank clinical review.",
+    "console": "No browser error logs on final review; temporary viewport override reset."
+  },
+  "infantReview": {
+    "source": "https://www.aad.org/public/everyday-care/hair-scalp-care/scalp/treat-cradle-cap",
+    "date": "2026-09-26",
+    "scope": "Full clinical self-care and referral text read. Added fragrance-free baby shampoo, non-food-based oil before washing, no picking, and specific referral signs. Removed blanket referral for every infant from maintenance lesson."
+  }
+}
