@@ -3,6 +3,7 @@ html:has(.module-contents),
 body:has(.module-contents) { overflow-x: clip; overflow-y: visible; }
 .nas-page:has(.module-contents) { overflow: clip; }
 .pharmacy-module-layout:has(.module-contents) { align-items: start; }
+.module-contents-slot { align-self: stretch; min-width: 0; }
 .pharmacy-module-nav.module-contents {
   position: sticky;
   top: 7rem;
@@ -11,6 +12,7 @@ body:has(.module-contents) { overflow-x: clip; overflow-y: visible; }
   max-height: none;
   min-width: 0;
 }
+.pharmacy-module-nav.module-contents--pinned { position: fixed; z-index: 20; }
 .module-contents > p { color: #b99375; }
 .pharmacy-module-nav.module-contents nav {
   position: relative;
@@ -46,6 +48,7 @@ body:has(.module-contents) { overflow-x: clip; overflow-y: visible; }
   transition: transform 320ms cubic-bezier(.22, 1, .36, 1), width 320ms ease, height 320ms ease;
 }
 @media (max-width: 860px) {
+  .module-contents-slot { display: contents; }
   .pharmacy-module-nav.module-contents {
     top: 5rem;
     z-index: 20;

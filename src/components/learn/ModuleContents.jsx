@@ -7,7 +7,47 @@ export default function ModuleContents({ sections }) {
   const items = [...sections, { slug: "module-test", title: "Module practice" }];
   const [active, setActive] = useState(sections[0]?.slug);
   const nav = useRef(null);
+  const slot = useRef(null);
+  const rail = useRef(null);
   const [marker, setMarker] = useState(null);
+
+  useEffect(() => {
+    let frame;
+    const update = () => {
+      frame = undefined;
+      const column = slot.current;
+      const contents = rail.current;
+      if (!column || !contents) return;
+      const bounds = column.getBoundingClientRect();
+      const inset = 7 * parseFloat(getComputedStyle(document.documentElement).fontSize);
+      const pinned = window.innerWidth > 860 && bounds.top <= inset;
+      contents.classList.toggle("module-contents--pinned", pinned);
+      if (pinned) {
+        // The slot reserves the original column. Stop at the end of the lessons
+        // so the fixed rail never covers the references or footer.
+        contents.style.left = `${bounds.left}px`;
+        contents.style.width = `${bounds.width}px`;
+        contents.style.top = `${Math.min(inset, bounds.bottom - contents.offsetHeight)}px`;
+      } else {
+        contents.style.removeProperty("left");
+        contents.style.removeProperty("width");
+        contents.style.removeProperty("top");
+      }
+    };
+    const schedule = () => { if (!frame) frame = requestAnimationFrame(update); };
+    const observer = new ResizeObserver(schedule);
+    if (slot.current) observer.observe(slot.current);
+    if (rail.current) observer.observe(rail.current);
+    update();
+    window.addEventListener("scroll", schedule, { passive: true });
+    window.addEventListener("resize", schedule);
+    return () => {
+      cancelAnimationFrame(frame);
+      observer.disconnect();
+      window.removeEventListener("scroll", schedule);
+      window.removeEventListener("resize", schedule);
+    };
+  }, []);
 
   useEffect(() => {
     let frame;
@@ -55,7 +95,7 @@ export default function ModuleContents({ sections }) {
     return () => observer.disconnect();
   }, [active]);
 
-  return <aside className="pharmacy-module-nav module-contents" aria-label="Module contents">
+  return <div ref={slot} className="module-contents-slot"><aside ref={rail} className="pharmacy-module-nav module-contents" aria-label="Module contents">
     <p>In this module</p>
     <nav ref={nav} aria-label="Module sections">
       {marker && <span className="module-contents__marker" aria-hidden="true" style={{ transform: `translate(${marker.x}px, ${marker.y}px)`, width: marker.width, height: marker.height }} />}
@@ -64,5 +104,5 @@ export default function ModuleContents({ sections }) {
         <span>{title}</span>
       </a>)}
     </nav>
-  </aside>;
+  </aside></div>;
 }
