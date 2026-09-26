@@ -1,0 +1,119 @@
+{
+  "module": "pinworm-infection",
+  "reviewDate": "2026-09-26",
+  "status": "verified",
+  "book": {
+    "edition": "2023 RxPrep",
+    "printedPages": [
+      556
+    ],
+    "pdfPages": [
+      564
+    ],
+    "inspection": "Private page image previously rendered and read including pinworm paragraph, diagnosis and medication table."
+  },
+  "baseline": {
+    "lessons": 9,
+    "preexistingChanges": "Module, question bank and visual clean before this review.",
+    "review": "All nine original lessons and embedded checks, all nine diagrams, all 30 baseline concepts and all four assessment-generation dimensions read."
+  },
+  "correctionsImplemented": [
+    "Namespaced visual IDs to avoid special-populations collisions.",
+    "Distinguished CDC repeat dosing from OTC physician-directed repeat requirement and EMVERM three-week uncured retreatment language.",
+    "Clarified exact pyrantel base calculation versus package weight-band chart, shaking, meals and under-two/under-25-pound boundary.",
+    "Specified CDC third-trimester pinworm pregnancy advice and individualized lactation evidence.",
+    "Replaced 120 templated assessment items with 26 original cases.",
+    "Made albendazole off-label pinworm use and indication-dependent food instructions explicit.",
+    "Aligned all nine diagram captions with label/guideline distinctions.",
+    "Added albendazole pregnancy testing and contraception duration, and qualified short takeaway/embedded hygiene wording."
+  ],
+  "sourcesRead": [
+    {
+      "url": "https://www.cdc.gov/pinworm/hcp/clinical-overview/index.html",
+      "scope": "Full clinical overview including doses, pregnancy, lactation and pediatric discussion. Retired pregnancy letters and apparent ivermectin wording error in pyrantel paragraph are not reproduced."
+    },
+    {
+      "url": "https://www.cdc.gov/pinworm/prevention/index.html",
+      "scope": "Full April 2026 prevention guidance."
+    },
+    {
+      "url": "https://www.cdc.gov/pinworm/diagnosing/index.html",
+      "scope": "Full diagnostic collection guidance."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=e862b337-2991-4b56-8584-fd80dccd725f&version=16",
+      "scope": "Current December 2025 label: full warnings, directions, weight-band chart, concentration and storage."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=a8c46363-f739-4f6e-bca8-1ce5e8d3f78d",
+      "scope": "Clinical prescribing text reviewed; manufacturer current professional page links this August 2021 label, confirming the reference used. No stock availability claim."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=6c48fd89-cb40-477c-8a78-15cbe0df6faa",
+      "scope": "Full clinical prescribing text through pharmacology, microbiology, storage and patient counseling read. Label revised July 2026; current archive version 43. No systemic-infection laboratory monitoring schedule imported as a routine short-pinworm requirement."
+    },
+    {
+      "url": "https://www.emvermhcp.com/",
+      "scope": "Manufacturer professional page inspected; its Full Prescribing Information link points to the same DailyMed August 2021 label reviewed here. No local pharmacy stock claim made."
+    },
+    {
+      "url": "https://www.cdc.gov/dpdx/enterobiasis/index.html",
+      "scope": "Biology, life cycle, presentation and laboratory diagnosis text read; supports rapid egg maturation, colonic adults, rare genital involvement and diagnostic sampling. Published review date August 2019; treatment remains based on newer CDC guidance."
+    }
+  ],
+  "bookDiscrepancies": [
+    "Book frames persistence as frequent resistance; module prioritizes reinfection, missed dosing and exposure review, consistent with CDC.",
+    "Book high-fat albendazole advice is for systemic infection; pinworm uses CDC empty-stomach regimen.",
+    "OTC label repeat requirement and mebendazole retreatment language distinguished explicitly from CDC two-week regimen."
+  ],
+  "validation": {
+    "clinicalCompletion": true,
+    "calculation": "30 kg x 11 mg/kg = 330 mg base; 330/50 = 6.6 mL. Reviewed package band 63-87 lb instead gives 375 mg = 7.5 mL; lesson now distinguishes the calculation context.",
+    "independentArithmetic": {
+      "exact": "30*11/50=6.6 mL",
+      "capped": "min(110*11,1000)/50=20 mL",
+      "band": "375/50=7.5 mL",
+      "dates": "October 1 + 14 days = October 15; +14 days = October 29"
+    },
+    "structuralAudit": "Final shared-worktree audit: /private/tmp/burn-original-cases-audit.log. 34 pre-existing hard errors outside pinworm; zero pinworm errors.",
+    "syntax": "node --check question bank and git diff --check passed.",
+    "build": "Final shared-worktree production build exit 0: /private/tmp/burn-original-cases-build.log; pinworm source unchanged since this build.",
+    "browser": {
+      "status": "passed",
+      "previewPort": 3144,
+      "desktop": {
+        "viewport": "1280x720",
+        "documentWidth": 1280,
+        "figures": 9,
+        "inspection": "Dose lesson heading, active left navigation and typography visually inspected. Exact dose check 6.6 mL submitted with correct feedback and arithmetic rationale."
+      },
+      "mobile": {
+        "viewport": "390x844",
+        "documentWidth": 390,
+        "figures": 9,
+        "figureWidth": 350,
+        "figuresOverflow": false,
+        "inspection": "Dose lesson, four-node calculation figure in two columns and practice choices inspected."
+      },
+      "practice": {
+        "bank": 26,
+        "draw": 10,
+        "answered": 10,
+        "expectedCorrect": 9,
+        "expectedIncorrect": 1,
+        "observed": "Nine Correct and one Review this concept. Deliberate 6.6 mL package-band response corrected to 7.5 mL, with matching rationale; review link returned to pyrantel-pharmacology."
+      },
+      "consoleErrors": [],
+      "screenshot": "/private/tmp/pinworm-desktop-verified.png"
+    }
+  },
+  "openWork": [],
+  "assessmentReview": {
+    "baseline": "Read all 30 concepts and all four generation dimensions (120 assembled questions); distractors came from unrelated concepts.",
+    "replacement": "26 original cases, all 104 choices, all keys and 26 rationales independently reread from final file on 2026-09-26. Made the swallowing case explicitly age six to remove an ambiguous age boundary.",
+    "coverage": "All nine lessons represented, including exact base calculation, cap, package band, age/weight thresholds, repeat authorization, drug interaction, pregnancy, breastfeeding, household dates and diagnostic reassessment."
+  },
+  "visualReview": "Read all nine diagrams. Clarified clinician-selected calculation versus package bands, CDC versus EMVERM retreatment, physician-directed OTC repeat and hygiene duration. Desktop and mobile rendering now inspected; all nine figures present without horizontal overflow.",
+  "crossModuleReview": "Searched all other src/data/modules and src/data/questionBanks for pyrantel, mebendazole and albendazole; no duplicate medication claims found.",
+  "finalContentReview": "Nine lesson bodies and nine embedded checks reread; 26 case stems, 104 choices, 26 answer keys/rationales reread; all nine diagrams read. Independent arithmetic and dates verified. Final edits specify age six in tablet case, physician-directed repeat in takeaways, full hygiene window and albendazole reproductive precautions."
+}
