@@ -988,8 +988,8 @@
         548,
         553
       ],
-      "status": "reviewing",
-      "subsectionsComplete": false,
+      "status": "verified",
+      "subsectionsComplete": true,
       "subsections": [
         {
           "topic": "Ophthalmic and otic formulations, route, abbreviations, drop volume",
@@ -997,11 +997,14 @@
             540,
             540
           ],
-          "status": "mapped",
+          "status": "verified",
           "targets": [
             "common-eye-conditions",
             "common-ear-conditions",
             "glaucoma-pharmacotherapy"
+          ],
+          "evidence": [
+            "ch38-formulation-review.json"
           ]
         },
         {
@@ -1157,13 +1160,15 @@
         "Expanded topiramate-associated effusion versus pupillary block into a dedicated lesson, visual, embedded check and four specific assessment cases; other glaucoma mechanisms and treatment guidance remain under review.",
         "2026-09-26: Glaucoma module now verified across seven lessons and 139 questions; completion record supersedes earlier glaucoma-only remaining-work statements. Common eye, common ear and mixed chapter subsections remain incomplete.",
         "2026-09-26: Common Eye verified: 12 lessons, 142 passages, 174 assessment questions, 12 diagrams. Ear topics and mixed route subsection remain incomplete. Completion record supersedes earlier Common Eye-only pending statements.",
-        "2026-09-26: Common Ear verified across eight lessons, 45 passages and 46 cases. Mixed route/formulations/drop-volume subsection remains open."
+        "2026-09-26: Common Ear verified across eight lessons, 45 passages and 46 cases. Mixed route/formulations/drop-volume subsection remains open.",
+        "2026-09-26: Mixed formulation subsection reconciled against actual Eye/Ear/Glaucoma content; ointment technique expanded and validated. All listed chapter subsections now verified. Historical open statements are superseded by the three module completion records and this formulation addendum."
       ],
       "evidence": [
         "eyes-ears-ch38.md",
         "glaucoma-completion-review.json",
         "common-eye-completion-review.json",
-        "common-ear-completion-review.json"
+        "common-ear-completion-review.json",
+        "ch38-formulation-review.json"
       ]
     },
     {

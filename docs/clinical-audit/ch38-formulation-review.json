@@ -1,0 +1,32 @@
+{
+  "date": "2026-09-26",
+  "status": "verified",
+  "bookScope": "Chapter 38 printed page 540 formulation box and route abbreviations read in full.",
+  "findings": [
+    "Route distinction and full-site abbreviation teaching are covered in Common Ear.",
+    "Glaucoma already teaches Xalatan approximate drop volume and product-specific Timoptic-XE handling. Independently recalculated 1.5/50 = 0.03 mL; 0.05*50 = 2.5 mcg.",
+    "Common Eye already contains product-specific suspension/emulsion/gel instructions. Added general ointment site, delivery and transient-blur teaching plus an original case."
+  ],
+  "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=a98595b3-9f47-48e0-b18d-550a2095f264",
+    "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a4d03de7-06b7-4cfc-9d1b-616969df209c",
+    "https://medlineplus.gov/druginfo/meds/a613017.html"
+  ],
+  "sourceScope": "Read indexed primary Xalatan description, Timoptic-XE preparation/dose text and MedlinePlus ointment administration/precautions. FDA 2023 quality document opened and identified as draft, not used as a binding current dose standard. Full MedlinePlus bacitracin page clinical text subsequently read, including ocular versus eyelid application and vision/lens precautions.",
+  "remaining": [],
+  "validation": {
+    "structural": "175 questions; no hard errors or source gaps. Existing neonatal topic-count advisory unchanged.",
+    "browser": "New case covered in 3 desktop and 18 mobile randomized attempts. Stem, choices, scoring, explanation, review anchor and incomplete-submit gating passed; no errors or overflow.",
+    "visual": "New ointment row completely visible and inspected in desktop 1440x1000 and mobile 390x844 captures.",
+    "build": "Isolated npm run build exited 0; /private/tmp/ch38-formulations-build.log.",
+    "scripts": [
+      "/private/tmp/eye-ointment-case.mjs",
+      "/private/tmp/eye-ointment-preview.mjs"
+    ]
+  },
+  "sourceHashes": {
+    "src/data/modules/commonEyeConditions.js": "1f16f46eec466da89109b0a53d7bd00fe337c993b8c7d21270e2028e6a06c777",
+    "src/data/questionBanks/commonEyeConditions.js": "fb578883c29b5ce9651a62fbfb2d66e7f7fbe9976e9071e0d531f0146a6271c6"
+  },
+  "moduleAddendum": "Common Eye now has 143 teaching passages and 175 assessment questions. Existing completion evidence remains applicable to unchanged content; this record covers the addition."
+}

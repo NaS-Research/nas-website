@@ -457,3 +457,7 @@ Read all 46 revised bank cases with choices, keys and rationales. Added explicit
 ### 2026-09-26 — Common Ear module completion
 
 Common Ear is verified: eight lessons, 45 teaching passages, eight embedded checks, eight diagram data entries and 46 original focused assessment cases. Final referral/follow-up rendering, all embedded interactions and isolated production build passed. Three implementation files match the preview byte for byte. `common-ear-completion-review.json` supersedes earlier Ear pending notes and records exact source/validation limits. Mixed chapter formulations/drop-volume content remains open; no whole-chapter or independent pharmacist certification claimed.
+
+### 2026-09-26 — Chapter 38 formulation closure
+
+Reconciled page 540 route/abbreviation, drop-volume, suspension, gel and ointment material against actual module content and current sources. Independently confirmed Xalatan volume calculation; retained product-specific gel instructions. Added an ointment site/blur passage and original case. Desktop/mobile interaction and visual checks plus isolated build passed. Common Eye now has 143 passages and 175 cases. All chapter subsections are verified; `ch38-formulation-review.json` records the addendum and supersedes mixed-subsection pending notes.

@@ -1076,3 +1076,18 @@ commonEyeConditionsQuestionBank.push({
   "lesson": "inflammation-steroid-boundaries",
   "reviewHref": "#inflammation-steroid-boundaries"
 });
+
+commonEyeConditionsQuestionBank.push({
+  "id": "common-eye-ointment-vision",
+  "question": "After applying a prescribed ophthalmic ointment, a patient has temporary blurred vision and plans to drive immediately. What should the pharmacist advise?",
+  "choices": [
+    "Wait until vision is clear before driving; persistent or concerning change needs assessment",
+    "Drive immediately because topical treatment cannot affect vision",
+    "Rinse the eye with tap water after every dose",
+    "Add extra ointment until the blur disappears"
+  ],
+  "answer": 0,
+  "rationale": "Ophthalmic ointment can temporarily blur vision. The patient should avoid tasks requiring clear vision until it returns; persistent or concerning symptoms should not be dismissed.",
+  "lesson": "ophthalmic-dosage-technique",
+  "reviewHref": "#ophthalmic-dosage-technique"
+});
