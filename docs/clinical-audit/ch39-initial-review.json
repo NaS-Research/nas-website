@@ -1,0 +1,562 @@
+{
+  "date": "2026-09-26",
+  "status": "reviewing",
+  "bookRead": "Printed pages 546-547 text read: skin background, natural products, medication discoloration list and acne introduction. Remaining extracted pages 548-563 have not yet been read in this pass. Original diagrams not visually inspected yet. Printed page 548 text and full page rendering now inspected, including treatment algorithm and topical product table. Printed page 549 oral-treatment and cold-sore text read; its table image still needs inspection. Page 550 text only partially read.",
+  "curriculumRead": "Acne overview and first two complete lessons with concepts, application, passages, key points and embedded checks read. Remaining lessons, diagrams and full bank not yet read. Next three lessons read in full: topical retinoids, topical combinations and clascoterone. All remaining Acne lessons now read in full; oral-antibiotic lesson reread separately after combined output truncation.",
+  "reviewQuestions": [
+    "Check book blanket topical-retinoid breastfeeding avoidance against agent-specific current pregnancy/lactation evidence.",
+    "Verify current acne guideline strength and product-specific regimens, including hormonal treatment and iPLEDGE changes.",
+    "Map natural-product and medication-discoloration content beyond Acne; do not lose these chapter topics."
+  ],
+  "privateExtraction": "/private/tmp/rxprep-ch39.txt",
+  "remaining": [
+    "Read remainder of chapter and visually inspect its clinical tables/figures.",
+    "Complete subsection mapping and current primary-source review.",
+    "Review actual corresponding modules and all assessment/visual material before verification.",
+    "Review other potential book-table discrepancies: dapsone G6PD language, combination-product mixing/storage, Duobrii indication, and exact retinoid age/vehicle directions."
+  ],
+  "confirmedDiscrepancies": [
+    "Printed page 548 transposes Azelex and Finacea strengths; directly confirmed in page image. Added accurate 20% cream versus 15% gel and acne versus rosacea labeled indication distinctions."
+  ],
+  "sources": [
+    "https://www.aad.org/member/clinical-quality/guidelines/acne",
+    "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=ebdfcaf7-b5d6-47e1-be87-ccaba4b97e75",
+    "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=9f40cd45-58a6-4376-9220-84bfe7d7e358&type=display"
+  ],
+  "sourceReadScope": "AAD guideline highlights read; full guideline not yet read. Azelex full clinical labeling through storage read. Finacea gel displayed highlights and sections 1-8.1 read; remaining label not yet read. Alternate recently indexed Finacea set ID failed access and was not relied on.",
+  "implementation": "Added two original teaching passages and an original strength/indication case. Clinical module remains reviewing; additions await render and browser validation.",
+  "azelaicValidation": {
+    "browser": "New case passed in 7 desktop and 2 mobile randomized attempts, with stem/choice/scoring/rationale/anchor/gating checks. No errors or overflow.",
+    "visual": "All four product-row captures inspected at desktop/mobile; complete target text readable.",
+    "scripts": [
+      "/private/tmp/acne-azelaic-case.mjs",
+      "/private/tmp/acne-azelaic-preview.mjs"
+    ]
+  },
+  "dapsoneReview": {
+    "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cbf9e81e-00ef-4218-975e-6a1610b7f1dd",
+    "scope": "June 2025 label highlights and clinical sections through nonclinical section 13 read. Later clinical studies, storage and patient labeling not yet read. Storage, professional counseling and patient information through application instructions subsequently read; remaining patient safety text still pending. Patient leaflet breastfeeding wording is stricter than professional section 8.2 and needs explicit reconciliation.",
+    "finding": "Book blanket G6PD avoidance differs from the topical label risk/contraindication distinction. No prior dapsone coverage in Acne lessons, bank or visual.",
+    "change": "Added two passages and an original urgent-symptom case. Rendering and interaction verification pending; whole module remains reviewing.",
+    "validation": "New case passed desktop in 5 and mobile in 3 randomized attempts, checking scoring, choices, rationale, review anchor and gating. Four passage screenshots fully visually inspected. No page errors or horizontal overflow."
+  },
+  "ipledgeReview": {
+    "source": "https://www.fda.gov/drugs/postmarket-drug-safety-information-patients-and-providers/ipledge-risk-evaluation-and-mitigation-strategy-rems",
+    "readScope": "Full displayed FDA update page, including June 16, February 9, 2026 and October 2023 text. Live REMS materials not yet reviewed.",
+    "change": "Added explicit November 15, 2026 delayed implementation date, distinction from approval, and pregnancy-test transition boundaries plus original case.",
+    "validation": "REMS and capsule cases passed browser checks: desktop 20 and mobile 7 randomized attempts; six screenshots captured but not yet visually inspected."
+  },
+  "isotretinoinProductReview": {
+    "source": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/021951s031SDN611lbl.pdf",
+    "scope": "August 2026 FDA label highlights, boxed warning, indication and beginning of dosing read; whole label not yet read. Current DailyMed indexed dosing/administration passage also reviewed. FDA PDF screenshot failed; not claimed inspected. Downloaded FDA PDF to /private/tmp/absorica-2026.pdf; read full sections 1-5.9 including dose tables, treatment duration, contraindications, REMS, psychiatric warnings, pancreatitis, lipids and hearing. Remaining label sections pending. Continued reading sections 5.10-8.4 through the initial pediatric indication paragraph; sections 8.4 remainder onward still pending. Full displayed adverse-reaction list and interaction sections read. Contraception passage reread separately after combined output truncation. Completed the remaining prescribing-information text through section 17, including pediatric, geriatric, overdose, ingredients, pharmacology, nonclinical findings, clinical efficacy table, storage and counseling. Molecular structure and clinical-trial figure not yet visually inspected; separate Medication Guide and live REMS remain pending.",
+    "bookEvidence": "Printed page 549 visually inspected in /private/tmp/rxprep-549.png; confirms puncture/sprinkle and blanket food instructions in oral retinoid table.",
+    "correction": "Added exact Absorica/LD dose, food, substitution and capsule-integrity distinctions plus original case. No home capsule opening recommended. Added baseline lipid/liver monitoring and explicit stopping actions for major warning symptoms. Added follow-up liver testing, alcohol-related lipid-test timing, hepatic stopping criteria, ocular/GI urgent actions, musculoskeletal assessment and formulation-specific tartrazine risk. New changes await rendered verification. Added original blood-donation, storage, lactation and separate pregnancy-prevention counseling plus a night-vision warning case.",
+    "remaining": "Review separate Medication Guide, live REMS and clinical figures; validate newest passages. Guideline e18 differentiates superficial/nonablative procedures from full-face dermabrasion and ablative laser, unlike broad product-label restriction; lesson refers for individualized specialist assessment.",
+    "visualValidation": "All six prior REMS, dose and capsule captures now visually inspected at desktop/mobile; target passages fully readable. These captures predate the newest monitoring and counseling additions, which remain to be rendered."
+  },
+  "visualRead": "All nine Acne diagram data entries read in full. No diagram edit made in this pass; source reconciliation remains pending.",
+  "assessmentReview": {
+    "status": "reviewing",
+    "scope": "All 113 materialized questions, choices, keys and rationales have now been read, including separately reread item 048. Reading is not final clinical verification; full product and guideline reconciliation remains pending.",
+    "findings": [
+      "014 offered a valid specific combination as a competing answer to the general combination principle.",
+      "023 had two valid maintenance assessments.",
+      "044 had two valid topical-antibiotic resistance hazards.",
+      "067 had overlapping valid response-monitoring choices.",
+      "078 offered a broadly valid reassessment/referral alternative; replaced with a specific refractory scarring presentation.",
+      "096 offered two closely related valid hygiene/irritation hazards; replaced with a counseling case."
+    ],
+    "changes": "Materialized the 113-item bank as explicit reviewable objects and replaced 014, 023, 044 and 067 with original focused decision questions. All existing concept coverage retained. Remaining ambiguity review, clinical source reconciliation and browser validation pending. Replaced 078 and 096 with focused cases; total remains 113.",
+    "sources": [
+      "https://www.aad.org/member/clinical-quality/guidelines/acne"
+    ],
+    "validation": {
+      "script": "/private/tmp/acne-revised-cases.mjs",
+      "desktop": "25 randomized attempts; all seven targeted cases seen",
+      "mobile": "22 randomized attempts; all seven targeted cases seen",
+      "checks": "Actual rendered stems, choices, mixed correct/incorrect scoring, answer mapping, explanations, review anchors and incomplete-submit gating passed. No page errors or horizontal overflow.",
+      "runtime": "Initial launch failed with legacy Node 16 module handling. Rerun using bundled current Node completed successfully."
+    }
+  },
+  "guidelineAccess": {
+    "status": "pending",
+    "finding": "Publisher-indexed correction text identifies an incorrect concentration on original page 1006.e10. Exact corrected concentration still unavailable; do not infer it. PubMed confirms DOI 10.1016/j.jaad.2026.04.009, PMID 41999378, July 2026 page 347.",
+    "correction": "https://www.sciencedirect.com/science/article/pii/S0190962226005463",
+    "fullGuideline": "https://doi.org/10.1016/j.jaad.2023.12.017",
+    "access": "Publisher fulltext and correction direct retrieval returned 403. Search identified author-associated educational PDF copies for follow-up.",
+    "candidate": "https://www.livderm.org/wp-content/uploads/2025/03/04a_Thu_1040am_Keri_Acne-Vulgaris.pdf",
+    "candidateReview": "Both Keri educational PDFs are slide decks, not the full guideline. Text reviewed; not treated as full guideline evidence. Publisher fulltext/PDF and abstract routes for correction returned 403. No clinical change based on unknown correction.",
+    "fullCopy": "/private/tmp/aad-acne-2024.pdf",
+    "extraction": "/private/tmp/aad-acne-2024.txt",
+    "readScope": "Read full text of published pages e1-e10, including scope, methods, diagnosis/testing, recommendation tables and topical treatment discussion. Figure 1 on e6 remains to be visually reviewed. Pages e11 onward pending. Subsequently read e11-e16 in full and e17 through the paragraph beginning laboratory monitoring; remaining e17 onward pending. Table IV text read, but its 2016 contraceptive classifications require current CDC reconciliation. Completed clinical narrative through e20 summary and read disclosures through the beginning of e21. Remaining disclosures/references not yet read; figure and supplemental evidence tables not yet fully inspected.",
+    "newDiscrepancy": "Original guideline page e10 states BP 2.5%/adapalene 1% gel. Current Epiduo label specifies adapalene 0.1%/BP 2.5%. This is a confirmed independent labeling discrepancy, but the unavailable erratum text has not yet been proved to address this exact sentence. The same paragraph lists dapsone 5% age 9+, which also needs formulation-specific label reconciliation.",
+    "labelCheck": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a0610f87-3b39-458a-afa3-66be1fefd1de",
+    "latestCorrectionAttempt": "2026-09-26: direct browser visit to ScienceDirect correction reached a CAPTCHA. No CAPTCHA attempted. Exact correction remains unread; independent product-label strength checks remain valid."
+  },
+  "guidelineImplementation": {
+    "change": "Added targeted culture/endocrine evaluation passage and original Gram-negative folliculitis assessment case.",
+    "source": "Reynolds et al. 2024, pages e5-e6; DOI 10.1016/j.jaad.2023.12.017",
+    "status": "Implemented; browser and visual validation pending. Bank now 114 questions.",
+    "interpretation": "Guideline supports avoiding routine testing while evaluating specific atypical or endocrine presentations. No universal laboratory panel introduced.",
+    "additionalChanges": "Added typical 3-4-month antibiotic limit with individualized exceptions; identified spironolactone acne use as off-label; added COC response window and clarified that selection is not restricted to hormonally patterned lesions. Added diet/supplement evidence-limit counseling and procedural referral with label versus specialist-guidance distinction. No blanket claim that all procedures are safe after isotretinoin."
+  },
+  "contraceptionSourceReview": {
+    "source": "https://www.cdc.gov/contraception/hcp/usmec/combined-hormonal-contraceptives.html",
+    "scope": "Current 2024 U.S. MEC overview, category definitions and initial postpartum rows read. Remaining condition-specific rows still pending.",
+    "reason": "2024 acne guideline Table IV reproduces 2016 MEC; use current CDC categories for any detailed contraindication teaching."
+  },
+  "expandedPassageValidation": {
+    "script": "/private/tmp/acne-expanded-preview.mjs",
+    "viewports": [
+      "1440x1000",
+      "390x844"
+    ],
+    "scope": [
+      "monitoring baseline",
+      "stop-treatment warnings",
+      "urgent symptoms",
+      "musculoskeletal/ingredient risks",
+      "donation/storage/lactation",
+      "targeted testing",
+      "diet/supplements",
+      "procedures"
+    ],
+    "result": "All 16 screenshots visually inspected. Each target heading and full passage readable in its capture. No page errors or horizontal overflow. This is passage rendering verification, not final module accuracy or production-build completion.",
+    "captures": "/private/tmp/acne-expanded-{baseline,stopping,urgent,muscle,counsel,tests,diet,procedures}-{desktop,mobile}.png"
+  },
+  "clascoteroneReview": {
+    "source": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=1673a84b-7f5c-47ab-a99c-1e3db21a6a09&type=display",
+    "scope": "Full prescribing-information text including safety and efficacy tables, all clinical sections and patient information read. Chemical structure/carton images not inspected. Displayed PI revision July 2022; current listing indexed January 2025.",
+    "changes": "Corrected HPA observation to adults and adolescents, added withdrawal action, strengthened avoidance of damaged skin, added predispensing versus home storage and earlier-of-two discard deadlines plus original case.",
+    "calculation": "180 - 160 = 20 days remaining from dispensing; this is earlier than one month after opening. No equivalence of one month to 30 days asserted.",
+    "validation": "New passages/case await desktop/mobile checks. Module remains reviewing."
+  },
+  "topicalCombinationReview": {
+    "date": "2026-09-26",
+    "sources": [
+      {
+        "label": "DailyMed. Epiduo 0.1%/2.5% prescribing information, June 2026",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a0610f87-3b39-458a-afa3-66be1fefd1de"
+      },
+      {
+        "label": "Duobrii prescribing information",
+        "href": "https://www.duobrii.com/globalassets/bhc/pi/duobrii-pi.pdf"
+      }
+    ],
+    "readScope": "Epiduo highlights and sections 1-8.5 read; subsequent output partly truncated, so full remaining label not claimed read. Storage and counseling lines 281-314 read. Duobrii manufacturer label highlights and sections 1-5.4 through initial sun-exposure discussion read. Remaining label pending.",
+    "findings": [
+      "Duobrii placement in book acne table conflicts with labeled adult plaque psoriasis indication and facial application restriction.",
+      "Epiduo label confirms adapalene 0.1%, not 1%; this resolves the product strength independently of the still-unread AAD erratum."
+    ],
+    "changes": "Added two original passages, two primary references and one indication/substitution case. Bank now 116.",
+    "validation": "Structural audit passed all 116 questions without errors. Both new passages rendered on desktop 1440x1000 and mobile 390x844; all four screenshots visually inspected, complete target text readable, no page errors or horizontal overflow. Script /private/tmp/acne-combinations-preview.mjs. New assessment case interaction validation remains pending; module remains reviewing."
+  },
+  "antibioticCombinationReview": {
+    "date": "2026-09-26",
+    "sources": [
+      {
+        "label": "DailyMed. BenzaClin kit prescribing information",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/getFile.cfm?setid=4c6b2aca-d940-42af-a068-418f015d277a"
+      },
+      {
+        "label": "DailyMed. Benzamycin kit prescribing information",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/getFile.cfm?setid=c8c05e98-ec28-4636-8e5c-9a2557483e3c"
+      }
+    ],
+    "readScope": "Both labels clinical text from description through dosing, preparation and storage read, including clinical data, precautions, pregnancy/lactation and pediatric sections. Chemical structure/carton images not inspected.",
+    "bookReconciliation": "Printed page 548 correctly distinguishes refrigerated Benzamycin and room-temperature BenzaClin, both three months after mixing. Its combined direction to top up with purified water must not be generalized to Benzamycin; Benzamycin specifies 70% ethyl alcohol.",
+    "implementation": "Added product-specific preparation/storage/application teaching and topical clindamycin contraindication/colitis precautions. Product-specific label instructions retained; no assumption about all generic combinations.",
+    "validation": "All three passages rendered at desktop 1440x1000 and mobile 390x844. Six screenshots visually inspected; complete target text readable. No page errors or horizontal overflow. Script /private/tmp/acne-antibiotic-combinations-preview.mjs. Module-wide clinical reconciliation still pending."
+  },
+  "latestCaseValidation": {
+    "script": "/private/tmp/acne-latest-cases.mjs",
+    "cases": [
+      "acne-targeted-culture",
+      "acne-winlevi-discard",
+      "acne-duobrii-indication"
+    ],
+    "result": "Passed: all three cases encountered in 4 desktop and 36 mobile randomized attempts. Stems, choices, mixed scoring, answer mapping, explanations, review anchors and incomplete-submit gating checked. No page errors or horizontal overflow."
+  },
+  "retinoidProductReview": {
+    "date": "2026-09-26",
+    "sources": [
+      {
+        "label": "DailyMed. Aklief prescribing information",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/getFile.cfm?setid=62d910db-85a6-4696-b69b-4bd2f3080cfc&type=pdf"
+      },
+      {
+        "label": "DailyMed. Arazlo prescribing information",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/getFile.cfm?setid=d941ff25-c221-4a55-8012-0dcf3bbcbbd1"
+      }
+    ],
+    "readScope": "Aklief and Arazlo full professional clinical text sections 1-17 and complete patient information read, including efficacy and safety tables. Chemical structure and carton images not inspected.",
+    "changes": "Added exact product application, reproductive and storage distinctions. Removed universal pea-sized instruction from retinoid application and embedded check.",
+    "bookDiscrepancy": "Blanket topical-retinoid lactation avoidance does not match these labels individualized benefit-risk approach. Pregnancy precautions retained.",
+    "validation": "Structural audit passed 116 questions. Three new passages rendered and all six desktop/mobile screenshots visually inspected; complete target text readable, no page errors or horizontal overflow. Script /private/tmp/acne-retinoids-preview.mjs. Four bank choices also updated from universal pea-sized wording to product-specific amount; their browser revalidation remains pending."
+  },
+  "additionalTopicalsReview": {
+    "date": "2026-09-26",
+    "sources": [
+      {
+        "label": "DailyMed. Amzeeq 4% foam prescribing information",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=cc251492-977b-4eb1-a088-a90831324bad"
+      },
+      {
+        "label": "DailyMed. Dapsone 5% gel prescribing information, July 2026",
+        "href": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=0f1301f6-884d-4fc7-a5b2-421b2375b985"
+      }
+    ],
+    "readScope": "Amzeeq full professional sections 1-17 read; patient information lines 426-432 not returned, remaining displayed patient safety and instructions-for-use text read; images not inspected. Dapsone 5% sections 1-12 and section 13 through first female fertility paragraph read; remainder pending. Subsequently completed remaining dapsone 5% professional and patient information text through line 540; all clinical text now read. Its patient leaflet advises choosing treatment or breastfeeding, while professional section describes missing topical milk data and oral infant risks; integrate explicit counseling in next reconciliation.",
+    "changes": "Added four formulation-specific passages. Confirmed guideline e10 dapsone age statement conflicts with 5% label.",
+    "validation": "Four new passages rendered desktop/mobile, all eight screenshots visually inspected. Target text readable, no page errors or horizontal overflow. Script /private/tmp/acne-extra-topicals-preview.mjs. Whole-module verification pending."
+  },
+  "hormonalSafetyReview": {
+    "date": "2026-09-26",
+    "sources": [
+      {
+        "label": "CDC. 2024 U.S. MEC: combined hormonal contraceptives",
+        "href": "https://www.cdc.gov/contraception/hcp/usmec/combined-hormonal-contraceptives.html"
+      },
+      {
+        "label": "Pfizer. Aldactone prescribing information, November 2025",
+        "href": "https://labeling.pfizer.com/ShowLabeling.aspx?id=520"
+      }
+    ],
+    "readScope": "CDC categories, smoking, hypertension and migraine rows including clarifications read. Initial breastfeeding/postpartum rows read; remainder of CDC table still pending. Aldactone highlights and professional sections 1-11 plus 12.1 read; sections 12.2 onward pending. AAD potassium monitoring recommendation and discussion reread in full guideline extraction.",
+    "changes": "Added specific MEC eligibility examples and spironolactone contraindications; reconciled healthy acne guideline potassium monitoring with broader product label schedule.",
+    "validation": "Four changed passages inspected on desktop 1440x1000 and mobile 390x844: eight acne-hormonal screenshots in private temporary directory; readable, no browser errors or horizontal overflow. Structural audit passed 116 bank questions. Subsequent BP threshold wording clarified systolic OR diastolic and mmHg; desktop/mobile rerender inspected and readable on 2026-09-26."
+  },
+  "dapsoneLactationReconciliation": {
+    "date": "2026-09-26",
+    "source": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=0f1301f6-884d-4fc7-a5b2-421b2375b985",
+    "readScope": "Reread professional section 8.2 and approved patient information breastfeeding instruction. Professional labeling lacks topical milk data; oral risk evidence and patient advice kept distinct.",
+    "change": "Added original counseling passage to topical-combination lesson; recommends discussing alternative regimen with prescriber.",
+    "validation": "Structural audit passed: 116 questions, no hard errors/source gaps. Inspected four screenshots of corrected MEC and new lactation passages at desktop 1440x1000/mobile 390x844; all passage text readable, no page errors or horizontal overflow. Artifacts: /private/tmp/acne-counseling-{mec,lactation}-{desktop,mobile}.png. Module remains reviewing."
+  },
+  "sarecyclineReview": {
+    "date": "2026-09-26",
+    "source": "https://www.dailymed.nlm.nih.gov/dailymed/getFile.cfm?setid=b200957c-3004-4988-be97-9fd619a83649&type=pdf",
+    "readScope": "Full professional sections 1-17 and complete patient information text read; chemical and package images not inspected.",
+    "changes": "Added original weight-band dosing, indication/age, food/fluid, 12-week reassessment, reproductive planning, interactions, symptom action and storage teaching.",
+    "validation": "Structural assessment audit passed 116 questions with no hard errors/source gaps. All three added passages visually inspected at 1440x1000 and 390x844; six screenshots /private/tmp/acne-sarecycline-{0,1,2}-{desktop,mobile}.png show readable complete target passages. No page errors or horizontal overflow. Module remains reviewing.",
+    "remaining": "Doxycycline and minocycline product review, assessment coverage, and full module validation remain. Solodyn historical label located but not yet read."
+  },
+  "minocyclineReview": {
+    "date": "2026-09-26",
+    "source": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/050808s028lbl.pdf",
+    "readScope": "2025 FDA full professional label sections 1-17 read. Some trial-table numerals and chemical description are corrupted in text extraction; visual verification remains pending. Separate approved patient leaflet was not included in this 13-page PDF. Historical 2011 repackaged label sections 1-8.1 read for comparison; superseded for teaching.",
+    "changes": "Added product-specific ER dose, administration, renal modification and safety monitoring, including four-day post-treatment lactation interval.",
+    "discrepancies": "2025 label removes old low-dose oral-contraceptive interaction subsection; do not copy 2011 backup-contraception rule as current. Current dosing table includes 135 mg but strengths section lists only 55/65/80/105/115; exact availability requires confirmation, so no claim that all historical brand strengths remain marketed.",
+    "validation": "116-question structural audit passed. Four desktop/mobile screenshots of both new passages inspected: /private/tmp/acne-minocycline-{0,1}-{desktop,mobile}.png; target passages readable, no page errors or horizontal overflow. Module remains reviewing.",
+    "remaining": "Confirm separate current patient leaflet and inspect PDF tables with corrupted extracted text. Doxycycline product review and remaining module assessment/visual reconciliation remain."
+  },
+  "doxycyclineReview": {
+    "date": "2026-09-26",
+    "sources": [
+      "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=f234f419-42da-4a6d-82c6-92106cd77c67",
+      "https://www.cdc.gov/contraception/hcp/usmec/combined-hormonal-contraceptives.html"
+    ],
+    "readScope": "Lupin full professional sections 1-17 and IFU text read, images pending. CDC antimicrobial rows including broad-spectrum antibiotics and rifampin/rifabutin reviewed. AAD doxycycline discussion reread.",
+    "changes": "Added product-specific administration, safety and guideline reconciliation of contraceptive warning.",
+    "discrepancies": [
+      "Label highlights reverse the 150 mg tablet thirds: full section 2.1 and IFU correctly give two-thirds=100 mg and one-third=50 mg; independently checked arithmetic 150*2/3=100 and 150/3=50. Do not copy incorrect highlights.",
+      "Label general adult infection regimen is not used as a universal acne dosing recommendation. Acne dose selection still needs direct clinical-dose source reconciliation.",
+      "Label oral contraceptive warning differs from CDC 2024 category 1 broad-spectrum antibiotics guidance; lesson prioritizes current contraceptive evidence."
+    ],
+    "validation": "116-question structural audit passed with no hard errors or source gaps. Six screenshots inspected for all three new passages at desktop 1440x1000 and mobile 390x844: /private/tmp/acne-doxycycline-{0,1,2}-{desktop,mobile}.png. Full target paragraphs readable, no page errors or horizontal overflow. Acne remains reviewing.",
+    "remaining": "Doxycycline acne-dose teaching, other formulations when relevant, assessment application and full Acne completion checks."
+  },
+  "antibioticAssessmentReview": {
+    "date": "2026-09-26",
+    "newCases": [
+      "acne-sarecycline-weight",
+      "acne-doxycycline-contraception",
+      "acne-solodyn-splitting"
+    ],
+    "review": "Independently reconciled 54 kg to the inclusive 33-54 kg band; tested distinction from next 55 kg band. Contraceptive case excludes missed doses and gastrointestinal illness to isolate the drug interaction. Solodyn case tests formulation-specific integrity.",
+    "validation": {
+      "structural": "119 questions; no hard errors or source gaps",
+      "browser": "All seven targets encountered and checked in 16 desktop and 25 mobile randomized attempts. Actual stems/choices, mixed correct/incorrect scoring, explanations, answer highlighting, review anchors and incomplete-submit gating passed; no page errors or horizontal overflow.",
+      "script": "/private/tmp/acne-antibiotic-cases.mjs"
+    },
+    "targetIds": [
+      "acne-006",
+      "acne-034",
+      "acne-058",
+      "acne-086",
+      "acne-sarecycline-weight",
+      "acne-doxycycline-contraception",
+      "acne-solodyn-splitting"
+    ]
+  },
+  "currentAcneState": {
+    "asOf": "2026-09-26",
+    "status": "verified",
+    "lessons": 9,
+    "assessmentQuestions": 119,
+    "note": "acneCompletion supersedes earlier chronological pending statements for Acne only. Other chapter 39 modules and gaps remain open.",
+    "remaining": [],
+    "commitStatus": "Ready for narrow audit-branch commit and push."
+  },
+  "isotretinoinMedicationGuideReview": {
+    "date": "2026-09-26",
+    "source": "https://dailymed.nlm.nih.gov/dailymed/medguide.cfm?setid=3ef0cff8-19c1-4441-b780-fca6c7ee1615",
+    "readScope": "Complete June 2026 Medication Guide text, including ingredients, read from current August 2026 DailyMed label.",
+    "changes": "Added explicit pregnancy-prevention timeframe and failure response, per-prescription dispensing safeguards; strengthened muscle/joint symptom stopping instruction to match patient guide.",
+    "liveProgram": "Public homepage program-change modal and pharmacy requirements inspected in browser at https://ipledgeprogram.com/#Main/Pharmacies. Confirmed November 15, 2026 changes are future; current public pharmacy page requires enrollment, maximum 30-day supply, documented RMA and do-not-dispense-after date. Pharmacist-guide link opened no readable document in available tab; full guide still pending. No login or account changes.",
+    "validation": "Six target-passage screenshots and two retinoid-diagram screenshots inspected in the preceding review session at desktop 1440x1000 and mobile 390x844. Files rechecked present on 2026-09-26: /private/tmp/acne-isotretinoin-final-{pregnancy,dispensing,muscle}-{desktop,mobile}.png and /private/tmp/acne-retinoid-diagram-{desktop,mobile}.png. Target content readable; script reported no page errors or horizontal overflow. This is targeted validation, not whole-module completion."
+  },
+  "retinoidDiagramAmountReview": {
+    "date": "2026-09-26",
+    "change": "Replaced Pea-sized exposure with Product-specific amount in AcneVisual.jsx to agree with formulation-specific lesson directions.",
+    "validation": "Desktop and mobile retinoid-diagram screenshots inspected in preceding session; files remain present.",
+    "status": "corrected"
+  },
+  "finaceaRemainingLabelReview": {
+    "date": "2026-09-26",
+    "source": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=89ab8a10-bead-465c-9f24-02afa5aaec3c",
+    "edition": "January 2025 labeling, repackager copy; not evidence of current package availability.",
+    "readScope": "Full prescribing text sections 1 through 17, including previously outstanding 8.2 onward and patient counseling, read. Tables inspected as extracted text; chemical structure image not inspected.",
+    "findings": [
+      "Existing lesson correctly distinguishes Finacea 15% rosacea indication from off-label acne use.",
+      "Current lactation text does not require automatic cessation of breastfeeding: systemic absorption unlikely to alter milk concentration; individualized benefit-risk assessment. Older label copies contain different language.",
+      "Rosacea trial findings must not be represented as acne efficacy trials. Pediatric safety/effectiveness not established for labeled Finacea use.",
+      "Storage 25 C with excursions 15-30 C; this does not replace separate Azelex directions."
+    ],
+    "action": "No existing Finacea passage correction required from this review. Retain source distinctions in subsequent final consistency review.",
+    "referenceUpdate": "Updated module reference from January 2020 repackaged label to the January 2025 label read in this review."
+  },
+  "dapsoneRemainingLabelReview": {
+    "date": "2026-09-26",
+    "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cbf9e81e-00ef-4218-975e-6a1610b7f1dd",
+    "readScope": "Sections 14, 16, 17 and complete patient information including safety, storage and ingredients read. Earlier clinical sections were previously reviewed.",
+    "findings": "Patient leaflet cyanosis/hemolysis stopping instructions and breastfeeding advice agree with the revised lessons. Two 12-week vehicle-controlled trials support efficacy; no assertion of superiority to other acne drugs added. Storage 20-25 C, excursions 15-30 C, protect from freezing.",
+    "status": "remaining text reviewed; no new correction required"
+  },
+  "aldactoneRemainingLabelReview": {
+    "date": "2026-09-26",
+    "source": "https://labeling.pfizer.com/ShowLabeling.aspx?id=520",
+    "edition": "November 2025",
+    "readScope": "Remaining text from sections 12.2 through 17 read; also reread sections 7 and 8. Heart-failure figures not inspected here and not used as acne efficacy evidence.",
+    "changes": [
+      "Added consistent relationship to meals for Aldactone administration.",
+      "Added lithium exposure/toxicity monitoring interaction to existing contraindications and interactions passage."
+    ],
+    "validation": "119-question structural assessment audit passed without hard errors or source gaps. Four screenshots inspected: /private/tmp/acne-spironolactone-final-{food,lithium}-{desktop,mobile}.png. Target passages readable at 1440x1000 and 390x844; browser reported no page errors or horizontal overflow.",
+    "scopeLimit": "Acne remains reviewing; this does not establish final module verification."
+  },
+  "epiduoRemainingLabelReview": {
+    "date": "2026-09-26",
+    "source": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a0610f87-3b39-458a-afa3-66be1fefd1de",
+    "scope": "Full professional and patient-information text now read, including previously outstanding middle sections, clinical tables and storage. Molecular drawings not inspected.",
+    "finding": "Current lesson agrees on concentration, age, frequency, region-specific amount, irritation response, damaged skin/waxing precautions and storage. June 2026 professional label still contains legacy pregnancy-category wording; do not convert that letter into modern clinical advice. No new change required."
+  },
+  "amzeeqRemainingPatientReview": {
+    "date": "2026-09-26",
+    "source": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=cc251492-977b-4eb1-a088-a90831324bad",
+    "scope": "Previously missing patient-information lines 426-432 read; complete patient text, IFU text and counseling reread. IFU pictures not inspected.",
+    "finding": "Existing lesson correctly distinguishes oral-class warning evidence from foam risk; confirms no breastfeeding, timing, water avoidance and pharmacy versus patient storage. No new correction required."
+  },
+  "chapter39Pages550To552Mapping": {
+    "date": "2026-09-26",
+    "scope": "Read extracted book text on printed pages 550-552 (PDF pages 558-560). Images and OCR-ambiguous table alignment remain pending. Module identifiers and lesson headings inspected for mapping only.",
+    "reviewQuestions": [
+      "Verify each dandruff shampoo contact time and frequency separately; book directions must not be generalized across products.",
+      "Distinguish atopic dermatitis from the broader eczema category; reconcile systemic steroid and antihistamine recommendations against current AD guidance.",
+      "Verify finasteride/minoxidil formulation and population-specific instructions, and bimatoprost interaction wording.",
+      "Verify hyperhidrosis site, age, anticholinergic contraindications and newer options.",
+      "Check tinea distribution/differential, transmissibility and systemic treatment for scalp disease against current sources."
+    ],
+    "status": "mapped; not clinically verified"
+  },
+  "doxycyclineAcneDoseReview": {
+    "date": "2026-09-26",
+    "sources": [
+      "https://www.nice.org.uk/guidance/ng198/chapter/Recommendations",
+      "AAD 2024 guideline doxycycline discussion, private extracted text lines 985-1011"
+    ],
+    "sourceAccess": "Resolved by direct browser inspection of NICE NG198 Recommendations, last updated 3 August 2026. Read recommendations 1.5.1, table 1, 1.5.12-13 and the oral lymecycline/doxycycline definition; confirms 100 mg daily and 12-week review. Web fetch 403 did not prevent browser access.",
+    "change": "Added attributed NICE dose example, formulation/patient caveat and AAD uncertainty about comparative doses. Added NICE reference.",
+    "validation": "119-question structural audit passed with no hard errors or source gaps. Desktop 1440x1000 and mobile 390x844 screenshots inspected: /private/tmp/acne-doxycycline-regimen-dose-{desktop,mobile}.png. Full target passage readable; no browser page errors or horizontal overflow.",
+    "remaining": "Whole-module review remains pending; NICE dose-source access is resolved."
+  },
+  "aadAlgorithmVisualReview": {
+    "date": "2026-09-26",
+    "source": "AAD 2024 acne guideline, Figure 1, printed 1006.e6, PDF page 6",
+    "artifact": "/private/tmp/aad-acne-algorithm-review.png",
+    "scope": "Rendered at 1800 pixels and visually inspected all algorithm branches, recommendation-color legend and footnotes.",
+    "findings": [
+      "Routine microbial/endocrine testing not indicated; targeted testing remains appropriate when warranted.",
+      "Combined topical mechanisms, benzoyl peroxide with antibiotics and limited systemic antibiotic exposure agree with module.",
+      "Doxycycline strong recommendation; minocycline, sarecycline and hormonal options conditional.",
+      "Potassium monitoring depends on patient risk; isotretinoin laboratory emphasis is liver tests and lipids, alongside pregnancy prevention.",
+      "Isotretinoin candidates include psychosocial burden or scarring; daily dosing preferred over intermittent."
+    ],
+    "scopeLimit": "Figure inspected, not reproduced. Guideline erratum and supplements remain outstanding."
+  },
+  "aadSupplementReview": {
+    "date": "2026-09-26",
+    "source": "https://data.mendeley.com/datasets/z2bmdwwdf9/2",
+    "version": "2, 30 January 2024, DOI 10.17632/z2bmdwwdf9.2",
+    "file": "/private/tmp/aad-acne-supplement-2024.pdf",
+    "extraction": "/private/tmp/aad-acne-supplement-2024.txt",
+    "pages": 700,
+    "scope": "Contents and doxycycline-versus-placebo e-Table 36 text pages 258-267 read; first table page visually inspected at /private/tmp/aad-acne-doxy-evidence.png. Forest-plot captions 267-272 read, figures not yet inspected.",
+    "findings": [
+      "Doxycycline treatment-success and GI-effect estimates match guideline narrative; wide uncertainty in several other outcomes means absence of significance is not proof of equivalence.",
+      "Supplement pages 261-262 attribute 100 mg/day to Skidmore 2003, but original study reports 20 mg twice daily. Do not use those table rows as 100 mg efficacy evidence. Existing NICE-attributed 100 mg example is independently supported.",
+      "Supplement IBD absolute-effect fields contain questionable direction/counts in extracted table; not used for clinical claims."
+    ],
+    "primaryDoseCheck": "https://jamanetwork.com/journals/jamadermatology/fullarticle/479281; https://pubmed.ncbi.nlm.nih.gov/12707093/",
+    "remaining": "Relevant supplemental figures and other clinical evidence tables remain to be reconciled; full supplement not claimed reviewed."
+  },
+  "standardIsotretinoinFormulationReview": {
+    "date": "2026-09-26",
+    "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=189c014a-1d66-4ba9-ae47-9ed6138ca82b",
+    "scope": "August 2026 label, updated September 11; highlights and professional sections 1, 2.1 and 2.2 including dose tables read. Full additional label not claimed reviewed.",
+    "change": "Added with-food formulation example and independent daily-to-divided-dose calculation contrasting standard capsule with Absorica LD.",
+    "arithmetic": "80 kg x 0.5 mg/kg/day = 40 mg/day = 20 mg BID; 80 kg x 0.4 mg/kg/day = 32 mg/day = 16 mg BID. Independently recomputed.",
+    "finding": "Dose tables include calculated amounts not available in this label strength list (20,30,40 mg); must not imply capsule division is allowed. Exact product/strength plan required.",
+    "validation": "Independent arithmetic and 119-question structural audit previously passed. On 2026-09-26, copied current module to private preview and visually inspected both new passages at 1440x1000 and 390x844 using the browser. Both fully readable; mobile document width equals viewport width (390px). This is passage-level validation, not whole-module completion."
+  },
+  "solodynCounselingFollowup": {
+    "date": "2026-09-26",
+    "source": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/050808s028lbl.pdf",
+    "scope": "Read sections 16 and 17 through the end of the 13-page professional label. This file does not contain a separate patient leaflet; that remains unreviewed. Clinical table image request did not produce a viewable image; no claim of visual verification.",
+    "correction": "Replaced severe-rash-only stopping wording with the label counseling instruction to stop and contact the clinician immediately at new skin redness. Also corrected a punctuation error in clascoterone local-irritation passage.",
+    "validation": "119 assessment items pass structural audit with no hard errors or source gaps. Corrected minocycline passage visually inspected in private preview at desktop 1440x1000 and mobile 390x844. Module remains reviewing."
+  },
+  "remainingChapterTextMapping": {
+    "date": "2026-09-26",
+    "scope": "Read complete extracted text for printed 553-562 / PDF 561-570, plus PDF571 which is the following pulmonary section divider. Existing sunscreen completion remains separate. Mapping uses actual module identifiers; not whole-module verification.",
+    "pending": [
+      "Visually inspect OCR-ambiguous antifungal and corticosteroid tables, clinical photographs and plant illustrations.",
+      "Finish background/natural-product/discoloration mapping and ensure Acne/cold-sore mappings are represented in chapter ledger.",
+      "Locate full urticaria coverage and verify current treatment sequence.",
+      "Reconcile blanket antifungal duration and systemic adverse-effect claims; distinguish terbinafine from azoles.",
+      "Verify pinworm retreatment rationale, lice product-specific retreatment, burn referral thresholds, wound moisture/antibiotic/debridement statements, and spider-risk claims against primary guidance."
+    ],
+    "confirmedDiscrepancies": [
+      {
+        "topic": "Vulvovaginal candidiasis",
+        "source": "https://www.cdc.gov/std/treatment-guidelines/candidiasis.htm",
+        "finding": "CDC defines recurrent VVC as at least three symptomatic episodes in less than one year, recommends seven-day topical azoles during pregnancy, and cautions that prior diagnosis does not ensure accurate self-diagnosis. Book uses a greater-than-four annual referral threshold and 7-10-day pregnancy phrasing.",
+        "existingContent": "Read actual vvc-diagnosis, vvc-treatment and vvc-recurrence lessons and pregnancy passage: current recurrence definition, pregnancy regimen and prompt evaluation for persistent/recurrent symptoms already present. Preserve these accurate passages. Full module/bank review still outstanding."
+      },
+      {
+        "topic": "Fingertip unit",
+        "source": "https://www.nhs.uk/medicines/hydrocortisone-for-skin/",
+        "finding": "NHS describes coverage approximately twice palm area; book extracted text says one adult hand. Existing fingertip-dosing lesson correctly uses approximately two adult handprints and 0.5 g. Independent embedded calculation 14 x 0.5 = 7 g confirmed. Book image still needs inspection to exclude OCR issue.",
+        "scope": "Targeted passage review only; no full steroid module verification."
+      }
+    ]
+  },
+  "steroidBookVisualReview": {
+    "date": "2026-09-26",
+    "pages": {
+      "printed": [
+        560,
+        561
+      ],
+      "pdf": [
+        568,
+        569
+      ]
+    },
+    "artifacts": [
+      "/private/tmp/rxprep-steroid-table-0568.png",
+      "/private/tmp/rxprep-steroid-table-0569.png"
+    ],
+    "scope": "Rendered and visually read both complete pages, including FTU illustration/caption and every potency-table row and category. Images remain private and are not reproduced in curriculum.",
+    "findings": [
+      "Confirmed book caption says one adult hand for approximately 0.5 g; this is not an OCR error. Existing NaS lesson uses approximately two adult handprints, consistent with the previously reviewed NHS coverage guidance. Preserve current lesson.",
+      "Book contains generalized vehicle ranking, once-daily high-potency instruction, universal two-week duration language and ointment reduced-absorption wording. Existing NaS vehicle/application lessons instead use exact product, disease and site; preserve those distinctions pending full source review.",
+      "Potency chart contains concentration/vehicle combinations and historical brands; exact current product labels must be checked before any table expansion. Reading the book chart is not validation of its potency assignments."
+    ],
+    "coverageGap": "No dedicated urticaria module or treatment lesson found. Searches for urticaria/hives and chronic spontaneous/idiopathic urticaria, omalizumab and fourfold dosing return scattered allergy/asthma mentions. Add a substantive urticaria pathway after current guideline and label review; must distinguish anaphylaxis, angioedema, acute versus chronic disease and escalation."
+  },
+  "ipledgePharmacyGuideReview": {
+    "date": "2026-09-26",
+    "source": "https://ipledgeprogram.com/ResourceDownloadRaw/PharmacyGuide/attachment",
+    "edition": "March 2023, currently returned by official resource endpoint",
+    "scope": "Read complete extracted guide text and visually read final page notice omitted by extraction. Current official program announcement also checked: implementation remains November 15, 2026.",
+    "change": "Added no automatic refills, specimen collection as day one of seven-day window for patients who can become pregnant, and RMA reversal/return to inventory for uncollected prescriptions. Added official guide reference.",
+    "limits": "Guide contains historical contraception durations and efficacy estimates: do not transfer those to current contraceptive counseling. Full remaining figures not claimed inspected. New passage UI validation pending.",
+    "validation": "Latest dispensing paragraph rendered in current production build and visually inspected desktop/mobile; new date and reversal cases checked in targeted preview; date case additionally passed current application randomized practice."
+  },
+  "finalBankContentPass": {
+    "date": "2026-09-26",
+    "scope": "Read all 119 stems, choices, keys, rationales and lesson anchors in current explicit bank, with repeated read of truncated 030-031. Reviewed against current module passages and previously documented primary-source findings.",
+    "finding": "Many original items are repetitive recognition prompts with off-topic distractors. Four isotretinoin items replaced with original applied cases; preserved stable IDs and lesson anchors.",
+    "changedItems": [
+      "acne-082",
+      "acne-083",
+      "acne-086",
+      "acne-087"
+    ],
+    "independentChecks": [
+      "Inclusive dates: September 10 through September 16 = seven days. Actual REMS authorization remains necessary.",
+      "80 x 0.5 = 40 mg/day; 40 / 2 = 20 mg per dose.",
+      "80 x 0.4 = 32 mg/day; 32 / 2 = 16 mg per dose."
+    ],
+    "pending": "Validate revised case rendering, scoring and explanations in browser; remaining module source/visual/build checks still apply.",
+    "validation": "119-item structural audit passed. Four revised items exercised together in a private targeted harness using the preview assessment component: all correct responses scored 4/4, explanations matched expected arithmetic/workflow, and unanswered submission was disabled. Desktop feedback and mobile calculation feedback visually inspected; mobile viewport/document both 390px. Harness uses older preview component, so current working-tree assessment integration remains a separate final check. Harness review links are not a navigation test."
+  },
+  "currentApplicationValidation": {
+    "date": "2026-09-26",
+    "build": "Current working tree: next build --webpack passed; compiled successfully, generated 557/557 pages, exit 0. Includes unrelated uncommitted application work; this is not evidence that those changes were clinically reviewed or authorized for this commit.",
+    "route": "Local production server http://127.0.0.1:3142/learn/pharmacy/modules/acne",
+    "checks": [
+      "Full rendered module text inspected, including latest dispensing paragraph and references.",
+      "All nine embedded checks answered with expected keys; each displayed Correct and its matching rationale.",
+      "One randomized ten-item module practice set answered and reviewed; all ten expected choices marked Correct, including new inclusive-date case acne-082.",
+      "Browser error log empty at end of interaction.",
+      "Latest dispensing passage inspected at 1440x1000 and 390x844. Mobile document width equals 390px viewport. Fixed utility overlays cover bottom-edge text temporarily while scrolling; paragraph remains scrollable."
+    ],
+    "visualContent": "Read all nine diagram data sets and render function; no new clinical mismatch against current lessons found. This does not claim fresh screenshots of every diagram at each viewport.",
+    "remaining": "Final source reconciliation and completeness report before marking Acne verified; no commit or push yet."
+  },
+  "contraceptionCoverageClosure": {
+    "date": "2026-09-26",
+    "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ef0cff8-19c1-4441-b780-fca6c7ee1615",
+    "reviewed": "Section 8.3 contraception table and Medication Guide medication reconciliation. Existing timing and pregnancy response retained.",
+    "changes": [
+      "Added accepted primary/secondary examples and explicit minipill distinction without excluding progestin IUDs or implants.",
+      "Added herbal medication reconciliation including St. John's wort.",
+      "Replaced repetitive acne-084 with an applied contraceptive-method case; stable ID and 119-item count preserved."
+    ],
+    "validation": "Targeted assessment audit passed: 119 questions, no hard errors, source gaps, size advisories or thin lessons. Read new stem, choices, key and rationale against the label. Rendered validation of this addition remains pending; earlier production build predates it. Latest working-tree production build passed, 557/557 pages. Restarted the known production server after detecting cached previous content. New heading and paragraph confirmed in fresh page, visually inspected at 1440x1000 and 390x844; mobile document width 390px. Existing fixed tools obscure some bottom-edge text temporarily during scrolling, as in prior checks. New acne-084 clinical text/key read and structural validation passed; not yet exercised in rendered randomized assessment."
+  },
+  "oralTreatmentTableVisualReview": {
+    "date": "2026-09-26",
+    "scope": "Full printed page 549 (PDF page 557) rendered privately and visually read, including oral acne table and cold-sore subsection.",
+    "findings": [
+      "Confirmed book table groups isotretinoin products under a food requirement and 0.5-1 mg/kg/day; existing revised lesson distinguishes Absorica LD and meal-independent Absorica products.",
+      "Confirmed book permits capsule puncture and sprinkling; revised lesson instead follows current whole-capsule labeling.",
+      "Confirmed book combines breastfeeding and blood-donation one-month intervals; revised lesson separates product-specific lactation interval from pregnancy and donation intervals.",
+      "Book warns against progestin-only contraception broadly in one row but specifies pills in counseling; new lesson distinguishes minipills from accepted implants and IUDs.",
+      "Cold-sore topical acyclovir cream/genital-site statement requires formulation-specific review in the corresponding module."
+    ],
+    "remainingAcneCoverage": "Assess book alternative oral antibiotic roles (TMP-SMX and erythromycin) against current guideline before closing completeness; minocycline immediate-release schedule is distinct from the current lesson's Solodyn regimen.",
+    "alternativeAntibioticsClosure": "Read 2024 AAD systemic-antibiotic considerations directly from retrieved full guideline: added evidence limitations for azithromycin/TMP-SMX, historical restricted roles, resistance and severe TMP-SMX safety concerns. No unsupported alternative dose added. Latest paragraph requires rendered check; prior build predates it."
+  },
+  "acneCompletion": {
+    "date": "2026-09-26",
+    "status": "verified",
+    "scope": "All nine current lessons, nine diagram data sets, nine embedded checks and all 119 explicit bank stems, options, keys and rationales reviewed. Book acne narrative and topical/oral tables reconciled with primary labeling and guideline findings recorded throughout this journal.",
+    "validation": [
+      "Targeted assessment audit: 119 items, no hard errors or source gaps.",
+      "Latest production build passed: 557/557 generated pages.",
+      "Latest alternative-antibiotic passage visually inspected at 1440x1000 and 390x844; mobile width 390px; browser error log empty.",
+      "Earlier current-application interaction validation exercised all nine embedded checks and a ten-item randomized practice set; earlier targeted case runs covered revised scoring and feedback.",
+      "Final acne-084 contraception case clinically and structurally checked; not separately selected in browser. Existing assessment component interaction coverage applies; no claim that all 119 questions were individually exercised in the UI."
+    ],
+    "limitations": [
+      "AAD 2026 erratum exact text inaccessible. Epiduo strength and dapsone age discrepancies independently resolved against product labels; no claim of reading the erratum.",
+      "This is an agent-performed clinical content review, not independent pharmacist certification.",
+      "Current application includes unrelated local work. Narrow content commit does not include or certify those changes.",
+      "Fixed application utilities can overlap bottom-edge content temporarily while scrolling; all reviewed text remains accessible."
+    ],
+    "coverageDecision": "Retained and expanded treatment classes, exact formulations with meaningful dose/age/storage differences, stewardship, reproductive safety, assessment and monitoring. Historical brand enumeration is not treated as an obligation to teach obsolete or interchangeable brand aliases; exact product verification is taught explicitly. Other chapter 39 topics remain outside this completed Acne scope."
+  }
+}
