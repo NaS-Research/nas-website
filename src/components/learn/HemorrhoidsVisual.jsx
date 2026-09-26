@@ -2,7 +2,7 @@ export const hemorrhoidsVisualTypes = [
   "anal-cushion-anatomy", "bleeding-differential", "bowel-mechanics", "protectants-astringents",
   "vasoconstrictors-anesthetics", "anti-inflammatory-safety", "dosage-form-technique",
   "thrombosis-prolapse-procedures", "monitoring-referral",
-];
+].map(type => `hemorrhoids-${type}`);
 
 const diagrams = {
   "anal-cushion-anatomy": ["Anorectal map", "Locate vascular cushions relative to the dentate line and predict bleeding, pain, prolapse, and thrombosis", ["Support", "Normal anal cushions", "Vascular tissue contributes to continence"], ["Internal", "Above dentate line", "Bleeding and prolapse can be painless"], ["External", "Below dentate line", "Somatic innervation makes thrombosis painful"], ["Distort", "Pressure and support failure", "Straining and bowel dysfunction amplify symptoms"]],
@@ -17,7 +17,7 @@ const diagrams = {
 };
 
 export default function HemorrhoidsVisual({ type }) {
-  const diagram = diagrams[type];
+  const diagram = diagrams[type?.replace(/^hemorrhoids-/, "")];
   if (!diagram) return null;
   const [eyebrow, title, ...nodes] = diagram;
   return <figure className="chol-visual hemorrhoids-visual" aria-label={title}>

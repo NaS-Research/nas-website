@@ -1,45 +1,437 @@
-const c = (name, lesson, principle, action, assessment, hazard, why) => ({ name, lesson, principle, action, assessment, hazard, why });
-
-const concepts = [
-  c("normal anal cushions", "anal-cushion-anatomy", "Anal cushions are normal vascular and connective tissues that contribute to continence before they become symptomatic", "Explain disease as displacement, congestion, prolapse, thrombosis, or irritation rather than the mere presence of veins", "Assess bleeding, pain, prolapse, thrombosis, bowel habits, pressure drivers, and continence", "Teaching that every anal cushion should be destroyed", "Normal anatomy becomes disease only when it produces symptoms or complications"),
-  c("dentate line", "anal-cushion-anatomy", "The dentate line separates visceral sensory territory above from somatic pain-sensitive tissue below", "Use location to predict why internal disease may bleed without pain while external thrombosis can be acutely painful", "Assess pain quality, lump location, prolapse, bleeding, tenderness, and examination findings", "Using pain intensity alone to grade internal hemorrhoids", "Innervation explains symptom differences"),
-  c("internal hemorrhoids", "anal-cushion-anatomy", "Internal hemorrhoids arise above the dentate line and commonly present with painless bright red bleeding or prolapse", "Classify prolapse by whether it reduces spontaneously, manually, or not at all", "Assess blood pattern, prolapse during defecation, spontaneous reduction, manual reduction, mucus, and soiling", "Assuming nonprolapsed internal disease should cause severe focal pain", "Internal location is relatively insensitive to cutting pain"),
-  c("external hemorrhoids", "anal-cushion-anatomy", "External hemorrhoids lie below the dentate line and can become tender when thrombosed", "Distinguish a soft external tag from an acute tense tender thrombosis", "Assess onset, duration, tenderness, color, lump size, skin integrity, fever, and fluctuance", "Calling every painful perianal mass an external hemorrhoid", "Abscess and other lesions require different care"),
-  c("bright red rectal bleeding", "bleeding-differential", "Bright red blood can occur with hemorrhoids but does not establish the diagnosis", "Arrange clinical evaluation when bleeding is new, recurrent, unexplained, substantial, or risk enriched", "Assess amount, frequency, stool mixing, toilet water, pain, bowel change, age, anemia, weight loss, and family history", "Offering indefinite OTC care without evaluating bleeding", "Hemorrhoids are common but can coexist with serious disease"),
-  c("melena and severe bleeding", "bleeding-differential", "Black tarry stool, maroon stool, hemodynamic symptoms, or heavy ongoing blood loss suggests bleeding beyond uncomplicated hemorrhoids", "Escalate urgently based on severity and instability", "Assess color, volume, clots, dizziness, syncope, pulse, blood pressure, abdominal pain, anticoagulants, and comorbidity", "Reassuring melena as an internal hemorrhoid", "Bleeding pattern and physiology change urgency"),
-  c("anorectal differential", "bleeding-differential", "Anal fissure, abscess, fistula, prolapse, dermatitis, inflammatory bowel disease, infection, polyps, and cancer can mimic hemorrhoid symptoms", "Use examination and selective endoscopic evaluation rather than stacking symptom products", "Assess tearing pain, fever, drainage, bowel change, abdominal symptoms, mass, trauma, sexual exposure, and systemic signs", "Calling fever with severe anal pain a hemorrhoid flare", "A painful infection can progress rapidly"),
-  c("fiber therapy", "bowel-mechanics", "Adequate fiber improves stool form and can reduce bleeding and straining", "Increase food fiber or a bulk-forming supplement gradually and pair it with an appropriate fluid plan", "Assess baseline intake, stool form, constipation, diarrhea, bloating, swallowing, fluid restriction, obstruction risk, and adherence", "Increasing psyllium without considering fluid or obstruction risk", "Fiber efficacy and safety depend on delivery"),
-  c("fluid and stool consistency", "bowel-mechanics", "A soft formed stool reduces shear and straining more effectively than either hard stool or uncontrolled diarrhea", "Individualize fluid and bowel therapy to comorbidity and the actual stool pattern", "Assess hydration, heart or kidney restrictions, stool frequency and form, laxatives, diarrhea, and urine output", "Giving generic high-fluid advice to a patient with strict fluid restriction", "Bowel support must fit the whole patient"),
-  c("toilet behavior", "bowel-mechanics", "Prolonged sitting and repeated straining increase pressure and tissue descent", "Respond to the urge, avoid force, and leave the toilet rather than using it as a prolonged seat", "Assess time on toilet, phone use, breath holding, incomplete evacuation, pelvic floor symptoms, and occupational access", "Focusing on medication while preserving prolonged straining", "Behavior can sustain the pressure mechanism"),
-  c("constipation and diarrhea", "bowel-mechanics", "Both hard infrequent stool and frequent irritating stool can worsen hemorrhoidal symptoms", "Treat the dominant bowel disorder and review causative medicines", "Assess opioids, anticholinergics, iron, laxatives, metformin, antibiotics, diet, travel, alarm symptoms, and stool pattern", "Assuming every patient needs a stool softener", "Treatment should match constipation, diarrhea, or neither"),
-  c("skin protectants", "protectants-astringents", "Petrolatum, mineral oil, zinc oxide, and related protectants can temporarily reduce moisture and friction on irritated perianal skin", "Apply externally as labeled after gentle cleansing and drying", "Assess exact active, external versus intrarectal labeling, dermatitis, stool leakage, frequency, and product overlap", "Inserting an external-only protectant because it is labeled hemorrhoidal", "Route is determined by the product label, not the category name"),
-  c("witch hazel", "protectants-astringents", "Witch hazel is an astringent that may temporarily relieve mild external irritation and itching", "Use gently as labeled and stop if burning, dryness, or dermatitis worsens", "Assess product alcohol and fragrance, wiping friction, skin breakdown, symptom severity, and duration", "Using repeated vigorous wiping as treatment", "Mechanical irritation can exceed the benefit"),
-  c("gentle hygiene", "protectants-astringents", "Water, mild cleanser when needed, and gentle patting protect perianal skin better than aggressive scrubbing", "Reduce fragranced wipes, harsh soap, and repeated rubbing", "Assess hygiene routine, moisture, leakage, bidet pressure, wipes, topical antibiotics, and contact allergens", "Interpreting a clean feeling as a reason to abrade the skin", "Overcleaning can cause or perpetuate pruritus"),
-  c("phenylephrine", "vasoconstrictors-anesthetics", "Phenylephrine is an alpha-1 agonist used for temporary local symptom relief through vasoconstriction", "Use only the labeled route, amount, frequency, and duration after cardiovascular and endocrine screening", "Assess hypertension, heart disease, thyroid disease, diabetes, prostate symptoms, interacting sympathomimetics, pregnancy, and bleeding", "Treating vasoconstriction as a cure for the underlying support defect", "The pharmacologic effect is temporary and symptomatic"),
-  c("pramoxine and local anesthetics", "vasoconstrictors-anesthetics", "Pramoxine and other local anesthetics reduce sensory signaling and may temporarily relieve pain or itching", "Select the labeled ingredient and avoid duplicate anesthetic products", "Assess allergy, broken skin, duration, numbness, dermatitis, product combinations, and symptom progression", "Using numbness to ignore worsening infection or thrombosis", "Analgesia can mask a changing diagnosis"),
-  c("combination products", "vasoconstrictors-anesthetics", "Hemorrhoid brand families often combine protectants, vasoconstrictors, astringents, counterirritants, or anesthetics", "Read every active ingredient and indication rather than relying on the brand name", "Assess duplicate actives, route, frequency, cardiovascular risk, allergy, steroid exposure, and total duration", "Assuming every Preparation H formulation contains the same ingredients", "Brand names do not define one pharmacologic product"),
-  c("hydrocortisone", "anti-inflammatory-safety", "Low-strength hydrocortisone can temporarily reduce inflammatory itching and swelling", "Use a thin labeled amount for a short course and stop when symptoms resolve or the label limit is reached", "Assess potency, external or intrarectal route, area, skin integrity, infection, bleeding, duration, and other steroids", "Continuing daily perianal steroid use for months", "Thin sensitive skin is vulnerable to steroid injury"),
-  c("steroid adverse effects", "anti-inflammatory-safety", "Prolonged or excessive corticosteroid use can cause atrophy, striae, pigment change, sensitization, infection masking, and systemic absorption", "Reassess persistent symptoms instead of escalating potency or duration", "Assess thinning, fissures, telangiectasia, candidiasis, bacterial signs, adrenal risk, and product duplication", "Adding a stronger steroid when the diagnosis is uncertain", "Persistent symptoms may reflect harm or another disease"),
-  c("external dosage forms", "dosage-form-technique", "Creams, ointments, gels, and wipes generally target external perianal symptoms when their labels specify external use", "Clean gently, pat dry, and apply the labeled amount to the external area", "Assess symptom location, dosage form, applicator, label route, frequency, hygiene, and contamination", "Using an external wipe deep inside the rectum", "Dosage form and labeling define safe delivery"),
-  c("intrarectal dosage forms", "dosage-form-technique", "Suppositories and labeled applicators can deliver ingredients intrarectally for internal symptoms", "Verify the product is intended for intrarectal use and teach gentle insertion without force", "Assess prolapse, severe pain, bleeding, obstruction, package integrity, insertion technique, and dose schedule", "Forcing a suppository through severe pain or an unknown mass", "Pain or resistance can signal a condition requiring examination"),
-  c("product-specific directions", "dosage-form-technique", "OTC anorectal products vary in age limits, routes, doses, frequencies, warnings, and maximum self-care duration", "Use the current Drug Facts label for the exact formulation", "Assess active ingredients, concentration, dosage form, patient age, pregnancy, comorbidity, route, frequency, and duration", "Borrowing directions from a different product in the same brand family", "Formulations with similar branding are not interchangeable"),
-  c("thrombosed external hemorrhoid", "thrombosis-prolapse-procedures", "An acute tender bluish external lump can represent thrombosis and may benefit from early surgical evaluation in selected patients", "Refer promptly when pain is severe, onset is recent, diagnosis is uncertain, or complications are present", "Assess exact onset, pain trajectory, lump, skin necrosis, bleeding, anticoagulants, pregnancy, fever, and abscess signs", "Incising or draining the lesion at home", "A thrombosed vein is not managed like an abscess"),
-  c("internal prolapse grading", "thrombosis-prolapse-procedures", "Internal prolapse ranges from bleeding without prolapse to spontaneous reduction, manual reduction, or irreducibility", "Use grade, symptoms, bowel mechanics, and patient goals to select office or operative care", "Assess prolapse with defecation, reduction, strangulation, mucus, leakage, bleeding, pain, and prior procedures", "Assigning grade from bleeding amount alone", "Prolapse behavior defines the grade"),
-  c("office procedures", "thrombosis-prolapse-procedures", "Rubber band ligation, sclerotherapy, and infrared coagulation treat selected internal hemorrhoids", "Refer symptomatic grade I or II and selected grade III disease that persists despite conservative care", "Assess internal anatomy, anticoagulation, immune status, bleeding, prolapse, prior treatment, pain expectations, and access", "Placing a rubber band at home", "Office procedures require correct anatomy and trained technique"),
-  c("operative treatment", "thrombosis-prolapse-procedures", "Excisional hemorrhoidectomy can treat substantial external or combined advanced disease when less invasive options are inadequate", "Discuss durability against postoperative pain, urinary retention, bleeding, recovery, and stenosis risk", "Assess external component, grade, recurrence, prior procedures, continence, surgical risk, support, and goals", "Presenting surgery as the first step for mild symptoms", "Treatment burden should match disease burden"),
-  c("special populations", "monitoring-referral", "Pregnancy, older age, anticoagulation, immunosuppression, liver disease, and pediatric symptoms change the differential and safety margin", "Coordinate bleeding, bowel, and medication decisions with the appropriate clinician", "Assess pregnancy stage, postpartum status, age, anticoagulant indication, platelet function, immune status, portal disease, and child safeguarding", "Stopping anticoagulation independently because of bright red blood", "Bleeding management must protect the underlying indication and patient context"),
-  c("one-week response and referral", "monitoring-referral", "OTC self-care is a short trial, and persistent symptoms or bleeding require diagnosis", "Reassess after no more than about one week or earlier for worsening or red flags", "Assess adherence, bowel mechanics, active ingredients, bleeding, pain, prolapse, rash, anemia symptoms, and adverse effects", "Cycling through OTC combinations for months", "A short response window prevents delayed care"),
+// Original clinical cases; choice order is randomized by the assessment interface.
+export const hemorrhoidsQuestionBank = [
+  {
+    "id": "hemorrhoids-001",
+    "lesson": "anal-cushion-anatomy",
+    "question": "An adult asks whether normal anal cushions should be removed to prevent future disease. Which explanation is appropriate?",
+    "choices": [
+      "They contribute to continence; treatment targets symptomatic disease",
+      "They have no normal function",
+      "Every visible cushion is thrombosed",
+      "Preventive removal is routine"
+    ],
+    "answer": 0,
+    "rationale": "Normal vascular cushions are not themselves a treatment indication.",
+    "reviewHref": "#anal-cushion-anatomy"
+  },
+  {
+    "id": "hemorrhoids-002",
+    "lesson": "anal-cushion-anatomy",
+    "question": "Painless bleeding occurs during defecation, and examination identifies internal hemorrhoids. Which anatomy explains the limited pain?",
+    "choices": [
+      "Location above the dentate line",
+      "Complete absence of blood vessels",
+      "Location in somatically innervated external skin",
+      "Loss of every anal sensory nerve"
+    ],
+    "answer": 0,
+    "rationale": "Internal and external tissue have different sensory innervation.",
+    "reviewHref": "#anal-cushion-anatomy"
+  },
+  {
+    "id": "hemorrhoids-003",
+    "lesson": "anal-cushion-anatomy",
+    "question": "Internal tissue protrudes with a bowel movement and returns without assistance. What grade describes this behavior?",
+    "choices": [
+      "Grade II",
+      "Grade I",
+      "Grade III",
+      "Grade IV"
+    ],
+    "answer": 0,
+    "rationale": "Spontaneous reduction distinguishes grade II from manual reduction in grade III.",
+    "reviewHref": "#anal-cushion-anatomy"
+  },
+  {
+    "id": "hemorrhoids-004",
+    "lesson": "bleeding-differential",
+    "question": "An adult with known hemorrhoids develops recurrent bleeding and unexplained weight loss. What is the best next step?",
+    "choices": [
+      "Evaluate another bleeding source and the need for colon examination",
+      "Attribute all blood to the prior diagnosis",
+      "Increase phenylephrine until bleeding stops",
+      "Wait until blood becomes dark"
+    ],
+    "answer": 0,
+    "rationale": "A prior hemorrhoid diagnosis does not exclude coexisting colorectal disease.",
+    "reviewHref": "#bleeding-differential"
+  },
+  {
+    "id": "hemorrhoids-005",
+    "lesson": "bleeding-differential",
+    "question": "A patient reports black tarry stool with dizziness. Which action is appropriate?",
+    "choices": [
+      "Urgent assessment for gastrointestinal bleeding",
+      "A one-week trial of external witch hazel",
+      "Reassurance because hemorrhoids commonly cause melena",
+      "A higher dose of fiber before evaluation"
+    ],
+    "answer": 0,
+    "rationale": "Melena and systemic symptoms require urgent evaluation beyond hemorrhoid self-care.",
+    "reviewHref": "#bleeding-differential"
+  },
+  {
+    "id": "hemorrhoids-006",
+    "lesson": "bleeding-differential",
+    "question": "Severe constant anal pain is accompanied by fever and drainage. Which interpretation is safest?",
+    "choices": [
+      "Possible abscess or infection requiring prompt examination",
+      "Uncomplicated painless internal hemorrhoids",
+      "A reason to mask pain with repeated anesthetic alone",
+      "A diagnosis established by stool color"
+    ],
+    "answer": 0,
+    "rationale": "Constant pain and systemic or purulent findings change the differential and urgency.",
+    "reviewHref": "#bleeding-differential"
+  },
+  {
+    "id": "hemorrhoids-007",
+    "lesson": "bowel-mechanics",
+    "question": "A patient with hard stools strains for twenty minutes while using a phone on the toilet. Which plan addresses recurrence?",
+    "choices": [
+      "Gradually improve fiber intake and shorten toilet time",
+      "Use more topical anesthetic while keeping the same routine",
+      "Delay each urge until stool is harder",
+      "Avoid dietary fiber permanently"
+    ],
+    "answer": 0,
+    "rationale": "Stool consistency and prolonged straining are modifiable mechanical drivers.",
+    "reviewHref": "#bowel-mechanics"
+  },
+  {
+    "id": "hemorrhoids-008",
+    "lesson": "bowel-mechanics",
+    "question": "A patient with a prescribed fluid restriction wants to begin psyllium. What should be reviewed first?",
+    "choices": [
+      "Whether safe administration and adequate fluid fit the individualized plan",
+      "Whether to ignore the restriction for a standard high-fluid target",
+      "Whether to swallow the powder dry",
+      "Whether topical treatment removes all hydration concerns"
+    ],
+    "answer": 0,
+    "rationale": "Bulk fiber requires appropriate fluid and swallowing safety without disregarding comorbidity.",
+    "reviewHref": "#bowel-mechanics"
+  },
+  {
+    "id": "hemorrhoids-009",
+    "lesson": "bowel-mechanics",
+    "question": "Hemorrhoid irritation occurs during frequent loose stools caused by excessive laxative use. What is most appropriate?",
+    "choices": [
+      "Review and adjust the bowel regimen rather than automatically adding a stool softener",
+      "Add docusate to every bowel movement",
+      "Treat all hemorrhoid symptoms as proof of constipation",
+      "Increase the laxative until stool becomes watery"
+    ],
+    "answer": 0,
+    "rationale": "Both bowel extremes can worsen symptoms; treatment follows the actual pattern.",
+    "reviewHref": "#bowel-mechanics"
+  },
+  {
+    "id": "hemorrhoids-010",
+    "lesson": "protectants-astringents",
+    "question": "A patient develops burning after repeatedly scrubbing with medicated wipes. What should change?",
+    "choices": [
+      "Use gentle cleansing and stop the irritating routine",
+      "Scrub until all sensation disappears",
+      "Add several fragranced products",
+      "Insert the external wipe farther"
+    ],
+    "answer": 0,
+    "rationale": "Friction and product sensitivity can perpetuate perianal dermatitis.",
+    "reviewHref": "#protectants-astringents"
+  },
+  {
+    "id": "hemorrhoids-011",
+    "lesson": "protectants-astringents",
+    "question": "Witch hazel improves mild itch, but prolapse persists. What does the response show?",
+    "choices": [
+      "Temporary symptom relief does not correct prolapse",
+      "The anatomic problem has resolved",
+      "All bleeding sources have been excluded",
+      "More frequent wiping will permanently repair support"
+    ],
+    "answer": 0,
+    "rationale": "Surface symptom relief and structural disease are different outcomes.",
+    "reviewHref": "#protectants-astringents"
+  },
+  {
+    "id": "hemorrhoids-012",
+    "lesson": "protectants-astringents",
+    "question": "A patient asks what a warm sitz bath can accomplish. Which answer is appropriate?",
+    "choices": [
+      "It may improve comfort while the cause and bowel routine are addressed",
+      "It establishes the source of rectal bleeding",
+      "It replaces evaluation of severe constant pain",
+      "It permanently reverses grade IV prolapse"
+    ],
+    "answer": 0,
+    "rationale": "Comfort care is an adjunct, not a diagnostic test or corrective procedure.",
+    "reviewHref": "#protectants-astringents"
+  },
+  {
+    "id": "hemorrhoids-013",
+    "lesson": "vasoconstrictors-anesthetics",
+    "question": "A patient taking prescription treatment for depression wants phenylephrine hemorrhoid ointment. What is the next step?",
+    "choices": [
+      "Review the exact medicines with a clinician or pharmacist before use",
+      "Assume topical administration eliminates all warnings",
+      "Use twice the labeled amount to overcome an interaction",
+      "Stop the antidepressant independently"
+    ],
+    "answer": 0,
+    "rationale": "The reviewed product specifically calls for medicine review with prescriptions for depression or hypertension.",
+    "reviewHref": "#vasoconstrictors-anesthetics"
+  },
+  {
+    "id": "hemorrhoids-014",
+    "lesson": "vasoconstrictors-anesthetics",
+    "question": "Two products with the same brand name have different active ingredients. How should counseling proceed?",
+    "choices": [
+      "Read each Drug Facts panel and check duplicate exposure",
+      "Treat the brand name as one fixed formula",
+      "Combine them because brand matching prevents duplication",
+      "Use whichever has more actives at the same schedule"
+    ],
+    "answer": 0,
+    "rationale": "Brand families do not guarantee matching ingredients, routes or directions.",
+    "reviewHref": "#vasoconstrictors-anesthetics"
+  },
+  {
+    "id": "hemorrhoids-015",
+    "lesson": "vasoconstrictors-anesthetics",
+    "question": "An anesthetic briefly reduces pain, but swelling and fever increase. What should happen?",
+    "choices": [
+      "Prompt examination despite temporary numbness",
+      "Continue treatment because pain relief proves improvement",
+      "Increase anesthetic frequency indefinitely",
+      "Assume local anesthesia treats infection"
+    ],
+    "answer": 0,
+    "rationale": "Symptom suppression does not rule out a worsening underlying condition.",
+    "reviewHref": "#vasoconstrictors-anesthetics"
+  },
+  {
+    "id": "hemorrhoids-016",
+    "lesson": "anti-inflammatory-safety",
+    "question": "A patient has used perianal hydrocortisone daily for two months with persistent itch. What is appropriate?",
+    "choices": [
+      "Reassess diagnosis and possible steroid-related injury",
+      "Continue indefinitely because the product is OTC",
+      "Add a second hydrocortisone product",
+      "Increase potency without examination"
+    ],
+    "answer": 0,
+    "rationale": "Prolonged use can cause harm and delay diagnosis; the short self-care window has been exceeded.",
+    "reviewHref": "#anti-inflammatory-safety"
+  },
+  {
+    "id": "hemorrhoids-017",
+    "lesson": "anti-inflammatory-safety",
+    "question": "An external-only hydrocortisone cream is available at home. Can its directions be used for a prescription rectal formulation?",
+    "choices": [
+      "No; verify the exact formulation, route and regimen",
+      "Yes; all hydrocortisone products have identical instructions",
+      "Yes; concentration alone defines the route",
+      "Only if two products are mixed together"
+    ],
+    "answer": 0,
+    "rationale": "The same ingredient can appear in products with different indications and routes.",
+    "reviewHref": "#anti-inflammatory-safety"
+  },
+  {
+    "id": "hemorrhoids-018",
+    "lesson": "dosage-form-technique",
+    "question": "The reviewed Preparation H ointment label permits up to four applications daily. A caregiver proposes five based on an older table. Which instruction should prevail?",
+    "choices": [
+      "Follow the exact product label, up to four daily unless directed otherwise",
+      "Use five for every ointment in the brand",
+      "Apply after every stool even if the daily maximum is exceeded",
+      "Double the frequency because it is topical"
+    ],
+    "answer": 0,
+    "rationale": "Current product-specific directions take precedence over a generalized historical table.",
+    "reviewHref": "#dosage-form-technique"
+  },
+  {
+    "id": "hemorrhoids-019",
+    "lesson": "dosage-form-technique",
+    "question": "An intrarectal applicator causes additional pain during insertion. What should the patient do?",
+    "choices": [
+      "Stop use and seek advice rather than force insertion",
+      "Push past the painful point",
+      "Use the applicator dry",
+      "Repeat until pain becomes numb"
+    ],
+    "answer": 0,
+    "rationale": "The reviewed label identifies additional insertion pain as a stop-and-review signal.",
+    "reviewHref": "#dosage-form-technique"
+  },
+  {
+    "id": "hemorrhoids-020",
+    "lesson": "dosage-form-technique",
+    "question": "A ten-year-old has anal symptoms and the family asks for the reviewed phenylephrine ointment. Which action follows its label?",
+    "choices": [
+      "Ask a doctor before use",
+      "Use the adult regimen automatically",
+      "Halve the adult frequency without assessment",
+      "Treat bright red bleeding without evaluation"
+    ],
+    "answer": 0,
+    "rationale": "The reviewed product directs medical advice for children under twelve.",
+    "reviewHref": "#dosage-form-technique"
+  },
+  {
+    "id": "hemorrhoids-021",
+    "lesson": "thrombosis-prolapse-procedures",
+    "question": "A new, tense, bluish external lump is severely painful. Which action is appropriate?",
+    "choices": [
+      "Prompt clinical evaluation for thrombosis and treatment options",
+      "Home incision with a sterile needle",
+      "Rubber band placement by the patient",
+      "A month of treatment before any examination"
+    ],
+    "answer": 0,
+    "rationale": "An acute painful external mass requires diagnosis; selected thromboses may benefit from early excision.",
+    "reviewHref": "#thrombosis-prolapse-procedures"
+  },
+  {
+    "id": "hemorrhoids-022",
+    "lesson": "thrombosis-prolapse-procedures",
+    "question": "Prolapsed internal tissue requires manual reduction. What grade is this?",
+    "choices": [
+      "Grade III",
+      "Grade I",
+      "Grade II",
+      "Grade IV"
+    ],
+    "answer": 0,
+    "rationale": "Grade is based on reduction behavior, not the amount of bleeding.",
+    "reviewHref": "#thrombosis-prolapse-procedures"
+  },
+  {
+    "id": "hemorrhoids-023",
+    "lesson": "thrombosis-prolapse-procedures",
+    "question": "Symptomatic grade II internal hemorrhoids persist despite an appropriate bowel plan. Which option may be discussed?",
+    "choices": [
+      "An office procedure such as banding",
+      "Home banding",
+      "External barrier paste as a guaranteed anatomic cure",
+      "Automatic emergency excision for every patient"
+    ],
+    "answer": 0,
+    "rationale": "Persistent selected internal disease can be treated in an office by a trained clinician.",
+    "reviewHref": "#thrombosis-prolapse-procedures"
+  },
+  {
+    "id": "hemorrhoids-024",
+    "lesson": "monitoring-referral",
+    "question": "New recurrent bleeding appears during OTC treatment. What should the patient do?",
+    "choices": [
+      "Stop self-directed cycling of products and obtain clinical evaluation",
+      "Wait until every OTC formulation has failed",
+      "Ignore it because the blood is bright red",
+      "Stop prescribed anticoagulation without advice"
+    ],
+    "answer": 0,
+    "rationale": "Bleeding needs a source assessment and may change the treatment plan.",
+    "reviewHref": "#monitoring-referral"
+  },
+  {
+    "id": "hemorrhoids-025",
+    "lesson": "monitoring-referral",
+    "question": "Mild symptoms remain unchanged after a week of properly used OTC treatment. What is next?",
+    "choices": [
+      "Clinical reassessment",
+      "Repeat the same trial for several months",
+      "Add all remaining actives simultaneously",
+      "Assume no diagnosis is needed if pain is mild"
+    ],
+    "answer": 0,
+    "rationale": "Persistent symptoms exceed the intended short self-care trial.",
+    "reviewHref": "#monitoring-referral"
+  },
+  {
+    "id": "hemorrhoids-026",
+    "lesson": "monitoring-referral",
+    "question": "A patient on anticoagulation develops heavy bleeding with lightheadedness. Which response best protects the patient?",
+    "choices": [
+      "Urgent assessment and clinician-directed medication decisions",
+      "Independently stop anticoagulation and stay home",
+      "Apply more ointment before deciding whether to seek care",
+      "Treat the episode as expected with hemorrhoids"
+    ],
+    "answer": 0,
+    "rationale": "Blood loss requires urgent care while anticoagulant decisions must account for its indication and thrombosis risk.",
+    "reviewHref": "#monitoring-referral"
+  },
+  {
+    "id": "hemorrhoids-027",
+    "lesson": "thrombosis-prolapse-procedures",
+    "question": "After banding, fever, severe anal pain and urinary difficulty develop. What is the priority?",
+    "choices": [
+      "Urgent evaluation for a serious complication",
+      "Increase topical anesthetic",
+      "Wait for routine follow-up",
+      "Add fiber before seeking care"
+    ],
+    "answer": 0,
+    "rationale": "This combination can indicate post-banding sepsis.",
+    "reviewHref": "#thrombosis-prolapse-procedures"
+  },
+  {
+    "id": "hemorrhoids-028",
+    "lesson": "thrombosis-prolapse-procedures",
+    "question": "Substantial bleeding occurs twelve days after banding. What should happen?",
+    "choices": [
+      "Prompt assessment for delayed hemorrhage",
+      "Reassurance that timing excludes a complication",
+      "Self-directed anticoagulant cessation alone",
+      "A week of witch hazel"
+    ],
+    "answer": 0,
+    "rationale": "Delayed bleeding may occur as banded tissue separates.",
+    "reviewHref": "#thrombosis-prolapse-procedures"
+  },
+  {
+    "id": "hemorrhoids-029",
+    "lesson": "thrombosis-prolapse-procedures",
+    "question": "Before banding, an anticoagulated patient asks for a standard medication hold schedule. What is appropriate?",
+    "choices": [
+      "Coordinate an individualized thrombosis and bleeding plan",
+      "Stop all agents for the same interval",
+      "Double the dose after banding",
+      "Assume topical anesthesia removes bleeding risk"
+    ],
+    "answer": 0,
+    "rationale": "The guideline does not establish a universal interruption and restart schedule.",
+    "reviewHref": "#thrombosis-prolapse-procedures"
+  },
+  {
+    "id": "hemorrhoids-030",
+    "lesson": "anti-inflammatory-safety",
+    "question": "A ten-year-old has anal itch. A hydrocortisone carton lists general use from age two but says to ask a doctor for anal itching under twelve. Which instruction applies?",
+    "choices": [
+      "The site-specific under-twelve restriction",
+      "Only the general age-two direction",
+      "An independently selected half adult dose",
+      "Intrarectal use to avoid the restriction"
+    ],
+    "answer": 0,
+    "rationale": "Site-specific directions take precedence over a general age heading.",
+    "reviewHref": "#anti-inflammatory-safety"
+  },
+  {
+    "id": "hemorrhoids-031",
+    "lesson": "dosage-form-technique",
+    "question": "A patient plans to insert external-only hydrocortisone using a clean applicator. Does cleaning make this appropriate?",
+    "choices": [
+      "No; the route remains prohibited",
+      "Yes, if the applicator is clean",
+      "Yes, if the dose is small",
+      "Yes, if used with phenylephrine"
+    ],
+    "answer": 0,
+    "rationale": "Hygiene does not change the approved route of an external-only preparation.",
+    "reviewHref": "#dosage-form-technique"
+  }
 ];
-
-const dimensions = [["principle", "Which principle best characterizes"], ["action", "Which clinical action best applies to"], ["assessment", "Which assessment is most appropriate for"], ["hazard", "Which reasoning hazard is most important to prevent with"]];
-const distractors = (index, field) => [7, 13, 19].map(offset => concepts[(index + offset) % concepts.length][field]);
-
-export const hemorrhoidsQuestionBank = concepts.flatMap((item, index) => dimensions.map(([field, stem], dimension) => ({
-  id: `hemorrhoids-${String(index * 4 + dimension + 1).padStart(3, "0")}`,
-  lesson: item.lesson,
-  question: `${stem} ${item.name}?`,
-  choices: [item[field], ...distractors(index, field)],
-  answer: 0,
-  rationale: item.why,
-  reviewHref: `#${item.lesson}`,
-})));
