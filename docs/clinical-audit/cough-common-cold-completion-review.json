@@ -1,0 +1,54 @@
+{
+  "module": "cough-common-cold",
+  "reviewDate": "2026-09-25",
+  "status": "verified",
+  "meaning": "Completed automated clinical content audit, not independent pharmacist certification. Overall curriculum remains incomplete.",
+  "counts": {
+    "lessons": 9,
+    "figures": 9,
+    "questions": 149
+  },
+  "bookScope": "RxPrep2023 chapter37 printed530-539; cough tables537-538 and pediatric539 visually inspected, allergy pages reviewed in companion audit.",
+  "evidence": [
+    "cough-common-cold.md",
+    "cough-full-assessment-review.json",
+    "cough-triage-congestion-assessment-review.json",
+    "cough-final-consolidation.json",
+    "allergy-cough-cross-module-review.json",
+    "allergic-rhinitis-completion-review.json"
+  ],
+  "topicMap": {
+    "cold differential and triage": "triage",
+    "combination strengths, dosing, PKU and duplication": "product-selection; cough-therapy",
+    "non-drug support and irrigation": "supportive-care",
+    "guaifenesin, DM, benzonatate, opioids, diphenhydramine and topical rubs": "cough-therapy",
+    "oral/nasal decongestants and sales requirements": "congestion",
+    "pediatric restrictions and promethazine": "pediatrics; product-selection",
+    "interactions and precautions": "interaction-safety",
+    "zinc, vitaminC and echinacea": "evidence-natural-products",
+    "transmission, recovery, stewardship and referral": "follow-up"
+  },
+  "sourceDiscrepancies": [
+    "FDA oral phenylephrine efficacy proposal replaces older efficacy framing; final withdrawal not claimed.",
+    "Current pediatric recommendations distinguished from older age-label tables and prescription opioid restrictions distinguished from OTC labels.",
+    "Product-specific IR/ER and combination directions replace generic dose transfer; codeine salt/base and schedule metadata discrepancies explained.",
+    "Natural-product treatment claims qualified by current evidence; no universal zinc regimen.",
+    "CDC irrigation boiling guidance retained with FDA article difference explicitly documented.",
+    "Historical formulations illustrate differences, not current availability or pediatric endorsement."
+  ],
+  "validation": {
+    "browserSession": 65979,
+    "browserExit": 0,
+    "scope": "All9 current lesson bodies,9 embedded checks,149 review targets at desktop/mobile; no runtime errors or horizontal overflow.",
+    "buildSession": 92828,
+    "buildExit": 0,
+    "generatedPages": 558,
+    "isolation": "Only completed allergy application changes plus current cough module/bank/visual added to008cf88 checkout; unrelated auth/site edits excluded."
+  },
+  "unresolvedMaterialIssuesWithinModule": [],
+  "limitations": [
+    "Clinical review by this agent is not pharmacist certification.",
+    "Current label and jurisdiction must be rechecked for real prescribing or dispensing.",
+    "Clinical work remains on audit branch without deployment."
+  ]
+}
