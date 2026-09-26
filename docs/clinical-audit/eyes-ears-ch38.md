@@ -428,3 +428,32 @@ Neonatal/systemic-care diagram inspected at desktop and mobile, including a seco
 Final actual-content pass covered all 142 teaching passages, overview/outcomes, summaries, concepts, application text, key points, 12 embedded checks and 104 retained references. The 174-question clinical pass and 12-diagram review are recorded separately. Closed all Common Eye material gaps, including Alomide status, general administration/special populations, cross-module ocular consistency and outstanding visual captures. Normalized numeric-range punctuation; removed five older duplicate label links. Scoped structural audit passed; final isolated production build generated 558/558 pages. A non-blocking two-question neonatal assessment coverage advisory does not require padding the subject to a fixed count.
 
 See common-eye-completion-review.json for the authoritative final coverage map, source hashes, validation scope, discrepancies and limitations. Earlier pending statements in incremental records are preserved as history and superseded for this module. Common Ear and the mixed eye/ear subsection are still open. No independent pharmacist certification and no publication/deployment.
+
+### Common Ear audit started — 2026-09-26
+
+Read all original lessons, embedded checks and diagrams; materialized bank remains pending. Added Cipro HC-specific nonsterile/perforation and administration boundaries and Debrox four-day directions against current DailyMed text. Generalized the passage helper to support variable lesson depth. Debrox exact age-12 wording needs package/manufacturer clarification; no completion claimed.
+
+Expanded Common Ear with ciprofloxacin-dexamethasone and Cortisporin TC instructions, resolved Debrox age wording against manufacturer guidance, and added three product-specific cases. Explicitly separated nonsterile Cipro HC from products suitable for middle-ear exposure; changed blanket sterility wording to contamination control. Five product rows passed desktop/mobile visual inspection; all three cases passed interactions in 11 attempts per viewport. Whole-module source and materialized bank review remain pending.
+
+
+### Common Ear guideline expansion — 2026-09-26
+
+Added three passages and two original cases after reviewing AAO-HNS sudden-hearing-loss key actions and VA/DoD tinnitus provider-summary clinical text. Primary links and exact read limits are in `common-ear-initial-review.json`. Six desktop/mobile captures were inspected; scoped structural audit passes with 117 questions. Whole-module clinical assessment and remaining source reconciliation are still open. No module completion, commit, or deployment claimed.
+
+
+### Common Ear assessment correction — 2026-09-26
+
+Read the materialized 117-item bank and identified cross-topic valid distractors under broad stems. Replaced the 112 generated entries with 38 focused original cases and retained the five new product/guideline cases: 43 total. The 28 original concepts are mapped to replacement cases in `common-ear-assessment-review.json`. All cases passed desktop/mobile behavior checks; count advisories are retained with coverage rationale. Added a cerumen passage and corrected two figure labels; eight desktop/mobile figure/passage captures were visually inspected. Remaining source reconciliation and final module verification remain open.
+
+
+### Common Ear product and guideline reconciliation — 2026-09-26
+
+Completed remaining ciprofloxacin/dexamethasone IFU text, ofloxacin label text, selective tinnitus imaging and current invasive-otitis referral checks. Added ofloxacin, travel and imaging passages, revised pinna wording and added two cases (45 total). Eight desktop/mobile passage captures and both new cases passed targeted checks. See `common-ear-product-guideline-review.json` for exact read limits, age-wording discrepancy and remaining cross-module/final review. Module remains reviewing; no commit or deployment claimed.
+
+### 2026-09-26 — Ear final assessment and referral refinement
+
+Read all 46 revised bank cases with choices, keys and rationales. Added explicit eye/ear abbreviation clarification and a wrong-site case; desktop/mobile interaction and visual checks passed. Isolated build exited successfully. NICE primary indexed referral recommendations now support precise recent-sudden versus remote/rapid hearing-loss timing; refined the lesson and added the reference. That last refinement still requires final rendering evidence. Ear remains reviewing; chapter 38 mixed formulation/drop-volume coverage and chapter 6 remain open.
+
+### 2026-09-26 — Common Ear module completion
+
+Common Ear is verified: eight lessons, 45 teaching passages, eight embedded checks, eight diagram data entries and 46 original focused assessment cases. Final referral/follow-up rendering, all embedded interactions and isolated production build passed. Three implementation files match the preview byte for byte. `common-ear-completion-review.json` supersedes earlier Ear pending notes and records exact source/validation limits. Mixed chapter formulations/drop-volume content remains open; no whole-chapter or independent pharmacist certification claimed.

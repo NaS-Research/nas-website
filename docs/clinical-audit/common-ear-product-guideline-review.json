@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-26",
+  "status": "corrected_pending_final_module_verification",
+  "readScope": [
+    "Reread book chapter 38 printed page 545 ear text and page 540 route introduction.",
+    "Finished ciprofloxacin/dexamethasone patient information and IFU text through end; no IFU images inspected.",
+    "Read entire displayed ofloxacin prescribing and patient information text through storage, including age/indication dosing; chemical and package illustrations not inspected.",
+    "Read AAO-HNS Choosing Wisely tinnitus imaging item and source citation.",
+    "Read all four pages of HSE March 2026 acute otitis externa guideline text; used its triage/return guidance, not its Irish drug formulary as US labeling.",
+    "Read cerumen corrigendum abstract in full; it concerns evidence counts and search-method descriptions.",
+    "CDC air-travel barotrauma section reviewed from indexed source passage, not entire travel chapter."
+  ],
+  "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=9c5994d1-01d1-493c-a6ae-94754cd59389&type=display",
+    "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=d89fa470-c98b-433a-829b-abe97eb66419&type=display",
+    "https://www.entnet.org/about-us/campaigns/choosing-wisely/",
+    "https://www.cdc.gov/yellow-book/hcp/travel-air-sea/air-travel.html",
+    "https://assets.hse.ie/media/documents/Acute_otitis_externa_guidelinev2.pdf",
+    "https://pubmed.ncbi.nlm.nih.gov/28786340/",
+    "https://ismpcanada.ca/bulletin/dangerous-abbreviations/",
+    "https://www.nice.org.uk/guidance/ng155/chapter/Recommendations"
+  ],
+  "decisions": [
+    "Added ofloxacin indication-specific teaching and an original dosing case.",
+    "Ofloxacin professional dosing lists AOM with tubes ages 1-12 at five drops; patient leaflet groups middle-ear dosing as 12+ ten drops. Preserved diagnosis-specific professional instructions and explicit clarification when wording is unclear.",
+    "Ofloxacin age thirteen AOE boundary resolved using explicit 13+ dose and patient leaflet under-thirteen distinction.",
+    "Ofloxacin structured BAK amount differs from narrative; no preservative concentration is taught or inferred from the inconsistent field.",
+    "General pinna advice now explicitly defers to formulation-specific IFU.",
+    "Added selective tinnitus imaging passage and case.",
+    "Replaced book blanket activity advice with contextual device/water and travel precautions grounded in primary sources. No automatic flight clearance implied.",
+    "HSE guidance corroborates urgent necrotizing-infection triage and early AOE reassessment; no specialist osteomyelitis treatment regimen added."
+  ],
+  "validation": {
+    "structural": "45 cases, no hard errors or source gaps; topic-count advisories remain intentional.",
+    "browser": "Two new cases passed desktop in four randomized attempts and mobile in five. Checked choices, scoring, rationales, anchors and submit gating; no errors or horizontal overflow.",
+    "visual": "Eight screenshots inspected for ofloxacin, travel, selective imaging and revised pinna advice at desktop/mobile sizes. Target passages fully readable.",
+    "scripts": [
+      "/private/tmp/ear-final-products-preview.mjs",
+      "/private/tmp/ear-final-products-cases.mjs"
+    ],
+    "captures": "/private/tmp/ear-final-products-{1..4}-{desktop|mobile}.png"
+  },
+  "remaining": [
+    "Cross-module consistency with formulation/counseling content and chapter 38 route material.",
+    "Final read of whole revised module, checks, figures, assessments and references.",
+    "Final isolated build and completion ledger before narrow commit/push."
+  ],
+  "sourceHashes": {
+    "src/data/modules/commonEarConditions.js": "48cecb1d8f67538735de148e8e1df38ed4aa78ad2ce22e150cc2d95f0ef2c8c2",
+    "src/data/questionBanks/commonEarConditions.js": "96ee469bfb6079a8ac786506ccf49f583668636ecd12b14a9cef5f7929e9ac78",
+    "src/components/learn/CommonEarConditionsVisual.jsx": "7f7cac6e97f6402bba1222a3fc1f681a51a50fb721ee2a2305e29774d3eebafe"
+  },
+  "finalReview20260926": {
+    "bank": "Read all 46 current materialized questions, choices, answer keys and rationales in full. No ambiguity requiring correction found in this final read.",
+    "routeSafety": "Added explicit AD/AS/AU versus OD/OS/OU explanation, full-site writing and clarification; added original wrong-site case. ISMP Canada May 2025 bulletin clinical text reviewed.",
+    "guidelineAccess": "NICE NG155 indexed primary recommendations 1.2.1-1.2.6 became accessible through search on this pass; prior failed full-page access remains accurately documented. This is not a full guideline read.",
+    "correction": "Replaced broad sudden-loss timing with onset-dependent 24-hour and two-week pathways. Pulsatile tinnitus receives targeted assessment with emergency urgency determined by accompanying red flags. Added NICE reference.",
+    "build": "Prior final isolated production build exited 0; latest referral text/reference changes occurred after that build.",
+    "browser": "Route case passed desktop in one randomized attempt and mobile in six; scoring, choices, rationale, review anchor and submit gating passed. Route passage visually inspected on both viewports, no errors or overflow.",
+    "crossModule": "Targeted AOM differential, membrane risk, nonresponse and hearing follow-up reviewed; systemic fluoroquinolone content is a distinct route. No claim of whole-module AOM or systemic fluoroquinolone verification.",
+    "openScope": "Final completion consolidation and current build remain pending; chapter 38 mixed formulations/drop-volume and chapter 6 remain separate audit work.",
+    "finalReferralRendering": "Inspected referral and follow-up passages in four desktop/mobile captures; complete target text readable, no page errors or horizontal overflow. Script /private/tmp/ear-final-referral-preview.mjs."
+  }
+}

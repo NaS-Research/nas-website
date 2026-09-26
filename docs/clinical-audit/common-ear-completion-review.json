@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-26",
+  "module": "common-ear-conditions",
+  "status": "verified",
+  "scope": {
+    "lessons": 8,
+    "passages": 45,
+    "embeddedChecks": 8,
+    "assessmentCases": 46,
+    "diagrams": 8,
+    "book": "RxPrep 2023 chapter 38, printed page 545 ear topics and page 540 ear-route material"
+  },
+  "review": "Actual original and revised lessons, overview, concepts, applications, key points, eight embedded checks, all eight diagram data entries and materialized assessment questions were read. Final bank read covered all 46 stems, choices, keys and explanations. Source review scope and access limits are retained in the preceding evidence records. This records an agent clinical content audit, not independent pharmacist certification.",
+  "evidence": [
+    "common-ear-initial-review.json",
+    "common-ear-assessment-review.json",
+    "common-ear-product-guideline-review.json"
+  ],
+  "supersedes": "Earlier pending Common Ear final-read, activity, assessment, rendering and build statements. Historical intermediate counts remain as chronology.",
+  "topicClosure": {
+    "triage": "Localization, sudden hearing-loss treatment windows, mastoid/neurologic/invasive-infection escalation and hearing follow-up reconciled with AAO-HNS and HSE guidance.",
+    "externalInfection": "Topical-first uncomplicated AOE, analgesia, obstruction/wick, host/membrane risk, extension and 48-72 hour nonresponse reassessment.",
+    "products": "Ciprofloxacin/dexamethasone, Cipro HC, Cortisporin TC and ofloxacin exact label indication, age, dose, membrane, preparation and handling distinctions.",
+    "administration": "Product-specific pinna/tragus/contact-time guidance, contamination control and full-route/side writing; ISMP eye/ear confusion.",
+    "cerumen": "Symptoms or blocked necessary exam, modifying risks, patients unable to report, hearing devices, suitable removal and documented clearance, Debrox exact directions and four-day stop.",
+    "tinnitus": "Symptom classification, secondary causes, medication context, selective imaging, current VA/DoD treatment recommendations and NICE referral timing."
+  },
+  "discrepancies": [
+    "Product-specific Debrox four-day limit supersedes book generic 3-5 day range.",
+    "Cipro HC is nonsterile and unsuitable with known/suspected perforation; fluoroquinolone class membership alone does not establish suitability.",
+    "Cortisporin TC label perforation caution does not override guideline preference for a non-ototoxic preparation.",
+    "Book blanket activity limits replaced by contextual water/device and pressure-equalization travel advice.",
+    "Ofloxacin age/indication wording conflicts documented and exact diagnosis-specific prescribing instructions preserved.",
+    "Generated repetitive bank contained ambiguous alternative valid actions; replaced with 46 focused original cases retaining all 28 original concepts."
+  ],
+  "numericalReview": "Exact label drop counts, frequencies, duration and age boundaries checked separately by indication. No new weight-based calculation exercise introduced.",
+  "crossModule": "Targeted corresponding AOM, systemic fluoroquinolone and eye-route content examined; no conflicting ear product regimen identified. This does not verify those whole modules.",
+  "validation": {
+    "structural": "46 cases; no hard errors or source gaps. Advisory size and per-lesson count flags deliberately accepted based on topic coverage.",
+    "build": "Isolated npm run build exited 0 after final referral edit; /private/tmp/common-ear-final-build-2.log. Three implementation files byte-match preview.",
+    "assessment": "All initial 43 cases exercised on desktop/mobile; two subsequent cases and final wrong-site case separately exercised. Mixed correct/incorrect mapping, rationale, review anchors and incomplete-submit gating checked. All eight embedded checks exercised on both viewports.",
+    "visual": "Changed products, guidance passages, three revised diagrams, cerumen addition, route passage and final referral/follow-up rows visually inspected at 1440x1000 and 390x844. No page errors or horizontal overflow in these runs.",
+    "latestScripts": [
+      "/private/tmp/ear-route-case.mjs",
+      "/private/tmp/ear-route-preview.mjs",
+      "/private/tmp/ear-final-referral-preview.mjs",
+      "/private/tmp/ear-embedded.mjs"
+    ]
+  },
+  "remainingModuleIssues": [],
+  "remainingBroaderAudit": [
+    "Chapter 38 mixed formulation/drop-volume subsection is not closed by Ear verification.",
+    "Chapter 6 Drug Formulations and Patient Counseling remains unmapped and requires its own full audit."
+  ],
+  "sourceHashes": {
+    "src/data/modules/commonEarConditions.js": "48cecb1d8f67538735de148e8e1df38ed4aa78ad2ce22e150cc2d95f0ef2c8c2",
+    "src/data/questionBanks/commonEarConditions.js": "96ee469bfb6079a8ac786506ccf49f583668636ecd12b14a9cef5f7929e9ac78",
+    "src/components/learn/CommonEarConditionsVisual.jsx": "7f7cac6e97f6402bba1222a3fc1f681a51a50fb721ee2a2305e29774d3eebafe"
+  },
+  "publication": "Local verification only. Commit/push to audit branch is authorized; no deployment."
+}
