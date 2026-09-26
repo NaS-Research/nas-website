@@ -1,0 +1,166 @@
+{
+  "module": "lice-scabies",
+  "reviewDate": "2026-09-26",
+  "status": "verified",
+  "book": {
+    "edition": "2023 RxPrep",
+    "printedPages": [
+      557
+    ],
+    "pdfPages": [
+      565
+    ],
+    "inspection": "Full page image visually read, including drug table and discontinued-brand footnote; source remains private."
+  },
+  "baseline": {
+    "lessons": 10,
+    "questions": 120,
+    "assessmentStructure": "30 concepts mechanically expanded across four dimensions; replaced after review"
+  },
+  "correctionsImplemented": [
+    {
+      "issue": "Missing abametapir and benzyl alcohol coverage",
+      "change": "Added specific concentrations, ages, application/retreatment, abametapir two-week CYP-substrate avoidance and historical supply caveat.",
+      "sources": [
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4fe38e95-8738-a28f-4079-43eff7318cb9",
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/022129s008lbl.pdf"
+      ]
+    },
+    {
+      "issue": "Spinosad scabies coverage incomplete",
+      "change": "Added balding-scalp, hairline, temple and forehead instructions, shaking, eye avoidance, drying and bathing timing.",
+      "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72cf38f4-9ef4-4b0e-b085-b02f399e2592"
+    },
+    {
+      "issue": "Lindane historical discussion missing",
+      "change": "Added current CDC unavailable-in-US status and neurotoxicity warning.",
+      "source": "https://www.cdc.gov/lice/hcp/clinical-care/index.html"
+    },
+    {
+      "issue": "Generic visual identifiers collide across modules",
+      "change": "Namespaced all ten visual identifiers and verified rendered visual containers."
+    },
+    {
+      "issue": "Application, exposure and shampoo timing too generic",
+      "change": "Added Nix damp-hair preparation and 10-minute maximum, conditional retreatment versus CDC day-9 timing, ivermectin dry-hair 10-minute exposure/24-hour shampoo wait/single-use tube, malathion 8-12-hour shampoo endpoint and conditional 7-9-day repeat. Added exceptions to book blanket shampoo advice.",
+      "sources": [
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d6dfa64a-bb88-4438-b4e2-30c6fbb28f3e",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0b1444b-f51b-44fd-8f23-2fff49b64bc0",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dd2c66e6-bd50-46df-a335-26215d02d13b"
+      ]
+    },
+    {
+      "issue": "Generalized oral ivermectin adverse effects and incomplete operational counseling",
+      "change": "Separated onchocerciasis Mazzotti reactions from ectoparasite treatment; added Loa loa/warfarin/neurotoxicity screening, food-guidance discrepancy, independent 60 kg calculation, exact head-lice environmental measures and pubic-lice first-line treatment/partner window.",
+      "sources": [
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=681888c9-af79-4b7d-ae80-c3f4f6f1effd",
+        "https://www.cdc.gov/std/treatment-guidelines/ectoparasitic.htm",
+        "https://www.cdc.gov/lice/treatment/index.html"
+      ]
+    },
+    {
+      "issue": "Scabies alternatives, crusted regimens and persistent itch insufficiently specific",
+      "change": "Added infant compounded sulfur, adult crotamiton limitations, severity-dependent specialist crusted-scabies schedules and reassessment for itching beyond 2 to 4 weeks.",
+      "sources": [
+        "https://www.cdc.gov/scabies/hcp/clinical-care/index.html",
+        "https://www.cdc.gov/scabies/treatment/index.html"
+      ]
+    },
+    {
+      "issue": "Body-lice systemic illness and pyrethrin application coverage incomplete",
+      "change": "Added body-lice vector risks and fever assessment; specified pyrethrin dry-hair contact and label-versus-CDC repeat interval.",
+      "sources": [
+        "https://www.cdc.gov/lice/about/body-lice.html",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fea8ca80-2392-160f-e053-6294a90ae6fe"
+      ]
+    },
+    {
+      "issue": "Malathion selectivity attributed too narrowly to limited human activation",
+      "change": "Replaced with FDA pharmacology review explanation of differential carboxylesterase detoxification.",
+      "source": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/99/18613s009s010_ovide.pdf"
+    },
+    {
+      "issue": "Missing oral head-lice regimen and incomplete product/body-map instructions",
+      "change": "Added CDC oral head-lice dose options and 9-to-10-day repeat with pregnancy/weight exclusions; added spinosad head-lice contact/volume and permethrin infant/geriatric scalp coverage with label-versus-CDC distinction.",
+      "sources": [
+        "https://www.cdc.gov/lice/hcp/clinical-care/index.html",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4af5093-2e4a-43c6-b585-4bb14f73f370",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72cf38f4-9ef4-4b0e-b085-b02f399e2592"
+      ]
+    },
+    {
+      "issue": "Reproductive lesson was generic and post-treatment eggs could be mistaken for viable infestation",
+      "change": "Added preferred pregnancy therapy and LactMed-versus-label breastfeeding discrepancy; clarified that retained eggs/casings alone do not prove ongoing viability.",
+      "sources": [
+        "https://www.cdc.gov/std/treatment-guidelines/ectoparasitic.htm",
+        "https://www.ncbi.nlm.nih.gov/books/NBK501383/"
+      ]
+    },
+    {
+      "issue": "Generic non-ovicidal repeat rule contradicted topical ivermectin single-use guidance",
+      "change": "Added newly hatched-louse survival exception and directed product-specific retreatment.",
+      "source": "https://www.cdc.gov/lice/hcp/clinical-care/index.html"
+    }
+  ],
+  "openWork": [],
+  "discrepanciesToResolve": [],
+  "validation": {
+    "clinicalCompletion": true,
+    "initialStructuralAudit": {
+      "log": "/private/tmp/lice-initial-audit.log",
+      "globalErrors": 34,
+      "moduleErrors": []
+    },
+    "calculation": "60 kg x 200 mcg/kg = 12000 mcg = 12 mg; 12/3 = 4 tablets per prescribed dose.",
+    "latestStructuralAudit": {
+      "log": "/private/tmp/lice-audit-final.log",
+      "globalErrors": 34,
+      "moduleErrors": [],
+      "limitation": "Existing punctuation errors elsewhere remain outside this module commit."
+    },
+    "assessmentClinicalReview": {
+      "reviewedQuestions": 40,
+      "reviewedChoices": 160,
+      "reviewedKeys": 40,
+      "reviewedRationales": 40,
+      "result": "All choices, keys and rationales reviewed; independent calculation and shuffled browser attempt verified."
+    },
+    "productionBuild": {
+      "result": "passed",
+      "pages": 557,
+      "log": "/private/tmp/lice-build-final.log"
+    },
+    "desktopInitial": {
+      "route": "/learn/pharmacy/modules/lice-scabies#classic-scabies-treatment",
+      "observed": "Revised lesson and all ten namespaced visual containers rendered; desktop screenshot shows left contents bar. Initial anchor screenshot highlighted first lesson, so settled scroll tracking still needs checking.",
+      "complete": false
+    },
+    "finalClinicalReview": {
+      "lessons": 10,
+      "embeddedChecks": 10,
+      "visuals": 10,
+      "assessmentQuestions": 40,
+      "scope": "Read all lesson rows, summaries, concepts, key points, checks and visual text. Reconciled book page 557 and additional content with listed primary guidance and labels. No unresolved material module-specific clinical issue identified. Not an independent pharmacist certification."
+    },
+    "browser": {
+      "desktop": "All ten visual containers and revised lessons rendered. Settled section-eight scroll showed matching gold active navigation.",
+      "mobile": "390x844: heading, product matrix and paragraphs wrap within viewport; shared sticky navigation and floating controls obscure some reading space.",
+      "assessment": "Ten randomly drawn questions answered through shuffled radio choices; all ten returned Correct with explanations and lesson-review links.",
+      "finalBuildReload": "Confirmed final ivermectin life-cycle exception in rendered DOM after preview restart."
+    }
+  },
+  "sourceCautions": [
+    "Current ivermectin Drug Facts and OTC classification confirm nonprescription status despite CDC page grouping under prescription section.",
+    "Reviewed malathion label contains outdated poisoning instructions to induce vomiting and a structured strength inconsistent with the labeled 0.5%; neither was adopted. Acute poisoning teaching, if added, needs current poison-center guidance.",
+    "Nix label advises clinician consultation for ragweed allergy; do not assume this warning applies only to pyrethrin products.",
+    "CDC STI guideline is dated 2021 and differs from newer scabies public-health pages on contact windows and lindane availability; use newer condition-specific guidance for those issues."
+  ],
+  "assessmentRevision": {
+    "questions": 40,
+    "change": "Replaced 120 mechanically expanded questions with 40 original clinical cases; independent final review remains pending."
+  },
+  "limitations": [
+    "Shared mobile sticky contents and floating controls occupy/overlap reading space; tracked as broader UI work, not a clinical content defect.",
+    "Full repository content audit still reports 34 pre-existing punctuation errors outside this module."
+  ]
+}
