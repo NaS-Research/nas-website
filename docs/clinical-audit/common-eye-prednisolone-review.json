@@ -1,0 +1,89 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_module_review",
+  "book": "RxPrep 2023 printed p544 prednisolone examples",
+  "sources": [
+    {
+      "name": "Pred Forte",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=00a5aa88-e361-4ea7-8922-530c738b726e&type=display"
+    },
+    {
+      "name": "Pred Mild",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=4fcce64a-94ea-4031-ad5a-c4eddc73a910&type=display"
+    },
+    {
+      "name": "FDA. Omnipred prescribing information, 2024",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/017469s054lbl.pdf"
+    },
+    {
+      "name": "DailyMed. Sandoz prednisolone acetate authorized generic",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=05d205c7-8f51-46b9-a6c5-4199bc432b26"
+    }
+  ],
+  "readScope": "Full prescribing text of Pred Forte February 2024 and Pred Mild November 2025; chemical structure and packaging images not visually inspected. Read all four pages of extracted 2024 FDA Omnipred prescribing text and all clinical sections of December 2024 Sandoz authorized-generic label. No claim of current local brand stock.",
+  "changes": [
+    "Added three teaching rows and one pressure-monitoring case.",
+    "Used current Pred Mild 15\u201325 C storage instead of older repackager 15\u201330 C directions.",
+    "Added Omnipred/Sandoz formulation-specific schedule, storage, ingredients and safety; avoids importing Pred Forte directions solely from shared strength."
+  ],
+  "remaining": [
+    "Remaining steroid and NSAID products",
+    "Rendered checks and full module verification"
+  ],
+  "scopedUIValidation": {
+    "date": "2026-09-26",
+    "sourceHashes": {
+      "src/data/modules/commonEyeConditions.js": "88d3313c13d4e2bc2946e3313835347734da2e185518726068954abd1932d2d9",
+      "src/data/questionBanks/commonEyeConditions.js": "cf56b5b2dc194e8a382d0846a29e8f823cb21b297c02447d3e9b39b6a25d95a9",
+      "src/components/learn/CommonEyeConditionsVisual.jsx": "a4ccdaed03a7c84a80d4a0e564ac782705d8a9f50e80cd9ad1ead1a76a2306a7"
+    },
+    "assessment": "Two new cases passed desktop in 8 randomized attempts and mobile in 15. Checked stems, answer mapping, mixed scoring, rationale, lesson links and submission gating; no page errors or horizontal overflow.",
+    "visual": "Inspected four new steroid rows and revised inflammation diagram at desktop and mobile. Desktop complete; mobile text wraps without horizontal overflow, but sticky navigation/floating tools overlap portions of tall element screenshots. Full unobscured mobile capture remains pending; do not treat those screenshots as a complete mobile visual pass.",
+    "scripts": [
+      "/private/tmp/eye-steroid-preview.mjs",
+      "/private/tmp/eye-steroid-cases.mjs"
+    ],
+    "scope": "Prednisolone and Maxidex additions plus inflammation diagram only; whole module not verified."
+  },
+  "finalScopedRenderValidation": {
+    "date": "2026-09-26",
+    "sourceHashes": {
+      "src/data/modules/commonEyeConditions.js": "564a46c661b8a1f274c887bfdd37f7c18c73e3deabdd7b915a2bdf846b97e5de",
+      "src/data/questionBanks/commonEyeConditions.js": "9cf92080b88e51d126e8bb61754d4044aca3a8bb5e72ff9d4bf777b02e9d5deb",
+      "src/components/learn/CommonEyeConditionsVisual.jsx": "c95840c3fc2a9d585990d878127e8000f2e84daa3f527bd1d7fcaa73733b72eb"
+    },
+    "script": "/private/tmp/eye-final-scoped.mjs",
+    "viewports": [
+      "1440x1000",
+      "390x844"
+    ],
+    "rows": [
+      "Restasis population evidence",
+      "Omnipred formulation",
+      "Omnipred safety",
+      "Vevye delivery"
+    ],
+    "diagrams": [
+      "inflammation-steroid-boundaries",
+      "sterility-lenses-preservatives"
+    ],
+    "result": "All 12 screenshots visually inspected. Target text fully readable at both widths; mobile tool button occupies diagram bottom padding but does not obscure teaching. No page errors or horizontal overflow. Does not cover outstanding earlier rows or assessment interaction."
+  },
+  "outstandingRowsRenderValidation": {
+    "date": "2026-09-26",
+    "script": "/private/tmp/eye-outstanding-rows.mjs",
+    "viewports": [
+      "1440x1000",
+      "390x844"
+    ],
+    "scope": "22 previously outstanding rows: FML/Flarex, Alrex/Lotemax formulations, dry-eye foundations and lubricants, contact-lens hygiene, redness OTC products, prednisolone and Maxidex.",
+    "result": "All 44 captures visually inspected. No browser errors or horizontal overflow. Maxidex mobile final lines were inspected in an additional scrolled capture /private/tmp/eye-maxidex-tail-mobile.png because the floating tools button overlapped the first capture bottom. Together the two captures show the complete target text.",
+    "limitation": "Scoped local preview; does not establish whole-module clinical verification or live deployment."
+  },
+  "finalClosure": {
+    "date": "2026-09-26",
+    "status": "resolved_for_common_eye_module",
+    "evidence": "common-eye-completion-review.json",
+    "note": "Earlier statuses, counts and pending text are historical snapshots. Final completion record and its lesson mapping supersede Common Eye remaining-work statements. Ear-module work remains separate."
+  }
+}

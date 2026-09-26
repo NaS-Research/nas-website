@@ -1,0 +1,67 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_product_review",
+  "module": "common-eye-conditions",
+  "sources": [
+    {
+      "label": "DailyMed. Tryptyr prescribing information and instructions, May 2025",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=2b7715a1-035c-4002-b582-5238efee5d58&type=display"
+    }
+  ],
+  "readScope": "Read full prescribing text, trial table, Instructions for Use text and packaging text. Embedded images not inspected.",
+  "finding": "Added missing acoltremon coverage and original storage assessment.",
+  "labelDiscrepancy": "PI and IFU condition the 30-day limit on room-temperature storage; displayed carton text applies 30 days after opening across 2\u201325 C. Lesson uses PI wording and directs adherence to stricter dispensed-package instructions. No claim that refrigerated open cartons universally remain usable indefinitely.",
+  "validation": "Question bank imports with 149 unique IDs; git diff --check passes. Rendered validation pending.",
+  "remaining": [
+    "Complete dry-eye foundation review",
+    "Remaining cyclosporine formulation instructions",
+    "Full clinical question-bank review",
+    "Final module validation"
+  ],
+  "latestRenderValidation": {
+    "date": "2026-09-26",
+    "viewports": [
+      "1440x1000",
+      "390x844"
+    ],
+    "row": "tryptyr",
+    "result": "Both screenshots visually inspected: legible, unclipped text. Browser reports no page errors or horizontal overflow. Assessment interaction checks for the latest cases remain pending.",
+    "script": "/private/tmp/eye-latest-preview.mjs",
+    "screenshots": [
+      "/private/tmp/eye-tryptyr-desktop.png",
+      "/private/tmp/eye-tryptyr-mobile.png"
+    ],
+    "sha256": {
+      "src/data/modules/commonEyeConditions.js": "821e09f89825ee6e48d270aab24e0ddf0f904836cf45fac208b62e3b79d53328",
+      "src/data/questionBanks/commonEyeConditions.js": "5243722420e3feb1c0ec0a3b1d18caffd26bb856ba4b5fc0bcc690236b9f49d4"
+    }
+  },
+  "recentCaseValidation": {
+    "sourceHashes": {
+      "src/data/modules/commonEyeConditions.js": "af1b57b1cb18f5be6bdca90c946a4e0c4611e19cb5d97c30e4cbd254455c0365",
+      "src/data/questionBanks/commonEyeConditions.js": "76b74119a7c30409680d81b8a5ce83591303aa2cd24b9513e37fd3b3696fdc4a"
+    },
+    "structural": "154 unique question IDs; four distinct choices, valid keys and matching lesson anchors; module import and scoped diff checks passed.",
+    "render": "Three systemic-drug lesson rows inspected at desktop 1440x1000 and mobile 390x844; no clipping, errors or horizontal overflow.",
+    "assessment": "Ten targeted new/revised cases covered on desktop in 29 randomized attempts and mobile in 17. Verified stems, answer mapping, mixed correct/incorrect scoring, rationales, review targets and incomplete-submission gating. No page errors or overflow. This does not verify clinical accuracy of the whole bank.",
+    "targetIds": [
+      "common-eye-topiramate-urgency",
+      "common-eye-vigabatrin-after-stopping",
+      "common-eye-tamsulosin-history",
+      "common-eye-094",
+      "common-eye-095",
+      "common-eye-096",
+      "common-eye-tryptyr-pouch",
+      "common-eye-ozurdex-route",
+      "common-eye-eysuvis-renewal",
+      "common-eye-106"
+    ],
+    "script": "/private/tmp/eye-recent-cases.mjs"
+  },
+  "finalClosure": {
+    "date": "2026-09-26",
+    "status": "resolved_for_common_eye_module",
+    "evidence": "common-eye-completion-review.json",
+    "note": "Earlier statuses, counts and pending text are historical snapshots. Final completion record and its lesson mapping supersede Common Eye remaining-work statements. Ear-module work remains separate."
+  }
+}

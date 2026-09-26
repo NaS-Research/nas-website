@@ -1,0 +1,43 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_product_review",
+  "module": "common-eye-conditions",
+  "sources": [
+    {
+      "url": "https://www.dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=1ac4540c-d0f7-70bc-e063-6394a90a0f7a&type=display",
+      "label": "DailyMed. Ciprofloxacin 0.3% Sandoz labeling, Redpharm listing",
+      "scope": "Full prescribing text read; chemical and package images not inspected."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=ad40954d-0b1d-47c5-8bd5-8a1efd9a7153",
+      "label": "DailyMed. Bausch + Lomb ofloxacin 0.3%, April 2023",
+      "scope": "Full prescribing text read; chemical and package images not inspected."
+    }
+  ],
+  "findings": [
+    "Added distinct conjunctivitis and corneal-ulcer schedules with original applied question.",
+    "Ciprofloxacin label PI April2018 is carried in current Redpharm SPL May2026; preserved exact presentation attribution.",
+    "Ofloxacin PI April2023/SPL June2025 does not establish use below one year, unlike reviewed ciprofloxacin label.",
+    "Ciprofloxacin crystalline ulcer deposit teaching retains assessment requirement and avoids equating any new opacity with benign precipitation."
+  ],
+  "remaining": [
+    "Remaining antibiotics and allergy agents",
+    "Systemic/neonatal/herpetic pathways",
+    "Full lesson/bank/visual review and integrated validation"
+  ],
+  "validation": {
+    "import": "11 lessons and136 unique questions; answer-index and review-anchor checks passed; diff whitespace check passed.",
+    "render": "Six paragraph captures at1440x1000 and390x844 visually inspected. Complete text is legible without clipping; no page errors or horizontal overflow.",
+    "pending": "Full bank clinical review and new-case scoring/link interaction check; remaining clinical module review and final build."
+  },
+  "hashes": {
+    "src/data/modules/commonEyeConditions.js": "94548b6fa2dd43125c1cf645a3ea69ad747b045d88c71fee2611dd102e008c22",
+    "src/data/questionBanks/commonEyeConditions.js": "971687b1b15199683a28f84755310527f0d9b82c2880805d97c06170906bb5a2"
+  },
+  "finalClosure": {
+    "date": "2026-09-26",
+    "status": "resolved_for_common_eye_module",
+    "evidence": "common-eye-completion-review.json",
+    "note": "Earlier statuses, counts and pending text are historical snapshots. Final completion record and its lesson mapping supersede Common Eye remaining-work statements. Ear-module work remains separate."
+  }
+}

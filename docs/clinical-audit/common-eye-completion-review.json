@@ -1,0 +1,203 @@
+{
+  "module": "common-eye-conditions",
+  "reviewDate": "2026-09-26",
+  "status": "verified",
+  "meaning": "Completed agent clinical-content audit and implementation review; not independent pharmacist review or certification.",
+  "bookScope": {
+    "edition": "RxPrep 2023, user-confirmed intended edition",
+    "chapter": 38,
+    "printedPages": [
+      540,
+      543,
+      544,
+      545
+    ],
+    "topics": [
+      "Ocular triage and route/formulation boundaries",
+      "Infectious, allergic and chemical conjunctivitis; book-listed antibacterial and allergy agents",
+      "Blepharitis; dry-eye foundations and symptom-directed care",
+      "Book-listed steroid and NSAID formulations; lubricant, chronic dry-eye and redness products",
+      "Medication-associated ocular injury and eye-drop counseling"
+    ],
+    "chapterLimit": "Ear conditions remain assigned to common-ear-conditions and are not marked complete. Glaucoma was separately completed; mixed eye/ear route subsection remains open until the ear audit."
+  },
+  "actualContentRead": {
+    "lessons": 12,
+    "teachingPassages": 142,
+    "embeddedChecks": 12,
+    "assessmentQuestions": 174,
+    "diagrams": 12,
+    "references": 104,
+    "scope": "All current lesson bodies, overview/outcomes, concepts, summaries, application text, key points, embedded check choices/keys/explanations, and reference entries read in the final pass. All 174 materialized assessment stems, choices, keys and rationales read in the documented bank pass; final bank change only replaces a range dash. All 12 diagram data entries read against the corresponding corrected clinical content.",
+    "referenceCleanup": "Removed five redundant older label links; current product-specific reviewed references retained. Numeric range dashes normalized to repository style without changing doses."
+  },
+  "lessonCoverage": [
+    {
+      "slug": "red-eye-triage",
+      "passages": 4,
+      "status": "verified",
+      "evidence": [
+        "common-eye-conjunctivitis-review.json",
+        "common-eye-foundations-review.json"
+      ]
+    },
+    {
+      "slug": "infectious-conjunctivitis",
+      "passages": 22,
+      "status": "verified",
+      "evidence": [
+        "common-eye-conjunctivitis-review.json",
+        "common-eye-antibacterial-review.json",
+        "common-eye-fluoroquinolone-review.json",
+        "common-eye-ciprofloxacin-ofloxacin-review.json",
+        "common-eye-additional-antibiotics-review.json",
+        "common-eye-herpetic-review.json",
+        "common-eye-adult-chlamydia-review.json"
+      ]
+    },
+    {
+      "slug": "gonococcal-and-neonatal-eye-infections",
+      "passages": 5,
+      "status": "verified",
+      "evidence": [
+        "common-eye-neonatal-review.json"
+      ]
+    },
+    {
+      "slug": "allergic-conjunctivitis",
+      "passages": 15,
+      "status": "verified",
+      "evidence": [
+        "common-eye-otc-allergy-review.json"
+      ]
+    },
+    {
+      "slug": "blepharitis-demodex",
+      "passages": 6,
+      "status": "verified",
+      "evidence": [
+        "common-eye-blepharitis-review.json"
+      ]
+    },
+    {
+      "slug": "dry-eye-foundations",
+      "passages": 5,
+      "status": "verified",
+      "evidence": [
+        "common-eye-foundations-review.json"
+      ]
+    },
+    {
+      "slug": "dry-eye-pharmacotherapy",
+      "passages": 15,
+      "status": "verified",
+      "evidence": [
+        "common-eye-foundations-review.json",
+        "common-eye-cyclosporine-review.json",
+        "common-eye-lifitegrast-review.json",
+        "common-eye-new-dry-eye-options-review.json",
+        "common-eye-acoltremon-review.json",
+        "common-eye-eysuvis-review.json"
+      ]
+    },
+    {
+      "slug": "inflammation-steroid-boundaries",
+      "passages": 35,
+      "status": "verified",
+      "evidence": [
+        "common-eye-inflammation-review.json",
+        "common-eye-prednisolone-review.json",
+        "common-eye-maxidex-review.json",
+        "common-eye-fluorometholone-review.json",
+        "common-eye-loteprednol-formulations-review.json",
+        "common-eye-tobradex-review.json",
+        "common-eye-ketorolac-review.json",
+        "common-eye-nepafenac-review.json",
+        "common-eye-diclofenac-flurbiprofen-review.json",
+        "common-eye-bromfenac-review.json"
+      ]
+    },
+    {
+      "slug": "redness-medication-injury",
+      "passages": 21,
+      "status": "verified",
+      "evidence": [
+        "common-eye-redness-otc-review.json",
+        "common-eye-hydroxychloroquine-review.json",
+        "common-eye-chloroquine-review.json",
+        "common-eye-systemic-drug-injury-review.json",
+        "common-eye-optic-neuropathy-review.json",
+        "common-eye-color-night-vision-review.json"
+      ]
+    },
+    {
+      "slug": "ophthalmic-dosage-technique",
+      "passages": 4,
+      "status": "verified",
+      "evidence": [
+        "common-eye-foundations-review.json",
+        "common-eye-cyclosporine-review.json"
+      ]
+    },
+    {
+      "slug": "sterility-lenses-preservatives",
+      "passages": 6,
+      "status": "verified",
+      "evidence": [
+        "common-eye-foundations-review.json"
+      ]
+    },
+    {
+      "slug": "special-populations-follow-up",
+      "passages": 4,
+      "status": "verified",
+      "evidence": [
+        "common-eye-foundations-review.json",
+        "common-eye-neonatal-review.json"
+      ]
+    }
+  ],
+  "discrepancies": [
+    "School return is conditional on symptoms/contact risk and clinician guidance, not a universal antibiotic prerequisite.",
+    "Steroid-antibiotic combinations need a diagnosed steroid-responsive indication; not routine undifferentiated conjunctivitis therapy.",
+    "Ozurdex is an intravitreal implant, not a surface eye drop.",
+    "Mild versus severe inflammation alone does not select NSAID versus steroid; indication and corneal/infection risks govern.",
+    "Contact-lens intervals, product spacing, preparation, drop count, storage and discard instructions are formulation-specific. Preservative-free products can still burn and may be single-use or multidose.",
+    "Current systemic CDC neonatal and adult gonococcal/chlamydial pathways supersede legacy topical-label implications. Ceftriaxone neonatal label versus guidance differences are disclosed with specialist resolution.",
+    "Older availability listings are qualified; FDA 2026 Orange Book confirms Alomide discontinued. Historical formulations are not current supply recommendations.",
+    "PDE5/NAION temporal association is not established causation. Ocular medication injury is not uniformly reversible.",
+    "AAO 2025 retinal screening revision supersedes older screening simplifications; severe-obesity abstract/full-text wording is documented.",
+    "Systane, Clear Eyes and bromfenac structured strength anomalies are resolved against product labeling, with conversions recorded."
+  ],
+  "numericalValidation": [
+    "Neonatal erythromycin: 3.2 kg x 50 mg/kg/day / 4 = 40 mg per dose.",
+    "Systane propylene glycol 0.6% = 6 mg/mL; Clear Eyes naphazoline 0.012% = 0.12 mg/mL and glycerin 0.25% = 2.5 mg/mL.",
+    "Bromfenac 0.09% free acid = 0.9 mg/mL; salt-equivalent labeling must not be misread as free-acid strength.",
+    "Cross-module HCQ calculations: 68 x 5 = 340 mg/day; 400/60 = 6.6667 mg/kg/day and 60 x 5 = 300 mg/day."
+  ],
+  "validation": {
+    "structural": "Scoped repository audit passed with no hard errors, source gaps or size advisories; 174 questions. Non-blocking two-question neonatal lesson coverage advisory retained: two applied cases plus an embedded check, with depth determined by subject rather than a fixed count.",
+    "build": "Isolated next build --webpack passed, 558/558 pages. Three implementation files byte-matched to the preview before completion.",
+    "visual": "Changed teaching inspected at 1440x1000 and 390x844 across the topic records; final lid-hygiene row also inspected at both sizes. Revised steroid/sterility and new neonatal diagrams inspected. Tall Maxidex mobile text confirmed across two scroll positions. No observed page errors or horizontal overflow.",
+    "assessment": "Targeted randomized desktop/mobile runs verified changed infection, allergy, dry-eye, drug-toxicity, steroid and NSAID cases: stems, shuffled answer mapping, scoring, explanations, review links and incomplete-submit gating. See topic records and common-eye-assessment-review.json.",
+    "crossModule": "common-eye-cross-module-review.json",
+    "logs": [
+      "/private/tmp/common-eye-structural-audit.log",
+      "/private/tmp/common-eye-final-build.log"
+    ]
+  },
+  "sourceHashes": {
+    "src/data/modules/commonEyeConditions.js": "cb4423234168709cc3ab260d82df74bd23df76cdb0f072cd79516ef0f5175f76",
+    "src/data/questionBanks/commonEyeConditions.js": "e4f95a452d9462858ee7da8ffadc57a7508d0454cd88ab24043d735424fae51b",
+    "src/components/learn/CommonEyeConditionsVisual.jsx": "c95840c3fc2a9d585990d878127e8000f2e84daa3f527bd1d7fcaa73733b72eb"
+  },
+  "unresolvedMaterialIssues": [],
+  "limitations": [
+    "Verification is date-specific and is not a certification or patient-specific treatment recommendation.",
+    "Some publisher pages were inaccessible directly; read scope of indexed primary abstracts/passages is explicitly recorded. No claim of reading inaccessible entire articles or label artwork.",
+    "Historical/discontinued product coverage does not prove local pharmacy stock.",
+    "Build and browser checks used an isolated local application checkout; unrelated concurrent working-tree changes and live deployment were excluded.",
+    "Temporary screenshots and source PDFs remain private local artifacts; the reference book is not staged."
+  ],
+  "release": "Commit and push audit branch only; no publish/deploy."
+}

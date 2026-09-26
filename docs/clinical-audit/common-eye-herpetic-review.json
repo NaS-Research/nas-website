@@ -1,0 +1,44 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_pathway_review",
+  "module": "common-eye-conditions",
+  "sources": [
+    {
+      "label": "DailyMed. Zirgan prescribing information, January 2026",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=ea25e7ac-7a93-4ec8-975b-2cec197e1c27"
+    },
+    {
+      "label": "University of Iowa EyeRounds. Herpes simplex keratitis: epithelial and immune disease",
+      "href": "https://eyerounds.org/cases/160-HSV.htm"
+    }
+  ],
+  "readScope": [
+    "Zirgan current prescribing text: indication, dosing, warnings, adverse reactions, special populations, pharmacology; storage and counseling text returned in search. No package imagery reviewed.",
+    "Iowa clinical course and medical-therapy passages distinguishing epithelial infection from immune stromal/endothelial disease. Historical institutional regimens were not adopted as universal current dosing."
+  ],
+  "findings": [
+    "Expanded the prior generic antiviral referral into explicit corneal-layer and steroid boundaries.",
+    "Added healing-based Zirgan dosing, age threshold, handling, lens restrictions and two original assessment cases."
+  ],
+  "remaining": [
+    "Adult chlamydial ocular treatment",
+    "Remaining module content and all materialized questions",
+    "Desktop/mobile rendering and interaction validation",
+    "Final application build"
+  ],
+  "validation": {
+    "import": "12 lessons and 140 unique questions; answer indices and all review anchors pass.",
+    "whitespace": "git diff --check passed.",
+    "pending": "Desktop/mobile rendering, assessment interactions, full module clinical review and final build."
+  },
+  "hashes": {
+    "src/data/modules/commonEyeConditions.js": "07af06518d7764fe0d884ecde2ceea5bdf0d4694f4cdfabb0f3a523a5982b8c8",
+    "src/data/questionBanks/commonEyeConditions.js": "7044d58da909f8778b84d32bfc989d00141bc07edeae570fe20a656a9baeb093"
+  },
+  "finalClosure": {
+    "date": "2026-09-26",
+    "status": "resolved_for_common_eye_module",
+    "evidence": "common-eye-completion-review.json",
+    "note": "Earlier statuses, counts and pending text are historical snapshots. Final completion record and its lesson mapping supersede Common Eye remaining-work statements. Ear-module work remains separate."
+  }
+}

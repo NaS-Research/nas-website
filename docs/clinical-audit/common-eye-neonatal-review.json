@@ -1,0 +1,75 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_pathway_review",
+  "module": "common-eye-conditions",
+  "sources": [
+    {
+      "label": "CDC. Gonococcal infections: adult conjunctivitis",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/gonorrhea-adults.htm"
+    },
+    {
+      "label": "CDC. Gonococcal infections among neonates",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/gonorrhea-neonates.htm"
+    },
+    {
+      "label": "CDC. Chlamydial infections: neonatal ophthalmia",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/chlamydia.htm"
+    },
+    {
+      "label": "DailyMed. Ceftriaxone neonatal contraindications",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=467f49f7-1a35-49c1-88aa-acc2f27adc2b"
+    },
+    {
+      "label": "UCSF. Neonatal ceftriaxone safety criteria and ophthalmia exception",
+      "url": "https://idmp.ucsf.edu/content/safety-criteria-for-ceftriaxone-administration-to-neonates"
+    }
+  ],
+  "readScope": [
+    "CDC adult gonococcal-conjunctivitis section and related displayed diagnostic/treatment/partner text.",
+    "CDC neonatal gonorrhea prevention, ophthalmia, disseminated disease and exposed-neonate sections.",
+    "CDC chlamydia neonatal ophthalmia and related displayed pregnancy/pneumonia/children text. Adult chlamydial ocular treatment still needs targeted review.",
+    "Ceftriaxone contraindications and calcium warning/dosing passages; not full label review.",
+    "Entire UCSF neonatal safety page, including single-dose ophthalmia exception."
+  ],
+  "findings": [
+    "Created a separate lesson because urgent systemic/neonatal pathways require more depth than the expanding topical treatment lesson.",
+    "Documented CDC caution versus labeling contraindications and specialist institutional exceptions without granting blanket permission to bypass restrictions.",
+    "Added two original assessments; independent Decimal calculation confirms160mg/day and40mg/dose for3.2kg at50mg/kg/day dividedQID.",
+    "Cefotaxime is presented as CDC-listed alternative requiring availability/protocol verification; no automatic replacement specified."
+  ],
+  "remaining": [
+    "Adult chlamydial ocular and herpetic disease treatment",
+    "Remaining topical products and other module topics",
+    "Read all materialized assessment choices and keys; render new lesson and test cases; final build"
+  ],
+  "validation": {
+    "calculation": "Python Decimal pass",
+    "pending": "Rendered lesson and dedicated visual, new assessment interactions, full module review/build",
+    "import": "12 lessons and138 unique questions import; answer indices and all bank/embedded-check review anchors valid. Diff whitespace check passed before dedicated visual addition."
+  },
+  "hashes": {
+    "src/data/modules/commonEyeConditions.js": "fd43ab3541b39a2c9dde2bea50d0be81c88f708a498abdb43c10134632ef9a75",
+    "src/data/questionBanks/commonEyeConditions.js": "6d27840b35435cf8ebf08b14a9f38f5ea249900d661a9dd9954482c4e876f380",
+    "src/components/learn/CommonEyeConditionsVisual.jsx": "842217fe85df82772b2f3fd2b69ce90167202ed0079aa014ab6e51fd085234b5"
+  },
+  "finalDiagramValidation": {
+    "date": "2026-09-26",
+    "script": "/private/tmp/eye-neonatal-visual-final.mjs",
+    "viewports": [
+      "1440x1000",
+      "390x844"
+    ],
+    "result": "Desktop and both mobile scroll-position captures inspected. All four diagram nodes and text readable; no page errors or horizontal overflow. Diagram accurately presents systemic evaluation, product/age restrictions, systemic treatment and follow-up without substituting a topical-only regimen.",
+    "captures": [
+      "/private/tmp/eye-neonatal-visual-final-desktop-top.png",
+      "/private/tmp/eye-neonatal-visual-final-mobile-top.png",
+      "/private/tmp/eye-neonatal-visual-final-mobile-bottom.png"
+    ]
+  },
+  "finalClosure": {
+    "date": "2026-09-26",
+    "status": "resolved_for_common_eye_module",
+    "evidence": "common-eye-completion-review.json",
+    "note": "Earlier statuses, counts and pending text are historical snapshots. Final completion record and its lesson mapping supersede Common Eye remaining-work statements. Ear-module work remains separate."
+  }
+}

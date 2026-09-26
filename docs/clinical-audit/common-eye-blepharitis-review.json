@@ -1,0 +1,70 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_lesson_review",
+  "module": "common-eye-conditions",
+  "sources": [
+    {
+      "label": "NEI. Blepharitis, December 2024",
+      "href": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/blepharitis"
+    },
+    {
+      "label": "DailyMed. Xdemvy prescribing information",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=ccd9e37c-654e-4e84-8c85-6523457df979&type=display"
+    }
+  ],
+  "readScope": "NEI full clinical page and Xdemvy prescribing text including clinical tables, storage and counseling; no label figures or package imagery inspected. Current lesson, related three bank concept rows and embedded check inspected.",
+  "findings": [
+    "Existing anterior/posterior disease and chronic care principles consistent with reviewed sources.",
+    "Expanded lid-cleaning instructions and six-week lotilaner dosing, missed dose, spacing, lens interval, age and follow-up.",
+    "New treatment goes beyond RxPrep 2023 baseline; Xdemvy initial FDA approval was 2023."
+  ],
+  "validation": {
+    "pending": "New row rendering and case interaction, comprehensive question read and final build"
+  },
+  "remaining": [
+    "Complete remaining module topics",
+    "Current lodoxamide source resolution",
+    "Full assessment clinical review"
+  ],
+  "renderValidation": {
+    "date": "2026-09-26",
+    "viewports": [
+      "1440x1000",
+      "390x844"
+    ],
+    "inspectedRows": [
+      "lotilaner"
+    ],
+    "result": "Screenshots visually inspected; text legible without clipping. No page errors or horizontal overflow. This is scoped rendering evidence, not full module clinical verification.",
+    "script": "/private/tmp/eye-dry-preview.mjs",
+    "screenshots": [
+      "/private/tmp/eye-lotilaner-desktop.png",
+      "/private/tmp/eye-lotilaner-mobile.png"
+    ],
+    "sha256": {
+      "src/data/modules/commonEyeConditions.js": "3b63e162d81d2fc855511966b054e5af669fb524638286db453ac55dfa8672e2",
+      "src/data/questionBanks/commonEyeConditions.js": "b43f84ec120e657bf43eb182cd67edb94447f65ac2af65ffe4f70bedeba0e7a6",
+      "src/components/learn/CommonEyeConditionsVisual.jsx": "842217fe85df82772b2f3fd2b69ce90167202ed0079aa014ab6e51fd085234b5"
+    }
+  },
+  "assessmentInteractionValidation": {
+    "date": "2026-09-26",
+    "script": "/private/tmp/eye-dry-cases.mjs",
+    "coveredIds": [
+      "common-eye-lotilaner-missed",
+      "common-eye-vevye-delivery",
+      "common-eye-lifitegrast-allergy",
+      "common-eye-miebo-lenses",
+      "common-eye-tyrvaya-route"
+    ],
+    "desktopAttempts": 56,
+    "mobileAttempts": 16,
+    "result": "All five cases encountered on both viewports. Stem/choice mapping, mixed correct/incorrect scoring, explanations, answer marking, review anchors and incomplete-submit gate passed; no page errors or horizontal overflow. Does not establish clinical review of all generated questions."
+  },
+  "finalClosure": {
+    "date": "2026-09-26",
+    "status": "resolved_for_common_eye_module",
+    "evidence": "common-eye-completion-review.json",
+    "note": "Earlier statuses, counts and pending text are historical snapshots. Final completion record and its lesson mapping supersede Common Eye remaining-work statements. Ear-module work remains separate."
+  }
+}

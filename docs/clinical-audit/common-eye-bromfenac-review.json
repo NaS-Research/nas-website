@@ -1,0 +1,84 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_module_review",
+  "sources": [
+    {
+      "product": "Prolensa",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=4e072537-f73c-4a96-a65f-e2805ce112d8",
+      "readScope": "Full prescribing text; BromSite IFU text read. Chemical, carton and IFU images not inspected."
+    },
+    {
+      "product": "BromSite",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=144a5072-341b-4591-8705-773b63044bcc",
+      "readScope": "Full prescribing text; BromSite IFU text read. Chemical, carton and IFU images not inspected."
+    },
+    {
+      "product": "Alembic bromfenac 0.09%",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=225070ee-d862-4d41-84b8-5bd7a8a03fd7",
+      "readScope": "Full prescribing text reviewed; images not inspected."
+    },
+    {
+      "product": "Historical Xibrom and Bromday",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2011-08-03/pdf/2011-19566.pdf",
+      "readScope": "FDA Federal Register background excerpt establishing dosing distinction; not a current availability assertion."
+    }
+  ],
+  "changes": [
+    "Added distinct schedules, drop sequencing, BromSite inversion/flick, storage/discard and lens precautions.",
+    "Added Prolensa sulfite warning and shared NSAID corneal precautions.",
+    "Added 0.09% product-specific schedule and historical Xibrom distinction. No current brand availability claim."
+  ],
+  "remaining": [
+    "Whole-module reconciliation"
+  ],
+  "validation": "Module import and scoped whitespace checks passed; rendered validation pending.",
+  "sourceDiscrepancies": [
+    "Alembic structured product table reports free acid as 1.035 mg/mL, while prescribing description correctly identifies 1.035 mg sodium equivalent to 0.9 mg free acid. Teaching retains labeled 0.09%, not erroneous structured free-acid value."
+  ],
+  "scopedUIValidation": {
+    "reviewDate": "2026-09-26",
+    "scope": [
+      "Use Lotemax gel by its own directions",
+      "Verify the exact bromfenac 0.09% product"
+    ],
+    "viewports": [
+      "1440x1000",
+      "390x844"
+    ],
+    "result": "Both target rows fully visible and visually inspected at both widths. No page errors or horizontal overflow. Neighboring rows partially visible are not counted as inspected.",
+    "screenshots": [
+      "/private/tmp/eye-current-lotemax-desktop.png",
+      "/private/tmp/eye-current-lotemax-mobile.png",
+      "/private/tmp/eye-current-bromfenac-desktop.png",
+      "/private/tmp/eye-current-bromfenac-mobile.png"
+    ],
+    "moduleSHA256": "bd5ad0aa087b8254397a31626ff5280279ea6d4b6354a91d8f60ab49be4c421d",
+    "limitations": "Scoped preview only. Other newly added rows and full module validation remain pending. Not live-site verification."
+  },
+  "additionalUIValidation": {
+    "reviewDate": "2026-09-26",
+    "rows": [
+      "prolensa",
+      "bromprecautions"
+    ],
+    "viewports": [
+      "1440x1000",
+      "390x844"
+    ],
+    "moduleSHA256": "bd5ad0aa087b8254397a31626ff5280279ea6d4b6354a91d8f60ab49be4c421d",
+    "screenshots": [
+      "/private/tmp/eye-current-prolensa-desktop.png",
+      "/private/tmp/eye-current-prolensa-mobile.png",
+      "/private/tmp/eye-current-bromprecautions-desktop.png",
+      "/private/tmp/eye-current-bromprecautions-mobile.png"
+    ],
+    "result": "All listed target rows visually inspected in full at both viewports; no horizontal overflow or page errors. Adjacent partial rows not counted.",
+    "limitations": "Local isolated preview; not full module or live-site verification."
+  },
+  "finalClosure": {
+    "date": "2026-09-26",
+    "status": "resolved_for_common_eye_module",
+    "evidence": "common-eye-completion-review.json",
+    "note": "Earlier statuses, counts and pending text are historical snapshots. Final completion record and its lesson mapping supersede Common Eye remaining-work statements. Ear-module work remains separate."
+  }
+}

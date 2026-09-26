@@ -1,0 +1,112 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_module_review",
+  "book": "RxPrep 2023 p543 antibiotic options",
+  "sources": [
+    {
+      "label": "DailyMed. Erythromycin ophthalmic ointment",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=c49ad63b-c2fd-4535-bec0-6415c93cf847&type=display"
+    },
+    {
+      "label": "DailyMed. Tobramycin ophthalmic solution",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=1bc42198-c742-1193-e063-6294a90ab930&type=display"
+    },
+    {
+      "label": "DailyMed. Gentamicin ophthalmic solution",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=5ac8ea7a-ee89-49f5-8d30-6dbb56503d94&type=display"
+    },
+    {
+      "label": "DailyMed. Neomycin/polymyxin B/bacitracin ophthalmic ointment",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=f3231f1c-665e-4efa-baa1-83bf296b2f8f&type=display"
+    },
+    {
+      "label": "DailyMed. Sulfacetamide ophthalmic solution",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=1cff1fe9-f871-2f18-e063-6294a90a14d9&type=display"
+    }
+  ],
+  "readScope": "Full prescribing text of the five selected listed products read; chemical-structure illustrations not used.",
+  "changes": [
+    "Added five product-specific original rows and three cases."
+  ],
+  "discrepancies": [
+    "Erythromycin listing still claims chlamydial prophylaxis and names an older penicillin neonatal regimen. CDC chlamydia and neonatal gonorrhea pages rechecked; keep current CDC-based neonatal teaching, not these legacy label passages.",
+    "Gentamicin organism list includes N. gonorrhoeae; in-vitro listing does not replace CDC systemic treatment.",
+    "Sulfacetamide trachoma passage is not used as modern systemic trachoma guidance; that topic needs its own source reconciliation if added."
+  ],
+  "cdcSources": [
+    "https://www.cdc.gov/std/treatment-guidelines/chlamydia.htm",
+    "https://www.cdc.gov/std/treatment-guidelines/gonorrhea-neonates.htm"
+  ],
+  "remaining": [
+    "Desktop/mobile checks of five rows and three cases",
+    "Remaining topical anti-inflammatory products",
+    "Whole-module validation and cross-module consistency"
+  ],
+  "latestScopedUIValidation": {
+    "reviewDate": "2026-09-26",
+    "viewports": [
+      "1440x1000",
+      "390x844"
+    ],
+    "sourceHashes": {
+      "src/data/modules/commonEyeConditions.js": "999d51e8e9231578bba317ccaa90da9bc39acacb8995ced7c68bd629078a42ba",
+      "src/data/questionBanks/commonEyeConditions.js": "dd80bfac2e32174fc1150d57e94ef492d864b802a1e42c3c82d6ec9a57f78299",
+      "src/components/learn/CommonEyeConditionsVisual.jsx": "842217fe85df82772b2f3fd2b69ce90167202ed0079aa014ab6e51fd085234b5"
+    },
+    "visual": "Fourteen recent lesson rows visually inspected on desktop and mobile (28 captures). Acular LS desktop capture repeated after settling; complete text confirmed. No horizontal overflow or browser errors.",
+    "assessment": "Nine targeted cases covered in 24 desktop and 44 mobile randomized attempts. Checked stems, four-choice answer mapping, mixed correct/incorrect scoring, explanations, lesson anchors and incomplete-submission gating. No page errors or horizontal overflow.",
+    "targetIds": [
+      "common-eye-tobradex-st-lenses",
+      "common-eye-preservative-free-burning",
+      "common-eye-neomycin-sensitization",
+      "common-eye-sulfacetamide-coverage",
+      "common-eye-tobramycin-formulation",
+      "common-eye-chloroquine-surveillance",
+      "common-eye-ketorolac-formulations",
+      "common-eye-ketorolac-corneal-injury",
+      "common-eye-nepafenac-schedule"
+    ],
+    "scripts": [
+      "/private/tmp/eye-batch-preview.mjs",
+      "/private/tmp/eye-batch-cases.mjs",
+      "/private/tmp/eye-acular-recheck.mjs"
+    ],
+    "screenshots": [
+      "/private/tmp/eye-batch-0-desktop.png",
+      "/private/tmp/eye-batch-1-desktop.png",
+      "/private/tmp/eye-batch-2-desktop.png",
+      "/private/tmp/eye-batch-3-desktop.png",
+      "/private/tmp/eye-batch-4-desktop.png",
+      "/private/tmp/eye-batch-5-desktop.png",
+      "/private/tmp/eye-batch-6-desktop.png",
+      "/private/tmp/eye-batch-7-desktop.png",
+      "/private/tmp/eye-batch-8-desktop.png",
+      "/private/tmp/eye-batch-9-desktop.png",
+      "/private/tmp/eye-batch-10-desktop.png",
+      "/private/tmp/eye-batch-11-desktop.png",
+      "/private/tmp/eye-batch-12-desktop.png",
+      "/private/tmp/eye-batch-13-desktop.png",
+      "/private/tmp/eye-batch-0-mobile.png",
+      "/private/tmp/eye-batch-1-mobile.png",
+      "/private/tmp/eye-batch-2-mobile.png",
+      "/private/tmp/eye-batch-3-mobile.png",
+      "/private/tmp/eye-batch-4-mobile.png",
+      "/private/tmp/eye-batch-5-mobile.png",
+      "/private/tmp/eye-batch-6-mobile.png",
+      "/private/tmp/eye-batch-7-mobile.png",
+      "/private/tmp/eye-batch-8-mobile.png",
+      "/private/tmp/eye-batch-9-mobile.png",
+      "/private/tmp/eye-batch-10-mobile.png",
+      "/private/tmp/eye-batch-11-mobile.png",
+      "/private/tmp/eye-batch-12-mobile.png",
+      "/private/tmp/eye-batch-13-mobile.png"
+    ],
+    "scopeLimit": "Scoped UI verification only; other medication coverage and whole-module clinical audit remain incomplete."
+  },
+  "finalClosure": {
+    "date": "2026-09-26",
+    "status": "resolved_for_common_eye_module",
+    "evidence": "common-eye-completion-review.json",
+    "note": "Earlier statuses, counts and pending text are historical snapshots. Final completion record and its lesson mapping supersede Common Eye remaining-work statements. Ear-module work remains separate."
+  }
+}

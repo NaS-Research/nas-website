@@ -1,0 +1,142 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_product_review",
+  "module": "common-eye-conditions",
+  "sources": [
+    {
+      "label": "DailyMed. Restasis single-use emulsion, September 2024",
+      "href": "https://www.dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=8e24af2b-bc1c-4849-94f2-6df950cdca89&type=display"
+    },
+    {
+      "label": "DailyMed. Cequa prescribing information",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=48c3d8a3-4289-4b52-9189-58b48596095c"
+    },
+    {
+      "label": "DailyMed. Vevye prescribing information, February 2026",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=0a60fccf-7e1b-44fe-e063-6394a90aadd5"
+    },
+    {
+      "label": "DailyMed. Restasis MultiDose prescribing information and instructions, August 2025",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=7224d810-bb96-4682-a942-3355e6e8061a"
+    },
+    {
+      "label": "Harrow. Vevye prescribing information and illustrated Instructions for Use",
+      "href": "https://vevye.com/files/VEVYE-Prescribing-Information.pdf"
+    }
+  ],
+  "readScope": "Restasis displayed indication, preparation, dose, warnings, trial and storage/counseling passages; some special-population and nonclinical passages omitted by returned output. Cequa prescribing text through packaging; storage/patient instructions after line 193 pending. Completed Cequa storage/patient counseling text. Read Vevye full prescribing text including clinical table and storage; separate graphical Instructions for Use not yet inspected. Read full August 2025 Restasis MultiDose prescribing and Instructions for Use text, including special populations and storage. Embedded images not inspected. Completed Restasis single-use special-population, pharmacokinetic and nonclinical passages. Visually read Vevye September 2025 Instructions for Use pages 7\u20139, including bottle/delivery diagrams, against February 2026 DailyMed prescribing text.",
+  "findings": [
+    "Expanded vague cyclosporine formulation advice into distinct Restasis emulsion and Cequa solution preparation, dosing, disposal and spacing.",
+    "Trial endpoint times distinguished from guaranteed onset or comparative efficacy.",
+    "Added Vevye gravity-assisted dispensing, sensation caution, spacing, storage, adult-use evidence boundary and original delivery case. Added Cequa storage.",
+    "Added MultiDose-specific seal check, initial priming, mixing, reuse and current expiry instructions.",
+    "Added single-use Restasis age and reproductive evidence and trial limitation for concurrent anti-inflammatory drugs/punctal plugs; did not convert that limitation into a contraindication.",
+    "Vevye illustrated IFU confirms gravity-first delivery; expanded tamper check, hand/tip hygiene, lower-lid technique, missed-eye instruction and recapping."
+  ],
+  "remaining": [
+    "Lifitegrast and other dry-eye options/foundations",
+    "Full assessment clinical review, rendering and final build"
+  ],
+  "renderValidation": {
+    "date": "2026-09-26",
+    "viewports": [
+      "1440x1000",
+      "390x844"
+    ],
+    "inspectedRows": [
+      "restasis",
+      "cequa",
+      "vevye"
+    ],
+    "result": "Screenshots visually inspected; text legible without clipping. No page errors or horizontal overflow. This is scoped rendering evidence, not full module clinical verification.",
+    "script": "/private/tmp/eye-dry-preview.mjs",
+    "screenshots": [
+      "/private/tmp/eye-restasis-desktop.png",
+      "/private/tmp/eye-restasis-mobile.png",
+      "/private/tmp/eye-cequa-desktop.png",
+      "/private/tmp/eye-cequa-mobile.png",
+      "/private/tmp/eye-vevye-desktop.png",
+      "/private/tmp/eye-vevye-mobile.png"
+    ],
+    "sha256": {
+      "src/data/modules/commonEyeConditions.js": "3b63e162d81d2fc855511966b054e5af669fb524638286db453ac55dfa8672e2",
+      "src/data/questionBanks/commonEyeConditions.js": "b43f84ec120e657bf43eb182cd67edb94447f65ac2af65ffe4f70bedeba0e7a6",
+      "src/components/learn/CommonEyeConditionsVisual.jsx": "842217fe85df82772b2f3fd2b69ce90167202ed0079aa014ab6e51fd085234b5"
+    }
+  },
+  "assessmentInteractionValidation": {
+    "date": "2026-09-26",
+    "script": "/private/tmp/eye-dry-cases.mjs",
+    "coveredIds": [
+      "common-eye-lotilaner-missed",
+      "common-eye-vevye-delivery",
+      "common-eye-lifitegrast-allergy",
+      "common-eye-miebo-lenses",
+      "common-eye-tyrvaya-route"
+    ],
+    "desktopAttempts": 56,
+    "mobileAttempts": 16,
+    "result": "All five cases encountered on both viewports. Stem/choice mapping, mixed correct/incorrect scoring, explanations, answer marking, review anchors and incomplete-submit gate passed; no page errors or horizontal overflow. Does not establish clinical review of all generated questions."
+  },
+  "latestRenderValidation": {
+    "date": "2026-09-26",
+    "viewports": [
+      "1440x1000",
+      "390x844"
+    ],
+    "row": "restasis-md",
+    "result": "Both screenshots visually inspected: legible, unclipped text. Browser reports no page errors or horizontal overflow. Assessment interaction checks for the latest cases remain pending.",
+    "script": "/private/tmp/eye-latest-preview.mjs",
+    "screenshots": [
+      "/private/tmp/eye-restasis-md-desktop.png",
+      "/private/tmp/eye-restasis-md-mobile.png"
+    ],
+    "sha256": {
+      "src/data/modules/commonEyeConditions.js": "821e09f89825ee6e48d270aab24e0ddf0f904836cf45fac208b62e3b79d53328",
+      "src/data/questionBanks/commonEyeConditions.js": "5243722420e3feb1c0ec0a3b1d18caffd26bb856ba4b5fc0bcc690236b9f49d4"
+    }
+  },
+  "ifuInspection": {
+    "pages": [
+      7,
+      8,
+      9
+    ],
+    "localImages": [
+      "/private/tmp/vevye-ifu-7.png",
+      "/private/tmp/vevye-ifu-8.png",
+      "/private/tmp/vevye-ifu-9.png"
+    ],
+    "result": "All three visually read. Existing delivery case remains consistent. New teaching rows not yet rendered."
+  },
+  "finalScopedRenderValidation": {
+    "date": "2026-09-26",
+    "sourceHashes": {
+      "src/data/modules/commonEyeConditions.js": "564a46c661b8a1f274c887bfdd37f7c18c73e3deabdd7b915a2bdf846b97e5de",
+      "src/data/questionBanks/commonEyeConditions.js": "9cf92080b88e51d126e8bb61754d4044aca3a8bb5e72ff9d4bf777b02e9d5deb",
+      "src/components/learn/CommonEyeConditionsVisual.jsx": "c95840c3fc2a9d585990d878127e8000f2e84daa3f527bd1d7fcaa73733b72eb"
+    },
+    "script": "/private/tmp/eye-final-scoped.mjs",
+    "viewports": [
+      "1440x1000",
+      "390x844"
+    ],
+    "rows": [
+      "Restasis population evidence",
+      "Omnipred formulation",
+      "Omnipred safety",
+      "Vevye delivery"
+    ],
+    "diagrams": [
+      "inflammation-steroid-boundaries",
+      "sterility-lenses-preservatives"
+    ],
+    "result": "All 12 screenshots visually inspected. Target text fully readable at both widths; mobile tool button occupies diagram bottom padding but does not obscure teaching. No page errors or horizontal overflow. Does not cover outstanding earlier rows or assessment interaction."
+  },
+  "finalClosure": {
+    "date": "2026-09-26",
+    "status": "resolved_for_common_eye_module",
+    "evidence": "common-eye-completion-review.json",
+    "note": "Earlier statuses, counts and pending text are historical snapshots. Final completion record and its lesson mapping supersede Common Eye remaining-work statements. Ear-module work remains separate."
+  }
+}

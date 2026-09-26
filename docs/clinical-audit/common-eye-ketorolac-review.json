@@ -1,0 +1,96 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_module_review",
+  "book": "RxPrep 2023 printed p544 ketorolac examples",
+  "sources": [
+    {
+      "name": "Acular",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=c94644d3-7b64-4f3d-a0c7-12c77466a0fc&type=display"
+    },
+    {
+      "name": "Acular LS",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=4fad0873-f79c-4f07-9fac-5060be6b38fe&type=display"
+    },
+    {
+      "name": "Acuvail",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=3cea5803-a446-4d2c-9747-f3fb034332c8&type=display"
+    }
+  ],
+  "readScope": "Full prescribing text of all three products reviewed; chemical structure and packaging images not visually inspected. Acular September 2025, Acular LS June 2024, Acuvail May 2024.",
+  "changes": [
+    "Four original lesson rows distinguish indications, schedules, handling and risks.",
+    "Two original cases added. Book names products but does not supply these formulation distinctions."
+  ],
+  "remaining": [
+    "Other topical NSAIDs and steroid formulations",
+    "Desktop/mobile validation of new content",
+    "Complete module clinical review"
+  ],
+  "latestScopedUIValidation": {
+    "reviewDate": "2026-09-26",
+    "viewports": [
+      "1440x1000",
+      "390x844"
+    ],
+    "sourceHashes": {
+      "src/data/modules/commonEyeConditions.js": "999d51e8e9231578bba317ccaa90da9bc39acacb8995ced7c68bd629078a42ba",
+      "src/data/questionBanks/commonEyeConditions.js": "dd80bfac2e32174fc1150d57e94ef492d864b802a1e42c3c82d6ec9a57f78299",
+      "src/components/learn/CommonEyeConditionsVisual.jsx": "842217fe85df82772b2f3fd2b69ce90167202ed0079aa014ab6e51fd085234b5"
+    },
+    "visual": "Fourteen recent lesson rows visually inspected on desktop and mobile (28 captures). Acular LS desktop capture repeated after settling; complete text confirmed. No horizontal overflow or browser errors.",
+    "assessment": "Nine targeted cases covered in 24 desktop and 44 mobile randomized attempts. Checked stems, four-choice answer mapping, mixed correct/incorrect scoring, explanations, lesson anchors and incomplete-submission gating. No page errors or horizontal overflow.",
+    "targetIds": [
+      "common-eye-tobradex-st-lenses",
+      "common-eye-preservative-free-burning",
+      "common-eye-neomycin-sensitization",
+      "common-eye-sulfacetamide-coverage",
+      "common-eye-tobramycin-formulation",
+      "common-eye-chloroquine-surveillance",
+      "common-eye-ketorolac-formulations",
+      "common-eye-ketorolac-corneal-injury",
+      "common-eye-nepafenac-schedule"
+    ],
+    "scripts": [
+      "/private/tmp/eye-batch-preview.mjs",
+      "/private/tmp/eye-batch-cases.mjs",
+      "/private/tmp/eye-acular-recheck.mjs"
+    ],
+    "screenshots": [
+      "/private/tmp/eye-batch-0-desktop.png",
+      "/private/tmp/eye-batch-1-desktop.png",
+      "/private/tmp/eye-batch-2-desktop.png",
+      "/private/tmp/eye-batch-3-desktop.png",
+      "/private/tmp/eye-batch-4-desktop.png",
+      "/private/tmp/eye-batch-5-desktop.png",
+      "/private/tmp/eye-batch-6-desktop.png",
+      "/private/tmp/eye-batch-7-desktop.png",
+      "/private/tmp/eye-batch-8-desktop.png",
+      "/private/tmp/eye-batch-9-desktop.png",
+      "/private/tmp/eye-batch-10-desktop.png",
+      "/private/tmp/eye-batch-11-desktop.png",
+      "/private/tmp/eye-batch-12-desktop.png",
+      "/private/tmp/eye-batch-13-desktop.png",
+      "/private/tmp/eye-batch-0-mobile.png",
+      "/private/tmp/eye-batch-1-mobile.png",
+      "/private/tmp/eye-batch-2-mobile.png",
+      "/private/tmp/eye-batch-3-mobile.png",
+      "/private/tmp/eye-batch-4-mobile.png",
+      "/private/tmp/eye-batch-5-mobile.png",
+      "/private/tmp/eye-batch-6-mobile.png",
+      "/private/tmp/eye-batch-7-mobile.png",
+      "/private/tmp/eye-batch-8-mobile.png",
+      "/private/tmp/eye-batch-9-mobile.png",
+      "/private/tmp/eye-batch-10-mobile.png",
+      "/private/tmp/eye-batch-11-mobile.png",
+      "/private/tmp/eye-batch-12-mobile.png",
+      "/private/tmp/eye-batch-13-mobile.png"
+    ],
+    "scopeLimit": "Scoped UI verification only; other medication coverage and whole-module clinical audit remain incomplete."
+  },
+  "finalClosure": {
+    "date": "2026-09-26",
+    "status": "resolved_for_common_eye_module",
+    "evidence": "common-eye-completion-review.json",
+    "note": "Earlier statuses, counts and pending text are historical snapshots. Final completion record and its lesson mapping supersede Common Eye remaining-work statements. Ear-module work remains separate."
+  }
+}

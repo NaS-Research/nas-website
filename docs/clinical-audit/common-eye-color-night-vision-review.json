@@ -1,0 +1,51 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_module_review",
+  "book": "RxPrep 2023 p545 color discrimination and abnormal vision",
+  "sources": [
+    {
+      "label": "DailyMed. Sildenafil, ocular warning and color-discrimination effects",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=53078688-ad66-4bb2-808c-b76acedd00e3"
+    },
+    {
+      "label": "DailyMed. Isotretinoin, section 5.13 ocular abnormalities",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=31f62a49-4c6d-4ce3-a0ca-d159562370b1"
+    },
+    {
+      "label": "DailyMed. Voriconazole, visual disturbances and monitoring",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f6a1a792-141b-42e8-8bd1-884e4408eb8a"
+    },
+    {
+      "label": "DailyMed. Digoxin, toxicity and visual manifestations",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5500ee2a-077d-486c-b56d-36e0c5e5c31d"
+    }
+  ],
+  "readScope": "Sildenafil 5.3 and color-discrimination pharmacodynamics; isotretinoin 5.13; voriconazole 5.4 and visual adverse-event passages; digoxin 5.3 and indexed visual manifestations.",
+  "changes": [
+    "Added four original counseling rows and four cases.",
+    "Qualified PDE5/NAION temporal association versus causation and distinguished sudden loss from transient color effects.",
+    "Qualified general reversibility and developed monitoring/triage actions."
+  ],
+  "remaining": [
+    "Whole-module reconciliation and cross-module consistency",
+    "Full module final validation"
+  ],
+  "validation": {
+    "date": "2026-09-26",
+    "structural": "161 unique records with four distinct options, valid keys and matching anchors; module import and scoped diff check passed.",
+    "visual": "Seven rows inspected in fourteen screenshots: desktop 1440x1000 and mobile 390x844. Legible, no clipping, no browser errors or horizontal overflow.",
+    "interaction": "All seven new cases covered and checked on desktop in 23 attempts and mobile in 40; scoring, correct-answer mapping, explanations, review links and incomplete-submission gating passed.",
+    "script": "/private/tmp/eye-seven-injuries-cases.mjs",
+    "sourceHashes": {
+      "src/data/modules/commonEyeConditions.js": "46384fe163a38440a49de2f2ed4785e2f4025056f152174145f8200f9a2f66c9",
+      "src/data/questionBanks/commonEyeConditions.js": "3d2f8bfd378c17dc315b4a54925e5c4e86beb970028559e6ad694eee6d0b3eb2"
+    },
+    "scope": "These checks cover the seven new rows/cases, not complete module verification."
+  },
+  "finalClosure": {
+    "date": "2026-09-26",
+    "status": "resolved_for_common_eye_module",
+    "evidence": "common-eye-completion-review.json",
+    "note": "Earlier statuses, counts and pending text are historical snapshots. Final completion record and its lesson mapping supersede Common Eye remaining-work statements. Ear-module work remains separate."
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_product_review",
+  "module": "common-eye-conditions",
+  "sources": [
+    {
+      "label": "DailyMed. Xiidra prescribing information and patient instructions, December 2023",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=1a914080-a3c0-44be-b601-0ae3160e77eb&type=display"
+    }
+  ],
+  "readScope": "Read full prescribing, patient-information and Instructions for Use text, including special populations and clinical-study descriptions. Embedded chemical, efficacy and administration images were not visually inspected.",
+  "work": "Replaced nonspecific lifitegrast counseling with product-specific instructions and added an original urgent-reaction assessment.",
+  "validation": "Question bank imports successfully with 146 unique IDs; git diff --check passes. Desktop/mobile rendering and full clinical assessment review remain pending.",
+  "remaining": [
+    "Visual inspection of changed lesson and assessment",
+    "Other dry-eye products and foundations",
+    "Complete materialized question-bank clinical review",
+    "Final module validation"
+  ],
+  "renderValidation": {
+    "date": "2026-09-26",
+    "viewports": [
+      "1440x1000",
+      "390x844"
+    ],
+    "inspectedRows": [
+      "lifitegrast"
+    ],
+    "result": "Screenshots visually inspected; text legible without clipping. No page errors or horizontal overflow. This is scoped rendering evidence, not full module clinical verification.",
+    "script": "/private/tmp/eye-dry-preview.mjs",
+    "screenshots": [
+      "/private/tmp/eye-lifitegrast-desktop.png",
+      "/private/tmp/eye-lifitegrast-mobile.png"
+    ],
+    "sha256": {
+      "src/data/modules/commonEyeConditions.js": "3b63e162d81d2fc855511966b054e5af669fb524638286db453ac55dfa8672e2",
+      "src/data/questionBanks/commonEyeConditions.js": "b43f84ec120e657bf43eb182cd67edb94447f65ac2af65ffe4f70bedeba0e7a6",
+      "src/components/learn/CommonEyeConditionsVisual.jsx": "842217fe85df82772b2f3fd2b69ce90167202ed0079aa014ab6e51fd085234b5"
+    }
+  },
+  "assessmentInteractionValidation": {
+    "date": "2026-09-26",
+    "script": "/private/tmp/eye-dry-cases.mjs",
+    "coveredIds": [
+      "common-eye-lotilaner-missed",
+      "common-eye-vevye-delivery",
+      "common-eye-lifitegrast-allergy",
+      "common-eye-miebo-lenses",
+      "common-eye-tyrvaya-route"
+    ],
+    "desktopAttempts": 56,
+    "mobileAttempts": 16,
+    "result": "All five cases encountered on both viewports. Stem/choice mapping, mixed correct/incorrect scoring, explanations, answer marking, review anchors and incomplete-submit gate passed; no page errors or horizontal overflow. Does not establish clinical review of all generated questions."
+  },
+  "finalClosure": {
+    "date": "2026-09-26",
+    "status": "resolved_for_common_eye_module",
+    "evidence": "common-eye-completion-review.json",
+    "note": "Earlier statuses, counts and pending text are historical snapshots. Final completion record and its lesson mapping supersede Common Eye remaining-work statements. Ear-module work remains separate."
+  }
+}

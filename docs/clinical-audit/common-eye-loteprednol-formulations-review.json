@@ -1,0 +1,79 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_module_review",
+  "book": "RxPrep 2023 printed p544 loteprednol examples",
+  "sources": [
+    {
+      "product": "Alrex",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=21c76da0-50a1-41c0-91b8-8cc4dcc27f60&type=display",
+      "readScope": "Full prescribing text, March 2022; chemical structure and packaging images not inspected."
+    },
+    {
+      "product": "Lotemax 0.5% gel",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=9a666065-d467-42b8-8ecd-0ec1de9986d5",
+      "readScope": "Full prescribing text reviewed; chemical and package images not inspected."
+    },
+    {
+      "product": "Lotemax 0.5% ointment",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=902a3c6b-2625-44ec-a077-926e012b3176",
+      "readScope": "Full prescribing text reviewed; chemical and package images not inspected."
+    },
+    {
+      "product": "Lotemax suspension",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=f37d74ac-5f9c-40a8-b43b-35148fc66bbe",
+      "readScope": "Prescribing text covering indications, doses, precautions, special populations, storage and counseling reviewed. Images not inspected; SM animal-data lines 156 and 158 not returned by browser extraction."
+    },
+    {
+      "product": "Lotemax SM",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=6f9477b5-699f-4d3b-b9a6-0cc238266237",
+      "readScope": "Prescribing text covering indications, doses, precautions, special populations, storage and counseling reviewed. Images not inspected; SM animal-data lines 156 and 158 not returned by browser extraction."
+    }
+  ],
+  "changes": [
+    "Added Alrex allergy-specific dose, lens restrictions, monitoring and handling; one original case.",
+    "Added gel and ointment dose, handling, postoperative duration, lens restrictions and distinct pediatric labeling. Gel pediatric evidence must not be extrapolated to ointment.",
+    "Added suspension and SM teaching, including suspension uveitis potency limitation, SM TID regimen, product-specific handling and pediatric limitations. No extra assessment added; existing bank retained."
+  ],
+  "remaining": [
+    "Rendered checks",
+    "Full module clinical reconciliation"
+  ],
+  "validation": "Module import and scoped whitespace checks passed after suspension and SM additions. Rendered checks and whole-module clinical verification remain pending.",
+  "scopedUIValidation": {
+    "reviewDate": "2026-09-26",
+    "scope": [
+      "Use Lotemax gel by its own directions",
+      "Verify the exact bromfenac 0.09% product"
+    ],
+    "viewports": [
+      "1440x1000",
+      "390x844"
+    ],
+    "result": "Both target rows fully visible and visually inspected at both widths. No page errors or horizontal overflow. Neighboring rows partially visible are not counted as inspected.",
+    "screenshots": [
+      "/private/tmp/eye-current-lotemax-desktop.png",
+      "/private/tmp/eye-current-lotemax-mobile.png",
+      "/private/tmp/eye-current-bromfenac-desktop.png",
+      "/private/tmp/eye-current-bromfenac-mobile.png"
+    ],
+    "moduleSHA256": "bd5ad0aa087b8254397a31626ff5280279ea6d4b6354a91d8f60ab49be4c421d",
+    "limitations": "Scoped preview only. Other newly added rows and full module validation remain pending. Not live-site verification."
+  },
+  "outstandingRowsRenderValidation": {
+    "date": "2026-09-26",
+    "script": "/private/tmp/eye-outstanding-rows.mjs",
+    "viewports": [
+      "1440x1000",
+      "390x844"
+    ],
+    "scope": "22 previously outstanding rows: FML/Flarex, Alrex/Lotemax formulations, dry-eye foundations and lubricants, contact-lens hygiene, redness OTC products, prednisolone and Maxidex.",
+    "result": "All 44 captures visually inspected. No browser errors or horizontal overflow. Maxidex mobile final lines were inspected in an additional scrolled capture /private/tmp/eye-maxidex-tail-mobile.png because the floating tools button overlapped the first capture bottom. Together the two captures show the complete target text.",
+    "limitation": "Scoped local preview; does not establish whole-module clinical verification or live deployment."
+  },
+  "finalClosure": {
+    "date": "2026-09-26",
+    "status": "resolved_for_common_eye_module",
+    "evidence": "common-eye-completion-review.json",
+    "note": "Earlier statuses, counts and pending text are historical snapshots. Final completion record and its lesson mapping supersede Common Eye remaining-work statements. Ear-module work remains separate."
+  }
+}
