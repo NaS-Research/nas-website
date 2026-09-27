@@ -797,32 +797,45 @@
       "lessons": [
         {
           "slug": "triage-severe-pressure",
-          "status": "unreviewed"
+          "status": "verified"
         },
         {
           "slug": "controlled-pressure-reduction",
-          "status": "unreviewed"
+          "status": "verified"
+        },
+        {
+          "slug": "dihydropyridine-infusions",
+          "status": "verified"
+        },
+        {
+          "slug": "intravenous-drug-safety",
+          "status": "verified"
         },
         {
           "slug": "neurologic-emergencies",
-          "status": "unreviewed"
+          "status": "verified"
         },
         {
           "slug": "cardiovascular-emergencies",
-          "status": "unreviewed"
+          "status": "verified"
         },
         {
           "slug": "special-populations",
-          "status": "unreviewed"
+          "status": "verified"
         },
         {
           "slug": "monitoring-and-transition",
-          "status": "unreviewed"
+          "status": "verified"
         }
       ],
       "questions": 116,
-      "status": "unreviewed",
-      "evidence": []
+      "status": "verified",
+      "evidence": [
+        "pregnancy-lactation-pharmacotherapy.md \u2014 2026-09-25 obstetric triage exception corrections; two lesson UI checks passed, figure captures partially obscured by floating controls, full companion/bank not verified",
+        "2026-09-27: hypertensive-emergencies-review.json; six actual lessons read, book emergency page and clevidipine case inspected. Added three original label-grounded clevidipine paragraphs; structural and desktop/mobile checks passed. Full module review remains open.",
+        "2026-09-27: Split 26-paragraph pressure lesson into three focused lessons without removing teaching paragraphs. Module now has eight lessons, 116 bank questions, and two new embedded checks; all bank and embedded review anchors resolve. Full clinical and new desktop/mobile review remain open.",
+        "2026-09-27: Full module reconciliation completed; hypertensive-emergencies-review.json records actual primary-source reads, discrepancies, eight lessons/embedded checks/visuals,116-question review, independent calculations, desktop/mobile and practice checks, targeted audit and successful cumulative build. No independent pharmacist certification claimed."
+      ]
     },
     {
       "slug": "antihypertensive-medicinal-chemistry",

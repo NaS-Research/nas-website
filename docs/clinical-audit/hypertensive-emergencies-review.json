@@ -1,0 +1,521 @@
+{
+  "module": "hypertensive-emergencies",
+  "status": "verified",
+  "reviewDate": "2026-09-27",
+  "bookRead": [
+    {
+      "chapter": 28,
+      "printedPage": 448,
+      "pdfPage": 456,
+      "scope": "Entire crisis section actual text and rendered page read. Drug-name box inspected. Remaining chapter not claimed read."
+    },
+    {
+      "printedPage": 441,
+      "pdfPage": 449,
+      "scope": "Actual text of clevidipine calculation case read; original numbers and explanation written for NaS. No proprietary case reproduced."
+    },
+    {
+      "chapter": 28,
+      "printedPage": 440,
+      "pdfPage": 448,
+      "scope": "Entire CCB introduction and DHP table actual extracted text and rendered page inspected. Chronic oral-drug and substitution topics remain outside completed review; emergency-relevant nicardipine/clevidipine/nifedipine details reconciled in module."
+    }
+  ],
+  "findings": [
+    {
+      "topic": "Missing explicit emergency timeline and current severe-hypertension distinction",
+      "status": "primary section read; correction notice reconciliation pending",
+      "detail": "Current lesson lacks numerical first-hour/subsequent targets. Book urgency treatment is broader than current setting-specific recommendations. Full2025 guideline and official slide downloads returned403; search snippets not treated as full recommendation review."
+    },
+    {
+      "topic": "Clevidipine delivery and caloric coverage",
+      "source": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=f9290625-b723-4eda-bab8-a97bef6041f6",
+      "sourceScope": "Actual full-label sections2-5 read, including concentration, administration, contraindications and lipid content. Label revised9/2022; current hosted label does not mean2026revision.",
+      "implementation": "Three paragraphs added, including original4mg/hour example and puncture-time distinction.",
+      "independentArithmetic": "4/0.5=8mL/hour;8*24=192mL/day;192*2=384kcal/day;192*0.2=38.4g lipid/day."
+    },
+    {
+      "topic": "General treatment timeline primary-source read",
+      "source": "https://nefro.cl/web/docs/AHA_Hypertension_Guidelines_2025%5B1%5D.pdf",
+      "canonicalSource": "https://doi.org/10.1161/CIR.0000000000001356",
+      "sourceScope": "Actual primary guideline reprint section6.2 recommendation table and supportive text on PDF67-68 read. This is a September2025 download hosted by Chilean nephrology society, with prepublication page placeholders; not claimed corrected2026 edition.",
+      "implementation": "Added attributed timeline paragraph and original arithmetic assessment replacing generated item022. Key2 independently checked:240*0.75=180.",
+      "remaining": "Correction identified in following finding; remaining drug tables and condition-specific sources still require complete reconciliation."
+    },
+    {
+      "topic": "2026 guideline correction identified",
+      "source": "https://www.ahajournals.org/doi/pdf/10.1161/HYP.0000000000000264?download=true",
+      "sourceScope": "Publisher-indexed full correction text returned by web search and read, including changed row, old/new interval and online-update statement. Direct PDF open returned403; no claim rendered PDF inspection. DOI and June2026 identity independently confirmed by author-institution publication record.",
+      "finding": "Table26 labetalol injection interval changes from every2 minutes to10-minute intervals. The correction does not change the section6.2 general timeline. Do not import the old table row from the2025 reprint. Existing pregnancy lesson already uses10-minute reassessment. Full labetalol label reconciliation remains due before adding its detailed regimen."
+    },
+    {
+      "topic": "Labetalol product-label reconciliation",
+      "source": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=99a715a0-4579-410c-b102-7ef6fab8db55",
+      "sourceScope": "Actual sections2-5 read. September2024 label revision, December2025 DailyMed update. Full dosing section broader than highlights repeat-dose wording; teaching attributes full section. Guideline initial weight-based range is not substituted for product-specific labeling.",
+      "implementation": "Two paragraphs and original item046 replace a generated action question. Key2 reviewed against label and previously identified2026 correction.",
+      "remaining": "Current infusions, other medicines, condition-specific pathways, full bank and visual review still open."
+    },
+    {
+      "topic": "Nicardipine product-specific transition boundary",
+      "source": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=9ffe6b6f-b8bc-413f-9bec-7639e9d71d3d",
+      "sourceScope": "Actual June2025 label section2.1-2.2 read, including both premix concentrations, oral substitution, titration, stopping and transition.",
+      "correction": "Removed universal oral-before-infusion-stop implication from transition paragraph and assessment concept. Product-specific distinction now explicit.",
+      "remaining": "Full administration/warnings read and original infusion calculations still due; build63661 began before this correction and cannot validate it."
+    },
+    {
+      "topic": "Nicardipine premix delivery and monitoring",
+      "source": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=9ffe6b6f-b8bc-413f-9bec-7639e9d71d3d",
+      "sourceScope": "Actual full sections2-5 and interaction paragraphs7.3-7.4 read. No historical pregnancy letter category imported.",
+      "implementation": "Two original paragraphs and one calculation case replacing generated item031. Explicit premix scope prevents applying ready-to-use directions to a concentrated vial.",
+      "arithmetic": "7.5/0.2=37.5;7.5/0.1=75. New key1 confirmed.",
+      "remaining": "Need complete concentration-specific rapid-titration maintenance/restart detail and interaction teaching; latest UI/build checks pending."
+    },
+    {
+      "topic": "Transition embedded-check consistency and nicardipine response detail",
+      "source": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=9ffe6b6f-b8bc-413f-9bec-7639e9d71d3d",
+      "sourceScope": "Re-read full sections 2.1-2.3 and 7.3-7.4 on 2026-09-27.",
+      "correction": "Removed universal planned-overlap wording from lesson summary, concept and embedded check. Diagram already limits overlap to pharmacologic need. Added 3 mg/hour post-rapid-titration reduction, intolerance stop/restart distinction and calcineurin-inhibitor monitoring.",
+      "validation": "Targeted structural audit passed: 6 lessons,116 questions. New intolerance/interaction paragraph and transition paragraph fully inspected at desktop1280x900 and mobile390x844. Viewport reset. Embedded-check interaction and final build remain pending."
+    },
+    {
+      "topic": "Clevidipine titration and rebound monitoring coverage",
+      "source": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=f9290625-b723-4eda-bab8-a97bef6041f6",
+      "sourceScope": "Full sections 2 and 5 re-read on 2026-09-27.",
+      "implementation": "Added dosing cadence, limited high-dose/duration experience, cumulative daily volume limit, dose reduction for intolerance, beta-withdrawal limitation and conditional eight-hour rebound monitoring. Original case replaces generated item036; key3 checked against sections2.1/5.6.",
+      "remaining": "UI inspection and cumulative build pending. Other drug tables, primary sources and full assessment review remain open."
+    },
+    {
+      "topic": "Full emergency drug tables read; source conflicts identified",
+      "source": "https://nefro.cl/web/docs/AHA_Hypertension_Guidelines_2025%5B1%5D.pdf",
+      "sourceScope": "Actual entire Tables26 and27 text read on PDF69-70. Pre-correction reprint; known labetalol repeat-interval correction applies.",
+      "discrepancies": [
+        "Table26 describes no negative inotropy for nicardipine/clevidipine; both product labels warn about negative inotropy and heart failure. Preserve label precautions.",
+        "Clevidipine table presents21mg/hour and72hours as maxima; label distinguishes daily lipid-volume limit, limited short-term32mg/hour experience and limited experience beyond72hours. Teach label distinctions.",
+        "Nitroprusside table names cyanocobalamin and treats toxic-metabolite management together. Do not import: needs direct antidote/nitroprusside label reconciliation, separating cyanide from thiocyanate.",
+        "Fenoldopam/enalaprilat/esmolol table details require direct label reconciliation before implementation."
+      ],
+      "remaining": "Condition-specific primary sources and nitroprusside toxicity discrepancy remain open; table reading is not clinical closure."
+    },
+    {
+      "topic": "Nitroprusside toxic-metabolite and antidote discrepancy resolved in teaching",
+      "sources": [
+        "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=72a9b7df-3a2f-4c16-93a9-b645bc0e8143",
+        "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-and-pediatric-special-circumstances-of-resuscitation"
+      ],
+      "sourceScope": "Actual label sections2-5 read; AHA2025 adult cyanide recommendation rows1-2 read. Compared actual Toxicology and Antidotes companion renal/metabolite paragraphs.",
+      "implementation": "Three paragraphs add product-specific dosing/renal limits, distinct metabolite risks and correct hydroxocobalamin rescue name. Original item040 replaces generic hazard question; key1 checked.",
+      "discrepancy": "Do not import cyanocobalamin named in 2025 hypertension Table26. AHA2025 resuscitation specifies hydroxocobalamin; thiocyanate neurotoxicity and dialysis differ from cyanide rescue.",
+      "remaining": "Complete remaining nitroprusside formulation/contraindication coverage, UI and assessment validation. Module stays reviewing.",
+      "validation": "Targeted structural audit passed6 lessons116 questions; diff whitespace check passed. Latest browser inventory exposed tab6 but binding timed out waiting for debugger synchronization. Desktop/mobile inspection of these three newest paragraphs not claimed. Previous build10727 predates these additions."
+    },
+    {
+      "topic": "Fenoldopam label reconciliation",
+      "source": "https://www.pfizermedical.com/corlopam",
+      "sourceScope": "Actual sections1-5,7.1 and8 read, including adult/pediatric preparation and separate age-specific dosing.",
+      "implementation": "Added adult titration/preparation and potassium/beta-blocker precautions; original item043 replaces generic monitoring item, key1 checked.",
+      "discrepancy": "2025 guideline table calls glaucoma/sulfite issues contraindications; product section4 lists none, with ocular/sulfite warnings in section5. Existing NaS risk language retained without falsely attributing formal label contraindications. Adult label starts as low as0.01 rather than guideline table0.1mcg/kg/min.",
+      "remaining": "Pediatric scope, diluted-solution timing and complete UI validation still due. No claim full module completion.",
+      "validation": "Targeted structural audit passed6 lessons116 questions; diff whitespace check passed. Latest fenoldopam desktop/mobile and cumulative build pending."
+    },
+    {
+      "topic": "Esmolol dosing source read in preparation for reconciliation",
+      "source": "https://www.dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=6bb9921c-a0f9-309f-e053-2a91aa0a1e5e&type=display",
+      "sourceScope": "Actual indications and full sections2.1-2.4 read through compatibility paragraph. Hosted repackager label revised7/2015; not assumed newer because recently crawled.",
+      "finding": "Separate tachycardia200mcg/kg/min ceiling from perioperative hypertension300mcg/kg/min. Immediate and gradual perioperative bolus protocols differ. Aortic syndrome use needs guideline-specific reconciliation; do not present perioperative regimen as a universally labeled emergency regimen.",
+      "remaining": "Read full contraindications/warnings, verify current manufacturer labeling and aortic guideline before adding detailed esmolol teaching."
+    },
+    {
+      "topic": "Acute aortic syndrome targets and alternatives",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9876736/",
+      "sourceScope": "Full section7.3.1 recommendation table and supportive text read, plus typeA emergency surgical recommendation7.4.1.1.",
+      "implementation": "Added explicit rate/pressure targets with perfusion boundary, monitored setting, analgesia, urgent surgical evaluation and alternative rate-control class. Original question065 replaces generated principle item; key1 checked.",
+      "remaining": "Drug contraindications and condition-specific esmolol regimen require further reconciliation. Latest UI/build and full bank review pending.",
+      "validation": "Targeted structural audit passed6 lessons116 questions; diff whitespace check passed. Reference now links to actual full primary guideline used for review. New desktop/mobile and cumulative build remain due."
+    },
+    {
+      "topic": "Immediate-release nifedipine population boundary",
+      "sources": [
+        "https://labeling.pfizer.com/ShowLabeling.aspx?format=PDF&id=541",
+        "https://pubmed.ncbi.nlm.nih.gov/30575639/"
+      ],
+      "sourceScope": "Actual label excessive-hypotension/essential-hypertension warning paragraphs read; ACOG767 primary publication abstract read with oral obstetric recommendation. Book printed440 table also read/rendered.",
+      "implementation": "Added explicit nonpregnant acute-use warning and guideline-supported obstetric exception; no dosage extrapolation or claim that the capsule label approves hypertension treatment.",
+      "remaining": "Latest UI/build pending; chapter28 chronic CCB products, equivalence and counseling remain unverified."
+    },
+    {
+      "topic": "ICH target population, timing and evidence limits",
+      "source": "https://www.heart.org/-/media/CPR2-Files/Private/2022-Guideline-for-the-Management-of-Patients-With-Spontaneous-Intracerebral-Hemorrhage-1.pdf",
+      "sourceScope": "Actual section5.1 full five-row recommendation table and supporting text on PDF16-18 read; some later supportive text truncated, not claimed full section closure.",
+      "finding": "Existing embedded harm question correctly matches recommendation5 SBP>150; retain. Recommendation3 target population150-220 is a separate statement.",
+      "implementation": "Added early-treatment timing and explicit large/severe/surgical evidence boundary; replaced generated item054 with original case, key2.",
+      "remaining": "Current ischemic stroke threshold review, complete bank/visual review and cumulative UI/build checks remain open.",
+      "assessmentRead": "Actual assembled items053-056 read with all choices, keys and rationales. Item054 original case checked. Items055-056 retain generic distractors that overlap clinically; item056 says this selected group without specifying it in the stem. Replace these before full-bank completion."
+    },
+    {
+      "topic": "ICH assessment ambiguity corrections",
+      "source": "https://www.heart.org/-/media/CPR2-Files/Private/2022-Guideline-for-the-Management-of-Patients-With-Spontaneous-Intracerebral-Hemorrhage-1.pdf",
+      "sourceScope": "Uses section5.1 recommendation table actually read in preceding review.",
+      "implementation": "Replaced055 with variability case and056 with explicit mild-to-moderate spontaneousICH/initialSBP180 case. Correct keys3 and1; wrong choices now contrast the decision rather than unrelated correct clinical statements.",
+      "validation": "Both assembled replacement items read after import; correct keys3/1 retained. Targeted audit passed6 lessons116 questions. UI feedback interaction pending; build53480 predates these two replacements."
+    },
+    {
+      "topic": "2026 ischemic stroke reperfusion thresholds",
+      "sources": [
+        "https://eguideline.guidelinecentral.com/i/1542862-aha-asa-early-management-of-acute-ischemic-stroke-2026/19",
+        "https://eguideline.guidelinecentral.com/i/1542862-aha-asa-early-management-of-acute-ischemic-stroke-2026/20"
+      ],
+      "canonicalSource": "https://doi.org/10.1161/STR.0000000000000513",
+      "sourceScope": "Actual AHA guideline bundle section4.3 ten recommendation rows read on two pages. Publisher PDF returned403; alternate reprint search did not expose matching text. No full supporting-text claim.",
+      "implementation": "Added separate before/after IVT/EVT thresholds and qualified intensive-lowering statements by population and time. Retained perfusion/comorbid emergency boundary.",
+      "remaining": "Nonreperfusion pathway and full primary supportive-text review, assessments and UI checks remain due."
+    },
+    {
+      "topic": "Nonreperfusion ischemic stroke and assessment distinctions",
+      "source": "https://eguideline.guidelinecentral.com/i/1542862-aha-asa-early-management-of-acute-ischemic-stroke-2026/19",
+      "sourceScope": "Re-read actual section4.3 rows1-8; all assembled items049-052 read before editing.",
+      "implementation": "Added nonreperfusion48-72hour benefit boundary with competing-emergency exception. Replaced ambiguous action/assessment items050-051 with original threshold and nonreperfusion cases, keys1/2.",
+      "remaining": "Inspect assembled replacements and UI. Full supportive text and other stroke assessment items remain open.",
+      "validation": "Assembled050/051 inspected with all choices, keys1/2 and rationales; preserved. UI still pending."
+    },
+    {
+      "topic": "Nitroglycerin delivery safeguards",
+      "source": "https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9453bd8b-5d54-5dc8-e053-2995a90a95b2",
+      "sourceScope": "Actual indications, contraindications, warnings, precautions and dosing text read. Repackaged June2025 label retains revision11/05; not represented as newly revised. Embedded image tables not inspected.",
+      "implementation": "Added two delivery paragraphs and original item079. Actual assembled077-080 read; generic077/078 rationale mismatch still needs correction.",
+      "remaining": "Reconcile current manufacturer labeling and complete interactions, assessment and UI validation. Module remains reviewing.",
+      "validation": "Targeted structural audit passed6 lessons116 questions; diff whitespace check passed. Assembled079 inspected with answer2 and rationale. New UI and cumulative build pending."
+    },
+    {
+      "topic": "Nitrate assessment rationale mismatch",
+      "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=457a026c-ebce-4701-9deb-2d7652759a99",
+      "sourceScope": "Actual manufacturer label mechanism, indications and first contraindication paragraphs read; label updated2016, not claimed newly revised.",
+      "implementation": "Replaced077/078 with focused original items and matching explanations; added corresponding lesson paragraph. Prior generic explanations described an interaction even when the stem asked about mechanism or selection.",
+      "remaining": "Current nitrate interaction-window review, complete module review and UI validation pending.",
+      "validation": "Assembled077-079 read after import with keys1/3/2. Targeted structural audit passed6 lessons116 questions; diff whitespace check passed. All three nitrate paragraphs fully inspected at desktop1280x900 and mobile390x844. Viewport reset. Practice feedback interaction remains pending."
+    },
+    {
+      "topic": "Actual triage assessment review005-016",
+      "source": "https://professional.heart.org/en/science-news/management-of-elevated-blood-pressure-in-the-acute-care-setting/top-things-to-know",
+      "sourceScope": "Read all ten AHA2024 summary points. Actual assembled005-016 read with choices, keys and explanations.",
+      "finding": "008 contained two overlapping correct hazards; replaced with original inpatient measurement/contributor case. Other generic triage items still require final population-specific assessment closure.",
+      "implementation": "Original008 key1, explicit nonpregnant inpatient context.",
+      "remaining": "Assembled008 and feedback validation pending. Full module remains reviewing."
+    },
+    {
+      "topic": "Triage population and outpatient continuity assessment",
+      "sources": [
+        "https://professional.heart.org/en/science-news/2025-high-blood-pressure-guideline/top-things-to-know",
+        "https://professional.heart.org/en/science-news/management-of-elevated-blood-pressure-in-the-acute-care-setting/top-things-to-know"
+      ],
+      "sourceScope": "Actual complete AHA summaries read, emphasizing2025 points3/10 and2024 points8-10. Not represented as a fresh full-guideline read.",
+      "implementation": "Replaced005-007 and009-011 with original cases. Removed unrelated correct statements as distractors; specified nonpregnant context where the emergency distinction matters.",
+      "validation": "Assembled005-011 read with keys1/2/0/1/3/1/2. Removed dependent wording from006 because practice order is randomized; revised010 to test new symptoms rather than duplicate008. Targeted structural audit and whitespace checks passed. New assessment UI remains pending."
+    },
+    {
+      "topic": "Esmolol label version reconciliation",
+      "sources": [
+        "https://www.baxterpi.com/pi-pdf/Brevibloc_PI.pdf",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=38a8b23a-fca8-45f4-a09a-9c8b21f522cd",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=595cc3d5-1306-4828-aefa-5595219ffd62"
+      ],
+      "sourceScope": "Manufacturer PDF actual sections1-5 read; revision04/2018. Repackager actual2,4,5,7,8 read; source NDC followed to Baxter DailyMed June2023 revision and actual5.6 checked. Repackager additional9/2026 footer not treated as proof of clinical revision.",
+      "discrepancy": "Baxter website PDF predates hypoglycemia warning update; public reference points to newer Baxter DailyMed record.",
+      "implementation": "Added three esmolol paragraphs in cardiovascular lesson.",
+      "remaining": "Aortic-specific dosage, full interactions/preparation, assessments and new UI still require closure. Module remains reviewing.",
+      "validation": "Targeted structural audit passed6 lessons116 questions; whitespace check passed. All three new esmolol paragraphs visually inspected at1280x900 and390x844. Initial desktop preview reflow required retargeting; only subsequent complete views counted. Viewport reset. Cumulative build and assessment coverage pending."
+    },
+    {
+      "topic": "Phentolamine and acute cocaine pathway",
+      "sources": [
+        "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=ed6c506c-5535-4b7c-ae1a-d63f09d796c9",
+        "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-and-pediatric-special-circumstances-of-resuscitation"
+      ],
+      "sourceScope": "Actual full label text read through supply information, excluding chemical drawing/packaging images. Label revisedMay2022; SPLMarch2024. Actual AHA adult cocaine eight recommendation rows and supporting beta-blocker text read.",
+      "implementation": "Added two phentolamine paragraphs; replaced090/096; refined strength-of-recommendation wording. Actual assembled089-096 read before editing.",
+      "remaining": "Complete question-bank review, crisis dosage reconciliation, new UI and cumulative build pending. Module remains reviewing.",
+      "validation": "Targeted structural audit passed6 lessons116 questions; diff whitespace check passed. Two phentolamine paragraphs fully inspected desktop1280x900 and mobile390x844; viewport reset. Assembled090/096 inspected with keys1/0. New assessment feedback and cumulative build pending."
+    },
+    {
+      "topic": "Enalaprilat and sacubitril interaction boundary",
+      "sources": [
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d398da1-020c-ccb1-a775-ce8e0b29d621",
+        "https://www.novartis.com/us-en/sites/novartis_us/files/entresto.pdf"
+      ],
+      "sourceScope": "Actual enalaprilat pharmacology, indications, contraindications, warnings, precautions, interactions and full dosing/administration read; revisedApril2023 updatedJune2024. Entresto actual2.1 and4 read.",
+      "finding": "Enalaprilat label alone omits sacubitril; checked interacting product rather than treating absence as safety. No historical pregnancy-letter categories imported.",
+      "implementation": "Added four paragraphs and original027 after reading its assembled generic predecessor.",
+      "remaining": "New UI, assessment feedback, full remaining bank and cumulative build due. Module stays reviewing.",
+      "validation": "Targeted structural audit passed6 lessons116 questions; whitespace check passed. Assembled027 inspected, key2 correct. All four new paragraphs fully inspected desktop1280x900 and mobile390x844; viewport reset. New assessment feedback remains pending."
+    },
+    {
+      "topic": "Lesson depth and navigation restructuring",
+      "date": "2026-09-27",
+      "implementation": "Retained all original teaching paragraphs. Split controlled-pressure-reduction into 7 paragraphs of principles, 8 for dihydropyridine-infusions, and 11 for intravenous-drug-safety. Added two original embedded checks and two gold teaching diagrams. Remapped generated concepts and six replacement-question anchors.",
+      "validation": "116 bank questions retained; every question and embedded check points to an existing lesson; each lesson has bank coverage. Independent arithmetic: 5 mg/hour divided by 0.2 mg/mL equals 25 mL/hour. Structural audit found a pre-existing prohibited range dash in question 056 rationale; ranges rewritten using to. Structural audit rerun passed with no hard errors, source gaps, size advisories, or thin lessons; scoped git diff --check passed.",
+      "pending": "New desktop/mobile visuals and interactions; full clinical review remains incomplete."
+    },
+    {
+      "topic": "Labetalol infusion presentation and assessment review",
+      "date": "2026-09-27",
+      "source": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=99a715a0-4579-410c-b102-7ef6fab8db55",
+      "sourceScope": "Actual full-label sections 2 through 7 read, including dosing, presentations, exclusions, warnings and interactions. September 2024 revision; hosted December 2025 update distinguished.",
+      "implementation": "Added premix delivery paragraph. Read assembled questions 045-048; retained interval item046 and replaced three generic items with original calculation, ambulation, and contraindication cases.",
+      "independentArithmetic": "2 mg/min * 60 min/hour / 1 mg/mL = 120 mL/hour.",
+      "pending": "New assessment feedback UI; cumulative clinical review remains open."
+    },
+    {
+      "topic": "Dihydropyridine assessment and monitoring reconciliation",
+      "date": "2026-09-27",
+      "actualRead": "Assembled questions017-036 read with all options, keys and rationales. General-framework ambiguities018,019,023,026,028 identified for follow-up; not marked verified.",
+      "sources": [
+        "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=9ffe6b6f-b8bc-413f-9bec-7639e9d71d3d",
+        "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=f9290625-b723-4eda-bab8-a97bef6041f6"
+      ],
+      "sourceScope": "Nicardipine actual full-label sections2.1-2.3; clevidipine actual sections2-5 read this turn.",
+      "implementation": "Replaced030,032-035 with original focused decisions. Retained031 and036 previously sourced items. Added clevidipine tachycardia-treatment and negative-inotropy boundaries to monitoring paragraph.",
+      "independentChecks": "07:00 plus12hours=19:00; existing031:7.5/0.2=37.5mL/hour.",
+      "pending": "Assessment feedback validation; general-framework ambiguities018,019,023,026,028 and broader review remain open."
+    },
+    {
+      "topic": "General-framework assessment ambiguity correction",
+      "date": "2026-09-27",
+      "source": "https://doi.org/10.1161/CIR.0000000000001356",
+      "accessedCopy": "https://nefro.cl/web/docs/AHA_Hypertension_Guidelines_2025%5B1%5D.pdf",
+      "actualRead": "Section6.2 recommendation table and synopsis plus recommendation-specific supportive text, PDFpages67-68, read. Source distinguishes target-organ monitoring, autoregulation, compelling conditions, titratable infusions and pharmacology-based selection.",
+      "implementation": "Replaced018,019,023,026,028. Removed competing broadly appropriate monitoring or treatment choices. Each original question now asks a specific principle with one supported option.",
+      "status": "corrected; full-bank and rendered-feedback review remain open"
+    },
+    {
+      "topic": "Fenoldopam preparation and assessment",
+      "date": "2026-09-27",
+      "source": "https://www.pfizermedical.com/corlopam",
+      "sourceScope": "Actual manufacturer full-label sections1-5 and7.1 read including adult and pediatric dilution tables, unused diluted-solution storage, warnings versus contraindications and beta-blocker interaction.",
+      "implementation": "Added original adult pump calculation and storage boundary. Replaced042/044 with calculation and warning-classification items. All037-044 assembled questions read;038/039 still require correction because other choices can also be relevant.",
+      "independentArithmetic": "0.1mcg/kg/min *80kg=8mcg/min; *60=480mcg/hour; /40mcg/mL=12mL/hour.",
+      "pending": "Practice feedback; pediatric regimen scope reconciliation; full clinical review open."
+    },
+    {
+      "topic": "Nitroprusside assessment and exclusions",
+      "date": "2026-09-27",
+      "source": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=72a9b7df-3a2f-4c16-93a9-b645bc0e8143",
+      "sourceScope": "Actual full-label dosing and contraindications plus warnings5.1-5.4 read.",
+      "implementation": "Replaced038/039 with early cyanide and thiocyanate cases; added product-specific exclusions paragraph. Existing037/040 retained.",
+      "pending": "Assessment feedback and remaining nitroprusside mobile paragraphs; full module clinical review remains open."
+    },
+    {
+      "topic": "Stroke and PRES assessment reconciliation",
+      "date": "2026-09-27",
+      "actualRead": "All assembled049-064 options, keys and rationales read. Official2026AHA recommendation rows4.3.1-10 read. Fugate2010 actual abstract, introduction, methods, results, discussion and limitations read; figure/table images not inspected or reused.",
+      "sources": [
+        "https://eguideline.guidelinecentral.com/i/1542862-aha-asa-early-management-of-acute-ischemic-stroke-2026/19",
+        "https://eguideline.guidelinecentral.com/i/1542862-aha-asa-early-management-of-acute-ischemic-stroke-2026/20",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2861971/"
+      ],
+      "implementation": "Replaced049/052 with perfusion and post-EVT cases; addedmTICI2b/2c/3 qualifier. Replaced062/063 and added PRES presentation-limits paragraph and reference.",
+      "evidenceBoundary": "PRES cohort supports variable presentation, not a universal target. Reversibility requirement biases toward benign cases; no frequency generalized.",
+      "pending": "058/059 remain broadly worded and require correction. Current ICH and encephalopathy evidence closure and rendered practice feedback still open."
+    },
+    {
+      "topic": "Encephalopathy diagnostic exclusion",
+      "date": "2026-09-27",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10539169/",
+      "sourceScope": "Actual BIHS encephalopathy section andTable5 read, with related assessment text. Used for diagnostic and monitoring principles. Its MAP/time targets and older stroke recommendations were not substituted for current US guidance.",
+      "implementation": "Added explicit imaging/serial examination boundary to existing paragraph and source reference. Replaced058/059 with differential diagnosis and worsening-neurology cases.",
+      "status": "corrected; remaining primary-source and full-bank closure still open",
+      "validation": "Changed teaching paragraph fully inspected desktop/mobile; question feedback remains pending."
+    },
+    {
+      "topic": "Aortic assessment sequence and definitive care",
+      "date": "2026-09-27",
+      "source": "https://www.heart.org/-/media/PHD-Files-2/Science-News/2/2022/2022-Aortic-Disease-Guideline-Slide-Set.pdf",
+      "sourceScope": "Official AHA recommendation rows on PDFpages139-140 and143 read: anti-impulse treatment, arterial line/ICU, rate/perfusion targets, medication sequence and acute typeA surgery. PMC full guideline temporarily returned a browser check, so official slides used for this verification.",
+      "actualRead": "All assembled065-080 choices/keys/rationales read.066-068 replaced with original specific scenarios;065 retained.",
+      "pending": "070/071/074/075 contain competing broadly appropriate options; revise against heart failure/ACS sources. Rendered assessment feedback and cumulative module review remain open."
+    },
+    {
+      "topic": "Pulmonary edema and ACS assessment ambiguity",
+      "reviewDate": "2026-09-27",
+      "sources": [
+        "https://professional.heart.org/-/media/832EA0F4E73948848612F228F7FA2D35.pdf",
+        "https://accga.org/wp-content/uploads/2025-acc-aha-acep-naemsp-scai-guideline-for-the-management-of-patients-with-acute-coronary-syndromes.pdf"
+      ],
+      "sourceScope": "Read actual HF slide recommendations on PDF139-144 and ACS section3.1.2 recommendations/supporting text PDF15-16. Also read ACS section4.2/table6 text; dosing glyphs need rendered verification before adding table doses. JACC direct access403; primary guideline reprint used.",
+      "implementation": "Replaced ambiguous070/071/074/075 with original cases; added two short lesson paragraphs and primary references. Keys2/1/2/1 checked against actual recommendations.",
+      "pending": "Remaining bank and clinical coverage, desktop/mobile inspection and cumulative build remain open."
+    },
+    {
+      "topic": "Remaining actual assessment read081-116",
+      "reviewDate": "2026-09-27",
+      "scope": "Read every assembled question, all choices, keys and rationales081-116. This closes initial actual-bank reading, not all clinical validation.",
+      "findings": "083/086/087/091/094/095/098/099/102/103/106/107/110/111 have broad or overlapping appropriate distractors.104 retains a generic overlap implication despite product-specific rationale.089/091/092 names should specify pheochromocytoma rather than general catecholamine crisis.105 causal outcome wording needs evidence qualification.",
+      "next": "Replace ambiguous items using specific source-supported cases; preserve accurate principles. Remaining obstetric and renal primary-source reconciliation still required."
+    },
+    {
+      "topic": "Transition assessment correction102-104",
+      "source": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=9ffe6b6f-b8bc-413f-9bec-7639e9d71d3d",
+      "sourceScope": "Actual June2025 full-label sections2.1 and2.2 re-read; product-specific transition directions and continual infusion monitoring.",
+      "implementation": "Original cases replace102/103/104. Removes competing broadly appropriate options and blanket overlap implication. Keys0/2/1 reviewed.",
+      "pending": "Rendered assessment feedback remains due. Other ambiguities in preceding finding still open."
+    },
+    {
+      "topic": "Obstetric assessment and magnesium toxicity",
+      "reviewDate": "2026-09-27",
+      "sources": [
+        "https://npqic.org/file_download/inline/ca8cf159-e4de-47b0-b88c-28d336b4b900",
+        "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=03ebeabb-8386-4af4-3086-bdf3c3fc4a5a"
+      ],
+      "sourceScope": "CO767 actual recommendations, first-line and resistant-treatment sections, and sample order sets1-3 text read. Hospira magnesium label June2026 revision (host August2026 update): actual dosing, contraindications,5.2 toxicity,8.6 renal and10 overdose read. No claim entire label or rendered order-set inspection.",
+      "implementation": "Replaced083/086/087 with original cases (keys2/1/2); added interval/escalation and magnesium-toxicity paragraphs. Read corresponding pregnancy-module dosing and toxicity paragraphs; intervals and response consistent. Detailed dosing retained in pregnancy module, not duplicated wholesale.",
+      "pending": "New paragraph UI and assessment feedback due. Primary ACOG222 renal contraindication versus label dosing discrepancy already described in pregnancy module requires direct-source confirmation before module closure; no automatic eligibility inferred."
+    },
+    {
+      "topic": "Phentolamine and pheochromocytoma assessment specificity",
+      "source": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=ed6c506c-5535-4b7c-ae1a-d63f09d796c9",
+      "sourceScope": "Actual label full text re-read, including preparation, cardiovascular warnings and adverse reactions. May2022 label/SPLMarch2024.",
+      "implementation": "Replaced094/095 with original preparation and adverse-response cases; keys1/1. Renamed generated089/091/092 concept to explicitly identify pheochromocytoma instead of a general catecholamine-crisis rule.091 still requires replacement.",
+      "limits": "New Japan2025 PPGL guideline fetch timed out; ESH2020 PMC page returned browser check. Neither treated as a completed source read or bypassed."
+    },
+    {
+      "topic": "Renal, variability and discharge assessment closure",
+      "reviewDate": "2026-09-27",
+      "sources": [
+        "https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf",
+        "https://kdigo.org/guidelines/acute-kidney-injury/",
+        "https://nefro.cl/web/docs/AHA_Hypertension_Guidelines_2025%5B1%5D.pdf",
+        "https://www.heart.org/-/media/CPR2-Files/Private/2022-Guideline-for-the-Management-of-Patients-With-Spontaneous-Intracerebral-Hemorrhage-1.pdf"
+      ],
+      "sourceScope": "Actual KDIGO2.3 recommendations and rationale PDF28-30; current guideline hub says2026 draft public review ended and preparation for publication continues (not final). Actual2025 HTN5.4 recommendations/synopsis and supportive text1-3 read. Actual2022 ICH5.1 variability recommendation and supporting evidence read.",
+      "implementation": "Original cases replace098/099/106/107/110/111, keys1/0/1/2/1/0.105 generated principle no longer asserts unqualified causal effects across brain/heart/kidney. Associated generated rationale now describes a monitoring principle rather than a formal quality measure. Added KDIGO reference.",
+      "limits": "2012 AKI guidance used for published general assessment principles; no2026 draft adopted. Monthly outpatient HTN follow-up interval not imposed on post-emergency care.091 and remaining detailed source/UI closure remain open."
+    },
+    {
+      "topic": "Pheochromocytoma assessment091",
+      "source": "https://www.cancer.gov/types/pheochromocytoma/hp/pheochromocytoma-treatment-pdq",
+      "sourceScope": "Actual NCI PDQ preoperative medical preparation section read. Government evidence summary, not labeled a new primary trial or crisis dosing guideline.",
+      "implementation": "Original preparation-specific safety-check case replaces broad monitoring options. Key0; no fixed preoperative duration or volume-loading instruction transferred to an unstable crisis."
+    },
+    {
+      "topic": "ACS nitrate regimen and exclusion reconciliation",
+      "reviewDate": "2026-09-27",
+      "source": "https://accga.org/wp-content/uploads/2025-acc-aha-acep-naemsp-scai-guideline-for-the-management-of-patients-with-acute-coronary-syndromes.pdf",
+      "sourceScope": "Table 6 and section 4.2 on printed page20/PDF index19 read as text and visually inspected using a local PDFium render. Confirmed microgram symbol: IV nitroglycerin starts10 mcg/min, not10 mg/min as web extraction incorrectly displays. PDE5 footnote and RV/hypotension exclusions visually verified.",
+      "implementation": "Added two original lesson paragraphs distinguishing guideline10 mcg/min ACS start from previously reviewed product-label5 mcg/min start; added suspected RV infarction, SBP<90 or fall>30 exclusions, and avanafil12h/sildenafil-vardenafil24h/tadalafil48h avoidance windows.",
+      "limits": "New paragraphs still require desktop/mobile inspection and assessment consistency review. Riociguat labeling remains to reconcile. Source PDF stays outside repository."
+    },
+    {
+      "topic": "Riociguat and nitrate assessment consistency",
+      "reviewDate": "2026-09-27",
+      "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7b57509a-3d5d-41d4-8fed-1471e26372a3",
+      "sourceScope": "Actual Adempas sections4.2,7.1 and relevant pharmacodynamic interaction text read; contraindication applies to nitrates/NO donors in any form. PDE5 switching intervals are separate.",
+      "implementation": "Expanded vasodilator exclusion paragraph and added primary label reference. Replaced ambiguous generic assessment076 with tadalafil30h case(key1) and080 with riociguat case(key2).",
+      "limits": "No nitrate-riociguat washout interval inferred. UI verification pending."
+    },
+    {
+      "topic": "Respiratory support and new2026 ESC HF guideline identified",
+      "reviewDate": "2026-09-27",
+      "sources": [
+        "https://www.heartfailurematters.org/wp-content/uploads/2022/05/ESC-Heart-Failure-Guidelines-2021.pdf",
+        "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/heart-failure/",
+        "https://dam-assets.escardio.org/download/b2e587389baa11f185de06bdfb3e4be9"
+      ],
+      "sourceScope": "Actual2021 section11.3.2 oxygen/NIV/intubation and hemodynamic cautions read. Current ESC hub confirms28Aug2026 full replacement. Actual official2026 slides PDFindex66-67 treatment recommendation text read; oxygen/NIV/intubation criteria retained. Full2026 journal fetch exceeded web content limit, supporting text not yet read.",
+      "implementation": "Added original respiratory-support criteria and positive-pressure perfusion safeguards with source-year attribution.",
+      "limits": "Verify full2026 supportive text and desktop/mobile paragraphs. New2026 HF classification/treatment changes require mapping to HF curriculum; no claim that HF modules are reviewed by this narrow check."
+    },
+    {
+      "topic": "Obstetric magnesium renal eligibility discrepancy reconciled",
+      "reviewDate": "2026-09-27",
+      "sources": [
+        "https://kansaspqc.kdhe.ks.gov/wp-content/uploads/2025/09/ACOG-Gestation-HTN-and-Preeclampsia-Practice-Bulletin.pdf",
+        "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=03ebeabb-8386-4af4-3086-bdf3c3fc4a5a"
+      ],
+      "sourceScope": "Actual ACOG222 printed e247-e248 contraindication and renal dosing/monitoring text read; actual June2026 Hospira label2.3 read. ACOG moderate-to-severe renal failure exclusion differs from label severe-renal dose instructions.",
+      "implementation": "Added renal eligibility paragraph and source reference; replaced ambiguous generic088 with original discrepancy case, key3. Cross-checked existing pregnancy module paragraph Separate renal caution from contraindication: matches ACOG creatinine1.0-1.5, urine<30mL/h>4h,1g/h maintenance,q4h levels,stop>9.6,q2h,restartlower<8.4. Preserved accurate pregnancy content.",
+      "limits": "UI check of added paragraph and new question pending. No independent specialist adjudication claimed; source-specific discrepancy explicitly retained."
+    },
+    {
+      "topic": "Emergency-specific PPGL source and retained question review",
+      "reviewDate": "2026-09-27",
+      "source": "https://www.jstage.jst.go.jp/article/endocrj/73/1/73_EJ25-0165/_html/-char/en",
+      "sourceScope": "Actual I-6 statements, triggers, diagnosis and treatment text read, plus I-4 alpha/beta sequencing text. Japanese guideline context retained; not substituted for US product exclusions.",
+      "implementation": "Revised existing crisis-specific paragraph to identify IV phentolamine then infusion and post-acute oral alpha blockade as guideline pathway. Added reference. No unsupported numeric emergency infusion dose introduced. Replaced014/015/016/060/064/072/073 generic items with original focused cases to remove competing generally correct distractors and test respiratory escalation. Keys1/0/2/3/0/1/2.",
+      "limits": "New/revised paragraph and new assessment feedback require UI verification. Earlier source evidence supports triage/neuro/ACS cases;072 uses actual2026 ESC recommendation previously read. Full assembled-bank review remains open."
+    },
+    {
+      "topic": "Respiratory source evidence boundary",
+      "reviewDate": "2026-09-27",
+      "sourceScope": "2026 ESC official recommendations for oxygen, NIV and intubation were read directly in official slide set, PDFindex66.2021 section11.3.2 directly supplies the stable physiological cautions. Full2026 journal retrieval exceeds web size limit and direct request returned403. No bypass attempted.",
+      "resolution": "The specific lesson claims are supported by the current official recommendations plus explicitly dated physiological source. Full2026 supporting-text availability is not itself a material accuracy gap for these limited claims; do not describe the entire2026 guideline as read. The broader2026 HF update remains a curriculum-level review task."
+    },
+    {
+      "topic": "Final assembled assessment review001-116",
+      "reviewDate": "2026-09-27",
+      "scope": "Read actual assembled questions, all choices, keys, rationales and lesson anchors for001-040,041-080,081-116 in three untruncated outputs. Compared with revised lessons and source-specific findings already recorded.",
+      "corrections": "Replaced100/101/115 with original focused AKI, transition and handoff cases; keys2/1/3. Qualified generated severe-asymptomatic principle as nonpregnant, including its reused distractor appearances. Removed causal PRES outcome wording from shared rationale in favor of supported descriptive teaching. Corrected missing spaces in pregnancy thresholds.",
+      "result": "All116 questions reviewed. Remaining general concept items have a directly responsive best answer; preserve accurate material. Practice UI feedback checks remain distinct and pending."
+    }
+  ],
+  "actualModuleRead": "All eight final lessons, embedded checks, eight visual definitions, references, and all116 assembled questions reviewed against the source evidence recorded below. Changed learning content inspected desktop/mobile; practice interaction checked separately from full-bank content review.",
+  "openWork": [],
+  "validation": {
+    "structural": "2026-09-27 final targeted audit passed:8lessons116questions, no hard errors, source gaps, size advisories or thin lessons; scoped git diff --check passed. Structural checks are separate from actual clinical review.",
+    "visual": "All three new paragraphs inspected desktop1280x900 and mobile390x844, including complete lower contraindication paragraph. Viewport reset. New timeline paragraph separately inspected desktop1280x900 and mobile390x844. Initial post-reload reflow required retargeting before valid desktop inspection.",
+    "remaining": "No unresolved material accuracy or module coverage issue identified. Commit/push is tracked separately from local content verification.",
+    "build": "Production build session73254 exited0. Includes all current enalaprilat, phentolamine, esmolol, nitrate and triage changes. Log /private/tmp/nas-hypertension-build.log. Full clinical review and remaining UI/assessment closure still pending.",
+    "clevidipineLatest": "Revised monitoring paragraph fully inspected at1280x900 and390x844. Complete titration paragraph also inspected mobile. Text wraps without clipping; mobile third-lesson highlight correct. Initial desktop capture immediately after reload showed stale first-lesson highlight; subsequent mobile navigation settled correctly. Recheck hydration/scroll highlight during final navigation QA. Viewport reset and tab7 retained.",
+    "nitrateUI": "Browser recovered via fresh tab7 on localhost3000. Three nitrate paragraphs fully inspected desktop/mobile, with readable wrapping and no clipped body text. Active cardiovascular navigation highlighted. Does not establish full module UI completion.",
+    "transitionFeedback": "Selected correct embedded transition answer and submitted in local browser; UI reported Correct with drug-specific timing explanation. Full feedback paragraph and lesson link inspected at1280x900 and390x844. Viewport reset. Does not establish all module practice feedback coverage.",
+    "labetalolUI": "All three labetalol paragraphs fully inspected at 1280x900 and 390x844 in tab7 localhost3000; readable wrapping and active fourth-lesson navigation observed. Mobile paragraphs retargeted individually for complete visibility. Viewport reset. New diagram and assessment feedback still pending.",
+    "fenoldopamUI": "All three paragraphs fully inspected desktop1280x900 and mobile390x844; formula and units readable, no clipped paragraph content. Mobile each paragraph individually centered below sticky navigation. Viewport reset. Initial desktop first-lesson highlight after reload again stale; navigation hydration needs final QA.",
+    "navigationFollowup": "Reproduced first-lesson highlight immediately after reload/scroll; next read-only observation showed correct active lesson for measured viewport before further input. Retargeting toxic-metabolites heading showed correct fourth-lesson marker. This supports transient initialization rather than persistent failure; no navigation code edited.",
+    "nitroprussideDesktop": "Existing dose and toxic-metabolites paragraphs fully visible at1280x900. Cyanide-antidote paragraph lower edge partly overlapped by sign-in control; not counted fully inspected.",
+    "nitroprussideExclusionsUI": "Complete new exclusions paragraph inspected at1280x900 and390x844 after final ASA5E wording. Text readable; fourth-lesson highlight correct. Viewport reset.",
+    "encephalopathyPresUI": "Revised encephalopathy and new PRES diagnostic-limit paragraphs fully inspected desktop1280x900 and mobile390x844. No clipped body text; fifth-lesson navigation correct. Viewport reset. Existing PRES causes paragraph fully inspected desktop; mobile lower body visible but heading not together, not counted as full mobile check.",
+    "hfAcsUI": "Both new paragraphs fully inspected at1280x900 and390x844 in local tab7. Readable wrapping; active sixth lesson highlighted. Desktop HF paragraph retargeted to avoid floating-control overlap. Viewport reset and tab retained.",
+    "obstetricSafetyUI": "New interval/escalation and magnesium-toxicity paragraphs fully inspected desktop1280x900 and mobile390x844. Text wraps without clipping. Seventh lesson highlight settled correctly after mobile navigation; first mobile capture immediately after resize showed previous contents position. Viewport reset,tab7retained.",
+    "infusionDiagramsUI": "Both new diagrams fully inspected desktop1280x900 and mobile390x844. Mobile lower rows separately centered and inspected; all labels readable, no clipped columns. Third/fourth lesson highlighting correct. Viewport reset and tab7retained.",
+    "nicardipineDeliveryUI": "Concentration and infusion-route paragraphs fully inspected desktop1280x900 and mobile390x844. Units and paragraph text readable. Previously inspected intolerance paragraph also visible desktop; no new change.",
+    "acsNitrateUpdate": "Table6 visually verified; two new paragraphs added. Targeted pharmacy structural audit passed (8 lessons,116 questions), scoped git diff --check passed. Desktop/mobile inspection and related assessment closure still pending; no full-module completion claimed.",
+    "nitrateInteractionUpdate": "Targeted structural audit and scoped diff check passed after riociguat paragraph and076/080 case replacements. Respiratory paragraphs added afterward; cumulative validation and UI pending.",
+    "recentSafetyParagraphsUI": "2026-09-27: Fully inspected local rendered paragraphs at1280x900 and390x844: ACS dose distinction, ACS nitrate exclusions, riociguat warning, respiratory-support criteria, positive-pressure perfusion monitoring, and magnesium renal eligibility. Each new paragraph readable without clipping; active sixth/seventh lesson navigation correct. Viewport reset and tab7 retained. This closes these paragraph checks only; remaining diagrams/paragraphs and practice interaction checks remain open.",
+    "renalEligibilityUpdate": "Targeted pharmacy audit passed with8lessons116questions after renal paragraph and088 replacement; scoped git diff --check passed. Source-specific renal discrepancy recorded; no full-module completion claim.",
+    "retainedQuestionUpdate": "Targeted structural audit and scoped git diff --check passed after014/015/016/060/064/072/073 replacements and PPGL paragraph revision. Full module build, remaining UI and assembled-bank final review still due.",
+    "cumulativeApplicationBuild": "2026-09-27: npm run build completed successfully with exit0 (session76161) after the eight-lesson restructure, respiratory/nitrate/renal additions and PPGL/assessment revisions. Log /private/tmp/nas-hypertension-build.log. Whole current dirty checkout build; not evidence of clinical accuracy or unrelated changes being approved.",
+    "assembledBankReview": "All116 actual assembled items clinically reviewed2026-09-27;100/101/115 and shared wording corrected. Arithmetic independently rechecked:240*0.75=180;7.5/0.2=37.5mL/h;0.1*80*60/40=12mL/h;2*60/1=120mL/h;07:00+12h=19:00. Question/UI rendering is not inferred from this source review.",
+    "assembledPracticeUI": "2026-09-27 local tab7: Began a10-question draw from116. Submitted9correct and1deliberatelyincorrect(clevidipine exclusion) using visibly shuffled choices. All10 displayed expected correct/review feedback with matching explanations and lesson anchors. Incorrect feedback readable desktop1280x900 and mobile390x844; selected wrong option and correct option differentiated. Review link navigated to#dihydropyridine-infusions with third lesson active. No formal grade displayed, as intended. This is interaction verification of one draw, not a claim to have clicked all116; all116 actual content reviewed separately. Viewport reset; tab retained.",
+    "ppglPathwayUI": "Revised crisis-specific paragraph fully inspected desktop1280x900 and mobile390x844; readable without clipping. Seventh lesson highlighted on mobile.",
+    "finalChangedContentUI": {
+      "date": "2026-09-27",
+      "environment": "Local browser tab7, desktop1280x900 and mobile390x844; viewport reset and tab handed off.",
+      "desktop": "Complete nonreperfusion, IVT/EVT and post-reperfusion paragraphs; ICH target, timing and evidence limits; aortic sequence, targets and alternatives; nifedipine population boundary; full cyanide-antidote paragraph; all four columns of revised triage and special-populations diagrams inspected.",
+      "mobile": "Complete nitroprusside dose, exclusions, metabolites and antidote paragraphs; all three ischemic-stroke paragraphs; all three ICH paragraphs; all three aortic paragraphs; nifedipine boundary; full PRES causes paragraph. Both revised overview diagrams inspected in separately centered top and bottom rows.",
+      "result": "Text and diagram labels readable without clipping. This closes previously documented partial nitroprusside-antidote and PRES mobile captures and remaining changed neurologic/aortic/overview checks. Active navigation settled after resize as already documented; no navigation code change."
+    },
+    "finalDrugUI": "2026-09-27: Explicitly confirmed all three esmolol paragraphs, all four enalaprilat/sacubitril paragraphs, and phentolamine exclusions/indication paragraphs at1280x900 and390x844. Complete body text readable without clipping. Correct lesson highlighting observed after resize settled; viewport reset and tab7 handed off."
+  },
+  "recordInterpretation": "Findings are chronological review history. Earlier pending statements are superseded only by later explicit source or validation evidence. Current unresolved work is listed in openWork; validation entries state their actual scope.",
+  "crossModuleFollowups": [
+    {
+      "topic": "2026 ESC heart-failure curriculum update",
+      "status": "pending broader curriculum review",
+      "scope": "Map classification and treatment changes to corresponding HF modules. Current hypertensive-emergencies respiratory claims are supported by directly read official2026 recommendations and explicitly dated2021 physiology. This narrow review does not establish whole-HF-guideline or HF-module completion."
+    }
+  ],
+  "finalReconciliation": {
+    "date": "2026-09-27",
+    "clinical": "Earlier pending drug, neurologic, obstetric, respiratory, renal and assessment findings are closed by subsequent actual-source reads, corrections and final assembled-bank review. All eight embedded checks and visual definitions read against the final lessons.",
+    "scopeBoundaries": [
+      "Fenoldopam dosing and dilution are explicitly adult; no pediatric regimen is inferred. Pediatric labeling was read for separation of scope.",
+      "Esmolol numeric regimen is explicitly gradual perioperative labeling; aortic use follows its separately sourced anti-impulse pathway and is not presented as a universal labeled dose.",
+      "Stroke recommendations are directly read official recommendation rows; full supporting-text reading is not claimed.",
+      "Respiratory support uses directly read current official recommendations and dated physiology, not a claim of entire HF guideline review.",
+      "Chronic hypertension and the rest of chapter28 remain incomplete; this verification covers the emergency module and mapped emergency subsection."
+    ],
+    "arithmetic": "Independent checks include5/0.2=25mL/hour embedded check;4/0.5=8mL/hour;8*24=192mL;192*2=384kcal;192*0.2=38.4g lipid;240*.75=180;7.5/.2=37.5mL/hour;.1*80*60/40=12mL/hour;2*60/1=120mL/hour;07:00+12h=19:00.",
+    "limitations": "Agent source review, not independent pharmacist review or certification. UI practice verification covers one10-question draw, not116 individual clicks. Source book remains private."
+  },
+  "release": {
+    "status": "Local verification complete; use Git history and remote branch state as the authoritative commit/push record.",
+    "deployment": "No direct deployment performed or live-site completion claimed."
+  }
+}
