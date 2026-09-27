@@ -132,6 +132,7 @@ import BurnAssessmentInitialCareVisual, { burnAssessmentInitialCareVisualTypes }
 import PoisonPlantDermatitisVisual, { poisonPlantDermatitisVisualTypes } from "@/components/learn/PoisonPlantDermatitisVisual";
 import TopicalCorticosteroidVisual, { topicalCorticosteroidVisualTypes } from "@/components/learn/TopicalCorticosteroidVisual";
 import UrticariaVisual, { urticariaVisualTypes } from "@/components/learn/UrticariaVisual";
+import EnvenomationVisual, { envenomationVisualTypes } from "@/components/learn/EnvenomationVisual";
 import SunscreenPhotoprotectionVisual, { sunscreenPhotoprotectionVisualTypes } from "@/components/learn/SunscreenPhotoprotectionVisual";
 import HerpesLabialisVisual, { herpesLabialisVisualTypes } from "@/components/learn/HerpesLabialisVisual";
 import SeborrheicDermatitisVisual, { seborrheicDermatitisVisualTypes } from "@/components/learn/SeborrheicDermatitisVisual";
@@ -535,6 +536,7 @@ export default async function PharmacyModulePage({ params }) {
               {poisonPlantDermatitisVisualTypes.includes(submodule.visual) && <PoisonPlantDermatitisVisual type={submodule.visual} />}
               {topicalCorticosteroidVisualTypes.includes(submodule.visual) && <TopicalCorticosteroidVisual type={submodule.visual} />}
               {urticariaVisualTypes.includes(submodule.visual) && <UrticariaVisual type={submodule.visual} />}
+              {envenomationVisualTypes.includes(submodule.visual) && <EnvenomationVisual type={submodule.visual} />}
               {sunscreenPhotoprotectionVisualTypes.includes(submodule.visual) && <SunscreenPhotoprotectionVisual type={submodule.visual} />}
               {herpesLabialisVisualTypes.includes(submodule.visual) && <HerpesLabialisVisual type={submodule.visual} />}
               {seborrheicDermatitisVisualTypes.includes(submodule.visual) && <SeborrheicDermatitisVisual type={submodule.visual} />}

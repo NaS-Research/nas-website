@@ -1182,7 +1182,7 @@
         554,
         571
       ],
-      "status": "mapped",
+      "status": "reviewing",
       "subsectionsComplete": false,
       "subsections": [
         {
@@ -1419,12 +1419,13 @@
             566,
             566
           ],
-          "status": "mapped",
+          "status": "verified",
           "targets": [
             "animal-human-bites",
-            "toxicology-antidotes"
+            "toxicology-antidotes",
+            "envenomation-bites-stings"
           ],
-          "evidence": "animal-human-bites-review.json: printed 558/PDF566 bite topic reconciled; 11 lessons/checks/figures and 43 original cases reviewed, production build and desktop/mobile interaction checks passed. Animal/human bite module verified; adjacent envenomation remains mapped to toxicology-antidotes and requires full reconciliation."
+          "evidence": "envenomation-review.json; private printed558/PDF566 and printed988/PDF998 bite/sting coverage reconciled in module225 plus prior animal-human-bites review.13lessons/checks/figures,26cases, calculations, build and desktop/mobile feedback checked. Full toxicology and other chapter topics remain separately unverified."
         },
         {
           "topic": "Burn first aid",
@@ -1528,11 +1529,13 @@
         "poison-ivy-oak-sumac",
         "topical-corticosteroid-safe-use",
         "acne",
-        "urticaria-and-angioedema"
+        "urticaria-and-angioedema",
+        "envenomation-bites-stings"
       ],
       "findings": [],
       "evidence": [
-        "ch39-initial-review.json"
+        "ch39-initial-review.json",
+        "envenomation-review.json"
       ]
     },
     {
@@ -2903,12 +2906,37 @@
         989
       ],
       "pdfPages": null,
-      "status": "unmapped",
+      "status": "reviewing",
       "subsectionsComplete": false,
-      "subsections": [],
-      "moduleSlugs": [],
+      "subsections": [
+        {
+          "topic": "Antidotes for common bites and stings",
+          "printedPages": [
+            988,
+            988
+          ],
+          "pdfPages": [
+            998,
+            998
+          ],
+          "status": "verified",
+          "targets": [
+            "toxicology-antidotes",
+            "animal-human-bites",
+            "envenomation-bites-stings"
+          ],
+          "evidence": "envenomation-review.json; private printed558/PDF566 and printed988/PDF998 bite/sting coverage reconciled in module225 plus prior animal-human-bites review.13lessons/checks/figures,26cases, calculations, build and desktop/mobile feedback checked. Full toxicology and other chapter topics remain separately unverified."
+        }
+      ],
+      "moduleSlugs": [
+        "toxicology-antidotes",
+        "animal-human-bites",
+        "envenomation-bites-stings"
+      ],
       "findings": [],
-      "evidence": []
+      "evidence": [
+        "envenomation-review.json"
+      ]
     },
     {
       "chapter": 82,

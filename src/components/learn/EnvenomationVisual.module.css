@@ -1,0 +1,34 @@
+.figure { margin: 0; padding: 34px 0; border-block: 1px solid #373128; color: #e8e4dd; }
+.figure figcaption { display: grid; gap: 13px; margin-bottom: 30px; }
+.figure figcaption > span, .figure small { color: #caa567; font-size: 10px; letter-spacing: .13em; text-transform: uppercase; }
+.figure figcaption > strong { max-width: 800px; font-size: clamp(25px, 2.6vw, 36px); font-weight: 450; line-height: 1.15; letter-spacing: -.025em; }
+.products { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; }
+.products section, .volumes section { min-width: 0; border-top: 1px solid #6a5637; padding-top: 20px; }
+.figure h4 { font-size: 22px; line-height: 1.3; font-weight: 450; margin: 0 0 18px; }
+.figure h4 small { display: block; margin-top: 8px; }
+.figure ol { list-style: none; padding: 0; margin: 0; counter-reset: phase; }
+.figure li { counter-increment: phase; display: grid; grid-template-columns: 24px 1fr; gap: 7px 12px; padding: 19px 0; border-top: 1px solid #34312b; }
+.figure li::before { content: counter(phase, decimal-leading-zero); color: #b89962; font-size: 10px; padding-top: 5px; }
+.figure li b { font-size: 17px; font-weight: 450; }
+.figure li span { grid-column: 2; }
+.figure p, .figure li span { color: #aaa69e; font-size: 14px; line-height: 1.7; }
+.note { margin: 23px 0 0; max-width: 830px; }
+.volumes { display: grid; gap: 26px; }
+.volumes section { display: grid; grid-template-columns: 120px 1fr; gap: 10px 24px; }
+.volumes section > .note { grid-column: 2; margin: 0; }
+.flow { display: grid; grid-template-columns: 1fr 30px 1fr; align-items: center; gap: 15px; }
+.flow p { display: grid; gap: 7px; margin: 0; }
+.flow b { color: #e8e4dd; font-size: 21px; font-weight: 450; }
+.flow > span { color: #caa567; }
+.triage { display: grid; gap: 22px; }
+.triage section { padding-left: 22px; border-left: 2px solid #9c7a45; }
+.triage h4 { margin: 8px 0; }
+.triage p { margin: 0; }
+@media (max-width: 650px) {
+  .products { grid-template-columns: 1fr; gap: 26px; }
+  .volumes section { grid-template-columns: 1fr; }
+  .volumes section > .note { grid-column: 1; }
+  .flow { grid-template-columns: 1fr 20px 1fr; gap: 10px; }
+  .flow b { font-size: 18px; }
+  .figure { padding: 26px 0; }
+}
