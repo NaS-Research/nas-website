@@ -1,0 +1,407 @@
+{
+  "module": "perioperative-critical-care-pharmacology",
+  "status": "verified",
+  "reviewDate": "2026-09-27",
+  "scope": "Actual11 lessons,11 embedded checks and visuals,81 original bank questions, keys/explanations/references; source-book LAST and paralytic reversal mappings plus existing additional perioperative content. Verification means this documented content audit, not independent pharmacist certification.",
+  "bookMapping": [
+    {
+      "chapter": 81,
+      "pdfPages": [
+        996
+      ],
+      "topic": "Local-anesthetic systemic toxicity",
+      "status": "verified for this module"
+    },
+    {
+      "chapter": 81,
+      "pdfPages": [
+        997
+      ],
+      "topic": "Paralytic reversal",
+      "status": "verified for this module"
+    }
+  ],
+  "evidenceHistory": [
+    {
+      "status": "corrected",
+      "topic": "Local-anesthetic systemic toxicity and lipid rescue coverage",
+      "problem": "Book printed986 describes lipid as enhanced elimination and groups local anesthetics with other lipophilic drugs. Toxicology lacked substantive LAST coverage; perioperative module had correct core dosing but incomplete continuation/observation and propofol boundary.",
+      "implementation": "Added 7-section LAST lesson, original dose/rate/total figure, embedded pump calculation and5 original bank cases. Expanded existing perioperative LAST lesson with propofol distinction and observation. Existing epinephrine <=1mcg/kg preserved after checking actual graphic.",
+      "sources": [
+        "https://asra.com/docs/default-source/guidelines-articles/local-anesthetic-systemic-toxicity-rgb.pdf?sfvrsn=33b348e_2",
+        "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-and-pediatric-special-circumstances-of-resuscitation"
+      ],
+      "sourceScope": "ASRA full single-page checklist text and rendered diagram read; AHA2025 local-anesthetic recommendations/synopsis/supportive text and beta-blocker ILE recommendation read. ACMT historical interim statement reviewed for context, not used to supersede current AHA.",
+      "discrepancy": "PDF extraction drops separately drawn underlines: rendered ASRA says <=1mcg/kg epinephrine and >=15min lipid after stability, although extracted text shows strict inequalities. Preserve visual source meaning.",
+      "limitations": "Build and targeted toxicology/perioperative desktop/mobile passed; full perioperative module and broad lipid evidence review remain open."
+    },
+    {
+      "topic": "Paralytic book-row mapping to existing perioperative curriculum",
+      "reviewDate": "2026-09-26",
+      "bookScope": "Private PDF997: paralytics row, rocuronium/vecuronium/pancuronium and neostigmine/sugammadex. Actual extracted row read.",
+      "mappedLessons": [
+        "perioperative-critical-care-pharmacology/neuromuscular-blockade-foundations",
+        "perioperative-critical-care-pharmacology/succinylcholine-safety",
+        "perioperative-critical-care-pharmacology/nondepolarizing-agent-selection",
+        "perioperative-critical-care-pharmacology/monitoring-and-reversal"
+      ],
+      "sources": [
+        "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=37276948-ff0f-e0ab-e063-6394a90a0973&type=display"
+      ],
+      "sourceScope": "Actual BRIDION sections1,2.1,2.2 and5.1-5.5 read. Actual existing reversal lesson and corresponding concept records/embedded question inspected.",
+      "finding": "Existing adult dose-depth pairing and monitored recovery agree with label. Book adult-only framing is incomplete: current BRIDION label includes pediatric surgery, including birth to under2; immediate pediatric reversal remains unstudied.",
+      "status": "reviewing",
+      "remaining": "ASA primary guidance and neostigmine label reviewed; dose distinction corrected in latest finding. Full generated bank outputs and all related visuals still need final review before this entire book row is verified.",
+      "implementation": "Added two perioperative paragraphs and two original assessment cases covering pediatric scope, immediate-reversal evidence limit and diluted small-dose measurement. Updated BRIDION reference to the reviewed June2025 label.",
+      "validation": "Build43315 exit0; perioperative structural11 lessons/114 questions, hardErrors[]/sourceGaps[]. Desktop1280 and mobile390 dosing text inspected; page width390/scrollWidth390. New questions source-reviewed, not individually exercised in randomized UI. Independent arithmetic:200mg/(2+18)mL=10mg/mL;5kg*2mg/kg=10mg;10/10=1mL."
+    },
+    {
+      "topic": "Neostigmine guideline versus label dose reconciliation",
+      "reviewDate": "2026-09-27",
+      "sources": [
+        "https://doi.org/10.1097/ALN.0000000000004379",
+        "https://msdgccpulse.com/wp-content/uploads/sites/82/2023/06/ASA-Guidelines-Reprint-3.pdf",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2f55643-2b0d-4ef9-a9d8-b7138b314372"
+      ],
+      "sourceScope": "Actual ASA2023 recommendation table and depth/dose discussion pp23-24; BLOXIVERZ actual2.2-2.4 administration and monitoring text. Guideline full reprint located; existing reference had pointed to a quality-measure document rather than the guideline.",
+      "discrepancy": "Existing lesson presented broad label0.03-0.07mg/kg without ASA minimal-block dose distinction. Separate labeled ceiling from guideline measured-depth selection; no routine antagonism when quantitative spontaneous recovery is already adequate.",
+      "implementation": "Two paragraphs replace general neostigmine paragraph; modified generated concept-case dose answer and added two original cases. References now point to actual guideline DOI and reviewed label.",
+      "validation": "Structural11lessons/116questions, hardErrors[] sourceGaps[]; desktop1280/mobile390 paragraphs inspected, no horizontal overflow.60*40/1000=2.4mg independently calculated. Production build79909 confirmed exit0. New bank cases source-reviewed, not individually drawn in UI.",
+      "remaining": "Full companion module and all final questions not verified. No claim that structural validation proves clinical completion."
+    },
+    {
+      "topic": "Reversal assessment and visual review",
+      "reviewDate": "2026-09-27",
+      "sourceScope": "Actual20 exported monitoring-and-reversal questions inspected, including distractors, keys and rationales. Actual recovery diagram source and desktop/mobile rendering inspected. Reviewed current BRIDION renal/agent exclusions and BLOXIVERZ administration text.",
+      "sources": [
+        "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=37276948-ff0f-e0ab-e063-6394a90a0973&type=display",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2f55643-2b0d-4ef9-a9d8-b7138b314372",
+        "https://doi.org/10.1097/ALN.0000000000004379"
+      ],
+      "finding": "Generated questions repeated concepts with unrelated-topic distractors and some case-only rationales. These did not adequately discriminate reversal decisions.",
+      "implementation": "Filtered16 generated reversal items while retaining concept order for stable other-topic IDs. Added8 original cases and retained4 recent original cases:12 focused reversal items. Recovery visual now names airway readiness explicitly and uses gold accent.",
+      "validation": "Exported108 unique module question IDs;12 reversal keys and explanations read. Independent calculations100*4=400mg;70*2=140mg;min(50*.07,5)=3.5mg. Desktop1280/mobile390 visual inspected; no horizontal overflow. Build79399 confirmed exit0; structural11lessons/108questions, hardErrors[] sourceGaps[].",
+      "remaining": "New bank cases not individually drawn through randomized UI. Full companion module and remaining toxicology content still unverified."
+    },
+    {
+      "topic": "Pancuronium reversal boundary and assembled reversal assessments",
+      "reviewDate": "2026-09-27",
+      "source": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=37276948-ff0f-e0ab-e063-6394a90a0973&type=display",
+      "sourceScope": "Current BRIDION actual label section 5.14 read; limits steroidal-blocker reversal to rocuronium and vecuronium. Related dose and renal sections rechecked. Earlier book-row mapping retained; no new book pages claimed.",
+      "correction": "Added an explicit pancuronium boundary to the perioperative reversal lesson and an original clinical question with answer index 2. Existing reversal visual correctly requires agent- and depth-specific selection and remains unchanged.",
+      "reviewedContent": "Read the full reversal lesson and all 12 existing reversal assessment stems, choices, keys, and rationales, plus the new item. Independently checked 5*2/10=1 mL; 60*0.04=2.4 mg; 100*4=400 mg; 70*2=140 mg; min(50*0.07,5)=3.5 mg. Read foundation/agent-selection/safety concept text and corresponding visuals; generated distractor combinations outside reversal are not yet fully reviewed.",
+      "validation": "Targeted perioperative structural audit passed: 11 lessons,109 questions,13 reversal items,hardErrors[],sourceGaps[]. New paragraph desktop/mobile review and cumulative application build pending.",
+      "remaining": "Full perioperative module remains reviewing. Further BRIDION safety, interaction, repeat-blockade teaching and final whole-module assessment review remain required; this is not full-module completion."
+    },
+    {
+      "topic": "Sugammadex post-reversal safety and repeat blockade",
+      "reviewDate": "2026-09-27",
+      "source": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=37276948-ff0f-e0ab-e063-6394a90a0973&type=display",
+      "sourceScope": "Actual sections 5.1-5.9 and 7.2-7.3 read, including Table 1 and renal and 16 mg/kg exceptions.",
+      "correction": "Added three teaching sections covering monitoring and recurrent weakness, seven-day additional nonhormonal contraception for oral and nonoral hormonal methods, and dose/renal-dependent timing of repeat blockade. Added two original questions on the implant counseling and moderate-renal-impairment vecuronium scenarios.",
+      "validation": "Targeted structural audit passed 11 lessons/111 questions, hardErrors[] and sourceGaps[]. Desktop1280x900 and mobile390x844 screenshots visually inspected for counseling and repeat-blockade paragraphs. Mobile document width and scrollWidth both390. Viewport reset. No build run this turn; no full-module verification claimed.",
+      "remaining": "Complete broader paralytic book-row assessment review and remaining toxicology work; cumulative build and final module verification still required."
+    },
+    {
+      "topic": "Assembled LAST lesson and exact ASRA limits",
+      "reviewDate": "2026-09-27",
+      "sources": [
+        "https://asra.com/docs/default-source/guidelines-articles/local-anesthetic-systemic-toxicity-rgb.pdf?sfvrsn=33b348e_2",
+        "https://asra.com/news-publications/asra-updates/blog-landing/guidelines/2020/11/01/checklist-for-treatment-of-local-anesthetic-systemic-toxicity"
+      ],
+      "sourceScope": "Actual checklist PDF text read, including weight branches, repeat bolus/doubled infusion, epinephrine inequality, avoid list, observation and lipid continuation. Landing page confirms revision expected early2027. Earlier AHA source review retained for LAST and ECMO complications. Screenshot request returned no inspectable image, so no source-image inspection claimed.",
+      "reviewedContent": "All eight toxicology teaching paragraphs, objectives/takeaways, embedded check, dose/rate/total visual and six bank cases reviewed including every choice, key and explanation. Companion perioperative LAST paragraphs inspected for consistency.",
+      "correction": "Corrected both modules from epinephrine at or below1mcg/kg to starting below1mcg/kg, and lipid continuation at least15minutes to more than15minutes after hemodynamic stability. Other source-consistent material preserved.",
+      "arithmetic": "40*.25*60=600mL/hour;50*12-225=375mL remaining capacity;60*1.5=90mL bolus;60*.25*60=900mL/hour;60*12=720mL cumulative maximum.",
+      "validation": "Both targeted audits passed: toxicology28lessons249questions and perioperative11lessons111questions, no hard errors or source gaps. Corrected paragraphs inspected on both routes at desktop1280x900 and mobile390x844; both mobile pages clientWidth=scrollWidth=390. Initial toxicology desktop screenshot jumped to lesson opening, then corrected paragraphs were explicitly recaptured. Viewport reset. No new production build after these four text corrections; previous build70764 passed. Both modules remain reviewing."
+    },
+    {
+      "topic": "Neuromuscular reversal contraindications and ICU evidence boundary",
+      "reviewDate": "2026-09-27",
+      "sources": [
+        "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=37276948-ff0f-e0ab-e063-6394a90a0973&type=display",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2f55643-2b0d-4ef9-a9d8-b7138b314372"
+      ],
+      "sourceScope": "Actual BRIDION dosing/compatibility and sections5.10-5.14 read, BLOXIVERZ adult/pediatric dosing and sections4-5.4 read. ASA DOI refresh failed; previously recorded full guideline review retained, not claimed freshly read.",
+      "reviewedContent": "Actual foundations, succinylcholine, nondepolarizing-agent-selection and reversal lesson text inspected. All15existing focused reversal bank questions read. Generated foundations and selected succinylcholine questions reveal repetitive unrelated distractors; larger terminal output was truncated so not all generated bank outputs are claimed read. Four relevant diagram configurations inspected.",
+      "implementation": "Added two perioperative reversal paragraphs: neostigmine contraindications/cautions and sugammadex ICU/bleeding evidence boundaries. Added two original questions with keys1and3. Perioperative module now113questions and11lessons.",
+      "validation": "Targeted perioperative structural audit passed; git diff --check passed; both new paragraphs inspected at1280x900 and390x844; mobile clientWidth=scrollWidth390. Viewport reset. New assessment answers/explanations checked in source, not individually drawn in randomized UI. Cumulative build14867 exit0.",
+      "remaining": "Full paralytic book-row closure still requires remaining generated-bank review/replacement and source checks for agent-specific disposition. No full perioperative or toxicology module verification claimed."
+    },
+    {
+      "topic": "Neuromuscular foundations and succinylcholine assessment replacement",
+      "reviewDate": "2026-09-27",
+      "sources": [
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b94ff0a2-a770-47a6-e053-2995a90a7fbc",
+        "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=cccd40ca-5f08-4acb-8548-3cad558388bb"
+      ],
+      "sourceScope": "Actual succinylcholine boxed warning, sections5.4,5.8,5.9,5.14 and rocuronium5.4/12.1 read. The phaseII label requires nerve-stimulator confirmation and20minutes spontaneous recovery with slow plateau before specialist anticholinesterase decision; antimuscarinic and>=1h recurrence observation included.",
+      "reviewedContent": "Twelve generated foundation items read in preceding output; succinylcholine items16/17 read previously and all four18items reread without truncation this turn. Repetitive unrelated distractors do not adequately test clinical decisions.",
+      "implementation": "Removed24generated items for foundations and succinylcholine, replaced with8original cases covering awareness, receptor mechanism, phaseI, recovery planning, denervation, pediatric warning, prolonged apnea and phaseII confirmation. Added phaseII lesson paragraph. Removed bank-specific100question runtime floor to align with topic-driven scope; audit already treats<100as advisory.",
+      "validation": "Actual8exported stems/choices/keys/rationales reviewed.97total unique IDs,72generated items remain elsewhere in perioperative bank. Structural11/97 passed with count advisory; no missing lesson coverage. Diff whitespace issue fixed and check passed. Desktop1280x900/mobile390x844 paragraph inspected, mobile width=scrollWidth390. Randomized new bank items not individually drawn in UI. Production build22795 passed.",
+      "remaining": "Continue agent-selection and other remaining perioperative generated assessments; full paralytic mapping and both modules remain reviewing."
+    },
+    {
+      "topic": "Nondepolarizing blocker clearance and assessment reconciliation",
+      "reviewDate": "2026-09-27",
+      "sources": [
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c6a8b98-deac-4e25-b4a0-5d0af5090281",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dff452e8-71e7-437e-bed0-3e1bd9441bc6",
+        "https://pubmed.ncbi.nlm.nih.gov/7932174/",
+        "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=cccd40ca-5f08-4acb-8548-3cad558388bb"
+      ],
+      "sourceScope": "Actual cisatracurium12.3 and5.3 metabolite warnings; vecuronium pharmacokinetics and renal-failure precautions; primary1994human volunteer study abstract (not full paper); rocuronium hepatic impairment/excretion and interaction fields read. Single-dose surgical data do not guarantee prolonged ICU recovery; active vecuronium metabolite supported by human primary study.",
+      "implementation": "Clarified vecuronium elimination and exposure context; added cisatracurium parent/metabolite distinction with explicit animal-versus-human seizure evidence boundary. Added3references. Replaced8generated agent-selection items with4original cases.",
+      "reviewedContent": "All8old exported agent-selection stems, choices,keys and rationales read; all4new exported cases read, keys2/0/3/1. Prior source-read lesson and diagram retained; modified lesson paragraphs reinspected in browser.",
+      "validation": "93unique questions,64generated remaining in perioperative bank; structural11/93 passed with size advisory only. git diff --check passed. Both changed paragraphs inspected desktop1280x900 and mobile390x844; clientWidth=scrollWidth390. Viewport reset. Cumulative build39964 exit0. New randomized assessment cases not individually drawn in UI.",
+      "remaining": "Paralytic safety/remaining perioperative bank and full-module validation remain. Source label also notes pediatric RSI and cesarean RSI rocuronium limitations: reconcile with specialty guidance before claiming complete agent-selection coverage."
+    },
+    {
+      "topic": "Neuromuscular-blocker storage and selection safeguards",
+      "reviewDate": "2026-09-27",
+      "sources": [
+        "https://online.ecri.org/hubfs/ISMP/Resources/ISMP_TargetedMedicationSafetyBestPractices_Hospitals.pdf"
+      ],
+      "sourceScope": "Actual 2026\u20132027 ISMP Best Practice7, printed page7, storage, labeling, ADC and rationale read. Current source replaces 2022\u20132023 link. Existing book paralytic mapping retained.",
+      "implementation": "Corrected general-ward embedded check to remove stock where not routinely used; expanded secure storage, interactive ADC and auxiliary-label exception guidance. Replaced8 generated safety items with4 original cases, including awareness after sedation disconnect.",
+      "validation": "All4 exported cases read, keys2/0/3/1. 89unique questions,56generated remaining. Structural11lessons/89questions passed after replacing a prohibited en dash in reference label; question-count advisory retained. Desktop1280x900 and mobile390x844 safety paragraphs inspected, revised embedded check inspected on mobile; no horizontal overflow. Build41743 exit0 before reference-label punctuation fix. git diff --check passed. Randomized new bank cases not individually drawn in UI.",
+      "remaining": "Full perioperative module review remains open; this does not complete or certify the module."
+    },
+    {
+      "topic": "Stress-ulcer prophylaxis: dose categories and evolving ventilation evidence",
+      "reviewDate": "2026-09-27",
+      "sources": [
+        "https://sccm.org/clinical-resources/guidelines/guidelines/sccm-ashp-guideline-prevention-of-ugib",
+        "https://onlinelibrary.wiley.com/doi/10.1111/aas.70201"
+      ],
+      "sourceScope": "Actual SCCM2024 recommendation table read, including dose definitions, feeding, neurocritical care and cessation. Actual2026 Saudi/Nordic guideline Table2, methods update cutoff, PICO1 rationale and subgroup discussion read. Regional scope retained. Not a full REVISE primary-paper read: NEJM access failed and PubMed returned challenge. No new RCT numeric effect estimates imported.",
+      "reviewedContent": "Actual full stress-ulcer lesson, embedded check, visual source and all8 old exported questions/keys/rationales read. All6 replacement exported cases read; keys1/2/0/3/1/2.",
+      "implementation": "Qualified earlier ventilation dismissal with newer individualized-risk assessment; added preventive daily-dose categories, persistent risk despite feeding, very-low-certainty neurocritical recommendation, independent acid indication and unclear-history reconciliation. Embedded check now explicitly extubated/non-neurocritical. Eight generated questions replaced by6 original; visual retained as accurate concise overview.",
+      "validation": "87unique questions,48generated remaining. Structural11/87 no hard errors or source gaps; count advisory remains. git diff --check passed. Changed paragraphs inspected desktop1280x900/mobile390x844, no horizontal overflow. Cumulative build75276 exit0.",
+      "remaining": "Full perioperative content and primary-label dosing review remain. SSC2026 sepsis-specific PPI recommendation discovered; publisher open yielded references but full recommendation not yet directly read. Reconcile in next pass and corresponding sepsis module."
+    },
+    {
+      "topic": "Local anesthetic route safeguards and LAST assessment replacement",
+      "reviewDate": "2026-09-27",
+      "sources": [
+        "https://asra.com/docs/default-source/guidelines-articles/local-anesthetic-systemic-toxicity-rgb.pdf",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3c0f567f-b7f8-4ee8-bfb2-61cd82550498"
+      ],
+      "sourceScope": "Actual full ASRA2020 checklist text read (PDF screenshot result not visually emitted, no visual-source claim). Current bupivacaine label administration, contraindications,0.75% obstetric restriction,5.10/5.11 and additive-toxicity sections read. ASRA landing search confirms planned2027update, not a new checklist.",
+      "reviewedContent": "Actual both perioperative lessons, checks, visual source and all20 old bank items including all choices/keys/rationales read. Compared actual8paragraph companion toxicology LAST lesson. All10 new exported questions/keys/rationales read.",
+      "implementation": "Added route/formulation restrictions, hepatic/cardiovascular risk and negative-aspiration limitation. Specified over70kg bolus duration and doubled infusion for persistent instability. Added original60kg arithmetic;20generated items replaced with10focused cases. Existing correct visual summaries retained.",
+      "validation": "77unique questions,28generated remain. Independent Decimal bolus90mL,rate900mL/h,total720mL,remaining330mL checked. Structural11/77 no hard errors or source gaps; question-count advisory remains. All changed paragraphs inspected at1280x900 and390x844. No horizontal overflow; viewport reset. Build85659 exit0. New bank cases read from actual export but not individually drawn in randomized UI.",
+      "remaining": "Other perioperative lessons and final assembled review remain; no module completion claim."
+    },
+    {
+      "topic": "Malignant hyperthermia formulation, maintenance and label reconciliation",
+      "reviewDate": "2026-09-27",
+      "sources": [
+        "https://www.mhaus.org/healthcare-professionals/managing-a-crisis/",
+        "https://www.mhaus.org/healthcare-professionals/mhaus-recommendations/dantrolene-administration-after-an-mh-event/",
+        "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=8f7b3ac0-604d-4c78-b545-5e0f8ea3d698&type=display"
+      ],
+      "sourceScope": "Actual MHAUS acute page and maintenance recommendation read; actual RYANODEX2.1-2.4,5,7.1 and8 read. MHAUS beyond10mg/kg differs from labeled10mg/kg maximum; distinction disclosed.",
+      "reviewedContent": "Full existing MH lesson/check and diagram source read; all8 old exported question stems,choices,keys,rationales read including separate re-read of truncated application item. All6 new exported cases read, keys1/2/0/3/1/2.",
+      "implementation": "Added formulation-specific preparation, MHAUS-versus-label distinction, maintenance/stopping criteria and calcium-channel-blocker versus calcium-salt distinction. Corrected vague cooling threshold. Replaced8generated cases with6original. Accurate three-column visual retained.",
+      "validation": "75unique questions,20generated remaining; independent100kg*2.5mg/kg=250mg and250mg/(250mg/5mL)=5mL verified. Structural11/75 no hard errors/source gaps; count advisory remains. Build73088 exit0. Changed guidance inspected at1280x900 and390x844; all6 new bank items reviewed in export, not individually drawn in randomized UI.",
+      "remaining": "Final perioperative assembled review and remaining induction/antifibrinolytic assessment groups remain. Label pregnancy/lactation counseling beyond current acute lesson not yet reconciled to companion pregnancy module."
+    },
+    {
+      "topic": "Antifibrinolytic labeled regimens and administration safety",
+      "reviewDate": "2026-09-27",
+      "sources": [
+        "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=246a3c6c-a7fb-45c7-9509-49a48a5bdcc6",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4629d585-134b-a479-e063-6294a90a3432"
+      ],
+      "sourceScope": "Actual TXA2026 full sections1-5 including renal and administration tables read; actual aminocaproic contraindications, warnings and administration read. Not a review of trauma/PPH efficacy protocols.",
+      "reviewedContent": "Actual lesson and check; all8 old exported questions/choices/keys/rationales read with separately re-read truncated27application item. All6 replacement exported cases read,keys2/0/3/1/2/0. Antifibrinolytic diagram source read and retained as accurate.",
+      "implementation": "Expanded hemophilia dental indication and renal example; concentration-dependent TXA infusion rates; contraindications and IV seizure risk; aminocaproic DIC/upper-tract risks, dilution and infusion regimen and myopathy monitoring.8generated replaced by6original cases.",
+      "validation": "73unique questions,12generated remain. Independent Decimal:100*.5=10*5=20*2.5=50mg/min;5000/250=20mL. Structural11/73 passed, count advisory remains. Build16311 exit0. Changed paragraphs inspected1280x900 and390x844; no horizontal overflow; viewport reset. New bank items reviewed in export, not individually drawn in randomized UI.",
+      "remaining": "Induction group and final perioperative assembled review remain. Full indication-specific trauma/obstetric TXA protocols require separate primary-guideline reconciliation; existing lesson does not apply dental regimen to them. Renal label table has overlapping printed boundary2.83; example3.5avoids resolving boundary by assumption."
+    },
+    {
+      "topic": "Etomidate induction and maintenance boundaries",
+      "reviewDate": "2026-09-27",
+      "sources": [
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=75bf0494-7cb9-4e8a-8edd-af62f035d236"
+      ],
+      "sourceScope": "Actual clinical pharmacology, indications, infusion warning, respiratory adverse effects and dose administration sections read.",
+      "reviewedContent": "Existing induction lesson and all four exported etomidate questions including choices, keys and explanations read.",
+      "implementation": "Added absent analgesia, ongoing sedation boundary, prolonged infusion warning, airway rescue and independently calculated adult dose example. Replaced four unrelated-distractor generated items with four original cases.",
+      "validation": "Exported four replacements read with keys1/2/0/3; total73,8generated remain. Decimal independently confirms70*.3=21mg and21/2=10.5mL. Structural11lessons/73questions: no hard errors or source gaps; count advisory remains. Build session62300 exit0; diff whitespace check passed. Both new paragraphs visually inspected1280x900 and390x844 with390px scrollWidth/clientWidth. Viewport restored. New assessment items verified in export, not individually drawn in randomized UI.",
+      "remaining": "Propofol and ketamine generated items remain; full assembled module and cross-module reconciliation required. Pediatric labeling and comparative induction trials not resolved by this targeted etomidate review."
+    },
+    {
+      "topic": "Ketamine preparation, procedure and recurrent-exposure risks",
+      "reviewDate": "2026-09-27",
+      "sources": [
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b96a0a23-3ca0-4a92-bd8b-1e9921931772"
+      ],
+      "sourceScope": "Actual April2026 full labeling sections1-7 read, including March2026 dilution and hepatobiliary/urinary updates.",
+      "reviewedContent": "Existing induction lesson, induction visual source, and all4 exported generated ketamine questions read. Visual retained.",
+      "implementation": "Added3 original paragraphs and replaced4 generated unrelated-distractor questions with4 focused cases.",
+      "validation": "Four exported replacements read with keys1/3/0/2;73total,4generated remain. Decimal independently confirms100mg/(1+1mL)=50mg/mL and100/50=2mL. Structural audit no hard errors or source gaps; size advisory remains. Build61563 exit0; diff check passed. All3 added paragraphs inspected1280x900 and390x844; mobile scrollWidth/clientWidth390. Viewport restored. Randomized assessment UI not individually drawn.",
+      "remaining": "4propofol generated items remain. Final assembled content, broader indication-specific ketamine use and cross-module review remain. Label highlights say do not coadminister methylxanthines, full section7.1 says consider alternative; lesson follows full section. No claim of absolute ICP contraindication."
+    },
+    {
+      "topic": "Propofol emulsion safety and final generated-question replacement",
+      "reviewDate": "2026-09-27",
+      "sources": [
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28d7ba00-f824-4e55-139a-03f509c099db"
+      ],
+      "sourceScope": "Actual sections1,2.1,2.2 excerpt,5.9-5.12 and8.4 read. Not full comparative induction evidence review.",
+      "reviewedContent": "All4 remaining generated propofol questions, choices and explanations read; existing lesson and visual source reviewed.",
+      "implementation": "Added asepsis, infusion-syndrome/lipid-calorie and pediatric-indication content;4original cases replace last4generated. Removed now-unused concept/dimension generator only; preserved all existing original case blocks.",
+      "validation": "73exported questions,zero generated. Four new exported cases read,keys1/3/0/2; Decimal calorie calculation528kcal. Structural no hard errors/source gaps; count advisory remains. All3 paragraphs inspected1280x900 and390x844,scrollWidth/clientWidth390,viewport reset. Diff check passed. Build result recorded separately. Build45401 exit0.",
+      "remaining": "Final assembled module review, cross-module consistency, product allergy guidance and critical-care guideline reconciliation remain. Pediatric label has statement of routine use despite no indication; no approval or universal safety inferred."
+    },
+    {
+      "topic": "Propofol food-allergy versus product-label discrepancy",
+      "reviewDate": "2026-09-27",
+      "sources": [
+        "https://www.aaaai.org/tools-for-the-public/conditions-library/allergies/soy-egg-anesthesia",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28d7ba00-f824-4e55-139a-03f509c099db"
+      ],
+      "sourceScope": "Actual AAAAI May12 2026 guidance read; cited propofol contraindication section read in preceding label review.",
+      "reviewedContent": "Induction lesson and drug-allergy cross-reactivity lesson; repository search found no propofol food-allergy assessment items.",
+      "implementation": "Added explicit society-label distinction and prior-propofol-reaction boundary to both lessons; added direct references. Accurate existing food-allergy teaching retained.",
+      "validation": "Both changed paragraphs visually inspected on1280x900 and390x844; viewport restored. Structural checks run on both modules; full build79112 exit0. No assessment counts changed. Diff check passed.",
+      "remaining": "Final assembled perioperative review remains. This resolves teaching ambiguity by explicit attribution, not by claiming label wording changed."
+    },
+    {
+      "topic": "SSC2026 stress-ulcer scope reconciliation",
+      "reviewDate": "2026-09-27",
+      "sources": [
+        "https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026"
+      ],
+      "reviewedContent": "Actual SCCM recommendation table SUP row. Existing full SUP lesson and route question inspected; no other module stress-ulcer match in repository search.",
+      "implementation": "Attributed general either-class rule to2024SCCM/ASHP; added2026sepsis-specific conditional PPI-versus-no-SUP distinction and one original case. Updated74question count and stale lesson statuses to reviewing.",
+      "validation": "Structural74questions, no hard errors/source gaps; size advisory remains. New exported case read,answer2. Changed regimen/added sepsis paragraph inspected1280x900 and390x844; viewport restored. Build67129 completed exit0; diff check passed. Not a full-module verification.",
+      "remaining": "Full assembled review remains. Recommendation-table reading does not establish full journal rationale review. Adjacent SCCM2026 intermittent-versus-continuous NMBA recommendation identified for follow-up reconciliation."
+    },
+    {
+      "topic": "ICU neuromuscular-blockade indication and monitoring boundaries",
+      "reviewDate": "2026-09-27",
+      "sources": [
+        "https://www.sccm.org/clinical-resources/guidelines/guidelines/guidelines-for-the-administration-of-neuromuscular-blockade",
+        "https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026"
+      ],
+      "sourceScope": "Actual SCCM2026 five recommendation rows and SSC2026 intermittent-versus-continuous row read. Not full trial synthesis.",
+      "reviewedContent": "Existing safety lesson and monitoring/reversal introduction; corrected overly absolute terminology sentence while retaining storage safeguards.",
+      "implementation": "Added ARDS indication, proning nonrequirement, sepsis bolus preference and ICU-versus-surgical-monitoring distinction;2original cases added,76total.",
+      "validation": "76questions; structural no hard errors/source gaps, size advisory remains. Both exported new cases read,keys2/0. All3new paragraphs visually inspected1280x900 and390x844; viewport restored. Build24902 exit0; diff check passed. Module remains reviewing.",
+      "remaining": "Final assembled module review remains; adult guidance not extrapolated to pediatric ARDS. Existing drug-specific label monitoring requirements retained."
+    },
+    {
+      "topic": "Assembled perioperative assessment full read",
+      "reviewDate": "2026-09-27",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/27755068/"
+      ],
+      "reviewedContent": "All76 actual exported questions, choices, answer indices, explanations and lesson links read in3untruncated batches. All11 visual source objects read. Assessment shuffle/prepareQuestion code inspected: correct-choice identity preserved during shuffle.",
+      "implementation": "Replaced duplicate disconnected-sedation case in safety lesson with original eye-care case; foundational awareness case retained. Corrected cramped arithmetic text. No other answer-key contradiction identified in this assembled read.",
+      "validation": "All14 assessment numeric examples independently recomputed with Decimal; results recorded. Structural76questions: no hard errors/source gaps; diff check passed. New eye-care question will receive rendered assessment inspection with final module UI pass; not yet individually drawn. Last build24902 predates this question-only replacement.",
+      "remaining": "Complete assembled lesson/reference and book mapping reconciliation, including rocuronium RSI limitations and antifibrinolytic indication scope before module verification. Eye-care source is actual primary-guideline abstract, not full2016paper."
+    },
+    {
+      "topic": "Rocuronium rapid-sequence population limitations",
+      "reviewDate": "2026-09-27",
+      "sources": [
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=04c9812d-5aa3-4949-ad02-c618028f1bb0",
+        "https://das.uk.com/guidelines/obstetric_airway_guidelines_2015/",
+        "https://uhmeded.uhcw.nhs.uk/Portals/0/AssetUploads/Courses/Anaesthetics/AirwayLab/OAA_DAS-Obstetrics%20guidelines%20.pdf?ver=FdldQdKLhMWqOHHbTTOnKg%3D%3D"
+      ],
+      "reviewedContent": "Actual July2026 label sections2.6,4,5.1-5.6,8.1,8.4 and14.1 excerpts; actual OAA/DAS2015 primary paper printed1294 and1295 paragraphs on rocuronium/sugammadex and oxygenation after failed intubation. Society site still lists obstetric2015 guideline. Full paper not claimed read.",
+      "implementation": "Two original lesson paragraphs distinguish pediatric/cesarean RSI not-recommended labeling from hypersensitivity contraindication and separate obstetric specialist guidance; one original assessment case; rocuronium reference updated to reviewed label. No pediatric off-label dosing protocol inferred.",
+      "validation": "Structural audit:77 questions, no hard errors or source gaps; diff check passed. Full application build18412 exited0. Added lesson text read in rendered desktop1280x900 and mobile390x844; mobile scrollWidth=clientWidth390. New assessment question key3 and explanation inspected in source; individual randomized UI draw remains part of final assessment validation.",
+      "remaining": "Full module final review and antifibrinolytic scope remain; not verified. Newer general adult DAS2025 full paper retrieval failed; no claim to have read its full text. Label14.1 APGAR wording is internally awkward and was not reproduced as a clinical conclusion."
+    },
+    {
+      "topic": "Antifibrinolytic trauma and postpartum indication scope",
+      "reviewDate": "2026-09-27",
+      "sources": [
+        "https://doi.org/10.1186/s13054-023-04327-7",
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK493076/",
+        "https://www.who.int/publications/i/item/9789240115637"
+      ],
+      "reviewedContent": "Actual European2023 Recommendation23 and accompanying rationale read; actual WHO2017 recommendation/remarks and outcome evidence read. Indexed WHO2025 Recommendation27 text confirms early IV1g/10min, repeat after30min/persistent or within24h/recurrent; full2025 NCBI page/table/PDF requests returned CAPTCHA and WHO page rendered navigation only. No claim of full2025 guideline review.",
+      "implementation": "Added separate adult trauma and postpartum TXA paragraphs and two original cases. Dental regimen retained and clearly distinguished. No routine obstetric prophylaxis regimen added. No wholesale extrapolation of dental renal adjustment.",
+      "validation": "Structural79questions: no hard errors or source gaps; diff check passed. Independent Decimal rate checks:1g/10min=100mg/min;1g/8h=125mg/h. New paragraphs inspected at desktop1280x900 and mobile390x844. Latest successful full build18412 predates these text/question additions; final build and assessment UI remain due.",
+      "remaining": "Read complete WHO2025 recommendation27 remarks/prophylaxis recommendations directly before final module verification; assembled lesson/reference/book and assessment UI review remain."
+    },
+    {
+      "topic": "WHO2025 postpartum direct-source reconciliation",
+      "reviewDate": "2026-09-27",
+      "sources": [
+        "https://www.who.int/publications/i/item/9789240115637",
+        "https://iris.who.int/server/api/core/bitstreams/88bf11a5-93b6-4d6b-bdaa-856b46c8ed3c/content"
+      ],
+      "sourceSha256": "2049fb40dff7e97712c98cb58907ef662161627197a5e143ec50045abb1931de",
+      "reviewedContent": "Official WHO PDF downloaded through publication link; actual PDF pages50-52,57-58,62-64 read. Recommendations14/15 population-level prophylaxis distinction and clinical high-risk judgment;22 diagnostic threshold and cesarean evidence caveat;27 full treatment remarks;29 bundle scope. No claim that the entire111-page guideline was read.",
+      "implementation": "Added objective PPH first-response threshold and prevention/treatment distinction, two original assessment cases, beyond3h starting-window and no-source-confirmation delay clarification. Previous repeat-dose text retained. Cross-module TXA search found no existing PPH dosing assertions needing correction.",
+      "validation": "Structural81questions:no hard errors/source gaps. Desktop new paragraphs inspected; actual mobile390x844 inspection confirmed scrollWidth390. Two new question keys/explanations inspected in source. Final build and full assessment interaction remain due; latest successful build18412 predates TXA additions.",
+      "remaining": "Final assembled perioperative lesson/reference/book and assessment UI review. Module remains reviewing."
+    },
+    {
+      "topic": "Final assembled perioperative lesson and visual read",
+      "reviewDate": "2026-09-27",
+      "reviewedContent": "All11 lessons: complete descriptions, outcomes, summaries, applications, paragraphs, key points, embedded checks/keys/rationales and reference list read in3 untruncated source batches. All11 visual objects reread. Book actualPDF996/997 text reread for LAST and paralytic rows. Prior actual rendered-book review remains in bookRead.",
+      "sources": [
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b94ff0a2-a770-47a6-e053-2995a90a7fbc"
+      ],
+      "implementation": "Added label5.6/5.7 bradycardia/repeat-dose/eye-pressure detail to match stated learning scope. Corrected antifibrinolytic visual to avoid implying confirmatory fibrinolysis testing before eligible trauma/postpartum TXA. No other material internal contradiction identified in assembled lesson read.",
+      "bookReconciliation": "PDF996 LAST:20% lipid and benzodiazepine retained, modern ASRA dosing/modified resuscitation/observation added. PDF997 paralytics:neostigmine plus antimuscarinic retained; sugammadex restricted to rocuronium/vecuronium and current pediatric indication replaces adult-only book scope. Additional perioperative material reviewed against cited primary sources, beyond these book rows.",
+      "validation": "81questions retained; final structural/build and changed-visual/assessment UI pending.",
+      "remaining": "Final application checks and assessment interaction, then isolate completed-module commit without unrelated work."
+    }
+  ],
+  "historyNote": "Entries retain chronological intermediate pending states. Final reconciliation below supersedes those pending states for this module only; toxicology and other modules remain separate.",
+  "finalReconciliation": {
+    "clinical": "Actual complete assembled lesson/check/reference and all11 visual objects read after source corrections. All76 original questions read together previously; replacement eye-care item and subsequent5 questions read individually with choices, correct keys and explanations. No unresolved material accuracy/coverage issue identified within this module.",
+    "arithmetic": {
+      "reviewDate": "2026-09-27",
+      "questionCount": 76,
+      "allQuestionsRead": true,
+      "numericResults": {
+        "infant_sugammadex_mL": "1",
+        "minimal_neostigmine_mg": "2.40",
+        "deep_sugammadex_mg": "400",
+        "T2_sugammadex_mg": "140",
+        "neostigmine_cap_mg": "3.50",
+        "lipid_bolus_mL": "90.0",
+        "lipid_mL_h": "900.00",
+        "lipid_remaining_mL": "330",
+        "ryanodex_mL": "5.0",
+        "TXA_mg_min": "50.0",
+        "aminocaproic_stock_mL": "20",
+        "etomidate_mL": "10.5",
+        "ketamine_diluted_mL": "2",
+        "propofol_kcal": "528.0"
+      },
+      "bankSha256": "5c8d51fb1c5366f984f6650bc08c31bc8c23e797039c4de74ed562bd2a2da11b",
+      "remaining": "Final assembled lesson/book reconciliation and rendered assessment pass."
+    },
+    "additionalArithmetic": [
+      "1000mg/10min=100mg/min",
+      "1000mg/8h=125mg/h"
+    ],
+    "application": {
+      "buildSession": 86665,
+      "buildExitCode": 0,
+      "structuralQuestions": 81,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "ui": "Changed learning content inspected desktop1280x900/mobile390x844 throughout review. Latest bradycardia paragraph and antifibrinolytic figure inspected both. Complete randomized10-question practice attempt exercised; all10 expected correct feedback/explanations and lesson anchors present. Mobile feedback readable, width390/scrollWidth390.",
+      "uiScope": "UI sampling validates rendering/interaction; clinical review covers all81 source questions. No claim each question was individually drawn in browser."
+    },
+    "remainingMaterialIssues": [],
+    "publication": "Local validation only; completion commit/push pending; no direct deployment."
+  },
+  "fileSha256": {
+    "src/data/modules/perioperativeCriticalCarePharmacology.js": "775cc66cada7ad5e1e08f538c3061770b93ecb09735d05c79229d053060e9c7b",
+    "src/data/questionBanks/perioperativeCriticalCarePharmacology.js": "92de6b8080087b41408983fccdf7c5ce886cdc56892462e227e703261580812d",
+    "src/components/learn/PerioperativeCriticalCareVisual.jsx": "3783e37532c03165715e7f932cf718729203c1738c2a999e5a98868f088b8f9c",
+    "src/data/modules/drugAllergiesAdverseReactions.js": "21312a3356d47340b83834337c97a1ba5b8265d458c0e3f9cda06233711968b5"
+  }
+}

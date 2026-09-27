@@ -3348,52 +3348,58 @@
       "lessons": [
         {
           "slug": "perioperative-stress-ulcer",
-          "status": "unreviewed"
+          "status": "verified"
         },
         {
           "slug": "local-anesthetic-pharmacology",
-          "status": "unreviewed"
+          "status": "verified"
         },
         {
           "slug": "local-anesthetic-toxicity",
-          "status": "unreviewed"
+          "status": "verified"
         },
         {
           "slug": "induction-agent-selection",
-          "status": "unreviewed"
+          "status": "verified"
         },
         {
           "slug": "malignant-hyperthermia",
-          "status": "unreviewed"
+          "status": "verified"
         },
         {
           "slug": "neuromuscular-blockade-foundations",
-          "status": "unreviewed"
+          "status": "verified"
         },
         {
           "slug": "succinylcholine-safety",
-          "status": "unreviewed"
+          "status": "verified"
         },
         {
           "slug": "nondepolarizing-agent-selection",
-          "status": "unreviewed"
+          "status": "verified"
         },
         {
           "slug": "neuromuscular-blockade-safety",
-          "status": "unreviewed"
+          "status": "verified"
         },
         {
           "slug": "monitoring-and-reversal",
-          "status": "unreviewed"
+          "status": "verified"
         },
         {
           "slug": "antifibrinolytic-hemostasis",
-          "status": "unreviewed"
+          "status": "verified"
         }
       ],
-      "questions": 112,
-      "status": "unreviewed",
-      "evidence": []
+      "questions": 81,
+      "status": "verified",
+      "evidence": [
+        "2026-09-26: targeted pediatric BRIDION update linked from toxicology book-row review; two paragraphs/two original cases. Build43315 exit0, structural11/114 and desktop/mobile paragraph checks passed. Full clinical re-review not established by this change.",
+        "2026-09-27: targeted reversal lesson now explicitly reconciles ASA minimal-block dosing with BLOXIVERZ label ceiling. Two original cases added; structural11/116 and desktop/mobile checks pass. Module moved to reviewing to reflect actual partial clinical review; not verified.",
+        "2026-09-27: reviewed actual reversal-question output; replaced16 repetitive generated items with8 original cases, retaining4 prior originals.12 targeted reversal questions;108 total. Actual desktop/mobile recovery visual inspected. See toxicology-review.json.",
+        "2026-09-27: targeted actual-content reviews now cover all11lessons;74original questions,zero generated. Detailed sources/corrections/validation in toxicology-review.json. Lesson statuses updated to reviewing; final assembled clinical audit and open discrepancies remain before verification.",
+        "2026-09-27: complete actual-content review, guideline/label/book discrepancies and original81-question bank reconciled. Build86665 exit0; structural noharderrors/sourcegaps; desktop/mobile and complete10-question practice interaction passed. See perioperative-completion-review.json for evidence, arithmetic, scope and limitations."
+      ]
     },
     {
       "slug": "gastroesophageal-reflux-disease",
