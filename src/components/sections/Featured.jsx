@@ -1,18 +1,18 @@
 import Link from "next/link";
+import WorkspacePreviewFilm from "./WorkspacePreviewFilm";
 import "./institute-intro.css";
 
 export default function Featured() {
   return (
-    <section id="next-section" className="institute-intro" aria-labelledby="institute-intro-title">
-      <div className="institute-intro__inner">
-        <div className="institute-intro__eyebrow"><span>NaS</span><span>Research · Tools · Education</span></div>
-        <h2 id="institute-intro-title">For the questions<br /><span>still open.</span></h2>
-        <div className="institute-intro__closing">
-          <p className="institute-intro__statement">Research, tools, and education<br />for the life sciences.</p>
-          <div className="institute-intro__body">
-            <Link href="/workspace">Explore the workspace <span aria-hidden="true">↗</span></Link>
-          </div>
+    <section id="next-section" className="home-workspace" aria-labelledby="home-workspace-title">
+      <div className="home-workspace__inner">
+        <div className="home-workspace__copy">
+          <p className="home-workspace__eyebrow">The NaS workspace</p>
+          <h2 id="home-workspace-title">Room for your<br />next <span>question.</span></h2>
+          <p className="home-workspace__description">Research tools, learning, and a personal library for scientists, clinicians, and curious minds.</p>
+          <Link href="/workspace" className="home-workspace__link">Explore the workspace <span aria-hidden="true">↗</span></Link>
         </div>
+        <WorkspacePreviewFilm />
       </div>
     </section>
   );

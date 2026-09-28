@@ -74,10 +74,11 @@ export default async function ResearchPublicationPage({ params }) {
   const item = getResearchItem(slug);
   if (!item) notFound();
 
+  const isResearchPublication = ["Research Report", "Research Note", "White Paper"].includes(item.type);
   const isOriginStory = item.variant === "institutional-origin";
   const hasHeroVideo = Boolean(item.heroVideo);
   const hasHeroImage = false;
-  const citation = `${item.authors.join(", ")} (${item.date.slice(-4)}). ${item.title}. NaS Research. Version ${item.version}. https://nasresearch.bio/research/${item.slug}`;
+  const citation = `${item.authors.join(", ")} (${item.date.slice(-4)}). ${item.title}. NaS Research. ${item.version ? `Version ${item.version}. ` : ""}https://nasresearch.bio/research/${item.slug}`;
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -137,11 +138,11 @@ export default async function ResearchPublicationPage({ params }) {
           <div className="publication-byline">
             <p>By {item.authors.join(", ")}{item.affiliation && <span> · {item.affiliation}</span>}</p>
             <p>
-              Version {item.version} · {item.readTime}
+              {[isResearchPublication && item.version ? `Version ${item.version}` : null, item.readTime].filter(Boolean).join(" · ")}
               {item.updatedDate ? ` · Updated ${item.updatedDate}` : ""}
             </p>
           </div>
-          <PublicationActions citation={citation} pdfUrl={item.pdfUrl} showPdfStatus={item.pdfStatus !== "none"} />
+          <PublicationActions citation={isResearchPublication ? citation : undefined} pdfUrl={item.pdfUrl} />
           {item.reviewState && <p className="publication-review-state">{item.reviewState}</p>}
           {item.reproducibilityUrl && <a className="publication-reproduce" href={item.reproducibilityUrl}>Download data and analysis ↗</a>}
         </div>
@@ -165,7 +166,7 @@ export default async function ResearchPublicationPage({ params }) {
               </a>
             ))}
             {item.sources?.length > 0 && <a href="#sources">Sources</a>}
-            <a href="#citation">Citation</a>
+            {isResearchPublication && <a href="#citation">Citation</a>}
           </nav>
           </details>
         </aside>
@@ -242,17 +243,19 @@ export default async function ResearchPublicationPage({ params }) {
             </section>
           )}
 
-          <section id="citation" className="publication-section publication-citation">
+          {isResearchPublication && <section id="citation" className="publication-section publication-citation">
             <p className="publication-section-label">Publication details</p>
             <h2>Cite this work</h2>
             <p className="publication-citation__text">{citation}</p>
-            <PublicationActions citation={citation} pdfUrl={item.pdfUrl} showPdfStatus={false} />
+            <PublicationActions citation={citation} pdfUrl={item.pdfUrl}  />
             {publicationArtwork[item.slug]?.creditUrl && <p className="publication-note"><a href={publicationArtwork[item.slug].creditUrl}>Artwork credits and license ↗</a></p>}
             {item.reproducibilityUrl && <a className="publication-resource-link" href={item.reproducibilityUrl}>Download data and analysis <span aria-hidden="true">↗</span></a>}
             <p className="publication-note">
               {item.publicationNote ?? "This web publication is the current version of record. Updates will be reflected through the document’s version history."}
             </p>
-          </section>
+          </section>}
+
+          {!isResearchPublication && publicationArtwork[item.slug]?.creditUrl && <p className="publication-note"><a href={publicationArtwork[item.slug].creditUrl}>Artwork credits and license ↗</a></p>}
 
           {related.length > 0 && (
             <section className="publication-related">
