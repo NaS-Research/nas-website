@@ -1,0 +1,44 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_product_review",
+  "module": "common-eye-conditions",
+  "sources": [
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=0c5d6f5e-18ea-436f-8c62-bbaf66effe3d",
+      "revision": "July2024",
+      "read": "Full prescribing, patient and IFU text, including7-day checklist. Images not inspected."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=87999254-1857-4d3c-817a-cb8f6a5b0cf7",
+      "revision": "PI October2025; SPL January2026",
+      "read": "Full prescribing text. Packaging/chemical images not inspected."
+    }
+  ],
+  "findings": [
+    "Added product schedules and handling with two original applied questions.",
+    "Expanded book AzaSite storage summary to unopened/opened ranges and distinguished discard deadline from course.",
+    "AzaSite current pediatric wording does not repeat older under-one-year limitation; neonatal pathways still require separate review.",
+    "Bausch + Lomb topical trimethoprim/polymyxin warning excludes neonatal ophthalmia.",
+    "AzaSite microbiology lists some in-vitro activity without established ophthalmic efficacy; do not infer topical cure of gonococcal/chlamydial infection."
+  ],
+  "remaining": [
+    "Other antibiotics/allergy drugs and systemic infection pathways",
+    "Full module and materialized bank review",
+    "Rendered new rows and question interaction validation"
+  ],
+  "validation": {
+    "import": "11 lessons,135 unique questions; answer indices and review destinations valid; diff whitespace check passed.",
+    "render": "All new product paragraphs captured and visually inspected at1440x1000 and390x844. No text clipping or horizontal overflow; no browser page errors.",
+    "remaining": "Full assessment clinical pass and new-case interaction checks; remaining module content and final build."
+  },
+  "hashes": {
+    "src/data/modules/commonEyeConditions.js": "56d6219344be28035e0f326881e7a748e83fc3597e8d0689bc337f672148806f",
+    "src/data/questionBanks/commonEyeConditions.js": "e03b9a33cd02505170c478861201c71ebb3149f8ba92da825bcff7d261f0c724"
+  },
+  "finalClosure": {
+    "date": "2026-09-26",
+    "status": "resolved_for_common_eye_module",
+    "evidence": "common-eye-completion-review.json",
+    "note": "Earlier statuses, counts and pending text are historical snapshots. Final completion record and its lesson mapping supersede Common Eye remaining-work statements. Ear-module work remains separate."
+  }
+}

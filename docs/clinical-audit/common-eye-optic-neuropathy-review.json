@@ -1,0 +1,52 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_module_review",
+  "topic": "Amiodarone, ethambutol and linezolid ocular injury",
+  "book": "RxPrep 2023 printed p545",
+  "sources": [
+    {
+      "label": "DailyMed. Amiodarone, section 5.5 visual impairment",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=0caedb97-56fd-4ec0-bfb2-c7683b8f5f1b&type=display"
+    },
+    {
+      "label": "DailyMed. Ethambutol, ocular warnings and monitoring",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=3f6428d6-3745-4337-ad78-ebfff9f49135&type=display"
+    },
+    {
+      "label": "ATS/CDC/IDSA. Drug-susceptible tuberculosis guideline, optic neuritis",
+      "href": "https://www.idsociety.org/practice-guideline/treatment-of-drug-susceptible-tb/"
+    },
+    {
+      "label": "DailyMed. Linezolid, section 5.2 optic neuropathy",
+      "href": "https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf4fa35d-93c9-41c3-a2ae-0298014b8a9f"
+    }
+  ],
+  "readScope": "Amiodarone 5.5; ethambutol warnings, precautions and ocular adverse-reaction passages; linezolid 5.2; ATS/CDC/IDSA optic-neuritis passage and indexed monitoring figure caption.",
+  "changes": [
+    "Added three drug-specific rows and three original assessment cases.",
+    "Distinguished asymptomatic deposits from optic nerve injury, monitoring schedules from symptom-triggered evaluation, and potential recovery from guaranteed reversibility."
+  ],
+  "guidelineContext": "2016 ATS/CDC/IDSA ocular monitoring guidance used alongside product labeling. IDSA 2025 update summary and Q&A identify shorter-regimen updates and continued reference to earlier guidance; not a comprehensive review of the 2025 TB guideline.",
+  "remaining": [
+    "Whole-module reconciliation and cross-module consistency",
+    "Full module final validation"
+  ],
+  "validation": {
+    "date": "2026-09-26",
+    "structural": "161 unique records with four distinct options, valid keys and matching anchors; module import and scoped diff check passed.",
+    "visual": "Seven rows inspected in fourteen screenshots: desktop 1440x1000 and mobile 390x844. Legible, no clipping, no browser errors or horizontal overflow.",
+    "interaction": "All seven new cases covered and checked on desktop in 23 attempts and mobile in 40; scoring, correct-answer mapping, explanations, review links and incomplete-submission gating passed.",
+    "script": "/private/tmp/eye-seven-injuries-cases.mjs",
+    "sourceHashes": {
+      "src/data/modules/commonEyeConditions.js": "46384fe163a38440a49de2f2ed4785e2f4025056f152174145f8200f9a2f66c9",
+      "src/data/questionBanks/commonEyeConditions.js": "3d2f8bfd378c17dc315b4a54925e5c4e86beb970028559e6ad694eee6d0b3eb2"
+    },
+    "scope": "These checks cover the seven new rows/cases, not complete module verification."
+  },
+  "finalClosure": {
+    "date": "2026-09-26",
+    "status": "resolved_for_common_eye_module",
+    "evidence": "common-eye-completion-review.json",
+    "note": "Earlier statuses, counts and pending text are historical snapshots. Final completion record and its lesson mapping supersede Common Eye remaining-work statements. Ear-module work remains separate."
+  }
+}

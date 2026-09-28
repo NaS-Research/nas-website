@@ -1,0 +1,64 @@
+{
+  "reviewDate": "2026-09-25",
+  "status": "partial_module_review",
+  "lesson": "acute-angle-closure-and-drug-triggers",
+  "sources": [
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=21628112-0c47-11df-95b3-498d55d89593",
+      "version": 30,
+      "revision": "03/2026",
+      "sectionsRead": [
+        "5.1",
+        "5.2",
+        "5.8",
+        "17 Eye Disorders",
+        "Medication Guide ocular warning"
+      ]
+    },
+    {
+      "url": "https://eyerounds.org/cases/283-topiramate-induced-angle-closure.htm",
+      "date": "2019-04-09",
+      "sectionsRead": [
+        "Both case presentations and courses",
+        "Pathophysiology",
+        "Signs/symptoms",
+        "Management",
+        "Prognosis"
+      ],
+      "role": "Original institutional case experience and expert management discussion; no case text, doses or images copied"
+    },
+    {
+      "url": "https://eyewiki.aao.org/Drug-induced_Acute_Angle_Closure_Glaucoma",
+      "lastEdited": "2026-07-21",
+      "sectionsRead": [
+        "Mechanism",
+        "Clinical presentation",
+        "Management and prevention"
+      ],
+      "limitation": "Assigned review status update pending (2023); used with label and institutional case evidence, not as sole protocol authority"
+    }
+  ],
+  "changes": [
+    "Added seventh lesson focused on urgent recognition and mechanism-specific treatment",
+    "Explained topiramate-associated effusion, supervised rapid withdrawal and why pure nonpupillary closure is not corrected by iridotomy",
+    "Replaced questions 109\u2013112 after reading all original options and rationales; connected review links to new lesson",
+    "Added and registered original text comparison visual and original embedded check"
+  ],
+  "bookDiscrepancy": "Printed page 541 describes angle closure as sudden and surgically treated and lists topiramate without explaining its different mechanism. The new lesson prevents generalizing pupillary-block treatment to pure drug-associated effusion. Chronic/asymptomatic angle closure still requires further foundation reconciliation.",
+  "validation": {
+    "import": "7 lessons, 121 unique questions, all question keys and lesson links valid",
+    "assessment": "Desktop 5 attempts and mobile 11 attempts each encountered all four revised cases. Shuffled answer keys, correct/incorrect scoring, rationales and review links passed; no page errors or overflow. Other sampled questions verified for UI only.",
+    "visual": "Four complete paragraph rows inspected at desktop 1440x1000 and mobile 390x844. Desktop comparison inspected. Initial mobile figure screenshot had navigation overlay; recaptured at 390x1200 with figure below navigation and inspected the complete title and all four columns. No text clipping."
+  },
+  "remaining": [
+    "Complete glaucoma diagnosis, treatment guideline and procedure reconciliation",
+    "NICE recommendation HTML/PDF returned 403; exact current recommendations not yet verified or incorporated",
+    "Review remaining product coverage, generic questions and all other figures",
+    "Check cross-module topiramate details in seizure and migraine content during their full reviews"
+  ],
+  "hashes": {
+    "src/data/modules/glaucomaPharmacotherapy.js": "3d4f86ce71a23cbb74867cb80ec2bc017de2959a9b8598bdc54f8203c96192d9",
+    "src/data/questionBanks/glaucomaPharmacotherapy.js": "9c9f102b937593db318bdd064ecbf7116e73e3c19d87f615425ea729b62dae8c",
+    "src/components/learn/GlaucomaPharmacotherapyVisual.jsx": "1d42d95d728fd16c9a66ca4390fd3a854de2d0ed11c4f8a8cfb277ce6f0da2f5"
+  }
+}

@@ -70,3 +70,26 @@ body:has(.module-contents) { overflow-x: clip; overflow-y: visible; }
 @media (prefers-reduced-motion: reduce) {
   .module-contents__marker, .pharmacy-module-nav.module-contents nav a { transition: none; }
 }
+
+/* Keep optional tools from covering module text on narrow screens. */
+@media (max-width: 860px) {
+  body:has(.pharmacy-module-page) .pharmacy-tool-menu,
+  body:has(.pharmacy-module-page) aside.personal-tools {
+    position: relative;
+    inset: auto;
+    margin: 1rem auto;
+    width: calc(100% - 2.5rem);
+    max-width: 38rem;
+  }
+  body:has(.pharmacy-module-page) .pharmacy-tool-menu[open] {
+    flex-direction: column;
+  }
+  body:has(.pharmacy-module-page) .personal-tools-panel {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    max-width: 100%;
+    max-height: none;
+    flex-basis: 100%;
+  }
+}

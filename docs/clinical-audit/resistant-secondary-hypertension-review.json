@@ -1,0 +1,115 @@
+{
+  "module": "resistant-secondary-hypertension",
+  "status": "reviewing",
+  "reviewDate": "2026-09-27",
+  "actualContentRead": {
+    "lessons": "All six lesson bodies and embedded checks read in preceding turn.",
+    "visuals": "All six diagram definitions read in this turn.",
+    "assessment": "All116 assembled questions, four choices, answer keys and rationales read. First output truncated within028-033; those six were re-read without truncation. Updated cases002,003,006,008,110 authored and checked against sources.",
+    "limits": "Reading is not clinical verification. Focused primary-source review does not close every secondary-cause topic."
+  },
+  "findings": [
+    "Generated questions often use unrelated true statements as distractors; broad action and monitoring stems can make more than one choice defensible.",
+    "Four prior cases049,050,105,106 cover PA-screen interference and aprocitentan safety.",
+    "Replaced002,003,006,008 with specific exposure/confirmation cases; replaced110 with device-specific contraindication case. Total remains116.",
+    "Corrected visual controlled-resistance definition to four or more agents, identified DHP CCB and ACE inhibitor or ARB in the base, and removed an endocrine caption that could contradict broad PA screening.",
+    "Added guideline renal-denervation selection criteria and Paradise-specific anatomical and clinical exclusions."
+  ],
+  "sources": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6530990/",
+      "scope": "AHA resistant hypertension statement definitions and adherence/confirmation framework; current2025 guidance governs newer recommendations."
+    },
+    {
+      "url": "https://nefro.cl/web/docs/AHA_Hypertension_Guidelines_2025%5B1%5D.pdf",
+      "scope": "Actual primary guideline section5.6 recommendations4-6 and definition, PDFpage62."
+    },
+    {
+      "url": "https://www.fda.gov/medical-devices/recently-approved-devices/paradise-ultrasound-renal-denervation-system-p220023",
+      "scope": "Actual approved-device uses and contraindications."
+    },
+    {
+      "url": "https://academic.oup.com/jcem/article/99/6/1915/2537399",
+      "scope": "PPGL initial biochemical tests, supine sampling and positive-result follow-up."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2386281/",
+      "scope": "Cushing initial testing options, repeated sampling, renal and sleep-related limitations."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1a52bedc-8e2c-4116-a296-a87770676b4a",
+      "scope": "INSPRA June2025PI section4 indication-specific contraindications."
+    }
+  ],
+  "validation": {
+    "contentAudit": "Passed:6lessons116questions, no hard errors/source gaps.",
+    "diffCheck": "Passed for module, question bank and visual.",
+    "rendered": "Pending desktop/mobile verification; existing preview remains blocked on error page.",
+    "productionBuild": {
+      "result": "passed exit0",
+      "command": "npm run build",
+      "log": "/private/tmp/nas-resistant-review-build.log",
+      "scope": "Current clinical lesson, visual and assessment changes included; subsequent062review anchor correction checked by content audit."
+    },
+    "release": "Not a completed module; no commit/push for this pass."
+  },
+  "openWork": [
+    "Inspect revised lessons, all six visuals, navigation and answer feedback on desktop and mobile when browser access is restored.",
+    "Check final scoped diff and validation against these file hashes; commit/push when the module is fully complete."
+  ],
+  "reviewPasses": [
+    {
+      "date": "2026-09-27",
+      "scope": "Endocrine test selection, secondary-cause source reconciliation and flagged assessment ambiguity",
+      "bookRead": "Actual cached printed434 reread: renal disease, adrenal aldosterone excess, OSA and drugs identified as secondary causes; current content intentionally extends this book overview.",
+      "sourceRead": [
+        "Endocrine Society2014 PPGL recommendations1.1,1.3,1.4 and1.3remarks; actual primary publisher text read.",
+        "Endocrine Society2008 Cushing diagnosis recommendations3.4-3.8 and test-specific sampling limitations; actual primary guideline read.",
+        "2025AHA/ACC Table10 actual rows read for CKD, renovascular disease, OSA, thyroid disorders, PPGL, cortisol excess, hyperparathyroidism and coarctation; current high-office-pressure supportive text reviewed."
+      ],
+      "corrections": [
+        "Added concrete metanephrine and cortisol screening protocols and result limitations, with direct primary references.",
+        "Replaced078 and082 with endocrine test-selection cases; replaced004,007,010,011,012 to resolve flagged ambiguity. Reviewed assembled keys, explanations and lesson links.",
+        "Qualified routine confirmation-before-escalation language for stable outpatients; markedly elevated pressure or possible acute organ injury must not wait on completion of a chronic-resistance workup."
+      ],
+      "validation": "Content audit passed6lessons116questions. All seven replacement questions printed and reviewed. Subsequent outpatient qualification is a textual safety clarification; scoped diff check passed. UI and final build pending."
+    },
+    {
+      "date": "2026-09-27",
+      "scope": "MRA eligibility and indication-specific renal restrictions",
+      "sourceRead": [
+        "Actual2025AHA/ACC section5.6 recommendation2: routineMRA add-on population eGFR>=45.",
+        "ActualINSPRA June2025 prescribing information sections2.3 and4: monitoring and general versus hypertension-specific exclusions.",
+        "Actual existing foundationMRA restrictions, HFrEFMRA paragraph and CKDnonsteroidalMRA paragraph reviewed to distinguish indication and renal measure."
+      ],
+      "corrections": [
+        "Expanded resistant-treatment lesson to specify guideline eGFR criterion without calling it a universal contraindication.",
+        "Added hypertension-specific eplerenone restrictions and reference. Replaced062 and102 with clinical selection cases; assembled keys and explanations inspected.",
+        "Retargeted062review link from inheritedPA anchor to stepwise treatment where the hypertension-specific restrictions are taught."
+      ],
+      "validation": "Production build passed exit0. Targeted content audit and scoped diff check passed, including subsequent062anchor correction."
+    }
+  ],
+  "clinicalReviewClosure": {
+    "date": "2026-09-27",
+    "status": "reviewed locally; awaiting rendered verification, not module-complete",
+    "scope": "All six current lessons, summaries, applications and embedded checks re-read cumulatively. All116assembled assessment items and six diagram definitions read across recorded passes; revised cases individually rechecked. Primary-source reconciliation and related foundation/HFrEF/CKD distinction checks recorded above and in hypertension-foundations-review.json.",
+    "finalCorrection": "First embedded check fourth distractor previously omitted outside-office pressure and verified exposure, making apparent resistance defensible as a second answer. Specified both in that option.",
+    "numericalReview": [
+      "Controlled resistance: four or more necessary agents; uncontrolled on optimized complementary three-drug base.",
+      "PA medication testing: four-week MRA/ENaC and two-week beta/central-alpha2 intervals under cited strategy, with taper/safety qualification.",
+      "Metanephrines: at least30minutes supine; cortisol: repeated urine/saliva samples or1mgDST.",
+      "Routine resistantHTNMRA recommendation eGFR>=45 is distinct from HFrEF eGFR>30 and drug-specificCrCl exclusions.",
+      "Eplerenone: hypertensionCrCl<50; all-useCrCl<=30; startingK>5.5; sex-specificcreatinine thresholds checked.",
+      "Aprocitentan:12.5mgdaily; contraception one month afterward; liver>3ULN and NT-proBNP>=500/NYHAIII-IV restrictions checked.",
+      "RDN:officeSBP140-180 withDBP>=90,eGFR>=40; Paradise3-8mm artery limits and stenosis>30percent exclusions checked."
+    ],
+    "arithmetic": "No newly authored arithmetic exercises in this module; numerical values are source-specific thresholds, doses and testing intervals.",
+    "sourceFileSha256": {
+      "src/data/modules/resistantSecondaryHypertension.js": "883851cda1b1ec89d3abe2a3730860730e6f23fbcaf79fb922138f2e8660f6d3",
+      "src/data/questionBanks/resistantSecondaryHypertension.js": "f562be801567b6d63995ddfffb429cf8fb891112cc87a12fb3ab46a6f1b2bb65",
+      "src/components/learn/ResistantSecondaryHypertensionVisual.jsx": "8e667c777747d37013f08d12657a712687c79565e38cedeb0c6a12006d95b815"
+    },
+    "limitations": "This is an assistant clinical-content review, not independent pharmacist certification. Build and structural checks do not establish clinical accuracy or rendered correctness."
+  }
+}

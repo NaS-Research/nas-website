@@ -1,0 +1,52 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_review",
+  "bookScope": "Printed540\u2013542/PDF548\u2013550 fully visually inspected from private rendered pages; content read including figures, formulation box and glaucoma drug tables. Printed543\u2013545 remain separate eye/ear work.",
+  "coverage": [
+    {
+      "topic": "Glaucoma nerve damage, pressure and open/closed-angle disease",
+      "destination": "aqueous-humor-and-glaucoma-risk",
+      "reconciliation": "Normal-tension and chronic asymptomatic closure qualify simplified book description; treatment goal preserves vision, not just a number."
+    },
+    {
+      "topic": "Pressure-raising medications",
+      "destination": "acute-angle-closure-and-drug-triggers and aqueous-humor-and-glaucoma-risk",
+      "reconciliation": "Anticholinergic/sympathomimetic pupillary block and topiramate effusion already distinguished. Added missing corticosteroid-associated pressure risk and monitoring."
+    },
+    {
+      "topic": "Drug mechanisms, initial treatment, combination therapy and adherence",
+      "destination": "All seven lessons",
+      "reconciliation": "Individualized efficacy and safety replace universal class ranking or automatic beta-blocker preference for unilateral disease. Initial SLT and advanced surgery pathways included."
+    },
+    {
+      "topic": "Prostaglandin product table",
+      "destination": "prostaglandin-pathway-therapy",
+      "reconciliation": "All listed active agents and combinations addressed; precise labels replace blanket refrigeration/Latisse prohibition."
+    },
+    {
+      "topic": "Beta blockers, CAIs, alpha agonists, cholinergics, ROCK inhibitor table",
+      "destination": "aqueous-production-suppressors, conventional-outflow-and-procedures, glaucoma-selection-and-monitoring",
+      "reconciliation": "All active agents/classes covered. Product-specific schedules replace classwide assumptions; surgical Miostat and procedural Iopidine separated from outpatient products."
+    },
+    {
+      "topic": "General formulation and prescription abbreviations",
+      "destination": "ophthalmic-administration-and-safety; common-eye/common-ear modules",
+      "reconciliation": "Drop-size and gel instructions qualified in glaucoma. Eye/ear abbreviation and substitution teaching remains part of pending common-eye/common-ear audit, not a claim of full chapter completion."
+    }
+  ],
+  "newSource": {
+    "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=00a5aa88-e361-4ea7-8922-530c738b726e",
+    "revision": "02/2024",
+    "scope": "Full prescribing text read; only pressure/cataract/infection warning, monitoring and supervised treatment continuity used here. Package images not inspected."
+  },
+  "validation": {
+    "syntax": "node --check passed",
+    "visual": "Complete new steroid paragraph inspected desktop1440x1000/mobile390x844. Readable without clipping/overflow.",
+    "moduleSha256": "3a48638e3f82dae840c209cff20b1f1be7bd6ccdb2f9408c3df1e6945912680d"
+  },
+  "remaining": [
+    "Final integrated rendering and build",
+    "Resolve materially relevant product-instruction image gaps",
+    "Common-eye/common-ear chapter topics remain unverified"
+  ]
+}

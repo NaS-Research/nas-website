@@ -78,7 +78,7 @@ export default async function PharmacyLessonPage({ params }) {
           <p>{lesson.description}</p>
           <div className="lesson-hero__dates">
             <span>Published <time dateTime={lesson.dateISO}>{lesson.date}</time></span>
-            <span>Clinically reviewed <time dateTime={lesson.reviewedDateISO}>{lesson.reviewedDate}</time></span>
+            <span>Content reviewed <time dateTime={lesson.reviewedDateISO}>{lesson.reviewedDate}</time></span>
             <span>Version {lesson.version}</span>
           </div>
         </div>

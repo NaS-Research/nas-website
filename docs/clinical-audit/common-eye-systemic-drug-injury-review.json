@@ -1,0 +1,62 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_module_review",
+  "bookScope": "RxPrep 2023 printed p545 medication-induced ophthalmic issues",
+  "sources": [
+    {
+      "label": "DailyMed. Topiramate, ocular warnings 5.1\u20135.2, revised May 2026",
+      "href": "https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=53c3f980-f05b-c671-e063-6294a90a77d5"
+    },
+    {
+      "label": "DailyMed. Vigabatrin oral solution, boxed warning and vision monitoring",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=e7cbc0a5-8c28-4451-9176-b608e228ba66&type=display"
+    },
+    {
+      "label": "DailyMed. Tamsulosin, intraoperative floppy iris syndrome warning",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=6142d7b6-e5ea-1af0-e053-2991aa0a00cd&type=display"
+    }
+  ],
+  "readScope": "Topiramate sections 5.1\u20135.2; vigabatrin boxed warning and section 5.1 monitoring; tamsulosin section 5.5. Other prescribing-information sections not comprehensively audited in this step.",
+  "findings": [
+    "Prior module listed topiramate without explaining the acute angle-closure syndrome.",
+    "Vigabatrin and alpha-blocker surgical counseling lacked developed coverage.",
+    "Book broad reversibility statement needs drug-specific qualification."
+  ],
+  "changes": [
+    "Added three original lesson rows and three case questions."
+  ],
+  "remaining": [
+    "Remaining named medication injuries",
+    "Cross-module consistency check",
+    "Full module final review"
+  ],
+  "validation": {
+    "sourceHashes": {
+      "src/data/modules/commonEyeConditions.js": "af1b57b1cb18f5be6bdca90c946a4e0c4611e19cb5d97c30e4cbd254455c0365",
+      "src/data/questionBanks/commonEyeConditions.js": "76b74119a7c30409680d81b8a5ce83591303aa2cd24b9513e37fd3b3696fdc4a"
+    },
+    "structural": "154 unique question IDs; four distinct choices, valid keys and matching lesson anchors; module import and scoped diff checks passed.",
+    "render": "Three systemic-drug lesson rows inspected at desktop 1440x1000 and mobile 390x844; no clipping, errors or horizontal overflow.",
+    "assessment": "Ten targeted new/revised cases covered on desktop in 29 randomized attempts and mobile in 17. Verified stems, answer mapping, mixed correct/incorrect scoring, rationales, review targets and incomplete-submission gating. No page errors or overflow. This does not verify clinical accuracy of the whole bank.",
+    "targetIds": [
+      "common-eye-topiramate-urgency",
+      "common-eye-vigabatrin-after-stopping",
+      "common-eye-tamsulosin-history",
+      "common-eye-094",
+      "common-eye-095",
+      "common-eye-096",
+      "common-eye-tryptyr-pouch",
+      "common-eye-ozurdex-route",
+      "common-eye-eysuvis-renewal",
+      "common-eye-106"
+    ],
+    "script": "/private/tmp/eye-recent-cases.mjs"
+  },
+  "nextSourceRead": "Ethambutol current STI label warnings/precautions/adverse-reaction text read at https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=3f6428d6-3745-4337-ad78-ebfff9f49135&type=display. Guideline reconciliation and lesson implementation pending. Amiodarone label located but full ocular section still to read.",
+  "finalClosure": {
+    "date": "2026-09-26",
+    "status": "resolved_for_common_eye_module",
+    "evidence": "common-eye-completion-review.json",
+    "note": "Earlier statuses, counts and pending text are historical snapshots. Final completion record and its lesson mapping supersede Common Eye remaining-work statements. Ear-module work remains separate."
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "module": "allergic-rhinitis",
+  "reviewDate": "2026-09-25",
+  "status": "verified",
+  "meaning": "Completed this automated clinical content audit; not independent pharmacist certification. Chapter37 and the overall curriculum remain incomplete.",
+  "bookScope": "RxPrep2023 chapter37 allergy content printed530-536 plus shared formulation/PKU coverage; all ten chapter pages visually read across recorded passes. Cough-only topics remain with cough-common-cold.",
+  "counts": {
+    "lessons": 14,
+    "figures": 14,
+    "questions": 152
+  },
+  "lessonSnapshots": [
+    {
+      "slug": "phenotype-severity-and-differential",
+      "sha256": "aaffe2d5388571c36e7d52a37f70ecc015026b1e29ea8114d403d6d857a565f5"
+    },
+    {
+      "slug": "immunology-testing-and-comorbidity",
+      "sha256": "bd6f1b92f075961aa57c56e0e7a3a27107cffef24b5fc7728d8842dcec450155"
+    },
+    {
+      "slug": "exposure-control-irrigation-and-technique",
+      "sha256": "48cd37ec2f90b1cbd6d3b2fe504a8b2ba7f3930a44d49f040393a8878c55c6b0"
+    },
+    {
+      "slug": "stepwise-pharmacotherapy",
+      "sha256": "d8b867b4f95b4215c3903244b8ed72edd577db35f44adbf5cafa3344111581c8"
+    },
+    {
+      "slug": "otc-nasal-steroid-products",
+      "sha256": "1357210021d5ebbc7a2dc3ccd6642f0aa72ca0f3048c5820672e91f275eb4398"
+    },
+    {
+      "slug": "prescription-nasal-steroid-devices",
+      "sha256": "903a6a057daa8c5b75ae227e2ceecfe807f570f4507e243e32978f0f01a30951"
+    },
+    {
+      "slug": "nasal-antihistamines-and-combinations",
+      "sha256": "46263ddf7f834d601244924bb4bcb17b7771fc83f7345f79b854606da3e7267c"
+    },
+    {
+      "slug": "oral-antihistamine-products-and-safety",
+      "sha256": "198e45ae69342ff612ecdac6a962e7a64c227811f69937f1b3e2455da50c7f01"
+    },
+    {
+      "slug": "pediatric-antihistamine-formulations",
+      "sha256": "094016c075f3aaec2e75070005a2c905ff3a4adce7e867aebf593ab5d155be6c"
+    },
+    {
+      "slug": "first-generation-antihistamine-formulations",
+      "sha256": "de272acd21b10d1505e870c8c2eee4686fdc268afa7fc06dc35a995ac736495b"
+    },
+    {
+      "slug": "targeted-adjuncts-and-product-boundaries",
+      "sha256": "b776cd8c0cf7e5c194e341e1773645d58945b5e0497f6d84c569e1c4275c955a"
+    },
+    {
+      "slug": "safety-special-populations-and-refractory-disease",
+      "sha256": "22eaae11e5f8e2deeebd475144c3aac2dee0cfe5f6a34ead21fbeb6c01d343d4"
+    },
+    {
+      "slug": "response-assessment-and-longitudinal-control",
+      "sha256": "df98b9cec70be7805f1fdcd624092e6fadc6ae4c50e3272873e5941684ff6498"
+    },
+    {
+      "slug": "allergen-immunotherapy",
+      "sha256": "48b447dbd7da0536ec3b96a35406941d3edf4f6ccae24b6c8f8432e5dcbce64d"
+    }
+  ],
+  "evidence": [
+    "allergic-rhinitis.md",
+    "allergy-medication-consolidation.json",
+    "allergy-final-lessons-consolidation.json",
+    "allergy-final-assessment-reconciliation.json",
+    "allergy-cough-cross-module-review.json"
+  ],
+  "topicMap": {
+    "phenotype/testing/mechanism": "phenotype-severity-and-differential; immunology-testing-and-comorbidity",
+    "environment/irrigation/wetting": "exposure-control-irrigation-and-technique",
+    "selection": "stepwise-pharmacotherapy",
+    "nasal steroids": "otc-nasal-steroid-products; prescription-nasal-steroid-devices",
+    "antihistamines and combinations": "nasal-antihistamines-and-combinations; oral-antihistamine-products-and-safety; pediatric-antihistamine-formulations; first-generation-antihistamine-formulations",
+    "cromolyn/ipratropium/montelukast/decongestant boundaries": "targeted-adjuncts-and-product-boundaries",
+    "special populations/referral/follow-up": "safety-special-populations-and-refractory-disease; response-assessment-and-longitudinal-control",
+    "SCIT/SLIT": "allergen-immunotherapy"
+  },
+  "validation": {
+    "finalBrowserSession": 23038,
+    "browserExit": 0,
+    "desktopMobile": "All14 bodies and embedded checks;152 review targets; no runtime errors or overflow; final added paragraph visually inspected both sizes.",
+    "productionBuildSession": 12691,
+    "buildExit": 0,
+    "generatedPages": 558,
+    "assessment": "All152 current records match individual clinical-review evidence; randomized application tests documented separately.",
+    "arithmetic": "47 medication examples plus7 final-lesson examples independently recalculated; source units preserved."
+  },
+  "resolvedFinalGap": "Weekly bedding laundering, HEPA/small-particle vacuuming and household moisture control added after actual AAAAI July2026 guidance read.",
+  "limitations": [
+    "Historical product labels do not prove current availability.",
+    "Karbinal ER, flunisolide, Beconase and carbinoxamine labeling ambiguities are explicitly taught as requiring clarification, not silently resolved.",
+    "Guideline certainty and population/indication limits preserved; no universal product substitution.",
+    "Clinical changes remain on audit branch; no deployment."
+  ],
+  "unresolvedMaterialIssuesWithinModule": []
+}

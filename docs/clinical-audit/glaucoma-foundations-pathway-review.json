@@ -1,0 +1,42 @@
+{
+  "reviewDate": "2026-09-25",
+  "status": "partial_review",
+  "changes": [
+    "Added normal-tension glaucoma and asymptomatic chronic angle closure distinctions",
+    "Added explicitly NICE-attributed initial SLT and advanced-disease surgery pathways",
+    "Added three original assessment cases, reviewed with all options, keys and rationales"
+  ],
+  "bookDiscrepancies": [
+    "Printed page 541 describes angle closure only as sudden symptomatic emergency; chronic closure may be silent",
+    "Normal-range pressure cannot exclude glaucoma; pressure lowering can still help normal-tension disease",
+    "Book emphasizes initial prostaglandin treatment; NICE includes an initial SLT pathway and surgery for advanced disease"
+  ],
+  "sources": [
+    {
+      "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/glaucoma/types-glaucoma",
+      "scope": "Read full page, updated December 5 2024; used normal-tension and chronic angle-closure sections"
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/ng81/chapter/recommendations",
+      "scope": "Official indexed recommendation 1.4.17 read; full-page retrieval returned 403. Not a full guideline reconciliation."
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/ng81/resources/visual-summary-management-options-for-people-with-chronic-open-angle-glaucoma-pdf-10949840461",
+      "scope": "Official indexed text of 2022 pathway read, including initial SLT, PGA alternatives and advanced disease surgery. PDF retrieval returned 403; no diagram layout review claimed."
+    }
+  ],
+  "validation": {
+    "visual": "Eight complete paragraph-row screenshots inspected across desktop 1440x1000 and mobile 390x844; legible without clipping or horizontal overflow.",
+    "assessment": "Desktop 18 attempts and mobile 26 attempts each covered all three new questions. Verified rendered choices, correct/incorrect scoring, explanations, answer mapping and review links. No page errors. Other sampled cases checked for UI behavior only."
+  },
+  "remaining": [
+    "Obtain full current guideline and complete diagnostic/reassessment recommendations, including ocular hypertension",
+    "Review original foundation assessment cases and associated visual content",
+    "Reconcile US guideline context and unilateral beta-blocker preference claim",
+    "Whole-module verification remains incomplete"
+  ],
+  "hashes": {
+    "src/data/modules/glaucomaPharmacotherapy.js": "ef53c6e8af95542cca49a3a572272a87d49000a346d99988cf8ce8420a186ebf",
+    "src/data/questionBanks/glaucomaPharmacotherapy.js": "9d0e5cce99669fb2a70dcceed84c413628986f2c3769cc9def542a6fd11a42ac"
+  }
+}

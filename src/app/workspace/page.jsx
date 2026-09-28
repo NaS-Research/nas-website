@@ -39,7 +39,7 @@ export default function WorkspacePage() {
     <section className="workspace-demonstrations workspace-width" id="tools" aria-labelledby="tools-title">
       <div className="workspace-section-intro"><p className="workspace-label">Inside the workspace</p><h2 id="tools-title">See what you can do.</h2><p>Start with something you can explore right now.</p></div>
       <article className="workspace-demo">
-        <div className="workspace-demo-copy"><p className="workspace-label">Visual Atlas</p><h3>Change your<br />perspective.</h3><p>Turn a structure in your hands. See how its parts fit together. Explore the body beyond the flat page.</p><Link className="workspace-text-link" href="/learn/pharmacy/atlas">Open the Visual Atlas <Arrow /></Link></div>
+        <div className="workspace-demo-copy"><p className="workspace-label">Human Atlas</p><h3>Change your<br />perspective.</h3><p>Turn a structure in your hands. See how its parts fit together. Explore the body beyond the flat page.</p><Link className="workspace-text-link" href="/learn/pharmacy/atlas">Open the Human Atlas <Arrow /></Link></div>
         <AnatomyPreview />
       </article>
       <article className="workspace-demo workspace-demo-reverse">

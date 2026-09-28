@@ -74,6 +74,101 @@ export const dietarySupplementsComplementaryMedicineQuestionBank = concepts.flat
   };
 }));
 
+// Original application cases supplement the concept-generated review bank.
+dietarySupplementsComplementaryMedicineQuestionBank.push(
+  {
+    id: "supp-folate-label-dose", conceptGroup: "folate-label-interpretation", lesson: "folate-labels-preconception", difficulty: "Applied",
+    question: "A prenatal supplement lists 680 mcg DFE (400 mcg folic acid) per daily serving. How much folic acid does that serving provide?",
+    choices: ["400 mcg", "680 mcg", "1,080 mcg", "240 mcg"], answer: 0,
+    explanation: "The parenthetical value gives the folic acid amount. DFE expresses nutrient activity; adding the two values double-counts the serving.", reviewHref: "#folate-labels-preconception",
+  },
+  {
+    id: "supp-folate-rda-versus-prevention", conceptGroup: "folate-rda-prevention", lesson: "folate-labels-preconception", difficulty: "Applied",
+    question: "Which statement correctly separates the pregnancy folate RDA from the USPSTF routine neural-tube-defect prevention recommendation?",
+    choices: ["Pregnancy RDA: 600 mcg DFE total daily intake; routine prevention: a supplement containing 400 to 800 mcg folic acid daily", "Pregnancy RDA: 600 mcg folic acid; routine prevention: 400 to 800 mcg DFE", "Both recommendations require exactly 600 mcg folic acid from a supplement", "Meeting the RDA means preconception folic acid supplementation has no role"], answer: 0,
+    explanation: "The recommendations use different measures and purposes. Total folate intake in DFE is distinct from the folic acid supplement dose studied for prevention.", reviewHref: "#folate-labels-preconception",
+  },
+  {
+    id: "supp-folate-start-before-conception", conceptGroup: "folate-preconception-timing", lesson: "folate-labels-preconception", difficulty: "Applied",
+    question: "An average-risk patient hopes to conceive in six weeks and asks when to begin routine folic acid supplementation. Which plan follows USPSTF guidance?",
+    choices: ["Begin now, allowing at least one month before conception, and continue through the first two to three months of pregnancy", "Wait for a positive pregnancy test before discussing supplementation", "Start after the first trimester", "Take a single larger dose on the day of conception"], answer: 0,
+    explanation: "The prevention window begins before anticipated conception. A supplement containing 400 to 800 mcg folic acid daily is the routine USPSTF recommendation; pregnancy nutritional needs continue beyond this early window.", reviewHref: "#folate-labels-preconception",
+  },
+  {
+    id: "supp-folate-high-risk-boundary", conceptGroup: "folate-high-risk-plan", lesson: "folate-labels-preconception", difficulty: "Advanced",
+    question: "A patient with a previous neural-tube-defect-affected pregnancy asks whether the routine USPSTF dose is automatically the entire preconception plan. What is the best response?",
+    choices: ["Arrange an individualized preconception plan because the routine recommendation excludes this higher-risk history", "Assure the patient that the routine recommendation specifically covers all recurrence-risk situations", "Recommend stopping folic acid until pregnancy is confirmed", "Recommend stacking several prenatal multivitamins without reviewing their other ingredients"], answer: 0,
+    explanation: "Prior affected pregnancy falls outside the routine USPSTF recommendation. The appropriate regimen needs clinical planning rather than automatic standard dosing or unreviewed multivitamin stacking.", reviewHref: "#folate-labels-preconception",
+  },
+);
+
+dietarySupplementsComplementaryMedicineQuestionBank.push(
+{
+  "id": "supp-vitamin-e-limit",
+  "conceptGroup": "vitamin-e-limit",
+  "lesson": "vitamins-minerals",
+  "difficulty": "Applied",
+  "question": "An adult taking 400 IU of synthetic vitamin E daily for cardiovascular prevention says that being below the formal upper limit guarantees benefit and safety. Which response is best?",
+  "choices": [
+    "The upper limit is not a treatment target or safety guarantee; routine cardiovascular prevention is unsupported and harm has occurred at this dose in trials",
+    "400 IU is the formal adult tolerable upper intake level",
+    "Any dose below the upper limit has proven cardiovascular benefit",
+    "Only dietary vitamin E can affect bleeding"
+  ],
+  "answer": 0,
+  "explanation": "The adult supplemental alpha-tocopherol upper limit is 1,000 mg daily, but it does not establish benefit or eliminate risk below that amount. SELECT found increased prostate cancer risk with 400 IU of synthetic vitamin E daily.",
+  "reviewHref": "#vitamins-minerals"
+},
+{
+  "id": "supp-soy-exposure",
+  "conceptGroup": "soy-exposure",
+  "lesson": "botanical-case-studies",
+  "difficulty": "Applied",
+  "question": "A patient equates an observational association between soy-food intake and lower breast cancer risk with proof that concentrated isoflavone capsules prevent cancer. Which interpretation is best?",
+  "choices": [
+    "Neither causation nor capsule efficacy follows from that food-based association",
+    "Any soy capsule must reproduce the food association",
+    "The association proves that all postmenopausal patients should avoid tofu",
+    "Phytoestrogen structure alone establishes clinical harm"
+  ],
+  "answer": 0,
+  "explanation": "Food exposure, supplement formulation and study design differ. Observational associations cannot establish that concentrated soy supplements prevent breast cancer.",
+  "reviewHref": "#botanical-case-studies"
+},
+{
+  "id": "supp-melatonin-uncertainty",
+  "conceptGroup": "melatonin-uncertainty",
+  "lesson": "supplement-neuroactive",
+  "difficulty": "Applied",
+  "question": "A patient asks whether nightly melatonin has established long-term safety. Which counseling statement is most accurate?",
+  "choices": [
+    "Long-term safety is insufficiently characterized; review the indication, adverse effects, product and interacting medicines",
+    "Long-term safety is established for all ages and doses",
+    "Normal endogenous melatonin proves any supplement dose is harmless",
+    "Dependence from suppression of endogenous production is an established outcome in every user"
+  ],
+  "answer": 0,
+  "explanation": "Short-term safety experience does not establish long-term safety. Counseling should preserve uncertainty and assess the actual exposure rather than promise safety or assert inevitable dependence.",
+  "reviewHref": "#supplement-neuroactive"
+},
+{
+  "id": "supp-homeopathy-evidence",
+  "conceptGroup": "homeopathy-evidence",
+  "lesson": "cbd-homeopathy-medical-foods",
+  "difficulty": "Applied",
+  "question": "A homeopathic product cites a compendium and serial dilution as proof that it can replace effective treatment. What is the main error?",
+  "choices": [
+    "Manufacturing or dilution claims do not establish clinical efficacy",
+    "A compendium entry automatically supplies clinical trial evidence",
+    "Greater dilution guarantees a larger clinical effect",
+    "The absence of a prescription proves both efficacy and safety"
+  ],
+  "answer": 0,
+  "explanation": "Homeopathy lacks convincing evidence for specific conditions. Product standards or dilution terminology are not substitutes for clinical efficacy evidence, and replacing effective care can cause harm.",
+  "reviewHref": "#cbd-homeopathy-medical-foods"
+}
+);
+
 if (dietarySupplementsComplementaryMedicineQuestionBank.length < 100) {
   throw new Error(`Dietary supplements question bank must contain at least 100 questions, found ${dietarySupplementsComplementaryMedicineQuestionBank.length}.`);
 }

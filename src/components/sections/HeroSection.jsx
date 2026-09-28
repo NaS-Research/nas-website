@@ -14,7 +14,7 @@ const slides = [
     eyebrow: "NAS-BRCA-002 · Oncology",
     title: "PAM50 repeatability. Tested.",
     titleLines: ["PAM50 repeatability.", "Tested."],
-    summary: "136 registered technical-repeat pairs. One frozen subtype method. Public data, deterministic analysis, and explicit limits.",
+    summary: "136 technical-repeat pairs. One frozen subtype method.",
     primary: { href: "/research/pam50-technical-repeatability", label: "Read the research" },
     secondary: { href: "/research/papers/nas-brca-002-pam50-repeatability.pdf", label: "View the paper" },
     visual: "brca",
@@ -23,7 +23,7 @@ const slides = [
     id: "denials",
     eyebrow: "New design partner release",
     title: "Introducing NaS Denials",
-    summary: "A software foundation for specialty denial prevention, human-reviewed appeals, and payment-outcome reconciliation.",
+    summary: "Software for specialty denial prevention and human-reviewed appeals.",
     primary: { href: "/research/introducing-nas-denials", label: "Read the release" },
     secondary: { href: "/research/papers/introducing-nas-denials.pdf", label: "View the paper" },
     visual: "workflow",
@@ -65,38 +65,6 @@ export default function HeroSection() {
 
   const activeSlide = slides[activeIndex];
 
-  function scrollToCurrentWork(event) {
-    const target = document.querySelector("#next-section");
-
-    if (!target) return;
-
-    event.preventDefault();
-
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      target.scrollIntoView();
-      return;
-    }
-
-    const startY = window.scrollY;
-    const targetY = target.getBoundingClientRect().top + startY;
-    const distance = targetY - startY;
-    const duration = Math.min(1650, Math.max(1100, Math.abs(distance) * 0.7));
-    const startedAt = performance.now();
-
-    const easeInOutCubic = (progress) =>
-      progress < 0.5
-        ? 4 * progress * progress * progress
-        : 1 - Math.pow(-2 * progress + 2, 3) / 2;
-
-    function animateScroll(now) {
-      const progress = Math.min((now - startedAt) / duration, 1);
-      window.scrollTo(0, startY + distance * easeInOutCubic(progress));
-
-      if (progress < 1) requestAnimationFrame(animateScroll);
-    }
-
-    requestAnimationFrame(animateScroll);
-  }
 
   return (
     <section
@@ -178,8 +146,8 @@ export default function HeroSection() {
         ))}
       </div>
 
-      <a className="home-mark-hero__scroll" href="#next-section" onClick={scrollToCurrentWork}>
-        See our current work <span aria-hidden="true">↓</span>
+      <a className="home-mark-hero__scroll" href="#next-section">
+        Discover NaS <span aria-hidden="true">↓</span>
       </a>
     </section>
   );

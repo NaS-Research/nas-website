@@ -1,0 +1,53 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_module_review",
+  "sources": [
+    {
+      "product": "Diclofenac ophthalmic",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=39dfffb0-612a-48f3-8db5-1a59899b91e9",
+      "readScope": "Full prescribing text; chemical and packaging images not inspected."
+    },
+    {
+      "product": "Flurbiprofen ophthalmic",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=c27f2d57-4b9d-4b78-8d85-3bac84f733b1",
+      "readScope": "Full prescribing text; chemical and packaging images not inspected."
+    }
+  ],
+  "changes": [
+    "Added procedure-specific diclofenac schedules and bandage-lens exception, corneal precautions and refractive follow-up.",
+    "Added flurbiprofen intraoperative miosis indication and four preoperative doses; distinguished postoperative regimens."
+  ],
+  "remaining": [
+    "Whole-module clinical reconciliation"
+  ],
+  "validation": "Module import and scoped whitespace checks passed. New rows not yet rendered; module remains reviewing.",
+  "additionalUIValidation": {
+    "reviewDate": "2026-09-26",
+    "rows": [
+      "diclofenac",
+      "dicloprecautions",
+      "flurbiprofen"
+    ],
+    "viewports": [
+      "1440x1000",
+      "390x844"
+    ],
+    "moduleSHA256": "bd5ad0aa087b8254397a31626ff5280279ea6d4b6354a91d8f60ab49be4c421d",
+    "screenshots": [
+      "/private/tmp/eye-current-diclofenac-desktop.png",
+      "/private/tmp/eye-current-diclofenac-mobile.png",
+      "/private/tmp/eye-current-dicloprecautions-desktop.png",
+      "/private/tmp/eye-current-dicloprecautions-mobile.png",
+      "/private/tmp/eye-current-flurbiprofen-desktop.png",
+      "/private/tmp/eye-current-flurbiprofen-mobile.png"
+    ],
+    "result": "All listed target rows visually inspected in full at both viewports; no horizontal overflow or page errors. Adjacent partial rows not counted.",
+    "limitations": "Local isolated preview; not full module or live-site verification."
+  },
+  "finalClosure": {
+    "date": "2026-09-26",
+    "status": "resolved_for_common_eye_module",
+    "evidence": "common-eye-completion-review.json",
+    "note": "Earlier statuses, counts and pending text are historical snapshots. Final completion record and its lesson mapping supersede Common Eye remaining-work statements. Ear-module work remains separate."
+  }
+}

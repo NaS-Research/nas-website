@@ -1,0 +1,44 @@
+.research-gallery{background:#000;color:#f2f0eb;padding:80px 0 48px;overflow:hidden}
+.research-gallery__header{text-align:center;padding:0 24px 42px}
+.research-gallery__header>p{font-size:11px;text-transform:uppercase;letter-spacing:.18em;color:#c3aa82;margin:0 0 18px}
+.research-gallery__header h2{font-size:clamp(38px,5.5vw,76px);line-height:1.08;letter-spacing:-.055em;font-weight:500;margin:0 0 22px}
+.research-gallery__header>a{font-size:14px;color:#cbb58f}
+.research-gallery__row{position:relative;margin-bottom:12px}
+.research-gallery__rail{display:flex;overflow-x:auto;scrollbar-width:none;overscroll-behavior-x:contain;cursor:grab;scroll-behavior:auto;touch-action:pan-x pan-y}
+.research-gallery__rail::-webkit-scrollbar{display:none}
+.research-gallery__rail:active{cursor:grabbing}
+.research-gallery__group{display:flex;flex-shrink:0;gap:12px;padding-inline:clamp(20px,4vw,64px);margin-inline:auto}
+.research-gallery__card{display:block;flex:0 0 auto;position:relative;width:min(78vw,1120px);aspect-ratio:16/9;overflow:hidden;background:#161614;color:#fff;isolation:isolate;user-select:none}
+.research-gallery__card>img{object-fit:cover;transition:transform .8s ease}
+.research-gallery__card:hover>img{transform:scale(1.025)}
+.research-gallery__shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.16),transparent 28%,rgba(0,0,0,.35) 58%,rgba(0,0,0,.88))}
+.research-gallery__identity{position:absolute;right:32px;top:28px;font-size:27px;font-weight:600;letter-spacing:-.065em;text-shadow:0 1px 8px #0008}
+.research-gallery__identity>span{font-size:11px;font-weight:400;letter-spacing:.02em;margin-left:6px}
+.research-gallery__caption{position:absolute;bottom:36px;left:40px;right:40px}
+.research-gallery__caption p{font-size:12px;color:#e0d5c2;margin:0 0 12px}
+.research-gallery__caption h3{font-size:clamp(25px,3.3vw,48px);font-weight:500;letter-spacing:-.04em;line-height:1.08;max-width:24ch;margin:0 0 24px;text-wrap:balance}
+.research-gallery__read{display:inline-flex;align-items:center;gap:10px;color:#eee6d7;font-size:12px;border-bottom:1px solid #ffffff60;padding:0 0 4px}
+.research-gallery__row--small .research-gallery__card{width:clamp(290px,34vw,480px);aspect-ratio:16/9}
+.research-gallery__row--small .research-gallery__identity{font-size:20px;right:20px;top:18px}
+.research-gallery__row--small .research-gallery__caption{left:22px;right:22px;bottom:20px}
+.research-gallery__row--small .research-gallery__caption p{font-size:10px;margin-bottom:7px}
+.research-gallery__row--small .research-gallery__caption p>span{display:none}
+.research-gallery__row--small h3{font-size:clamp(20px,1.8vw,27px);margin-bottom:13px;max-width:24ch}
+.research-gallery__row--small .research-gallery__read{font-size:11px;padding:0 0 3px}
+.research-gallery__footer{display:flex;justify-content:space-between;align-items:center;margin:22px auto 0;width:calc(100% - 48px);max-width:1400px;color:#93938e;font-size:11px}
+.research-gallery__footer button{display:flex;gap:9px;align-items:center;border:1px solid #ffffff24;border-radius:24px;background:#1b1b1a;color:#efeee9;padding:9px 16px;cursor:pointer}
+.research-gallery a:focus-visible,.research-gallery button:focus-visible{outline:2px solid #e1c795;outline-offset:-4px}
+@media(max-width:600px){
+.research-gallery{padding-top:54px}.research-gallery__header{padding-bottom:28px}
+.research-gallery__card{width:88vw;aspect-ratio:4/3}
+.research-gallery__caption{left:22px;right:22px;bottom:24px}
+.research-gallery__caption h3{font-size:27px;margin-bottom:18px}
+.research-gallery__caption p{font-size:10px}.research-gallery__caption p>span{display:none}
+.research-gallery__identity{right:20px;top:18px;font-size:22px}
+.research-gallery__row--small .research-gallery__card{width:78vw}
+}
+@media(prefers-reduced-motion:reduce){.research-gallery *{transition:none!important}.research-gallery__card:hover>img{transform:none}}
+
+.research-gallery__controls{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.research-gallery__controls button{min-width:40px;min-height:40px;justify-content:center;padding:8px 12px}
+@media(max-width:600px){.research-gallery__footer{gap:16px;align-items:flex-start}.research-gallery__footer>span{max-width:150px;line-height:1.6}}

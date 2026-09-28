@@ -1,10 +1,12 @@
 import { validateDrugRequest } from "@/lib/drugRequest.mjs";
 import { NextResponse } from "next/server";
+import { normalizeLabelText } from "@/data/drugPageSections";
 
 const labelSections = [
   ["indications_and_usage", "Indications and usage"],
   ["mechanism_of_action", "Mechanism of action"],
   ["clinical_pharmacology", "Clinical pharmacology"],
+  ["dosage_and_administration", "Dosage and administration"],
   ["dosage_forms_and_strengths", "Dosage forms and strengths"],
   ["boxed_warning", "Boxed warning"],
   ["warnings_and_cautions", "Warnings and precautions"],
@@ -13,13 +15,6 @@ const labelSections = [
   ["drug_interactions", "Drug interactions"],
   ["information_for_patients", "Patient information"],
 ];
-
-function normalizeText(value) {
-  if (!value) return "";
-  return (Array.isArray(value) ? value.join("\n\n") : String(value))
-    .replace(/\s+/g, " ")
-    .trim();
-}
 
 export async function GET(request) {
   const parsed = validateDrugRequest(request, "name", 100);
@@ -59,7 +54,7 @@ export async function GET(request) {
         effectiveDate: record.effective_time || null,
         setId: record.set_id || null,
         sections: labelSections
-          .map(([key, label]) => ({ key, label, text: normalizeText(record[key]) }))
+          .map(([key, label]) => ({ key, label, text: normalizeLabelText(record[key]) }))
           .filter((section) => section.text),
       };
     }

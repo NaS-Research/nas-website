@@ -5,7 +5,7 @@ import { pharmacyCumulativeReview } from "@/data/pharmacyCumulativeReview";
 import { pharmacyModules, pharmacySubmoduleCount } from "@/data/pharmacyModules";
 
 export const metadata = {
-  title: "Cumulative Pharmacy Review | NaS Learn",
+  title: "Knowledge Review: Pharmacy | NaS",
   description: "A cumulative pharmacy review combining foundational questions with patient cases across the complete NaS Learn sequence.",
   alternates: { canonical: "/learn/pharmacy/review" },
 };

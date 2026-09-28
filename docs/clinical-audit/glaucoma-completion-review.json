@@ -1,0 +1,76 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "verified",
+  "module": "glaucoma-pharmacotherapy",
+  "lessons": 7,
+  "questions": 139,
+  "scope": "All current lesson bodies, key points, seven embedded checks, seven original figures and all 139 materialized assessment stems, choices, keys, explanations and review destinations. Book glaucoma content at printed pages 540–542 reconciled with product labeling and current primary sources; additional module content reviewed through linked evidence records.",
+  "evidence": [
+    "glaucoma-acetazolamide-followup-review.json",
+    "glaucoma-acute-protocol-review.json",
+    "glaucoma-alpha-review.json",
+    "glaucoma-angle-closure-review.json",
+    "glaucoma-beta-solutions-review.json",
+    "glaucoma-betaxolol-review.json",
+    "glaucoma-book-coverage-review.json",
+    "glaucoma-brinzolamide-review.json",
+    "glaucoma-combination-review.json",
+    "glaucoma-final-original-assessment-review.json",
+    "glaucoma-flow-review.json",
+    "glaucoma-foundations-pathway-review.json",
+    "glaucoma-integrated-review.json",
+    "glaucoma-iopidine-review.json",
+    "glaucoma-lactation-renal-review.json",
+    "glaucoma-laser-assessment-review.json",
+    "glaucoma-oral-cai-review.json",
+    "glaucoma-outflow-assessment-review.json",
+    "glaucoma-pilocarpine-review.json",
+    "glaucoma-population-label-followup-review.json",
+    "glaucoma-pregnancy-synthesis-review.json",
+    "glaucoma-product-review.json",
+    "glaucoma-production-review.json",
+    "glaucoma-prostaglandin-assessment-review.json",
+    "glaucoma-prostaglandin-products-review.json",
+    "glaucoma-remaining-figures-review.json",
+    "glaucoma-rock-technique-assessment-review.json",
+    "glaucoma-selection-assessment-review.json",
+    "glaucoma-target-disc-review.json",
+    "glaucoma-timolol-solution-review.json",
+    "glaucoma-timolol-variants-review.json",
+    "glaucoma-xelpros-rocklatan-latisse-review.json"
+  ],
+  "corrections": [
+    "Separated pupillary-block angle closure from topiramate-associated effusion; expanded emergency pathway and original visual/cases.",
+    "Corrected Miostat intraocular surgical route versus chronic drop dosing; reconciled product-specific doses, formulations, spacing, lens intervals, storage and warnings.",
+    "Qualified physiological versus glaucomatous cupping; corrected mechanism and review-link inconsistencies.",
+    "Expanded monitoring, steroid-induced ocular hypertension, renal, pregnancy and lactation teaching with evidence limitations.",
+    "Independently checked mannitol 60 kg × 1.5 g/kg = 90 g; 20% solution = 450 mL."
+  ],
+  "validation": {
+    "productionBuild": "Isolated next build --webpack passed: compilation, TypeScript, 558 static pages and traces. Log /private/tmp/glaucoma-final-build.log.",
+    "releaseDelta": "Compared isolated validation checkout with audit HEAD 260d787: only the four listed content/visual files plus module-page glaucoma-angle-emergency enum differ. Four files byte-match current working copies; only the tested enum is staged from shared page.",
+    "assessment": "All 139 unique IDs, indices and review anchors valid. Targeted changed assessment cases passed desktop/mobile scoring, shuffled choices, explanations and review links; see per-case records.",
+    "rendering": "All seven figures previously inspected at desktop/mobile; final 1440×1000 and 390×844 checks find seven visible four-panel figures, no page errors or horizontal overflow. Four final opening/technique screenshots visually inspected for legibility and clipping.",
+    "screenshots": [
+      "/private/tmp/glaucoma-final-opening-desktop.png",
+      "/private/tmp/glaucoma-final-opening-mobile.png",
+      "/private/tmp/glaucoma-final-technique-desktop.png",
+      "/private/tmp/glaucoma-final-technique-mobile.png"
+    ]
+  },
+  "hashes": {
+    "src/data/modules/glaucomaPharmacotherapy.js": "3a48638e3f82dae840c209cff20b1f1be7bd6ccdb2f9408c3df1e6945912680d",
+    "src/data/questionBanks/glaucomaPharmacotherapy.js": "abdfa6bb47952060ad6558c14efdc0368986acf29bc2623ac8bf454e065c856c",
+    "src/components/learn/GlaucomaPharmacotherapyVisual.jsx": "45e217081c5bf7ad0d5fe9cf8d69f9da3de0569d253a2c068b19f2c0b857a1a9",
+    "src/data/modules/commonEyeConditions.js": "8237e74b91cd8351a424a4b78d83cc4af766dc4e8c2beb7ce8bbfa8529e151cc"
+  },
+  "unresolvedMaterialModuleIssues": [],
+  "limitations": [
+    "Internal source-based audit, not independent pharmacist review or certification.",
+    "Primary-study abstracts and targeted guideline passages support only the claims documented in individual evidence records; no claim of full guideline review.",
+    "Product packaging and chemical-structure images not used as teaching assets were not exhaustively inspected.",
+    "Common eye and common ear modules and mixed chapter topics remain incomplete. No whole-chapter completion claim."
+  ],
+  "supersedes": "Earlier partial records are chronological evidence. Their glaucoma remaining-work lists are superseded by this final record and subsequent targeted records; non-glaucoma gaps remain open.",
+  "release": "Prepared for commit and push to audit/rxprep-content-2026-09-24 only. No deployment or publication."
+}

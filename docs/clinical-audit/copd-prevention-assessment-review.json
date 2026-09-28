@@ -1,0 +1,90 @@
+{
+  "module": "chronic-obstructive-pulmonary-disease",
+  "reviewDate": "2026-09-25",
+  "scope": "Four replaced prevention cases and one added nonpharmacologic paragraph.126/126 cases individually reviewed; full module closure remains pending.",
+  "sources": [
+    {
+      "url": "https://goldcopd.org/wp-content/uploads/2026/01/GOLD-REPORT-2026-v1.3-8Dec2025_WMV2.pdf",
+      "pages": "Printed53,57/PDF64,68 actual risk-reduction and general vaccination text read. Vaccine-specific schedules not validated by this case review."
+    },
+    {
+      "url": "https://www.cdc.gov/tobacco/about/how-to-quit.html",
+      "sections": "Actual counseling, medication, combined NRT and follow-up encouragement read."
+    },
+    {
+      "source": "Private RxPrep2023",
+      "pages": "Printed590/PDF598 actual smoking/vaccination paragraph read; no obsolete exclusive disease-progression claim copied."
+    }
+  ],
+  "questions": [
+    {
+      "id": "copd-101",
+      "status": "corrected-clinically-reviewed",
+      "sha256": "c26d3b99001f3bf8e3ad9149d98c0cfbb55126c3a238fad31f204dbd2bfd00e9",
+      "reviewedElements": [
+        "stem",
+        "every choice",
+        "answer",
+        "rationale",
+        "lesson target"
+      ],
+      "finding": "Counseling plus suitable medication and repeated support."
+    },
+    {
+      "id": "copd-102",
+      "status": "corrected-clinically-reviewed",
+      "sha256": "559a549f462e6b63255b6af530133ef364e8fb95da6c6360a81dc95bfe7e1985",
+      "reviewedElements": [
+        "stem",
+        "every choice",
+        "answer",
+        "rationale",
+        "lesson target"
+      ],
+      "finding": "Long-acting patch plus short-acting NRT is intentional combination treatment."
+    },
+    {
+      "id": "copd-103",
+      "status": "corrected-clinically-reviewed",
+      "sha256": "43aaf9e4a30eea22bbe4463ff4b8d216613841c65c9487a4b726b8e11effb254",
+      "reviewedElements": [
+        "stem",
+        "every choice",
+        "answer",
+        "rationale",
+        "lesson target"
+      ],
+      "finding": "Individual current vaccination review; no unsupported universal schedule."
+    },
+    {
+      "id": "copd-104",
+      "status": "corrected-clinically-reviewed",
+      "sha256": "f925aa1af3de0b3feecc0c898c70134cdab497a9a19d1be8505d63a08224506e",
+      "reviewedElements": [
+        "stem",
+        "every choice",
+        "answer",
+        "rationale",
+        "lesson target"
+      ],
+      "finding": "Occupational/household exposure reduction beyond cigarette cessation."
+    }
+  ],
+  "validation": {
+    "structural": "126 questions; no hardErrors/sourceGaps/sizeAdvisories/thinLessons",
+    "browser": {
+      "session": 33940,
+      "exitCode": 0,
+      "desktopAttempts": 13,
+      "mobileAttempts": 17,
+      "casesCoveredPerViewport": 4,
+      "result": "Stems, choices, mixed scoring, keys, full rationales, unique targets passed; no errors or horizontal overflow."
+    },
+    "lesson": {
+      "session": 17484,
+      "exitCode": 0,
+      "paragraphs": 11,
+      "result": "All nonpharmacologic paragraph text, embedded check/rationale and126 targets checked on1440x1000 and390x844; no errors or overflow."
+    }
+  }
+}

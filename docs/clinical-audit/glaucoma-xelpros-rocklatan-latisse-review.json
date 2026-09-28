@@ -1,0 +1,44 @@
+{
+  "reviewDate": "2026-09-25",
+  "status": "partial_review",
+  "sources": [
+    {
+      "product": "Xelpros",
+      "revision": "09/2024",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=34ad5cf6-4df0-4104-bddd-4c7631133ded",
+      "sectionsSupportingChanges": "2,3,5.7,11,16"
+    },
+    {
+      "product": "Rocklatan",
+      "revision": "01/2026",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=b1d71f41-be06-4a08-94d4-e352198f09c2",
+      "sectionsSupportingChanges": "2,3,5.1,5.8,16,17"
+    },
+    {
+      "product": "Latisse",
+      "revision": "07/2024",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=34f83d9d-2c64-463e-8a90-9a460fedfead",
+      "sectionsSupportingChanges": "1\u20135"
+    }
+  ],
+  "changes": [
+    "Added original formulation, storage, duplicate-ingredient and eyelash-prescription counseling paragraphs",
+    "Added three original assessment cases; reviewed all choices, answer keys and explanations against cited labeling"
+  ],
+  "bookDiscrepancy": "Printed pages 541 and 545 advise against Latisse with glaucoma prostaglandins. Current Latisse 5.1 specifies prior physician consultation and IOP monitoring, not a formal absolute contraindication. Xelpros current storage differs from broad latanoprost refrigeration advice.",
+  "validation": {
+    "import": "128 questions and 128 unique IDs",
+    "visual": "All three full paragraph rows inspected at desktop 1440x1000 and mobile 390x844. Six screenshots legible without clipping; no horizontal overflow.",
+    "assessment": "Desktop 17 attempts and mobile 24 attempts each encountered all three new cases. Verified rendered choices, answer mapping, alternating correct/incorrect scoring, explanations and review links. No page errors or horizontal overflow. Other sampled questions checked for UI behavior only."
+  },
+  "remaining": [
+    "Whole module remains reviewing; foundations, remaining drug labels, original assessment bank and visuals need completion",
+    "Complete pregnancy/lactation synthesis",
+    "Full module build and final clinical consistency review pending"
+  ],
+  "hashes": {
+    "src/data/modules/glaucomaPharmacotherapy.js": "0708f884434a2958ddf81ee851b5eee7dd33e2d44f3d0cc57f4af3e6077c759c",
+    "src/data/questionBanks/glaucomaPharmacotherapy.js": "64c2863753a9129ea205502fdd9b12ac2f29532d4e4424c7977f95b39d3f3b07"
+  },
+  "populationLabelFollowup": "glaucoma-population-label-followup-review.json closes Rocklatan, Lumigan and Latisse prescribing-text gaps and records two rendered additions. Broader population synthesis remains open."
+}

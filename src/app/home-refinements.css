@@ -34,3 +34,18 @@
 }
 .home-featured--refined .publication-artwork__frame { aspect-ratio: 4 / 3; background: #080808; }
 .home-featured--refined .publication-artwork__frame img { padding: 0; object-fit: cover; }
+
+/* A brief invitation closes the homepage without another explanatory grid. */
+.home-work.home-work--compact { padding-block: clamp(56px, 7vw, 100px) 24px; }
+.home-work--compact .home-work__header { margin-bottom: 0; align-items: end; }
+.home-work--compact .home-work__header h2 { max-width: 12ch; }
+.home-work--compact .home-work__actions { margin-top: 20px; }
+
+/* Latest BBB publication leads the three-slide feature. */
+.home-carousel--bbb .home-carousel__copy h1 { max-width: 14ch; font-size: clamp(2.8rem, 4.5vw, 5rem); line-height: 1.04; }
+.home-carousel--bbb .home-carousel__copy h1 span { display: block; }
+@media(max-width: 767px) {
+  .home-carousel--bbb .home-carousel__copy h1 { font-size: clamp(2.4rem, 9.5vw, 4rem); }
+  .home-carousel--bbb .home-carousel__slide { align-content: start; }
+  .home-carousel--bbb .home-carousel__visual { min-height: 0; margin-top: 1rem; }
+}

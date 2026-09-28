@@ -1,0 +1,52 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_review",
+  "module": "common-eye-conditions",
+  "scope": "Visually read all printed page543/PDF551, including conjunctivitis table. Read current infectious-conjunctivitis and dosage-technique lessons and relevant assessment concept rows; read dosage visual. Other module content and materialized assessment choices not yet comprehensively reviewed.",
+  "sources": [
+    {
+      "url": "https://www.cdc.gov/conjunctivitis/hcp/clinical-overview/index.html",
+      "date": "2024-04-15",
+      "read": "Full clinical page text"
+    },
+    {
+      "url": "https://www.cdc.gov/conjunctivitis/treatment/index.html",
+      "date": "2024-04-15",
+      "read": "Full treatment page text"
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=ecfb954f-5554-0ad2-e053-2995a90a7516",
+      "date": "PI September2024; SPL October2025",
+      "read": "Full prescribing text; chemical and packaging images not inspected"
+    }
+  ],
+  "findings": [
+    "Book school-return wording is overly broad; retained conditional CDC exclusion and added clinician approval plus indicated therapy.",
+    "Book antibiotic list includes steroid combinations; added explicit Maxitrol indication and diagnostic boundaries.",
+    "Added supportive care, variable recovery and failure-to-improve reassessment teaching.",
+    "Corrected universal one-drop language in outcome, technique lesson, generated bank concept and figure label; exact product regimen governs."
+  ],
+  "remaining": [
+    "Review each listed antibacterial and allergy product, including concentrations, ages, dose schedules, storage and clinical selection.",
+    "Complete systemic/neonatal/herpetic infection pathways against current primary guidance.",
+    "Read all remaining lessons, materialized bank items, references and figures.",
+    "Render and inspect changed lesson/figure and assess changed question choices and rationale; full module build before completion."
+  ],
+  "validation": {
+    "import": "11 lessons and132 questions import; answer indices and review anchors valid. Structural evidence only.",
+    "browser": "1440x1000 and390x844 preview: no page errors or horizontal overflow. Six changed-row captures inspected; desktop rows and mobile recovery/dose legible. Mobile steroid capture has floating-tools overlap at lower text; recapture at a different scroll position before closing layout review.",
+    "remaining": "Full clinical bank review, changed assessment interaction tests, figure capture and final full-module build remain.",
+    "followup": "2026-09-26: steroid row recaptured at a different scroll position; complete mobile and desktop text inspected without obstruction. No product/UI code changed for this recapture."
+  },
+  "hashes": {
+    "src/data/modules/commonEyeConditions.js": "afe3138d01cb03d6deae518f92ea227ae9a10ef4ae9a6a6bf724d3168010b671",
+    "src/data/questionBanks/commonEyeConditions.js": "e688545a9dcbfc0db21efd2ccb32df90563856c06c21a1708e549a802bea6b0a",
+    "src/components/learn/CommonEyeConditionsVisual.jsx": "9ca5c271d1afcd6f26734e889c18c64e01f94a8c1ff428bd51cffceef8b4cf3e"
+  },
+  "finalClosure": {
+    "date": "2026-09-26",
+    "status": "resolved_for_common_eye_module",
+    "evidence": "common-eye-completion-review.json",
+    "note": "Earlier statuses, counts and pending text are historical snapshots. Final completion record and its lesson mapping supersede Common Eye remaining-work statements. Ear-module work remains separate."
+  }
+}

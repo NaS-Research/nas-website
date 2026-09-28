@@ -1,0 +1,52 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_review",
+  "sources": [
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK501365/",
+      "revision": "2025-02-15",
+      "scope": "Full LactMed acetazolamide clinical text and reference list read; underlying studies not independently reviewed."
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK501166/",
+      "revision": "2026-04-15",
+      "scope": "Full LactMed timolol clinical text and reference list read."
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK501678/",
+      "revision": "2026-04-15",
+      "scope": "Full LactMed brimonidine clinical text and reference list read."
+    },
+    {
+      "url": "https://pdtm.vch.ca/Documents/acetazolamide%20NEW.pdf",
+      "revision": "2026-01-21",
+      "scope": "Both pages of adult IV protocol text read. Table text parsed; page images not inspected."
+    },
+    {
+      "url": "https://eugs.org/educational_materials/188",
+      "scope": "Section II.3.8 page181 read in full; table3.9 page183 only partially read in this pass."
+    }
+  ],
+  "changes": [
+    "Added acetazolamide lactation evidence and difference from label nursing language.",
+    "Added timolol infant-risk qualifications and retained brimonidine-combination caution.",
+    "Added explicitly attributed institutional IV renal adjustment, without inventing a universal oral/ER table."
+  ],
+  "discrepancies": [
+    "LactMed acetazolamide supports breastfeeding at doses up to1000mg/day despite more restrictive label language.",
+    "LactMed timolol/brimonidine monographs question evidence behind Combigan lactation warning but also recognize limited experience and potential alpha2 infant toxicity. Do not erase current label warning based on uneventful case reports.",
+    "EGS uses categorical pregnancy statements about CAIs/prostaglandins and broadly reassuring beta-blocker/pilocarpine language despite limited human evidence; do not present these as established classwide human safety or harm. Pregnancy synthesis still pending.",
+    "AAO EyeNet renal page returned403. No claim of direct review; used current VCH institutional source instead."
+  ],
+  "validation": {
+    "syntax": "node --check passed",
+    "visual": "Six complete paragraph screenshots inspected, desktop1440x1000/mobile390x844; readable without clipping. Browser horizontal-overflow assertions passed.",
+    "moduleSha256": "07ec9db05454a15289ba024f2a1aab604d2d56632584a00aac6610f9a0c1ef53"
+  },
+  "remaining": [
+    "Complete pregnancy synthesis and EGS table3.9 reconciliation",
+    "Full current lesson and139-question consistency review",
+    "Final build and integrated rendering"
+  ],
+  "pregnancyFollowup": "glaucoma-pregnancy-synthesis-review.json records completed targeted pregnancy synthesis and visual validation. Whole-module verification remains open."
+}

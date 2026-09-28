@@ -1,0 +1,30 @@
+.figure { margin: 0; padding: 32px 0; border-top: 1px solid #34312b; border-bottom: 1px solid #34312b; color: #e5e2dd; }
+.figure figcaption { display: grid; gap: 12px; margin-bottom: 30px; }
+.figure figcaption > span { color: #d4af72; font-size: 10px; letter-spacing: .18em; text-transform: uppercase; }
+.figure figcaption > strong { max-width: 760px; font-size: clamp(23px, 2.6vw, 36px); font-weight: 450; line-height: 1.15; letter-spacing: -.03em; }
+.nodes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr)); gap: 24px; }
+.node { min-width: 0; border-top: 1px solid #62533c; padding-top: 15px; }
+.index { color: #caa567; font-size: 10px; font-variant-numeric: tabular-nums; letter-spacing: .1em; }
+.node h4 { margin: 17px 0 10px; font-size: 19px; line-height: 1.25; font-weight: 500; }
+.node > strong { display: block; color: #d3b482; font-size: 14px; line-height: 1.5; font-weight: 450; }
+.node p, .note, .band header p { color: #aaa69e; font-size: 13px; line-height: 1.65; }
+.node p { margin: 10px 0 0; }
+.note { margin: 25px 0 0; max-width: 760px; }
+.priority .nodes { grid-template-columns: 1fr; gap: 0; }
+.priority .node { display: grid; grid-template-columns: 25px minmax(140px, .6fr) 1fr 1.2fr; align-items: start; gap: 16px; padding: 19px 0; }
+.priority .node h4, .priority .node p { margin: 0; }
+.band { margin-top: 25px; }
+.band header { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px 24px; }
+.band h4 { color: #d4af72; font-size: 20px; font-weight: 450; margin: 0; }
+.band header p { margin: 0; }
+.doseRow { margin: 15px 0 0; display: grid; grid-template-columns: 1fr .8fr 1.5fr; gap: 18px; padding-top: 16px; border-top: 1px solid #34312b; }
+.doseRow dt { color: #8e887f; font-size: 10px; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 6px; }
+.doseRow dd { margin: 0; font-size: 15px; line-height: 1.5; }
+@media (max-width: 650px) {
+  .figure { padding: 25px 0; }
+  .nodes { grid-template-columns: 1fr; gap: 22px; }
+  .priority .node { grid-template-columns: 24px 1fr; gap: 9px 12px; }
+  .priority .node > strong, .priority .node p { grid-column: 2; }
+  .doseRow { grid-template-columns: 1fr 1fr; gap: 12px; padding: 16px 0 5px; }
+  .doseRow > div:last-child { grid-column: 1 / -1; }
+}

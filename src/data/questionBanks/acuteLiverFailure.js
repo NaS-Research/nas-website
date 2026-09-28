@@ -3,8 +3,8 @@ const concepts = [
   ["hyperacute-subacute", "Hyperacute acetaminophen or ischemic ALF may have enormous aminotransferase values and early cerebral edema, while subacute causes can show lower enzymes, higher bilirubin, ascites, and less spontaneous recovery.", "Use tempo and phenotype to prioritize causes and anticipate complications without using tempo alone as a diagnosis.", "Assuming lower aminotransferases indicate milder disease can miss extensive hepatocyte loss or a subacute poor-prognosis syndrome."],
   ["etiology", "Major ALF causes include acetaminophen, idiosyncratic drugs, viral hepatitis, autoimmune hepatitis, ischemia, Wilson disease, pregnancy-related disease, vascular causes, and indeterminate injury.", "Send a broad cause-specific workup immediately because several treatments are time sensitive.", "Waiting for every result before beginning acetylcysteine, acyclovir when indicated, or transplant referral can close a rescue window."],
   ["initial-workup", "The first ALF evaluation integrates exposure history, acetaminophen concentration, toxicology, viral testing, autoimmune markers, pregnancy testing, copper and hemolysis studies when appropriate, imaging, and serial organ assessment.", "Collect critical diagnostic samples early while stabilizing airway, circulation, glucose, and neurologic status.", "A negative acetaminophen concentration excludes neither delayed presentation nor repeated supratherapeutic exposure."],
-  ["acetaminophen-mechanism", "Excess acetaminophen saturates conjugation, increases CYP-mediated NAPQI, depletes glutathione, and causes centrilobular necrosis.", "Identify every acetaminophen-containing product and distinguish acute known-time ingestion from staggered or repeated exposure.", "Using the acute nomogram for unknown-time or repeated exposure can falsely exclude toxicity."],
-  ["acetylcysteine", "Acetylcysteine replenishes glutathione capacity and supports additional protective pathways, with the greatest benefit when started early.", "Start promptly when indicated and continue until acetaminophen is undetectable and clinical and biochemical recovery criteria are satisfied.", "Stopping automatically after a fixed bag sequence despite worsening INR or detectable acetaminophen can terminate effective treatment too soon."],
+  ["acetaminophen-mechanism", "Excess acetaminophen saturates conjugation, increases CYP-mediated NAPQI, depletes glutathione, and causes centrilobular necrosis.", "Identify every acetaminophen-containing product and establish when ingestion began and whether it extends beyond 24 hours.", "Using the acute nomogram for unknown-time exposure or ingestion spanning more than 24 hours can falsely exclude toxicity."],
+  ["acetylcysteine", "Acetylcysteine replenishes glutathione capacity and supports additional protective pathways, with the greatest benefit when started early.", "Start promptly when indicated. Before stopping IV acetylcysteine, assess acetaminophen below 10 micrograms/mL, AST/ALT at baseline or falling 25% to 50% from peak, INR below 2, and improving prognostic markers together with the clinical condition.", "Stopping automatically after a fixed bag sequence while laboratory or clinical stopping criteria remain unmet can terminate effective treatment too soon."],
   ["non-apap-nac", "Intravenous acetylcysteine may improve transplant-free survival in selected early-stage non-acetaminophen ALF but is not a substitute for etiology-specific therapy or transplant assessment.", "Use center protocol and specialist guidance while continuing diagnostic and transplant pathways.", "Assuming NAC cures every non-acetaminophen ALF cause can delay definitive rescue."],
   ["icu-transfer", "ALF can progress rapidly through encephalopathy, shock, hypoglycemia, kidney injury, infection, cerebral edema, and multiorgan failure.", "Admit to an ICU with continuous reassessment and arrange early transfer to a transplant center.", "Waiting until grade III or IV encephalopathy to discuss transfer may make transport unsafe and evaluation incomplete."],
   ["neurologic-monitoring", "Hepatic encephalopathy in ALF can progress quickly and may be accompanied by intracranial hypertension, especially in hyperacute disease.", "Perform serial neurologic examinations, minimize unnecessary stimulation and sedatives, protect the airway when needed, and use center-specific neuro-monitoring.", "Treating ALF encephalopathy like chronic cirrhotic encephalopathy with routine lactulose alone ignores cerebral edema risk."],
@@ -67,8 +67,69 @@ const reviewLessonByConcept = {
 const dimensions = [["principle", "Which statement is most accurate?", 0], ["action", "Which action best applies the evidence?", 1], ["integration", "Which plan demonstrates the strongest clinical reasoning?", 1], ["hazard", "Which error creates the greatest avoidable risk?", 2]];
 const generic = ["Wait for every diagnostic result before contacting a transplant center.", "Use aminotransferase height alone to decide whether the patient is improving.", "Normalize every laboratory value without considering physiology, trajectory, or treatment consequences."];
 
-export const acuteLiverFailureQuestionBank = concepts.flatMap(([slug, principle, action, hazard], conceptIndex) => dimensions.map(([dimension, stem, answerType], dimensionIndex) => {
+const generated = concepts.flatMap(([slug, principle, action, hazard], conceptIndex) => dimensions.map(([dimension, stem, answerType], dimensionIndex) => {
   const correct = [principle, action, hazard][answerType];
   const choices = dimension === "hazard" ? [hazard, principle, action, generic[(conceptIndex + dimensionIndex) % 3]] : [correct, hazard, generic[(conceptIndex + dimensionIndex) % 3], generic[(conceptIndex + dimensionIndex + 1) % 3]];
   return { id: `acute-liver-failure-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${stem} Focus: ${slug.replaceAll("-", " ")}.`, choices, answer: 0, rationale: `${principle} ${action}`, reviewHref: `#${reviewLessonByConcept[slug]}`, difficulty: dimensionIndex < 2 ? "foundational" : "advanced" };
 }));
+
+const acetylcysteineCases = [
+  {
+    "id": "acute-liver-failure-021",
+    "question": "At the end of an IV acetylcysteine course, acetaminophen is 6 micrograms/mL but INR is 2.4 and lactate is worsening. What is the appropriate response?",
+    "choices": [
+      "Stop because acetaminophen is below 10",
+      "Continue treatment and obtain toxicology guidance because stopping criteria are not all met",
+      "Stop because the scheduled bags are complete",
+      "Use acetaminophen concentration as the only stopping criterion"
+    ],
+    "answer": 1,
+    "rationale": "A low acetaminophen concentration alone does not justify stopping. INR and prognostic markers remain unfavorable.",
+    "reviewHref": "#acetaminophen-rescue",
+    "difficulty": "advanced"
+  },
+  {
+    "id": "acute-liver-failure-022",
+    "question": "Which laboratory pattern satisfies the ACMT 2026 laboratory criteria for considering discontinuation of IV acetylcysteine, with clinical assessment and expert guidance?",
+    "choices": [
+      "Acetaminophen 18 micrograms/mL with normal INR",
+      "Acetaminophen 6 micrograms/mL with rising AST and ALT",
+      "Acetaminophen 6 micrograms/mL, AST/ALT down 35% from peak, INR 1.5, and improving prognostic markers",
+      "Acetaminophen 6 micrograms/mL with INR 2.8"
+    ],
+    "answer": 2,
+    "rationale": "All criteria must be met: acetaminophen below 10 micrograms/mL, AST/ALT at baseline or falling 25% to 50% from peak, INR below 2, and improving prognostic markers. Clinical condition and individualized expert assessment remain necessary.",
+    "reviewHref": "#acetaminophen-rescue",
+    "difficulty": "advanced"
+  },
+  {
+    "id": "acute-liver-failure-023",
+    "question": "Acetaminophen has cleared from the blood, but acetaminophen-associated liver failure persists. Which statement best guides care?",
+    "choices": [
+      "Acetylcysteine may still provide benefit; continue individualized treatment and transplant assessment",
+      "Acetylcysteine cannot help after the drug clears",
+      "A negative level proves the liver failure has resolved",
+      "Transplant assessment must wait until all acetylcysteine has stopped"
+    ],
+    "answer": 0,
+    "rationale": "Acetylcysteine can benefit established acetaminophen-associated liver failure even after circulating acetaminophen is eliminated. Organ trajectory and stopping criteria guide care.",
+    "reviewHref": "#acetaminophen-rescue",
+    "difficulty": "advanced"
+  },
+  {
+    "id": "acute-liver-failure-024",
+    "question": "Which proposed stopping rule is unsafe for IV acetylcysteine?",
+    "choices": [
+      "Review acetaminophen concentration before stopping",
+      "Assess the INR and aminotransferase trend",
+      "Consider prognostic markers and clinical condition",
+      "Stop at 21 hours regardless of persistent injury or unmet stopping criteria"
+    ],
+    "answer": 3,
+    "rationale": "A scheduled treatment duration is not sufficient evidence of recovery. Persistent toxicity or unmet stopping criteria requires continued individualized treatment.",
+    "reviewHref": "#acetaminophen-rescue",
+    "difficulty": "advanced"
+  }
+];
+const acetylcysteineById = new Map(acetylcysteineCases.map(q => [q.id, q]));
+export const acuteLiverFailureQuestionBank = generated.map(q => acetylcysteineById.get(q.id) ?? q);

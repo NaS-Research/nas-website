@@ -1,47 +1,366 @@
-const c = (name, lesson, principle, action, assessment, hazard, why) => ({ name, lesson, principle, action, assessment, hazard, why });
-
-const concepts = [
-  c("nocturnal egg deposition", "life-cycle-transmission", "Gravid female Enterobius worms migrate to perianal skin at night and deposit eggs", "Connect nighttime migration to itching, sleep disruption, and morning specimen collection", "Assess symptom timing, sleep, visible worms, scratching, and affected contacts", "Treating daytime itching alone as proof of pinworm", "The timing fits the organism's reproductive behavior but remains one part of the diagnosis"),
-  c("infective eggs", "life-cycle-transmission", "Pinworm transmission occurs when infective eggs are swallowed after hand or fomite transfer", "Interrupt hand-to-mouth transfer with soap, nail care, and careful handling of shared items", "Assess nail biting, scratching, handwashing, diaper care, food handling, toys, bedding, and clothing", "Teaching that adult worms penetrate intact skin to infect a new host", "Egg ingestion is the central transmission event"),
-  c("autoinfection and household cycling", "life-cycle-transmission", "Scratching can move eggs under fingernails and back to the same person's mouth or another household member", "Treat the household at the same time when guidance recommends it and pair therapy with sustained hygiene", "Assess who shares rooms, caregiving, bathrooms, laundry, food preparation, and treatment timing", "Treating only the first person who reports itching", "Household clustering can sustain repeat infection"),
-  c("environmental persistence", "life-cycle-transmission", "Pinworm eggs may remain viable on objects for roughly two to three weeks", "Prioritize hot laundry, careful handling, cleaning of high-touch items, and repeatable hygiene", "Assess bedding, towels, clothing, toys, bathroom surfaces, cleaning practices, and the duration of follow-through", "Using hazardous pesticide fogging as the primary control strategy", "Targeted physical removal and hand hygiene address the important exposure routes"),
-  c("classic symptom pattern", "clinical-pattern-differential", "Persistent perianal itching that is worse at night is characteristic but not diagnostic of pinworm", "Use the pattern to select testing rather than to bypass differential diagnosis", "Assess timing, duration, sleep, visible worms, contacts, rash morphology, pain, bleeding, discharge, and systemic findings", "Calling every case of perianal itching pinworm", "Several inflammatory, infectious, and structural disorders can mimic the symptom"),
-  c("asymptomatic infection", "clinical-pattern-differential", "Many people with pinworm infection have no symptoms", "Include exposure and household context when deciding who needs evaluation and simultaneous treatment", "Assess childcare, institutional exposure, household cases, caregiving, and prior outbreaks", "Using absence of itching to prove absence of infection", "Symptom absence does not eliminate carriage or household transmission"),
-  c("vulvovaginal involvement", "clinical-pattern-differential", "Female genital-tract migration can rarely produce vulvar or vaginal inflammation", "Arrange appropriate assessment for discharge, pelvic pain, dysuria, bleeding, persistent symptoms, or safeguarding concern", "Assess genital symptoms, urinary symptoms, pelvic pain, fever, age, trauma, discharge, and exposure", "Attributing every genital symptom to uncomplicated pinworm", "The differential and consequences are broader than perianal disease"),
-  c("atypical and severe findings", "clinical-pattern-differential", "Fever, severe pain, significant bleeding, weight loss, persistent abdominal symptoms, or neurologic findings are not routine uncomplicated pinworm features", "Escalate for diagnostic evaluation rather than repeating OTC treatment", "Assess vital symptoms, pain severity, bleeding, hydration, weight change, immune status, and treatment toxicity", "Masking a serious alternative diagnosis with repeated empiric anthelmintics", "Atypical disease requires a broader clinical frame"),
-  c("morning tape test", "tape-test-diagnosis", "Clear adhesive tape samples eggs from perianal skin before the morning routine removes them", "Collect first thing in the morning before bathing, toileting, or dressing", "Assess collection timing, tape type, sampled site, laboratory container, labeling, and transport", "Collecting only after bathing and defecation", "Correct timing improves the chance of recovering deposited eggs"),
-  c("serial tape collection", "tape-test-diagnosis", "Collection on three consecutive mornings improves detection of intermittent egg deposition", "Teach all three collections and the receiving laboratory's storage and transport instructions", "Assess completion of each morning, specimen integrity, contamination, labeling, and delivery", "Declaring infection excluded after one poorly timed sample", "Repeated correctly timed sampling improves sensitivity"),
-  c("low-yield routine specimens", "tape-test-diagnosis", "Routine stool, blood, urine, vaginal, and anorectal specimens usually do not contain enough pinworm material for reliable diagnosis", "Use the tape test or direct observation when pinworm is suspected", "Assess what test was ordered, collection method, timing, organism sought, and alternative diagnoses", "Ordering a blood antibody test as the standard confirmation", "There is no routine blood test for pinworm and stool testing is usually low yield"),
-  c("collector safety", "tape-test-diagnosis", "Specimen collection can transfer eggs to the collector's hands or face", "Avoid face touching, contain the specimen, and wash hands thoroughly after collection", "Assess collector instructions, hand hygiene, specimen containment, contaminated clothing, and household exposure", "Handling the tape and then preparing food without washing", "Basic contact precautions reduce secondary spread"),
-  c("pyrantel mechanism", "pyrantel-pharmacology", "Pyrantel produces depolarizing neuromuscular blockade that immobilizes susceptible intestinal worms", "Use the mechanism to explain worm elimination without claiming that eggs are killed", "Assess indication, organism, intestinal location, bowel symptoms, repeat-dose plan, and response", "Assuming pyrantel sterilizes environmental eggs", "The drug acts on worms, so egg control requires repeat dosing and hygiene"),
-  c("pyrantel base calculation", "pyrantel-pharmacology", "CDC dosing is expressed as 11 mg per kg of pyrantel base with a maximum of 1 gram", "Calculate milligrams of base, apply the maximum, then convert with the exact product concentration", "Assess weight in kilograms, base versus pamoate salt, concentration, measuring device, maximum, and repeat date", "Calculating from salt mass without checking the base equivalent", "The active-base expression prevents a systematic dosing error"),
-  c("pyrantel concentration", "pyrantel-pharmacology", "Liquid and tablet products may present pamoate salt mass and pyrantel-base equivalence differently", "Read the Drug Facts panel every time and document the base concentration used", "Assess milligrams per milliliter, milligrams per tablet, salt equivalence, bottle strength, volume, and device markings", "Assuming every pyrantel suspension is identical", "Product-specific concentration determines the delivered dose"),
-  c("pyrantel tolerability", "pyrantel-pharmacology", "Pyrantel can cause abdominal cramps, nausea, vomiting, diarrhea, headache, or dizziness", "Counsel for expected effects and refer persistent, severe, allergic, overdose, or high-risk presentations", "Assess gastrointestinal symptoms, dizziness, allergy, pregnancy, lactation, liver disease, age, and overdose", "Redosing immediately after every mild transient symptom without checking the label", "Adverse-effect severity and timing determine the response"),
-  c("mebendazole regimen", "mebendazole-albendazole", "CDC lists mebendazole 100 mg orally once with a repeat dose in two weeks", "Verify patient age, formulation, administration, interaction profile, and both dose dates", "Assess age, swallowing, first and repeat doses, food preference, allergy, pregnancy, and concurrent medicines", "Borrowing the three-day whipworm regimen for pinworm", "Helminth regimens are organism specific"),
-  c("mebendazole administration", "mebendazole-albendazole", "Current EMVERM tablets may be chewed, swallowed, or crushed and mixed with food", "Match administration to swallowing ability while preserving the complete dose", "Assess formulation, chewing ability, food mixing, dose loss, vomiting, and caregiver technique", "Assuming a chewable tablet must always be swallowed whole", "The label provides several acceptable administration routes"),
-  c("mebendazole metronidazole interaction", "mebendazole-albendazole", "Concurrent mebendazole and metronidazole should be avoided because serious skin reactions have been reported", "Complete medication reconciliation before selecting mebendazole", "Assess prescription, OTC, topical, recent antimicrobial use, rash history, allergy, and treatment alternatives", "Ignoring a short metronidazole course because mebendazole is only one dose", "A short exposure can still create a clinically important interaction"),
-  c("albendazole pinworm administration", "mebendazole-albendazole", "CDC lists albendazole 400 mg once on an empty stomach with a repeat dose in two weeks", "Use the pinworm-specific administration instead of food instructions for tissue helminth infections", "Assess indication, dose, food timing, repeat date, liver history, pregnancy, lactation, and interacting therapy", "Advising a high-fat meal because all albendazole regimens are assumed identical", "Food instructions change with the therapeutic goal and infection site"),
-  c("egg survival and repeat dose", "dose-repeat-strategy", "Available therapy kills worms but does not reliably kill eggs", "Plan the same regimen again in two weeks to target worms that hatch after the first dose", "Assess both dose dates, product supply, reminders, vomiting, underdosing, and household coordination", "Calling the second dose optional when symptoms improve", "The repeat dose is part of the intended life-cycle strategy"),
-  c("calendar adherence", "dose-repeat-strategy", "A planned two-week interval is easier to execute when both dates and enough product are established at the first dose", "Create reminders and verify that the household can complete the same-day repeat treatment", "Assess calendar dates, school or work schedule, product quantity, storage, caregiver responsibility, and access", "Waiting for symptoms to recur before deciding whether to repeat", "Calendar design converts an abstract instruction into a completed regimen"),
-  c("reinfection versus resistance", "dose-repeat-strategy", "Recurrent itching commonly reflects egg re-exposure, incomplete household treatment, an incorrect dose, or another diagnosis", "Audit execution and exposure before concluding that the organism is resistant", "Assess weight, concentration, both doses, household timing, hygiene, childcare exposure, and diagnostic evidence", "Escalating dose intensity without finding a missed second dose", "Common execution failures are more plausible and actionable first explanations"),
-  c("hand and nail hygiene", "household-hygiene", "Soap, warm water, short clean nails, and reduced scratching and nail biting interrupt high-value transmission routes", "Build handwashing into toileting, diaper care, food handling, and contact with affected items", "Assess technique, duration, supervision, nail care, skin breakdown, food preparation, and household adherence", "Relying only on alcohol hand sanitizer while ignoring visible contamination and nail reservoirs", "Mechanical washing and nail care directly remove eggs"),
-  c("morning bathing and clothing", "household-hygiene", "Morning showering and clean underwear remove eggs deposited overnight", "Use separate showers and washcloths where practical and change sleepwear and underwear daily during control", "Assess bathing method, shared water, towels, clothing changes, laundry access, and skin irritation", "Using shared tub water as the primary morning control measure", "Showering limits redistribution of eggs in bathwater"),
-  c("laundry control", "household-hygiene", "Careful hot washing and hot drying of bedding, clothing, towels, and washcloths helps remove or kill eggs", "Avoid shaking fabrics and use the hottest safe cycle consistent with current CDC guidance and fabric care", "Assess water temperature, dryer heat, laundry handling, shaking, storage, household burden, and sustainability", "Shaking bedding indoors before washing it", "Shaking can disperse eggs into the environment"),
-  c("young children and pregnancy", "special-populations", "Evidence and labeling limits require individualized treatment in children younger than two years and during pregnancy", "Use current drug-specific evidence and clinician-guided risk-benefit assessment", "Assess exact age, weight, swallowing, pregnancy timing, symptom burden, sleep loss, diagnosis certainty, and alternatives", "Applying one automatic household product and dose to every family member", "Household coordination does not erase individual safety differences"),
-  c("individual product safety review", "special-populations", "Lactation, liver disease, neurologic history, swallowing ability, allergy, and interacting medicines can make the safest product or administration plan differ among household members", "Review the exact drug and formulation for each person, preserve simultaneous control when possible, and use hygiene while a high-risk member receives individualized clinical guidance", "Assess lactation and infant context, liver history, seizure history, allergy, metronidazole exposure, dosage form, swallowing, exact product, adverse-effect risk, and ability to complete both doses", "Assuming a nonprescription household product eliminates the need for drug-specific screening, formulation verification, and interaction review", "Coordinated household treatment still requires an individual benefit, risk, product, dose, and administration decision"),
-  c("structured follow-up", "monitoring-reinfection", "Follow-up should verify symptom trend, both doses, household treatment, hygiene, adverse effects, and diagnostic fit", "Reassess persistent or atypical disease rather than repeating therapy indefinitely", "Assess itch timing, sleep, worms, dose execution, exposure, red flags, adverse effects, and alternative diagnoses", "Using recurrent itching as the only trigger for unsupervised monthly dosing", "A structured audit separates reinfection, nonadherence, toxicity, and misdiagnosis"),
-  c("recurrence investigation", "monitoring-reinfection", "Symptoms that recur after a correctly timed two-dose regimen require reconstruction of treatment, household exposure, hygiene, testing, and the differential diagnosis before another course is selected", "Verify weight and active-base calculation, product concentration, dose retention, both dates, simultaneous household treatment, two-week hygiene follow-through, new exposures, and correctly timed tape testing", "Assess nocturnal pattern, visible worms or eggs, three-morning tape results, affected contacts, childcare or institutional exposure, excoriation, genital symptoms, pain, bleeding, fever, adverse effects, and competing dermatoses or infections", "Labeling every recurrence drug resistance can lead to repeated exposure while an untreated contact, dosing error, environmental cycle, or different disease remains active", "A recurrence investigation identifies the mechanism of apparent failure so the next action targets reinfection, execution, toxicity, or misdiagnosis rather than repeating the same uncertainty"),
+export const pinwormInfectionQuestionBank = [
+  {
+    "id": "pinworm-infection-001",
+    "lesson": "life-cycle-transmission",
+    "question": "A child scratches the perianal area overnight and bites their nails before breakfast. Which event can restart infection?",
+    "choices": [
+      "Swallowing eggs carried under the nails",
+      "Larvae entering through intact hand skin",
+      "Worms multiplying in the bloodstream",
+      "Adult worms passing through the lungs"
+    ],
+    "answer": 0,
+    "rationale": "Hand-to-mouth transfer returns infective eggs to the intestinal tract. Nail care and handwashing address this route.",
+    "reviewHref": "#life-cycle-transmission"
+  },
+  {
+    "id": "pinworm-infection-002",
+    "lesson": "life-cycle-transmission",
+    "question": "A family wants to give its dog human pinworm medicine after a child is diagnosed. What should the pharmacist explain?",
+    "choices": [
+      "Household pets are not the reservoir for human pinworm",
+      "The dog needs the same weight-based human regimen",
+      "Pet treatment replaces treating household contacts",
+      "A negative veterinary stool test excludes the child's infection"
+    ],
+    "answer": 0,
+    "rationale": "Human pinworm control focuses on people and egg transfer. Treating pets does not interrupt this human-specific infection.",
+    "reviewHref": "#life-cycle-transmission"
+  },
+  {
+    "id": "pinworm-infection-003",
+    "lesson": "clinical-pattern-differential",
+    "question": "A child has nighttime anal itching and a sibling with similar symptoms. Which next step best preserves diagnostic accuracy?",
+    "choices": [
+      "Assess exposure and local findings, then arrange appropriately timed tape testing",
+      "Diagnose from itching alone and repeat treatment every month",
+      "Exclude infection because daytime symptoms are mild",
+      "Use a routine blood antibody test for confirmation"
+    ],
+    "answer": 0,
+    "rationale": "The pattern raises suspicion but does not establish the cause. Tape testing and assessment distinguish infection from other local disorders.",
+    "reviewHref": "#clinical-pattern-differential"
+  },
+  {
+    "id": "pinworm-infection-004",
+    "lesson": "clinical-pattern-differential",
+    "question": "A patient seeking pinworm treatment has fever and a very painful swollen area beside the anus. What is the best response?",
+    "choices": [
+      "Arrange prompt assessment for an abscess or another serious cause",
+      "Give pyrantel and wait two weeks before reassessment",
+      "Treat household members before assessing the painful swelling",
+      "Recommend a larger anthelmintic dose because pain reflects worm burden"
+    ],
+    "answer": 0,
+    "rationale": "Fever with focal painful swelling is not routine pinworm disease. Repeated empiric deworming could delay treatment of an abscess.",
+    "reviewHref": "#clinical-pattern-differential"
+  },
+  {
+    "id": "pinworm-infection-005",
+    "lesson": "tape-test-diagnosis",
+    "question": "A caregiver collected one tape specimen after bathing the child. The result was negative. What is most appropriate?",
+    "choices": [
+      "Repeat correctly timed collection on three consecutive mornings",
+      "Conclude that pinworm is excluded",
+      "Replace the tape test with a blood count",
+      "Collect only after the next bowel movement"
+    ],
+    "answer": 0,
+    "rationale": "Bathing can remove eggs, and deposition may vary between nights. Serial collection before bathing, toileting or dressing improves detection.",
+    "reviewHref": "#tape-test-diagnosis"
+  },
+  {
+    "id": "pinworm-infection-006",
+    "lesson": "tape-test-diagnosis",
+    "question": "A laboratory supplies a slide and clear tape for suspected pinworm. Which instruction is best?",
+    "choices": [
+      "Sample perianal skin upon waking, follow kit handling instructions and wash hands afterward",
+      "Insert the tape into the rectum after defecation",
+      "Apply tape to stool and leave it uncovered",
+      "Handle the sample before preparing breakfast without handwashing"
+    ],
+    "answer": 0,
+    "rationale": "Collection targets eggs on external perianal skin. Containment and handwashing reduce transfer to the collector and others.",
+    "reviewHref": "#tape-test-diagnosis"
+  },
+  {
+    "id": "pinworm-infection-007",
+    "lesson": "pyrantel-pharmacology",
+    "question": "A clinician specifies exactly 11 mg/kg pyrantel base for a 30-kg child. The suspension contains 50 mg base/mL. What volume delivers that calculated dose?",
+    "choices": [
+      "6.6 mL",
+      "3.3 mL",
+      "11 mL",
+      "30 mL"
+    ],
+    "answer": 0,
+    "rationale": "30 x 11 = 330 mg base; 330 / 50 = 6.6 mL. This is the specified exact calculation, not a package weight-band calculation.",
+    "reviewHref": "#pyrantel-pharmacology"
+  },
+  {
+    "id": "pinworm-infection-008",
+    "lesson": "pyrantel-pharmacology",
+    "question": "An adult weighs 110 kg. A clinician uses 11 mg/kg pyrantel base with a 1,000-mg maximum. The product is 50 mg base/mL. What is the capped dose?",
+    "choices": [
+      "1,000 mg, or 20 mL",
+      "1,210 mg, or 24.2 mL",
+      "550 mg, or 11 mL",
+      "2,000 mg, or 40 mL"
+    ],
+    "answer": 0,
+    "rationale": "The uncapped result is 1,210 mg. Apply the 1,000-mg ceiling before converting: 1,000 / 50 = 20 mL.",
+    "reviewHref": "#pyrantel-pharmacology"
+  },
+  {
+    "id": "pinworm-infection-009",
+    "lesson": "pyrantel-pharmacology",
+    "question": "A reviewed pyrantel package assigns 375 mg base to the 63-87 lb band. A 70-lb child will follow that package chart, using 50 mg base/mL. What volume corresponds to the chart?",
+    "choices": [
+      "7.5 mL",
+      "6.6 mL",
+      "3.75 mL",
+      "15 mL"
+    ],
+    "answer": 0,
+    "rationale": "375 / 50 = 7.5 mL. Package bands round doses; do not silently substitute an exact mg/kg calculation for an explicitly selected chart.",
+    "reviewHref": "#pyrantel-pharmacology"
+  },
+  {
+    "id": "pinworm-infection-010",
+    "lesson": "pyrantel-pharmacology",
+    "question": "A suspension lists both pyrantel pamoate salt and an equivalent amount of pyrantel base. Which quantity belongs in an 11-mg/kg CDC calculation?",
+    "choices": [
+      "The pyrantel-base equivalent",
+      "The full pamoate salt mass",
+      "The combined mass of salt and base",
+      "The total weight of suspension"
+    ],
+    "answer": 0,
+    "rationale": "The regimen is expressed in active base. Confusing salt mass with base equivalence causes a systematic dosing error.",
+    "reviewHref": "#pyrantel-pharmacology"
+  },
+  {
+    "id": "pinworm-infection-011",
+    "lesson": "pyrantel-pharmacology",
+    "question": "A parent plans to give pyrantel to a 26-month-old child weighing 23 lb. What does the reviewed OTC label require?",
+    "choices": [
+      "Physician direction because the child is below 25 lb",
+      "Routine self-treatment because age alone is above two years",
+      "An adult dose divided into quarters",
+      "Automatic avoidance of all treatment until school age"
+    ],
+    "answer": 0,
+    "rationale": "The label has both age and weight boundaries. Being older than two does not remove the physician-direction requirement below 25 lb.",
+    "reviewHref": "#pyrantel-pharmacology"
+  },
+  {
+    "id": "pinworm-infection-012",
+    "lesson": "pyrantel-pharmacology",
+    "question": "A caregiver asks whether pyrantel suspension requires a purgative and fasting. Which instruction matches the reviewed product?",
+    "choices": [
+      "Shake well; it may be taken with or without food, and a laxative is unnecessary",
+      "Keep the bottle unshaken and follow with a stimulant laxative",
+      "Fast for a full day and double the dose if food was eaten",
+      "Mix the suspension into bathwater"
+    ],
+    "answer": 0,
+    "rationale": "The reviewed oral suspension permits food and does not require a laxative. Shaking helps distribute medication before measuring.",
+    "reviewHref": "#pyrantel-pharmacology"
+  },
+  {
+    "id": "pinworm-infection-013",
+    "lesson": "mebendazole-albendazole",
+    "question": "A patient prescribed mebendazole is currently taking oral metronidazole. What should happen before dispensing?",
+    "choices": [
+      "Contact the prescriber to avoid the combination and select an appropriate plan",
+      "Proceed because single-dose mebendazole cannot interact",
+      "Separate the drugs by one hour without review",
+      "Double mebendazole to overcome reduced absorption"
+    ],
+    "answer": 0,
+    "rationale": "The label warns against concurrent metronidazole because serious skin reactions have been reported. Timing separation is not an established workaround.",
+    "reviewHref": "#mebendazole-albendazole"
+  },
+  {
+    "id": "pinworm-infection-014",
+    "lesson": "mebendazole-albendazole",
+    "question": "A 6-year-old child can safely swallow food but cannot swallow a whole EMVERM tablet. Which labeled option can preserve the dose?",
+    "choices": [
+      "Chew the tablet or crush it and mix with food",
+      "Dissolve it in a bath for skin absorption",
+      "Discard half and swallow the remainder",
+      "Replace it with an arbitrary albendazole tablet dose"
+    ],
+    "answer": 0,
+    "rationale": "The reviewed 100-mg chewable formulation permits chewing, swallowing or crushing into food. Ensure the entire dose is consumed.",
+    "reviewHref": "#mebendazole-albendazole"
+  },
+  {
+    "id": "pinworm-infection-015",
+    "lesson": "mebendazole-albendazole",
+    "question": "An albendazole prescription for pinworm conflicts with a general leaflet that says to take it with food. Which clarification is appropriate?",
+    "choices": [
+      "Confirm the CDC pinworm regimen: 400 mg on an empty stomach, repeated in two weeks",
+      "Automatically use the hydatid disease regimen with meals for 28 days",
+      "Give 400 mg after every meal for two weeks",
+      "Stop because guideline-supported off-label use is always prohibited"
+    ],
+    "answer": 0,
+    "rationale": "Pinworm treatment differs from labeled tissue-infection regimens. Clarify the indication and instructions rather than borrowing systemic-infection dosing.",
+    "reviewHref": "#mebendazole-albendazole"
+  },
+  {
+    "id": "pinworm-infection-016",
+    "lesson": "mebendazole-albendazole",
+    "question": "The EMVERM label discusses another course if uncured at three weeks, while CDC schedules a repeat pinworm dose at two weeks. How should this be taught?",
+    "choices": [
+      "State the difference and document the clinician-selected CDC regimen",
+      "Claim both sources give identical instructions",
+      "Combine them into automatic doses at weeks two and three",
+      "Treat the label as proof that CDC has withdrawn its regimen"
+    ],
+    "answer": 0,
+    "rationale": "Transparent reconciliation preserves the source distinction and prevents learners from inventing an extra course.",
+    "reviewHref": "#mebendazole-albendazole"
+  },
+  {
+    "id": "pinworm-infection-017",
+    "lesson": "dose-repeat-strategy",
+    "question": "A patient has improved after the first pyrantel dose and asks to repeat it without further advice. The OTC label says not to repeat unless directed by a physician. What is best?",
+    "choices": [
+      "Obtain physician direction for the CDC two-week repeat plan",
+      "Ignore the label because symptoms have improved",
+      "Give weekly doses until all itching stops",
+      "Skip all follow-up because the first dose kills eggs"
+    ],
+    "answer": 0,
+    "rationale": "CDC recommends a repeat dose, but the reviewed OTC product limits self-directed use. Counseling should arrange the repeat plan rather than erase that limit.",
+    "reviewHref": "#dose-repeat-strategy"
+  },
+  {
+    "id": "pinworm-infection-018",
+    "lesson": "dose-repeat-strategy",
+    "question": "A clinician-directed two-dose course begins October 1. When is the second dose due?",
+    "choices": [
+      "October 15",
+      "October 8",
+      "October 22",
+      "Only when itching returns"
+    ],
+    "answer": 0,
+    "rationale": "Two weeks is 14 days. Scheduling the second dose targets worms emerging after surviving eggs rather than waiting for symptoms.",
+    "reviewHref": "#dose-repeat-strategy"
+  },
+  {
+    "id": "pinworm-infection-019",
+    "lesson": "dose-repeat-strategy",
+    "question": "Only the symptomatic child was treated; an untreated sibling now has nocturnal itching. Which response best addresses recurrence?",
+    "choices": [
+      "Review both siblings and coordinate household treatment with individual safety checks",
+      "Conclude the drug is resistant without further assessment",
+      "Increase the first child's dose above the maximum",
+      "Disinfect the home while leaving household treatment unaddressed"
+    ],
+    "answer": 0,
+    "rationale": "Untreated contacts can sustain transmission. Coordinated treatment and hygiene are more appropriate than automatic dose escalation.",
+    "reviewHref": "#dose-repeat-strategy"
+  },
+  {
+    "id": "pinworm-infection-020",
+    "lesson": "household-hygiene",
+    "question": "The final planned treatment dose was October 15. Through which date should the CDC two-week post-treatment hygiene window continue?",
+    "choices": [
+      "October 29",
+      "October 16",
+      "October 22",
+      "October 15 only"
+    ],
+    "answer": 0,
+    "rationale": "The hygiene interval runs for two weeks after the last dose, not merely two weeks after the first dose.",
+    "reviewHref": "#household-hygiene"
+  },
+  {
+    "id": "pinworm-infection-021",
+    "lesson": "household-hygiene",
+    "question": "Which laundry instruction best limits spread from contaminated bedding?",
+    "choices": [
+      "Handle without shaking, hot-wash and use a hot dryer",
+      "Shake bedding indoors before folding it",
+      "Share towels until the medication takes effect",
+      "Use pesticide spray on pajamas while they are worn"
+    ],
+    "answer": 0,
+    "rationale": "Gentle handling reduces dispersal; hot washing and drying support egg control. Avoid hazardous pesticide exposure.",
+    "reviewHref": "#household-hygiene"
+  },
+  {
+    "id": "pinworm-infection-022",
+    "lesson": "household-hygiene",
+    "question": "A family shares bathwater in the morning during a pinworm outbreak. What change is most useful?",
+    "choices": [
+      "Use separate morning showers and clean underwear",
+      "Stop bathing until after the second dose",
+      "Use the same washcloth for everyone",
+      "Replace handwashing with additional medication"
+    ],
+    "answer": 0,
+    "rationale": "Morning washing removes overnight eggs; separate showers reduce transfer through shared bathwater and washcloths.",
+    "reviewHref": "#household-hygiene"
+  },
+  {
+    "id": "pinworm-infection-023",
+    "lesson": "special-populations",
+    "question": "A pregnant household contact at 18 weeks has mild itching and requests an automatic household dose. Which response best reflects CDC pinworm guidance?",
+    "choices": [
+      "Arrange individualized assessment and maintain hygiene; routine second-trimester self-treatment is not supported",
+      "Apply a mass-deworming policy for other helminths without considering the indication",
+      "Give a higher OTC dose because pregnancy lowers absorption",
+      "Use a retired pregnancy letter as the sole decision rule"
+    ],
+    "answer": 0,
+    "rationale": "CDC distinguishes pinworm from mass treatment for soil-transmitted helminths. It considers therapy when pregnancy is compromised and advises withholding until the third trimester.",
+    "reviewHref": "#special-populations"
+  },
+  {
+    "id": "pinworm-infection-024",
+    "lesson": "special-populations",
+    "question": "A breastfeeding patient is prescribed mebendazole for pinworm. Which counseling avoids an unsupported restriction?",
+    "choices": [
+      "Breastfeeding does not automatically need interruption; review the individual situation",
+      "All milk must be discarded for a month",
+      "Mebendazole is known to cause severe toxicity in every breastfed infant",
+      "Breastfeeding eliminates the need for household hygiene"
+    ],
+    "answer": 0,
+    "rationale": "CDC regards mebendazole as compatible with breastfeeding. Drug-specific evidence and the clinical context guide counseling.",
+    "reviewHref": "#special-populations"
+  },
+  {
+    "id": "pinworm-infection-025",
+    "lesson": "monitoring-reinfection",
+    "question": "After two documented doses, itching continues but there are no visible worms and the skin is inflamed by repeated cleaning products. What should happen next?",
+    "choices": [
+      "Reassess the diagnosis, exposure and irritant dermatitis rather than repeat treatment indefinitely",
+      "Assume drug resistance and double the dose",
+      "Use monthly anthelmintics as a diagnostic test",
+      "Escalate disinfectants applied directly to the skin"
+    ],
+    "answer": 0,
+    "rationale": "Persistent itching can reflect dermatitis or other diagnoses. Review correctly timed testing, medication execution and exposures before another course.",
+    "reviewHref": "#monitoring-reinfection"
+  },
+  {
+    "id": "pinworm-infection-026",
+    "lesson": "monitoring-reinfection",
+    "question": "A patient develops blistering rash and mouth sores after taking mebendazole with metronidazole. What is the priority?",
+    "choices": [
+      "Urgent medical assessment for a serious drug reaction",
+      "Wait for the scheduled repeat dose to see whether symptoms improve",
+      "Treat the rash as evidence of dying worms",
+      "Take both medicines with more food"
+    ],
+    "answer": 0,
+    "rationale": "Blistering with mucosal involvement is a serious reaction warning. It requires urgent evaluation, especially with this labeled interaction.",
+    "reviewHref": "#monitoring-reinfection"
+  }
 ];
-
-const dimensions = [["principle", "Which principle best characterizes"], ["action", "Which clinical action best applies to"], ["assessment", "Which assessment is most appropriate for"], ["hazard", "Which reasoning hazard is most important to prevent with"]];
-const distractors = (index, field) => [7, 13, 19].map((offset) => concepts[(index + offset) % concepts.length][field]);
-
-export const pinwormInfectionQuestionBank = concepts.flatMap((item, index) => dimensions.map(([field, stem], dimension) => ({
-  id: `pinworm-infection-${String(index * 4 + dimension + 1).padStart(3, "0")}`,
-  lesson: item.lesson,
-  question: `${stem} ${item.name}?`,
-  choices: [item[field], ...distractors(index, field)],
-  answer: 0,
-  rationale: item.why,
-  reviewHref: `#${item.lesson}`,
-})));

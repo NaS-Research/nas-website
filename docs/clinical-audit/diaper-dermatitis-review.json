@@ -1,0 +1,130 @@
+{
+  "module": "diaper-dermatitis",
+  "reviewDate": "2026-09-26",
+  "status": "verified",
+  "book": {
+    "edition": "2023 RxPrep",
+    "printedPages": [
+      555
+    ],
+    "pdfPages": [
+      563
+    ],
+    "inspection": "Private page image inspected, including diaper-rash prevention, treatment and drug/counseling table."
+  },
+  "baseline": {
+    "lessons": 9,
+    "assessment": "28 concepts expanded mechanically into 112 questions; complete concept and generator source read before replacement.",
+    "preexistingChange": "One FDA monograph reference URL already modified before this review; preserved."
+  },
+  "correctionsImplemented": [
+    "Namespaced all nine diaper visual identifiers to prevent cross-module collisions.",
+    "Added exact Vusion formulation, age, microscopic confirmation, application, duration and excluded-evidence populations.",
+    "Distinguished thick plain barrier paste from thin medicated combination application.",
+    "Added hydrocortisone label requirement for clinician review and explicit two-to-three-day follow-up.",
+    "Added avoidance of empiric OTC antibiotic ointment.",
+    "Added specific clotrimazole/miconazole cream strengths and twice-daily examples, with formulation-specific course selection.",
+    "Added powder avoidance.",
+    "Removed inaccessible monograph link from learner references; retained directly verified AAP guidance and current skin-protectant label. No concentration-range claims depend on the unavailable monograph."
+  ],
+  "bookDiscrepancies": [
+    "Book describes zinc oxide as a desiccant; current AAP guidance emphasizes its protective barrier role, which the existing lesson correctly preserves.",
+    "Book broadly permits brief low-potency hydrocortisone; label requires clinician review before diaper-rash use.",
+    "Book permits topical antibiotics for suspected bacteria; AAP advises avoiding empiric OTC antibiotic ointments and obtaining diagnosis.",
+    "RCH allows clinician-directed hydrocortisone for 1-2 weeks; module retains a shorter initial rescue with reassessment rather than presenting this as a universal maximum.",
+    "RCH describes a thick layer of miconazole/zinc combination; U.S. Vusion label explicitly specifies a thin layer. Module follows the exact U.S. product label."
+  ],
+  "sourcesRead": [
+    {
+      "url": "https://www.healthychildren.org/English/ages-stages/baby/diapers-clothing/Pages/Diaper-Rash.aspx",
+      "scope": "Complete caregiver guidance on irritant, Candida, bacterial and allergic patterns, care and escalation."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b44b452d-3630-4cb5-8ed1-1f8edac4690c",
+      "scope": "Indication, diagnostic requirements, dosage, limits, pediatric and patient-counseling sections."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=2ada9ec2-1c28-4da2-8639-07b3193ffb32&version=4",
+      "scope": "Archived label reviewed initially; current March 2026 hydrocortisone label subsequently verified and substituted."
+    },
+    {
+      "url": "https://www.rch.org.au/clinicalguide/guideline_index/nappy_rash/",
+      "scope": "Complete August 2024 hospital guideline: mechanisms, morphology, rare differential, care, antifungals, steroid regimen and referral."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f4d4a56b-b4b7-9a07-e053-2a95a90ad853&version=5",
+      "scope": "Current March 2026 label, diaper-rash and under-two medical-guidance restrictions. Replaces archived reference."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=256dfcfc-a91c-49b0-9439-452586a0880e",
+      "scope": "March 2026 zinc oxide 12%/dimethicone 1% skin-protectant label: wetness protection, warnings, formulation and directions. Used as product-specific evidence, not as a universal application schedule."
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/cg179/chapter/Recommendations",
+      "scope": "Full recommendations retrieved successfully over HTTPS after web-tool 403; read adult risk/skin assessment, moisture barriers (1.1.18), pediatric barrier prevention (1.2.22) and individualized pressure-relief care (1.3.1). Supports preserved beyond-book adult discussion."
+    }
+  ],
+  "validation": {
+    "clinicalCompletion": true,
+    "initialStructuralAudit": {
+      "log": "/private/tmp/diaper-initial-audit.log",
+      "globalErrors": 34,
+      "moduleErrors": []
+    },
+    "calculation": "2.5 mg miconazole per 1,000 mg ointment x 100 = 0.25%; zinc 150 mg/g = 15%; petrolatum 813.5 mg/g = 81.35%.",
+    "persistedContentReview": "Reread all nine lessons, nine embedded checks and nine diagram definitions after assessment revision.",
+    "revisedStructuralAudit": {
+      "log": "/private/tmp/burn-original-cases-audit.log",
+      "globalErrors": 34,
+      "moduleErrors": [],
+      "result": "Global failure confined to pre-existing prohibited dashes in glaucoma, allergic rhinitis and common ear conditions."
+    },
+    "build": {
+      "status": "passed",
+      "exitCode": 0,
+      "log": "/private/tmp/burn-original-cases-build.log",
+      "scope": "Final shared-worktree production build containing unchanged final diaper module, bank, visuals and references."
+    },
+    "crossModuleReview": "Searched modules, banks and learning components for Vusion and diaper/steroid combinations. Superficial Fungal Skin Infections explicitly avoids diaper use of clotrimazole/betamethasone and identifies occlusion/adrenal risks; consistent with this module. No other Vusion teaching found.",
+    "browser": {
+      "status": "passed",
+      "previewPort": 3144,
+      "desktop": {
+        "viewport": "1280x720",
+        "documentWidth": 1280,
+        "figures": 9,
+        "visualInspection": "Opening, Candida lesson heading, active left navigation, lesson feedback inspected in screenshots; nine figures present.",
+        "embeddedCheck": "Correct choice submitted; Correct feedback and matching rationale displayed."
+      },
+      "mobile": {
+        "viewport": "390x844",
+        "actualWidth": 390,
+        "documentWidth": 390,
+        "figures": 9,
+        "figureWidths": 350,
+        "figuresOverflow": false,
+        "visualInspection": "Lesson typography, two-column figure, horizontal section navigation, practice answers and feedback inspected."
+      },
+      "practice": {
+        "draw": 10,
+        "bank": 27,
+        "answered": 10,
+        "expectedCorrect": 9,
+        "expectedIncorrect": 1,
+        "observed": "Nine Correct results and one Review this concept; matching rationale and correct option shown. Review link navigated to morphology-differential."
+      },
+      "consoleErrors": [],
+      "screenshot": "/private/tmp/diaper-desktop-verified.png"
+    }
+  },
+  "openWork": [],
+  "assessmentRevision": {
+    "questions": 27,
+    "status": "All 27 cases, 108 choices, keys, rationales and anchors read; desktop lesson and mobile ten-question practice interactions now verified.",
+    "coverage": "All nine lessons represented, including product eligibility, application, concentration arithmetic, systemic red flags and atypical morphology."
+  },
+  "sourceAccessLimitations": [
+    "FDA M016 PDF remains unavailable (web retrieval error and direct DNS failure). Skin-protectant roles independently supported by current labeling and AAP. No monograph concentration-range claims added.",
+    "NICE initial 403 resolved with successful direct HTTPS retrieval and full read."
+  ]
+}

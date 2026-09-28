@@ -1,0 +1,261 @@
+{
+  "reviewDate": "2026-09-25",
+  "status": "completed-consolidation",
+  "arithmetic": [
+    {
+      "context": "promethazineDM daily volume",
+      "factors": [
+        "5",
+        "6"
+      ],
+      "result": "30",
+      "unit": "mL/day"
+    },
+    {
+      "context": "brompheniramine combination dose",
+      "factors": [
+        "2",
+        "2"
+      ],
+      "result": "4",
+      "unit": "mg/dose"
+    },
+    {
+      "context": "brompheniramine combination daily",
+      "factors": [
+        "2",
+        "2",
+        "6"
+      ],
+      "result": "24",
+      "unit": "mg/day"
+    },
+    {
+      "context": "combination pseudoephedrine daily",
+      "factors": [
+        "30",
+        "2",
+        "6"
+      ],
+      "result": "360",
+      "unit": "mg/day"
+    },
+    {
+      "context": "combination DM daily",
+      "factors": [
+        "10",
+        "2",
+        "6"
+      ],
+      "result": "120",
+      "unit": "mg/day"
+    },
+    {
+      "context": "guaifenesin IR maximum",
+      "factors": [
+        "100",
+        "4",
+        "6"
+      ],
+      "result": "2400",
+      "unit": "mg/day"
+    },
+    {
+      "context": "guaifenesin ER maximum",
+      "factors": [
+        "600",
+        "4"
+      ],
+      "result": "2400",
+      "unit": "mg/day"
+    },
+    {
+      "context": "DM IR dose",
+      "factors": [
+        "15",
+        "2"
+      ],
+      "result": "30",
+      "unit": "mg/dose"
+    },
+    {
+      "context": "DM IR maximum",
+      "factors": [
+        "15",
+        "2",
+        "4"
+      ],
+      "result": "120",
+      "unit": "mg/day"
+    },
+    {
+      "context": "DM ER dose",
+      "factors": [
+        "30",
+        "2"
+      ],
+      "result": "60",
+      "unit": "mg/dose"
+    },
+    {
+      "context": "DM ER maximum",
+      "factors": [
+        "30",
+        "2",
+        "2"
+      ],
+      "result": "120",
+      "unit": "mg/day"
+    },
+    {
+      "context": "benzonatate maximum",
+      "factors": [
+        "200",
+        "3"
+      ],
+      "result": "600",
+      "unit": "mg/day"
+    },
+    {
+      "context": "codeine/guaifenesin codeine dose",
+      "factors": [
+        "10",
+        "2"
+      ],
+      "result": "20",
+      "unit": "mg codeine phosphate/dose"
+    },
+    {
+      "context": "codeine/guaifenesin guaifenesin dose",
+      "factors": [
+        "100",
+        "2"
+      ],
+      "result": "200",
+      "unit": "mg/dose"
+    },
+    {
+      "context": "Tusnel C pseudoephedrine dose",
+      "factors": [
+        "30",
+        "2"
+      ],
+      "result": "60",
+      "unit": "mg HCl/dose"
+    },
+    {
+      "context": "Tusnel C volume maximum",
+      "factors": [
+        "10",
+        "4"
+      ],
+      "result": "40",
+      "unit": "mL/day"
+    },
+    {
+      "context": "pseudoephedrine IR dose",
+      "factors": [
+        "30",
+        "2"
+      ],
+      "result": "60",
+      "unit": "mg HCl/dose"
+    },
+    {
+      "context": "pseudoephedrine IR maximum",
+      "factors": [
+        "30",
+        "8"
+      ],
+      "result": "240",
+      "unit": "mg HCl/day"
+    },
+    {
+      "context": "pseudoephedrine120ER maximum",
+      "factors": [
+        "120",
+        "2"
+      ],
+      "result": "240",
+      "unit": "mg HCl/day"
+    },
+    {
+      "context": "pseudoephedrine240ER maximum",
+      "factors": [
+        "240",
+        "1"
+      ],
+      "result": "240",
+      "unit": "mg HCl/day"
+    }
+  ],
+  "arithmeticLimitation": "Arithmetic verifies stated totals only; exact indication, directions and safety come from separate source reviews. The prescription combination360mg/day pseudoephedrine example is not a standalone dosing recommendation.",
+  "assessmentIntegrity": {
+    "total": 149,
+    "matched": 149,
+    "mismatches": [],
+    "limitation": "No drift from recorded individually reviewed objects, not new clinical review by hashing."
+  },
+  "freshSourceCheck": {
+    "url": "https://www.fda.gov/drugs/understanding-over-counter-medicines/key-information-about-nonprescription-over-counter-otc-oral-phenylephrine",
+    "finding": "Actual current FDA page still describes proposed removal and continued marketing until final order; nasal route excluded. Current module and figure remain consistent."
+  },
+  "currentLessonSnapshots": [
+    {
+      "slug": "triage",
+      "sha256": "c4481284dbc76b73b27708bf13ae03ddbe8c2cfeb551483544bea89ffb15d969",
+      "paragraphs": 6
+    },
+    {
+      "slug": "product-selection",
+      "sha256": "a004c64ecb0045d9226891c040a7e62719fbc7d6f68e8f10ba03f7fbbc132a7a",
+      "paragraphs": 9
+    },
+    {
+      "slug": "supportive-care",
+      "sha256": "9e07d825aee634eeb05e4a52851b92c7aee11dd2c14ddda54f636fc8075b50ae",
+      "paragraphs": 6
+    },
+    {
+      "slug": "cough-therapy",
+      "sha256": "56798465ea13ea98888fcb37176110e81ca61c98eefd6b7b45dddf63ff66de6f",
+      "paragraphs": 20
+    },
+    {
+      "slug": "congestion",
+      "sha256": "4513d4fb5afd2ac619cab40af1dc158c6a4072c2fee5f12195ded239b50d31f7",
+      "paragraphs": 14
+    },
+    {
+      "slug": "pediatrics",
+      "sha256": "2d6d0b271a2621b63f36876991c0eb3e9b8c6dae0b18d3506ba826d813649a26",
+      "paragraphs": 5
+    },
+    {
+      "slug": "interaction-safety",
+      "sha256": "2150c5fde4d097951e438ac2cbb2cc853b37f4d9ea06715c2cf39ff6558c872a",
+      "paragraphs": 5
+    },
+    {
+      "slug": "evidence-natural-products",
+      "sha256": "bc6bbd442b33ca99eede0bcad7b232859785d8a8897ed9d7481714910fa23bcc",
+      "paragraphs": 5
+    },
+    {
+      "slug": "follow-up",
+      "sha256": "2e5335e8813f76de5de9f5f33ae3ebeeff8fa2cc57a99fff7ef7134ddb439885",
+      "paragraphs": 6
+    }
+  ],
+  "remaining": [],
+  "validation": {
+    "browserSession": 65979,
+    "browserExit": 0,
+    "scope": "All9 current lesson bodies,9 embedded checks,149 review targets at desktop/mobile; no runtime errors or horizontal overflow.",
+    "buildSession": 92828,
+    "buildExit": 0,
+    "generatedPages": 558,
+    "isolation": "Only completed allergy application changes plus current cough module/bank/visual added to008cf88 checkout; unrelated auth/site edits excluded."
+  },
+  "finalAddition": "CDC August2025 hygiene guidance read; cough etiquette, hand hygiene and cleaning made explicit. Capture6166 inspected desktop/mobile."
+}

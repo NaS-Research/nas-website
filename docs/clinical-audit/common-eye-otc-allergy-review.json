@@ -1,0 +1,88 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_product_review",
+  "module": "common-eye-conditions",
+  "sources": [
+    {
+      "label": "DailyMed. Pataday 0.1% Drug Facts",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=b7a24375-25df-4405-aa7c-34c46af51194"
+    },
+    {
+      "label": "DailyMed. Pataday 0.2% Drug Facts",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=1c7d2342-ba1c-4244-9814-d92a05725d4e"
+    },
+    {
+      "label": "DailyMed. Pataday 0.7% Drug Facts",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=6d07a5d6-265c-4735-97b3-8a2575b276cb"
+    },
+    {
+      "label": "DailyMed. Zaditor ketotifen Drug Facts",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=ac66b1e4-c2b0-a4c3-09e3-ebd44a2f7c9f"
+    },
+    {
+      "label": "DailyMed. Lastacaft OTC Drug Facts",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a3002410-4bf1-4182-9d7c-8193eb7cd215"
+    },
+    {
+      "label": "DailyMed. Alembic azelastine hydrochloride ophthalmic 0.05%",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=7532ed82-5cfa-49da-83e5-c57ffdd3adbb"
+    },
+    {
+      "label": "DailyMed. Sandoz cromolyn 4%, February 2025",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=b32851c3-cd97-4be4-a09c-1deab1d6966b"
+    },
+    {
+      "label": "DailyMed. Alocril historical labeling and marketing record",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2fe8d7ad-2158-4169-94b0-719ad20242b7"
+    },
+    {
+      "label": "DailyMed. Harrow Zerviate prescribing information, December 2025",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=6fc5ef4e-4aea-4c34-8d51-0c07ab9aad59"
+    },
+    {
+      "label": "DailyMed. Somerset epinastine prescribing information, March 2025",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=0d4ee45c-e58f-4b7c-b389-898f5c27f54d&type=display"
+    },
+    {
+      "label": "FDA. Alomide historical labeling, 2003",
+      "href": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2003/20191slr018_alomide_lbl.pdf"
+    },
+    {
+      "label": "FDA Orange Book 46th edition, 2026; discontinued drug product list 6-324 (PDF page 886)",
+      "href": "https://www.fda.gov/media/71474/download"
+    }
+  ],
+  "readScope": "Drug Facts indications, warnings, directions, storage and inactive ingredients for all four formulations; package text where displayed, not package images. Also read complete Lastacaft OTC Drug Facts and Alembic azelastine prescribing text, including special populations; no package images. Read cromolyn February 2025 prescribing and patient text, and Alocril June 2018 prescribing/patient text and September 2022 marketing-end record. Read displayed Zerviate indication, dosage, container, lens, adverse-event, special-population, formulation and storage passages (not all study/nonclinical lines); read Somerset epinastine prescribing text through patient counseling. Read all three pages of extracted FDA 2003 Alomide label text; this is historical evidence only. Manufacturer PDF search excerpt was available but direct retrieval returned 404; DailyMed setid retrieval failed. Read downloaded FDA 2026 Orange Book title and Alomide entry on PDF page 886, under Discontinued Drug Product List; not the entire Orange Book.",
+  "findings": [
+    "Expanded vague exact-label advice into concentration-specific olopatadine dosing and ketotifen age/interval/salt-equivalence counseling.",
+    "Added explicit 72-hour stop rules and differentiated reinsertion timing from suitability for lens wear.",
+    "Pataday 0.2% SPL includes incongruous 0.7% carton text; relied on Drug Facts and active ingredient record for the 0.2% formulation, cross-checked separately against 0.7% Drug Facts.",
+    "Added previously absent alcaftadine, including current OTC status; expanded azelastine formulation, route, dose, age, storage and adverse-effect counseling.",
+    "Added cromolyn vernal indications, regular dosing and delayed response; no-contact-lens instruction applies throughout treatment.",
+    "Added historical nedocromil coverage while explicitly qualifying availability by the reviewed presentation marketing-end record.",
+    "Added cetirizine ophthalmic single-use handling, including preserved formulation versus mandatory disposal; added assessment case.",
+    "Added epinastine dosing throughout exposure, age, lens and manufacturer-specific storage.",
+    "Added lodoxamide conceptual/vernal-disease coverage with explicit historical-label boundary. Did not transfer historical dosing, storage or pregnancy category into current recommendations.",
+    "Resolved availability gap: 2026 FDA Orange Book lists Alomide, lodoxamide tromethamine equivalent 0.1% base, NDA 020191 product 001, as discontinued. Updated lesson explicitly; no assertion that discontinuation was for safety or efficacy."
+  ],
+  "remaining": [
+    "Final whole-module reconciliation and build"
+  ],
+  "validation": {
+    "rendering": "All ten added allergy passages visually inspected at 1440x1000 desktop and 390x844 mobile; readable, no horizontal overflow or page errors. Screenshots retained under /private/tmp/eye-{product}-{desktop|mobile}.png.",
+    "assessmentInteractions": "Both olopatadine-schedule and Zerviate-container cases encountered and checked across 23 desktop attempts and 12 mobile attempts. Mixed correct/incorrect scoring, rendered stem, keyed answer, rationale and review anchor verified for each attempt. No page errors or overflow.",
+    "limitation": "Interaction validation does not replace a full clinical read of all generated questions.",
+    "pending": "Final whole-module reconciliation and build",
+    "alomideStatusRender": "Revised discontinued-status row inspected at desktop 1440x1000 and mobile 390x844; fully readable. /private/tmp/eye-lodoxamide-final-{desktop|mobile}.png"
+  },
+  "hashes": {
+    "src/data/modules/commonEyeConditions.js": "b1e36a5970285c77e92b23faf7ecb0c710e3115d72537d1ef3aba60f0c05173b",
+    "src/data/questionBanks/commonEyeConditions.js": "16655301d4ef2940016e61cc733ce7c6f6b1b5e6644a485acb25ceea5d60ef2f"
+  },
+  "finalClosure": {
+    "date": "2026-09-26",
+    "status": "resolved_for_common_eye_module",
+    "evidence": "common-eye-completion-review.json",
+    "note": "Earlier statuses, counts and pending text are historical snapshots. Final completion record and its lesson mapping supersede Common Eye remaining-work statements. Ear-module work remains separate."
+  }
+}

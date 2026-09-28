@@ -1,73 +1,521 @@
-const c = (name, lesson, principle, action, assessment, hazard, why) => ({ name, lesson, principle, action, assessment, hazard, why });
-
-const concepts = [
-  c("syndrome based vaginitis assessment", "diagnostic-frame", "Discharge, odor, itching, burning, dysuria, and dyspareunia overlap across infectious and noninfectious causes, so history alone is not sufficiently specific.", "Build a differential from symptoms, examination, vaginal pH, microscopy or molecular testing, sexual history, pregnancy, medicines, and prior self-treatment.", "Compare vaginal symptoms, vulvar findings, pH, inflammatory cells, clue cells, fungal elements, trichomonads, and cervicitis clues.", "Treating every discharge as candidiasis can delay diagnosis of bacterial vaginosis, trichomoniasis, cervicitis, dermatitis, or another disorder.", "Overlapping symptoms require objective diagnostic structure."),
-  c("vaginal pH interpretation", "diagnostic-frame", "A vaginal pH above 4.5 supports bacterial vaginosis or trichomoniasis, while candidiasis usually preserves a pH below 4.5, but pH alone is not diagnostic.", "Use pH to narrow the differential, then pair it with examination and organism-directed testing.", "Review recent intercourse, blood, douching, collection technique, pH result, microscopy, and nucleic acid testing when appropriate.", "Calling an elevated pH proof of one organism ignores poor specificity and preanalytic factors.", "pH is a routing clue rather than a final diagnosis."),
-  c("microscopy and molecular testing", "diagnostic-frame", "Wet mount can reveal clue cells, motile trichomonads, yeast, pseudohyphae, or inflammatory cells, but a negative result does not reliably exclude infection.", "Escalate to NAAT, culture, or other validated testing when suspicion persists or disease is recurrent, severe, or complicated.", "Assess specimen quality, timing, organism burden, test sensitivity, species identification, susceptibility need, and availability.", "A negative wet mount can create false reassurance because microscopy has limited sensitivity.", "Diagnostic sensitivity depends on the organism and method."),
-  c("noninfectious and upper tract red flags", "diagnostic-frame", "Fever, pelvic or abdominal pain, cervical motion tenderness, bleeding, ulcers, pregnancy complications, toxic appearance, or persistent unexplained symptoms require evaluation beyond uncomplicated vaginitis care.", "Route possible cervicitis, pelvic inflammatory disease, genital ulcer disease, dermatologic disease, foreign body, or malignancy to focused evaluation.", "Check pain location, fever, bleeding, pregnancy, cervical findings, lesions, urinary symptoms, medication exposure, and symptom persistence.", "Repeated empiric intravaginal treatment can mask a diagnosis that needs urgent or different care.", "The location and systemic context determine urgency."),
-  c("structured pharmacy self-care interview", "diagnostic-frame", "A safe vulvovaginal self-care assessment moves systematically through symptoms, onset, location, aggravating and relieving factors, prior episodes, attempted treatment, medicines, allergies, pregnancy possibility, sexual exposure, and medical conditions.", "Use a consistent interview structure before deciding whether self-care, diagnostic testing, or urgent evaluation is appropriate.", "Clarify the complete symptom pattern, episode history, treatment response, pregnancy and STI context, host factors, medicines, and red flags.", "Jumping from one familiar symptom to an OTC product can miss a different infection, upper tract disease, pregnancy complication, or noninfectious disorder.", "Structure reduces omission when symptoms overlap."),
-  c("lower tract versus upper tract escalation", "diagnostic-frame", "Localized vulvovaginal symptoms and upper genital tract inflammation require different levels of evaluation, and pelvic pain, uterine or adnexal tenderness, cervical motion tenderness, fever, or systemic illness should move the patient out of routine self-care.", "Escalate promptly when the symptom pattern could represent cervicitis, pelvic inflammatory disease, ectopic pregnancy, or another pelvic process.", "Assess pain, tenderness, fever, bleeding, pregnancy status, cervical findings, systemic symptoms, STI risk, and ability to obtain urgent care.", "Treating an ascending process as isolated vaginitis can delay therapy and increase reproductive harm.", "Anatomic location changes urgency and treatment scope."),
-
-  c("bacterial vaginosis dysbiosis", "bv-biology", "Bacterial vaginosis is a polymicrobial dysbiosis with reduced protective Lactobacillus activity, increased anaerobes, higher pH, and often a biofilm rather than a single-pathogen infection.", "Explain recurrence without stigmatizing the patient or describing BV as proof of infidelity.", "Review symptoms, sexual and hygiene context, douching, prior antibiotics, recurrence pattern, pregnancy, and STI risk.", "Calling BV a simple Gardnerella infection erases its ecosystem and recurrence biology.", "A community shift and biofilm behave differently from one isolated pathogen."),
-  c("Amsel and Nugent criteria", "bv-biology", "Amsel diagnosis uses at least three of four findings, while Nugent scoring interprets Gram-stain morphotypes as a laboratory reference approach.", "Use the available validated method and interpret it in the symptomatic clinical context.", "Compare homogeneous discharge, pH above 4.5, clue cells, amine odor, Gram-stain score, and molecular results.", "One isolated finding, especially odor or pH, is insufficient to establish BV.", "Diagnosis gains reliability by combining independent features."),
-  c("BV consequences and screening context", "bv-biology", "Symptomatic BV warrants treatment, while indiscriminate treatment of asymptomatic findings is not a universal rule and pregnancy or procedural context can alter evaluation.", "Treat symptoms, assess STI risk, and use pregnancy and procedure-specific guidance rather than one blanket screening policy.", "Review symptoms, pregnancy, planned gynecologic procedure, prior obstetric history, HIV and STI risk, and local guidance.", "Treating every positive molecular signal can expose colonized patients without clear benefit.", "Clinical relevance depends on symptoms and context."),
-
-  c("first line BV regimens", "bv-treatment", "CDC recommended options include oral metronidazole, intravaginal metronidazole gel, or intravaginal clindamycin cream, with route selected through patient and product factors.", "Choose among recommended regimens by pregnancy, preference, adherence, GI tolerance, interactions, cost, and barrier contraception.", "Compare dose, duration, route, product base, adherence, adverse effects, access, and prior response.", "Treating oral therapy as inherently superior ignores the absence of direct efficacy evidence favoring oral over topical treatment.", "Several routes can be appropriate first-line choices."),
-  c("nitroimidazole pharmacology", "bv-treatment", "Metronidazole, tinidazole, and secnidazole enter susceptible anaerobic or protozoal cells and form reactive intermediates that damage nucleic acids.", "Separate class mechanism from product-specific regimen, half-life, labeling, lactation, and evidence position.", "Review organism, route, dose, duration, alcohol evidence, warfarin interaction, neurologic risk, candidiasis, pregnancy, and lactation.", "A shared nitroimidazole group does not make dosing and counseling interchangeable.", "Exposure and product evidence differ across molecules."),
-  c("intravaginal clindamycin products", "bv-treatment", "Clindamycin inhibits the bacterial 50S ribosomal subunit, while the vaginal vehicle can change barrier-method compatibility and administration instructions.", "Read the exact cream, ovule, or gel label before counseling about condoms, diaphragms, timing, and application.", "Check product base, applicator technique, duration, latex or polyisoprene compatibility, diarrhea history, Candida overgrowth, and adherence.", "Copying one clindamycin product's barrier warning to every formulation can be wrong.", "The dosage form is part of the safety profile."),
-  c("secnidazole administration", "bv-treatment", "Secnidazole oral granules provide a labeled single-dose option for BV and trichomoniasis in patients age 12 and older, but CDC positions it as an alternative for BV.", "Sprinkle the full packet on an approved soft food, consume within the labeled interval, do not chew or dissolve the granules, and apply lactation guidance.", "Verify indication, age, packet strength, preparation, complete consumption, breastfeeding interruption, partner plan for trichomoniasis, and follow-up.", "Convenient single dosing should not be confused with universal first-line preference.", "Administration precision and evidence position both matter."),
-
-  c("recurrent BV definition and reassessment", "bv-recurrence", "Return of symptoms after treatment requires confirmation of the current syndrome, adherence, reinfection or partner context, and competing diagnoses rather than automatic repetition.", "Reassess the diagnosis and exposure history before selecting retreatment, suppression, or specialist care.", "Review symptom-free interval, testing, prior regimen completion, sexual exposure, douching, devices, pregnancy, and alternative causes.", "Labeling every recurrence as antimicrobial resistance can miss reinfection, biofilm, nonadherence, or misdiagnosis.", "Recurrence is a phenotype that needs reclassification."),
-  c("suppressive BV strategies", "bv-recurrence", "For multiple recurrences, CDC describes selected suppressive metronidazole approaches, but benefit can diminish after suppression ends and regimen selection is individualized.", "Use a defined induction, suppression duration, monitoring, candidiasis plan, and stop or reassessment point.", "Assess recurrence frequency, diagnostic confirmation, prior regimens, pregnancy, candidiasis, adherence, access, and current guidance.", "An indefinite suppressive prescription without confirmation or follow-up creates avoidable exposure.", "Suppression controls recurrence risk but does not guarantee durable cure."),
-  c("2025 recurrent BV partner update", "bv-recurrence", "ACOG now recommends considering concurrent partner therapy for selected adults with recurrent symptomatic BV, updating older routine non-treatment language after new trial evidence.", "Use shared decision making, define the partner population and regimen, and distinguish this update from universal partner treatment.", "Review recurrent symptomatic phenotype, relationship and partner anatomy, study population, antimicrobial suitability, adherence, and evolving guidance.", "Applying the 2025 evidence to every first episode, every asymptomatic patient, or every partner population overstates the data.", "A meaningful evidence update still has population boundaries."),
-
-  c("trichomoniasis diagnosis", "trichomoniasis", "Trichomonas vaginalis can be symptomatic or asymptomatic, wet mount sensitivity is limited, and NAAT is preferred when available for accurate detection.", "Test with a validated method and evaluate for other STIs rather than relying on discharge appearance alone.", "Review NAAT site and platform, symptoms, pregnancy, HIV, partner exposure, prior treatment, and reinfection risk.", "A normal pH or negative wet mount does not reliably exclude trichomoniasis.", "Modern molecular testing improves detection beyond bedside microscopy."),
-  c("trichomoniasis treatment by population", "trichomoniasis", "CDC recommends metronidazole 500 mg twice daily for seven days for women and a single 2 g oral dose for men, with tinidazole as an alternative.", "Select the population-specific regimen, assess pregnancy and HIV context, and ensure complete oral therapy.", "Compare sex-specific evidence, pregnancy, HIV, adherence, GI tolerance, interactions, and prior nitroimidazole exposure.", "Using the single 2 g regimen for every woman ignores evidence favoring multidose metronidazole.", "Regimen evidence differs by population."),
-  c("trichomoniasis partner management", "trichomoniasis", "Concurrent treatment of current sexual partners is essential for trichomoniasis, along with abstinence until treatment is complete and symptoms have resolved.", "Treat partners, discuss legally permissible expedited partner therapy, and plan retesting for women because reinfection is common.", "Review partner number, treatment completion, exposure interval, local EPT law, pregnancy, symptoms, and retesting timing.", "Treating only the index patient creates a predictable reinfection pathway.", "Partner treatment is part of the regimen, not an optional add-on."),
-  c("persistent trichomoniasis", "trichomoniasis", "Persistent infection can reflect reinfection, nonadherence, or nitroimidazole resistance, and these causes require different responses.", "Exclude re-exposure and adherence failure before using longer or higher-dose regimens and CDC resistance consultation.", "Assess partner treatment, interval sex, dose completion, vomiting, test timing, organism confirmation, and resistance support.", "Escalating therapy without excluding reinfection misclassifies the problem.", "Exposure history directs the next therapeutic step."),
-
-  c("Candida colonization versus VVC", "vvc-diagnosis", "Candida can colonize the vagina without causing disease, so a positive test without compatible symptoms and signs is not an indication for treatment.", "Require a clinical syndrome plus supportive microscopy, culture, or validated testing before labeling VVC.", "Review pruritus, soreness, edema, fissures, discharge, pH, microscopy, species, host factors, and competing diagnoses.", "Treating colonization promotes exposure and can delay the true diagnosis.", "Organism detection and symptomatic infection are not synonymous."),
-  c("uncomplicated versus complicated VVC", "vvc-diagnosis", "Complicated VVC includes recurrent, severe, non-albicans, or immunocompromised phenotypes and requires more diagnostic and therapeutic structure.", "Classify the episode before choosing duration, route, culture, susceptibility, or specialist involvement.", "Assess episode frequency, severity, species, diabetes, immunosuppression, pregnancy, prior azoles, and response.", "A one-dose strategy for every candidiasis phenotype under-treats complicated disease.", "Phenotype determines the necessary depth of care."),
-  c("Candida glabrata recognition", "vvc-diagnosis", "Candida glabrata may not form hyphae or pseudohyphae and can be missed on routine microscopy, while non-albicans isolates may be less azole susceptible.", "Obtain culture or validated species-level testing in complicated or persistent disease and interpret colonization carefully.", "Review species, symptoms, microscopy limitations, prior azoles, susceptibility, recurrence, and alternative diagnoses.", "A negative hyphae examination does not exclude C. glabrata disease.", "Organism morphology changes test performance."),
-
-  c("uncomplicated VVC therapy", "vvc-treatment", "Short-course topical azoles or oral fluconazole can treat uncomplicated VVC in nonpregnant patients, with route selected through preference, interactions, pregnancy, and formulation factors.", "Match exact product, strength, duration, applicator or suppository technique, and interaction review to the patient.", "Compare topical duration, oral exposure, CYP interactions, liver history, pregnancy, barrier products, local irritation, and adherence.", "Assuming every OTC package has the same dose and schedule creates administration error.", "Formulation and patient context determine the usable regimen."),
-  c("OTC self-care boundaries", "vvc-treatment", "Self-care is reasonable only when the presentation is familiar and uncomplicated, while first episodes, uncertain diagnosis, recurrence, rapid return, severe symptoms, pregnancy, or red flags warrant evaluation.", "Screen for exclusions before recommending an OTC azole and define the follow-up threshold.", "Assess age, first episode, pregnancy, fever, pelvic pain, odor, STI risk, diabetes, immunosuppression, recurrence, and prior response.", "OTC availability does not make every vulvovaginal symptom appropriate for self-treatment.", "Safe self-care begins with triage."),
-  c("prior candidiasis diagnosis limits", "vvc-treatment", "A previous clinician diagnosis of candidiasis does not make current self-diagnosis reliably accurate because several infectious and noninfectious disorders share the same symptoms.", "Reassess the present episode and refer uncertain, changed, severe, persistent, or rapidly recurrent symptoms for examination and testing.", "Compare the current symptoms with the prior episode, interval, odor, pain, fever, exposure, pregnancy, host factors, and response to any attempted therapy.", "Treating every familiar itch as candidiasis can delay the actual diagnosis.", "Past experience informs probability but does not prove the current cause."),
-  c("OTC course completion and reassessment", "vvc-treatment", "Successful self-care requires the exact product strength, dosage form, administration schedule, full course, and a defined reassessment threshold.", "Teach correct placement and completion, then direct persistent symptoms, worsening symptoms, or recurrence within two months to clinical evaluation and testing.", "Verify product, strength, route, duration, barrier compatibility, adverse effects, adherence, symptom response, and recurrence timing.", "Repeated unexamined OTC treatment can postpone care for another vaginitis cause or resistant disease.", "Follow-up instructions are part of treatment, not an optional addendum."),
-  c("intravaginal azole counseling", "vvc-treatment", "Creams, suppositories, and ovules differ in duration, placement, leakage, excipients, and potential effects on barrier contraception.", "Counsel on bedtime use when appropriate, full-course completion, applicator hygiene, product-specific barrier warnings, and symptom follow-up.", "Verify exact product, oil base, route, duration, menstruation instructions, condom or diaphragm use, irritation, and storage.", "Generalizing one product's compatibility warning across all intravaginal azoles can mislead patients.", "Dosage-form instructions are product specific."),
-
-  c("recurrent VVC induction and suppression", "vvc-recurrence", "Recurrent VVC requires diagnostic confirmation and a longer induction phase before maintenance, commonly weekly fluconazole for six months when appropriate.", "Confirm species and host factors, induce remission, then use a time-limited maintenance plan with interaction, organ, and reproductive review.", "Assess culture, susceptibility, diabetes, immune status, pregnancy, liver function, QT and CYP interactions, adherence, and relapse.", "Starting weekly suppression without confirming active recurrent VVC can treat the wrong condition for months.", "Durable control depends on diagnosis before maintenance."),
-  c("severe and non-albicans VVC", "vvc-recurrence", "Severe VVC needs extended topical therapy or a staged oral regimen, while non-albicans disease often needs culture-guided nonfluconazole therapy and specialist support.", "Use severity and species to choose duration, drug, follow-up, and whether boric acid is appropriate under expert guidance.", "Review fissures, edema, species, susceptibility, pregnancy, mucosal integrity, ingestion risk, prior treatment, and specialist access.", "Boric acid is not an oral medicine and is not a casual empiric remedy for undiagnosed symptoms.", "Alternative therapy carries route and toxicity safeguards."),
-  c("ibrexafungerp", "modern-vvc", "Ibrexafungerp is an oral triterpenoid glucan synthase inhibitor labeled for treatment of VVC and reduction of recurrent VVC incidence in adult and post-menarchal patients.", "Use the labeled acute or monthly regimen only after pregnancy, contraception, CYP3A, and indication review.", "Assess pregnancy status, reproductive potential, contraception, CYP3A inducers or inhibitors, GI effects, recurrence definition, and adherence.", "Its non-azole mechanism does not remove embryo-fetal toxicity or interaction risk.", "A new target changes resistance logic, not the need for safety screening."),
-  c("oteseconazole", "modern-vvc", "Oteseconazole is an oral azole indicated to reduce recurrent VVC incidence only in females who are not of reproductive potential.", "Verify the regulatory definition of reproductive potential before using either labeled oteseconazole regimen.", "Review reproductive status, pregnancy and lactation, food, BCRP substrates, renal and hepatic impairment, induction plan, and recurrence.", "Using contraception alone does not make a patient eligible because the indication is restricted to those not of reproductive potential.", "The long exposure and embryo-fetal risk create an unusually narrow population boundary."),
-  c("new therapy evidence boundary", "modern-vvc", "Newer products expand options but do not replace organism confirmation, phenotype classification, and current guideline positioning.", "Choose a newer agent only when its labeled population, regimen, mechanism, safety, and practical value fit the confirmed syndrome.", "Compare indication, age, recurrence criteria, reproductive restrictions, organ function, interactions, cost, access, and guideline role.", "Novelty alone is not evidence of superiority for every uncomplicated episode.", "Clinical fit requires more than a recent approval date."),
-
-  c("pregnancy and vulvovaginal therapy", "special-populations", "Pregnancy changes regimen selection: CDC recommends seven days of topical azole therapy for VVC, while symptomatic BV and trichomoniasis require pregnancy-aware treatment and obstetric coordination.", "Verify pregnancy before systemic antifungal or recurrent-disease therapy and use current narrative labeling rather than retired letter categories.", "Assess gestational age, syndrome confirmation, symptoms, drug route, fetal risk, obstetric complications, lactation, and follow-up.", "Using old pregnancy letters or routine oral fluconazole for pregnancy ignores current guidance.", "Pregnancy safety is drug, dose, timing, and indication specific."),
-  c("lactation and product-specific exposure", "special-populations", "Lactation recommendations differ by drug and formulation, including a 96-hour breastfeeding interruption after secnidazole under current labeling.", "Check the exact product label and weigh maternal treatment, milk exposure, infant factors, and temporary feeding plans.", "Review drug half-life, route, infant age, milk supply, available alternatives, stored milk, and restart timing.", "Applying one class-wide breastfeeding rule can contradict product-specific labeling.", "Exposure windows differ across active ingredients."),
-  c("communication and stigma", "special-populations", "BV, candidiasis, and trichomoniasis have different relationships to sexual transmission, and accurate neutral language supports disclosure, partner care, adherence, and trust.", "Explain what is known, what is not implied, which partners need treatment, and why follow-up matters without moral judgment.", "Assess preferred terms, privacy, coercion and safety, partner access, health literacy, cost, language, and teach-back.", "Equating every vaginitis syndrome with an STI can create stigma and incorrect partner management.", "Precise communication is a clinical safety intervention."),
-  c("longitudinal follow-up", "special-populations", "A complete plan defines expected symptom improvement, retesting or test-of-cure when indicated, recurrence thresholds, and red flags for escalation.", "Close the loop with a specific timeline, partner plan, adherence check, and route back to the correct lesson or clinician.", "Review symptom trajectory, treatment completion, partner treatment, repeat testing, pregnancy, adverse effects, recurrence, and unresolved differential.", "A prescription without a follow-up rule leaves treatment failure and reinfection indistinguishable.", "Outcome measurement completes the therapeutic decision."),
+// Original clinical cases; choice order is randomized by the assessment interface.
+export const vaginitisVulvovaginalInfectionsQuestionBank = [
+  {
+    "id": "vaginitis-vulvovaginal-001",
+    "lesson": "diagnostic-frame",
+    "question": "Vaginal itching persists despite a negative KOH wet mount. The pH is 4.2 and candidiasis remains plausible. What is the next diagnostic step?",
+    "choices": [
+      "Consider fungal culture or another validated yeast test",
+      "Exclude candidiasis solely from the wet mount",
+      "Diagnose BV solely from the itching",
+      "Begin indefinite fluconazole suppression"
+    ],
+    "answer": 0,
+    "rationale": "A negative wet mount can miss yeast; the symptom pattern warrants additional testing before prolonged treatment.",
+    "reviewHref": "#diagnostic-frame"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-002",
+    "lesson": "diagnostic-frame",
+    "question": "A patient requesting an OTC yeast product also has fever and pelvic pain. What takes priority?",
+    "choices": [
+      "Prompt evaluation for an upper-tract or other serious cause",
+      "A one-day azole trial before evaluation",
+      "Repeated pH testing at home",
+      "Treating odor before assessing pain"
+    ],
+    "answer": 0,
+    "rationale": "Pelvic pain and fever move the case beyond routine uncomplicated vaginitis self-care.",
+    "reviewHref": "#diagnostic-frame"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-003",
+    "lesson": "diagnostic-frame",
+    "question": "A pH result of 5.2 is obtained shortly after intercourse. What can be concluded?",
+    "choices": [
+      "The result needs clinical context and does not identify an organism",
+      "BV is confirmed without other testing",
+      "Candida is proven absent",
+      "Trichomoniasis is confirmed"
+    ],
+    "answer": 0,
+    "rationale": "Semen and collection conditions can change pH; elevated pH is not an organism-specific diagnosis.",
+    "reviewHref": "#diagnostic-frame"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-004",
+    "lesson": "bv-biology",
+    "question": "Thin homogeneous discharge, clue cells and vaginal pH 5.0 are present. The whiff test is negative. How do Amsel criteria apply?",
+    "choices": [
+      "Three of four criteria support BV",
+      "All four criteria are mandatory",
+      "A negative whiff test excludes BV",
+      "Clue cells establish candidiasis"
+    ],
+    "answer": 0,
+    "rationale": "Amsel diagnosis requires at least three of four findings, not every finding.",
+    "reviewHref": "#bv-biology"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-005",
+    "lesson": "bv-biology",
+    "question": "A patient interprets BV as proof that her partner has been unfaithful. Which explanation is accurate?",
+    "choices": [
+      "BV involves a shift in vaginal microbial communities and does not prove infidelity",
+      "BV is always acquired from a new outside partner",
+      "BV is caused by one yeast species",
+      "Douching reliably restores the protective microbiota"
+    ],
+    "answer": 0,
+    "rationale": "Partner microbiota can matter without establishing the source or timing of an outside sexual exposure.",
+    "reviewHref": "#bv-biology"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-006",
+    "lesson": "bv-treatment",
+    "question": "An order reads metronidazole 0.75% vaginal gel daily for BV but omits the amount. Which standard regimen completes it?",
+    "choices": [
+      "5 g intravaginally daily for five days",
+      "5 g orally daily for five days",
+      "One application every week for five weeks",
+      "500 mg intravaginally twice daily for seven days"
+    ],
+    "answer": 0,
+    "rationale": "The recommended gel regimen uses one 5 g applicator daily for five days; oral milligram instructions cannot be transferred to the gel.",
+    "reviewHref": "#bv-treatment"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-007",
+    "lesson": "bv-treatment",
+    "question": "A patient receives Xaciato and uses polyurethane condoms. Which counseling is correct?",
+    "choices": [
+      "Avoid polyurethane condoms during treatment and for seven days afterward",
+      "All clindamycin products have identical latex restrictions",
+      "Polyurethane is the preferred barrier immediately after Xaciato",
+      "The warning ends as soon as the applicator is discarded"
+    ],
+    "answer": 0,
+    "rationale": "The gel has a polyurethane-specific warning; the label identifies latex or polyisoprene alternatives and separately restricts intercourse for three days.",
+    "reviewHref": "#bv-treatment"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-008",
+    "lesson": "bv-treatment",
+    "question": "How should a 2 g secnidazole packet be taken?",
+    "choices": [
+      "Sprinkle the full packet onto an approved soft food and consume within 30 minutes without chewing",
+      "Dissolve half the packet in water for each of two days",
+      "Chew the dry granules thoroughly",
+      "Store the mixed food for the next morning"
+    ],
+    "answer": 0,
+    "rationale": "The formulation is swallowed with applesauce, yogurt or pudding; it is not dissolved in a drink or divided into an improvised regimen.",
+    "reviewHref": "#bv-treatment"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-009",
+    "lesson": "bv-treatment",
+    "question": "Significant diarrhea develops after vaginal clindamycin. What should be done?",
+    "choices": [
+      "Seek clinical evaluation, including possible C. difficile-associated diarrhea",
+      "Dismiss it because vaginal drugs cannot have systemic effects",
+      "Continue automatically and add a second antibiotic",
+      "Assume it confirms successful BV treatment"
+    ],
+    "answer": 0,
+    "rationale": "Clinically important antibiotic-associated diarrhea can occur despite vaginal administration.",
+    "reviewHref": "#bv-treatment"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-010",
+    "lesson": "bv-recurrence",
+    "question": "BV symptoms recur after initial improvement. What should precede a suppressive plan?",
+    "choices": [
+      "Reassess the syndrome, treatment completion and competing diagnoses",
+      "Assume every recurrence is resistant BV",
+      "Add indefinite antibiotics without testing or review",
+      "Treat every prior partner regardless of ongoing contact"
+    ],
+    "answer": 0,
+    "rationale": "Recurrent symptoms can reflect BV, another infection or a noninfectious process.",
+    "reviewHref": "#bv-recurrence"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-011",
+    "lesson": "bv-recurrence",
+    "question": "An ongoing male partner is offered the NYSDOH BV partner regimen. Which prescription distinction matters?",
+    "choices": [
+      "Oral metronidazole plus off-label penile application of clindamycin 2% cream",
+      "Clindamycin 2% vaginal gel is an equivalent penile substitute",
+      "Clindamycin 1% acne lotion has the same evidence",
+      "Partner treatment consists only of a single oral metronidazole dose"
+    ],
+    "answer": 0,
+    "rationale": "The evidence-based combination and cream formulation should not be replaced by a different topical product.",
+    "reviewHref": "#bv-recurrence"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-012",
+    "lesson": "bv-recurrence",
+    "question": "A patient asks why older CDC guidance and newer ACOG advice differ about BV partners. What explains this?",
+    "choices": [
+      "Newer partner-treatment evidence supports selected concurrent therapy",
+      "The older guidance was about Candida rather than BV",
+      "All partners now require antibiotics without assessment",
+      "Partner treatment eliminates every recurrence"
+    ],
+    "answer": 0,
+    "rationale": "The updated pathway builds on newer trial evidence; population limits and shared decisions remain relevant.",
+    "reviewHref": "#bv-recurrence"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-013",
+    "lesson": "trichomoniasis",
+    "question": "A woman with confirmed trichomoniasis is prescribed vaginal metronidazole gel alone. What is the concern?",
+    "choices": [
+      "The vaginal gel is not adequate trichomoniasis treatment",
+      "The gel is preferred over every oral regimen",
+      "Partner therapy makes the gel sufficient",
+      "The gel becomes adequate if continued for a month"
+    ],
+    "answer": 0,
+    "rationale": "Trichomoniasis requires an effective oral nitroimidazole regimen; gel does not provide adequate treatment at relevant sites.",
+    "reviewHref": "#trichomoniasis"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-014",
+    "lesson": "trichomoniasis",
+    "question": "Which CDC metronidazole regimen is preferred for a woman with trichomoniasis?",
+    "choices": [
+      "500 mg orally twice daily for seven days",
+      "150 mg orally once",
+      "2 g orally once weekly for six months",
+      "0.75% vaginal gel daily for five days"
+    ],
+    "answer": 0,
+    "rationale": "The multidose oral regimen is preferred for women; the preferred initial male regimen differs.",
+    "reviewHref": "#trichomoniasis"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-015",
+    "lesson": "trichomoniasis",
+    "question": "A patient remains symptomatic and requests repeat trichomoniasis NAAT seven days after completing treatment. How should testing be planned?",
+    "choices": [
+      "Prefer culture for recurrence; if using NAAT, wait at least three weeks after completion",
+      "A positive NAAT at seven days proves resistance",
+      "No further testing is ever useful",
+      "Wait three months despite ongoing symptoms"
+    ],
+    "answer": 0,
+    "rationale": "Early NAAT may detect residual nucleic acid. Evaluate current symptoms and re-exposure rather than labeling resistance prematurely.",
+    "reviewHref": "#trichomoniasis"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-016",
+    "lesson": "trichomoniasis",
+    "question": "Symptoms resolve after treatment, but the patient is unsure whether her partner took therapy. What remains necessary?",
+    "choices": [
+      "Concurrent partner care and repeat testing around three months for the woman",
+      "No retesting if symptoms have resolved",
+      "Treat only if the partner develops discharge",
+      "Use an OTC azole to prevent reinfection"
+    ],
+    "answer": 0,
+    "rationale": "Partner treatment and scheduled retesting address frequent reinfection even when initial symptoms resolve.",
+    "reviewHref": "#trichomoniasis"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-017",
+    "lesson": "vvc-diagnosis",
+    "question": "Candida grows from a vaginal culture, but there are no symptoms or signs. What is indicated?",
+    "choices": [
+      "No antifungal treatment for colonization alone",
+      "Weekly fluconazole for six months",
+      "A severe-VVC regimen",
+      "Automatic treatment of all partners"
+    ],
+    "answer": 0,
+    "rationale": "Detection alone does not establish symptomatic candidiasis.",
+    "reviewHref": "#vvc-diagnosis"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-018",
+    "lesson": "vvc-diagnosis",
+    "question": "A patient has three confirmed symptomatic Candida episodes in ten months. How should this be classified?",
+    "choices": [
+      "Recurrent VVC under CDC guidance",
+      "Uncomplicated solely because each episode improved",
+      "Recurrent only after a fifth episode",
+      "Non-albicans disease without species testing"
+    ],
+    "answer": 0,
+    "rationale": "Three or more symptomatic episodes in less than one year meet the CDC recurrent-disease definition.",
+    "reviewHref": "#vvc-diagnosis"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-019",
+    "lesson": "vvc-diagnosis",
+    "question": "Why might microscopy miss C. glabrata vaginitis?",
+    "choices": [
+      "It may not form the hyphae or pseudohyphae expected on routine microscopy",
+      "It always raises pH above 6",
+      "It cannot be detected by culture",
+      "It is a bacterium rather than a yeast"
+    ],
+    "answer": 0,
+    "rationale": "Species-level testing can be important when microscopy is negative and complicated infection remains likely.",
+    "reviewHref": "#vvc-diagnosis"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-020",
+    "lesson": "vvc-treatment",
+    "question": "A patient taking warfarin requests vaginal miconazole. What is appropriate?",
+    "choices": [
+      "Obtain medication review because bleeding risk is still relevant",
+      "Assume no interaction because administration is vaginal",
+      "Stop warfarin without consulting the prescriber",
+      "Double miconazole to offset anticoagulation"
+    ],
+    "answer": 0,
+    "rationale": "Vaginal miconazole Drug Facts specifically warns about warfarin-associated bleeding or bruising.",
+    "reviewHref": "#vvc-treatment"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-021",
+    "lesson": "vvc-treatment",
+    "question": "Symptoms have not improved after three days of miconazole 7 therapy. What does the label direct?",
+    "choices": [
+      "Stop use and obtain medical review",
+      "Wait until a second course is complete",
+      "Switch among OTC products indefinitely",
+      "Assume symptoms must worsen before improving"
+    ],
+    "answer": 0,
+    "rationale": "The product sets a three-day improvement threshold and a seven-day persistence threshold for review.",
+    "reviewHref": "#vvc-treatment"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-022",
+    "lesson": "vvc-treatment",
+    "question": "A patient wants to substitute a probiotic for confirmed symptomatic VVC treatment. What should be explained?",
+    "choices": [
+      "Evidence does not establish probiotics as effective VVC treatment",
+      "Probiotics reliably eradicate all Candida species",
+      "Yogurt is equivalent to a prescribed azole",
+      "A probiotic removes the need to reassess persistent symptoms"
+    ],
+    "answer": 0,
+    "rationale": "Unproven substitution may delay effective treatment or diagnosis of a competing condition.",
+    "reviewHref": "#vvc-treatment"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-023",
+    "lesson": "vvc-recurrence",
+    "question": "An appropriate nonpregnant patient with recurrent C. albicans VVC is beginning fluconazole suppression. What comes first?",
+    "choices": [
+      "An adequate induction course, such as oral doses on days 1, 4 and 7",
+      "Start weekly dosing without controlling the active episode",
+      "Treat every dose as a new single-dose episode",
+      "Use daily fluconazole indefinitely"
+    ],
+    "answer": 0,
+    "rationale": "Induction aims to establish control before a defined maintenance course.",
+    "reviewHref": "#vvc-recurrence"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-024",
+    "lesson": "vvc-recurrence",
+    "question": "Which oral regimen is a CDC option for severe VVC when oral therapy is appropriate?",
+    "choices": [
+      "Fluconazole 150 mg, repeated 72 hours later",
+      "Fluconazole 150 mg every hour for two doses",
+      "Fluconazole 50 mg once",
+      "Fluconazole 150 mg weekly without initial treatment"
+    ],
+    "answer": 0,
+    "rationale": "Severe disease needs an adequate extended approach; the two doses are separated by 72 hours.",
+    "reviewHref": "#vvc-recurrence"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-025",
+    "lesson": "vvc-recurrence",
+    "question": "A patient with recurrent non-albicans VVC is given vaginal boric acid. Which instruction is essential?",
+    "choices": [
+      "Never swallow it, secure it from children and follow the clinician-directed plan",
+      "Use it orally if insertion is uncomfortable",
+      "Use it as the routine pregnancy alternative",
+      "Share it with an asymptomatic partner"
+    ],
+    "answer": 0,
+    "rationale": "Route confusion can cause poisoning, and pregnancy requires a separate treatment pathway.",
+    "reviewHref": "#vvc-recurrence"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-026",
+    "lesson": "modern-vvc",
+    "question": "A standard one-day ibrexafungerp course is supplied as 150 mg tablets. How many tablets are needed?",
+    "choices": [
+      "Four tablets: two per dose about 12 hours apart",
+      "Two tablets total, one per dose",
+      "Eight tablets taken together",
+      "One tablet daily for four days"
+    ],
+    "answer": 0,
+    "rationale": "300 mg per dose divided by 150 mg per tablet is two tablets; two doses total four tablets and 600 mg.",
+    "reviewHref": "#modern-vvc"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-027",
+    "lesson": "modern-vvc",
+    "question": "A strong CYP3A inhibitor is continued with ibrexafungerp. Which labeled adjustment applies?",
+    "choices": [
+      "150 mg about every 12 hours for two doses on one day",
+      "600 mg per dose twice that day",
+      "300 mg daily for six days",
+      "No dose adjustment under any circumstances"
+    ],
+    "answer": 0,
+    "rationale": "Strong inhibition increases exposure; the adjusted one-day total is 300 mg.",
+    "reviewHref": "#modern-vvc"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-028",
+    "lesson": "modern-vvc",
+    "question": "A patient of reproductive potential offers to use contraception while taking oteseconazole. Is this sufficient?",
+    "choices": [
+      "No; reproductive potential remains a contraindication",
+      "Yes, any contraceptive method establishes eligibility",
+      "Yes, if the first dose is reduced",
+      "Yes, if the patient skips maintenance"
+    ],
+    "answer": 0,
+    "rationale": "Contraception alone does not meet the labeled population restriction.",
+    "reviewHref": "#modern-vvc"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-029",
+    "lesson": "modern-vvc",
+    "question": "For the oteseconazole-only regimen, when does weekly 150 mg maintenance begin?",
+    "choices": [
+      "Day 14 after the day-1 and day-2 loading doses",
+      "Day 3 immediately after loading",
+      "Day 28 after a week of daily fluconazole",
+      "The next day after every recurrent episode"
+    ],
+    "answer": 0,
+    "rationale": "The two approved schedules differ; the oteseconazole-only regimen starts weekly doses on day 14.",
+    "reviewHref": "#modern-vvc"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-030",
+    "lesson": "modern-vvc",
+    "question": "A patient follows the fluconazole/oteseconazole sequence. What follows fluconazole on days 1, 4 and 7?",
+    "choices": [
+      "Oteseconazole 150 mg daily on days 14 through 20, then weekly starting day 28",
+      "Oteseconazole 600 mg every week beginning day 8",
+      "Fluconazole 150 mg daily until day 28",
+      "Oteseconazole 450 mg daily for 11 weeks"
+    ],
+    "answer": 0,
+    "rationale": "This sequence must remain distinct from the oteseconazole-only loading schedule.",
+    "reviewHref": "#modern-vvc"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-031",
+    "lesson": "modern-vvc",
+    "question": "A patient taking rosuvastatin begins oteseconazole. What is the interaction concern?",
+    "choices": [
+      "BCRP inhibition can increase rosuvastatin exposure",
+      "Oteseconazole reliably eliminates rosuvastatin efficacy",
+      "Only vaginal products interact with rosuvastatin",
+      "There is no relevant transporter interaction"
+    ],
+    "answer": 0,
+    "rationale": "Review the substrate dose and adverse-effect monitoring with the prescriber.",
+    "reviewHref": "#modern-vvc"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-032",
+    "lesson": "special-populations",
+    "question": "A pregnant patient has symptomatic VVC. Which treatment approach matches CDC guidance?",
+    "choices": [
+      "A topical azole for seven days",
+      "Routine oral fluconazole 150 mg once",
+      "Oteseconazole with contraception",
+      "Intravaginal boric acid as first choice"
+    ],
+    "answer": 0,
+    "rationale": "Pregnancy-specific guidance recommends seven-day topical azole therapy.",
+    "reviewHref": "#special-populations"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-033",
+    "lesson": "special-populations",
+    "question": "A breastfeeding patient receives secnidazole. What labeled feeding plan needs discussion?",
+    "choices": [
+      "A 96-hour interruption after the dose with a practical alternative feeding plan",
+      "No interruption can ever be necessary",
+      "Permanent cessation of breastfeeding",
+      "An interruption only while the granules are swallowed"
+    ],
+    "answer": 0,
+    "rationale": "The product-specific four-day recommendation requires advance planning.",
+    "reviewHref": "#special-populations"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-034",
+    "lesson": "special-populations",
+    "question": "Which partner rule distinguishes uncomplicated candidiasis from trichomoniasis?",
+    "choices": [
+      "Routine candidiasis partner treatment is unsupported; trichomoniasis requires concurrent partner treatment",
+      "Neither condition ever requires partner care",
+      "Both require identical presumptive partner regimens",
+      "Asymptomatic candidiasis partners always require oral suppression"
+    ],
+    "answer": 0,
+    "rationale": "Partner management follows the syndrome rather than a universal rule for vaginal symptoms.",
+    "reviewHref": "#special-populations"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-035",
+    "lesson": "modern-vvc",
+    "question": "A patient takes monthly ibrexafungerp for six months and asks whether contraception can stop between monthly doses. Which plan follows labeling?",
+    "choices": [
+      "Continue effective contraception throughout the six-month course and for four days after the last dose",
+      "Use contraception only on each treatment day",
+      "Stop contraception after the first negative pregnancy test",
+      "Use contraception for only four days after the first monthly dose"
+    ],
+    "answer": 0,
+    "rationale": "Contraception continues between monthly doses; the four-day interval follows the final dose, not each isolated treatment day.",
+    "reviewHref": "#modern-vvc"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-036",
+    "lesson": "vvc-treatment",
+    "question": "A nonpregnant patient with uncomplicated VVC is dispensed miconazole 4% vaginal cream. Which CDC regimen matches this strength?",
+    "choices": [
+      "5 g intravaginally daily for three days",
+      "5 g intravaginally daily for seven days",
+      "One 1,200 mg suppository",
+      "150 mg orally once"
+    ],
+    "answer": 0,
+    "rationale": "The 4% cream course is three days. Seven days applies to the 2% cream; suppository and oral regimens are distinct products.",
+    "reviewHref": "#vvc-treatment"
+  },
+  {
+    "id": "vaginitis-vulvovaginal-037",
+    "lesson": "trichomoniasis",
+    "question": "An asymptomatic woman with HIV enters care and has no recent trichomoniasis screening. What is the appropriate plan?",
+    "choices": [
+      "Screen now and at least annually thereafter",
+      "Screen only if frothy discharge appears",
+      "Give empiric single-dose metronidazole without testing",
+      "Screen once at entry and never repeat"
+    ],
+    "answer": 0,
+    "rationale": "CDC recommends entry-to-care and at least annual trichomoniasis screening for women with HIV; screening is distinct from empiric treatment.",
+    "reviewHref": "#trichomoniasis"
+  }
 ];
-
-const dimensions = [
-  ["principle", "Which principle best characterizes"],
-  ["action", "Which clinical action best applies to"],
-  ["assessment", "Which assessment is most appropriate for"],
-  ["hazard", "Which reasoning hazard is most important to prevent with"],
-];
-
-function distractors(index, field) {
-  return [7, 15, 23].map((offset) => concepts[(index + offset) % concepts.length][field]);
-}
-
-export const vaginitisVulvovaginalInfectionsQuestionBank = concepts.flatMap((concept, conceptIndex) =>
-  dimensions.map(([field, prefix], dimensionIndex) => ({
-    id: `vaginitis-vulvovaginal-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`,
-    concept: concept.name,
-    difficulty: ["Foundational", "Applied", "Advanced", "Expert"][dimensionIndex],
-    prompt: `${prefix} ${concept.name}?`,
-    choices: [concept[field], ...distractors(conceptIndex, field)],
-    answer: 0,
-    explanation: concept.why,
-    reviewHref: `#${concept.lesson}`,
-  })),
-);

@@ -1,0 +1,54 @@
+{
+  "reviewDate": "2026-09-25",
+  "status": "partial_review",
+  "sources": [
+    {
+      "product": "Vyzulta",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=60ce7900-a677-4fc2-88d0-1603baa9dbd4",
+      "revision": "01/2024",
+      "sectionsRead": "1\u20136,8,11\u201312,16\u201317"
+    },
+    {
+      "product": "Zioptan",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=db529b54-2ac7-4020-9791-7333bbe6c90f",
+      "revision": "04/2026",
+      "sectionsRead": "1\u20134,6,8,11\u201312,14,16\u201317; patient information through ocular warnings"
+    },
+    {
+      "product": "Travatan Z",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=028455e0-ae77-4213-8819-3b58ef7d6a14",
+      "revision": "05/2020 (SPL page updated 2023)",
+      "sectionsRead": "1\u20136,8,11\u201312,14,16\u201317"
+    },
+    {
+      "product": "Lumigan 0.01%",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a5e67c75-db88-4372-bb07-c8dd15c97631",
+      "revision": "06/2024",
+      "sectionsRead": "1\u20136,8.1; 8.2 opening paragraph; pediatric highlight;16\u201317"
+    }
+  ],
+  "changes": [
+    "Added strengths, evening doses, storage, lens intervals and drop spacing for four products",
+    "Distinguished preservative-free Zioptan from BAK-free but sofZia-preserved Travatan Z",
+    "Added product-specific pediatric labeling cutoffs",
+    "Added four original product-handling cases, each read with all choices, key and explanation against the cited label"
+  ],
+  "bookComparison": "Printed page 541 gives a broad refrigeration-before-opening summary. Added precise product and opened-pouch limits, without assuming all prostaglandins share a discard interval. Preservative changes do not guarantee symptom resolution. Current Zioptan labeling specifies 30 days for unopened units in an opened pouch, distinct from immediate discard of an opened unit.",
+  "validation": {
+    "import": "Seven lessons, 125 unique questions; import passed after correcting intermediate concat syntax",
+    "arithmetic": "Decimal independently checked percent-to-mg/mL for all four concentrations and 0.3mL x 0.015mg/mL = 0.0045mg for Zioptan label container content; no new days-supply calculation inferred",
+    "visual": "Ten complete paragraph-row screenshots inspected, 1440x1000 and 390x844. All text legible and wrapped without clipping.",
+    "assessment": "Desktop 20 attempts and mobile 26 attempts each encountered all four new cases. Verified shuffled choices, keyed answers, alternating correct/incorrect scoring, explanations and review links. No page errors or horizontal overflow. Other sampled questions checked for UI behavior only."
+  },
+  "remaining": [
+    "Xelpros, Rocklatan and Latisse targeted reconciliation now recorded in glaucoma-xelpros-rocklatan-latisse-review.json; broader product review remains partial",
+    "Full pregnancy/lactation synthesis and remaining unreviewed product sections",
+    "Review all original prostaglandin questions and remaining visual content",
+    "Whole-module verification and build still pending"
+  ],
+  "hashes": {
+    "src/data/modules/glaucomaPharmacotherapy.js": "19b8b8b2078b0f9bd2b01ed956689406ae7f0d1dc2df7c6c479ebab44c9124a0",
+    "src/data/questionBanks/glaucomaPharmacotherapy.js": "4c57207fad385b9fac0806a3190aed1cee5c16be497f7165bffdd40152d3f27f"
+  },
+  "populationLabelFollowup": "glaucoma-population-label-followup-review.json closes Rocklatan, Lumigan and Latisse prescribing-text gaps and records two rendered additions. Broader population synthesis remains open."
+}

@@ -1,0 +1,97 @@
+{
+  "reviewDate": "2026-09-25",
+  "status": "partial_review",
+  "sources": [
+    {
+      "product": "Cosopt PF",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=535fc801-8c3f-4974-a120-3eff1d5a5062",
+      "revision": "05/2026",
+      "sectionsRead": "1\u20134"
+    },
+    {
+      "product": "Combigan",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=feaf1480-a4b8-4486-992a-96be3a596243",
+      "revision": "03/2026",
+      "sectionsRead": "1\u20134,5.1\u20135.3"
+    },
+    {
+      "product": "Simbrinza",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a49c157e-6310-0011-7b7f-e26fc1820d59",
+      "revision": "05/2023",
+      "sectionsRead": "1\u20135"
+    }
+  ],
+  "changes": [
+    "Added ingredients and labeled dosing for Cosopt PF, Combigan and Simbrinza",
+    "Added duplicate-timolol example and preserved systemic risk despite preservative-free formulation",
+    "Added Simbrinza suspension preparation, age and renal restrictions",
+    "Explained fixed-combination schedule differences and label efficacy comparisons",
+    "Added single-dose Cosopt PF immediate-use/disposal boundary"
+  ],
+  "questions": [
+    "glaucoma-pharmacotherapy-duplicate-timolol",
+    "glaucoma-pharmacotherapy-simbrinza-schedule",
+    "glaucoma-pharmacotherapy-cosopt-pf-disposal"
+  ],
+  "clinicalReview": "Read all three original stems, options, keys and rationales against product sections. These cases test the added content; remaining generated combination questions are not newly verified.",
+  "validation": {
+    "moduleImport": "121 unique question IDs; runtime import passed after fixing an intermediate concat syntax error",
+    "browser": "Prior completed runs: desktop 6 attempts and mobile 2 attempts encountered all three cases; scoring, keys, explanations and review links passed without page errors or overflow.",
+    "visual": "Six complete paragraph-row screenshots inspected on 2026-09-25, desktop and mobile: ingredients, Simbrinza, schedule/disposal. Text wraps legibly without clipping."
+  },
+  "remaining": [
+    "Remaining Rocklatan population review",
+    "Lactation/pregnancy evidence synthesis",
+    "Cosopt PF IFU remainder and relevant images",
+    "Whole-module final consistency and visual review"
+  ],
+  "hashes": {
+    "src/data/modules/glaucomaPharmacotherapy.js": "67534cebec0f4b010407680feb48819d963d8c476a769d57b2a63056c401aa7a",
+    "src/data/questionBanks/glaucomaPharmacotherapy.js": "110b7b5e5779fdd3954d75abafcd2ba1efffe8ebd6f1d411e44d36d8f8205d2b"
+  },
+  "followup": {
+    "date": "2026-09-26",
+    "sectionsRead": {
+      "Cosopt PF": "Full prescribing sections 1\u201317 and patient information; IFU through step 11 only. Images not inspected.",
+      "Combigan": "Full prescribing sections 1\u201317; package images not inspected.",
+      "Simbrinza": "Sections 6\u201313, clinical-study tables and storage/counseling read in addition to prior 1\u20135. Study figures not inspected."
+    },
+    "changes": [
+      "Check both components for interactions",
+      "Keep combination precautions patient-specific",
+      "Date the Cosopt PF pouch",
+      "Store Combigan as its own product",
+      "Finish Simbrinza counseling"
+    ],
+    "discrepancies": [
+      "Cosopt PF 8.2 says timolol milk excretion unknown, whereas current timolol/Combigan labels report detection in human milk. Do not reproduce the former as established fact.",
+      "Simbrinza counseling uses solution/cloudiness language despite being a suspension; avoid teaching that its expected suspension appearance alone proves contamination."
+    ],
+    "validation": {
+      "syntax": "node --check passed",
+      "visual": "All ten full paragraph screenshots inspected: five rows each at desktop 1440x1000 and mobile390x844; no clipping or horizontal overflow.",
+      "moduleSha256": "0a30c7d85dd7ee59419c6d3a175918882b1fb93f37d4cd5c94dfa56b2ef56e18"
+    }
+  },
+  "preservedCosoptFollowup": {
+    "date": "2026-09-26",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=23bdf1c1-3134-4ad1-8e7c-bc655156bdc6&type=display",
+    "revision": "Highlights May2022; document May2023",
+    "scope": "Full prescribing and patient/IFU text read; IFU and package images not inspected.",
+    "change": "Distinguish the preserved Cosopt bottle",
+    "notes": [
+      "Patient leaflet says age2 and younger unestablished; prescribing8.4 says below2. Preserve exact prescribing evidence for individual components, not a universal age2 contraindication.",
+      "Older search result gave15\u201330C and10-minute spacing; current selected Th\u00e9a label gives20\u201325C and5minutes. Teach the identified bottle.",
+      "Nursing section confirms timolol in milk, unlike wording in recent PF label; population synthesis remains pending."
+    ],
+    "validation": {
+      "syntax": "node --check passed",
+      "visual": "Full paragraph inspected at desktop1440x1000/mobile390x844; readable without clipping or overflow.",
+      "moduleSha256": "4e9e82d3b66a037628a414630b0f21e788afb9d8fd10e1302c3c89d5189f931e"
+    }
+  },
+  "cosoptPfIFUCompletion": {
+    "date": "2026-09-26",
+    "scope": "Read remaining IFU text after step11: repeat for other prescribed eye, sufficient volume for both eyes, immediate discard. Consistent with current lesson. No change required. Device illustrations/package artwork not used as teaching assets and not claimed reviewed."
+  }
+}

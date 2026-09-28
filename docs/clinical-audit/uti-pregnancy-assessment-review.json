@@ -1,0 +1,103 @@
+{
+  "reviewDate": "2026-09-25",
+  "scope": "All14 pregnancy-uti questions in UTI companion, including original stems/options/keys/rationales and replacement versions",
+  "status": "corrected-content-reviewed",
+  "sources": [
+    "https://www.acog.org/clinical/clinical-guidance/clinical-consensus/articles/2023/08/urinary-tract-infections-in-pregnant-individuals",
+    "https://www.idsociety.org/practice-guideline/asymptomatic-bacteriuria/",
+    "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=8f270a9f-12a1-44d4-bc7e-873613555801"
+  ],
+  "reasonForChange": "Generated questions used unrelated true statements as distractors, broad duration wording and mismatched pyelonephritis rationales. Replaced all14 with original clinical cases; preservedIDs and total130 questions.",
+  "questions": [
+    {
+      "id": "urinary-tract-infections-073",
+      "sha256": "dbf81890141246df144173ee0c0bb4c9292b010af108d896c5d062a6ddf2d90a",
+      "finding": "Early culture screening is the sole correct option; symptom-only screening misses ASB."
+    },
+    {
+      "id": "urinary-tract-infections-074",
+      "sha256": "f128f35a0939322167adb775c8334aea4a19467f3a35d858a7b643a99f496730",
+      "finding": "Correctly attributes IDSA and ACOG duration ranges and drug-specific exception; no false conflict or universal one-day regimen."
+    },
+    {
+      "id": "urinary-tract-infections-075",
+      "sha256": "7b250f511b62223e342fb2a08ed1acb0d8c1e1578dd01b287668188d891a1f90",
+      "finding": "Susceptibility is separated from patient safety and infected-site exposure; all options reviewed."
+    },
+    {
+      "id": "urinary-tract-infections-076",
+      "sha256": "de8ced1e2b8f605b95e4890df6861a0796f6cf9d843e4f3ff9398ad80ad8f341",
+      "finding": "Single-dose exception is limited to the specific regimen; urine color is not a stopping criterion."
+    },
+    {
+      "id": "urinary-tract-infections-077",
+      "sha256": "cc3634f2fff97f92df4e23cfb4aaceaae56af3e13474bb3333c265d6acac042f",
+      "finding": "Lower-tract treatment retains culture, safety, general duration and fosfomycin exception."
+    },
+    {
+      "id": "urinary-tract-infections-078",
+      "sha256": "e81df2ea07e31dc7eb0efa4f0bea87ea2404abac69b14478a7b8567cd5b60988",
+      "finding": "Empiric aminopenicillin exclusion is attributed to resistance rather than absolute pregnancy prohibition."
+    },
+    {
+      "id": "urinary-tract-infections-079",
+      "sha256": "ba92f52ae6935441a0091a411bc797a1d50b4b52203eec2ac4d5a33d6440ac58",
+      "finding": "Fever, flank pain and vomiting prompt upper-tract evaluation rather than continuation of bladder-only therapy."
+    },
+    {
+      "id": "urinary-tract-infections-080",
+      "sha256": "335984d5d8f3844ce6f77f829fc521790d798d3756c9a28168f8ac28d25c151e",
+      "finding": "Nonpregnant TMP-SMX duration is not automatically transferred to pregnancy; no new TMP-SMX pregnancy dose asserted."
+    },
+    {
+      "id": "urinary-tract-infections-081",
+      "sha256": "52028c59d969df819a558785b33c1d9fcec23edf9da73128972fcac3c867fa57",
+      "finding": "Ability to swallow does not negate ACOG initial inpatient/parenteral pregnancy pyelonephritis care."
+    },
+    {
+      "id": "urinary-tract-infections-082",
+      "sha256": "14716fdadf1e5bec07082c6c0185a1f39ae4f2b6d0516edb3905e45bcbac9277",
+      "finding": "Fourteen days is total course, not fourteen additional IV days; automatic cUTI short-course import rejected."
+    },
+    {
+      "id": "urinary-tract-infections-083",
+      "sha256": "63083f4efb828ca17e8b42fba86ee44774c645ad1be7d3c482df0db902e8c0d8",
+      "finding": "Reassessment covers systemic and obstetric complications rather than dysuria or urine appearance alone."
+    },
+    {
+      "id": "urinary-tract-infections-084",
+      "sha256": "e694470df55d473855e60aeabd65c6f9770f0f3d24704f92fb72b0966e26c559",
+      "finding": "39weeks is inside the label contraindication interval38\u201342weeks; susceptibility does not override fetal/neonatal safety."
+    },
+    {
+      "id": "urinary-tract-infections-125",
+      "sha256": "2e8b6fbd3ea3d6e29e9944143f23c060f007e2407c63a4edc9e204b8e33fbfa4",
+      "finding": "Single3g fosfomycin regimen is not repeated to satisfy a general multi-day rule; symptoms prompt reassessment."
+    },
+    {
+      "id": "urinary-tract-infections-126",
+      "sha256": "e29b799d7c79ecabbce84fcba8d878c1b18ad7a2e3b92015249d2a01a1c05b44",
+      "finding": "Urine susceptibility cannot overcome inadequate renal-tissue penetration; no blanket beta-lactam exclusion."
+    }
+  ],
+  "limitations": [
+    "ACOG2024 correction body remains inaccessible; no unverified table doses imported.",
+    "This does not verify all130 companion questions or the complete module."
+  ],
+  "validation": {
+    "structural": "130questions; no hard errors/source gaps/advisories",
+    "browser": {
+      "session": 19067,
+      "exitCode": 0,
+      "desktop": {
+        "attempts": 38,
+        "revisedItemsCovered": 14
+      },
+      "mobile": {
+        "attempts": 42,
+        "revisedItemsCovered": 14
+      },
+      "checks": "Stems, shuffled correct and incorrect answers, feedback/scoring, full rationale, review anchors and incomplete-submit behavior; no page errors or horizontal overflow"
+    }
+  }
+}

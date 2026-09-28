@@ -1,0 +1,216 @@
+{
+  "module": "envenomation-bites-stings",
+  "reviewDate": "2026-09-26",
+  "status": "verified",
+  "book": [
+    {
+      "chapter": 39,
+      "printedPages": [
+        558,
+        558
+      ],
+      "pdfPages": [
+        566,
+        566
+      ],
+      "inspection": "Private rendered page visually inspected, especially bites/spiders/first-aid paragraphs."
+    },
+    {
+      "chapter": 81,
+      "printedPages": [
+        988,
+        988
+      ],
+      "pdfPages": [
+        998,
+        998
+      ],
+      "inspection": "Private rendered table visually inspected. Adjacent mixed-overdose box is not yet fully reconciled. Page offset differs from earlier chapters."
+    }
+  ],
+  "baseline": {
+    "dedicatedModuleFound": false,
+    "existingScope": "Toxicology has one snakebite paragraph plus a generated snakebite concept and operational visual. Animal/human bite module covers rabies and wound prevention. Full toxicology module remains unverified."
+  },
+  "findings": [
+    {
+      "topic": "Hobo spiders",
+      "discrepancy": "Book lists as potentially deadly; current NIOSH omits hobo from its medically important examples. Verified-bite primary study includes only one hobo exposure and no necrosis. Avoid unsupported necrotic/deadly attribution and avoid claiming universal harmlessness.",
+      "status": "Reconciled in completed module; scope and supporting sources recorded above."
+    },
+    {
+      "topic": "Anavip scope",
+      "discrepancy": "Book restricts description to rattlesnakes; current label covers North American pit vipers.",
+      "status": "Reconciled in completed module; scope and supporting sources recorded above."
+    },
+    {
+      "topic": "Coral snake table ambiguity",
+      "discrepancy": "Book groups coral snakes with pit vipers while listing crotaline products; do not infer shared product coverage.",
+      "status": "Reconciled in completed module; scope and supporting sources recorded above."
+    },
+    {
+      "topic": "Cold applications",
+      "discrepancy": "Spider cold-compress instructions must not be transferred to pit viper first aid.",
+      "status": "existing toxicology clarification"
+    },
+    {
+      "topic": "Antivenom formulation",
+      "discrepancy": "Book describes Anascorp as immune Fab; reviewed label specifies equine F(ab)2.",
+      "status": "Reconciled in completed module; scope and supporting sources recorded above."
+    },
+    {
+      "topic": "Tetanus in bite table",
+      "discrepancy": "Book table gives10-year wording; bites require current wound-specific rules.",
+      "status": "already handled in animal-human-bites; verify cross-reference when integrating"
+    },
+    {
+      "topic": "Widow calcium recommendation",
+      "discrepancy": "Older antivenin insert recommends calcium; Utah Poison Control clinical guidance says evidence does not support routine calcium. Draft uses analgesia/anxiolysis and specialist antivenom escalation.",
+      "status": "Reconciled in completed module; scope and supporting sources recorded above."
+    },
+    {
+      "topic": "Coral antivenin species coverage",
+      "discrepancy": "Manufacturer label describes eastern/Texas neutralization but not Arizona/Sonoran venom. Shared coral-snake common name must not imply interchangeable coverage.",
+      "status": "Reconciled in completed module; scope and supporting sources recorded above."
+    }
+  ],
+  "sourcesRead": [
+    {
+      "url": "https://www.cdc.gov/niosh/outdoor-workers/about/venomous-spiders.html",
+      "scope": "Full clinical/prevention/first-aid page."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24726469/",
+      "scope": "Primary study abstract only;33verified bites,one hobo,no necrosis; full article not yet read."
+    },
+    {
+      "url": "https://doh.wa.gov/community-and-environment/pests/spiders",
+      "scope": "Search excerpt supports lack of hobo-necrosis evidence; full-page fetch403. Do not claim full read."
+    },
+    {
+      "url": "https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/poisonings-envenomations-and-toxic-exposures-during-travel.html",
+      "scope": "General, marine, scorpion, snake and spider sections read; no universal pressure-immobilization advice adopted."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a16596a5-e87e-40c2-8e34-cea5839849c3&type=display",
+      "scope": "Sections1-6 and opening8.1 read, including complete dose/preparation, observation, late dosing and hypersensitivity. Remaining populations, pharmacology, efficacy, storage and counseling pending. Dose/preparation/observation re-read for new lesson. Final-volume and minimum-observation examples checked. Storage and patient counseling now read."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=77abd784-3387-420d-abdc-4fe97215d233&type=display",
+      "scope": "Sections1-5.1 read, including indication, dose,18mL saline preparation,250mL final volume,4-hour use, infusion and recurrence; remaining safety/populations/efficacy/storage pending. Dose/preparation and full hypersensitivity section re-read for new lesson; slow-start infusion arithmetic not presented as exactly60min. Storage and patient counseling now read. Do not teach freezing as acceptable from ambiguous excursion wording."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=5cb65048-a30c-48e5-8bc8-897983d08068&type=display",
+      "scope": "Full clinical label read through counseling, including dose/preparation, acute and delayed reactions, populations, trial design and storage. Re-read this turn. Fifteen-person randomized component must not be conflated with total1534 across designs."
+    },
+    {
+      "url": "https://labeling.pfizer.com/showlabeling.aspx?format=PDF&id=441",
+      "scope": "Full clinical label text reviewed; manufacturer PDF pages2,3,5,6 rendered with PyMuPDF and visually inspected for preparation, contraindications, neutralization, nonrandomized evidence and storage. Public PDF retained only in temporary files."
+    },
+    {
+      "url": "https://poisoncontrol.utah.edu/news/2023/09/case-files-black-widow-spider-envenomation",
+      "scope": "Full clinician-authored case and management guidance read. Used analgesia/benzodiazepine, calcium, severe/refractory escalation and asthma/anaphylaxis precautions. Did not adopt categorical no-deaths or unverified current supply claims."
+    },
+    {
+      "url": "https://missouripoisoncenter.org/systemic-loxoscelism/",
+      "scope": "Search excerpt only; direct page403. Hemolysis and dapsone details not yet integrated pending fuller evidence."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3785411/",
+      "scope": "Search excerpt only; full page returned CAPTCHA. Do not claim full primary study review."
+    },
+    {
+      "url": "https://www.vumc.org/poison-control/sites/default/files/Cutaneous-hemolytic%20loxoscelism%20-%20new%20understandings-%20Goes%20with%208-3-220%20QOW.pdf",
+      "scope": "Primary retrospective cohort: abstract, results, hemolysis timing, management discussion, limitations and conclusions read as extracted text. Figures not yet visually inspected. Teaching limited to delayed/extravascular hemolysis and evidence limitations; no universal transfusion threshold adopted."
+    },
+    {
+      "url": "https://www.poison.org/articles/insect-and-spider-bites",
+      "scope": "Clinical signs, local care and escalation sections read. Did not adopt fixed1\u20132day recovery guarantee or universal technique prohibition for stinger removal."
+    },
+    {
+      "url": "https://www.poison.org/articles/coral-snake-bite-treatment-203",
+      "scope": "Clinical diagnosis,24h observation, symptomatic antivenom and first aid read. Supply statement and apparent Sonoran-geography typo not adopted."
+    },
+    {
+      "url": "https://www.cdc.gov/vaccines/hcp/imz-best-practices/preventing-managing-adverse-reactions.html",
+      "scope": "Anaphylaxis recognition and emergency treatment text and tables reviewed for general emergency principles; not used to infer vaccine-specific rules for bites."
+    },
+    {
+      "url": "https://www.cdc.gov/tetanus/hcp/clinical-guidance/index.html",
+      "scope": "Full clinical wound/vaccine/TIG guidance read; updatedSeptember8,2026. Added wound-specific prevention lesson."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=600e54ad-af13-462f-8a2d-2c3f7d91a8cd&type=display",
+      "scope": "Full clinical widow-antivenin label read. Included product preparation and negative-test limitations; explicitly did not adopt historical calcium or reaction-management protocol as current care."
+    }
+  ],
+  "implementation": {
+    "moduleFile": "src/data/modules/envenomationBitesStings.js",
+    "state": "Module225 complete locally:13 original lessons/checks/figures and26 original practice cases. Final source, content, arithmetic and browser review completed; commit/push pending.",
+    "relatedChange": "Two clarification paragraphs and source links in toxicologyAntidotes.js; preserve rest until full module audit.",
+    "newFiles": [
+      "src/data/questionBanks/envenomationBitesStings.js",
+      "src/components/learn/EnvenomationVisual.jsx",
+      "src/components/learn/EnvenomationVisual.module.css"
+    ]
+  },
+  "openWork": [],
+  "validation": {
+    "syntax": "Module and case bank passed node --check; alias-aware in-memory import used for draft structure verification. JSX/browser/build not yet checked.",
+    "clinicalCompletion": true,
+    "numericalDraftCheck": "Checked3\u00d75=15mL reconstitution with final50mL for Anascorp;4\u00d718=72mL reconstitution with final250mL for CroFab;14:00+18h=08:00 next day for Anavip minimum observation. Final infusion volume must not be treated as additional diluent.",
+    "draftAssessment": "22 unique IDs, valid lesson anchors and answer indexes;12 lessons with applications/key points. Vial-total answers independently calculated:16,24,5. Monday21:30 plus18h givesTuesday15:30. No completed clinical validation claim.",
+    "targetedContentAudit": "npm run audit:pharmacy -- --module envenomation-bites-stings passed:26cases,zero hardErrors,zero sourceGaps. Thin-coverage advisories require clinical judgment, not quota filling.",
+    "build": "Final integrated13-lesson/26-case/13-figure npm run build passed. Build log:/private/tmp/nas-envenomation-build-final.log.",
+    "browserProgress": "Final production build served on127.0.0.1:3144. Desktop1280px: all13figures present, document width1280, preparation and phase figures visually inspected, gold active left navigation and section destinations observed. Mobile390px: document width390, zero figure/descendant horizontal overflow across13figures; preparation and scorpion figures visually inspected. Intentional322mL CroFab error produced correct250mL-final explanation. Randomized10-question practice completed with10correct feedback items and0review items. Temporary viewport reset.",
+    "clinicalReview": "Reviewed every authored lesson, embedded answer/rationale, figure claim and26case answer/rationale against the cited source scopes. Product specificity, prep diluents, final volumes, dose phases, monitoring intervals, tetanus criteria and allergic-emergency priority agree across the new module. Toxicology snakebite concept and operational visual carry no conflicting dose values; its two added clarification paragraphs reviewed. This is an AI-assisted content audit, not independent pharmacist certification.",
+    "numericalReview": {
+      "embedded": [
+        "3 x5mL=15mL reconstitution; Anascorp final50mL",
+        "4 x18mL=72mL reconstitution; CroFab final250mL",
+        "14:00+18h=08:00 next day"
+      ],
+      "cases": [
+        "6+4+(3x2)=16vials",
+        "6x18mL=108mL reconstitution, final250mL",
+        "10+10+4=24vials",
+        "Monday21:30+18h=Tuesday15:30",
+        "3+1+1=5vials"
+      ],
+      "interpretation": "Inventory examples do not establish universal courses. Slow-start infusion instructions are not forced into a mathematically exact60minute schedule."
+    },
+    "coverageJudgment": "Thirteen distinct clinical topics have both an embedded check and at least one bank question; additional questions target preparation, product selection and treatment phases. No fixed lesson or bank quota used."
+  },
+  "reviewByTopic": [
+    {
+      "topic": "Exposure and first aid",
+      "evidence": "CDC Yellow Book,NIOSH and Poison Control; regional coverage and exposure-specific first aid preserved."
+    },
+    {
+      "topic": "CroFab/Anavip",
+      "evidence": "Current full prescribing information relevant sections; no vial equivalence, no automaticAnavip maintenance, recurrence and hypersensitivity distinctions."
+    },
+    {
+      "topic": "Coral snake",
+      "evidence": "Manufacturer label plus Poison Control observation guidance; no prophylactic antivenin, no Arizona/Sonoran coverage, no unverified stock claim."
+    },
+    {
+      "topic": "Widow/recluse/hobo",
+      "evidence": "NIOSH, clinician-authored Utah guidance, widow label, verified-bite abstract and Vanderbilt primary cohort. Older calcium/emergency protocol not adopted; negative tests and urine screens not falsely reassuring."
+    },
+    {
+      "topic": "Scorpion",
+      "evidence": "Anascorp label;F(ab\u2032)2 correction, systemic threshold, product-specific preparation and follow-up."
+    },
+    {
+      "topic": "Local sting/anaphylaxis/tetanus",
+      "evidence": "Poison Control and CDC; local care separated from emergency treatment; dirty-wound5year andTIG criteria agree with animal-human-bites."
+    }
+  ],
+  "limitations": [
+    "Actual hospital stock and lot usability require point-of-care verification; module makes no current-stock claim.",
+    "Primary recluse cohort is retrospective and referral-selected; no universal event-rate or transfusion threshold taught. Its unused protocol figures are not used as an endorsed current order set.",
+    "Book chapter81 mixed-overdose content and the full existing toxicology module remain separately unverified.",
+    "Global curriculum audit still has pre-existing failures outside this module. Targeted module audit and production build passed."
+  ]
+}

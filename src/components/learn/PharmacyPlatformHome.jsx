@@ -11,7 +11,7 @@ const platformAreas = [
   },
   {
     label: "Explore",
-    title: "Visual Atlas",
+    title: "Human Atlas",
     description: "Inspect anatomy and connect structure to mechanism, treatment, and safety through interactive models.",
     href: "/learn/pharmacy/atlas",
     action: "Open the atlas",

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import {
   IconActivity,
@@ -12,6 +12,10 @@ import {
 } from "@tabler/icons-react";
 import { explorerModes, explorerSources, explorerSystems } from "@/data/pharmacyExplorer";
 import PharmacyModeWorkspace from "./PharmacyModeWorkspace";
+import DrugEffectsAtlas from "./DrugEffectsAtlas";
+
+const teachingMode = { id: "drug-effects", label: "Drug effects", description: "Follow a medicine from receptor action to tissue response, benefit, adverse effects, and clinical context." };
+const allModes = [teachingMode, ...explorerModes];
 
 const HeartModelViewer = dynamic(() => import("./HeartModelViewer"), {
   ssr: false,
@@ -43,11 +47,15 @@ const icons = {
 };
 
 export default function PharmacyExplorer() {
-  const [activeMode, setActiveMode] = useState("anatomy");
+  const [activeMode, setActiveMode] = useState("drug-effects");
   const [activeSystem, setActiveSystem] = useState("cardiovascular");
   const [atlasLevel, setAtlasLevel] = useState("body");
   const [bodyFocus, setBodyFocus] = useState(null);
-  const mode = explorerModes.find((item) => item.id === activeMode);
+  useEffect(() => {
+    const requested = new URLSearchParams(window.location.search).get('mode');
+    if (allModes.some(item=>item.id===requested)) setActiveMode(requested);
+  }, []);
+  const mode = allModes.find((item) => item.id === activeMode);
   const system = explorerSystems.find((item) => item.id === activeSystem);
   const content = system.modes[activeMode];
 
@@ -56,15 +64,15 @@ export default function PharmacyExplorer() {
       <header className="pharmacy-explorer__heading">
         <div>
           <p className="nas-section-label">Interactive pharmacy</p>
-          <h2 id="pharmacy-explorer-title">Explore medicine from every angle.</h2>
+          <h2 id="pharmacy-explorer-title">{activeMode==='anatomy'?'Explore the body. Understand its function.':'See what a medicine changes.'}</h2>
         </div>
         <p>
-          Move between anatomy, mechanism, clinical reasoning, safety, and interactions. Each lens has a workspace designed for the question being asked.
+          Follow a drug through the body. Explore the mechanism, connect effects to anatomy, and test the reasoning behind them.
         </p>
       </header>
 
       <div className="pharmacy-explorer__modes" role="tablist" aria-label="Explorer modes">
-        {explorerModes.map((item) => (
+        {allModes.map((item) => (
           <button
             type="button"
             role="tab"
@@ -72,11 +80,12 @@ export default function PharmacyExplorer() {
             className={activeMode === item.id ? "is-active" : ""}
             onClick={() => {
               setActiveMode(item.id);
+              const url = new URL(window.location.href); url.searchParams.set('mode',item.id); window.history.replaceState(null,'',url);
               if (item.id !== "anatomy") setAtlasLevel("body");
             }}
             key={item.id}
           >
-            <span>{String(explorerModes.indexOf(item) + 1).padStart(2, "0")}</span>
+            <span>{String(allModes.indexOf(item) + 1).padStart(2, "0")}</span>
             {item.label}
           </button>
         ))}
@@ -87,7 +96,7 @@ export default function PharmacyExplorer() {
         <p>{mode.description}</p>
       </div>
 
-      {activeMode !== "anatomy" ? (
+      {activeMode === "drug-effects" ? <DrugEffectsAtlas /> : activeMode !== "anatomy" ? (
         <PharmacyModeWorkspace
           mode={mode}
           systems={explorerSystems}
@@ -99,6 +108,10 @@ export default function PharmacyExplorer() {
       ) : atlasLevel === "body" ? (
         <FullBodyAtlas
           initialFocus={bodyFocus}
+          onExploreSystem={(layer) => {
+            setActiveSystem(layer);
+            setActiveMode("pharmacology");
+          }}
           onOpenHeart={() => {
             setActiveSystem("cardiovascular");
             setAtlasLevel("heart");

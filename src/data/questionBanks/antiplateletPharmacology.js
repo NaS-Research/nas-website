@@ -32,4 +32,8 @@ const concepts = [
 
 const dimensions = [["principle", "Which principle best characterizes"], ["action", "Which clinical action best applies to"], ["assessment", "Which assessment is most appropriate for"], ["hazard", "Which reasoning hazard is most important to prevent with"]];
 function distractors(index, field) { return [5, 11, 17].map((offset) => concepts[(index + offset) % concepts.length][field]); }
-export const antiplateletPharmacologyQuestionBank = concepts.flatMap((concept, conceptIndex) => dimensions.map(([field, prefix], dimensionIndex) => ({ id: `antiplatelet-pharmacology-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${prefix} ${concept.name}?`, choices: [concept[field], ...distractors(conceptIndex, field)], answer: 0, rationale: concept.why, reviewHref: `#${concept.lesson}` })));
+const generatedQuestions = concepts.flatMap((concept, conceptIndex) => dimensions.map(([field, prefix], dimensionIndex) => ({ id: `antiplatelet-pharmacology-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${prefix} ${concept.name}?`, choices: [concept[field], ...distractors(conceptIndex, field)], answer: 0, rationale: concept.why, reviewHref: `#${concept.lesson}` })));
+
+export const antiplateletPharmacologyQuestionBank = [...generatedQuestions,
+  {"id": "antiplatelet-pharmacology-117", "question": "Ticagrelor is added to rosuvastatin 40 mg daily. Which medication review is needed?", "choices": ["Continue automatically because rosuvastatin is not primarily a CYP3A substrate", "Stop all lipid treatment permanently", "Revise the rosuvastatin dose or lipid regimen because ticagrelor increases its exposure", "Double rosuvastatin to compensate"], "answer": 2, "rationale": "Transporter interactions also matter. The current label advises avoiding rosuvastatin above 20 mg/day with ticagrelor.", "reviewHref": "#response-variability-and-interactions"}
+];

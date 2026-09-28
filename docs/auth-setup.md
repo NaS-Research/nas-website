@@ -38,10 +38,10 @@ Requires Apple's developer configuration: App ID with Sign in with Apple, Servic
 3. Test email signup, confirmation, login, recovery, Google and Apple callbacks, session refresh, signout, and expired/reused links with real test accounts.
 4. Validate abuse controls, email deliverability, provider downtime, and per-client rate limiting.
 5. Update public privacy terms to explain account email, provider identity, essential session cookies, Supabase, deletion requests, and actual retention. Current privacy text says no accounts; do not enable while it remains inaccurate.
-6. Provide a verified account deletion process before launch. No user workspace data tables exist yet; implement authorization/RLS before any personal saved data.
+6. Provide a verified account deletion process before launch. The member_items migration defines private workspace storage with RLS; apply it before activation.
 7. Enable flags, rebuild, and verify production. Public research remains accessible without an account.
 
-Current account page is an authenticated landing page. Learning progress remains local to the browser; there is no cloud sync or personal project storage yet.
+The account page now provides Continue, Saved, History, and Notes. Cloud persistence is implemented but is not active until the project is configured and the workspace migration is applied. No real account synchronization has been verified yet.
 
 ## Implementation checks
 

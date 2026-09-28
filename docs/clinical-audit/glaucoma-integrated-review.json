@@ -1,0 +1,48 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_integrated_review",
+  "scope": "Read current lesson bodies, key points and seven embedded checks across seven lessons; checked first20 fully materialized bank questions with choices/keys/rationales. Reference-list output was truncated and is not considered reviewed. No source-label revalidation implied beyond prior targeted records.",
+  "findings": [
+    {
+      "surface": "Technique concepts",
+      "correction": "Replaced One-drop delivery with Prescribed drop dose to align with product-specific one/two-drop regimens."
+    },
+    {
+      "surface": "Question009 generated rationale",
+      "correction": "Removed claim that physical drainage pathway must be visible and functional; explanation now distinguishes gonioscopic anatomy from functional clinical assessment."
+    },
+    {
+      "surface": "Question010",
+      "correction": "Linked netarsudil mechanism question to conventional-outflow lesson containing its explanation."
+    }
+  ],
+  "validation": {
+    "import": "139 unique question IDs; all question and embedded-check answer indices and review anchors valid. This is structural evidence only.",
+    "remainingUI": "Three small text/link edits await integrated rendered review.",
+    "finalAssessmentEdits": "Four corrected items009/010/022/023 encountered after63 desktop attempts and17 mobile attempts. Shuffled answer mapping, alternating correct/incorrect scoring, explanations and review links passed. No page errors or horizontal overflow. Other encountered items tested for UI only.",
+    "productionBuild": {
+      "checkout": "/private/tmp/nas-allergy-validation",
+      "command": "next build --webpack",
+      "result": "exit0; compiled, TypeScript,558 static pages and build traces passed",
+      "log": "/private/tmp/glaucoma-final-build.log",
+      "scope": "Isolated validation checkout, not deployment; exact audit-branch release delta still needs verification before commit."
+    }
+  },
+  "reviewedBankRange": "All139 materialized questions:001–112 and27 named appended cases. Reviewed every stem, choice, keyed answer, rationale and review destination across two passes.",
+  "remaining": [
+    "Confirm isolated checkout matches intended audit-branch delta",
+    "Final integrated figure/layout inspection and completion record"
+  ],
+  "hashes": {
+    "src/data/modules/glaucomaPharmacotherapy.js": "e60b71225fc8f289adb53ec1f716e44085d5b1ddcc4464590fd1cdfe20ef22c3",
+    "src/data/questionBanks/glaucomaPharmacotherapy.js": "abdfa6bb47952060ad6558c14efdc0368986acf29bc2623ac8bf454e065c856c"
+  },
+  "assessmentFollowup": {
+    "date": "2026-09-26",
+    "finding": "Questions022/023 generated rationale could imply all cupping is neural injury. Qualified glaucomatous versus physiological cupping.",
+    "consistency": "Remaining materialized items consistent with current lessons and prior product-specific source records. No new prescribing schedules or numerical claims added.",
+    "snapshotVerification": "Imported current bank and compared against read snapshot. Only009,010,022,023 differ, matching documented corrections; exported fresh139-question snapshot.",
+    "referenceCleanup": "Removed two superseded generic timolol/brimonidine labels and two redundant EyeWiki procedure/angle-closure links. Retained reviewed product-specific labels, EGS and Iowa primary institutional teaching. Reference inventory now48."
+  },
+  "completionFollowup": "glaucoma-completion-review.json closes the remaining release-delta and final-layout checks."
+}

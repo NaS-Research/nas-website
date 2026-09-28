@@ -1,0 +1,29 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_review",
+  "scope": "Read actual generated questions 001\u2013024 including all choices, keys and explanations. Questions 013\u2013016 had overlapping clinically appropriate answers; replaced with individually written cases. Remaining 001\u2013012 and 017\u2013024 require source reconciliation and possible rewrite, not verified by this read. Follow-up: questions 017\u2013024 now reviewed in glaucoma-target-disc-review.json.",
+  "source": {
+    "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a98595b3-9f47-48e0-b18d-550a2095f264",
+    "sections": [
+      "2",
+      "5.1",
+      "5.4",
+      "12.1"
+    ],
+    "revision": "May 2023"
+  },
+  "reviewedQuestionIds": [
+    "glaucoma-pharmacotherapy-013",
+    "glaucoma-pharmacotherapy-014",
+    "glaucoma-pharmacotherapy-015",
+    "glaucoma-pharmacotherapy-016"
+  ],
+  "validation": {
+    "assessment": "All four replaced cases encountered and checked on desktop 1440x1000 (13 attempts) and mobile 390x844 (30 attempts). Verified rendered stem/choice mapping, scoring, explanation and review-link destination. No browser errors or horizontal overflow. Other sampled questions checked only for UI.",
+    "syntax": "node --check passed",
+    "questionCount": 138
+  },
+  "remaining": "All unreviewed question ranges, module figures, guideline and remaining label scope remain open.",
+  "bankSha256": "2c5d54e073ce79b37e5c2d81eb2d22ef928e53a2c4c5397238202aa23b6272db",
+  "guidelineFollowup": "Official EGS sixth-edition PDF retrieved successfully with curl; selected-page review documented in glaucoma-target-disc-review.json."
+}

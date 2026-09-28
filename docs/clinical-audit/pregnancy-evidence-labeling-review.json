@@ -1,0 +1,53 @@
+{
+  "reviewDate": "2026-09-25",
+  "scope": "Evidence-labeling lesson and three assessment content reviews; not full-module verification",
+  "sources": [
+    "https://www.fda.gov/drugs/labeling-information-drug-products/questions-and-answers-pregnancy-and-lactation-labeling-rule",
+    "https://www.fda.gov/drugs/labeling-information-drug-products/pregnancy-and-lactation-labeling-resources"
+  ],
+  "lesson": {
+    "slug": "evidence-labeling",
+    "sha256": "f79a7a9a12ed751dadcf0f802e58f8701f190702e3f3f9e7881ab202e4179c80",
+    "status": "reviewed-corrected",
+    "correction": "Added older-label format distinction and specified section8.3 content. Preserved accurate risk arithmetic and evidence limitations."
+  },
+  "questions": [
+    {
+      "id": "pregnancy-lactation-case-10",
+      "sha256": "f755e03ec100af47e0afd8d7f71f2e155314aa2b80f3619f0e653a3823ed02c4",
+      "status": "reviewed-accurate",
+      "review": "Reviewed all four options and rationale. Key1 requires current labeling and evidence. Historical categoryB is not proof of safety or a valid sole ranking; OTC products are outside PLLR."
+    },
+    {
+      "id": "pregnancy-lactation-case-11",
+      "sha256": "bf756eb8155855fce438b7c6432ec5911152ac7790aa4e70429519f947270c7b",
+      "status": "reviewed-accurate",
+      "review": "Reviewed all four options and rationale. Key2 preserves uncertainty in a small zero-event observational sample. No event does not prove no risk; registry is not randomized."
+    },
+    {
+      "id": "pregnancy-lactation-case-12",
+      "sha256": "53d91ccb007fecaba46eebd0b27395bdf04f140b80837cc27ec251f196c17733",
+      "status": "reviewed-accurate",
+      "review": "Reviewed all four options and rationale. Key3 is correct: 2*(1/1000)=2/1000=.2%; excess1/1000=.1 percentage point. Other choices confuse percent, percentage points, or omit the baseline. Fictional estimates are clearly marked."
+    }
+  ],
+  "numericalVerification": {
+    "baseline": "1/1000 = 0.1%",
+    "exposed": "2/1000 = 0.2%",
+    "absoluteIncrease": "1/1000 = 0.1 percentage point",
+    "nature": "Fictional teaching values, not a clinical drug-risk estimate"
+  },
+  "browser": {
+    "session": 86935,
+    "status": "passed",
+    "viewports": [
+      "1440x1000",
+      "390x844"
+    ],
+    "scope": "Five lesson paragraphs, embedded answer/score/full rationale,126 unique review anchors; no page errors or overflow. Does not prove randomized assessment UI."
+  },
+  "limitations": [
+    "Full module review remains open.",
+    "Hashes identify versions rather than prove correctness."
+  ]
+}

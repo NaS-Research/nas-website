@@ -1,0 +1,151 @@
+{
+  "module": "chronic-obstructive-pulmonary-disease",
+  "reviewDate": "2026-09-25",
+  "scope": "Eight replaced bronchodilator/roflumilast cases. 110/126 cases individually reviewed; 16 original cases remain unclosed. Full module review remains open.",
+  "sources": [
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=01e15aee-40e0-23f3-537f-c96dd63e2cb1",
+      "sections": "5.3, warnings, 7.6, 12.1 directly read; label revised January 2025."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=dc2a689f-cfa4-4863-9623-a9813dcf86a9",
+      "sections": "1, 2, 4, 5.1-5.4 directly read; label revised February 2023."
+    },
+    {
+      "source": "Private intended RxPrep 2023 edition",
+      "pages": "Printed593/PDF601 roflumilast actual text read; printed591/PDF599 escalation context read."
+    }
+  ],
+  "questions": [
+    {
+      "id": "copd-057",
+      "status": "corrected-clinically-reviewed",
+      "sha256": "400c4db9d94748c9e27536fc662196312ee10dbd690562eb8ce32c64d1846ddc",
+      "reviewedElements": [
+        "stem",
+        "every choice",
+        "answer",
+        "rationale",
+        "lesson target"
+      ],
+      "finding": "Complementary M3 antagonism and beta2/cAMP pathway; every alternative checked."
+    },
+    {
+      "id": "copd-058",
+      "status": "corrected-clinically-reviewed",
+      "sha256": "4de8e63d146e74da837376e03e424464916fc9baf872fe49d63fc28e0fa70886",
+      "reviewedElements": [
+        "stem",
+        "every choice",
+        "answer",
+        "rationale",
+        "lesson target"
+      ],
+      "finding": "Duplicate tiotropium despite different products; ingredient reconciliation."
+    },
+    {
+      "id": "copd-059",
+      "status": "corrected-clinically-reviewed",
+      "sha256": "70286a09ee29cac8a2b44244ec21bad7922f905bc14fb600d6ec3aac56060316",
+      "reviewedElements": [
+        "stem",
+        "every choice",
+        "answer",
+        "rationale",
+        "lesson target"
+      ],
+      "finding": "Painful voiding requires urinary-retention assessment, not dose escalation."
+    },
+    {
+      "id": "copd-060",
+      "status": "corrected-clinically-reviewed",
+      "sha256": "e7387dcb6ee084d71879e9f02987823c365b46fa90532c531427d7e6a778f453",
+      "reviewedElements": [
+        "stem",
+        "every choice",
+        "answer",
+        "rationale",
+        "lesson target"
+      ],
+      "finding": "Salmeterol duplicates olodaterol LABA; no brand-based exception."
+    },
+    {
+      "id": "copd-069",
+      "status": "corrected-clinically-reviewed",
+      "sha256": "daec38130da5dbe3ac04c7736044eb9f94f70834352ed5eab1674cea86c6b4c5",
+      "reviewedElements": [
+        "stem",
+        "every choice",
+        "answer",
+        "rationale",
+        "lesson target"
+      ],
+      "finding": "Label severe COPD/chronic bronchitis/prior exacerbations; not limited to very severe disease."
+    },
+    {
+      "id": "copd-070",
+      "status": "corrected-clinically-reviewed",
+      "sha256": "bd72539ed8fdedc398bed93b8c6428f0720fd01324ce6d9717f782ddde20018d",
+      "reviewedElements": [
+        "stem",
+        "every choice",
+        "answer",
+        "rationale",
+        "lesson target"
+      ],
+      "finding": "Significant weight loss requires evaluation and possible discontinuation."
+    },
+    {
+      "id": "copd-071",
+      "status": "corrected-clinically-reviewed",
+      "sha256": "28b5b09461aae15752b78529925fc0cff783ac7861e107bd90191c4995cb3324",
+      "reviewedElements": [
+        "stem",
+        "every choice",
+        "answer",
+        "rationale",
+        "lesson target"
+      ],
+      "finding": "New mood/sleep symptoms require prompt assessment; suicidality warning preserved."
+    },
+    {
+      "id": "copd-072",
+      "status": "corrected-clinically-reviewed",
+      "sha256": "3b1f4d89cf8965022280d5fea9b0df38e81f48836de4eb61737c36fa2dc990bb",
+      "reviewedElements": [
+        "stem",
+        "every choice",
+        "answer",
+        "rationale",
+        "lesson target"
+      ],
+      "finding": "Rifampin induction lowers exposure; do not invert interaction direction."
+    }
+  ],
+  "validation": {
+    "structural": "126 questions; no hardErrors/sourceGaps/sizeAdvisories/thinLessons",
+    "browser": {
+      "session": 79112,
+      "exitCode": 0,
+      "desktop": {
+        "viewport": "1440x1000",
+        "randomizedAttempts": 27,
+        "casesCovered": 8
+      },
+      "mobile": {
+        "viewport": "390x844",
+        "randomizedAttempts": 38,
+        "casesCovered": 8
+      },
+      "checks": [
+        "rendered stems and choices",
+        "mixed correct/incorrect scoring",
+        "correct answer mapping",
+        "full rationale text",
+        "unique lesson targets",
+        "no page errors",
+        "no horizontal overflow"
+      ]
+    }
+  }
+}

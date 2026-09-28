@@ -1,0 +1,538 @@
+{
+  "reviewDate": "2026-09-25",
+  "status": "scoped-consolidated-review",
+  "scope": "Actual medication lessons 5-10 read in full, including embedded checks. Arithmetic independently recalculated; this does not independently establish the clinical indication or permitted dose. Source reviews are documented in allergic-rhinitis.md.",
+  "lessonsRead": [
+    {
+      "slug": "otc-nasal-steroid-products",
+      "sha256": "1357210021d5ebbc7a2dc3ccd6642f0aa72ca0f3048c5820672e91f275eb4398"
+    },
+    {
+      "slug": "prescription-nasal-steroid-devices",
+      "sha256": "903a6a057daa8c5b75ae227e2ceecfe807f570f4507e243e32978f0f01a30951"
+    },
+    {
+      "slug": "nasal-antihistamines-and-combinations",
+      "sha256": "46263ddf7f834d601244924bb4bcb17b7771fc83f7345f79b854606da3e7267c"
+    },
+    {
+      "slug": "oral-antihistamine-products-and-safety",
+      "sha256": "b52a090289514c4588e25e1a4baa3bff0aaf5b6bba28fcd2094993db1bbb98c2"
+    },
+    {
+      "slug": "pediatric-antihistamine-formulations",
+      "sha256": "dccf872c8921dbf240c04fe3e0ad1cf416f67b62ee6deda3d1fcffbf8ad80de6"
+    },
+    {
+      "slug": "first-generation-antihistamine-formulations",
+      "sha256": "7d54d1a3aede5929644ac3f0890edfcdc6eed1bbfa8e9e59b66218640d0b1603"
+    }
+  ],
+  "arithmetic": [
+    {
+      "context": "budesonide adult",
+      "factors": [
+        32,
+        2,
+        2,
+        1
+      ],
+      "result": "128",
+      "unit": "mcg/day"
+    },
+    {
+      "context": "budesonide child initial",
+      "factors": [
+        32,
+        1,
+        2,
+        1
+      ],
+      "result": "64",
+      "unit": "mcg/day"
+    },
+    {
+      "context": "fluticasone propionate adult initial",
+      "factors": [
+        50,
+        2,
+        2
+      ],
+      "result": "200",
+      "unit": "mcg/day"
+    },
+    {
+      "context": "fluticasone furoate adult initial",
+      "factors": [
+        27.5,
+        2,
+        2
+      ],
+      "result": "110.0",
+      "unit": "mcg/day"
+    },
+    {
+      "context": "mometasone OTC adult",
+      "factors": [
+        50,
+        2,
+        2
+      ],
+      "result": "200",
+      "unit": "mcg/day"
+    },
+    {
+      "context": "mometasone OTC child",
+      "factors": [
+        50,
+        1,
+        2
+      ],
+      "result": "100",
+      "unit": "mcg/day"
+    },
+    {
+      "context": "Omnaris",
+      "factors": [
+        50,
+        2,
+        2
+      ],
+      "result": "200",
+      "unit": "mcg/day"
+    },
+    {
+      "context": "Zetonna",
+      "factors": [
+        37,
+        1,
+        2
+      ],
+      "result": "74",
+      "unit": "mcg/day"
+    },
+    {
+      "context": "Qnasl child",
+      "factors": [
+        40,
+        1,
+        2
+      ],
+      "result": "80",
+      "unit": "mcg/day"
+    },
+    {
+      "context": "Qnasl adult",
+      "factors": [
+        80,
+        2,
+        2
+      ],
+      "result": "320",
+      "unit": "mcg/day"
+    },
+    {
+      "context": "Beconase lower",
+      "factors": [
+        42,
+        1,
+        2,
+        2
+      ],
+      "result": "168",
+      "unit": "mcg/day"
+    },
+    {
+      "context": "Beconase upper",
+      "factors": [
+        42,
+        2,
+        2,
+        2
+      ],
+      "result": "336",
+      "unit": "mcg/day"
+    },
+    {
+      "context": "Xhance lower",
+      "factors": [
+        93,
+        1,
+        2,
+        2
+      ],
+      "result": "372",
+      "unit": "mcg/day"
+    },
+    {
+      "context": "Xhance upper",
+      "factors": [
+        93,
+        2,
+        2,
+        2
+      ],
+      "result": "744",
+      "unit": "mcg/day"
+    },
+    {
+      "context": "flunisolide adult initial",
+      "factors": [
+        25,
+        2,
+        2,
+        2
+      ],
+      "result": "200",
+      "unit": "mcg/day"
+    },
+    {
+      "context": "flunisolide adult increased",
+      "factors": [
+        25,
+        2,
+        2,
+        3
+      ],
+      "result": "300",
+      "unit": "mcg/day"
+    },
+    {
+      "context": "flunisolide pediatric TID",
+      "factors": [
+        25,
+        1,
+        2,
+        3
+      ],
+      "result": "150",
+      "unit": "mcg/day"
+    },
+    {
+      "context": "Ryaltris child mometasone",
+      "factors": [
+        25,
+        1,
+        2,
+        2
+      ],
+      "result": "100",
+      "unit": "mcg/day"
+    },
+    {
+      "context": "Ryaltris adult mometasone",
+      "factors": [
+        25,
+        2,
+        2,
+        2
+      ],
+      "result": "200",
+      "unit": "mcg/day"
+    },
+    {
+      "context": "Allegra-D12 fexofenadine",
+      "factors": [
+        60,
+        2
+      ],
+      "result": "120",
+      "unit": "mg/day"
+    },
+    {
+      "context": "Allegra-D12 pseudoephedrine HCl",
+      "factors": [
+        120,
+        2
+      ],
+      "result": "240",
+      "unit": "mg/day"
+    },
+    {
+      "context": "Claritin-D12 loratadine",
+      "factors": [
+        5,
+        2
+      ],
+      "result": "10",
+      "unit": "mg/day"
+    },
+    {
+      "context": "Claritin-D12 pseudoephedrine sulfate",
+      "factors": [
+        120,
+        2
+      ],
+      "result": "240",
+      "unit": "mg/day"
+    },
+    {
+      "context": "Clarinex-D12 desloratadine",
+      "factors": [
+        2.5,
+        2
+      ],
+      "result": "5.0",
+      "unit": "mg/day"
+    },
+    {
+      "context": "Clarinex-D12 pseudoephedrine sulfate",
+      "factors": [
+        120,
+        2
+      ],
+      "result": "240",
+      "unit": "mg/day"
+    },
+    {
+      "context": "loratadine chewable phenylalanine",
+      "factors": [
+        1.9,
+        2
+      ],
+      "result": "3.8",
+      "unit": "mg per two tablets"
+    },
+    {
+      "context": "desloratadine infant solution",
+      "factors": [
+        0.5,
+        2
+      ],
+      "result": "1.0",
+      "unit": "mg/dose"
+    },
+    {
+      "context": "desloratadine young-child solution",
+      "factors": [
+        0.5,
+        2.5
+      ],
+      "result": "1.25",
+      "unit": "mg/dose"
+    },
+    {
+      "context": "desloratadine school-child solution",
+      "factors": [
+        0.5,
+        5
+      ],
+      "result": "2.5",
+      "unit": "mg/dose"
+    },
+    {
+      "context": "desloratadine adult solution",
+      "factors": [
+        0.5,
+        10
+      ],
+      "result": "5.0",
+      "unit": "mg/dose"
+    },
+    {
+      "context": "fexofenadine child suspension",
+      "factors": [
+        6,
+        5,
+        2
+      ],
+      "result": "60",
+      "unit": "mg/day"
+    },
+    {
+      "context": "fexofenadine adult suspension",
+      "factors": [
+        6,
+        10,
+        2
+      ],
+      "result": "120",
+      "unit": "mg/day"
+    },
+    {
+      "context": "diphenhydramine adult label ceiling",
+      "factors": [
+        50,
+        6
+      ],
+      "result": "300",
+      "unit": "mg/day"
+    },
+    {
+      "context": "diphenhydramine child label ceiling",
+      "factors": [
+        25,
+        6
+      ],
+      "result": "150",
+      "unit": "mg/day"
+    },
+    {
+      "context": "chlorpheniramine IR adult ceiling",
+      "factors": [
+        4,
+        6
+      ],
+      "result": "24",
+      "unit": "mg/day"
+    },
+    {
+      "context": "chlorpheniramine IR child ceiling",
+      "factors": [
+        2,
+        6
+      ],
+      "result": "12",
+      "unit": "mg/day"
+    },
+    {
+      "context": "chlorpheniramine ER ceiling",
+      "factors": [
+        12,
+        2
+      ],
+      "result": "24",
+      "unit": "mg/day"
+    },
+    {
+      "context": "Karbinal ER low adult volume",
+      "factors": [
+        0.8,
+        7.5
+      ],
+      "result": "6.00",
+      "unit": "mg/dose"
+    },
+    {
+      "context": "Karbinal ER high adult volume",
+      "factors": [
+        0.8,
+        20
+      ],
+      "result": "16.0",
+      "unit": "mg/dose"
+    },
+    {
+      "context": "Karbinal ER pediatric low volume",
+      "factors": [
+        0.8,
+        3.75
+      ],
+      "result": "3.000",
+      "unit": "mg/dose"
+    },
+    {
+      "context": "Karbinal ER pediatric 5mL",
+      "factors": [
+        0.8,
+        5
+      ],
+      "result": "4.0",
+      "unit": "mg/dose"
+    },
+    {
+      "context": "Karbinal ER pediatric 10mL",
+      "factors": [
+        0.8,
+        10
+      ],
+      "result": "8.0",
+      "unit": "mg/dose"
+    },
+    {
+      "context": "Karbinal ER pediatric 15mL",
+      "factors": [
+        0.8,
+        15
+      ],
+      "result": "12.0",
+      "unit": "mg/dose"
+    },
+    {
+      "context": "clemastine historical OTC ceiling fumarate",
+      "factors": [
+        1.34,
+        2
+      ],
+      "result": "2.68",
+      "unit": "mg/day"
+    },
+    {
+      "context": "clemastine Rx ceiling fumarate",
+      "factors": [
+        2.68,
+        3
+      ],
+      "result": "8.04",
+      "unit": "mg/day"
+    }
+  ],
+  "assessmentRecordReconciliation": {
+    "currentQuestions": 152,
+    "matchedScopedReviewRecords": 152,
+    "missing": [],
+    "mismatched": [],
+    "limitation": "Hash agreement confirms unchanged previously reviewed records, not fresh clinical verification."
+  },
+  "sourceRecheck": {
+    "url": "https://www.dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=4b8d8e84-b5d2-4e56-97ec-4f72971465c5&type=display",
+    "sections": "2 and 2.1",
+    "finding": "Qnasl current reviewed label requires no priming; age-specific doses 80 and 320 mcg/day retained."
+  },
+  "sourceLimitationsRetained": [
+    "Karbinal ER pediatric mg/kg/day heading does not consistently reproduce its age ranges; no replacement formula invented.",
+    "Flunisolide age14 and Beconase age12 overlapping directions require clarification.",
+    "Carbinoxamine IR food instructions conflict internally.",
+    "Historical clemastine1.34mg and BeconaseAQ labels do not establish current availability."
+  ],
+  "addendum": {
+    "date": "2026-09-25",
+    "changes": "Added FDA diphenhydramine poisoning counseling, Zyrtec-D current-label comparison, and pediatric/first-generation original diagrams. Prior snapshots retained as the earlier review state.",
+    "currentLessonSnapshots": [
+      {
+        "slug": "otc-nasal-steroid-products",
+        "sha256": "1357210021d5ebbc7a2dc3ccd6642f0aa72ca0f3048c5820672e91f275eb4398"
+      },
+      {
+        "slug": "prescription-nasal-steroid-devices",
+        "sha256": "903a6a057daa8c5b75ae227e2ceecfe807f570f4507e243e32978f0f01a30951"
+      },
+      {
+        "slug": "nasal-antihistamines-and-combinations",
+        "sha256": "46263ddf7f834d601244924bb4bcb17b7771fc83f7345f79b854606da3e7267c"
+      },
+      {
+        "slug": "oral-antihistamine-products-and-safety",
+        "sha256": "198e45ae69342ff612ecdac6a962e7a64c227811f69937f1b3e2455da50c7f01"
+      },
+      {
+        "slug": "pediatric-antihistamine-formulations",
+        "sha256": "094016c075f3aaec2e75070005a2c905ff3a4adce7e867aebf593ab5d155be6c"
+      },
+      {
+        "slug": "first-generation-antihistamine-formulations",
+        "sha256": "792e637d4f134498c136d94a9cfc868aac8ca2c7d43242d7c240903bf059d3a2"
+      }
+    ],
+    "additionalArithmetic": [
+      {
+        "context": "Zyrtec-D cetirizine HCl",
+        "factors": [
+          5,
+          2
+        ],
+        "result": 10,
+        "unit": "mg/day"
+      },
+      {
+        "context": "Zyrtec-D pseudoephedrine HCl",
+        "factors": [
+          120,
+          2
+        ],
+        "result": 240,
+        "unit": "mg/day"
+      }
+    ]
+  }
+}

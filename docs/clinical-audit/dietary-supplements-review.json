@@ -1,0 +1,103 @@
+{
+  "status": "reviewing",
+  "reviewDate": "2026-09-27",
+  "moduleSlugs": [
+    "dietary-supplements-complementary-medicine"
+  ],
+  "clinicalCompletion": false,
+  "bookRead": [
+    {
+      "printedPages": [
+        973,
+        981
+      ],
+      "pdfPages": [
+        983,
+        991
+      ],
+      "method": "Text extraction inspected; large output for PDF985 was truncated and requires rereading. PDF984 page render inspected and folate/label statements confirmed. Remaining table renders still pending."
+    },
+    {
+      "printedPages": [
+        977,
+        979
+      ],
+      "pdfPages": [
+        987,
+        989
+      ],
+      "method": "All three full-page renders inspected, including safety-table label alignment and pediatric intake table."
+    },
+    {
+      "printedPages": [
+        975,
+        976
+      ],
+      "pdfPages": [
+        985,
+        986
+      ],
+      "method": "Both full-page renders read, resolving earlier truncated text and recovering condition-table product labels."
+    }
+  ],
+  "findings": [
+    {
+      "status": "corrected",
+      "topic": "Folate units, life-stage intake and prevention",
+      "problem": "Book printed974 conflates childbearing-age intake with pregnancy DFE; module previously offered only generic folate guidance.",
+      "implementation": "Added dedicated folate-labels-preconception lesson, numerical label diagram, embedded check and four original applied cases. Separates total-intake RDA from USPSTF preventive folic acid dose and identifies high-risk scope.",
+      "sources": [
+        "https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/",
+        "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/folic-acid-for-the-prevention-of-neural-tube-defects-preventive-medication"
+      ],
+      "sourceScope": "NIH ODS definitions, conversions, RDA table and labeling; USPSTF clinician summary, timing, dose and exclusions."
+    },
+    {
+      "status": "documented",
+      "topic": "Outdated label rollout",
+      "problem": "Book printed974 says updated labeling is not yet required.",
+      "implementation": "New lesson teaches current DFE and parenthetical folic acid labeling, not a future rollout.",
+      "sources": [
+        "https://www.fda.gov/food/hfp-constituent-updates/fda-provides-guidance-industry-convert-units-measure-certain-nutrients-nutrition-and-supplement"
+      ]
+    },
+    {
+      "status": "corrected",
+      "topic": "Missing diagram registration",
+      "problem": "Traditional-use and botanical-case visuals existed but their IDs were absent from the module-page renderer allowlist.",
+      "implementation": "Registered those two existing diagrams and the new folate diagram."
+    },
+    {
+      "status": "corrected",
+      "topic": "Melatonin, soy, vitamin E and homeopathy evidence boundaries",
+      "implementation": "Added current-evidence lesson paragraphs and four original applied questions. Distinguishes uncertain long-term melatonin safety, food associations versus supplement efficacy, vitamin E formal UL versus trial harms, and homeopathy efficacy versus compendium claims.",
+      "sources": [
+        "https://www.nccih.nih.gov/health/melatonin-what-you-need-to-know",
+        "https://www.nccih.nih.gov/health/soy",
+        "https://ods.od.nih.gov/factsheets/VitaminE-HealthProfessional/",
+        "https://www.nccih.nih.gov/health/homeopathy"
+      ]
+    }
+  ],
+  "openWork": [
+    "Render and inspect remaining chapter pages, especially tables with missing text extraction labels.",
+    "Map every chapter table row and condition to existing lessons or needed additions.",
+    "Review pediatric iron/vitamin D, nutrient depletion and condition-specific supplementation coverage.",
+    "Read the complete assembled 200-question bank including generated choices, answers and explanations; replace ambiguous or pedagogically weak items.",
+    "Verify all other module clinical claims, references and diagrams; complete desktop/mobile practice QA.",
+    "Complete build and record release evidence; push only after full module review."
+  ],
+  "validation": {
+    "structuralAudit": "Passed: 13 lessons,196 questions,no hard errors or source gaps. New focused folate lesson has four original bank questions; count advisory is not a clinical failure.",
+    "build": "npm run build passed after the melatonin, soy, vitamin E and homeopathy additions, exit 0, 2026-09-27. Prior desktop/mobile evidence applies to the folate checkpoint.",
+    "ui": "Local preview: new lesson, diagram and 196-question count rendered. Folate embedded answer submitted and returned Correct with expected rationale; review link worked. Desktop 1280x720 and mobile390x844 inspected; full-module randomized practice pending.",
+    "currentChanges": "Targeted structural audit passed: 13 lessons, 200 questions; no hard errors or source gaps. Full question bank clinical review remains pending."
+  },
+  "coverageGapsToResolve": [
+    "Common-use tables are not endorsement lists; distinguish aphthous ulcers from herpes cold sores, and assess lysine evidence.",
+    "Add or map evidence and safety for probiotics, fiber, zinc route, biotin assay interference, butterbur/feverfew, saw palmetto, cranberry, SAMe/5-HTP, vinpocetine and potassium.",
+    "Reconcile heart-failure product claims (hawthorn/CoQ10), black cohosh blanket heart-failure-drug warning, and caffeine benefit/safety generalizations.",
+    "Review GRAS and medical-food ingredient eligibility; the book claim that all ingredients must be GRAS may be too narrow.",
+    "Map remaining pediatric nutrient and drug-depletion tables after render review."
+  ]
+}

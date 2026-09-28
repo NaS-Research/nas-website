@@ -1,0 +1,42 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_review",
+  "sources": [
+    {
+      "url": "https://eugs.org/educational_materials/188",
+      "scope": "Section II.3.8 text and complete Table3.9 page183 reviewed; table visually inspected from local PDF render. Other pages not newly reviewed."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=264c4494-c225-486f-888a-caaf36be46b3&version=25",
+      "scope": "Current September2025 pregnancy risk-summary text rechecked."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19520696/",
+      "scope": "Full abstract read; original observational study,244 exposed pregnancies and1952 controls. Beta-blocker LBW adjustedOR1.48,95%CI0.86\u20132.56. No claim of full paper review or equivalence/safety proof."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16908810/",
+      "scope": "Full abstract read; retrospective15-woman/28-eye series,5eyes with field progression. Supports variable course and monitoring, not population incidence."
+    }
+  ],
+  "changes": [
+    "Added pregnancy planning, individualized treatment/alternative procedures and continued visual-field/pressure monitoring.",
+    "Added distinction between current risk narratives and historical category rankings, late-pregnancy brimonidine caution and limits of observational/animal evidence."
+  ],
+  "sourceReconciliation": [
+    "EGS table separates animal findings, theoretical human risks and reported cases. Preserve distinctions rather than teaching animal harm as proven human incidence.",
+    "Do not interpret EGS generally-safe beta-blocker/pilocarpine phrasing as universal safety; same guideline table lists neonatal concerns.",
+    "Current Alphagan P pregnancy risk summary is not a guarantee of safety based on historical category B."
+  ],
+  "validation": {
+    "syntax": "node --check passed",
+    "visual": "Four full paragraph captures inspected desktop1440x1000/mobile390x844; no clipping or horizontal overflow.",
+    "sourceTable": "Rendered page183 inspected; fontconfig emitted warnings but table image was complete and legible.",
+    "moduleSha256": "3ff857ee2305c0d2fc95ee68c7ed3b4244654aff752f4242e6eb411b383672bd"
+  },
+  "remaining": [
+    "Final integrated lesson, embedded-check, figure and139-question consistency review",
+    "Reconcile all book coverage and outstanding source-image gaps",
+    "Final isolated application build"
+  ]
+}

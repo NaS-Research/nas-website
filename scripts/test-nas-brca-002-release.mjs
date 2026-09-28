@@ -42,7 +42,7 @@ for (const requiredText of [
   assert.match(releaseSource.toLowerCase(), new RegExp(requiredText.toLowerCase()));
 }
 const artworkSource = readFileSync(resolve(root, "src/data/publicationArtwork.js"), "utf8");
-assert.match(artworkSource, /\/research\/nas-brca-002\/pam50-cover-v2\.webp/);
+assert.match(artworkSource, /src: "\/research\/nas-brca-002\/pam50-method-v2\.webp"/);
 assert.match(artworkSource, /heroSrc: "\/research\/nas-brca-002\/pam50-method-v2\.webp"/);
 
 const artworkComponent = readFileSync(resolve(root, "src/components/research/PublicationArtwork.jsx"), "utf8");
@@ -58,7 +58,7 @@ assert.match(artworkProvenance, /microscopy-informed biological illustrations/);
 assert.match(artworkProvenance, /not patient tissue or microscopy data/);
 
 const librarySource = readFileSync(resolve(root, "src/data/researchLibrary.js"), "utf8");
-assert.match(librarySource, /export const researchItems = \[\s*brcaRepeatabilityRelease,/);
+assert.match(librarySource, /export const researchItems = \[[\s\S]*?\bbrcaRepeatabilityRelease,/);
 
 const projectsSource = readFileSync(resolve(root, "src/data/researchProjects.js"), "utf8");
 assert.match(projectsSource, /status: "Published"/);

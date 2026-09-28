@@ -1,0 +1,28 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_review",
+  "source": {
+    "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=905ba189-456c-4aa4-8231-39a971374ad8",
+    "revision": "PI 07/2021; SPL 01/2025 version 4",
+    "scope": "Full prescribing text sections 1\u20138,10\u201314,16\u201317 read. Label lists prospective November 2026 marketing end date; this is not evidence of current stock availability."
+  },
+  "changes": [
+    "Added relative beta-1 selectivity and pulmonary/cardiac risk explanation",
+    "Added exact Betoptic S preparation, sequencing, lens and storage instructions",
+    "Added original selectivity question and reviewed all options, key and rationale"
+  ],
+  "bookComparison": "Printed page 542 describes less pulmonary risk with betaxolol. Qualified this against warnings rather than implying universal respiratory safety. Corrected earlier methazolamide ledger classification after re-reading this page.",
+  "validation": {
+    "arithmetic": "Decimal verified 0.25% = 2.5 mg/mL as base; did not conflate 2.8 mg/mL hydrochloride with base concentration.",
+    "visual": "Four full paragraph-row screenshots inspected after animations settled, at desktop 1440x1000 and mobile 390x844; complete readable text without clipping.",
+    "assessment": "Desktop 28 attempts and mobile 7 attempts encountered the new case. Verified choices, key mapping, scoring, explanation and review link. No page errors or horizontal overflow. Other sampled questions checked for UI only."
+  },
+  "remaining": [
+    "Solution/carteolol/levobunolol follow-up documented in glaucoma-beta-solutions-review.json; remaining levobunolol label scope explicit there.",
+    "Population-specific synthesis and all remaining module assessment/visual review pending"
+  ],
+  "hashes": {
+    "src/data/modules/glaucomaPharmacotherapy.js": "62ad251513e4ccd5ad0361c4b38dcfd2b2f659a3f2f12fca2f7a35609345503e",
+    "src/data/questionBanks/glaucomaPharmacotherapy.js": "bfc795520d9df0196347d1d83727076ef3043879f1723e3517cb512d1d75eb2a"
+  }
+}

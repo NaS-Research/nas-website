@@ -1,0 +1,136 @@
+{
+  "date": "2026-09-26",
+  "status": "corrected_pending_final_module_verification",
+  "reviewScope": "Read all 117 materialized original-bank questions, choices, keys and explanations in bounded outputs. Replaced the 112 generated questions with 38 original cases; retained five recently reviewed cases. All 43 revised cases were authored and checked for a single defensible answer. Final whole-module clinical source closure remains pending.",
+  "finding": "The fixed four-dimension generator used valid actions and assessments from other topics as distractors. Broad stems frequently admitted several clinically reasonable answers; rationales also repeated across four distinct questions.",
+  "examples": [
+    "Original 002 offered general localization, urgent invasive-infection assessment and tinnitus triage under an unspecified ear-triage stem.",
+    "Original 047 and 075 included overlapping valid membrane, surgery, symptom and product assessments.",
+    "Original 111 offered several valid follow-up assessment lists without a specific clinical scenario."
+  ],
+  "coverage": [
+    {
+      "originalConcept": "ear symptom triage",
+      "replacementCase": "common-ear-localize"
+    },
+    {
+      "originalConcept": "sudden hearing loss",
+      "replacementCase": "common-ear-sudden-clear-canal"
+    },
+    {
+      "originalConcept": "ear red flags",
+      "replacementCase": "common-ear-mastoid-red-flag"
+    },
+    {
+      "originalConcept": "acute otitis externa recognition",
+      "replacementCase": "common-ear-aoe-recognition"
+    },
+    {
+      "originalConcept": "otitis externa pain",
+      "replacementCase": "common-ear-aoe-analgesia"
+    },
+    {
+      "originalConcept": "canal obstruction and wick",
+      "replacementCase": "common-ear-blocked-delivery"
+    },
+    {
+      "originalConcept": "nonintact tympanic membrane",
+      "replacementCase": "common-ear-tube-selection"
+    },
+    {
+      "originalConcept": "malignant otitis externa risk",
+      "replacementCase": "common-ear-invasive-risk"
+    },
+    {
+      "originalConcept": "otitis externa reassessment",
+      "replacementCase": "common-ear-aoe-nonresponse"
+    },
+    {
+      "originalConcept": "topical versus systemic antimicrobials",
+      "replacementCase": "common-ear-systemic-indication"
+    },
+    {
+      "originalConcept": "fluoroquinolone otic therapy",
+      "replacementCase": "common-ear-ciprodex-course"
+    },
+    {
+      "originalConcept": "aminoglycoside otic risk",
+      "replacementCase": "common-ear-neomycin-exposure"
+    },
+    {
+      "originalConcept": "otic suspension preparation",
+      "replacementCase": "common-ear-shake-handwarm"
+    },
+    {
+      "originalConcept": "ear-drop administration",
+      "replacementCase": "common-ear-teachback"
+    },
+    {
+      "originalConcept": "tragal pumping",
+      "replacementCase": "common-ear-tragus-tube"
+    },
+    {
+      "originalConcept": "dry-ear protection",
+      "replacementCase": "common-ear-water-trauma"
+    },
+    {
+      "originalConcept": "cerumen impaction definition",
+      "replacementCase": "common-ear-wax-definition"
+    },
+    {
+      "originalConcept": "cerumen modifying factors",
+      "replacementCase": "common-ear-wax-risk"
+    },
+    {
+      "originalConcept": "cerumenolytics",
+      "replacementCase": "common-ear-wax-agent"
+    },
+    {
+      "originalConcept": "unsafe ear cleaning",
+      "replacementCase": "common-ear-wax-cleaning"
+    },
+    {
+      "originalConcept": "persistent symptoms after removal",
+      "replacementCase": "common-ear-wax-persistent"
+    },
+    {
+      "originalConcept": "tinnitus classification",
+      "replacementCase": "common-ear-tinnitus-classify"
+    },
+    {
+      "originalConcept": "pulsatile or unilateral tinnitus",
+      "replacementCase": "common-ear-tinnitus-pulse"
+    },
+    {
+      "originalConcept": "medication and tinnitus",
+      "replacementCase": "common-ear-tinnitus-medicine"
+    },
+    {
+      "originalConcept": "persistent bothersome tinnitus",
+      "replacementCase": "common-ear-tinnitus-function"
+    },
+    {
+      "originalConcept": "pediatric ear care",
+      "replacementCase": "common-ear-pediatric-assessment"
+    },
+    {
+      "originalConcept": "older adults and hearing",
+      "replacementCase": "common-ear-older-hearing"
+    },
+    {
+      "originalConcept": "closed-loop ear follow-up",
+      "replacementCase": "common-ear-worsening-before-check"
+    }
+  ],
+  "countDecision": "43 cases across eight lessons, ranging from four to eight cases per lesson. The <100 bank-size and <8 per-lesson notices are advisory. Coverage is traced by clinical decisions; fixed counts were not used to pad the bank. Additional cases may be added for genuine gaps found during source closure.",
+  "validation": {
+    "structural": "No hard errors or source gaps. Size and per-lesson advisories retained for deliberate clinical review.",
+    "browser": "All 43 cases covered at 1440x1000 in 11 randomized attempts and at 390x844 in 13. Checked incomplete-submit gating, exact stem and choice mapping, mixed correct/incorrect scoring, explanations and review anchors. No page errors or horizontal overflow.",
+    "script": "/private/tmp/ear-all-cases.mjs",
+    "bankSha256": "718b9e425f83306e0b2de9959e36f6bd2d532b6c2e5333d32b6c397b1293ffab"
+  },
+  "remaining": [
+    "Finish current-source reconciliation and final whole-module read/build.",
+    "Book activity restriction comparison remains open; routine hearing-device/earphone precautions reviewed in AAO-HNS plain-language summary but blanket flight restriction not established."
+  ]
+}

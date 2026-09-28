@@ -4408,6 +4408,14 @@ body {
   color: #eee5d8;
 }
 
+/* Stack saved-work controls above the actual open or closed tools menu. */
+body:has(.pharmacy-tool-menu) .personal-tools {
+  bottom: calc(clamp(1rem, 3vw, 2rem) + var(--pharmacy-tools-height, 54px) + 12px);
+}
+body:has(.pharmacy-tool-menu) .personal-tools-panel {
+  max-height: max(120px, calc(100dvh - var(--pharmacy-tools-height, 54px) - 180px));
+}
+
 .pharmacy-tool-menu summary {
   display: grid;
   grid-template-columns: 1fr auto auto;

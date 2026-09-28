@@ -14,7 +14,7 @@ const navigation = [
 const sections = [
  { title:"Discover", links:[["Research library","/research"],["Research areas","/research/areas"],["Product overview","/products"]] },
  { title:"The institution", links:[["Our purpose","/about"],["Work with NaS","/support"]] },
- { title:"NaS Learn", links:[["Pharmacy","/learn/pharmacy"],["Visual Atlas","/learn/pharmacy/atlas"],["Drug Library","/learn/pharmacy/drugs"],["Practice","/learn/pharmacy/review"]] },
+ { title:"Learn", links:[["Learning Library","/learn#library"],["Human Atlas","/learn/pharmacy/atlas"],["Drug Library","/learn/pharmacy/drugs"],["Knowledge Review","/learn/pharmacy/review"]] },
 ];
 
 function isActivePath(pathname, href) {

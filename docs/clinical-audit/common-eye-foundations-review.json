@@ -1,0 +1,88 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_module_review",
+  "sources": [
+    {
+      "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/dry-eye",
+      "readScope": "Full patient education text, updated August 2025."
+    },
+    {
+      "url": "https://www.fda.gov/drugs/buying-using-medicine-safely/what-you-should-know-about-eye-drops",
+      "readScope": "Consumer safety text and historical alert list."
+    },
+    {
+      "url": "https://www.cdc.gov/contact-lenses/prevention/",
+      "readScope": "Full clinical education text, May 27 2025."
+    },
+    {
+      "url": "https://www.cdc.gov/contact-lenses/about/about-cleaning-disinfecting-and-storing-contact-lenses.html",
+      "readScope": "Full clinical education text, May 27 2025."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=f18bebf2-1936-658f-e053-2a95a90a5012",
+      "readScope": "Full Drug Facts text and structured ingredients; package images not inspected."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=2df0de02-a3e2-471a-9e10-040c3fba75fe",
+      "readScope": "Full Drug Facts text and structured ingredients; package images not inspected."
+    },
+    {
+      "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/dry-eye/causes-dry-eye",
+      "readScope": "Full NEI Causes of Dry Eye text, last updated December 6 2024."
+    },
+    {
+      "url": "https://www.tfosdewsreport.org/report-iatrogenic_dry_eye/121_36/en/",
+      "readScope": "Sections 4.1.1 and 4.1.3 and systemic-drug table excerpts; not the entire report."
+    },
+    {
+      "url": "https://tfosdewsreport.org/report-pathophysiology/106_36/en/",
+      "readScope": "Sections on medication effects, meibomian dysfunction and blink disorders, with classification table excerpts; not the entire report."
+    },
+    {
+      "url": "https://www.rch.org.au/clinicalguide/guideline_index/acute_red_eye/",
+      "readScope": "Key points, history, examination and management passages through angle closure. Used only for pediatric red flags, not Australian antimicrobial regimens."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/3503120/",
+      "readScope": "Complete primary clinical-trial abstract; eight healthy volunteers receiving timolol. Supports reduced total systemic absorption with nasolacrimal occlusion, with individual variability; not a pregnancy-safety trial."
+    }
+  ],
+  "reviewed": [
+    "Read all four pre-existing dry-eye foundations rows and embedded check; NEI supports basic mechanisms, exposures, diagnosis and care. Detailed medicine/systemic-disease list still needs dedicated source verification.",
+    "Read all sterility lesson rows and embedded check. FDA supports sterility, tip hygiene, alert review and unapproved-product cautions. Lens-water guidance remains to be reconciled against CDC.",
+    "CDC supports existing no-water lens guidance; expanded concrete care instructions. Existing lens visual describes exact-label removal and no-wear plan and remains consistent.",
+    "Reconciled detailed medication and systemic-disease risk list with NEI and TFOS report passages. Anticholinergic mechanism, antihistamine/diuretic and benzodiazepine associations, isotretinoin gland effects, Parkinson-related blink impairment and dermatologic MGD associations support contextual evaluation. Epidemiologic association does not establish individual causation.",
+    "Pediatric triage row and questions 121\u2013124 agree with RCH acute-red-eye assessment guidance. Read pregnancy/lactation questions 125\u2013128; current product labels support individualized risk assessment, with systemic-exposure reduction supported by AAO journal search-indexed passages (full-text request failed). Administration accessibility remains a practical counseling synthesis, not a quantified efficacy claim.",
+    "Administration rows and embedded check reconciled with reviewed product IFUs and trial abstract: clean hands, lower-lid sac, tip clearance, prescribed drop count, gentle closure/occlusion, exact-product spacing and thicker preparations last. Existing text makes no universal exposure-reduction percentage or pregnancy safety guarantee. Special-population row retains product-specific benefit-risk review; source reconciliation closed for the general claims actually taught."
+  ],
+  "changes": [
+    "Added actionable environmental measures, prescriber-mediated medication review, and distinction between punctal plugs and temporary administration occlusion.",
+    "Expanded reusable-lens hygiene and distinguished saline/cleaners from disinfectants and peroxide neutralization.",
+    "Added book-listed lubricant ingredient examples with exact product distinctions and 72-hour OTC reassessment boundary.",
+    "Replaced broad sedating-drug wording with selected anxiolytic/hypnotic examples; added temporal assessment, competing causes and prescriber review, plus concrete neurologic and skin-disease mechanisms."
+  ],
+  "remaining": [
+    "Whole-module final reconciliation"
+  ],
+  "validation": "Previously outstanding foundation/lubricant/lens rows passed desktop/mobile inspection; see outstandingRowsRenderValidation. General administration and special-population source reconciliation completed for the stated claims; overall module verification remains separate.",
+  "sourceDiscrepancies": [
+    "Systane Complete Drug Facts reports propylene glycol 0.6%; structured table incorrectly says 0.06 mg/mL. Independent conversion: 0.6 g/100 mL = 6 mg/mL. Teaching follows Drug Facts percentage."
+  ],
+  "outstandingRowsRenderValidation": {
+    "date": "2026-09-26",
+    "script": "/private/tmp/eye-outstanding-rows.mjs",
+    "viewports": [
+      "1440x1000",
+      "390x844"
+    ],
+    "scope": "22 previously outstanding rows: FML/Flarex, Alrex/Lotemax formulations, dry-eye foundations and lubricants, contact-lens hygiene, redness OTC products, prednisolone and Maxidex.",
+    "result": "All 44 captures visually inspected. No browser errors or horizontal overflow. Maxidex mobile final lines were inspected in an additional scrolled capture /private/tmp/eye-maxidex-tail-mobile.png because the floating tools button overlapped the first capture bottom. Together the two captures show the complete target text.",
+    "limitation": "Scoped local preview; does not establish whole-module clinical verification or live deployment."
+  },
+  "finalClosure": {
+    "date": "2026-09-26",
+    "status": "resolved_for_common_eye_module",
+    "evidence": "common-eye-completion-review.json",
+    "note": "Earlier statuses, counts and pending text are historical snapshots. Final completion record and its lesson mapping supersede Common Eye remaining-work statements. Ear-module work remains separate."
+  }
+}

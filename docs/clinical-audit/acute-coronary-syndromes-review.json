@@ -1,0 +1,315 @@
+{
+  "module": "acute-coronary-syndromes",
+  "status": "reviewing",
+  "reviewDate": "2026-09-27",
+  "bookRead": {
+    "chapter": 30,
+    "printedPagesRead": [
+      455,
+      456,
+      457,
+      458,
+      459,
+      460,
+      461,
+      462
+    ],
+    "pdfPagesRead": [
+      463,
+      464,
+      465,
+      466,
+      467,
+      468,
+      469,
+      470
+    ],
+    "visualPagesRead": [
+      463,
+      464,
+      465,
+      466,
+      467,
+      468,
+      469,
+      470
+    ],
+    "extractedNotYetRead": []
+  },
+  "actualContentRead": "All six lesson definitions and embedded checks read across passes; six visual definitions read, diagnosis/reperfusion reconciled in source. Assembled bank001-008,029,045-046,109-112,117-120 read; remaining bank pending. New121 all choices/key2/rationale reviewed at authoring.",
+  "sources": [
+    "https://jordan-cardiac.org/wp-content/uploads/2025/02/2025_ACCAHAACEPNAEMSPSCAI_Guideline_for_the_Management_of_Patients.pdf",
+    "https://professional.heart.org/en/science-news/fifth-universal-definition-of-myocardial-infarction-2026/top-things-to-know",
+    "https://doi.org/10.1093/eurheartj/ehag101",
+    "https://www.dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=9c3994da-da45-43ce-9727-a842a43c5693",
+    "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88b434fa-8891-4fd5-9d86-7ea64667c08f",
+    "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/022433s039lbl.pdf",
+    "https://www.gene.com/download/pdf/tnkase_prescribing.pdf",
+    "https://www.gene.com/download/pdf/activase_prescribing.pdf",
+    "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=e7b63b16-d911-478b-a445-b690a1360b48",
+    "https://www.heartfoundation.org.au/for-professionals/acs-guideline?tab=3",
+    "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=2969deac-274b-4042-9c90-9522e62a979d",
+    "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=e574d04f-67b4-4a84-9d66-8c2d54f95120&type=display",
+    "https://products.sanofi.us/lovenox/lovenox.pdf",
+    "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=d3b30c68-cf45-4b46-8ba6-72090f7ba01a&type=display",
+    "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=1a52bedc-8e2c-4116-a296-a87770676b4a&type=display",
+    "https://professional.heart.org/-/media/PHD-Files-2/Science-News/2/2022/2022-Heart-Failure-Guideline-Slide-Set.pdf",
+    "https://professional.heart.org/en/science-news/2026-guideline-on-the-management-of-dyslipidemia/top-things-to-know"
+  ],
+  "sourceRead": "Primary2025ACS guideline reproduced on Jordan Cardiac Society site, DOI10.1161/CIR.0000000000001309; read sections3.1.1/3.1.2 relevant ECG and troponin recommendations and supporting text (PDF10/12/13/15). Not the full guideline. Early publication pagination placeholders preserved in mirror.",
+  "corrections": [
+    "Defined injury threshold precisely in lesson and bank; previously bank omitted elevated99th-percentile requirement.",
+    "Added ECG10-minute first-contact target in lesson/visual. Added assay-dependent serial-sampling intervals."
+  ],
+  "discrepancies": [
+    "Book printed456 uniform3-6hours after symptom onset replaced by assay-specific intervals from first sample.",
+    "Book partial-versus-complete occlusion table and MONA-GAP-BA bundle need current reconciliation; do not treat these as universal anatomy or mandatory drugs."
+  ],
+  "openWork": [
+    "Review all actual lessons, visuals,116 assembled questions and keys/rationales against current sources.",
+    "Expand missing drug doses, adjustment calculations, fibrinolytic contraindications, reperfusion timelines and recovery care as indicated by full review.",
+    "Review cross-module consistency, build, desktop/mobile; commit/push only after completion."
+  ],
+  "validation": {
+    "contentAudit": "Scoped audit passed6lessons120questions without hard errors/source gaps.",
+    "diffCheck": "Passed scoped changes.",
+    "limits": "No current build or desktop/mobile verification for ACS changes. Assembled bank review remains pending; structural success is not clinical verification."
+  },
+  "reviewPasses": [
+    {
+      "date": "2026-09-27",
+      "scope": "Initial oxygen, analgesia and aspirin",
+      "sourceRead": "Book PDF465/printed457 text; actual2025ACS guideline section4.1,4.2,4.3.1 and Tables6/7 (PDF17-19).",
+      "corrections": "Added oxygen threshold/goal and qualified respiratory-distress blanket wording. Added missing opioid role/dose/monitoring/P2Y12 absorption and NSAID cautions. Added acute aspirin loading and maintenance doses, including already-treated patients. Replaced029 with original oxygen-selection case.",
+      "discrepancies": "Book aspirin maintenance81-162mg updated to75-100mg and not automatically indefinite regardless of antithrombotic strategy. Book morphine2-5mg every5-30min updated to guideline2-4mg every5-15min.",
+      "validation": "Scoped audit passed6lessons116questions with no hard errors/source gaps. Assembled029 all options, key2, rationale and anchor inspected. Scoped diff check passed. No current build/rendered verification."
+    },
+    {
+      "date": "2026-09-27",
+      "scope": "New2026 MI-definition source verification",
+      "sourceRead": "Actual official AHA TopThings, updatedAugust28,2026, all ten points; full consensus not yet read.",
+      "finding": "Material update: primary/secondary/procedure-related classification, sex-specific99th-percentile injury limits, and updated MINOCA working-definition wording. Existing ACS module cites2026 but teaches older numbered types. Do not mark clinical reconciliation complete.",
+      "nextAction": "Read full consensus or detailed primary sections, reconcile legacy numbered terminology with new classification across lessons/bank/visuals and linked modules. Preserve distinction between ischemia and nonischemic injury; do not infer detailed criteria from summary alone."
+    },
+    {
+      "date": "2026-09-27",
+      "scope": "2026 MI classification primary/secondary reconciliation",
+      "sourceRead": "Actual accessible Oxford full consensus sections7.1.1-7.2.2, Boxes3/4 and beginning7.2.3/Box5. Full article not read. JACC403 and PMCcaptcha; Oxford accessible normally.",
+      "corrections": "Labeled numbered types as historical; added broader primary category and secondary confirmation requirements, including imaging feasibility qualification. Specified sex-specific injury cutoff. Corrected ECG-category versus angiographic-occlusion oversimplification. Updated outcomes/concepts/keypoint and legacy bank row wording.",
+      "remaining": "Procedure-related criteria, MINOCA and injury sections still need full teaching reconciliation; read all affected assembled bank items and add applied current-classification cases. Cross-module terminology sweep pending.",
+      "validation": "Scoped structural audit passed6lessons116questions without hard errors/source gaps; scoped diff check passed. Final clinical reconciliation, assembled-bank read, build and rendered verification remain pending."
+    },
+    {
+      "date": "2026-09-27",
+      "scope": "Procedural injury, MINOCA and assessment001-008",
+      "sourceRead": "Actual FifthUDMI section6.1/Box1 and section11; procedure-related Box5 criteria read previous pass. Read all assembled001-008 including distractors and keys.",
+      "corrections": "Added procedure-related diagnostic guardrails and2026MINOCA working definition. Added applied005/006 cases and replaced002/003/004/007/008 after identifying multiple clinically appropriate distractors in generated questions. IDs and anchors preserved.",
+      "remaining": "All later bank items except029 remain to review. Current build/rendering pending. Broader capitalization/synonym cross-module sweep remains.",
+      "validation": "Final scoped audit passed6lessons116questions with no hard errors/source gaps; diff check passed. Final assembled002/003/004/007/008 read with keys1/2/3/1/2 and correct anchors.005/006 inspected earlier with keys1/2."
+    },
+    {
+      "date": "2026-09-27",
+      "scope": "Prasugrel dose and selection; book P2Y12 tables",
+      "sourceRead": "Actual bookPDF466-467text (printed458-459), including antiplatelet mechanisms and P2Y12table/interactions. Actual prasugrelPI boxed warning,1,2,4;2025ACS Table7 read earlier.",
+      "corrections": "Added loading/maintenance/weight dose, older-age label restriction versus guideline5mg selection, pretreatment/CABG timing and full contraindications. Added original045/046 cases.",
+      "discrepancies": "Avoided importing book one-hour-after-PCI loading rule as universal; label anchors anatomy/PCI timing in NSTEACS. Distinguished age75 caution/selection from automatic reduced-dose prescribing.",
+      "remaining": "Clopidogrel/ticagrelor/cangrelor detailed reconciliation, remaining three source pages and source images; full bank and module validation.",
+      "validation": "Scoped audit passed6lessons116questions without hard errors/source gaps. Assembled045/046 choices, keys2/1, rationales and anchors inspected. Scoped diff check passed; current build/rendered review pending."
+    },
+    {
+      "date": "2026-09-27",
+      "scope": "Cangrelor PCI and oral transition",
+      "sourceRead": "Kengreal May2025 prescribing information sections1,2,4,5,7,8.6-8.7,12 reviewed directly.",
+      "corrections": "Added missing PCI selection, dosing, duration, contraindications and drug-specific oral handoff. Added original assessment117.",
+      "remaining": "Remaining P2Y12 details, chapter pages/images, bank review and rendered validation remain open.",
+      "validation": "Scoped audit passed6lessons117questions with no hard errors/source gaps. Assembled117 inspected, key1 and anchor correct. Scoped diff check passed. Build and desktop/mobile review remain pending."
+    },
+    {
+      "date": "2026-09-27",
+      "scope": "Ticagrelor and remaining chapter text",
+      "sourceRead": "Read book PDF468-470/printed460-462 actual extracted text. Read FDA Brilinta May2026 label sections2,4,5 and7 directly.",
+      "corrections": "Added ticagrelor dose timeline, contraindications and interactions, including rosuvastatin restriction absent from older book. Added original assessment118.",
+      "discrepancies": "May2026 label explicitly advises avoiding rosuvastatin above20mg/day and considering lower doses in increased rhabdomyolysis risk. Book final pages also flag pending reconciliation of GP IIb/IIIa routine use, fibrinolysis timing, beta-blocker duration and triple-therapy duration.",
+      "remaining": "Image review, clopidogrel, anticoagulants, reperfusion and secondary prevention reconciliation, assembled bank and UI validation.",
+      "validation": "Scoped audit passed6lessons118questions with no hard errors/source gaps. Assembled118 inspected, key1 and anchor correct. Scoped diff check passed; build and rendered review remain pending."
+    },
+    {
+      "date": "2026-09-27",
+      "scope": "Chapter image review and reperfusion timeline",
+      "sourceRead": "All remaining book images PDF464-470 read, confirming chapter endpoint printed462/PDF470. Actual2025ACS sections5.2.1,5.3,5.3.1,5.3.2 including recommendation tables and supporting text read.",
+      "corrections": "Added contact-to-device90/120minute targets, early fibrinolysis selection, qualified late-presentation pathway and rescue/routine angiography2-24hour distinction.",
+      "discrepancies": "Book broad symptomatic12-24hour fibrinolysis statement narrowed to current PCI-transfer preference with exceptional late-lysis considerations.",
+      "remaining": "Full contraindication and product-dose teaching, anticoagulants, secondary prevention, bank and visuals reconciliation; build and UI checks.",
+      "validation": "Scoped audit passed6lessons118questions, no hard errors/source gaps. Scoped diff check passed. Assessment/visual timeline reconciliation and build/UI checks remain pending."
+    },
+    {
+      "date": "2026-09-27",
+      "scope": "Fibrinolytic product doses and independent arithmetic",
+      "sourceRead": "Actual TNKase February2025 PI sections2-5, Activase September2022 current manufacturer PI sections2.2,2.4,4.2.",
+      "corrections": "Added STEMI tenecteplase weight tiers and82kg dose-volume example, accelerated alteplase60kg regimen and pump-rate example, product-specific intracranial surgery/trauma lookback differences.",
+      "calculations": "Independently checked45/5=9mL;15+0.75*60+0.5*60=90mg;45mg at1mg/mL over0.5h=90mL/h,30mg over1h=30mL/h.",
+      "discrepancies": "Activase label uses>67kg and<=67kg, whereas2025ACS Table13 uses>=67kg and<67kg. Book additionally caps the first weight-based infusion at50mg. Current lesson explicitly labels manufacturer regimen; reconcile exact67kg order-set boundary before clinical closure.",
+      "remaining": "Age-specific tenecteplase guideline strategy, reteplase, full contraindications, assessment and visual reconciliation, build/UI checks.",
+      "validation": "Independent arithmetic assertions passed. Scoped audit6lessons118questions had no hard errors/source gaps; scoped diff check passed. Full clinical reconciliation and rendered verification remain pending."
+    },
+    {
+      "date": "2026-09-27",
+      "scope": "Reteplase, alteplase boundary transparency and assessment109-112",
+      "sourceRead": "Actual Retavase September2024 PI sections1-5; all four assembled109-112 items read before edits. Previously read Activase label and2025ACS Table13 compared directly.",
+      "corrections": "Added reteplase units, schedule, concentration, heparin-line incompatibility and second-dose withholding. Explicitly explains exact67kg label/guideline difference rather than silently choosing one universal dose. Replaced109-112 after finding several simultaneously appropriate distractors.",
+      "calculation": "60kg alteplase total90mg independently verified in preceding pass;10units/(1unit/mL)=10mL for each reteplase dose.",
+      "remaining": "Age-specific tenecteplase, complete contraindication teaching, other bank items, anticoagulants and recovery guidance; visuals/build/UI.",
+      "validation": "Scoped audit6lessons118questions passed without hard errors/source gaps. Assembled109-112 all choices, keys1/2/3/1 and rationales inspected; spacing defects corrected. Scoped diff check passed. Build/UI still pending."
+    },
+    {
+      "date": "2026-09-27",
+      "scope": "Absolute versus relative fibrinolysis restrictions and reperfusion visual",
+      "sourceRead": "Actual2025ACS Table14 and adjacent rescue-PCI recommendations; previously read product labels retained for stricter restrictions.",
+      "corrections": "Expanded complete guideline contraindication categories, BP response distinction and relative-risk evaluation; added PCI contact-to-device timing and immediate post-lysis transfer to existing visual.",
+      "qualification": "Concurrent acute ischemic stroke is a separate indication requiring stroke-team evaluation; not generalized as permission for STEMI fibrinolysis. Product-specific restrictions still apply.",
+      "remaining": "Age-specific tenecteplase strategy and other ACS medication/assessment reconciliation; rendered verification remains pending.",
+      "validation": "Scoped structural audit passed6lessons118questions without hard errors/source gaps. Scoped diff check passed. Visual definition reviewed in source; no browser-rendered verification claimed."
+    },
+    {
+      "date": "2026-09-27",
+      "scope": "Older-adult tenecteplase protocol versus U.S. label",
+      "sourceRead": "Official2025Australian ACS guideline reperfusion section: Dosing fibrinolytic therapy in older people and practice points. Previously read U.S. TNKase February2025 PI full weight tiers/geriatric section.",
+      "corrections": "Added explicit jurisdiction/protocol distinction, residual ICH risk and reminder to verify adjunctive antithrombotic dosing. Did not relabel stroke dosing as a STEMI regimen.",
+      "discrepancies": "U.S. label has no age reduction; Australian guideline includes age-adjusted half-dose strategy supported by75-and-older bleeding data. ESC repository fetch restricted, so no full ESC-source read claimed.",
+      "remaining": "Clopidogrel and parenteral anticoagulation, recovery, remaining assessments and visual reconciliation; current build and UI review.",
+      "validation": "Scoped audit passed6lessons118questions without hard errors/source gaps; scoped diff check passed. No current build or rendered verification."
+    },
+    {
+      "date": "2026-09-27",
+      "scope": "Clopidogrel dose pathways, activation and safety",
+      "sourceRead": "Actual2025ACS Table7; actual clopidogrel June2024PI on DailyMed updatedAugust2026: boxed warning, dosing/contraindication warnings and sections7.1,7.2,7.8.",
+      "corrections": "Added loading/maintenance and fibrinolysis age boundary, CYP2C19/PPI/rifampin issues, repaglinide avoidance, bleeding/TTP and coordinated interruption. Added original119 age78 fibrinolysis case.",
+      "discrepancy": "Product-label300mg ACS loading is supplemented by2025guideline300/600mg selection and fibrinolysis-specific age exception.",
+      "remaining": "Parenteral anticoagulant dosing, recovery and remaining assembled bank/visual reconciliation; build/UI.",
+      "validation": "Scoped audit passed6lessons119questions, no hard errors/source gaps. Assembled119 options, key2, rationale and anchor read. Scoped diff check passed; build/UI remain pending."
+    },
+    {
+      "date": "2026-09-27",
+      "scope": "UFH and bivalirudin dosing and calculation",
+      "sourceRead": "Actual2025ACS section4.4/Table10 and PCI/HIT supportive text. Actual bivalirudin September2024PI sections1,2,4,5.1-5.2.",
+      "corrections": "Added initial versus PCI UFH regimens and capped90kg calculation; bivalirudin bolus/ACT, renal and dialysis infusion adjustments, post-PPCI infusion and monitoring.",
+      "calculation": "Independent assertions:60*90=5400 capped4000;12*90=1080 capped1000;1000units/h divided100units/mL=10mL/h.",
+      "remaining": "Enoxaparin and fondaparinux, recovery, remaining assembled assessments and visual reconciliation; build/UI.",
+      "validation": "Independent arithmetic checks passed; scoped audit6lessons119questions had no hard errors/source gaps; scoped diff check passed. Build and rendered review still pending."
+    },
+    {
+      "date": "2026-09-27",
+      "scope": "Enoxaparin syndrome, age and renal dosing",
+      "sourceRead": "Actual Lovenox May2025PI sections2.2-2.6 including severe-renal table and older-STEMI regimen;2025ACS Table10 previously read.",
+      "corrections": "Added NSTEACS versus STEMI dosing, first-two-dose caps, age75 cutoff and severe renal override; platelet/bleeding monitoring and PT/aPTT limitation. Added original120 combining age78,80kg andCrCl25.",
+      "calculation": "1mg/kg*80kg=80mg every24h;0.75mg/kg*80kg=60mg is the distractor from the nonsevere-renal older-STEMI pathway.",
+      "remaining": "PCI supplemental-enoxaparin timing reconciliation, fondaparinux and recovery, remaining bank and visuals; build/UI.",
+      "validation": "Scoped audit passed6lessons120questions with no hard errors/source gaps; diff check passed. Assembled120 all options/key1/rationale inspected; arithmetic checked. Build/UI pending."
+    },
+    {
+      "date": "2026-09-27",
+      "scope": "PCI anticoagulant handoff and fondaparinux",
+      "sourceRead": "2025 ACS section4.4 recommendations and Table10/supportive text; Lovenox May2025 section2.2 PCI dosing; Arixtra December2024 indications and contraindications/renal/monitoring sections.",
+      "corrections": "Added label-based enoxaparin supplemental PCI dosing and 80kg calculation, selected fondaparinux ACS pathways with U.S. off-label distinction, renal/safety screening and prohibition on sole fondaparinux for PCI. Added original121 PCI handoff case.",
+      "discrepancy": "Early guideline mirror Table10 text prints 0.3 mg supplemental enoxaparin without /kg; current manufacturer label explicitly says 0.3 mg/kg. Teach label weight-based dose. Guideline also specifies 8-12h or only one SC dose; label says >8h and does not resolve exactly8h. Boundary/single-dose cases require verified procedural protocol.",
+      "remaining": "Recovery guidance, remaining assembled assessment items and visuals; current build and desktop/mobile review.",
+      "validation": "Scoped structural audit passed6lessons121questions without hard errors/source gaps; scoped diff check passed. Independent0.3*80=24mg calculation checked. Clinical completion, build and rendered review remain pending."
+    },
+    {
+      "date": "2026-09-27",
+      "scope": "Post-ACS ventricular therapy and recovery assessment review",
+      "sourceRead": "Re-read private book PDF470/printed462. Actual2025ACS sections4.6-4.7 recommendations/supporting text; Inspra June2025PI sections1.1,2.1-2.4,4/5.1; official2022HF MRA recommendation slide text.",
+      "corrections": "Expanded early oral beta-blocker stability criteria, RAAS/MRA eligibility and eplerenone dosing/monitoring. Replaced ambiguous generic091/092 questions with original stability and laboratory-follow-up cases; preserved other recovery topics.",
+      "discrepancies": "Book fixed three-year beta-blocker duration not used as universal instruction. Product-label potassium contraindication and guideline MRA initiation threshold distinguished; eGFR and CrCl not conflated. Early ACS mirror PR unit appears implausible; no numerical PR threshold added from that text.",
+      "assessmentRead": "Assembled089-100 and113-116 all choices/keys/rationales read. Other generic distractors need further targeted reconciliation; this does not close recovery assessment review.",
+      "remaining": "Specific lipid goals, DAPT/OAC duration, remaining recovery cases and other bank/visuals; build and desktop/mobile review.",
+      "validation": "Scoped structural audit6lessons121questions passed with no hard errors/source gaps; diff check passed. Revised assembled091/092 inspected. Build and UI remain pending."
+    },
+    {
+      "date": "2026-09-27",
+      "scope": "Discharge DAPT and oral-anticoagulant overlap",
+      "sourceRead": "Actual2025ACS sections11.1 and11.1.1 recommendations and supportive text, including limits of extrapolation from PCI shortening trials.",
+      "corrections": "Specified aspirin withdrawal1-4weeks with ongoing OAC/preferred clopidogrel; differentiated ticagrelor monotherapy after tolerated DAPT from de-escalation and other selected short strategies. Replaced generic089/090 and clarified discharge visual wording.",
+      "discrepancy": "Book printed462 suggests4-6weeks triple therapy; current recommendation1-4weeks used. Book indefinite-aspirin framing qualified by contemporary shortening and anticoagulant pathways.",
+      "crossModuleCheck": "Literal search in antiplatelet/CCD lessons and banks found no4-6week/triple-therapy wording; this narrow search is not full cross-module clinical verification.",
+      "remaining": "Lipid specificity, remaining recovery assessments and other bank/visuals; build/UI.",
+      "validation": "Scoped structural audit passed6lessons121questions without hard errors/source gaps; diff check passed. New089/090 choices, keys1/2 and rationales reviewed in source. Rendered verification and build remain pending."
+    },
+    {
+      "date": "2026-09-27",
+      "scope": "Explicit lipid targets and recovery assessment cases093-100",
+      "sourceRead": "Official AHA2026 Dyslipidemia Top Things to Know full page, particularly item9.2025ACS11.2 lipid follow-up and Table21 discharge practices/cardiac rehabilitation section read in prior passes.",
+      "corrections": "Added risk-specific absolute lipid goals consistent with CCD. Replaced eight generic questions with original goal, arithmetic, follow-up, medication-access, rehabilitation and teach-back cases.",
+      "calculation": "Independently checked (160-80)/160*100=50%; absolute80 remains above55 target.",
+      "assessmentRead": "Revised093-100 choices/keys/rationales reviewed at authoring; original assembled forms read previously. Mechanical-complication113-116 still require reconciliation.",
+      "remaining": "Other assessment items, mechanical complications, full visual reconciliation, lesson architecture, current build and rendered verification.",
+      "validation": "Scoped structural audit6lessons121questions passed with no hard errors/source gaps. Diff check and independent percentage calculation passed. No build or rendered verification in this pass."
+    },
+    {
+      "date": "2026-09-27",
+      "scope": "Mechanical complications and procedural assessment inspection",
+      "sourceRead": "Actual2025ACS9.1 recommendations, synopsis and supporting text;9.2 recommendation table also read but not fully reconciled.",
+      "corrections": "Added surgical-center escalation, support-as-bridge and individualized repair timing. Replaced113-116 generic recognition questions with original red-flag, transfer, support and evidence-interpretation cases.",
+      "assessmentRead": "All assembled077-088 choices/keys/rationales inspected; multiple generic distractors are appropriate concurrent actions and need revision. Revised113-116 reviewed during authoring.",
+      "remaining": "Procedural077-088 reconciliation; earlier bank items, electrical/pericardial/LV-thrombus coverage, visual/lesson architecture, build/UI.",
+      "validation": "Scoped structural audit6lessons121questions passed without hard errors/source gaps; scoped diff check passed. Build and rendered review remain pending."
+    },
+    {
+      "date": "2026-09-27",
+      "scope": "Procedural077-088 and microaxial-pump population correction",
+      "sourceRead": "Actual2025ACS7.1 recommendation;7.3 recommendation/synopsis;7.4.1/7.4.2 recommendations/support;8.1 recommendations/support;8.2 recommendation and selected-population synopsis.",
+      "corrections": "Narrowed pump recommendation from AMI broadly to selected STEMI severe/refractory shock. Made IVUS/OCT recommendation explicit for left-main/complex lesions. Replaced twelve generic questions with focused original cases; keys varied and concurrent appropriate actions no longer treated as incorrect.",
+      "remaining": "Earlier bank items; electrical/pericardial/LV-thrombus coverage; full lesson architecture, visual review, build/UI.",
+      "validation": "Scoped structural audit6lessons121questions passed with no hard errors/source gaps; diff check passed. Revised077-088 reviewed during authoring. Build and rendered checks remain pending."
+    },
+    {
+      "date": "2026-09-27",
+      "scope": "Electrical complications, LV thrombus and post-MI pericarditis coverage",
+      "sourceRead": "Actual2025ACS9.2 supporting text/Table17,9.3 synopsis,9.4 synopsis and imaging/duration guidance. No complete arrhythmia or pericarditis guideline review claimed.",
+      "corrections": "Added primary-prevention ICD timing versus urgent rhythm pathways; LV-thrombus imaging and reassessment; pericarditis treatment distinctions. Added original122/123 cases, choices/key1/key2/rationales reviewed.",
+      "remaining": "Detailed pericarditis dosing and interactions need reconciliation; remaining bank items, lesson architecture/visuals, build/UI.",
+      "validation": "Scoped structural audit6lessons123questions passed without hard errors/source gaps; scoped diff check passed. Current build and rendered review remain pending."
+    },
+    {
+      "date": "2026-09-27",
+      "scope": "Subject-driven anticoagulant lesson split",
+      "corrections": "Moved11existing dosing paragraphs intact to a dedicated lesson, added original handoff visual and independent24mg check. Preserved the existing antiplatelet anchor for external links. Remapped generated anticoagulant concept questions and120/121 to the dedicated lesson. Updated main ledger to7lessons123questions and reviewing statuses.",
+      "remaining": "Remaining assessment review and clinical gaps; other large lessons need organization; current build and desktop/mobile review.",
+      "validation": "Imported assembled module:7lessons123questions,11paragraphs preserved in dedicated lesson; six intended question anchors confirmed. Structural audit has no hard errors/source gaps, with advisory for6questions in new lesson; no content padded to satisfy advisory. Diff and24mg arithmetic checks passed. Build/UI pending."
+    },
+    {
+      "date": "2026-09-27",
+      "scope": "Anticoagulant and DAPT assessments053-060",
+      "sourceRead": "Assembled original053-060 all options/keys/rationales inspected. Reopened current Lovenox dosing2.2-2.4 and bivalirudin label; UFH/DAPT recommendations read in prior passes retained.",
+      "corrections": "Replaced eight generic items with original dose-cap, renal, dialysis, procedural supplementation and DAPT implementation cases. Retained dedicated anticoagulant anchors.",
+      "calculations": "Independent checks:UFH5400->4000 and1080->1000; enox70kg->70mg daily atCrCl24; bival80kg bolus60mg and dialysis20mg/h versus standard140mg/h; enoxsupplement24mg.",
+      "remaining": "Earlier assessment items and061-076/101-108; pericarditis detail, additional lesson organization, visuals/build/UI.",
+      "validation": "Independent dosing arithmetic passed. Scoped structural audit7lessons123questions passed without hard errors/source gaps; six-question advisory for new lesson retained. Diff check passed; build/UI pending."
+    },
+    {
+      "date": "2026-09-27",
+      "scope": "Reperfusion/invasive assessment061-076",
+      "sourceRead": "All assembled061-076 questions/options/keys/rationales read. Actual2025ACS6.1 recommendation table and3.3 risk-score limitation rechecked; prior section5 reperfusion/contraindication source reads retained.",
+      "corrections": "Replaced16generic cases, including065-068 with multiple equivalent correct choices. Added explicit stable-high-risk24hour and revascularization-candidacy qualifications to lesson.",
+      "remaining": "Earlier bank items and101-108; full compiled review, pericarditis detail, lesson organization, visual/build/UI verification.",
+      "validation": "Scoped structural audit7lessons123questions passed without hard errors/source gaps, retaining6question advisory. Diff check passed. Revised061-076 reviewed during authoring; final assembled review/build/UI remain pending."
+    },
+    {
+      "date": "2026-09-27",
+      "scope": "P2Y12 assessment047-052",
+      "sourceRead": "All original assembled047-052 choices/keys/rationales inspected.2025ACS4.3.2 recommendations/Table7 re-read; prior full ticagrelor and prasugrel label reads retained.",
+      "corrections": "Replaced generic selection/timing items with contraindication, low-weight dose and angiography/CABG context cases. Removed mismatched prasugrel-only rationale attached to general selection assessment.",
+      "remaining": "Unreviewed earlier bank009-028/030-044 and101-108; pericarditis details and full lesson/visual/build/UI closure.",
+      "validation": "Scoped structural audit7lessons123questions passed without hard errors/source gaps; six-question lesson advisory retained. Diff check passed. New047-052 reviewed during authoring; full assembled review/build/UI pending."
+    },
+    {
+      "date": "2026-09-27",
+      "scope": "Initial-care assessment030-044",
+      "sourceRead": "All original assembled030-044 choices/keys/rationales inspected.2025ACS4.1 oxygen and4.2 analgesic text re-read; aspirin/Table6 and dangerous-mimic source reads retained from prior passes.",
+      "corrections": "Replaced15generic questions with oxygen, nitrate interaction/hemodynamics, dangerous differential and aspirin formulation/loading/maintenance cases. Explicitly prevented routine oxygen guidance from being misapplied to hypoxemia and symptom relief from canceling reperfusion.",
+      "calculation": "4*81=324mg verified independently; within162-325mg loading range.",
+      "remaining": "Original009-028/101-108; final assembled clinical read; pericarditis details, lesson organization/visual/build/UI checks.",
+      "validation": "Scoped structural audit7lessons123questions passed without hard errors/source gaps; six-question advisory retained. Diff and aspirin arithmetic checks passed. Revised030-044 reviewed during authoring; final assembled/build/UI review pending."
+    }
+  ]
+}

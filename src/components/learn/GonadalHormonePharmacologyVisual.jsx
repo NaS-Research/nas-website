@@ -1,3 +1,5 @@
+import styles from "./GonadalHormonePharmacologyVisual.module.css";
+
 const diagrams = {
   "gonadal-hpg-axis": ["Signal control", "Follow the pulse from hypothalamus to gonad", ["Pulse", "Hypothalamic GnRH", "Intermittent signaling preserves pituitary response"], ["Relay", "Pituitary LH and FSH", "Gonadotropins distribute steroidogenic and gametogenic work"], ["Feedback", "Steroids and inhibin", "Downstream hormones reshape the next signal"]],
   "gonadal-testicular": ["Testicular map", "Separate androgen production from sperm support", ["LH", "Leydig cell", "Generate testosterone from cholesterol-derived precursors"], ["FSH", "Sertoli cell", "Support germ cells and produce inhibin B"], ["Local", "Intratesticular testosterone", "Maintain the concentration required for spermatogenesis"]],
@@ -15,5 +17,5 @@ export default function GonadalHormonePharmacologyVisual({ type }) {
   const item = diagrams[type];
   if (!item) return null;
   const [eyebrow, title, ...columns] = item;
-  return <figure className="chol-visual" aria-label={title}><figcaption><span>{eyebrow}</span><strong>{title}</strong></figcaption><div className="chol-visual__flow">{columns.map(([name, focus, detail], index) => <div className="chol-visual__node" key={name}><span>{String(index + 1).padStart(2, "0")}</span><strong>{name}</strong><em>{focus}</em><p>{detail}</p></div>)}</div></figure>;
+  return <figure className="chol-visual" aria-label={title}><figcaption><span>{eyebrow}</span><strong>{title}</strong></figcaption><div className={`chol-visual__grid ${styles.grid}`}>{columns.map(([name, focus, detail], index) => <div className="chol-visual__node" key={name}><span>{String(index + 1).padStart(2, "0")}</span><strong>{name}</strong><em>{focus}</em><p>{detail}</p></div>)}</div></figure>;
 }

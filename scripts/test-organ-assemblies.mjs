@@ -1,0 +1,9 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';
+import {anatomyCollections} from '../src/data/anatomyCollections.js';import {organAssemblies,assemblyParts,supportingStructures} from '../src/data/organAssemblies.js';
+const catalog=JSON.parse(readFileSync('public/learn/body-atlas/structures.json'));
+test('All organ assemblies contain real, unique core and supporting structures',()=>{for(const id of Object.keys(organAssemblies)){const g=anatomyCollections.find(x=>x.id===id),core=assemblyParts(g,catalog,'surface'),support=supportingStructures(id,catalog),all=assemblyParts(g,catalog);assert(core.length,id);assert(support.length,id);assert.equal(new Set(all.map(x=>x.id)).size,all.length);assert(all.every(x=>core.includes(x)||support.includes(x)));assert.deepEqual(assemblyParts(g,catalog,'network'),support);}});
+test('Lung assembly includes five lobes, trachea, bronchi and pulmonary vessels without remote vessels',()=>{const g=anatomyCollections.find(x=>x.id==='lungs');assert.equal(assemblyParts(g,catalog,'surface').length,5);const s=supportingStructures('lungs',catalog);assert(s.some(x=>x.name==='Trachea'));assert(s.some(x=>x.name==='Left main bronchus'));assert(s.some(x=>x.name==='Right pulmonary artery'));assert(!s.some(x=>/renal|coronary|thyroid/.test(x.name)));});
+test('Exported organ studies retain exactly their manifest structure IDs',()=>{
+ const manifest=JSON.parse(readFileSync('design/anatomy/organ-study-manifest.json'));
+ for(const study of manifest){const b=readFileSync(`public/learn/models/organs/${study.id}.glb`),g=JSON.parse(b.subarray(20,20+b.readUInt32LE(12)));const ids=g.nodes.filter(n=>n.mesh!==undefined).map(n=>n.extras?.atlasSourceId);assert.deepEqual(new Set(ids),new Set(study.parts),study.id);assert(g.extensionsUsed.includes('KHR_draco_mesh_compression'));}
+});

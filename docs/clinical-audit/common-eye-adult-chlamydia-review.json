@@ -1,0 +1,36 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_pathway_review",
+  "sources": [
+    "https://www.cdc.gov/std/treatment-guidelines/chlamydia.htm",
+    "https://eyerounds.org/cases/68-Adult-Chlamydial-Conjunctivitis-Red-Eyes-Chronic.htm"
+  ],
+  "readScope": "CDC adult treatment, partner management, follow-up and pregnancy passages; Iowa case and discussion text returned in search. AAO full text and NHS page fetch failed; not used as full-text evidence.",
+  "findings": [
+    "Added adult inclusion-conjunctivitis systemic pathway and an original assessment.",
+    "Older Iowa case used a month of doxycycline and discussion gives variable durations; module uses CDC adult regimen explicitly, with ophthalmic reassessment for persistent disease. Historical automatic dual STI therapy not adopted."
+  ],
+  "remaining": [
+    "Full module clinical review",
+    "Rendering and assessment interactions",
+    "Final build"
+  ],
+  "validation": {
+    "desktop": "1440x1000: new adult chlamydia, herpes, Zirgan and neonatal restriction rows visually inspected; systemic diagram inspected. No page errors or horizontal overflow.",
+    "mobile": "390x844: same rows inspected. Diagram recaptured at offset below sticky navigation.",
+    "assessments": "All nine explicit infection cases encountered: 31 desktop attempts and 19 mobile attempts. Each attempt checked mixed correct/incorrect scoring, rendered stems, keyed answers, explanations and valid review links. No page errors or horizontal overflow.",
+    "limitation": "This validates interactions, not comprehensive clinical review of all generated bank questions.",
+    "pending": "Remaining clinical content, full bank read and final build"
+  },
+  "hashes": {
+    "src/data/modules/commonEyeConditions.js": "883bf8ff61c11acc53a98a5bd379299dd605bca6963e9d080c4abc951a971ede",
+    "src/data/questionBanks/commonEyeConditions.js": "7e165a43c2084788eb60014ecaa7a5f613c42ff2a6d888ae13c782b81a31cb0a",
+    "src/components/learn/CommonEyeConditionsVisual.jsx": "842217fe85df82772b2f3fd2b69ce90167202ed0079aa014ab6e51fd085234b5"
+  },
+  "finalClosure": {
+    "date": "2026-09-26",
+    "status": "resolved_for_common_eye_module",
+    "evidence": "common-eye-completion-review.json",
+    "note": "Earlier statuses, counts and pending text are historical snapshots. Final completion record and its lesson mapping supersede Common Eye remaining-work statements. Ear-module work remains separate."
+  }
+}

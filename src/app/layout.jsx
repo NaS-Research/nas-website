@@ -1,3 +1,6 @@
+import MemberProvider from "@/components/member/MemberProvider";
+import PersonalTools from "@/components/member/PersonalTools";
+import "@/components/member/member.css";
 import "./globals.css";
 import "./accessibility.css";
 import "./publication-logo.css";
@@ -118,11 +121,11 @@ export default function RootLayout({ children }) {
       </head>
       <body className="bg-red-500 min-h-screen antialiased">
         <a className="nas-skip-link" href="#main-content">Skip to content</a>
-        <Navbar authEnabled={authReady()} />
+        <MemberProvider><Navbar authEnabled={authReady()} />
         <PageNavigationMotion />
         <main id="main-content" tabIndex={-1}>
           {children}
-        </main>
+        </main><PersonalTools /></MemberProvider>
       </body>
     </html>
   );

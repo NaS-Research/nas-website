@@ -1,0 +1,110 @@
+/* Scoped workspace layout; the atlas owns its controls at every viewport size. */
+.full-body-atlas.atlas-workbench { display: grid; grid-template-columns: 220px minmax(0, 1fr) 280px; grid-template-rows: auto auto auto minmax(650px, 72vh) auto; height: auto; min-height: 0; border-radius: 16px; color: #e9e5de; background: #080808; }
+.atlas-workbench button, .atlas-workbench input, .atlas-workbench select { font: inherit; }
+.atlas-workbench button { cursor: pointer; }
+.atlas-workbench button:disabled { opacity: .4; cursor: wait; }
+.atlas-workbench button:focus-visible, .atlas-workbench input:focus-visible, .atlas-workbench select:focus-visible, .atlas-workbench a:focus-visible { outline: 2px solid #e5c18b; outline-offset: 3px; }
+.atlas-topbar, .atlas-presets, .atlas-footer { grid-column: 1 / -1; display: flex; align-items: center; gap: 12px; border-bottom: 1px solid #25231f; }
+.atlas-topbar { justify-content: space-between; padding: 18px 20px; }
+.atlas-topbar > div { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.atlas-topbar strong { font-size: 14px; font-weight: 500; }
+.atlas-live-dot { width: 6px; height: 6px; background: #e5c18b; border-radius: 50%; box-shadow: 0 0 12px #e5c18b55; }
+.atlas-count { color: #928c83; font-size: 10px; padding-left: 8px; }
+.atlas-topbar button, .atlas-layer-actions button, .atlas-selection button, .atlas-error button { display: inline-flex; align-items: center; justify-content: center; gap: 6px; background: #171612; color: #d5c6af; padding: 8px 10px; border: 1px solid #3a352d; border-radius: 6px; font-size: 11px; }
+.atlas-presets { padding: 12px 20px; overflow-x: auto; }
+.atlas-presets button { flex-shrink: 0; padding: 8px 12px; background: transparent; color: #a9a299; font-size: 11px; border: 1px solid transparent; border-radius: 6px; }
+.atlas-workbench button[aria-pressed="true"] { color: #f0d2a4; border-color: #786449; background-color: #e5c18b12; }
+.atlas-browser { padding: 16px 12px; border-right: 1px solid #25231f; min-width: 0; min-height: 0; display: flex; flex-direction: column; }
+.atlas-search { display: flex; gap: 8px; align-items: center; background: #121210; border: 1px solid #3b3730; padding: 10px; border-radius: 6px; color: #c5b59f; }
+.atlas-search input { background: transparent; border: 0; width: 100%; min-width: 0; outline: none; color: #eee7dc; font-size: 12px; }
+.atlas-search:focus-within { border-color: #e5c18b; }
+.atlas-browser select { color: #c3bcb0; background: #10100f; border: 1px solid #34312b; border-radius: 5px; width: 100%; padding: 9px; margin-top: 10px; font-size: 11px; }
+.atlas-browser-count { font-size: 10px; color: #9d9589; padding: 14px 4px 8px; }
+.atlas-results { overflow-y: auto; min-height: 0; scrollbar-width: thin; scrollbar-color: #40382c transparent; }
+.atlas-results button { display: flex; align-items: flex-start; gap: 9px; width: 100%; text-align: left; padding: 10px 6px; border: 1px solid transparent; border-radius: 5px; background: transparent; color: #d1cac0; font-size: 11px; line-height: 1.5; }
+.atlas-results button > span:first-child { width: 5px; height: 5px; flex-shrink: 0; border-radius: 50%; margin-top: 6px; }
+.atlas-results button small { display: block; color: #8e877c; font-size: 9px; }
+.atlas-results button:hover { background: #ffffff08; }
+.atlas-results > p { color: #a49b8e; font-size: 11px; padding: 12px 4px; line-height: 1.7; }
+.atlas-workbench .atlas-stage { height: 100%; min-height: 0; border: 0; }
+.atlas-workbench .full-body-atlas__stage-heading { top: 22px; left: 20px; right: 20px; }
+.atlas-workbench .full-body-atlas__stage-heading strong { font-size: 21px; }
+.atlas-workbench .full-body-atlas__stage-heading > span { font-size: 9px; }
+.atlas-camera { position: absolute; z-index: 3; bottom: 55px; left: 50%; transform: translateX(-50%); display: flex; gap: 2px; padding: 5px; background: #10100ee8; border: 1px solid #373127; border-radius: 9px; }
+.atlas-camera button { min-width: 30px; min-height: 32px; padding: 5px 8px; display: flex; align-items: center; justify-content: center; background: transparent; border: 1px solid transparent; color: #b5aa98; border-radius: 4px; font-size: 10px; text-transform: capitalize; }
+.atlas-workbench .full-body-atlas__instructions { bottom: 22px; font-size: 9px; white-space: nowrap; }
+.atlas-inspector { border-left: 1px solid #25231f; padding: 20px 16px; overflow-y: auto; min-height: 0; scrollbar-width: thin; scrollbar-color: #40382c transparent; }
+.atlas-eyebrow { text-transform: uppercase; font-size: 9px; letter-spacing: .12em; color: #b49d7b; }
+.atlas-inspector h3 { font-size: 19px; font-weight: 400; letter-spacing: -.03em; line-height: 1.2; margin: 10px 0; }
+.atlas-inspector p { font-size: 11px; line-height: 1.7; color: #a59d91; }
+.atlas-layer-actions { display: flex; gap: 6px; padding: 16px 0 12px; }
+.atlas-layer-actions button { flex: 1; font-size: 10px; padding: 6px; }
+.atlas-layer { border-top: 1px solid #25231f; padding: 11px 0; }
+.atlas-layer > div { display: flex; justify-content: space-between; }
+.atlas-layer > div button { display: flex; align-items: center; gap: 8px; padding: 4px; border: 1px solid transparent; border-radius: 4px; color: #c5bfb4; background: transparent; font-size: 11px; text-align: left; }
+.atlas-layer strong { font-weight: 500; }
+.atlas-layer i { height: 6px; width: 6px; border-radius: 50%; }
+.atlas-layer label { display: flex; align-items: center; gap: 8px; font-size: 9px; color: #9b9387; padding: 7px 4px 0; }
+.atlas-layer input { flex: 1; min-width: 0; width: 70px; height: 14px; accent-color: #ccb183; }
+.atlas-layer output { min-width: 27px; text-align: right; font-variant-numeric: tabular-nums; }
+.atlas-explode { padding: 16px 0; border-top: 1px solid #343029; }
+.atlas-explode label { display: flex; justify-content: space-between; font-size: 11px; }
+.atlas-explode input { width: 100%; accent-color: #d6b887; margin: 10px 0; }
+.atlas-explode p { font-size: 10px; }
+.atlas-selection { border-top: 1px solid #343029; padding-top: 18px; }
+.atlas-selection h3 { text-transform: none; }
+.atlas-selection-actions { display: flex; gap: 5px; flex-wrap: wrap; margin: 12px 0; }
+.atlas-selection .atlas-heart-link { width: 100%; margin-top: 10px; justify-content: space-between; text-align: left; }
+.atlas-footer { justify-content: space-between; flex-wrap: wrap; padding: 14px 20px; border-top: 1px solid #25231f; border-bottom: 0; color: #92897d; font-size: 10px; }
+.atlas-footer i { padding: 0 8px; font-style: normal; color: #554b3d; }
+.atlas-footer a:hover { color: #e5c18b; }
+.atlas-error, .atlas-empty { position: absolute; z-index: 4; top: 40%; left: 10%; width: 80%; border: 1px solid #63513a; background: #16130ff2; padding: 20px; color: #e8d5b7; font-size: 12px; line-height: 1.7; border-radius: 8px; }
+.atlas-error button { margin-top: 10px; }
+.atlas-load-status { position: absolute; z-index: 3; top: 85px; left: 20px; color: #d2b989; font-size: 10px; }
+.full-body-atlas.atlas-workbench--expanded { position: fixed; inset: 12px; z-index: 1000; margin: 0; grid-template-rows: auto auto auto minmax(0, 1fr) auto; border-radius: 12px; box-shadow: 0 0 0 20px #000d; }
+@media (max-width: 1100px) {
+  .full-body-atlas.atlas-workbench { grid-template-columns: 190px minmax(0, 1fr); grid-template-rows: auto auto auto 650px auto auto; }
+  .atlas-inspector { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; border-top: 1px solid #25231f; border-left: 0; overflow: visible; }
+  .atlas-layer-list { grid-column: 1; grid-row: 2 / span 3; }
+  .atlas-layer-actions { grid-column: 1; grid-row: 1; align-self: end; margin-top: 105px; }
+  .atlas-inspector header { grid-column: 1; grid-row: 1; }
+  .atlas-explode { grid-column: 2; grid-row: 1; }
+  .atlas-selection { grid-column: 2; grid-row: 2 / span 3; }
+  .full-body-atlas.atlas-workbench--expanded { display: grid; overflow-y: auto; grid-template-rows: max-content max-content max-content 65vh max-content max-content; }
+}
+@media (max-width: 640px) {
+  .full-body-atlas.atlas-workbench { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto auto 520px auto auto auto; }
+  .atlas-topbar { padding: 14px 12px; gap: 8px; align-items: flex-start; }
+  .atlas-topbar > div { gap: 6px; }
+  .atlas-count { width: 100%; padding: 0; font-size: 9px; }
+  .atlas-topbar button { flex-shrink: 0; max-width: 120px; font-size: 10px; }
+  .atlas-presets { padding: 10px; }
+  .atlas-stage { grid-row: 4; }
+  .atlas-browser { grid-row: 5; border: 0; border-top: 1px solid #25231f; }
+  .atlas-results { max-height: 230px; }
+  .atlas-inspector { display: block; padding: 20px 16px; }
+  .atlas-layer-actions { margin: 0; }
+  .atlas-camera { gap: 0; padding: 4px; max-width: calc(100% - 12px); }
+  .atlas-camera button { padding: 4px 6px; min-width: 27px; }
+  .atlas-footer { gap: 8px; padding: 14px; font-size: 9px; }
+  .full-body-atlas.atlas-workbench--expanded { inset: 4px; grid-template-rows: max-content max-content max-content 65vh max-content max-content max-content; }
+}
+/* Guided anatomy keeps the model central and gives organ selections a purpose. */
+.atlas-browser-tabs{display:flex;gap:5px;margin-bottom:23px}.atlas-browser-tabs button{flex:1;border:1px solid #3b3730;color:#bcb4a5;border-radius:6px;background:#13130f;font-size:10px;padding:10px 5px}.atlas-organ-intro{font-size:11px;line-height:1.8;color:#a59d91;margin:12px 0 20px}.atlas-organ-cards{display:grid;gap:9px}.atlas-organ-cards button{display:flex;align-items:center;gap:12px;width:100%;border:1px solid #363329;background:linear-gradient(135deg,#24251a55,#10110e);border-radius:10px;padding:16px 10px;text-align:left;color:#d6d1c5}.atlas-organ-number{font-size:18px;font-weight:300}.atlas-organ-cards strong{display:block;font-size:14px;font-weight:400}.atlas-organ-cards small{display:block;font-size:9px;color:#999882;margin-top:5px;line-height:1.6}.atlas-organ-arrow{margin-left:auto;color:#8e8d74}.atlas-organ-toolbar{position:absolute;top:89px;left:16px;right:16px;display:flex;gap:7px;align-items:center;flex-wrap:wrap;z-index:3}.atlas-organ-toolbar button{background:#11150ee8;color:#d5c6a6;border:1px solid #56543e;border-radius:6px;padding:8px 10px;font-size:10px}.atlas-organ-toolbar>span{color:#a3a78a;font-size:9px}.atlas-organ-lesson h3{font-size:29px;margin:14px 0}.atlas-organ-lesson>p{font-size:12px;line-height:1.9}.atlas-function-flow{display:grid;gap:8px;margin:23px 0}.atlas-function-flow button{display:flex;align-items:center;position:relative;gap:12px;padding:12px;border:1px solid #444635;background:#151a11;color:#c6ccb8;border-radius:7px;text-align:left;font-size:12px}.atlas-function-flow button>span{display:grid;place-items:center;border:1px solid #62694b;width:25px;height:25px;border-radius:50%;font-size:10px}.atlas-function-flow i{position:absolute;bottom:-13px;left:24px;font-style:normal;color:#a3a77e;z-index:1}.atlas-function-detail{padding:14px;background:#c6ba8a0c;border-left:2px solid #d3bd88;min-height:95px}.atlas-look{margin:24px 0 18px}.atlas-organ-lesson>a{font-size:11px;color:#d3bd88;text-decoration:underline;text-underline-offset:4px}.atlas-deep-link{display:block;width:100%;font-size:11px;background:#d3bd88;color:#171d12;border:0;border-radius:6px;padding:12px;margin-top:20px}.atlas-section-control{margin:24px 0;border-block:1px solid #393a2f;padding:17px 0}.atlas-section-control>label{display:flex;gap:9px;align-items:center;font-size:12px;color:#d6d1bc}.atlas-section-control input{accent-color:#d3bd88}.atlas-section-control select{width:100%;background:#151a11;color:#bfc6ad;border:1px solid #454d35;border-radius:5px;padding:9px;font-size:10px;margin:15px 0}.atlas-cut-slider{font-size:10px!important}.atlas-cut-slider input{width:100%;min-width:0}.atlas-section-control p{font-size:10px;margin-top:12px}.atlas-advanced-controls>summary{cursor:pointer;color:#c3b293;font-size:12px;padding:5px 0 20px}.atlas-guide-empty{margin-bottom:25px}.atlas-stage{scroll-margin-top:85px}
+@media(min-width:1101px){.full-body-atlas.atlas-workbench{grid-template-columns:240px minmax(0,1fr) 310px;grid-template-rows:auto auto auto minmax(760px,78vh) auto}.atlas-inspector{padding:24px 20px}}
+@media(max-width:1100px){.atlas-inspector{display:block}.atlas-organ-lesson{max-width:700px;margin:auto}.atlas-inspector .atlas-layer-actions{margin:0}.atlas-inspector .atlas-layer-list{display:grid;grid-template-columns:1fr 1fr;gap:0 22px}.atlas-section-control{max-width:700px;margin:24px auto}.atlas-guide-empty{max-width:700px;margin:auto}.atlas-function-flow{grid-template-columns:repeat(3,minmax(0,1fr))}.atlas-function-flow i{display:none}.atlas-function-flow button{font-size:11px;gap:7px}.atlas-function-detail{min-height:0}}
+@media(max-width:640px){.atlas-organ-cards{grid-template-columns:1fr 1fr}.atlas-organ-cards button{padding:13px 8px;gap:8px}.atlas-organ-cards small{font-size:8px}.atlas-organ-cards strong{font-size:13px}.atlas-organ-number{font-size:15px}.atlas-organ-toolbar{top:76px}.atlas-inspector .atlas-layer-list{display:block}.atlas-function-flow button{flex-direction:column;text-align:center;padding:10px 5px}.atlas-browser-tabs button{font-size:11px}}
+@media(min-width:1101px){.full-body-atlas.atlas-workbench--expanded{grid-template-rows:auto auto auto minmax(0,1fr) auto}}
+/* Keep the expanded directory scrollable without stretching the anatomy viewport. */
+.atlas-organ-cards{overflow-y:auto;min-height:0;align-content:start;margin-top:12px;scrollbar-width:thin;scrollbar-color:#40382c transparent}
+.atlas-organ-cards button:disabled{cursor:not-allowed}
+.atlas-browser>select,.atlas-browser>.atlas-eyebrow,.atlas-browser-tabs,.atlas-organ-intro{flex-shrink:0}
+@media(max-width:640px){.atlas-organ-cards{max-height:440px}}
+.atlas-group-parts{border-block:1px solid #34312b;margin:18px 0;padding:12px 0;font-size:11px;color:#c9bdac}.atlas-group-parts summary{cursor:pointer}.atlas-group-parts>div{max-height:220px;overflow:auto;padding-top:10px}.atlas-group-parts button{display:block;width:100%;text-align:left;background:#141412;border:1px solid #35312b;border-radius:5px;color:#c9c0b0;padding:9px;margin:5px 0;font-size:10px;line-height:1.5}
+.atlas-assembly-controls{position:absolute;top:139px;left:16px;right:16px;z-index:3;display:flex;flex-direction:column;align-items:flex-start;gap:8px}.atlas-assembly-controls>span{font-size:9px;letter-spacing:.08em;color:#a69e90}.atlas-assembly-controls>div{display:flex;flex-wrap:wrap;gap:4px;padding:4px;background:#11120fed;border:1px solid #3e3b32;border-radius:9px}.atlas-assembly-controls button{font-size:10px;border:1px solid transparent;border-radius:5px;background:none;padding:7px 9px;color:#bdb7aa}.atlas-assembly-controls button[aria-pressed=true]{background:#cab78c20;color:#eadabd;border-color:#897a58}
+@media(max-width:640px){.atlas-assembly-controls{top:130px;left:12px;right:12px}.atlas-assembly-controls button{font-size:9px;padding:6px}.atlas-assembly-controls>span{font-size:8px}}
+/* Reserve space above the study so labels never cover the top of an organ. */
+.atlas-stage:has(.atlas-assembly-controls) .full-body-atlas__viewer{top:198px;height:calc(100% - 254px)}
+@media(max-width:640px){.atlas-stage:has(.atlas-assembly-controls) .full-body-atlas__viewer{top:194px;height:calc(100% - 250px)}}
+.atlas-sex-selector{grid-column:1/-1;display:flex;align-items:center;gap:6px;padding:10px 18px;border-bottom:1px solid #ffffff12;background:#161b1b;flex-wrap:wrap}
+.atlas-sex-selector>span{font-size:11px;color:#a2aaa6;margin-right:12px}.atlas-sex-selector button{border:1px solid #ffffff20;border-radius:7px;padding:7px 19px;font:inherit;font-size:12px;background:transparent;color:#cdd5d0;cursor:pointer}.atlas-sex-selector button[aria-pressed=true]{background:#cfb78e;color:#181c1b;border-color:#cfb78e}.atlas-sex-selector small{margin-left:auto;color:#a2aaa6;font-size:10px}@media(max-width:600px){.atlas-sex-selector small{width:100%;margin:5px 0 0}}

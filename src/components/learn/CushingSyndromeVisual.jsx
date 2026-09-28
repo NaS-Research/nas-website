@@ -1,3 +1,5 @@
+import styles from "./CushingSyndromeVisual.module.css";
+
 const diagrams = {
   "cushing-recognition": ["Clinical signal", "Separate cortisol excess from common look-alikes", ["Observe", "Progressive pattern", "Bruising, weakness, striae, fracture, diabetes, and hypertension cluster"], ["Reconstruct", "Every glucocorticoid route", "Oral, injected, inhaled, topical, ocular, and hidden products count"], ["Name", "Syndrome or disease", "Pituitary ACTH defines Cushing disease within the broader syndrome"]],
   "cushing-testing": ["Biochemical proof", "Test excess, rhythm, and feedback", ["Nadir", "Late-night saliva", "Repeated sampling tests loss of the nocturnal low point"], ["Integration", "Urine free cortisol", "Complete collections estimate daily unbound cortisol excretion"], ["Feedback", "Dexamethasone suppression", "Adequate drug exposure should suppress normal morning cortisol"]],
@@ -15,5 +17,5 @@ export default function CushingSyndromeVisual({ type }) {
   const item = diagrams[type];
   if (!item) return null;
   const [eyebrow, title, ...columns] = item;
-  return <figure className="chol-visual" aria-label={title}><figcaption><span>{eyebrow}</span><strong>{title}</strong></figcaption><div className="chol-visual__flow">{columns.map(([name, focus, detail], index) => <div className="chol-visual__node" key={name}><span>{String(index + 1).padStart(2, "0")}</span><strong>{name}</strong><em>{focus}</em><p>{detail}</p></div>)}</div></figure>;
+  return <figure className="chol-visual" aria-label={title}><figcaption><span>{eyebrow}</span><strong>{title}</strong></figcaption><div className={`chol-visual__grid ${styles.grid}`}>{columns.map(([name, focus, detail], index) => <div key={name}><span>{String(index + 1).padStart(2, "0")}</span><strong>{name}</strong><em>{focus}</em><p>{detail}</p></div>)}</div></figure>;
 }

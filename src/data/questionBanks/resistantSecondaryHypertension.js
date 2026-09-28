@@ -41,7 +41,7 @@ function distractors(index, field) {
   return [4, 9, 16].map((offset) => concepts[(index + offset) % concepts.length][field]);
 }
 
-export const resistantSecondaryHypertensionQuestionBank = concepts.flatMap((concept, conceptIndex) =>
+const generatedQuestions = concepts.flatMap((concept, conceptIndex) =>
   dimensions.map(([field, prefix], dimensionIndex) => ({
     id: `resistant-secondary-hypertension-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`,
     question: `${prefix} ${concept.name}?`,
@@ -51,3 +51,121 @@ export const resistantSecondaryHypertensionQuestionBank = concepts.flatMap((conc
     reviewHref: `#${concept.lesson}`,
   })),
 );
+
+// Preserve stable question IDs while replacing generic prompts with clinical decisions.
+const reviewedCases = {
+  "resistant-secondary-hypertension-062": {
+    question: "Eplerenone is proposed solely for hypertension in a patient with creatinine clearance 42 mL/min and potassium 4.3 mEq/L. Which label restriction controls this decision?",
+    choices: ["Normal potassium removes all renal restrictions", "Only clearance at or below 30 matters", "Hypertension use is contraindicated below 50 mL/min", "A smaller dose eliminates the contraindication"],
+    answer: 2,
+    rationale: "Eplerenone has an additional hypertension-specific renal exclusion. Criteria for another indication must not replace it.",
+    reviewHref: "#stepwise-resistant-treatment",
+  },
+  "resistant-secondary-hypertension-102": {
+    question: "A patient without HFrEF has confirmed resistant hypertension and eGFR 38 mL/min/1.73 m2. How should the 2025 AHA/ACC routine MRA add-on recommendation be interpreted?",
+    choices: ["Its stated eGFR criterion is at least 45; individualize care with specialist input", "Every patient above 30 automatically qualifies", "Kidney function is irrelevant", "All MRA use below 45 is universally contraindicated"],
+    answer: 0,
+    rationale: "The recommendation's population and a drug-label contraindication are different. Review the indication, exact product, potassium and kidney risk before selecting treatment.",
+  },
+  "resistant-secondary-hypertension-004": {
+    question: "A chart labels a patient resistant after one office reading taken with an undersized cuff. Which error needs correction first?",
+    choices: ["Failure to order adrenal imaging", "Failure to add a fifth medicine", "Using an unreliable measurement to classify treatment failure", "Continuing home monitoring"],
+    answer: 2,
+    rationale: "Cuff fit and standardized repeat measurements must be addressed before using the reading to classify resistance.",
+  },
+  "resistant-secondary-hypertension-007": {
+    question: "Adherence and tolerated doses are documented, but high office readings are the only pressure data. Which missing evidence helps distinguish true resistance from a treated white-coat effect?",
+    choices: ["Validated home or ambulatory pressure", "Another prescription count", "A normal potassium alone", "An adrenal CT regardless of biochemical findings"],
+    answer: 0,
+    rationale: "Out-of-office pressure determines whether the elevation persists beyond the clinic. Drug counts and potassium do not answer that question.",
+  },
+  "resistant-secondary-hypertension-010": {
+    question: "Pressure is controlled on four necessary complementary drugs. A clinician proposes deleting the resistant-hypertension diagnosis solely because today's reading is at goal. Which response is appropriate?",
+    choices: ["Control on four drugs rules out resistance", "Stop two medicines to test the diagnosis", "The phenotype requires uncontrolled pressure at every visit", "Control requiring four or more drugs remains a resistant phenotype"],
+    answer: 3,
+    rationale: "Successful control does not erase the treatment requirement. Continue individualized safety and contributor review.",
+  },
+  "resistant-secondary-hypertension-011": {
+    question: "A patient controlled on four agents reports dizziness after a dose change. Which follow-up best addresses the new concern?",
+    choices: ["Ignore symptoms because the office value is at goal", "Assess orthostatic pressure, home readings and the exact regimen change", "Automatically add another agent", "Stop all monitoring because control was achieved"],
+    answer: 1,
+    rationale: "Treatment success includes tolerability. Symptoms require pressure and medication reassessment rather than reliance on one office value.",
+  },
+  "resistant-secondary-hypertension-012": {
+    question: "Which statement about controlled resistant hypertension is incorrect?",
+    choices: ["Treatment burden still matters", "Secondary causes may remain relevant", "A controlled reading proves there is no secondary cause", "Medication safety still needs follow-up"],
+    answer: 2,
+    rationale: "Response to several drugs does not exclude an underlying contributor or secondary cause.",
+  },
+  "resistant-secondary-hypertension-078": {
+    question: "A patient with episodic headache, sweating and palpitations is being evaluated for a catecholamine-secreting tumor. Which initial biochemical test fits?",
+    choices: ["Aldosterone alone", "Random serum cortisol", "Plasma free metanephrines or urinary fractionated metanephrines", "TSH alone"],
+    answer: 2,
+    rationale: "Fractionated metanephrines are the recommended initial biochemical tests. Plasma collection needs appropriate preparation and posture-matched reference intervals; a result must be interpreted in context.",
+  },
+  "resistant-secondary-hypertension-082": {
+    question: "A patient being assessed for cortisol excess works rotating night shifts. Why reconsider a routine late-night salivary cortisol protocol?",
+    choices: ["Shift work proves Cushing syndrome", "The assumed sleep-related cortisol nadir may not fit the schedule", "A random cortisol always resolves the issue", "Adrenal imaging replaces biochemical testing"],
+    answer: 1,
+    rationale: "Variable sleep timing can undermine this test. Select a suitable screening strategy with endocrine input rather than treating a clock-time sample as definitive.",
+  },
+  "resistant-secondary-hypertension-002": {
+    question: "A stable, asymptomatic outpatient has modest office elevation on three drugs, but adherence and home readings are unknown. What should happen before routine escalation?",
+    choices: ["Confirm usual pressure and actual medication exposure", "Diagnose true resistance from the prescription count", "Assume home pressure matches office pressure", "Replace all three agents without reviewing doses"],
+    answer: 0,
+    rationale: "Missing exposure and out-of-office evidence leaves apparent resistance unconfirmed.",
+  },
+  "resistant-secondary-hypertension-003": {
+    question: "A patient fills every prescription but reports taking tablets only on workdays. What does the refill history establish?",
+    choices: ["Daily adherence", "Availability, without proving daily ingestion", "True drug resistance", "White-coat effect"],
+    answer: 1,
+    rationale: "Dispensing records support access assessment; they do not prove ingestion. Clarify the routine before escalating.",
+  },
+  "resistant-secondary-hypertension-006": {
+    question: "Sustained elevation is confirmed despite tolerated, optimized complementary therapy and verified use. Which next approach fits true resistance?",
+    choices: ["Stop investigating because adherence is confirmed", "Treat the office readings as white-coat effect", "Evaluate secondary causes and optimize add-on treatment", "Remove the diuretic to reduce the drug count"],
+    answer: 2,
+    rationale: "Confirmation permits cause-directed evaluation and treatment optimization; it does not end the workup.",
+  },
+  "resistant-secondary-hypertension-008": {
+    question: "Why can adding drugs during unrecognized intermittent medication use cause harm when regular use resumes?",
+    choices: ["Adherence makes every agent ineffective", "Refills automatically change the prescribed dose", "Resuming treatment proves an endocrine cause", "Combined exposure may lower pressure excessively"],
+    answer: 3,
+    rationale: "A regimen intensified during missed doses may become excessive with full exposure. Review use and response together.",
+  },
+  "resistant-secondary-hypertension-110": {
+    question: "A patient referred for Paradise renal denervation has a stented renal artery. What should the team recognize?",
+    choices: ["The stent guarantees procedural safety", "This is a listed device contraindication", "Stenting removes the need for anatomy review", "The device replaces all medicines afterward"],
+    answer: 1,
+    rationale: "FDA device information lists a stented renal artery among contraindications. Selection requires the exact device labeling; renal denervation remains adjunctive.",
+  },
+  "resistant-secondary-hypertension-049": {
+    question: "A patient with resistant hypertension has a negative aldosterone-renin screen while potassium is 2.9 mEq/L. What is the best interpretation?",
+    choices: ["Primary aldosteronism is excluded", "Correct potassium and repeat screening under appropriate conditions", "Low potassium confirms unilateral disease", "Proceed directly to adrenalectomy"],
+    answer: 1,
+    rationale: "Hypokalemia can suppress aldosterone and produce a false-negative result. Correct it and reassess; neither potassium nor this screen establishes laterality.",
+  },
+  "resistant-secondary-hypertension-050": {
+    question: "An aldosterone-renin ratio is borderline positive during beta-blocker treatment. What should the reviewer consider?",
+    choices: ["The medicine makes the result definitive", "Stop every antihypertensive immediately", "Medication-related renin suppression may cause a false positive", "A CT nodule would eliminate medication interference"],
+    answer: 2,
+    rationale: "Beta blockers can lower renin. Review hormone values and clinical probability; arrange safe medication adjustment and repeat testing when appropriate. Do not abruptly stop treatment or use imaging to validate the ratio.",
+  },
+  "resistant-secondary-hypertension-105": {
+    question: "An adult taking Tryvio 12.5 mg daily asks to double the dose because a trial used 25 mg. Which response is correct?",
+    choices: ["Use 25 mg whenever pressure remains high", "Alternate 12.5 and 25 mg", "Use 25 mg only with food", "The approved dose remains 12.5 mg daily; reassess the treatment plan"],
+    answer: 3,
+    rationale: "The 25 mg dose is not approved. It did not meaningfully improve pressure reduction over 12.5 mg and increased edema or fluid-retention risk.",
+  },
+  "resistant-secondary-hypertension-106": {
+    question: "Aprocitentan is proposed for an adult with NYHA class III heart failure. What does its label support?",
+    choices: ["Use is not recommended in this population", "Heart failure is its preferred indication", "Normal potassium removes the concern", "Start at 25 mg to improve congestion"],
+    answer: 0,
+    rationale: "Patients with NYHA III or IV heart failure were not studied and use is not recommended. Fluid retention is a relevant safety concern; normal potassium does not resolve it.",
+  },
+};
+
+export const resistantSecondaryHypertensionQuestionBank = generatedQuestions.map((question) => ({
+  ...question,
+  ...reviewedCases[question.id],
+}));

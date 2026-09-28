@@ -1,0 +1,81 @@
+{
+  "module": "toxicology-antidotes",
+  "status": "verified",
+  "reviewDate": "2026-09-27",
+  "scope": {
+    "slug": "toxicology-antidotes",
+    "lessons": [
+      "toxicology-stabilization",
+      "decontamination-elimination",
+      "toxidromes-diagnostics",
+      "acetaminophen-poisoning",
+      "opioids-sedatives",
+      "ethanol-thiamine",
+      "cardiotoxic-poisoning",
+      "digoxin-fab-rescue",
+      "local-anesthetic-lipid-rescue",
+      "cellular-blood-toxins",
+      "toxic-alcohol-rescue",
+      "salicylate-poisoning",
+      "methemoglobinemia-rescue",
+      "hydrocarbon-exposure",
+      "nicotine-poisoning",
+      "neurotoxic-syndromes",
+      "methylxanthine-poisoning",
+      "serotonin-toxicity",
+      "metabolic-cytotoxic-antidotes",
+      "isoniazid-pyridoxine-rescue",
+      "valproate-poisoning",
+      "lead-poisoning-chelation",
+      "acute-iron-poisoning",
+      "aluminum-toxicity-dialysis",
+      "arsenic-mercury-exposure",
+      "thallium-radiation-antidotes",
+      "anticoagulant-reversal",
+      "preparedness-envenomation"
+    ],
+    "questions": 266,
+    "references": 150
+  },
+  "book": {
+    "edition": "RxPrep2023",
+    "chapter": 81,
+    "pdfPages": [
+      992,
+      998
+    ],
+    "topicRows": 38,
+    "coverage": "toxicology-chapter-coverage.json",
+    "privacy": "Private source excluded from git; original explanations and questions only."
+  },
+  "evidence": "toxicology-review.json",
+  "validation": {
+    "clinical": "Actual full lessons, visual objects, questions/keys/explanations and references reviewed against recorded source reads; source discrepancies explicitly attributed.",
+    "calculations": "Independent numerical checks recorded in findings129,130,131,132,133,135 and topic-specific findings.",
+    "structural": "Final toxicology audit28 lessons266 questions, no hard errors/source gaps; companion ALF12 lessons120 questions passed.",
+    "application": "Production build63676 exit0 after latest companion changes.",
+    "ui": "Targeted desktop1280x900/mobile390x844 visual checks throughout changes; randomized10-question practice submission and feedback checked. New cases separately reviewed; no claim all random combinations tested."
+  },
+  "companionCorrections": [
+    "acute-liver-failure: acetaminophen timing/stopping and mushroom injury; four assessment replacements",
+    "hypertensive-emergencies: pheochromocytoma versus acute cocaine distinction in lesson, assessment concept and visual",
+    "seizures-epilepsy: topiramate/valproate hyperammonemia and hypothermia warnings",
+    "pediatric-parenteral-nutrition: aluminum draft target and accumulation-risk qualification",
+    "coagulation-anticoagulant-pharmacology: andexanet U.S. sales status",
+    "secondary-stroke-prevention: current U.S. factor Xa bleeding pathway"
+  ],
+  "limitations": [
+    "Not independent pharmacist review or clinical certification.",
+    "Atropine maintenance and phenobarbital charcoal source inconsistencies are documented and attributed; no unsupported universal protocol is asserted.",
+    "Selected off-label antidote evidence and special-population data are limited; those boundaries are explicit in lessons.",
+    "Companion correction does not imply complete review of its entire module.",
+    "Local checks do not establish production deployment, live state or authenticated persistence."
+  ],
+  "unresolvedMaterialIssues": [],
+  "sourceHashes": {
+    "src/data/modules/toxicologyAntidotes.js": "f1dab1c4db7e9842077a921f36886633a17e842a71d4ec7ee571a0be088ecc05",
+    "src/data/questionBanks/toxicologyAntidotes.js": "71c15e9429b7ac18097d1911a9b2ce38aa43ca36bb5daf9e715aae0844319c79",
+    "src/components/learn/ToxicologyAntidotesVisual.jsx": "e063afed4b094fc1c6f410020b4ae24f3323dc645419ad039f7703a8b5623c6b"
+  },
+  "release": "Prepared for narrow commit/push; no direct deployment performed."
+}

@@ -1,0 +1,28 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_review",
+  "source": {
+    "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=00f18845-ccde-8678-e063-6294a90a3374",
+    "revision": "PI March 2026; SPL May 2026 version 4",
+    "scope": "Read full prescribing text, including formulation, indication, contraindications, warnings, precautions, adverse reactions, overdose, dose and storage. Package images not inspected."
+  },
+  "changes": [
+    "Added separate peri-laser product coverage and original container-handling question",
+    "Preserved distinction between US label and overseas preservative-free product search results",
+    "Included current pediatric warning and product-specific lactation instruction"
+  ],
+  "validation": {
+    "visual": "Four paragraph-row screenshots inspected at desktop 1440x1000 and mobile 390x844. Initial desktop second row caught a text reveal mid-animation; recaptured after 800 ms and confirmed complete text.",
+    "assessment": "Desktop 3 attempts and mobile 6 attempts encountered the new question; choices, answer mapping, correct/incorrect scoring, explanation and review link passed. No page errors or horizontal overflow.",
+    "previewRecovery": "Initial checks failed because the preview had stopped; no listener on port 3136. Turbopack restart failed on external dependency symlink. Webpack restart succeeded; subsequent browser checks passed.",
+    "diff": "Targeted git diff --check passed."
+  },
+  "remaining": [
+    "Full population-specific synthesis still pending",
+    "Other ophthalmic beta blockers and full-module review remain incomplete"
+  ],
+  "hashes": {
+    "src/data/modules/glaucomaPharmacotherapy.js": "ea92701f6917f9e38c47d96da206291f3b167743711dca45450cd8a78c700ae7",
+    "src/data/questionBanks/glaucomaPharmacotherapy.js": "78a7dfe0e5d3a6654c9a224710e021cbe5ab42e510443c51316ce194008ff195"
+  }
+}

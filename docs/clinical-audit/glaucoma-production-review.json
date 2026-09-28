@@ -1,0 +1,89 @@
+{
+  "reviewDate": "2026-09-25",
+  "status": "partial_review",
+  "bookLocation": "Chapter 38, printed 542, PDF 550; table previously visually inspected",
+  "sources": [
+    {
+      "product": "Timoptic-XE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a4d03de7-06b7-4cfc-9d1b-616969df209c",
+      "revision": "03/2022",
+      "sectionsRead": [
+        "Description",
+        "Clinical pharmacology",
+        "Contraindications",
+        "Warnings",
+        "Precautions including interactions",
+        "Dose and administration",
+        "Storage",
+        "Instructions for use"
+      ],
+      "lessonChanges": [
+        "Product-specific once-daily dosing, single shake and ten-minute sequencing",
+        "Explicit pulmonary and cardiac contraindications",
+        "Interactions, hypoglycemia masking, myasthenic weakness and anaphylaxis response"
+      ]
+    },
+    {
+      "product": "Dorzolamide Advagen 2%",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=ed9d1658-43cc-4c78-b3d8-e7d980a6b673",
+      "revision": "12/2024",
+      "sectionsRead": [
+        "2\u20137",
+        "8.6",
+        "11\u201312",
+        "16\u201317"
+      ],
+      "lessonChanges": [
+        "Three-times-daily dosing",
+        "Not recommended when CrCl below 30 mL/min",
+        "Not recommended with oral carbonic anhydrase inhibitors",
+        "Low endothelial cell count and allergic ocular reaction management"
+      ]
+    }
+  ],
+  "assessmentChanges": {
+    "rewrittenIds": [
+      "glaucoma-pharmacotherapy-037",
+      "glaucoma-pharmacotherapy-038",
+      "glaucoma-pharmacotherapy-039",
+      "glaucoma-pharmacotherapy-040",
+      "glaucoma-pharmacotherapy-045",
+      "glaucoma-pharmacotherapy-046",
+      "glaucoma-pharmacotherapy-047",
+      "glaucoma-pharmacotherapy-048"
+    ],
+    "newIds": [
+      "glaucoma-pharmacotherapy-timoptic-xe-sequence",
+      "glaucoma-pharmacotherapy-dorzolamide-renal"
+    ],
+    "reason": "Read stems, all choices and rationales. Generic action/monitoring prompts contained overlapping clinically reasonable choices; replaced eight with specific original cases and direct explanations.",
+    "conceptUpdate": "Dorzolamide action now includes explicit renal and oral-CAI label limits. Because generated distractors reuse concepts, remaining bank still needs full clinical reconciliation."
+  },
+  "validation": {
+    "clinicalReview": "All ten named cases read against the cited labels; no derived numerical calculations introduced. The CrCl 22 case is below the labeled 30 mL/min threshold.",
+    "browser": {
+      "desktopAttempts": 29,
+      "mobileAttempts": 21,
+      "targetCasesEach": 10,
+      "checks": [
+        "stem and choices",
+        "shuffled correct-answer mapping",
+        "alternating correct/incorrect scoring",
+        "rationale text",
+        "review link target"
+      ],
+      "pageErrors": 0,
+      "horizontalOverflow": false
+    },
+    "visual": "Inspected desktop/mobile timoptic and dorzolamide captures; passages wrap legibly. Mobile timoptic capture does not include full lower interaction paragraph; no full-module visual claim."
+  },
+  "unresolved": [
+    "Brimonidine, brinzolamide, beta-blocker alternatives, systemic CAIs and fixed combinations still require product-level reconciliation",
+    "Whole module and bank are not verified",
+    "No module completion commit or push yet; no deployment"
+  ],
+  "fileHashes": {
+    "src/data/modules/glaucomaPharmacotherapy.js": "8f92c7ecb195edb23f67df0785117c60fce0a3a1901bdc4055f25d0a35213314",
+    "src/data/questionBanks/glaucomaPharmacotherapy.js": "9af06014ed0bfd071175eb2b138b719885c29033331cbdb0c785071c15f8e835"
+  }
+}

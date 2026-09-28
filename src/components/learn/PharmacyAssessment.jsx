@@ -1,6 +1,9 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+
+import { useMember } from "@/components/member/MemberProvider";
+import { snapshotPractice, restorePractice } from "@/lib/member/practice.mjs";
 
 function shuffle(values) {
   const result = [...values];
@@ -68,10 +71,28 @@ export default function PharmacyAssessment({ questions, compact = false, moduleI
   const [previousIds, setPreviousIds] = useState("");
   const [attemptNumber, setAttemptNumber] = useState(0);
 
+  const member = useMember();
+  const restored = useRef('');
+  const busy = member?.status === 'loading';
+  useEffect(() => {
+    if (member?.status !== 'ready') return;
+    const key = `${member.pathname}:${moduleId}`;
+    if (restored.current === key) return;
+    restored.current = key;
+    const stored = member.items.find(r => r.path === member.pathname)?.practices?.[moduleId];
+    const resumed = restorePractice(questions, stored);
+    if (resumed) {
+      setAttempt(resumed.attempt); setAnswers(resumed.answers); setSubmitted(resumed.submitted);
+      setAttemptNumber(resumed.attemptNumber); setPreviousIds(resumed.previousIds);
+    }
+  }, [member?.status, member?.pathname, moduleId, questions]);
+  function persist(nextAttempt, nextAnswers, done, number, ids) {
+    if (member?.status === 'ready') member.save(member.pathname, 'practice', { id: moduleId, state: snapshotPractice(questions, nextAttempt, nextAnswers, done, number, ids) });
+  }
+
   const displayQuestions = useMemo(() => attempt, [attempt]);
 
   const answered = Object.keys(answers).length;
-  const score = useMemo(() => displayQuestions.reduce((total, question) => total + (answers[question.id] === question.answer ? 1 : 0), 0), [answers, displayQuestions]);
 
   function beginAttempt() {
     const nextAttempt = createAttempt(questions, questionCount || questions.length, previousIds);
@@ -80,31 +101,12 @@ export default function PharmacyAssessment({ questions, compact = false, moduleI
     setAnswers({});
     setSubmitted(false);
     setAttemptNumber((current) => current + 1);
+    persist(nextAttempt, {}, false, attemptNumber + 1, nextAttempt.map(q => q.id).sort().join("|"));
   }
 
   function submitAttempt() {
     setSubmitted(true);
-    if (typeof window === "undefined") return;
-    const key = `nas-learn:${moduleId}:assessment`;
-    let existing = {};
-    try {
-      existing = JSON.parse(window.localStorage.getItem(key) || "{}");
-    } catch {
-      existing = {};
-    }
-    const history = Array.isArray(existing.history) ? existing.history : [];
-    const result = {
-      attempt: attemptNumber,
-      score,
-      total: displayQuestions.length,
-      completedAt: new Date().toISOString(),
-    };
-    window.localStorage.setItem(key, JSON.stringify({
-      bestScore: Math.max(existing.bestScore || 0, score),
-      attempts: (existing.attempts || 0) + 1,
-      latest: result,
-      history: [...history.slice(-9), result],
-    }));
+    persist(attempt, answers, true, attemptNumber, previousIds);
   }
 
   if (randomize && displayQuestions.length === 0) {
@@ -113,7 +115,7 @@ export default function PharmacyAssessment({ questions, compact = false, moduleI
         <span>{questions.length} questions in this module bank</span>
         <strong>{Math.min(questionCount || questions.length, questions.length)} questions per attempt</strong>
         <p>Each attempt draws a fresh set and rearranges the answer choices.</p>
-        <button type="button" onClick={beginAttempt}>Begin module test</button>
+        <button type="button" disabled={busy} onClick={beginAttempt}>Begin practice</button>
       </div>
     );
   }
@@ -122,7 +124,7 @@ export default function PharmacyAssessment({ questions, compact = false, moduleI
     <div className={`pharmacy-assessment ${compact ? "pharmacy-assessment--compact" : ""}`}>
       <div className="pharmacy-assessment__status">
         <span>{answered} of {displayQuestions.length} answered</span>
-        {submitted && <strong>{score} / {displayQuestions.length}</strong>}
+        {submitted && <strong>Feedback ready · No formal grade</strong>}
       </div>
 
       <div className="pharmacy-assessment__questions">
@@ -136,7 +138,7 @@ export default function PharmacyAssessment({ questions, compact = false, moduleI
               <div className="pharmacy-question__choices">
                 {question.choices.map((choice, choiceIndex) => (
                   <label className={submitted && choiceIndex === question.answer ? "is-answer" : submitted && choiceIndex === selected ? "is-incorrect" : ""} key={`${question.id}-${choiceIndex}`}>
-                    <input type="radio" name={question.id} checked={selected === choiceIndex} disabled={submitted} onChange={() => setAnswers((current) => ({ ...current, [question.id]: choiceIndex }))} />
+                    <input type="radio" name={question.id} checked={selected === choiceIndex} disabled={submitted || busy} onChange={() => { const next = { ...answers, [question.id]: choiceIndex }; setAnswers(next); persist(attempt, next, false, attemptNumber, previousIds); }} />
                     <span>{String.fromCharCode(65 + choiceIndex)}</span>
                     <strong>{choice}</strong>
                   </label>
@@ -148,9 +150,11 @@ export default function PharmacyAssessment({ questions, compact = false, moduleI
         })}
       </div>
 
+      <p role="status">{member?.status === "ready" ? member.message : busy ? "Checking for saved practice…" : member?.status === "error" ? "Account storage is unavailable. This practice has not been saved." : "Sign in to keep your practice across devices."}</p>
+      {member?.saveError && <button disabled={member.saving} onClick={() => persist(attempt, answers, submitted, attemptNumber, previousIds)}>Retry saving practice</button>}
       <div className="pharmacy-assessment__actions">
-        {!submitted ? <button type="button" disabled={answered !== displayQuestions.length} onClick={submitAttempt}>Submit answers</button> : <button type="button" onClick={randomize ? beginAttempt : () => { setAnswers({}); setSubmitted(false); }}>Start another attempt</button>}
-        <span>{answered !== displayQuestions.length && !submitted ? "Answer every question to submit." : submitted ? `${Math.round((score / displayQuestions.length) * 100)}% complete` : "Ready to score."}</span>
+        {!submitted ? <button type="button" disabled={busy || answered !== displayQuestions.length} onClick={submitAttempt}>Review answers</button> : <button type="button" onClick={randomize ? beginAttempt : () => { setAnswers({}); setSubmitted(false); persist(attempt, {}, false, attemptNumber + 1, previousIds); }}>Start another attempt</button>}
+        <span>{answered !== displayQuestions.length && !submitted ? "Answer every question to submit." : submitted ? "Review the explanations below each question." : "Ready for feedback."}</span>
       </div>
     </div>
   );

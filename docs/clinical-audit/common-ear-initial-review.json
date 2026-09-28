@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-26",
+  "status": "reviewing",
+  "readScope": "Read all eight original lessons, 32 teaching passages, eight embedded checks, overview and eight diagram entries. Assessment bank not yet clinically read. Read full Cipro HC prescribing text and full Debrox Drug Facts/structured text; no package or chemical structure images inspected. Read all 28 question concept records and generation logic, but not yet all 112 materialized combinations. Read full Cortisporin TC clinical prescribing text (not chemical or carton images), ciprofloxacin-dexamethasone label sections 1-17 and patient information through displayed adverse effects (not full illustrated IFU), Debrox manufacturer page including directions/FAQs, and AAO-HNS AOE guideline landing page and key-action fact sheet. Read AAO-HNS 2019 sudden-hearing-loss fact sheet including all key action statements. Read VA/DoD 2024 tinnitus provider-summary clinical text and all 25 recommendations; algorithm images were not inspected. This is not a full 191-page guideline read. Subsequently read all materialized bank entries and rewrote the generated assessment; see common-ear-assessment-review.json, which supersedes prior bank-read pending notes. Read the complete 2017 cerumen guideline abstract/key actions and both-page clinical text of AAO-HNS AOE plain-language summary; full cerumen guideline and corrigendum not yet read.",
+  "sources": [
+    "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=d2c40b07-dc39-46c6-8ea1-b288589a46d1&type=display",
+    "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=43649ba3-75e0-4dcf-9172-23767dbaeda6&version=3",
+    "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=9c6fc1c7-3350-42ae-b999-aca48e704bb1&type=display",
+    "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=9c5994d1-01d1-493c-a6ae-94754cd59389&type=display",
+    "https://www.debrox.com/products/debrox-earwax-removal-aid",
+    "https://www.entnet.org/resource/aao-hnsf-updated-cpg-acute-otitis-externa-press-release-fact-sheet/",
+    "https://www.entnet.org/resource/aao-hnsf-updated-cpg-shl-press-release-fact-sheet/",
+    "https://www.healthquality.va.gov/HEALTHQUALITY/guidelines/CD/tinnitus/VADOD-CPG-Tinnitus-Provider-Summary-2024_Final_508.pdf",
+    "https://pubmed.ncbi.nlm.nih.gov/28045591/",
+    "https://www.entnet.org/wp-content/uploads/2021/04/AOEGuidelinePLSFinal.pdf"
+  ],
+  "changes": [
+    "Added specific Cipro HC nonsterile/perforation, route, age, formulation, latex, dosing and handling boundaries.",
+    "Added Debrox dosing and four-day stop rule; book generic 3-5 days does not override product instructions.",
+    "Generalized lesson helper to permit subject-driven passage counts.",
+    "Added ciprofloxacin-dexamethasone and Cortisporin TC dosing, handling and follow-up. Explained TC perforation caution versus guideline non-ototoxic selection.",
+    "Resolved Debrox age-12 ambiguity using manufacturer statement including age twelve; retained exact-package advice.",
+    "Changed blanket sterile-handling language to contamination control because some otic products are nonsterile.",
+    "Added three original product cases; whole bank now 115 questions.",
+    "Expanded sudden-hearing-loss timing and tinnitus referral/indication teaching; added two original cases. Module now has 40 passages and 117 questions.",
+    "Replaced generated bank with focused cases (43 total); added cerumen communication/device/removal-follow-up passage and clarified tinnitus/follow-up diagram labels."
+  ],
+  "remaining": [
+    "Cross-module consistency with formulation/counseling content and chapter 38 route material.",
+    "Final read of whole revised module, checks, figures, assessments and references.",
+    "Final isolated build and completion ledger before narrow commit/push."
+  ],
+  "validation": {
+    "structural": "43 questions pass hard-error and source checks; advisory size and lesson counts documented in common-ear-assessment-review.json.",
+    "render": "All five product rows visually inspected at 1440x1000 and 390x844, ten captures under /private/tmp/ear-products-{1..5}-{desktop|mobile}.png; target text readable, no page errors or horizontal overflow.",
+    "assessment": "Three new cases covered in 11 randomized attempts on each viewport. Verified stems, choice mapping, mixed scoring, rationale, review anchors and incomplete-submit gating. No errors or overflow.",
+    "scripts": [
+      "/private/tmp/ear-products-preview.mjs",
+      "/private/tmp/ear-product-cases.mjs",
+      "/private/tmp/ear-guidance-preview.mjs",
+      "/private/tmp/ear-guidance-cases.mjs"
+    ],
+    "sourceHashes": {
+      "src/data/modules/commonEarConditions.js": "fc477fc8daa7d1108259cfc0de21c4004689d4330d18c3f323aafdea4b79a24e",
+      "src/data/questionBanks/commonEarConditions.js": "718b9e425f83306e0b2de9959e36f6bd2d532b6c2e5333d32b6c397b1293ffab",
+      "src/components/learn/CommonEarConditionsVisual.jsx": "7f7cac6e97f6402bba1222a3fc1f681a51a50fb721ee2a2305e29774d3eebafe"
+    },
+    "guidanceRender": "Three added guideline passages visually inspected on desktop 1440x1000 and mobile 390x844, six captures /private/tmp/ear-guidance-{1..3}-{desktop|mobile}.png. Target passages readable with no horizontal overflow or page errors.",
+    "guidanceAssessment": "Both new cases covered on desktop (12 randomized attempts) and mobile (19). Stems, shuffled choice mapping, mixed scoring, rationale, review anchors, and incomplete-submit gating passed; no page errors or horizontal overflow.",
+    "revisedFiguresAndWax": "Visually inspected three revised figures (administration, tinnitus, follow-up) and the new cerumen passage at desktop and mobile sizes, eight images. Figure captures show all nodes; passage captures show full added text. No page errors or horizontal overflow. Script /private/tmp/ear-diagrams-preview.mjs; captures /private/tmp/ear-figure-{lesson}-{mode}.png and /private/tmp/ear-wax-gap-{mode}.png."
+  },
+  "accessLimits": [
+    "Direct NICE NG155 recommendations returned 403; NCBI mirror returned CAPTCHA. Neither treated as reviewed. Two attempted Bulletin URLs failed; used accessible AAO-HNS primary fact sheet."
+  ],
+  "latestReview": "common-ear-product-guideline-review.json"
+}

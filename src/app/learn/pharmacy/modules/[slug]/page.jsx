@@ -1,4 +1,5 @@
 import ModuleContents from "@/components/learn/ModuleContents";
+import AutoimmuneFoundationsVisual from "@/components/learn/AutoimmuneFoundationsVisual";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Footer from "@/components/Footer";
@@ -130,6 +131,8 @@ import AnimalHumanBitesVisual, { animalHumanBitesVisualTypes } from "@/component
 import BurnAssessmentInitialCareVisual, { burnAssessmentInitialCareVisualTypes } from "@/components/learn/BurnAssessmentInitialCareVisual";
 import PoisonPlantDermatitisVisual, { poisonPlantDermatitisVisualTypes } from "@/components/learn/PoisonPlantDermatitisVisual";
 import TopicalCorticosteroidVisual, { topicalCorticosteroidVisualTypes } from "@/components/learn/TopicalCorticosteroidVisual";
+import UrticariaVisual, { urticariaVisualTypes } from "@/components/learn/UrticariaVisual";
+import EnvenomationVisual, { envenomationVisualTypes } from "@/components/learn/EnvenomationVisual";
 import SunscreenPhotoprotectionVisual, { sunscreenPhotoprotectionVisualTypes } from "@/components/learn/SunscreenPhotoprotectionVisual";
 import HerpesLabialisVisual, { herpesLabialisVisualTypes } from "@/components/learn/HerpesLabialisVisual";
 import SeborrheicDermatitisVisual, { seborrheicDermatitisVisualTypes } from "@/components/learn/SeborrheicDermatitisVisual";
@@ -244,16 +247,16 @@ const adrenergicAntagonistVisualTypes = ["adr-antagonist-occupancy", "adr-alpha-
 const adrenergicMedicinalChemistryVisualTypes = ["adr-medchem-pharmacophore", "adr-medchem-catechol", "adr-medchem-amine", "adr-medchem-stereo", "adr-medchem-beta-blockers", "adr-medchem-alpha-blockers"];
 const diureticPharmacologyVisualTypes = ["diuretic-nephron-map", "diuretic-loop", "diuretic-thiazide", "diuretic-potassium", "diuretic-other", "diuretic-integration"];
 const diureticMedicinalChemistryVisualTypes = ["diuretic-medchem-ca", "diuretic-medchem-loop", "diuretic-medchem-thiazide", "diuretic-medchem-mra", "diuretic-medchem-enac", "diuretic-medchem-integration"];
-const glaucomaPharmacotherapyVisualTypes = ["glaucoma-flow-map", "glaucoma-prostaglandins", "glaucoma-production", "glaucoma-outflow", "glaucoma-selection", "glaucoma-technique"];
-const hypertensionFoundationsVisualTypes = ["htn-measurement", "htn-risk-goal", "htn-lifestyle", "htn-first-line", "htn-combination", "htn-monitoring"];
+const glaucomaPharmacotherapyVisualTypes = ["glaucoma-angle-emergency", "glaucoma-flow-map", "glaucoma-prostaglandins", "glaucoma-production", "glaucoma-outflow", "glaucoma-selection", "glaucoma-technique"];
+const hypertensionFoundationsVisualTypes = ["htn-measurement", "htn-risk-goal", "htn-lifestyle", "htn-first-line", "htn-raas", "htn-arb", "htn-beta", "htn-central", "htn-vasodilators", "htn-combination", "htn-mra", "htn-enac", "htn-thiazides", "htn-dhp", "htn-nondhp", "htn-monitoring"];
 const resistantSecondaryHypertensionVisualTypes = ["resistant-confirmation", "resistant-contributors", "secondary-screening", "primary-aldosteronism", "secondary-causes", "resistant-treatment"];
-const hypertensiveEmergenciesVisualTypes = ["emergency-triage", "emergency-physiology", "emergency-neurologic", "emergency-cardiovascular", "emergency-special", "emergency-transition"];
+const hypertensiveEmergenciesVisualTypes = ["emergency-triage", "emergency-physiology", "emergency-dihydropyridines", "emergency-drug-safety", "emergency-neurologic", "emergency-cardiovascular", "emergency-special", "emergency-transition"];
 const antihypertensiveMedicinalChemistryVisualTypes = ["htn-medchem-ace", "htn-medchem-arb", "htn-medchem-ccb", "htn-medchem-central", "htn-medchem-vasodilator", "htn-medchem-integration"];
 const dyslipidemiaRiskVisualTypes = ["lipoprotein-transport", "atherogenic-burden", "triglyceride-remnants", "inherited-secondary", "risk-reclassification", "screening-lifecycle"];
 const lipidLoweringPharmacologyVisualTypes = ["lipid-statin-pathway", "lipid-absorption-bile", "lipid-pcsk9", "lipid-acl", "lipid-triglyceride", "lipid-rare"];
 const dyslipidemiaTherapeuticsVisualTypes = ["dyslipidemia-goal-map", "dyslipidemia-primary", "dyslipidemia-secondary", "dyslipidemia-triglycerides", "dyslipidemia-familial", "dyslipidemia-implementation"];
-const chronicCoronaryDiseaseVisualTypes = ["ccd-disease-spectrum", "ccd-prevention", "ccd-antithrombotic", "ccd-angina", "ccd-testing-revascularization", "ccd-follow-up"];
-const acuteCoronarySyndromesVisualTypes = ["acs-rupture-thrombosis", "acs-diagnostic-path", "acs-antithrombotic", "acs-reperfusion", "acs-pci-shock", "acs-discharge"];
+const chronicCoronaryDiseaseVisualTypes = ["ccd-disease-spectrum", "ccd-prevention", "ccd-antithrombotic", "ccd-angina", "ccd-nitrate-schedules", "ccd-testing-revascularization", "ccd-follow-up"];
+const acuteCoronarySyndromesVisualTypes = ["acs-anticoagulant-handoff", "acs-rupture-thrombosis", "acs-diagnostic-path", "acs-antithrombotic", "acs-reperfusion", "acs-pci-shock", "acs-discharge"];
 const antiplateletPharmacologyVisualTypes = ["antiplatelet-platelet-cycle", "antiplatelet-aspirin", "antiplatelet-p2y12", "antiplatelet-iv-agents", "antiplatelet-variability", "antiplatelet-bleeding"];
 const coagulationAnticoagulantVisualTypes = ["coagulation-hemostasis", "coagulation-targets", "coagulation-laboratory", "coagulation-selection", "coagulation-transitions", "coagulation-bleeding-hit"];
 const venousThromboembolismVisualTypes = ["vte-risk-formation", "vte-dvt-diagnosis", "vte-pe-categories", "vte-initial-treatment", "vte-duration-special", "vte-follow-up"];
@@ -276,8 +279,8 @@ const acuteKidneyInjuryVisualTypes = ["aki-detect", "aki-cause", "aki-hemodynami
 const chronicKidneyDiseaseVisualTypes = ["ckd-definition", "ckd-mechanism", "ckd-cga", "ckd-risk", "ckd-foundations", "ckd-therapy", "ckd-monitoring", "ckd-stewardship"];
 const ckdComplicationsVisualTypes = ["ckdc-surveillance", "ckdc-anemia", "ckdc-mbd", "ckdc-electrolytes", "ckdc-volume", "ckdc-cardioskin", "ckdc-advanced"];
 const renalReplacementTherapyVisualTypes = ["rrt-choice", "rrt-mechanics", "rrt-hd", "rrt-pd", "rrt-continuous", "rrt-safety", "rrt-longitudinal"];
-const allergicRhinitisVisualTypes = ["ar-phenotype", "ar-immunology", "ar-technique", "ar-therapy", "ar-adjuncts", "ar-safety", "ar-followup", "ar-immunotherapy"];
-const asthmaVisualTypes = ["asthma-biology", "asthma-diagnosis", "asthma-risk", "asthma-pharmacology", "asthma-adjuncts", "asthma-strategy", "asthma-severe", "asthma-acute"];
+const allergicRhinitisVisualTypes = ["ar-pediatric-formulations", "ar-first-generation-formulations", "ar-otc-steroids", "ar-prescription-steroids", "ar-nasal-antihistamines", "ar-oral-antihistamines", "ar-phenotype", "ar-immunology", "ar-technique", "ar-therapy", "ar-adjuncts", "ar-safety", "ar-followup", "ar-immunotherapy"];
+const asthmaVisualTypes = ["asthma-biologics", "asthma-omalizumab", "asthma-aerosol-devices", "asthma-powder-devices", "asthma-nebulized-preparation", "asthma-biology", "asthma-diagnosis", "asthma-risk", "asthma-pharmacology", "asthma-adjuncts", "asthma-strategy", "asthma-severe", "asthma-acute"];
 const chronicObstructivePulmonaryDiseaseVisualTypes = ["copd-biology", "copd-diagnosis", "copd-assessment", "copd-pharmacology", "copd-advanced", "copd-strategy", "copd-nonpharmacologic", "copd-acute"];
 const pulmonaryArterialHypertensionVisualTypes = ["pah-hemodynamics", "pah-diagnosis", "pah-risk", "pah-supportive-care", "pah-pharmacology", "pah-delivery-safety", "pah-strategy", "pah-special"];
 const cysticFibrosisVisualTypes = ["cf-biology", "cf-airway", "cf-pulmonary", "cf-infection", "cf-modulators", "cf-nutrition", "cf-systemic", "cf-longitudinal"];
@@ -296,8 +299,8 @@ const adrenalInsufficiencyVisualTypes = ["ai-levels", "ai-primary", "ai-central"
 const gonadalHormonePharmacologyVisualTypes = ["gonadal-hpg-axis", "gonadal-testicular", "gonadal-ovarian", "gonadal-steroidogenesis", "gonadal-receptors", "gonadal-diagnosis", "gonadal-formulations", "gonadal-safety", "gonadal-estrogen-progestogen", "gonadal-pathway-therapy"];
 const gynecologicDisordersVisualTypes = ["gyn-cycle-triage", "gyn-palm-coein", "gyn-acute-aub", "gyn-hmb-selection", "gyn-pain-pathway", "gyn-pmdd-cycle", "gyn-endometriosis-map", "gyn-endometriosis-therapy", "gyn-fibroid-map", "gyn-longitudinal-care"];
 const infertilityOvulationInductionVisualTypes = ["infertility-evaluation-clock", "infertility-fertile-window", "infertility-female-workup", "infertility-male-workup", "infertility-pcos-letrozole", "infertility-clomiphene-metformin", "infertility-gonadotropins", "infertility-protocol-control", "infertility-art-pathway", "infertility-ohss-care"];
-const contraceptivePharmacotherapyVisualTypes = ["contraception-selection", "contraception-combined", "contraception-estrogen-risk", "contraception-progestin", "contraception-iuds", "contraception-implant", "contraception-emergency", "contraception-quick-start", "contraception-interactions", "contraception-care-loop"];
-const pregnancyLactationPharmacotherapyVisualTypes = ["perinatal-context", "perinatal-pk", "perinatal-placenta", "perinatal-evidence", "perinatal-symptoms", "perinatal-diabetes", "perinatal-preeclampsia", "perinatal-vte", "perinatal-lactation-pk", "perinatal-lactation-care"];
+const contraceptivePharmacotherapyVisualTypes = ["contraception-nonhormonal", "contraception-rings", "contraception-therapeutic", "contraception-selection", "contraception-combined", "contraception-estrogen-risk", "contraception-progestin", "contraception-iuds", "contraception-implant", "contraception-emergency", "contraception-quick-start", "contraception-interactions", "contraception-care-loop"];
+const pregnancyLactationPharmacotherapyVisualTypes = ["perinatal-skin-drug-exposure", "perinatal-neurologic-drugs-pregnancy", "perinatal-mental-health-pregnancy", "perinatal-cardiometabolic-drugs-pregnancy", "perinatal-immune-hematology-pregnancy", "perinatal-reproductive-drugs-pregnancy", "perinatal-vaccines", "perinatal-nutrition", "perinatal-thyroid", "perinatal-infections", "perinatal-context", "perinatal-pk", "perinatal-placenta", "perinatal-evidence", "perinatal-symptoms", "perinatal-diabetes", "perinatal-preeclampsia", "perinatal-vte", "perinatal-lactation-pk", "perinatal-lactation-care"];
 const menopausalHormoneTherapyVisualTypes = ["mht-transition", "mht-thermoregulation", "mht-estrogen", "mht-endometrium", "mht-bleeding", "mht-nonhormonal", "mht-gsm", "mht-risk", "mht-prevention", "mht-followup"];
 const benignProstaticHyperplasiaVisualTypes = ["bph-framework", "bph-evaluation", "bph-goals", "bph-alpha", "bph-fiveari", "bph-tadalafil", "bph-storage", "bph-retention", "bph-procedures", "bph-followup"];
 const urinaryIncontinenceVisualTypes = ["ui-phenotypes", "ui-evaluation", "ui-neurophysiology", "ui-behavioral", "ui-antimuscarinics", "ui-beta3", "ui-combination", "ui-procedures", "ui-other-phenotypes", "ui-nocturia"];
@@ -317,13 +320,13 @@ const infectionPreventionControlVisualTypes = ["ipc-chain", "ipc-standard", "ipc
 const drugAllergiesAdverseReactionsVisualTypes = ["adr-taxonomy-map", "adr-causality-map", "adr-safety-system", "adr-immune-pathways", "adr-anaphylaxis", "adr-scar-triage", "adr-beta-lactam", "adr-cross-reactivity", "adr-testing-pathway", "adr-longitudinal-record"];
 const pharmacokineticsVisualTypes = ["pk-adme-map", "pk-bioavailability", "pk-distribution", "pk-metabolism", "pk-clearance", "pk-saturation", "pk-decay", "pk-half-life", "pk-dosing", "pk-tdm"];
 const pharmacogenomicsVisualTypes = ["pgx-foundations", "pgx-expression", "pgx-methods", "pgx-translation", "pgx-evidence", "pgx-appraisal", "pgx-counseling", "pgx-hla", "pgx-cyp2d6", "pgx-clopidogrel", "pgx-antiseizure", "pgx-antimetabolites", "pgx-multigene", "pgx-oncology"];
-const dietarySupplementsVisualTypes = ["supp-regulation", "supp-evidence", "supp-reconciliation", "supp-bleeding", "supp-organ-risk", "supp-neuroactive", "supp-cardiometabolic", "supp-vitamins", "supp-special-categories", "supp-care-plan"];
-const toxicologyAntidotesVisualTypes = ["tox-stabilization", "tox-decontamination", "tox-patterns", "tox-acetaminophen", "tox-opioids", "tox-cardiotoxic", "tox-cellular", "tox-neuro", "tox-metabolic", "tox-preparedness"];
+const dietarySupplementsVisualTypes = ["supp-folate", "supp-traditional-use", "supp-botanical-cases", "supp-regulation", "supp-evidence", "supp-reconciliation", "supp-bleeding", "supp-organ-risk", "supp-neuroactive", "supp-cardiometabolic", "supp-vitamins", "supp-special-categories", "supp-care-plan"];
+const toxicologyAntidotesVisualTypes = ["tox-methylxanthine", "tox-ethanol", "tox-anticoagulant", "tox-serotonin", "tox-alcohol", "tox-salicylate", "tox-valproate", "tox-isoniazid", "tox-nicotine", "tox-hydrocarbon", "tox-methemoglobin", "tox-fab", "tox-last-rescue", "tox-stabilization", "tox-general-decontamination", "tox-patterns", "tox-acetaminophen", "tox-opioids", "tox-cardiotoxic", "tox-cellular", "tox-neuro", "tox-metabolic", "tox-lead", "tox-iron", "tox-aluminum", "tox-metal-testing", "tox-decorporation", "tox-preparedness"];
 const tobaccoUseCessationVisualTypes = ["tobacco-dependence", "tobacco-plan", "tobacco-nrt-system", "tobacco-patch", "tobacco-oral-nrt", "tobacco-prescription-nrt", "tobacco-varenicline", "tobacco-bupropion", "tobacco-special-populations", "tobacco-longitudinal"];
 const systemicGlucocorticoidsVisualTypes = ["gc-signaling", "gc-structure", "gc-equivalence", "gc-treatment-plan", "gc-hpa-risk", "gc-taper", "gc-stress", "gc-metabolic", "gc-infection-vaccine", "gc-bone-tissue", "gc-longitudinal"];
-const rheumatoidArthritisVisualTypes = ["ra-recognition", "ra-target", "ra-methotrexate", "ra-csdmards", "ra-biologics", "ra-jak", "ra-prevention", "ra-supportive", "ra-remission", "ra-longitudinal"];
-const systemicLupusErythematosusVisualTypes = ["sle-recognition", "sle-immunity", "sle-targets", "sle-hcq", "sle-organs", "sle-conventional", "sle-biologics", "sle-nephritis", "sle-prevention", "sle-longitudinal"];
-const multipleSclerosisVisualTypes = ["ms-recognition", "ms-course", "ms-relapse", "ms-injectables", "ms-orals", "ms-s1p", "ms-biologics", "ms-reconstitution", "ms-rehabilitation", "ms-longitudinal"];
+const rheumatoidArthritisVisualTypes = ["ra-recognition", "ra-target", "ra-methotrexate", "ra-csdmards", "ra-biologics", "ra-tnf-dosing", "ra-other-dosing", "ra-jak", "ra-prevention", "ra-supportive", "ra-remission", "ra-longitudinal"];
+const systemicLupusErythematosusVisualTypes = ["sle-recognition", "sle-immunity", "sle-targets", "sle-hcq", "sle-organs", "sle-conventional", "sle-biologics", "sle-nephritis", "sle-voclosporin", "sle-prevention", "sle-longitudinal"];
+const multipleSclerosisVisualTypes = ["ms-recognition", "ms-course", "ms-relapse", "ms-injectables", "ms-orals", "ms-s1p", "ms-biologics", "ms-natalizumab", "ms-reconstitution", "ms-rehabilitation", "ms-fatigue", "ms-autonomic", "ms-longitudinal"];
 const raynaudPhenomenonVisualTypes = ["raynaud-recognition", "raynaud-mechanism", "raynaud-evaluation", "raynaud-prevention", "raynaud-ccb", "raynaud-pde5", "raynaud-nitrates", "raynaud-ischemia", "raynaud-secondary", "raynaud-longitudinal"];
 const celiacDiseaseVisualTypes = ["celiac-mechanism", "celiac-spectrum", "celiac-serology", "celiac-biopsy", "celiac-diet", "celiac-nutrition", "celiac-dh", "celiac-medicines", "celiac-followup", "celiac-nonresponsive"];
 const diarrheaAssessmentVisualTypes = ["diarrhea-phenotype", "diarrhea-triage", "diarrhea-causes", "diarrhea-rehydration", "diarrhea-testing", "diarrhea-supportive", "diarrhea-bismuth", "diarrhea-antimotility", "diarrhea-travel", "diarrhea-persistent"];
@@ -532,6 +535,8 @@ export default async function PharmacyModulePage({ params }) {
               {burnAssessmentInitialCareVisualTypes.includes(submodule.visual) && <BurnAssessmentInitialCareVisual type={submodule.visual} />}
               {poisonPlantDermatitisVisualTypes.includes(submodule.visual) && <PoisonPlantDermatitisVisual type={submodule.visual} />}
               {topicalCorticosteroidVisualTypes.includes(submodule.visual) && <TopicalCorticosteroidVisual type={submodule.visual} />}
+              {urticariaVisualTypes.includes(submodule.visual) && <UrticariaVisual type={submodule.visual} />}
+              {envenomationVisualTypes.includes(submodule.visual) && <EnvenomationVisual type={submodule.visual} />}
               {sunscreenPhotoprotectionVisualTypes.includes(submodule.visual) && <SunscreenPhotoprotectionVisual type={submodule.visual} />}
               {herpesLabialisVisualTypes.includes(submodule.visual) && <HerpesLabialisVisual type={submodule.visual} />}
               {seborrheicDermatitisVisualTypes.includes(submodule.visual) && <SeborrheicDermatitisVisual type={submodule.visual} />}
@@ -628,6 +633,7 @@ export default async function PharmacyModulePage({ params }) {
               {module.slug === "parkinson-disease" && parkinsonDiseaseVisualTypes.includes(submodule.visual) && <ParkinsonDiseaseVisual type={submodule.visual} />}
               {module.slug === "alzheimer-disease-related-dementias" && alzheimerDiseaseDementiasVisualTypes.includes(submodule.visual) && <AlzheimerDiseaseDementiasVisual type={submodule.visual} />}
               {module.slug === "seizures-epilepsy" && seizuresEpilepsyVisualTypes.includes(submodule.visual) && <SeizuresEpilepsyVisual type={submodule.visual} />}
+              {module.slug === "autoimmune-foundations" && <AutoimmuneFoundationsVisual type={submodule.visual} />}
               {submodule.lesson && <div className="pharmacy-submodule__lesson">
                 {submodule.lesson.map((section) => <section key={section.heading}>
                   <h3>{section.heading}</h3>
@@ -663,7 +669,7 @@ export default async function PharmacyModulePage({ params }) {
           ))}
 
           <section className="pharmacy-module-test" id="module-test">
-            <p className="nas-section-label">Module test</p>
+            <p className="nas-section-label">Module practice</p>
             <h2>Check the connections.</h2>
             <p>{module.questionBank ? `Each attempt draws 10 questions from the complete ${module.questionBank.length} question bank.` : "Answer one question from each lesson. Submit the full set to reveal the reasoning."}</p>
             <PharmacyAssessment questions={questions} compact moduleId={module.slug} questionCount={module.questionBank ? 10 : questions.length} randomize={Boolean(module.questionBank)} />

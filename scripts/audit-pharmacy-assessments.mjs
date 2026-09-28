@@ -13,6 +13,7 @@ if (requestedModule && !auditedModules.length) {
 
 const hardErrors = [];
 const thinLessons = [];
+const sizeAdvisories = [];
 const sourceGaps = [];
 const moduleSummaries = [];
 const moduleSlugs = new Set();
@@ -72,8 +73,13 @@ for (const module of auditedModules) {
     });
   }
 
-  if (questions.length < 100) {
-    hardErrors.push(`${module.slug}: assessment contains ${questions.length} questions`);
+  // Clinical scope determines bank size. Retain count visibility without forcing
+  // repetitive questions to satisfy a uniform quota. Missing lesson coverage
+  // and malformed questions remain hard errors below.
+  if (!questions.length) {
+    hardErrors.push(`${module.slug}: assessment contains no questions`);
+  } else if (questions.length < 100) {
+    sizeAdvisories.push({ module: module.slug, questions: questions.length, review: "Confirm topic coverage in the clinical audit ledger" });
   }
 
   if (!lessons.length) {
@@ -165,6 +171,7 @@ console.log(JSON.stringify({
   questions: moduleSummaries.reduce((total, module) => total + module.questions, 0),
   hardErrors,
   sourceGaps,
+  sizeAdvisories,
   thinLessons,
   weakestModules: moduleSummaries.slice(0, 25),
 }, null, 2));

@@ -1,0 +1,96 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_module_review",
+  "bookVisualReview": "Printed pages 544\u2013545 / PDF pages 552\u2013553 rendered privately and inspected in full. Table, callouts and footnotes read.",
+  "sources": [
+    {
+      "label": "DailyMed. TobraDex ST prescribing information, March 2025",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=3b99dbb3-ac84-4d0d-b30f-a5db44fdc316&type=display"
+    },
+    {
+      "label": "DailyMed. Historical Novartis TobraDex suspension label; marketing ended 2024",
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c662bb23-f30c-451d-aa6c-f3f26fb72377"
+    }
+  ],
+  "readScope": "TobraDex ST prescribing text through patient counseling; historical standard suspension prescribing text and marketing status. No proprietary illustrations reproduced.",
+  "changes": [
+    "Added product-specific ST administration and monitoring, with historical formulation comparison.",
+    "Explicitly corrected preservative-free/no-burning implication; existing PF cyclosporine product reviews also establish instillation reactions.",
+    "Added two cases."
+  ],
+  "remaining": [
+    "Chloroquine retinal toxicity is separately listed in the book and still needs developed coverage.",
+    "Remaining antibiotics, topical steroids and NSAIDs require reconciliation.",
+    "Common ear conditions on p545 remain assigned to Common Ear module review.",
+    "Full chapter counseling cross-check and final module validation.",
+    "Desktop/mobile checks of latest changes."
+  ],
+  "validation": "Module import passed; 163 unique question records with four distinct choices, valid answer indices and matching lesson anchors. Scoped diff check passed. Latest render/interaction checks pending.",
+  "latestScopedUIValidation": {
+    "reviewDate": "2026-09-26",
+    "viewports": [
+      "1440x1000",
+      "390x844"
+    ],
+    "sourceHashes": {
+      "src/data/modules/commonEyeConditions.js": "999d51e8e9231578bba317ccaa90da9bc39acacb8995ced7c68bd629078a42ba",
+      "src/data/questionBanks/commonEyeConditions.js": "dd80bfac2e32174fc1150d57e94ef492d864b802a1e42c3c82d6ec9a57f78299",
+      "src/components/learn/CommonEyeConditionsVisual.jsx": "842217fe85df82772b2f3fd2b69ce90167202ed0079aa014ab6e51fd085234b5"
+    },
+    "visual": "Fourteen recent lesson rows visually inspected on desktop and mobile (28 captures). Acular LS desktop capture repeated after settling; complete text confirmed. No horizontal overflow or browser errors.",
+    "assessment": "Nine targeted cases covered in 24 desktop and 44 mobile randomized attempts. Checked stems, four-choice answer mapping, mixed correct/incorrect scoring, explanations, lesson anchors and incomplete-submission gating. No page errors or horizontal overflow.",
+    "targetIds": [
+      "common-eye-tobradex-st-lenses",
+      "common-eye-preservative-free-burning",
+      "common-eye-neomycin-sensitization",
+      "common-eye-sulfacetamide-coverage",
+      "common-eye-tobramycin-formulation",
+      "common-eye-chloroquine-surveillance",
+      "common-eye-ketorolac-formulations",
+      "common-eye-ketorolac-corneal-injury",
+      "common-eye-nepafenac-schedule"
+    ],
+    "scripts": [
+      "/private/tmp/eye-batch-preview.mjs",
+      "/private/tmp/eye-batch-cases.mjs",
+      "/private/tmp/eye-acular-recheck.mjs"
+    ],
+    "screenshots": [
+      "/private/tmp/eye-batch-0-desktop.png",
+      "/private/tmp/eye-batch-1-desktop.png",
+      "/private/tmp/eye-batch-2-desktop.png",
+      "/private/tmp/eye-batch-3-desktop.png",
+      "/private/tmp/eye-batch-4-desktop.png",
+      "/private/tmp/eye-batch-5-desktop.png",
+      "/private/tmp/eye-batch-6-desktop.png",
+      "/private/tmp/eye-batch-7-desktop.png",
+      "/private/tmp/eye-batch-8-desktop.png",
+      "/private/tmp/eye-batch-9-desktop.png",
+      "/private/tmp/eye-batch-10-desktop.png",
+      "/private/tmp/eye-batch-11-desktop.png",
+      "/private/tmp/eye-batch-12-desktop.png",
+      "/private/tmp/eye-batch-13-desktop.png",
+      "/private/tmp/eye-batch-0-mobile.png",
+      "/private/tmp/eye-batch-1-mobile.png",
+      "/private/tmp/eye-batch-2-mobile.png",
+      "/private/tmp/eye-batch-3-mobile.png",
+      "/private/tmp/eye-batch-4-mobile.png",
+      "/private/tmp/eye-batch-5-mobile.png",
+      "/private/tmp/eye-batch-6-mobile.png",
+      "/private/tmp/eye-batch-7-mobile.png",
+      "/private/tmp/eye-batch-8-mobile.png",
+      "/private/tmp/eye-batch-9-mobile.png",
+      "/private/tmp/eye-batch-10-mobile.png",
+      "/private/tmp/eye-batch-11-mobile.png",
+      "/private/tmp/eye-batch-12-mobile.png",
+      "/private/tmp/eye-batch-13-mobile.png"
+    ],
+    "scopeLimit": "Scoped UI verification only; other medication coverage and whole-module clinical audit remain incomplete."
+  },
+  "finalClosure": {
+    "date": "2026-09-26",
+    "status": "resolved_for_common_eye_module",
+    "evidence": "common-eye-completion-review.json",
+    "note": "Earlier statuses, counts and pending text are historical snapshots. Final completion record and its lesson mapping supersede Common Eye remaining-work statements. Ear-module work remains separate."
+  }
+}

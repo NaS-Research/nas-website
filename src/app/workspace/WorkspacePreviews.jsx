@@ -4,7 +4,7 @@ import WorkspaceHeart from "./WorkspaceHeart";
 import Link from "next/link";
 export function AnatomyPreview() {
   return <div className="workspace-anatomy workspace-preview">
-    <div className="workspace-preview-top"><span>Human heart</span><span>Visual Atlas</span></div>
+    <div className="workspace-preview-top"><span>Human heart</span><span>Human Atlas</span></div>
     <WorkspaceHeart />
     <div className="workspace-preview-bottom"><Link href="/learn/pharmacy/atlas">Explore the interactive atlas ↗</Link><a href="/learn/models/README.md">neshallads · CC BY 4.0</a></div>
   </div>;

@@ -89,11 +89,11 @@ export const pediatricParenteralNutritionModule = {
       lesson: [
         { heading: "Validate the complete formulation", body: "Calcium-phosphate solubility depends on amino-acid product and concentration, calcium and phosphate salts, pH, cysteine, other electrolytes, final volume, temperature, sequence, time, and storage. A clear bag does not prove safety. Use validated compatibility data and compounding-system limits for the exact formulation." },
         { heading: "Do not force a total nutrient admixture", body: "ASPEN notes that a total nutrient admixture is often not feasible for pediatric patients because high calcium and phosphorus requirements create compatibility and stability constraints. Lipid is commonly infused separately or co-administered by a validated Y-site process. Product-specific compatibility remains required." },
-        { heading: "Calculate the aluminum burden", body: "Aluminum can enter PN through large- and small-volume products, especially certain mineral salts. Immature kidneys and prolonged exposure increase risk for neurologic and bone toxicity. FDA recommends total PN aluminum exposure not exceed 4 to 5 mcg/kg/day. Use measured or labeled concentrations as directed and sum every source." },
+        { heading: "Calculate the aluminum burden", body: "Aluminum can enter PN through large- and small-volume products, especially certain mineral salts. Immature kidneys and prolonged exposure increase risk for neurologic and bone toxicity. The cited July 2025 FDA draft guidance targets total PN aluminum exposure no higher than 4 to 5 mcg/kg/day. This is not a guaranteed safe threshold: the required labeling warning notes that tissue accumulation can occur below this range. Use measured or labeled concentrations as directed and sum every source." },
         { heading: "Protect the entire administration path", body: "ASPEN recommends a 1.2 micron filter for lipid and other PN formulations and photoprotection when lipid is used in neonates. Light protection should cover the validated container and administration set. Independent checks should confirm patient, route, pump channel, rate, line connection, filter, and protection from the pharmacy through the bedside." },
       ],
       keyPoints: ["Clear appearance does not prove calcium-phosphate compatibility.", "TNA may be infeasible in small pediatric formulations.", "Total aluminum exposure includes every PN component.", "Use a 1.2 micron filter and neonatal photoprotection."],
-      check: { question: "What is the FDA-recommended ceiling for total aluminum exposure from PN?", choices: ["4 to 5 mcg/kg/day", "40 to 50 mg/kg/day", "400 mcg/kg/hour", "5 g/kg/day"], answer: 0, rationale: "FDA recommends that total aluminum exposure from PN not exceed 4 to 5 mcg/kg/day.", reviewHref: "#pediatric-compounding-safety" },
+      check: { question: "Which total aluminum exposure target is stated in the cited FDA draft PN guidance?", choices: ["4 to 5 mcg/kg/day", "40 to 50 mg/kg/day", "400 mcg/kg/hour", "5 g/kg/day"], answer: 0, rationale: "The draft targets no more than 4 to 5 mcg/kg/day; lower exposure does not eliminate accumulation risk.", reviewHref: "#pediatric-compounding-safety" },
     },
     {
       slug: "pediatric-order-monitoring",
@@ -117,7 +117,7 @@ export const pediatricParenteralNutritionModule = {
     { label: "ASPEN. Appropriate Dosing for Parenteral Nutrition", href: "https://nutritioncare.org/wp-content/uploads/2024/12/Appropriate-Dosing-for-PN.pdf" },
     { label: "ASPEN. Lipid Injectable Emulsion Safety for Neonates and Pediatrics", href: "https://nutritioncare.org/text-based-resource/aspen-lipid-injectable-emulsion-safety-recommendations-part-2-neonate-and-pediatric-considerations/" },
     { label: "FDA. SMOFlipid Prescribing Information, 2025", href: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/207648s013lbl.pdf" },
-    { label: "FDA. Aluminum Content and Labeling Recommendations for PN Products", href: "https://www.fda.gov/media/163799/download" },
+    { label: "FDA. Aluminum Content and Labeling Recommendations for PN Products (July 2025 draft)", href: "https://www.fda.gov/media/163799/download" },
   ],
   questionBank: pediatricParenteralNutritionQuestionBank,
 };

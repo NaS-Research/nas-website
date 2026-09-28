@@ -1,0 +1,58 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_module_review",
+  "book": "RxPrep 2023 printed p544 fluorometholone examples",
+  "sources": [
+    {
+      "name": "FML",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=c374d65a-35b5-4c9e-9069-5148875dc4df&type=display"
+    },
+    {
+      "name": "FML Forte",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=b810b4c3-ac7a-4ba5-85bf-ebfaf3b1dabf&type=display"
+    },
+    {
+      "name": "Flarex",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=19918ea5-8568-44d6-b8ee-7b2197cee85c&type=display"
+    }
+  ],
+  "readScope": "Full prescribing text of FML December 2023, FML Forte February 2025, Flarex July 2022 (listing updated January 2025). Chemical structures and packaging images not inspected.",
+  "changes": [
+    "Added three rows distinguishing active ingredient, concentration, dosing, pressure risk, handling and age evidence; one original case."
+  ],
+  "discrepancies": [
+    "Flarex precautions direct re-evaluation after two days without improvement; dosage paragraph says consult after two weeks. Teaching uses the earlier precautions threshold, with prompt worsening-symptom review."
+  ],
+  "remaining": [
+    "Remaining steroid and NSAID formulations",
+    "Rendered validation and whole-module clinical verification"
+  ],
+  "ointmentReview": {
+    "date": "2026-09-26",
+    "sources": [
+      "https://www.ashp.org/drug-shortages/current-shortages/drug-shortage-detail.aspx?id=613",
+      "https://www.accessdata.fda.gov/drugsatfda_docs/label/2013/017760s017lbl.pdf"
+    ],
+    "readScope": "Read ASHP product-status bulletin and all five pages of archived FDA label text; no chemical-structure image inspection.",
+    "finding": "ASHP April 24 2024 bulletin reports AbbVie discontinued the sole US ointment presentation; suspension unaffected. Archived FDA February 2013 label retained only for historical formulation distinction.",
+    "change": "Added historical-product row without presenting ointment as currently available or transferring suspension dosing.",
+    "validation": "New row awaits desktop/mobile check."
+  },
+  "outstandingRowsRenderValidation": {
+    "date": "2026-09-26",
+    "script": "/private/tmp/eye-outstanding-rows.mjs",
+    "viewports": [
+      "1440x1000",
+      "390x844"
+    ],
+    "scope": "22 previously outstanding rows: FML/Flarex, Alrex/Lotemax formulations, dry-eye foundations and lubricants, contact-lens hygiene, redness OTC products, prednisolone and Maxidex.",
+    "result": "All 44 captures visually inspected. No browser errors or horizontal overflow. Maxidex mobile final lines were inspected in an additional scrolled capture /private/tmp/eye-maxidex-tail-mobile.png because the floating tools button overlapped the first capture bottom. Together the two captures show the complete target text.",
+    "limitation": "Scoped local preview; does not establish whole-module clinical verification or live deployment."
+  },
+  "finalClosure": {
+    "date": "2026-09-26",
+    "status": "resolved_for_common_eye_module",
+    "evidence": "common-eye-completion-review.json",
+    "note": "Earlier statuses, counts and pending text are historical snapshots. Final completion record and its lesson mapping supersede Common Eye remaining-work statements. Ear-module work remains separate."
+  }
+}

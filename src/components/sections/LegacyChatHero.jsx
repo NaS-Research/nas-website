@@ -1,5 +1,6 @@
 "use client";
 
+import { scrollPageTo } from "@/lib/pageScroll.mjs";
 import { FiArrowUp } from "react-icons/fi";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -78,7 +79,7 @@ export default function LegacyChatHero() {
 
       <button
         type="button"
-        onClick={() => document.getElementById("next-section")?.scrollIntoView({ behavior: "smooth" })}
+        onClick={() => scrollPageTo(document.getElementById("next-section"))}
         className="absolute bottom-0 mb-4 text-base text-neutral-500 hover:text-white transition cursor-pointer"
       >
         ↓ Scroll to explore

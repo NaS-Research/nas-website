@@ -1,0 +1,50 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_module_review",
+  "sources": [
+    {
+      "product": "Naphcon-A",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=df40c426-ef66-4688-b5b5-c6fc5556e9a8",
+      "readScope": "Full Drug Facts text; package images not inspected."
+    },
+    {
+      "product": "Visine Red Eye Comfort",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=d7abd7cb-e094-481f-bea5-a5983e2c9ef4",
+      "readScope": "Full Drug Facts text; package images not inspected."
+    },
+    {
+      "product": "Clear Eyes Redness Relief",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a26ef66e-2def-4c98-9959-d40d4cfe3108",
+      "readScope": "Full Drug Facts text; package images not inspected."
+    }
+  ],
+  "changes": [
+    "Added all three remaining book-listed redness product types with ingredients, dosing boundaries, glaucoma cautions and ingestion warning.",
+    "Distinguished antihistamine combination from redness-only vasoconstriction."
+  ],
+  "sourceDiscrepancies": [
+    "Clear Eyes Pocket Pal structured table has 1000-fold lower mg/mL entries than Drug Facts; teaching follows 0.012% naphazoline and 0.25% glycerin, independently equivalent to 0.12 and 2.5 mg/mL. No all-age safety inference from absent age cutoff."
+  ],
+  "remaining": [
+    "Rendered validation",
+    "Whole-module clinical reconciliation"
+  ],
+  "validation": "Module import and scoped whitespace checks passed. New rows not rendered yet.",
+  "outstandingRowsRenderValidation": {
+    "date": "2026-09-26",
+    "script": "/private/tmp/eye-outstanding-rows.mjs",
+    "viewports": [
+      "1440x1000",
+      "390x844"
+    ],
+    "scope": "22 previously outstanding rows: FML/Flarex, Alrex/Lotemax formulations, dry-eye foundations and lubricants, contact-lens hygiene, redness OTC products, prednisolone and Maxidex.",
+    "result": "All 44 captures visually inspected. No browser errors or horizontal overflow. Maxidex mobile final lines were inspected in an additional scrolled capture /private/tmp/eye-maxidex-tail-mobile.png because the floating tools button overlapped the first capture bottom. Together the two captures show the complete target text.",
+    "limitation": "Scoped local preview; does not establish whole-module clinical verification or live deployment."
+  },
+  "finalClosure": {
+    "date": "2026-09-26",
+    "status": "resolved_for_common_eye_module",
+    "evidence": "common-eye-completion-review.json",
+    "note": "Earlier statuses, counts and pending text are historical snapshots. Final completion record and its lesson mapping supersede Common Eye remaining-work statements. Ear-module work remains separate."
+  }
+}

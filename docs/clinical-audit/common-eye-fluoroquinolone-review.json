@@ -1,0 +1,49 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "partial_product_review",
+  "module": "common-eye-conditions",
+  "sources": [
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=12053b08-7e66-c6f3-e063-6394a90a9cd9",
+      "label": "DailyMed. Vigamox prescribing information, January 2025",
+      "scope": "Full prescribing text read, including dosing, populations, adverse effects, pharmacology, studies, storage and counseling; packaging/chemical images not inspected."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05248b68-16a9-488d-a39f-5137d2410471",
+      "label": "DailyMed. Moxeza prescribing information, August 2021; historical presentation",
+      "scope": "Full prescribing text read, including dosing, populations, adverse effects, pharmacology, studies, storage and counseling; packaging/chemical images not inspected."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a3e6d688-7e5e-4ca3-b27e-79756c322a32",
+      "label": "DailyMed. Besivance prescribing information, February 2022",
+      "scope": "Full prescribing text read, including dosing, populations, adverse effects, pharmacology, studies, storage and counseling; packaging/chemical images not inspected."
+    }
+  ],
+  "findings": [
+    "Added moxifloxacin formulation-specific schedules, ages, handling and route warning plus one original applied question.",
+    "Moxeza DailyMed presentation NDC0065-0006-03 has marketing end2019-03-01 despite SPL update2025-12; described as historical and required product/availability verification, without claiming all moxifloxacin formulations discontinued.",
+    "Vigamox current pediatric statement establishes all ages; older secondary summaries still say one year, so current label controls.",
+    "Besivance manufacturer label read; separate repackager page returned internal error.",
+    "Doses in trial descriptions do not supersede labeled seven-day regimens."
+  ],
+  "validation": {
+    "import": "11 lessons,135 unique questions; answer indices and review destinations valid; diff whitespace check passed.",
+    "render": "All new product paragraphs captured and visually inspected at1440x1000 and390x844. No text clipping or horizontal overflow; no browser page errors.",
+    "remaining": "Full assessment clinical pass and new-case interaction checks; remaining module content and final build."
+  },
+  "remaining": [
+    "Ciprofloxacin/ofloxacin and remaining topical antibiotics",
+    "Current systemic/neonatal/herpetic treatment pathways",
+    "Full module/bank/visual review and final build"
+  ],
+  "hashes": {
+    "src/data/modules/commonEyeConditions.js": "56d6219344be28035e0f326881e7a748e83fc3597e8d0689bc337f672148806f",
+    "src/data/questionBanks/commonEyeConditions.js": "e03b9a33cd02505170c478861201c71ebb3149f8ba92da825bcff7d261f0c724"
+  },
+  "finalClosure": {
+    "date": "2026-09-26",
+    "status": "resolved_for_common_eye_module",
+    "evidence": "common-eye-completion-review.json",
+    "note": "Earlier statuses, counts and pending text are historical snapshots. Final completion record and its lesson mapping supersede Common Eye remaining-work statements. Ear-module work remains separate."
+  }
+}

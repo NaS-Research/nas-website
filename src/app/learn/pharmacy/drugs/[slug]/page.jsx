@@ -1,8 +1,11 @@
 import Link from "next/link";
+import { drugPageGroups } from "@/data/drugPageSections";
+import "@/components/learn/drug-profile.css";
 import { notFound } from "next/navigation";
 import Footer from "@/components/Footer";
 import OfficialLabelProfile from "@/components/learn/OfficialLabelProfile";
 import { coreDrugs, getCoreDrug } from "@/data/drugLibrary";
+import { getDrugAtlasLesson } from "@/data/drugAtlas";
 
 export function generateStaticParams() {
   return coreDrugs.map((drug) => ({ slug: drug.slug }));
@@ -25,84 +28,43 @@ function titleCase(value) {
   return value.replace(/\b\w/g, (letter) => letter.toUpperCase());
 }
 
-const studySections = [
-  { key: "commonUses", label: "Uses" },
-  { key: "administration", label: "Administration" },
-  { key: "commonEffects", label: "Common effects" },
-  { key: "seriousRisks", label: "Serious risks" },
-  { key: "contraindications", label: "Contraindications" },
-  { key: "interactions", label: "Interactions" },
-  { key: "monitoring", label: "Monitoring" },
-  { key: "counseling", label: "Counseling" },
-];
-
 export default async function DrugProfilePage({ params }) {
   const { slug } = await params;
   const drug = getCoreDrug(slug);
   if (!drug) notFound();
   const hasReviewedCard = Boolean(drug.brand);
-  const isFluoxetine = drug.generic === "fluoxetine";
-
+  const classification = drug.className || (drug.therapeuticClass !== "Miscellaneous agents" ? drug.therapeuticClass : null);
+  const groups = drugPageGroups.filter(group => group.id === 'overview' || group.sections.some(([key]) => drug[key]?.length));
   return (
     <div className="nas-page drug-profile-page">
       <div data-page-main>
         <header className="nas-shell drug-profile-hero">
           <Link href="/learn/pharmacy/drugs" className="learning-back">← Drug library</Link>
+          <div className="drug-profile-kicker"><span>Medication reference</span><span>{hasReviewedCard ? "Study guide" : "Official label reader"}</span></div>
           <h1>{titleCase(drug.generic)}</h1>
-          {hasReviewedCard && <div className="drug-profile-hero__meta"><strong>{drug.brand}</strong><span>{drug.className}</span><span>{drug.form}</span></div>}
+          <p className="drug-profile-subtitle">{drug.brand || classification || "Public medication reference"}</p>
+          <dl className="drug-profile-facts">
+            <div><dt>Therapeutic class</dt><dd>{classification || "See the specific product label"}</dd></div>
+            <div><dt>{hasReviewedCard ? "Formulation" : "Reference type"}</dt><dd>{drug.form || "Product-specific public labeling"}</dd></div>
+            <div><dt>Explore</dt><dd>{getDrugAtlasLesson(drug.slug) ? <Link href={`/learn/pharmacy/atlas?drug=${drug.slug}`}>Open teaching atlas ↗</Link> : <Link href="/learn/pharmacy/drugs">Browse the drug library ↗</Link>}</dd></div>
+          </dl>
         </header>
-
         <div className="nas-shell drug-profile-layout">
-          {!hasReviewedCard ? (
-            <OfficialLabelProfile generic={drug.generic} />
-          ) : isFluoxetine ? (
-            <section className="drug-appearance" aria-labelledby="appearance-title">
-              <div className="drug-appearance__heading"><div><p className="nas-section-label">Medication appearance</p><h2 id="appearance-title">Fluoxetine 20 mg capsule</h2></div><span>Example product · E 91</span></div>
-              <div className="drug-appearance__stage">
-                <div className="capsule-model" role="img" aria-label="Green and off-white fluoxetine 20 milligram capsule with E 91 imprint">
-                  <span className="capsule-model__cap">E</span><span className="capsule-model__body">91</span>
-                </div>
-                <div className="drug-appearance__orbit" aria-hidden="true" />
-              </div>
-              <div className="drug-appearance__facts">
-                <div><span>Strength</span><strong>20 mg</strong></div><div><span>Form</span><strong>Hard gelatin capsule</strong></div><div><span>Color</span><strong>Green and off-white</strong></div><div><span>Imprint</span><strong>E · 91</strong></div>
-              </div>
-              <p>This is one labeled manufacturer presentation. Fluoxetine products can have different colors, shapes, and imprints. Confirm the imprint and original packaging rather than relying on color.</p>
-              <a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9b8d8da5-8c06-0942-e053-2995a90aa2c9" target="_blank" rel="noreferrer">View the source label on DailyMed ↗</a>
-            </section>
-          ) : (
-            null
-          )}
-
-          {hasReviewedCard && <section className="drug-study-card" aria-labelledby="study-card-title">
-            <div className="drug-study-card__mechanism">
-              <div>
-                <h2 id="study-card-title">Mechanism</h2>
-                <p>{drug.mechanism}</p>
-              </div>
+          {hasReviewedCard ? <div className="drug-reader">
+            <nav className="drug-reader-nav" aria-label="On this drug page"><span>On this page</span>{groups.map(group=><a key={group.id} href={`#${group.id}`}><small>{group.number}</small>{group.label}</a>)}<a href="#drug-sources"><small>04</small>Sources</a></nav>
+            <div className="drug-reader-content">
+              {groups.map(group=><section id={group.id} className={`drug-chapter drug-chapter--${group.id}`} key={group.id} aria-labelledby={`${group.id}-title`}>
+                <header><span>{group.number}</span><div><h2 id={`${group.id}-title`}>{group.label}</h2><p>{group.description}</p></div></header>
+                {group.id==='overview' && <section className="drug-mechanism-card"><span>How it works</span><h3>Mechanism of action</h3><p>{drug.mechanism}</p></section>}
+                <div className="drug-section-grid">{group.sections.filter(([key])=>drug[key]?.length).map(([key,label])=><section className={`drug-detail drug-detail--${key}`} key={key}><h3>{label}</h3><ul>{drug[key].map((item,index)=><li key={index}>{item}</li>)}</ul></section>)}</div>
+              </section>)}
+              {drug.generic==='fluoxetine' && <details className="drug-product-example"><summary>Product appearance · Fluoxetine 20 mg capsule</summary><p>Example product: green and off-white hard gelatin capsule, imprint E · 91. Other manufacturers may use different colors, shapes, and imprints. Confirm the imprint and original packaging.</p><a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9b8d8da5-8c06-0942-e053-2995a90aa2c9" target="_blank" rel="noreferrer">View this product’s label ↗</a></details>}
+              <section id="drug-sources" className="drug-source-panel"><span>04 / Sources</span><h2>Check the specific product.</h2><p>This study guide is a concise educational reference. Current prescribing information contains product-specific details.</p><a href={`https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=${encodeURIComponent(drug.generic)}`} target="_blank" rel="noreferrer">Review current DailyMed labels ↗</a></section>
             </div>
-
-            <div className="drug-study-card__grid">
-              {studySections.filter((section) => drug[section.key]?.length).map((section) => (
-                <section className={`drug-study-card__section drug-study-card__section--${section.key}`} key={section.key}>
-                  <div className="drug-study-card__section-title">
-                    <h3>{section.label}</h3>
-                  </div>
-                  <ul>
-                    {drug[section.key].map((item) => <li key={item}>{item}</li>)}
-                  </ul>
-                </section>
-              ))}
-            </div>
-          </section>}
-
-          <aside className="drug-profile-safety">
-            <p>Educational reference only. Verify the specific product and current prescribing information before applying clinical details.</p>
-            <a href={`https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=${encodeURIComponent(drug.generic)}`} target="_blank" rel="noreferrer">Review current DailyMed labels ↗</a>
-          </aside>
+          </div> : <OfficialLabelProfile generic={drug.generic} />}
+          <aside className="drug-profile-safety"><p>Educational reference only. Verify the specific product and current prescribing information before applying clinical details.</p></aside>
         </div>
-      </div>
-      <Footer />
+      </div><Footer />
     </div>
   );
 }
