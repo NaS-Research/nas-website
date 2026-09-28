@@ -6,9 +6,21 @@ import Link from "next/link";
 import DenialsWorkflowFigure from "@/components/research/DenialsWorkflowFigure";
 import { publicationArtwork } from "@/data/publicationArtwork";
 
+const bbbArtwork = publicationArtwork["blood-brain-barrier-prediction-audit"];
+
 const pam50Artwork = publicationArtwork["pam50-technical-repeatability"];
 
 const slides = [
+  {
+    id: "bbb",
+    eyebrow: "NAS-BBB-001 · Drug discovery",
+    title: "Testing the limits of blood-brain barrier prediction",
+    titleLines: ["Testing the limits of", "blood-brain barrier", "prediction"],
+    summary: "How well do predictions hold up when the chemistry changes?",
+    primary: { href: "/research/blood-brain-barrier-prediction-audit", label: "Read the research" },
+    secondary: { href: "/research/papers/nas-bbb-prediction-audit-v1.pdf", label: "View the paper" },
+    visual: "bbb",
+  },
   {
     id: "brca",
     eyebrow: "NAS-BRCA-002 · Oncology",
@@ -28,15 +40,7 @@ const slides = [
     secondary: { href: "/research/papers/introducing-nas-denials.pdf", label: "View the paper" },
     visual: "workflow",
   },
-  {
-    id: "mission",
-    eyebrow: "NaS Research",
-    title: "We build systems to investigate difficult questions.",
-    summary: "Independent research and software across biology, medicine, and the systems that support them.",
-    primary: { href: "/research", label: "Read our publications" },
-    secondary: { href: "/about", label: "Discover our mission" },
-    visual: "mark",
-  },
+
 ];
 
 export default function HeroSection() {
@@ -91,7 +95,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className={`home-carousel__visual home-carousel__visual--${activeSlide.visual}`} aria-hidden={!(["workflow", "brca"].includes(activeSlide.visual))}>
+        <div className={`home-carousel__visual home-carousel__visual--${activeSlide.visual}`} aria-hidden={!(["workflow", "brca", "bbb"].includes(activeSlide.visual))}>
           {activeSlide.visual === "workflow" && <DenialsWorkflowFigure compact theme="dark" />}
           {activeSlide.visual === "mark" && (
             <div className="home-mark">
@@ -116,14 +120,14 @@ export default function HeroSection() {
               />
             </div>
           )}
-          {activeSlide.visual === "brca" && (
+          {["brca", "bbb"].includes(activeSlide.visual) && (
             <figure className="home-brca-visual">
               <div className="home-brca-visual__frame">
                 <Image
-                  src={pam50Artwork.heroSrc ?? pam50Artwork.src}
-                  alt={pam50Artwork.heroAlt ?? pam50Artwork.alt}
+                  src={activeSlide.visual === "bbb" ? bbbArtwork.src : (pam50Artwork.heroSrc ?? pam50Artwork.src)}
+                  alt={activeSlide.visual === "bbb" ? bbbArtwork.alt : (pam50Artwork.heroAlt ?? pam50Artwork.alt)}
                   width={1600}
-                  height={900}
+                  height={activeSlide.visual === "bbb" ? 1067 : 900}
                   sizes="(max-width: 767px) 92vw, 48vw"
                   priority
                 />

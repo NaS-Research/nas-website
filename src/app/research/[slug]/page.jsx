@@ -9,6 +9,7 @@ import { notFound } from "next/navigation";
 import Footer from "@/components/Footer";
 import CortexNativeVisual from "@/components/research/CortexNativeVisual";
 import DenialsWorkflowFigure from "@/components/research/DenialsWorkflowFigure";
+import BbbStudyVisual from "@/components/research/BbbStudyVisual";
 import PublicationActions from "@/components/research/PublicationActions";
 import { getResearchItem, researchItems } from "@/data/researchLibrary";
 
@@ -41,6 +42,7 @@ export async function generateMetadata({ params }) {
   return {
     title: `${item.title} | NaS Research`,
     description: item.abstract,
+    ...(item.publicationStatus === "draft" ? { robots: { index: false, follow: false } } : {}),
     authors: item.authors.map((name) => ({ name })),
     alternates: { canonical: `/research/${item.slug}` },
     openGraph: {
@@ -203,6 +205,7 @@ export default async function ResearchPublicationPage({ params }) {
                 <figcaption>{figure.caption} <a className="publication-figure-expand" href={figure.src} target="_blank" rel="noopener noreferrer">Open full-size figure ↗</a></figcaption>
               </figure>)}
               {item.workflowFigureSection === section.id && <DenialsWorkflowFigure />}
+              {item.slug === "blood-brain-barrier-prediction-audit" && <BbbStudyVisual section={section.id} />}
               {item.visualsBySection?.[section.id]?.map((visual) => (
                 <CortexNativeVisual visual={visual} key={visual.kind === "table" ? visual.number : visual.title} />
               ))}

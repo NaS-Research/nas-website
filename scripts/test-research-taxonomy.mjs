@@ -3,7 +3,7 @@ import { readFileSync } from 'node:fs';
 import vm from 'node:vm';
 import { researchTypeGroups, availableResearchTypes, matchesResearchType } from '../src/data/researchTaxonomy.mjs';
 const context = vm.createContext({ availableResearchTypes, cortexPaperSections: [], cortexNativeVisualsBySection: {} });
-for (const name of ['brcaRepeatabilityRelease', 'atlasRelease', 'denialsRelease', 'researchLibrary']) {
+for (const name of ['bbbRelease', 'brcaRepeatabilityRelease', 'atlasRelease', 'denialsRelease', 'researchLibrary']) {
   const source = readFileSync(new URL(`../src/data/${name}.js`, import.meta.url), 'utf8').replace(/^import .*;\n/gm, '').replace(/export /g, '');
   vm.runInContext(source, context);
 }
@@ -14,6 +14,7 @@ for (const item of items) {
   assert.ok(!/computational/i.test(item.area), `${item.slug}: concise area`);
 }
 const expected = {
+  'blood-brain-barrier-prediction-audit': ['Publications', 'Drug Discovery'],
   'pam50-technical-repeatability': ['Publications', 'Oncology'],
   'alphagenome-atlas-rnu4-2': ['Research Notes', 'Genomics'],
   'introducing-nas-denials': ['Publications', 'Healthcare Operations'],
@@ -31,4 +32,4 @@ for (const item of items) {
 assert.ok(!availableResearchTypes(items).includes('Model Cards'));
 assert.ok(availableResearchTypes([...items, {type: 'Model Card'}]).includes('Model Cards'));
 console.log(items.map(item => `${item.shortTitle}: ${item.type} / ${item.area}`).join('\n'));
-console.log('All seven entries classified; every entry reachable through exactly one format filter.');
+console.log(`All ${items.length} entries classified; every entry reachable through exactly one format filter.`);

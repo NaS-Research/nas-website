@@ -16,11 +16,13 @@ function ResearchRail({ studies, compact, paused, reduced }) {
 
   useEffect(() => {
     const element = rail.current;
-    let frame, previous = 0, visible = false, position = element.scrollLeft, written = element.scrollLeft, direction = 1;
-    let maximum = 0;
+    let frame, previous = 0, visible = false, position = 0, written = 0;
+    let cycle = 0;
     const measure = () => {
-      maximum = Math.max(0, element.scrollWidth - element.clientWidth);
-      position = written = element.scrollLeft;
+      cycle = group.current.getBoundingClientRect().width;
+      position = reduced ? 0 : cycle;
+      element.scrollLeft = position;
+      written = element.scrollLeft;
     };
     const resize = new ResizeObserver(measure);
     resize.observe(group.current);
@@ -31,14 +33,15 @@ function ResearchRail({ studies, compact, paused, reduced }) {
     const tick = time => {
       const elapsed = previous ? Math.min(time - previous, 50) : 0;
       previous = time;
-      if (maximum > 2 && !reduced && visible && !document.hidden && !pausedRef.current && !interacting.current && !dragging.current && !element.contains(document.activeElement)) {
-        if (element.scrollLeft !== written) position = element.scrollLeft;
-        const distance = direction > 0 ? maximum - position : position;
-        const ease = Math.min(1, Math.max(.12, distance / 100));
-        position += direction * elapsed * (compact ? .022 : .030) * ease;
-        if (position >= maximum) { position = maximum; direction = -1; }
-        if (position <= 0) { position = 0; direction = 1; }
-        element.scrollLeft = position; written = element.scrollLeft;
+      if (cycle > 0 && !reduced && visible && !document.hidden && !pausedRef.current && !interacting.current && !dragging.current && !element.contains(document.activeElement)) {
+        if (Math.abs(element.scrollLeft - written) > 1) position = element.scrollLeft;
+        // Decreasing scrollLeft moves the artwork to the right. Wrap between
+        // identical tracks without reversing direction or a visible reset.
+        position -= elapsed * (compact ? .022 : .030);
+        if (position < cycle) position += cycle;
+        if (position >= cycle * 2) position -= cycle;
+        element.scrollLeft = position;
+        written = element.scrollLeft;
       }
       frame = requestAnimationFrame(tick);
     };
@@ -47,7 +50,7 @@ function ResearchRail({ studies, compact, paused, reduced }) {
   }, [reduced, compact]);
 
   return <div className={compact ? "research-gallery__row research-gallery__row--small" : "research-gallery__row"}>
-    <div ref={rail} className="research-gallery__rail" role="region" aria-label={compact ? "More publications" : "Featured publications"}
+    <div ref={rail} className="research-gallery__rail" data-reduced={reduced} role="region" aria-label={compact ? "More publications" : "Featured publications"}
       onPointerEnter={e => { if (e.pointerType === "mouse") interacting.current = true; }}
       onPointerLeave={() => { interacting.current = false; }}
       onTouchStart={() => { interacting.current = true; }}
@@ -72,8 +75,8 @@ function ResearchRail({ studies, compact, paused, reduced }) {
       onLostPointerCapture={() => { dragging.current = null; }}
       onDragStart={e => e.preventDefault()}
       onClickCapture={e => { if (suppressClick.current) { e.preventDefault(); e.stopPropagation(); suppressClick.current = false; } }}>
-      <div className="research-gallery__group" ref={group}>
-        {studies.map(study => <Link key={study.slug} href={`/research/${study.slug}`} className="research-gallery__card" aria-label={`${study.title}. ${study.type}. Read publication.`}>
+      {(reduced ? [0] : [0, 1, 2, 3]).map(copy => <div className="research-gallery__group" ref={copy === (reduced ? 0 : 1) ? group : undefined} key={copy} aria-hidden={!reduced && copy !== 1 ? true : undefined}>
+        {studies.map(study => <Link key={study.slug} href={`/research/${study.slug}`} className="research-gallery__card" tabIndex={!reduced && copy !== 1 ? -1 : undefined} aria-label={`${study.title}. ${study.type}. Read publication.`}>
           <Image src={study.image} alt="" fill sizes={compact ? "(max-width: 600px) 78vw, 35vw" : "(max-width: 600px) 88vw, 78vw"} draggable={false} />
           <div className="research-gallery__shade" />
           <span className="research-gallery__identity">NaS <span>Research</span></span>
@@ -83,7 +86,7 @@ function ResearchRail({ studies, compact, paused, reduced }) {
             <span className="research-gallery__read">{study.type === "White Paper" ? "Read paper" : "Read study"}</span>
           </div>
         </Link>)}
-      </div>
+      </div>)}
     </div>
 
   </div>;
@@ -91,10 +94,10 @@ function ResearchRail({ studies, compact, paused, reduced }) {
 
 export default function ResearchGallery({ studies }) {
   const gallery = useRef(null);
-  const step = direction => {
+  const step = () => {
     gallery.current?.querySelectorAll(".research-gallery__rail").forEach(element => {
       const card = element.querySelector("a");
-      if (card) element.scrollLeft += direction * (card.getBoundingClientRect().width + 12);
+      if (card) element.scrollLeft -= card.getBoundingClientRect().width + 12;
     });
   };
   const [paused, setPaused] = useState(false);
@@ -108,8 +111,9 @@ export default function ResearchGallery({ studies }) {
   }, []);
   if (!studies.length) return null;
   const unique = studies.filter((study, index) => studies.findIndex(item => item.slug === study.slug || item.image === study.image) === index);
-  const primary = unique.slice(0, 2);
-  const secondary = unique.slice(2);
+  const split = Math.max(1, Math.floor(unique.length / 2));
+  const primary = unique.slice(0, split);
+  const secondary = unique.slice(split);
   return <section ref={gallery} id="current-research" className="research-gallery" aria-labelledby="research-gallery-title">
     <header className="research-gallery__header">
       <p>Research at NaS</p><h2 id="research-gallery-title">Selected research.</h2>
@@ -120,8 +124,7 @@ export default function ResearchGallery({ studies }) {
     <div className="research-gallery__footer">
       <span>Reports, research notes & white papers</span>
       <div className="research-gallery__controls" role="group" aria-label="Research gallery controls">
-      <button onClick={() => step(-1)} aria-label="Previous research">←</button>
-      <button onClick={() => step(1)} aria-label="Next research">→</button>
+      <button onClick={step} aria-label="Show more research">→</button>
       {!reduced && <button onClick={() => setPaused(value => !value)} aria-label={paused ? "Play research gallery" : "Pause research gallery"} aria-pressed={paused}><span aria-hidden="true">{paused ? "▶" : "Ⅱ"}</span> {paused ? "Play" : "Pause"}</button>}
       </div>
     </div>

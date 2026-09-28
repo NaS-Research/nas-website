@@ -1,5 +1,11 @@
 // Original NaS artwork; conceptual images do not represent measured outcomes.
 export const publicationArtwork = {
+  "blood-brain-barrier-prediction-audit": {
+    src: "/research/bbb-audit/cover-v1.webp",
+    alt: "Conceptual blood-brain barrier cutaway surrounded by supporting tissue; illustrative artwork, not measured study imagery",
+    creditUrl: "/research/bbb-audit/artwork.txt",
+    // Add an approved film URL here later; the still remains its poster fallback.
+  },
   "pam50-technical-repeatability": {
     src: "/research/nas-brca-002/pam50-method-v2.webp",
     alt: "Microscopy-informed conceptual cutaway of a breast-cancer cell showing its nucleus, chromatin, organelles, and single-stranded RNA transcripts",

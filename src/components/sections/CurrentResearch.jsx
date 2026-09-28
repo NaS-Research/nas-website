@@ -2,17 +2,12 @@ import { researchItems } from "@/data/researchLibrary";
 import { publicationArtwork } from "@/data/publicationArtwork";
 import ResearchGallery from "./ResearchGallery";
 
-// Editorial selection: public releases only, never unpublished project records.
-const selectedSlugs = [
-  "pam50-technical-repeatability",
-  "alphagenome-atlas-rnu4-2",
-  "introducing-nas-cortex",
-  "introducing-nas-denials",
-];
-
+// Grow with the publication library; institutional essays stay in their own collection.
 export default function CurrentResearch() {
-  const studies = selectedSlugs.flatMap(slug => {
-    const item = researchItems.find(entry => entry.slug === slug);
+  const studies = researchItems.filter(item =>
+    ["Research Report", "Research Note", "White Paper"].includes(item.type) && item.publicationStatus !== "draft"
+  ).flatMap(item => {
+    const slug = item.slug;
     const artwork = publicationArtwork[slug];
     return item && artwork ? [{
       slug, title: item.shortTitle || item.title, type: item.type,

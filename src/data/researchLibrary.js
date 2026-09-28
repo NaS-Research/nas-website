@@ -4,8 +4,10 @@ import { cortexNativeVisualsBySection } from "@/data/cortexNativeVisuals";
 import { denialsRelease } from "@/data/denialsRelease";
 import { atlasRelease } from "@/data/atlasRelease";
 import { brcaRepeatabilityRelease } from "@/data/brcaRepeatabilityRelease";
+import { bbbRelease } from "@/data/bbbRelease";
 
 export const researchItems = [
+  bbbRelease,
   brcaRepeatabilityRelease,
   atlasRelease,
   denialsRelease,
