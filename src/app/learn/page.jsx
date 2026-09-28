@@ -1,8 +1,6 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import LearningCinema from "@/components/learn/LearningCinema";
-import LearningLibrary from "@/components/learn/LearningLibrary";
-import { pharmacyLessons } from "@/data/pharmacyLearning";
 
 export const metadata = {
   title: "Learn | NaS",
@@ -22,31 +20,29 @@ export default function LearningPage() {
           </div>
           <div className="learning-index-hero__intro">
             <p>Lessons, models, and references for understanding living systems.</p>
-            <span>Our first subject collection explores pharmacy.</span>
           </div>
         </div>
       </header>
 
       <div data-page-main>
-        <section className="nas-shell learning-discipline" aria-labelledby="pharmacy-title">
+        <section className="nas-shell learning-discipline" id="library" aria-labelledby="library-title">
           <div className="learning-discipline__identity">
-            <span>Rx</span>
+            <span>01</span>
             <p>Learn</p>
           </div>
           <div className="learning-discipline__body">
-            <p className="nas-section-label">Subject collection · Pharmacy</p>
-            <h2 id="pharmacy-title">Understand the medicine, the patient, and the system around them.</h2>
-            <p>Pharmacy brings chemistry, physiology, evidence, formulation, safety, and human behavior into the same decision. This collection is designed to make those relationships visible.</p>
-            <Link href="/learn/pharmacy" className="learning-primary-link">Explore pharmacy <span aria-hidden="true">↗</span></Link>
+            <p className="nas-section-label">Learning library</p>
+            <h2 id="library-title">From mechanism to understanding.</h2>
+            <p>Explore the connections between living systems, medicines, and care. Find a focused module or follow a subject further.</p>
+            <Link href="/learn/library" className="learning-primary-link">Explore the library <span aria-hidden="true">↗</span></Link>
           </div>
-          <div className="learning-discipline__map" aria-label="Pharmacy subject preview">
-            <span>Foundations</span><span>Calculations</span><span>Therapeutics</span><span>Safety</span><span>Patient care</span>
+          <div className="learning-discipline__map" aria-label="Learning topics">
+            <span>Mechanisms</span><span>Living systems</span><span>Medicines</span><span>Evidence</span><span>Care</span>
           </div>
         </section>
 
         <LearningCinema />
 
-        <div className="nas-shell" id="library"><LearningLibrary lessons={pharmacyLessons} /></div>
 
         <section className="learning-standard">
           <div className="nas-shell learning-standard__grid">

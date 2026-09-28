@@ -59,7 +59,7 @@ export default function LearningCinema() {
           </div>}
         </div>
       </div>
-      <div className="learning-cinema__caption"><div className="learning-cinema__actions"><button onClick={() => setFullFilm(value => !value)}>{fullFilm ? "Back to preview" : "Watch the full film"} <span aria-hidden="true">{fullFilm ? "←" : "▶"}</span></button><a href="https://www.youtube.com/watch?v=zdM7I6EG8kY" target="_blank" rel="noopener noreferrer">YouTube ↗</a></div></div>
+      <div className="learning-cinema__caption"><div className="learning-cinema__actions"><button onClick={() => setFullFilm(value => !value)}>{fullFilm ? "Back to preview" : "Watch the full film"} <span aria-hidden="true">{fullFilm ? "←" : "▶"}</span></button><a href="https://www.youtube.com/@NaS_Research" target="_blank" rel="noopener noreferrer">YouTube ↗</a></div></div>
     </div>
   </section>;
 }
