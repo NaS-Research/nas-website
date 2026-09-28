@@ -51,7 +51,7 @@ export default function LearningCinema() {
           <video ref={video} poster={poster} autoPlay muted loop playsInline preload="none" aria-label="Life-sciences film preview" onPlaying={() => setPlaying(true)} onPause={() => setPlaying(false)} />
           {fullFilm && <iframe className="learning-cinema__player" src="https://www.youtube-nocookie.com/embed/zdM7I6EG8kY?autoplay=1&rel=0" title="What are the life sciences? | NaS Research" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowFullScreen referrerPolicy="strict-origin-when-cross-origin" />}
           {!fullFilm && <div className="learning-cinema__overlay">
-            <div><span>NaS <small>In focus</small></span><p>What are the life sciences?</p></div>
+            <div><span>NaS <small>In focus</small></span></div>
             <div className="learning-cinema__controls">
               <button onClick={expand} aria-label={expanded ? "Exit expanded preview" : "Expand film preview"}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5" /></svg></button>
               <button onClick={() => { if (playing) setPaused(true); else { setPaused(false); if (!video.current.src) video.current.src = film; video.current.play().catch(() => {}); } }} aria-label={playing ? "Pause film preview" : "Play film preview"}>{playing ? "Ⅱ" : "▶"}</button>
@@ -59,7 +59,7 @@ export default function LearningCinema() {
           </div>}
         </div>
       </div>
-      <div className="learning-cinema__caption"><p>What are the life sciences?</p><div className="learning-cinema__actions"><button onClick={() => setFullFilm(value => !value)}>{fullFilm ? "Back to preview" : "Watch the full film"} <span aria-hidden="true">{fullFilm ? "←" : "▶"}</span></button><a href="https://www.youtube.com/watch?v=zdM7I6EG8kY" target="_blank" rel="noopener noreferrer">YouTube ↗</a></div></div>
+      <div className="learning-cinema__caption"><div className="learning-cinema__actions"><button onClick={() => setFullFilm(value => !value)}>{fullFilm ? "Back to preview" : "Watch the full film"} <span aria-hidden="true">{fullFilm ? "←" : "▶"}</span></button><a href="https://www.youtube.com/watch?v=zdM7I6EG8kY" target="_blank" rel="noopener noreferrer">YouTube ↗</a></div></div>
     </div>
   </section>;
 }
