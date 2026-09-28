@@ -6,17 +6,17 @@ export const bbbRelease = {
   "area": "Drug Discovery",
   "date": "September 27, 2026",
   "dateISO": "2026-09-27",
-  "version": "1.0",
+  "version": "1.1",
   "authors": [
     "NaS Research"
   ],
   "readTime": "22 min read",
-  "pdfUrl": "/research/papers/nas-bbb-prediction-audit-v1.pdf",
-  "reproducibilityUrl": "/research/bbb-audit/research-package-v1.zip",
+  "pdfUrl": "/research/papers/nas-bbb-prediction-audit-v1.1.pdf",
+  "reproducibilityUrl": "/research/bbb-audit/research-package-v1.1.zip",
   "reviewState": "NAS-BBB-001 \u00b7 Research report",
   "abstract": "How chemical similarity and model confidence shape reliability beyond the benchmark.",
   "summary": "A strong benchmark score does not establish reliability on chemically different molecules. Across 300 model runs, we audited TDC BBB_Martins, controlled the similarity between training and test chemistry, and evaluated confidence-based selection on external data. Conservative curation retained 1,935 of 2,030 reference rows without verified biological relabeling. Morgan logistic regression AUROC was 0.913 on grouped-random tests and 0.732 under strict separation, a contrast involving different test populations. With test rows, training size and class balance held fixed, allowing closer training chemistry raised its mean AUROC from 0.816 to 0.869. On 428 conservatively filtered external records, an illustrative validation-fixed confidence policy reduced accepted error from 12.34% to 5.55% at 74.95% coverage. Accepted specificity remained 52.90%; class-standardized accepted error was 8.31%. No evaluated policy met the complete usefulness criterion on the 244-record distant subset. These results support reporting class retention and domain limits alongside aggregate performance.",
-  "publicationNote": "This report combines the BBB benchmark audit and its controlled and external follow-up. Version 1.0, September 27, 2026. Source protocols, aggregate results and analysis code accompany the report.",
+  "publicationNote": "This report combines the BBB benchmark audit and its controlled and external follow-up. Version 1.1, September 27, 2026. Editorial revision; numerical results and methods are unchanged. Source protocols, aggregate results and analysis code accompany the report.",
   "sourcesIntro": "Primary publications and pinned source repositories used in the audit and follow-up. Numbering corresponds to citations in the text.",
   "sections": [
     {
@@ -324,11 +324,10 @@ export const bbbRelease = {
     },
     {
       "id": "availability",
-      "title": "Reproducibility and disclosures",
+      "title": "Reproducibility",
       "paragraphs": [
         "The companion research package contains the original audit and follow-up reports, locally frozen protocols and amendments, pinned code and environments, source retrieval manifests, aggregate outputs, claims-to-evidence register and verification receipts. It includes verify_aggregates.py, replay_followup.py and release_diagnostics.py. Follow the included README and upstream conditions to retrieve source inputs and reproduce the analysis.",
         "Raw molecular records, record-level predictions, model checkpoints, private logs and publication machinery are excluded. The original source-license discrepancy remains unresolved; the package does not grant blanket redistribution or commercial-use permission for upstream data.",
-        "OpenAI Codex supported research planning, literature searches, code development, computational execution, analysis and manuscript preparation. Numerical results were generated and checked using the archived data and scientific code. Authors are responsible for the final methods, interpretation and manuscript.",
         "This report combines the original audit and follow-up studies and incorporates the dated methods addendum. The original study editions are preserved. The cover is a conceptual illustration."
       ]
     }

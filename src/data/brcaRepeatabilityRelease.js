@@ -6,12 +6,12 @@ export const brcaRepeatabilityRelease = {
   area: "Oncology",
   date: "September 11, 2026",
   dateISO: "2026-09-11",
-  version: "1.0.0",
+  version: "1.0.1",
   authors: ["Dalron J. Robertson"],
   affiliation: "NaS Research",
   readTime: "10 min read",
-  pdfUrl: "/research/papers/nas-brca-002-pam50-repeatability.pdf",
-  reproducibilityUrl: "/research/nas-brca-002/reproducibility.zip",
+  pdfUrl: "/research/papers/nas-brca-002-pam50-repeatability-v1.0.1.pdf",
+  reproducibilityUrl: "/research/nas-brca-002/reproducibility-v1.0.1.zip",
   abstract:
     "A public-data computational study of whether one frozen PAM50 method returns the same breast-cancer subtype label for repeated measurements linked to the same reported tumor RNA source.",
   summary:
@@ -94,7 +94,7 @@ export const brcaRepeatabilityRelease = {
       id: "reproducibility-and-review",
       title: "Reproducibility",
       paragraphs: [
-        "The downloadable package contains the versioned manuscript, checksum receipts, review records, numerical-incident record, search refresh, exact figure and paper builder, and shared NaS renderer and palette. It excludes raw molecular data, identifiers, credentials, outcomes, and controlled records.",
+        "The downloadable package contains the versioned manuscript, checksum receipts, review records, numerical-incident record, search refresh, aggregate tables and verification records. It excludes raw molecular data, identifiers, credentials, outcomes, and controlled records.",
         "NaS completed a release audit covering the calculations, methods, provenance, claim boundaries, citations, and every rendered PDF page. Substantive corrections will produce a preserved, versioned successor rather than silently replacing this edition.",
       ],
     },
@@ -128,5 +128,5 @@ export const brcaRepeatabilityRelease = {
     },
   ],
   publicationNote:
-    "Version 1.0.0 · September 11, 2026.",
+    "Version 1.0.1 · Editorial revision September 27, 2026. Originally published September 11, 2026. Numerical results and methods are unchanged.",
 };

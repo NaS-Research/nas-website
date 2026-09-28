@@ -15,6 +15,11 @@ module.exports = {
   poweredByHeader: false,
   async redirects() {
     return [
+      { source: "/research/papers/nas-bbb-prediction-audit-v1.pdf", destination: "/research/papers/nas-bbb-prediction-audit-v1.1.pdf", permanent: true },
+      { source: "/research/papers/nas-brca-002-pam50-repeatability.pdf", destination: "/research/papers/nas-brca-002-pam50-repeatability-v1.0.1.pdf", permanent: true },
+      { source: "/research/papers/alphagenome-atlas-rnu4-2.pdf", destination: "/research/papers/alphagenome-atlas-rnu4-2-v1.3.pdf", permanent: true },
+      { source: "/research/bbb-audit/research-package-v1.zip", destination: "/research/bbb-audit/research-package-v1.1.zip", permanent: true },
+      { source: "/research/nas-brca-002/reproducibility.zip", destination: "/research/nas-brca-002/reproducibility-v1.0.1.zip", permanent: true },
       { source: "/research/programs", destination: "/products", permanent: true },
       { source: "/contact", destination: "/support", permanent: true },
       { source: "/nicole", destination: "/research", permanent: false },

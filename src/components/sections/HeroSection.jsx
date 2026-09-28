@@ -18,7 +18,7 @@ const slides = [
     titleLines: ["Testing the limits of", "blood-brain barrier", "prediction"],
     summary: "How well do predictions hold up when the chemistry changes?",
     primary: { href: "/research/blood-brain-barrier-prediction-audit", label: "Read the research" },
-    secondary: { href: "/research/papers/nas-bbb-prediction-audit-v1.pdf", label: "View the paper" },
+    secondary: { href: "/research/papers/nas-bbb-prediction-audit-v1.1.pdf", label: "View the paper" },
     visual: "bbb",
   },
   {
@@ -28,7 +28,7 @@ const slides = [
     titleLines: ["PAM50 repeatability.", "Tested."],
     summary: "136 technical-repeat pairs. One frozen subtype method.",
     primary: { href: "/research/pam50-technical-repeatability", label: "Read the research" },
-    secondary: { href: "/research/papers/nas-brca-002-pam50-repeatability.pdf", label: "View the paper" },
+    secondary: { href: "/research/papers/nas-brca-002-pam50-repeatability-v1.0.1.pdf", label: "View the paper" },
     visual: "brca",
   },
   {

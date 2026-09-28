@@ -1,10 +1,10 @@
 # NAS-AGA-001 publication, 9 September 2026
 
 Research note: AlphaGenome Atlas in RNU4-2: a focused computational benchmark.
-Version 1.2. Canonical route: /research/alphagenome-atlas-rnu4-2.
-PDF: /research/papers/alphagenome-atlas-rnu4-2.pdf.
+Version 1.3 (editorial revision September 27, 2026). Canonical route: /research/alphagenome-atlas-rnu4-2.
+PDF: /research/papers/alphagenome-atlas-rnu4-2-v1.3.pdf.
 
-A separate AI-assisted computational audit checked all 453 selected experimental
+A separate computational audit checked all 453 selected experimental
 records, original/reference hashes, genomic IDs and alternate alleles, all saved
 AVI scores, and the exploratory ranking. Independent rank/matrix/weighted-bootstrap
 formulations matched every estimate and 95% interval in primary and sensitivity
@@ -16,7 +16,7 @@ paired difference 0.056, interval [-0.033, 0.137].
 Claims are limited to one RNA and one cell-fitness endpoint. Google already names
 RNU4-2 as a training-data limitation. This is not a novel biological discovery,
 clinical validation, exact replication of Google's filtered dataset, or peer-reviewed
-paper. The public page and PDF disclose AI-assisted computational review.
+paper. Routine production-tool disclosure is centralized on the website, per the founder. Do not add repeated tool credits to the page or PDF; see publication-editorial-policy.md.
 
 The release retains NaS black/white/gold design and adds a results table, accessible
 figures, section navigation, citation/share actions, and a reproducibility download.

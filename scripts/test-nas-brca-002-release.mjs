@@ -6,12 +6,12 @@ import { resolve } from "node:path";
 const root = process.cwd();
 const releaseRoot = resolve(root, "public/research/nas-brca-002");
 const expected = {
-  "../papers/nas-brca-002-pam50-repeatability.pdf":
-    "59a3df5cdf4a26ded93a6b535c981803e323e074fde9a719dd7ac17811b92029",
-  "reproducibility.zip":
-    "ccc0110bd6bec1a24c2186f96e9b28e23671904b9eb58bad110bb4898430d5ea",
+  "../papers/nas-brca-002-pam50-repeatability-v1.0.1.pdf":
+    "e8b089997bb55a2baa8a56efe3c963d6aa013d8355bdf05a851098e5fa8b33d7",
+  "reproducibility-v1.0.1.zip":
+    "3251a2b5f509eb23a0d429d9ee819a9410d59e932075b5bdb353ee6966d9ac53",
   "manifest.json":
-    "bfd7ff17a569562dc2ece4df2c63a362978d17b495a56aa1d804cfded500bf5c",
+    "c2fed85a830144d7f270e52d2485df44f56dd241a056beba10986637f4bbe91f",
 };
 
 for (const [relativePath, expectedSha256] of Object.entries(expected)) {
@@ -23,12 +23,12 @@ for (const [relativePath, expectedSha256] of Object.entries(expected)) {
 const manifest = JSON.parse(readFileSync(resolve(releaseRoot, "manifest.json"), "utf8"));
 const receipt = JSON.parse(readFileSync(resolve(releaseRoot, "bundle-receipt.json"), "utf8"));
 assert.equal(manifest.study_id, "NAS-BRCA-002");
-assert.equal(manifest.artifact_version, "public-report-v1.0.0");
+assert.equal(manifest.artifact_version, "public-report-v1.0.1");
 assert.equal(manifest.publication_authorized, true);
 assert.equal(manifest.raw_or_controlled_data_included, false);
 assert.equal(manifest.outcomes_included, false);
-assert.equal(receipt.pdf_sha256, expected["../papers/nas-brca-002-pam50-repeatability.pdf"]);
-assert.equal(receipt.zip_sha256, expected["reproducibility.zip"]);
+assert.equal(receipt.pdf_sha256, expected["../papers/nas-brca-002-pam50-repeatability-v1.0.1.pdf"]);
+assert.equal(receipt.zip_sha256, expected["reproducibility-v1.0.1.zip"]);
 assert.equal(receipt.manifest_sha256, expected["manifest.json"]);
 
 const releaseSource = readFileSync(resolve(root, "src/data/brcaRepeatabilityRelease.js"), "utf8");

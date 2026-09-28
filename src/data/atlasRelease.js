@@ -6,11 +6,11 @@ export const atlasRelease = {
   "area": "Genomics",
   "date": "September 9, 2026",
   "dateISO": "2026-09-09",
-  "version": "1.2",
+  "version": "1.3",
   "authors": ["Dalron J. Robertson"],
   "affiliation": "NaS Research",
   "readTime": "8 min read",
-  "pdfUrl": "/research/papers/alphagenome-atlas-rnu4-2.pdf",
+  "pdfUrl": "/research/papers/alphagenome-atlas-rnu4-2-v1.3.pdf",
   "reproducibilityUrl": "/research/atlas-rnu42/reproducibility.zip",
   "reviewState": "NAS-AGA-001 · Research note",
   "abstract": "We compared AlphaGenome Atlas variant-impact scores with published experimental effects in RNU4-2. A focused benchmark of 435 transcript variants, with reproducible analysis and clearly stated limits.",
@@ -130,5 +130,5 @@ export const atlasRelease = {
       "url": "https://deepmind.google.com/science/alphagenome/output-terms"
     }
   ],
-  "publicationNote": "Research note v1.2, published September 9, 2026. The PDF is the fixed version of record. Earlier v1.0 and v1.1 drafts were not public. This edition adds an expanded computational audit; all numerical results are unchanged. The public data package includes matched data, unchanged statistical analysis functions, a verification summary, and numerical replay instructions. Data package 1.2.1 updates packaging only; the paper and numerical results are unchanged."
+  "publicationNote": "Research note v1.3. Editorial revision September 27, 2026; originally published September 9, 2026. Numerical results and methods are unchanged. The public data package remains version 1.2.1 and includes matched data, statistical analysis, verification and replay instructions."
 };
