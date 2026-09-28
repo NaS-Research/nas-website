@@ -1,3 +1,4 @@
+import NicolePreviewInterface from "@/components/research/NicolePreviewInterface";
 import MobileContents from "@/components/research/MobileContents";
 import { publicationArtwork } from "@/data/publicationArtwork";
 import PublicationArtwork from "@/components/research/PublicationArtwork";
@@ -196,6 +197,7 @@ export default async function ResearchPublicationPage({ params }) {
               {(section.blocks ?? section.paragraphs).map((block, index) => (
                 <PublicationBlock block={block} key={`${section.id}-${index}`} />
               ))}
+              {item.slug === "introducing-nas-workspace" && section.id === "nicole" && <NicolePreviewInterface />}
               {section.resultsTable && <div className="publication-results-table"><table>
                 <caption>{section.resultsTableCaption ?? "Primary results with 95% position-cluster bootstrap intervals"}</caption>
                 <thead><tr>{section.resultsTable[0].map((cell) => <th scope="col" key={cell}>{cell}</th>)}</tr></thead>

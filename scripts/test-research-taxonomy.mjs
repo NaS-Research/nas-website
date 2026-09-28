@@ -14,6 +14,7 @@ for (const item of items) {
   assert.ok(!/computational/i.test(item.area), `${item.slug}: concise area`);
 }
 const expected = {
+  'introducing-nas-workspace': ['Releases', 'Scientific Infrastructure'],
   'blood-brain-barrier-prediction-audit': ['Publications', 'Drug Discovery'],
   'pam50-technical-repeatability': ['Publications', 'Oncology'],
   'alphagenome-atlas-rnu4-2': ['Research Notes', 'Genomics'],

@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 const root = "/workspace/particles-v2";
 
-export default function WorkspacePreviewFilm() {
+export default function WorkspacePreviewFilm({ className = "home-workspace__film" }) {
   const frame = useRef(null);
   const video = useRef(null);
   const [playing, setPlaying] = useState(false);
@@ -36,7 +36,7 @@ export default function WorkspacePreviewFilm() {
       element.pause();
     };
   }, []);
-  return <div ref={frame} className="home-workspace__film" aria-hidden="true">
+  return <div ref={frame} className={className} aria-hidden="true">
     <picture>
       <source media="(max-width:700px)" srcSet={`${root}/poster-960.webp`} />
       <img src={`${root}/poster-1920.webp`} alt="" width="1920" height="1080" loading="lazy" />

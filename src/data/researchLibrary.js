@@ -7,6 +7,76 @@ import { brcaRepeatabilityRelease } from "@/data/brcaRepeatabilityRelease";
 import { bbbRelease } from "@/data/bbbRelease";
 
 export const researchItems = [
+  {
+  "slug": "introducing-nas-workspace",
+  "title": "Introducing the NaS workspace",
+  "shortTitle": "Introducing the NaS workspace",
+  "type": "Release",
+  "area": "Scientific Infrastructure",
+  "date": "September 28, 2026",
+  "dateISO": "2026-09-28",
+  "authors": [
+    "NaS Research"
+  ],
+  "readTime": "3 min read",
+  "pdfUrl": null,
+  "pdfStatus": "none",
+  "abstract": "A place for scientific work. Explore research, build understanding, and work with tools for the life sciences.",
+  "summary": "Scientific work rarely follows a straight line. A question leads to a paper. A paper introduces an unfamiliar mechanism. Understanding that mechanism raises another question.",
+  "sections": [
+    {
+      "id": "a-shared-home",
+      "title": "A shared home for scientific work",
+      "paragraphs": [
+        "We’re introducing the NaS workspace to support that process: a place to explore research, build understanding, and work with tools for the life sciences.",
+        "The workspace brings together a growing collection of learning resources, interactive models, scientific references, and published research. It gives those resources a shared home, with room for new disciplines, tools, and ways of working."
+      ]
+    },
+    {
+      "id": "who-its-for",
+      "title": "Built around the people doing the work",
+      "paragraphs": [
+        "The workspace is for researchers investigating a question, clinicians deepening their understanding, students building a foundation, and people moving between those roles.",
+        "Someone studying a medicine may need to understand the anatomy it acts on. Someone reading a research result may want to examine the method behind it. Someone entering a new field may need both an introduction and a path toward greater depth.",
+        "We’re building the workspace around those connections. Our aim is to make it easier to move from finding information to understanding it, and from understanding it to deciding what to investigate next."
+      ]
+    },
+    {
+      "id": "inside-the-workspace",
+      "title": "A place to begin",
+      "paragraphs": [
+        "The first collection brings together several parts of NaS:",
+        "● Human Atlas. Explore anatomical structures in three dimensions, rotate models, and examine how their parts relate. ● Learning Library. Work through concepts and mechanisms, with an initial emphasis on pharmacy and clinical topics. ● Drug Library. Explore medicines, their mechanisms, uses, and safety information. ● Knowledge Review. Revisit what you’ve studied through focused questions. ● Research. Read NaS publications and examine their methods, findings, and accompanying materials where available.",
+        "Pharmacy is an initial area of focus. The broader direction is the life sciences, with the collection expanding as we develop and review new material."
+      ]
+    },
+    {
+      "id": "nicole",
+      "title": "Introducing Nicole",
+      "paragraphs": [
+        "We’re also developing Nicole as the connecting interface within the workspace.",
+        "Our intention is for Nicole to help people keep track of their questions, sources, tools, and ongoing projects. Scientific work accumulates over time. Returning to a question should mean returning to the context that made it worth asking.",
+        "That is the role we’re designing Nicole to serve: helping people navigate the workspace and maintain continuity as their work develops. These capabilities are in development and will be introduced as they become ready."
+      ]
+    },
+    {
+      "id": "room-to-grow",
+      "title": "Room to grow",
+      "paragraphs": [
+        "The workspace is part of a larger commitment at NaS: to build the resources and environments that help people pursue scientific work.",
+        "Over time, we intend to bring more disciplines, deeper educational programs, and additional research tools into this space. Its development will be guided by the questions people bring, the obstacles they encounter, and the resources that help them make progress.",
+        "The first version is a place to begin. Explore a structure. Study a mechanism. Follow a paper back to its methods. Bring the next question with you."
+      ]
+    }
+  ],
+  "collaboration": {
+    "eyebrow": "The NaS workspace",
+    "title": "Bring your next question.",
+    "body": "Explore the tools, learning resources, and research available now.",
+    "href": "/workspace",
+    "label": "Explore the workspace"
+  }
+},
   bbbRelease,
   brcaRepeatabilityRelease,
   atlasRelease,
