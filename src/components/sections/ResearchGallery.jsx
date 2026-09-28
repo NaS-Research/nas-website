@@ -1,6 +1,8 @@
 "use client";
 
 import Image from "next/image";
+import { flushSync } from "react-dom";
+import { shuffleResearch } from "./shuffle-research.mjs";
 import WorkspacePreviewFilm from "./WorkspacePreviewFilm";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
@@ -8,6 +10,16 @@ import "./research-gallery.css";
 
 function ResearchRail({ studies, compact, paused, reduced }) {
   const rail = useRef(null);
+  const [batches, setBatches] = useState(() => [0, 1, 2, 3].map(id => ({ id, studies })));
+  const batchesRef = useRef(batches); batchesRef.current = batches;
+  useEffect(() => {
+    let previous = [];
+    setBatches([0, 1, 2, 3].map(id => {
+      const next = shuffleResearch(studies, previous);
+      previous = next;
+      return { id, studies: next };
+    }));
+  }, [studies]);
   const collectionKey = studies.map(study => study.slug).join("|");
   const pausedRef = useRef(paused); pausedRef.current = paused;
   const group = useRef(null);
@@ -27,7 +39,6 @@ function ResearchRail({ studies, compact, paused, reduced }) {
       written = element.scrollLeft;
     };
     const resize = new ResizeObserver(measure);
-    resize.observe(group.current);
     resize.observe(element);
     const observer = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; });
     observer.observe(element);
@@ -37,11 +48,19 @@ function ResearchRail({ studies, compact, paused, reduced }) {
       previous = time;
       if (cycle > 0 && !reduced && visible && !document.hidden && !pausedRef.current && !interacting.current && !dragging.current && !element.contains(document.activeElement)) {
         if (Math.abs(element.scrollLeft - written) > 1) position = element.scrollLeft;
-        // Increasing scrollLeft moves the artwork from right to left. Wrap between
-        // identical tracks without reversing direction or a visible reset.
+        // Recycle only the fully offscreen batch. Visible cards retain their keys
+        // and positions while a fresh shuffled pass is appended beyond the viewport.
         position += elapsed * (compact ? .022 : .030);
-        if (position < cycle) position += cycle;
-        if (position >= cycle * 2) position -= cycle;
+        if (position < 0) position = 0;
+        if (position >= cycle * 2) {
+          const current = batchesRef.current;
+          const last = current[current.length - 1];
+          flushSync(() => setBatches([
+            ...current.slice(1),
+            { id: last.id + 1, studies: shuffleResearch(studies, last.studies) },
+          ]));
+          position -= cycle;
+        }
         element.scrollLeft = position;
         written = element.scrollLeft;
       }
@@ -77,14 +96,14 @@ function ResearchRail({ studies, compact, paused, reduced }) {
       onLostPointerCapture={() => { dragging.current = null; }}
       onDragStart={e => e.preventDefault()}
       onClickCapture={e => { if (suppressClick.current) { e.preventDefault(); e.stopPropagation(); suppressClick.current = false; } }}>
-      {(reduced ? [0] : [0, 1, 2, 3]).map(copy => <div className="research-gallery__group" ref={copy === (reduced ? 0 : 1) ? group : undefined} key={copy} aria-hidden={!reduced && copy !== 1 ? true : undefined}>
-        {studies.map(study => <Link key={study.slug} href={`/research/${study.slug}`} className="research-gallery__card" tabIndex={!reduced && copy !== 1 ? -1 : undefined} aria-label={`${study.title}. ${study.type}. Read publication.`}>
+      {(reduced ? [{ id: "still", studies }] : batches).map((batch, copy) => <div className="research-gallery__group" ref={copy === (reduced ? 0 : 1) ? group : undefined} key={batch.id} aria-hidden={!reduced && copy !== 1 ? true : undefined}>
+        {batch.studies.map(study => <Link key={study.slug} href={`/research/${study.slug}`} className={`research-gallery__card${study.mark ? " research-gallery__card--mark" : ""}`} tabIndex={!reduced && copy !== 1 ? -1 : undefined} aria-label={`${study.title}. ${study.type}. Read publication.`}>
           {study.workspaceFilm ? <WorkspacePreviewFilm className="research-gallery__film" compact={compact} paused={paused || reduced} /> : <Image src={study.image} alt="" fill sizes={compact ? "(max-width: 600px) 78vw, 35vw" : "(max-width: 600px) 88vw, 78vw"} draggable={false} />}
           <div className="research-gallery__shade" />
           <div className="research-gallery__caption">
             <p>{study.area} <span>· {study.type}</span></p>
             <h3>{study.title}</h3>
-            <span className="research-gallery__read">{study.type === "White Paper" ? "Read paper" : study.type === "Release" ? "Read announcement" : "Read study"}</span>
+            <span className="research-gallery__read">{study.type === "White Paper" ? "Read paper" : study.type === "Release" ? "Read announcement" : study.type === "Institutional Essay" ? "Read article" : "Read study"}</span>
           </div>
         </Link>)}
       </div>)}
@@ -95,17 +114,6 @@ function ResearchRail({ studies, compact, paused, reduced }) {
 
 export default function ResearchGallery({ studies }) {
   const gallery = useRef(null);
-  const [shuffled, setShuffled] = useState(null);
-  useEffect(() => {
-    const collection = studies.filter((study, index) => studies.findIndex(item => item.slug === study.slug || item.image === study.image) === index);
-    // Shuffle after hydration, then retain a stable order for a seamless loop.
-    // Split afterwards so a publication never appears in both rows.
-    for (let index = collection.length - 1; index > 0; index--) {
-      const target = Math.floor(Math.random() * (index + 1));
-      [collection[index], collection[target]] = [collection[target], collection[index]];
-    }
-    setShuffled(collection);
-  }, [studies]);
   const step = () => {
     gallery.current?.querySelectorAll(".research-gallery__rail").forEach(element => {
       const card = element.querySelector("a");
@@ -122,19 +130,15 @@ export default function ResearchGallery({ studies }) {
     return () => media.removeEventListener("change", update);
   }, []);
   if (!studies.length) return null;
-  const unique = shuffled ?? studies.filter((study, index) => studies.findIndex(item => item.slug === study.slug || item.image === study.image) === index);
-  const split = Math.max(1, Math.floor(unique.length / 2));
-  const primary = unique.slice(0, split);
-  const secondary = unique.slice(split);
   return <section ref={gallery} id="current-research" className="research-gallery" aria-labelledby="research-gallery-title">
     <header className="research-gallery__header">
       <p>Research at NaS</p><h2 id="research-gallery-title">Selected research.</h2>
       <Link href="/research">Explore all research <span aria-hidden="true">↗</span></Link>
     </header>
-    <ResearchRail studies={primary} paused={paused} reduced={reduced} />
-    {secondary.length > 0 && <ResearchRail studies={secondary} compact paused={paused} reduced={reduced} />}
+    <ResearchRail studies={studies} paused={paused} reduced={reduced} />
+    <ResearchRail studies={studies} compact paused={paused} reduced={reduced} />
     <div className="research-gallery__footer">
-      <span>Reports, research notes, white papers & releases</span>
+      <span>Research, releases & perspectives</span>
       <div className="research-gallery__controls" role="group" aria-label="Research gallery controls">
       <button onClick={step} aria-label="Show more research">←</button>
       {!reduced && <button onClick={() => setPaused(value => !value)} aria-label={paused ? "Play research gallery" : "Pause research gallery"} aria-pressed={paused}><span aria-hidden="true">{paused ? "▶" : "Ⅱ"}</span> {paused ? "Play" : "Pause"}</button>}

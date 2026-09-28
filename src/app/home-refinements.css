@@ -49,3 +49,18 @@
   .home-carousel--bbb .home-carousel__slide { align-content: start; }
   .home-carousel--bbb .home-carousel__visual { min-height: 0; margin-top: 1rem; }
 }
+
+/* Keep both frames present so featured research dissolves without a hard cut. */
+.home-carousel__stage { display: grid; width: 100%; }
+.home-carousel__layer {
+  grid-area: 1 / 1;
+  min-width: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1200ms cubic-bezier(.45, 0, .55, 1);
+}
+.home-carousel__layer--active { opacity: 1; pointer-events: auto; z-index: 1; }
+.home-carousel__layer .home-carousel__slide { animation: none; }
+@media (prefers-reduced-motion: reduce) {
+  .home-carousel__layer { transition: none; }
+}

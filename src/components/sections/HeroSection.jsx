@@ -54,7 +54,7 @@ export default function HeroSection() {
       if (!document.hidden && !preference.matches) {
         timer = window.setTimeout(() => {
           setActiveIndex((current) => (current + 1) % slides.length);
-        }, 4000);
+        }, 5000);
       }
     };
     schedule();
@@ -67,12 +67,11 @@ export default function HeroSection() {
     };
   }, [activeIndex]);
 
-  const activeSlide = slides[activeIndex];
 
 
   return (
     <section
-      className={`home-mark-hero home-carousel home-carousel--${activeSlide.id}`}
+      className="home-mark-hero home-carousel"
       role="region"
       aria-roledescription="carousel"
       aria-label="Featured NaS Research"
@@ -80,10 +79,18 @@ export default function HeroSection() {
     >
       <div className="home-mark-hero__atmosphere" aria-hidden="true" />
 
-      <div className="home-carousel__slide" key={activeSlide.id} aria-live="off">
+      <div className="home-carousel__stage" aria-live="off">
+      {slides.map((activeSlide, index) => (
+        <div
+          key={activeSlide.id}
+          className={`home-carousel__layer home-carousel--${activeSlide.id} ${index === activeIndex ? "home-carousel__layer--active" : ""}`}
+          aria-hidden={index !== activeIndex}
+          inert={index !== activeIndex}
+        >
+      <div className="home-carousel__slide">
         <div className="home-carousel__copy">
           <p className="home-mark-hero__eyebrow">{activeSlide.eyebrow}</p>
-          <h1 id="home-mark-title">{activeSlide.titleLines ? activeSlide.titleLines.map((line, index) => <span key={line}>{index > 0 ? " " : ""}{line}</span>) : activeSlide.title}</h1>
+          <h1 id={`home-mark-title-${activeSlide.id}`}>{activeSlide.titleLines ? activeSlide.titleLines.map((line, index) => <span key={line}>{index > 0 ? " " : ""}{line}</span>) : activeSlide.title}</h1>
           <p className="home-carousel__summary">{activeSlide.summary}</p>
           <div className="home-mark-hero__actions" aria-label={`Explore ${activeSlide.title}`}>
             <Link className="home-mark-hero__action--primary" href={activeSlide.primary.href}>
@@ -135,6 +142,10 @@ export default function HeroSection() {
             </figure>
           )}
         </div>
+      </div>
+
+        </div>
+      ))}
       </div>
 
       <div className="home-carousel__controls" aria-label="Choose featured slide">

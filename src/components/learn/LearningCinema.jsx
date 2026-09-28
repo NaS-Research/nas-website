@@ -49,7 +49,7 @@ export default function LearningCinema() {
       <div className="learning-cinema__stage">
         <div className="learning-cinema__screen" ref={screen}>
           <video ref={video} poster={poster} autoPlay muted loop playsInline preload="none" aria-label="Life-sciences film preview" onPlaying={() => setPlaying(true)} onPause={() => setPlaying(false)} />
-          {fullFilm && <iframe className="learning-cinema__player" src="https://www.youtube-nocookie.com/embed/zdM7I6EG8kY?autoplay=1&rel=0" title="What are the life sciences? | NaS Research" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowFullScreen referrerPolicy="strict-origin-when-cross-origin" />}
+          {fullFilm && <iframe className="learning-cinema__player" src="https://www.youtube-nocookie.com/embed/zdM7I6EG8kY?autoplay=1&mute=1&rel=0" title="What are the life sciences? | NaS Research" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowFullScreen referrerPolicy="strict-origin-when-cross-origin" />}
           {!fullFilm && <div className="learning-cinema__overlay">
             <div><span>NaS <small>In focus</small></span></div>
             <div className="learning-cinema__controls">
