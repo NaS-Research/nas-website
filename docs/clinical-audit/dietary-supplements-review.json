@@ -1,10 +1,10 @@
 {
-  "status": "reviewing",
+  "status": "verified",
   "reviewDate": "2026-09-27",
   "moduleSlugs": [
     "dietary-supplements-complementary-medicine"
   ],
-  "clinicalCompletion": false,
+  "clinicalCompletion": true,
   "bookRead": [
     {
       "printedPages": [
@@ -15,29 +15,7 @@
         983,
         991
       ],
-      "method": "Text extraction inspected; large output for PDF985 was truncated and requires rereading. PDF984 page render inspected and folate/label statements confirmed. Remaining table renders still pending."
-    },
-    {
-      "printedPages": [
-        977,
-        979
-      ],
-      "pdfPages": [
-        987,
-        989
-      ],
-      "method": "All three full-page renders inspected, including safety-table label alignment and pediatric intake table."
-    },
-    {
-      "printedPages": [
-        975,
-        976
-      ],
-      "pdfPages": [
-        985,
-        986
-      ],
-      "method": "Both full-page renders read, resolving earlier truncated text and recovering condition-table product labels."
+      "method": "All nine chapter pages read in text and full-page renders; remaining renders 983,990,991 inspected on 2026-09-27."
     }
   ],
   "findings": [
@@ -77,27 +55,45 @@
         "https://ods.od.nih.gov/factsheets/VitaminE-HealthProfessional/",
         "https://www.nccih.nih.gov/health/homeopathy"
       ]
+    },
+    {
+      "status": "corrected",
+      "topic": "Patient-specific product and nutrient decisions",
+      "implementation": "Added infant vitamin D and elemental iron teaching, calculation diagram and cases; added probiotics, cranberry, saw palmetto and zinc-route lesson. Reconciled biotin assay interference, vinpocetine, butterbur, SAMe, hawthorn/digoxin, CoQ10, post-MI L-arginine, potassium, drug-nutrient assessment and lawful medical-food ingredients.",
+      "sources": [
+        "https://ods.od.nih.gov/factsheets/Potassium-HealthProfessional/",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f81dfaeb-46d5-47ce-9ef6-19259f5ac61c",
+        "https://stacks.cdc.gov/view/cdc/146314/cdc_146314_DS1.pdf",
+        "https://www.fda.gov/medical-devices/in-vitro-diagnostics/biotin-interference-troponin-lab-tests-assays-subject-biotin-interference",
+        "https://www.nccih.nih.gov/health/tips/things-to-know-about-probiotics",
+        "https://www.nccih.nih.gov/health/cranberry",
+        "https://www.nccih.nih.gov/health/saw-palmetto",
+        "https://www.nccih.nih.gov/health/butterbur",
+        "https://www.nccih.nih.gov/health/sadenosyllmethionine-same-in-depth",
+        "https://www.nccih.nih.gov/health/colds-flu-and-complementary-health-approaches",
+        "https://www.fda.gov/food/information-select-dietary-supplement-ingredients-and-other-substances/vinpocetine-dietary-supplements",
+        "https://www.healthychildren.org/English/ages-stages/baby/feeding-nutrition/Pages/Vitamin-Iron-Supplements.aspx",
+        "https://www.heart.org/en/health-topics/heart-failure/treatment-options-for-heart-failure/complementary-and-alternative-medicines"
+      ]
+    },
+    {
+      "status": "corrected",
+      "topic": "Assessment quality",
+      "implementation": "Removed four repetitive generated variants per concept and unrelated true-statement distractors. Read all 71 assembled prompts, answers, choices and explanations. Retained 48 distinct case concepts, eight prior original cases and added 15 focused cases. Reviewed all 15 embedded lesson checks and diagrams."
     }
   ],
-  "openWork": [
-    "Render and inspect remaining chapter pages, especially tables with missing text extraction labels.",
-    "Map every chapter table row and condition to existing lessons or needed additions.",
-    "Review pediatric iron/vitamin D, nutrient depletion and condition-specific supplementation coverage.",
-    "Read the complete assembled 200-question bank including generated choices, answers and explanations; replace ambiguous or pedagogically weak items.",
-    "Verify all other module clinical claims, references and diagrams; complete desktop/mobile practice QA.",
-    "Complete build and record release evidence; push only after full module review."
-  ],
+  "openWork": [],
   "validation": {
-    "structuralAudit": "Passed: 13 lessons,196 questions,no hard errors or source gaps. New focused folate lesson has four original bank questions; count advisory is not a clinical failure.",
-    "build": "npm run build passed after the melatonin, soy, vitamin E and homeopathy additions, exit 0, 2026-09-27. Prior desktop/mobile evidence applies to the folate checkpoint.",
-    "ui": "Local preview: new lesson, diagram and 196-question count rendered. Folate embedded answer submitted and returned Correct with expected rationale; review link worked. Desktop 1280x720 and mobile390x844 inspected; full-module randomized practice pending.",
-    "currentChanges": "Targeted structural audit passed: 13 lessons, 200 questions; no hard errors or source gaps. Full question bank clinical review remains pending."
+    "structuralAudit": "Passed: 15 lessons,71 questions,no hard errors or source gaps. Count/thin-lesson advisories accepted: focused cases replace repeated variants; each lesson has bank coverage and an embedded check.",
+    "build": "npm run build passed twice on 2026-09-27, including final ephedrine-alkaloid wording.",
+    "ui": "Production preview on loopback port3014: infant elemental-iron check submitted and Correct with numerical rationale. Randomized ten-question practice submitted: all ten Correct with matching explanations and lesson links. Desktop1280x720 and mobile390x844 inspected; mobile document width390. New lesson text and diagrams rendered.",
+    "calculations": [
+      "6 kg x 1 mg/kg/day = 6 mg/day; 6 mg / 15 mg/mL = 0.4 mL",
+      "400 IU vitamin D / 40 IU per mcg = 10 mcg; 600 IU = 15 mcg",
+      "400 mcg folic acid x label factor1.7 = 680 mcg DFE; do not add both label values."
+    ],
+    "release": "Previous checkpoints 6bed8726 and5e63cc7f pushed. This completion record is included in the final module commit; deployment not verified."
   },
-  "coverageGapsToResolve": [
-    "Common-use tables are not endorsement lists; distinguish aphthous ulcers from herpes cold sores, and assess lysine evidence.",
-    "Add or map evidence and safety for probiotics, fiber, zinc route, biotin assay interference, butterbur/feverfew, saw palmetto, cranberry, SAMe/5-HTP, vinpocetine and potassium.",
-    "Reconcile heart-failure product claims (hawthorn/CoQ10), black cohosh blanket heart-failure-drug warning, and caffeine benefit/safety generalizations.",
-    "Review GRAS and medical-food ingredient eligibility; the book claim that all ingredients must be GRAS may be too narrow.",
-    "Map remaining pediatric nutrient and drug-depletion tables after render review."
-  ]
+  "coverageGapsToResolve": [],
+  "chapterScope": "This module review is complete for its 15 lessons and 71 cases. Chapter 80 remains open for exhaustive row-by-row mapping of less-common products and condition/drug-nutrient tables to the wider curriculum; module completion is not a declaration that every textbook table entry has a dedicated verified lesson."
 }

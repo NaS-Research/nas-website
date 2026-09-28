@@ -1,10 +1,3 @@
-const dimensions = [
-  { key: "principle", difficulty: "Foundational", prompt: (c) => `Which statement best explains ${c.name}?`, answer: (c) => c.principle, field: "principle" },
-  { key: "application", difficulty: "Applied", prompt: (c) => `Which action best applies ${c.name}?`, answer: (c) => c.action, field: "action" },
-  { key: "failure", difficulty: "Advanced", prompt: (c) => `Which approach most clearly fails to apply ${c.name}?`, answer: (c) => c.failure, field: "failure" },
-  { key: "case", difficulty: "Expert", prompt: (c) => `${c.caseText} Which response is best?`, answer: (c) => c.caseAnswer, field: "action" },
-];
-
 const c = (key, lesson, name, principle, action, failure, caseText, caseAnswer, rationale) => ({ key, lesson, name, principle, action, failure, caseText, caseAnswer, rationale });
 
 const concepts = [
@@ -27,7 +20,7 @@ const concepts = [
   c("kava-liver", "supplement-organ-toxicity", "kava-associated liver risk", "Kava products have been linked to rare but sometimes severe or fatal liver injury, and sedative effects can add to alcohol or other central depressants.", "Avoid kava in high-risk patients and evaluate jaundice, dark urine, severe fatigue, or abdominal symptoms promptly.", "Recommending kava solely because some anxiety trials were positive ignores serious safety uncertainty.", "A patient using kava develops dark urine and jaundice.", "Stop the product and obtain urgent medical assessment for possible liver injury.", "Potentially severe liver injury requires immediate action even when the exact causal factor is uncertain."),
   c("green-tea-extract", "supplement-organ-toxicity", "green tea beverage versus concentrated extract", "Traditional green tea beverages and concentrated extracts are different exposures, and concentrated extracts have been associated with rare liver injury.", "Document the formulation and stop concentrated extract if liver injury is suspected.", "Treating brewed tea and a high-dose extract as identical obscures exposure and risk.", "A patient with elevated liver tests uses a concentrated green tea weight-loss capsule.", "Stop the suspected extract and evaluate the liver injury rather than assuming ordinary tea exposure.", "Formulation and dose materially change the safety assessment."),
   c("black-cohosh-boundary", "supplement-organ-toxicity", "the black cohosh liver-safety boundary", "Reports of liver injury exist, but causal certainty and product identity can be difficult to establish.", "Treat symptoms seriously, stop the suspected product, assess other causes, and avoid overstating certainty.", "Declaring black cohosh either completely safe or definitively hepatotoxic in every user exceeds the evidence.", "A patient using black cohosh develops jaundice.", "Stop the product and evaluate possible liver injury while investigating alternative causes.", "Clinical safety action can be appropriate even when causality remains uncertain."),
-  c("ephedra-dmaa", "supplement-organ-toxicity", "ephedra and DMAA regulatory safety", "Ephedra-containing dietary supplements are banned, and FDA considers DMAA-containing products illegal and unsafe because of serious cardiovascular risk.", "Advise against use and check current FDA enforcement information for stimulant products.", "Treating a legacy stimulant as acceptable because it appears online ignores current safety actions.", "A bodybuilding product label lists DMAA.", "Do not use it and report or verify the product through current FDA safety channels.", "Online availability does not make an illegal stimulant supplement safe."),
+  c("ephedra-dmaa", "supplement-organ-toxicity", "ephedra and DMAA regulatory safety", "Dietary supplements containing ephedrine alkaloids are banned, and FDA considers DMAA-containing products illegal and unsafe because of serious cardiovascular risk.", "Advise against use and check current FDA enforcement information for stimulant products.", "Treating a legacy stimulant as acceptable because it appears online ignores current safety actions.", "A bodybuilding product label lists DMAA.", "Do not use it and report or verify the product through current FDA safety channels.", "Online availability does not make an illegal stimulant supplement safe."),
   c("licorice", "supplement-organ-toxicity", "glycyrrhizin-containing licorice", "Glycyrrhizin can produce apparent mineralocorticoid excess with hypertension, hypokalemia, edema, and arrhythmia risk.", "Distinguish true licorice exposure from flavoring and assess blood pressure, potassium, volume status, and interacting medicines.", "Ignoring daily licorice tea in unexplained hypokalemic hypertension misses a reversible exposure.", "A patient has new hypertension, edema, and hypokalemia after heavy licorice tea use.", "Stop glycyrrhizin exposure and evaluate the electrolyte and cardiovascular consequences.", "The clinical pattern is consistent with licorice-induced pseudoaldosteronism."),
   c("yohimbe-bitter-orange", "supplement-organ-toxicity", "stimulant-like botanicals", "Yohimbe and bitter orange products can produce cardiovascular and central nervous system effects, with variable ingredient content and uncertain benefit.", "Avoid stimulant stacking and assess blood pressure, heart rate, rhythm, anxiety, seizures, and co-exposures.", "Combining yohimbe, synephrine, and high-dose caffeine because each is natural can amplify harm.", "A patient develops palpitations after a weight-loss blend containing synephrine and caffeine.", "Stop the product and assess cardiovascular toxicity and other stimulant exposure.", "Multiple sympathomimetic ingredients can create additive risk."),
   c("seven-oh", "supplement-organ-toxicity", "concentrated 7-hydroxymitragynine products", "Added or enhanced 7-OH products are potent opioid exposures that FDA says are not lawful dietary supplements, lawful food additives, or approved drugs.", "Advise avoidance, identify the exact product and co-exposures, and respond to respiratory depression, seizures, addiction, or withdrawal with urgent clinical and poison-center guidance.", "Treating concentrated gummies or shots as equivalent to trace 7-OH naturally present in kratom hides a major exposure difference.", "A patient develops withdrawal, insomnia, and seizures after repeated use of concentrated 7-OH tablets sold at a smoke shop.", "Treat the presentation as a potentially serious opioid exposure rather than routine supplement use.", "Product concentration, opioid pharmacology, and regulatory status make concentrated 7-OH a distinct high-risk exposure."),
@@ -58,20 +51,252 @@ const concepts = [
   c("clinical-workflow", "supplement-care-workflow", "an evidence-based supplement care plan", "A defensible plan connects the patient's goal, exact product, evidence, exposure, interactions, risks, alternatives, shared decision, monitoring, and follow-up.", "Document what will be used or stopped, why, how benefit and harm will be measured, and when the plan will be reassessed.", "Writing patient takes supplement without product or follow-up details creates an unauditable plan.", "A patient strongly prefers a low-risk supplement with uncertain benefit.", "Use shared decision-making, define a time-limited trial and measurable outcome, and stop if benefit is absent or harm occurs.", "Transparent goals and stopping rules protect autonomy without overstating evidence."),
 ];
 
-export const dietarySupplementsComplementaryMedicineQuestionBank = concepts.flatMap((concept, conceptIndex) => dimensions.map((dimension, dimensionIndex) => {
-  const distractorIndexes = [1, 11, 23].map((offset) => (conceptIndex + dimensionIndex + offset) % concepts.length);
-  const field = dimension.field;
-  return {
-    id: `supp-${String(conceptIndex + 1).padStart(2, "0")}-${dimension.key}`,
-    conceptGroup: concept.key,
-    lesson: concept.lesson,
-    difficulty: dimension.difficulty,
-    question: dimension.prompt(concept),
-    choices: [dimension.answer(concept), ...distractorIndexes.map((index) => concepts[index][field])],
-    answer: 0,
-    explanation: concept.rationale,
-    reviewHref: `#${concept.lesson}`,
-  };
+const caseDistractors = [
+  [
+    "Assume the panel means FDA approved a therapeutic indication",
+    "Classify it as a prescription drug solely because it is a capsule",
+    "Treat its shelf placement as proof of efficacy"
+  ],
+  [
+    "Confirm approval because pharmacies stock it",
+    "Assume sales volume replaces safety evidence",
+    "Treat all supplements as unregulated and ignore their labels"
+  ],
+  [
+    "Treat the notification as approval of the disease claim",
+    "Assume notification proves the product works",
+    "Use the notification to replace clinical trials"
+  ],
+  [
+    "Use only the 200 mg front-label amount as the daily dose",
+    "Divide 200 mg by three to estimate total daily exposure",
+    "Ignore serving instructions because powders are standardized"
+  ],
+  [
+    "Interpret the disclaimer as FDA approval to prevent infection",
+    "Assume a structure/function claim proves clinical benefit",
+    "Treat any immune-support claim as proof of vaccine-equivalent protection"
+  ],
+  [
+    "Accept the promise if the word natural appears",
+    "Assume a disclaimer legalizes an explicit disease-treatment claim",
+    "Classify heart-failure reversal as an ordinary nutrient-content claim"
+  ],
+  [
+    "Recommend it as effective because verification replaces trials",
+    "Tell the patient FDA approved its disease indication",
+    "Infer that all interactions have been excluded"
+  ],
+  [
+    "Reassure the patient that plants cannot harm the liver",
+    "Exclude herbs from medication reconciliation",
+    "Assume only prescription products have dose-dependent effects"
+  ],
+  [
+    "Transfer efficacy based solely on the shared common name",
+    "Assume the multi-ingredient product must be more effective",
+    "Ignore extraction and dose because the plant name matches"
+  ],
+  [
+    "Treat every brand as the same lovastatin dose",
+    "Record only the words natural cholesterol product",
+    "Assume contamination is impossible in commercial products"
+  ],
+  [
+    "Ignore the product unless it requires a prescription",
+    "Raise the transplant drug dose without identifying the herb",
+    "Wait for organ rejection before asking for the label"
+  ],
+  [
+    "Assess garlic alone and disregard the NSAID",
+    "Assume a normal INR excludes every bleeding mechanism",
+    "Increase the anticoagulant because garlic is natural"
+  ],
+  [
+    "Increase the immunosuppressant indefinitely without addressing the supplement",
+    "Assume enzyme inhibition explains the lower concentration",
+    "Stop the transplant medicine and substitute the herb"
+  ],
+  [
+    "Reassure the patient that herbal serotonin effects cannot be serious",
+    "Increase the SSRI to treat agitation",
+    "Continue both agents and wait a week despite clonus"
+  ],
+  [
+    "Use one fixed stop interval for every herb and procedure",
+    "Tell the patient to stop warfarin independently",
+    "Omit supplements from the anesthesia medication list"
+  ],
+  [
+    "Double warfarin without identifying the product",
+    "Assume every herb affects INR in the same direction",
+    "Ignore the change because supplements cannot alter warfarin response"
+  ],
+  [
+    "Continue kava until causality is proven",
+    "Add another liver-detoxification supplement",
+    "Treat jaundice as an expected harmless effect"
+  ],
+  [
+    "Treat the capsule as equivalent to ordinary brewed tea",
+    "Continue the product because tea is a food",
+    "Add more extract to improve liver metabolism"
+  ],
+  [
+    "Declare causality certain from timing alone",
+    "Continue the product because causality is uncertain",
+    "Ignore other liver-injury causes once the herb is identified"
+  ],
+  [
+    "Accept DMAA because online sales prove legality",
+    "Use half a serving as proof of safety",
+    "Add caffeine to offset adverse cardiovascular effects"
+  ],
+  [
+    "Treat licorice tea as irrelevant to electrolyte findings",
+    "Recommend additional licorice for the edema",
+    "Assume hypokalemia rules out a mineralocorticoid-like effect"
+  ],
+  [
+    "Add a decongestant to counter fatigue",
+    "Continue because every ingredient is plant derived",
+    "Ignore the caffeine because the blend contains synephrine"
+  ],
+  [
+    "Treat concentrated tablets as equivalent to trace plant exposure",
+    "Use more product as an unsupervised withdrawal treatment",
+    "Assume supplement labeling excludes opioid effects"
+  ],
+  [
+    "Count coffee alone",
+    "Take the preworkout later in the evening",
+    "Increase caffeine to compensate for poor sleep"
+  ],
+  [
+    "Add another sedative because each product is nonprescription",
+    "Assume alcohol cancels antihistamine effects",
+    "Advise driving if the products are labeled natural"
+  ],
+  [
+    "Double the dose regardless of timing",
+    "Assume melatonin treats every cause of insomnia",
+    "Continue escalating without reviewing the sleep schedule"
+  ],
+  [
+    "Continue because red yeast rice cannot reproduce statin toxicity",
+    "Add a statin without assessing the new pain",
+    "Assume the symptom proves efficacy"
+  ],
+  [
+    "Treat any fish-oil capsule as equivalent to a prescription formulation",
+    "Stop glucose and lipid monitoring",
+    "Assume total oil mass identifies the EPA and DHA dose"
+  ],
+  [
+    "Add the DFE and parenthetical folic acid amounts together",
+    "Treat food folate and fasting folic acid micrograms as identical",
+    "Ignore life stage when reading the label"
+  ],
+  [
+    "Start high-dose iron indefinitely based on fatigue alone",
+    "Exclude iron deficiency solely because hemoglobin is normal",
+    "Assume every fatigue syndrome responds to iron"
+  ],
+  [
+    "Add calcium without assessing the hypercalcemia",
+    "Continue every vitamin D product because vitamins are essential",
+    "Assume water intake alone makes chronic high dosing safe"
+  ],
+  [
+    "Treat neuropathy with iron without assessment",
+    "Assume every metformin user requires the same supplement dose",
+    "Ignore B12 because the patient takes a diabetes medicine"
+  ],
+  [
+    "Treat the oil as an approved pain drug",
+    "Transfer prescription CBD approval to all retail products",
+    "Assume hemp origin establishes clinical effectiveness"
+  ],
+  [
+    "Assume nonintoxicating CBD cannot cause sedation",
+    "Ignore the antiseizure medicines in the interaction review",
+    "Double CBD because sedation proves seizure control"
+  ],
+  [
+    "Replace the seizure medicine because dilution guarantees safety",
+    "Treat a compendium listing as FDA approval",
+    "Wait for breakthrough seizures before discussing the substitution"
+  ],
+  [
+    "Classify it as a medical food solely because a clinician suggested it",
+    "Assume fortification establishes a distinctive disease-related requirement",
+    "Treat the snack as an approved drug"
+  ],
+  [
+    "Accept the heart-failure claim because ancient use proves efficacy",
+    "Treat historical use as equivalent to a randomized trial",
+    "Assume every modern extract matches the historical preparation"
+  ],
+  [
+    "Record both products as identical because their common names match",
+    "Ignore plant part when comparing toxicity",
+    "Assume all species within a common name have the same constituents"
+  ],
+  [
+    "Treat the tincture as trial-equivalent without composition data",
+    "Use the capsule trial dose as a tincture volume directly",
+    "Ignore extraction method when evaluating exposure"
+  ],
+  [
+    "Assume aloe always means topical gel",
+    "Apply oral-latex safety data to every topical product without checking",
+    "Give a universal aloe dose before determining the route"
+  ],
+  [
+    "Assume culinary safety proves concentrated extract safety",
+    "Treat bioavailability enhancement as irrelevant",
+    "Recommend doubling the capsule because it is a food ingredient"
+  ],
+  [
+    "Recommend raw stems to increase potency",
+    "Assume unripe berries are safer than ripe fruit",
+    "Infer that all plant parts are harmless because syrup is sold commercially"
+  ],
+  [
+    "Continue until liver injury is definitively attributed",
+    "Assume enhanced absorption reduces all toxicity",
+    "Add another curcumin formulation to improve appetite"
+  ],
+  [
+    "Continue latex because topical aloe is commonly used",
+    "Ignore potassium because the product is botanical",
+    "Increase digoxin empirically before assessing the diarrhea"
+  ],
+  [
+    "Treat the oil as a dose-equivalent replacement",
+    "Assume dispensary products have fixed CBD and THC content",
+    "Stop monitoring because the plant source is natural"
+  ],
+  [
+    "Use the front-label 1,000 mg as the EPA dose",
+    "Assume EPA and DHA content never varies",
+    "Treat every capsule as prescription-equivalent"
+  ],
+  [
+    "Wait for absolute causal proof before reporting",
+    "Discard the bottle before recording ingredients and lot",
+    "Continue exposure until the manufacturer confirms a problem"
+  ],
+  [
+    "Promise benefit because the patient prefers it",
+    "Change several supplements simultaneously without tracking outcomes",
+    "Continue indefinitely without a stopping rule"
+  ]
+];
+
+export const dietarySupplementsComplementaryMedicineQuestionBank = concepts.map((concept, index) => ({
+  id: `supp-${String(index + 1).padStart(2, "0")}-case`, conceptGroup: concept.key, lesson: concept.lesson, difficulty: "Applied",
+  question: `${concept.caseText} Which response is best?`, choices: [concept.caseAnswer, ...caseDistractors[index]], answer: 0, explanation: concept.rationale, reviewHref: `#${concept.lesson}`,
 }));
 
 // Original application cases supplement the concept-generated review bank.
@@ -169,6 +394,246 @@ dietarySupplementsComplementaryMedicineQuestionBank.push(
 }
 );
 
-if (dietarySupplementsComplementaryMedicineQuestionBank.length < 100) {
-  throw new Error(`Dietary supplements question bank must contain at least 100 questions, found ${dietarySupplementsComplementaryMedicineQuestionBank.length}.`);
+
+dietarySupplementsComplementaryMedicineQuestionBank.push(
+{
+  "id": "supp-biotin-troponin",
+  "conceptGroup": "biotin-troponin",
+  "lesson": "supplement-reconciliation",
+  "difficulty": "Applied",
+  "question": "Chest-pain symptoms conflict with a low troponin result in a patient taking high-dose biotin. What should happen next?",
+  "choices": [
+    "Alert the treating team and laboratory to possible assay interference while continuing clinical evaluation",
+    "Exclude acute coronary syndrome based on the single result",
+    "Assume biotin affects every assay identically",
+    "Wait a fixed seven days before addressing the chest pain"
+  ],
+  "answer": 0,
+  "explanation": "Biotin can falsely lower results on susceptible troponin assays. Clinical assessment and assay-specific advice are required.",
+  "reviewHref": "#supplement-reconciliation"
+},
+{
+  "id": "supp-probiotic-preterm",
+  "conceptGroup": "probiotic-preterm",
+  "lesson": "supplement-targeted-products",
+  "difficulty": "Applied",
+  "question": "A caregiver proposes a retail probiotic for a hospitalized preterm infant. Which response is best?",
+  "choices": [
+    "Involve the neonatal team; live probiotic organisms can cause severe infection in this population",
+    "Assume all strains have the same neonatal benefit",
+    "Use an adult product at half the dose",
+    "Treat retail availability as proof of neonatal safety"
+  ],
+  "answer": 0,
+  "explanation": "FDA has warned of potentially fatal infections in hospitalized preterm infants receiving probiotic products.",
+  "reviewHref": "#supplement-targeted-products"
+},
+{
+  "id": "supp-cranberry-active-infection",
+  "conceptGroup": "cranberry-active-infection",
+  "lesson": "supplement-targeted-products",
+  "difficulty": "Applied",
+  "question": "A patient with dysuria and fever asks whether cranberry capsules can replace infection treatment. What is the best response?",
+  "choices": [
+    "Seek assessment; prevention evidence does not make cranberry treatment for an existing infection",
+    "Use cranberry until fever resolves",
+    "Double the capsule dose for antibiotic-equivalent action",
+    "Treat fever as evidence of supplement benefit"
+  ],
+  "answer": 0,
+  "explanation": "Cranberry may have a preventive role for some recurrent infections, but it is not established treatment for an active UTI.",
+  "reviewHref": "#supplement-targeted-products"
+},
+{
+  "id": "supp-saw-palmetto-efficacy",
+  "conceptGroup": "saw-palmetto-efficacy",
+  "lesson": "supplement-targeted-products",
+  "difficulty": "Applied",
+  "question": "A patient wants to replace effective BPH therapy with saw palmetto alone. What does the evidence support?",
+  "choices": [
+    "Explain that saw palmetto alone provides little or no symptom benefit and review the treatment plan",
+    "Assume it has proven equivalent benefit to all BPH medicines",
+    "Promise that triple dosing makes it effective",
+    "Use product popularity as the main efficacy evidence"
+  ],
+  "answer": 0,
+  "explanation": "NCCIH summarizes trials and reviews showing little or no benefit from saw palmetto alone for BPH symptoms.",
+  "reviewHref": "#supplement-targeted-products"
+},
+{
+  "id": "supp-zinc-route",
+  "conceptGroup": "zinc-route",
+  "lesson": "supplement-targeted-products",
+  "difficulty": "Applied",
+  "question": "A patient extrapolates possible oral zinc cold benefits to a zinc nasal spray. What distinction matters?",
+  "choices": [
+    "Intranasal zinc has been linked to prolonged or permanent loss of smell",
+    "All routes have the same safety profile",
+    "Nasal dosing removes every adverse effect",
+    "Oral evidence proves nasal efficacy"
+  ],
+  "answer": 0,
+  "explanation": "Route changes safety; the intranasal anosmia concern is not resolved by oral-lozenge studies.",
+  "reviewHref": "#supplement-targeted-products"
+},
+{
+  "id": "supp-iron-infant-volume",
+  "conceptGroup": "iron-infant-volume",
+  "lesson": "infant-nutrient-supplementation",
+  "difficulty": "Applied",
+  "question": "A prescribed 1 mg/kg/day elemental iron regimen is used for a 6 kg infant. Liquid contains 15 mg elemental iron/mL. What daily volume is correct?",
+  "choices": [
+    "0.4 mL",
+    "6 mL",
+    "2.5 mL",
+    "15 mL"
+  ],
+  "answer": 0,
+  "explanation": "The dose is 6 mg daily. Dividing by 15 mg/mL gives 0.4 mL.",
+  "reviewHref": "#infant-nutrient-supplementation"
+},
+{
+  "id": "supp-infant-vitamin-d-units",
+  "conceptGroup": "infant-vitamin-d-units",
+  "lesson": "infant-nutrient-supplementation",
+  "difficulty": "Applied",
+  "question": "An infant needs 400 IU vitamin D daily. Which equivalent amount is correct?",
+  "choices": [
+    "10 mcg",
+    "400 mcg",
+    "1 mcg",
+    "100 mg"
+  ],
+  "answer": 0,
+  "explanation": "Vitamin D 1 mcg equals 40 IU; 400 IU is 10 mcg. Check whether the product concentration is per drop or per mL.",
+  "reviewHref": "#infant-nutrient-supplementation"
+},
+{
+  "id": "supp-infant-iron-timing",
+  "conceptGroup": "infant-iron-timing",
+  "lesson": "infant-nutrient-supplementation",
+  "difficulty": "Applied",
+  "question": "A healthy term infant is exclusively breastfed at four months and does not yet receive iron-containing complementary foods. Which AAP prevention plan applies?",
+  "choices": [
+    "Oral iron 1 mg/kg/day until sufficient iron-containing complementary intake is established",
+    "No consideration of iron until age two years",
+    "The same fixed volume of every iron product",
+    "Automatic use of the term schedule for every premature infant"
+  ],
+  "answer": 0,
+  "explanation": "Feeding and age determine the term-infant plan; prematurity and product concentration require separate consideration.",
+  "reviewHref": "#infant-nutrient-supplementation"
+},
+{
+  "id": "supp-infant-drop-concentration",
+  "conceptGroup": "infant-drop-concentration",
+  "lesson": "infant-nutrient-supplementation",
+  "difficulty": "Applied",
+  "question": "A caregiver switches between vitamin D products, one labeled per drop and another per mL. What is the priority?",
+  "choices": [
+    "Recalculate the volume or drops from the prescribed IU and new product concentration",
+    "Keep the old volume because all infant products match",
+    "Add both products to avoid deficiency",
+    "Treat mcg and IU as identical numbers"
+  ],
+  "answer": 0,
+  "explanation": "Different liquid concentrations can produce dosing errors. Preserve the prescribed ingredient amount and use the correct measuring device.",
+  "reviewHref": "#infant-nutrient-supplementation"
+},
+{
+  "id": "supp-vinpocetine-pregnancy",
+  "conceptGroup": "vinpocetine-pregnancy",
+  "lesson": "supplement-organ-toxicity",
+  "difficulty": "Applied",
+  "question": "A patient who could become pregnant asks about a vinpocetine memory supplement. What is the best advice?",
+  "choices": [
+    "Avoid vinpocetine because of FDA fetal-harm concerns",
+    "Use it until a pregnancy test becomes positive",
+    "Assume plant derivation excludes fetal risk",
+    "Use an unlisted dose to make it safe"
+  ],
+  "answer": 0,
+  "explanation": "FDA advises pregnant women and those who could become pregnant not to take vinpocetine.",
+  "reviewHref": "#supplement-organ-toxicity"
+},
+{
+  "id": "supp-butterbur-pa",
+  "conceptGroup": "butterbur-pa",
+  "lesson": "supplement-organ-toxicity",
+  "difficulty": "Applied",
+  "question": "A butterbur product is advertised as PA-free and guaranteed liver-safe. How should this be interpreted?",
+  "choices": [
+    "PA removal addresses an important hazard but does not guarantee safety; liver injury has also been reported with purported PA-free products",
+    "PA-free means all liver risk has been disproven",
+    "Older migraine recommendations prove current safety",
+    "Any liver symptoms can be ignored if the label says PA-free"
+  ],
+  "answer": 0,
+  "explanation": "Butterbur pyrrolizidine alkaloids are hazardous, and a PA-free claim does not eliminate all safety uncertainty.",
+  "reviewHref": "#supplement-organ-toxicity"
+},
+{
+  "id": "supp-same-bipolar",
+  "conceptGroup": "same-bipolar",
+  "lesson": "supplement-neuroactive",
+  "difficulty": "Applied",
+  "question": "A patient with bipolar disorder wants to self-treat low mood with SAMe. What concern is most relevant?",
+  "choices": [
+    "SAMe can worsen mania and needs clinician review",
+    "SAMe has no psychiatric effects because it occurs naturally",
+    "SAMe is a proven replacement for mood stabilizers",
+    "Bipolar history has no relevance to supplement selection"
+  ],
+  "answer": 0,
+  "explanation": "SAMe may worsen mania and can interact with serotonergic regimens.",
+  "reviewHref": "#supplement-neuroactive"
+},
+{
+  "id": "supp-hawthorn-digoxin",
+  "conceptGroup": "hawthorn-digoxin",
+  "lesson": "supplement-cardiometabolic",
+  "difficulty": "Applied",
+  "question": "A patient taking digoxin asks about adding hawthorn for heart failure. What is the best response?",
+  "choices": [
+    "Avoid the combination because of possible interaction and review the plan with the treating team",
+    "Stop digoxin and replace it with hawthorn",
+    "Assume every heart supplement is interaction-free",
+    "Use hawthorn as an automatic replacement for guideline-directed therapy"
+  ],
+  "answer": 0,
+  "explanation": "Hawthorn evidence is limited and the AHA identifies a possible digoxin interaction.",
+  "reviewHref": "#supplement-cardiometabolic"
+},
+{
+  "id": "supp-medical-food-ingredients",
+  "conceptGroup": "medical-food-ingredients",
+  "lesson": "cbd-homeopathy-medical-foods",
+  "difficulty": "Applied",
+  "question": "A learner says every medical-food ingredient must use the GRAS pathway. What is the accurate correction?",
+  "choices": [
+    "Other lawful bases include compliant food or color additives and prior sanctions",
+    "GRAS is the only permitted legal basis",
+    "Any ingredient is allowed if a clinician recommends it",
+    "Food-use legality proves clinical efficacy"
+  ],
+  "answer": 0,
+  "explanation": "FDA medical-food guidance permits multiple lawful ingredient pathways; these do not establish drug approval or efficacy.",
+  "reviewHref": "#cbd-homeopathy-medical-foods"
+},
+{
+  "id": "supp-potassium-ckd",
+  "conceptGroup": "potassium-ckd",
+  "lesson": "vitamins-minerals",
+  "difficulty": "Applied",
+  "question": "A patient with CKD taking an ACE inhibitor wants a potassium supplement and potassium salt substitute. What should be reviewed first?",
+  "choices": [
+    "Serum potassium, kidney function and the full regimen because hyperkalemia risk is increased",
+    "Assume all dietary potassium additions are safe",
+    "Recommend both without laboratory review",
+    "Treat a general adequate-intake target as a replacement prescription"
+  ],
+  "answer": 0,
+  "explanation": "Reduced kidney excretion and medicines can increase potassium accumulation; intake targets are not automatic prescriptions.",
+  "reviewHref": "#vitamins-minerals"
 }
+);
