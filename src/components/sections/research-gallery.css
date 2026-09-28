@@ -40,3 +40,8 @@
 @media(max-width:600px){.research-gallery__footer{gap:16px;align-items:flex-start}.research-gallery__footer>span{max-width:150px;line-height:1.6}}
 
 .research-gallery__rail[data-reduced="true"] .research-gallery__group{padding-inline:24px}
+
+.research-gallery__film { position:absolute; inset:0; background:#000; }
+.research-gallery__film picture, .research-gallery__film img, .research-gallery__film video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.research-gallery__film video { opacity:0; transition:opacity .4s ease; }
+.research-gallery__film video[data-playing="true"] { opacity:1; }

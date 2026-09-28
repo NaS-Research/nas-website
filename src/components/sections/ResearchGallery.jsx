@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import WorkspacePreviewFilm from "./WorkspacePreviewFilm";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import "./research-gallery.css";
@@ -78,12 +79,12 @@ function ResearchRail({ studies, compact, paused, reduced }) {
       onClickCapture={e => { if (suppressClick.current) { e.preventDefault(); e.stopPropagation(); suppressClick.current = false; } }}>
       {(reduced ? [0] : [0, 1, 2, 3]).map(copy => <div className="research-gallery__group" ref={copy === (reduced ? 0 : 1) ? group : undefined} key={copy} aria-hidden={!reduced && copy !== 1 ? true : undefined}>
         {studies.map(study => <Link key={study.slug} href={`/research/${study.slug}`} className="research-gallery__card" tabIndex={!reduced && copy !== 1 ? -1 : undefined} aria-label={`${study.title}. ${study.type}. Read publication.`}>
-          <Image src={study.image} alt="" fill sizes={compact ? "(max-width: 600px) 78vw, 35vw" : "(max-width: 600px) 88vw, 78vw"} draggable={false} />
+          {study.workspaceFilm ? <WorkspacePreviewFilm className="research-gallery__film" compact={compact} paused={paused || reduced} /> : <Image src={study.image} alt="" fill sizes={compact ? "(max-width: 600px) 78vw, 35vw" : "(max-width: 600px) 88vw, 78vw"} draggable={false} />}
           <div className="research-gallery__shade" />
           <div className="research-gallery__caption">
             <p>{study.area} <span>· {study.type}</span></p>
             <h3>{study.title}</h3>
-            <span className="research-gallery__read">{study.type === "White Paper" ? "Read paper" : "Read study"}</span>
+            <span className="research-gallery__read">{study.type === "White Paper" ? "Read paper" : study.type === "Release" ? "Read announcement" : "Read study"}</span>
           </div>
         </Link>)}
       </div>)}
@@ -133,7 +134,7 @@ export default function ResearchGallery({ studies }) {
     <ResearchRail studies={primary} paused={paused} reduced={reduced} />
     {secondary.length > 0 && <ResearchRail studies={secondary} compact paused={paused} reduced={reduced} />}
     <div className="research-gallery__footer">
-      <span>Reports, research notes & white papers</span>
+      <span>Reports, research notes, white papers & releases</span>
       <div className="research-gallery__controls" role="group" aria-label="Research gallery controls">
       <button onClick={step} aria-label="Show more research">←</button>
       {!reduced && <button onClick={() => setPaused(value => !value)} aria-label={paused ? "Play research gallery" : "Pause research gallery"} aria-pressed={paused}><span aria-hidden="true">{paused ? "▶" : "Ⅱ"}</span> {paused ? "Play" : "Pause"}</button>}

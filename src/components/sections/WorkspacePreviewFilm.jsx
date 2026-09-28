@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 const root = "/workspace/particles-v2";
 
-export default function WorkspacePreviewFilm({ className = "home-workspace__film" }) {
+export default function WorkspacePreviewFilm({ className = "home-workspace__film", compact = false, paused = false }) {
   const frame = useRef(null);
   const video = useRef(null);
   const [playing, setPlaying] = useState(false);
@@ -13,9 +13,9 @@ export default function WorkspacePreviewFilm({ className = "home-workspace__film
     const motion = matchMedia("(prefers-reduced-motion: reduce)");
     let nearby = false;
     const update = () => {
-      if (nearby && !document.hidden && !motion.matches) {
+      if (nearby && !document.hidden && !motion.matches && !paused) {
         if (!element.getAttribute("src")) {
-          element.src = `${root}/NaS-particle-${innerWidth <= 700 ? 960 : 1920}.mp4`;
+          element.src = `${root}/NaS-particle-${compact || innerWidth <= 700 ? 960 : 1920}.mp4`;
           element.load();
         }
         element.muted = true;
@@ -35,7 +35,7 @@ export default function WorkspacePreviewFilm({ className = "home-workspace__film
       document.removeEventListener("visibilitychange", update);
       element.pause();
     };
-  }, []);
+  }, [compact, paused]);
   return <div ref={frame} className={className} aria-hidden="true">
     <picture>
       <source media="(max-width:700px)" srcSet={`${root}/poster-960.webp`} />
