@@ -74,6 +74,34 @@ export const dietarySupplementsComplementaryMedicineQuestionBank = concepts.flat
   };
 }));
 
+// Original application cases supplement the concept-generated review bank.
+dietarySupplementsComplementaryMedicineQuestionBank.push(
+  {
+    id: "supp-folate-label-dose", conceptGroup: "folate-label-interpretation", lesson: "folate-labels-preconception", difficulty: "Applied",
+    question: "A prenatal supplement lists 680 mcg DFE (400 mcg folic acid) per daily serving. How much folic acid does that serving provide?",
+    choices: ["400 mcg", "680 mcg", "1,080 mcg", "240 mcg"], answer: 0,
+    explanation: "The parenthetical value gives the folic acid amount. DFE expresses nutrient activity; adding the two values double-counts the serving.", reviewHref: "#folate-labels-preconception",
+  },
+  {
+    id: "supp-folate-rda-versus-prevention", conceptGroup: "folate-rda-prevention", lesson: "folate-labels-preconception", difficulty: "Applied",
+    question: "Which statement correctly separates the pregnancy folate RDA from the USPSTF routine neural-tube-defect prevention recommendation?",
+    choices: ["Pregnancy RDA: 600 mcg DFE total daily intake; routine prevention: a supplement containing 400 to 800 mcg folic acid daily", "Pregnancy RDA: 600 mcg folic acid; routine prevention: 400 to 800 mcg DFE", "Both recommendations require exactly 600 mcg folic acid from a supplement", "Meeting the RDA means preconception folic acid supplementation has no role"], answer: 0,
+    explanation: "The recommendations use different measures and purposes. Total folate intake in DFE is distinct from the folic acid supplement dose studied for prevention.", reviewHref: "#folate-labels-preconception",
+  },
+  {
+    id: "supp-folate-start-before-conception", conceptGroup: "folate-preconception-timing", lesson: "folate-labels-preconception", difficulty: "Applied",
+    question: "An average-risk patient hopes to conceive in six weeks and asks when to begin routine folic acid supplementation. Which plan follows USPSTF guidance?",
+    choices: ["Begin now, allowing at least one month before conception, and continue through the first two to three months of pregnancy", "Wait for a positive pregnancy test before discussing supplementation", "Start after the first trimester", "Take a single larger dose on the day of conception"], answer: 0,
+    explanation: "The prevention window begins before anticipated conception. A supplement containing 400 to 800 mcg folic acid daily is the routine USPSTF recommendation; pregnancy nutritional needs continue beyond this early window.", reviewHref: "#folate-labels-preconception",
+  },
+  {
+    id: "supp-folate-high-risk-boundary", conceptGroup: "folate-high-risk-plan", lesson: "folate-labels-preconception", difficulty: "Advanced",
+    question: "A patient with a previous neural-tube-defect-affected pregnancy asks whether the routine USPSTF dose is automatically the entire preconception plan. What is the best response?",
+    choices: ["Arrange an individualized preconception plan because the routine recommendation excludes this higher-risk history", "Assure the patient that the routine recommendation specifically covers all recurrence-risk situations", "Recommend stopping folic acid until pregnancy is confirmed", "Recommend stacking several prenatal multivitamins without reviewing their other ingredients"], answer: 0,
+    explanation: "Prior affected pregnancy falls outside the routine USPSTF recommendation. The appropriate regimen needs clinical planning rather than automatic standard dosing or unreviewed multivitamin stacking.", reviewHref: "#folate-labels-preconception",
+  },
+);
+
 if (dietarySupplementsComplementaryMedicineQuestionBank.length < 100) {
   throw new Error(`Dietary supplements question bank must contain at least 100 questions, found ${dietarySupplementsComplementaryMedicineQuestionBank.length}.`);
 }

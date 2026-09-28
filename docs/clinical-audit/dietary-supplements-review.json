@@ -1,0 +1,63 @@
+{
+  "status": "reviewing",
+  "reviewDate": "2026-09-27",
+  "moduleSlugs": [
+    "dietary-supplements-complementary-medicine"
+  ],
+  "clinicalCompletion": false,
+  "bookRead": [
+    {
+      "printedPages": [
+        973,
+        981
+      ],
+      "pdfPages": [
+        983,
+        991
+      ],
+      "method": "Text extraction inspected; large output for PDF985 was truncated and requires rereading. PDF984 page render inspected and folate/label statements confirmed. Remaining table renders still pending."
+    }
+  ],
+  "findings": [
+    {
+      "status": "corrected",
+      "topic": "Folate units, life-stage intake and prevention",
+      "problem": "Book printed974 conflates childbearing-age intake with pregnancy DFE; module previously offered only generic folate guidance.",
+      "implementation": "Added dedicated folate-labels-preconception lesson, numerical label diagram, embedded check and four original applied cases. Separates total-intake RDA from USPSTF preventive folic acid dose and identifies high-risk scope.",
+      "sources": [
+        "https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/",
+        "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/folic-acid-for-the-prevention-of-neural-tube-defects-preventive-medication"
+      ],
+      "sourceScope": "NIH ODS definitions, conversions, RDA table and labeling; USPSTF clinician summary, timing, dose and exclusions."
+    },
+    {
+      "status": "documented",
+      "topic": "Outdated label rollout",
+      "problem": "Book printed974 says updated labeling is not yet required.",
+      "implementation": "New lesson teaches current DFE and parenthetical folic acid labeling, not a future rollout.",
+      "sources": [
+        "https://www.fda.gov/food/hfp-constituent-updates/fda-provides-guidance-industry-convert-units-measure-certain-nutrients-nutrition-and-supplement"
+      ]
+    },
+    {
+      "status": "corrected",
+      "topic": "Missing diagram registration",
+      "problem": "Traditional-use and botanical-case visuals existed but their IDs were absent from the module-page renderer allowlist.",
+      "implementation": "Registered those two existing diagrams and the new folate diagram."
+    }
+  ],
+  "openWork": [
+    "Render and inspect remaining chapter pages, especially tables with missing text extraction labels.",
+    "Map every chapter table row and condition to existing lessons or needed additions.",
+    "Verify melatonin dependence assertion, soy/breast cancer statement, vitamin E 400 IU limit and homeopathy efficacy language against current primary evidence. Do not copy them as established facts.",
+    "Review pediatric iron/vitamin D, nutrient depletion and condition-specific supplementation coverage.",
+    "Read the complete assembled 196-question bank including generated choices, answers and explanations; replace ambiguous or pedagogically weak items.",
+    "Verify all other module clinical claims, references and diagrams; complete desktop/mobile practice QA.",
+    "Complete build and record release evidence; push only after full module review."
+  ],
+  "validation": {
+    "structuralAudit": "Passed: 13 lessons,196 questions,no hard errors or source gaps. New focused folate lesson has four original bank questions; count advisory is not a clinical failure.",
+    "build": "npm run build passed, exit 0, 2026-09-27.",
+    "ui": "Local preview: new lesson, diagram and 196-question count rendered. Folate embedded answer submitted and returned Correct with expected rationale; review link worked. Desktop 1280x720 and mobile390x844 inspected; full-module randomized practice pending."
+  }
+}
