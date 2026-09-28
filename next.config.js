@@ -8,7 +8,7 @@ const csp = [
   "style-src 'self' 'unsafe-inline'", "img-src 'self' data: blob:",
   "font-src 'self' data:", "media-src 'self' blob:",
   `connect-src 'self' blob:${production ? "" : " ws: wss:"}`,
-  "frame-src 'self' https://sketchfab.com", "worker-src 'self' blob:",
+  "frame-src 'self' https://sketchfab.com https://www.youtube-nocookie.com", "worker-src 'self' blob:",
   ...(production ? ["upgrade-insecure-requests"] : []),
 ].join("; ");
 module.exports = {

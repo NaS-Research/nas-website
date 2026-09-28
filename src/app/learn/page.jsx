@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import LearningCinema from "@/components/learn/LearningCinema";
 import LearningLibrary from "@/components/learn/LearningLibrary";
 import { pharmacyLessons } from "@/data/pharmacyLearning";
 
@@ -16,8 +17,7 @@ export default function LearningPage() {
       <header className="learning-index-hero">
         <div className="nas-shell learning-index-hero__inner">
           <div>
-            <Link className="nas-kicker" href="/workspace">Workspace ↗</Link>
-            <p className="nas-kicker" style={{ marginTop: "1.5rem" }}>Learn</p>
+            <p className="nas-kicker">Learn</p>
             <h1>The study of life.</h1>
           </div>
           <div className="learning-index-hero__intro">
@@ -43,6 +43,8 @@ export default function LearningPage() {
             <span>Foundations</span><span>Calculations</span><span>Therapeutics</span><span>Safety</span><span>Patient care</span>
           </div>
         </section>
+
+        <LearningCinema />
 
         <div className="nas-shell" id="library"><LearningLibrary lessons={pharmacyLessons} /></div>
 
