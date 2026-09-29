@@ -1,0 +1,8 @@
+/* Decorative films never expose a browser playback overlay. */
+.nas-background-film { pointer-events: none; }
+.nas-background-film::-webkit-media-controls,
+.nas-background-film::-webkit-media-controls-panel,
+.nas-background-film::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
