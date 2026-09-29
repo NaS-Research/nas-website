@@ -10756,3 +10756,27 @@ summary:focus-visible {
 .publication-study-figure img { display:block; width:100%; height:auto; padding:.8rem; background:#fff; border-radius:.4rem; }
 .publication-study-figure figcaption { color:#aaa; font-size:.85rem; line-height:1.6; margin-top:.85rem; }
 .publication-figure-expand { display:block; width:fit-content; margin-top:.5rem; color:#dfc18f; text-decoration:underline; text-underline-offset:.25em; }
+
+/* Compact public-page calls to action on phones; retain a 44px tap target. */
+@media (max-width: 767px) {
+  body .home-workspace__link,
+  body .learn-editorial__explore,
+  body .learning-primary-link,
+  body .home-mark-hero__actions a,
+  body .nas-button {
+    box-sizing: border-box;
+    width: fit-content;
+    max-width: 100%;
+    min-height: 44px;
+    padding: 10px 16px;
+    gap: 14px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  body .nas-navbar .nas-nav-workspace {
+    min-height: 44px;
+    padding: 8px 12px;
+    gap: 8px;
+    font-size: 12px;
+  }
+}

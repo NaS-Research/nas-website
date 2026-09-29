@@ -11,7 +11,7 @@ export default function CurrentResearch() {
     const artwork = publicationArtwork[slug];
     return item && artwork ? [{
       slug, title: item.shortTitle || item.title, type: item.type,
-      area: item.area, image: artwork.src, workspaceFilm: Boolean(artwork.workspaceFilm), mark: Boolean(artwork.mark),
+      area: item.area, image: artwork.src, video: artwork.video || item.heroVideo || null, workspaceFilm: Boolean(artwork.workspaceFilm), mark: Boolean(artwork.mark),
     }] : [];
   });
   return <ResearchGallery studies={studies} />;

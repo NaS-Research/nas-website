@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 const root = "/workspace/particles-v2";
 
-export default function WorkspacePreviewFilm({ className = "home-workspace__film", compact = false, paused = false }) {
+export default function WorkspacePreviewFilm({ className = "home-workspace__film", compact = false, paused = false, src, poster }) {
   const frame = useRef(null);
   const video = useRef(null);
   const [playing, setPlaying] = useState(false);
@@ -15,7 +15,7 @@ export default function WorkspacePreviewFilm({ className = "home-workspace__film
     const update = () => {
       if (nearby && !document.hidden && !motion.matches && !paused) {
         if (!element.getAttribute("src")) {
-          element.src = `${root}/NaS-particle-${compact || innerWidth <= 700 ? 960 : 1920}.mp4`;
+          element.src = src || `${root}/NaS-particle-${compact || innerWidth <= 700 ? 960 : 1920}.mp4`;
           element.load();
         }
         element.muted = true;
@@ -35,11 +35,11 @@ export default function WorkspacePreviewFilm({ className = "home-workspace__film
       document.removeEventListener("visibilitychange", update);
       element.pause();
     };
-  }, [compact, paused]);
+  }, [compact, paused, src]);
   return <div ref={frame} className={className} aria-hidden="true">
     <picture>
-      <source media="(max-width:700px)" srcSet={`${root}/poster-960.webp`} />
-      <img src={`${root}/poster-1920.webp`} alt="" width="1920" height="1080" loading="lazy" />
+      {!poster && <source media="(max-width:700px)" srcSet={`${root}/poster-960.webp`} />}
+      <img src={poster || `${root}/poster-1920.webp`} alt="" width="1920" height="1080" loading="lazy" />
     </picture>
     <video ref={video} autoPlay loop muted playsInline preload="none" data-playing={playing}
       onPlaying={() => setPlaying(true)} onError={() => setPlaying(false)} />

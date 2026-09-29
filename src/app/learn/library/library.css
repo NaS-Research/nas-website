@@ -1,6 +1,21 @@
+.learning-catalog-page .learning-index-hero{padding-block:8rem 3rem}
+.learning-catalog-page .learning-index-hero h1{font-size:clamp(3rem,6vw,6rem)}
 .learning-catalog-page .learning-result__body h2{font-size:clamp(1.3rem,2.4vw,2rem);font-weight:500;letter-spacing:-.04em;line-height:1.2;margin:10px 0 14px}
 .learning-catalog-page .learning-toolbar{gap:16px;flex-wrap:wrap}
 .learning-catalog-page .learning-search{flex:1 1 280px}
 .learning-catalog-page .learning-filter{min-width:160px;max-width:100%}
 .learning-catalog-page .learning-filter select{max-width:100%}
 @media(max-width:600px){.learning-catalog-page .learning-filter{flex:1 1 100%}}
+
+@media(min-width:768px){
+  .learning-catalog-page .learning-toolbar{grid-template-columns:minmax(220px,1fr) minmax(180px,260px) minmax(140px,180px)}
+}
+@media(max-width:767px){
+  .learning-catalog-page .learning-index-hero{padding-block:7rem 2.5rem}
+  .learning-catalog-page .learning-index-hero__inner{gap:1.5rem}
+  .learning-catalog-page .learning-index-hero h1{font-size:clamp(2.75rem,12vw,4rem)}
+  .learning-catalog-page .learning-library{padding-block:2rem 3rem}
+  .learning-catalog-page .learning-toolbar{grid-template-columns:minmax(0,1fr)}
+  .learning-catalog-page .learning-search input,.learning-catalog-page .learning-filter select{font-size:16px;min-height:44px}
+  .learning-catalog-page .learning-result__body>span{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+}

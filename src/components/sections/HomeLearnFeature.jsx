@@ -2,7 +2,7 @@ import Link from "next/link";
 import "./home-learn.css";
 
 const learningPaths = [
-  { number: "01", title: "Learning Library", description: "Lessons across the life sciences.", href: "/learn#library", detail: "Browse the library" },
+  { number: "01", title: "Learning Library", description: "Lessons across the life sciences.", href: "/learn/library", detail: "Browse the library" },
   { number: "02", title: "Human Atlas", description: "The human body, in three dimensions.", href: "/learn/pharmacy/atlas", detail: "Explore the atlas" },
   { number: "03", title: "Drug Library", description: "Mechanisms, uses, and safety.", href: "/learn/pharmacy/drugs", detail: "Browse medications" },
   { number: "04", title: "Knowledge Review", description: "Questions that build understanding.", href: "/learn/pharmacy/review", detail: "Start a review" },
