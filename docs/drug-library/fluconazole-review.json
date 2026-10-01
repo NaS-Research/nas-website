@@ -1,0 +1,796 @@
+{
+  "slug": "fluconazole",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "A formulation-specific antifungal reference separating product-label regimens from current candidemia, VVC and HIV cryptococcosis guidance. All eight blueprint sections reviewed. Product-specific focused monograph; not an exhaustive adverse-event catalog.",
+  "sources": [
+    {
+      "id": "oral",
+      "title": "Diflucan · Oral tablets and suspension prescribing information",
+      "publisher": "DailyMed / Pfizer",
+      "note": "SPL version 57, effective 20260402; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f694c617-3383-416c-91b6-b94fda371204",
+      "checked": "2026-10-01",
+      "version": "SPL version 57, effective 20260402; current public product labeling.",
+      "spl_version": "57",
+      "spl_effective_time": "20260402",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/f694c617-3383-416c-91b6-b94fda371204.xml",
+      "downloaded_xml_sha256": "4445c09e05e964e7fd02d3d1faaf420aeb28a12f8ac326de21fe082cf0f96564"
+    },
+    {
+      "id": "iv",
+      "title": "Fluconazole in sodium chloride injection · Full prescribing information",
+      "publisher": "DailyMed / Baxter",
+      "note": "SPL version 27, effective 20240624; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cd24a261-9c15-42b4-8040-89d2dbda174e",
+      "checked": "2026-10-01",
+      "version": "SPL version 27, effective 20240624; current public product labeling.",
+      "spl_version": "27",
+      "spl_effective_time": "20240624",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/cd24a261-9c15-42b4-8040-89d2dbda174e.xml",
+      "downloaded_xml_sha256": "15df96bf41401422d4a0e6bd261553ecb38849983bf6ea37f50527ce48937dfa"
+    },
+    {
+      "id": "idsa",
+      "title": "IDSA · Current candidiasis guideline (2016)",
+      "publisher": "Infectious Diseases Society of America",
+      "note": "Public full guideline; nonneutropenic candidemia recommendations 1–12 reviewed; listed current.",
+      "url": "https://www.idsociety.org/practice-guideline/candidiasis/",
+      "checked": "2026-10-01",
+      "version": "Public full guideline; nonneutropenic candidemia recommendations 1–12 reviewed; listed current."
+    },
+    {
+      "id": "cdc",
+      "title": "CDC · Vulvovaginal candidiasis treatment guidelines",
+      "publisher": "Centers for Disease Control and Prevention",
+      "note": "Public current STI guideline; recurrent, severe and pregnancy sections reviewed.",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/candidiasis.htm",
+      "checked": "2026-10-01",
+      "version": "Public current STI guideline; recurrent, severe and pregnancy sections reviewed."
+    },
+    {
+      "id": "nih",
+      "title": "NIH · Cryptococcosis in adults and adolescents with HIV",
+      "publisher": "NIH Clinicalinfo",
+      "note": "Updated October 29, 2024; reviewed March 16, 2026. Current public full guideline; induction versus label regimen reviewed.",
+      "url": "https://clinicalinfo.hiv.gov/en/guidelines/hiv-clinical-guidelines-adult-and-adolescent-opportunistic-infections/cryptococcosis",
+      "checked": "2026-10-01",
+      "version": "Updated October 29, 2024; reviewed March 16, 2026. Current public full guideline; induction versus label regimen reviewed."
+    }
+  ],
+  "assertion_to_source": [
+    {
+      "section_id": "indications",
+      "card_title": "Labeled indications",
+      "assertions": [
+        "Selected labels cover oropharyngeal/esophageal candidiasis, cryptococcal meningitis and reduced candidiasis incidence during bone-marrow transplantation with cytotoxic chemotherapy/radiation. Systemic Candida infections, urinary infection and peritonitis have supporting small noncomparative label studies. Oral Diflucan additionally labels vaginal candidiasis. This is not antibacterial treatment or universal coverage of all fungi."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "INDICATIONS AND USAGE",
+            "Prophylaxis",
+            "Microbiology"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "INDICATIONS AND USAGE",
+            "Prophylaxis",
+            "Microbiology"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "indications",
+      "card_title": "Susceptibility and treatment selection",
+      "assertions": [
+        "Obtain relevant fungal specimens before therapy where feasible, then revise treatment to identification/susceptibility and response. Resistant or inherently nonsusceptible species, including C. krusei, require alternatives. Approval of an indication does not make old label monotherapy the preferred modern induction regimen for invasive disease."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "INDICATIONS AND USAGE",
+            "PRECAUTIONS / General",
+            "Microbiology"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "INDICATIONS AND USAGE",
+            "PRECAUTIONS / General",
+            "Microbiology"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Adult label regimens",
+      "assertions": [
+        "Oral tablets/suspension may be taken with or without food. For repeated treatment, the labels describe equal oral and IV daily milligram doses; route selection still depends on clinical status. The following are labeled regimens, not a universal course for every fungal infection.",
+        "Vaginal candidiasis | Oral only: 150 mg once.",
+        "Oropharyngeal | 200 mg day 1, then 100 mg daily; ≥2 weeks.",
+        "Esophageal | 200 mg day 1, then 100 mg daily; up to 400 mg/day by response. ≥3 weeks and ≥2 weeks after symptom resolution.",
+        "Bone-marrow transplant prophylaxis | 400 mg daily; start several days before expected severe neutropenia, continue 7 days after neutrophils exceed 1,000/mm³.",
+        "Candida UTI / peritonitis | Label reports 50–200 mg/day in small studies; choose a site-specific clinical protocol.",
+        "Systemic Candida | Label optimal dose/duration unestablished; small studies used up to 400 mg/day. See guideline distinction below."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "DOSAGE AND ADMINISTRATION / Adults"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "DOSAGE AND ADMINISTRATION / Adults"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Current candidemia guidance",
+      "assertions": [
+        "IDSA recommends an echinocandin initially for nonneutropenic candidemia. Fluconazole 800 mg (12 mg/kg) loading, then 400 mg (6 mg/kg) daily is an alternative for selected stable patients unlikely to have resistant Candida. Step-down requires stability, susceptible isolates and negative repeat blood cultures. Uncomplicated treatment continues at least two weeks after bloodstream clearance and symptom resolution; metastatic disease needs another plan."
+      ],
+      "support": [
+        {
+          "source_id": "idsa",
+          "sections": [
+            "Recommendations 1–4, 11–12"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Cryptococcal label versus current HIV guidance",
+      "assertions": [
+        "The label’s adult acute regimen is 400 mg day 1, then 200 mg daily, potentially 400 mg/day, for 10–12 weeks after CSF culture negativity; HIV relapse suppression is 200 mg/day. Pediatric label acute dosing is 12 mg/kg day 1 then 6 mg/kg/day, potentially 12 mg/kg/day; suppression 6 mg/kg/day. These are label descriptions, not the preferred modern HIV meningitis induction plan. NIH prefers liposomal amphotericin B plus flucytosine induction in U.S. settings; resource-limited regimens and subsequent fluconazole consolidation/maintenance are phase-specific. Specialist management of CSF cultures, intracranial pressure, organ dosing and ART is essential."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "DOSAGE AND ADMINISTRATION / Cryptococcal meningitis"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "DOSAGE AND ADMINISTRATION / Cryptococcal meningitis"
+          ]
+        },
+        {
+          "source_id": "nih",
+          "sections": [
+            "Treating cryptococcal meningitis / Preferred regimens"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Pediatric candidiasis regimens",
+      "assertions": [
+        "At age ≥6 months, oropharyngeal/esophageal dosing is 6 mg/kg day 1 then 3 mg/kg daily; esophageal dosing may increase to 12 mg/kg/day. Respect the adult label durations above. Systemic Candida uses a different loading regimen below; the selected labels specify ≥3 weeks and ≥2 weeks after symptoms resolve. Neonates and ECMO require specialist interpretation and renal assessment.",
+        "Age ≥3 months | 25 mg/kg loading (maximum 800 mg), then 12 mg/kg daily (maximum 400 mg).",
+        "Birth to 3 months, gestational age ≥30 weeks | 25 mg/kg loading, then 12 mg/kg daily.",
+        "Birth to 3 months, gestational age <30 weeks | 25 mg/kg loading, then 9 mg/kg daily.",
+        "ECMO | 35 mg/kg loading; age ≥3 months maximum 800 mg. Same age/gestational maintenance above; age ≥3 months maximum 400 mg/day."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "DOSAGE AND ADMINISTRATION / Pediatric patients / Table 6"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "DOSAGE AND ADMINISTRATION / Pediatric patients / Table 6"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Repeated-treatment renal dosing",
+      "assertions": [
+        "The label gives an initial 50–400 mg loading dose before its renal-adjustment table: CrCl >50 mL/min, 100% indication-based maintenance; CrCl ≤50 without dialysis, 50%. Hemodialysis: 100% after each session, with nondialysis-day reduction by renal function. The single oral 150-mg vaginal regimen needs no renal adjustment. High-dose invasive loading, changing kidney function, pediatric impairment and CRRT require individualized reconciliation; do not halve every loading dose or extrapolate a CRRT schedule."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "DOSAGE AND ADMINISTRATION / Impaired renal function"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "DOSAGE AND ADMINISTRATION / Impaired renal function"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Recurrent or severe vaginal infection: guideline regimens",
+      "assertions": [
+        "CDC recurrent C. albicans guidance uses oral 100, 150 or 200 mg on days 1, 4 and 7, then that dose weekly for six months; persistent culture-positive symptoms need susceptibility/specialist review. Severe VVC may use 150 mg followed by another 150 mg 72 hours later. These differ from the label’s single dose and require diagnosis, interaction and pregnancy review."
+      ],
+      "support": [
+        {
+          "source_id": "cdc",
+          "sections": [
+            "Recurrent VVC / Treatment",
+            "Severe VVC"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Suspension and IV administration",
+      "assertions": [
+        "Diflucan pharmacy reconstitution adds 24 mL water to produce 35 mL at 10 or 40 mg/mL; shake well and verify concentration before measuring. Baxter 2-mg/mL injection is IV infusion only, at no more than approximately 200 mg/hour; never infer an IV push. Use sterile equipment, inspect solution/seal, and follow container instructions; do not add supplementary medication."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "Directions for Mixing the Oral Suspension"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "Administration",
+            "Directions for Use"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Warnings and precautions",
+      "assertions": [
+        "Rare severe/fatal liver injury, anaphylaxis and exfoliative skin reactions have occurred. Monitor abnormal liver tests; discontinue for attributable clinical liver disease. Stop superficial-infection treatment for attributable rash; in deep infection monitor closely and stop if lesions progress. QT prolongation/torsades risk increases with hypokalemia, cardiac failure and interacting drugs. Assess electrolytes and proarrhythmic conditions. Adrenal insufficiency is reported. Pregnancy hazards and renal accumulation need review. Oral suspension contains sucrose and should not be used in the specified hereditary fructose, glucose/galactose malabsorption or sucrase-isomaltase disorders."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "WARNINGS",
+            "PRECAUTIONS / General"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "WARNINGS",
+            "PRECAUTIONS / General"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Contraindications",
+      "assertions": [
+        "Hypersensitivity to fluconazole or formulation excipients is contraindicated. Coadministration of QT-prolonging CYP3A4 substrates such as erythromycin, pimozide and quinidine is contraindicated. Cross-allergy to other azoles is uncertain and calls for caution. Pregnancy avoidance and hepatic/renal concerns are warnings or dosing considerations, not newly invented formal contraindications."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "CONTRAINDICATIONS",
+            "PRECAUTIONS"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "CONTRAINDICATIONS",
+            "PRECAUTIONS"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Boxed warning status",
+      "assertions": [
+        "The selected oral and IV labels have no boxed warning. This does not reduce the importance of hepatic, fetal, skin, cardiac or interaction risks."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "Full prescribing information / WARNINGS"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "Full prescribing information / WARNINGS"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Adverse reactions and overdose",
+      "assertions": [
+        "Headache, nausea, abdominal pain, diarrhea and vomiting occur; rash, taste disturbance and liver-test changes are reported. Serious postmarketing reports include severe skin reactions, hepatic failure, arrhythmias and cytopenias, without reliable frequency. Overdose has caused hallucinations and paranoid behavior. Seek urgent clinical/poison advice; care is supportive and clinician-directed. Hemodialysis can reduce fluconazole levels, unlike many highly protein-bound medicines."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "ADVERSE REACTIONS",
+            "OVERDOSAGE"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "ADVERSE REACTIONS",
+            "OVERDOSAGE"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Enzyme inhibition and high-risk combinations",
+      "assertions": [
+        "Fluconazole moderately inhibits CYP2C9/CYP3A4 and strongly inhibits CYP2C19; inhibition persists about 4–5 days after stopping. Review narrow-therapeutic-index substrates and QT drugs. Erythromycin, pimozide and quinidine are contraindicated combinations; amiodarone requires caution for additive QT risk. The oral label directs avoiding abrocitinib, lemborexant and voriconazole; olaparib co-use is not recommended unless its specific dose adjustment is made."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "Drug Interactions / Introduction, Abrocitinib, Amiodarone, Lemborexant, Olaparib, Voriconazole",
+            "CONTRAINDICATIONS"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Monitoring or dose-adjustment interactions",
+      "assertions": [
+        "Monitor INR/bleeding with warfarin, glucose with sulfonylureas, and concentrations/toxicity with phenytoin, carbamazepine, cyclosporine, sirolimus, tacrolimus and theophylline. Oral tacrolimus exposure can rise markedly; the same effect was not seen with IV tacrolimus. Atorvastatin/simvastatin/fluvastatin can cause myopathy/rhabdomyolysis; assess symptoms, CK when indicated and product-specific adjustment. Opioids and short-acting benzodiazepines can cause enhanced sedation or respiratory depression; review dose and monitor."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "Drug Interactions / Coumarin anticoagulants, Oral hypoglycemics, Phenytoin, Carbamazepine, Cyclosporine, Sirolimus, Tacrolimus, Theophylline, HMG-CoA reductase inhibitors, Fentanyl, Methadone, Benzodiazepines"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "Drug Interactions / Coumarin anticoagulants, Oral hypoglycemics, Phenytoin, Carbamazepine, Cyclosporine, Sirolimus, Tacrolimus, Theophylline, HMG-CoA reductase inhibitors, Fentanyl, Methadone, Benzodiazepines"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Additional clinically relevant actions",
+      "assertions": [
+        "Rifampin lowers fluconazole exposure and may require a clinical dose change; rifabutin exposure/toxicity can increase. Review exact current adjustment requirements for ibrutinib, ivacaftor combinations, lurasidone, tofacitinib and tolvaptan. Calcium-channel blockers, NSAIDs, tricyclics, vinca alkaloids, cyclophosphamide, HIV therapies and vitamin A also need interaction review. Stopping fluconazole after chronic prednisone can precipitate adrenal insufficiency. This focused list is not a complete interaction checker."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "Drug Interactions / Rifampin, Rifabutin, Ibrutinib, Ivacaftor, Lurasidone, Tofacitinib, Tolvaptan, Calcium channel blockers, NSAIDs, Amitriptyline, Vinca alkaloids, Cyclophosphamide, Saquinavir, Zidovudine, Vitamin A, Prednisone"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pregnancy",
+      "assertions": [
+        "Labels advise avoiding use in pregnancy except severe/potentially life-threatening infection when benefit outweighs fetal risk. Prolonged 400–800 mg/day first-trimester exposure has a reported congenital-anomaly pattern; observational studies also suggest miscarriage/anomaly risk with single/repeated 150 mg. Consider effective contraception for high-dose treatment through approximately one week after the last dose. CDC recommends seven-day topical azoles for pregnancy-associated VVC and advises against oral fluconazole."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "WARNINGS / Fetal harm",
+            "PRECAUTIONS / Pregnancy"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "WARNINGS / Fetal harm",
+            "PRECAUTIONS / Pregnancy"
+          ]
+        },
+        {
+          "source_id": "cdc",
+          "sections": [
+            "Pregnancy"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Lactation",
+      "assertions": [
+        "Fluconazole enters milk after a single 150-mg dose; the oral label lacks repeated/high-dose milk-level data. A maternal treatment survey reported no serious infant reactions, but this does not prove universal safety. Assess infant age/health, dose/course and maternal need; labels advise caution while nursing."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "PRECAUTIONS / Nursing Mothers"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "PRECAUTIONS / Nursing Mothers"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pediatric and geriatric use",
+      "assertions": [
+        "Oropharyngeal evidence includes age 6 months–13 years; other pediatric uses rely partly on adult efficacy and small pediatric/PK studies. Neonatal systemic and ECMO doses are explicitly different above. Prophylaxis in premature infants below 750 g has not established safety/effectiveness. Older adults require dose selection by kidney function and review of comorbidity/interactions rather than age alone."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "Pediatric Use",
+            "Geriatric Use",
+            "DOSAGE AND ADMINISTRATION"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "Pediatric Use",
+            "Geriatric Use",
+            "DOSAGE AND ADMINISTRATION"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Renal and hepatic considerations",
+      "assertions": [
+        "Repeated-treatment renal reduction is essential because elimination is primarily renal. Renal impairment in children requires specialist adjustment; the label advises paralleling adult reductions without establishing a universal pediatric-CRRT regimen. Use caution in liver dysfunction, follow abnormal tests and discontinue attributable clinical injury. No fixed hepatic percentage reduction is established."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "DOSAGE AND ADMINISTRATION / Renal impairment",
+            "WARNINGS / Hepatic injury",
+            "PRECAUTIONS"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "DOSAGE AND ADMINISTRATION / Renal impairment",
+            "WARNINGS / Hepatic injury",
+            "PRECAUTIONS"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Mechanism and resistance",
+      "assertions": [
+        "Inhibition of fungal cytochrome-P450-dependent lanosterol demethylation impairs ergosterol synthesis and membrane function. Resistance can involve target changes, altered sterol pathways or efflux; species and susceptibility matter. Activity cannot be assumed against molds or resistant Candida."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "Microbiology / Mechanism, Resistance, Antimicrobial Activity"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "Microbiology / Mechanism, Resistance, Antimicrobial Activity"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Pharmacokinetics",
+      "assertions": [
+        "Oral bioavailability exceeds 90%; food does not meaningfully alter absorption. Fluconazole distributes widely, including CSF, and has low protein binding. Adult elimination half-life is approximately 30 hours, with most drug eliminated unchanged in urine. Kidney impairment prolongs exposure; neonatal and ECMO pharmacokinetics differ, supporting specific loading and maintenance schedules."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "CLINICAL PHARMACOLOGY / Pharmacokinetics and Metabolism",
+            "Pharmacokinetics in Pediatric Patients"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "CLINICAL PHARMACOLOGY / Pharmacokinetics and Metabolism",
+            "Pharmacokinetics in Pediatric Patients"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Monitoring",
+      "assertions": [
+        "Verify infection/site/species, renal function, pregnancy possibility and interactions. Reassess response and course endpoints; monitor liver tests when abnormalities or risk warrant, and ECG/electrolytes when QT risk warrants. Follow glucose, INR or drug levels for affected co-medications. Invasive disease requires its own culture/source-control and specialist monitoring plan; there is no universal lab interval for every single dose."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "INDICATIONS AND USAGE",
+            "WARNINGS",
+            "PRECAUTIONS",
+            "DOSAGE AND ADMINISTRATION"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "INDICATIONS AND USAGE",
+            "WARNINGS",
+            "PRECAUTIONS",
+            "DOSAGE AND ADMINISTRATION"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Patient counseling",
+      "assertions": [
+        "Follow the indication-specific regimen; measure the correct suspension concentration and shake before doses. Report severe rash, facial swelling/breathing difficulty, jaundice/dark urine, syncope/palpitations or persistent infection promptly. Discuss pregnancy and breastfeeding before treatment. Review every prescription, OTC and herbal medicine; interactions can persist after the course. Dizziness/seizures can impair driving."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "Patient information",
+            "WARNINGS",
+            "PRECAUTIONS"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Representative products",
+      "assertions": [
+        "Pfizer Diflucan 150 mg is a pink oval tablet marked DIFLUCAN/150 and ROERIG, single-dose blister NDC 0049-3500-79. Oral suspension powder: 350 mg/bottle NDC 0049-3440-19 or 1,400 mg/bottle NDC 0049-3450-19. Baxter Intravia 200 mg/100 mL sodium-chloride injection, carton of ten, is NDC 0338-6046-48. Manufacturer/package identities vary; verify the dispensed product."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "HOW SUPPLIED"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "HOW SUPPLIED"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Dosage forms and strengths",
+      "assertions": [
+        "Diflucan tablets: 50, 100, 150 and 200 mg. Reconstituted oral suspension: 10 or 40 mg/mL, 35 mL per bottle. Covered Baxter IV infusion: 2 mg/mL, 200 mg/100 mL or 400 mg/200 mL in sodium chloride. Different diluents/manufacturers require their own container instructions."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "DESCRIPTION",
+            "HOW SUPPLIED",
+            "Directions for Mixing the Oral Suspension"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "DESCRIPTION",
+            "HOW SUPPLIED",
+            "Directions for Mixing the Oral Suspension"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Storage and handling",
+      "assertions": [
+        "Diflucan tablets/dry powder: below 30°C. Reconstituted suspension: 5–30°C, protect from freezing, discard after two weeks. Baxter IV: 5–25°C; avoid excessive heat/freezing, retain protective overwrap until use and inspect for leaks, seal damage, cloudiness or precipitation. Do not add supplementary medication or connect containers in series; follow sterile container instructions."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "Storage",
+            "Directions for Mixing the Oral Suspension",
+            "Directions for Use",
+            "Administration"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "Storage",
+            "Directions for Mixing the Oral Suspension",
+            "Directions for Use",
+            "Administration"
+          ]
+        }
+      ]
+    }
+  ],
+  "material_errors": [],
+  "gaps": [],
+  "limitations": [
+    "Detailed organ-site invasive regimens, neutropenic candidemia, neonatal prophylaxis protocols, full cryptococcal consolidation/maintenance/ART/ICP management, and CRRT dosing are outside this focused reference and require the cited specialist guidance.",
+    "Legacy label cryptococcal and systemic regimens are explicitly distinguished from current clinical guidance; they are not presented as preferred modern induction.",
+    "This is not an exhaustive interaction catalog; exact current co-medication labeling is required for dose adjustment."
+  ],
+  "regulatory_identity": [
+    {
+      "source_file": "diflucan",
+      "label_approval_records": [
+        {
+          "application": {
+            "extension": "NDA019949",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "NDA"
+          }
+        },
+        {
+          "application": {
+            "extension": "NDA019949",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "NDA"
+          }
+        },
+        {
+          "application": {
+            "extension": "NDA019949",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "NDA"
+          }
+        },
+        {
+          "application": {
+            "extension": "NDA019949",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "NDA"
+          }
+        },
+        {
+          "application": {
+            "extension": "NDA020090",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "NDA"
+          }
+        },
+        {
+          "application": {
+            "extension": "NDA020090",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "NDA"
+          }
+        }
+      ]
+    },
+    {
+      "source_file": "fluconazole-iv",
+      "label_approval_records": [
+        {
+          "application": {
+            "extension": "ANDA076766",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73584",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "ANDA"
+          }
+        },
+        {
+          "application": {
+            "extension": "ANDA076766",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73584",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "ANDA"
+          }
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "schema": "validateMonograph: zero errors",
+    "blueprint_sections": "All eight exact IDs/titles/order; four Safety core cards; three Product core cards; three hero tuples.",
+    "mobile_content": "Two-column prose tables with short spaced headings; rendered QA delegated to release owner.",
+    "review_method": "Current public full product SPL clinical sections read; original summaries mapped to label sections; full public guidance sections reviewed where cited. No paywalled source access claimed."
+  },
+  "source_discrepancies": [
+    {
+      "issue": "Legacy label cryptococcal monotherapy regimens differ from current HIV induction guidelines.",
+      "resolution": "Label numbers explicitly identified as label descriptions; not presented as modern preferred induction. Current NIH preferred regimen and phase-specific specialist requirement separately cited."
+    },
+    {
+      "issue": "Legacy label systemic Candida dose evidence limited; contemporary IDSA candidemia recommendations provide selected-patient loading and maintenance.",
+      "resolution": "Separate guideline card with susceptibility, stability and clearance requirements; not a universal systemic regimen."
+    },
+    {
+      "issue": "Renal table loading range 50–400 mg differs from higher current invasive loading doses.",
+      "resolution": "Range accurately attributed to label renal table; high-dose invasive loading requires protocol reconciliation, no blanket halving."
+    }
+  ]
+}

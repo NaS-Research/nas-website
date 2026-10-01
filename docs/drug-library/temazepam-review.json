@@ -1,0 +1,889 @@
+{
+  "drug": "temazepam",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Current full Restoril U.S. oral prescribing information/Medication Guide, actual package identity and targeted current full public NLM LactMed entry.",
+  "blueprint": {
+    "sections": [
+      [
+        "indications",
+        "Indications"
+      ],
+      [
+        "dosage",
+        "Dosage and administration"
+      ],
+      [
+        "safety",
+        "Safety"
+      ],
+      [
+        "interactions",
+        "Drug interactions"
+      ],
+      [
+        "populations",
+        "Use in specific populations"
+      ],
+      [
+        "pharmacology",
+        "Clinical pharmacology"
+      ],
+      [
+        "practice",
+        "Monitoring and counseling"
+      ],
+      [
+        "product",
+        "Product identification"
+      ]
+    ],
+    "essential_safety": true,
+    "hero_facts": 3,
+    "APAP_modified": false
+  },
+  "sources": [
+    {
+      "id": "label",
+      "title": "Restoril \u00b7 Current full prescribing information",
+      "publisher": "SpecGx / DailyMed",
+      "note": "Current SPL 25 effective June 9, 2026; product/Medication Guide footer 03/2026. Adult oral capsules 7.5/15/22.5/30 mg.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bc56f7fd-1aaf-48ff-8aa7-d467e59e1015"
+    },
+    {
+      "id": "lactation",
+      "title": "Temazepam \u00b7 LactMed",
+      "publisher": "NLM / NICHD",
+      "note": "Revised September 15, 2024; full public web entry read. Direct local download 403; retained access note only.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK501256/"
+    }
+  ],
+  "source_records": [
+    {
+      "id": "label",
+      "local_snapshot": "/tmp/nas-drug-sources/temazepam-restoril.xml",
+      "label_revision": "HOW SUPPLIED/Medication Guide03/2026; current SPL effective20260609",
+      "set_id": "bc56f7fd-1aaf-48ff-8aa7-d467e59e1015",
+      "spl_version": "25",
+      "spl_effective_time": "20260609",
+      "dailymed_published_date": "2026-06-15",
+      "sha256": "3e137f5aedc41ed26b0517fcd218531604bbdb460d3862624c4bf529ca70e6c2",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-18-thyroid-metformin/temazepam-restoril.xml"
+    },
+    {
+      "id": "lactation",
+      "local_snapshot": "/tmp/nas-drug-sources/temazepam-lactmed-access-note.txt",
+      "revision": "09/15/2024",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK501256/",
+      "sha256": "0228566ba4db65a8eea2a58b1d45eceba28a339a5cea3517fcaade72bb7b90ed",
+      "review_method": "Full public NLM web entry read through summary, drug/infant levels, effects and source references; direct local HTTPS request403. No full local LactMed snapshot or inaccessible full AASM guideline review claimed.",
+      "local_snapshot_kind": "Access provenance note only",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-18-thyroid-metformin/temazepam-lactmed-access-note.txt"
+    }
+  ],
+  "assertion_map": [
+    {
+      "section": "indications",
+      "card": "Labeled indication and status",
+      "assertions": [
+        "Restoril is labeled for short-term insomnia, generally 7\u201310 days, in adults; it can address difficulty initiating sleep and frequent nighttime awakening. It is a prescription Schedule IV controlled substance marketed under NDA018163. Trials supporting the label lasted 2 weeks; that is not an approval of indefinite therapy or evidence of established long-term safety."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "INDICATIONS AND USAGE; Medication Guide; Controlled Substance; Product marketing"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Diagnostic and treatment boundaries",
+      "assertions": [
+        "Evaluate physical/psychiatric causes before treating symptoms. If insomnia does not improve after 7\u201310 days, or new behavior/thinking changes develop, reassess rather than automatically raise the dose or renew nightly treatment. This reference does not supply a pediatric, anxiety or seizure regimen. A full current insomnia guideline was not available for review, so no guideline-specific treatment ranking is asserted."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "WARNINGS, Dependence and Withdrawal; Pediatric Use; INDICATIONS"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Adult oral dosing",
+      "assertions": [
+        "The usual dose is 15 mg before retiring. Some adults need only 7.5 mg; selected patients may require 30 mg. For transient insomnia, 7.5 mg may improve sleep latency. Take only the prescribed bedtime dose, immediately before getting into bed, when a full night\u2019s sleep is possible. The 30 mg higher label dose is not a target for every patient. No middle-of-the-night supplemental or repeat-dose regimen is supplied."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "DOSAGE AND ADMINISTRATION; Medication Guide"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Population/context",
+          "Label instruction"
+        ],
+        "rows": [
+          [
+            "Usual adult dose",
+            "15 mg before retiring"
+          ],
+          [
+            "Some adults/transient insomnia",
+            "7.5 mg may suffice"
+          ],
+          [
+            "Selected adults requiring higher dose",
+            "30 mg if prescribed after assessment"
+          ],
+          [
+            "Older or debilitated patient",
+            "Start 7.5 mg; assess individual response"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Older adults, organ disease and opioid exposure",
+      "assertions": [
+        "Start older/debilitated patients at 7.5 mg because larger doses increase oversedation, confusion, dizziness and ataxia. Renal/hepatic impairment and chronic pulmonary insufficiency require caution, but this label does not supply a numerical CrCl/eGFR-based, hepatic-category or dialysis adjustment. If an opioid is already used, initial temazepam should be lower than otherwise indicated and individualized; the label does not define a universal co-prescribing mg dose."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "PRECAUTIONS, General/Laboratory Tests; WARNINGS, Opioids; Geriatric Use"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Duration and taper",
+      "assertions": [
+        "Prescribe a short course, usually 7\u201310 days. Continued use can cause dependence; discontinuation/reduction requires an individualized gradual taper. If withdrawal occurs, the clinician may pause the taper or return to the preceding taper level, then decrease more slowly. Do not invent a fixed percentage taper for every patient or confuse dependence with addiction."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "INDICATIONS; DOSAGE, Discontinuation; WARNINGS; Dependence"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Opioid co-use can cause profound sedation, respiratory depression, coma or death; reserve combined treatment for inadequate alternatives, minimize dose/duration and monitor closely. Assess misuse/addiction risk before and during treatment, even at prescribed doses. Continued exposure can cause dependence; rapid reduction or sudden discontinuation can cause severe withdrawal, including seizures and protracted symptoms.",
+        "Sleep-driving and other complex behaviors can occur at therapeutic doses, with amnesia; alcohol and other sedatives increase risk. Report these immediately so the clinician can assess stopping/tapering safely. New agitation, hallucinations, worsening depression or suicidality needs urgent evaluation. Drowsiness and reduced consciousness increase fall risk, particularly in older adults. Tongue/throat swelling or impaired breathing needs emergency care."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "BOXED WARNING; WARNINGS; PRECAUTIONS"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "The current Medication Guide says not to take Restoril with allergy to temazepam or its ingredients; patients with treatment-associated angioedema must not be rechallenged. The retained full prescribing information has no separate CONTRAINDICATIONS section despite a dangling reference to one. No removed historical pregnancy contraindication is imported: current pregnancy counseling addresses fetal/neonatal risks and individualized review. This labeling gap is documented in the audit."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Medication Guide, Do not take; WARNINGS, Anaphylaxis; full label/Pregnancy"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "The current label has a boxed warning covering opioid co-use, abuse/misuse/addiction, and physical dependence/withdrawal. Respiratory depression can be fatal, and abrupt withdrawal can be life-threatening. Complex sleep behaviors are discussed in warnings; do not confuse their placement with the boxed-warning scope."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "BOXED WARNING; WARNINGS"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Common labeled trial effects include drowsiness, headache, fatigue, nervousness, dizziness and nausea. Residual next-day sedation, confusion, impaired coordination and amnesia can occur; individual safety cannot be inferred from the label\u2019s older efficacy-trial claim of minimal hangover. Rare serious allergic or paradoxical behavioral reactions require urgent assessment. Depression/suicidal thinking and falls need particular attention."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "ADVERSE REACTIONS; WARNINGS; Medication Guide"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Opioids and other CNS depressants",
+      "assertions": [
+        "Opioids act at different respiratory-control receptors and can markedly worsen benzodiazepine respiratory depression. Alcohol, sedative antihistamines, other hypnotics/anxiolytics, antipsychotics, antidepressants, anticonvulsants and anesthetics may add CNS depression. Reconcile prescription/OTC medicines and planned anesthesia; do not independently combine sleep aids."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Drug Interactions; BOXED WARNING; Medication Guide"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Specific label findings and reversal",
+      "assertions": [
+        "The label reports no apparent PK change with cimetidine used according to its labeling; that is not proof of no interaction with every inhibitor. Diphenhydramine can have additive/synergistic effects; the label\u2019s isolated pregnancy case report does not establish causality. Flumazenil can precipitate seizures/withdrawal, especially with chronic dependence or mixed overdose; reversal requires emergency clinical judgment and airway/supportive care."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Drug Interactions; PRECAUTIONS General; OVERDOSAGE"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric use",
+      "assertions": [
+        "Pediatric safety/effectiveness are not established. Older adults require an initial 7.5 mg dose and close assessment because sedation, confusion, ataxia and falls increase with dose; the trials had limited older-patient representation. Age alone does not remove the need to assess other sedatives, organ function and respiratory disease."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Pediatric Use; Geriatric Use; PRECAUTIONS General"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal, hepatic, pulmonary and psychiatric disease",
+      "assertions": [
+        "Use caution in kidney/liver impairment and chronic pulmonary insufficiency; the selected label supplies no validated organ-specific numerical schedule. Severe or latent depression requires protective assessment for suicidal tendencies; new behavioral symptoms warrant immediate evaluation. Conjugation-based metabolism does not make severe liver disease or combined sedative exposure automatically safe."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "PRECAUTIONS General/Laboratory Tests; WARNINGS; Clinical Pharmacology"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy",
+      "assertions": [
+        "Current observational benzodiazepine data do not show a clear major-birth-defect association, but this does not establish absence of risk. Late-pregnancy exposure can cause neonatal respiratory depression, hypotonia, poor feeding and withdrawal; monitor exposed newborns accordingly. Discuss pregnancy plans/exposure promptly and consider the pregnancy registry. Do not abruptly stop dependent therapy without a clinician-managed plan."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Pregnancy; Neonatal Sedation and Withdrawal; Medication Guide; Dependence"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Breastfeeding",
+      "assertions": [
+        "Current labeling acknowledges milk transfer and advises monitoring for infant sedation, poor feeding and poor weight gain; milk-production effects are unknown. LactMed reports generally low milk exposure and small reassuring studies, while recommending the same infant monitoring. These limited observations do not establish safety for every dose, preterm infant or sedative combination. Individualize treatment and feeding with the clinical team."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Nursing Mothers; Medication Guide"
+        },
+        {
+          "id": "lactation",
+          "sections": "Summary; Drug Levels; Infant Effects; Effects on Lactation"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and effects",
+      "assertions": [
+        "Benzodiazepines interact at GABAA sites and depress CNS activity. The hypnotic effect can improve sleep initiation/maintenance but also impair memory, coordination and consciousness. Tolerance may develop during continued use, while little tolerance develops to some amnestic/cognitive effects; apparent tolerance is not a reason for unsupervised escalation."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Drug Interactions; Controlled Trials; Dependence/Tolerance"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Disposition",
+      "assertions": [
+        "Temazepam is well absorbed with minimal first-pass metabolism; plasma protein binding is about 96%. In label studies, terminal half-life ranged 3.5\u201318.4 hours, mean 8.8 hours. Conjugation produces inactive metabolites, with 80\u201390% of a dose recovered in urine. A studied 30 mg capsule reached peak levels around 1.5 hours; that is not a guarantee of immediate sleep or no next-day impairment."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Clinical Pharmacology, Pharmacokinetics/Bioavailability"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Formulation and clinical variability",
+      "assertions": [
+        "The reviewed 7.5/15/22.5/30 mg products are oral capsules. No injectable, oral-liquid or ER conversion is supplied. Study-specific PK and older sleep-laboratory results do not establish equal risk in frail patients, renal/hepatic disease, opioid combinations or sleep-disordered breathing; apply the labeled clinical precautions."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "DESCRIPTION; Clinical Pharmacology; PRECAUTIONS"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": [
+        "Before prescribing, evaluate insomnia causes, psychiatric/substance-use history, sedating medicines, pulmonary disease and organ function. Follow sleep response, next-day alertness, falls, breathing changes, complex behaviors and misuse/dependence. Reassess unresolved insomnia after 7\u201310 days. The label reports possible benzodiazepine blood-count/liver-test abnormalities but does not mandate one universal lab schedule for every brief course."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "WARNINGS; PRECAUTIONS, Laboratory Tests; Medication Guide"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling",
+      "assertions": [
+        "Take immediately before bed only with a full night available, and never exceed the prescription. Avoid alcohol and unapproved sedating combinations; do not drive or perform hazardous tasks until fully awake and the response is known. Read the Medication Guide. Do not share; secure the controlled medicine away from children/others and discuss disposal of unused capsules."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Medication Guide; Information for Patients; Controlled Substance"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Urgent assessment and withdrawal",
+      "assertions": [
+        "Get emergency care for slowed/stopped breathing, inability to awaken, severe allergic swelling, seizures or overdose. Contact the clinician immediately after sleep-driving or alarming behavioral changes. Do not abruptly stop or rapidly reduce continued use; withdrawal management and any flumazenil decision require a clinical plan. The printed overdose telephone number has a source error and is not reproduced here."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "OVERDOSAGE; WARNINGS; Medication Guide"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Selected Restoril 15 mg capsules have a maroon cap marked RESTORIL 15 mg in white and a pink body marked FOR SLEEP/registered symbol in red. A100-capsule bottle is NDC 0406-9916-01. SpecGx is the label packager/manufacturer-for entity; current package panels display Par Health. Other strengths/generics have different appearances and NDCs."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "HOW SUPPLIED; Package panel; Product information"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "The reviewed oral capsule strengths are 7.5, 15, 22.5 and 30 mg temazepam. They contain lactose, gelatin and formulation-dependent dyes/other excipients; verify the exact dispensed product for allergy concerns. No claim is made that the 22.5 mg capsule is a standard starting dose or that other dosage forms are interchangeable."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "DESCRIPTION; Inactive Ingredients; HOW SUPPLIED; DOSAGE"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Store 20\u201325\u00b0C in a well-closed, light-resistant container with child-resistant closure. Keep secure and out of children\u2019s reach. Dispense/read the Medication Guide; retain the original label to verify strength and directions. Follow the actual pharmacy/product instructions for disposal."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "HOW SUPPLIED; Medication Guide; Information for Patients"
+        }
+      ]
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Labeled indication and status",
+      "assertions": [
+        "Restoril is labeled for short-term insomnia, generally 7\u201310 days, in adults; it can address difficulty initiating sleep and frequent nighttime awakening. It is a prescription Schedule IV controlled substance marketed under NDA018163. Trials supporting the label lasted 2 weeks; that is not an approval of indefinite therapy or evidence of established long-term safety."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "INDICATIONS AND USAGE; Medication Guide; Controlled Substance; Product marketing"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Diagnostic and treatment boundaries",
+      "assertions": [
+        "Evaluate physical/psychiatric causes before treating symptoms. If insomnia does not improve after 7\u201310 days, or new behavior/thinking changes develop, reassess rather than automatically raise the dose or renew nightly treatment. This reference does not supply a pediatric, anxiety or seizure regimen. A full current insomnia guideline was not available for review, so no guideline-specific treatment ranking is asserted."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "WARNINGS, Dependence and Withdrawal; Pediatric Use; INDICATIONS"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Adult oral dosing",
+      "assertions": [
+        "The usual dose is 15 mg before retiring. Some adults need only 7.5 mg; selected patients may require 30 mg. For transient insomnia, 7.5 mg may improve sleep latency. Take only the prescribed bedtime dose, immediately before getting into bed, when a full night\u2019s sleep is possible. The 30 mg higher label dose is not a target for every patient. No middle-of-the-night supplemental or repeat-dose regimen is supplied."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "DOSAGE AND ADMINISTRATION; Medication Guide"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Population/context",
+          "Label instruction"
+        ],
+        "rows": [
+          [
+            "Usual adult dose",
+            "15 mg before retiring"
+          ],
+          [
+            "Some adults/transient insomnia",
+            "7.5 mg may suffice"
+          ],
+          [
+            "Selected adults requiring higher dose",
+            "30 mg if prescribed after assessment"
+          ],
+          [
+            "Older or debilitated patient",
+            "Start 7.5 mg; assess individual response"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Older adults, organ disease and opioid exposure",
+      "assertions": [
+        "Start older/debilitated patients at 7.5 mg because larger doses increase oversedation, confusion, dizziness and ataxia. Renal/hepatic impairment and chronic pulmonary insufficiency require caution, but this label does not supply a numerical CrCl/eGFR-based, hepatic-category or dialysis adjustment. If an opioid is already used, initial temazepam should be lower than otherwise indicated and individualized; the label does not define a universal co-prescribing mg dose."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "PRECAUTIONS, General/Laboratory Tests; WARNINGS, Opioids; Geriatric Use"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Duration and taper",
+      "assertions": [
+        "Prescribe a short course, usually 7\u201310 days. Continued use can cause dependence; discontinuation/reduction requires an individualized gradual taper. If withdrawal occurs, the clinician may pause the taper or return to the preceding taper level, then decrease more slowly. Do not invent a fixed percentage taper for every patient or confuse dependence with addiction."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "INDICATIONS; DOSAGE, Discontinuation; WARNINGS; Dependence"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Opioid co-use can cause profound sedation, respiratory depression, coma or death; reserve combined treatment for inadequate alternatives, minimize dose/duration and monitor closely. Assess misuse/addiction risk before and during treatment, even at prescribed doses. Continued exposure can cause dependence; rapid reduction or sudden discontinuation can cause severe withdrawal, including seizures and protracted symptoms.",
+        "Sleep-driving and other complex behaviors can occur at therapeutic doses, with amnesia; alcohol and other sedatives increase risk. Report these immediately so the clinician can assess stopping/tapering safely. New agitation, hallucinations, worsening depression or suicidality needs urgent evaluation. Drowsiness and reduced consciousness increase fall risk, particularly in older adults. Tongue/throat swelling or impaired breathing needs emergency care."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "BOXED WARNING; WARNINGS; PRECAUTIONS"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "The current Medication Guide says not to take Restoril with allergy to temazepam or its ingredients; patients with treatment-associated angioedema must not be rechallenged. The retained full prescribing information has no separate CONTRAINDICATIONS section despite a dangling reference to one. No removed historical pregnancy contraindication is imported: current pregnancy counseling addresses fetal/neonatal risks and individualized review. This labeling gap is documented in the audit."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Medication Guide, Do not take; WARNINGS, Anaphylaxis; full label/Pregnancy"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "The current label has a boxed warning covering opioid co-use, abuse/misuse/addiction, and physical dependence/withdrawal. Respiratory depression can be fatal, and abrupt withdrawal can be life-threatening. Complex sleep behaviors are discussed in warnings; do not confuse their placement with the boxed-warning scope."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "BOXED WARNING; WARNINGS"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Common labeled trial effects include drowsiness, headache, fatigue, nervousness, dizziness and nausea. Residual next-day sedation, confusion, impaired coordination and amnesia can occur; individual safety cannot be inferred from the label\u2019s older efficacy-trial claim of minimal hangover. Rare serious allergic or paradoxical behavioral reactions require urgent assessment. Depression/suicidal thinking and falls need particular attention."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "ADVERSE REACTIONS; WARNINGS; Medication Guide"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Opioids and other CNS depressants",
+      "assertions": [
+        "Opioids act at different respiratory-control receptors and can markedly worsen benzodiazepine respiratory depression. Alcohol, sedative antihistamines, other hypnotics/anxiolytics, antipsychotics, antidepressants, anticonvulsants and anesthetics may add CNS depression. Reconcile prescription/OTC medicines and planned anesthesia; do not independently combine sleep aids."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Drug Interactions; BOXED WARNING; Medication Guide"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Specific label findings and reversal",
+      "assertions": [
+        "The label reports no apparent PK change with cimetidine used according to its labeling; that is not proof of no interaction with every inhibitor. Diphenhydramine can have additive/synergistic effects; the label\u2019s isolated pregnancy case report does not establish causality. Flumazenil can precipitate seizures/withdrawal, especially with chronic dependence or mixed overdose; reversal requires emergency clinical judgment and airway/supportive care."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Drug Interactions; PRECAUTIONS General; OVERDOSAGE"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric use",
+      "assertions": [
+        "Pediatric safety/effectiveness are not established. Older adults require an initial 7.5 mg dose and close assessment because sedation, confusion, ataxia and falls increase with dose; the trials had limited older-patient representation. Age alone does not remove the need to assess other sedatives, organ function and respiratory disease."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Pediatric Use; Geriatric Use; PRECAUTIONS General"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal, hepatic, pulmonary and psychiatric disease",
+      "assertions": [
+        "Use caution in kidney/liver impairment and chronic pulmonary insufficiency; the selected label supplies no validated organ-specific numerical schedule. Severe or latent depression requires protective assessment for suicidal tendencies; new behavioral symptoms warrant immediate evaluation. Conjugation-based metabolism does not make severe liver disease or combined sedative exposure automatically safe."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "PRECAUTIONS General/Laboratory Tests; WARNINGS; Clinical Pharmacology"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy",
+      "assertions": [
+        "Current observational benzodiazepine data do not show a clear major-birth-defect association, but this does not establish absence of risk. Late-pregnancy exposure can cause neonatal respiratory depression, hypotonia, poor feeding and withdrawal; monitor exposed newborns accordingly. Discuss pregnancy plans/exposure promptly and consider the pregnancy registry. Do not abruptly stop dependent therapy without a clinician-managed plan."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Pregnancy; Neonatal Sedation and Withdrawal; Medication Guide; Dependence"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Breastfeeding",
+      "assertions": [
+        "Current labeling acknowledges milk transfer and advises monitoring for infant sedation, poor feeding and poor weight gain; milk-production effects are unknown. LactMed reports generally low milk exposure and small reassuring studies, while recommending the same infant monitoring. These limited observations do not establish safety for every dose, preterm infant or sedative combination. Individualize treatment and feeding with the clinical team."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Nursing Mothers; Medication Guide"
+        },
+        {
+          "id": "lactation",
+          "sections": "Summary; Drug Levels; Infant Effects; Effects on Lactation"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and effects",
+      "assertions": [
+        "Benzodiazepines interact at GABAA sites and depress CNS activity. The hypnotic effect can improve sleep initiation/maintenance but also impair memory, coordination and consciousness. Tolerance may develop during continued use, while little tolerance develops to some amnestic/cognitive effects; apparent tolerance is not a reason for unsupervised escalation."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Drug Interactions; Controlled Trials; Dependence/Tolerance"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Disposition",
+      "assertions": [
+        "Temazepam is well absorbed with minimal first-pass metabolism; plasma protein binding is about 96%. In label studies, terminal half-life ranged 3.5\u201318.4 hours, mean 8.8 hours. Conjugation produces inactive metabolites, with 80\u201390% of a dose recovered in urine. A studied 30 mg capsule reached peak levels around 1.5 hours; that is not a guarantee of immediate sleep or no next-day impairment."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Clinical Pharmacology, Pharmacokinetics/Bioavailability"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Formulation and clinical variability",
+      "assertions": [
+        "The reviewed 7.5/15/22.5/30 mg products are oral capsules. No injectable, oral-liquid or ER conversion is supplied. Study-specific PK and older sleep-laboratory results do not establish equal risk in frail patients, renal/hepatic disease, opioid combinations or sleep-disordered breathing; apply the labeled clinical precautions."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "DESCRIPTION; Clinical Pharmacology; PRECAUTIONS"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": [
+        "Before prescribing, evaluate insomnia causes, psychiatric/substance-use history, sedating medicines, pulmonary disease and organ function. Follow sleep response, next-day alertness, falls, breathing changes, complex behaviors and misuse/dependence. Reassess unresolved insomnia after 7\u201310 days. The label reports possible benzodiazepine blood-count/liver-test abnormalities but does not mandate one universal lab schedule for every brief course."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "WARNINGS; PRECAUTIONS, Laboratory Tests; Medication Guide"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling",
+      "assertions": [
+        "Take immediately before bed only with a full night available, and never exceed the prescription. Avoid alcohol and unapproved sedating combinations; do not drive or perform hazardous tasks until fully awake and the response is known. Read the Medication Guide. Do not share; secure the controlled medicine away from children/others and discuss disposal of unused capsules."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Medication Guide; Information for Patients; Controlled Substance"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Urgent assessment and withdrawal",
+      "assertions": [
+        "Get emergency care for slowed/stopped breathing, inability to awaken, severe allergic swelling, seizures or overdose. Contact the clinician immediately after sleep-driving or alarming behavioral changes. Do not abruptly stop or rapidly reduce continued use; withdrawal management and any flumazenil decision require a clinical plan. The printed overdose telephone number has a source error and is not reproduced here."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "OVERDOSAGE; WARNINGS; Medication Guide"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Selected Restoril 15 mg capsules have a maroon cap marked RESTORIL 15 mg in white and a pink body marked FOR SLEEP/registered symbol in red. A100-capsule bottle is NDC 0406-9916-01. SpecGx is the label packager/manufacturer-for entity; current package panels display Par Health. Other strengths/generics have different appearances and NDCs."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "HOW SUPPLIED; Package panel; Product information"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "The reviewed oral capsule strengths are 7.5, 15, 22.5 and 30 mg temazepam. They contain lactose, gelatin and formulation-dependent dyes/other excipients; verify the exact dispensed product for allergy concerns. No claim is made that the 22.5 mg capsule is a standard starting dose or that other dosage forms are interchangeable."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "DESCRIPTION; Inactive Ingredients; HOW SUPPLIED; DOSAGE"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Store 20\u201325\u00b0C in a well-closed, light-resistant container with child-resistant closure. Keep secure and out of children\u2019s reach. Dispense/read the Medication Guide; retain the original label to verify strength and directions. Follow the actual pharmacy/product instructions for disposal."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "HOW SUPPLIED; Medication Guide; Information for Patients"
+        }
+      ]
+    }
+  ],
+  "hero_assertions": {
+    "essential": {
+      "title": "Sedation and withdrawal can be dangerous.",
+      "text": "Opioids, alcohol and other sedatives can cause fatal respiratory depression with temazepam. Continued therapy can cause dependence; sudden discontinuation or rapid reduction can trigger life-threatening withdrawal.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "facts": [
+      [
+        "Class",
+        "Benzodiazepine hypnotic \u00b7 Schedule IV"
+      ],
+      [
+        "Usual adult bedtime dose",
+        "15 mg; older/debilitated start 7.5 mg"
+      ],
+      [
+        "Labeled course",
+        "Generally 7\u201310 days"
+      ]
+    ],
+    "sources": [
+      "label",
+      "lactation"
+    ]
+  },
+  "section_assertions": [
+    {
+      "section": "indications",
+      "summary": "Prescription benzodiazepine hypnotic for short-term adult insomnia.",
+      "takeaway": "Persistent insomnia after 7\u201310 days needs diagnostic reassessment.",
+      "sources": [
+        "label"
+      ]
+    },
+    {
+      "section": "dosage",
+      "summary": "Use the lowest effective bedtime dose for the prescribed short course.",
+      "takeaway": "Do not increase the dose independently or abruptly stop continued therapy.",
+      "sources": [
+        "label"
+      ]
+    },
+    {
+      "section": "safety",
+      "summary": "Respiratory depression, dependence, falls and behavioral effects require active review.",
+      "takeaway": "Opioids/alcohol increase danger; abrupt withdrawal can cause life-threatening seizures.",
+      "sources": [
+        "label"
+      ]
+    },
+    {
+      "section": "interactions",
+      "summary": "Other CNS depressants can amplify sedation and respiratory toxicity.",
+      "takeaway": "Do not add alcohol or another sleep aid without prescriber review.",
+      "sources": [
+        "label"
+      ]
+    },
+    {
+      "section": "populations",
+      "summary": "Age, breathing reserve and pregnancy/lactation alter the risk assessment.",
+      "takeaway": "There is no established pediatric insomnia regimen in this label.",
+      "sources": [
+        "label",
+        "lactation"
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "summary": "A benzodiazepine with GABA-associated CNS depression and conjugation metabolism.",
+      "takeaway": "The mean half-life does not predict a safe driving time for an individual.",
+      "sources": [
+        "label"
+      ]
+    },
+    {
+      "section": "practice",
+      "summary": "Monitor sleep benefit, sedation, breathing, behaviors and dependence risk.",
+      "takeaway": "Agree on the bedtime dose, short-course endpoint and discontinuation plan.",
+      "sources": [
+        "label"
+      ]
+    },
+    {
+      "section": "product",
+      "summary": "Verify manufacturer, capsule strength and original packaging.",
+      "takeaway": "Capsule appearance does not safely identify every generic temazepam product.",
+      "sources": [
+        "label"
+      ]
+    }
+  ],
+  "limitations": [
+    "Current full label lacks a separate contraindications section despite an obsolete dangling cross-reference; current Medication Guide allergy prohibition and angioedema no-rechallenge warning retained. Historical pregnancy contraindication not imported.",
+    "Current OVERDOSAGE section prints1-800-221-2222 as Poison Help; it is not published here. Emergency-care wording is used rather than silently propagate the source telephone error.",
+    "AASM primary full guideline request403; PMC full-text request CAPTCHA. No inaccessible full guideline review or drug-ranking assertion made.",
+    "LactMed full public web entry read; verified-TLS direct local download403. Archived access note is explicitly provenance only, not a falsely claimed full page.",
+    "No pediatric, organ-failure, injectable/ER conversion, fixed taper or indefinite-insomnia regimen is inferred."
+  ],
+  "unresolved_source_questions": [
+    {
+      "issue": "Current full Restoril PI has no standalone CONTRAINDICATIONS section despite General precaution cross-reference; overdose telephone is printed1-800-221-2222.",
+      "published_handling": "Medication Guide hypersensitivity restriction and angioedema no-rechallenge retained; no historical pregnancy contraindication inferred. Erroneous telephone number excluded from monograph; emergency-care advice retained.",
+      "material_published_error": false
+    }
+  ],
+  "validation": {
+    "schema": "Actual validateMonograph result: []; exact APAP eight sections, four core Safety cards, three Product cards and three hero tuples.",
+    "tests_build_lint": "Parent batch checks required",
+    "rendered_page": "Parent batch QA required"
+  },
+  "monograph_sha256": "7485c0713d7fc441f13182fb48422b5549d1537c486996c46d9bac69c6bad92c",
+  "source_archive": {
+    "directory": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-18-thyroid-metformin",
+    "checked": "2026-10-01",
+    "verified": "Selected full SPL XML/parsed sections, DailyMed metadata pages and NLM patient-page HTML/text copied with exact SHA256 verification. LactMed file records access provenance only, not a full-page snapshot. Existing divergent files preserved."
+  }
+}
