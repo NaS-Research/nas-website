@@ -8350,7 +8350,11 @@
         },
         {
           "slug": "oral-administration",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "latestScopedEvidence": "enteral-nutrition-broader-lefamulin-source-gap.json",
+          "wholeLessonVerified": false,
+          "sourceClosedBodies": 0,
+          "sourceClosedCheck": false
         },
         {
           "slug": "iv-preparation",
@@ -8374,8 +8378,19 @@
         }
       ],
       "questions": 168,
-      "status": "unreviewed",
-      "evidence": []
+      "status": "reviewing",
+      "evidence": [
+        "enteral-nutrition-broader-lefamulin-source-gap.json"
+      ],
+      "broaderEnteralOralSourceGap": {
+        "evidence": "enteral-nutrition-broader-lefamulin-source-gap.json",
+        "questionsReviewedPending": 17,
+        "sourceClosedQuestions": 0,
+        "sourceClosedBodies": 0,
+        "sourceClosedChecks": 0,
+        "wholeModuleVerified": false,
+        "retainedCodeUnchanged": true
+      }
     },
     {
       "slug": "fidaxomicin-pharmacology",
@@ -9841,7 +9856,14 @@
         },
         {
           "slug": "formulations-organ-function",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "latestScopedEvidence": "enteral-nutrition-broader-antifungal-formulations-review.json",
+          "verifiedBodyHeadings": [
+            "Build the food and pH plan around the formulation",
+            "Reject dose-for-dose substitution"
+          ],
+          "embeddedCheckVerified": true,
+          "wholeLessonVerified": false
         },
         {
           "slug": "interactions-electrophysiology",
@@ -9857,8 +9879,41 @@
         }
       ],
       "questions": 184,
-      "status": "unreviewed",
-      "evidence": []
+      "status": "reviewing",
+      "evidence": [
+        "enteral-nutrition-broader-antifungal-formulations-review.json"
+      ],
+      "broaderEnteralFormulationReview": {
+        "evidence": "enteral-nutrition-broader-antifungal-formulations-review.json",
+        "verifiedQuestionIds": [
+          "antifungal-foundations-113",
+          "antifungal-foundations-114",
+          "antifungal-foundations-115",
+          "antifungal-foundations-116",
+          "antifungal-foundations-126",
+          "antifungal-foundations-128",
+          "antifungal-foundations-179"
+        ],
+        "correctedQuestionIds": [
+          "antifungal-foundations-113",
+          "antifungal-foundations-114",
+          "antifungal-foundations-115",
+          "antifungal-foundations-116",
+          "antifungal-foundations-126",
+          "antifungal-foundations-128"
+        ],
+        "verifiedBodyHeadingsByLesson": {
+          "formulations-organ-function": [
+            "Build the food and pH plan around the formulation",
+            "Reject dose-for-dose substitution"
+          ]
+        },
+        "verifiedEmbeddedCheckLesson": "formulations-organ-function",
+        "wholeModuleVerified": false,
+        "figuresVerified": 0,
+        "metadataVerified": false,
+        "allCumulativeItemsUnchangedButFullSourceClosurePending": true
+      }
     },
     {
       "slug": "amphotericin-flucytosine-pharmacology",
@@ -9929,11 +9984,21 @@
         },
         {
           "slug": "itraconazole-formulations",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "latestScopedEvidence": "enteral-nutrition-broader-antifungal-formulations-review.json",
+          "verifiedBodyHeadings": [],
+          "embeddedCheckVerified": true,
+          "wholeLessonVerified": false
         },
         {
           "slug": "voriconazole-precision",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "latestScopedEvidence": "enteral-nutrition-broader-antifungal-formulations-review.json",
+          "verifiedBodyHeadings": [
+            "Coordinate voriconazole with meals and tube feeds"
+          ],
+          "embeddedCheckVerified": false,
+          "wholeLessonVerified": false
         },
         {
           "slug": "posaconazole-delivery",
@@ -9957,8 +10022,44 @@
         }
       ],
       "questions": 176,
-      "status": "unreviewed",
-      "evidence": []
+      "status": "reviewing",
+      "evidence": [
+        "enteral-nutrition-broader-antifungal-formulations-review.json"
+      ],
+      "broaderEnteralFormulationReview": {
+        "evidence": "enteral-nutrition-broader-antifungal-formulations-review.json",
+        "verifiedQuestionIds": [
+          "triazole-pharmacology-050",
+          "triazole-pharmacology-052",
+          "triazole-pharmacology-054",
+          "triazole-pharmacology-056",
+          "triazole-pharmacology-082",
+          "triazole-pharmacology-084",
+          "triazole-pharmacology-090",
+          "triazole-pharmacology-092",
+          "triazole-pharmacology-165"
+        ],
+        "correctedQuestionIds": [
+          "triazole-pharmacology-050",
+          "triazole-pharmacology-052",
+          "triazole-pharmacology-054",
+          "triazole-pharmacology-056",
+          "triazole-pharmacology-082",
+          "triazole-pharmacology-084",
+          "triazole-pharmacology-090",
+          "triazole-pharmacology-092"
+        ],
+        "verifiedBodyHeadingsByLesson": {
+          "voriconazole-precision": [
+            "Coordinate voriconazole with meals and tube feeds"
+          ]
+        },
+        "verifiedEmbeddedCheckLesson": "itraconazole-formulations",
+        "wholeModuleVerified": false,
+        "figuresVerified": 0,
+        "metadataVerified": false,
+        "allCumulativeItemsUnchangedButFullSourceClosurePending": true
+      }
     },
     {
       "slug": "echinocandin-pharmacology",

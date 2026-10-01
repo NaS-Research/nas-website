@@ -66,5 +66,61 @@ const caseRows = [
 ];
 
 const cases = caseRows.map((item, index) => ({ id: `antifungal-foundations-${String(generated.length + index + 1).padStart(3, "0")}`, lesson: item[0], question: item[1], choices: item[2], answer: 0, rationale: item[3], reviewHref: `#${item[0]}` }));
-export const systemicAntifungalFoundationsQuestionBank = [...generated, ...cases];
+const sourceReviewedDeliveryQuestions = {
+  "antifungal-foundations-113": {
+    "choices": [
+      "Antifungal products sharing an ingredient can differ in bioavailability, food effect, gastric pH dependence, route, vehicle, and dose",
+      "Products with the same active ingredient always have identical bioavailability",
+      "Matching milligram amounts makes antifungal formulations interchangeable",
+      "Food and gastric pH instructions apply equally to every antifungal formulation"
+    ],
+    "rationale": "Itraconazole capsule/solution and posaconazole suspension/tablet requirements differ. Route and vehicle also matter: IV azole vehicles have distinct safety implications, and amphotericin formulations have different doses and toxicities."
+  },
+  "antifungal-foundations-114": {
+    "choices": [
+      "Verify exact product and formulation at every transition",
+      "Verify only the ingredient and carry over every administration instruction",
+      "Copy the previous milligram dose when an antifungal formulation changes",
+      "Assume a route change removes the need to identify the formulation and vehicle"
+    ],
+    "rationale": "Exact product review prevents confusing different absorption requirements, dosing regimens and IV vehicles during a formulation or route transition."
+  },
+  "antifungal-foundations-115": {
+    "choices": [
+      "Assess brand or generic product, tablet, capsule, suspension, IV vehicle, food, pH therapy, and administration",
+      "Confirm only the ingredient name because route and formulation do not affect delivery",
+      "Review the strength while omitting food and acid-suppressing medicines",
+      "Record the route but assume every oral form has identical administration requirements"
+    ],
+    "rationale": "The book distinguishes itraconazole capsules from solution, posaconazole suspension from tablets, and IV formulations with SBECD. Reviewing the product, route, food and pH conditions identifies those differences."
+  },
+  "antifungal-foundations-116": {
+    "choices": [
+      "Substituting posaconazole suspension and delayed-release tablets dose for dose",
+      "Confirming the exact formulation before selecting a dose",
+      "Checking food and pH instructions for the intended oral product",
+      "Distinguishing an IV vehicle concern from an oral administration concern"
+    ],
+    "rationale": "Posaconazole suspension and delayed-release tablets differ in bioavailability and dosing. Equal milligram amounts do not establish safe substitution."
+  },
+  "antifungal-foundations-126": {
+    "choices": [
+      "Write operational administration instructions and reassess after route or nutrition changes",
+      "Use one food instruction for all oral antifungals regardless of formulation",
+      "Assume switching to any liquid eliminates food and gastric pH concerns",
+      "Keep the previous delivery plan unchanged after changing the oral product or tube-feeding schedule"
+    ],
+    "rationale": "Itraconazole food instructions depend on formulation, posaconazole suspension depends on nutrition and pH conditions, and voriconazole requires a defined meal or tube-feed interval. Reassess the actual delivery plan after a relevant change."
+  },
+  "antifungal-foundations-128": {
+    "choices": [
+      "Calling oral therapy reliable without checking delivery",
+      "Verifying the exact oral product and its meal instructions",
+      "Reviewing acid suppression with conventional itraconazole capsules or posaconazole suspension",
+      "Coordinating voriconazole doses with its required meal and tube-feeding intervals"
+    ],
+    "rationale": "Prescribed oral dosing does not prove reliable delivery. Formulation, food, gastric pH and tube-feed timing can change whether the administration plan protects exposure."
+  }
+};
+export const systemicAntifungalFoundationsQuestionBank = [...generated, ...cases].map((question) => sourceReviewedDeliveryQuestions[question.id] ? { ...question, ...sourceReviewedDeliveryQuestions[question.id] } : question);
 if (systemicAntifungalFoundationsQuestionBank.length < 100) throw new Error(`Systemic antifungal foundations bank must contain at least 100 questions, found ${systemicAntifungalFoundationsQuestionBank.length}.`);

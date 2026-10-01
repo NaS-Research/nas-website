@@ -72,5 +72,79 @@ const caseRows=[
   ["integration-transition","What is the correct educational boundary for this module?",["Use it to structure questions, then verify current labels, guidelines, local data, and patient-specific decisions with the clinical team","Use every example as a standing order","Ignore formulation","Avoid specialist input"],"Educational synthesis supports reasoning but does not replace individualized high-risk care."]
 ];
 const cases=caseRows.map((item,index)=>({id:`triazole-pharmacology-${String(generated.length+index+1).padStart(3,"0")}`,lesson:item[0],question:item[1],choices:item[2],answer:0,rationale:item[3],reviewHref:`#${item[0]}`}));
-export const triazoleAntifungalPharmacologyQuestionBank=[...generated,...cases];
+const sourceReviewedDeliveryQuestions = {
+  "triazole-pharmacology-050": {
+    "choices": [
+      "Prescribe and teach the exact product rather than the ingredient alone",
+      "Specify only itraconazole because capsule and solution instructions are equivalent",
+      "Copy the capsule meal instruction to every itraconazole product",
+      "Switch from capsules to solution at the same dose without reviewing absorption"
+    ],
+    "rationale": "Capsules and solution differ in bioavailability and food instructions, so the formulation must be part of the order and counseling."
+  },
+  "triazole-pharmacology-052": {
+    "choices": [
+      "Substituting solution and capsules milligram for milligram without review",
+      "Confirm the exact formulation before counseling about food",
+      "Review acid-suppressing medicines when conventional capsules are used",
+      "Recheck formulation-specific dosing before changing products"
+    ],
+    "rationale": "The capsule and solution are not interchangeable. Copying a milligram dose without reviewing the formulation can change exposure."
+  },
+  "triazole-pharmacology-054": {
+    "choices": [
+      "Write product-specific administration and reassess acid suppression",
+      "Assume a proton pump inhibitor improves conventional capsule absorption",
+      "Use fasting administration for every itraconazole product",
+      "Review the ingredient but omit the formulation and meal instructions"
+    ],
+    "rationale": "Conventional capsules need food and an acidic environment; oral solution has different food instructions. Acid suppression can reduce capsule absorption and contribute to treatment failure."
+  },
+  "triazole-pharmacology-056": {
+    "choices": [
+      "Giving one administration rule for every itraconazole formulation",
+      "Distinguishing capsule food instructions from solution food instructions",
+      "Identifying acid-suppressing medicines before reviewing capsule absorption",
+      "Confirming the exact product before planning administration"
+    ],
+    "rationale": "Capsules and solution have different administration requirements. A single ingredient-level instruction can give the wrong food advice and miss a capsule pH interaction."
+  },
+  "triazole-pharmacology-082": {
+    "choices": [
+      "Select the formulation before selecting the dose",
+      "Select an oral dose first and assume it applies to both suspension and tablets",
+      "Choose the formulation after copying the previous milligram dose",
+      "Treat identical ingredient names as proof of identical oral exposure"
+    ],
+    "rationale": "Posaconazole suspension and delayed-release tablets have different bioavailability and dosing regimens. Identify the formulation before selecting its dose."
+  },
+  "triazole-pharmacology-084": {
+    "choices": [
+      "Substituting oral suspension for delayed-release tablets at the same dose",
+      "Reviewing the new formulation and its dosing regimen before a switch",
+      "Checking the suspension meal or nutritional-supplement plan",
+      "Confirming the dispensed formulation matches the intended order"
+    ],
+    "rationale": "Suspension and delayed-release tablets are not interchangeable. A product switch requires checking the new formulation and dosing rather than copying the same milligram amount."
+  },
+  "triazole-pharmacology-090": {
+    "choices": [
+      "Protect absorption and monitor for breakthrough when adequate intake cannot be achieved",
+      "Continue the suspension fasting and assume the prescribed dose ensures absorption",
+      "Assume a proton pump inhibitor cannot affect suspension exposure",
+      "Treat identical tablet and suspension milligrams as identical absorbed doses"
+    ],
+    "rationale": "Suspension needs a full meal or oral nutritional supplement. Acid suppression can decrease its absorption and create treatment-failure risk, so inadequate intake and interacting medicines require an exposure review."
+  },
+  "triazole-pharmacology-092": {
+    "choices": [
+      "Giving suspension fasting without an exposure plan",
+      "Confirming the suspension is taken with a full meal",
+      "Planning an oral nutritional supplement when needed for suspension administration",
+      "Reviewing acid-suppressing medicines and the exact formulation"
+    ],
+    "rationale": "Giving suspension without its nutrition plan can undermine delivery. Its administration and absorption requirements should be checked rather than inferred from the ingredient name."
+  }
+};
+export const triazoleAntifungalPharmacologyQuestionBank=[...generated,...cases].map((question) => sourceReviewedDeliveryQuestions[question.id] ? { ...question, ...sourceReviewedDeliveryQuestions[question.id] } : question);
 if(triazoleAntifungalPharmacologyQuestionBank.length<100)throw new Error(`Triazole pharmacology bank must contain at least 100 questions, found ${triazoleAntifungalPharmacologyQuestionBank.length}.`);
