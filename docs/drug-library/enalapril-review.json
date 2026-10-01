@@ -1,0 +1,938 @@
+{
+  "slug": "enalapril",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "An oral ACE-inhibitor prodrug for hypertension, symptomatic heart failure and stable asymptomatic left-ventricular dysfunction. Selected tablets and ready-to-use solution are distinguished from a pharmacist-prepared suspension and from the related active IV drug enalaprilat.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Vasotec oral tablets · Bausch full U.S. label",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical label revised November 2025; SPL v15 effective 20260123; API publication Jan 28, 2026. Clinical revision is distinct from publication/effectiveTime. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=39631f1f-5d19-43c1-b504-bf56d991ed97"
+    },
+    {
+      "id": "solution",
+      "title": "Epaned ready-to-use oral solution · Azurity full label",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical PI/highlights revised July 2020, preserved despite current 2025 SPL publication; SPL v8 effective 20251216; API publication Dec 18, 2025. Clinical revision is distinct from publication/effectiveTime. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e6dbda02-779e-420c-893d-d0fea09432be"
+    },
+    {
+      "id": "iv",
+      "title": "Enalaprilat injection · Dr. Reddy’s full related-active-drug label",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical label revised April 2023; SPL v6 effective 20240607; API publication Jun 10, 2024. Clinical revision is distinct from publication/effectiveTime. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d398da1-020c-ccb1-a775-ce8e0b29d621"
+    },
+    {
+      "id": "hf",
+      "title": "2022 AHA/ACC/HFSA heart-failure guideline · official slide set",
+      "publisher": "AHA / ACC / HFSA",
+      "note": "Primary professional-society guideline, 2022; supporting ACEi/ARNi and MRA recommendations read in full on October 1,2026. Public PDF accessible via browser; raw shell archive returned 403, retained access metadata. Not a complete HF protocol.",
+      "url": "https://professional.heart.org/-/media/PHD-Files-2/Science-News/2/2022/2022-Heart-Failure-Guideline-Slide-Set.pdf"
+    }
+  ],
+  "sourceEvidence": {
+    "label": {
+      "splVersion": "15",
+      "effectiveTime": "20260123",
+      "apiPublishedDate": "Jan 28, 2026",
+      "clinicalRevision": "Clinical label revised November 2025; SPL v15 effective 20260123; API publication Jan 28, 2026. Clinical revision is distinct from publication/effectiveTime. Checked October 1, 2026.",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/39631f1f-5d19-43c1-b504-bf56d991ed97.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=39631f1f-5d19-43c1-b504-bf56d991ed97",
+      "localEvidence": "/tmp/nas-drug-sources/vasotec.xml",
+      "sha256": "0db6727c955522c281402e41b44eb6c49f02aff9009636152eedeea2f7b38787",
+      "supportingSections": [
+        "WARNING: FETAL TOXICITY",
+        "DESCRIPTION",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "CONTRAINDICATIONS",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Fetal Toxicity",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "\n                              \n                                 \n                                    Dual Blockade of the Renin-Angiotensin System (RAS)\n                                 \n                              \n                           ",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "ADVERSE REACTIONS",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "OVERDOSAGE",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "HOW SUPPLIED",
+        "",
+        "",
+        "PRINCIPAL DISPLAY PANEL - 2.5 mg Bottle Label",
+        "PRINCIPAL DISPLAY PANEL - 5 mg Bottle Label",
+        "PRINCIPAL DISPLAY PANEL - 10 mg Bottle Label",
+        "PRINCIPAL DISPLAY PANEL - 20 mg Bottle Label"
+      ],
+      "checked": "2026-10-01",
+      "access": "Full relevant public primary supporting sections read"
+    },
+    "solution": {
+      "splVersion": "8",
+      "effectiveTime": "20251216",
+      "apiPublishedDate": "Dec 18, 2025",
+      "clinicalRevision": "Clinical PI/highlights revised July 2020, preserved despite current 2025 SPL publication; SPL v8 effective 20251216; API publication Dec 18, 2025. Clinical revision is distinct from publication/effectiveTime. Checked October 1, 2026.",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/e6dbda02-779e-420c-893d-d0fea09432be.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e6dbda02-779e-420c-893d-d0fea09432be",
+      "localEvidence": "/tmp/nas-drug-sources/epaned.xml",
+      "sha256": "5c52fb9bf33926fe13439feb5ec3fd4e1f4ea7d3bcd1ad4e0b33c505145cf861",
+      "supportingSections": [
+        "WARNING: FETAL TOXICITY",
+        "1.1 Hypertension",
+        "1.2 Heart Failure",
+        "1.3 Asymptomatic Left Ventricular Dysfunction",
+        "2.1 Hypertension",
+        "2.2 Heart Failure",
+        "2.3 Asymptomatic Left Ventricular Dysfunction",
+        "3 DOSAGE FORMS AND STRENGTHS",
+        "4 CONTRAINDICATIONS",
+        "5.1 Fetal Toxicity",
+        "5.2 Angioedema and Anaphylactoid Reactions",
+        "5.3 Hypotension",
+        "5.4 Hepatic Failure",
+        "5.5 Impaired Renal Function",
+        "5.6 Hyperkalemia",
+        "6 ADVERSE REACTIONS",
+        "6.1 Clinical Trials Experience",
+        "6.2 Other Adverse Reactions from Clinical Studies or Postmarketing Experience",
+        "7.1 Non-Steroidal Anti-Inflammatory Agents (NSAIDs) Including Selective Cyclooxygenase-2 Inhibitors (COX-2 Inhibitors)",
+        "7.2 Dual Blockade of the Renin-Angiotensin System (RAS)",
+        "7.3 Agents Increasing Serum Potassium",
+        "7.4 Lithium",
+        "7.5 Gold",
+        "7.6 mTOR Inhibitors",
+        "7.7 Neprilysin Inhibitor",
+        "\n                              \n                                 Risk Summary\n                              \n                           ",
+        "\n                              \n                                 Clinical Considerations\n                              \n                              \n                                 \n                              \n                           ",
+        "\n                              \n                                 Risk Summary\n                              \n                              \n                                 \n                              \n                           ",
+        "8.4 Pediatric Use",
+        "8.5 Geriatric Use",
+        "8.6 Race",
+        "8.7 Renal Impairment",
+        "10 OVERDOSAGE",
+        "11 DESCRIPTION",
+        "12.1 Mechanism of Action",
+        "12.2 Pharmacodynamics",
+        "12.3 Pharmacokinetics",
+        "13.1 Carcinogenesis, Mutagenesis, Impairment of Fertility",
+        "13.2 Animal Toxicology and/or Pharmacology",
+        "14.1 Heart Failure, Mortality Trials",
+        "16 HOW SUPPLIED/STORAGE AND HANDLING",
+        "17 PATIENT COUNSELING INFORMATION",
+        " ",
+        "PRINCIPAL DISPLAY PANEL - Bottle Label"
+      ],
+      "checked": "2026-10-01",
+      "access": "Full relevant public primary supporting sections read"
+    },
+    "iv": {
+      "splVersion": "6",
+      "effectiveTime": "20240607",
+      "apiPublishedDate": "Jun 10, 2024",
+      "clinicalRevision": "Clinical label revised April 2023; SPL v6 effective 20240607; API publication Jun 10, 2024. Clinical revision is distinct from publication/effectiveTime. Checked October 1, 2026.",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/5d398da1-020c-ccb1-a775-ce8e0b29d621.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d398da1-020c-ccb1-a775-ce8e0b29d621",
+      "localEvidence": "/tmp/nas-drug-sources/enalaprilat.xml",
+      "sha256": "f8bdc778343573b78f7f40c8ccb7c708c823a2047e057967093fa1e0b836b0fd",
+      "supportingSections": [
+        "",
+        "",
+        "DESCRIPTION",
+        "CLINICAL PHARMACOLOGY",
+        "\n                        Mechanism of Action\n                     ",
+        "\n                        Pharmacokinetics and Metabolism\n                     ",
+        "\n                        Pharmacodynamics\n                     ",
+        "INDICATIONS AND USAGE",
+        "CONTRAINDICATIONS",
+        "\n                        Hypotension\n                     ",
+        "Anaphylactoid and Possibly Related Reactions",
+        "\n                        Neutropenia/Agranulocytosis\n                     ",
+        "\n                        Hepatic Failure\n                     ",
+        "\n                        Fetal/Neonatal Morbidity and Mortality\n                     ",
+        "\n                        General\n                     ",
+        "\n                        Drug Interactions\n                     ",
+        "\n                        Carcinogenesis, Mutagenesis, Impairment of Fertility\n                     ",
+        "\n                        Pregnancy\n                     ",
+        "\n                        Nursing Mothers\n                     ",
+        "\n                        Pediatric Use\n                     ",
+        "\n                        Geriatric Use\n                     ",
+        "ADVERSE REACTIONS",
+        "OVERDOSAGE",
+        "DOSAGE AND ADMINISTRATION",
+        "\n                        Patients On Diuretic Therapy\n                     ",
+        "\n                        Dosage Adjustment in Renal Impairment\n                     ",
+        "\n                        Patients at Risk of Excessive Hypotension\n                     ",
+        "\n                        Administration\n                     ",
+        "\n                        Compatibility and Stability\n                     ",
+        "HOW SUPPLIED",
+        "PACKAGE LABEL PRINCIPAL DISPLAY PANEL SECTION",
+        "",
+        "",
+        ""
+      ],
+      "checked": "2026-10-01",
+      "access": "Full relevant public primary supporting sections read"
+    },
+    "hf": {
+      "url": "https://professional.heart.org/-/media/PHD-Files-2/Science-News/2/2022/2022-Heart-Failure-Guideline-Slide-Set.pdf",
+      "clinicalRevision": "2022 professional guideline",
+      "localEvidence": "/tmp/nas-drug-sources/enalapril-aha-hf-2022-access.json",
+      "sha256": "4d298bea1833ca68533fe5d3ee9ef1d7eb9a4ef992c111743404e3de62bfdbb3",
+      "checked": "2026-10-01",
+      "supportingSections": [
+        "PDF pages71–73 renin-angiotensin inhibition;page75MRA"
+      ],
+      "access": "Browser full public PDF; raw archive HTTP403. Retained access/section metadata, no paywall claim."
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Oral labeled uses",
+      "sourceIds": [
+        "label",
+        "solution"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Indications;1;Pediatric use"
+        ],
+        "solution": [
+          "Indications;1;Pediatric use"
+        ]
+      },
+      "claims": [
+        "Vasotec/Epaned treat hypertension, alone or with other antihypertensives. Epaned hypertension indication includes children older than 1 month with the label’s neonatal/preterm/renal restrictions. Oral therapy also treats symptomatic heart failure, improving survival and reducing hospitalization in selected trials, and reduces progression to overt failure/hospitalization in clinically stable asymptomatic LV dysfunction with EF≤35%. Trial-era descriptions of diuretics/digitalis are not a complete current guideline combination regimen."
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Related IV enalaprilat",
+      "sourceIds": [
+        "iv"
+      ],
+      "sourceSectionsById": {
+        "iv": [
+          "Indications;1;Pediatric use"
+        ]
+      },
+      "claims": [
+        "The active drug enalaprilat injection treats hypertension when oral therapy is not practical. It is not the enalapril prodrug, an oral solution, or an automatically interchangeable HF IV regimen. Selected IV pediatric efficacy/safety is unestablished."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Oral adult regimens",
+      "sourceIds": [
+        "label",
+        "solution"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Dose;2;Dosage and administration;renal/HF/pediatric tables;Suspension preparation"
+        ],
+        "solution": [
+          "Dose;2;Dosage and administration;renal/HF/pediatric tables;Suspension preparation"
+        ]
+      },
+      "claims": [
+        [
+          "Hypertension · no diuretic",
+          "Start 5 mg once daily; Vasotec usual range 10–40 mg/day, once or in 2 divided doses. Epaned titrates to maximum 40 mg/day; consider twice daily if end-of-interval effect wanes."
+        ],
+        [
+          "Hypertension · on diuretic",
+          "Start 2.5 mg/day. Vasotec: if appropriate, prescriber may hold diuretic 2–3 days beforehand; if unable to hold, supervise first dose≥2 hours and until stable for another≥1 hour. Do not independently stop a HF diuretic."
+        ],
+        [
+          "Symptomatic heart failure",
+          "Epaned starts 2.5 mg twice daily; maximum 20 mg twice daily as tolerated. Vasotec specifies initial 2.5 mg with first-dose observation, then range 2.5–20 mg twice daily, maximum 40 mg/day."
+        ],
+        [
+          "HF · sodium<130 mEq/L or creatinine>1.6 mg/dL",
+          "Start 2.5 mg once daily under close supervision. Vasotec upward steps generally≥4 days apart if no excessive hypotension or significant renal deterioration."
+        ],
+        [
+          "Stable asymptomatic LV dysfunction",
+          "Start 2.5 mg twice daily; target 10 mg twice daily (20 mg/day), as tolerated."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Oral renal and pediatric dosing",
+      "sourceIds": [
+        "label",
+        "solution"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Dose;2;Dosage and administration;renal/HF/pediatric tables;Suspension preparation"
+        ],
+        "solution": [
+          "Dose;2;Dosage and administration;renal/HF/pediatric tables;Suspension preparation"
+        ]
+      },
+      "claims": [
+        [
+          "Adult hypertension · CrCl>30 mL/min",
+          "Usual start 5 mg/day."
+        ],
+        [
+          "Adult hypertension · CrCl≤30 mL/min",
+          "Start 2.5 mg/day; titrate carefully, adult hypertension maximum 40 mg/day. Epaned dose table calculates CrCl using ideal body weight; do not silently equate indexed pediatric GFR."
+        ],
+        [
+          "Hemodialysis",
+          "Start 2.5 mg on dialysis days; Epaned says take after hemodialysis. Vasotec nondialysis dose depends on BP response; no fixed all-days schedule inferred."
+        ],
+        [
+          "Pediatric hypertension · exact product age",
+          "Start 0.08 mg/kg once daily, initial maximum 5 mg. Adjust to response; doses above 0.58 mg/kg or 40 mg/day have not been studied, not an established safe ceiling to aim for. Vasotec pediatric evidence says age 1 month–16 years; Epaned indication says older than 1 month. Exactly 1 month requires exact-product review."
+        ],
+        [
+          "Pediatric restrictions",
+          "Vasotec not recommended in neonates or pediatric GFR<30 mL/min/1.73 m²; Epaned explicitly excludes ≤1 month, preterm infants below corrected post-conceptual age 44 weeks and pediatric GFR<30. Pediatric HF/LV dysfunction efficacy unestablished."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Liquid and suspension safeguards",
+      "sourceIds": [
+        "label",
+        "solution"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Dose;2;Dosage and administration;renal/HF/pediatric tables;Suspension preparation"
+        ],
+        "solution": [
+          "Dose;2;Dosage and administration;renal/HF/pediatric tables;Suspension preparation"
+        ]
+      },
+      "claims": [
+        "Epaned is ready-to-use 1 mg/mL ENALAPRIL MALEATE; its package states 1 mg maleate equivalent to 0.764 mg enalapril per mL. Use prescribed labeled mg and calibrated oral syringe; do not recalculate the routine dose to free-base mg without pharmacy direction. Vasotec’s label provides a separate pharmacist-prepared 1 mg/mL suspension using ten 20 mg tablets,50 mL citrate/citric-acid oral solution and 150 mL Ora-Sweet SF, with timed mixing/standing and refrigerated 30-day storage; shake that suspension before use. This is not Epaned’s 60-day room-temperature rule or a home compounding recommendation."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Related IV enalaprilat · supervised use",
+      "sourceIds": [
+        "iv"
+      ],
+      "sourceSectionsById": {
+        "iv": [
+          "Dose;2;Dosage and administration;renal/HF/pediatric tables;Suspension preparation"
+        ]
+      },
+      "claims": [
+        [
+          "Usual adult hypertension",
+          "1.25 mg IV every 6 hours over 5 minutes. Peak first-dose effect may take up to 4 hours; no routine escalation inferred from absence of immediate effect."
+        ],
+        [
+          "On diuretic or CrCl≤30 mL/min",
+          "Initial 0.625 mg IV over 5 minutes. If response inadequate after 1 hour, may repeat 0.625 mg; additional 1.25 mg doses at 6-hour intervals under observation."
+        ],
+        [
+          "Risk of excessive hypotension / dialysis",
+          "Start no more than 0.625 mg over at least 5 minutes, preferably longer up to 1 hour; close supervision."
+        ],
+        [
+          "IV-to-oral conversion",
+          "Selected label starts oral enalapril 5 mg/day;2.5 mg/day for renal CrCl≤30 or patients responding to0.625 mg IV every 6 hours. Individualize; not a mg-for-mg conversion."
+        ],
+        [
+          "Administration / limits",
+          "IV only, may give as supplied or dilute with up to 50 mL compatible solution. Evidence above 20 mg/day inadequate; higher studied doses are not a recommended routine maximum."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Formulation-specific planning",
+      "sourceIds": [
+        "label",
+        "solution",
+        "iv"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Dose;2;Dosage and administration;renal/HF/pediatric tables;Suspension preparation"
+        ],
+        "solution": [
+          "Dose;2;Dosage and administration;renal/HF/pediatric tables;Suspension preparation"
+        ],
+        "iv": [
+          "Dose;2;Dosage and administration;renal/HF/pediatric tables;Suspension preparation"
+        ]
+      },
+      "claims": [
+        "Titration and first-dose observation are indication-specific. Hold/reduce concomitant diuretic only when clinically appropriate, with BP/volume/renal assessment. Selected labels do not supply a universal hepatic percentage adjustment, missed-dose catch-up algorithm or switch equivalence; obtain exact-product pharmacy instructions."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "label",
+        "solution",
+        "iv"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning;Contraindications;4;Warnings/Precautions;5–6;Adverse reactions;10 Overdosage"
+        ],
+        "solution": [
+          "Boxed warning;Contraindications;4;Warnings/Precautions;5–6;Adverse reactions;10 Overdosage"
+        ],
+        "iv": [
+          "Boxed warning;Contraindications;4;Warnings/Precautions;5–6;Adverse reactions;10 Overdosage"
+        ]
+      },
+      "claims": [
+        "Fetal toxicity can cause oligohydramnios, fetal renal failure, lung/skull abnormalities and death, especially with second/third-trimester exposure. Discontinue promptly when pregnancy detected and arrange appropriate management.",
+        "Head/neck angioedema may occur at any time and can fatally obstruct the airway. Stop and seek urgent treatment. Intestinal angioedema can cause abdominal pain with/without vomiting, even without prior facial swelling. Black patients have a higher reported ACE-inhibitor angioedema rate.",
+        "Symptomatic hypotension may cause oliguria, azotemia or renal failure, particularly in HF, dialysis, sodium/volume depletion or intensive diuresis. Closely supervise high-risk initiation and the first 2 weeks/dose changes; reassess syncope, dehydration or worsening kidney function.",
+        "Monitor renal function and potassium, especially with renal artery stenosis, CKD, severe HF, diabetes, potassium-raising drugs or dual RAS blockade. Significant renal decline may require withholding/discontinuation. Use caution with LV outflow obstruction/aortic stenosis.",
+        "Rare cholestatic jaundice can progress to fulminant hepatic necrosis; discontinue for jaundice/marked liver-enzyme elevation and follow up. Consider WBC monitoring with collagen vascular disease plus renal impairment because neutropenia/agranulocytosis cannot be excluded.",
+        "High-flux dialysis, dextran-sulfate LDL apheresis or venom desensitization can trigger life-threatening anaphylactoid reactions. Inform procedure/anesthesia teams; do not self-adjust therapy."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "label",
+        "solution",
+        "iv"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning;Contraindications;4;Warnings/Precautions;5–6;Adverse reactions;10 Overdosage"
+        ],
+        "solution": [
+          "Boxed warning;Contraindications;4;Warnings/Precautions;5–6;Adverse reactions;10 Overdosage"
+        ],
+        "iv": [
+          "Boxed warning;Contraindications;4;Warnings/Precautions;5–6;Adverse reactions;10 Overdosage"
+        ]
+      },
+      "claims": [
+        "Selected oral products: product/ACE-inhibitor-related hypersensitivity or prior ACE-related angioedema, hereditary/idiopathic angioedema, aliskiren coadministration in diabetes, and neprilysin-inhibitor combination. Observe≥36-hour interval when switching to/from sacubitril/valsartan. Selected older IV label explicitly lists product hypersensitivity and ACE-related/hereditary/idiopathic angioedema; do not interpret its shorter formal list as permission to combine ACE inhibition with current prohibited oral combinations."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning · fetal toxicity",
+      "sourceIds": [
+        "label",
+        "solution",
+        "iv"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning;Contraindications;4;Warnings/Precautions;5–6;Adverse reactions;10 Overdosage"
+        ],
+        "solution": [
+          "Boxed warning;Contraindications;4;Warnings/Precautions;5–6;Adverse reactions;10 Overdosage"
+        ],
+        "iv": [
+          "Boxed warning;Contraindications;4;Warnings/Precautions;5–6;Adverse reactions;10 Overdosage"
+        ]
+      },
+      "claims": [
+        "Vasotec and Epaned box fetal toxicity: stop as soon as pregnancy detected. Selected related enalaprilat injection carries a boxed use-in-pregnancy warning describing fetal injury/death in second/third trimester and prompt discontinuation. These are distinct from a claim that pregnancy is listed in every formal contraindications section."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "sourceIds": [
+        "label",
+        "solution",
+        "iv"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning;Contraindications;4;Warnings/Precautions;5–6;Adverse reactions;10 Overdosage"
+        ],
+        "solution": [
+          "Boxed warning;Contraindications;4;Warnings/Precautions;5–6;Adverse reactions;10 Overdosage"
+        ],
+        "iv": [
+          "Boxed warning;Contraindications;4;Warnings/Precautions;5–6;Adverse reactions;10 Overdosage"
+        ]
+      },
+      "claims": [
+        "Cough, fatigue, rash, dizziness and orthostatic effects are reported; hypotension is more common in HF. Other reports include renal dysfunction, hyperkalemia, severe skin reactions, neutropenia and angioedema. Trial/postmarketing rates differ and may not prove causation. Overdose is expected principally to cause hypotension: seek Poison Help/emergency assessment and supervised supportive treatment. Enalaprilat can be removed by hemodialysis; this is not a home rescue plan or guarantee of efficacy in every overdose."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Contraindicated and high-risk combinations",
+      "sourceIds": [
+        "label",
+        "solution",
+        "hf"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Drug interactions;7;PK;Precautions"
+        ],
+        "solution": [
+          "Drug interactions;7;PK;Precautions"
+        ],
+        "hf": [
+          "PDF71–73 ACEi/ARB/ARNi;75MRA"
+        ]
+      },
+      "claims": [
+        [
+          "Sacubitril / neprilysin inhibitors",
+          "Contraindicated combination;≥36 hours switching to/from sacubitril/valsartan because angioedema risk."
+        ],
+        [
+          "Aliskiren",
+          "Contraindicated with diabetes; avoid with renal impairment GFR<60 mL/min. Generally avoid dual RAS blockade with ARBs/aliskiren; monitor BP, kidney function and electrolytes if exceptional therapy selected."
+        ],
+        [
+          "Potassium-raising drugs",
+          "Potassium-sparing diuretics, supplements and potassium salt substitutes raise potassium. Vasotec says generally avoid potassium-sparing agents in HF; professional guidance permits selected MRAs with appropriate renal/potassium assessment and close monitoring. Only clinician-directed combinations, not unsupervised supplements."
+        ],
+        [
+          "NSAIDs including COX-2",
+          "May worsen renal function and diminish BP response, especially older, volume-depleted or renal-impaired patients. Monitor kidney function."
+        ],
+        [
+          "Lithium",
+          "Toxicity reported; frequent lithium-level monitoring."
+        ],
+        [
+          "mTOR inhibitors",
+          "Increased angioedema risk with agents such as sirolimus, everolimus or temsirolimus."
+        ]
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Additional interactions",
+      "sourceIds": [
+        "label",
+        "solution",
+        "iv"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Drug interactions;7;PK;Precautions"
+        ],
+        "solution": [
+          "Drug interactions;7;PK;Precautions"
+        ],
+        "iv": [
+          "Drug interactions;7;PK;Precautions"
+        ]
+      },
+      "claims": [
+        "Diuretics and other pressure-lowering agents may increase first-dose hypotension; adjust only with supervision. Injectable gold can cause flushing, nausea/vomiting and hypotension. IV enalaprilat has related additive hypotension, potassium and lithium risks. Lack of a major PK interaction does not exclude clinical renal/pressure effects."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and breastfeeding",
+      "sourceIds": [
+        "label",
+        "solution",
+        "iv"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8;Renal tables;Pregnancy;Nursing;Pediatric/Geriatric"
+        ],
+        "solution": [
+          "8;Renal tables;Pregnancy;Nursing;Pediatric/Geriatric"
+        ],
+        "iv": [
+          "8;Renal tables;Pregnancy;Nursing;Pediatric/Geriatric"
+        ]
+      },
+      "claims": [
+        "Discontinue oral enalapril/related IV enalaprilat as soon as pregnancy detected; seek alternative management. Fetal surveillance and exposed-neonate BP/renal/potassium assessment require specialist care. Epaned advises no breastfeeding because milk contains enalapril/enalaprilat and serious infant hypotension/hyperkalemia/renal risks are possible. Vasotec/IV labels instead describe choosing between nursing and therapy according to maternal need; reconcile exact formulation with clinician, not an unqualified ingredient-wide safety claim."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and older patients",
+      "sourceIds": [
+        "label",
+        "solution",
+        "iv"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8;Renal tables;Pregnancy;Nursing;Pediatric/Geriatric"
+        ],
+        "solution": [
+          "8;Renal tables;Pregnancy;Nursing;Pediatric/Geriatric"
+        ],
+        "iv": [
+          "8;Renal tables;Pregnancy;Nursing;Pediatric/Geriatric"
+        ]
+      },
+      "claims": [
+        "Oral hypertension: Vasotec evidence starts at 1 month, while Epaned requires older than 1 month; exactly1 month needs product review, respecting Epaned’s preterm 44-week and pediatric GFR exclusions; pivotal efficacy trial enrolled 6–16 years and younger support is more limited. No pediatric HF/LV dysfunction or IV dose established. Older patients need cautious selection and renal monitoring because clearance is renal; no fixed age-only percentage formula is supplied."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal, hepatic and population considerations",
+      "sourceIds": [
+        "label",
+        "solution",
+        "iv"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8;Renal tables;Pregnancy;Nursing;Pediatric/Geriatric"
+        ],
+        "solution": [
+          "8;Renal tables;Pregnancy;Nursing;Pediatric/Geriatric"
+        ],
+        "iv": [
+          "8;Renal tables;Pregnancy;Nursing;Pediatric/Geriatric"
+        ]
+      },
+      "claims": [
+        "Adult CrCl dose table uses mL/min; pediatric GFR restriction uses mL/min/1.73 m². Reduced renal clearance prolongs enalaprilat exposure and dialysis affects timing. No routine hepatic adjustment table is provided; liver injury requires stop/review. ACE-inhibitor monotherapy lowers BP less on average in Black patients, while angioedema risk is higher; these population findings do not create a race-based dosing formula."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "sourceIds": [
+        "label",
+        "solution",
+        "iv"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Clinical pharmacology;12;Mechanism;PK"
+        ],
+        "solution": [
+          "Clinical pharmacology;12;Mechanism;PK"
+        ],
+        "iv": [
+          "Clinical pharmacology;12;Mechanism;PK"
+        ]
+      },
+      "claims": [
+        "Enalaprilat inhibits ACE, reducing angiotensin II formation and aldosterone release and increasing renin activity through feedback. ACE also degrades bradykinin; this helps explain relevant class effects, while the precise contribution to BP benefit is incompletely defined. Reduced aldosterone contributes to potassium rise."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Oral and IV pharmacokinetics",
+      "sourceIds": [
+        "label",
+        "solution",
+        "iv"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Clinical pharmacology;12;Mechanism;PK"
+        ],
+        "solution": [
+          "Clinical pharmacology;12;Mechanism;PK"
+        ],
+        "iv": [
+          "Clinical pharmacology;12;Mechanism;PK"
+        ]
+      },
+      "claims": [
+        "Oral enalapril is hydrolyzed to enalaprilat, which peaks about 3–4 hours after oral dosing. Enalaprilat effective accumulation half-life is about 11 hours in adults, prolonged with substantial renal impairment. Elimination is largely renal; dialysis removes enalaprilat. Ready-to-use Epaned has verified product-specific bioequivalence studies, not a guarantee for arbitrary compounded liquids. IV administration delivers active drug directly; prolonged terminal binding/renal effects do not justify mg-for-mg oral conversion."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "sourceIds": [
+        "label",
+        "solution",
+        "iv"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "17;Information for patients;Warnings/Precautions"
+        ],
+        "solution": [
+          "17;Information for patients;Warnings/Precautions"
+        ],
+        "iv": [
+          "17;Information for patients;Warnings/Precautions"
+        ]
+      },
+      "claims": [
+        "Assess baseline BP, volume status, kidney function and potassium; recheck during initiation/titration, renal/diuretic changes and interacting-drug use. High-risk patients need close initial observation and follow-up; no universal creatinine percentage stop-rule or routine lab interval is supplied. Consider WBC monitoring with renal plus collagen vascular disease. Promptly evaluate jaundice, syncope, oliguria or substantial potassium rise."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling and handling",
+      "sourceIds": [
+        "label",
+        "solution",
+        "iv"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "17;Information for patients;Warnings/Precautions"
+        ],
+        "solution": [
+          "17;Information for patients;Warnings/Precautions"
+        ],
+        "iv": [
+          "17;Information for patients;Warnings/Precautions"
+        ]
+      },
+      "claims": [
+        "Report suspected pregnancy immediately; stop for airway/facial swelling and obtain urgent help. Consult clinician about dehydration, vomiting/diarrhea, potassium salt substitutes and NSAIDs. Verify liquid concentration, maleate units and exact storage dates with pharmacist; Epaned is ready-to-use and is not the Vasotec compounded suspension. Tell dialysis/desensitization/anesthesia teams about ACE-inhibitor therapy. Do not self-switch to sacubitril/valsartan."
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative Vasotec product",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;11;16;How supplied/storage;Description;SPL product panels"
+        ]
+      },
+      "claims": [
+        [
+          "5 mg tablet",
+          "White rounded-triangle tablet, VASO 5 on one side, scored on other."
+        ],
+        [
+          "Package",
+          "Bausch · NDC 0187-0141-30, bottle 30 with desiccant."
+        ],
+        [
+          "Status",
+          "Prescription oral ACE inhibitor; no automatic substitution for enalaprilat injection."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "label",
+        "solution",
+        "iv"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;11;16;How supplied/storage;Description;SPL product panels"
+        ],
+        "solution": [
+          "3;11;16;How supplied/storage;Description;SPL product panels"
+        ],
+        "iv": [
+          "3;11;16;How supplied/storage;Description;SPL product panels"
+        ]
+      },
+      "claims": [
+        [
+          "Vasotec",
+          "2.5,5,10,20 mg enalapril maleate tablets, different shapes/colors and VASO strength markings."
+        ],
+        [
+          "Epaned",
+          "1 mg/mL enalapril maleate, clear/colorless mixed-berry ready-to-use solution,150 mL; NDC 52652-4001-1."
+        ],
+        [
+          "Pharmacist-prepared suspension",
+          "Separate Vasotec label 1 mg/mL formulation using exact vehicles/mixing instructions; not an arbitrary home liquid."
+        ],
+        [
+          "Related IV active drug",
+          "Enalaprilat 1.25 mg/mL; selected Dr. Reddy’s vials 1.25 mg/mL and 2.5 mg/2 mL, IV only."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "label",
+        "solution",
+        "iv"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;11;16;How supplied/storage;Description;SPL product panels"
+        ],
+        "solution": [
+          "3;11;16;How supplied/storage;Description;SPL product panels"
+        ],
+        "iv": [
+          "3;11;16;How supplied/storage;Description;SPL product panels"
+        ]
+      },
+      "claims": [
+        "Vasotec 25°C, excursions 15–30°C, tight container and protect moisture. Epaned manufacturer refrigeration 2–8°C, tightly closed; patients may refrigerate or keep 20–25°C, but discard after 60 days if room-temperature storage. Avoid freezing/excess heat. Exact pharmacist-prepared Vasotec suspension refrigerates 2–8°C up to 30 days and must be shaken before use. Enalaprilat 20–25°C; selected compatible IV dilutions retain activity 24 hours at room temperature, subject to sterile local policy. Never apply one liquid’s storage rule to another."
+      ]
+    },
+    {
+      "section": "hero/essential",
+      "card": "Scope and essential safety",
+      "sourceIds": [
+        "label",
+        "solution",
+        "iv"
+      ],
+      "sourceSections": [
+        "Indications;Dose;Warnings;Products"
+      ],
+      "claims": [
+        "An oral ACE-inhibitor prodrug for hypertension, symptomatic heart failure and stable asymptomatic left-ventricular dysfunction. Selected tablets and ready-to-use solution are distinguished from a pharmacist-prepared suspension and from the related active IV drug enalaprilat.",
+        "Discontinue as soon as pregnancy is detected and obtain an alternative treatment plan. Face, tongue or throat swelling needs urgent assessment and no further dose. Do not combine with sacubitril/valsartan or switch within 36 hours. Monitor blood pressure, renal function and potassium, particularly during initiation or titration.",
+        [
+          "Therapeutic class",
+          "Angiotensin-converting enzyme inhibitor"
+        ],
+        [
+          "Representative formulation",
+          "Vasotec 5 mg oral tablet"
+        ],
+        [
+          "Oral solution concentration",
+          "Epaned 1 mg/mL enalapril maleate"
+        ]
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Professional HF context",
+      "sourceIds": [
+        "hf"
+      ],
+      "sourceSectionsById": {
+        "hf": [
+          "PDF71–73 ACEi/ARB/ARNi;75MRA"
+        ]
+      },
+      "claims": [
+        "The 2022 AHA/ACC/HFSA guidance supports ACE inhibition for prior/current symptomatic chronic HFrEF when ARNI therapy is not feasible. It recommends selected MRAs in symptomatic HFrEF with appropriate kidney function/potassium and close monitoring. The older Vasotec statement generally avoiding potassium-sparing agents in HF is therefore not a blanket prohibition of specialist-planned contemporary combinations. This profile does not supply the complete HF regimen."
+      ]
+    }
+  ],
+  "materialErrors": [],
+  "gaps": [
+    {
+      "material": false,
+      "topic": "Pediatric boundaries",
+      "resolution": "Epaned olderthan1month, neonates≤1month not recommended; prematurecorrectedpostconceptualage44weeks and pediatricGFR<30mL/min/1.73m² preserved. PediatricHF/IVunestablished. >0.58mg/kg or40mg/day unstudied, not targetmaximum."
+    },
+    {
+      "material": false,
+      "topic": "Renal units",
+      "finding": "Epaned2.1CrClmL/min idealweight versus8.7uses eGFR≤30mL/min; pediatric indexedGFR distinct.",
+      "resolution": "Publisheddose table attributedCrClwithunits; no silent indexed/nonindexed substitution, pharmacyreviewrequired."
+    },
+    {
+      "material": false,
+      "topic": "Formulation and salt",
+      "resolution": "Epaned1mgmaleate/mL equivalent0.764mgbase frompackage; labeldoseusesmaleate. Ready-to-use60dayRT vs exactVasoteccompound30dayfridge, shake, linkedrecipe nothomecompound. RelatedIVenalaprilat activeingredientnotprodrug, no mgformgequivalence."
+    },
+    {
+      "material": false,
+      "topic": "IV older formal contraindication list",
+      "resolution": "Short olderIVlist not presented aspermission for modern contraindicatedACE/neprilysin/aliskiren combinations; currentoral36hourrule explicit. IVhypotensiondoses/rate/observation separate."
+    },
+    {
+      "material": false,
+      "topic": "Lactation difference",
+      "resolution": "Epaned no breastfeeding; Vasotec/IV choose nursingvstherapy individualized. Not a falseuniformproductlabelclaim."
+    },
+    {
+      "material": false,
+      "topic": "HF and source chronology",
+      "resolution": "Trialeradiuretics/digitalis not presentedfullmodernHFguideline. Vasotec11/2025, Epaned7/2020PI despite2025SPL, IV4/2023 maintained."
+    },
+    {
+      "material": false,
+      "topic": "Age-one-month and HF potassium-sparing wording differences",
+      "finding": "Vasotec pediatric evidence1month–16; Epaned>1month and excludes≤1month. Vasotec generallyavoidpotassium-sparingHF versus2022professional guideline selectedMRA.",
+      "resolution": "Exact product age reviewed, not universal≥1month. HFlabel versusguideline distinction explicit, no blanket prohibition of monitored modern MRA therapy. Public guideline fullsupporting slides read; rawdownload403 stated."
+    }
+  ],
+  "exclusions": [
+    "Full contemporary hypertension/HF/CKD preferred-treatment algorithms; unverified pediatric HF or IV regimens; home suspension-compounding recipe instructions; arbitrary liquid salt conversions, non-U.S. or fixed combinations, renal-index substitution, universal hepatic adjustment."
+  ],
+  "validation": {
+    "schema": "validateMonograph returned []; exact eight sections, four Safety cards, three Product cards, three hero tuples",
+    "renderedPage": "Pending parent natural390px integration QA; intrinsic data width≤350px"
+  },
+  "monographSha256": "6170f1f61b2f66dc8fce90c62805929e78ea0a13f9a5d01b1245369c2bf64f9c",
+  "sourceInterpretationNotes": [
+    "Original focused summaries; full supporting primary public sections read, no paywall access. Clinical revision is distinct from SPL effectiveTime/API publication.",
+    "No unverified preferred-treatment guideline ranking, current inventory inference, arbitrary formulation conversion, universal lab schedule or home compounding/overdose instructions."
+  ]
+}

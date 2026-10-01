@@ -1,0 +1,1127 @@
+{
+  "slug": "tacrolimus",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "A four-label tacrolimus reference separating systemic transplant formulations from topical atopic-dermatitis treatment. All eight blueprint sections reviewed. Product-specific focused monograph; not an exhaustive adverse-event catalog.",
+  "sources": [
+    {
+      "id": "prograf",
+      "title": "Prograf capsule / granules / injection · Full prescribing information",
+      "publisher": "DailyMed / Astellas",
+      "note": "SPL version 30, effective 20230825; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f667de1-9dfa-4bd6-8ba0-15ee2d78873b",
+      "checked": "2026-10-01",
+      "version": "SPL version 30, effective 20230825; current public product labeling.",
+      "spl_version": "30",
+      "spl_effective_time": "20230825",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/7f667de1-9dfa-4bd6-8ba0-15ee2d78873b.xml",
+      "downloaded_xml_sha256": "a87b7fdf7e2f542ebcec779fc2dcf575c6432a6a84262a322b6976cdb398e89f"
+    },
+    {
+      "id": "astagraf",
+      "title": "Astagraf XL extended-release capsules · Full prescribing information",
+      "publisher": "DailyMed / Astellas",
+      "note": "SPL version 12, effective 20260114; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=550a5cd4-fbf2-4c09-b577-6bde8fcbdf6e",
+      "checked": "2026-10-01",
+      "version": "SPL version 12, effective 20260114; current public product labeling.",
+      "spl_version": "12",
+      "spl_effective_time": "20260114",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/550a5cd4-fbf2-4c09-b577-6bde8fcbdf6e.xml",
+      "downloaded_xml_sha256": "87d34f6cbcb7a4a424b3d745a44eaa62231b63fa33c8701e707ac2415c1d6bb7"
+    },
+    {
+      "id": "envarsus",
+      "title": "Envarsus XR extended-release tablets · Full prescribing information",
+      "publisher": "DailyMed / Veloxis",
+      "note": "SPL version 16, effective 20250226; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de2315b0-6344-43ac-9aea-3e3b68d828e7",
+      "checked": "2026-10-01",
+      "version": "SPL version 16, effective 20250226; current public product labeling.",
+      "spl_version": "16",
+      "spl_effective_time": "20250226",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/de2315b0-6344-43ac-9aea-3e3b68d828e7.xml",
+      "downloaded_xml_sha256": "f88b8a1b31ba8b843da0cd95b286ea8904d1f64cee368f64ff42a5243c29909c"
+    },
+    {
+      "id": "topical",
+      "title": "Tacrolimus ointment 0.03% / 0.1% · Full prescribing information",
+      "publisher": "DailyMed / Glenmark",
+      "note": "SPL version 8, effective 20260415; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c2d2e3a1-f346-4245-b445-6dd44e371180",
+      "checked": "2026-10-01",
+      "version": "SPL version 8, effective 20260415; current public product labeling.",
+      "spl_version": "8",
+      "spl_effective_time": "20260415",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/c2d2e3a1-f346-4245-b445-6dd44e371180.xml",
+      "downloaded_xml_sha256": "dc2fe9a60926930462a0dc1ea0eec9b3d3e7b0f6bc4476122d7d883b8e881e79"
+    }
+  ],
+  "assertion_to_source": [
+    {
+      "section_id": "indications",
+      "card_title": "Prograf transplant indications",
+      "assertions": [
+        "Prograf capsules, granules and IV injection prevent rejection in adult and pediatric kidney, liver, heart and lung transplantation in combination with other immunosuppressants. IV is reserved for patients unable to take oral therapy. Specialist supervision and therapeutic drug monitoring are essential; topical ointment has no transplant role."
+      ],
+      "support": [
+        {
+          "source_id": "prograf",
+          "sections": [
+            "1",
+            "2.1",
+            "8.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "indications",
+      "card_title": "Once-daily transplant product scope",
+      "assertions": [
+        "Astagraf XL capsules label kidney-transplant rejection prophylaxis in adults and pediatric patients who can swallow capsules intact; pediatric supporting studies included ages ≥4. It is not approved for liver transplantation. Envarsus XR tablets label kidney-transplant prophylaxis, including stable-patient conversion from IR tacrolimus; pediatric safety/effectiveness is unestablished. Do not extend either product to all Prograf organ or pediatric indications."
+      ],
+      "support": [
+        {
+          "source_id": "astagraf",
+          "sections": [
+            "1",
+            "8.4",
+            "Boxed warning"
+          ]
+        },
+        {
+          "source_id": "envarsus",
+          "sections": [
+            "1.1",
+            "1.2",
+            "8.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "indications",
+      "card_title": "Topical indication",
+      "assertions": [
+        "Ointment is second-line short-term/noncontinuous chronic treatment of moderate-to-severe atopic dermatitis in nonimmunocompromised patients when other topical prescription treatment fails or is inadvisable. Age 2–15 uses only 0.03%; age ≥16 can use 0.03% or 0.1%. Not indicated under two. Other dermatologic uses are outside this labeled scope."
+      ],
+      "support": [
+        {
+          "source_id": "topical",
+          "sections": [
+            "INDICATIONS AND USAGE",
+            "Medication Guide"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Adult Prograf oral starting doses",
+      "assertions": [
+        "The label’s initial totals below are divided every 12 hours. Titrate by rejection, tolerability and whole-blood troughs; these are starting recommendations, not permanent doses. Start liver/heart/lung oral treatment no sooner than six hours after transplant; kidney starts within 24 hours but may be delayed for renal recovery.",
+        "Kidney with azathioprine | 0.2 mg/kg/day; months 1–3: 7–20 ng/mL; months 4–12: 5–15.",
+        "Kidney with MMF / IL-2 receptor antagonist | 0.1 mg/kg/day; months 1–12: 4–11 ng/mL.",
+        "Liver with corticosteroids | 0.10–0.15 mg/kg/day; months 1–12: 5–20 ng/mL.",
+        "Heart with azathioprine or MMF | 0.075 mg/kg/day; months 1–3: 10–20 ng/mL; month ≥4: 5–15.",
+        "Lung with azathioprine or MMF | 0.075 mg/kg/day; months 1–3: 10–15 ng/mL; months 4–12: 8–12."
+      ],
+      "support": [
+        {
+          "source_id": "prograf",
+          "sections": [
+            "2.2 / Table 1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Pediatric Prograf oral starting doses",
+      "assertions": [
+        "Initial total daily doses are divided every 12 hours. Kidney 0.3 mg/kg/day; liver capsules 0.15–0.2 or granules 0.2 mg/kg/day; heart 0.3 mg/kg/day, but 0.1 mg/kg/day with antibody induction. These groups’ label trough range is 5–20 ng/mL during months 1–12. Lung starts 0.3 mg/kg/day, with troughs 10–20 ng/mL during weeks 1–2 and 10–15 thereafter through month 12. Cystic fibrosis can require higher doses because of lower absorption; use levels, not a fixed multiplier. Pediatric Prograf granule↔capsule conversion keeps the same total daily dose, followed by TDM."
+      ],
+      "support": [
+        {
+          "source_id": "prograf",
+          "sections": [
+            "2.3 / Table 3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Astagraf XL kidney starting regimens",
+      "assertions": [
+        "Give intact capsules once each morning on an empty stomach ≥1 hour before or ≥2 hours after food. The exact starting regimen depends on induction/co-therapy; there is no automatic Envarsus conversion rule.",
+        "Adult: basiliximab, MMF, steroids | 0.15–0.2 mg/kg once daily before reperfusion or within 48 hours after transplant. Month 1: 7–15; months 2–6: 5–15; after 6 months: 5–10 ng/mL.",
+        "Adult: MMF/steroids without basiliximab | 0.1 mg/kg within 12 hours before reperfusion, then 0.2 mg/kg daily beginning ≥4 hours after preoperative dose and within 12 hours after reperfusion. Month 1: 10–15; months 2–6: 5–15; later: 5–10 ng/mL.",
+        "Pediatric: basiliximab, MMF, steroids | 0.3 mg/kg once daily within 24 hours after reperfusion. Month 1: 10–20; after month 1: 5–15 ng/mL."
+      ],
+      "support": [
+        {
+          "source_id": "astagraf",
+          "sections": [
+            "2.1",
+            "2.2 / Table 1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Envarsus XR kidney dosing and IR conversion",
+      "assertions": [
+        "De novo start 0.14 mg/kg once daily, with antibody-induction trough targets month 1: 6–11 ng/mL and thereafter 4–11. Conversion from IR tacrolimus starts Envarsus at 80% of the previous total daily dose, with trough goal 4–11 ng/mL and subsequent titration. Swallow whole on an empty stomach consistently, preferably morning, ≥1 hour before or ≥2 hours after food. Never transfer this 80% rule to Astagraf or arbitrary routes."
+      ],
+      "support": [
+        {
+          "source_id": "envarsus",
+          "sections": [
+            "2.1–2.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Prograf IV infusion",
+      "assertions": [
+        "Continuous IV infusion only: adult kidney/liver 0.03–0.05 mg/kg/day; heart 0.01; lung 0.01–0.03, generally starting toward the lower range. Pediatric liver IV label dose is 0.03–0.05 mg/kg/day; other pediatric IV organ doses are not invented here. Stop IV as soon as oral is tolerated; first capsule dose 8–12 hours after stopping infusion. Continuous-infusion concentrations cannot be interpreted as oral trough-equivalent exposure. Observe continuously for at least the first 30 minutes, then frequently, for anaphylaxis. Pharmacy dilution uses 0.004–0.02 mg/mL in saline or 5% dextrose with appropriate non-PVC materials; no IV push."
+      ],
+      "support": [
+        {
+          "source_id": "prograf",
+          "sections": [
+            "2.1–2.3",
+            "2.7"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Prograf granules and food consistency",
+      "assertions": [
+        "IR capsules/granules may be taken with/without food but consistently the same way. Do not open/crush capsules. Use whole granule packets; if needed, round a dose up using one additional 0.2-mg packet per label. Empty into a glass cup with 15–30 mL room-temperature water, mix and give immediately; granules do not fully dissolve. Rinse cup/non-PVC oral syringe with the same water volume and administer rinse. Do not sprinkle granules on food or use PVC equipment."
+      ],
+      "support": [
+        {
+          "source_id": "prograf",
+          "sections": [
+            "2.1",
+            "2.8",
+            "16.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Topical dosing",
+      "assertions": [
+        "Apply the minimum thin layer to involved skin twice daily, gently rub in, and stop when signs/symptoms resolve. Age 2–15: 0.03% only; age ≥16: 0.03% or 0.1%. Avoid continuous long-term use, occlusive dressings, oral/ocular application and immediate bathing after application. Reevaluate diagnosis if no improvement within six weeks. Moisturizer, when advised, follows ointment."
+      ],
+      "support": [
+        {
+          "source_id": "topical",
+          "sections": [
+            "DOSAGE AND ADMINISTRATION",
+            "Medication Guide"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Missed once-daily doses and organ-function adjustment",
+      "assertions": [
+        "Astagraf permits a missed dose within 14 hours of scheduled time; Envarsus within 15 hours. Beyond that, wait for the next usual dose; never double. Systemic tacrolimus organ dysfunction and interactions require close TDM: severe liver impairment may require lower dosing, and nephrotoxicity can require reduction/interruption despite minimal unchanged renal elimination. No universal CrCl percentage adjustment exists."
+      ],
+      "support": [
+        {
+          "source_id": "astagraf",
+          "sections": [
+            "2.1",
+            "2.3",
+            "2.4",
+            "5.6"
+          ]
+        },
+        {
+          "source_id": "envarsus",
+          "sections": [
+            "2.1",
+            "2.4",
+            "2.5",
+            "5.5"
+          ]
+        },
+        {
+          "source_id": "prograf",
+          "sections": [
+            "2.4",
+            "2.5",
+            "2.6"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Warnings and precautions",
+      "assertions": [
+        "Systemic products: serious/opportunistic infection and malignancy; monitor skin/EBV-related PTLD risk, rejection and infection together. Nephrotoxicity, neurotoxicity/PRES/seizures, new diabetes, hyperkalemia, hypertension, QT prolongation and thrombotic microangiopathy require assessment. Avoid congenital long-QT syndrome; consider ECG/electrolytes with risk. Prograf IV can cause anaphylaxis due to castor-oil excipient; myocardial hypertrophy and pure red-cell aplasia are also described. Sirolimus combinations have organ-specific harmful outcomes and TMA risk. Medication errors between IR and ER can cause rejection or toxicity.",
+        "Ointment: avoid immunocompromised patients, malignant/premalignant skin and major barrier-defect conditions such as Netherton syndrome because absorption can increase. Resolve infection at treatment sites before starting; herpes/eczema-herpeticum risk and unexplained persistent lymphadenopathy need assessment. Minimize sunlight/UV; do not use occlusion. Extensive disease/renal predisposition can increase systemic risk. Reevaluate unresponsive lesions that might mimic eczema."
+      ],
+      "support": [
+        {
+          "source_id": "prograf",
+          "sections": [
+            "5"
+          ]
+        },
+        {
+          "source_id": "astagraf",
+          "sections": [
+            "5"
+          ]
+        },
+        {
+          "source_id": "envarsus",
+          "sections": [
+            "5"
+          ]
+        },
+        {
+          "source_id": "topical",
+          "sections": [
+            "WARNINGS",
+            "PRECAUTIONS / General, Infections, Lymphadenopathy, Sun Exposure, Renal Insufficiency"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Contraindications",
+      "assertions": [
+        "Prograf and Astagraf formally contraindicate tacrolimus hypersensitivity; Prograf IV also contraindicates HCO-60 hypersensitivity. Envarsus and ointment contraindicate tacrolimus or product-component hypersensitivity. Congenital QT, organ risks, immune status and topical age limits retain their actual warning/indication classifications. Never substitute an IV excipient restriction for a blanket allergy to all ointments."
+      ],
+      "support": [
+        {
+          "source_id": "prograf",
+          "sections": [
+            "4"
+          ]
+        },
+        {
+          "source_id": "astagraf",
+          "sections": [
+            "4"
+          ]
+        },
+        {
+          "source_id": "envarsus",
+          "sections": [
+            "4"
+          ]
+        },
+        {
+          "source_id": "topical",
+          "sections": [
+            "CONTRAINDICATIONS"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Boxed warnings: systemic infection/cancer; topical uncertainty",
+      "assertions": [
+        "Systemic labels warn that serious infections and malignancies can lead to hospitalization/death. Astagraf additionally warns of increased mortality in female liver-transplant recipients and is not approved for liver transplantation. The topical boxed warning states long-term safety is unestablished and rare skin/lymphoid malignancies have been reported without an established causal link; avoid continuous long-term use and restrict application to involved eczema, with no use under age two. Do not describe proven topical cancer causation."
+      ],
+      "support": [
+        {
+          "source_id": "prograf",
+          "sections": [
+            "Boxed warning"
+          ]
+        },
+        {
+          "source_id": "astagraf",
+          "sections": [
+            "Boxed warning"
+          ]
+        },
+        {
+          "source_id": "envarsus",
+          "sections": [
+            "Boxed warning"
+          ]
+        },
+        {
+          "source_id": "topical",
+          "sections": [
+            "Boxed warning",
+            "WARNINGS"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Adverse reactions and overdose",
+      "assertions": [
+        "Systemic trials report tremor, headache, diarrhea/nausea, hypertension, renal abnormalities, hyperkalemia, low magnesium, infection and glucose abnormalities; frequency depends on organ and co-therapy. Topical burning/stinging/pruritus is common early, with folliculitis, infections and alcohol-related flushing reported. Systemic overdose needs clinical/poison assessment and supportive care; high binding makes dialysis ineffective. Ointment must not be swallowed; accidental ingestion needs immediate medical advice."
+      ],
+      "support": [
+        {
+          "source_id": "prograf",
+          "sections": [
+            "6",
+            "10"
+          ]
+        },
+        {
+          "source_id": "astagraf",
+          "sections": [
+            "6",
+            "10"
+          ]
+        },
+        {
+          "source_id": "envarsus",
+          "sections": [
+            "6",
+            "10"
+          ]
+        },
+        {
+          "source_id": "topical",
+          "sections": [
+            "ADVERSE REACTIONS",
+            "OVERDOSAGE",
+            "Medication Guide"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "CYP3A inhibitors, inducers and cannabidiol",
+      "assertions": [
+        "Strong inhibitors including azole antifungals, ritonavir-containing therapies, macrolides and grapefruit can sharply raise systemic tacrolimus; strong inducers such as rifampin/rifabutin, anticonvulsants and St John’s wort can lower it. Adjust with early/frequent whole-blood monitoring and exact label guidance, not a universal fractional dose rule. Prograf label voriconazole/posaconazole starts reduce Prograf to one-third before level-based retitration; do not extrapolate that instruction to every inhibitor or formulation. Calcium-channel blockers, letermovir and other moderate inhibitors also require review. Cannabidiol can raise levels and calls for close monitoring/possible reduction."
+      ],
+      "support": [
+        {
+          "source_id": "prograf",
+          "sections": [
+            "7 / CYP3A interactions",
+            "7.3 / Cannabidiol",
+            "5 / Drug interactions"
+          ]
+        },
+        {
+          "source_id": "astagraf",
+          "sections": [
+            "7 / CYP3A interactions",
+            "7.3 / Cannabidiol",
+            "5 / Drug interactions"
+          ]
+        },
+        {
+          "source_id": "envarsus",
+          "sections": [
+            "7 / CYP3A interactions",
+            "7.3 / Cannabidiol",
+            "5 / Drug interactions"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Other systemic interactions",
+      "assertions": [
+        "Do not coadminister cyclosporine; Prograf requires at least 24 hours between stopping one and starting the other, longer with elevated levels. Nephrotoxic drugs, potassium-raising agents, QT drugs and mTOR inhibitors can amplify organ risks; monitor appropriate parameters. HCV direct-acting antiviral treatment can change clearance as liver function improves, requiring closer TDM. Vaccines should be coordinated before transplant when possible; avoid live vaccines during systemic therapy, and non-live vaccine response may be reduced."
+      ],
+      "support": [
+        {
+          "source_id": "prograf",
+          "sections": [
+            "2.1",
+            "5 / Sirolimus, QT, Immunizations",
+            "7"
+          ]
+        },
+        {
+          "source_id": "astagraf",
+          "sections": [
+            "2.1",
+            "5 / Sirolimus, QT, Immunizations",
+            "7"
+          ]
+        },
+        {
+          "source_id": "envarsus",
+          "sections": [
+            "2.1",
+            "5 / Sirolimus, QT, Immunizations",
+            "7"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Topical interactions",
+      "assertions": [
+        "Formal topical interaction studies were not performed. Systemic interactions are less likely with low absorption but cannot be excluded, particularly widespread/erythrodermic disease and CYP3A4 inhibitors such as azoles, erythromycin or calcium-channel blockers. Alcohol can produce facial/skin flushing. Do not apply a transplant-level dose-reduction formula to skin ointment."
+      ],
+      "support": [
+        {
+          "source_id": "topical",
+          "sections": [
+            "Drug Interactions",
+            "Medication Guide"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Systemic pregnancy and lactation",
+      "assertions": [
+        "Tacrolimus can cause fetal harm; human transplant data have reported adverse pregnancy outcomes and neonatal renal dysfunction/hyperkalemia. Maternal disease and transplant status also increase risk. Coordinate transplant/obstetric management, monitor relevant maternal/neonatal parameters and offer the transplantation pregnancy registry. Systemic labels report milk presence with insufficient infant/production assessments and advise balancing breastfeeding benefits, maternal need and infant risks. Do not abruptly remove transplant immunosuppression."
+      ],
+      "support": [
+        {
+          "source_id": "prograf",
+          "sections": [
+            "8.1",
+            "8.2",
+            "8.3",
+            "17"
+          ]
+        },
+        {
+          "source_id": "astagraf",
+          "sections": [
+            "8.1",
+            "8.2",
+            "8.3",
+            "17"
+          ]
+        },
+        {
+          "source_id": "envarsus",
+          "sections": [
+            "8.1",
+            "8.2",
+            "8.3",
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Topical pregnancy and lactation",
+      "assertions": [
+        "Use during pregnancy only if maternal benefit justifies potential fetal risk; topical data are limited and systemic exposure is generally lower. The selected ointment label advises deciding between discontinuing nursing or the medicine because milk exposure/infant concerns are based partly on systemic tacrolimus. This is label advice, not proof that topical milk exposure matches transplant dosing; individualized specialist review is required."
+      ],
+      "support": [
+        {
+          "source_id": "topical",
+          "sections": [
+            "Pregnancy",
+            "Nursing Mothers"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Age and formulation limitations",
+      "assertions": [
+        "Prograf has adult and pediatric kidney/liver/heart/lung use with higher typical pediatric requirements. Astagraf’s pediatric kidney indication requires intact-capsule ability and supporting data include age ≥4; Envarsus pediatric safety/effectiveness is unestablished. Ointment is not for age <2, and age 2–15 receives 0.03% only. Older systemic recipients need careful organ-function, interaction and tolerability assessment."
+      ],
+      "support": [
+        {
+          "source_id": "prograf",
+          "sections": [
+            "8.4",
+            "8.5"
+          ]
+        },
+        {
+          "source_id": "astagraf",
+          "sections": [
+            "1",
+            "8.4",
+            "8.5"
+          ]
+        },
+        {
+          "source_id": "envarsus",
+          "sections": [
+            "8.4",
+            "8.5"
+          ]
+        },
+        {
+          "source_id": "topical",
+          "sections": [
+            "Pediatric Use",
+            "Geriatric Use"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Kidney and liver considerations",
+      "assertions": [
+        "Systemic renal impairment warrants cautious lower-end exposure because nephrotoxicity is possible even though unchanged renal clearance is minimal. Severe hepatic impairment (Child–Pugh ≥10) reduces clearance and can require lower systemic dosing with close levels. Do not invent fixed reductions or transplant-independent trough targets. Topical organ-impairment PK studies are absent; adjustment is not generally expected, but barrier defects/large-area application and renal predisposition warrant caution."
+      ],
+      "support": [
+        {
+          "source_id": "prograf",
+          "sections": [
+            "2.4",
+            "2.5",
+            "8.6",
+            "8.7",
+            "12.3"
+          ]
+        },
+        {
+          "source_id": "astagraf",
+          "sections": [
+            "2.3",
+            "8.6",
+            "8.7"
+          ]
+        },
+        {
+          "source_id": "envarsus",
+          "sections": [
+            "2.4",
+            "8.6",
+            "8.7"
+          ]
+        },
+        {
+          "source_id": "topical",
+          "sections": [
+            "Pharmacokinetics / Renal and hepatic insufficiency",
+            "PRECAUTIONS / Renal Insufficiency"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Mechanism",
+      "assertions": [
+        "Tacrolimus binds FKBP-12 and inhibits calcineurin-dependent T-cell signaling and cytokine production. The exact clinical mechanism in atopic dermatitis is not established, despite these laboratory effects. Topical treatment does not supply controlled systemic transplant exposure."
+      ],
+      "support": [
+        {
+          "source_id": "prograf",
+          "sections": [
+            "12.1"
+          ]
+        },
+        {
+          "source_id": "astagraf",
+          "sections": [
+            "12.1"
+          ]
+        },
+        {
+          "source_id": "envarsus",
+          "sections": [
+            "12.1"
+          ]
+        },
+        {
+          "source_id": "topical",
+          "sections": [
+            "Mechanism of Action"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Pharmacokinetics",
+      "assertions": [
+        "Tacrolimus has variable oral absorption, extensive CYP3A metabolism, high erythrocyte association/protein binding and primarily biliary/fecal metabolite elimination; little unchanged drug is excreted in urine. Food and IR/ER delivery change exposure. Topical absorption is usually low and declines as eczema heals, but extensive barrier damage can raise levels. Whole-blood assays differ from plasma and immunoassays can read higher than LC-MS/MS due to metabolite cross-reactivity."
+      ],
+      "support": [
+        {
+          "source_id": "prograf",
+          "sections": [
+            "12.3",
+            "2.6"
+          ]
+        },
+        {
+          "source_id": "astagraf",
+          "sections": [
+            "12.3",
+            "2.4"
+          ]
+        },
+        {
+          "source_id": "envarsus",
+          "sections": [
+            "12.3",
+            "2.5"
+          ]
+        },
+        {
+          "source_id": "topical",
+          "sections": [
+            "Pharmacokinetics"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Transplant monitoring",
+      "assertions": [
+        "Follow the exact organ/time/co-therapy trough range, with whole-blood validated assay and actual sampling time. Astagraf and Envarsus require at least two measurements on separate days during the first week after initiation or relevant dose/interaction/organ-function changes; steady state is approximately seven days. Follow kidney/liver function, potassium, magnesium, glucose, BP, infection, neurologic symptoms and skin malignancy risk. Levels do not replace clinical graft assessment/biopsy. Review CYP3A/CBD and formulation whenever results change unexpectedly."
+      ],
+      "support": [
+        {
+          "source_id": "prograf",
+          "sections": [
+            "2 / TDM",
+            "5"
+          ]
+        },
+        {
+          "source_id": "astagraf",
+          "sections": [
+            "2 / TDM",
+            "5"
+          ]
+        },
+        {
+          "source_id": "envarsus",
+          "sections": [
+            "2 / TDM",
+            "5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Topical monitoring",
+      "assertions": [
+        "Assess involved areas, response, use duration, skin infection, persistent lymph nodes and sun exposure. Reevaluate after six weeks without improvement; investigate atypical lesions. Routine transplant-style trough testing is not a universal topical label requirement, but systemic absorption risk or toxicity signs can warrant targeted assessment."
+      ],
+      "support": [
+        {
+          "source_id": "topical",
+          "sections": [
+            "WARNINGS",
+            "PRECAUTIONS",
+            "DOSAGE AND ADMINISTRATION"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Patient counseling",
+      "assertions": [
+        "Confirm name, release type, route and capsule/tablet appearance at every refill; never change products or doses independently. Systemic recipients should keep dose/food timing consistent, avoid grapefruit, review new medicines/supplements and report fever, reduced urine, confusion/severe headache, tremor or glucose symptoms. Follow the particular missed-dose rule. Ointment users apply only thin affected-area layers, avoid UV/occlusion, stop when clear and report infection or nonresponse; never swallow it."
+      ],
+      "support": [
+        {
+          "source_id": "prograf",
+          "sections": [
+            "17",
+            "Patient information",
+            "Instructions for Use"
+          ]
+        },
+        {
+          "source_id": "astagraf",
+          "sections": [
+            "17",
+            "Medication Guide"
+          ]
+        },
+        {
+          "source_id": "envarsus",
+          "sections": [
+            "17",
+            "Medication Guide"
+          ]
+        },
+        {
+          "source_id": "topical",
+          "sections": [
+            "Medication Guide"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Representative products",
+      "assertions": [
+        "Prograf 1 mg: white oblong capsule marked 617; 100-count NDC 0469-0617-73. Astagraf XL 1 mg: white cap/orange body, 1 mg/677; 30-count NDC 0469-0677-73. Envarsus XR 1 mg: white/off-white oval tablet marked 1/TCS; 30-count NDC 68992-3010-3. Glenmark ointment 0.03%, 30-g tube NDC 68462-881-35. Verify actual manufacturer/package; these products are not mutually substitutable."
+      ],
+      "support": [
+        {
+          "source_id": "prograf",
+          "sections": [
+            "16"
+          ]
+        },
+        {
+          "source_id": "astagraf",
+          "sections": [
+            "16"
+          ]
+        },
+        {
+          "source_id": "envarsus",
+          "sections": [
+            "16"
+          ]
+        },
+        {
+          "source_id": "topical",
+          "sections": [
+            "HOW SUPPLIED"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Dosage forms and strengths",
+      "assertions": [
+        "Prograf IR capsules 0.5, 1, 5 mg; granule packets 0.2 or 1 mg; IV concentrate 5 mg/mL in 1-mL ampules. Astagraf XL ER capsules 0.5, 1, 5 mg. Envarsus XR ER tablets 0.75, 1, 4 mg. Glenmark skin ointment 0.03% and 0.1%. Verify the strength printed on the actual dispensed tube."
+      ],
+      "support": [
+        {
+          "source_id": "prograf",
+          "sections": [
+            "3",
+            "16"
+          ]
+        },
+        {
+          "source_id": "astagraf",
+          "sections": [
+            "3",
+            "16"
+          ]
+        },
+        {
+          "source_id": "envarsus",
+          "sections": [
+            "3",
+            "16"
+          ]
+        },
+        {
+          "source_id": "topical",
+          "sections": [
+            "INDICATIONS AND USAGE",
+            "HOW SUPPLIED",
+            "Product ingredient metadata"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Storage and handling",
+      "assertions": [
+        "Prograf capsules/granules and ointment: 20–25°C, excursions 15–30°C. Astagraf/Envarsus: 25°C, excursions 15–30°C. Prograf IV concentrate: 5–25°C; diluted infusion in suitable glass/polyethylene containers must be discarded after 24 hours, with no PVC or alkaline pH≥9 co-infusion. Follow hazardous-drug handling precautions for systemic powder/granules/spills; use disposable gloves for preparation and avoid contact/inhalation. Granule-water suspension is given immediately. Keep ointment tube capped and inaccessible to children."
+      ],
+      "support": [
+        {
+          "source_id": "prograf",
+          "sections": [
+            "2.7",
+            "2.8",
+            "16"
+          ]
+        },
+        {
+          "source_id": "astagraf",
+          "sections": [
+            "16"
+          ]
+        },
+        {
+          "source_id": "envarsus",
+          "sections": [
+            "16"
+          ]
+        },
+        {
+          "source_id": "topical",
+          "sections": [
+            "HOW SUPPLIED",
+            "Medication Guide"
+          ]
+        }
+      ]
+    }
+  ],
+  "material_errors": [],
+  "gaps": [],
+  "limitations": [
+    "Detailed transplant center protocols, nonlabeled organ/formulation combinations, Astagraf conversion beyond explicit label regimens, and off-label dermatologic uses are excluded. Pediatric IV doses are only stated where the selected label supplies an explicit organ-specific regimen.",
+    "Selected Glenmark SPL has an isolated erroneous 0.3% display-panel transcription beside the correct 0.03% panel with the same NDC. Approved strengths, ingredients, dosing and package identity support only 0.03%/0.1%; 0.3% is not propagated.",
+    "Lactation statements are specifically label recommendations, not a comprehensive current LactMed review; no proven infant safety or equal topical/systemic exposure is asserted."
+  ],
+  "source_discrepancies": [
+    {
+      "issue": "Glenmark SPL contains one display-panel text calling NDC68462-881-94 0.3%, adjacent to correct 0.03% text with the same NDC.",
+      "resolution": "Ingredient, indication, dose and supply records support only0.03% and0.1%. Erroneous0.3% never used for clinical dosing/strength identity; exact discrepancy recorded for source audit."
+    }
+  ],
+  "regulatory_identity": [
+    {
+      "source_file": "prograf",
+      "label_approval_records": [
+        {
+          "application": {
+            "extension": "NDA050708",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "NDA"
+          }
+        },
+        {
+          "application": {
+            "extension": "NDA050708",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "NDA"
+          }
+        },
+        {
+          "application": {
+            "extension": "NDA050708",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "NDA"
+          }
+        },
+        {
+          "application": {
+            "extension": "NDA050709",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "NDA"
+          }
+        },
+        {
+          "application": {
+            "extension": "NDA210115",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "NDA"
+          }
+        },
+        {
+          "application": {
+            "extension": "NDA210115",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "NDA"
+          }
+        }
+      ]
+    },
+    {
+      "source_file": "astagraf",
+      "label_approval_records": [
+        {
+          "application": {
+            "extension": "NDA204096",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "NDA"
+          }
+        },
+        {
+          "application": {
+            "extension": "NDA204096",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "NDA"
+          }
+        },
+        {
+          "application": {
+            "extension": "NDA204096",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "NDA"
+          }
+        }
+      ]
+    },
+    {
+      "source_file": "envarsus",
+      "label_approval_records": [
+        {
+          "application": {
+            "extension": "NDA206406",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "NDA"
+          }
+        },
+        {
+          "application": {
+            "extension": "NDA206406",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "NDA"
+          }
+        },
+        {
+          "application": {
+            "extension": "NDA206406",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "NDA"
+          }
+        }
+      ]
+    },
+    {
+      "source_file": "tacrolimus-ointment",
+      "label_approval_records": [
+        {
+          "application": {
+            "extension": "ANDA210393",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73584",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "ANDA"
+          }
+        },
+        {
+          "application": {
+            "extension": "ANDA210393",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73584",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "ANDA"
+          }
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "schema": "validateMonograph: zero errors",
+    "blueprint_sections": "Exact eight IDs/titles/order, four Safety core cards, three Product core cards and three hero tuples.",
+    "mobile_content": "Two-column prose tables with short spaced headings and natural wrapping; rendered QA delegated to release owner.",
+    "source_method": "Current public full selected product-label clinical sections reviewed, including administration/IFUs. Formulation-specific scope and unsupported populations explicitly limited; no paywalled access claimed."
+  },
+  "front_matter_assertion_map": {
+    "hero_facts": [
+      [
+        "Therapeutic class",
+        "Calcineurin inhibitor"
+      ],
+      [
+        "Systemic role",
+        "Transplant rejection prophylaxis"
+      ],
+      [
+        "Topical role",
+        "Second-line atopic dermatitis"
+      ]
+    ],
+    "essential": {
+      "title": "Verify route and release type; systemic therapy requires TDM.",
+      "text": "IR, ER capsules, ER tablets and ointment are different products. Wrong substitution can cause rejection or toxicity. Review CYP3A/CBD, renal function, glucose and potassium. Topical use is intermittent and age/strength-limited, with a distinct boxed warning.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "support": {
+      "prograf": [
+        "1",
+        "2",
+        "5",
+        "7"
+      ],
+      "astagraf": [
+        "1",
+        "2",
+        "5"
+      ],
+      "envarsus": [
+        "1",
+        "2",
+        "5"
+      ],
+      "topical": [
+        "INDICATIONS AND USAGE",
+        "WARNINGS",
+        "DOSAGE AND ADMINISTRATION"
+      ]
+    }
+  }
+}

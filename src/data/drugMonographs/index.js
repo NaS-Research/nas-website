@@ -189,6 +189,16 @@ import { morphine } from "./morphine.js";
 import { doxazosin } from "./doxazosin.js";
 import { amlodipine_benazepril } from "./amlodipine-benazepril.js";
 import { nirmatrelvir_ritonavir } from "./nirmatrelvir-ritonavir.js";
+import { emtricitabineTenofovir } from "./emtricitabine-tenofovir.js";
+import { budesonide } from "./budesonide.js";
+import { tacrolimus } from "./tacrolimus.js";
+import { dupilumab } from "./dupilumab.js";
+import { enalapril } from "./enalapril.js";
+import { anastrozole } from "./anastrozole.js";
+import { melatonin } from "./melatonin.js";
+import { torsemide } from "./torsemide.js";
+import { polyethylene_glycol_3350 } from "./polyethylene-glycol-3350.js";
+import { nitroglycerin } from "./nitroglycerin.js";
 
 export const reviewedDrugMonographs = {
   "atorvastatin": atorvastatin,
@@ -381,4 +391,14 @@ export const reviewedDrugMonographs = {
   "doxazosin": doxazosin,
   "amlodipine-benazepril": amlodipine_benazepril,
   "nirmatrelvir-ritonavir": nirmatrelvir_ritonavir,
+  "emtricitabine-tenofovir": emtricitabineTenofovir,
+  "budesonide": budesonide,
+  "tacrolimus": tacrolimus,
+  "dupilumab": dupilumab,
+  "enalapril": enalapril,
+  "anastrozole": anastrozole,
+  "melatonin": melatonin,
+  "torsemide": torsemide,
+  "polyethylene-glycol-3350": polyethylene_glycol_3350,
+  "nitroglycerin": nitroglycerin,
 };
