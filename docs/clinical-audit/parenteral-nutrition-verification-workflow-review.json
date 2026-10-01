@@ -1,0 +1,293 @@
+{
+  "date": "2026-10-01",
+  "status": "verified",
+  "statusScope": "One retained PN verification-workflow question corrected and fully compared with the supplied book.",
+  "wholeModuleVerified": false,
+  "wholeChapterVerified": false,
+  "baseCommit": "4750183941b6275693a6ae1edc18a0c2b3fe60f7",
+  "sourcePolicy": {
+    "primarySource": "Supplied private RxPrep2023 course book",
+    "bookOnly": true,
+    "outsideSourcesOpenedThisUnit": false,
+    "expandedPnSourceException": "still awaiting explicit answer",
+    "privateBookAndPageImagesOutsideGit": true
+  },
+  "sourceRead": {
+    "chapter17": {
+      "printedPages": [
+        277,
+        278
+      ],
+      "pdfPages": [
+        285,
+        286
+      ],
+      "textAndRenderedPagesReadAgain": true,
+      "scope": "Quantity, visual/container inspection and label fields only. No adjacent old BUD/category or endotoxin/sterilization claim adopted."
+    },
+    "chapter76": {
+      "printedPages": [
+        942,
+        942
+      ],
+      "pdfPages": [
+        952,
+        952
+      ],
+      "completeTextAndRenderedWorkflowRead": true,
+      "scope": "Medication order review, compounding, pharmacist check and delivery steps only. Not whole Chapter76."
+    },
+    "finishedQuestionComparedAgain": true,
+    "wholeBookTextSearch": "PN/refeeding/thiamine/lipid/compatibility search used only to locate dependencies; negative hits do not prove source absence."
+  },
+  "questionCoverageUpdates": [
+    {
+      "id": "parenteral-nutrition-042",
+      "status": "verified",
+      "kind": "retained question clarified and source reconciled",
+      "before": {
+        "id": "parenteral-nutrition-042",
+        "question": "What does a complete final verification include?",
+        "choices": [
+          "Order match, ingredients, quantities, label, container, appearance, and validated process",
+          "Appearance alone",
+          "Patient weight alone",
+          "Pump rate alone"
+        ],
+        "answer": 0,
+        "rationale": "PN safety depends on verifying the complete order-to-product system.",
+        "reviewHref": "#compounding-safety"
+      },
+      "after": {
+        "id": "parenteral-nutrition-042",
+        "question": "Which set spans order review, in-process checks, and final PN inspection?",
+        "choices": [
+          "Order match, ingredients, quantities, label, container integrity, appearance, and compounding checks",
+          "Appearance alone",
+          "Patient weight alone",
+          "Pump rate alone"
+        ],
+        "answer": 0,
+        "rationale": "The book describes pharmacist order review, checking the actual ingredient volume before compounding continues, and inspecting the finished preparation and its container. Required label information is another check. A normal appearance alone cannot verify the order, amounts, or labeling.",
+        "reviewHref": "#compounding-safety"
+      },
+      "contentSHA256": "16f593aae0cedc40c5986b94f8679e7cbeaffe40946c315f8e9fa73baa890e41",
+      "source": [
+        {
+          "chapter": 17,
+          "printedPages": [
+            277,
+            278
+          ],
+          "pdfPages": [
+            285,
+            286
+          ]
+        },
+        {
+          "chapter": 76,
+          "printedPages": [
+            942,
+            942
+          ],
+          "pdfPages": [
+            952,
+            952
+          ]
+        }
+      ],
+      "allChoicesKeyRationaleComparedAgain": true,
+      "mapping": {
+        "orderMatchIngredients": "Chapter76 rendered workflow separates pharmacist order review, preparation/labeling, pharmacist check and correct drug/dose/patient administration. Chapter17 labels identify ingredients and amounts.",
+        "quantitiesInProcess": "Chapter17 requires seeing the actual correct ingredient volume in the syringe before compounding continues.",
+        "label": "Chapter17 requires ingredient names/amounts, total volume, route, storage and beyond-use information; no particular BUD rule is adopted.",
+        "containerAndAppearance": "Chapter17 directs finished-product particulate/precipitate/cloudiness inspection and checking the container for leakage.",
+        "compoundingChecks": "Chapter76 directs good compounding practices between order review and delivery. This general process check does not assert that the old risk categories, a present-day protocol, or a particular modern process has been independently validated.",
+        "distractors": "Appearance, weight or pump rate alone omit the separate source-required order/quantity/label/container checks."
+      },
+      "reasonForRepair": "The old stem called the combined checks a complete final verification, although the source requires a quantity check before compounding continues. The revised stem spans order review, in-process checks and final inspection; the explanation identifies the source stages and avoids an unsupported claim of complete process validation.",
+      "idAnswerAndReviewAnchorPreserved": true,
+      "threeDistractorsPreserved": true,
+      "scope": "Entire revised question supported by the supplied book; no current USP/filter guidance or full PN module closure."
+    }
+  ],
+  "coverage": {
+    "baseEvidence": "parenteral-nutrition-fluid-label-review.json",
+    "baseVerifiedBank": 93,
+    "currentVerifiedBank": 94,
+    "bank": 134,
+    "remainingBank": 40,
+    "additionalVerifiedId": "parenteral-nutrition-042",
+    "other133ObjectsAndStatusesUnchanged": true,
+    "remainingBankItemIds": [
+      "parenteral-nutrition-003",
+      "parenteral-nutrition-005",
+      "parenteral-nutrition-006",
+      "parenteral-nutrition-007",
+      "parenteral-nutrition-008",
+      "parenteral-nutrition-011",
+      "parenteral-nutrition-012",
+      "parenteral-nutrition-013",
+      "parenteral-nutrition-014",
+      "parenteral-nutrition-015",
+      "parenteral-nutrition-016",
+      "parenteral-nutrition-020",
+      "parenteral-nutrition-022",
+      "parenteral-nutrition-023",
+      "parenteral-nutrition-024",
+      "parenteral-nutrition-025",
+      "parenteral-nutrition-027",
+      "parenteral-nutrition-030",
+      "parenteral-nutrition-031",
+      "parenteral-nutrition-032",
+      "parenteral-nutrition-033",
+      "parenteral-nutrition-034",
+      "parenteral-nutrition-036",
+      "parenteral-nutrition-037",
+      "parenteral-nutrition-038",
+      "parenteral-nutrition-039",
+      "parenteral-nutrition-040",
+      "parenteral-nutrition-041",
+      "parenteral-nutrition-043",
+      "parenteral-nutrition-044",
+      "parenteral-nutrition-045",
+      "parenteral-nutrition-047",
+      "parenteral-nutrition-048",
+      "parenteral-nutrition-049",
+      "parenteral-nutrition-100",
+      "parenteral-nutrition-102",
+      "parenteral-nutrition-103",
+      "parenteral-nutrition-105",
+      "parenteral-nutrition-106",
+      "parenteral-nutrition-109"
+    ],
+    "embeddedVerified": 4,
+    "embedded": 6,
+    "cumulativeVerified": 4,
+    "cumulative": 5,
+    "cumulativeReviewingId": "parenteral-nutrition-034",
+    "originalTeachingFullyVerified": 1,
+    "originalTeachingRemaining": 23,
+    "figuresPartlySupported": 6,
+    "legacyReaderVerifiedEntries": 8,
+    "legacyReaderEntries": 9,
+    "wholeModuleVerified": false
+  },
+  "validation": {
+    "technical": {
+      "passed": true,
+      "changedIds": [
+        "parenteral-nutrition-042"
+      ],
+      "all134IdsKeysAnchorsPreserved": true,
+      "other133QuestionsUnchanged": true,
+      "otherRuntimeFilesCommittedHead": true,
+      "all134PromptsUnique": true,
+      "changedPromptAndIdGloballyUnique": true,
+      "currentCumulativeUnchanged": true,
+      "bank": 134,
+      "contentSHA256": "775b46d8c444f078b5b75f2476b922ed8371b36a6dcc2982cef52c611891838c",
+      "newMathChecks": 0,
+      "runningMathChecks": 635,
+      "separateSourceExamples": 98
+    },
+    "focusedAssessmentAudit": {
+      "modules": 1,
+      "questions": 134,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "parenteral-nutrition",
+          "lessons": 6,
+          "questions": 134,
+          "minimumLessonCoverage": 12
+        }
+      ]
+    },
+    "build": {
+      "command": "next build --webpack",
+      "passed": true,
+      "exitCode": 0,
+      "staticPages": 567,
+      "exactHeadPlusOneClinicalFile": true,
+      "initialAttempt": "Terminal ENOSPC failure; two finished candidates generated .next directories removed, then retry passed.",
+      "unrelatedFilesAndPrivateSourcePreserved": true
+    },
+    "browser": [
+      {
+        "width": 1440,
+        "target": "parenteral-nutrition-042",
+        "answer": "correct",
+        "questionAndFullExplanationRendered": true,
+        "remediationLinkStable": true,
+        "noOverflow": true,
+        "narrow320": false,
+        "testOnlyControlledShuffle": true,
+        "otherNineItemsOnlyGradedForSubmission": true,
+        "pageErrors": []
+      },
+      {
+        "width": 1440,
+        "target": "parenteral-nutrition-042",
+        "answer": "incorrect",
+        "questionAndFullExplanationRendered": true,
+        "remediationLinkStable": true,
+        "noOverflow": true,
+        "narrow320": false,
+        "testOnlyControlledShuffle": true,
+        "otherNineItemsOnlyGradedForSubmission": true,
+        "pageErrors": []
+      },
+      {
+        "width": 390,
+        "target": "parenteral-nutrition-042",
+        "answer": "correct",
+        "questionAndFullExplanationRendered": true,
+        "remediationLinkStable": true,
+        "noOverflow": true,
+        "narrow320": true,
+        "testOnlyControlledShuffle": true,
+        "otherNineItemsOnlyGradedForSubmission": true,
+        "pageErrors": []
+      },
+      {
+        "width": 390,
+        "target": "parenteral-nutrition-042",
+        "answer": "incorrect",
+        "questionAndFullExplanationRendered": true,
+        "remediationLinkStable": true,
+        "noOverflow": true,
+        "narrow320": true,
+        "testOnlyControlledShuffle": true,
+        "otherNineItemsOnlyGradedForSubmission": true,
+        "pageErrors": []
+      }
+    ],
+    "desktopMobileRenderedQuestionAndFeedbackInspected": true,
+    "existingModuleLessonFigureAndEmbeddedCheckSourcesUnchanged": true,
+    "otherNineSubmissionItemsNotNewClinicalClosures": true
+  },
+  "runningCalculations": {
+    "distinctOriginalOrRetainedChecks": 635,
+    "separateSourceExamples": 98,
+    "newChecksThisUnit": 0
+  },
+  "contentHashes": {
+    "src/data/questionBanks/parenteralNutrition.js": "775b46d8c444f078b5b75f2476b922ed8371b36a6dcc2982cef52c611891838c"
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": null,
+    "push": "pending",
+    "production": "not verified"
+  },
+  "limits": [
+    "Whole adult PN, Chapter11 and checklist entry15 remain reviewing; completed checklist14.",
+    "40 bank questions,23 original teaching sections, six partial figures, two checks, cumulative034 and legacy monitoring remain open.",
+    "Expanded authorization for existing official PN sources is pending; no outside reference opened.",
+    "Current filter/USP disagreements remain preserved and unverified; no old rule adopted."
+  ]
+}

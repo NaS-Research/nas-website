@@ -1119,6 +1119,19 @@
           "remainingMonitoringEntries": 1,
           "wholeCorrespondingModuleVerified": false,
           "evidence": "parenteral-nutrition-legacy-reader-review.json"
+        },
+        {
+          "topic": "PN verification-workflow question source reconciliation",
+          "status": "reviewing",
+          "targets": [
+            "parenteral-nutrition"
+          ],
+          "verifiedQuestionId": "parenteral-nutrition-042",
+          "wholeCorrespondingModuleVerified": false,
+          "evidence": "parenteral-nutrition-verification-workflow-review.json",
+          "scope": "Associated PN assessment94/134 source-verified; no new chapter read/closure.",
+          "verifiedBankItems": 94,
+          "remainingBankItems": 40
         }
       ],
       "moduleSlugs": [
@@ -1137,7 +1150,8 @@
         "Adult PN expanded with 18 book sections/30 original questions; 10 retained GIR prompts clarified and one duplicate revised. 43 independent calculations and full runtime/build/render checks passed. Retained clinical claim provenance and modern-source conflicts remain open.",
         "Adult PN retained conceptual assessment source reconciliation verified in scoped review; whole chapter remains reviewing. parenteral-nutrition-retained-source-review.json",
         "Fluid-first diagram/teaching aligned; four case/explanation repairs verified. Remaining41 bank items and item-specific retained claim boundaries documented; whole module/chapter open.",
-        "Legacy PN reader now includes fluid-first/medication-volume and two-in-one/TNA teaching. Eight of nine scoped study/assessment entries source-verified; complete monitoring still open."
+        "Legacy PN reader now includes fluid-first/medication-volume and two-in-one/TNA teaching. Eight of nine scoped study/assessment entries source-verified; complete monitoring still open.",
+        "PN question042 now distinguishes order/in-process/final verification and is fully source-reconciled; whole module/chapter remains reviewing. parenteral-nutrition-verification-workflow-review.json"
       ],
       "evidence": [
         "parenteral-nutrition-calculations-review.json",
@@ -1147,7 +1161,8 @@
         "parenteral-nutrition-book-expansion-review.json",
         "parenteral-nutrition-retained-source-review.json",
         "parenteral-nutrition-fluid-label-review.json",
-        "parenteral-nutrition-legacy-reader-review.json"
+        "parenteral-nutrition-legacy-reader-review.json",
+        "parenteral-nutrition-verification-workflow-review.json"
       ],
       "pdfRangeStatus": "All 20 pages visually verified",
       "verifiedModules": [
@@ -1357,6 +1372,26 @@
           ],
           "newOriginalQuestion": "parenteral-nutrition-book-034",
           "scope": "Label fields only; no old category/BUD or adjacent endotoxin/sterilization rule adopted."
+        },
+        {
+          "topic": "PN verification-workflow question source reconciliation",
+          "status": "reviewing",
+          "targets": [
+            "parenteral-nutrition"
+          ],
+          "verifiedQuestionId": "parenteral-nutrition-042",
+          "wholeCorrespondingModuleVerified": false,
+          "evidence": "parenteral-nutrition-verification-workflow-review.json",
+          "printedPages": [
+            277,
+            278
+          ],
+          "pdfPages": [
+            285,
+            286
+          ],
+          "textAndRenderedReadAgain": true,
+          "scope": "Quantity, label and container/appearance checks only; adjacent obsolete categories/BUDs not adopted."
         }
       ],
       "moduleSlugs": [
@@ -1365,12 +1400,14 @@
       "findings": [
         "Rendered old risk-category/BUD table conflicts with retained modern PN teaching. Source exception pending; no whole chapter closure.",
         "Measured ingredient and finished-product inspection dependency verified in scoped review; whole chapter remains reviewing. parenteral-nutrition-retained-source-review.json",
-        "Complete label fields added and source-verified; label completeness does not determine the appropriate BUD."
+        "Complete label fields added and source-verified; label completeness does not determine the appropriate BUD.",
+        "PN question042 now distinguishes order/in-process/final verification and is fully source-reconciled; whole module/chapter remains reviewing. parenteral-nutrition-verification-workflow-review.json"
       ],
       "evidence": [
         "parenteral-nutrition-book-expansion-review.json",
         "parenteral-nutrition-retained-source-review.json",
-        "parenteral-nutrition-fluid-label-review.json"
+        "parenteral-nutrition-fluid-label-review.json",
+        "parenteral-nutrition-verification-workflow-review.json"
       ]
     },
     {
@@ -3945,16 +3982,38 @@
           ],
           "textAndFiguresRead": true,
           "scope": "Insertion asepsis and hand hygiene support some retained claims; complete hub/manipulation protocol remains open. No whole chapter or old catheter-replacement schedule adoption."
+        },
+        {
+          "topic": "PN verification-workflow question source reconciliation",
+          "status": "reviewing",
+          "targets": [
+            "parenteral-nutrition"
+          ],
+          "verifiedQuestionId": "parenteral-nutrition-042",
+          "wholeCorrespondingModuleVerified": false,
+          "evidence": "parenteral-nutrition-verification-workflow-review.json",
+          "printedPages": [
+            942,
+            942
+          ],
+          "pdfPages": [
+            952,
+            952
+          ],
+          "textAndRenderedWorkflowRead": true,
+          "scope": "Order review, compounding, pharmacist checking and delivery steps only."
         }
       ],
       "moduleSlugs": [
         "parenteral-nutrition"
       ],
       "findings": [
-        "One-page PN catheter/hand-hygiene dependency reviewed; correct source is Chapter76, not Chapter69. Whole chapter and retained catheter claims not closed."
+        "One-page PN catheter/hand-hygiene dependency reviewed; correct source is Chapter76, not Chapter69. Whole chapter and retained catheter claims not closed.",
+        "PN question042 now distinguishes order/in-process/final verification and is fully source-reconciled; whole module/chapter remains reviewing. parenteral-nutrition-verification-workflow-review.json"
       ],
       "evidence": [
-        "parenteral-nutrition-fluid-label-review.json"
+        "parenteral-nutrition-fluid-label-review.json",
+        "parenteral-nutrition-verification-workflow-review.json"
       ]
     },
     {

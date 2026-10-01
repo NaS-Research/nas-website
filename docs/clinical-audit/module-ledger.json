@@ -256,7 +256,8 @@
         "parenteral-nutrition-book-expansion-review.json",
         "parenteral-nutrition-retained-source-review.json",
         "parenteral-nutrition-fluid-label-review.json",
-        "parenteral-nutrition-legacy-reader-review.json"
+        "parenteral-nutrition-legacy-reader-review.json",
+        "parenteral-nutrition-verification-workflow-review.json"
       ],
       "wholeModuleVerified": false,
       "verifiedExpansion": {
@@ -266,14 +267,14 @@
         "evidence": "parenteral-nutrition-book-expansion-review.json"
       },
       "latestSourceCoverage": {
-        "verifiedBankItems": 93,
+        "verifiedBankItems": 94,
         "totalBankItems": 134,
-        "remainingBankItems": 41,
+        "remainingBankItems": 40,
         "verifiedEmbeddedChecks": 4,
         "verifiedCumulativeItems": 4,
         "fullyVerifiedOriginalTeachingSections": 1,
         "remainingOriginalTeachingSections": 23,
-        "evidence": "parenteral-nutrition-fluid-label-review.json"
+        "evidence": "parenteral-nutrition-verification-workflow-review.json"
       },
       "relatedLegacyReaderReview": {
         "status": "reviewing",
@@ -284,6 +285,11 @@
         "wholeReaderSubmoduleVerified": false,
         "route": "/learn/pharmacy/modules/nutrition-ans-cardiovascular-one#enteral-parenteral-nutrition",
         "evidence": "parenteral-nutrition-legacy-reader-review.json"
+      },
+      "latestVerifiedQuestionRepair": {
+        "id": "parenteral-nutrition-042",
+        "scope": "Order, in-process and final checks source reconciled",
+        "evidence": "parenteral-nutrition-verification-workflow-review.json"
       }
     },
     {
