@@ -1,0 +1,639 @@
+{
+  "drug": "diphenhydramine",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Complete current selected OTC allergy/sleep/topical-combination and prescription injection labels, current injection FDA status and full public FDA high-dose safety communication.",
+  "sources": [
+    {
+      "id": "diphcap",
+      "title": "Benadryl · current25 mg allergy capsules",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bfeae100-e2d1-4607-be3b-2d9b15cd4f7f",
+      "note": "Full public manufacturer label and patient instructions; SPL version 10, effective 20260507. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "10",
+      "effective_date": "20260507",
+      "xml_sha256": "eff0bd4dbdea43f5330ddfb5304dd64f40f4eb38c2e7d570c8d113b25fcac73b",
+      "retrieved_xml": "/tmp/nas-drug-sources/diphcap.xml"
+    },
+    {
+      "id": "diphliq",
+      "title": "Children’s Benadryl · current12.5 mg/5 mL liquid",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fc9181b9-c92d-493e-8d7c-4a4239c6c092",
+      "note": "Full public manufacturer label and patient instructions; SPL version 14, effective 20260724. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "14",
+      "effective_date": "20260724",
+      "xml_sha256": "8e2c9a71b44c35297332df872217b366306686982c99366fd203de34fd466ae5",
+      "retrieved_xml": "/tmp/nas-drug-sources/diphliq.xml"
+    },
+    {
+      "id": "diphsleep",
+      "title": "Chattem · current Unisom SleepMinis",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a9a44c2f-65eb-4a5a-9e72-43652dce57f7",
+      "note": "Full public manufacturer label and patient instructions; SPL version 8, effective 20260114. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "8",
+      "effective_date": "20260114",
+      "xml_sha256": "de8ce7fe7b19492c54a5babacf9c9c1330bbe43141ed96d0a44683cb65f6b188",
+      "retrieved_xml": "/tmp/nas-drug-sources/diphsleep.xml"
+    },
+    {
+      "id": "diphiv",
+      "title": "Cardinal / Hikma ·50 mg/mL injection",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d32d074a-f1b6-4a9a-8e10-e19f0e67c61b",
+      "note": "Full public manufacturer label and patient instructions; SPL version 16, effective 20260505. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "16",
+      "effective_date": "20260505",
+      "xml_sha256": "4ed2f096f66c1e62eae870c8a7c5399fb8aa2c947ee5a0328f7cf4066bdbb553",
+      "retrieved_xml": "/tmp/nas-drug-sources/diphiv.xml"
+    },
+    {
+      "id": "diphcream",
+      "title": "Taro · diphenhydramine2% / zinc acetate0.1% cream",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c89e3de8-7d71-485c-8fc5-2832d6024f16",
+      "note": "Full public manufacturer label and patient instructions; SPL version 6, effective 20250701. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "6",
+      "effective_date": "20250701",
+      "xml_sha256": "bd388373678ee168126f7312c7b139672b31d9ccb3100fe5d318b4f79edfd910",
+      "retrieved_xml": "/tmp/nas-drug-sources/diphcream.xml"
+    },
+    {
+      "id": "diph-fda",
+      "title": "FDA · diphenhydramine high-dose safety communication",
+      "publisher": "U.S. Food and Drug Administration",
+      "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-warns-about-serious-problems-high-doses-allergy-medicine-diphenhydramine-benadryl",
+      "note": "Full public September24,2020 communication retrieved/read; overdose, misuse and storage warnings remain publicly current.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/diph-fda2020.html",
+      "source_sha256": "b3e88be5b9ba0968e7d2758675b54b4d9ab386f3f114d9b18e628ccf4a064f66"
+    },
+    {
+      "id": "ANDA080817",
+      "title": "FDA · ANDA080817 current product record",
+      "publisher": "U.S. Food and Drug Administration",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:ANDA080817&limit=1",
+      "note": "Current official FDA status checked October 1, 2026; status does not establish stock.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/ANDA080817.json",
+      "source_sha256": "007fa1c7f830b601e865769302748221776bc742616198d628cea58677d75c2b"
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "OTC oral and topical uses",
+      "assertions": {
+        "paragraphs": [
+          "Benadryl allergy capsules/liquid relieve labeled allergic runny nose, sneezing, itchy/watery eyes and nose/throat itching; selected capsules also relieve cold runny nose/sneezing. SleepMinis treats occasional sleeplessness, not chronic-insomnia disease management. Selected 2% diphenhydramine/0.1% zinc cream temporarily relieves minor skin pain/itch and dries poison-plant oozing; its combination ingredients and external route are explicit."
+        ]
+      },
+      "source_sections": {
+        "diphcap": [
+          "Uses",
+          "Active ingredient",
+          "Directions"
+        ],
+        "diphliq": [
+          "Uses",
+          "Active ingredient",
+          "Directions"
+        ],
+        "diphsleep": [
+          "Uses",
+          "Active ingredient",
+          "Directions"
+        ],
+        "diphcream": [
+          "Uses",
+          "Active ingredient",
+          "Directions"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Prescription injection indications",
+      "assertions": {
+        "paragraphs": [
+          "When oral therapy is impractical: uncomplicated immediate-type allergic conditions and blood/plasma reactions; anaphylaxis adjunct only after acute symptoms have been controlled with epinephrine/standard care; active motion-sickness treatment and selected parkinsonism circumstances. Do not infer routine OTC infant dosing or a first-line shock treatment from these historical injection indications."
+        ]
+      },
+      "source_sections": {
+        "diphiv": [
+          "INDICATIONS AND USAGE all subsections"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Oral allergy directions",
+      "assertions": {
+        "paragraphs": [
+          "Selected 25 mg capsules every 4–6 hours, maximum 6 doses in 24 hours: age ≥ 12 one or two (25–50 mg); 6–< 12 one (25 mg); below 6 do not use. Children’s 12.5 mg/5 mL liquid: ages 6–11 take 5–10 mL (12.5–25 mg) every 4–6 hours, maximum 6 doses; 2–5 only if doctor-directed; below 2 do not use. Its chart does not provide an adult liquid regimen. Use only its supplied measuring cup; do not transpose another liquid’s concentration."
+        ]
+      },
+      "source_sections": {
+        "diphcap": [
+          "Directions"
+        ],
+        "diphliq": [
+          "Directions"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Occasional sleep and topical directions",
+      "assertions": {
+        "paragraphs": [
+          "SleepMinis 25 mg: age ≥ 12 two capsules (50 mg) at bedtime as needed; below 12 do not use. Consult for continuous sleeplessness > 2 weeks. Not every Unisom product contains diphenhydramine. Selected diphenhydramine 2%/zinc 0.1% cream: age ≥ 2 apply to the affected small area no more than 3–4 times daily; below 2 ask a doctor. Stop/review worsening, persistence > 7 days or rapid recurrence. Never combine either with another diphenhydramine product."
+        ]
+      },
+      "source_sections": {
+        "diphsleep": [
+          "Directions",
+          "Warnings"
+        ],
+        "diphcream": [
+          "Directions",
+          "Warnings"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Adult IV or deep-IM dosing",
+      "assertions": {
+        "paragraphs": [
+          "Selected 50 mg/mL injection: 10–50 mg IV at a rate generally≤25 mg/min or deep IM; 100 mg if required, maximum 400 mg/day. Individualize need/response. This is for supervised parenteral use when oral therapy is impractical; not intradermal, subcutaneous or a local anesthetic."
+        ]
+      },
+      "source_sections": {
+        "diphiv": [
+          "DOSAGE AND ADMINISTRATION adults",
+          "CONTRAINDICATIONS",
+          "WARNINGS"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric IV or deep-IM dosing",
+      "assertions": {
+        "paragraphs": [
+          "Other than premature infants/neonates: 5 mg/kg/day or 150 mg/m²/day, maximum 300 mg/day, divided into four doses; IV rate generally≤25 mg/min or deep IM. These are total daily doses, not per-dose 5 mg/kg. Pediatric safety precautions and exact product concentration/excipients require supervision; do not supply a neonate or OTC infant dose."
+        ]
+      },
+      "source_sections": {
+        "diphiv": [
+          "DOSAGE AND ADMINISTRATION pediatric",
+          "CONTRAINDICATIONS",
+          "Pediatric use"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Organ function and missed dosing",
+      "assertions": {
+        "paragraphs": [
+          "Selected labels give no fixed renal/hepatic adjustment algorithm; evaluate comorbidity and anticholinergic/sedative burden clinically. Allergy schedules have strict daily dose limits; do not double a missed dose. Sleep-aid dosing is at bedtime as needed, not an extra daytime catch-up. Topical exposure cannot be converted into an oral dose."
+        ]
+      },
+      "source_sections": {
+        "diphiv": [
+          "CLINICAL PHARMACOLOGY",
+          "PRECAUTIONS"
+        ],
+        "diphcap": [
+          "Directions"
+        ],
+        "diphsleep": [
+          "Directions"
+        ],
+        "diphcream": [
+          "Directions"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Marked drowsiness, impaired driving and paradoxical childhood excitation can occur. Avoid alcohol and review sedatives/other anticholinergics. Glaucoma, breathing disease and obstructed urination/GI conditions require assessment. Older adults are more prone to dizziness, sedation and hypotension. Never sedate a child or combine diphenhydramine products, including skin products. Injection must be IV/deep IM; subcutaneous/intradermal use can cause necrosis. Topical combination: avoid large areas/eyes and seek advice for chickenpox/measles. FDA warns high doses can cause cardiac injury, seizures, coma or death."
+        ]
+      },
+      "source_sections": {
+        "diphiv": [
+          "WARNINGS",
+          "PRECAUTIONS"
+        ],
+        "diphcap": [
+          "Warnings"
+        ],
+        "diphliq": [
+          "Warnings"
+        ],
+        "diphsleep": [
+          "Warnings"
+        ],
+        "diphcream": [
+          "Warnings"
+        ],
+        "diph-fda": [
+          "Full2020safetycommunication"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Selected injection: neonates/premature infants, nursing mothers, local-anesthetic use and hypersensitivity to diphenhydramine or chemically similar antihistamines. OTC labels instead give indication/product-specific do-not-use ages and duplicate-product prohibitions; oral pregnancy/breastfeeding labels require professional advice. Do not erase the injection’s explicit nursing contraindication or infer one universal age rule for every route."
+        ]
+      },
+      "source_sections": {
+        "diphiv": [
+          "CONTRAINDICATIONS all subsections"
+        ],
+        "diphcap": [
+          "Do not use",
+          "Pregnancy/breastfeeding"
+        ],
+        "diphliq": [
+          "Directions"
+        ],
+        "diphsleep": [
+          "Do not use"
+        ],
+        "diphcream": [
+          "Do not use"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "Selected OTC and injection labels have no boxed warning. FDA high-dose warning, severe sedation/anticholinergic reactions and route-specific restrictions remain significant."
+        ]
+      },
+      "source_sections": {
+        "diphcap": [
+          "Complete label"
+        ],
+        "diphliq": [
+          "Complete label"
+        ],
+        "diphsleep": [
+          "Complete label"
+        ],
+        "diphiv": [
+          "Complete label"
+        ],
+        "diphcream": [
+          "Complete label"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Sedation/dizziness, impaired coordination, dry mouth/nose/throat, blurred vision, GI symptoms and urinary retention are reported; injection experience also includes hypotension/palpitations, hypersensitivity and blood disorders. Overdose may stimulate or depress the CNS, with hallucinations, seizures, coma, cardiac problems or death. Collapse, inability to awaken, breathing trouble or seizure needs emergency care; contact Poison Help 1-800-222-1222. Never induce an improvised home reversal or use a published toxic dose as a safe threshold."
+        ]
+      },
+      "source_sections": {
+        "diphiv": [
+          "ADVERSE REACTIONS complete subsections",
+          "OVERDOSAGE"
+        ],
+        "diph-fda": [
+          "Full2020communication"
+        ],
+        "diphcap": [
+          "Overdose warning"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Interaction review",
+      "assertions": {
+        "paragraphs": [
+          "Alcohol, sedatives, hypnotics and tranquilizers add CNS depression; MAO inhibitors prolong/intensify anticholinergic effects. Review other anticholinergic medicines, glaucoma/urinary symptoms and total exposure. Current OTC labels prohibit combining with any other diphenhydramine product even if applied to skin. The selected cream includes zinc acetate; it is not an interchangeable oral preparation."
+        ]
+      },
+      "source_sections": {
+        "diphiv": [
+          "Drug Interactions",
+          "PRECAUTIONS"
+        ],
+        "diphcap": [
+          "Warnings"
+        ],
+        "diphsleep": [
+          "Warnings"
+        ],
+        "diphcream": [
+          "Do not use"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and older patients",
+      "assertions": {
+        "paragraphs": [
+          "Allergy capsule self-use starts 6, the selected children’s liquid chart 6–11 with doctor-only ages 2–5 and no below 2 use; sleep product starts 12 and topical combination 2. Injection excludes premature infants/neonates and warns overdose may cause fatal hallucinations/convulsions. Older adults have greater sedative/hypotensive susceptibility; assess falls/confusion and alternative treatment rather than add routine nightly dosing."
+        ]
+      },
+      "source_sections": {
+        "diphcap": [
+          "Directions"
+        ],
+        "diphliq": [
+          "Directions"
+        ],
+        "diphsleep": [
+          "Directions"
+        ],
+        "diphcream": [
+          "Directions"
+        ],
+        "diphiv": [
+          "WARNINGS pediatric/elderly",
+          "CONTRAINDICATIONS"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "OTC oral products ask for professional advice. Selected injection’s older pregnancy section notes inadequate controlled human studies and use only if clearly needed; its obsolete letter-category terminology is not a modern guarantee. It specifically contraindicates nursing mothers because of infant antihistamine risk. Discuss the exact route/product and alternatives; no universal safe infant exposure is claimed."
+        ]
+      },
+      "source_sections": {
+        "diphcap": [
+          "Pregnancy/breastfeeding warning"
+        ],
+        "diphsleep": [
+          "Pregnancy/breastfeeding warning"
+        ],
+        "diphiv": [
+          "Pregnancy",
+          "Use in nursing mothers"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "assertions": {
+        "paragraphs": [
+          "The selected labels supply no numeric organ-function dose algorithm. Injection label describes hepatic metabolism and some unchanged renal excretion but explicitly says detailed PK is unavailable. Assess organ disease, concurrent sedatives/anticholinergics and clinical response; do not invent a renal percentage reduction or a route-independent serum target."
+        ]
+      },
+      "source_sections": {
+        "diphiv": [
+          "CLINICAL PHARMACOLOGY",
+          "PRECAUTIONS"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and disposition",
+      "assertions": {
+        "paragraphs": [
+          "Competes with histamine at effector-cell receptor sites; CNS penetration contributes to sedation and anticholinergic effects. Injectable onset is rapid, with wide distribution including CNS; drug is metabolized in liver and partly excreted unchanged in urine. Selected injection PI explicitly lacks detailed PK, so no universal half-life, protein-binding or renal-adjustment number is asserted. Topical activity and exposure depend on product/application."
+        ]
+      },
+      "source_sections": {
+        "diphiv": [
+          "CLINICAL PHARMACOLOGY"
+        ],
+        "diphcream": [
+          "Purpose",
+          "Warnings"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "assertions": {
+        "paragraphs": [
+          "Track benefit, sedation/coordination, paradoxical excitation, breathing, constipation/urination and duplicate exposures. Parenteral dosing requires rate/route verification and observation for BP, reaction and injection-site injury. Reassess sleep problems lasting > 2 weeks and topical symptoms > 7 days. No routine blood diphenhydramine level or universal ECG schedule is specified; suspected overdose needs urgent assessment."
+        ]
+      },
+      "source_sections": {
+        "diphiv": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "diphsleep": [
+          "Stop use"
+        ],
+        "diphcream": [
+          "Stop use"
+        ],
+        "diph-fda": [
+          "Emergency overdose symptoms"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling",
+      "assertions": {
+        "paragraphs": [
+          "Read ingredients of every sleep/allergy/cold/skin product; never combine diphenhydramine or give it to make a child sleep. Follow the exact dose/device and avoid alcohol/driving until effects are known. Injection is clinician-administered, not a home local anesthetic. Do not rely on it instead of epinephrine for anaphylaxis. Secure medicines away from children/teens; urgent overdose symptoms require emergency care."
+        ]
+      },
+      "source_sections": {
+        "diphcap": [
+          "Warnings",
+          "Directions"
+        ],
+        "diphliq": [
+          "Directions",
+          "Warnings"
+        ],
+        "diphiv": [
+          "INDICATIONS",
+          "Information for patients"
+        ],
+        "diph-fda": [
+          "Full2020communication"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "paragraphs": [
+          "Benadryl Allergy Liqui-Gels 25 mg diphenhydramine HCl per liquid-filled capsule; selected 24-capsule carton NDC 50580-228-24. Verify actual package and ingredient; not a stock claim."
+        ]
+      },
+      "source_sections": {
+        "diphcap": [
+          "Active ingredient",
+          "Package label"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Selected oral capsules 25 mg; children’s liquid 12.5 mg/5 mL; SleepMinis 25 mg capsules with 50 mg bedtime dose. Prescription injection 50 mg/mL, selected 1 mL institutional vial with benzethonium chloride; FDA ANDA 080817 Prescription. Taro topical combination diphenhydramine 2% plus zinc acetate 0.1%. OTC oral allergy, sleep and topical labels are monograph categories M 012, M 010 andM 017 respectively, not an assertion that every OTC brand has individual NDA approval."
+        ]
+      },
+      "source_sections": {
+        "diphcap": [
+          "Active ingredient",
+          "Marketing"
+        ],
+        "diphliq": [
+          "Active ingredient",
+          "Marketing"
+        ],
+        "diphsleep": [
+          "Active ingredient",
+          "Marketing"
+        ],
+        "diphcream": [
+          "Active ingredients",
+          "Marketing"
+        ],
+        "diphiv": [
+          "DESCRIPTION",
+          "HOW SUPPLIED"
+        ],
+        "ANDA080817": [
+          "Current products"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Selected allergy capsules/liquid and cream 20–25°C; capsules avoid humidity/heat and protect light, liquid retain outer carton/protect light, cream follow seal/expiry. Injection 20–25°C, excursions 15–30°C, protect light in carton; single-dose institutional package is not child-resistant. SleepMinis selected Drug Facts do not state a numeric storage range; follow its actual package instead of importing another product’s range. Keep all products secure, never swallow cream or inject oral liquid."
+        ]
+      },
+      "source_sections": {
+        "diphcap": [
+          "Other information"
+        ],
+        "diphliq": [
+          "Other information"
+        ],
+        "diphcream": [
+          "Other information"
+        ],
+        "diphiv": [
+          "HOW SUPPLIED",
+          "Storage"
+        ],
+        "diphsleep": [
+          "Complete Drug Facts"
+        ],
+        "diph-fda": [
+          "Secure storage"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "No combination pain/cold-product dosing, infant self-treatment, injectable local-anesthetic use or chronic-insomnia algorithm.",
+    "No invented detailed systemic PK or numeric renal/hepatic adjustment; topical product includes zinc acetate explicitly."
+  ],
+  "resolved_source_findings": [
+    "Injection nursing-mother/neonate contraindications differ from OTC professional-advice wording.",
+    "Pediatric injection5mg/kg is total per24hours dividedfour, not perdose.",
+    "SleepMinis lacks numeric storage instructions in selectedlabel; gap preserved without importing range."
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, essential safety, three hero facts, cited disclosures, four safety cards and three product cards.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending"
+  },
+  "monograph_sha256": "34b7fad5ef7da81f16f3b8d78a82b835b65db34528fe98732fe3dc80847eecb5",
+  "frontmatter_source_map": {
+    "fields": {
+      "name": "Diphenhydramine",
+      "synonym": "Diphenhydramine hydrochloride · Benadryl · selected Unisom products",
+      "description": "A sedating first-generation antihistamine with product-specific OTC allergy/sleep directions and prescription IV/deep-IM use. A selected topical diphenhydramine/zinc combination is separately identified; duplicate oral/topical exposure must be avoided.",
+      "facts": [
+        [
+          "Therapeutic class",
+          "First-generation H 1 antihistamine · anticholinergic"
+        ],
+        [
+          "Representative product",
+          "Benadryl Allergy · 25 mg liquid-filled capsule"
+        ],
+        [
+          "Reference focus",
+          "Oral allergy/sleep · IV/deep IM · selected topical combination"
+        ]
+      ],
+      "essential": {
+        "title": "Avoid duplicate products, sedation hazards and intentional overdose.",
+        "text": "Never combine diphenhydramine products, including skin preparations, or use it to make a child sleepy. High doses can cause serious cardiac problems, seizures, coma or death. Anaphylaxis needs epinephrine and emergency care; diphenhydramine is only an adjunct. Injection route and infant/lactation restrictions differ from OTC labels.",
+        "section": "safety",
+        "link": "Warnings and precautions"
+      }
+    },
+    "source_sections": {
+      "diphcap": [
+        "Active ingredient",
+        "Warnings",
+        "Directions"
+      ],
+      "diphiv": [
+        "INDICATIONS",
+        "CONTRAINDICATIONS"
+      ],
+      "diphcream": [
+        "Active ingredients"
+      ],
+      "diph-fda": [
+        "High-dose warnings"
+      ]
+    }
+  },
+  "review_date": "2026-10-01",
+  "formatting_changes": [
+    "Separator spaces only: dose values, frequencies, indications and source provenance unchanged."
+  ]
+}

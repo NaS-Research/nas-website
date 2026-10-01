@@ -158,7 +158,7 @@ export const drugCategoryByName = {
   "ketoconazole": "Infectious diseases",
   "ketorolac": "Ophthalmology and otology",
   "labetalol": "Cardiovascular and renal",
-  "lactate": "Reproductive and genitourinary",
+  "lactate": "Dermatology",
   "lamotrigine": "Neurology and psychiatry",
   "lansoprazole": "Gastrointestinal",
   "latanoprost": "Ophthalmology and otology",

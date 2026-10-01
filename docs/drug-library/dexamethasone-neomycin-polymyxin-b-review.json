@@ -1,0 +1,703 @@
+{
+  "slug": "dexamethasone-neomycin-polymyxin-b",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "A prescription ophthalmic combination for steroid-responsive inflammation when bacterial infection or its risk warrants an antibacterial component. This profile reviews current selected U.S. Maxitrol suspension and ointment labels, with separate dosing, pediatric evidence and storage; neither is an ear medicine or injectable preparation.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Maxitrol suspension · Harrow full current label",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical PI September 2024; SPL v 5 effective 20251024; API publication Nov 17, 2025. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ecfb954f-5554-0ad2-e053-2995a90a7516"
+    },
+    {
+      "id": "ointment",
+      "title": "Maxitrol ointment · Sandoz full current label",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical PI December 2023; later API publication August 2025; SPL v 2 effective 20231229; API publication Aug 11, 2025. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5776c435-ac60-49b6-8db1-23a3012b9155"
+    }
+  ],
+  "sourceEvidence": {
+    "label": {
+      "splVersion": "5",
+      "effectiveTime": "20251024",
+      "apiPublishedDate": "Nov 17, 2025",
+      "clinicalRevision": "Clinical PI September 2024; SPL v 5 effective 20251024; API publication Nov 17, 2025. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ecfb954f-5554-0ad2-e053-2995a90a7516",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/ecfb954f-5554-0ad2-e053-2995a90a7516.xml",
+      "localEvidence": "/tmp/nas-drug-sources/maxitrol-susp.xml",
+      "sha256": "c6a40f5cf2c935f93fdd8f4bdbb3515cb67fd5618ddc4865d1d6d9c0bf81c1c1",
+      "supportingSections": [
+        "\n                  DESCRIPTION\n               ",
+        "\n                  CLINICAL PHARMACOLOGY\n               ",
+        "\n                  INDICATIONS AND USAGE\n               ",
+        "\n                  CONTRAINDICATIONS\n               ",
+        "\n                  WARNINGS\n               ",
+        "\n                        General\n                     ",
+        "\n                        Information for Patients\n                     ",
+        "\n                        Pregnancy\n                     ",
+        "\n                        Nursing Mothers\n                     ",
+        "\n                        Pediatric Use\n                     ",
+        "\n                        Geriatric Use\n                     ",
+        "\n                  ADVERSE REACTIONS\n               ",
+        "\n                  DOSAGE AND ADMINISTRATION\n               ",
+        "\n                  HOW SUPPLIED\n               ",
+        "",
+        "\n                  PRINCIPAL DISPLAY PANEL\n               "
+      ],
+      "access": "Full clinically relevant public supporting sections read; nonclinical carcinogenesis text not used for claims",
+      "checked": "2026-10-01"
+    },
+    "ointment": {
+      "splVersion": "2",
+      "effectiveTime": "20231229",
+      "apiPublishedDate": "Aug 11, 2025",
+      "clinicalRevision": "Clinical PI December 2023; later API publication August 2025; SPL v 2 effective 20231229; API publication Aug 11, 2025. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5776c435-ac60-49b6-8db1-23a3012b9155",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/5776c435-ac60-49b6-8db1-23a3012b9155.xml",
+      "localEvidence": "/tmp/nas-drug-sources/maxitrol-oint.xml",
+      "sha256": "b0d0ad6d01e7eebeefe433881fe82592b1f13273ae6040c830d73d465c90db49",
+      "supportingSections": [
+        "",
+        "DESCRIPTION",
+        "CLINICAL PHARMACOLOGY",
+        "INDICATIONS AND USAGE",
+        "CONTRAINDICATIONS",
+        "WARNINGS",
+        "General",
+        "Information for Patients",
+        "Pregnancy",
+        "Nursing Mothers",
+        "Pediatric Use",
+        "Geriatric Use",
+        "ADVERSE REACTIONS",
+        "DOSAGE AND ADMINISTRATION",
+        "HOW SUPPLIED",
+        "PRINCIPAL DISPLAY PANEL"
+      ],
+      "access": "Full clinically relevant public supporting sections read; nonclinical carcinogenesis text not used for claims",
+      "checked": "2026-10-01"
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Labeled ocular use",
+      "sourceIds": [
+        "label",
+        "ointment"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Indications and usage"
+        ],
+        "ointment": [
+          "Indications and usage"
+        ]
+      },
+      "claims": [
+        "Steroid-responsive inflammatory conditions of conjunctiva, cornea or anterior globe where corticosteroid treatment is indicated and bacterial infection or its risk exists. Examples include chronic anterior uveitis and corneal injury from chemical, radiation or thermal burns or foreign-body penetration; treatment follows ophthalmic diagnosis, not self-treatment of any irritation."
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Antibacterial scope",
+      "sourceIds": [
+        "label",
+        "ointment"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Indications and usage"
+        ],
+        "ointment": [
+          "Indications and usage"
+        ]
+      },
+      "claims": [
+        "Labels identify activity against selected common ocular bacteria, including S. aureus, E. coli, H. influenzae, Klebsiella/Enterobacter, Neisseria and P. aeruginosa. Coverage is inadequate for Serratia marcescens and streptococci, including S. pneumoniae. This is not universal conjunctivitis coverage or treatment for fungal/viral eye infection."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Product-specific regimens",
+      "sourceIds": [
+        "label",
+        "ointment"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Dosage and administration",
+          "Instructions for use",
+          "Population restrictions"
+        ],
+        "ointment": [
+          "Dosage and administration",
+          "Instructions for use",
+          "Population restrictions"
+        ]
+      },
+      "claims": [
+        [
+          "Suspension",
+          "1–2 drops into conjunctival sac(s). Mild disease: up to 4–6 times daily. Severe disease: hourly under clinician direction, then taper to stopping as inflammation subsides."
+        ],
+        [
+          "Ointment",
+          "Small amount (approximately ½ inch) into conjunctival sac(s), up to 3–4 times daily. Gently pull lower lid to form pocket; avoid touching eye with tube tip, look downward before closing eye."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Examination and renewal limits",
+      "sourceIds": [
+        "label",
+        "ointment"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Dosage and administration",
+          "Instructions for use",
+          "Population restrictions"
+        ],
+        "ointment": [
+          "Dosage and administration",
+          "Instructions for use",
+          "Population restrictions"
+        ]
+      },
+      "claims": [
+        "Suspension initial prescription≤20 mL; ointment≤8 g. Initial prescribing and renewal beyond these quantities require physician examination with magnification/slit lamp and fluorescein when appropriate. Suspension nonresponse after 2 days requires reevaluation; both patient instructions advise stopping and consulting for persistent pain/inflammation beyond 48 hours or worsening. These are review thresholds, not fixed maximum treatment durations."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Administration boundaries",
+      "sourceIds": [
+        "label",
+        "ointment"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Dosage and administration",
+          "Instructions for use",
+          "Population restrictions"
+        ],
+        "ointment": [
+          "Dosage and administration",
+          "Instructions for use",
+          "Population restrictions"
+        ]
+      },
+      "claims": [
+        "Use only the prescribed ophthalmic vehicle, avoid contaminated tips and sharing. Not for injection, including subconjunctival/anterior-chamber administration. Follow exact package handling instructions; no unsupported schedule for another manufacturer, an ear route or conversion between drops and ointment."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "label",
+        "ointment"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ],
+        "ointment": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ]
+      },
+      "claims": [
+        "Prolonged steroid exposure can cause glaucoma/optic-nerve damage, visual-field changes and posterior subcapsular cataract; routinely monitor IOP at 10 days or longer, and frequently with glaucoma.",
+        "Steroids may worsen viral disease, mask purulent/parasitic infection or permit secondary bacterial/fungal infection. History of herpes simplex requires great caution and frequent slit-lamp examination. Persistent corneal ulceration warrants fungal assessment/culture when appropriate.",
+        "Thin cornea/sclera can perforate; healing after cataract surgery may be delayed and bleb formation increased. Avoid undiagnosed or unmonitored ocular use.",
+        "Neomycin can cause local sensitization or generalized allergy, including anaphylaxis/bullous reactions. Stop for hypersensitivity; cross-sensitivity to other topical/systemic aminoglycosides is possible.",
+        "Excess dexamethasone exposure can cause adrenal suppression/Cushing syndrome in predisposed patients, including children and those using CYP3A4 inhibitors."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "label",
+        "ointment"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ],
+        "ointment": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ]
+      },
+      "claims": [
+        "Epithelial herpes-simplex keratitis, vaccinia, varicella and other specified viral corneal/conjunctival disease; mycobacterial eye infection; fungal ocular disease; known/suspected ingredient hypersensitivity. Suspension additionally explicitly contraindicates hypersensitivity to other corticosteroids. Do not describe a steroid warning as treatment authorization for an excluded infection."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning · status",
+      "sourceIds": [
+        "label",
+        "ointment"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ],
+        "ointment": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ]
+      },
+      "claims": [
+        "Neither selected Maxitrol label has a boxed warning. Significant ocular and systemic steroid risks remain in Warnings/Adverse reactions; lack of a box does not imply unrestricted use."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "sourceIds": [
+        "label",
+        "ointment"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ],
+        "ointment": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ]
+      },
+      "claims": [
+        "Allergic sensitization, raised IOP/glaucoma, cataract, delayed healing, keratitis/ulceration and secondary infection are reported; postmarketing headache, ulcerative keratitis and Stevens–Johnson syndrome are listed. Excess use may suppress adrenal function. Labels provide no validated acute overdose protocol or incidence denominator: excess dosing, accidental ingestion or serious symptoms require professional/Poison Control review, not a home detoxification algorithm."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Steroid exposure interaction",
+      "sourceIds": [
+        "label",
+        "ointment"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Drug interactions",
+          "Precautions",
+          "Clinical pharmacology"
+        ],
+        "ointment": [
+          "Drug interactions",
+          "Precautions",
+          "Clinical pharmacology"
+        ]
+      },
+      "claims": [
+        "Current labels report adrenal suppression/Cushing syndrome after excess dexamethasone dosing in predisposed patients, including patients taking CYP3A4 inhibitors. This supports careful medication review and avoidance of excess use, not an invented numerical dose-reduction algorithm or claim that every topical dose causes systemic toxicity."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Other interaction limitations",
+      "sourceIds": [
+        "label",
+        "ointment"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Drug interactions",
+          "Precautions",
+          "Clinical pharmacology"
+        ],
+        "ointment": [
+          "Drug interactions",
+          "Precautions",
+          "Clinical pharmacology"
+        ]
+      },
+      "claims": [
+        "These selected labels contain no comprehensive formal interaction table or validated spacing rule for every eye medicine. Review other ophthalmic products and allergies with the eye clinician/pharmacist; no automatic transfer of systemic neomycin renal/neuromuscular dosing warnings into an unverified topical interaction regimen."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "sourceIds": [
+        "label",
+        "ointment"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ],
+        "ointment": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ]
+      },
+      "claims": [
+        "Suspension safety/effectiveness below 2 years unestablished. Selected ointment states pediatric safety/effectiveness unestablished without a numerical lower age; do not apply the suspension age statement to ointment. No overall elderly/adult safety/effectiveness difference observed, but monitor individual ocular risk and treatment response."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "sourceIds": [
+        "label",
+        "ointment"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ],
+        "ointment": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ]
+      },
+      "claims": [
+        "Human pregnancy studies are inadequate; ocular dexamethasone animal findings and prolonged/repeated corticosteroid exposure risks warrant maternal-benefit/fetal-risk review. Infants after substantial maternal corticosteroid doses require observation for adrenal suppression. Whether topical administration yields detectable milk steroid levels is unknown; use caution during nursing. No absolute pregnancy-safe assertion or fixed milk-discard period."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "sourceIds": [
+        "label",
+        "ointment"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ],
+        "ointment": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ]
+      },
+      "claims": [
+        "Selected ophthalmic labels provide no numerical renal/hepatic adjustment or dialysis regimen. This is a source limitation, not proof that systemic steroid effects cannot occur; assess exposure, interacting drugs and clinical need with the prescriber."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and clinical scope",
+      "sourceIds": [
+        "label",
+        "ointment"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Clinical pharmacology",
+          "Microbiology",
+          "Description"
+        ],
+        "ointment": [
+          "Clinical pharmacology",
+          "Microbiology",
+          "Description"
+        ]
+      },
+      "claims": [
+        "Corticosteroid suppression of inflammation can delay healing and reduce host defense; an antibacterial component is included when that risk is clinically relevant. The combined vehicle supports delivery of the selected ingredients, but cannot prevent resistant-organism or fungal infection. Selected labels describe product activity, not universal bactericidal coverage."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetic limitations",
+      "sourceIds": [
+        "label",
+        "ointment"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Clinical pharmacology",
+          "Microbiology",
+          "Description"
+        ],
+        "ointment": [
+          "Clinical pharmacology",
+          "Microbiology",
+          "Description"
+        ]
+      },
+      "claims": [
+        "These labels do not provide quantitative ocular/systemic bioavailability, serum half-life, renal clearance or therapeutic concentrations for the fixed combination. Steroid potency depends on structure, concentration and release from the vehicle. No numerical PK value borrowed from systemic dexamethasone or another formulation."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "sourceIds": [
+        "label",
+        "ointment"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Patient information",
+          "Warnings",
+          "Precautions",
+          "Instructions for use"
+        ],
+        "ointment": [
+          "Patient information",
+          "Warnings",
+          "Precautions",
+          "Instructions for use"
+        ]
+      },
+      "claims": [
+        "Review viral/fungal history, corneal/scleral thinning, glaucoma, surgery, aminoglycoside allergy and interacting drugs. Use slit-lamp/fluorescein examination when indicated for initial/renewal prescribing. Monitor IOP at ≥10 days and frequently in glaucoma; consider fungal infection in persistent ulcers and reassess nonresponse promptly. No universal laboratory timetable invented."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "sourceIds": [
+        "label",
+        "ointment"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Patient information",
+          "Warnings",
+          "Precautions",
+          "Instructions for use"
+        ],
+        "ointment": [
+          "Patient information",
+          "Warnings",
+          "Precautions",
+          "Instructions for use"
+        ]
+      },
+      "claims": [
+        "Do not touch dispenser tip to eyelids or surfaces, share bottles/tubes or use an injection/ear route. Keep tightly closed. Vision may blur temporarily: wait until vision is adequate before driving or operating machinery. Stop/contact clinician for pain/inflammation persisting beyond 48 hours, worsening or allergy; seek urgent assessment for serious visual change/systemic allergy."
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative suspension",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Description",
+          "How supplied",
+          "Storage",
+          "SPL product panels"
+        ]
+      },
+      "claims": [
+        [
+          "Selected package",
+          "Harrow Maxitrol 5 mL in 8 mL white dispenser with pink cap; NDC 82667-100-05."
+        ],
+        [
+          "Per mL actives",
+          "Neomycin sulfate equivalent to 3.5 mg neomycin; polymyxin B sulfate 10,000 units; dexamethasone 0.1%."
+        ],
+        [
+          "Vehicle",
+          "Sterile suspension, benzalkonium chloride 0.004% preservative. Prescription ophthalmic use."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "label",
+        "ointment"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Description",
+          "How supplied",
+          "Storage",
+          "SPL product panels"
+        ],
+        "ointment": [
+          "Description",
+          "How supplied",
+          "Storage",
+          "SPL product panels"
+        ]
+      },
+      "claims": [
+        [
+          "Suspension",
+          "Above strengths per mL; do not infer ointment gram-to-drop equivalence."
+        ],
+        [
+          "Ointment",
+          "Per gram: neomycin equivalent 3.5 mg, polymyxin B sulfate 10,000 units, dexamethasone 0.1%. Lanolin/petrolatum with methylparaben 0.05% and propylparaben 0.01%."
+        ],
+        [
+          "Selected ointment package",
+          "Sandoz 3.5 g aluminum tube; NDC 66758-070-38. Other manufacturers/combinations need separate verification."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "label",
+        "ointment"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Description",
+          "How supplied",
+          "Storage",
+          "SPL product panels"
+        ],
+        "ointment": [
+          "Description",
+          "How supplied",
+          "Storage",
+          "SPL product panels"
+        ]
+      },
+      "claims": [
+        "Selected suspension upright 8–27°C; selected ointment 2–25°C. Both selected labels permit use after opening until printed expiration; do not invent a universal 28-day discard rule. Close tightly, prevent tip contamination and keep away from children. Follow the exact current package."
+      ]
+    },
+    {
+      "section": "hero/essential",
+      "card": "Scope, essential and three tuple facts",
+      "sourceIds": [
+        "label",
+        "ointment"
+      ],
+      "sourceSections": [
+        "Indications",
+        "Strengths",
+        "Warnings",
+        "Product"
+      ],
+      "claims": [
+        "A prescription ophthalmic combination for steroid-responsive inflammation when bacterial infection or its risk warrants an antibacterial component. This profile reviews current selected U.S. Maxitrol suspension and ointment labels, with separate dosing, pediatric evidence and storage; neither is an ear medicine or injectable preparation.",
+        "They can worsen or mask infection, raise eye pressure, delay healing and cause corneal or scleral perforation in susceptible tissue. Stop and contact the clinician if pain/inflammation persists beyond 48 hours or worsens; urgent visual change or serious allergy needs immediate assessment.",
+        [
+          "Therapeutic class",
+          "Ophthalmic steroid plus two antibacterials"
+        ],
+        [
+          "Dexamethasone",
+          "0.1% · strength basis depends on vehicle"
+        ],
+        [
+          "Monitoring trigger",
+          "IOP monitoring if used 10 days or longer"
+        ]
+      ]
+    }
+  ],
+  "materialErrors": [],
+  "gaps": [
+    {
+      "material": false,
+      "topic": "Vehicle-specific pediatric limits",
+      "resolution": "Suspension below2 years unestablished; ointment pediatric safety/effectiveness unestablished without age cutoff. No suspension cutoff transferred."
+    },
+    {
+      "material": false,
+      "topic": "Current source metadata",
+      "resolution": "Harrow suspension clinical September2024 vs SPL October2025/API November2025; Sandoz ointment clinical December2023 vs APIAugust2025. No latest clinical revision invented."
+    },
+    {
+      "material": false,
+      "topic": "Organ/PK/interaction limits",
+      "resolution": "No validated numerical organ adjustment, quantitative PK or all-eye-medicine spacing rule. CYP3A4 inhibitor risk supported by current dexamethasone adverse-reaction text, no invented dose algorithm."
+    },
+    {
+      "material": false,
+      "topic": "Clinical scope",
+      "resolution": "Ophthalmic only; no otic/systemic regimen or empirical every-red-eye claim; clinician examination and IOP/renewal triggers retained."
+    },
+    {
+      "material": false,
+      "topic": "Storage",
+      "resolution": "Selected bottle8–27°C/tube2–25°C and use-to-expiration-after-opening explicitly label-specific, no universal28day rule."
+    }
+  ],
+  "exclusions": [
+    "Unverified other manufacturers/combinations/non-U.S. regimens, off-label algorithms or preferred guideline rankings; current stock; universal laboratory schedules; independent switches or home overdose protocols."
+  ],
+  "validation": {
+    "schema": "validateMonograph: [] (verified after writing)",
+    "renderedPage": "Pending parent natural 390 px integration QA"
+  },
+  "monographSha256": "ba20a22f634a7453ac24fe9e4e5df5c173ac21c1bfa15c1a89c58b5d76f96eb8",
+  "sourceInterpretationNotes": [
+    "Clinical revision distinct from SPL effectiveTime/API publication. Original focused summaries of current full public supporting text.",
+    "Exact APAP eight sections, four core Safety cards, three Product cards and three tuple facts. No APAP-specific clinical content."
+  ]
+}

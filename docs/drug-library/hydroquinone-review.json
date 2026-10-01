@@ -1,0 +1,497 @@
+{
+  "slug": "hydroquinone",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Selected current plain 4% manufacturer labeling with explicit unapproved status, FDA skin-safety warnings and clinical evidence limits. All eight blueprint sections reviewed. Product-specific focused monograph; not an exhaustive adverse-event catalog.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Hydroquinone 4% · Topical cream",
+      "publisher": "DailyMed / Nivagen Pharmaceuticals",
+      "note": "SPL version 3, effective 20260120; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7844c308-e0a2-42e7-bd28-f68a59ebca83",
+      "checked": "2026-10-01",
+      "version": "SPL version 3, effective 20260120; current public product labeling.",
+      "spl_version": "3",
+      "spl_effective_time": "20260120",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/7844c308-e0a2-42e7-bd28-f68a59ebca83.xml",
+      "downloaded_xml_sha256": "586 ea 271404 ad 1927 cc 46 a 3399 b 8 b 12 e 4952 f 2 f 8 bd 3 c 43 de 8 de 64 d 39 f 38682 db",
+      "access_scope": "Complete current selected SPL clinical, product and population sections reviewed."
+    },
+    {
+      "id": "fda",
+      "title": "FDA · Hydroquinone skin-product safety and approval status",
+      "publisher": "U.S. Food and Drug Administration",
+      "note": "Current public FDA communication: OTC hydroquinone not approved; only approved hydroquinone-containing drug is Tri-Luma combination.",
+      "url": "https://www.fda.gov/drugs/drug-safety-communications/fda-works-protect-consumers-potentially-harmful-otc-skin-lightening-products",
+      "checked": "2026-10-01",
+      "version": "Current public FDA communication: OTC hydroquinone not approved; only approved hydroquinone-containing drug is Tri-Luma combination.",
+      "access_scope": "Public original supporting source reviewed for the cited statements; no paywalled access claimed."
+    },
+    {
+      "id": "skin",
+      "title": "FDA · Skin product safety",
+      "publisher": "U.S. Food and Drug Administration",
+      "note": "Current public FDA skin-safety page accessed 2026-10-01.",
+      "url": "https://www.fda.gov/consumers/skin-facts-what-you-need-know-about-skin-lightening-products/skin-product-safety",
+      "checked": "2026-10-01",
+      "version": "Current public FDA skin-safety page accessed 2026-10-01.",
+      "access_scope": "Public original supporting source reviewed for the cited statements; no paywalled access claimed."
+    }
+  ],
+  "assertion_to_source": [
+    {
+      "section_id": "indications",
+      "card_title": "Manufacturer-labeled use",
+      "assertions": [
+        "The selected 4% cream manufacturer describes gradual lightening of melasma/chloasma, freckles, lentigines, and other melanin hyperpigmentation. This is a summary of its published manufacturer label, not a claim that FDA reviewed and approved these indications. Evaluate the lesion and diagnosis before treating; general whole-body cosmetic lightening is not the supplied regimen."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Indications and usage",
+            "Overdosage"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "indications",
+      "card_title": "U.S. regulatory status",
+      "assertions": [
+        "Selected Nivagen cream is listed UNAPPROVED DRUG OTHER, with no Orange Book equivalence claim. FDA identifies Tri-Luma as the only FDA-approved hydroquinone-containing drug; that steroid/retinoid combination’s approval does not transfer to plain 4% cream. Hydroquinone skin-lightening products are not approved for OTC sale. Treat prescription listing, individual approval, and therapeutic equivalence as distinct questions."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Regulatory metadata",
+            "How supplied / equivalence disclaimer"
+          ]
+        },
+        {
+          "source_id": "fda",
+          "sections": [
+            "Approval / OTC status"
+          ]
+        },
+        {
+          "source_id": "skin",
+          "sections": [
+            "Skin product regulation"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Manufacturer directions",
+      "assertions": [
+        "Apply the selected 4% cream to affected areas and rub in twice daily, morning and bedtime, or as directed. Limit treatment to relatively small areas. Discontinue if there is no improvement after 2 months. No approved whole-body dose, gram maximum, long-term cycling schedule, or combination-to-single-drug substitution is established by this label."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Dosage and administration",
+            "Overdosage"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Sensitivity test and photoprotection",
+      "assertions": [
+        "Before use, apply a small amount to unbroken skin and assess at 24 hours. Minor redness alone does not preclude treatment; itching, vesicles, or excessive inflammation means further treatment is not advised. The product contains no sunscreen: label calls for broad-spectrum SPF 15 or greater or protective clothing and avoidance of unnecessary sun. This minimum label statement is not a claim that every skin/UV setting is adequately protected at that SPF."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "General precautions",
+            "Warnings",
+            "Information for patients"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Age and evidence boundaries",
+      "assertions": [
+        "The contraindications text says pregnancy and ages 12 and under safety are unestablished, whereas pediatric-use/dose text says below 12. At exactly 12, seek clinician clarification; no pediatric dose or inferred minimum approved age is supplied. Renal/hepatic impairment has no quantitative schedule in this label."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Contraindications",
+            "Pediatric use",
+            "Dosage",
+            "Complete label"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Warnings and precautions",
+      "assertions": [
+        "Sodium metabisulfite in this cream can cause serious allergic/asthmatic reactions in susceptible patients. Stop for significant hypersensitivity or severe inflammation. Hydroquinone can cause exogenous ochronosis, a gradual blue-black darkening; discontinue and consult the clinician. Use photoprotection, avoid eyes/mucous membranes, and prevent unwanted lightening of other skin. Do not equate manufacturer claims of no reported systemic overdose reactions with absence of systemic absorption or long-term harm."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Warnings",
+            "General precautions",
+            "Information for patients",
+            "Overdosage"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Contraindications",
+      "assertions": [
+        "Prior sensitivity/allergy to hydroquinone or any product ingredient is contraindicated. The same section notes unestablished safety in pregnancy and children 12 and under; pregnancy text separately permits use only if clearly needed. Those evidence-limit statements are not silently recast as FDA-approved absolute pregnancy/pediatric contraindications. The conflicting exact age 12 wording requires prescriber review."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Contraindications",
+            "Pregnancy",
+            "Pediatric use"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Boxed warning status",
+      "assertions": [
+        "The selected published manufacturer label has no boxed warning. It remains an unapproved product with clinically important allergy, irritation, and ochronosis risks; no-box status is not regulatory validation."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Complete label",
+            "Warnings",
+            "Regulatory metadata"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Adverse reactions and overdose",
+      "assertions": [
+        "Reported local reactions include dryness/fissuring, redness, stinging, and contact dermatitis; discontinue for hypersensitivity. FDA reports serious reactions including facial swelling and potentially permanent ochronosis. Accidental ingestion needs immediate medical/poison-center assessment. The manufacturer’s limited systemic-overdose reporting is not a home-treatment algorithm or proof that swallowing the cream is safe."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Adverse reactions",
+            "Information for patients",
+            "Overdosage"
+          ]
+        },
+        {
+          "source_id": "skin",
+          "sections": [
+            "Reported serious effects"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Photosensitizing medicines",
+      "assertions": [
+        "The label cautions about medicines known to cause photosensitivity. Review those exposures and the sun-protection plan before treatment; it supplies no drug-specific dose-adjustment or spacing rule."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Drug interactions",
+            "Warnings"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Other skin products and equivalence limits",
+      "assertions": [
+        "A clinician should review the exact topical regimen rather than assume a different concentration or combination product is interchangeable. Nivagen’s label expressly disclaims FDA therapeutic/bioequivalence testing. It does not supply a validated interaction matrix for retinoids, corticosteroids, peels, or bleaching agents, so no universal combination instructions are invented."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "How supplied / equivalence disclaimer",
+            "Complete label"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pregnancy and lactation",
+      "assertions": [
+        "Manufacturer labeling retains categoryC language, no topical reproduction studies, and use only if clearly needed. Human milk excretion is unknown and nursing caution is advised. No fetal-risk percentage, infant exposure limit, or proven safe pregnancy/breastfeeding regimen is established here."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Pregnancy",
+            "Nursing mothers"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Children and older adults",
+      "assertions": [
+        "Children’s safety/effectiveness is unestablished with inconsistent exact 12-year boundary wording as described above. The label gives no separate geriatric study-based dose; individual diagnosis, local tolerance, and supervision remain important. No pediatric cosmetic-lightening regimen is supplied."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Contraindications",
+            "Pediatric use",
+            "General precautions",
+            "Complete label"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Renal and hepatic impairment",
+      "assertions": [
+        "The selected label provides no validated renal/hepatic PK or dose-adjustment schedule. That missing evidence is not proof of unrestricted use in severe disease. Limit treatment to prescribed affected areas and obtain individualized review; no systemic-drug algorithm is transplanted into this cream."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Complete label",
+            "Overdosage"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Mechanism",
+      "assertions": [
+        "Manufacturer labeling describes reversible depigmentation through inhibition of tyrosine oxidation toward dopa and other melanocyte processes. Sun/UV exposure can restore pigmentation, which supports its photoprotection instructions. No permanent-cure or selective lesion-only molecular effect is claimed."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Clinical pharmacology",
+            "Warnings"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Pharmacokinetics and evidence limits",
+      "assertions": [
+        "FDA notes skin absorption of hydroquinone. This plain 4% product label provides no measured product-specific systemic bioavailability, plasma half-life, clearance, or organ-impairment PK study. Do not borrow Tri-Luma combination exposure data or interpret the lack of an overdose series as proof of no absorption."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Clinical pharmacology",
+            "Overdosage",
+            "Complete label"
+          ]
+        },
+        {
+          "source_id": "skin",
+          "sections": [
+            "Absorption / safety"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Monitoring",
+      "assertions": [
+        "Check diagnosis, small-area sensitivity-test response, local irritation/allergy, unwanted depigmentation, ochronosis, sun exposure, and response by 2 months. The label recommends close supervision but supplies no universal laboratory interval or established long-term maintenance algorithm."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "General precautions",
+            "Warnings",
+            "Dosage"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Patient counseling",
+      "assertions": [
+        "Apply only as directed, avoid eyes/mucous membranes, and use the prescribed photoprotection plan. Stop and contact the clinician for itching/vesicles, marked inflammation, allergy, or blue-black darkening. Lack of benefit at 2 months requires discontinuation/review. Keep away from children and obtain immediate help after swallowing; do not purchase unapproved OTC hydroquinone for self-directed lightening."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Information for patients",
+            "Warnings",
+            "Dosage",
+            "General precautions"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Representative product",
+      "assertions": [
+        "Nivagen hydroquinone USP4% cream is supplied in 28.4 g tube, NDC 75834-137-01. No verified color/imprint identification is invented. It is not represented as an Orange Book equivalent or a currently approved Tri-Luma substitute."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "How supplied",
+            "Regulatory metadata"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Dosage forms and strengths",
+      "assertions": [
+        "Covered topical cream contains hydroquinone 40 mg/g (4%). Lower/higher strengths, compounded preparations, OTC skin-lightening products, and fluocinolone/hydroquinone/tretinoin combination have separate status and instructions; no oral or ophthalmic use is supported."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Description",
+            "How supplied",
+            "Information for patients"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Storage and handling",
+      "assertions": [
+        "Store at 20–25°C. Manufacturer says darkening of the cream itself is expected and does not change performance/safety; that statement must not be confused with treatment-associated blue-black skin darkening requiring discontinuation. Keep away from children and follow package integrity/expiry; no extra opened-tube shelf life is invented."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "How supplied / storage",
+            "Warnings",
+            "Information for patients"
+          ]
+        }
+      ]
+    }
+  ],
+  "material_errors": [],
+  "gaps": [],
+  "limitations": [
+    "Published manufacturer label is not an approved indication/dose/safety finding; FDA approval limited to separate Tri-Luma combination.",
+    "Exact age 12 wording conflicts; no invented pediatric approved dose or boundary.",
+    "SystemicPK/organ adjustment/long-term schedule not established by selected plain cream label.",
+    "Manufacturercreamdarkening statement distinct from ochronosis; no paywalled original 1950 s/1970 s papers claimed as accessed."
+  ],
+  "regulatory_identity": [
+    {
+      "source_file": "hydroquinone",
+      "labeler": [
+        "Nivagen Pharmaceuticals, Inc."
+      ],
+      "label_approval_records": [
+        {
+          "application": {},
+          "marketing_category": {
+            "code": "C73627",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "UNAPPROVED DRUG OTHER"
+          }
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "schema": "validateMonograph returned [] on 2026-10-01; scoped diff whitespace check passed.",
+    "blueprint_sections": "Exact eight IDs/titles/order, four Safety cards, three Product cards, three hero tuples.",
+    "mobile_content": "Two-column tables where needed, readable spaced text. Release owner handles rendered QA.",
+    "source_method": "Current selected complete primary product labels and public official/guideline sources reviewed; explicit formulation and source-status boundaries."
+  },
+  "front_matter_assertion_map": {
+    "hero_facts": [
+      [
+        "Covered strength",
+        "4% topical cream"
+      ],
+      [
+        "Manufacturer use",
+        "Selected melanin hyperpigmentation"
+      ],
+      [
+        "U.S. status",
+        "Selected product unapproved"
+      ]
+    ],
+    "essential": {
+      "title": "Stop for ochronosis or significant allergy.",
+      "text": "Plain 4% product is not FDA-approved. Use only a clinician-directed affected-area regimen and photoprotection; stop for blue-black skin darkening or hypersensitivity. No OTC hydroquinone self-treatment or indefinite ineffective use.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "support": {
+      "label": [
+        "Indications",
+        "Dosage",
+        "Warnings",
+        "Boxed warning",
+        "Description"
+      ]
+    }
+  },
+  "source_discrepancies": [
+    {
+      "issue": "Single4% manufacturer label lists unapproved status while FDAapproved Tri-Luma is a separate combination.",
+      "resolution": "Manufacturer-indicated uses and directions not represented as FDAapproval; equivalence disclaimer and OTCrestriction visible."
+    },
+    {
+      "issue": "Contraindications safety wording says age12andunder but pediatric/dose section says below12.",
+      "resolution": "Exact12 conflict flagged for prescriber confirmation; no pediatric dose/minimum approvedage invented."
+    },
+    {
+      "issue": "Manufacturer expected cream darkening versus skin ochronosis warning.",
+      "resolution": "Different observations explicitly distinguished; blue-black skin prompts discontinuation."
+    }
+  ]
+}

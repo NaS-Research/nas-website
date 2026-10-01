@@ -1,0 +1,675 @@
+{
+  "drug": "nabumetone",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "reviewScope": "U.S. oral OA/RA labeling; no pediatric or off-label pain regimen",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Nabumetone tablets · Full prescribing information",
+      "publisher": "DailyMed / Bryant Ranch Prepack",
+      "note": "Current SPL version 5, effective 2025-09-18. ",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dd0d2652-d335-45db-af43-5a2523f7299a"
+    }
+  ],
+  "labelMetadata": [
+    {
+      "sourceId": "label",
+      "product": "nabumetone-tablet",
+      "setid": "dd0d2652-d335-45db-af43-5a2523f7299a",
+      "version": "5",
+      "effectiveTime": "20250918",
+      "publishedDate": "Current public SPL retrieved October1,2026; no independent publication date claimed",
+      "clinicalRevisionWording": [],
+      "checked": "2026-10-01",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/dd0d2652-d335-45db-af43-5a2523f7299a.xml",
+      "xmlSha256": "8d78613b35dd933e404ac873605e609d4d81940a119b96f1ae643a265da79491",
+      "marketingAuthorization": [
+        {
+          "category": "ANDA",
+          "application": "ANDA091083"
+        }
+      ],
+      "scope": "Actual selected public product labeling; SPL publication is distinguished from clinical revision, approval chronology and local stock."
+    }
+  ],
+  "reviewedSourceSections": {
+    "label": [
+      "BOXED WARNING (SPL code34066-1)",
+      "DESCRIPTION",
+      "CLINICAL PHARMACOLOGY",
+      "Pharmacokinetics",
+      "Elderly Patients",
+      "Renal Insufficiency",
+      "Hepatic Impairment",
+      "Special Studies",
+      "Gastrointestinal",
+      "Other",
+      "CLINICAL TRIALS",
+      "Osteoarthritis",
+      "Rheumatoid Arthritis",
+      "Patient Exposure in Clinical Trials of Osteoarthritis and Rheumatoid Arthritis",
+      "INDICATIONS AND USAGE",
+      "CONTRAINDICATIONS",
+      "WARNINGS",
+      "Cardiovascular Effects",
+      "Cardiovascular Thrombotic Events",
+      "Hypertension",
+      "Heart Failure and Edema",
+      "Gastrointestinal Effects – Risk of Ulceration, Bleeding, and Perforation",
+      "Renal Effects",
+      "Advanced Renal Disease",
+      "Anaphylactoid Reactions",
+      "Skin Reactions",
+      "Drug Reaction with Eosinophilia and Systemic Symptoms (DRESS)",
+      "Fetal Toxicity",
+      "PRECAUTIONS",
+      "General",
+      "Hepatic Effects",
+      "Hematological Effects",
+      "Preexisting Asthma",
+      "Photosensitivity",
+      "Information for Patients",
+      "Laboratory Tests",
+      "Drug Interactions",
+      "ACE-Inhibitors",
+      "Aspirin",
+      "Diuretics",
+      "Lithium",
+      "Methotrexate",
+      "Warfarin",
+      "Carcinogenesis, Mutagenesis, Impairment of Fertility",
+      "Carcinogenesis, Mutagenesis",
+      "Impairment of Fertility",
+      "Pregnancy",
+      "Labor and Delivery",
+      "Nursing Mothers",
+      "Pediatric Use",
+      "Geriatric Use",
+      "ADVERSE REACTIONS",
+      "Incidence ≥ 1% - Probably Causally Related",
+      "Incidence < 1% - Probably Causally Related†3",
+      "Incidence < 1% - Causal Relationship Unknown",
+      "OVERDOSAGE",
+      "DOSAGE AND ADMINISTRATION",
+      "Osteoarthritis and Rheumatoid Arthritis",
+      "HOW SUPPLIED",
+      "MEDICATION GUIDE"
+    ]
+  },
+  "assertionToSourceMap": [
+    {
+      "section": "indications",
+      "card": "Labeled uses",
+      "assertions": {
+        "paragraphs": [
+          "Nabumetone tablets relieve signs and symptoms of osteoarthritis and rheumatoid arthritis. Weigh alternatives and individual cardiovascular, gastrointestinal and renal risks. No pediatric or off-label acute-pain regimen is supplied."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "BOXED WARNING (SPL code34066-1)",
+          "INDICATIONS AND USAGE",
+          "CONTRAINDICATIONS",
+          "WARNINGS"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "dosage",
+      "card": "Ordinary OA/RA dose",
+      "assertions": {
+        "paragraphs": [
+          "Start 1,000 mg orally as one dose, with or without food. Some patients obtain additional relief at 1,500–2,000 mg/day, in a single or twice-daily regimen; over 2,000 mg/day has not been studied. Patients under 50 kg may be less likely to need over 1,000 mg. Individualize to response and use the lowest effective dose."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "CLINICAL PHARMACOLOGY",
+          "Renal Insufficiency",
+          "Hepatic Impairment",
+          "Renal Effects",
+          "Advanced Renal Disease",
+          "Hepatic Effects",
+          "Drug Interactions",
+          "Pediatric Use",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "dosage",
+      "card": "Selected renal instructions",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Renal CLcr",
+            "Starting / carefully monitored ceiling"
+          ],
+          "rows": [
+            [
+              "At least 50 mL/min",
+              "Adjustment generally unnecessary; monitor risk"
+            ],
+            [
+              "30–49 mL/min",
+              "Start no more than 750 mg once daily; after careful renal monitoring, maximum 1,500 mg/day"
+            ],
+            [
+              "Below 30 mL/min",
+              "Start no more than 500 mg once daily; after careful renal monitoring, maximum 1,000 mg/day"
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "CLINICAL PHARMACOLOGY",
+          "Renal Insufficiency",
+          "Hepatic Impairment",
+          "Renal Effects",
+          "Advanced Renal Disease",
+          "Hepatic Effects",
+          "Drug Interactions",
+          "Pediatric Use",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "dosage",
+      "card": "Dose boundaries",
+      "assertions": {
+        "paragraphs": [
+          "The warnings do not recommend treatment in advanced renal disease; if unavoidable, monitor closely. The numeric PK-section renal limits are not permission to disregard this warning. No validated pediatric, hepatic percentage, dialysis replacement or universal missed-dose algorithm is provided."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "CLINICAL PHARMACOLOGY",
+          "Renal Insufficiency",
+          "Hepatic Impairment",
+          "Renal Effects",
+          "Advanced Renal Disease",
+          "Hepatic Effects",
+          "Drug Interactions",
+          "Pediatric Use",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "MI/stroke risk may begin early and rise with duration/dose. Avoid recent-MI or severe-heart-failure use unless benefits outweigh risk; monitor BP, edema and ischemic symptoms. Ulceration, GI bleeding or perforation can occur without warning, especially with prior ulcer/bleeding, older age, anticoagulants or steroids. Renal injury is more likely with impaired perfusion, kidney/liver disease, failure or diuretics. Severe allergy, SJS/TEN and DRESS can occur; stop and evaluate rash, fever or systemic signs. Liver injury, anemia and photosensitivity are reported. Avoid fetal ductus closure risk at about thirty weeks onward; earlier twenty-week renal risk also applies."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "BOXED WARNING (SPL code34066-1)",
+          "CONTRAINDICATIONS",
+          "WARNINGS",
+          "Gastrointestinal Effects – Risk of Ulceration, Bleeding, and Perforation",
+          "PRECAUTIONS",
+          "Hematological Effects",
+          "Preexisting Asthma",
+          "ADVERSE REACTIONS"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Known nabumetone/ingredient hypersensitivity, prior asthma/urticaria/allergic-type reaction to aspirin or another NSAID, and the CABG-surgery setting are contraindicated."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "BOXED WARNING (SPL code34066-1)",
+          "CONTRAINDICATIONS",
+          "WARNINGS",
+          "Gastrointestinal Effects – Risk of Ulceration, Bleeding, and Perforation",
+          "PRECAUTIONS",
+          "Hematological Effects",
+          "Preexisting Asthma",
+          "ADVERSE REACTIONS"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning",
+      "assertions": {
+        "paragraphs": [
+          "The selected label warns of potentially fatal MI/stroke and serious GI bleeding, ulceration or perforation, including events without symptoms. CV risk can occur early/increase with duration; older adults have greater GI risk. CABG use is contraindicated."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "BOXED WARNING (SPL code34066-1)",
+          "CONTRAINDICATIONS",
+          "WARNINGS",
+          "Gastrointestinal Effects – Risk of Ulceration, Bleeding, and Perforation",
+          "PRECAUTIONS",
+          "Hematological Effects",
+          "Preexisting Asthma",
+          "ADVERSE REACTIONS"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Common reported effects include diarrhea, dyspepsia and abdominal pain, with nausea, constipation, dizziness, headache, rash/pruritus, tinnitus and edema also reported. Serious reactions include bleeding, renal/hepatic injury, anaphylaxis and severe skin reactions; do not infer clinical safety from older surrogate endoscopy comparisons."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "BOXED WARNING (SPL code34066-1)",
+          "CONTRAINDICATIONS",
+          "WARNINGS",
+          "Gastrointestinal Effects – Risk of Ulceration, Bleeding, and Perforation",
+          "PRECAUTIONS",
+          "Hematological Effects",
+          "Preexisting Asthma",
+          "ADVERSE REACTIONS"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "interactions",
+      "card": "Bleeding combinations",
+      "assertions": {
+        "paragraphs": [
+          "Aspirin and other NSAIDs add adverse effects and concurrent aspirin is generally not recommended. Warfarin/NSAID GI bleeding effects are synergistic; corticosteroids also increase GI risk. Review all OTC pain products and anticoagulants rather than unintentionally duplicate NSAIDs."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "Drug Interactions"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "interactions",
+      "card": "Renal and other interactions",
+      "assertions": {
+        "paragraphs": [
+          "Nabumetone may reduce ACE-inhibitor antihypertensive and diuretic natriuretic effects; monitor pressure, kidney status and diuretic response. Lithium levels may rise and methotrexate toxicity may increase; use appropriate monitoring. Aluminum antacid did not materially alter active-metabolite bioavailability in the cited study, which does not establish compatibility with every drug."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "Drug Interactions"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Limit necessary use between about twenty and thirty weeks to the lowest dose/shortest duration; consider amniotic-fluid ultrasound if treatment exceeds forty-eight hours and stop if oligohydramnios develops. Avoid about thirty weeks onward because of ductus closure risk. Earlier pregnancy data are inconclusive. Human milk excretion is unknown; animal active-metabolite milk transfer and possible infant harm warrant deciding between discontinuing nursing or medicine according to maternal need."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "Renal Insufficiency",
+          "Hepatic Impairment",
+          "WARNINGS",
+          "Renal Effects",
+          "Advanced Renal Disease",
+          "PRECAUTIONS",
+          "Hepatic Effects",
+          "Pregnancy",
+          "Nursing Mothers",
+          "Pediatric Use",
+          "Geriatric Use",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": {
+        "paragraphs": [
+          "Pediatric safety/effectiveness are unestablished. Older adults may have higher active-metabolite exposure and are more vulnerable to serious GI, renal and cardiovascular complications; age findings in trials do not negate cautious selection."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "Renal Insufficiency",
+          "Hepatic Impairment",
+          "WARNINGS",
+          "Renal Effects",
+          "Advanced Renal Disease",
+          "PRECAUTIONS",
+          "Hepatic Effects",
+          "Pregnancy",
+          "Nursing Mothers",
+          "Pediatric Use",
+          "Geriatric Use",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "assertions": {
+        "paragraphs": [
+          "Follow the renal table together with advanced-disease avoidance. Active 6MNA is highly protein bound and not dialyzable. Severe hepatic data are limited; both prodrug activation and further metabolism depend on liver function, so no numeric hepatic regimen is invented. Stop/evaluate suspected liver injury."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "Renal Insufficiency",
+          "Hepatic Impairment",
+          "WARNINGS",
+          "Renal Effects",
+          "Advanced Renal Disease",
+          "PRECAUTIONS",
+          "Hepatic Effects",
+          "Pregnancy",
+          "Nursing Mothers",
+          "Pediatric Use",
+          "Geriatric Use",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "assertions": {
+        "paragraphs": [
+          "Nabumetone is converted to 6-methoxy-2-naphthylacetic acid (6MNA), which inhibits prostaglandin synthesis and accounts for anti-inflammatory activity."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "DESCRIPTION",
+          "CLINICAL PHARMACOLOGY",
+          "Pharmacokinetics"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Disposition",
+      "assertions": {
+        "paragraphs": [
+          "Parent drug is not detected in plasma after rapid biotransformation. 6MNA is more than 99% protein bound; its half-life is approximately twenty-four hours and longer with renal impairment/older age. Metabolites are largely eliminated in urine. Food accelerates appearance/increases peak but does not change overall conversion exposure; renal protein binding makes dialysis ineffective for active-metabolite removal."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "DESCRIPTION",
+          "CLINICAL PHARMACOLOGY",
+          "Pharmacokinetics"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring and counseling",
+      "assertions": {
+        "paragraphs": [
+          "Monitor BP, edema, kidney function and bleeding symptoms; long-term use warrants periodic CBC/chemistry as clinically directed. Review liver symptoms and drug combinations. Seek immediate care for chest/stroke symptoms, GI bleeding, breathing/facial swelling or serious rash/systemic fever. Review pregnancy plans and avoid unnecessary OTC NSAIDs. Persistent abnormal liver tests or clinical organ/systemic manifestations require stopping/evaluation."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "Elderly Patients",
+          "Patient Exposure in Clinical Trials of Osteoarthritis and Rheumatoid Arthritis",
+          "WARNINGS",
+          "PRECAUTIONS",
+          "Information for Patients",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "practice",
+      "card": "Overdose",
+      "assertions": {
+        "paragraphs": [
+          "Seek medical/Poison Control assessment. There is no specific antidote; severe effects include bleeding, kidney injury and respiratory/CNS compromise. Legacy label emesis/cathartic instructions and apparently tolerated large doses are not home-treatment advice or safe thresholds. Dialysis is unlikely to help because of high protein binding."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "Elderly Patients",
+          "Patient Exposure in Clinical Trials of Osteoarthritis and Rheumatoid Arthritis",
+          "WARNINGS",
+          "PRECAUTIONS",
+          "Information for Patients",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "facts": [
+          [
+            "Product",
+            "Bryant Ranch nabumetone 500 mg"
+          ],
+          [
+            "Route",
+            "Oral film-coated tablet"
+          ],
+          [
+            "Appearance",
+            "White, oval, biconvex; 3670 / plain"
+          ],
+          [
+            "Example package",
+            "Bottle 30 · NDC 71335-1234-2"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "DESCRIPTION",
+          "Elderly Patients",
+          "Patient Exposure in Clinical Trials of Osteoarthritis and Rheumatoid Arthritis",
+          "Information for Patients",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION",
+          "HOW SUPPLIED"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "The selected supply record lists 500 mg tablets in several bottle sizes. Other strengths/manufacturers have different identification records; no liquid, injection, pediatric or compounded preparation is reviewed."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "DESCRIPTION",
+          "Elderly Patients",
+          "Patient Exposure in Clinical Trials of Osteoarthritis and Rheumatoid Arthritis",
+          "Information for Patients",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION",
+          "HOW SUPPLIED"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Store at 20–25°C in a tight, light-resistant container with the required child-resistant closure. Follow actual expiry; no independently verified crushing/tube or compounded beyond-use protocol is supplied."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "DESCRIPTION",
+          "Elderly Patients",
+          "Patient Exposure in Clinical Trials of Osteoarthritis and Rheumatoid Arthritis",
+          "Information for Patients",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION",
+          "HOW SUPPLIED"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    }
+  ],
+  "evidence": [
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/nabumetone-tablet.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/nabumetone/nabumetone-tablet.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/dd0d2652-d335-45db-af43-5a2523f7299a.xml",
+      "sha256": "8d78613b35dd933e404ac873605e609d4d81940a119b96f1ae643a265da79491"
+    },
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/nabumetone-tablet-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/nabumetone/nabumetone-tablet-sections.json",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/dd0d2652-d335-45db-af43-5a2523f7299a.xml",
+      "sha256": "7677c82b62ed9fc3ed8bc0c3bf99707d58130788fabfe6786defa317288b8b13"
+    }
+  ],
+  "sourceDiscrepancies": [
+    "PKsection renal numeric750/500startand1500/1000max coexists withwarningadvancedrenalnotrecommended; bothretained,noimplicitpermission.",
+    "Selected current500mg repack supply distinguishedfromotherstrengths/manufacturers; clinicalsourcecontainsbroaderdrugdiscussion.",
+    "No olderendoscopysurrogateclaim establishesabsenceofseriousGIrisk; box/20and30weekpregnancycurrentwarnings preserved.",
+    "Legacyoverdoseemesis/cathartic andtoleratedlargedose anecdotesnotendorsed."
+  ],
+  "materialErrors": [],
+  "unresolvedMaterialGaps": [],
+  "scopeExclusions": [
+    "Other manufacturers/foreign products not reviewed; current public label presence does not prove local stock.",
+    "Off-label regimens, compounded stability/crushing/tube protocols, universal organ algorithms and individualized emergency treatment are excluded.",
+    "Pediatric/offlabelacute-pain, hepaticnumericadjustment anddialysisreplacementregimens excluded."
+  ],
+  "verification": {
+    "schemaErrors": [],
+    "sectionIds": [
+      "indications",
+      "dosage",
+      "safety",
+      "interactions",
+      "populations",
+      "pharmacology",
+      "practice",
+      "product"
+    ],
+    "safetyCards": 4,
+    "productCards": 3,
+    "heroFacts": 3,
+    "monographSha256": "6ca72b503908248af506b156a937c04c5eb5e66003dfcc19822491de61559d57",
+    "renderedQA": "Pending parent candidate build/desktop/mobile review; no live claim.",
+    "independentReview": "Pending actual-file independent reviewer."
+  },
+  "sourceAudit": "Full selected primary supporting sections read; current metadata retained separately from historical clinical wording. No paywalled access claimed."
+}
