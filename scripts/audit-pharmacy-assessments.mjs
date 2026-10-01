@@ -67,8 +67,12 @@ for (const module of auditedModules) {
   } else {
     module.references.forEach((reference, index) => {
       requireText(reference?.label, `${module.slug}: reference[${index}] label`);
-      if (typeof reference?.href !== "string" || !(/^(https:\/\/|\/learn\/)/i.test(reference.href))) {
-        hardErrors.push(`${module.slug}: reference[${index}] must use an HTTPS or internal learning URL`);
+      if (reference?.href !== undefined) {
+        if (typeof reference.href !== "string" || !(/^(https:\/\/|\/learn\/)/i.test(reference.href))) {
+          hardErrors.push(`${module.slug}: reference[${index}] must use an HTTPS or internal learning URL`);
+        }
+      } else {
+        requireText(reference?.locator, `${module.slug}: reference[${index}] book locator`);
       }
     });
   }

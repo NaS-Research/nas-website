@@ -1,0 +1,564 @@
+{
+  "date": "2026-09-30",
+  "status": "verified",
+  "module": "pharmacy-unit-conversions",
+  "sourcePolicy": "Supplied RxPrep 2023 only",
+  "source": {
+    "chapter1": {
+      "printedPage": 7,
+      "pdfPage": 19,
+      "purpose": "First four formula-checklist entries"
+    },
+    "dependency": {
+      "chapter": 9,
+      "printedPages": [
+        116,
+        119
+      ],
+      "pdfPages": [
+        124,
+        127
+      ],
+      "completeRelevantPagesTextAndVisualRead": true
+    }
+  },
+  "mappingSearch": {
+    "catalog": "228 modules before this addition",
+    "partialCoverage": [
+      "parenteral-nutrition-calculations#calculation-foundations",
+      "parenteral-nutrition-calculations#stock-solutions-additives",
+      "fluid-electrolyte-therapy#calculations-monitoring"
+    ],
+    "missing": "No dedicated module teaching this combined foundational conversion and rounding scope. Existing clinical modules retained."
+  },
+  "scope": {
+    "lessons": 4,
+    "teachingSections": 15,
+    "originalFigures": 4,
+    "embeddedChecks": 4,
+    "assessmentQuestions": 25,
+    "cumulativeAutoSelection": 5
+  },
+  "coverage": [
+    {
+      "lesson": "volume-conversions",
+      "sourcePrintedPages": [
+        116,
+        119
+      ],
+      "subjects": [
+        "L/dL/mL",
+        "teaspoon/tablespoon",
+        "fluid ounce/cup/pint/quart/gallon",
+        "book approximate and more precise factors",
+        "stated-factor precedence",
+        "fluid versus mass ounces"
+      ]
+    },
+    {
+      "lesson": "mass-height-conversions",
+      "sourcePrintedPages": [
+        117,
+        119
+      ],
+      "subjects": [
+        "kg/g/mg/mcg/ng",
+        "grain versus gram",
+        "book mass-ounce and pound factors",
+        "lb/kg direction",
+        "feet/inches/cm/m"
+      ]
+    },
+    {
+      "lesson": "meq-mmol-conversions",
+      "sourcePrintedPages": [
+        117,
+        117
+      ],
+      "subjects": [
+        "monovalent 1:1",
+        "divalent 1:0.5",
+        "reverse conversion",
+        "retaining a concentration denominator"
+      ]
+    },
+    {
+      "lesson": "methods-rounding",
+      "sourcePrintedPages": [
+        117,
+        119
+      ],
+      "subjects": [
+        "matched proportions",
+        "unit cancellation",
+        "retained intermediate precision",
+        "whole/tenth/tens rounding",
+        "indivisible container counts"
+      ]
+    }
+  ],
+  "itemReview": {
+    "allPromptsChoicesKeysExplanationsIndividuallyRead": true,
+    "questionsWithNumericalResults": [
+      {
+        "id": "units-001",
+        "computed": "625.000",
+        "expected": "625 mL",
+        "passed": true
+      },
+      {
+        "id": "units-002",
+        "computed": "0.85",
+        "expected": "0.85 L",
+        "passed": true
+      },
+      {
+        "id": "units-003",
+        "computed": "25",
+        "expected": "25 mL",
+        "passed": true
+      },
+      {
+        "id": "units-004",
+        "computed": "105.0",
+        "expected": "105 mL",
+        "passed": true
+      },
+      {
+        "id": "units-005",
+        "computed": "2880",
+        "expected": "2880 mL",
+        "passed": true
+      },
+      {
+        "id": "units-007",
+        "computed": "240.0",
+        "expected": "240 mL",
+        "passed": true
+      },
+      {
+        "id": "units-008",
+        "computed": "6000.000",
+        "expected": "6000 mcg",
+        "passed": true
+      },
+      {
+        "id": "units-009",
+        "computed": "0.0075",
+        "expected": "0.0075 g",
+        "passed": true
+      },
+      {
+        "id": "units-010",
+        "computed": "7E+1",
+        "expected": "70 kg",
+        "passed": true
+      },
+      {
+        "id": "units-011",
+        "computed": "97.5",
+        "expected": "97.5 mg",
+        "passed": true
+      },
+      {
+        "id": "units-013",
+        "computed": "185.42",
+        "expected": "185.42 cm",
+        "passed": true
+      },
+      {
+        "id": "units-014",
+        "computed": "1.625",
+        "expected": "1.625 m",
+        "passed": true
+      },
+      {
+        "id": "units-015",
+        "computed": "32",
+        "expected": "32 mmol",
+        "passed": true
+      },
+      {
+        "id": "units-016",
+        "computed": "11",
+        "expected": "11 mmol",
+        "passed": true
+      },
+      {
+        "id": "units-017",
+        "computed": "16",
+        "expected": "16 mEq",
+        "passed": true
+      },
+      {
+        "id": "units-019",
+        "computed": "5",
+        "expected": "5 mmol/L",
+        "passed": true
+      },
+      {
+        "id": "units-020",
+        "computed": "0.35",
+        "expected": "0.35 L",
+        "passed": true
+      },
+      {
+        "id": "units-021",
+        "computed": "1.0E+2",
+        "expected": "100 kg",
+        "passed": true
+      },
+      {
+        "id": "units-022",
+        "computed": "84.7",
+        "expected": "84.7 mg",
+        "passed": true
+      },
+      {
+        "id": "units-023",
+        "computed": "80",
+        "expected": "80 mg",
+        "passed": true
+      },
+      {
+        "id": "units-024",
+        "computed": "26",
+        "expected": "26 mL",
+        "passed": true
+      },
+      {
+        "id": "units-025",
+        "computed": "4",
+        "expected": "4 containers",
+        "passed": true
+      }
+    ],
+    "nonNumericalItems": [
+      {
+        "id": "units-006",
+        "finding": "Mass-ounce factor does not convert fluid volume.",
+        "sourcePrintedPages": [
+          117,
+          117
+        ]
+      },
+      {
+        "id": "units-012",
+        "finding": "g and gr denote different mass units.",
+        "sourcePrintedPages": [
+          117,
+          117
+        ]
+      },
+      {
+        "id": "units-018",
+        "finding": "An unidentified ion leaves the mEq-to-mmol conversion ambiguous.",
+        "sourcePrintedPages": [
+          117,
+          117
+        ]
+      }
+    ],
+    "embeddedChecks": "Four prompts, all choices, keys and explanations reviewed against source and independently calculated.",
+    "originality": "New quantities and original wording; no copied proprietary assessment items. Distractors represent unit, direction, convention, or rounding errors."
+  },
+  "independentArithmetic": {
+    "method": "Independent Python Decimal arithmetic; HALF_UP for the specified positive rounding examples; CEILING for indivisible containers",
+    "bank": [
+      {
+        "id": "units-001",
+        "computed": "625.000",
+        "expected": "625 mL",
+        "passed": true
+      },
+      {
+        "id": "units-002",
+        "computed": "0.85",
+        "expected": "0.85 L",
+        "passed": true
+      },
+      {
+        "id": "units-003",
+        "computed": "25",
+        "expected": "25 mL",
+        "passed": true
+      },
+      {
+        "id": "units-004",
+        "computed": "105.0",
+        "expected": "105 mL",
+        "passed": true
+      },
+      {
+        "id": "units-005",
+        "computed": "2880",
+        "expected": "2880 mL",
+        "passed": true
+      },
+      {
+        "id": "units-007",
+        "computed": "240.0",
+        "expected": "240 mL",
+        "passed": true
+      },
+      {
+        "id": "units-008",
+        "computed": "6000.000",
+        "expected": "6000 mcg",
+        "passed": true
+      },
+      {
+        "id": "units-009",
+        "computed": "0.0075",
+        "expected": "0.0075 g",
+        "passed": true
+      },
+      {
+        "id": "units-010",
+        "computed": "7E+1",
+        "expected": "70 kg",
+        "passed": true
+      },
+      {
+        "id": "units-011",
+        "computed": "97.5",
+        "expected": "97.5 mg",
+        "passed": true
+      },
+      {
+        "id": "units-013",
+        "computed": "185.42",
+        "expected": "185.42 cm",
+        "passed": true
+      },
+      {
+        "id": "units-014",
+        "computed": "1.625",
+        "expected": "1.625 m",
+        "passed": true
+      },
+      {
+        "id": "units-015",
+        "computed": "32",
+        "expected": "32 mmol",
+        "passed": true
+      },
+      {
+        "id": "units-016",
+        "computed": "11",
+        "expected": "11 mmol",
+        "passed": true
+      },
+      {
+        "id": "units-017",
+        "computed": "16",
+        "expected": "16 mEq",
+        "passed": true
+      },
+      {
+        "id": "units-019",
+        "computed": "5",
+        "expected": "5 mmol/L",
+        "passed": true
+      },
+      {
+        "id": "units-020",
+        "computed": "0.35",
+        "expected": "0.35 L",
+        "passed": true
+      },
+      {
+        "id": "units-021",
+        "computed": "1.0E+2",
+        "expected": "100 kg",
+        "passed": true
+      },
+      {
+        "id": "units-022",
+        "computed": "84.7",
+        "expected": "84.7 mg",
+        "passed": true
+      },
+      {
+        "id": "units-023",
+        "computed": "80",
+        "expected": "80 mg",
+        "passed": true
+      },
+      {
+        "id": "units-024",
+        "computed": "26",
+        "expected": "26 mL",
+        "passed": true
+      },
+      {
+        "id": "units-025",
+        "computed": "4",
+        "expected": "4 containers",
+        "passed": true
+      }
+    ],
+    "examples": [
+      {
+        "id": "figure-volume",
+        "computed": "750.00",
+        "expected": "750",
+        "passed": true
+      },
+      {
+        "id": "figure-height",
+        "computed": "170.18",
+        "expected": "170.18",
+        "passed": true
+      },
+      {
+        "id": "figure-charge",
+        "computed": "9",
+        "expected": "9",
+        "passed": true
+      },
+      {
+        "id": "figure-rounding",
+        "computed": "17",
+        "expected": "17",
+        "passed": true
+      },
+      {
+        "id": "embedded-volume",
+        "computed": "155",
+        "expected": "155",
+        "passed": true
+      },
+      {
+        "id": "embedded-height",
+        "computed": "170.18",
+        "expected": "170.18",
+        "passed": true
+      },
+      {
+        "id": "embedded-charge",
+        "computed": "7",
+        "expected": "7",
+        "passed": true
+      },
+      {
+        "id": "embedded-container",
+        "computed": "3",
+        "expected": "3",
+        "passed": true
+      },
+      {
+        "id": "worked-volume",
+        "computed": "315",
+        "expected": "315",
+        "passed": true
+      },
+      {
+        "id": "worked-tablespoons",
+        "computed": "22.5",
+        "expected": "22.5",
+        "passed": true
+      },
+      {
+        "id": "worked-mass",
+        "computed": "4000.000",
+        "expected": "4000",
+        "passed": true
+      },
+      {
+        "id": "worked-nanograms",
+        "computed": "0.0025",
+        "expected": "0.0025",
+        "passed": true
+      },
+      {
+        "id": "worked-weight",
+        "computed": "9E+1",
+        "expected": "90",
+        "passed": true
+      },
+      {
+        "id": "worked-meter",
+        "computed": "1.7018",
+        "expected": "1.7018",
+        "passed": true
+      },
+      {
+        "id": "worked-round-tenth",
+        "computed": "73.5",
+        "expected": "73.5",
+        "passed": true
+      },
+      {
+        "id": "worked-round-tens",
+        "computed": "70",
+        "expected": "70",
+        "passed": true
+      }
+    ]
+  },
+  "figures": "All four equations and figure labels checked against the lesson and independent results. Existing responsive gold/charcoal calculation styling reused.",
+  "sourceFindings": [
+    "The book gives rounded and more precise household factors; the latter are not described as mathematically exact.",
+    "Rounded mass factors are not forced to be reciprocal.",
+    "Whole-container arithmetic does not change the required or administered quantity."
+  ],
+  "unresolvedIssues": [],
+  "validation": {
+    "focusedAssessmentAudit": "Passed: no hard errors/source gaps; question-count and per-lesson-size advisories reviewed against actual scope.",
+    "independentArithmetic": "22 bank calculations and 16 figure/worked/embedded calculations passed in independent Python Decimal checks; 20 direct numeric keys matched computed results. Two setup items and three nonnumeric items reviewed separately.",
+    "build": "Exact scoped candidate production build passed, Next.js 16.3.5, 561 static pages.",
+    "desktopMobile": [
+      {
+        "build": "scoped production candidate",
+        "width": 1440,
+        "guideSections": 8,
+        "guideChecks": 12,
+        "moduleLessons": 4,
+        "figures": 4,
+        "embeddedChecks": 4,
+        "assessment": 10,
+        "correctFeedback": 10,
+        "nextAttemptFullyDifferent": true,
+        "noOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "build": "scoped production candidate",
+        "width": 390,
+        "guideSections": 8,
+        "guideChecks": 12,
+        "moduleLessons": 4,
+        "figures": 4,
+        "embeddedChecks": 4,
+        "assessment": 10,
+        "correctFeedback": 10,
+        "nextAttemptFullyDifferent": true,
+        "noOverflow": true,
+        "pageErrors": []
+      }
+    ],
+    "integration": {
+      "build": "current Learn working-tree integration",
+      "width": 390,
+      "librarySearch": true,
+      "moduleLink": true,
+      "lessons": 4,
+      "figures": 4,
+      "noOverflow": true,
+      "pageErrors": []
+    },
+    "signedOutMemberBoundary": "Current working Learn preview returned 401 for the signed-out member endpoint; no signed-in storage mutation or database change performed.",
+    "sitemapAndCurriculum": "New route in generated sitemap and shared curriculum; area, module number and IDs remain unique.",
+    "cumulativeBank": "Five automatic module selections and four added quick-reference questions included; all nine new cumulative prompts unique.",
+    "visual": "All four figures inspected at desktop and mobile sizes, plus normal mobile viewports, guide section, Library result and full-page captures. All equations, labels, line wrapping and values reviewed.",
+    "candidateDiff": "Scoped content prepared from HEAD; existing unrelated work excluded. Final Git diff check required immediately before commit."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": "pending",
+    "push": "pending",
+    "production": "not verified"
+  },
+  "remainingBookCoverage": "Neither the full Chapter 1 checklist nor the rest of Chapter 9 is complete."
+}

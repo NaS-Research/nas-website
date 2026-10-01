@@ -1,0 +1,13 @@
+.figure :global(.pn-calc-visual__rail) {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.figure :global(.pn-calc-visual__formula) {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 560px) {
+  .figure :global(.pn-calc-visual__rail) {
+    grid-template-columns: 1fr;
+  }
+}

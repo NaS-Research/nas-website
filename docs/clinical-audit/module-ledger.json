@@ -11205,6 +11205,37 @@
         "envenomation-review.json"
       ],
       "verificationNotes": "13lessons/checks/figures and26original cases reviewed against private book and current sources. Arithmetic, targeted content audit, production build and desktop/mobile rendering and feedback checks passed; see envenomation-review.json. No deployment."
+    },
+    {
+      "slug": "pharmacy-unit-conversions",
+      "title": "Pharmacy Unit Conversions and Rounding",
+      "area": "Calculations & Nutrition",
+      "lessons": [
+        {
+          "slug": "volume-conversions",
+          "status": "verified"
+        },
+        {
+          "slug": "mass-height-conversions",
+          "status": "verified"
+        },
+        {
+          "slug": "meq-mmol-conversions",
+          "status": "verified"
+        },
+        {
+          "slug": "methods-rounding",
+          "status": "verified"
+        }
+      ],
+      "questions": 25,
+      "embeddedChecks": 4,
+      "status": "verified",
+      "evidence": [
+        "docs/clinical-audit/pharmacy-unit-conversions-review.json"
+      ],
+      "sourcePolicy": "RxPrep 2023 only",
+      "verificationNotes": "Book comparison and item/figure review complete; 38 independent Decimal calculations, focused structural audit, exact scoped production build and desktop/mobile browser checks passed. Commit/push recorded separately in release receipt."
     }
   ],
   "guides": [
@@ -11216,8 +11247,15 @@
       "slug": "naplex-preparation-and-study-planning",
       "status": "verified",
       "evidence": [
-        "naplex-preparation.md"
-      ]
+        "naplex-preparation.md",
+        "quick-reference-introduction-review.json"
+      ],
+      "latestChange": {
+        "date": "2026-09-30",
+        "scope": "Quick-reference section, six added learning checks, and four cumulative-bank questions",
+        "status": "verified",
+        "originalOfficialSourcesReviewed": "2026-09-24; retained, not refreshed"
+      }
     }
   ],
   "additionalSurfaces": [

@@ -115,7 +115,11 @@ export default async function PharmacyLessonPage({ params }) {
           <section id="references" className="lesson-references">
             <p className="nas-section-label">References</p><h2>Source material and further reading</h2>
             <p>This guide is original educational material informed by the sources below. Product specific decisions should use the most current approved labeling and professional guidance.</p>
-            <ol>{lesson.sources.map((source) => <li key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.title}<span aria-hidden="true">↗</span></a></li>)}</ol>
+            <ol>{lesson.sources.map((source) => <li key={source.url || source.title}>
+              {source.url ? <a href={source.url} target="_blank" rel="noreferrer">{source.title}<span aria-hidden="true">↗</span></a> : <span>{source.title}</span>}
+              {source.locator && <p>{source.locator}</p>}
+              {source.note && <p>{source.note}</p>}
+            </li>)}</ol>
           </section>
 
           <aside className="lesson-disclaimer">

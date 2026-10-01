@@ -14,7 +14,7 @@
         15,
         53
       ],
-      "status": "mapped",
+      "status": "reviewing",
       "subsectionsComplete": false,
       "subsections": [
         {
@@ -35,8 +35,15 @@
             11,
             11
           ],
-          "status": "unreviewed",
-          "targets": []
+          "status": "verified",
+          "targets": [
+            "naplex-preparation-and-study-planning"
+          ],
+          "pdfPages": [
+            23,
+            23
+          ],
+          "evidence": "quick-reference-introduction-review.json; source, all six added checks and four cumulative items, scoped production build and desktop/mobile rendering verified"
         },
         {
           "topic": "Prescription drugs",
@@ -74,10 +81,82 @@
             7,
             7
           ],
-          "status": "mapped",
+          "status": "reviewing",
           "targets": [
             "pharmacokinetics",
-            "parenteral-nutrition-calculations"
+            "parenteral-nutrition-calculations",
+            "pharmacy-unit-conversions"
+          ],
+          "pdfPages": [
+            19,
+            19
+          ],
+          "evidence": "chapter1-formula-checklist-map.json; first four entries addressed through the Chapter 9 dependency, remainder unverified",
+          "topics": [
+            {
+              "topic": "Liquid-volume conversions",
+              "status": "verified",
+              "targets": [
+                "pharmacy-unit-conversions"
+              ],
+              "sourcePrintedPages": [
+                116,
+                119
+              ],
+              "sourcePdfPages": [
+                124,
+                127
+              ],
+              "evidence": "pharmacy-unit-conversions-review.json"
+            },
+            {
+              "topic": "Solid-mass conversions",
+              "status": "verified",
+              "targets": [
+                "pharmacy-unit-conversions"
+              ],
+              "sourcePrintedPages": [
+                116,
+                119
+              ],
+              "sourcePdfPages": [
+                124,
+                127
+              ],
+              "evidence": "pharmacy-unit-conversions-review.json"
+            },
+            {
+              "topic": "mEq/mmol conversion for mono- and divalent ions",
+              "status": "verified",
+              "targets": [
+                "pharmacy-unit-conversions"
+              ],
+              "sourcePrintedPages": [
+                116,
+                119
+              ],
+              "sourcePdfPages": [
+                124,
+                127
+              ],
+              "evidence": "pharmacy-unit-conversions-review.json"
+            },
+            {
+              "topic": "Height conversions",
+              "status": "verified",
+              "targets": [
+                "pharmacy-unit-conversions"
+              ],
+              "sourcePrintedPages": [
+                116,
+                119
+              ],
+              "sourcePdfPages": [
+                124,
+                127
+              ],
+              "evidence": "pharmacy-unit-conversions-review.json"
+            }
           ]
         },
         {
@@ -128,13 +207,20 @@
           "targets": []
         }
       ],
-      "moduleSlugs": [],
+      "moduleSlugs": [
+        "pharmacy-unit-conversions"
+      ],
       "findings": [
         "Textbook six-area exam blueprint superseded by NABP five-domain outline effective 2025-05-01.",
-        "Historical drug lists require current formulation and availability checks; not a current prescribing list. Table OCR is imperfect."
+        "Historical drug lists require current formulation and availability checks; not a current prescribing list. Table OCR is imperfect.",
+        "2026-09-30 source policy: book only for new teaching; prior external-source evidence retained with its historical dates.",
+        "2026-09-30: dedicated foundational conversion module was missing; Chapter 9 pages 116-119 read as a dependency of the earlier checklist."
       ],
       "evidence": [
-        "NABP Content Outline accessed 2026-09-24; see naplex-preparation.md"
+        "NABP Content Outline accessed 2026-09-24; see naplex-preparation.md",
+        "quick-reference-introduction-review.json",
+        "chapter1-formula-checklist-map.json",
+        "pharmacy-unit-conversions-review.json"
       ],
       "pdfRangeStatus": "start verified; end provisional"
     },
@@ -251,12 +337,33 @@
         127
       ],
       "pdfPages": null,
-      "status": "unmapped",
+      "status": "reviewing",
       "subsectionsComplete": false,
-      "subsections": [],
-      "moduleSlugs": [],
+      "subsections": [
+        {
+          "topic": "Equivalent measurements, common conversions, rounding, proportions and dimensional analysis",
+          "printedPages": [
+            116,
+            119
+          ],
+          "pdfPages": [
+            124,
+            127
+          ],
+          "status": "verified",
+          "targets": [
+            "pharmacy-unit-conversions"
+          ],
+          "evidence": "pharmacy-unit-conversions-review.json; four lessons, 25 bank items, four embedded checks and figures, independent arithmetic, scoped production build and desktop/mobile QA verified"
+        }
+      ],
+      "moduleSlugs": [
+        "pharmacy-unit-conversions"
+      ],
       "findings": [],
-      "evidence": []
+      "evidence": [
+        "pharmacy-unit-conversions-review.json"
+      ]
     },
     {
       "chapter": 10,

@@ -1,6 +1,18 @@
 # NaS Learn clinical content audit
 
-Started September 24, 2026. Status: **in progress**. Nine clinical modules, Sunscreen and Photoprotection, Rheumatoid Arthritis, Systemic Lupus Erythematosus, Multiple Sclerosis, Raynaud Phenomenon, Celiac Disease, Myasthenia Gravis, Sjogren Disease, and Psoriasis, have passed this new audit locally; the remaining curriculum is unverified.
+Started September 24, 2026. Status: **in progress**. Use `sequential-resume.json` for the current source policy, exact next starting point, validation, and release state. Earlier completion records below are historical evidence, not a new verification of the complete curriculum.
+
+## Current instructions and sequential position
+
+The September 30, 2026 request supersedes earlier source/release instructions in this document: new educational claims must be supported by the founder's supplied book; do not add outside sources without explicit authorization. Preserve existing work and its dated evidence. Record discrepancies or material outside the book rather than silently replacing it from general knowledge. The prior NABP references in the preparation guide remain explicitly dated to their September 24 review; they were not refreshed during this book-only pass.
+
+The source is confirmed again as RxPrep 2023, 1,032 PDF pages. Chapter 1 is still open. Its printed-page-7 formula checklist precedes the unfinished drug/diagnostic/terminology references. The quick-guide introduction on printed page 11 (PDF 23) had no verified teaching coverage; the existing preparation guide is now expanded and its six additional checks and four cumulative questions passed source, build, and desktop/mobile verification. `quick-reference-introduction-review.json` records the limited scope.
+
+The first four checklist entries lead to Chapter 9 printed pages 116-119 (PDF 124-127). This is a dependency read to verify the earlier checklist, not a decision to skip Chapters 2-8. The missing foundational unit-conversion module has four lessons, four original figures, four embedded checks, and 25 original assessment questions. `pharmacy-unit-conversions-review.json` records source coverage and independent arithmetic. The module passed source/item review, 38 independent arithmetic checks, the scoped production build, and desktop/mobile QA. Both Chapter 1's remaining checklist and Chapter 9's later material stay open. Continue with the fifth checklist entry, percentage strength, at Chapter 10 printed page 128; verify its PDF page before use.
+
+Commit and push verified logical units to the existing `audit/rxprep-content-2026-09-24` branch, then follow the established review/deployment workflow. The current request authorizes normal deployment progression; the old blanket no-publication instruction and mandatory `[skip netlify]` below no longer govern new units. Do not merge or force-push merely to move this audit forward. Production publication must be verified separately from a branch push.
+
+The starting checkout contained hundreds of unrelated changes and additional unfinished clinical audits. Stage only this pass's changes. Validate the exact scoped candidate in a private temporary checkout as well as its integration with the working Learn section; do not include the unrelated changes in an audit commit.
 
 ## Scope and evidence
 

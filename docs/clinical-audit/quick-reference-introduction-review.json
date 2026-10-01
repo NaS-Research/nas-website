@@ -1,0 +1,143 @@
+{
+  "date": "2026-09-30",
+  "status": "verified",
+  "source": {
+    "title": "RxPrep 2023 Course Book",
+    "chapter": 1,
+    "printedPages": [
+      11,
+      11
+    ],
+    "pdfPages": [
+      23,
+      23
+    ],
+    "textAndCompletePageVisuallyRead": true,
+    "supportingStudyPages": [
+      3,
+      9
+    ],
+    "formulaChecklist": {
+      "printedPage": 7,
+      "pdfPage": 19
+    }
+  },
+  "targets": [
+    "src/data/naplexPreparationGuide.js#use-quick-references",
+    "src/data/pharmacyReview.js"
+  ],
+  "changes": [
+    "Expanded the existing guide instead of creating a duplicative orientation module.",
+    "Added recognition of generic/brand names and formulation notes, the oral default for this specific list, overlapping prescription/OTC lists, checklist breadth, formula recall, diagnostic chapter context, and case vocabulary.",
+    "Added six original guide checks and four original cumulative questions; no clinical drug recommendations added.",
+    "Added bibliographic book references without distributing the private PDF."
+  ],
+  "retainedWork": {
+    "originalGuideSections": 7,
+    "originalChecks": 6,
+    "officialReferencesReviewed": "2026-09-24",
+    "outsideSourcesAddedInThisPass": false,
+    "note": "Previously reviewed official exam guidance retained and explicitly dated in the bibliography; no new current-source verification claimed."
+  },
+  "addedChecks": [
+    {
+      "item": 7,
+      "topic": "Prescription/OTC list overlap",
+      "support": "Printed page 11; calculation recall additionally printed page 6",
+      "review": "Prompt and answer individually compared with supplied source"
+    },
+    {
+      "item": 8,
+      "topic": "List-specific oral default",
+      "support": "Printed page 11; calculation recall additionally printed page 6",
+      "review": "Prompt and answer individually compared with supplied source"
+    },
+    {
+      "item": 9,
+      "topic": "Generic recognition and missing brand",
+      "support": "Printed page 11; calculation recall additionally printed page 6",
+      "review": "Prompt and answer individually compared with supplied source"
+    },
+    {
+      "item": 10,
+      "topic": "Calculation checklist across chapters",
+      "support": "Printed page 11; calculation recall additionally printed page 6",
+      "review": "Prompt and answer individually compared with supplied source"
+    },
+    {
+      "item": 11,
+      "topic": "Formula recall without a visible sheet",
+      "support": "Printed page 11; calculation recall additionally printed page 6",
+      "review": "Prompt and answer individually compared with supplied source"
+    },
+    {
+      "item": 12,
+      "topic": "Diagnostic chapter context and undefined abbreviations",
+      "support": "Printed page 11; calculation recall additionally printed page 6",
+      "review": "Prompt and answer individually compared with supplied source"
+    }
+  ],
+  "cumulativeItems": [
+    {
+      "id": "review-quick-reference-names",
+      "sourcePrintedPages": [
+        11,
+        11
+      ],
+      "review": "Stem, all four options, keyed answer and explanation reviewed; one defensible answer"
+    },
+    {
+      "id": "review-quick-reference-calculations",
+      "sourcePrintedPages": [
+        6,
+        7
+      ],
+      "review": "Stem, all four options, keyed answer and explanation reviewed; one defensible answer"
+    },
+    {
+      "id": "review-quick-reference-diagnostics",
+      "sourcePrintedPages": [
+        11,
+        11
+      ],
+      "review": "Stem, all four options, keyed answer and explanation reviewed; one defensible answer"
+    },
+    {
+      "id": "review-quick-reference-language",
+      "sourcePrintedPages": [
+        11,
+        11
+      ],
+      "review": "Stem, all four options, keyed answer and explanation reviewed; one defensible answer"
+    }
+  ],
+  "existingBroaderBankReview": {
+    "standaloneItemsRead": 16,
+    "directQuickReferenceItemsBeforeChange": 0,
+    "unrelatedClinicalItems": "Preserved; pending their respective chapter audits",
+    "cumulativeModuleItems": "Generated from module banks, no separate divergent copy",
+    "preExistingDuplicateFinding": {
+      "scope": "audit-branch scoped candidate",
+      "groups": 14,
+      "repeatedInstances": 83,
+      "newlyAddedQuestionsAffected": 0,
+      "resolution": "Deferred to the relevant topic audits; not silently changed."
+    }
+  },
+  "validation": {
+    "structural": "Eight unique guide sections; 12 disclosures including six added checks; four new cumulative items have unique prompts, valid keys and distinct options.",
+    "build": "Exact scoped candidate production build passed, Next.js 16.3.5, 561 static pages.",
+    "desktopMobile": "HTTP 200, 1440x1000 and 390x844; all 12 disclosures opened, source bibliography rendered without a private source link, no horizontal overflow or page errors.",
+    "visual": "Full-page, new section and normal mobile screenshots inspected. Fixed-navigation overlays in element crops were distinguished from actual viewport rendering."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": "pending",
+    "push": "pending",
+    "production": "not verified"
+  },
+  "limits": [
+    "This subsection does not verify prescription/injectable/OTC entries, formulas, diagnostic tables, terms or abbreviations.",
+    "The book-only source policy does not convert historical outside-source reviews into new book-only completion claims."
+  ]
+}

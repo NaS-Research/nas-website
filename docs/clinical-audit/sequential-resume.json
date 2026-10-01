@@ -1,0 +1,98 @@
+{
+  "updated": "2026-09-30",
+  "status": "in_progress",
+  "sourcePolicy": {
+    "educational": "Supplied RxPrep 2023 book only for newly authored claims",
+    "technical": "Existing NaS Learn codebase and production architecture",
+    "outsideSources": "Do not add without explicit user authorization; historical evidence retained and dated"
+  },
+  "sourceIdentity": {
+    "suppliedFilename": "NAPLEX 2024.pdf",
+    "coverEdition": 2023,
+    "pdfPages": 1032,
+    "privateSource": "Keep the PDF, extracted text and page images outside Git and public assets",
+    "pagination": "Verify each range visually; Chapter 1 and Chapter 9 have different offsets"
+  },
+  "architecture": {
+    "library": "src/app/learn/library/page.jsx combines pharmacyModules and pharmacyLessons; LearningCatalog searches title, description, area and topics with subject/type filters",
+    "modules": "src/data/modules/*.js, registered and categorized in src/data/pharmacyModules.js; shared module route renders submodules, visuals, checks and assessments",
+    "moduleQuestions": "src/data/questionBanks/*.js referenced by each module; randomized 10-question assessment with shuffled options",
+    "broaderBank": "src/data/pharmacyCumulativeReview.js includes all standalone pharmacyFinalReview items plus five spread-across-bank questions per module; changes flow through automatically",
+    "guides": "src/data/pharmacyLearning.js; existing [slug] guide reader and auto static paths/sitemap",
+    "navigation": "Shared curriculum, Library, module sequence and section anchors; no redesign",
+    "backend": "Educational content is file-backed; member records are separate from content",
+    "memberTracking": "Existing member catalog derives paths/sections from the same arrays; Supabase-backed account practice/progress uses stable paths and question IDs; no schema or account mutation in this pass",
+    "validation": "Existing pharmacy assessment audit, production build, direct source/item review, independent Decimal arithmetic and browser QA"
+  },
+  "startingSnapshot": {
+    "modules": 228,
+    "moduleLedgerStatuses": {
+      "verified": 42,
+      "reviewing": 57,
+      "unreviewed": 129
+    },
+    "chapterLedgerStatuses": {
+      "verified": 6,
+      "reviewing": 21,
+      "mapped": 2,
+      "unmapped": 53
+    },
+    "interpretation": "Observed ledger statuses preserved, not new independent verification of prior work. Branch and working tree include substantial unfinished/unrelated changes."
+  },
+  "thisPass": {
+    "guide": "Existing preparation guide expanded at use-quick-references",
+    "newModule": "pharmacy-unit-conversions",
+    "questionCoverage": "Six added guide checks, four standalone cumulative questions, four embedded checks and 25 new module-bank items",
+    "validation": "Book/source and all item reviews, 38 independent calculations, focused structural audit, scoped production build and desktop/mobile rendering passed."
+  },
+  "currentBookLocation": {
+    "chapter": 1,
+    "printedPage": 7,
+    "pdfPage": 19,
+    "section": "Required-formulas checklist",
+    "dependencyRead": {
+      "chapter": 9,
+      "printedPages": [
+        116,
+        119
+      ],
+      "pdfPages": [
+        124,
+        127
+      ]
+    },
+    "completedEntries": 4,
+    "correctedEntries": 0,
+    "note": "Do not advance the complete checklist to verified before all remaining entries are audited."
+  },
+  "nextStartingPoint": {
+    "chapter": 1,
+    "printedPage": 7,
+    "entry": "Fifth checklist item: percentage strength",
+    "dependencyChapter": 10,
+    "dependencyPrintedPage": 128,
+    "dependencyPdfPage": "not yet verified"
+  },
+  "otherChapter1Work": {
+    "quickReferenceIntroduction": "verified",
+    "drugLists": "mapped, not verified",
+    "formulaReference": "mapped, not verified",
+    "diagnostics": "mapped, not verified",
+    "terms": "unreviewed",
+    "abbreviations": "unreviewed"
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "baseCommit": "b38faea07f3cd78f04c513cb6e842bb8f6fccdbc",
+    "remoteVerifiedAtStart": true,
+    "commit": "pending",
+    "push": "pending",
+    "production": "not verified"
+  },
+  "openIssues": [
+    "Remaining Chapter 1 checklist entries and all reference tables require source review.",
+    "Historical externally sourced modules must retain their discrepancy records; no blanket book-only completion claim.",
+    "Pending unrelated clinical edits are preserved and excluded from this pass.",
+    "Audit-branch cumulative bank has 14 pre-existing duplicate prompt groups (83 repeated instances); new items are unique. Resolve in the associated chapter/module reviews."
+  ]
+}

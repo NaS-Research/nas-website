@@ -1,0 +1,103 @@
+{
+  "reviewDate": "2026-09-30",
+  "source": {
+    "edition": 2023,
+    "chapter": 1,
+    "printedPage": 7,
+    "pdfPage": 19,
+    "visualRead": true
+  },
+  "status": "reviewing",
+  "completedEntryCount": 4,
+  "newModuleScope": [
+    "Liquid-volume conversions",
+    "Solid-mass conversions",
+    "Monovalent/divalent mEq-to-mmol conversions",
+    "Height conversions"
+  ],
+  "validationPending": false,
+  "mapping": [
+    {
+      "group": "First four conversion entries",
+      "targets": [
+        "pharmacy-unit-conversions"
+      ],
+      "status": "verified",
+      "sourceDependency": {
+        "chapter": 9,
+        "printedPages": [
+          116,
+          119
+        ],
+        "pdfPages": [
+          124,
+          127
+        ]
+      }
+    },
+    {
+      "group": "Concentration, strength, dilution and compounding calculations",
+      "targets": [],
+      "status": "unreviewed",
+      "nextSourcePrintedPage": 128,
+      "note": "Search confirmed no standalone general concentration/strength module; existing nutrition stock-solution lessons cover only parts."
+    },
+    {
+      "group": "Nutrition, electrolyte, body-size and kidney-function calculations",
+      "targets": [
+        "parenteral-nutrition-calculations",
+        "nutrition-screening-assessment",
+        "fluid-electrolyte-therapy",
+        "calcium-phosphorus-homeostasis",
+        "acid-base-interpretation"
+      ],
+      "status": "mapped"
+    },
+    {
+      "group": "Biostatistics and cost-effectiveness calculations",
+      "targets": [],
+      "status": "unreviewed",
+      "note": "No dedicated clinical biostatistics module in the current module catalog; broad legacy foundations do not establish full coverage."
+    },
+    {
+      "group": "Disease-specific calculations",
+      "targets": [
+        "dyslipidemia-therapeutics",
+        "sunscreen-photoprotection",
+        "tobacco-use-cessation",
+        "insulin-therapy",
+        "perioperative-critical-care-pharmacology",
+        "seizures-epilepsy"
+      ],
+      "status": "mapped",
+      "note": "Prior source reviews preserved; no blanket re-verification."
+    },
+    {
+      "group": "Pharmacokinetic equations",
+      "targets": [
+        "pharmacokinetics"
+      ],
+      "status": "mapped"
+    },
+    {
+      "group": "Drug-dose conversions",
+      "targets": [
+        "diuretic-pharmacology",
+        "insulin-therapy",
+        "thyroid-disorders",
+        "systemic-glucocorticoids",
+        "anemia"
+      ],
+      "status": "mapped",
+      "note": "Other opioid, lithium and aminophylline conversion coverage remains unverified."
+    }
+  ],
+  "nextStartingPoint": {
+    "bookLocation": "Chapter 1 printed page 7, fifth checklist entry: percentage strength",
+    "dependency": "Chapter 10, printed page 128; verify PDF page before use"
+  },
+  "limits": [
+    "This is a coverage map, not verification of the complete formula checklist.",
+    "The formula-reference pages 22-23 and the other Chapter 1 quick guides remain open."
+  ]
+}
