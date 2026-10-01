@@ -1,0 +1,862 @@
+{
+  "slug": "brimonidine",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Selected current AlphaganP0.1/0.15 andverifiedBausch0.2 ophthalmicglaucoma, Lumify0.025bottle/PFsingle-useOTCredness, Mirvaso0.33free-baseadultfacialgel; eachroute/age/labelversiondistinct.",
+  "excludedRegimens": [
+    "Combinationbrimonidine/timolol/brinzolamideproducts",
+    "BorrowedPF6–8hinterval/Alphaganlenswait/universal28daydiscard",
+    "UniversalrenalhepaticdoseadjustmentorPKhalf-life",
+    "PediatricMirvaso/under5OTCnumericselfdose/postlaserprocedureregimen",
+    "Otherbrands/countries/stockavailability"
+  ],
+  "sources": [
+    {
+      "id": "label",
+      "title": "Alphagan P0.1% / 0.15% · Ophthalmic prescribing information",
+      "publisher": "DailyMed / AbbVie",
+      "note": "Current SPL version 25, effective 2025-09-18. Current label includes updated pregnancy and lactation risk text.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=264c4494-c225-486f-888a-caaf36be46b3"
+    },
+    {
+      "id": "generic",
+      "title": "Brimonidine tartrate0.2% · Ophthalmic prescribing information",
+      "publisher": "DailyMed / Bausch & Lomb",
+      "note": "Current SPL version 16, effective 2024-07-19. Verified Bausch 0.2% tartrate ophthalmic product.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=865f88b0-b13e-4607-a314-939f1b331e6f"
+    },
+    {
+      "id": "lumify",
+      "title": "Lumify0.025% · Multidose Drug Facts",
+      "publisher": "DailyMed / Bausch & Lomb",
+      "note": "Current SPL version 17, effective 2026-03-31. Multidose 0.025% ophthalmic Drug Facts.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=022de945-0b26-40ae-8e88-d3fe2464d106"
+    },
+    {
+      "id": "pf",
+      "title": "Lumify Preservative Free0.025% · Single-use Drug Facts",
+      "publisher": "DailyMed / Bausch & Lomb",
+      "note": "Current SPL version 9, effective 2026-03-17. Single-use directions state one drop, maximum four times daily; no 6–8 hour interval is stated.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ef5974b9-946c-4983-80e3-32b3aa28c207"
+    },
+    {
+      "id": "mirvaso",
+      "title": "Mirvaso0.33% · Facial gel prescribing information",
+      "publisher": "DailyMed / Galderma",
+      "note": "Current SPL version 11, effective 2024-10-24. Adult facial rosacea gel: 0.33% free base equals 0.5% tartrate salt.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f6a4353f-ae69-4214-901f-e5d42a6fbde7"
+    }
+  ],
+  "labelMetadata": [
+    {
+      "sourceId": "label",
+      "product": "brimonidine-alphagan",
+      "setid": "264c4494-c225-486f-888a-caaf36be46b3",
+      "version": "25",
+      "effectiveTime": "20250918",
+      "clinicalVersion": "September18,2025 SPL v25; current revised lactation instructions",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/264c4494-c225-486f-888a-caaf36be46b3.xml",
+      "xmlSha256": "edf22140e88589ef0b6d099a3199cca598cdad930019e4189bea3154485e7a16",
+      "marketingAuthorization": [
+        {
+          "category": "NDA",
+          "application": "NDA021770"
+        },
+        {
+          "category": "NDA",
+          "application": "NDA021262"
+        }
+      ]
+    },
+    {
+      "sourceId": "generic",
+      "product": "brimonidine-generic",
+      "setid": "865f88b0-b13e-4607-a314-939f1b331e6f",
+      "version": "16",
+      "effectiveTime": "20240719",
+      "clinicalVersion": "July19,2024 SPL v16; actual Bausch0.2% tartrate, not0.1/0.15 candidates",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/865f88b0-b13e-4607-a314-939f1b331e6f.xml",
+      "xmlSha256": "e4e0a86b2ecbddb7547e6414571452f9afda882283a578b60a41371ebf0e9c87",
+      "marketingAuthorization": [
+        {
+          "category": "ANDA",
+          "application": "ANDA076260"
+        }
+      ]
+    },
+    {
+      "sourceId": "lumify",
+      "product": "brimonidine-lumify",
+      "setid": "022de945-0b26-40ae-8e88-d3fe2464d106",
+      "version": "17",
+      "effectiveTime": "20260331",
+      "clinicalVersion": "March31,2026 SPL v17 multidose Drug Facts",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/022de945-0b26-40ae-8e88-d3fe2464d106.xml",
+      "xmlSha256": "86af125df02b01a3603b935a83a54adbbbdafe16859661053316a8036df173a3",
+      "marketingAuthorization": [
+        {
+          "category": "NDA",
+          "application": "NDA208144"
+        }
+      ]
+    },
+    {
+      "sourceId": "pf",
+      "product": "brimonidine-lumify-pf",
+      "setid": "ef5974b9-946c-4983-80e3-32b3aa28c207",
+      "version": "9",
+      "effectiveTime": "20260317",
+      "clinicalVersion": "March17,2026 SPL v9 PF Drug Facts; no interval stated",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/ef5974b9-946c-4983-80e3-32b3aa28c207.xml",
+      "xmlSha256": "cbb929562555494b21aae84c83182f815a117d7d9bea0e906870d57bdda4f1e1",
+      "marketingAuthorization": [
+        {
+          "category": "NDA",
+          "application": "NDA218424"
+        }
+      ]
+    },
+    {
+      "sourceId": "mirvaso",
+      "product": "brimonidine-mirvaso",
+      "setid": "f6a4353f-ae69-4214-901f-e5d42a6fbde7",
+      "version": "11",
+      "effectiveTime": "20241024",
+      "clinicalVersion": "October24,2024 SPL v11 current available full PI",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/f6a4353f-ae69-4214-901f-e5d42a6fbde7.xml",
+      "xmlSha256": "666c4c56e73a33bcc335319159314776addf08c7e75a775b6f9d7685c7b5c0d2",
+      "marketingAuthorization": [
+        {
+          "category": "NDA",
+          "application": "NDA204708"
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/brimonidine-alphagan.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/brimonidine/brimonidine-alphagan.xml",
+      "sha256": "edf22140e88589ef0b6d099a3199cca598cdad930019e4189bea3154485e7a16",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/264c4494-c225-486f-888a-caaf36be46b3.xml"
+    },
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/brimonidine-alphagan-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/brimonidine/brimonidine-alphagan-sections.json",
+      "sha256": "63ee4aa7b2e4986bfcd634c9c410575be7d5fd33814d590ba55256f3968200b0",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/264c4494-c225-486f-888a-caaf36be46b3.xml"
+    },
+    {
+      "sourceId": "generic",
+      "localEvidence": "/tmp/nas-drug-sources/brimonidine-generic.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/brimonidine/brimonidine-generic.xml",
+      "sha256": "e4e0a86b2ecbddb7547e6414571452f9afda882283a578b60a41371ebf0e9c87",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/865f88b0-b13e-4607-a314-939f1b331e6f.xml"
+    },
+    {
+      "sourceId": "generic",
+      "localEvidence": "/tmp/nas-drug-sources/brimonidine-generic-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/brimonidine/brimonidine-generic-sections.json",
+      "sha256": "4d51b3c237efd317296eb7609686e09d40acf42caf4ef0260cca6ac54244fbdd",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/865f88b0-b13e-4607-a314-939f1b331e6f.xml"
+    },
+    {
+      "sourceId": "lumify",
+      "localEvidence": "/tmp/nas-drug-sources/brimonidine-lumify.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/brimonidine/brimonidine-lumify.xml",
+      "sha256": "86af125df02b01a3603b935a83a54adbbbdafe16859661053316a8036df173a3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/022de945-0b26-40ae-8e88-d3fe2464d106.xml"
+    },
+    {
+      "sourceId": "lumify",
+      "localEvidence": "/tmp/nas-drug-sources/brimonidine-lumify-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/brimonidine/brimonidine-lumify-sections.json",
+      "sha256": "2058fdb0498bdb09894b32a6c74cf02030b1a04852547aa72502a898d340ffe4",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/022de945-0b26-40ae-8e88-d3fe2464d106.xml"
+    },
+    {
+      "sourceId": "pf",
+      "localEvidence": "/tmp/nas-drug-sources/brimonidine-lumify-pf.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/brimonidine/brimonidine-lumify-pf.xml",
+      "sha256": "cbb929562555494b21aae84c83182f815a117d7d9bea0e906870d57bdda4f1e1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/ef5974b9-946c-4983-80e3-32b3aa28c207.xml"
+    },
+    {
+      "sourceId": "pf",
+      "localEvidence": "/tmp/nas-drug-sources/brimonidine-lumify-pf-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/brimonidine/brimonidine-lumify-pf-sections.json",
+      "sha256": "33df9be07b215b9d5556d82d26c5397d648921931cec8602c30c7738bfa028d9",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/ef5974b9-946c-4983-80e3-32b3aa28c207.xml"
+    },
+    {
+      "sourceId": "mirvaso",
+      "localEvidence": "/tmp/nas-drug-sources/brimonidine-mirvaso.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/brimonidine/brimonidine-mirvaso.xml",
+      "sha256": "666c4c56e73a33bcc335319159314776addf08c7e75a775b6f9d7685c7b5c0d2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/f6a4353f-ae69-4214-901f-e5d42a6fbde7.xml"
+    },
+    {
+      "sourceId": "mirvaso",
+      "localEvidence": "/tmp/nas-drug-sources/brimonidine-mirvaso-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/brimonidine/brimonidine-mirvaso-sections.json",
+      "sha256": "3db129575c3b3733309c09132f1d82d5483d9eb0f01f194cb4d140774e2ea8a1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/f6a4353f-ae69-4214-901f-e5d42a6fbde7.xml"
+    }
+  ],
+  "sourceEvidenceRoot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/brimonidine",
+  "sourceManifest": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/brimonidine/source-manifest.json",
+  "assertionToSourceMap": [
+    {
+      "section": "indications",
+      "card": "Prescription glaucoma drops",
+      "assertions": {
+        "paragraphs": [
+          "Alphagan P 0.1%/ 0.15% and the selected generic 0.2% lower elevated IOP in open-angle glaucoma or ocular hypertension. The 0.2% label notes reduced effect over time in some patients and calls for monitoring. These are not universal treatments for every red or painful eye."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic"
+      ],
+      "sourceSections": {
+        "label": "Alphagan/Bausch§1IOPopenangleglaucomaocularHTN;§4agecontra",
+        "generic": "Alphagan/Bausch§1IOPopenangleglaucomaocularHTN;§4agecontra"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "indications",
+      "card": "OTC eye redness",
+      "assertions": {
+        "paragraphs": [
+          "Lumify multidose and preservative-free 0.025% relieve redness due to minor eye irritation. Their self-use directions apply from age 5, with doctor consultation below 5. Pain, visual changes or persistent redness require assessment; these products do not provide a glaucoma-management regimen."
+        ]
+      },
+      "sourceIds": [
+        "lumify",
+        "pf"
+      ],
+      "sourceSections": {
+        "lumify": "Lumify/PFUse andDirectionsminorirritationrednessage≥5under5doctor",
+        "pf": "Lumify/PFUse andDirectionsminorirritationrednessage≥5under5doctor"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "indications",
+      "card": "Facial rosacea and scope",
+      "assertions": {
+        "paragraphs": [
+          "Mirvaso gel treats persistent nontransient facial erythema of rosacea in adults 18 or older. It is not for oral, ophthalmic or intravaginal use. Brimonidine / timolol or brinzolamide / brimonidine combinations have separate dosing and contraindications; other formulations and procedures such as post-laser application are outside this reviewed scope."
+        ]
+      },
+      "sourceIds": [
+        "mirvaso",
+        "label"
+      ],
+      "sourceSections": {
+        "mirvaso": "Mirvaso§1adultpersistentnontransientrosaceaerythema;§2routes;combination regimens excluded",
+        "label": "Mirvaso§1adultpersistentnontransientrosaceaerythema;§2routes;combination regimens excluded"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "dosage",
+      "card": "Selected eye regimens",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Product / population",
+            "Directions"
+          ],
+          "rows": [
+            [
+              "Alphagan P 0.1% / 0.15%; selected generic 0.2%",
+              "One drop in affected eye(s) three times daily, approximately 8 hours apart; separate other topical eye medicines by at least 5 minutes"
+            ],
+            [
+              "Lumify multidose 0.025%, age 5 or older",
+              "One drop in affected eye(s) every 6–8 hours; no more than 4 times daily"
+            ],
+            [
+              "Lumify PF single-use 0.025%, age 5 or older",
+              "One drop in affected eye(s); no more than 4 times daily; discard vial immediately and do not reuse. Current selected Drug Facts supplies no 6–8 hour interval"
+            ],
+            [
+              "Lumify forms below age 5",
+              "Consult a doctor; do not invent a numeric self-treatment dose"
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label",
+        "generic",
+        "lumify",
+        "pf"
+      ],
+      "sourceSections": {
+        "label": "Rx§2TID~8h≥5min;LumifyDirectionsq6–8hmax4age5;PFDirectionsonedropmax4NOintervaldiscard",
+        "generic": "Rx§2TID~8h≥5min;LumifyDirectionsq6–8hmax4age5;PFDirectionsonedropmax4NOintervaldiscard",
+        "lumify": "Rx§2TID~8h≥5min;LumifyDirectionsq6–8hmax4age5;PFDirectionsonedropmax4NOintervaldiscard",
+        "pf": "Rx§2TID~8h≥5min;LumifyDirectionsq6–8hmax4age5;PFDirectionsonedropmax4NOintervaldiscard"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "dosage",
+      "card": "Contact lenses and delivery",
+      "assertions": {
+        "paragraphs": [
+          "Remove lenses before Lumify and wait at least 10 minutes before reinsertion; separate other eye products by at least 5 minutes. Selected 0.2% glaucoma drops contain benzalkonium chloride and direct at least 15 minutes before inserting soft lenses. Alphagan P uses a different preservative and its selected label gives no numerical lens-wait direction; follow the actual product / eye clinician rather than automatically transfer the 0.2% rule. Keep tips clean, replace bottle caps and discard used PF vials."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic",
+        "lumify",
+        "pf"
+      ],
+      "sourceSections": {
+        "label": "Bausch§5.4benzalkonium15minsoftlens;Lumify/PF Directions10min5min;Alphaganactual full§2/5/17no numerical lenswait",
+        "generic": "Bausch§5.4benzalkonium15minsoftlens;Lumify/PF Directions10min5min;Alphaganactual full§2/5/17no numerical lenswait",
+        "lumify": "Bausch§5.4benzalkonium15minsoftlens;Lumify/PF Directions10min5min;Alphaganactual full§2/5/17no numerical lenswait",
+        "pf": "Bausch§5.4benzalkonium15minsoftlens;Lumify/PF Directions10min5min;Alphaganactual full§2/5/17no numerical lenswait"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "dosage",
+      "card": "Mirvaso adult facial dose",
+      "assertions": {
+        "paragraphs": [
+          "Apply a pea-sized amount once daily to each of five areas: central forehead, chin, nose and each cheek. Spread smoothly as a thin layer across the face, avoiding eyes / lips and irritated skin or open wounds; wash hands afterward. Each gram contains 5 mg brimonidine tartrate equivalent to 3.3 mg free base; 0.33% refers to base. Do not use more frequently or apply an eye-drop dose to skin."
+        ]
+      },
+      "sourceIds": [
+        "mirvaso"
+      ],
+      "sourceSections": {
+        "mirvaso": "Mirvaso§2peaamountfiveareasonce/thin/wash/eyeslips;§3/11base0.33tartrate0.5%;5.5irritatedskin"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "dosage",
+      "card": "Organ impairment and clinical adjustment",
+      "assertions": {
+        "paragraphs": [
+          "The selected 0.2% label has not studied renal / hepatic impairment and says dialysis effects are unknown. Other selected labels provide no verified numerical renal / hepatic adjustment table. Review systemic vascular risk, concomitant drugs and response; do not invent dose reductions based on topical concentration or a universal missed-dose doubling instruction."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic",
+        "lumify",
+        "pf",
+        "mirvaso"
+      ],
+      "sourceSections": {
+        "label": "Bausch§8.6renalhepaticunstudieddialysisunknown;actual others no numerical organ tables;clinical reassessment synthesis",
+        "generic": "Bausch§8.6renalhepaticunstudieddialysisunknown;actual others no numerical organ tables;clinical reassessment synthesis",
+        "lumify": "Bausch§8.6renalhepaticunstudieddialysisunknown;actual others no numerical organ tables;clinical reassessment synthesis",
+        "pf": "Bausch§8.6renalhepaticunstudieddialysisunknown;actual others no numerical organ tables;clinical reassessment synthesis",
+        "mirvaso": "Bausch§8.6renalhepaticunstudieddialysisunknown;actual others no numerical organ tables;clinical reassessment synthesis"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Glaucoma drops are contraindicated below 2; infant exposures have caused apnea, coma, low BP / temperature, slow heart rate and respiratory depression. Older children can have substantial somnolence / decreased alertness; specialist caution remains necessary from age 2.",
+          "Prescription eye drops and Mirvaso require caution with depression, cerebral / coronary insufficiency, Raynaud phenomena, orthostatic hypotension and severe cardiovascular disease. Mirvaso can cause bradycardia, hypotension or dizziness, including hospitalizations with inappropriate application. Avoid irritated / open skin and unapproved post-laser use.",
+          "Mirvaso can cause rebound / worsened redness, flushing at or beyond treated sites, pallor / excessive whitening and hypersensitivity. Stop and obtain clinical assessment for significant allergy or problematic reactions; do not escalate to chase rebound redness.",
+          "Contaminated multidose eye products can cause keratitis and visual loss; avoid tip contact, do not use cloudy / discolored solution and seek advice after eye injury, infection or surgery. Lumify users should stop and seek assessment for eye pain, visual change, continued irritation / redness or worsening / persistence beyond 3 days. Keep all products away from children and obtain immediate help for ingestion."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic",
+        "lumify",
+        "pf",
+        "mirvaso"
+      ],
+      "sourceSections": {
+        "label": "Rx§4/5/6/8.4infantapnea/coma/somnolence;Rx5.1–5.3vascularCV;Mirvaso§5systemicCVreboundpallorallergychildingestionpostlaser;Lumify/PFWarningspainvision3days/child;Rx5.4contamination",
+        "generic": "Rx§4/5/6/8.4infantapnea/coma/somnolence;Rx5.1–5.3vascularCV;Mirvaso§5systemicCVreboundpallorallergychildingestionpostlaser;Lumify/PFWarningspainvision3days/child;Rx5.4contamination",
+        "lumify": "Rx§4/5/6/8.4infantapnea/coma/somnolence;Rx5.1–5.3vascularCV;Mirvaso§5systemicCVreboundpallorallergychildingestionpostlaser;Lumify/PFWarningspainvision3days/child;Rx5.4contamination",
+        "pf": "Rx§4/5/6/8.4infantapnea/coma/somnolence;Rx5.1–5.3vascularCV;Mirvaso§5systemicCVreboundpallorallergychildingestionpostlaser;Lumify/PFWarningspainvision3days/child;Rx5.4contamination",
+        "mirvaso": "Rx§4/5/6/8.4infantapnea/coma/somnolence;Rx5.1–5.3vascularCV;Mirvaso§5systemicCVreboundpallorallergychildingestionpostlaser;Lumify/PFWarningspainvision3days/child;Rx5.4contamination"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Selected prescription glaucoma drops: age below 2 and previous component hypersensitivity. Mirvaso: component hypersensitivity. Lumify Drug Facts has do-not-use directions for cloudy / discolored solution and, for PF, damaged vial; below 5 needs doctor consultation. The pediatric glaucoma contraindication is not a universal age rule for every product, but no product should be selected without its exact age / route guidance."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic",
+        "lumify",
+        "pf",
+        "mirvaso"
+      ],
+      "sourceSections": {
+        "label": "Rx§4age<2hypersens;Mirvaso§4allergy;Lumify/PFWarningscloudy/vialdamage/ageunder5doctor distinguished",
+        "generic": "Rx§4age<2hypersens;Mirvaso§4allergy;Lumify/PFWarningscloudy/vialdamage/ageunder5doctor distinguished",
+        "lumify": "Rx§4age<2hypersens;Mirvaso§4allergy;Lumify/PFWarningscloudy/vialdamage/ageunder5doctor distinguished",
+        "pf": "Rx§4age<2hypersens;Mirvaso§4allergy;Lumify/PFWarningscloudy/vialdamage/ageunder5doctor distinguished",
+        "mirvaso": "Rx§4age<2hypersens;Mirvaso§4allergy;Lumify/PFWarningscloudy/vialdamage/ageunder5doctor distinguished"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "The selected glaucoma, OTC and facial brimonidine labels have no boxed warning. Pediatric toxicity, accidental ingestion, cardiovascular effects and local reactions still require active prevention."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic",
+        "lumify",
+        "pf",
+        "mirvaso"
+      ],
+      "sourceSections": {
+        "label": "Actual complete five selected labels: no Box; warnings retained",
+        "generic": "Actual complete five selected labels: no Box; warnings retained",
+        "lumify": "Actual complete five selected labels: no Box; warnings retained",
+        "pf": "Actual complete five selected labels: no Box; warnings retained",
+        "mirvaso": "Actual complete five selected labels: no Box; warnings retained"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Glaucoma drops report ocular allergy / redness / itching, burning / stinging, dry mouth, fatigue / drowsiness, headache and visual disturbance. Mirvaso reports erythema, flushing, burning, contact dermatitis and serious systemic / allergic reactions. OTC Drug Facts specifies warning symptoms rather than a trial-rate comparison. Do not compare percentages from different strengths, indications or populations as one overall risk."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic",
+        "lumify",
+        "pf",
+        "mirvaso"
+      ],
+      "sourceSections": {
+        "label": "Rx§6ocular/systemicADR;Mirvaso§6skin/systemic;OTCWarnings no trialrate;no crossproduct incidence",
+        "generic": "Rx§6ocular/systemicADR;Mirvaso§6skin/systemic;OTCWarnings no trialrate;no crossproduct incidence",
+        "lumify": "Rx§6ocular/systemicADR;Mirvaso§6skin/systemic;OTCWarnings no trialrate;no crossproduct incidence",
+        "pf": "Rx§6ocular/systemicADR;Mirvaso§6skin/systemic;OTCWarnings no trialrate;no crossproduct incidence",
+        "mirvaso": "Rx§6ocular/systemicADR;Mirvaso§6skin/systemic;OTCWarnings no trialrate;no crossproduct incidence"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "interactions",
+      "card": "BP medicines and CNS depressants",
+      "assertions": {
+        "paragraphs": [
+          "Prescription glaucoma and Mirvaso labels advise caution with antihypertensives / cardiac glycosides because BP may fall. Alcohol, opioids, sedatives, anesthetics and other CNS depressants may add to impairment; dedicated interaction studies are limited. Review symptoms and treatment rather than use a universal dose-change formula."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic",
+        "mirvaso"
+      ],
+      "sourceSections": {
+        "label": "Rx§7.1/7.2andMirvaso§7.1/7.2BPcardiac/CNScaution",
+        "generic": "Rx§7.1/7.2andMirvaso§7.1/7.2BPcardiac/CNScaution",
+        "mirvaso": "Rx§7.1/7.2andMirvaso§7.1/7.2BPcardiac/CNScaution"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "interactions",
+      "card": "Antidepressants and MAO inhibitors",
+      "assertions": {
+        "paragraphs": [
+          "Prescription glaucoma labels advise caution with tricyclic antidepressants; their known effect on systemic clonidine does not prove a definite brimonidine IOP interaction. MAO inhibitors may theoretically interfere with brimonidine metabolism and increase systemic effects such as hypotension; current selected glaucoma and Mirvaso labels advise caution rather than list MAOI use as a formal contraindication."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic",
+        "mirvaso"
+      ],
+      "sourceSections": {
+        "label": "Rx§7.3TCAclonidineuncertainbrimoIOP/7.4MAOItheoretical;Mirvaso§7.3MAOI caution notcontra",
+        "generic": "Rx§7.3TCAclonidineuncertainbrimoIOP/7.4MAOItheoretical;Mirvaso§7.3MAOI caution notcontra",
+        "mirvaso": "Rx§7.3TCAclonidineuncertainbrimoIOP/7.4MAOItheoretical;Mirvaso§7.3MAOI caution notcontra"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "interactions",
+      "card": "Other eye products and duplicate treatment",
+      "assertions": {
+        "paragraphs": [
+          "Keep at least 5 minutes between selected glaucoma / Lumify and other eye products. Check all active ingredients to avoid duplicate brimonidine or an unreviewed combination product. OTC labels do not supply the full interaction evidence of prescription forms; do not claim that 0.025% is universally interaction-free."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic",
+        "lumify",
+        "pf"
+      ],
+      "sourceSections": {
+        "label": "Rx§2/LumifyPFDirections≥5minotherdrops;clinical ingredientreconciliation/no OTCinteractionfree inference",
+        "generic": "Rx§2/LumifyPFDirections≥5minotherdrops;clinical ingredientreconciliation/no OTCinteractionfree inference",
+        "lumify": "Rx§2/LumifyPFDirections≥5minotherdrops;clinical ingredientreconciliation/no OTCinteractionfree inference",
+        "pf": "Rx§2/LumifyPFDirections≥5minotherdrops;clinical ingredientreconciliation/no OTCinteractionfree inference"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and breastfeeding",
+      "assertions": {
+        "paragraphs": [
+          "Human pregnancy evidence is insufficient; prescription glaucoma and Mirvaso labels use maternal-benefit / fetal-risk assessment, while Lumify advises a health professional before use. Human milk transfer is unknown. Current Alphagan P does not recommend use during lactation because CNS depression / apnea could occur in infants. Selected older 0.2% and Mirvaso labels call for a nursing-versus-drug decision based on maternal importance; do not treat those as identical instructions or a proof of safety."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic",
+        "lumify",
+        "pf",
+        "mirvaso"
+      ],
+      "sourceSections": {
+        "label": "CurrentAlphagan§8.1/8.2lactationNOTrecommendedCNSapnea;Bausch/Mirvaso§8.1/8.3oldernursingversusdrug;Lumify/PFWarningsprofessionalpregnursing",
+        "generic": "CurrentAlphagan§8.1/8.2lactationNOTrecommendedCNSapnea;Bausch/Mirvaso§8.1/8.3oldernursingversusdrug;Lumify/PFWarningsprofessionalpregnursing",
+        "lumify": "CurrentAlphagan§8.1/8.2lactationNOTrecommendedCNSapnea;Bausch/Mirvaso§8.1/8.3oldernursingversusdrug;Lumify/PFWarningsprofessionalpregnursing",
+        "pf": "CurrentAlphagan§8.1/8.2lactationNOTrecommendedCNSapnea;Bausch/Mirvaso§8.1/8.3oldernursingversusdrug;Lumify/PFWarningsprofessionalpregnursing",
+        "mirvaso": "CurrentAlphagan§8.1/8.2lactationNOTrecommendedCNSapnea;Bausch/Mirvaso§8.1/8.3oldernursingversusdrug;Lumify/PFWarningsprofessionalpregnursing"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": {
+        "paragraphs": [
+          "Glaucoma drops are contraindicated below 2 and require caution in older children because of somnolence / decreased alertness. Lumify self-use directions start at 5; below 5 consult a doctor. Mirvaso is labeled for adults 18 or older and pediatric effectiveness is unestablished; child ingestion has required hospitalization. Selected Rx trials found no overall age-related difference in older adults, but individual cardiovascular / sedation risk still matters."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic",
+        "lumify",
+        "pf",
+        "mirvaso"
+      ],
+      "sourceSections": {
+        "label": "Rx§8.4contra<2olderchildsomnolence/8.5older;Lumify/PFDirections≥5under5doctor;Mirvaso§1/8.4adults18pedsunestablished/8.5older",
+        "generic": "Rx§8.4contra<2olderchildsomnolence/8.5older;Lumify/PFDirections≥5under5doctor;Mirvaso§1/8.4adults18pedsunestablished/8.5older",
+        "lumify": "Rx§8.4contra<2olderchildsomnolence/8.5older;Lumify/PFDirections≥5under5doctor;Mirvaso§1/8.4adults18pedsunestablished/8.5older",
+        "pf": "Rx§8.4contra<2olderchildsomnolence/8.5older;Lumify/PFDirections≥5under5doctor;Mirvaso§1/8.4adults18pedsunestablished/8.5older",
+        "mirvaso": "Rx§8.4contra<2olderchildsomnolence/8.5older;Lumify/PFDirections≥5under5doctor;Mirvaso§1/8.4adults18pedsunestablished/8.5older"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "populations",
+      "card": "Renal, hepatic and vascular disease",
+      "assertions": {
+        "paragraphs": [
+          "Selected 0.2% glaucoma pharmacokinetics have not been studied with renal / hepatic impairment; dialysis effects are unknown. No selected product supplies a fixed organ-adjustment schedule. Depression, vascular insufficiency or severe cardiovascular disease requires caution with prescription drops / gel; use the actual clinical risk and labeled route rather than infer safety from low plasma exposure."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic",
+        "lumify",
+        "pf",
+        "mirvaso"
+      ],
+      "sourceSections": {
+        "label": "Bausch§8.6renalhepaticunstudieddialysisunknown;Rx§5vascular/Mirvaso5vascular;actualselectedlabels no numeric organ schedule",
+        "generic": "Bausch§8.6renalhepaticunstudieddialysisunknown;Rx§5vascular/Mirvaso5vascular;actualselectedlabels no numeric organ schedule",
+        "lumify": "Bausch§8.6renalhepaticunstudieddialysisunknown;Rx§5vascular/Mirvaso5vascular;actualselectedlabels no numeric organ schedule",
+        "pf": "Bausch§8.6renalhepaticunstudieddialysisunknown;Rx§5vascular/Mirvaso5vascular;actualselectedlabels no numeric organ schedule",
+        "mirvaso": "Bausch§8.6renalhepaticunstudieddialysisunknown;Rx§5vascular/Mirvaso5vascular;actualselectedlabels no numeric organ schedule"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "assertions": {
+        "paragraphs": [
+          "Glaucoma brimonidine reduces aqueous-humor production and increases uveoscleral outflow, lowering IOP. Mirvaso may reduce facial erythema by direct vasoconstriction. OTC Lumify’s labeled role is minor-irritation redness relief; it does not establish an approved glaucoma regimen."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic",
+        "mirvaso",
+        "lumify"
+      ],
+      "sourceSections": {
+        "label": "Rx§12.1alpha2aqueous↓uveoscleral↑;Mirvaso§12.1vasoconstriction;LumifyUseapprovedrednessscope",
+        "generic": "Rx§12.1alpha2aqueous↓uveoscleral↑;Mirvaso§12.1vasoconstriction;LumifyUseapprovedrednessscope",
+        "mirvaso": "Rx§12.1alpha2aqueous↓uveoscleral↑;Mirvaso§12.1vasoconstriction;LumifyUseapprovedrednessscope",
+        "lumify": "Rx§12.1alpha2aqueous↓uveoscleral↑;Mirvaso§12.1vasoconstriction;LumifyUseapprovedrednessscope"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "assertions": {
+        "paragraphs": [
+          "Glaucoma labels describe measurable systemic exposure: Alphagan P summarizes ocular-study peaks 0.5–2.5 hours and half-life about 2 hours; selected 0.2% reports peaks 1–4 hours and half-life about 3 hours. Brimonidine is metabolized by the liver and drug / metabolites eliminated mainly in urine. Mirvaso facial-use studies measured low pg / mL plasma levels, but systemic adverse effects have occurred. None of these observations establishes a universal half-life, renal dose or safe ingestion amount."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic",
+        "mirvaso"
+      ],
+      "sourceSections": {
+        "label": "Alphagan§12.3ocularpeak0.5–2.5half2/Bausch12.3peak1–4half3metabrenal;Mirvaso12.3lowpg/mL and5.5systemicrisks",
+        "generic": "Alphagan§12.3ocularpeak0.5–2.5half2/Bausch12.3peak1–4half3metabrenal;Mirvaso12.3lowpg/mL and5.5systemicrisks",
+        "mirvaso": "Alphagan§12.3ocularpeak0.5–2.5half2/Bausch12.3peak1–4half3metabrenal;Mirvaso12.3lowpg/mL and5.5systemicrisks"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": {
+        "paragraphs": [
+          "For glaucoma follow IOP, ocular condition and tolerability, including allergy, fatigue and loss of effect over time. Review cardiovascular / vascular disease and sedating / BP medicines. For Mirvaso assess response, rebound redness, local allergy and dizziness / bradycardia / hypotension symptoms. Lumify warning triggers include pain, visual changes or persistence beyond 3 days; no universal IOP target, follow-up interval or blood-drug test is specified."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic",
+        "lumify",
+        "pf",
+        "mirvaso"
+      ],
+      "sourceSections": {
+        "label": "Rx§1/5/6 response/IOPmonitor andBauschdecliningeffect;Mirvaso5/6CVrebound;OTCWarnings3days;clinicalmonitoring synth notuniversal target",
+        "generic": "Rx§1/5/6 response/IOPmonitor andBauschdecliningeffect;Mirvaso5/6CVrebound;OTCWarnings3days;clinicalmonitoring synth notuniversal target",
+        "lumify": "Rx§1/5/6 response/IOPmonitor andBauschdecliningeffect;Mirvaso5/6CVrebound;OTCWarnings3days;clinicalmonitoring synth notuniversal target",
+        "pf": "Rx§1/5/6 response/IOPmonitor andBauschdecliningeffect;Mirvaso5/6CVrebound;OTCWarnings3days;clinicalmonitoring synth notuniversal target",
+        "mirvaso": "Rx§1/5/6 response/IOPmonitor andBauschdecliningeffect;Mirvaso5/6CVrebound;OTCWarnings3days;clinicalmonitoring synth notuniversal target"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "assertions": {
+        "paragraphs": [
+          "Verify product name, concentration, route and age. Follow bottle / PF handling, contact-lens waits and 5 minute eye-product spacing; do not touch tips to surfaces. Mirvaso is once-daily facial use only, avoiding lips / eyes / open skin; wash hands and retain child-resistant closure. Drowsiness can impair driving. Report severe allergy, worsening skin redness or concerning systemic symptoms promptly."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic",
+        "lumify",
+        "pf",
+        "mirvaso"
+      ],
+      "sourceSections": {
+        "label": "Rx17tipclean/drive;Bausch5.4lenses;OTCDirections10min5min/PFdiscard;Mirvaso2/17facewashclosedcontainer",
+        "generic": "Rx17tipclean/drive;Bausch5.4lenses;OTCDirections10min5min/PFdiscard;Mirvaso2/17facewashclosedcontainer",
+        "lumify": "Rx17tipclean/drive;Bausch5.4lenses;OTCDirections10min5min/PFdiscard;Mirvaso2/17facewashclosedcontainer",
+        "pf": "Rx17tipclean/drive;Bausch5.4lenses;OTCDirections10min5min/PFdiscard;Mirvaso2/17facewashclosedcontainer",
+        "mirvaso": "Rx17tipclean/drive;Bausch5.4lenses;OTCDirections10min5min/PFdiscard;Mirvaso2/17facewashclosedcontainer"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "practice",
+      "card": "Overdose, ingestion or wrong route",
+      "assertions": {
+        "paragraphs": [
+          "Seek immediate medical / Poison Control help for swallowed drops / gel, child exposure or significant overdose; profound lethargy, slow pulse or breathing difficulty is an emergency. Prescription labels describe supportive treatment and airway protection, not a home antidote. Do not inject products, put facial gel into eyes or guess a replacement dose after uncertain use."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic",
+        "lumify",
+        "pf",
+        "mirvaso"
+      ],
+      "sourceSections": {
+        "label": "Rx§10supportairwayinfants;Mirvaso5.3/10childingestion;OTCWarningsPoisonmedicalhelp;clinicalurgentreferral no home antidote",
+        "generic": "Rx§10supportairwayinfants;Mirvaso5.3/10childingestion;OTCWarningsPoisonmedicalhelp;clinicalurgentreferral no home antidote",
+        "lumify": "Rx§10supportairwayinfants;Mirvaso5.3/10childingestion;OTCWarningsPoisonmedicalhelp;clinicalurgentreferral no home antidote",
+        "pf": "Rx§10supportairwayinfants;Mirvaso5.3/10childingestion;OTCWarningsPoisonmedicalhelp;clinicalurgentreferral no home antidote",
+        "mirvaso": "Rx§10supportairwayinfants;Mirvaso5.3/10childingestion;OTCWarningsPoisonmedicalhelp;clinicalurgentreferral no home antidote"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "product",
+      "card": "Representative glaucoma product",
+      "assertions": {
+        "facts": [
+          [
+            "Product",
+            "Alphagan P 0.1% brimonidine tartrate solution"
+          ],
+          [
+            "Route",
+            "Topical ophthalmic; prescription"
+          ],
+          [
+            "Appearance",
+            "Sterile solution in teal opaque bottle; purple cap"
+          ],
+          [
+            "Example package",
+            "5 mL · NDC 0023-9321-05"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Alphagan§3/16actual0.1tealbottlepurple5mLNDC0023-9321-05"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Alphagan P: 0.1% and 0.15% tartrate (1 and 1.5 mg / mL) with PURITE. Selected generic: 0.2% tartrate (2 mg / mL), greenish-yellow solution with benzalkonium chloride; 5 mL NDC 24208-411-05. Lumify forms: 0.025% tartrate (0.25 mg / mL), multidose bottle or preservative-free 0.4 mL single-use vials. Mirvaso: 0.33% free-base gel, equivalent to 5 mg tartrate / g; 30 g tube NDC 0299-5980-30. Other combinations / formulations need separate review."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic",
+        "lumify",
+        "pf",
+        "mirvaso"
+      ],
+      "sourceSections": {
+        "label": "Alphagan§3/11/16 0.1/0.15PURITE;Bausch3/11/16 0.2benzalkoniumactualNDC;Lumify/PFDrugFactsactual0.025/0.4vials;Mirvaso3/11/16base/tartrate30gNDC",
+        "generic": "Alphagan§3/11/16 0.1/0.15PURITE;Bausch3/11/16 0.2benzalkoniumactualNDC;Lumify/PFDrugFactsactual0.025/0.4vials;Mirvaso3/11/16base/tartrate30gNDC",
+        "lumify": "Alphagan§3/11/16 0.1/0.15PURITE;Bausch3/11/16 0.2benzalkoniumactualNDC;Lumify/PFDrugFactsactual0.025/0.4vials;Mirvaso3/11/16base/tartrate30gNDC",
+        "pf": "Alphagan§3/11/16 0.1/0.15PURITE;Bausch3/11/16 0.2benzalkoniumactualNDC;Lumify/PFDrugFactsactual0.025/0.4vials;Mirvaso3/11/16base/tartrate30gNDC",
+        "mirvaso": "Alphagan§3/11/16 0.1/0.15PURITE;Bausch3/11/16 0.2benzalkoniumactualNDC;Lumify/PFDrugFactsactual0.025/0.4vials;Mirvaso3/11/16base/tartrate30gNDC"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Selected Alphagan P and 0.2% glaucoma drops: 15–25°C; keep capped, do not use cloudy / discolored solution or past expiry. Lumify bottle / PF: 15–25°C; PF requires intact vial / sealed pouch, protection from light, unused vials in child-resistant carton and immediate discard after use. Mirvaso: 20–25°C, excursions 15–30°C, child-resistant tube / pump closure. No universal 28 day opened-bottle discard is supplied in these labels."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic",
+        "lumify",
+        "pf",
+        "mirvaso"
+      ],
+      "sourceSections": {
+        "label": "Alphagan/Bausch§16 15–25expiry/17tip;Lumify/PFOtherinfo15–25light/pouchcartonimmediatediscard;Mirvaso16 20–25exc15–30childclosure;no invented28day",
+        "generic": "Alphagan/Bausch§16 15–25expiry/17tip;Lumify/PFOtherinfo15–25light/pouchcartonimmediatediscard;Mirvaso16 20–25exc15–30childclosure;no invented28day",
+        "lumify": "Alphagan/Bausch§16 15–25expiry/17tip;Lumify/PFOtherinfo15–25light/pouchcartonimmediatediscard;Mirvaso16 20–25exc15–30childclosure;no invented28day",
+        "pf": "Alphagan/Bausch§16 15–25expiry/17tip;Lumify/PFOtherinfo15–25light/pouchcartonimmediatediscard;Mirvaso16 20–25exc15–30childclosure;no invented28day",
+        "mirvaso": "Alphagan/Bausch§16 15–25expiry/17tip;Lumify/PFOtherinfo15–25light/pouchcartonimmediatediscard;Mirvaso16 20–25exc15–30childclosure;no invented28day"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    }
+  ],
+  "sourceDiscrepancies": [
+    {
+      "issue": "Current Lumify PF directions omit multidose6–8hinterval.",
+      "resolution": "ExactPFmax4/day andsingleuse directions retained; no invented interval transferred.",
+      "resolved": true
+    },
+    {
+      "issue": "CurrentAlphaganPnotrecommendedlactation versusolderBausch0.2/Mirvasonursingvsdrugdecision.",
+      "resolution": "Product/version differences explicit; no universal lactation safety claim.",
+      "resolved": true
+    },
+    {
+      "issue": "AlphaganPfullcurrentlabelhasno numericlenswait versusBausch0.2benzalkonium15min andLumify10min.",
+      "resolution": "Separate exactproductdirections; noneborrowed.",
+      "resolved": true
+    },
+    {
+      "issue": "Bausch0.2PKhalf3/peak1–4 versusAlphaganPstudyhalf2/peak0.5–2.5;gelbase0.33%equals0.5%salt.",
+      "resolution": "Separateactualproduct/PKcontextandsalt/baseunits; no universal equivalentdose.",
+      "resolved": true
+    },
+    {
+      "issue": "Candidate brimonidineAPI searchresultsincluded0.1/0.15 products.",
+      "resolution": "Candidatesexcluded; finalgenericprimaryverifiedBausch0.2%actualfullSPL/setid.",
+      "resolved": true
+    }
+  ],
+  "materialErrors": [],
+  "unresolvedMaterialGaps": [],
+  "limitations": [
+    "Source reviewed within selected scope; explicitly excluded disputed boundaries require individualized clinician review.",
+    "Public full primary labels read; no paywalled access claimed.",
+    "Parent retains independent clinical review, exact390px rendered QA/build/release checks."
+  ],
+  "reviewedSourceSections": [
+    "Full actual selected-product indications/dose/contra/box/warnings/interactions/pregnancy/lactation/pediatric/older/renalhepatic/PK/ADR/monitoring/counsel/product/storage/overdose sections, per-card mapping above."
+  ],
+  "verification": {
+    "schemaErrors": [],
+    "monographSha256": "e334a7741e692837556f629cfcc4f2f3eca0bff58ec80d7551e5d5c99294863b",
+    "sectionIds": [
+      "indications",
+      "dosage",
+      "safety",
+      "interactions",
+      "populations",
+      "pharmacology",
+      "practice",
+      "product"
+    ],
+    "heroFacts": 3,
+    "safetyCardOrder": [
+      "Warnings and precautions",
+      "Contraindications",
+      "Boxed warning status",
+      "Adverse reactions"
+    ],
+    "productCardOrder": [
+      "Representative glaucoma product",
+      "Dosage forms and strengths",
+      "Storage and handling"
+    ],
+    "renderedPageQA": "Pending parent exact candidate390px QA",
+    "displayTextWrap": "Two-column tables and natural spaced slashes; parent rendered bounds pending"
+  }
+}

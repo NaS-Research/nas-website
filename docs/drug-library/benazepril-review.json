@@ -1,0 +1,641 @@
+{
+  "slug": "benazepril",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Selected current Lotensin single-agent10/20/40 andSolco5/10/20/40tablets, labeled pharmacy-prepared2mg/mL suspension; hypertension age/renal boundaries explicit.",
+  "excludedRegimens": [
+    "AutomaticGFR/CrCl exact30 adult/pediatricboundary decision",
+    "Benazeprilcombinationproducts/heartfailureorrenoprotectionofflabelprotocols",
+    "UniversalBPgoal/dosealgorithm/80mgusualmax",
+    "Commercialapprovedliquidavailabilityclaim"
+  ],
+  "sources": [
+    {
+      "id": "label",
+      "title": "Lotensin · Single-agent prescribing information",
+      "publisher": "DailyMed / Validus",
+      "note": "Current SPL version 10, effective 2025-09-30. Current September 2025 SPL retains January 2019 clinical PI; actual brand strengths 10 / 20 / 40 mg.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2abb091b-a53e-46b0-9b84-e5ee8f2bdd8e"
+    },
+    {
+      "id": "generic",
+      "title": "Benazepril hydrochloride · Generic tablet prescribing information",
+      "publisher": "DailyMed / Solco",
+      "note": "Current SPL version 11, effective 2024-06-30. Current June 2024 label verifies 5 / 10 / 20 / 40 mg strengths, including lower-dose product.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bb91223e-ffa5-4a3a-b191-fe121250c20c"
+    }
+  ],
+  "labelMetadata": [
+    {
+      "sourceId": "label",
+      "product": "benazepril-lotensin",
+      "setid": "2abb091b-a53e-46b0-9b84-e5ee8f2bdd8e",
+      "version": "10",
+      "effectiveTime": "20250930",
+      "clinicalVersion": "September30,2025 SPL v10 retains January2019 clinical PI",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/2abb091b-a53e-46b0-9b84-e5ee8f2bdd8e.xml",
+      "xmlSha256": "5ff8346c65efb8853942c68f9989ea4e654a47c2b450edcda5652bb0eb070dd0",
+      "marketingAuthorization": [
+        {
+          "category": "NDA",
+          "application": "NDA019851"
+        },
+        {
+          "category": "NDA",
+          "application": "NDA019851"
+        },
+        {
+          "category": "NDA",
+          "application": "NDA019851"
+        }
+      ]
+    },
+    {
+      "sourceId": "generic",
+      "product": "benazepril-generic",
+      "setid": "bb91223e-ffa5-4a3a-b191-fe121250c20c",
+      "version": "11",
+      "effectiveTime": "20240630",
+      "clinicalVersion": "June30,2024 SPL v11; June2024 clinical PI",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/bb91223e-ffa5-4a3a-b191-fe121250c20c.xml",
+      "xmlSha256": "4e0b575ada775db008c905b6e754b5e5972a521a6d5a3b3e35355d0cc70a7bc0",
+      "marketingAuthorization": [
+        {
+          "category": "ANDA",
+          "application": "ANDA076118"
+        },
+        {
+          "category": "ANDA",
+          "application": "ANDA076118"
+        },
+        {
+          "category": "ANDA",
+          "application": "ANDA076118"
+        },
+        {
+          "category": "ANDA",
+          "application": "ANDA076118"
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/benazepril-lotensin.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/benazepril/benazepril-lotensin.xml",
+      "sha256": "5ff8346c65efb8853942c68f9989ea4e654a47c2b450edcda5652bb0eb070dd0",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/2abb091b-a53e-46b0-9b84-e5ee8f2bdd8e.xml"
+    },
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/benazepril-lotensin-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/benazepril/benazepril-lotensin-sections.json",
+      "sha256": "c43b552673337661d06c9077efefba5384c5b10b4528fdfc15c093928e4d3599",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/2abb091b-a53e-46b0-9b84-e5ee8f2bdd8e.xml"
+    },
+    {
+      "sourceId": "generic",
+      "localEvidence": "/tmp/nas-drug-sources/benazepril-generic.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/benazepril/benazepril-generic.xml",
+      "sha256": "4e0b575ada775db008c905b6e754b5e5972a521a6d5a3b3e35355d0cc70a7bc0",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/bb91223e-ffa5-4a3a-b191-fe121250c20c.xml"
+    },
+    {
+      "sourceId": "generic",
+      "localEvidence": "/tmp/nas-drug-sources/benazepril-generic-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/benazepril/benazepril-generic-sections.json",
+      "sha256": "a0dbe06676a82caeb7b7cffddacee1fcca9a47e3aec228d452b1559029e7cb22",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/bb91223e-ffa5-4a3a-b191-fe121250c20c.xml"
+    }
+  ],
+  "sourceEvidenceRoot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/benazepril",
+  "sourceManifest": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/benazepril/source-manifest.json",
+  "assertionToSourceMap": [
+    {
+      "section": "indications",
+      "card": "Labeled use",
+      "assertions": {
+        "paragraphs": [
+          "Benazepril treats hypertension to lower blood pressure and may be used alone or with thiazide diuretics. Blood-pressure lowering reduces cardiovascular events, primarily stroke and myocardial infarction; this is not a separate acute heart-attack treatment claim. Pediatric antihypertensive use has age and renal limitations."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic"
+      ],
+      "sourceSections": {
+        "label": "§1 hypertension; BP event rationale, pediatric limits §8.3; no separate heart-failure approval",
+        "generic": "§1 hypertension; BP event rationale, pediatric limits §8.3; no separate heart-failure approval"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "indications",
+      "card": "Scope and related products",
+      "assertions": {
+        "paragraphs": [
+          "This profile reviews single-agent tablets and the label-described pharmacy-prepared suspension. Benazepril / hydrochlorothiazide and amlodipine / benazepril combinations have their own strengths and prescribing instructions. Heart failure or kidney-protection protocols are outside the selected labeled hypertension regimen; no universal BP target or class-derived dose is asserted."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic"
+      ],
+      "sourceSections": {
+        "label": "§1/2/3 scope single-agent tablets and §2.3 labeled pharmacy suspension; combination regimens excluded",
+        "generic": "§1/2/3 scope single-agent tablets and §2.3 labeled pharmacy suspension; combination regimens excluded"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "dosage",
+      "card": "Selected oral dosing",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Population / situation",
+            "Label regimen and limit"
+          ],
+          "rows": [
+            [
+              "Adult not receiving a diuretic",
+              "Start 10 mg once daily; usual maintenance 20–40 mg / day as one dose or two equal doses. The full label mentions greater response at 80 mg but limited experience"
+            ],
+            [
+              "Adult receiving a diuretic",
+              "Start 5 mg once daily; review volume status / diuretic plan and BP response"
+            ],
+            [
+              "Adult renal impairment, §2 GFR below 30 mL / min / 1.73 m²",
+              "Start 5 mg once daily; titrate to BP response, maximum 40 mg / day for this renal regimen"
+            ],
+            [
+              "Child age 6 or older",
+              "Start 0.2 mg / kg once daily; titrate to 0.6 mg / kg once daily. Above 0.6 mg / kg or 40 mg / day has not been studied; observe renal eligibility"
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label",
+        "generic"
+      ],
+      "sourceSections": {
+        "label": "§2.1 adult10start/20–40maintenance/80limited;diuretic5;§2.2renal5max40;§2.1peds0.2→0.6mg/kg40unstudied",
+        "generic": "§2.1 adult10start/20–40maintenance/80limited;diuretic5;§2.2renal5max40;§2.1peds0.2→0.6mg/kg40unstudied"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "dosage",
+      "card": "Renal boundary and pediatric limits",
+      "assertions": {
+        "paragraphs": [
+          "The adult dose section specifies GFR below 30 mL / min / 1.73 m², while §8.6 requires adjustment with dialysis or creatinine clearance at or below 30 mL / min. These measures and exact boundaries are not interchangeable; obtain clinician clarification at the boundary rather than selecting a dose automatically. Pediatric highlights specify GFR greater than 30, while full text does not recommend below 30; clarify exact 30 eligibility. Do not use below age 6; infants below 1 should not receive it because of kidney-development risk."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic"
+      ],
+      "sourceSections": {
+        "label": "§2.2GFR<30 versus§8.6CrCl≤30/dialysis;highlights>30peds/full§2.1<30avoid;§8.3age<6 and infants<1",
+        "generic": "§2.2GFR<30 versus§8.6CrCl≤30/dialysis;highlights>30peds/full§2.1<30avoid;§8.3age<6 and infants<1"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "dosage",
+      "card": "Pharmacy-prepared suspension",
+      "assertions": {
+        "paragraphs": [
+          "The label describes 150 mL of 2 mg / mL suspension from fifteen 20 mg tablets: add 75 mL Ora-Plus in an amber PET bottle and shake at least 2 minutes; stand at least 1 hour, then shake at least 1 minute; add 75 mL Ora-Sweet and shake to disperse. This is a verified pharmacy preparation, not a claim of a ready-made approved liquid. Refrigerate 2–8°C up to 30 days in the specified child-resistant PET bottle and shake before each use. Use a calibrated oral measure and the prescribed milligram dose."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic"
+      ],
+      "sourceSections": {
+        "label": "§2.3exact150mL2mg/mL15x20mg75OraPlussequence75OraSweetPETshake/refrigeration30day;calibrated measure counseling synthesis",
+        "generic": "§2.3exact150mL2mg/mL15x20mg75OraPlussequence75OraSweetPETshake/refrigeration30day;calibrated measure counseling synthesis"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "dosage",
+      "card": "Titration and organ considerations",
+      "assertions": {
+        "paragraphs": [
+          "Titrate from BP response and tolerability, checking trough control when appropriate. Volume depletion, diuretics or severe renal disease increase hypotension risk. The label reports essentially unchanged benazeprilat kinetics in studied cirrhosis and supplies no separate numerical hepatic adjustment; new jaundice or marked enzyme elevation requires stopping and evaluation. Do not invent a universal missed-dose doubling, titration interval or combined renal / hepatic algorithm."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic"
+      ],
+      "sourceSections": {
+        "label": "§2.1response/trough;§5.3–5.6volume/renal/BP/hepatic;§12.3cirrhosisPK;no invented schedule",
+        "generic": "§2.1response/trough;§5.3–5.6volume/renal/BP/hepatic;§12.3cirrhosisPK;no invented schedule"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Stop as soon as pregnancy is detected and arrange an alternative clinical plan. Renin–angiotensin blockade can reduce fetal renal function and cause oligohydramnios, skeletal / lung abnormalities, neonatal renal failure or death.",
+          "Head, neck or intestinal angioedema can occur. Stop and obtain urgent assessment for swelling of face / lips / tongue, breathing difficulty or unexplained significant abdominal pain; airway involvement can be fatal. ACE inhibitor angioedema is more frequent in Black patients. Venom desensitization, certain high-flux dialysis membranes and dextran-sulfate LDL apheresis can provoke serious anaphylactoid reactions.",
+          "Monitor kidney function, potassium and BP. Volume / salt depletion, high-dose diuretics, dialysis, renal artery stenosis and other conditions can increase hypotension or acute-kidney-injury risk. Follow high-risk patients closely during the first 2 weeks and after dose increases; avoid use when hemodynamically unstable after acute MI.",
+          "Potassium-raising drugs or supplements can cause hyperkalemia. Stop and evaluate jaundice or markedly increased liver enzymes because a rare cholestatic syndrome can progress to hepatic necrosis. Tell surgical / anesthesia teams about ACE inhibitor treatment; perioperative hypotension needs clinical management."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic"
+      ],
+      "sourceSections": {
+        "label": "Box/§5.1fetal;§5.2airway/intestinalangio/desensitization/dialysis/apheresis;§5.3renal;5.4hypotensionfirst2wk/doseinc/hemodynamicMI/surgery;5.5K;5.6hepatic",
+        "generic": "Box/§5.1fetal;§5.2airway/intestinalangio/desensitization/dialysis/apheresis;§5.3renal;5.4hypotensionfirst2wk/doseinc/hemodynamicMI/surgery;5.5K;5.6hepatic"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Hypersensitivity to benazepril or another ACE inhibitor; angioedema history with or without prior ACE treatment, including hereditary / idiopathic history; concomitant neprilysin inhibitor. Do not administer within 36 hours of switching to or from sacubitril / valsartan. Aliskiren coadministration in diabetes is contraindicated. Pregnancy-related stopping is also mandatory under the box; do not reinterpret the absence of pregnancy in this formal list as permission."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic"
+      ],
+      "sourceSections": {
+        "label": "§4exact hypersens/angio/neprilysin36h/aliskirenDM;Boxpregnancy stopping distinguished",
+        "generic": "§4exact hypersens/angio/neprilysin36h/aliskirenDM;Boxpregnancy stopping distinguished"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning",
+      "assertions": {
+        "paragraphs": [
+          "Fetal toxicity: discontinue promptly when pregnancy is detected because drugs acting directly on the renin–angiotensin system can injure or kill the developing fetus. Discuss planned pregnancy and alternatives before exposure."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic"
+      ],
+      "sourceSections": {
+        "label": "Actual fetal-toxicity Box and§5.1/pregnancycounsel",
+        "generic": "Actual fetal-toxicity Box and§5.1/pregnancycounsel"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Reported effects include cough, headache, dizziness, postural dizziness and somnolence. Serious reactions include angioedema, severe hypotension, renal dysfunction, hyperkalemia and hepatic injury; less common reports include skin, GI and hematologic events. Trial and postmarketing data do not define one universal incidence for every population."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic"
+      ],
+      "sourceSections": {
+        "label": "§6trial/postmarketing ADR and§5serious organ risks;no universal incidence",
+        "generic": "§6trial/postmarketing ADR and§5serious organ risks;no universal incidence"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "interactions",
+      "card": "Neprilysin inhibitors, aliskiren and dual blockade",
+      "assertions": {
+        "paragraphs": [
+          "Do not combine with a neprilysin inhibitor and keep at least 36 hours when switching to / from sacubitril / valsartan. Aliskiren with benazepril is contraindicated in diabetes and should be avoided with renal impairment (GFR below 60 mL / min per label). ACE inhibitor / ARB / aliskiren combinations generally should be avoided because renal injury, hypotension and hyperkalemia increase without typical added benefit."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic"
+      ],
+      "sourceSections": {
+        "label": "§4/7.4/7.7neprilysin36h aliskirenDMcontra GFR<60avoid dualRASavoid",
+        "generic": "§4/7.4/7.7neprilysin36h aliskirenDMcontra GFR<60avoid dualRASavoid"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "interactions",
+      "card": "Diuretics, potassium and NSAIDs",
+      "assertions": {
+        "paragraphs": [
+          "Diuretics can magnify initial hypotension; adjust the plan with the clinician rather than stop them independently. Potassium-sparing diuretics, supplements or potassium salt substitutes raise hyperkalemia risk. NSAIDs, including COX-2 inhibitors, can reduce BP benefit and cause kidney injury, especially with older age, volume depletion or impaired renal function; monitor renal function."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic"
+      ],
+      "sourceSections": {
+        "label": "§7.1diuretic/Ksparers;§7.3NSAIDrenalBP/monitor",
+        "generic": "§7.1diuretic/Ksparers;§7.3NSAIDrenalBP/monitor"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "interactions",
+      "card": "Lithium, diabetes drugs and other reactions",
+      "assertions": {
+        "paragraphs": [
+          "Monitor lithium levels because toxicity may occur. Insulin or oral glucose-lowering medicines can increase hypoglycemia risk; monitor closely, especially during the first month of combined use. mTOR inhibitors increase angioedema risk. Injectable gold has rarely caused flushing, nausea, vomiting and hypotension with ACE inhibitors. Reconcile all medicines without inventing a fixed interaction-adjustment percentage."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic"
+      ],
+      "sourceSections": {
+        "label": "§7.2antidiab/17firstmonth;7.5mTOR;7.6lithium;7.8gold",
+        "generic": "§7.2antidiab/17firstmonth;7.5mTOR;7.6lithium;7.8gold"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and breastfeeding",
+      "assertions": {
+        "paragraphs": [
+          "Discontinue when pregnancy is detected; second / third-trimester exposure can cause profound fetal / neonatal injury. Exposed newborns need clinical monitoring for hypotension, oliguria and hyperkalemia. Small amounts of benazepril / benazeprilat are excreted in milk; the label estimates an exclusively breastfed infant receives less than 0.1% of the maternal weight-adjusted dose. This exposure estimate is not a universal safety guarantee; individualize maternal treatment and infant considerations."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic"
+      ],
+      "sourceSections": {
+        "label": "§8.1/5.1pregnancyneonatalmonitor;§8.2milk<0.1%weightadjusted",
+        "generic": "§8.1/5.1pregnancyneonatalmonitor;§8.2milk<0.1%weightadjusted"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": {
+        "paragraphs": [
+          "Pediatric antihypertensive dosing applies from age 6 with the stated renal eligibility and studied dose ceiling; below 6 effectiveness is unestablished, and below 1 the label says not to give. Clarify exact GFR 30 wording before use. Older patients may be more sensitive and more likely to have kidney impairment; select doses cautiously and monitor renal function."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic"
+      ],
+      "sourceSections": {
+        "label": "§2.1/8.3pedsage/renal;8.4geriatricrenal",
+        "generic": "§2.1/8.3pedsage/renal;8.4geriatricrenal"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "populations",
+      "card": "Renal, hepatic and population response",
+      "assertions": {
+        "paragraphs": [
+          "Adults receiving dialysis or with severely reduced renal function require reduced initial dosing and close monitoring; resolve the GFR versus creatinine-clearance boundary language. Cirrhosis did not substantially alter studied active-metabolite kinetics, but hepatic failure symptoms require stopping. Average monotherapy BP response was lower in Black than non-Black patients; use measured response and individualized treatment, not a race-based dose formula."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic"
+      ],
+      "sourceSections": {
+        "label": "§8.6renalCrCl/dialysis;§12.3hepatic;8.5race/§5.2angio, individualized response synthesis",
+        "generic": "§8.6renalCrCl/dialysis;§12.3hepatic;8.5race/§5.2angio, individualized response synthesis"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "assertions": {
+        "paragraphs": [
+          "Benazepril is converted mainly in the liver to benazeprilat, which has much greater ACE-inhibitory activity. Reduced angiotensin II and aldosterone contribute to vasodilation and possible potassium increase. ACE also degrades bradykinin; this pathway relates to ACE-inhibitor adverse effects, while the label does not fully resolve bradykinin’s contribution to BP benefit."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic"
+      ],
+      "sourceSections": {
+        "label": "§12.1ACEactivebenazeprilatangiotensin/aldo/bradykinin;5.2angio clinical mechanism synthesis",
+        "generic": "§12.1ACEactivebenazeprilatangiotensin/aldo/bradykinin;5.2angio clinical mechanism synthesis"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "assertions": {
+        "paragraphs": [
+          "After oral dosing, benazepril peaks around 0.5–1 hour and benazeprilat 1–2 hours; food delays metabolite peak without changing benazepril bioavailability. Renal excretion predominates, with some biliary elimination. Active-metabolite effective half-life is 10–11 hours during repeated daily dosing; severe renal impairment raises / delays exposure. Limited dialysis removal does not replace careful clinical organ management."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic"
+      ],
+      "sourceSections": {
+        "label": "§12.3peaksfoodrenal/biliaryeffectivehalf10–11renal/dialysis",
+        "generic": "§12.3peaksfoodrenal/biliaryeffectivehalf10–11renal/dialysis"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": {
+        "paragraphs": [
+          "Assess BP / volume status, creatinine or kidney-function estimate, potassium, pregnancy plans and interacting medicines before and during treatment. Reassess after dose changes or intercurrent dehydration and monitor high-risk hypotension patients closely for the first 2 weeks. Check glucose more closely with diabetes drugs and lithium levels when coadministered. The label specifies periodic testing but no universal laboratory interval or BP target."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic"
+      ],
+      "sourceSections": {
+        "label": "§5.3–5.5periodicrenalK/BPfirst2wk;§7/17glucose/lithium;clinical baseline/changes synthesis,no fixed universal interval",
+        "generic": "§5.3–5.5periodicrenalK/BPfirst2wk;§7/17glucose/lithium;clinical baseline/changes synthesis,no fixed universal interval"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "assertions": {
+        "paragraphs": [
+          "Report pregnancy immediately, avoid unsupervised potassium supplements / salt substitutes and discuss vomiting, diarrhea or heavy sweating that could cause dehydration. Seek urgent care for angioedema and take no further dose pending assessment; report fainting or jaundice. Follow the pharmacy suspension’s refrigeration, 30 day limit and shaking instructions. Do not independently change combination products or double an uncertain dose."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic"
+      ],
+      "sourceSections": {
+        "label": "§17pregnancyangiofaintdehydrationKcounsel;§2.3suspension;§5.6jaundice;no invented missed-dose algorithm",
+        "generic": "§17pregnancyangiofaintdehydrationKcounsel;§2.3suspension;§5.6jaundice;no invented missed-dose algorithm"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "practice",
+      "card": "Overdose or severe hypotension",
+      "assertions": {
+        "paragraphs": [
+          "Obtain medical / Poison Control assessment for overdose or severe symptoms; management includes BP, fluids / electrolytes and kidney support as clinically indicated. Dialysis removes little drug but may be needed for organ support. Do not treat historical charcoal / emesis / lavage descriptions as home instructions or use an unverified replacement-dose algorithm."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic"
+      ],
+      "sourceSections": {
+        "label": "§10hypotensionfluidelectrolytesrenal/dialysismodest;clinicalurgentreferral, no home emesis instructions",
+        "generic": "§10hypotensionfluidelectrolytesrenal/dialysismodest;clinicalurgentreferral, no home emesis instructions"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "product",
+      "card": "Representative tablet",
+      "assertions": {
+        "facts": [
+          [
+            "Product",
+            "Lotensin 20 mg benazepril hydrochloride tablet"
+          ],
+          [
+            "Route",
+            "Oral; prescription"
+          ],
+          [
+            "Appearance",
+            "Pink; 20 and LOTENSIN engraving"
+          ],
+          [
+            "Example package",
+            "100 tablets · NDC 30698-449-01"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Lotensin§3/16exact20pinkLOTENSIN20NDC30698-449-01"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Current selected Lotensin label lists 10, 20 and 40 mg tablets. Selected Solco generic lists 5, 10, 20 and 40 mg; its 5 mg tablet is round white with S / 341, NDC 43547-335-03 (30). The labeled 2 mg / mL suspension is pharmacy-prepared from 20 mg tablets using specified vehicles. Fixed-dose combinations and other manufacturers require separate checking; a lower-dose instruction does not prove a brand 5 mg tablet is currently supplied."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic"
+      ],
+      "sourceSections": {
+        "label": "Lotensin§3/16actual10/20/40;Solco§3/16actual5/10/20/40;§2.3pharmacy2mg/mL",
+        "generic": "Lotensin§3/16actual10/20/40;Solco§3/16actual5/10/20/40;§2.3pharmacy2mg/mL"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Lotensin tablets: do not store above 30°C; protect from moisture and dispense tight. Solco tablets: 20–25°C, protect from moisture and dispense tight. The specified 2 mg / mL suspension: refrigerate 2–8°C for up to 30 days in the prescribed amber PET child-resistant container and shake before every use. Follow the dispensed product; do not apply suspension refrigeration or discard limits to tablets."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic"
+      ],
+      "sourceSections": {
+        "label": "Lotensin§16≤30moisturetight;Solco§16 20–25moisturetight;§2.3pharmacyfridge2–8up30daysshakePET",
+        "generic": "Lotensin§16≤30moisturetight;Solco§16 20–25moisturetight;§2.3pharmacyfridge2–8up30daysshakePET"
+      },
+      "review": "Full supporting actual selected-product sections read; exact route, age, organ and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no automatic extrapolation."
+    }
+  ],
+  "sourceDiscrepancies": [
+    {
+      "issue": "Adult §2 renal dose GFR<30 versus §8.6 CrCl≤30/dialysis; pediatric highlights >30 versus full avoid<30.",
+      "resolution": "Metrics/boundaries explicit and exact-boundary dose/eligibility excluded pending clinician clarification; not falsely harmonized.",
+      "resolvedWithinPublishedScope": true,
+      "requiresReviewForExcludedBoundary": true
+    },
+    {
+      "issue": "Highlights titrate40 versus full §2.1 reports80withlimitedexperience.",
+      "resolution": "Usual20–40andlimited80experience distinguished; routine80 escalation excluded.",
+      "resolved": true
+    },
+    {
+      "issue": "Actual currentLotensinbrand10/20/40 versusgeneric5/10/20/40.",
+      "resolution": "Current actualforms/product/storage kept distinct; pharmacy liquid not claimed commercialapproved.",
+      "resolved": true
+    }
+  ],
+  "materialErrors": [],
+  "unresolvedMaterialGaps": [],
+  "limitations": [
+    "Source reviewed within selected scope; explicitly excluded disputed boundaries require individualized clinician review.",
+    "Public full primary labels read; no paywalled access claimed.",
+    "Parent retains independent clinical review, exact390px rendered QA/build/release checks."
+  ],
+  "reviewedSourceSections": [
+    "Full actual selected-product indications/dose/contra/box/warnings/interactions/pregnancy/lactation/pediatric/older/renalhepatic/PK/ADR/monitoring/counsel/product/storage/overdose sections, per-card mapping above."
+  ],
+  "verification": {
+    "schemaErrors": [],
+    "monographSha256": "454f2fd62258735fb01491760a0c358aeac36e433a486a9fe1a1eee7eb6ad346",
+    "sectionIds": [
+      "indications",
+      "dosage",
+      "safety",
+      "interactions",
+      "populations",
+      "pharmacology",
+      "practice",
+      "product"
+    ],
+    "heroFacts": 3,
+    "safetyCardOrder": [
+      "Warnings and precautions",
+      "Contraindications",
+      "Boxed warning",
+      "Adverse reactions"
+    ],
+    "productCardOrder": [
+      "Representative tablet",
+      "Dosage forms and strengths",
+      "Storage and handling"
+    ],
+    "renderedPageQA": "Pending parent exact candidate390px QA",
+    "displayTextWrap": "Two-column tables and natural spaced slashes; parent rendered bounds pending"
+  }
+}

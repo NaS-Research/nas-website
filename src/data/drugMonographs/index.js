@@ -179,6 +179,16 @@ import { drospirenoneEthinylEstradiol } from "./drospirenone-ethinyl-estradiol.j
 import { tiotropium } from "./tiotropium.js";
 import { docusate } from "./docusate.js";
 import { temazepam } from "./temazepam.js";
+import { benazepril } from "./benazepril.js";
+import { brimonidine } from "./brimonidine.js";
+import { sacubitrilValsartan } from "./sacubitril-valsartan.js";
+import { valproate } from "./valproate.js";
+import { nebivolol } from "./nebivolol.js";
+import { acyclovir } from "./acyclovir.js";
+import { morphine } from "./morphine.js";
+import { doxazosin } from "./doxazosin.js";
+import { amlodipine_benazepril } from "./amlodipine-benazepril.js";
+import { nirmatrelvir_ritonavir } from "./nirmatrelvir-ritonavir.js";
 
 export const reviewedDrugMonographs = {
   "atorvastatin": atorvastatin,
@@ -361,4 +371,14 @@ export const reviewedDrugMonographs = {
   "tiotropium": tiotropium,
   "docusate": docusate,
   "temazepam": temazepam,
+  "benazepril": benazepril,
+  "brimonidine": brimonidine,
+  "sacubitril-valsartan": sacubitrilValsartan,
+  "valproate": valproate,
+  "nebivolol": nebivolol,
+  "acyclovir": acyclovir,
+  "morphine": morphine,
+  "doxazosin": doxazosin,
+  "amlodipine-benazepril": amlodipine_benazepril,
+  "nirmatrelvir-ritonavir": nirmatrelvir_ritonavir,
 };
