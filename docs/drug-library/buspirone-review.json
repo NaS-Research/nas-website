@@ -1,0 +1,545 @@
+{
+  "slug": "buspirone",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "An oral anxiolytic for anxiety disorders. CYP3A4 interactions, consistent meal timing and regular reassessment guide individualized treatment.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Buspirone hydrochloride · Oral tablets",
+      "publisher": "DailyMed / RemedyRepack; Aurobindo source",
+      "note": "Current SPL version 3, effective September 4, 2026; DailyMed publication September 7, 2026. Repackager update is not a verified clinical PI revision date.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fa4d5cac-f687-4440-99d2-8bb27cf2f4ed"
+    }
+  ],
+  "sourceEvidence": {
+    "label": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fa4d5cac-f687-4440-99d2-8bb27cf2f4ed",
+      "checked": "2026-10-01",
+      "revision": "Current SPL version 3, effective September 4, 2026; DailyMed publication September 7, 2026. Repackager update is not a verified clinical PI revision date.",
+      "splVersion": "3",
+      "effectiveTime": "20260904",
+      "xmlSha256": "8208d1e33c2a19170959702a60fe875fe7369aed00ec671c98f34cc89558a351",
+      "localEvidence": "/tmp/nas-drug-sources/buspirone.xml",
+      "access": "Full public primary label; cited supporting sections reviewed",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/fa4d5cac-f687-4440-99d2-8bb27cf2f4ed.xml"
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Labeled uses",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Indications and Usage /1",
+        "Pediatric Use /8.4"
+      ],
+      "claims": [
+        "Evidence comes from outpatients resembling GAD, including coexisting depressive symptoms. Everyday stress usually does not warrant an anxiolytic. Controlled long-term efficacy beyond 3–4 weeks was not established in this label; periodically reassess continued treatment."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "INDICATIONS AND USAGE; pediatric precautions"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Adult oral regimen",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Dosage and Administration /2",
+        "Renal/hepatic precautions /8.6–8.7",
+        "Drug Interactions"
+      ],
+      "claims": [
+        [
+          "Start",
+          "7.5 mg twice daily."
+        ],
+        [
+          "Titrate",
+          "Increase total daily dose by 5 mg every 2–3 days as needed."
+        ],
+        [
+          "Range / ceiling",
+          "Common trial doses 20–30 mg/day divided; maximum 60 mg/day."
+        ]
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "DOSAGE AND ADMINISTRATION",
+          "PRECAUTIONS: CYP3A4 interactions and severe renal/hepatic impairment"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and organ impairment",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Dosage and Administration /2",
+        "Renal/hepatic precautions /8.6–8.7",
+        "Drug Interactions"
+      ],
+      "claims": [
+        "Take consistently with or without food. Severe renal or hepatic impairment: use cannot be recommended; exposure increases substantially and no fixed adjustment algorithm is supplied for lesser impairment. Use lower doses cautiously with strong CYP3A4 inhibitors."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "DOSAGE AND ADMINISTRATION",
+          "PRECAUTIONS: CYP3A4 interactions and severe renal/hepatic impairment"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "MAOI transitions",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Dosage and Administration /2",
+        "Renal/hepatic precautions /8.6–8.7",
+        "Drug Interactions"
+      ],
+      "claims": [
+        "Allow at least 14 days between buspirone and an antidepressant MAOI in either direction. Do not start during linezolid or IV methylene blue treatment. Urgent reversible-MAOI therapy requires clinician-directed stopping and surveillance; do not apply routine antidepressant washout rules without reviewing the exact protocol."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "DOSAGE AND ADMINISTRATION",
+          "PRECAUTIONS: CYP3A4 interactions and severe renal/hepatic impairment"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Boxed warning/status",
+        "Contraindications /4",
+        "Warnings/Precautions /5",
+        "Adverse Reactions /6",
+        "Overdosage /10"
+      ],
+      "claims": [
+        "Serotonin syndrome can occur, especially with serotonergic or antidopaminergic drugs. Stop implicated agents and initiate urgent supportive treatment if suspected. Driving impairment is unpredictable; avoid alcohol. Gradually withdraw prior chronic sedative/anxiolytic treatment under supervision because buspirone lacks cross-tolerance. Restlessness and movement symptoms warrant review; it is not an antipsychotic substitute."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "WARNINGS",
+          "CONTRAINDICATIONS",
+          "PRECAUTIONS: CNS and withdrawal",
+          "ADVERSE REACTIONS",
+          "OVERDOSAGE"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Boxed warning/status",
+        "Contraindications /4",
+        "Warnings/Precautions /5",
+        "Adverse Reactions /6",
+        "Overdosage /10"
+      ],
+      "claims": [
+        "Hypersensitivity to buspirone; concomitant antidepressant MAOIs or use within 14 days in either direction; initiating buspirone during linezolid or IV methylene blue therapy."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "WARNINGS",
+          "CONTRAINDICATIONS",
+          "PRECAUTIONS: CNS and withdrawal",
+          "ADVERSE REACTIONS",
+          "OVERDOSAGE"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Boxed warning/status",
+        "Contraindications /4",
+        "Warnings/Precautions /5",
+        "Adverse Reactions /6",
+        "Overdosage /10"
+      ],
+      "claims": [
+        "The selected U.S. label has no boxed warning. Its MAOI and serotonin-syndrome restrictions still apply."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "WARNINGS",
+          "CONTRAINDICATIONS",
+          "PRECAUTIONS: CNS and withdrawal",
+          "ADVERSE REACTIONS",
+          "OVERDOSAGE"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Boxed warning/status",
+        "Contraindications /4",
+        "Warnings/Precautions /5",
+        "Adverse Reactions /6",
+        "Overdosage /10"
+      ],
+      "claims": [
+        "Common effects include dizziness, nausea, headache, nervousness and lightheadedness. Postmarketing allergy/angioedema and movement disorders are reported with uncertain frequency/causality. Overdose requires immediate medical assessment and supportive monitoring of breathing, pulse and BP; no specific antidote is known and dialyzability is undetermined."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "WARNINGS",
+          "CONTRAINDICATIONS",
+          "PRECAUTIONS: CNS and withdrawal",
+          "ADVERSE REACTIONS",
+          "OVERDOSAGE"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Drug Interactions /7",
+        "Drug/laboratory interference"
+      ],
+      "claims": [
+        "Erythromycin: label example 2.5 mg twice daily; itraconazole or nefazodone: 2.5 mg once daily, followed by individualized reassessment.",
+        "Diltiazem/verapamil and other strong CYP3A4 inhibitors can raise exposure; review a lower dose and adverse effects.",
+        "Rifampin and other CYP3A4 inducers may reduce benefit; reassess dosing clinically.",
+        "Avoid large amounts of grapefruit juice; avoid tryptophan combinations. Serotonergic drugs/triptans require close observation.",
+        "Other psychotropics require caution; haloperidol concentrations may increase and diazepam-metabolite effects have been reported."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "PRECAUTIONS: Drug Interactions/CYP3A4",
+          "Drug/Laboratory Test Interactions"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Laboratory interference",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Drug Interactions /7",
+        "Drug/laboratory interference"
+      ],
+      "claims": [
+        "Buspirone can produce false-positive urinary metanephrine/catecholamine results. The label directs discontinuation at least 48 hours before collection; coordinate this with the prescriber/testing team."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "PRECAUTIONS: Drug Interactions/CYP3A4",
+          "Drug/Laboratory Test Interactions"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Pregnancy/Nursing/Pediatric/Geriatric /8"
+      ],
+      "claims": [
+        "Adequate controlled human pregnancy studies are lacking; use only if clearly needed after individual assessment. The selected label states human milk excretion is unknown and advises avoiding use during nursing if clinically possible."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "PRECAUTIONS: Pregnancy/Nursing/Pediatric/Geriatric"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric considerations",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Pregnancy/Nursing/Pediatric/Geriatric /8"
+      ],
+      "claims": [
+        "Two 6-week GAD trials in ages 6–17 did not show efficacy over placebo; long-term pediatric safety/efficacy data are absent. Older-adult experience was broadly similar to younger adults, but greater sensitivity is possible."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "PRECAUTIONS: Pregnancy/Nursing/Pediatric/Geriatric"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Clinical Pharmacology /12.1–12.3"
+      ],
+      "claims": [
+        "High 5-HT1A affinity is documented; the complete anxiolytic mechanism is unknown. Buspirone lacks benzodiazepine/GABA binding activity and does not provide typical anticonvulsant or muscle-relaxant effects."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "CLINICAL PHARMACOLOGY; Special Populations"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Clinical Pharmacology /12.1–12.3"
+      ],
+      "claims": [
+        [
+          "Absorption",
+          "Rapid; peaks about 40–90 minutes after selected oral doses."
+        ],
+        [
+          "Metabolism",
+          "Extensive first pass, primarily CYP3A4; metabolites include 1-PP."
+        ],
+        [
+          "Half-life",
+          "Unchanged drug about 2–3 hours."
+        ],
+        [
+          "Disposition",
+          "Approximately 86% protein-bound; urinary/fecal metabolite elimination."
+        ]
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "CLINICAL PHARMACOLOGY; Special Populations"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring parameters",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Warnings/Precautions /5",
+        "Patient Counseling /17",
+        "Information for Patients /Laboratory Tests"
+      ],
+      "claims": [
+        "Assess symptom response and continued treatment need.",
+        "Review serotonergic/CYP3A4 drugs, renal/hepatic function and adverse CNS or movement symptoms.",
+        "No specific routine laboratory tests are recommended by this label; testing follows clinical circumstances."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Information for Patients",
+          "Laboratory Tests",
+          "INDICATIONS AND USAGE"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Warnings/Precautions /5",
+        "Patient Counseling /17",
+        "Information for Patients /Laboratory Tests"
+      ],
+      "claims": [
+        "Take scheduled doses as prescribed and keep meal timing consistent. Avoid large grapefruit-juice intake and alcohol. Check before new medicines, pregnancy or breastfeeding. Avoid driving until effects are known; report restlessness or allergic symptoms promptly."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Information for Patients",
+          "Laboratory Tests",
+          "INDICATIONS AND USAGE"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative product · RemedyRepack 7.5 mg tablet",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Description /3/11",
+        "How Supplied/Storage /16",
+        "Package panels"
+      ],
+      "claims": [
+        [
+          "Appearance",
+          "White ovoid rectangular, beveled, uncoated and scored."
+        ],
+        [
+          "Imprint",
+          "B / 75 separated by score."
+        ],
+        [
+          "Packager",
+          "RemedyRepack; source NDC 59651-390."
+        ],
+        [
+          "Example NDC",
+          "70518-4317-0 · 30-tablet blister."
+        ],
+        [
+          "U.S. status",
+          "Prescription; not a controlled substance."
+        ]
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "DESCRIPTION",
+          "HOW SUPPLIED",
+          "Patient Instruction Sheet",
+          "DRUG ABUSE AND DEPENDENCE"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Description /3/11",
+        "How Supplied/Storage /16",
+        "Package panels"
+      ],
+      "claims": [
+        [
+          "Source-label tablets",
+          "5, 7.5, 10, 15 and 30 mg; selected repack is 7.5 mg."
+        ],
+        [
+          "Scoring",
+          "15/30 mg source tablets are specially scored into halves/thirds; verify exact product before dividing."
+        ]
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "DESCRIPTION",
+          "HOW SUPPLIED",
+          "Patient Instruction Sheet",
+          "DRUG ABUSE AND DEPENDENCE"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Description /3/11",
+        "How Supplied/Storage /16",
+        "Package panels"
+      ],
+      "claims": [
+        "Store 20–25°C; protect from temperatures above 30°C. Dispense in a tight, light-resistant container. Use the exact tablet’s splitting directions; discard incorrectly broken segments."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "DESCRIPTION",
+          "HOW SUPPLIED",
+          "Patient Instruction Sheet",
+          "DRUG ABUSE AND DEPENDENCE"
+        ]
+      }
+    },
+    {
+      "section": "hero/essential",
+      "card": "Clinical scope and essential safety",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Indications",
+        "Warnings",
+        "Counseling"
+      ],
+      "claims": [
+        "An oral anxiolytic for anxiety disorders. CYP3A4 interactions, consistent meal timing and regular reassessment guide individualized treatment.",
+        "MAOI combinations can cause dangerous BP elevation or serotonin syndrome. Fever, agitation and muscle rigidity need emergency assessment.",
+        [
+          "Therapeutic class",
+          "Nonbenzodiazepine anxiolytic"
+        ],
+        [
+          "Formulation",
+          "Oral tablets"
+        ],
+        [
+          "Reference focus",
+          "Selected U.S. prescription label"
+        ],
+        "Check serotonergic and CYP3A4 combinations."
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Indications; Warnings; Clinical Pharmacology"
+        ]
+      }
+    }
+  ],
+  "exclusions": [
+    "Off-label regimens; other manufacturers and compounded preparations; no universal interaction-dose algorithm"
+  ],
+  "gaps": [],
+  "validation": {
+    "schema": "Passed validateMonograph: zero errors; exact eight sections, four Safety cards and three Product cards.",
+    "renderedPage": "Pending parent integration QA"
+  },
+  "monographSha256": "71399d006576b911f95ef19a782ee127f2255c003bfc61f66f3994e01d3df16a",
+  "sourceInterpretationNotes": [
+    "Current SPL effectiveTime/publication is separated from clinical PI revision. No inference of actual dispensing availability."
+  ]
+}

@@ -19,6 +19,16 @@ import { insulinGlargine } from "./insulin-glargine.js";
 import { empagliflozin } from "./empagliflozin.js";
 import { furosemide } from "./furosemide.js";
 import { meloxicam } from "./meloxicam.js";
+import { hydrocodoneAndAcetaminophen } from "./hydrocodone-acetaminophen.js";
+import { tirzepatide } from "./tirzepatide.js";
+import { methylphenidate } from "./methylphenidate.js";
+import { duloxetine } from "./duloxetine.js";
+import { prednisone } from "./prednisone.js";
+import { carvedilol } from "./carvedilol.js";
+import { famotidine } from "./famotidine.js";
+import { ibuprofen } from "./ibuprofen.js";
+import { buspirone } from "./buspirone.js";
+import { venlafaxine } from "./venlafaxine.js";
 
 export const reviewedDrugMonographs = {
   "atorvastatin": atorvastatin,
@@ -41,4 +51,14 @@ export const reviewedDrugMonographs = {
   "empagliflozin": empagliflozin,
   "furosemide": furosemide,
   "meloxicam": meloxicam,
+  "hydrocodone-acetaminophen": hydrocodoneAndAcetaminophen,
+  "tirzepatide": tirzepatide,
+  "methylphenidate": methylphenidate,
+  "duloxetine": duloxetine,
+  "prednisone": prednisone,
+  "carvedilol": carvedilol,
+  "famotidine": famotidine,
+  "ibuprofen": ibuprofen,
+  "buspirone": buspirone,
+  "venlafaxine": venlafaxine,
 };

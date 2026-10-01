@@ -1,0 +1,827 @@
+{
+  "slug": "ibuprofen",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Time-Cap/Marksans current oral prescription tablets, Aurobindo prescription 100 mg/5 mL suspension, Advil OTC200 mg, selected Camber children100 mg/5 mL and Sun infant50 mg/1.25 mL Drug Facts; FDA pregnancy/aspirin and NIH LactMed context",
+  "excludedRegimens": [
+    "Other manufacturers, non-U.S. labels, and exhaustive off-label regimens",
+    "IV ibuprofen/Caldolor, neonatal ibuprofen lysine, combination products, topical and modified-release products",
+    "Unstudied universal aspirin-spacing regimen; enteric-coated/repeated-dose extrapolation",
+    "Adult tablet regimens in pediatric patients; infant self-treatment under6months"
+  ],
+  "sources": [
+    {
+      "id": "label",
+      "title": "Ibuprofen prescription tablets · Prescribing information",
+      "publisher": "DailyMed / Marksans Pharma Limited · Time-Cap Labs, Inc.",
+      "note": "Current SPL version 15, effective 2024-08-28. 400, 600, and 800 mg tablets; labeling issued August 2024.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e54209c2-f726-440b-ac60-5a72710d2a9b"
+    },
+    {
+      "id": "otc",
+      "title": "Advil 200 mg · Drug Facts",
+      "publisher": "DailyMed / Haleon US Holdings LLC",
+      "note": "Current SPL version 38, effective 2026-03-12. Adult/adolescent OTC tablets and caplets.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1a665e64-9f30-be37-4a83-38789f1f1e89"
+    },
+    {
+      "id": "liquid",
+      "title": "Ibuprofen prescription suspension · Prescribing information",
+      "publisher": "DailyMed / Aurobindo Pharma Limited · Aurobindo Pharma USA, Inc.",
+      "note": "Current SPL version 15, effective 2026-03-30. 100 mg/5 mL; prescribing information revised August 2024.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=758eeb45-e599-4c1a-969d-8fa33f27bf14"
+    },
+    {
+      "id": "children",
+      "title": "Ibuprofen children’s suspension · Drug Facts",
+      "publisher": "DailyMed / Camber Consumer Care Inc.",
+      "note": "Current SPL version 4, effective 2026-03-26. Selected OTC 100 mg/5 mL weight/age dosing chart.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b2dd4863-613e-4a41-98c1-3191e41b8463"
+    },
+    {
+      "id": "infants",
+      "title": "Ibuprofen Infants · Drug Facts",
+      "publisher": "DailyMed / Sun Pharmaceutical Industries, Inc.",
+      "note": "Current SPL version 6, effective 2026-03-23. Selected concentrated 50 mg/1.25 mL product; verify its enclosed device.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bc816597-a85a-4143-9f99-bb0699ca57c5"
+    },
+    {
+      "id": "fda-pregnancy",
+      "title": "NSAIDs at 20 weeks or later in pregnancy",
+      "publisher": "U.S. Food and Drug Administration",
+      "note": "October 15, 2020 communication, updated September 1, 2022; renal/oligohydramnios and ductus risks.",
+      "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-recommends-avoiding-use-nsaids-pregnancy-20-weeks-or-later-because-they-can-result-low-amniotic"
+    },
+    {
+      "id": "fda-aspirin",
+      "title": "Ibuprofen and aspirin · Interaction science paper",
+      "publisher": "U.S. Food and Drug Administration",
+      "note": "September 8, 2006 paper; older single-dose timing advice. Current product-label timing and limits are separately stated.",
+      "url": "https://www.fda.gov/media/76636/download"
+    },
+    {
+      "id": "lactmed",
+      "title": "Ibuprofen · Drugs and Lactation Database",
+      "publisher": "NIH / National Library of Medicine",
+      "note": "LactMed revision August 15, 2025; public milk-transfer and infant-effect evidence reviewed.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK500986/"
+    }
+  ],
+  "labelMetadata": [
+    {
+      "sourceId": "label",
+      "product": "Ibuprofen prescription tablets · Prescribing information",
+      "setid": "e54209c2-f726-440b-ac60-5a72710d2a9b",
+      "effectiveTime": "20240828",
+      "version": "15",
+      "xmlSha256": "88242dfe6fd361b57cf94aa7e0e72ac1edb12ab40e87f62f148ad8629afd8870",
+      "localEvidence": "/tmp/nas-drug-sources/ibuprofen-rx-modern.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/e54209c2-f726-440b-ac60-5a72710d2a9b.xml"
+    },
+    {
+      "sourceId": "otc",
+      "product": "Advil 200 mg · Drug Facts",
+      "setid": "1a665e64-9f30-be37-4a83-38789f1f1e89",
+      "effectiveTime": "20260312",
+      "version": "38",
+      "xmlSha256": "e0f067f0a2f6e333cb60c25749d362e4790884967720eb49a78bf30f5c2c577e",
+      "localEvidence": "/tmp/nas-drug-sources/ibuprofen-otc.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/1a665e64-9f30-be37-4a83-38789f1f1e89.xml"
+    },
+    {
+      "sourceId": "liquid",
+      "product": "Ibuprofen prescription suspension · Prescribing information",
+      "setid": "758eeb45-e599-4c1a-969d-8fa33f27bf14",
+      "effectiveTime": "20260330",
+      "version": "15",
+      "xmlSha256": "fdf843e4c26a513b6758afcce8d9793e11bcb6942a67e7e3f1bc83f7113530ff",
+      "localEvidence": "/tmp/nas-drug-sources/ibuprofen-rx-liquid.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/758eeb45-e599-4c1a-969d-8fa33f27bf14.xml"
+    },
+    {
+      "sourceId": "children",
+      "product": "Ibuprofen children’s suspension · Drug Facts",
+      "setid": "b2dd4863-613e-4a41-98c1-3191e41b8463",
+      "effectiveTime": "20260326",
+      "version": "4",
+      "xmlSha256": "c1e554bff605f8ae1882c5ddd87bae941cae6b8eea74edcb850ba3345122abf5",
+      "localEvidence": "/tmp/nas-drug-sources/ibuprofen-children.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/b2dd4863-613e-4a41-98c1-3191e41b8463.xml"
+    },
+    {
+      "sourceId": "infants",
+      "product": "Ibuprofen Infants · Drug Facts",
+      "setid": "bc816597-a85a-4143-9f99-bb0699ca57c5",
+      "effectiveTime": "20260323",
+      "version": "6",
+      "xmlSha256": "78fada8f14f1dd97037a282d6f92e391991e5e3ffd5cf88f499ccac9c3734d7e",
+      "localEvidence": "/tmp/nas-drug-sources/ibuprofen-infants.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/bc816597-a85a-4143-9f99-bb0699ca57c5.xml"
+    }
+  ],
+  "evidence": [
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/ibuprofen-rx-modern.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/ibuprofen/ibuprofen-rx-modern.xml",
+      "sha256": "88242dfe6fd361b57cf94aa7e0e72ac1edb12ab40e87f62f148ad8629afd8870",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e54209c2-f726-440b-ac60-5a72710d2a9b"
+    },
+    {
+      "sourceId": "otc",
+      "localEvidence": "/tmp/nas-drug-sources/ibuprofen-otc.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/ibuprofen/ibuprofen-otc.xml",
+      "sha256": "e0f067f0a2f6e333cb60c25749d362e4790884967720eb49a78bf30f5c2c577e",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1a665e64-9f30-be37-4a83-38789f1f1e89"
+    },
+    {
+      "sourceId": "liquid",
+      "localEvidence": "/tmp/nas-drug-sources/ibuprofen-rx-liquid.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/ibuprofen/ibuprofen-rx-liquid.xml",
+      "sha256": "fdf843e4c26a513b6758afcce8d9793e11bcb6942a67e7e3f1bc83f7113530ff",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=758eeb45-e599-4c1a-969d-8fa33f27bf14"
+    },
+    {
+      "sourceId": "children",
+      "localEvidence": "/tmp/nas-drug-sources/ibuprofen-children.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/ibuprofen/ibuprofen-children.xml",
+      "sha256": "c1e554bff605f8ae1882c5ddd87bae941cae6b8eea74edcb850ba3345122abf5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b2dd4863-613e-4a41-98c1-3191e41b8463"
+    },
+    {
+      "sourceId": "infants",
+      "localEvidence": "/tmp/nas-drug-sources/ibuprofen-infants.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/ibuprofen/ibuprofen-infants.xml",
+      "sha256": "78fada8f14f1dd97037a282d6f92e391991e5e3ffd5cf88f499ccac9c3734d7e",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bc816597-a85a-4143-9f99-bb0699ca57c5"
+    },
+    {
+      "sourceId": "fda-pregnancy",
+      "localEvidence": "/tmp/nas-drug-sources/ibuprofen-pregnancy.html",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/ibuprofen/ibuprofen-pregnancy.html",
+      "sha256": "cd1a137e10b4610ec85342adf7cde99fcab8922814b73212f980b65808df0a11",
+      "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-recommends-avoiding-use-nsaids-pregnancy-20-weeks-or-later-because-they-can-result-low-amniotic"
+    },
+    {
+      "sourceId": "fda-aspirin",
+      "localEvidence": "/tmp/nas-drug-sources/ibuprofen-aspirin.pdf",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/ibuprofen/ibuprofen-aspirin.pdf",
+      "sha256": "9dc0a23061fcf9a1e27f58d664331d674d37a5a02300d01bc344149c4935fa89",
+      "url": "https://www.fda.gov/media/76636/download"
+    },
+    {
+      "sourceId": "lactmed",
+      "localEvidence": "/tmp/nas-drug-sources/ibuprofen-lactmed.html",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/ibuprofen/ibuprofen-lactmed.html",
+      "sha256": "432cd7f67652c366336dcc5be430955675386a2d0f1bdc2eed7fbfc7a7327f86",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK500986/"
+    }
+  ],
+  "sourceEvidenceRoot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/ibuprofen",
+  "sourceManifest": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/ibuprofen/source-manifest.json",
+  "assertionToSourceMap": [
+    {
+      "section": "indications",
+      "card": "Prescription indications",
+      "assertions": {
+        "paragraphs": [
+          "The selected tablets are labeled for rheumatoid arthritis, osteoarthritis, mild-to-moderate pain, and primary dysmenorrhea. Pediatric tablet safety and efficacy have not been established. The selected prescription suspension is labeled for fever and mild-to-moderate pain in children aged 6 months up to 2 years, juvenile arthritis, and adult arthritis or primary dysmenorrhea."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "liquid"
+      ],
+      "sourceSections": "label/liquid INDICATIONS AND USAGE; Pediatric Use",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "indications",
+      "card": "OTC indications and limits",
+      "assertions": {
+        "paragraphs": [
+          "Advil 200 mg temporarily treats minor aches and pains and reduces fever in adults and children aged at least 12 years. Selected OTC pediatric liquids temporarily treat fever and minor pain with their own age/weight charts. These labels are distinct from prescription anti-inflammatory dosing."
+        ]
+      },
+      "sourceIds": [
+        "otc",
+        "children",
+        "infants"
+      ],
+      "sourceSections": "otc/children/infants Uses and Directions",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "indications",
+      "card": "Formulation scope",
+      "assertions": {
+        "paragraphs": [
+          "This profile covers the cited single-ingredient oral products. Combination cold/pain products, topical or non-U.S. products, and IV ibuprofen require their own labels and are outside these dose tables."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "otc",
+        "liquid"
+      ],
+      "sourceSections": "selected label/otc/liquid dosage-form scope",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "dosage",
+      "card": "Adult and adolescent OTC 200 mg",
+      "assertions": {
+        "paragraphs": [
+          "For age 12 years or older, take 200 mg every 4–6 hours while symptoms persist; 400 mg may be used if 200 mg is inadequate. Do not exceed 1,200 mg in 24 hours unless directed by a doctor. Children under 12 years need advice. Seek advice if pain lasts more than 10 days or fever more than 3 days, or either worsens. Take with food or milk if stomach upset occurs."
+        ]
+      },
+      "sourceIds": [
+        "otc"
+      ],
+      "sourceSections": "otc Directions and Warnings",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "dosage",
+      "card": "Adult prescription tablet regimens",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Indication",
+            "Selected tablet label regimen"
+          ],
+          "rows": [
+            [
+              "Rheumatoid arthritis / osteoarthritis",
+              "1,200–3,200 mg/day in divided doses; individualize to the smallest effective regimen"
+            ],
+            [
+              "Mild-to-moderate pain",
+              "400 mg every 4–6 hours as needed"
+            ],
+            [
+              "Primary dysmenorrhea",
+              "400 mg every 4 hours as needed, starting at onset"
+            ]
+          ]
+        },
+        "paragraphs": [
+          "Do not exceed 3,200 mg/day under the selected prescription label. This is not an OTC limit or a target dose. Analgesic trials found no greater pain benefit above 400 mg per dose. If gastrointestinal complaints occur, take with food or milk."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label DOSAGE AND ADMINISTRATION",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "dosage",
+      "card": "OTC children’s liquid · 100 mg/5 mL",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Weight / age fallback",
+            "Dose"
+          ],
+          "rows": [
+            [
+              "Under 24 lb / under 2 years",
+              "Ask a doctor"
+            ],
+            [
+              "24–35 lb / 2–3 years",
+              "5 mL (100 mg)"
+            ],
+            [
+              "36–47 lb / 4–5 years",
+              "7.5 mL (150 mg)"
+            ],
+            [
+              "48–59 lb / 6–8 years",
+              "10 mL (200 mg)"
+            ],
+            [
+              "60–71 lb / 9–10 years",
+              "12.5 mL (250 mg)"
+            ],
+            [
+              "72–95 lb / 11 years",
+              "15 mL (300 mg)"
+            ]
+          ]
+        },
+        "paragraphs": [
+          "Use weight when possible; otherwise use age. Shake well, use only the enclosed dosing cup, repeat every 6–8 hours if needed, and give no more than four doses daily. This selected chart is not a prescription mg/kg regimen."
+        ]
+      },
+      "sourceIds": [
+        "children"
+      ],
+      "sourceSections": "children DIRECTIONS dosing chart",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "dosage",
+      "card": "OTC infant concentrate · 50 mg/1.25 mL",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Weight / age fallback",
+            "Dose"
+          ],
+          "rows": [
+            [
+              "Under 6 months",
+              "Ask a doctor"
+            ],
+            [
+              "12–17 lb / 6–11 months",
+              "1.25 mL (50 mg)"
+            ],
+            [
+              "18–23 lb / 12–23 months",
+              "1.875 mL (75 mg)"
+            ]
+          ]
+        },
+        "paragraphs": [
+          "This concentration is twice that of 100 mg/5 mL children’s liquid. Use weight if possible, shake well, and measure only with the provided device. Give slowly toward the inner cheek. Repeat every 6–8 hours if needed, no more than four times daily. Do not transfer dosing devices or volumes between concentrations."
+        ]
+      },
+      "sourceIds": [
+        "infants"
+      ],
+      "sourceSections": "infants Directions dosing chart",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "dosage",
+      "card": "Prescription pediatric suspension · 100 mg/5 mL",
+      "assertions": {
+        "paragraphs": [
+          "For fever in children aged 6 months up to 2 years, the selected label uses 5 mg/kg when baseline temperature is below 102.5°F, or 10 mg/kg at 102.5°F or above; effect generally lasts 6–8 hours. For pain in this age range, use 10 mg/kg every 6–8 hours. Maximum is 40 mg/kg/day.",
+          "For juvenile arthritis, the labeled regimen is 30–40 mg/kg/day divided into three or four doses; milder disease may respond to 20 mg/kg/day. Titrate to the smallest effective dose under specialist direction rather than using an OTC fever chart. Above 30 mg/kg/day or with prior NSAID liver-test abnormalities, follow closely for liver dysfunction."
+        ]
+      },
+      "sourceIds": [
+        "liquid"
+      ],
+      "sourceSections": "liquid DOSAGE AND ADMINISTRATION Pediatric Patients/Individualization",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "dosage",
+      "card": "Organ impairment and hydration",
+      "assertions": {
+        "paragraphs": [
+          "The selected labels do not provide a numeric renal or hepatic dose-adjustment table. Advanced renal disease is a reason to avoid treatment unless a clinician determines it necessary and monitors closely. Ask before giving pediatric OTC ibuprofen if the child is not drinking or has lost substantial fluid from vomiting or diarrhea."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "children",
+        "infants"
+      ],
+      "sourceSections": "label WARNINGS Advanced Renal Disease, PRECAUTIONS Hepatic effects; children/infants Ask a doctor",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Cardiovascular thrombotic events can occur early and risk may increase with dose or duration. Avoid after recent myocardial infarction or with severe heart failure unless expected benefit outweighs risk. Monitor blood pressure and watch edema, weight gain, or worsening breathlessness.",
+          "Ulceration, bleeding, or perforation can occur without warning and can be fatal. Risk rises with prior ulcer/bleeding, older age, anticoagulants, corticosteroids, alcohol use, and longer treatment. Stop and assess bloody vomit, black stools, faintness, or persistent stomach pain. Food does not eliminate this risk.",
+          "Renal injury can occur, especially with impaired kidney function, heart failure, liver dysfunction, diuretics/ACE inhibitors, or older age. Pediatric fluid loss or poor intake requires advice before dosing.",
+          "Stop and seek care for anaphylaxis or a new rash. Severe reactions include SJS/TEN, fixed drug eruption, and DRESS; fever or lymph-node swelling can precede rash. Hepatic injury, anemia, visual disturbances, and aseptic meningitis are other important concerns. New visual symptoms require stopping and ophthalmologic assessment.",
+          "From about 20 weeks of pregnancy, fetal renal dysfunction can cause low amniotic fluid; at about 30 weeks and later, premature ductus closure is an added risk. See pregnancy guidance below."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "children",
+        "infants",
+        "fda-pregnancy"
+      ],
+      "sourceSections": "label WARNINGS, PRECAUTIONS Hepatic/Hematological/Ophthalmological/Aseptic meningitis; children/infants Ask a doctor; FDA pregnancy communication",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Do not use with ibuprofen hypersensitivity, prior aspirin/NSAID-triggered asthma, urticaria or allergic-type reactions, or in CABG surgery. The selected label’s skin warning also prohibits use after previous serious NSAID skin reactions. OTC labels prohibit use right before or after heart surgery and after allergy to a pain reliever/fever reducer."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "otc",
+        "children",
+        "infants"
+      ],
+      "sourceSections": "label CONTRAINDICATIONS and Serious Skin Reactions warning; otc/children/infants Do not use",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning · Cardiovascular and gastrointestinal harm",
+      "assertions": {
+        "paragraphs": [
+          "The selected prescription tablet and suspension labels carry boxed warnings for serious cardiovascular thrombotic events, including myocardial infarction and stroke, and gastrointestinal bleeding, ulceration, or perforation. These can be fatal. NSAIDs are contraindicated in CABG surgery. OTC Drug Facts communicates related risks without a prescription boxed-warning format."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "liquid",
+        "otc"
+      ],
+      "sourceSections": "label/liquid BOXED WARNING; otc Warnings",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Common reactions include nausea, dyspepsia or abdominal pain, diarrhea or constipation, dizziness, headache, rash, edema, and tinnitus. Serious reactions include the cardiovascular, bleeding, renal, hepatic, and hypersensitivity events above. Event frequencies vary by study and product; do not compare label rates as if from one population."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "liquid"
+      ],
+      "sourceSections": "label/liquid ADVERSE REACTIONS",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "interactions",
+      "card": "Major interaction considerations",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Medication",
+            "Clinical concern"
+          ],
+          "rows": [
+            [
+              "Other NSAIDs, aspirin, anticoagulants, corticosteroids",
+              "Higher gastrointestinal bleeding risk; avoid duplicate NSAIDs and review combinations"
+            ],
+            [
+              "ACE inhibitors / ARBs and diuretics",
+              "Reduced blood-pressure/diuretic effect and increased renal risk; monitor response and kidney function"
+            ],
+            [
+              "Lithium",
+              "Reduced renal clearance and increased lithium exposure/toxicity; monitor"
+            ],
+            [
+              "Methotrexate",
+              "Potential increased toxicity; clinician review and monitoring required"
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label",
+        "liquid",
+        "otc"
+      ],
+      "sourceSections": "label/liquid Drug Interactions and WARNINGS Heart Failure; otc Stomach bleeding warning",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "interactions",
+      "card": "Low-dose aspirin timing",
+      "assertions": {
+        "paragraphs": [
+          "The current selected prescription labels describe reduced aspirin antiplatelet effect, particularly when ibuprofen precedes aspirin. A studied once-daily 400 mg ibuprofen regimen avoided this interaction when immediate-release 81 mg aspirin was given at least 2 hours earlier. This finding cannot be extended to enteric-coated aspirin or a universal repeated-dose schedule. Combination also increases GI risk; obtain a clinician’s plan and consider alternatives.",
+          "An older FDA paper gives single-dose 400 mg advice of at least 8 hours before or at least 30 minutes after immediate-release 81 mg aspirin. The current product labels use the 2-hour finding; do not treat the older interval as guaranteed protection for every regimen."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "liquid",
+        "fda-aspirin"
+      ],
+      "sourceSections": "label/liquid CLINICAL PHARMACOLOGY Pharmacodynamics and Drug Interactions Aspirin; FDA 2006 science paper Summary/Recommendations/Discussion",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "interactions",
+      "card": "OTC medication review",
+      "assertions": {
+        "paragraphs": [
+          "Ask a clinician or pharmacist before using ibuprofen with prescription medicines or aspirin for heart/stroke prevention. Check cold, flu, sleep, and pain products for hidden ibuprofen or another NSAID."
+        ]
+      },
+      "sourceIds": [
+        "otc",
+        "fda-pregnancy"
+      ],
+      "sourceSections": "otc Ask a doctor/pharmacist; FDA pregnancy communication Additional information medicine-combination review",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy",
+      "assertions": {
+        "paragraphs": [
+          "Do not self-treat with ibuprofen at 20 weeks or later unless specifically directed. If necessary between about 20 and 30 weeks, use the lowest effective dose for the shortest duration; consider ultrasound monitoring if treatment exceeds 48 hours and stop if oligohydramnios occurs. Avoid at about 30 weeks and later because of ductus-closure risk. Evidence about other early-pregnancy risks is inconclusive."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "fda-pregnancy"
+      ],
+      "sourceSections": "label WARNINGS Fetal Toxicity and PRECAUTIONS Pregnancy; FDA pregnancy communication Additional Information for Health Care Professionals",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "populations",
+      "card": "Lactation",
+      "assertions": {
+        "paragraphs": [
+          "The selected older prescription label language is cautious about nursing exposure. Current NIH LactMed considers ibuprofen a preferred analgesic/anti-inflammatory during breastfeeding because milk levels are very low and its half-life is short. Review maternal contraindications and the infant’s circumstances; this does not remove the mother’s NSAID risks."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "lactmed"
+      ],
+      "sourceSections": "label Nursing Mothers; LactMed Summary of Use/Drug Levels/Effects in Breastfed Infants",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and older-adult use",
+      "assertions": {
+        "paragraphs": [
+          "The selected adult prescription tablets do not establish pediatric use. Pediatric liquids have their own indicated ages and doses; infants under 6 months need clinician advice for the selected OTC product. Older adults have greater gastrointestinal and renal vulnerability and warrant careful dose selection and monitoring."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "liquid",
+        "children",
+        "infants"
+      ],
+      "sourceSections": "label Pediatric/Geriatric Use; liquid Pediatric Use; children/infants Directions",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic impairment",
+      "assertions": {
+        "paragraphs": [
+          "Advanced kidney disease is not covered by a safe dose algorithm in these selected labels. Liver dysfunction can increase renal vulnerability, and new or worsening hepatic abnormalities require evaluation and possible discontinuation. Do not assume that a lower OTC dose makes use safe in these conditions."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label WARNINGS Renal Effects/Advanced Renal Disease and PRECAUTIONS Hepatic effects",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "assertions": {
+        "paragraphs": [
+          "Ibuprofen is an NSAID whose effects are related to inhibition of prostaglandin synthesis. Platelet inhibition is reversible and shorter-lived than aspirin’s. The active S-enantiomer contributes clinical activity after administration of racemic ibuprofen."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "liquid"
+      ],
+      "sourceSections": "label CLINICAL PHARMACOLOGY and Hematological effects; liquid CLINICAL PHARMACOLOGY enantiomers",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "assertions": {
+        "facts": [
+          [
+            "Oral peak",
+            "Usually about 1–2 hours"
+          ],
+          [
+            "Protein binding",
+            "Highly bound; greater than 99% at studied concentrations"
+          ],
+          [
+            "Half-life",
+            "About 2 hours"
+          ],
+          [
+            "Elimination",
+            "Metabolized and predominantly eliminated in urine as metabolites"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "liquid"
+      ],
+      "sourceSections": "label/liquid CLINICAL PHARMACOLOGY Pharmacokinetics",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Food and formulation effects",
+      "assertions": {
+        "paragraphs": [
+          "Food slows absorption without substantially reducing its extent. Concentrated infant and children’s suspensions contain different mg per mL; pharmacologic similarity does not make their volumes interchangeable."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "liquid",
+        "children",
+        "infants"
+      ],
+      "sourceSections": "label/liquid CLINICAL PHARMACOLOGY Food Effects; children/infants Active ingredient and Directions",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "assertions": {
+        "paragraphs": [
+          "Monitor blood pressure, fluid retention, kidney function, and bleeding symptoms according to risk and duration. Long-term treatment requires periodic CBC and chemistry testing. Investigate persistent abnormal liver tests, anemia symptoms, or visual complaints. Juvenile-arthritis patients on higher doses need the suspension label’s liver monitoring precautions."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "liquid"
+      ],
+      "sourceSections": "label Laboratory Tests/Ophthalmological effects; liquid DOSAGE AND ADMINISTRATION juvenile arthritis monitoring",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "practice",
+      "card": "Patient and caregiver counseling",
+      "assertions": {
+        "paragraphs": [
+          "Use one NSAID regimen and the smallest effective dose. Seek emergency care for chest pain, stroke symptoms, breathing difficulty, or severe allergy. Stop and promptly assess bleeding signs or rash. For pediatric OTC use, seek advice if there is no relief in 24 hours or pain/fever worsens or lasts over 3 days. Shake and measure with the selected device; check hydration first."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "otc",
+        "children",
+        "infants"
+      ],
+      "sourceSections": "label Information for Patients; otc/children/infants Warnings and Directions",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "practice",
+      "card": "Overdose",
+      "assertions": {
+        "paragraphs": [
+          "Get medical or poison-center advice immediately after excess dosing. Serious poisoning may cause impaired consciousness, breathing problems, seizures, metabolic disturbances, and renal injury. Management is clinician-directed; seek advice immediately rather than attempting home treatment."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "liquid",
+        "otc"
+      ],
+      "sourceSections": "label/liquid OVERDOSAGE; otc overdose warning",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "facts": [
+          [
+            "Selected product",
+            "Ibuprofen 400 mg tablets · Time-Cap Labs, Inc."
+          ],
+          [
+            "Appearance",
+            "White to off-white, round, biconvex, film-coated"
+          ],
+          [
+            "Imprint",
+            "121 on one side; other side plain"
+          ],
+          [
+            "Example NDC",
+            "25000-121-03 · bottle of 30"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": "label HOW SUPPLIED",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Selected prescription tablets: 400, 600, and 800 mg. Selected OTC adult tablets/caplets: 200 mg. Prescription and children’s suspensions: 100 mg/5 mL (20 mg/mL). Selected infant concentrate: 50 mg/1.25 mL (40 mg/mL). IV ibuprofen and combination products are outside this profile."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "otc",
+        "liquid",
+        "children",
+        "infants"
+      ],
+      "sourceSections": "label/otc/liquid/children/infants Description/Active ingredient/HOW SUPPLIED",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Selected prescription tablets and liquids are stored at 20–25°C in the labeled container. Advil adult products also warn against excessive heat above 40°C. Shake suspensions well before dosing and use the supplied OTC device. Replace the original pediatric cap to preserve child resistance; do not use products with broken required seals."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "otc",
+        "liquid",
+        "children",
+        "infants"
+      ],
+      "sourceSections": "label/liquid HOW SUPPLIED; otc/children/infants Other information and Directions",
+      "review": "All listed assertions compared with the exact public source sections; original summaries and product-specific directions."
+    }
+  ],
+  "materialErrors": [],
+  "unresolvedMaterialGaps": [],
+  "sourceDiscrepancies": [
+    {
+      "issue": "Current product-label aspirin regimen uses immediate-release81mg aspirin≥2hours before once-daily400mg ibuprofen; FDA2006 single-dose paper says≥30minutes after/≥8hours before.",
+      "resolution": "Current label finding stated first with exact scope; olderFDA timing explicitly historical and no enteric-coated/repeated-dose guarantee.",
+      "material": true,
+      "resolved": true
+    },
+    {
+      "issue": "Older Rx lactation caution does not reflect current NIH LactMed very-low milk-transfer assessment.",
+      "resolution": "Both scopes cited; current LactMed identifies preferred breastfeeding analgesic without removing maternalNSAID risks.",
+      "resolved": true
+    },
+    {
+      "issue": "Prescription overdose sections retain older emesis/lavage/diuresis language.",
+      "resolution": "Profile supplies no emesis/lavage/diuresis protocol; advises immediate professional care and clinician-directed management.",
+      "material": true,
+      "resolved": true
+    },
+    {
+      "issue": "Candidate IBU repackager SPL effective2025-12-01 carries2013PI and lacks modern20week/DRESS wording.",
+      "resolution": "Candidate rejected as primary; selected current Time-Cap/Marksans SPL e54209c2-f726-440b-ac60-5a72710d2a9b includes modern warnings. Candidate is not evidence of review completion.",
+      "resolved": true
+    }
+  ],
+  "limitations": [
+    "Public official sources only; no paid source access claimed.",
+    "NDC, excipients, appearances, concentrations, and storage directions are specific to selected products."
+  ],
+  "reviewedSourceSections": [
+    "All supporting prescription Boxed Warning,Description,Clinical Pharmacology,Indications,Contraindications,Warnings,Precautions,Adverse Reactions,Overdosage,Dosage,How Supplied,Medication Guide",
+    "Complete selected OTC Drug Facts",
+    "FDA pregnancy communication recommendations",
+    "FDA 2006 aspirin science paper summary, recommendations, discussion and conclusions",
+    "NIH LactMed public revision2025-08-15 Summary,Drug Levels,Infant Effects"
+  ],
+  "verification": {
+    "schemaErrors": [],
+    "sectionIds": [
+      "indications",
+      "dosage",
+      "safety",
+      "interactions",
+      "populations",
+      "pharmacology",
+      "practice",
+      "product"
+    ],
+    "heroFacts": 3,
+    "safetyCardOrder": [
+      "Warnings and precautions",
+      "Contraindications",
+      "Boxed warning · Cardiovascular and gastrointestinal harm",
+      "Adverse reactions"
+    ],
+    "productCardOrder": [
+      "Representative product",
+      "Dosage forms and strengths",
+      "Storage and handling"
+    ],
+    "renderedPageQA": "Pending parent batch integration QA"
+  }
+}

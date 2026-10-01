@@ -1,0 +1,1102 @@
+{
+  "drug": "tirzepatide",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Current U.S. Lilly Mounjaro and Zepbound PI08/2026; diabetes includingMounjaroage 10+, newadultCVriskindication,adultZepboundweight/OSA,allsingle/multidoseforms. Exactproduct-specific initiation,maintenance,deviceandstorage distinctions.",
+  "blueprint": {
+    "sections": [
+      [
+        "indications",
+        "Indications"
+      ],
+      [
+        "dosage",
+        "Dosage and administration"
+      ],
+      [
+        "safety",
+        "Safety"
+      ],
+      [
+        "interactions",
+        "Drug interactions"
+      ],
+      [
+        "populations",
+        "Use in specific populations"
+      ],
+      [
+        "pharmacology",
+        "Clinical pharmacology"
+      ],
+      [
+        "practice",
+        "Monitoring and counseling"
+      ],
+      [
+        "product",
+        "Product identification"
+      ]
+    ],
+    "essential_safety": true,
+    "hero_facts": 3,
+    "APAP_modified": false
+  },
+  "source_records": [
+    {
+      "id": "mounjaro",
+      "local_snapshot": "/tmp/nas-drug-sources/mounjaro.xml",
+      "sha256": "c3aaba26e6f6552c543f0ead63b987b76762b559baa18103ffae82c7d3cd5434",
+      "label_revision": "August 2026",
+      "review_method": "Full relevant clinical SPL sections read; dosing/product table text checked against the source; current manufacturer PDF concordance checked for tirzepatide.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d7da5d-ad07-4228-955f-cf7e355c8cc0",
+      "set_id": "d2d7da5d-ad07-4228-955f-cf7e355c8cc0",
+      "spl_version": "40",
+      "spl_effective_time": "20260827",
+      "dailymed_published_date": "2026-09-02",
+      "manufacturer_url": "https://pi.lilly.com/us/mounjaro-uspi.pdf",
+      "access": "Full substantive clinical sections/SPL IFUs read; current 26-page manufacturer PDF independently opened,revision/dose concordance checked"
+    },
+    {
+      "id": "zepbound",
+      "local_snapshot": "/tmp/nas-drug-sources/zepbound.xml",
+      "sha256": "7c40611952c42e85d4688669dae2a5529cd563e0e857fdb23e411a8f7d8b0f14",
+      "label_revision": "August 2026",
+      "review_method": "Full relevant clinical SPL sections read; dosing/product table text checked against the source; current manufacturer PDF concordance checked for tirzepatide.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b",
+      "set_id": "487cd7e7-434c-4925-99fa-aa80b1cc776b",
+      "spl_version": "40",
+      "spl_effective_time": "20260828",
+      "dailymed_published_date": "2026-09-02",
+      "manufacturer_url": "https://pi.lilly.com/us/zepbound-uspi.pdf",
+      "access": "Full substantive clinical sections/SPL IFUs read; current 33-page manufacturer PDF opened and cross-checked"
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "card": "Mounjaro approved uses",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "1; 8.4"
+        }
+      ],
+      "assertions": [
+        "Mounjaro complements diet/exercise for glycemic control in type 2 diabetes in adults and children age 10 years or older. The current August 2026 label also approves reducing major adverse cardiovascular events\u2014CV death, nonfatal MI or nonfatal stroke\u2014in adults with type 2 diabetes at high risk for those events. This adult CV indication does not establish pediatric CV prevention."
+      ],
+      "section": "indications"
+    },
+    {
+      "card": "Zepbound approved uses",
+      "sources": [
+        {
+          "id": "zepbound",
+          "sections": "1; 8.4"
+        }
+      ],
+      "assertions": [
+        "With reduced-calorie nutrition and increased activity, Zepbound reduces excess weight and maintains weight reduction in adults with obesity, or overweight plus at least one weight-related comorbidity. It also treats moderate-to-severe obstructive sleep apnea in adults with obesity. Pediatric effectiveness is not established; the current label does not give a separate CV, kidney-outcome or MASH indication."
+      ],
+      "section": "indications"
+    },
+    {
+      "card": "Treatment boundaries and evidence context",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "1; 14.6"
+        },
+        {
+          "id": "zepbound",
+          "sections": "1 / Limitations of Use"
+        }
+      ],
+      "assertions": [
+        "Zepbound coadministration with another tirzepatide product or any GLP-1 agonist is not recommended. Use one product and a coordinated treatment plan; these labels do not authorize type 1-diabetes treatment. Mounjaro\u2019s adult cardiovascular trial established noninferiority to dulaglutide, not superiority, so its new indication should not be presented as superiority evidence."
+      ],
+      "section": "indications"
+    },
+    {
+      "card": "Mounjaro weekly dosing",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "2.1; 12.2 / Exposure-Response; 14.6"
+        }
+      ],
+      "assertions": [
+        "The current label starts at 2.5 mg subcutaneously weekly. If additional glycemic control is needed, increase in 2.5 mg steps after at least 4 weeks at the current dose. Maximum: adults 15 mg/week; pediatric patients age 10 years or older, 10 mg/week. Unlike Zepbound, this revision no longer states that 2.5 mg must be increased to 5 mg after 4 weeks or is nontherapeutic. The current label does not specify a separate fixed dose solely for cardiovascular-risk reduction."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Zepbound initiation and maintenance",
+      "sources": [
+        {
+          "id": "zepbound",
+          "sections": "2.1\u20132.2"
+        }
+      ],
+      "assertions": [
+        "Start 2.5 mg subcutaneously weekly for 4 weeks, then increase to 5 mg weekly. Further 2.5 mg steps require at least 4 weeks at each dose; select by response and tolerability. The 2.5 mg dose is for initiation, not maintenance."
+      ],
+      "table_assertions": {
+        "headers": [
+          "Indication",
+          "Weekly maintenance",
+          "Maximum"
+        ],
+        "rows": [
+          [
+            "Weight reduction / long-term maintenance",
+            "5, 10 or 15 mg",
+            "15 mg"
+          ],
+          [
+            "Moderate-to-severe OSA with obesity",
+            "10 or 15 mg",
+            "15 mg"
+          ]
+        ]
+      },
+      "section": "dosage"
+    },
+    {
+      "card": "Missed doses and injection timing",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "2.1\u20132.2"
+        },
+        {
+          "id": "zepbound",
+          "sections": "2.3\u20132.4"
+        }
+      ],
+      "assertions": [
+        "For either brand, give a missed dose within 96 hours; otherwise skip and resume the usual weekly day. Changing the weekday requires at least 72 hours between doses. Inject at any time, with or without meals, into abdomen or thigh; another person can inject the back of the upper arm. Rotate sites. Mounjaro and insulin must be separate injections, never mixed, and not adjacent."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Single-dose and multidose technique",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "2.2; 3; 5.10; All presentation IFUs"
+        },
+        {
+          "id": "zepbound",
+          "sections": "2.4; 3; 5.10; All presentation IFUs"
+        }
+      ],
+      "assertions": [
+        "Single-dose pens/vials deliver 0.5 mL; multidose vials and KwikPens deliver 0.6 mL per weekly dose. A vial user needs an appropriate syringe, such as 1 mL with the required volume graduations, and a new syringe/needle each time. KwikPens contain four fixed weekly doses: use a new compatible needle, prime as instructed and dial the full prescribed dose; do not count clicks, withdraw pen contents into a syringe or inject leftover drug after four doses. Never share pens even after changing needles."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Caregiver training",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "2.2; 17; KwikPen IFU"
+        },
+        {
+          "id": "zepbound",
+          "sections": "2.4; KwikPen IFU"
+        }
+      ],
+      "assertions": [
+        "Training must match the prescribed presentation and be repeated after a device change. Mounjaro KwikPen is not recommended for pediatric self-administration; visually impaired users need trained help for either KwikPen. Do not interpret adult single-dose-device familiarity as competency with a multidose device."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Warnings and precautions",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "5.2\u20135.10; 7.1"
+        },
+        {
+          "id": "zepbound",
+          "sections": "5.2\u20135.10; 7.1"
+        }
+      ],
+      "assertions": [
+        "Persistent or severe abdominal pain, with or without vomiting, can signal pancreatitis: stop tirzepatide and obtain assessment. Evaluate suspected gallbladder disease. Severe GI reactions occur; neither brand is recommended with severe gastroparesis. Persistent vomiting/diarrhea may cause dehydration and acute kidney injury; follow renal function particularly during initiation/escalation.",
+        "Insulin or secretagogues increase hypoglycemia risk; consider dose reduction and glucose monitoring. Zepbound can also cause hypoglycemia without diabetes. Rapid glucose improvement can worsen diabetic retinopathy temporarily; monitor pre-existing retinopathy and report vision changes.",
+        "Rare pulmonary aspiration has occurred despite fasting during anesthesia/deep sedation. Tell the procedural team about treatment; the labels do not establish a universal preoperative hold interval. Never share a KwikPen. Evaluate serious allergy urgently and discontinue."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Contraindications",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "4; 5.4; 5.6"
+        },
+        {
+          "id": "zepbound",
+          "sections": "4; 5.2; 5.6"
+        }
+      ],
+      "assertions": [
+        "Both brands are contraindicated with personal or family medullary thyroid carcinoma, MEN2, or prior serious hypersensitivity to tirzepatide or the product\u2019s excipients. Anaphylaxis and angioedema have been reported. Severe gastroparesis is a not-recommended warning, not an additional labeled formal contraindication."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Boxed warning: thyroid C-cell tumors",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "Boxed Warning; 5.1"
+        },
+        {
+          "id": "zepbound",
+          "sections": "Boxed Warning; 5.1"
+        }
+      ],
+      "assertions": [
+        "Tirzepatide caused C-cell tumors in rats at clinically relevant exposures; whether it causes human MTC is unknown. Counsel about neck masses, persistent hoarseness and swallowing/breathing difficulty. Routine calcitonin screening or thyroid ultrasound has uncertain value; discovered nodules or elevated calcitonin require evaluation. This warning concerns MTC/MEN2, not a claim that all thyroid disease is contraindicated."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Adverse reactions",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "6.1\u20136.2; 8.4"
+        },
+        {
+          "id": "zepbound",
+          "sections": "6.1\u20136.2"
+        }
+      ],
+      "assertions": [
+        "Common Mounjaro reactions include nausea, diarrhea, appetite reduction, vomiting, constipation, dyspepsia and abdominal pain. Zepbound also commonly reports injection reactions, fatigue, hypersensitivity, belching, hair loss and reflux. Pediatric Mounjaro patients had more vomiting, abdominal pain and hypoglycemia than adults. Postmarketing reports include pancreatitis, ileus/obstruction, severe constipation, serious allergy, aspiration and renal injury; spontaneous reports cannot establish incidence."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Oral hormonal contraception",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "7.2; 8.3; 12.3"
+        },
+        {
+          "id": "zepbound",
+          "sections": "7.2; 8.3; 12.3"
+        }
+      ],
+      "assertions": [
+        "Switch to a nonoral contraceptive method or add barrier contraception for 4 weeks after starting tirzepatide and for 4 weeks after each dose escalation. Nonoral hormonal contraceptives should not be affected by gastric-emptying changes. This instruction applies to both brands."
+      ],
+      "section": "interactions"
+    },
+    {
+      "card": "Oral medicines and glucose-lowering drugs",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "7.1\u20137.2; 12.3"
+        },
+        {
+          "id": "zepbound",
+          "sections": "7.1\u20137.2; 12.3"
+        }
+      ],
+      "assertions": [
+        "Monitor oral drugs needing a threshold concentration or a narrow therapeutic range, such as warfarin, because absorption can change. Consider reducing insulin or secretagogues at initiation and follow glucose/hypoglycemia symptoms. Avoid assuming a low CYP interaction potential means no clinically relevant interactions."
+      ],
+      "section": "interactions"
+    },
+    {
+      "card": "Kidney and liver impairment",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "8.6\u20138.7; 5 / Kidney Injury; 12.3"
+        },
+        {
+          "id": "zepbound",
+          "sections": "8.6\u20138.7; 5 / Kidney Injury; 12.3"
+        }
+      ],
+      "assertions": [
+        "Neither label recommends dose adjustment for renal impairment, including ESRD, or hepatic impairment because PK was not meaningfully changed. Monitor renal function when severe GI symptoms or volume depletion occur, especially during escalation. This PK finding does not establish a kidney-disease treatment indication."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Children and older adults",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "2.1; 8.4\u20138.5"
+        },
+        {
+          "id": "zepbound",
+          "sections": "8.4\u20138.5"
+        }
+      ],
+      "assertions": [
+        "Mounjaro diabetes approval begins at 10 years, with a 10 mg weekly maximum; younger-child safety/effectiveness is not established. Zepbound pediatric safety/effectiveness is not established. Older-adult trials generally found no overall difference, but Zepbound OSA trials had too few age 65+ participants for a firm age comparison. Consider frailty, intake and tolerability individually."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Pregnancy and reproductive planning",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "8.1; 8.3; 17"
+        },
+        {
+          "id": "zepbound",
+          "sections": "8.1; 8.3; 17"
+        }
+      ],
+      "assertions": [
+        "Human pregnancy evidence is insufficient and animal findings raise fetal concern. Mounjaro use requires benefit-risk assessment alongside the risks of uncontrolled maternal diabetes. Zepbound should be discontinued when pregnancy is recognized because weight loss has no pregnancy benefit and may harm the fetus. Discuss pregnancy plans and alternative therapy; do not import semaglutide\u2019s two-month washout as a tirzepatide label instruction. Follow the contraception precautions above."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Breastfeeding",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "8.2"
+        },
+        {
+          "id": "zepbound",
+          "sections": "8.2"
+        }
+      ],
+      "assertions": [
+        "Current labels report a single 5 mg study in 11 lactating adults: most milk samples were undetectable, and total detected drug was below 0.02% of the administered maternal dose. This is not evidence of steady-state infant safety; effects on infants and milk production remain unknown. Balance maternal need, breastfeeding benefits and potential infant risk rather than declaring breastfeeding universally safe or contraindicated."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Mechanism and effects",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "12.1\u201312.2"
+        },
+        {
+          "id": "zepbound",
+          "sections": "12.1\u201312.2"
+        }
+      ],
+      "assertions": [
+        "Tirzepatide activates GIP and GLP-1 receptors, promotes glucose-dependent insulin secretion, reduces glucagon and improves insulin sensitivity. Appetite/calorie-intake effects reduce weight. Delayed gastric emptying is greatest after the first dose and diminishes with repeated treatment, explaining oral-absorption precautions."
+      ],
+      "section": "pharmacology"
+    },
+    {
+      "card": "Disposition",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "12.3"
+        },
+        {
+          "id": "zepbound",
+          "sections": "12.3"
+        }
+      ],
+      "assertions": [
+        "After subcutaneous dosing, bioavailability is about 80%, peak concentrations occur 8\u201372 hours later and steady state is reached after about 4 weeks. Albumin binding is about 99%. The Mounjaro label gives an approximately 5-day half-life; Zepbound reports about 5\u20136 days in obesity/OSA populations. Proteolysis, fatty-acid beta-oxidation and amide hydrolysis form metabolites excreted in urine and feces; intact drug is not detected in those routes."
+      ],
+      "section": "pharmacology"
+    },
+    {
+      "card": "Clinical monitoring",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "1; 5.1\u20135.9; 7; 14.6; 17"
+        },
+        {
+          "id": "zepbound",
+          "sections": "1; 5.1\u20135.9; 7; 14 OSA studies; 17"
+        }
+      ],
+      "assertions": [
+        "Follow glucose and A1c for diabetes, weight/tolerability for weight management, and the OSA plan and symptoms for sleep-apnea treatment. Maintain clinical management of cardiovascular risk alongside Mounjaro. Review hydration, renal symptoms, abdominal pain, visual changes and hypoglycemia; reassess interacting oral medicines and contraceptive protection. Routine thyroid screening solely because of tirzepatide has uncertain value."
+      ],
+      "section": "practice"
+    },
+    {
+      "card": "Counseling, procedures and overdose",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "2; 5; 10; 17; Instructions for Use"
+        },
+        {
+          "id": "zepbound",
+          "sections": "2; 5; 10; 17; Instructions for Use"
+        }
+      ],
+      "assertions": [
+        "Use the prescribed weekly milligram dose and presentation-specific IFU. Do not improvise pen clicks or leftover doses; dispose of needles in a sharps container. Report severe persistent GI symptoms, dehydration, vision changes, a neck mass or serious allergy. Tell anesthesia clinicians before procedures. Suspected overdose needs poison-center/medical advice and supportive care; the long half-life may require extended observation."
+      ],
+      "section": "practice"
+    },
+    {
+      "card": "Representative products",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "16.1"
+        },
+        {
+          "id": "zepbound",
+          "sections": "16.1"
+        }
+      ],
+      "assertions": [
+        "Lilly Mounjaro 2.5 mg/0.5 mL single-dose pens: carton of 4, NDC 0002-1506-80. Lilly Zepbound 2.5 mg/0.5 mL single-dose pens: carton of 4, NDC 0002-2506-80. These are examples, not a list of every package. Check the actual brand, dose and device."
+      ],
+      "section": "product"
+    },
+    {
+      "card": "Dosage forms and strengths",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "3; 11; 16.1"
+        },
+        {
+          "id": "zepbound",
+          "sections": "3; 11; 16.1"
+        }
+      ],
+      "assertions": [
+        "Both current labels list single-dose pens/vials, multidose vials and single-patient-use KwikPens at 2.5, 5, 7.5, 10, 12.5 or 15 mg per weekly dose. Single-dose products use 0.5 mL; multidose products deliver four 0.6 mL doses from 2.4 mL. KwikPen contains priming allowance; total content is not one injection. Multidose contents are shown below."
+      ],
+      "table_assertions": {
+        "headers": [
+          "Weekly dose",
+          "Total strength / volume",
+          "Concentration"
+        ],
+        "rows": [
+          [
+            "2.5 mg",
+            "10 mg / 2.4 mL",
+            "4.17 mg/mL"
+          ],
+          [
+            "5 mg",
+            "20 mg / 2.4 mL",
+            "8.33 mg/mL"
+          ],
+          [
+            "7.5 mg",
+            "30 mg / 2.4 mL",
+            "12.5 mg/mL"
+          ],
+          [
+            "10 mg",
+            "40 mg / 2.4 mL",
+            "16.7 mg/mL"
+          ],
+          [
+            "12.5 mg",
+            "50 mg / 2.4 mL",
+            "20.8 mg/mL"
+          ],
+          [
+            "15 mg",
+            "60 mg / 2.4 mL",
+            "25 mg/mL"
+          ]
+        ]
+      },
+      "section": "product"
+    },
+    {
+      "card": "Storage and handling",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "16.2; Single-dose vial and KwikPen IFUs"
+        },
+        {
+          "id": "zepbound",
+          "sections": "16.2; Single-dose vial and KwikPen IFUs"
+        }
+      ],
+      "assertions": [
+        "Protect from heat/light in the original carton; do not freeze or use a frozen product. Refrigerate unopened products at 2\u20138\u00b0C. Single-dose pens/vials can spend a total of 21 days at \u226430\u00b0C, then must be discarded; discard an opened single-dose vial after use.",
+        "Unopened multidose vials/KwikPens can remain refrigerated to expiry, but must be discarded after 30 days at room temperature \u226430\u00b0C. For an opened multidose product, section 16.2 permits refrigeration or room temperature; discard at the earliest of 30 total room-temperature days, 30 days after first use, or four weekly doses, even with medicine remaining.",
+        "The device IFU should also be followed: a KwikPen needs its cap, no attached needle during storage, priming before each dose and no attempted extraction of leftover drug. Presentation-specific guidance supersedes any assumption that all pens have the 21-day single-dose rule."
+      ],
+      "section": "product"
+    }
+  ],
+  "unresolved_material_errors": [],
+  "limitations": [
+    "Manufacturer PDF direct downloads returned 403; public web tool provided PDF text, and full current manufacturer DailyMed XML snapshots were preserved. No claim of successful local manufacturerPDFdownload.",
+    "No universal peri-anesthetic hold interval is established in labels; procedural planning requires individual assessment.",
+    "Mounjaro 08/2026dose wording supersedes historicalmandatory 5mgafter 4 weeks and 2.5 mg nontherapeutic language; currentSPL40 andmanufacturerPDFagree.",
+    "Labels do not establish a tirzepatide-specific mandatorypreconceptionwashout, steady-state breastfeeding safety, pediatricZepboundapproval or kidney/MASHlabelindication; no such claims inferred.",
+    "Section 16.2allows openedmultidose refrigeratedorroom storage; KwikPenIFU givesroomtemperatureafterinjectioninstructions. Page explicitly requiresactualdeviceIFUanddoesnotinferblanket 21 days."
+  ],
+  "validation": {
+    "schema": "Passed validateMonograph on 2026-10-01",
+    "rendered_page": "parent batch QA required",
+    "tests_build_lint": "parent batch checks required",
+    "assertion_mapping": "Each rendered card matches one assertion_map entry; table assertions, citations and hero content included.",
+    "scoped_diff_check": "git diff --check scoped to own files passed",
+    "assertion_map": "All card paragraphs and tables match current profile",
+    "source_hashes": "All local source snapshots match recorded SHA-256 hashes",
+    "formatting": "All rendered clinical strings manually reviewed; dose and unit spacing checked",
+    "scoped_whitespace": "Passed scoped git diff --check and explicit untracked-file trailing-whitespace check"
+  },
+  "sources": [
+    {
+      "id": "mounjaro",
+      "title": "Mounjaro \u00b7 Current prescribing information",
+      "publisher": "Eli Lilly / DailyMed",
+      "note": "PI revised August 2026; SPL40 effective August 27, published September 2, 2026. Includes pediatric diabetes, adult CV-risk reduction, multidose vials and KwikPen.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d7da5d-ad07-4228-955f-cf7e355c8cc0",
+      "local_snapshot": "/tmp/nas-drug-sources/mounjaro.xml",
+      "sha256": "c3aaba26e6f6552c543f0ead63b987b76762b559baa18103ffae82c7d3cd5434",
+      "label_revision": "August 2026",
+      "review_method": "Full relevant clinical SPL sections read; dosing/product table text checked against the source; current manufacturer PDF concordance checked for tirzepatide.",
+      "set_id": "d2d7da5d-ad07-4228-955f-cf7e355c8cc0",
+      "spl_version": "40",
+      "spl_effective_time": "20260827",
+      "dailymed_published_date": "2026-09-02",
+      "manufacturer_url": "https://pi.lilly.com/us/mounjaro-uspi.pdf",
+      "access": "Full substantive clinical sections/SPL IFUs read; current 26-page manufacturer PDF independently opened,revision/dose concordance checked"
+    },
+    {
+      "id": "zepbound",
+      "title": "Zepbound \u00b7 Current prescribing information",
+      "publisher": "Eli Lilly / DailyMed",
+      "note": "PI revised August 2026; SPL40 effective August 28, published September 2, 2026. Adult weight-management and OSA; single/multidose devices.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b",
+      "local_snapshot": "/tmp/nas-drug-sources/zepbound.xml",
+      "sha256": "7c40611952c42e85d4688669dae2a5529cd563e0e857fdb23e411a8f7d8b0f14",
+      "label_revision": "August 2026",
+      "review_method": "Full relevant clinical SPL sections read; dosing/product table text checked against the source; current manufacturer PDF concordance checked for tirzepatide.",
+      "set_id": "487cd7e7-434c-4925-99fa-aa80b1cc776b",
+      "spl_version": "40",
+      "spl_effective_time": "20260828",
+      "dailymed_published_date": "2026-09-02",
+      "manufacturer_url": "https://pi.lilly.com/us/zepbound-uspi.pdf",
+      "access": "Full substantive clinical sections/SPL IFUs read; current 33-page manufacturer PDF opened and cross-checked"
+    }
+  ],
+  "assertion_map": [
+    {
+      "card": "Mounjaro approved uses",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "1; 8.4"
+        }
+      ],
+      "assertions": [
+        "Mounjaro complements diet/exercise for glycemic control in type 2 diabetes in adults and children age 10 years or older. The current August 2026 label also approves reducing major adverse cardiovascular events\u2014CV death, nonfatal MI or nonfatal stroke\u2014in adults with type 2 diabetes at high risk for those events. This adult CV indication does not establish pediatric CV prevention."
+      ],
+      "section": "indications"
+    },
+    {
+      "card": "Zepbound approved uses",
+      "sources": [
+        {
+          "id": "zepbound",
+          "sections": "1; 8.4"
+        }
+      ],
+      "assertions": [
+        "With reduced-calorie nutrition and increased activity, Zepbound reduces excess weight and maintains weight reduction in adults with obesity, or overweight plus at least one weight-related comorbidity. It also treats moderate-to-severe obstructive sleep apnea in adults with obesity. Pediatric effectiveness is not established; the current label does not give a separate CV, kidney-outcome or MASH indication."
+      ],
+      "section": "indications"
+    },
+    {
+      "card": "Treatment boundaries and evidence context",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "1; 14.6"
+        },
+        {
+          "id": "zepbound",
+          "sections": "1 / Limitations of Use"
+        }
+      ],
+      "assertions": [
+        "Zepbound coadministration with another tirzepatide product or any GLP-1 agonist is not recommended. Use one product and a coordinated treatment plan; these labels do not authorize type 1-diabetes treatment. Mounjaro\u2019s adult cardiovascular trial established noninferiority to dulaglutide, not superiority, so its new indication should not be presented as superiority evidence."
+      ],
+      "section": "indications"
+    },
+    {
+      "card": "Mounjaro weekly dosing",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "2.1; 12.2 / Exposure-Response; 14.6"
+        }
+      ],
+      "assertions": [
+        "The current label starts at 2.5 mg subcutaneously weekly. If additional glycemic control is needed, increase in 2.5 mg steps after at least 4 weeks at the current dose. Maximum: adults 15 mg/week; pediatric patients age 10 years or older, 10 mg/week. Unlike Zepbound, this revision no longer states that 2.5 mg must be increased to 5 mg after 4 weeks or is nontherapeutic. The current label does not specify a separate fixed dose solely for cardiovascular-risk reduction."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Zepbound initiation and maintenance",
+      "sources": [
+        {
+          "id": "zepbound",
+          "sections": "2.1\u20132.2"
+        }
+      ],
+      "assertions": [
+        "Start 2.5 mg subcutaneously weekly for 4 weeks, then increase to 5 mg weekly. Further 2.5 mg steps require at least 4 weeks at each dose; select by response and tolerability. The 2.5 mg dose is for initiation, not maintenance."
+      ],
+      "table_assertions": {
+        "headers": [
+          "Indication",
+          "Weekly maintenance",
+          "Maximum"
+        ],
+        "rows": [
+          [
+            "Weight reduction / long-term maintenance",
+            "5, 10 or 15 mg",
+            "15 mg"
+          ],
+          [
+            "Moderate-to-severe OSA with obesity",
+            "10 or 15 mg",
+            "15 mg"
+          ]
+        ]
+      },
+      "section": "dosage"
+    },
+    {
+      "card": "Missed doses and injection timing",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "2.1\u20132.2"
+        },
+        {
+          "id": "zepbound",
+          "sections": "2.3\u20132.4"
+        }
+      ],
+      "assertions": [
+        "For either brand, give a missed dose within 96 hours; otherwise skip and resume the usual weekly day. Changing the weekday requires at least 72 hours between doses. Inject at any time, with or without meals, into abdomen or thigh; another person can inject the back of the upper arm. Rotate sites. Mounjaro and insulin must be separate injections, never mixed, and not adjacent."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Single-dose and multidose technique",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "2.2; 3; 5.10; All presentation IFUs"
+        },
+        {
+          "id": "zepbound",
+          "sections": "2.4; 3; 5.10; All presentation IFUs"
+        }
+      ],
+      "assertions": [
+        "Single-dose pens/vials deliver 0.5 mL; multidose vials and KwikPens deliver 0.6 mL per weekly dose. A vial user needs an appropriate syringe, such as 1 mL with the required volume graduations, and a new syringe/needle each time. KwikPens contain four fixed weekly doses: use a new compatible needle, prime as instructed and dial the full prescribed dose; do not count clicks, withdraw pen contents into a syringe or inject leftover drug after four doses. Never share pens even after changing needles."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Caregiver training",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "2.2; 17; KwikPen IFU"
+        },
+        {
+          "id": "zepbound",
+          "sections": "2.4; KwikPen IFU"
+        }
+      ],
+      "assertions": [
+        "Training must match the prescribed presentation and be repeated after a device change. Mounjaro KwikPen is not recommended for pediatric self-administration; visually impaired users need trained help for either KwikPen. Do not interpret adult single-dose-device familiarity as competency with a multidose device."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Warnings and precautions",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "5.2\u20135.10; 7.1"
+        },
+        {
+          "id": "zepbound",
+          "sections": "5.2\u20135.10; 7.1"
+        }
+      ],
+      "assertions": [
+        "Persistent or severe abdominal pain, with or without vomiting, can signal pancreatitis: stop tirzepatide and obtain assessment. Evaluate suspected gallbladder disease. Severe GI reactions occur; neither brand is recommended with severe gastroparesis. Persistent vomiting/diarrhea may cause dehydration and acute kidney injury; follow renal function particularly during initiation/escalation.",
+        "Insulin or secretagogues increase hypoglycemia risk; consider dose reduction and glucose monitoring. Zepbound can also cause hypoglycemia without diabetes. Rapid glucose improvement can worsen diabetic retinopathy temporarily; monitor pre-existing retinopathy and report vision changes.",
+        "Rare pulmonary aspiration has occurred despite fasting during anesthesia/deep sedation. Tell the procedural team about treatment; the labels do not establish a universal preoperative hold interval. Never share a KwikPen. Evaluate serious allergy urgently and discontinue."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Contraindications",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "4; 5.4; 5.6"
+        },
+        {
+          "id": "zepbound",
+          "sections": "4; 5.2; 5.6"
+        }
+      ],
+      "assertions": [
+        "Both brands are contraindicated with personal or family medullary thyroid carcinoma, MEN2, or prior serious hypersensitivity to tirzepatide or the product\u2019s excipients. Anaphylaxis and angioedema have been reported. Severe gastroparesis is a not-recommended warning, not an additional labeled formal contraindication."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Boxed warning: thyroid C-cell tumors",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "Boxed Warning; 5.1"
+        },
+        {
+          "id": "zepbound",
+          "sections": "Boxed Warning; 5.1"
+        }
+      ],
+      "assertions": [
+        "Tirzepatide caused C-cell tumors in rats at clinically relevant exposures; whether it causes human MTC is unknown. Counsel about neck masses, persistent hoarseness and swallowing/breathing difficulty. Routine calcitonin screening or thyroid ultrasound has uncertain value; discovered nodules or elevated calcitonin require evaluation. This warning concerns MTC/MEN2, not a claim that all thyroid disease is contraindicated."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Adverse reactions",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "6.1\u20136.2; 8.4"
+        },
+        {
+          "id": "zepbound",
+          "sections": "6.1\u20136.2"
+        }
+      ],
+      "assertions": [
+        "Common Mounjaro reactions include nausea, diarrhea, appetite reduction, vomiting, constipation, dyspepsia and abdominal pain. Zepbound also commonly reports injection reactions, fatigue, hypersensitivity, belching, hair loss and reflux. Pediatric Mounjaro patients had more vomiting, abdominal pain and hypoglycemia than adults. Postmarketing reports include pancreatitis, ileus/obstruction, severe constipation, serious allergy, aspiration and renal injury; spontaneous reports cannot establish incidence."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Oral hormonal contraception",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "7.2; 8.3; 12.3"
+        },
+        {
+          "id": "zepbound",
+          "sections": "7.2; 8.3; 12.3"
+        }
+      ],
+      "assertions": [
+        "Switch to a nonoral contraceptive method or add barrier contraception for 4 weeks after starting tirzepatide and for 4 weeks after each dose escalation. Nonoral hormonal contraceptives should not be affected by gastric-emptying changes. This instruction applies to both brands."
+      ],
+      "section": "interactions"
+    },
+    {
+      "card": "Oral medicines and glucose-lowering drugs",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "7.1\u20137.2; 12.3"
+        },
+        {
+          "id": "zepbound",
+          "sections": "7.1\u20137.2; 12.3"
+        }
+      ],
+      "assertions": [
+        "Monitor oral drugs needing a threshold concentration or a narrow therapeutic range, such as warfarin, because absorption can change. Consider reducing insulin or secretagogues at initiation and follow glucose/hypoglycemia symptoms. Avoid assuming a low CYP interaction potential means no clinically relevant interactions."
+      ],
+      "section": "interactions"
+    },
+    {
+      "card": "Kidney and liver impairment",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "8.6\u20138.7; 5 / Kidney Injury; 12.3"
+        },
+        {
+          "id": "zepbound",
+          "sections": "8.6\u20138.7; 5 / Kidney Injury; 12.3"
+        }
+      ],
+      "assertions": [
+        "Neither label recommends dose adjustment for renal impairment, including ESRD, or hepatic impairment because PK was not meaningfully changed. Monitor renal function when severe GI symptoms or volume depletion occur, especially during escalation. This PK finding does not establish a kidney-disease treatment indication."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Children and older adults",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "2.1; 8.4\u20138.5"
+        },
+        {
+          "id": "zepbound",
+          "sections": "8.4\u20138.5"
+        }
+      ],
+      "assertions": [
+        "Mounjaro diabetes approval begins at 10 years, with a 10 mg weekly maximum; younger-child safety/effectiveness is not established. Zepbound pediatric safety/effectiveness is not established. Older-adult trials generally found no overall difference, but Zepbound OSA trials had too few age 65+ participants for a firm age comparison. Consider frailty, intake and tolerability individually."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Pregnancy and reproductive planning",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "8.1; 8.3; 17"
+        },
+        {
+          "id": "zepbound",
+          "sections": "8.1; 8.3; 17"
+        }
+      ],
+      "assertions": [
+        "Human pregnancy evidence is insufficient and animal findings raise fetal concern. Mounjaro use requires benefit-risk assessment alongside the risks of uncontrolled maternal diabetes. Zepbound should be discontinued when pregnancy is recognized because weight loss has no pregnancy benefit and may harm the fetus. Discuss pregnancy plans and alternative therapy; do not import semaglutide\u2019s two-month washout as a tirzepatide label instruction. Follow the contraception precautions above."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Breastfeeding",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "8.2"
+        },
+        {
+          "id": "zepbound",
+          "sections": "8.2"
+        }
+      ],
+      "assertions": [
+        "Current labels report a single 5 mg study in 11 lactating adults: most milk samples were undetectable, and total detected drug was below 0.02% of the administered maternal dose. This is not evidence of steady-state infant safety; effects on infants and milk production remain unknown. Balance maternal need, breastfeeding benefits and potential infant risk rather than declaring breastfeeding universally safe or contraindicated."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Mechanism and effects",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "12.1\u201312.2"
+        },
+        {
+          "id": "zepbound",
+          "sections": "12.1\u201312.2"
+        }
+      ],
+      "assertions": [
+        "Tirzepatide activates GIP and GLP-1 receptors, promotes glucose-dependent insulin secretion, reduces glucagon and improves insulin sensitivity. Appetite/calorie-intake effects reduce weight. Delayed gastric emptying is greatest after the first dose and diminishes with repeated treatment, explaining oral-absorption precautions."
+      ],
+      "section": "pharmacology"
+    },
+    {
+      "card": "Disposition",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "12.3"
+        },
+        {
+          "id": "zepbound",
+          "sections": "12.3"
+        }
+      ],
+      "assertions": [
+        "After subcutaneous dosing, bioavailability is about 80%, peak concentrations occur 8\u201372 hours later and steady state is reached after about 4 weeks. Albumin binding is about 99%. The Mounjaro label gives an approximately 5-day half-life; Zepbound reports about 5\u20136 days in obesity/OSA populations. Proteolysis, fatty-acid beta-oxidation and amide hydrolysis form metabolites excreted in urine and feces; intact drug is not detected in those routes."
+      ],
+      "section": "pharmacology"
+    },
+    {
+      "card": "Clinical monitoring",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "1; 5.1\u20135.9; 7; 14.6; 17"
+        },
+        {
+          "id": "zepbound",
+          "sections": "1; 5.1\u20135.9; 7; 14 OSA studies; 17"
+        }
+      ],
+      "assertions": [
+        "Follow glucose and A1c for diabetes, weight/tolerability for weight management, and the OSA plan and symptoms for sleep-apnea treatment. Maintain clinical management of cardiovascular risk alongside Mounjaro. Review hydration, renal symptoms, abdominal pain, visual changes and hypoglycemia; reassess interacting oral medicines and contraceptive protection. Routine thyroid screening solely because of tirzepatide has uncertain value."
+      ],
+      "section": "practice"
+    },
+    {
+      "card": "Counseling, procedures and overdose",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "2; 5; 10; 17; Instructions for Use"
+        },
+        {
+          "id": "zepbound",
+          "sections": "2; 5; 10; 17; Instructions for Use"
+        }
+      ],
+      "assertions": [
+        "Use the prescribed weekly milligram dose and presentation-specific IFU. Do not improvise pen clicks or leftover doses; dispose of needles in a sharps container. Report severe persistent GI symptoms, dehydration, vision changes, a neck mass or serious allergy. Tell anesthesia clinicians before procedures. Suspected overdose needs poison-center/medical advice and supportive care; the long half-life may require extended observation."
+      ],
+      "section": "practice"
+    },
+    {
+      "card": "Representative products",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "16.1"
+        },
+        {
+          "id": "zepbound",
+          "sections": "16.1"
+        }
+      ],
+      "assertions": [
+        "Lilly Mounjaro 2.5 mg/0.5 mL single-dose pens: carton of 4, NDC 0002-1506-80. Lilly Zepbound 2.5 mg/0.5 mL single-dose pens: carton of 4, NDC 0002-2506-80. These are examples, not a list of every package. Check the actual brand, dose and device."
+      ],
+      "section": "product"
+    },
+    {
+      "card": "Dosage forms and strengths",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "3; 11; 16.1"
+        },
+        {
+          "id": "zepbound",
+          "sections": "3; 11; 16.1"
+        }
+      ],
+      "assertions": [
+        "Both current labels list single-dose pens/vials, multidose vials and single-patient-use KwikPens at 2.5, 5, 7.5, 10, 12.5 or 15 mg per weekly dose. Single-dose products use 0.5 mL; multidose products deliver four 0.6 mL doses from 2.4 mL. KwikPen contains priming allowance; total content is not one injection. Multidose contents are shown below."
+      ],
+      "table_assertions": {
+        "headers": [
+          "Weekly dose",
+          "Total strength / volume",
+          "Concentration"
+        ],
+        "rows": [
+          [
+            "2.5 mg",
+            "10 mg / 2.4 mL",
+            "4.17 mg/mL"
+          ],
+          [
+            "5 mg",
+            "20 mg / 2.4 mL",
+            "8.33 mg/mL"
+          ],
+          [
+            "7.5 mg",
+            "30 mg / 2.4 mL",
+            "12.5 mg/mL"
+          ],
+          [
+            "10 mg",
+            "40 mg / 2.4 mL",
+            "16.7 mg/mL"
+          ],
+          [
+            "12.5 mg",
+            "50 mg / 2.4 mL",
+            "20.8 mg/mL"
+          ],
+          [
+            "15 mg",
+            "60 mg / 2.4 mL",
+            "25 mg/mL"
+          ]
+        ]
+      },
+      "section": "product"
+    },
+    {
+      "card": "Storage and handling",
+      "sources": [
+        {
+          "id": "mounjaro",
+          "sections": "16.2; Single-dose vial and KwikPen IFUs"
+        },
+        {
+          "id": "zepbound",
+          "sections": "16.2; Single-dose vial and KwikPen IFUs"
+        }
+      ],
+      "assertions": [
+        "Protect from heat/light in the original carton; do not freeze or use a frozen product. Refrigerate unopened products at 2\u20138\u00b0C. Single-dose pens/vials can spend a total of 21 days at \u226430\u00b0C, then must be discarded; discard an opened single-dose vial after use.",
+        "Unopened multidose vials/KwikPens can remain refrigerated to expiry, but must be discarded after 30 days at room temperature \u226430\u00b0C. For an opened multidose product, section 16.2 permits refrigeration or room temperature; discard at the earliest of 30 total room-temperature days, 30 days after first use, or four weekly doses, even with medicine remaining.",
+        "The device IFU should also be followed: a KwikPen needs its cap, no attached needle during storage, priming before each dose and no attempted extraction of leftover drug. Presentation-specific guidance supersedes any assumption that all pens have the 21-day single-dose rule."
+      ],
+      "section": "product"
+    }
+  ],
+  "hero_assertions": {
+    "essential": {
+      "title": "Confirm the brand, indication and injection presentation.",
+      "text": "Mounjaro and Zepbound share tirzepatide but differ in approved populations and dosing. Avoid use with personal/family MTC or MEN2; report severe abdominal symptoms and dehydration. Oral hormonal contraception needs added protection for four weeks after starting and each dose increase.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "facts": [
+      [
+        "Therapeutic class",
+        "Dual GIP / GLP-1 receptor agonist"
+      ],
+      [
+        "Common brands",
+        "Mounjaro \u00b7 Zepbound"
+      ],
+      [
+        "Route / frequency",
+        "Subcutaneous injection once weekly"
+      ]
+    ],
+    "sources": [
+      "mounjaro",
+      "zepbound"
+    ]
+  }
+}
