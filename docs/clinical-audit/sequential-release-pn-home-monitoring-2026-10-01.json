@@ -1,0 +1,160 @@
+{
+  "date": "2026-10-01",
+  "recordedAtUTC": "2026-10-01T16:32:16.709989+00:00",
+  "unit": "parenteral-nutrition:approved-home-transition-long-term-monitoring",
+  "branch": "audit/rxprep-content-2026-09-24",
+  "baseCommit": "118e134dd475476e8d8b6fc445be13143184b9c8",
+  "contentCommit": "be44e15e151776b30ca796afdd96801082ab4197",
+  "contentPush": "verified",
+  "remoteVerification": {
+    "command": "git ls-remote origin refs/heads/audit/rxprep-content-2026-09-24",
+    "observedHash": "be44e15e151776b30ca796afdd96801082ab4197",
+    "exactMatch": true
+  },
+  "evidence": "parenteral-nutrition-home-monitoring-review.json",
+  "coverage": {
+    "baseEvidence": "parenteral-nutrition-refeeding-timing-review.json",
+    "baseVerifiedBank": 119,
+    "bank": 142,
+    "currentVerifiedBank": 131,
+    "additionalVerifiedRetainedIds": [
+      "parenteral-nutrition-003",
+      "parenteral-nutrition-007",
+      "parenteral-nutrition-008",
+      "parenteral-nutrition-015",
+      "parenteral-nutrition-047",
+      "parenteral-nutrition-048",
+      "parenteral-nutrition-049",
+      "parenteral-nutrition-106"
+    ],
+    "newVerifiedIds": [
+      "parenteral-nutrition-care-001",
+      "parenteral-nutrition-care-002",
+      "parenteral-nutrition-care-003",
+      "parenteral-nutrition-care-004"
+    ],
+    "remainingBank": 11,
+    "remainingBankItemIds": [
+      "parenteral-nutrition-012",
+      "parenteral-nutrition-013",
+      "parenteral-nutrition-020",
+      "parenteral-nutrition-025",
+      "parenteral-nutrition-027",
+      "parenteral-nutrition-030",
+      "parenteral-nutrition-031",
+      "parenteral-nutrition-033",
+      "parenteral-nutrition-044",
+      "parenteral-nutrition-045",
+      "parenteral-nutrition-103"
+    ],
+    "embeddedVerified": 6,
+    "embedded": 6,
+    "currentCumulativeVerified": 5,
+    "cumulative": 5,
+    "originalTeachingFullyVerified": 16,
+    "originalTeachingRemaining": 8,
+    "newApprovedSourceSectionsThisUnit": 3,
+    "newApprovedSourceSectionsAcrossUnits": 10,
+    "bookAddedSectionsAcrossUnits": 23,
+    "totalSections": 57,
+    "totalFullySourceVerifiedSectionBodies": 49,
+    "figuresFullyVerified": 4,
+    "figuresRemainingPartlySupported": 2,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false,
+    "remainingOriginalTeachingBodies": [
+      {
+        "lesson": "venous-access",
+        "heading": "Use central access for concentrated therapy"
+      },
+      {
+        "lesson": "macronutrient-design",
+        "heading": "Set protein from clinical demand"
+      },
+      {
+        "lesson": "macronutrient-design",
+        "heading": "Advance dextrose within metabolic capacity"
+      },
+      {
+        "lesson": "micronutrient-balance",
+        "heading": "Prescribe electrolytes as a pattern"
+      },
+      {
+        "lesson": "micronutrient-balance",
+        "heading": "Provide complete vitamins"
+      },
+      {
+        "lesson": "micronutrient-balance",
+        "heading": "Individualize trace elements"
+      },
+      {
+        "lesson": "compounding-safety",
+        "heading": "Choose a formulation deliberately"
+      },
+      {
+        "lesson": "monitoring-transition",
+        "heading": "Separate overfeeding from intolerance"
+      }
+    ],
+    "remainingPartlySupportedFigureIds": [
+      "macronutrient-design",
+      "micronutrient-balance"
+    ]
+  },
+  "validation": {
+    "isolatedBuildStaticPages": 567,
+    "focusedStructuralAudit": "passed",
+    "technical": "passed",
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "allBankGradedCorrect": 142,
+          "correctAttempts": 15,
+          "reviewedWrongAnswers": 13,
+          "embeddedChecks": 6,
+          "teachingBodies": 57,
+          "figures": 6,
+          "cumulativePNCorrect": 5,
+          "cumulativePNWrong": 5,
+          "remediationLinkPassed": true,
+          "localProgressPassed": true
+        },
+        {
+          "width": 390,
+          "allBankGradedCorrect": 142,
+          "correctAttempts": 15,
+          "reviewedWrongAnswers": 13,
+          "embeddedChecks": 6,
+          "teachingBodies": 57,
+          "figures": 6,
+          "cumulativePNCorrect": 5,
+          "cumulativePNWrong": 5,
+          "remediationLinkPassed": true,
+          "localProgressPassed": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "manualVisual": "Nine revised/new bodies and three target figures at desktop/mobile plus currentcare004correct/incorrect; source review recorded separately.",
+    "candidateContentHashes": {
+      "src/data/modules/parenteralNutrition.js": "a126452325372ff479dd02353619f5361e8a72513f572741f0d8d08f54e6f338",
+      "src/data/questionBanks/parenteralNutrition.js": "f831dad108207dee07cb3470440f58377aaf04690fde491ac27f293c22149692",
+      "src/components/learn/ParenteralNutritionVisual.jsx": "5977f340ea6deaf06ceff6aa4589ebe9db4fde1b3bdc6f7126bdf761de680cad"
+    },
+    "nonTargetLedgerBytesPreserved": true
+  },
+  "preserved": {
+    "all138ExistingIDsPromptsKeysAnchors": true,
+    "all6EmbeddedChecks": true,
+    "siteArchitectureAndBackend": true,
+    "unrelatedWorkingChangesExcluded": true,
+    "privateBookAssetsExcluded": true
+  },
+  "production": "not verified; audit branch push only",
+  "wholeModuleVerified": false,
+  "wholeChapterVerified": false,
+  "goal": "active; complete82-chapter scope unchanged",
+  "nextAction": "Complete remaining eleven bank questions, eight original bodies, two partially supported figures and legacy monitoring against already approved sources. Keep Chapter11, adult PN and checklist entry15 reviewing; fourteen checklist entries complete."
+}
