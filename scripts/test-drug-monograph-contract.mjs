@@ -60,8 +60,14 @@ test('Completion claims require section evidence, validation, and deployment rec
   assert.deepEqual(drug.materialErrors, []);
   if (drug.status === 'deployed') {
    assert.match(drug.commit || '', /^[a-f0-9]{40}$/);
-   assert.equal(drug.deployment?.commit, drug.commit);
+   assert.equal(drug.remoteReceipt?.commit, drug.commit);
+   assert.match(drug.publicationCommit || '', /^[a-f0-9]{40}$/);
+   assert.equal(drug.deployment?.commit, drug.publicationCommit);
    assert.equal(drug.deployment?.status, 'verified');
+   assert.equal(drug.deployment?.context, 'production');
+   assert.ok(drug.deployment?.publishedAt);
+   assert.ok(drug.deployment?.hostReceipt);
+   assert.equal(drug.deployment?.liveRoutes, 'passed');
   }
  }
 });

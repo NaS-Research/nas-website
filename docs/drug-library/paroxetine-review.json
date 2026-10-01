@@ -1,0 +1,1465 @@
+{
+  "drug": "paroxetine",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Current U.S. Paxil IR tablets, Paxil CR tablets and Brisdelle VMS capsule; product-specific clinical scope and safety.",
+  "blueprint": {
+    "sections": [
+      [
+        "indications",
+        "Indications"
+      ],
+      [
+        "dosage",
+        "Dosage and administration"
+      ],
+      [
+        "safety",
+        "Safety"
+      ],
+      [
+        "interactions",
+        "Drug interactions"
+      ],
+      [
+        "populations",
+        "Use in specific populations"
+      ],
+      [
+        "pharmacology",
+        "Clinical pharmacology"
+      ],
+      [
+        "practice",
+        "Monitoring and counseling"
+      ],
+      [
+        "product",
+        "Product identification"
+      ]
+    ],
+    "essential_safety": true,
+    "hero_facts": 3,
+    "APAP_modified": false
+  },
+  "sources": [
+    {
+      "id": "ir",
+      "title": "Paxil \u00b7 Current full prescribing information",
+      "publisher": "Apotex / DailyMed",
+      "note": "Clinical Medication Guide revision November 2024; current SPL12 effective September 16, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ef3b5cbe-f9e1-c1ac-79da-cfe14e3a7e7e"
+    },
+    {
+      "id": "cr",
+      "title": "Paxil CR \u00b7 Current full prescribing information",
+      "publisher": "Apotex / DailyMed",
+      "note": "Current SPL33 effective September 16, 2026; formulation-specific dose and indication tables.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=483bd97f-c4d0-4e23-aaa8-6334f4471e0c"
+    },
+    {
+      "id": "vms",
+      "title": "Brisdelle \u00b7 Current full prescribing information",
+      "publisher": "Legacy Pharma / DailyMed",
+      "note": "Medication Guide revised February 2025; SPL2 effective April 28, 2025.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=502311b3-b617-4cbd-a3ab-a60f2c62880a"
+    }
+  ],
+  "source_records": [
+    {
+      "id": "ir",
+      "local_snapshot": "/tmp/nas-drug-sources/paxil.xml",
+      "label_revision": "Medication Guide 11/2024; independent PI header date not established",
+      "set_id": "ef3b5cbe-f9e1-c1ac-79da-cfe14e3a7e7e",
+      "spl_version": "12",
+      "spl_effective_time": "20260916",
+      "dailymed_published_date": null,
+      "sha256": "55154f6658122cbba946a5b0e254951111152580060c2d57789c22c6b36c037f",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed."
+    },
+    {
+      "id": "cr",
+      "local_snapshot": "/tmp/nas-drug-sources/paxilcr.xml",
+      "label_revision": "No explicit clinical revision date identified in retained XML",
+      "set_id": "483bd97f-c4d0-4e23-aaa8-6334f4471e0c",
+      "spl_version": "33",
+      "spl_effective_time": "20260916",
+      "dailymed_published_date": null,
+      "sha256": "1b08bca7dba0eaa38a9c18f59cca83a38bc5bfa97a23bd28a85405771781d723",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed."
+    },
+    {
+      "id": "vms",
+      "local_snapshot": "/tmp/nas-drug-sources/brisdelle.xml",
+      "label_revision": "Medication Guide 02/2025; independent PI header date not established",
+      "set_id": "502311b3-b617-4cbd-a3ab-a60f2c62880a",
+      "spl_version": "2",
+      "spl_effective_time": "20250428",
+      "dailymed_published_date": null,
+      "sha256": "657519393413ef87aebe0426520221b159a32c2e98bbb0f08e2f3278515afd66",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed."
+    }
+  ],
+  "assertion_map": [
+    {
+      "section": "indications",
+      "card": "Immediate-release psychiatric uses",
+      "assertions": [
+        "Paxil IR is indicated in adults for major depressive disorder (MDD), obsessive-compulsive disorder (OCD), panic disorder (PD), social anxiety disorder (SAD), generalized anxiety disorder (GAD) and posttraumatic stress disorder (PTSD). Pediatric approval is not established."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "1; 8.4"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Controlled-release uses",
+      "assertions": [
+        "Paxil CR is approved in adults for MDD, PD, SAD and premenstrual dysphoric disorder (PMDD). Its label does not add IR\u2019s OCD, GAD or PTSD indications."
+      ],
+      "sources": [
+        {
+          "id": "cr",
+          "sections": "1; 8.4"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Menopause-specific product and scope",
+      "assertions": [
+        "Brisdelle treats moderate to severe vasomotor symptoms associated with menopause. It is not indicated for psychiatric conditions; a patient needing psychiatric paroxetine treatment needs an appropriately indicated product instead, not simultaneous duplicate paroxetine. Other generics/salts require their own current formulation label."
+      ],
+      "sources": [
+        {
+          "id": "vms",
+          "sections": "1; Medication Guide"
+        },
+        {
+          "id": "ir",
+          "sections": "3; 11"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Paxil IR adult dosing",
+      "assertions": [
+        "Take once daily in the morning, with or without food. Where indicated and tolerated, titrate by 10 mg/day at intervals of at least 1 week. For SAD and GAD, 20 mg/day is the recommended dose; studied higher doses did not establish additional benefit above 20 mg. The studied ranges are not universal targets."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "2.1\u20132.3"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Adult indication",
+          "Starting daily dose",
+          "Labeled maximum / dose context"
+        ],
+        "rows": [
+          [
+            "MDD",
+            "20 mg",
+            "50 mg"
+          ],
+          [
+            "OCD",
+            "20 mg",
+            "60 mg"
+          ],
+          [
+            "PD",
+            "10 mg",
+            "60 mg"
+          ],
+          [
+            "PTSD",
+            "20 mg",
+            "50 mg"
+          ],
+          [
+            "SAD",
+            "20 mg",
+            "Recommended 20 mg; studied 20\u201360 mg"
+          ],
+          [
+            "GAD",
+            "20 mg",
+            "Recommended 20 mg; studied 20\u201350 mg"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Paxil CR adult dosing",
+      "assertions": [
+        "Take once daily in the morning with or without food; swallow whole without chewing or crushing. Increase by 12.5 mg/day at intervals of at least 1 week if needed/tolerated. PMDD may be treated continuously or during the luteal phase, starting 14 days before anticipated menstruation and continuing through onset of menses, repeated each cycle."
+      ],
+      "sources": [
+        {
+          "id": "cr",
+          "sections": "2.1\u20132.3"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Adult indication",
+          "Starting daily dose",
+          "Maximum daily dose"
+        ],
+        "rows": [
+          [
+            "MDD",
+            "25 mg",
+            "62.5 mg"
+          ],
+          [
+            "PD",
+            "12.5 mg",
+            "75 mg"
+          ],
+          [
+            "SAD",
+            "12.5 mg",
+            "37.5 mg"
+          ],
+          [
+            "PMDD",
+            "12.5 mg",
+            "25 mg"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Older age and severe organ impairment",
+      "assertions": [
+        "For elderly patients or severe renal/hepatic impairment, start IR at 10 mg/day and do not exceed 40 mg/day. For CR, start 12.5 mg/day, lengthen titration intervals if needed, and do not exceed 50 mg/day for MDD/PD or 37.5 mg/day for SAD. The ordinary PMDD maximum remains 25 mg/day; no higher organ-impairment PMDD maximum is inferred. Exposure increases with organ impairment."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "2.5; 8.5\u20138.6; 12.3"
+        },
+        {
+          "id": "cr",
+          "sections": "2.3; 2.5; 8.5\u20138.6; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Brisdelle dosing",
+      "assertions": [
+        "For menopause-related VMS, take 7.5 mg orally once daily at bedtime, with or without food. Its label keeps this same dose in older patients and in renal/hepatic impairment despite increased exposure. Do not raise it to psychiatric doses or apply the IR/CR adjustment tables to this capsule."
+      ],
+      "sources": [
+        {
+          "id": "vms",
+          "sections": "2.1; 8.5\u20138.7; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "MAOI separation and discontinuation",
+      "assertions": [
+        "Allow at least 14 days between stopping an MAOI antidepressant and starting paroxetine, and at least 14 days after paroxetine before starting an MAOI. Linezolid or IV methylene blue exposure requires clinician management. Gradually reduce Paxil IR/CR rather than stopping abruptly whenever possible; tapering is individualized, not a single mandatory schedule. Discuss any Brisdelle stop or product switch with the prescriber."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "2.6\u20132.7; 5.2; 5.7"
+        },
+        {
+          "id": "cr",
+          "sections": "2.6\u20132.7; 5.2; 5.7"
+        },
+        {
+          "id": "vms",
+          "sections": "2.2; 5.2; Medication Guide"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Assess bipolar/mania history before treatment and monitor worsening mood or suicidal behavior, especially initially and after dose changes. Serotonin syndrome may present with agitation/confusion, fever, sweating, unstable pulse/pressure, tremor, rigidity or diarrhea; stop implicated treatment and obtain urgent evaluation if suspected.",
+        "Monitor abnormal bleeding, symptomatic low sodium, mania and seizures. Older age, diuretics and volume depletion increase hyponatremia risk. Severe confusion, fainting or seizures needs urgent care. Untreated narrow anterior chamber angles can predispose to acute angle closure; painful red eye/vision change warrants immediate assessment.",
+        "Discuss sexual dysfunction and fracture-risk context; an observed association does not establish paroxetine as the sole cause of a fracture. Abrupt psychiatric-product cessation can cause dizziness, electric-shock sensations, anxiety, insomnia and other withdrawal symptoms. Pregnancy planning and tamoxifen use require an active treatment review."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "5; 7; 17"
+        },
+        {
+          "id": "cr",
+          "sections": "5; 7; 17"
+        },
+        {
+          "id": "vms",
+          "sections": "5; 7; 17"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "All three reviewed products contraindicate MAOI use or use within 14 days of stopping an MAOI, thioridazine, pimozide and known paroxetine/excipient hypersensitivity. Brisdelle additionally contraindicates pregnancy. Pregnancy is a significant risk consideration for IR/CR but is not listed as their formal contraindication."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "4"
+        },
+        {
+          "id": "cr",
+          "sections": "4"
+        },
+        {
+          "id": "vms",
+          "sections": "4"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning: suicidal thoughts and behaviors",
+      "assertions": [
+        "The reviewed labels carry a boxed warning about increased suicidal thoughts/behaviors with antidepressants in pediatric and young adult patients and the need for close monitoring. IR/CR are not pediatric-approved; Brisdelle is not psychiatric- or pediatric-approved and still requires monitoring for emergent suicidality in its treated menopause population."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "Boxed Warning; 5.1"
+        },
+        {
+          "id": "cr",
+          "sections": "Boxed Warning; 5.1"
+        },
+        {
+          "id": "vms",
+          "sections": "Boxed Warning; 5.1"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Psychiatric formulations commonly cause nausea, somnolence or insomnia, sweating, dry mouth, GI disturbance and sexual adverse effects. Brisdelle\u2019s common trial reactions include headache, fatigue and nausea/vomiting. Serious events include serotonin syndrome, severe allergy, bleeding, hyponatremia, mania, seizures and angle closure; event rates from separate trials cannot be compared directly."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "6.1\u20136.2"
+        },
+        {
+          "id": "cr",
+          "sections": "6.1\u20136.2"
+        },
+        {
+          "id": "vms",
+          "sections": "6.1\u20136.2"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "CYP2D6 and QT-related combinations",
+      "assertions": [
+        "Paroxetine inhibits CYP2D6 and can increase substrate exposure, including metoprolol, atomoxetine, flecainide and some antipsychotics/TCAs. Monitor and adjust the affected drug when starting or stopping paroxetine. Thioridazine/pimozide combinations are contraindicated because increased exposure can cause QT prolongation and ventricular arrhythmia. Do not generalize that restriction into an unsupported universal QT-dose limit."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "4; 5.3; 7; 12.3"
+        },
+        {
+          "id": "cr",
+          "sections": "4; 5.3; 7; 12.3"
+        },
+        {
+          "id": "vms",
+          "sections": "4; 7.1; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Tamoxifen",
+      "assertions": [
+        "CYP2D6 inhibition may lower active endoxifen exposure and impair tamoxifen effectiveness. IR/CR labels advise considering an alternative antidepressant with little/no CYP2D6 inhibition. For Brisdelle, weigh VMS benefit against possible reduced tamoxifen effectiveness; do not assume 7.5 mg eliminates the interaction."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "5.11; 7"
+        },
+        {
+          "id": "cr",
+          "sections": "5.11; 7"
+        },
+        {
+          "id": "vms",
+          "sections": "5.3; 7.1"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Serotonergic agents and hemostasis",
+      "assertions": [
+        "Other SSRIs/SNRIs, triptans, tramadol/fentanyl and other relevant opioids, lithium, buspirone, amphetamines and St. John\u2019s wort increase serotonin-syndrome risk. NSAIDs, aspirin, antiplatelet drugs and anticoagulants add bleeding risk; monitor INR carefully with warfarin. Avoid duplicate paroxetine products."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "5.2; 5.5; 7"
+        },
+        {
+          "id": "cr",
+          "sections": "5.2; 5.5; 7"
+        },
+        {
+          "id": "vms",
+          "sections": "5.2; 5.4; 7.3; Medication Guide"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Other exposure changes",
+      "assertions": [
+        "Review cimetidine, enzyme-modifying anticonvulsants and HIV medicines against the exact product label. Fosamprenavir/ritonavir can reduce paroxetine exposure; any IR/CR adjustment must follow response/tolerability. Monitor theophylline concentrations when combined. Brisdelle also describes digoxin interactions; do not transplant study doses from higher-dose paroxetine into a VMS regimen."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "7; 12.3"
+        },
+        {
+          "id": "cr",
+          "sections": "7; 12.3"
+        },
+        {
+          "id": "vms",
+          "sections": "7.1\u20137.2; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy",
+      "assertions": [
+        "IR/CR labels report an association with cardiovascular malformations after first-trimester exposure, neonatal adaptation/PPHN risks and postpartum bleeding. For planned pregnancy/first trimester, consider available alternatives before initiation. Changing established psychiatric treatment requires individualized assessment of relapse risk. Brisdelle is contraindicated during pregnancy and should be reviewed immediately if pregnancy occurs."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "5.4\u20135.5; 8.1"
+        },
+        {
+          "id": "cr",
+          "sections": "5.4\u20135.5; 8.1"
+        },
+        {
+          "id": "vms",
+          "sections": "4; 8.1"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Breastfeeding and reproductive considerations",
+      "assertions": [
+        "Current IR/CR labels describe paroxetine in milk and require monitoring infant irritability/agitation, feeding and weight gain while weighing maternal need and breastfeeding benefits. They do not establish universal infant safety. The retained Brisdelle SPL does not provide a substantive lactation section; do not infer a product-specific recommendation from its lower dose. Paroxetine may affect sperm quality; reversibility is uncertain."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "8.2\u20138.3"
+        },
+        {
+          "id": "cr",
+          "sections": "8.2\u20138.3"
+        },
+        {
+          "id": "vms",
+          "sections": "8; complete retained SPL"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children, older adults and organ disease",
+      "assertions": [
+        "Pediatric safety/effectiveness are not established for these products. Older patients have increased exposure and sodium/fall vulnerability. Severe renal/hepatic impairment requires the IR/CR modifications; Brisdelle retains its fixed 7.5 mg dose. Organ-disease monitoring remains necessary despite the absence of a Brisdelle dose reduction."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "8.4\u20138.6"
+        },
+        {
+          "id": "cr",
+          "sections": "8.4\u20138.6"
+        },
+        {
+          "id": "vms",
+          "sections": "8.4\u20138.7"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "assertions": [
+        "Psychiatric benefit is thought to relate to inhibition of neuronal serotonin reuptake; the exact therapeutic mechanism is not established. Brisdelle is not estrogen, and its mechanism for menopausal VMS is unknown."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "12.1\u201312.2"
+        },
+        {
+          "id": "cr",
+          "sections": "12.1\u201312.2"
+        },
+        {
+          "id": "vms",
+          "sections": "12.1"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Absorption and disposition",
+      "assertions": [
+        "IR\u2019s reported mean elimination half-life is about 21 hours after repeated 30 mg/day dosing; CR single-dose half-life is about 15\u201320 hours, with peak levels typically 6\u201310 hours after dosing. CR\u2019s matrix/enteric coating delays and controls release. These study values are not exact durations of clinical benefit for every patient."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "12.3"
+        },
+        {
+          "id": "cr",
+          "sections": "12.3"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Metabolism and accumulation",
+      "assertions": [
+        "Extensive metabolism partly through saturable CYP2D6 produces nonlinear accumulation; metabolites are much less active and eliminated mainly in urine, with additional fecal elimination. Brisdelle studies reached steady state around 12 days in most participants, with substantial variability. Renal/hepatic impairment can increase exposure despite mainly metabolic clearance."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "12.3"
+        },
+        {
+          "id": "cr",
+          "sections": "12.3"
+        },
+        {
+          "id": "vms",
+          "sections": "12.3"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Before starting and during follow-up",
+      "assertions": [
+        "Confirm indication and formulation, bipolar/mania history, suicidality, pregnancy plans, organ function, sodium risk and all medicines/supplements. Follow psychiatric or VMS benefit, sexual function, sleep, GI tolerance and bleeding. Check sodium when clinical risk or symptoms warrant, and INR/theophylline or interacting-drug response when applicable."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "5; 7; 17"
+        },
+        {
+          "id": "cr",
+          "sections": "5; 7; 17"
+        },
+        {
+          "id": "vms",
+          "sections": "5; 7; 17"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Patient and caregiver counseling",
+      "assertions": [
+        "Read the product Medication Guide. Seek urgent care for suicidal intent, severe serotonin-toxicity symptoms, seizure, serious allergy or painful eye/vision change. Report unusual bruising, confusion, unsteadiness and sexual effects. Avoid driving until effects are known; discuss alcohol and sedating agents. Never double up paroxetine products or stop a psychiatric formulation abruptly."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "5; 7; 17"
+        },
+        {
+          "id": "cr",
+          "sections": "5; 7; 17"
+        },
+        {
+          "id": "vms",
+          "sections": "5; 7; 17"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Formulation-specific handling",
+      "assertions": [
+        "CR must remain intact. The Paxil label describes a 10 mg/5 mL suspension but explicitly states it is not currently marketed; a dispensed generic liquid needs its own concentration and dosing device verified. Brisdelle is taken at bedtime and is not a replacement for a psychiatric dose."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "2.1; 3"
+        },
+        {
+          "id": "cr",
+          "sections": "2.1"
+        },
+        {
+          "id": "vms",
+          "sections": "1; 2.1; Medication Guide"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Current Paxil 20 mg is a pink scored tablet marked PAXIL/20 (30-count NDC 60505-4518-3). Current Paxil CR 12.5 mg is yellow, round and marked 12.5 (NDC 60505-4377-3). Brisdelle 7.5 mg is a pink capsule marked BRISDELLE/7.5 mg, NDC 83107-027-30, manufactured for Legacy Pharma. Confirm the actual package before dispensing."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "3; 16"
+        },
+        {
+          "id": "cr",
+          "sections": "3; 16"
+        },
+        {
+          "id": "vms",
+          "sections": "3; 16; manufacturer footer"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Reviewed oral forms: Paxil IR 10, 20, 30 and 40 mg tablets; Paxil CR 12.5, 25 and 37.5 mg extended-release tablets; Brisdelle 7.5 mg capsules. Paxil/CR use hydrochloride, Brisdelle mesylate; doses are expressed as paroxetine. The Paxil highlights incorrectly call its 10\u201340 mg tablets extended-release, while its full formulation section distinguishes them from Paxil CR. This profile follows the full sections. No availability or dosing claim is made for unreviewed Pexeva or generic liquids."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "3; 11"
+        },
+        {
+          "id": "cr",
+          "sections": "3; 11"
+        },
+        {
+          "id": "vms",
+          "sections": "3; 11"
+        },
+        {
+          "id": "ir",
+          "sections": "Highlights\u00a73 versus full\u00a73/11 formulation distinction"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Paxil tablets: 15\u201330\u00b0C in a tight light-resistant container. Current Paxil CR PI uses controlled room-temperature 20\u201325\u00b0C with 15\u201330\u00b0C excursions; its printed Fahrenheit excursion endpoint contains an apparent typo, so use the source\u2019s Celsius values. Brisdelle: 20\u201325\u00b0C with permitted 15\u201330\u00b0C excursions; protect from light/humidity. Keep out of children\u2019s reach."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "16; Medication Guide"
+        },
+        {
+          "id": "cr",
+          "sections": "16; Medication Guide"
+        },
+        {
+          "id": "vms",
+          "sections": "16; Medication Guide"
+        }
+      ]
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Immediate-release psychiatric uses",
+      "assertions": [
+        "Paxil IR is indicated in adults for major depressive disorder (MDD), obsessive-compulsive disorder (OCD), panic disorder (PD), social anxiety disorder (SAD), generalized anxiety disorder (GAD) and posttraumatic stress disorder (PTSD). Pediatric approval is not established."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "1; 8.4"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Controlled-release uses",
+      "assertions": [
+        "Paxil CR is approved in adults for MDD, PD, SAD and premenstrual dysphoric disorder (PMDD). Its label does not add IR\u2019s OCD, GAD or PTSD indications."
+      ],
+      "sources": [
+        {
+          "id": "cr",
+          "sections": "1; 8.4"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Menopause-specific product and scope",
+      "assertions": [
+        "Brisdelle treats moderate to severe vasomotor symptoms associated with menopause. It is not indicated for psychiatric conditions; a patient needing psychiatric paroxetine treatment needs an appropriately indicated product instead, not simultaneous duplicate paroxetine. Other generics/salts require their own current formulation label."
+      ],
+      "sources": [
+        {
+          "id": "vms",
+          "sections": "1; Medication Guide"
+        },
+        {
+          "id": "ir",
+          "sections": "3; 11"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Paxil IR adult dosing",
+      "assertions": [
+        "Take once daily in the morning, with or without food. Where indicated and tolerated, titrate by 10 mg/day at intervals of at least 1 week. For SAD and GAD, 20 mg/day is the recommended dose; studied higher doses did not establish additional benefit above 20 mg. The studied ranges are not universal targets."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "2.1\u20132.3"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Adult indication",
+          "Starting daily dose",
+          "Labeled maximum / dose context"
+        ],
+        "rows": [
+          [
+            "MDD",
+            "20 mg",
+            "50 mg"
+          ],
+          [
+            "OCD",
+            "20 mg",
+            "60 mg"
+          ],
+          [
+            "PD",
+            "10 mg",
+            "60 mg"
+          ],
+          [
+            "PTSD",
+            "20 mg",
+            "50 mg"
+          ],
+          [
+            "SAD",
+            "20 mg",
+            "Recommended 20 mg; studied 20\u201360 mg"
+          ],
+          [
+            "GAD",
+            "20 mg",
+            "Recommended 20 mg; studied 20\u201350 mg"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Paxil CR adult dosing",
+      "assertions": [
+        "Take once daily in the morning with or without food; swallow whole without chewing or crushing. Increase by 12.5 mg/day at intervals of at least 1 week if needed/tolerated. PMDD may be treated continuously or during the luteal phase, starting 14 days before anticipated menstruation and continuing through onset of menses, repeated each cycle."
+      ],
+      "sources": [
+        {
+          "id": "cr",
+          "sections": "2.1\u20132.3"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Adult indication",
+          "Starting daily dose",
+          "Maximum daily dose"
+        ],
+        "rows": [
+          [
+            "MDD",
+            "25 mg",
+            "62.5 mg"
+          ],
+          [
+            "PD",
+            "12.5 mg",
+            "75 mg"
+          ],
+          [
+            "SAD",
+            "12.5 mg",
+            "37.5 mg"
+          ],
+          [
+            "PMDD",
+            "12.5 mg",
+            "25 mg"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Older age and severe organ impairment",
+      "assertions": [
+        "For elderly patients or severe renal/hepatic impairment, start IR at 10 mg/day and do not exceed 40 mg/day. For CR, start 12.5 mg/day, lengthen titration intervals if needed, and do not exceed 50 mg/day for MDD/PD or 37.5 mg/day for SAD. The ordinary PMDD maximum remains 25 mg/day; no higher organ-impairment PMDD maximum is inferred. Exposure increases with organ impairment."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "2.5; 8.5\u20138.6; 12.3"
+        },
+        {
+          "id": "cr",
+          "sections": "2.3; 2.5; 8.5\u20138.6; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Brisdelle dosing",
+      "assertions": [
+        "For menopause-related VMS, take 7.5 mg orally once daily at bedtime, with or without food. Its label keeps this same dose in older patients and in renal/hepatic impairment despite increased exposure. Do not raise it to psychiatric doses or apply the IR/CR adjustment tables to this capsule."
+      ],
+      "sources": [
+        {
+          "id": "vms",
+          "sections": "2.1; 8.5\u20138.7; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "MAOI separation and discontinuation",
+      "assertions": [
+        "Allow at least 14 days between stopping an MAOI antidepressant and starting paroxetine, and at least 14 days after paroxetine before starting an MAOI. Linezolid or IV methylene blue exposure requires clinician management. Gradually reduce Paxil IR/CR rather than stopping abruptly whenever possible; tapering is individualized, not a single mandatory schedule. Discuss any Brisdelle stop or product switch with the prescriber."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "2.6\u20132.7; 5.2; 5.7"
+        },
+        {
+          "id": "cr",
+          "sections": "2.6\u20132.7; 5.2; 5.7"
+        },
+        {
+          "id": "vms",
+          "sections": "2.2; 5.2; Medication Guide"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Assess bipolar/mania history before treatment and monitor worsening mood or suicidal behavior, especially initially and after dose changes. Serotonin syndrome may present with agitation/confusion, fever, sweating, unstable pulse/pressure, tremor, rigidity or diarrhea; stop implicated treatment and obtain urgent evaluation if suspected.",
+        "Monitor abnormal bleeding, symptomatic low sodium, mania and seizures. Older age, diuretics and volume depletion increase hyponatremia risk. Severe confusion, fainting or seizures needs urgent care. Untreated narrow anterior chamber angles can predispose to acute angle closure; painful red eye/vision change warrants immediate assessment.",
+        "Discuss sexual dysfunction and fracture-risk context; an observed association does not establish paroxetine as the sole cause of a fracture. Abrupt psychiatric-product cessation can cause dizziness, electric-shock sensations, anxiety, insomnia and other withdrawal symptoms. Pregnancy planning and tamoxifen use require an active treatment review."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "5; 7; 17"
+        },
+        {
+          "id": "cr",
+          "sections": "5; 7; 17"
+        },
+        {
+          "id": "vms",
+          "sections": "5; 7; 17"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "All three reviewed products contraindicate MAOI use or use within 14 days of stopping an MAOI, thioridazine, pimozide and known paroxetine/excipient hypersensitivity. Brisdelle additionally contraindicates pregnancy. Pregnancy is a significant risk consideration for IR/CR but is not listed as their formal contraindication."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "4"
+        },
+        {
+          "id": "cr",
+          "sections": "4"
+        },
+        {
+          "id": "vms",
+          "sections": "4"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning: suicidal thoughts and behaviors",
+      "assertions": [
+        "The reviewed labels carry a boxed warning about increased suicidal thoughts/behaviors with antidepressants in pediatric and young adult patients and the need for close monitoring. IR/CR are not pediatric-approved; Brisdelle is not psychiatric- or pediatric-approved and still requires monitoring for emergent suicidality in its treated menopause population."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "Boxed Warning; 5.1"
+        },
+        {
+          "id": "cr",
+          "sections": "Boxed Warning; 5.1"
+        },
+        {
+          "id": "vms",
+          "sections": "Boxed Warning; 5.1"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Psychiatric formulations commonly cause nausea, somnolence or insomnia, sweating, dry mouth, GI disturbance and sexual adverse effects. Brisdelle\u2019s common trial reactions include headache, fatigue and nausea/vomiting. Serious events include serotonin syndrome, severe allergy, bleeding, hyponatremia, mania, seizures and angle closure; event rates from separate trials cannot be compared directly."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "6.1\u20136.2"
+        },
+        {
+          "id": "cr",
+          "sections": "6.1\u20136.2"
+        },
+        {
+          "id": "vms",
+          "sections": "6.1\u20136.2"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "CYP2D6 and QT-related combinations",
+      "assertions": [
+        "Paroxetine inhibits CYP2D6 and can increase substrate exposure, including metoprolol, atomoxetine, flecainide and some antipsychotics/TCAs. Monitor and adjust the affected drug when starting or stopping paroxetine. Thioridazine/pimozide combinations are contraindicated because increased exposure can cause QT prolongation and ventricular arrhythmia. Do not generalize that restriction into an unsupported universal QT-dose limit."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "4; 5.3; 7; 12.3"
+        },
+        {
+          "id": "cr",
+          "sections": "4; 5.3; 7; 12.3"
+        },
+        {
+          "id": "vms",
+          "sections": "4; 7.1; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Tamoxifen",
+      "assertions": [
+        "CYP2D6 inhibition may lower active endoxifen exposure and impair tamoxifen effectiveness. IR/CR labels advise considering an alternative antidepressant with little/no CYP2D6 inhibition. For Brisdelle, weigh VMS benefit against possible reduced tamoxifen effectiveness; do not assume 7.5 mg eliminates the interaction."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "5.11; 7"
+        },
+        {
+          "id": "cr",
+          "sections": "5.11; 7"
+        },
+        {
+          "id": "vms",
+          "sections": "5.3; 7.1"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Serotonergic agents and hemostasis",
+      "assertions": [
+        "Other SSRIs/SNRIs, triptans, tramadol/fentanyl and other relevant opioids, lithium, buspirone, amphetamines and St. John\u2019s wort increase serotonin-syndrome risk. NSAIDs, aspirin, antiplatelet drugs and anticoagulants add bleeding risk; monitor INR carefully with warfarin. Avoid duplicate paroxetine products."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "5.2; 5.5; 7"
+        },
+        {
+          "id": "cr",
+          "sections": "5.2; 5.5; 7"
+        },
+        {
+          "id": "vms",
+          "sections": "5.2; 5.4; 7.3; Medication Guide"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Other exposure changes",
+      "assertions": [
+        "Review cimetidine, enzyme-modifying anticonvulsants and HIV medicines against the exact product label. Fosamprenavir/ritonavir can reduce paroxetine exposure; any IR/CR adjustment must follow response/tolerability. Monitor theophylline concentrations when combined. Brisdelle also describes digoxin interactions; do not transplant study doses from higher-dose paroxetine into a VMS regimen."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "7; 12.3"
+        },
+        {
+          "id": "cr",
+          "sections": "7; 12.3"
+        },
+        {
+          "id": "vms",
+          "sections": "7.1\u20137.2; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy",
+      "assertions": [
+        "IR/CR labels report an association with cardiovascular malformations after first-trimester exposure, neonatal adaptation/PPHN risks and postpartum bleeding. For planned pregnancy/first trimester, consider available alternatives before initiation. Changing established psychiatric treatment requires individualized assessment of relapse risk. Brisdelle is contraindicated during pregnancy and should be reviewed immediately if pregnancy occurs."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "5.4\u20135.5; 8.1"
+        },
+        {
+          "id": "cr",
+          "sections": "5.4\u20135.5; 8.1"
+        },
+        {
+          "id": "vms",
+          "sections": "4; 8.1"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Breastfeeding and reproductive considerations",
+      "assertions": [
+        "Current IR/CR labels describe paroxetine in milk and require monitoring infant irritability/agitation, feeding and weight gain while weighing maternal need and breastfeeding benefits. They do not establish universal infant safety. The retained Brisdelle SPL does not provide a substantive lactation section; do not infer a product-specific recommendation from its lower dose. Paroxetine may affect sperm quality; reversibility is uncertain."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "8.2\u20138.3"
+        },
+        {
+          "id": "cr",
+          "sections": "8.2\u20138.3"
+        },
+        {
+          "id": "vms",
+          "sections": "8; complete retained SPL"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children, older adults and organ disease",
+      "assertions": [
+        "Pediatric safety/effectiveness are not established for these products. Older patients have increased exposure and sodium/fall vulnerability. Severe renal/hepatic impairment requires the IR/CR modifications; Brisdelle retains its fixed 7.5 mg dose. Organ-disease monitoring remains necessary despite the absence of a Brisdelle dose reduction."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "8.4\u20138.6"
+        },
+        {
+          "id": "cr",
+          "sections": "8.4\u20138.6"
+        },
+        {
+          "id": "vms",
+          "sections": "8.4\u20138.7"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "assertions": [
+        "Psychiatric benefit is thought to relate to inhibition of neuronal serotonin reuptake; the exact therapeutic mechanism is not established. Brisdelle is not estrogen, and its mechanism for menopausal VMS is unknown."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "12.1\u201312.2"
+        },
+        {
+          "id": "cr",
+          "sections": "12.1\u201312.2"
+        },
+        {
+          "id": "vms",
+          "sections": "12.1"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Absorption and disposition",
+      "assertions": [
+        "IR\u2019s reported mean elimination half-life is about 21 hours after repeated 30 mg/day dosing; CR single-dose half-life is about 15\u201320 hours, with peak levels typically 6\u201310 hours after dosing. CR\u2019s matrix/enteric coating delays and controls release. These study values are not exact durations of clinical benefit for every patient."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "12.3"
+        },
+        {
+          "id": "cr",
+          "sections": "12.3"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Metabolism and accumulation",
+      "assertions": [
+        "Extensive metabolism partly through saturable CYP2D6 produces nonlinear accumulation; metabolites are much less active and eliminated mainly in urine, with additional fecal elimination. Brisdelle studies reached steady state around 12 days in most participants, with substantial variability. Renal/hepatic impairment can increase exposure despite mainly metabolic clearance."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "12.3"
+        },
+        {
+          "id": "cr",
+          "sections": "12.3"
+        },
+        {
+          "id": "vms",
+          "sections": "12.3"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Before starting and during follow-up",
+      "assertions": [
+        "Confirm indication and formulation, bipolar/mania history, suicidality, pregnancy plans, organ function, sodium risk and all medicines/supplements. Follow psychiatric or VMS benefit, sexual function, sleep, GI tolerance and bleeding. Check sodium when clinical risk or symptoms warrant, and INR/theophylline or interacting-drug response when applicable."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "5; 7; 17"
+        },
+        {
+          "id": "cr",
+          "sections": "5; 7; 17"
+        },
+        {
+          "id": "vms",
+          "sections": "5; 7; 17"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Patient and caregiver counseling",
+      "assertions": [
+        "Read the product Medication Guide. Seek urgent care for suicidal intent, severe serotonin-toxicity symptoms, seizure, serious allergy or painful eye/vision change. Report unusual bruising, confusion, unsteadiness and sexual effects. Avoid driving until effects are known; discuss alcohol and sedating agents. Never double up paroxetine products or stop a psychiatric formulation abruptly."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "5; 7; 17"
+        },
+        {
+          "id": "cr",
+          "sections": "5; 7; 17"
+        },
+        {
+          "id": "vms",
+          "sections": "5; 7; 17"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Formulation-specific handling",
+      "assertions": [
+        "CR must remain intact. The Paxil label describes a 10 mg/5 mL suspension but explicitly states it is not currently marketed; a dispensed generic liquid needs its own concentration and dosing device verified. Brisdelle is taken at bedtime and is not a replacement for a psychiatric dose."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "2.1; 3"
+        },
+        {
+          "id": "cr",
+          "sections": "2.1"
+        },
+        {
+          "id": "vms",
+          "sections": "1; 2.1; Medication Guide"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Current Paxil 20 mg is a pink scored tablet marked PAXIL/20 (30-count NDC 60505-4518-3). Current Paxil CR 12.5 mg is yellow, round and marked 12.5 (NDC 60505-4377-3). Brisdelle 7.5 mg is a pink capsule marked BRISDELLE/7.5 mg, NDC 83107-027-30, manufactured for Legacy Pharma. Confirm the actual package before dispensing."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "3; 16"
+        },
+        {
+          "id": "cr",
+          "sections": "3; 16"
+        },
+        {
+          "id": "vms",
+          "sections": "3; 16; manufacturer footer"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Reviewed oral forms: Paxil IR 10, 20, 30 and 40 mg tablets; Paxil CR 12.5, 25 and 37.5 mg extended-release tablets; Brisdelle 7.5 mg capsules. Paxil/CR use hydrochloride, Brisdelle mesylate; doses are expressed as paroxetine. The Paxil highlights incorrectly call its 10\u201340 mg tablets extended-release, while its full formulation section distinguishes them from Paxil CR. This profile follows the full sections. No availability or dosing claim is made for unreviewed Pexeva or generic liquids."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "3; 11"
+        },
+        {
+          "id": "cr",
+          "sections": "3; 11"
+        },
+        {
+          "id": "vms",
+          "sections": "3; 11"
+        },
+        {
+          "id": "ir",
+          "sections": "Highlights\u00a73 versus full\u00a73/11 formulation distinction"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Paxil tablets: 15\u201330\u00b0C in a tight light-resistant container. Current Paxil CR PI uses controlled room-temperature 20\u201325\u00b0C with 15\u201330\u00b0C excursions; its printed Fahrenheit excursion endpoint contains an apparent typo, so use the source\u2019s Celsius values. Brisdelle: 20\u201325\u00b0C with permitted 15\u201330\u00b0C excursions; protect from light/humidity. Keep out of children\u2019s reach."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "16; Medication Guide"
+        },
+        {
+          "id": "cr",
+          "sections": "16; Medication Guide"
+        },
+        {
+          "id": "vms",
+          "sections": "16; Medication Guide"
+        }
+      ]
+    }
+  ],
+  "hero_assertions": {
+    "essential": {
+      "title": "Monitor mood and serotonin toxicity",
+      "text": "Watch for suicidal thoughts, serotonin syndrome, bleeding and low sodium. Review interacting drugs, pregnancy plans and the exact formulation; do not abruptly stop psychiatric treatment.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "facts": [
+      [
+        "Drug class",
+        "SSRI"
+      ],
+      [
+        "Reviewed forms",
+        "IR \u00b7 CR \u00b7 VMS capsule"
+      ],
+      [
+        "Pediatric status",
+        "Not approved"
+      ]
+    ],
+    "sources": [
+      "ir",
+      "cr",
+      "vms"
+    ]
+  },
+  "section_assertions": [
+    {
+      "section": "indications",
+      "summary": "Paroxetine\u2019s approved uses depend on the release form and product.",
+      "takeaway": "The menopause capsule is not a psychiatric-treatment substitute.",
+      "sources": [
+        "cr",
+        "ir",
+        "vms"
+      ]
+    },
+    {
+      "section": "dosage",
+      "summary": "Use the indication-specific formulation table and lower-dose organ/age rules.",
+      "takeaway": "IR and CR milligram doses should not be exchanged without a prescribed conversion.",
+      "sources": [
+        "cr",
+        "ir",
+        "vms"
+      ]
+    },
+    {
+      "section": "safety",
+      "summary": "Mood changes, serotonin toxicity, bleeding and hyponatremia require surveillance.",
+      "takeaway": "A low menopause dose does not remove paroxetine\u2019s important safety warnings.",
+      "sources": [
+        "cr",
+        "ir",
+        "vms"
+      ]
+    },
+    {
+      "section": "interactions",
+      "summary": "CYP2D6 inhibition, serotonergic combinations and bleeding-risk drugs are clinically important.",
+      "takeaway": "Tamoxifen efficacy can be affected even by menopause-specific paroxetine.",
+      "sources": [
+        "cr",
+        "ir",
+        "vms"
+      ]
+    },
+    {
+      "section": "populations",
+      "summary": "Consider fetal/neonatal risk together with the risk of untreated psychiatric illness.",
+      "takeaway": "Brisdelle\u2019s pregnancy contraindication differs from IR/CR benefit-risk decisions.",
+      "sources": [
+        "cr",
+        "ir",
+        "vms"
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "summary": "Paroxetine is an SSRI with nonlinear exposure and clinically important CYP2D6 inhibition.",
+      "takeaway": "CR controls absorption rate; it does not eliminate withdrawal or interaction risk.",
+      "sources": [
+        "cr",
+        "ir",
+        "vms"
+      ]
+    },
+    {
+      "section": "practice",
+      "summary": "Monitor response, mood, tolerability and medication changes over time.",
+      "takeaway": "Report dangerous symptoms promptly and use a prescriber-directed stop/switch plan.",
+      "sources": [
+        "cr",
+        "ir",
+        "vms"
+      ]
+    },
+    {
+      "section": "product",
+      "summary": "Verify the named product, release form and expressed paroxetine dose.",
+      "takeaway": "The same ingredient name does not establish interchangeable doses or indications.",
+      "sources": [
+        "cr",
+        "ir",
+        "vms"
+      ]
+    }
+  ],
+  "limitations": [
+    "Unreviewed Pexeva and generic liquid labels not represented as interchangeable/available.",
+    "Brisdelle retained SPL has no substantive lactation section; explicitly flagged, not inferred from low dose.",
+    "Paxil CR Fahrenheit storage excursion endpoint is internally inconsistent; Celsius20\u201325 and15\u201330 values retained without propagating typo.",
+    "SPL effective dates are not inferred clinical revision or publication dates."
+  ],
+  "unresolved_source_questions": [
+    {
+      "material": false,
+      "source": "ir",
+      "issue": "Paxil highlights\u00a73 incorrectly says extended-release10/20/30/40mg; full\u00a73/11 and separateCR source used for correct formulation distinction."
+    },
+    {
+      "material": false,
+      "source": "cr",
+      "issue": "\u00a716 Fahrenheit excursion endpoint typo; source Celsius20\u201325\u00b0C and15\u201330\u00b0C excursions retained, typo not propagated."
+    },
+    {
+      "material": false,
+      "source": "vms",
+      "issue": "Current retained SPL has no substantive lactation section. Profile explicitly states gap and makes no Brisdelle-specific lactation recommendation; current IR/CR lactation instructions accurately separated."
+    }
+  ],
+  "validation": {
+    "schema": "Passed actual validateMonograph; eight sections, four Safety cards, three Product cards, three tuple hero facts",
+    "tests_build_lint": "Parent batch checks required",
+    "rendered_page": "Parent batch QA required"
+  },
+  "monograph_sha256": "cacdc86382ec0f8b583156aac0c39712a3494b3a634cb055bc88c2dfebff1714"
+}

@@ -89,6 +89,16 @@ import { topiramate } from "./topiramate.js";
 import { tizanidine } from "./tizanidine.js";
 import { dapagliflozin } from "./dapagliflozin.js";
 import { oxycodone_acetaminophen } from "./oxycodone-acetaminophen.js";
+import { hydrochlorothiazideLosartan } from "./hydrochlorothiazide-losartan.js";
+import { olmesartan } from "./olmesartan.js";
+import { testosterone } from "./testosterone.js";
+import { amitriptyline } from "./amitriptyline.js";
+import { folicAcid } from "./folic-acid.js";
+import { rivaroxaban } from "./rivaroxaban.js";
+import { fenofibrate } from "./fenofibrate.js";
+import { triamcinolone } from "./triamcinolone.js";
+import { paroxetine } from "./paroxetine.js";
+import { ferrous_sulfate } from "./ferrous-sulfate.js";
 
 export const reviewedDrugMonographs = {
   "atorvastatin": atorvastatin,
@@ -181,4 +191,14 @@ export const reviewedDrugMonographs = {
   "tizanidine": tizanidine,
   "dapagliflozin": dapagliflozin,
   "oxycodone-acetaminophen": oxycodone_acetaminophen,
+  "hydrochlorothiazide-losartan": hydrochlorothiazideLosartan,
+  "olmesartan": olmesartan,
+  "testosterone": testosterone,
+  "amitriptyline": amitriptyline,
+  "folic-acid": folicAcid,
+  "rivaroxaban": rivaroxaban,
+  "fenofibrate": fenofibrate,
+  "triamcinolone": triamcinolone,
+  "paroxetine": paroxetine,
+  "ferrous-sulfate": ferrous_sulfate,
 };
