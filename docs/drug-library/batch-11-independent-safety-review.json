@@ -1,0 +1,414 @@
+{
+  "reviewDate": "2026-10-01",
+  "scope": "Independent targeted critical-assertion primary-source review. Only enumerated assertions independently verified; not exhaustive second clinical signoff, browser QA or build verification.",
+  "status": "Ten profiles targeted-reviewed; complete within enumerated scope.",
+  "profiles": [
+    {
+      "drug": "valacyclovir",
+      "fileSha256": "3aba2a0732ab01f14b5293cbd91c28feae0abf25ca1855a64c2d9df29c8bee9f",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Adult labeled cold sore, genital, suppression and zoster schedules, pediatric age-specific chickenpox per-dose maximum and all renal Table1 rows agree. No pediatric renal extrapolation below50 indexed or invented transmission-specific renal row. November2025 SCAR warning/contraindication update preserved.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f8e0d8f8-cb73-4206-a484-88f5c4fbd719",
+          "sourceSection": "Sections 2.1\u20132.4,4,5.4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "CDC first episode1g twice daily7\u201310days distinguished from ten-day label, extension if incomplete healing, recurrent1g daily5days, HIV episodic1g twice daily5\u201310days and pregnancy suppression500mg twice daily from36weeks are separately attributed.",
+          "sourceId": "cdc",
+          "sourceUrl": "https://www.cdc.gov/std/treatment-guidelines/herpes.htm",
+          "sourceSection": "First episode; suppression; HIV; pregnancy",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "budesonide-formoterol",
+      "fileSha256": "9a9b966f3e64fccc024f16406aa1cc9f92b1c58b19e2079e675416ab4b173ff7",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Standard asthma six-to-eleven uses two80/4.5 inhalations twice daily; \u226512 allows80/4.5 or160/4.5, COPD160/4.5. Prime two sprays initially/after>7days or dropping, shake five seconds.",
+          "sourceId": "breyna",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc529fc4-bddb-4673-8202-dc401f86166f",
+          "sourceSection": "Sections 2.1\u20132.3; IFU",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "April2026 Aerosphere asthma \u226512 and adult COPD formulations use two inhalations twice daily; formoterol4.8 per actuation distinct from standard4.5. Four-spray initial prime and two-spray repeat distinguish devices.",
+          "sourceId": "aero",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/216579s001lbl.pdf",
+          "sourceSection": "Sections 1\u20132; IFU",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Selected delivered80/4.5 age6\u201311 and160/4.5 \u226512, one as-needed inhalation/repeat after minutes, care threshold>8 child/>12 older total daily inhalations including maintenance agree. US-label versus guideline distinction explicit; maintenance frequency not inferred from ceiling.",
+          "sourceId": "gina",
+          "sourceUrl": "https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf",
+          "sourceSection": "2026 Summary Guide Table7, page45",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and excessive exposure"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "methocarbamol",
+      "fileSha256": "42924b372fa6c385574f4d14d36890764b5b307b7f2abc0cb8aeb3fc4385626c",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Oral750mg/5mL suspension \u226516 uses10mL four times daily initially, maintenance5mL every4h or10mL three times daily; shake at least30seconds.",
+          "sourceId": "atmeksi",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=62de7345-613b-4838-96e5-aceca3cea6b2",
+          "sourceSection": "Sections 1\u20132,3; IFU",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Injection100mg/mL known/suspected renal pathology contraindication, maximum3g/day \u22643days except specialist tetanus,48h drug-free repeat interval, IV rate\u22643mL/min, \u2264250mL dilution per1g, no refrigeration after dilution and \u22645mL per IM site agree.",
+          "sourceId": "methinj",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a7f70b19-75ba-4e3d-b4fe-277fe7305bf0",
+          "sourceSection": "Contraindications; Dosage and Administration",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [
+        "Injectable pediatric tetanus printed total-dose interval ambiguous; profile withholds actionable pediatric algorithm and flags verification."
+      ]
+    },
+    {
+      "drug": "diltiazem",
+      "fileSha256": "59159f8ed4cee0e9b6cf1a739940410ed1e5a548ae348ffa733db26ae07bbc5c",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "LA hypertension starts180\u2013240mg daily maximum540; angina starts180 daily maximum360 with7\u201314day intervals. Release-form differences retained.",
+          "sourceId": "diltla",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3e180dc7-c871-4efc-8755-cae882976c8d",
+          "sourceSection": "Sections 2.1\u20132.2",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Sagent IV0.25mg/kg over2min then0.35 after15min; initial10mg/h (some5) increments5 maximum15 for\u226424h agree. IV beta-blockers together/within hours, accessory-pathway AF and VT are contraindicated.",
+          "sourceId": "diltinj",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9d51c0f6-26b7-4220-83fb-4e736b289e64",
+          "sourceSection": "Contraindications; Dosage",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Premixed product initial5mg/h distinguished from Sagent10, same maximum15/24h; no universal IV-to-oral PK exposure conversion published.",
+          "sourceId": "diltpremix",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bae87a5-2137-467e-a1ad-79b2bc075e07",
+          "sourceSection": "Sections 2,4,5",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "ethinyl-estradiol-norgestimate",
+      "fileSha256": "6c004ff14b68d1c89a78c751b706e77cc34991c7de70d277b259458c8b6bf356",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Monophasic21active0.25mg norgestimate/35mcg EE plus7placebo and high-thrombotic-risk contraindications/smokingover35 boxed warning agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d9252820-131a-4870-8b11-945d1bfd5659",
+          "sourceSection": "Sections 2\u20134; Box",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Retained full primary XML confirms7each0.18/0.215/0.25mg norgestimate with25mcgEE and7placebo; pregnancy formal contraindication distinctly preserved from newer pack wording.",
+          "sourceId": "lo",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ddbeb312-af2b-4d22-ab7c-5ab2f3f8d5cb",
+          "sourceSection": "Sections 3\u20134",
+          "access": "retained-full-exact-primary-SPL-XML-read",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Current missed-pill <48h versus\u226548h threshold, most-recent catchup, seven consecutive active pills backup, last-week skip hormone-free interval and first-week unprotected prior-five-days EC except UPA agree. Distinct from older pack catchup/GI instructions.",
+          "sourceId": "cdc",
+          "sourceUrl": "https://www.cdc.gov/contraception/hcp/usspr/combined-hormonal-contraceptives.html",
+          "sourceSection": "Figure1 text description",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning \u00b7 cigarette smoking",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "triLoSplPath": "/tmp/nas-drug-sources/tri-lo-sprintec.xml",
+        "triLoSplSha256": "b2ecbd8ce9673d62beba26c53a1724435c02aa5f516082667d8ecb2f5091c809"
+      }
+    },
+    {
+      "drug": "fluticasone-umeclidinium-vilanterol",
+      "fileSha256": "899784f8d77f6c623ee39541d9b7e41d79e39dfbd0a1ef35239ca41c99fd8ab3",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "COPD only100/62.5/25 once daily; asthma\u226518 uses100 or200fluticasone with62.5/25, maximum one inhalation per24h. Severe milk-protein hypersensitivity and intensive acute episodes formal contraindications agree. Ellipta requires no priming/shaking; not rescue.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5a81d5a-4648-4c7a-951d-33c014a63c7e",
+          "sourceSection": "Sections 1\u20134; IFU",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "loratadine",
+      "fileSha256": "72e8c722c0f44965ed0a9c116a8091f97c128fe7589bd2360941c13f4c4342cf",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "10mg tablet age\u22656 once daily maximum one/24h; under6 clinician. Organ disease requires clinician rather than numerical current OTC adjustment.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=660ac9df-f1b1-4c89-94dd-9fae0a013f3c",
+          "sourceSection": "Drug Facts directions/warnings",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "5mg/5mL liquid age\u22656 ten mL daily, age2\u2013<6 five mL daily; under2 clinician.",
+          "sourceId": "liquid",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=170061e9-e529-4ff0-e054-00144ff8d46c",
+          "sourceSection": "Drug Facts directions",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Chewable5mg age\u22656 two daily, age2\u2013<6 one daily;1.9mg phenylalanine per tablet and hypersensitivity/organ precautions agree.",
+          "sourceId": "chew",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=20938e05-bc3e-51aa-e054-00144ff88e88",
+          "sourceSection": "Drug Facts directions/Other Information",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "warfarin",
+      "fileSha256": "9bb21761fc27197f19ab492584468e7248966099e66b295218443a122408b915",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Usual initial2\u20135mg daily and typical2\u201310 maintenance individualized to INR, daily initial then1\u20134week stable monitoring, no routine loading, pregnancy mechanical-valve exception and fatal-bleeding box agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=19a69a72-ac5d-45d5-a94d-a5aaecbe4730",
+          "sourceSection": "Sections 2,4,5;Box",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Valve-specific INR2.5/3.0 targets and selected On-X1.5\u20132.0 from3months plus aspirin75\u2013100, conditional bioprosthetic VKA3\u20136months agree.",
+          "sourceId": "valves",
+          "sourceUrl": "https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2020/12/16/22/01/2020-acc-aha-vhd-gl-pt-3-gl-vhd",
+          "sourceSection": "Prosthetic-valve recommendations",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "VKA acute DVT/PE overlap UFH/LMWH\u22655days until INR therapeutic24h, VTE INR2\u20133 and recurrent-unprovoked indefinite therapy agree with actual retained full guideline.",
+          "sourceId": "vte",
+          "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7556153/",
+          "sourceSection": "Implementation considerations; Recommendations17,21",
+          "access": "retained-full-public-primary-guideline-HTML-read",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "ashHtmlPath": "/tmp/nas-drug-sources/warfarin-ash.html",
+        "ashHtmlSha256": "f217eaa43935259aba1c35bfe34e8fc674d342a477fff4cf89291e63c5808863"
+      }
+    },
+    {
+      "drug": "thyroid",
+      "fileSha256": "7ff0a87edb2f44ebc11f3644c5ce251d57332da71c130ef3ad564846782fe78d",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Unapproved Armour grain60mg containing38mcgT4/9mcgT3, adult start30 with15mg increments every2\u20133weeks, selected cardiac/longstanding15start and60\u2013120maintenance agree. Printed pediatric age/weight columns agree, explicitly not preferred pediatric protocol or conversion; adrenal/thyrotoxicosis contraindications and weight-loss box preserved.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=56b41079-60db-4256-9695-202b3a65d13d",
+          "sourceSection": "Description;Dosage;Contraindications;Box;metadata",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Unapproved biological products, potency/purity concerns, risk-based enforcement and planned guidance are current; no fabricated approved status or blanket removal date.",
+          "sourceId": "fda",
+          "sourceUrl": "https://www.fda.gov/drugs/enforcement-activities-fda/fdas-actions-address-unapproved-thyroid-medications",
+          "sourceSection": "Current FDA enforcement page",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning: weight-loss misuse",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "baclofen",
+      "fileSha256": "eb230781bdd182d6ce66a8c59e3aac7aab97dcb27cb1d1eaac74367fa0dd1a83",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Fleqsuvy5mg/mL oral5\u219210\u219215\u219220mg three times daily each stage3days; maximum80mg/day and matching1/2/3/4mL values agree.",
+          "sourceId": "susp",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9076d6ce-bbc2-4a9f-9cb9-2de1b675b9aa",
+          "sourceSection": "Sections 2.1\u20132.2,4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Ozobax DS2mg/mL matches2.5/5/7.5/10mL per corresponding oral dose; not older1mg/mL.",
+          "sourceId": "sol",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d8ddcec5-debe-42b4-a803-e65917cc6a54",
+          "sourceSection": "Sections 2.1\u20132.2,4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Intrathecal50mcg/1mL over\u22651min observe4\u20138h, subsequent75/100 separated24h, small pediatric25, no response100 excludes candidate agree. Initial24h double-effective screen except>8h effect then equal; no increasefirst24h, spinal10\u201330% versus cerebral/pediatric5\u201315% once24h. Fatal withdrawal box and route restrictions preserved.",
+          "sourceId": "it",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f3bdcc0-ffc8-4911-8c35-958c8103a2c5",
+          "sourceSection": "Screening;Post-implant titration;Box",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning: intrathecal withdrawal",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [
+        "OzobaxDS PK section refers to a different liquid concentration; profile flags this and does not transfer its volume."
+      ]
+    }
+  ],
+  "pending": [],
+  "limitations": [
+    "Sources accessed directly through public official pages/PDFs except Tri-Lo-Sprintec enumerated product assertions read from retained full exact primary SPL XML. GINA PDF page45 table text inspected; no rendered screenshot inspection is claimed.",
+    "ASH web retrieval encountered reCAPTCHA; enumerated assertions read from retained full primary HTML with recorded SHA, not blocked page."
+  ]
+}

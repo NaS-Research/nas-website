@@ -1,0 +1,922 @@
+{
+  "drug": "diltiazem",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Six complete current selected oral/IV U.S. product labels; public 2023 joint AF guideline sections 7.2.1–7.2.2 for accepted rate-control role and LV-function safety boundaries.",
+  "sources": [
+    {
+      "id": "diltir",
+      "title": "Cardizem · immediate-release tablets",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f3e7ecef-f360-4987-a4f5-933214130ab2",
+      "note": "Full public manufacturer label and patient instructions; SPL version 20, effective 20250430. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "20",
+      "effective_date": "20250430",
+      "xml_sha256": "530897bf45a9b43d0f6371842941ab8ea2de727479c77028cadea2fb509bd5c3",
+      "retrieved_xml": "/tmp/nas-drug-sources/diltir.xml",
+      "published_date": "May 02, 2025"
+    },
+    {
+      "id": "diltcd",
+      "title": "Cardizem CD · once-daily capsules",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1042fa13-e6af-46b9-8008-6c941f0978b1",
+      "note": "Full public manufacturer label and patient instructions; SPL version 25, effective 20251210. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "25",
+      "effective_date": "20251210",
+      "xml_sha256": "d331574db6a4c8606bd286e0b0e8ebee3799665d55a4a112bbbca907f662da9f",
+      "retrieved_xml": "/tmp/nas-drug-sources/diltcd.xml",
+      "published_date": "Dec 12, 2025"
+    },
+    {
+      "id": "diltla",
+      "title": "Cardizem LA · once-daily tablets",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3e180dc7-c871-4efc-8755-cae882976c8d",
+      "note": "Full public manufacturer label and patient instructions; SPL version 19, effective 20251111. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "19",
+      "effective_date": "20251111",
+      "xml_sha256": "c5864ee2891acee4f2cfaf28305eab7cf48654b22d5f23feca05a227131f2030",
+      "retrieved_xml": "/tmp/nas-drug-sources/diltla.xml",
+      "published_date": "Dec 12, 2025"
+    },
+    {
+      "id": "tiazac",
+      "title": "Tiazac · once-daily sprinkle-capable capsules",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c567fe7e-887e-4291-a0d1-2dd3f25cbf25",
+      "note": "Full public manufacturer label and patient instructions; SPL version 12, effective 20260807. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "12",
+      "effective_date": "20260807",
+      "xml_sha256": "2280abc5de9d43892cce3b4d23d5205872ac9c409634a743ed9ccaa03a3ff57e",
+      "retrieved_xml": "/tmp/nas-drug-sources/tiazac.xml",
+      "published_date": "Aug 10, 2026"
+    },
+    {
+      "id": "diltinj",
+      "title": "Sagent diltiazem · 5 mg/mL IV vials",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9d51c0f6-26b7-4220-83fb-4e736b289e64",
+      "note": "Full public manufacturer label and patient instructions; SPL version 2, effective 20260806. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "2",
+      "effective_date": "20260806",
+      "xml_sha256": "16f6882c2c1bb19e90de9c1995a7d1582a341f146ec9f7806f7d4ad4824fbbd6",
+      "retrieved_xml": "/tmp/nas-drug-sources/diltinj.xml",
+      "published_date": "Aug 24, 2026"
+    },
+    {
+      "id": "diltpremix",
+      "title": "WG Critical Care diltiazem in sodium chloride · 1 mg/mL ready-to-use bags",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bae87a5-2137-467e-a1ad-79b2bc075e07",
+      "note": "Full public manufacturer label and patient instructions; SPL version 4, effective 20250415. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "4",
+      "effective_date": "20250415",
+      "xml_sha256": "a45586f561f1081f35a50669e77d40925ddda69dcfbfa759947e5cbc3b8ffa79",
+      "retrieved_xml": "/tmp/nas-drug-sources/diltpremix.xml",
+      "published_date": "Sep 21, 2026"
+    },
+    {
+      "id": "afguideline",
+      "title": "2023 ACC/AHA/ACCP/HRS atrial fibrillation guideline",
+      "publisher": "ACC / AHA / ACCP / HRS · public author manuscript at PMC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11104284/",
+      "note": "Public complete article retrieved with curl October 1, 2026; relevant rate-control recommendations and supporting text in sections 7.2.1–7.2.2 reviewed. Browser extractor showed challenge; no paywall access claimed.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "retrieved_file": "/tmp/af-guideline-page.html",
+      "html_sha256": "a41cc6c83c792a95131c5d131d8aee0c8304cdbf40cc0049a2cb294a7bb3fd89",
+      "version": "2023 joint AF guideline · public JACC manuscript",
+      "publication_date": "2023-11-30",
+      "doi": "10.1016/j.jacc.2023.08.017",
+      "reviewed_sections": [
+        "7.2.1 full recommendations and supporting text",
+        "7.2.2 full recommendations and supporting text"
+      ]
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Labeled oral indications",
+      "assertions": {
+        "paragraphs": [
+          "Cardizem IR and CD: chronic stable angina and angina due to coronary artery spasm; CD additionally treats hypertension. Cardizem LA treats hypertension and improves exercise tolerance in chronic stable angina. Tiazac treats hypertension and chronic stable angina. These selected oral labels do not list AF rate control as a labeled indication."
+        ]
+      },
+      "source_sections": {
+        "diltir": [
+          "INDICATIONS AND USAGE"
+        ],
+        "diltcd": [
+          "INDICATIONS AND USAGE"
+        ],
+        "diltla": [
+          "1.1",
+          "1.2"
+        ],
+        "tiazac": [
+          "Hypertension",
+          "Chronic Stable Angina"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Labeled intravenous indications",
+      "assertions": {
+        "paragraphs": [
+          "Selected IV products temporarily control rapid ventricular rate in AF/flutter and rapidly convert PSVT to sinus rhythm; WG explicitly indicates adults. Sagent describes AV-nodal reentry and reciprocating PSVT involving an accessory pathway, while AF/flutter WITH an accessory bypass tract is contraindicated. Do not conflate those rhythm situations. IV diltiazem rarely converts AF/flutter itself to sinus rhythm; it primarily slows ventricular rate."
+        ]
+      },
+      "source_sections": {
+        "diltinj": [
+          "Atrial Fibrillation or Atrial Flutter",
+          "Paroxysmal Supraventricular Tachycardia",
+          "CONTRAINDICATIONS"
+        ],
+        "diltpremix": [
+          "1.1",
+          "1.2",
+          "4"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Guideline-supported AF role and ventricular-function limits",
+      "assertions": {
+        "paragraphs": [
+          "The 2023 joint AF guideline supports acute diltiazem rate control in hemodynamically stable AF with EF > 40%, and selected long-term rate control according to comorbidities. Oral AF use is outside these selected oral labels’ indications. IV nondihydropyridine blockers should not be used with known moderate/severe LV systolic dysfunction, with or without decompensated HF; long-term use should not occur with LVEF < 40%. This focused reference does not supply a complete AF, cardioversion or anticoagulation algorithm."
+        ]
+      },
+      "source_sections": {
+        "afguideline": [
+          "7.2.1 recommendations and supporting text",
+          "7.2.2 recommendations and supporting text"
+        ],
+        "diltir": [
+          "INDICATIONS AND USAGE"
+        ],
+        "diltla": [
+          "1"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Selected oral starting doses and titration",
+      "assertions": {
+        "paragraphs": [
+          "Adult label regimens below require BP, pulse, angina-response and adverse-effect assessment."
+        ],
+        "table": {
+          "headers": [
+            "Product / indication",
+            "Label regimen"
+          ],
+          "rows": [
+            [
+              "Cardizem IR · angina",
+              "Start 30 mg four times daily before meals/bedtime; increase gradually in 3–4 divided doses at 1–2-day intervals. Average optimal range 180–360 mg/day, not a universal dose ceiling."
+            ],
+            [
+              "Cardizem CD · hypertension",
+              "Start 180–240 mg once daily (some lower); usual studied 240–360 mg, individual response up to 480 mg. Max effect usually ~14 days. General experience > 360 mg limited; 540 mg studied is not its routine indication-specific instruction."
+            ],
+            [
+              "Cardizem CD · angina",
+              "Start 120 or 180 mg once daily; titrate over 7–14 days, individual response up to 480 mg."
+            ],
+            [
+              "Cardizem LA · hypertension",
+              "Start 180–240 mg once daily (some lower); titrate to maximum 540 mg/day, max effect usually ~14 days."
+            ],
+            [
+              "Cardizem LA · angina",
+              "Start 180 mg once daily; titrate every 7–14 days to maximum 360 mg/day."
+            ],
+            [
+              "Tiazac · hypertension",
+              "Start 120–240 mg once daily; titrate with ~14-day max-effect assessment; may increase to 540 mg/day (limited experience at 540)."
+            ],
+            [
+              "Tiazac · angina",
+              "Start 120–180 mg once daily; titrate every 7–14 days, up to 540 mg/day."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "diltir": [
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "diltcd": [
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "diltla": [
+          "2.1–2.3"
+        ],
+        "tiazac": [
+          "DOSAGE AND ADMINISTRATION: Hypertension / Angina"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Oral administration and switching",
+      "assertions": {
+        "paragraphs": [
+          "Cardizem IR label permits swallowing whole, crushing or chewing; its 30 mg tablet must not be split. Do not transfer IR handling to ER. Cardizem LA: swallow whole, never chew/crush, once daily at the same time; food does not meaningfully change exposure. Tiazac can be swallowed whole or all beads sprinkled on cool, soft applesauce, swallowed immediately without chewing then cool water; do not store or subdivide contents. The selected CD label does not grant Tiazac’s sprinkle permission. CD/LA/Tiazac labels allow a supervised switch from another diltiazem regimen to the nearest equivalent total daily dose with close monitoring and possible further titration; do not substitute release forms independently. Avoid alcohol with Cardizem CD because it can accelerate release."
+        ]
+      },
+      "source_sections": {
+        "diltir": [
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "diltcd": [
+          "DOSAGE AND ADMINISTRATION",
+          "Drug Interactions: Alcohol"
+        ],
+        "diltla": [
+          "2",
+          "2.3",
+          "12.3",
+          "17"
+        ],
+        "tiazac": [
+          "Concomitant Use with Other Cardiovascular Agents",
+          "Sprinkling the Capsule Contents on Food"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Adult IV bolus and product-specific infusion",
+      "assertions": {
+        "paragraphs": [
+          "Continuous ECG, frequent BP measurement and immediately available defibrillator/emergency equipment are required. Confirm actual weight and rhythm."
+        ],
+        "table": {
+          "headers": [
+            "Step / product",
+            "Selected label directions"
+          ],
+          "rows": [
+            [
+              "Initial IV bolus",
+              "0.25 mg/kg actual body weight over 2 minutes. If inadequate, after 15 minutes give 0.35 mg/kg over 2 minutes. Subsequent boluses individualized."
+            ],
+            [
+              "Sagent vial · AF/flutter infusion",
+              "Initial 10 mg/hour after effective bolus; some respond to 5 mg/hour. Increase by 5 mg/hour to 15 mg/hour. Maximum recommended duration 24 hours; longer/higher rates unstudied."
+            ],
+            [
+              "WG ready-to-use bag",
+              "Initial 5 mg/hour immediately after bolus; adjust by 5 mg/hour to maximum 15 mg/hour. Infusion > 24 hours unstudied; generally transition within 24 hours."
+            ],
+            [
+              "Transition",
+              "Individualize the subsequent agent/formulation using its label and clinical response; no automatic IV-to-oral conversion algorithm is supplied here."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "diltinj": [
+          "Direct Intravenous Single Injections (Bolus)",
+          "Continuous Intravenous Infusion",
+          "Paroxysmal Supraventricular Tachycardia"
+        ],
+        "diltpremix": [
+          "2.1–2.3"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "IV preparation and organ considerations",
+      "assertions": {
+        "paragraphs": [
+          "Sagent 5 mg/mL vials require dilution for infusion with saline, D5W or D5W/0.45% saline per label; calculate final volume/concentration rather than treating vial concentration as infusion concentration. Use within 24 hours and refrigerate until use. WG 1 mg/mL bags are ready to administer without further dilution. Inspect solution, avoid mixing other drugs in the same container and use a dedicated line when possible due to incompatibilities. Cardizem LA specifies no renal adjustment and likely none for mild/moderate hepatic impairment; IR/other selected labels call for cautious organ-impairment titration without a fixed algorithm. Do not generalize LA wording to severe hepatic disease or every product."
+        ]
+      },
+      "source_sections": {
+        "diltinj": [
+          "DOSAGE AND ADMINISTRATION: Dilution / Compatibility / Physical Incompatibilities",
+          "General"
+        ],
+        "diltpremix": [
+          "2.1",
+          "2.4"
+        ],
+        "diltla": [
+          "8.6",
+          "8.7"
+        ],
+        "diltir": [
+          "DOSAGE AND ADMINISTRATION",
+          "General"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Bradycardia and second/third-degree AV block may occur; beta-blockers, digoxin and other conduction/contractility suppressants add risk. Stop IV treatment and support if high-degree block develops.",
+          "Diltiazem is negatively inotropic and can worsen HF. WG label says do not initiate in acute decompensated HF/cardiogenic shock; guideline additionally excludes IV use with moderate/severe LV systolic dysfunction and long-term AF use at LVEF < 40%.",
+          "Symptomatic hypotension can occur, particularly with low baseline BP, other antihypertensives, hypovolemia or reduced contractility; monitor closely.",
+          "IV treatment of pre-excited AF/flutter or VT can provoke hemodynamic collapse/ventricular fibrillation. Distinguish pre-excitation/ventricular-origin wide-complex tachycardia before administration.",
+          "Acute hepatic injury and severe skin reactions, including SJS/TEN, have been reported. Reassess jaundice/liver symptoms and persistent or severe rash; discontinue/treat appropriately.",
+          "Cardizem CD: avoid alcohol because of increased in-vitro release and potentially higher/more rapid exposure. Monitor after formulation or interacting-drug changes."
+        ]
+      },
+      "source_sections": {
+        "diltir": [
+          "WARNINGS",
+          "General"
+        ],
+        "diltcd": [
+          "WARNINGS",
+          "General"
+        ],
+        "diltla": [
+          "5.1–5.4"
+        ],
+        "tiazac": [
+          "WARNINGS",
+          "PRECAUTIONS: General"
+        ],
+        "diltinj": [
+          "WARNINGS",
+          "CONTRAINDICATIONS"
+        ],
+        "diltpremix": [
+          "5.1–5.5"
+        ],
+        "afguideline": [
+          "7.2.1",
+          "7.2.2"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Selected oral products: sick sinus syndrome or second/third-degree AV block unless a functioning ventricular pacemaker; systolic BP < 90 mm Hg; drug hypersensitivity; acute MI with pulmonary congestion. Selected IV products: the same pacemaker exceptions for sinus/AV disease, severe hypotension/cardiogenic shock, hypersensitivity, pre-excited AF/flutter and ventricular tachycardia. IV diltiazem and IV beta-blockers must not be given together; Sagent also forbids close proximity within a few hours. That is distinct from cautious supervised combinations with oral beta-blockers."
+        ]
+      },
+      "source_sections": {
+        "diltir": [
+          "CONTRAINDICATIONS"
+        ],
+        "diltcd": [
+          "CONTRAINDICATIONS"
+        ],
+        "diltla": [
+          "4"
+        ],
+        "tiazac": [
+          "CONTRAINDICATIONS"
+        ],
+        "diltinj": [
+          "CONTRAINDICATIONS"
+        ],
+        "diltpremix": [
+          "4"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "The selected current U.S. diltiazem labels have no boxed warning. Route-specific contraindications and risks of conduction block, hypotension and HF remain important."
+        ]
+      },
+      "source_sections": {
+        "diltir": [
+          "Full labeling"
+        ],
+        "diltcd": [
+          "Full labeling"
+        ],
+        "diltla": [
+          "Full prescribing information"
+        ],
+        "tiazac": [
+          "Full labeling"
+        ],
+        "diltinj": [
+          "Full labeling"
+        ],
+        "diltpremix": [
+          "Full prescribing information"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "assertions": {
+        "paragraphs": [
+          "Oral trial/reported effects include peripheral edema, dizziness, headache, fatigue, bradycardia/AV block, nausea/constipation and rash; serious HF, hepatic, skin or allergic reactions may occur. IV trials prominently report hypotension, injection-site reactions, flushing and arrhythmia; oral incidence cannot be assigned to IV use. Postmarketing events have uncertain frequency. Overdose can cause profound bradycardia, block, hypotension and cardiac failure; emergency/toxicology care is required (U.S. Poison Help 1-800-222-1222). ER toxicity may be prolonged; dialysis does not appear effective. Follow a specialist resuscitation plan rather than a home antidote."
+        ]
+      },
+      "source_sections": {
+        "diltir": [
+          "ADVERSE REACTIONS",
+          "OVERDOSAGE"
+        ],
+        "diltcd": [
+          "ADVERSE REACTIONS",
+          "OVERDOSAGE"
+        ],
+        "diltla": [
+          "6",
+          "10"
+        ],
+        "diltinj": [
+          "ADVERSE REACTIONS",
+          "OVERDOSAGE"
+        ],
+        "diltpremix": [
+          "6",
+          "10"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "assertions": {
+        "paragraphs": [
+          "Diltiazem is both substrate/inhibitor of CYP3A4 and P-gp; organ impairment can magnify exposure changes. This table highlights selected current label actions."
+        ],
+        "table": {
+          "headers": [
+            "Combination",
+            "Action"
+          ],
+          "rows": [
+            [
+              "IV beta-blockers",
+              "Contraindicated with IV diltiazem; selected Sagent label also forbids within a few hours."
+            ],
+            [
+              "Oral beta-blockers / digoxin / clonidine / other cardiac depressants",
+              "Monitor pulse/ECG/HF; adjust regimen as needed. Monitor digoxin concentrations with oral diltiazem changes."
+            ],
+            [
+              "Ivabradine",
+              "Avoid combination: exposure/bradycardia/conduction risk."
+            ],
+            [
+              "Simvastatin / other CYP3A4 statins",
+              "Prefer non-CYP3A4 statin when feasible; selected labels limit simvastatin to 10 mg/day and diltiazem to 240 mg/day if combined. Assess muscle toxicity and exact statin label."
+            ],
+            [
+              "Ranolazine",
+              "WG label limits ranolazine to 500 mg twice daily with diltiazem."
+            ],
+            [
+              "Cyclosporine / carbamazepine / quinidine",
+              "Monitor concentrations or toxicity/response and adjust with initiation/change/cessation."
+            ],
+            [
+              "Midazolam / triazolam / buspirone",
+              "Exposure may increase, causing prolonged sedation or toxicity; assess dose/monitoring."
+            ],
+            [
+              "CYP3A4 inhibitors / inducers",
+              "Inhibitors such as cimetidine can raise diltiazem exposure; monitor. Avoid rifampin/known inducers when possible; CD wording directly advises avoidance."
+            ],
+            [
+              "Anesthetics / other antihypertensives / alcohol",
+              "Additive BP/contractility effects require careful titration; avoid alcohol specifically with CD."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "diltla": [
+          "7.1",
+          "7.2",
+          "12.3"
+        ],
+        "diltcd": [
+          "Drug Interactions"
+        ],
+        "diltinj": [
+          "Drug Interactions",
+          "CONTRAINDICATIONS"
+        ],
+        "diltpremix": [
+          "7"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "IV incompatibilities",
+      "assertions": {
+        "paragraphs": [
+          "Do not mix with other drugs in the same container; dedicated line preferred. Selected labels report incompatibility with agents including furosemide, regular insulin, diazepam, phenytoin, bicarbonate and several antimicrobials/steroids. Check the complete product compatibility list before co-infusion rather than relying on this abbreviated list."
+        ]
+      },
+      "source_sections": {
+        "diltinj": [
+          "DOSAGE AND ADMINISTRATION: Physical Incompatibilities"
+        ],
+        "diltpremix": [
+          "2.4"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Current LA/WG summaries state decades-of-use published pregnancy data have not identified increased major-birth-defect, miscarriage or other adverse-outcome risk; animal developmental findings and evidence limits remain. Selected older IR/CD/Tiazac/Sagent labels advise use only when benefit justifies fetal risk. Diltiazem enters human milk. LA/WG weigh maternal need, breastfeeding benefit and potential infant effects, while selected older products advise alternative infant feeding if treatment is essential. Discuss the exact product and circumstances; do not infer universal safety."
+        ]
+      },
+      "source_sections": {
+        "diltla": [
+          "8.1",
+          "8.2"
+        ],
+        "diltpremix": [
+          "8.1",
+          "8.2"
+        ],
+        "diltir": [
+          "Pregnancy",
+          "Nursing Mothers"
+        ],
+        "diltcd": [
+          "Drug Interactions: Pregnancy / Nursing Mothers"
+        ],
+        "tiazac": [
+          "PRECAUTIONS: Pregnancy / Nursing Mothers"
+        ],
+        "diltinj": [
+          "Pregnancy",
+          "Nursing Mothers"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric considerations",
+      "assertions": {
+        "paragraphs": [
+          "Pediatric safety/effectiveness is not established for these selected products; no pediatric regimen is supplied. Older-adult trials are limited; use cautious low-end initial dosing in view of cardiac/hepatic/renal function, comorbidity and interactions. Monitor pulse, BP, dizziness/falls, conduction and HF rather than assigning a universal age-based dose."
+        ]
+      },
+      "source_sections": {
+        "diltla": [
+          "8.4",
+          "8.5"
+        ],
+        "diltpremix": [
+          "8.4",
+          "8.5"
+        ],
+        "diltir": [
+          "Pediatric Use",
+          "Geriatric Use"
+        ],
+        "diltinj": [
+          "Pediatric Use",
+          "Geriatric Use"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic impairment",
+      "assertions": {
+        "paragraphs": [
+          "LA states no renal adjustment and that mild/moderate hepatic impairment likely needs no adjustment. Other selected labels recommend cautious use/titration with organ impairment and periodic renal/hepatic testing; no universal percentage reduction exists. Cirrhosis can increase exposure/half-life; severe hepatic impairment requires individualized review. Assess LV function and HF separately from clearance."
+        ]
+      },
+      "source_sections": {
+        "diltla": [
+          "8.6",
+          "8.7",
+          "12.3"
+        ],
+        "diltir": [
+          "General",
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "diltinj": [
+          "General"
+        ],
+        "diltpremix": [
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "assertions": {
+        "paragraphs": [
+          "Diltiazem inhibits calcium entry in cardiac/vascular muscle, dilates coronary/peripheral vessels and reduces AV-nodal conduction/refractoriness. BP and oxygen-demand reduction contribute to antianginal effects; AV slowing contributes to ventricular-rate control. Reduced contractility underlies HF precautions."
+        ]
+      },
+      "source_sections": {
+        "diltir": [
+          "Mechanisms of Action"
+        ],
+        "diltla": [
+          "12.1",
+          "12.2"
+        ],
+        "diltpremix": [
+          "12.1",
+          "12.2"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "assertions": {
+        "paragraphs": [],
+        "facts": [
+          [
+            "Disposition",
+            "Extensive first-pass/hepatic metabolism; oral absolute bioavailability ~40%, protein binding ~70–80%, only ~2–4% unchanged urinary drug."
+          ],
+          [
+            "Selected ER timing",
+            "CD peak ~10–14 hours / apparent half-life 5–8 hours; LA peak ~11–18 hours / apparent half-life 6–9 hours. These values do not make the two products interchangeable."
+          ],
+          [
+            "IV / nonlinear kinetics",
+            "IV half-life and clearance vary with dose/infusion; rate and daily oral mg do not form a universal direct conversion."
+          ],
+          [
+            "Organ effects",
+            "Cirrhosis can increase exposure and prolong half-life; interactions through CYP3A4/P-gp affect diltiazem and companion drugs."
+          ]
+        ]
+      },
+      "source_sections": {
+        "diltir": [
+          "Pharmacokinetics and Metabolism"
+        ],
+        "diltcd": [
+          "Pharmacokinetics and Metabolism"
+        ],
+        "diltla": [
+          "12.3"
+        ],
+        "diltpremix": [
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring parameters",
+      "assertions": {
+        "paragraphs": [
+          "Assess indication, BP/pulse, ECG/conduction when relevant, ventricular function/HF and interacting medicines before selection. Oral follow-up tracks angina/BP, edema, dizziness, bradycardia, liver/skin symptoms and renal/hepatic laboratory parameters as labels indicate. IV requires continuous ECG and frequent BP with emergency equipment; reassess block, hypotension, HF and infusion duration. Monitor companion drug levels/CK symptoms when relevant."
+        ]
+      },
+      "source_sections": {
+        "diltir": [
+          "General",
+          "WARNINGS"
+        ],
+        "diltla": [
+          "5",
+          "7",
+          "17"
+        ],
+        "diltinj": [
+          "Paroxysmal Supraventricular Tachycardia",
+          "WARNINGS"
+        ],
+        "diltpremix": [
+          "2.1",
+          "5",
+          "7"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "assertions": {
+        "paragraphs": [
+          "Know the exact release form and dosing schedule; LA must remain intact, and Tiazac’s sprinkle option does not apply to every capsule. Avoid alcohol with CD. Consult before starting/stopping other medicines, including OTC/supplements. Report fainting, unusually slow pulse, worsening dyspnea/edema, jaundice or rash promptly; severe symptoms need urgent care. Diltiazem is not an acute-angina rescue substitute; use the prescribed rescue plan. Discuss pregnancy/breastfeeding and individual missed-dose directions."
+        ]
+      },
+      "source_sections": {
+        "diltla": [
+          "17"
+        ],
+        "diltir": [
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "diltcd": [
+          "Drug Interactions: Alcohol",
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "tiazac": [
+          "Sprinkling the Capsule Contents on Food"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "paragraphs": [
+          "Cardizem CD 120 mg once-daily capsule: light turquoise body/cap, cardizem CD 120 mg imprint; example 30-count bottle NDC 0187-0795-30. Exact generic release/appearance is manufacturer-specific and cannot be inferred from color alone."
+        ]
+      },
+      "source_sections": {
+        "diltcd": [
+          "DESCRIPTION",
+          "HOW SUPPLIED"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Selected product",
+            "Strengths / presentation"
+          ],
+          "rows": [
+            [
+              "Cardizem IR tablets",
+              "30, 60, 90 and 120 mg"
+            ],
+            [
+              "Cardizem CD capsules",
+              "120, 180, 240, 300 and 360 mg · once daily"
+            ],
+            [
+              "Cardizem LA tablets",
+              "120, 180, 240, 300, 360 and 420 mg · once daily"
+            ],
+            [
+              "Tiazac capsules",
+              "120, 180, 240, 300, 360 and 420 mg · once daily"
+            ],
+            [
+              "Sagent IV vials",
+              "5 mg/mL · 25 mg/5 mL, 50 mg/10 mL, 125 mg/25 mL single-dose"
+            ],
+            [
+              "WG IV ready-to-use bags",
+              "1 mg/mL · 100 mg/100 mL or 250 mg/250 mL"
+            ],
+            [
+              "Scope",
+              "Other ER/SR products, generic release designs and lyophilized/injection presentations require their own directions."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "diltir": [
+          "HOW SUPPLIED"
+        ],
+        "diltcd": [
+          "HOW SUPPLIED"
+        ],
+        "diltla": [
+          "3",
+          "16"
+        ],
+        "tiazac": [
+          "HOW SUPPLIED"
+        ],
+        "diltinj": [
+          "HOW SUPPLIED"
+        ],
+        "diltpremix": [
+          "3",
+          "16"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Selected oral brands: 25°C, excursions 15–30°C, avoid excess humidity; LA also avoids > 30°C and uses tight light-resistant container. Sagent vials: 2–8°C, no freezing; may remain at room temperature up to 1 month then destroy; discard remainder. Diluted Sagent infusion: use within 24 hours, refrigerate until use. WG bags: 2–8°C, no freezing; original overwrapped bag may remain 20–25°C up to 1 month, and use within 28 days after removal from aluminum overwrap. Keep route-specific storage/preparation instructions with the product."
+        ]
+      },
+      "source_sections": {
+        "diltir": [
+          "HOW SUPPLIED"
+        ],
+        "diltcd": [
+          "HOW SUPPLIED"
+        ],
+        "diltla": [
+          "16"
+        ],
+        "tiazac": [
+          "HOW SUPPLIED"
+        ],
+        "diltinj": [
+          "Storage Conditions",
+          "DOSAGE AND ADMINISTRATION: Dilution"
+        ],
+        "diltpremix": [
+          "16"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "Not exhaustive of generic ER/SR release designs or injectable/lyophilized presentations.",
+    "No pediatric regimen, automatic IV/oral conversion, anticoagulation/cardioversion protocol or universal hepatic dose reduction."
+  ],
+  "resolved_source_findings": [
+    "Current Cardizem LA section 4 XML truncates acute-MI/pulmonary phrase; complete current IR/CD/Tiazac and Sagent labels verify pulmonary-congestion contraindication, retained with their citations.",
+    "Cardizem CD 480 mg indication-specific instructions distinguished from 540 mg studied; LA angina max 360 and Tiazac max 540 retained.",
+    "WG initial infusion 5 mg/hour distinguished from Sagent 10 mg/hour (some 5).",
+    "Tiazac sprinkle permission not generalized to CD; IR crush permission not generalized to ER.",
+    "Different current pregnancy/lactation wording retained by product/version.",
+    "Browser guideline extraction challenged; normal curl successfully retrieved complete public manuscript and full supporting rate-control text."
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, essential safety, three hero facts, cited disclosures, four safety cards and three product cards.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending"
+  },
+  "monograph_sha256": "59159f8ed4cee0e9b6cf1a739940410ed1e5a548ae348ffa733db26ae07bbc5c",
+  "front_matter_source_map": {
+    "name_synonym_description_facts": {
+      "diltir": [
+        "Indications / description / dosage forms and strengths"
+      ],
+      "diltcd": [
+        "Indications / description / dosage forms and strengths"
+      ],
+      "diltla": [
+        "Indications / description / dosage forms and strengths"
+      ],
+      "tiazac": [
+        "Indications / description / dosage forms and strengths"
+      ],
+      "diltinj": [
+        "Indications / description / dosage forms and strengths"
+      ],
+      "diltpremix": [
+        "Indications / description / dosage forms and strengths"
+      ]
+    },
+    "essential_safety": {
+      "diltla": [
+        "5.1",
+        "5.2"
+      ],
+      "diltinj": [
+        "CONTRAINDICATIONS",
+        "Paroxysmal Supraventricular Tachycardia"
+      ],
+      "diltpremix": [
+        "4",
+        "5"
+      ]
+    }
+  }
+}

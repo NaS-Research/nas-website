@@ -1,0 +1,1272 @@
+{
+  "drug": "thyroid",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Current Armour oral desiccated thyroid; explicit unapproved product-label versus current FDA/ATA guidance distinction. No other-brand substitution, pregnancy DTE endorsement, cancer algorithm or IV/myxedema regimen.",
+  "blueprint": {
+    "sections": [
+      [
+        "indications",
+        "Indications"
+      ],
+      [
+        "dosage",
+        "Dosage and administration"
+      ],
+      [
+        "safety",
+        "Safety"
+      ],
+      [
+        "interactions",
+        "Drug interactions"
+      ],
+      [
+        "populations",
+        "Use in specific populations"
+      ],
+      [
+        "pharmacology",
+        "Clinical pharmacology"
+      ],
+      [
+        "practice",
+        "Monitoring and counseling"
+      ],
+      [
+        "product",
+        "Product identification"
+      ]
+    ],
+    "essential_safety": true,
+    "hero_facts": 3,
+    "APAP_modified": false
+  },
+  "sources": [
+    {
+      "id": "label",
+      "title": "Armour Thyroid \u00b7 Current complete product labeling",
+      "publisher": "AbbVie / DailyMed",
+      "note": "Revised March 2024; SPL 17 effective March 13,2024; unapproved animal-derived thyroid product.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=56b41079-60db-4256-9695-202b3a65d13d"
+    },
+    {
+      "id": "fda",
+      "title": "Current actions on unapproved animal-derived thyroid medicines",
+      "publisher": "U.S. FDA",
+      "note": "Current public enforcement/status page checked October 1,2026; no blanket removal date inferred.",
+      "url": "https://www.fda.gov/drugs/enforcement-activities-fda/fdas-actions-address-unapproved-thyroid-medications"
+    },
+    {
+      "id": "notice",
+      "title": "Animal-derived thyroid products \u00b7 August 2026 notice",
+      "publisher": "U.S. FDA",
+      "note": "August 5,2026 letter retains interim risk-based enforcement while draft guidances are developed.",
+      "url": "https://www.fda.gov/media/191621/download"
+    },
+    {
+      "id": "ata",
+      "title": "Thyroid replacement guideline \u00b7 Full public text",
+      "publisher": "American Thyroid Association",
+      "note": "2014 guideline; thyroid extracts, monitoring and pediatric/central-disease recommendations reviewed.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4267409/"
+    },
+    {
+      "id": "statement",
+      "title": "Desiccated thyroid extract \u00b7 Professional statement",
+      "publisher": "American Thyroid Association",
+      "note": "September 18,2025; levothyroxine standard therapy, individualized therapy context. Regulatory account superseded where necessary by FDA2026.",
+      "url": "https://www.thyroid.org/ata-statement-desiccated-thyroid-extract/"
+    },
+    {
+      "id": "preg",
+      "title": "Pregnancy-specific professional guidance",
+      "publisher": "American Thyroid Association",
+      "note": "Public guidance checked October 1,2026; DTE/T3 not recommended for maternal hypothyroidism. No inaccessible 2026 full guideline claimed.",
+      "url": "https://www.thyroid.org/management-hypothyroidism-pregnancy/"
+    }
+  ],
+  "source_records": [
+    {
+      "id": "label",
+      "local_snapshot": "/tmp/nas-drug-sources/armour-current.xml",
+      "label_revision": "March2024",
+      "set_id": "56b41079-60db-4256-9695-202b3a65d13d",
+      "spl_version": "17",
+      "spl_effective_time": "20240313",
+      "dailymed_published_date": "2024-03-13",
+      "sha256": "7555b56fed44b50dd018e75807edabf5da2e1dadfb8e42977e954cb0c9f3a96c",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed."
+    },
+    {
+      "id": "fda",
+      "local_snapshot": "/tmp/nas-drug-sources/thyroid-fda2026.html",
+      "label_revision": "Current public page checked2026-10-01",
+      "sha256": "518bcf819f295e60f3ffff78b0a6d57bde628657bc6cc8d9849731d89963ac15",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed."
+    },
+    {
+      "id": "notice",
+      "local_snapshot": null,
+      "label_revision": "August5,2026 letter",
+      "access": "Full official one-page PDF read via web",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed."
+    },
+    {
+      "id": "ata",
+      "local_snapshot": "/tmp/nas-drug-sources/thyroid-ata2014.html",
+      "label_revision": "2014; DOI10.1089/thy.2014.0028",
+      "access": "Public full guideline relevant sections",
+      "sha256": "e7ef46fc3edb7e242ae233a2ca821297ae4a56a0c103ce435276bf018a331f5a",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed."
+    },
+    {
+      "id": "statement",
+      "local_snapshot": null,
+      "label_revision": "September18,2025",
+      "access": "Full current ATA page read via web; direct403",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed."
+    },
+    {
+      "id": "preg",
+      "local_snapshot": null,
+      "label_revision": "Public guidance currentat2026-10-01; not represented as new2026fullguideline",
+      "access": "Full current ATA page and relevant pregnancy text via web",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed."
+    }
+  ],
+  "assertion_map": [
+    {
+      "section": "indications",
+      "card": "Product identity and regulatory status",
+      "assertions": [
+        "Armour Thyroid is porcine desiccated thyroid extract containing T4 and T3. The current label and FDA identify animal-derived thyroid products as unapproved. DailyMed listing, prescription availability and longstanding use do not establish FDA approval or equivalence to approved levothyroxine."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Description; How supplied; unapproved disclaimer"
+        },
+        {
+          "id": "fda",
+          "sections": "Medications for hypothyroidism; concerns"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Label-described uses versus preferred care",
+      "assertions": [
+        "The unapproved Armour label describes thyroid replacement for hypothyroidism, excluding transient recovery-phase subacute thyroiditis, and TSH suppression for certain goiters/cancers. These are label statements, not FDA-approved indications or a recommendation to suppress TSH in every nodule. ATA recommends levothyroxine as routine first-line replacement; selected DTE therapy requires individualized discussion."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Indications and usage"
+        },
+        {
+          "id": "ata",
+          "sections": "\u00a712, Thyroid extracts"
+        },
+        {
+          "id": "statement",
+          "sections": "Standard therapy and individualized care"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Current enforcement and scope",
+      "assertions": [
+        "FDA\u2019s current page and August 5,2026 notice describe interim risk-based enforcement while guidance/development pathways are being worked on. This does not establish approval, a new DTE formulation, or a blanket market-removal date. Discuss treatment options with the prescriber; do not abandon necessary hormone replacement."
+      ],
+      "sources": [
+        {
+          "id": "fda",
+          "sections": "Plans; patient recommendations"
+        },
+        {
+          "id": "notice",
+          "sections": "Complete August5,2026 notice"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Armour adult label regimen",
+      "assertions": [
+        "The current unapproved product label describes a usual start of 30 mg/day, increasing by 15 mg every 2\u20133 weeks according to response/cardiovascular status. It describes 15 mg/day for longstanding myxedema, particularly when cardiovascular impairment is suspected, and usual maintenance 60\u2013120 mg/day. Angina warrants dose review/reduction. These are product-label summaries, not a universal starting prescription."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Dosage, Hypothyroidism; Precautions, General"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Units and dose selection",
+      "assertions": [
+        "One Armour grain is 60 mg extract with 38 mcg T4 and 9 mcg T3. Do not treat 60 mg extract as 60 mg pure thyroid hormone or equate its hormone content to a levothyroxine-only daily dose. Actual titration depends on thyroid tests, symptoms, indication, cardiac risk and the selected product."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Description; Dosage; packaging"
+        },
+        {
+          "id": "ata",
+          "sections": "\u00a712, Thyroid extracts"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric label table and current-care boundary",
+      "assertions": [
+        "The retained Armour label prints the following congenital-hypothyroidism table. It is presented as unapproved label content, not a first-line pediatric protocol. ATA pediatric guidance uses levothyroxine; congenital disease requires prompt pediatric endocrine treatment. The age amounts and weight amounts are both source columns and must not be combined or independently used to override a specialist dose."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Dosage, Pediatric dosage, Table1"
+        },
+        {
+          "id": "ata",
+          "sections": "\u00a76a\u20136b pediatric replacement"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Label age band",
+          "Extract mg/day column",
+          "Extract mg/kg/day column"
+        ],
+        "rows": [
+          [
+            "0\u20136 months",
+            "15\u201330 mg",
+            "4.8\u20136 mg/kg"
+          ],
+          [
+            "6\u201312 months",
+            "30\u201345 mg",
+            "3.6\u20134.8 mg/kg"
+          ],
+          [
+            "1\u20135 years",
+            "45\u201360 mg",
+            "3\u20133.6 mg/kg"
+          ],
+          [
+            "6\u201312 years",
+            "60\u201390 mg",
+            "2.4\u20133 mg/kg"
+          ],
+          [
+            "Over 12 years",
+            "Over 90 mg",
+            "1.2\u20131.8 mg/kg"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Administration, monitoring and organ impairment",
+      "assertions": [
+        "Use a consistent prescribed administration routine and reassess absorption/adherence after unexpected tests or a product change. Fasting can improve absorption; the Armour label does not establish a modern product-specific 30\u201360-minute meal rule. No validated CrCl/hepatic-adjustment formula is provided. Older/cardiac patients need cautious dosing, and central hypothyroidism cannot be titrated using TSH alone."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Clinical pharmacology, PK; Precautions; Dosage"
+        },
+        {
+          "id": "ata",
+          "sections": "\u00a78a central hypothyroidism; \u00a712 thyroid extracts"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Specialist indications and emergencies",
+      "assertions": [
+        "Cancer-related suppression needs a disease-specific specialist target; no universal suppression dose is supplied here. Myxedema coma is an emergency requiring hospital treatment and separate injectable thyroid hormone management, not a home Armour escalation. The label\u2019s older IV levothyroxine discussion is not an Armour formulation or conversion regimen."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Dosage, Myxedema coma; Thyroid cancer; general oral/IV distinction"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Over-replacement can cause palpitations, rapid/irregular pulse, tremor, sweating, heat intolerance or chest pain; urgent cardiac symptoms require prompt assessment. Older patients and those with coronary disease need particular caution. T3 content may produce post-dose peaks and thyrotoxic symptoms even when a simplistic conversion seems plausible.",
+        "Treat uncorrected adrenal cortical insufficiency before thyroid treatment; thyroid replacement can worsen its effects. Reassess diabetes treatment and anticoagulant monitoring when thyroid status changes. Excessive pediatric replacement can affect growth/skull development.",
+        "The label describes potential adventitious-agent contamination from porcine source/bovine-handling facilities, with no reported transmission cases in the label. Current FDA concerns include potency consistency and purity. Do not extrapolate this into a confirmed infection in a patient or an assertion that a specific current lot is recalled."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Contraindications; Warnings; Precautions, General; Information for patients"
+        },
+        {
+          "id": "ata",
+          "sections": "\u00a712 thyroid extracts"
+        },
+        {
+          "id": "fda",
+          "sections": "Safety/purity/potency concerns"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "The label lists uncorrected adrenal cortical insufficiency, untreated thyrotoxicosis and apparent hypersensitivity to active/extraneous constituents. Avoid assuming every pork-food allergy predicts the same reaction, or that the label\u2019s statement about rarity of true hormone allergy eliminates excipient/source assessment."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Contraindications; Description"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning: weight-loss misuse",
+      "assertions": [
+        "The current unapproved label contains a boxed warning against using thyroid hormone for obesity/weight loss: replacement-range doses do not produce effective weight loss in euthyroid patients, and larger doses can cause life-threatening toxicity, especially with sympathomimetic agents. The box\u2019s presence does not mean FDA approved the product labeling."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Boxed Warning; How supplied unapproved footnote"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "The product label primarily describes adverse effects of therapeutic overdosage resembling hyperthyroidism, including cardiovascular/CNS/metabolic symptoms. Partial hair loss in children may be transient early in therapy. Long-term excess hormone poses cardiac/skeletal concerns; no unsupported frequency estimate or comparative safety advantage is claimed."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Adverse reactions; Precautions, Information for patients"
+        },
+        {
+          "id": "ata",
+          "sections": "\u00a74c excess replacement; \u00a712 extracts"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Anticoagulants and diabetes medicines",
+      "assertions": [
+        "Thyroid replacement can increase sensitivity to oral anticoagulants; follow INR/prothrombin response and adjust the anticoagulant clinically. Glucose-lowering needs may increase as replacement is achieved and change again if therapy stops; monitor actual glucose control rather than apply a fixed insulin change."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Precautions, General; Drug interactions; Information for patients"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Absorption-binding agents",
+      "assertions": [
+        "Cholestyramine/colestipol bind both T4 and T3; the Armour label recommends 4\u20135 hours between them and thyroid hormone. Review iron, calcium and other binding agents with the prescriber/pharmacist; guidance on thyroid-hormone absorption does not establish automatic interchangeability of DTE and levothyroxine."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Drug interactions, Cholestyramine/Colestipol; PK"
+        },
+        {
+          "id": "ata",
+          "sections": "\u00a73b interacting medications/supplements"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Estrogens, binding proteins and testing",
+      "assertions": [
+        "Estrogens/estrogen-containing contraceptives raise thyroxine-binding globulin and can alter replacement requirements. Androgens, corticosteroids, salicylates and other agents can affect binding/test interpretation. Evaluate free hormone when total values are misleading; do not infer a new dose from a binding-protein change alone."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Drug interactions; Drug/laboratory-test interactions"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Biotin and sympathomimetics",
+      "assertions": [
+        "The label instructs stopping biotin-containing supplements at least 2 days before thyroid tests because certain assays can give erroneous results. Follow laboratory instructions when longer holds are needed. Sympathomimetic weight-loss combinations increase toxicity risk and are not an appropriate use of thyroid replacement."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Dosage; Drug/laboratory-test interactions; Boxed Warning"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and planning pregnancy",
+      "assertions": [
+        "Although the Armour label broadly includes pregnancy among replacement populations, ATA guidance recommends against continuing/starting DTE or T3 preparations for maternal hypothyroidism because fetal T4 delivery matters. Contact the clinician promptly for a levothyroxine-based plan and testing; do not abruptly stop necessary replacement while arranging care."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Indications and usage"
+        },
+        {
+          "id": "preg",
+          "sections": "Desiccated thyroid/T3 pregnancy recommendation"
+        },
+        {
+          "id": "ata",
+          "sections": "\u00a712 pregnancy limitation"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Breastfeeding",
+      "assertions": [
+        "The label reports minimal thyroid hormone in milk and advises caution. Adequate maternal replacement remains clinically important; use an individualized product choice and monitoring plan rather than assume the DTE source or a low transfer statement proves safety superiority."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Precautions, Nursing mothers"
+        },
+        {
+          "id": "ata",
+          "sections": "\u00a712 extracts, limited outcome data"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children, older adults and central disease",
+      "assertions": [
+        "Congenital hypothyroidism needs rapid, specialist-guided treatment; the Armour table does not supersede levothyroxine pediatric practice. Older/cardiac patients require low-dose caution. In pituitary/hypothalamic disease, free T4 and clinical assessment are important because TSH can be unreliable."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Precautions, General/Pediatric; Dosage"
+        },
+        {
+          "id": "ata",
+          "sections": "\u00a76a\u20136b pediatric; \u00a78a central; \u00a712 extracts"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic disease",
+      "assertions": [
+        "The reviewed Armour label gives no product-specific renal or hepatic dose table. Binding-protein changes, nephrotic hormone loss, other illnesses and cardiac risk can complicate tests/requirements. Do not transplant a levothyroxine-only no-adjustment rule into an untested universal DTE regimen."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Clinical pharmacology; laboratory-test interactions; Dosage"
+        },
+        {
+          "id": "ata",
+          "sections": "\u00a75b comorbid renal/liver disease; \u00a712 extracts"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and hormone ratio",
+      "assertions": [
+        "Thyroid hormones affect gene regulation, metabolism and development. T4 also provides a precursor for peripheral T3 production. Armour\u2019s 38: 9 microgram content gives a T4:T3 ratio about 4.2: 1; ATA discusses a higher T3 proportion than human thyroid secretion and resultant peak/excess concerns. No clinical superiority follows from containing both hormones."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Description; Clinical pharmacology"
+        },
+        {
+          "id": "ata",
+          "sections": "\u00a712 thyroid extracts"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Absorption and disposition",
+      "assertions": [
+        "The label describes incomplete variable T4 absorption, relatively rapid T3 absorption, extensive circulating protein binding, and deiodination/conjugation with enterohepatic handling. These hormone-level observations do not constitute a modern product-specific bioequivalence study for every DTE tablet or brand."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Clinical pharmacology, Pharmacokinetics"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Evidence limitations",
+      "assertions": [
+        "ATA\u2019s 2025 statement recognizes individualized patient preferences while retaining levothyroxine as standard therapy. The guideline identifies limited controlled long-term DTE safety/outcome evidence. Do not turn short-term preference data into a claim of established long-term safety or a validated genetic indication."
+      ],
+      "sources": [
+        {
+          "id": "statement",
+          "sections": "Standard and personalized therapy"
+        },
+        {
+          "id": "ata",
+          "sections": "\u00a712 thyroid extracts; \u00a713d genetic selection"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": [
+        "Assess thyroid tests and symptoms together, with cardiac status, diabetes/anticoagulant response and adherence/absorption context. Primary disease generally uses TSH; central disease requires free-T4 assessment. The Armour label describes reassessment within the first 4 weeks; timing and targets should be individualized rather than promise every patient normalizes in 2\u20133 weeks."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Laboratory tests; Dosage, Hypothyroidism"
+        },
+        {
+          "id": "ata",
+          "sections": "\u00a78a central; \u00a712 thyroid extracts"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "assertions": [
+        "Replacement may be lifelong. Report chest pain, tachycardia, palpitations, marked heat intolerance or nervousness. Keep the same verified product/routine until a planned change, disclose biotin and interacting medicines, and arrange follow-up after switches. Pregnancy planning should be discussed before conception."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Information for patients; Dosage"
+        },
+        {
+          "id": "preg",
+          "sections": "Pregnancy DTE recommendation"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Source and recall assessment",
+      "assertions": [
+        "Review actual manufacturer/strength/lot with the pharmacist if potency or supply concerns arise. FDA status concerns do not prove every brand/lot has the same defect. This profile is not a real-time recall clearance; continue clinically necessary replacement while seeking professional instructions."
+      ],
+      "sources": [
+        {
+          "id": "fda",
+          "sections": "Concerns; patient recommendations"
+        },
+        {
+          "id": "notice",
+          "sections": "Interim risk-based enforcement"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Armour 60 mg (1 grain) is a light-tan round tablet with an A/mortar-and-pestle motif and strength code TE; 100-count NDC 0456-0459-01. The current March 2024 label is distributed by AbbVie and expressly states it has not been approved as a new drug by FDA."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "How supplied; principal display panel; manufacturer footer"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Oral Armour tablets: 15, 30, 60, 90, 120, 180, 240 and 300 mg, corresponding to \u00bc, \u00bd, 1, 1\u00bd, 2, 3, 4 and 5 grains. Each Armour 60 mg tablet provides 38 mcg T4 and 9 mcg T3. Other DTE brands/salts may use different grain mass conventions; this profile verifies Armour, not every animal-derived product."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Description; How supplied; package strengths"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Store in a tight container protected from light/moisture at 15\u201330\u00b0C. Keep securely away from children. A characteristic extract odor is described by the label but does not replace package integrity/expiration checks."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Description; How supplied/storage"
+        }
+      ]
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Product identity and regulatory status",
+      "assertions": [
+        "Armour Thyroid is porcine desiccated thyroid extract containing T4 and T3. The current label and FDA identify animal-derived thyroid products as unapproved. DailyMed listing, prescription availability and longstanding use do not establish FDA approval or equivalence to approved levothyroxine."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Description; How supplied; unapproved disclaimer"
+        },
+        {
+          "id": "fda",
+          "sections": "Medications for hypothyroidism; concerns"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Label-described uses versus preferred care",
+      "assertions": [
+        "The unapproved Armour label describes thyroid replacement for hypothyroidism, excluding transient recovery-phase subacute thyroiditis, and TSH suppression for certain goiters/cancers. These are label statements, not FDA-approved indications or a recommendation to suppress TSH in every nodule. ATA recommends levothyroxine as routine first-line replacement; selected DTE therapy requires individualized discussion."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Indications and usage"
+        },
+        {
+          "id": "ata",
+          "sections": "\u00a712, Thyroid extracts"
+        },
+        {
+          "id": "statement",
+          "sections": "Standard therapy and individualized care"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Current enforcement and scope",
+      "assertions": [
+        "FDA\u2019s current page and August 5,2026 notice describe interim risk-based enforcement while guidance/development pathways are being worked on. This does not establish approval, a new DTE formulation, or a blanket market-removal date. Discuss treatment options with the prescriber; do not abandon necessary hormone replacement."
+      ],
+      "sources": [
+        {
+          "id": "fda",
+          "sections": "Plans; patient recommendations"
+        },
+        {
+          "id": "notice",
+          "sections": "Complete August5,2026 notice"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Armour adult label regimen",
+      "assertions": [
+        "The current unapproved product label describes a usual start of 30 mg/day, increasing by 15 mg every 2\u20133 weeks according to response/cardiovascular status. It describes 15 mg/day for longstanding myxedema, particularly when cardiovascular impairment is suspected, and usual maintenance 60\u2013120 mg/day. Angina warrants dose review/reduction. These are product-label summaries, not a universal starting prescription."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Dosage, Hypothyroidism; Precautions, General"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Units and dose selection",
+      "assertions": [
+        "One Armour grain is 60 mg extract with 38 mcg T4 and 9 mcg T3. Do not treat 60 mg extract as 60 mg pure thyroid hormone or equate its hormone content to a levothyroxine-only daily dose. Actual titration depends on thyroid tests, symptoms, indication, cardiac risk and the selected product."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Description; Dosage; packaging"
+        },
+        {
+          "id": "ata",
+          "sections": "\u00a712, Thyroid extracts"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric label table and current-care boundary",
+      "assertions": [
+        "The retained Armour label prints the following congenital-hypothyroidism table. It is presented as unapproved label content, not a first-line pediatric protocol. ATA pediatric guidance uses levothyroxine; congenital disease requires prompt pediatric endocrine treatment. The age amounts and weight amounts are both source columns and must not be combined or independently used to override a specialist dose."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Dosage, Pediatric dosage, Table1"
+        },
+        {
+          "id": "ata",
+          "sections": "\u00a76a\u20136b pediatric replacement"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Label age band",
+          "Extract mg/day column",
+          "Extract mg/kg/day column"
+        ],
+        "rows": [
+          [
+            "0\u20136 months",
+            "15\u201330 mg",
+            "4.8\u20136 mg/kg"
+          ],
+          [
+            "6\u201312 months",
+            "30\u201345 mg",
+            "3.6\u20134.8 mg/kg"
+          ],
+          [
+            "1\u20135 years",
+            "45\u201360 mg",
+            "3\u20133.6 mg/kg"
+          ],
+          [
+            "6\u201312 years",
+            "60\u201390 mg",
+            "2.4\u20133 mg/kg"
+          ],
+          [
+            "Over 12 years",
+            "Over 90 mg",
+            "1.2\u20131.8 mg/kg"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Administration, monitoring and organ impairment",
+      "assertions": [
+        "Use a consistent prescribed administration routine and reassess absorption/adherence after unexpected tests or a product change. Fasting can improve absorption; the Armour label does not establish a modern product-specific 30\u201360-minute meal rule. No validated CrCl/hepatic-adjustment formula is provided. Older/cardiac patients need cautious dosing, and central hypothyroidism cannot be titrated using TSH alone."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Clinical pharmacology, PK; Precautions; Dosage"
+        },
+        {
+          "id": "ata",
+          "sections": "\u00a78a central hypothyroidism; \u00a712 thyroid extracts"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Specialist indications and emergencies",
+      "assertions": [
+        "Cancer-related suppression needs a disease-specific specialist target; no universal suppression dose is supplied here. Myxedema coma is an emergency requiring hospital treatment and separate injectable thyroid hormone management, not a home Armour escalation. The label\u2019s older IV levothyroxine discussion is not an Armour formulation or conversion regimen."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Dosage, Myxedema coma; Thyroid cancer; general oral/IV distinction"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Over-replacement can cause palpitations, rapid/irregular pulse, tremor, sweating, heat intolerance or chest pain; urgent cardiac symptoms require prompt assessment. Older patients and those with coronary disease need particular caution. T3 content may produce post-dose peaks and thyrotoxic symptoms even when a simplistic conversion seems plausible.",
+        "Treat uncorrected adrenal cortical insufficiency before thyroid treatment; thyroid replacement can worsen its effects. Reassess diabetes treatment and anticoagulant monitoring when thyroid status changes. Excessive pediatric replacement can affect growth/skull development.",
+        "The label describes potential adventitious-agent contamination from porcine source/bovine-handling facilities, with no reported transmission cases in the label. Current FDA concerns include potency consistency and purity. Do not extrapolate this into a confirmed infection in a patient or an assertion that a specific current lot is recalled."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Contraindications; Warnings; Precautions, General; Information for patients"
+        },
+        {
+          "id": "ata",
+          "sections": "\u00a712 thyroid extracts"
+        },
+        {
+          "id": "fda",
+          "sections": "Safety/purity/potency concerns"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "The label lists uncorrected adrenal cortical insufficiency, untreated thyrotoxicosis and apparent hypersensitivity to active/extraneous constituents. Avoid assuming every pork-food allergy predicts the same reaction, or that the label\u2019s statement about rarity of true hormone allergy eliminates excipient/source assessment."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Contraindications; Description"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning: weight-loss misuse",
+      "assertions": [
+        "The current unapproved label contains a boxed warning against using thyroid hormone for obesity/weight loss: replacement-range doses do not produce effective weight loss in euthyroid patients, and larger doses can cause life-threatening toxicity, especially with sympathomimetic agents. The box\u2019s presence does not mean FDA approved the product labeling."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Boxed Warning; How supplied unapproved footnote"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "The product label primarily describes adverse effects of therapeutic overdosage resembling hyperthyroidism, including cardiovascular/CNS/metabolic symptoms. Partial hair loss in children may be transient early in therapy. Long-term excess hormone poses cardiac/skeletal concerns; no unsupported frequency estimate or comparative safety advantage is claimed."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Adverse reactions; Precautions, Information for patients"
+        },
+        {
+          "id": "ata",
+          "sections": "\u00a74c excess replacement; \u00a712 extracts"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Anticoagulants and diabetes medicines",
+      "assertions": [
+        "Thyroid replacement can increase sensitivity to oral anticoagulants; follow INR/prothrombin response and adjust the anticoagulant clinically. Glucose-lowering needs may increase as replacement is achieved and change again if therapy stops; monitor actual glucose control rather than apply a fixed insulin change."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Precautions, General; Drug interactions; Information for patients"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Absorption-binding agents",
+      "assertions": [
+        "Cholestyramine/colestipol bind both T4 and T3; the Armour label recommends 4\u20135 hours between them and thyroid hormone. Review iron, calcium and other binding agents with the prescriber/pharmacist; guidance on thyroid-hormone absorption does not establish automatic interchangeability of DTE and levothyroxine."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Drug interactions, Cholestyramine/Colestipol; PK"
+        },
+        {
+          "id": "ata",
+          "sections": "\u00a73b interacting medications/supplements"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Estrogens, binding proteins and testing",
+      "assertions": [
+        "Estrogens/estrogen-containing contraceptives raise thyroxine-binding globulin and can alter replacement requirements. Androgens, corticosteroids, salicylates and other agents can affect binding/test interpretation. Evaluate free hormone when total values are misleading; do not infer a new dose from a binding-protein change alone."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Drug interactions; Drug/laboratory-test interactions"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Biotin and sympathomimetics",
+      "assertions": [
+        "The label instructs stopping biotin-containing supplements at least 2 days before thyroid tests because certain assays can give erroneous results. Follow laboratory instructions when longer holds are needed. Sympathomimetic weight-loss combinations increase toxicity risk and are not an appropriate use of thyroid replacement."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Dosage; Drug/laboratory-test interactions; Boxed Warning"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and planning pregnancy",
+      "assertions": [
+        "Although the Armour label broadly includes pregnancy among replacement populations, ATA guidance recommends against continuing/starting DTE or T3 preparations for maternal hypothyroidism because fetal T4 delivery matters. Contact the clinician promptly for a levothyroxine-based plan and testing; do not abruptly stop necessary replacement while arranging care."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Indications and usage"
+        },
+        {
+          "id": "preg",
+          "sections": "Desiccated thyroid/T3 pregnancy recommendation"
+        },
+        {
+          "id": "ata",
+          "sections": "\u00a712 pregnancy limitation"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Breastfeeding",
+      "assertions": [
+        "The label reports minimal thyroid hormone in milk and advises caution. Adequate maternal replacement remains clinically important; use an individualized product choice and monitoring plan rather than assume the DTE source or a low transfer statement proves safety superiority."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Precautions, Nursing mothers"
+        },
+        {
+          "id": "ata",
+          "sections": "\u00a712 extracts, limited outcome data"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children, older adults and central disease",
+      "assertions": [
+        "Congenital hypothyroidism needs rapid, specialist-guided treatment; the Armour table does not supersede levothyroxine pediatric practice. Older/cardiac patients require low-dose caution. In pituitary/hypothalamic disease, free T4 and clinical assessment are important because TSH can be unreliable."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Precautions, General/Pediatric; Dosage"
+        },
+        {
+          "id": "ata",
+          "sections": "\u00a76a\u20136b pediatric; \u00a78a central; \u00a712 extracts"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic disease",
+      "assertions": [
+        "The reviewed Armour label gives no product-specific renal or hepatic dose table. Binding-protein changes, nephrotic hormone loss, other illnesses and cardiac risk can complicate tests/requirements. Do not transplant a levothyroxine-only no-adjustment rule into an untested universal DTE regimen."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Clinical pharmacology; laboratory-test interactions; Dosage"
+        },
+        {
+          "id": "ata",
+          "sections": "\u00a75b comorbid renal/liver disease; \u00a712 extracts"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and hormone ratio",
+      "assertions": [
+        "Thyroid hormones affect gene regulation, metabolism and development. T4 also provides a precursor for peripheral T3 production. Armour\u2019s 38: 9 microgram content gives a T4:T3 ratio about 4.2: 1; ATA discusses a higher T3 proportion than human thyroid secretion and resultant peak/excess concerns. No clinical superiority follows from containing both hormones."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Description; Clinical pharmacology"
+        },
+        {
+          "id": "ata",
+          "sections": "\u00a712 thyroid extracts"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Absorption and disposition",
+      "assertions": [
+        "The label describes incomplete variable T4 absorption, relatively rapid T3 absorption, extensive circulating protein binding, and deiodination/conjugation with enterohepatic handling. These hormone-level observations do not constitute a modern product-specific bioequivalence study for every DTE tablet or brand."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Clinical pharmacology, Pharmacokinetics"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Evidence limitations",
+      "assertions": [
+        "ATA\u2019s 2025 statement recognizes individualized patient preferences while retaining levothyroxine as standard therapy. The guideline identifies limited controlled long-term DTE safety/outcome evidence. Do not turn short-term preference data into a claim of established long-term safety or a validated genetic indication."
+      ],
+      "sources": [
+        {
+          "id": "statement",
+          "sections": "Standard and personalized therapy"
+        },
+        {
+          "id": "ata",
+          "sections": "\u00a712 thyroid extracts; \u00a713d genetic selection"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": [
+        "Assess thyroid tests and symptoms together, with cardiac status, diabetes/anticoagulant response and adherence/absorption context. Primary disease generally uses TSH; central disease requires free-T4 assessment. The Armour label describes reassessment within the first 4 weeks; timing and targets should be individualized rather than promise every patient normalizes in 2\u20133 weeks."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Laboratory tests; Dosage, Hypothyroidism"
+        },
+        {
+          "id": "ata",
+          "sections": "\u00a78a central; \u00a712 thyroid extracts"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "assertions": [
+        "Replacement may be lifelong. Report chest pain, tachycardia, palpitations, marked heat intolerance or nervousness. Keep the same verified product/routine until a planned change, disclose biotin and interacting medicines, and arrange follow-up after switches. Pregnancy planning should be discussed before conception."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Information for patients; Dosage"
+        },
+        {
+          "id": "preg",
+          "sections": "Pregnancy DTE recommendation"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Source and recall assessment",
+      "assertions": [
+        "Review actual manufacturer/strength/lot with the pharmacist if potency or supply concerns arise. FDA status concerns do not prove every brand/lot has the same defect. This profile is not a real-time recall clearance; continue clinically necessary replacement while seeking professional instructions."
+      ],
+      "sources": [
+        {
+          "id": "fda",
+          "sections": "Concerns; patient recommendations"
+        },
+        {
+          "id": "notice",
+          "sections": "Interim risk-based enforcement"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Armour 60 mg (1 grain) is a light-tan round tablet with an A/mortar-and-pestle motif and strength code TE; 100-count NDC 0456-0459-01. The current March 2024 label is distributed by AbbVie and expressly states it has not been approved as a new drug by FDA."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "How supplied; principal display panel; manufacturer footer"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Oral Armour tablets: 15, 30, 60, 90, 120, 180, 240 and 300 mg, corresponding to \u00bc, \u00bd, 1, 1\u00bd, 2, 3, 4 and 5 grains. Each Armour 60 mg tablet provides 38 mcg T4 and 9 mcg T3. Other DTE brands/salts may use different grain mass conventions; this profile verifies Armour, not every animal-derived product."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Description; How supplied; package strengths"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Store in a tight container protected from light/moisture at 15\u201330\u00b0C. Keep securely away from children. A characteristic extract odor is described by the label but does not replace package integrity/expiration checks."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Description; How supplied/storage"
+        }
+      ]
+    }
+  ],
+  "hero_assertions": {
+    "essential": {
+      "title": "Avoid hormone excess and weight-loss misuse",
+      "text": "DTE is not FDA-approved and is not for weight loss. Verify the product and units, monitor thyroid/cardiac effects, and discuss pregnancy or treatment changes with the clinician.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "facts": [
+      [
+        "Product type",
+        "Porcine thyroid extract"
+      ],
+      [
+        "Armour 1 grain",
+        "60 mg: 38 mcg T4 + 9 mcg T3"
+      ],
+      [
+        "U.S. status",
+        "Not FDA-approved"
+      ]
+    ],
+    "sources": [
+      "label",
+      "fda",
+      "notice",
+      "ata",
+      "statement",
+      "preg"
+    ]
+  },
+  "section_assertions": [
+    {
+      "section": "indications",
+      "summary": "This inventory entry means desiccated thyroid extract, not levothyroxine alone.",
+      "takeaway": "Armour is a prescription product whose labeling is not FDA-approved.",
+      "sources": [
+        "ata",
+        "fda",
+        "label",
+        "notice",
+        "statement"
+      ]
+    },
+    {
+      "section": "dosage",
+      "summary": "Armour dosing uses milligrams of extract/grains, not the microgram dose of levothyroxine.",
+      "takeaway": "Hormone content is not a safe automatic conversion to another thyroid product.",
+      "sources": [
+        "ata",
+        "label"
+      ]
+    },
+    {
+      "section": "safety",
+      "summary": "Excess hormone, cardiac effects and uncorrected adrenal insufficiency can cause serious harm.",
+      "takeaway": "\u201cNatural\u201d origin does not establish lower risk.",
+      "sources": [
+        "ata",
+        "fda",
+        "label"
+      ]
+    },
+    {
+      "section": "interactions",
+      "summary": "Absorption, thyroid-binding changes and altered drug response can affect treatment.",
+      "takeaway": "Review medicines and supplements whenever hormone therapy changes.",
+      "sources": [
+        "ata",
+        "label"
+      ]
+    },
+    {
+      "section": "populations",
+      "summary": "Preferred therapy differs from the historical breadth of the unapproved product label.",
+      "takeaway": "Pregnancy calls for prompt review and adequate T4 replacement.",
+      "sources": [
+        "ata",
+        "label",
+        "preg"
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "summary": "DTE delivers both T4 and T3 from animal tissue.",
+      "takeaway": "Its fixed T4:T3 ratio is different from normal human thyroid secretion.",
+      "sources": [
+        "ata",
+        "label",
+        "statement"
+      ]
+    },
+    {
+      "section": "practice",
+      "summary": "Track thyroid tests, clinical response and product changes with the prescriber.",
+      "takeaway": "A product change is a clinical event requiring follow-up.",
+      "sources": [
+        "ata",
+        "fda",
+        "label",
+        "notice",
+        "preg"
+      ]
+    },
+    {
+      "section": "product",
+      "summary": "Identify extract mass, grain strength and both hormone contents.",
+      "takeaway": "Do not substitute a different grain convention or thyroid product without verification.",
+      "sources": [
+        "label"
+      ]
+    }
+  ],
+  "limitations": [
+    "Legacy unapproved pediatric label table contextualized as source content; levothyroxine is preferred specialist care, not an initiation protocol.",
+    "Armour older IV myxedema discussion not propagated as an Armour/injection regimen or universal elderly dose.",
+    "FDA2026 primary status supersedes older blanket removal timelines; no completed newapproval or deadline invented.",
+    "No modern product-specific bioequivalence/renal/hepatic formula or robust long-termDTE safety claim."
+  ],
+  "unresolved_source_questions": [
+    {
+      "material": false,
+      "source": "label",
+      "issue": "Unapproved Armour pediatric/historical doses explicitly presented as label content, not first-line initiation or IV emergency regimen; currentpreferred levothyroxine and pregnancyDTE boundary explicit."
+    },
+    {
+      "material": false,
+      "source": "fda",
+      "issue": "Approval/deadline changes need ongoing futureverification; actualcurrentFDA2026 status published, no blanketremoval inferred."
+    }
+  ],
+  "validation": {
+    "schema": "Passed actual validator; exactAPAP8section4Safety3Product3tuplehero contract",
+    "tests_build_lint": "Parent batch checks required",
+    "rendered_page": "Parent batch QA required"
+  },
+  "monograph_sha256": "7ff0a87edb2f44ebc11f3644c5ce251d57332da71c130ef3ad564846782fe78d"
+}

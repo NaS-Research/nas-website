@@ -1,0 +1,764 @@
+{
+  "slug": "loratadine",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "SelectedBayerU.S. singleingredientOTC10mgtablet/10mgRediTabs/5mgchew/5mgper5mLsolution; exactcurrentDrugFacts ages/doses/warnings/storage. Archived2000FDA referencePK/interactions only;2026OTISpregnancy/lactationcontext.",
+  "excludedRegimens": [
+    "Chronicurticaria/highdoseofflabelregimens;ClaritinDpseudoephedrine orothercombinations",
+    "NumericalrenalhepaticadjustmentnotprovidedincurrentOTC DrugFacts",
+    "Under2selfcare/under6selected10mgselfcare; historicalRxindications/categories/emesisinstructions",
+    "Othermanufacturerexcipients/storage; desloratadinemgconversion"
+  ],
+  "sources": [
+    {
+      "id": "label",
+      "title": "Claritin 10 mg tablets · Drug Facts",
+      "publisher": "DailyMed / Bayer HealthCare LLC",
+      "note": "Current SPL version 12, effective 2025-12-05. ",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=660ac9df-f1b1-4c89-94dd-9fae0a013f3c"
+    },
+    {
+      "id": "odt",
+      "title": "Claritin RediTabs 10 mg · Drug Facts",
+      "publisher": "DailyMed / Bayer HealthCare LLC",
+      "note": "Current SPL version 12, effective 2025-12-05. ",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b681ea25-d00b-4c8a-8054-cc6f983ce337"
+    },
+    {
+      "id": "liquid",
+      "title": "Children’s Claritin 5 mg/5 mL · Drug Facts",
+      "publisher": "DailyMed / Bayer HealthCare LLC",
+      "note": "Current SPL version 18, effective 2025-05-15. ",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=170061e9-e529-4ff0-e054-00144ff8d46c"
+    },
+    {
+      "id": "chew",
+      "title": "Children’s Claritin 5 mg chewables · Drug Facts",
+      "publisher": "DailyMed / Bayer HealthCare LLC",
+      "note": "Current SPL version 8, effective 2025-12-05. ",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=20938e05-bc3e-51aa-e054-00144ff88e88"
+    },
+    {
+      "id": "pharm",
+      "title": "Claritin · Historical FDA pharmacology reference",
+      "publisher": "U.S. FDA",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2000/20641s7lbl.pdf",
+      "note": "Archived 2000 prescription label, used only for pharmacology and interaction studies; not current OTC indications, doses, pregnancy categories or overdose treatment."
+    },
+    {
+      "id": "pregnancy",
+      "title": "Loratadine · Pregnancy and breastfeeding fact sheet",
+      "publisher": "MotherToBaby / OTIS",
+      "url": "https://mothertobaby.org/fact-sheets/loratadine-pregnancy/",
+      "note": "February 1, 2026 public teratology-service review; pregnancy/lactation evidence context only."
+    }
+  ],
+  "labelMetadata": [
+    {
+      "sourceId": "label",
+      "product": "loratadine-tablet",
+      "setid": "660ac9df-f1b1-4c89-94dd-9fae0a013f3c",
+      "version": "12",
+      "effectiveTime": "20251205",
+      "documentVersion": "Current DrugFacts SPL; not historicalRxPI",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/660ac9df-f1b1-4c89-94dd-9fae0a013f3c.xml",
+      "xmlSha256": "a67bf1a99270000b01e2acba224fc7e602cd5d5070662fd2f489c3b752429677"
+    },
+    {
+      "sourceId": "odt",
+      "product": "loratadine-odt",
+      "setid": "b681ea25-d00b-4c8a-8054-cc6f983ce337",
+      "version": "12",
+      "effectiveTime": "20251205",
+      "documentVersion": "Current DrugFacts SPL; not historicalRxPI",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/b681ea25-d00b-4c8a-8054-cc6f983ce337.xml",
+      "xmlSha256": "ce01e38e712da30e202bc65c129f3c2edd3443b1786724b06b7d2be0688dc3e6"
+    },
+    {
+      "sourceId": "liquid",
+      "product": "loratadine-liquid",
+      "setid": "170061e9-e529-4ff0-e054-00144ff8d46c",
+      "version": "18",
+      "effectiveTime": "20250515",
+      "documentVersion": "Current DrugFacts SPL; not historicalRxPI",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/170061e9-e529-4ff0-e054-00144ff8d46c.xml",
+      "xmlSha256": "c469c563e78ad29eb5bf6c26c1f30938e45f936ceacb426011d5ffd0daa9e07b"
+    },
+    {
+      "sourceId": "chew",
+      "product": "loratadine-chew",
+      "setid": "20938e05-bc3e-51aa-e054-00144ff88e88",
+      "version": "8",
+      "effectiveTime": "20251205",
+      "documentVersion": "Current DrugFacts SPL; not historicalRxPI",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/20938e05-bc3e-51aa-e054-00144ff88e88.xml",
+      "xmlSha256": "67ebdfc09768bd7a4805f9be3a6d0dbffac1fc03edac15ecb9a976d97388761d"
+    }
+  ],
+  "evidence": [
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/loratadine-tablet.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/loratadine/loratadine-tablet.xml",
+      "sha256": "a67bf1a99270000b01e2acba224fc7e602cd5d5070662fd2f489c3b752429677",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/660ac9df-f1b1-4c89-94dd-9fae0a013f3c.xml"
+    },
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/loratadine-tablet-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/loratadine/loratadine-tablet-sections.json",
+      "sha256": "77d4aada0a052c86b53859069cfd765cc7342328a749564aa30ee39479ab5ea1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/660ac9df-f1b1-4c89-94dd-9fae0a013f3c.xml"
+    },
+    {
+      "sourceId": "odt",
+      "localEvidence": "/tmp/nas-drug-sources/loratadine-odt.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/loratadine/loratadine-odt.xml",
+      "sha256": "ce01e38e712da30e202bc65c129f3c2edd3443b1786724b06b7d2be0688dc3e6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/b681ea25-d00b-4c8a-8054-cc6f983ce337.xml"
+    },
+    {
+      "sourceId": "odt",
+      "localEvidence": "/tmp/nas-drug-sources/loratadine-odt-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/loratadine/loratadine-odt-sections.json",
+      "sha256": "d8180f2e26f2f00436c6667c2c06225c2b8ea0e5e3cc90ff269596be23454d20",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/b681ea25-d00b-4c8a-8054-cc6f983ce337.xml"
+    },
+    {
+      "sourceId": "liquid",
+      "localEvidence": "/tmp/nas-drug-sources/loratadine-liquid.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/loratadine/loratadine-liquid.xml",
+      "sha256": "c469c563e78ad29eb5bf6c26c1f30938e45f936ceacb426011d5ffd0daa9e07b",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/170061e9-e529-4ff0-e054-00144ff8d46c.xml"
+    },
+    {
+      "sourceId": "liquid",
+      "localEvidence": "/tmp/nas-drug-sources/loratadine-liquid-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/loratadine/loratadine-liquid-sections.json",
+      "sha256": "23c4c903ce812892bcfbfa5e4e151a0db28d8063e332af52841e7f202b195b2a",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/170061e9-e529-4ff0-e054-00144ff8d46c.xml"
+    },
+    {
+      "sourceId": "chew",
+      "localEvidence": "/tmp/nas-drug-sources/loratadine-chew.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/loratadine/loratadine-chew.xml",
+      "sha256": "67ebdfc09768bd7a4805f9be3a6d0dbffac1fc03edac15ecb9a976d97388761d",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/20938e05-bc3e-51aa-e054-00144ff88e88.xml"
+    },
+    {
+      "sourceId": "chew",
+      "localEvidence": "/tmp/nas-drug-sources/loratadine-chew-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/loratadine/loratadine-chew-sections.json",
+      "sha256": "d9372bb4efeefbf5f538bec481f611f1c9240641ba6eba3c25e30c763fad5c0c",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/20938e05-bc3e-51aa-e054-00144ff88e88.xml"
+    },
+    {
+      "sourceId": "pharm",
+      "localEvidence": "/tmp/nas-drug-sources/loratadine-fda-pharm.pdf",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/loratadine/loratadine-fda-pharm.pdf",
+      "sha256": "d1050da4d59655ec2e586348c025b80192d7306cf05b9f39f995b85e818a6f8b",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2000/20641s7lbl.pdf"
+    },
+    {
+      "sourceId": "pharm",
+      "localEvidence": "/tmp/nas-drug-sources/loratadine-fda-pharm.txt",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/loratadine/loratadine-fda-pharm.txt",
+      "sha256": "7979c0313c553be72193c25e990865b598bf5dfd791f6eef438afd18031ed795",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2000/20641s7lbl.pdf"
+    },
+    {
+      "sourceId": "pregnancy",
+      "localEvidence": "/tmp/nas-drug-sources/loratadine-mtb.html",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/loratadine/loratadine-mtb.html",
+      "sha256": "74e521fddea94c1054a17c0fba0aaf85ed9bfa3c4280547352a9ad01e89ccff5",
+      "url": "https://mothertobaby.org/fact-sheets/loratadine-pregnancy/"
+    }
+  ],
+  "sourceEvidenceRoot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/loratadine",
+  "sourceManifest": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/loratadine/source-manifest.json",
+  "assertionToSourceMap": [
+    {
+      "section": "indications",
+      "card": "Labeled allergy symptom relief",
+      "assertions": {
+        "paragraphs": [
+          "The selected Drug Facts cover runny nose, sneezing, itchy/watery eyes and itching of the nose or throat caused by hay fever or other upper-respiratory allergies. Relief of these symptoms does not establish treatment of their underlying cause."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "odt",
+        "liquid",
+        "chew"
+      ],
+      "sourceSections": {
+        "label": "Current full tablet Drug Facts: Uses/Warnings/Directions/Other Information; product XML characteristics",
+        "odt": "Current full 10mg RediTabs Drug Facts: Uses/Warnings/Directions/Other Information",
+        "liquid": "Current full 5mg/5mL Drug Facts: Uses/Warnings/Directions/Other Information",
+        "chew": "Current full 5mg chewable Drug Facts: Uses/Warnings/Directions/Other Information"
+      },
+      "review": "Reviewed full supporting source sections; clinical monitoring/urgent assessment synthesis identified; formulation and guideline scopes explicit."
+    },
+    {
+      "section": "indications",
+      "card": "Scope and other uses",
+      "assertions": {
+        "paragraphs": [
+          "The current selected OTC labels do not list chronic urticaria. Clinician-directed hive treatment, higher-dose antihistamine regimens and combination Claritin-D products require a separate assessment. Desloratadine is a different drug; do not substitute it milligram for milligram."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "odt",
+        "liquid",
+        "chew",
+        "pregnancy"
+      ],
+      "sourceSections": {
+        "label": "Current full tablet Drug Facts: Uses/Warnings/Directions/Other Information; product XML characteristics",
+        "odt": "Current full 10mg RediTabs Drug Facts: Uses/Warnings/Directions/Other Information",
+        "liquid": "Current full 5mg/5mL Drug Facts: Uses/Warnings/Directions/Other Information",
+        "chew": "Current full 5mg chewable Drug Facts: Uses/Warnings/Directions/Other Information",
+        "pregnancy": "2026 fact sheet description of desloratadine as distinct drug; Uses scope is current OTC labels not older prescription urticaria"
+      },
+      "review": "Reviewed full supporting source sections; clinical monitoring/urgent assessment synthesis identified; formulation and guideline scopes explicit."
+    },
+    {
+      "section": "dosage",
+      "card": "Selected oral directions",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Product",
+            "Adults and children age 6 or older",
+            "Children age 2 to under 6"
+          ],
+          "rows": [
+            [
+              "10 mg tablet",
+              "1 tablet daily; maximum 1 in 24 hours",
+              "Under 6: ask a doctor"
+            ],
+            [
+              "10 mg RediTab",
+              "1 tablet daily; maximum 1 in 24 hours",
+              "Under 6: ask a doctor"
+            ],
+            [
+              "5 mg chewable",
+              "Chew 2 tablets daily; maximum 2 in 24 hours",
+              "Chew 1 tablet daily; maximum 1 in 24 hours"
+            ],
+            [
+              "5 mg/5 mL oral solution",
+              "10 mL daily; maximum 10 mL in 24 hours",
+              "5 mL daily; maximum 5 mL in 24 hours"
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label",
+        "odt",
+        "liquid",
+        "chew"
+      ],
+      "sourceSections": {
+        "label": "Current full tablet Drug Facts: Uses/Warnings/Directions/Other Information; product XML characteristics",
+        "odt": "Current full 10mg RediTabs Drug Facts: Uses/Warnings/Directions/Other Information",
+        "liquid": "Current full 5mg/5mL Drug Facts: Uses/Warnings/Directions/Other Information",
+        "chew": "Current full 5mg chewable Drug Facts: Uses/Warnings/Directions/Other Information"
+      },
+      "review": "Reviewed full supporting source sections; clinical monitoring/urgent assessment synthesis identified; formulation and guideline scopes explicit."
+    },
+    {
+      "section": "dosage",
+      "card": "Administration by formulation",
+      "assertions": {
+        "paragraphs": [
+          "For the selected liquid, use only its enclosed dosing cup; children under 2 require a doctor. Chew the selected chewable tablets. Place a RediTab on the tongue immediately after opening its individual blister; it dissolves and may be taken with or without water. These are oral products, not injections or nasal sprays."
+        ]
+      },
+      "sourceIds": [
+        "odt",
+        "liquid",
+        "chew"
+      ],
+      "sourceSections": {
+        "odt": "Current full 10mg RediTabs Drug Facts: Uses/Warnings/Directions/Other Information",
+        "liquid": "Current full 5mg/5mL Drug Facts: Uses/Warnings/Directions/Other Information",
+        "chew": "Current full 5mg chewable Drug Facts: Uses/Warnings/Directions/Other Information"
+      },
+      "review": "Reviewed full supporting source sections; clinical monitoring/urgent assessment synthesis identified; formulation and guideline scopes explicit."
+    },
+    {
+      "section": "dosage",
+      "card": "Liver, kidney disease and dose review",
+      "assertions": {
+        "paragraphs": [
+          "The current Drug Facts direct people with liver or kidney disease to a doctor, who should determine whether a different dose is needed. They provide no numerical organ-adjustment algorithm. Do not turn historical prescription-label directions into a universal current OTC regimen."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "odt",
+        "liquid",
+        "chew"
+      ],
+      "sourceSections": {
+        "label": "Current full tablet Drug Facts: Uses/Warnings/Directions/Other Information; product XML characteristics",
+        "odt": "Current full 10mg RediTabs Drug Facts: Uses/Warnings/Directions/Other Information",
+        "liquid": "Current full 5mg/5mL Drug Facts: Uses/Warnings/Directions/Other Information",
+        "chew": "Current full 5mg chewable Drug Facts: Uses/Warnings/Directions/Other Information"
+      },
+      "review": "Reviewed full supporting source sections; clinical monitoring/urgent assessment synthesis identified; formulation and guideline scopes explicit."
+    },
+    {
+      "section": "dosage",
+      "card": "Dose safeguards",
+      "assertions": {
+        "paragraphs": [
+          "Check the active ingredient in every allergy/cold product and follow the daily limit. Taking more than directed can cause drowsiness. If symptoms remain troublesome, obtain clinical advice rather than escalating the dose independently."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "odt",
+        "liquid",
+        "chew"
+      ],
+      "sourceSections": {
+        "label": "Current full tablet Drug Facts: Uses/Warnings/Directions/Other Information; product XML characteristics",
+        "odt": "Current full 10mg RediTabs Drug Facts: Uses/Warnings/Directions/Other Information",
+        "liquid": "Current full 5mg/5mL Drug Facts: Uses/Warnings/Directions/Other Information",
+        "chew": "Current full 5mg chewable Drug Facts: Uses/Warnings/Directions/Other Information"
+      },
+      "review": "Reviewed full supporting source sections; clinical monitoring/urgent assessment synthesis identified; formulation and guideline scopes explicit."
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Ask a doctor before use with liver or kidney disease. Taking more than directed may cause drowsiness; avoid hazardous tasks if you become sleepy. Stop use and obtain medical help immediately if an allergic reaction occurs.",
+          "The selected 5 mg chewable contains aspartame and 1.9 mg phenylalanine per tablet, relevant to phenylketonuria. Do not assume every loratadine formulation contains the same excipients. Keep all products away from children."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "odt",
+        "liquid",
+        "chew"
+      ],
+      "sourceSections": {
+        "label": "Current full tablet Drug Facts: Uses/Warnings/Directions/Other Information; product XML characteristics",
+        "odt": "Current full 10mg RediTabs Drug Facts: Uses/Warnings/Directions/Other Information",
+        "liquid": "Current full 5mg/5mL Drug Facts: Uses/Warnings/Directions/Other Information",
+        "chew": "Current full 5mg chewable Drug Facts: Uses/Warnings/Directions/Other Information"
+      },
+      "review": "Reviewed full supporting source sections; clinical monitoring/urgent assessment synthesis identified; formulation and guideline scopes explicit."
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Do not use after an allergic reaction to loratadine or any ingredient in the selected product. Read the specific inactive-ingredient list when choosing another formulation."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "odt",
+        "liquid",
+        "chew"
+      ],
+      "sourceSections": {
+        "label": "Current full tablet Drug Facts: Uses/Warnings/Directions/Other Information; product XML characteristics",
+        "odt": "Current full 10mg RediTabs Drug Facts: Uses/Warnings/Directions/Other Information",
+        "liquid": "Current full 5mg/5mL Drug Facts: Uses/Warnings/Directions/Other Information",
+        "chew": "Current full 5mg chewable Drug Facts: Uses/Warnings/Directions/Other Information"
+      },
+      "review": "Reviewed full supporting source sections; clinical monitoring/urgent assessment synthesis identified; formulation and guideline scopes explicit."
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "The selected U.S. OTC Drug Facts have no boxed warning. Their allergy, overdose, age and organ-disease precautions remain applicable."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "odt",
+        "liquid",
+        "chew"
+      ],
+      "sourceSections": {
+        "label": "Current full tablet Drug Facts: Uses/Warnings/Directions/Other Information; product XML characteristics",
+        "odt": "Current full 10mg RediTabs Drug Facts: Uses/Warnings/Directions/Other Information",
+        "liquid": "Current full 5mg/5mL Drug Facts: Uses/Warnings/Directions/Other Information",
+        "chew": "Current full 5mg chewable Drug Facts: Uses/Warnings/Directions/Other Information"
+      },
+      "review": "Reviewed full supporting source sections; clinical monitoring/urgent assessment synthesis identified; formulation and guideline scopes explicit."
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "The current Drug Facts specifically warn about allergic reactions and drowsiness when exceeding directions, without supplying a comprehensive incidence table. Historical prescription studies also describe headache, fatigue, dry mouth and somnolence. Do not interpret OTC status as proof of absence of adverse effects."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "odt",
+        "liquid",
+        "chew",
+        "pharm"
+      ],
+      "sourceSections": {
+        "label": "Current full tablet Drug Facts: Uses/Warnings/Directions/Other Information; product XML characteristics",
+        "odt": "Current full 10mg RediTabs Drug Facts: Uses/Warnings/Directions/Other Information",
+        "liquid": "Current full 5mg/5mL Drug Facts: Uses/Warnings/Directions/Other Information",
+        "chew": "Current full 5mg chewable Drug Facts: Uses/Warnings/Directions/Other Information",
+        "pharm": "Archived2000 Adverse Reactions and clinical trials: headache/fatigue/drymouth/somnolence, no current incidence generalized"
+      },
+      "review": "Reviewed full supporting source sections; clinical monitoring/urgent assessment synthesis identified; formulation and guideline scopes explicit."
+    },
+    {
+      "section": "interactions",
+      "card": "Metabolic interactions",
+      "assertions": {
+        "paragraphs": [
+          "Historical FDA studies found increased loratadine exposure with ketoconazole, erythromycin or cimetidine, without clinically important ECG or safety changes in the studied volunteers. Review these combinations clinically, especially with organ impairment; there is no universal adjustment established by those studies."
+        ]
+      },
+      "sourceIds": [
+        "pharm"
+      ],
+      "sourceSections": {
+        "pharm": "Archived2000 full Drug Interactions: ketoconazole/erythromycin/cimetidine healthy-volunteer PK/safety/ECG findings; no universal adjustment"
+      },
+      "review": "Reviewed full supporting source sections; clinical monitoring/urgent assessment synthesis identified; formulation and guideline scopes explicit."
+    },
+    {
+      "section": "interactions",
+      "card": "OTC combinations and formulation ingredients",
+      "assertions": {
+        "paragraphs": [
+          "Check allergy/cold medicines for duplicate loratadine or additional active ingredients. Claritin-D contains a separate decongestant and needs its own interaction review. The selected chewable’s phenylalanine content matters to people with phenylketonuria."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "odt",
+        "liquid",
+        "chew"
+      ],
+      "sourceSections": {
+        "label": "Current full tablet Drug Facts: Uses/Warnings/Directions/Other Information; product XML characteristics",
+        "odt": "Current full 10mg RediTabs Drug Facts: Uses/Warnings/Directions/Other Information",
+        "liquid": "Current full 5mg/5mL Drug Facts: Uses/Warnings/Directions/Other Information",
+        "chew": "Current full 5mg chewable Drug Facts: Uses/Warnings/Directions/Other Information"
+      },
+      "review": "Reviewed full supporting source sections; clinical monitoring/urgent assessment synthesis identified; formulation and guideline scopes explicit."
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "The Drug Facts advise asking a health professional before use during pregnancy or breastfeeding. MotherToBaby’s February 2026 review finds no expected increase in birth-defect risk based on available studies; behavior/learning outcomes have not been studied. Milk transfer is small and loratadine is a preferred breastfeeding antihistamine, but monitor infant sleepiness and discuss possible effects on milk supply. These observations do not make every pregnancy or combination product risk-free."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "odt",
+        "liquid",
+        "chew",
+        "pregnancy"
+      ],
+      "sourceSections": {
+        "label": "Current full tablet Drug Facts: Uses/Warnings/Directions/Other Information; product XML characteristics",
+        "odt": "Current full 10mg RediTabs Drug Facts: Uses/Warnings/Directions/Other Information",
+        "liquid": "Current full 5mg/5mL Drug Facts: Uses/Warnings/Directions/Other Information",
+        "chew": "Current full 5mg chewable Drug Facts: Uses/Warnings/Directions/Other Information",
+        "pregnancy": "February1,2026 full pregnancy/birthdefect/behavior and breastfeeding sections, milktransfer/preference/sleepiness/supply"
+      },
+      "review": "Reviewed full supporting source sections; clinical monitoring/urgent assessment synthesis identified; formulation and guideline scopes explicit."
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": {
+        "paragraphs": [
+          "Use the formulation-specific age chart. Liquid and selected 5 mg chewables provide directions from age 2; selected 10 mg tablets/RediTabs direct those under 6 to a doctor. The current OTC labels provide no separate geriatric dose. Consider comorbidities and the complete medicine list."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "odt",
+        "liquid",
+        "chew"
+      ],
+      "sourceSections": {
+        "label": "Current full tablet Drug Facts: Uses/Warnings/Directions/Other Information; product XML characteristics",
+        "odt": "Current full 10mg RediTabs Drug Facts: Uses/Warnings/Directions/Other Information",
+        "liquid": "Current full 5mg/5mL Drug Facts: Uses/Warnings/Directions/Other Information",
+        "chew": "Current full 5mg chewable Drug Facts: Uses/Warnings/Directions/Other Information"
+      },
+      "review": "Reviewed full supporting source sections; clinical monitoring/urgent assessment synthesis identified; formulation and guideline scopes explicit."
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "assertions": {
+        "paragraphs": [
+          "Ask a doctor before use with kidney or liver disease. Historical PK studies show increased exposure in renal impairment and alcoholic liver disease; this explains the need for individualized review but does not supply current product-specific OTC adjustment instructions."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "odt",
+        "liquid",
+        "chew",
+        "pharm"
+      ],
+      "sourceSections": {
+        "label": "Current full tablet Drug Facts: Uses/Warnings/Directions/Other Information; product XML characteristics",
+        "odt": "Current full 10mg RediTabs Drug Facts: Uses/Warnings/Directions/Other Information",
+        "liquid": "Current full 5mg/5mL Drug Facts: Uses/Warnings/Directions/Other Information",
+        "chew": "Current full 5mg chewable Drug Facts: Uses/Warnings/Directions/Other Information",
+        "pharm": "Archived2000 ClinicalPharmacology SpecialPopulations Renal/Hepatic: increasedexposure; no historicaldose imported"
+      },
+      "review": "Reviewed full supporting source sections; clinical monitoring/urgent assessment synthesis identified; formulation and guideline scopes explicit."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "assertions": {
+        "paragraphs": [
+          "Loratadine selectively antagonizes peripheral histamine H1 receptors. It is metabolized to the active compound desloratadine."
+        ]
+      },
+      "sourceIds": [
+        "pharm",
+        "pregnancy"
+      ],
+      "sourceSections": {
+        "pharm": "Archived2000 ClinicalPharmacology mechanism/active metabolite",
+        "pregnancy": "2026 What is loratadine: desloratadine"
+      },
+      "review": "Reviewed full supporting source sections; clinical monitoring/urgent assessment synthesis identified; formulation and guideline scopes explicit."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "assertions": {
+        "paragraphs": [
+          "Historical FDA data describe rapid oral absorption, metabolism mainly through CYP3A4 and partly CYP2D6, and urinary/fecal elimination of metabolites. Mean half-lives were about 8.4 hours for loratadine and 28 hours for its active metabolite, with considerable variability. These historical parameters support pharmacology context, not new formulation or organ-disease dosing."
+        ]
+      },
+      "sourceIds": [
+        "pharm"
+      ],
+      "sourceSections": {
+        "pharm": "Archived2000 full ClinicalPharmacology Absorption/Metabolism/Elimination: CYP3A4/2D6, mean8.4h/28h variability; no currentdose inference"
+      },
+      "review": "Reviewed full supporting source sections; clinical monitoring/urgent assessment synthesis identified; formulation and guideline scopes explicit."
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": {
+        "paragraphs": [
+          "Assess allergy-symptom response, sleepiness and hypersensitivity. Recheck concentration, age and the entire OTC/prescription list. The selected Drug Facts do not require a routine laboratory-monitoring schedule; liver/kidney disease requires clinician-directed assessment."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "odt",
+        "liquid",
+        "chew"
+      ],
+      "sourceSections": {
+        "label": "Current full tablet Drug Facts: Uses/Warnings/Directions/Other Information; product XML characteristics",
+        "odt": "Current full 10mg RediTabs Drug Facts: Uses/Warnings/Directions/Other Information",
+        "liquid": "Current full 5mg/5mL Drug Facts: Uses/Warnings/Directions/Other Information",
+        "chew": "Current full 5mg chewable Drug Facts: Uses/Warnings/Directions/Other Information"
+      },
+      "review": "Reviewed full supporting source sections; clinical monitoring/urgent assessment synthesis identified; formulation and guideline scopes explicit."
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "assertions": {
+        "paragraphs": [
+          "Use the selected age-specific once-daily dose, keep the measuring cup with the liquid and open RediTabs only when ready to take them. Ask about pregnancy/breastfeeding or organ disease. Stop and seek immediate medical help for an allergic reaction."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "odt",
+        "liquid",
+        "chew"
+      ],
+      "sourceSections": {
+        "label": "Current full tablet Drug Facts: Uses/Warnings/Directions/Other Information; product XML characteristics",
+        "odt": "Current full 10mg RediTabs Drug Facts: Uses/Warnings/Directions/Other Information",
+        "liquid": "Current full 5mg/5mL Drug Facts: Uses/Warnings/Directions/Other Information",
+        "chew": "Current full 5mg chewable Drug Facts: Uses/Warnings/Directions/Other Information"
+      },
+      "review": "Reviewed full supporting source sections; clinical monitoring/urgent assessment synthesis identified; formulation and guideline scopes explicit."
+    },
+    {
+      "section": "practice",
+      "card": "Overdose",
+      "assertions": {
+        "paragraphs": [
+          "Obtain medical help or contact Poison Control immediately after an overdose. Do not use historical emesis or gastric-lavage instructions from an archived prescription label as home treatment."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "odt",
+        "liquid",
+        "chew"
+      ],
+      "sourceSections": {
+        "label": "Current full tablet Drug Facts: Uses/Warnings/Directions/Other Information; product XML characteristics",
+        "odt": "Current full 10mg RediTabs Drug Facts: Uses/Warnings/Directions/Other Information",
+        "liquid": "Current full 5mg/5mL Drug Facts: Uses/Warnings/Directions/Other Information",
+        "chew": "Current full 5mg chewable Drug Facts: Uses/Warnings/Directions/Other Information"
+      },
+      "review": "Reviewed full supporting source sections; clinical monitoring/urgent assessment synthesis identified; formulation and guideline scopes explicit."
+    },
+    {
+      "section": "product",
+      "card": "Representative tablet · Claritin 10 mg",
+      "assertions": {
+        "facts": [
+          [
+            "Appearance",
+            "White, round tablet"
+          ],
+          [
+            "Imprint",
+            "458 · Claritin10"
+          ],
+          [
+            "Strength and route",
+            "Loratadine 10 mg · oral"
+          ],
+          [
+            "Labeler",
+            "Bayer HealthCare LLC"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Current XML SPLCOLOR white; SPLSHAPE round; SPLIMPRINT458;Claritin10; ingredient10mg oral; Bayer labeler"
+      },
+      "review": "Reviewed full supporting source sections; clinical monitoring/urgent assessment synthesis identified; formulation and guideline scopes explicit."
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Selected products are 10 mg tablets, 10 mg RediTabs, 5 mg chewables and 5 mg/5 mL oral solution. The selected liquid has 6 mg sodium per 5 mL; the selected chewable has 1.9 mg phenylalanine per tablet. Other OTC products can differ in strength, excipients and directions. Combination products are outside this profile."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "odt",
+        "liquid",
+        "chew"
+      ],
+      "sourceSections": {
+        "label": "Current full tablet Drug Facts: Uses/Warnings/Directions/Other Information; product XML characteristics",
+        "odt": "Current full 10mg RediTabs Drug Facts: Uses/Warnings/Directions/Other Information",
+        "liquid": "Current full 5mg/5mL Drug Facts: Uses/Warnings/Directions/Other Information",
+        "chew": "Current full 5mg chewable Drug Facts: Uses/Warnings/Directions/Other Information"
+      },
+      "review": "Reviewed full supporting source sections; clinical monitoring/urgent assessment synthesis identified; formulation and guideline scopes explicit."
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Store the selected products at 20–25°C. Protect the selected tablet blister from excessive moisture; do not use a bottle with a missing/broken printed foil seal. Do not use open/torn RediTabs or chewable blisters, or liquid with a broken/missing carton tamper seal. Open a RediTab’s individual blister immediately before use. Keep out of children’s reach."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "odt",
+        "liquid",
+        "chew"
+      ],
+      "sourceSections": {
+        "label": "Current full tablet Drug Facts: Uses/Warnings/Directions/Other Information; product XML characteristics",
+        "odt": "Current full 10mg RediTabs Drug Facts: Uses/Warnings/Directions/Other Information",
+        "liquid": "Current full 5mg/5mL Drug Facts: Uses/Warnings/Directions/Other Information",
+        "chew": "Current full 5mg chewable Drug Facts: Uses/Warnings/Directions/Other Information"
+      },
+      "review": "Reviewed full supporting source sections; clinical monitoring/urgent assessment synthesis identified; formulation and guideline scopes explicit."
+    }
+  ],
+  "materialErrors": [],
+  "unresolvedMaterialGaps": [],
+  "sourceDiscrepancies": [
+    {
+      "issue": "CurrentOTCDrugFactsnotfullRxmonograph;2000FDA label containsobsoleteindications/categories/emesisanddoseinstructions.",
+      "resolution": "HistoricalreferenceexplicitlyrestrictedtoPK/interactions/adverse context; currentdosesandagescomefromcurrent4DrugFacts; nohistoricaloverdoseororganalgorithmimport.",
+      "resolved": true
+    },
+    {
+      "issue": "Phenylalanineandage limitsvarybyproduct.",
+      "resolution": "1.9mgphenylalanineonlyselected5mgchew;10mgtablet/RediTabsunder6askdoctor;liquid/chewunder2ask.",
+      "resolved": true
+    }
+  ],
+  "limitations": [
+    "Public sources only; no paywalled original study/journal guideline access claimed.",
+    "Selected-product identifiers/directions do not apply to every generic or combination.",
+    "Clinical synthesis for monitoring and urgent assessment is distinguished in the map.",
+    "Build/render/deployment QA belongs to parent integration."
+  ],
+  "reviewedSourceSections": [
+    "Fullcurrent4DrugFacts includingUses/Warnings/Directions/OtherInfo/Inactive/PDP/product XML.",
+    "Historical2000FDAClinicalPharmacology fullmechanism/absorption/metabolism/elimination/specialpopulations, fullDrugInteractions andAdverseReactions; excluded obsoleteRxadministration/overdose.",
+    "Full2026OTISpublicpregnancy/lactationfact sheet."
+  ],
+  "verification": {
+    "schemaErrors": [],
+    "sectionIds": [
+      "indications",
+      "dosage",
+      "safety",
+      "interactions",
+      "populations",
+      "pharmacology",
+      "practice",
+      "product"
+    ],
+    "heroFacts": 3,
+    "safetyCardOrder": [
+      "Warnings and precautions",
+      "Contraindications",
+      "Boxed warning status",
+      "Adverse reactions"
+    ],
+    "productCardOrder": [
+      "Representative tablet · Claritin 10 mg",
+      "Dosage forms and strengths",
+      "Storage and handling"
+    ],
+    "renderedPageQA": "Pending parent batch QA"
+  }
+}
