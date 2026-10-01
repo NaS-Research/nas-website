@@ -1,0 +1,3376 @@
+{
+  "date": "2026-10-01",
+  "module": "enteral-nutrition",
+  "unit": "enteral-nutrition:book-safety-and-remaining-coverage",
+  "status": "verified in scope",
+  "baseCommit": "c01ed9a1c42ba6b6d4ac2397e24be9d363eb0711",
+  "sourcePolicy": "Supplied book only; private book/extracts/source screenshots outsideGit/public assets. PN-only primary-source authorization not extended toEN. No outsideEN guidance or current product label opened. Safety/general-order syntheses explicitly identified; uncertainty not converted to a guideline claim.",
+  "sources": [
+    {
+      "PDFPage": 95,
+      "printedPage": 87,
+      "read": "Full text reread; rendered page previously read in medication review. Dosage-form integrity/product-specific instructions; no contemporary label clearance claimed."
+    },
+    {
+      "PDFPage": 158,
+      "printedPage": 150,
+      "read": "Full text/rendered page reread in immediately preceding route/water review; fluids/monitoring and individualization. PN-specific thresholds not assigned toEN."
+    },
+    {
+      "PDFPage": 170,
+      "printedPage": 162,
+      "read": "Full text/rendered page read; anatomy,additionalwater,medication compatibility and package-label checks."
+    },
+    {
+      "PDFPage": 172,
+      "printedPage": 164,
+      "read": "Full text/rendered page read; visible product/order rate75mL/h and24h example supports rate-duration reasoning. Earlier exercises not counted again."
+    },
+    {
+      "PDFPage": 258,
+      "printedPage": 250,
+      "read": "Full text and rendered page read; oral/feeding-tube versusIV syringes,route labels,nonIVconnection design,route communication. No specificENFit standard named in book."
+    },
+    {
+      "PDFPage": 994,
+      "printedPage": 984,
+      "read": "Full text and rendered page read; activated-charcoal airway precautions and serious pulmonary complications from incorrectly placedNG delivery. Narrow risk dependency only; no new poisoning dose or treatment adopted."
+    },
+    {
+      "PDFPage": 382,
+      "printedPage": 374,
+      "read": "Full text and rendering read for partial aspiration-prevention dependency. Head elevation>=30degrees is stated inVAP context; this does not verify the complete30-45degree EN prevention bundle. No new HAP/VAP antibiotic treatment adopted."
+    }
+  ],
+  "questionReview": [
+    {
+      "question": {
+        "id": "enteral-nutrition-023",
+        "question": "Which prescription is most complete?",
+        "choices": [
+          "Formula, access, method, rate or volume, schedule, flushes, advancement, and monitoring",
+          "Formula, access, method, rate, schedule, and advancement, with supplemental water and monitoring left unspecified",
+          "Formula, method, rate, flushes, and monitoring, with the feeding destination and schedule left unspecified",
+          "Formula, access, daily volume, flushes, and monitoring, with delivery method and advancement left unspecified"
+        ],
+        "answer": 0,
+        "rationale": "A prescription should describe what is given, where it is delivered, how much and when it runs, the water plan, and how delivery is assessed. The complete option makes these parts explicit. Naming a product or an hourly rate alone does not establish delivered nutrition or hydration.",
+        "reviewHref": "#delivery-prescription"
+      },
+      "PDFPages": [
+        158,
+        170,
+        172
+      ],
+      "review": "Order fields are an explicit synthesis of product/route/fluid/monitoring and rate-duration requirements, not a quoted universal regulatory checklist. No advancement dose or feeding algorithm introduced. Plausible incomplete plans replace implausibly minimal options. Prompt,allchoices,key,rationale andstableanchor individually reviewed/rendered."
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-041",
+        "question": "What device should be used to administer a medication through an ENFit tube?",
+        "choices": [
+          "A compatible enteral syringe",
+          "An intravenous Luer-lock syringe attached using an improvised connector",
+          "An oral syringe selected by color without verifying compatibility with the actual tube",
+          "An unlabelled syringe that is assumed suitable because it appears to fit"
+        ],
+        "answer": 0,
+        "rationale": "Use equipment intended for enteral administration and compatible with the actual tube. Oral/feeding-tube syringes should be clearly distinguished from intravenous syringes to prevent wrong-route administration. Color or apparent fit alone is not a compatibility check; do not improvise an intravenous connection.",
+        "reviewHref": "#medication-administration"
+      },
+      "PDFPages": [
+        170,
+        258
+      ],
+      "review": "Book oral-feeding devices are distinct fromIV devices and should preventIV connection. The given ENFit context requires a compatible enteral device; compatibility remains a product-specific check. NoFDA clearances,ISO dimensions orENFit dosing-performance assertions introduced; specific ENFit design claim q014 remains unverified. Prompt,allchoices,key,rationale andstableanchor individually reviewed/rendered."
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-090",
+        "question": "A newly placed small-bore nasal tube has not been confirmed and medication is due. What is the best next action?",
+        "choices": [
+          "Hold use and obtain evidence-based placement confirmation",
+          "Give the medication before placement is checked because only nutrition needs to wait",
+          "Treat the presence of a compatible enteral connector as proof of the tube position",
+          "Choose a larger medication-water flush instead of verifying the tube position"
+        ],
+        "answer": 0,
+        "rationale": "An incorrectly placed nasogastric tube can cause serious pulmonary complications when material is administered through it. Withhold use until the location is confirmed. Drug-form compatibility or a suitable syringe does not establish the tube tip location; this question does not specify a confirmation test.",
+        "reviewHref": "#access-route"
+      },
+      "PDFPages": [
+        170,
+        994
+      ],
+      "review": "The book explicitly warns of serious pulmonary consequences from incorrectly placedNG administration in activated-charcoal care. Withholding medication until position is confirmed is a stated safety inference from the same malposition risk, not a reviewed generic-placement test algorithm. No radiography or auscultation comparison claimed. Prompt,allchoices,key,rationale andstableanchor individually reviewed/rendered."
+    },
+    {
+      "question": {
+        "id": "enteral-nutrition-104",
+        "question": "A jejunal tube patient needs a delayed-release drug, but the available product instructions do not establish safe jejunal administration. Which interpretation or management plan is most defensible?",
+        "choices": [
+          "Select a compatible formulation or alternative route with pharmacy input",
+          "Crush the delayed-release preparation and give it through the jejunal tube without checking its instructions",
+          "Use a larger water flush as a substitute for checking the dosage form and access site",
+          "Apply nasogastric administration instructions to jejunal access without checking whether they cover that site"
+        ],
+        "answer": 0,
+        "rationale": "Delayed-release preparations should not be crushed for tube administration without verified product-specific instructions. Identify the tube destination and check the formulation and permitted administration method. If safe use of the available product at that site is not established, obtain a suitable formulation or route with pharmacy input rather than assuming compatibility.",
+        "reviewHref": "#medication-administration"
+      },
+      "PDFPages": [
+        95,
+        170
+      ],
+      "review": "Book warns against delayed-release crushing and directs product-specific tube checks; anatomical tube tips differ. Original unnamed-drug gastric-activation premise was not established and could misteach dosage-form/site reasoning. Corrected scenario explicitly states that jejunal product instructions are unverified; product/site compatibility, rather than a presumed activation mechanism, drives the same original keyed action. Existing useful broader site-dependence teaching retained for primary-source review. Prompt,allchoices,key,rationale andstableanchor individually reviewed/rendered."
+    }
+  ],
+  "teachingReview": [
+    {
+      "PDFPages": [
+        158,
+        170,
+        172
+      ],
+      "lesson": "delivery-prescription",
+      "heading": "Prescribe the full system",
+      "body": "Name the product, access site, method, goal rate or volume, schedule, advancement, water flushes, and monitoring. A rate without a duration does not define daily delivery. For example, 60 mL per hour for 20 hours provides 1,200 mL, not the 1,440 mL that would be delivered over 24 hours.",
+      "review": "Full unchanged body checked:product/route/method/rate-duration/water/monitoring fields are a labeled synthesis of information needed to implement the book principles; not a regulatory checklist.60x20=1200,60x24=1440 independently rechecked. No clinical advancement rate or universal fluid target given."
+    }
+  ],
+  "remainingCoverageReview": {
+    "questionGroups": [
+      {
+        "ids": [
+          "enteral-nutrition-002",
+          "enteral-nutrition-003",
+          "enteral-nutrition-004",
+          "enteral-nutrition-005",
+          "enteral-nutrition-100"
+        ],
+        "topic": "Perfusion, contraindications and early feeding",
+        "sourceGap": "Book169 supports use of a functioning gut; reviewed passages do not establish the full shock/vasopressor/ischemia algorithm or24-48hEN timing.",
+        "questions": [
+          {
+            "id": "enteral-nutrition-002",
+            "question": "Which condition is the clearest reason to withhold enteral feeding?",
+            "choices": [
+              "Suspected bowel ischemia",
+              "Mechanical ventilation alone",
+              "A healing pressure injury",
+              "Stable dysphagia"
+            ],
+            "answer": 0,
+            "rationale": "Feeding an ischemic bowel can worsen injury and requires urgent stabilization and evaluation.",
+            "reviewHref": "#enteral-decision"
+          },
+          {
+            "id": "enteral-nutrition-003",
+            "question": "When is early enteral nutrition generally considered in a critically ill adult who cannot eat?",
+            "choices": [
+              "Within 24 to 48 hours once hemodynamically stable",
+              "Only after fourteen days",
+              "During uncontrolled shock without reassessment",
+              "Only after parenteral nutrition fails"
+            ],
+            "answer": 0,
+            "rationale": "ASPEN guidance supports early feeding after adequate resuscitation and stabilization.",
+            "reviewHref": "#enteral-decision"
+          },
+          {
+            "id": "enteral-nutrition-004",
+            "question": "A patient has escalating vasopressor doses, cool extremities, and rising lactate. What is the best nutrition response?",
+            "choices": [
+              "Defer advancement and reassess perfusion",
+              "Begin a full-rate gastric bolus",
+              "Ignore the hemodynamic pattern",
+              "Use fiber to treat the lactate"
+            ],
+            "answer": 0,
+            "rationale": "Signs of uncontrolled shock require stabilization before advancing enteral nutrition.",
+            "reviewHref": "#enteral-decision"
+          },
+          {
+            "id": "enteral-nutrition-005",
+            "question": "Which finding supports cautious low-dose feeding after shock?",
+            "choices": [
+              "Resuscitation is complete and perfusion is stable",
+              "Vasopressor need is rapidly escalating",
+              "Bowel ischemia is suspected",
+              "Abdominal compartment syndrome is worsening"
+            ],
+            "answer": 0,
+            "rationale": "Stable perfusion after resuscitation can permit carefully monitored initiation.",
+            "reviewHref": "#enteral-decision"
+          },
+          {
+            "id": "enteral-nutrition-100",
+            "question": "A patient in shock has escalating vasopressors, abdominal distention, and rising lactate while feeds advance. Which interpretation or management plan is most defensible?",
+            "choices": [
+              "Stop advancement and urgently evaluate perfusion and bowel ischemia",
+              "Use a fixed plan that ignores clinical change",
+              "Treat the formula name as the diagnosis",
+              "Delay all action until the next routine visit"
+            ],
+            "answer": 0,
+            "rationale": "The pattern suggests unsafe gastrointestinal hypoperfusion.",
+            "reviewHref": "#enteral-decision"
+          }
+        ],
+        "status": "incomplete; exact claims require further source reconciliation"
+      },
+      {
+        "ids": [
+          "enteral-nutrition-009",
+          "enteral-nutrition-010",
+          "enteral-nutrition-011",
+          "enteral-nutrition-017",
+          "enteral-nutrition-019",
+          "enteral-nutrition-024",
+          "enteral-nutrition-091",
+          "enteral-nutrition-095",
+          "enteral-nutrition-097"
+        ],
+        "topic": "Gastric/postpyloric delivery and schedule",
+        "sourceGap": "Book170 supports tube destinations and short-termNG use. Reservoir capacity, bolus/continuous/cyclic selection and postpyloric outcome/indication claims require further clinical source review.",
+        "questions": [
+          {
+            "id": "enteral-nutrition-009",
+            "question": "Which access route offers the greatest flexibility for bolus, intermittent, or continuous delivery?",
+            "choices": [
+              "Gastric access",
+              "Jejunal access",
+              "Intravenous access",
+              "A disconnected enteral extension"
+            ],
+            "answer": 0,
+            "rationale": "The stomach acts as a reservoir and supports multiple delivery methods.",
+            "reviewHref": "#access-route"
+          },
+          {
+            "id": "enteral-nutrition-010",
+            "question": "Which patient most strongly supports postpyloric feeding?",
+            "choices": [
+              "Persistent aspiration risk with severe gastroparesis despite preventive measures",
+              "Normal gastric emptying and low aspiration risk",
+              "A desire for the largest possible bolus",
+              "A need for sublingual medication delivery"
+            ],
+            "answer": 0,
+            "rationale": "Postpyloric access can bypass impaired gastric emptying in selected high-risk patients.",
+            "reviewHref": "#access-route"
+          },
+          {
+            "id": "enteral-nutrition-011",
+            "question": "Why is bolus feeding generally avoided through jejunal access?",
+            "choices": [
+              "The small intestine lacks the stomach's reservoir capacity",
+              "The jejunum cannot absorb nutrients",
+              "Bolus feeding contains no water",
+              "Jejunal tubes are intravenous devices"
+            ],
+            "answer": 0,
+            "rationale": "Rapid large-volume delivery into the small bowel can cause intolerance and dumping physiology.",
+            "reviewHref": "#access-route"
+          },
+          {
+            "id": "enteral-nutrition-017",
+            "question": "Which feeding method is most appropriate for a new jejunostomy in a patient with limited tolerance?",
+            "choices": [
+              "Continuous pump delivery at a cautious initial rate",
+              "A rapid 500 mL bolus",
+              "Gravity delivery without a schedule",
+              "Formula mixed with all medications"
+            ],
+            "answer": 0,
+            "rationale": "Controlled continuous delivery respects limited small bowel reservoir capacity.",
+            "reviewHref": "#delivery-prescription"
+          },
+          {
+            "id": "enteral-nutrition-019",
+            "question": "What is the main advantage of cyclic feeding?",
+            "choices": [
+              "It provides a feeding-free interval while maintaining controlled pump delivery",
+              "It eliminates the need for a pump",
+              "It is always delivered as a jejunal bolus",
+              "It prevents all hyperglycemia"
+            ],
+            "answer": 0,
+            "rationale": "Cyclic schedules can support daytime activity, appetite, or home routines.",
+            "reviewHref": "#delivery-prescription"
+          },
+          {
+            "id": "enteral-nutrition-024",
+            "question": "Which patient is the best candidate for gastric bolus feeding?",
+            "choices": [
+              "A stable patient with a mature gastrostomy and low aspiration risk",
+              "A patient with severe gastroparesis and recurrent aspiration",
+              "A patient with a new jejunostomy",
+              "A patient in uncontrolled shock"
+            ],
+            "answer": 0,
+            "rationale": "Bolus delivery is most suitable for stable gastric access with adequate tolerance.",
+            "reviewHref": "#delivery-prescription"
+          },
+          {
+            "id": "enteral-nutrition-091",
+            "question": "A patient with a jejunostomy is prescribed four 400 mL boluses. What is the best next action?",
+            "choices": [
+              "Change to controlled pump delivery and reassess the volume plan",
+              "Continue the same plan without reassessment",
+              "Change formula based on one isolated detail",
+              "Ignore the access route"
+            ],
+            "answer": 0,
+            "rationale": "The jejunum lacks gastric reservoir capacity and generally should not receive large boluses.",
+            "reviewHref": "#delivery-prescription"
+          },
+          {
+            "id": "enteral-nutrition-095",
+            "question": "A ventilated patient has recurrent emesis despite head elevation and gastric motility management. What is the best next action?",
+            "choices": [
+              "Reassess for postpyloric access and other causes of intolerance",
+              "Continue the same plan without reassessment",
+              "Change formula based on one isolated detail",
+              "Ignore the access route"
+            ],
+            "answer": 0,
+            "rationale": "Persistent high aspiration risk may justify small bowel delivery.",
+            "reviewHref": "#access-route"
+          },
+          {
+            "id": "enteral-nutrition-097",
+            "question": "A stable patient with a mature gastrostomy wants daytime mobility and tolerates gastric feeds. What is the best next action?",
+            "choices": [
+              "Consider bolus or cyclic delivery based on goals and tolerance",
+              "Continue the same plan without reassessment",
+              "Change formula based on one isolated detail",
+              "Ignore the access route"
+            ],
+            "answer": 0,
+            "rationale": "Mature gastric access provides flexible delivery options.",
+            "reviewHref": "#delivery-prescription"
+          }
+        ],
+        "status": "incomplete; exact claims require further source reconciliation"
+      },
+      {
+        "ids": [
+          "enteral-nutrition-012",
+          "enteral-nutrition-013",
+          "enteral-nutrition-014",
+          "enteral-nutrition-106"
+        ],
+        "topic": "Placement methods, migration and connector standards",
+        "sourceGap": "Book258 supports distinct oral versusIV devices;994 supports severe malposition risk. Radiographic reference standard, auscultation reliability, external-length/cough migration signs and specificENFit design remain open.",
+        "questions": [
+          {
+            "id": "enteral-nutrition-012",
+            "question": "What is the reference approach before first use of many blindly placed small-bore feeding tubes?",
+            "choices": [
+              "Radiographic confirmation",
+              "Air auscultation alone",
+              "Appearance of the connector",
+              "Patient hunger"
+            ],
+            "answer": 0,
+            "rationale": "Radiography is commonly the reference standard for initial confirmation, while air auscultation is unreliable.",
+            "reviewHref": "#access-route"
+          },
+          {
+            "id": "enteral-nutrition-013",
+            "question": "Which finding should trigger reassessment for tube migration?",
+            "choices": [
+              "A change in external tube length with new coughing",
+              "An unchanged external marking",
+              "A stable stoma",
+              "A completed feeding bag"
+            ],
+            "answer": 0,
+            "rationale": "A change in length and respiratory symptoms can indicate displacement.",
+            "reviewHref": "#access-route"
+          },
+          {
+            "id": "enteral-nutrition-014",
+            "question": "What safety problem is ENFit designed to reduce?",
+            "choices": [
+              "Wrong-route connection between enteral and nonenteral systems",
+              "All tube clogging",
+              "Every drug interaction",
+              "Gastric intolerance"
+            ],
+            "answer": 0,
+            "rationale": "Enteral-specific connector geometry reduces dangerous misconnections.",
+            "reviewHref": "#access-route"
+          },
+          {
+            "id": "enteral-nutrition-106",
+            "question": "A patient repeatedly coughs during feeding and the external tube marking has changed by 8 cm. Which interpretation or management plan is most defensible?",
+            "choices": [
+              "Stop use and verify tube position before further feeding or medication",
+              "Use a fixed plan that ignores clinical change",
+              "Treat the formula name as the diagnosis",
+              "Delay all action until the next routine visit"
+            ],
+            "answer": 0,
+            "rationale": "Migration with respiratory symptoms creates immediate wrong-site risk.",
+            "reviewHref": "#access-route"
+          }
+        ],
+        "status": "incomplete; exact claims require further source reconciliation"
+      },
+      {
+        "ids": [
+          "enteral-nutrition-020",
+          "enteral-nutrition-047",
+          "enteral-nutrition-096"
+        ],
+        "topic": "Refeeding management",
+        "sourceGap": "Book158 describes intracellular electrolyte loss, especially phosphate, in PN. Full EN advancement, potassium/magnesium pattern and intervention claim sets remain open; PN-only exception is not extended.",
+        "questions": [
+          {
+            "id": "enteral-nutrition-020",
+            "question": "Which factor should slow advancement of an enteral prescription?",
+            "choices": [
+              "High refeeding risk with low phosphate",
+              "A stable established tube and normal electrolytes",
+              "A clearly documented daily target",
+              "A working pump"
+            ],
+            "answer": 0,
+            "rationale": "Refeeding risk requires cautious energy advancement and close electrolyte monitoring.",
+            "reviewHref": "#delivery-prescription"
+          },
+          {
+            "id": "enteral-nutrition-047",
+            "question": "Which laboratory pattern is most concerning during refeeding?",
+            "choices": [
+              "Falling phosphate, potassium, and magnesium",
+              "Stable electrolytes",
+              "Isolated high HDL",
+              "Unchanged creatinine with normal intake"
+            ],
+            "answer": 0,
+            "rationale": "Insulin-driven intracellular shifts can produce dangerous phosphate, potassium, and magnesium depletion.",
+            "reviewHref": "#monitoring-complications"
+          },
+          {
+            "id": "enteral-nutrition-096",
+            "question": "A malnourished patient begins feeding and phosphate falls from 3.0 to 1.2 mg/dL. What is the best next action?",
+            "choices": [
+              "Slow energy delivery and urgently manage refeeding physiology",
+              "Continue the same plan without reassessment",
+              "Change formula based on one isolated detail",
+              "Ignore the access route"
+            ],
+            "answer": 0,
+            "rationale": "A rapid phosphate fall after feeding is a major refeeding warning.",
+            "reviewHref": "#monitoring-complications"
+          }
+        ],
+        "status": "incomplete; exact claims require further source reconciliation"
+      },
+      {
+        "ids": [
+          "enteral-nutrition-022"
+        ],
+        "topic": "Volume-based feeding protocols",
+        "sourceGap": "Actual-intake/rate arithmetic is supported, but a clinical catch-up-volume protocol is not established by those calculations.",
+        "questions": [
+          {
+            "id": "enteral-nutrition-022",
+            "question": "What is the purpose of a volume-based feeding protocol?",
+            "choices": [
+              "To target a safe daily volume despite predictable interruptions",
+              "To ignore route limitations",
+              "To replace all clinical monitoring",
+              "To deliver unlimited catch-up volume"
+            ],
+            "answer": 0,
+            "rationale": "Volume-based protocols can improve delivery when revised rates remain clinically appropriate.",
+            "reviewHref": "#delivery-prescription"
+          }
+        ],
+        "status": "incomplete; exact claims require further source reconciliation"
+      },
+      {
+        "ids": [
+          "enteral-nutrition-025",
+          "enteral-nutrition-026",
+          "enteral-nutrition-027",
+          "enteral-nutrition-028",
+          "enteral-nutrition-029",
+          "enteral-nutrition-031",
+          "enteral-nutrition-032",
+          "enteral-nutrition-103"
+        ],
+        "topic": "Formula types, composition and tolerance",
+        "sourceGap": "Book169 gives disease-specific examples and170 extra-water need; reviewed sections do not establish all polymeric/peptide/elemental,fiber,water-per-energy,renal-solute and fat-malabsorption recommendations.",
+        "questions": [
+          {
+            "id": "enteral-nutrition-025",
+            "question": "Which formula is a reasonable first choice when digestion and absorption are intact?",
+            "choices": [
+              "A standard polymeric formula",
+              "An elemental formula solely because it is more complex",
+              "A renal formula for every patient",
+              "A modular product as the only nutrient source"
+            ],
+            "answer": 0,
+            "rationale": "Most patients with intact digestion can use an intact-nutrient polymeric formula.",
+            "reviewHref": "#formula-selection"
+          },
+          {
+            "id": "enteral-nutrition-026",
+            "question": "What distinguishes a peptide-based formula?",
+            "choices": [
+              "Hydrolyzed protein and often modified fat",
+              "No protein",
+              "Only intravenous amino acids",
+              "A mandatory 2 kcal per mL density"
+            ],
+            "answer": 0,
+            "rationale": "Peptide-based formulas use smaller peptides and often modified fat to address selected absorption or tolerance problems.",
+            "reviewHref": "#formula-selection"
+          },
+          {
+            "id": "enteral-nutrition-027",
+            "question": "What is the major hydration implication of a 2 kcal per mL formula?",
+            "choices": [
+              "It usually provides less free water per calorie and may require additional flushes",
+              "It is entirely water",
+              "It cannot be used with a pump",
+              "It eliminates renal solute load"
+            ],
+            "answer": 0,
+            "rationale": "Greater caloric density concentrates nutrients and reduces formula water relative to energy.",
+            "reviewHref": "#formula-selection"
+          },
+          {
+            "id": "enteral-nutrition-028",
+            "question": "Which statement about disease-specific formula is most accurate?",
+            "choices": [
+              "Selection requires a compositional and evidence-based patient rationale",
+              "The diagnosis alone proves superiority",
+              "Every patient with diabetes requires the same formula",
+              "Specialty formulas need no monitoring"
+            ],
+            "answer": 0,
+            "rationale": "Disease labels do not replace assessment of nutrient composition, evidence, cost, and tolerance.",
+            "reviewHref": "#formula-selection"
+          },
+          {
+            "id": "enteral-nutrition-029",
+            "question": "When should insoluble fiber be used cautiously or avoided?",
+            "choices": [
+              "Impaired bowel perfusion or severe dysmotility",
+              "Stable chronic constipation with adequate hydration",
+              "A functioning gut in a stable patient",
+              "A mature gastric tube"
+            ],
+            "answer": 0,
+            "rationale": "Insoluble fiber can be hazardous when motility or perfusion is impaired.",
+            "reviewHref": "#formula-selection"
+          },
+          {
+            "id": "enteral-nutrition-031",
+            "question": "Why can a high renal solute load worsen dehydration risk?",
+            "choices": [
+              "It increases obligatory water needed for solute excretion",
+              "It removes all sodium from urine",
+              "It blocks intestinal absorption",
+              "It makes formula sterile"
+            ],
+            "answer": 0,
+            "rationale": "Protein and electrolytes contribute solute that the kidney must excrete with water.",
+            "reviewHref": "#formula-selection"
+          },
+          {
+            "id": "enteral-nutrition-032",
+            "question": "Which formula change best addresses true fat malabsorption after evaluation?",
+            "choices": [
+              "Consider a peptide-based formula with modified fat composition",
+              "Increase intact long-chain fat without reassessment",
+              "Remove all protein",
+              "Choose by package color"
+            ],
+            "answer": 0,
+            "rationale": "Modified fat and hydrolyzed nutrients may be useful when a defined absorption problem exists.",
+            "reviewHref": "#formula-selection"
+          },
+          {
+            "id": "enteral-nutrition-103",
+            "question": "A patient with normal digestion is prescribed an expensive elemental formula solely because it sounds easier to absorb. Which interpretation or management plan is most defensible?",
+            "choices": [
+              "Start with a standard polymeric formula unless a defined indication supports greater hydrolysis",
+              "Use a fixed plan that ignores clinical change",
+              "Treat the formula name as the diagnosis",
+              "Delay all action until the next routine visit"
+            ],
+            "answer": 0,
+            "rationale": "Formula complexity should answer a physiologic need.",
+            "reviewHref": "#formula-selection"
+          }
+        ],
+        "status": "incomplete; exact claims require further source reconciliation"
+      },
+      {
+        "ids": [
+          "enteral-nutrition-034",
+          "enteral-nutrition-038",
+          "enteral-nutrition-039"
+        ],
+        "topic": "Medication sequence, site and liquid tolerance",
+        "sourceGap": "Book95/170 covers dosage form and product instructions;258 devices;932 sorbitol. Complete multiple-drug flush sequencing, gastric/proximal site-dependence and broad hyperosmolar-liquid diarrhea claims remain open.",
+        "questions": [
+          {
+            "id": "enteral-nutrition-034",
+            "question": "What is the safest sequence for two compatible medications through a feeding tube?",
+            "choices": [
+              "Flush, give the first drug, flush, give the second drug, flush, then restart feeding as appropriate",
+              "Mix both drugs into formula",
+              "Crush both in one syringe",
+              "Skip all water"
+            ],
+            "answer": 0,
+            "rationale": "Separate administration and flushing limit incompatibility and obstruction.",
+            "reviewHref": "#medication-administration"
+          },
+          {
+            "id": "enteral-nutrition-038",
+            "question": "Why can a jejunal tube change medication effect?",
+            "choices": [
+              "The drug may require gastric conditions or proximal absorption",
+              "The jejunum cannot receive liquids",
+              "All drugs are absorbed in the colon",
+              "Tube tips have no pharmacokinetic relevance"
+            ],
+            "answer": 0,
+            "rationale": "Bypassing the stomach or proximal intestine can alter dissolution and absorption.",
+            "reviewHref": "#medication-administration"
+          },
+          {
+            "id": "enteral-nutrition-039",
+            "question": "Which liquid formulation characteristic can contribute to diarrhea?",
+            "choices": [
+              "High sorbitol content or hyperosmolality",
+              "An enteral label",
+              "Room-temperature water",
+              "A compatible syringe"
+            ],
+            "answer": 0,
+            "rationale": "Sorbitol and hyperosmolar liquids are common medication-related causes of diarrhea.",
+            "reviewHref": "#medication-administration"
+          }
+        ],
+        "status": "incomplete; exact claims require further source reconciliation"
+      },
+      {
+        "ids": [
+          "enteral-nutrition-043",
+          "enteral-nutrition-044",
+          "enteral-nutrition-045",
+          "enteral-nutrition-046",
+          "enteral-nutrition-048",
+          "enteral-nutrition-050",
+          "enteral-nutrition-101",
+          "enteral-nutrition-102",
+          "enteral-nutrition-108"
+        ],
+        "topic": "Aspiration, residuals, diarrhea, clogging and contamination",
+        "sourceGap": "Book170 establishes aspiration/pneumonia risk;382 supports>=30degree head elevation specifically forVAP;932 sorbitol. Full30-45degree EN bundle,500mL residual rule,declogging/hang-time and all differential/relative-cause claims remain open.",
+        "questions": [
+          {
+            "id": "enteral-nutrition-043",
+            "question": "Which intervention is part of an aspiration-prevention bundle?",
+            "choices": [
+              "Elevate the head of bed 30 to 45 degrees when feasible",
+              "Add blue dye to formula",
+              "Use a large bolus in gastroparesis",
+              "Ignore sedative burden"
+            ],
+            "answer": 0,
+            "rationale": "Head elevation, position verification, sedation review, and route assessment work together.",
+            "reviewHref": "#monitoring-complications"
+          },
+          {
+            "id": "enteral-nutrition-044",
+            "question": "How should a gastric residual of 350 mL be interpreted in a stable patient without other symptoms?",
+            "choices": [
+              "Do not automatically stop feeding based on the value alone",
+              "Diagnose bowel ischemia",
+              "Permanently discontinue nutrition",
+              "Add methylene blue"
+            ],
+            "answer": 0,
+            "rationale": "Guidance discourages holding feeding for residuals below 500 mL without other intolerance signs.",
+            "reviewHref": "#monitoring-complications"
+          },
+          {
+            "id": "enteral-nutrition-045",
+            "question": "What is the first response to an uncomplicated clogged feeding tube?",
+            "choices": [
+              "Check for kinks and use warm water with gentle pressure",
+              "Use a sharp wire",
+              "Force cola under high pressure",
+              "Replace formula with methylene blue"
+            ],
+            "answer": 0,
+            "rationale": "Warm water and gentle technique are first-line measures after checking the mechanical pathway.",
+            "reviewHref": "#monitoring-complications"
+          },
+          {
+            "id": "enteral-nutrition-046",
+            "question": "Which cause should be assessed before blaming formula for diarrhea?",
+            "choices": [
+              "Sorbitol-containing medication and antibiotics",
+              "The formula label color",
+              "ENFit connector shape",
+              "The tube's external centimeter mark alone"
+            ],
+            "answer": 0,
+            "rationale": "Medication and infection causes are common and should be investigated.",
+            "reviewHref": "#monitoring-complications"
+          },
+          {
+            "id": "enteral-nutrition-048",
+            "question": "Which statement about formula osmolality and diarrhea is most accurate?",
+            "choices": [
+              "Osmolality may contribute, but medications, infection, rate, and disease often matter more",
+              "Osmolality is always the sole cause",
+              "Isotonic formula prevents every loose stool",
+              "Formula cannot influence stool"
+            ],
+            "answer": 0,
+            "rationale": "Diarrhea requires a broad differential rather than an automatic formula change.",
+            "reviewHref": "#monitoring-complications"
+          },
+          {
+            "id": "enteral-nutrition-050",
+            "question": "Which practice reduces microbial contamination?",
+            "choices": [
+              "Follow manufacturer and facility preparation, storage, and hang-time instructions",
+              "Top off an old feeding bag",
+              "Leave reconstituted formula at room temperature indefinitely",
+              "Reuse single-use equipment without protocol"
+            ],
+            "answer": 0,
+            "rationale": "Aseptic preparation and time limits reduce microbial growth.",
+            "reviewHref": "#monitoring-complications"
+          },
+          {
+            "id": "enteral-nutrition-101",
+            "question": "A patient with a gastric tube has a residual of 420 mL, no pain or vomiting, stable hemodynamics, and normal examination. Which interpretation or management plan is most defensible?",
+            "choices": [
+              "Continue a broader tolerance assessment rather than automatically stopping feeding",
+              "Use a fixed plan that ignores clinical change",
+              "Treat the formula name as the diagnosis",
+              "Delay all action until the next routine visit"
+            ],
+            "answer": 0,
+            "rationale": "A residual below 500 mL without other signs should not trigger an automatic hold.",
+            "reviewHref": "#monitoring-complications"
+          },
+          {
+            "id": "enteral-nutrition-102",
+            "question": "A tube is clogged after crushed medications were mixed together. Which interpretation or management plan is most defensible?",
+            "choices": [
+              "Use warm water gently, then review each medication and flush sequence",
+              "Use a fixed plan that ignores clinical change",
+              "Treat the formula name as the diagnosis",
+              "Delay all action until the next routine visit"
+            ],
+            "answer": 0,
+            "rationale": "Mechanical management and prevention both matter.",
+            "reviewHref": "#monitoring-complications"
+          },
+          {
+            "id": "enteral-nutrition-108",
+            "question": "A formula bag is repeatedly topped off instead of being replaced and the patient develops fever and diarrhea. Which interpretation or management plan is most defensible?",
+            "choices": [
+              "Discard the system and investigate contamination while following safe preparation and hang-time practice",
+              "Use a fixed plan that ignores clinical change",
+              "Treat the formula name as the diagnosis",
+              "Delay all action until the next routine visit"
+            ],
+            "answer": 0,
+            "rationale": "Topping off extends exposure and can propagate microbial contamination.",
+            "reviewHref": "#monitoring-complications"
+          }
+        ],
+        "status": "incomplete; exact claims require further source reconciliation"
+      }
+    ],
+    "teachingBodies": [
+      {
+        "lesson": "enteral-decision",
+        "heading": "Recognize the patient who needs support",
+        "body": "Consider enteral nutrition when oral intake is unsafe, impossible, or persistently inadequate. Common settings include dysphagia, neurologic injury, mechanical obstruction above a functioning gut, critical illness, cancer treatment, and increased requirements that cannot be met orally. Nutrition risk and expected duration matter more than a single day count.",
+        "status": "source claim set remains open; useful original content preserved pending complete reconciliation"
+      },
+      {
+        "lesson": "enteral-decision",
+        "heading": "Do not feed through active instability",
+        "body": "Bowel ischemia, obstruction, uncontrolled gastrointestinal bleeding, and anatomy that prevents safe access can preclude enteral feeding. During uncontrolled shock or escalating vasopressor support, stabilize perfusion before advancing nutrition. Once resuscitation is complete and the patient is stable, carefully monitored low-dose feeding may be appropriate.",
+        "status": "source claim set remains open; useful original content preserved pending complete reconciliation"
+      },
+      {
+        "lesson": "enteral-decision",
+        "heading": "Use early feeding with clinical judgment",
+        "body": "ASPEN guidance supports early enteral nutrition for critically ill adults who cannot maintain oral intake, usually within 24 to 48 hours when hemodynamically stable. Timing, dose, and advancement must account for perfusion, gastrointestinal tolerance, nutrition risk, refeeding risk, and the possibility that a procedure or changing condition will interrupt delivery.",
+        "status": "source claim set remains open; useful original content preserved pending complete reconciliation"
+      },
+      {
+        "lesson": "access-route",
+        "heading": "Start with the stomach when appropriate",
+        "body": "Gastric access is physiologic, accommodates larger volumes, and supports bolus, intermittent, or continuous delivery. Nasogastric access is useful for shorter courses, while gastrostomy is considered when longer support is expected. Reflux, impaired gastric emptying, aspiration risk, facial injury, and anatomy can change the choice.",
+        "status": "source claim set remains open; useful original content preserved pending complete reconciliation"
+      },
+      {
+        "lesson": "access-route",
+        "heading": "Move beyond the pylorus for a reason",
+        "body": "Duodenal or jejunal delivery may help when gastric feeding is not tolerated, the gastric outlet is obstructed, or aspiration risk remains high despite preventive measures. Small bowel access usually requires continuous pump delivery because the intestine lacks the stomach's reservoir capacity. Medication delivery may also be limited by absorption site and tube diameter.",
+        "status": "source claim set remains open; useful original content preserved pending complete reconciliation"
+      },
+      {
+        "lesson": "access-route",
+        "heading": "Confirm before first use",
+        "body": "A blindly placed feeding tube must be confirmed using an evidence-based method before initial feeding or medication administration. Radiographic confirmation is the reference standard for many newly placed small-bore tubes. Air auscultation alone is not reliable. Reassess external length, securement, and clinical signs when migration is possible.",
+        "status": "source claim set remains open; useful original content preserved pending complete reconciliation"
+      },
+      {
+        "lesson": "access-route",
+        "heading": "Prevent wrong-route connections",
+        "body": "Enteral-specific connectors such as ENFit are designed to reduce dangerous connections between enteral and intravenous systems. Trace every line from patient to source, label enteral equipment, use enteral syringes, and never force incompatible connectors. A connection that is physically possible is not automatically clinically correct.",
+        "status": "source claim set remains open; useful original content preserved pending complete reconciliation"
+      },
+      {
+        "lesson": "delivery-prescription",
+        "heading": "Match method to access and tolerance",
+        "body": "Bolus feeding resembles meals and can support mobility and home routines, but it is generally limited to gastric access and lower aspiration risk. Intermittent delivery extends each feeding over a longer period. Continuous pump delivery is useful for small bowel access, critical illness, poor tolerance, high refeeding risk, or when slower delivery improves control.",
+        "status": "source claim set remains open; useful original content preserved pending complete reconciliation"
+      },
+      {
+        "lesson": "delivery-prescription",
+        "heading": "Advance according to risk",
+        "body": "Advancement is individualized. A stable patient with an established tube may progress differently from a patient with shock recovery, refeeding risk, severe electrolyte depletion, or new postpyloric access. Monitor symptoms, abdominal findings, stool pattern, glucose, fluid status, and electrolytes instead of escalating by clock alone.",
+        "status": "source claim set remains open; useful original content preserved pending complete reconciliation"
+      },
+      {
+        "lesson": "delivery-prescription",
+        "heading": "Manage interruptions deliberately",
+        "body": "Procedures, imaging, medication administration, tube problems, and nursing care can reduce delivered nutrition. Avoid unnecessary holds. Volume-based protocols can compensate for predictable interruptions in appropriate patients, but the revised rate must remain safe for the route, formula, and clinical condition.",
+        "status": "source claim set remains open; useful original content preserved pending complete reconciliation"
+      },
+      {
+        "lesson": "formula-selection",
+        "heading": "Use standard formulas when digestion works",
+        "body": "Polymeric formulas contain intact protein, carbohydrate, and fat and are appropriate for many patients with adequate digestion and absorption. Peptide-based formulas use hydrolyzed protein and modified fat, while elemental formulas provide free amino acids. Greater nutrient hydrolysis does not automatically improve outcomes and should answer a defined malabsorption or intolerance problem.",
+        "status": "source claim set remains open; useful original content preserved pending complete reconciliation"
+      },
+      {
+        "lesson": "formula-selection",
+        "heading": "Use density to solve a volume problem",
+        "body": "Higher caloric density delivers more energy in less formula volume but usually provides less free water per calorie and may increase viscosity or renal solute load. A fluid-restricted patient may benefit, while a dehydrated patient can worsen if flushes are not adjusted. Calculate formula water from product data rather than assuming formula volume equals water.",
+        "status": "source claim set remains open; useful original content preserved pending complete reconciliation"
+      },
+      {
+        "lesson": "formula-selection",
+        "heading": "Treat fiber and specialty claims carefully",
+        "body": "Soluble and mixed fibers may support bowel function in selected stable patients. Avoid routine insoluble fiber when bowel perfusion or motility is impaired. Renal, pulmonary, diabetes, immune-modulating, and other specialty formulas differ in composition, but the disease label alone does not prove that a product is required.",
+        "status": "source claim set remains open; useful original content preserved pending complete reconciliation"
+      },
+      {
+        "lesson": "formula-selection",
+        "heading": "Build the water prescription",
+        "body": "Total water includes formula free water, medication flushes, scheduled tube flushes, oral intake, and intravenous fluid. Subtract known sources from the individualized daily target to estimate supplemental water. Then adjust for fever, losses, organ function, sodium status, and the safety of the selected access route.",
+        "status": "source claim set remains open; useful original content preserved pending complete reconciliation"
+      },
+      {
+        "lesson": "medication-administration",
+        "heading": "Separate medications from formula and each other",
+        "body": "Stop feeding only when the drug or clinical situation requires it. Flush the tube, administer each medication separately, flush between medications, and flush after the final dose before restarting feeding. Do not mix medications directly into formula or combine several medications in one syringe. Use an enteral syringe and water appropriate to the patient and route.",
+        "status": "source claim set remains open; useful original content preserved pending complete reconciliation"
+      },
+      {
+        "lesson": "medication-administration",
+        "heading": "Respect the tube tip",
+        "body": "A medication that requires gastric acid, gastric activation, or absorption in the proximal intestine may not work when delivered into the jejunum. Hyperosmolar liquids and sorbitol-containing products can worsen diarrhea. Confirm compatibility, dilute when appropriate, account for flush volume, and document the access site in medication reconciliation.",
+        "status": "source claim set remains open; useful original content preserved pending complete reconciliation"
+      },
+      {
+        "lesson": "monitoring-complications",
+        "heading": "Prevent aspiration with a bundle",
+        "body": "Elevate the head of the bed 30 to 45 degrees when clinically feasible, verify tube position, reduce unnecessary sedation, assess gastric emptying, and consider postpyloric access for persistent high-risk cases. Blue dye or methylene blue should not be added to formula. A single gastric residual volume is not a diagnosis of intolerance.",
+        "status": "source claim set remains open; useful original content preserved pending complete reconciliation"
+      },
+      {
+        "lesson": "monitoring-complications",
+        "heading": "Use gastric residuals selectively",
+        "body": "Current critical care guidance does not support routine gastric residual volume monitoring in every patient. When a unit uses residuals, do not automatically stop feeding for a value below 500 mL in the absence of other intolerance signs. Interpret trends with vomiting, distention, pain, hemodynamics, stool, imaging, and aspiration risk.",
+        "status": "source claim set remains open; useful original content preserved pending complete reconciliation"
+      },
+      {
+        "lesson": "monitoring-complications",
+        "heading": "Find the cause of diarrhea and clogging",
+        "body": "Antibiotics, sorbitol, laxatives, infection, rapid delivery, and underlying disease often explain diarrhea better than formula osmolality alone. For a clogged tube, check for kinks and use warm water with gentle pressure as the first approach. Avoid acidic beverages, forceful pressure, and improvised objects. Enzyme-based declogging follows protocol.",
+        "status": "source claim set remains open; useful original content preserved pending complete reconciliation"
+      },
+      {
+        "lesson": "monitoring-complications",
+        "heading": "Monitor delivery and metabolic safety",
+        "body": "Track actual volume, weight trend, intake and output, glucose, sodium, potassium, magnesium, phosphate, kidney function, and signs of dehydration or overload at an acuity-matched interval. Patients at refeeding risk need correction and close monitoring of phosphate, potassium, and magnesium during cautious initiation. Review formula preparation, hang time, hand hygiene, and the insertion site to prevent contamination and infection.",
+        "status": "source claim set remains open; useful original content preserved pending complete reconciliation"
+      }
+    ],
+    "embeddedChecks": [
+      {
+        "lesson": "enteral-decision",
+        "check": {
+          "question": "Which patient is the best candidate for early enteral nutrition?",
+          "choices": [
+            "A hemodynamically stable ventilated patient who cannot eat",
+            "A patient with suspected bowel ischemia and rising lactate",
+            "A patient with complete intestinal obstruction",
+            "A patient meeting needs with a safe oral diet"
+          ],
+          "answer": 0,
+          "rationale": "A stable critically ill patient with inadequate oral intake and a usable gastrointestinal tract is an appropriate candidate.",
+          "reviewHref": "#enteral-decision"
+        },
+        "status": "source claim set remains open"
+      },
+      {
+        "lesson": "access-route",
+        "check": {
+          "question": "Which route is most appropriate for a patient with severe gastroparesis who requires enteral nutrition and continues to aspirate despite preventive measures?",
+          "choices": [
+            "Postpyloric access with controlled delivery",
+            "A large gastric bolus",
+            "An unconfirmed nasogastric tube",
+            "An intravenous syringe connected to the feeding tube"
+          ],
+          "answer": 0,
+          "rationale": "Postpyloric delivery can bypass impaired gastric emptying and may reduce aspiration risk in selected patients.",
+          "reviewHref": "#access-route"
+        },
+        "status": "source claim set remains open"
+      },
+      {
+        "lesson": "medication-administration",
+        "check": {
+          "question": "Which practice is safest when several medications are due through a feeding tube?",
+          "choices": [
+            "Give each medication separately with appropriate flushes",
+            "Crush all products together in formula",
+            "Crush an extended-release tablet to prevent clogging",
+            "Use an intravenous syringe on an enteral connector"
+          ],
+          "answer": 0,
+          "rationale": "Separate administration and flushing reduce incompatibility, dosing error, and tube obstruction.",
+          "reviewHref": "#medication-administration"
+        },
+        "status": "source claim set remains open"
+      },
+      {
+        "lesson": "monitoring-complications",
+        "check": {
+          "question": "A stable ventilated patient has a gastric residual of 320 mL without pain, vomiting, distention, or aspiration. What is the best response?",
+          "choices": [
+            "Continue clinical assessment and avoid an automatic feed stop based on the number alone",
+            "Permanently stop enteral nutrition",
+            "Add blue dye to the formula",
+            "Switch every medication to syrup"
+          ],
+          "answer": 0,
+          "rationale": "Guidance advises against automatically holding feeding for residuals below 500 mL when other intolerance signs are absent.",
+          "reviewHref": "#monitoring-complications"
+        },
+        "status": "source claim set remains open"
+      }
+    ],
+    "figures": {
+      "file": "src/components/learn/EnteralNutritionVisual.jsx",
+      "sha256": "22b35a75d64b209f15a8ca537163c94cccdd94d0accdb4c3414cb8f4d0ed575c",
+      "claimSets": {
+        "enteral-decision": {
+          "eyebrow": "Route decision",
+          "title": "Need, gut, perfusion, route.",
+          "items": [
+            [
+              "01",
+              "Need",
+              "Oral intake cannot safely meet the target"
+            ],
+            [
+              "02",
+              "Gut",
+              "Digestion and absorption are usable"
+            ],
+            [
+              "03",
+              "Perfusion",
+              "Resuscitation is complete and stable"
+            ],
+            [
+              "04",
+              "Route",
+              "Choose oral, gastric, or postpyloric delivery"
+            ]
+          ]
+        },
+        "access-route": {
+          "eyebrow": "Access map",
+          "title": "Choose the tip before the tube.",
+          "items": [
+            [
+              "Nasal",
+              "Shorter course",
+              "Gastric or postpyloric"
+            ],
+            [
+              "Gastric",
+              "Reservoir",
+              "Bolus, intermittent, continuous"
+            ],
+            [
+              "Postpyloric",
+              "Bypass",
+              "Controlled small bowel delivery"
+            ],
+            [
+              "Percutaneous",
+              "Longer support",
+              "Gastrostomy or jejunostomy"
+            ]
+          ]
+        },
+        "delivery-prescription": {
+          "eyebrow": "Delivery engine",
+          "title": "Rate is only half the order.",
+          "items": [
+            [
+              "Volume",
+              "Daily target",
+              "What must reach the patient"
+            ],
+            [
+              "Rate",
+              "mL per hour",
+              "Volume divided by running hours"
+            ],
+            [
+              "Schedule",
+              "Hours on",
+              "Continuous, cyclic, intermittent, bolus"
+            ],
+            [
+              "Audit",
+              "Actually delivered",
+              "Account for every interruption"
+            ]
+          ]
+        },
+        "formula-selection": {
+          "eyebrow": "Formula logic",
+          "title": "Composition follows physiology.",
+          "items": [
+            [
+              "Intact",
+              "Polymeric",
+              "Use when digestion and absorption work"
+            ],
+            [
+              "Hydrolyzed",
+              "Peptide based",
+              "Use for a defined absorption problem"
+            ],
+            [
+              "Density",
+              "Energy per mL",
+              "Trade volume for free water"
+            ],
+            [
+              "Water",
+              "Total sources",
+              "Formula plus flushes plus other intake"
+            ]
+          ]
+        },
+        "medication-administration": {
+          "eyebrow": "Medication sequence",
+          "title": "Review, separate, flush, verify.",
+          "items": [
+            [
+              "Review",
+              "Dosage form",
+              "Crushability, release, hazard"
+            ],
+            [
+              "Verify",
+              "Tube tip",
+              "Gastric conditions and absorption site"
+            ],
+            [
+              "Separate",
+              "One drug at a time",
+              "Never mix into formula"
+            ],
+            [
+              "Flush",
+              "Before, between, after",
+              "Protect dose and tube patency"
+            ]
+          ]
+        },
+        "monitoring-complications": {
+          "eyebrow": "Tolerance matrix",
+          "title": "Find the system that failed.",
+          "items": [
+            [
+              "GI",
+              "Pain, stool, emesis",
+              "Assess rate, disease, infection, drugs"
+            ],
+            [
+              "Metabolic",
+              "Glucose and electrolytes",
+              "Watch refeeding and hydration"
+            ],
+            [
+              "Mechanical",
+              "Position and patency",
+              "Migration, clogging, leakage"
+            ],
+            [
+              "Delivery",
+              "Ordered versus received",
+              "Audit holds, pump, preparation"
+            ]
+          ]
+        }
+      },
+      "status": "all six clinical claim sets remain open;data reread andinventoried,not source-verified"
+    },
+    "metadata": {
+      "module": {
+        "slug": "enteral-nutrition",
+        "number": "05",
+        "title": "Enteral Nutrition",
+        "source": "Clinical nutrition support",
+        "description": "Translate gastrointestinal function, access, formula composition, medication handling, and monitoring into a safe enteral nutrition plan.",
+        "topics": [
+          "Indications and timing",
+          "Access and delivery",
+          "Formula selection",
+          "Medication safety",
+          "Monitoring and complications"
+        ],
+        "outcomes": [
+          "Determine when enteral nutrition is appropriate and when feeding should be delayed or withheld.",
+          "Select an access site and administration method that match duration, gastric function, aspiration risk, and patient goals.",
+          "Compare formula composition and calculate delivery, free water, and supplemental flush requirements.",
+          "Administer medications through enteral access without compromising the drug, formula, or tube.",
+          "Detect intolerance, refeeding risk, aspiration, contamination, and mechanical complications early."
+        ],
+        "references": [
+          {
+            "label": "ASPEN Safe Practices for Enteral Nutrition Therapy",
+            "href": "https://nutritioncare.org/clinical-resources/enteral-nutrition/"
+          },
+          {
+            "label": "ASPEN guideline for nutrition support in the adult critically ill patient",
+            "href": "https://doi.org/10.1002/jpen.2267"
+          },
+          {
+            "label": "SCCM and ASPEN adult critical care nutrition guideline",
+            "href": "https://sccmmedia.sccm.org/documents/LearnICU/Guidelines/Nutrition-SCCM-ASPEN.pdf"
+          },
+          {
+            "label": "ASPEN consensus recommendations for refeeding syndrome",
+            "href": "https://doi.org/10.1002/ncp.10474"
+          },
+          {
+            "label": "FDA guidance on enteral connector misconnections",
+            "href": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/safety-considerations-mitigate-risks-misconnections-small-bore-connectors-intended-enteral"
+          },
+          {
+            "label": "FDA medical device connector safety resources",
+            "href": "https://www.fda.gov/medical-devices/general-hospital-devices-and-supplies/medical-device-connectors"
+          }
+        ]
+      },
+      "lessons": [
+        {
+          "slug": "enteral-decision",
+          "title": "The Enteral Decision",
+          "summary": "Use the gastrointestinal tract when it can safely receive and absorb nutrients, but separate a functioning gut from a patient who is not yet adequately resuscitated.",
+          "concepts": [
+            "Indications and goals",
+            "Hemodynamic stability",
+            "Contraindications",
+            "Early critical care feeding"
+          ],
+          "visual": "enteral-decision",
+          "application": "Before writing a feeding order, state why oral intake is inadequate, whether the gut is usable, whether perfusion is adequate, and what clinical outcome the therapy should support.",
+          "keyPoints": [
+            "Enteral nutrition is preferred when the gut is functional and safe to use.",
+            "Nutrition risk and expected inadequacy guide initiation.",
+            "Active ischemia, obstruction, or uncontrolled shock requires reassessment before feeding.",
+            "Early feeding is a monitored strategy, not an automatic full-rate order."
+          ]
+        },
+        {
+          "slug": "access-route",
+          "title": "Access and Route Selection",
+          "summary": "Access is chosen by expected duration, anatomy, gastric emptying, aspiration risk, procedural burden, and the therapies that must pass through the tube.",
+          "concepts": [
+            "Gastric versus postpyloric",
+            "Nasal versus percutaneous",
+            "Placement confirmation",
+            "ENFit safety"
+          ],
+          "visual": "access-route",
+          "application": "Choose the least invasive route that can reliably deliver the prescribed therapy, then build a placement, securement, skin care, and reassessment plan around it.",
+          "keyPoints": [
+            "Gastric access offers the most delivery flexibility.",
+            "Postpyloric access is selected for a clinical reason, not by habit.",
+            "Confirm initial placement before use and reassess possible migration.",
+            "Enteral-specific connectors reduce wrong-route events."
+          ]
+        },
+        {
+          "slug": "delivery-prescription",
+          "title": "Delivery and the Feeding Prescription",
+          "summary": "The prescription links a daily nutrient and fluid target to a formula, route, rate, schedule, flush plan, and advancement strategy.",
+          "concepts": [
+            "Bolus, intermittent, and continuous delivery",
+            "Daily volume targets",
+            "Rate calculations",
+            "Advancement and interruptions"
+          ],
+          "visual": "delivery-prescription",
+          "application": "Every order should make the intended daily volume visible. Calculate what will actually be delivered after holds, procedures, medication windows, and pump downtime.",
+          "keyPoints": [
+            "Bolus feeding is generally a gastric strategy.",
+            "Rate multiplied by hours equals delivered volume.",
+            "Advancement follows tolerance and refeeding risk.",
+            "Track prescribed volume against actual delivery."
+          ]
+        },
+        {
+          "slug": "formula-selection",
+          "title": "Formula Selection and Hydration",
+          "summary": "Choose the least complex formula that meets nutrient, volume, digestion, absorption, electrolyte, and tolerance needs.",
+          "concepts": [
+            "Polymeric and peptide-based formulas",
+            "Caloric density",
+            "Fiber and disease-specific products",
+            "Free water and renal solute load"
+          ],
+          "visual": "formula-selection",
+          "application": "Start with physiology and the nutrition prescription. Product marketing cannot substitute for an assessment of protein, calories, fluid, electrolytes, fiber, absorption, cost, and evidence.",
+          "keyPoints": [
+            "Polymeric formula is a reasonable starting point when digestion and absorption are intact.",
+            "Caloric density changes free-water delivery.",
+            "Specialty formulas require a patient-specific rationale.",
+            "Formula volume and water volume are not interchangeable."
+          ]
+        },
+        {
+          "slug": "medication-administration",
+          "title": "Medication Administration Through Enteral Access",
+          "summary": "Safe medication delivery requires a dosage-form review, absorption-site review, drug-specific feeding plan, and flush sequence for every administration.",
+          "concepts": [
+            "Do-not-crush formulations",
+            "Drug and nutrient interactions",
+            "Flush sequence",
+            "Tube site and dosage form"
+          ],
+          "visual": "medication-administration",
+          "application": "Do not ask only whether a tablet can fit through a tube. Ask whether the dosage form can be altered, whether the drug can be absorbed beyond the tube tip, and whether feeding changes exposure.",
+          "keyPoints": [
+            "Every dosage form requires a product-specific crushability check.",
+            "Give medications separately from formula and from one another.",
+            "Use drug-specific feeding holds rather than a universal rule.",
+            "The tube tip can change drug absorption and effect."
+          ]
+        },
+        {
+          "slug": "monitoring-complications",
+          "title": "Monitoring and Complication Prevention",
+          "summary": "Tolerance is a clinical pattern. Integrate delivered volume, symptoms, examination, stool, fluid balance, glucose, electrolytes, access integrity, and infection risk.",
+          "concepts": [
+            "Aspiration prevention",
+            "Diarrhea and intolerance",
+            "Tube obstruction and displacement",
+            "Refeeding and metabolic monitoring"
+          ],
+          "visual": "monitoring-complications",
+          "application": "When a problem appears, identify whether it is gastrointestinal, metabolic, mechanical, medication related, or infectious before changing the formula.",
+          "keyPoints": [
+            "Aspiration prevention uses several coordinated measures.",
+            "A residual value must be interpreted in clinical context.",
+            "Medications are common causes of diarrhea and tube obstruction.",
+            "Monitor what was delivered, not only what was ordered."
+          ]
+        }
+      ],
+      "status": "all integrated clinical metadata pending final claim reconciliation"
+    },
+    "interpretation": "Inventory and reviewed partial book support are not verification of unresolved claims. Do not delete useful guidance simply to fit the limited book passages or replace it with easier questions."
+  },
+  "wholeBookSearch": {
+    "PDFPagesTextSearched": 1032,
+    "passes": 2,
+    "searchIndexSha256": "3e7514e7a455667631397137d96b1b9bee5fe85ae97ce4b52daf6dedc9537ef7",
+    "extendedIndexSha256": "7fec9b83f7427bea89b7c1d29fdf88041e00197ce07b1f5e769742fa66f7cfcc",
+    "terms": "refeeding/spaced variants,aspiration,sorbitol,hyperosmolar,tube names,formula classes,placement/residual/protocol/maintenance andhead-position hints",
+    "result": "Located additional dependency pages258/994. Full clinicalEN protocol claim sets not established by reviewed pages; book158 is the sole extracted refeeding hit.",
+    "limits": "Keyword/OCR searches can miss variants and are locating aids, not proof that a claim is absent from the book or proof that all1032 pages have been clinically/visually audited. Several hits are index/incidental/nonEN contexts; full relevant pages inspected before source adoption."
+  },
+  "broaderBankInventory": {
+    "snapshot": "Committed base c01ed9a1c42ba6b6d4ac2397e24be9d363eb0711 plus this ENbank change;232 modules, not the differing235-module working taxonomy. Prior working-file inventory preserved separately.",
+    "lexicalMatches": 233,
+    "nutritionFeedingSpecificHints": 128,
+    "promptKeyRationaleMatches": 102,
+    "distractorOnlyMatches": 131,
+    "rows": [
+      {
+        "module": "fluid-electrolyte-therapy",
+        "id": "fluid-electrolyte-016",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "fluid-electrolyte-therapy",
+        "id": "fluid-electrolyte-083",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "calcium-phosphorus-homeostasis",
+        "id": "calcium-phosphorus-038",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "parenteral-nutrition",
+        "id": "parenteral-nutrition-001",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "parenteral-nutrition",
+        "id": "parenteral-nutrition-002",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "parenteral-nutrition",
+        "id": "parenteral-nutrition-003",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "parenteral-nutrition",
+        "id": "parenteral-nutrition-004",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "parenteral-nutrition",
+        "id": "parenteral-nutrition-005",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "parenteral-nutrition",
+        "id": "parenteral-nutrition-007",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "parenteral-nutrition",
+        "id": "parenteral-nutrition-033",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "parenteral-nutrition",
+        "id": "parenteral-nutrition-044",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "parenteral-nutrition",
+        "id": "parenteral-nutrition-050",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "parenteral-nutrition",
+        "id": "parenteral-nutrition-108",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "parenteral-nutrition",
+        "id": "parenteral-nutrition-book-001",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "parenteral-nutrition",
+        "id": "parenteral-nutrition-book-023",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "parenteral-nutrition",
+        "id": "parenteral-nutrition-book-024",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "parenteral-nutrition",
+        "id": "parenteral-nutrition-timing-002",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "parenteral-nutrition",
+        "id": "parenteral-nutrition-care-002",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "pediatric-parenteral-nutrition",
+        "id": "pedpn-002",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "pediatric-parenteral-nutrition",
+        "id": "pedpn-006",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "pediatric-parenteral-nutrition",
+        "id": "pedpn-007",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "pediatric-parenteral-nutrition",
+        "id": "pedpn-037",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "pediatric-parenteral-nutrition",
+        "id": "pedpn-038",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "pediatric-parenteral-nutrition",
+        "id": "pedpn-039",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "pediatric-parenteral-nutrition",
+        "id": "pedpn-108",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "warfarin-management",
+        "id": "warfarin-management-011",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "warfarin-management",
+        "id": "warfarin-management-035",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "warfarin-management",
+        "id": "warfarin-management-055",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "warfarin-management",
+        "id": "warfarin-management-103",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "direct-oral-anticoagulants",
+        "id": "direct-oral-anticoagulants-007",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "direct-oral-anticoagulants",
+        "id": "direct-oral-anticoagulants-031",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "direct-oral-anticoagulants",
+        "id": "direct-oral-anticoagulants-051",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "direct-oral-anticoagulants",
+        "id": "direct-oral-anticoagulants-099",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "cystic-fibrosis",
+        "id": "cf-030",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "cystic-fibrosis",
+        "id": "cf-054",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "cystic-fibrosis",
+        "id": "cf-074",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "cystic-fibrosis",
+        "id": "cf-098",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "hyperosmolar-hyperglycemic-state",
+        "id": "hhs-08-case",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "thyroid-medicinal-chemistry",
+        "id": "thychem-05-application",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "thyroid-medicinal-chemistry",
+        "id": "thychem-11-application",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "thyroid-medicinal-chemistry",
+        "id": "thychem-17-application",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "thyroid-medicinal-chemistry",
+        "id": "thychem-24-application",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "adrenal-insufficiency-crisis",
+        "id": "adrenal-insufficiency-granule-tube",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "perioperative-critical-care-pharmacology",
+        "id": "periop-sup-route",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "toxicology-antidotes",
+        "id": "tox-serotonin-4",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "toxicology-antidotes",
+        "id": "tox-lead-who-label-boundary",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "genitourinary-medicinal-chemistry",
+        "id": "genitourinary-medchem-039",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "genitourinary-medicinal-chemistry",
+        "id": "genitourinary-medchem-071",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "genitourinary-medicinal-chemistry",
+        "id": "genitourinary-medchem-103",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "genitourinary-medicinal-chemistry",
+        "id": "genitourinary-medchem-123",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "fluoroquinolone-pharmacology",
+        "id": "fluoroquinolone-pharmacology-001",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "fluoroquinolone-pharmacology",
+        "id": "fluoroquinolone-pharmacology-007",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "fluoroquinolone-pharmacology",
+        "id": "fluoroquinolone-pharmacology-023",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "fluoroquinolone-pharmacology",
+        "id": "fluoroquinolone-pharmacology-025",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "fluoroquinolone-pharmacology",
+        "id": "fluoroquinolone-pharmacology-035",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "fluoroquinolone-pharmacology",
+        "id": "fluoroquinolone-pharmacology-051",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "fluoroquinolone-pharmacology",
+        "id": "fluoroquinolone-pharmacology-053",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "fluoroquinolone-pharmacology",
+        "id": "fluoroquinolone-pharmacology-054",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "fluoroquinolone-pharmacology",
+        "id": "fluoroquinolone-pharmacology-055",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "fluoroquinolone-pharmacology",
+        "id": "fluoroquinolone-pharmacology-056",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "fluoroquinolone-pharmacology",
+        "id": "fluoroquinolone-pharmacology-091",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "fluoroquinolone-pharmacology",
+        "id": "fluoroquinolone-pharmacology-107",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "fluoroquinolone-pharmacology",
+        "id": "fluoroquinolone-pharmacology-109",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "fluoroquinolone-pharmacology",
+        "id": "fluoroquinolone-pharmacology-115",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "fluoroquinolone-pharmacology",
+        "id": "fluoroquinolone-pharmacology-131",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "tetracycline-pharmacology",
+        "id": "tetracycline-pharmacology-011",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "tetracycline-pharmacology",
+        "id": "tetracycline-pharmacology-017",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "tetracycline-pharmacology",
+        "id": "tetracycline-pharmacology-035",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "tetracycline-pharmacology",
+        "id": "tetracycline-pharmacology-041",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "tetracycline-pharmacology",
+        "id": "tetracycline-pharmacology-063",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "tetracycline-pharmacology",
+        "id": "tetracycline-pharmacology-069",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "tetracycline-pharmacology",
+        "id": "tetracycline-pharmacology-115",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "tetracycline-pharmacology",
+        "id": "tetracycline-pharmacology-121",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "vancomycin-pharmacology",
+        "id": "vancomycin-pharmacology-006",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "vancomycin-pharmacology",
+        "id": "vancomycin-pharmacology-007",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "vancomycin-pharmacology",
+        "id": "vancomycin-pharmacology-013",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "vancomycin-pharmacology",
+        "id": "vancomycin-pharmacology-034",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "vancomycin-pharmacology",
+        "id": "vancomycin-pharmacology-035",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "vancomycin-pharmacology",
+        "id": "vancomycin-pharmacology-041",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "vancomycin-pharmacology",
+        "id": "vancomycin-pharmacology-046",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "vancomycin-pharmacology",
+        "id": "vancomycin-pharmacology-047",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "vancomycin-pharmacology",
+        "id": "vancomycin-pharmacology-070",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "vancomycin-pharmacology",
+        "id": "vancomycin-pharmacology-071",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "vancomycin-pharmacology",
+        "id": "vancomycin-pharmacology-090",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "vancomycin-pharmacology",
+        "id": "vancomycin-pharmacology-091",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "vancomycin-pharmacology",
+        "id": "vancomycin-pharmacology-094",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "vancomycin-pharmacology",
+        "id": "vancomycin-pharmacology-095",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "vancomycin-pharmacology",
+        "id": "vancomycin-pharmacology-097",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "vancomycin-pharmacology",
+        "id": "vancomycin-pharmacology-114",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "vancomycin-pharmacology",
+        "id": "vancomycin-pharmacology-115",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "vancomycin-pharmacology",
+        "id": "vancomycin-pharmacology-121",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "vancomycin-pharmacology",
+        "id": "vancomycin-pharmacology-122",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "vancomycin-pharmacology",
+        "id": "vancomycin-pharmacology-123",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "lefamulin-pharmacology",
+        "id": "lefamulin-pharmacology-023",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "lefamulin-pharmacology",
+        "id": "lefamulin-pharmacology-027",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "lefamulin-pharmacology",
+        "id": "lefamulin-pharmacology-028",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "lefamulin-pharmacology",
+        "id": "lefamulin-pharmacology-047",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "lefamulin-pharmacology",
+        "id": "lefamulin-pharmacology-051",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "lefamulin-pharmacology",
+        "id": "lefamulin-pharmacology-052",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "lefamulin-pharmacology",
+        "id": "lefamulin-pharmacology-075",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "lefamulin-pharmacology",
+        "id": "lefamulin-pharmacology-079",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "lefamulin-pharmacology",
+        "id": "lefamulin-pharmacology-080",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "lefamulin-pharmacology",
+        "id": "lefamulin-pharmacology-151",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "lefamulin-pharmacology",
+        "id": "lefamulin-pharmacology-155",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "lefamulin-pharmacology",
+        "id": "lefamulin-pharmacology-156",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "fidaxomicin-pharmacology",
+        "id": "fidaxomicin-pharmacology-041",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "fidaxomicin-pharmacology",
+        "id": "fidaxomicin-pharmacology-042",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "fidaxomicin-pharmacology",
+        "id": "fidaxomicin-pharmacology-043",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "fidaxomicin-pharmacology",
+        "id": "fidaxomicin-pharmacology-044",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "acute-bacterial-meningitis",
+        "id": "acute-bacterial-meningitis-027",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "acute-bacterial-meningitis",
+        "id": "acute-bacterial-meningitis-059",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "acute-bacterial-meningitis",
+        "id": "acute-bacterial-meningitis-095",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "acute-bacterial-meningitis",
+        "id": "acute-bacterial-meningitis-143",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "hospital-ventilator-associated-pneumonia",
+        "id": "hospital-ventilator-associated-pneumonia-017",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "hospital-ventilator-associated-pneumonia",
+        "id": "hospital-ventilator-associated-pneumonia-065",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "hospital-ventilator-associated-pneumonia",
+        "id": "hospital-ventilator-associated-pneumonia-113",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "hospital-ventilator-associated-pneumonia",
+        "id": "hospital-ventilator-associated-pneumonia-157",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clostridioides-difficile-infection",
+        "id": "clostridioides-difficile-infection-015",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clostridioides-difficile-infection",
+        "id": "clostridioides-difficile-infection-022",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clostridioides-difficile-infection",
+        "id": "clostridioides-difficile-infection-023",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clostridioides-difficile-infection",
+        "id": "clostridioides-difficile-infection-026",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clostridioides-difficile-infection",
+        "id": "clostridioides-difficile-infection-041",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clostridioides-difficile-infection",
+        "id": "clostridioides-difficile-infection-042",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clostridioides-difficile-infection",
+        "id": "clostridioides-difficile-infection-043",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clostridioides-difficile-infection",
+        "id": "clostridioides-difficile-infection-044",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clostridioides-difficile-infection",
+        "id": "clostridioides-difficile-infection-049",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clostridioides-difficile-infection",
+        "id": "clostridioides-difficile-infection-050",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clostridioides-difficile-infection",
+        "id": "clostridioides-difficile-infection-051",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clostridioides-difficile-infection",
+        "id": "clostridioides-difficile-infection-052",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clostridioides-difficile-infection",
+        "id": "clostridioides-difficile-infection-053",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clostridioides-difficile-infection",
+        "id": "clostridioides-difficile-infection-054",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clostridioides-difficile-infection",
+        "id": "clostridioides-difficile-infection-055",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clostridioides-difficile-infection",
+        "id": "clostridioides-difficile-infection-056",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clostridioides-difficile-infection",
+        "id": "clostridioides-difficile-infection-071",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clostridioides-difficile-infection",
+        "id": "clostridioides-difficile-infection-078",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clostridioides-difficile-infection",
+        "id": "clostridioides-difficile-infection-079",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clostridioides-difficile-infection",
+        "id": "clostridioides-difficile-infection-082",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clostridioides-difficile-infection",
+        "id": "clostridioides-difficile-infection-107",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clostridioides-difficile-infection",
+        "id": "clostridioides-difficile-infection-114",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clostridioides-difficile-infection",
+        "id": "clostridioides-difficile-infection-115",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clostridioides-difficile-infection",
+        "id": "clostridioides-difficile-infection-118",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clostridioides-difficile-infection",
+        "id": "clostridioides-difficile-infection-123",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "rickettsial-ehrlichial-anaplasma-infections",
+        "id": "rickettsial-015",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "rickettsial-ehrlichial-anaplasma-infections",
+        "id": "rickettsial-023",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "rickettsial-ehrlichial-anaplasma-infections",
+        "id": "rickettsial-051",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "rickettsial-ehrlichial-anaplasma-infections",
+        "id": "rickettsial-059",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "rickettsial-ehrlichial-anaplasma-infections",
+        "id": "rickettsial-079",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "rickettsial-ehrlichial-anaplasma-infections",
+        "id": "rickettsial-085",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "rickettsial-ehrlichial-anaplasma-infections",
+        "id": "rickettsial-086",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "rickettsial-ehrlichial-anaplasma-infections",
+        "id": "rickettsial-087",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "rickettsial-ehrlichial-anaplasma-infections",
+        "id": "rickettsial-088",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "rickettsial-ehrlichial-anaplasma-infections",
+        "id": "rickettsial-115",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "rickettsial-ehrlichial-anaplasma-infections",
+        "id": "rickettsial-123",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "lyme-disease",
+        "id": "lyme-034",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "lyme-disease",
+        "id": "lyme-035",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "lyme-disease",
+        "id": "lyme-062",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "lyme-disease",
+        "id": "lyme-063",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "lyme-disease",
+        "id": "lyme-110",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "lyme-disease",
+        "id": "lyme-111",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "lyme-disease",
+        "id": "lyme-146",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "lyme-disease",
+        "id": "lyme-147",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clinical-drug-interactions",
+        "id": "clinical-drug-interactions-007",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clinical-drug-interactions",
+        "id": "clinical-drug-interactions-035",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clinical-drug-interactions",
+        "id": "clinical-drug-interactions-045",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clinical-drug-interactions",
+        "id": "clinical-drug-interactions-046",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clinical-drug-interactions",
+        "id": "clinical-drug-interactions-047",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clinical-drug-interactions",
+        "id": "clinical-drug-interactions-048",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clinical-drug-interactions",
+        "id": "clinical-drug-interactions-079",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "clinical-drug-interactions",
+        "id": "clinical-drug-interactions-127",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "tularemia",
+        "id": "tularemia-007",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "tularemia",
+        "id": "tularemia-015",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "tularemia",
+        "id": "tularemia-019",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "tularemia",
+        "id": "tularemia-043",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "tularemia",
+        "id": "tularemia-051",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "tularemia",
+        "id": "tularemia-055",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "tularemia",
+        "id": "tularemia-079",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "tularemia",
+        "id": "tularemia-087",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "tularemia",
+        "id": "tularemia-091",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "tularemia",
+        "id": "tularemia-135",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "tularemia",
+        "id": "tularemia-143",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "tularemia",
+        "id": "tularemia-147",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "systemic-antifungal-foundations",
+        "id": "antifungal-foundations-005",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "systemic-antifungal-foundations",
+        "id": "antifungal-foundations-007",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "systemic-antifungal-foundations",
+        "id": "antifungal-foundations-045",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "systemic-antifungal-foundations",
+        "id": "antifungal-foundations-047",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "systemic-antifungal-foundations",
+        "id": "antifungal-foundations-085",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "systemic-antifungal-foundations",
+        "id": "antifungal-foundations-087",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "systemic-antifungal-foundations",
+        "id": "antifungal-foundations-125",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "systemic-antifungal-foundations",
+        "id": "antifungal-foundations-127",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "triazole-antifungal-pharmacology",
+        "id": "triazole-pharmacology-011",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "triazole-antifungal-pharmacology",
+        "id": "triazole-pharmacology-015",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "triazole-antifungal-pharmacology",
+        "id": "triazole-pharmacology-051",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "triazole-antifungal-pharmacology",
+        "id": "triazole-pharmacology-055",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "triazole-antifungal-pharmacology",
+        "id": "triazole-pharmacology-091",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "triazole-antifungal-pharmacology",
+        "id": "triazole-pharmacology-095",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "triazole-antifungal-pharmacology",
+        "id": "triazole-pharmacology-131",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "triazole-antifungal-pharmacology",
+        "id": "triazole-pharmacology-135",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "influenza-antiviral-pharmacology",
+        "id": "influenza-antiviral-pharmacology-019",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "influenza-antiviral-pharmacology",
+        "id": "influenza-antiviral-pharmacology-027",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "influenza-antiviral-pharmacology",
+        "id": "influenza-antiviral-pharmacology-030",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "influenza-antiviral-pharmacology",
+        "id": "influenza-antiviral-pharmacology-035",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "influenza-antiviral-pharmacology",
+        "id": "influenza-antiviral-pharmacology-039",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "influenza-antiviral-pharmacology",
+        "id": "influenza-antiviral-pharmacology-059",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "influenza-antiviral-pharmacology",
+        "id": "influenza-antiviral-pharmacology-067",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "influenza-antiviral-pharmacology",
+        "id": "influenza-antiviral-pharmacology-070",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "influenza-antiviral-pharmacology",
+        "id": "influenza-antiviral-pharmacology-075",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "influenza-antiviral-pharmacology",
+        "id": "influenza-antiviral-pharmacology-095",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "influenza-antiviral-pharmacology",
+        "id": "influenza-antiviral-pharmacology-099",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "influenza-antiviral-pharmacology",
+        "id": "influenza-antiviral-pharmacology-110",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "influenza-antiviral-pharmacology",
+        "id": "influenza-antiviral-pharmacology-115",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "influenza-antiviral-pharmacology",
+        "id": "influenza-antiviral-pharmacology-123",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "influenza-antiviral-pharmacology",
+        "id": "influenza-antiviral-pharmacology-135",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "influenza-antiviral-pharmacology",
+        "id": "influenza-antiviral-pharmacology-139",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "influenza-antiviral-pharmacology",
+        "id": "influenza-antiviral-pharmacology-150",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "influenza-antiviral-pharmacology",
+        "id": "influenza-antiviral-pharmacology-163",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "influenza-antiviral-pharmacology",
+        "id": "influenza-antiviral-pharmacology-171",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "influenza-antiviral-pharmacology",
+        "id": "influenza-antiviral-pharmacology-175",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "cytomegalovirus-pharmacotherapy",
+        "id": "cytomegalovirus-pharmacotherapy-039",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "cytomegalovirus-pharmacotherapy",
+        "id": "cytomegalovirus-pharmacotherapy-103",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "cytomegalovirus-pharmacotherapy",
+        "id": "cytomegalovirus-pharmacotherapy-155",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "cytomegalovirus-pharmacotherapy",
+        "id": "cytomegalovirus-pharmacotherapy-183",
+        "matchScope": "distractor-only",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "alcohol-associated-liver-disease",
+        "id": "alcohol-associated-liver-disease-093",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "alcohol-associated-liver-disease",
+        "id": "alcohol-associated-liver-disease-094",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "alcohol-associated-liver-disease",
+        "id": "alcohol-associated-liver-disease-095",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "alcohol-associated-liver-disease",
+        "id": "alcohol-associated-liver-disease-096",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "acute-liver-failure",
+        "id": "acute-liver-failure-061",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "acute-liver-failure",
+        "id": "acute-liver-failure-062",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "acute-liver-failure",
+        "id": "acute-liver-failure-063",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "acute-liver-failure",
+        "id": "acute-liver-failure-064",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": true,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "acute-liver-failure",
+        "id": "acute-liver-failure-105",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "acute-liver-failure",
+        "id": "acute-liver-failure-106",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "acute-liver-failure",
+        "id": "acute-liver-failure-107",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      },
+      {
+        "module": "acute-liver-failure",
+        "id": "acute-liver-failure-108",
+        "matchScope": "prompt/key/rationale",
+        "feedingSpecificHint": false,
+        "status": "lexical candidate only; not clinical verification"
+      }
+    ],
+    "fullSnapshotSha256": "98fe595144b215aaf44c36c49c3e222015848b19bff6ea38fc0c418581213094",
+    "status": "inventory only; not broader-bank clinical closure",
+    "remaining": "Select true nutrition/feeding claims from lexical/incidental/distractor-only matches, individually review complete targetquestions and reconcile working-only rewriteIDs with committedparents. Committedwarfarin nutrition hit055 differs from workingsemanticenteral-feeding item; that item has not been published or release-verified."
+  },
+  "validation": {
+    "isolatedBuild": {
+      "staticPages": 567,
+      "exitCode": 0,
+      "logSha256": "6b7dd37d741a644c7a6dba7cd156e903c3b9229ca21e7caa4b22ab46ddf38d32"
+    },
+    "focusedStructural": {
+      "modules": 1,
+      "questions": 108,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "enteral-nutrition",
+          "lessons": 6,
+          "questions": 108,
+          "minimumLessonCoverage": 9
+        }
+      ]
+    },
+    "technical": {
+      "status": "passed",
+      "bank": 108,
+      "bodies": 36,
+      "changedQuestions": [
+        {
+          "id": "enteral-nutrition-023",
+          "question": "Which prescription is most complete?",
+          "choices": [
+            "Formula, access, method, rate or volume, schedule, flushes, advancement, and monitoring",
+            "Formula, access, method, rate, schedule, and advancement, with supplemental water and monitoring left unspecified",
+            "Formula, method, rate, flushes, and monitoring, with the feeding destination and schedule left unspecified",
+            "Formula, access, daily volume, flushes, and monitoring, with delivery method and advancement left unspecified"
+          ],
+          "answer": 0,
+          "rationale": "A prescription should describe what is given, where it is delivered, how much and when it runs, the water plan, and how delivery is assessed. The complete option makes these parts explicit. Naming a product or an hourly rate alone does not establish delivered nutrition or hydration.",
+          "reviewHref": "#delivery-prescription"
+        },
+        {
+          "id": "enteral-nutrition-041",
+          "question": "What device should be used to administer a medication through an ENFit tube?",
+          "choices": [
+            "A compatible enteral syringe",
+            "An intravenous Luer-lock syringe attached using an improvised connector",
+            "An oral syringe selected by color without verifying compatibility with the actual tube",
+            "An unlabelled syringe that is assumed suitable because it appears to fit"
+          ],
+          "answer": 0,
+          "rationale": "Use equipment intended for enteral administration and compatible with the actual tube. Oral/feeding-tube syringes should be clearly distinguished from intravenous syringes to prevent wrong-route administration. Color or apparent fit alone is not a compatibility check; do not improvise an intravenous connection.",
+          "reviewHref": "#medication-administration"
+        },
+        {
+          "id": "enteral-nutrition-090",
+          "question": "A newly placed small-bore nasal tube has not been confirmed and medication is due. What is the best next action?",
+          "choices": [
+            "Hold use and obtain evidence-based placement confirmation",
+            "Give the medication before placement is checked because only nutrition needs to wait",
+            "Treat the presence of a compatible enteral connector as proof of the tube position",
+            "Choose a larger medication-water flush instead of verifying the tube position"
+          ],
+          "answer": 0,
+          "rationale": "An incorrectly placed nasogastric tube can cause serious pulmonary complications when material is administered through it. Withhold use until the location is confirmed. Drug-form compatibility or a suitable syringe does not establish the tube tip location; this question does not specify a confirmation test.",
+          "reviewHref": "#access-route"
+        },
+        {
+          "id": "enteral-nutrition-104",
+          "question": "A jejunal tube patient needs a delayed-release drug, but the available product instructions do not establish safe jejunal administration. Which interpretation or management plan is most defensible?",
+          "choices": [
+            "Select a compatible formulation or alternative route with pharmacy input",
+            "Crush the delayed-release preparation and give it through the jejunal tube without checking its instructions",
+            "Use a larger water flush as a substitute for checking the dosage form and access site",
+            "Apply nasogastric administration instructions to jejunal access without checking whether they cover that site"
+          ],
+          "answer": 0,
+          "rationale": "Delayed-release preparations should not be crushed for tube administration without verified product-specific instructions. Identify the tube destination and check the formulation and permitted administration method. If safe use of the available product at that site is not established, obtain a suitable formulation or route with pharmacy input rather than assuming compatibility.",
+          "reviewHref": "#medication-administration"
+        }
+      ],
+      "newQuestions": [],
+      "changedBody": [],
+      "addedBodies": [],
+      "retainedBody": {
+        "lesson": "delivery-prescription",
+        "heading": "Prescribe the full system",
+        "body": "Name the product, access site, method, goal rate or volume, schedule, advancement, water flushes, and monitoring. A rate without a duration does not define daily delivery. For example, 60 mL per hour for 20 hours provides 1,200 mL, not the 1,440 mL that would be delivered over 24 hours."
+      },
+      "preservation": {
+        "all108IdsKeysAnchors": true,
+        "107PromptsUnchangedOneUnsupportedPremiseRepaired": true,
+        "104OtherQuestionObjectsUnchanged": true,
+        "allPrior62VerifiedObjectsUnchanged": true,
+        "all36BodiesAndSixEmbeddedChecksAndMetadataUnchanged": true,
+        "fourCumulativeObjectsUnchangedOneRationaleChoiceSetSynchronized": true
+      },
+      "workedOrderRecheck": {
+        "rate": 60,
+        "hours": 20,
+        "volume": 1200,
+        "comparisonHours": 24,
+        "comparisonVolume": 1440,
+        "difference": 240,
+        "previouslyCheckedWorkedExampleNotCountedAgain": true,
+        "newDistinctAssessmentChecks": 0,
+        "runningAssessmentChecks": 674,
+        "runningSeparateSourceExamples": 98
+      },
+      "contentHashes": {
+        "src/data/questionBanks/enteralNutrition.js": "d668c2d6bdd6f8940ea71b71f0c042b87d88812230292897ca4d1d2ef7b24278"
+      },
+      "unchangedModuleSha256": "d43c72c441839e07c137f4150ad801bfc0ab647bf475840c04bcc3bdf1850b8a"
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "renderedBodies": 36,
+          "newOrRevisedBodies": 0,
+          "retainedBody": 1,
+          "bankItemsCorrectAndWrong": 4,
+          "currentCumulativeRuntimeItems": 5,
+          "clinicalCumulativeItemsPendingSource": [
+            "enteral-nutrition-028"
+          ],
+          "remediationAndProgress": true
+        },
+        {
+          "width": 390,
+          "renderedBodies": 36,
+          "newOrRevisedBodies": 0,
+          "retainedBody": 1,
+          "bankItemsCorrectAndWrong": 4,
+          "currentCumulativeRuntimeItems": 5,
+          "clinicalCumulativeItemsPendingSource": [
+            "enteral-nutrition-028"
+          ],
+          "remediationAndProgress": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "manualVisual": {
+      "retainedBodyImages": 2,
+      "scopedWrongFeedbackImages": 8,
+      "sheets": 3,
+      "findings": "One retained body and four complete question fields/answerfeedback inspected at1440/390. No clipping;320px overflow, remediation,savedprogress and all36bodyDOM matching passed."
+    },
+    "sourceGapsMeaning": "Structural reference/shape absence is not proof of clinical source accuracy."
+  },
+  "preservation": {
+    "all108IdsKeysAnchors": true,
+    "107PromptsUnchangedOneUnsupportedPremiseRepaired": true,
+    "104OtherQuestionObjectsUnchanged": true,
+    "allPrior62VerifiedObjectsUnchanged": true,
+    "all36BodiesAndSixEmbeddedChecksAndMetadataUnchanged": true,
+    "fourCumulativeObjectsUnchangedOneRationaleChoiceSetSynchronized": true
+  },
+  "calculationEvidence": {
+    "rate": 60,
+    "hours": 20,
+    "volume": 1200,
+    "comparisonHours": 24,
+    "comparisonVolume": 1440,
+    "difference": 240,
+    "previouslyCheckedWorkedExampleNotCountedAgain": true,
+    "newDistinctAssessmentChecks": 0,
+    "runningAssessmentChecks": 674,
+    "runningSeparateSourceExamples": 98
+  },
+  "cumulativeReview": [
+    {
+      "question": {
+        "id": "cumulative-enteral-nutrition-enteral-nutrition-001",
+        "question": "Which principle most strongly favors enteral over parenteral nutrition?",
+        "choices": [
+          "A usable gastrointestinal tract that cannot be supported adequately by oral intake",
+          "A need to bypass all intestinal function",
+          "Complete mechanical obstruction",
+          "Active bowel ischemia"
+        ],
+        "answer": 0,
+        "rationale": "Enteral nutrition is preferred when the gut can safely digest and absorb nutrients but oral intake is inadequate.",
+        "reviewHref": "/learn/pharmacy/modules/enteral-nutrition",
+        "module": "Enteral Nutrition"
+      },
+      "status": "source verified in current/prior scope"
+    },
+    {
+      "question": {
+        "id": "cumulative-enteral-nutrition-enteral-nutrition-028",
+        "question": "Which statement about disease-specific formula is most accurate?",
+        "choices": [
+          "Selection requires a compositional and evidence-based patient rationale",
+          "The diagnosis alone proves superiority",
+          "Every patient with diabetes requires the same formula",
+          "Specialty formulas need no monitoring"
+        ],
+        "answer": 0,
+        "rationale": "Disease labels do not replace assessment of nutrient composition, evidence, cost, and tolerance.",
+        "reviewHref": "/learn/pharmacy/modules/enteral-nutrition",
+        "module": "Enteral Nutrition"
+      },
+      "status": "pending source review"
+    },
+    {
+      "question": {
+        "id": "cumulative-enteral-nutrition-enteral-nutrition-064",
+        "question": "A daily enteral volume target is 1800 mL and feeding will run for 20 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+        "choices": [
+          "90 mL/hour",
+          "180 mL/hour",
+          "20 mL/hour",
+          "1800 mL/hour"
+        ],
+        "answer": 0,
+        "rationale": "1800 mL divided by 20 hours equals 90 mL per hour.",
+        "reviewHref": "/learn/pharmacy/modules/enteral-nutrition",
+        "module": "Enteral Nutrition"
+      },
+      "status": "source verified in current/prior scope"
+    },
+    {
+      "question": {
+        "id": "cumulative-enteral-nutrition-enteral-nutrition-090",
+        "question": "A newly placed small-bore nasal tube has not been confirmed and medication is due. What is the best next action?",
+        "choices": [
+          "Hold use and obtain evidence-based placement confirmation",
+          "Give the medication before placement is checked because only nutrition needs to wait",
+          "Treat the presence of a compatible enteral connector as proof of the tube position",
+          "Choose a larger medication-water flush instead of verifying the tube position"
+        ],
+        "answer": 0,
+        "rationale": "An incorrectly placed nasogastric tube can cause serious pulmonary complications when material is administered through it. Withhold use until the location is confirmed. Drug-form compatibility or a suitable syringe does not establish the tube tip location; this question does not specify a confirmation test.",
+        "reviewHref": "/learn/pharmacy/modules/enteral-nutrition",
+        "module": "Enteral Nutrition"
+      },
+      "status": "source verified in current/prior scope"
+    },
+    {
+      "question": {
+        "id": "cumulative-enteral-nutrition-enteral-nutrition-117",
+        "question": "A prescribed warfarin administration plan holds tube feeding for one hour before and one hour after an 08:00 dose. Which feeding window follows that plan?",
+        "choices": [
+          "Stop at 07:00 and restart at 09:00",
+          "Stop at 07:00 and restart immediately at 08:00",
+          "Stop at 08:00 and restart at 09:00",
+          "Stop at 06:00 and restart at 10:00"
+        ],
+        "answer": 0,
+        "rationale": "One hour before 08:00 is 07:00, and one hour after is 09:00. This implements the stated warfarin plan, not a universal hold for all medications.",
+        "reviewHref": "/learn/pharmacy/modules/enteral-nutrition",
+        "module": "Enteral Nutrition"
+      },
+      "status": "source verified in current/prior scope"
+    }
+  ],
+  "coverage": {
+    "bank": 108,
+    "verifiedBank": 66,
+    "remainingBank": 42,
+    "verifiedBankIds": [
+      "enteral-nutrition-060",
+      "enteral-nutrition-061",
+      "enteral-nutrition-062",
+      "enteral-nutrition-063",
+      "enteral-nutrition-064",
+      "enteral-nutrition-065",
+      "enteral-nutrition-066",
+      "enteral-nutrition-067",
+      "enteral-nutrition-068",
+      "enteral-nutrition-069",
+      "enteral-nutrition-070",
+      "enteral-nutrition-071",
+      "enteral-nutrition-072",
+      "enteral-nutrition-073",
+      "enteral-nutrition-074",
+      "enteral-nutrition-075",
+      "enteral-nutrition-076",
+      "enteral-nutrition-077",
+      "enteral-nutrition-078",
+      "enteral-nutrition-079",
+      "enteral-nutrition-080",
+      "enteral-nutrition-081",
+      "enteral-nutrition-082",
+      "enteral-nutrition-083",
+      "enteral-nutrition-084",
+      "enteral-nutrition-085",
+      "enteral-nutrition-086",
+      "enteral-nutrition-087",
+      "enteral-nutrition-088",
+      "enteral-nutrition-089",
+      "enteral-nutrition-109",
+      "enteral-nutrition-110",
+      "enteral-nutrition-111",
+      "enteral-nutrition-112",
+      "enteral-nutrition-113",
+      "enteral-nutrition-114",
+      "enteral-nutrition-001",
+      "enteral-nutrition-115",
+      "enteral-nutrition-033",
+      "enteral-nutrition-035",
+      "enteral-nutrition-036",
+      "enteral-nutrition-037",
+      "enteral-nutrition-040",
+      "enteral-nutrition-042",
+      "enteral-nutrition-093",
+      "enteral-nutrition-094",
+      "enteral-nutrition-098",
+      "enteral-nutrition-107",
+      "enteral-nutrition-116",
+      "enteral-nutrition-117",
+      "enteral-nutrition-006",
+      "enteral-nutrition-007",
+      "enteral-nutrition-008",
+      "enteral-nutrition-015",
+      "enteral-nutrition-016",
+      "enteral-nutrition-018",
+      "enteral-nutrition-021",
+      "enteral-nutrition-030",
+      "enteral-nutrition-049",
+      "enteral-nutrition-092",
+      "enteral-nutrition-099",
+      "enteral-nutrition-105",
+      "enteral-nutrition-023",
+      "enteral-nutrition-041",
+      "enteral-nutrition-090",
+      "enteral-nutrition-104"
+    ],
+    "remainingBankIds": [
+      "enteral-nutrition-002",
+      "enteral-nutrition-003",
+      "enteral-nutrition-004",
+      "enteral-nutrition-005",
+      "enteral-nutrition-009",
+      "enteral-nutrition-010",
+      "enteral-nutrition-011",
+      "enteral-nutrition-012",
+      "enteral-nutrition-013",
+      "enteral-nutrition-014",
+      "enteral-nutrition-017",
+      "enteral-nutrition-019",
+      "enteral-nutrition-020",
+      "enteral-nutrition-022",
+      "enteral-nutrition-024",
+      "enteral-nutrition-025",
+      "enteral-nutrition-026",
+      "enteral-nutrition-027",
+      "enteral-nutrition-028",
+      "enteral-nutrition-029",
+      "enteral-nutrition-031",
+      "enteral-nutrition-032",
+      "enteral-nutrition-034",
+      "enteral-nutrition-038",
+      "enteral-nutrition-039",
+      "enteral-nutrition-043",
+      "enteral-nutrition-044",
+      "enteral-nutrition-045",
+      "enteral-nutrition-046",
+      "enteral-nutrition-047",
+      "enteral-nutrition-048",
+      "enteral-nutrition-050",
+      "enteral-nutrition-091",
+      "enteral-nutrition-095",
+      "enteral-nutrition-096",
+      "enteral-nutrition-097",
+      "enteral-nutrition-100",
+      "enteral-nutrition-101",
+      "enteral-nutrition-102",
+      "enteral-nutrition-103",
+      "enteral-nutrition-106",
+      "enteral-nutrition-108"
+    ],
+    "bodies": 36,
+    "verifiedBodies": 16,
+    "remainingBodies": 20,
+    "embeddedChecks": 6,
+    "verifiedEmbeddedChecks": 2,
+    "remainingEmbeddedChecks": 4,
+    "figures": 6,
+    "verifiedFigures": 0,
+    "cumulative": 5,
+    "sourceVerifiedCumulative": 4,
+    "pendingCumulative": [
+      "enteral-nutrition-028"
+    ],
+    "metadata": "Integrated module/lesson metadata and six figure claim sets remain open."
+  },
+  "wholeModuleVerified": false,
+  "wholeChapterVerified": false,
+  "outsideENSourceApproval": "Pending human response. Request clarified to includeFDA product labeling; no outsideEN sources opened.",
+  "nextAction": "Resolve the exact42 bank items,20 bodies,four embedded clinical checks,six figure claim sets and metadata in enteral-nutrition-book-safety-coverage-review.json. Complete broader feeding-topic selection/clinical review from its committed232-module lexical inventory, reconcile working-only warfarin semantic item, and preserve unfinished parent rewrites. Source approval request for primaryASPEN/SCCM EN guidance andFDA guidance/product labeling remains unanswered. No outsideEN sources opened. Continue authorized book-specific broader-bank review while approval is pending; do not call fullEN verified or advance its chapter dependency until complete. PediatricPN and clinicalfluid/calcium dependencies remain afterward; Chapter1entry15/Chapter11 reviewing.",
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "contentCommit": "pending",
+    "remoteHashVerified": false,
+    "receipt": "sequential-release-en-safety-coverage-2026-10-01.json",
+    "production": "not verified",
+    "mainMerge": "not performed"
+  }
+}
