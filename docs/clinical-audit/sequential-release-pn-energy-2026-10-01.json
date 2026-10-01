@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-01",
+  "status": "content_commit_remote_verified",
+  "branch": "audit/rxprep-content-2026-09-24",
+  "remote": "https://github.com/NaS-Research/nas-website.git",
+  "baseCommit": "53ad6cb4b39b4a944100ee38b92ac6897b439c60",
+  "contentCommit": "8027bf41d320493c7666f252d3f45512caf8d8b1",
+  "remoteHashVerified": "8027bf41d320493c7666f252d3f45512caf8d8b1",
+  "module": "parenteral-nutrition-calculations",
+  "verifiedSections": [
+    "caloric-needs",
+    "nitrogen-intake-ratios"
+  ],
+  "verifiedAdditionsInProteinLesson": 2,
+  "wholeModuleVerified": false,
+  "source": {
+    "edition": 2023,
+    "chapter": 11,
+    "printedPages": [
+      151,
+      154
+    ],
+    "pdfPages": [
+      159,
+      162
+    ],
+    "textTablesFiguresRead": true
+  },
+  "changes": {
+    "newModules": 0,
+    "newLessons": 2,
+    "newFigures": 2,
+    "newEmbeddedChecks": 2,
+    "newOriginalBankItems": 26,
+    "revisedPriorPrompt": "pncalc-009",
+    "unchangedPriorBankItems": 115,
+    "retainedProteinNitrogenItemsReverified": 4,
+    "currentModuleLessons": 9,
+    "currentModuleBankItems": 142
+  },
+  "validation": {
+    "independentNewArithmetic": 54,
+    "newSourceExampleCount": 0,
+    "prior54SourceExerciseEvidenceRetained": true,
+    "productionBuild": {
+      "passed": true,
+      "staticPages": 567,
+      "scope": "Exact four-clinical-file candidate"
+    },
+    "all26NewItemsAndRevisedRoundingItemRenderedAndGradedAtDesktopMobile": true,
+    "newFiguresAndExistingProteinFluidFiguresInspected": true,
+    "threeDistinctAttemptsAndIncorrectRemediation": true,
+    "LibraryHarrisBenedictSearchAndStableLink": true,
+    "noOverflow390And320": true,
+    "focusedAssessmentAuditPassed": true,
+    "globalAudit": "34 pre-existing typographic violations in unchanged modules remain open; no PN hard errors.",
+    "exactScopedStagingGuard": true
+  },
+  "evidence": "parenteral-nutrition-energy-nitrogen-review.json",
+  "completedChecklistEntries": 14,
+  "chapterAndModuleClosure": false,
+  "nextStartingPoint": "Continue existing PN carbohydrate/dextrose calculations at Chapter11 printed155/PDF163, then lipid, dual-ion additive and complete-order coverage; resolve retained source support before whole-module/checklist closure.",
+  "production": "not verified",
+  "receiptCommit": "Following Git documentation commit; no self-referential hash."
+}

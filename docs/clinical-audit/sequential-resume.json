@@ -101,10 +101,10 @@
     "branch": "audit/rxprep-content-2026-09-24",
     "baseCommit": "b38faea07f3cd78f04c513cb6e842bb8f6fccdbc",
     "remoteVerifiedAtStart": true,
-    "commit": "c609559a5ddb0b5a2aa31428bff579d89a9130de",
-    "push": "verified: seven new calculation modules and the existing PN fluid section pushed to the audit branch",
+    "commit": "8027bf41d320493c7666f252d3f45512caf8d8b1",
+    "push": "verified: seven new calculation modules and three sections in the existing PN module pushed to the audit branch",
     "production": "not verified",
-    "receipt": "sequential-release-pn-2026-10-01.json",
+    "receipt": "sequential-release-pn-energy-2026-10-01.json",
     "contentCommits": [
       "df630290c5abc8cd1dadeb5574fa0cec7c0ca582",
       "30d14a7e36d030e32340ff04a6ef28971253a060",
@@ -113,7 +113,8 @@
       "36ea4d8a696f566d026e878bc1defda093f022bf",
       "5fac513a015e67b87482ffec90a54095e726769d",
       "558db5dcd37b4055175745932c4e5759edfd919e",
-      "c609559a5ddb0b5a2aa31428bff579d89a9130de"
+      "c609559a5ddb0b5a2aa31428bff579d89a9130de",
+      "8027bf41d320493c7666f252d3f45512caf8d8b1"
     ]
   },
   "openIssues": [
@@ -121,7 +122,7 @@
     "Historical externally sourced modules must retain their discrepancy records; no blanket book-only completion claim.",
     "Pending unrelated clinical edits are preserved and excluded from this pass.",
     "Audit-branch cumulative bank has 14 pre-existing duplicate prompt groups (83 repeated instances); new items are unique. Resolve in the associated chapter/module reviews.",
-    "PN fluid, energy and nitrogen sections verified; whole existing PN module remains reviewing for dextrose/lipid/dual-ion/order coverage and historical source support. Keep checklist count 14.",
+    "PN fluid, energy and nitrogen sections verified and pushed; whole existing PN module remains reviewing for dextrose/lipid/dual-ion/order coverage and historical source support. Keep checklist count 14.",
     "Global structural audit observed 34 pre-existing typographic violations in unchanged glaucoma, allergic-rhinitis and common-ear modules; retain for their chronological reviews. Focused PN audit passed."
   ],
   "progressSnapshot": {
@@ -143,6 +144,9 @@
     },
     "interpretation": "Count-based snapshots include preserved historical flags, not an independent recheck of every earlier module/chapter. Chapter sizes vary. Working and committed ledgers differ because older unfinished corrections and three additional modules remain unstaged. Seven newly verified modules and fourteen checklist entries add partial chapter coverage, not new full-chapter closures."
   },
-  "lastVerifiedLogicalUnit": "parenteral-nutrition-calculations#fluid-requirements",
-  "pendingLogicalUnit": "parenteral-nutrition-calculations#energy-and-nitrogen"
+  "lastVerifiedLogicalUnit": "parenteral-nutrition-calculations: caloric-needs and nitrogen-intake-ratios",
+  "lastVerifiedSections": [
+    "caloric-needs",
+    "nitrogen-intake-ratios"
+  ]
 }
