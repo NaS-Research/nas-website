@@ -1,0 +1,678 @@
+{
+  "slug": "amphetamine-dextroamphetamine",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Focused US product-specific reference; all eight blueprint sections authored from current public primary labels, regulatory records, and supplemental public NLM references. Original summaries; no claim to list every adverse event or substitute for individualized prescribing.",
+  "sources": [
+    {
+      "id": "ir",
+      "title": "Adderall · Immediate-release tablets",
+      "publisher": "DailyMed / Teva Pharmaceuticals USA",
+      "note": "SPL version 21, effective May 29, 2024; prescribing information revised May 2024. Includes Schedule II and ANDA040422 marketing record.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f22635fe-821d-4cde-aa12-419f8b53db81",
+      "checked": "2026-10-01",
+      "version": "SPL version 21, effective May 29, 2024; prescribing information revised May 2024. Includes Schedule II and ANDA040422 marketing record.",
+      "spl_version": "21",
+      "spl_effective_time": "20240529",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/f22635fe-821d-4cde-aa12-419f8b53db81.xml",
+      "downloaded_xml_sha256": "7cd1f7cb673b5278ea97e419a3b77538202ad4dab26e8810150b42cedd376cb1"
+    },
+    {
+      "id": "xr",
+      "title": "Adderall XR · Extended-release capsules",
+      "publisher": "DailyMed / Takeda Pharmaceuticals America",
+      "note": "SPL version 38, effective April 30, 2026; prescribing information revised April 2026. Includes Schedule II and NDA021303 marketing record.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aff45863-ffe1-4d4f-8acf-c7081512a6c0",
+      "checked": "2026-10-01",
+      "version": "SPL version 38, effective April 30, 2026; prescribing information revised April 2026. Includes Schedule II and NDA021303 marketing record.",
+      "spl_version": "38",
+      "spl_effective_time": "20260430",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/aff45863-ffe1-4d4f-8acf-c7081512a6c0.xml",
+      "downloaded_xml_sha256": "bb8ee8756949975dbe0e8667ade74176876abb6bae37e651f0f657855f4b9ee2"
+    },
+    {
+      "id": "fda",
+      "title": "Prescription stimulant safety labeling",
+      "publisher": "U.S. Food and Drug Administration",
+      "note": "May 11, 2023 labeling action: abuse, misuse, addiction, overdose, sharing, and ongoing assessment.",
+      "url": "https://www.fda.gov/drugs/drug-alerts-and-statements/fda-requires-updates-clarify-labeling-prescription-stimulants-used-treat-adhd-and-other-conditions",
+      "checked": "2026-10-01",
+      "version": "May 11, 2023 labeling action: abuse, misuse, addiction, overdose, sharing, and ongoing assessment."
+    },
+    {
+      "id": "patient",
+      "title": "Dextroamphetamine and amphetamine · Patient information",
+      "publisher": "MedlinePlus / National Library of Medicine",
+      "note": "Administration, missed XR dose, urgent symptoms, and counseling.",
+      "url": "https://medlineplus.gov/druginfo/meds/a601234.html",
+      "checked": "2026-10-01",
+      "version": "Administration, missed XR dose, urgent symptoms, and counseling."
+    },
+    {
+      "id": "lactation",
+      "title": "Amphetamine · Lactation",
+      "publisher": "LactMed / National Library of Medicine",
+      "note": "Revised June 15, 2025; distinguishes therapeutic use with monitoring from amphetamine misuse.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK501307/",
+      "checked": "2026-10-01",
+      "version": "Revised June 15, 2025; distinguishes therapeutic use with monitoring from amphetamine misuse."
+    }
+  ],
+  "assertion_to_source": [
+    {
+      "section_id": "indications",
+      "card_title": "Labeled oral indications",
+      "assertions": [
+        "Immediate-release Adderall is labeled for ADHD and narcolepsy. Its ADHD dosing begins at age 3; use below age 3 is not recommended. Adderall XR is labeled for ADHD in adults and children age 6 years and older; use below age 6 is not recommended because of higher exposure and adverse reactions.",
+        "Narcolepsy is not an Adderall XR-labeled indication. These profiles concern the named mixed-salt products, not every amphetamine preparation. Treatment requires a confirmed diagnosis and an individualized care plan."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Indications and Usage",
+            "Dosage and Administration / ADHD",
+            "Pediatric Use"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "1.1",
+            "8.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "indications",
+      "card_title": "Approval and controlled status",
+      "assertions": [
+        "Both reviewed U.S. products are prescription-only Schedule II medicines. The representative Teva IR label carries marketing application ANDA040422; the Takeda XR label carries NDA021303. Approval does not remove the risks of misuse, addiction, or serious adverse reactions."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Controlled Substance",
+            "SPL marketing approval record ANDA040422"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "9.1",
+            "SPL marketing approval record NDA021303"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Immediate-release tablets · ADHD",
+      "assertions": [
+        "The IR label does not provide a separate adult ADHD starting-dose schedule. Individualize adult dosing with the prescriber; do not import XR directions or treat the narcolepsy range as an ADHD allowance. Avoid late-evening IR doses.",
+        "Children age 3–5 | Start 2.5 mg daily; increase by 2.5 mg/day at weekly intervals if needed.",
+        "Children age 6 and older | Start 5 mg once or twice daily; increase by 5 mg/day at weekly intervals if needed.",
+        "Daily dose / timing | The label says exceeding 40 mg/day is rarely necessary for ADHD. First dose on awakening; additional doses, if prescribed, 4–6 hours apart."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Dosage and Administration / ADHD"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Immediate-release tablets · Narcolepsy",
+      "assertions": [
+        "The usual labeled range is 5–60 mg/day in divided doses. For age 12 years and older, the label specifies a 10 mg daily start with 10 mg/day weekly increases as needed. Its pediatric wording also suggests 5 mg daily for ages 6–12 with 5 mg/day weekly increments; the age-12 overlap should be resolved with the treating specialist rather than selecting a dose from this summary. Subsequent doses, if prescribed, are 4–6 hours apart; reduce for troublesome insomnia or anorexia."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Dosage and Administration / Narcolepsy"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Extended-release capsules · ADHD",
+      "assertions": [
+        "Use the lowest effective dose and titrate weekly. When switching from divided-dose Adderall IR, the XR label permits the same total daily dose once each morning; conversion requires prescriber review of renal function and the age-specific limits.",
+        "Age 6–12 | Start 10 mg each morning; 5 mg may be appropriate. Increase by 5 or 10 mg/day weekly. Maximum recommended 30 mg/day.",
+        "Age 13–17 | Start 10 mg each morning; may increase to 20 mg/day after 1 week if needed.",
+        "Adults | Recommended dose 20 mg each morning. This is a recommended dose, not a universal maximum derived from a trial."
+      ],
+      "support": [
+        {
+          "source_id": "xr",
+          "sections": [
+            "2.2–2.5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "XR administration",
+      "assertions": [
+        "Swallow the capsule whole, or open it and sprinkle all beads on applesauce. Consume immediately without chewing and do not store the mixture. Do not divide a capsule’s contents. Take on awakening, with or without food; avoid afternoon doses."
+      ],
+      "support": [
+        {
+          "source_id": "xr",
+          "sections": [
+            "2.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Renal and hepatic considerations",
+      "assertions": [
+        "For XR with severe renal impairment (GFR 15 to <30 mL/min/1.73 m²): adults 15 mg each morning; ages 6–17 start at 5 mg each morning, with a maximum of 20 mg/day for ages 6–12. XR is not recommended with GFR <15.",
+        "These XR instructions are not an IR renal schedule. The IR label supplies no defined renal or hepatic reduction regimen. Either impairment may prolong amphetamine exposure; hepatic dosing is not quantified in the reviewed labels. Individualize therapy with the prescriber."
+      ],
+      "support": [
+        {
+          "source_id": "xr",
+          "sections": [
+            "2.6",
+            "8.6",
+            "12.3"
+          ]
+        },
+        {
+          "source_id": "ir",
+          "sections": [
+            "Clinical Pharmacology / Metabolism and Excretion",
+            "Dosage and Administration"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Warnings and precautions",
+      "assertions": [
+        "Avoid use with serious cardiac disease, including structural abnormalities, cardiomyopathy, serious arrhythmias, or coronary artery disease. Check cardiac history, family history, and examination before treatment; monitor blood pressure and pulse throughout.",
+        "Stimulants may worsen psychosis or induce mania; screen for bipolar risk. New hallucinations or manic symptoms warrant reassessment and possible discontinuation. Monitor height, weight, appetite, tics, and Tourette symptoms. Seizures warrant discontinuation. Check fingers and toes for Raynaud symptoms, ulcers, or other vascular changes.",
+        "Serotonin syndrome can include agitation, fever, sweating, unstable blood pressure, rigidity, twitching, and diarrhea. Stop implicated therapy and obtain urgent care if suspected."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Warnings / Serious Cardiac Disease",
+            "Warnings / Psychiatric Adverse Reactions",
+            "Warnings / Growth",
+            "Warnings / Seizures",
+            "Warnings / Peripheral Vasculopathy",
+            "Warnings / Serotonin Syndrome",
+            "Warnings / Tics"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "2.1",
+            "5.2–5.9"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Contraindications",
+      "assertions": [
+        "Hypersensitivity to amphetamine or formulation components.",
+        "Concurrent MAOI use, or use within 14 days after stopping an MAOI, including linezolid or IV methylene blue; risk of hypertensive crisis."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Contraindications"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Boxed warning · Abuse, misuse, and addiction",
+      "assertions": [
+        "Both products have high potential for abuse and misuse, which can cause a substance use disorder, including addiction. Misuse can cause overdose and death, especially with higher doses or unapproved administration. Assess risk before treatment; counsel about locked storage and disposal; reassess risk and monitor for misuse throughout treatment. Physical dependence and withdrawal can also occur; plan changes with the prescriber."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Boxed warning",
+            "Drug Abuse and Dependence"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "Boxed warning",
+            "5.1",
+            "9.3"
+          ]
+        },
+        {
+          "source_id": "fda",
+          "sections": [
+            "May11,2023 required labeling updates"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Adverse reactions",
+      "assertions": [
+        "Common reactions vary by age and include reduced appetite, insomnia, abdominal discomfort, weight loss, dry mouth, headache, anxiety, and tachycardia. Serious hypersensitivity, severe psychiatric symptoms, and cardiovascular or neurologic emergencies require assessment.",
+        "Suspected overdose needs immediate medical help; XR effects may be prolonged. Contact U.S. Poison Control at 1-800-222-1222. Call 911 for collapse, seizure, trouble breathing, or inability to awaken."
+      ],
+      "support": [
+        {
+          "source_id": "xr",
+          "sections": [
+            "6.1",
+            "6.2",
+            "10"
+          ]
+        },
+        {
+          "source_id": "patient",
+          "sections": [
+            "Side effects",
+            "In case of emergency/overdose"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Clinically relevant interactions",
+      "assertions": [
+        "MAOIs: contraindicated concurrently and for 14 days after discontinuation.",
+        "Serotonergic drugs or CYP2D6 inhibitors: increased serotonin-syndrome risk and possible higher exposure. Consider alternatives; if necessary, initiate at a lower dose and monitor closely during initiation and titration.",
+        "Gastrointestinal or urinary alkalinizing agents: increase exposure. XR labeling advises avoiding both; IR labeling explicitly advises avoiding gastrointestinal alkalinizing agents.",
+        "Acidifying agents, including those used with methenamine: may reduce exposure and efficacy. Adjust only under prescriber supervision based on response.",
+        "Tricyclic antidepressants can potentiate cardiovascular effects; monitor frequently and adjust or use an alternative.",
+        "PPIs may shorten time to peak effect; monitor for a change in clinical response.",
+        "IR label also describes reduced antihypertensive effects and interactions with antihistamines, antipsychotics, anticonvulsants, lithium, and adrenergic medicines; review the full medication list."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Drug Interactions"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "7.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Diagnostic interference",
+      "assertions": [
+        "Amphetamines can affect corticosteroid and urinary steroid tests. The current XR label also describes interference with ioflupane I-123 dopamine-transporter imaging; coordinate an adequate washout with the imaging and prescribing teams rather than stopping independently."
+      ],
+      "support": [
+        {
+          "source_id": "xr",
+          "sections": [
+            "7.2"
+          ]
+        },
+        {
+          "source_id": "ir",
+          "sections": [
+            "Drug/Laboratory Test Interactions"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pregnancy",
+      "assertions": [
+        "Review maternal benefit and fetal risk with the obstetric and prescribing clinicians. XR labeling states that available epidemiologic data have not identified a major birth-defect or miscarriage risk, while premature delivery and low birth weight have been reported. This does not establish absence of risk. Monitor exposed newborns for withdrawal or feeding difficulties. The IR label uses older pregnancy wording and advises use only when benefit justifies risk."
+      ],
+      "support": [
+        {
+          "source_id": "xr",
+          "sections": [
+            "8.1"
+          ]
+        },
+        {
+          "source_id": "ir",
+          "sections": [
+            "Pregnancy / Teratogenic Effects",
+            "Pregnancy / Nonteratogenic Effects"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Lactation",
+      "assertions": [
+        "Both product labels advise against breastfeeding during treatment. Amphetamine reaches milk; long-term infant neurodevelopmental effects remain uncertain and high doses may reduce milk supply. LactMed reports that some experts allow prescribed therapeutic doses with infant monitoring for irritability, insomnia, and feeding difficulty. This requires an individualized clinical decision; breastfeeding is discouraged with active amphetamine misuse."
+      ],
+      "support": [
+        {
+          "source_id": "xr",
+          "sections": [
+            "8.2"
+          ]
+        },
+        {
+          "source_id": "ir",
+          "sections": [
+            "Usage in Nursing Mothers"
+          ]
+        },
+        {
+          "source_id": "lactation",
+          "sections": [
+            "Summary of Use during Lactation",
+            "Effects in Breastfed Infants",
+            "Effects on Lactation and Breastmilk"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pediatric and geriatric considerations",
+      "assertions": [
+        "Do not substitute IR’s age-3 ADHD directions for XR’s age-6 indication. Monitor pediatric height and weight and consider interruption when growth is inadequate. The reviewed labels state that geriatric use has not been studied; reassess cardiovascular risks and suitability rather than extrapolating pediatric regimens."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Pediatric Use",
+            "Geriatric Use",
+            "Warnings / Growth"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "5.5",
+            "8.4",
+            "8.5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Renal and hepatic impairment",
+      "assertions": [
+        "Reduced elimination may increase exposure. Follow the explicit XR severe-renal and ESRD instructions; no fixed IR renal or hepatic regimen is supplied. Dialysis does not reliably remove d-amphetamine."
+      ],
+      "support": [
+        {
+          "source_id": "xr",
+          "sections": [
+            "2.6",
+            "8.6",
+            "12.3"
+          ]
+        },
+        {
+          "source_id": "ir",
+          "sections": [
+            "Clinical Pharmacology / Metabolism and Excretion"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Mechanism of action and pharmacodynamics",
+      "assertions": [
+        "Amphetamines are sympathomimetic CNS stimulants. They increase extracellular norepinephrine and dopamine through effects on release and reuptake; the precise therapeutic mechanism in ADHD is not established."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Clinical Pharmacology / Pharmacodynamics"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "12.1",
+            "12.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Pharmacokinetics",
+      "assertions": [
+        "Peak concentration: About 3 hours for IR; about 7 hours for XR. Food can delay XR peak timing.",
+        "Adult half-life: XR data: approximately 10 hours for d-amphetamine and 13 hours for l-amphetamine.",
+        "Metabolism / elimination: Hepatic metabolism includes CYP2D6; renal excretion depends strongly on urine pH. Alkaline urine reduces elimination; acidic urine increases it."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Clinical Pharmacology / Pharmacokinetics",
+            "Metabolism and Excretion"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Monitoring parameters",
+      "assertions": [
+        "Before treatment: confirm the indication; assess cardiac and family history, examination, bipolar or psychosis risk, tics, and misuse risk.",
+        "During treatment and dose changes: assess function and symptom benefit, blood pressure, pulse, appetite, sleep, mood, tics, growth, and digital circulation.",
+        "Reassess misuse, diversion, and addiction risk frequently; review refill patterns, storage, and all interacting medicines."
+      ],
+      "support": [
+        {
+          "source_id": "xr",
+          "sections": [
+            "2.1",
+            "5.1–5.9",
+            "17"
+          ]
+        },
+        {
+          "source_id": "ir",
+          "sections": [
+            "Warnings",
+            "Dosage and Administration / pretreatment screening"
+          ]
+        },
+        {
+          "source_id": "fda",
+          "sections": [
+            "Assessment and monitoring of misuse risk"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Patient counseling information",
+      "assertions": [
+        "Use exactly as prescribed. Never share; keep in a secure, preferably locked location and follow safe disposal instructions.",
+        "Check the bottle for IR versus XR. Do not crush or chew XR beads or divide a capsule.",
+        "If an XR morning dose is missed, skip it and take the next morning’s scheduled dose; do not take it later or double it. For IR missed doses, follow the prescriber’s timing plan.",
+        "Seek urgent care for chest pain, shortness of breath, unexplained fainting, serotonin-syndrome symptoms, or serious allergy; promptly report hallucinations, mania, or finger/toe wounds.",
+        "Discuss pregnancy, breastfeeding, and stopping or reducing prolonged treatment with the prescriber."
+      ],
+      "support": [
+        {
+          "source_id": "xr",
+          "sections": [
+            "2.2",
+            "17",
+            "Medication Guide"
+          ]
+        },
+        {
+          "source_id": "ir",
+          "sections": [
+            "Medication Guide",
+            "Precautions / Information for Patients"
+          ]
+        },
+        {
+          "source_id": "patient",
+          "sections": [
+            "Missed dose",
+            "Special precautions",
+            "Side effects"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Representative oral product · Adderall IR 10 mg",
+      "assertions": [
+        "Manufacturer and imprint must match the dispensed packaging; a photograph alone cannot establish identity.",
+        "Dosage form / strength: Immediate-release oral tablet · 10 mg mixed salts",
+        "Label packager: Teva Pharmaceuticals USA, Inc.",
+        "Appearance: Blue, round, biconvex; one full and two partial bisects",
+        "Imprint: 1 | 0 / dp",
+        "Example package NDC: 57844-110-01 · 100 tablets"
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "How Supplied",
+            "Product characteristics and package labeling"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Dosage forms and strengths",
+      "assertions": [
+        "Adderall IR tablets: 5, 7.5, 10, 12.5, 15, 20, and 30 mg",
+        "Adderall XR capsules: 5, 10, 15, 20, 25, and 30 mg",
+        "Representative XR 20 mg: Orange/orange capsule, ADDERALL XR 20 mg; NDC 54092-387-01, 100 capsules."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "How Supplied"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "3",
+            "16"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Storage and handling",
+      "assertions": [
+        "Store at 20–25°C (68–77°F) in a tight, light-resistant container; XR permits excursions to 15–30°C (59–86°F). Store securely, preferably locked, away from children and anyone for whom the medicine is not prescribed."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "How Supplied"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "16",
+            "17"
+          ]
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    "Indication and approval/marketing status",
+    "Route and formulation differences",
+    "Age and population-specific doses and limits",
+    "Renal and hepatic considerations",
+    "Contraindications",
+    "Boxed warning status and safety risks",
+    "Interactions and management actions",
+    "Pregnancy and lactation evidence limits",
+    "Mechanism and pharmacokinetics",
+    "Monitoring and counseling",
+    "Exact representative product identity and storage"
+  ],
+  "exclusions": [
+    "Other amphetamine or PPI products and fixed-dose combinations",
+    "Unverified off-label dosing",
+    "Detailed overdose-management or hospital preparation protocols",
+    "Every manufacturer-specific NDC and imprint"
+  ],
+  "material_errors": [],
+  "material_gaps": [],
+  "blueprint_changed": false,
+  "validation": {
+    "schema_errors": [],
+    "rendered_page_qa": "Pending parent integration; source and schema review do not claim rendered-page QA."
+  },
+  "reconciliations": [
+    "IR narcolepsy indication is not propagated to XR. IR ADHD age3+ is not propagated to XR age6+.",
+    "IR label supplies pediatric ADHD initiation instructions but no separate adult initiation schedule; no invented adult dose.",
+    "XR adult20mg is described as recommended dose, not an established universal maximum. PediatricXRmax30mg and renalmax20mg in ages6–12 remain explicit.",
+    "The IR narcolepsy wording overlaps at age12; page quotes both boundaries and defers that decision to the treating specialist.",
+    "Both current boxed warnings use abuse, misuse, and addiction wording; serious cardiac disease is a warning to avoid use, not relabeled as a formal contraindication.",
+    "Current XR2026 DAT-imaging interaction retained.",
+    "Manufacturers advise against breastfeeding; LactMed therapeutic-dose expert monitoring option and evidence limitations are distinguished.",
+    "Exact Teva IR marketing record is ANDA040422, not the historical Adderall NDA011522; Takeda XR uses NDA021303."
+  ],
+  "nonblocking_limitations": [
+    "No separate adultIRADHD, IRrenal, or hepatic fixed regimen supplied by current labels; individualized prescribing explicitly required.",
+    "IR age12 narcolepsy wording overlap explicitly disclosed; no dose is selected at that boundary.",
+    "Long-term infant neurodevelopmental lactation outcomes insufficiently characterized."
+  ]
+}

@@ -1,0 +1,1348 @@
+{
+  "drug": "semaglutide",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "U.S. Novo Nordisk Ozempic injection, Rybelsus/Ozempic tablets and Wegovy injection/tablets; indication- and population-specific routes and current 2026 additions. European NAION advice identified separately.",
+  "blueprint": {
+    "sections": [
+      [
+        "indications",
+        "Indications"
+      ],
+      [
+        "dosage",
+        "Dosage and administration"
+      ],
+      [
+        "safety",
+        "Safety"
+      ],
+      [
+        "interactions",
+        "Drug interactions"
+      ],
+      [
+        "populations",
+        "Use in specific populations"
+      ],
+      [
+        "pharmacology",
+        "Clinical pharmacology"
+      ],
+      [
+        "practice",
+        "Monitoring and counseling"
+      ],
+      [
+        "product",
+        "Product identification"
+      ]
+    ],
+    "essential_safety": true,
+    "hero_facts": 3,
+    "APAP_modified": false
+  },
+  "source_records": [
+    {
+      "id": "oz",
+      "local_snapshot": "/tmp/nas-drug-sources/ozempic.pdf",
+      "sha256": "37dbbba58786ef4c505b7bae594c938c7be0463478b78f412d0b9e3b5052b166",
+      "label_revision": "May 2026",
+      "review_method": "Full relevant clinical label sections read; PDF dose tables visually checked when applicable.",
+      "ifu_revision": "June 2026"
+    },
+    {
+      "id": "oral",
+      "local_snapshot": "/tmp/nas-drug-sources/ozempic-tablets.pdf",
+      "sha256": "707fd21286b5fb4ad526e29b76798973891d01a2f579f12b374ba709951054c2",
+      "label_revision": "January 2026",
+      "review_method": "Full relevant clinical label sections read; PDF dose tables visually checked when applicable."
+    },
+    {
+      "id": "wg",
+      "local_snapshot": "/tmp/nas-drug-sources/wegovy.pdf",
+      "sha256": "b7049b1779932f38c1b818aedd505ff0643bb66c5d95cce2761ae27072291fd2",
+      "label_revision": "June 2026",
+      "review_method": "Full relevant clinical label sections read; PDF dose tables visually checked when applicable."
+    },
+    {
+      "id": "fda",
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-fourth-product-under-national-priority-voucher-program-higher-dose-semaglutide",
+      "version": "March 19, 2026",
+      "access": "Public FDA approval announcement read"
+    },
+    {
+      "id": "mood",
+      "url": "https://www.fda.gov/drugs/drug-safety-communications/fda-requests-removal-suicidal-behavior-and-ideation-warning-glucagon-peptide-1-receptor-agonist-glp",
+      "version": "January 13, 2026",
+      "access": "Public full safety communication read"
+    },
+    {
+      "id": "eye",
+      "url": "https://www.ema.europa.eu/en/news/prac-concludes-eye-condition-naion-very-rare-side-effect-semaglutide-medicines-ozempic-rybelsus-wegovy",
+      "version": "June 6, 2025",
+      "access": "Public full EMA safety communication read"
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "card": "Diabetes, cardiovascular and kidney indications",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "1"
+        },
+        {
+          "id": "oral",
+          "sections": "1"
+        }
+      ],
+      "assertions": [
+        "Ozempic injection treats adult type 2 diabetes alongside diet and exercise; it also reduces major cardiovascular events in adults with type 2 diabetes and established cardiovascular disease, and specified kidney/CV outcomes in adults with type 2 diabetes and CKD. Rybelsus and Ozempic tablets treat adult type 2 diabetes and reduce major cardiovascular events in adults with type 2 diabetes at high cardiovascular risk. The oral diabetes label does not establish the injection’s kidney-outcome indication."
+      ],
+      "section": "indications"
+    },
+    {
+      "card": "Weight management and cardiovascular prevention",
+      "sources": [
+        {
+          "id": "wg",
+          "sections": "1; 8.4"
+        }
+      ],
+      "assertions": [
+        "Wegovy injection and tablets are adjuncts to reduced-calorie nutrition and activity for adult weight reduction and long-term maintenance in obesity, or overweight with at least one weight-related condition. Both reduce major cardiovascular events in adults with established cardiovascular disease and obesity or overweight. Only Wegovy injection has the pediatric weight indication, for age 12 years or older with obesity."
+      ],
+      "section": "indications"
+    },
+    {
+      "card": "MASH and limits of extrapolation",
+      "sources": [
+        {
+          "id": "wg",
+          "sections": "1; 2.2"
+        },
+        {
+          "id": "oz",
+          "sections": "1"
+        }
+      ],
+      "assertions": [
+        "Wegovy injection treats adults with noncirrhotic metabolic dysfunction-associated steatohepatitis and moderate-to-advanced fibrosis (F2–F3). This is accelerated approval based on histologic improvement; continued approval may depend on confirmation of clinical benefit. The MASH indication does not apply to oral Wegovy or the 7.2 mg weight-management regimen. Ozempic is not approved as a weight-management or MASH product."
+      ],
+      "section": "indications"
+    },
+    {
+      "card": "Ozempic injection",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "2.1–2.2"
+        }
+      ],
+      "assertions": [
+        "Start 0.25 mg subcutaneously once weekly for 4 weeks, then 0.5 mg weekly. For additional glucose control, increase to 1 mg after at least 4 weeks at 0.5 mg, then to 2 mg after at least 4 weeks at 1 mg. The maximum is 2 mg weekly. For the type 2 diabetes/CKD outcome indication, use 1 mg weekly after at least 4 weeks at 0.5 mg."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Rybelsus and Ozempic oral escalation",
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "2.1–2.2"
+        }
+      ],
+      "assertions": [
+        "Take only one prescribed tablet each day. The initial 30-day doses below are initiation doses and are not effective doses for glycemic control. These two formulations cannot be substituted milligram for milligram."
+      ],
+      "table_assertions": {
+        "headers": [
+          "Product",
+          "Days 1–30",
+          "Days 31–60",
+          "Day 61 onward"
+        ],
+        "rows": [
+          [
+            "Rybelsus",
+            "3 mg daily",
+            "7 mg daily",
+            "7 mg; increase to 14 mg if needed"
+          ],
+          [
+            "Ozempic tablets",
+            "1.5 mg daily",
+            "4 mg daily",
+            "4 mg; increase to 9 mg if needed"
+          ]
+        ]
+      },
+      "section": "dosage"
+    },
+    {
+      "card": "Wegovy injection escalation",
+      "sources": [
+        {
+          "id": "wg",
+          "sections": "2.2"
+        }
+      ],
+      "assertions": [
+        "Weekly escalation is 0.25 mg for weeks 1–4, 0.5 mg for weeks 5–8, 1 mg for weeks 9–12 and 1.7 mg for weeks 13–16. If a dose is poorly tolerated, consider delaying the next step by 4 weeks. Choose the maintenance regimen by indication."
+      ],
+      "table_assertions": {
+        "headers": [
+          "Population / indication",
+          "Maintenance"
+        ],
+        "rows": [
+          [
+            "Adult weight management",
+            "2.4 mg recommended or 1.7 mg weekly; if additional reduction needed and 2.4 mg tolerated ≥4 weeks, may increase to 7.2 mg"
+          ],
+          [
+            "Adult cardiovascular risk reduction",
+            "2.4 mg recommended or 1.7 mg weekly"
+          ],
+          [
+            "Age ≥12, obesity",
+            "2.4 mg recommended or 1.7 mg weekly"
+          ],
+          [
+            "Adult noncirrhotic MASH, F2–F3",
+            "2.4 mg weekly; reduce to 1.7 mg if needed for tolerance and consider re-escalation"
+          ]
+        ]
+      },
+      "section": "dosage"
+    },
+    {
+      "card": "Wegovy oral escalation",
+      "sources": [
+        {
+          "id": "wg",
+          "sections": "1; 2.3; 8.4"
+        }
+      ],
+      "assertions": [
+        "For adult weight management or cardiovascular risk reduction, take 1.5 mg daily for days 1–30, 4 mg for days 31–60, 9 mg for days 61–90, then 25 mg daily from day 91. Delay escalation if needed for GI tolerance. If 25 mg cannot be tolerated, consider the labeled switch to 1.7 mg weekly injection. Oral Wegovy is not a pediatric or MASH regimen."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Administration",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "2.1"
+        },
+        {
+          "id": "oral",
+          "sections": "2.1"
+        },
+        {
+          "id": "wg",
+          "sections": "2.1"
+        }
+      ],
+      "assertions": [
+        "Inject weekly into abdomen, thigh or upper arm, rotating sites; meals do not determine injection timing. Do not mix with insulin; use separate nonadjacent sites. Oral products require an empty stomach in the morning with plain water, no more than 4 ounces; swallow whole and wait at least 30 minutes before food, other drinks or oral medicines. Do not crush, split or dissolve tablets."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Missed doses",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "2.1"
+        },
+        {
+          "id": "oral",
+          "sections": "2.1"
+        },
+        {
+          "id": "wg",
+          "sections": "2.4"
+        }
+      ],
+      "assertions": [
+        "Ozempic injection: take within 5 days of the missed dose, otherwise skip; changing the weekly day requires more than 48 hours between injections. Wegovy injection: take a missed dose if the next is more than 2 days away, or skip if less than 2 days away; after two or more consecutive missed doses, reinitiate escalation at a lower dose. A missed oral dose is skipped; take the next tablet the following day."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Switching regimens",
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "2.3–2.4"
+        },
+        {
+          "id": "wg",
+          "sections": "2.5"
+        }
+      ],
+      "assertions": [
+        "Use only the label-supported transition. After the initiation phase, Rybelsus 7 mg corresponds to Ozempic tablets 4 mg, and Rybelsus 14 mg to Ozempic tablets 9 mg; start the new formulation the next day. The combined oral label provides transitions from Ozempic injection 0.5 mg one week later to Rybelsus 7 or 14 mg daily or Ozempic tablets 4 or 9 mg daily. For adult Wegovy weight/CV therapy, transition from 2.4 mg injection to 25 mg oral one week later, or from 25 mg oral to 2.4 mg weekly injection the next day (consider 1.7 mg if 25 mg is not tolerated). Do not invent equivalence for other doses or brands."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Warnings and precautions",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "5.2–5.10"
+        },
+        {
+          "id": "oral",
+          "sections": "5.2–5.9"
+        },
+        {
+          "id": "wg",
+          "sections": "5.2–5.11"
+        },
+        {
+          "id": "wg",
+          "sections": "Recent major changes; 5.9"
+        },
+        {
+          "id": "mood",
+          "sections": "January 13, 2026 safety communication"
+        },
+        {
+          "id": "eye",
+          "sections": "PRAC June 2025 conclusions"
+        }
+      ],
+      "assertions": [
+        "Stop and assess suspected pancreatitis. Persistent vomiting or diarrhea can cause volume depletion and acute kidney injury; monitor renal function when these occur, especially during escalation. Severe GI reactions occur; the reviewed products are not recommended in severe gastroparesis. Gallbladder symptoms warrant investigation.",
+        "Rapid glucose improvement may worsen existing diabetic retinopathy; monitor patients with a history. Insulin or sulfonylureas increase hypoglycemia risk. Hypersensitivity can be serious. Pulmonary aspiration has been reported during general anesthesia or deep sedation despite fasting; alert the procedural team. Labels do not establish a universally effective hold interval or fasting modification. Never share an injection pen.",
+        "Monitor heart rate during Wegovy treatment; sustained resting increases warrant discontinuation. The June 2026 label no longer includes the prior suicidality warning. FDA’s January 2026 review found no increased risk and requested removal; do not carry forward the superseded avoidance instruction.",
+        "EMA identifies non-arteritic anterior ischemic optic neuropathy as a very rare semaglutide adverse effect. Sudden vision loss or rapidly worsening sight needs prompt assessment; EMA advises stopping semaglutide if NAION is confirmed. This is European regulatory guidance, distinct from the diabetic-retinopathy warning in the reviewed U.S. labels."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Contraindications",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "4"
+        },
+        {
+          "id": "oral",
+          "sections": "4"
+        },
+        {
+          "id": "wg",
+          "sections": "4; 1 Limitations of Use"
+        }
+      ],
+      "assertions": [
+        "Personal or family history of medullary thyroid carcinoma, MEN2, and a prior serious hypersensitivity reaction to semaglutide or the particular product’s ingredients are contraindications. Wegovy’s separate limitations-of-use statement says coadministration with other semaglutide products or another GLP-1 receptor agonist is not recommended."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Boxed warning · Thyroid C-cell tumors",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "Boxed warning; 5.1"
+        },
+        {
+          "id": "oral",
+          "sections": "Boxed warning; 5.1"
+        },
+        {
+          "id": "wg",
+          "sections": "Boxed warning; 5.1"
+        }
+      ],
+      "assertions": [
+        "Semaglutide causes thyroid C-cell tumors in rodents; relevance to humans is unknown. Counsel about a neck mass, persistent hoarseness or difficulty swallowing or breathing. Routine calcitonin testing or thyroid ultrasound has uncertain value for early detection; investigate concerning findings rather than treating screening as mandatory."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Adverse reactions",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "6.1–6.2"
+        },
+        {
+          "id": "oral",
+          "sections": "6.1–6.2"
+        },
+        {
+          "id": "wg",
+          "sections": "6.1–6.2"
+        }
+      ],
+      "assertions": [
+        "Nausea, vomiting and diarrhea are prominent; abdominal symptoms and constipation also occur. Frequency and severity vary by dose, route and study population. Ileus, intestinal obstruction and severe constipation have been reported after approval; spontaneous reports do not establish incidence.",
+        "Altered skin sensation (dysesthesia) was more frequent in Wegovy 7.2 mg trials. In those trials, dose reduction or interruption was often followed by recovery; persistent or intolerable symptoms need clinical review."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Insulin and insulin secretagogues",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "7.1"
+        },
+        {
+          "id": "oral",
+          "sections": "7.1"
+        },
+        {
+          "id": "wg",
+          "sections": "7.1"
+        }
+      ],
+      "assertions": [
+        "Hypoglycemia risk increases with insulin or sulfonylureas; reducing their dose may be necessary. Educate patients about recognition and management, and reassess glucose after starting or increasing semaglutide."
+      ],
+      "section": "interactions"
+    },
+    {
+      "card": "Oral medicines and duplicate therapy",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "7.2"
+        },
+        {
+          "id": "oral",
+          "sections": "7.2"
+        },
+        {
+          "id": "wg",
+          "sections": "1; 7.2"
+        }
+      ],
+      "assertions": [
+        "Delayed gastric emptying can affect oral drug absorption. Monitor medicines with narrow therapeutic ranges or those needing clinical or laboratory surveillance. Oral semaglutide must precede other oral medicines by at least 30 minutes; the oral labels report increased thyroxine exposure with levothyroxine and support thyroid-parameter monitoring. Avoid duplicate semaglutide prescriptions; Wegovy’s label recommends against concurrent semaglutide or other GLP-1 therapy."
+      ],
+      "section": "interactions"
+    },
+    {
+      "card": "Pregnancy and conception planning",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "8.1; 8.3"
+        },
+        {
+          "id": "oral",
+          "sections": "8.1; 8.3"
+        },
+        {
+          "id": "wg",
+          "sections": "8.1; 8.3"
+        }
+      ],
+      "assertions": [
+        "Plan discontinuation at least 2 months before intended pregnancy because elimination is prolonged. For Wegovy weight/CV use, discontinue when pregnancy is recognized. Wegovy MASH and Ozempic/Rybelsus diabetes treatment require an individualized benefit–fetal-risk assessment; limited human data and adverse animal findings preclude assuming safety. Arrange alternative disease management."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Breastfeeding",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "8.2"
+        },
+        {
+          "id": "oral",
+          "sections": "8.2"
+        },
+        {
+          "id": "wg",
+          "sections": "8.2"
+        }
+      ],
+      "assertions": [
+        "Breastfeeding is not recommended with the reviewed oral products because their absorption enhancer, SNAC, enters milk and infant accumulation is a concern. Injection does not contain this enhancer; its labeling calls for weighing maternal treatment need, breastfeeding benefits and potential infant risk. Do not apply the oral restriction automatically to injectable therapy."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Pediatric and older populations",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "8.4–8.5"
+        },
+        {
+          "id": "oral",
+          "sections": "8.4–8.5"
+        },
+        {
+          "id": "wg",
+          "sections": "8.4–8.5"
+        }
+      ],
+      "assertions": [
+        "Only the lower-dose Wegovy injection weight regimen is approved from age 12 years for obesity. Pediatric use of oral Wegovy, Wegovy 7.2 mg, Ozempic and Rybelsus is not established. In the Wegovy cardiovascular trial, patients aged 75 or older had more hip/pelvic fractures and more serious adverse reactions; assess tolerance and individual risks."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Renal, hepatic and oral Wegovy evidence limits",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "8.6–8.7; 12.3"
+        },
+        {
+          "id": "oral",
+          "sections": "8.6–8.7; 12.3"
+        },
+        {
+          "id": "wg",
+          "sections": "8.6; 12.3"
+        }
+      ],
+      "assertions": [
+        "Ozempic injection and the oral diabetes label recommend no renal or hepatic dose adjustment, including renal failure in their reviewed pharmacokinetic data. Wegovy reports no clinically important exposure differences across the studied renal range (eGFR 30 to below 90) or hepatic impairment; this does not establish equivalent evidence in every advanced kidney population. Acute volume depletion still requires renal monitoring. Oral Wegovy was not studied for weight reduction in type 2 diabetes and has lower, more variable exposure in that population; consider alternative therapy or injection for inadequate response."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Mechanism",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "12.1–12.2"
+        },
+        {
+          "id": "oral",
+          "sections": "12.1–12.2"
+        },
+        {
+          "id": "wg",
+          "sections": "12.1–12.2"
+        }
+      ],
+      "assertions": [
+        "GLP-1 receptor activation increases glucose-dependent insulin secretion, suppresses inappropriate glucagon and delays gastric emptying. Reduced energy intake contributes to weight effects. Clinical outcome indications depend on the product’s trials and approval, rather than the shared mechanism alone."
+      ],
+      "section": "pharmacology"
+    },
+    {
+      "card": "Disposition",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "12.3"
+        },
+        {
+          "id": "oral",
+          "sections": "12.3"
+        },
+        {
+          "id": "wg",
+          "sections": "12.3"
+        }
+      ],
+      "assertions": [
+        "Semaglutide is more than 99% protein bound and has an approximately 1-week half-life. It undergoes proteolytic cleavage and fatty-acid-chain metabolism, with metabolites eliminated in urine and feces. Subcutaneous bioavailability is about 89%; injection peak timing is about 1–3 days. Oral SNAC formulations enhance stomach absorption, with exposure dependent on administration conditions."
+      ],
+      "section": "pharmacology"
+    },
+    {
+      "card": "Monitoring",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "2; 5; 17"
+        },
+        {
+          "id": "oral",
+          "sections": "2; 5; 17"
+        },
+        {
+          "id": "wg",
+          "sections": "1; 2; 5; 17"
+        }
+      ],
+      "assertions": [
+        "Track glycemic response in diabetes, weight response in weight management and the relevant disease outcomes for the approved indication. Assess GI tolerance, hydration, glucose-lowering co-therapy and retinopathy history; check renal function when volume depletion occurs. Monitor resting heart rate on Wegovy. MASH treatment requires specialist assessment of disease stage and ongoing benefit."
+      ],
+      "section": "practice"
+    },
+    {
+      "card": "Counseling and procedures",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "17; Instructions for Use; 10"
+        },
+        {
+          "id": "oral",
+          "sections": "17; Medication Guide; 10"
+        },
+        {
+          "id": "wg",
+          "sections": "17; Instructions for Use; 10"
+        }
+      ],
+      "assertions": [
+        "Confirm the prescribed brand, route, strength and escalation step at each refill. Demonstrate the exact device or oral fasting routine. Seek urgent assessment for severe persistent abdominal pain, inability to retain fluids, allergic symptoms or sudden visual loss. Tell anesthesia and sedation teams about semaglutide and follow their individualized instructions. Do not share pens or add another semaglutide product.",
+        "Suspected overdose requires poison-center or urgent medical assessment and supportive management. Severe nausea, vomiting or hypoglycemia may need prolonged observation because semaglutide’s half-life is about 1 week."
+      ],
+      "section": "practice"
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": [
+        "Example Wegovy 25 mg oral bottle: NDC 0169-4425-31. Its tablets bear strength and Novo markings. Some other semaglutide tablets have overlapping appearance; identify by the labeled brand, strength and NDC."
+      ],
+      "sources": [
+        {
+          "id": "wg",
+          "sections": "3; 16; Instructions for Use; label metadata as applicable"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Ozempic multidose pens deliver 0.25/0.5, 1 or 2 mg; current single-dose syringes contain 0.25, 0.5 or 1 mg. Wegovy single-dose pens include 0.25, 0.5, 1, 1.7, 2.4 and 7.2 mg; single-dose syringes do not include 7.2 mg. Wegovy FlexTouch contains four 2.4 mg doses (9.6 mg/3 mL). Follow device-specific training; visually impaired patients should not self-administer FlexTouch without appropriate assistance.",
+        "Rybelsus tablets contain 3, 7 or 14 mg; Ozempic tablets contain 1.5, 4 or 9 mg; Wegovy tablets contain 1.5, 4, 9 or 25 mg. These products are not milligram-for-milligram substitutes."
+      ],
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "3; 16; Instructions for Use; label metadata as applicable"
+        },
+        {
+          "id": "oral",
+          "sections": "3; 16; Instructions for Use; label metadata as applicable"
+        },
+        {
+          "id": "wg",
+          "sections": "3; 16; Instructions for Use; label metadata as applicable"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Before use, refrigerate at 2–8°C and never freeze. Ozempic multidose pens can remain in use for 56 days at 15–30°C or refrigerated; remove the needle between uses. Ozempic single-dose syringes and Wegovy single-dose devices permit up to 28 days at 8–30°C under the labeled conditions; protect from light in the carton. Wegovy FlexTouch permits 56 days after first use at 15–30°C or refrigerated, with needle removed. Distinguish devices rather than applying one storage interval to every injection.",
+        "Store tablets at 20–25°C, allowing excursions to 15–30°C, in the original bottle to protect from moisture. This reference covers the cited U.S. branded products and current labeling; it does not provide compounded-product dosing or establish availability in every jurisdiction."
+      ],
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "3; 16; Instructions for Use; label metadata as applicable"
+        },
+        {
+          "id": "oral",
+          "sections": "3; 16; Instructions for Use; label metadata as applicable"
+        },
+        {
+          "id": "wg",
+          "sections": "3; 16; Instructions for Use; label metadata as applicable"
+        }
+      ]
+    }
+  ],
+  "unresolved_material_errors": [],
+  "limitations": [
+    "No equivalence is inferred across brands, routes or strengths beyond explicit label switching regimens.",
+    "MASH accelerated approval is based on histology; clinical benefit confirmation remains a regulatory condition.",
+    "Oral Wegovy weight-efficacy data in type 2 diabetes and pediatric oral/7.2 mg regimens are not established in the reviewed label.",
+    "Advanced renal evidence is described by product; no universal Wegovy kidney-failure pharmacokinetic claim is inferred.",
+    "The U.S. labels do not establish a universally effective pre-procedure withholding schedule.",
+    "Injectable lactation wording reflects product-label risk assessment; this profile does not claim that newer milk studies do not exist.",
+    "EMA NAION advice is not presented as a U.S. labeling change.",
+    "No product availability, payer coverage, compounded preparation or non-U.S. formulation claim is made.",
+    "The Wegovy injection missed-dose label describes more than or less than 2 days until the next dose, but does not resolve the exact 2-day boundary; seek pharmacist/prescriber clarification at that boundary."
+  ],
+  "validation": {
+    "schema": "Passed validateMonograph with eight sections, four safety cards and three product cards.",
+    "rendered_page": "parent batch QA required",
+    "tests_build_lint": "parent batch checks required",
+    "scoped_diff_check": "Passed git diff --check; only delegated monograph/audit files authored."
+  },
+  "hero_assertion_source_map": {
+    "essential_safety": {
+      "assertions": {
+        "title": "Verify the brand, route and escalation schedule.",
+        "text": "Do not substitute semaglutide products milligram for milligram. All reviewed products carry the thyroid C-cell tumor boxed warning and are contraindicated with personal or family medullary thyroid carcinoma or MEN2. Tell procedural teams about treatment before anesthesia or deep sedation.",
+        "section": "safety",
+        "link": "Warnings and precautions"
+      },
+      "sources": [
+        "oz/oral/wg: Boxed warning; 2; 4; pulmonary aspiration warning"
+      ]
+    },
+    "three_facts": {
+      "assertions": [
+        [
+          "Therapeutic class",
+          "GLP-1 receptor agonist"
+        ],
+        [
+          "Administration",
+          "Product-specific daily oral or weekly subcutaneous"
+        ],
+        [
+          "Reference focus",
+          "Current Ozempic, Rybelsus and Wegovy U.S. labels"
+        ]
+      ],
+      "sources": [
+        "oz/oral/wg: 1–3; 12.1"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "oz",
+      "title": "Ozempic injection · Prescribing information",
+      "publisher": "Novo Nordisk",
+      "note": "Revised May 2026; current multidose pens and single-dose syringes. Diabetes, cardiovascular and kidney indications.",
+      "url": "https://www.novo-pi.com/ozempic.pdf",
+      "local_snapshot": "/tmp/nas-drug-sources/ozempic.pdf",
+      "sha256": "37dbbba58786ef4c505b7bae594c938c7be0463478b78f412d0b9e3b5052b166",
+      "label_revision": "May 2026",
+      "review_method": "Full relevant clinical label sections read; PDF dose tables visually checked when applicable.",
+      "ifu_revision": "June 2026"
+    },
+    {
+      "id": "oral",
+      "title": "Rybelsus and Ozempic tablets · Prescribing information",
+      "publisher": "Novo Nordisk",
+      "note": "Revised January 2026; distinct 3/7/14 mg and 1.5/4/9 mg oral formulations.",
+      "url": "https://www.novo-pi.com/ozempictablets.pdf",
+      "local_snapshot": "/tmp/nas-drug-sources/ozempic-tablets.pdf",
+      "sha256": "707fd21286b5fb4ad526e29b76798973891d01a2f579f12b374ba709951054c2",
+      "label_revision": "January 2026",
+      "review_method": "Full relevant clinical label sections read; PDF dose tables visually checked when applicable."
+    },
+    {
+      "id": "wg",
+      "title": "Wegovy injection and tablets · Prescribing information",
+      "publisher": "Novo Nordisk",
+      "note": "Revised June 2026; includes 25 mg oral maintenance, 7.2 mg injection and FlexTouch. Product-specific MASH and pediatric limits.",
+      "url": "https://www.novo-pi.com/wegovy.pdf",
+      "local_snapshot": "/tmp/nas-drug-sources/wegovy.pdf",
+      "sha256": "b7049b1779932f38c1b818aedd505ff0643bb66c5d95cce2761ae27072291fd2",
+      "label_revision": "June 2026",
+      "review_method": "Full relevant clinical label sections read; PDF dose tables visually checked when applicable."
+    },
+    {
+      "id": "fda",
+      "title": "Wegovy HD · FDA approval announcement",
+      "publisher": "U.S. Food and Drug Administration",
+      "note": "March 19, 2026 approval of the 7.2 mg product for adult weight management.",
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-fourth-product-under-national-priority-voucher-program-higher-dose-semaglutide",
+      "version": "March 19, 2026",
+      "access": "Public FDA approval announcement read"
+    },
+    {
+      "id": "mood",
+      "title": "GLP-1 medicines · Suicidality warning removal",
+      "publisher": "U.S. Food and Drug Administration",
+      "note": "January 13, 2026: FDA review found no increased risk and requested removal of the affected warnings.",
+      "url": "https://www.fda.gov/drugs/drug-safety-communications/fda-requests-removal-suicidal-behavior-and-ideation-warning-glucagon-peptide-1-receptor-agonist-glp",
+      "version": "January 13, 2026",
+      "access": "Public full safety communication read"
+    },
+    {
+      "id": "eye",
+      "title": "Semaglutide · NAION safety assessment",
+      "publisher": "European Medicines Agency",
+      "note": "June 6, 2025: European regulatory advice on very rare optic nerve injury; distinguished from current U.S. prescribing information.",
+      "url": "https://www.ema.europa.eu/en/news/prac-concludes-eye-condition-naion-very-rare-side-effect-semaglutide-medicines-ozempic-rybelsus-wegovy",
+      "version": "June 6, 2025",
+      "access": "Public full EMA safety communication read"
+    }
+  ],
+  "assertion_map": [
+    {
+      "card": "Diabetes, cardiovascular and kidney indications",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "1"
+        },
+        {
+          "id": "oral",
+          "sections": "1"
+        }
+      ],
+      "assertions": [
+        "Ozempic injection treats adult type 2 diabetes alongside diet and exercise; it also reduces major cardiovascular events in adults with type 2 diabetes and established cardiovascular disease, and specified kidney/CV outcomes in adults with type 2 diabetes and CKD. Rybelsus and Ozempic tablets treat adult type 2 diabetes and reduce major cardiovascular events in adults with type 2 diabetes at high cardiovascular risk. The oral diabetes label does not establish the injection’s kidney-outcome indication."
+      ],
+      "section": "indications"
+    },
+    {
+      "card": "Weight management and cardiovascular prevention",
+      "sources": [
+        {
+          "id": "wg",
+          "sections": "1; 8.4"
+        }
+      ],
+      "assertions": [
+        "Wegovy injection and tablets are adjuncts to reduced-calorie nutrition and activity for adult weight reduction and long-term maintenance in obesity, or overweight with at least one weight-related condition. Both reduce major cardiovascular events in adults with established cardiovascular disease and obesity or overweight. Only Wegovy injection has the pediatric weight indication, for age 12 years or older with obesity."
+      ],
+      "section": "indications"
+    },
+    {
+      "card": "MASH and limits of extrapolation",
+      "sources": [
+        {
+          "id": "wg",
+          "sections": "1; 2.2"
+        },
+        {
+          "id": "oz",
+          "sections": "1"
+        }
+      ],
+      "assertions": [
+        "Wegovy injection treats adults with noncirrhotic metabolic dysfunction-associated steatohepatitis and moderate-to-advanced fibrosis (F2–F3). This is accelerated approval based on histologic improvement; continued approval may depend on confirmation of clinical benefit. The MASH indication does not apply to oral Wegovy or the 7.2 mg weight-management regimen. Ozempic is not approved as a weight-management or MASH product."
+      ],
+      "section": "indications"
+    },
+    {
+      "card": "Ozempic injection",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "2.1–2.2"
+        }
+      ],
+      "assertions": [
+        "Start 0.25 mg subcutaneously once weekly for 4 weeks, then 0.5 mg weekly. For additional glucose control, increase to 1 mg after at least 4 weeks at 0.5 mg, then to 2 mg after at least 4 weeks at 1 mg. The maximum is 2 mg weekly. For the type 2 diabetes/CKD outcome indication, use 1 mg weekly after at least 4 weeks at 0.5 mg."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Rybelsus and Ozempic oral escalation",
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "2.1–2.2"
+        }
+      ],
+      "assertions": [
+        "Take only one prescribed tablet each day. The initial 30-day doses below are initiation doses and are not effective doses for glycemic control. These two formulations cannot be substituted milligram for milligram."
+      ],
+      "table_assertions": {
+        "headers": [
+          "Product",
+          "Days 1–30",
+          "Days 31–60",
+          "Day 61 onward"
+        ],
+        "rows": [
+          [
+            "Rybelsus",
+            "3 mg daily",
+            "7 mg daily",
+            "7 mg; increase to 14 mg if needed"
+          ],
+          [
+            "Ozempic tablets",
+            "1.5 mg daily",
+            "4 mg daily",
+            "4 mg; increase to 9 mg if needed"
+          ]
+        ]
+      },
+      "section": "dosage"
+    },
+    {
+      "card": "Wegovy injection escalation",
+      "sources": [
+        {
+          "id": "wg",
+          "sections": "2.2"
+        }
+      ],
+      "assertions": [
+        "Weekly escalation is 0.25 mg for weeks 1–4, 0.5 mg for weeks 5–8, 1 mg for weeks 9–12 and 1.7 mg for weeks 13–16. If a dose is poorly tolerated, consider delaying the next step by 4 weeks. Choose the maintenance regimen by indication."
+      ],
+      "table_assertions": {
+        "headers": [
+          "Population / indication",
+          "Maintenance"
+        ],
+        "rows": [
+          [
+            "Adult weight management",
+            "2.4 mg recommended or 1.7 mg weekly; if additional reduction needed and 2.4 mg tolerated ≥4 weeks, may increase to 7.2 mg"
+          ],
+          [
+            "Adult cardiovascular risk reduction",
+            "2.4 mg recommended or 1.7 mg weekly"
+          ],
+          [
+            "Age ≥12, obesity",
+            "2.4 mg recommended or 1.7 mg weekly"
+          ],
+          [
+            "Adult noncirrhotic MASH, F2–F3",
+            "2.4 mg weekly; reduce to 1.7 mg if needed for tolerance and consider re-escalation"
+          ]
+        ]
+      },
+      "section": "dosage"
+    },
+    {
+      "card": "Wegovy oral escalation",
+      "sources": [
+        {
+          "id": "wg",
+          "sections": "1; 2.3; 8.4"
+        }
+      ],
+      "assertions": [
+        "For adult weight management or cardiovascular risk reduction, take 1.5 mg daily for days 1–30, 4 mg for days 31–60, 9 mg for days 61–90, then 25 mg daily from day 91. Delay escalation if needed for GI tolerance. If 25 mg cannot be tolerated, consider the labeled switch to 1.7 mg weekly injection. Oral Wegovy is not a pediatric or MASH regimen."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Administration",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "2.1"
+        },
+        {
+          "id": "oral",
+          "sections": "2.1"
+        },
+        {
+          "id": "wg",
+          "sections": "2.1"
+        }
+      ],
+      "assertions": [
+        "Inject weekly into abdomen, thigh or upper arm, rotating sites; meals do not determine injection timing. Do not mix with insulin; use separate nonadjacent sites. Oral products require an empty stomach in the morning with plain water, no more than 4 ounces; swallow whole and wait at least 30 minutes before food, other drinks or oral medicines. Do not crush, split or dissolve tablets."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Missed doses",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "2.1"
+        },
+        {
+          "id": "oral",
+          "sections": "2.1"
+        },
+        {
+          "id": "wg",
+          "sections": "2.4"
+        }
+      ],
+      "assertions": [
+        "Ozempic injection: take within 5 days of the missed dose, otherwise skip; changing the weekly day requires more than 48 hours between injections. Wegovy injection: take a missed dose if the next is more than 2 days away, or skip if less than 2 days away; after two or more consecutive missed doses, reinitiate escalation at a lower dose. A missed oral dose is skipped; take the next tablet the following day."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Switching regimens",
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "2.3–2.4"
+        },
+        {
+          "id": "wg",
+          "sections": "2.5"
+        }
+      ],
+      "assertions": [
+        "Use only the label-supported transition. After the initiation phase, Rybelsus 7 mg corresponds to Ozempic tablets 4 mg, and Rybelsus 14 mg to Ozempic tablets 9 mg; start the new formulation the next day. The combined oral label provides transitions from Ozempic injection 0.5 mg one week later to Rybelsus 7 or 14 mg daily or Ozempic tablets 4 or 9 mg daily. For adult Wegovy weight/CV therapy, transition from 2.4 mg injection to 25 mg oral one week later, or from 25 mg oral to 2.4 mg weekly injection the next day (consider 1.7 mg if 25 mg is not tolerated). Do not invent equivalence for other doses or brands."
+      ],
+      "section": "dosage"
+    },
+    {
+      "card": "Warnings and precautions",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "5.2–5.10"
+        },
+        {
+          "id": "oral",
+          "sections": "5.2–5.9"
+        },
+        {
+          "id": "wg",
+          "sections": "5.2–5.11"
+        },
+        {
+          "id": "wg",
+          "sections": "Recent major changes; 5.9"
+        },
+        {
+          "id": "mood",
+          "sections": "January 13, 2026 safety communication"
+        },
+        {
+          "id": "eye",
+          "sections": "PRAC June 2025 conclusions"
+        }
+      ],
+      "assertions": [
+        "Stop and assess suspected pancreatitis. Persistent vomiting or diarrhea can cause volume depletion and acute kidney injury; monitor renal function when these occur, especially during escalation. Severe GI reactions occur; the reviewed products are not recommended in severe gastroparesis. Gallbladder symptoms warrant investigation.",
+        "Rapid glucose improvement may worsen existing diabetic retinopathy; monitor patients with a history. Insulin or sulfonylureas increase hypoglycemia risk. Hypersensitivity can be serious. Pulmonary aspiration has been reported during general anesthesia or deep sedation despite fasting; alert the procedural team. Labels do not establish a universally effective hold interval or fasting modification. Never share an injection pen.",
+        "Monitor heart rate during Wegovy treatment; sustained resting increases warrant discontinuation. The June 2026 label no longer includes the prior suicidality warning. FDA’s January 2026 review found no increased risk and requested removal; do not carry forward the superseded avoidance instruction.",
+        "EMA identifies non-arteritic anterior ischemic optic neuropathy as a very rare semaglutide adverse effect. Sudden vision loss or rapidly worsening sight needs prompt assessment; EMA advises stopping semaglutide if NAION is confirmed. This is European regulatory guidance, distinct from the diabetic-retinopathy warning in the reviewed U.S. labels."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Contraindications",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "4"
+        },
+        {
+          "id": "oral",
+          "sections": "4"
+        },
+        {
+          "id": "wg",
+          "sections": "4; 1 Limitations of Use"
+        }
+      ],
+      "assertions": [
+        "Personal or family history of medullary thyroid carcinoma, MEN2, and a prior serious hypersensitivity reaction to semaglutide or the particular product’s ingredients are contraindications. Wegovy’s separate limitations-of-use statement says coadministration with other semaglutide products or another GLP-1 receptor agonist is not recommended."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Boxed warning · Thyroid C-cell tumors",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "Boxed warning; 5.1"
+        },
+        {
+          "id": "oral",
+          "sections": "Boxed warning; 5.1"
+        },
+        {
+          "id": "wg",
+          "sections": "Boxed warning; 5.1"
+        }
+      ],
+      "assertions": [
+        "Semaglutide causes thyroid C-cell tumors in rodents; relevance to humans is unknown. Counsel about a neck mass, persistent hoarseness or difficulty swallowing or breathing. Routine calcitonin testing or thyroid ultrasound has uncertain value for early detection; investigate concerning findings rather than treating screening as mandatory."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Adverse reactions",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "6.1–6.2"
+        },
+        {
+          "id": "oral",
+          "sections": "6.1–6.2"
+        },
+        {
+          "id": "wg",
+          "sections": "6.1–6.2"
+        }
+      ],
+      "assertions": [
+        "Nausea, vomiting and diarrhea are prominent; abdominal symptoms and constipation also occur. Frequency and severity vary by dose, route and study population. Ileus, intestinal obstruction and severe constipation have been reported after approval; spontaneous reports do not establish incidence.",
+        "Altered skin sensation (dysesthesia) was more frequent in Wegovy 7.2 mg trials. In those trials, dose reduction or interruption was often followed by recovery; persistent or intolerable symptoms need clinical review."
+      ],
+      "section": "safety"
+    },
+    {
+      "card": "Insulin and insulin secretagogues",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "7.1"
+        },
+        {
+          "id": "oral",
+          "sections": "7.1"
+        },
+        {
+          "id": "wg",
+          "sections": "7.1"
+        }
+      ],
+      "assertions": [
+        "Hypoglycemia risk increases with insulin or sulfonylureas; reducing their dose may be necessary. Educate patients about recognition and management, and reassess glucose after starting or increasing semaglutide."
+      ],
+      "section": "interactions"
+    },
+    {
+      "card": "Oral medicines and duplicate therapy",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "7.2"
+        },
+        {
+          "id": "oral",
+          "sections": "7.2"
+        },
+        {
+          "id": "wg",
+          "sections": "1; 7.2"
+        }
+      ],
+      "assertions": [
+        "Delayed gastric emptying can affect oral drug absorption. Monitor medicines with narrow therapeutic ranges or those needing clinical or laboratory surveillance. Oral semaglutide must precede other oral medicines by at least 30 minutes; the oral labels report increased thyroxine exposure with levothyroxine and support thyroid-parameter monitoring. Avoid duplicate semaglutide prescriptions; Wegovy’s label recommends against concurrent semaglutide or other GLP-1 therapy."
+      ],
+      "section": "interactions"
+    },
+    {
+      "card": "Pregnancy and conception planning",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "8.1; 8.3"
+        },
+        {
+          "id": "oral",
+          "sections": "8.1; 8.3"
+        },
+        {
+          "id": "wg",
+          "sections": "8.1; 8.3"
+        }
+      ],
+      "assertions": [
+        "Plan discontinuation at least 2 months before intended pregnancy because elimination is prolonged. For Wegovy weight/CV use, discontinue when pregnancy is recognized. Wegovy MASH and Ozempic/Rybelsus diabetes treatment require an individualized benefit–fetal-risk assessment; limited human data and adverse animal findings preclude assuming safety. Arrange alternative disease management."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Breastfeeding",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "8.2"
+        },
+        {
+          "id": "oral",
+          "sections": "8.2"
+        },
+        {
+          "id": "wg",
+          "sections": "8.2"
+        }
+      ],
+      "assertions": [
+        "Breastfeeding is not recommended with the reviewed oral products because their absorption enhancer, SNAC, enters milk and infant accumulation is a concern. Injection does not contain this enhancer; its labeling calls for weighing maternal treatment need, breastfeeding benefits and potential infant risk. Do not apply the oral restriction automatically to injectable therapy."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Pediatric and older populations",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "8.4–8.5"
+        },
+        {
+          "id": "oral",
+          "sections": "8.4–8.5"
+        },
+        {
+          "id": "wg",
+          "sections": "8.4–8.5"
+        }
+      ],
+      "assertions": [
+        "Only the lower-dose Wegovy injection weight regimen is approved from age 12 years for obesity. Pediatric use of oral Wegovy, Wegovy 7.2 mg, Ozempic and Rybelsus is not established. In the Wegovy cardiovascular trial, patients aged 75 or older had more hip/pelvic fractures and more serious adverse reactions; assess tolerance and individual risks."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Renal, hepatic and oral Wegovy evidence limits",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "8.6–8.7; 12.3"
+        },
+        {
+          "id": "oral",
+          "sections": "8.6–8.7; 12.3"
+        },
+        {
+          "id": "wg",
+          "sections": "8.6; 12.3"
+        }
+      ],
+      "assertions": [
+        "Ozempic injection and the oral diabetes label recommend no renal or hepatic dose adjustment, including renal failure in their reviewed pharmacokinetic data. Wegovy reports no clinically important exposure differences across the studied renal range (eGFR 30 to below 90) or hepatic impairment; this does not establish equivalent evidence in every advanced kidney population. Acute volume depletion still requires renal monitoring. Oral Wegovy was not studied for weight reduction in type 2 diabetes and has lower, more variable exposure in that population; consider alternative therapy or injection for inadequate response."
+      ],
+      "section": "populations"
+    },
+    {
+      "card": "Mechanism",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "12.1–12.2"
+        },
+        {
+          "id": "oral",
+          "sections": "12.1–12.2"
+        },
+        {
+          "id": "wg",
+          "sections": "12.1–12.2"
+        }
+      ],
+      "assertions": [
+        "GLP-1 receptor activation increases glucose-dependent insulin secretion, suppresses inappropriate glucagon and delays gastric emptying. Reduced energy intake contributes to weight effects. Clinical outcome indications depend on the product’s trials and approval, rather than the shared mechanism alone."
+      ],
+      "section": "pharmacology"
+    },
+    {
+      "card": "Disposition",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "12.3"
+        },
+        {
+          "id": "oral",
+          "sections": "12.3"
+        },
+        {
+          "id": "wg",
+          "sections": "12.3"
+        }
+      ],
+      "assertions": [
+        "Semaglutide is more than 99% protein bound and has an approximately 1-week half-life. It undergoes proteolytic cleavage and fatty-acid-chain metabolism, with metabolites eliminated in urine and feces. Subcutaneous bioavailability is about 89%; injection peak timing is about 1–3 days. Oral SNAC formulations enhance stomach absorption, with exposure dependent on administration conditions."
+      ],
+      "section": "pharmacology"
+    },
+    {
+      "card": "Monitoring",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "2; 5; 17"
+        },
+        {
+          "id": "oral",
+          "sections": "2; 5; 17"
+        },
+        {
+          "id": "wg",
+          "sections": "1; 2; 5; 17"
+        }
+      ],
+      "assertions": [
+        "Track glycemic response in diabetes, weight response in weight management and the relevant disease outcomes for the approved indication. Assess GI tolerance, hydration, glucose-lowering co-therapy and retinopathy history; check renal function when volume depletion occurs. Monitor resting heart rate on Wegovy. MASH treatment requires specialist assessment of disease stage and ongoing benefit."
+      ],
+      "section": "practice"
+    },
+    {
+      "card": "Counseling and procedures",
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "17; Instructions for Use; 10"
+        },
+        {
+          "id": "oral",
+          "sections": "17; Medication Guide; 10"
+        },
+        {
+          "id": "wg",
+          "sections": "17; Instructions for Use; 10"
+        }
+      ],
+      "assertions": [
+        "Confirm the prescribed brand, route, strength and escalation step at each refill. Demonstrate the exact device or oral fasting routine. Seek urgent assessment for severe persistent abdominal pain, inability to retain fluids, allergic symptoms or sudden visual loss. Tell anesthesia and sedation teams about semaglutide and follow their individualized instructions. Do not share pens or add another semaglutide product.",
+        "Suspected overdose requires poison-center or urgent medical assessment and supportive management. Severe nausea, vomiting or hypoglycemia may need prolonged observation because semaglutide’s half-life is about 1 week."
+      ],
+      "section": "practice"
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": [
+        "Example Wegovy 25 mg oral bottle: NDC 0169-4425-31. Its tablets bear strength and Novo markings. Some other semaglutide tablets have overlapping appearance; identify by the labeled brand, strength and NDC."
+      ],
+      "sources": [
+        {
+          "id": "wg",
+          "sections": "3; 16; Instructions for Use; label metadata as applicable"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Ozempic multidose pens deliver 0.25/0.5, 1 or 2 mg; current single-dose syringes contain 0.25, 0.5 or 1 mg. Wegovy single-dose pens include 0.25, 0.5, 1, 1.7, 2.4 and 7.2 mg; single-dose syringes do not include 7.2 mg. Wegovy FlexTouch contains four 2.4 mg doses (9.6 mg/3 mL). Follow device-specific training; visually impaired patients should not self-administer FlexTouch without appropriate assistance.",
+        "Rybelsus tablets contain 3, 7 or 14 mg; Ozempic tablets contain 1.5, 4 or 9 mg; Wegovy tablets contain 1.5, 4, 9 or 25 mg. These products are not milligram-for-milligram substitutes."
+      ],
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "3; 16; Instructions for Use; label metadata as applicable"
+        },
+        {
+          "id": "oral",
+          "sections": "3; 16; Instructions for Use; label metadata as applicable"
+        },
+        {
+          "id": "wg",
+          "sections": "3; 16; Instructions for Use; label metadata as applicable"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Before use, refrigerate at 2–8°C and never freeze. Ozempic multidose pens can remain in use for 56 days at 15–30°C or refrigerated; remove the needle between uses. Ozempic single-dose syringes and Wegovy single-dose devices permit up to 28 days at 8–30°C under the labeled conditions; protect from light in the carton. Wegovy FlexTouch permits 56 days after first use at 15–30°C or refrigerated, with needle removed. Distinguish devices rather than applying one storage interval to every injection.",
+        "Store tablets at 20–25°C, allowing excursions to 15–30°C, in the original bottle to protect from moisture. This reference covers the cited U.S. branded products and current labeling; it does not provide compounded-product dosing or establish availability in every jurisdiction."
+      ],
+      "sources": [
+        {
+          "id": "oz",
+          "sections": "3; 16; Instructions for Use; label metadata as applicable"
+        },
+        {
+          "id": "oral",
+          "sections": "3; 16; Instructions for Use; label metadata as applicable"
+        },
+        {
+          "id": "wg",
+          "sections": "3; 16; Instructions for Use; label metadata as applicable"
+        }
+      ]
+    }
+  ]
+}

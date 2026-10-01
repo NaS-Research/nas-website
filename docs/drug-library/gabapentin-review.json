@@ -1,0 +1,481 @@
+{
+  "slug": "gabapentin",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Neurontin immediate-release U.S. oral label; explicit limited comparison of Gralise and Horizant with their own labels; NICE adult neuropathic-pain context",
+  "excludedRegimens": [
+    "Exhaustive off-label regimens",
+    "Other manufacturers or combination products",
+    "Non-U.S. labeling"
+  ],
+  "sources": [
+    {
+      "id": "label",
+      "title": "Neurontin · Prescribing information",
+      "publisher": "DailyMed / Viatris Specialty LLC",
+      "note": "Current SPL version 48, effective May 12, 2026; prescribing information revised April 2025. Immediate-release capsules, tablets, and solution.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=97935fd9-1d4a-43b6-a5d9-de994591187b"
+    },
+    {
+      "id": "gralise",
+      "title": "Gralise · Prescribing information",
+      "publisher": "DailyMed / Almatica Pharma LLC",
+      "note": "Current SPL version 7, effective June 30, 2026; prescribing information revised June 2026. Distinct once-daily product.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=466273b1-c9fc-3930-c94b-aa11394d5140"
+    },
+    {
+      "id": "horizant",
+      "title": "Horizant · Prescribing information",
+      "publisher": "DailyMed / Azurity Pharmaceuticals",
+      "note": "Current SPL version 16, effective April 28, 2025. Gabapentin enacarbil prodrug; formulation-specific indications and renal dosing.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c486fc7-c8c4-4c6c-b30c-366dabaeaadd"
+    },
+    {
+      "id": "fda",
+      "title": "Gabapentinoids · Serious breathing problems",
+      "publisher": "U.S. Food and Drug Administration",
+      "note": "December 19, 2019 communication; risk with CNS depressants, respiratory impairment, and older age.",
+      "url": "https://www.fda.gov/safety/medical-product-safety-information/neurontin-gralise-horizant-gabapentin-and-lyrica-lyrica-cr-pregabalin-drug-safety-communication"
+    },
+    {
+      "id": "nice",
+      "title": "Neuropathic pain in adults · CG173",
+      "publisher": "National Institute for Health and Care Excellence",
+      "note": "Recommendations 1.1.8–1.1.14; guidance for non-specialist adult neuropathic pain, distinct from U.S. product approval.",
+      "url": "https://www.nice.org.uk/guidance/cg173/chapter/recommendations"
+    }
+  ],
+  "labelMetadata": [
+    {
+      "product": "neurontin",
+      "setid": "97935fd9-1d4a-43b6-a5d9-de994591187b",
+      "effectiveTime": "20260512",
+      "version": "48",
+      "xmlSha256": "5772dd19697484b7a98743b09f04cef551bff5caffd1eddd30ef7d89c0a7e9dc",
+      "localEvidence": "/tmp/neurontin.xml"
+    },
+    {
+      "product": "gralise",
+      "setid": "466273b1-c9fc-3930-c94b-aa11394d5140",
+      "effectiveTime": "20260630",
+      "version": "7",
+      "xmlSha256": "6a5869c353cfd8c905bae08d6fc7b2352bc4d221d6fe37636c5fb75b4e2264ed",
+      "localEvidence": "/tmp/gralise.xml"
+    },
+    {
+      "product": "horizant",
+      "setid": "4c486fc7-c8c4-4c6c-b30c-366dabaeaadd",
+      "effectiveTime": "20250428",
+      "version": "16",
+      "xmlSha256": "10ad084530c911708d54a12fcae33698d080767ad303ce82d3e08946c5b4da2e",
+      "localEvidence": "/tmp/horizant.xml"
+    }
+  ],
+  "assertionToSource": [
+    {
+      "profileSection": "indications",
+      "card": "Labeled immediate-release indications",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "1"
+      ],
+      "assertions": [
+        "Neurontin is labeled for postherpetic neuralgia in adults and as adjunctive treatment of partial-onset seizures, with or without secondary generalization, in adults and children aged 3 years or older. It is not labeled as seizure monotherapy."
+      ]
+    },
+    {
+      "profileSection": "indications",
+      "card": "Other formulations and clinical uses",
+      "sourceIds": [
+        "gralise",
+        "horizant",
+        "nice"
+      ],
+      "sourceSections": [
+        "Gralise 1",
+        "Horizant 1.1–1.2",
+        "NICE 1.1.8–1.1.14"
+      ],
+      "assertions": [
+        "Gralise is labeled for postherpetic neuralgia and has different absorption and dosing. Horizant contains gabapentin enacarbil, a prodrug, and is labeled in adults for moderate-to-severe primary restless legs syndrome and postherpetic neuralgia; it is not recommended for patients who must sleep during the day and remain awake at night.",
+        "NICE includes gabapentin among initial options for adult neuropathic pain other than trigeminal neuralgia. Non-postherpetic neuropathic pain is outside the selected Neurontin U.S. label; the guideline is not a blanket indication for every chronic pain condition or sciatica."
+      ]
+    },
+    {
+      "profileSection": "dosage",
+      "card": "Immediate-release oral therapy",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "2.1",
+        "2.2"
+      ],
+      "assertions": [
+        "For postherpetic neuralgia, studies of 1,800–3,600 mg/day did not demonstrate added benefit above 1,800 mg/day. Higher epilepsy doses have been studied, but they are not the routine recommended maintenance regimen. Renal adjustments can require substantially lower doses.",
+        "Adult postherpetic neuralgia: Day 1: 300 mg once. Day 2: 300 mg twice daily. Day 3: 300 mg three times daily. Then titrate as needed to 600 mg three times daily (1,800 mg/day).",
+        "Partial-onset seizures · age ≥12 years: Start 300 mg three times daily; recommended maintenance 300–600 mg three times daily. Keep intervals ≤12 hours.",
+        "Partial-onset seizures · age 3–11 years: Start 10–15 mg/kg/day in three doses; titrate over about 3 days. Maintenance: age 3–4, 40 mg/kg/day; age 5–11, 25–35 mg/kg/day, each in three doses. Keep intervals ≤12 hours."
+      ]
+    },
+    {
+      "profileSection": "dosage",
+      "card": "Renal dosing · Age 12 years and older",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "2.3",
+        "2.4"
+      ],
+      "assertions": [
+        "For hemodialysis, use maintenance dosing based on estimated clearance plus the label’s matched supplemental dose after each 4 hours of dialysis (125–350 mg across the listed regimens). The supplemental dose is not a stand-alone daily regimen; consult the complete table. Renal dosing in children younger than 12 has not been studied.",
+        "≥60 mL/min: 900–3,600 mg/day in three doses; choose an indication-appropriate dose.",
+        ">30 to 59 mL/min: 400–1,400 mg/day in two doses.",
+        ">15 to 29 mL/min: 200–700 mg once daily.",
+        "15 mL/min: 100–300 mg once daily.",
+        "<15 mL/min: Reduce the 15 mL/min regimen proportionally to creatinine clearance."
+      ]
+    },
+    {
+      "profileSection": "dosage",
+      "card": "Administration and discontinuation",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "2.5"
+      ],
+      "assertions": [
+        "Take immediate-release Neurontin with or without food; swallow capsules whole with water. Scored 600 mg and 800 mg tablets may be halved: use the unused half for the next dose and discard halves unused for 28 days.",
+        "Reduce, discontinue, or replace treatment gradually over at least 1 week; a longer taper may be needed. Abrupt withdrawal can cause seizures and other withdrawal effects."
+      ]
+    },
+    {
+      "profileSection": "dosage",
+      "card": "Gralise · Separate once-daily formulation",
+      "sourceIds": [
+        "gralise"
+      ],
+      "sourceSections": [
+        "2.1",
+        "2.2"
+      ],
+      "assertions": [
+        "For adult postherpetic neuralgia, titrate with the evening meal: day 1, 300 mg; day 2, 600 mg; days 3–6, 900 mg; days 7–10, 1,200 mg; days 11–14, 1,500 mg; day 15, 1,800 mg once daily. Swallow whole; do not split, crush, or chew.",
+        "At creatinine clearance 30–60 mL/min, start 300 mg daily and titrate to an individualized 600–1,800 mg daily regimen. Do not administer when clearance is below 30 mL/min or during hemodialysis. Do not substitute this schedule for immediate-release dosing."
+      ]
+    },
+    {
+      "profileSection": "dosage",
+      "card": "Horizant · Gabapentin enacarbil",
+      "sourceIds": [
+        "horizant"
+      ],
+      "sourceSections": [
+        "2.1–2.4"
+      ],
+      "assertions": [
+        "Take intact extended-release tablets with food. For adult restless legs syndrome with normal renal function: 600 mg at about 5 PM daily. For adult postherpetic neuralgia with normal renal function: 600 mg in the morning for 3 days, then 600 mg twice daily from day 4.",
+        "Both regimens require their own renal adjustments. For restless legs syndrome, hemodialysis use is not recommended. For postherpetic neuralgia, the label specifies a post-dialysis regimen. Use section 2.4 for the exact indication-specific titration, maintenance, and taper; do not use the Neurontin renal table."
+      ]
+    },
+    {
+      "profileSection": "dosage",
+      "card": "Hepatic considerations",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "12.3"
+      ],
+      "assertions": [
+        "Gabapentin is not appreciably metabolized. The label reports no hepatic-impairment study; it does not provide a separate hepatic dose-adjustment schedule. Renal function remains central to dosing."
+      ]
+    },
+    {
+      "profileSection": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "5.1–5.10",
+        "9.2",
+        "9.3"
+      ],
+      "assertions": [
+        "Serious, sometimes fatal respiratory depression can occur with opioids or other CNS depressants, or underlying respiratory impairment. Consider a low starting dose in these settings and monitor breathing and sedation. Seek immediate help for slow or difficult breathing, extreme sleepiness, or unresponsiveness.",
+        "DRESS can involve fever, swollen glands, rash, and organ injury; early illness may occur without a rash. Evaluate immediately and discontinue if another cause is not established. Anaphylaxis or swelling of the lips, throat, or tongue requires stopping treatment and emergency assessment.",
+        "Dizziness, sedation, and impaired coordination can affect driving. Monitor depression, suicidal thoughts, and unusual behavior during treatment and after stopping. Abrupt or rapid withdrawal may provoke seizures and withdrawal symptoms; taper under clinical supervision.",
+        "Children may develop aggression, emotional changes, impaired concentration, or hyperactivity. Misuse, self-escalation, and physical dependence have been reported; assess substance-use history. Rat pancreatic-tumor findings have uncertain clinical significance and do not establish human cancer risk."
+      ]
+    },
+    {
+      "profileSection": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "label",
+        "gralise"
+      ],
+      "sourceSections": [
+        "Neurontin 4",
+        "Neurontin 2.3",
+        "Gralise 2.2"
+      ],
+      "assertions": [
+        "Known hypersensitivity to gabapentin or any product ingredient. Renal impairment requires dose adjustment rather than being an immediate-release absolute contraindication; Gralise has separate renal restrictions."
+      ]
+    },
+    {
+      "profileSection": "safety",
+      "card": "Boxed warning status",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "5"
+      ],
+      "assertions": [
+        "The selected Neurontin label has no boxed warning. Its respiratory, hypersensitivity, suicidality, and withdrawal warnings remain clinically important."
+      ]
+    },
+    {
+      "profileSection": "safety",
+      "card": "Adverse reactions",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "6.1",
+        "6.2"
+      ],
+      "assertions": [
+        "Common trial events included dizziness, somnolence, and peripheral edema in postherpetic neuralgia; seizure trials also reported ataxia, fatigue, and nystagmus. Pediatric seizure trials reported fever, viral infection, nausea or vomiting, sleepiness, and hostility.",
+        "Postmarketing reports include serious skin reactions, rhabdomyolysis, respiratory depression, and withdrawal effects. Their frequencies cannot be reliably estimated from spontaneous reports."
+      ]
+    },
+    {
+      "profileSection": "interactions",
+      "card": "Clinically relevant interactions",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "7.1–7.4",
+        "5.8"
+      ],
+      "assertions": [
+        "Opioids and other CNS depressants: additive sedation and breathing risk. Morphine can raise gabapentin exposure; monitor and adjust as clinically needed. Starting or stopping gabapentin can alter hydrocodone exposure and effect.",
+        "Aluminum/magnesium hydroxide antacid: take immediate-release gabapentin at least 2 hours after the antacid.",
+        "Gabapentin has little metabolic interaction with commonly coadministered antiseizure drugs, but pharmacodynamic sedation can still occur.",
+        "Urine protein dipsticks can give false-positive results in the described antiseizure combination setting; use a more specific confirmatory method."
+      ]
+    },
+    {
+      "profileSection": "interactions",
+      "card": "Alcohol and other sedatives",
+      "sourceIds": [
+        "fda",
+        "horizant"
+      ],
+      "sourceSections": [
+        "FDA recommendations",
+        "Horizant 12.3"
+      ],
+      "assertions": [
+        "Tell the clinician about alcohol, opioid pain medicines, sleep medicines, and anxiety medicines. FDA recommends low initial doses and monitoring when combined with CNS depressants. Horizant additionally discourages alcohol because it can accelerate release from the extended-release product."
+      ]
+    },
+    {
+      "profileSection": "populations",
+      "card": "Pregnancy",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "8.1"
+      ],
+      "assertions": [
+        "Available observational data have not indicated an increased risk of major birth defects or miscarriage, but study limitations remain and animal developmental toxicity was observed. Individualize treatment with the obstetric and prescribing clinicians. Prolonged exposure with opioids near delivery may increase neonatal withdrawal risk; monitor exposed newborns. The North American Antiepileptic Drug Pregnancy Registry is listed in the label."
+      ]
+    },
+    {
+      "profileSection": "populations",
+      "card": "Lactation",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "8.2"
+      ],
+      "assertions": [
+        "Gabapentin enters human milk. The label states that infant effects and effects on milk production are unknown; consider breastfeeding benefits, maternal need, and potential infant risk together."
+      ]
+    },
+    {
+      "profileSection": "populations",
+      "card": "Pediatric and geriatric considerations",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "8.4–8.6",
+        "2.3"
+      ],
+      "assertions": [
+        "Adjunctive seizure treatment is established from age 3; pediatric postherpetic-neuralgia treatment and seizure treatment below age 3 are not established. Renal impairment in children younger than 12 has not been studied.",
+        "Older adults often have reduced clearance; choose doses by creatinine clearance and monitor sedation, ataxia, edema, and breathing risk."
+      ]
+    },
+    {
+      "profileSection": "pharmacology",
+      "card": "Mechanism of action and pharmacodynamics",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "12.1"
+      ],
+      "assertions": [
+        "The precise analgesic and antiseizure mechanisms are unknown. Gabapentin binds the α2δ subunit of voltage-activated calcium channels in vitro; the relationship to therapeutic effects is incompletely defined. Despite structural resemblance to GABA, it does not act by modifying GABA binding, uptake, or degradation."
+      ]
+    },
+    {
+      "profileSection": "pharmacology",
+      "card": "Pharmacokinetics",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "12.3"
+      ],
+      "assertions": [
+        "Absorption: Saturable; bioavailability decreases as the immediate-release dose rises.",
+        "Metabolism / elimination: Not appreciably metabolized; excreted unchanged by the kidneys.",
+        "Half-life: About 5–7 hours with normal renal function; prolonged in renal impairment.",
+        "Dialysis: Hemodialysis removes gabapentin; dose supplementation depends on the regimen."
+      ]
+    },
+    {
+      "profileSection": "pharmacology",
+      "card": "Formulation-dependent exposure",
+      "sourceIds": [
+        "gralise",
+        "horizant"
+      ],
+      "sourceSections": [
+        "Gralise 12.3",
+        "Horizant 12.3"
+      ],
+      "assertions": [
+        "Gralise has meal-dependent absorption and a later peak than immediate-release gabapentin. Horizant is a prodrug absorbed through different transport pathways and converted to gabapentin; it gives approximately dose-proportional, extended exposure. Equal milligram doses across these products do not establish equivalent exposure or dosing frequency."
+      ]
+    },
+    {
+      "profileSection": "practice",
+      "card": "Monitoring parameters",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "2",
+        "5",
+        "9",
+        "17"
+      ],
+      "assertions": [
+        "Assess pain relief and function or seizure control against the indication. Reassess tolerability during titration.",
+        "Review creatinine clearance for dosing, especially in older adults, renal disease, or dialysis.",
+        "Monitor sedation, coordination, respiratory symptoms, and concomitant depressants.",
+        "Monitor mood and suicidality during treatment and after discontinuation; track pediatric behavior and school performance.",
+        "Evaluate rash, fever, swollen glands, or other hypersensitivity symptoms promptly; watch for self-escalation or misuse."
+      ]
+    },
+    {
+      "profileSection": "practice",
+      "card": "Patient counseling information",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "2.5",
+        "17",
+        "Medication Guide"
+      ],
+      "assertions": [
+        "Do not stop or change the dose without a clinician-directed plan.",
+        "Avoid driving or hazardous work until the effect on alertness and coordination is understood.",
+        "Tell the clinician about opioids, sedatives, alcohol, pregnancy, breastfeeding, and kidney or breathing disease.",
+        "Use the correct liquid concentration and a calibrated measuring device. Do not interchange immediate-release, Gralise, and Horizant schedules.",
+        "Seek emergency help for breathing difficulty, inability to awaken, or swelling affecting breathing. Report suicidal thoughts or severe mood changes immediately.",
+        "For overdose, contact U.S. Poison Control at 1-800-222-1222 or obtain emergency assessment."
+      ]
+    },
+    {
+      "profileSection": "product",
+      "card": "Representative oral product · Neurontin",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "3",
+        "16"
+      ],
+      "assertions": [
+        "Other strengths and manufacturers differ. Verify the exact imprint and package with a pharmacist.",
+        "Dosage form / strength: Immediate-release capsule · 300 mg",
+        "Label distributor: Viatris Specialty LLC",
+        "Appearance: Yellow hard gelatin capsule",
+        "Imprint: VLE on body · Neurontin / 300 mg on cap",
+        "Example package NDC: 58151-282-01 · 100 capsules"
+      ]
+    },
+    {
+      "profileSection": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "label",
+        "gralise",
+        "horizant"
+      ],
+      "sourceSections": [
+        "Each product 3"
+      ],
+      "assertions": [
+        "Neurontin capsules: 100, 300, 400 mg",
+        "Neurontin tablets: Scored 600, 800 mg",
+        "Neurontin oral solution: 250 mg/5 mL (50 mg/mL)",
+        "Gralise tablets: 300, 450, 600, 750, 900 mg; distinct once-daily product",
+        "Horizant extended-release tablets: 300, 600 mg gabapentin enacarbil; a prodrug"
+      ]
+    },
+    {
+      "profileSection": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "16",
+        "2.5"
+      ],
+      "assertions": [
+        "Neurontin capsules and tablets: 25°C (77°F), with excursions 15–30°C (59–86°F). Oral solution: refrigerate at 2–8°C (36–46°F). Discard unused tablet halves after 28 days. Other formulations have their own storage requirements."
+      ]
+    }
+  ],
+  "materialErrors": [],
+  "gaps": [],
+  "limitations": [
+    "Source reviewed; rendered QA and release checks belong to the batch integrator."
+  ],
+  "sourceAccessNotes": [
+    "NICE browser fetch returned 403; full recommendations HTML was retrieved successfully with verified-TLS curl and relevant recommendations read.",
+    "Gabapentin federal label controlled-substance wording is not generalized to state scheduling."
+  ],
+  "guidelineEvidence": "/tmp/nas-nice-cg173.html",
+  "schemaValidation": []
+}

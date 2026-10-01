@@ -22,6 +22,7 @@ export function validateMonograph(monograph) {
     if (!source.id || sources.has(source.id)) errors.push(`Duplicate or missing source: ${source.id}`);
     sources.add(source.id);
     for (const field of ['title', 'publisher', 'note']) if (!source[field]?.trim()) errors.push(`Source ${source.id}: missing ${field}`);
+    if (typeof source.url !== 'string' || /\s/.test(source.url)) errors.push(`Source ${source.id}: URL contains whitespace or is missing`);
     try { if (new URL(source.url).protocol !== 'https:') errors.push(`Source ${source.id}: HTTPS required`); } catch { errors.push(`Source ${source.id}: invalid URL`); }
   }
   if (!sources.size) errors.push('No sources');
@@ -48,6 +49,10 @@ export function validateMonograph(monograph) {
       if (!['paragraphs', 'items', 'facts', 'table', 'links'].some(key => block[key]?.length || (key === 'table' && block.table?.rows?.length))) errors.push(`${id}/${block.title}: empty card`);
       if (!block.sources?.length) errors.push(`${id}/${block.title}: uncited card`);
       for (const source of block.sources || []) if (!sources.has(source)) errors.push(`${id}/${block.title}: unknown source ${source}`);
+      for (const link of block.links || []) {
+        if (!link.title?.trim() || typeof link.url !== 'string' || /\s/.test(link.url)) errors.push(`${id}/${block.title}: invalid link title or whitespace URL`);
+        try { if (new URL(link.url).protocol !== 'https:') errors.push(`${id}/${block.title}: link requires HTTPS`); } catch { errors.push(`${id}/${block.title}: invalid link URL`); }
+      }
       if (block.table && (!block.table.headers?.length || !block.table.rows?.length || block.table.rows.some(row => row.length !== block.table.headers.length))) errors.push(`${id}/${block.title}: invalid table`);
       if (block.facts?.some(row => row.length !== 2)) errors.push(`${id}/${block.title}: invalid fact row`);
     }

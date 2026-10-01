@@ -1,0 +1,651 @@
+{
+  "slug": "pantoprazole",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Focused US product-specific reference; all eight blueprint sections authored from current public primary labels, regulatory records, and supplemental public NLM references. Original summaries; no claim to list every adverse event or substitute for individualized prescribing.",
+  "sources": [
+    {
+      "id": "oral",
+      "title": "Protonix · Tablets and delayed-release granules",
+      "publisher": "DailyMed / Wyeth Pharmaceuticals LLC, a Pfizer subsidiary",
+      "note": "SPL version 48, effective May 18, 2026; prescribing information revised June 2023. Marketing records NDA020987 and NDA022020.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=08098cb2-c048-4640-f387-6beec4a38936",
+      "checked": "2026-10-01",
+      "version": "SPL version 48, effective May 18, 2026; prescribing information revised June 2023. Marketing records NDA020987 and NDA022020.",
+      "spl_version": "48",
+      "spl_effective_time": "20260518",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/08098cb2-c048-4640-f387-6beec4a38936.xml",
+      "downloaded_xml_sha256": "2fe807b39bd98d1aac1814c72caad7fd2ab86b0aece015fcc82ebc897af2affc"
+    },
+    {
+      "id": "iv",
+      "title": "Protonix I.V. · Prescribing information",
+      "publisher": "DailyMed / Wyeth Pharmaceuticals LLC, a Pfizer subsidiary",
+      "note": "SPL version 60, effective December 22, 2025; prescribing information revised August 2024. Includes dosing for age 3 months and older and NDA020988 record.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51e4144a-489e-436c-609a-39305f8f56ba",
+      "checked": "2026-10-01",
+      "version": "SPL version 60, effective December 22, 2025; prescribing information revised August 2024. Includes dosing for age 3 months and older and NDA020988 record.",
+      "spl_version": "60",
+      "spl_effective_time": "20251222",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/51e4144a-489e-436c-609a-39305f8f56ba.xml",
+      "downloaded_xml_sha256": "310324b8628d46a8de8760b13eedf2793a0cf1b092183df17070aae7dfb76a26"
+    },
+    {
+      "id": "patient",
+      "title": "Pantoprazole · Patient information",
+      "publisher": "MedlinePlus / National Library of Medicine",
+      "note": "Administration, precautions, missed doses, and urgent symptoms.",
+      "url": "https://medlineplus.gov/druginfo/meds/a601246.html",
+      "checked": "2026-10-01",
+      "version": "Administration, precautions, missed doses, and urgent symptoms."
+    },
+    {
+      "id": "lactation",
+      "title": "Pantoprazole · Lactation",
+      "publisher": "LactMed / National Library of Medicine",
+      "note": "Revised June 15, 2026; includes newer human milk measurements and limitations.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK501280/",
+      "checked": "2026-10-01",
+      "version": "Revised June 15, 2026; includes newer human milk measurements and limitations."
+    }
+  ],
+  "assertion_to_source": [
+    {
+      "section_id": "indications",
+      "card_title": "Labeled oral indications",
+      "assertions": [
+        "Protonix oral products are labeled for short-term healing and symptom relief of GERD-associated erosive esophagitis in adults and children age 5 and older; maintenance of healed erosive esophagitis and reduced heartburn relapse in adults; and long-term treatment of pathological hypersecretory conditions, including Zollinger–Ellison syndrome, in adults.",
+        "Maintenance trials did not extend beyond 12 months. The pediatric indication is erosive esophagitis, not every reflux symptom; other pediatric uses are not established by this label."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "1.1–1.3",
+            "8.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "indications",
+      "card_title": "Intravenous therapy",
+      "assertions": [
+        "Protonix IV is labeled for GERD with a history of erosive esophagitis for up to 10 days in adults and up to 7 days in children age 3 months and older, and for pathological hypersecretory conditions in adults. Switch to an appropriate oral medicine as soon as tolerated. The IV label states that efficacy and safety for upper GI bleeding have not been established; that is distinct from clinician-directed off-label protocols."
+      ],
+      "support": [
+        {
+          "source_id": "iv",
+          "sections": [
+            "1",
+            "2.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Adult oral dosing",
+      "assertions": [
+        "Erosive esophagitis | 40 mg once daily for up to 8 weeks; an additional 8 weeks may be considered in adults not healed.",
+        "Maintenance of healing | 40 mg once daily; controlled trials did not exceed 12 months.",
+        "Pathological hypersecretion | 40 mg twice daily initially; individualize to response for as long as indicated. Doses up to 240 mg/day have been administered."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "2.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Pediatric oral dosing",
+      "assertions": [
+        "Safety beyond 8 weeks is not established in children. The 40 mg packet is a fixed dose and must not be divided to make 20 mg; use an appropriate tablet or obtain a different clinician-directed plan. The table supplies no regimen for a child below 15 kg.",
+        "15 to <40 kg | 20 mg",
+        "≥40 kg | 40 mg"
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "2.1",
+            "2.2",
+            "8.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Delayed-release tablets",
+      "assertions": [
+        "Swallow whole with or without food; do not split, crush, or chew. Two 20 mg tablets may replace one 40 mg tablet if swallowing the larger tablet is difficult. Antacids do not affect tablet absorption."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "2.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Delayed-release granules",
+      "assertions": [
+        "Take approximately 30 minutes before a meal. Sprinkle the whole packet on 1 teaspoon of applesauce and swallow within 10 minutes without chewing; follow with sips of water. Alternatively, mix the whole packet with 1 teaspoon of apple juice, stir for 5 seconds, swallow immediately, and rinse the container once or twice with apple juice to take all granules.",
+        "Do not use other foods or liquids, and do not crush or chew the granules. NG or gastrostomy administration requires apple juice and a tube of at least 16 French; follow the full label’s syringe and repeated-rinse instructions with professional guidance."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "2.2",
+            "Instructions for Use"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "IV therapy · Adult regimens",
+      "assertions": [
+        "For GERD with a history of erosive esophagitis: 40 mg IV once daily, by injection over at least 2 minutes or infusion over 15 minutes, for up to 10 days. For pathological hypersecretion: 80 mg every 12 hours by either method; frequency may increase to every 8 hours according to acid output. These are professional IV regimens, not oral directions."
+      ],
+      "support": [
+        {
+          "source_id": "iv",
+          "sections": [
+            "2.1",
+            "2.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "IV therapy · Pediatric GERD with history of EE",
+      "assertions": [
+        "Stop IV treatment as soon as oral therapy is tolerated and switch within 7 days. These IV age and weight boundaries differ from the oral product. Professional preparation and line-compatibility instructions are mandatory.",
+        "3 months to <1 year; <12.5 kg | 0.8 mg/kg",
+        "3 months to <1 year; ≥12.5 kg | 10 mg",
+        "Age 1–17; ≤15 kg | 10 mg",
+        "Age 1–17; >15 to ≤40 kg | 20 mg",
+        "Age 1–17; >40 kg | 40 mg"
+      ],
+      "support": [
+        {
+          "source_id": "iv",
+          "sections": [
+            "2.1",
+            "2.3",
+            "2.5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Renal and hepatic impairment",
+      "assertions": [
+        "Severe renal impairment does not meaningfully change pantoprazole pharmacokinetics; the reviewed labels supply no special renal reduction schedule. Hepatic impairment substantially increases exposure, although accumulation with once-daily dosing is limited. Oral doses above 40 mg/day have not been studied in hepatic impairment; do not assume the hypersecretory high-dose regimen is validated in that population."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "12.3 / Patients with Renal Impairment",
+            "12.3 / Patients with Hepatic Impairment"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "12.3 / Patients with Renal Impairment",
+            "12.3 / Patients with Hepatic Impairment"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Warnings and precautions",
+      "assertions": [
+        "Symptom improvement does not exclude gastric malignancy. A poor response or early relapse after treatment requires further evaluation. Acute tubulointerstitial nephritis can occur at any time, even without rash or fever; stop and evaluate if suspected.",
+        "Persistent diarrhea may indicate C. difficile infection. Stop and assess severe skin or hypersensitivity reactions; PPIs have been associated with lupus. Prolonged or multiple-daily-dose use is associated with fracture risk in observational studies. Long-term therapy can cause vitamin B12 deficiency, hypomagnesemia with other mineral disturbances, and fundic gland polyps. Individualize duration rather than continuing without an indication."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "5.1–5.8",
+            "5.10"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Contraindications",
+      "assertions": [
+        "Hypersensitivity to pantoprazole, any formulation component, or substituted benzimidazoles is a contraindication. Do not combine with rilpivirine-containing medicines."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "4"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Boxed warning",
+      "assertions": [
+        "The reviewed Protonix oral and IV labels have no boxed warning. Their renal, infection, skin, and interaction warnings still apply."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "Full prescribing information / no boxed warning"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "Full prescribing information / no boxed warning"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Adverse reactions",
+      "assertions": [
+        "Common adult reactions include headache, diarrhea, nausea, abdominal pain, vomiting, flatulence, dizziness, and joint pain. Pediatric oral trial reactions also included upper respiratory infection, fever, and rash. These trial observations do not establish an individual’s risk.",
+        "IV treatment can cause injection-site reactions. Its EDTA ingredient can worsen zinc deficiency in susceptible patients; consider supplementation when appropriate. Follow IV compatibility instructions, including incompatibility with Y-site midazolam and potential incompatibility with zinc-containing products. Rodent tumor findings in the oral label have uncertain relevance to human cancer."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "6.1",
+            "5.9"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "5.2",
+            "5.3",
+            "2.5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Clinically relevant interactions",
+      "assertions": [
+        "Rilpivirine-containing products: contraindicated. Avoid nelfinavir; consult atazanavir dosing instructions. Monitor saquinavir toxicity when relevant.",
+        "Warfarin: possible INR or prothrombin-time elevation; monitor and adjust warfarin as needed.",
+        "High-dose methotrexate: possible prolonged exposure and toxicity; consider a temporary PPI hold with the treating team.",
+        "Acid-dependent absorption: review iron, azole antifungals, selected kinase inhibitors, and other affected medicines using their exact labels.",
+        "Mycophenolate mofetil: exposure to active mycophenolic acid may decrease; use caution in transplant patients. A rejection effect is not established by the Protonix label.",
+        "Clopidogrel: the label reports no clinically important interaction at approved pantoprazole doses; no clopidogrel dose adjustment is required on that basis."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "7"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "7"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Diagnostic interference",
+      "assertions": [
+        "Pantoprazole can raise chromogranin A and confound neuroendocrine-tumor testing. The label advises a clinician-directed hold of at least 14 days before testing, with repeat testing if still high and the same laboratory for serial measurements. False-positive urine THC screening has been reported; confirm positive screens using an alternative method."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "5.11",
+            "5.12",
+            "7"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "5.12",
+            "5.13",
+            "7"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pregnancy",
+      "assertions": [
+        "Available observational human data have not shown an association with major malformations or other adverse pregnancy outcomes. Animal developmental findings include bone changes in offspring; the labels advise counseling about potential fetal harm. Review the indication and alternatives with the obstetric clinician rather than asserting proven safety."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "8.1"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "8.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Lactation",
+      "assertions": [
+        "Pantoprazole reaches milk in low amounts. The label recommends balancing maternal clinical need, breastfeeding benefits, and possible infant effects. Current LactMed expects no adverse effects from maternal 40 mg daily based on low milk exposure, while infant blood-level and outcome evidence remains limited."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "8.2"
+          ]
+        },
+        {
+          "source_id": "lactation",
+          "sections": [
+            "Summary of Use during Lactation",
+            "Drug Levels",
+            "Effects in Breastfed Infants"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pediatric and geriatric considerations",
+      "assertions": [
+        "Oral products are indicated from age 5 for short-term erosive esophagitis; the marketed strengths do not provide an appropriate formulation below age 5. Pediatric oral maintenance or hypersecretory indications are not established. IV has a separate GERD/history-of-EE indication from age 3 months. Follow its distinct weight boundaries and 7-day limit.",
+        "Older adults had generally comparable short-term efficacy and safety in the oral trials; assess comorbidity, fracture risk, and persistent symptoms rather than making an age-only dosing change."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "1.1",
+            "8.4",
+            "8.5"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "1",
+            "2.1",
+            "8.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Organ function",
+      "assertions": [
+        "Renal impairment does not eliminate the possibility of PPI-associated acute nephritis. Hepatic impairment increases exposure; high oral doses above 40 mg/day are not studied in that group. Review prolonged or intensive dosing with the treating clinician."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "5.2",
+            "12.3 / Patients with Hepatic Impairment"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "5.4",
+            "12.3 / Patients with Hepatic Impairment"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Mechanism of action and pharmacodynamics",
+      "assertions": [
+        "Pantoprazole covalently binds gastric parietal-cell H+/K+-ATPase, inhibiting the final step in basal and stimulated acid secretion. The effect persists beyond 24 hours at studied doses despite a short circulating half-life."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "12.1",
+            "12.2"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "12.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Pharmacokinetics",
+      "assertions": [
+        "Absorption: Enteric coating delays tablet absorption until after gastric transit. Tablet peak concentration is about 2.5 hours; bioavailability about 77%.",
+        "Metabolism: Extensive hepatic metabolism, principally CYP2C19 with additional CYP3A4 pathways.",
+        "Elimination: Terminal plasma half-life about 1 hour in normal metabolizers; metabolites are eliminated mainly in urine. Hepatic impairment and poor CYP2C19 metabolism prolong exposure."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "12.3",
+            "12.5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Monitoring parameters",
+      "assertions": [
+        "Confirm the indication and planned review date; assess symptom response and relapse, with diagnostic follow-up for persistent or recurrent symptoms.",
+        "Assess magnesium before and periodically during prolonged therapy or with digoxin/diuretics when appropriate; assess magnesium and calcium with preexisting hypocalcemia risk.",
+        "Evaluate B12 deficiency when suggestive symptoms occur during long-term therapy; assess fracture risk and possible nephritis or persistent diarrhea.",
+        "Monitor INR with warfarin; coordinate methotrexate, transplant-drug, and diagnostic-testing plans. Follow IV site reactions and zinc risk during IV treatment."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "5",
+            "7",
+            "17"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "5.2",
+            "5.3",
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Patient counseling information",
+      "assertions": [
+        "Keep tablets and granules intact; use the formulation-specific meal and mixing instructions. Do not split a granule packet for a smaller dose.",
+        "Take the missed oral dose when remembered unless nearly time for the next; skip then, and do not take two doses together.",
+        "Report persistent watery diarrhea, reduced urine, severe or blistering rash, sun-sensitive rash or joint pain, or symptoms suggesting low magnesium such as palpitations or muscle spasms.",
+        "Seek emergency care for serious allergy or severe acute symptoms. Discuss the need for continued treatment and all prescription/OTC medicines at follow-up."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "2.2",
+            "17",
+            "Medication Guide"
+          ]
+        },
+        {
+          "source_id": "patient",
+          "sections": [
+            "How should this medicine be used?",
+            "Missed dose",
+            "Side effects"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Representative oral product · Protonix 40 mg tablet",
+      "assertions": [
+        "Generic tablets may differ in appearance. A photograph alone cannot safely identify a medicine.",
+        "Dosage form / strength: Delayed-release oral tablet · 40 mg",
+        "Label packager: Wyeth Pharmaceuticals LLC, a Pfizer subsidiary",
+        "Appearance: Yellow, oval, biconvex",
+        "Imprint: PROTONIX in brown ink on one side",
+        "Example package NDC: 0008-0841-81 · bottle of 90"
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "3",
+            "16",
+            "Product characteristics and package images"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Dosage forms and strengths",
+      "assertions": [
+        "Delayed-release tablets: 20 and 40 mg",
+        "Delayed-release granules: 40 mg per fixed-dose packet; enteric-coated pale yellowish to dark brownish granules",
+        "IV powder: 40 mg per single-dose vial; white to off-white freeze-dried powder for reconstitution and dilution"
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "3",
+            "16"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "3",
+            "16"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Storage and handling",
+      "assertions": [
+        "Oral products: 20–25°C (68–77°F), permitted excursions 15–30°C (59–86°F). Prepare granules only when ready to take the dose. Unopened IV vials: same temperature range and protect from light. IV reconstitution, dilution, compatibility, and storage times vary by administration method; use the exact professional label."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "16",
+            "2.2"
+          ]
+        },
+        {
+          "source_id": "iv",
+          "sections": [
+            "16",
+            "2.3–2.5"
+          ]
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    "Indication and approval/marketing status",
+    "Route and formulation differences",
+    "Age and population-specific doses and limits",
+    "Renal and hepatic considerations",
+    "Contraindications",
+    "Boxed warning status and safety risks",
+    "Interactions and management actions",
+    "Pregnancy and lactation evidence limits",
+    "Mechanism and pharmacokinetics",
+    "Monitoring and counseling",
+    "Exact representative product identity and storage"
+  ],
+  "exclusions": [
+    "Other amphetamine or PPI products and fixed-dose combinations",
+    "Unverified off-label dosing",
+    "Detailed overdose-management or hospital preparation protocols",
+    "Every manufacturer-specific NDC and imprint"
+  ],
+  "material_errors": [],
+  "material_gaps": [],
+  "blueprint_changed": false,
+  "validation": {
+    "schema_errors": [],
+    "rendered_page_qa": "Pending parent integration; source and schema review do not claim rendered-page QA."
+  },
+  "reconciliations": [
+    "Oral age5+ / pediatricEE8weeks and IV age3months+ / GERDhistoryEE7days remain distinct. Oral versus IV weight40kg boundary differs and is correctly retained.",
+    "40mg granulepacket not split for20mg; applesauce/applejuice and meal timing differ from tablet administration.",
+    "IV upperGIbleeding is not a labeled indication; no unverified off-label protocol is given.",
+    "Oral high doses240mg/day described only in hypersecretory context; doses>40mg/day are not studied in hepatic impairment.",
+    "Rilpivirine contraindication and labeled nelfinavir avoidance remain explicit; pantoprazole clopidogrel label differs from otherPPIs.",
+    "Label SPL effective dates differ from PI revision dates and both are recorded accurately.",
+    "Current LactMed June2026 lactation data distinguished from the older label summary without claiming established infant safety."
+  ],
+  "nonblocking_limitations": [
+    "Oral child<15kg no supplied regimen; not extrapolated.",
+    "Hepatic impairment high-dose oral treatment>40mg/day not studied.",
+    "IV preparation/compatibility method details require exact professional label; linked source provided.",
+    "Infant blood-level and outcome evidence remains limited."
+  ]
+}

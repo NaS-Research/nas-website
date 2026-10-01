@@ -1,0 +1,592 @@
+{
+  "slug": "bupropion",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "An aminoketone antidepressant also used in a separately labeled sustained-release smoking-cessation regimen. Oral hydrochloride formulations have different schedules and seizure-related limits.",
+  "sources": [
+    {
+      "id": "xl",
+      "title": "Wellbutrin XL · Prescribing information",
+      "publisher": "DailyMed / Bausch Health",
+      "note": "Clinical text revised November 2025. Full dosing and safety sections contain inconsistent 300/450 mg limits; higher-dose XL use requires source reconciliation. DailyMed update February 10, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a435da9d-f6e8-4ddc-897d-8cd2bf777b21"
+    },
+    {
+      "id": "sr",
+      "title": "Wellbutrin SR · Prescribing information",
+      "publisher": "DailyMed / GlaxoSmithKline",
+      "note": "Clinical text revised November 2025; depression dosing and SR-specific limits. DailyMed update November 5, 2025.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cbc8c074-f080-4489-a5ae-207b5fadeba3"
+    },
+    {
+      "id": "ir",
+      "title": "Bupropion hydrochloride · Immediate-release label",
+      "publisher": "DailyMed",
+      "note": "Clinical text revised October 2025; IR regimen, organ impairment and safety. DailyMed update October 22, 2025.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2a988f2-f8d3-4de0-b9f1-49d8c2e4180f"
+    },
+    {
+      "id": "quit",
+      "title": "Bupropion hydrochloride SR · Smoking cessation label",
+      "publisher": "DailyMed / ScieGen",
+      "note": "Clinical text revised October 2025. Public generic smoking-cessation label; used for the regimen associated with Zyban, without implying brand availability. DailyMed update October 1, 2025.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8069c521-c49a-4b6d-baa8-4b0be897d585"
+    },
+    {
+      "id": "forfivo",
+      "title": "Forfivo XL · 450 mg product label",
+      "publisher": "DailyMed / Almatica Pharma",
+      "note": "Clinical text revised December 2019; current DailyMed update April 29, 2024. Separate dosing eligibility and renal/hepatic restrictions; label presence does not guarantee local stock.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6917be04-3eff-be1f-99cc-1a20093a6ef0"
+    }
+  ],
+  "sourceEvidence": {
+    "xl": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a435da9d-f6e8-4ddc-897d-8cd2bf777b21",
+      "checked": "2026-10-01",
+      "revision": "Clinical text revised November 2025. Full dosing and safety sections contain inconsistent 300/450 mg limits; higher-dose XL use requires source reconciliation.",
+      "access": "Public full label/monograph, not paywalled",
+      "dateDistinction": "Clinical revision and DailyMed update date distinguished; API SPL version not obtained."
+    },
+    "sr": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cbc8c074-f080-4489-a5ae-207b5fadeba3",
+      "checked": "2026-10-01",
+      "revision": "Clinical text revised November 2025; depression dosing and SR-specific limits.",
+      "access": "Public full label/monograph, not paywalled",
+      "dateDistinction": "Clinical revision and DailyMed update date distinguished; API SPL version not obtained."
+    },
+    "ir": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2a988f2-f8d3-4de0-b9f1-49d8c2e4180f",
+      "checked": "2026-10-01",
+      "revision": "Clinical text revised October 2025; IR regimen, organ impairment and safety.",
+      "access": "Public full label/monograph, not paywalled",
+      "dateDistinction": "Clinical revision and DailyMed update date distinguished; API SPL version not obtained."
+    },
+    "quit": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8069c521-c49a-4b6d-baa8-4b0be897d585",
+      "checked": "2026-10-01",
+      "revision": "Clinical text revised October 2025. Public generic smoking-cessation label; used for the regimen associated with Zyban, without implying brand availability.",
+      "access": "Public full label/monograph, not paywalled",
+      "dateDistinction": "Clinical revision and DailyMed update date distinguished; API SPL version not obtained."
+    },
+    "forfivo": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6917be04-3eff-be1f-99cc-1a20093a6ef0",
+      "checked": "2026-10-01",
+      "clinicalRevision": "2019-12",
+      "dailyMedUpdate": "2024-04-29",
+      "read": "Full indication and dosage2.1–2.8, contraindications4, warnings5.3 and productstrength3; supporting role limited to the separate450mg regimen and restrictions."
+    },
+    "xl-fda": {
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/021515s049lbl.pdf",
+      "checked": "2026-10-01",
+      "revision": "FDA-approved Nov 5, 2025, NDA021515/S049, Reference ID5689923",
+      "sectionsRead": [
+        "2.2",
+        "5.3 full",
+        "Highlights seizure risk"
+      ],
+      "finding": "Same conflict: first5.3 paragraph300mg once daily; highlights/final5.3 paragraph450mg. FDA review did not resolve it."
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Labeled oral indications",
+      "sourceIds": [
+        "ir",
+        "sr",
+        "xl",
+        "quit"
+      ],
+      "sourceSections": [
+        "1"
+      ],
+      "claims": [
+        "IR and Wellbutrin SR treat major depressive disorder; Wellbutrin XL treats MDD and prevents seasonal major depressive episodes in diagnosed seasonal affective disorder. The selected smoking-cessation SR label aids quitting with counseling/support; it is not labeled for depression."
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Scope and regulatory distinctions",
+      "sourceIds": [
+        "xl",
+        "quit",
+        "forfivo"
+      ],
+      "sourceSections": [
+        "XL1 and17",
+        "Cessation1",
+        "Forfivo1–2"
+      ],
+      "claims": [
+        "Zyban is the associated smoking-cessation brand; dosing here is verified against the linked generic cessation label. Forfivo XL has its own adult MDD 450 mg regimen and eligibility rules. Other salts, combinations and off-label indications require their own references."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Adult depression regimens",
+      "sourceIds": [
+        "ir",
+        "sr",
+        "xl"
+      ],
+      "sourceSections": [
+        "2",
+        "5.3"
+      ],
+      "claims": [
+        [
+          "IR",
+          "Start 100 mg twice daily; after 3 days may use 100 mg three times daily. Separate doses by ≥6 hours. Maximum 450 mg/day in divided doses, ≤150 mg each; increases ≤100 mg/day within 3 days."
+        ],
+        [
+          "Wellbutrin SR",
+          "Start 150 mg each morning; after 3 days may increase to 150 mg twice daily, ≥8 hours apart. After several weeks without response, up to 200 mg twice daily; maximum 400 mg/day and 200 mg/dose."
+        ],
+        [
+          "Wellbutrin XL",
+          "Start 150 mg each morning; after 4 days may increase to 300 mg each morning. This reference supplies no escalation above 300 mg because the selected source has conflicting dose-limit statements."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "XL · Seasonal affective disorder",
+      "sourceIds": [
+        "xl"
+      ],
+      "sourceSections": [
+        "2",
+        "5.3"
+      ],
+      "claims": [
+        "Start 150 mg each morning in autumn before symptoms; after 7 days may increase to 300 mg. Continue through winter and individualize spring taper; reduce 300 mg to 150 mg before stopping. Above 300 mg was not assessed in SAD trials."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "SR · Smoking cessation regimen",
+      "sourceIds": [
+        "quit"
+      ],
+      "sourceSections": [
+        "2",
+        "5.3"
+      ],
+      "claims": [
+        "Start 150 mg daily for 3 days, then 150 mg twice daily ≥8 hours apart; maximum 300 mg/day. Start before the quit day, setting it within the first 2 weeks. Usually treat 7–12 weeks with support; if not abstinent by then, reassess and usually discontinue. Longer treatment is individualized."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Hepatic and renal impairment",
+      "sourceIds": [
+        "ir",
+        "sr",
+        "xl",
+        "quit"
+      ],
+      "sourceSections": [
+        "2",
+        "5.3"
+      ],
+      "claims": [
+        "Child-Pugh 7–15: IR maximum 75 mg/day; depression SR 100 mg/day or 150 mg every other day; XL and smoking-cessation SR 150 mg every other day. With mild hepatic impairment consider lower dose/frequency. The selected IR, depression SR, Wellbutrin XL and cessation SR labels advise considering reduced dose/frequency when GFR <90 mL/min and monitoring for accumulation."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and switching",
+      "sourceIds": [
+        "ir",
+        "sr",
+        "xl",
+        "quit"
+      ],
+      "sourceSections": [
+        "2",
+        "5.3"
+      ],
+      "claims": [
+        "Swallow tablets whole; do not crush, split or chew. Take XL in the morning; food is optional. Clinician-directed switching to XL uses the same total daily dose when possible within product limits. Allow ≥14 days between bupropion and a psychiatric MAOI in either direction; urgent linezolid/IV methylene blue needs a specialist interruption and monitoring plan."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "xl",
+        "sr",
+        "ir",
+        "quit"
+      ],
+      "sourceSections": [
+        "Boxed warning",
+        "4",
+        "5.1–5.8",
+        "6",
+        "10"
+      ],
+      "claims": [
+        "Seizure risk rises with dose and with head injury, CNS lesions, stroke, hypoxia, metabolic disturbance, alcohol/sedative misuse or other seizure-threshold-lowering medicines. Stop and do not restart after seizure. Monitor BP; screen for bipolar disorder. Mania, psychosis and serious behavioral changes may occur; stop and contact the clinician for concerning symptoms during a quit attempt. Narrow-angle glaucoma and severe allergic/skin reactions require urgent assessment."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "xl",
+        "ir",
+        "sr",
+        "quit"
+      ],
+      "sourceSections": [
+        "Boxed warning",
+        "4",
+        "5.1–5.8",
+        "6",
+        "10"
+      ],
+      "claims": [
+        "Seizure disorder; current/prior anorexia nervosa or bulimia; abrupt withdrawal from alcohol, benzodiazepines, barbiturates or antiepileptics; hypersensitivity; psychiatric MAOIs concurrently or within 14 days in either direction. Do not start while receiving linezolid or IV methylene blue. Do not combine bupropion-containing products."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning · Suicidal thoughts and behaviors",
+      "sourceIds": [
+        "xl",
+        "sr",
+        "ir",
+        "quit"
+      ],
+      "sourceSections": [
+        "Boxed warning",
+        "4",
+        "5.1–5.8",
+        "6",
+        "10"
+      ],
+      "claims": [
+        "Selected labels carry the antidepressant warning: short-term trials found increased suicidality in children, adolescents and young adults. Monitor all ages for worsening mood, suicidality or unusual behavior, especially early and around dose changes; caregivers should report changes promptly."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "sourceIds": [
+        "xl",
+        "ir"
+      ],
+      "sourceSections": [
+        "Boxed warning",
+        "4",
+        "5.1–5.8",
+        "6",
+        "10"
+      ],
+      "claims": [
+        "Dry mouth, nausea, insomnia, dizziness, agitation, anxiety, tremor, palpitations and sweating are reported; frequencies vary by formulation and study. Overdose can cause seizures, conduction/ rhythm disturbances, coma and death. Obtain urgent assessment and Poison Control guidance (U.S. 1-800-222-1222); no specific antidote exists."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "sourceIds": [
+        "xl",
+        "sr",
+        "ir",
+        "quit"
+      ],
+      "sourceSections": [
+        "7",
+        "2 MAOI/linezolid",
+        "Smoking-cessation2.5"
+      ],
+      "claims": [
+        "CYP2D6 substrates such as metoprolol, selected antidepressants/antipsychotics and flecainide may need dose reduction; tamoxifen activation and efficacy may be reduced, requiring specialist review.",
+        "CYP2B6 inhibitors (clopidogrel/ticlopidine) and inducers (including selected antivirals and anticonvulsants) alter exposure; adjust only to clinical response within formulation limits.",
+        "Other seizure-threshold-lowering medicines require extreme caution; avoid duplicate bupropion products.",
+        "Levodopa or amantadine can produce additive CNS toxicity. Minimize or avoid alcohol; heavy users need a supervised withdrawal plan.",
+        "Nicotine patches can increase hypertension risk; monitor BP with a combined quit regimen.",
+        "Digoxin concentrations may decrease; monitor with the treating clinician.",
+        "MAOIs, linezolid and IV methylene blue carry hypertensive-reaction risk.",
+        "Urine amphetamine immunoassays may be falsely positive, even after stopping; obtain a specific confirmatory test."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy",
+      "sourceIds": [
+        "xl",
+        "quit"
+      ],
+      "sourceSections": [
+        "8.1–8.7"
+      ],
+      "claims": [
+        "Human studies have not identified increased malformations overall; findings for specific cardiac defects are inconsistent and limited. Consider risks of untreated depression and treatment changes. Smoking-cessation decisions need an individualized benefit–risk discussion."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Lactation",
+      "sourceIds": [
+        "xl"
+      ],
+      "sourceSections": [
+        "8.1–8.7"
+      ],
+      "claims": [
+        "Bupropion and active metabolites enter milk; limited observations do not establish infant safety. Infant seizures have been reported with an unclear causal relationship. Weigh maternal need, infant health and breastfeeding benefits; monitor with the clinician."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric considerations",
+      "sourceIds": [
+        "xl"
+      ],
+      "sourceSections": [
+        "8.1–8.7"
+      ],
+      "claims": [
+        "Selected products have no established pediatric safety/effectiveness. Older adults may be more sensitive; assess renal function and concomitant medicines because active metabolites can accumulate."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action and pharmacodynamics",
+      "sourceIds": [
+        "xl"
+      ],
+      "sourceSections": [
+        "12.1",
+        "12.3"
+      ],
+      "claims": [
+        "The antidepressant mechanism is incompletely known; norepinephrine/dopamine reuptake inhibition is thought to contribute. Bupropion does not inhibit MAO or serotonin reuptake."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "sourceIds": [
+        "xl"
+      ],
+      "sourceSections": [
+        "12.1",
+        "12.3"
+      ],
+      "claims": [
+        [
+          "Absorption",
+          "Selected XL median time to peak approximately 5 hours; food does not materially change exposure."
+        ],
+        [
+          "Metabolism",
+          "Extensive hepatic metabolism; CYP2B6 produces active hydroxybupropion; additional active reduced metabolites form."
+        ],
+        [
+          "Half-life",
+          "Parent mean approximately 21 hours; active metabolites persist."
+        ],
+        [
+          "Disposition",
+          "Metabolites cleared renally; impairment can increase exposure."
+        ]
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring parameters",
+      "sourceIds": [
+        "xl",
+        "sr",
+        "ir",
+        "quit"
+      ],
+      "sourceSections": [
+        "5",
+        "17",
+        "Medication Guide"
+      ],
+      "claims": [
+        "Assess response, suicidality and unusual mood/behavior changes, particularly at initiation or titration.",
+        "Check BP before treatment and periodically, especially with nicotine replacement.",
+        "Review bipolar and seizure risks, substance use and interacting medicines.",
+        "Assess renal/hepatic function when relevant; monitor adverse effects suggesting high exposure."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "sourceIds": [
+        "xl",
+        "ir",
+        "quit"
+      ],
+      "sourceSections": [
+        "5",
+        "17",
+        "Medication Guide"
+      ],
+      "claims": [
+        "Verify IR/SR/XL, strength, indication and dose interval each refill. Never take duplicate bupropion products.",
+        "Skip a missed dose and resume the regular schedule; do not double. Swallow whole.",
+        "Seek immediate help for suicidality, seizure, severe allergy or acute eye pain/vision change.",
+        "XL’s intact-looking shell may appear in stool; this does not mean the dose was unabsorbed.",
+        "For quitting, agree on a quit date and keep counseling/support appointments."
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative oral product · Wellbutrin XL",
+      "sourceIds": [
+        "xl"
+      ],
+      "sourceSections": [
+        "3",
+        "16",
+        "Medication Guide"
+      ],
+      "claims": [
+        [
+          "Strength / appearance",
+          "150 or 300 mg; creamy-white to pale-yellow round tablets."
+        ],
+        [
+          "Imprint",
+          "Wellbutrin XL 150 or Wellbutrin XL 300."
+        ],
+        [
+          "Label distributor",
+          "Bausch Health US, LLC."
+        ],
+        [
+          "Example NDC",
+          "0187-0730-30 · 150 mg, 30 tablets."
+        ],
+        [
+          "U.S. status",
+          "Prescription medicine."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "ir",
+        "sr",
+        "xl",
+        "quit",
+        "forfivo"
+      ],
+      "sourceSections": [
+        "Selected labels3",
+        "Forfivo3"
+      ],
+      "claims": [
+        [
+          "IR hydrochloride",
+          "75 and 100 mg in the selected label."
+        ],
+        [
+          "Depression SR hydrochloride",
+          "100, 150 and 200 mg Wellbutrin SR."
+        ],
+        [
+          "XL hydrochloride",
+          "150 and 300 mg Wellbutrin XL."
+        ],
+        [
+          "Smoking-cessation SR",
+          "150 mg in the selected generic cessation label."
+        ],
+        [
+          "Other products",
+          "Forfivo XL: 450 mg hydrochloride with separate eligibility; hydrobromide and combinations are outside this reference."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "xl"
+      ],
+      "sourceSections": [
+        "3",
+        "16",
+        "Medication Guide"
+      ],
+      "claims": [
+        "Representative Wellbutrin XL: 25°C, permitted excursions 15–30°C. Keep medicines secured from children and use the exact product’s storage directions and Medication Guide."
+      ]
+    },
+    {
+      "section": "hero/essential",
+      "card": "Clinical scope and essential safety",
+      "sourceIds": [
+        "xl",
+        "ir",
+        "sr",
+        "quit"
+      ],
+      "sourceSections": [
+        "1–5 / Medication Guide"
+      ],
+      "claims": [
+        "An aminoketone antidepressant also used in a separately labeled sustained-release smoking-cessation regimen. Oral hydrochloride formulations have different schedules and seizure-related limits.",
+        "Never combine bupropion products or double a missed dose. Report new suicidality or major behavioral changes promptly. A seizure requires stopping treatment and no restart."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Forfivo XL · Separate 450 mg product",
+      "claims": [
+        "For adult MDD, one 450 mg tablet once daily with or without food. Do not initiate bupropion treatment with this product. It may replace another formulation after at least two weeks at 300 mg/day when 450 mg/day is required, or replace an established 450 mg/day regimen. Do not combine with other bupropion. It is not recommended with renal or hepatic impairment because no lower strength is available; use another formulation for tapering. These directions do not resolve the selected Wellbutrin XL label’s inconsistent ceiling."
+      ],
+      "sourceIds": [
+        "forfivo"
+      ],
+      "sourceSections": [
+        "1",
+        "2.1–2.6",
+        "4"
+      ]
+    }
+  ],
+  "exclusions": [
+    "Hydrobromide salts, combination products and off-label dosing; higher-dose Wellbutrin XL escalation unresolved."
+  ],
+  "gaps": [
+    {
+      "severity": "scope_limitation",
+      "topic": "XL dose ceiling",
+      "finding": "Selected current WellbutrinXL5.3 first paragraph says300mg once daily, whereas highlights and final5.3 paragraph say450mg. Its dosing2.2 describes target300mg. Separate ForfivoXL450mg labeling verified; its regimen/eligibility does not establish the ambiguous WellbutrinXL escalation. Latest FDA-approved S049 label(Nov5,2025;ReferenceID5689923) directly confirms the same conflicting statements.",
+      "action": "Higher-dose Wellbutrin XL escalation remains excluded pending regulatory/manufacturer clarification. Independent reviewer verified the published 150→300 mg XL regimen and separately bounded Forfivo XL 450 mg regimen are accurate; no universal XL maximum is inferred.",
+      "material": false
+    }
+  ],
+  "validation": {
+    "schema": "Passed validateMonograph with zero errors, 2026-10-01.",
+    "renderedPage": "Pending parent integration QA"
+  },
+  "supplementalEvidence": [
+    {
+      "url": "https://www.wellbutrinxl.com/siteassets/pdf/wellbutrinxl-pi.pdf",
+      "clinicalRevision": "2024-03",
+      "purpose": "Manufacturer PI cross-check reproduces the300/450mg discrepancy; older than currentDailyMed clinical revision."
+    }
+  ],
+  "monographSha256": "4bd878bb83817180b1918c6b10f9a8d51fcfdf29ce02e881f28c61bdcef12b5b",
+  "materialErrors": [],
+  "reviewClosure": {
+    "date": "2026-10-01",
+    "basis": "Parent relayed independent reviewer confirmation of accuracy within bounded published regimen. Regulatory label conflict retained as an explicit non-actionable scope limitation.",
+    "clinicalJsChanged": false,
+    "monographSha256": "4bd878bb83817180b1918c6b10f9a8d51fcfdf29ce02e881f28c61bdcef12b5b"
+  }
+}

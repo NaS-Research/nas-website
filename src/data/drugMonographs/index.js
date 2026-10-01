@@ -9,6 +9,16 @@ import { losartan } from "./losartan.js";
 import { metoprolol } from "./metoprolol.js";
 import { rosuvastatin } from "./rosuvastatin.js";
 import { omeprazole } from "./omeprazole.js";
+import { gabapentin } from "./gabapentin.js";
+import { sertraline } from "./sertraline.js";
+import { escitalopram } from "./escitalopram.js";
+import { semaglutide } from "./semaglutide.js";
+import { amphetamineDextroamphetamine } from "./amphetamine-dextroamphetamine.js";
+import { pantoprazole } from "./pantoprazole.js";
+import { bupropion } from "./bupropion.js";
+import { hydrochlorothiazide } from "./hydrochlorothiazide.js";
+import { fluoxetine } from "./fluoxetine.js";
+import { trazodone } from "./trazodone.js";
 import { montelukast } from "./montelukast.js";
 import { amoxicillin } from "./amoxicillin.js";
 import { fluticasone } from "./fluticasone.js";
@@ -61,6 +71,16 @@ export const reviewedDrugMonographs = {
   "metoprolol": metoprolol,
   "rosuvastatin": rosuvastatin,
   "omeprazole": omeprazole,
+  "gabapentin": gabapentin,
+  "sertraline": sertraline,
+  "escitalopram": escitalopram,
+  "semaglutide": semaglutide,
+  "amphetamine-dextroamphetamine": amphetamineDextroamphetamine,
+  "pantoprazole": pantoprazole,
+  "bupropion": bupropion,
+  "hydrochlorothiazide": hydrochlorothiazide,
+  "fluoxetine": fluoxetine,
+  "trazodone": trazodone,
   "montelukast": montelukast,
   "amoxicillin": amoxicillin,
   "fluticasone": fluticasone,

@@ -1,0 +1,403 @@
+{
+  "reviewDate": "2026-10-01",
+  "scope": "Independent targeted primary-source safety review of listed critical assertions; not exhaustive second transcription, pharmacist signoff, or rendered-page QA.",
+  "status": "All ten profiles independently reviewed for selected critical safety assertions; unresolved source access/scope limitations explicit",
+  "profiles": [
+    {
+      "drug": "gabapentin",
+      "fileSha256": "272ab33bd1512849db330fc3dab104a68c3bab7550e112b1e8426e60b7fa5768",
+      "result": "No material safety error identified in selected assertions checked.",
+      "checks": [
+        {
+          "assertion": "IR indication and age distinctions;300mg initial PHN escalation/1800mg benefit limit; pediatric10–15mg/kg/day start and age-specific25–40mg/kg/day maintenance; renal table and4hour dialysis supplemental-dose scope; taper≥1week; respiratory/DRESS/suicidality warnings checked.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=97935fd9-1d4a-43b6-a5d9-de994591187b",
+          "sourceSection": "2.1–2.5,4–5,7",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Separate evening-meal300→1800mg titration;30–60 renal600–1800mg after300mg start; below30/dialysis avoidance; no substitution agrees.",
+          "sourceId": "gralise",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=466273b1-c9fc-3930-c94b-aa11394d5140",
+          "sourceSection": "2.1–2.2",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Separate prodrug RLS600mg5PM/PHN600morning3days thenBID; food/intact tablet; indication-dependent dialysis scope agrees.",
+          "sourceId": "horizant",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c486fc7-c8c4-4c6c-b30c-366dabaeaadd",
+          "sourceSection": "2.1–2.4,8.6",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "FDA respiratory-risk groups and low-start/monitoring advice agree.",
+          "sourceId": "fda",
+          "sourceUrl": "https://www.fda.gov/safety/medical-product-safety-information/neurontin-gralise-horizant-gabapentin-and-lyrica-lyrica-cr-pregabalin-drug-safety-communication",
+          "sourceSection": "2019communication",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "productCards": 3
+      }
+    },
+    {
+      "drug": "sertraline",
+      "fileSha256": "2d6c2e9f2273e3ced5de92f67e3d0a86a78892d16f65ad6bc239331e4d0c5767",
+      "result": "No material safety error identified in selected assertions checked.",
+      "checks": [
+        {
+          "assertion": "Adult/pediatricOCD25/50mg starts and200mg ceiling;PMDD150continuous/100intermittent; halfdose mildhepatic/notrecommended moderate-severe; renalnoadjust;14dayMAOI separation; disulfiram concentrate-only;20mg/mL dilution/12%alcohol pregnancy avoidance checked.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fda754f6-d0f3-4dce-a17a-927d64f912f7",
+          "sourceSection": "2.1–2.7,4,7,8.1,8.6–8.7",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "productCards": 3
+      }
+    },
+    {
+      "drug": "amphetamine-dextroamphetamine",
+      "fileSha256": "5b1248bedc22e5917ab09e22a276c530f1f6f4af549e6f17ff5ff4df9ced3d59",
+      "result": "No material safety error identified in selected assertions checked.",
+      "checks": [
+        {
+          "assertion": "Age3–5IR2.5mg start/6+5mg1–2daily; rare>40mgADHD distinction from narcolepsy5–60mg; age12 overlap flagged; no fabricated adult IR starting schedule;MAOI14day exclusion and cardiac warnings checked.",
+          "sourceId": "ir",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f22635fe-821d-4cde-aa12-419f8b53db81",
+          "sourceSection": "Dosage and administration, contraindications,warnings",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Age6–12XR10mgstart30mgceiling/adolescents10→20/adult20; severeGFR15–<30 adult15mg/pediatric5mg6–12max20;ESRDnotrecommended;IR→XRtotaldaily conversion/wholebeads agree.",
+          "sourceId": "xr",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aff45863-ffe1-4d4f-8acf-c7081512a6c0",
+          "sourceSection": "2.1–2.6,4–5,7,8.6",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Manufacturer breastfeeding advice contrasted with LactMed therapeutic-dose monitoring and active-misuse advice agrees.",
+          "sourceId": "lactation",
+          "sourceUrl": "https://www.ncbi.nlm.nih.gov/sites/books/NBK501307/",
+          "sourceSection": "Summary",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "productCards": 3
+      }
+    },
+    {
+      "drug": "pantoprazole",
+      "fileSha256": "ef42a9fa8489580891bf35a92e6eade311038185e86fef98d3dff64b3dd3b488",
+      "result": "No material safety error identified in selected assertions checked.",
+      "checks": [
+        {
+          "assertion": "Adult40mgdailyEE8weeks/maintenance and40BIDhypersecretory;age5+15–<40kg20mg/≥40kg40mg; fixed40packet/no splitting;apple-only preparation16Frenchminimum;rilpivirinecontraindication/clopidogrelnoadjust agrees.",
+          "sourceId": "oral",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=08098cb2-c048-4640-f387-6beec4a38936",
+          "sourceSection": "2.1–2.2,4,7",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Adult40mgGERD10day/80mgq12hypersecretory;2minuteinjection/15minuteinfusion;age3months+ weight-based7day infusion table including≤15kg and≤40kg boundaries;EDTAzinc andmidazolam compatibility distinction checked.",
+          "sourceId": "iv",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51e4144a-489e-436c-609a-39305f8f56ba",
+          "sourceSection": "2.1–2.2,4,5.14,7",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Lowmilk40mg exposure expectation and absentinfantlevel/outcome limitation agree.",
+          "sourceId": "lactation",
+          "sourceUrl": "https://www.ncbi.nlm.nih.gov/sites/books/NBK501280/",
+          "sourceSection": "Summary/Infant levels",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "productCards": 3
+      }
+    },
+    {
+      "drug": "fluoxetine",
+      "fileSha256": "a0bb245afd8172b34b333e24b7e4ce78a30340f137c0a359e8e1b126c7e6ffe3",
+      "result": "No material safety error identified in supplied selected assertions; source limitations separately recorded.",
+      "checks": [
+        {
+          "assertion": "Adult20mgMDD/OCD80mgmax;bulimia60mg/panic10→20; pediatric MDD8+/OCD7+ distinct10→20 timelines;olanzapine combination starts;14dayMAOIbefore/5weekafter andthioridazine5week rule;hepaticlower/renalnotroutinelyreduced agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c88f33ed-6dfb-4c5e-bc01-d8e36dd97299",
+          "sourceSection": "2.1–2.10,4,7,8.6,12.3",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-with-recorded-scope"
+        },
+        {
+          "assertion": "Adult90mg once-weekly starts7daysafterlast20mgdaily;not90mgdaily;maintenance-equivalence uncertainty agrees.",
+          "sourceId": "weekly",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=887fc670-db67-4cfe-967b-46b38375dae5",
+          "sourceSection": "2.1",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-with-recorded-scope"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "productCards": 3
+      }
+    },
+    {
+      "drug": "trazodone",
+      "fileSha256": "918dc30043755c2ee03f19bd6175e0f919f5a1656477bacf2f56fea96bbc0ef1",
+      "result": "No material safety error identified in supplied selected assertions; source limitations separately recorded.",
+      "checks": [
+        {
+          "assertion": "150mgdividedstart/50mgevery3–4days;400mgoutpatient/600inpatient;wholeoractualscorehalving/food;14dayMAOIbothdirections;QT/CYP3A4avoidance;>4hourpriapismemergency threshold;organimpairmentcaution/noinventednumeric adjustment agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a57da4f8-151d-4a74-8710-6158d1da3852",
+          "sourceSection": "2.1–2.6,4,5.3,5.6,7,8.6–8.7",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-with-recorded-scope"
+        },
+        {
+          "assertion": "AASM2017 weak suggestion against adult sleep-onset/maintenance insomnia use verified;fulltextaccess notclaimed.",
+          "sourceId": "sleep",
+          "sourceUrl": "https://scholars.duke.edu/publication/1162810",
+          "sourceSection": "Public primary guideline abstract",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-with-recorded-scope"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "productCards": 3
+      }
+    },
+    {
+      "drug": "bupropion",
+      "fileSha256": "4bd878bb83817180b1918c6b10f9a8d51fcfdf29ce02e881f28c61bdcef12b5b",
+      "result": "No material safety error identified in supplied selected assertions; source limitations separately recorded.",
+      "checks": [
+        {
+          "assertion": "100mgBID→TID≥6hours;450mgdaily/150mgdose;75mgdailyChildPugh7–15;GFR<90 reductionconsideration andseizure/eatingdisorder/withdrawalcontraindications agree.",
+          "sourceId": "ir",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2a988f2-f8d3-4de0-b9f1-49d8c2e4180f",
+          "sourceSection": "2.1–2.3,4,5,7",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-with-recorded-scope"
+        },
+        {
+          "assertion": "150mgdaily3days→BID≥8hours;400mgdaily/200mgdose;hepatic100mgdailyor150everyotherday agree.",
+          "sourceId": "sr",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cbc8c074-f080-4489-a5ae-207b5fadeba3",
+          "sourceSection": "2.1–2.3",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-with-recorded-scope"
+        },
+        {
+          "assertion": "SmokingcessationSR150mg3days→BID300max;quitdayfirst2weeks/treat7–12weeks;hepatic150everyotherday agree.",
+          "sourceId": "quit",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8069c521-c49a-4b6d-baa8-4b0be897d585",
+          "sourceSection": "2.1–2.7",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-with-recorded-scope"
+        },
+        {
+          "assertion": "XL150→300mgday4;SADday7increase;hepatic150everyotherday. Source contains real300/450mgconflict;authoredlimitedregimenflagshigherdose review.",
+          "sourceId": "xl",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a435da9d-f6e8-4ddc-897d-8cd2bf777b21",
+          "sourceSection": "2.2–2.7,5.3",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-with-recorded-scope"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "productCards": 3
+      }
+    },
+    {
+      "drug": "hydrochlorothiazide",
+      "fileSha256": "df32d3f95d3809cac7bdccc893cda4516e27adebb46440ca10553849f41ed43d",
+      "result": "No material safety error identified in supplied selected assertions; source limitations separately recorded.",
+      "checks": [
+        {
+          "assertion": "AdultHTN25→50/edema25–100; child1–2mg/kg/day37.5/100mgceilings andinfant3mg/kg;anuria/sulfonamiderestrictions;renalhepaticcautions/lithiumavoidance/electrolyte andocular warnings agree.",
+          "sourceId": "tablet",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a85f69f5-ba97-478d-e053-2a95a90a0a97",
+          "sourceSection": "Dosage and administration; contraindications,warnings,interactions",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-with-recorded-scope"
+        },
+        {
+          "assertion": "12.5mgadultHTNstart/>50notrecommended;childsafetynotestablished product distinction agree.",
+          "sourceId": "capsule",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0fc94bc2-fa38-439a-a609-1b4130cdacb1",
+          "sourceSection": "Dosage and administration; pediatric use",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-with-recorded-scope"
+        },
+        {
+          "assertion": "≤50mgdaily acceptable/largediuresismayreducesupply agrees.",
+          "sourceId": "lactation",
+          "sourceUrl": "https://www.ncbi.nlm.nih.gov/sites/books/NBK500965/",
+          "sourceSection": "Summary",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-with-recorded-scope"
+        },
+        {
+          "assertion": "ObservationalcumulativeNMSC/SCCassociation;sunprotection/screening scope agrees.",
+          "sourceId": "sentinel",
+          "sourceUrl": "https://www.sentinelinitiative.org/news-events/fda-safety-communications-labeling-changes/fda-labeling-change-hydrochlorothiazide-and",
+          "sourceSection": "Labeling change summary",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees-with-recorded-scope"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "productCards": 3
+      }
+    },
+    {
+      "drug": "escitalopram",
+      "fileSha256": "a9c2fbe31db9aa2398cbd52bd07ef47c6fa0b03f42d38e198e8999eb3ae703ad",
+      "result": "No material safety error identified in selected critical assertions checked.",
+      "checks": [
+        {
+          "assertion": "MDD age12+/GADage7+10mg start20mg ceiling; pediatric titration3/2weeks and adult1week; older/hepatic10mg recommendation; CrCl<20 undetermined;14day MAOI separation/pimozide exclusions; unmarketed branded1mg/mL solution distinction checked.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13bb8267-1cab-43e5-acae-55a4d957630a",
+          "sourceSection": "2.1–2.5,4,7,8.6–8.7",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "UK-specificQT contraindications and ECG/electrolyte precautions accurately distinguished from U.S. formal contraindications.",
+          "sourceId": "qt",
+          "sourceUrl": "https://www.gov.uk/drug-safety-update/citalopram-and-escitalopram-qt-interval-prolongation",
+          "sourceSection": "Advice for healthcare professionals",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Lowmilkexposure≤20mg;neededtreatmentnotreasonalone to stop nursing;infantmonitoring agrees.",
+          "sourceId": "milk",
+          "sourceUrl": "https://www.ncbi.nlm.nih.gov/sites/books/NBK501275/",
+          "sourceSection": "Summary",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "productCards": 3
+      }
+    },
+    {
+      "drug": "semaglutide",
+      "fileSha256": "a2978ccef35ac7b706a9685f1567f319b2cfd520c55ae73e2da1073b5367dbc9",
+      "result": "No material safety error identified in selected critical assertions checked.",
+      "checks": [
+        {
+          "assertion": "Weekly0.25mg4weeks→0.5→1→2mg with≥4weekssteps;CKD1mg maintenance;5day missed dose/>48hour daychange;MTC/MEN2 contraindications and pancreatic/retinal/renal cautions checked.",
+          "sourceId": "oz",
+          "sourceUrl": "https://www.novo-pi.com/ozempic.pdf",
+          "sourceSection": "1,2.1–2.2,4,5",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Rybelsus3/7/14 versus Ozempic1.5/4/9 separate30daysteps;starter ineffectiveglycemiccontrol;notmg-equivalent;empty stomach≤4ozwait30min;SNAC breastfeeding restriction agree.",
+          "sourceId": "oral",
+          "sourceUrl": "https://www.novo-pi.com/ozempictablets.pdf",
+          "sourceSection": "2.1–2.4,4,7,8.2",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "CurrentJune2026 adultweight7.2mg after≥4weekstolerated2.4;CV/pediatric1.7/2.4;MASH2.4withtolerance1.7;oral1.5/4/9/25mg30daysteps;two-missed-dose lowerrestart;switch timing/route-specific lactation/pregnancy agree.",
+          "sourceId": "wg",
+          "sourceUrl": "https://www.novo-pi.com/wegovy.pdf",
+          "sourceSection": "1,2.1–2.5,4,5,7,8",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Superseded suicidalitywarning removed;FDAnoincreasedrisk conclusion accurately described.",
+          "sourceId": "mood",
+          "sourceUrl": "https://www.fda.gov/drugs/drug-safety-communications/fda-requests-removal-suicidal-behavior-and-ideation-warning-glucagon-peptide-1-receptor-agonist-glp",
+          "sourceSection": "FDA2026communication",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "VeryrareNAION andconfirmedcase cessation correctly qualified asEuropeanadvice.",
+          "sourceId": "eye",
+          "sourceUrl": "https://www.ema.europa.eu/en/news/prac-concludes-eye-condition-naion-very-rare-side-effect-semaglutide-medicines-ozempic-rybelsus-wegovy",
+          "sourceSection": "EMA2025communication",
+          "access": "direct-public-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "productCards": 3
+      }
+    }
+  ],
+  "issues": [],
+  "limitations": [
+    {
+      "drug": "gabapentin",
+      "source": "nice",
+      "sourceUrl": "https://www.nice.org.uk/guidance/cg173/chapter/recommendations",
+      "access": "Web403; not independently fully retrieved in this review.",
+      "status": "independent-access-gap"
+    },
+    {
+      "drug": "bupropion",
+      "source": "xl",
+      "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a435da9d-f6e8-4ddc-897d-8cd2bf777b21",
+      "sourceSection": "5.3firstparagraph versus highlights/later5.3",
+      "status": "higher-dose-source-conflict-explicitly-scoped-out",
+      "observation": "First5.3paragraph≤300mg;highlight/laterparagraph≤450mg. Authored profile150→300 only andflagsreview for higherdose; no wrongsuppliedregimen found."
+    }
+  ],
+  "pending": [],
+  "productionFilesEdited": false,
+  "sourceAccessFollowup": {
+    "niceCG173": {
+      "path": "/tmp/nas-nice-cg173.html",
+      "sha256": "2f8352167a005f5e1679c7a3c432f16fb820cc7d1dbd5621eb3ed6fd884d7c06",
+      "access": "Retained full official NICE HTML independently inspected; direct web access previously blocked.",
+      "recommendation": "1.1.8",
+      "verified": "Initial choice amitriptyline, duloxetine, gabapentin or pregabalin for neuropathic pain except trigeminal neuralgia."
+    }
+  },
+  "bupropionReleaseGateReassessment": {
+    "fileSha256": "4bd878bb83817180b1918c6b10f9a8d51fcfdf29ce02e881f28c61bdcef12b5b",
+    "classification": "Accurately scoped source gap outside supplied Wellbutrin XL escalation regimen; no identified unsupported unsafe dose assertion in current published regimen.",
+    "evidence": [
+      "Fresh direct selected Wellbutrin XL §2.2 supports150 mg each morning and300 after4days. Profile provides no above300 escalation and makes no300 universal maximum claim.",
+      "Fresh direct Forfivo §2.2 supports450 replacement after≥2weeks300 and clinical need450,or established450; profile preserves no initiation,no combination,no renal/hepatic use,taper alternative."
+    ],
+    "remainingGap": "Conflicting higher-dose Wellbutrin XL ceiling in source remains unresolved. No regulatory reconciliation or general XL maximum inferred."
+  }
+}

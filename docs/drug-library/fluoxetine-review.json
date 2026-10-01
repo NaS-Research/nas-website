@@ -1,0 +1,555 @@
+{
+  "drug": "fluoxetine",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Focused U.S. daily oral fluoxetine with adult weekly MDD continuation distinctions and labeled olanzapine combination starting-dose scope.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Prozac · Daily fluoxetine capsules",
+      "note": "Full label and Medication Guide; SPL version 59, effective January 8, 2026.",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c88f33ed-6dfb-4c5e-bc01-d8e36dd97299",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "59",
+      "effective_date": "20260108",
+      "xml_sha256": "72ad5c1c2f9a4564a85f3cc2d60e7ababfb6722695d84eb4044c5162013aad6f",
+      "retrieved_xml": "/tmp/nas-drug-sources/fluoxetine.xml"
+    },
+    {
+      "id": "weekly",
+      "title": "Fluoxetine · 90 mg delayed-release capsules",
+      "note": "Full label; SPL version 21, effective June 22, 2026. Weekly continuation after response to daily therapy.",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=887fc670-db67-4cfe-967b-46b38375dae5",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "21",
+      "effective_date": "20260622",
+      "xml_sha256": "6dee7678d4d11ccac0fd8e67a0e4551a44582255ea3a7176c067fd4b896d4b88",
+      "retrieved_xml": "/tmp/nas-drug-sources/fluoxetine-weekly.xml"
+    },
+    {
+      "id": "poison",
+      "title": "Poison Control · Emergency help",
+      "note": "Public U.S. poison-center number and emergency escalation, checked October 1, 2026.",
+      "publisher": "National Capital Poison Center",
+      "url": "https://www.poison.org/",
+      "checked": "2026-10-01",
+      "access": "public"
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Labeled oral indications",
+      "assertions": {
+        "paragraphs": [
+          "Daily Prozac: major depressive disorder (MDD), OCD, moderate-to-severe bulimia nervosa, and panic disorder with or without agoraphobia. Pediatric efficacy is established for MDD at ages 8–18 and OCD at ages 7–17; other indications are not generalized to children."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "1",
+          "8.4"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Weekly maintenance and combination therapy",
+      "assertions": {
+        "paragraphs": [
+          "The 90 mg delayed-release product is a distinct once-weekly MDD continuation regimen after response to daily therapy.",
+          "With olanzapine, fluoxetine is labeled for acute bipolar I depressive episodes (adults and ages 10–17) and adult treatment-resistant depression after two adequate antidepressant trials in the current episode. Monotherapy is not indicated for these combination uses; consult both component/combination labels."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "1",
+          "2.5",
+          "2.6",
+          "8.4"
+        ],
+        "weekly": [
+          "2.1",
+          "14.1"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Daily oral capsules · Adults",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Doses above 20 mg/day may be given once in the morning or in morning/noon doses. Food is optional. Full MDD benefit may take ≥4 weeks; reassess maintenance need."
+        ],
+        "table": {
+          "headers": [
+            "Indication",
+            "Prozac label regimen"
+          ],
+          "rows": [
+            [
+              "MDD",
+              "Start 20 mg each morning; consider increases after several weeks. Maximum 80 mg/day."
+            ],
+            [
+              "OCD",
+              "Start 20 mg each morning; usual range 20–60 mg/day. Maximum 80 mg/day. Full effect may take ≥5 weeks."
+            ],
+            [
+              "Bulimia nervosa",
+              "60 mg each morning; gradual initial titration may be appropriate. >60 mg/day not systematically studied."
+            ],
+            [
+              "Panic disorder",
+              "10 mg/day for 1 week, then 20 mg/day; consider later increases if needed. >60 mg/day not systematically evaluated."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "label": [
+          "2.1–2.4",
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric daily therapy",
+      "assertions": {
+        "paragraphs": [
+          "MDD ages 8–18: start 10 or 20 mg/day; if starting at 10 mg, increase to 20 mg after 1 week. Lower-weight children may use 10 mg as both starting and target dose, with a later increase after several weeks if needed. Supporting trials used 10–20 mg/day.",
+          "OCD ages 7–17: start 10 mg/day. Higher-weight children/adolescents may increase to 20 mg after 2 weeks; usual range 20–60 mg/day with later increases after several weeks. Lower-weight children: consider later increases; usual range 20–30 mg/day, with very limited experience above 20 mg and none above 60 mg."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "2.1",
+          "2.2",
+          "8.4"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Once-weekly delayed-release capsules · 90 mg",
+      "assertions": {
+        "paragraphs": [
+          "For adult MDD continuation after satisfactory daily treatment response, start the once-weekly capsule 7 days after the last daily 20 mg dose. Weekly and daily regimens are not interchangeable pill-for-pill; equivalence in maintaining response has not been established. If response is not maintained, the clinician may return to daily therapy. This is not a 90 mg daily regimen."
+        ]
+      },
+      "source_sections": {
+        "weekly": [
+          "2.1",
+          "3",
+          "12.3",
+          "14.1"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Olanzapine combination and organ-function dosing",
+      "assertions": {
+        "paragraphs": [
+          "Bipolar I depression: adult initial oral combination generally 5 mg olanzapine plus 20 mg fluoxetine each evening; ages 10–17 generally 2.5 mg plus 20 mg. Adult treatment-resistant depression generally starts 5 mg plus 20 mg each evening. These are component regimens; fixed-dose Symbyax correspondence and titration require its separate label.",
+          "Use a lower or less frequent dose with hepatic impairment; consider the same in older adults or medically complex patients. A renal reduction is not routinely necessary in the cited label, including its small dialysis study. Individualize rather than assuming identical exposure in every patient."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "2.5–2.7",
+          "8.5",
+          "8.6",
+          "12.4"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Switching, interruption, and MAOIs",
+      "assertions": {
+        "paragraphs": [
+          "Wait at least 14 days after stopping a psychiatric MAOI before starting fluoxetine, and at least 5 weeks after stopping fluoxetine before starting a psychiatric MAOI. Do not start fluoxetine during linezolid or IV methylene blue treatment. Urgent use of these drugs requires a prescriber-managed interruption and monitoring protocol from section 2.10.",
+          "Taper when possible and monitor discontinuation symptoms; long elimination does not eliminate withdrawal risk."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "2.8–2.10",
+          "5.15"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Monitor worsening mood, suicidal thoughts, unusual behavior, and mania, especially early and with dose changes. Screen for bipolar disorder before antidepressant treatment.",
+          "Serotonin syndrome may involve agitation, fever, sweating, tremor/rigidity, overactive reflexes, diarrhea or seizures. Stop implicated agents and obtain urgent care when suspected.",
+          "QT prolongation and torsades have been reported. Review cardiac disease, electrolyte depletion, interacting drugs, and increased-exposure conditions; consider ECG monitoring in at-risk patients.",
+          "Use caution with seizures. Rash or unexplained allergic symptoms may require stopping therapy; severe swelling or breathing difficulty is urgent.",
+          "Hyponatremia can cause confusion, weakness, unsteadiness or seizures, particularly with older age, diuretics or volume depletion. Bleeding risk rises with anticoagulants/antiplatelets/NSAIDs.",
+          "Monitor appetite, weight and pediatric growth, anxiety/insomnia, sexual dysfunction, and glucose control in diabetes. Narrow-angle eyes may be vulnerable to an acute angle-closure attack."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "5.1–5.17"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Psychiatric MAOIs during treatment or within 5 weeks after fluoxetine; fluoxetine within 14 days after an MAOI. Initiation with linezolid or IV methylene blue is contraindicated. Pimozide and thioridazine are contraindicated because of QT and metabolic interactions. Thioridazine must also be avoided for at least 5 weeks after fluoxetine. Olanzapine combination therapy requires the separate combination contraindications."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "4.1",
+          "4.2",
+          "7.7"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning · Suicidal thoughts and behaviors",
+      "assertions": {
+        "paragraphs": [
+          "Short-term antidepressant studies found increased suicidal thoughts/behaviors in children, adolescents, and young adults; all ages require monitoring for clinical worsening and emerging suicidality. Families/caregivers should promptly communicate concerning changes. Pediatric approval depends on the condition and age."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "Boxed warning",
+          "5.1",
+          "8.4"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Reported common trial effects include nausea, diarrhea, dry mouth, insomnia, anxiety/nervousness, somnolence, dizziness, tremor, sweating, decreased appetite, and sexual dysfunction. Serious effects include the syndromes described above; trial rates vary by indication and do not establish an individual risk.",
+          "Overdose can cause delayed seizures, coma, QT/QRS changes, arrhythmia, and serotonin toxicity. Obtain poison-center or emergency guidance promptly; do not wait for symptoms. U.S. Poison Control: 1-800-222-1222; call 911 for collapse, seizure, impaired breathing, or inability to awaken."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "6.1",
+          "6.2",
+          "10"
+        ],
+        "poison": [
+          "Emergency help"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "ECT has rare reports of prolonged seizures with fluoxetine; coordinate with the treating team. Consult the complete interaction sections for other medicines and protein-binding effects."
+        ],
+        "table": {
+          "headers": [
+            "Combination",
+            "Clinical action"
+          ],
+          "rows": [
+            [
+              "MAOIs, linezolid, IV methylene blue",
+              "Contraindicated combinations; use exact switching intervals and urgent-treatment protocols."
+            ],
+            [
+              "Other serotonergic drugs, including tramadol, lithium, triptans, buspirone, St. John’s wort",
+              "Review necessity and monitor for serotonin toxicity, particularly during initiation and increases."
+            ],
+            [
+              "Pimozide / thioridazine; other QT-prolonging medicines",
+              "Do not combine with pimozide/thioridazine; avoid other QT combinations when possible and assess risk."
+            ],
+            [
+              "CYP2D6 substrates: TCAs, flecainide, propafenone, selected antipsychotics",
+              "May need lower doses and concentration/clinical monitoring, including after discontinuation."
+            ],
+            [
+              "Aspirin, NSAIDs, anticoagulants",
+              "Bleeding risk; monitor warfarin when starting/stopping and review unusual bleeding."
+            ],
+            [
+              "Phenytoin, carbamazepine, lithium",
+              "Concentrations or effects can change; monitor levels and toxicity."
+            ],
+            [
+              "Diazepam / alprazolam; other CNS-active medicines",
+              "Exposure or impairment may increase; conservative dosing and clinical monitoring."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "label": [
+          "7.1–7.8",
+          "5.11"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy",
+      "assertions": {
+        "paragraphs": [
+          "Epidemiologic data have not established increased major birth-defect or miscarriage risk, but observational data do not prove absence of risk. Late SSRI exposure is associated with neonatal adaptation problems and possible persistent pulmonary hypertension; exposure near delivery has been associated with postpartum bleeding. Balance these concerns with relapse and untreated depression risks."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "8.1"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Lactation",
+      "assertions": {
+        "paragraphs": [
+          "Fluoxetine and norfluoxetine enter milk. Reports include infant irritability/agitation, poor feeding and poor weight gain; monitor the infant and individualize maternal treatment with the clinician."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "8.2"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric considerations",
+      "assertions": {
+        "paragraphs": [
+          "MDD approval begins at age 8 and OCD at age 7; monitor mood, mania and height/weight during pediatric treatment. Adult doses for bulimia/panic or weekly maintenance are not pediatric instructions. Older adults may need lower/less frequent dosing and have greater hyponatremia risk."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "8.4",
+          "8.5",
+          "2.7"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Hepatic and renal impairment",
+      "assertions": {
+        "paragraphs": [
+          "Cirrhosis slows parent-drug and active-metabolite clearance; use a lower or less frequent regimen. Routine renal dose reduction is not required by the cited label, but comorbidity and interacting drugs still require individual assessment."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "8.6",
+          "12.4"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action and pharmacodynamics",
+      "assertions": {
+        "paragraphs": [
+          "Antidepressant action is presumed to involve CNS serotonin uptake inhibition; the complete therapeutic mechanism is unknown."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "12.1",
+          "12.2"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "assertions": {
+        "paragraphs": [],
+        "facts": [
+          [
+            "Metabolism",
+            "Extensive hepatic metabolism, including CYP2D6, to active norfluoxetine and other metabolites; inhibits CYP2D6."
+          ],
+          [
+            "Half-life",
+            "Fluoxetine: 1–3 days after acute dosing, 4–6 days after chronic dosing. Norfluoxetine: 4–16 days."
+          ],
+          [
+            "Elimination",
+            "Predominantly hepatic metabolism followed by renal elimination of inactive metabolites."
+          ],
+          [
+            "Accumulation",
+            "Active species persist for weeks; changes in dose are not fully reflected in concentrations for several weeks."
+          ]
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "12.3",
+          "5.14"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring parameters",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Assess response, suicidal thinking, behavioral activation, sleep and mania during early therapy and dose changes.",
+          "Monitor weight/appetite and pediatric height/weight; ask about sexual effects.",
+          "Check sodium when clinically indicated by symptoms or risk; ECG/electrolyte review in patients at QT risk. Monitor glucose in diabetes and interacting drug levels/INR as appropriate."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "5.1",
+          "5.4–5.12",
+          "5.17",
+          "7",
+          "8.4",
+          "17"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Take exactly as prescribed, including the daily-versus-weekly schedule. Do not double doses or change treatment independently.",
+          "Tell clinicians about all medicines/supplements and recent fluoxetine use, even weeks after stopping.",
+          "Read the Medication Guide each refill; report worsening mood or unusual behavior promptly and seek immediate help for suicidal intent.",
+          "Avoid hazardous tasks until alertness effects are known. Arrange a taper with the prescriber rather than stopping suddenly."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "17",
+          "Medication Guide"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative oral product · Prozac 20 mg",
+      "assertions": {
+        "paragraphs": [],
+        "facts": [
+          [
+            "Dosage form / strength",
+            "Daily oral capsule · 20 mg fluoxetine equivalent"
+          ],
+          [
+            "Appearance / imprint",
+            "Opaque green cap, yellow body · DISTA 3105 / Prozac 20 mg"
+          ],
+          [
+            "Example NDC",
+            "0777-3105-30 · 30 capsules"
+          ]
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "16.1"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [],
+        "facts": [
+          [
+            "Prozac daily capsules",
+            "10, 20 and 40 mg."
+          ],
+          [
+            "Selected delayed-release weekly capsule",
+            "90 mg · RDY / 284; brown cap, white body."
+          ],
+          [
+            "Additional products",
+            "Other tablets, oral solution and olanzapine combinations require their exact labels."
+          ]
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "3",
+          "16.1"
+        ],
+        "weekly": [
+          "3",
+          "16.1"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Prozac capsules: controlled room temperature 15–30°C; protect from light. Selected weekly capsules: 20–25°C. Retain product packaging and keep medicines out of children’s reach."
+        ]
+      },
+      "source_sections": {
+        "label": [
+          "16.1",
+          "16.2"
+        ],
+        "weekly": [
+          "16.2"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "This is a focused capsule reference; oral solutions, other tablet products, PMDD-specific products and exact fixed-dose Symbyax instructions require separate labels.",
+    "Olanzapine combination starting doses and indications are verified in the Prozac label, but complete combination treatment decisions require the olanzapine/Symbyax full warnings and contraindications; no independent combination safety review claimed.",
+    "Weekly continuation evidence is adult MDD only; daily pediatric directions in the weekly label do not justify a pediatric 90 mg weekly dose."
+  ],
+  "resolved_source_findings": [
+    {
+      "severity": "source_error_resolved",
+      "detail": "Current Prozac section 10 prints Poison Center number 1-800-221-2222, whereas the Medication Guide and National Capital Poison Center use 1-800-222-1222. Profile uses the verified standard number with an explicit Poison Control citation; erroneous number not propagated."
+    }
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published clinical card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, title/order, essential safety, three hero facts, cited disclosures; safety core warning/contraindication/boxed/adverse order preserved.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending"
+  },
+  "monograph_sha256": "a0bb245afd8172b34b333e24b7e4ce78a30340f137c0a359e8e1b126c7e6ffe3"
+}
