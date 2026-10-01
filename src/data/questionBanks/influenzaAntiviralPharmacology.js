@@ -78,5 +78,70 @@ const caseRows=[
   ["integrated-influenza-system","What is the correct educational boundary for this module?",["Use it to structure verification, then apply current seasonal guidance and patient-specific judgment","Use each regimen as a standing prescription","Ignore current susceptibility data","Replace vaccination with prophylaxis"],"Influenza decisions change with season, resistance, labeling, and patient context."]
 ];
 const cases=caseRows.map((item,index)=>({id:`influenza-antiviral-pharmacology-${String(generated.length+index+1).padStart(3,"0")}`,lesson:item[0],question:item[1],choices:item[2],answer:0,rationale:item[3],reviewHref:`#${item[0]}`}));
-export const influenzaAntiviralPharmacologyQuestionBank=[...generated,...cases];
+const sourceReviewedAdministrationQuestions = {
+  "influenza-antiviral-pharmacology-065": {
+    "choices": [
+      "The standard adult uncomplicated-influenza treatment regimen is 75 mg twice daily for five days",
+      "Adults receive 75 mg once daily for five days as the standard treatment course",
+      "Adults receive 75 mg twice daily for one day as the standard treatment course",
+      "Adults receive 600 mg intravenously once as the standard oseltamivir treatment course"
+    ],
+    "rationale": "The book specifies oral oseltamivir 75 mg twice daily for five days for adult treatment. Once-daily dosing belongs to its prophylaxis schedule, and 600 mg intravenously once is its adult peramivir regimen. Renal impairment requires separate adjustment."
+  },
+  "influenza-antiviral-pharmacology-068": {
+    "choices": [
+      "Confusing once-daily prophylaxis with twice-daily treatment",
+      "Confirming a twice-daily treatment interval",
+      "Recording the five-day treatment duration",
+      "Separating the treatment order from a prevention order"
+    ],
+    "rationale": "The book gives oseltamivir 75 mg twice daily for five days for adult treatment and 75 mg once daily for ten days for prophylaxis. Importing the once-daily prevention interval into a treatment order confuses the two purposes; checking the interval, duration and indication prevents that error."
+  },
+  "influenza-antiviral-pharmacology-073": {
+    "choices": [
+      "The constituted commercial suspension contains 6 mg/mL, so a 45 mg dose requires 7.5 mL",
+      "The constituted suspension contains 6 mg/mL, so a 45 mg dose requires 45 mL",
+      "The constituted suspension contains 6 mg/mL, so a 45 mg dose requires 6 mL",
+      "The constituted suspension contains 6 mg/mL, so a 45 mg dose requires 2.7 mL"
+    ],
+    "rationale": "The book lists a 6 mg/mL oseltamivir suspension. Divide the prescribed 45 mg by 6 mg/mL to obtain 7.5 mL. The alternatives would deliver 270 mg, 36 mg and 16.2 mg, respectively."
+  },
+  "influenza-antiviral-pharmacology-074": {
+    "choices": [
+      "Divide ordered milligrams by concentration and measure with an oral dosing device",
+      "Use the ordered milligram number as the milliliter number without division",
+      "Use the concentration number as the dose volume for every prescription",
+      "Divide concentration by the ordered milligrams and record that result as milliliters"
+    ],
+    "rationale": "Volume equals ordered mass divided by concentration: 45 mg divided by 6 mg/mL is 7.5 mL. Measuring that calculated oral volume is the practical application of the book concentration; a concentration is not itself a dose volume."
+  },
+  "influenza-antiviral-pharmacology-075": {
+    "choices": [
+      "Assess concentration, prescribed milligrams, calculated milliliters, device markings, caregiver technique, and total volume",
+      "Review the ordered milligrams alone and omit concentration and milliliters",
+      "Review bottle capacity alone and omit the dose and measuring device",
+      "Assume every suspension uses the same concentration and skip the calculation"
+    ],
+    "rationale": "An accurate oral delivery review connects the book 6 mg/mL concentration to the prescribed mass and calculated volume. Device markings, caregiver technique and available volume help establish whether the calculated dose can be measured and delivered accurately."
+  },
+  "influenza-antiviral-pharmacology-076": {
+    "choices": [
+      "Confusing the 6 mg/mL concentration with a 6 mL dose",
+      "Dividing 45 mg by 6 mg/mL to obtain 7.5 mL",
+      "Keeping concentration units separate from dose-volume units",
+      "Checking the calculated volume against the prescribed mass"
+    ],
+    "rationale": "The book concentration of 6 mg/mL describes mass per volume. It does not mean every dose is 6 mL: 6 mL would contain 36 mg, while an ordered 45 mg requires 7.5 mL. The other actions preserve that distinction."
+  },
+  "influenza-antiviral-pharmacology-152": {
+    "choices": [
+      "Using oseltamivir suspension storage rules for baloxavir",
+      "Recording the baloxavir preparation time and its ten-hour administration limit",
+      "Keeping the book baloxavir suspension at room temperature within its specified window",
+      "Recognizing that oseltamivir and baloxavir have different suspension storage limits"
+    ],
+    "rationale": "The book gives reconstituted oseltamivir suspension ten days at room temperature or seventeen days refrigerated, but reconstituted baloxavir suspension must be administered within ten hours at room temperature. These drug-specific clocks cannot be exchanged."
+  }
+};
+export const influenzaAntiviralPharmacologyQuestionBank = [...generated,...cases].map((question) => sourceReviewedAdministrationQuestions[question.id] ? { ...question, ...sourceReviewedAdministrationQuestions[question.id] } : question);
 if(influenzaAntiviralPharmacologyQuestionBank.length<100)throw new Error(`Influenza antiviral pharmacology bank must contain at least 100 questions, found ${influenzaAntiviralPharmacologyQuestionBank.length}.`);

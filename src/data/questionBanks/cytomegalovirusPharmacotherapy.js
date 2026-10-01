@@ -109,4 +109,15 @@ const caseQuestions = cases.map((item, index) => ({
   reviewHref: `#${item[0]}`,
 }));
 
-export const cytomegalovirusPharmacotherapyQuestionBank = [...generated, ...caseQuestions];
+const sourceReviewedAdministrationQuestions = {
+  "cytomegalovirus-pharmacotherapy-072": {
+    "choices": [
+      "Using the maintenance dose during active induction",
+      "Distinguishing twice-daily treatment from once-daily maintenance",
+      "Checking which treatment phase the prescription represents",
+      "Reviewing renal function before applying the unadjusted regimen"
+    ],
+    "rationale": "The book separates valganciclovir treatment at 900 mg orally twice daily from maintenance or prophylaxis at 900 mg orally daily and requires renal adjustment below its stated clearance threshold. Using the maintenance interval during active induction confuses the phases. Checking the treatment phase and kidney function preserves that dosing distinction."
+  }
+};
+export const cytomegalovirusPharmacotherapyQuestionBank = [...generated, ...caseQuestions].map((question) => sourceReviewedAdministrationQuestions[question.id] ? { ...question, ...sourceReviewedAdministrationQuestions[question.id] } : question);
