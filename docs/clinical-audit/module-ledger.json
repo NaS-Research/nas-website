@@ -7715,11 +7715,23 @@
         },
         {
           "slug": "pk-dosing",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "verifiedSectionHeadings": [
+            "Release design matters"
+          ],
+          "latestScopedEvidence": "enteral-nutrition-broader-ddi-tetracycline-review.json",
+          "embeddedCheckVerified": true
         },
         {
           "slug": "administration",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "verifiedSectionHeadings": [
+            "Map every cation source",
+            "Do not improvise tube delivery",
+            "Teach a complete sequence"
+          ],
+          "latestScopedEvidence": "enteral-nutrition-broader-ddi-tetracycline-review.json",
+          "embeddedCheckVerified": true
         },
         {
           "slug": "common-safety",
@@ -7743,8 +7755,37 @@
         }
       ],
       "questions": 132,
-      "status": "unreviewed",
-      "evidence": []
+      "status": "reviewing",
+      "evidence": [
+        "enteral-nutrition-broader-ddi-tetracycline-review.json"
+      ],
+      "latestEnteralDependencyReview": {
+        "evidence": "enteral-nutrition-broader-ddi-tetracycline-review.json",
+        "verifiedBankIds": [
+          "tetracycline-pharmacology-057",
+          "tetracycline-pharmacology-058",
+          "tetracycline-pharmacology-059",
+          "tetracycline-pharmacology-060",
+          "tetracycline-pharmacology-061",
+          "tetracycline-pharmacology-062",
+          "tetracycline-pharmacology-063",
+          "tetracycline-pharmacology-064",
+          "tetracycline-pharmacology-070",
+          "tetracycline-pharmacology-071",
+          "tetracycline-pharmacology-072"
+        ],
+        "verifiedBodyHeadings": [
+          "Release design matters",
+          "Map every cation source",
+          "Do not improvise tube delivery",
+          "Teach a complete sequence"
+        ],
+        "verifiedEmbeddedCheckLessons": [
+          "pk-dosing",
+          "administration"
+        ],
+        "wholeModuleVerified": false
+      }
     },
     {
       "slug": "sulfonamide-trimethoprim-pharmacology",
@@ -9515,7 +9556,13 @@
         },
         {
           "slug": "absorption-interactions",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "verifiedSectionHeadings": [
+            "Separate chelation from timing folklore",
+            "Protect formulation and route"
+          ],
+          "latestScopedEvidence": "enteral-nutrition-broader-ddi-tetracycline-review.json",
+          "embeddedCheckVerified": true
         },
         {
           "slug": "enzyme-interactions",
@@ -9547,8 +9594,31 @@
         }
       ],
       "questions": 160,
-      "status": "unreviewed",
-      "evidence": []
+      "status": "reviewing",
+      "evidence": [
+        "enteral-nutrition-broader-ddi-tetracycline-review.json"
+      ],
+      "latestEnteralDependencyReview": {
+        "evidence": "enteral-nutrition-broader-ddi-tetracycline-review.json",
+        "verifiedBankIds": [
+          "clinical-drug-interactions-033",
+          "clinical-drug-interactions-034",
+          "clinical-drug-interactions-035",
+          "clinical-drug-interactions-036",
+          "clinical-drug-interactions-045",
+          "clinical-drug-interactions-046",
+          "clinical-drug-interactions-047",
+          "clinical-drug-interactions-048"
+        ],
+        "verifiedBodyHeadings": [
+          "Separate chelation from timing folklore",
+          "Protect formulation and route"
+        ],
+        "verifiedEmbeddedCheckLessons": [
+          "absorption-interactions"
+        ],
+        "wholeModuleVerified": false
+      }
     },
     {
       "slug": "tularemia",

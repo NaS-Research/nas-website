@@ -52,7 +52,7 @@ function distractors(index, field) {
   return [7, 17, 29].map((offset) => concepts[(index + offset) % concepts.length][field]);
 }
 
-export const clinicalDrugInteractionsQuestionBank = concepts.flatMap((concept, index) =>
+const generated = concepts.flatMap((concept, index) =>
   dimensions.map(([field, prompt], dimensionIndex) => ({
     id: `clinical-drug-interactions-${String(index * 4 + dimensionIndex + 1).padStart(3, "0")}`,
     question: `${prompt} ${concept[0]}?`,
@@ -62,3 +62,84 @@ export const clinicalDrugInteractionsQuestionBank = concepts.flatMap((concept, i
     reviewHref: `#${concept[1]}`,
   })),
 );
+
+// Preserve unreviewed rows while applying individually reviewed feeding repairs.
+const feedingQuestionRepairs = {
+  "clinical-drug-interactions-033": {
+    "choices": [
+      "Selected medicines form poorly absorbed complexes with calcium, magnesium, iron, or aluminum.",
+      "The swallowed dose guarantees the same absorbed dose when a mineral product is added.",
+      "Mineral-containing formulas cannot interact because the minerals are part of nutrition.",
+      "Diluting the dose with water removes any need to separate interacting products."
+    ],
+    "rationale": "Polyvalent cations can bind selected oral medicines into poorly absorbed complexes. Tetracyclines, fluoroquinolones, and levothyroxine are feeding-related examples. A measured administered dose, a nutritious formula, or water dilution does not establish that the absorption interaction has been prevented."
+  },
+  "clinical-drug-interactions-034": {
+    "choices": [
+      "Use the exact product's supported separation instructions or choose another route or agent.",
+      "Use one fixed separation interval for every interacting medicine and mineral product.",
+      "Keep simultaneous administration and increase the medicine dose without product-specific evidence.",
+      "Stop nutrition indefinitely rather than coordinate the medicine and feed schedule."
+    ],
+    "rationale": "Review the exact medicine, formulation, and interacting product before selecting a supported separation or an alternative administration plan. Drug-nutrient and binder schedules can differ; one interval or an improvised dose increase does not fit every product."
+  },
+  "clinical-drug-interactions-035": {
+    "choices": [
+      "Review cation product, object drug, formulation, meal timing, tube feeds, and label instructions.",
+      "Check prescription dose and adherence, but exclude mineral-containing feeds from the interaction review.",
+      "Check calcium supplements only, and omit antacids, iron, magnesium, and the feeding formula.",
+      "Confirm the feeding route, but assume that a water flush prevents cation interactions."
+    ],
+    "rationale": "Identify both the susceptible medicine and each potential cation source, including supplements, antacids, and feeds. Formulation and actual administration times determine which product instructions apply. Checking only one mineral, the prescribed dose, or tube flushing leaves important absorption risks unresolved."
+  },
+  "clinical-drug-interactions-036": {
+    "choices": [
+      "One universal spacing interval can be too short or unnecessarily burdensome.",
+      "Looking for mineral sources in nonprescription products and the feeding formula.",
+      "Using the exact product instructions to plan separation from interacting products.",
+      "Documenting actual medicine and feed times so the planned separation can be checked."
+    ],
+    "rationale": "Applying one interval to every product is the hazard: the required direction and duration of separation differ. The other choices are appropriate reconciliation and scheduling steps, not reasons to avoid reviewing an interaction."
+  },
+  "clinical-drug-interactions-046": {
+    "choices": [
+      "Verify dosage-form integrity, tube location, preparation, flushing, and nutrition timing.",
+      "Treat every liquid as tube-compatible and proceed without checking the product.",
+      "Crush the medicine into the formula to avoid a separate administration step.",
+      "Review the dose only and retain the usual schedule despite concurrent interacting feeds."
+    ],
+    "rationale": "Product-specific review is needed because both solids and liquids can be unsuitable for feeding tubes. Check the formulation, delivery site, preparation, water flushing, and drug-nutrient timing. A liquid dosage form, correct nominal dose, or mixing into formula does not establish safe delivery."
+  },
+  "clinical-drug-interactions-047": {
+    "choices": [
+      "Review formulation, release mechanism, tube material and location, feeds, clogging, and label instructions.",
+      "Check the active ingredient and dose, but omit release design and tube compatibility.",
+      "Record tube location, but omit mineral-containing feeds and medicine administration times.",
+      "Check for blockage after dosing, and use that observation instead of reviewing preparation instructions."
+    ],
+    "rationale": "Review the entire administration pathway before giving the medicine. Release design, tube location and material, feeds, preparation, and blockage risk can affect delivery; product instructions determine the compatible plan. A dose, location, or post-dose blockage check alone is incomplete."
+  },
+  "clinical-drug-interactions-048": {
+    "choices": [
+      "Crushing an extended-release or hazardous product can change exposure and safety.",
+      "Checking product instructions before manipulating a modified-release dosage form.",
+      "Selecting a compatible preparation and keeping it separate from the formula.",
+      "Reviewing medicine and feed timing alongside appropriate water-flush instructions."
+    ],
+    "rationale": "Extended-release and hazardous products generally should not be crushed for feeding-tube administration. Crushing a long-acting product can release the dose too quickly. The other choices are protective review and administration steps, not the hazard being asked about."
+  },
+  "clinical-drug-interactions-045": {
+    "choices": [
+      "Crushing or tube delivery can alter release, stability, adsorption, and site of delivery.",
+      "A verified feeding-tube location makes release design and preparation instructions irrelevant.",
+      "A water flush guarantees that every formulation reaches the patient unchanged.",
+      "Tube administration prevents both physical changes and nutrient interactions."
+    ],
+    "rationale": "Manipulation can change release or other physical and chemical properties, and tube administration changes the delivery pathway. Ciprofloxacin oil-based suspension adheres to tubing, illustrating surface retention; adsorption refers to drug adherence to a container surface. This general example does not establish adsorption for every drug or dosage form."
+  }
+};
+
+export const clinicalDrugInteractionsQuestionBank = generated.map((question) => {
+  const repair = feedingQuestionRepairs[question.id];
+  return repair ? { ...question, ...repair } : question;
+});

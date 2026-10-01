@@ -1,0 +1,1381 @@
+{
+  "date": "2026-10-01",
+  "unit": "enteral-nutrition:broader-DDI-and-tetracycline-feeding-dependency",
+  "status": "verified scoped logical unit; no full module or chapter closure",
+  "baseCommit": "422a2429b9ae123295e8dbf6b7a7880c68ad4bd9",
+  "bookIdentity": {
+    "edition": "RxPrep 2023",
+    "PDFPages": 1032,
+    "privateSourceKeptOutsideGit": true
+  },
+  "sequentialContext": {
+    "chapter": 1,
+    "checklistEntry": 15,
+    "dependencyChapter": 11,
+    "reasonForOtherSourcePages": "Drug-nutrient/formulation dependency of current EN review; not advancement to later book chapters."
+  },
+  "sourceReview": {
+    "completeTextAndRenderedPages": [
+      {
+        "pdf": 95,
+        "printed": 87,
+        "purpose": "Formulation integrity/swallowing/alternative route"
+      },
+      {
+        "pdf": 109,
+        "printed": 101,
+        "purpose": "General chemical/physical incompatibility and adsorption definition only"
+      },
+      {
+        "pdf": 170,
+        "printed": 162,
+        "purpose": "Tube sites, product manipulation, formula mixing, cations and flushing"
+      },
+      {
+        "pdf": 361,
+        "printed": 353,
+        "purpose": "Quinolone cation/binder scheduling variation; reused complete rendered review"
+      },
+      {
+        "pdf": 362,
+        "printed": 354,
+        "purpose": "Tetracycline oral/IV formulations, food/renal differences and water/upright instructions"
+      },
+      {
+        "pdf": 363,
+        "printed": 355,
+        "purpose": "Tetracycline cation/dairy/binder interactions"
+      }
+    ],
+    "wholeBookAdsorptionSearch": {
+      "textPagesSearched": 1032,
+      "hitPages": [
+        8,
+        109,
+        266,
+        272,
+        279,
+        917,
+        994,
+        1009
+      ],
+      "searchIndexSha256": "c5d60ebb350bbd08ad5ae9e4d3db80bd17884edb21aed5940861a486908cb6db",
+      "status": "Locating aid only; not a complete clinical/visual audit of1032pages",
+      "result": "109 located and fully read/rendered. Other index/desiccant/antacid/charcoal hits are not evidence for tetracycline-specific tube adsorption.917 text read but not adopted as drug-specific evidence."
+    },
+    "qualifiedSynthesis": "General adsorption definition in109 plus surface-adherence example in170 supports the conditional general DDI formulation/tube statement. It does not establish adsorption for all drugs, material-specific effects or a tetracycline product. Current labels are recommended checks, not sources reviewed here. No IV dose/container instruction, infection indication, antibiotic dose, universal feed-hold interval or new current FDA claim adopted."
+  },
+  "questionReview": [
+    {
+      "PDFPages": [
+        95,
+        170,
+        361,
+        363
+      ],
+      "id": "clinical-drug-interactions-033",
+      "question": "Which principle best characterizes polyvalent cation chelation?",
+      "choices": [
+        "Selected medicines form poorly absorbed complexes with calcium, magnesium, iron, or aluminum.",
+        "The swallowed dose guarantees the same absorbed dose when a mineral product is added.",
+        "Mineral-containing formulas cannot interact because the minerals are part of nutrition.",
+        "Diluting the dose with water removes any need to separate interacting products."
+      ],
+      "answer": 0,
+      "rationale": "Polyvalent cations can bind selected oral medicines into poorly absorbed complexes. Tetracyclines, fluoroquinolones, and levothyroxine are feeding-related examples. A measured administered dose, a nutritious formula, or water dilution does not establish that the absorption interaction has been prevented.",
+      "reviewHref": "#absorption-interactions",
+      "review": "Complex formation is the retained mechanism. All three new distractors incorrectly dismiss the cation interaction because of dose, nutrition status or dilution. Named drug classes are supported by170."
+    },
+    {
+      "PDFPages": [
+        95,
+        170,
+        361,
+        363
+      ],
+      "id": "clinical-drug-interactions-034",
+      "question": "Which clinical action best applies to polyvalent cation chelation?",
+      "choices": [
+        "Use the exact product's supported separation instructions or choose another route or agent.",
+        "Use one fixed separation interval for every interacting medicine and mineral product.",
+        "Keep simultaneous administration and increase the medicine dose without product-specific evidence.",
+        "Stop nutrition indefinitely rather than coordinate the medicine and feed schedule."
+      ],
+      "answer": 0,
+      "rationale": "Review the exact medicine, formulation, and interacting product before selecting a supported separation or an alternative administration plan. Drug-nutrient and binder schedules can differ; one interval or an improvised dose increase does not fit every product.",
+      "reviewHref": "#absorption-interactions",
+      "review": "The key applies the exact product instructions or a supported alternative. Universal spacing, empirical dose escalation and indefinite nutrition interruption do not implement the book-specific compatible administration plan."
+    },
+    {
+      "PDFPages": [
+        95,
+        170,
+        361,
+        363
+      ],
+      "id": "clinical-drug-interactions-035",
+      "question": "Which assessment is most appropriate for polyvalent cation chelation?",
+      "choices": [
+        "Review cation product, object drug, formulation, meal timing, tube feeds, and label instructions.",
+        "Check prescription dose and adherence, but exclude mineral-containing feeds from the interaction review.",
+        "Check calcium supplements only, and omit antacids, iron, magnesium, and the feeding formula.",
+        "Confirm the feeding route, but assume that a water flush prevents cation interactions."
+      ],
+      "answer": 0,
+      "rationale": "Identify both the susceptible medicine and each potential cation source, including supplements, antacids, and feeds. Formulation and actual administration times determine which product instructions apply. Checking only one mineral, the prescribed dose, or tube flushing leaves important absorption risks unresolved.",
+      "reviewHref": "#absorption-interactions",
+      "review": "Review the full cation/medicine/formulation/timing pathway. Each wrong choice deliberately omits relevant products or treats flushing as an absorption solution."
+    },
+    {
+      "PDFPages": [
+        95,
+        170,
+        361,
+        363
+      ],
+      "id": "clinical-drug-interactions-036",
+      "question": "Which reasoning hazard is most important to prevent with polyvalent cation chelation?",
+      "choices": [
+        "One universal spacing interval can be too short or unnecessarily burdensome.",
+        "Looking for mineral sources in nonprescription products and the feeding formula.",
+        "Using the exact product instructions to plan separation from interacting products.",
+        "Documenting actual medicine and feed times so the planned separation can be checked."
+      ],
+      "answer": 0,
+      "rationale": "Applying one interval to every product is the hazard: the required direction and duration of separation differ. The other choices are appropriate reconciliation and scheduling steps, not reasons to avoid reviewing an interaction.",
+      "reviewHref": "#absorption-interactions",
+      "review": "Only the retained universal-spacing choice is a hazard. Three new alternatives are appropriate review/scheduling actions. This removes competing hazards from the prior choice set."
+    },
+    {
+      "PDFPages": [
+        95,
+        109,
+        170
+      ],
+      "id": "clinical-drug-interactions-045",
+      "question": "Which principle best characterizes feeding tube and formulation interaction?",
+      "choices": [
+        "Crushing or tube delivery can alter release, stability, adsorption, and site of delivery.",
+        "A verified feeding-tube location makes release design and preparation instructions irrelevant.",
+        "A water flush guarantees that every formulation reaches the patient unchanged.",
+        "Tube administration prevents both physical changes and nutrient interactions."
+      ],
+      "answer": 0,
+      "rationale": "Manipulation can change release or other physical and chemical properties, and tube administration changes the delivery pathway. Ciprofloxacin oil-based suspension adheres to tubing, illustrating surface retention; adsorption refers to drug adherence to a container surface. This general example does not establish adsorption for every drug or dosage form.",
+      "reviewHref": "#absorption-interactions",
+      "review": "Qualified synthesis:95 supports release design;109 defines chemical/physical incompatibility and surface adsorption;170 describes manipulation effects, ciprofloxacin suspension adherence and different tube destinations. The inference applies the book definition to general surface retention and does not assert a drug-specific sorption value or tetracycline adsorption. The three distractors falsely guarantee unchanged delivery."
+    },
+    {
+      "PDFPages": [
+        95,
+        170
+      ],
+      "id": "clinical-drug-interactions-046",
+      "question": "Which clinical action best applies to feeding tube and formulation interaction?",
+      "choices": [
+        "Verify dosage-form integrity, tube location, preparation, flushing, and nutrition timing.",
+        "Treat every liquid as tube-compatible and proceed without checking the product.",
+        "Crush the medicine into the formula to avoid a separate administration step.",
+        "Review the dose only and retain the usual schedule despite concurrent interacting feeds."
+      ],
+      "answer": 0,
+      "rationale": "Product-specific review is needed because both solids and liquids can be unsuitable for feeding tubes. Check the formulation, delivery site, preparation, water flushing, and drug-nutrient timing. A liquid dosage form, correct nominal dose, or mixing into formula does not establish safe delivery.",
+      "reviewHref": "#absorption-interactions",
+      "review": "Both solid and liquid dosage forms can be unsuitable. Product/site/preparation/flush/nutrition review is the unique best action; automatic liquid compatibility, formula mixing and dose-only review are inappropriate."
+    },
+    {
+      "PDFPages": [
+        95,
+        170
+      ],
+      "id": "clinical-drug-interactions-047",
+      "question": "Which assessment is most appropriate for feeding tube and formulation interaction?",
+      "choices": [
+        "Review formulation, release mechanism, tube material and location, feeds, clogging, and label instructions.",
+        "Check the active ingredient and dose, but omit release design and tube compatibility.",
+        "Record tube location, but omit mineral-containing feeds and medicine administration times.",
+        "Check for blockage after dosing, and use that observation instead of reviewing preparation instructions."
+      ],
+      "answer": 0,
+      "rationale": "Review the entire administration pathway before giving the medicine. Release design, tube location and material, feeds, preparation, and blockage risk can affect delivery; product instructions determine the compatible plan. A dose, location, or post-dose blockage check alone is incomplete.",
+      "reviewHref": "#absorption-interactions",
+      "review": "The key assesses formulation, release, tube compatibility/site, feeds and clogging together. The three distractors are incomplete reviews or post-dose checks used instead of preparation review."
+    },
+    {
+      "PDFPages": [
+        95,
+        170
+      ],
+      "id": "clinical-drug-interactions-048",
+      "question": "Which reasoning hazard is most important to prevent with feeding tube and formulation interaction?",
+      "choices": [
+        "Crushing an extended-release or hazardous product can change exposure and safety.",
+        "Checking product instructions before manipulating a modified-release dosage form.",
+        "Selecting a compatible preparation and keeping it separate from the formula.",
+        "Reviewing medicine and feed timing alongside appropriate water-flush instructions."
+      ],
+      "answer": 0,
+      "rationale": "Extended-release and hazardous products generally should not be crushed for feeding-tube administration. Crushing a long-acting product can release the dose too quickly. The other choices are protective review and administration steps, not the hazard being asked about.",
+      "reviewHref": "#absorption-interactions",
+      "review": "Extended-release and hazardous products are explicitly listed in170 as unsuitable for crushing;95 explains rapid release risk. All three new alternatives are protective qualified steps, not hazards."
+    },
+    {
+      "PDFPages": [
+        95,
+        170,
+        362
+      ],
+      "id": "tetracycline-pharmacology-057",
+      "lesson": "pk-dosing",
+      "question": "Which principle best characterizes dosage forms?",
+      "choices": [
+        "Immediate-release, delayed-release, capsule, tablet, suspension, and intravenous products can have different instructions",
+        "The active ingredient name is enough to determine every formulation's preparation instructions",
+        "An oral liquid is always compatible with every feeding tube",
+        "Modified-release products can be crushed whenever the same total milligram dose is given"
+      ],
+      "answer": 0,
+      "rationale": "Formulation changes how a dose is prepared and delivered. Tetracycline products include oral and injectable formulations, and long-acting dosage forms need verified manipulation instructions. The ingredient name or total milligrams alone does not establish tube compatibility or preserve release design.",
+      "reviewHref": "#pk-dosing",
+      "review": "Multiple oral/injectable tetracycline products in362 and general release-design precautions in95/170 support differing instructions. No claim that each named agent has every listed formulation. Ingredient-only, automatic liquid compatibility and milligram-only crushing are incorrect."
+    },
+    {
+      "PDFPages": [
+        95,
+        170,
+        362
+      ],
+      "id": "tetracycline-pharmacology-058",
+      "lesson": "pk-dosing",
+      "question": "Which clinical action best applies to dosage forms?",
+      "choices": [
+        "Verify formulation before calculating or counseling",
+        "Calculate the milligram dose first and assume that every formulation can be prepared the same way",
+        "Replace a tablet with any liquid product without checking strength or tube suitability",
+        "Use the feeding formula as the preparation liquid so the product does not need a separate review"
+      ],
+      "answer": 0,
+      "rationale": "Verify the exact product before calculation and counseling. Strength, release design, preparation, and administration instructions can differ, and liquids are not automatically tube-compatible. Medication should not be mixed directly into the feeding formula.",
+      "reviewHref": "#pk-dosing",
+      "review": "Verify the exact formulation before calculations/counseling. Dose-first assumptions, arbitrary liquid substitution and formula mixing are incorrect. No new strength or dose calculation introduced."
+    },
+    {
+      "PDFPages": [
+        95,
+        170,
+        362
+      ],
+      "id": "tetracycline-pharmacology-059",
+      "lesson": "pk-dosing",
+      "question": "Which assessment is most appropriate for dosage forms?",
+      "choices": [
+        "Assess strength, release design, ability to swallow, tube access, food instructions, and substitution",
+        "Check the brand name and dose, but omit release design, swallowing ability, and tube access",
+        "Check the infection indication only, and assume food and preparation instructions are interchangeable",
+        "Check whether a liquid is available, and substitute it without reviewing strength or product instructions"
+      ],
+      "answer": 0,
+      "rationale": "Review strength and release design together with the patient's administration pathway. Swallowing ability, feeding access, food instructions, and the proposed substitution affect whether a product can be delivered as intended. Brand, indication, or liquid availability alone is insufficient.",
+      "reviewHref": "#pk-dosing",
+      "review": "Strength, release, swallow/tube pathway, food and substitution review is the unique complete assessment. Brand, indication or liquid availability alone do not establish suitable delivery."
+    },
+    {
+      "PDFPages": [
+        95,
+        170,
+        362
+      ],
+      "id": "tetracycline-pharmacology-060",
+      "lesson": "pk-dosing",
+      "question": "Which reasoning hazard is most important to prevent with dosage forms?",
+      "choices": [
+        "Crushing a modified-release product without verification",
+        "Checking the release design before deciding whether a product can be manipulated",
+        "Reviewing product instructions before replacing a tablet with a liquid",
+        "Confirming a compatible preparation and delivery route before administration"
+      ],
+      "answer": 0,
+      "rationale": "Unverified crushing of a modified-release product is the hazard. Long-acting dosage forms may release medication too quickly when damaged. The other choices are appropriate verification steps and do not justify crushing an unsuitable product.",
+      "reviewHref": "#pk-dosing",
+      "review": "Unverified modified-release crushing is the hazard. Three new alternatives are appropriate product/route verification steps. No newly named product is claimed crushable."
+    },
+    {
+      "PDFPages": [
+        95,
+        170,
+        362,
+        363
+      ],
+      "id": "tetracycline-pharmacology-061",
+      "lesson": "administration",
+      "question": "Which principle best characterizes cation chelation?",
+      "choices": [
+        "Calcium, magnesium, aluminum, iron, bismuth, and other polyvalent cations can reduce absorption through chelation",
+        "Mineral products improve tetracycline absorption because they are useful nutrients",
+        "Chelation occurs only after the antibiotic has reached the bloodstream",
+        "A water flush removes all absorption effects of concurrent mineral-containing feeds"
+      ],
+      "answer": 0,
+      "rationale": "Polyvalent cations in antacids, mineral products, and feeding formulas can chelate tetracyclines and reduce bioavailability. Nutritional value does not prevent this interaction, and tube flushing is not evidence that absorption interference has been eliminated.",
+      "reviewHref": "#administration",
+      "review": "170/363 explicitly describe reduced absorption from polyvalent-cation interactions. Nutrition benefits do not prevent chelation; this is an absorption interaction, not a bloodstream-only event or a flush-resolved effect."
+    },
+    {
+      "PDFPages": [
+        95,
+        170,
+        362,
+        363
+      ],
+      "id": "tetracycline-pharmacology-062",
+      "lesson": "administration",
+      "question": "Which clinical action best applies to cation chelation?",
+      "choices": [
+        "Separate products according to the exact label and clinical plan",
+        "Give the antibiotic with the interacting mineral product and compensate with a larger dose",
+        "Apply the same separation schedule to every tetracycline and every mineral product",
+        "Ignore mineral-containing feeds because only separate supplement tablets can interact"
+      ],
+      "answer": 0,
+      "rationale": "Separate the interacting products using instructions for the exact antibiotic and product. Food instructions and cation or binder schedules differ by product. Do not replace a verified schedule with dose escalation, one class-wide interval, or omission of feed minerals.",
+      "reviewHref": "#administration",
+      "review": "Follow exact product/source separation instructions.362 illustrates food-instruction variation;363 and170 support cation/EN interaction. No unapproved dose compensation, universal class interval or feed-mineral exemption."
+    },
+    {
+      "PDFPages": [
+        95,
+        170,
+        362,
+        363
+      ],
+      "id": "tetracycline-pharmacology-063",
+      "lesson": "administration",
+      "question": "Which assessment is most appropriate for cation chelation?",
+      "choices": [
+        "Assess antacids, supplements, dairy, tube feeds, enteral formulas, timing, and adherence",
+        "Review prescription medicines only, and omit supplements, dairy, and formula minerals",
+        "Review calcium tablets only, and ignore antacids, iron, and magnesium products",
+        "Review feed calories and dose adherence, but omit actual antibiotic and mineral administration times"
+      ],
+      "answer": 0,
+      "rationale": "Assess all potential cation sources and their timing, including nonprescription products, dairy, and feeds. Product food instructions can differ, and adherence to the dose alone does not establish an appropriate absorption plan.",
+      "reviewHref": "#administration",
+      "review": "Include prescription/nonprescription minerals, dairy and feeds and actual administration timing. Each wrong assessment omits meaningful sources or timing."
+    },
+    {
+      "PDFPages": [
+        95,
+        170,
+        362,
+        363
+      ],
+      "id": "tetracycline-pharmacology-064",
+      "lesson": "administration",
+      "question": "Which reasoning hazard is most important to prevent with cation chelation?",
+      "choices": [
+        "Using one spacing interval for the entire class",
+        "Checking the named product's food and cation instructions",
+        "Identifying minerals in supplements, antacids, and the feeding formula",
+        "Coordinating and documenting the antibiotic and interacting-product schedule"
+      ],
+      "answer": 0,
+      "rationale": "A single interval for the whole class is the hazard. The reviewed book gives distinct food and interaction instructions, so the exact product and interacting source must be identified. The other choices are appropriate steps for building the schedule.",
+      "reviewHref": "#administration",
+      "review": "A class-wide fixed interval is the hazard. All three new alternatives are appropriate reconciliation and scheduling steps. No fixed interval prescribed in the finished question."
+    },
+    {
+      "PDFPages": [
+        95,
+        170,
+        362,
+        363
+      ],
+      "id": "tetracycline-pharmacology-070",
+      "lesson": "administration",
+      "question": "Which clinical action best applies to feeding-tube administration?",
+      "choices": [
+        "Confirm tube compatibility and a product-specific feed plan",
+        "Select a liquid solely because it is easier to push through the tube",
+        "Mix the medicine into the formula so feeds can continue without a separate dose",
+        "Preserve the usual oral schedule without checking formula minerals or tube compatibility"
+      ],
+      "answer": 0,
+      "rationale": "Confirm the dosage form and feeding-tube preparation instructions, then coordinate a product-specific feeding plan. Solids and liquids may be unsuitable for a feeding tube, and tetracyclines interact with feed cations. Liquid availability, direct formula mixing, or an unchanged oral schedule does not resolve those issues.",
+      "reviewHref": "#administration",
+      "review": "Compatibility and a product-specific feeding plan are required. Automatic liquid suitability, direct formula mixing and unchanged schedules despite feed minerals do not establish compatible delivery."
+    },
+    {
+      "PDFPages": [
+        95,
+        170,
+        362,
+        363
+      ],
+      "id": "tetracycline-pharmacology-071",
+      "lesson": "administration",
+      "question": "Which assessment is most appropriate for feeding-tube administration?",
+      "choices": [
+        "Assess tube site, formulation, crushing suitability, formula minerals, flushes, and timing",
+        "Assess the prescribed dose only, and omit tube site and formulation",
+        "Assess formula calories, and use them instead of checking mineral content and drug timing",
+        "Assess tube patency after the dose, and omit preparation and crushing suitability"
+      ],
+      "answer": 0,
+      "rationale": "A tube plan needs the delivery site, dosage form, manipulation suitability, formula minerals, flushing, and actual timing. These checks address tube-compatibility and cation-interaction risks without prescribing a universal feed-hold interval. Dose, calorie content, or patency alone is incomplete.",
+      "reviewHref": "#administration",
+      "review": "The full site/formulation/manipulation/mineral/flush/timing assessment is supported as a qualified synthesis of95/170/362/363. No tube-placement method or bolus/continuous clinical protocol is prescribed."
+    },
+    {
+      "PDFPages": [
+        95,
+        170,
+        362,
+        363
+      ],
+      "id": "tetracycline-pharmacology-072",
+      "lesson": "administration",
+      "question": "Which reasoning hazard is most important to prevent with feeding-tube administration?",
+      "choices": [
+        "Crushing and mixing the drug directly into formula",
+        "Reviewing the exact dosage form before deciding whether it can be manipulated",
+        "Preparing a verified compatible dose separately from the nutrition formula",
+        "Using appropriate water flushing and a verified medicine-feed schedule"
+      ],
+      "answer": 0,
+      "rationale": "Mixing medication directly into the formula is the hazard and does not follow appropriate feeding-tube administration. Appropriate crushing, if supported for the exact product, does not permit formula mixing. The other choices are protective verification, preparation, and timing steps.",
+      "reviewHref": "#administration",
+      "review": "Direct formula mixing is prohibited in170 and is the unique hazard. All three new alternatives are qualified safe preparation/scheduling actions. Appropriate crushing for a verified product does not permit formula mixing."
+    }
+  ],
+  "teachingReview": [
+    {
+      "module": "clinical-drug-interactions",
+      "PDFPages": [
+        95,
+        170,
+        361,
+        362,
+        363
+      ],
+      "lesson": "absorption-interactions",
+      "heading": "Separate chelation from timing folklore",
+      "body": "Polyvalent cations can form poorly absorbed complexes with selected tetracyclines, fluoroquinolones, thyroid hormone, and other medicines. The required spacing is product specific. A universal two-hour rule is unsafe because direction and duration differ.",
+      "status": "full unchanged body source-verified in this scoped dependency",
+      "interpretation": "Recommended exact-product review and qualified scheduling; no actual current external label or guideline was opened."
+    },
+    {
+      "module": "clinical-drug-interactions",
+      "PDFPages": [
+        95,
+        109,
+        170
+      ],
+      "lesson": "absorption-interactions",
+      "heading": "Protect formulation and route",
+      "body": "Crushing, opening, mixing, or delivering through a feeding tube can change release, stability, adsorption, or site of delivery. Enteral nutrition can complicate administration for selected medicines. Verify dosage-form integrity, tube location, preparation, flushing, and interruption requirements.",
+      "status": "full unchanged body source-verified in this scoped dependency",
+      "interpretation": "Recommended exact-product review and qualified scheduling; no actual current external label or guideline was opened."
+    },
+    {
+      "module": "tetracycline-pharmacology",
+      "PDFPages": [
+        95,
+        170,
+        361,
+        362,
+        363
+      ],
+      "lesson": "pk-dosing",
+      "heading": "Release design matters",
+      "body": "Immediate-release, delayed-release, capsule, tablet, suspension, and IV products can have different instructions. Do not crush, open, or substitute modified-release products without verification.",
+      "status": "full unchanged body source-verified in this scoped dependency",
+      "interpretation": "Recommended exact-product review and qualified scheduling; no actual current external label or guideline was opened."
+    },
+    {
+      "module": "tetracycline-pharmacology",
+      "PDFPages": [
+        95,
+        170,
+        361,
+        362,
+        363
+      ],
+      "lesson": "administration",
+      "heading": "Map every cation source",
+      "body": "Calcium, magnesium, aluminum, iron, bismuth, multivitamins, and enteral formulas can reduce absorption. Separation intervals and food effects are product specific.",
+      "status": "full unchanged body source-verified in this scoped dependency",
+      "interpretation": "Recommended exact-product review and qualified scheduling; no actual current external label or guideline was opened."
+    },
+    {
+      "module": "tetracycline-pharmacology",
+      "PDFPages": [
+        95,
+        170,
+        361,
+        362,
+        363
+      ],
+      "lesson": "administration",
+      "heading": "Do not improvise tube delivery",
+      "body": "Confirm that the dosage form can be manipulated, identify mineral content in the formula, plan feed interruption when justified, flush appropriately, and document restart timing.",
+      "status": "full unchanged body source-verified in this scoped dependency",
+      "interpretation": "Recommended exact-product review and qualified scheduling; no actual current external label or guideline was opened."
+    },
+    {
+      "module": "tetracycline-pharmacology",
+      "PDFPages": [
+        95,
+        170,
+        361,
+        362,
+        363
+      ],
+      "lesson": "administration",
+      "heading": "Teach a complete sequence",
+      "body": "A patient needs exact clock times, not a vague instruction to avoid dairy. Include what can be taken with the dose, how long to separate products, and what to do if timing fails.",
+      "status": "full unchanged body source-verified in this scoped dependency",
+      "interpretation": "Recommended exact-product review and qualified scheduling; no actual current external label or guideline was opened."
+    }
+  ],
+  "embeddedCheckReview": [
+    {
+      "module": "clinical-drug-interactions",
+      "lesson": "absorption-interactions",
+      "PDFPages": [
+        95,
+        170,
+        361,
+        362,
+        363
+      ],
+      "question": "What is the safest response to a suspected cation chelation interaction?",
+      "choices": [
+        "Check the exact product label and use its supported separation schedule",
+        "Apply one universal spacing rule",
+        "Crush both products together",
+        "Ignore the dosage form"
+      ],
+      "answer": 0,
+      "rationale": "The magnitude and required spacing vary by drug and formulation.",
+      "reviewHref": "#absorption-interactions",
+      "status": "full retained check, allchoices/key/rationale/anchor source-verified; correct/wrong desktop/mobile feedback verified",
+      "interpretation": "362 explicitly supports differing renal/formulation rules, injectable-only products and water/upright doxycycline administration;95/170/363 support release/cation/feeding alternatives. No new clinical numerical dose or interval adopted."
+    },
+    {
+      "module": "tetracycline-pharmacology",
+      "lesson": "pk-dosing",
+      "PDFPages": [
+        95,
+        170,
+        361,
+        362,
+        363
+      ],
+      "question": "Which dosing principle is safest?",
+      "choices": [
+        "Apply the exact product label, indication, organ function, and dosage form",
+        "Use one class-wide renal adjustment",
+        "Crush every delayed-release tablet",
+        "Assume every IV agent has an oral equivalent"
+      ],
+      "answer": 0,
+      "rationale": "Disposition and formulation differ substantially inside the class.",
+      "reviewHref": "#pk-dosing",
+      "status": "full retained check, allchoices/key/rationale/anchor source-verified; correct/wrong desktop/mobile feedback verified",
+      "interpretation": "362 explicitly supports differing renal/formulation rules, injectable-only products and water/upright doxycycline administration;95/170/363 support release/cation/feeding alternatives. No new clinical numerical dose or interval adopted."
+    },
+    {
+      "module": "tetracycline-pharmacology",
+      "lesson": "administration",
+      "PDFPages": [
+        95,
+        170,
+        361,
+        362,
+        363
+      ],
+      "question": "Which counseling point best reduces doxycycline pill esophagitis?",
+      "choices": [
+        "Take with sufficient fluid and avoid lying down immediately afterward",
+        "Take dry at bedtime",
+        "Combine with iron",
+        "Crush every product into tube feed"
+      ],
+      "answer": 0,
+      "rationale": "Reducing prolonged mucosal contact lowers injury risk.",
+      "reviewHref": "#administration",
+      "status": "full retained check, allchoices/key/rationale/anchor source-verified; correct/wrong desktop/mobile feedback verified",
+      "interpretation": "362 explicitly supports differing renal/formulation rules, injectable-only products and water/upright doxycycline administration;95/170/363 support release/cation/feeding alternatives. No new clinical numerical dose or interval adopted."
+    }
+  ],
+  "broaderSelection": {
+    "priorLexicalSnapshot": "enteral-nutrition-book-safety-coverage-review.json;232 committed-module inventory",
+    "matchedParentLexicalRows": 16,
+    "expansion": "Full dosage-form and cation/feeding-concept groups inspected beyond literal feeding phrase hits.20 retained topic questions inspected;19 verified/repaired and tetracycline069 preserved/pending.",
+    "sourcePendingQuestion": {
+      "question": {
+        "id": "tetracycline-pharmacology-069",
+        "lesson": "administration",
+        "question": "Which principle best characterizes feeding-tube administration?",
+        "choices": [
+          "Enteral formulas and dosage-form design can alter tetracycline delivery through chelation, adsorption, or unsafe manipulation",
+          "Pediatric decisions are drug, disease, dose, and duration specific rather than governed by a blanket class prohibition",
+          "A complete plan aligns diagnosis, organism, agent, product, dose, administration, safety, monitoring, and exit criteria",
+          "Minocycline has useful tissue penetration but prominent vestibular, pigmentation, autoimmune, and hypersensitivity liabilities"
+        ],
+        "answer": 0,
+        "rationale": "A complete tube plan protects both dose delivery and tube function",
+        "reviewHref": "#administration"
+      },
+      "partialBookSupport": [
+        95,
+        170,
+        362,
+        363
+      ],
+      "unestablishedClaim": "Tetracycline-specific adsorption component. Do not erase a useful possible mechanism or substitute an easier question merely to fit the reviewed passages."
+    },
+    "distractorOnlyRows": [
+      {
+        "module": "tetracycline-pharmacology",
+        "question": {
+          "id": "tetracycline-pharmacology-011",
+          "lesson": "structure-mechanism",
+          "question": "Which assessment is most appropriate for bacteriostatic effect?",
+          "choices": [
+            "Assess immune status, burden, site, susceptibility, and trajectory",
+            "Assess purulence, severity, source control, streptococcal concern, culture, and systemic illness",
+            "Assess antacids, supplements, dairy, tube feeds, enteral formulas, timing, and adherence",
+            "Assess symptom timing, falls, occupation, dose, renal or hepatic function, and alternatives"
+          ],
+          "answer": 0,
+          "rationale": "Clinical efficacy requires more than target binding",
+          "reviewHref": "#structure-mechanism"
+        },
+        "feedingClauseStatus": "Shared cation-assessment clause book-supported; retained unchanged",
+        "wholeQuestionStatus": "Full nonfeeding topic and one-best-answer audit still pending for its parent module."
+      },
+      {
+        "module": "tetracycline-pharmacology",
+        "question": {
+          "id": "tetracycline-pharmacology-017",
+          "lesson": "agent-differences",
+          "question": "Which principle best characterizes minocycline differentiation?",
+          "choices": [
+            "Minocycline has useful tissue penetration but prominent vestibular, pigmentation, autoimmune, and hypersensitivity liabilities",
+            "Doxycycline, minocycline, and sarecycline products have distinct acne indications and stewardship considerations",
+            "Enteral formulas and dosage-form design can alter tetracycline delivery through chelation, adsorption, or unsafe manipulation",
+            "Tetracycline-class medicines can falsely lower Eversense 365 sensor glucose readings"
+          ],
+          "answer": 0,
+          "rationale": "Minocycline products and risks differ from doxycycline",
+          "reviewHref": "#agent-differences"
+        },
+        "feedingClauseStatus": "Incomplete: shared tetracycline-specific adsorption clause requires product/primary evidence",
+        "wholeQuestionStatus": "Full nonfeeding topic and one-best-answer audit still pending for its parent module."
+      },
+      {
+        "module": "tetracycline-pharmacology",
+        "question": {
+          "id": "tetracycline-pharmacology-035",
+          "lesson": "clinical-selection",
+          "question": "Which assessment is most appropriate for chlamydial infection?",
+          "choices": [
+            "Assess infection site, pregnancy, adherence, partners, coinfection, and follow-up",
+            "Assess antacids, supplements, dairy, tube feeds, enteral formulas, timing, and adherence",
+            "Assess symptom timing, falls, occupation, dose, renal or hepatic function, and alternatives",
+            "Assess organism, MIC, tet genes, site, prior exposure, and response"
+          ],
+          "answer": 0,
+          "rationale": "Clinical cure and reinfection prevention are connected",
+          "reviewHref": "#clinical-selection"
+        },
+        "feedingClauseStatus": "Shared cation-assessment clause book-supported; retained unchanged",
+        "wholeQuestionStatus": "Full nonfeeding topic and one-best-answer audit still pending for its parent module."
+      },
+      {
+        "module": "tetracycline-pharmacology",
+        "question": {
+          "id": "tetracycline-pharmacology-041",
+          "lesson": "clinical-selection",
+          "question": "Which principle best characterizes Lyme disease?",
+          "choices": [
+            "Doxycycline has roles in selected Lyme disease presentations and prophylaxis only when current criteria are met",
+            "Enteral formulas and dosage-form design can alter tetracycline delivery through chelation, adsorption, or unsafe manipulation",
+            "Tetracycline-class medicines can falsely lower Eversense 365 sensor glucose readings",
+            "Tetracycline use needs a defined syndrome, active agent, duration, source-control plan, and reassessment"
+          ],
+          "answer": 0,
+          "rationale": "Disease stage and exposure criteria determine whether doxycycline is appropriate",
+          "reviewHref": "#clinical-selection"
+        },
+        "feedingClauseStatus": "Incomplete: shared tetracycline-specific adsorption clause requires product/primary evidence",
+        "wholeQuestionStatus": "Full nonfeeding topic and one-best-answer audit still pending for its parent module."
+      },
+      {
+        "module": "tetracycline-pharmacology",
+        "question": {
+          "id": "tetracycline-pharmacology-115",
+          "lesson": "resistance-stewardship",
+          "question": "Which assessment is most appropriate for ribosomal protection?",
+          "choices": [
+            "Assess organism, mechanism, agent, MIC, site, and laboratory method",
+            "Assess indication, formulation, cations, esophageal risk, photosensitivity, and intracranial hypertension",
+            "Assess purulence, severity, source control, streptococcal concern, culture, and systemic illness",
+            "Assess antacids, supplements, dairy, tube feeds, enteral formulas, timing, and adherence"
+          ],
+          "answer": 0,
+          "rationale": "Some newer structures evade selected mechanisms but not all resistance",
+          "reviewHref": "#resistance-stewardship"
+        },
+        "feedingClauseStatus": "Shared cation-assessment clause book-supported; retained unchanged",
+        "wholeQuestionStatus": "Full nonfeeding topic and one-best-answer audit still pending for its parent module."
+      },
+      {
+        "module": "tetracycline-pharmacology",
+        "question": {
+          "id": "tetracycline-pharmacology-121",
+          "lesson": "clinical-integration",
+          "question": "Which principle best characterizes complete tetracycline plan?",
+          "choices": [
+            "A complete plan aligns diagnosis, organism, agent, product, dose, administration, safety, monitoring, and exit criteria",
+            "Omadacycline is an aminomethylcycline labeled for adult CABP and ABSSSI with demanding oral fasting instructions",
+            "Doxycycline, minocycline, and sarecycline products have distinct acne indications and stewardship considerations",
+            "Enteral formulas and dosage-form design can alter tetracycline delivery through chelation, adsorption, or unsafe manipulation"
+          ],
+          "answer": 0,
+          "rationale": "Safe use requires coordinated selection and execution",
+          "reviewHref": "#clinical-integration"
+        },
+        "feedingClauseStatus": "Incomplete: shared tetracycline-specific adsorption clause requires product/primary evidence",
+        "wholeQuestionStatus": "Full nonfeeding topic and one-best-answer audit still pending for its parent module."
+      },
+      {
+        "module": "clinical-drug-interactions",
+        "question": {
+          "id": "clinical-drug-interactions-007",
+          "question": "Which assessment is most appropriate for interaction direction and magnitude?",
+          "choices": [
+            "Review human exposure data, current labeling, dose, route, duration, and therapeutic index.",
+            "Review cation product, object drug, formulation, meal timing, tube feeds, and label instructions.",
+            "Review metformin or other substrate exposure, creatinine timing, urinalysis, symptoms, lactate risk, and exact inhibitor.",
+            "Review gait, falls, orthostasis, cognition, caregiver support, renal function, and duplicate therapy."
+          ],
+          "answer": 0,
+          "rationale": "Magnitude must be interpreted against the patient's margin of safety.",
+          "reviewHref": "#interaction-framework"
+        },
+        "feedingClauseStatus": "Shared cation-assessment clause book-supported; retained unchanged",
+        "wholeQuestionStatus": "Full nonfeeding topic and one-best-answer audit still pending for its parent module."
+      },
+      {
+        "module": "clinical-drug-interactions",
+        "question": {
+          "id": "clinical-drug-interactions-079",
+          "question": "Which assessment is most appropriate for protein binding displacement?",
+          "choices": [
+            "Review albumin, organ function, free concentration when useful, total concentration, and toxicity.",
+            "Review label, third-party testing, duplicate ingredients, evidence, organ function, and all medicines.",
+            "Review indications, efficacy, alternatives, timing, access, withdrawal risk, and follow-up.",
+            "Review cation product, object drug, formulation, meal timing, tube feeds, and label instructions."
+          ],
+          "answer": 0,
+          "rationale": "Unbound concentration is governed by more than binding alone.",
+          "reviewHref": "#transporter-distribution-interactions"
+        },
+        "feedingClauseStatus": "Shared cation-assessment clause book-supported; retained unchanged",
+        "wholeQuestionStatus": "Full nonfeeding topic and one-best-answer audit still pending for its parent module."
+      },
+      {
+        "module": "clinical-drug-interactions",
+        "question": {
+          "id": "clinical-drug-interactions-127",
+          "question": "Which assessment is most appropriate for pregnancy and lactation interaction assessment?",
+          "choices": [
+            "Review pregnancy timing, lactation, maternal disease, active metabolites, alternatives, and infant monitoring.",
+            "Review baseline, first follow-up, later interval, action threshold, and contingency plan.",
+            "Review cation product, object drug, formulation, meal timing, tube feeds, and label instructions.",
+            "Review transporter, renal function, object-drug level or response, timing, and alternatives."
+          ],
+          "answer": 0,
+          "rationale": "Narrative evidence preserves timing, severity, and clinical context.",
+          "reviewHref": "#drug-disease-interactions"
+        },
+        "feedingClauseStatus": "Shared cation-assessment clause book-supported; retained unchanged",
+        "wholeQuestionStatus": "Full nonfeeding topic and one-best-answer audit still pending for its parent module."
+      }
+    ],
+    "otherBanks": "Still pending, including working-only warfarin semantics; no broader-bank closure."
+  },
+  "validation": {
+    "isolatedBuild": {
+      "staticPages": 567,
+      "exitCode": 0,
+      "logSha256": "1b5481da1dccdd2b82acc466286a8593f6fcfbad61582118f37741c4573e59d6"
+    },
+    "focusedStructural": {
+      "clinical-drug-interactions": {
+        "modules": 1,
+        "questions": 160,
+        "hardErrors": [],
+        "sourceGaps": [],
+        "sizeAdvisories": [],
+        "thinLessons": [],
+        "weakestModules": [
+          {
+            "module": "clinical-drug-interactions",
+            "lessons": 10,
+            "questions": 160,
+            "minimumLessonCoverage": 16
+          }
+        ]
+      },
+      "tetracycline-pharmacology": {
+        "modules": 1,
+        "questions": 132,
+        "hardErrors": [],
+        "sourceGaps": [],
+        "sizeAdvisories": [],
+        "thinLessons": [],
+        "weakestModules": [
+          {
+            "module": "tetracycline-pharmacology",
+            "lessons": 10,
+            "questions": 132,
+            "minimumLessonCoverage": 8
+          }
+        ]
+      }
+    },
+    "technical": {
+      "status": "passed",
+      "modules": [
+        {
+          "slug": "clinical-drug-interactions",
+          "bank": 160,
+          "bodies": 41,
+          "changedQuestions": [
+            {
+              "id": "clinical-drug-interactions-033",
+              "question": "Which principle best characterizes polyvalent cation chelation?",
+              "choices": [
+                "Selected medicines form poorly absorbed complexes with calcium, magnesium, iron, or aluminum.",
+                "The swallowed dose guarantees the same absorbed dose when a mineral product is added.",
+                "Mineral-containing formulas cannot interact because the minerals are part of nutrition.",
+                "Diluting the dose with water removes any need to separate interacting products."
+              ],
+              "answer": 0,
+              "rationale": "Polyvalent cations can bind selected oral medicines into poorly absorbed complexes. Tetracyclines, fluoroquinolones, and levothyroxine are feeding-related examples. A measured administered dose, a nutritious formula, or water dilution does not establish that the absorption interaction has been prevented.",
+              "reviewHref": "#absorption-interactions"
+            },
+            {
+              "id": "clinical-drug-interactions-034",
+              "question": "Which clinical action best applies to polyvalent cation chelation?",
+              "choices": [
+                "Use the exact product's supported separation instructions or choose another route or agent.",
+                "Use one fixed separation interval for every interacting medicine and mineral product.",
+                "Keep simultaneous administration and increase the medicine dose without product-specific evidence.",
+                "Stop nutrition indefinitely rather than coordinate the medicine and feed schedule."
+              ],
+              "answer": 0,
+              "rationale": "Review the exact medicine, formulation, and interacting product before selecting a supported separation or an alternative administration plan. Drug-nutrient and binder schedules can differ; one interval or an improvised dose increase does not fit every product.",
+              "reviewHref": "#absorption-interactions"
+            },
+            {
+              "id": "clinical-drug-interactions-035",
+              "question": "Which assessment is most appropriate for polyvalent cation chelation?",
+              "choices": [
+                "Review cation product, object drug, formulation, meal timing, tube feeds, and label instructions.",
+                "Check prescription dose and adherence, but exclude mineral-containing feeds from the interaction review.",
+                "Check calcium supplements only, and omit antacids, iron, magnesium, and the feeding formula.",
+                "Confirm the feeding route, but assume that a water flush prevents cation interactions."
+              ],
+              "answer": 0,
+              "rationale": "Identify both the susceptible medicine and each potential cation source, including supplements, antacids, and feeds. Formulation and actual administration times determine which product instructions apply. Checking only one mineral, the prescribed dose, or tube flushing leaves important absorption risks unresolved.",
+              "reviewHref": "#absorption-interactions"
+            },
+            {
+              "id": "clinical-drug-interactions-036",
+              "question": "Which reasoning hazard is most important to prevent with polyvalent cation chelation?",
+              "choices": [
+                "One universal spacing interval can be too short or unnecessarily burdensome.",
+                "Looking for mineral sources in nonprescription products and the feeding formula.",
+                "Using the exact product instructions to plan separation from interacting products.",
+                "Documenting actual medicine and feed times so the planned separation can be checked."
+              ],
+              "answer": 0,
+              "rationale": "Applying one interval to every product is the hazard: the required direction and duration of separation differ. The other choices are appropriate reconciliation and scheduling steps, not reasons to avoid reviewing an interaction.",
+              "reviewHref": "#absorption-interactions"
+            },
+            {
+              "id": "clinical-drug-interactions-045",
+              "question": "Which principle best characterizes feeding tube and formulation interaction?",
+              "choices": [
+                "Crushing or tube delivery can alter release, stability, adsorption, and site of delivery.",
+                "A verified feeding-tube location makes release design and preparation instructions irrelevant.",
+                "A water flush guarantees that every formulation reaches the patient unchanged.",
+                "Tube administration prevents both physical changes and nutrient interactions."
+              ],
+              "answer": 0,
+              "rationale": "Manipulation can change release or other physical and chemical properties, and tube administration changes the delivery pathway. Ciprofloxacin oil-based suspension adheres to tubing, illustrating surface retention; adsorption refers to drug adherence to a container surface. This general example does not establish adsorption for every drug or dosage form.",
+              "reviewHref": "#absorption-interactions"
+            },
+            {
+              "id": "clinical-drug-interactions-046",
+              "question": "Which clinical action best applies to feeding tube and formulation interaction?",
+              "choices": [
+                "Verify dosage-form integrity, tube location, preparation, flushing, and nutrition timing.",
+                "Treat every liquid as tube-compatible and proceed without checking the product.",
+                "Crush the medicine into the formula to avoid a separate administration step.",
+                "Review the dose only and retain the usual schedule despite concurrent interacting feeds."
+              ],
+              "answer": 0,
+              "rationale": "Product-specific review is needed because both solids and liquids can be unsuitable for feeding tubes. Check the formulation, delivery site, preparation, water flushing, and drug-nutrient timing. A liquid dosage form, correct nominal dose, or mixing into formula does not establish safe delivery.",
+              "reviewHref": "#absorption-interactions"
+            },
+            {
+              "id": "clinical-drug-interactions-047",
+              "question": "Which assessment is most appropriate for feeding tube and formulation interaction?",
+              "choices": [
+                "Review formulation, release mechanism, tube material and location, feeds, clogging, and label instructions.",
+                "Check the active ingredient and dose, but omit release design and tube compatibility.",
+                "Record tube location, but omit mineral-containing feeds and medicine administration times.",
+                "Check for blockage after dosing, and use that observation instead of reviewing preparation instructions."
+              ],
+              "answer": 0,
+              "rationale": "Review the entire administration pathway before giving the medicine. Release design, tube location and material, feeds, preparation, and blockage risk can affect delivery; product instructions determine the compatible plan. A dose, location, or post-dose blockage check alone is incomplete.",
+              "reviewHref": "#absorption-interactions"
+            },
+            {
+              "id": "clinical-drug-interactions-048",
+              "question": "Which reasoning hazard is most important to prevent with feeding tube and formulation interaction?",
+              "choices": [
+                "Crushing an extended-release or hazardous product can change exposure and safety.",
+                "Checking product instructions before manipulating a modified-release dosage form.",
+                "Selecting a compatible preparation and keeping it separate from the formula.",
+                "Reviewing medicine and feed timing alongside appropriate water-flush instructions."
+              ],
+              "answer": 0,
+              "rationale": "Extended-release and hazardous products generally should not be crushed for feeding-tube administration. Crushing a long-acting product can release the dose too quickly. The other choices are protective review and administration steps, not the hazard being asked about.",
+              "reviewHref": "#absorption-interactions"
+            }
+          ],
+          "retainedBodies": [
+            {
+              "lesson": "absorption-interactions",
+              "heading": "Separate chelation from timing folklore",
+              "body": "Polyvalent cations can form poorly absorbed complexes with selected tetracyclines, fluoroquinolones, thyroid hormone, and other medicines. The required spacing is product specific. A universal two-hour rule is unsafe because direction and duration differ."
+            },
+            {
+              "lesson": "absorption-interactions",
+              "heading": "Protect formulation and route",
+              "body": "Crushing, opening, mixing, or delivering through a feeding tube can change release, stability, adsorption, or site of delivery. Enteral nutrition can complicate administration for selected medicines. Verify dosage-form integrity, tube location, preparation, flushing, and interruption requirements."
+            }
+          ],
+          "preservation": {
+            "allIdsPromptsKeysCorrectAnswerTextsAnchors": true,
+            "unchangedOtherBankObjects": 152,
+            "allBodiesChecksAndMetadataUnchanged": true,
+            "allFiveCumulativeObjectsUnchanged": true
+          },
+          "moduleSha256": "c7ca0d7c41e4e1b34b7c66152d021bd9013713c93fb8497e446f71d710b92d96",
+          "contentHashes": {
+            "src/data/questionBanks/clinicalDrugInteractions.js": "9ed85b16c50ba48c9d1c589780d97bf65bdad69a15efd17cb71c4f5f2c6b5421"
+          }
+        },
+        {
+          "slug": "tetracycline-pharmacology",
+          "bank": 132,
+          "bodies": 40,
+          "changedQuestions": [
+            {
+              "id": "tetracycline-pharmacology-057",
+              "lesson": "pk-dosing",
+              "question": "Which principle best characterizes dosage forms?",
+              "choices": [
+                "Immediate-release, delayed-release, capsule, tablet, suspension, and intravenous products can have different instructions",
+                "The active ingredient name is enough to determine every formulation's preparation instructions",
+                "An oral liquid is always compatible with every feeding tube",
+                "Modified-release products can be crushed whenever the same total milligram dose is given"
+              ],
+              "answer": 0,
+              "rationale": "Formulation changes how a dose is prepared and delivered. Tetracycline products include oral and injectable formulations, and long-acting dosage forms need verified manipulation instructions. The ingredient name or total milligrams alone does not establish tube compatibility or preserve release design.",
+              "reviewHref": "#pk-dosing"
+            },
+            {
+              "id": "tetracycline-pharmacology-058",
+              "lesson": "pk-dosing",
+              "question": "Which clinical action best applies to dosage forms?",
+              "choices": [
+                "Verify formulation before calculating or counseling",
+                "Calculate the milligram dose first and assume that every formulation can be prepared the same way",
+                "Replace a tablet with any liquid product without checking strength or tube suitability",
+                "Use the feeding formula as the preparation liquid so the product does not need a separate review"
+              ],
+              "answer": 0,
+              "rationale": "Verify the exact product before calculation and counseling. Strength, release design, preparation, and administration instructions can differ, and liquids are not automatically tube-compatible. Medication should not be mixed directly into the feeding formula.",
+              "reviewHref": "#pk-dosing"
+            },
+            {
+              "id": "tetracycline-pharmacology-059",
+              "lesson": "pk-dosing",
+              "question": "Which assessment is most appropriate for dosage forms?",
+              "choices": [
+                "Assess strength, release design, ability to swallow, tube access, food instructions, and substitution",
+                "Check the brand name and dose, but omit release design, swallowing ability, and tube access",
+                "Check the infection indication only, and assume food and preparation instructions are interchangeable",
+                "Check whether a liquid is available, and substitute it without reviewing strength or product instructions"
+              ],
+              "answer": 0,
+              "rationale": "Review strength and release design together with the patient's administration pathway. Swallowing ability, feeding access, food instructions, and the proposed substitution affect whether a product can be delivered as intended. Brand, indication, or liquid availability alone is insufficient.",
+              "reviewHref": "#pk-dosing"
+            },
+            {
+              "id": "tetracycline-pharmacology-060",
+              "lesson": "pk-dosing",
+              "question": "Which reasoning hazard is most important to prevent with dosage forms?",
+              "choices": [
+                "Crushing a modified-release product without verification",
+                "Checking the release design before deciding whether a product can be manipulated",
+                "Reviewing product instructions before replacing a tablet with a liquid",
+                "Confirming a compatible preparation and delivery route before administration"
+              ],
+              "answer": 0,
+              "rationale": "Unverified crushing of a modified-release product is the hazard. Long-acting dosage forms may release medication too quickly when damaged. The other choices are appropriate verification steps and do not justify crushing an unsuitable product.",
+              "reviewHref": "#pk-dosing"
+            },
+            {
+              "id": "tetracycline-pharmacology-061",
+              "lesson": "administration",
+              "question": "Which principle best characterizes cation chelation?",
+              "choices": [
+                "Calcium, magnesium, aluminum, iron, bismuth, and other polyvalent cations can reduce absorption through chelation",
+                "Mineral products improve tetracycline absorption because they are useful nutrients",
+                "Chelation occurs only after the antibiotic has reached the bloodstream",
+                "A water flush removes all absorption effects of concurrent mineral-containing feeds"
+              ],
+              "answer": 0,
+              "rationale": "Polyvalent cations in antacids, mineral products, and feeding formulas can chelate tetracyclines and reduce bioavailability. Nutritional value does not prevent this interaction, and tube flushing is not evidence that absorption interference has been eliminated.",
+              "reviewHref": "#administration"
+            },
+            {
+              "id": "tetracycline-pharmacology-062",
+              "lesson": "administration",
+              "question": "Which clinical action best applies to cation chelation?",
+              "choices": [
+                "Separate products according to the exact label and clinical plan",
+                "Give the antibiotic with the interacting mineral product and compensate with a larger dose",
+                "Apply the same separation schedule to every tetracycline and every mineral product",
+                "Ignore mineral-containing feeds because only separate supplement tablets can interact"
+              ],
+              "answer": 0,
+              "rationale": "Separate the interacting products using instructions for the exact antibiotic and product. Food instructions and cation or binder schedules differ by product. Do not replace a verified schedule with dose escalation, one class-wide interval, or omission of feed minerals.",
+              "reviewHref": "#administration"
+            },
+            {
+              "id": "tetracycline-pharmacology-063",
+              "lesson": "administration",
+              "question": "Which assessment is most appropriate for cation chelation?",
+              "choices": [
+                "Assess antacids, supplements, dairy, tube feeds, enteral formulas, timing, and adherence",
+                "Review prescription medicines only, and omit supplements, dairy, and formula minerals",
+                "Review calcium tablets only, and ignore antacids, iron, and magnesium products",
+                "Review feed calories and dose adherence, but omit actual antibiotic and mineral administration times"
+              ],
+              "answer": 0,
+              "rationale": "Assess all potential cation sources and their timing, including nonprescription products, dairy, and feeds. Product food instructions can differ, and adherence to the dose alone does not establish an appropriate absorption plan.",
+              "reviewHref": "#administration"
+            },
+            {
+              "id": "tetracycline-pharmacology-064",
+              "lesson": "administration",
+              "question": "Which reasoning hazard is most important to prevent with cation chelation?",
+              "choices": [
+                "Using one spacing interval for the entire class",
+                "Checking the named product's food and cation instructions",
+                "Identifying minerals in supplements, antacids, and the feeding formula",
+                "Coordinating and documenting the antibiotic and interacting-product schedule"
+              ],
+              "answer": 0,
+              "rationale": "A single interval for the whole class is the hazard. The reviewed book gives distinct food and interaction instructions, so the exact product and interacting source must be identified. The other choices are appropriate steps for building the schedule.",
+              "reviewHref": "#administration"
+            },
+            {
+              "id": "tetracycline-pharmacology-070",
+              "lesson": "administration",
+              "question": "Which clinical action best applies to feeding-tube administration?",
+              "choices": [
+                "Confirm tube compatibility and a product-specific feed plan",
+                "Select a liquid solely because it is easier to push through the tube",
+                "Mix the medicine into the formula so feeds can continue without a separate dose",
+                "Preserve the usual oral schedule without checking formula minerals or tube compatibility"
+              ],
+              "answer": 0,
+              "rationale": "Confirm the dosage form and feeding-tube preparation instructions, then coordinate a product-specific feeding plan. Solids and liquids may be unsuitable for a feeding tube, and tetracyclines interact with feed cations. Liquid availability, direct formula mixing, or an unchanged oral schedule does not resolve those issues.",
+              "reviewHref": "#administration"
+            },
+            {
+              "id": "tetracycline-pharmacology-071",
+              "lesson": "administration",
+              "question": "Which assessment is most appropriate for feeding-tube administration?",
+              "choices": [
+                "Assess tube site, formulation, crushing suitability, formula minerals, flushes, and timing",
+                "Assess the prescribed dose only, and omit tube site and formulation",
+                "Assess formula calories, and use them instead of checking mineral content and drug timing",
+                "Assess tube patency after the dose, and omit preparation and crushing suitability"
+              ],
+              "answer": 0,
+              "rationale": "A tube plan needs the delivery site, dosage form, manipulation suitability, formula minerals, flushing, and actual timing. These checks address tube-compatibility and cation-interaction risks without prescribing a universal feed-hold interval. Dose, calorie content, or patency alone is incomplete.",
+              "reviewHref": "#administration"
+            },
+            {
+              "id": "tetracycline-pharmacology-072",
+              "lesson": "administration",
+              "question": "Which reasoning hazard is most important to prevent with feeding-tube administration?",
+              "choices": [
+                "Crushing and mixing the drug directly into formula",
+                "Reviewing the exact dosage form before deciding whether it can be manipulated",
+                "Preparing a verified compatible dose separately from the nutrition formula",
+                "Using appropriate water flushing and a verified medicine-feed schedule"
+              ],
+              "answer": 0,
+              "rationale": "Mixing medication directly into the formula is the hazard and does not follow appropriate feeding-tube administration. Appropriate crushing, if supported for the exact product, does not permit formula mixing. The other choices are protective verification, preparation, and timing steps.",
+              "reviewHref": "#administration"
+            }
+          ],
+          "retainedBodies": [
+            {
+              "lesson": "pk-dosing",
+              "heading": "Release design matters",
+              "body": "Immediate-release, delayed-release, capsule, tablet, suspension, and IV products can have different instructions. Do not crush, open, or substitute modified-release products without verification."
+            },
+            {
+              "lesson": "administration",
+              "heading": "Map every cation source",
+              "body": "Calcium, magnesium, aluminum, iron, bismuth, multivitamins, and enteral formulas can reduce absorption. Separation intervals and food effects are product specific."
+            },
+            {
+              "lesson": "administration",
+              "heading": "Do not improvise tube delivery",
+              "body": "Confirm that the dosage form can be manipulated, identify mineral content in the formula, plan feed interruption when justified, flush appropriately, and document restart timing."
+            },
+            {
+              "lesson": "administration",
+              "heading": "Teach a complete sequence",
+              "body": "A patient needs exact clock times, not a vague instruction to avoid dairy. Include what can be taken with the dose, how long to separate products, and what to do if timing fails."
+            }
+          ],
+          "preservation": {
+            "allIdsPromptsKeysCorrectAnswerTextsAnchors": true,
+            "unchangedOtherBankObjects": 121,
+            "allBodiesChecksAndMetadataUnchanged": true,
+            "allFiveCumulativeObjectsUnchanged": true
+          },
+          "moduleSha256": "5cd7077a1e2107803c7118a51cb0f340810bba9e5b3fd537e339f7d29e19fc1d",
+          "contentHashes": {
+            "src/data/questionBanks/tetracyclinePharmacology.js": "7b905db17de523a9d49cd20f66347f1d89f6db42f7e178fd6343b5f61baaa9e6"
+          }
+        }
+      ],
+      "newDistinctAssessmentChecks": 0,
+      "runningAssessmentChecks": 674,
+      "runningSeparateSourceExamples": 98
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "module": "clinical-drug-interactions",
+          "width": 1440,
+          "renderedBodies": 41,
+          "retainedBodies": 2,
+          "bankItemsCorrectWrong": 8,
+          "unchangedCumulativeRuntimeItems": 5,
+          "cumulativeClinicalSourceClosure": false,
+          "groups": 1,
+          "remediationAndSavedProgress": true
+        },
+        {
+          "module": "clinical-drug-interactions",
+          "width": 390,
+          "renderedBodies": 41,
+          "retainedBodies": 2,
+          "bankItemsCorrectWrong": 8,
+          "unchangedCumulativeRuntimeItems": 5,
+          "cumulativeClinicalSourceClosure": false,
+          "groups": 1,
+          "remediationAndSavedProgress": true
+        },
+        {
+          "module": "tetracycline-pharmacology",
+          "width": 1440,
+          "renderedBodies": 40,
+          "retainedBodies": 4,
+          "bankItemsCorrectWrong": 11,
+          "unchangedCumulativeRuntimeItems": 5,
+          "cumulativeClinicalSourceClosure": false,
+          "groups": 2,
+          "remediationAndSavedProgress": true
+        },
+        {
+          "module": "tetracycline-pharmacology",
+          "width": 390,
+          "renderedBodies": 40,
+          "retainedBodies": 4,
+          "bankItemsCorrectWrong": 11,
+          "unchangedCumulativeRuntimeItems": 5,
+          "cumulativeClinicalSourceClosure": false,
+          "groups": 2,
+          "remediationAndSavedProgress": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "embeddedBrowser": {
+      "status": "passed",
+      "results": [
+        {
+          "module": "clinical-drug-interactions",
+          "section": "absorption-interactions",
+          "width": 1440,
+          "correctWrongFeedback": true
+        },
+        {
+          "module": "clinical-drug-interactions",
+          "section": "absorption-interactions",
+          "width": 390,
+          "correctWrongFeedback": true
+        },
+        {
+          "module": "tetracycline-pharmacology",
+          "section": "pk-dosing",
+          "width": 1440,
+          "correctWrongFeedback": true
+        },
+        {
+          "module": "tetracycline-pharmacology",
+          "section": "administration",
+          "width": 1440,
+          "correctWrongFeedback": true
+        },
+        {
+          "module": "tetracycline-pharmacology",
+          "section": "pk-dosing",
+          "width": 390,
+          "correctWrongFeedback": true
+        },
+        {
+          "module": "tetracycline-pharmacology",
+          "section": "administration",
+          "width": 390,
+          "correctWrongFeedback": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "manualVisual": {
+      "scopedQuestionFeedbackImages": 38,
+      "retainedBodyImages": 12,
+      "retainedEmbeddedImages": 6,
+      "nativePixelSheets": 19,
+      "findings": "All19 complete stems/options/answer corrections/rationales,6 fullbody sections and3 embedded checks read at1440/390. No clipping/overlap.320px overflow checks,all81bodyDOM equality,remediation/savedprogress and unchanged cumulative runtime passed."
+    },
+    "scopeMeaning": "No full parent source audit; structural/runtime green status does not verify unrelated clinical claims or10 unchanged parent cumulative items."
+  },
+  "preservation": {
+    "clinical-drug-interactions": {
+      "allIdsPromptsKeysCorrectAnswerTextsAnchors": true,
+      "unchangedOtherBankObjects": 152,
+      "allBodiesChecksAndMetadataUnchanged": true,
+      "allFiveCumulativeObjectsUnchanged": true
+    },
+    "tetracycline-pharmacology": {
+      "allIdsPromptsKeysCorrectAnswerTextsAnchors": true,
+      "unchangedOtherBankObjects": 121,
+      "allBodiesChecksAndMetadataUnchanged": true,
+      "allFiveCumulativeObjectsUnchanged": true
+    }
+  },
+  "calculationEvidence": {
+    "newDistinctAssessmentChecks": 0,
+    "runningAssessmentChecks": 674,
+    "runningSeparateSourceExamples": 98
+  },
+  "cumulativeReview": {
+    "allTenObjectsUnchanged": true,
+    "runtimeCorrectWrongDesktopMobile": true,
+    "clinicalSourceClosureInThisUnit": false
+  },
+  "coverage": {
+    "modules": [
+      {
+        "module": "clinical-drug-interactions",
+        "bank": 160,
+        "sourceVerifiedBankInThisUnit": 8,
+        "sourceVerifiedBankIds": [
+          "clinical-drug-interactions-033",
+          "clinical-drug-interactions-034",
+          "clinical-drug-interactions-035",
+          "clinical-drug-interactions-036",
+          "clinical-drug-interactions-045",
+          "clinical-drug-interactions-046",
+          "clinical-drug-interactions-047",
+          "clinical-drug-interactions-048"
+        ],
+        "bodies": 41,
+        "sourceVerifiedBodiesInThisUnit": 2,
+        "embeddedChecks": 10,
+        "sourceVerifiedEmbeddedInThisUnit": 1,
+        "wholeModuleVerified": false
+      },
+      {
+        "module": "tetracycline-pharmacology",
+        "bank": 132,
+        "sourceVerifiedBankInThisUnit": 11,
+        "sourceVerifiedBankIds": [
+          "tetracycline-pharmacology-057",
+          "tetracycline-pharmacology-058",
+          "tetracycline-pharmacology-059",
+          "tetracycline-pharmacology-060",
+          "tetracycline-pharmacology-061",
+          "tetracycline-pharmacology-062",
+          "tetracycline-pharmacology-063",
+          "tetracycline-pharmacology-064",
+          "tetracycline-pharmacology-070",
+          "tetracycline-pharmacology-071",
+          "tetracycline-pharmacology-072"
+        ],
+        "bodies": 40,
+        "sourceVerifiedBodiesInThisUnit": 4,
+        "embeddedChecks": 10,
+        "sourceVerifiedEmbeddedInThisUnit": 2,
+        "wholeModuleVerified": false
+      }
+    ],
+    "newBroaderBankSourceVerified": 19,
+    "newRetainedBodiesVerified": 6,
+    "newRetainedEmbeddedChecksVerified": 3,
+    "ENBankSourceVerified": 66,
+    "ENBankTotal": 108,
+    "ENBodiesSourceVerified": 16,
+    "ENBodiesTotal": 36,
+    "ENChecksSourceVerified": 2,
+    "ENChecksTotal": 6,
+    "ENFiguresPending": 6,
+    "ENCurrentCumulativeSourceVerified": 4,
+    "ENCurrentCumulativeTotal": 5,
+    "wholeChapterVerified": false
+  },
+  "wholeModuleVerified": false,
+  "wholeChapterVerified": false,
+  "outsideENSourceApproval": "Pending human response; no outside EN sources opened.",
+  "nextAction": "Reconcile the working-only warfarin feeding semantic question with its committed parent and continue the broader feeding inventory, preserving the dirty parent rewrite. Tetracycline069 and shared adsorption distractors017/041/121 remain source-pending: a general adsorption definition and ciprofloxacin/IV examples do not establish tetracycline-specific adsorption. Complete42 EN bank items,20 bodies,four embedded checks,six figures and metadata recorded in enteral-nutrition-book-safety-coverage-review.json; primaryASPEN/SCCM andFDA guidance/product-label approval remains unanswered. No outsideEN sources opened. Then pediatricPN and clinicalfluid/calcium dependencies. Chapter1entry15/Chapter11 reviewing; do not advance sequentially or close full modules yet.",
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "contentCommit": "pending",
+    "remoteHashVerified": false,
+    "receipt": "sequential-release-en-broader-ddi-tetracycline-2026-10-01.json",
+    "production": "not verified",
+    "mainMerge": "not performed"
+  }
+}

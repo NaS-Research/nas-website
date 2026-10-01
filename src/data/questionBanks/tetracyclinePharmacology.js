@@ -46,4 +46,110 @@ const cases = [
   ["132", "agent-differences", "A legacy note says omadacycline carries a CABP mortality-imbalance warning. What should the learner do?", ["Use the current May 2026 label, which removed that warning, while retaining all current labeled precautions", "Keep the old warning forever", "Ignore all safety information", "Substitute eravacycline orally"], "Educational content must reconcile historical warnings with the current label."],
 ].map(([id, lesson, question, choices, rationale]) => ({ id: `tetracycline-pharmacology-${id}`, lesson, question, choices, answer: 0, rationale, reviewHref: `#${lesson}` }));
 
-export const tetracyclinePharmacologyQuestionBank = [...generated, ...cases];
+// Preserve unreviewed rows while applying individually reviewed feeding repairs.
+const feedingQuestionRepairs = {
+  "tetracycline-pharmacology-057": {
+    "choices": [
+      "Immediate-release, delayed-release, capsule, tablet, suspension, and intravenous products can have different instructions",
+      "The active ingredient name is enough to determine every formulation's preparation instructions",
+      "An oral liquid is always compatible with every feeding tube",
+      "Modified-release products can be crushed whenever the same total milligram dose is given"
+    ],
+    "rationale": "Formulation changes how a dose is prepared and delivered. Tetracycline products include oral and injectable formulations, and long-acting dosage forms need verified manipulation instructions. The ingredient name or total milligrams alone does not establish tube compatibility or preserve release design."
+  },
+  "tetracycline-pharmacology-058": {
+    "choices": [
+      "Verify formulation before calculating or counseling",
+      "Calculate the milligram dose first and assume that every formulation can be prepared the same way",
+      "Replace a tablet with any liquid product without checking strength or tube suitability",
+      "Use the feeding formula as the preparation liquid so the product does not need a separate review"
+    ],
+    "rationale": "Verify the exact product before calculation and counseling. Strength, release design, preparation, and administration instructions can differ, and liquids are not automatically tube-compatible. Medication should not be mixed directly into the feeding formula."
+  },
+  "tetracycline-pharmacology-059": {
+    "choices": [
+      "Assess strength, release design, ability to swallow, tube access, food instructions, and substitution",
+      "Check the brand name and dose, but omit release design, swallowing ability, and tube access",
+      "Check the infection indication only, and assume food and preparation instructions are interchangeable",
+      "Check whether a liquid is available, and substitute it without reviewing strength or product instructions"
+    ],
+    "rationale": "Review strength and release design together with the patient's administration pathway. Swallowing ability, feeding access, food instructions, and the proposed substitution affect whether a product can be delivered as intended. Brand, indication, or liquid availability alone is insufficient."
+  },
+  "tetracycline-pharmacology-060": {
+    "choices": [
+      "Crushing a modified-release product without verification",
+      "Checking the release design before deciding whether a product can be manipulated",
+      "Reviewing product instructions before replacing a tablet with a liquid",
+      "Confirming a compatible preparation and delivery route before administration"
+    ],
+    "rationale": "Unverified crushing of a modified-release product is the hazard. Long-acting dosage forms may release medication too quickly when damaged. The other choices are appropriate verification steps and do not justify crushing an unsuitable product."
+  },
+  "tetracycline-pharmacology-061": {
+    "choices": [
+      "Calcium, magnesium, aluminum, iron, bismuth, and other polyvalent cations can reduce absorption through chelation",
+      "Mineral products improve tetracycline absorption because they are useful nutrients",
+      "Chelation occurs only after the antibiotic has reached the bloodstream",
+      "A water flush removes all absorption effects of concurrent mineral-containing feeds"
+    ],
+    "rationale": "Polyvalent cations in antacids, mineral products, and feeding formulas can chelate tetracyclines and reduce bioavailability. Nutritional value does not prevent this interaction, and tube flushing is not evidence that absorption interference has been eliminated."
+  },
+  "tetracycline-pharmacology-062": {
+    "choices": [
+      "Separate products according to the exact label and clinical plan",
+      "Give the antibiotic with the interacting mineral product and compensate with a larger dose",
+      "Apply the same separation schedule to every tetracycline and every mineral product",
+      "Ignore mineral-containing feeds because only separate supplement tablets can interact"
+    ],
+    "rationale": "Separate the interacting products using instructions for the exact antibiotic and product. Food instructions and cation or binder schedules differ by product. Do not replace a verified schedule with dose escalation, one class-wide interval, or omission of feed minerals."
+  },
+  "tetracycline-pharmacology-063": {
+    "choices": [
+      "Assess antacids, supplements, dairy, tube feeds, enteral formulas, timing, and adherence",
+      "Review prescription medicines only, and omit supplements, dairy, and formula minerals",
+      "Review calcium tablets only, and ignore antacids, iron, and magnesium products",
+      "Review feed calories and dose adherence, but omit actual antibiotic and mineral administration times"
+    ],
+    "rationale": "Assess all potential cation sources and their timing, including nonprescription products, dairy, and feeds. Product food instructions can differ, and adherence to the dose alone does not establish an appropriate absorption plan."
+  },
+  "tetracycline-pharmacology-064": {
+    "choices": [
+      "Using one spacing interval for the entire class",
+      "Checking the named product's food and cation instructions",
+      "Identifying minerals in supplements, antacids, and the feeding formula",
+      "Coordinating and documenting the antibiotic and interacting-product schedule"
+    ],
+    "rationale": "A single interval for the whole class is the hazard. The reviewed book gives distinct food and interaction instructions, so the exact product and interacting source must be identified. The other choices are appropriate steps for building the schedule."
+  },
+  "tetracycline-pharmacology-070": {
+    "choices": [
+      "Confirm tube compatibility and a product-specific feed plan",
+      "Select a liquid solely because it is easier to push through the tube",
+      "Mix the medicine into the formula so feeds can continue without a separate dose",
+      "Preserve the usual oral schedule without checking formula minerals or tube compatibility"
+    ],
+    "rationale": "Confirm the dosage form and feeding-tube preparation instructions, then coordinate a product-specific feeding plan. Solids and liquids may be unsuitable for a feeding tube, and tetracyclines interact with feed cations. Liquid availability, direct formula mixing, or an unchanged oral schedule does not resolve those issues."
+  },
+  "tetracycline-pharmacology-071": {
+    "choices": [
+      "Assess tube site, formulation, crushing suitability, formula minerals, flushes, and timing",
+      "Assess the prescribed dose only, and omit tube site and formulation",
+      "Assess formula calories, and use them instead of checking mineral content and drug timing",
+      "Assess tube patency after the dose, and omit preparation and crushing suitability"
+    ],
+    "rationale": "A tube plan needs the delivery site, dosage form, manipulation suitability, formula minerals, flushing, and actual timing. These checks address tube-compatibility and cation-interaction risks without prescribing a universal feed-hold interval. Dose, calorie content, or patency alone is incomplete."
+  },
+  "tetracycline-pharmacology-072": {
+    "choices": [
+      "Crushing and mixing the drug directly into formula",
+      "Reviewing the exact dosage form before deciding whether it can be manipulated",
+      "Preparing a verified compatible dose separately from the nutrition formula",
+      "Using appropriate water flushing and a verified medicine-feed schedule"
+    ],
+    "rationale": "Mixing medication directly into the formula is the hazard and does not follow appropriate feeding-tube administration. Appropriate crushing, if supported for the exact product, does not permit formula mixing. The other choices are protective verification, preparation, and timing steps."
+  }
+};
+
+export const tetracyclinePharmacologyQuestionBank = [...generated, ...cases].map((question) => {
+  const repair = feedingQuestionRepairs[question.id];
+  return repair ? { ...question, ...repair } : question;
+});
