@@ -1,0 +1,651 @@
+{
+  "drug": "mirabegron",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Current full Astellas branded label, current Lupin generic adult-tablet and Alkem/Ascend pediatric-suspension labels; all formulation/indication/population directions and current FDA status kept distinct.",
+  "sources": [
+    {
+      "id": "myr",
+      "title": "Astellas · current Myrbetriq tablets and Granules",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ba9e9e15-e666-4c56-9271-2e24739cfa2d",
+      "note": "Full public manufacturer label and patient instructions; SPL version 17, effective 20240801. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "17",
+      "effective_date": "20240801",
+      "xml_sha256": "53be4d177b1e5fb63f12542e12c6d59fb225f7f111067bbdcafc8f10d92d836e",
+      "retrieved_xml": "/tmp/nas-drug-sources/myr.xml"
+    },
+    {
+      "id": "myrgeneric",
+      "title": "Lupin/Remedy · current generic adult tablets",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0054db9-e38a-4786-be2c-996fa5b8f47d",
+      "note": "Full public manufacturer label and patient instructions; SPL version 1, effective 20260522. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "1",
+      "effective_date": "20260522",
+      "xml_sha256": "2661c0b994e9c9f4414694d8e910a59c8e9453c7a2ce65e3b379e74f48262f54",
+      "retrieved_xml": "/tmp/nas-drug-sources/myrgeneric.xml"
+    },
+    {
+      "id": "myrgranulesgeneric",
+      "title": "Alkem/Ascend · current generic pediatric suspension",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c9022af-4841-4f3f-9737-1c5eef58e86b",
+      "note": "Full public manufacturer label and patient instructions; SPL version 7, effective 20260522. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "7",
+      "effective_date": "20260522",
+      "xml_sha256": "9f6754fb983b3336a0b9793786ff4e36bd50f1f5b258f153d3960ad5dbd4c413",
+      "retrieved_xml": "/tmp/nas-drug-sources/myrgranulesgeneric.xml"
+    },
+    {
+      "id": "NDA202611",
+      "title": "FDA · NDA202611 current products",
+      "publisher": "U.S. Food and Drug Administration",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA202611&limit=1",
+      "note": "Official current product record checked October 1, 2026; marketing status does not establish local stock.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/NDA202611.json",
+      "source_sha256": "9ae168a4bfc2bfd808ec438755414445a8309704bfdc0faa346e7e5673bfb338"
+    },
+    {
+      "id": "NDA213801",
+      "title": "FDA · NDA213801 current products",
+      "publisher": "U.S. Food and Drug Administration",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA213801&limit=1",
+      "note": "Official current product record checked October 1, 2026; marketing status does not establish local stock.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/NDA213801.json",
+      "source_sha256": "dc269a7e8f7ed58be0772b8745a3080a48ae53b6aeb1ff61346c435338d2839a"
+    },
+    {
+      "id": "ANDA209485",
+      "title": "FDA · ANDA209485 current products",
+      "publisher": "U.S. Food and Drug Administration",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:ANDA209485&limit=1",
+      "note": "Official current product record checked October 1, 2026; marketing status does not establish local stock.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/ANDA209485.json",
+      "source_sha256": "8140cfd35a6c3ecd785d7cc41c1d12f481ede42ca7d77181e633dd83f0ed76cb"
+    },
+    {
+      "id": "ANDA219323",
+      "title": "FDA · ANDA219323 current products",
+      "publisher": "U.S. Food and Drug Administration",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:ANDA219323&limit=1",
+      "note": "Official current product record checked October 1, 2026; marketing status does not establish local stock.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/ANDA219323.json",
+      "source_sha256": "d39038f10580f69210d0d8ed412cec8d21fca27d69ca83e428ffa6fe379a9109"
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Branded indications",
+      "assertions": {
+        "paragraphs": [
+          "Myrbetriq tablets treat adult OAB symptoms of urgency, frequency and urge incontinence, alone or with solifenacin. Pediatric NDO at age ≥ 3: Granules suspension; tablets only when weight ≥ 35 kg. Adult suspension dosage is not established. No pediatric OAB indication is established."
+        ]
+      },
+      "source_sections": {
+        "myr": [
+          "1",
+          "2.1",
+          "8.4"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Current generic product scope",
+      "assertions": {
+        "paragraphs": [
+          "Selected Lupin generic tablets label adult OAB monotherapy and omit protected pediatric-use information; do not assign the branded pediatric indication to that label. Alkem/Ascend generic suspension specifically labels NDO at age ≥ 3, with no recommended adult suspension dose. Current FDA records list selected branded/generic tablets and suspensions Prescription; status does not establish pharmacy stock or an indication beyond the actual PI."
+        ]
+      },
+      "source_sections": {
+        "myrgeneric": [
+          "1.1",
+          "2.2",
+          "8.4"
+        ],
+        "myrgranulesgeneric": [
+          "1",
+          "2.1",
+          "8.4"
+        ],
+        "NDA202611": [
+          "Current products"
+        ],
+        "NDA213801": [
+          "Current products"
+        ],
+        "ANDA209485": [
+          "Current products"
+        ],
+        "ANDA219323": [
+          "Current products"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Adult tablets · monotherapy and combination",
+      "assertions": {
+        "paragraphs": [
+          "Start 25 mg orally once daily; if needed, increase to 50 mg daily after 4–8 weeks. Branded combination starts mirabegron 25 mg plus solifenacin 5 mg daily; mirabegron may rise to 50 mg after 4–8 weeks. Solifenacin has its own restrictions. Adult tablets may be taken with/without food; swallow whole with water, never divide, chew or crush. No fixed treatment-course duration is specified."
+        ]
+      },
+      "source_sections": {
+        "myr": [
+          "2.2",
+          "2.7"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Adult renal and hepatic limits",
+      "assertions": {
+        "paragraphs": [
+          "eGFR 30–89 mL/min/1.73 m²: start 25 mg, maximum 50 mg; eGFR 15–29: start/maximum 25 mg. Not recommended below 15 or with dialysis. Child-Pugh A: 25 mg start, 50 mg maximum; B: 25 mg start/maximum; C: not recommended. Adult renal tables use MDRD estimation; assess the correct population/equation."
+        ]
+      },
+      "source_sections": {
+        "myr": [
+          "2.4",
+          "8.6",
+          "8.7"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric NDO · tablets versus suspension",
+      "assertions": {
+        "paragraphs": [
+          "Age ≥ 3 is required. Below 35 kg, use the verified 8 mg/mL suspension; no labeled band below 11 kg. At ≥ 35 kg, branded tablets start 25 mg daily and may rise to 50 mg after 4–8 weeks; suspension instead starts 6 mL (48 mg) and may rise to 10 mL (80 mg) after 4–8 weeks. Do not combine formulations to reach a total dose. Periodically reassess weight and tolerance; pediatric doses are taken with food."
+        ],
+        "table": {
+          "headers": [
+            "Suspension weight band",
+            "Once-daily start → maximum"
+          ],
+          "rows": [
+            [
+              "11 to < 22 kg",
+              "3 mL (24 mg) → 6 mL (48 mg)"
+            ],
+            [
+              "22 to < 35 kg",
+              "4 mL (32 mg) → 8 mL (64 mg)"
+            ],
+            [
+              "≥ 35 kg",
+              "6 mL (48 mg) → 10 mL (80 mg)"
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "myr": [
+          "2.1",
+          "2.3",
+          "2.7"
+        ],
+        "myrgranulesgeneric": [
+          "2.3",
+          "2.7"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric renal and hepatic restrictions",
+      "assertions": {
+        "paragraphs": [
+          "Use a validated pediatric eGFR equation. With eGFR 15–29 or Child-Pugh B, suspension maximum equals the weight-band starting dose (3, 4 or 6 mL daily); branded tablets at ≥ 35 kg have a 25 mg maximum. With eGFR 30–89 or Child-Pugh A, usual formulation/weight starting and maximum doses apply. Below eGFR 15, dialysis or Child-Pugh C: not recommended. Do not translate the adult tablet ceiling into suspension milligrams."
+        ]
+      },
+      "source_sections": {
+        "myr": [
+          "2.5",
+          "8.6",
+          "8.7"
+        ],
+        "myrgranulesgeneric": [
+          "2.5"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Suspension preparation and daily administration",
+      "assertions": {
+        "paragraphs": [
+          "Pharmacy preparation: keep granules in pouch until reconstitution, discard pouch/desiccant, loosen granules; add 100 mL water, shake 1 minute, stand 10–30 minutes, shake 1 minute again (another minute if not dispersed). Final concentration is 8 mg/mL; date for 28-day discard and supply an appropriate oral device. Before each dose shake vigorously 1 minute, wait for foam to clear about 1–2 minutes, measure and give within 1 hour with food; do not save the dose. If unused for ≥ 2 days, shake for 1 minute each day. This is an approved packaged-product process, not a tablet-compounding recipe."
+        ]
+      },
+      "source_sections": {
+        "myr": [
+          "2.6",
+          "2.7",
+          "Patient Information suspension instructions"
+        ],
+        "myrgranulesgeneric": [
+          "2.6",
+          "17",
+          "Patient Information"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Missed doses",
+      "assertions": {
+        "paragraphs": [
+          "Take when remembered unless more than 12 hours have passed since the missed dose; then skip and resume the usual schedule. Do not double or combine tablets/suspension. Apply the full-PI missed-dose wording rather than interpreting an ambiguous patient-leaflet phrase as a 12-hour dosing interval."
+        ]
+      },
+      "source_sections": {
+        "myr": [
+          "2.8",
+          "2.1"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Check BP periodically, especially with hypertension. Not recommended for severe uncontrolled adult BP (systolic ≥ 180 and/or diastolic ≥ 110 mm Hg); in children, systolic/diastolic above the 99th percentile plus 5 mm Hg for age/sex/stature. Younger children may have larger increases. Monitor retention with outlet obstruction or antimuscarinics. Stop immediately for tongue/throat angioedema and obtain emergency airway care; it can occur after the first or later doses. CYP2D6 inhibition can increase co-drug exposure."
+        ]
+      },
+      "source_sections": {
+        "myr": [
+          "5.1–5.4"
+        ],
+        "myrgeneric": [
+          "5.1–5.4"
+        ],
+        "myrgranulesgeneric": [
+          "5.1–5.4"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Known hypersensitivity to mirabegron or inactive ingredients of the exact tablet/suspension. BP, urinary retention and severe organ impairment remain important warnings/restrictions even though not listed as formal contraindications in these selected U.S. labels."
+        ]
+      },
+      "source_sections": {
+        "myr": [
+          "4",
+          "5",
+          "2.4",
+          "2.5"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "Selected current branded, generic tablet and generic suspension labels have no boxed warning. BP increases, retention, angioedema and interacting-drug exposure remain clinically important."
+        ]
+      },
+      "source_sections": {
+        "myr": [
+          "Complete prescribing information"
+        ],
+        "myrgeneric": [
+          "Complete prescribing information"
+        ],
+        "myrgranulesgeneric": [
+          "Complete prescribing information"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Adult monotherapy commonly reports hypertension, nasopharyngitis, UTI and headache; combination therapy commonly adds dry mouth/constipation/tachycardia. Pediatric NDO commonly reports UTI, nasopharyngitis, constipation and headache. Postmarketing reports include atrial fibrillation, retention and angioedema; frequency/causality cannot be assigned to every report, including reported neuropsychiatric symptoms. Overdose may raise pulse/BP and cause palpitations; seek urgent poison/emergency assessment with ECG, BP and pulse monitoring."
+        ]
+      },
+      "source_sections": {
+        "myr": [
+          "6",
+          "10"
+        ],
+        "myrgeneric": [
+          "6",
+          "10"
+        ],
+        "myrgranulesgeneric": [
+          "6",
+          "10"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "CYP2D6 substrates and digoxin",
+      "assertions": {
+        "paragraphs": [
+          "Mirabegron is a moderate CYP2D6 inhibitor: monitor and consider co-drug adjustment, especially narrow-index substrates such as flecainide, propafenone or thioridazine; metoprolol/desipramine exposure can increase. When starting with digoxin, consider the lowest digoxin dose and monitor serum concentrations for titration. Studied high doses used in interaction experiments are not approved clinical mirabegron regimens."
+        ]
+      },
+      "source_sections": {
+        "myr": [
+          "7.1",
+          "7.2",
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Warfarin, studied combinations and retention",
+      "assertions": {
+        "paragraphs": [
+          "A single-dose warfarin study did not show INR/PT changes, but repeated-warfarin pharmacodynamic effects are not fully investigated; do not claim an unrestricted absence of interaction. Selected studies do not require routine mirabegron adjustment with ketoconazole, rifampin, tamsulosin or solifenacin, but antimuscarinic co-therapy/outlet obstruction still warrant retention monitoring. Review solifenacin’s independent contraindications and dose limits."
+        ]
+      },
+      "source_sections": {
+        "myr": [
+          "7",
+          "12.3",
+          "5.2"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and older patients",
+      "assertions": {
+        "paragraphs": [
+          "Pediatric NDO evidence covers ages 3–17, with clean intermittent catheterization in the clinical study. Branded tablets require ≥ 35 kg; suspension has separate weight bands. Selected generic tablets omit protected pediatric labeling. No NDO use below 3 or pediatric OAB use is established. Older adult trials found no overall age-related efficacy/safety differences; assess BP, renal function, emptying and medicines individually."
+        ]
+      },
+      "source_sections": {
+        "myr": [
+          "8.4",
+          "8.5",
+          "14.3"
+        ],
+        "myrgeneric": [
+          "8.4",
+          "8.5"
+        ],
+        "myrgranulesgeneric": [
+          "8.4"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "No adequate human pregnancy data define drug-associated risks; animal high exposures caused developmental findings. Human milk, infant effects and milk-production data are unavailable; drug-related material entered rat milk. Consider breastfeeding benefits, maternal clinical need and potential infant harm; do not claim established pregnancy/lactation safety."
+        ]
+      },
+      "source_sections": {
+        "myr": [
+          "8.1",
+          "8.2"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "assertions": {
+        "paragraphs": [
+          "Exposure increases in renal/hepatic impairment. Severe renal impairment and Child-Pugh B cap dosing at the appropriate formulation’s starting dose; severe liver disease, eGFR < 15 and dialysis are unstudied/not recommended. Mild/moderate renal and mild hepatic impairment retain usual starting/maximum limits. Pediatric renal assessment needs a validated pediatric equation."
+        ]
+      },
+      "source_sections": {
+        "myr": [
+          "2.4",
+          "2.5",
+          "8.6",
+          "8.7",
+          "12.3"
+        ],
+        "myrgranulesgeneric": [
+          "2.5",
+          "8.6",
+          "8.7"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and adult pharmacokinetics",
+      "assertions": {
+        "paragraphs": [
+          "Beta-3 receptor activation relaxes detrusor smooth muscle during bladder storage and increases capacity. Adult tablets peak about 3.5 hours; bioavailability about 29% at 25 mg and 35% at 50 mg, protein binding about 71%, terminal half-life about 50 hours and steady state about 7 days. Metabolism uses multiple pathways; radiolabeled recovery was about 55% urine/34% feces. Exposure is not simply dose-proportional; higher study doses do not define safe prescribing limits."
+        ]
+      },
+      "source_sections": {
+        "myr": [
+          "12.1",
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pediatric formulation and food differences",
+      "assertions": {
+        "paragraphs": [
+          "Suspension pediatric peak about 4–5 hours after a fed single dose, with mean terminal half-life about 26–31 hours. Fasting substantially increases exposure, supporting the pediatric with-food requirement for either appropriate formulation. Tablets and suspension achieve different exposures per milligram. Generic suspension in-vitro alcohol dissolution findings have unestablished clinical impact; no universally validated alcohol-related dose conversion follows."
+        ]
+      },
+      "source_sections": {
+        "myr": [
+          "12.3",
+          "2.1",
+          "2.7"
+        ],
+        "myrgranulesgeneric": [
+          "12.3",
+          "2.7"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "assertions": {
+        "paragraphs": [
+          "Follow BP and pulse, urinary urgency/frequency/leakage response, emptying and retention symptoms; reassess organ function and co-medications before escalation. Children need weight/formulation review, food adherence and age/sex/stature BP assessment. Check digoxin levels with combination initiation/titration; review CYP2D6 co-drug effects. ECG/pulse/BP monitoring is indicated in overdose; routine mirabegron serum levels are not prescribed."
+        ]
+      },
+      "source_sections": {
+        "myr": [
+          "2",
+          "5",
+          "7",
+          "10",
+          "17"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling",
+      "assertions": {
+        "paragraphs": [
+          "Swallow tablets whole; adults may take with/without food but children take their approved formulation with food. Use the measured suspension/device as instructed and follow its 28-day expiry; never substitute milligram for milligram or combine forms. Report rising BP, weak stream/inability to empty and all new medicines. Stop and seek emergency care for face/tongue/throat swelling or breathing difficulty. Follow the > 12-hour missed-dose skip rule."
+        ]
+      },
+      "source_sections": {
+        "myr": [
+          "2.7",
+          "2.8",
+          "17",
+          "Patient Information"
+        ],
+        "myrgranulesgeneric": [
+          "17",
+          "Patient Information"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "paragraphs": [
+          "Myrbetriq 25 mg extended-release tablet: oval brown, Astellas logo and 325; 30-tablet bottle NDC 0469-2601-30. Verify actual packaging/imprint. Product identification does not establish local stock."
+        ]
+      },
+      "source_sections": {
+        "myr": [
+          "16.1"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Branded and selected generic extended-release tablets: 25/50 mg. Branded Granules and selected generic granules: 830 mg per bottle, reconstituted using 100 mL water to 8 mg/mL suspension. FDA NDA202611, NDA213801, ANDA209485 and ANDA219323 list Prescription products. Pediatric generic suspension labeling is retrieved; selected generic adult tablet labeling omits pediatric information. No injectable mirabegron, immediate-release clinical product or automatic cross-formulation equivalence is inferred."
+        ]
+      },
+      "source_sections": {
+        "myr": [
+          "3",
+          "16"
+        ],
+        "myrgeneric": [
+          "3",
+          "16"
+        ],
+        "myrgranulesgeneric": [
+          "3",
+          "16.2"
+        ],
+        "NDA202611": [
+          "Current products"
+        ],
+        "NDA213801": [
+          "Current products"
+        ],
+        "ANDA209485": [
+          "Current products"
+        ],
+        "ANDA219323": [
+          "Current products"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Tablets/unreconstituted granules: 20–25°C, usual excursions 15–30°C per package. Keep suspension bottle in pouch with desiccant until pharmacy preparation; discard pouch/desiccant at reconstitution. Reconstituted suspension: 20–25°C for up to 28 days, then discard unused medicine. Shake/measure as directed and clean/air-dry the oral device after use. Do not infer refrigerated or home-compounded stability."
+        ]
+      },
+      "source_sections": {
+        "myr": [
+          "2.6",
+          "16",
+          "Patient Information"
+        ],
+        "myrgranulesgeneric": [
+          "2.6",
+          "16.2",
+          "Patient Information"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "No generic-tablet pediatric approval inference where protected information is omitted.",
+    "No adult suspension regimen, immediate-release clinical dose, tablet compounding or milligram-for-milligram interchangeability.",
+    "No guideline dose algorithms or inaccessible latest-manufacturer PDF claims."
+  ],
+  "resolved_source_findings": [
+    "Official DailyMed current Astellas inventory is version 17 August2024; selected generic tablet May2026 and suspension August2025 body revisions with May2026 SPL retrieved.",
+    "FDA first-generic approvals summary wording is not used to expand pediatric suspension into adult dosing; actual full approved generic label expressly has no recommended adult dose.",
+    "Old repackager setid aaaf3bea-1b21-4edf-9300-b7159ea9ede8 XML404 and astellas.us PDF response invalid; current Astellas DailyMed full label fully retrieved instead."
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, essential safety, three hero facts, cited disclosures, four safety cards and three product cards.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending"
+  },
+  "monograph_sha256": "75e3822f30a8e980106ed192fdb2b0c171f32ea10355554a6988f696ba0bd34d",
+  "frontmatter_source_map": {
+    "fields": {
+      "name": "Mirabegron",
+      "synonym": "Myrbetriq · Myrbetriq Granules · generic extended-release products",
+      "description": "A beta-3 agonist for adult overactive bladder and product-specific pediatric neurogenic detrusor overactivity. Tablets and extended-release suspension have different doses and are not substitutable milligram for milligram.",
+      "facts": [
+        [
+          "Therapeutic class",
+          "Beta-3 adrenergic agonist"
+        ],
+        [
+          "Representative product",
+          "Myrbetriq · 25 mg extended-release tablet"
+        ],
+        [
+          "Reference focus",
+          "Adult OAB tablets · pediatric NDO tablets/suspension"
+        ]
+      ],
+      "essential": {
+        "title": "Check blood pressure, emptying and the exact formulation.",
+        "text": "Mirabegron can raise blood pressure and worsen retention. Avoid severe uncontrolled hypertension; stop urgently for airway swelling. Tablets and suspension cannot be combined or exchanged milligram for milligram. Renal/hepatic restrictions and CYP2D6/digoxin interactions require review.",
+        "section": "safety",
+        "link": "Warnings and precautions"
+      }
+    },
+    "source_sections": {
+      "myr": [
+        "1–5",
+        "16"
+      ],
+      "myrgeneric": [
+        "1–5",
+        "8.4"
+      ],
+      "myrgranulesgeneric": [
+        "1–5",
+        "8.4"
+      ]
+    }
+  },
+  "source_access_notes": {
+    "current_branded_source": "Official DailyMed inventory identifies manufacturer version 17 published August 20, 2024; fully retrieved and read. This is distinguished from a removed November2025 repackager search result and invalid legacy manufacturer web response, neither used as clinical sources.",
+    "new_generic_suspension": "Full Alkem/Ascend label has pediatric NDO indication with no recommended adult suspension dosage; FDA first-generic approval summary wording is not used for dosing expansion."
+  },
+  "review_date": "2026-10-01",
+  "source_access_scope": "Fully retrieved selected current manufacturer labels, relevant full prescribing sections and patient instructions, official FDA current product arrays; loperamide additionally full FDA communication and complete IDSA relevant ancillary-management recommendation/supporting evidence."
+}

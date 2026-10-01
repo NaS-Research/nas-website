@@ -1,0 +1,1314 @@
+{
+  "drug": "dexamethasone",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Full current selected systemic oral tablet, Hikma injection and Hemady clinical sections; selected Hikma oral-liquid full identity/dosing/admin/storage sections; current primary BTF steroid recommendation. No ocular-product, croup, COVID, antenatal or every oncology partner protocol claimed as independently reviewed.",
+  "blueprint": {
+    "sections": [
+      [
+        "indications",
+        "Indications"
+      ],
+      [
+        "dosage",
+        "Dosage and administration"
+      ],
+      [
+        "safety",
+        "Safety"
+      ],
+      [
+        "interactions",
+        "Drug interactions"
+      ],
+      [
+        "populations",
+        "Use in specific populations"
+      ],
+      [
+        "pharmacology",
+        "Clinical pharmacology"
+      ],
+      [
+        "practice",
+        "Monitoring and counseling"
+      ],
+      [
+        "product",
+        "Product identification"
+      ]
+    ],
+    "essential_safety": true,
+    "hero_facts": 3,
+    "APAP_modified": false
+  },
+  "sources": [
+    {
+      "id": "oral",
+      "title": "Dexamethasone tablets \u00b7 Current full label",
+      "publisher": "Apotex / DailyMed",
+      "note": "PI March 2024; current SPL 6 effective September 17, 2025; published September 19, 2025.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bfaa71cb-e517-8d94-f64b-8cdbf7b8fbf2"
+    },
+    {
+      "id": "injection",
+      "title": "Dexamethasone sodium phosphate \u00b7 Current full label",
+      "publisher": "Hikma / DailyMed",
+      "note": "PI December 2024; current SPL 21 effective January 22, 2026; published January 23, 2026. Strengths explicitly phosphate-equivalent.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0277cc0a-2fd4-4605-a310-b613be84ee26"
+    },
+    {
+      "id": "hemady",
+      "title": "Hemady \u00b7 Current full label",
+      "publisher": "Azurity / DailyMed",
+      "note": "PI January 2026; SPL 4 effective January 9, 2026; published January 26, 2026. Adult anti-myeloma combination treatment.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6b9cf32c-6d60-4853-bbfd-2304ffc2c129"
+    },
+    {
+      "id": "liquid",
+      "title": "Dexamethasone oral solution / Intensol \u00b7 Current label",
+      "publisher": "Hikma / DailyMed",
+      "note": "PI February 2024; current SPL 11 effective June 6, 2025; published November 17, 2025. Full description, dose/administration and storage sections read for selected liquid assertions.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b15200fb-1826-472b-a907-e677a272513b"
+    },
+    {
+      "id": "tbi",
+      "title": "Severe traumatic brain injury \u00b7 Current primary guideline recommendations",
+      "publisher": "Brain Trauma Foundation",
+      "note": "Fourth edition public recommendation index, Steroids \u00a77 reviewed October 1, 2026; original guideline 2016/2017. No paywalled review access claimed.",
+      "url": "https://braintrauma.org/coma/guidelines/severe-tbi"
+    }
+  ],
+  "source_records": [
+    {
+      "id": "oral",
+      "local_snapshot": "/tmp/nas-drug-sources/dex-oral.xml",
+      "label_revision": "March 2024",
+      "set_id": "bfaa71cb-e517-8d94-f64b-8cdbf7b8fbf2",
+      "spl_version": "6",
+      "spl_effective_time": "20250917",
+      "dailymed_published_date": "2025-09-19",
+      "sha256": "b2b2b3dcec06477479b96ccc820e5d53f46074f151e24d791af8322811854415",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-24-thyroid-metformin/dex-oral.xml"
+    },
+    {
+      "id": "injection",
+      "local_snapshot": "/tmp/nas-drug-sources/dex-inj.xml",
+      "label_revision": "December 2024",
+      "set_id": "0277cc0a-2fd4-4605-a310-b613be84ee26",
+      "spl_version": "21",
+      "spl_effective_time": "20260122",
+      "dailymed_published_date": "2026-01-23",
+      "sha256": "eb2840004e6a35e7f5c0c3051f449e59dfe18354de46288ae47a7d431d35bc40",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-24-thyroid-metformin/dex-inj.xml"
+    },
+    {
+      "id": "hemady",
+      "local_snapshot": "/tmp/nas-drug-sources/hemady.xml",
+      "label_revision": "January 2026",
+      "set_id": "6b9cf32c-6d60-4853-bbfd-2304ffc2c129",
+      "spl_version": "4",
+      "spl_effective_time": "20260109",
+      "dailymed_published_date": "2026-01-26",
+      "sha256": "3d1351427fc5e712e26928c2942c386715f567bd4eec074f7eba31dcc7b7f2d1",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-24-thyroid-metformin/hemady.xml"
+    },
+    {
+      "id": "liquid",
+      "local_snapshot": "/tmp/nas-drug-sources/dex-liquid.xml",
+      "label_revision": "February 2024",
+      "set_id": "b15200fb-1826-472b-a907-e677a272513b",
+      "spl_version": "11",
+      "spl_effective_time": "20250606",
+      "dailymed_published_date": "2025-11-17",
+      "sha256": "d9a6ab31aef713d63a462bf34613f97f926ae91705ae76877f3a387913a70126",
+      "review_method": "Full selected description, oral-dose and proper Intensol-use sections plus full product/storage sections read for liquid-specific assertions. General systemic clinical claims are independently mapped to oral tablets, injection and Hemady; no claim of independently reviewing every liquid-label clinical section.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-24-thyroid-metformin/dex-liquid.xml"
+    },
+    {
+      "id": "tbi",
+      "local_snapshot": "/tmp/nas-drug-sources/dex-btf.html",
+      "revision": "Fourth edition; current recommendation index accessed2026-10-01",
+      "url": "https://braintrauma.org/coma/guidelines/severe-tbi",
+      "sha256": "e2bf3995e99de89b7ba050bda924ab477c4d5bede957c0b04ac66cb472df9bde",
+      "review_method": "Current primary public fourth-edition recommendation index, complete Steroids \u00a77 read; no paywalled evidence-review access claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-24-thyroid-metformin/dex-btf.html"
+    }
+  ],
+  "assertion_map": [
+    {
+      "section": "indications",
+      "card": "General systemic indications",
+      "assertions": [
+        "Reviewed general oral/injection labels cover selected severe inflammatory, allergic, rheumatic, endocrine, hematologic, gastrointestinal, respiratory, renal and neoplastic conditions. Examples include refractory severe allergy, inflammatory-disease exacerbations, selected tumor-related cerebral edema and palliation of leukemias/lymphomas. Infection-related indications require appropriate antimicrobial treatment. Hydrocortisone/cortisone are preferred labeled adrenal-replacement choices; dexamethasone has little mineralocorticoid activity and is not a universal replacement regimen."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "INDICATIONS; CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "injection",
+          "sections": "INDICATIONS; CLINICAL PHARMACOLOGY"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Hemady and route boundaries",
+      "assertions": [
+        "Hemady is labeled with other anti-myeloma products for adults with multiple myeloma; its 20 mg tablet and pulse schedule are not routine general pediatric steroid dosing. Selected Hikma injection is IV/IM; only its 4 mg/mL strength also carries local joint/lesion/soft-tissue use. Epidural corticosteroid use is not approved and has serious neurologic risks. Specialist ocular products, combinations and implants require separate product labels; no ocular dosing is transferred from systemic preparations."
+      ],
+      "sources": [
+        {
+          "id": "hemady",
+          "sections": "1\u20133"
+        },
+        {
+          "id": "injection",
+          "sections": "DESCRIPTION; WARNINGS; INDICATIONS"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Traumatic-brain-injury limitation",
+      "assertions": [
+        "Some legacy general oral labeling still mentions head injury in cerebral-edema indications. Current Brain Trauma Foundation recommendations advise against steroids to improve outcomes or reduce intracranial pressure in severe traumatic brain injury; high-dose methylprednisolone increased mortality. Do not apply tumor-edema steroid regimens to traumatic brain injury on the basis of that older wording. Acute neurologic treatment requires the condition-specific team."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "INDICATIONS, Nervous System"
+        },
+        {
+          "id": "tbi",
+          "sections": "7, Steroids, Level I"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "General oral starting ranges",
+      "assertions": [
+        "The selected general oral label describes an initial adult range 0.75\u20139 mg/day, individualized to the condition and response; it is not a universal maximum. Its pediatric initial range is 0.02\u20130.3 mg/kg/day in three or four divided doses. These broad ranges do not define a croup, cancer, meningitis or critical-care protocol. Use the lowest effective regimen and a prescribed taper when indicated; no one fixed taper fits every course."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "hemady",
+          "sections": "2.1"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Product/purpose",
+          "Label dose boundary"
+        ],
+        "rows": [
+          [
+            "General oral disease-directed treatment",
+            "Initial 0.75\u20139 mg/day, individualized; not a universal ceiling"
+          ],
+          [
+            "General oral pediatric range",
+            "0.02\u20130.3 mg/kg/day divided 3\u20134 times daily, disease-specific"
+          ],
+          [
+            "Hemady adult myeloma combination",
+            "20 or 40 mg orally once daily on the regimen\u2019s specified days; not automatically every day"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Hemady treatment-day schedule",
+      "assertions": [
+        "Take with or without food on the exact dates in the oncology regimen. The partner anti-myeloma prescribing information determines specific dosing, dose holds and geriatric reductions; 20/40 mg must not become an unsupervised daily maintenance instruction. Older patients require dose reduction according to that combination plan. Do not double a missed treatment-day dose without the oncology team\u2019s direction."
+      ],
+      "sources": [
+        {
+          "id": "hemady",
+          "sections": "2.1\u20132.2;8.5;17"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Oral liquids and concentration checks",
+      "assertions": [
+        "Hikma dilute solution contains 0.5 mg/5 mL (0.1 mg/mL); Intensol concentrate contains 1 mg/mL, ten times as concentrated. Intensol contains alcohol 30% v/v and propylene glycol; review pediatric and other excipient-sensitive use. Measure only with the supplied calibrated oral syringe, mix the prescribed concentrate with a permitted liquid/soft food, consume the entire mixture immediately and do not store it. Never use an oral liquid for injection."
+      ],
+      "sources": [
+        {
+          "id": "liquid",
+          "sections": "DESCRIPTION; Proper Use of an Intensol; HOW SUPPLIED"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Parenteral and local treatment",
+      "assertions": [
+        "The selected injection labels 4 or 10 mg/mL as dexamethasone-phosphate equivalent: respectively 3.33 or 8.33 mg/mL dexamethasone. Its broad initial IV/IM range is 0.5\u20139 mg/day on that product\u2019s labeled basis, not an automatic oral-to-IV ratio. Only the 4 mg/mL strength includes local joint/lesion/soft-tissue routes, using clinician-selected site-specific doses. Do not inject into infected/unstable joints; IM is contraindicated for idiopathic thrombocytopenic purpura. Urgent cerebral-edema and other high-dose protocols require specialist indication, strength/basis and monitoring verification; legacy shock boluses are not a universal recommendation."
+      ],
+      "sources": [
+        {
+          "id": "injection",
+          "sections": "DESCRIPTION; INDICATIONS, Hematologic; PRECAUTIONS; DOSAGE"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Diagnostic testing and organ adjustments",
+      "assertions": [
+        "The oral label includes a supervised overnight suppression test: 1 mg at 11 p.m. with cortisol drawn at 8 a.m.; interacting medicines can alter interpretation. This is a diagnostic protocol, not an anti-inflammatory maintenance dose. No validated renal/dialysis or Child-Pugh percentage-adjustment table is supplied. Cirrhosis and thyroid changes can alter steroid response; adjust clinically and never calculate a dose solely from one general half-life."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "DOSAGE, Suppression Tests; Drug Interactions; PRECAUTIONS"
+        },
+        {
+          "id": "hemady",
+          "sections": "5.1;12.3"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Assess HPA suppression, withdrawal/stress-dose needs, hyperglycemia, Cushing effects, hypertension/fluid retention, potassium loss, bone loss, myopathy, psychiatric changes and GI bleeding/perforation. Perforation or infection signs can be masked. Eye risks include cataract/glaucoma and infection; active ocular herpes requires particular avoidance. Serious behavioral changes or suicidal symptoms need prompt assessment.",
+        "Immunosuppression can reactivate HBV/TB, disseminate Strongyloides and worsen other infections. Screen HBV before immunosuppressive/prolonged treatment and assess other exposure risks; chickenpox/measles exposure needs immediate advice. Avoid live vaccines at immunosuppressive doses. Myeloma combinations add major thromboembolism risk, requiring individualized prophylaxis assessment. Injection sulfite/benzyl-alcohol excipients and unapproved epidural use add product-specific hazards."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "WARNINGS; PRECAUTIONS"
+        },
+        {
+          "id": "injection",
+          "sections": "WARNINGS; DESCRIPTION; PRECAUTIONS"
+        },
+        {
+          "id": "hemady",
+          "sections": "5.1\u20135.13"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "General oral tablets and Hemady contraindicate systemic fungal infection and component hypersensitivity; selected injection formally lists systemic fungal infections and has serious sulfite/allergy warnings. Live vaccines are contraindicated during immunosuppressive systemic dosing. Acute local infection precludes relevant local injection. These restrictions are distinct from cautions such as diabetes or osteoporosis; exceptional specialist management is not a self-treatment workaround."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "CONTRAINDICATIONS; WARNINGS"
+        },
+        {
+          "id": "injection",
+          "sections": "CONTRAINDICATIONS; WARNINGS; PRECAUTIONS"
+        },
+        {
+          "id": "hemady",
+          "sections": "4;5.2;5.5"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "The selected systemic dexamethasone labels have no formal boxed warning. Serious adrenal, infection, psychiatric, ocular, metabolic and GI hazards still apply; partner myeloma medicines may carry their own boxes and mandatory safeguards. The injection\u2019s epidural warning remains important despite the absence of a dexamethasone box."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Full PI"
+        },
+        {
+          "id": "injection",
+          "sections": "Full PI; WARNINGS"
+        },
+        {
+          "id": "hemady",
+          "sections": "Full PI;5.12"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Possible effects include insomnia, appetite/weight gain, dyspepsia, mood changes, hyperglycemia, edema and acne. Longer or higher exposure can cause adrenal suppression, infection, osteoporosis/fractures/osteonecrosis, cataract/glaucoma, muscle weakness and thin skin. Serious reactions include anaphylaxis, GI bleeding/perforation, psychosis, arrhythmia and thromboembolism. Class/postmarketing reports do not provide a universal incidence for every short course."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "ADVERSE REACTIONS"
+        },
+        {
+          "id": "injection",
+          "sections": "ADVERSE REACTIONS"
+        },
+        {
+          "id": "hemady",
+          "sections": "6"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "CYP and exposure changes",
+      "assertions": [
+        "CYP3A inhibitors such as ritonavir, clarithromycin or azoles can increase steroid exposure; carbamazepine, rifampin and other inducers can lower it. Hemady advises avoiding strong inhibitors/inducers when possible, with monitoring or regimen-specific management if unavoidable. Dexamethasone can itself induce CYP3A and lower other substrate concentrations. Aprepitant-containing oncology regimens require their own prescribed dexamethasone adjustment; no single percentage correction is supplied here."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Drug Interactions, CYP3A4"
+        },
+        {
+          "id": "hemady",
+          "sections": "7.1\u20137.2;12.3"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Metabolic, anticoagulant and GI interactions",
+      "assertions": [
+        "Glucose-lowering therapy may need adjustment; diuretics/amphotericin can add hypokalemia, increasing digoxin-associated arrhythmia risk. Warfarin response can change in either direction: monitor coagulation rather than assume no effect. NSAIDs/aspirin add GI risk. Phenytoin exposure can change unpredictably; cyclosporine can add toxicity/seizure risk. Review full treatment and laboratory results before changing either drug."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Drug Interactions"
+        },
+        {
+          "id": "hemady",
+          "sections": "7.2"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Vaccines, neuromuscular disease and myeloma combinations",
+      "assertions": [
+        "Avoid live vaccines during immunosuppressive treatment; inactivated responses may be blunted. Anticholinesterase/neuromuscular-blocker combinations can worsen weakness in susceptible patients. Hemady with immunomodulatory anti-myeloma agents increases clot risk; assess prophylaxis and every partner\u2019s safety/reproductive requirements. Do not stop essential neuromuscular drugs or add anticoagulation independently."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Drug Interactions; PRECAUTIONS"
+        },
+        {
+          "id": "hemady",
+          "sections": "5.4;5.9;5.12;7"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": [
+        "General systemic corticosteroid labels support disease-specific pediatric use and require growth, BP, weight, eye, infection and psychosocial assessment. Hemady pediatric safety/effectiveness is not established. Review excipients in concentrate or preserved injection before neonatal/young-child use. Older adults face greater diabetes, fluid, BP and fracture risks; general selection is cautious, and Hemady requires partner-regimen geriatric dose reduction."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Pediatric/Geriatric Use"
+        },
+        {
+          "id": "injection",
+          "sections": "DESCRIPTION; PRECAUTIONS"
+        },
+        {
+          "id": "liquid",
+          "sections": "DESCRIPTION"
+        },
+        {
+          "id": "hemady",
+          "sections": "2.2;8.4\u20138.5"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic disease",
+      "assertions": [
+        "Hemady baseline renal/hepatic PK effects are unstudied and no numeric adjustment table is established. Less than 10% of systemic clearance is renal in its PK description, which does not prove absence of renal clinical risk. Fluid/BP/potassium effects warrant caution with kidney/heart disease; cirrhosis can enhance steroid effects. Use clinical response, toxicity and indication-specific protocols."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "PRECAUTIONS, Cardio-Renal/Gastrointestinal"
+        },
+        {
+          "id": "hemady",
+          "sections": "5.3;12.3"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and reproductive potential",
+      "assertions": [
+        "Systemic corticosteroids cross the placenta and require maternal-benefit/fetal-risk assessment; substantial maternal exposure can suppress neonatal adrenal function. Hemady specifically recommends pregnancy testing and effective contraception during treatment and at least one month afterward; partner oncology agents may impose stricter safeguards. This profile does not supply an antenatal fetal-maturation course or equate chronic cancer treatment with a short obstetric regimen."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Pregnancy"
+        },
+        {
+          "id": "injection",
+          "sections": "WARNINGS"
+        },
+        {
+          "id": "hemady",
+          "sections": "5.13;8.1;8.3"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Breastfeeding",
+      "assertions": [
+        "Systemic corticosteroids may enter milk and affect infant growth/adrenal function; general oral labeling advises individualized nursing-versus-treatment decisions. Hemady specifically advises no breastfeeding during treatment and for two weeks after the last dose. Do not extend that oncology instruction automatically to every short systemic course or declare infant exposure absent; consider dose, duration, maternal need and infant circumstances."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Nursing Mothers"
+        },
+        {
+          "id": "hemady",
+          "sections": "8.2"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and mineralocorticoid activity",
+      "assertions": [
+        "Dexamethasone alters inflammatory/immune and metabolic signaling with low mineralocorticoid activity. In myeloma it promotes apoptosis, but its complete treatment mechanism is not defined. Low sodium-retaining activity does not eliminate hypertension/fluid/electrolyte risks at high exposure or provide adequate mineralocorticoid replacement by itself."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "injection",
+          "sections": "CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "hemady",
+          "sections": "12.1"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Disposition and equivalence limits",
+      "assertions": [
+        "Hemady 20 mg has median oral peak time about one hour, protein binding about 77% and mean terminal plasma half-life about four hours; CYP3A4 is important for metabolism and renal unchanged excretion is low. Cortisol suppression can persist much longer, so plasma half-life is not a safe abrupt-stop rule. General labels compare oral/IV anti-inflammatory potency (dexamethasone 0.75 mg versus prednisone 5 mg or hydrocortisone 20 mg), but local/IM properties and product strength bases require separate assessment."
+      ],
+      "sources": [
+        {
+          "id": "hemady",
+          "sections": "12.2\u201312.3"
+        },
+        {
+          "id": "oral",
+          "sections": "DOSAGE, steroid-equivalence table"
+        },
+        {
+          "id": "injection",
+          "sections": "DESCRIPTION"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": [
+        "Assess treatment response, dose/duration, BP/weight/fluid status, glucose, potassium risks, infection, mood, GI symptoms and adrenal recovery. Long-term therapy requires bone/fracture prevention assessment and eye monitoring; selected labels recommend IOP monitoring if continued beyond six weeks. Track pediatric growth and myeloma-combination clot risk. HBV screening is labeled before immunosuppressive/prolonged therapy. Monitoring frequency and stress-dose decisions are individualized, not a universal fixed panel."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "WARNINGS; PRECAUTIONS; Pediatric Use"
+        },
+        {
+          "id": "hemady",
+          "sections": "5;8.5;17"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling and urgent care",
+      "assertions": [
+        "Keep exact dose/dates and any taper visible; do not independently stop sustained treatment or double missed doses. Tell healthcare teams about steroid use and obtain a sick-day/surgery plan when adrenal suppression is possible. Contact the clinician promptly after measles/chickenpox exposure. Urgent assessment is needed for serious infection, severe weakness/fainting after withdrawal, GI bleeding, acute visual changes, severe psychiatric symptoms or serious allergy. Measure oral liquids precisely and do not use another route\u2019s preparation."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Information for Patients"
+        },
+        {
+          "id": "liquid",
+          "sections": "Proper Use of an Intensol"
+        },
+        {
+          "id": "hemady",
+          "sections": "17"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Selected Apotex 4 mg tablet is grey, round and scored, marked APO/4; bottle-of-100 NDC 60505-6254-1. Hemady 20 mg is white, round and biconvex, embossed 20; bottle-of-24 NDC 82111-955-01. Selected Hikma 4 mg/mL 1 mL injection is supplied in packages of 25 vials, NDC 0641-6145-25. Verify the dispensed product and labeled strength basis, not appearance alone."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "hemady",
+          "sections": "3;16"
+        },
+        {
+          "id": "injection",
+          "sections": "HOW SUPPLIED"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Selected general oral tablets: 0.5, 0.75, 1, 1.5, 2, 4 and 6 mg; Hemady: 20 mg tablet. Selected oral liquids: 0.5 mg/5 mL and Intensol 1 mg/mL. Selected Hikma injection: 4 or 10 mg/mL dexamethasone-phosphate equivalent, with benzyl alcohol and sulfite; it is not preservative-free. Its 10 mg/mL form is IV/IM only. Verify any different manufacturer\u2019s salt basis, excipients and route separately."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "DESCRIPTION"
+        },
+        {
+          "id": "hemady",
+          "sections": "3;11"
+        },
+        {
+          "id": "liquid",
+          "sections": "DESCRIPTION"
+        },
+        {
+          "id": "injection",
+          "sections": "DESCRIPTION; principal display panel"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Selected tablets/Hemady: 20\u201325\u00b0C with allowed 15\u201330\u00b0C excursions, tight light-resistant child-resistant containers; protect Apotex tablets from moisture. Hikma oral liquids: 20\u201325\u00b0C; Intensol stays in its original bottle with supplied syringe, do not freeze or use precipitated solution, and discard 90 days after opening. Selected injection: 20\u201325\u00b0C, permitted 15\u201330\u00b0C excursions, protected from light in carton; avoid freezing, haze/precipitate and autoclaving. Sterile handling/beyond-use limits follow the actual vial and pharmacy protocol."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "hemady",
+          "sections": "16"
+        },
+        {
+          "id": "liquid",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "injection",
+          "sections": "HOW SUPPLIED/storage"
+        }
+      ]
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "General systemic indications",
+      "assertions": [
+        "Reviewed general oral/injection labels cover selected severe inflammatory, allergic, rheumatic, endocrine, hematologic, gastrointestinal, respiratory, renal and neoplastic conditions. Examples include refractory severe allergy, inflammatory-disease exacerbations, selected tumor-related cerebral edema and palliation of leukemias/lymphomas. Infection-related indications require appropriate antimicrobial treatment. Hydrocortisone/cortisone are preferred labeled adrenal-replacement choices; dexamethasone has little mineralocorticoid activity and is not a universal replacement regimen."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "INDICATIONS; CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "injection",
+          "sections": "INDICATIONS; CLINICAL PHARMACOLOGY"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Hemady and route boundaries",
+      "assertions": [
+        "Hemady is labeled with other anti-myeloma products for adults with multiple myeloma; its 20 mg tablet and pulse schedule are not routine general pediatric steroid dosing. Selected Hikma injection is IV/IM; only its 4 mg/mL strength also carries local joint/lesion/soft-tissue use. Epidural corticosteroid use is not approved and has serious neurologic risks. Specialist ocular products, combinations and implants require separate product labels; no ocular dosing is transferred from systemic preparations."
+      ],
+      "sources": [
+        {
+          "id": "hemady",
+          "sections": "1\u20133"
+        },
+        {
+          "id": "injection",
+          "sections": "DESCRIPTION; WARNINGS; INDICATIONS"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Traumatic-brain-injury limitation",
+      "assertions": [
+        "Some legacy general oral labeling still mentions head injury in cerebral-edema indications. Current Brain Trauma Foundation recommendations advise against steroids to improve outcomes or reduce intracranial pressure in severe traumatic brain injury; high-dose methylprednisolone increased mortality. Do not apply tumor-edema steroid regimens to traumatic brain injury on the basis of that older wording. Acute neurologic treatment requires the condition-specific team."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "INDICATIONS, Nervous System"
+        },
+        {
+          "id": "tbi",
+          "sections": "7, Steroids, Level I"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "General oral starting ranges",
+      "assertions": [
+        "The selected general oral label describes an initial adult range 0.75\u20139 mg/day, individualized to the condition and response; it is not a universal maximum. Its pediatric initial range is 0.02\u20130.3 mg/kg/day in three or four divided doses. These broad ranges do not define a croup, cancer, meningitis or critical-care protocol. Use the lowest effective regimen and a prescribed taper when indicated; no one fixed taper fits every course."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "hemady",
+          "sections": "2.1"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Product/purpose",
+          "Label dose boundary"
+        ],
+        "rows": [
+          [
+            "General oral disease-directed treatment",
+            "Initial 0.75\u20139 mg/day, individualized; not a universal ceiling"
+          ],
+          [
+            "General oral pediatric range",
+            "0.02\u20130.3 mg/kg/day divided 3\u20134 times daily, disease-specific"
+          ],
+          [
+            "Hemady adult myeloma combination",
+            "20 or 40 mg orally once daily on the regimen\u2019s specified days; not automatically every day"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Hemady treatment-day schedule",
+      "assertions": [
+        "Take with or without food on the exact dates in the oncology regimen. The partner anti-myeloma prescribing information determines specific dosing, dose holds and geriatric reductions; 20/40 mg must not become an unsupervised daily maintenance instruction. Older patients require dose reduction according to that combination plan. Do not double a missed treatment-day dose without the oncology team\u2019s direction."
+      ],
+      "sources": [
+        {
+          "id": "hemady",
+          "sections": "2.1\u20132.2;8.5;17"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Oral liquids and concentration checks",
+      "assertions": [
+        "Hikma dilute solution contains 0.5 mg/5 mL (0.1 mg/mL); Intensol concentrate contains 1 mg/mL, ten times as concentrated. Intensol contains alcohol 30% v/v and propylene glycol; review pediatric and other excipient-sensitive use. Measure only with the supplied calibrated oral syringe, mix the prescribed concentrate with a permitted liquid/soft food, consume the entire mixture immediately and do not store it. Never use an oral liquid for injection."
+      ],
+      "sources": [
+        {
+          "id": "liquid",
+          "sections": "DESCRIPTION; Proper Use of an Intensol; HOW SUPPLIED"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Parenteral and local treatment",
+      "assertions": [
+        "The selected injection labels 4 or 10 mg/mL as dexamethasone-phosphate equivalent: respectively 3.33 or 8.33 mg/mL dexamethasone. Its broad initial IV/IM range is 0.5\u20139 mg/day on that product\u2019s labeled basis, not an automatic oral-to-IV ratio. Only the 4 mg/mL strength includes local joint/lesion/soft-tissue routes, using clinician-selected site-specific doses. Do not inject into infected/unstable joints; IM is contraindicated for idiopathic thrombocytopenic purpura. Urgent cerebral-edema and other high-dose protocols require specialist indication, strength/basis and monitoring verification; legacy shock boluses are not a universal recommendation."
+      ],
+      "sources": [
+        {
+          "id": "injection",
+          "sections": "DESCRIPTION; INDICATIONS, Hematologic; PRECAUTIONS; DOSAGE"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Diagnostic testing and organ adjustments",
+      "assertions": [
+        "The oral label includes a supervised overnight suppression test: 1 mg at 11 p.m. with cortisol drawn at 8 a.m.; interacting medicines can alter interpretation. This is a diagnostic protocol, not an anti-inflammatory maintenance dose. No validated renal/dialysis or Child-Pugh percentage-adjustment table is supplied. Cirrhosis and thyroid changes can alter steroid response; adjust clinically and never calculate a dose solely from one general half-life."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "DOSAGE, Suppression Tests; Drug Interactions; PRECAUTIONS"
+        },
+        {
+          "id": "hemady",
+          "sections": "5.1;12.3"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Assess HPA suppression, withdrawal/stress-dose needs, hyperglycemia, Cushing effects, hypertension/fluid retention, potassium loss, bone loss, myopathy, psychiatric changes and GI bleeding/perforation. Perforation or infection signs can be masked. Eye risks include cataract/glaucoma and infection; active ocular herpes requires particular avoidance. Serious behavioral changes or suicidal symptoms need prompt assessment.",
+        "Immunosuppression can reactivate HBV/TB, disseminate Strongyloides and worsen other infections. Screen HBV before immunosuppressive/prolonged treatment and assess other exposure risks; chickenpox/measles exposure needs immediate advice. Avoid live vaccines at immunosuppressive doses. Myeloma combinations add major thromboembolism risk, requiring individualized prophylaxis assessment. Injection sulfite/benzyl-alcohol excipients and unapproved epidural use add product-specific hazards."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "WARNINGS; PRECAUTIONS"
+        },
+        {
+          "id": "injection",
+          "sections": "WARNINGS; DESCRIPTION; PRECAUTIONS"
+        },
+        {
+          "id": "hemady",
+          "sections": "5.1\u20135.13"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "General oral tablets and Hemady contraindicate systemic fungal infection and component hypersensitivity; selected injection formally lists systemic fungal infections and has serious sulfite/allergy warnings. Live vaccines are contraindicated during immunosuppressive systemic dosing. Acute local infection precludes relevant local injection. These restrictions are distinct from cautions such as diabetes or osteoporosis; exceptional specialist management is not a self-treatment workaround."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "CONTRAINDICATIONS; WARNINGS"
+        },
+        {
+          "id": "injection",
+          "sections": "CONTRAINDICATIONS; WARNINGS; PRECAUTIONS"
+        },
+        {
+          "id": "hemady",
+          "sections": "4;5.2;5.5"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "The selected systemic dexamethasone labels have no formal boxed warning. Serious adrenal, infection, psychiatric, ocular, metabolic and GI hazards still apply; partner myeloma medicines may carry their own boxes and mandatory safeguards. The injection\u2019s epidural warning remains important despite the absence of a dexamethasone box."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Full PI"
+        },
+        {
+          "id": "injection",
+          "sections": "Full PI; WARNINGS"
+        },
+        {
+          "id": "hemady",
+          "sections": "Full PI;5.12"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Possible effects include insomnia, appetite/weight gain, dyspepsia, mood changes, hyperglycemia, edema and acne. Longer or higher exposure can cause adrenal suppression, infection, osteoporosis/fractures/osteonecrosis, cataract/glaucoma, muscle weakness and thin skin. Serious reactions include anaphylaxis, GI bleeding/perforation, psychosis, arrhythmia and thromboembolism. Class/postmarketing reports do not provide a universal incidence for every short course."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "ADVERSE REACTIONS"
+        },
+        {
+          "id": "injection",
+          "sections": "ADVERSE REACTIONS"
+        },
+        {
+          "id": "hemady",
+          "sections": "6"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "CYP and exposure changes",
+      "assertions": [
+        "CYP3A inhibitors such as ritonavir, clarithromycin or azoles can increase steroid exposure; carbamazepine, rifampin and other inducers can lower it. Hemady advises avoiding strong inhibitors/inducers when possible, with monitoring or regimen-specific management if unavoidable. Dexamethasone can itself induce CYP3A and lower other substrate concentrations. Aprepitant-containing oncology regimens require their own prescribed dexamethasone adjustment; no single percentage correction is supplied here."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Drug Interactions, CYP3A4"
+        },
+        {
+          "id": "hemady",
+          "sections": "7.1\u20137.2;12.3"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Metabolic, anticoagulant and GI interactions",
+      "assertions": [
+        "Glucose-lowering therapy may need adjustment; diuretics/amphotericin can add hypokalemia, increasing digoxin-associated arrhythmia risk. Warfarin response can change in either direction: monitor coagulation rather than assume no effect. NSAIDs/aspirin add GI risk. Phenytoin exposure can change unpredictably; cyclosporine can add toxicity/seizure risk. Review full treatment and laboratory results before changing either drug."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Drug Interactions"
+        },
+        {
+          "id": "hemady",
+          "sections": "7.2"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Vaccines, neuromuscular disease and myeloma combinations",
+      "assertions": [
+        "Avoid live vaccines during immunosuppressive treatment; inactivated responses may be blunted. Anticholinesterase/neuromuscular-blocker combinations can worsen weakness in susceptible patients. Hemady with immunomodulatory anti-myeloma agents increases clot risk; assess prophylaxis and every partner\u2019s safety/reproductive requirements. Do not stop essential neuromuscular drugs or add anticoagulation independently."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Drug Interactions; PRECAUTIONS"
+        },
+        {
+          "id": "hemady",
+          "sections": "5.4;5.9;5.12;7"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": [
+        "General systemic corticosteroid labels support disease-specific pediatric use and require growth, BP, weight, eye, infection and psychosocial assessment. Hemady pediatric safety/effectiveness is not established. Review excipients in concentrate or preserved injection before neonatal/young-child use. Older adults face greater diabetes, fluid, BP and fracture risks; general selection is cautious, and Hemady requires partner-regimen geriatric dose reduction."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Pediatric/Geriatric Use"
+        },
+        {
+          "id": "injection",
+          "sections": "DESCRIPTION; PRECAUTIONS"
+        },
+        {
+          "id": "liquid",
+          "sections": "DESCRIPTION"
+        },
+        {
+          "id": "hemady",
+          "sections": "2.2;8.4\u20138.5"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic disease",
+      "assertions": [
+        "Hemady baseline renal/hepatic PK effects are unstudied and no numeric adjustment table is established. Less than 10% of systemic clearance is renal in its PK description, which does not prove absence of renal clinical risk. Fluid/BP/potassium effects warrant caution with kidney/heart disease; cirrhosis can enhance steroid effects. Use clinical response, toxicity and indication-specific protocols."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "PRECAUTIONS, Cardio-Renal/Gastrointestinal"
+        },
+        {
+          "id": "hemady",
+          "sections": "5.3;12.3"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and reproductive potential",
+      "assertions": [
+        "Systemic corticosteroids cross the placenta and require maternal-benefit/fetal-risk assessment; substantial maternal exposure can suppress neonatal adrenal function. Hemady specifically recommends pregnancy testing and effective contraception during treatment and at least one month afterward; partner oncology agents may impose stricter safeguards. This profile does not supply an antenatal fetal-maturation course or equate chronic cancer treatment with a short obstetric regimen."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Pregnancy"
+        },
+        {
+          "id": "injection",
+          "sections": "WARNINGS"
+        },
+        {
+          "id": "hemady",
+          "sections": "5.13;8.1;8.3"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Breastfeeding",
+      "assertions": [
+        "Systemic corticosteroids may enter milk and affect infant growth/adrenal function; general oral labeling advises individualized nursing-versus-treatment decisions. Hemady specifically advises no breastfeeding during treatment and for two weeks after the last dose. Do not extend that oncology instruction automatically to every short systemic course or declare infant exposure absent; consider dose, duration, maternal need and infant circumstances."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Nursing Mothers"
+        },
+        {
+          "id": "hemady",
+          "sections": "8.2"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and mineralocorticoid activity",
+      "assertions": [
+        "Dexamethasone alters inflammatory/immune and metabolic signaling with low mineralocorticoid activity. In myeloma it promotes apoptosis, but its complete treatment mechanism is not defined. Low sodium-retaining activity does not eliminate hypertension/fluid/electrolyte risks at high exposure or provide adequate mineralocorticoid replacement by itself."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "injection",
+          "sections": "CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "hemady",
+          "sections": "12.1"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Disposition and equivalence limits",
+      "assertions": [
+        "Hemady 20 mg has median oral peak time about one hour, protein binding about 77% and mean terminal plasma half-life about four hours; CYP3A4 is important for metabolism and renal unchanged excretion is low. Cortisol suppression can persist much longer, so plasma half-life is not a safe abrupt-stop rule. General labels compare oral/IV anti-inflammatory potency (dexamethasone 0.75 mg versus prednisone 5 mg or hydrocortisone 20 mg), but local/IM properties and product strength bases require separate assessment."
+      ],
+      "sources": [
+        {
+          "id": "hemady",
+          "sections": "12.2\u201312.3"
+        },
+        {
+          "id": "oral",
+          "sections": "DOSAGE, steroid-equivalence table"
+        },
+        {
+          "id": "injection",
+          "sections": "DESCRIPTION"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": [
+        "Assess treatment response, dose/duration, BP/weight/fluid status, glucose, potassium risks, infection, mood, GI symptoms and adrenal recovery. Long-term therapy requires bone/fracture prevention assessment and eye monitoring; selected labels recommend IOP monitoring if continued beyond six weeks. Track pediatric growth and myeloma-combination clot risk. HBV screening is labeled before immunosuppressive/prolonged therapy. Monitoring frequency and stress-dose decisions are individualized, not a universal fixed panel."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "WARNINGS; PRECAUTIONS; Pediatric Use"
+        },
+        {
+          "id": "hemady",
+          "sections": "5;8.5;17"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling and urgent care",
+      "assertions": [
+        "Keep exact dose/dates and any taper visible; do not independently stop sustained treatment or double missed doses. Tell healthcare teams about steroid use and obtain a sick-day/surgery plan when adrenal suppression is possible. Contact the clinician promptly after measles/chickenpox exposure. Urgent assessment is needed for serious infection, severe weakness/fainting after withdrawal, GI bleeding, acute visual changes, severe psychiatric symptoms or serious allergy. Measure oral liquids precisely and do not use another route\u2019s preparation."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Information for Patients"
+        },
+        {
+          "id": "liquid",
+          "sections": "Proper Use of an Intensol"
+        },
+        {
+          "id": "hemady",
+          "sections": "17"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Selected Apotex 4 mg tablet is grey, round and scored, marked APO/4; bottle-of-100 NDC 60505-6254-1. Hemady 20 mg is white, round and biconvex, embossed 20; bottle-of-24 NDC 82111-955-01. Selected Hikma 4 mg/mL 1 mL injection is supplied in packages of 25 vials, NDC 0641-6145-25. Verify the dispensed product and labeled strength basis, not appearance alone."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "hemady",
+          "sections": "3;16"
+        },
+        {
+          "id": "injection",
+          "sections": "HOW SUPPLIED"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Selected general oral tablets: 0.5, 0.75, 1, 1.5, 2, 4 and 6 mg; Hemady: 20 mg tablet. Selected oral liquids: 0.5 mg/5 mL and Intensol 1 mg/mL. Selected Hikma injection: 4 or 10 mg/mL dexamethasone-phosphate equivalent, with benzyl alcohol and sulfite; it is not preservative-free. Its 10 mg/mL form is IV/IM only. Verify any different manufacturer\u2019s salt basis, excipients and route separately."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "DESCRIPTION"
+        },
+        {
+          "id": "hemady",
+          "sections": "3;11"
+        },
+        {
+          "id": "liquid",
+          "sections": "DESCRIPTION"
+        },
+        {
+          "id": "injection",
+          "sections": "DESCRIPTION; principal display panel"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Selected tablets/Hemady: 20\u201325\u00b0C with allowed 15\u201330\u00b0C excursions, tight light-resistant child-resistant containers; protect Apotex tablets from moisture. Hikma oral liquids: 20\u201325\u00b0C; Intensol stays in its original bottle with supplied syringe, do not freeze or use precipitated solution, and discard 90 days after opening. Selected injection: 20\u201325\u00b0C, permitted 15\u201330\u00b0C excursions, protected from light in carton; avoid freezing, haze/precipitate and autoclaving. Sterile handling/beyond-use limits follow the actual vial and pharmacy protocol."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "hemady",
+          "sections": "16"
+        },
+        {
+          "id": "liquid",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "injection",
+          "sections": "HOW SUPPLIED/storage"
+        }
+      ]
+    }
+  ],
+  "hero_assertions": {
+    "essential": {
+      "title": "Plan exposure and withdrawal",
+      "text": "Use the prescribed disease-specific dose and taper. Sustained exposure can suppress adrenal function and mask serious infection; verify oral concentration and injection phosphate-equivalent strength before administration.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "facts": [
+      [
+        "Class",
+        "Potent systemic glucocorticoid"
+      ],
+      [
+        "Oral concentrate",
+        "Intensol 1 mg/mL; dilute solution 0.1 mg/mL"
+      ],
+      [
+        "Hemady",
+        "20 mg tablet; regimen-specific adult myeloma days"
+      ]
+    ],
+    "sources": [
+      "oral",
+      "injection",
+      "hemady",
+      "liquid",
+      "tbi"
+    ]
+  },
+  "section_assertions": [
+    {
+      "section": "indications",
+      "summary": "Dexamethasone is a potent systemic glucocorticoid with disease- and product-specific uses.",
+      "takeaway": "Label approval does not mean a legacy regimen is preferred in current practice.",
+      "sources": [
+        "hemady",
+        "injection",
+        "oral",
+        "tbi"
+      ]
+    },
+    {
+      "section": "dosage",
+      "summary": "Dose, frequency, duration and taper depend on the specific disease and product.",
+      "takeaway": "Oral dexamethasone milligrams and this injection\u2019s phosphate-equivalent label basis must be checked explicitly.",
+      "sources": [
+        "hemady",
+        "injection",
+        "liquid",
+        "oral"
+      ]
+    },
+    {
+      "section": "safety",
+      "summary": "Adrenal suppression, infection, metabolic and psychiatric risks increase with exposure.",
+      "takeaway": "Abrupt withdrawal after sustained treatment can cause a life-threatening adrenal crisis.",
+      "sources": [
+        "hemady",
+        "injection",
+        "oral"
+      ]
+    },
+    {
+      "section": "interactions",
+      "summary": "CYP3A exposure, glucose, potassium, bleeding and vaccine effects require review.",
+      "takeaway": "Cancer-regimen interaction management is not interchangeable with a generic short-course algorithm.",
+      "sources": [
+        "hemady",
+        "oral"
+      ]
+    },
+    {
+      "section": "populations",
+      "summary": "Systemic indication, age, organ function and reproductive context guide treatment.",
+      "takeaway": "Hemady\u2019s reproductive instructions apply to its oncology use, not every dexamethasone course.",
+      "sources": [
+        "hemady",
+        "injection",
+        "liquid",
+        "oral"
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "summary": "Potent glucocorticoid effects outlast the measured plasma half-life.",
+      "takeaway": "Anti-inflammatory equivalence does not establish interchangeable route, schedule or indication.",
+      "sources": [
+        "hemady",
+        "injection",
+        "oral"
+      ]
+    },
+    {
+      "section": "practice",
+      "summary": "Use an indication-specific written schedule, taper and monitoring plan.",
+      "takeaway": "Report steroid exposure during illness, surgery and medication changes.",
+      "sources": [
+        "hemady",
+        "liquid",
+        "oral"
+      ]
+    },
+    {
+      "section": "product",
+      "summary": "Strength, salt-equivalent basis, excipients and route are essential identification checks.",
+      "takeaway": "A concentrate, injection or oncology tablet cannot substitute solely by matching printed numbers.",
+      "sources": [
+        "hemady",
+        "injection",
+        "liquid",
+        "oral"
+      ]
+    }
+  ],
+  "limitations": [
+    "General oral label contains head-injury cerebral-edema wording inconsistent with current primary severe-TBI steroid guidance; monograph explicitly prevents that extrapolation. Older injection shock mega-bolus and legacy emesis regimens are not propagated as universal current practice.",
+    "Selected injection explicitly labels phosphate-equivalent 4/10 mg/mL (3.33/8.33 mg dexamethasone); no silent base-equivalent substitution or unvalidated oral-to-IV ratio. General tablet warning boilerplate incorrectly discusses injecting tablets; not propagated.",
+    "Focus is systemic dexamethasone and selected liquids/Hemady, not specialist ocular implants/drops/combinations, full cancer partner protocols or every off-label condition regimen. Product-specific independent review needed before applying those omitted regimens.",
+    "Current general lactation wording differs from Hemady two-week restriction; no universal short-course prohibition or zero exposure inferred. Clinical revision dates distinct from SPL updates."
+  ],
+  "unresolved_source_questions": [
+    {
+      "question": "Legacy general oral head-injury wording conflicts with current severe-TBI guidance; injection also retains legacy shock-dose language.",
+      "disposition": "Current primary BTF recommendation controls published TBI statement; no traumatic-edema or shock mega-bolus regimen propagated.",
+      "sources": [
+        "oral",
+        "injection",
+        "tbi"
+      ],
+      "sections": [
+        "INDICATIONS",
+        "DOSAGE",
+        "7, Steroids"
+      ]
+    }
+  ],
+  "validation": {
+    "schema": "Actual validateMonograph [] on 2026-10-01; eight ordered sections, four Safety cards, three Product cards and three hero tuples.",
+    "tests_build_lint": "Parent batch checks required",
+    "rendered_page": "Parent batch QA required"
+  },
+  "monograph_sha256": "5502783108cf498fbd078e2ca6bc61147ad100e8bce5d6737344c0946d8c0646",
+  "source_archive": {
+    "directory": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-24-thyroid-metformin",
+    "checked": "2026-10-01",
+    "verified": "Full selected DailyMed SPL XML, parsed sections and public pages plus current primary Brain Trauma Foundation public recommendation HTML/text copied with exact SHA256 verification. Existing divergent files preserved."
+  }
+}

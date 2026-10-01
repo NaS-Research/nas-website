@@ -229,6 +229,16 @@ import { bisoprolol } from "./bisoprolol.js";
 import { solifenacin } from "./solifenacin.js";
 import { carbamazepine } from "./carbamazepine.js";
 import { betamethasone_clotrimazole } from "./betamethasone-clotrimazole.js";
+import { dextroamphetamine } from "./dextroamphetamine.js";
+import { omega3AcidEthylEsters } from "./omega-3-acid-ethyl-esters.js";
+import { epinephrine } from "./epinephrine.js";
+import { levofloxacin } from "./levofloxacin.js";
+import { dextromethorphanPromethazine } from "./dextromethorphan-promethazine.js";
+import { ramipril } from "./ramipril.js";
+import { loperamide } from "./loperamide.js";
+import { mirabegron } from "./mirabegron.js";
+import { medroxyprogesterone } from "./medroxyprogesterone.js";
+import { dexamethasone } from "./dexamethasone.js";
 
 export const reviewedDrugMonographs = {
   "atorvastatin": atorvastatin,
@@ -461,4 +471,14 @@ export const reviewedDrugMonographs = {
   "solifenacin": solifenacin,
   "carbamazepine": carbamazepine,
   "betamethasone-clotrimazole": betamethasone_clotrimazole,
+  "dextroamphetamine": dextroamphetamine,
+  "omega-3-acid-ethyl-esters": omega3AcidEthylEsters,
+  "epinephrine": epinephrine,
+  "levofloxacin": levofloxacin,
+  "dextromethorphan-promethazine": dextromethorphanPromethazine,
+  "ramipril": ramipril,
+  "loperamide": loperamide,
+  "mirabegron": mirabegron,
+  "medroxyprogesterone": medroxyprogesterone,
+  "dexamethasone": dexamethasone,
 };
