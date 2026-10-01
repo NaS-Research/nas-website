@@ -71,7 +71,7 @@ export const pharmacyStudyContent = {
       "A two-in-one PN admixture contains dextrose and amino acids together, with lipid infused separately if needed. A three-in-one admixture, also called a total nutrient admixture, includes lipid in the same container.",
       "Protein provides 4 kcal/g, dextrose provides 3.4 kcal/g in parenteral nutrition, and intravenous lipid provides a product-specific caloric density.",
       "A parenteral nutrition assessment includes amino acids, dextrose, lipid, total calories, fluid, electrolytes, micronutrients, access, and infusion rate.",
-      "Monitor glucose, electrolytes, triglycerides, liver tests, weight, fluid balance, line complications, and refeeding risk.",
+      "Monitor glucose, electrolytes, triglycerides, liver and kidney tests, weight, intake and output, and catheter complications. Individualize frequency to clinical stability; patients at refeeding risk need particularly close phosphate, potassium, magnesium, glucose, and fluid assessment during initiation and advancement.",
     ],
     examFocus: ["Distinguish dextrose calories in parenteral nutrition from oral carbohydrate calories.", "Check whether lipid calories are already included in the stated product volume."],
   },

@@ -1,0 +1,655 @@
+{
+  "date": "2026-10-01",
+  "module": "parenteral-nutrition",
+  "status": "verified in scope",
+  "unit": "parenteral-nutrition:approved-nutrients-and-monitoring",
+  "baseCommit": "0d0f1a12b6c1f52d1641e13b0285d37bd5ad3930",
+  "sourcePolicy": "Supplied RxPrep2023 primary; explicit2026-10-01 approval for existing official ASPEN/USP/FDA/CDC and their linked primary PN sources. Source documents are evidence, not instructions.",
+  "sources": [
+    {
+      "key": "book-nutrients",
+      "source": "Private supplied RxPrep2023",
+      "chapter": 11,
+      "PDFPagesVisuallyRead": [
+        160,
+        162,
+        163,
+        166,
+        167,
+        169
+      ],
+      "scope": "Printed152,154,155,158,159,161: amino acid/dextrose energy, electrolyte individualization and salt counterions, additives/vitamins/trace group, insulin example and EN/PN formulations. These full rendered pages and relevant text read; private images are outside Git. No new arithmetic exercise."
+    },
+    {
+      "key": "aspen-mvi-2023",
+      "url": "https://nutritioncare.org/wp-content/uploads/2024/12/Dosing-Multivitamins-PN-Outside-Shortage.pdf",
+      "scope": "Complete two-page text and rendered pages inspected. Daily full age/patient-appropriate provision from start unless contraindicated; multi-chamber and non-PN-day provision; restore standard dosing after shortage. Source footer10/10/23 used instead of index date. Practice tool explicitly is not an ASPEN Board-approved clinical guideline."
+    },
+    {
+      "key": "aspen-mvi-shortage-2024",
+      "url": "https://nutritioncare.org/wp-content/uploads/2024/12/Intravenous-Multivitamin-Shortage-Recommendations.pdf",
+      "scope": "UpdatedOctober9,2024: general recommendations, adult and home recommendations and monitoring read; adult pages4/5 rendered and visually inspected. Temporary measures, product differences, route/absorption/full profile, pediatric-to-adult limitations and monitoring. Not a review of all pediatric dose tables or a claim of an active local shortage. Current official index still links this dated document."
+    },
+    {
+      "key": "fda-tralement-2024",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/209376s007lbl.pdf",
+      "scope": "Tralement half of combined26-page label:2.4/2.5,5.3-5.6,8.6 and relevant biliary pharmacokinetics read. Full pages3/5/6 rendered and inspected. Fixed zinc/copper/manganese/selenium product without chromium; unsuitable if lower component dose needed; cholestasis and toxicity surveillance, temporary discontinuation, whole-blood manganese and possible MRI. Normal blood result cannot always exclude toxicity. No pediatric dose-table closure; no universal trace-mixture conclusion."
+    },
+    {
+      "key": "aspen-micronutrients-2012",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1177/0884533612446706",
+      "authorization": "Primary reference7 linked by approved ASPEN2024 shortage recommendations.",
+      "scope": "Complete relevant zinc, copper, manganese, chromium and iron discussions read; GI drainage/fistula/diarrhea and severe-burn zinc losses, selective adjustment and accumulation. Ostomy assessment is an explicit clinical inference from GI-loss mechanisms. No historical trace-product table treated as current products and no new micronutrient dose prescribed. Published corrections reviewed:2014 neonatal B12 and2025/2026 pediatric oral/enteral vitaminC do not alter the adult zinc/manganese prose used here. Not whole-paper/table verification.",
+      "corrections": [
+        "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1177/0884533614551926",
+        "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1002/ncp.70067"
+      ]
+    },
+    {
+      "key": "aspen-sccm-2016",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1177/0148607115621863",
+      "authorization": "Linked primary guideline in approved ASPEN2017 appropriateness references.",
+      "scope": "Relevant A3/A4,H4,I1,J1/J2,K1 complete prose read. Critically ill renal/hepatic protein context, renal-replacement amino acid losses, no restriction solely to delay dialysis, albumin limitations, CO2 excess-energy/lipogenesis and all-IV-energy accounting. Low-quality/consensus organ-specific statements are not a dose rule for all CKD."
+    },
+    {
+      "key": "aspen-critical-2022",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/jpen.2267",
+      "scope": "Official ASPEN guideline index link; updatedfive-question scope, Table1Q1/Q2 recommendations and complete clinical-application rows read and visually inspected, including previously hidden Q2 row. Clinical judgment for protein; glucose/respiratory-acidosis/TG tolerance, reduction of excess feeding and medication calories. No new fixed kcal/kg or protein dose. This update does not replace every2016 organ-specific topic."
+    },
+    {
+      "key": "aspen-appropriateness-2017",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1177/0148607117695251",
+      "scope": "Relevant full nutrient assessment, liver/TG context and Tables13.1/13.2 text recompared: delivery, clinical/lab/weight/fluid/GI/medication/line assessment and stability-based frequency. Table visual inspection retained from prior home-monitoring review; not newly re-rendered in this unit."
+    },
+    {
+      "key": "aspen-safety-2014",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1177/0148607113511992",
+      "scope": "Relevant prescribing/clinical-review and administration prose read: actual delivery and labs, insulin compatibility and interruption risk, emulsion/administration workflow. Historical lipid-free0.22-micron filter text NOT adopted; current previously verified1.2-micron recommendation retained."
+    },
+    {
+      "key": "aspen-compatibility-2022",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/jpen.2306",
+      "scope": "Full relevant inspection/physical-chemical instability, electrolytes including bicarbonate/Ca/Mg precipitation, vitamin oxygen/light/storage, iron and emulsion/Y-site prose read. Normal appearance cannot exclude subvisible particles or chemical instability. No unsupported universal storage duration or compatibility cutoff added."
+    },
+    {
+      "key": "aspen-refeeding-2020-retained",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/ncp.10474",
+      "scope": "Adult thiamine and electrolyte/fluid monitoring retain item-specific text and complete Table6 visual/source comparison recorded in parenteral-nutrition-refeeding-timing-review.json. No new preventive dose or new arithmetic count."
+    },
+    {
+      "key": "prior-lipid-fluid-evidence",
+      "source": "parenteral-nutrition-fluid-label-review.json; parenteral-nutrition-approved-safety-review.json; parenteral-nutrition-home-monitoring-review.json",
+      "scope": "Unchanged macro figure lipid/essential-FA/non-PN medication energy and fluid-first elements retain product-specific FDA2025/ASPEN/book evidence. Previously partial protein statement now supported by reviewed2016/2022 protein guidance."
+    }
+  ],
+  "questionCoverageUpdates": [
+    {
+      "id": "parenteral-nutrition-020",
+      "status": "verified",
+      "sources": [
+        "book-nutrients",
+        "aspen-sccm-2016",
+        "aspen-critical-2022"
+      ],
+      "scope": "Prompt, four choices, key, rationale and remediation anchor individually compared. Excess carbohydrate energy can worsen glucose and CO2 burden; neither unchanged exposure with smaller volume, fewer catheter infections, nor improved healing/stable glucose establishes excessive delivery. Pattern warrants assessment and does not diagnose overfeeding.",
+      "question": {
+        "id": "parenteral-nutrition-020",
+        "question": "Which finding can reflect excessive carbohydrate delivery?",
+        "choices": [
+          "Hyperglycemia with increased carbon dioxide production",
+          "Stable glucose with improved wound healing alone",
+          "Lower catheter infection risk with unchanged metabolic findings",
+          "A lower infusion volume with unchanged carbohydrate dose and rate"
+        ],
+        "answer": 0,
+        "rationale": "Excess energy from carbohydrate can worsen glycemic control and increase lipogenesis and carbon dioxide production. This pattern warrants review of total energy and rate; it does not prove overfeeding or exclude other causes. Improved healing, fewer catheter infections or a smaller volume alone do not establish excessive carbohydrate exposure.",
+        "reviewHref": "#macronutrient-design"
+      }
+    },
+    {
+      "id": "parenteral-nutrition-025",
+      "status": "verified",
+      "sources": [
+        "aspen-sccm-2016",
+        "aspen-critical-2022",
+        "aspen-appropriateness-2017"
+      ],
+      "scope": "Prompt, four choices, key, rationale and remediation anchor individually compared. Individualize illness/losses/RRT/goals. Restriction solely to delay dialysis, an unchanged dose despite changing losses, and albumin-only adjustment are not defensible. Critically ill guidance is explicitly bounded and not a universal CKD high-protein prescription.",
+      "question": {
+        "id": "parenteral-nutrition-025",
+        "question": "Which approach to protein in renal dysfunction is most defensible?",
+        "choices": [
+          "Individualize for illness, losses, renal replacement therapy, and goals rather than automatically restricting",
+          "Restrict protein in every acutely ill patient solely to delay dialysis",
+          "Keep the same protein target when renal replacement losses and illness change",
+          "Adjust the protein dose using serum albumin alone"
+        ],
+        "answer": 0,
+        "rationale": "Renal dysfunction does not select one protein dose. Assess illness, losses, renal support and goals, then reassess actual delivery. The ASPEN/SCCM critical-care guideline discourages restriction solely to delay dialysis and recognizes amino acid losses with renal replacement therapy. Albumin alone cannot establish protein adequacy; this is not a universal high-protein prescription for every patient with chronic kidney disease.",
+        "reviewHref": "#macronutrient-design"
+      }
+    },
+    {
+      "id": "parenteral-nutrition-027",
+      "status": "verified",
+      "sources": [
+        "book-nutrients",
+        "aspen-appropriateness-2017",
+        "aspen-safety-2014"
+      ],
+      "scope": "Prompt, four choices, key, rationale and remediation anchor individually compared. Published ranges are starting references. Neither new abnormal labs, kidney/urine assessment nor GI/other replacement can be ignored by appealing to a range; final formulation compatibility also matters.",
+      "question": {
+        "id": "parenteral-nutrition-027",
+        "question": "Which statement about PN electrolyte ranges is most accurate?",
+        "choices": [
+          "Published ranges are starting references that require patient-specific adjustment",
+          "A dose within a published range should remain unchanged despite new laboratory abnormalities",
+          "A standard range replaces assessment of kidney function and urine output",
+          "PN electrolytes can be selected without accounting for gastrointestinal losses or separate replacement"
+        ],
+        "answer": 0,
+        "rationale": "The book requires individualization, including adjustment for renal disease. ASPEN also calls for review of biochemical data, medicines, fluid balance and gastrointestinal output. A published range cannot override those findings, other electrolyte sources or formulation compatibility limits.",
+        "reviewHref": "#micronutrient-balance"
+      }
+    },
+    {
+      "id": "parenteral-nutrition-030",
+      "status": "verified",
+      "sources": [
+        "aspen-micronutrients-2012",
+        "aspen-appropriateness-2017"
+      ],
+      "scope": "Prompt, four choices, key, rationale and remediation anchor individually compared. GI loss supports individualized zinc assessment; ostomy application is a stated inference. Zinc does not substitute for fluid/sodium, require every trace element to rise equally, or establish that a fixed mix covers all losses.",
+      "question": {
+        "id": "parenteral-nutrition-030",
+        "question": "Why may zinc requirements rise in a patient with a high-output ostomy?",
+        "choices": [
+          "Large gastrointestinal losses can increase zinc loss",
+          "Zinc should replace sodium and fluid replacement for the lost output",
+          "Every trace element must be increased by the same proportion as zinc",
+          "A fixed multitrace dose always covers zinc needs regardless of output"
+        ],
+        "answer": 0,
+        "rationale": "ASPEN describes increased zinc needs with diarrhea, intestinal drainage and enterocutaneous fistula losses. High ostomy output warrants an individualized zinc assessment along with fluid and electrolyte replacement. Additional zinc does not replace sodium or fluid, require an identical increase in every element, or make a fixed multitrace dose sufficient for all loss states.",
+        "reviewHref": "#micronutrient-balance"
+      }
+    },
+    {
+      "id": "parenteral-nutrition-031",
+      "status": "verified",
+      "sources": [
+        "fda-tralement-2024",
+        "aspen-micronutrients-2012"
+      ],
+      "scope": "Prompt, four choices, key, rationale and remediation anchor individually compared. Impaired biliary clearance and accumulation support selective manganese reduction/omission. Normal whole-blood manganese does not always exclude toxicity; automatic increase or the same fixed mixture despite a lower manganese need is unsuitable.",
+      "question": {
+        "id": "parenteral-nutrition-031",
+        "question": "Why can manganese be reduced or omitted in cholestasis?",
+        "choices": [
+          "Biliary excretion is impaired and accumulation can cause neurotoxicity",
+          "Cholestasis requires an automatic increase in manganese to match every other nutrient",
+          "A normal whole-blood manganese result always excludes neurologic toxicity",
+          "The same fixed multitrace combination is suitable when a lower manganese dose is needed"
+        ],
+        "answer": 0,
+        "rationale": "Cholestasis increases the risk of manganese accumulation and neurotoxicity. The FDA Tralement label calls for neurologic surveillance, whole-blood manganese and liver monitoring, and consideration of individual trace products when the fixed combination is unsuitable. Toxicity has also been reported with normal blood manganese; a concentration alone does not replace clinical assessment.",
+        "reviewHref": "#micronutrient-balance"
+      }
+    },
+    {
+      "id": "parenteral-nutrition-033",
+      "status": "verified",
+      "sources": [
+        "aspen-mvi-2023",
+        "aspen-mvi-shortage-2024"
+      ],
+      "scope": "Prompt, four choices, key, rationale and remediation anchor individually compared. Use current product-specific ASPEN shortage guidance and a documented plan. Permanent crisis schedules, unassessed oral replacement and automatic pediatric-to-adult equivalence are incorrect. Restore routine provision as supply recovers; unsupported ASHP-specific attribution removed.",
+      "question": {
+        "id": "parenteral-nutrition-033",
+        "question": "How should a current multivitamin shortage be managed?",
+        "choices": [
+          "Use current product-specific ASPEN guidance with a documented substitution and monitoring plan",
+          "Continue reduced-frequency multivitamins routinely after adequate supply returns",
+          "Substitute an oral multivitamin without evaluating absorption or its vitamin profile",
+          "Use a pediatric multivitamin as an automatically equivalent adult replacement"
+        ],
+        "answer": 0,
+        "rationale": "ASPEN shortage measures are temporary and should be reversed when adequate supply returns. Oral or enteral substitution requires clinical suitability and a complete vitamin profile; severe malabsorption can make it unsuitable. Pediatric vitamin doses and ratios are not automatically appropriate for adults. Routine daily, patient-appropriate vitamin provision remains the standard outside a shortage.",
+        "reviewHref": "#micronutrient-balance"
+      }
+    },
+    {
+      "id": "parenteral-nutrition-044",
+      "status": "verified",
+      "sources": [
+        "aspen-critical-2022",
+        "aspen-sccm-2016",
+        "aspen-appropriateness-2017"
+      ],
+      "scope": "Prompt, four choices, key, rationale and remediation anchor individually compared. The metabolic constellation warrants review of energy and tolerance. Fluid retention is separately nonspecific, not proof of overfeeding. Stable/improving metabolism, a clean line and adequate EN after appropriately reducing PN do not show excess delivery.",
+      "question": {
+        "id": "parenteral-nutrition-044",
+        "question": "Which finding suggests PN overfeeding?",
+        "choices": [
+          "Hyperglycemia, rising triglycerides, fluid retention, and increased carbon dioxide production",
+          "Stable metabolic measurements with improving strength alone",
+          "A clean catheter site without changes in energy delivery or tolerance",
+          "Reliable enteral intake after PN has been appropriately reduced to account for it"
+        ],
+        "answer": 0,
+        "rationale": "This constellation warrants review of total energy, carbohydrate and lipid exposure, rate, and fluid balance. Excess energy can worsen glycemia, triglycerides and carbon dioxide burden; fluid retention is a separate, nonspecific balance finding. Illness, medicines and organ dysfunction can also contribute, so these findings suggest a need for assessment rather than proving overfeeding. The other observations alone do not establish excess delivery.",
+        "reviewHref": "#monitoring-transition"
+      }
+    },
+    {
+      "id": "parenteral-nutrition-045",
+      "status": "verified",
+      "sources": [
+        "aspen-critical-2022",
+        "aspen-appropriateness-2017",
+        "aspen-safety-2014"
+      ],
+      "scope": "Prompt, four choices, key, rationale and remediation anchor individually compared. Assess severity and treat significant hyperglycemia promptly while reviewing all glucose/calories, medicines, illness and rates. Insulin-only escalation, isolated amino-acid reduction or ignoring other IV glucose fails that assessment; review must not delay urgent treatment.",
+      "question": {
+        "id": "parenteral-nutrition-045",
+        "question": "What is the first step when hyperglycemia develops after PN advancement?",
+        "choices": [
+          "Assess severity and review total dextrose, all calories, illness, medicines, and infusion rate",
+          "Increase insulin alone without reassessing energy delivery or the patient's condition",
+          "Reduce amino acids alone while keeping all carbohydrate sources unchanged",
+          "Review bag dextrose while excluding other intravenous glucose sources"
+        ],
+        "answer": 0,
+        "rationale": "Assess and treat clinically significant hyperglycemia promptly while reviewing actual delivery, all glucose and energy sources, medicines and illness. Consider reducing excessive feeding when appropriate. Insulin may still be needed; prescription review must not delay urgent treatment, and neither protein reduction alone nor ignoring non-PN glucose resolves the assessment.",
+        "reviewHref": "#monitoring-transition"
+      }
+    },
+    {
+      "id": "parenteral-nutrition-103",
+      "status": "verified",
+      "sources": [
+        "fda-tralement-2024",
+        "aspen-micronutrients-2012"
+      ],
+      "scope": "Prompt, four choices, key, rationale and remediation anchor individually compared. Prompt assessment and temporary withholding of manganese-containing product pending evaluation is the best answer. Check actual product, other causes, whole-blood manganese and possible MRI. A normal result does not always exclude toxicity; increasing all trace elements or permanently omitting all micronutrients is unsafe/unjustified. No automatic diagnosis from neurologic symptoms.",
+      "question": {
+        "id": "parenteral-nutrition-103",
+        "question": "A patient with cholestasis has received a standard multi-trace product for months and develops neurologic changes. What is the most defensible next action?",
+        "choices": [
+          "Promptly assess possible manganese toxicity and withhold the manganese-containing product pending evaluation",
+          "Continue the same product if a single whole-blood manganese result is normal",
+          "Increase the entire multitrace dose without evaluating the neurologic changes",
+          "Permanently omit all vitamins and trace elements without an individual replacement plan"
+        ],
+        "answer": 0,
+        "rationale": "Cholestasis and prolonged manganese exposure raise concern for accumulation, but new neurologic changes require assessment of other causes as well. The FDA Tralement label advises temporary discontinuation for suspected toxicity, whole-blood manganese testing and consideration of brain MRI. Check the actual product and complete trace plan; a normal concentration does not always exclude toxicity, and indefinitely stopping every micronutrient can cause deficiencies.",
+        "reviewHref": "#micronutrient-balance"
+      }
+    }
+  ],
+  "lessonCoverageUpdates": [
+    {
+      "lesson": "macronutrient-design",
+      "heading": "Set protein from clinical demand",
+      "body": "Amino acids provide 4 kcal per gram but are prescribed primarily to support protein synthesis and limit net protein loss. Assess illness severity, wounds and other losses, body composition, renal replacement therapy, liver disease, and goals of care. Dialysis can increase amino acid losses. In critically ill patients, kidney or liver dysfunction alone does not justify automatic protein restriction; protein should not be restricted just to postpone dialysis. These principles do not establish one dose for every patient with chronic kidney disease. Reassess the amount actually delivered and the clinical response; albumin alone cannot determine protein adequacy.",
+      "status": "verified",
+      "sources": [
+        "book-nutrients",
+        "aspen-sccm-2016",
+        "aspen-critical-2022",
+        "aspen-appropriateness-2017"
+      ],
+      "scope": "Each sentence compared with the relevant source discussions. Energy convention; individualized illness/wounds/losses/body composition/RRT/liver/goals; dialysis losses; scoped renal/hepatic restriction discussion; actual delivery and albumin limitations."
+    },
+    {
+      "lesson": "macronutrient-design",
+      "heading": "Advance dextrose within metabolic capacity",
+      "body": "Dextrose provides 3.4 kcal per gram. The glucose infusion rate expresses delivery relative to weight and infusion time; it supports prescribing but does not replace glucose monitoring. Count dextrose-containing intravenous fluids and medication vehicles in total exposure. Excess energy can worsen glycemic control and increase lipogenesis and carbon dioxide production, particularly in patients prone to carbon dioxide retention. Rising triglycerides or hepatic abnormalities also warrant review of total energy and tolerance. Assess fluid balance separately and investigate illness, medicines, and other causes rather than treating any one abnormality as proof of overfeeding.",
+      "status": "verified",
+      "sources": [
+        "book-nutrients",
+        "aspen-sccm-2016",
+        "aspen-critical-2022",
+        "aspen-appropriateness-2017"
+      ],
+      "scope": "Each sentence compared with the relevant source discussions. 3.4kcal/g and GIR; monitoring, all-IV-glucose exposure; glycemia/lipogenesis/CO2 and TG/hepatic assessment; separately evaluate fluid and other causes."
+    },
+    {
+      "lesson": "micronutrient-balance",
+      "heading": "Prescribe electrolytes as a pattern",
+      "body": "Individualize sodium, potassium, magnesium, calcium, phosphate, chloride, and acetate using laboratory trends, kidney function, urine and gastrointestinal output, medicines, acid-base status, and replacement from other sources. Count both ions supplied by each salt rather than adjusting one in isolation. Acetate can provide base equivalents after metabolism and changes the amount of chloride delivered. Avoid bicarbonate salts in the PN admixture because they can promote incompatibility and precipitation, including calcium and magnesium salts. Published dose ranges are starting references; a changing patient and validated formulation limits determine the final prescription.",
+      "status": "verified",
+      "sources": [
+        "book-nutrients",
+        "aspen-appropriateness-2017",
+        "aspen-compatibility-2022"
+      ],
+      "scope": "Each sentence compared with the relevant source discussions. Listed electrolytes, clinical/lab/renal/urine/GI/medicine/acid-base context; both salt ions, acetate base, bicarbonate-related Ca/Mg incompatibility; individualized prescription and validated limits."
+    },
+    {
+      "lesson": "micronutrient-balance",
+      "heading": "Provide complete vitamins",
+      "body": "Include a full age- and patient-appropriate parenteral multivitamin dose daily from the beginning of PN unless contraindicated. Commercial multichamber PN also requires a vitamin plan, and patients receiving PN less than daily still need vitamin provision addressed on non-PN days. Follow the product and formulation instructions for mixing, storage, and light protection; vitamins can degrade with time, oxygen, and light. Additional preventive thiamine is required for adults at refeeding risk according to the refeeding protocol. During a shortage, use current product-specific ASPEN guidance, document substitutions and monitoring, and restore routine provision when supply recovers. Oral or enteral substitution requires a usable route, adequate absorption, and a complete vitamin profile; a pediatric product or an incomplete oral supplement is not automatically an equivalent adult replacement.",
+      "status": "verified",
+      "sources": [
+        "aspen-mvi-2023",
+        "aspen-mvi-shortage-2024",
+        "aspen-compatibility-2022",
+        "aspen-refeeding-2020-retained"
+      ],
+      "scope": "Each sentence compared with the relevant source discussions. Daily full patient/age-appropriate dose from beginning unless contraindicated; commercial bags/non-PN days; product mixing/storage/light/oxygen; adult refeeding thiamine; temporary documented shortage substitution, route/absorption/profile and pediatric limitations."
+    },
+    {
+      "lesson": "micronutrient-balance",
+      "heading": "Individualize trace elements",
+      "body": "Check the actual elements and amounts in the selected product. For example, the FDA Tralement label lists zinc, copper, manganese, and selenium; it does not contain chromium. A fixed combination is unsuitable when the patient needs less of one component, so individual products may be needed. High gastrointestinal losses and severe burns can increase zinc requirements; this does not justify increasing every trace element together. Consider kidney function, organ support, wounds, losses, and duration during reassessment. Cholestasis can increase copper and manganese accumulation risk. New neurologic symptoms during manganese exposure require prompt assessment; for suspected Tralement-associated toxicity, temporarily discontinue the product and evaluate whole-blood manganese and other causes. Reassess reduced or withheld elements to avoid deficiency. Routine iron addition to a TNA is avoided because of formulation-specific compatibility and safety concerns; assess iron status and replacement separately.",
+      "status": "verified",
+      "sources": [
+        "fda-tralement-2024",
+        "aspen-micronutrients-2012",
+        "aspen-compatibility-2022",
+        "aspen-appropriateness-2017"
+      ],
+      "scope": "Each sentence compared with the relevant source discussions. Actual four-element Tralement without chromium; fixed-mixture limitations; GI/burn zinc losses; organ support and clinical reassessment; cholestatic Cu/Mn accumulation, new neurologic assessment, conditional temporary discontinuation and blood testing; prevent deficiency and assess iron separately."
+    },
+    {
+      "lesson": "compounding-safety",
+      "heading": "Choose a formulation deliberately",
+      "body": "A two-in-one admixture contains dextrose and amino acids, with lipid infused separately when prescribed. A total nutrient admixture combines all three in one container. Combining lipid reduces the number of nutrient containers but adds emulsion-stability constraints; separate lipid delivery still requires compatibility review at any shared infusion site. Inspect the preparation, but a normal appearance cannot exclude subvisible particles or chemical instability. Select the formulation using validated compatibility and stability data and the patient's nutrient needs. Confirm the applicable tubing, filtration, storage, and administration-time requirements rather than assuming every formulation uses the same workflow.",
+      "status": "verified",
+      "sources": [
+        "book-nutrients",
+        "aspen-safety-2014",
+        "aspen-compatibility-2022"
+      ],
+      "scope": "Each sentence compared with the relevant source discussions. 2-in-1/TNA distinction; separate prescribed lipid and shared-site compatibility; containers/emulsion constraints; inspection cannot exclude subvisible/chemical instability; validated product/patient choice and applicable administration requirements."
+    },
+    {
+      "lesson": "monitoring-transition",
+      "heading": "Separate overfeeding from intolerance",
+      "body": "Hyperglycemia, rising triglycerides, respiratory acidosis from excess carbon dioxide production, and hepatic abnormalities warrant review of energy delivery and metabolic tolerance. They are not specific for overfeeding: illness, medicines, lipid delivery, and impaired metabolism may contribute. Review all nutrition and medication calories, actual infusion rates, and fluid balance while treating clinically significant abnormalities promptly. Reducing an excessive prescription may be appropriate; adding insulin alone should not substitute for that review. Regular insulin may be included only when clinically appropriate and supported by compatibility and stability data. Reassess glucose and insulin exposure when delivery or clinical needs change, especially around infusion interruptions when separately administered insulin may continue to act.",
+      "status": "verified",
+      "sources": [
+        "aspen-critical-2022",
+        "aspen-sccm-2016",
+        "aspen-appropriateness-2017",
+        "aspen-safety-2014"
+      ],
+      "scope": "Each sentence compared with the relevant source discussions. Glucose/TG/CO2-related respiratory acidosis/liver findings prompt review and are nonspecific; all energy/medicines/rates/fluid and timely treatment; reduce excess as appropriate; compatible regular insulin and glucose/insulin changes around interruption, including continuing separate insulin action."
+    }
+  ],
+  "figureCoverageUpdates": [
+    {
+      "slug": "macronutrient-design",
+      "status": "verified",
+      "changed": false,
+      "sources": [
+        "book-nutrients",
+        "aspen-sccm-2016",
+        "aspen-critical-2022",
+        "prior-lipid-fluid-evidence"
+      ],
+      "scope": "All four columns compared: fluid prescription/all sources; AA4kcal/g and individualized illness/losses/organ-support/goals; dextrose3.4kcal/g/GIR/glycemic tolerance; product-specific lipid, essential fatty acids and non-PN calories. Previous partial protein claim now supported; no figure data change."
+    },
+    {
+      "slug": "micronutrient-balance",
+      "status": "verified",
+      "changed": true,
+      "sources": [
+        "book-nutrients",
+        "aspen-appropriateness-2017",
+        "aspen-mvi-2023",
+        "aspen-mvi-shortage-2024",
+        "fda-tralement-2024",
+        "aspen-micronutrients-2012"
+      ],
+      "scope": "Title daily provision plus replacement and all four columns compared: electrolyte trends/kidney/acid-base/losses/medicines; full age-appropriate daily vitamins; selective product-content/cholestasis/losses/duration trace review; temporary product-specific shortage guidance and recovery reassessment. Removed unsupported ASHP-specific attribution."
+    }
+  ],
+  "legacyCoverageUpdate": {
+    "route": "/learn/pharmacy/modules/nutrition-ans-cardiovascular-one#enteral-parenteral-nutrition",
+    "entry": "mustKnow[5]",
+    "body": "Monitor glucose, electrolytes, triglycerides, liver and kidney tests, weight, intake and output, and catheter complications. Individualize frequency to clinical stability; patients at refeeding risk need particularly close phosphate, potassium, magnesium, glucose, and fluid assessment during initiation and advancement.",
+    "status": "verified",
+    "sources": [
+      "aspen-appropriateness-2017",
+      "aspen-safety-2014",
+      "aspen-refeeding-2020-retained"
+    ],
+    "scope": "Only the remaining PN monitoring paragraph changed. Eight earlier PN entry comparisons retained. This does not verify the other lessons or assessments in the combined legacy parent."
+  },
+  "coverage": {
+    "baseEvidence": "parenteral-nutrition-access-review.json",
+    "baseVerifiedBank": 133,
+    "bank": 142,
+    "currentVerifiedBank": 142,
+    "additionalVerifiedRetainedIds": [
+      "parenteral-nutrition-020",
+      "parenteral-nutrition-025",
+      "parenteral-nutrition-027",
+      "parenteral-nutrition-030",
+      "parenteral-nutrition-031",
+      "parenteral-nutrition-033",
+      "parenteral-nutrition-044",
+      "parenteral-nutrition-045",
+      "parenteral-nutrition-103"
+    ],
+    "remainingBankIds": [],
+    "embeddedSourceVerified": 6,
+    "embeddedTotal": 6,
+    "currentCumulativeSourceVerified": 5,
+    "currentCumulativeTotal": 5,
+    "fullyVerifiedOriginalBodies": 24,
+    "originalBodies": 24,
+    "remainingOriginalBodies": 0,
+    "bookAddedBodies": 23,
+    "approvedSourceAddedBodies": 10,
+    "totalBodies": 57,
+    "fullyVerifiedBodies": 57,
+    "fullyVerifiedFigures": 6,
+    "figures": 6,
+    "remainingPartlySupportedFigures": 0,
+    "legacyPNVerifiedEntries": 9,
+    "legacyPNTotalEntries": 9,
+    "newSections": 0,
+    "newQuestions": 0,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false,
+    "pending": "Whole-module reconciliation of all prior evidence, metadata, non-body teaching fields and current integrated content; Chapter11 EN/pediatric/fluid dependencies and checklist15 remain open."
+  },
+  "broaderReview": {
+    "currentItems": [
+      "cumulative-parenteral-nutrition-parenteral-nutrition-001",
+      "cumulative-parenteral-nutrition-parenteral-nutrition-036",
+      "cumulative-parenteral-nutrition-parenteral-nutrition-081",
+      "cumulative-parenteral-nutrition-parenteral-nutrition-book-007",
+      "cumulative-parenteral-nutrition-parenteral-nutrition-care-004"
+    ],
+    "sourceVerification": "All five current PN selections retain item-specific previously verified evidence; exact objects and six embedded checks unchanged.",
+    "runtimeCorrectAndIncorrectRetested": true
+  },
+  "validation": {
+    "isolatedCandidate": "HEAD archive plus exactly four scoped content files, dependency symlink only; no .env or unrelated working edits.",
+    "candidateContentHashes": {
+      "src/data/modules/parenteralNutrition.js": "867a4b036e904d45d45b301b3b1bd6890a7913cbc116ecc497c3a04bc22ad8e8",
+      "src/data/questionBanks/parenteralNutrition.js": "917f7c86bc8fb4e93bbf6a6cbcca47ef35210b61e0260c92ba12bbc5064e66c8",
+      "src/components/learn/ParenteralNutritionVisual.jsx": "eeeea84b8bf7cb14f83a4ac6005b5eaa3470e740681729db9edcf41af9996984",
+      "src/data/pharmacyStudyContent.js": "f44fcc015e323251a61bee9fb2686b1d9ae764b2892c08f3a10e886587ab958a"
+    },
+    "build": {
+      "status": "passed",
+      "staticPages": 567,
+      "command": "next build --webpack",
+      "logSHA256": "3517ebb20f5fbaef3452be5ec2afbbd13f6336186688581481cdc9b6f9c64b41"
+    },
+    "focusedStructuralAudit": {
+      "status": "passed",
+      "questions": 142,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "scope": "Structural success does not establish clinical accuracy.",
+      "logSHA256": "da2a906e789b37b04895017f99caef5a3883c38d31ce438fa4efb08a8a58ab85"
+    },
+    "technical": {
+      "status": "passed",
+      "bank": 142,
+      "sections": 57,
+      "retainedIDsKeysPromptsAnchorsPreserved": 142,
+      "retainedObjectsUnchanged": 133,
+      "changedQuestions": [
+        "parenteral-nutrition-020",
+        "parenteral-nutrition-025",
+        "parenteral-nutrition-027",
+        "parenteral-nutrition-030",
+        "parenteral-nutrition-031",
+        "parenteral-nutrition-033",
+        "parenteral-nutrition-044",
+        "parenteral-nutrition-045",
+        "parenteral-nutrition-103"
+      ],
+      "changedBodies": [
+        "Set protein from clinical demand",
+        "Advance dextrose within metabolic capacity",
+        "Prescribe electrolytes as a pattern",
+        "Provide complete vitamins",
+        "Individualize trace elements",
+        "Choose a formulation deliberately",
+        "Separate overfeeding from intolerance"
+      ],
+      "embeddedChecksUnchanged": 6,
+      "cumulativeIDsUnchanged": 5,
+      "addedReferences": 6,
+      "changedFigures": 1,
+      "legacyChangedEntries": 1,
+      "architecturePreserved": true
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "renderedBodies": 57,
+          "figuresPresent": 6,
+          "embeddedChecks": 6,
+          "repairedQuestionsCorrectAndWrong": 9,
+          "moduleFillerQuestions": 1,
+          "currentPNCumulativeCorrectAndWrong": 5,
+          "remediationLinkPassed": true,
+          "localProgressPassed": true
+        },
+        {
+          "width": 390,
+          "renderedBodies": 57,
+          "figuresPresent": 6,
+          "embeddedChecks": 6,
+          "repairedQuestionsCorrectAndWrong": 9,
+          "moduleFillerQuestions": 1,
+          "currentPNCumulativeCorrectAndWrong": 5,
+          "remediationLinkPassed": true,
+          "localProgressPassed": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "manualVisualReview": {
+      "status": "passed",
+      "scope": "Seven revised bodies and two completed figures at1440/390, revised legacy monitoring at both widths, nine revised question cards correctly/incorrectly graded at both widths. Full prompts/choices/feedback/rationales inspected; desktop031/045/103 supplemented to resolve screenshot-top clipping caused by sticky navigation. Supplemental complete cards confirm full text without changing code. Body/figure/legacy inspection performed during source/edit pass; all36 question states completed during release pass.",
+      "imageHashes": {
+        "framed-parenteral-nutrition-031-wrong-1440.png": "ba74550a0453f5e7fdffbd6864d336f1f7723345e510a27bac8b4e83cdc11090",
+        "framed-parenteral-nutrition-045-correct-390.png": "ad551ad464e7ecf36c638538d4ed278583b4f42c2a2fe5ccb78dcb87ce4b2c12",
+        "framed-parenteral-nutrition-027-correct-1440.png": "dce64b56c2762287ca5aee87cdfb18ffa937a837c5898db13f7a35d6eb0e749f",
+        "framed-parenteral-nutrition-030-correct-390.png": "45afb9d6dbcda7519dde0b0e77795f401ee6af29d4fadbdba4a48d1f83cd606e",
+        "figure-micronutrient-balance-390.png": "2be85064acf5a6e1fe814d5a8a2f4955eeb9f12d4f2e4f95d1d9207780670887",
+        "framed-parenteral-nutrition-033-correct-1440.png": "6173ec47192fe06a0feabc5822b50da2ee5b42b7848924b5f54d2aef20bb8022",
+        "body-3-390.png": "66abaeb963980a2bfbc81acd92a3d2fe8df218ebc91733c05d2f90feccec2ba8",
+        "body-2-390.png": "b88b52c036a83fabb8e6e078eaf9e4f190882181b25cbcc973c9e1774ce28263",
+        "framed-parenteral-nutrition-025-wrong-1440.png": "ca7dd3e572a265e5f1b260902ae7ea73253c6be20fcdf80a7b753a66f7801053",
+        "framed-parenteral-nutrition-030-wrong-1440.png": "cf84f4e45750aa2d0501738bdf86b640b1a913bc20ddf16baf9507ab2e7719a9",
+        "body-0-1440.png": "2f8611c2f43c534ce0681c637d369655d36fe91c2fc2cdd6eb17b3f8de351fd5",
+        "body-1-1440.png": "148d12aa565c707c8be954b1f7633461d6f4ddfcdab56b92d895312513136bbc",
+        "framed-parenteral-nutrition-027-wrong-1440.png": "13abe0cc8d161c8d95094fdd939b1fe1029c2b9e1891df05fecf919d566becf9",
+        "body-0-390.png": "0ebf837c545cfe20d4608818ee0eb37c923598e365b09861af46b81cf5d710b6",
+        "framed-parenteral-nutrition-030-wrong-390.png": "af51b39c7c0178a38fa6317df067627596b3886edb843015ffc25fb7fb976d38",
+        "framed-parenteral-nutrition-103-correct-390.png": "e66d4a3646511fd536d69a8ddcccb1480572491d9533dbe52f851b1938b0da42",
+        "framed-parenteral-nutrition-027-wrong-390.png": "1c79d413feda3b61ba61e42b94f518221473990e862f13c3e19e36b5e2051111",
+        "framed-parenteral-nutrition-044-wrong-390.png": "9b60958b3b24031480a2da851b63ac8ffc2fbe0ce0c466955214831d18f2d1bf",
+        "framed-parenteral-nutrition-044-wrong-1440.png": "1a95763f2069fcd029ae74ba6cbe4f8c172ac41a8bf161e3f12fa377ef6ca764",
+        "framed-parenteral-nutrition-103-wrong-390.png": "7665149dbac735b89ff8d4cb483bc2ec3dd680a3e6412fa7a206aa6f47e7e7de",
+        "framed-parenteral-nutrition-020-wrong-1440.png": "68c0d5fd31710cd1e2f9f2f465a4dfa6225933cda9186dd850776abd3d1b34f2",
+        "framed-parenteral-nutrition-020-correct-390.png": "6b5fa7667155ebfcfb3b242320a5668e33646861d1a63cc7adc5de80d38149f1",
+        "body-6-1440.png": "2e2fa9a60760bb2db5380ed5d5b5672e03872da1a86f4b82d5ac5d40b494d0d0",
+        "legacy-390.png": "015436bda175142423b6a098ada9eae4333acefddd116c31599d8783d9b0b001",
+        "framed-parenteral-nutrition-027-correct-390.png": "edf098c1f6b4fd3a67f54b60a18fd3ba666baf5dc09df4e9f66e687c953ed641",
+        "framed-parenteral-nutrition-045-wrong-1440.png": "a2d9eb4c586fbb787ab8c863b9940db91208227b243ac570ad0f6c7b62503104",
+        "framed-parenteral-nutrition-044-correct-390.png": "5bb1a0fcdac2bf1591bb95068dbc06c1ea491929c673b51acbb67665c3b0a40f",
+        "figure-micronutrient-balance-1440.png": "70835d8d822ea6b98c3d3ec8681cbe608d475586b44acac5682080e03a144c80",
+        "framed-parenteral-nutrition-031-correct-390.png": "855cca7dcf17d04d8cbde40f5794a786af518ba1225948c16b68c49421e2c28e",
+        "framed-parenteral-nutrition-020-wrong-390.png": "79acd859abab7a70caec3ba83b42681277a53afd45234c631715b16e0036a231",
+        "legacy-1440.png": "1dc20f4d48974e34d3b167822e46a2fbf85628ed18fba217bab1114ca4d8950d",
+        "body-1-390.png": "3e999ff0e525d524ad3a3fa296da89028f5ad66c256ec1f879bb1d930d5e59e7",
+        "framed-parenteral-nutrition-033-wrong-390.png": "f236081aff626e4050bf86aa56c213904b3ae25977e750095f797740b016bdf4",
+        "framed-parenteral-nutrition-033-wrong-1440.png": "422fa50c72d4240af5d6df5ed67df08e7d88b04b45016108c405b2968db7ba13",
+        "body-4-390.png": "857aac0ef9680a74da6805c6eb744e825433d10a742817cc830d73c7db1c567a",
+        "framed-parenteral-nutrition-031-correct-1440.png": "dd91801f4e8a7b44264191b49c51d1607f1a161e403c672aa808427930c8a2e5",
+        "body-3-1440.png": "ae28b7822e2b13a2b0094bfe646a4f5795b20883c56ba4744a88d2c4fb34572a",
+        "body-2-1440.png": "335086104ed4d4492c4e2e95319cd8e02306a3aad4c4eba4c5f952317e5f1e91",
+        "framed-parenteral-nutrition-025-correct-1440.png": "5d42aa7a83f6ffd5d99eefc5179c0c0ad1103ebfa96ec4da3b787e09031e2939",
+        "framed-parenteral-nutrition-025-wrong-390.png": "51b9a45c65449f20a7a25bb0bcf86c0ebf4be32f0802244c1f2c5c4aa957b0ab",
+        "figure-macronutrient-design-1440.png": "bc84e1c0a02e1f422c131acc457002bc44d79a4bfa0374f307afd6b3d6be7f90",
+        "framed-parenteral-nutrition-103-correct-1440.png": "d93cfebf11a852eaa3f98366058bb9ff05618a7d1e1080bce067e43d27fa7586",
+        "framed-parenteral-nutrition-103-wrong-1440.png": "40a9b58e1d963e482a1d1c9bdf2477408aa2a7a2a8913df495bfd018c9e7d8d4",
+        "framed-parenteral-nutrition-031-wrong-390.png": "cf00e47a9ac3920d015294fb259943f74a8e0913190338da30fdeb7920f64c65",
+        "framed-parenteral-nutrition-025-correct-390.png": "e157341e91615cb9e9d5b1adb906d2e77be01aa227e5344a47734f5d302a5190",
+        "framed-parenteral-nutrition-044-correct-1440.png": "20249a77f60e3e7590a6415b5857d3feefdae9f166084c5cc697b867bfec703d",
+        "body-5-390.png": "28d707007b7dc0e247286736409a538d5fd0313f40352e00f776a7acffcbdcbe",
+        "framed-parenteral-nutrition-033-correct-390.png": "726c660df3cf2862c3fe5e37aa4234e163705d1d04887698a2792cc9ce1834b5",
+        "framed-parenteral-nutrition-045-wrong-390.png": "af4b06518fb27fde6731e311d3242a199359569890097119cd0500e655b6f857",
+        "framed-parenteral-nutrition-030-correct-1440.png": "852efd54e93df4134a2717775ffbe94c24f97dbbe7c055e58d42ef02574f824c",
+        "framed-parenteral-nutrition-045-correct-1440.png": "d85c2a24ccf962be0297564700783a268cdf1d38067db4bfecf9b15e54355a48",
+        "body-6-390.png": "8a76052fb4aae70a6ad2eac812abe30e56aa1db093500b3f66b4b67c4dea2f3c",
+        "framed-parenteral-nutrition-020-correct-1440.png": "98b1daa7c3ad780f690447fb767179aa5cd12492cb60252010b876a87f69abb9",
+        "body-4-1440.png": "13ea2eae9b1255e96cf9f843d927447c6cbab2400d72ffba3b07d7ccbdc5805d",
+        "body-5-1440.png": "890cf99ae91de9a31bd282310039b0d6be5be94a455d4133fbb0d4ef43b52a99",
+        "figure-macronutrient-design-390.png": "3849205cd495909ca187d6b063d9b82cec4ce447876f327b35faf934e2470a09",
+        "complete-parenteral-nutrition-031-correct-1440.png": "5413a257f965cc7502e614cc957d230318f28f1aaa77b506624a7b70233a69f5",
+        "complete-parenteral-nutrition-031-wrong-1440.png": "47a719fb554276927efe8bf63346bbc48bcfe3d1f0a3ba6e56fcdf4738081208",
+        "complete-parenteral-nutrition-045-correct-1440.png": "619806836fd845413db967daca07b5f00a089d434e5ff3c1e39f0ed0c1a1ad5d",
+        "complete-parenteral-nutrition-045-wrong-1440.png": "1568f5dce7e0824d5916b8777d9a4cab04b1b846e56f5d71a7ed9cbd61c61113",
+        "complete-parenteral-nutrition-103-correct-1440.png": "a097152b0d7851d5292710af354fdc5dc85c4e08297dd55a703827017c988441",
+        "complete-parenteral-nutrition-103-wrong-1440.png": "ad255eab39931420749790997a36ed164a1ef4b1a40fe81c68e385a2daf4880f"
+      }
+    },
+    "harnessSHA256": {
+      "technical.mjs": "adf8795f6a80a5a45fa78d9b126327d7fe8b7aefff124822098a02cfaa488a82",
+      "browser.cjs": "8a857b75ccd9de0c745794d489b545030ba3a789cf9bce874f0e6e1e051aa544",
+      "supplemental.cjs": "6d773807412bb7785c25f3ec6a3e370bc25af164406d5033883834a27af5e6ab"
+    },
+    "setupCorrections": "Initial baseline module/bank basename collision was corrected by re-extracting each actual HEAD file under distinct names before passing invariance checks. A sandbox localhost curl failed; an escalated read confirmed the same live server and200 response, so it was not restarted."
+  },
+  "calculations": {
+    "newDistinctChecks": 0,
+    "runningDistinctChecks": 635,
+    "runningSeparateSourceExamples": 98
+  },
+  "contentHashes": {
+    "src/data/modules/parenteralNutrition.js": "867a4b036e904d45d45b301b3b1bd6890a7913cbc116ecc497c3a04bc22ad8e8",
+    "src/data/questionBanks/parenteralNutrition.js": "917f7c86bc8fb4e93bbf6a6cbcca47ef35210b61e0260c92ba12bbc5064e66c8",
+    "src/components/learn/ParenteralNutritionVisual.jsx": "eeeea84b8bf7cb14f83a4ac6005b5eaa3470e740681729db9edcf41af9996984",
+    "src/data/pharmacyStudyContent.js": "f44fcc015e323251a61bee9fb2686b1d9ae764b2892c08f3a10e886587ab958a"
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": "pending",
+    "push": "pending",
+    "production": "not verified"
+  },
+  "nextAction": "Reconcile the whole adult PN module against all accumulated item/body/figure/check/cumulative evidence and non-body fields; resolve gaps before whole-module closure. Then continue Chapter11 clinical EN/pediatric fluid needs and checklist entry15. Fourteen checklist entries remain complete.",
+  "limits": [
+    "All142 bank questions and57 bodies now have item-specific source coverage; this is not yet whole-module closure.",
+    "Source reads and corrections are scoped; no claim to have audited every table/dose in each cited paper.",
+    "Chapter11/checklist15 remain reviewing; no new whole chapter closure.",
+    "All142 stable existing question IDs/prompts/keys/anchors and six embedded checks preserved.",
+    "Unrelated edits and private PDF/extract/images remain outside this release.",
+    "Audit branch push does not establish main merge or production publication."
+  ]
+}

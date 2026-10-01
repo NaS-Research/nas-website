@@ -224,10 +224,12 @@
             "Count energy actually supplied outside PN"
           ],
           "wholeLessonVerified": false,
-          "latestScopedEvidence": "parenteral-nutrition-home-monitoring-review.json",
+          "latestScopedEvidence": "parenteral-nutrition-nutrient-monitoring-review.json",
           "verifiedOriginalSections": [
             "Prescribe lipid as a drug product",
-            "Make volume and route agree"
+            "Make volume and route agree",
+            "Set protein from clinical demand",
+            "Advance dextrose within metabolic capacity"
           ],
           "verifiedApprovedSourceAddedSections": [
             "Screen the actual lipid product for allergy"
@@ -244,9 +246,12 @@
             "Keep other medications from becoming routine ingredients"
           ],
           "wholeLessonVerified": false,
-          "latestScopedEvidence": "parenteral-nutrition-refeeding-timing-review.json",
+          "latestScopedEvidence": "parenteral-nutrition-nutrient-monitoring-review.json",
           "verifiedOriginalSections": [
-            "Protect calcium and phosphate compatibility"
+            "Protect calcium and phosphate compatibility",
+            "Prescribe electrolytes as a pattern",
+            "Provide complete vitamins",
+            "Individualize trace elements"
           ],
           "verifiedApprovedSourceAddedSections": [
             "Give thiamine before refeeding"
@@ -263,11 +268,12 @@
             "Connect sterile preparation and physical compatibility"
           ],
           "wholeLessonVerified": false,
-          "latestScopedEvidence": "parenteral-nutrition-approved-safety-review.json",
+          "latestScopedEvidence": "parenteral-nutrition-nutrient-monitoring-review.json",
           "verifiedOriginalSections": [
             "Recognize emulsion failure",
             "Apply current sterile-compounding standards",
-            "Filter every PN formulation"
+            "Filter every PN formulation",
+            "Choose a formulation deliberately"
           ],
           "verifiedApprovedSourceAddedSections": [
             "Distinguish dating from administration time",
@@ -283,11 +289,12 @@
             "Read the insulin example without turning it into a fixed order"
           ],
           "wholeLessonVerified": false,
-          "latestScopedEvidence": "parenteral-nutrition-home-monitoring-review.json",
+          "latestScopedEvidence": "parenteral-nutrition-nutrient-monitoring-review.json",
           "verifiedOriginalSections": [
             "Monitor by phase and acuity",
             "Prevent and detect long-term complications",
-            "Cycle and transition with intent"
+            "Cycle and transition with intent",
+            "Separate overfeeding from intolerance"
           ],
           "verifiedApprovedSourceAddedSections": [
             "Assess depletion before calories return",
@@ -310,7 +317,8 @@
         "parenteral-nutrition-approved-safety-review.json",
         "parenteral-nutrition-refeeding-timing-review.json",
         "parenteral-nutrition-home-monitoring-review.json",
-        "parenteral-nutrition-access-review.json"
+        "parenteral-nutrition-access-review.json",
+        "parenteral-nutrition-nutrient-monitoring-review.json"
       ],
       "wholeModuleVerified": false,
       "verifiedExpansion": {
@@ -320,29 +328,29 @@
         "evidence": "parenteral-nutrition-book-expansion-review.json"
       },
       "latestSourceCoverage": {
-        "verifiedBankItems": 133,
+        "verifiedBankItems": 142,
         "totalBankItems": 142,
-        "remainingBankItems": 9,
+        "remainingBankItems": 0,
         "verifiedEmbeddedChecks": 6,
         "verifiedCumulativeItems": 5,
-        "fullyVerifiedOriginalTeachingSections": 17,
-        "remainingOriginalTeachingSections": 7,
+        "fullyVerifiedOriginalTeachingSections": 24,
+        "remainingOriginalTeachingSections": 0,
         "newApprovedSourceSections": 10,
         "totalTeachingSections": 57,
-        "fullyVerifiedSectionBodies": 50,
-        "fullyVerifiedFigures": 4,
-        "remainingPartlySupportedFigures": 2,
-        "evidence": "parenteral-nutrition-access-review.json"
+        "fullyVerifiedSectionBodies": 57,
+        "fullyVerifiedFigures": 6,
+        "remainingPartlySupportedFigures": 0,
+        "evidence": "parenteral-nutrition-nutrient-monitoring-review.json"
       },
       "relatedLegacyReaderReview": {
-        "status": "reviewing",
-        "verifiedScope": "Two added study points, five retained study/focus facts and one unchanged route-choice assessment",
-        "sourceVerifiedEntries": 8,
+        "status": "verified in scoped entries",
+        "verifiedScope": "Nine scoped PN study/assessment entries; full legacy parent and non-entry metadata are not included.",
+        "sourceVerifiedEntries": 9,
         "totalEntries": 9,
-        "remainingMonitoringEntries": 1,
+        "remainingMonitoringEntries": 0,
         "wholeReaderSubmoduleVerified": false,
         "route": "/learn/pharmacy/modules/nutrition-ans-cardiovascular-one#enteral-parenteral-nutrition",
-        "evidence": "parenteral-nutrition-legacy-reader-review.json"
+        "evidence": "parenteral-nutrition-nutrient-monitoring-review.json"
       },
       "latestVerifiedQuestionRepair": {
         "id": "parenteral-nutrition-042",
@@ -424,6 +432,13 @@
           "parenteral-nutrition-103"
         ],
         "wholeModuleVerified": false
+      },
+      "latestApprovedNutrientMonitoringReview": {
+        "status": "verified in scope",
+        "evidence": "parenteral-nutrition-nutrient-monitoring-review.json",
+        "remainingBankItemIds": [],
+        "wholeModuleVerified": false,
+        "pending": "Whole-module reconciliation including non-body fields"
       }
     },
     {

@@ -31,12 +31,12 @@ const diagrams = {
   },
   "micronutrient-balance": {
     eyebrow: "Daily balance",
-    title: "Replace what the patient loses.",
+    title: "Daily provision plus replacement.",
     columns: [
       ["Electrolytes", "Trend and context", "Kidney function, acid base state, losses, and medicines"],
       ["Vitamins", "Daily provision", "Use an age-appropriate complete parenteral product when available"],
-      ["Trace elements", "Adjust selectively", "Cholestasis, kidney failure, wounds, diarrhea, and duration matter"],
-      ["Shortages", "Protect essentials", "Use current ASPEN and ASHP guidance, not a permanent workaround"],
+      ["Trace elements", "Adjust selectively", "Check product content, cholestasis, losses, and duration"],
+      ["Shortages", "Protect essentials", "Use current product-specific guidance and reassess as supply recovers"],
     ],
   },
   "compounding-safety": {
