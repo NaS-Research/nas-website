@@ -8,7 +8,7 @@
     "visualRead": true
   },
   "status": "reviewing",
-  "completedEntryCount": 12,
+  "completedEntryCount": 13,
   "newModuleScope": [
     "Liquid-volume conversions",
     "Solid-mass conversions",
@@ -21,7 +21,8 @@
     "Dilution and concentration",
     "Alligation",
     "Osmolarity and total milliosmoles",
-    "Isotonicity and sodium chloride equivalents"
+    "Isotonicity and sodium chloride equivalents",
+    "Moles and millimoles"
   ],
   "validationPending": false,
   "mapping": [
@@ -117,14 +118,32 @@
       }
     },
     {
-      "group": "Moles, millimoles and milliequivalents",
+      "group": "Moles and millimoles",
+      "targets": [
+        "pharmacy-moles-millimoles"
+      ],
+      "status": "verified",
+      "sourceDependency": {
+        "chapter": 10,
+        "printedPages": [
+          144,
+          146
+        ],
+        "pdfPages": [
+          152,
+          154
+        ]
+      }
+    },
+    {
+      "group": "Milliequivalents",
       "targets": [
         "pharmacy-unit-conversions",
         "parenteral-nutrition-calculations",
         "fluid-electrolyte-therapy"
       ],
       "status": "mapped",
-      "note": "Moles and Millimoles starts at printed144/PDF152; full molecular-weight and charge calculation coverage remains open."
+      "note": "Starts at printed146/PDF154; mass/MW/valence and formulation equivalence coverage remains open."
     },
     {
       "group": "Nutrition, electrolyte, body-size and kidney-function calculations",
@@ -177,8 +196,8 @@
     }
   ],
   "nextStartingPoint": {
-    "bookLocation": "Chapter 1 printed page 7, thirteenth checklist entry: moles and millimoles",
-    "dependency": "Chapter 10, Moles and Millimoles, printed144/PDF152; subsection not yet audited."
+    "bookLocation": "Chapter 1 printed page 7, fourteenth checklist entry: milliequivalents",
+    "dependency": "Chapter 10, Milliequivalents, printed146/PDF154; text/figures on PDF154-155 read, full subsection not yet audited."
   },
   "limits": [
     "This is a coverage map, not verification of the complete formula checklist.",

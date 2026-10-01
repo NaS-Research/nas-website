@@ -1,0 +1,1035 @@
+{
+  "date": "2026-10-01",
+  "status": "verified",
+  "module": "pharmacy-moles-millimoles",
+  "sourcePolicy": "Supplied RxPrep 2023 only",
+  "source": {
+    "checklist": {
+      "chapter": 1,
+      "printedPage": 7,
+      "pdfPage": 19,
+      "entry": 13
+    },
+    "dependency": {
+      "chapter": 10,
+      "printedPages": [
+        144,
+        146
+      ],
+      "pdfPages": [
+        152,
+        154
+      ],
+      "allTextAndVisualRead": true,
+      "start": "Moles and Millimoles heading on printed144",
+      "end": "Before Milliequivalents on printed146"
+    }
+  },
+  "mappingSearch": {
+    "result": "No dedicated full mass/MW, solution-strength-to-mmol, or reverse-mass module or standalone broader-bank item found. Existing unit conversions handles monovalent/divalent mEq-mmol relations; PN additive lesson handles labeled mmol/mL stock volume. Preserve those stable modules and IDs.",
+    "relatedModules": [
+      "pharmacy-unit-conversions",
+      "pharmacy-osmolarity-calculations",
+      "parenteral-nutrition-calculations"
+    ],
+    "searchLocations": [
+      "module data and banks",
+      "pharmacyModules catalog",
+      "pharmacyLearning guides",
+      "pharmacyReview standalone bank",
+      "pharmacyCumulativeReview automatic selections"
+    ],
+    "broaderBank": "Five automatic selections span all three new lessons; no separately maintained divergent copy."
+  },
+  "scope": {
+    "lessons": 3,
+    "teachingSections": 12,
+    "originalFigures": 3,
+    "embeddedChecks": 3,
+    "originalBankQuestions": 21,
+    "cumulativeAutoSelection": 5
+  },
+  "coverage": [
+    {
+      "lesson": "mass-to-moles",
+      "sourcePrintedPages": [
+        144,
+        145
+      ],
+      "topics": [
+        "Mole/millimole and mass relationship",
+        "g/mol and mg/mmol numeric MW",
+        "Both conversion paths",
+        "Stated compound form and final rounding",
+        "Monovalent species qualifier"
+      ]
+    },
+    {
+      "lesson": "solution-to-millimoles",
+      "sourcePrintedPages": [
+        145,
+        146
+      ],
+      "topics": [
+        "Mass from % w/v and mg/mL",
+        "Total amount versus per-volume concentration",
+        "Per-volume scaling",
+        "Reverse concentration check"
+      ]
+    },
+    {
+      "lesson": "millimoles-to-mass",
+      "sourcePrintedPages": [
+        145,
+        146
+      ],
+      "topics": [
+        "Reverse mass formula",
+        "Whole-preparation target",
+        "mg/g conversion",
+        "Stated stock-volume connection using prior concentration method",
+        "Reverse target verification"
+      ]
+    }
+  ],
+  "itemReview": {
+    "all21PromptsChoicesKeysExplanationsIndividuallyReviewed": true,
+    "allThreeEmbeddedChecksReviewed": true,
+    "conceptualIds": [
+      "mol-calc-006",
+      "mol-calc-013",
+      "mol-calc-020"
+    ],
+    "originality": "Original quantities and wording; proprietary source practice items not reproduced.",
+    "distractors": "Inverted MW relationship, g/mg and mol/mmol thousand-fold errors, portion versus complete preparation, charge/particle factor substitution, total amount versus concentration and final rounding.",
+    "finishedModuleComparedAgainToSource": true,
+    "reviewedItems": [
+      {
+        "id": "mol-calc-001",
+        "itemSha256": "f6a90c410211ae38d7e4e9492e5dd9f90f8e808804f0b8468a2bbcdf4ea12ea0",
+        "lesson": "mass-to-moles",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          144,
+          145
+        ],
+        "status": "verified",
+        "keyedAnswer": "0.30 mol",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "mol-calc-002",
+        "itemSha256": "2168dfc083b8987302d3df4d2ddb430e983f51aeedb44885d0e5a7f1e17ecdb9",
+        "lesson": "mass-to-moles",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          144,
+          145
+        ],
+        "status": "verified",
+        "keyedAnswer": "0.003 mol",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "mol-calc-003",
+        "itemSha256": "482939f1560d06a82f12f37d78b29815a3bcbaf03184fe209549f72be2f6163c",
+        "lesson": "mass-to-moles",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          144,
+          145
+        ],
+        "status": "verified",
+        "keyedAnswer": "3 mmol",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "mol-calc-004",
+        "itemSha256": "5a3f7195d497b0926e5eab3d1b9b4baecc79c2c16a28a5b8789826631449fcec",
+        "lesson": "mass-to-moles",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          144,
+          145
+        ],
+        "status": "verified",
+        "keyedAnswer": "20 mmol",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "mol-calc-005",
+        "itemSha256": "423e8d7710fbeec3aa091985cb243bdabfe0095e0233c89df7c076b716f8ebb2",
+        "lesson": "mass-to-moles",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          144,
+          145
+        ],
+        "status": "verified",
+        "keyedAnswer": "18 mmol",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "mol-calc-006",
+        "itemSha256": "7aa584935bae99a62a4e795c6d5cd7dc57a37583567186c1486f55ffe4dcaffe",
+        "lesson": "mass-to-moles",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          144,
+          145
+        ],
+        "status": "verified",
+        "keyedAnswer": "147 g/mol for the specified form",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Book supplies the MW for the compound/form; charge and dissociation-particle counts are not replacement molecular weights."
+      },
+      {
+        "id": "mol-calc-007",
+        "itemSha256": "0fc5452881cb1b0c25178b3ef2c106a23a6f4a90a24c21bc03b68df26495d80f",
+        "lesson": "mass-to-moles",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          144,
+          145
+        ],
+        "status": "verified",
+        "keyedAnswer": "0.004 mol",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "mol-calc-008",
+        "itemSha256": "5a3d8a095b87f8a1161bcd3771f86875045142c0233f71dad6732bf5e4365f7b",
+        "lesson": "solution-to-millimoles",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          145,
+          146
+        ],
+        "status": "verified",
+        "keyedAnswer": "5 mmol",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "mol-calc-009",
+        "itemSha256": "a82b19037e445f600cb406246172102f7aa3ce221e5cbe5fec5f0125b0a35cc6",
+        "lesson": "solution-to-millimoles",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          145,
+          146
+        ],
+        "status": "verified",
+        "keyedAnswer": "4 mmol",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "mol-calc-010",
+        "itemSha256": "bbd16de994ba052f95e1058ae75d4a8bd172a16a92b5924a3d6377a6bfa44c5b",
+        "lesson": "solution-to-millimoles",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          145,
+          146
+        ],
+        "status": "verified",
+        "keyedAnswer": "40 mmol",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "mol-calc-011",
+        "itemSha256": "dcf9ba7a04a4cbc8b7348e7dc0798ba9c6f2c63b2644e58310ff8e991a1c84d0",
+        "lesson": "solution-to-millimoles",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          145,
+          146
+        ],
+        "status": "verified",
+        "keyedAnswer": "0.1 mmol/mL",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "mol-calc-012",
+        "itemSha256": "ffc724ba8cf267dd7ed44e1c7676b169ac42bdda06c0d5e6528ba9316fc9bb45",
+        "lesson": "solution-to-millimoles",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          145,
+          146
+        ],
+        "status": "verified",
+        "keyedAnswer": "15 mmol",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "mol-calc-013",
+        "itemSha256": "9d3fbe9563fcfbb4bced353d50abeb164e08097811ccc985b8035510571ed1b7",
+        "lesson": "solution-to-millimoles",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          145,
+          146
+        ],
+        "status": "verified",
+        "keyedAnswer": "The solute mass in that volume, converted to mg for the mmol formula",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Source percent-strength example calculates total solute mass before MW division."
+      },
+      {
+        "id": "mol-calc-014",
+        "itemSha256": "da02628d21a13fcca86103223b1b66a67141737b4f6ae679efc594ece4a098dd",
+        "lesson": "solution-to-millimoles",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          145,
+          146
+        ],
+        "status": "verified",
+        "keyedAnswer": "3 mmol total; 0.1 mmol/mL",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "mol-calc-015",
+        "itemSha256": "747bac65009edcd54c99e262dd8985b17736a13123d61bacd9e6482db6bd5ce8",
+        "lesson": "millimoles-to-mass",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          145,
+          146
+        ],
+        "status": "verified",
+        "keyedAnswer": "50 mg",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "mol-calc-016",
+        "itemSha256": "74480cd451b087390018dca23165b764a96db202d5bcfd78a4b2b5f94b3e2389",
+        "lesson": "millimoles-to-mass",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          145,
+          146
+        ],
+        "status": "verified",
+        "keyedAnswer": "1.2 g",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "mol-calc-017",
+        "itemSha256": "3217288ee4e79dd15eb93437de6cb416eccf930a4c82301692af35368ecdb155",
+        "lesson": "millimoles-to-mass",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          145,
+          146
+        ],
+        "status": "verified",
+        "keyedAnswer": "1.2 g",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "mol-calc-018",
+        "itemSha256": "91387fd5b2c5dda0b381bb35a08c8d46797a6806d8079bb23d1dea447d748917",
+        "lesson": "millimoles-to-mass",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          145,
+          146
+        ],
+        "status": "verified",
+        "keyedAnswer": "2.4 g",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "mol-calc-019",
+        "itemSha256": "255e73fd7e5a4f499d4db0b17f4cf1152c64ef4f93e1dc66da1c7556c6c726b0",
+        "lesson": "millimoles-to-mass",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          145,
+          146
+        ],
+        "status": "verified",
+        "keyedAnswer": "20 mL",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "mol-calc-020",
+        "itemSha256": "e8cee0c7c193abb412457605c03c263bb5828db3ebb16cae87fda80fcecde6dd",
+        "lesson": "millimoles-to-mass",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          145,
+          146
+        ],
+        "status": "verified",
+        "keyedAnswer": "Multiply mmol by MW",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Source reverse-mass example rearranges mmol = mg/MW to multiply amount by MW."
+      },
+      {
+        "id": "mol-calc-021",
+        "itemSha256": "32f4781e5b32fd051672c144520af92c055fde68eb40fc568ebcff0185ce347b",
+        "lesson": "millimoles-to-mass",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          145,
+          146
+        ],
+        "status": "verified",
+        "keyedAnswer": "2.19 g",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      }
+    ]
+  },
+  "independentArithmetic": {
+    "method": "Independent Decimal calculations from literal prompt/source inputs; numerical keyed choices compared; embedded checks and all displayed numerical examples/figures reviewed.",
+    "passed": true,
+    "count": 44,
+    "bank": [
+      {
+        "label": "mol-calc-001",
+        "unrounded": "0.3",
+        "expected": "0.30",
+        "unit": "mol",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-002",
+        "unrounded": "0.003",
+        "expected": ".003",
+        "unit": "mol",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-003",
+        "unrounded": "3",
+        "expected": "3",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-004",
+        "unrounded": "20.0",
+        "expected": "20",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-005",
+        "unrounded": "18.000",
+        "expected": "18",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-007",
+        "unrounded": "0.004114285714285714285714285714",
+        "expected": ".004",
+        "unit": "mol",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-008",
+        "unrounded": "5.00",
+        "expected": "5",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-009",
+        "unrounded": "4",
+        "expected": "4",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-010",
+        "unrounded": "40.0",
+        "expected": "40",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-011",
+        "unrounded": "0.1",
+        "expected": ".1",
+        "unit": "mmol/mL",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-012",
+        "unrounded": "15.00",
+        "expected": "15",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-014",
+        "unrounded": "3",
+        "expected": "3",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-015",
+        "unrounded": "50.00",
+        "expected": "50",
+        "unit": "mg",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-016",
+        "unrounded": "1.2",
+        "expected": "1.2",
+        "unit": "g",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-017",
+        "unrounded": "1.200",
+        "expected": "1.2",
+        "unit": "g",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-018",
+        "unrounded": "2.40",
+        "expected": "2.4",
+        "unit": "g",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-019",
+        "unrounded": "20",
+        "expected": "20",
+        "unit": "mL",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-021",
+        "unrounded": "2.19",
+        "expected": "2.19",
+        "unit": "g",
+        "passed": true
+      }
+    ],
+    "conceptualIds": [
+      "mol-calc-006",
+      "mol-calc-013",
+      "mol-calc-020"
+    ],
+    "checks": [
+      {
+        "label": "mol-calc-001",
+        "unrounded": "0.3",
+        "expected": "0.30",
+        "unit": "mol",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-002",
+        "unrounded": "0.003",
+        "expected": ".003",
+        "unit": "mol",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-003",
+        "unrounded": "3",
+        "expected": "3",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-004",
+        "unrounded": "20.0",
+        "expected": "20",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-005",
+        "unrounded": "18.000",
+        "expected": "18",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-007",
+        "unrounded": "0.004114285714285714285714285714",
+        "expected": ".004",
+        "unit": "mol",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-008",
+        "unrounded": "5.00",
+        "expected": "5",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-009",
+        "unrounded": "4",
+        "expected": "4",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-010",
+        "unrounded": "40.0",
+        "expected": "40",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-011",
+        "unrounded": "0.1",
+        "expected": ".1",
+        "unit": "mmol/mL",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-012",
+        "unrounded": "15.00",
+        "expected": "15",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-014",
+        "unrounded": "3",
+        "expected": "3",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-015",
+        "unrounded": "50.00",
+        "expected": "50",
+        "unit": "mg",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-016",
+        "unrounded": "1.2",
+        "expected": "1.2",
+        "unit": "g",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-017",
+        "unrounded": "1.200",
+        "expected": "1.2",
+        "unit": "g",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-018",
+        "unrounded": "2.40",
+        "expected": "2.4",
+        "unit": "g",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-019",
+        "unrounded": "20",
+        "expected": "20",
+        "unit": "mL",
+        "passed": true
+      },
+      {
+        "label": "mol-calc-021",
+        "unrounded": "2.19",
+        "expected": "2.19",
+        "unit": "g",
+        "passed": true
+      },
+      {
+        "label": "bank014 concentration",
+        "unrounded": "0.1",
+        "expected": ".1",
+        "unit": "mmol/mL",
+        "passed": true
+      },
+      {
+        "label": "teaching one-mole mass",
+        "unrounded": "1",
+        "expected": "1",
+        "unit": "mol",
+        "passed": true
+      },
+      {
+        "label": "teaching mmol mass relationship",
+        "unrounded": "1",
+        "expected": "1",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "teaching 32g",
+        "unrounded": "0.2",
+        "expected": ".20",
+        "unit": "mol",
+        "passed": true
+      },
+      {
+        "label": "teaching 480mg",
+        "unrounded": "3",
+        "expected": "3",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "teaching 1.8g/check1/figure1",
+        "unrounded": "15.0",
+        "expected": "15",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "teaching second path 1.8g",
+        "unrounded": "0.015",
+        "expected": ".015",
+        "unit": "mol",
+        "passed": true
+      },
+      {
+        "label": "teaching 0.72g rounding",
+        "unrounded": "0.004114285714285714285714285714",
+        "expected": ".004",
+        "unit": "mol",
+        "passed": true
+      },
+      {
+        "label": "teaching 4percent mass",
+        "unrounded": "1.00",
+        "expected": "1",
+        "unit": "g",
+        "passed": true
+      },
+      {
+        "label": "teaching 4percent/check2/figure2 amount",
+        "unrounded": "5.00",
+        "expected": "5",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "teaching 12mg/mL totalmass",
+        "unrounded": "600",
+        "expected": "600",
+        "unit": "mg",
+        "passed": true
+      },
+      {
+        "label": "teaching 12mg/mL amount",
+        "unrounded": "5",
+        "expected": "5",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "teaching concentration",
+        "unrounded": "0.1",
+        "expected": ".1",
+        "unit": "mmol/mL",
+        "passed": true
+      },
+      {
+        "label": "teaching per-volume scale",
+        "unrounded": "18.0",
+        "expected": "18",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "teaching per-volume concentration",
+        "unrounded": "0.3",
+        "expected": ".3",
+        "unit": "mmol/mL",
+        "passed": true
+      },
+      {
+        "label": "teaching 3percent mass",
+        "unrounded": "1200.00",
+        "expected": "1200",
+        "unit": "mg",
+        "passed": true
+      },
+      {
+        "label": "teaching 3percent amount",
+        "unrounded": "8.00",
+        "expected": "8",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "teaching 3percent concentration",
+        "unrounded": "0.20",
+        "expected": ".2",
+        "unit": "mmol/mL",
+        "passed": true
+      },
+      {
+        "label": "teaching reverse concentration",
+        "unrounded": "1200.0",
+        "expected": "1200",
+        "unit": "mg",
+        "passed": true
+      },
+      {
+        "label": "teaching reverse 0.25mmol",
+        "unrounded": "40.00",
+        "expected": "40",
+        "unit": "mg",
+        "passed": true
+      },
+      {
+        "label": "teaching reverse 0.012mol",
+        "unrounded": "1.200",
+        "expected": "1.2",
+        "unit": "g",
+        "passed": true
+      },
+      {
+        "label": "teaching 90mL total/figure3",
+        "unrounded": "12.0",
+        "expected": "12",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "teaching 90mL mass/check3/figure3",
+        "unrounded": "1.8",
+        "expected": "1.8",
+        "unit": "g",
+        "passed": true
+      },
+      {
+        "label": "teaching stock volume",
+        "unrounded": "60.0",
+        "expected": "60",
+        "unit": "mL",
+        "passed": true
+      },
+      {
+        "label": "teaching reverse target",
+        "unrounded": "12",
+        "expected": "12",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "teaching reverse portion",
+        "unrounded": "0.8",
+        "expected": ".8",
+        "unit": "mmol",
+        "passed": true
+      }
+    ]
+  },
+  "sourceArithmetic": {
+    "passed": true,
+    "count": 7,
+    "checks": [
+      {
+        "label": "Source example 54",
+        "unrounded": "2.076411960132890365448504983",
+        "expected": "2.08",
+        "unit": "mol",
+        "passed": true
+      },
+      {
+        "label": "Source example 55",
+        "unrounded": "0.004289215686274509803921568627",
+        "expected": ".004",
+        "unit": "mol",
+        "passed": true
+      },
+      {
+        "label": "Source example 56",
+        "unrounded": "652.1739130434782608695652174",
+        "expected": "652",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "Source example 57",
+        "unrounded": "0.3260869565217391304347826087",
+        "expected": ".326",
+        "unit": "mol",
+        "passed": true
+      },
+      {
+        "label": "Source example 58",
+        "unrounded": "100.0",
+        "expected": "100",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "Source example 59",
+        "unrounded": "14.625",
+        "expected": "14.625",
+        "unit": "mg",
+        "passed": true
+      },
+      {
+        "label": "Source example 60",
+        "unrounded": "0.4212",
+        "expected": ".4212",
+        "unit": "g",
+        "passed": true
+      }
+    ]
+  },
+  "sourceFindings": [
+    "The source expresses one-mole mass via molecular weight; original teaching uses the dimensional relationship g/mol and matching numeric mg/mmol.",
+    "Use the explicitly supplied MW for the stated compound form. The source examples specify different calcium chloride weights in different contexts; no silent substitution of another form.",
+    "Source example 55 rounds a small mole amount to three decimal places. Original exercises explicitly name the requested precision and preserve intermediate precision in integrated calculations.",
+    "For monovalent species only, source says mEq and mmol are numerically equal; the general valence/mEq subsection remains next and unaudited.",
+    "Amount-per-volume normalization and explicitly supplied stock division are direct arithmetic applications of the source proportions and the previously verified concentration method, not new clinical recommendations."
+  ],
+  "unresolvedIssues": [],
+  "validation": {
+    "focusedAudit": {
+      "result": "Passed: no hard errors or source gaps. Size and seven-items-per-lesson advisories reviewed against complete three-page source subsection: basic mass conversion, percentage/concentration/scaling and reverse mass are all covered without a fixed quota or padding.",
+      "report": {
+        "modules": 1,
+        "questions": 21,
+        "hardErrors": [],
+        "sourceGaps": [],
+        "sizeAdvisories": [
+          {
+            "module": "pharmacy-moles-millimoles",
+            "questions": 21,
+            "review": "Confirm topic coverage in the clinical audit ledger"
+          }
+        ],
+        "thinLessons": [
+          {
+            "module": "pharmacy-moles-millimoles",
+            "lesson": "mass-to-moles",
+            "count": 7
+          },
+          {
+            "module": "pharmacy-moles-millimoles",
+            "lesson": "solution-to-millimoles",
+            "count": 7
+          },
+          {
+            "module": "pharmacy-moles-millimoles",
+            "lesson": "millimoles-to-mass",
+            "count": 7
+          }
+        ],
+        "weakestModules": [
+          {
+            "module": "pharmacy-moles-millimoles",
+            "lessons": 3,
+            "questions": 21,
+            "minimumLessonCoverage": 7
+          }
+        ]
+      }
+    },
+    "build": "Passed: exact scoped Next production build, 566 pages.",
+    "desktopMobile": [
+      {
+        "build": "scoped production candidate",
+        "width": 1440,
+        "lessons": 3,
+        "figures": 3,
+        "embeddedChecks": 3,
+        "assessmentCorrect": 10,
+        "secondAttemptDistinct": true,
+        "incorrectFeedbackAndRemediation": true,
+        "priorConversionFigures": 4,
+        "priorConcentrationFigures": 5,
+        "priorDilutionFigures": 4,
+        "priorOsmolarityFigures": 4,
+        "curriculum": true,
+        "sitemap": true,
+        "noOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "build": "scoped production candidate",
+        "width": 390,
+        "lessons": 3,
+        "figures": 3,
+        "embeddedChecks": 3,
+        "assessmentCorrect": 10,
+        "secondAttemptDistinct": true,
+        "incorrectFeedbackAndRemediation": true,
+        "priorConversionFigures": 4,
+        "priorConcentrationFigures": 5,
+        "priorDilutionFigures": 4,
+        "priorOsmolarityFigures": 4,
+        "curriculum": true,
+        "sitemap": true,
+        "noOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "build": "current working Learn integration",
+        "width": 390,
+        "narrowWidth": 320,
+        "librarySearch": true,
+        "moduleLink": true,
+        "figures": 3,
+        "noOverflow": true,
+        "signedOutMemberBoundary": 401,
+        "pageErrors": []
+      }
+    ],
+    "candidateDiff": "Passed: semantic ledger differences restricted to chapters 1/10 and this new module. Only new content, reader/catalog registration and evidence files staged; unrelated work preserved.",
+    "technical": {
+      "module": "pharmacy-moles-millimoles",
+      "uniqueNumber": true,
+      "uniqueIds": true,
+      "uniquePrompts": true,
+      "choicesAndAnchorsValid": true,
+      "lessons": 3,
+      "questions": 21,
+      "cumulativeItems": 5,
+      "cumulativeLessonCoverage": 3,
+      "passed": true
+    },
+    "renderedVisualReview": "All three figures visually inspected at 1440 desktop and 390 mobile via unobscured viewport captures. Equations, labels, units and wrapping are legible."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "baseCommit": "fcd2e8d5c89395469274d4dbbb9f2d0fdd76b721",
+    "commit": "pending",
+    "push": "pending",
+    "production": "not verified"
+  },
+  "remainingBookCoverage": "Milliequivalents is next at printed146/PDF154. Chapter1 checklist and chapter10 remain open.",
+  "verificationDate": "2026-10-01",
+  "contentHashes": {
+    "src/data/modules/pharmacyMolesMillimoles.js": "95badcf588726f231cd9c3ce215118b87de134e58a14e688562bdf2cb97d31ad",
+    "src/data/questionBanks/pharmacyMolesMillimoles.js": "d975e719a3007fc53535b1b8798c9c5cc603c7ebf43bfae7b8b52b4969085c7c",
+    "src/components/learn/PharmacyMolesMillimolesVisual.jsx": "4a6d72ca54cc9aae93fb1b3bd8fcb0b8e832d34e119a05d0b39538c1d63d0c6d"
+  }
+}
