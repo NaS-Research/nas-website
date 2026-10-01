@@ -41,6 +41,26 @@ export default function LearningPage() {
           </div>
         </section>
 
+        <section className="nas-shell learning-discipline" id="drug-library" aria-labelledby="drug-library-title">
+          <div className="learning-discipline__identity">
+            <span>02</span>
+            <p>Reference</p>
+          </div>
+          <div className="learning-discipline__body">
+            <p className="nas-section-label">Drug library</p>
+            <h2 id="drug-library-title">Know the drug.<br />Understand the science.</h2>
+            <p>Find medications by generic name, brand name, or therapeutic class. Explore drug profiles and connect directly to prescribing information.</p>
+            <Link href="/learn/pharmacy/drugs" className="learning-primary-link">Explore the drug library <span aria-hidden="true">↗</span></Link>
+          </div>
+          <div className="learning-discipline__map" aria-label="Drug library features">
+            <span>Generic and brand names</span>
+            <span>Therapeutic classes</span>
+            <span>Drug profiles</span>
+            <span>Prescribing information</span>
+            <span>Medication search</span>
+          </div>
+        </section>
+
         <LearningCinema />
 
 
