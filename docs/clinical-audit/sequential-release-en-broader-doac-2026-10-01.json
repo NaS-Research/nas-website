@@ -1,0 +1,111 @@
+{
+  "date": "2026-10-01",
+  "unit": "enteral-nutrition:broader-doac-feeding-dependency",
+  "baseCommit": "083eb523dc72a1a2df8f37cfaca25320ec727063",
+  "contentCommit": "3eff8029452ddc11e8963807476418a10228f94b",
+  "branch": "audit/rxprep-content-2026-09-24",
+  "remoteDestination": "github.com/NaS-Research/nas-website.git",
+  "contentRemoteHashObserved": "3eff8029452ddc11e8963807476418a10228f94b",
+  "contentRemoteVerifiedAt": "2026-10-01T21:19:50.965494+00:00",
+  "scope": [
+    "src/data/modules/directOralAnticoagulants.js",
+    "src/data/questionBanks/directOralAnticoagulants.js",
+    "docs/clinical-audit/module-ledger.json",
+    "docs/clinical-audit/chapter-ledger.json",
+    "docs/clinical-audit/enteral-nutrition-broader-doac-review.json",
+    "docs/clinical-audit/sequential-resume.json"
+  ],
+  "checks": {
+    "isolatedBuild567": true,
+    "focusedStructuralBank": 116,
+    "scopedQuestionsCorrectWrongDesktopMobile": 7,
+    "expandedBodyViewsDesktopMobile": 1,
+    "renderedBodyDOMEquality": 24,
+    "fullBodySourceClosuresThisUnit": 0,
+    "embeddedSourceClosuresThisUnit": 0,
+    "manualQuestionBodyReview": true,
+    "finalSpacingRepairFeedbackImagesReread": 4,
+    "all116IdsPromptsKeysCorrectTextsAnchorsPreserved": true,
+    "109OtherCommittedQuestionObjectsUnchanged": true,
+    "23OtherBodiesUnchanged": true,
+    "allSixChecksMetadataUnchanged": true,
+    "all1180CumulativeIdsPromptsKeysCorrectTextsAnchorsPreserved": true,
+    "1179OtherCumulativeObjectsUnchanged": true,
+    "cumulativeSourceItemsThisUnit": 1,
+    "cumulativeRuntimeItems": 5,
+    "runtime320Overflow": true,
+    "remediationAndSavedProgress": true,
+    "local59DraftByteIdenticalPreservedUnreleased": true,
+    "unrelatedModuleWorkingBytesPreserved": true,
+    "candidateCodeExactlyMatchesReviewedBuildAndCommittedBlobs": true,
+    "targetOnlyLedgerEntries": true
+  },
+  "coverage": {
+    "sourceVerifiedBankIds": [
+      "direct-oral-anticoagulants-025",
+      "direct-oral-anticoagulants-027",
+      "direct-oral-anticoagulants-030",
+      "direct-oral-anticoagulants-031",
+      "direct-oral-anticoagulants-032",
+      "direct-oral-anticoagulants-050",
+      "direct-oral-anticoagulants-051"
+    ],
+    "sourceVerifiedBankCountThisUnit": 7,
+    "releasedBank": 116,
+    "workingDraftBank": 59,
+    "newQuestionIds": 0,
+    "expandedTeachingBodies": 1,
+    "newClausesSourceVerified": true,
+    "fullTeachingBodiesClosedThisUnit": 0,
+    "embeddedChecksClosedThisUnit": 0,
+    "cumulativeSourceVerifiedIds": [
+      "cumulative-direct-oral-anticoagulants-direct-oral-anticoagulants-030"
+    ],
+    "cumulativeRuntimeItems": 5,
+    "otherCumulativeObjectsUnchanged": 1179,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChapterVerified": false,
+    "ENAggregateUnchanged": {
+      "bankVerified": 66,
+      "bank": 108,
+      "bodiesVerified": 16,
+      "bodies": 36,
+      "embeddedChecksVerified": 2,
+      "embeddedChecks": 6,
+      "figuresVerified": 0,
+      "figures": 6
+    },
+    "calculationTotalsUnchanged": {
+      "assessmentChecks": 674,
+      "separateSourceExamples": 98
+    }
+  },
+  "newBroaderSourceVerifiedQuestionIds": [
+    "direct-oral-anticoagulants-025",
+    "direct-oral-anticoagulants-027",
+    "direct-oral-anticoagulants-030",
+    "direct-oral-anticoagulants-031",
+    "direct-oral-anticoagulants-032",
+    "direct-oral-anticoagulants-050",
+    "direct-oral-anticoagulants-051"
+  ],
+  "cumulativeBroaderENSourceVerifiedQuestionCount": 37,
+  "contentBlobSHA256": {
+    "src/data/modules/directOralAnticoagulants.js": "f39190c170df6e6444ae1ca08a88201924469f4a6b3fa90453c880507ef0c376",
+    "src/data/questionBanks/directOralAnticoagulants.js": "a3e098a8efea909f43f97cd96a86a9cdbb81daf016493f3c0c9ed65c417f6540",
+    "docs/clinical-audit/module-ledger.json": "f71010384b71d7f2eea3945034068330def448955779a4fc1ce87b326a92669d",
+    "docs/clinical-audit/chapter-ledger.json": "13986e5b819a9511721ad408bdb3ace0d50cedfb45cf630b4726e878c964cb02",
+    "docs/clinical-audit/enteral-nutrition-broader-doac-review.json": "c9187b8401f07047b6b6679f0d432f2f4e8af97a037555b74e47f677e3cf0667",
+    "docs/clinical-audit/sequential-resume.json": "8ba5ea724c4bf061062412df6e021161dc1b759c560bf93f478c5c8506ebfe19"
+  },
+  "bookAssetsPublished": false,
+  "outsideENSourcesUsed": false,
+  "wholeParentModuleVerified": false,
+  "wholeENModuleVerified": false,
+  "wholeChapterVerified": false,
+  "mainMerge": "notperformed",
+  "production": "notverified",
+  "unrelatedWorkingChanges": "Local59DOAC rewrite byte-identical and unreleased;unrelated module and ledger work preserved unstaged.29numeric ID collisions and30semantic drafts need later reconciliation.",
+  "nextAction": "Continue the broader feeding inventory with thyroid-medicinal-chemistry levothyroxine/feed/cation questions, comparing each committed bank and local draft while preserving stable IDs and unrelated work. DOAC released116 contains seven source-verified repairs;local59 rewrite is unchanged and unreleased, with29 colliding numeric IDs and30 semantic drafts requiring later reconciliation. Five expanded-topic rows026/028/029/049/052 remain pending: product-specific CrCl weight convention, food/exposure mechanism, conflicting extended-prevention duration and capsule-opening exposure mechanism. Retained dosage-form body/check exposure claim and oral-Xa extended-duration/absorption bodies remain pending;007/099 incidental feeding distractors do not close their parent questions. Working-only exact tube volumes/postpyloric/pediatric pellet handling and current outside-label claims remain unreleased. Preserve tetracycline069 and incidental adsorption017/041/121 pending. Complete42 EN questions,20 bodies,four checks,six figures and metadata in enteral-nutrition-book-safety-coverage-review.json;outside ASPEN/SCCM/FDA EN approval remains unanswered and no outside EN sources opened. Then pediatric PN and clinical fluid/calcium dependencies. Chapter1 checklist15/Chapter11 reviewing;do not close full modules or advance sequentially yet."
+}
