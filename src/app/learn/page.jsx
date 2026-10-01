@@ -39,9 +39,9 @@ export default function LearningPage() {
           </div>
         </section>
 
-        <LearnDrugLibrary />
-
         <LearningCinema />
+
+        <LearnDrugLibrary />
 
 
         <section className="learning-standard">
