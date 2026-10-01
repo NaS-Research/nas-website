@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-01",
+  "unit": "enteral-nutrition:broader-adrenal-perioperative-administration-dependencies",
+  "baseCommit": "c9612150de0666e6c2be7b936bb7eae631932775",
+  "contentCommit": "692315123dc61f046b3d1391b47a396b37e83368",
+  "branch": "audit/rxprep-content-2026-09-24",
+  "remoteDestination": "github.com/NaS-Research/nas-website.git",
+  "contentRemoteHashObserved": "692315123dc61f046b3d1391b47a396b37e83368",
+  "contentRemoteVerifiedAt": "2026-10-01T23:53:52.510095+00:00",
+  "scope": [
+    "src/data/modules/adrenalInsufficiency.js",
+    "src/data/questionBanks/adrenalInsufficiency.js",
+    "src/data/modules/perioperativeCriticalCarePharmacology.js",
+    "docs/clinical-audit/module-ledger.json",
+    "docs/clinical-audit/chapter-ledger.json",
+    "docs/clinical-audit/enteral-nutrition-broader-adrenal-perioperative-review.json",
+    "docs/clinical-audit/sequential-resume.json"
+  ],
+  "checks": {
+    "isolatedBuildStaticPages": 567,
+    "focusedStructuralBankQuestions": 116,
+    "sourceClosedQuestionsCorrectWrongDesktopMobile": 4,
+    "questionsCorrected": 1,
+    "questionsRetainedVerified": 3,
+    "newWholeSourceVerifiedBodies": 2,
+    "renderedBodyDOMEquality": 124,
+    "manualDesktopMobilePairsReviewed": 6,
+    "embeddedChecksSourceVerifiedThisUnit": 0,
+    "runtime320Overflow": true,
+    "remediationAndSavedProgress": true,
+    "moduleSavedAttemptsPerViewportPerModule": 2,
+    "moduleBestScore": 10,
+    "moduleLatestScore": 0,
+    "cumulativeRuntimeItems": 10,
+    "cumulativeSourceVerifiedItemsThisUnit": 0,
+    "all1180CumulativeObjectsUnchanged": true,
+    "targetOnlyModuleLedgerEntries": [
+      "adrenal-insufficiency-crisis",
+      "perioperative-critical-care-pharmacology"
+    ],
+    "targetOnlyChapterLedgerEntries": [
+      6,
+      11,
+      46,
+      53,
+      72
+    ],
+    "partialChapterMappingsOnly": [
+      6,
+      72
+    ],
+    "candidateCodeExactlyMatchesReviewedBuildAndCommittedBlobs": true,
+    "perioperativeWorkingDraftsByteExact": true
+  },
+  "preservation": {
+    "all116IdsPromptsKeysChoicesAnchorsPreserved": true,
+    "unchangedOtherBankObjects": 115,
+    "all122OriginalBodies22ChecksMetadataReferencesFiguresPreserved": true,
+    "twoNewSourceVerifiedBodies": true,
+    "all1180CumulativeObjectsUnchanged": true,
+    "perioperativeWorkingDraftsByteExact": true,
+    "onlyReviewedAdrenalChangesAppliedToWorkingCode": true
+  },
+  "coverage": {
+    "questionsSourceVerified": 4,
+    "questionsCorrected": 1,
+    "questionsRetainedVerified": 3,
+    "wholeOriginalBodiesVerified": 0,
+    "newBodies": 2,
+    "newBodiesSourceVerified": 2,
+    "embeddedChecksVerified": 0,
+    "figuresVerified": 0,
+    "metadataVerified": false,
+    "wholeParentModulesVerified": false,
+    "broaderEnteralBookVerifiedQuestionCountAfter": 113,
+    "sourceVerifiedCumulativeItemsThisUnit": 0,
+    "runningAssessmentCalculations": 677,
+    "runningSeparateSourceExamples": 98,
+    "enteralNutritionCountsUnchanged": {
+      "questionsVerified": 66,
+      "questionsTotal": 108,
+      "bodiesVerified": 16,
+      "bodiesTotal": 36,
+      "checksVerified": 2,
+      "checksTotal": 6,
+      "figuresVerified": 0,
+      "figuresTotal": 6
+    }
+  },
+  "newBroaderSourceVerifiedQuestionIds": [
+    "adrenal-insufficiency-17-case",
+    "adrenal-insufficiency-20-case",
+    "adrenal-insufficiency-23-case",
+    "periop-sup-reconcile"
+  ],
+  "cumulativeBroaderENSourceVerifiedQuestionCount": 113,
+  "broaderParentCount": 17,
+  "originalPrimaryQuestionsReviewed": 16,
+  "originalPrimaryQuestionsPending": 12,
+  "contentBlobSHA256": {
+    "src/data/modules/adrenalInsufficiency.js": "24adf0249e20041038b380e7e7703dabf12396bbeb89b1db71d5ce78c32aea81",
+    "src/data/questionBanks/adrenalInsufficiency.js": "72d66c162c0237f9036d3690ad67b9b7efc062eac3d9ab0a2575ad434c342adf",
+    "src/data/modules/perioperativeCriticalCarePharmacology.js": "84ebee668b7d9934e55f9524e9632cffbcaf4746bc70e70fae11470815f78c43",
+    "docs/clinical-audit/module-ledger.json": "b80bf5ded0bef0261b60135eab6b9fa721494efcfe3412dbe9ad4427846b5a4c",
+    "docs/clinical-audit/chapter-ledger.json": "666d20a2dbfbc47d99d12975d7447b4fc776e079d16ab5ac94379d36053a795b",
+    "docs/clinical-audit/enteral-nutrition-broader-adrenal-perioperative-review.json": "855f40a24a51d4ce4c32fe813e14d7e1dffcd5c3794cb62cc8327bc2bda4b067",
+    "docs/clinical-audit/sequential-resume.json": "a7d65d4767f046574ed4bc40d8466bfa7883c9d6e572391682c84f27fe4a82fe"
+  },
+  "bookAssetsPublished": false,
+  "outsideENSourcesUsed": false,
+  "wholeParentModulesVerified": false,
+  "wholeENModuleVerified": false,
+  "wholeChapterVerified": false,
+  "mainMerge": "not performed",
+  "production": "not verified",
+  "unrelatedWorkingChanges": "Only the reviewed adrenal changes applied to its originally clean working files. Existing perioperative module/bank drafts preserved byte-for-byte; only a HEAD-derived source-supported body released there. Unrelated dirty ledger bytes preserved working and excluded from staged HEAD-derived blobs. Private PDF/extracts/source images excluded.",
+  "nextAction": "Continue the broader feeding inventory with toxicology lead/WHO-label boundary, genitourinary medicinal chemistry feeding candidates, and remaining antimicrobial administration groups. Expand each to complete original topic groups and full relevant book context. Twelve selected adrenal/perioperative questions, original teaching/checks/current metadata/figures and harder label/guideline claims remain pending. Full EN, pediatricPN and fluid/calcium dependencies remain; Chapter1entry15 andChapter11 reviewing. No outsideEN source opened."
+}
