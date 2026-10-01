@@ -2,15 +2,28 @@
   "date": "2026-10-01",
   "module": "parenteral-nutrition",
   "status": "verified",
-  "statusScope": "Book-supported expansion and retained arithmetic/rounding; entire adult clinical module remains reviewing.",
+  "statusScope": "Three supplied-book additions, fourteen retained assessment source reconciliations and one scenario-duration clarification; whole adult PN remains reviewing.",
   "wholeModuleVerified": false,
-  "baseCommit": "a2b476f7b5eeee9f28bd8b98fbeeaa5af774102d",
+  "baseCommit": "3c176ab7f29527facd829ff3d9d5d40d80c27b99",
+  "previousScopedEvidence": "parenteral-nutrition-book-expansion-review.json",
   "sourcePolicy": {
     "newEducationalClaims": "Supplied RxPrep 2023 only",
     "outsideSourceVerification": "Pending explicit user answer to limited PN safety-source exception; no outside source opened in this unit.",
     "privateBookAndPages": "Excluded from Git and public assets"
   },
   "sourceRead": {
+    "chapter7": {
+      "printedPages": [
+        100,
+        105
+      ],
+      "pdfPages": [
+        108,
+        113
+      ],
+      "textAndRenderedPagesRead": true,
+      "wholeChapterVerified": false
+    },
     "chapter11": {
       "printedPages": [
         149,
@@ -35,29 +48,17 @@
       "previousEvidence": "parenteral-nutrition-calculations-completion-review.json",
       "wholeChapterVerified": false
     },
-    "chapter7": {
-      "printedPages": [
-        100,
-        104
-      ],
-      "pdfPages": [
-        108,
-        112
-      ],
-      "textAndRenderedPagesRead": true,
-      "wholeChapterVerified": false
-    },
     "chapter17": {
       "printedPages": [
-        279,
-        279
+        277,
+        277
       ],
       "pdfPages": [
-        287,
-        287
+        285,
+        285
       ],
       "textAndRenderedPageRead": true,
-      "scope": "Conflict evidence only",
+      "scope": "Measured ingredient verification and finished-product inspection only; old risk-category/BUD conflict retained separately.",
       "wholeChapterVerified": false
     },
     "chapter53": {
@@ -75,19 +76,25 @@
   },
   "inventory": {
     "lessons": 6,
-    "sections": 42,
-    "newSections": 18,
-    "preservedSections": 24,
+    "sections": 45,
+    "bookAddedSectionsAcrossTwoUnits": 21,
+    "preservedOriginalSections": 24,
+    "sectionsAddedThisUnit": 3,
     "figures": 6,
     "embeddedChecks": 6,
-    "bankItems": 130,
-    "newOriginalItems": 30,
-    "priorItemsRevised": 11,
-    "priorItemsUnchanged": 89,
-    "preservedPriorIdsKeysAnchors": 100,
-    "sourceVerifiedCurrentItems": 71,
-    "remainingSourceReviewItems": 59,
-    "cumulativeItems": 5
+    "sourceVerifiedEmbeddedChecks": 4,
+    "remainingEmbeddedChecks": 2,
+    "bankItems": 133,
+    "bookOriginalQuestionsAcrossTwoUnits": 33,
+    "newOriginalItemsThisUnit": 3,
+    "retainedItemsSourceVerifiedThisUnit": 14,
+    "priorItemsUnchangedThisUnit": 129,
+    "priorPromptsClarifiedThisUnit": 1,
+    "sourceVerifiedCurrentItems": 88,
+    "remainingSourceReviewItems": 45,
+    "cumulativeItems": 5,
+    "sourceVerifiedCumulativeItems": 3,
+    "remainingCumulativeItems": 2
   },
   "lessonReview": [
     {
@@ -666,6 +673,46 @@
       "wholeLessonVerified": false,
       "verifiedAddedSections": [
         {
+          "heading": "Verify the measured ingredient before transfer",
+          "status": "verified",
+          "source": [
+            {
+              "chapter": 17,
+              "printedPages": [
+                277,
+                277
+              ],
+              "pdfPages": [
+                285,
+                285
+              ]
+            }
+          ],
+          "contentSHA256": "2faf4cb4da59e16f0874ce1596f7dbe01688d3c4d7dbde43dde775310944629f",
+          "sourceComparedAgain": true,
+          "desktopMobileRenderedInspected": true
+        },
+        {
+          "heading": "Interpret color separately from particles",
+          "status": "verified",
+          "source": [
+            {
+              "chapter": 7,
+              "printedPages": [
+                105,
+                105
+              ],
+              "pdfPages": [
+                113,
+                113
+              ]
+            }
+          ],
+          "contentSHA256": "af337b2e1f40598d9036ebc4418008be9696bc94764af5648413c885dad8873c",
+          "sourceComparedAgain": true,
+          "desktopMobileRenderedInspected": true
+        },
+        {
           "heading": "Recognize premixed chambers and their contents",
           "status": "verified",
           "source": [
@@ -762,6 +809,26 @@
       "wholeLessonVerified": false,
       "verifiedAddedSections": [
         {
+          "heading": "Account for insulin adsorption to the container",
+          "status": "verified",
+          "source": [
+            {
+              "chapter": 7,
+              "printedPages": [
+                101,
+                101
+              ],
+              "pdfPages": [
+                109,
+                109
+              ]
+            }
+          ],
+          "contentSHA256": "d2db28d5438ce83fe0e9f284bc50e254258ee5d8d6c7da591eaa4c20d1683a2f",
+          "sourceComparedAgain": true,
+          "desktopMobileRenderedInspected": true
+        },
+        {
           "heading": "Watch the specific source monitoring concerns",
           "status": "verified",
           "source": [
@@ -834,27 +901,57 @@
   "questionReview": [
     {
       "id": "parenteral-nutrition-001",
-      "status": "reviewing",
+      "status": "verified",
       "contentSHA256": "2ccb919f0f3dd7c14ab2b9394c526ef7996bcbf7782aea0af935064e97a2757a",
       "reviewHref": "#pn-decision",
       "answer": 0,
       "runtimeDesktopMobileGraded": true,
       "choicesAndRationaleReviewed": true,
-      "kind": "retained conceptual/integration item",
-      "sourceBoundary": "Book supports route need and examples; retained additional diagnoses, malnutrition timing, shock readiness and goals-of-care algorithm require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "kind": "retained conceptual item reconciled with supplied book",
+      "source": [
+        {
+          "chapter": 11,
+          "printedPages": [
+            149,
+            150
+          ],
+          "pdfPages": [
+            157,
+            158
+          ]
+        }
+      ],
+      "completeChoicesKeyRationaleReviewed": true,
+      "sourceComparedAgain": true,
+      "sourceProof": "Complete intestinal obstruction and nutritional need make PN the appropriate route among the choices; a missed meal, line convenience or adequate enteral intake do not. Severe malnutrition in the scenario does not establish a separate early-PN timing algorithm.",
+      "priorIdKeyChoicesRationaleAnchorPreserved": true
     },
     {
       "id": "parenteral-nutrition-002",
-      "status": "reviewing",
+      "status": "verified",
       "contentSHA256": "204aab1b8cab47e1b6260d150b8cf295aacf6a31291e772f641fe0ef24efceed",
       "reviewHref": "#pn-decision",
       "answer": 0,
       "runtimeDesktopMobileGraded": true,
       "choicesAndRationaleReviewed": true,
-      "kind": "retained conceptual/integration item",
-      "sourceBoundary": "Book supports route need and examples; retained additional diagnoses, malnutrition timing, shock readiness and goals-of-care algorithm require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "kind": "retained conceptual item reconciled with supplied book",
+      "source": [
+        {
+          "chapter": 11,
+          "printedPages": [
+            149,
+            150
+          ],
+          "pdfPages": [
+            157,
+            158
+          ]
+        }
+      ],
+      "completeChoicesKeyRationaleReviewed": true,
+      "sourceComparedAgain": true,
+      "sourceProof": "Assess functional and adequate oral/enteral delivery before committing to PN; the route and nutritional-status context supports the key, choices and explanation.",
+      "priorIdKeyChoicesRationaleAnchorPreserved": true
     },
     {
       "id": "parenteral-nutrition-003",
@@ -870,15 +967,31 @@
     },
     {
       "id": "parenteral-nutrition-004",
-      "status": "reviewing",
-      "contentSHA256": "b861d5ed09c13dbd6e84c51801fcaf517402660109367a3233d045db38de7dc1",
+      "status": "verified",
+      "contentSHA256": "fff6bcbfec62972ec093b1583d4785e1c6eec50845f7d3b1af55a5e5b43b1ecd",
       "reviewHref": "#pn-decision",
       "answer": 0,
       "runtimeDesktopMobileGraded": true,
       "choicesAndRationaleReviewed": true,
-      "kind": "retained conceptual/integration item",
-      "sourceBoundary": "Book supports route need and examples; retained additional diagnoses, malnutrition timing, shock readiness and goals-of-care algorithm require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "kind": "retained conceptual item reconciled with supplied book",
+      "source": [
+        {
+          "chapter": 11,
+          "printedPages": [
+            149,
+            150
+          ],
+          "pdfPages": [
+            157,
+            158
+          ]
+        }
+      ],
+      "completeChoicesKeyRationaleReviewed": true,
+      "sourceComparedAgain": true,
+      "sourceProof": "One-day interruption in a well-nourished stable adult with expected adequate enteral intake tomorrow warrants continued assessment rather than automatic PN. Clarified the duration only; no mandatory waiting rule, altered key, choices or rationale.",
+      "priorIdKeyChoicesRationaleAnchorPreserved": true,
+      "onlyPromptDurationClarified": true
     },
     {
       "id": "parenteral-nutrition-005",
@@ -930,27 +1043,79 @@
     },
     {
       "id": "parenteral-nutrition-009",
-      "status": "reviewing",
+      "status": "verified",
       "contentSHA256": "0f30ae024fb8931c4823b10372eb3518570d8b1f97704f264efda5bae495175d",
       "reviewHref": "#venous-access",
       "answer": 0,
       "runtimeDesktopMobileGraded": true,
       "choicesAndRationaleReviewed": true,
-      "kind": "retained conceptual/integration item",
-      "sourceBoundary": "Book supports access location, dilution and short peripheral use; retained dialysis-vein preservation, dedicated lumen, catheter complication response and prevention protocols require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "kind": "retained conceptual item reconciled with supplied book",
+      "source": [
+        {
+          "chapter": 7,
+          "printedPages": [
+            100,
+            100
+          ],
+          "pdfPages": [
+            108,
+            108
+          ]
+        },
+        {
+          "chapter": 11,
+          "printedPages": [
+            150,
+            150
+          ],
+          "pdfPages": [
+            158,
+            158
+          ]
+        }
+      ],
+      "completeChoicesKeyRationaleReviewed": true,
+      "sourceComparedAgain": true,
+      "sourceProof": "Peripheral vein tolerance limits concentration; central dilution allows higher osmolarity. More dilute peripheral nutrition may demand more fluid. This does not make every peripheral regimen adequate.",
+      "priorIdKeyChoicesRationaleAnchorPreserved": true
     },
     {
       "id": "parenteral-nutrition-010",
-      "status": "reviewing",
+      "status": "verified",
       "contentSHA256": "8f08e7c7cc4828c987c586ace2392f5e11f57956b7f0e5f9020f7c5bada17cfb",
       "reviewHref": "#venous-access",
       "answer": 0,
       "runtimeDesktopMobileGraded": true,
       "choicesAndRationaleReviewed": true,
-      "kind": "retained conceptual/integration item",
-      "sourceBoundary": "Book supports access location, dilution and short peripheral use; retained dialysis-vein preservation, dedicated lumen, catheter complication response and prevention protocols require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "kind": "retained conceptual item reconciled with supplied book",
+      "source": [
+        {
+          "chapter": 7,
+          "printedPages": [
+            100,
+            100
+          ],
+          "pdfPages": [
+            108,
+            108
+          ]
+        },
+        {
+          "chapter": 11,
+          "printedPages": [
+            150,
+            150
+          ],
+          "pdfPages": [
+            158,
+            158
+          ]
+        }
+      ],
+      "completeChoicesKeyRationaleReviewed": true,
+      "sourceComparedAgain": true,
+      "sourceProof": "Several weeks of concentrated full nutrition with fluid restriction fits central rather than short conditional peripheral administration. The scenario is distinct from brief supplementation or adequate oral feeding.",
+      "priorIdKeyChoicesRationaleAnchorPreserved": true
     },
     {
       "id": "parenteral-nutrition-011",
@@ -1026,39 +1191,84 @@
     },
     {
       "id": "parenteral-nutrition-017",
-      "status": "reviewing",
+      "status": "verified",
       "contentSHA256": "0bf9aa13f12388ef07b05efbe78b3389386b43510353179b98acc2e9ebae7f49",
       "reviewHref": "#macronutrient-design",
       "answer": 0,
       "runtimeDesktopMobileGraded": true,
       "choicesAndRationaleReviewed": true,
-      "kind": "retained conceptual/integration item",
-      "sourceBoundary": "Book supports energy values, protein basis, lipid schedule and non-PN calories; retained current TG >400 threshold, specific product restrictions, organ-disease protein and overfeeding claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "kind": "retained conceptual item reconciled with supplied book",
+      "source": [
+        {
+          "chapter": 11,
+          "printedPages": [
+            152,
+            155
+          ],
+          "pdfPages": [
+            160,
+            163
+          ]
+        }
+      ],
+      "completeChoicesKeyRationaleReviewed": true,
+      "sourceComparedAgain": true,
+      "sourceProof": "IV dextrose supplies 3.4 kcal/g; reviewed the choices and distinction from food carbohydrate, protein, alcohol and fat values.",
+      "priorIdKeyChoicesRationaleAnchorPreserved": true
     },
     {
       "id": "parenteral-nutrition-018",
-      "status": "reviewing",
+      "status": "verified",
       "contentSHA256": "ed67670e6c6f4999de315f7c0b37df311a013fef4c8e5aa6b55fcce00bda6dd4",
       "reviewHref": "#macronutrient-design",
       "answer": 0,
       "runtimeDesktopMobileGraded": true,
       "choicesAndRationaleReviewed": true,
-      "kind": "retained conceptual/integration item",
-      "sourceBoundary": "Book supports energy values, protein basis, lipid schedule and non-PN calories; retained current TG >400 threshold, specific product restrictions, organ-disease protein and overfeeding claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "kind": "retained conceptual item reconciled with supplied book",
+      "source": [
+        {
+          "chapter": 11,
+          "printedPages": [
+            152,
+            152
+          ],
+          "pdfPages": [
+            160,
+            160
+          ]
+        }
+      ],
+      "completeChoicesKeyRationaleReviewed": true,
+      "sourceComparedAgain": true,
+      "sourceProof": "Amino acids provide protein for repair and 4 kcal/g. Reviewed all choices and the protein-versus-energy explanation.",
+      "priorIdKeyChoicesRationaleAnchorPreserved": true
     },
     {
       "id": "parenteral-nutrition-019",
-      "status": "reviewing",
+      "status": "verified",
       "contentSHA256": "5c1f208e72c1d442da859e3ca0e7fd30a7875f03ce53b9c5783c640ab7ad53ba",
       "reviewHref": "#macronutrient-design",
       "answer": 0,
       "runtimeDesktopMobileGraded": true,
       "choicesAndRationaleReviewed": true,
-      "kind": "retained conceptual/integration item",
-      "sourceBoundary": "Book supports energy values, protein basis, lipid schedule and non-PN calories; retained current TG >400 threshold, specific product restrictions, organ-disease protein and overfeeding claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "kind": "retained conceptual item reconciled with supplied book",
+      "source": [
+        {
+          "chapter": 11,
+          "printedPages": [
+            155,
+            155
+          ],
+          "pdfPages": [
+            163,
+            163
+          ]
+        }
+      ],
+      "completeChoicesKeyRationaleReviewed": true,
+      "sourceComparedAgain": true,
+      "sourceProof": "GIR expresses dextrose delivery relative to weight and time in mg/kg/min; the dimensional explanation agrees with the source and previously verified numerical items. No new numerical threshold added.",
+      "priorIdKeyChoicesRationaleAnchorPreserved": true
     },
     {
       "id": "parenteral-nutrition-020",
@@ -1074,15 +1284,41 @@
     },
     {
       "id": "parenteral-nutrition-021",
-      "status": "reviewing",
+      "status": "verified",
       "contentSHA256": "962bd0be99a8bb8db616bc65ad5e134613272acb12533c4bbccf5d0cf657f153",
       "reviewHref": "#macronutrient-design",
       "answer": 0,
       "runtimeDesktopMobileGraded": true,
       "choicesAndRationaleReviewed": true,
-      "kind": "retained conceptual/integration item",
-      "sourceBoundary": "Book supports energy values, protein basis, lipid schedule and non-PN calories; retained current TG >400 threshold, specific product restrictions, organ-disease protein and overfeeding claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "kind": "retained conceptual item reconciled with supplied book",
+      "source": [
+        {
+          "chapter": 11,
+          "printedPages": [
+            157,
+            157
+          ],
+          "pdfPages": [
+            165,
+            165
+          ]
+        },
+        {
+          "chapter": 53,
+          "printedPages": [
+            716,
+            716
+          ],
+          "pdfPages": [
+            724,
+            724
+          ]
+        }
+      ],
+      "completeChoicesKeyRationaleReviewed": true,
+      "sourceComparedAgain": true,
+      "sourceProof": "Propofol lipid energy is a non-PN energy contribution; the rendered table gives 1.1 kcal/mL. No sedative order, full critical-care table or chapter closure claimed.",
+      "priorIdKeyChoicesRationaleAnchorPreserved": true
     },
     {
       "id": "parenteral-nutrition-022",
@@ -1158,27 +1394,68 @@
     },
     {
       "id": "parenteral-nutrition-028",
-      "status": "reviewing",
+      "status": "verified",
       "contentSHA256": "fb260ef8f44fa2bd0f0af6fc2a15408da79b41d299c6c4250299e08fe9a1769a",
       "reviewHref": "#micronutrient-balance",
       "answer": 0,
       "runtimeDesktopMobileGraded": true,
       "choicesAndRationaleReviewed": true,
-      "kind": "retained conceptual/integration item",
-      "sourceBoundary": "Book supports salts, solubility precautions and attributed vitamin/trace groups; retained shortage guidance, neurotoxicity, selected high-loss supplementation and detailed product-specific claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "kind": "retained conceptual item reconciled with supplied book",
+      "source": [
+        {
+          "chapter": 11,
+          "printedPages": [
+            160,
+            160
+          ],
+          "pdfPages": [
+            168,
+            168
+          ]
+        },
+        {
+          "chapter": 7,
+          "printedPages": [
+            101,
+            103
+          ],
+          "pdfPages": [
+            109,
+            111
+          ]
+        }
+      ],
+      "completeChoicesKeyRationaleReviewed": true,
+      "sourceComparedAgain": true,
+      "sourceProof": "Calcium-phosphate risk depends on salt, concentration, sequence/dilution, pH, temperature and time, rather than a serum phosphate value, bag volume alone or visual appearance alone. Source stability and precipitation sections reviewed together. The book arithmetic screen is not final product compatibility proof.",
+      "priorIdKeyChoicesRationaleAnchorPreserved": true
     },
     {
       "id": "parenteral-nutrition-029",
-      "status": "reviewing",
+      "status": "verified",
       "contentSHA256": "6a00b74e125adc1385b11d112208a31bb4bdd9824e830d9be2418c8de7cb2942",
       "reviewHref": "#micronutrient-balance",
       "answer": 0,
       "runtimeDesktopMobileGraded": true,
       "choicesAndRationaleReviewed": true,
-      "kind": "retained conceptual/integration item",
-      "sourceBoundary": "Book supports salts, solubility precautions and attributed vitamin/trace groups; retained shortage guidance, neurotoxicity, selected high-loss supplementation and detailed product-specific claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "kind": "retained conceptual item reconciled with supplied book",
+      "source": [
+        {
+          "chapter": 11,
+          "printedPages": [
+            160,
+            160
+          ],
+          "pdfPages": [
+            168,
+            168
+          ]
+        }
+      ],
+      "completeChoicesKeyRationaleReviewed": true,
+      "sourceComparedAgain": true,
+      "sourceProof": "Calcium gluconate leaves less free calcium and reduces phosphate precipitation risk compared with calcium chloride. The alternatives and explanation agree with the rendered source.",
+      "priorIdKeyChoicesRationaleAnchorPreserved": true
     },
     {
       "id": "parenteral-nutrition-030",
@@ -1242,15 +1519,30 @@
     },
     {
       "id": "parenteral-nutrition-035",
-      "status": "reviewing",
+      "status": "verified",
       "contentSHA256": "94e0fb3e06eb6573d9b42747affeb9cc97049fd0beac9a256db36d525b674ca7",
       "reviewHref": "#compounding-safety",
       "answer": 0,
       "runtimeDesktopMobileGraded": true,
       "choicesAndRationaleReviewed": true,
-      "kind": "retained conceptual/integration item",
-      "sourceBoundary": "Book supports admixture types, high-alert sterile preparation and incompatibility principles; filter and old USP categories conflict with retained modern claims. Current process and emulsion claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "kind": "retained conceptual item reconciled with supplied book",
+      "source": [
+        {
+          "chapter": 11,
+          "printedPages": [
+            150,
+            150
+          ],
+          "pdfPages": [
+            158,
+            158
+          ]
+        }
+      ],
+      "completeChoicesKeyRationaleReviewed": true,
+      "sourceComparedAgain": true,
+      "sourceProof": "Three-in-one/TNA includes lipid, amino acids and dextrose in one admixture, unlike two-in-one with separate lipid. Reviewed all choices and rationale.",
+      "priorIdKeyChoicesRationaleAnchorPreserved": true
     },
     {
       "id": "parenteral-nutrition-036",
@@ -1374,15 +1666,52 @@
     },
     {
       "id": "parenteral-nutrition-046",
-      "status": "reviewing",
+      "status": "verified",
       "contentSHA256": "547f98923c5c2695c7c9051fa2496abb326e3e36a6d4042b300e72b7245af7ea",
       "reviewHref": "#monitoring-transition",
       "answer": 0,
       "runtimeDesktopMobileGraded": true,
       "choicesAndRationaleReviewed": true,
-      "kind": "retained conceptual/integration item",
-      "sourceBoundary": "Book supports glucose/refeeding concerns and its attributed insulin example; retained all-phase monitoring, universal taper exception, home PN, cycling and long-term complication claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "kind": "retained conceptual item reconciled with supplied book",
+      "source": [
+        {
+          "chapter": 11,
+          "printedPages": [
+            150,
+            150
+          ],
+          "pdfPages": [
+            158,
+            158
+          ]
+        },
+        {
+          "chapter": 11,
+          "printedPages": [
+            155,
+            155
+          ],
+          "pdfPages": [
+            163,
+            163
+          ]
+        },
+        {
+          "chapter": 11,
+          "printedPages": [
+            161,
+            161
+          ],
+          "pdfPages": [
+            169,
+            169
+          ]
+        }
+      ],
+      "completeChoicesKeyRationaleReviewed": true,
+      "sourceComparedAgain": true,
+      "sourceProof": "The same daily dextrose delivered over fewer hours increases hourly carbohydrate exposure and requires attention to glycemia. This is the rate/time implication of source glucose-intolerance and insulin/rate discussion; no universal taper or home-PN protocol verified.",
+      "priorIdKeyChoicesRationaleAnchorPreserved": true
     },
     {
       "id": "parenteral-nutrition-047",
@@ -2296,15 +2625,41 @@
     },
     {
       "id": "parenteral-nutrition-101",
-      "status": "reviewing",
+      "status": "verified",
       "contentSHA256": "af937d581918abdc2645a801965d05f68021ffa73436544e6d2347f937c07c26",
       "reviewHref": "#venous-access",
       "answer": 0,
       "runtimeDesktopMobileGraded": true,
       "choicesAndRationaleReviewed": true,
-      "kind": "retained conceptual/integration item",
-      "sourceBoundary": "Book supports access location, dilution and short peripheral use; retained dialysis-vein preservation, dedicated lumen, catheter complication response and prevention protocols require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "kind": "retained conceptual item reconciled with supplied book",
+      "source": [
+        {
+          "chapter": 7,
+          "printedPages": [
+            100,
+            100
+          ],
+          "pdfPages": [
+            108,
+            108
+          ]
+        },
+        {
+          "chapter": 11,
+          "printedPages": [
+            150,
+            150
+          ],
+          "pdfPages": [
+            158,
+            158
+          ]
+        }
+      ],
+      "completeChoicesKeyRationaleReviewed": true,
+      "sourceComparedAgain": true,
+      "sourceProof": "Given 3.5 L peripheral nutrition and a fluid restriction, reassess a central/concentrated formulation instead of ignoring the total fluid. The 3.5 L is scenario data, not a universal threshold.",
+      "priorIdKeyChoicesRationaleAnchorPreserved": true
     },
     {
       "id": "parenteral-nutrition-102",
@@ -3058,26 +3413,131 @@
         "status": "verified",
         "clinicalOrderEstablished": false
       }
+    },
+    {
+      "id": "parenteral-nutrition-book-031",
+      "status": "verified",
+      "contentSHA256": "99e761755021fb9ebc1b6f9a57a42bff4f675fb39302f9359c31d683e72388f9",
+      "reviewHref": "#monitoring-transition",
+      "answer": 2,
+      "kind": "new original book question",
+      "source": {
+        "chapter": 7,
+        "printedPages": [
+          101,
+          101
+        ],
+        "pdfPages": [
+          109,
+          109
+        ]
+      },
+      "completeChoicesKeyRationaleReviewed": true,
+      "sourceComparedAgain": true,
+      "runtimeDesktopMobileGraded": true
+    },
+    {
+      "id": "parenteral-nutrition-book-032",
+      "status": "verified",
+      "contentSHA256": "15f6c89d6ec3496f348d09b9d19f14c77621c618f79ca3841ae9262d2f70d75e",
+      "reviewHref": "#compounding-safety",
+      "answer": 3,
+      "kind": "new original book question",
+      "source": {
+        "chapter": 7,
+        "printedPages": [
+          105,
+          105
+        ],
+        "pdfPages": [
+          113,
+          113
+        ]
+      },
+      "completeChoicesKeyRationaleReviewed": true,
+      "sourceComparedAgain": true,
+      "runtimeDesktopMobileGraded": true
+    },
+    {
+      "id": "parenteral-nutrition-book-033",
+      "status": "verified",
+      "contentSHA256": "2967bc5a37def3bcd66535358a81f8be06d5cdf155c749eb521aef9ee7cddd80",
+      "reviewHref": "#compounding-safety",
+      "answer": 0,
+      "kind": "new original book question",
+      "source": {
+        "chapter": 17,
+        "printedPages": [
+          277,
+          277
+        ],
+        "pdfPages": [
+          285,
+          285
+        ]
+      },
+      "completeChoicesKeyRationaleReviewed": true,
+      "sourceComparedAgain": true,
+      "runtimeDesktopMobileGraded": true
     }
   ],
   "embeddedReview": [
     {
       "slug": "pn-decision",
-      "status": "reviewing",
+      "status": "verified",
       "contentSHA256": "2ffed6dc6a5fb7fc8076eff862650816abefacda906431b9bbb39387fcc56d8d",
       "preserved": true,
       "runtimeDesktopMobileGraded": true,
       "arithmeticReuse": null,
-      "sourceBoundary": "Book supports route need and examples; retained additional diagnoses, malnutrition timing, shock readiness and goals-of-care algorithm require complete provenance reconciliation."
+      "source": [
+        {
+          "chapter": 11,
+          "printedPages": [
+            149,
+            150
+          ],
+          "pdfPages": [
+            157,
+            158
+          ]
+        }
+      ],
+      "sourceProof": "Need plus nonfunctional GI route; no separate timing algorithm.",
+      "completeChoicesKeyRationaleReviewed": true
     },
     {
       "slug": "venous-access",
-      "status": "reviewing",
+      "status": "verified",
       "contentSHA256": "034c3e79c91304eaf759b0b8c78233393ffc6d30fa5f8c923c50cbdeac9b6b3c",
       "preserved": true,
       "runtimeDesktopMobileGraded": true,
       "arithmeticReuse": null,
-      "sourceBoundary": "Book supports access location, dilution and short peripheral use; retained dialysis-vein preservation, dedicated lumen, catheter complication response and prevention protocols require complete provenance reconciliation."
+      "source": [
+        {
+          "chapter": 7,
+          "printedPages": [
+            100,
+            100
+          ],
+          "pdfPages": [
+            108,
+            108
+          ]
+        },
+        {
+          "chapter": 11,
+          "printedPages": [
+            150,
+            150
+          ],
+          "pdfPages": [
+            158,
+            158
+          ]
+        }
+      ],
+      "sourceProof": "Central large-vessel dilution permits higher osmolarity.",
+      "completeChoicesKeyRationaleReviewed": true
     },
     {
       "slug": "macronutrient-design",
@@ -3108,12 +3568,37 @@
     },
     {
       "slug": "monitoring-transition",
-      "status": "reviewing",
+      "status": "verified",
       "contentSHA256": "2c6330337660d18482c36337924a2e7203cf71b48bc63d6a511c07b3c758b1cb",
       "preserved": true,
       "runtimeDesktopMobileGraded": true,
       "arithmeticReuse": null,
-      "sourceBoundary": "Book supports glucose/refeeding concerns and its attributed insulin example; retained all-phase monitoring, universal taper exception, home PN, cycling and long-term complication claims require complete provenance reconciliation."
+      "source": [
+        {
+          "chapter": 11,
+          "printedPages": [
+            149,
+            150
+          ],
+          "pdfPages": [
+            157,
+            158
+          ]
+        },
+        {
+          "chapter": 11,
+          "printedPages": [
+            161,
+            161
+          ],
+          "pdfPages": [
+            169,
+            169
+          ]
+        }
+      ],
+      "sourceProof": "Reliable adequate oral/enteral intake warrants reassessment of PN; line patency, calendar date or albumin alone is not adequacy.",
+      "completeChoicesKeyRationaleReviewed": true
     }
   ],
   "figureReview": [
@@ -3180,8 +3665,8 @@
         "correctModuleRemediationLinks": 5,
         "preservedCumulativeRuntime": true,
         "clinicalSourcePendingIds": [
-          "parenteral-nutrition-033",
-          "parenteral-nutrition-107"
+          "parenteral-nutrition-034",
+          "parenteral-nutrition-109"
         ],
         "pageErrors": []
       },
@@ -3191,8 +3676,8 @@
         "correctModuleRemediationLinks": 5,
         "preservedCumulativeRuntime": true,
         "clinicalSourcePendingIds": [
-          "parenteral-nutrition-033",
-          "parenteral-nutrition-107"
+          "parenteral-nutrition-034",
+          "parenteral-nutrition-109"
         ],
         "pageErrors": []
       }
@@ -3200,17 +3685,16 @@
     "technicalDerivationConsistent": true,
     "allFiveClinicallyVerified": false,
     "reviewingItemIds": [
-      "parenteral-nutrition-001",
-      "parenteral-nutrition-033",
-      "parenteral-nutrition-107"
+      "parenteral-nutrition-034",
+      "parenteral-nutrition-109"
     ],
     "verifiedItemIds": [
-      "parenteral-nutrition-075",
-      "parenteral-nutrition-book-030"
+      "parenteral-nutrition-001",
+      "parenteral-nutrition-076",
+      "parenteral-nutrition-book-033"
     ],
-    "standaloneDirectTopicMatches": 0,
-    "standaloneMatchLimit": "Search uses PN/parenteral/refeeding/Clinimix/trace-element/Ca-phosphate terms; no entire broader bank closure claimed.",
-    "supplementalContentForModuleOrSixLessons": null,
+    "currentSelectionChangedWithBankLength": true,
+    "standaloneAndSupplementalCoverage": "Prior scoped search evidence retained; broader file bytes unchanged by this unit. No whole broader-bank closure.",
     "legacySeparateStudySlug": "enteral-parenteral-nutrition",
     "relatedCurriculumOpen": [
       "enteral-nutrition",
@@ -3280,7 +3764,7 @@
   "validation": {
     "focusedAssessmentAudit": {
       "modules": 1,
-      "questions": 130,
+      "questions": 133,
       "hardErrors": [],
       "sourceGaps": [],
       "sizeAdvisories": [],
@@ -3289,39 +3773,32 @@
         {
           "module": "parenteral-nutrition",
           "lessons": 6,
-          "questions": 130,
+          "questions": 133,
           "minimumLessonCoverage": 12
         }
       ]
     },
     "structuralPreservation": {
       "passed": true,
-      "module": "parenteral-nutrition",
       "lessons": 6,
-      "teachingSections": 42,
-      "newTeachingSections": 18,
-      "all24PriorSectionsPreserved": true,
-      "embeddedChecks": 6,
-      "allChecksFiguresLessonMetadataPreserved": true,
-      "bankItems": 130,
-      "newOriginalItems": 30,
-      "roundingClarifications": 10,
-      "revisedPriorItems": 11,
-      "unchangedPriorItems": 89,
-      "oneDuplicatePromptReplaced": true,
-      "allPriorIdsKeysAnchorsPreserved": true,
-      "allNewPromptsIdsUnique": true,
-      "priorDuplicateIds": [],
-      "cumulativeItemIds": [
+      "sections": 45,
+      "newSections": 3,
+      "all42PriorSectionsPreserved": true,
+      "bankItems": 133,
+      "newOriginalItems": 3,
+      "priorUnchangedItems": 129,
+      "onePriorPromptClarified": true,
+      "allIdsKeysAnchorsPreserved": true,
+      "checksFiguresMetadataPreserved": true,
+      "historicalEightExternalReferencesPreserved": true,
+      "cumulativeIds": [
         "cumulative-parenteral-nutrition-parenteral-nutrition-001",
-        "cumulative-parenteral-nutrition-parenteral-nutrition-033",
-        "cumulative-parenteral-nutrition-parenteral-nutrition-075",
-        "cumulative-parenteral-nutrition-parenteral-nutrition-107",
-        "cumulative-parenteral-nutrition-parenteral-nutrition-book-030"
+        "cumulative-parenteral-nutrition-parenteral-nutrition-034",
+        "cumulative-parenteral-nutrition-parenteral-nutrition-076",
+        "cumulative-parenteral-nutrition-parenteral-nutrition-109",
+        "cumulative-parenteral-nutrition-parenteral-nutrition-book-033"
       ],
-      "standaloneTopicMatches": 0,
-      "supplementalModuleStudyContent": 0,
-      "historicalReferencesPreserved": true,
+      "all133PromptsIdsGloballyUnique": true,
       "wholeModuleSourceVerified": false
     },
     "productionBuild": {
@@ -3329,405 +3806,7 @@
       "exitCode": 0,
       "staticPages": 567,
       "candidate": "HEAD plus exact two changed clinical files",
-      "finalBuildIncludesBookLocatorRepair": true
-    },
-    "independentArithmetic": {
-      "passed": true,
-      "distinctCurrentItems": 43,
-      "retainedNumericItems": 40,
-      "newOriginalNumericItems": 3,
-      "allOfferedAnswersUnitsAndRoundingReviewed": true,
-      "lessonExamplesReuseTwoNewQuestionCalculations": true,
-      "sourceExamplesNotRecounted": true,
-      "items": [
-        {
-          "id": "parenteral-nutrition-060",
-          "expression": "100 g x 3.4 kcal/g",
-          "unrounded": "340.0",
-          "answer": "340 kcal",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-061",
-          "expression": "125 g x 3.4 kcal/g",
-          "unrounded": "425.0",
-          "answer": "425 kcal",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-062",
-          "expression": "150 g x 3.4 kcal/g",
-          "unrounded": "510.0",
-          "answer": "510 kcal",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-063",
-          "expression": "175 g x 3.4 kcal/g",
-          "unrounded": "595.0",
-          "answer": "595 kcal",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-064",
-          "expression": "200 g x 3.4 kcal/g",
-          "unrounded": "680.0",
-          "answer": "680 kcal",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-065",
-          "expression": "225 g x 3.4 kcal/g",
-          "unrounded": "765.0",
-          "answer": "765 kcal",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-066",
-          "expression": "250 g x 3.4 kcal/g",
-          "unrounded": "850.0",
-          "answer": "850 kcal",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-067",
-          "expression": "275 g x 3.4 kcal/g",
-          "unrounded": "935.0",
-          "answer": "935 kcal",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-068",
-          "expression": "300 g x 3.4 kcal/g",
-          "unrounded": "1020.0",
-          "answer": "1020 kcal",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-069",
-          "expression": "325 g x 3.4 kcal/g",
-          "unrounded": "1105.0",
-          "answer": "1105 kcal",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-070",
-          "expression": "180 g x 1000 mg/g / (60 kg x 24 h x 60 min/h)",
-          "unrounded": "2.083333333333333333333333333",
-          "answer": "2.08 mg/kg/min",
-          "rounding": "nearest hundredth",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-071",
-          "expression": "210 g x 1000 mg/g / (70 kg x 24 h x 60 min/h)",
-          "unrounded": "2.083333333333333333333333333",
-          "answer": "2.08 mg/kg/min",
-          "rounding": "nearest hundredth",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-072",
-          "expression": "240 g x 1000 mg/g / (80 kg x 24 h x 60 min/h)",
-          "unrounded": "2.083333333333333333333333333",
-          "answer": "2.08 mg/kg/min",
-          "rounding": "nearest hundredth",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-073",
-          "expression": "250 g x 1000 mg/g / (75 kg x 20 h x 60 min/h)",
-          "unrounded": "2.777777777777777777777777778",
-          "answer": "2.78 mg/kg/min",
-          "rounding": "nearest hundredth",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-074",
-          "expression": "300 g x 1000 mg/g / (90 kg x 24 h x 60 min/h)",
-          "unrounded": "2.314814814814814814814814815",
-          "answer": "2.31 mg/kg/min",
-          "rounding": "nearest hundredth",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-075",
-          "expression": "160 g x 1000 mg/g / (55 kg x 20 h x 60 min/h)",
-          "unrounded": "2.424242424242424242424242424",
-          "answer": "2.42 mg/kg/min",
-          "rounding": "nearest hundredth",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-076",
-          "expression": "280 g x 1000 mg/g / (85 kg x 18 h x 60 min/h)",
-          "unrounded": "3.050108932461873638344226580",
-          "answer": "3.05 mg/kg/min",
-          "rounding": "nearest hundredth",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-077",
-          "expression": "220 g x 1000 mg/g / (65 kg x 16 h x 60 min/h)",
-          "unrounded": "3.525641025641025641025641026",
-          "answer": "3.53 mg/kg/min",
-          "rounding": "nearest hundredth",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-078",
-          "expression": "190 g x 1000 mg/g / (70 kg x 12 h x 60 min/h)",
-          "unrounded": "3.769841269841269841269841270",
-          "answer": "3.77 mg/kg/min",
-          "rounding": "nearest hundredth",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-079",
-          "expression": "260 g x 1000 mg/g / (100 kg x 24 h x 60 min/h)",
-          "unrounded": "1.805555555555555555555555556",
-          "answer": "1.81 mg/kg/min",
-          "rounding": "nearest hundredth",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-080",
-          "expression": "50 kg x 1.2 g/kg/day",
-          "unrounded": "60.0",
-          "answer": "60 g",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-081",
-          "expression": "55 kg x 1.5 g/kg/day",
-          "unrounded": "82.5",
-          "answer": "82.5 g",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-082",
-          "expression": "60 kg x 1.3 g/kg/day",
-          "unrounded": "78.0",
-          "answer": "78 g",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-083",
-          "expression": "65 kg x 1.4 g/kg/day",
-          "unrounded": "91.0",
-          "answer": "91 g",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-084",
-          "expression": "70 kg x 1.2 g/kg/day",
-          "unrounded": "84.0",
-          "answer": "84 g",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-085",
-          "expression": "75 kg x 1.6 g/kg/day",
-          "unrounded": "120.0",
-          "answer": "120 g",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-086",
-          "expression": "80 kg x 1.5 g/kg/day",
-          "unrounded": "120.0",
-          "answer": "120 g",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-087",
-          "expression": "85 kg x 1.3 g/kg/day",
-          "unrounded": "110.5",
-          "answer": "110.5 g",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-088",
-          "expression": "90 kg x 1.4 g/kg/day",
-          "unrounded": "126.0",
-          "answer": "126 g",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-089",
-          "expression": "100 kg x 1.2 g/kg/day",
-          "unrounded": "120.0",
-          "answer": "120 g",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-090",
-          "expression": "60 kg x 1 g/kg / 0.2 g/mL",
-          "unrounded": "3.0E+2",
-          "answer": "300 mL",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-091",
-          "expression": "65 kg x 0.8 g/kg / 0.2 g/mL",
-          "unrounded": "260",
-          "answer": "260 mL",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-092",
-          "expression": "70 kg x 1 g/kg / 0.2 g/mL",
-          "unrounded": "3.5E+2",
-          "answer": "350 mL",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-093",
-          "expression": "75 kg x 1.2 g/kg / 0.2 g/mL",
-          "unrounded": "450",
-          "answer": "450 mL",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-094",
-          "expression": "80 kg x 0.75 g/kg / 0.2 g/mL",
-          "unrounded": "300.0",
-          "answer": "300 mL",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-095",
-          "expression": "85 kg x 1 g/kg / 0.2 g/mL",
-          "unrounded": "425",
-          "answer": "425 mL",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-096",
-          "expression": "90 kg x 0.8 g/kg / 0.2 g/mL",
-          "unrounded": "360",
-          "answer": "360 mL",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-097",
-          "expression": "55 kg x 1.2 g/kg / 0.2 g/mL",
-          "unrounded": "330",
-          "answer": "330 mL",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-098",
-          "expression": "100 kg x 0.5 g/kg / 0.2 g/mL",
-          "unrounded": "250",
-          "answer": "250 mL",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-099",
-          "expression": "72 kg x 1 g/kg / 0.2 g/mL",
-          "unrounded": "3.6E+2",
-          "answer": "360 mL",
-          "rounding": "exact",
-          "status": "verified",
-          "source": "Chapter 11 printed 152,155-157 / PDF 160,163-165; concentration definition from prior verified chapters."
-        },
-        {
-          "id": "parenteral-nutrition-book-028",
-          "expression": "24 units / 2",
-          "unrounded": "12",
-          "answer": "12 units",
-          "rounding": "exact",
-          "status": "verified",
-          "clinicalOrderEstablished": false
-        },
-        {
-          "id": "parenteral-nutrition-book-029",
-          "expression": "14 mL/hour x 8 hours x 1.1 kcal/mL",
-          "unrounded": "123.2",
-          "answer": "123.2 kcal",
-          "rounding": "exact",
-          "status": "verified",
-          "clinicalOrderEstablished": false
-        },
-        {
-          "id": "parenteral-nutrition-book-030",
-          "expression": "180 mL/week x 1.1 kcal/mL / 7 days/week",
-          "unrounded": "28.28571428571428571428571429",
-          "answer": "28.3 kcal/day",
-          "rounding": "nearest tenth",
-          "status": "verified",
-          "clinicalOrderEstablished": false
-        }
-      ]
+      "finalBuildIncludesOneDayPromptClarification": true
     },
     "browser": [
       {
@@ -3736,10 +3815,10 @@
         "lessons": 6,
         "figures": 6,
         "checks": 6,
-        "all130BankItemsRuntimeGraded": true,
+        "all133BankItemsRuntimeGraded": true,
         "attempts": 14,
         "previousAttemptExclusion": true,
-        "all42TeachingSectionsRendered": true,
+        "all45TeachingSectionsRendered": true,
         "allSixEmbeddedChecksRuntimeGraded": true,
         "incorrectFeedbackRemediation": true,
         "testOnlyControlledShuffle": true,
@@ -3755,10 +3834,10 @@
         "lessons": 6,
         "figures": 6,
         "checks": 6,
-        "all130BankItemsRuntimeGraded": true,
+        "all133BankItemsRuntimeGraded": true,
         "attempts": 14,
         "previousAttemptExclusion": true,
-        "all42TeachingSectionsRendered": true,
+        "all45TeachingSectionsRendered": true,
         "allSixEmbeddedChecksRuntimeGraded": true,
         "incorrectFeedbackRemediation": true,
         "testOnlyControlledShuffle": true,
@@ -3781,45 +3860,42 @@
       }
     ],
     "visualInspection": {
-      "all18NewSectionsDesktopMobile": true,
-      "allSixPreservedFiguresDesktopMobile": true,
-      "initialViewportShots": true,
-      "additionalFullPixelShots": "Animations disabled; contents rail hidden only for element inspection, while normal navigation/runtime was separately tested. Existing floating tool can overlay an element crop at viewport edge; scrolling permits reading the text.",
-      "imagesPrivateOutsideGit": true
+      "threeNewSectionsDesktopMobile": true,
+      "sixPreservedFiguresRendered": true,
+      "unchangedFigureSourceAndPreviousSixFigureDesktopMobileInspectionReused": true,
+      "currentCompoundingMobileAndMonitoringDesktopFullFiguresInspectedAgain": true,
+      "imagesPrivateOutsideGit": true,
+      "elementCaptureOnly": "Animations disabled and contents rail hidden for element inspection; normal navigation separately tested."
     },
-    "roundingClarifications": 10,
-    "duplicatePromptReplaced": "parenteral-nutrition-050",
-    "all130PromptsIdsGloballyUnique": true
+    "independentArithmetic": {
+      "newArithmeticChecks": 0,
+      "prior43NumericalBankObjectsUnchanged": true,
+      "priorProof": "parenteral-nutrition-book-expansion-review.json",
+      "embedded850KcalReusesQuestion066Proof": true
+    },
+    "all133PromptsIdsGloballyUnique": true
   },
   "runningCalculations": {
     "distinctOriginalOrRetainedChecks": 634,
-    "priorTotal": 591,
-    "addedCurrentAdultPnAssessmentIds": 43,
     "separateSourceExampleChecks": 98,
-    "lessonExamplesReuseNewQuestions": true,
-    "previousPNCalculationChecksNotRecounted": true
+    "addedThisUnit": 0,
+    "priorReverificationNotRecounted": true
   },
   "contentHashes": {
-    "src/data/modules/parenteralNutrition.js": "a793026d3f32b37d42447939dc4084a6fa232914d64b8f8358f618e9f906a51e",
-    "src/data/questionBanks/parenteralNutrition.js": "3a35ae10686246495806c99dea29de771441a6cfe7480a973f5d142925ef0812"
+    "src/data/modules/parenteralNutrition.js": "991fd2bd1374709fbb49833505983ff070586cee9146a62996c818a758800415",
+    "src/data/questionBanks/parenteralNutrition.js": "2677161fabfe2bf901d0014677fc187968ff9af6943038d4c097200c4c6fc593"
   },
   "release": {
     "branch": "audit/rxprep-content-2026-09-24",
-    "commit": "5caadc67d4a62e6371de0f568a5e504de99ab3ce",
-    "push": "verified by exact ls-remote hash",
-    "production": "not verified",
-    "receipt": "sequential-release-adult-pn-expansion-2026-10-01.json"
+    "commit": null,
+    "push": "pending",
+    "production": "not verified"
   },
   "limits": [
-    "Whole adult clinical PN module and Chapter 11 remain reviewing.",
-    "Book-only authorization requires explicit source exception before opening the existing outside PN safety references.",
-    "Preserve all 24 retained teaching sections, six figures/checks and eight historical references; their retention is not new source verification.",
-    "Checklist entry 15 remains reviewing; completed checklist count 14."
-  ],
-  "subsequentScopedReviews": [
-    {
-      "evidence": "parenteral-nutrition-retained-source-review.json",
-      "scope": "133-item follow-up; historical 130-item snapshot, hashes and release retained."
-    }
+    "Whole adult PN and Chapter 11 remain reviewing.",
+    "Source verified 88/133 does not establish the other 45 items, all retained paragraphs or figures.",
+    "Two retained filter/USP discrepancies await explicit user source exception; no outside reference opened.",
+    "Checklist completed count remains 14; entry 15 remains reviewing.",
+    "Search absence and successful runtime grading are not clinical provenance proof."
   ]
 }

@@ -12,7 +12,7 @@ const core = [
   q("001", "Which finding most strongly supports parenteral nutrition?", ["Severe malnutrition with complete intestinal obstruction and no usable enteral route", "A central line without a nutrition deficit", "One missed meal", "Adequate oral intake"], 0, "PN is justified when a meaningful nutrition need cannot be met through the gastrointestinal tract.", "pn-decision"),
   q("002", "Which principle should be evaluated before starting parenteral nutrition?", ["Whether oral or enteral delivery can safely meet the need", "Whether the patient prefers a particular bag color", "Whether a central line is convenient", "Whether albumin is below one fixed threshold"], 0, "The least invasive effective route remains preferred when the gut is usable.", "pn-decision"),
   q("003", "Which condition is a common indication for parenteral nutrition?", ["Short bowel syndrome with inadequate absorption", "Stable constipation with adequate intake", "Controlled hypertension", "Uncomplicated seasonal allergies"], 0, "Severe malabsorption after extensive intestinal loss can make intravenous nutrition necessary.", "pn-decision"),
-  q("004", "A well-nourished stable adult is expected to resume adequate enteral intake tomorrow. What is the best approach?", ["Continue assessment rather than automatically starting PN for a brief interruption", "Start indefinite central PN", "Place a tunneled catheter immediately", "Provide full energy despite uncontrolled metabolic abnormalities"], 0, "A brief interruption in a stable, well-nourished adult usually does not justify immediate PN.", "pn-decision"),
+  q("004", "A well-nourished stable adult has had a one-day interruption in adequate intake and is expected to resume adequate enteral intake tomorrow. What is the best approach?", ["Continue assessment rather than automatically starting PN for a brief interruption", "Start indefinite central PN", "Place a tunneled catheter immediately", "Provide full energy despite uncontrolled metabolic abnormalities"], 0, "A brief interruption in a stable, well-nourished adult usually does not justify immediate PN.", "pn-decision"),
   q("005", "How does severe malnutrition affect PN timing when the gut cannot be used?", ["It can support earlier initiation after safety issues are addressed", "It always requires a fourteen-day delay", "It removes refeeding risk", "It guarantees tolerance of full energy"], 0, "Higher nutrition risk can justify earlier support, but initiation still must account for refeeding and instability.", "pn-decision"),
   q("006", "Which finding should delay aggressive PN advancement?", ["Uncontrolled shock with severe electrolyte abnormalities", "A stable catheter and corrected electrolytes", "A documented nutrition goal", "Reliable monitoring capacity"], 0, "Hemodynamic and metabolic instability increases risk from immediate full-dose delivery.", "pn-decision"),
   q("007", "What makes a high-output fistula a possible PN indication?", ["Inability to use distal bowel while losses prevent adequate enteral absorption", "The presence of any skin opening", "A normal oral diet", "A low heart rate alone"], 0, "Route anatomy and losses can prevent adequate gastrointestinal delivery.", "pn-decision"),
@@ -499,6 +499,45 @@ const bookReviewCases = [
     "rationale": "180 x 1.1 = 198 kcal per weekly dose; 198/7 = 28.3 kcal/day to the nearest tenth. The average does not change the weekly schedule.",
     "reviewHref": "#macronutrient-design",
     "id": "parenteral-nutrition-book-030"
+  },
+  {
+    "id": "parenteral-nutrition-book-031",
+    "question": "Which container interaction does the supplied book specifically identify for insulin?",
+    "choices": [
+      "It is converted into a lipid by glass",
+      "It dissolves every plastic container",
+      "It adsorbs to PVC",
+      "It cannot interact with any IV container"
+    ],
+    "answer": 2,
+    "rationale": "The source states that insulin adsorbs to PVC. Adsorption is adherence to a surface, rather than absorption into the container.",
+    "reviewHref": "#monitoring-transition"
+  },
+  {
+    "id": "parenteral-nutrition-book-032",
+    "question": "Which solution color is listed for multivitamins for infusion in the source IV-principles table?",
+    "choices": [
+      "Blue",
+      "Red",
+      "Brown",
+      "Yellow"
+    ],
+    "answer": 3,
+    "rationale": "The table lists multivitamins for infusion as yellow. This identifies the ingredient example; it does not prove final PN compatibility or absence of particles.",
+    "reviewHref": "#compounding-safety"
+  },
+  {
+    "id": "parenteral-nutrition-book-033",
+    "question": "Which quantity verification method does the source prefer during sterile compounding?",
+    "choices": [
+      "The pharmacist checks the actual product volume in the syringe before compounding continues",
+      "An empty syringe is pulled back later to a remembered volume",
+      "The final bag color is used to infer each ingredient volume",
+      "Only the empty vial labels are checked after all ingredients are combined"
+    ],
+    "answer": 0,
+    "rationale": "The book prefers seeing the actual volume before transfer. The empty-syringe pull-back method relies on memory and is not recommended.",
+    "reviewHref": "#compounding-safety"
   }
 ];
 
@@ -512,6 +551,6 @@ export const parenteralNutritionQuestionBank = [
   ...bookReviewCases,
 ];
 
-if (parenteralNutritionQuestionBank.length !== 130) {
-  throw new Error(`Parenteral nutrition question bank must contain 130 questions, found ${parenteralNutritionQuestionBank.length}.`);
+if (parenteralNutritionQuestionBank.length !== 133) {
+  throw new Error(`Parenteral nutrition question bank must contain 133 questions, found ${parenteralNutritionQuestionBank.length}.`);
 }
