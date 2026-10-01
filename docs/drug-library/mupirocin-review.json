@@ -1,0 +1,585 @@
+{
+  "slug": "mupirocin",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "A human topical antibiotic reference separating impetigo ointment, infected-traumatic-lesion cream, and separately identified guideline uses. All eight blueprint sections reviewed. Product-specific focused monograph; not an exhaustive adverse-event catalog.",
+  "sources": [
+    {
+      "id": "ointment",
+      "title": "Mupirocin ointment · Human topical prescribing information",
+      "publisher": "DailyMed / Sun Pharmaceutical Industries",
+      "note": "SPL version 11, effective 20250707; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=900bb675-2f03-47e3-854e-257ec4831332",
+      "checked": "2026-10-01",
+      "version": "SPL version 11, effective 20250707; current public product labeling.",
+      "spl_version": "11",
+      "spl_effective_time": "20250707",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/900bb675-2f03-47e3-854e-257ec4831332.xml",
+      "downloaded_xml_sha256": "33861ee11c5de61067f31007aa7c41d9defbf32ff67134614dc68a4a55728189",
+      "regulatory_identity": {
+        "labeler": [
+          "Sun Pharmaceutical Industries, Inc."
+        ],
+        "approval_identifiers": [
+          "ANDA065170"
+        ],
+        "status_note": "Exact human product/route/formulation checked. Label presence or NDC does not establish current stock availability."
+      }
+    },
+    {
+      "id": "cream",
+      "title": "Mupirocin calcium cream · Human topical prescribing information",
+      "publisher": "DailyMed / Sun Pharmaceutical Industries",
+      "note": "SPL version 3, effective 20260410; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6719ffba-3430-4fa9-b65b-c5c195ee1b35",
+      "checked": "2026-10-01",
+      "version": "SPL version 3, effective 20260410; current public product labeling.",
+      "spl_version": "3",
+      "spl_effective_time": "20260410",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/6719ffba-3430-4fa9-b65b-c5c195ee1b35.xml",
+      "downloaded_xml_sha256": "b9f03823e081728b318b00f5874975a998f59a7abeb5fc05c210fa3372d4ed2a",
+      "regulatory_identity": {
+        "labeler": [
+          "Sun Pharmaceutical Industries, Inc."
+        ],
+        "approval_identifiers": [
+          "ANDA207116"
+        ],
+        "status_note": "Exact human product/route/formulation checked. Label presence or NDC does not establish current stock availability."
+      }
+    },
+    {
+      "id": "idsa",
+      "title": "IDSA · Skin and soft tissue infection guideline",
+      "publisher": "Infectious Diseases Society of America",
+      "note": "2014 guideline, identified as current on the public guideline page; impetigo/ecthyma and recurrent abscess sections.",
+      "url": "https://www.idsociety.org/practice-guideline/skin-and-soft-tissue-infections/",
+      "checked": "2026-10-01",
+      "version": "2014 guideline, identified as current on the public guideline page; impetigo/ecthyma and recurrent abscess sections."
+    }
+  ],
+  "assertion_to_source": [
+    {
+      "section_id": "indications",
+      "card_title": "Labeled skin indications",
+      "assertions": [
+        "The 2% ointment treats impetigo caused by susceptible S. aureus or S. pyogenes. The 2% cream treats secondarily infected traumatic skin lesions caused by those susceptible organisms, limited to lesions up to 10 cm long or 100 cm² in area. Neither skin product is labeled for intranasal, ophthalmic, or other mucosal use."
+      ],
+      "support": [
+        {
+          "source_id": "ointment",
+          "sections": [
+            "1",
+            "2"
+          ]
+        },
+        {
+          "source_id": "cream",
+          "sections": [
+            "1",
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "indications",
+      "card_title": "Clinical selection and decolonization scope",
+      "assertions": [
+        "IDSA supports topical therapy for selected impetigo, while numerous lesions, outbreaks, or ecthyma can require systemic therapy. For recurrent S. aureus infection, it describes a combined five-day intranasal mupirocin, chlorhexidine, and personal-item decontamination option with weak/low-quality support. That guidance does not authorize applying the selected skin products inside the nose; nasal product availability, exact formulation, age limits, and any off-label use require a separate clinician/pharmacist review."
+      ],
+      "support": [
+        {
+          "source_id": "idsa",
+          "sections": [
+            "Impetigo and ecthyma",
+            "Recurrent skin abscesses"
+          ]
+        },
+        {
+          "source_id": "ointment",
+          "sections": [
+            "2",
+            "5.6"
+          ]
+        },
+        {
+          "source_id": "cream",
+          "sections": [
+            "2",
+            "5.6"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Product-label regimens",
+      "assertions": [
+        "Apply with a cotton swab or gauze pad; the area may be covered with gauze. Wash hands before and after use. These are the selected product-label regimens.",
+        "Ointment 2%, impetigo | Small amount three times daily for up to 10 days.",
+        "Cream 2%, infected traumatic lesion | Small amount three times daily for 10 days."
+      ],
+      "support": [
+        {
+          "source_id": "ointment",
+          "sections": [
+            "2",
+            "17"
+          ]
+        },
+        {
+          "source_id": "cream",
+          "sections": [
+            "2",
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Guideline regimen for impetigo",
+      "assertions": [
+        "IDSA’s current-listed 2014 SSTI guideline recommends topical mupirocin twice daily for five days for selected bullous/nonbullous impetigo. This differs from the ointment label’s three-times-daily course; the prescriber should explicitly select and document the regimen. It is not a universal cream or decolonization schedule."
+      ],
+      "support": [
+        {
+          "source_id": "idsa",
+          "sections": [
+            "Impetigo and ecthyma, recommendation 2a"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Administration limits",
+      "assertions": [
+        "Avoid eyes, nose, mouth, vagina, and other mucosal surfaces. Do not layer with other lotions, creams, or ointments; concurrent application has not been studied. Do not extend treatment without reassessment because nonsusceptible organisms may overgrow."
+      ],
+      "support": [
+        {
+          "source_id": "ointment",
+          "sections": [
+            "2",
+            "5.2",
+            "5.5",
+            "5.6",
+            "12.3"
+          ]
+        },
+        {
+          "source_id": "cream",
+          "sections": [
+            "2",
+            "5.2",
+            "5.5",
+            "5.6",
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Warnings and precautions",
+      "assertions": [
+        "Stop the product for sensitization or severe local irritation; obtain alternative infection treatment. Anaphylaxis, angioedema, and generalized allergy require immediate care. Avoid eye contact and rinse thoroughly with water after accidental exposure. Persistent or severe diarrhea during or after antibacterial treatment warrants assessment for C. difficile-associated disease. Prolonged use can favor nonsusceptible bacteria or fungi.",
+        "The skin ointment contains polyethylene glycol (PEG). Do not use it where large quantities of PEG may be absorbed from damaged skin/open wounds, especially with moderate or severe renal impairment. The ointment should not be used with IV cannulae or at central IV sites because of fungal-infection and resistance concerns. These PEG/cannula warnings must not be transferred to the different cream vehicle."
+      ],
+      "support": [
+        {
+          "source_id": "ointment",
+          "sections": [
+            "5.1–5.8",
+            "11"
+          ]
+        },
+        {
+          "source_id": "cream",
+          "sections": [
+            "5.1–5.6",
+            "11"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Contraindications",
+      "assertions": [
+        "Known hypersensitivity to mupirocin or any formulation excipient is a contraindication. Route restrictions and PEG-risk avoidance retain their label dosing/warning classification rather than becoming invented class-wide contraindications."
+      ],
+      "support": [
+        {
+          "source_id": "ointment",
+          "sections": [
+            "4",
+            "2",
+            "5"
+          ]
+        },
+        {
+          "source_id": "cream",
+          "sections": [
+            "4",
+            "2",
+            "5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Boxed warning status",
+      "assertions": [
+        "Neither selected human skin-product label contains a boxed warning. Hypersensitivity, irritation, diarrhea, overgrowth, and the ointment’s vehicle risks still require counseling."
+      ],
+      "support": [
+        {
+          "source_id": "ointment",
+          "sections": [
+            "Full label / highlights",
+            "5"
+          ]
+        },
+        {
+          "source_id": "cream",
+          "sections": [
+            "Full label / highlights",
+            "5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Adverse reactions and accidental exposure",
+      "assertions": [
+        "Ointment commonly reports local burning, stinging, pain, or itching; cream trials report headache, rash, and nausea, with local reactions also possible. Severe systemic allergy is reported after marketing; its frequency is unknown. Accidental swallowing or excessive application needs product-specific medical or poison-center assessment; the labels supply no home overdose remedy."
+      ],
+      "support": [
+        {
+          "source_id": "ointment",
+          "sections": [
+            "6",
+            "Patient information"
+          ]
+        },
+        {
+          "source_id": "cream",
+          "sections": [
+            "6",
+            "Patient information"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Topical combinations",
+      "assertions": [
+        "Do not apply concurrently with other lotions, creams, or ointments, as their effect on mupirocin exposure has not been studied. Do not dilute or mix the preparation without verified product-specific instructions."
+      ],
+      "support": [
+        {
+          "source_id": "ointment",
+          "sections": [
+            "2",
+            "12.3",
+            "Patient information"
+          ]
+        },
+        {
+          "source_id": "cream",
+          "sections": [
+            "2",
+            "12.3",
+            "Patient information"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Systemic interaction evidence",
+      "assertions": [
+        "These skin-product labels do not establish a systemic drug-interaction dosing algorithm. Low intact-skin absorption does not justify extrapolating safety to extensive wounds, mucosal use, or another vehicle. Review other medicines and topical exposures with the treating clinician."
+      ],
+      "support": [
+        {
+          "source_id": "ointment",
+          "sections": [
+            "12.3",
+            "5",
+            "Patient information"
+          ]
+        },
+        {
+          "source_id": "cream",
+          "sections": [
+            "12.3",
+            "5",
+            "Patient information"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pregnancy and lactation",
+      "assertions": [
+        "Human pregnancy data are insufficient to establish drug-associated risk; intact-skin systemic absorption is minimal, but that does not prove fetal safety. Milk transfer, infant effects, and milk-production effects are unknown. Weigh treatment need and breastfeeding benefits; wash a treated breast/nipple thoroughly before feeding to prevent direct oral exposure."
+      ],
+      "support": [
+        {
+          "source_id": "ointment",
+          "sections": [
+            "8.1",
+            "8.2"
+          ]
+        },
+        {
+          "source_id": "cream",
+          "sections": [
+            "8.1",
+            "8.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Children and older adults",
+      "assertions": [
+        "Ointment safety/effectiveness is established at age 2 months–16 years; cream at age 3 months–16 years. Younger infants are unestablished. Cream trials included a small older-adult subgroup without an overall difference in efficacy or safety; this does not establish every geriatric wound situation."
+      ],
+      "support": [
+        {
+          "source_id": "ointment",
+          "sections": [
+            "8.4"
+          ]
+        },
+        {
+          "source_id": "cream",
+          "sections": [
+            "8.4",
+            "8.5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Renal and hepatic considerations",
+      "assertions": [
+        "Neither selected skin label provides a renal/hepatic milligram adjustment schedule. The ointment’s PEG base is renally excreted after absorption: avoid situations allowing large PEG absorption, particularly in moderate/severe renal impairment. The cream has a different vehicle; do not assume that it has the same PEG warning or that it treats extensive wounds."
+      ],
+      "support": [
+        {
+          "source_id": "ointment",
+          "sections": [
+            "5.7",
+            "11"
+          ]
+        },
+        {
+          "source_id": "cream",
+          "sections": [
+            "1",
+            "11",
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Mechanism and resistance",
+      "assertions": [
+        "Mupirocin reversibly binds bacterial isoleucyl-tRNA synthetase, inhibiting protein synthesis, and is bactericidal at topical concentrations. Altered or acquired synthetases can confer resistance; the label notes more frequent resistance among MRSA than susceptible staphylococci and recommends appropriate susceptibility testing before MRSA use. The distinct mechanism does not eliminate acquired resistance."
+      ],
+      "support": [
+        {
+          "source_id": "ointment",
+          "sections": [
+            "12.1",
+            "12.4"
+          ]
+        },
+        {
+          "source_id": "cream",
+          "sections": [
+            "12.1",
+            "12.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Pharmacokinetics",
+      "assertions": [
+        "Absorption through intact skin is minimal. Cream studies on larger damaged lesions detected some absorption via urinary monic acid; those studies do not enlarge the labeled lesion-size indication. Absorbed mupirocin is rapidly converted to inactive monic acid, predominantly cleared by the kidneys. Pharmacokinetic IV-study data do not make either skin product an injectable medicine."
+      ],
+      "support": [
+        {
+          "source_id": "ointment",
+          "sections": [
+            "12.3"
+          ]
+        },
+        {
+          "source_id": "cream",
+          "sections": [
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Monitoring",
+      "assertions": [
+        "Review diagnosis, extent of lesions, response at 3–5 days, local allergy/irritation, diarrhea, and evidence of nonsusceptible infection. For ointment, assess wound extent and renal/PEG risk before use. There is no routine serum-concentration target or universal laboratory schedule in these topical labels."
+      ],
+      "support": [
+        {
+          "source_id": "ointment",
+          "sections": [
+            "2",
+            "5",
+            "12.3"
+          ]
+        },
+        {
+          "source_id": "cream",
+          "sections": [
+            "2",
+            "5",
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Patient counseling",
+      "assertions": [
+        "Use only on the prescribed skin site and follow the selected course. Wash hands, use a swab/gauze, and keep away from eyes and mucosa. Do not share or mix with other topical products. Stop and seek help for severe irritation/rash or systemic allergy, and report significant diarrhea. Tell the clinician if breastfeeding or treating large/open wounds; wash treated breast/nipple skin before feeding."
+      ],
+      "support": [
+        {
+          "source_id": "ointment",
+          "sections": [
+            "2",
+            "5",
+            "8.2",
+            "17",
+            "Patient information"
+          ]
+        },
+        {
+          "source_id": "cream",
+          "sections": [
+            "2",
+            "5",
+            "8.2",
+            "17",
+            "Patient information"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Representative products",
+      "assertions": [
+        "The selected Sun-distributed human ointment is 20 mg/g in a PEG water-miscible base; its 22-g tube is NDC 51672-1312-0. The white Sun-distributed cream contains mupirocin calcium equivalent to 20 mg mupirocin/g in an oil/water emulsion; its 15-g tube is NDC 51672-1370-1. Verify the manufacturer/package rather than assuming every 2% product has the same vehicle."
+      ],
+      "support": [
+        {
+          "source_id": "ointment",
+          "sections": [
+            "11",
+            "16"
+          ]
+        },
+        {
+          "source_id": "cream",
+          "sections": [
+            "11",
+            "16"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Dosage forms and strengths",
+      "assertions": [
+        "Covered human skin products are ointment 2% (20 mg/g), with 15-, 22-, and 30-g tubes in the selected label, and cream 2% (20 mg/g), in 15- and 30-g tubes. Nasal-specific ointment, compounded/off-label decolonization preparations, and veterinary products are outside this product review."
+      ],
+      "support": [
+        {
+          "source_id": "ointment",
+          "sections": [
+            "3",
+            "16",
+            "5.6"
+          ]
+        },
+        {
+          "source_id": "cream",
+          "sections": [
+            "3",
+            "16",
+            "5.6"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Storage and handling",
+      "assertions": [
+        "Store both skin products at 20–25°C. Do not freeze the cream. Keep away from children, and retain the exact package directions; the labels do not provide a universal compounded preparation shelf life."
+      ],
+      "support": [
+        {
+          "source_id": "ointment",
+          "sections": [
+            "16",
+            "Patient information"
+          ]
+        },
+        {
+          "source_id": "cream",
+          "sections": [
+            "16",
+            "Patient information"
+          ]
+        }
+      ]
+    }
+  ],
+  "material_errors": [],
+  "gaps": [],
+  "limitations": [
+    "Nasal-specific product approval/current retail availability and its full regimen/age restrictions are not established in this topical-product scope; no skin-product nasal substitution is recommended.",
+    "Veterinary products are excluded. The inventory includes a veterinary Sun ointment record that was identified and not used.",
+    "IDSA’s explicitly attributed five-day twice-daily impetigo regimen differs from the selected ointment label; prescriber selection is explicit."
+  ],
+  "validation": {
+    "schema": "validateMonograph: []",
+    "contract": "Exact APAP eight sections, four Safety core cards, three Product core cards, warning open/tone and three hero tuples. Tables have two short spaced headings with naturally wrapping prose.",
+    "independent_review": "Requested separately; no approval implied."
+  },
+  "full_source_review": {
+    "method": "Public full XML prescribing sections and patient instructions reviewed; authoritative guideline/NLM text separately reviewed where cited.",
+    "paywall_access": "None claimed.",
+    "checked_date": "2026-10-01"
+  }
+}

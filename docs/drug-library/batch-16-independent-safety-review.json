@@ -1,0 +1,850 @@
+{
+  "reviewDate": "2026-10-01",
+  "scope": "Independent targeted critical-assertion primary-source review. Only enumerated assertions independently verified; not exhaustive second clinical signoff, browser QA or build verification.",
+  "status": "completed",
+  "profiles": [
+    {
+      "drug": "mupirocin",
+      "fileSha256": "023ffeb12c2ab58b4cb0e5522e8e115d696bc724edefd3a8cd9ba29f6da4648b",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Human skin2%impetigo small amountTIDup to10days, reassess3–5days, notintranasal/ocular/mucosal orconcurrentother topicals. Hypersensitivitycontra; PEGlargeabsorptionriskespeciallymoderate/severerenalimpairment andIVcannula/centralsiteavoidance specificallyointment.",
+          "sourceId": "ointment",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=900bb675-2f03-47e3-854e-257ec4831332",
+          "sourceSection": "Sections1–5",
+          "access": "retained-full-primary-SPL-XML-and-extracted-sections-read; matching public DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Human2%cream infected traumaticlesionTID10days, earlyreassessment andskin-only restrictions; separatevehicle so noPEGwarningtransplant.",
+          "sourceId": "cream",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6719ffba-3430-4fa9-b65b-c5c195ee1b35",
+          "sourceSection": "Sections1–5",
+          "access": "retained-full-primary-SPL-XML-and-extracted-sections-read; matching public DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Current-listed2014IDSAselectedbullous/nonbullousimpetigo BID5days distinctfromproduct-labelTID; numerouslesions/outbreakoral,ecthymaoral; notuniversaldecolonization/cream regimen.",
+          "sourceId": "idsa",
+          "sourceUrl": "https://www.idsociety.org/practice-guideline/skin-and-soft-tissue-infections/",
+          "sourceSection": "Impetigo and ecthyma recommendations1–2",
+          "access": "direct-full-public-primary-guideline-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Ointment pediatric established2months–16years, youngerunestablished, distinct from cream.",
+          "sourceId": "ointment",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=900bb675-2f03-47e3-854e-257ec4831332",
+          "sourceSection": "Section8.4",
+          "access": "retained-full-primary-SPL-XML-and-extracted-sections-read",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Cream pediatric established3months–16years, notoint2monthscope.",
+          "sourceId": "cream",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6719ffba-3430-4fa9-b65b-c5c195ee1b35",
+          "sourceSection": "Section8.4",
+          "access": "retained-full-primary-SPL-XML-and-extracted-sections-read",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and accidental exposure"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "mupirocin-ointment": {
+          "path": "/tmp/nas-drug-sources/mupirocin-ointment.xml",
+          "sha256": "33861ee11c5de61067f31007aa7c41d9defbf32ff67134614dc68a4a55728189"
+        },
+        "mupirocin-cream": {
+          "path": "/tmp/nas-drug-sources/mupirocin-cream.xml",
+          "sha256": "b9f03823e081728b318b00f5874975a998f59a7abeb5fc05c210fa3372d4ed2a"
+        }
+      }
+    },
+    {
+      "drug": "verapamil",
+      "fileSha256": "60d864fc4f3003f30730ab16fc44a047d16c813a199e796710accdae1a517120",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "IRangina80–120TID/sensitive40TID, HTNstart80TID/sensitive40TID; chronicdigitalizedAF240–320/day3–4div andPSVT240–480/day3–4div; noexceed480 orclaimaddedHTNbenefit>360.",
+          "sourceId": "ir",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0343397-897b-46d6-943f-a87e07e1de10",
+          "sourceSection": "Dosage and Administration",
+          "access": "retained-full-primary-SPL-XML-and-extracted-sections-read; matching public DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "FoodwithERtabletinitial180AM/sensitive120, weeklytitration240AM→180BIDor240AM120PM→240q12h; same-totalIRswitchonlyselectedtablet notallERsystems.",
+          "sourceId": "er",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e36e485f-fbed-4e30-9a63-984931f2e54e",
+          "sourceSection": "Dosage and Administration",
+          "access": "retained-full-primary-SPL-XML-and-extracted-sections-read; matching public DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "PMcapsuleusual200bedtime/sensitive100→300→400, wholeorentirepelletsone tbspnonhotapplesauceimmediatelythen coolwater; no chew/store/subdivide.",
+          "sourceId": "pm",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5f665d08-e1e4-422a-88c2-d8834abf9e1a",
+          "sourceSection": "Sections2.1–2.2",
+          "access": "retained-full-primary-SPL-XML-and-extracted-sections-read; matching public DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Adult5–10mg0.075–0.15mg/kg≥2min/older≥3min; repeat10mg30min then individualized. Infant0.1–0.2mg/kgusual0.75–2mg;age1–15initial0.1–0.3usual2–5max5/repeat30minmax10. Rarefatalinfantcollapse explicit withcontinuousECG/BP/resuscitation.",
+          "sourceId": "iv",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c993365-1b62-4524-e781-d307f28f63bc",
+          "sourceSection": "Dosage;Pediatric Use",
+          "access": "retained-full-primary-SPL-XML-and-extracted-sections-read; matching public DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Severehypotension/shock, unpacedAVblock/sicksinus, severeCHFunlesssecondarytreatableSVT, IVbetablockerswithin hours, preexcitedAF/flutter, VTandhypersensitivityformalcontra; nooral-to-IVconversion.",
+          "sourceId": "iv",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c993365-1b62-4524-e781-d307f28f63bc",
+          "sourceSection": "Contraindications",
+          "access": "retained-full-primary-SPL-XML-and-extracted-sections-read; matching public DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Currentlovastatinwithverapamilstart10mg/max20mgday; olderverapamil40mgcapconflict explicitlyflagged and stricter currentlovastatin instructionsretained.",
+          "sourceId": "lovastatin",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=22c9f2d8-7bcd-4415-bbc8-505720033966",
+          "sourceSection": "Dosage:Concomitant verapamil",
+          "access": "retained-full-primary-SPL-XML-and-extracted-sections-read; matching public DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Severe hepatic impairment approx30%normal oral dose, monitorPR/excessiveeffects; renal impairment monitoringwithoutuniversalpercentage, notIVbolusconversion.",
+          "sourceId": "pm",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5f665d08-e1e4-422a-88c2-d8834abf9e1a",
+          "sourceSection": "Sections8.6–8.7",
+          "access": "retained-full-primary-SPL-XML-and-extracted-sections-read",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "verapamil-ir": {
+          "path": "/tmp/nas-drug-sources/verapamil-ir.xml",
+          "sha256": "e27ed2cfc6fcae6e6957d2f51972ef2a2834b516a1e5cde43930e6eeb774e636"
+        },
+        "verapamil-er": {
+          "path": "/tmp/nas-drug-sources/verapamil-er.xml",
+          "sha256": "ae1ac73a485d07acd85ec9ec05f6d6f49072249b14bb768dfe2919204f8f2e60"
+        },
+        "verapamil-pm": {
+          "path": "/tmp/nas-drug-sources/verapamil-pm.xml",
+          "sha256": "c4006dec79dc76edbf4e2a5985543f5568bb11c8adea1fb0c6a2441e0741d9d5"
+        },
+        "verapamil-iv": {
+          "path": "/tmp/nas-drug-sources/verapamil-iv.xml",
+          "sha256": "e3477310d3f12486114afe9f2a91f582bd7228d0f7c352bacdf40d90db4a4234"
+        },
+        "lovastatin-verapamil": {
+          "path": "/tmp/nas-drug-sources/lovastatin-verapamil.xml",
+          "sha256": "69c574ffcb82629e95d5cf2b9f8ee53ac561568a2586d6fa5da45b8041361066"
+        }
+      }
+    },
+    {
+      "drug": "prazosin",
+      "fileSha256": "4800fc8b60308fccb976feff8ad996e6c22efeddf6810edf380a31297b6c4070",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "LabeledHTN1mgBID/TID start, slowtitrateusual6–15mg/daydivided→20/selectedupto40notusualmaxefficacy; addeddiuretic/antihypertensivereduceto1–2mgTIDretitrate, PDE5loweststart. Quinazoline/prazosin/ingredienthypersensformalcontra.",
+          "sourceId": "prazani",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35c7aa71-6171-4ba5-916c-384c28e5f5c1",
+          "sourceSection": "Dosage;Contraindications",
+          "access": "retained-full-primary-SPL-XML-and-extracted-sections-read; matching public DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Firstdose30–90minsyncope,1mgonlystart, avoiddriving/hazards24h afterstart/increase, priapism>4hoursurgent; no fixedrenal/hepaticpercentageinvented.",
+          "sourceId": "prazani",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35c7aa71-6171-4ba5-916c-384c28e5f5c1",
+          "sourceSection": "Warnings;Patient information",
+          "access": "retained-full-primary-SPL-XML-and-extracted-sections-read; matching public DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "GuidelineRec32weakforPTSDnightmares, AppendixB1mgbedtitrate3–20bedtime; recommendation18weakagainstprazosinMONOTHERAPYforoverallPTSD distinctfromnightmaretarget. Offlabelrange notautomatic escalation.",
+          "sourceId": "va2023",
+          "sourceUrl": "https://healthquality.va.gov/HEALTHQUALITY/guidelines/MH/ptsd/VA-DoD-CPG-PTSD-Full-CPG-Edited-111624-V5-81825.pdf",
+          "sourceSection": "Recommendations18/32;rationalep62–63;AppendixBtableB-1",
+          "access": "retained-full-official-primary-guideline-PDF-extracted-text-read",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "prazani": {
+          "path": "/tmp/nas-drug-sources/prazani.xml",
+          "sha256": "af9d64b94e7853112cd0439ca9c909f841285db769d750dc70ca345a494e88aa"
+        },
+        "prazprasco": {
+          "path": "/tmp/nas-drug-sources/prazprasco.xml",
+          "sha256": "6135df37969451ee286c2bb35143d257a266e8b959c972afd9ac3e6d51696b78"
+        },
+        "va2023": {
+          "path": "/tmp/nas-drug-sources/va2023.pdf",
+          "sha256": "dee4846f80f105b497cad73c6f2361f1583193082b153e4f52ccaa4b74ddff92"
+        }
+      }
+    },
+    {
+      "drug": "ciprofloxacin",
+      "fileSha256": "2556b384a6ba8e8c9e9ec696bf36c215b5d1b68f7dfba9704b3de19b6b291394",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "SelectedadultIRskin/resp500–750q12h7–14d,bonejoint4–8wk,abd500q12withmetro7–14d,diarrhea500q12 5–7d/typhoid10d,prostatitis500q12 28d,UTI250–500q12 7–14d,cystitis250q12 3d/sinus500q12 10dreservedwhennoalternatives,anthrax500q12 60d/plague500–750q12 14d; label reference notuniversalcourse.",
+          "sourceId": "ciprooral",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=888dc7f9-ad9c-4c00-8d50-8ddfd9bd27c0",
+          "sourceSection": "Sections1,2.1",
+          "access": "retained-full-primary-SPL-XML-and-extracted-sections-read; matching public DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Adultpremix60mininfusionNOrapidpush;400q8–12skin/bone/respwithrespective7–14d/4–8wk,abd400q12withmetro7–14,nosocomial400q8 10–14,neutrop400q8withpiper50mg/kgq4h7–14,UTI200–400q8–12 7–14,prostat/sinus400q12 28/10,anthrax400q12 60/plague400q8–12 14. IR250q12↔IV200q12/500q12↔400q12/750q12↔400q8 exposureequivalence clinicallyscoped.",
+          "sourceId": "ciproiv",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f406e796-17d9-4465-b8a7-00d966a4ba74",
+          "sourceSection": "Sections2.1,2.4–2.5",
+          "access": "retained-full-primary-SPL-XML-and-extracted-sections-read; matching public DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "PediatriccUTI1–17oral10–20mg/kgq12max750/dose10–21days;anthrax15mg/kgq12max50060d/plague15mg/kgq8–12max50014d birth–17; renaladult>50usual/30–50250–500q12/5–29250–500q18/HD-PD250–500q24afterdialysis;selectedsevereinfection750unit adjustedintervalscarefullymonitored.",
+          "sourceId": "ciprooral",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=888dc7f9-ad9c-4c00-8d50-8ddfd9bd27c0",
+          "sourceSection": "Sections2.2–2.3",
+          "access": "retained-full-primary-SPL-XML-and-extracted-sections-read; matching public DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "PedcUTI6–10mg/kgq8max40010–21d;anthrax10q12max40060d/plague10q8–12max40014d; IVrenal>30usual/5–29200–400q18–24 withoutinferredHDalgorithm; pediatricCrCl<50adjustmentunestablished.",
+          "sourceId": "ciproiv",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f406e796-17d9-4465-b8a7-00d966a4ba74",
+          "sourceSection": "Sections2.2–2.3",
+          "access": "retained-full-primary-SPL-XML-and-extracted-sections-read; matching public DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "IRcationseparation2hoursbefore/6after, avoiddairyalonebutmealallowed; missed<6hnextskip; suspend250/5or500/5,noaddedwater,shake15sec/co-packagedspoon,nochew/noNGfeedingtube. Tizanidine/hypersensformalcontra andsystemic disabling adversebox.",
+          "sourceId": "ciprooral",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=888dc7f9-ad9c-4c00-8d50-8ddfd9bd27c0",
+          "sourceSection": "Sections2.4–2.6,4;Box",
+          "access": "retained-full-primary-SPL-XML-and-extracted-sections-read; matching public DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Eye0.3ulcer2dropsq15minfirst6h→q30restday1→hourlyday2→q4hday3–14/extendedonlyunhealed;conjunct1–2q2awake2d→q4awake5d; selectedsolutionallagesincludingneonates.",
+          "sourceId": "ciproeye",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab52b14d-345b-47ff-a832-465caddd3801",
+          "sourceSection": "Dosage;Pediatric Use",
+          "access": "retained-full-primary-SPL-XML-and-extracted-sections-read; matching public DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Eye0.3ointmenthalf-inchribbonTID2days→BID5days, unlikeintensiveulcerdrops; notbelow2established.",
+          "sourceId": "ciprooint",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=09ca5374-2a16-4a95-91b3-70591d78254e",
+          "sourceSection": "Dosage;Pediatric Use",
+          "access": "retained-full-primary-SPL-XML-and-extracted-sections-read; matching public DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Ear0.2single0.25mLcontainerBID~12h7days,warmhands≥1min/earup≥1min/singleusediscard;<1yearunestablished; noteye/injection.",
+          "sourceId": "ciproear",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51dde3f2-adb1-4ed8-83c6-1f63723a2529",
+          "sourceSection": "Sections2,4,8.4",
+          "access": "retained-full-primary-SPL-XML-and-extracted-sections-read; matching public DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "AdultclinicallyimprovingeffectivecUTI5–7dayFQconditional, countfirsteffectiveday, excludedcatheter/sepsis/immune/CKD/abscess/obstruction/prostatitis/proceduregroupsindividualized; notchild/courseuniversalshortening.",
+          "sourceId": "idsauti2025",
+          "sourceUrl": "https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections/",
+          "sourceSection": "Duration recommendationI;definitions/comments",
+          "access": "direct-full-public-primary-guideline-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Oldoral250singlegonorrhealabelnotroutineempiric;selectedasymptomaticwildtypegyrAsusceptibility500oralsingle inCDCdrugallergysection separatelyattributed.",
+          "sourceId": "cdcgon2021",
+          "sourceUrl": "https://www.cdc.gov/std/treatment-guidelines/gonorrhea-adults.htm",
+          "sourceSection": "Drug allergy/intolerance/adverse reactions",
+          "access": "direct-full-public-primary-guideline-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [
+        {
+          "id": "current-generic-ER-PI",
+          "status": "unresolved-non-actionable-formulation-review-gap",
+          "classification": "Outside published executable regimens; no confirmed material clinical error identified in enumerated bounded-profile assertions.",
+          "actualPublishedMitigation": "Description, overview and product explicitly disclose unavailable current generic ER PI; no ER dosing, renal adjustment, conversion, imprint or storage directions published; no whole-ingredient ER verification asserted.",
+          "verifiedEvidence": "Retained official FDA API ANDA077701 product001 Prescription/product002Discontinued and labeling supplement17 AP20240920; current source archive raw JSON independently inspected. Live web API open returned internal error; no fresh successful direct fetch claimed.",
+          "integrationAssessment": "Bounded profile may be assessed for integration with gap preserved; current ER formulation clinical directions remain unverified. Parent owns final release gate."
+        }
+      ],
+      "retainedEvidence": {
+        "ciprooral": {
+          "path": "/tmp/nas-drug-sources/ciprooral.xml",
+          "sha256": "e4f88d00e95859c7e595b06ca828c32c2ed8be25ed453ca0fd645fc537dd7111"
+        },
+        "ciproiv": {
+          "path": "/tmp/nas-drug-sources/ciproiv.xml",
+          "sha256": "3ede6a33daf82450fb4540b863bda8e845dedb8d9db2d75d6f4deaacc8367593"
+        },
+        "ciproeye": {
+          "path": "/tmp/nas-drug-sources/ciproeye.xml",
+          "sha256": "bfc6b6fd639f9c942cc6c166a401e37255b07fa258db7d03403a900aeb6a5101"
+        },
+        "ciprooint": {
+          "path": "/tmp/nas-drug-sources/ciprooint.xml",
+          "sha256": "79bbbf3921db6c5f49d273799038adc5e9f6ba1f10184a2d37b4fa0a86d0a153"
+        },
+        "ciproear": {
+          "path": "/tmp/nas-drug-sources/ciproear.xml",
+          "sha256": "e3e5d526401e419d1f1fd2d9d6000058d5d947d331a9db7904e6ce8d44cc7056"
+        },
+        "erapp": {
+          "path": "/tmp/nas-drug-sources/ciproer-generic-app.json",
+          "sha256": "0050815a3cffd15d9862417e3e70f15c0e4035d8359a20c3218d1d8f1dd34000"
+        }
+      }
+    },
+    {
+      "drug": "olanzapine",
+      "fileSha256": "e56f83d21c8343fc21d93a1f77c3ef1a0ae685e68c8cbe1383cbcd6152d61dcc",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Adult schizophrenia oral 5–10 mg daily start, target10 within days,5 mg steps at least weekly; bipolar mania mono10/15 start, adjunct10 start,5–20 daily range and steps no sooner24h; adolescent13–17 start2.5/5,target10,2.5/5 steps, >20 unestablished.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b418946a-1ab4-4d89-a012-d94fc361a3c4",
+          "sourceSection": "Sections2.1–2.2",
+          "access": "retained full primary SPL XML and extracted sections independently read; live matching DailyMed page opened for depot and IV sources",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Short-acting IM10 mg, selected5/7.5; elderly5/sensitive2.5. Repeat up to10 with orthostasis reassessment; safety above30/day, second<2h and third<4h aftersecond not established. Reconstitute2.1mL sterilewater, use within1h; noIV/SC and parenteral benzodiazepine coadministration not recommended.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b418946a-1ab4-4d89-a012-d94fc361a3c4",
+          "sourceSection": "Sections2.4,5.7",
+          "access": "retained full primary SPL XML and extracted sections independently read; live matching DailyMed page opened for depot and IV sources",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Relprevv oral target10: first8weeks210q2weeks or405q4 then150q2 or300q4; target15: first300q2 then210q2 or405q4; target20:300q2 both. Sensitive starting150q4 separate. Establish oral tolerability, deep gluteal only; supplied diluent; no oral-supplement algorithm invented.",
+          "sourceId": "depot",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=11544cba-64a9-49cb-8d74-da228053b252",
+          "sourceSection": "Sections2.1–2.2",
+          "access": "retained full primary SPL XML and extracted sections independently read; live matching DailyMed page opened for depot and IV sources",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Every injection requires continuous ≥3h observation in certified emergency-capable facility; confirm alert/oriented/no PDSS before release, escort destination and no driving/heavy machinery restday; enrolled prescriber/pharmacy/facility/patient; not dispensed directly to patient. Box also dementia mortality.",
+          "sourceId": "depot",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=11544cba-64a9-49cb-8d74-da228053b252",
+          "sourceSection": "Box;Sections2.1,5.1–5.3",
+          "access": "retained full primary SPL XML and extracted sections independently read; live matching DailyMed page opened for depot and IV sources",
+          "result": "agrees"
+        },
+        {
+          "assertion": "No formal contraindication with monotherapy; combination contraindications separate. Severe neutropenia ANC<1000 discontinue; metabolic glucose/lipid/weight monitoring, DRESS/NMS and orthostatic/cardiorespiratory risks retained.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b418946a-1ab4-4d89-a012-d94fc361a3c4",
+          "sourceSection": "Sections4,5.3–5.9",
+          "access": "retained full primary SPL XML and extracted sections independently read; live matching DailyMed page opened for depot and IV sources",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warnings · mortality and depot syndrome",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "zyprexa": {
+          "path": "/tmp/nas-drug-sources/zyprexa.xml",
+          "sha256": "73993fd57fcae66ee991ee16ba3e7985cf681fd6dfe243db89a02f4372b090aa"
+        },
+        "relprevv": {
+          "path": "/tmp/nas-drug-sources/relprevv.xml",
+          "sha256": "cad0021fff68769ce1d69a78a241404f638be3dd3f76c8ce6b1b34bdc73a4341"
+        }
+      }
+    },
+    {
+      "drug": "metronidazole",
+      "fileSha256": "2f12642724e43c7cdd3197d3201183ea99967bff57a369707907b3266720dae2",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Adult intestinal amebiasis750TID5–10days, liverabscess500or750TID5–10; pediatric35–50mg/kg PER DAY divided3 for10days, not per dose. Anaerobic oral7.5mg/kgq6 max4g/day usually7–10days. Severe ChildC oral50% reduction.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c90da73c-e48e-411a-bd75-0b107f1141cc",
+          "sourceSection": "Dosage;Severe hepatic impairment",
+          "access": "retained full primary SPL XML and extracted sections independently read; live matching DailyMed page opened for depot and IV sources",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Flagyl375 trich375BID7days; amebiasis750TID5–10. ChildC amebiasis375q8 for5–10/trich375q24 for7days product-specific; not copied to IV.",
+          "sourceId": "capsule",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a2883ca1-5a9a-4259-9d80-46ab67274384",
+          "sourceSection": "Dosage;Severe hepatic impairment",
+          "access": "retained full primary SPL XML and extracted sections independently read; live matching DailyMed page opened for depot and IV sources",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Adult anaerobic load15mg/kg over1h then7.5mg/kg over1h q6, first maintenance6h after START loading, max4g/day. Colorectal prophylaxis15 over30–60min finished~1h before surgery then7.5 at6/12h afterinitial, surgeryday only. Severe hepatic cautious lower doses/level monitoring, no numerical reduction inferred.",
+          "sourceId": "iv",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7187779a-1f4c-4607-af53-4119e324aad5",
+          "sourceSection": "Dosage and Administration",
+          "access": "retained full primary SPL XML and extracted sections independently read; live matching DailyMed page opened for depot and IV sources",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Intra-abdominal infection birth<4months PMA completed weeks23–<34:15load then7.5q12;34–40:15load then7.5q8;>40–48:15load then7.5q6. All firstmaintenance24h after START load. No unlisted PMA/older pediatric dose inferred.",
+          "sourceId": "iv",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7187779a-1f4c-4607-af53-4119e324aad5",
+          "sourceSection": "Dosage Table2",
+          "access": "retained full primary SPL XML and extracted sections independently read; live matching DailyMed page opened for depot and IV sources",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Vaginal0.75%5g37.5mg once or twice daily5days, once atbedtime; distinctfromoral anddermal.",
+          "sourceId": "vaginal",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94a83daa-6e34-419d-849a-6f18d3b8c586",
+          "sourceSection": "Dosage",
+          "access": "retained full primary SPL XML and extracted sections independently read; live matching DailyMed page opened for depot and IV sources",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Vaginal1.3% single5g65mg oncebedtime; ≥12 pediatric supported, under12 unestablished; not oral/ophthalmic/dermal.",
+          "sourceId": "nuvessa",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b6ff39d-f84b-43b3-9b07-c0521c6d7968",
+          "sourceSection": "Sections2,3,8.4",
+          "access": "retained full primary SPL XML and extracted sections independently read; live matching DailyMed page opened for depot and IV sources",
+          "result": "agrees"
+        },
+        {
+          "assertion": "CDC women500mg BID7days versus men2g single; vaginal gel not recommended for trich. Symptomatic pregnant women tested/treated regardless stage, explicitly distinguished from selected oral-label first-trimester trich contraindication requiring clinician resolution.",
+          "sourceId": "trich",
+          "sourceUrl": "https://www.cdc.gov/std/treatment-guidelines/trichomoniasis.htm",
+          "sourceSection": "Treatment;Pregnancy",
+          "access": "direct full public CDC primary guideline retrieved and read",
+          "result": "agrees"
+        },
+        {
+          "assertion": "CDC BV500mg BID7days or vaginal0.75%5g once5days. CDC alcohol interaction evidence assessment differs from label restrictions; profile explicitly identifies conflict without inventing unified recommendation.",
+          "sourceId": "bv",
+          "sourceUrl": "https://www.cdc.gov/std/treatment-guidelines/bv.htm",
+          "sourceSection": "Treatment",
+          "access": "direct full public CDC primary guideline retrieved and read",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning · systemic rodent carcinogenicity",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "metro-oral": {
+          "path": "/tmp/nas-drug-sources/metro-oral.xml",
+          "sha256": "ecd3ff40fc996b9a38c6376ba67cb3aff60d7ba4acddaa3f169bc1e4fd406d1b"
+        },
+        "metro375": {
+          "path": "/tmp/nas-drug-sources/metro375.xml",
+          "sha256": "ac1e11983c98a0450cce7f2e97cb60140f020f5e6bdd71dccf4bf913b8bbbdb5"
+        },
+        "metro-iv": {
+          "path": "/tmp/nas-drug-sources/metro-iv.xml",
+          "sha256": "93ba2f6f219bf9869a61587a79f082f8353f5d78dc7b0f795b543d46a271a501"
+        },
+        "metro-vag075": {
+          "path": "/tmp/nas-drug-sources/metro-vag075.xml",
+          "sha256": "143e0dc7bd450532b88aefe2f05edd7aa1b34f1af7464343a2c86a855761effe"
+        },
+        "nuvessa": {
+          "path": "/tmp/nas-drug-sources/nuvessa.xml",
+          "sha256": "16507c3662b9e6a30467c729fc4a9fbc1d5c2fcfd17c8ae7d8713de7fa15363f"
+        }
+      }
+    },
+    {
+      "drug": "sildenafil",
+      "fileSha256": "b2cbadd29323f1aa7a3e45ca81e3df42a73e4dcb54bd6d26cce809deecd8c49e",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "ED50mg~1h before activity permitted30min–4h,25–100response, max100/dose once daily; stablealpha-blocker25start/ritonavir25max48h/otherstrongCYP3Aorerythroconsider25.",
+          "sourceId": "ed",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d905dc8d-917f-4ea3-a4ee-a1ecf6967d4e",
+          "sourceSection": "Sections2.1–2.5",
+          "access": "retained full primary SPL XML and extracted sections independently read; current Revatio DailyMed directly opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Current adultPAH20mgTID maytitrate80mgTID; adultIV10mgBOLUSTID predictedcomparable20oral notuniversalconversion. Pediatric1–17below20kg10TID/above20–45kg20TID/>45start20may40TID; exactly20 overlapping sourcebands explicitlywithheldpendingconfirmedRx.",
+          "sourceId": "pah",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3bb9363e-b28d-4019-8aae-539233dca214",
+          "sourceSection": "Sections1,2.1–2.2,8.4",
+          "access": "retained full primary SPL XML and extracted sections independently read; current Revatio DailyMed directly opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Reconstitution60mLwater≥30secshake then30≥30sec total90→112mL final10mg/mL,shake10secperdose/supplied2mLsyringe/refills>2/noflavoradditions;60dayuse.",
+          "sourceId": "pah",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3bb9363e-b28d-4019-8aae-539233dca214",
+          "sourceSection": "Sections2.3,3,16;Instructions forUse",
+          "access": "retained full primary SPL XML and extracted sections independently read; current Revatio DailyMed directly opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Formalnitrates/nitrites/riociguat/hypersenscontra; nitrate24h safetyunestablished. EDrenalCrCl<30consider25, hepaticconsider25ChildCunstudied; oldadult25start considered.",
+          "sourceId": "ed",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d905dc8d-917f-4ea3-a4ee-a1ecf6967d4e",
+          "sourceSection": "Sections4,8.5–8.7",
+          "access": "retained full primary SPL XML and extracted sections independently read; current Revatio DailyMed directly opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "PAHno renaladjustincludingsevere/nohepaticmildmoderateadjust,severeunstudied; noduplicatePDE5 orstrongCYP3A; noformalbox; current1–17approval and oldmortalityimbalance explanationnotunrestrictedescalation.",
+          "sourceId": "pah",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3bb9363e-b28d-4019-8aae-539233dca214",
+          "sourceSection": "Sections7,8.4,8.6–8.7",
+          "access": "retained full primary SPL XML and extracted sections independently read; current Revatio DailyMed directly opened",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed-warning status and pediatric context",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "viagra-current": {
+          "path": "/tmp/nas-drug-sources/viagra-current.xml",
+          "sha256": "ce1c4b34bd3137d749b7aa8ff6adeac27eccfa659b40a58441af9d4219b43437"
+        },
+        "revatio-current": {
+          "path": "/tmp/nas-drug-sources/revatio-current.xml",
+          "sha256": "edd654f35ed681f2048ce9057d7d130418cb7f3323bdd3f5c3d6c776863726f8"
+        }
+      }
+    },
+    {
+      "drug": "ethinyl-estradiol-levonorgestrel",
+      "fileSha256": "d06c633f870e99d1106ff97bf446a779b8cbf2fcba9d3e76594f31ac4121cede",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Tyblume21activeLNG100mcg/EE20mcg then7placebo; swalloworchew240mLwaterEMPTYstomach. Sunday7daybackup; old2misswk1–2two/twothennormal7backup andwk3/3misspackrestart explicitlydifferentfromCDCalgorithm; vomitingdiarrhea3–4hreplacement.",
+          "sourceId": "cyclic",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b2482d51-d606-4aaa-8af4-19e4fe2f8872",
+          "sourceSection": "Sections2.1–2.4,3",
+          "access": "retained full primary SPL XML and extracted sections independently read; current Revatio DailyMed directly opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Dolishaleall28LNG90mcg/EE20mcg dailyNObreak, initialmenstrualday1; postpartumnonlactating≥28days.",
+          "sourceId": "continuous",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=036a15be-8c2e-4f65-b5dc-f333e2994d4a",
+          "sourceSection": "Dosage;Description",
+          "access": "retained full primary SPL XML and extracted sections independently read; current Revatio DailyMed directly opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Jaimiess84LNG150mcg/EE30 then7EE10mcg notplacebo; Sunday7backup/nextpackimmediate; nonbreastfeedingpostpartum4–6wk. Currentselectedlabelstorageomissionflagged,noguessedrange.",
+          "sourceId": "extended",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aa2f5907-8677-4688-af59-3903b32f9b21",
+          "sourceSection": "Sections2,3,16",
+          "access": "retained full primary SPL XML and extracted sections independently read; current Revatio DailyMed directly opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "June2026 currentlabel40mcgLNG/10mcgEEdaily designation confirmed§3/11/16; regulatoryNDA204017SUPPL9approvedJune18,2026 revises PRESENTATION ofstrength; packagepanels explicitlySAMEPOTENCYoriginal120/30vsupdated40/10, notthreefolddosereduction.",
+          "sourceId": "patch",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/204017Orig1s009lbl.pdf",
+          "sourceSection": "Sections3,11,16;PackagepanelsPDF39–40;FDAapprovalletterp1",
+          "access": "Current official FDA complete label PDF text, Drugs@FDA product/history record and supplement9 approval letter directly retrieved and read",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Onepatch7daysweeks1–3 then7patchfree, neverlonger. Detach<24hreapplynochange/backup;≥24orunknownnewcycle/day7backup. Week2/3delay<48retain/≥48restart7backup, distinctgenericCDC48hdetachrule.",
+          "sourceId": "patch",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/204017Orig1s009lbl.pdf",
+          "sourceSection": "Section2.3Table2;InstructionsForUse",
+          "access": "Current official FDA complete label PDF text, Drugs@FDA product/history record and supplement9 approval letter directly retrieved and read",
+          "result": "agrees"
+        },
+        {
+          "assertion": "BoxsmokerOVER35contra/BMI≥30contra/reducedeffect25–<30; highthrombosisrisk/migraineaura/anymigraineover35/liver/cancer/HCVcombo formalcontra; no reducedrenalalgorithminferred.",
+          "sourceId": "patch",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/204017Orig1s009lbl.pdf",
+          "sourceSection": "Box;Sections4,8.9",
+          "access": "Current official FDA complete label PDF text, Drugs@FDA product/history record and supplement9 approval letter directly retrieved and read",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning: smoking and patch BMI",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "tyblume-current": {
+          "path": "/tmp/nas-drug-sources/tyblume-current.xml",
+          "sha256": "2a8e0f409f65bda3065afa9007ac6ab693da9a90154bad3c74a747eec6463cf8"
+        },
+        "dolishale-current": {
+          "path": "/tmp/nas-drug-sources/dolishale-current.xml",
+          "sha256": "f45cc560d5bb33e12014f4bdef24cc6790bf434f9f8b42221ca0c56e83f33220"
+        },
+        "jaimiess-current": {
+          "path": "/tmp/nas-drug-sources/jaimiess-current.xml",
+          "sha256": "7458ddb64e7e70a1ac2b72a313e14182d0d1e25cc5cb96358018756b74bc3dd0"
+        },
+        "twirla2026": {
+          "path": "/tmp/nas-drug-sources/twirla-fda2026.pdf",
+          "sha256": "621a1f098d06d50cc69a24c5b82aee204d624d12f60224c73024ae3815f41d66"
+        }
+      },
+      "regulatoryConsistency": {
+        "productRecord": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=204017",
+        "approvalLetter": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/204017Orig1s009ltr.pdf",
+        "confirmed": "Prescription transdermal current0.01mgEE/0.04mgLNG24h; SUPPL9 June18,2026; revised presentation of strength, same potency per approved package panels.",
+        "clarification": "Closed: actual product strength card explicitly identifies strength presentation and same potency, with current FDA supplement9 approval-letter reference. No threefold clinical dose reduction claimed."
+      }
+    },
+    {
+      "drug": "phentermine",
+      "fileSha256": "597817edad9117e424a99db4bfe2a8cc38e95c7f0a3e460608bf33fdf8e90273",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Short-termfewweeksadjunct initialBMI≥30or≥27risk; current37.5HCltabletAMwithwithoutfood/lowestdose; age≤16notrecommended; severeeGFR15–29max15mg/day/avoid<15orHDnotimprovised37.5splitto15.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5927e0f6-3de3-4885-a633-5b92003f6fe4",
+          "sourceSection": "Sections1,2.1–2.2,8.4–8.6",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current oral DailyMed pages opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Selected15/30HClcaps15–30~2hoursafterbreakfast; same modernsevererenal15mgmax/below15-HDavoid.",
+          "sourceId": "low",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2f3b738f-d66b-40c1-8e69-bcd50bce3e47",
+          "sourceSection": "Sections2.1–2.2",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current oral DailyMed pages opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "37.5HClcapsdailybeforebreakfastOR1–2hoursafter; no capsule-splitting fromprintedtablettext; modernrenal15ceiling separate strengthprescription.",
+          "sourceId": "capsule",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=27e88ebe-6247-4598-8ef2-c882992ed579",
+          "sourceSection": "Sections2.1–2.2",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current oral DailyMed pages opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "8mgHCltabletTID30minbeforemeals/scoredhalfusualdosewhereadequate; selectedrenalCAUTIONONLY no numericaladjust copied; allselectednobox.",
+          "sourceId": "lomaira",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0718f0f3-77f2-45d7-be12-1ed718c8b806",
+          "sourceSection": "Dosage;RenalImpairment",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current oral DailyMed pages opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "FormalCVhistory/MAOI14days/hyperthyroid/glaucoma/agitation/drugabuse/pregnancy/nursing/sympathomimetichypersens; pulmonarysymptomstop/evaluate,tolerancediscontinueNOescalation,mildHTNcaution.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5927e0f6-3de3-4885-a633-5b92003f6fe4",
+          "sourceSection": "Sections4,5.2–5.9",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current oral DailyMed pages opened",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "phentermine-tablet": {
+          "path": "/tmp/nas-drug-sources/phentermine-tablet.xml",
+          "sha256": "92416b95b48ef2afbd969fa2622e0ff910de78fa520fd896ef633dcca3713f5c"
+        },
+        "phentermine-low-capsule": {
+          "path": "/tmp/nas-drug-sources/phentermine-low-capsule.xml",
+          "sha256": "8f1fada4adec7fd8928e7461f8ee09212de4c56644b0aabbc40f87a3bfb6adf2"
+        },
+        "phentermine-capsule": {
+          "path": "/tmp/nas-drug-sources/phentermine-capsule.xml",
+          "sha256": "6202170609f0162202e57792d18ca16beb11d420c62e7de1e408ef387a129733"
+        },
+        "lomaira": {
+          "path": "/tmp/nas-drug-sources/lomaira.xml",
+          "sha256": "beda870b7cb19ded40a408749a587f36c44426af1c996475317bf18a89e950bd"
+        }
+      }
+    },
+    {
+      "drug": "ofloxacin",
+      "fileSha256": "1c5926b48f4ceeb020db7a862105ed88da1eeba9cd53fc65c185c349ec9ccddc",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Adultoralbronch/resp/skin400q12 10d; cystEcoliKp200q12 3d/otherapprovedpathogen7dreservednoalternatives;compUTI200q12 10d;Ecoliprostat300q12 6wk. Legacy STI indications acknowledged but executableoldSTIregimenswithheld.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=93ed9f70-b44f-496b-bdfc-c1bd5f1c260b",
+          "sourceSection": "Dosage;Box",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current oral DailyMed pages opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "After normalinitialdose CrCl20–50usualunitq24/<20halfunitq24; prose<50 vstablerangeincludes50explicitnon-actionableboundaryclarification; cirrhosisseverehepmax400mg/day; cations2hbeforeANDafter.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=93ed9f70-b44f-496b-bdfc-c1bd5f1c260b",
+          "sourceSection": "Dosage;Renal/Cirrhosis",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current oral DailyMed pages opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Conj1–2q2–4hday1–2→QIDdays3–7; ulcer1–2q30awakefirst2dayspluswake4/6hafterretiring→hourlyday3through7–9→QIDfrom7–9tofinish; exacttransitionneedsophthalmologistnotinventedday.",
+          "sourceId": "eye",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5117d567-2004-c5ed-1391-f8831864696f",
+          "sourceSection": "Dosage",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current oral DailyMed pages opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Externa6mo–<13fiveqd7d/≥13tenqd7d withhandoutconfirm;tubeAOM1–12fiveBID10d versusgenericmiddle-earhandout≥12ten explicitdiagnosis-specificclarification at12; perforatedCSOM≥12tenBID14d. Warm1–2min/earup5min/tragus4middleear.",
+          "sourceId": "ear",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8db221b1-32f3-f6ca-e404-71f56a860d08",
+          "sourceSection": "Dosage;PatientInstructions",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current oral DailyMed pages opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "SystemicFQdisablingtendon/neuropathy/CNS/myasthavoidbox vsformalquinolonehypersenscontra; eyeearno selectedbox/no systemicrenalalgorithmtransplant; majorroutesnotinterchangeable.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=93ed9f70-b44f-496b-bdfc-c1bd5f1c260b",
+          "sourceSection": "Box;Contraindications",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current oral DailyMed pages opened",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "ofloxacin-tablet": {
+          "path": "/tmp/nas-drug-sources/ofloxacin-tablet.xml",
+          "sha256": "936fc983a0694098e1b17d9e3f91ad266d74e2b80a58b01248608a6a75d6202e"
+        },
+        "ofloxacin-eye": {
+          "path": "/tmp/nas-drug-sources/ofloxacin-eye.xml",
+          "sha256": "81a3631de4a4370fe9c38934356f0ea6bedd7723e1b770f48e7b7f96e4b6ad94"
+        },
+        "ofloxacin-ear": {
+          "path": "/tmp/nas-drug-sources/ofloxacin-ear.xml",
+          "sha256": "0dfcdf33d801d798d64803b045e4ec75fd78f004733b5b836e09fdcf2020d501"
+        }
+      }
+    }
+  ],
+  "pending": [],
+  "limitations": []
+}

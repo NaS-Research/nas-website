@@ -1,0 +1,1147 @@
+{
+  "drug": "ciprofloxacin",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Fully retrieved current Cipro IR/suspension, Sagent IV, Sandoz eye solution/Ciloxan ointment and Genus/Cetraxal ear labels. Current FDA ER product status verified, while actionable current generic ER directions explicitly withheld pending current PI; current CDC gonorrhea and IDSA cUTI duration context.",
+  "sources": [
+    {
+      "id": "ciprooral",
+      "title": "Bayer Cipro IR tablets and oral suspension",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=888dc7f9-ad9c-4c00-8d50-8ddfd9bd27c0",
+      "note": "Full public manufacturer label and patient instructions; SPL version 32, effective 20260302. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "32",
+      "effective_date": "20260302",
+      "xml_sha256": "e4f88d00e95859c7e595b06ca828c32c2ed8be25ed453ca0fd645fc537dd7111",
+      "retrieved_xml": "/tmp/nas-drug-sources/ciprooral.xml",
+      "published_date": "Mar 04, 2026"
+    },
+    {
+      "id": "ciproiv",
+      "title": "Sagent ciprofloxacin IV in dextrose",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f406e796-17d9-4465-b8a7-00d966a4ba74",
+      "note": "Full public manufacturer label and patient instructions; SPL version 4, effective 20260804. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "4",
+      "effective_date": "20260804",
+      "xml_sha256": "3ede6a33daf82450fb4540b863bda8e845dedb8d9db2d75d6f4deaacc8367593",
+      "retrieved_xml": "/tmp/nas-drug-sources/ciproiv.xml",
+      "published_date": "Aug 17, 2026"
+    },
+    {
+      "id": "ciproeye",
+      "title": "Sandoz ciprofloxacin ophthalmic solution 0.3%",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab52b14d-345b-47ff-a832-465caddd3801",
+      "note": "Full public manufacturer label and patient instructions; SPL version 6, effective 20190718. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "6",
+      "effective_date": "20190718",
+      "xml_sha256": "bfc6b6fd639f9c942cc6c166a401e37255b07fa258db7d03403a900aeb6a5101",
+      "retrieved_xml": "/tmp/nas-drug-sources/ciproeye.xml",
+      "published_date": "Jul 04, 2022"
+    },
+    {
+      "id": "ciprooint",
+      "title": "Ciloxan ophthalmic ointment 0.3%",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=09ca5374-2a16-4a95-91b3-70591d78254e",
+      "note": "Full public manufacturer label and patient instructions; SPL version 2, effective 20240730. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "2",
+      "effective_date": "20240730",
+      "xml_sha256": "79bbbf3921db6c5f49d273799038adc5e9f6ba1f10184a2d37b4fa0a86d0a153",
+      "retrieved_xml": "/tmp/nas-drug-sources/ciprooint.xml",
+      "published_date": "Apr 14, 2025"
+    },
+    {
+      "id": "ciproear",
+      "title": "Genus ciprofloxacin otic solution 0.2%",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51dde3f2-adb1-4ed8-83c6-1f63723a2529",
+      "note": "Full public manufacturer label and patient instructions; SPL version 2, effective 20260922. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "2",
+      "effective_date": "20260922",
+      "xml_sha256": "e3e5d526401e419d1f1fd2d9d6000058d5d947d331a9db7904e6ce8d44cc7056",
+      "retrieved_xml": "/tmp/nas-drug-sources/ciproear.xml",
+      "published_date": "Sep 24, 2026"
+    },
+    {
+      "id": "cetraxal",
+      "title": "Cetraxal otic solution 0.2%",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=213b339a-75e0-4b1d-9052-8ee82a65d713",
+      "note": "Full public manufacturer label and patient instructions; SPL version 8, effective 20241009. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "8",
+      "effective_date": "20241009",
+      "xml_sha256": "9f095e682a32214c0eaf4f1236de3639ab87e7a099656e2729e68251b6faeae1",
+      "retrieved_xml": "/tmp/nas-drug-sources/cetraxal.xml",
+      "published_date": "Oct 11, 2024"
+    },
+    {
+      "id": "cdcgon2021",
+      "title": "CDC STI Treatment Guidelines · Gonococcal infections",
+      "publisher": "Centers for Disease Control and Prevention",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/gonorrhea-adults.htm",
+      "note": "Current official 2021 guideline page, last reviewed September 21, 2022; resistance, recommended regimen, drug-allergy and gyrA susceptibility exception read in full. Checked October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public complete primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/cdcgon2021.html",
+      "source_sha256": "702be0b0b06aac0d05e38161932693645f23ddc02b4b096f9bfad7204ec3eebd",
+      "version": "CDC 2021 STI Treatment Guidelines",
+      "last_reviewed": "2022-09-21",
+      "reviewed_sections": [
+        "Antimicrobial-Resistant N. gonorrhoeae",
+        "Recommended regimen",
+        "Special Considerations: drug allergy/gyrA susceptibility exception"
+      ]
+    },
+    {
+      "id": "idsauti2025",
+      "title": "IDSA 2025 complicated UTI guideline · Duration recommendations",
+      "publisher": "Infectious Diseases Society of America",
+      "url": "https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections/",
+      "note": "Public complete recommendation, definitions and comments on duration and IV-to-oral transition reviewed; July 17, 2025. Unaccessed journal supplementary tables are not claimed.",
+      "checked": "2026-10-01",
+      "access": "public complete primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/idsauti2025.html",
+      "source_sha256": "5def82a1e7c74f5f49b8c8896fa85a721d6e09505c452f2fde97222e831e06f2",
+      "version": "IDSA 2025 cUTI update",
+      "publication_date": "2025-07-17",
+      "reviewed_sections": [
+        "Complete duration recommendation I, definitions and comments",
+        "IV-to-oral transition recommendation and limitations"
+      ],
+      "access_scope": "Public official complete recommendation and rationale; no journal supplementary tables accessed or claimed."
+    },
+    {
+      "id": "orange2026",
+      "title": "FDA 2026 Orange Book · Ciprofloxacin ER and Otiprio status",
+      "publisher": "U.S. Food and Drug Administration",
+      "url": "https://www.fda.gov/media/71474/download?attachment=",
+      "note": "Full public PDF retrieved: prescription list page 3-105, discontinued list pages 6-128 and 6-129 and related entries. Current public download checked October 1, 2026; listing does not guarantee commercial supply.",
+      "checked": "2026-10-01",
+      "access": "public complete primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/orange2026.pdf",
+      "source_sha256": "667506e66165928a0cac4280c62fc8a7dc8e4355960953c12cf69664e90d9575"
+    },
+    {
+      "id": "erapp",
+      "title": "Drugs@FDA · Dr. Reddy’s ciprofloxacin ER ANDA 077701",
+      "publisher": "U.S. Food and Drug Administration",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:ANDA077701&limit=1",
+      "note": "Current official product/application record: 1000 mg total ER product prescription status, 500 mg total ER product discontinued. Latest labeling supplement September 20, 2024 has no attached public PI; no access to that PI claimed.",
+      "checked": "2026-10-01",
+      "access": "public complete primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/ciproer-generic-app.json",
+      "source_sha256": "0050815a3cffd15d9862417e3e70f15c0e4035d8359a20c3218d1d8f1dd34000"
+    },
+    {
+      "id": "erref2021",
+      "title": "Cipro XR FDA reference label · 2021 supplement 43",
+      "publisher": "U.S. Food and Drug Administration",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/021473s043lbl.pdf",
+      "note": "Complete publicly attached reference label; brand is discontinued. Used only for IR/ER distinction, not represented as current generic labeling or a current generic dosing recommendation.",
+      "checked": "2026-10-01",
+      "access": "public complete primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/ciproer-fda2021.pdf",
+      "source_sha256": "993957aaa13b950b95b7f52be9776f3d7a15769c94e3aaea17d786e6013a5341"
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Systemic labeled indications",
+      "assertions": {
+        "paragraphs": [
+          "Selected oral and IV labels cover adult susceptible skin, bone/joint, complicated intra-abdominal infection with metronidazole, bacterial prostatitis, lower respiratory and urinary infections, sinusitis, anthrax postexposure and plague. Oral labeling additionally includes specified infectious diarrhea, typhoid fever and uncomplicated cervical/urethral gonorrhea. IV additionally labels nosocomial pneumonia and febrile neutropenia with piperacillin. Pediatric systemic uses are limited: E. coli cUTI/pyelonephritis at ages 1–17; anthrax postexposure and plague from birth through 17. It is not a first-choice pediatric drug or a first-choice agent for pneumococcal pneumonia."
+        ]
+      },
+      "source_sections": {
+        "ciprooral": [
+          "1",
+          "2",
+          "4",
+          "5",
+          "7",
+          "8"
+        ],
+        "ciproiv": [
+          "1",
+          "2",
+          "4",
+          "5",
+          "7",
+          "8"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Stewardship and current guideline distinctions",
+      "assertions": {
+        "paragraphs": [
+          "Reserve systemic ciprofloxacin for uncomplicated cystitis, acute bronchitis exacerbation and acute sinusitis when no alternative treatment options exist. Culture, susceptibility and local resistance guide selection. The oral label retains a 250 mg single-dose gonorrhea regimen, but CDC guidance does not recommend routine empiric fluoroquinolone treatment; ceftriaxone is preferred. Its selected asymptomatic gyrA-susceptible exception uses 500 mg orally once under the CDC drug-allergy pathway, not the older label dose."
+        ]
+      },
+      "source_sections": {
+        "ciprooral": [
+          "Boxed warning",
+          "1.6",
+          "1.10–1.13",
+          "2.1"
+        ],
+        "ciproiv": [
+          "Boxed warning",
+          "1.9–1.12"
+        ],
+        "cdcgon2021": [
+          "Antimicrobial resistance",
+          "Recommended regimen",
+          "Special Considerations: Drug Allergy, Intolerance, and Adverse Reactions"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Eye and ear indications",
+      "assertions": {
+        "paragraphs": [
+          "Selected ophthalmic solution 0.3% treats susceptible bacterial conjunctivitis and corneal ulcers; Ciloxan ointment 0.3% labels bacterial conjunctivitis, not the solution’s ulcer regimen. Genus and Cetraxal otic solution 0.2% treat acute otitis externa due to susceptible P. aeruginosa or S. aureus at ≥1 year. They are not the ciprofloxacin/steroid combinations catalogued separately."
+        ]
+      },
+      "source_sections": {
+        "ciproeye": [
+          "INDICATIONS AND USAGE",
+          "Pediatric Use"
+        ],
+        "ciprooint": [
+          "INDICATIONS AND USAGE",
+          "Pediatric Use"
+        ],
+        "ciproear": [
+          "1",
+          "8.4"
+        ],
+        "cetraxal": [
+          "1",
+          "8.4"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Extended-release status · Current directions require review",
+      "assertions": {
+        "paragraphs": [
+          "Current FDA records list Dr. Reddy’s total 1000 mg ER product as prescription and its total 500 mg product as discontinued. Cipro XR, Proquin XR and Otiprio appear in the discontinued list. The current generic ER PI was not retrieved; the publicly attached 2021 Cipro XR reference label is not presented as that generic’s current directions. Do not interchange IR and ER milligram-for-milligram or infer a regimen from discontinued products. ER actionable dosing is outside this verified profile until the current PI is obtained."
+        ]
+      },
+      "source_sections": {
+        "orange2026": [
+          "Prescription and discontinued product lists: ciprofloxacin ER, Proquin XR, Otiprio"
+        ],
+        "erapp": [
+          "Products 001/002; latest labeling supplement 17, September 20, 2024"
+        ],
+        "erref2021": [
+          "2.1",
+          "2.2"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Adult immediate-release oral label schedules",
+      "assertions": {
+        "paragraphs": [
+          "Use susceptibility and current infection-specific guidance; labeled durations are not automatic treatment targets."
+        ],
+        "table": {
+          "headers": [
+            "Infection",
+            "Dose and labeled duration"
+          ],
+          "rows": [
+            [
+              "Skin; lower respiratory",
+              "500–750 mg every 12 hours, 7–14 days."
+            ],
+            [
+              "Bone/joint",
+              "500–750 mg every 12 hours, 4–8 weeks."
+            ],
+            [
+              "Complicated intra-abdominal",
+              "500 mg every 12 hours with metronidazole, 7–14 days."
+            ],
+            [
+              "Infectious diarrhea; typhoid",
+              "500 mg every 12 hours; diarrhea 5–7 days, typhoid 10 days."
+            ],
+            [
+              "Chronic bacterial prostatitis",
+              "500 mg every 12 hours, 28 days."
+            ],
+            [
+              "UTI; uncomplicated cystitis",
+              "UTI 250–500 mg every 12 hours, label 7–14 days; selected cystitis 250 mg every 12 hours for 3 days, only when alternatives unavailable."
+            ],
+            [
+              "Acute sinusitis",
+              "500 mg every 12 hours for 10 days, only when alternatives unavailable."
+            ],
+            [
+              "Anthrax postexposure",
+              "500 mg every 12 hours, 60 days."
+            ],
+            [
+              "Plague",
+              "500–750 mg every 12 hours, 14 days."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "ciprooral": [
+          "2.1 Table 1"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Adult IV label schedules and oral transition",
+      "assertions": {
+        "paragraphs": [
+          "Infuse each IV dose over 60 minutes, never rapid IV push. Selected 2 mg/mL premixed bags require no dilution; check bag integrity and solution clarity."
+        ],
+        "table": {
+          "headers": [
+            "Situation",
+            "Selected IV schedule"
+          ],
+          "rows": [
+            [
+              "Skin, bone/joint or lower respiratory",
+              "400 mg every 8–12 hours; skin/respiratory 7–14 days, bone/joint 4–8 weeks."
+            ],
+            [
+              "Complicated intra-abdominal",
+              "400 mg every 12 hours with metronidazole, 7–14 days."
+            ],
+            [
+              "Nosocomial pneumonia",
+              "400 mg every 8 hours, 10–14 days."
+            ],
+            [
+              "Febrile neutropenia",
+              "400 mg every 8 hours with piperacillin (label: 50 mg/kg every 4 hours), 7–14 days."
+            ],
+            [
+              "UTI",
+              "200–400 mg every 8–12 hours, label 7–14 days."
+            ],
+            [
+              "Prostatitis; sinusitis",
+              "400 mg every 12 hours; prostatitis 28 days, sinusitis 10 days."
+            ],
+            [
+              "Anthrax; plague",
+              "Anthrax 400 mg every 12 hours for 60 days; plague 400 mg every 8–12 hours for 14 days."
+            ],
+            [
+              "Selected exposure-equivalent adult switch",
+              "Oral IR 250 mg every 12 hours ↔ IV 200 mg every 12 hours; oral 500 mg every 12 hours ↔ IV 400 mg every 12 hours; oral 750 mg every 12 hours ↔ IV 400 mg every 8 hours. Clinical assessment required."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "ciproiv": [
+          "2.1",
+          "2.4"
+        ],
+        "ciprooral": [
+          "2.1 IV-to-oral conversion"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Contemporary adult cUTI duration",
+      "assertions": {
+        "paragraphs": [
+          "IDSA 2025 conditionally favors 5–7 days of an effective fluoroquinolone in clinically improving adult cUTI/pyelonephritis, counted from the first effective treatment day. Studies often excluded severe sepsis, catheters, immune compromise, CKD, abscess, obstruction, prostatitis or urologic procedures; these require individualized duration. This does not shorten pediatric label regimens or chronic prostatitis treatment by default."
+        ]
+      },
+      "source_sections": {
+        "idsauti2025": [
+          "Duration recommendation I; definitions and complete comments"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric systemic dosing",
+      "assertions": {
+        "paragraphs": [
+          "Use only the specified pediatric indications; renal dysfunction needs specialist assessment, not extrapolation of adult tables."
+        ],
+        "table": {
+          "headers": [
+            "Indication",
+            "Oral IR and IV regimens"
+          ],
+          "rows": [
+            [
+              "cUTI/pyelonephritis · ages 1–17",
+              "Oral 10–20 mg/kg every 12 hours, maximum 750 mg/dose; IV 6–10 mg/kg every 8 hours, maximum 400 mg/dose. Total 10–21 days."
+            ],
+            [
+              "Anthrax postexposure · birth–17",
+              "Oral 15 mg/kg every 12 hours, maximum 500 mg/dose; IV 10 mg/kg every 12 hours, maximum 400 mg/dose. Total 60 days."
+            ],
+            [
+              "Plague · birth–17",
+              "Oral 15 mg/kg every 8–12 hours, maximum 500 mg/dose; IV 10 mg/kg every 8–12 hours, maximum 400 mg/dose. Total 14 days."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "ciprooral": [
+          "2.2",
+          "2.3"
+        ],
+        "ciproiv": [
+          "2.2",
+          "2.3"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Renal and hepatic dose distinctions",
+      "assertions": {
+        "paragraphs": [
+          "Adult IR oral: CrCl >50 mL/min uses usual dosing; 30–50 uses 250–500 mg every 12 hours; 5–29 uses 250–500 mg every 18 hours; hemodialysis/peritoneal dialysis uses 250–500 mg every 24 hours after dialysis. Carefully monitored severe infection may use a 750 mg unit dose at the stated adjusted intervals. Selected IV label differs: CrCl >30 uses usual dosing; 5–29 uses 200–400 mg every 18–24 hours; no separate dialysis schedule is supplied in that table. Pediatric CrCl <50 mL/min/1.73 m² adjustment is unestablished. Stable chronic cirrhosis did not significantly change PK; acute hepatic insufficiency is unstudied. No topical organ adjustment formula is provided."
+        ]
+      },
+      "source_sections": {
+        "ciprooral": [
+          "2.3",
+          "8.6",
+          "8.7"
+        ],
+        "ciproiv": [
+          "2.3",
+          "8.6",
+          "8.7"
+        ],
+        "ciproeye": [
+          "Full prescribing information"
+        ],
+        "ciprooint": [
+          "Full prescribing information"
+        ],
+        "ciproear": [
+          "Full prescribing information"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Oral administration and suspension",
+      "assertions": {
+        "paragraphs": [
+          "Take IR with or without food, at least 2 hours before or 6 hours after cation-containing products. Avoid dairy or calcium-fortified juice alone; a meal containing them is allowed. If <6 hours remain before the next IR dose, skip a missed dose; never double. Cipro 250 mg and 500 mg tablets are functionally scored and can be halved. Suspension concentrations are 250 mg/5 mL and 500 mg/5 mL: verify the concentration before measuring. Pharmacist preparation combines supplied microcapsules and diluent without added water. Shake about 15 seconds each use, measure with the co-packaged spoon and do not chew microcapsules. No feeding/NG tube administration."
+        ]
+      },
+      "source_sections": {
+        "ciprooral": [
+          "2.4–2.7"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Eye and ear dosing",
+      "assertions": {
+        "paragraphs": [
+          "Eye solution ulcer treatment requires close ophthalmic supervision: two drops every 15 minutes for first 6 hours, then every 30 minutes for the remainder of day 1; two drops hourly on day 2; two drops every 4 hours on days 3–14. Continue beyond 14 days only if the prescriber determines re-epithelialization is incomplete. Conjunctivitis solution: 1–2 drops every 2 hours while awake for 2 days, then every 4 hours while awake for 5 days. Ointment: ½-inch ribbon three times daily for 2 days, then twice daily for 5 days. Otic 0.2%: one 0.25 mL container in each affected ear twice daily about 12 hours apart for 7 days; warm in hands ≥1 minute, maintain ear-up position ≥1 minute and discard used containers."
+        ]
+      },
+      "source_sections": {
+        "ciproeye": [
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "ciprooint": [
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "ciproear": [
+          "2",
+          "17.1"
+        ],
+        "cetraxal": [
+          "2",
+          "17.1"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Systemic: disabling, potentially irreversible tendon injury, peripheral neuropathy and CNS/psychiatric reactions may occur together. Stop immediately for serious symptoms and avoid future fluoroquinolones after these reactions. Tendon injury can occur months later; risk rises with age >60, corticosteroids, transplants and renal failure.",
+          "Avoid systemic treatment in myasthenia gravis because muscle weakness may worsen. Seizures, delirium, hallucinations or suicidal thoughts require prompt discontinuation and appropriate care.",
+          "Anaphylaxis, severe skin reactions, hepatic injury, nephritis and blood-cell disorders are reported. Stop for rash, jaundice or hypersensitivity; breathing/swallowing difficulty or collapse needs emergency care.",
+          "Systemic aortic aneurysm/dissection risk is a labeled precaution: use only without alternatives in patients with known aneurysm or increased risk. Sudden severe chest, back or abdominal pain needs emergency evaluation.",
+          "Avoid systemic use with known QT prolongation, relevant electrolyte/cardiac risks or QT-prolonging drugs. Monitor glucose with diabetes co-treatment; stop and treat hypoglycemia promptly.",
+          "Evaluate significant watery or bloody diarrhea for C. difficile, even over 2 months after treatment. Avoid excessive UV exposure; stop for phototoxicity. Maintain appropriate hydration and assess crystalluria/renal risks.",
+          "Pediatric systemic use has increased joint/tissue adverse reactions. Ciprofloxacin does not treat syphilis and can delay its diagnosis during gonorrhea treatment; arrange STI evaluation.",
+          "Eye/ear products: stop for allergy, assess superinfection or nonresponse, and prevent applicator contamination. Ophthalmic products are not for injection. Ointment can blur vision and slow corneal healing. Ear solution is not for eyes, inhalation or injection."
+        ]
+      },
+      "source_sections": {
+        "ciprooral": [
+          "5.1–5.19"
+        ],
+        "ciproiv": [
+          "5.1–5.19"
+        ],
+        "ciproeye": [
+          "WARNINGS",
+          "General"
+        ],
+        "ciprooint": [
+          "WARNINGS",
+          "General"
+        ],
+        "ciproear": [
+          "5.1–5.4"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Systemic oral/IV: hypersensitivity to ciprofloxacin, other quinolones or ingredients; concomitant tizanidine is contraindicated. Ophthalmic solution/ointment: ciprofloxacin or ingredient hypersensitivity, with other quinolone allergy potentially contraindicating use. Selected otic labels contraindicate ciprofloxacin hypersensitivity. Do not transfer the systemic tizanidine contraindication into a topical label as though it were explicitly listed there."
+        ]
+      },
+      "source_sections": {
+        "ciprooral": [
+          "4.1",
+          "4.2"
+        ],
+        "ciproiv": [
+          "4.1",
+          "4.2"
+        ],
+        "ciproeye": [
+          "CONTRAINDICATIONS"
+        ],
+        "ciprooint": [
+          "CONTRAINDICATIONS"
+        ],
+        "ciproear": [
+          "4"
+        ],
+        "cetraxal": [
+          "4"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "Current selected systemic oral and IV labels carry boxed warnings for serious disabling tendon, neuropathy and CNS effects, and exacerbation of myasthenia gravis; selected less serious indications are reserved for patients without alternatives. Selected ophthalmic and otic labels have no boxed warning. This is a route-specific distinction, not a claim that topical products lack serious allergy risk."
+        ]
+      },
+      "source_sections": {
+        "ciprooral": [
+          "Boxed warning"
+        ],
+        "ciproiv": [
+          "Boxed warning"
+        ],
+        "ciproeye": [
+          "Full prescribing information"
+        ],
+        "ciprooint": [
+          "Full prescribing information"
+        ],
+        "ciproear": [
+          "Full prescribing information"
+        ],
+        "cetraxal": [
+          "Full prescribing information"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "assertions": {
+        "paragraphs": [
+          "Systemic reactions include nausea, diarrhea, vomiting, rash and abnormal liver tests; IV can cause local venous reactions. Eye products may burn, sting or cause discomfort; white corneal precipitate can occur with intensive ulcer drops and does not automatically require stopping. Ear products may cause local pain, itching, fungal superinfection or headache. Systemic overdose can injure kidneys; obtain urgent medical/Poison Help guidance, supportive care and renal monitoring. Dialysis removes <10%. Do not induce vomiting at home. Eye-solution excess can be flushed with warm tap water per label."
+        ]
+      },
+      "source_sections": {
+        "ciprooral": [
+          "6",
+          "10"
+        ],
+        "ciproiv": [
+          "6",
+          "10"
+        ],
+        "ciproeye": [
+          "ADVERSE REACTIONS",
+          "General",
+          "OVERDOSAGE"
+        ],
+        "ciprooint": [
+          "ADVERSE REACTIONS"
+        ],
+        "ciproear": [
+          "6"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Systemic interactions and action",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Combination",
+            "Action"
+          ],
+          "rows": [
+            [
+              "Tizanidine",
+              "Contraindicated with systemic ciprofloxacin: profound hypotension/sedation risk."
+            ],
+            [
+              "Theophylline, duloxetine or zolpidem",
+              "Avoid selected combinations. If theophylline unavoidable, check levels and adjust; duloxetine toxicity monitoring if unavoidable."
+            ],
+            [
+              "Warfarin or other oral anticoagulants",
+              "Monitor INR/prothrombin time and bleeding during and shortly after treatment."
+            ],
+            [
+              "Insulin or sulfonylureas",
+              "Monitor glucose closely; severe hypoglycemia can be fatal."
+            ],
+            [
+              "Phenytoin; cyclosporine; methotrexate",
+              "Monitor phenytoin concentration and seizure control; renal function with cyclosporine; methotrexate toxicity."
+            ],
+            [
+              "Ropinirole, clozapine, caffeine/xanthines or sildenafil",
+              "Exposure/toxicity may rise; monitor and adjust as appropriate."
+            ],
+            [
+              "QT-prolonging drugs; corticosteroids; selected NSAIDs",
+              "Avoid QT combinations; steroids increase tendon risk; NSAIDs can increase seizure risk."
+            ],
+            [
+              "Oral antacids, sucralfate, binders, calcium, iron or zinc",
+              "Give IR ciprofloxacin ≥2 hours before or ≥6 hours after; chelation lowers absorption."
+            ],
+            [
+              "Probenecid",
+              "Can increase systemic exposure; monitor toxicity."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "ciprooral": [
+          "7",
+          "5.2",
+          "5.10",
+          "5.12",
+          "5.19"
+        ],
+        "ciproiv": [
+          "7"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Topical interaction evidence",
+      "assertions": {
+        "paragraphs": [
+          "Specific ophthalmic interaction studies were not conducted. Topical systemic exposure is low, and the labels discuss systemic quinolone interactions without establishing the same magnitude after eye or ear use. Do not assume oral chelation or systemic dosing adjustments apply to a topical regimen."
+        ]
+      },
+      "source_sections": {
+        "ciproeye": [
+          "Drug Interactions",
+          "CLINICAL PHARMACOLOGY"
+        ],
+        "ciprooint": [
+          "Drug Interactions",
+          "CLINICAL PHARMACOLOGY"
+        ],
+        "ciproear": [
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Systemic observational pregnancy data have not identified a clear drug-associated risk, but cannot establish absence of risk. Current oral/IV labels advise avoiding breastfeeding during treatment and for 2 days afterward for most indications, or pumping/discarding; anthrax exposure can justify a different risk-benefit assessment. Monitor a breastfed infant for diarrhea or candidiasis if breastfeeding continues under advice. Eye milk-transfer data are unknown and labels advise caution; otic labels call for a nursing-versus-treatment decision. Do not assign one universal lactation rule across routes."
+        ]
+      },
+      "source_sections": {
+        "ciprooral": [
+          "8.1",
+          "8.2"
+        ],
+        "ciproiv": [
+          "8.1",
+          "8.2"
+        ],
+        "ciproeye": [
+          "Pregnancy",
+          "Nursing Mothers"
+        ],
+        "ciprooint": [
+          "Pregnancy",
+          "Nursing Mothers"
+        ],
+        "ciproear": [
+          "8.1",
+          "8.3"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric considerations",
+      "assertions": {
+        "paragraphs": [
+          "Systemic cUTI/pyelonephritis is labeled at 1–17 years, and anthrax/plague from birth–17; routine pediatric use is limited by musculoskeletal reactions. Selected Sandoz ophthalmic SOLUTION establishes use at all ages including neonates; Ciloxan OINTMENT is unestablished below 2. Genus/Cetraxal ear solution is unestablished below 1 year. Older systemic users have greater tendon, QT, aortic and renal risks; age alone needs no change with normal renal function."
+        ]
+      },
+      "source_sections": {
+        "ciprooral": [
+          "8.4",
+          "8.5"
+        ],
+        "ciproiv": [
+          "8.4",
+          "8.5"
+        ],
+        "ciproeye": [
+          "Pediatric Use",
+          "Geriatric Use"
+        ],
+        "ciprooint": [
+          "Pediatric Use",
+          "Geriatric Use"
+        ],
+        "ciproear": [
+          "8.4",
+          "8.5"
+        ],
+        "cetraxal": [
+          "8.4",
+          "8.5"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic impairment",
+      "assertions": {
+        "paragraphs": [
+          "Use the exact oral versus IV renal instructions above. Pediatric moderate/severe renal adjustments and acute hepatic-insufficiency PK are unestablished. Stable chronic cirrhosis data do not justify ignoring liver-toxicity symptoms. Topical labels do not specify a quantitative renal/hepatic algorithm; no one is invented here."
+        ]
+      },
+      "source_sections": {
+        "ciprooral": [
+          "2.3",
+          "8.6",
+          "8.7",
+          "5.8"
+        ],
+        "ciproiv": [
+          "2.3",
+          "8.6",
+          "8.7",
+          "5.8"
+        ],
+        "ciproeye": [
+          "Full prescribing information"
+        ],
+        "ciprooint": [
+          "Full prescribing information"
+        ],
+        "ciproear": [
+          "Full prescribing information"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and pharmacodynamics",
+      "assertions": {
+        "paragraphs": [
+          "Ciprofloxacin inhibits bacterial DNA gyrase and topoisomerase IV. Resistance can arise through target mutations, reduced permeability or efflux; local susceptibility and the labeled infection/pathogen matter. Broad in-vitro lists do not establish efficacy for unstudied infections."
+        ]
+      },
+      "source_sections": {
+        "ciprooral": [
+          "12.4"
+        ],
+        "ciproiv": [
+          "12.4"
+        ],
+        "ciproeye": [
+          "CLINICAL PHARMACOLOGY"
+        ],
+        "ciproear": [
+          "12.1",
+          "12.4"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics by route",
+      "assertions": {
+        "paragraphs": [],
+        "facts": [
+          [
+            "Oral IR absorption",
+            "About 70% bioavailability; peak about 1–2 hours. Suspension/tablet equivalents are dose- and concentration-specific."
+          ],
+          [
+            "Systemic distribution/elimination",
+            "About 20–40% protein bound; half-life about 4 hours with normal renal function; roughly 40–50% oral dose recovered unchanged in urine."
+          ],
+          [
+            "Metabolism and interaction",
+            "Partial metabolism; clinically important CYP1A2 inhibition."
+          ],
+          [
+            "Eye and ear exposure",
+            "Ophthalmic solution measured peaks <5 ng/mL. Ointment human absorption was not measured directly; otic label anticipates low levels rather than reporting a measured systemic study."
+          ]
+        ]
+      },
+      "source_sections": {
+        "ciprooral": [
+          "12.3"
+        ],
+        "ciproeye": [
+          "CLINICAL PHARMACOLOGY"
+        ],
+        "ciprooint": [
+          "CLINICAL PHARMACOLOGY"
+        ],
+        "ciproear": [
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring parameters",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Confirm infection, susceptibilities, route and renal function before selecting dose; review resistance and narrow therapy when results arrive.",
+          "Monitor tendon, neuropathy, neuropsychiatric, allergy and liver symptoms; assess QT/electrolyte risk, glucose and interacting-drug levels when relevant.",
+          "For prolonged systemic therapy, periodically assess renal, hepatic and blood-cell function. Review hydration and renal changes.",
+          "Reassess persistent or significant diarrhea; it can begin after treatment ends.",
+          "Ophthalmic ulcers require examination and healing follow-up; otic infection not improved after one week may need culture and reassessment."
+        ]
+      },
+      "source_sections": {
+        "ciprooral": [
+          "1.13",
+          "5",
+          "7",
+          "17"
+        ],
+        "ciproiv": [
+          "1.12",
+          "5.18",
+          "7"
+        ],
+        "ciproeye": [
+          "General"
+        ],
+        "ciproear": [
+          "5.4"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Verify the prescribed route and formulation; do not replace IR with ER or use ear solution in an eye. Read the systemic Medication Guide.",
+          "Separate oral IR from mineral products; verify suspension concentration, shake 15 seconds and do not double missed doses. Follow the prescribed course unless instructed to stop for adverse symptoms.",
+          "Stop systemic medicine and promptly contact the clinician for tendon pain, tingling/numbness, serious mental changes or hypoglycemia; breathing problems or severe chest/back/abdominal pain need emergency care.",
+          "Limit UV exposure and maintain fluid intake appropriate to medical conditions. Report persistent watery/bloody diarrhea.",
+          "Avoid contaminating eye applicators and contact lens use during bacterial conjunctivitis. Ear containers are single-use; warm in hands and maintain ear-up positioning."
+        ]
+      },
+      "source_sections": {
+        "ciprooral": [
+          "2.4–2.7",
+          "17",
+          "Medication Guide"
+        ],
+        "ciproiv": [
+          "17"
+        ],
+        "ciproeye": [
+          "WARNINGS",
+          "Information for Patients"
+        ],
+        "ciprooint": [
+          "General",
+          "Information for Patients"
+        ],
+        "ciproear": [
+          "17.1",
+          "17.2"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative oral product · Cipro IR 500 mg",
+      "assertions": {
+        "paragraphs": [],
+        "facts": [
+          [
+            "Form and strength",
+            "Immediate-release film-coated tablet · 500 mg"
+          ],
+          [
+            "Appearance",
+            "Slightly yellowish, capsule shaped and functionally scored"
+          ],
+          [
+            "Imprint",
+            "BAYER on one side; CIP 500 on reverse"
+          ],
+          [
+            "Example NDC",
+            "50419-754-01 · 100 tablets"
+          ]
+        ]
+      },
+      "source_sections": {
+        "ciprooral": [
+          "3",
+          "16"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Selected Cipro IR tablets: 250 and 500 mg; oral suspensions: 250 mg/5 mL and 500 mg/5 mL. Sagent IV premix: 200 mg/100 mL and 400 mg/200 mL in 5% dextrose. Selected ophthalmic solution and ointment: 0.3%. Genus/Cetraxal single-use otic solution: 0.2%, delivering 0.5 mg in 0.25 mL. Current FDA ER status is verified separately; current generic dispensing directions are not supplied here. Steroid combinations and discontinued Otiprio are excluded."
+        ]
+      },
+      "source_sections": {
+        "ciprooral": [
+          "3",
+          "16"
+        ],
+        "ciproiv": [
+          "3",
+          "16"
+        ],
+        "ciproeye": [
+          "DESCRIPTION",
+          "HOW SUPPLIED"
+        ],
+        "ciprooint": [
+          "DESCRIPTION",
+          "HOW SUPPLIED"
+        ],
+        "ciproear": [
+          "3",
+          "16"
+        ],
+        "cetraxal": [
+          "3",
+          "16"
+        ],
+        "erapp": [
+          "Products"
+        ],
+        "orange2026": [
+          "Prescription / discontinued product lists"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Cipro tablets: 20–25°C, excursions 15–30°C. Suspension components: below 25°C with permitted excursions; mixed suspension: 25°C with permitted excursions for 14 days, never freeze, discard after the course. IV bags: 5–25°C, protect light and freezing; discard unused portion. Selected eye solution/ointment: 2–25°C; solution protected from light. Ear solution: 15–25°C, unused containers in pouch away from light, discard used containers. Follow exact manufacturer packaging."
+        ]
+      },
+      "source_sections": {
+        "ciprooral": [
+          "2.5",
+          "2.6",
+          "16"
+        ],
+        "ciproiv": [
+          "16"
+        ],
+        "ciproeye": [
+          "HOW SUPPLIED"
+        ],
+        "ciprooint": [
+          "HOW SUPPLIED"
+        ],
+        "ciproear": [
+          "16"
+        ],
+        "cetraxal": [
+          "16"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "Ciprofloxacin/steroid combinations excluded and separately catalogued.",
+    "No current generic ER regimen, conversion, imprint or storage directions asserted; 2021 discontinued-reference label not represented as current generic PI.",
+    "Discontinued Otiprio/Proquin/Cipro XR regimens excluded.",
+    "No unaccessed journal guideline supplement or current generic ER PI claimed."
+  ],
+  "resolved_source_findings": [
+    "Systemic boxed warnings separated from unboxed eye/ear labels.",
+    "Sandoz solution all-age evidence differs from Ciloxan ointment below-2 gap and otic below-1 gap.",
+    "CDC gyrA-susceptible exception dose is 500 mg once, not the oral label’s older 250 mg gonorrhea example.",
+    "Adult oral versus IV renal tables have different thresholds and the selected IV table supplies no separate dialysis row.",
+    "IDSA 2025 shorter adult cUTI duration is distinguished from labeled durations and pediatric/chronic-prostatitis regimens.",
+    "Older public Mylan ER page updated by secondary website in 2026 still carries March 2019 label and discontinued product; not used as current primary PI."
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, essential safety, three hero facts, cited disclosures, four safety cards and three product cards.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending",
+    "mobile_content_precheck": "All dose tables use two columns and breakable prose; parent 390 px rendered article-width gate pending."
+  },
+  "monograph_sha256": "2556b384a6ba8e8c9e9ec696bf36c215b5d1b68f7dfba9704b3de19b6b291394",
+  "verified_current_formulation_status": "source_reviewed within current oral IR/suspension, IV premix, selected eye and ear label scope",
+  "regulatory_source_details": {
+    "orange2026": {
+      "version": "46th edition / 2026 current public download",
+      "reviewed_pdf_pages_zero_based": [
+        133,
+        689,
+        690
+      ],
+      "retrieved_pdf": "/tmp/nas-drug-sources/orange2026.pdf"
+    },
+    "erapp": {
+      "application": "ANDA077701",
+      "latest_labeling_supplement": "17 · 2024-09-20",
+      "reviewed": "Complete current product and submission arrays",
+      "current_ndc": "Not verified from retrieved current official PI/NDC listing; no guessed NDC published"
+    },
+    "erref2021": {
+      "version": "NDA021473 supplement 43",
+      "approval_date": "2021-03-30",
+      "document_posted_date": "2021-04-01",
+      "clinical_use": "Historical reference formulation distinction only; current generic actionable dosing explicitly withheld"
+    }
+  },
+  "front_matter_source_map": {
+    "name_synonym_description_facts": {
+      "ciprooral": [
+        "3",
+        "16"
+      ],
+      "ciproeye": [
+        "DESCRIPTION"
+      ],
+      "ciprooint": [
+        "DESCRIPTION"
+      ],
+      "ciproear": [
+        "3"
+      ],
+      "erapp": [
+        "Products and labeling supplement 17"
+      ]
+    },
+    "essential_safety": {
+      "ciprooral": [
+        "Boxed warning",
+        "4.2",
+        "5.1–5.5"
+      ],
+      "ciproiv": [
+        "Boxed warning",
+        "4.2",
+        "5.1–5.5"
+      ],
+      "ciproear": [
+        "5.1"
+      ]
+    }
+  },
+  "source_review_detail": "Full relevant primary product-label sections reviewed for all published actionable claims: indications, route/formulation/age distinctions, dose, contraindications, warnings, interactions, populations, renal/hepatic considerations, pharmacology, monitoring/counseling and product storage. Exact public guideline recommendation/rationale scope is recorded. Ciprofloxacin current ER-PI access remains explicitly uncompleted; no unverified ER directions published.",
+  "status_scope": "Bounded published actionable profile only: current selected oral IR/suspension, IV premix, ophthalmic and otic labels plus verified regulatory ER status. Current generic ER clinical directions remain outside verified scope and require specialist/current-PI review.",
+  "independent_scope_assessment": "Independent reviewer reported the explicit non-actionable ER access gap is outside executable regimens, with no material mismatch in published claims; author concurs after checking actual profile and exclusion statements. This does not certify current generic ER directions.",
+  "formulationReviewGaps": [
+    {
+      "id": "current-generic-ER-PI",
+      "status": "requires_review",
+      "formulation": "Dr. Reddy’s ciprofloxacin ER total 1000 mg, ANDA077701 product 001",
+      "verified": "FDA current application and 2026 Orange Book prescription status; latest labeling supplement 17 approved September 20, 2024",
+      "unavailable": "Current generic complete prescribing directions not retrieved; current API record attaches no PI. DailyMed ER record is old and not substituted. Manufacturer 500 mg packaging-document link returned HTTP 404.",
+      "published_mitigation": "ER numeric dosing, organ adjustments, specific product imprints/storage and conversion withheld. Current FDA status distinguished from discontinued reference label. Public profile explicitly flags current-PI review need.",
+      "integration_requirement": "Explicit bounded-profile source review permits assessment of published verified claims only; current generic ER directions remain requires_review and must not be called complete.",
+      "classification": "Unresolved product-specific source-access gap outside all published executable ER regimens",
+      "reviewStatus": "requires_review",
+      "scope": "Excluded current generic ER executable directions; current ER regulatory status only is verified in published profile"
+    }
+  ],
+  "gap_classification_rationale": "The sole unresolved ER prescribing-information retrieval concerns excluded executable ER regimens, not material unsupported assertions in the published current-formulation profile. Independent reviewer and author agree. The unresolved requires_review provenance and published warning are preserved; no whole-ingredient ER completion is claimed."
+}

@@ -1,0 +1,795 @@
+{
+  "slug": "ofloxacin",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "SelectedModavar200/300/400oraladultnon-STIinfectiontable,Apotex0.3ophthalmicconjunctivitis/ulcer and0.3oticdiagnosis-age-regimens; currentaccessibleCDCprimarySTIguidancedistinguishesretainedlabel.",
+  "excludedRegimens": [
+    "Legacylabelnumericgonorrhea/mixedSTI/chlamydia/PIDregimensnot currentprescribingdefaults",
+    "CurrentIVavailability/pump/compoundingnotinferredfromoralPK",
+    "ExactCrCl50dosechosenwithoutsource/prescriberclarification",
+    "TubeAOMage12generichandoutdoseharmonizationnotinvented;actualdiagnosis-specificprescriptionrequired",
+    "Belowlabeledpediatriclocalages/oral<18algorithms",
+    "Universalcornealtransitionday orrenalhepaticcombinedalgorithm",
+    "Universalopened-dropdiscardtime"
+  ],
+  "sources": [
+    {
+      "id": "label",
+      "title": "Ofloxacin tablets · Prescribing information and Medication Guide",
+      "publisher": "DailyMed / Modavar",
+      "note": "Current SPL version 3, effective 2026-06-06. ANDA091656; current SPL retains older infection regimens requiring guideline context.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=93ed9f70-b44f-496b-bdfc-c1bd5f1c260b"
+    },
+    {
+      "id": "eye",
+      "title": "Ofloxacin ophthalmic solution 0.3% · Prescribing information",
+      "publisher": "DailyMed / Apotex",
+      "note": "Current SPL version 13, effective 2026-09-15. ANDA076513; current SPL retains June 2018 clinical label.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5117d567-2004-c5ed-1391-f8831864696f"
+    },
+    {
+      "id": "ear",
+      "title": "Ofloxacin otic solution 0.3% · Prescribing information and patient directions",
+      "publisher": "DailyMed / Apotex",
+      "note": "Current SPL version 10, effective 2026-09-15. ANDA076527; current SPL retains September 2018 clinical label. Age/diagnosis-specific directions reviewed.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8db221b1-32f3-f6ca-e404-71f56a860d08"
+    },
+    {
+      "id": "gonorrhea",
+      "title": "CDC · Current accessible gonorrhea treatment guidance",
+      "publisher": "Centers for Disease Control and Prevention",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/gonorrhea-adults.htm",
+      "note": "Current public CDC 2021 STI guideline page checked October 1, 2026; ofloxacin’s retained gonorrhea regimen is not a current recommended default."
+    },
+    {
+      "id": "chlamydia",
+      "title": "CDC · Chlamydia treatment guidance",
+      "publisher": "Centers for Disease Control and Prevention",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/chlamydia.htm",
+      "note": "Current accessible primary regimen section checked October 1, 2026; retained tablet-label regimens distinguished."
+    },
+    {
+      "id": "pid",
+      "title": "CDC · PID treatment guidance",
+      "publisher": "Centers for Disease Control and Prevention",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/pid.htm",
+      "note": "Current accessible primary treatment/quinolone-alternative section checked October 1, 2026; no generalized ofloxacin PID regimen supplied."
+    }
+  ],
+  "labelMetadata": [
+    {
+      "sourceId": "label",
+      "product": "ofloxacin-tablet",
+      "setid": "93ed9f70-b44f-496b-bdfc-c1bd5f1c260b",
+      "version": "3",
+      "effectiveTime": "20260606",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/93ed9f70-b44f-496b-bdfc-c1bd5f1c260b.xml",
+      "xmlSha256": "936fc983a0694098e1b17d9e3f91ad266d74e2b80a58b01248608a6a75d6202e",
+      "marketingAuthorization": [
+        {
+          "category": "ANDA",
+          "application": "ANDA091656"
+        },
+        {
+          "category": "ANDA",
+          "application": "ANDA091656"
+        },
+        {
+          "category": "ANDA",
+          "application": "ANDA091656"
+        }
+      ],
+      "clinicalVersion": "CurrentoralModavarJune2026SPLretainedlegacyinfectionregimens;currentApotexSept2026SPLretainsJune2018eye/Sept2018earclinicalrevision."
+    },
+    {
+      "sourceId": "eye",
+      "product": "ofloxacin-eye",
+      "setid": "5117d567-2004-c5ed-1391-f8831864696f",
+      "version": "13",
+      "effectiveTime": "20260915",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/5117d567-2004-c5ed-1391-f8831864696f.xml",
+      "xmlSha256": "81a3631de4a4370fe9c38934356f0ea6bedd7723e1b770f48e7b7f96e4b6ad94",
+      "marketingAuthorization": [
+        {
+          "category": "ANDA",
+          "application": "ANDA076513"
+        }
+      ],
+      "clinicalVersion": "CurrentoralModavarJune2026SPLretainedlegacyinfectionregimens;currentApotexSept2026SPLretainsJune2018eye/Sept2018earclinicalrevision."
+    },
+    {
+      "sourceId": "ear",
+      "product": "ofloxacin-ear",
+      "setid": "8db221b1-32f3-f6ca-e404-71f56a860d08",
+      "version": "10",
+      "effectiveTime": "20260915",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/8db221b1-32f3-f6ca-e404-71f56a860d08.xml",
+      "xmlSha256": "0dfcdf33d801d798d64803b045e4ec75fd78f004733b5b836e09fdcf2020d501",
+      "marketingAuthorization": [
+        {
+          "category": "ANDA",
+          "application": "ANDA076527"
+        }
+      ],
+      "clinicalVersion": "CurrentoralModavarJune2026SPLretainedlegacyinfectionregimens;currentApotexSept2026SPLretainsJune2018eye/Sept2018earclinicalrevision."
+    }
+  ],
+  "evidence": [
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/ofloxacin-tablet.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/ofloxacin/ofloxacin-tablet.xml",
+      "sha256": "936fc983a0694098e1b17d9e3f91ad266d74e2b80a58b01248608a6a75d6202e",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/93ed9f70-b44f-496b-bdfc-c1bd5f1c260b.xml"
+    },
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/ofloxacin-tablet-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/ofloxacin/ofloxacin-tablet-sections.json",
+      "sha256": "89faea43194fd6541b56b6ccd80706d106513e23153c08996959da0725866d23",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/93ed9f70-b44f-496b-bdfc-c1bd5f1c260b.xml"
+    },
+    {
+      "sourceId": "eye",
+      "localEvidence": "/tmp/nas-drug-sources/ofloxacin-eye.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/ofloxacin/ofloxacin-eye.xml",
+      "sha256": "81a3631de4a4370fe9c38934356f0ea6bedd7723e1b770f48e7b7f96e4b6ad94",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/5117d567-2004-c5ed-1391-f8831864696f.xml"
+    },
+    {
+      "sourceId": "eye",
+      "localEvidence": "/tmp/nas-drug-sources/ofloxacin-eye-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/ofloxacin/ofloxacin-eye-sections.json",
+      "sha256": "f59237fd520016e72947def2d4a058e1324e675a9d13b5593a92a14621ec29f6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/5117d567-2004-c5ed-1391-f8831864696f.xml"
+    },
+    {
+      "sourceId": "ear",
+      "localEvidence": "/tmp/nas-drug-sources/ofloxacin-ear.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/ofloxacin/ofloxacin-ear.xml",
+      "sha256": "0dfcdf33d801d798d64803b045e4ec75fd78f004733b5b836e09fdcf2020d501",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/8db221b1-32f3-f6ca-e404-71f56a860d08.xml"
+    },
+    {
+      "sourceId": "ear",
+      "localEvidence": "/tmp/nas-drug-sources/ofloxacin-ear-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/ofloxacin/ofloxacin-ear-sections.json",
+      "sha256": "3557ea3df149060dd4fa25852d4752f89e9932c34e72ce3a4af15aa36059ea7d",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/8db221b1-32f3-f6ca-e404-71f56a860d08.xml"
+    },
+    {
+      "sourceId": "gonorrhea/chlamydia/pid",
+      "localEvidence": "/tmp/nas-drug-sources/ofloxacin-guidance-web.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/ofloxacin/ofloxacin-guidance-web.json",
+      "sha256": "e42b57cafbf8c138dd45a00d2ea3a03b274c95d6cfb2d6183217cc310b96fb7f",
+      "url": "Current accessible CDC primary STI guideline pages listed in sources"
+    }
+  ],
+  "sourceEvidenceRoot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/ofloxacin",
+  "sourceManifest": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/ofloxacin/source-manifest.json",
+  "assertionToSourceMap": [
+    {
+      "section": "indications",
+      "card": "Oral labeled use",
+      "assertions": {
+        "paragraphs": [
+          "Selected tablets treat adult susceptible infections listed for bronchitis exacerbation, community-acquired pneumonia, uncomplicated skin/soft tissue infection, cystitis, complicated UTI and E. coli prostatitis. Reserve acute bacterial exacerbation of chronic bronchitis and uncomplicated cystitis for patients with no alternative treatment options. Obtain cultures/susceptibility and consider local resistance; do not use for viral illness."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "OralINDICATIONSdesignatedadultsusceptible infections and Box/Indicationsbronchitis/cystitisreserve noalternative"
+      },
+      "review": "Full supporting primary clinical sections read. Clinicalcounsel synthesis identified; dose/route/population/version differences and source discrepancies preserved explicitly."
+    },
+    {
+      "section": "indications",
+      "card": "Retained STI indications and current practice",
+      "assertions": {
+        "paragraphs": [
+          "The current oral label retains gonorrhea, chlamydial urethritis/cervicitis, mixed infection and PID indications/regimens. CDC recommends different contemporary regimens; empiric ofloxacin is not a current gonorrhea treatment default, and it is not listed in current recommended chlamydia or PID regimens. Those legacy numeric STI regimens are not presented here as prescribing instructions. Use current STI guidance and susceptibility/specialist assessment."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "gonorrhea",
+        "chlamydia",
+        "pid"
+      ],
+      "sourceSections": {
+        "label": "OralretainedINDICATIONS/DOSAGESTI vscurrentCDCgonorrhearecommendedceftriaxone/quinoloneresistance, chlamydiaprimaryregimensnotoflo,PIDquinolonenotdefault/alternativesnotoflo;numericlegacy STIexcluded",
+        "gonorrhea": "OralretainedINDICATIONS/DOSAGESTI vscurrentCDCgonorrhearecommendedceftriaxone/quinoloneresistance, chlamydiaprimaryregimensnotoflo,PIDquinolonenotdefault/alternativesnotoflo;numericlegacy STIexcluded",
+        "chlamydia": "OralretainedINDICATIONS/DOSAGESTI vscurrentCDCgonorrhearecommendedceftriaxone/quinoloneresistance, chlamydiaprimaryregimensnotoflo,PIDquinolonenotdefault/alternativesnotoflo;numericlegacy STIexcluded",
+        "pid": "OralretainedINDICATIONS/DOSAGESTI vscurrentCDCgonorrhearecommendedceftriaxone/quinoloneresistance, chlamydiaprimaryregimensnotoflo,PIDquinolonenotdefault/alternativesnotoflo;numericlegacy STIexcluded"
+      },
+      "review": "Full supporting primary clinical sections read. Clinicalcounsel synthesis identified; dose/route/population/version differences and source discrepancies preserved explicitly."
+    },
+    {
+      "section": "indications",
+      "card": "Ophthalmic and otic indications",
+      "assertions": {
+        "paragraphs": [
+          "Ophthalmic 0.3% treats susceptible bacterial conjunctivitis or corneal ulcers; infant safety below 1 year is unestablished. Otic 0.3% treats otitis externa from age 6 months, tympanostomy-tube acute otitis media from age 1, and chronic suppurative otitis media with a perforated tympanic membrane from age 12. Diagnosis and age determine the ear regimen; this is not every middle-ear infection."
+        ]
+      },
+      "sourceIds": [
+        "eye",
+        "ear"
+      ],
+      "sourceSections": {
+        "eye": "EyeINDICATIONS/Pediatric<1unestablished;earINDICATIONS/Pediatric6moexterna1tubeAOM12perforatedCSOM",
+        "ear": "EyeINDICATIONS/Pediatric<1unestablished;earINDICATIONS/Pediatric6moexterna1tubeAOM12perforatedCSOM"
+      },
+      "review": "Full supporting primary clinical sections read. Clinicalcounsel synthesis identified; dose/route/population/version differences and source discrepancies preserved explicitly."
+    },
+    {
+      "section": "dosage",
+      "card": "Selected adult oral label regimens",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Labeled infection",
+            "Normal-renal regimen"
+          ],
+          "rows": [
+            [
+              "Bronchitis exacerbation; pneumonia; uncomplicated skin infection",
+              "400 mg every 12 hours for 10 days; bronchitis restricted to no alternatives"
+            ],
+            [
+              "Cystitis: E. coli or K. pneumoniae",
+              "200 mg every 12 hours for 3 days; reserve if no alternatives"
+            ],
+            [
+              "Cystitis: other label-approved organisms",
+              "200 mg every 12 hours for 7 days; reserve if no alternatives"
+            ],
+            [
+              "Complicated UTI",
+              "200 mg every 12 hours for 10 days"
+            ],
+            [
+              "E. coli prostatitis",
+              "300 mg every 12 hours for 6 weeks"
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "OralDOSAGEfullinfectionnormalrenal400q12x10bronchitisCAPskin;200q12x3EcoliKpneumo/x7othercystitis/x10cUTI;300q12x6wkEcoli prostatitis andreservebox;notcurrentguidelinepriority"
+      },
+      "review": "Full supporting primary clinical sections read. Clinicalcounsel synthesis identified; dose/route/population/version differences and source discrepancies preserved explicitly."
+    },
+    {
+      "section": "dosage",
+      "card": "Oral renal and hepatic adjustment",
+      "assertions": {
+        "paragraphs": [
+          "After a normal initial dose, the selected renal table gives the usual infection-specific unit dose every 24 hours at creatinine clearance 20–50 mL/min, and half that unit dose every 24 hours below 20. Its prose says adjustment below 50 while the table includes 50; at the exact boundary obtain prescription clarification rather than silently harmonize the wording. Severe liver dysfunction/cirrhosis has a 400 mg/day maximum. Coexisting renal/hepatic disease requires individualized selection, not an invented combined algorithm. Separate listed cation products by at least 2 hours before and after tablets."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "OralDOSAGE20–50usualunitq24/<20halfq24afterusualinitial;prose<50vsinclusivetable50explicit;cirrhosis400day;cation2hboth"
+      },
+      "review": "Full supporting primary clinical sections read. Clinicalcounsel synthesis identified; dose/route/population/version differences and source discrepancies preserved explicitly."
+    },
+    {
+      "section": "dosage",
+      "card": "Ophthalmic conjunctivitis",
+      "assertions": {
+        "paragraphs": [
+          "Days 1–2: 1–2 drops in the affected eye(s) every 2–4 hours. Days 3–7: 1–2 drops four times daily. These eye directions do not apply to otic drops."
+        ]
+      },
+      "sourceIds": [
+        "eye"
+      ],
+      "sourceSections": {
+        "eye": "EyeDOSAGEconjunctivitis1–2dropq2–4hday1/2thenQIDday3–7"
+      },
+      "review": "Full supporting primary clinical sections read. Clinicalcounsel synthesis identified; dose/route/population/version differences and source discrepancies preserved explicitly."
+    },
+    {
+      "section": "dosage",
+      "card": "Ophthalmic corneal ulcer",
+      "assertions": {
+        "paragraphs": [
+          "Days 1–2: 1–2 drops in the affected eye every 30 minutes while awake; also awaken about 4 and 6 hours after retiring for 1–2 drops. Days 3 through 7–9: 1–2 drops hourly while awake. From day 7–9 through completion: 1–2 drops four times daily. The label’s transition window requires ophthalmologist-directed timing and close follow-up, not a single fixed day chosen here."
+        ]
+      },
+      "sourceIds": [
+        "eye"
+      ],
+      "sourceSections": {
+        "eye": "EyeDOSAGEcornealulcer30minawakepluswake4/6hday1/2;day3through7–9hourly;day7–9endQIDtransitionclinician"
+      },
+      "review": "Full supporting primary clinical sections read. Clinicalcounsel synthesis identified; dose/route/population/version differences and source discrepancies preserved explicitly."
+    },
+    {
+      "section": "dosage",
+      "card": "Otic diagnosis-specific regimens",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Ear diagnosis / age",
+            "Selected directions"
+          ],
+          "rows": [
+            [
+              "Otitis externa: age 6 months to under 13",
+              "5 drops in affected ear once daily for 7 days"
+            ],
+            [
+              "Otitis externa: age 13 or older",
+              "10 drops in affected ear once daily for 7 days"
+            ],
+            [
+              "Acute otitis media with tubes: age 1–12",
+              "Full dosage section: 5 drops twice daily for 10 days; see age-12 clarification below"
+            ],
+            [
+              "Chronic suppurative otitis media, perforation: age 12+",
+              "10 drops twice daily for 14 days"
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "ear"
+      ],
+      "sourceSections": {
+        "ear": "EarDOSAGEexterna5QD7peds10QD7≥13;AOMtube1–12fiveBID10;CSOM≥12tenBID14;patienthandoutboundarysupport"
+      },
+      "review": "Full supporting primary clinical sections read. Clinicalcounsel synthesis identified; dose/route/population/version differences and source discrepancies preserved explicitly."
+    },
+    {
+      "section": "dosage",
+      "card": "Ear technique and age-boundary clarification",
+      "assertions": {
+        "paragraphs": [
+          "Warm the bottle in the hand for 1–2 minutes, lie with affected ear upward, instill and remain for 5 minutes. Pump the tragus 4 times for tube/perforation middle-ear treatment. The patient handout gives generic middle-ear directions of 10 drops at age 12+, while the full tube-AOM section includes age 12 in its 5-drop range; at age 12 confirm the diagnosis-specific prescription rather than choose from that generic handout. For otitis externa, the handout clearly specifies 5 drops below 13 and 10 at 13+."
+        ]
+      },
+      "sourceIds": [
+        "ear"
+      ],
+      "sourceSections": {
+        "ear": "EarfullDOSAGE/InformationPatientswarm1–2min/position5min/tragus4;patienthandoutmiddleear≥12tenvsAOMfullincludes12five internalconflict diagnosis-specificprescriptionclarification"
+      },
+      "review": "Full supporting primary clinical sections read. Clinicalcounsel synthesis identified; dose/route/population/version differences and source discrepancies preserved explicitly."
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Oral fluoroquinolones can cause disabling, potentially irreversible tendon injury, neuropathy and CNS/psychiatric effects, sometimes together within hours to weeks. Stop immediately for tendon pain/swelling, burning/tingling/numbness/weakness or serious CNS symptoms and seek assessment. Rest a painful tendon; rupture can occur during or months after therapy. Risk rises with age over 60, corticosteroids, transplant history, renal failure or prior tendon disease, but injury can occur without them.",
+          "Avoid oral ofloxacin in myasthenia gravis. Reserve in known/high-risk aortic aneurysm situations when no antibacterial alternatives exist; sudden severe chest, abdominal or back pain requires emergency care. Avoid with known QT prolongation, uncorrected low potassium or listed class IA/III antiarrhythmics. Diabetes medicines increase dysglycemia concerns; severe hypoglycemia can cause coma/death, requiring stopping and treatment.",
+          "Oral therapy can cause severe allergy/skin reactions, liver/kidney injury and C. difficile diarrhea during or over 2 months after treatment. Stop for rash/hypersensitivity or serious neurologic/tendon effects, and promptly evaluate significant diarrhea. Maintain hydration and avoid excessive sunlight/UV; stop for phototoxicity.",
+          "Eye and ear products can cause allergy despite lower systemic exposure. Stop for rash or hypersensitivity. Eye drops are not for injection or introduction into the anterior chamber; ear drops are not for ophthalmic use or injection. Prolonged local use can select nonsusceptible organisms/fungi. Do not contaminate bottle tips."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "eye",
+        "ear"
+      ],
+      "sourceSections": {
+        "label": "OralfullWARNINGSdisablingallrisks/tendonhoursmonthsriskfactors/stopavoidMG/aorta/seriousallergyGIglucose;PRECAUTIONSGeneralQTphotosensitivityhydration;eyeWARNINGS noinjectanterior/earnoteyeinject/alllocalallergyovergrowth",
+        "eye": "OralfullWARNINGSdisablingallrisks/tendonhoursmonthsriskfactors/stopavoidMG/aorta/seriousallergyGIglucose;PRECAUTIONSGeneralQTphotosensitivityhydration;eyeWARNINGS noinjectanterior/earnoteyeinject/alllocalallergyovergrowth",
+        "ear": "OralfullWARNINGSdisablingallrisks/tendonhoursmonthsriskfactors/stopavoidMG/aorta/seriousallergyGIglucose;PRECAUTIONSGeneralQTphotosensitivityhydration;eyeWARNINGS noinjectanterior/earnoteyeinject/alllocalallergyovergrowth"
+      },
+      "review": "Full supporting primary clinical sections read. Clinicalcounsel synthesis identified; dose/route/population/version differences and source discrepancies preserved explicitly."
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Selected oral tablets contraindicate prior ofloxacin or quinolone hypersensitivity. Eye/ear solutions additionally include hypersensitivity to their components. Myasthenia gravis, prior serious fluoroquinolone tendon/nerve reactions, QT-risk combinations and high aortic risk are major oral avoid/reserve instructions, distinct from the formal hypersensitivity contraindication section."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "eye",
+        "ear"
+      ],
+      "sourceSections": {
+        "label": "ExactformaloralCONTRAquinoloneallergyandlocalcomponentallergy;othermajororalavoidinstructionsdistinct",
+        "eye": "ExactformaloralCONTRAquinoloneallergyandlocalcomponentallergy;othermajororalavoidinstructionsdistinct",
+        "ear": "ExactformaloralCONTRAquinoloneallergyandlocalcomponentallergy;othermajororalavoidinstructionsdistinct"
+      },
+      "review": "Full supporting primary clinical sections read. Clinicalcounsel synthesis identified; dose/route/population/version differences and source discrepancies preserved explicitly."
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning",
+      "assertions": {
+        "paragraphs": [
+          "The oral tablet box covers disabling tendon/neuropathy/CNS reactions, exacerbation of myasthenia gravis and reserving selected uncomplicated infections for no alternatives. The selected ophthalmic/otic labels have no boxed warning; their route-specific warnings and age boundaries still apply."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "eye",
+        "ear"
+      ],
+      "sourceSections": {
+        "label": "ActualoralfullBox tendonnerveCNSMG/selectednorealalternative vsabsenceboxbothlocalfullprimarylabels",
+        "eye": "ActualoralfullBox tendonnerveCNSMG/selectednorealalternative vsabsenceboxbothlocalfullprimarylabels",
+        "ear": "ActualoralfullBox tendonnerveCNSMG/selectednorealalternative vsabsenceboxbothlocalfullprimarylabels"
+      },
+      "review": "Full supporting primary clinical sections read. Clinicalcounsel synthesis identified; dose/route/population/version differences and source discrepancies preserved explicitly."
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Oral reports include nausea, insomnia, headache, dizziness, diarrhea, vomiting, rash and serious systemic reactions described above. Ophthalmic use commonly causes transient burning/discomfort and may cause stinging, redness, itching, blurred vision or eye pain. Otic reports include application discomfort, itching, earache, dizziness and altered taste with nonintact eardrums. Different-route trial rates and spontaneous reports are not interchangeable."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "eye",
+        "ear"
+      ],
+      "sourceSections": {
+        "label": "OralADRcommon andserious;eyeADRlocalocular andearADRroute/diagnosisratelimits",
+        "eye": "OralADRcommon andserious;eyeADRlocalocular andearADRroute/diagnosisratelimits",
+        "ear": "OralADRcommon andserious;eyeADRlocalocular andearADRroute/diagnosisratelimits"
+      },
+      "review": "Full supporting primary clinical sections read. Clinicalcounsel synthesis identified; dose/route/population/version differences and source discrepancies preserved explicitly."
+    },
+    {
+      "section": "interactions",
+      "card": "Cations and oral absorption",
+      "assertions": {
+        "paragraphs": [
+          "Do not take calcium/magnesium/aluminum antacids, sucralfate, iron, zinc-containing multivitamins or buffered didanosine within 2 hours before or after oral ofloxacin; chelation can substantially reduce exposure. This is a tablet instruction, not a spacing rule for ear/eye drops."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "OralDrugInteractionsandDOSAGEcation2hprepostexactagents"
+      },
+      "review": "Full supporting primary clinical sections read. Clinicalcounsel synthesis identified; dose/route/population/version differences and source discrepancies preserved explicitly."
+    },
+    {
+      "section": "interactions",
+      "card": "Systemic medicines",
+      "assertions": {
+        "paragraphs": [
+          "Monitor coagulation with warfarin and glucose with insulin or oral antidiabetics. Theophylline levels/adverse effects can rise; monitor and adjust as appropriate. NSAIDs may increase CNS stimulation/seizure risk. Avoid the listed QT-risk antiarrhythmics and correct electrolyte abnormalities. Corticosteroids increase tendon risk. The label describes some other interactions as class observations or unstudied for ofloxacin; do not invent universal dose adjustments."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "OralDrugInteractionswarfarinPT/theophyllinelevels/NSAIDseizure/antidiabeticsglucose;PRECAUTIONSQT/Warningscorticosteroidtendon;unstudiedclassinteractionsnotconvertednumerically"
+      },
+      "review": "Full supporting primary clinical sections read. Clinicalcounsel synthesis identified; dose/route/population/version differences and source discrepancies preserved explicitly."
+    },
+    {
+      "section": "interactions",
+      "card": "Local product evidence",
+      "assertions": {
+        "paragraphs": [
+          "Dedicated interaction studies were not conducted for the selected eye or ear solutions. The eye label cites some systemic quinolone interactions, while studied ocular/otic plasma levels are far below standard oral exposure. Review the patient and actual route without automatically applying oral numerical dose changes or claiming that local treatment has no systemic effects."
+        ]
+      },
+      "sourceIds": [
+        "eye",
+        "ear"
+      ],
+      "sourceSections": {
+        "eye": "EyeDrugInteractionsnostudies/systemicclassobservations;earDrugInteractionsnostudies;localPharmacokineticslowlevelsnotzero",
+        "ear": "EyeDrugInteractionsnostudies/systemicclassobservations;earDrugInteractionsnostudies;localPharmacokineticslowlevelsnotzero"
+      },
+      "review": "Full supporting primary clinical sections read. Clinicalcounsel synthesis identified; dose/route/population/version differences and source discrepancies preserved explicitly."
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and breastfeeding",
+      "assertions": {
+        "paragraphs": [
+          "Adequate controlled pregnancy data are lacking; the selected labels advise use only if potential benefit justifies fetal risk. Oral dosing produces milk levels similar to plasma and requires a nursing-versus-drug decision under the label. Milk transfer after eye/ear administration is unknown; those labels likewise call for an individualized decision. Do not propagate obsolete pregnancy-category letters or infer zero exposure."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "eye",
+        "ear"
+      ],
+      "sourceSections": {
+        "label": "Oral/eye/earPregnancybenefitrisk/inadequatehuman;Nursing oral200milkplasma/localunknownmilkchoices noobsoletecategory",
+        "eye": "Oral/eye/earPregnancybenefitrisk/inadequatehuman;Nursing oral200milkplasma/localunknownmilkchoices noobsoletecategory",
+        "ear": "Oral/eye/earPregnancybenefitrisk/inadequatehuman;Nursing oral200milkplasma/localunknownmilkchoices noobsoletecategory"
+      },
+      "review": "Full supporting primary clinical sections read. Clinicalcounsel synthesis identified; dose/route/population/version differences and source discrepancies preserved explicitly."
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": {
+        "paragraphs": [
+          "Oral safety/effectiveness below 18 are not established. Ophthalmic safety below 1 year is unestablished. Otic age limits depend on diagnosis: 6 months for externa, 1 year for tube-associated AOM and 12 for perforated chronic suppurative disease; confirm the age-12 dose discrepancy before treatment. Older oral-treated patients have greater tendon/aortic/QT vulnerability and may need renal adjustment."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "eye",
+        "ear"
+      ],
+      "sourceSections": {
+        "label": "OralPediatric<18unestablished/eye<1/earPediatricexactages;earfullDOSAGE/handoutage12conflict;oralGeriatricrenal/tendon/QT/aorta",
+        "eye": "OralPediatric<18unestablished/eye<1/earPediatricexactages;earfullDOSAGE/handoutage12conflict;oralGeriatricrenal/tendon/QT/aorta",
+        "ear": "OralPediatric<18unestablished/eye<1/earPediatricexactages;earfullDOSAGE/handoutage12conflict;oralGeriatricrenal/tendon/QT/aorta"
+      },
+      "review": "Full supporting primary clinical sections read. Clinicalcounsel synthesis identified; dose/route/population/version differences and source discrepancies preserved explicitly."
+    },
+    {
+      "section": "populations",
+      "card": "Kidney and liver impairment",
+      "assertions": {
+        "paragraphs": [
+          "Tablets require reduced-frequency/dose selection by creatinine clearance and a 400 mg/day ceiling in severe hepatic dysfunction. Use the actual table and resolve its exact-50 boundary wording. Eye/ear labels supply no numerical renal/hepatic adjustment tables; do not scale local drops from systemic renal dosing."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "eye",
+        "ear"
+      ],
+      "sourceSections": {
+        "label": "OralDOSAGErenal/cirrhosismax exact50clarification;fulllocal labelsnoorgantables",
+        "eye": "OralDOSAGErenal/cirrhosismax exact50clarification;fulllocal labelsnoorgantables",
+        "ear": "OralDOSAGErenal/cirrhosismax exact50clarification;fulllocal labelsnoorgantables"
+      },
+      "review": "Full supporting primary clinical sections read. Clinicalcounsel synthesis identified; dose/route/population/version differences and source discrepancies preserved explicitly."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and susceptibility",
+      "assertions": {
+        "paragraphs": [
+          "Ofloxacin inhibits bacterial DNA gyrase and topoisomerase IV functions. Resistance and local epidemiology determine usefulness; some organisms can develop resistance during therapy. Culture/susceptibility and clinical reassessment are more useful than assuming every historical labeled organism remains susceptible."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "OralMICROBIOLOGY DNA gyrase/topoIV/selectionresistance andINDICATIONScultureslocal"
+      },
+      "review": "Full supporting primary clinical sections read. Clinicalcounsel synthesis identified; dose/route/population/version differences and source discrepancies preserved explicitly."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Systemic and local kinetics",
+      "assertions": {
+        "paragraphs": [
+          "Tablet bioavailability is about 98%; oral peaks occur in 1–2 hours and protein binding is about 32%. Elimination is mainly renal, with 65–80% recovered unchanged in urine within 48 hours. The label describes biphasic elimination; a single short half-life does not replace its renal-adjustment table. Ocular studies found serum peaks over 1,000-fold lower than standard oral dosing; otic studies with tubes/perforations found low ng/mL serum levels, with a detected maximum 10 ng/mL in studied adults. These are studied-use observations, not universal zero-exposure guarantees."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "eye",
+        "ear"
+      ],
+      "sourceSections": {
+        "label": "OralCLINICALPHARM98/peak1–2h/binding32/urine65–80unchanged48h/biphasic;EyePKserum>1000lowerstandardoral;EarPKmax10ngmLstudiedadults",
+        "eye": "OralCLINICALPHARM98/peak1–2h/binding32/urine65–80unchanged48h/biphasic;EyePKserum>1000lowerstandardoral;EarPKmax10ngmLstudiedadults",
+        "ear": "OralCLINICALPHARM98/peak1–2h/binding32/urine65–80unchanged48h/biphasic;EyePKserum>1000lowerstandardoral;EarPKmax10ngmLstudiedadults"
+      },
+      "review": "Full supporting primary clinical sections read. Clinicalcounsel synthesis identified; dose/route/population/version differences and source discrepancies preserved explicitly."
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": {
+        "paragraphs": [
+          "For tablets review susceptibility, renal/hepatic function, hydration, QT/electrolyte risks, neurologic/tendon history, myasthenia and aortic risk; monitor glucose or INR when relevant. Prolonged treatment warrants organ-function review. Corneal ulcers require ophthalmic examination/follow-up. If ear infection fails to improve after 1 week, obtain reassessment/cultures; persistent otorrhea after a course or at least 2 episodes within 6 months warrants evaluation for underlying pathology."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "eye",
+        "ear"
+      ],
+      "sourceSections": {
+        "label": "OralWARNINGS/PRECAUTIONS baseline risks/periodicorgan ifprolonged/glucoseINR;eyePRECAUTIONSslitlamp;earGeneralnoimprove1weekcultures/persistotorrhea or≥2in6mo pathology",
+        "eye": "OralWARNINGS/PRECAUTIONS baseline risks/periodicorgan ifprolonged/glucoseINR;eyePRECAUTIONSslitlamp;earGeneralnoimprove1weekcultures/persistotorrhea or≥2in6mo pathology",
+        "ear": "OralWARNINGS/PRECAUTIONS baseline risks/periodicorgan ifprolonged/glucoseINR;eyePRECAUTIONSslitlamp;earGeneralnoimprove1weekcultures/persistotorrhea or≥2in6mo pathology"
+      },
+      "review": "Full supporting primary clinical sections read. Clinicalcounsel synthesis identified; dose/route/population/version differences and source discrepancies preserved explicitly."
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "assertions": {
+        "paragraphs": [
+          "Take the prescribed course and contact the clinician for serious reactions rather than continue through them. Keep the oral cation spacing; maintain hydration and avoid excessive sun/UV. Verify eye/ear labeling, wash hands and avoid touching the dropper tip. Warm ear drops only in the hand, retain the correct position and use middle-ear tragus pumping as directed. Avoid swimming/wetting an infected ear unless permitted; worsening eye pain or vision needs prompt assessment."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "eye",
+        "ear"
+      ],
+      "sourceSections": {
+        "label": "OralInformationPatients/DOSAGE cationsunhydration;localInformationPatients tipsterility;earfullIFUtechnique/no swimclean dry;eyeclinicalworseningcounsel synthesis",
+        "eye": "OralInformationPatients/DOSAGE cationsunhydration;localInformationPatients tipsterility;earfullIFUtechnique/no swimclean dry;eyeclinicalworseningcounsel synthesis",
+        "ear": "OralInformationPatients/DOSAGE cationsunhydration;localInformationPatients tipsterility;earfullIFUtechnique/no swimclean dry;eyeclinicalworseningcounsel synthesis"
+      },
+      "review": "Full supporting primary clinical sections read. Clinicalcounsel synthesis identified; dose/route/population/version differences and source discrepancies preserved explicitly."
+    },
+    {
+      "section": "practice",
+      "card": "Overdose or wrong route",
+      "assertions": {
+        "paragraphs": [
+          "Contact medical/Poison Control services for overdose or wrong-route administration; severe neurologic, allergic or cardiac symptoms require emergency treatment. Oral overdose needs observation/supportive care and hydration; dialysis does not efficiently remove ofloxacin. Do not attempt home gastric decontamination. Ear drops must not be instilled into eyes; neither local formulation is injectable."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "eye",
+        "ear"
+      ],
+      "sourceSections": {
+        "label": "OralOVERDOSAGEhydration/support/no efficientHDorPD;eyeWARNINGSnoinject/earnoteyeinject/urgenterrorcounselclinical synthesis",
+        "eye": "OralOVERDOSAGEhydration/support/no efficientHDorPD;eyeWARNINGSnoinject/earnoteyeinject/urgenterrorcounselclinical synthesis",
+        "ear": "OralOVERDOSAGEhydration/support/no efficientHDorPD;eyeWARNINGSnoinject/earnoteyeinject/urgenterrorcounselclinical synthesis"
+      },
+      "review": "Full supporting primary clinical sections read. Clinicalcounsel synthesis identified; dose/route/population/version differences and source discrepancies preserved explicitly."
+    },
+    {
+      "section": "product",
+      "card": "Representative oral product",
+      "assertions": {
+        "facts": [
+          [
+            "Product",
+            "Modavar ofloxacin USP 200 mg tablet"
+          ],
+          [
+            "Route",
+            "Oral; prescription only"
+          ],
+          [
+            "Appearance",
+            "Light yellow to yellow oval film-coated; C213 in blue"
+          ],
+          [
+            "Example package",
+            "50 tablets · NDC 72241-072-02"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "ActualoralHOWSUPPLIED200C213yellowovalNDC50"
+      },
+      "review": "Full supporting primary clinical sections read. Clinicalcounsel synthesis identified; dose/route/population/version differences and source discrepancies preserved explicitly."
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Selected tablets: 200, 300 and 400 mg (C213, C212 and C211, respectively). Apotex ophthalmic solution 0.3% (3 mg/mL): sterile eye dropper with tan cap, 5 mL NDC 60505-0560-0 and 10 mL -1. Apotex otic 0.3%: 5 mL NDC 60505-0363-1 and 10 mL -2. Other manufacturers, historical injectable products and compounded regimens require separate verification; do not infer current IV availability from oral-label PK discussion."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "eye",
+        "ear"
+      ],
+      "sourceSections": {
+        "label": "OralHOWSUPPLIED3strengthimprints,eyeHOWSUPPLIED0.3tansterileNDC5/10mL andearHOWSUPPLIED0.3NDC5/10;historicalIVnotcurrentavailabilityinference",
+        "eye": "OralHOWSUPPLIED3strengthimprints,eyeHOWSUPPLIED0.3tansterileNDC5/10mL andearHOWSUPPLIED0.3NDC5/10;historicalIVnotcurrentavailabilityinference",
+        "ear": "OralHOWSUPPLIED3strengthimprints,eyeHOWSUPPLIED0.3tansterileNDC5/10mL andearHOWSUPPLIED0.3NDC5/10;historicalIVnotcurrentavailabilityinference"
+      },
+      "review": "Full supporting primary clinical sections read. Clinicalcounsel synthesis identified; dose/route/population/version differences and source discrepancies preserved explicitly."
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Tablets: 20–25°C, tight light-resistant container with required child-resistant closure. Selected eye drops: 25°C, excursions 15–30°C; protect from light. Selected ear drops: 20–25°C; protect from light. Keep tips clean and caps closed. No universal after-opening discard date is supplied in these selected labels; follow the dispensed product’s instructions rather than invent a 28-day rule."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "eye",
+        "ear"
+      ],
+      "sourceSections": {
+        "label": "OralHOWSUPPLIEDtightlight20–25childresistant;eye25exc15–30light/ear20–25light;fullselectedlabelsno universalopeneddiscard",
+        "eye": "OralHOWSUPPLIEDtightlight20–25childresistant;eye25exc15–30light/ear20–25light;fullselectedlabelsno universalopeneddiscard",
+        "ear": "OralHOWSUPPLIEDtightlight20–25childresistant;eye25exc15–30light/ear20–25light;fullselectedlabelsno universalopeneddiscard"
+      },
+      "review": "Full supporting primary clinical sections read. Clinicalcounsel synthesis identified; dose/route/population/version differences and source discrepancies preserved explicitly."
+    }
+  ],
+  "sourceDiscrepancies": [
+    {
+      "issue": "CurrenttabletSPLretainsoldSTI regimens thatare notcurrentCDCdefaultrecommendations.",
+      "resolution": "CurrentCDCprimarysourcesread,legacyindicationsacknowledgedbutnumeric STIalgorithms excluded;noofloxgonorrhea/Chlamydia/PIDprescribingdefault.",
+      "resolved": true
+    },
+    {
+      "issue": "Oraldoserenalprose<50 vsmaintenancetable20–50andGeneralcontainsincorrectCrClmg/mLunit.",
+      "resolution": "CorrecttablemL/minunitsretained,exact50needsclarificationratherthan falseharmonization;misprintedmg/mLnotpropagated.",
+      "resolvedWithinPublishedScope": true
+    },
+    {
+      "issue": "Oticexternafullpedswordingto13 vs13+adult;patienthandoutunder13clarifies. TubeAOMfull1–12fivevsgenericmiddle-earhandout12+ten.",
+      "resolution": "Externaboundaryunder13/≥13 matchespatientinstructions;AOMage12fulldoseandcontradictorygenerichandout explicitlyflaggedforprescriptionclarification;no universalmiddleearage12dose asserted.",
+      "resolvedWithinPublishedScope": true
+    },
+    {
+      "issue": "Cornealulcerday7–9transitionwindow notexactsingleday.",
+      "resolution": "Exactsourcewindowkept;ophthalmologistdirects transition andfollow-up.",
+      "resolved": true
+    },
+    {
+      "issue": "LocalcurrentSPLdatesvs2018clinicalrevision andoral-labelhistoricalIVPKdiscussion.",
+      "resolution": "Actualeffective/versionclinicaldatesidentified;nocurrentIVavailabilityororalsystemicadjustment extrapolatedtoeyear.",
+      "resolved": true
+    }
+  ],
+  "materialErrors": [],
+  "unresolvedMaterialGaps": [],
+  "limitations": [
+    "Source-reviewed onlywithinexplicitpublishedselectedproduct/regimen boundaries; sourceambiguousboundary cases clearlyflaggednotexecutableuniversalalgorithm.",
+    "Actualprimarypublicsourcesread;nopaywalledaccessclaimed.",
+    "Parentretainsbuild/render/releaseQA."
+  ],
+  "reviewedSourceSections": [
+    "Allsupportingselectedfullclinicalsectionsindication/dose/contra/warnings/interactions/organ/pregnancy/lactation/peds/geriatric/PK/ADR/monitor/counsel/product/handling;actualXMLauthorization andidentity;preciseeverycardmapabove."
+  ],
+  "verification": {
+    "schemaErrors": [],
+    "monographSha256": "1c5926b48f4ceeb020db7a862105ed88da1eeba9cd53fc65c185c349ec9ccddc",
+    "sectionIds": [
+      "indications",
+      "dosage",
+      "safety",
+      "interactions",
+      "populations",
+      "pharmacology",
+      "practice",
+      "product"
+    ],
+    "heroFacts": 3,
+    "safetyCardOrder": [
+      "Warnings and precautions",
+      "Contraindications",
+      "Boxed warning",
+      "Adverse reactions"
+    ],
+    "productCardOrder": [
+      "Representative oral product",
+      "Dosage forms and strengths",
+      "Storage and handling"
+    ],
+    "renderedPageQA": "Pending parent batch QA",
+    "displayTextWrap": "Two-column tables andnaturalspacing;parent390pxbounds QA pending"
+  }
+}
