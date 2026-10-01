@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import styles from "./DrugLibraryPagination.module.css";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { coreDrugs } from "@/data/drugLibrary";
 import { drugQuestions } from "@/data/drugQuestions";
@@ -16,11 +17,12 @@ function displayName(name) {
 
 export default function DrugLibrary() {
   const classMenuRef = useRef(null);
+  const resultsRef = useRef(null);
   const [mode, setMode] = useState("core");
   const [query, setQuery] = useState("");
   const [letter, setLetter] = useState("All");
   const [therapeuticClass, setTherapeuticClass] = useState("All classes");
-  const [limit, setLimit] = useState(36);
+  const [page, setPage] = useState(1);
   const [rxResults, setRxResults] = useState([]);
   const [searching, setSearching] = useState(false);
   const [serviceUnavailable, setServiceUnavailable] = useState(false);
@@ -71,12 +73,21 @@ export default function DrugLibrary() {
     };
   }, [mode, query]);
 
+  const pageCount = Math.max(1, Math.ceil(filtered.length / 9));
+  const currentPage = Math.min(page, pageCount);
+
+  function changePage(nextPage) {
+    setPage(nextPage);
+    resultsRef.current?.focus({ preventScroll: true });
+    resultsRef.current?.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth", block: "start" });
+  }
+
   function changeMode(nextMode) {
     setMode(nextMode);
     setQuery("");
     setLetter("All");
     setTherapeuticClass("All classes");
-    setLimit(36);
+    setPage(1);
   }
 
   return (
@@ -105,7 +116,7 @@ export default function DrugLibrary() {
         <label>
           <span className="sr-only">Search medications</span>
           <i aria-hidden="true">⌕</i>
-          <input value={query} onChange={(event) => { setQuery(event.target.value); setLimit(36); }} placeholder={mode === "core" ? "Search generic, brand, or class" : "Search the national medication vocabulary"} />
+          <input value={query} onChange={(event) => { setQuery(event.target.value); setPage(1); }} placeholder={mode === "core" ? "Search generic, brand, or class" : "Search the national medication vocabulary"} />
         </label>
         <p>{mode === "core" ? `${filtered.length} medications` : "Current RxNorm concepts"}</p>
       </div>}
@@ -130,7 +141,7 @@ export default function DrugLibrary() {
                   onClick={() => {
                     setTherapeuticClass(item);
                     setLetter("All");
-                    setLimit(36);
+                    setPage(1);
                     classMenuRef.current?.removeAttribute("open");
                   }}
                   key={item}
@@ -143,10 +154,10 @@ export default function DrugLibrary() {
             </div>
           </details>
           <div className="drug-library__letters" aria-label="Filter by first letter">
-            {letters.map((item) => <button type="button" className={letter === item ? "is-active" : ""} onClick={() => { setLetter(item); setLimit(36); }} key={item}>{item}</button>)}
+            {letters.map((item) => <button type="button" className={letter === item ? "is-active" : ""} onClick={() => { setLetter(item); setPage(1); }} key={item}>{item}</button>)}
           </div>
-          <div className="drug-library__grid">
-            {filtered.slice(0, limit).map((drug) => (
+          <div className={`drug-library__grid ${styles.results}`} ref={resultsRef} tabIndex={-1} aria-label="Medication results">
+            {filtered.slice((currentPage - 1) * 9, currentPage * 9).map((drug) => (
               <article className={`drug-card ${drug.appearance ? "drug-card--featured" : ""}`} key={drug.generic}>
                 <div className="drug-card__body">
                   <span><i className="drug-card__class-dot" style={{ "--drug-class-color": getTherapeuticClassColor(drug.therapeuticClass) }} aria-hidden="true" />{drug.therapeuticClass}</span>
@@ -159,7 +170,11 @@ export default function DrugLibrary() {
             ))}
           </div>
           {filtered.length === 0 && <div className="drug-library__empty"><strong>No medications match these filters.</strong><p>Try another therapeutic class, letter, or search term.</p></div>}
-          {limit < filtered.length && <button type="button" className="drug-library__more" onClick={() => setLimit((value) => value + 36)}>Load more medications</button>}
+          {filtered.length > 0 && <nav className={styles.pagination} aria-label="Medication pages">
+            <button type="button" disabled={currentPage === 1} onClick={() => changePage(currentPage - 1)}>← Previous</button>
+            <p role="status" aria-live="polite">Page {currentPage} of {pageCount}</p>
+            <button type="button" disabled={currentPage === pageCount} onClick={() => changePage(currentPage + 1)}>Next →</button>
+          </nav>}
         </>
       ) : mode === "all" ? (
         <div className="drug-library__rxnorm" aria-live="polite">
