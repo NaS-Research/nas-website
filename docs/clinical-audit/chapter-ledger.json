@@ -88,13 +88,14 @@
             "pharmacy-unit-conversions",
             "pharmacy-concentrations-specific-gravity",
             "pharmacy-dilution-alligation",
-            "pharmacy-osmolarity-calculations"
+            "pharmacy-osmolarity-calculations",
+            "pharmacy-isotonicity-calculations"
           ],
           "pdfPages": [
             19,
             19
           ],
-          "evidence": "chapter1-formula-checklist-map.json; first eleven entries source/item/build/rendered verified; remaining entries open",
+          "evidence": "chapter1-formula-checklist-map.json; first twelve entries source/item/build/rendered verified; remaining entries open",
           "topics": [
             {
               "topic": "Liquid-volume conversions",
@@ -271,6 +272,22 @@
                 150
               ],
               "evidence": "pharmacy-osmolarity-calculations-review.json"
+            },
+            {
+              "topic": "Isotonicity and sodium chloride equivalents",
+              "status": "verified",
+              "targets": [
+                "pharmacy-isotonicity-calculations"
+              ],
+              "sourcePrintedPages": [
+                142,
+                144
+              ],
+              "sourcePdfPages": [
+                150,
+                152
+              ],
+              "evidence": "pharmacy-isotonicity-calculations-review.json"
             }
           ]
         },
@@ -326,7 +343,8 @@
         "pharmacy-unit-conversions",
         "pharmacy-concentrations-specific-gravity",
         "pharmacy-dilution-alligation",
-        "pharmacy-osmolarity-calculations"
+        "pharmacy-osmolarity-calculations",
+        "pharmacy-isotonicity-calculations"
       ],
       "findings": [
         "Textbook six-area exam blueprint superseded by NABP five-domain outline effective 2025-05-01.",
@@ -341,7 +359,8 @@
         "pharmacy-unit-conversions-review.json",
         "pharmacy-concentrations-specific-gravity-review.json",
         "pharmacy-dilution-alligation-review.json",
-        "pharmacy-osmolarity-calculations-review.json"
+        "pharmacy-osmolarity-calculations-review.json",
+        "pharmacy-isotonicity-calculations-review.json"
       ],
       "pdfRangeStatus": "start verified; end provisional"
     },
@@ -544,18 +563,36 @@
             "pharmacy-osmolarity-calculations"
           ],
           "evidence": "pharmacy-osmolarity-calculations-review.json; end before Isotonicity"
+        },
+        {
+          "topic": "Isotonicity and sodium chloride equivalents",
+          "printedPages": [
+            142,
+            144
+          ],
+          "pdfPages": [
+            150,
+            152
+          ],
+          "status": "verified",
+          "targets": [
+            "pharmacy-isotonicity-calculations"
+          ],
+          "evidence": "pharmacy-isotonicity-calculations-review.json; end before Moles and Millimoles"
         }
       ],
       "moduleSlugs": [
         "pharmacy-concentrations-specific-gravity",
         "pharmacy-dilution-alligation",
-        "pharmacy-osmolarity-calculations"
+        "pharmacy-osmolarity-calculations",
+        "pharmacy-isotonicity-calculations"
       ],
       "findings": [],
       "evidence": [
         "pharmacy-concentrations-specific-gravity-review.json",
         "pharmacy-dilution-alligation-review.json",
-        "pharmacy-osmolarity-calculations-review.json"
+        "pharmacy-osmolarity-calculations-review.json",
+        "pharmacy-isotonicity-calculations-review.json"
       ]
     },
     {

@@ -8,7 +8,7 @@
     "visualRead": true
   },
   "status": "reviewing",
-  "completedEntryCount": 11,
+  "completedEntryCount": 12,
   "newModuleScope": [
     "Liquid-volume conversions",
     "Solid-mass conversions",
@@ -20,7 +20,8 @@
     "Specific gravity",
     "Dilution and concentration",
     "Alligation",
-    "Osmolarity and total milliosmoles"
+    "Osmolarity and total milliosmoles",
+    "Isotonicity and sodium chloride equivalents"
   ],
   "validationPending": false,
   "mapping": [
@@ -98,13 +99,32 @@
       }
     },
     {
-      "group": "Isotonicity, moles and milliequivalents",
+      "group": "Isotonicity and sodium chloride equivalents",
       "targets": [
+        "pharmacy-isotonicity-calculations"
+      ],
+      "status": "verified",
+      "sourceDependency": {
+        "chapter": 10,
+        "printedPages": [
+          142,
+          144
+        ],
+        "pdfPages": [
+          150,
+          152
+        ]
+      }
+    },
+    {
+      "group": "Moles, millimoles and milliequivalents",
+      "targets": [
+        "pharmacy-unit-conversions",
         "parenteral-nutrition-calculations",
         "fluid-electrolyte-therapy"
       ],
       "status": "mapped",
-      "note": "Isotonicity begins at printed142/PDF150; full source reconciliation remains open."
+      "note": "Moles and Millimoles starts at printed144/PDF152; full molecular-weight and charge calculation coverage remains open."
     },
     {
       "group": "Nutrition, electrolyte, body-size and kidney-function calculations",
@@ -157,8 +177,8 @@
     }
   ],
   "nextStartingPoint": {
-    "bookLocation": "Chapter 1 printed page 7, twelfth checklist entry: isotonicity",
-    "dependency": "Chapter 10, printed142/PDF150 through printed144/PDF152 before Moles and Millimoles; full subsection not yet audited."
+    "bookLocation": "Chapter 1 printed page 7, thirteenth checklist entry: moles and millimoles",
+    "dependency": "Chapter 10, Moles and Millimoles, printed144/PDF152; subsection not yet audited."
   },
   "limits": [
     "This is a coverage map, not verification of the complete formula checklist.",

@@ -1,0 +1,903 @@
+{
+  "date": "2026-10-01",
+  "status": "verified",
+  "module": "pharmacy-isotonicity-calculations",
+  "sourcePolicy": "Supplied RxPrep 2023 only",
+  "source": {
+    "checklist": {
+      "chapter": 1,
+      "printedPage": 7,
+      "pdfPage": 19,
+      "entry": 12
+    },
+    "dependency": {
+      "chapter": 10,
+      "printedPages": [
+        142,
+        144
+      ],
+      "pdfPages": [
+        150,
+        152
+      ],
+      "allTextAndVisualRead": true,
+      "start": "Isotonicity heading on printed142",
+      "end": "Before Moles and Millimoles on printed144"
+    }
+  },
+  "mappingSearch": {
+    "result": "No dedicated sodium chloride equivalent, E-value or isotonicity calculation module or standalone broader-bank item. Existing ear-product route discussion mentions isotonicity but does not teach this calculation method; prior osmolarity module separates this scope.",
+    "relatedModules": [
+      "common-ear-conditions",
+      "pharmacy-osmolarity-calculations"
+    ],
+    "broaderBank": "Five automatic new-bank selections span all three lessons; no separate divergent question copy."
+  },
+  "scope": {
+    "lessons": 3,
+    "teachingSections": 13,
+    "originalFigures": 3,
+    "embeddedChecks": 3,
+    "originalBankQuestions": 25,
+    "cumulativeAutoSelection": 5
+  },
+  "coverage": [
+    {
+      "lesson": "dissociation-e-value",
+      "sourcePrintedPages": [
+        142,
+        144
+      ],
+      "topics": [
+        "Book tonicity/reference scope",
+        "Complete dissociation-factor table",
+        "NaCl equivalent meaning and formula",
+        "Computed versus supplied E"
+      ]
+    },
+    {
+      "lesson": "nacl-adjustment",
+      "sourcePrintedPages": [
+        143,
+        144
+      ],
+      "topics": [
+        "Final-volume target",
+        "Compound equivalent subtraction",
+        "g/mg and percentage mass",
+        "Stated contributions, zero/negative arithmetic checks"
+      ]
+    },
+    {
+      "lesson": "stock-final-volume",
+      "sourcePrintedPages": [
+        144
+      ],
+      "topics": [
+        "Stock quantity versus final-volume target",
+        "Mass from final strength",
+        "Explicit intermediate rounding",
+        "Original integrated reverse verification"
+      ]
+    }
+  ],
+  "itemReview": {
+    "all25PromptsChoicesKeysExplanationsIndividuallyReviewed": true,
+    "allThreeEmbeddedChecksReviewed": true,
+    "conceptualIds": [
+      "iso-calc-003",
+      "iso-calc-007",
+      "iso-calc-013",
+      "iso-calc-017",
+      "iso-calc-020",
+      "iso-calc-023"
+    ],
+    "originality": "Original quantities and wording; proprietary practice items not reproduced.",
+    "distractors": "Integer count versus partial-dissociation factor, inverted/missing factors, NaCl equivalent versus actual salt, target versus additional amount, g/mg, wrong volume, wrong sign and premature E rounding.",
+    "finishedModuleComparedAgainToSource": true,
+    "reviewedItems": [
+      {
+        "id": "iso-calc-001",
+        "itemSha256": "bf4bc5f96a49544aeb27f0fe46b99249480c00d4ea3df806d6ba4b21d53fb4ad",
+        "lesson": "dissociation-e-value",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          142,
+          143
+        ],
+        "status": "verified",
+        "keyedAnswer": "1.8",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal key comparison passed."
+      },
+      {
+        "id": "iso-calc-002",
+        "itemSha256": "464ab4c3115a2e8a95540ce7d4c05ed45e6da393c560122b109bbbdbb80d0b00",
+        "lesson": "dissociation-e-value",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          142,
+          143
+        ],
+        "status": "verified",
+        "keyedAnswer": "3.4",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal key comparison passed."
+      },
+      {
+        "id": "iso-calc-003",
+        "itemSha256": "962aee8208915b21bb3c5e06c06f1b16945ac79d9e729746b3255ee643fa8baa",
+        "lesson": "dissociation-e-value",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          142,
+          143
+        ],
+        "status": "verified",
+        "keyedAnswer": "1",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Book nonionic factor one; zero and integer/two-ion alternatives excluded."
+      },
+      {
+        "id": "iso-calc-004",
+        "itemSha256": "86b97fcd1ea2f6f24955550ec8af1d86145eb49d82a30f67c22dea5999daa65c",
+        "lesson": "dissociation-e-value",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          142,
+          143
+        ],
+        "status": "verified",
+        "keyedAnswer": "0.16",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal key comparison passed."
+      },
+      {
+        "id": "iso-calc-005",
+        "itemSha256": "85a091fc4ff454249adc21e48e8e47561854ef57e59306138aae04a3ed1d8031",
+        "lesson": "dissociation-e-value",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          142,
+          143
+        ],
+        "status": "verified",
+        "keyedAnswer": "0.39",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal key comparison passed."
+      },
+      {
+        "id": "iso-calc-006",
+        "itemSha256": "cc338017e2be97647f5a998d8b2e869351e87f7561ae216c2af76162f1a64b6e",
+        "lesson": "dissociation-e-value",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          142,
+          143
+        ],
+        "status": "verified",
+        "keyedAnswer": "0.28",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal key comparison passed."
+      },
+      {
+        "id": "iso-calc-007",
+        "itemSha256": "9e76576373b0442bc57448afd876d408bad66c39e48d5d20ee52edd9a7d7a053",
+        "lesson": "dissociation-e-value",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          142,
+          143
+        ],
+        "status": "verified",
+        "keyedAnswer": "It represents an osmotic contribution equivalent to 0.20 g NaCl in the stated model",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Book equivalent-mass relationship; distinguish actual NaCl content, target/addition and concentration."
+      },
+      {
+        "id": "iso-calc-008",
+        "itemSha256": "89726e6d778e3da8d9c0c663824a0cac0ddee1c721d7aef82d547455130dd1dc",
+        "lesson": "dissociation-e-value",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          142,
+          143
+        ],
+        "status": "verified",
+        "keyedAnswer": "4.2",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal key comparison passed."
+      },
+      {
+        "id": "iso-calc-009",
+        "itemSha256": "5725545f884713afd215bbabce9455a872bc51a1e3a72bf4a504cfc6d26afdcc",
+        "lesson": "nacl-adjustment",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          143,
+          144
+        ],
+        "status": "verified",
+        "keyedAnswer": "0.36 g",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal key comparison passed."
+      },
+      {
+        "id": "iso-calc-010",
+        "itemSha256": "0727e468feae5f0b303850656bccc6d093c740a5e8af556e4c8549d92922fa06",
+        "lesson": "nacl-adjustment",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          143,
+          144
+        ],
+        "status": "verified",
+        "keyedAnswer": "0.26 g",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal key comparison passed."
+      },
+      {
+        "id": "iso-calc-011",
+        "itemSha256": "dcee29b01eed989d2e015c6cb86620baa458c13866764117ee1e31d4a03f081c",
+        "lesson": "nacl-adjustment",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          143,
+          144
+        ],
+        "status": "verified",
+        "keyedAnswer": "144 mg",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal key comparison passed."
+      },
+      {
+        "id": "iso-calc-012",
+        "itemSha256": "1a1d3c434c3a043674cf3e55a1ec97640c108e9b3f360533562673212dd5e445",
+        "lesson": "nacl-adjustment",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          143,
+          144
+        ],
+        "status": "verified",
+        "keyedAnswer": "45 mg",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal key comparison passed."
+      },
+      {
+        "id": "iso-calc-013",
+        "itemSha256": "6e37083e5123cbc1d975f05118e8dd91ae0cf0808845e6fb34c68d31abc4a722",
+        "lesson": "nacl-adjustment",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          143,
+          144
+        ],
+        "status": "verified",
+        "keyedAnswer": "The compound already contributes to the modeled osmotic effect",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Source three-step method subtracts compound contribution from reference target."
+      },
+      {
+        "id": "iso-calc-014",
+        "itemSha256": "cc13067bebd22968d8ba2b624446f560c5bb0b3206d17557a3644de42d4ee964",
+        "lesson": "nacl-adjustment",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          143,
+          144
+        ],
+        "status": "verified",
+        "keyedAnswer": "0.15 g",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal key comparison passed."
+      },
+      {
+        "id": "iso-calc-015",
+        "itemSha256": "b2b6cfb76e2af81e5aea1aec3a9cfdf94174456235b13a1d2b456a9a4afb77e0",
+        "lesson": "nacl-adjustment",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          143,
+          144
+        ],
+        "status": "verified",
+        "keyedAnswer": "0.11 g",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal key comparison passed."
+      },
+      {
+        "id": "iso-calc-016",
+        "itemSha256": "1019adf4324a25821e25724fdf158ed33a8df1c519303ab8938fe4f42a1b587e",
+        "lesson": "nacl-adjustment",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          143,
+          144
+        ],
+        "status": "verified",
+        "keyedAnswer": "0 g",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal key comparison passed."
+      },
+      {
+        "id": "iso-calc-017",
+        "itemSha256": "72b9b138ecb8f19a6e11602180c56adb2922d656803fc06cd891bc342501648a",
+        "lesson": "nacl-adjustment",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          143,
+          144
+        ],
+        "status": "verified",
+        "keyedAnswer": "Contributions exceed the target; recheck rather than treat the negative difference as a positive NaCl addition",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Direct sign/feasibility consequence of source subtraction; positive addition cannot reduce an excess."
+      },
+      {
+        "id": "iso-calc-018",
+        "itemSha256": "8b6f575eb5f45dda89d949e1a5a0d96c47cf4f11e3d4b2ad74d6d7267e61f51f",
+        "lesson": "stock-final-volume",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          143,
+          144
+        ],
+        "status": "verified",
+        "keyedAnswer": "10 mL",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal key comparison passed."
+      },
+      {
+        "id": "iso-calc-019",
+        "itemSha256": "e540c74001fb6ec7c0f69d6a6610fd1dbce0bc06807d3130155e132ebaff6026",
+        "lesson": "stock-final-volume",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          143,
+          144
+        ],
+        "status": "verified",
+        "keyedAnswer": "210 mg",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal key comparison passed."
+      },
+      {
+        "id": "iso-calc-020",
+        "itemSha256": "f624afe1babe307a665f6bf1a596fffc23eab43ebce9f34f5d030ab1158cb31c",
+        "lesson": "stock-final-volume",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          143,
+          144
+        ],
+        "status": "verified",
+        "keyedAnswer": "The final volume including stock and other ingredients",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Source final-volume prescription and target calculation include other ingredients in finished volume."
+      },
+      {
+        "id": "iso-calc-021",
+        "itemSha256": "5430d39ebf5557a2e65c95f7e5969abf8ce3017cc887de7d014d3d7c5d58cada",
+        "lesson": "stock-final-volume",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          143,
+          144
+        ],
+        "status": "verified",
+        "keyedAnswer": "0.115 g",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal key comparison passed."
+      },
+      {
+        "id": "iso-calc-022",
+        "itemSha256": "323af26fd76784ad8f7363cae95007cbce1a3405fae881396237dc459964839a",
+        "lesson": "stock-final-volume",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          143,
+          144
+        ],
+        "status": "verified",
+        "keyedAnswer": "0.116 g",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal key comparison passed."
+      },
+      {
+        "id": "iso-calc-023",
+        "itemSha256": "2e6a75f56a5084f12cf0ffc4b9f207edf85f9de7cbf80e5ce6964df0fa6753de",
+        "lesson": "stock-final-volume",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          143,
+          144
+        ],
+        "status": "verified",
+        "keyedAnswer": "It remains based on the same final compound mass",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Source compound-mass times E relationship remains unchanged when only stock concentration changes under the supplied fixed-mass/final-volume assumptions."
+      },
+      {
+        "id": "iso-calc-024",
+        "itemSha256": "5f098bb820bcbc024b40539500958a04deef93ec69850f73f4df991b37997c35",
+        "lesson": "stock-final-volume",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          143,
+          144
+        ],
+        "status": "verified",
+        "keyedAnswer": "0.1625",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal key comparison passed."
+      },
+      {
+        "id": "iso-calc-025",
+        "itemSha256": "f1585634e39ffd5ac6cbc25fe52aa4394d582db7b43f8bae9f5b47a691b5e340",
+        "lesson": "stock-final-volume",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          143,
+          144
+        ],
+        "status": "verified",
+        "keyedAnswer": "282 mg",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal key comparison passed."
+      }
+    ]
+  },
+  "independentArithmetic": {
+    "method": "Independent Decimal arithmetic from literal prompt/example inputs; keyed numerical choices compared without website helpers. Six conceptual items separately source-reviewed.",
+    "bank": [
+      {
+        "id": "iso-calc-001",
+        "independentDecimal": "1.8",
+        "keyedChoice": "1.8",
+        "passed": true
+      },
+      {
+        "id": "iso-calc-002",
+        "independentDecimal": "3.4",
+        "keyedChoice": "3.4",
+        "passed": true
+      },
+      {
+        "id": "iso-calc-004",
+        "independentDecimal": "0.16",
+        "keyedChoice": "0.16",
+        "passed": true
+      },
+      {
+        "id": "iso-calc-005",
+        "independentDecimal": "0.39",
+        "keyedChoice": "0.39",
+        "passed": true
+      },
+      {
+        "id": "iso-calc-006",
+        "independentDecimal": "0.28",
+        "keyedChoice": "0.28",
+        "passed": true
+      },
+      {
+        "id": "iso-calc-008",
+        "independentDecimal": "4.2",
+        "keyedChoice": "4.2",
+        "passed": true
+      },
+      {
+        "id": "iso-calc-009",
+        "independentDecimal": "0.360",
+        "keyedChoice": "0.36 g",
+        "passed": true
+      },
+      {
+        "id": "iso-calc-010",
+        "independentDecimal": "0.2600",
+        "keyedChoice": "0.26 g",
+        "passed": true
+      },
+      {
+        "id": "iso-calc-011",
+        "independentDecimal": "144.00000",
+        "keyedChoice": "144 mg",
+        "passed": true
+      },
+      {
+        "id": "iso-calc-012",
+        "independentDecimal": "45.00",
+        "keyedChoice": "45 mg",
+        "passed": true
+      },
+      {
+        "id": "iso-calc-014",
+        "independentDecimal": "0.1500",
+        "keyedChoice": "0.15 g",
+        "passed": true
+      },
+      {
+        "id": "iso-calc-015",
+        "independentDecimal": "0.1100",
+        "keyedChoice": "0.11 g",
+        "passed": true
+      },
+      {
+        "id": "iso-calc-016",
+        "independentDecimal": "0.0000",
+        "keyedChoice": "0 g",
+        "passed": true
+      },
+      {
+        "id": "iso-calc-018",
+        "independentDecimal": "10.000",
+        "keyedChoice": "10 mL",
+        "passed": true
+      },
+      {
+        "id": "iso-calc-019",
+        "independentDecimal": "210.0000",
+        "keyedChoice": "210 mg",
+        "passed": true
+      },
+      {
+        "id": "iso-calc-021",
+        "independentDecimal": "0.115",
+        "keyedChoice": "0.115 g",
+        "passed": true
+      },
+      {
+        "id": "iso-calc-022",
+        "independentDecimal": "0.116",
+        "keyedChoice": "0.116 g",
+        "passed": true
+      },
+      {
+        "id": "iso-calc-024",
+        "independentDecimal": "0.1625",
+        "keyedChoice": "0.1625",
+        "passed": true
+      },
+      {
+        "id": "iso-calc-025",
+        "independentDecimal": "282.00000",
+        "keyedChoice": "282 mg",
+        "passed": true
+      }
+    ],
+    "workedEmbeddedAndFigures": [
+      {
+        "label": "3-ion factor",
+        "value": "2.6",
+        "passed": true
+      },
+      {
+        "label": "E mass interpretation",
+        "value": "0.20",
+        "passed": true
+      },
+      {
+        "label": "E150 figure",
+        "value": "0.39",
+        "passed": true
+      },
+      {
+        "label": "nonionic E250 embedded",
+        "value": "0.13",
+        "passed": true
+      },
+      {
+        "label": "50mL target grams",
+        "value": "0.450",
+        "passed": true
+      },
+      {
+        "label": "50mL target mg",
+        "value": "450",
+        "passed": true
+      },
+      {
+        "label": "50mL compound equivalent",
+        "value": "0.1200",
+        "passed": true
+      },
+      {
+        "label": "50mL added grams",
+        "value": "0.33",
+        "passed": true
+      },
+      {
+        "label": "50mL reverse sum",
+        "value": "0.45",
+        "passed": true
+      },
+      {
+        "label": "50mL added mg",
+        "value": "330",
+        "passed": true
+      },
+      {
+        "label": "20mL1.5percent mass grams",
+        "value": "0.300",
+        "passed": true
+      },
+      {
+        "label": "20mL1.5percent mass mg",
+        "value": "300.000",
+        "passed": true
+      },
+      {
+        "label": "20mL compound equivalent mg",
+        "value": "36.00",
+        "passed": true
+      },
+      {
+        "label": "20mL target mg",
+        "value": "180",
+        "passed": true
+      },
+      {
+        "label": "20mL added mg",
+        "value": "144",
+        "passed": true
+      },
+      {
+        "label": "negative feasibility",
+        "value": "-0.09",
+        "passed": true
+      },
+      {
+        "label": "25mL1percent mass grams",
+        "value": "0.25",
+        "passed": true
+      },
+      {
+        "label": "25mL1percent mass mg",
+        "value": "250.00",
+        "passed": true
+      },
+      {
+        "label": "25mL stock volume",
+        "value": "10",
+        "passed": true
+      },
+      {
+        "label": "25mL target",
+        "value": "225",
+        "passed": true
+      },
+      {
+        "label": "25mL equivalent",
+        "value": "30.00",
+        "passed": true
+      },
+      {
+        "label": "25mL added",
+        "value": "195",
+        "passed": true
+      },
+      {
+        "label": "wrong stock-volume target",
+        "value": "90",
+        "passed": true
+      },
+      {
+        "label": "precision E200",
+        "value": "0.1625",
+        "passed": true
+      },
+      {
+        "label": "unrounded E equivalent",
+        "value": "0.065000",
+        "passed": true
+      },
+      {
+        "label": "unrounded E NaCl",
+        "value": "0.115",
+        "passed": true
+      },
+      {
+        "label": "provided E equivalent",
+        "value": "0.0640",
+        "passed": true
+      },
+      {
+        "label": "provided E NaCl",
+        "value": "0.116",
+        "passed": true
+      },
+      {
+        "label": "integrated A mass",
+        "value": "200.000",
+        "passed": true
+      },
+      {
+        "label": "integrated stock",
+        "value": "20",
+        "passed": true
+      },
+      {
+        "label": "integrated equivalent",
+        "value": "78.00",
+        "passed": true
+      },
+      {
+        "label": "integrated target",
+        "value": "360",
+        "passed": true
+      },
+      {
+        "label": "integrated added",
+        "value": "282",
+        "passed": true
+      },
+      {
+        "label": "integrated reverse",
+        "value": "360",
+        "passed": true
+      }
+    ],
+    "totalCalculations": 53,
+    "allPassed": true,
+    "conceptualIds": [
+      "iso-calc-003",
+      "iso-calc-007",
+      "iso-calc-013",
+      "iso-calc-017",
+      "iso-calc-020",
+      "iso-calc-023"
+    ]
+  },
+  "sourceFindings": [
+    "The E-value model uses the stated factor 1.8 for NaCl; preserve it rather than substituting the idealized two-particle count from osmolarity exercises.",
+    "The source rounds the computed E to two decimals before using it in the final example. Original combined exercises explicitly state whether E is supplied or intermediate precision is retained.",
+    "Stock concentration determines volume to supply final compound mass; the specified final volume determines the NaCl target.",
+    "The source uses a simplified tonicity/0.9% reference description. This module teaches that specified arithmetic model rather than treating a calculated equivalence as sufficient evidence of clinical formulation or route suitability.",
+    "Multiple supplied contributions and zero/negative differences are direct arithmetic extensions of the source subtraction method, not additional clinical recommendations."
+  ],
+  "unresolvedIssues": [],
+  "validation": {
+    "focusedAudit": {
+      "result": "Passed; no hard errors or source gaps, no thin-lesson advisory. 25-item size advisory reviewed against the complete narrow source subsection.",
+      "report": {
+        "modules": 1,
+        "questions": 25,
+        "hardErrors": [],
+        "sourceGaps": [],
+        "sizeAdvisories": [
+          {
+            "module": "pharmacy-isotonicity-calculations",
+            "questions": 25,
+            "review": "Confirm topic coverage in the clinical audit ledger"
+          }
+        ],
+        "thinLessons": [],
+        "weakestModules": [
+          {
+            "module": "pharmacy-isotonicity-calculations",
+            "lessons": 3,
+            "questions": 25,
+            "minimumLessonCoverage": 8
+          }
+        ]
+      }
+    },
+    "build": "Passed: exact scoped Next production build, 565 pages.",
+    "desktopMobile": [
+      {
+        "build": "scoped production candidate",
+        "width": 1440,
+        "lessons": 3,
+        "figures": 3,
+        "embeddedChecks": 3,
+        "assessmentCorrect": 10,
+        "secondAttemptDistinct": true,
+        "incorrectFeedbackAndRemediation": true,
+        "priorConversionFigures": 4,
+        "priorConcentrationFigures": 5,
+        "priorDilutionFigures": 4,
+        "priorOsmolarityFigures": 4,
+        "curriculum": true,
+        "sitemap": true,
+        "noOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "build": "scoped production candidate",
+        "width": 390,
+        "lessons": 3,
+        "figures": 3,
+        "embeddedChecks": 3,
+        "assessmentCorrect": 10,
+        "secondAttemptDistinct": true,
+        "incorrectFeedbackAndRemediation": true,
+        "priorConversionFigures": 4,
+        "priorConcentrationFigures": 5,
+        "priorDilutionFigures": 4,
+        "priorOsmolarityFigures": 4,
+        "curriculum": true,
+        "sitemap": true,
+        "noOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "build": "current working Learn integration",
+        "width": 390,
+        "narrowWidth": 320,
+        "librarySearch": true,
+        "moduleLink": true,
+        "figures": 3,
+        "noOverflow": true,
+        "signedOutMemberBoundary": 401,
+        "pageErrors": []
+      }
+    ],
+    "candidateDiff": "Passed: semantic ledger scope restricted to chapters 1/10 and this new module; only module/data/reader registration/evidence files included; unrelated work preserved.",
+    "technical": {
+      "module": "pharmacy-isotonicity-calculations",
+      "uniqueNumber": true,
+      "uniqueIds": true,
+      "uniquePrompts": true,
+      "choicesAndAnchorsValid": true,
+      "lessons": 3,
+      "questions": 25,
+      "cumulativeItems": 5,
+      "cumulativeLessonCoverage": 3,
+      "passed": true
+    },
+    "renderedVisualReview": "All three figures inspected at 1440 desktop and 390 mobile using unobscured viewport captures; labels, units, equations and wrapping legible."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "baseCommit": "744d91d3e113da80e1bf31e661831cc01a286afe",
+    "commit": "pending",
+    "push": "pending",
+    "production": "not verified"
+  },
+  "remainingBookCoverage": "Moles and Millimoles is next at printed144/PDF152. Chapter1 checklist and chapter10 remain open.",
+  "verificationDate": "2026-10-01",
+  "sourceArithmetic": [
+    {
+      "sourceCase": "p143nonionicE",
+      "unrounded": "0.1785714285714285714285714286",
+      "sourceRoundedResult": "0.18",
+      "passed": true
+    },
+    {
+      "sourceCase": "p143NaCladdition",
+      "unrounded": "0.178",
+      "sourceRoundedResult": "0.178",
+      "passed": true
+    },
+    {
+      "sourceCase": "p144twoionE166",
+      "unrounded": "0.3524096385542168674698795181",
+      "sourceRoundedResult": "0.35",
+      "passed": true
+    },
+    {
+      "sourceCase": "p144twoionE413",
+      "unrounded": "0.1416464891041162227602905569",
+      "sourceRoundedResult": "0.14",
+      "passed": true
+    },
+    {
+      "sourceCase": "p144nonionicE468",
+      "unrounded": "0.06944444444444444444444444444",
+      "sourceRoundedResult": "0.07",
+      "passed": true
+    },
+    {
+      "sourceCase": "p144NaCladditionWithSourceRoundedE",
+      "unrounded": "83.00",
+      "sourceRoundedResult": "83",
+      "passed": true
+    }
+  ],
+  "contentHashes": {
+    "src/data/modules/pharmacyIsotonicityCalculations.js": "3795853f05e471ff170fddceda5dfa3c287b1555c67ae8a11ef1d2ad92a30d13",
+    "src/data/questionBanks/pharmacyIsotonicityCalculations.js": "092c8dd0366b43b4e49a5cc292aa9e38132b19cadfc3fa9240f7afa5aeb20a6d",
+    "src/components/learn/PharmacyIsotonicityVisual.jsx": "09775de3e5234041bb444ff851a06c8490e654db3a3a768d1efe06e74a718310"
+  }
+}
