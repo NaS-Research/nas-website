@@ -1,0 +1,435 @@
+{
+  "slug": "alfuzosin",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Current selected U.S. oral extended-release labeling for adult BPH, with precise hepatic/renal and interaction restrictions. All eight blueprint sections reviewed. Product-specific focused monograph; not an exhaustive adverse-event catalog.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Alfuzosin hydrochloride · 10 mg extended-release tablets",
+      "publisher": "DailyMed / Aurobindo Pharma Limited",
+      "note": "SPL version 1, effective 20260707; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8811cb59-6826-41d5-ab68-567338a4b883",
+      "checked": "2026-10-01",
+      "version": "SPL version 1, effective 20260707; current public product labeling.",
+      "spl_version": "1",
+      "spl_effective_time": "20260707",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/8811cb59-6826-41d5-ab68-567338a4b883.xml",
+      "downloaded_xml_sha256": "58d17462c92300e5e5a7e77e32ac9e69f5529c6b9b8e814fb4849dd937a9a6c4",
+      "access_scope": "Complete current selected public SPL: all indication/dose/safety/interactions/population/PK/product/patient-information sections reviewed. Clinical trial section used only to contextualize common adverse reactions; no comparative efficacy inference."
+    }
+  ],
+  "assertion_to_source": [
+    {
+      "section_id": "indications",
+      "card_title": "Benign prostatic hyperplasia",
+      "assertions": [
+        "Selected U.S. extended-release tablets treat signs and symptoms of benign prostatic hyperplasia in adult men. Assess for prostate cancer before treatment because conditions can coexist and produce similar symptoms. This profile does not establish a ureteral-stone or other off-label regimen."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "1",
+            "5.5",
+            "Patient information"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "indications",
+      "card_title": "Limitations of use",
+      "assertions": [
+        "Alfuzosin is not indicated to treat hypertension, for children, or for women. Its blood-pressure effects are a safety consideration, not an additional approved indication. This reference covers the selected U.S. 10 mg oral ER product, not non-U.S. immediate-release schedules."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "1.1",
+            "8.1",
+            "8.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Adult oral regimen",
+      "assertions": [
+        "Take one 10 mg ER tablet once daily with food, after the same meal each day. Swallow whole; do not split, chew, or crush. Absorption is approximately 50% lower while fasting. The selected label does not provide a lower-dose titration ladder, a 20 mg escalation, or a universal interruption/restart algorithm; do not copy another alpha blocker’s regimen."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2",
+            "Patient information"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Organ-function restrictions",
+      "assertions": [
+        "Use caution with severe renal impairment (CrCl <30 mL/min); the label supplies no numerical renal reduction schedule. Mild hepatic impairment is unstudied and requires caution. Moderate or severe hepatic impairment (Child-Pugh B/C) is contraindicated, rather than managed by an invented reduced dose."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "4",
+            "5.2",
+            "5.3",
+            "8.6",
+            "8.7"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Warnings and precautions",
+      "assertions": [
+        "Postural hypotension and syncope can occur within hours, especially with antihypertensives, nitrates, or previous hypotensive responses. Protect against falls and hazardous activity. Stop treatment for new or worsening angina as directed and seek clinical assessment. Use caution with congenital/acquired QT prolongation or QT-prolonging medicines; label QT studies do not establish absence of individual risk.",
+        "Assess prostate cancer before initiation. Current or previous alpha-blocker use can cause intraoperative floppy iris syndrome during cataract surgery; tell the ophthalmologist even after stopping. The label reports no apparent benefit from stopping before surgery, so do not invent a washout. Persistent painful erection needs immediate care to prevent permanent injury. Renal/hepatic restrictions and CYP3A4 interactions below remain essential."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "5.1–5.9",
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Contraindications",
+      "assertions": [
+        "Do not use with moderate/severe hepatic impairment (Child-Pugh B/C), potent CYP3A4 inhibitors such as ketoconazole, itraconazole, or ritonavir, or known hypersensitivity to alfuzosin or tablet components. Other alpha blockers are directed against in warnings/interactions; that distinction does not make coadministration acceptable."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "4",
+            "5.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Boxed warning status",
+      "assertions": [
+        "The selected U.S. label has no boxed warning. Syncope, prohibited combinations, priapism, and hepatic contraindications still require active prevention and counseling."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Full prescribing information",
+            "4",
+            "5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Adverse reactions and overdose",
+      "assertions": [
+        "Common trial reactions include dizziness, headache, fatigue, and upper respiratory tract infection. Postmarketing reports include arrhythmia, liver injury, hypersensitivity/angioedema, severe skin reactions, thrombocytopenia, and priapism; voluntary reports do not establish frequency. Overdose can cause hypotension requiring urgent cardiovascular support, supine positioning, IV fluids/vasopressors as indicated, and renal monitoring. High protein binding limits dialysis benefit; contact emergency/poison services rather than using a home reversal."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "6.1",
+            "6.2",
+            "10",
+            "Patient information"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Metabolic interactions",
+      "assertions": [
+        "Potent CYP3A4 inhibitors are contraindicated because exposure rises. Diltiazem, a moderate inhibitor and antihypertensive, also raises exposure and can add hypotension; no universal reduced-dose workaround is supplied. Cimetidine modestly increases exposure. Review the complete medication list rather than treating a short example list as exhaustive."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "7.1",
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Blood-pressure and QT interactions",
+      "assertions": [
+        "Do not combine with other alpha adrenergic antagonists. Antihypertensive medicines and nitrates increase hypotension/syncope concerns; PDE5 inhibitors can produce symptomatic hypotension. QT-prolonging drugs require caution. Small digoxin and warfarin interaction studies do not show the studied interaction, but are not proof that every clinical combination is risk-free."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "5.4",
+            "5.9",
+            "7.2–7.4",
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pregnancy and lactation",
+      "assertions": [
+        "The product is not indicated for women. Adequate human pregnancy data and milk/infant-effect or milk-production data are absent. Animal reproductive findings do not establish human safety or an approved pregnancy regimen."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "8.1",
+            "8.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pediatric and geriatric use",
+      "assertions": [
+        "There is no pediatric indication. A neurologic-bladder trial in ages 2–16 did not demonstrate efficacy, and children under 2 were not studied. Older adult trials showed no overall efficacy/safety difference, but increased sensitivity remains possible; assess orthostasis, falls, and interacting medicines."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "8.4",
+            "8.5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Renal and hepatic impairment",
+      "assertions": [
+        "Exposure rises approximately 50% with renal impairment; severe-renal safety data are limited, so use caution below CrCl 30 without inventing a dose algorithm. Mild hepatic PK is unstudied. Child-Pugh B/C raises exposure roughly three- to fourfold and is contraindicated. Dialysis is not established as a dose-management strategy."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "8.6",
+            "8.7",
+            "12.3",
+            "10"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Mechanism",
+      "assertions": [
+        "Alfuzosin blocks postsynaptic alpha-1 adrenoceptors in the prostate and related lower urinary tract tissues, relaxing smooth muscle and improving flow and BPH symptoms. Vascular effects account for hypotension concerns; do not assume symptom selectivity eliminates systemic effects."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "12.1",
+            "12.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Pharmacokinetics",
+      "assertions": [
+        "Fed ER bioavailability is approximately 49%, with peak concentration about 8 hours after repeated 10 mg doses and apparent half-life about 10 hours. Protein binding is 82–90%. Extensive hepatic metabolism is primarily CYP3A4-mediated; about 11% of the dose is excreted unchanged in urine. Radioactivity after a labeled oral solution dose was predominantly recovered in feces. These data do not approve an IV or alternative oral formulation."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Monitoring",
+      "assertions": [
+        "Assess urinary symptoms, prostate-cancer evaluation, blood-pressure symptoms/falls, cardiac/QT history, kidney/liver function, and interacting medicines before and during therapy. Reassess for new/worsening angina and severe adverse effects. Ask about planned eye surgery and any past alpha-blocker treatment; the label supplies no universal laboratory/ECG interval for every patient."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "5",
+            "8.6",
+            "8.7",
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Patient counseling",
+      "assertions": [
+        "Take after the same meal, swallow intact, and avoid driving/hazardous activity until effects are known. If dizzy, lie down with legs/feet raised and contact the clinician if symptoms persist. Seek immediate care for a persistent painful erection, severe allergy, fainting, or significant overdose. Tell the eye surgeon about prior/current treatment and discuss all prescription, OTC, and herbal medicines."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Patient information",
+            "17.1–17.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Representative product",
+      "assertions": [
+        "Aurobindo 10 mg ER tablets are white/off-white, round, biconvex, film-coated, marked X on one side and 23 on the other. Representative 30-count bottle: NDC 84386-153-30. Other generic appearances differ; historical Uroxatral terminology does not establish current branded availability."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "3",
+            "16",
+            "Package label"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Dosage forms and strengths",
+      "assertions": [
+        "Covered formulation: oral alfuzosin hydrochloride ER tablet, 10 mg. No pediatric formulation, IV route, or non-U.S. immediate-release strength is substituted by this profile."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2",
+            "3",
+            "8.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Storage and handling",
+      "assertions": [
+        "Store at 20–25°C, with permitted excursions 15–30°C. Dispense in a tight, light-resistant container; protect from light and moisture. Keep out of children’s reach and preserve tablets whole."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "16",
+            "Patient information"
+          ]
+        }
+      ]
+    }
+  ],
+  "material_errors": [],
+  "gaps": [],
+  "limitations": [
+    "No off-label stone, pediatric, female, IV, or non-U.S. IR regimen asserted.",
+    "Severe renal impairment requires caution; no label-based numerical adjustment or generic restart algorithm is available.",
+    "Product identity belongs to current Aurobindo SPL, not an assumed currently marketed Uroxatral brand."
+  ],
+  "regulatory_identity": [
+    {
+      "source_file": "alfuzosin",
+      "labeler": [
+        "Aurobindo Pharma Limited"
+      ],
+      "label_approval_records": [
+        {
+          "application": {
+            "extension": "ANDA079060",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73584",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "ANDA"
+          }
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "schema": "validateMonograph returned [] on 2026-10-01; scoped diff whitespace check passed.",
+    "blueprint_sections": "Exact eight IDs/titles/order, four Safety cards, three Product cards, three hero tuples.",
+    "mobile_content": "Natural spaced text, two-column dosage table where needed; release owner handles rendered QA.",
+    "source_method": "Entire selected public product label reviewed; original guideline and trial access limitations recorded. No paywalled access claimed."
+  },
+  "front_matter_assertion_map": {
+    "hero_facts": [
+      [
+        "Therapeutic class",
+        "Alpha-1 adrenergic antagonist"
+      ],
+      [
+        "U.S. indication",
+        "Adult BPH symptoms"
+      ],
+      [
+        "Covered formulation",
+        "10 mg oral ER tablet"
+      ]
+    ],
+    "essential": {
+      "title": "Prevent syncope and prohibited drug combinations.",
+      "text": "Take 10 mg after the same meal daily. Avoid potent CYP3A4 inhibitors and Child-Pugh B/C liver disease. Tell the cataract surgeon about any prior use; a persistent painful erection requires immediate care.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "support": {
+      "label": [
+        "1",
+        "2",
+        "4",
+        "5",
+        "17"
+      ]
+    }
+  },
+  "source_discrepancies": [
+    {
+      "issue": "Physician storage section says20–25°C with15–30°C excursions while patient information summarizes15–30°C.",
+      "resolution": "Full section16 controlled-room-temperature instructions retained; light/moisture protection retained."
+    },
+    {
+      "issue": "Mild hepatic impairment unstudied and severe renal impairment caution differ from moderate/severe hepatic contraindication.",
+      "resolution": "No generic reduced-dose algorithm inferred; exact classifications and evidence limits stated."
+    }
+  ]
+}

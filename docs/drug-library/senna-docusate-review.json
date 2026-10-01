@@ -1,0 +1,530 @@
+{
+  "slug": "senna-docusate",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Selected U.S. OTC film-coated 8.6 mg/50 mg combination label, with regulatory and clinical-evidence boundaries. All eight blueprint sections reviewed. Product-specific focused monograph; not an exhaustive adverse-event catalog.",
+  "sources": [
+    {
+      "id": "otc",
+      "title": "Senna-S · Sennosides 8.6 mg / docusate sodium 50 mg",
+      "publisher": "DailyMed / Aarkish Pharmaceuticals NJ Inc.",
+      "note": "SPL version 1, effective 20260701; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=faca8f3e-d9eb-44c5-93ab-f59ed1c0f56f",
+      "checked": "2026-10-01",
+      "version": "SPL version 1, effective 20260701; current public product labeling.",
+      "spl_version": "1",
+      "spl_effective_time": "20260701",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/faca8f3e-d9eb-44c5-93ab-f59ed1c0f56f.xml",
+      "downloaded_xml_sha256": "97b72f0b0d559fc3700ad058feda9c352d6a88803f8e61ae3c9038e3092c0dee",
+      "access_scope": "Complete current selected Drug Facts, product and package records reviewed. OTC regulatory listing not independently certified as compliant."
+    },
+    {
+      "id": "fda",
+      "title": "FDA · OTC monograph regulatory pathway",
+      "publisher": "U.S. Food and Drug Administration",
+      "note": "Current public explanation accessed 2026-10-01; individual product compliance not certified.",
+      "url": "https://www.fda.gov/drugs/otc-drug-review-process-otc-drug-monographs",
+      "checked": "2026-10-01",
+      "version": "Current public explanation accessed 2026-10-01; individual product compliance not certified.",
+      "access_scope": "Current official public FDA OTC monograph pathway explanation read."
+    },
+    {
+      "id": "guideline",
+      "title": "AGA/ACG 2023 · Chronic idiopathic constipation guideline",
+      "publisher": "AGA / ACG; Gastroenterology",
+      "note": "Original publicly indexed recommendation 6 and senna discussion accessed; live PMC page challenged, not claimed subscription/full-text access.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10542656/",
+      "checked": "2026-10-01",
+      "version": "Original publicly indexed recommendation 6 and senna discussion accessed; live PMC page challenged, not claimed subscription/full-text access.",
+      "access_scope": "Original publicly indexed recommendation6, implementation considerations and senna discussion read; live PMC challenge encountered, not bypassed. Full subscription text not accessed."
+    },
+    {
+      "id": "trial",
+      "title": "Tarumi et al. 2013 · Docusate with sennosides in hospice",
+      "publisher": "Journal of Pain and Symptom Management / PubMed",
+      "note": "Public original trial abstract; 10-day hospice trial, not universal combination evidence.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22889861/",
+      "checked": "2026-10-01",
+      "version": "Public original trial abstract; 10-day hospice trial, not universal combination evidence.",
+      "access_scope": "Complete public original PubMed trial abstract read; full study not represented as accessed."
+    }
+  ],
+  "assertion_to_source": [
+    {
+      "section_id": "indications",
+      "card_title": "Occasional constipation",
+      "assertions": [
+        "Selected Senna-S tablets contain sennosides 8.6 mg and docusate sodium 50 mg. Drug Facts lists relief of occasional constipation and a usual bowel movement in 6–12 hours. Ongoing constipation, opioid-related regimens, bowel preparation, and other product strengths require a separate clinician plan; do not assume an occasional-use label proves all those uses."
+      ],
+      "support": [
+        {
+          "source_id": "otc",
+          "sections": [
+            "Active ingredients",
+            "Purpose",
+            "Uses"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "indications",
+      "card_title": "Regulatory and evidence status",
+      "assertions": [
+        "This selected product is listed as an OTC monograph drug with M007 metadata, not a dietary supplement or a product-specific FDA-approved application. Its label states that FDA has not evaluated compliance. OTC monograph marketing depends on applicable requirements; the listed category is not independent certification of this particular combination."
+      ],
+      "support": [
+        {
+          "source_id": "otc",
+          "sections": [
+            "SPL unclassified / disclaimer",
+            "Marketing category"
+          ]
+        },
+        {
+          "source_id": "fda",
+          "sections": [
+            "OTC monograph pathway"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "indications",
+      "card_title": "Ongoing constipation evidence",
+      "assertions": [
+        "AGA/ACG conditionally suggests senna for adult chronic idiopathic constipation with low-certainty evidence; that recommendation does not prove added benefit from docusate. A 10-day randomized hospice trial found no significant benefit from adding docusate to sennosides. That narrow population/result does not establish equivalence for every patient, dose, or product."
+      ],
+      "support": [
+        {
+          "source_id": "guideline",
+          "sections": [
+            "Recommendation 6"
+          ]
+        },
+        {
+          "source_id": "trial",
+          "sections": [
+            "Abstract / methods, results, conclusion"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Selected tablet directions",
+      "assertions": [
+        "Take orally, preferably at bedtime or as directed by a doctor. Do not exceed the selected label maximum, and do not use laxatives longer than 1 week without medical direction. Each whole tablet contributes both ingredients; an adult maximum of 8 tablets/day totals sennosides 68.8 mg and docusate sodium 400 mg. Lower age limits are below; do not transpose this table to another concentration or senna-only product.",
+        "12 years and older | Start 2 tablets once daily; maximum 4 tablets twice daily.",
+        "6 to under 12 | Start 1 tablet once daily; maximum 2 tablets twice daily.",
+        "2 to under 6 | Label start ½ tablet once daily; maximum 1 tablet twice daily. Confirm accurate splitting/measurement with pharmacist for the dispensed product.",
+        "Under 2 | Ask a doctor; no self-selected dose supplied."
+      ],
+      "support": [
+        {
+          "source_id": "otc",
+          "sections": [
+            "Directions",
+            "Do not use",
+            "Active ingredients"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Persistent symptoms or missed response",
+      "assertions": [
+        "Do not escalate beyond the package limit when a bowel movement does not occur. Stop and seek clinical assessment for failure to have a bowel movement after use or rectal bleeding. A clinician-directed longer regimen is distinct from OTC self-treatment; no universal chronic combination dose or taper is established here."
+      ],
+      "support": [
+        {
+          "source_id": "otc",
+          "sections": [
+            "Stop use",
+            "Do not use",
+            "Directions"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Warnings and precautions",
+      "assertions": [
+        "Ask a doctor before use for stomach pain, nausea, vomiting, or a sudden bowel-habit change lasting 2 weeks. Stop and ask a doctor for rectal bleeding or no bowel movement after laxative use. Do not self-treat beyond 1 week or combine with mineral oil unless directed. Pregnancy/breastfeeding requires professional advice. Keep out of children’s reach and obtain immediate medical/poison-center help for overdose."
+      ],
+      "support": [
+        {
+          "source_id": "otc",
+          "sections": [
+            "Warnings",
+            "Ask a doctor",
+            "Stop use",
+            "Do not use",
+            "Pregnancy/breastfeeding",
+            "Keep out of reach"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Contraindications",
+      "assertions": [
+        "This OTC Drug Facts label has no prescription-style numbered contraindications section. Its explicit do-not-use directions cover current mineral-oil use and laxative use beyond 1 week unless a doctor directs otherwise. Abdominal pain/nausea/vomiting and persistent bowel-habit changes require assessment before use; absence of a formal section is not a claim that use is safe in every intestinal disorder."
+      ],
+      "support": [
+        {
+          "source_id": "otc",
+          "sections": [
+            "Do not use",
+            "Ask a doctor"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Boxed warning status",
+      "assertions": [
+        "The selected OTC label has no boxed warning. Drug Facts warnings and pediatric dose limits still apply; “natural” does not remove those instructions."
+      ],
+      "support": [
+        {
+          "source_id": "otc",
+          "sections": [
+            "Drug Facts / warnings",
+            "Directions"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Adverse reactions and overdose",
+      "assertions": [
+        "Senna can cause abdominal pain/cramping, particularly at higher doses; its longer-term safety evidence is limited. The combination Drug Facts does not provide a quantified adverse-event catalog or a detailed overdose antidote. For excessive ingestion, contact medical/poison services immediately and report the exact product, amount, and timing. No home antidote or invented adverse-event incidence is supplied."
+      ],
+      "support": [
+        {
+          "source_id": "otc",
+          "sections": [
+            "Keep out of reach / overdose"
+          ]
+        },
+        {
+          "source_id": "guideline",
+          "sections": [
+            "Recommendation 6 / implementation and senna discussion"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Mineral oil",
+      "assertions": [
+        "Do not use while taking mineral oil unless a doctor directs it. The combination label supplies no safe spacing interval or dose adjustment that removes that warning; do not invent one."
+      ],
+      "support": [
+        {
+          "source_id": "otc",
+          "sections": [
+            "Do not use"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Other medicines and duplicate ingredients",
+      "assertions": [
+        "The selected label does not give a comprehensive interaction study set. Review other senna/sennoside, docusate, and laxative products so the exact ingredient totals and maximum are understood. Chronic prescribed bowel regimens and medicines that cause constipation need individualized review rather than an unsupported universal interaction list or spacing rule."
+      ],
+      "support": [
+        {
+          "source_id": "otc",
+          "sections": [
+            "Active ingredients",
+            "Directions",
+            "Warnings"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pregnancy and lactation",
+      "assertions": [
+        "The selected Drug Facts directs pregnant or breastfeeding patients to ask a health professional before use. It does not establish a pregnancy dose, quantify infant exposure, or prove absence of reproductive risk. Do not interpret botanical origin or OTC status as independent pregnancy/lactation safety evidence."
+      ],
+      "support": [
+        {
+          "source_id": "otc",
+          "sections": [
+            "Pregnancy/breastfeeding"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Children and older adults",
+      "assertions": [
+        "Use the selected age-specific table; under 2 requires a doctor. The young-child half-tablet direction requires an accurately deliverable dose with the actual dispensed product. No separate geriatric regimen or frailty study is supplied by Drug Facts; persistent symptoms and tolerance need clinical review instead of automatically using the maximum."
+      ],
+      "support": [
+        {
+          "source_id": "otc",
+          "sections": [
+            "Directions",
+            "Ask a doctor",
+            "Stop use"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Renal and hepatic considerations",
+      "assertions": [
+        "Drug Facts supplies no quantitative kidney/liver adjustment algorithm or organ-impairment pharmacokinetic study. This is an evidence limitation, not proof that every stage of disease permits unrestricted use. Clinician-directed selection and follow-up are appropriate when comorbidity, symptoms, or longer use requires assessment."
+      ],
+      "support": [
+        {
+          "source_id": "otc",
+          "sections": [
+            "Drug Facts / complete label",
+            "Warnings"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Labeled pharmacologic roles",
+      "assertions": [
+        "Drug Facts identifies sennosides as a laxative and docusate sodium as a stool softener. These purposes describe different roles; they do not themselves prove that the fixed combination is more effective than senna alone. Detailed molecular claims for docusate are not inferred from its product purpose."
+      ],
+      "support": [
+        {
+          "source_id": "otc",
+          "sections": [
+            "Purpose",
+            "Active ingredients"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Clinical pharmacology and evidence limits",
+      "assertions": [
+        "The original guideline describes gut-microbial conversion of sennosides into active metabolites that influence colonic secretion and movement. The selected combination label supplies a 6–12-hour response window but no product-specific serum half-life, bioavailability, clearance, or renal/hepatic PK study. Those quantities are not invented or borrowed from an unrelated formulation."
+      ],
+      "support": [
+        {
+          "source_id": "otc",
+          "sections": [
+            "Uses",
+            "Complete Drug Facts"
+          ]
+        },
+        {
+          "source_id": "guideline",
+          "sections": [
+            "Senna / discussion"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Monitoring",
+      "assertions": [
+        "Track bowel movement response, abdominal symptoms, rectal bleeding, dose totals, and treatment duration. Stop and seek care for failure to respond or bleeding; consult before use for persistent changes or stomach pain/nausea/vomiting. The OTC label supplies no routine laboratory interval for otherwise uncomplicated occasional use and no universal chronic monitoring algorithm."
+      ],
+      "support": [
+        {
+          "source_id": "otc",
+          "sections": [
+            "Ask a doctor",
+            "Stop use",
+            "Directions",
+            "Do not use"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Patient counseling",
+      "assertions": [
+        "Verify both ingredient strengths, use the age-specific start, and respect the maximum. Bedtime use may produce a bowel movement overnight; do not take extra doses simply because response is not immediate. Consult before combining with mineral oil or using longer than 1 week. Ask a professional during pregnancy/breastfeeding, keep away from children, and contact medical/poison services promptly for overdose."
+      ],
+      "support": [
+        {
+          "source_id": "otc",
+          "sections": [
+            "Uses",
+            "Directions",
+            "Do not use",
+            "Pregnancy/breastfeeding",
+            "Keep out of reach"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Representative product",
+      "assertions": [
+        "Aarkish Pharmaceuticals NJ Inc. Senna-S is the selected film-coated tablet product, NDC 81005-102. SPL package records list 300-count bottle 81005-102-30 and 1,000-count bottle 81005-102-10. The source does not establish a reliable tablet imprint/color description, so none is invented. Senokot-S comparison wording does not make this a manufacturer-identical brand product."
+      ],
+      "support": [
+        {
+          "source_id": "otc",
+          "sections": [
+            "Principal display panel",
+            "SPL product and package records"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Dosage forms and strengths",
+      "assertions": [
+        "Each covered oral tablet contains sennosides 8.6 mg and docusate sodium 50 mg. Other combination strengths, softgels, senna-only liquid/tablets, docusate-only products, botanical supplements, and suppositories are outside scope; do not convert them tablet-for-tablet."
+      ],
+      "support": [
+        {
+          "source_id": "otc",
+          "sections": [
+            "Active ingredients",
+            "Directions",
+            "SPL dosage form"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Storage and handling",
+      "assertions": [
+        "Store at 25°C, with permitted excursions 15–30°C. Do not use if the printed seal beneath the cap is missing or broken. Each tablet lists calcium 4 mg and sodium 8 mg. Keep out of children’s reach; no unsupported opened-bottle expiry or freezing instruction is supplied."
+      ],
+      "support": [
+        {
+          "source_id": "otc",
+          "sections": [
+            "Storage",
+            "Principal display panel",
+            "Keep out of reach"
+          ]
+        }
+      ]
+    }
+  ],
+  "material_errors": [],
+  "gaps": [],
+  "limitations": [
+    "DailyMed lists OTC monograph M007 but does not certify product compliance; FDA M007 alone does not establish this exact senna combination’s compliance or product-specific approval.",
+    "Full combination Drug Facts lacks quantified adverse-event/PK/organ-adjustment studies; no invented values, interaction spacing, or chronic dose supplied.",
+    "Guideline recommendation addresses adult senna in CIC, not proven added docusate efficacy; original hospice RCT abstract limited to its population.",
+    "Guideline original indexed text/recommendation accessed; PMC live browser challenge and subscription full text not represented as full access.",
+    "Selected pediatric half-tablet direction retained with accurate-delivery confirmation; no invented imprint/scoring or alternative concentration conversion."
+  ],
+  "regulatory_identity": [
+    {
+      "source_file": "senna-docusate",
+      "labeler": [
+        "Aarkish Pharmaceuticals NJ Inc."
+      ],
+      "label_approval_records": [
+        {
+          "application": {
+            "extension": "M007",
+            "root": "2.16.840.1.113883.3.9421"
+          },
+          "marketing_category": {
+            "code": "C200263",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "OTC Monograph Drug"
+          }
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "schema": "validateMonograph returned [] on 2026-10-01; scoped diff whitespace check passed.",
+    "blueprint_sections": "Exact eight IDs/titles/order, four Safety cards, three Product cards, three hero tuples.",
+    "mobile_content": "Natural spaced text, two-column dosage table where needed; release owner handles rendered QA.",
+    "source_method": "Entire selected public product label reviewed; original guideline and trial access limitations recorded. No paywalled access claimed."
+  },
+  "front_matter_assertion_map": {
+    "hero_facts": [
+      [
+        "Covered ingredients",
+        "Sennosides 8.6 mg / docusate 50 mg"
+      ],
+      [
+        "Labeled use",
+        "Occasional constipation"
+      ],
+      [
+        "Expected response",
+        "Generally 6–12 hours"
+      ]
+    ],
+    "essential": {
+      "title": "Stop for bleeding or failure to respond.",
+      "text": "Use the exact age-specific combination dose; do not self-treat beyond 1 week. Rectal bleeding or no bowel movement after use needs assessment. Mineral-oil use and pregnancy/breastfeeding require professional advice.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "support": {
+      "otc": [
+        "Active ingredients",
+        "Uses",
+        "Directions",
+        "Warnings",
+        "Stop use",
+        "Do not use"
+      ]
+    }
+  },
+  "source_discrepancies": [
+    {
+      "issue": "Manufacturer lists OTC monograph M007; FDA disclaimer says product compliance not evaluated. Posted M007 does not itself list senna or this combination.",
+      "resolution": "Label-listed category reported without certification of compliance or product-specific FDA approval; monograph framework distinguished from individual approval."
+    },
+    {
+      "issue": "OTC one-week self-treatment limit versus guideline discussion of longer clinician-managed senna in adult CIC.",
+      "resolution": "OTC duration retained; guideline not converted into a chronic fixed-combination self-dose."
+    },
+    {
+      "issue": "Age2–under6 half-tablet direction but no verified score/splitting suitability.",
+      "resolution": "Literal label direction retained with pharmacist accurate-delivery confirmation; no fabricated score or concentration alternative."
+    },
+    {
+      "issue": "Senna guideline recommendation and narrow hospice docusate add-on RCT do not prove efficacy of every fixed combination.",
+      "resolution": "Setting, evidence certainty and scope explicit."
+    }
+  ],
+  "regulatory_supplemental_verification": {
+    "source": "FDA OTC Monograph M007, posted May2,2023 (OTC000032)",
+    "url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/monographs/OTC%20Monograph_M007-Laxative%20Drug%20Products%20for%20OTC%20Human%20Use%2005.02.2023.pdf",
+    "checked": "2026-10-01",
+    "sections": [
+      "M007.1",
+      "M007.3",
+      "M007.18",
+      "M007.20",
+      "M007.30",
+      "M007.50"
+    ],
+    "finding": "Docusate sodium listed as stool softener; document does not itself list senna or this combination. No certification of listed product compliance inferred. Selected DailyMed disclaimer expressly says FDA has not evaluated compliance."
+  }
+}

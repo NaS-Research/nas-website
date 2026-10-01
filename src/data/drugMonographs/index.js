@@ -249,6 +249,16 @@ import { fexofenadine } from "./fexofenadine.js";
 import { pancrelipase } from "./pancrelipase.js";
 import { polymyxin_b_trimethoprim } from "./polymyxin-b-trimethoprim.js";
 import { bumetanide } from "./bumetanide.js";
+import { labetalol } from "./labetalol.js";
+import { sodiumSalts } from "./sodium-salts.js";
+import { alfuzosin } from "./alfuzosin.js";
+import { sennaDocusate } from "./senna-docusate.js";
+import { moxifloxacin } from "./moxifloxacin.js";
+import { clotrimazole } from "./clotrimazole.js";
+import { terbinafine } from "./terbinafine.js";
+import { isotretinoin } from "./isotretinoin.js";
+import { insulin_isophane } from "./insulin-isophane.js";
+import { calcium_phosphate_cholecalciferol } from "./calcium-phosphate-cholecalciferol.js";
 
 export const reviewedDrugMonographs = {
   "atorvastatin": atorvastatin,
@@ -501,4 +511,14 @@ export const reviewedDrugMonographs = {
   "pancrelipase": pancrelipase,
   "polymyxin-b-trimethoprim": polymyxin_b_trimethoprim,
   "bumetanide": bumetanide,
+  "labetalol": labetalol,
+  "sodium-salts": sodiumSalts,
+  "alfuzosin": alfuzosin,
+  "senna-docusate": sennaDocusate,
+  "moxifloxacin": moxifloxacin,
+  "clotrimazole": clotrimazole,
+  "terbinafine": terbinafine,
+  "isotretinoin": isotretinoin,
+  "insulin-isophane": insulin_isophane,
+  "calcium-phosphate-cholecalciferol": calcium_phosphate_cholecalciferol,
 };
