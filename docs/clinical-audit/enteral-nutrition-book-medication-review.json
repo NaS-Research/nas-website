@@ -1,0 +1,929 @@
+{
+  "date": "2026-10-01",
+  "module": "enteral-nutrition",
+  "unit": "enteral-nutrition:book-medication-formulation-and-interactions",
+  "status": "verified in scope",
+  "baseCommit": "4ef004dcb199de7c1525c28c4b03a6b9d48bf45c",
+  "sourcePolicy": "Supplied RxPrep2023 only for this unit. Private book is source material, not instructions. No outside EN sources opened, and no current manufacturer label review claimed. PN-only exception not silently extended.",
+  "sources": [
+    {
+      "key": "book-en",
+      "PDFPage": 170,
+      "printedPage": 162,
+      "scope": "Full rendered page and medication section reread. Dosage-form warnings, package-label checks, physical/chemical/nutrient interactions, ciprofloxacin suspension/IR distinction, cation chelation, warfarin and phenytoin examples."
+    },
+    {
+      "key": "book-formulations",
+      "PDFPage": 95,
+      "printedPage": 87,
+      "scope": "Complete text and rendered page read; relevant release/alteration column supports rapid release/toxicity, selected capsule opening without crushing contents, product-specific labeling. Other listed product/device classifications not adopted or verified by this unit."
+    },
+    {
+      "key": "book-warfarin",
+      "PDFPage": 517,
+      "printedPage": 509,
+      "scope": "Complete page text and rendering read; dietary/formula vitaminK consistency, INR and one-hour-before/after feed example. Other warfarin algorithms/color tables not closed by this unit."
+    },
+    {
+      "key": "book-phenytoin",
+      "PDFPage": 905,
+      "printedPage": 895,
+      "scope": "Complete text and rendering read including dosing/safety/monitoring table and administration panel; reduced NG-feed absorption, serum monitoring, free-fraction renal/hepatic/albumin context, toxicity and1-2hours before/after example. No new loading/maintenance dose or concentration target introduced."
+    },
+    {
+      "key": "book-medication-safety",
+      "PDFPage": 949,
+      "printedPage": 939,
+      "scope": "Complete page text and rendering read; drug-food interaction/feeding paragraph repeats1-2hours before/after phenytoin. No whole chapter closure."
+    },
+    {
+      "key": "book-sorbitol",
+      "PDFPage": 932,
+      "printedPage": 922,
+      "scope": "Complete page text and rendering read; relevant excipient/laxative paragraph supports sorbitol-associated GI effects. No new IBD algorithm or general formula-osmolality assertion adopted."
+    }
+  ],
+  "questionReview": [
+    {
+      "id": "enteral-nutrition-033",
+      "PDFPages": [
+        95,
+        170
+      ],
+      "review": "Extended-release alteration can release drug rapidly; all other options explicitly stipulate verified compatibility. All choices, key, explanation, clarity and remediation anchor individually compared; distractors represent relevant administration, monitoring or formulation errors.",
+      "question": {
+        "id": "enteral-nutrition-033",
+        "question": "Which dosage form should not be crushed for tube administration?",
+        "choices": [
+          "An extended-release tablet",
+          "An immediate-release tablet whose product instructions permit crushing",
+          "A powder prepared according to verified tube-administration instructions",
+          "A liquid verified as compatible with the selected tube"
+        ],
+        "answer": 0,
+        "rationale": "Do not crush an extended-release tablet: disrupting its release mechanism can deliver too much drug at once. The other options explicitly require verified product and tube compatibility.",
+        "reviewHref": "#medication-administration"
+      }
+    },
+    {
+      "id": "enteral-nutrition-035",
+      "PDFPages": [
+        170
+      ],
+      "review": "Direct formula mixing is prohibited. Oral-liquid status or ordinary food instructions do not prove physical/chemical compatibility. All choices, key, explanation, clarity and remediation anchor individually compared; distractors represent relevant administration, monitoring or formulation errors.",
+      "question": {
+        "id": "enteral-nutrition-035",
+        "question": "Why should medications not be added directly to enteral formula?",
+        "choices": [
+          "Drug stability, absorption, compatibility, and tube patency can be compromised",
+          "Mixing is safe whenever the medication is sold as an oral liquid",
+          "A freshly mixed formula bag guarantees drug stability for the entire feeding period",
+          "A drug that can be taken with food is automatically compatible with a formula bag"
+        ],
+        "answer": 0,
+        "rationale": "Do not add medications directly to enteral formula. Solid and liquid dosage forms can have physical, chemical, nutrient-interaction, and obstruction problems; an oral liquid or ordinary food instruction does not establish formula-bag compatibility.",
+        "reviewHref": "#medication-administration"
+      }
+    },
+    {
+      "id": "enteral-nutrition-036",
+      "PDFPages": [
+        170
+      ],
+      "review": "Chelation is the supported mechanism. VitaminK antagonism is a warfarin distinction; minerals do not reverse the absorption direction, and an IR preparation does not eliminate chelation. All choices, key, explanation, clarity and remediation anchor individually compared; distractors represent relevant administration, monitoring or formulation errors.",
+      "question": {
+        "id": "enteral-nutrition-036",
+        "question": "Which interaction can reduce ciprofloxacin absorption?",
+        "choices": [
+          "Complexation with formula calcium, magnesium, or iron",
+          "Vitamin K in formula directly antagonizing the antibiotic's antibacterial action",
+          "Minerals increasing bioavailability by keeping the antibiotic in the feeding solution",
+          "Crushing an immediate-release tablet eliminating every drug-nutrient interaction"
+        ],
+        "answer": 0,
+        "rationale": "Fluoroquinolones can chelate polyvalent cations, reducing bioavailability. Formula compatibility and cation-related absorption are separate checks: a suitable immediate-release preparation does not eliminate the interaction.",
+        "reviewHref": "#medication-administration"
+      }
+    },
+    {
+      "id": "enteral-nutrition-037",
+      "PDFPages": [
+        170,
+        905
+      ],
+      "review": "Serum phenytoin and clinical response, not INR, evaluate exposure. Delivery review before escalation is an explicit safety inference from reduced absorption plus dose-related toxicity. All choices, key, explanation, clarity and remediation anchor individually compared; distractors represent relevant administration, monitoring or formulation errors.",
+      "question": {
+        "id": "enteral-nutrition-037",
+        "question": "Which monitoring strategy is most useful when enteral nutrition affects phenytoin exposure?",
+        "choices": [
+          "Use clinical assessment and drug concentrations with a drug-specific feeding plan",
+          "Increase every dose before reviewing actual administration or feeding timing",
+          "Use INR alone to judge phenytoin exposure",
+          "Use the warfarin feeding schedule without checking phenytoin-specific instructions"
+        ],
+        "answer": 0,
+        "rationale": "Enteral feeding can reduce phenytoin absorption. Review administration and feeding timing together with seizure control and serum phenytoin concentration. INR measures warfarin response, and a warfarin schedule does not establish phenytoin instructions.",
+        "reviewHref": "#medication-administration"
+      }
+    },
+    {
+      "id": "enteral-nutrition-040",
+      "PDFPages": [
+        170,
+        905,
+        949
+      ],
+      "review": "Product-specific instructions and interaction review; overlapping examples do not establish a universal hold. All choices, key, explanation, clarity and remediation anchor individually compared; distractors represent relevant administration, monitoring or formulation errors.",
+      "question": {
+        "id": "enteral-nutrition-040",
+        "question": "What is the safest rule for holding feeding around a medication?",
+        "choices": [
+          "Use drug-specific evidence and monitoring rather than a universal interval",
+          "Copy the warfarin plan to every drug without checking product instructions",
+          "Choose the longest hold possible regardless of the medication's interaction",
+          "Apply a two-hour hold before and after every medication, including noninteracting drugs"
+        ],
+        "answer": 0,
+        "rationale": "Check the exact product and the interaction. Warfarin and phenytoin have specific feeding-separation examples, and their intervals can overlap; that does not establish one plan for every medication.",
+        "reviewHref": "#medication-administration"
+      }
+    },
+    {
+      "id": "enteral-nutrition-042",
+      "PDFPages": [
+        170,
+        517
+      ],
+      "review": "VitaminK consistency, binding/timing and INR; no dose determined solely by disease label. All choices, key, explanation, clarity and remediation anchor individually compared; distractors represent relevant administration, monitoring or formulation errors.",
+      "question": {
+        "id": "enteral-nutrition-042",
+        "question": "Which action best reduces warfarin variability during enteral therapy?",
+        "choices": [
+          "Keep vitamin K exposure and administration practice consistent while monitoring INR",
+          "Remove all vitamin K from the patient's diet and stop checking INR",
+          "Increase the dose solely because the formula carries a diabetes label",
+          "Mix warfarin into the formula bag to avoid a feeding interruption"
+        ],
+        "answer": 0,
+        "rationale": "Formula binding and changes in vitamin K intake can alter warfarin response. Reconcile product composition and medication timing, keep vitamin K exposure consistent, and monitor INR. The formula's disease label alone does not determine a dose.",
+        "reviewHref": "#medication-administration"
+      }
+    },
+    {
+      "id": "enteral-nutrition-093",
+      "PDFPages": [
+        170,
+        905
+      ],
+      "review": "Feeding-associated reduced absorption and serum monitoring. Do not assume an INR or blindly copied warfarin plan answers the problem. All choices, key, explanation, clarity and remediation anchor individually compared; distractors represent relevant administration, monitoring or formulation errors.",
+      "question": {
+        "id": "enteral-nutrition-093",
+        "question": "A patient receives phenytoin through a gastric tube and concentrations fall after continuous feeding begins. What is the best next action?",
+        "choices": [
+          "Use a drug-specific feeding and monitoring plan",
+          "Double the dose immediately without reviewing delivery or interactions",
+          "Judge phenytoin exposure from the patient's INR alone",
+          "Use warfarin's feeding-separation schedule without checking phenytoin instructions"
+        ],
+        "answer": 0,
+        "rationale": "Enteral feeding can reduce phenytoin absorption. Reconcile the formulation, delivered dose and feeding timing, assess seizure control, and monitor serum phenytoin concentration before making a dose change.",
+        "reviewHref": "#medication-administration"
+      }
+    },
+    {
+      "id": "enteral-nutrition-094",
+      "PDFPages": [
+        932
+      ],
+      "review": "Sorbitol has laxative effects. Temporal association warrants review, not proof of sole causation or automatic formula replacement. All choices, key, explanation, clarity and remediation anchor individually compared; distractors represent relevant administration, monitoring or formulation errors.",
+      "question": {
+        "id": "enteral-nutrition-094",
+        "question": "A patient develops diarrhea after three sorbitol-containing liquid medications are started. What is the best next action?",
+        "choices": [
+          "Review sorbitol exposure and other causes, then consider suitable medication alternatives",
+          "Switch immediately to a different formula without reviewing the new medications",
+          "Assume that an oral liquid cannot contribute to diarrhea",
+          "Dilute all medicines into the formula bag to prevent excipient effects"
+        ],
+        "answer": 0,
+        "rationale": "Sorbitol has laxative properties and can cause gastrointestinal distress. The timing warrants a medication review; it does not prove that sorbitol is the only cause or that formula must be changed.",
+        "reviewHref": "#monitoring-complications"
+      }
+    },
+    {
+      "id": "enteral-nutrition-098",
+      "PDFPages": [
+        95,
+        170,
+        949
+      ],
+      "review": "Possible dose dumping from crushed ER. Prompt assessment of symptomatic hypotension is a clinical safety inference, not a specific treatment algorithm or a definitive diagnosis. All choices, key, explanation, clarity and remediation anchor individually compared; distractors represent relevant administration, monitoring or formulation errors.",
+      "question": {
+        "id": "enteral-nutrition-098",
+        "question": "A crushed extended-release antihypertensive was administered through a tube and hypotension follows. What is the best next action?",
+        "choices": [
+          "Urgently assess hypotension and possible dose dumping, then review the dosage form",
+          "Give another crushed dose because the tube may have retained the first dose",
+          "Treat the event only by changing to a lower-calorie formula",
+          "Restart the same crushed preparation after using a larger water flush"
+        ],
+        "answer": 0,
+        "rationale": "Crushing an extended-release product can release drug rapidly and cause toxicity. Hypotension needs prompt clinical assessment; investigate the administration error rather than assuming formula intolerance.",
+        "reviewHref": "#medication-administration"
+      }
+    },
+    {
+      "id": "enteral-nutrition-107",
+      "PDFPages": [
+        170,
+        517
+      ],
+      "review": "Formula binding and vitaminK can both matter. Assess administration/adherence and INR without automatic dose escalation. All choices, key, explanation, clarity and remediation anchor individually compared; distractors represent relevant administration, monitoring or formulation errors.",
+      "question": {
+        "id": "enteral-nutrition-107",
+        "question": "A patient on warfarin changes from intermittent feeding to continuous feeding and INR falls. Which interpretation or management plan is most defensible?",
+        "choices": [
+          "Reconcile vitamin K exposure, delivery timing, adherence, and INR response",
+          "Increase the dose solely because feeding is now continuous",
+          "Eliminate all formula vitamin K without an INR monitoring plan",
+          "Mix warfarin into the formula bag to keep delivery continuous"
+        ],
+        "answer": 0,
+        "rationale": "Formula binding and vitamin K exposure can affect warfarin. Reconcile the formula and delivery change, medication timing and adherence, and follow INR rather than automatically choosing a new dose.",
+        "reviewHref": "#medication-administration"
+      }
+    },
+    {
+      "id": "enteral-nutrition-116",
+      "PDFPages": [
+        95,
+        170
+      ],
+      "review": "Oil-based suspension adherence versus IR tablet example; verify product instructions and separately address cation interaction. No contemporary manufacturer label opened or claimed verified. All choices, key, explanation, clarity and remediation anchor individually compared; distractors represent relevant administration, monitoring or formulation errors.",
+      "question": {
+        "id": "enteral-nutrition-116",
+        "question": "An oil-based ciprofloxacin oral suspension is being considered for a feeding tube. Which formulation decision addresses the problem described for this suspension?",
+        "choices": [
+          "Check a suitable immediate-release tablet and its product-specific tube instructions",
+          "Use the suspension because every oral liquid is tube compatible",
+          "Mix the suspension into the formula so adhesion cannot occur",
+          "Crush an extended-release tablet instead without checking its instructions"
+        ],
+        "answer": 0,
+        "rationale": "The oil-based oral suspension can adhere to the feeding tube. The immediate-release tablet is the alternative described for crushing and mixing with water, with flushing before and after. Verify the exact product and tube instructions; the separate cation-related absorption interaction still requires review.",
+        "reviewHref": "#medication-administration"
+      }
+    },
+    {
+      "id": "enteral-nutrition-117",
+      "PDFPages": [
+        170,
+        517
+      ],
+      "review": "One hour before/after08:00 yields07:00-09:00 under the explicitly stated order. No universal drug hold inferred. All choices, key, explanation, clarity and remediation anchor individually compared; distractors represent relevant administration, monitoring or formulation errors.",
+      "question": {
+        "id": "enteral-nutrition-117",
+        "question": "A prescribed warfarin administration plan holds tube feeding for one hour before and one hour after an 08:00 dose. Which feeding window follows that plan?",
+        "choices": [
+          "Stop at 07:00 and restart at 09:00",
+          "Stop at 07:00 and restart immediately at 08:00",
+          "Stop at 08:00 and restart at 09:00",
+          "Stop at 06:00 and restart at 10:00"
+        ],
+        "answer": 0,
+        "rationale": "One hour before 08:00 is 07:00, and one hour after is 09:00. This implements the stated warfarin plan, not a universal hold for all medications.",
+        "reviewHref": "#medication-administration"
+      }
+    }
+  ],
+  "teachingReview": [
+    {
+      "PDFPages": [
+        95,
+        170,
+        517,
+        905,
+        949
+      ],
+      "lesson": "medication-administration",
+      "heading": "Manage interactions by mechanism",
+      "body": "Calcium, magnesium, and iron in feeding products can chelate tetracyclines, fluoroquinolones, and levothyroxine, reducing bioavailability. Feeding can also reduce phenytoin exposure, while formula binding and vitamin K content can affect warfarin response. These are different mechanisms. Check the exact product's administration instructions and monitor the appropriate clinical endpoint or concentration; do not apply one medication's feeding interval to every drug.",
+      "sourceReview": "Each complete body checked against relevant source passages. Product checking and clinical assessment qualifiers retained. Safety review before unexamined dose changes is an explicit inference from interaction/toxicity warnings; no patient-specific prescription inferred."
+    },
+    {
+      "PDFPages": [
+        95,
+        170,
+        517,
+        905,
+        949
+      ],
+      "lesson": "medication-administration",
+      "heading": "Distinguish ciprofloxacin formulations",
+      "body": "The oil-based ciprofloxacin oral suspension illustrates why a liquid is not automatically tube compatible: it can adhere to the feeding tube. The immediate-release tablet is the formulation described for crushing and mixing with water, with water flushing before and after administration. Verify the exact product's labeling and tube instructions before selecting it. This formulation distinction does not remove the separate absorption interaction with calcium, magnesium, or iron in feeds, and it does not authorize crushing an extended-release tablet.",
+      "sourceReview": "Each complete body checked against relevant source passages. Product checking and clinical assessment qualifiers retained. Safety review before unexamined dose changes is an explicit inference from interaction/toxicity warnings; no patient-specific prescription inferred."
+    },
+    {
+      "PDFPages": [
+        95,
+        170,
+        517,
+        905,
+        949
+      ],
+      "lesson": "medication-administration",
+      "heading": "Reconcile warfarin with the feeding plan",
+      "body": "Feeding products can bind warfarin and lower its availability; their vitamin K content can also lower the INR. Keep vitamin K exposure consistent, review changes in formula and delivery schedule, and monitor INR rather than changing the dose from the formula name alone. The feeding-separation plan described here for warfarin is one hour before and one hour after administration. Coordinate that plan with the medication order and nutrition delivery; do not copy it to another drug.",
+      "sourceReview": "Each complete body checked against relevant source passages. Product checking and clinical assessment qualifiers retained. Safety review before unexamined dose changes is an explicit inference from interaction/toxicity warnings; no patient-specific prescription inferred."
+    },
+    {
+      "PDFPages": [
+        95,
+        170,
+        517,
+        905,
+        949
+      ],
+      "lesson": "medication-administration",
+      "heading": "Monitor phenytoin when feeding changes",
+      "body": "Enteral feeding can reduce phenytoin absorption and produce subtherapeutic concentrations. Review the formulation, actual administration, feeding schedule, seizure control, and serum phenytoin concentration when exposure changes. Do not respond to a falling concentration with an automatic dose increase before checking delivery and interactions. Phenytoin also has dose-related toxicity and substantial protein binding, so concentration interpretation must account for the patient's clinical state and albumin, kidney, and liver function. A phenytoin-specific separation plan may hold feeding for one to two hours before and after the dose. Confirm the actual product's administration instructions and prescribed plan; a warfarin schedule does not establish a phenytoin schedule.",
+      "sourceReview": "Each complete body checked against relevant source passages. Product checking and clinical assessment qualifiers retained. Safety review before unexamined dose changes is an explicit inference from interaction/toxicity warnings; no patient-specific prescription inferred."
+    },
+    {
+      "PDFPages": [
+        95,
+        170,
+        517,
+        905,
+        949
+      ],
+      "lesson": "medication-administration",
+      "heading": "Review the dosage form before altering it",
+      "body": "Do not crush extended-release, delayed-release, enteric-coated, sublingual, buccal, or hazardous products unless a trusted drug-specific source explicitly permits an alternative technique. Immediate-release tablets may be crushable, and some capsules may be opened, but each product must be checked. Select a compatible liquid or alternative route when possible.",
+      "sourceReview": "Each complete body checked against relevant source passages. Product checking and clinical assessment qualifiers retained. Safety review before unexamined dose changes is an explicit inference from interaction/toxicity warnings; no patient-specific prescription inferred."
+    }
+  ],
+  "bookHoldReconciliation": {
+    "status": "resolved as overlapping book examples; contemporary product plan not independently validated",
+    "previousEvidence": "enteral-nutrition-book-calculations-review.json",
+    "nutritionPage170": "Two-hour phenytoin separation example",
+    "seizurePage905AndSafety949": "One-to-two hours before and after the dose",
+    "interpretation": "Two hours is within the later range. Page170 is less explicit about before/after; later sections provide both sides. These statements are not mutually exclusive. A warfarin one-hour plan does not establish a plan for every medication.",
+    "publicChange": "Specific phenytoin before/after example added with product/prescription confirmation; no universal hold."
+  },
+  "broaderBankPartialReview": {
+    "file": "src/data/questionBanks/warfarinManagement.js",
+    "fileSha256": "09ee21e16b7f06ef737b075d92025590a8ea1a404fbb3cc6e46610d3ecd17f6d",
+    "question": {
+      "id": "warfarin-management-enteral-feeding",
+      "question": "INR falls after continuous enteral feeding begins, even though the formula contains little vitamin K. What should be assessed before repeated warfarin escalation?",
+      "choices": [
+        "Only inherited warfarin resistance",
+        "Drug-feed timing, delivery and a coordinated feed-hold plan with INR monitoring",
+        "Whether all nutrition can be discontinued indefinitely",
+        "Whether INR monitoring can be replaced by aPTT"
+      ],
+      "answer": 1,
+      "rationale": "Feeds can reduce warfarin effect independently of substantial vitamin K intake. Coordinate administration and reassess when feeds change or stop.",
+      "reviewHref": "#diet-illness-and-warfarin-interactions"
+    },
+    "bookSupport": "PDF170 binding mechanism and PDF517 vitaminK/INR context support the keyed response and explanation.",
+    "status": "reviewing; not release-verified",
+    "remaining": "Distractor plausibility and whole-parent technical alignment still open. Working bank is a42-item literal rewrite; committed HEAD is an older concept-generated bank and lacks this ID. Preserve unrelated rewrite and existing ID/anchor behavior; do not stage the entire unrelated parent from this EN unit. Parent content/render/scoped integration remain before broader-question closure."
+  },
+  "cumulativeReview": [
+    {
+      "question": {
+        "id": "cumulative-enteral-nutrition-enteral-nutrition-001",
+        "question": "Which principle most strongly favors enteral over parenteral nutrition?",
+        "choices": [
+          "A usable gastrointestinal tract that cannot be supported adequately by oral intake",
+          "A need to bypass all intestinal function",
+          "Complete mechanical obstruction",
+          "Active bowel ischemia"
+        ],
+        "answer": 0,
+        "rationale": "Enteral nutrition is preferred when the gut can safely digest and absorb nutrients but oral intake is inadequate.",
+        "reviewHref": "/learn/pharmacy/modules/enteral-nutrition",
+        "module": "Enteral Nutrition"
+      },
+      "status": "source verified in scope"
+    },
+    {
+      "question": {
+        "id": "cumulative-enteral-nutrition-enteral-nutrition-028",
+        "question": "Which statement about disease-specific formula is most accurate?",
+        "choices": [
+          "Selection requires a compositional and evidence-based patient rationale",
+          "The diagnosis alone proves superiority",
+          "Every patient with diabetes requires the same formula",
+          "Specialty formulas need no monitoring"
+        ],
+        "answer": 0,
+        "rationale": "Disease labels do not replace assessment of nutrient composition, evidence, cost, and tolerance.",
+        "reviewHref": "/learn/pharmacy/modules/enteral-nutrition",
+        "module": "Enteral Nutrition"
+      },
+      "status": "pending source review"
+    },
+    {
+      "question": {
+        "id": "cumulative-enteral-nutrition-enteral-nutrition-064",
+        "question": "A daily enteral volume target is 1800 mL and feeding will run for 20 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+        "choices": [
+          "90 mL/hour",
+          "180 mL/hour",
+          "20 mL/hour",
+          "1800 mL/hour"
+        ],
+        "answer": 0,
+        "rationale": "1800 mL divided by 20 hours equals 90 mL per hour.",
+        "reviewHref": "/learn/pharmacy/modules/enteral-nutrition",
+        "module": "Enteral Nutrition"
+      },
+      "status": "source verified in scope"
+    },
+    {
+      "question": {
+        "id": "cumulative-enteral-nutrition-enteral-nutrition-090",
+        "question": "A newly placed small-bore nasal tube has not been confirmed and medication is due. What is the best next action?",
+        "choices": [
+          "Hold use and obtain evidence-based placement confirmation",
+          "Continue the same plan without reassessment",
+          "Change formula based on one isolated detail",
+          "Ignore the access route"
+        ],
+        "answer": 0,
+        "rationale": "Unconfirmed placement creates pulmonary administration risk.",
+        "reviewHref": "/learn/pharmacy/modules/enteral-nutrition",
+        "module": "Enteral Nutrition"
+      },
+      "status": "pending source review"
+    },
+    {
+      "question": {
+        "id": "cumulative-enteral-nutrition-enteral-nutrition-117",
+        "question": "A prescribed warfarin administration plan holds tube feeding for one hour before and one hour after an 08:00 dose. Which feeding window follows that plan?",
+        "choices": [
+          "Stop at 07:00 and restart at 09:00",
+          "Stop at 07:00 and restart immediately at 08:00",
+          "Stop at 08:00 and restart at 09:00",
+          "Stop at 06:00 and restart at 10:00"
+        ],
+        "answer": 0,
+        "rationale": "One hour before 08:00 is 07:00, and one hour after is 09:00. This implements the stated warfarin plan, not a universal hold for all medications.",
+        "reviewHref": "/learn/pharmacy/modules/enteral-nutrition",
+        "module": "Enteral Nutrition"
+      },
+      "status": "source verified in scope"
+    }
+  ],
+  "preservation": {
+    "prior106IdsPromptsKeysAnchors": true,
+    "prior96QuestionObjectsUnchanged": true,
+    "prior38VerifiedBankObjectsAndSevenBodiesMatched": true,
+    "unchangedEmbeddedChecks": 6,
+    "allOtherMetadataAndOriginalLessonAnchorsUnchanged": true,
+    "architectureBackendProgressUnchanged": true
+  },
+  "validation": {
+    "build": {
+      "staticPages": 567,
+      "exitCode": 0,
+      "logSha256": "29269b95131cd1703e6170549f9ac5846b284455ea3d2586221d33992ed217af"
+    },
+    "focusedStructuralAssessment": {
+      "modules": 1,
+      "questions": 108,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "enteral-nutrition",
+          "lessons": 6,
+          "questions": 108,
+          "minimumLessonCoverage": 9
+        }
+      ]
+    },
+    "structuralSourceGapsMeaning": "Reference presence only; not clinical source verification.",
+    "technical": {
+      "status": "passed",
+      "bank": 108,
+      "changedQuestions": [
+        {
+          "id": "enteral-nutrition-033",
+          "question": "Which dosage form should not be crushed for tube administration?",
+          "choices": [
+            "An extended-release tablet",
+            "An immediate-release tablet whose product instructions permit crushing",
+            "A powder prepared according to verified tube-administration instructions",
+            "A liquid verified as compatible with the selected tube"
+          ],
+          "answer": 0,
+          "rationale": "Do not crush an extended-release tablet: disrupting its release mechanism can deliver too much drug at once. The other options explicitly require verified product and tube compatibility.",
+          "reviewHref": "#medication-administration"
+        },
+        {
+          "id": "enteral-nutrition-035",
+          "question": "Why should medications not be added directly to enteral formula?",
+          "choices": [
+            "Drug stability, absorption, compatibility, and tube patency can be compromised",
+            "Mixing is safe whenever the medication is sold as an oral liquid",
+            "A freshly mixed formula bag guarantees drug stability for the entire feeding period",
+            "A drug that can be taken with food is automatically compatible with a formula bag"
+          ],
+          "answer": 0,
+          "rationale": "Do not add medications directly to enteral formula. Solid and liquid dosage forms can have physical, chemical, nutrient-interaction, and obstruction problems; an oral liquid or ordinary food instruction does not establish formula-bag compatibility.",
+          "reviewHref": "#medication-administration"
+        },
+        {
+          "id": "enteral-nutrition-036",
+          "question": "Which interaction can reduce ciprofloxacin absorption?",
+          "choices": [
+            "Complexation with formula calcium, magnesium, or iron",
+            "Vitamin K in formula directly antagonizing the antibiotic's antibacterial action",
+            "Minerals increasing bioavailability by keeping the antibiotic in the feeding solution",
+            "Crushing an immediate-release tablet eliminating every drug-nutrient interaction"
+          ],
+          "answer": 0,
+          "rationale": "Fluoroquinolones can chelate polyvalent cations, reducing bioavailability. Formula compatibility and cation-related absorption are separate checks: a suitable immediate-release preparation does not eliminate the interaction.",
+          "reviewHref": "#medication-administration"
+        },
+        {
+          "id": "enteral-nutrition-037",
+          "question": "Which monitoring strategy is most useful when enteral nutrition affects phenytoin exposure?",
+          "choices": [
+            "Use clinical assessment and drug concentrations with a drug-specific feeding plan",
+            "Increase every dose before reviewing actual administration or feeding timing",
+            "Use INR alone to judge phenytoin exposure",
+            "Use the warfarin feeding schedule without checking phenytoin-specific instructions"
+          ],
+          "answer": 0,
+          "rationale": "Enteral feeding can reduce phenytoin absorption. Review administration and feeding timing together with seizure control and serum phenytoin concentration. INR measures warfarin response, and a warfarin schedule does not establish phenytoin instructions.",
+          "reviewHref": "#medication-administration"
+        },
+        {
+          "id": "enteral-nutrition-040",
+          "question": "What is the safest rule for holding feeding around a medication?",
+          "choices": [
+            "Use drug-specific evidence and monitoring rather than a universal interval",
+            "Copy the warfarin plan to every drug without checking product instructions",
+            "Choose the longest hold possible regardless of the medication's interaction",
+            "Apply a two-hour hold before and after every medication, including noninteracting drugs"
+          ],
+          "answer": 0,
+          "rationale": "Check the exact product and the interaction. Warfarin and phenytoin have specific feeding-separation examples, and their intervals can overlap; that does not establish one plan for every medication.",
+          "reviewHref": "#medication-administration"
+        },
+        {
+          "id": "enteral-nutrition-042",
+          "question": "Which action best reduces warfarin variability during enteral therapy?",
+          "choices": [
+            "Keep vitamin K exposure and administration practice consistent while monitoring INR",
+            "Remove all vitamin K from the patient's diet and stop checking INR",
+            "Increase the dose solely because the formula carries a diabetes label",
+            "Mix warfarin into the formula bag to avoid a feeding interruption"
+          ],
+          "answer": 0,
+          "rationale": "Formula binding and changes in vitamin K intake can alter warfarin response. Reconcile product composition and medication timing, keep vitamin K exposure consistent, and monitor INR. The formula's disease label alone does not determine a dose.",
+          "reviewHref": "#medication-administration"
+        },
+        {
+          "id": "enteral-nutrition-093",
+          "question": "A patient receives phenytoin through a gastric tube and concentrations fall after continuous feeding begins. What is the best next action?",
+          "choices": [
+            "Use a drug-specific feeding and monitoring plan",
+            "Double the dose immediately without reviewing delivery or interactions",
+            "Judge phenytoin exposure from the patient's INR alone",
+            "Use warfarin's feeding-separation schedule without checking phenytoin instructions"
+          ],
+          "answer": 0,
+          "rationale": "Enteral feeding can reduce phenytoin absorption. Reconcile the formulation, delivered dose and feeding timing, assess seizure control, and monitor serum phenytoin concentration before making a dose change.",
+          "reviewHref": "#medication-administration"
+        },
+        {
+          "id": "enteral-nutrition-094",
+          "question": "A patient develops diarrhea after three sorbitol-containing liquid medications are started. What is the best next action?",
+          "choices": [
+            "Review sorbitol exposure and other causes, then consider suitable medication alternatives",
+            "Switch immediately to a different formula without reviewing the new medications",
+            "Assume that an oral liquid cannot contribute to diarrhea",
+            "Dilute all medicines into the formula bag to prevent excipient effects"
+          ],
+          "answer": 0,
+          "rationale": "Sorbitol has laxative properties and can cause gastrointestinal distress. The timing warrants a medication review; it does not prove that sorbitol is the only cause or that formula must be changed.",
+          "reviewHref": "#monitoring-complications"
+        },
+        {
+          "id": "enteral-nutrition-098",
+          "question": "A crushed extended-release antihypertensive was administered through a tube and hypotension follows. What is the best next action?",
+          "choices": [
+            "Urgently assess hypotension and possible dose dumping, then review the dosage form",
+            "Give another crushed dose because the tube may have retained the first dose",
+            "Treat the event only by changing to a lower-calorie formula",
+            "Restart the same crushed preparation after using a larger water flush"
+          ],
+          "answer": 0,
+          "rationale": "Crushing an extended-release product can release drug rapidly and cause toxicity. Hypotension needs prompt clinical assessment; investigate the administration error rather than assuming formula intolerance.",
+          "reviewHref": "#medication-administration"
+        },
+        {
+          "id": "enteral-nutrition-107",
+          "question": "A patient on warfarin changes from intermittent feeding to continuous feeding and INR falls. Which interpretation or management plan is most defensible?",
+          "choices": [
+            "Reconcile vitamin K exposure, delivery timing, adherence, and INR response",
+            "Increase the dose solely because feeding is now continuous",
+            "Eliminate all formula vitamin K without an INR monitoring plan",
+            "Mix warfarin into the formula bag to keep delivery continuous"
+          ],
+          "answer": 0,
+          "rationale": "Formula binding and vitamin K exposure can affect warfarin. Reconcile the formula and delivery change, medication timing and adherence, and follow INR rather than automatically choosing a new dose.",
+          "reviewHref": "#medication-administration"
+        }
+      ],
+      "newQuestions": [
+        {
+          "id": "enteral-nutrition-116",
+          "question": "An oil-based ciprofloxacin oral suspension is being considered for a feeding tube. Which formulation decision addresses the problem described for this suspension?",
+          "choices": [
+            "Check a suitable immediate-release tablet and its product-specific tube instructions",
+            "Use the suspension because every oral liquid is tube compatible",
+            "Mix the suspension into the formula so adhesion cannot occur",
+            "Crush an extended-release tablet instead without checking its instructions"
+          ],
+          "answer": 0,
+          "rationale": "The oil-based oral suspension can adhere to the feeding tube. The immediate-release tablet is the alternative described for crushing and mixing with water, with flushing before and after. Verify the exact product and tube instructions; the separate cation-related absorption interaction still requires review.",
+          "reviewHref": "#medication-administration"
+        },
+        {
+          "id": "enteral-nutrition-117",
+          "question": "A prescribed warfarin administration plan holds tube feeding for one hour before and one hour after an 08:00 dose. Which feeding window follows that plan?",
+          "choices": [
+            "Stop at 07:00 and restart at 09:00",
+            "Stop at 07:00 and restart immediately at 08:00",
+            "Stop at 08:00 and restart at 09:00",
+            "Stop at 06:00 and restart at 10:00"
+          ],
+          "answer": 0,
+          "rationale": "One hour before 08:00 is 07:00, and one hour after is 09:00. This implements the stated warfarin plan, not a universal hold for all medications.",
+          "reviewHref": "#medication-administration"
+        }
+      ],
+      "changedBody": [
+        {
+          "lesson": "medication-administration",
+          "heading": "Manage interactions by mechanism",
+          "body": "Calcium, magnesium, and iron in feeding products can chelate tetracyclines, fluoroquinolones, and levothyroxine, reducing bioavailability. Feeding can also reduce phenytoin exposure, while formula binding and vitamin K content can affect warfarin response. These are different mechanisms. Check the exact product's administration instructions and monitor the appropriate clinical endpoint or concentration; do not apply one medication's feeding interval to every drug."
+        }
+      ],
+      "addedBodies": [
+        {
+          "lesson": "medication-administration",
+          "heading": "Distinguish ciprofloxacin formulations",
+          "body": "The oil-based ciprofloxacin oral suspension illustrates why a liquid is not automatically tube compatible: it can adhere to the feeding tube. The immediate-release tablet is the formulation described for crushing and mixing with water, with water flushing before and after administration. Verify the exact product's labeling and tube instructions before selecting it. This formulation distinction does not remove the separate absorption interaction with calcium, magnesium, or iron in feeds, and it does not authorize crushing an extended-release tablet."
+        },
+        {
+          "lesson": "medication-administration",
+          "heading": "Reconcile warfarin with the feeding plan",
+          "body": "Feeding products can bind warfarin and lower its availability; their vitamin K content can also lower the INR. Keep vitamin K exposure consistent, review changes in formula and delivery schedule, and monitor INR rather than changing the dose from the formula name alone. The feeding-separation plan described here for warfarin is one hour before and one hour after administration. Coordinate that plan with the medication order and nutrition delivery; do not copy it to another drug."
+        },
+        {
+          "lesson": "medication-administration",
+          "heading": "Monitor phenytoin when feeding changes",
+          "body": "Enteral feeding can reduce phenytoin absorption and produce subtherapeutic concentrations. Review the formulation, actual administration, feeding schedule, seizure control, and serum phenytoin concentration when exposure changes. Do not respond to a falling concentration with an automatic dose increase before checking delivery and interactions. Phenytoin also has dose-related toxicity and substantial protein binding, so concentration interpretation must account for the patient's clinical state and albumin, kidney, and liver function. A phenytoin-specific separation plan may hold feeding for one to two hours before and after the dose. Confirm the actual product's administration instructions and prescribed plan; a warfarin schedule does not establish a phenytoin schedule."
+        }
+      ],
+      "retainedBody": {
+        "lesson": "medication-administration",
+        "heading": "Review the dosage form before altering it",
+        "body": "Do not crush extended-release, delayed-release, enteric-coated, sublingual, buccal, or hazardous products unless a trusted drug-specific source explicitly permits an alternative technique. Immediate-release tablets may be crushable, and some capsules may be opened, but each product must be checked. Select a compatible liquid or alternative route when possible."
+      },
+      "prior106IdsPromptsKeysAnchorsPreserved": true,
+      "prior96QuestionObjectsUnchanged": true,
+      "previous36ArithmeticBankObjectsUnchanged": true,
+      "newIndependentTimingCheck": {
+        "id": "enteral-nutrition-114",
+        "dose": "08:00",
+        "stop": "07:00",
+        "restart": "09:00",
+        "durationMinutes": 120,
+        "newCount": 1,
+        "runningAssessmentChecks": 674,
+        "runningSeparateSourceExamples": 98
+      },
+      "cumulativeIds": [
+        "cumulative-enteral-nutrition-enteral-nutrition-001",
+        "cumulative-enteral-nutrition-enteral-nutrition-028",
+        "cumulative-enteral-nutrition-enteral-nutrition-064",
+        "cumulative-enteral-nutrition-enteral-nutrition-090",
+        "cumulative-enteral-nutrition-enteral-nutrition-117"
+      ],
+      "contentHashes": {
+        "src/data/modules/enteralNutrition.js": "b8026b4f4b8b342a54683d8de0516a29188c037fd4a484537910293654041e0a",
+        "src/data/questionBanks/enteralNutrition.js": "ff57f55ff10ea10b7d8994d907eaeb524bbe291576dfef4e22f7de891faead05"
+      }
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "renderedBodies": 33,
+          "newOrRevisedBodies": 4,
+          "retainedBody": 1,
+          "bankItemsCorrectAndWrong": 12,
+          "currentCumulativeRuntimeItems": 5,
+          "clinicalCumulativeItemsPendingSource": [
+            "enteral-nutrition-028",
+            "enteral-nutrition-090"
+          ],
+          "remediationAndProgress": true
+        },
+        {
+          "width": 390,
+          "renderedBodies": 33,
+          "newOrRevisedBodies": 4,
+          "retainedBody": 1,
+          "bankItemsCorrectAndWrong": 12,
+          "currentCumulativeRuntimeItems": 5,
+          "clinicalCumulativeItemsPendingSource": [
+            "enteral-nutrition-028",
+            "enteral-nutrition-090"
+          ],
+          "remediationAndProgress": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "manualVisual": {
+      "bodyDesktopMobileImages": 10,
+      "scopedWrongFeedbackImages": 24,
+      "newCorrectFeedbackImages": 4,
+      "findings": "All five scoped bodies and twelve item prompts/options/rationales/feedback manually inspected at1440/390. Final changed phenytoin body and q040 reread after final rendering. No clipping; runtime320 overflow, remediation and saved progress passed."
+    }
+  },
+  "calculationEvidence": {
+    "newDistinctAssessmentChecks": 1,
+    "timing": {
+      "id": "enteral-nutrition-114",
+      "dose": "08:00",
+      "stop": "07:00",
+      "restart": "09:00",
+      "durationMinutes": 120,
+      "newCount": 1,
+      "runningAssessmentChecks": 674,
+      "runningSeparateSourceExamples": 98
+    },
+    "runningAssessmentChecks": 674,
+    "runningSeparateSourceExamples": 98,
+    "prior36ArithmeticBankObjectsUnchanged": true,
+    "sourceExampleCountUnchanged": true
+  },
+  "coverage": {
+    "bank": 108,
+    "verifiedBank": 50,
+    "remainingBank": 58,
+    "verifiedBankIds": [
+      "enteral-nutrition-060",
+      "enteral-nutrition-061",
+      "enteral-nutrition-062",
+      "enteral-nutrition-063",
+      "enteral-nutrition-064",
+      "enteral-nutrition-065",
+      "enteral-nutrition-066",
+      "enteral-nutrition-067",
+      "enteral-nutrition-068",
+      "enteral-nutrition-069",
+      "enteral-nutrition-070",
+      "enteral-nutrition-071",
+      "enteral-nutrition-072",
+      "enteral-nutrition-073",
+      "enteral-nutrition-074",
+      "enteral-nutrition-075",
+      "enteral-nutrition-076",
+      "enteral-nutrition-077",
+      "enteral-nutrition-078",
+      "enteral-nutrition-079",
+      "enteral-nutrition-080",
+      "enteral-nutrition-081",
+      "enteral-nutrition-082",
+      "enteral-nutrition-083",
+      "enteral-nutrition-084",
+      "enteral-nutrition-085",
+      "enteral-nutrition-086",
+      "enteral-nutrition-087",
+      "enteral-nutrition-088",
+      "enteral-nutrition-089",
+      "enteral-nutrition-109",
+      "enteral-nutrition-110",
+      "enteral-nutrition-111",
+      "enteral-nutrition-112",
+      "enteral-nutrition-113",
+      "enteral-nutrition-114",
+      "enteral-nutrition-001",
+      "enteral-nutrition-115",
+      "enteral-nutrition-033",
+      "enteral-nutrition-035",
+      "enteral-nutrition-036",
+      "enteral-nutrition-037",
+      "enteral-nutrition-040",
+      "enteral-nutrition-042",
+      "enteral-nutrition-093",
+      "enteral-nutrition-094",
+      "enteral-nutrition-098",
+      "enteral-nutrition-107",
+      "enteral-nutrition-116",
+      "enteral-nutrition-117"
+    ],
+    "remainingBankIds": [
+      "enteral-nutrition-002",
+      "enteral-nutrition-003",
+      "enteral-nutrition-004",
+      "enteral-nutrition-005",
+      "enteral-nutrition-006",
+      "enteral-nutrition-007",
+      "enteral-nutrition-008",
+      "enteral-nutrition-009",
+      "enteral-nutrition-010",
+      "enteral-nutrition-011",
+      "enteral-nutrition-012",
+      "enteral-nutrition-013",
+      "enteral-nutrition-014",
+      "enteral-nutrition-015",
+      "enteral-nutrition-016",
+      "enteral-nutrition-017",
+      "enteral-nutrition-018",
+      "enteral-nutrition-019",
+      "enteral-nutrition-020",
+      "enteral-nutrition-021",
+      "enteral-nutrition-022",
+      "enteral-nutrition-023",
+      "enteral-nutrition-024",
+      "enteral-nutrition-025",
+      "enteral-nutrition-026",
+      "enteral-nutrition-027",
+      "enteral-nutrition-028",
+      "enteral-nutrition-029",
+      "enteral-nutrition-030",
+      "enteral-nutrition-031",
+      "enteral-nutrition-032",
+      "enteral-nutrition-034",
+      "enteral-nutrition-038",
+      "enteral-nutrition-039",
+      "enteral-nutrition-041",
+      "enteral-nutrition-043",
+      "enteral-nutrition-044",
+      "enteral-nutrition-045",
+      "enteral-nutrition-046",
+      "enteral-nutrition-047",
+      "enteral-nutrition-048",
+      "enteral-nutrition-049",
+      "enteral-nutrition-050",
+      "enteral-nutrition-090",
+      "enteral-nutrition-091",
+      "enteral-nutrition-092",
+      "enteral-nutrition-095",
+      "enteral-nutrition-096",
+      "enteral-nutrition-097",
+      "enteral-nutrition-099",
+      "enteral-nutrition-100",
+      "enteral-nutrition-101",
+      "enteral-nutrition-102",
+      "enteral-nutrition-103",
+      "enteral-nutrition-104",
+      "enteral-nutrition-105",
+      "enteral-nutrition-106",
+      "enteral-nutrition-108"
+    ],
+    "bodies": 33,
+    "verifiedBodies": 12,
+    "remainingBodies": 21,
+    "embeddedChecks": 6,
+    "verifiedEmbeddedChecks": 2,
+    "remainingEmbeddedChecks": 4,
+    "figures": 6,
+    "verifiedFigures": 0,
+    "cumulative": 5,
+    "sourceVerifiedCumulative": 3,
+    "pendingCumulative": [
+      "enteral-nutrition-028",
+      "enteral-nutrition-090"
+    ],
+    "metadata": "Integrated module/lesson metadata and six figure claim sets remain open."
+  },
+  "wholeModuleVerified": false,
+  "wholeChapterVerified": false,
+  "outsideENSourceApproval": "pending human response; no additional sources opened",
+  "nextAction": "Next complete book-supported EN route-preference, short/long access and hydration coverage from PDF169-170, then reconcile remaining58 bank items,21 bodies,four embedded checks,six figures and metadata. Current cumulative q028 specialty-formula claim and q090 unconfirmed-placement claim remain source-pending. Outside EN primary-guidance request remains unanswered; no outside EN sources opened. Continue cross-module feeding inventory and working warfarin bank integration before whole EN closure. Then pediatric PN and clinical fluid/calcium dependencies; Chapter1 checklist entry15 and Chapter11 remain reviewing.",
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "contentCommit": "pending",
+    "remoteHashVerified": false,
+    "receipt": "sequential-release-en-medications-2026-10-01.json",
+    "production": "not verified",
+    "mainMerge": "not performed"
+  }
+}
