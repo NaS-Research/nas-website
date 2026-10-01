@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import LearningCinema from "@/components/learn/LearningCinema";
+import LearnDrugLibrary from "@/components/learn/LearnDrugLibrary";
+import styles from "@/components/learn/LearnDrugLibrary.module.css";
 
 export const metadata = {
   title: "Learn | NaS",
@@ -25,11 +27,7 @@ export default function LearningPage() {
       </header>
 
       <div data-page-main>
-        <section className="nas-shell learning-discipline" id="library" aria-labelledby="library-title">
-          <div className="learning-discipline__identity">
-            <span>01</span>
-            <p>Learn</p>
-          </div>
+        <section className={`nas-shell learning-discipline ${styles.lessons}`} id="library" aria-labelledby="library-title">
           <div className="learning-discipline__body">
             <p className="nas-section-label">Learning library</p>
             <h2 id="library-title">From mechanism to understanding.</h2>
@@ -41,25 +39,7 @@ export default function LearningPage() {
           </div>
         </section>
 
-        <section className="nas-shell learning-discipline" id="drug-library" aria-labelledby="drug-library-title">
-          <div className="learning-discipline__identity">
-            <span>02</span>
-            <p>Reference</p>
-          </div>
-          <div className="learning-discipline__body">
-            <p className="nas-section-label">Drug library</p>
-            <h2 id="drug-library-title">Know the drug.<br />Understand the science.</h2>
-            <p>Find medications by generic name, brand name, or therapeutic class. Explore drug profiles and connect directly to prescribing information.</p>
-            <Link href="/learn/pharmacy/drugs" className="learning-primary-link">Explore the drug library <span aria-hidden="true">↗</span></Link>
-          </div>
-          <div className="learning-discipline__map" aria-label="Drug library features">
-            <span>Generic and brand names</span>
-            <span>Therapeutic classes</span>
-            <span>Drug profiles</span>
-            <span>Prescribing information</span>
-            <span>Medication search</span>
-          </div>
-        </section>
+        <LearnDrugLibrary />
 
         <LearningCinema />
 

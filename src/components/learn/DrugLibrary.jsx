@@ -25,6 +25,11 @@ export default function DrugLibrary() {
   const [searching, setSearching] = useState(false);
   const [serviceUnavailable, setServiceUnavailable] = useState(false);
 
+  useEffect(() => {
+    const initialQuery = new URLSearchParams(window.location.search).get("q");
+    if (initialQuery) setQuery(initialQuery.trim().slice(0, 160));
+  }, []);
+
   const filtered = useMemo(() => {
     const normalized = query.toLowerCase();
     return coreDrugs
