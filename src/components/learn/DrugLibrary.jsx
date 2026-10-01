@@ -191,7 +191,7 @@ export default function DrugLibrary() {
         <DrugQuestionBank />
       )}
 
-      <p className="drug-library__source">The initial catalog was seeded from the <a href="https://clincalc.com/DrugStats/Top300Drugs.aspx" target="_blank" rel="noreferrer">ClinCalc DrugStats Database</a> and is expanded as additional medication profiles are reviewed. Therapeutic filters follow the NaS pharmacy study-card taxonomy. Live search uses RxNorm. These sources do not endorse or recommend this product. Medication appearance and labeling vary by manufacturer and product.</p>
+      <p className="drug-library__source">The initial catalog was seeded from the <a href="https://clincalc.com/DrugStats/Top300Drugs.aspx" target="_blank" rel="noreferrer">ClinCalc DrugStats Database</a> and is expanded as additional medication profiles are reviewed. Live search uses RxNorm. These sources do not endorse or recommend this product. Medication appearance and labeling vary by manufacturer and product.</p>
     </section>
   );
 }
