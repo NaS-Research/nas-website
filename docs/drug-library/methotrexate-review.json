@@ -1,0 +1,685 @@
+{
+  "slug": "methotrexate",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "A product-specific systemic antifolate reference covering oral tablets, pediatric oral solution, and weekly subcutaneous autoinjectors. All eight blueprint sections reviewed. Product-specific focused monograph; not an exhaustive adverse-event catalog.",
+  "sources": [
+    {
+      "id": "tablet",
+      "title": "Trexall · Current oral tablet prescribing information",
+      "publisher": "DailyMed / Teva Women’s Health",
+      "note": "SPL version 14, effective 20260617; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e942f8db-510f-44d6-acb5-b822196f5e8c",
+      "checked": "2026-10-01",
+      "version": "SPL version 14, effective 20260617; current public product labeling.",
+      "spl_version": "14",
+      "spl_effective_time": "20260617",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/e942f8db-510f-44d6-acb5-b822196f5e8c.xml",
+      "downloaded_xml_sha256": "ae1f2d3c58138a8d22caebf022664796f777635bb0f0fafd8b9c268038982e21",
+      "regulatory_identity": {
+        "labeler": [
+          "Teva Women's Health LLC"
+        ],
+        "approval_identifiers": [
+          "ANDA040385"
+        ],
+        "status_note": "Label regulatory metadata checked; labeling or an NDC does not guarantee current retail availability."
+      }
+    },
+    {
+      "id": "liquid",
+      "title": "Xatmep · Methotrexate oral solution prescribing information",
+      "publisher": "DailyMed / Azurity",
+      "note": "SPL version 12, effective 20260528; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aec9984e-34c5-481b-b6bf-9bb5caf1daf8",
+      "checked": "2026-10-01",
+      "version": "SPL version 12, effective 20260528; current public product labeling.",
+      "spl_version": "12",
+      "spl_effective_time": "20260528",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/aec9984e-34c5-481b-b6bf-9bb5caf1daf8.xml",
+      "downloaded_xml_sha256": "006ac0d83733fa74e3c76050975c1b6cf705a18fbf2cb6ca74062cb048f74d85",
+      "regulatory_identity": {
+        "labeler": [
+          "Azurity Pharmaceuticals, Inc."
+        ],
+        "approval_identifiers": [
+          "NDA208400"
+        ],
+        "status_note": "Label regulatory metadata checked; labeling or an NDC does not guarantee current retail availability."
+      }
+    },
+    {
+      "id": "pen",
+      "title": "Rasuvo · Subcutaneous autoinjector prescribing information",
+      "publisher": "DailyMed / Medexus",
+      "note": "SPL version 10, effective 20251215; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0075461-0e7e-4967-9c9b-d6440e912c0e",
+      "checked": "2026-10-01",
+      "version": "SPL version 10, effective 20251215; current public product labeling.",
+      "spl_version": "10",
+      "spl_effective_time": "20251215",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/d0075461-0e7e-4967-9c9b-d6440e912c0e.xml",
+      "downloaded_xml_sha256": "552da2e0ac5f331651b79052f1c300139bae7365b90cf9636feb2084cc339d68",
+      "regulatory_identity": {
+        "labeler": [
+          "Medexus Pharma Inc."
+        ],
+        "approval_identifiers": [
+          "NDA205776"
+        ],
+        "status_note": "Label regulatory metadata checked; labeling or an NDC does not guarantee current retail availability."
+      }
+    }
+  ],
+  "assertion_to_source": [
+    {
+      "section_id": "indications",
+      "card_title": "Trexall oral tablet indications",
+      "assertions": [
+        "Trexall is labeled for adult rheumatoid arthritis, pediatric polyarticular JIA, and severe adult psoriasis. Cancer indications are adult/pediatric ALL combination maintenance, adult mycosis fungoides as monotherapy or combination therapy, and adult relapsed/refractory non-Hodgkin lymphoma in a metronomic combination regimen."
+      ],
+      "support": [
+        {
+          "source_id": "tablet",
+          "sections": [
+            "1.1–1.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "indications",
+      "card_title": "Other covered products",
+      "assertions": [
+        "Xatmep is an oral solution labeled for pediatric ALL combination maintenance and active pediatric pJIA with insufficient response or intolerance to first-line therapy including full-dose NSAIDs. Rasuvo is a subcutaneous weekly product for selected severe active adult RA and pJIA after inadequate response/intolerance to first-line therapy, and severe recalcitrant disabling adult psoriasis; it is not indicated for neoplastic diseases."
+      ],
+      "support": [
+        {
+          "source_id": "liquid",
+          "sections": [
+            "1.1",
+            "1.2"
+          ]
+        },
+        {
+          "source_id": "pen",
+          "sections": [
+            "1.1–1.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Non-neoplastic oral tablet regimens",
+      "assertions": [
+        "The current Trexall label gives these regimens. Adjust to response and toxicity, with folic or folinic acid supplementation as directed; a numerical folate schedule is not supplied here.",
+        "Adult RA | Start 7.5 mg once weekly; escalate as appropriate. Above 20 mg/week increases serious adverse-reaction risk.",
+        "Pediatric pJIA | Start 10 mg/m² once weekly; escalate as appropriate. Above 30 mg/m²/week increases serious adverse-reaction risk.",
+        "Severe adult psoriasis | 10–25 mg once weekly; adjust gradually, maximum 30 mg/week. Reduce to the lowest effective regimen after response."
+      ],
+      "support": [
+        {
+          "source_id": "tablet",
+          "sections": [
+            "2.3–2.5",
+            "5.10"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Pediatric oral solution",
+      "assertions": [
+        "Xatmep starts at 20 mg/m² once weekly for ALL combination maintenance, with ANC/platelet-guided protocol adjustment; pJIA starts 10 mg/m² once weekly and is individualized. Its pJIA label flags increased serious toxicity above 20 mg/m²/week. The concentration is 2.5 mg/mL: use a pharmacist-provided accurate milliliter device, never a household teaspoon. Oral use only."
+      ],
+      "support": [
+        {
+          "source_id": "liquid",
+          "sections": [
+            "2.1–2.4",
+            "5.15",
+            "16"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Subcutaneous Rasuvo",
+      "assertions": [
+        "Inject once weekly into abdomen or thigh after training. Adult RA starts 7.5 mg/week; pJIA starts 10 mg/m²/week; psoriasis starts 10–25 mg/week, ordinarily not exceeding 30 mg/week. Fixed pens supply 7.5–30 mg in 2.5-mg increments; another formulation is needed outside those increments/ranges. Its label warns of higher toxicity above 20 mg/week in adult arthritis. Switching from oral therapy requires consideration of higher subcutaneous bioavailability, not automatic milligram substitution."
+      ],
+      "support": [
+        {
+          "source_id": "pen",
+          "sections": [
+            "2.1–2.4",
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Oral cancer regimens and scope",
+      "assertions": [
+        "Trexall starts ALL maintenance at 20 mg/m² once weekly as part of combination chemotherapy. Mycosis fungoides: 25–75 mg once weekly as monotherapy, or 10 mg/m² twice weekly in combination. Adult relapsed/refractory NHL: 2.5 mg 2–4 times weekly, maximum 10 mg/week, as part of metronomic combination therapy. These specialist schedules must not be confused with daily use or inflammatory-disease schedules. High-dose IV, intrathecal, other injectable cancer protocols, and ectopic-pregnancy treatment are outside this product-specific reference; they require separate verified product/protocol review."
+      ],
+      "support": [
+        {
+          "source_id": "tablet",
+          "sections": [
+            "2.1",
+            "2.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Warnings and precautions",
+      "assertions": [
+        "Methotrexate can cause life-threatening marrow suppression, infection, GI ulceration/perforation, irreversible liver injury, pneumonitis, severe skin reactions, renal injury, neurotoxicity, and secondary malignancies. Obtain baseline and ongoing blood counts, liver tests, and renal function; withhold or discontinue for significant toxicity according to the exact product and clinical context. New dry cough or dyspnea requires prompt assessment for pneumonitis and infection. Severe mouth sores, diarrhea, bleeding, fever, jaundice, or reduced urine need urgent review.",
+        "Weekly-dose medication errors can be fatal. Significant ascites or pleural fluid delays clearance and requires assessment before treatment. Live vaccines are not recommended during therapy; update and plan immunizations using current guidance. Cancer patients may require tumor-lysis prophylaxis. Avoid excess UV exposure and use sun protection."
+      ],
+      "support": [
+        {
+          "source_id": "tablet",
+          "sections": [
+            "Boxed warning",
+            "5"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "Boxed warning",
+            "5"
+          ]
+        },
+        {
+          "source_id": "pen",
+          "sections": [
+            "Boxed warning",
+            "5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Contraindications",
+      "assertions": [
+        "Trexall and Xatmep: pregnancy for non-neoplastic disease and severe methotrexate hypersensitivity. Pregnancy during cancer treatment remains a serious embryo-fetal risk requiring specialist benefit–risk assessment. Rasuvo additionally formally contraindicates pregnancy, alcoholism/alcoholic or other chronic liver disease, immunodeficiency syndromes, preexisting blood dyscrasias such as significant anemia/leukopenia/thrombocytopenia, and known methotrexate hypersensitivity. Those Rasuvo classifications must not be silently substituted for the newer oral labels."
+      ],
+      "support": [
+        {
+          "source_id": "tablet",
+          "sections": [
+            "4"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "4"
+          ]
+        },
+        {
+          "source_id": "pen",
+          "sections": [
+            "4 / Pregnancy, Alcoholism or Liver Disease, Immunodeficiency, Preexisting Blood Dyscrasias, Hypersensitivity"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Boxed warning: fetal and severe toxicity",
+      "assertions": [
+        "All three products carry boxed warnings. Current Trexall explicitly includes embryo-fetal toxicity, severe hypersensitivity, severe organ adverse reactions, and fatal medication errors. Xatmep and Rasuvo emphasize severe toxic reactions and embryo-fetal toxicity; the complete product boxes include additional context. Do not interpret a low weekly inflammatory dose as protection against serious toxicity."
+      ],
+      "support": [
+        {
+          "source_id": "tablet",
+          "sections": [
+            "Boxed warning",
+            "5"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "Boxed warning",
+            "5"
+          ]
+        },
+        {
+          "source_id": "pen",
+          "sections": [
+            "Boxed warning",
+            "5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Adverse reactions and overdose",
+      "assertions": [
+        "Nausea, abdominal distress, mouth ulceration, leukopenia, and liver-test elevations are reported; frequency depends on regimen/population. An extra dose or accidental daily use requires immediate emergency/toxicology assessment even without symptoms. Clinicians use prompt leucovorin/levoleucovorin rescue guided by methotrexate and creatinine measurements; delayed renal clearance with toxic levels may require glucarpidase under its own label. Rescue, hydration/alkalinization, and dialysis decisions are specialist procedures rather than home treatment."
+      ],
+      "support": [
+        {
+          "source_id": "tablet",
+          "sections": [
+            "6",
+            "10"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "6",
+            "10"
+          ]
+        },
+        {
+          "source_id": "pen",
+          "sections": [
+            "6",
+            "10"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Medicines that raise toxicity",
+      "assertions": [
+        "Trimethoprim-sulfamethoxazole can intensify marrow suppression through antifolate effects and altered clearance; seek a specialist alternative/assessment rather than routine unsupervised co-use. Penicillins, sulfonamides, NSAIDs/aspirin, PPIs, probenecid, highly protein-bound medicines, and nephrotoxic or hepatotoxic products can increase exposure or toxicity. If a combination is necessary, plan closer monitoring. NSAID interactions are especially dangerous with high-dose cancer regimens; stable low-dose arthritis co-treatment still needs supervision."
+      ],
+      "support": [
+        {
+          "source_id": "tablet",
+          "sections": [
+            "7"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "7"
+          ]
+        },
+        {
+          "source_id": "pen",
+          "sections": [
+            "7"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Folate, anesthesia, and other interactions",
+      "assertions": [
+        "Avoid nitrous oxide anesthesia because it potentiates folate-pathway toxicity. For RA/pJIA/psoriasis, the current tablet label directs folic or folinic supplementation; in cancer, unplanned folate can reduce effectiveness, and rescue must follow the protocol. Rasuvo reports raised mercaptopurine levels that may need adjustment; methotrexate can reduce theophylline clearance, requiring concentration monitoring."
+      ],
+      "support": [
+        {
+          "source_id": "tablet",
+          "sections": [
+            "5.10",
+            "7.1"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "7.1",
+            "7.2"
+          ]
+        },
+        {
+          "source_id": "pen",
+          "sections": [
+            "7.5–7.8"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pregnancy, lactation, and fertility",
+      "assertions": [
+        "Exclude pregnancy before starting in a patient who can become pregnant. Methotrexate can cause fetal malformations and death; non-neoplastic use is contraindicated in pregnancy. Labels advise effective contraception during treatment and for 6 months after the last dose for females, and 3 months for males with partners of reproductive potential. Do not breastfeed during treatment or for 1 week after the final dose. Fertility impairment, oligospermia, and menstrual dysfunction may occur and may not be reversible."
+      ],
+      "support": [
+        {
+          "source_id": "tablet",
+          "sections": [
+            "8.1",
+            "8.2",
+            "8.3"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "8.1",
+            "8.2",
+            "8.3"
+          ]
+        },
+        {
+          "source_id": "pen",
+          "sections": [
+            "8.1",
+            "8.2",
+            "8.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pediatric and geriatric use",
+      "assertions": [
+        "Trexall pediatric use is established for ALL and pJIA, not its other indications. Xatmep is specifically labeled for pediatric ALL/pJIA. Rasuvo pediatric effectiveness is established for pJIA, not psoriasis or cancer. Older-adult evidence is limited; organ function, folate status, and interacting medicines warrant particular attention. No general neonatal regimen is provided."
+      ],
+      "support": [
+        {
+          "source_id": "tablet",
+          "sections": [
+            "8.4",
+            "8.5"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "8.4",
+            "8.5"
+          ]
+        },
+        {
+          "source_id": "pen",
+          "sections": [
+            "8.4",
+            "8.5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Renal and hepatic impairment",
+      "assertions": [
+        "Reduced renal clearance increases toxicity. Trexall directs close monitoring when Cockcroft–Gault CrCl is below 90 mL/min and reduction or discontinuation as appropriate, without a universal percentage algorithm; Xatmep/Rasuvo likewise require individualized reduction or cessation. Hepatic pharmacokinetics/safety is inadequately defined. Rasuvo formally contraindicates chronic liver disease/alcoholism; Xatmep directs avoidance in chronic liver disease, while Trexall describes increased risk and individualized monitoring/reduction/discontinuation. Heavy alcohol increases liver risk."
+      ],
+      "support": [
+        {
+          "source_id": "tablet",
+          "sections": [
+            "5.5",
+            "8.6",
+            "8.7"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "5.5",
+            "8.6",
+            "8.7"
+          ]
+        },
+        {
+          "source_id": "pen",
+          "sections": [
+            "4",
+            "8.6",
+            "8.7"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Mechanism",
+      "assertions": [
+        "Methotrexate inhibits dihydrofolate reductase, impairing reduced-folate-dependent nucleotide synthesis, DNA synthesis/repair, and cellular replication. Rapidly dividing malignant, marrow, mucosal, and fetal tissues are particularly susceptible. The complete mechanism in inflammatory arthritis and psoriasis is not established by these labels."
+      ],
+      "support": [
+        {
+          "source_id": "tablet",
+          "sections": [
+            "12.1"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "12.1"
+          ]
+        },
+        {
+          "source_id": "pen",
+          "sections": [
+            "12.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Pharmacokinetics",
+      "assertions": [
+        "Oral absorption is variable and dose-dependent; subcutaneous Rasuvo exposure is higher than oral exposure at tested equivalent doses. Intracellular polyglutamates persist, so plasma half-life does not describe all biological effects. Renal filtration and active tubular secretion dominate elimination; impairment and third-space fluid can prolong exposure. Oral therapeutic doses do not provide reliable therapeutic CSF penetration."
+      ],
+      "support": [
+        {
+          "source_id": "tablet",
+          "sections": [
+            "12.3",
+            "5 / Third-space accumulation"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "12.3",
+            "5 / Third-space accumulation"
+          ]
+        },
+        {
+          "source_id": "pen",
+          "sections": [
+            "12.3",
+            "5 / Third-space accumulation"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Monitoring",
+      "assertions": [
+        "Check CBC/differential/platelets, renal function, liver tests, and pregnancy status before treatment and during therapy; assess pulmonary history and symptoms. Xatmep and Rasuvo describe hematology at least monthly and renal/liver tests every 1–2 months, with more frequent checks during initiation, changes, dehydration, or other high-risk periods; specialist protocols may require more. Trexall uses baseline/periodic and clinically indicated monitoring. Cancer dosing requires protocol-specific counts and, where appropriate, concentration-guided rescue. Rasuvo’s liver-biopsy recommendations are product-label context requiring specialist assessment, not a universal biopsy schedule."
+      ],
+      "support": [
+        {
+          "source_id": "tablet",
+          "sections": [
+            "2.1",
+            "2.2",
+            "5",
+            "17"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "2.4",
+            "5.14"
+          ]
+        },
+        {
+          "source_id": "pen",
+          "sections": [
+            "2.2",
+            "5.1 / Hepatic",
+            "5.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Patient counseling",
+      "assertions": [
+        "Confirm the prescribed weekly day and never repeat a weekly dose daily. Some cancer protocols have other frequencies, which must be explicitly verified. Use the correct tablet count or oral syringe; do not interchange liquid concentration, route, or pen strength. Ask before antibiotics, OTC NSAIDs, supplements, vaccination, or anesthesia. Report toxicity symptoms urgently, follow contraception and breastfeeding restrictions, and use safe cytotoxic handling/disposal. Do not self-manage missed or extra doses."
+      ],
+      "support": [
+        {
+          "source_id": "tablet",
+          "sections": [
+            "2",
+            "5",
+            "17"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "2",
+            "5",
+            "17"
+          ]
+        },
+        {
+          "source_id": "pen",
+          "sections": [
+            "2",
+            "5",
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Representative products",
+      "assertions": [
+        "Trexall 5-mg tablets are green, oval, scored, marked stylized b and 927/5; bottle of 30 NDC 51285-366-01. Xatmep is clear yellow-to-orange 2.5-mg/mL oral solution, 60-mL NDC 52652-2001-6 or 120-mL NDC 52652-2001-1. Rasuvo 15-mg/0.30-mL pens come in a four-unit carton NDC 59137-520-04; they are preservative-free and subcutaneous only. Verify the actual manufacturer package."
+      ],
+      "support": [
+        {
+          "source_id": "tablet",
+          "sections": [
+            "3",
+            "11",
+            "16"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "3",
+            "11",
+            "16"
+          ]
+        },
+        {
+          "source_id": "pen",
+          "sections": [
+            "3",
+            "11",
+            "16"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Dosage forms and strengths",
+      "assertions": [
+        "Trexall tablets: 5, 7.5, 10, and 15 mg; it is not the generic 2.5-mg tablet product. Xatmep oral solution: 2.5 mg/mL. Rasuvo: 50 mg/mL, fixed 7.5–30-mg single-use pens in 2.5-mg increments (0.15–0.60 mL). Other methotrexate syringes, injectable vials, preservatives, concentrations, and cancer/intrathecal routes need their own label; none may be inferred from these pens."
+      ],
+      "support": [
+        {
+          "source_id": "tablet",
+          "sections": [
+            "3",
+            "11",
+            "16"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "3",
+            "11",
+            "16"
+          ]
+        },
+        {
+          "source_id": "pen",
+          "sections": [
+            "3",
+            "11",
+            "16"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Storage and handling",
+      "assertions": [
+        "Trexall: 20–25°C in a tight light-resistant container with child-resistant closure; protect from light. Xatmep: refrigerated 2–8°C before dispensing in the tightly closed original bottle; after dispensing it may remain refrigerated or be kept at 20–25°C (excursions 15–30°C), discarding after 60 days if at room temperature. Avoid freezing or excessive heat. Rasuvo: 25°C, excursions 15–30°C, protected from light; dispose of used pens in an appropriate sharps container. All require cytotoxic handling/disposal precautions."
+      ],
+      "support": [
+        {
+          "source_id": "tablet",
+          "sections": [
+            "16"
+          ]
+        },
+        {
+          "source_id": "liquid",
+          "sections": [
+            "16"
+          ]
+        },
+        {
+          "source_id": "pen",
+          "sections": [
+            "16",
+            "17"
+          ]
+        }
+      ]
+    }
+  ],
+  "material_errors": [],
+  "gaps": [],
+  "limitations": [
+    "High-dose IV/IM/intrathecal oncology, generic 2.5-mg tablets, other injection products, and ectopic-pregnancy protocols are explicitly excluded; route-specific doses, preservatives, rescue algorithms and administration must be verified separately.",
+    "Older Rasuvo label retains broader formal contraindications and biopsy language than the current oral labels; distinctions are preserved without claiming a universal monitoring/biopsy standard.",
+    "No unverified folate dose, renal percentage algorithm, neonatal schedule, or safe pregnancy/lactation claim is supplied."
+  ],
+  "validation": {
+    "schema": "validateMonograph: []",
+    "contract": "Eight APAP section IDs/titles/order; four Safety and three Product core cards; warnings open with warning tone; three hero fact tuples.",
+    "independent_review": "Requested separately; no independent approval implied."
+  },
+  "full_source_review": {
+    "method": "Full public XML section texts downloaded and reviewed, including product-specific dosing, warnings, populations, pharmacology, storage, and applicable patient instructions.",
+    "paywall_access": "None claimed.",
+    "reviewed_date": "2026-10-01"
+  }
+}

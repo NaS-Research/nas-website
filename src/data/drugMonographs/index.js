@@ -139,6 +139,16 @@ import { isosorbide } from "./isosorbide.js";
 import { methylprednisolone } from "./methylprednisolone.js";
 import { hydrochlorothiazide_triamterene } from "./hydrochlorothiazide-triamterene.js";
 import { levocetirizine } from "./levocetirizine.js";
+import { clindamycin } from "./clindamycin.js";
+import { atomoxetine } from "./atomoxetine.js";
+import { dexmethylphenidate } from "./dexmethylphenidate.js";
+import { methotrexate } from "./methotrexate.js";
+import { donepezil } from "./donepezil.js";
+import { desvenlafaxine } from "./desvenlafaxine.js";
+import { ropinirole } from "./ropinirole.js";
+import { clobetasol } from "./clobetasol.js";
+import { fluticasone_vilanterol } from "./fluticasone-vilanterol.js";
+import { albuterol_ipratropium } from "./albuterol-ipratropium.js";
 
 export const reviewedDrugMonographs = {
   "atorvastatin": atorvastatin,
@@ -281,4 +291,14 @@ export const reviewedDrugMonographs = {
   "methylprednisolone": methylprednisolone,
   "hydrochlorothiazide-triamterene": hydrochlorothiazide_triamterene,
   "levocetirizine": levocetirizine,
+  "clindamycin": clindamycin,
+  "atomoxetine": atomoxetine,
+  "dexmethylphenidate": dexmethylphenidate,
+  "methotrexate": methotrexate,
+  "donepezil": donepezil,
+  "desvenlafaxine": desvenlafaxine,
+  "ropinirole": ropinirole,
+  "clobetasol": clobetasol,
+  "fluticasone-vilanterol": fluticasone_vilanterol,
+  "albuterol-ipratropium": albuterol_ipratropium,
 };

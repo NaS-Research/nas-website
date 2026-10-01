@@ -1,0 +1,899 @@
+{
+  "drug": "fluticasone-vilanterol",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Current full U.S. Breo Ellipta SPL29 and device/patient sections; current GSK manufacturer PDF corroborates indication, age-specific doses and key warnings. No acute-reliever protocol, international-dose rules or inhaled-steroid conversion supplied.",
+  "blueprint": {
+    "sections": [
+      [
+        "indications",
+        "Indications"
+      ],
+      [
+        "dosage",
+        "Dosage and administration"
+      ],
+      [
+        "safety",
+        "Safety"
+      ],
+      [
+        "interactions",
+        "Drug interactions"
+      ],
+      [
+        "populations",
+        "Use in specific populations"
+      ],
+      [
+        "pharmacology",
+        "Clinical pharmacology"
+      ],
+      [
+        "practice",
+        "Monitoring and counseling"
+      ],
+      [
+        "product",
+        "Product identification"
+      ]
+    ],
+    "essential_safety": true,
+    "hero_facts": 3,
+    "APAP_modified": false
+  },
+  "sources": [
+    {
+      "id": "pi",
+      "title": "Breo Ellipta \u00b7 Current full prescribing information and device instructions",
+      "publisher": "GSK / DailyMed",
+      "note": "Clinical PI November 2024; current SPL29 published June 8, 2026. Patient/device instructions May 2023. Dates distinguish clinical revision from archive publication.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=96428df1-ea05-431a-98d3-1ec2c4b63878"
+    },
+    {
+      "id": "maker",
+      "title": "Breo Ellipta \u00b7 Current manufacturer label corroboration",
+      "publisher": "GSK",
+      "note": "Current manufacturer PDF retains November 2024 clinical revision; indication, age-specific dosing, contraindications and warnings compared with current SPL.",
+      "url": "https://gskpro.com/content/dam/global/hcpportal/en_US/Prescribing_Information/Breo_Ellipta/pdf/BREO-ELLIPTA-PI-PIL-IFU.PDF"
+    }
+  ],
+  "source_records": [
+    {
+      "id": "pi",
+      "local_snapshot": "/tmp/nas-drug-sources/breo-ellipta.xml",
+      "label_revision": "PI11/2024; Patient Information/IFU05/2023",
+      "set_id": "96428df1-ea05-431a-98d3-1ec2c4b63878",
+      "spl_version": "29",
+      "spl_effective_time": "20241107",
+      "dailymed_published_date": "2026-06-08",
+      "sha256": "3e467fb3c6baf181eaa2cc91a6baf351edfaa29d9eecd614bdb64b68fb50d70c",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "metadata_evidence": "Full retained XML setId/version/effectiveTime plus actual clinicalrevision text and currentDailyMedarchivepublished-date table checked October1,2026.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-15-thyroid-metformin/breo-ellipta.xml"
+    },
+    {
+      "id": "maker",
+      "local_snapshot": "/tmp/nas-drug-sources/breo-gsk-current.pdf",
+      "revision": "PI11/2024; retrieved2026-10-01",
+      "url": "https://gskpro.com/content/dam/global/hcpportal/en_US/Prescribing_Information/Breo_Ellipta/pdf/BREO-ELLIPTA-PI-PIL-IFU.PDF",
+      "sha256": "43a5b724ba4d007c44c6ea1ab4360503227963aa516f6e62885f55e6d53385d5",
+      "review_method": "Current manufacturer PDF downloaded/retained; indication/dose/contraindication/warning highlights compared against fully reviewed currentDailyMedSPL, not an independent full manufacturerPDF clinical-section review claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-15-thyroid-metformin/breo-gsk-current.pdf"
+    }
+  ],
+  "assertion_map": [
+    {
+      "section": "indications",
+      "card": "Approved maintenance use",
+      "assertions": [
+        "Reviewed U.S. Breo Ellipta is indicated for maintenance treatment of COPD and for maintenance treatment of asthma from age 5. The dose strength depends on indication and age; pediatric asthma approval does not authorize every strength in every child. It is not indicated for relief of acute bronchospasm."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "1.1\u20131.3; 2.1\u20132.2"
+        },
+        {
+          "id": "maker",
+          "sections": "1; 2"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Acute symptoms and treatment boundaries",
+      "assertions": [
+        "Do not begin Breo during rapidly deteriorating or potentially life-threatening asthma/COPD. Acute symptoms require the prescribed short-acting rescue treatment and escalation plan; rising rescue use or loss of response needs immediate clinical reassessment. The labeled early bronchodilator response does not establish a reliever regimen. Additional Breo doses or another LABA are not an appropriate rescue strategy."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "4; 5.2\u20135.3; 17"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Product identity and scope",
+      "assertions": [
+        "This profile covers the two-ingredient fluticasone furoate/vilanterol Ellipta dry-powder inhaler. Fluticasone propionate/salmeterol, fluticasone alone, and fluticasone/umeclidinium/vilanterol triple therapy have different ingredient and dose rules. No universal inhaled-steroid equivalence, combination-device conversion or off-label acute regimen is supplied."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "1; 2; 3; 11"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Approved dose by indication and age",
+      "assertions": [
+        "The first amount is fluticasone furoate; the second is vilanterol. Each row uses one inhalation once daily, with no more than one dose in 24 hours. Adult asthma strength selection depends on disease severity, prior treatment and current control; inadequately controlled asthma on 100/25 mcg may warrant a clinician increase to 200/25 mcg. If 200/25 mcg remains inadequate, reassess rather than add extra inhalations. COPD dose must not be increased above its 100/25 mcg schedule."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.1\u20132.3; 5.2"
+        },
+        {
+          "id": "maker",
+          "sections": "2"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Indication / population",
+          "Breo strength: one inhalation daily"
+        ],
+        "rows": [
+          [
+            "COPD maintenance",
+            "100/25 mcg"
+          ],
+          [
+            "Asthma age 18+",
+            "100/25 or 200/25 mcg; maximum 200/25 mcg daily"
+          ],
+          [
+            "Asthma age 12\u201317",
+            "100/25 mcg"
+          ],
+          [
+            "Asthma age 5\u201311",
+            "50/25 mcg"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Using the Ellipta device",
+      "assertions": [
+        "Open the cover only when ready; a click and counter decrement prepare one dose. Do not shake. Breathe out away from the inhaler, seal lips around the mouthpiece without blocking the vent, and take one long, steady, deep breath through the mouth. Hold about 3\u20134 seconds or as comfortable, then exhale slowly. Close the cover and rinse the mouth with water, spitting it out. Not tasting powder is not a reason to repeat a dose. Opening/closing without inhalation wastes that prepared dose."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.3; Instructions for Use"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Missed doses and product handling",
+      "assertions": [
+        "Patient instructions say to take a missed dose when remembered, without taking more than one inhalation per day; take the next dose at the usual time and never two doses together. Follow the prescribed plan, check the counter and obtain a refill before it empties. Do not disassemble the nonreusable inhaler or substitute nebulization, an injection or swallowing the powder for its oral-inhalation route."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.3; 16; Patient Information; Instructions for Use"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Renal, hepatic and systemic-steroid considerations",
+      "assertions": [
+        "No renal dose adjustment is required in the reviewed label. Moderate/severe hepatic impairment warrants caution and monitoring for systemic corticosteroid effects; no U.S. label numeric hepatic dose-reduction algorithm is supplied. Pediatric hepatic PK is unevaluated. A transfer from oral/systemic corticosteroids requires a supervised gradual withdrawal and stress plan; inhaled Breo cannot replace systemic glucocorticoid coverage during adrenal insufficiency."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "5.7\u20135.8; 8.6\u20138.7; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Do not exceed the once-daily schedule or add another LABA. Breo is not rescue treatment; worsening symptoms or increasing rescue use requires reassessment. If paradoxical bronchospasm develops, stop Breo immediately, use appropriate short-acting bronchodilator treatment and obtain urgent care. Severe hypersensitivity also requires stopping and urgent treatment.",
+        "Monitor for oral thrush and rinse/spit after dosing. COPD pneumonia risk is increased and may overlap clinically with an exacerbation. Corticosteroids can worsen infections; susceptible patients exposed to chickenpox or measles need prompt advice. Adrenal suppression/crisis can occur in susceptible users, especially after systemic-steroid withdrawal, excessive doses or strong CYP3A4 inhibitors.",
+        "Other concerns include palpitations/arrhythmias, blood-pressure effects, bone loss, impaired pediatric growth, cataracts/glaucoma, hyperglycemia and possible hypokalemia. Use caution with cardiovascular disease, seizures, thyrotoxicosis or diabetes. Assess bone density before and periodically during COPD treatment and monitor pediatric growth."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "5.1\u20135.17; 17"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "Primary treatment of status asthmaticus or acute COPD/asthma episodes needing intensive measures is contraindicated. Severe milk-protein hypersensitivity and demonstrated hypersensitivity to fluticasone furoate, vilanterol or excipients are also contraindications. Lactose carrier contains milk proteins; this warning concerns protein allergy and should not be automatically equated with ordinary lactose intolerance."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "4; 5.11; 11"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "No formal boxed warning appears in the current reviewed Breo label. LABA monotherapy in asthma increases serious asthma-event risk; Breo instead includes an ICS and LABA together. Fixed ICS/LABA safety trials did not show a significant increase versus ICS alone under their trial conditions, but they did not exclude all risk. Do not describe historical LABA warnings as a current Breo boxed warning or promise zero asthma risk."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "Full current PI; 5.1"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Reported common events include nasopharyngitis, respiratory infections, headache and oral candidiasis; dysphonia and throat pain are notable in asthma, while pneumonia is important in COPD. Pediatric reports include upper respiratory symptoms and headache. Serious/postmarketing concerns include anaphylaxis, paradoxical bronchospasm, tachycardia, tremor and hyperglycemia. Rates vary by indication, age and trial and are not interchangeable individual-risk estimates."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "6.1\u20136.3"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Strong CYP3A4 inhibitors",
+      "assertions": [
+        "Ketoconazole and other strong inhibitors such as ritonavir, clarithromycin and itraconazole can increase fluticasone furoate/vilanterol systemic exposure, with greater corticosteroid or cardiovascular toxicity. The label calls for caution and clinical review, not an invented universally safe reduced inhalation schedule. Monitor for adrenal and cardiovascular effects when coadministration is necessary."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "5.9; 7.1; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Adrenergic, QT and antidepressant interactions",
+      "assertions": [
+        "Do not add another LABA-containing therapy. MAO inhibitors, tricyclic antidepressants and QT-prolonging drugs require extreme caution during use and within 2 weeks of discontinuation because cardiovascular beta-agonist effects can be potentiated. An emergency/rescue plan should be prescribed separately rather than achieved by extra vilanterol exposure."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "5.3; 7.2; 17"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Beta-blockers and potassium-losing diuretics",
+      "assertions": [
+        "Beta-blockers can blunt bronchodilation and cause severe bronchospasm; if a compelling indication leaves no alternative, a cardioselective agent may be considered with caution and supervision. Loop/thiazide diuretics can compound ECG changes or hypokalemia, particularly with beta-agonist overuse. Review symptoms and relevant potassium/ECG monitoring by risk rather than require a fixed testing schedule for everyone."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "7.3\u20137.4; 5.12; 5.17"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": [
+        "Asthma safety/effectiveness are established from age 5 using 50/25 mcg at 5\u201311 and 100/25 mcg at 12\u201317; use under age 5 is not established. Monitor growth routinely and use the lowest effective appropriate regimen. No geriatric adjustment is needed solely for age in the label, although increased individual sensitivity and comorbidities remain possible."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.2; 5.14; 8.4\u20138.5"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic impairment",
+      "assertions": [
+        "The U.S. label requires no renal dose adjustment, including its studied severe-impairment group. Hepatic impairment can increase systemic fluticasone furoate exposure; use cautiously in moderate/severe impairment and monitor corticosteroid effects. The adult studies do not establish a pediatric hepatic dose algorithm or license exceeding age-specific strengths."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "8.6\u20138.7; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and breastfeeding",
+      "assertions": [
+        "Human data for the combination/components are insufficient to characterize pregnancy risk; poorly controlled maternal asthma itself has adverse perinatal consequences, so maintain individualized control and monitoring. During late gestation/labor, weigh benefit against beta-agonist interference with uterine contractility. The reviewed PI reports no direct human-milk or infant-effect data for these components, although other ICS can appear at low milk concentrations; balance breastfeeding benefits, maternal need and potential infant effects. Animal findings do not prove human safety."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "8.1\u20138.2"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanisms",
+      "assertions": [
+        "Fluticasone furoate is a glucocorticoid with anti-inflammatory actions across airway cells and mediators. Vilanterol stimulates beta 2 receptors and intracellular cyclic AMP to relax bronchial smooth muscle. Beta 2 receptors outside the airway permit cardiovascular/metabolic effects despite relative selectivity. In-vitro receptor-affinity comparisons do not establish clinical dose equivalence with other corticosteroids."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "12.1\u201312.2"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Absorption and disposition",
+      "assertions": [
+        "Systemic exposure mainly arises from the portion inhaled into the lung; swallowed portions have low oral bioavailability because of first-pass metabolism. Fluticasone furoate and vilanterol are mainly metabolized through CYP3A4 and are highly protein bound. Repeated-dose fluticasone furoate plasma half-life averages about 24 hours; vilanterol is about 21 hours in COPD and 16 hours in asthma. Actual lung delivery depends on inspiratory technique/flow, and plasma levels do not predict therapeutic response reliably."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "11; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Clinical monitoring",
+      "assertions": [
+        "Assess symptoms, exacerbations, rescue frequency, lung function where appropriate, adherence and inhalation technique. Inspect for thrush, assess pneumonia symptoms in COPD, monitor pediatric growth, and consider eye assessment with symptoms or prolonged use. COPD labeling recommends baseline/periodic bone-density assessment. Monitor systemic corticosteroid effects especially with hepatic impairment, strong CYP3A4 inhibition or oral-steroid transfer; potassium/glucose/ECG assessment is risk-based."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "5; 8.6; 17; Instructions for Use"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling and escalation",
+      "assertions": [
+        "Use one scheduled inhalation, rinse/spit, never add a second LABA, and keep the prescribed rescue inhaler available. Obtain urgent assessment if rescue becomes less effective, use increases, or breathing worsens; severe breathing difficulty, chest pain or anaphylaxis requires emergency care. Do not abruptly change maintenance or systemic steroid therapy without guidance. Suspected excess dosing with tachycardia, chest pain, shakiness or worsening breathlessness needs urgent/poison-center assessment."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2; 5; 10; 17; Patient Information"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative products",
+      "assertions": [
+        "The selected light-grey/pale-blue disposable Ellipta device is packaged in a moisture-protective foil tray with desiccant. Representative 30-dose NDCs are 0173-0916-10 for 50/25 mcg, 0173-0859-10 for 100/25 mcg and 0173-0882-10 for 200/25 mcg; selected institutional packs contain 14 doses. Package listing is not real-time stock confirmation, and the desiccant must not be eaten or inhaled."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "11; 16; Instructions for Use"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Nominal labeled oral-inhalation strengths are fluticasone furoate/vilanterol 50/25, 100/25 and 200/25 mcg per actuation. Standardized in-vitro mouthpiece delivery is lower than blister content and differs from actual lung delivery; do not replace labeled dosing with a reconstructed delivered-dose conversion. The lactose carrier contains milk proteins; vilanterol is supplied as its trifenatate salt."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "3; 11"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Store at 20\u201325\u00b0C (68\u201377\u00b0F), with allowed excursions 15\u201330\u00b0C; keep dry, away from direct heat/sunlight. Leave the unopened moisture-protective tray sealed until first use. Discard 6 weeks after opening the tray or when the counter reaches zero, whichever comes first; date the label. Do not disassemble or reuse the device. A dry tissue may clean the mouthpiece if needed; routine cleaning is not required."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "16; Instructions for Use"
+        }
+      ]
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Approved maintenance use",
+      "assertions": [
+        "Reviewed U.S. Breo Ellipta is indicated for maintenance treatment of COPD and for maintenance treatment of asthma from age 5. The dose strength depends on indication and age; pediatric asthma approval does not authorize every strength in every child. It is not indicated for relief of acute bronchospasm."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "1.1\u20131.3; 2.1\u20132.2"
+        },
+        {
+          "id": "maker",
+          "sections": "1; 2"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Acute symptoms and treatment boundaries",
+      "assertions": [
+        "Do not begin Breo during rapidly deteriorating or potentially life-threatening asthma/COPD. Acute symptoms require the prescribed short-acting rescue treatment and escalation plan; rising rescue use or loss of response needs immediate clinical reassessment. The labeled early bronchodilator response does not establish a reliever regimen. Additional Breo doses or another LABA are not an appropriate rescue strategy."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "4; 5.2\u20135.3; 17"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Product identity and scope",
+      "assertions": [
+        "This profile covers the two-ingredient fluticasone furoate/vilanterol Ellipta dry-powder inhaler. Fluticasone propionate/salmeterol, fluticasone alone, and fluticasone/umeclidinium/vilanterol triple therapy have different ingredient and dose rules. No universal inhaled-steroid equivalence, combination-device conversion or off-label acute regimen is supplied."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "1; 2; 3; 11"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Approved dose by indication and age",
+      "assertions": [
+        "The first amount is fluticasone furoate; the second is vilanterol. Each row uses one inhalation once daily, with no more than one dose in 24 hours. Adult asthma strength selection depends on disease severity, prior treatment and current control; inadequately controlled asthma on 100/25 mcg may warrant a clinician increase to 200/25 mcg. If 200/25 mcg remains inadequate, reassess rather than add extra inhalations. COPD dose must not be increased above its 100/25 mcg schedule."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.1\u20132.3; 5.2"
+        },
+        {
+          "id": "maker",
+          "sections": "2"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Indication / population",
+          "Breo strength: one inhalation daily"
+        ],
+        "rows": [
+          [
+            "COPD maintenance",
+            "100/25 mcg"
+          ],
+          [
+            "Asthma age 18+",
+            "100/25 or 200/25 mcg; maximum 200/25 mcg daily"
+          ],
+          [
+            "Asthma age 12\u201317",
+            "100/25 mcg"
+          ],
+          [
+            "Asthma age 5\u201311",
+            "50/25 mcg"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Using the Ellipta device",
+      "assertions": [
+        "Open the cover only when ready; a click and counter decrement prepare one dose. Do not shake. Breathe out away from the inhaler, seal lips around the mouthpiece without blocking the vent, and take one long, steady, deep breath through the mouth. Hold about 3\u20134 seconds or as comfortable, then exhale slowly. Close the cover and rinse the mouth with water, spitting it out. Not tasting powder is not a reason to repeat a dose. Opening/closing without inhalation wastes that prepared dose."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.3; Instructions for Use"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Missed doses and product handling",
+      "assertions": [
+        "Patient instructions say to take a missed dose when remembered, without taking more than one inhalation per day; take the next dose at the usual time and never two doses together. Follow the prescribed plan, check the counter and obtain a refill before it empties. Do not disassemble the nonreusable inhaler or substitute nebulization, an injection or swallowing the powder for its oral-inhalation route."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.3; 16; Patient Information; Instructions for Use"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Renal, hepatic and systemic-steroid considerations",
+      "assertions": [
+        "No renal dose adjustment is required in the reviewed label. Moderate/severe hepatic impairment warrants caution and monitoring for systemic corticosteroid effects; no U.S. label numeric hepatic dose-reduction algorithm is supplied. Pediatric hepatic PK is unevaluated. A transfer from oral/systemic corticosteroids requires a supervised gradual withdrawal and stress plan; inhaled Breo cannot replace systemic glucocorticoid coverage during adrenal insufficiency."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "5.7\u20135.8; 8.6\u20138.7; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Do not exceed the once-daily schedule or add another LABA. Breo is not rescue treatment; worsening symptoms or increasing rescue use requires reassessment. If paradoxical bronchospasm develops, stop Breo immediately, use appropriate short-acting bronchodilator treatment and obtain urgent care. Severe hypersensitivity also requires stopping and urgent treatment.",
+        "Monitor for oral thrush and rinse/spit after dosing. COPD pneumonia risk is increased and may overlap clinically with an exacerbation. Corticosteroids can worsen infections; susceptible patients exposed to chickenpox or measles need prompt advice. Adrenal suppression/crisis can occur in susceptible users, especially after systemic-steroid withdrawal, excessive doses or strong CYP3A4 inhibitors.",
+        "Other concerns include palpitations/arrhythmias, blood-pressure effects, bone loss, impaired pediatric growth, cataracts/glaucoma, hyperglycemia and possible hypokalemia. Use caution with cardiovascular disease, seizures, thyrotoxicosis or diabetes. Assess bone density before and periodically during COPD treatment and monitor pediatric growth."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "5.1\u20135.17; 17"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "Primary treatment of status asthmaticus or acute COPD/asthma episodes needing intensive measures is contraindicated. Severe milk-protein hypersensitivity and demonstrated hypersensitivity to fluticasone furoate, vilanterol or excipients are also contraindications. Lactose carrier contains milk proteins; this warning concerns protein allergy and should not be automatically equated with ordinary lactose intolerance."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "4; 5.11; 11"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "No formal boxed warning appears in the current reviewed Breo label. LABA monotherapy in asthma increases serious asthma-event risk; Breo instead includes an ICS and LABA together. Fixed ICS/LABA safety trials did not show a significant increase versus ICS alone under their trial conditions, but they did not exclude all risk. Do not describe historical LABA warnings as a current Breo boxed warning or promise zero asthma risk."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "Full current PI; 5.1"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Reported common events include nasopharyngitis, respiratory infections, headache and oral candidiasis; dysphonia and throat pain are notable in asthma, while pneumonia is important in COPD. Pediatric reports include upper respiratory symptoms and headache. Serious/postmarketing concerns include anaphylaxis, paradoxical bronchospasm, tachycardia, tremor and hyperglycemia. Rates vary by indication, age and trial and are not interchangeable individual-risk estimates."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "6.1\u20136.3"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Strong CYP3A4 inhibitors",
+      "assertions": [
+        "Ketoconazole and other strong inhibitors such as ritonavir, clarithromycin and itraconazole can increase fluticasone furoate/vilanterol systemic exposure, with greater corticosteroid or cardiovascular toxicity. The label calls for caution and clinical review, not an invented universally safe reduced inhalation schedule. Monitor for adrenal and cardiovascular effects when coadministration is necessary."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "5.9; 7.1; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Adrenergic, QT and antidepressant interactions",
+      "assertions": [
+        "Do not add another LABA-containing therapy. MAO inhibitors, tricyclic antidepressants and QT-prolonging drugs require extreme caution during use and within 2 weeks of discontinuation because cardiovascular beta-agonist effects can be potentiated. An emergency/rescue plan should be prescribed separately rather than achieved by extra vilanterol exposure."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "5.3; 7.2; 17"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Beta-blockers and potassium-losing diuretics",
+      "assertions": [
+        "Beta-blockers can blunt bronchodilation and cause severe bronchospasm; if a compelling indication leaves no alternative, a cardioselective agent may be considered with caution and supervision. Loop/thiazide diuretics can compound ECG changes or hypokalemia, particularly with beta-agonist overuse. Review symptoms and relevant potassium/ECG monitoring by risk rather than require a fixed testing schedule for everyone."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "7.3\u20137.4; 5.12; 5.17"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": [
+        "Asthma safety/effectiveness are established from age 5 using 50/25 mcg at 5\u201311 and 100/25 mcg at 12\u201317; use under age 5 is not established. Monitor growth routinely and use the lowest effective appropriate regimen. No geriatric adjustment is needed solely for age in the label, although increased individual sensitivity and comorbidities remain possible."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.2; 5.14; 8.4\u20138.5"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic impairment",
+      "assertions": [
+        "The U.S. label requires no renal dose adjustment, including its studied severe-impairment group. Hepatic impairment can increase systemic fluticasone furoate exposure; use cautiously in moderate/severe impairment and monitor corticosteroid effects. The adult studies do not establish a pediatric hepatic dose algorithm or license exceeding age-specific strengths."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "8.6\u20138.7; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and breastfeeding",
+      "assertions": [
+        "Human data for the combination/components are insufficient to characterize pregnancy risk; poorly controlled maternal asthma itself has adverse perinatal consequences, so maintain individualized control and monitoring. During late gestation/labor, weigh benefit against beta-agonist interference with uterine contractility. The reviewed PI reports no direct human-milk or infant-effect data for these components, although other ICS can appear at low milk concentrations; balance breastfeeding benefits, maternal need and potential infant effects. Animal findings do not prove human safety."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "8.1\u20138.2"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanisms",
+      "assertions": [
+        "Fluticasone furoate is a glucocorticoid with anti-inflammatory actions across airway cells and mediators. Vilanterol stimulates beta 2 receptors and intracellular cyclic AMP to relax bronchial smooth muscle. Beta 2 receptors outside the airway permit cardiovascular/metabolic effects despite relative selectivity. In-vitro receptor-affinity comparisons do not establish clinical dose equivalence with other corticosteroids."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "12.1\u201312.2"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Absorption and disposition",
+      "assertions": [
+        "Systemic exposure mainly arises from the portion inhaled into the lung; swallowed portions have low oral bioavailability because of first-pass metabolism. Fluticasone furoate and vilanterol are mainly metabolized through CYP3A4 and are highly protein bound. Repeated-dose fluticasone furoate plasma half-life averages about 24 hours; vilanterol is about 21 hours in COPD and 16 hours in asthma. Actual lung delivery depends on inspiratory technique/flow, and plasma levels do not predict therapeutic response reliably."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "11; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Clinical monitoring",
+      "assertions": [
+        "Assess symptoms, exacerbations, rescue frequency, lung function where appropriate, adherence and inhalation technique. Inspect for thrush, assess pneumonia symptoms in COPD, monitor pediatric growth, and consider eye assessment with symptoms or prolonged use. COPD labeling recommends baseline/periodic bone-density assessment. Monitor systemic corticosteroid effects especially with hepatic impairment, strong CYP3A4 inhibition or oral-steroid transfer; potassium/glucose/ECG assessment is risk-based."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "5; 8.6; 17; Instructions for Use"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling and escalation",
+      "assertions": [
+        "Use one scheduled inhalation, rinse/spit, never add a second LABA, and keep the prescribed rescue inhaler available. Obtain urgent assessment if rescue becomes less effective, use increases, or breathing worsens; severe breathing difficulty, chest pain or anaphylaxis requires emergency care. Do not abruptly change maintenance or systemic steroid therapy without guidance. Suspected excess dosing with tachycardia, chest pain, shakiness or worsening breathlessness needs urgent/poison-center assessment."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2; 5; 10; 17; Patient Information"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative products",
+      "assertions": [
+        "The selected light-grey/pale-blue disposable Ellipta device is packaged in a moisture-protective foil tray with desiccant. Representative 30-dose NDCs are 0173-0916-10 for 50/25 mcg, 0173-0859-10 for 100/25 mcg and 0173-0882-10 for 200/25 mcg; selected institutional packs contain 14 doses. Package listing is not real-time stock confirmation, and the desiccant must not be eaten or inhaled."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "11; 16; Instructions for Use"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Nominal labeled oral-inhalation strengths are fluticasone furoate/vilanterol 50/25, 100/25 and 200/25 mcg per actuation. Standardized in-vitro mouthpiece delivery is lower than blister content and differs from actual lung delivery; do not replace labeled dosing with a reconstructed delivered-dose conversion. The lactose carrier contains milk proteins; vilanterol is supplied as its trifenatate salt."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "3; 11"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Store at 20\u201325\u00b0C (68\u201377\u00b0F), with allowed excursions 15\u201330\u00b0C; keep dry, away from direct heat/sunlight. Leave the unopened moisture-protective tray sealed until first use. Discard 6 weeks after opening the tray or when the counter reaches zero, whichever comes first; date the label. Do not disassemble or reuse the device. A dry tissue may clean the mouthpiece if needed; routine cleaning is not required."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "16; Instructions for Use"
+        }
+      ]
+    }
+  ],
+  "hero_assertions": {
+    "essential": {
+      "title": "Keep maintenance and rescue distinct",
+      "text": "Use only the indication- and age-specific daily strength. Do not take extra Breo for acute symptoms or combine it with another LABA; maintain the prescribed rescue plan.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "facts": [
+      [
+        "Class",
+        "Inhaled corticosteroid + LABA"
+      ],
+      [
+        "Device / schedule",
+        "Ellipta dry powder; once daily"
+      ],
+      [
+        "Asthma eligibility",
+        "Age 5+; age-specific strengths"
+      ]
+    ],
+    "sources": [
+      "pi",
+      "maker"
+    ]
+  },
+  "section_assertions": [
+    {
+      "section": "indications",
+      "summary": "Fluticasone furoate/vilanterol combines an inhaled corticosteroid with a long-acting bronchodilator.",
+      "takeaway": "Breo is scheduled maintenance treatment and does not replace a rescue inhaler.",
+      "sources": [
+        "maker",
+        "pi"
+      ]
+    },
+    {
+      "section": "dosage",
+      "summary": "Use one oral inhalation once daily at the same time; strength is indication- and age-specific.",
+      "takeaway": "The 200/25 mcg adult asthma strength is not the COPD or pediatric schedule.",
+      "sources": [
+        "maker",
+        "pi"
+      ]
+    },
+    {
+      "section": "safety",
+      "summary": "Excess LABA exposure, infection and systemic steroid effects are important risks.",
+      "takeaway": "Sudden worsening after inhalation needs urgent care and discontinuation of the offending inhaler.",
+      "sources": [
+        "pi"
+      ]
+    },
+    {
+      "section": "interactions",
+      "summary": "Both components are CYP3A4 substrates; other drugs may amplify steroid or beta-agonist effects.",
+      "takeaway": "Review the whole inhaler list to prevent duplicate LABA treatment.",
+      "sources": [
+        "pi"
+      ]
+    },
+    {
+      "section": "populations",
+      "summary": "Age-specific asthma doses and systemic-steroid susceptibility guide treatment selection.",
+      "takeaway": "Current U.S. pediatric approval starts at age 5.",
+      "sources": [
+        "pi"
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "summary": "Anti-inflammatory and bronchodilator actions complement each other.",
+      "takeaway": "Plasma PK measurements do not define a rescue schedule or an inhaled-steroid conversion.",
+      "sources": [
+        "pi"
+      ]
+    },
+    {
+      "section": "practice",
+      "summary": "Monitor control, rescue use, technique and steroid-related adverse effects.",
+      "takeaway": "A working rescue plan remains essential during daily maintenance treatment.",
+      "sources": [
+        "pi"
+      ]
+    },
+    {
+      "section": "product",
+      "summary": "Breo Ellipta is a prescription dry-powder device containing two blister strips.",
+      "takeaway": "One blister from each strip supplies a single combined inhalation.",
+      "sources": [
+        "pi"
+      ]
+    }
+  ],
+  "limitations": [
+    "Current SPL publicationJune2026 differs from document effectiveTimeNovember2024; clinicalPI11/2024 and patient/IFU05/2023 recorded separately.",
+    "Hepatic PK studied in adults only; no pediatric hepatic algorithm inferred.",
+    "The label kidney PK discussion includes exposure differences without a renal dose adjustment; no claim that all exposures are unchanged."
+  ],
+  "unresolved_source_questions": [
+    {
+      "material": false,
+      "source": "pi",
+      "sections": "revision/publication metadata",
+      "issue": "SPL29 effectiveTime20241107 but current archivepublicationJune8,2026. Actual clinicalPI11/2024 and PIL/IFU05/2023 separately recorded; no invented2026 clinicalrevision."
+    }
+  ],
+  "validation": {
+    "schema": "Actual current validateMonograph returned zero errors; exact8sectionorder,4Safety/3Productcards and3hero tuples checked. Actual paragraphs/tables match assertion map.",
+    "tests_build_lint": "Parent batch checks required",
+    "rendered_page": "Parent batch QA required"
+  },
+  "monograph_sha256": "a07732e74d63c6c7c32db0e9ca70ff80cbd0fe9032cca77fe574cd591d4d907d",
+  "source_archive": {
+    "directory": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-15-thyroid-metformin",
+    "checked": "2026-10-01",
+    "verified": "Selected full SPL XML/parsed sections and current manufacturer PDF/text copied with exactSHA256 verification; existing divergent files preserved."
+  }
+}
