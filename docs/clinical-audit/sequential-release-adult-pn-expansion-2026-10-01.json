@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-01",
+  "status": "content_commit_remote_verified",
+  "branch": "audit/rxprep-content-2026-09-24",
+  "remote": "https://github.com/NaS-Research/nas-website.git",
+  "baseCommit": "a2b476f7b5eeee9f28bd8b98fbeeaa5af774102d",
+  "contentCommit": "5caadc67d4a62e6371de0f568a5e504de99ab3ce",
+  "remoteHashVerified": "5caadc67d4a62e6371de0f568a5e504de99ab3ce",
+  "module": "parenteral-nutrition",
+  "verifiedScope": "Book expansion, retained numerical items and rounding/duplicate repair",
+  "wholeModuleVerified": false,
+  "wholeChapterVerified": false,
+  "changes": {
+    "lessons": 6,
+    "sections": 42,
+    "newSections": 18,
+    "preservedSections": 24,
+    "figures": 6,
+    "embeddedChecks": 6,
+    "bankItems": 130,
+    "newOriginalItems": 30,
+    "priorItemsRevised": 11,
+    "priorItemsUnchanged": 89,
+    "preservedPriorIdsKeysAnchors": 100,
+    "sourceVerifiedCurrentItems": 71,
+    "remainingSourceReviewItems": 59,
+    "cumulativeItems": 5
+  },
+  "validation": {
+    "sourceComparedAgainForNewSectionsAndItems": true,
+    "all130BankAndSixEmbeddedChecksRuntimeGradedAtDesktopMobile": true,
+    "runtimeGradingDoesNotEstablishClinicalSourceClosure": true,
+    "allFiveCumulativeItemsRuntimeGradedAtDesktopMobile": true,
+    "all18NewSectionsAndSixPreservedFiguresVisuallyInspectedAtDesktopMobile": true,
+    "independentArithmeticChecks": 43,
+    "runningDistinctArithmeticChecks": 634,
+    "separateSourceExampleChecks": 98,
+    "productionBuild": {
+      "passed": true,
+      "staticPages": 567,
+      "exactTwoClinicalFileCandidate": true
+    },
+    "focusedAssessmentAuditPassed": true,
+    "allPriorIDsKeysAnchorsPreserved": true,
+    "all130PromptsIdsGloballyUnique": true,
+    "normalNavigationAndIncorrectRemediationPassed": true,
+    "workingLibrarySearchAndSignedOut401Passed": true,
+    "noOverflow390AndWorkingLibrary320": true,
+    "exactEightFileStageVerified": true
+  },
+  "contentHashes": {
+    "src/data/modules/parenteralNutrition.js": "a793026d3f32b37d42447939dc4084a6fa232914d64b8f8358f618e9f906a51e",
+    "src/data/questionBanks/parenteralNutrition.js": "3a35ae10686246495806c99dea29de771441a6cfe7480a973f5d142925ef0812"
+  },
+  "evidence": "parenteral-nutrition-book-expansion-review.json",
+  "completedChecklistEntries": 14,
+  "pendingSourceException": "Explicit answer pending; no outside reference opened in this unit.",
+  "nextStartingPoint": "Retained adult PN clinical provenance, bank/check/figure/cumulative review; then related EN, pediatric PN, fluid and calcium coverage.",
+  "production": "not verified",
+  "receiptCommit": "Following documentation commit; no self-referential hash."
+}

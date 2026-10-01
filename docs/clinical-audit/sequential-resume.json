@@ -104,10 +104,10 @@
     "branch": "audit/rxprep-content-2026-09-24",
     "baseCommit": "b38faea07f3cd78f04c513cb6e842bb8f6fccdbc",
     "remoteVerifiedAtStart": true,
-    "commit": "1a1cfdfe03e89c6d8d019396bc99cfe45aa3a73c",
-    "push": "verified: seven new calculation modules and the complete existing PN calculation module pushed to the audit branch",
+    "commit": "5caadc67d4a62e6371de0f568a5e504de99ab3ce",
+    "push": "verified: adult clinical PN book expansion pushed to audit branch; entire adult module remains reviewing",
     "production": "not verified",
-    "receipt": "sequential-release-pn-calculations-completion-2026-10-01.json",
+    "receipt": "sequential-release-adult-pn-expansion-2026-10-01.json",
     "contentCommits": [
       "df630290c5abc8cd1dadeb5574fa0cec7c0ca582",
       "30d14a7e36d030e32340ff04a6ef28971253a060",
@@ -119,7 +119,8 @@
       "c609559a5ddb0b5a2aa31428bff579d89a9130de",
       "8027bf41d320493c7666f252d3f45512caf8d8b1",
       "d480c93ce20f07ca16c74b6ebfd9770daa22052a",
-      "1a1cfdfe03e89c6d8d019396bc99cfe45aa3a73c"
+      "1a1cfdfe03e89c6d8d019396bc99cfe45aa3a73c",
+      "5caadc67d4a62e6371de0f568a5e504de99ab3ce"
     ]
   },
   "openIssues": [
@@ -150,19 +151,39 @@
     },
     "interpretation": "Count-based ledger snapshots include preserved historical flags, not independent reverification of earlier units. Working and committed ledgers differ because older unfinished corrections and three additional modules remain unstaged. Seven newly verified modules plus the existing PN calculation module and fourteen checklist entries add partial chapter coverage; no new whole chapter closure."
   },
-  "lastVerifiedLogicalUnit": "parenteral-nutrition-calculations: complete nine-lesson/172-item module",
-  "lastVerifiedSections": [
-    "fluid-requirements",
-    "calculation-foundations",
-    "caloric-needs",
-    "protein-energy-targets",
-    "nitrogen-intake-ratios",
-    "dextrose-gir",
-    "lipid-energy-ledger",
-    "stock-solutions-additives",
-    "rate-final-audit"
-  ],
-  "pendingLogicalUnit": "parenteral-nutrition: book-supported expansion",
+  "lastVerifiedLogicalUnit": "parenteral-nutrition: book expansion only, 18 sections and 30 original items",
+  "lastVerifiedSections": {
+    "pn-decision": [
+      "Distinguish nutrition support routes",
+      "Use the source indication in its context",
+      "Recognize the added route burden"
+    ],
+    "venous-access": [
+      "Keep the peripheral option short and conditional",
+      "Identify central access by where it ends",
+      "Separate two compatibility questions"
+    ],
+    "macronutrient-design": [
+      "Name the protein basis and energy convention",
+      "Keep lipid energy and schedule together",
+      "Count energy actually supplied outside PN"
+    ],
+    "micronutrient-balance": [
+      "Name the salt and count its second ion",
+      "Apply the source precipitation precautions with their limits",
+      "Distinguish the vitamin mixtures and warfarin review",
+      "Attribute the source trace-element groups",
+      "Keep other medications from becoming routine ingredients"
+    ],
+    "compounding-safety": [
+      "Recognize premixed chambers and their contents",
+      "Connect sterile preparation and physical compatibility"
+    ],
+    "monitoring-transition": [
+      "Watch the specific source monitoring concerns",
+      "Read the insulin example without turning it into a fixed order"
+    ]
+  },
   "pendingSourceException": {
     "status": "awaiting explicit user answer",
     "scope": "Existing PN safety claims in already cited ASPEN, USP, FDA and CDC sources",
