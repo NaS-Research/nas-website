@@ -1,0 +1,915 @@
+{
+  "slug": "mesalamine",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "SelectedLialdaadultandweight≥24kgpediatricoral,Aprisoadultmaintenance,Pentasaadultinduction/treatment,Canasaadultproctitis,RowasaadultdistalUC/proctosigmoiditis/proctitis;exactfullcurrentproductlabels.",
+  "excludedRegimens": [
+    "Delzicol/AsacolHD/400800mgoralproductnumericregimens/currentstock notverified",
+    "Sulfite-freeotherenemas/othercountry/compounding",
+    "Crohndiseaseorunlabeledpediatricregimens",
+    "Universalorganadjustmenttable/combinedoralrectalalgorithm",
+    "Productconversionsolelybymilligrams",
+    "Universalnumericmilkriskestimate",
+    "Universaltestinterval oropened-productdiscarddate"
+  ],
+  "sources": [
+    {
+      "id": "label",
+      "title": "Lialda · Prescribing information",
+      "publisher": "DailyMed / Takeda",
+      "note": "Current SPL version 49, effective 2026-03-24. ",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3098a080-be86-4265-9818-7fc4beab77b7"
+    },
+    {
+      "id": "apriso",
+      "title": "Apriso · Prescribing information",
+      "publisher": "DailyMed / Salix",
+      "note": "Current SPL version 35, effective 2026-08-27. ",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7951139c-b271-45a4-b523-34b23800917b"
+    },
+    {
+      "id": "pentasa",
+      "title": "Pentasa · Prescribing information",
+      "publisher": "DailyMed / Takeda",
+      "note": "Current SPL version 42, effective 2025-01-15. ",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e39d9a3d-5d3a-4bb6-aab1-fdbb2a598606"
+    },
+    {
+      "id": "canasa",
+      "title": "Canasa · Prescribing information",
+      "publisher": "DailyMed / AbbVie",
+      "note": "Current SPL version 30, effective 2024-09-08. Clinical PI September 2024.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=89d91601-152b-4398-bebe-af1c023e9935"
+    },
+    {
+      "id": "rowasa",
+      "title": "Rowasa · Prescribing information and administration instructions",
+      "publisher": "DailyMed / Meda; Viatris",
+      "note": "Current SPL version 18, effective 2026-08-03. Current August 2026 SPL includes intracranial-hypertension warning; use actual full warning headings rather than mismatched highlights cross-references.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e505ab99-1943-4216-a178-4d5dbe64e3b2"
+    }
+  ],
+  "labelMetadata": [
+    {
+      "sourceId": "label",
+      "product": "mesalamine-lialda",
+      "setid": "3098a080-be86-4265-9818-7fc4beab77b7",
+      "version": "49",
+      "effectiveTime": "20260324",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/3098a080-be86-4265-9818-7fc4beab77b7.xml",
+      "xmlSha256": "8081d81cc184eedca10fac5239efce2ea287449d266f1597c14acdf9ae8fd01d",
+      "marketingAuthorization": [
+        {
+          "category": "NDA",
+          "application": "NDA022000"
+        }
+      ],
+      "clinicalVersion": "CurrentMarch24,2026SPL;exactweight-basedpediatricindication/dose"
+    },
+    {
+      "sourceId": "apriso",
+      "product": "mesalamine-apriso",
+      "setid": "7951139c-b271-45a4-b523-34b23800917b",
+      "version": "35",
+      "effectiveTime": "20260827",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/7951139c-b271-45a4-b523-34b23800917b.xml",
+      "xmlSha256": "566b9f48001f6788146a76d4e91037bd98b695cee6bc5784e85ff698e59d9e43",
+      "marketingAuthorization": [
+        {
+          "category": "NDA",
+          "application": "NDA022301"
+        }
+      ],
+      "clinicalVersion": "CurrentAugust27,2026SPL retains2023copyright;notinventednewclinicalrevision"
+    },
+    {
+      "sourceId": "pentasa",
+      "product": "mesalamine-pentasa",
+      "setid": "e39d9a3d-5d3a-4bb6-aab1-fdbb2a598606",
+      "version": "42",
+      "effectiveTime": "20250115",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/e39d9a3d-5d3a-4bb6-aab1-fdbb2a598606.xml",
+      "xmlSha256": "6fc9f0778ae3a973db812cefbb9de30be328001270dbe99a01cdecd49bdd7ef6",
+      "marketingAuthorization": [
+        {
+          "category": "NDA",
+          "application": "NDA020049"
+        },
+        {
+          "category": "NDA",
+          "application": "NDA020049"
+        }
+      ],
+      "clinicalVersion": "CurrentJan15,2025SPL;actualcurrentadultinduction/treatment and250500strengths"
+    },
+    {
+      "sourceId": "canasa",
+      "product": "mesalamine-canasa",
+      "setid": "89d91601-152b-4398-bebe-af1c023e9935",
+      "version": "30",
+      "effectiveTime": "20240908",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/89d91601-152b-4398-bebe-af1c023e9935.xml",
+      "xmlSha256": "2efa5ecc9acccb3bdf2d0462522a4b97c39603a3bcc2307d623919721021bd64",
+      "marketingAuthorization": [
+        {
+          "category": "NDA",
+          "application": "NDA021252"
+        }
+      ],
+      "clinicalVersion": "September2024 clinicalrevision/currentSep8SPL"
+    },
+    {
+      "sourceId": "rowasa",
+      "product": "mesalamine-rowasa",
+      "setid": "e505ab99-1943-4216-a178-4d5dbe64e3b2",
+      "version": "18",
+      "effectiveTime": "20260803",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/e505ab99-1943-4216-a178-4d5dbe64e3b2.xml",
+      "xmlSha256": "f388bc904d8fca749b1e4c4e966df587221ffaf6bf03e510b7291f1aae53dbcf",
+      "marketingAuthorization": [
+        {
+          "category": "NDA",
+          "application": "NDA019618"
+        }
+      ],
+      "clinicalVersion": "CurrentAug3,2026SPL includesfull5.9intracranialhypertension;footerretainsRev.x/202xplaceholder,notinventedPIrevision"
+    }
+  ],
+  "evidence": [
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/mesalamine-lialda.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/mesalamine/mesalamine-lialda.xml",
+      "sha256": "8081d81cc184eedca10fac5239efce2ea287449d266f1597c14acdf9ae8fd01d",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/3098a080-be86-4265-9818-7fc4beab77b7.xml"
+    },
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/mesalamine-lialda-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/mesalamine/mesalamine-lialda-sections.json",
+      "sha256": "5c3f51b1823d7cd7237c116a3d06197a1da7d61858811a179ca6620e755db659",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/3098a080-be86-4265-9818-7fc4beab77b7.xml"
+    },
+    {
+      "sourceId": "apriso",
+      "localEvidence": "/tmp/nas-drug-sources/mesalamine-apriso.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/mesalamine/mesalamine-apriso.xml",
+      "sha256": "566b9f48001f6788146a76d4e91037bd98b695cee6bc5784e85ff698e59d9e43",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/7951139c-b271-45a4-b523-34b23800917b.xml"
+    },
+    {
+      "sourceId": "apriso",
+      "localEvidence": "/tmp/nas-drug-sources/mesalamine-apriso-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/mesalamine/mesalamine-apriso-sections.json",
+      "sha256": "61a2df6eaf8b74d76a145d9806f2fc0f1fcad327d73ff22e02ac636e4f0bfe5c",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/7951139c-b271-45a4-b523-34b23800917b.xml"
+    },
+    {
+      "sourceId": "pentasa",
+      "localEvidence": "/tmp/nas-drug-sources/mesalamine-pentasa.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/mesalamine/mesalamine-pentasa.xml",
+      "sha256": "6fc9f0778ae3a973db812cefbb9de30be328001270dbe99a01cdecd49bdd7ef6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/e39d9a3d-5d3a-4bb6-aab1-fdbb2a598606.xml"
+    },
+    {
+      "sourceId": "pentasa",
+      "localEvidence": "/tmp/nas-drug-sources/mesalamine-pentasa-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/mesalamine/mesalamine-pentasa-sections.json",
+      "sha256": "d1b3b9b86217184c8081c32baeef267677dfb7bb2291204a63c59621f706eff2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/e39d9a3d-5d3a-4bb6-aab1-fdbb2a598606.xml"
+    },
+    {
+      "sourceId": "canasa",
+      "localEvidence": "/tmp/nas-drug-sources/mesalamine-canasa.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/mesalamine/mesalamine-canasa.xml",
+      "sha256": "2efa5ecc9acccb3bdf2d0462522a4b97c39603a3bcc2307d623919721021bd64",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/89d91601-152b-4398-bebe-af1c023e9935.xml"
+    },
+    {
+      "sourceId": "canasa",
+      "localEvidence": "/tmp/nas-drug-sources/mesalamine-canasa-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/mesalamine/mesalamine-canasa-sections.json",
+      "sha256": "016bae1c422b17b363485b491844d07f634fd73db5ba43e21de4bf8e1f771cdf",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/89d91601-152b-4398-bebe-af1c023e9935.xml"
+    },
+    {
+      "sourceId": "rowasa",
+      "localEvidence": "/tmp/nas-drug-sources/mesalamine-rowasa.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/mesalamine/mesalamine-rowasa.xml",
+      "sha256": "f388bc904d8fca749b1e4c4e966df587221ffaf6bf03e510b7291f1aae53dbcf",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/e505ab99-1943-4216-a178-4d5dbe64e3b2.xml"
+    },
+    {
+      "sourceId": "rowasa",
+      "localEvidence": "/tmp/nas-drug-sources/mesalamine-rowasa-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/mesalamine/mesalamine-rowasa-sections.json",
+      "sha256": "c2a7e542393c7402485fcef67675af94aa812c6802a3a8fa5f261481cdbf5cf1",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/e505ab99-1943-4216-a178-4d5dbe64e3b2.xml"
+    }
+  ],
+  "sourceEvidenceRoot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/mesalamine",
+  "sourceManifest": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/mesalamine/source-manifest.json",
+  "assertionToSourceMap": [
+    {
+      "section": "indications",
+      "card": "Selected oral indications",
+      "assertions": {
+        "paragraphs": [
+          "Lialda is labeled for induction and maintenance of remission in adults with mildly to moderately active ulcerative colitis and treatment in pediatric patients weighing at least 24 kg. Apriso is for maintenance of adult ulcerative-colitis remission, not a labeled induction regimen. Pentasa is for adult induction of remission and treatment of mildly to moderately active ulcerative colitis."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "apriso",
+        "pentasa"
+      ],
+      "sourceSections": {
+        "label": "Lialda§1adultinductionmaintenance/pedsweight≥24;Apriso§1adultmaintenanceONLY;Pentasa§1adultinduction/treatment",
+        "apriso": "Lialda§1adultinductionmaintenance/pedsweight≥24;Apriso§1adultmaintenanceONLY;Pentasa§1adultinduction/treatment",
+        "pentasa": "Lialda§1adultinductionmaintenance/pedsweight≥24;Apriso§1adultmaintenanceONLY;Pentasa§1adultinduction/treatment"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "indications",
+      "card": "Selected rectal indications",
+      "assertions": {
+        "paragraphs": [
+          "Canasa treats mildly to moderately active ulcerative proctitis in adults. Rowasa treats active mild to moderate distal ulcerative colitis, proctosigmoiditis or proctitis in adults. The selected rectal labels do not establish pediatric effectiveness."
+        ]
+      },
+      "sourceIds": [
+        "canasa",
+        "rowasa"
+      ],
+      "sourceSections": {
+        "canasa": "Canasa§1adultproctitis;Rowasa§1adultdistalUC/proctosigmoiditis/proctitis;each8.4pediatricunestablished",
+        "rowasa": "Canasa§1adultproctitis;Rowasa§1adultdistalUC/proctosigmoiditis/proctitis;each8.4pediatricunestablished"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "indications",
+      "card": "Scope and product selection",
+      "assertions": {
+        "paragraphs": [
+          "This profile reviews Lialda, Apriso, Pentasa, Canasa and Rowasa. Other 400/800 mg delayed-release products, Delzicol, Asacol HD, sulfite-free enemas, other-country products and compounded preparations need their own current labeling and availability verification. Selected labels do not establish Crohn disease treatment. Do not substitute oral release systems or rectal forms using only total milligrams."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "apriso",
+        "pentasa",
+        "canasa",
+        "rowasa"
+      ],
+      "sourceSections": {
+        "label": "Selectedfull§1/2/3scopeandnoninterchangeability clinicalsynthesis;unreviewedreleaseproductsavailability/numericregimensexcluded",
+        "apriso": "Selectedfull§1/2/3scopeandnoninterchangeability clinicalsynthesis;unreviewedreleaseproductsavailability/numericregimensexcluded",
+        "pentasa": "Selectedfull§1/2/3scopeandnoninterchangeability clinicalsynthesis;unreviewedreleaseproductsavailability/numericregimensexcluded",
+        "canasa": "Selectedfull§1/2/3scopeandnoninterchangeability clinicalsynthesis;unreviewedreleaseproductsavailability/numericregimensexcluded",
+        "rowasa": "Selectedfull§1/2/3scopeandnoninterchangeability clinicalsynthesis;unreviewedreleaseproductsavailability/numericregimensexcluded"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "dosage",
+      "card": "Selected adult oral regimens",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Product",
+            "Labeled adult regimen"
+          ],
+          "rows": [
+            [
+              "Lialda 1.2 g tablets",
+              "Induction: 2.4–4.8 g once daily; maintenance: 2.4 g once daily; take with food; swallow whole without splitting/crushing"
+            ],
+            [
+              "Apriso 0.375 g capsules",
+              "Maintenance: 1.5 g (four capsules) once each morning, with or without food; swallow whole; do not cut, break, crush or chew; avoid antacids"
+            ],
+            [
+              "Pentasa 250 / 500 mg capsules",
+              "1 g four times daily (4 × 250 mg or 2 × 500 mg per dose); swallow whole without crushing/chewing, or open and sprinkle entire contents on applesauce or yogurt and consume immediately"
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label",
+        "apriso",
+        "pentasa"
+      ],
+      "sourceSections": {
+        "label": "Lialda§2induction2.4–4.8maintenance2.4QDfoodwhole;Apriso§2 1.5g4capsAMfoodoptionalwholeavoidantacids;Pentasa§2 1gQID4x250/2x500wholeorsprinkleapplesauce/yogurtimmediately",
+        "apriso": "Lialda§2induction2.4–4.8maintenance2.4QDfoodwhole;Apriso§2 1.5g4capsAMfoodoptionalwholeavoidantacids;Pentasa§2 1gQID4x250/2x500wholeorsprinkleapplesauce/yogurtimmediately",
+        "pentasa": "Lialda§2induction2.4–4.8maintenance2.4QDfoodwhole;Apriso§2 1.5g4capsAMfoodoptionalwholeavoidantacids;Pentasa§2 1gQID4x250/2x500wholeorsprinkleapplesauce/yogurtimmediately"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "dosage",
+      "card": "Lialda pediatric weight bands",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Weight; must swallow tablets whole",
+            "Once-daily dose with food"
+          ],
+          "rows": [
+            [
+              "24–35 kg",
+              "Weeks 0–8: 2.4 g; after week 8: 1.2 g"
+            ],
+            [
+              "Greater than 35–50 kg",
+              "Weeks 0–8: 3.6 g; after week 8: 2.4 g"
+            ],
+            [
+              "Greater than 50 kg",
+              "Weeks 0–8: 4.8 g; after week 8: 2.4 g"
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Lialda§2exact24–35/>35–50/>50week0–8vsafter8tablewhole/food"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "dosage",
+      "card": "Rectal regimens",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Product",
+            "Adult regimen and retention"
+          ],
+          "rows": [
+            [
+              "Canasa 1000 mg suppository",
+              "One rectally at bedtime for 3–6 weeks by symptoms/sigmoidoscopy; retain 1–3 hours or longer if possible; do not cut/break; safety/effectiveness beyond 6 weeks unestablished"
+            ],
+            [
+              "Rowasa 4 g / 60 mL enema",
+              "One rectal instillation daily, preferably bedtime; retain approximately 8 hours for 3–6 weeks by symptoms/sigmoidoscopy"
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "canasa",
+        "rowasa"
+      ],
+      "sourceSections": {
+        "canasa": "Canasa§2 1000bedtime3–6wkretain1–3hwhole/beyond6unestablished;Rowasa§2 4g60mLQDbedtime8h3–6wk",
+        "rowasa": "Canasa§2 1000bedtime3–6wkretain1–3hwhole/beyond6unestablished;Rowasa§2 4g60mLQDbedtime8h3–6wk"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "dosage",
+      "card": "Enema technique and missed suppository",
+      "assertions": {
+        "paragraphs": [
+          "Shake Rowasa to make a homogeneous suspension, remove the protective sheath and lie on the left side or use the instructed knee-chest position. Insert gently toward the umbilicus, squeeze steadily and remain positioned at least 30 minutes, aiming to retain overnight. It can stain surfaces. For missed Canasa, use when remembered unless nearly time for the next dose; never use two together as compensation. Do not transfer that specific missed-dose instruction to an unreviewed formulation."
+        ]
+      },
+      "sourceIds": [
+        "canasa",
+        "rowasa"
+      ],
+      "sourceSections": {
+        "canasa": "Rowasa§2/17/IFUshake/removeprotective/positionleftor kneechestgentleumbilicussteadysqueeze≥30minovernight/staining;Canasa§2/17missednodouble",
+        "rowasa": "Rowasa§2/17/IFUshake/removeprotective/positionleftor kneechestgentleumbilicussteadysqueeze≥30minovernight/staining;Canasa§2/17missednodouble"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "dosage",
+      "card": "Kidney, liver and hydration",
+      "assertions": {
+        "paragraphs": [
+          "Evaluate renal function before treatment and periodically; reassess risk with kidney disease or nephrotoxic medicines and discontinue if renal function deteriorates. Selected labels give no verified creatinine-clearance dose-reduction table. Liver impairment requires individualized benefit/risk assessment because hepatic failure has occurred. Drink adequate fluids; do not invent a fixed fluid quota or uniform organ-adjustment algorithm."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "apriso",
+        "pentasa",
+        "canasa",
+        "rowasa"
+      ],
+      "sourceSections": {
+        "label": "Each§2/5/8.6renalbaselineperiodicstopdeterioration;§5hepaticfailurebenefitrisk/fluid nofixedalgorithms",
+        "apriso": "Each§2/5/8.6renalbaselineperiodicstopdeterioration;§5hepaticfailurebenefitrisk/fluid nofixedalgorithms",
+        "pentasa": "Each§2/5/8.6renalbaselineperiodicstopdeterioration;§5hepaticfailurebenefitrisk/fluid nofixedalgorithms",
+        "canasa": "Each§2/5/8.6renalbaselineperiodicstopdeterioration;§5hepaticfailurebenefitrisk/fluid nofixedalgorithms",
+        "rowasa": "Each§2/5/8.6renalbaselineperiodicstopdeterioration;§5hepaticfailurebenefitrisk/fluid nofixedalgorithms"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Renal injury includes interstitial nephritis, minimal-change disease and renal failure. Check function before and periodically during treatment; discontinue for deterioration. Acute intolerance may cause cramping, abdominal pain, bloody diarrhea, fever, headache or rash and resemble an exacerbation: stop and evaluate rather than automatically escalating.",
+          "Hypersensitivity may involve myocarditis, pericarditis, hepatitis, nephritis, pneumonitis or blood disorders, including reactions after sulfasalazine allergy. Severe skin reactions such as SJS/TEN, DRESS or AGEP require stopping and urgent evaluation. Liver disease requires benefit/risk review; hepatic failure has been reported.",
+          "Photosensitivity may be more severe with eczema or other pre-existing skin disease; use protective clothing/sunscreen and avoid sun exposure as directed. Mesalamine stones may be missed by standard radiography or CT; maintain hydration and report severe flank pain or blood in urine.",
+          "Lialda should be avoided with upper gastrointestinal obstruction because gastric retention delays release. Apriso contains aspartame equivalent to 0.56 mg phenylalanine per capsule (2.24 mg at the four-capsule adult dose); account for all sources in PKU. Rowasa contains potassium metabisulfite and may provoke life-threatening sulfite reactions. Current Rowasa warns of intracranial hypertension: immediately stop and seek evaluation for unusual headache or visual disturbance."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "apriso",
+        "pentasa",
+        "canasa",
+        "rowasa"
+      ],
+      "sourceSections": {
+        "label": "Eachfull§5 renalacuteintolerancehypersensitivityheartlunghepaticbloodSCAR/photosensitivity/stonesradiotransparent;Lialda§5.6GIobstructionavoid;Apriso§5.8phenyl0.56each/17dose2.24;Rowasa§5.1sulfite and5.9intracranialstoprefer unusualheadachevision",
+        "apriso": "Eachfull§5 renalacuteintolerancehypersensitivityheartlunghepaticbloodSCAR/photosensitivity/stonesradiotransparent;Lialda§5.6GIobstructionavoid;Apriso§5.8phenyl0.56each/17dose2.24;Rowasa§5.1sulfite and5.9intracranialstoprefer unusualheadachevision",
+        "pentasa": "Eachfull§5 renalacuteintolerancehypersensitivityheartlunghepaticbloodSCAR/photosensitivity/stonesradiotransparent;Lialda§5.6GIobstructionavoid;Apriso§5.8phenyl0.56each/17dose2.24;Rowasa§5.1sulfite and5.9intracranialstoprefer unusualheadachevision",
+        "canasa": "Eachfull§5 renalacuteintolerancehypersensitivityheartlunghepaticbloodSCAR/photosensitivity/stonesradiotransparent;Lialda§5.6GIobstructionavoid;Apriso§5.8phenyl0.56each/17dose2.24;Rowasa§5.1sulfite and5.9intracranialstoprefer unusualheadachevision",
+        "rowasa": "Eachfull§5 renalacuteintolerancehypersensitivityheartlunghepaticbloodSCAR/photosensitivity/stonesradiotransparent;Lialda§5.6GIobstructionavoid;Apriso§5.8phenyl0.56each/17dose2.24;Rowasa§5.1sulfite and5.9intracranialstoprefer unusualheadachevision"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Known or suspected hypersensitivity to salicylates, aminosalicylates or the selected product’s ingredients is contraindicated. Rowasa additionally specifically contraindicates sulfite hypersensitivity. Verify excipients instead of treating all mesalamine products as identical; a sulfite-free product requires its own verification."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "apriso",
+        "pentasa",
+        "canasa",
+        "rowasa"
+      ],
+      "sourceSections": {
+        "label": "Each§4salicylateaminoexcipientallergy;Rowasa§4explicit sulfite;unreviewedsulfitefreeexcluded",
+        "apriso": "Each§4salicylateaminoexcipientallergy;Rowasa§4explicit sulfite;unreviewedsulfitefreeexcluded",
+        "pentasa": "Each§4salicylateaminoexcipientallergy;Rowasa§4explicit sulfite;unreviewedsulfitefreeexcluded",
+        "canasa": "Each§4salicylateaminoexcipientallergy;Rowasa§4explicit sulfite;unreviewedsulfitefreeexcluded",
+        "rowasa": "Each§4salicylateaminoexcipientallergy;Rowasa§4explicit sulfite;unreviewedsulfitefreeexcluded"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "These five selected U.S. mesalamine labels have no boxed warning. Serious renal, allergic, cutaneous and hematologic reactions remain important with oral and rectal use."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "apriso",
+        "pentasa",
+        "canasa",
+        "rowasa"
+      ],
+      "sourceSections": {
+        "label": "ActualallfivefullSPLsabsenceboxedwarning plus§5risks",
+        "apriso": "ActualallfivefullSPLsabsenceboxedwarning plus§5risks",
+        "pentasa": "ActualallfivefullSPLsabsenceboxedwarning plus§5risks",
+        "canasa": "ActualallfivefullSPLsabsenceboxedwarning plus§5risks",
+        "rowasa": "ActualallfivefullSPLsabsenceboxedwarning plus§5risks"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Oral trials reported headache, diarrhea, nausea, abdominal discomfort, flatulence and other product-specific effects. Canasa reports include dizziness, rectal pain, fever, rash, acne and colitis; Rowasa includes gas, flu-like symptoms, fever, joint/leg or rectal pain and hair loss. Pancreatitis, blood dyscrasias, renal/hepatic injury and severe allergic/skin events have been reported. Do not compare trial percentages across formulations as one common incidence."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "apriso",
+        "pentasa",
+        "canasa",
+        "rowasa"
+      ],
+      "sourceSections": {
+        "label": "Each§6 commonproduct-specifictrialevents andpostmarketing seriousrenalbloodliverpancreatitis/SCAR;notcomparativecommonrate",
+        "apriso": "Each§6 commonproduct-specifictrialevents andpostmarketing seriousrenalbloodliverpancreatitis/SCAR;notcomparativecommonrate",
+        "pentasa": "Each§6 commonproduct-specifictrialevents andpostmarketing seriousrenalbloodliverpancreatitis/SCAR;notcomparativecommonrate",
+        "canasa": "Each§6 commonproduct-specifictrialevents andpostmarketing seriousrenalbloodliverpancreatitis/SCAR;notcomparativecommonrate",
+        "rowasa": "Each§6 commonproduct-specifictrialevents andpostmarketing seriousrenalbloodliverpancreatitis/SCAR;notcomparativecommonrate"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "interactions",
+      "card": "Nephrotoxic medicines",
+      "assertions": {
+        "paragraphs": [
+          "NSAIDs and other nephrotoxic drugs can increase renal risk. Review OTC analgesics as well as prescriptions; monitor renal function and mesalamine-related effects. The label does not supply a universal percentage dose change."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "apriso",
+        "pentasa",
+        "canasa",
+        "rowasa"
+      ],
+      "sourceSections": {
+        "label": "Each§7 nephrotoxicagentsNSAIDmonitorrenal",
+        "apriso": "Each§7 nephrotoxicagentsNSAIDmonitorrenal",
+        "pentasa": "Each§7 nephrotoxicagentsNSAIDmonitorrenal",
+        "canasa": "Each§7 nephrotoxicagentsNSAIDmonitorrenal",
+        "rowasa": "Each§7 nephrotoxicagentsNSAIDmonitorrenal"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "interactions",
+      "card": "Thiopurines and myelotoxic drugs",
+      "assertions": {
+        "paragraphs": [
+          "Azathioprine, 6-mercaptopurine and other marrow-toxic medicines may increase blood dyscrasias or marrow failure. If combination treatment cannot be avoided, monitor CBC and platelet counts; do not assume rectal delivery exempts monitoring."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "apriso",
+        "pentasa",
+        "canasa",
+        "rowasa"
+      ],
+      "sourceSections": {
+        "label": "Each§7 azathioprine6MP/myelotoxicCBCplatelet ifunavoidable",
+        "apriso": "Each§7 azathioprine6MP/myelotoxicCBCplatelet ifunavoidable",
+        "pentasa": "Each§7 azathioprine6MP/myelotoxicCBCplatelet ifunavoidable",
+        "canasa": "Each§7 azathioprine6MP/myelotoxicCBCplatelet ifunavoidable",
+        "rowasa": "Each§7 azathioprine6MP/myelotoxicCBCplatelet ifunavoidable"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "interactions",
+      "card": "Apriso antacids and assay interference",
+      "assertions": {
+        "paragraphs": [
+          "Avoid antacid coadministration with Apriso because granule-coating dissolution depends on pH; the label provides no numerical spacing interval that guarantees safety. Mesalamine can cause falsely elevated urinary normetanephrine with liquid chromatography/electrochemical detection; request an alternative selective assay when appropriate. This is not proof of a true biochemical abnormality."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "apriso",
+        "pentasa",
+        "canasa",
+        "rowasa"
+      ],
+      "sourceSections": {
+        "label": "Apriso§7.1pHantacidavoidnonumericalspacing;each§7assayinterferenceurinarynormetanephrineLC/electrochemical alternative selective assay",
+        "apriso": "Apriso§7.1pHantacidavoidnonumericalspacing;each§7assayinterferenceurinarynormetanephrineLC/electrochemical alternative selective assay",
+        "pentasa": "Apriso§7.1pHantacidavoidnonumericalspacing;each§7assayinterferenceurinarynormetanephrineLC/electrochemical alternative selective assay",
+        "canasa": "Apriso§7.1pHantacidavoidnonumericalspacing;each§7assayinterferenceurinarynormetanephrineLC/electrochemical alternative selective assay",
+        "rowasa": "Apriso§7.1pHantacidavoidnonumericalspacing;each§7assayinterferenceurinarynormetanephrineLC/electrochemical alternative selective assay"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and breastfeeding",
+      "assertions": {
+        "paragraphs": [
+          "Available pregnancy studies do not reliably establish a drug-associated risk; Canasa likewise describes insufficient data. Active ulcerative colitis itself is associated with adverse pregnancy outcomes, so discuss maternal treatment needs rather than stopping automatically. Mesalamine and its metabolite occur in milk in small amounts; infant diarrhea has been reported. Weigh breastfeeding benefits and maternal need, and monitor the infant for diarrhea. Different labels’ numerical milk summaries are not treated as one universal exposure estimate."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "apriso",
+        "pentasa",
+        "canasa",
+        "rowasa"
+      ],
+      "sourceSections": {
+        "label": "Each§8.1/8.2primaryrisklimitedpregnancy/UCdiseaseandmilk/infantdiarrhea;Canasa§8.1insufficientdata;distinctnumericmilknotgeneralized",
+        "apriso": "Each§8.1/8.2primaryrisklimitedpregnancy/UCdiseaseandmilk/infantdiarrhea;Canasa§8.1insufficientdata;distinctnumericmilknotgeneralized",
+        "pentasa": "Each§8.1/8.2primaryrisklimitedpregnancy/UCdiseaseandmilk/infantdiarrhea;Canasa§8.1insufficientdata;distinctnumericmilknotgeneralized",
+        "canasa": "Each§8.1/8.2primaryrisklimitedpregnancy/UCdiseaseandmilk/infantdiarrhea;Canasa§8.1insufficientdata;distinctnumericmilknotgeneralized",
+        "rowasa": "Each§8.1/8.2primaryrisklimitedpregnancy/UCdiseaseandmilk/infantdiarrhea;Canasa§8.1insufficientdata;distinctnumericmilknotgeneralized"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": {
+        "paragraphs": [
+          "Lialda pediatric treatment is established at weight at least 24 kg with whole-tablet swallowing; underlying trial ages were 5–17, but the current indication is weight-based. Apriso, Pentasa, Canasa and Rowasa pediatric safety/effectiveness are not established; an evaluated Canasa pediatric study did not demonstrate efficacy. Older patients may have greater renal/comorbidity risk and blood dyscrasias: monitor CBC/platelets; consider the lower induction range with Lialda."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "apriso",
+        "pentasa",
+        "canasa",
+        "rowasa"
+      ],
+      "sourceSections": {
+        "label": "Lialda§1/2/8.4weight≥24trial5–17whole;others8.4unestablished andCanasastudyno efficacy;each8.5CBCplatelets;Lialdalowinductionrange",
+        "apriso": "Lialda§1/2/8.4weight≥24trial5–17whole;others8.4unestablished andCanasastudyno efficacy;each8.5CBCplatelets;Lialdalowinductionrange",
+        "pentasa": "Lialda§1/2/8.4weight≥24trial5–17whole;others8.4unestablished andCanasastudyno efficacy;each8.5CBCplatelets;Lialdalowinductionrange",
+        "canasa": "Lialda§1/2/8.4weight≥24trial5–17whole;others8.4unestablished andCanasastudyno efficacy;each8.5CBCplatelets;Lialdalowinductionrange",
+        "rowasa": "Lialda§1/2/8.4weight≥24trial5–17whole;others8.4unestablished andCanasastudyno efficacy;each8.5CBCplatelets;Lialdalowinductionrange"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "populations",
+      "card": "Renal, hepatic and excipient considerations",
+      "assertions": {
+        "paragraphs": [
+          "Absorbed drug/metabolite are substantially excreted renally. Follow kidney monitoring and stopping directions rather than inventing a dose table; liver disease also needs benefit/risk review. PKU matters specifically for Apriso phenylalanine, sulfite sensitivity for selected Rowasa and salicylate/aminosalicylate or other excipient allergy across products."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "apriso",
+        "pentasa",
+        "canasa",
+        "rowasa"
+      ],
+      "sourceSections": {
+        "label": "Each§8.6renal excretionriskstopmonitor nofixedtable;§5hepatic;Apriso5.8PKU/Rowasa5.1sulfite/all4allergy",
+        "apriso": "Each§8.6renal excretionriskstopmonitor nofixedtable;§5hepatic;Apriso5.8PKU/Rowasa5.1sulfite/all4allergy",
+        "pentasa": "Each§8.6renal excretionriskstopmonitor nofixedtable;§5hepatic;Apriso5.8PKU/Rowasa5.1sulfite/all4allergy",
+        "canasa": "Each§8.6renal excretionriskstopmonitor nofixedtable;§5hepatic;Apriso5.8PKU/Rowasa5.1sulfite/all4allergy",
+        "rowasa": "Each§8.6renal excretionriskstopmonitor nofixedtable;§5hepatic;Apriso5.8PKU/Rowasa5.1sulfite/all4allergy"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "assertions": {
+        "paragraphs": [
+          "Mesalamine’s mechanism is not fully understood; a local anti-inflammatory effect on colonic epithelial cells is proposed, involving arachidonic-acid inflammatory pathways. It is not a systemic corticosteroid or antibacterial. Selected efficacy and dose schedules remain product- and disease-specific."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "apriso",
+        "pentasa",
+        "canasa",
+        "rowasa"
+      ],
+      "sourceSections": {
+        "label": "Each§12.1 mechanismuncertainlocalepithelium arachidonicpathways;product-specific§1/2",
+        "apriso": "Each§12.1 mechanismuncertainlocalepithelium arachidonicpathways;product-specific§1/2",
+        "pentasa": "Each§12.1 mechanismuncertainlocalepithelium arachidonicpathways;product-specific§1/2",
+        "canasa": "Each§12.1 mechanismuncertainlocalepithelium arachidonicpathways;product-specific§1/2",
+        "rowasa": "Each§12.1 mechanismuncertainlocalepithelium arachidonicpathways;product-specific§1/2"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Release, absorption and elimination",
+      "assertions": {
+        "paragraphs": [
+          "Oral systemic absorption differs: studied Lialda doses yielded approximately 21–22%, Apriso approximately 32%, and Pentasa 20–30%. Rectal absorption is variable and depends on the product and retention; Rowasa is largely excreted with subsequent bowel movements. Absorbed drug is acetylated in intestinal mucosa/liver and eliminated largely in urine as N-acetyl metabolite. Pentasa’s continued release prevents a simple oral elimination-half-life estimate; no universal half-life or milligram conversion is implied."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "apriso",
+        "pentasa",
+        "canasa",
+        "rowasa"
+      ],
+      "sourceSections": {
+        "label": "Lialda12.3absorption21–22;Apriso12.3~32;Pentasa12.320–30andcontinuousreleasehalfnotdeterminable;Canasa12.3variable/Rowasa12.3retentiondependentfecalrenalmetabolite",
+        "apriso": "Lialda12.3absorption21–22;Apriso12.3~32;Pentasa12.320–30andcontinuousreleasehalfnotdeterminable;Canasa12.3variable/Rowasa12.3retentiondependentfecalrenalmetabolite",
+        "pentasa": "Lialda12.3absorption21–22;Apriso12.3~32;Pentasa12.320–30andcontinuousreleasehalfnotdeterminable;Canasa12.3variable/Rowasa12.3retentiondependentfecalrenalmetabolite",
+        "canasa": "Lialda12.3absorption21–22;Apriso12.3~32;Pentasa12.320–30andcontinuousreleasehalfnotdeterminable;Canasa12.3variable/Rowasa12.3retentiondependentfecalrenalmetabolite",
+        "rowasa": "Lialda12.3absorption21–22;Apriso12.3~32;Pentasa12.320–30andcontinuousreleasehalfnotdeterminable;Canasa12.3variable/Rowasa12.3retentiondependentfecalrenalmetabolite"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": {
+        "paragraphs": [
+          "Review diagnosis/location, induction versus maintenance, product, weight/swallowing ability, kidney/liver disease and interacting medicines. Obtain renal assessment before and periodically during therapy; CBC/platelets are important in older patients and thiopurine combinations. Follow bleeding, stool symptoms and clinical/endoscopic response. Unusual headache or visual changes with Rowasa require immediate stopping/evaluation. No universal test interval or automatic flare-escalation algorithm is supplied."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "apriso",
+        "pentasa",
+        "canasa",
+        "rowasa"
+      ],
+      "sourceSections": {
+        "label": "Each§2/5/8/17baselineperiodicrenalclinicalCBColderthiopurine;Rowasa§5.9immediatestopheadachevision;noinventedtestinterval",
+        "apriso": "Each§2/5/8/17baselineperiodicrenalclinicalCBColderthiopurine;Rowasa§5.9immediatestopheadachevision;noinventedtestinterval",
+        "pentasa": "Each§2/5/8/17baselineperiodicrenalclinicalCBColderthiopurine;Rowasa§5.9immediatestopheadachevision;noinventedtestinterval",
+        "canasa": "Each§2/5/8/17baselineperiodicrenalclinicalCBColderthiopurine;Rowasa§5.9immediatestopheadachevision;noinventedtestinterval",
+        "rowasa": "Each§2/5/8/17baselineperiodicrenalclinicalCBColderthiopurine;Rowasa§5.9immediatestopheadachevision;noinventedtestinterval"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "assertions": {
+        "paragraphs": [
+          "Follow exact food, whole-tablet/capsule or approved sprinkle directions; do not crush a release system. Use rectal products only rectally and preserve specified retention. Maintain hydration, avoid relevant sun exposure, and report severe rash, chest symptoms, kidney-stone symptoms or worsening bloody diarrhea. Drug/metabolite contact with hypochlorite bleach may discolor urine reddish-brown after leaving the body; report urine already discolored during flow rather than assuming every change is benign."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "apriso",
+        "pentasa",
+        "canasa",
+        "rowasa"
+      ],
+      "sourceSections": {
+        "label": "Each§2/17product-specificfoodwholeorsprinkle retentionhydration/sun;each17urinebleach exvivo vsalreadydiscoloredflow",
+        "apriso": "Each§2/17product-specificfoodwholeorsprinkle retentionhydration/sun;each17urinebleach exvivo vsalreadydiscoloredflow",
+        "pentasa": "Each§2/17product-specificfoodwholeorsprinkle retentionhydration/sun;each17urinebleach exvivo vsalreadydiscoloredflow",
+        "canasa": "Each§2/17product-specificfoodwholeorsprinkle retentionhydration/sun;each17urinebleach exvivo vsalreadydiscoloredflow",
+        "rowasa": "Each§2/17product-specificfoodwholeorsprinkle retentionhydration/sun;each17urinebleach exvivo vsalreadydiscoloredflow"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "practice",
+      "card": "Overdose or incorrect product",
+      "assertions": {
+        "paragraphs": [
+          "Seek clinician/Poison Control assessment for overdose or wrong-route/product administration; confusion, seizures, rapid breathing, tinnitus or severe systemic symptoms require urgent care. There is no specific mesalamine antidote; clinical treatment addresses salicylate-like toxicity, fluids, electrolytes and renal function. Do not attempt home decontamination or an unverified substitution."
+        ]
+      },
+      "sourceIds": [
+        "rowasa",
+        "label"
+      ],
+      "sourceSections": {
+        "rowasa": "Lialda/Rowasa§10 exactsalicylatetoxicity/nospecificantidoteclinicalfluidselectrolytesrenal;clinicalurgentreferral nothomedecontamination",
+        "label": "Lialda/Rowasa§10 exactsalicylatetoxicity/nospecificantidoteclinicalfluidselectrolytesrenal;clinicalurgentreferral nothomedecontamination"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "product",
+      "card": "Representative oral product",
+      "assertions": {
+        "facts": [
+          [
+            "Product",
+            "Lialda 1.2 g delayed-release tablet"
+          ],
+          [
+            "Route",
+            "Oral; prescription only"
+          ],
+          [
+            "Appearance",
+            "Red-brown ellipsoidal; S476 imprint"
+          ],
+          [
+            "Example package",
+            "120 tablets · NDC 54092-476-12"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Lialda§3/16 actualredbrownS4761.2g120NDC"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Lialda: 1.2 g delayed-release tablets. Apriso: 0.375 g extended-release capsules, light blue with G/M on either side of a black band; 120-capsule NDC 65649-103-02. Pentasa: 250 and 500 mg extended-release capsules. Canasa: 1000 mg light tan to grey bullet-shaped rectal suppository; 30-unit NDC 58914-501-56. Rowasa: 4 g / 60 mL off-white to tan rectal suspension; 7-bottle NDC 0037-0066-05. Other release systems and sulfite-free products are outside the reviewed prescribing scope."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "apriso",
+        "pentasa",
+        "canasa",
+        "rowasa"
+      ],
+      "sourceSections": {
+        "label": "All§3/16Lialda1.2/Apriso0.375GMblackband120NDC/Pentasa250500/Canasa1000tan-gray30NDC/Rowasa4g60mL7NDC;unreviewedformsnotconverted",
+        "apriso": "All§3/16Lialda1.2/Apriso0.375GMblackband120NDC/Pentasa250500/Canasa1000tan-gray30NDC/Rowasa4g60mL7NDC;unreviewedformsnotconverted",
+        "pentasa": "All§3/16Lialda1.2/Apriso0.375GMblackband120NDC/Pentasa250500/Canasa1000tan-gray30NDC/Rowasa4g60mL7NDC;unreviewedformsnotconverted",
+        "canasa": "All§3/16Lialda1.2/Apriso0.375GMblackband120NDC/Pentasa250500/Canasa1000tan-gray30NDC/Rowasa4g60mL7NDC;unreviewedformsnotconverted",
+        "rowasa": "All§3/16Lialda1.2/Apriso0.375GMblackband120NDC/Pentasa250500/Canasa1000tan-gray30NDC/Rowasa4g60mL7NDC;unreviewedformsnotconverted"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Lialda: 15–25°C, excursions to 30°C. Apriso: 20–25°C, excursions 15–30°C. Pentasa: 25°C, excursions 15–30°C. Canasa: below 25°C, refrigeration permitted; protect from direct heat, light and humidity. Rowasa: 20–25°C, excursions 15–30°C; once the seven-bottle foil unit is opened, use promptly as directed. Slight darkening does not affect potency, but discard dark-brown contents. Follow the actual carton; do not invent an opened-product discard interval."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "apriso",
+        "pentasa",
+        "canasa",
+        "rowasa"
+      ],
+      "sourceSections": {
+        "label": "Each§16exactLialda15–25exc30/Apriso20–25exc15–30/Pentasa25exc15–30/Canasabelow25mayfridgeheatlight humidity/Rowasa20–25exc15–30foilpromptuse/darkbrowndiscard notslightdark",
+        "apriso": "Each§16exactLialda15–25exc30/Apriso20–25exc15–30/Pentasa25exc15–30/Canasabelow25mayfridgeheatlight humidity/Rowasa20–25exc15–30foilpromptuse/darkbrowndiscard notslightdark",
+        "pentasa": "Each§16exactLialda15–25exc30/Apriso20–25exc15–30/Pentasa25exc15–30/Canasabelow25mayfridgeheatlight humidity/Rowasa20–25exc15–30foilpromptuse/darkbrowndiscard notslightdark",
+        "canasa": "Each§16exactLialda15–25exc30/Apriso20–25exc15–30/Pentasa25exc15–30/Canasabelow25mayfridgeheatlight humidity/Rowasa20–25exc15–30foilpromptuse/darkbrowndiscard notslightdark",
+        "rowasa": "Each§16exactLialda15–25exc30/Apriso20–25exc15–30/Pentasa25exc15–30/Canasabelow25mayfridgeheatlight humidity/Rowasa20–25exc15–30foilpromptuse/darkbrowndiscard notslightdark"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    }
+  ],
+  "sourceDiscrepancies": [
+    {
+      "issue": "CurrentRowasaAug2026fullwarnings5.1hypersensitivity/5.2renal/5.3intoleranceswapversushighlightcrossreferencesand§2links.",
+      "resolution": "Actualfullwarningheadingsusedinthecardmap;intracranialhypertension5.9included;notpropagatedwrongcrossreference.",
+      "resolved": true
+    },
+    {
+      "issue": "Apriso8.2summaryRID≤2%vsdataRID0–0.1%parentdrug;Canasadifferentstudies/ranges.",
+      "resolution": "Publishedmilktextkeepsqualitativeamountandinfantdiarrhea/riskassessment;no invented harmonized numericalinfantdose.",
+      "resolvedWithinPublishedScope": true
+    },
+    {
+      "issue": "Canasa§16below25°Cversuspatientleaflet20–25°C;currentRowasafooterRev.x/202xplaceholder.",
+      "resolution": "UsefullCanasastoragesectionbelow25mayrefrigerateandactualRowasaSPLeffectivedate;nofabricatedclinicalversion.",
+      "resolved": true
+    },
+    {
+      "issue": "Othermesalamine releaseproductsoriginalavailabilitynotverifiedinthisscope.",
+      "resolution": "Delzicol/AsacolHD/400800/sulfitefree/othercountry identifiedas excluded,notassertedcurrentavailable orinterchangeable.",
+      "resolvedWithinPublishedScope": true
+    }
+  ],
+  "materialErrors": [],
+  "unresolvedMaterialGaps": [],
+  "limitations": [
+    "Source-reviewed only within explicit selected-product scope; excluded products require additional current-source review before prescribing guidance.",
+    "All reviewed sources public primary labels; no paywalled access claimed.",
+    "Parent retains rendered QA/build/release checks."
+  ],
+  "reviewedSourceSections": [
+    "All supporting full indication,dose,contra,warnings,ADR,interactions,organ,pregnancy,lactation,pediatric,older,PK,monitoring,counsel,overdose wherepresent,identification/storage and device/product instructions; exact per-card source maps above."
+  ],
+  "verification": {
+    "schemaErrors": [],
+    "monographSha256": "fe01eee0943e23f38ec3dd8f8d27df08bb3aafb866bbe85b8483c6ed793a30a6",
+    "sectionIds": [
+      "indications",
+      "dosage",
+      "safety",
+      "interactions",
+      "populations",
+      "pharmacology",
+      "practice",
+      "product"
+    ],
+    "heroFacts": 3,
+    "safetyCardOrder": [
+      "Warnings and precautions",
+      "Contraindications",
+      "Boxed warning status",
+      "Adverse reactions"
+    ],
+    "productCardOrder": [
+      "Representative oral product",
+      "Dosage forms and strengths",
+      "Storage and handling"
+    ],
+    "renderedPageQA": "Pending parent exact candidate390px QA",
+    "displayTextWrap": "Two-columntables/naturalspaceddata;parentboundsQA pending"
+  }
+}

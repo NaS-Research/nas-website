@@ -1,0 +1,548 @@
+{
+  "drug": "nortriptyline",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Current selected Sun/Taro oral capsule and PAI oral solution full primary labels; labeled depression and formulation-specific safety.",
+  "sources": [
+    {
+      "id": "nortripsun",
+      "title": "Sun/Taro · Nortriptyline capsules",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aee2c1a1-d848-4c3b-8c6d-8a4f6ce94c28",
+      "note": "Full public manufacturer label and patient instructions; SPL version 11, effective 20260715. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "11",
+      "effective_date": "20260715",
+      "xml_sha256": "f3b2a06a0ba3a0c1d159dbd6ba3010268e0f43dda64c895229556a4784203373",
+      "retrieved_xml": "/tmp/nas-drug-sources/nortripsun.xml",
+      "publication_date": "Jul 16, 2026",
+      "version_selection": "Latest selected manufacturer DailyMed API record checked October1,2026; publication date and SPL effective/revision date recorded separately.",
+      "reviewed_sections": "Complete supporting label sections: indications; doses/formulation/population distinctions; contraindications; warnings; interactions; populations; PK; monitoring/counseling; storage/product identity."
+    },
+    {
+      "id": "nortripsol",
+      "title": "PAI · Nortriptyline oral solution",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fcabf90-357a-4a06-b680-9572dc28bcfe",
+      "note": "Full public manufacturer label and patient instructions; SPL version 15, effective 20260126. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "15",
+      "effective_date": "20260126",
+      "xml_sha256": "a28ecef18b74590a26944835c776c17a04f86c41bf9fb881eac257c1d3e4f69b",
+      "retrieved_xml": "/tmp/nas-drug-sources/nortripsol.xml",
+      "publication_date": "Jan 28, 2026",
+      "version_selection": "Latest selected manufacturer DailyMed API record checked October1,2026; publication date and SPL effective/revision date recorded separately.",
+      "reviewed_sections": "Complete supporting label sections: indications; doses/formulation/population distinctions; contraindications; warnings; interactions; populations; PK; monitoring/counseling; storage/product identity."
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Labeled indication and boundaries",
+      "assertions": {
+        "paragraphs": [
+          "The selected labels indicate relief of depressive symptoms; they note stronger response in endogenous depressive states. Nortriptyline is not approved for pediatric use or bipolar depression. Screen for bipolar illness before antidepressant treatment. No off-label pain, migraine or smoking-cessation regimen is asserted here."
+        ]
+      },
+      "source_sections": {
+        "nortripsun": [
+          "INDICATIONS AND USAGE",
+          "Screening Patients for Bipolar Disorder",
+          "Pediatric Use"
+        ],
+        "nortripsol": [
+          "INDICATIONS AND USAGE",
+          "Screening Patients for Bipolar Disorder",
+          "Pediatric Use"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Depression dose framework",
+      "assertions": {
+        "paragraphs": [
+          "Usual adult label dose is 25 mg three or four times daily; the total daily dose may alternatively be taken once daily. Begin below the usual regimen when appropriate and increase gradually according to benefit and intolerance. Doses above 150 mg/day are not recommended. Above 100 mg/day, measure nortriptyline plasma concentration and maintain the label range of 50–150 ng/mL."
+        ]
+      },
+      "source_sections": {
+        "nortripsun": [
+          "DOSAGE AND ADMINISTRATION",
+          "Usual Adult Dose"
+        ],
+        "nortripsol": [
+          "DOSAGE AND ADMINISTRATION",
+          "Usual Adult Dose"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Older patients, adolescents and formulation",
+      "assertions": {
+        "paragraphs": [
+          "The label lists 30–50 mg/day in divided doses or once daily for elderly and adolescent patients, while explicitly stating pediatric use is unapproved and not established. This historical adolescent dosing text is not evidence of pediatric approval. Older adults should receive the smallest effective dose. Oral solution is 10 mg/5 mL; measure a prescribed volume with a calibrated device. The selected solution contains 4% alcohol."
+        ]
+      },
+      "source_sections": {
+        "nortripsun": [
+          "DOSAGE AND ADMINISTRATION",
+          "Elderly and Adolescent Patients",
+          "Pediatric Use",
+          "Geriatric Use",
+          "DESCRIPTION"
+        ],
+        "nortripsol": [
+          "DOSAGE AND ADMINISTRATION",
+          "Elderly and Adolescent Patients",
+          "Pediatric Use",
+          "Geriatric Use",
+          "DESCRIPTION"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "MAOI transitions and urgent exceptions",
+      "assertions": {
+        "paragraphs": [
+          "Allow at least 14 days after stopping a psychiatric MAOI before starting nortriptyline, and at least 14 days after stopping nortriptyline before starting that MAOI. Do not initiate nortriptyline during linezolid or IV methylene blue treatment. If urgent use of either is unavoidable after alternatives are assessed, the label requires promptly stopping nortriptyline, monitoring for serotonin syndrome for two weeks or until 24 hours after the last MAOI dose, whichever comes first, and waiting 24 hours after that dose before resumption. This is a supervised exception, not a routine overlap."
+        ]
+      },
+      "source_sections": {
+        "nortripsun": [
+          "Switching a Patient To or From a Monoamine Oxidase Inhibitor (MAOI) Intended to Treat Psychiatric Disorders",
+          "Use of Nortriptyline Hydrochloride With Other MAOIs, Such as Linezolid or Methylene Blue"
+        ],
+        "nortripsol": [
+          "Switching a Patient To or From a Monoamine Oxidase Inhibitor (MAOI) Intended to Treat Psychiatric Disorders",
+          "Use of Nortriptyline Hydrochloride With Other MAOIs, Such as Linezolid or Methylene Blue"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Maintenance and discontinuation",
+      "assertions": {
+        "paragraphs": [
+          "After remission, continued maintenance at the lowest effective dose may be needed. Reduce dose for minor intolerance; promptly reassess serious adverse effects or allergy. Abrupt cessation after prolonged use can cause nausea, headache and malaise; plan discontinuation with the prescriber. The selected labels supply no universal taper schedule."
+        ]
+      },
+      "source_sections": {
+        "nortripsun": [
+          "DOSAGE AND ADMINISTRATION",
+          "ADVERSE REACTIONS"
+        ],
+        "nortripsol": [
+          "DOSAGE AND ADMINISTRATION",
+          "ADVERSE REACTIONS"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Monitor worsening depression, suicidality, agitation or unusual behavior in all ages, especially early treatment and dose changes. Screen for mania risk. Cardiovascular disease requires close supervision because tachycardia and delayed conduction can occur; generally avoid known or suspected Brugada syndrome. Use great caution with urinary retention, seizure history, hyperthyroidism or thyroid medication. Narrow angles may develop acute angle closure. Serotonin syndrome can cause agitation, fever, unstable vital signs, rigidity, tremor and diarrhea; stop implicated agents and seek urgent treatment. Alcohol can amplify impairment and overdose risk."
+        ]
+      },
+      "source_sections": {
+        "nortripsun": [
+          "Clinical Worsening and Suicide Risk",
+          "Screening Patients for Bipolar Disorder",
+          "Unmasking of Brugada Syndrome",
+          "Angle-Closure Glaucoma",
+          "Serotonin Syndrome"
+        ],
+        "nortripsol": [
+          "Clinical Worsening and Suicide Risk",
+          "Screening Patients for Bipolar Disorder",
+          "Unmasking of Brugada Syndrome",
+          "Angle-Closure Glaucoma",
+          "Serotonin Syndrome"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Contraindicated during acute recovery after myocardial infarction and with psychiatric MAOIs, including the bidirectional 14-day washouts. Starting during linezolid or IV methylene blue is contraindicated. The hypersensitivity subsection warns of potential cross-sensitivity with other tricyclic/dibenzazepine drugs; review prior allergic reactions and avoid implicated products. Brugada risk is a generally-avoid warning rather than a separately listed formal contraindication."
+        ]
+      },
+      "source_sections": {
+        "nortripsun": [
+          "CONTRAINDICATIONS",
+          "Monoamine Oxidase Inhibitors (MAOIs)",
+          "Hypersensitivity to Tricyclic Antidepressants",
+          "Myocardial Infarction",
+          "Unmasking of Brugada Syndrome"
+        ],
+        "nortripsol": [
+          "CONTRAINDICATIONS",
+          "Monoamine Oxidase Inhibitors (MAOIs)",
+          "Hypersensitivity to Tricyclic Antidepressants",
+          "Myocardial Infarction",
+          "Unmasking of Brugada Syndrome"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "Both selected oral labels carry the antidepressant suicidality boxed warning: short-term studies found increased suicidal thinking/behavior in children, adolescents and young adults. This warning requires balancing clinical need and close observation; it does not establish pediatric approval. Depression itself also carries suicide risk, and every age requires appropriate monitoring."
+        ]
+      },
+      "source_sections": {
+        "nortripsun": [
+          "Suicidality and Antidepressant Drugs"
+        ],
+        "nortripsol": [
+          "Suicidality and Antidepressant Drugs"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Anticholinergic effects include dry mouth, constipation, blurred vision and urinary retention; drowsiness, dizziness, sweating and weight changes may occur. Serious reported or class-listed reactions include arrhythmias, heart block, seizures, mania/confusion, blood dyscrasias, liver injury, SIADH and severe allergy. Label lists include some class events not specifically observed with nortriptyline and do not provide a reliable incidence for each. Overdose may rapidly cause dysrhythmia, hypotension, seizures or coma and death: obtain emergency help and poison-center guidance immediately; do not induce vomiting."
+        ]
+      },
+      "source_sections": {
+        "nortripsun": [
+          "ADVERSE REACTIONS",
+          "Postmarketing Experience",
+          "OVERDOSAGE",
+          "Manifestations",
+          "Gastrointestinal Decontamination"
+        ],
+        "nortripsol": [
+          "ADVERSE REACTIONS",
+          "Postmarketing Experience",
+          "OVERDOSAGE",
+          "Manifestations",
+          "Gastrointestinal Decontamination"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "assertions": {
+        "paragraphs": [
+          "Review every prescription, nonprescription drug and supplement. Exposure-based dose changes and drug-level monitoring are clinician decisions."
+        ],
+        "table": {
+          "headers": [
+            "Combination",
+            "Action"
+          ],
+          "rows": [
+            [
+              "Psychiatric MAOIs; linezolid; IV methylene blue",
+              "Contraindicated initiation/overlap; follow exact supervised transition rules."
+            ],
+            [
+              "Other serotonergic drugs",
+              "Triptans, fentanyl, tramadol, lithium, buspirone and St. John’s wort increase serotonin-syndrome risk; monitor closely if justified."
+            ],
+            [
+              "CYP2D6 inhibitors",
+              "Quinidine, some SSRIs and antiarrhythmics can increase TCA exposure; lower dose and measure levels when indicated. Starting after fluoxetine may require at least five weeks because of persistent metabolites."
+            ],
+            [
+              "Cimetidine",
+              "Can raise tricyclic plasma concentrations."
+            ],
+            [
+              "Anticholinergics and sympathomimetics",
+              "Careful adjustment and close supervision; additive anticholinergic or cardiovascular effects."
+            ],
+            [
+              "Alcohol",
+              "Exaggerated impairment and overdose risk."
+            ],
+            [
+              "Guanethidine and similar agents",
+              "Antihypertensive effect can be blocked."
+            ],
+            [
+              "Reserpine; glucose-lowering medicines",
+              "Reserpine can produce stimulation; a chlorpropamide-associated hypoglycemia case is reported. Monitor clinically rather than assuming a universal incidence."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "nortripsun": [
+          "Drug Interactions",
+          "Drugs Metabolized by P450 2D6",
+          "Serotonin Syndrome"
+        ],
+        "nortripsol": [
+          "Drug Interactions",
+          "Drugs Metabolized by P450 2D6",
+          "Serotonin Syndrome"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Safety during pregnancy and lactation has not been established in the selected labels; weigh maternal benefit against potential fetal or infant hazards. Animal studies were inconclusive. Make pregnancy and breastfeeding decisions with the treating team rather than asserting safety from absent data."
+        ]
+      },
+      "source_sections": {
+        "nortripsun": [
+          "Use in Pregnancy"
+        ],
+        "nortripsol": [
+          "Use in Pregnancy"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": {
+        "paragraphs": [
+          "Safety and effectiveness in pediatric patients are unestablished. Older patients may develop confusion, blood-pressure changes, arrhythmias or higher active-metabolite concentrations; monitor cardiovascular function and use the lowest effective total dose. Rare geriatric cholestatic liver injury, including fatal reports, is described."
+        ]
+      },
+      "source_sections": {
+        "nortripsun": [
+          "Pediatric Use",
+          "Geriatric Use"
+        ],
+        "nortripsol": [
+          "Pediatric Use",
+          "Geriatric Use"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "assertions": {
+        "paragraphs": [
+          "The selected labels do not establish a numerical renal or hepatic dose-adjustment regimen. Individualize dose using tolerability, clinical response and concentration monitoring when indicated. CYP2D6 inhibition or reduced metabolism can substantially increase exposure; suspected liver injury requires prompt assessment. Do not turn these observations into an unsupported organ-dose algorithm."
+        ]
+      },
+      "source_sections": {
+        "nortripsun": [
+          "Drugs Metabolized by P450 2D6",
+          "Geriatric Use",
+          "DOSAGE AND ADMINISTRATION",
+          "ADVERSE REACTIONS"
+        ],
+        "nortripsol": [
+          "Drugs Metabolized by P450 2D6",
+          "Geriatric Use",
+          "DOSAGE AND ADMINISTRATION",
+          "ADVERSE REACTIONS"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and pharmacodynamics",
+      "assertions": {
+        "paragraphs": [
+          "The labels describe the precise mood-elevating mechanism as unknown and catecholamine transport, release and storage effects as implicated. Nortriptyline is not an MAO inhibitor. Anticholinergic and cardiovascular actions account for clinically important tolerability limitations."
+        ]
+      },
+      "source_sections": {
+        "nortripsun": [
+          "CLINICAL PHARMACOLOGY",
+          "Screening Patients for Bipolar Disorder"
+        ],
+        "nortripsol": [
+          "CLINICAL PHARMACOLOGY",
+          "Screening Patients for Bipolar Disorder"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Exposure and concentration interpretation",
+      "assertions": {
+        "paragraphs": [
+          "CYP2D6 poor metabolism or inhibition can increase TCA exposure. Older adults may have higher concentrations of 10-hydroxynortriptyline. The selected clinical-pharmacology sections do not provide a complete quantitative absorption, half-life or renal-clearance profile; none is invented here. Therapeutic concentrations do not replace ECG and clinical assessment in overdose."
+        ]
+      },
+      "source_sections": {
+        "nortripsun": [
+          "Drugs Metabolized by P450 2D6",
+          "Geriatric Use",
+          "Usual Adult Dose",
+          "General"
+        ],
+        "nortripsol": [
+          "Drugs Metabolized by P450 2D6",
+          "Geriatric Use",
+          "Usual Adult Dose",
+          "General"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "assertions": {
+        "paragraphs": [
+          "Assess depression response, suicidal thinking, activation/mania, blood pressure and pulse, anticholinergic burden and falls. Monitor cardiovascular function particularly with cardiac disease or older age. Measure plasma levels above 100 mg/day and when CYP2D6 interactions warrant. Serious toxicity or suspected overdose needs urgent ECG/cardiac monitoring, not reassurance from a drug level."
+        ]
+      },
+      "source_sections": {
+        "nortripsun": [
+          "Clinical Worsening and Suicide Risk",
+          "Geriatric Use",
+          "Drugs Metabolized by P450 2D6",
+          "Usual Adult Dose",
+          "General"
+        ],
+        "nortripsol": [
+          "Clinical Worsening and Suicide Risk",
+          "Geriatric Use",
+          "Drugs Metabolized by P450 2D6",
+          "Usual Adult Dose",
+          "General"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Patient and caregiver counseling",
+      "assertions": {
+        "paragraphs": [
+          "Read the Medication Guide; report worsening mood, agitation, suicidal thoughts or unusual behavior promptly. Seek urgent care for collapse, seizure, severe palpitations, fever with rigidity/confusion, or acute painful visual changes. Avoid hazardous activities until effects are known, discuss alcohol avoidance, store securely and use the smallest clinically appropriate quantity to reduce overdose risk. Do not stop or change dose independently."
+        ]
+      },
+      "source_sections": {
+        "nortripsun": [
+          "Information for Patients",
+          "Screening Patients for Bipolar Disorder",
+          "Clinical Worsening and Suicide Risk",
+          "Serotonin Syndrome",
+          "Angle-Closure Glaucoma",
+          "ADVERSE REACTIONS"
+        ],
+        "nortripsol": [
+          "Information for Patients",
+          "Screening Patients for Bipolar Disorder",
+          "Clinical Worsening and Suicide Risk",
+          "Serotonin Syndrome",
+          "Angle-Closure Glaucoma",
+          "ADVERSE REACTIONS"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "paragraphs": [
+          "Sun/Taro 25 mg capsule: opaque ivory cap and body, marked TARO and NTP25; selected bottle of 30 NDC 51672-4002-6. This is an identification example, not a guarantee of stock or a substitute for package verification."
+        ]
+      },
+      "source_sections": {
+        "nortripsun": [
+          "HOW SUPPLIED"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Selected capsules contain 10, 25, 50 or 75 mg equivalent base. PAI oral solution contains 10 mg/5 mL and 4% alcohol; selected 473 mL bottle NDC 0121-0678-16. Confirm concentration and ingredients on the actual package before converting a prescribed milligram dose to volume."
+        ]
+      },
+      "source_sections": {
+        "nortripsun": [
+          "DESCRIPTION",
+          "HOW SUPPLIED"
+        ],
+        "nortripsol": [
+          "DESCRIPTION",
+          "HOW SUPPLIED"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Selected capsules and solution: store at 20–25°C. Capsules require a tight container with child-resistant closure; solution requires a tight, light-resistant container. Keep securely away from children and protect against accidental or intentional overdose."
+        ]
+      },
+      "source_sections": {
+        "nortripsun": [
+          "Store and Dispense",
+          "Clinical Worsening and Suicide Risk"
+        ],
+        "nortripsol": [
+          "Store and Dispense",
+          "Clinical Worsening and Suicide Risk"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "No off-label pain, migraine or smoking-cessation numerical regimen.",
+    "Pediatric approval not inferred from historical adolescent dose text.",
+    "No unsupported quantitative organ adjustment or complete PK values."
+  ],
+  "resolved_source_findings": [
+    "Historical adolescent30–50 mg/day text retained with explicit unapproved/unestablished pediatric status.",
+    "Selected oral solution4%alcohol and10mg/5mL concentration retained.",
+    "Quantitative whole-PK/organ adjustment unavailable in selected labels; no invented half-life or renal/hepatic algorithm."
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, essential safety, three hero facts, cited disclosures, four safety cards and three product cards.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending",
+    "mobile_content_precheck": "Two-column tables and natural breakable prose. Parent strict390px article bounds pending."
+  },
+  "monograph_sha256": "07f501988149d363850aa953ecaf0892a1e0b2aa2038eaecdd9dd1c1c13e9ddd",
+  "front_matter_source_map": {
+    "identity_and_facts": {
+      "nortripsun": [
+        "DESCRIPTION",
+        "HOW SUPPLIED"
+      ],
+      "nortripsol": [
+        "DESCRIPTION"
+      ]
+    },
+    "essential": {
+      "nortripsun": [
+        "Boxed warning",
+        "WARNINGS",
+        "OVERDOSAGE",
+        "CONTRAINDICATIONS"
+      ],
+      "nortripsol": [
+        "Boxed warning",
+        "WARNINGS",
+        "OVERDOSAGE",
+        "CONTRAINDICATIONS"
+      ]
+    }
+  }
+}

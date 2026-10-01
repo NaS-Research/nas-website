@@ -159,6 +159,16 @@ import { prazosin } from "./prazosin.js";
 import { ciprofloxacin } from "./ciprofloxacin.js";
 import { sildenafil } from "./sildenafil.js";
 import { ethinyl_estradiol_levonorgestrel } from "./ethinyl-estradiol-levonorgestrel.js";
+import { evolocumab } from "./evolocumab.js";
+import { mesalamine } from "./mesalamine.js";
+import { memantine } from "./memantine.js";
+import { ethinylEstradiolEtonogestrel } from "./ethinyl-estradiol-etonogestrel.js";
+import { diazepam } from "./diazepam.js";
+import { lithium } from "./lithium.js";
+import { nortriptyline } from "./nortriptyline.js";
+import { timolol } from "./timolol.js";
+import { cefdinir } from "./cefdinir.js";
+import { magnesium_salts } from "./magnesium-salts.js";
 
 export const reviewedDrugMonographs = {
   "atorvastatin": atorvastatin,
@@ -321,4 +331,14 @@ export const reviewedDrugMonographs = {
   "ciprofloxacin": ciprofloxacin,
   "sildenafil": sildenafil,
   "ethinyl-estradiol-levonorgestrel": ethinyl_estradiol_levonorgestrel,
+  "evolocumab": evolocumab,
+  "mesalamine": mesalamine,
+  "memantine": memantine,
+  "ethinyl-estradiol-etonogestrel": ethinylEstradiolEtonogestrel,
+  "diazepam": diazepam,
+  "lithium": lithium,
+  "nortriptyline": nortriptyline,
+  "timolol": timolol,
+  "cefdinir": cefdinir,
+  "magnesium-salts": magnesium_salts,
 };
