@@ -1,0 +1,534 @@
+{
+  "slug": "sacubitril-valsartan",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "A current product-specific heart-failure reference for tablets, opening-only oral pellets and labeled pharmacy suspension. All eight blueprint sections reviewed. Product-specific focused monograph; not an exhaustive adverse-event catalog.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Entresto / Entresto Sprinkle · Full prescribing information and instructions",
+      "publisher": "DailyMed / Novartis",
+      "note": "SPL version 25, effective 20260706; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=000dc81d-ab91-450c-8eae-8eb74e72296f",
+      "checked": "2026-10-01",
+      "version": "SPL version 25, effective 20260706; current public product labeling.",
+      "spl_version": "25",
+      "spl_effective_time": "20260706",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/000dc81d-ab91-450c-8eae-8eb74e72296f.xml",
+      "downloaded_xml_sha256": "ee8184bb74be2ed4f590d39af45943718a68a68908344795b6f1e51521ed0483"
+    },
+    {
+      "id": "milk",
+      "title": "Falconi et al. · Sacubitril/valsartan human milk transfer",
+      "publisher": "Frontiers in Public Health / PMC",
+      "note": "2024 original study, full public methods/results reviewed; five participants, low-dose exposure. Corrigendum indexed but PMC full page blocked by browser check; no claim of full corrigendum access.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11150817/",
+      "checked": "2026-10-01",
+      "version": "2024 May 22;12:1389513; doi:10.3389/fpubh.2024.1389513"
+    }
+  ],
+  "assertion_to_source": [
+    {
+      "section_id": "indications",
+      "card_title": "Adult indication",
+      "assertions": [
+        "Entresto reduces cardiovascular death and heart-failure hospitalization risk in adults with chronic heart failure. Benefit is most clearly evident with LVEF below normal; LVEF varies and selection requires clinical judgment. This combination is not assigned valsartan monotherapy’s hypertension or post-MI indications."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "1.1",
+            "14.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "indications",
+      "card_title": "Pediatric indication",
+      "assertions": [
+        "Labeled from age one year for symptomatic heart failure with systemic left-ventricular systolic dysfunction. It reduces NT-proBNP and is expected to improve cardiovascular outcomes; the pediatric outcome inference is not proof of an independently demonstrated mortality reduction. Efficacy below age one is unestablished."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "1.2",
+            "8.4",
+            "14.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Adults and ACE-inhibitor switching",
+      "assertions": [
+        "Usual start 49/51 mg orally twice daily, with or without food; double after 2–4 weeks to target 97/103 mg twice daily as tolerated. Start at half the usual dose (adult 24/26 mg twice daily) if not taking ACE inhibitor/ARB, previously taking low doses, eGFR <30 mL/min/1.73 m², or Child–Pugh B. A 36-hour interval is mandatory when switching FROM or TO an ACE inhibitor; stop prior ARB to avoid duplication."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.1",
+            "2.2",
+            "2.6–2.8",
+            "7.1",
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Pediatric tablet or suspension dosing",
+      "assertions": [
+        "Give twice daily and titrate every two weeks as tolerated. Below 40 kg, suspension or pellets are recommended; mg/kg below denotes the total combined ingredients. The 72/78-mg dose is three 24/26-mg tablets. Use the separate pellet bands when dispensing Sprinkle.",
+        "<40 kg | 1.6 → 2.3 → 3.1 mg/kg combined.",
+        "40 to <50 kg | 24/26 → 49/51 → 72/78 mg.",
+        "≥50 kg | 49/51 → 72/78 → 97/103 mg."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.3 / Table 1",
+            "2.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Pediatric Sprinkle pellet dosing",
+      "assertions": [
+        "Each dose below is given twice daily, titrated every two weeks. Use complete capsule contents; never subdivide pellets. Below 13 kg use suspension at the combined mg/kg regimen; ≥50 kg use the tablet table.",
+        "13 to <19 kg | 12/12 → 18/18 → 24/24 mg (2 → 3 → 4 capsules of 6/6 mg).",
+        "19 to <26 kg | 18/18 → 24/24 → 30/32 mg (3 → 4 of 6/6 mg; then 2 of 15/16 mg).",
+        "26 to <34 kg | 24/24 → 30/32 → 45/48 mg (4 of 6/6 mg; then 2 → 3 of 15/16 mg).",
+        "34 to <50 kg | 30/32 → 45/48 → 60/64 mg (2 → 3 → 4 of 15/16 mg)."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.3 / Table 2",
+            "2.5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Reduced pediatric starting doses",
+      "assertions": [
+        "Use half the usual starting dose for absent/low prior ACE/ARB therapy, severe renal impairment or Child–Pugh B, then follow label titration. Specifically, pediatric patients weighing 40–50 kg who meet these criteria start combined 0.8 mg/kg twice daily using suspension or pellets. Select actual measurable whole-pellet or suspension doses using the exact label; do not split an unscored tablet or partly empty a capsule to guess a dose."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.6–2.8"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Administration and pharmacy suspension",
+      "assertions": [
+        "Sprinkle capsules must be opened onto 1–2 teaspoons soft food; consume all immediately without chewing/crushing pellets. Discard shells; do not swallow capsules or give pellets through enteral tubes. The label’s pharmacy-prepared suspension is combined 4 mg/mL (sacubitril/valsartan 1.96/2.04 mg/mL): eight 49/51-mg tablets with 60 mL Ora-Plus and 140 mL Ora-Sweet SF, prepared by the full labeled trituration procedure. Shake before measuring. This is not a home water mixture."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.4",
+            "2.5",
+            "Instructions for Use"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Warnings and precautions",
+      "assertions": [
+        "For angioedema, stop immediately, treat and monitor the airway; tongue/throat involvement can be fatal. Do not re-administer. Avoid hereditary angioedema; Black patients had higher observed angioedema rates. Correct volume/salt depletion or use a lower start; persistent hypotension may require changing diuretics/other BP drugs, reducing dose or temporary interruption. Monitor creatinine and potassium, especially with renal artery stenosis, severe renal impairment, diabetes or other hyperkalemia risk. Clinically significant renal decline or hyperkalemia may require interruption/reduction."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "5.2–5.5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Contraindications",
+      "assertions": [
+        "Ingredient hypersensitivity; prior ACE-inhibitor/ARB-related angioedema; concomitant ACE inhibitor or use within 36 hours of switching either direction; concomitant aliskiren in diabetes. Severe hepatic use is not recommended; hereditary angioedema is directed against in warnings. Preserve these classifications."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "4",
+            "5.2",
+            "8.6"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Boxed warning: fetal toxicity",
+      "assertions": [
+        "Renin–angiotensin-system drugs can injure or kill the developing fetus. Discontinue as soon as pregnancy is detected and arrange alternative treatment. Discuss pregnancy plans before prescribing."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Boxed warning",
+            "5.1",
+            "8.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Adverse reactions and overdose",
+      "assertions": [
+        "Common label reactions include hypotension, hyperkalemia, cough, dizziness and renal failure; serious allergy is reported postmarketing. Trial run-in excluded some intolerant patients, so randomized rates may underestimate practice. Overdose can cause hypotension requiring supportive treatment. High protein binding makes hemodialysis unlikely to remove the components effectively."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "6",
+            "10"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "RAAS medicines and potassium",
+      "assertions": [
+        "ACE-inhibitor co-use is contraindicated and requires the 36-hour switch interval. Avoid another ARB because valsartan is already present. Aliskiren is contraindicated with diabetes and should be avoided with eGFR <60. Potassium-sparing diuretics, supplements and potassium salt substitutes can increase potassium; monitor and coordinate indicated heart-failure combinations rather than assuming a universal ban."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "7.1",
+            "7.2",
+            "2.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "NSAIDs, lithium and BP effects",
+      "assertions": [
+        "NSAIDs/COX-2 inhibitors can worsen renal function, especially in older, volume-depleted or renal-impaired patients; monitor renal function. Lithium levels/toxicity can increase; monitor lithium if combined. Other BP-lowering therapies and sildenafil can add BP reduction; reconcile symptoms and volume status. Minimal CYP metabolism does not remove pharmacodynamic interaction risk."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "7.3",
+            "7.4",
+            "5.3",
+            "12.2",
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pregnancy and lactation",
+      "assertions": [
+        "Fetal renal injury, oligohydramnios, lung/skull effects, hypotension and death can follow RAAS exposure, particularly later pregnancy. Stop when detected; exposed pregnancy/neonate requires specialist assessment. The label lacks human milk/infant-effect data and recommends against breastfeeding during treatment. A small 2024 study of five mothers taking 24/26 mg twice daily found low sacubitril/metabolite transfer and undetectable valsartan in sampled milk. Only two reported continued breastfeeding without observed infant symptoms. These limited data do not establish infant safety, full-dose exposure or long-term outcomes; they do not change the U.S. label recommendation. A specialist should assess any alternative lactation plan."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "8.1",
+            "8.2"
+          ]
+        },
+        {
+          "source_id": "milk",
+          "sections": [
+            "Methods",
+            "Results",
+            "Limitations"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Children and older adults",
+      "assertions": [
+        "The labeled pediatric group is age 1 to <18 with systemic LV systolic dysfunction; data below one year are insufficient. Use weight-based formulation schedules. Trials found no overall older-adult safety/efficacy difference, but kidney function, potassium, BP and volume status remain central to selection."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "8.4",
+            "8.5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Renal and hepatic impairment",
+      "assertions": [
+        "No adjustment for mild/moderate renal impairment; eGFR <30 uses half the usual starting dose with subsequent tolerated titration. Child–Pugh A needs no adjustment; B uses half-start; C is not recommended and unstudied. High protein binding makes dialysis removal unlikely; the label supplies no separate dialysis dose algorithm."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.7",
+            "2.8",
+            "8.6",
+            "8.7",
+            "10"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Mechanism and biomarkers",
+      "assertions": [
+        "Sacubitril is a prodrug converted to LBQ657, which inhibits neprilysin and raises relevant vasoactive peptides; valsartan blocks AT1-mediated angiotensin effects and aldosterone release. BNP is a neprilysin substrate whereas NT-proBNP is not; label treatment decreased NT-proBNP while BNP increased in PARADIGM-HF. Interpret biomarker trends in that context."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "12.1",
+            "12.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Pharmacokinetics and equivalence",
+      "assertions": [
+        "Entresto valsartan 26, 51 and 103 mg has exposure equivalent to 40, 80 and 160 mg in other marketed valsartan tablets, respectively; do not substitute by equal milligrams. Sacubitril is converted by esterases; CYP metabolism is minimal. Components are 94–97% protein-bound. LBQ657 and valsartan half-lives are approximately 11.5 and 9.9 hours; urine/fecal elimination contributes. Food does not require a dose adjustment."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Monitoring",
+      "assertions": [
+        "Verify HF phenotype, pediatric weight/formulation, previous RAAS dose and ACE-inhibitor timing. Assess BP/orthostasis, volume status, creatinine/eGFR and potassium before and during titration; periodically monitor potassium and act on clinically important changes. Review pregnancy possibility, angioedema history and interactions. The label does not prescribe one universal laboratory interval for every patient."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2",
+            "4",
+            "5",
+            "7"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Patient counseling",
+      "assertions": [
+        "Take twice daily as prescribed. Avoid doubling a missed dose; take when remembered unless near the next. Seek emergency help for facial/tongue/throat swelling or breathing difficulty and never restart after angioedema. Report pregnancy promptly, significant dizziness, dehydration or reduced urine. Check OTC NSAIDs and potassium salts with the clinician. Follow exact suspension/pellet handling and dose measurement instructions."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "17",
+            "Patient information",
+            "Instructions for Use"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Representative products",
+      "assertions": [
+        "Novartis Entresto 49/51 mg tablets are pale-yellow unscored ovaloid tablets marked NVR/L1; bottle of 60 NDC 0078-0777-20. Sprinkle 6/6 mg capsules have a white cap marked 04 and transparent NVR body with arrows; bottle of 60 NDC 0078-1231-20. These product identities do not describe all generic packaging."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "3",
+            "16"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Dosage forms and strengths",
+      "assertions": [
+        "Oral tablets: 24/26, 49/51 and 97/103 mg sacubitril/valsartan. Oral pellets within opening-only capsules: 6/6 and 15/16 mg. Pharmacy suspension: combined 4 mg/mL using the specified tablet/vehicles. Label dose expressions can be combined mg/kg or individual-component mg/mg; they must not be confused."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "3",
+            "2.3–2.5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Storage and handling",
+      "assertions": [
+        "Tablets and Sprinkle: 20–25°C, excursions 15–30°C; protect from moisture. Labeled pharmacy suspension: up to 15 days, not above 25°C, do not refrigerate, shake before each use. Consume prepared pellet-food mixtures immediately and discard empty shells."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "16",
+            "2.4",
+            "2.5",
+            "Instructions for Use"
+          ]
+        }
+      ]
+    }
+  ],
+  "material_errors": [],
+  "gaps": [],
+  "limitations": [
+    "Other manufacturers/formulations, off-label hypertension and infant treatment are excluded. Detailed HF combination selection requires an individualized treatment plan.",
+    "Severe hepatic and dialysis-specific dose algorithms are not established here. Human milk study is small and low-dose; no extrapolated high-dose safety or infant-outcome certainty.",
+    "Original full public human milk article reviewed; indexed corrigendum PMC11600444 blocked by browser challenge, so no claim of full corrigendum access. Only directly supported study design/qualitative exposure findings used; no corrigendum-sensitive policy assertion or numerical RID is reproduced."
+  ],
+  "source_discrepancies": [
+    {
+      "issue": "Current label states no human milk information and advises against breastfeeding; subsequent small primary human milk study exists.",
+      "resolution": "Label restriction retained and clearly distinguished from limited low-dose study; no proven-infant-safety or highest-dose assumption."
+    }
+  ],
+  "regulatory_identity": [
+    {
+      "source_file": "entresto",
+      "label_approval_records": [
+        {
+          "application": {
+            "extension": "NDA207620",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "displayName": "NDA",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1"
+          }
+        },
+        {
+          "application": {
+            "extension": "NDA207620",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "displayName": "NDA",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1"
+          }
+        },
+        {
+          "application": {
+            "extension": "NDA207620",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "displayName": "NDA",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1"
+          }
+        },
+        {
+          "application": {
+            "extension": "NDA207620",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "displayName": "NDA",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1"
+          }
+        },
+        {
+          "application": {
+            "extension": "NDA207620",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "displayName": "NDA",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1"
+          }
+        },
+        {
+          "application": {
+            "extension": "NDA218591",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "displayName": "NDA",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1"
+          }
+        },
+        {
+          "application": {
+            "extension": "NDA218591",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "displayName": "NDA",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1"
+          }
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "schema": "validateMonograph: zero errors",
+    "blueprint_sections": "Exact eight IDs/titles/order, four Safety core cards, three Product core cards and three hero tuples.",
+    "mobile_content": "Two-column tables, short spaced headings and wrapping prose; rendered QA delegated to release owner.",
+    "source_method": "Current public full label clinical sections reviewed; product-specific dose/indication and contraindication distinctions mapped. No paywalled access claimed."
+  }
+}

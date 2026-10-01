@@ -1,0 +1,730 @@
+{
+  "reviewDate": "2026-10-01",
+  "scope": "Independent targeted critical-assertion primary-source review. Only enumerated assertions independently verified; not exhaustive second clinical signoff, browser QA or build verification.",
+  "status": "complete_targeted_review",
+  "profiles": [
+    {
+      "drug": "sacubitril-valsartan",
+      "fileSha256": "456dfee117bae78130ee45e744cbdef71dc6b27b8d741a68f750b8618ec04356",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Adult49/51mg BID→97/103 after2–4wk; half24/26 start absent/low priorACEARB,eGFR<30 orChildB. Mandatory36h switch FROM OR TO ACE; no priorARB duplication.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=000dc81d-ab91-450c-8eae-8eb74e72296f",
+          "sourceSection": "Sections2.1–2.2,2.6–2.8,4",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Pediatric>=1 BID every2wk: <40kg combined1.6→2.3→3.1mg/kg;40–<50 component24/26→49/51→72/78;>=50 49/51→72/78→97/103. mg/kg COMBINED;72/78 three24/26 tablets.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=000dc81d-ab91-450c-8eae-8eb74e72296f",
+          "sourceSection": "Sections1.2,2.3 Table1",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Sprinkle13–<19 components12/12→18/18→24/24;19–<26 18/18→24/24→30/32;26–<34 24/24→30/32→45/48;34–<50 30/32→45/48→60/64. Below13 suspension; >=50tablets. Fullcapsules notsubdivide.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=000dc81d-ab91-450c-8eae-8eb74e72296f",
+          "sourceSection": "Section2.3 Table2",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Reduced pediatric40–50kg0.8combinedmg/kg BID for specific half-start criteria; no whole-pellet rounding algorithm invented. Suspensioneight49/51 tablets+60OraPlus+140OraSweetSF→200mLcombined4mg/mL (1.96/2.04); pelletssoftfood1–2tsp immediate nochew/no tubes/no swallowcapsule.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=000dc81d-ab91-450c-8eae-8eb74e72296f",
+          "sourceSection": "Sections2.4–2.8",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Formal ingredient allergy/ACEARBangioedemahistory/ACE36h/aliskirendiabetes. ChildA noadjustBhalfCnotrecommended; renal>=30 noadjust<30halfstart; monitorCr/K/BP, discontinueangioedemaneverreadminister/fetalboxstopwhenpregnant.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=000dc81d-ab91-450c-8eae-8eb74e72296f",
+          "sourceSection": "Sections4–5,8.6–8.7",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning: fetal toxicity",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [
+        {
+          "status": "independent-review-not-enumerated",
+          "note": "Milk-study original and blocked corrigendum were not independently re-reviewed in this targeted record. Author transparently distinguishes limited original study from label against breastfeeding and does not claim full corrigendum access. No independent verification of those study claims is asserted here."
+        }
+      ],
+      "retainedEvidence": {
+        "entresto": {
+          "path": "/tmp/nas-drug-sources/entresto.xml",
+          "sha256": "ee8184bb74be2ed4f590d39af45943718a68a68908344795b6f1e51521ed0483"
+        }
+      }
+    },
+    {
+      "drug": "valproate",
+      "fileSha256": "4b0992ed848ff5ad2c269cc39959f35df34a69ababec9bb258f74a8e37a460f9",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Complexpartial adult/age>=10 initial10–15mg/kg/DAY,weeklyincrease5–10mg/kg/DAY; absence15 initial withsameincrement; maxrecommended60mg/kg/DAY/divided>250mg/day, usualtotalepilepsy50–100mcg/mL not universal fixedgoal.",
+          "sourceId": "dr",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=08a65cf4-7749-4ceb-6895-8f4805e2b01f",
+          "sourceSection": "Section2.2",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "AdultmaniaDR750mg/DAY divided,troughtrial50–125max60mg/kg/DAY; migraineDR250BIDbenefitupto1000/day, nohigherdoseefficacy.",
+          "sourceId": "dr",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=08a65cf4-7749-4ceb-6895-8f4805e2b01f",
+          "sourceSection": "Sections2.1,2.3",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "AdultmaniaER25mg/kg ONCEdaily,trough85–125max60; migraine500daily1week→1000daily. Epilepsyconversion age>=10DR→ER8–20%higher exactstrengthtable,nofactorrecommendationaboveDR3125/day and no equalmilligraminterchange.",
+          "sourceId": "er",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0dc024ce-efc8-4690-7cb5-639c728fccac",
+          "sourceSection": "Sections2.1,2.3–2.4",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Selected replacement60min infusion<=20mg/min and >14day IVunstudied; fasterinfusionsafetyobservations do not establish efficacy/statusprotocol.",
+          "sourceId": "iv",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8d5fc1c1-d3c0-497e-971b-6c4dba9a3fad",
+          "sourceSection": "Section2.1",
+          "access": "Retained full current primary IV SPL and relevant section independently read.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Formal hepatic/significantdysfunction,knownPOLG,suspectedPOLGunder2,UCD,hypersensitivity; migrainepregnancy/noeffectivecontraceptioncontra doesnotmakeall epilepsy pregnancy formalcontra. Symptomatic hyperammonemia mayoccur withnormalLFT,checkammonia anddiscontinue/treat; topiramateencephalopathyinteraction.",
+          "sourceId": "dr",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=08a65cf4-7749-4ceb-6895-8f4805e2b01f",
+          "sourceSection": "Sections4,5.6,5.9–5.10",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning: hepatotoxicity, fetal harm and pancreatitis",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "depakote": {
+          "path": "/tmp/nas-drug-sources/depakote.xml",
+          "sha256": "284a94a955c798bd9c3a589b06969cf89c9a69889beb8517fa73db20a4b76806"
+        },
+        "depakote-er": {
+          "path": "/tmp/nas-drug-sources/depakote-er.xml",
+          "sha256": "01cc7058e72eac1be1ac7749c69d0b01897923779a6e84de1e75d23ff57bee34"
+        },
+        "valproate-iv": {
+          "path": "/tmp/nas-drug-sources/valproate-iv.xml",
+          "sha256": "0df5291f95b5508dd5a4fee594b99cf9818c2ddeaa8ee019f47558042340a373"
+        }
+      }
+    },
+    {
+      "drug": "nebivolol",
+      "fileSha256": "16fad4b7778175ae768448cc1d37e850997693aae77e52bb3e50c0ba71c707bb",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "HTNmost5mgQDfoodoptional titrateq2wkmax40DAY;CrCl<30start2.5QDslow/dialysisunstudied;moderatehepstart2.5QD/severeChild>PughBformalcontra;nogeneralageorpoorCYP2D6doseadjust.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b8ad213-1dc8-454e-a524-075685c0e1a8",
+          "sourceSection": "Sections2,4",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Taper1–2wkwhenpossible withobservation;fullPI17nextscheduledONLY versus appendedleafletASAPunlessclose bothpreserved/no universalcatchup.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b8ad213-1dc8-454e-a524-075685c0e1a8",
+          "sourceSection": "Sections5.1,17;patientleaflet",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Formal severebrady/heartblock>first/cardiogenicshock/decompensatedHF/sicksinusunlesspermpacer/severehep/hypersensitivity;HTNapprovalnotHF/postMIeventtrialclaim.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b8ad213-1dc8-454e-a524-075685c0e1a8",
+          "sourceSection": "Sections1,4",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "bystolic": {
+          "path": "/tmp/nas-drug-sources/bystolic.xml",
+          "sha256": "d2823e0506d856b58f6fe0ae3df868b92fdc54cdf85999b2568e0b60a3fed7bb"
+        }
+      }
+    },
+    {
+      "drug": "acyclovir",
+      "fileSha256": "16ab94ce7ca63281499d9ead2e2b0ea34ce2730526876a5084223a009f3dbdc9",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Chickenpox>=2 20mg/kgPERDOSE QID5days;adult/OVER40kg800QID5;200mg/5mL40mg/mL,not20mg/kgDAY.",
+          "sourceId": "liquid",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8208711c-18ba-4615-b932-3c0bb7e6efae",
+          "sourceSection": "Dosage oral",
+          "access": "Retained full current primary suspension SPL XML and relevant sections independently read.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "OralindexedCrClmL/min/1.73m2:200q4five/day>10unchanged/0–10200q12;400q12>10unchanged/0–10200q12;800q4five/day>25same/10–25800q8/0–10800q12. Not universalnewCDC-adjustmentalgorithm.",
+          "sourceId": "liquid",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8208711c-18ba-4615-b932-3c0bb7e6efae",
+          "sourceSection": "Dosage renal table",
+          "access": "Retained full current primary suspension SPL XML and exact table independently read.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Neonatal20mg/kgPMA>=34q8/<34q12 EACH1hinfusion21daylabel. Older3mo renalindexed>50fullq8/>25–50fullq12/>10–25fullq24/<=10HALFq24.",
+          "sourceId": "iv",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b1bb347d-74f4-4976-8450-a375a271718f",
+          "sourceSection": "Dosage neonatal and Table5",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "IV50mg/mLconcentrate diluted allinfuse>=1h/noIVbolus;obeseadultsIBW;label10dayencephalitis explicitly not contemporaryuniversalstop.",
+          "sourceId": "iv",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b1bb347d-74f4-4976-8450-a375a271718f",
+          "sourceSection": "Dosage administration/HSVencephalitis",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Current oralformal clinicallysignificanthypersensitivity includingSCARs toacyclovir/valacyclovir/components;AGEP/DRESS/SJS-TEN painfulmucosal/progressiverashSTOP.",
+          "sourceId": "liquid",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8208711c-18ba-4615-b932-3c0bb7e6efae",
+          "sourceSection": "Contraindications/Warnings",
+          "access": "Retained full current primary suspension SPL XML and relevant sections independently read.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "CurrentCDCfirst400TID7–10extendifincomplete/supp400BID/episodic800BID5orTID2;encephalitis14–21IVdays separatelylabel10days;neonatal14skin21CNS/dissemination clinicianPMA/renalreconciliation explicit.",
+          "sourceId": "cdc",
+          "sourceUrl": "https://www.cdc.gov/std/treatment-guidelines/herpes.htm",
+          "sourceSection": "First Episode;Episodic;Severe Disease;Neonatal",
+          "access": "Current official CDC full public page and retained primary HTML independently read.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [
+        {
+          "status": "independent-review-not-enumerated",
+          "note": "Cream/ointment/Sitavig local dosing not independently re-reviewed in this targeted record; selected systemic critical dose, indexed renal units, neonatal intervals, SCARs and current CDC duration distinctions reviewed."
+        }
+      ],
+      "retainedEvidence": {
+        "acyclovir-liquid": {
+          "path": "/tmp/nas-drug-sources/acyclovir-liquid.xml",
+          "sha256": "6c0e8e17222e0ec5dfc1eb3131a0eb8a72c32e329403e17a1b4060b232729dd0"
+        },
+        "acyclovir-iv-full": {
+          "path": "/tmp/nas-drug-sources/acyclovir-iv-full.xml",
+          "sha256": "609e72fe5c267c8aba0acf7a736add221fc2b45a9dd55396191e0ddcea57e2b9"
+        }
+      }
+    },
+    {
+      "drug": "nirmatrelvir-ritonavir",
+      "fileSha256": "c153973ea0b8e42097edf0c1f9a8abd0bd30a4add19d0381d65c4cd67f57250f",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Currentadultapprovalhighriskmildmoderate,start<=5symptomdays,5day300nirmatrelvir+100ritonavirBID;>=30<60eGFR150+100BID;severe<30inclHDday1300+100ONCE then days2–5150+100ONCEdaily AFTERHD. Notlegacyrenalcontra.",
+          "sourceId": "pi",
+          "sourceUrl": "https://labeling.pfizer.com/ShowLabeling.aspx?id=19599",
+          "sourceSection": "Sections1,2.1–2.3",
+          "access": "Current full official manufacturer PI directly opened and retained full HTML/text independently read.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "CurrentFebruary2026EUAhighrisk>=12AND>=40kg,pediatricauthorizationnotFDAapproval;same severe-renalday1/day2–5frequencytablesconfirmed.",
+          "sourceId": "eua",
+          "sourceUrl": "https://www.fda.gov/media/155050/download?attachment=",
+          "sourceSection": "Authorization;Sections2.1–2.3",
+          "access": "Current full official44pageEUA PDF directly opened and retained complete extracted text relevant sections independently read.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "ChildPughABnoadjust/Cnotrecommended;within8hmissedtake/>8skipnodouble;bothingredientswhole.",
+          "sourceId": "pi",
+          "sourceUrl": "https://labeling.pfizer.com/ShowLabeling.aspx?id=19599",
+          "sourceSection": "Sections2.1,2.4",
+          "access": "Current full official manufacturer PI and retained full text independently read.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "BoxedCYP3Ainteractionreview;currentformalstronginducers/CYP3Adangeroussubstrates inclsuzetrigine;PAHsildenafilcontra notinventeduniversalEDrule;colchicinecontraRENAL/HEPimpairment.",
+          "sourceId": "pi",
+          "sourceUrl": "https://labeling.pfizer.com/ShowLabeling.aspx?id=19599",
+          "sourceSection": "Sections4,7.3",
+          "access": "Current full official manufacturer PI and retained exact interaction table independently read.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Lovastatin/simvastatinhold>=12hbefore THROUGH5daycoursePLUS5daysafter;atorvastatinduringconsiderholdNOTbeforeafter;ethinylestradioladditionalnonhormonalduringuntilonemenstrualcycleafter.",
+          "sourceId": "pi",
+          "sourceUrl": "https://labeling.pfizer.com/ShowLabeling.aspx?id=19599",
+          "sourceSection": "Section7.3",
+          "access": "Current full official manufacturer PI and retained exact interaction table independently read.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Pediatric EUA serious events/medication errors potentially related reported within7calendar days; pharmacist refers for insufficient organ/interaction information, needed medication modification, inappropriate option or infeasible monitoring.",
+          "sourceId": "eua",
+          "sourceUrl": "https://www.fda.gov/media/155050/download?attachment=",
+          "sourceSection": "Sections1,6.4",
+          "access": "Retained full current FDA43-page EUA PDF extracted text independently read; manufacturer44-page mirror access separately recorded.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed-warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "paxlovid-pfizer-pi.html": {
+          "path": "/tmp/nas-drug-sources/paxlovid-pfizer-pi.html",
+          "sha256": "cfcb0ff35b984c7bf15a9a5aeaaabc9ef5a9504a26a2da3695573ba34eba64cd"
+        },
+        "paxlovid-pfizer-eua.pdf": {
+          "path": "/tmp/nas-drug-sources/paxlovid-pfizer-eua.pdf",
+          "sha256": "625730d2ca4b0600e19b899f596f09545e297774f27767af4af99be64d37ff01"
+        },
+        "currentFDAEUA": {
+          "path": "/tmp/nas-drug-sources/paxlovid-fda-eua.pdf",
+          "sha256": "ef4944b44ee40cca6e559456e897b8fc67c2347cba958aa3a5a7dcf1ae9fd6a1"
+        }
+      }
+    },
+    {
+      "drug": "amlodipine-benazepril",
+      "fileSha256": "7ae105e0d86c695eeb6fad6ce21ee63dffa2b5344210d8ca65341a8ae3e59dbb",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Initial2.5amlodipine/10benazeprilQDaftermonotherapyconditions;max10/40QD/mosteffect2wknotmandatorytitrate;matchedreplacement. Severe renal5mgbenazeprilunavailablefixedcomboNOTrecommended,PKCrCl<=30exposurehigher.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=27b0c628-820a-48bf-a411-86c0ebd4cc8d",
+          "sourceSection": "Sections2.1,8.7,12.3",
+          "access": "Retained full current selected generic primary SPL XML and relevant nested clinical sections independently read.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "FormalpriorangioedemaWITHORWITHOUTACE/excipientallergy;aliskirendiabetescontra;neprilysincontra36hBOTHswitchdirections;fetalBOXstopdetectedpregnancy.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=27b0c628-820a-48bf-a411-86c0ebd4cc8d",
+          "sourceSection": "Section4;Boxed Warning",
+          "access": "Retained full current selected generic primary SPL XML and relevant sections independently read.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "ExactpatientmissedASAPbut>12hnextregular/noDOUBLE,ingredientorder preserved.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=27b0c628-820a-48bf-a411-86c0ebd4cc8d",
+          "sourceSection": "Patient Information",
+          "access": "Retained full current selected generic primary SPL XML patient instructions independently read.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Exposure requires fetal/newborn assessment; delayed oligohydramnios does not exclude prior irreversible injury.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=27b0c628-820a-48bf-a411-86c0ebd4cc8d",
+          "sourceSection": "Section8.1",
+          "access": "Retained full current primary SPL XML pregnancy clinical considerations independently read.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed-warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "amlodipine-benazepril-current": {
+          "path": "/tmp/nas-drug-sources/amlodipine-benazepril-current.xml",
+          "sha256": "acd53174aa9da7e779824d631f48709a48346a37bdcd7a8fcd10e299452a7d9a"
+        }
+      }
+    },
+    {
+      "drug": "morphine",
+      "fileSha256": "b521441f5817972df3904d921e979a850aa70aec93949e9ee39260fac83cf271",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Oral solution adults start10–20mgq4PRN; pediatric>=2 only2/4mg/mL0.15–0.3mg/kgPERDOSEq4PRNinitialmax20mg;20mg/mL ONLY opioid-tolerant adult. Prescription mg ANDmL/concentration/metric syringe.",
+          "sourceId": "morphsol",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ca359246-4674-4b32-b8b2-673d32b7112f",
+          "sourceSection": "Sections2.1,2.4",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "IRtablet adults15–30mgq4PRN; pediatric>=50kg able swallow15mgq4PRNinitialmax30;below50strengths cannot deliver recommended dose.",
+          "sourceId": "morphir",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3c847554-3b4b-4d24-a145-2ef7e9b83699",
+          "sourceSection": "Section2.3",
+          "access": "Retained full current primary SPL XML and exact extracted clinical sections independently read.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Actavis ERstartnontolerant30mgq24ONLY/titrate3–4days/90and120caps tolerant;1600DAY fumaricacid ceiling is not safety target. Applesaucewholepellets/noNGorgastrictube.",
+          "sourceId": "morphcap",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2da87bfa-11fd-43e3-8fef-d16ebeb15680",
+          "sourceSection": "Sections2.1,2.3–2.6",
+          "access": "Retained full current primary SPL XML and relevant clinical sections independently read.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Upsher ERnaiveIRfirst;not-tolerant30mgq24;establishedq12orq24;100caps/>60single/>120DAYtolerance;1–2daytitration;applesauce/Gtube matchedinstructions NO NG.",
+          "sourceId": "morphcapk",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=97948a8f-7d1b-4614-b11d-e944cf56590b",
+          "sourceSection": "Sections2.1,2.3–2.6",
+          "access": "Retained full current primary SPL XML including nested initial-dose sections independently read.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Single specialist lumbar epidural5mg,ifinadequate1h1–2increments max10/24h;intrathecal0.2–1mg SINGLE max2mL0.5or1mL1mg/mL/no repeat/no continuouspump;>=24hstaffed observation.",
+          "sourceId": "duramorph",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ebb18761-e5c4-4238-bb84-f9549f500210",
+          "sourceSection": "Sections2.4–2.5;Boxed neuraxial warning",
+          "access": "Retained full current primary SPL XML and relevant clinical sections independently read.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "ContinuousneuraxialONLY10/25mg/mL notsingleIV/IM/SCorbolus;epiduralnon-tolerant3.5–7.5DAY/tolerant4.5–10DAY;intrathecal0.2–1DAYnon/1–10DAYtolerant;>20DAYcaution/testdosehospital>=24hobserve.",
+          "sourceId": "infumorph",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db9ac9e3-d761-4a99-9f34-4946ebe8f255",
+          "sourceSection": "Sections2.2–2.5;Boxed neuraxial warning",
+          "access": "Retained full current primary SPL XML and relevant clinical sections independently read.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Selected ER capsule label explicitly prohibits alcohol-containing beverages/medicines because exposure can increase and produce fatal overdose. Applies to both selected capsule products.",
+          "sourceId": "morphcap",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2da87bfa-11fd-43e3-8fef-d16ebeb15680",
+          "sourceSection": "Boxed Warning: Interaction with Alcohol",
+          "access": "Retained full current primary SPL nested boxed-warning text independently read.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Selected ER capsule label explicitly prohibits alcohol-containing beverages/medicines because exposure can increase and produce fatal overdose. Applies to both selected capsule products.",
+          "sourceId": "morphcapk",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=97948a8f-7d1b-4614-b11d-e944cf56590b",
+          "sourceSection": "Boxed Warning: Interaction with Alcohol",
+          "access": "Retained full current primary SPL nested boxed-warning text independently read.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [
+        {
+          "status": "independent-review-not-enumerated",
+          "note": "This targeted record does not independently reverify all10author sources, current FDA MSContin/generic product status, all IV dose/concentration claims or complete opioid organ/interaction sections. Enumerated oral/neuraxial critical regimen distinctions independently checked only."
+        }
+      ],
+      "retainedEvidence": {
+        "morphsol": {
+          "path": "/tmp/nas-drug-sources/morphsol.xml",
+          "sha256": "8445c79f278df88ab3ceaaf998b5ae6137856c910c4e99097d00ab9f02412445"
+        },
+        "morphir": {
+          "path": "/tmp/nas-drug-sources/morphir.xml",
+          "sha256": "f9ddf0344c2713a3673a1e6ffbf7bf910ff20e453ddf9481e56bfeacc6229158"
+        },
+        "morphcap": {
+          "path": "/tmp/nas-drug-sources/morphcap.xml",
+          "sha256": "fae58a903b96ef9f80635ea72fb5af6408787fc114e71b33ccffc9105d07442d"
+        },
+        "morphcapk": {
+          "path": "/tmp/nas-drug-sources/morphcapk.xml",
+          "sha256": "58526b804f22bc8e88827e24f3c9d8847141a9e33fefcd6a028a10f9b0d0e40f"
+        },
+        "duramorph": {
+          "path": "/tmp/nas-drug-sources/duramorph.xml",
+          "sha256": "ba0e44707e04fd66c1fee74863eeefc3a164d10c377589f143ed5dd4cdfc4f65"
+        },
+        "infumorph": {
+          "path": "/tmp/nas-drug-sources/infumorph.xml",
+          "sha256": "be41d5da57b7d48e4793d39800ac096dfc9b59b0e50b5a8ae1905e13d7c43ce2"
+        }
+      }
+    },
+    {
+      "drug": "doxazosin",
+      "fileSha256": "3ded39515b2cb5f558e2077d5e5da94ac91eee808acd8d0e592b88d1694fb809",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "IR1mgQDstart BOTHBPH/HTN;BPH1–2wksteps2/4/8max8DAY versusHTNmax16DAY;BP>=6hfirst/increase/restartinitialafterseveraldays.",
+          "sourceId": "doxir",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e1f5e49-2da1-43ab-9795-228a8bcc5a82",
+          "sourceSection": "Sections2.1–2.3",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "XL BPHONLY4mgQDwithbreakfast→8maxafter3–4wk;wholeNOcrush/split;IRtoXLlowest4SKIPfinaleveningIR;severaldaysinterruptionrestart4.",
+          "sourceId": "doxxl",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=355bcdce-0481-48ba-8ebd-2009106aaf77",
+          "sourceSection": "Sections1,2.1–2.2",
+          "access": "Retained full current primary SPL XML and relevant clinical sections independently read.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "PDE5 additivehypotensionstartlowestPDE5dose not universalspacing;noformalhepatic/GIcontra inventedfromwarnings.",
+          "sourceId": "doxxl",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=355bcdce-0481-48ba-8ebd-2009106aaf77",
+          "sourceSection": "Sections2.3,4–5",
+          "access": "Retained full current primary SPL XML and relevant clinical sections independently read.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "doxir": {
+          "path": "/tmp/nas-drug-sources/doxir.xml",
+          "sha256": "f988c63d09e25d740bd0fa0a73f44abca19ae809cc73c3c4b93148c44e8bcccc"
+        },
+        "doxxl": {
+          "path": "/tmp/nas-drug-sources/doxxl.xml",
+          "sha256": "b8d22d727aa416b6130cf156419088d861a70eab4352902a8f26e99f9ca88d74"
+        }
+      }
+    },
+    {
+      "drug": "benazepril",
+      "fileSha256": "454f2fd62258735fb01491760a0c358aeac36e433a486a9fe1a1eee7eb6ad346",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Adult initial 10 mg once daily without a diuretic or 5 mg with a diuretic; usual 20–40 mg/day in one or two equal doses. 80 mg/day has limited experience and is not presented as a routine ceiling. Pediatric age 6+ initial 0.2 mg/kg once daily, above 0.6 mg/kg or 40 mg/day unstudied.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2abb091b-a53e-46b0-9b84-e5ee8f2bdd8e",
+          "sourceSection": "Sections 2.1, 8.3",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Adult renal section 2.2 uses indexed GFR <30 for 5 mg initiation and maximum 40 mg/day; section 8.6 uses dialysis/nonindexed CrCl ≤30. Pediatric >30 highlights versus <30 full-text avoidance is explicitly flagged rather than assigning the exact 30 boundary automatically.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2abb091b-a53e-46b0-9b84-e5ee8f2bdd8e",
+          "sourceSection": "Sections 2.2, 8.3, 8.6",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Pharmacy preparation: fifteen 20 mg tablets, 75 mL Ora-Plus, shake two minutes, stand one hour, shake one minute, add 75 mL Ora-Sweet; final 150 mL of 2 mg/mL. Amber PET child-resistant container, 2–8°C up to 30 days and shake before every use.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2abb091b-a53e-46b0-9b84-e5ee8f2bdd8e",
+          "sourceSection": "Section 2.3",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Formal hypersensitivity to benazepril or another ACE inhibitor, angioedema with or without prior ACE exposure, concurrent neprilysin inhibitor/36-hour sacubitril switch restriction, and aliskiren in diabetes; fetal-toxicity boxed warning kept distinct.",
+          "sourceId": "generic",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bb91223e-ffa5-4a3a-b191-fe121250c20c",
+          "sourceSection": "Sections 4, boxed warning",
+          "access": "Retained full selected primary SPL XML and relevant extracted sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "benazepril-lotensin": {
+          "path": "/tmp/nas-drug-sources/benazepril-lotensin.xml",
+          "sha256": "5ff8346c65efb8853942c68f9989ea4e654a47c2b450edcda5652bb0eb070dd0"
+        },
+        "benazepril-generic": {
+          "path": "/tmp/nas-drug-sources/benazepril-generic.xml",
+          "sha256": "4e0b575ada775db008c905b6e754b5e5972a521a6d5a3b3e35355d0cc70a7bc0"
+        }
+      }
+    },
+    {
+      "drug": "brimonidine",
+      "fileSha256": "e334a7741e692837556f629cfcc4f2f3eca0bff58ec80d7551e5d5c99294863b",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Selected glaucoma drops: one affected-eye drop three times daily about eight hours apart; other ophthalmic drugs separated by at least five minutes. Formal contraindications age below two and prior component hypersensitivity; older children still require sedation caution.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=264c4494-c225-486f-888a-caaf36be46b3",
+          "sourceSection": "Sections 2, 4, 8.4",
+          "access": "Retained full selected primary SPL XML and relevant extracted sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Selected 0.2% benzalkonium-containing product requires soft contact lenses removed and at least fifteen minutes before reinsertion; no numerical lens instruction is imported into selected Alphagan P.",
+          "sourceId": "generic",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=865f88b0-b13e-4607-a314-939f1b331e6f",
+          "sourceSection": "Sections 17 and patient instructions",
+          "access": "Retained full selected primary SPL XML and relevant extracted sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Multidose OTC age five+ one drop every six to eight hours, maximum four times/day; lens reinsertion at least ten minutes and other products at least five minutes. Under five consult a doctor.",
+          "sourceId": "lumify",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=022de945-0b26-40ae-8e88-d3fe2464d106",
+          "sourceSection": "Drug Facts Directions",
+          "access": "Retained full selected primary SPL XML and relevant extracted sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Preservative-free single-use age five+ one affected-eye drop, maximum four times/day, immediate discard; source states no six-to-eight-hour dosing interval. Contact lens reinsertion at least ten minutes and other products at least five minutes.",
+          "sourceId": "pf",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ef5974b9-946c-4983-80e3-32b3aa28c207",
+          "sourceSection": "Drug Facts Directions",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Adult facial rosacea gel: pea-sized amount once daily to each of five facial regions, not oral/ocular/intravaginal. Each gram contains 5 mg tartrate equivalent to 3.3 mg free base, hence 0.33% free base distinct from 0.5% salt. Component hypersensitivity is formal contraindication.",
+          "sourceId": "mirvaso",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f6a4353f-ae69-4214-901f-e5d42a6fbde7",
+          "sourceSection": "Sections 1–4, 11",
+          "access": "Retained full selected primary SPL XML and relevant extracted sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "brimonidine-alphagan": {
+          "path": "/tmp/nas-drug-sources/brimonidine-alphagan.xml",
+          "sha256": "edf22140e88589ef0b6d099a3199cca598cdad930019e4189bea3154485e7a16"
+        },
+        "brimonidine-generic": {
+          "path": "/tmp/nas-drug-sources/brimonidine-generic.xml",
+          "sha256": "e4e0a86b2ecbddb7547e6414571452f9afda882283a578b60a41371ebf0e9c87"
+        },
+        "brimonidine-lumify": {
+          "path": "/tmp/nas-drug-sources/brimonidine-lumify.xml",
+          "sha256": "86af125df02b01a3603b935a83a54adbbbdafe16859661053316a8036df173a3"
+        },
+        "brimonidine-lumify-pf": {
+          "path": "/tmp/nas-drug-sources/brimonidine-lumify-pf.xml",
+          "sha256": "cbb929562555494b21aae84c83182f815a117d7d9bea0e906870d57bdda4f1e1"
+        },
+        "brimonidine-mirvaso": {
+          "path": "/tmp/nas-drug-sources/brimonidine-mirvaso.xml",
+          "sha256": "666c4c56e73a33bcc335319159314776addf08c7e75a775b6f9d7685c7b5c0d2"
+        }
+      }
+    }
+  ],
+  "pending": [],
+  "limitations": []
+}

@@ -1,0 +1,660 @@
+{
+  "drug": "doxazosin",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Current selected Cardura IR and Cardura XL full primary product labels and current FDA Rx product status.",
+  "sources": [
+    {
+      "id": "doxir",
+      "title": "Cardura · immediate-release tablets",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e1f5e49-2da1-43ab-9795-228a8bcc5a82",
+      "note": "Full public manufacturer label and patient instructions; SPL version 3, effective 20231015. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "3",
+      "effective_date": "20231015",
+      "xml_sha256": "f988c63d09e25d740bd0fa0a73f44abca19ae809cc73c3c4b93148c44e8bcccc",
+      "retrieved_xml": "/tmp/nas-drug-sources/doxir.xml",
+      "publication_date": "Jul 16, 2026",
+      "reviewed_sections": "Full supporting selected-product directions, relevant warnings/contraindications and interaction tables, population/PK sections, patient counseling/IFU and product/storage, including nested untitled SPL text. Scope is published selected-product claims, not every other product."
+    },
+    {
+      "id": "doxxl",
+      "title": "Cardura XL · extended-release tablets",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=355bcdce-0481-48ba-8ebd-2009106aaf77",
+      "note": "Full public manufacturer label and patient instructions; SPL version 2, effective 20230515. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "2",
+      "effective_date": "20230515",
+      "xml_sha256": "b8d22d727aa416b6130cf156419088d861a70eab4352902a8f26e99f9ca88d74",
+      "retrieved_xml": "/tmp/nas-drug-sources/doxxl.xml",
+      "publication_date": "Apr 25, 2024",
+      "reviewed_sections": "Full supporting selected-product directions, relevant warnings/contraindications and interaction tables, population/PK sections, patient counseling/IFU and product/storage, including nested untitled SPL text. Scope is published selected-product claims, not every other product."
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Labeled indications",
+      "assertions": {
+        "paragraphs": [
+          "Cardura IR treats BPH signs/symptoms and hypertension and can be used alone or with other antihypertensives. Cardura XL treats BPH signs/symptoms and explicitly is not indicated for hypertension. This profile follows those current U.S. product labels; it does not establish an off-label indication or declare alpha blockade the preferred initial hypertension treatment."
+        ]
+      },
+      "source_sections": {
+        "doxir": [
+          "1.1",
+          "1.2"
+        ],
+        "doxxl": [
+          "1"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "BPH assessment",
+      "assertions": {
+        "paragraphs": [
+          "Prostate cancer can cause similar symptoms and coexist with BPH; evaluate and rule it out before BPH treatment. Doxazosin relieves the dynamic smooth-muscle component of obstruction. Improvement does not establish that prostate enlargement or another cause of obstruction has resolved."
+        ]
+      },
+      "source_sections": {
+        "doxir": [
+          "5 Prostate cancer warning",
+          "12.1"
+        ],
+        "doxxl": [
+          "5 Prostate cancer warning",
+          "12.1"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Immediate-release Cardura",
+      "assertions": {
+        "paragraphs": [
+          "Give once daily; individualize titration and monitor BP. The maximum depends on the indication."
+        ],
+        "table": {
+          "headers": [
+            "Indication",
+            "Selected label regimen"
+          ],
+          "rows": [
+            [
+              "BPH",
+              "Start 1 mg daily, morning or evening. At 1–2-week intervals, titrate to 2 mg, then 4 mg and 8 mg as response/tolerability permit. Maximum 8 mg/day."
+            ],
+            [
+              "Hypertension",
+              "Start 1 mg daily. Daily dose may be doubled as needed to a maximum 16 mg once daily."
+            ],
+            [
+              "Initial dose, dose increase or interruption",
+              "Monitor BP for at least 6 hours after the first dose and each increase. After an interruption of several days, restart the initial regimen."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "doxir": [
+          "2.1–2.3"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Extended-release Cardura XL",
+      "assertions": {
+        "paragraphs": [
+          "Take with breakfast and swallow whole; never chew, divide, cut or crush. Empty nonabsorbable tablet shells may appear in stool. XL is not a milligram-for-milligram substitution instruction for IR."
+        ],
+        "table": {
+          "headers": [
+            "Situation",
+            "Selected label regimen"
+          ],
+          "rows": [
+            [
+              "BPH initiation",
+              "4 mg once daily with breakfast. If needed/tolerated, increase to maximum 8 mg daily after a 3–4-week titration interval."
+            ],
+            [
+              "Switch from Cardura IR",
+              "Start XL at its lowest dose, 4 mg daily. Omit the final IR evening dose before starting XL."
+            ],
+            [
+              "Several-day interruption",
+              "Restart XL at 4 mg once daily. Obtain the prescriber’s plan rather than resuming a higher established dose."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "doxxl": [
+          "2.1",
+          "2.2",
+          "17.3–17.5"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Concomitant PDE-5 treatment",
+      "assertions": {
+        "paragraphs": [
+          "A PDE-5 inhibitor can add symptomatic BP lowering. In patients taking Cardura XL, initiate the PDE-5 inhibitor at its lowest dose. Review BP, orthostatic symptoms and the specific PDE-5 product’s precautions; no universal safe dose separation is established here."
+        ]
+      },
+      "source_sections": {
+        "doxir": [
+          "5.1",
+          "7.2"
+        ],
+        "doxxl": [
+          "2.3",
+          "5.5",
+          "7.3"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Postural hypotension and syncope can occur within hours and sometimes later, especially with the first dose or an increase. Review other vasodilators and fall risk. Tell the cataract surgeon about present/past use because intraoperative floppy iris syndrome can occur; stopping the medicine has not shown a clear benefit for that risk. Painful prolonged erection needs immediate medical attention. XL adds caution with severe GI narrowing/strictures and prolonged GI transit, which can cause obstruction or greater exposure; discontinue XL if angina newly appears or worsens. Severe hepatic impairment is not recommended use."
+        ]
+      },
+      "source_sections": {
+        "doxir": [
+          "5 complete warnings"
+        ],
+        "doxxl": [
+          "5 complete warnings"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Do not use with hypersensitivity to doxazosin, other quinazolines such as prazosin/terazosin, or the product’s components. GI narrowing and hepatic impairment are important warnings, not additional formal contraindications invented from section 5."
+        ]
+      },
+      "source_sections": {
+        "doxir": [
+          "4"
+        ],
+        "doxxl": [
+          "4"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "Neither selected current Cardura IR nor Cardura XL label carries a boxed warning. Clinically significant first-dose hypotension/syncope still requires dose precautions and counseling."
+        ]
+      },
+      "source_sections": {
+        "doxir": [
+          "Complete label headings; no boxed warning",
+          "5.1"
+        ],
+        "doxxl": [
+          "Complete label headings; no boxed warning",
+          "5.1"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Dizziness, fatigue/asthenia, somnolence and hypotension are important effects; headache is also common with XL. IR trials report edema and dose-related postural effects. Postmarketing reports include priapism, blood-count abnormalities, cholestatic hepatic injury and IFIS; frequency/causality cannot be reliably estimated from spontaneous reports. Overdose chiefly produces hypotension and requires urgent assessment/supportive care. High protein binding makes dialysis an ineffective removal strategy."
+        ]
+      },
+      "source_sections": {
+        "doxir": [
+          "6.1",
+          "6.2",
+          "10"
+        ],
+        "doxxl": [
+          "6.1",
+          "6.2",
+          "10"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "assertions": {
+        "paragraphs": [
+          "Review all prescription and nonprescription medicines before initiation or a dose increase."
+        ],
+        "table": {
+          "headers": [
+            "Co-treatment or factor",
+            "Implication and action"
+          ],
+          "rows": [
+            [
+              "PDE-5 inhibitors",
+              "Additive BP reduction/symptomatic hypotension; monitor and use the specific product’s low-dose initiation guidance."
+            ],
+            [
+              "Strong CYP3A inhibitors",
+              "May raise doxazosin exposure. Examples include clarithromycin, azole antifungals and ritonavir-containing regimens; assess exact therapy and monitor BP/orthostasis."
+            ],
+            [
+              "Other antihypertensives or vasodilators",
+              "Review combined BP effects. XL’s label says its pharmacodynamic interactions with these agents have not been determined; do not invent a fixed adjustment formula."
+            ],
+            [
+              "Medicines slowing GI transit",
+              "Markedly prolonged transit, including with anticholinergic drugs, may raise XL exposure; assess constipation/obstruction risk."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "doxir": [
+          "7",
+          "12.3"
+        ],
+        "doxxl": [
+          "7",
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Formulation-specific uncertainty",
+      "assertions": {
+        "paragraphs": [
+          "Cardura XL has no in-vivo PK interaction trials; IR cimetidine findings cannot be transferred quantitatively to XL. Monitor the patient rather than assuming the same exposure change across release designs."
+        ]
+      },
+      "source_sections": {
+        "doxxl": [
+          "7.1",
+          "12.3 Drug-drug interactions"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and older patients",
+      "assertions": {
+        "paragraphs": [
+          "Pediatric safety/effectiveness are not established. Use cautious dose selection in older adults. XL hypotension appears more frequent at age 70 or older, and elderly exposure is higher. IR BPH studies reported generally similar safety/effectiveness between older and younger patients, but that does not remove first-dose and fall precautions."
+        ]
+      },
+      "source_sections": {
+        "doxir": [
+          "8.4",
+          "8.5",
+          "12.3"
+        ],
+        "doxxl": [
+          "8.4",
+          "8.5",
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Hepatic and renal considerations",
+      "assertions": {
+        "paragraphs": [
+          "Severe hepatic impairment is not recommended with either product. Monitor IR patients with mild/moderate impairment for hypotension; administer XL cautiously in those groups. IR PK studies did not show significant alteration with renal impairment, but assess BP and overall clinical condition. XL has different absorption kinetics; this profile does not invent an eGFR-based dose algorithm or a dedicated XL renal study."
+        ]
+      },
+      "source_sections": {
+        "doxir": [
+          "8.6",
+          "12.3 Hepatic impairment and renal impairment"
+        ],
+        "doxxl": [
+          "8.6",
+          "12.3 Hepatic impairment and renal impairment"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "IR may be considered for its hypertension indication only after individual assessment; limited human pregnancy data cannot establish major-malformation/miscarriage risk. Untreated maternal hypertension itself carries risk. Doxazosin has been reported in human milk, with inadequate infant-effect and milk-production information. XL is not indicated in females or for hypertension; do not transfer the IR indication to a pregnancy/XL regimen."
+        ]
+      },
+      "source_sections": {
+        "doxir": [
+          "8.1 complete nested risk summary",
+          "8.2 complete nested risk summary and data"
+        ],
+        "doxxl": [
+          "8.1 complete nested risk summary",
+          "8.2 complete nested risk summary and data"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and pharmacodynamics",
+      "assertions": {
+        "paragraphs": [
+          "Alpha-1 receptor blockade relaxes prostate/bladder-neck smooth muscle and lowers urethral resistance, improving BPH symptoms/flow. IR antihypertensive effects result from reduced systemic vascular resistance; greatest BP reduction typically occurs 2–6 hours after dosing and can be greater while standing. This mechanism does not make XL an approved hypertension product."
+        ]
+      },
+      "source_sections": {
+        "doxir": [
+          "12.1",
+          "12.2"
+        ],
+        "doxxl": [
+          "12.1",
+          "12.2"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "assertions": {
+        "paragraphs": [
+          "IR peak levels usually occur around 2–3 hours, oral bioavailability is about 65%, and terminal half-life about 22 hours. XL provides controlled release over 24 hours, with typical steady-state peaks around 8–9 hours and apparent half-life 15–19 hours. Breakfast gives more consistent XL exposure. Doxazosin is about 98% protein bound and extensively hepatically metabolized, predominantly via CYP3A4 in vitro; fecal elimination predominates. Different PK precludes casual IR/XL dose equivalence."
+        ]
+      },
+      "source_sections": {
+        "doxir": [
+          "12.3 complete absorption, food, distribution, metabolism and excretion sections"
+        ],
+        "doxxl": [
+          "12.3 complete absorption, food, distribution, metabolism and excretion sections"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "assertions": {
+        "paragraphs": [
+          "Check seated/standing BP and symptoms, response to BPH or hypertension treatment, falls, adherence and interacting drugs. IR label requires at least six-hour BP monitoring after the initial dose and each increase. Evaluate BPH’s alternative causes/prostate cancer before treatment; reassess persistent or changing symptoms. Watch for new/worsening angina with XL, hepatic-risk tolerability and severe constipation/obstruction symptoms."
+        ]
+      },
+      "source_sections": {
+        "doxir": [
+          "2",
+          "5",
+          "7",
+          "8.6"
+        ],
+        "doxxl": [
+          "2",
+          "5",
+          "7",
+          "8.6"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling",
+      "assertions": {
+        "paragraphs": [
+          "Rise carefully; if dizzy/lightheaded, sit or lie down and seek advice if symptoms persist. IR counseling advises avoiding driving/hazardous tasks for 24 hours after the first dose, an increase or resuming after interruption; XL advises avoiding hazardous tasks until effects are known. Get urgent care for fainting with injury, severe persistent abdominal pain or prolonged painful erection. Tell the eye surgeon about all past/current alpha-blocker use. XL goes with breakfast, whole; seeing its empty shell in stool can be normal. Ask before restarting after several missed days."
+        ]
+      },
+      "source_sections": {
+        "doxir": [
+          "17 complete counseling",
+          "Patient Information"
+        ],
+        "doxxl": [
+          "17 complete counseling",
+          "Patient Information"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "paragraphs": [
+          "Cardura IR 1 mg is a white round tablet marked CN1 and VLE; selected bottle of 100 NDC 58151-074-01. Cardura XL 4 mg is white and marked CXL 4; selected bottle of 30 NDC 58151-078-93. These examples identify selected label packages and do not establish stock availability."
+        ]
+      },
+      "source_sections": {
+        "doxir": [
+          "3",
+          "16"
+        ],
+        "doxxl": [
+          "3",
+          "16"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Cardura IR tablets: 1, 2, 4 and 8 mg doxazosin free-base equivalent as the mesylate salt. Cardura XL extended-release tablets: 4 and 8 mg. The salt amount differs from the labeled free-base equivalent; prescribe the displayed doxazosin strength and release design rather than converting mesylate mass."
+        ]
+      },
+      "source_sections": {
+        "doxir": [
+          "3",
+          "16",
+          "Package display panels"
+        ],
+        "doxxl": [
+          "3",
+          "16",
+          "Package display panels"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Selected IR and XL labels specify storage at 25°C, with excursions 15–30°C. XL package panels additionally say protect from moisture and humidity. Keep medicine away from children. Preserve XL tablets whole; follow the exact manufacturer’s packaging and expiry instructions."
+        ]
+      },
+      "source_sections": {
+        "doxir": [
+          "16",
+          "Package display panels"
+        ],
+        "doxxl": [
+          "16",
+          "Package display panels"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "No unsupported off-label indication, first-line hypertension recommendation or universal IR/XL conversion.",
+    "No pediatric regimen or dedicated XL renal-study claim."
+  ],
+  "resolved_source_findings": [
+    "IR hypertension maximum 16 mg/day distinguished from BPH maximum 8 mg/day.",
+    "IR first/increased dose requires at least six-hour BP monitoring; XL titration interval and breakfast requirement retained."
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, essential safety, three hero facts, cited disclosures, four safety cards and three product cards.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending",
+    "mobile_content_precheck": "Only two-column dose tables and naturally wrapping prose; parent strict 390px article-layout QA pending."
+  },
+  "monograph_sha256": "3ded39515b2cb5f558e2077d5e5da94ac91eee808acd8d0e592b88d1694fb809",
+  "front_matter_source_map": {
+    "identity_and_facts": {
+      "doxir": [
+        "1",
+        "3",
+        "16"
+      ],
+      "doxxl": [
+        "1",
+        "3"
+      ]
+    },
+    "essential": {
+      "doxir": [
+        "2.1–2.3",
+        "5.1",
+        "5.2",
+        "7.2"
+      ],
+      "doxxl": [
+        "1",
+        "2.1",
+        "2.3",
+        "5.1",
+        "5.2"
+      ]
+    }
+  },
+  "current_regulatory_status_checks": [
+    {
+      "application": "NDA019668",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA019668&limit=1",
+      "checked": "2026-10-01",
+      "retrieved_file": "/tmp/nas-drug-sources/NDA019668.json",
+      "sha256": "0e9e6c8cff4e1022f16d4a2bc0f4d0462733c1c3adddbf18a7a0003d7542ca4b",
+      "sponsor": "VIATRIS",
+      "reviewed_products": [
+        {
+          "product_number": "003",
+          "reference_drug": "Yes",
+          "brand_name": "CARDURA",
+          "active_ingredients": [
+            {
+              "name": "DOXAZOSIN MESYLATE",
+              "strength": "EQ 4MG BASE"
+            }
+          ],
+          "reference_standard": "No",
+          "dosage_form": "TABLET",
+          "route": "ORAL",
+          "marketing_status": "Prescription",
+          "te_code": "AB"
+        },
+        {
+          "product_number": "001",
+          "reference_drug": "Yes",
+          "brand_name": "CARDURA",
+          "active_ingredients": [
+            {
+              "name": "DOXAZOSIN MESYLATE",
+              "strength": "EQ 1MG BASE"
+            }
+          ],
+          "reference_standard": "Yes",
+          "dosage_form": "TABLET",
+          "route": "ORAL",
+          "marketing_status": "Prescription",
+          "te_code": "AB"
+        },
+        {
+          "product_number": "004",
+          "reference_drug": "Yes",
+          "brand_name": "CARDURA",
+          "active_ingredients": [
+            {
+              "name": "DOXAZOSIN MESYLATE",
+              "strength": "EQ 8MG BASE"
+            }
+          ],
+          "reference_standard": "No",
+          "dosage_form": "TABLET",
+          "route": "ORAL",
+          "marketing_status": "Prescription",
+          "te_code": "AB"
+        },
+        {
+          "product_number": "002",
+          "reference_drug": "Yes",
+          "brand_name": "CARDURA",
+          "active_ingredients": [
+            {
+              "name": "DOXAZOSIN MESYLATE",
+              "strength": "EQ 2MG BASE"
+            }
+          ],
+          "reference_standard": "No",
+          "dosage_form": "TABLET",
+          "route": "ORAL",
+          "marketing_status": "Prescription",
+          "te_code": "AB"
+        }
+      ],
+      "scope": "Official current product status; no stock inference or replacement of primary prescribing information."
+    },
+    {
+      "application": "NDA021269",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA021269&limit=1",
+      "checked": "2026-10-01",
+      "retrieved_file": "/tmp/nas-drug-sources/NDA021269.json",
+      "sha256": "5708dc842cd828b1c37dd476fc82c38a0271762d0eb468a16ca4ad14024b3895",
+      "sponsor": "VIATRIS",
+      "reviewed_products": [
+        {
+          "product_number": "002",
+          "reference_drug": "Yes",
+          "brand_name": "CARDURA XL",
+          "active_ingredients": [
+            {
+              "name": "DOXAZOSIN MESYLATE",
+              "strength": "EQ 8MG BASE"
+            }
+          ],
+          "reference_standard": "Yes",
+          "dosage_form": "TABLET, EXTENDED RELEASE",
+          "route": "ORAL",
+          "marketing_status": "Prescription"
+        },
+        {
+          "product_number": "001",
+          "reference_drug": "Yes",
+          "brand_name": "CARDURA XL",
+          "active_ingredients": [
+            {
+              "name": "DOXAZOSIN MESYLATE",
+              "strength": "EQ 4MG BASE"
+            }
+          ],
+          "reference_standard": "No",
+          "dosage_form": "TABLET, EXTENDED RELEASE",
+          "route": "ORAL",
+          "marketing_status": "Prescription"
+        }
+      ],
+      "scope": "Official current product status; no stock inference or replacement of primary prescribing information."
+    }
+  ],
+  "source_review_detail": "Published selected-product claims reviewed against complete supporting primary label text, including nested unnamed SPL subsections. Current FDA product arrays separately verified; superseded/discontinued source candidates retained as provenance, not current executable regimen sources."
+}

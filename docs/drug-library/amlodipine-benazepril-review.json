@@ -1,0 +1,916 @@
+{
+  "drug": "amlodipine-benazepril",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Full current Avet generic clinical/product sections and retained current Lotrel brand label metadata; adult fixed combination, not extrapolated single-agent indications.",
+  "blueprint": {
+    "sections": [
+      [
+        "indications",
+        "Indications"
+      ],
+      [
+        "dosage",
+        "Dosage and administration"
+      ],
+      [
+        "safety",
+        "Safety"
+      ],
+      [
+        "interactions",
+        "Drug interactions"
+      ],
+      [
+        "populations",
+        "Use in specific populations"
+      ],
+      [
+        "pharmacology",
+        "Clinical pharmacology"
+      ],
+      [
+        "practice",
+        "Monitoring and counseling"
+      ],
+      [
+        "product",
+        "Product identification"
+      ]
+    ],
+    "essential_safety": true,
+    "hero_facts": 3,
+    "APAP_modified": false
+  },
+  "sources": [
+    {
+      "id": "label",
+      "title": "Amlodipine/benazepril \u00b7 Current full label",
+      "publisher": "Avet / DailyMed",
+      "note": "Current SPL 6 effective June 29, 2026; highlights 06/2026, clinical/Patient Information footer 11/2025. Six oral strengths.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=27b0c628-820a-48bf-a411-86c0ebd4cc8d"
+    },
+    {
+      "id": "brand",
+      "title": "Lotrel \u00b7 Retained current brand label",
+      "publisher": "Novartis / DailyMed",
+      "note": "Current SPL 30 effective August 1, 2023; archive published November 22, 2024. Brand records include marketing-end dates; no current retail availability inferred.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94ae6054-b7ae-4212-a567-4f803af8f2c7"
+    }
+  ],
+  "source_records": [
+    {
+      "id": "label",
+      "local_snapshot": "/tmp/nas-drug-sources/amlodipine-benazepril-current.xml",
+      "label_revision": "Highlights06/2026; PI/Patient Information footer11/2025",
+      "set_id": "27b0c628-820a-48bf-a411-86c0ebd4cc8d",
+      "spl_version": "6",
+      "spl_effective_time": "20260629",
+      "dailymed_published_date": "2026-07-24",
+      "sha256": "acd53174aa9da7e779824d631f48709a48346a37bdcd7a8fcd10e299452a7d9a",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-19-thyroid-metformin/amlodipine-benazepril-current.xml"
+    },
+    {
+      "id": "brand",
+      "local_snapshot": "/tmp/nas-drug-sources/lotrel-current.xml",
+      "label_revision": "08/2023",
+      "set_id": "94ae6054-b7ae-4212-a567-4f803af8f2c7",
+      "spl_version": "30",
+      "spl_effective_time": "20230801",
+      "dailymed_published_date": "2024-11-22",
+      "sha256": "ee8530e20aa12effac0a86d36bb333f9f878d40140f5127ae54f6ee56ef9529c",
+      "review_method": "Retained current brand SPL metadata, NDA/initial approval, indication and product/marketing records checked as comparator. Clinical claim review is based on full current generic label; no current brand retail availability or separate complete brand clinical re-review inferred.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-19-thyroid-metformin/lotrel-current.xml"
+    }
+  ],
+  "assertion_map": [
+    {
+      "section": "indications",
+      "card": "Labeled indication",
+      "assertions": [
+        "The combination treats hypertension in patients not adequately controlled with amlodipine or benazepril alone. Label initiation also includes inadequate amlodipine control without tolerable edema. It is not labeled as routine initial monotherapy, an acute hypertensive-emergency drug or a universal heart-failure/angina regimen. The indication of an individual ingredient does not automatically extend to this capsule."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "1.1;2.1"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Prescription and product scope",
+      "assertions": [
+        "The selected generic is a prescription oral fixed-dose product; Lotrel is the original brand with U.S. approval 1995 under NDA020364. The retained brand label is not proof that every brand strength/package is currently sold. Component ratios and capsule identity must match the actual dispensed product."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "3;11;16; Product marketing"
+        },
+        {
+          "id": "brand",
+          "sections": "Highlights initial approval; marketing NDA020364; product dates"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Initial and titrated therapy",
+      "assertions": [
+        "Recommended initial combination is amlodipine 2.5 mg/benazepril 10 mg orally once daily after the labeled monotherapy conditions are met. Individualize titration, up to 10/40 mg once daily if needed. Most BP effect develops within 2 weeks; do not treat that as a mandatory increase interval for every patient. Separate titrated components may be replaced by the corresponding combination strength. Take at the same time daily, with or without food."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2.1\u20132.2; Patient Information"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Parameter",
+          "Combination label instruction"
+        ],
+        "rows": [
+          [
+            "Initial pair",
+            "Amlodipine 2.5 mg / benazepril 10 mg once daily"
+          ],
+          [
+            "Higher label pair",
+            "Up to amlodipine 10 mg / benazepril 40 mg once daily"
+          ],
+          [
+            "Replacement therapy",
+            "Match the previously titrated component doses"
+          ],
+          [
+            "Available pairs",
+            "2.5/10; 5/10; 5/20; 5/40; 10/20; 10/40 mg"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Kidney, liver and older-patient dosing",
+      "assertions": [
+        "No adjustment is needed for mild/moderate renal impairment, but monitor renal function and potassium. Severe impairment increases benazepril exposure; the label\u2019s recommended benazepril 5 mg component is unavailable in this fixed combination, so it is not recommended. PK identifies increased benazeprilat exposure at CrCl \u2264 30 mL/min; do not improvise a capsule split or alternate-day substitute. Older age and hepatic insufficiency increase amlodipine exposure, so consider lower individualized doses."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "8.5\u20138.7;12.3;5.5\u20135.6"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and missed dose",
+      "assertions": [
+        "Verify which number belongs to each ingredient: amlodipine first, benazepril hydrochloride second. Do not add duplicate ACE-inhibitor or amlodipine products without a prescriber plan. The selected Patient Information says to take a missed dose when remembered, but if more than 12 hours have elapsed, resume the next regular dose; do not double."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "3; Patient Information;7.1"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "ACE-inhibitor angioedema can arise at any time and obstruct the airway; stop treatment and obtain emergency care for face/tongue/throat swelling or breathing difficulty. Abdominal pain may reflect intestinal angioedema even without prior facial swelling. Risk is increased with certain mTOR/neprilysin inhibitors. Alert clinicians before venom desensitization, high-flux dialysis or dextran-sulfate LDL apheresis.",
+        "Hypotension is more likely with salt/volume depletion, diuretics, severe valve disease or heart failure. Correct depletion before initiation; severe symptoms need reassessment. Monitor for renal deterioration and elevated potassium, particularly with renal disease/diabetes or interacting drugs. Starting/increasing amlodipine can worsen angina or precipitate MI in severe obstructive coronary disease. Jaundice or marked liver-enzyme elevation requires discontinuation and assessment."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "5.2\u20135.7;7.1"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "Contraindicated with prior angioedema, whether or not ACE-inhibitor-related, or hypersensitivity to benazepril, another ACE inhibitor, amlodipine or capsule excipients. Do not use with aliskiren in diabetes. Neprilysin-inhibitor combination is contraindicated; allow at least 36 hours when switching to or from sacubitril/valsartan. Pregnancy has a separate fetal-toxicity boxed warning requiring prompt discontinuation when detected."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "4; Boxed warning;5.1"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "The boxed warning concerns fetal toxicity from renin-angiotensin-system blockade. Exposure can injure or kill the developing fetus; discontinue as soon as pregnancy is detected and arrange an alternative treatment plan. Angioedema and renal/potassium risks remain serious precautions although not the box\u2019s topic."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "BOXED WARNING;5.1;8.1"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Cough, edema, headache and dizziness are common reported effects. Adding benazepril can reduce amlodipine-associated edema in trials but does not eliminate swelling or angioedema risk. Serious events include hypotension, renal failure, hyperkalemia, angioedema and rare hepatic injury; postmarketing blood-cell and skin reactions have uncertain frequencies."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "6.1\u20136.2;5"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "RAS blockade, potassium and neprilysin",
+      "assertions": [
+        "Generally avoid dual RAS blockade with another ACE inhibitor, ARB or aliskiren because hypotension, renal dysfunction and hyperkalemia increase. Aliskiren is contraindicated in diabetes and should be avoided with renal impairment GFR < 60 mL/min. Potassium supplements, potassium-sparing diuretics and potassium salt substitutes require careful review/monitoring. Sacubitril needs the 36-hour switch separation; mTOR inhibitors increase angioedema risk."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "4;7.1;5.2;5.6"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "NSAIDs, lithium and other benazepril interactions",
+      "assertions": [
+        "NSAIDs including COX-2 inhibitors can reduce BP benefit and worsen kidney function, especially with older age, dehydration or kidney disease; monitor renal function. Lithium exposure/toxicity can increase, requiring frequent levels. ACE inhibitors with diabetes drugs can rarely contribute to hypoglycemia; monitor symptoms/glucose as appropriate. Injectable gold has rare flushing/nausea/vomiting/hypotension reports."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "7.1"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Amlodipine interactions",
+      "assertions": [
+        "Limit simvastatin to 20 mg/day with amlodipine. CYP3A inhibitors, including ritonavir, may increase amlodipine exposure; assess hypotension/edema and dose reduction. CYP3A inducers require BP monitoring because a universal numerical correction is not established. Other BP-lowering agents, including sildenafil, can add hypotension even without a demonstrated PK interaction."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "7.1;12.3"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy",
+      "assertions": [
+        "Discontinue promptly when pregnancy is detected. RAS blockade in later pregnancy can impair fetal kidneys and cause oligohydramnios, lung/skull abnormalities, neonatal hypotension/renal failure or death. Discuss alternatives before conception. Exposure during pregnancy warrants specialist fetal/newborn assessment; delayed appearance of oligohydramnios does not exclude prior injury."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "5.1;8.1;17"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Breastfeeding",
+      "assertions": [
+        "Small amounts of benazepril/benazeprilat enter milk, and amlodipine is present; the selected label reports an estimated median amlodipine relative infant dose 4.2% and no observed infant adverse effects in limited data. Milk-production effects are unknown. These observations do not establish safety for every neonate or combination dose; individualize treatment and feeding."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "8.2"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": [
+        "Pediatric safety/effectiveness of this combination are not established. Older adults have increased amlodipine exposure and may be more sensitive, supporting lower initial-dose consideration and BP/fall-risk assessment. Adult component approvals do not create a pediatric combination schedule."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "8.4\u20138.5;12.3"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic impairment",
+      "assertions": [
+        "The fixed capsule is not recommended for severe renal impairment because an appropriate low benazepril strength is unavailable. Less severe impairment still requires kidney/potassium monitoring. Hepatic insufficiency decreases amlodipine clearance; consider lower doses and reassess symptoms. Reduced renal clearance of benazeprilat differs from amlodipine\u2019s disposition; avoid applying one component\u2019s PK reassurance to both."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "8.6\u20138.7;12.3;5.5\u20135.6"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and pharmacodynamics",
+      "assertions": [
+        "Benazepril is converted to benazeprilat, which inhibits ACE, reducing angiotensin II/aldosterone signaling. ACE also degrades bradykinin, relevant to ACE-inhibitor effects. Amlodipine blocks calcium influx predominantly in vascular smooth muscle and lowers peripheral resistance. BP effects complement one another; individual response is not guaranteed by older trial subgroup averages."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "12.1\u201312.2;14"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Absorption, metabolism and elimination",
+      "assertions": [
+        "Amlodipine peaks around 6\u201312 hours and has a terminal half-life 30\u201350 hours; it is extensively hepatically metabolized. Benazepril peaks 0.5\u20132 hours and is converted mainly in the liver to active benazeprilat, which peaks 1.5\u20134 hours and is cleared mainly renally in normal kidney function. Benazeprilat\u2019s effective elimination half-life is 10\u201311 hours, distinct from its longer terminal phase; steady state of both components is reached around 1 week."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "12.3"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Clinical variability",
+      "assertions": [
+        "Severe kidney impairment increases benazeprilat peak exposure and effective half-life. Older age and hepatic impairment decrease amlodipine clearance. The label allows food-independent administration while noting direct combination food-effect studies were not performed; avoid claiming every PK property of the fixed capsule was measured in every population."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "12.3; Patient Information"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": [
+        "Check BP, kidney function, potassium, volume status, pregnancy plans and prior angioedema before therapy; follow BP/orthostatic symptoms, edema/cough and renal/potassium changes. Reassess after titration or addition of NSAIDs, diuretics, potassium agents or RAS blockers. The label calls for periodic testing, not one mandatory numerical interval for everyone."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "5.2\u20135.6;7.1;17"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling",
+      "assertions": [
+        "Take the prescribed capsule at the same daily time; check the strength and missed-dose instruction. Report pregnancy promptly and discuss preconception alternatives. Avoid unapproved potassium salt substitutes. Dehydration, sweating, vomiting/diarrhea or low intake can cause hypotension; contact the clinician if these occur or fainting develops. Tell dental/surgical, dialysis and allergy-treatment teams about the ACE inhibitor."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "17; Patient Information;5.2\u20135.4"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Urgent assessment",
+      "assertions": [
+        "Seek emergency care for airway swelling, severe breathing difficulty or persistent/worsening chest pain. Fainting needs prompt clinician review; selected counseling says hold further treatment until consulted after syncope. Jaundice or marked hepatic abnormalities require assessment. Suspected overdose needs immediate medical help rather than extra salt/fluid or unsupervised dose changes."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "5.2\u20135.7;10;17; Patient Information"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Selected Avet 5/20 mg capsule is pink opaque cap/body with black imprint 922; a 100-capsule bottle is NDC 23155-922-01. This identity belongs to that generic product, not every Lotrel or generic capsule. Retain packaging and confirm appearance/NDC with the pharmacist; do not identify solely from a photo."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "16; Product characteristics"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Oral fixed capsules contain amlodipine equivalent 2.5, 5 or 10 mg with benazepril hydrochloride 10, 20 or 40 mg in the six labeled pairs: 2.5/10, 5/10, 5/20, 5/40, 10/20 and 10/40 mg. Not every possible mathematical ratio exists. Benazepril 5 mg is absent; no injectable or liquid combination conversion is supplied."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "3;11;16;8.7"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Selected Avet capsules are stored 20\u201325\u00b0C, protected from moisture, heat and light, and dispensed in a tight, light-resistant container. Follow the actual dispensed product\u2019s package instructions, keep away from children and retain its patient leaflet."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "16; Patient Information"
+        }
+      ]
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Labeled indication",
+      "assertions": [
+        "The combination treats hypertension in patients not adequately controlled with amlodipine or benazepril alone. Label initiation also includes inadequate amlodipine control without tolerable edema. It is not labeled as routine initial monotherapy, an acute hypertensive-emergency drug or a universal heart-failure/angina regimen. The indication of an individual ingredient does not automatically extend to this capsule."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "1.1;2.1"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Prescription and product scope",
+      "assertions": [
+        "The selected generic is a prescription oral fixed-dose product; Lotrel is the original brand with U.S. approval 1995 under NDA020364. The retained brand label is not proof that every brand strength/package is currently sold. Component ratios and capsule identity must match the actual dispensed product."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "3;11;16; Product marketing"
+        },
+        {
+          "id": "brand",
+          "sections": "Highlights initial approval; marketing NDA020364; product dates"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Initial and titrated therapy",
+      "assertions": [
+        "Recommended initial combination is amlodipine 2.5 mg/benazepril 10 mg orally once daily after the labeled monotherapy conditions are met. Individualize titration, up to 10/40 mg once daily if needed. Most BP effect develops within 2 weeks; do not treat that as a mandatory increase interval for every patient. Separate titrated components may be replaced by the corresponding combination strength. Take at the same time daily, with or without food."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2.1\u20132.2; Patient Information"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Parameter",
+          "Combination label instruction"
+        ],
+        "rows": [
+          [
+            "Initial pair",
+            "Amlodipine 2.5 mg / benazepril 10 mg once daily"
+          ],
+          [
+            "Higher label pair",
+            "Up to amlodipine 10 mg / benazepril 40 mg once daily"
+          ],
+          [
+            "Replacement therapy",
+            "Match the previously titrated component doses"
+          ],
+          [
+            "Available pairs",
+            "2.5/10; 5/10; 5/20; 5/40; 10/20; 10/40 mg"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Kidney, liver and older-patient dosing",
+      "assertions": [
+        "No adjustment is needed for mild/moderate renal impairment, but monitor renal function and potassium. Severe impairment increases benazepril exposure; the label\u2019s recommended benazepril 5 mg component is unavailable in this fixed combination, so it is not recommended. PK identifies increased benazeprilat exposure at CrCl \u2264 30 mL/min; do not improvise a capsule split or alternate-day substitute. Older age and hepatic insufficiency increase amlodipine exposure, so consider lower individualized doses."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "8.5\u20138.7;12.3;5.5\u20135.6"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and missed dose",
+      "assertions": [
+        "Verify which number belongs to each ingredient: amlodipine first, benazepril hydrochloride second. Do not add duplicate ACE-inhibitor or amlodipine products without a prescriber plan. The selected Patient Information says to take a missed dose when remembered, but if more than 12 hours have elapsed, resume the next regular dose; do not double."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "3; Patient Information;7.1"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "ACE-inhibitor angioedema can arise at any time and obstruct the airway; stop treatment and obtain emergency care for face/tongue/throat swelling or breathing difficulty. Abdominal pain may reflect intestinal angioedema even without prior facial swelling. Risk is increased with certain mTOR/neprilysin inhibitors. Alert clinicians before venom desensitization, high-flux dialysis or dextran-sulfate LDL apheresis.",
+        "Hypotension is more likely with salt/volume depletion, diuretics, severe valve disease or heart failure. Correct depletion before initiation; severe symptoms need reassessment. Monitor for renal deterioration and elevated potassium, particularly with renal disease/diabetes or interacting drugs. Starting/increasing amlodipine can worsen angina or precipitate MI in severe obstructive coronary disease. Jaundice or marked liver-enzyme elevation requires discontinuation and assessment."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "5.2\u20135.7;7.1"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "Contraindicated with prior angioedema, whether or not ACE-inhibitor-related, or hypersensitivity to benazepril, another ACE inhibitor, amlodipine or capsule excipients. Do not use with aliskiren in diabetes. Neprilysin-inhibitor combination is contraindicated; allow at least 36 hours when switching to or from sacubitril/valsartan. Pregnancy has a separate fetal-toxicity boxed warning requiring prompt discontinuation when detected."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "4; Boxed warning;5.1"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "The boxed warning concerns fetal toxicity from renin-angiotensin-system blockade. Exposure can injure or kill the developing fetus; discontinue as soon as pregnancy is detected and arrange an alternative treatment plan. Angioedema and renal/potassium risks remain serious precautions although not the box\u2019s topic."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "BOXED WARNING;5.1;8.1"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Cough, edema, headache and dizziness are common reported effects. Adding benazepril can reduce amlodipine-associated edema in trials but does not eliminate swelling or angioedema risk. Serious events include hypotension, renal failure, hyperkalemia, angioedema and rare hepatic injury; postmarketing blood-cell and skin reactions have uncertain frequencies."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "6.1\u20136.2;5"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "RAS blockade, potassium and neprilysin",
+      "assertions": [
+        "Generally avoid dual RAS blockade with another ACE inhibitor, ARB or aliskiren because hypotension, renal dysfunction and hyperkalemia increase. Aliskiren is contraindicated in diabetes and should be avoided with renal impairment GFR < 60 mL/min. Potassium supplements, potassium-sparing diuretics and potassium salt substitutes require careful review/monitoring. Sacubitril needs the 36-hour switch separation; mTOR inhibitors increase angioedema risk."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "4;7.1;5.2;5.6"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "NSAIDs, lithium and other benazepril interactions",
+      "assertions": [
+        "NSAIDs including COX-2 inhibitors can reduce BP benefit and worsen kidney function, especially with older age, dehydration or kidney disease; monitor renal function. Lithium exposure/toxicity can increase, requiring frequent levels. ACE inhibitors with diabetes drugs can rarely contribute to hypoglycemia; monitor symptoms/glucose as appropriate. Injectable gold has rare flushing/nausea/vomiting/hypotension reports."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "7.1"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Amlodipine interactions",
+      "assertions": [
+        "Limit simvastatin to 20 mg/day with amlodipine. CYP3A inhibitors, including ritonavir, may increase amlodipine exposure; assess hypotension/edema and dose reduction. CYP3A inducers require BP monitoring because a universal numerical correction is not established. Other BP-lowering agents, including sildenafil, can add hypotension even without a demonstrated PK interaction."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "7.1;12.3"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy",
+      "assertions": [
+        "Discontinue promptly when pregnancy is detected. RAS blockade in later pregnancy can impair fetal kidneys and cause oligohydramnios, lung/skull abnormalities, neonatal hypotension/renal failure or death. Discuss alternatives before conception. Exposure during pregnancy warrants specialist fetal/newborn assessment; delayed appearance of oligohydramnios does not exclude prior injury."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "5.1;8.1;17"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Breastfeeding",
+      "assertions": [
+        "Small amounts of benazepril/benazeprilat enter milk, and amlodipine is present; the selected label reports an estimated median amlodipine relative infant dose 4.2% and no observed infant adverse effects in limited data. Milk-production effects are unknown. These observations do not establish safety for every neonate or combination dose; individualize treatment and feeding."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "8.2"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": [
+        "Pediatric safety/effectiveness of this combination are not established. Older adults have increased amlodipine exposure and may be more sensitive, supporting lower initial-dose consideration and BP/fall-risk assessment. Adult component approvals do not create a pediatric combination schedule."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "8.4\u20138.5;12.3"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic impairment",
+      "assertions": [
+        "The fixed capsule is not recommended for severe renal impairment because an appropriate low benazepril strength is unavailable. Less severe impairment still requires kidney/potassium monitoring. Hepatic insufficiency decreases amlodipine clearance; consider lower doses and reassess symptoms. Reduced renal clearance of benazeprilat differs from amlodipine\u2019s disposition; avoid applying one component\u2019s PK reassurance to both."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "8.6\u20138.7;12.3;5.5\u20135.6"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and pharmacodynamics",
+      "assertions": [
+        "Benazepril is converted to benazeprilat, which inhibits ACE, reducing angiotensin II/aldosterone signaling. ACE also degrades bradykinin, relevant to ACE-inhibitor effects. Amlodipine blocks calcium influx predominantly in vascular smooth muscle and lowers peripheral resistance. BP effects complement one another; individual response is not guaranteed by older trial subgroup averages."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "12.1\u201312.2;14"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Absorption, metabolism and elimination",
+      "assertions": [
+        "Amlodipine peaks around 6\u201312 hours and has a terminal half-life 30\u201350 hours; it is extensively hepatically metabolized. Benazepril peaks 0.5\u20132 hours and is converted mainly in the liver to active benazeprilat, which peaks 1.5\u20134 hours and is cleared mainly renally in normal kidney function. Benazeprilat\u2019s effective elimination half-life is 10\u201311 hours, distinct from its longer terminal phase; steady state of both components is reached around 1 week."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "12.3"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Clinical variability",
+      "assertions": [
+        "Severe kidney impairment increases benazeprilat peak exposure and effective half-life. Older age and hepatic impairment decrease amlodipine clearance. The label allows food-independent administration while noting direct combination food-effect studies were not performed; avoid claiming every PK property of the fixed capsule was measured in every population."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "12.3; Patient Information"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": [
+        "Check BP, kidney function, potassium, volume status, pregnancy plans and prior angioedema before therapy; follow BP/orthostatic symptoms, edema/cough and renal/potassium changes. Reassess after titration or addition of NSAIDs, diuretics, potassium agents or RAS blockers. The label calls for periodic testing, not one mandatory numerical interval for everyone."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "5.2\u20135.6;7.1;17"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling",
+      "assertions": [
+        "Take the prescribed capsule at the same daily time; check the strength and missed-dose instruction. Report pregnancy promptly and discuss preconception alternatives. Avoid unapproved potassium salt substitutes. Dehydration, sweating, vomiting/diarrhea or low intake can cause hypotension; contact the clinician if these occur or fainting develops. Tell dental/surgical, dialysis and allergy-treatment teams about the ACE inhibitor."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "17; Patient Information;5.2\u20135.4"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Urgent assessment",
+      "assertions": [
+        "Seek emergency care for airway swelling, severe breathing difficulty or persistent/worsening chest pain. Fainting needs prompt clinician review; selected counseling says hold further treatment until consulted after syncope. Jaundice or marked hepatic abnormalities require assessment. Suspected overdose needs immediate medical help rather than extra salt/fluid or unsupervised dose changes."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "5.2\u20135.7;10;17; Patient Information"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Selected Avet 5/20 mg capsule is pink opaque cap/body with black imprint 922; a 100-capsule bottle is NDC 23155-922-01. This identity belongs to that generic product, not every Lotrel or generic capsule. Retain packaging and confirm appearance/NDC with the pharmacist; do not identify solely from a photo."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "16; Product characteristics"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Oral fixed capsules contain amlodipine equivalent 2.5, 5 or 10 mg with benazepril hydrochloride 10, 20 or 40 mg in the six labeled pairs: 2.5/10, 5/10, 5/20, 5/40, 10/20 and 10/40 mg. Not every possible mathematical ratio exists. Benazepril 5 mg is absent; no injectable or liquid combination conversion is supplied."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "3;11;16;8.7"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Selected Avet capsules are stored 20\u201325\u00b0C, protected from moisture, heat and light, and dispensed in a tight, light-resistant container. Follow the actual dispensed product\u2019s package instructions, keep away from children and retain its patient leaflet."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "16; Patient Information"
+        }
+      ]
+    }
+  ],
+  "hero_assertions": {
+    "essential": {
+      "title": "Pregnancy and angioedema need prompt action.",
+      "text": "Stop when pregnancy is detected and contact the clinician for an alternative. Tongue/throat swelling or breathing difficulty needs emergency care. Monitor kidney function and potassium.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "facts": [
+      [
+        "Components",
+        "Amlodipine plus benazepril hydrochloride"
+      ],
+      [
+        "Schedule",
+        "Once-daily oral capsule"
+      ],
+      [
+        "Labeled dose ceiling",
+        "Amlodipine 10 mg / benazepril 40 mg daily"
+      ]
+    ],
+    "sources": [
+      "label",
+      "brand"
+    ]
+  },
+  "section_assertions": [
+    {
+      "section": "indications",
+      "summary": "A fixed oral ACE-inhibitor/calcium-channel-blocker combination for hypertension.",
+      "takeaway": "Use after insufficient control with either component alone, as labeled.",
+      "sources": [
+        "brand",
+        "label"
+      ]
+    },
+    {
+      "section": "dosage",
+      "summary": "Use a matched component pair once daily and titrate to clinical response.",
+      "takeaway": "The fixed capsule is not recommended in severe renal impairment.",
+      "sources": [
+        "label"
+      ]
+    },
+    {
+      "section": "safety",
+      "summary": "Fetal toxicity, angioedema, hypotension, renal deterioration and hyperkalemia are key risks.",
+      "takeaway": "Facial/tongue swelling or breathing trouble needs emergency care.",
+      "sources": [
+        "label"
+      ]
+    },
+    {
+      "section": "interactions",
+      "summary": "Review potassium, renal-risk drugs and amlodipine exposure modifiers.",
+      "takeaway": "Do not add potassium salt substitutes without clinician advice.",
+      "sources": [
+        "label"
+      ]
+    },
+    {
+      "section": "populations",
+      "summary": "Pregnancy, age and organ function require separate assessment.",
+      "takeaway": "The fixed-dose combination has no established pediatric use.",
+      "sources": [
+        "label"
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "summary": "Benazepril reduces RAS signaling while amlodipine reduces vascular calcium influx.",
+      "takeaway": "Different component half-lives support daily dosing but do not eliminate accumulation risk.",
+      "sources": [
+        "label"
+      ]
+    },
+    {
+      "section": "practice",
+      "summary": "Track BP response, symptoms, renal function and potassium.",
+      "takeaway": "Write both component doses and check all interacting medicines.",
+      "sources": [
+        "label"
+      ]
+    },
+    {
+      "section": "product",
+      "summary": "Verify the two component amounts and actual manufacturer.",
+      "takeaway": "The first strength number is amlodipine equivalent, not amlodipine besylate salt mass.",
+      "sources": [
+        "label"
+      ]
+    }
+  ],
+  "limitations": [
+    "Current generic highlights06/2026 and detailed/Patient Information footer11/2025 differ; SPL effective and archive publication are recorded separately, not invented as a new clinical revision.",
+    "Retained Lotrel records include marketing-end dates; no current retail availability of every brand strength inferred. Representative identity is the selected generic.",
+    "Severe renal label recommends benazepril5 mg unavailable in the fixed capsule; no improvised splitting, dialysis, pediatric or acute-emergency regimen supplied.",
+    "Older trial race subgroup wording is not presented as a patient-specific efficacy guarantee or automatic treatment-selection rule."
+  ],
+  "unresolved_source_questions": [
+    {
+      "issue": "Generic highlights and detailed footer have different revision dates; retained brand product records include ended marketing dates.",
+      "published_handling": "Revision fields and SPL dates separately recorded; generic selected for representative identity; no retail availability inferred.",
+      "material_published_error": false
+    }
+  ],
+  "validation": {
+    "schema": "Actual validateMonograph result: []; exact APAP eight sections/order, four Safety core cards, three Product cards and three hero tuples.",
+    "tests_build_lint": "Parent batch checks required",
+    "rendered_page": "Parent batch QA required"
+  },
+  "monograph_sha256": "7ae105e0d86c695eeb6fad6ce21ee63dffa2b5344210d8ca65341a8ae3e59dbb",
+  "source_archive": {
+    "directory": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-19-thyroid-metformin",
+    "checked": "2026-10-01",
+    "verified": "Selected full SPL XML/parsed sections, DailyMed metadata pages, full Pfizer PI HTML/text, full FDA/Pfizer EUA PDF/text and current CDC HTML/text copied with exact SHA256 verification. Existing divergent files preserved."
+  }
+}
