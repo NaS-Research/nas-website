@@ -1,0 +1,1455 @@
+{
+  "date": "2026-10-01",
+  "status": "verified",
+  "module": "pharmacy-milliequivalent-calculations",
+  "sourcePolicy": "Supplied RxPrep 2023 only",
+  "source": {
+    "checklist": {
+      "chapter": 1,
+      "printedPage": 7,
+      "pdfPage": 19,
+      "entry": 14
+    },
+    "dependency": {
+      "chapter": 10,
+      "printedPages": [
+        146,
+        148
+      ],
+      "pdfPages": [
+        154,
+        156
+      ],
+      "allTextAndVisualRead": true,
+      "start": "Milliequivalents heading on printed146",
+      "end": "Chapter 10 end"
+    },
+    "conversionSheet": {
+      "chapter": 1,
+      "printedPage": 23,
+      "pdfPage": 35,
+      "rows": [
+        "Oral KCl 10% = 20 mEq/15 mL",
+        "Lithium citrate syrup 5 mL = carbonate 300 mg = lithium ion 8 mEq"
+      ],
+      "visuallyRead": true,
+      "wholeSheetAudit": "Remaining rows open; no full-sheet verification claimed."
+    }
+  },
+  "mappingSearch": {
+    "result": "No dedicated complete mass/MW/valence, solution-mEq or formulation-proportion calculation module. Existing unit module supplies basic ionic conversions; bipolar lithium paragraph/ four bank items give the source ratio; PN additive section uses labeled stock units. Clinical replacement and bipolar treatment chapters remain for their full chronological reviews.",
+    "relatedModules": [
+      "pharmacy-unit-conversions",
+      "pharmacy-moles-millimoles",
+      "pharmacy-osmolarity-calculations",
+      "parenteral-nutrition-calculations",
+      "bipolar-disorder",
+      "fluid-electrolyte-therapy"
+    ],
+    "searchLocations": [
+      "All module data and banks",
+      "pharmacyModules catalog",
+      "pharmacyLearning guides",
+      "pharmacyReview standalone bank",
+      "pharmacyCumulativeReview automatic selections"
+    ],
+    "broaderBank": "No standalone relevant item found. Five new-module selections span all four lessons. Stable legacy IDs preserve cumulative/account references."
+  },
+  "scope": {
+    "lessons": 4,
+    "teachingSections": 15,
+    "originalFigures": 4,
+    "embeddedChecks": 4,
+    "originalBankQuestions": 30,
+    "cumulativeAutoSelection": 5,
+    "repairedLegacyQuestions": 4
+  },
+  "coverage": [
+    {
+      "lesson": "valence-and-particles",
+      "sourcePrintedPages": [
+        146,
+        147
+      ],
+      "topics": [
+        "Charge on one side",
+        "Complete eleven-compound valence table",
+        "NaCl/CaCl2 figure",
+        "Li2CO3 factor versus monovalent Li+",
+        "mEq/mmol and source chelation memory cue"
+      ]
+    },
+    {
+      "lesson": "mass-and-equivalents",
+      "sourcePrintedPages": [
+        146,
+        148
+      ],
+      "topics": [
+        "mg x valence/MW",
+        "Reverse compound mass",
+        "Specified salt form and ion versus salt mass",
+        "Final rounding"
+      ]
+    },
+    {
+      "lesson": "solution-equivalents",
+      "sourcePrintedPages": [
+        147,
+        148
+      ],
+      "topics": [
+        "Percent-strength mass",
+        "mg/mL and mEq/mL",
+        "Total amount versus concentration",
+        "Reverse stock volume"
+      ]
+    },
+    {
+      "lesson": "formulation-conversions",
+      "sourcePrintedPages": [
+        147,
+        148
+      ],
+      "topics": [
+        "Oral KCl ratio",
+        "Lithium carbonate/citrate/ion ratio",
+        "Daily versus portion amount",
+        "Separate MW and ratio approximations",
+        "Explicit rounding and calculation boundary"
+      ]
+    }
+  ],
+  "itemReview": {
+    "all30NewPromptsChoicesKeysExplanationsIndividuallyReviewed": true,
+    "allFourEmbeddedChecksReviewed": true,
+    "conceptualIds": [
+      "meq-calc-001",
+      "meq-calc-002",
+      "meq-calc-003",
+      "meq-calc-006",
+      "meq-calc-012",
+      "meq-calc-028",
+      "meq-calc-030"
+    ],
+    "originality": "Original quantities and wording; source practice prompts not reproduced.",
+    "distractors": "Particle/charge substitution, double-counted charge, incorrect salt/ion distinction, inverse/missing valence, g/mg, total/concentration and portion/day confusion, inverse ratios and silently substituted MW precision.",
+    "finishedModuleComparedAgainToSource": true,
+    "reviewedItems": [
+      {
+        "id": "meq-calc-001",
+        "itemSha256": "32bc87280434329d12ba6870931871139be0ed256b4cf603f397e11ad075c50a",
+        "lesson": "valence-and-particles",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          146,
+          147
+        ],
+        "status": "verified",
+        "keyedAnswer": "Valence factor 1; dissociation particles 2",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Source-supported charge/factor, unit or formulation-method concept independently reviewed."
+      },
+      {
+        "id": "meq-calc-002",
+        "itemSha256": "6769ac554fe6f4c3b32165410a99352c228872ce83c2abd1551a81ef423a89a0",
+        "lesson": "valence-and-particles",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          146,
+          147
+        ],
+        "status": "verified",
+        "keyedAnswer": "Valence factor 2; particles 3",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Source-supported charge/factor, unit or formulation-method concept independently reviewed."
+      },
+      {
+        "id": "meq-calc-003",
+        "itemSha256": "77111ab6bbba7f7d11d3c3a9d7fdd6237f1e5f358918ab8a9d33f33e355941a6",
+        "lesson": "valence-and-particles",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          146,
+          147
+        ],
+        "status": "verified",
+        "keyedAnswer": "Two Li+ ions supply total positive charge 2 per formula unit",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Source-supported charge/factor, unit or formulation-method concept independently reviewed."
+      },
+      {
+        "id": "meq-calc-004",
+        "itemSha256": "1f2c1bc9c6a92acb5243e78c286f6a57d4da9b8a5038674c8fa23efaf694a1e3",
+        "lesson": "valence-and-particles",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          146,
+          147
+        ],
+        "status": "verified",
+        "keyedAnswer": "12 mEq",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "meq-calc-005",
+        "itemSha256": "194b6f507e2f5cd8e139b2a431985d26ac062a1bb85c8be94cb904e33233b03e",
+        "lesson": "valence-and-particles",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          146,
+          147
+        ],
+        "status": "verified",
+        "keyedAnswer": "13 mmol",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "meq-calc-006",
+        "itemSha256": "55d5b97e4d050aa463198f8d32e55264bfc23215e712a7d7771727cff6bd8a81",
+        "lesson": "valence-and-particles",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          146,
+          147
+        ],
+        "status": "verified",
+        "keyedAnswer": "Count total positive charge or total negative charge magnitude on one side",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Source-supported charge/factor, unit or formulation-method concept independently reviewed."
+      },
+      {
+        "id": "meq-calc-007",
+        "itemSha256": "b58e8807a48f88e6eb9e2de6f579dc55d73b6442db53845742a4e00276f9d10a",
+        "lesson": "mass-and-equivalents",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          146,
+          148
+        ],
+        "status": "verified",
+        "keyedAnswer": "20 mEq",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "meq-calc-008",
+        "itemSha256": "bfa76d6581c0c913fdb5137235f545c6cae162f3f8c4d29f6e3742cb168b1138",
+        "lesson": "mass-and-equivalents",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          146,
+          148
+        ],
+        "status": "verified",
+        "keyedAnswer": "10 mEq",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "meq-calc-009",
+        "itemSha256": "c42efb50d645073a8835e94b469ff6a2026e66741fdd56b04002fc9d94651d5e",
+        "lesson": "mass-and-equivalents",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          146,
+          148
+        ],
+        "status": "verified",
+        "keyedAnswer": "894 mg",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "meq-calc-010",
+        "itemSha256": "c21109bf2c97a0297b43c4509c5db6b896a1e69715cc1c06cfd9180287f577e6",
+        "lesson": "mass-and-equivalents",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          146,
+          148
+        ],
+        "status": "verified",
+        "keyedAnswer": "600 mg",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "meq-calc-011",
+        "itemSha256": "f65da51f4bd53e39a4b8e4dcab89b8c424e6f405470afc07a6e17c29b010bbd6",
+        "lesson": "mass-and-equivalents",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          146,
+          148
+        ],
+        "status": "verified",
+        "keyedAnswer": "4 mEq",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "meq-calc-012",
+        "itemSha256": "17574047760c5750b2d15e93ac5376fd45320b9796cee9d53230edd25c54fe6e",
+        "lesson": "mass-and-equivalents",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          146,
+          148
+        ],
+        "status": "verified",
+        "keyedAnswer": "Multiply grams by 1,000 to get mg",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Source-supported charge/factor, unit or formulation-method concept independently reviewed."
+      },
+      {
+        "id": "meq-calc-013",
+        "itemSha256": "c2bce43c87b28a094ff25dc2b87d95584e9d62babff990a2623ab91dc4402c0c",
+        "lesson": "mass-and-equivalents",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          146,
+          148
+        ],
+        "status": "verified",
+        "keyedAnswer": "8.3 mEq",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "meq-calc-014",
+        "itemSha256": "20ef9c81a152184a6d4b88ebf23d17779914534012844d1d6f12f9a6b90d1e6a",
+        "lesson": "mass-and-equivalents",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          146,
+          148
+        ],
+        "status": "verified",
+        "keyedAnswer": "10 mEq",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "meq-calc-015",
+        "itemSha256": "73205b19fd3341203c1e23b48867981e6184f84b8ac4e33c7f2fef08b8788ace",
+        "lesson": "solution-equivalents",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          147,
+          148
+        ],
+        "status": "verified",
+        "keyedAnswer": "25 mEq",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "meq-calc-016",
+        "itemSha256": "4d1139f4ae7a3b3bf4b5209dc0de31ca5ff22f7ae482a96a1bf8dbad85ab0e3e",
+        "lesson": "solution-equivalents",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          147,
+          148
+        ],
+        "status": "verified",
+        "keyedAnswer": "50 mEq",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "meq-calc-017",
+        "itemSha256": "8073aeb6fc4bb12f79485515bc97be906c16ebfee7143b22808a67dad2930d43",
+        "lesson": "solution-equivalents",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          147,
+          148
+        ],
+        "status": "verified",
+        "keyedAnswer": "27 mEq",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "meq-calc-018",
+        "itemSha256": "f2562c3c0e0700ae9a830df52415d011123ce2d19892dd881115297091bd68d9",
+        "lesson": "solution-equivalents",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          147,
+          148
+        ],
+        "status": "verified",
+        "keyedAnswer": "12 mL",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "meq-calc-019",
+        "itemSha256": "2edcea0a71fd9c53d1e3bf0ce80895255362900eb8b7e3cfcb790d6f1eb24fda",
+        "lesson": "solution-equivalents",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          147,
+          148
+        ],
+        "status": "verified",
+        "keyedAnswer": "6.0 mEq",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "meq-calc-020",
+        "itemSha256": "6c509d5d36d65e24bbea3ad77b6a6cc2ff0e20020a648f883b21766153bb62d9",
+        "lesson": "solution-equivalents",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          147,
+          148
+        ],
+        "status": "verified",
+        "keyedAnswer": "0.2 mEq/mL",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "meq-calc-021",
+        "itemSha256": "f82f383ce577addb8069db9d196ad8275396d5d786f54ba2af08b2c3d8cc17ce",
+        "lesson": "solution-equivalents",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          147,
+          148
+        ],
+        "status": "verified",
+        "keyedAnswer": "1.788 g",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "meq-calc-022",
+        "itemSha256": "c858c0e304779da7258ae8dc782a40cf7f3554f6185c0502b5d5521b34dd1019",
+        "lesson": "formulation-conversions",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          147,
+          148
+        ],
+        "status": "verified",
+        "keyedAnswer": "22.5 mL",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "meq-calc-023",
+        "itemSha256": "8a4c2cd5c0b554a76fdd9c9748305c6d5a05bbdb1f6355618fb25a11903516cf",
+        "lesson": "formulation-conversions",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          147,
+          148
+        ],
+        "status": "verified",
+        "keyedAnswer": "22.5 mL/day",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "meq-calc-024",
+        "itemSha256": "f52ddca8a45d3a0e3176cbebdc3f41e85e30da3681968506388810f32a6866ba",
+        "lesson": "formulation-conversions",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          147,
+          148
+        ],
+        "status": "verified",
+        "keyedAnswer": "10 mL",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "meq-calc-025",
+        "itemSha256": "bdfa3e066a9c80cc6d1ad168143783c4e194815546fa27c449a337a67d52d389",
+        "lesson": "formulation-conversions",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          147,
+          148
+        ],
+        "status": "verified",
+        "keyedAnswer": "20 mEq lithium ion",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "meq-calc-026",
+        "itemSha256": "2acac78b4043150ff973d64a80bb4a44782c3f7b3e93ba325fd661bf2487ff00",
+        "lesson": "formulation-conversions",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          147,
+          148
+        ],
+        "status": "verified",
+        "keyedAnswer": "10 mL/day",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "meq-calc-027",
+        "itemSha256": "26fb473de2122d129f529987a804590dc46a2697292d15c73312a42e9560f46c",
+        "lesson": "formulation-conversions",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          147,
+          148
+        ],
+        "status": "verified",
+        "keyedAnswer": "10.1 mL",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "meq-calc-028",
+        "itemSha256": "81339a866d284c2f276802f8614f77b10889e4d33d9fcc619a521f0ff3a38e6b",
+        "lesson": "formulation-conversions",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          147,
+          148
+        ],
+        "status": "verified",
+        "keyedAnswer": "They use different stated numerical approximations; follow the requested method and precision",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Source-supported charge/factor, unit or formulation-method concept independently reviewed."
+      },
+      {
+        "id": "meq-calc-029",
+        "itemSha256": "a5901f61675de4320b616d32df7a13ceb31cc400725aad95fd8a916fd9bd65af",
+        "lesson": "formulation-conversions",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          147,
+          148
+        ],
+        "status": "verified",
+        "keyedAnswer": "750 mg",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Independent Decimal keyed-answer comparison passed."
+      },
+      {
+        "id": "meq-calc-030",
+        "itemSha256": "7f5ab5e6fe6d9982acaa723fb199f8d7c7310f106e83abc2290084d9ad0d6b77",
+        "lesson": "formulation-conversions",
+        "sourceChapter": 10,
+        "sourcePrintedPages": [
+          147,
+          148
+        ],
+        "status": "verified",
+        "keyedAnswer": "15 mL/20 mEq",
+        "review": "Prompt, all four choices, key and explanation read; one defensible best answer; original quantities and source-supported method.",
+        "calculation": "Source-supported charge/factor, unit or formulation-method concept independently reviewed."
+      }
+    ]
+  },
+  "legacyItemReview": {
+    "unitItems": {
+      "ids": [
+        "units-015",
+        "units-016",
+        "units-017",
+        "units-018",
+        "units-019"
+      ],
+      "result": "All five prompts/choices/keys/explanations and embedded check reviewed; correct and retained unchanged. Four numerical bank items plus embedded check independently recalculated."
+    },
+    "bipolarItems": {
+      "ids": [
+        "bipolar-disorder-053",
+        "bipolar-disorder-054",
+        "bipolar-disorder-055",
+        "bipolar-disorder-056"
+      ],
+      "finding": "Item053 has two true assertions; generic action/integration/hazard choices do not cleanly distinguish the intended best response. Replaced four lithium-ratio items with explicit original calculations, preserving ID, key index, difficulty and reviewHref.",
+      "result": "Verified: four revised items rendered and graded correctly; all stable fields preserved; other 116 items deep-equal HEAD baseline.",
+      "wholeModule": "Bipolar treatment/module and other bank items not reverified; their existing status/source discrepancy evidence preserved.",
+      "reviewedItems": [
+        {
+          "id": "bipolar-disorder-053",
+          "itemSha256": "486f34255830606cfc5aec933e9a28a4a6420e66976c11506e50c9fec6c6aa73",
+          "status": "verified",
+          "keyedAnswer": "20 mL/day",
+          "sourcePrintedPages": [
+            23,
+            147,
+            148
+          ],
+          "review": "All choices, key and rationale read; independent arithmetic and rendered grading passed. Stable ID/key index/difficulty/reviewHref retained."
+        },
+        {
+          "id": "bipolar-disorder-054",
+          "itemSha256": "ffbdadea21a33d76b2e5f9391517839b6beb8bdf7f8f88cb9cfc9018ee0dcdd8",
+          "status": "verified",
+          "keyedAnswer": "12 mEq",
+          "sourcePrintedPages": [
+            23,
+            147,
+            148
+          ],
+          "review": "All choices, key and rationale read; independent arithmetic and rendered grading passed. Stable ID/key index/difficulty/reviewHref retained."
+        },
+        {
+          "id": "bipolar-disorder-055",
+          "itemSha256": "942a55e0cf215bcd18e3cc17697915c0d91da02466ee896cb1098a768a6cc0be",
+          "status": "verified",
+          "keyedAnswer": "12.5 mL",
+          "sourcePrintedPages": [
+            23,
+            147,
+            148
+          ],
+          "review": "All choices, key and rationale read; independent arithmetic and rendered grading passed. Stable ID/key index/difficulty/reviewHref retained."
+        },
+        {
+          "id": "bipolar-disorder-056",
+          "itemSha256": "ed6e1ed057cce7ea354931446d6e5c38b86d016845d80bb3e9e9423a0f9cd80a",
+          "status": "verified",
+          "keyedAnswer": "600 mg/day x 5 mL/300 mg",
+          "sourcePrintedPages": [
+            23,
+            147,
+            148
+          ],
+          "review": "All choices, key and rationale read; independent arithmetic and rendered grading passed. Stable ID/key index/difficulty/reviewHref retained."
+        }
+      ]
+    },
+    "standalone": "No relevant standalone item found."
+  },
+  "independentArithmetic": {
+    "method": "Independent Decimal arithmetic from literal inputs; all numerical new-bank keyed choices compared; all displayed examples/figures/checks and four revised lithium items reviewed, with five retained unit calculations rechecked.",
+    "passed": true,
+    "count": 60,
+    "bank": [
+      {
+        "label": "meq-calc-004",
+        "unrounded": "12",
+        "expected": "12",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-005",
+        "unrounded": "13",
+        "expected": "13",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-007",
+        "unrounded": "20.0",
+        "expected": "20",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-008",
+        "unrounded": "10.00",
+        "expected": "10",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-009",
+        "unrounded": "894.0",
+        "expected": "894",
+        "unit": "mg",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-010",
+        "unrounded": "600",
+        "expected": "600",
+        "unit": "mg",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-011",
+        "unrounded": "4",
+        "expected": "4",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-013",
+        "unrounded": "8.305647840531561461794019934",
+        "expected": "8.3",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-014",
+        "unrounded": "10",
+        "expected": "10",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-015",
+        "unrounded": "25.000",
+        "expected": "25",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-016",
+        "unrounded": "50",
+        "expected": "50",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-017",
+        "unrounded": "27.0",
+        "expected": "27",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-018",
+        "unrounded": "12",
+        "expected": "12",
+        "unit": "mL",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-019",
+        "unrounded": "6.040268456375838926174496644",
+        "expected": "6.0",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-020",
+        "unrounded": "0.2",
+        "expected": "0.2",
+        "unit": "mEq/mL",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-021",
+        "unrounded": "1.788",
+        "expected": "1.788",
+        "unit": "g",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-022",
+        "unrounded": "22.5",
+        "expected": "22.5",
+        "unit": "mL",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-023",
+        "unrounded": "22.5",
+        "expected": "22.5",
+        "unit": "mL/day",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-024",
+        "unrounded": "10",
+        "expected": "10",
+        "unit": "mL",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-025",
+        "unrounded": "20.0",
+        "expected": "20",
+        "unit": "mEq lithium ion",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-026",
+        "unrounded": "10",
+        "expected": "10",
+        "unit": "mL/day",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-027",
+        "unrounded": "10.13513513513513513513513514",
+        "expected": "10.1",
+        "unit": "mL",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-029",
+        "unrounded": "750",
+        "expected": "750",
+        "unit": "mg",
+        "passed": true
+      }
+    ],
+    "conceptualIds": [
+      "meq-calc-001",
+      "meq-calc-002",
+      "meq-calc-003",
+      "meq-calc-006",
+      "meq-calc-012",
+      "meq-calc-028",
+      "meq-calc-030"
+    ],
+    "checks": [
+      {
+        "label": "meq-calc-004",
+        "unrounded": "12",
+        "expected": "12",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-005",
+        "unrounded": "13",
+        "expected": "13",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-007",
+        "unrounded": "20.0",
+        "expected": "20",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-008",
+        "unrounded": "10.00",
+        "expected": "10",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-009",
+        "unrounded": "894.0",
+        "expected": "894",
+        "unit": "mg",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-010",
+        "unrounded": "600",
+        "expected": "600",
+        "unit": "mg",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-011",
+        "unrounded": "4",
+        "expected": "4",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-013",
+        "unrounded": "8.305647840531561461794019934",
+        "expected": "8.3",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-014",
+        "unrounded": "10",
+        "expected": "10",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-015",
+        "unrounded": "25.000",
+        "expected": "25",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-016",
+        "unrounded": "50",
+        "expected": "50",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-017",
+        "unrounded": "27.0",
+        "expected": "27",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-018",
+        "unrounded": "12",
+        "expected": "12",
+        "unit": "mL",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-019",
+        "unrounded": "6.040268456375838926174496644",
+        "expected": "6.0",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-020",
+        "unrounded": "0.2",
+        "expected": "0.2",
+        "unit": "mEq/mL",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-021",
+        "unrounded": "1.788",
+        "expected": "1.788",
+        "unit": "g",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-022",
+        "unrounded": "22.5",
+        "expected": "22.5",
+        "unit": "mL",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-023",
+        "unrounded": "22.5",
+        "expected": "22.5",
+        "unit": "mL/day",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-024",
+        "unrounded": "10",
+        "expected": "10",
+        "unit": "mL",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-025",
+        "unrounded": "20.0",
+        "expected": "20",
+        "unit": "mEq lithium ion",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-026",
+        "unrounded": "10",
+        "expected": "10",
+        "unit": "mL/day",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-027",
+        "unrounded": "10.13513513513513513513513514",
+        "expected": "10.1",
+        "unit": "mL",
+        "passed": true
+      },
+      {
+        "label": "meq-calc-029",
+        "unrounded": "750",
+        "expected": "750",
+        "unit": "mg",
+        "passed": true
+      },
+      {
+        "label": "teaching/check charge one side CaCl2",
+        "unrounded": "2",
+        "expected": "2",
+        "unit": "factor",
+        "passed": true
+      },
+      {
+        "label": "teaching Mg2+ amount",
+        "unrounded": "14",
+        "expected": "14",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "teaching calcium amount",
+        "unrounded": "14",
+        "expected": "14",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "teaching KCl mass",
+        "unrounded": "745.000",
+        "expected": "745",
+        "unit": "mg",
+        "passed": true
+      },
+      {
+        "label": "teaching KCl equivalent",
+        "unrounded": "10.00",
+        "expected": "10",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "teaching MgSO4 mass/figure2",
+        "unrounded": "301.000",
+        "expected": "301",
+        "unit": "mg",
+        "passed": true
+      },
+      {
+        "label": "teaching MgSO4 equivalent/figure2",
+        "unrounded": "5.00",
+        "expected": "5",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "teaching CaCl2 reverse/check2",
+        "unrounded": "441",
+        "expected": "441",
+        "unit": "mg",
+        "passed": true
+      },
+      {
+        "label": "teaching CaCl2 forward check",
+        "unrounded": "6",
+        "expected": "6",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "teaching 0.50g rounding",
+        "unrounded": "8.305647840531561461794019934",
+        "expected": "8.3",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "teaching percentmass/figure3",
+        "unrounded": "840.000",
+        "expected": "840",
+        "unit": "mg",
+        "passed": true
+      },
+      {
+        "label": "teaching percentamount/check3/figure3",
+        "unrounded": "10.000",
+        "expected": "10",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "teaching NH4Cl mass",
+        "unrounded": "1070.00",
+        "expected": "1070",
+        "unit": "mg",
+        "passed": true
+      },
+      {
+        "label": "teaching NH4Cl equivalent",
+        "unrounded": "20.0",
+        "expected": "20",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "teaching stated KCl label",
+        "unrounded": "30",
+        "expected": "30",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "teaching stated KCl mass",
+        "unrounded": "2.235",
+        "expected": "2.235",
+        "unit": "g",
+        "passed": true
+      },
+      {
+        "label": "teaching statedstockvol",
+        "unrounded": "9",
+        "expected": "9",
+        "unit": "mL",
+        "passed": true
+      },
+      {
+        "label": "teaching statedconcentration",
+        "unrounded": "0.2",
+        "expected": ".2",
+        "unit": "mEq/mL",
+        "passed": true
+      },
+      {
+        "label": "teaching KCl ratio total",
+        "unrounded": "22.5",
+        "expected": "22.5",
+        "unit": "mL",
+        "passed": true
+      },
+      {
+        "label": "teaching KCl ratio portion",
+        "unrounded": "7.5",
+        "expected": "7.5",
+        "unit": "mL",
+        "passed": true
+      },
+      {
+        "label": "teaching Li dailycarbonate/figure4",
+        "unrounded": "600",
+        "expected": "600",
+        "unit": "mg/day",
+        "passed": true
+      },
+      {
+        "label": "teaching Li ratio/check4/figure4",
+        "unrounded": "10",
+        "expected": "10",
+        "unit": "mL/day",
+        "passed": true
+      },
+      {
+        "label": "teaching Li ratio equivalents",
+        "unrounded": "16",
+        "expected": "16",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "teaching Li MW equivalents",
+        "unrounded": "16.21621621621621621621621622",
+        "expected": "16.216216",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "teaching Li MW volume",
+        "unrounded": "10.13513513513513513513513514",
+        "expected": "10.135135",
+        "unit": "mL",
+        "passed": true
+      },
+      {
+        "label": "teaching Li finalround",
+        "unrounded": "10.13513513513513513513513514",
+        "expected": "10.1",
+        "unit": "mL",
+        "passed": true
+      },
+      {
+        "label": "teaching Li reverse ratio",
+        "unrounded": "600",
+        "expected": "600",
+        "unit": "mg",
+        "passed": true
+      },
+      {
+        "label": "teaching KCl reverse ratio",
+        "unrounded": "30.0",
+        "expected": "30",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "legacy053",
+        "unrounded": "20",
+        "expected": "20",
+        "unit": "mL/day",
+        "passed": true
+      },
+      {
+        "label": "legacy054",
+        "unrounded": "12.0",
+        "expected": "12",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "legacy055",
+        "unrounded": "12.5",
+        "expected": "12.5",
+        "unit": "mL",
+        "passed": true
+      },
+      {
+        "label": "legacy056",
+        "unrounded": "10",
+        "expected": "10",
+        "unit": "mL/day",
+        "passed": true
+      },
+      {
+        "label": "retained units015",
+        "unrounded": "32",
+        "expected": "32",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "retained units016",
+        "unrounded": "11",
+        "expected": "11",
+        "unit": "mmol",
+        "passed": true
+      },
+      {
+        "label": "retained units017",
+        "unrounded": "16",
+        "expected": "16",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "retained units019",
+        "unrounded": "5",
+        "expected": "5",
+        "unit": "mmol/L",
+        "passed": true
+      },
+      {
+        "label": "retained unit embedded calcium",
+        "unrounded": "7",
+        "expected": "7",
+        "unit": "mmol",
+        "passed": true
+      }
+    ]
+  },
+  "sourceArithmetic": {
+    "passed": true,
+    "count": 10,
+    "checks": [
+      {
+        "label": "Source 61 saltmass",
+        "unrounded": "2.98",
+        "expected": "2.98",
+        "unit": "g",
+        "passed": true
+      },
+      {
+        "label": "Source 61 formulationratio",
+        "unrounded": "30",
+        "expected": "30",
+        "unit": "mL/day",
+        "passed": true
+      },
+      {
+        "label": "Source 62 equivalent",
+        "unrounded": "16.10738255033557046979865772",
+        "expected": "16.1",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "Source 63 equivalent",
+        "unrounded": "200",
+        "expected": "200",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "Source 64 equivalent",
+        "unrounded": "16.61129568106312292358803987",
+        "expected": "16.6",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "Source 65 equivalent",
+        "unrounded": "50.000",
+        "expected": "50",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "Source 66 MW equivalent",
+        "unrounded": "24.32432432432432432432432432",
+        "expected": "24.324",
+        "unit": "mEq",
+        "passed": true
+      },
+      {
+        "label": "Source 66 MW volume",
+        "unrounded": "15.2027027027027027027027027",
+        "expected": "15",
+        "unit": "mL/day",
+        "passed": true
+      },
+      {
+        "label": "Source 66 ratio volume",
+        "unrounded": "15",
+        "expected": "15",
+        "unit": "mL/day",
+        "passed": true
+      },
+      {
+        "label": "Source KCl statedratio vs MW",
+        "unrounded": "20.13422818791946308724832215",
+        "expected": "20.134228",
+        "unit": "mEq",
+        "passed": true
+      }
+    ]
+  },
+  "sourceFindings": [
+    "NaCl has valence factor1/particles2; CaCl2 factor2/particles3. Count total positive OR negative magnitude, not both sides.",
+    "Li2CO3 factor2 arises from two monovalent Li+ ions, not divalent lithium.",
+    "The source MW method and fixed lithium formulation ratio produce different intermediate values but the same whole-mL rounding in its worked example. New exercises specify method/precision so rounding differences do not create multiple correct answers.",
+    "KCl 10% at MW74.5 gives about20.134 mEq per15mL by mass calculation; the source formulation ratio rounds this to20mEq/15mL. Preserve both stated methods rather than silently equating them at arbitrary precision.",
+    "The final source example refers to a branded lithium presentation as capsules. This calculation subsection does not establish dosage-form identity; original exercises use generic carbonate amounts and explicit ratios without reproducing that unsupported presentation wording.",
+    "The new module states the source chelation memory cue without inventing a drug-specific interaction or clinical administration recommendation."
+  ],
+  "unresolvedIssues": [],
+  "validation": {
+    "focusedAudit": {
+      "result": "Passed: no hard errors or source gaps. Size and six/seven-items-per-lesson advisories reviewed against complete three-page source subsection: charge/particle distinction, mass/MW/valence, solution equivalents and formulation ratios all covered without a fixed quota or padding.",
+      "report": {
+        "modules": 1,
+        "questions": 30,
+        "hardErrors": [],
+        "sourceGaps": [],
+        "sizeAdvisories": [
+          {
+            "module": "pharmacy-milliequivalent-calculations",
+            "questions": 30,
+            "review": "Confirm topic coverage in the clinical audit ledger"
+          }
+        ],
+        "thinLessons": [
+          {
+            "module": "pharmacy-milliequivalent-calculations",
+            "lesson": "valence-and-particles",
+            "count": 6
+          },
+          {
+            "module": "pharmacy-milliequivalent-calculations",
+            "lesson": "solution-equivalents",
+            "count": 7
+          }
+        ],
+        "weakestModules": [
+          {
+            "module": "pharmacy-milliequivalent-calculations",
+            "lessons": 4,
+            "questions": 30,
+            "minimumLessonCoverage": 6
+          }
+        ]
+      }
+    },
+    "build": "Passed: exact scoped Next production build, 567 pages.",
+    "desktopMobile": [
+      {
+        "build": "scoped production candidate",
+        "width": 1440,
+        "lessons": 4,
+        "figures": 4,
+        "embeddedChecks": 4,
+        "assessmentCorrect": 10,
+        "secondAttemptDistinct": true,
+        "incorrectFeedbackAndRemediation": true,
+        "priorConversionFigures": 4,
+        "priorConcentrationFigures": 5,
+        "priorDilutionFigures": 4,
+        "priorOsmolarityFigures": 4,
+        "curriculum": true,
+        "sitemap": true,
+        "noOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "build": "scoped production candidate",
+        "width": 390,
+        "lessons": 4,
+        "figures": 4,
+        "embeddedChecks": 4,
+        "assessmentCorrect": 10,
+        "secondAttemptDistinct": true,
+        "incorrectFeedbackAndRemediation": true,
+        "priorConversionFigures": 4,
+        "priorConcentrationFigures": 5,
+        "priorDilutionFigures": 4,
+        "priorOsmolarityFigures": 4,
+        "curriculum": true,
+        "sitemap": true,
+        "noOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "build": "scoped production candidate",
+        "scope": "Four revised lithium questions only; unrelated bipolar clinical content not reverified",
+        "width": 390,
+        "repairedIds": [
+          "bipolar-disorder-053",
+          "bipolar-disorder-054",
+          "bipolar-disorder-055",
+          "bipolar-disorder-056"
+        ],
+        "allFourRenderedAndGradedCorrectly": true,
+        "stableAnchors": true,
+        "testOnlyControlledShuffle": true,
+        "noOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "build": "current working Learn integration",
+        "width": 390,
+        "narrowWidth": 320,
+        "librarySearch": true,
+        "moduleLink": true,
+        "figures": 4,
+        "noOverflow": true,
+        "signedOutMemberBoundary": 401,
+        "pageErrors": []
+      }
+    ],
+    "candidateDiff": "Passed: semantic ledger differences restricted to chapters 1/10, this new module and a scoped bipolar item-review record. Only new content, four legacy lithium repairs, reader/catalog registration and evidence files staged; unrelated work preserved.",
+    "technical": {
+      "module": "pharmacy-milliequivalent-calculations",
+      "uniqueNumber": true,
+      "uniqueIds": true,
+      "uniquePrompts": true,
+      "choicesAndAnchorsValid": true,
+      "lessons": 4,
+      "questions": 30,
+      "cumulativeItems": 5,
+      "cumulativeLessonCoverage": 4,
+      "legacyRepairedItems": 4,
+      "legacyUnchangedOtherItems": 116,
+      "legacyIdsAnchorsKeysDifficultyPreserved": true,
+      "passed": true
+    },
+    "renderedVisualReview": "All four figures visually inspected at 1440 desktop and 390 mobile via unobscured viewport captures. Equations, labels, units and wrapping are legible."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "baseCommit": "e5524c66edb09d05c0a9e7d0290aace44c5f6195",
+    "commit": "pending",
+    "push": "pending",
+    "production": "not verified"
+  },
+  "remainingBookCoverage": "Determining fluid needs is next at Chapter11 printed150/PDF158. Chapter1 checklist and whole chapters9/10 remain open until earlier still-unreviewed source sections are reconciled.",
+  "verificationDate": "2026-10-01",
+  "contentHashes": {
+    "src/data/modules/pharmacyMilliequivalentCalculations.js": "cdc8d37595abf47261513bbaf0e0a4696aee7f239c8e9791359019772ee81f86",
+    "src/data/questionBanks/pharmacyMilliequivalentCalculations.js": "f5aa3e9d19c9ca93e7254f76659233fd3812ce5a5fde3a28ba470153a837db56",
+    "src/components/learn/PharmacyMilliequivalentVisual.jsx": "513f9e87a862202e834b21dbb14230148aec4d0028a80e6d3214659fbd9c00f1",
+    "src/data/questionBanks/bipolarDisorder.js": "467d4b637b83f4d8bd46d5dfeaf7b1a623c811f0cba2a631fb9f362588a5a632"
+  }
+}

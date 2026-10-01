@@ -65,4 +65,53 @@ const reviewLessonByConcept = {
 };
 const dimensions=[["principle","Which statement is most accurate?",0],["action","Which action best applies the evidence?",1],["integration","Which plan demonstrates the strongest clinical reasoning?",1],["hazard","Which error creates the greatest avoidable risk?",2]];
 const distractors=["Use one symptom or screening score as the complete diagnosis.","Choose treatment without reviewing episode, safety, interactions, or patient preference.","Change several therapies without targets, monitoring, or follow-up."];
-export const bipolarDisorderQuestionBank=concepts.flatMap(([slug,principle,action,hazard],i)=>dimensions.map(([dimension,stem,type],j)=>{const correct=[principle,action,hazard][type];const choices=dimension==="hazard"?[hazard,principle,action,distractors[(i+j)%3]]:[correct,hazard,distractors[(i+j)%3],distractors[(i+j+1)%3]];return{id:`bipolar-disorder-${String(i*4+j+1).padStart(3,"0")}`,question:`${stem} Focus: ${slug.replaceAll("-"," ")}.`,choices,answer:0,rationale:`${principle} ${action}`,reviewHref:`#${reviewLessonByConcept[slug]}`,difficulty:j<2?"foundational":"advanced"};}));
+const generatedBipolarDisorderQuestionBank=concepts.flatMap(([slug,principle,action,hazard],i)=>dimensions.map(([dimension,stem,type],j)=>{const correct=[principle,action,hazard][type];const choices=dimension==="hazard"?[hazard,principle,action,distractors[(i+j)%3]]:[correct,hazard,distractors[(i+j)%3],distractors[(i+j+1)%3]];return{id:`bipolar-disorder-${String(i*4+j+1).padStart(3,"0")}`,question:`${stem} Focus: ${slug.replaceAll("-"," ")}.`,choices,answer:0,rationale:`${principle} ${action}`,reviewHref:`#${reviewLessonByConcept[slug]}`,difficulty:j<2?"foundational":"advanced"};}));
+
+const lithiumCalculationItems = {
+  "bipolar-disorder-053": {
+    "question": "A calculation exercise supplies 300 mg lithium carbonate = 5 mL lithium citrate syrup. What total syrup volume corresponds to 600 mg carbonate per portion, two portions per day?",
+    "choices": [
+      "20 mL/day",
+      "10 mL/day",
+      "40 mL/day",
+      "1,200 mL/day"
+    ],
+    "answer": 0,
+    "rationale": "Total carbonate amount = 600 x 2 = 1,200 mg/day. Using the supplied formulation ratio gives 1,200 x 5/300 = 20 mL syrup/day. This is a calculation, not a patient-specific switch instruction."
+  },
+  "bipolar-disorder-054": {
+    "question": "A stated lithium-citrate syrup contains 8 mEq lithium ion in 5 mL. How many mEq lithium ion are represented by 7.5 mL?",
+    "choices": [
+      "12 mEq",
+      "7.5 mEq",
+      "60 mEq",
+      "1.5 mEq"
+    ],
+    "answer": 0,
+    "rationale": "7.5 mL x 8 mEq/5 mL = 12 mEq lithium ion. Keep mL and mEq distinct."
+  },
+  "bipolar-disorder-055": {
+    "question": "An exercise supplies the formulation ratio 300 mg lithium carbonate = 5 mL lithium citrate syrup. What syrup volume corresponds to a total 750 mg carbonate amount?",
+    "choices": [
+      "12.5 mL",
+      "5 mL",
+      "25 mL",
+      "750 mL"
+    ],
+    "answer": 0,
+    "rationale": "750 mg x 5 mL/300 mg = 12.5 mL syrup. Use the explicitly supplied formulation ratio; do not silently replace it with a different MW calculation."
+  },
+  "bipolar-disorder-056": {
+    "question": "Using the supplied ratio 300 mg lithium carbonate = 5 mL lithium citrate syrup, which setup converts a total 600 mg carbonate/day to syrup mL/day?",
+    "choices": [
+      "600 mg/day x 5 mL/300 mg",
+      "600 mg/day x 300 mg/5 mL",
+      "600 mg/day x 5 mL/8 mEq",
+      "600 mg/day x 8 mEq/5 mL"
+    ],
+    "answer": 0,
+    "rationale": "600 mg/day x 5 mL/300 mg cancels mg and leaves 10 mL/day. The other factors invert the ratio or introduce uncanceled units."
+  }
+};
+
+export const bipolarDisorderQuestionBank = generatedBipolarDisorderQuestionBank.map((item) => ({ ...item, ...(lithiumCalculationItems[item.id] || {}) }));

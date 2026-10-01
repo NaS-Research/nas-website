@@ -10633,7 +10633,22 @@
       ],
       "questions": 120,
       "status": "unreviewed",
-      "evidence": []
+      "evidence": [],
+      "scopedItemReviews": [
+        {
+          "date": "2026-10-01",
+          "ids": [
+            "bipolar-disorder-053",
+            "bipolar-disorder-054",
+            "bipolar-disorder-055",
+            "bipolar-disorder-056"
+          ],
+          "status": "verified",
+          "evidence": "docs/clinical-audit/pharmacy-milliequivalent-calculations-review.json",
+          "scope": "Four lithium formulation-ratio items only; ambiguous generic prompts replaced by explicit original arithmetic with stable IDs/anchors/difficulty. Whole bipolar chapter/module not reverified in this calculation dependency pass.",
+          "validation": "All four revised items rendered and graded on mobile; IDs/anchors/key indexes/difficulty preserved; other 116 exported items unchanged. Whole module/lesson statuses preserved."
+        }
+      ]
     },
     {
       "slug": "attention-deficit-hyperactivity-disorder",
@@ -11393,6 +11408,37 @@
         "docs/clinical-audit/pharmacy-moles-millimoles-review.json"
       ],
       "verificationNotes": "All source text/figures, 21 bank items and three checks reviewed and re-compared to the book. 44 independent original-content and seven source-example calculations passed. Exact scoped 566-page production build, all three desktop/mobile figures, grading, distinct attempts, incorrect feedback/remediation anchors and Library/curriculum/sitemap/signed-out checks passed on 2026-10-01. Narrow-subsection question-count advisories reviewed without adding padding."
+    },
+    {
+      "slug": "pharmacy-milliequivalent-calculations",
+      "title": "Pharmacy Milliequivalent Calculations",
+      "area": "Calculations & Nutrition",
+      "lessons": [
+        {
+          "slug": "valence-and-particles",
+          "status": "verified"
+        },
+        {
+          "slug": "mass-and-equivalents",
+          "status": "verified"
+        },
+        {
+          "slug": "solution-equivalents",
+          "status": "verified"
+        },
+        {
+          "slug": "formulation-conversions",
+          "status": "verified"
+        }
+      ],
+      "questions": 30,
+      "embeddedChecks": 4,
+      "status": "verified",
+      "sourcePolicy": "RxPrep 2023 only",
+      "evidence": [
+        "docs/clinical-audit/pharmacy-milliequivalent-calculations-review.json"
+      ],
+      "verificationNotes": "All source text/figures, 30 bank items and four checks reviewed and re-compared to the book. 60 independent original/retained-content and ten source-method calculations passed. Exact scoped 567-page production build, all four desktop/mobile figures, grading, distinct attempts, incorrect feedback/remediation anchors and Library/curriculum/sitemap/signed-out checks passed on 2026-10-01. Narrow-subsection question-count advisories reviewed without padding."
     }
   ],
   "guides": [
