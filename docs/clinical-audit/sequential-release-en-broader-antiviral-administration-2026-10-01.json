@@ -1,0 +1,156 @@
+{
+  "date": "2026-10-01",
+  "unit": "enteral-nutrition:broader-antiviral-administration-dependency",
+  "baseCommit": "7ecf4ccca5cb6301252e5637d45e9cce60dbc28f",
+  "contentCommit": "3b75ba76ed45cb183ef8dadf43b037fab2cc61ef",
+  "branch": "audit/rxprep-content-2026-09-24",
+  "remoteDestination": "github.com/NaS-Research/nas-website.git",
+  "contentRemoteHashObserved": "3b75ba76ed45cb183ef8dadf43b037fab2cc61ef",
+  "contentRemoteVerifiedAt": "2026-10-01T23:07:58.205123+00:00",
+  "scope": [
+    "src/data/questionBanks/influenzaAntiviralPharmacology.js",
+    "src/data/questionBanks/cytomegalovirusPharmacotherapy.js",
+    "src/data/modules/influenzaAntiviralPharmacology.js",
+    "docs/clinical-audit/module-ledger.json",
+    "docs/clinical-audit/chapter-ledger.json",
+    "docs/clinical-audit/enteral-nutrition-broader-antiviral-administration-review.json",
+    "docs/clinical-audit/sequential-resume.json"
+  ],
+  "checks": {
+    "isolatedBuildStaticPages": 567,
+    "focusedStructuralBankQuestions": 400,
+    "sourceClosedQuestionsCorrectWrongDesktopMobile": 10,
+    "newSourceVerifiedBodiesDesktopMobile": 1,
+    "retainedCheckCorrectWrongDesktopMobile": 1,
+    "renderedBodyDOMEquality": 93,
+    "manualDesktopMobilePairsReviewed": 12,
+    "runtime320Overflow": true,
+    "remediationAndSavedProgress": true,
+    "moduleSavedAttemptsPerViewportPerModule": 2,
+    "moduleBestScore": 10,
+    "moduleLatestScore": 0,
+    "cumulativeRuntimeItems": 10,
+    "cumulativeSourceVerifiedItemsThisUnit": 0,
+    "all1180CumulativeObjectsUnchanged": true,
+    "targetOnlyLedgerEntries": true,
+    "candidateCodeExactlyMatchesReviewedBuildAndCommittedBlobs": true
+  },
+  "preservation": {
+    "all400IdsPromptsKeysCorrectTextsAnchorsPreserved": true,
+    "unchangedOtherBankObjects": 392,
+    "all92OriginalBodiesPreserved": true,
+    "oneMissingStorageComparisonAdded": true,
+    "all23OriginalChecksPreserved": true,
+    "allMetadataReferencesAndFigureIdentifiersPreserved": true,
+    "all1180CumulativeObjectsUnchanged": true,
+    "targetOnlyWorkingCodeEdits": true
+  },
+  "coverage": {
+    "questionsSourceVerified": 10,
+    "questionsCorrected": 8,
+    "questionsVerifiedWithoutChange": 2,
+    "wholeBodiesVerified": 1,
+    "newBodies": 1,
+    "retainedBodies": 0,
+    "embeddedChecksVerifiedWithoutChange": 1,
+    "figuresVerified": 0,
+    "metadataVerified": false,
+    "wholeParentModulesVerified": false,
+    "broaderEnteralBookVerifiedQuestionCountAfter": 103,
+    "sourceVerifiedCumulativeItemsThisUnit": 0,
+    "enteralNutritionCountsUnchanged": {
+      "questionsVerified": 66,
+      "questionsTotal": 108,
+      "bodiesVerified": 16,
+      "bodiesTotal": 36,
+      "checksVerified": 2,
+      "checksTotal": 6,
+      "figuresVerified": 0,
+      "figuresTotal": 6
+    },
+    "runningAssessmentCalculations": 677,
+    "runningSeparateSourceExamples": 98,
+    "newSourceClosedAssessmentCalculationObjects": 3,
+    "newDistinctCalculationScenarios": 1,
+    "partialArithmeticOnlyQuestions": 2
+  },
+  "calculationEvidence": {
+    "method": "Independent Decimal dimensional calculation from ordered mass and concentration; pediatric baloxavir policy kept pending.",
+    "sourceClosedAssessmentObjects": [
+      {
+        "id": "influenza-antiviral-pharmacology-073",
+        "expression": "45 mg / (6 mg/mL) = 7.5 mL",
+        "sourcePdfPage": 405
+      },
+      {
+        "id": "influenza-antiviral-pharmacology-181",
+        "expression": "45 mg / (6 mg/mL) = 7.5 mL",
+        "sourcePdfPage": 405
+      },
+      {
+        "id": "embedded:influenza-antiviral-pharmacology:oseltamivir-dosing-administration",
+        "expression": "45 mg / (6 mg/mL) = 7.5 mL",
+        "sourcePdfPage": 405
+      }
+    ],
+    "partialArithmeticOnlyObjects": [
+      {
+        "id": "influenza-antiviral-pharmacology-141",
+        "expression": "14 kg * 2 mg/kg = 28 mg; 28 mg / (2 mg/mL) = 14 mL",
+        "clinicalSourceClosure": false,
+        "gap": "Book table does not establish pediatric 2 mg/kg policy or current eligibility."
+      },
+      {
+        "id": "influenza-antiviral-pharmacology-188",
+        "expression": "14 kg * 2 mg/kg = 28 mg; 28 mg / (2 mg/mL) = 14 mL",
+        "clinicalSourceClosure": false,
+        "gap": "Book table does not establish pediatric 2 mg/kg policy or current eligibility."
+      }
+    ],
+    "oseltamivirWrongVolumesMassMg": {
+      "45 mL": "270",
+      "6 mL": "36",
+      "2.7 mL": "16.2"
+    },
+    "distinctAssessmentObjectsAdded": 3,
+    "distinctSourceExerciseExamplesAdded": 0,
+    "priorAssessmentChecks": 674,
+    "runningAssessmentChecks": 677,
+    "runningSeparateSourceExamples": 98,
+    "countNote": "Three distinct assessment objects share one numerical scenario; not three distinct scenarios. Partial baloxavir arithmetic excluded from complete source-closed assessment total."
+  },
+  "newBroaderSourceVerifiedQuestionIds": [
+    "influenza-antiviral-pharmacology-065",
+    "influenza-antiviral-pharmacology-068",
+    "influenza-antiviral-pharmacology-073",
+    "influenza-antiviral-pharmacology-074",
+    "influenza-antiviral-pharmacology-075",
+    "influenza-antiviral-pharmacology-076",
+    "influenza-antiviral-pharmacology-152",
+    "influenza-antiviral-pharmacology-181",
+    "influenza-antiviral-pharmacology-182",
+    "cytomegalovirus-pharmacotherapy-072"
+  ],
+  "cumulativeBroaderENSourceVerifiedQuestionCount": 103,
+  "broaderParentCount": 13,
+  "originalPrimaryQuestionsReviewed": 76,
+  "originalPrimaryQuestionsPending": 66,
+  "contentBlobSHA256": {
+    "src/data/questionBanks/influenzaAntiviralPharmacology.js": "397e772366210fa7a5ef18852a7e52834e8851cad046b1a8cef329a6d60023ab",
+    "src/data/questionBanks/cytomegalovirusPharmacotherapy.js": "34ccf1e2f456f6d896d4734a4086fedd254ed40b4ff1a0ea756d35e491195faf",
+    "src/data/modules/influenzaAntiviralPharmacology.js": "858e49a6b0a313dda3989e7c2a152f0f7dfd9050ec494931ca3acc25c84b18c3",
+    "docs/clinical-audit/module-ledger.json": "fa825f67bdc2db64e69e680c61aaa5433aefd9452e8b4555a72cf0a5f09d213b",
+    "docs/clinical-audit/chapter-ledger.json": "4c67a644db529504a08494510a293013df3b73fb29d22e1021602ff7ac335954",
+    "docs/clinical-audit/enteral-nutrition-broader-antiviral-administration-review.json": "d0871805bf114807cbf2b4c26ad23e2e817c755554d2b52bff4fab4bbd9cdd24",
+    "docs/clinical-audit/sequential-resume.json": "09356d4fb02c34d1eb1040ec2c916f3d4effb75c6156e021c3c2fe4923bf7447"
+  },
+  "bookAssetsPublished": false,
+  "outsideENSourcesUsed": false,
+  "wholeParentModulesVerified": false,
+  "wholeENModuleVerified": false,
+  "wholeChapterVerified": false,
+  "mainMerge": "not performed",
+  "production": "not verified",
+  "unrelatedWorkingChanges": "All original92bodies/23checks/metadata/figures and392other bank objects preserved;only two module-ledger entries andChapter11 patched, with unrelated dirty ledger bytes retained in working files but excluded from staged HEAD-derived blobs. Private source PDF/extracts/screenshots excluded.",
+  "nextAction": "Next remaining broader feeding candidate: cystic-fibrosis, starting the full original PERT dosing/timing and PERT upper-boundary groups in cf-nutrition-gi-endocrine plus cf-098/CFRD feeding assessment and matching cases. Establish the corresponding supplied-book source with full text and rendered tables before edits; retain current CF/pediatric/product/tube claims pending if the book does not resolve them. Reconcile committed inventory against current HEAD rather than the differing dirty working taxonomy. Continue remaining broader EN feeding-related inventory and the full enteral-nutrition module, then pediatric PN and clinical fluid/calcium dependencies. Preserve all66 antiviral original primary questions pending,24 original bodies/six topic checks except the verified oseltamivir calculation check, detailed chelation/food/tube/current pediatric/CMV claims and all other parent content pending; do not replace hard topics. Use only supplied book; outside EN primary-source approval remains unanswered. Chapter1 checklist15/Chapter11 remain reviewing. EN remains66/108 questions,16/36 bodies,two/six checks andzero/six figures. Fourteen Chapter1 checklist entries complete;entry15 reviewing."
+}
