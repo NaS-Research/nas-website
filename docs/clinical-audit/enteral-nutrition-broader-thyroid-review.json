@@ -1,0 +1,751 @@
+{
+  "date": "2026-10-01",
+  "unit": "enteral-nutrition:broader-thyroid-feeding-dependency",
+  "baseCommit": "0d26bb644345904534dda755f69620881981e4b4",
+  "source": {
+    "privateBook": "Supplied private PDF; cover verified RxPrep 2023, 1,032 pages, rather than the filename year.",
+    "textAndRenderedPagesReviewed": [
+      62,
+      64,
+      109,
+      170,
+      298,
+      438,
+      527,
+      637,
+      638
+    ],
+    "printedPages": [
+      52,
+      54,
+      101,
+      162,
+      290,
+      430,
+      519,
+      629,
+      630
+    ],
+    "claims": {
+      "64/170": "Cation complexation and levothyroxine/feed reduction in bioavailability; verify a drug-specific administration plan and keep medicine out of the formula.",
+      "109": "Physical adsorption definition only; container examples do not independently establish thyroid-drug interactions.",
+      "298/438/638": "Levothyroxine binding/absorption interactions have different product-specific actions and intervals. Binders and feeds do not all share one mechanism or interval.",
+      "527": "Iron forms nonabsorbable complexes; generic two-to-four-hour levothyroxine separation and product-specific labeling instructions. No new IV iron policy adopted.",
+      "637/638": "Consistent administration, thyroid monitoring, excess-dose harms and four-hour calcium/iron separation. No new replacement dose, IV conversion, pregnancy, product meal timing, tablet color or switch policy adopted.",
+      "62": "Structure/context read; three incidental chemistry questions remain pending. Other drug structures and the iodine-allergy statement are outside this feeding unit and were not adopted."
+    },
+    "qualifiedInferences": [
+      "Resin adsorption synthesizes specific drug-binding evidence with the physical adsorption definition. It is not generalized to all feeds or binders.",
+      "Higher TSH after a new iron/resin schedule is a plausible reduction in availability, not proof of exclusive causality.",
+      "A compensating dose increase followed by improved separation may increase exposure. This is a conditional risk supported by absorption and excess-dose evidence, not a guaranteed outcome."
+    ],
+    "sourceVariations": [
+      {
+        "pages": [
+          527,
+          638
+        ],
+        "finding": "The iron chapter gives generic two-to-four-hour separation; the thyroid chapter specifies four hours. Adopt the drug-specific four-hour calcium/iron instruction; exact product instructions still need verification. No outside EN label opened."
+      },
+      {
+        "pages": [
+          298,
+          438,
+          638
+        ],
+        "finding": "Binder/resin instructions differ; source298 includes avoiding levothyroxine with sucroferric oxyhydroxide. New teaching requires product review rather than a universal spacing remedy."
+      },
+      {
+        "pages": [
+          637,
+          638
+        ],
+        "finding": "Generic book meal intervals, tablet colors, IV ratio and pregnancy language are not newly adopted. Prior working label corrections and discrepancies remain unreleased or pending."
+      }
+    ],
+    "fullBookLocatingOnly": {
+      "pagesSearched": 1032,
+      "matchedPdfPages": [
+        7,
+        10,
+        19,
+        26,
+        62,
+        64,
+        82,
+        83,
+        130,
+        133,
+        170,
+        179,
+        298,
+        438,
+        527,
+        588,
+        611,
+        635,
+        636,
+        637,
+        638,
+        640,
+        645,
+        677,
+        681,
+        688,
+        754,
+        756,
+        839,
+        874,
+        903,
+        916,
+        990,
+        992,
+        1016,
+        1020,
+        1029
+      ],
+      "status": "Locating aid only; not a full-book clinical or visual audit."
+    }
+  },
+  "questionReview": [
+    {
+      "sourcePdfPages": [
+        64,
+        170,
+        527,
+        637,
+        638
+      ],
+      "id": "thychem-23-principle",
+      "question": "Which statement best explains levothyroxine complexation?",
+      "choices": [
+        "Calcium and iron can form poorly absorbed gastrointestinal complexes with levothyroxine.",
+        "Calcium and iron lower levothyroxine exposure mainly by inducing its hepatic metabolism.",
+        "Calcium and iron increase levothyroxine absorption by keeping it free in the gut.",
+        "Complexation occurs only after all of the levothyroxine dose has entered the bloodstream."
+      ],
+      "answer": 0,
+      "rationale": "Calcium and iron can bind levothyroxine in the gastrointestinal tract and reduce the amount available for absorption. This is an administration and absorption interaction, rather than hepatic enzyme induction.",
+      "reviewHref": "#formulation-chemistry",
+      "difficulty": "foundational",
+      "review": "64 defines poorly soluble complexation and specifically lists levothyroxine for separation;170 specifically identifies levothyroxine/cation chelation reducing bioavailability;638 lists calcium/iron reduced absorption. Alternatives contradict site/mechanism/direction."
+    },
+    {
+      "sourcePdfPages": [
+        64,
+        170,
+        527,
+        637,
+        638
+      ],
+      "id": "thychem-23-application",
+      "question": "Which action best applies levothyroxine complexation?",
+      "choices": [
+        "Separate interacting products consistently and reassess exposure before escalating dose.",
+        "Escalate levothyroxine before reviewing calcium, iron or feeding administration.",
+        "Separate the products for one dose, then return to simultaneous administration without reassessment.",
+        "Keep the products together and manage the interaction as increased hepatic metabolism."
+      ],
+      "answer": 0,
+      "rationale": "Review the actual administration schedule, separate interacting products consistently and reassess thyroid response before escalating the dose. The book lists four-hour separation for calcium or iron from thyroid replacement; a tube-feeding plan also requires the particular product and route to be checked.",
+      "reviewHref": "#formulation-chemistry",
+      "difficulty": "application",
+      "review": "170/637/638 support actual administration, consistent timing, separation and thyroid reassessment. Four-hour calcium/iron interval comes from drug-specific638;527 gives broader2-4h and asks product labeling for exact details. No universal tube hold or dosage-form manipulation rule added."
+    },
+    {
+      "sourcePdfPages": [
+        64,
+        170,
+        527,
+        637,
+        638
+      ],
+      "id": "thychem-23-safety",
+      "question": "Which error creates the clearest problem in levothyroxine complexation?",
+      "choices": [
+        "Increasing dose without correcting complexation can cause overreplacement when separation later improves.",
+        "Reviewing calcium and iron timing before deciding whether the dose needs to change.",
+        "Keeping the corrected administration schedule consistent while thyroid response is reassessed.",
+        "Checking for changes in feeding and interacting products when thyroid results change."
+      ],
+      "answer": 0,
+      "rationale": "Complexation can lower absorption. If a dose is increased to compensate and the binding interaction later decreases, exposure may rise on that higher dose. Reassess the dose and thyroid response when administration changes.",
+      "reviewHref": "#formulation-chemistry",
+      "difficulty": "advanced",
+      "review": "Key retained conditional dose risk is a qualified inference: reduced absorption64/170/638,excess-dose adverse effects637 and monitoring637/638. It does not predict guaranteed toxicity. Three alternatives are appropriate assessment/consistency/reassessment actions,not competing unrelated chemistry hazards."
+    },
+    {
+      "sourcePdfPages": [
+        64,
+        170,
+        527,
+        637,
+        638
+      ],
+      "id": "thychem-23-case",
+      "question": "TSH rises after iron is moved to the same time as levothyroxine. Which response is best?",
+      "choices": [
+        "Correct the administration separation and reassess.",
+        "Increase levothyroxine without addressing the new iron timing.",
+        "Keep iron and levothyroxine together because the prescribed hormone dose is unchanged.",
+        "Treat the new iron schedule as hepatic enzyme induction and leave administration unchanged."
+      ],
+      "answer": 0,
+      "rationale": "The new simultaneous iron schedule provides a plausible absorption interaction. Correct the separation, keep administration consistent and reassess thyroid response rather than automatically increasing the dose or attributing the change to enzyme induction.",
+      "reviewHref": "#formulation-chemistry",
+      "difficulty": "clinical",
+      "review": "Iron timing is a plausible absorption explanation,not proof of exclusive causality. Correct separation and reassess;alternatives omit timing review,assume unchangeddose prevents interaction or misattribute binding to enzyme induction."
+    },
+    {
+      "sourcePdfPages": [
+        64,
+        109,
+        170,
+        298,
+        438,
+        637,
+        638
+      ],
+      "id": "thychem-24-principle",
+      "question": "Which statement best explains levothyroxine adsorption?",
+      "choices": [
+        "Resins and selected binders can adsorb levothyroxine and reduce free drug available for absorption.",
+        "Binding resins increase levothyroxine absorption by freeing it from gastrointestinal contents.",
+        "Resins lower thyroid replacement exposure only by removing iodine from circulating T4.",
+        "Selected gastrointestinal binders act primarily by inducing hepatic levothyroxine metabolism."
+      ],
+      "answer": 0,
+      "rationale": "Selected resins and binders can physically bind levothyroxine and reduce its gastrointestinal availability. The relevant remedy begins with reviewing the interacting product and administration instructions, not treating binding as enzyme induction.",
+      "reviewHref": "#formulation-chemistry",
+      "difficulty": "foundational",
+      "review": "64 lists resins/binding products needing levothyroxine separation;298 explicitly describes binder binding and levothyroxine absorption reduction;438 lists levothyroxine-resin separation;638 includes cholestyramine/sevelamer.109 provides adsorption as physical sticking rather than metabolism. Existing resin-adsorption concept retained as qualified physical-binding synthesis,not generalized to every binder/feed mechanism."
+    },
+    {
+      "sourcePdfPages": [
+        64,
+        109,
+        170,
+        298,
+        438,
+        637,
+        638
+      ],
+      "id": "thychem-24-application",
+      "question": "Which action best applies levothyroxine adsorption?",
+      "choices": [
+        "Review bile acid sequestrants, phosphate binders, enteral feeds, and related products when exposure becomes unstable.",
+        "Review the hormone dose alone and omit recently started resins, binders and feeding.",
+        "Review tablets but exclude supplements and enteral nutrition from the administration history.",
+        "Apply the same separation interval to every binding product without checking which product is used."
+      ],
+      "answer": 0,
+      "rationale": "Rebuild the actual administration history, including bile acid sequestrants, phosphate binders and feeds. Resins and selected binders can reduce availability by binding; feed cations can reduce bioavailability through complexation. These are related absorption problems, but not every product uses the same mechanism or separation interval.",
+      "reviewHref": "#formulation-chemistry",
+      "difficulty": "application",
+      "review": "Rebuild full binder/feed administration history;170 establishes feed-cation complexation separately from resins/binders.298/438/638 show differing interacting-product actions/intervals,including a source avoid-combination statement for sucroferric oxyhydroxide. No common interval or universal binder-safe-with-spacing instruction asserted."
+    },
+    {
+      "sourcePdfPages": [
+        64,
+        109,
+        170,
+        298,
+        438,
+        637,
+        638
+      ],
+      "id": "thychem-24-safety",
+      "question": "Which error creates the clearest problem in levothyroxine adsorption?",
+      "choices": [
+        "Treating adsorption as an enzyme induction problem leads to the wrong remedy.",
+        "Identifying the new binding product and reviewing its administration interval.",
+        "Checking the timing of levothyroxine relative to a resin before deciding whether to change the dose.",
+        "Reassessing thyroid response after a consistent administration plan is established."
+      ],
+      "answer": 0,
+      "rationale": "The error is treating physical binding in the gastrointestinal tract as hepatic enzyme induction. The other actions review the actual interacting product, schedule and thyroid response.",
+      "reviewHref": "#formulation-chemistry",
+      "difficulty": "advanced",
+      "review": "Physical-binding source synthesis64/109/298/438/638 differs from enzyme induction. Three new alternatives appropriately review product,timing and response. No new enzyme/transporter interaction policy adopted."
+    },
+    {
+      "sourcePdfPages": [
+        64,
+        109,
+        170,
+        298,
+        438,
+        637,
+        638
+      ],
+      "id": "thychem-24-case",
+      "question": "A patient starts a binding resin and later has a higher TSH on an unchanged dose. Which response is best?",
+      "choices": [
+        "Suspect reduced gastrointestinal availability from adsorption.",
+        "Assume the higher TSH proves that the resin increased hepatic metabolism.",
+        "Exclude an absorption interaction because the levothyroxine dose did not change.",
+        "Assume binding improves hormone availability and ignore the new resin."
+      ],
+      "answer": 0,
+      "rationale": "A binding resin is a plausible cause of reduced gastrointestinal levothyroxine availability. Review its administration instructions and the thyroid response; the unchanged prescribed dose does not exclude a change in absorption.",
+      "reviewHref": "#formulation-chemistry",
+      "difficulty": "clinical",
+      "review": "New binding resin with higherTSH is a plausible reduced-availability explanation;64/298/438/637/638 support binding,thyroidmonitoring and exposure-context inference. Retains original causal question topic without claiming proof orautomaticdoseincrease."
+    }
+  ],
+  "teachingReview": [
+    {
+      "sourcePdfPages": [
+        64,
+        170,
+        298,
+        438,
+        527,
+        637,
+        638
+      ],
+      "lesson": "formulation-chemistry",
+      "heading": "Coordinate levothyroxine with feeds and binding products",
+      "body": "Review the actual calcium, iron, antacid, resin, phosphate-binder and feeding schedule when thyroid response changes. Calcium and iron can form poorly absorbed gastrointestinal complexes with levothyroxine; selected resins and binders can also reduce its availability. The book lists four-hour separation for calcium and iron from thyroid replacement, while other binders have different instructions. Check the particular interacting product rather than apply one interval to every binder. For tube feeding, separate levothyroxine from feeds and verify that the prescribed formulation is suitable for the tube and route. Do not add the medicine directly to the nutrition formula. Keep the agreed administration schedule consistent and reassess thyroid response before an automatic dose increase.",
+      "status": "Addedoriginalsource-reviewedsynthesis;whole bodyverified"
+    }
+  ],
+  "embeddedCheckReview": {
+    "lesson": "formulation-chemistry",
+    "question": {
+      "question": "What is the best medicinal-chemistry explanation for reduced levothyroxine exposure with calcium?",
+      "choices": [
+        "A poorly absorbed complex can form in the gastrointestinal tract",
+        "Increased hepatic metabolism from enzyme induction",
+        "Accelerated renal elimination of absorbed hormone",
+        "Competitive antagonism at nuclear thyroid receptors"
+      ],
+      "answer": 0,
+      "rationale": "Gastrointestinal complexation can reduce the fraction of levothyroxine available for absorption.",
+      "reviewHref": "#formulation-chemistry"
+    },
+    "sourcePdfPages": [
+      64,
+      170,
+      527,
+      638
+    ],
+    "status": "Existingprompt/key/correct-answertext/rationale/anchorretained;threeplausibledistractorsrepaired;fullquestion sourceverified."
+  },
+  "broaderSelection": {
+    "priorInventoryRows": 4,
+    "expandedTopicGroups": "All8 original23/24complexation/adsorption questionsreviewed,notjustonefeedingassessmentrow.",
+    "distractorOnlyRows": [
+      {
+        "id": "thychem-05-application",
+        "question": {
+          "id": "thychem-05-application",
+          "question": "Which action best applies T4 iodine pattern?",
+          "choices": [
+            "Differentiate T4 from T3 by locating the additional outer-ring iodine.",
+            "Recognize deiodination as selenium-dependent enzyme chemistry.",
+            "Expect delayed improvement while preformed hormone is depleted.",
+            "Review bile acid sequestrants, phosphate binders, enteral feeds, and related products when exposure becomes unstable."
+          ],
+          "answer": 0,
+          "rationale": "T4 is the tetraiodinated member of the physiologic pair.",
+          "reviewHref": "#thyronine-scaffold",
+          "difficulty": "application"
+        },
+        "feedingClause": "Book-supported absorption assessment clause, retained unchanged",
+        "wholeQuestionStatus": "Primary chemistry topic and all choices still require the full parent audit; not counted verified."
+      },
+      {
+        "id": "thychem-11-application",
+        "question": {
+          "id": "thychem-11-application",
+          "question": "Which action best applies inner-ring deiodination?",
+          "choices": [
+            "Classify inner-ring removal as an inactivating direction.",
+            "Expect delayed improvement while preformed hormone is depleted.",
+            "Review bile acid sequestrants, phosphate binders, enteral feeds, and related products when exposure becomes unstable.",
+            "Use tissue enzyme expression to predict whether local thyroid signaling rises or falls even when circulating T4 is unchanged."
+          ],
+          "answer": 0,
+          "rationale": "Ring selection, not iodine loss alone, determines the metabolic direction.",
+          "reviewHref": "#deiodination-metabolism",
+          "difficulty": "application"
+        },
+        "feedingClause": "Book-supported absorption assessment clause, retained unchanged",
+        "wholeQuestionStatus": "Primary chemistry topic and all choices still require the full parent audit; not counted verified."
+      },
+      {
+        "id": "thychem-17-application",
+        "question": {
+          "id": "thychem-17-application",
+          "question": "Which action best applies PTU scaffold?",
+          "choices": [
+            "Identify the propyl group and thiouracil ring when distinguishing PTU from methimazole.",
+            "Review bile acid sequestrants, phosphate binders, enteral feeds, and related products when exposure becomes unstable.",
+            "Use tissue enzyme expression to predict whether local thyroid signaling rises or falls even when circulating T4 is unchanged.",
+            "Look for phenolic conjugation when explaining a polar thyroid-hormone metabolite."
+          ],
+          "answer": 0,
+          "rationale": "The name and structure encode both the propyl group and thiouracil core.",
+          "reviewHref": "#thionamide-chemistry",
+          "difficulty": "application"
+        },
+        "feedingClause": "Book-supported absorption assessment clause, retained unchanged",
+        "wholeQuestionStatus": "Primary chemistry topic and all choices still require the full parent audit; not counted verified."
+      }
+    ],
+    "originalPhysicalInteractionBody": "Calcium/iron, resin, binder and feed clauses are partially supported. Gastric-condition/dissolution claims are not established by this source subset. Original body unchanged and not counted fully verified.",
+    "formulationSwitchingGroup": "All four concept25 questions and the full body remain pending product/excipient/PK/reassessment evidence. The topic was preserved rather than replaced by an easier case."
+  },
+  "integration": {
+    "beforeCommittedBank": 120,
+    "localSemanticDraftBank": 31,
+    "all120CommittedIdsMissingFromLocalDraft": true,
+    "localDraftIds": [
+      "thychem-case-01",
+      "thychem-case-02",
+      "thychem-case-03",
+      "thychem-case-04",
+      "thychem-case-05",
+      "thychem-case-06",
+      "thychem-case-07",
+      "thychem-case-08",
+      "thychem-case-09",
+      "thychem-case-10",
+      "thychem-case-11",
+      "thychem-case-12",
+      "thychem-case-13",
+      "thychem-case-14",
+      "thychem-case-15",
+      "thychem-case-16",
+      "thychem-case-17",
+      "thychem-case-18",
+      "thychem-case-19",
+      "thychem-case-20",
+      "thychem-case-21",
+      "thychem-case-22",
+      "thychem-case-23",
+      "thychem-case-24",
+      "thychem-case-25",
+      "thychem-case-26",
+      "thychem-case-27",
+      "thychem-case-28",
+      "thychem-case-29",
+      "thychem-case-30",
+      "thychem-physical-decay"
+    ],
+    "candidateBank": 120,
+    "workingDraftByteIdentical": true,
+    "draftSha256": "ce98e842233a9187c83e0f6f5d989b4b67d8d4635c43f5683771b39b84c62f2d",
+    "overlappingDraftCases": [
+      "thychem-case-23",
+      "thychem-case-24"
+    ],
+    "duplicatePolicy": "Do not add local cases23/24 because committed23-case/24-case already test the same facts. All31 local drafts remain unchanged and unreleased; full parent reconciliation remains required.",
+    "stageMethod": "Stage HEAD-derived candidate code with the reviewed repairs, new body and embedded check only. The complete dirty working files, other chemistry changes and outside-source metadata remain unstaged."
+  },
+  "validation": {
+    "isolatedBuild": {
+      "staticPages": 567,
+      "exitCode": 0,
+      "logSha256": "82726e32e6ea7b5270e8c9cd0d12fc040ba9cd27f8462ea322f07445be649ea8"
+    },
+    "focusedStructural": {
+      "modules": 1,
+      "questions": 120,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "thyroid-medicinal-chemistry",
+          "lessons": 8,
+          "questions": 120,
+          "minimumLessonCoverage": 12
+        }
+      ]
+    },
+    "technical": {
+      "status": "passed",
+      "modules": [
+        {
+          "slug": "thyroid-medicinal-chemistry",
+          "bank": 120,
+          "bodies": 25,
+          "changedQuestions": [
+            {
+              "id": "thychem-23-principle",
+              "question": "Which statement best explains levothyroxine complexation?",
+              "choices": [
+                "Calcium and iron can form poorly absorbed gastrointestinal complexes with levothyroxine.",
+                "Calcium and iron lower levothyroxine exposure mainly by inducing its hepatic metabolism.",
+                "Calcium and iron increase levothyroxine absorption by keeping it free in the gut.",
+                "Complexation occurs only after all of the levothyroxine dose has entered the bloodstream."
+              ],
+              "answer": 0,
+              "rationale": "Calcium and iron can bind levothyroxine in the gastrointestinal tract and reduce the amount available for absorption. This is an administration and absorption interaction, rather than hepatic enzyme induction.",
+              "reviewHref": "#formulation-chemistry",
+              "difficulty": "foundational"
+            },
+            {
+              "id": "thychem-23-application",
+              "question": "Which action best applies levothyroxine complexation?",
+              "choices": [
+                "Separate interacting products consistently and reassess exposure before escalating dose.",
+                "Escalate levothyroxine before reviewing calcium, iron or feeding administration.",
+                "Separate the products for one dose, then return to simultaneous administration without reassessment.",
+                "Keep the products together and manage the interaction as increased hepatic metabolism."
+              ],
+              "answer": 0,
+              "rationale": "Review the actual administration schedule, separate interacting products consistently and reassess thyroid response before escalating the dose. The book lists four-hour separation for calcium or iron from thyroid replacement; a tube-feeding plan also requires the particular product and route to be checked.",
+              "reviewHref": "#formulation-chemistry",
+              "difficulty": "application"
+            },
+            {
+              "id": "thychem-23-safety",
+              "question": "Which error creates the clearest problem in levothyroxine complexation?",
+              "choices": [
+                "Increasing dose without correcting complexation can cause overreplacement when separation later improves.",
+                "Reviewing calcium and iron timing before deciding whether the dose needs to change.",
+                "Keeping the corrected administration schedule consistent while thyroid response is reassessed.",
+                "Checking for changes in feeding and interacting products when thyroid results change."
+              ],
+              "answer": 0,
+              "rationale": "Complexation can lower absorption. If a dose is increased to compensate and the binding interaction later decreases, exposure may rise on that higher dose. Reassess the dose and thyroid response when administration changes.",
+              "reviewHref": "#formulation-chemistry",
+              "difficulty": "advanced"
+            },
+            {
+              "id": "thychem-23-case",
+              "question": "TSH rises after iron is moved to the same time as levothyroxine. Which response is best?",
+              "choices": [
+                "Correct the administration separation and reassess.",
+                "Increase levothyroxine without addressing the new iron timing.",
+                "Keep iron and levothyroxine together because the prescribed hormone dose is unchanged.",
+                "Treat the new iron schedule as hepatic enzyme induction and leave administration unchanged."
+              ],
+              "answer": 0,
+              "rationale": "The new simultaneous iron schedule provides a plausible absorption interaction. Correct the separation, keep administration consistent and reassess thyroid response rather than automatically increasing the dose or attributing the change to enzyme induction.",
+              "reviewHref": "#formulation-chemistry",
+              "difficulty": "clinical"
+            },
+            {
+              "id": "thychem-24-principle",
+              "question": "Which statement best explains levothyroxine adsorption?",
+              "choices": [
+                "Resins and selected binders can adsorb levothyroxine and reduce free drug available for absorption.",
+                "Binding resins increase levothyroxine absorption by freeing it from gastrointestinal contents.",
+                "Resins lower thyroid replacement exposure only by removing iodine from circulating T4.",
+                "Selected gastrointestinal binders act primarily by inducing hepatic levothyroxine metabolism."
+              ],
+              "answer": 0,
+              "rationale": "Selected resins and binders can physically bind levothyroxine and reduce its gastrointestinal availability. The relevant remedy begins with reviewing the interacting product and administration instructions, not treating binding as enzyme induction.",
+              "reviewHref": "#formulation-chemistry",
+              "difficulty": "foundational"
+            },
+            {
+              "id": "thychem-24-application",
+              "question": "Which action best applies levothyroxine adsorption?",
+              "choices": [
+                "Review bile acid sequestrants, phosphate binders, enteral feeds, and related products when exposure becomes unstable.",
+                "Review the hormone dose alone and omit recently started resins, binders and feeding.",
+                "Review tablets but exclude supplements and enteral nutrition from the administration history.",
+                "Apply the same separation interval to every binding product without checking which product is used."
+              ],
+              "answer": 0,
+              "rationale": "Rebuild the actual administration history, including bile acid sequestrants, phosphate binders and feeds. Resins and selected binders can reduce availability by binding; feed cations can reduce bioavailability through complexation. These are related absorption problems, but not every product uses the same mechanism or separation interval.",
+              "reviewHref": "#formulation-chemistry",
+              "difficulty": "application"
+            },
+            {
+              "id": "thychem-24-safety",
+              "question": "Which error creates the clearest problem in levothyroxine adsorption?",
+              "choices": [
+                "Treating adsorption as an enzyme induction problem leads to the wrong remedy.",
+                "Identifying the new binding product and reviewing its administration interval.",
+                "Checking the timing of levothyroxine relative to a resin before deciding whether to change the dose.",
+                "Reassessing thyroid response after a consistent administration plan is established."
+              ],
+              "answer": 0,
+              "rationale": "The error is treating physical binding in the gastrointestinal tract as hepatic enzyme induction. The other actions review the actual interacting product, schedule and thyroid response.",
+              "reviewHref": "#formulation-chemistry",
+              "difficulty": "advanced"
+            },
+            {
+              "id": "thychem-24-case",
+              "question": "A patient starts a binding resin and later has a higher TSH on an unchanged dose. Which response is best?",
+              "choices": [
+                "Suspect reduced gastrointestinal availability from adsorption.",
+                "Assume the higher TSH proves that the resin increased hepatic metabolism.",
+                "Exclude an absorption interaction because the levothyroxine dose did not change.",
+                "Assume binding improves hormone availability and ignore the new resin."
+              ],
+              "answer": 0,
+              "rationale": "A binding resin is a plausible cause of reduced gastrointestinal levothyroxine availability. Review its administration instructions and the thyroid response; the unchanged prescribed dose does not exclude a change in absorption.",
+              "reviewHref": "#formulation-chemistry",
+              "difficulty": "clinical"
+            }
+          ],
+          "retainedBodies": [
+            {
+              "lesson": "formulation-chemistry",
+              "heading": "Coordinate levothyroxine with feeds and binding products",
+              "body": "Review the actual calcium, iron, antacid, resin, phosphate-binder and feeding schedule when thyroid response changes. Calcium and iron can form poorly absorbed gastrointestinal complexes with levothyroxine; selected resins and binders can also reduce its availability. The book lists four-hour separation for calcium and iron from thyroid replacement, while other binders have different instructions. Check the particular interacting product rather than apply one interval to every binder. For tube feeding, separate levothyroxine from feeds and verify that the prescribed formulation is suitable for the tube and route. Do not add the medicine directly to the nutrition formula. Keep the agreed administration schedule consistent and reassess thyroid response before an automatic dose increase."
+            }
+          ]
+        }
+      ],
+      "preservation": {
+        "all120CommittedIdsPromptsKeysCorrectTextsAnchorsDifficulty": true,
+        "unchangedOtherBankObjects": 112,
+        "all24OriginalBodiesUnchanged": true,
+        "allOriginalChecksQuestionKeysCorrectTextsAnchors": true,
+        "otherSevenChecksUnchanged": true,
+        "allOtherMetadataUnchanged": true,
+        "all1180CumulativeIdsPromptsKeysCorrectTextsAnchorsPreserved": true,
+        "unchangedOtherCumulativeObjects": 1179,
+        "changedCumulativeObject": "cumulative-thyroid-medicinal-chemistry-thychem-23-application",
+        "local31QuestionDraftByteIdentical": true,
+        "unrelatedModuleWorkingBytesPreserved": true
+      },
+      "newDistinctAssessmentChecks": 0,
+      "runningAssessmentChecks": 674,
+      "runningSeparateSourceExamples": 98,
+      "contentHashes": {
+        "src/data/modules/thyroidMedicinalChemistry.js": "d8e38c2039340610c2598007654b760e692278f83f1a3e8bc25e698989b972f7",
+        "src/data/questionBanks/thyroidMedicinalChemistry.js": "44d9d3c2e7daa8564bde9510bfc15a4c476ea986a569ee4dcca606043a8bf99b"
+      }
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "module": "thyroid-medicinal-chemistry",
+          "width": 1440,
+          "renderedBodies": 25,
+          "expandedBodyViews": 1,
+          "bankItemsCorrectWrong": 8,
+          "cumulativeRuntimeItems": 5,
+          "sourceVerifiedCumulativeInThisUnit": 1,
+          "cumulativeClinicalSourceClosure": false,
+          "groups": 4,
+          "remediationAndSavedProgress": true
+        },
+        {
+          "module": "thyroid-medicinal-chemistry",
+          "width": 390,
+          "renderedBodies": 25,
+          "expandedBodyViews": 1,
+          "bankItemsCorrectWrong": 8,
+          "cumulativeRuntimeItems": 5,
+          "sourceVerifiedCumulativeInThisUnit": 1,
+          "cumulativeClinicalSourceClosure": false,
+          "groups": 4,
+          "remediationAndSavedProgress": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "embeddedBrowser": {
+      "status": "passed",
+      "results": [
+        {
+          "module": "thyroid-medicinal-chemistry",
+          "section": "formulation-chemistry",
+          "width": 1440,
+          "correctWrongFeedback": true
+        },
+        {
+          "module": "thyroid-medicinal-chemistry",
+          "section": "formulation-chemistry",
+          "width": 390,
+          "correctWrongFeedback": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "manualVisual": {
+      "status": "passed",
+      "questionFeedbackImages": 32,
+      "bodyImages": 2,
+      "embeddedFeedbackImages": 2,
+      "nativePixelPairSheets": 18,
+      "findings": "All eight source-reviewed questions, correct/incorrect feedback, new full teaching body and repaired embedded calcium check read at1440/390. Individual final PNGs reread where pair-sheet preview omitted text; original images contain the complete stems/explanations. No clipping or overlap. Final deterministic sampler respects ten distinct concepts across four groups, with25body DOM equality,320overflow,remediationlinks,eight savedattempts/best10/latest0 andfive cumulative runtime checks passed. Onlyone cumulative question is clinically sourceverified here;otherfour are runtimeonly.",
+      "reconciliation": "Initial grouped screenshot previews appeared to omit text. Final individual PNG inspection shows complete text;pair right-region pixels were independently checked identical to their original PNG,so preview behavior does not establish a site rendering defect. No site CSS or sampler change made."
+    },
+    "harnessCorrections": "Initialattempt incorrectly requestedmultiplevariantsperconcept;adaptedfourattemptgroupstopreserveexistingdistinct-conceptsampler. Early grouped screenshot previews appeared to omit text. Settled-paint recapture and individual PNG inspection verified complete text;pair pixels match originals. No app change or waived visual gate.",
+    "scopeMeaning": "Only eight questions, one new body and one embedded check are source-closed here. Four other cumulative items are runtime-only; full parent clinical, figure and metadata audits remain open."
+  },
+  "preservation": {
+    "all120CommittedIdsPromptsKeysCorrectTextsAnchorsDifficulty": true,
+    "unchangedOtherBankObjects": 112,
+    "all24OriginalBodiesUnchanged": true,
+    "allOriginalChecksQuestionKeysCorrectTextsAnchors": true,
+    "otherSevenChecksUnchanged": true,
+    "allOtherMetadataUnchanged": true,
+    "all1180CumulativeIdsPromptsKeysCorrectTextsAnchorsPreserved": true,
+    "unchangedOtherCumulativeObjects": 1179,
+    "changedCumulativeObject": "cumulative-thyroid-medicinal-chemistry-thychem-23-application",
+    "local31QuestionDraftByteIdentical": true,
+    "unrelatedModuleWorkingBytesPreserved": true
+  },
+  "coverage": {
+    "sourceVerifiedBankIds": [
+      "thychem-23-principle",
+      "thychem-23-application",
+      "thychem-23-safety",
+      "thychem-23-case",
+      "thychem-24-principle",
+      "thychem-24-application",
+      "thychem-24-safety",
+      "thychem-24-case"
+    ],
+    "sourceVerifiedBankCountThisUnit": 8,
+    "releasedBank": 120,
+    "workingDraftBank": 31,
+    "newQuestionIds": 0,
+    "newSourceVerifiedTeachingBodies": 1,
+    "verifiedBodyHeadings": [
+      "Coordinate levothyroxine with feeds and binding products"
+    ],
+    "verifiedEmbeddedCheckLessons": [
+      "formulation-chemistry"
+    ],
+    "embeddedChecksClosedThisUnit": 1,
+    "cumulativeSourceVerifiedIds": [
+      "cumulative-thyroid-medicinal-chemistry-thychem-23-application"
+    ],
+    "cumulativeRuntimeItems": 5,
+    "otherCumulativeObjectsUnchanged": 1179,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChapterVerified": false,
+    "ENAggregateUnchanged": {
+      "bankVerified": 66,
+      "bank": 108,
+      "bodiesVerified": 16,
+      "bodies": 36,
+      "embeddedChecksVerified": 2,
+      "embeddedChecks": 6,
+      "figuresVerified": 0,
+      "figures": 6
+    },
+    "calculationTotalsUnchanged": {
+      "assessmentChecks": 674,
+      "separateSourceExamples": 98
+    }
+  },
+  "outsideENSourceApproval": "Human response pending; no outside EN sources opened.",
+  "wholeModuleVerified": false,
+  "wholeChapterVerified": false,
+  "nextAction": "Continue broader feeding inventory with lefamulin oral fasting and tablet-technique topics, expanding the mapped075/079/080 rows to all73-80 questions and reviewing the corresponding complete lesson bodies/checks. Compare committed bank with local work and preserve original IDs and unrelated drafts. Thyroid released120 has eight source-verified repairs,one new teaching body andone embedded check;local31 semantic draft remains unchanged/unreleased and its23/24 cases overlap committed cases,so do not add duplicate questions. The three incidental thyroid05/11/17 application primary topics, remaining112 committed questions,original24 bodies,seven checks,eight figures andmetadata still require full parent audit;the original physical-interaction body has only partially supported claims,including gastric-condition effects not established by this source subset. Working-only labels,product-specific storage,six-week switch claims andother chemistry revisions remain unreleased. Preserve DOAC026/028/029/049/052 and retained exposure/food-duration body/check claims pending;local59 DOAC rewrite remains unreleased. Preserve tetracycline069 and incidental adsorption017/041/121 pending. Complete42 EN questions,20 bodies,four checks,six figures andmetadata per enteral-nutrition-book-safety-coverage-review.json;outside ASPEN/SCCM/FDA EN approval remains unanswered andno outside EN sources opened. Then pediatricPN andclinicalfluid/calcium dependencies. Chapter1checklist15/Chapter11reviewing;do not close fullmodules oradvance sequentially yet.",
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "contentCommit": "pending",
+    "remoteHashVerified": false,
+    "receipt": "sequential-release-en-broader-thyroid-2026-10-01.json",
+    "mainMerge": "notperformed",
+    "production": "notverified"
+  }
+}

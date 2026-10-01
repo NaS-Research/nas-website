@@ -42,7 +42,7 @@ const dimensions = [
 
 const offsets = [7, 13, 19];
 
-export const thyroidMedicinalChemistryQuestionBank = concepts.flatMap((concept, conceptIndex) => dimensions.map((dimension, dimensionIndex) => ({
+const generatedThyroidMedicinalChemistryQuestionBank = concepts.flatMap((concept, conceptIndex) => dimensions.map((dimension, dimensionIndex) => ({
   id: `thychem-${String(conceptIndex + 1).padStart(2, "0")}-${dimension.key}`,
   question: dimension.prompt(concept),
   choices: [concept[dimension.field], ...offsets.map(offset => concepts[(conceptIndex + offset) % concepts.length][dimension.field])],
@@ -51,3 +51,79 @@ export const thyroidMedicinalChemistryQuestionBank = concepts.flatMap((concept, 
   reviewHref: `#${concept.lesson}`,
   difficulty: ["foundational", "application", "advanced", "clinical"][dimensionIndex],
 })));
+
+const feedingAndBindingQuestionRepairs = {
+  "thychem-23-principle": {
+    "choices": [
+      "Calcium and iron can form poorly absorbed gastrointestinal complexes with levothyroxine.",
+      "Calcium and iron lower levothyroxine exposure mainly by inducing its hepatic metabolism.",
+      "Calcium and iron increase levothyroxine absorption by keeping it free in the gut.",
+      "Complexation occurs only after all of the levothyroxine dose has entered the bloodstream."
+    ],
+    "rationale": "Calcium and iron can bind levothyroxine in the gastrointestinal tract and reduce the amount available for absorption. This is an administration and absorption interaction, rather than hepatic enzyme induction."
+  },
+  "thychem-23-application": {
+    "choices": [
+      "Separate interacting products consistently and reassess exposure before escalating dose.",
+      "Escalate levothyroxine before reviewing calcium, iron or feeding administration.",
+      "Separate the products for one dose, then return to simultaneous administration without reassessment.",
+      "Keep the products together and manage the interaction as increased hepatic metabolism."
+    ],
+    "rationale": "Review the actual administration schedule, separate interacting products consistently and reassess thyroid response before escalating the dose. The book lists four-hour separation for calcium or iron from thyroid replacement; a tube-feeding plan also requires the particular product and route to be checked."
+  },
+  "thychem-23-safety": {
+    "choices": [
+      "Increasing dose without correcting complexation can cause overreplacement when separation later improves.",
+      "Reviewing calcium and iron timing before deciding whether the dose needs to change.",
+      "Keeping the corrected administration schedule consistent while thyroid response is reassessed.",
+      "Checking for changes in feeding and interacting products when thyroid results change."
+    ],
+    "rationale": "Complexation can lower absorption. If a dose is increased to compensate and the binding interaction later decreases, exposure may rise on that higher dose. Reassess the dose and thyroid response when administration changes."
+  },
+  "thychem-23-case": {
+    "choices": [
+      "Correct the administration separation and reassess.",
+      "Increase levothyroxine without addressing the new iron timing.",
+      "Keep iron and levothyroxine together because the prescribed hormone dose is unchanged.",
+      "Treat the new iron schedule as hepatic enzyme induction and leave administration unchanged."
+    ],
+    "rationale": "The new simultaneous iron schedule provides a plausible absorption interaction. Correct the separation, keep administration consistent and reassess thyroid response rather than automatically increasing the dose or attributing the change to enzyme induction."
+  },
+  "thychem-24-principle": {
+    "choices": [
+      "Resins and selected binders can adsorb levothyroxine and reduce free drug available for absorption.",
+      "Binding resins increase levothyroxine absorption by freeing it from gastrointestinal contents.",
+      "Resins lower thyroid replacement exposure only by removing iodine from circulating T4.",
+      "Selected gastrointestinal binders act primarily by inducing hepatic levothyroxine metabolism."
+    ],
+    "rationale": "Selected resins and binders can physically bind levothyroxine and reduce its gastrointestinal availability. The relevant remedy begins with reviewing the interacting product and administration instructions, not treating binding as enzyme induction."
+  },
+  "thychem-24-application": {
+    "choices": [
+      "Review bile acid sequestrants, phosphate binders, enteral feeds, and related products when exposure becomes unstable.",
+      "Review the hormone dose alone and omit recently started resins, binders and feeding.",
+      "Review tablets but exclude supplements and enteral nutrition from the administration history.",
+      "Apply the same separation interval to every binding product without checking which product is used."
+    ],
+    "rationale": "Rebuild the actual administration history, including bile acid sequestrants, phosphate binders and feeds. Resins and selected binders can reduce availability by binding; feed cations can reduce bioavailability through complexation. These are related absorption problems, but not every product uses the same mechanism or separation interval."
+  },
+  "thychem-24-safety": {
+    "choices": [
+      "Treating adsorption as an enzyme induction problem leads to the wrong remedy.",
+      "Identifying the new binding product and reviewing its administration interval.",
+      "Checking the timing of levothyroxine relative to a resin before deciding whether to change the dose.",
+      "Reassessing thyroid response after a consistent administration plan is established."
+    ],
+    "rationale": "The error is treating physical binding in the gastrointestinal tract as hepatic enzyme induction. The other actions review the actual interacting product, schedule and thyroid response."
+  },
+  "thychem-24-case": {
+    "choices": [
+      "Suspect reduced gastrointestinal availability from adsorption.",
+      "Assume the higher TSH proves that the resin increased hepatic metabolism.",
+      "Exclude an absorption interaction because the levothyroxine dose did not change.",
+      "Assume binding improves hormone availability and ignore the new resin."
+    ],
+    "rationale": "A binding resin is a plausible cause of reduced gastrointestinal levothyroxine availability. Review its administration instructions and the thyroid response; the unchanged prescribed dose does not exclude a change in absorption."
+  }
+};
+export const thyroidMedicinalChemistryQuestionBank = generatedThyroidMedicinalChemistryQuestionBank.map((question) => ({ ...question, ...(feedingAndBindingQuestionRepairs[question.id] || {}) }));
