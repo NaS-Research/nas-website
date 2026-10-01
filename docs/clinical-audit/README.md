@@ -18,6 +18,8 @@ The concentration dependency now covers Chapter 10 printed pages 128-135 (PDF 13
 
 Dilution/alligation, checklist entries nine and ten, is now source/item/build/rendered verified from Chapter 10 printed pages 136-139 (PDF 144-147), ending before the Osmolarity heading. `pharmacy-dilution-alligation-review.json` records source/items and validation. Next is osmolarity: introduction printed 139 / PDF 147, formulas printed 140 / PDF 148. 45 independent calculation/ratio checks and the 563-page scoped build passed; desktop/mobile figures, grading, distinct attempts, review anchors and Library/curriculum/sitemap integration were verified on 2026-10-01. Content commit `0685fde9` is pushed and remote-verified on the audit branch; the receipt is `sequential-release-2026-10-01.json`. Whole chapters remain open.
 
+Osmolarity, checklist entry eleven, is source/item/build/rendered verified from Chapter 10 printed139-142/PDF147-150 before Isotonicity. All 25 bank items and four embedded checks were reviewed; 46 independent calculations, the scoped 564-page build, and desktop/mobile figure, grading, distinct-attempt, review-link and Library integration checks passed. `pharmacy-osmolarity-calculations-review.json` records the scope. Next is isotonicity at printed142/PDF150.
+
 ## Scope and evidence
 
 The founder confirmed the privately supplied PDF named `NAPLEX 2024.pdf` is the intended source. Its cover and title page identify RxPrep 2023; it contains 1,032 PDF pages. The filename is not its edition. The book, extracted text, and page images must never be committed or distributed. Temporary private extraction is at `/private/tmp/nas-rxprep-audit`; regenerate from the original if unavailable.

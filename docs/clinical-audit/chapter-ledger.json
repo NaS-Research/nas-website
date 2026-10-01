@@ -87,13 +87,14 @@
             "parenteral-nutrition-calculations",
             "pharmacy-unit-conversions",
             "pharmacy-concentrations-specific-gravity",
-            "pharmacy-dilution-alligation"
+            "pharmacy-dilution-alligation",
+            "pharmacy-osmolarity-calculations"
           ],
           "pdfPages": [
             19,
             19
           ],
-          "evidence": "chapter1-formula-checklist-map.json; first ten entries source/item/build/rendered verified; remaining entries open",
+          "evidence": "chapter1-formula-checklist-map.json; first eleven entries source/item/build/rendered verified; remaining entries open",
           "topics": [
             {
               "topic": "Liquid-volume conversions",
@@ -254,6 +255,22 @@
                 147
               ],
               "evidence": "pharmacy-dilution-alligation-review.json"
+            },
+            {
+              "topic": "Osmolarity",
+              "status": "verified",
+              "targets": [
+                "pharmacy-osmolarity-calculations"
+              ],
+              "sourcePrintedPages": [
+                139,
+                142
+              ],
+              "sourcePdfPages": [
+                147,
+                150
+              ],
+              "evidence": "pharmacy-osmolarity-calculations-review.json"
             }
           ]
         },
@@ -308,7 +325,8 @@
       "moduleSlugs": [
         "pharmacy-unit-conversions",
         "pharmacy-concentrations-specific-gravity",
-        "pharmacy-dilution-alligation"
+        "pharmacy-dilution-alligation",
+        "pharmacy-osmolarity-calculations"
       ],
       "findings": [
         "Textbook six-area exam blueprint superseded by NABP five-domain outline effective 2025-05-01.",
@@ -322,7 +340,8 @@
         "chapter1-formula-checklist-map.json",
         "pharmacy-unit-conversions-review.json",
         "pharmacy-concentrations-specific-gravity-review.json",
-        "pharmacy-dilution-alligation-review.json"
+        "pharmacy-dilution-alligation-review.json",
+        "pharmacy-osmolarity-calculations-review.json"
       ],
       "pdfRangeStatus": "start verified; end provisional"
     },
@@ -509,16 +528,34 @@
             "pharmacy-dilution-alligation"
           ],
           "evidence": "pharmacy-dilution-alligation-review.json; end before Osmolarity introduction on page 139"
+        },
+        {
+          "topic": "Osmolarity and total milliosmoles",
+          "printedPages": [
+            139,
+            142
+          ],
+          "pdfPages": [
+            147,
+            150
+          ],
+          "status": "verified",
+          "targets": [
+            "pharmacy-osmolarity-calculations"
+          ],
+          "evidence": "pharmacy-osmolarity-calculations-review.json; end before Isotonicity"
         }
       ],
       "moduleSlugs": [
         "pharmacy-concentrations-specific-gravity",
-        "pharmacy-dilution-alligation"
+        "pharmacy-dilution-alligation",
+        "pharmacy-osmolarity-calculations"
       ],
       "findings": [],
       "evidence": [
         "pharmacy-concentrations-specific-gravity-review.json",
-        "pharmacy-dilution-alligation-review.json"
+        "pharmacy-dilution-alligation-review.json",
+        "pharmacy-osmolarity-calculations-review.json"
       ]
     },
     {

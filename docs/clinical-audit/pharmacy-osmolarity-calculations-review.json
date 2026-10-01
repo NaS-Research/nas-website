@@ -1,0 +1,507 @@
+{
+  "date": "2026-10-01",
+  "status": "verified",
+  "module": "pharmacy-osmolarity-calculations",
+  "sourcePolicy": "Supplied RxPrep 2023 only",
+  "source": {
+    "checklist": {
+      "chapter": 1,
+      "printedPage": 7,
+      "pdfPage": 19,
+      "entry": 11
+    },
+    "dependency": {
+      "chapter": 10,
+      "printedPages": [
+        139,
+        142
+      ],
+      "pdfPages": [
+        147,
+        150
+      ],
+      "allTextAndVisualRead": true,
+      "end": "Before Isotonicity"
+    }
+  },
+  "mappingSearch": {
+    "result": "No dedicated solute-particle, molecular-weight osmolarity calculation module or matching standalone question. Existing fluid/serum osmolality, clinical PN and ORS composition are different scopes.",
+    "relatedModules": [
+      "fluid-electrolyte-therapy",
+      "parenteral-nutrition-calculations",
+      "diarrhea-assessment-pharmacotherapy"
+    ],
+    "broaderBank": "Five automatically selected questions span all four new lessons; no divergent duplicate bank."
+  },
+  "scope": {
+    "lessons": 4,
+    "teachingSections": 16,
+    "originalFigures": 4,
+    "embeddedChecks": 4,
+    "originalBankQuestions": 25,
+    "cumulativeAutoSelection": 5
+  },
+  "coverage": [
+    {
+      "lesson": "particles-and-units",
+      "sourcePrintedPages": [
+        139,
+        141
+      ],
+      "topics": [
+        "Full source particle table",
+        "Already specified ions",
+        "Electrical charge versus particle count",
+        "Osmolarity/osmolality units and dilute comparison",
+        "Stated molecular weight and atomic sum"
+      ]
+    },
+    {
+      "lesson": "osmolarity-per-liter",
+      "sourcePrintedPages": [
+        140,
+        141
+      ],
+      "topics": [
+        "g/L formula",
+        "Percentage/mg conversion",
+        "Nonionic particles",
+        "Final rounding"
+      ]
+    },
+    {
+      "lesson": "total-milliosmoles",
+      "sourcePrintedPages": [
+        140,
+        141
+      ],
+      "topics": [
+        "Total mass and actual portion volume",
+        "mOsmol versus mOsmol/L",
+        "One-liter numerical equality",
+        "Sodium/calcium ions"
+      ]
+    },
+    {
+      "lesson": "mixtures-and-reverse",
+      "sourcePrintedPages": [
+        141,
+        142
+      ],
+      "topics": [
+        "Reverse mass equation",
+        "Component amounts on one final-volume basis",
+        "Monovalent KCl equivalents/compound amount/particle conversion"
+      ]
+    }
+  ],
+  "itemReview": {
+    "all25PromptsChoicesKeysExplanationsIndividuallyReviewed": true,
+    "allFourEmbeddedChecksReviewed": true,
+    "conceptualIds": [
+      "calc-osm-001",
+      "calc-osm-002",
+      "calc-osm-003",
+      "calc-osm-004",
+      "calc-osm-005",
+      "calc-osm-006",
+      "calc-osm-023"
+    ],
+    "originality": "Original quantities and question phrasing; book practice items not reproduced.",
+    "distractors": "Amount/concentration confusion, missing liters/grams conversion, omitted or doubled particle factor, valence confusion, incorrect MW, early rounding and missing mixture component.",
+    "finishedModuleComparedAgainToSource": true
+  },
+  "independentArithmetic": {
+    "method": "Independent Decimal calculations from literal inputs, without website math helpers; conceptual items separately source-reviewed.",
+    "bank": [
+      {
+        "id": "calc-osm-007",
+        "independentDecimal": "513",
+        "keyedChoice": "513 mOsmol/L",
+        "passed": true
+      },
+      {
+        "id": "calc-osm-008",
+        "independentDecimal": "151.5",
+        "keyedChoice": "151.5 mOsmol/L",
+        "passed": true
+      },
+      {
+        "id": "calc-osm-009",
+        "independentDecimal": "40.00",
+        "keyedChoice": "40 mOsmol/L",
+        "passed": true
+      },
+      {
+        "id": "calc-osm-010",
+        "independentDecimal": "50.00",
+        "keyedChoice": "50 mOsmol/L",
+        "passed": true
+      },
+      {
+        "id": "calc-osm-011",
+        "independentDecimal": "58.5",
+        "keyedChoice": "58.5 g/mol",
+        "passed": true
+      },
+      {
+        "id": "calc-osm-012",
+        "independentDecimal": "90.00",
+        "keyedChoice": "90 mOsmol/L",
+        "passed": true
+      },
+      {
+        "id": "calc-osm-013",
+        "independentDecimal": "30",
+        "keyedChoice": "30 mOsmol",
+        "passed": true
+      },
+      {
+        "id": "calc-osm-014",
+        "independentDecimal": "120.00",
+        "keyedChoice": "120 mOsmol",
+        "passed": true
+      },
+      {
+        "id": "calc-osm-015",
+        "independentDecimal": "20.00",
+        "keyedChoice": "20 mOsmol",
+        "passed": true
+      },
+      {
+        "id": "calc-osm-016",
+        "independentDecimal": "4.000",
+        "keyedChoice": "4 mOsmol",
+        "passed": true
+      },
+      {
+        "id": "calc-osm-017",
+        "independentDecimal": "100.0",
+        "keyedChoice": "100 mOsmol",
+        "passed": true
+      },
+      {
+        "id": "calc-osm-018",
+        "independentDecimal": "1.5E+2",
+        "keyedChoice": "150 mOsmol/L",
+        "passed": true
+      },
+      {
+        "id": "calc-osm-019",
+        "independentDecimal": "3.0E+2",
+        "keyedChoice": "300 mOsmol/L",
+        "passed": true
+      },
+      {
+        "id": "calc-osm-020",
+        "independentDecimal": "204",
+        "keyedChoice": "204 mOsmol/L",
+        "passed": true
+      },
+      {
+        "id": "calc-osm-021",
+        "independentDecimal": "2.24",
+        "keyedChoice": "2.24 g",
+        "passed": true
+      },
+      {
+        "id": "calc-osm-022",
+        "independentDecimal": "5.460",
+        "keyedChoice": "5.46 g",
+        "passed": true
+      },
+      {
+        "id": "calc-osm-024",
+        "independentDecimal": "4E+1",
+        "keyedChoice": "40 mOsmol/L",
+        "passed": true
+      },
+      {
+        "id": "calc-osm-025",
+        "independentDecimal": "2.0E+2",
+        "keyedChoice": "200 mOsmol/L",
+        "passed": true
+      }
+    ],
+    "workedEmbeddedAndFigures": [
+      {
+        "label": "NaCl formula-unit MW",
+        "value": "58.5",
+        "passed": true
+      },
+      {
+        "label": "NaCl percentage to g/L",
+        "value": "15.0",
+        "passed": true
+      },
+      {
+        "label": "NaCl per-liter rounded",
+        "value": "513",
+        "passed": true
+      },
+      {
+        "label": "mg/L to g/L",
+        "value": "1.17",
+        "passed": true
+      },
+      {
+        "label": "low NaCl concentration",
+        "value": "40.00",
+        "passed": true
+      },
+      {
+        "label": "mannitol concentration",
+        "value": "50.00",
+        "passed": true
+      },
+      {
+        "label": "dextrose g/L",
+        "value": "30",
+        "passed": true
+      },
+      {
+        "label": "dextrose concentration rounded",
+        "value": "151.5",
+        "passed": true
+      },
+      {
+        "label": "CaCl2 total",
+        "value": "120.00",
+        "passed": true
+      },
+      {
+        "label": "CaCl2 concentration",
+        "value": "6E+2",
+        "passed": true
+      },
+      {
+        "label": "portion total",
+        "value": "30.000",
+        "passed": true
+      },
+      {
+        "label": "given amount to concentration",
+        "value": "1.5E+2",
+        "passed": true
+      },
+      {
+        "label": "sodium ion total",
+        "value": "20.000",
+        "passed": true
+      },
+      {
+        "label": "calcium ion total",
+        "value": "4.000",
+        "passed": true
+      },
+      {
+        "label": "anhydrous dextrose amount",
+        "value": "100.0",
+        "passed": true
+      },
+      {
+        "label": "anhydrous concentration rounded",
+        "value": "333.3",
+        "passed": true
+      },
+      {
+        "label": "mixed mannitol amount",
+        "value": "50.00",
+        "passed": true
+      },
+      {
+        "label": "mixed NaCl amount",
+        "value": "100.00",
+        "passed": true
+      },
+      {
+        "label": "mixed total",
+        "value": "150",
+        "passed": true
+      },
+      {
+        "label": "mixed concentration",
+        "value": "3E+2",
+        "passed": true
+      },
+      {
+        "label": "KCl mmol to particles",
+        "value": "24",
+        "passed": true
+      },
+      {
+        "label": "one liter mixture total",
+        "value": "204",
+        "passed": true
+      },
+      {
+        "label": "reverse desired amount",
+        "value": "60.000",
+        "passed": true
+      },
+      {
+        "label": "reverse KCl grams",
+        "value": "2.235",
+        "passed": true
+      },
+      {
+        "label": "reverse rounded grams",
+        "value": "2.24",
+        "passed": true
+      },
+      {
+        "label": "reverse mass check",
+        "value": "2.0E+2",
+        "passed": true
+      },
+      {
+        "label": "KCl equivalents supplied as mmol",
+        "value": "20",
+        "passed": true
+      },
+      {
+        "label": "KCl contribution concentration",
+        "value": "4E+1",
+        "passed": true
+      }
+    ],
+    "totalCalculations": 46,
+    "allPassed": true,
+    "conceptualIds": [
+      "calc-osm-001",
+      "calc-osm-002",
+      "calc-osm-003",
+      "calc-osm-004",
+      "calc-osm-005",
+      "calc-osm-006",
+      "calc-osm-023"
+    ]
+  },
+  "sourceFindings": [
+    "Specified ions count as individual particles; calcium valence is not a particle multiplier.",
+    "Book one-liter examples sometimes label mOsmol while formula inputs are g/L; original items state total volume and requested unit explicitly.",
+    "Different stated dextrose molecular weights retained according to solute form; no silent replacement.",
+    "The book rounded an intermediate g/L value in its reverse KCl example; original items retain intermediate precision and round only the requested final answer.",
+    "Idealized calculated osmolarity does not establish clinical tonicity, measured serum osmolality, route, compatibility or treatment suitability."
+  ],
+  "unresolvedIssues": [],
+  "validation": {
+    "focusedAudit": {
+      "result": "Passed; no hard errors or source gaps. Size/lesson-count advisories reviewed against the complete narrow source subsection.",
+      "report": {
+        "modules": 1,
+        "questions": 25,
+        "hardErrors": [],
+        "sourceGaps": [],
+        "sizeAdvisories": [
+          {
+            "module": "pharmacy-osmolarity-calculations",
+            "questions": 25,
+            "review": "Confirm topic coverage in the clinical audit ledger"
+          }
+        ],
+        "thinLessons": [
+          {
+            "module": "pharmacy-osmolarity-calculations",
+            "lesson": "particles-and-units",
+            "count": 6
+          },
+          {
+            "module": "pharmacy-osmolarity-calculations",
+            "lesson": "osmolarity-per-liter",
+            "count": 6
+          },
+          {
+            "module": "pharmacy-osmolarity-calculations",
+            "lesson": "total-milliosmoles",
+            "count": 6
+          },
+          {
+            "module": "pharmacy-osmolarity-calculations",
+            "lesson": "mixtures-and-reverse",
+            "count": 7
+          }
+        ],
+        "weakestModules": [
+          {
+            "module": "pharmacy-osmolarity-calculations",
+            "lessons": 4,
+            "questions": 25,
+            "minimumLessonCoverage": 6
+          }
+        ]
+      }
+    },
+    "build": "Passed: exact scoped Next production build, 564 pages.",
+    "desktopMobile": [
+      {
+        "build": "scoped production candidate",
+        "width": 1440,
+        "lessons": 4,
+        "figures": 4,
+        "embeddedChecks": 4,
+        "assessmentCorrect": 10,
+        "secondAttemptDistinct": true,
+        "incorrectFeedbackAndRemediation": true,
+        "priorConversionFigures": 4,
+        "priorConcentrationFigures": 5,
+        "priorDilutionFigures": 4,
+        "curriculum": true,
+        "sitemap": true,
+        "noOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "build": "scoped production candidate",
+        "width": 390,
+        "lessons": 4,
+        "figures": 4,
+        "embeddedChecks": 4,
+        "assessmentCorrect": 10,
+        "secondAttemptDistinct": true,
+        "incorrectFeedbackAndRemediation": true,
+        "priorConversionFigures": 4,
+        "priorConcentrationFigures": 5,
+        "priorDilutionFigures": 4,
+        "curriculum": true,
+        "sitemap": true,
+        "noOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "build": "current working Learn integration",
+        "width": 390,
+        "narrowWidth": 320,
+        "librarySearch": true,
+        "moduleLink": true,
+        "figures": 4,
+        "noOverflow": true,
+        "signedOutMemberBoundary": 401,
+        "pageErrors": []
+      }
+    ],
+    "candidateDiff": "Passed: semantic ledger scope restricted to chapters1/10 and this new module; only module/data/reader registration/evidence files included; unrelated work preserved.",
+    "technical": {
+      "module": "pharmacy-osmolarity-calculations",
+      "uniqueNumber": true,
+      "uniqueIds": true,
+      "uniquePrompts": true,
+      "choicesAndAnchorsValid": true,
+      "lessons": 4,
+      "questions": 25,
+      "cumulativeItems": 5,
+      "cumulativeLessonCoverage": 4,
+      "passed": true
+    },
+    "renderedVisualReview": "All four figures inspected at 1440 desktop and 390 mobile using unobscured viewport captures; labels, particle counts, numerical values and formula wrapping legible."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "baseCommit": "57ca82a4423308436b2cd863576d1fc48e9fcb04",
+    "commit": "pending",
+    "push": "pending",
+    "production": "not verified"
+  },
+  "remainingBookCoverage": "Isotonicity is next at printed142/PDF150. Chapter1 checklist and chapter10 remain open.",
+  "verificationDate": "2026-10-01"
+}
