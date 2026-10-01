@@ -1,0 +1,674 @@
+{
+  "slug": "atenolol",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "SelectedRisingsingleingredient25/50/100mgoralatenolol; adultHTN/angina,oralMIlabelcontext,renal/dialysislimits; currentAHApublicCCD/HTNand2025poisoningcontext",
+  "excludedRegimens": [
+    "Currentinjectableproductavailability,IVpreparation/diluent/stabilityprotocol:requiresseparatecurrentproductreview",
+    "Combinationatenolol/chlorthalidone,compoundedliquids,othermanufactureridentification",
+    "Pediatric/offlabelarrhythmia,HFrEFregimens; no pediatricapproval/doseclaimed",
+    "UniversalpostMIduration,fixedtaper,critical-careantidotenumericprotocols; legacyemesisinstructions"
+  ],
+  "sources": [
+    {
+      "id": "label",
+      "title": "Atenolol tablets · Prescribing information",
+      "publisher": "DailyMed / Rising Pharma Holdings, Inc.",
+      "note": "Current SPL version 5, effective 2025-05-19. 25 mg, 50 mg and 100 mg tablets; prescribing information revised May 2025.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=96dd038f-b363-4e24-9c67-82b7c85c3bc4"
+    },
+    {
+      "id": "ccd",
+      "title": "Chronic coronary disease · Guideline summary",
+      "publisher": "American Heart Association",
+      "note": "2023 multisociety guideline, public Top Things to Know item6; long-term beta-blocker scope and antianginal therapy. Accessed October 1, 2026.",
+      "url": "https://professional.heart.org/en/science-news/2023-guideline-for-the-management-of-patients-with-chronic-coronary-disease/top-things-to-know"
+    },
+    {
+      "id": "htn",
+      "title": "High blood pressure · Current guideline summary",
+      "publisher": "American Heart Association",
+      "note": "2025 guideline public Top Things to Know, updated August14, 2025; home monitoring and comprehensive care. Full guideline access not claimed.",
+      "url": "https://professional.heart.org/en/science-news/2025-high-blood-pressure-guideline/top-things-to-know"
+    },
+    {
+      "id": "poison",
+      "title": "Life-threatening beta-blocker poisoning · Resuscitation guidance",
+      "publisher": "American Heart Association",
+      "note": "2025 CPR/ECC Part10, section21.4; public recommendations and supporting text. Accessed October1, 2026.",
+      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-and-pediatric-special-circumstances-of-resuscitation"
+    },
+    {
+      "id": "firstaid",
+      "title": "First aid for poisonings",
+      "publisher": "National Capital Poison Center",
+      "note": "Current public first-aid guidance: no induced vomiting, PoisonControl number and emergency symptoms. Accessed October1, 2026.",
+      "url": "https://www.poison.org/first-aid-for-poisonings"
+    }
+  ],
+  "labelMetadata": [
+    {
+      "product": "atenolol-tablet",
+      "sourceId": "label",
+      "setid": "96dd038f-b363-4e24-9c67-82b7c85c3bc4",
+      "effectiveTime": "20250519",
+      "version": "5",
+      "PIrevision": "May2025",
+      "xmlSha256": "3674349c79001adba81477de639d557557a3eaf5c41ce09a86af6943c19b2fee",
+      "localEvidence": "/tmp/nas-drug-sources/atenolol-tablet.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/96dd038f-b363-4e24-9c67-82b7c85c3bc4.xml"
+    }
+  ],
+  "evidence": [
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/atenolol-tablet.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/atenolol/atenolol-tablet.xml",
+      "sha256": "3674349c79001adba81477de639d557557a3eaf5c41ce09a86af6943c19b2fee",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/96dd038f-b363-4e24-9c67-82b7c85c3bc4.xml"
+    },
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/atenolol-tablet-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/atenolol/atenolol-tablet-sections.json",
+      "sha256": "e309d1464bf560cedf149062ffe45c11824d7c7a794cdb2d8af007099a96032c",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/96dd038f-b363-4e24-9c67-82b7c85c3bc4.xml"
+    },
+    {
+      "sourceId": "ccd",
+      "localEvidence": "/tmp/nas-drug-sources/atenolol-ccd2023-web.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/atenolol/atenolol-ccd2023-web.json",
+      "sha256": "09190140d52d959828dd15f257e47198888154dc8fdbcb00399a80c0529550cd",
+      "url": "https://professional.heart.org/en/science-news/2023-guideline-for-the-management-of-patients-with-chronic-coronary-disease/top-things-to-know"
+    },
+    {
+      "sourceId": "htn",
+      "localEvidence": "/tmp/nas-drug-sources/atenolol-htn2025-web.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/atenolol/atenolol-htn2025-web.json",
+      "sha256": "f0b92b35e00ecbf94ab2108d437c2321d6c68b4779881209cf8eada9ca0cdb48",
+      "url": "https://professional.heart.org/en/science-news/2025-high-blood-pressure-guideline/top-things-to-know"
+    },
+    {
+      "sourceId": "poison",
+      "localEvidence": "/tmp/nas-drug-sources/atenolol-poisoning2025-web.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/atenolol/atenolol-poisoning2025-web.json",
+      "sha256": "5828dc80a64a3e7641e02684e295da9b40599266596bde7e97b07d7e01be85e9",
+      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-and-pediatric-special-circumstances-of-resuscitation"
+    },
+    {
+      "sourceId": "firstaid",
+      "localEvidence": "/tmp/nas-drug-sources/atenolol-poison-firstaid.html",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/atenolol/atenolol-poison-firstaid.html",
+      "sha256": "8bb5b9ccc9012505575799c34b281e0a6b9aed7ea7ac241474309e8a27c234cc",
+      "url": "https://www.poison.org/first-aid-for-poisonings"
+    }
+  ],
+  "sourceEvidenceRoot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/atenolol",
+  "sourceManifest": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/atenolol/source-manifest.json",
+  "assertionToSourceMap": [
+    {
+      "section": "indications",
+      "card": "Labeled oral indications",
+      "assertions": {
+        "paragraphs": [
+          "The selected tablet label covers hypertension, long-term angina due to coronary atherosclerosis, and reduction of cardiovascular mortality in hemodynamically stable patients with definite or suspected acute myocardial infarction. It is not a general label for all arrhythmias or heart-failure treatment."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Indications and Usage: Hypertension,Angina,AcuteMI; no generalarrhythmia/HFindication"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "indications",
+      "card": "Current cardiovascular context",
+      "assertions": {
+        "paragraphs": [
+          "Use current cardiovascular guidance to decide the indication and duration. The AHA’s chronic-coronary-disease summary does not recommend long-term beta blockade solely to improve outcomes when there has been no MI in the past year, LVEF is above 50%, and there is no other primary indication. Beta blockers or calcium-channel blockers remain options for first-line antianginal therapy. The old tablet label’s suggested 1–3 post-MI years is not a universal contemporary duration."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "ccd"
+      ],
+      "sourceSections": {
+        "label": "Dosage: AcuteMI legacy1–3year duration text",
+        "ccd": "2023publicTopThingsToKnow item6 exactpostMI/LVEF/otherindicationexception and antianginalrecommendation"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "indications",
+      "card": "Acute-MI eligibility and scope",
+      "assertions": {
+        "paragraphs": [
+          "Acute-MI treatment belongs in monitored coronary care after stabilization, not self-treatment of chest pain. The label’s supporting trial excluded systolic BP below 100 mm Hg, heart rate below 50 bpm, and other beta-blocker contraindications. The profile reviews the oral tablet label; a current injectable product and its supply were not verified, so an IV preparation protocol is not provided."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Indications: AcuteMI eligibility; ClinicalPharmacology ISIS1exclusions; Dosage monitoredcoronarycare"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "dosage",
+      "card": "Adult oral label regimens",
+      "assertions": {
+        "paragraphs": [
+          "Individualize to pulse, BP, symptoms, organ function, and concomitant drugs. These adult label regimens do not establish pediatric dosing."
+        ],
+        "table": {
+          "headers": [
+            "Indication",
+            "Starting dose",
+            "Titration / scope"
+          ],
+          "rows": [
+            [
+              "Hypertension",
+              "50 mg once daily",
+              "Assess full effect over 1–2 weeks; increase to 100 mg daily if needed. Above 100 mg/day is unlikely to add antihypertensive benefit"
+            ],
+            [
+              "Chronic angina",
+              "50 mg once daily",
+              "If response inadequate after 1 week, increase to 100 mg daily; some patients require 200 mg daily"
+            ],
+            [
+              "Selected older or renally impaired hypertension patients",
+              "25 mg once daily may be appropriate",
+              "Assess BP immediately before the next dose to confirm 24-hour control"
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Dosage: Hypertension,Angina,Elderly/RenalImpairment lower25mgstart/troughBP"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "dosage",
+      "card": "Renal dose limits",
+      "assertions": {
+        "paragraphs": [
+          "Significant accumulation occurs when CrCl falls below 35 mL/min/1.73 m². Preserve the label’s indexed clearance units rather than substitute another renal estimate without assessment. The label notes that data for corresponding reductions in non-hypertension indications are limited; titrate carefully."
+        ],
+        "table": {
+          "headers": [
+            "CrCl · mL/min/1.73 m²",
+            "Selected maximum oral dose",
+            "Label half-life"
+          ],
+          "rows": [
+            [
+              "15–35",
+              "50 mg daily",
+              "16–27 hours"
+            ],
+            [
+              "<15",
+              "25 mg daily",
+              "More than 27 hours"
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Dosage: Elderly/RenalImpairment exactindexedCrClmaxdose table and nonHTNlimiteddata"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "dosage",
+      "card": "Hemodialysis",
+      "assertions": {
+        "paragraphs": [
+          "The tablet label describes 25 mg or 50 mg after each hemodialysis session, under hospital supervision because marked BP falls may occur. This is a post-dialysis regimen, not an instruction to take the same dose daily in addition. Confirm timing, dose, and monitoring with the treating team."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Dosage: Hemodialysis aftereachsession underhospitalsupervision"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "dosage",
+      "card": "Oral phase of acute-MI treatment",
+      "assertions": {
+        "paragraphs": [
+          "In the selected label, patients tolerating the full monitored IV phase receive oral 50 mg 10 minutes after the last IV dose, then another 50 mg 12 hours later; subsequently 100 mg daily or 50 mg twice daily for a further 6–9 days or until discharge. If IV treatment is omitted, eligible patients may receive 50 mg twice daily or 100 mg daily for at least 7 days. These label pathways require specialist assessment and BP/heart-rate/ECG monitoring; stop treatment when clinically significant bradycardia, hypotension, or other adverse effects require it. They are not universal contemporary ACS protocols."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Dosage: AcuteMI full oraltransition/IVomitted pathways and stoppingcriteria; IV preparationexcluded"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "dosage",
+      "card": "Withdrawal and formulation",
+      "assertions": {
+        "paragraphs": [
+          "Withdraw gradually with close observation, especially with angina; limit physical activity as advised during withdrawal. The selected label gives no universal numeric taper. Tablets contain single-ingredient atenolol; do not substitute an atenolol/chlorthalidone combination or apply oral directions to an injection."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Dosage: CessationofTherapy; Description singleingredient"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Atenolol can worsen cardiac failure or cause bradycardia, hypotension, and conduction block, especially with verapamil, diltiazem, or other rate-slowing medicines. Abrupt cessation can trigger severe angina, MI, or ventricular arrhythmia. Relative beta-1 selectivity is not absolute: bronchospastic disease generally argues against beta blockers; use only cautiously when alternatives are unsuitable.",
+          "Beta blockade may mask hypoglycemic tachycardia and increase severe or prolonged hypoglycemia risk, especially with diabetes, fasting, vomiting, or in children. It can mask thyrotoxicosis; abrupt withdrawal may precipitate thyroid storm. Do not give with untreated pheochromocytoma. Peripheral arterial circulation may worsen. Do not routinely stop chronic treatment before major surgery; coordinate with the anesthesia team. Pregnancy exposure can harm the fetus."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "FullWarnings includingseparatepostboxwarnings: cardiacfailure,calciumblockers,bronchospasm,surgery,hypoglycemia,thyrotoxicosis,pheochromocytoma,pregnancy; Precautionsperipheralcirculation"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Sinus bradycardia, heart block greater than first degree, cardiogenic shock, overt cardiac failure, and hypersensitivity to atenolol or product components. The selected label’s overt-failure contraindication does not mean that all beta blockers have identical heart-failure indications."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Contraindications; overtcardiacfailure scope"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning",
+      "assertions": {
+        "paragraphs": [
+          "The selected label’s boxed warning concerns cessation of therapy in coronary disease: abrupt withdrawal can severely worsen angina or precipitate MI and ventricular arrhythmias. Withdrawal requires observation and reduced activity; coronary insufficiency may require prompt reinstitution by the clinician. Unrecognized coronary disease is a reason to avoid sudden cessation even in hypertension treatment."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "BoxedWarning code34066-1: CessationofTherapy complete"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Bradycardia, hypotension or postural symptoms, cold extremities, fatigue, dizziness, GI symptoms, and wheezing or dyspnea are reported. Postmarketing events include liver-test abnormalities, visual or psychiatric symptoms, sexual dysfunction, skin reactions, and thrombocytopenia. Rates differ between hypertension trials and acute-MI studies; do not generalize one population’s incidence."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "AdverseReactions controlledHTN/MI/postmarketing; PotentialAdverseEffects separateclassreports not universalfrequency"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "interactions",
+      "card": "Rate-slowing and antihypertensive combinations",
+      "assertions": {
+        "paragraphs": [
+          "Verapamil or diltiazem can cause additive bradycardia, heart block, or ventricular dysfunction. Digoxin, amiodarone, disopyramide, other beta blockers, and catecholamine-depleting drugs such as reserpine warrant careful assessment; hypotension and severe bradycardia may occur."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Warningscalciumchannelblockers; PrecautionsDrugInteractions: reserpine,digitalis,amiodarone,disopyramide"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "interactions",
+      "card": "Clonidine withdrawal",
+      "assertions": {
+        "paragraphs": [
+          "Beta blockers can worsen rebound hypertension after clonidine cessation. The label advises withdrawing the beta blocker several days before gradual clonidine withdrawal; when replacing clonidine with a beta blocker, delay starting the beta blocker for several days after clonidine has stopped. Coordinate this with atenolol’s coronary-withdrawal warning; do not stop either medicine independently."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "PrecautionsDrugInteractionsclonidine exactsequence; BoxedWarning withdrawal safeguards"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "interactions",
+      "card": "NSAIDs and anaphylaxis",
+      "assertions": {
+        "paragraphs": [
+          "Prostaglandin-synthesis inhibitors such as indomethacin may reduce BP-lowering effects; review NSAID use and BP response. Patients with a history of anaphylaxis can have more severe reactions during beta blockade and may respond inadequately to usual epinephrine doses; tell emergency clinicians about atenolol. This does not instruct patients to withhold prescribed emergency epinephrine."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "PrecautionsDrugInteractionsNSAID/prostaglandin inhibitors and anaphylaxiseffect; emergencyepinephrinenotwithheld is contextualclinicalcounseling"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and breastfeeding",
+      "assertions": {
+        "paragraphs": [
+          "Atenolol crosses the placenta; second-trimester initiation has been associated with small-for-gestational-age infants, and first-trimester fetal risk cannot be excluded. Assess alternatives and maternal benefit rather than assume safety. Atenolol enters breast milk at concentrations exceeding maternal plasma; clinically significant infant bradycardia has been reported. Neonates, premature infants, and infants with impaired kidney function are particularly vulnerable to bradycardia or hypoglycemia; discuss feeding and monitoring with the treating team."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "WarningsPregnancy/FetalInjury; PrecautionsPregnancy/NursingMothers complete; fetalSGAandinfantbradycardia/renalrisk"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "populations",
+      "card": "Pediatrics and geriatrics",
+      "assertions": {
+        "paragraphs": [
+          "Pediatric safety and effectiveness are not established in the selected label; no pediatric regimen is provided. Older patients have reduced clearance and higher exposure. Start cautiously, assess renal function and clinical response, and consider the greater prevalence of conduction disease, hypotension, and interacting drugs."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "PrecautionsPediatricUse/GeriatricUse; GeriatricPharmacology"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "populations",
+      "card": "Renal, hepatic, and respiratory considerations",
+      "assertions": {
+        "paragraphs": [
+          "Renal elimination drives dose reduction; use the indexed CrCl limits and dialysis instructions above. Atenolol undergoes little or no hepatic metabolism, but the selected label does not supply a validated hepatic-impairment dosing table. Beta-1 selectivity diminishes at higher doses and does not eliminate asthma or COPD risk. Monitor peripheral circulation and glucose risk when relevant."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "ClinicalPharmacologyPK renal/littlehepaticmetabolism; Dosage indexedCrCl; Warningsbronchospasm/hypoglycemia; Precautionsperipheralcirculation"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "assertions": {
+        "paragraphs": [
+          "Atenolol reduces heart rate and cardiac adrenergic stimulation, slows AV-node conduction, and generally lowers myocardial oxygen demand. It has no intrinsic sympathomimetic or membrane-stabilizing activity. At higher doses beta-2 blockade becomes more important; the exact antihypertensive mechanism is not fully established."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "ClinicalPharmacologyintro/Pharmacodynamics"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "assertions": {
+        "paragraphs": [
+          "Protein binding is low, approximately 6–16%. Clinical beta-blocking and antihypertensive effects of studied 50–100 mg doses can persist at least 24 hours despite a shorter plasma half-life. Renal impairment and older age prolong exposure."
+        ],
+        "facts": [
+          [
+            "Oral absorption",
+            "Approximately 50%"
+          ],
+          [
+            "Peak blood level",
+            "2–4 hours after ingestion"
+          ],
+          [
+            "Elimination half-life",
+            "About 6–7 hours with normal renal function"
+          ],
+          [
+            "Main elimination",
+            "Renal excretion; little or no hepatic metabolism"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "ClinicalPharmacologyPK/Metabolism/GeriatricPharmacology"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": {
+        "paragraphs": [
+          "Check BP and pulse, orthostatic symptoms, angina control, heart-failure symptoms, conduction concerns, and renal function. Use trough BP to assess low-dose 24-hour efficacy. The current AHA hypertension summary supports home BP monitoring integrated with clinician follow-up and comprehensive risk management; avoid assuming a smartwatch reliably measures BP. Assess glucose-related symptoms during fasting or vomiting."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "htn"
+      ],
+      "sourceSections": {
+        "label": "Dosageelderlyrenal/troughBP; PrecautionsGeneral/renal/hypoglycemia; Warnings",
+        "htn": "2025publicTopThingsToKnow item9 homeBPstandardizedcare/cufflessdevices and comprehensivecontext"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "assertions": {
+        "items": [
+          "Take the prescribed dose consistently. Do not stop abruptly or change withdrawal timing without the prescriber.",
+          "Report fainting, severe dizziness, new breathlessness, swelling, wheezing, or very slow pulse. Chest pain or collapse requires urgent assessment.",
+          "Tell clinicians about atenolol before surgery and before starting rate-slowing drugs, clonidine, or regular NSAIDs.",
+          "Hypoglycemia may occur without the usual fast heartbeat; discuss glucose monitoring and sick-day or fasting instructions if relevant."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "BoxedWarning; Warningssurgery,hypoglycemia; DrugInteractions; serioussymptomcounselingclinical synthesis"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "practice",
+      "card": "Overdose and urgent assessment",
+      "assertions": {
+        "paragraphs": [
+          "Overdose can cause severe bradycardia, shock, respiratory impairment, or hypoglycemia and requires emergency evaluation. Current AHA guidance uses vasopressors and high-dose insulin/euglycemia therapy for appropriate life-threatening cases; hemodialysis may be reasonable for severe atenolol poisoning. These are monitored specialist treatments, not home instructions. Do not induce vomiting. Call 911 for collapse or impaired breathing and U.S. Poison Control at 1-800-222-1222 for suspected overdose."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "poison",
+        "firstaid"
+      ],
+      "sourceSections": {
+        "label": "Overdosage clinicaleffects/dialyzability; outdatedemesis/directtreatmentsequence notpropagated",
+        "poison": "2025AHA Part10§21.4beta-blockerpoisoning recommendationstable and allsupportingtext; vasopressors/insulineuglycemia/hemodialysis scoped",
+        "firstaid": "CurrentFirstAid: swallowedpoisons noemesis; phonePoisonControl/911criteria"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "product",
+      "card": "Representative tablet · Rising 50 mg",
+      "assertions": {
+        "paragraphs": [
+          "Manufactured by Unique Pharmaceutical Laboratories and distributed by Rising Pharma. These are not the brand Tenormin appearance or NDC."
+        ],
+        "facts": [
+          [
+            "Strength / form",
+            "50 mg film-coated oral tablet"
+          ],
+          [
+            "Appearance",
+            "Circular, biconvex, white to off-white; scored"
+          ],
+          [
+            "Imprint",
+            "ATN and 50 on one side; lip-like score on reverse"
+          ],
+          [
+            "Package example",
+            "Bottle of 100 · NDC 64980-438-01"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "HowSupplied50mgexactappearance,NDC,manufacturer/distributor"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Reviewed Rising single-ingredient oral tablets: 25, 50, and 100 mg. Other manufacturers can differ in imprint, coating, scoring, or excipients. The tablet label mentions an IV acute-MI phase, but a current injectable product’s preparation, packaging, and supply were not verified here. Combination products and compounded liquids are outside this reference."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Description/HowSupplied; IVpreparationavailabilityexcluded"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Store the selected tablets at controlled room temperature, 20–25°C (68–77°F), in a well-closed, light-resistant container. Follow the actual dispensing container and product instructions; keep away from children."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "HowSupplied exactstoragecontainer"
+      },
+      "review": "Reviewed complete supporting primary label sections; current guideline scope, population and formulation distinctions retained. General monitoring/emergency counseling identified as clinical synthesis where not exact label instructions."
+    }
+  ],
+  "materialErrors": [],
+  "unresolvedMaterialGaps": [],
+  "sourceDiscrepancies": [
+    {
+      "issue": "TenorminbrandcandidateXML404whilepublicHTMLhasolder2023PI; genericRising2025SPLavailable.",
+      "resolution": "SelectedcurrentRisingproductforfullreview,metadata/appearance/storage; brandcommonnameonly,noTenorminNDCoravailabilitygeneralization.",
+      "resolved": true
+    },
+    {
+      "issue": "Current oral atenolol label retains olderACSIVsequence,1–3yearpostMIandinducedemesisoverdose language.",
+      "resolution": "MonitoredoralMIpathwayspresentedonlyaslabel; currentCCDdurationcriterionand2025AHApoisoningtreatmentused; nohomeemesisoruniversallegacydurationcopied.",
+      "material": true,
+      "resolved": true
+    },
+    {
+      "issue": "LabelrenaladjustmenttableisindexedCrClandnonhypertensiondose-adjustmentdataarelimited.",
+      "resolution": "Exactunitsand50/25mgmaxima,postdialysishospitalsupervisionandlimitation retained; no pediatricrenaltableinvented.",
+      "resolved": true
+    }
+  ],
+  "limitations": [
+    "Publicprimaryreferencesonly;nopaywalledaccessclaimed.",
+    "Schemaisnotclinicalreview;parentintegrationbuild/renderQApending.",
+    "AHApublicwebretrievalsnapshotsarchivedbecausecurlreturned403;CCDandHTNfullguideline/PPTaccessnotclaimed. Onlypublicsummaryclaimsused; poisoning§21.4recommendationstableandsupportingtextreviewed.",
+    "CurrentatenololIVproductsupplynotverified;noIVpreparationprotocolprovided."
+  ],
+  "reviewedSourceSections": [
+    "SelectedoralcurrentfullDescription,ClinicalPharmacology/PK/PD/ISIS1/GeriatricPharmacology,Indications,Contraindications,WarningsincludingBoxcode34066-1,Precautionsincludinginteractions/populations,AdverseReactions,PotentialAdverseEffects,Overdosage,Dosage/renal/dialysis/withdrawal,HowSupplied",
+    "AHA2023CCDpublicsummaryitem6;2025HTNpublicsummaryhomeBP/comprehensivecare;2025CPR/ECCPart10§21.4completebeta-blockerrecommendationsandsupportingtext",
+    "NationalCapitalPoisonCenterfirst-aidphone/emergencycriteria/noroutineemesis"
+  ],
+  "verification": {
+    "schemaErrors": [],
+    "sectionIds": [
+      "indications",
+      "dosage",
+      "safety",
+      "interactions",
+      "populations",
+      "pharmacology",
+      "practice",
+      "product"
+    ],
+    "heroFacts": 3,
+    "safetyCardOrder": [
+      "Warnings and precautions",
+      "Contraindications",
+      "Boxed warning",
+      "Adverse reactions"
+    ],
+    "productCardOrder": [
+      "Representative tablet · Rising 50 mg",
+      "Dosage forms and strengths",
+      "Storage and handling"
+    ],
+    "renderedPageQA": "Pending parent batch integration QA"
+  }
+}

@@ -69,6 +69,16 @@ import { insulinLispro } from "./insulin-lispro.js";
 import { ethinylEstradiolNorethindrone } from "./ethinyl-estradiol-norethindrone.js";
 import { propranolol } from "./propranolol.js";
 import { latanoprost } from "./latanoprost.js";
+import { atenolol } from "./atenolol.js";
+import { lisdexamfetamine } from "./lisdexamfetamine.js";
+import { doxycycline } from "./doxycycline.js";
+import { amoxicillinClavulanate } from "./amoxicillin-clavulanate.js";
+import { dulaglutide } from "./dulaglutide.js";
+import { hydrochlorothiazideLisinopril } from "./hydrochlorothiazide-lisinopril.js";
+import { lorazepam } from "./lorazepam.js";
+import { fluticasoneSalmeterol } from "./fluticasone-salmeterol.js";
+import { insulin_aspart } from "./insulin-aspart.js";
+import { celecoxib } from "./celecoxib.js";
 
 export const reviewedDrugMonographs = {
   "atorvastatin": atorvastatin,
@@ -141,4 +151,14 @@ export const reviewedDrugMonographs = {
   "ethinyl-estradiol-norethindrone": ethinylEstradiolNorethindrone,
   "propranolol": propranolol,
   "latanoprost": latanoprost,
+  "atenolol": atenolol,
+  "lisdexamfetamine": lisdexamfetamine,
+  "doxycycline": doxycycline,
+  "amoxicillin-clavulanate": amoxicillinClavulanate,
+  "dulaglutide": dulaglutide,
+  "hydrochlorothiazide-lisinopril": hydrochlorothiazideLisinopril,
+  "lorazepam": lorazepam,
+  "fluticasone-salmeterol": fluticasoneSalmeterol,
+  "insulin-aspart": insulin_aspart,
+  "celecoxib": celecoxib,
 };

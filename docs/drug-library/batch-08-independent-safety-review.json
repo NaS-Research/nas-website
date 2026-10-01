@@ -1,0 +1,333 @@
+{
+  "reviewDate": "2026-10-01",
+  "scope": "Independent targeted critical-assertion primary-source review. Only enumerated assertions independently verified; not exhaustive second clinical signoff, browser QA or build verification.",
+  "status": "All ten profiles targeted-reviewed; no material mismatch identified in enumerated assertions.",
+  "profiles": [
+    {
+      "drug": "atenolol",
+      "fileSha256": "dc2fa78d408839a01000ff79ccfdd9274a2d988bdb046edf3092d285a5dcd2b8",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Hypertension 50 mg daily, reassess 1–2 weeks, 100 mg with little added benefit above that; angina may require 200 mg. Indexed CrCl 15–35 maximum 50 mg/day and <15 maximum 25 mg/day agree. Monitored oral MI sequence matches label and is explicitly scoped.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=96dd038f-b363-4e24-9c67-82b7c85c3bc4",
+          "sourceSection": "Dosage and administration; renal dose table",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "lisdexamfetamine",
+      "fileSha256": "ec60c63ce647922a90ad5644641a57968ec804a1e27cf8e7630b60e3aa39a4d0",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "ADHD age ≥6 starts 30 mg morning, weekly 10/20 mg increments, maximum 70 mg; adult BED increments 20 mg to 50–70 mg. Severe indexed GFR maximum 50 mg, ESRD maximum 30 mg. Entire capsule mixture immediately, no divided dose, mg-for-mg chewable conversion; MAOI 14-day contraindication agrees.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=704e4378-ca83-445c-8b45-3cfa51c1ecad",
+          "sourceSection": "Sections 1–4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "dulaglutide",
+      "fileSha256": "418eaebc208c6e4df128c2dc16f57f2bf0232a6e7e7a617feb40271ffa78be5b",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Adult 0.75 mg weekly →1.5 mg after four weeks, further 1.5 mg increments at ≥four weeks, maximum 4.5 mg; age ≥10 maximum 1.5 mg. Missed/day-change 72-hour rules, separate insulin injection, MTC/MEN2 contraindications and rodent box agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=463050bd-2b1c-40f5-b3c3-0a04bb433309",
+          "sourceSection": "Sections 1–4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning · Thyroid C-cell tumors",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "hydrochlorothiazide-lisinopril",
+      "fileSha256": "691f21f981e4d6ac123badaddffbd01d71d9f87e870e0cfc34927e10a3985697",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Fixed combination follows inadequate monotherapy or corresponding component replacement; 10/12.5 or 20/12.5 selection, HCTZ increases after 2–3 weeks. Cannot stop prior diuretic: lisinopril alone 5 mg with specified observation. Combination not recommended with clearance ≤30; no universal maximum inferred from component trial range.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0d3a966f-f937-05a8-a90f-5aa52ebbd613",
+          "sourceSection": "Dosage and administration; renal impairment",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning · Fetal toxicity",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "doxycycline",
+      "fileSha256": "7014b542d254231f19c4ac04251c686ffb50d0378469a6951b7461de4212e909",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "MPC non-mg-for-mg substitution; adult 240 mg first day then 120 mg/day or 120 mg every 12 hours for severe infection. Severe pediatric <45 kg 2.6 mg/kg per dose every 12 hours; less severe >8 years first-day 5.3 mg/kg/day then 2.6 mg/kg/day. Tetracycline allergy contraindication agrees.",
+          "sourceId": "mpc",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f9277bb8-982d-444d-9325-35d5c53a2d35",
+          "sourceSection": "Sections 2–4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "amoxicillin-clavulanate",
+      "fileSha256": "39728295e0b7533185b2c1e4febca0782903928b0bc3799744c79ec5b2d60b9d",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "ES-600 age three months through twelve years ≤40 kg: 90 mg/kg/DAY amoxicillin divided every twelve hours for ten days, approximately 6.4 mg/kg/day clavulanate; no established adult substitution agrees.",
+          "sourceId": "es",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=59979859-8c9b-4173-a5e3-2e6312fd9d79",
+          "sourceSection": "Section 2.2",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Adult severity-specific IR schedules, pediatric DAILY totals and ratio distinction, GFR 10–30 every twelve hours and <10 every twenty-four hours, plus both during/end hemodialysis doses agree. Prior associated cholestatic hepatic dysfunction is contraindicated.",
+          "sourceId": "ir",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7cba82f0-9886-46e9-8dbd-43a448aade29",
+          "sourceSection": "Sections 2–4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "XR indicated in adults/pediatric ≥40 kg who can swallow tablets; contraindicated CrCl <30 or hemodialysis, cannot substitute matching IR amoxicillin dose.",
+          "sourceId": "xr",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45c60b69-1b65-01ed-e063-6294a90a57be",
+          "sourceSection": "Sections 1–4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "lorazepam",
+      "fileSha256": "4f5607c5f6535fdf538c0f59657eedd5a6f9db10a64d02c45aead91ffdc4246d",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "XR limited to stable evenly divided IR three-times-daily adult regimen: same total daily mg once each morning the next day. Inadequate response requires return to IR titration before reconversion.",
+          "sourceId": "loreev",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=227734c1-bf01-9607-73ea-5a1f38a89bd9",
+          "sourceSection": "Sections 1–2",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Adult status epilepticus 4 mg IV ≤2 mg/min, repeat four after ten to fifteen minutes if persistent; injection contraindicates sleep apnea/severe respiratory insufficiency with narrow mechanically ventilated exception.",
+          "sourceId": "ativaninj",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5fc0e987-61c9-40c4-b0d5-fcea07c8733e",
+          "sourceSection": "Contraindications; Dosage and administration",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Entire capsule sprinkled on one tablespoon applesauce followed by water, consume within two hours without chewing agrees.",
+          "sourceId": "loreev",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=227734c1-bf01-9607-73ea-5a1f38a89bd9",
+          "sourceSection": "Section 2.2",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "fluticasone-salmeterol",
+      "fileSha256": "a8b99697f9a4ad13aa9bdabf2c331395777ccdd6a4a016c547658bb754d21ad9",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "HFA initial four-spray prime and two-spray reprime after >four weeks unused or dropped, shake five seconds before each; device regimen distinct from powder and not an acute reliever.",
+          "sourceId": "advairhfa",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dfaca6f9-3277-47b2-319d-1377917cb54c",
+          "sourceSection": "Section 2; patient instructions",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "One inhalation twice daily, maximum 232/14 metered; actual delivered fluticasone49/100/202 and salmeterol12.75 mcg correctly distinguished. Discard at thirty days/counter zero/expiration whichever first.",
+          "sourceId": "airduo",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9c122b91-a11f-49ca-80bb-3eec5112db87",
+          "sourceSection": "Sections 2–3,16",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "insulin-aspart",
+      "fileSha256": "d74d97652364e564e079a0a987a54bdcea20d50897944bba5c67a9d17e1a7116",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "NovoLog meal five to ten minutes before; IV 0.05–1 unit/mL polypropylene bags with saline; pump reservoir seven days maximum or shorter manual limit and temperature 37°C; selected SC NPH mixing/dilution distinct from pump.",
+          "sourceId": "novo",
+          "sourceUrl": "https://www.novo-pi.com/novolog.pdf",
+          "sourceSection": "Sections 2,16",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Fiasp meal start/within twenty minutes; reservoir six days/PumpCart four, or shorter manual; IV 0.5–1 unit/mL saline/D5W stable twenty-four hours; no insulin mixing and glucose-guided missed-meal plan agree.",
+          "sourceId": "fiasp",
+          "sourceUrl": "https://www.novo-pi.com/fiasp.pdf",
+          "sourceSection": "Sections 2,16",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed-warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "heroFormatFollowup": "Current hero facts reread after conversion to renderer-compatible [term,value] tuples; values are descriptive and agree with reviewed product scope. No new clinical regimen asserted."
+    },
+    {
+      "drug": "celecoxib",
+      "fileSha256": "ae91245f22b36015a8c34aa17691d8f8ef30377f2062da81ddbff21a731318e6",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Indication-specific adult schedules including acute first-day 400+200 then 200 BID, AS six-week trials; JRA age≥2 ten–twenty-five kg fifty BID and >twenty-five one hundred BID; Child-PughB half dose, poor-CYP2C9 adult half lowest starting dose, JRA alternative; applesauce entire teaspoon mixture refrigerated six hours agree.",
+          "sourceId": "pi",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d6675e4-5859-4be2-8037-a20ce9f707aa",
+          "sourceSection": "Sections 1–4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning: cardiovascular and gastrointestinal events",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "heroFormatFollowup": "Current hero facts reread after conversion to renderer-compatible [term,value] tuples; values are descriptive and agree with reviewed product scope. No new clinical regimen asserted."
+    }
+  ],
+  "pending": [],
+  "limitations": [
+    "Direct public DailyMed pages retrieved. SPL metadata is not independently certified here.",
+    "Doxycycline independently checked MPC only; amoxicillin-clavulanate selected IR/ES/XR critical assertions; lorazepam XR conversion and injection status/contraindications; inhaler HFA/AirDuo handling. Other formulations and claims remain author complete-audit responsibility."
+  ],
+  "unresolvedMaterialClinicalErrors": []
+}

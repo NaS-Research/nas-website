@@ -1,0 +1,961 @@
+{
+  "slug": "doxycycline",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "An oral product-specific tetracycline reference separating antibacterial regimens, rosacea treatment and selected CDC prevention guidance. All eight blueprint sections reviewed. Product-specific focused monograph; not an exhaustive adverse-event catalog.",
+  "sources": [
+    {
+      "id": "ir",
+      "title": "Doxycycline hyclate · Immediate-release capsules and tablets",
+      "publisher": "DailyMed / Sun Pharmaceutical Industries",
+      "note": "SPL version 24, effective 20260603; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=214a9cfe-a522-4022-81d4-e59f447401fe",
+      "checked": "2026-10-01",
+      "version": "SPL version 24, effective 20260603; current public product labeling.",
+      "spl_version": "24",
+      "spl_effective_time": "20260603",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/214a9cfe-a522-4022-81d4-e59f447401fe.xml",
+      "downloaded_xml_sha256": "96b161cb978ba3f85d81cf2f18fb497c727fb60c2e0a9db0c8635155abc0ee8d"
+    },
+    {
+      "id": "mono",
+      "title": "Doxycycline monohydrate · Immediate-release capsules",
+      "publisher": "DailyMed / Chartwell RX",
+      "note": "SPL version 10, effective 20250725; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=02aa8731-d40f-43d8-8b63-a79a0503f8db",
+      "checked": "2026-10-01",
+      "version": "SPL version 10, effective 20250725; current public product labeling.",
+      "spl_version": "10",
+      "spl_effective_time": "20250725",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/02aa8731-d40f-43d8-8b63-a79a0503f8db.xml",
+      "downloaded_xml_sha256": "787dbb8f2c6b77f350234505eb56eb888c8348300f4256581ae48cb3f7ee7f75"
+    },
+    {
+      "id": "mpc",
+      "title": "Doryx MPC · Doxycycline hyclate delayed-release tablets",
+      "publisher": "DailyMed / Mayne Pharma",
+      "note": "SPL version 15, effective 20260216; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f9277bb8-982d-444d-9325-35d5c53a2d35",
+      "checked": "2026-10-01",
+      "version": "SPL version 15, effective 20260216; current public product labeling.",
+      "spl_version": "15",
+      "spl_effective_time": "20260216",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/f9277bb8-982d-444d-9325-35d5c53a2d35.xml",
+      "downloaded_xml_sha256": "edaa4f31da425627017888b9cf9df019dc024ac8e190fa6f40e79e88ae743a20"
+    },
+    {
+      "id": "oracea",
+      "title": "Oracea · Doxycycline 40-mg modified-release capsules",
+      "publisher": "DailyMed / Galderma",
+      "note": "SPL version 23, effective 20250416; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aa15c93a-ff4c-447a-8a21-96da506d8997",
+      "checked": "2026-10-01",
+      "version": "SPL version 23, effective 20250416; current public product labeling.",
+      "spl_version": "23",
+      "spl_effective_time": "20250416",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/aa15c93a-ff4c-447a-8a21-96da506d8997.xml",
+      "downloaded_xml_sha256": "b2cfc519c977c609090399f6b0e71513b6715c6f0d61c8f2092e8674f14d8c6a"
+    },
+    {
+      "id": "rmsf",
+      "title": "Clinical care of Rocky Mountain spotted fever",
+      "publisher": "Centers for Disease Control and Prevention",
+      "url": "https://www.cdc.gov/rocky-mountain-spotted-fever/hcp/clinical-care/index.html",
+      "note": "March 6, 2025; treatment, duration, children and pregnancy.",
+      "checked": "2026-10-01",
+      "version": "March 6, 2025; treatment, duration, children and pregnancy."
+    },
+    {
+      "id": "chlam",
+      "title": "STI Treatment Guidelines · Chlamydial infections",
+      "publisher": "Centers for Disease Control and Prevention",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/chlamydia.htm",
+      "note": "2021 guideline; current public CDC page checked October 1, 2026.",
+      "checked": "2026-10-01",
+      "version": "2021 guideline; current public CDC page checked October 1, 2026."
+    },
+    {
+      "id": "gon",
+      "title": "STI Treatment Guidelines · Gonococcal infections",
+      "publisher": "Centers for Disease Control and Prevention",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/gonorrhea-adults.htm",
+      "note": "2021 guideline; current public CDC page checked October 1, 2026.",
+      "checked": "2026-10-01",
+      "version": "2021 guideline; current public CDC page checked October 1, 2026."
+    },
+    {
+      "id": "pep",
+      "title": "CDC Clinical Guidelines on Doxycycline Postexposure Prophylaxis · 2024",
+      "publisher": "Centers for Disease Control and Prevention",
+      "url": "https://www.cdc.gov/mmwr/volumes/73/rr/rr7302a1.htm",
+      "note": "MMWR June 6, 2024; 73(2):1–8, recommendations and Box 2 counseling.",
+      "checked": "2026-10-01",
+      "version": "MMWR June 6, 2024; 73(2):1–8, recommendations and Box 2 counseling."
+    },
+    {
+      "id": "mec",
+      "title": "U.S. MEC 2024 · Combined hormonal contraceptives",
+      "publisher": "Centers for Disease Control and Prevention",
+      "url": "https://www.cdc.gov/contraception/hcp/usmec/combined-hormonal-contraceptives.html",
+      "note": "November 19, 2024; antimicrobial interactions, Table D1.",
+      "checked": "2026-10-01",
+      "version": "November 19, 2024; antimicrobial interactions, Table D1."
+    }
+  ],
+  "assertion_to_source": [
+    {
+      "section_id": "indications",
+      "card_title": "Antibacterial indications",
+      "assertions": [
+        "The selected conventional oral products treat susceptible infections including rickettsial disease, chlamydial infections, selected respiratory infections and anthrax; severe acne may use doxycycline as adjunctive treatment. Hyclate IR and Doryx MPC also carry malaria-prophylaxis indications. Culture, susceptibility and current disease guidance determine selection; these are not treatments for viral illness. This focused reference covers oral IR hyclate/monohydrate, Doryx MPC and Oracea; IV doxycycline and other modified-release products require their own labels."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "INDICATIONS AND USAGE"
+          ]
+        },
+        {
+          "source_id": "mono",
+          "sections": [
+            "INDICATIONS AND USAGE"
+          ]
+        },
+        {
+          "source_id": "mpc",
+          "sections": [
+            "1.1–1.10"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "indications",
+      "card_title": "Rosacea and off-label prevention",
+      "assertions": [
+        "Oracea treats inflammatory papules and pustules of rosacea in adults. It does not treat infection or provide antibacterial prophylaxis, and was not evaluated for ocular, erythematotelangiectatic or phymatous rosacea. CDC doxy-PEP is an off-label infection-prevention strategy for selected populations, described separately below; it is not an Oracea indication."
+      ],
+      "support": [
+        {
+          "source_id": "oracea",
+          "sections": [
+            "1.1",
+            "1.2"
+          ]
+        },
+        {
+          "source_id": "pep",
+          "sections": [
+            "Recommendations"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Conventional immediate-release regimens",
+      "assertions": [
+        "The adult label default is 200 mg on day 1 as 100 mg every 12 hours, then 100 mg/day; more severe infections use 100 mg every 12 hours. Monohydrate labeling also permits 50 mg every 6 hours on day 1 and 50 mg every 12 hours for maintenance. These defaults do not establish one course length for all diseases.",
+        "Severe or life-threatening pediatric infection, <45 kg | 2.2 mg/kg PER DOSE every 12 hours; ≥45 kg: adult dose. Applies regardless of age when benefit outweighs risk.",
+        "Less severe disease, >8 years and <45 kg | Day 1: 4.4 mg/kg/DAY in 2 doses; then 2.2 mg/kg/DAY once daily or divided twice daily.",
+        "Inhalational anthrax post-exposure | Adult: 100 mg every 12 hours for 60 days; child <45 kg: 2.2 mg/kg every 12 hours for 60 days; ≥45 kg: adult dose."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "DOSAGE AND ADMINISTRATION"
+          ]
+        },
+        {
+          "source_id": "mono",
+          "sections": [
+            "DOSAGE AND ADMINISTRATION"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Current infection-specific examples",
+      "assertions": [
+        "CDC recommends conventional doxycycline 100 mg twice daily for 7 days for uncomplicated chlamydia in nonpregnant adolescents and adults. Do not use historical doxycycline-alone gonorrhea schedules from older labels as current care; CDC uses ceftriaxone-based treatment, with antichlamydial treatment when indicated. For RMSF, CDC uses adult 100 mg every 12 hours or child <45 kg 2.2 mg/kg every 12 hours; continue at least 3 days after fever resolves and clinical improvement occurs, with a minimum 5–7 days."
+      ],
+      "support": [
+        {
+          "source_id": "chlam",
+          "sections": [
+            "Treatment / Recommended regimens",
+            "Pregnancy"
+          ]
+        },
+        {
+          "source_id": "gon",
+          "sections": [
+            "Uncomplicated gonococcal infection"
+          ]
+        },
+        {
+          "source_id": "rmsf",
+          "sections": [
+            "Recommended treatment and dosage"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Malaria prophylaxis",
+      "assertions": [
+        "For the selected hyclate IR label, adults take 100 mg daily; children older than 8 years take 2 mg/kg daily up to the adult dose. Start 1–2 days before travel, continue daily during exposure and for 4 weeks afterward. Doryx MPC instead uses adult 120 mg daily or age ≥8 years 2.4 mg/kg daily up to the adult dose, on the same timing. Destination-specific resistance and other prevention measures still require review."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "DOSAGE AND ADMINISTRATION / malaria"
+          ]
+        },
+        {
+          "source_id": "mpc",
+          "sections": [
+            "2.5",
+            "5.9"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Doryx MPC delayed-release dosing",
+      "assertions": [
+        "Adult dosing is 240 mg on day 1 (120 mg every 12 hours), then 120 mg daily or 60 mg every 12 hours; more severe infections use 120 mg every 12 hours. For severe/life-threatening infection in children <45 kg, use 2.6 mg/kg every 12 hours; ≥45 kg uses adult dosing. For less severe disease in children >8 years and <45 kg: 5.3 mg/kg/DAY in 2 doses on day 1, then 2.6 mg/kg/DAY once daily or divided twice daily. The labeled Doryx-to-MPC conversions are 50→60 mg and 100→120 mg. Do not chew or crush MPC tablets; disease-specific schedules require the MPC label."
+      ],
+      "support": [
+        {
+          "source_id": "mpc",
+          "sections": [
+            "2.1–2.6"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Oracea administration",
+      "assertions": [
+        "Take one 40-mg capsule once each morning on an empty stomach, at least 1 hour before or 2 hours after meals, with adequate fluid. The capsule combines 30 mg immediate release and 10 mg delayed release. Higher antibacterial doses are not substitutes for this rosacea regimen. Conventional IR and MPC labels permit food or milk if gastric irritation occurs; Oracea has different food restrictions."
+      ],
+      "support": [
+        {
+          "source_id": "oracea",
+          "sections": [
+            "2",
+            "11",
+            "12.3"
+          ]
+        },
+        {
+          "source_id": "ir",
+          "sections": [
+            "DOSAGE AND ADMINISTRATION"
+          ]
+        },
+        {
+          "source_id": "mono",
+          "sections": [
+            "DOSAGE AND ADMINISTRATION"
+          ]
+        },
+        {
+          "source_id": "mpc",
+          "sections": [
+            "2.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Off-label doxy-PEP",
+      "assertions": [
+        "Through shared decision-making, CDC recommends offering 200 mg within 72 hours after oral, vaginal or anal sex, no more than 200 mg in 24 hours, to MSM and transgender women who had syphilis, chlamydia or gonorrhea in the past 12 months. Use a prescribed antimicrobial product; do not extrapolate this dose to Oracea or substitute MPC milligram for milligram. Reassess need and test relevant STI sites every 3–6 months. Evidence is insufficient for a recommendation in other populations."
+      ],
+      "support": [
+        {
+          "source_id": "pep",
+          "sections": [
+            "Recommendations",
+            "Box 2"
+          ]
+        },
+        {
+          "source_id": "mpc",
+          "sections": [
+            "2.1"
+          ]
+        },
+        {
+          "source_id": "oracea",
+          "sections": [
+            "1.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Warnings and precautions",
+      "assertions": [
+        "Tooth discoloration and reversible bone-growth inhibition are concerns during fetal/childhood development; life-threatening infections can justify pediatric use. Photosensitivity, C. difficile diarrhea, superinfection, severe hypersensitivity and severe skin reactions can occur. Stop and seek urgent assessment for blistering rash, swelling or breathing difficulty. New severe headache or visual disturbance needs prompt evaluation for intracranial hypertension; avoid concurrent isotretinoin. Oracea additionally warns about autoimmune syndromes and tissue pigmentation; fever, rash, joint pain or malaise requires stopping and evaluation."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "WARNINGS",
+            "PRECAUTIONS",
+            "ADVERSE REACTIONS"
+          ]
+        },
+        {
+          "source_id": "mono",
+          "sections": [
+            "WARNINGS",
+            "PRECAUTIONS",
+            "ADVERSE REACTIONS"
+          ]
+        },
+        {
+          "source_id": "mpc",
+          "sections": [
+            "5",
+            "6"
+          ]
+        },
+        {
+          "source_id": "oracea",
+          "sections": [
+            "5",
+            "6"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Contraindications",
+      "assertions": [
+        "The formal contraindication in these selected labels is hypersensitivity to doxycycline or other tetracyclines. Pregnancy and childhood developmental risks are warnings/benefit–risk restrictions, rather than an identical formal contraindication across these labels."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "CONTRAINDICATIONS",
+            "WARNINGS"
+          ]
+        },
+        {
+          "source_id": "mono",
+          "sections": [
+            "CONTRAINDICATIONS",
+            "WARNINGS"
+          ]
+        },
+        {
+          "source_id": "mpc",
+          "sections": [
+            "4",
+            "5.1",
+            "8.1"
+          ]
+        },
+        {
+          "source_id": "oracea",
+          "sections": [
+            "4",
+            "5.1",
+            "5.2",
+            "8.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Boxed warning status",
+      "assertions": [
+        "The selected U.S. labels contain no boxed warning. Their fetal/child developmental, serious skin, intracranial-pressure and antibiotic-associated diarrhea warnings still apply."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Entire prescribing information"
+          ]
+        },
+        {
+          "source_id": "mono",
+          "sections": [
+            "Entire prescribing information"
+          ]
+        },
+        {
+          "source_id": "mpc",
+          "sections": [
+            "Highlights / 5"
+          ]
+        },
+        {
+          "source_id": "oracea",
+          "sections": [
+            "Highlights / 5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Adverse reactions and overdose",
+      "assertions": [
+        "Nausea, vomiting, diarrhea and photosensitivity are reported. Capsules/tablets can cause esophagitis or ulceration, especially when taken just before bed. Serious reports include hepatotoxicity, blood-cell disorders and severe allergy/skin reactions; frequency cannot be inferred from spontaneous reports. Oracea trials reported diarrhea, upper respiratory symptoms, abdominal discomfort and fungal infection; its postmarketing reports include intracranial hypertension, fixed drug eruption and psychiatric symptoms. Suspected overdose requires stopping further doses and prompt supportive evaluation. Dialysis does not substantially alter doxycycline half-life and is not useful for removal."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "ADVERSE REACTIONS",
+            "OVERDOSAGE"
+          ]
+        },
+        {
+          "source_id": "mono",
+          "sections": [
+            "ADVERSE REACTIONS",
+            "OVERDOSAGE"
+          ]
+        },
+        {
+          "source_id": "mpc",
+          "sections": [
+            "6",
+            "10"
+          ]
+        },
+        {
+          "source_id": "oracea",
+          "sections": [
+            "6"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Absorption and metabolic interactions",
+      "assertions": [
+        "Antacids containing calcium, magnesium or aluminum, iron and bismuth can reduce absorption. Separate interacting products using pharmacist instructions; CDC doxy-PEP counseling specifically calls for at least 2 hours from dairy, antacids and calcium/iron/magnesium supplements. Barbiturates, carbamazepine and phenytoin shorten doxycycline half-life. Oracea exposure can fall with high gastric pH; review acid-suppressing treatment and altered gastric anatomy."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Drug Interactions"
+          ]
+        },
+        {
+          "source_id": "mono",
+          "sections": [
+            "PRECAUTIONS / Drug Interactions"
+          ]
+        },
+        {
+          "source_id": "mpc",
+          "sections": [
+            "7.3",
+            "7.5"
+          ]
+        },
+        {
+          "source_id": "oracea",
+          "sections": [
+            "7.4",
+            "7.6",
+            "12.3"
+          ]
+        },
+        {
+          "source_id": "pep",
+          "sections": [
+            "Box 2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Clinical interaction actions",
+      "assertions": [
+        "Tetracyclines can reduce prothrombin activity; anticoagulant dose adjustment and monitoring may be needed. Labels advise avoiding concurrent penicillin because of possible antagonism. Avoid isotretinoin/other implicated oral retinoids because of intracranial hypertension. Oracea warns that methoxyflurane combinations have caused fatal renal toxicity."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Drug Interactions",
+            "WARNINGS"
+          ]
+        },
+        {
+          "source_id": "mono",
+          "sections": [
+            "PRECAUTIONS"
+          ]
+        },
+        {
+          "source_id": "mpc",
+          "sections": [
+            "7.1",
+            "7.2",
+            "5.6"
+          ]
+        },
+        {
+          "source_id": "oracea",
+          "sections": [
+            "7.1–7.3",
+            "7.5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Contraceptive counseling",
+      "assertions": [
+        "Some doxycycline labels warn of possible reduced oral-contraceptive effectiveness. CDC U.S. MEC 2024 classifies broad-spectrum antibiotics as category 1 for combined hormonal contraception and states that most do not reduce its effectiveness. Do not present the older label concern as a proven routine need for backup solely because doxycycline is prescribed; assess vomiting/diarrhea and the contraceptive’s own instructions."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Drug Interactions"
+          ]
+        },
+        {
+          "source_id": "mpc",
+          "sections": [
+            "7.4"
+          ]
+        },
+        {
+          "source_id": "mec",
+          "sections": [
+            "Table D1 / Antimicrobial therapy"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pregnancy and lactation",
+      "assertions": [
+        "Labels warn about fetal tooth/bone effects, especially later pregnancy; Oracea advises avoiding the second and third trimesters. CDC recommends doxycycline for suspected RMSF even in pregnancy after benefit–risk counseling. Conventional IR/MPC labels do not automatically prohibit short-term breastfeeding use, but prolonged infant exposure is uncertain and requires individualized review. Oracea explicitly advises no breastfeeding during treatment and for 5 days after the last dose."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "WARNINGS",
+            "Nursing Mothers"
+          ]
+        },
+        {
+          "source_id": "mpc",
+          "sections": [
+            "8.1",
+            "8.2"
+          ]
+        },
+        {
+          "source_id": "oracea",
+          "sections": [
+            "8.1",
+            "8.2"
+          ]
+        },
+        {
+          "source_id": "rmsf",
+          "sections": [
+            "Doxycycline and treatment during pregnancy"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Children and older adults",
+      "assertions": [
+        "Conventional labels reserve use through age 8 for serious/life-threatening disease when benefit outweighs risk. CDC recommends doxycycline first-line for suspected RMSF at every age; short courses have not been shown to stain permanent teeth. Oracea pediatric use is not established and is not recommended; geriatric trial evidence is limited. Review older patients’ organ function and medicines rather than inventing a universal age-based reduction."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Pediatric Use"
+          ]
+        },
+        {
+          "source_id": "mpc",
+          "sections": [
+            "5.1",
+            "8.4",
+            "8.5"
+          ]
+        },
+        {
+          "source_id": "oracea",
+          "sections": [
+            "8.4",
+            "8.5"
+          ]
+        },
+        {
+          "source_id": "rmsf",
+          "sections": [
+            "Doxycycline use in children"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Renal and hepatic considerations",
+      "assertions": [
+        "Conventional IR labeling reports no excessive accumulation at usual doses in renal impairment; MPC reports unchanged half-life in severe renal impairment. No numerical hepatic adjustment is established here. Oracea’s renal class warning advises lower total doses in significant impairment while its pharmacokinetics section reports unchanged doxycycline half-life; it supplies no usable alternative rosacea regimen. Refer such patients for product-specific review rather than extending a blanket “no adjustment” claim to Oracea. Hepatic impairment pharmacokinetics for Oracea were not evaluated."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "CLINICAL PHARMACOLOGY",
+            "DOSAGE AND ADMINISTRATION"
+          ]
+        },
+        {
+          "source_id": "mono",
+          "sections": [
+            "DOSAGE AND ADMINISTRATION"
+          ]
+        },
+        {
+          "source_id": "mpc",
+          "sections": [
+            "5.8",
+            "12.3"
+          ]
+        },
+        {
+          "source_id": "oracea",
+          "sections": [
+            "5.4",
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Mechanism and resistance",
+      "assertions": [
+        "Doxycycline inhibits bacterial protein synthesis and is primarily bacteriostatic; susceptibility is organism-specific. Oracea concentrations are below those needed for antibacterial treatment, and its mechanism in rosacea is unknown. Do not infer that rosacea treatment prevents bacterial disease or that tetracycline cross-resistance is absent."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Microbiology"
+          ]
+        },
+        {
+          "source_id": "mpc",
+          "sections": [
+            "12.1",
+            "12.4"
+          ]
+        },
+        {
+          "source_id": "oracea",
+          "sections": [
+            "12.1",
+            "12.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Disposition and release effects",
+      "assertions": [
+        "Conventional doxycycline is well absorbed orally, with a serum half-life about 18–22 hours, and leaves through urine and feces. Severe renal impairment reduces urinary excretion without a major half-life change. MPC’s formulation changes bioavailability, explaining its higher nominal doses. Oracea is not bioequivalent to other doxycycline products and has clinically important food effects."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "CLINICAL PHARMACOLOGY"
+          ]
+        },
+        {
+          "source_id": "mpc",
+          "sections": [
+            "2.1",
+            "12.3"
+          ]
+        },
+        {
+          "source_id": "oracea",
+          "sections": [
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Monitoring",
+      "assertions": [
+        "Confirm diagnosis, susceptibility when available, formulation, age/weight and pregnancy status. Reassess response and complications. Periodic blood counts and renal/hepatic assessment are advised during long-term treatment; Oracea autoimmune symptoms require stopping treatment and may prompt ANA, blood-count and liver testing; its label also calls for visual-symptom questioning before treatment and routine papilledema assessment. Doxy-PEP care includes STI testing and periodic need reassessment, with counseling about resistance and uncertain long-term microbiome effects."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Laboratory Tests",
+            "INDICATIONS AND USAGE"
+          ]
+        },
+        {
+          "source_id": "mono",
+          "sections": [
+            "PRECAUTIONS"
+          ]
+        },
+        {
+          "source_id": "mpc",
+          "sections": [
+            "5.11"
+          ]
+        },
+        {
+          "source_id": "oracea",
+          "sections": [
+            "5.6",
+            "5.11"
+          ]
+        },
+        {
+          "source_id": "pep",
+          "sections": [
+            "Box 2",
+            "Potential harms"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Patient counseling",
+      "assertions": [
+        "Take oral solid doses with plenty of water; avoid taking them immediately before bed. Follow the exact food/release instructions and supplement separation. Protect skin from sun exposure. Seek care for persistent/watery or bloody diarrhea, painful swallowing, vision changes or severe rash. Do not save or share antibiotics; follow the prescribed schedule and duration, and contact the prescriber if symptoms worsen. Oracea improvement is assessed over time rather than by escalating to antibacterial doses."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Information For Patients",
+            "DOSAGE AND ADMINISTRATION"
+          ]
+        },
+        {
+          "source_id": "mono",
+          "sections": [
+            "PRECAUTIONS"
+          ]
+        },
+        {
+          "source_id": "mpc",
+          "sections": [
+            "17"
+          ]
+        },
+        {
+          "source_id": "oracea",
+          "sections": [
+            "17",
+            "Patient Information"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Representative products",
+      "assertions": [
+        "Sun’s IR hyclate 100-mg capsule is opaque light blue, imprinted “Mutual 105”; a 50-capsule bottle is NDC 53489-119-02. Chartwell’s monohydrate 100-mg capsule has an ivory body/brown cap, CE/411 and 100/mg; NDC 62135-262-20 is a 20-capsule bottle. Oracea is a beige opaque GLD 40 capsule, NDC 0299-3822-30 for 30. Appearances identify these packages, not every generic."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "HOW SUPPLIED / package labeling"
+          ]
+        },
+        {
+          "source_id": "mono",
+          "sections": [
+            "HOW SUPPLIED"
+          ]
+        },
+        {
+          "source_id": "oracea",
+          "sections": [
+            "16"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Dosage forms and strengths",
+      "assertions": [
+        "Selected Sun IR hyclate: 50/100-mg capsules and 100-mg tablets; Chartwell IR monohydrate: 50/75/100/150-mg capsules. The current Doryx MPC sections 3/16 describe a 60-mg white oval D6 tablet with yellow pellets; doses of 120 mg may use two 60-mg tablets. Its SPL also retains a 120-mg package panel, so check the actual dispensed product rather than assuming availability. Oracea: 40-mg capsule with 30-mg IR/10-mg DR beads. These are not a milligram-for-milligram substitution list."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "DESCRIPTION",
+            "HOW SUPPLIED"
+          ]
+        },
+        {
+          "source_id": "mono",
+          "sections": [
+            "HOW SUPPLIED"
+          ]
+        },
+        {
+          "source_id": "mpc",
+          "sections": [
+            "3",
+            "16",
+            "120 mg package panel"
+          ]
+        },
+        {
+          "source_id": "oracea",
+          "sections": [
+            "3",
+            "11"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Storage and handling",
+      "assertions": [
+        "Sun IR: 20–25°C, tight/light-resistant container and protection from light. Chartwell IR: 20–25°C, excursions 15–30°C, tight/light-resistant container. MPC: 25°C, excursions 15–30°C, tight/light-resistant container. Oracea: 15–30°C, tight/light-resistant container. Keep out of children’s reach and retain formulation-specific instructions."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "HOW SUPPLIED / package labeling"
+          ]
+        },
+        {
+          "source_id": "mono",
+          "sections": [
+            "HOW SUPPLIED"
+          ]
+        },
+        {
+          "source_id": "mpc",
+          "sections": [
+            "16"
+          ]
+        },
+        {
+          "source_id": "oracea",
+          "sections": [
+            "16"
+          ]
+        }
+      ]
+    }
+  ],
+  "material_errors": [],
+  "gaps": [],
+  "limitations": [
+    "IV products, standard Doryx and other modified-release formulations are outside the full dosing scope; the Doryx-to-MPC conversion is specifically supported by MPC labeling.",
+    "Oracea renal warning versus pharmacokinetic evidence is disclosed; no unsupported alternative dose is proposed.",
+    "Legacy label gonorrhea-alone regimens are excluded in favor of current CDC treatment guidance; no universal antibiotic duration or unrestricted doxy-PEP recommendation is given.",
+    "Doryx MPC current sections 3/16 list 60 mg while a 120-mg package panel remains in SPL. Dose guidance is verified, but current 120-mg commercial availability is not asserted."
+  ],
+  "regulatory_records": [
+    {
+      "product": "doxy-ir",
+      "source": "Current SPL marketing metadata; not an inference that all historical packages remain commercially available",
+      "applications": [
+        {
+          "application_number": "ANDA062676",
+          "marketing_category": "ANDA"
+        },
+        {
+          "application_number": "ANDA062677",
+          "marketing_category": "ANDA"
+        }
+      ]
+    },
+    {
+      "product": "doxy-mono",
+      "source": "Current SPL marketing metadata; not an inference that all historical packages remain commercially available",
+      "applications": [
+        {
+          "application_number": "NDA050641",
+          "marketing_category": "NDA authorized generic"
+        }
+      ]
+    },
+    {
+      "product": "doxy-mpc",
+      "source": "Current SPL marketing metadata; not an inference that all historical packages remain commercially available",
+      "applications": [
+        {
+          "application_number": "NDA050795",
+          "marketing_category": "NDA"
+        }
+      ]
+    },
+    {
+      "product": "oracea",
+      "source": "Current SPL marketing metadata; not an inference that all historical packages remain commercially available",
+      "applications": [
+        {
+          "application_number": "NDA050805",
+          "marketing_category": "NDA"
+        }
+      ]
+    }
+  ],
+  "source_discrepancies": [
+    "Older product-label contraceptive warnings are reconciled with current public CDC U.S. MEC 2024 broad-spectrum-antibiotic category 1 evidence.",
+    "Older gonococcal monotherapy schedules are not propagated; current CDC gonorrhea treatment is used.",
+    "Oracea renal class precaution and unchanged doxycycline half-life are both disclosed without inventing a rosacea adjustment.",
+    "MPC current strength/supply sections describe 60 mg but retained 120-mg package panel exists; commercial availability is not inferred."
+  ]
+}
