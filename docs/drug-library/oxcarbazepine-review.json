@@ -1,0 +1,1283 @@
+{
+  "drug": "oxcarbazepine",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Full relevant current Trileptal and Oxtellar clinical/product sections; oral approved partial-onset seizure scope.",
+  "blueprint": {
+    "sections": [
+      [
+        "indications",
+        "Indications"
+      ],
+      [
+        "dosage",
+        "Dosage and administration"
+      ],
+      [
+        "safety",
+        "Safety"
+      ],
+      [
+        "interactions",
+        "Drug interactions"
+      ],
+      [
+        "populations",
+        "Use in specific populations"
+      ],
+      [
+        "pharmacology",
+        "Clinical pharmacology"
+      ],
+      [
+        "practice",
+        "Monitoring and counseling"
+      ],
+      [
+        "product",
+        "Product identification"
+      ]
+    ],
+    "essential_safety": true,
+    "hero_facts": 3,
+    "APAP_modified": false
+  },
+  "sources": [
+    {
+      "id": "ir",
+      "title": "Trileptal \u00b7 Current immediate-release full label",
+      "publisher": "Novartis / DailyMed",
+      "note": "Revised 09/2025; SPL 39 effective December 16, 2025; published December 18, 2025.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c5c86c8-ab7f-4fcf-bc1b-5a0b1fd0691b"
+    },
+    {
+      "id": "er",
+      "title": "Oxtellar XR \u00b7 Current extended-release full label",
+      "publisher": "Supernus / DailyMed",
+      "note": "PI revised 08/2024, Medication Guide 12/2018; SPL 22 effective September 15, 2026; published September 17, 2026. Publication is not a new clinical revision.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aa610e56-1d1d-11e1-8bc2-0800200c9a66"
+    }
+  ],
+  "source_records": [
+    {
+      "id": "ir",
+      "local_snapshot": "/tmp/nas-drug-sources/oxcar-ir.xml",
+      "label_revision": "09/2025",
+      "set_id": "4c5c86c8-ab7f-4fcf-bc1b-5a0b1fd0691b",
+      "spl_version": "39",
+      "spl_effective_time": "20251216",
+      "dailymed_published_date": "2025-12-18",
+      "sha256": "62faa5a3746a9c757e14f602ffd2beb517d0138c42f7e81e439827049b73b005",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "manufacturer_comparison": {
+        "url": "https://www.novartis.com/us-en/sites/novartis_us/files/trileptal.pdf",
+        "revision": "09/2025",
+        "access": "Public32-page PDF web tool retrieved; targeted dosing pages1\u20132 compared, same39kg source row; direct download403, no raw PDF retained"
+      },
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-21-thyroid-metformin/oxcar-ir.xml"
+    },
+    {
+      "id": "er",
+      "local_snapshot": "/tmp/nas-drug-sources/oxcar-er.xml",
+      "label_revision": "PI08/2024; Medication Guide12/2018",
+      "set_id": "aa610e56-1d1d-11e1-8bc2-0800200c9a66",
+      "spl_version": "22",
+      "spl_effective_time": "20260915",
+      "dailymed_published_date": "2026-09-17",
+      "sha256": "b5248ef08a3ca82861856fb84cd71063816037bdcc5bd55f9f08618e10cbf9e0",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-21-thyroid-metformin/oxcar-er.xml"
+    }
+  ],
+  "assertion_map": [
+    {
+      "section": "indications",
+      "card": "Immediate-release approval",
+      "assertions": [
+        "Trileptal is labeled for adult monotherapy or adjunctive treatment of partial-onset seizures, pediatric monotherapy from age 4 and pediatric adjunctive therapy from age 2. Pediatric schedules specifically cover ages 2\u201316 or 4\u201316. Evidence from younger infants in trials does not create an approval below these age limits. It is not an acute injectable rescue product."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "1;8.4"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Extended-release and scope",
+      "assertions": [
+        "Oxtellar XR treats partial-onset seizures in patients age 6 and older. Its pediatric once-daily regimen covers 6 to younger than 17 years; patients 17 and older use the adult schedule. Both selected products are prescription NDA products. No bipolar, pain, generalized-epilepsy or universal first-line claim is inferred from the antiseizure mechanism."
+      ],
+      "sources": [
+        {
+          "id": "er",
+          "sections": "1;2.2;8.4; marketingNDA202810"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Adult immediate-release regimens",
+      "assertions": [
+        "Start 600 mg/day divided twice daily, ordinarily 300 mg per dose. Adjunctive therapy increases by no more than 600 mg/day at approximately weekly intervals; recommended maximum is 1200 mg/day, with higher studied doses less well tolerated. For conversion to monotherapy, reduce other antiseizure drugs over 3\u20136 weeks while titrating by up to 600 mg/day weekly toward 2400 mg/day over 2\u20134 weeks. For untreated-patient monotherapy, increase by 300 mg/day every third day to 1200 mg/day. These are distinct label settings; 2400 mg/day is not a universal initial or adjunctive target."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "2.1\u20132.3"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "IR adult treatment setting",
+          "Total daily dose / divided twice daily"
+        ],
+        "rows": [
+          [
+            "Initial dose",
+            "600 mg/day"
+          ],
+          [
+            "Adjunctive recommended maximum",
+            "1200 mg/day; titrate at approximately weekly intervals"
+          ],
+          [
+            "Conversion monotherapy",
+            "Up to 2400 mg/day with supervised companion taper"
+          ],
+          [
+            "Initiating monotherapy",
+            "Increase 300 mg/day every third day to 1200 mg/day"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric immediate-release adjunctive therapy",
+      "assertions": [
+        "Ages 4\u201316: start 8\u201310 mg/kg/day divided twice daily, generally at most 600 mg/day initially, with weight-based maintenance over two weeks. The current source gives 900 mg/day for 20\u201329 kg and 1200 mg/day for 29.1\u201339 kg, but its next line says 39 kg/1800 mg without a greater-than sign, creating an overlapping boundary; verify the higher-weight target with the specialist rather than infer it here. Ages 2 to younger than 4: same usual start; under 20 kg the clinician may consider 16\u201320 mg/kg/day. Titrate over 2\u20134 weeks to at most 60 mg/kg/day divided twice daily. These younger-child instructions do not apply to XR."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "2.4"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric immediate-release monotherapy",
+      "assertions": [
+        "Ages 4\u201316: start 8\u201310 mg/kg/day in two doses. Untreated initiation increases 5 mg/kg/day every third day; conversion increases at most 10 mg/kg/day approximately weekly while withdrawing companion drugs over 3\u20136 weeks. The label\u2019s discrete maintenance-weight rows are below; assess nonlisted weights and clinical tolerance with the treating team, rather than invent interpolation or use an adjunctive target."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "2.5\u20132.6"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Weight in label monotherapy table",
+          "Maintenance total mg/day \u00b7 divided twice daily"
+        ],
+        "rows": [
+          [
+            "20 kg",
+            "600\u2013900"
+          ],
+          [
+            "25 or 30 kg",
+            "900\u20131200"
+          ],
+          [
+            "35 or 40 kg",
+            "900\u20131500"
+          ],
+          [
+            "45 kg",
+            "1200\u20131500"
+          ],
+          [
+            "50 or 55 kg",
+            "1200\u20131800"
+          ],
+          [
+            "60 or 65 kg",
+            "1200\u20132100"
+          ],
+          [
+            "70 kg",
+            "1500\u20132100"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Extended-release adult and pediatric regimens",
+      "assertions": [
+        "Adults start 600 mg once daily for one week, then increase by 600 mg/day at weekly intervals toward 1200\u20132400 mg once daily as tolerated. Ages 6 to younger than 17 start 8\u201310 mg/kg once daily, maximum 600 mg in week one; increase 8\u201310 mg/kg/day, at most 600 mg per increment, weekly. Pediatric maintenance is usually reached over 2\u20133 weeks: 900 mg/day at 20\u201329 kg, 1200 at 29.1\u201339 kg and 1800 above 39 kg. This XR table\u2019s explicit greater-than boundary does not silently correct Trileptal\u2019s source ambiguity."
+      ],
+      "sources": [
+        {
+          "id": "er",
+          "sections": "2.2"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "XR population / weight",
+          "Once-daily schedule"
+        ],
+        "rows": [
+          [
+            "Adults",
+            "600 mg initially; 1200\u20132400 mg/day recommended maintenance"
+          ],
+          [
+            "Age 6 to < 17 \u00b7 initial",
+            "8\u201310 mg/kg/day; maximum 600 mg in first week"
+          ],
+          [
+            "Pediatric 20\u201329 kg",
+            "900 mg/day target"
+          ],
+          [
+            "Pediatric 29.1\u201339 kg",
+            "1200 mg/day target"
+          ],
+          [
+            "Pediatric > 39 kg",
+            "1800 mg/day target"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Renal, older-patient and inducer dosing",
+      "assertions": [
+        "At CrCl < 30 mL/min, adult IR starts half the usual total dose: 300 mg/day divided twice daily, increasing slowly. Adult XR also starts 300 mg/day, with weekly 300\u2013450 mg/day increments; older XR patients may start 300\u2013450 mg/day. Strong CYP3A4/UGT inducers require response/MHD-guided adjustment; XR label permits consideration of adult 900 mg/day or pediatric 12\u201315 mg/kg/day, maximum 900 mg in week one. Dialysis patients should use IR instead of XR under its label; no universal dialysis supplement is supplied."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "2.7;7.2;8.5\u20138.6"
+        },
+        {
+          "id": "er",
+          "sections": "2.3\u20132.5;8.6"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Food, suspension and formulation changes",
+      "assertions": [
+        "IR may be taken with or without food; shake suspension well, promptly measure with supplied oral syringe, and swallow directly or mix with a small glass of water. 300 mg/5 mL equals 60 mg/mL. Trileptal tablets and suspension may substitute at equal mg doses. XR is once daily on an empty stomach, at least one hour before or two hours after meals; swallow whole, never cut/crush/chew. XR is not bioequivalent to the same daily IR amount and conversion may require a higher XR dose. Do not convert formulations independently."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "2.8;3;12.3; Instructions for Use"
+        },
+        {
+          "id": "er",
+          "sections": "2.1;2.7;12.3"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Monitor for low sodium, including nausea, malaise, headache, lethargy, confusion or more seizures; it can arise early or after prolonged therapy. Anaphylaxis/angioedema requires stopping and urgent treatment; do not rechallenge after such a reaction. Carbamazepine hypersensitivity predicts substantial cross-reaction risk. SJS/TEN and DRESS can be fatal; fever or lymph-node swelling may precede an obvious rash.",
+        "Consider HLA-B*1502 testing before initiation in genetically at-risk ancestry; generally avoid treatment in positive patients unless benefit clearly outweighs risk. A negative result does not remove skin-reaction vigilance. Watch suicidal thoughts, mood change, cognitive slowing, dizziness, sleepiness, gait/coordination problems and rare blood-cell disorders. Seizures can worsen, including new generalized seizures. Usually withdraw gradually to reduce seizure/status risk; severe adverse events can require faster clinician-directed discontinuation."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "5.1\u20135.11"
+        },
+        {
+          "id": "er",
+          "sections": "5.1\u20135.10"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "Known hypersensitivity to oxcarbazepine, product components or eslicarbazepine acetate is contraindicated. Prior carbamazepine hypersensitivity is separately a strong precaution, not permission to assume oxcarbazepine is a harmless substitute."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "4;5.2\u20135.3"
+        },
+        {
+          "id": "er",
+          "sections": "4;5.2\u20135.3"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "The selected Trileptal and Oxtellar XR full labels have no formal boxed warning. The class suicidality warning, serious skin/hypersensitivity reactions, sodium reduction and withdrawal risks remain significant."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "Full PI;5"
+        },
+        {
+          "id": "er",
+          "sections": "Full PI;5"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Common effects include dizziness, somnolence, diplopia/visual disturbance, fatigue, nausea/vomiting, headache, ataxia and gait abnormalities; severity can limit higher doses. Serious reports include hyponatremia, severe skin or multisystem reactions, angioedema and blood-cell abnormalities. Frequencies differ across populations and trial regimens; no universal rate is supplied."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "6;5"
+        },
+        {
+          "id": "er",
+          "sections": "6;5"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Hormonal contraception",
+      "assertions": [
+        "Oxcarbazepine reduces exposure to ethinylestradiol/levonorgestrel and may cause contraceptive failure. Counsel on additional or alternative nonhormonal contraception. Evidence for specific oral hormones does not establish that every other hormonal method is unaffected; review the actual contraception with the clinician."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "7.3;8.3;12.3"
+        },
+        {
+          "id": "er",
+          "sections": "7.3;8.3;12.3"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Phenytoin and enzyme inducers",
+      "assertions": [
+        "Phenytoin exposure can increase, especially with oxcarbazepine doses above 1200 mg/day; monitor levels during titration and adjust phenytoin when needed. Carbamazepine, phenytoin, phenobarbital and rifampin can lower active MHD exposure; monitor seizure control/MHD as indicated and reassess when inducers start, change or stop. These are bidirectional interactions, not a universal fixed percentage correction."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "7.1\u20137.2;12.3"
+        },
+        {
+          "id": "er",
+          "sections": "7.1\u20137.2;12.3"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Other exposure and additive effects",
+      "assertions": [
+        "CYP3A4/5 induction can lower exposure to some calcium-channel blockers and cyclosporine; CYP2C19 inhibition can increase susceptible substrates. Alcohol can add sedation. Other sodium-lowering drugs increase the need for sodium assessment. Review the complete medication list, including new prescriptions and over-the-counter agents, rather than assume an antiseizure drug has no interactions."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "12.3;5.1;17"
+        },
+        {
+          "id": "er",
+          "sections": "12.3;5.1;17"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy",
+      "assertions": [
+        "Do not abruptly stop for pregnancy; uncontrolled seizures/status can threaten mother and fetus. Current Trileptal human observational data have not demonstrated increased major-malformation prevalence, but important limitations remain and animal developmental toxicity exists. Oxtellar retains older more cautious registry wording; neither establishes absence of risk. MHD levels can fall during pregnancy and rebound postpartum, so follow seizure control/levels and individualize doses. Discuss pregnancy planning and the North American pregnancy registry."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "8.1;5.9\u20135.10"
+        },
+        {
+          "id": "er",
+          "sections": "8.1;5.9\u20135.10"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Lactation",
+      "assertions": [
+        "Oxcarbazepine and MHD are present in human milk; infant and milk-production effects are insufficiently characterized in these labels. Weigh infant vulnerability, maternal seizure-treatment need and feeding benefits. The label does not establish zero infant exposure or a universal feeding interruption."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "8.2"
+        },
+        {
+          "id": "er",
+          "sections": "8.2"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Kidney, liver and older age",
+      "assertions": [
+        "Kidney dysfunction prolongs active-metabolite exposure; reduce starting doses at CrCl < 30 and titrate carefully. Older patients may have higher MHD exposure from reduced clearance and need sodium/clinical monitoring. Mild/moderate hepatic impairment did not alter IR disposition in studies; severe hepatic impairment is unstudied and XR is not recommended. IR data do not create a validated severe-hepatic regimen."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "2.7;8.5\u20138.6;12.3"
+        },
+        {
+          "id": "er",
+          "sections": "2.3\u20132.4;8.5\u20138.7;12.3"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and obesity",
+      "assertions": [
+        "IR and XR age limits and weight schedules differ; do not apply adult or XR schedules to younger IR-treated children. Current PK analyses do not require an adjustment solely for obesity status within the studied pediatric scope. That finding does not replace the approved age/weight regimen or individualized renal/interaction assessment."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "8.4;12.3"
+        },
+        {
+          "id": "er",
+          "sections": "8.4;12.3"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "assertions": [
+        "The precise clinical mechanism is not fully established. Electrophysiology supports voltage-sensitive sodium-channel blockade, stabilization of hyperexcitable membranes and reduced repetitive firing; potassium/calcium effects may contribute. These findings support partial-onset seizure treatment without proving efficacy for every seizure type."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "12.1\u201312.2"
+        },
+        {
+          "id": "er",
+          "sections": "12.1\u201312.2"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Immediate-release disposition",
+      "assertions": [
+        "Oxcarbazepine is absorbed and rapidly converted to active MHD; parent half-life is about two hours and MHD about nine hours. Metabolites are predominantly renally excreted. IR MHD steady state occurs in 2\u20133 days; tablets/suspension have similar bioavailability. Severe renal impairment approximately doubles exposure in the cited study, supporting lower starting doses."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "12.3"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Extended-release disposition",
+      "assertions": [
+        "XR is not bioequivalent to the same total IR dose: studied once-daily 1200 mg produced lower MHD exposure than 1200 mg/day IR divided twice daily. MHD steady state occurs within five days; studied peak is around seven hours. Food increases peak concentrations even when overall exposure is similar, explaining empty-stomach administration. Do not apply IR parent half-life or equal-dose substitution as a universal XR rule."
+      ],
+      "sources": [
+        {
+          "id": "er",
+          "sections": "12.3"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": [
+        "Follow seizure frequency/type, mood/suicidality, alertness, gait and skin/systemic symptoms. Consider sodium measurements during maintenance, especially with sodium-lowering medicines or symptoms; assess kidney function for dose selection. Use MHD or companion levels when interaction, pregnancy or clinical-response circumstances warrant. No mandatory universal therapeutic range or laboratory interval is asserted."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "5;7;8;17"
+        },
+        {
+          "id": "er",
+          "sections": "5;7;8;17"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling and urgent reactions",
+      "assertions": [
+        "Take exactly as prescribed and avoid driving/hazardous activity until effects are known; alcohol adds impairment. Do not abruptly stop or independently switch IR/XR. Seek urgent care for airway swelling, serious rash/blisters, fever with swollen nodes, confusion/seizure worsening or concerning suicidal thoughts. Discuss contraception, pregnancy plans and every medication change."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "17; Medication Guide"
+        },
+        {
+          "id": "er",
+          "sections": "17; Medication Guide"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Suspension handling",
+      "assertions": [
+        "Shake well, use the supplied oral dosing syringe and verify 60 mg/mL against the prescription. Rinse/dry the syringe after use and record first opening; discard unused suspension after seven weeks. Household spoons are inaccurate. A missed-dose plan should come from the prescribing team rather than unsupervised doubling."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "2.8;16; Instructions for Use"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Trileptal 300 mg tablet is yellow, scored and imprinted TE/TE and CG/CG; 100-tablet bottle NDC 0078-0337-05. Trileptal suspension 300 mg/5 mL is in a 250 mL amber bottle, NDC 0078-0357-52, with syringe/adapter. Oxtellar XR 300 mg is brown modified oval, printed 300; 100-tablet bottle NDC 17772-122-01. Generic appearance varies; verify labeled packaging."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "3;16"
+        },
+        {
+          "id": "er",
+          "sections": "3;16.1"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Both selected tablet lines have 150, 300 and 600 mg strengths, but Trileptal is immediate release and Oxtellar XR extended release. Trileptal suspension is 300 mg/5 mL (60 mg/mL), not an XR liquid. No injectable oxcarbazepine or home-made extended-release suspension is supplied."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "3;16;2.8/2.1"
+        },
+        {
+          "id": "er",
+          "sections": "3;16;2.8/2.1"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Trileptal tablets/suspension: 20\u201325\u00b0C with 15\u201330\u00b0C excursions; tablets in a tight container, suspension in its original bottle and discarded seven weeks after first opening. Oxtellar XR: 25\u00b0C with 15\u201330\u00b0C excursions, protected from light/moisture in a tight light-resistant container. Preserve each product\u2019s instructions and keep away from children."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "16;17"
+        },
+        {
+          "id": "er",
+          "sections": "16.2"
+        }
+      ]
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Immediate-release approval",
+      "assertions": [
+        "Trileptal is labeled for adult monotherapy or adjunctive treatment of partial-onset seizures, pediatric monotherapy from age 4 and pediatric adjunctive therapy from age 2. Pediatric schedules specifically cover ages 2\u201316 or 4\u201316. Evidence from younger infants in trials does not create an approval below these age limits. It is not an acute injectable rescue product."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "1;8.4"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Extended-release and scope",
+      "assertions": [
+        "Oxtellar XR treats partial-onset seizures in patients age 6 and older. Its pediatric once-daily regimen covers 6 to younger than 17 years; patients 17 and older use the adult schedule. Both selected products are prescription NDA products. No bipolar, pain, generalized-epilepsy or universal first-line claim is inferred from the antiseizure mechanism."
+      ],
+      "sources": [
+        {
+          "id": "er",
+          "sections": "1;2.2;8.4; marketingNDA202810"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Adult immediate-release regimens",
+      "assertions": [
+        "Start 600 mg/day divided twice daily, ordinarily 300 mg per dose. Adjunctive therapy increases by no more than 600 mg/day at approximately weekly intervals; recommended maximum is 1200 mg/day, with higher studied doses less well tolerated. For conversion to monotherapy, reduce other antiseizure drugs over 3\u20136 weeks while titrating by up to 600 mg/day weekly toward 2400 mg/day over 2\u20134 weeks. For untreated-patient monotherapy, increase by 300 mg/day every third day to 1200 mg/day. These are distinct label settings; 2400 mg/day is not a universal initial or adjunctive target."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "2.1\u20132.3"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "IR adult treatment setting",
+          "Total daily dose / divided twice daily"
+        ],
+        "rows": [
+          [
+            "Initial dose",
+            "600 mg/day"
+          ],
+          [
+            "Adjunctive recommended maximum",
+            "1200 mg/day; titrate at approximately weekly intervals"
+          ],
+          [
+            "Conversion monotherapy",
+            "Up to 2400 mg/day with supervised companion taper"
+          ],
+          [
+            "Initiating monotherapy",
+            "Increase 300 mg/day every third day to 1200 mg/day"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric immediate-release adjunctive therapy",
+      "assertions": [
+        "Ages 4\u201316: start 8\u201310 mg/kg/day divided twice daily, generally at most 600 mg/day initially, with weight-based maintenance over two weeks. The current source gives 900 mg/day for 20\u201329 kg and 1200 mg/day for 29.1\u201339 kg, but its next line says 39 kg/1800 mg without a greater-than sign, creating an overlapping boundary; verify the higher-weight target with the specialist rather than infer it here. Ages 2 to younger than 4: same usual start; under 20 kg the clinician may consider 16\u201320 mg/kg/day. Titrate over 2\u20134 weeks to at most 60 mg/kg/day divided twice daily. These younger-child instructions do not apply to XR."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "2.4"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric immediate-release monotherapy",
+      "assertions": [
+        "Ages 4\u201316: start 8\u201310 mg/kg/day in two doses. Untreated initiation increases 5 mg/kg/day every third day; conversion increases at most 10 mg/kg/day approximately weekly while withdrawing companion drugs over 3\u20136 weeks. The label\u2019s discrete maintenance-weight rows are below; assess nonlisted weights and clinical tolerance with the treating team, rather than invent interpolation or use an adjunctive target."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "2.5\u20132.6"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Weight in label monotherapy table",
+          "Maintenance total mg/day \u00b7 divided twice daily"
+        ],
+        "rows": [
+          [
+            "20 kg",
+            "600\u2013900"
+          ],
+          [
+            "25 or 30 kg",
+            "900\u20131200"
+          ],
+          [
+            "35 or 40 kg",
+            "900\u20131500"
+          ],
+          [
+            "45 kg",
+            "1200\u20131500"
+          ],
+          [
+            "50 or 55 kg",
+            "1200\u20131800"
+          ],
+          [
+            "60 or 65 kg",
+            "1200\u20132100"
+          ],
+          [
+            "70 kg",
+            "1500\u20132100"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Extended-release adult and pediatric regimens",
+      "assertions": [
+        "Adults start 600 mg once daily for one week, then increase by 600 mg/day at weekly intervals toward 1200\u20132400 mg once daily as tolerated. Ages 6 to younger than 17 start 8\u201310 mg/kg once daily, maximum 600 mg in week one; increase 8\u201310 mg/kg/day, at most 600 mg per increment, weekly. Pediatric maintenance is usually reached over 2\u20133 weeks: 900 mg/day at 20\u201329 kg, 1200 at 29.1\u201339 kg and 1800 above 39 kg. This XR table\u2019s explicit greater-than boundary does not silently correct Trileptal\u2019s source ambiguity."
+      ],
+      "sources": [
+        {
+          "id": "er",
+          "sections": "2.2"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "XR population / weight",
+          "Once-daily schedule"
+        ],
+        "rows": [
+          [
+            "Adults",
+            "600 mg initially; 1200\u20132400 mg/day recommended maintenance"
+          ],
+          [
+            "Age 6 to < 17 \u00b7 initial",
+            "8\u201310 mg/kg/day; maximum 600 mg in first week"
+          ],
+          [
+            "Pediatric 20\u201329 kg",
+            "900 mg/day target"
+          ],
+          [
+            "Pediatric 29.1\u201339 kg",
+            "1200 mg/day target"
+          ],
+          [
+            "Pediatric > 39 kg",
+            "1800 mg/day target"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Renal, older-patient and inducer dosing",
+      "assertions": [
+        "At CrCl < 30 mL/min, adult IR starts half the usual total dose: 300 mg/day divided twice daily, increasing slowly. Adult XR also starts 300 mg/day, with weekly 300\u2013450 mg/day increments; older XR patients may start 300\u2013450 mg/day. Strong CYP3A4/UGT inducers require response/MHD-guided adjustment; XR label permits consideration of adult 900 mg/day or pediatric 12\u201315 mg/kg/day, maximum 900 mg in week one. Dialysis patients should use IR instead of XR under its label; no universal dialysis supplement is supplied."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "2.7;7.2;8.5\u20138.6"
+        },
+        {
+          "id": "er",
+          "sections": "2.3\u20132.5;8.6"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Food, suspension and formulation changes",
+      "assertions": [
+        "IR may be taken with or without food; shake suspension well, promptly measure with supplied oral syringe, and swallow directly or mix with a small glass of water. 300 mg/5 mL equals 60 mg/mL. Trileptal tablets and suspension may substitute at equal mg doses. XR is once daily on an empty stomach, at least one hour before or two hours after meals; swallow whole, never cut/crush/chew. XR is not bioequivalent to the same daily IR amount and conversion may require a higher XR dose. Do not convert formulations independently."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "2.8;3;12.3; Instructions for Use"
+        },
+        {
+          "id": "er",
+          "sections": "2.1;2.7;12.3"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Monitor for low sodium, including nausea, malaise, headache, lethargy, confusion or more seizures; it can arise early or after prolonged therapy. Anaphylaxis/angioedema requires stopping and urgent treatment; do not rechallenge after such a reaction. Carbamazepine hypersensitivity predicts substantial cross-reaction risk. SJS/TEN and DRESS can be fatal; fever or lymph-node swelling may precede an obvious rash.",
+        "Consider HLA-B*1502 testing before initiation in genetically at-risk ancestry; generally avoid treatment in positive patients unless benefit clearly outweighs risk. A negative result does not remove skin-reaction vigilance. Watch suicidal thoughts, mood change, cognitive slowing, dizziness, sleepiness, gait/coordination problems and rare blood-cell disorders. Seizures can worsen, including new generalized seizures. Usually withdraw gradually to reduce seizure/status risk; severe adverse events can require faster clinician-directed discontinuation."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "5.1\u20135.11"
+        },
+        {
+          "id": "er",
+          "sections": "5.1\u20135.10"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "Known hypersensitivity to oxcarbazepine, product components or eslicarbazepine acetate is contraindicated. Prior carbamazepine hypersensitivity is separately a strong precaution, not permission to assume oxcarbazepine is a harmless substitute."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "4;5.2\u20135.3"
+        },
+        {
+          "id": "er",
+          "sections": "4;5.2\u20135.3"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "The selected Trileptal and Oxtellar XR full labels have no formal boxed warning. The class suicidality warning, serious skin/hypersensitivity reactions, sodium reduction and withdrawal risks remain significant."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "Full PI;5"
+        },
+        {
+          "id": "er",
+          "sections": "Full PI;5"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Common effects include dizziness, somnolence, diplopia/visual disturbance, fatigue, nausea/vomiting, headache, ataxia and gait abnormalities; severity can limit higher doses. Serious reports include hyponatremia, severe skin or multisystem reactions, angioedema and blood-cell abnormalities. Frequencies differ across populations and trial regimens; no universal rate is supplied."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "6;5"
+        },
+        {
+          "id": "er",
+          "sections": "6;5"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Hormonal contraception",
+      "assertions": [
+        "Oxcarbazepine reduces exposure to ethinylestradiol/levonorgestrel and may cause contraceptive failure. Counsel on additional or alternative nonhormonal contraception. Evidence for specific oral hormones does not establish that every other hormonal method is unaffected; review the actual contraception with the clinician."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "7.3;8.3;12.3"
+        },
+        {
+          "id": "er",
+          "sections": "7.3;8.3;12.3"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Phenytoin and enzyme inducers",
+      "assertions": [
+        "Phenytoin exposure can increase, especially with oxcarbazepine doses above 1200 mg/day; monitor levels during titration and adjust phenytoin when needed. Carbamazepine, phenytoin, phenobarbital and rifampin can lower active MHD exposure; monitor seizure control/MHD as indicated and reassess when inducers start, change or stop. These are bidirectional interactions, not a universal fixed percentage correction."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "7.1\u20137.2;12.3"
+        },
+        {
+          "id": "er",
+          "sections": "7.1\u20137.2;12.3"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Other exposure and additive effects",
+      "assertions": [
+        "CYP3A4/5 induction can lower exposure to some calcium-channel blockers and cyclosporine; CYP2C19 inhibition can increase susceptible substrates. Alcohol can add sedation. Other sodium-lowering drugs increase the need for sodium assessment. Review the complete medication list, including new prescriptions and over-the-counter agents, rather than assume an antiseizure drug has no interactions."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "12.3;5.1;17"
+        },
+        {
+          "id": "er",
+          "sections": "12.3;5.1;17"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy",
+      "assertions": [
+        "Do not abruptly stop for pregnancy; uncontrolled seizures/status can threaten mother and fetus. Current Trileptal human observational data have not demonstrated increased major-malformation prevalence, but important limitations remain and animal developmental toxicity exists. Oxtellar retains older more cautious registry wording; neither establishes absence of risk. MHD levels can fall during pregnancy and rebound postpartum, so follow seizure control/levels and individualize doses. Discuss pregnancy planning and the North American pregnancy registry."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "8.1;5.9\u20135.10"
+        },
+        {
+          "id": "er",
+          "sections": "8.1;5.9\u20135.10"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Lactation",
+      "assertions": [
+        "Oxcarbazepine and MHD are present in human milk; infant and milk-production effects are insufficiently characterized in these labels. Weigh infant vulnerability, maternal seizure-treatment need and feeding benefits. The label does not establish zero infant exposure or a universal feeding interruption."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "8.2"
+        },
+        {
+          "id": "er",
+          "sections": "8.2"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Kidney, liver and older age",
+      "assertions": [
+        "Kidney dysfunction prolongs active-metabolite exposure; reduce starting doses at CrCl < 30 and titrate carefully. Older patients may have higher MHD exposure from reduced clearance and need sodium/clinical monitoring. Mild/moderate hepatic impairment did not alter IR disposition in studies; severe hepatic impairment is unstudied and XR is not recommended. IR data do not create a validated severe-hepatic regimen."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "2.7;8.5\u20138.6;12.3"
+        },
+        {
+          "id": "er",
+          "sections": "2.3\u20132.4;8.5\u20138.7;12.3"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and obesity",
+      "assertions": [
+        "IR and XR age limits and weight schedules differ; do not apply adult or XR schedules to younger IR-treated children. Current PK analyses do not require an adjustment solely for obesity status within the studied pediatric scope. That finding does not replace the approved age/weight regimen or individualized renal/interaction assessment."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "8.4;12.3"
+        },
+        {
+          "id": "er",
+          "sections": "8.4;12.3"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "assertions": [
+        "The precise clinical mechanism is not fully established. Electrophysiology supports voltage-sensitive sodium-channel blockade, stabilization of hyperexcitable membranes and reduced repetitive firing; potassium/calcium effects may contribute. These findings support partial-onset seizure treatment without proving efficacy for every seizure type."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "12.1\u201312.2"
+        },
+        {
+          "id": "er",
+          "sections": "12.1\u201312.2"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Immediate-release disposition",
+      "assertions": [
+        "Oxcarbazepine is absorbed and rapidly converted to active MHD; parent half-life is about two hours and MHD about nine hours. Metabolites are predominantly renally excreted. IR MHD steady state occurs in 2\u20133 days; tablets/suspension have similar bioavailability. Severe renal impairment approximately doubles exposure in the cited study, supporting lower starting doses."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "12.3"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Extended-release disposition",
+      "assertions": [
+        "XR is not bioequivalent to the same total IR dose: studied once-daily 1200 mg produced lower MHD exposure than 1200 mg/day IR divided twice daily. MHD steady state occurs within five days; studied peak is around seven hours. Food increases peak concentrations even when overall exposure is similar, explaining empty-stomach administration. Do not apply IR parent half-life or equal-dose substitution as a universal XR rule."
+      ],
+      "sources": [
+        {
+          "id": "er",
+          "sections": "12.3"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": [
+        "Follow seizure frequency/type, mood/suicidality, alertness, gait and skin/systemic symptoms. Consider sodium measurements during maintenance, especially with sodium-lowering medicines or symptoms; assess kidney function for dose selection. Use MHD or companion levels when interaction, pregnancy or clinical-response circumstances warrant. No mandatory universal therapeutic range or laboratory interval is asserted."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "5;7;8;17"
+        },
+        {
+          "id": "er",
+          "sections": "5;7;8;17"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling and urgent reactions",
+      "assertions": [
+        "Take exactly as prescribed and avoid driving/hazardous activity until effects are known; alcohol adds impairment. Do not abruptly stop or independently switch IR/XR. Seek urgent care for airway swelling, serious rash/blisters, fever with swollen nodes, confusion/seizure worsening or concerning suicidal thoughts. Discuss contraception, pregnancy plans and every medication change."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "17; Medication Guide"
+        },
+        {
+          "id": "er",
+          "sections": "17; Medication Guide"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Suspension handling",
+      "assertions": [
+        "Shake well, use the supplied oral dosing syringe and verify 60 mg/mL against the prescription. Rinse/dry the syringe after use and record first opening; discard unused suspension after seven weeks. Household spoons are inaccurate. A missed-dose plan should come from the prescribing team rather than unsupervised doubling."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "2.8;16; Instructions for Use"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Trileptal 300 mg tablet is yellow, scored and imprinted TE/TE and CG/CG; 100-tablet bottle NDC 0078-0337-05. Trileptal suspension 300 mg/5 mL is in a 250 mL amber bottle, NDC 0078-0357-52, with syringe/adapter. Oxtellar XR 300 mg is brown modified oval, printed 300; 100-tablet bottle NDC 17772-122-01. Generic appearance varies; verify labeled packaging."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "3;16"
+        },
+        {
+          "id": "er",
+          "sections": "3;16.1"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Both selected tablet lines have 150, 300 and 600 mg strengths, but Trileptal is immediate release and Oxtellar XR extended release. Trileptal suspension is 300 mg/5 mL (60 mg/mL), not an XR liquid. No injectable oxcarbazepine or home-made extended-release suspension is supplied."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "3;16;2.8/2.1"
+        },
+        {
+          "id": "er",
+          "sections": "3;16;2.8/2.1"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Trileptal tablets/suspension: 20\u201325\u00b0C with 15\u201330\u00b0C excursions; tablets in a tight container, suspension in its original bottle and discarded seven weeks after first opening. Oxtellar XR: 25\u00b0C with 15\u201330\u00b0C excursions, protected from light/moisture in a tight light-resistant container. Preserve each product\u2019s instructions and keep away from children."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "16;17"
+        },
+        {
+          "id": "er",
+          "sections": "16.2"
+        }
+      ]
+    }
+  ],
+  "hero_assertions": {
+    "essential": {
+      "title": "Monitor sodium and serious reactions.",
+      "text": "Urgently assess serious rash, airway swelling, confusion or seizure worsening. Do not abruptly withdraw routine therapy or independently substitute IR and XR.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "facts": [
+      [
+        "IR schedule",
+        "Twice daily; age limits depend on treatment setting"
+      ],
+      [
+        "XR schedule",
+        "Once daily on an empty stomach; age 6+"
+      ],
+      [
+        "Key interaction",
+        "Reduced hormonal-contraceptive effectiveness"
+      ]
+    ],
+    "sources": [
+      "ir",
+      "er"
+    ]
+  },
+  "section_assertions": [
+    {
+      "section": "indications",
+      "summary": "Oxcarbazepine is an oral antiseizure drug for partial-onset seizures.",
+      "takeaway": "Age approvals and schedules differ between immediate and extended release.",
+      "sources": [
+        "er",
+        "ir"
+      ]
+    },
+    {
+      "section": "dosage",
+      "summary": "Titrate by formulation, age, treatment setting, weight and renal function.",
+      "takeaway": "All pediatric mg/kg/day amounts below are total daily doses, not each dose.",
+      "sources": [
+        "er",
+        "ir"
+      ]
+    },
+    {
+      "section": "safety",
+      "summary": "Hyponatremia, severe hypersensitivity, neuropsychiatric effects and seizure worsening require vigilance.",
+      "takeaway": "Do not abruptly withdraw routine therapy; serious reactions need urgent clinical direction.",
+      "sources": [
+        "er",
+        "ir"
+      ]
+    },
+    {
+      "section": "interactions",
+      "summary": "Enzyme effects change antiseizure-drug and hormonal-contraceptive exposure.",
+      "takeaway": "Arrange additional or alternative nonhormonal contraception when appropriate.",
+      "sources": [
+        "er",
+        "ir"
+      ]
+    },
+    {
+      "section": "populations",
+      "summary": "Pediatric approval, renal clearance and reproductive issues are formulation-specific.",
+      "takeaway": "Pregnancy seizure control and medication monitoring require coordinated care.",
+      "sources": [
+        "er",
+        "ir"
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "summary": "The active MHD metabolite contributes most antiseizure activity.",
+      "takeaway": "Different release profiles change dosing and food instructions.",
+      "sources": [
+        "er",
+        "ir"
+      ]
+    },
+    {
+      "section": "practice",
+      "summary": "Assess seizures, sodium risk, allergy history, organ function and interactions.",
+      "takeaway": "Confirm the release type and total daily versus per-dose instructions.",
+      "sources": [
+        "er",
+        "ir"
+      ]
+    },
+    {
+      "section": "product",
+      "summary": "Selected products are oral IR tablets/suspension and XR tablets.",
+      "takeaway": "Shared tablet strengths do not prove interchangeable release.",
+      "sources": [
+        "er",
+        "ir"
+      ]
+    }
+  ],
+  "limitations": [
+    "Current Trileptal\u00a72.4 source lists39kg1800mg with no > sign overlapping29.1\u201339kg1200mg; higher-weight IR adjunctive target requires specialist verification and is not inferred. Manufacturer current publicPDF read through web agrees; direct download403.",
+    "PI/Medication Guide/SPL effective dates differ; actual revisions recorded separately. Current Trileptal pregnancy data and older Oxtellar wording not represented as identical risk statements.",
+    "No unreviewed off-label psychiatric/pain indication, generalized-epilepsy regimen, universal drug-level range or dialysis supplement supplied."
+  ],
+  "unresolved_source_questions": [
+    {
+      "question": "Trileptal\u00a72.4 higher-weight adjunctive row says39kg1800mg, overlapping29.1\u201339kg1200mg",
+      "publication_handling": "Explicit source ambiguity; affected higher-weight target deferred to specialist verification. No invented > threshold or XR-to-IR extrapolation",
+      "severity": "Scoped source dosing-table ambiguity"
+    },
+    {
+      "question": "Current Trileptal and Oxtellar pregnancy risk wording differs",
+      "publication_handling": "Newer Trileptal observational limitations and older Oxtellar wording distinguished; neither represented as risk-free",
+      "severity": "Source-version distinction"
+    }
+  ],
+  "validation": {
+    "schema": "Actual current validateMonograph returned[];8section contract,4Safety/3Product,3hero tuple facts",
+    "tests_build_lint": "Parent batch checks required",
+    "rendered_page": "Parent batch QA required",
+    "audit_consistency": "All actual card/table/assertion source IDs and monograph SHA256 checked"
+  },
+  "monograph_sha256": "39be37828f208fce3e4fb5a449729790529c516bffc53819b3d9db3c779cf315",
+  "source_archive": {
+    "directory": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-21-thyroid-metformin",
+    "checked": "2026-10-01",
+    "verified": "Full selected DailyMed SPL XML/parsed sections/metadata; FDA injection safety communication HTML/text and Novartis publicPDF web-access provenance record copied with exact SHA256 verification. No blocked rawPDF falsely claimed. Existing divergent files preserved."
+  }
+}

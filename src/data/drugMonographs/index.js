@@ -199,6 +199,16 @@ import { melatonin } from "./melatonin.js";
 import { torsemide } from "./torsemide.js";
 import { polyethylene_glycol_3350 } from "./polyethylene-glycol-3350.js";
 import { nitroglycerin } from "./nitroglycerin.js";
+import { ketorolac } from "./ketorolac.js";
+import { flecainide } from "./flecainide.js";
+import { liothyronine } from "./liothyronine.js";
+import { telmisartan } from "./telmisartan.js";
+import { risperidone } from "./risperidone.js";
+import { colchicine } from "./colchicine.js";
+import { lansoprazole } from "./lansoprazole.js";
+import { insulinHumanInsulinIsophaneHuman } from "./insulin-human-insulin-isophane-human.js";
+import { oxcarbazepine } from "./oxcarbazepine.js";
+import { promethazine } from "./promethazine.js";
 
 export const reviewedDrugMonographs = {
   "atorvastatin": atorvastatin,
@@ -401,4 +411,14 @@ export const reviewedDrugMonographs = {
   "torsemide": torsemide,
   "polyethylene-glycol-3350": polyethylene_glycol_3350,
   "nitroglycerin": nitroglycerin,
+  "ketorolac": ketorolac,
+  "flecainide": flecainide,
+  "liothyronine": liothyronine,
+  "telmisartan": telmisartan,
+  "risperidone": risperidone,
+  "colchicine": colchicine,
+  "lansoprazole": lansoprazole,
+  "insulin-human-insulin-isophane-human": insulinHumanInsulinIsophaneHuman,
+  "oxcarbazepine": oxcarbazepine,
+  "promethazine": promethazine,
 };

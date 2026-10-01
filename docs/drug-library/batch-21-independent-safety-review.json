@@ -1,0 +1,776 @@
+{
+  "reviewDate": "2026-10-01",
+  "scope": "Independent targeted critical-assertion primary-source review. Only enumerated assertions independently verified; not exhaustive second clinical signoff, browser QA or build verification.",
+  "status": "complete_targeted_review",
+  "profiles": [
+    {
+      "drug": "liothyronine",
+      "fileSha256": "6b5d95e4ad1f4a6eb5094b4172f345c940d3e9857ed998f1442f2f89af262136",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Oralonce dailyadult25mcgstart+25every1–2wkusual25–75; elder/card5start+5intervals;ped5start+5every3–4days,20infant/50age1/adultabove3 possiblemaintenance examplesnotautomatictargets; hyperactivityonefourth+quarterweekly.",
+          "sourceId": "oral",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51452b31-ff68-4e0c-b982-c15502ebf1d3",
+          "sourceSection": "Section2.2",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Suppressiontest75–100mcg daily7days;T4switchstopT4/startlowT3/titrateresidualweeks,nouniversalratio;oralformaluncorrectedadrenalinsufficiencyalone/replaceglucocorticoidsbeforethyroid; nouseoralmyxedemacoma.",
+          "sourceId": "oral",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51452b31-ff68-4e0c-b982-c15502ebf1d3",
+          "sourceSection": "Sections2.4–2.5,4,5.2–5.3",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "IVadultmyxedemainitial25–50mcg/CV10–20,subsequent>=4<=12hapartcontinuouslymonitor; historical65/dayassociationnotmandatorytarget/above100limited. Simultaneousglucocorticoids/IVonly notIMSC.",
+          "sourceId": "iv",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a8b39730-de19-497d-bde8-6594aa528403",
+          "sourceSection": "Dosage and Administration",
+          "access": "Retained full current primary IV SPL and relevant sections independently read.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "IVformaluncorrectedadrenal/untreatedthyrotoxicosis/hypersensitivity/artificialrewarming distinctoralformalcontra; no universal renal/hepaticnumericdosealgorithm.",
+          "sourceId": "iv",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a8b39730-de19-497d-bde8-6594aa528403",
+          "sourceSection": "Contraindications; Dosage",
+          "access": "Retained full current primary IV SPL and relevant sections independently read.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Joint2026consensusT3controversial/initialIVT4favored; optional2.5–10mcgq8h inadequateimprovement,alternative10–25IVT3loadwithT4then2.5–10q8h lowerolder/CV; passiveblanketsavoidactiveperipheralwarming.",
+          "sourceId": "emergency",
+          "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13452032/",
+          "sourceSection": "Thyroid hormone treatment; Warming",
+          "access": "Retained full open-access original journal XML with DOI10.1530/ETJ-26-0044 independently read in relevant sections; no paywall access claimed.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning: no obesity or weight-loss treatment",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [
+        {
+          "status": "independent-review-not-enumerated",
+          "note": "2026 ATA pregnancy full-PDF mirror and its Tables5/9 not independently re-reviewed in this targeted record. Author review records mirror provenance and source-specific label/guideline reconciliation; no independent full pregnancy-guideline verification asserted here."
+        }
+      ],
+      "retainedEvidence": {
+        "cytomel": {
+          "path": "/tmp/nas-drug-sources/cytomel.xml",
+          "sha256": "d0c9471852621dcbf0d5598cffb2ae1e36fe9c341ae133a4a5f116dd16fc385c"
+        },
+        "liothyronine-iv": {
+          "path": "/tmp/nas-drug-sources/liothyronine-iv.xml",
+          "sha256": "f0960a528f3b842524e6ead22358ca2acb7f83986aa68214a7a65a66bf05c182"
+        },
+        "myxoedema-2026": {
+          "path": "/tmp/nas-drug-sources/myxoedema-2026.xml",
+          "sha256": "bd2f8c8d8e99e6e66ab042ec334a3daa40b08113a6b95f05bf93e58f93c99c41"
+        }
+      }
+    },
+    {
+      "drug": "telmisartan",
+      "fileSha256": "c050ff0ba0db18c2f45bb5eeff5a5f8b1ed2918db671dccfc445f2c4dbe6bd63",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "HTNusual40QD/range20–80,withwithoutfood,mosteffect2wkmax4. CVrisk80QDonlyeligible>=55highriskunableACE;lowerdoseefficacyunknown.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c62d424c-7630-413c-be2c-3932831c3f1d",
+          "sourceSection": "Sections1.2,2.1–2.2",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Noinitialelder/renalincludingHDadjust;dialysisBPorthostasismonitor;no fabricatednumerichepaticstart. Formalhypersensitivity andaliskirendiabetes distinctavoidGFR<60.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c62d424c-7630-413c-be2c-3932831c3f1d",
+          "sourceSection": "Sections2.1,4; organ warnings",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning: fetal toxicity",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "telmisartan": {
+          "path": "/tmp/nas-drug-sources/telmisartan.xml",
+          "sha256": "e359e1dac90971e851506d02f5ffe60850bc3cd51ce874b8828cad8ce61ba637"
+        }
+      }
+    },
+    {
+      "drug": "risperidone",
+      "fileSha256": "534f9abf23ae31dd5dc732ce7b84730d489f885ba98f179b3ff7c173368d9da6",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Autism-associated irritability: under twenty kg 0.25 mg/day then 0.5 after at least four days; twenty kg or more 0.5 then 1 mg/day. Maintain at least fourteen days, later steps at least two weeks apart by 0.25 or 0.5 mg/day, respectively. Effective 0.5–3 mg/day; no dosing data under fifteen kg.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e117c7e-02fc-4343-92a1-230061dfc5e0",
+          "sourceSection": "Section 2.3",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Severe CrCl below thirty or Child-Pugh ten to fifteen: oral 0.5 mg twice daily initially; increments at most 0.5 mg twice daily, above 1.5 mg twice daily at least one week apart. Solution compatible liquids exclude cola/tea; formal allergy includes paliperidone.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e117c7e-02fc-4343-92a1-230061dfc5e0",
+          "sourceSection": "Sections 2.4, 2.6, 4",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Consta starts 25 mg every two weeks with three-week initial oral antipsychotic overlap, maximum 50 mg every two weeks; increases at least four weeks apart, effect lag at least three weeks. Deltoid or gluteal IM route only.",
+          "sourceId": "consta",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bb34ee82-d2c2-43b8-ba21-2825c0954691",
+          "sourceSection": "Sections 2.1–2.3 and IFU",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Rykindo starts 25 mg every two weeks gluteal IM only with seven days oral risperidone; specific Consta switch uses same dose four to no later than five weeks after prior dose, no oral supplement. Renal/hepatic oral titration prerequisite and seven-day first-start overlap kept separate.",
+          "sourceId": "rykindo",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=58534c96-96f5-4c2e-a061-92d4506aee91",
+          "sourceSection": "Sections 2.1–2.6",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Schizophrenia oral 2/3/4/5 mg/day maps to 50/75/100/125 mg monthly or 100/150/200/250 every two months. Bipolar maintenance uses monthly 50/75/100 only for oral 2/3/4; every-two-month regimen not recommended. Oral switch day after last oral dose without loading/supplement. Bipolar two-week IM switch at least five weeks with 25/37.5/50 mapping to 50/75/100 monthly. Renal/hepatic oral titration at least 2 mg/day then 50 monthly.",
+          "sourceId": "uzedy",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=734eb776-4be0-4808-834b-0d8b0f9e021e",
+          "sourceSection": "Sections 2.2–2.5",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning · dementia-related mortality",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "risperdal": {
+          "path": "/tmp/nas-drug-sources/risperdal.xml",
+          "sha256": "ce819162ad5c1512dd4cc652dcf6c67e01b416458b33571fa7bc682efcc146dd"
+        },
+        "consta": {
+          "path": "/tmp/nas-drug-sources/consta.xml",
+          "sha256": "e98741ad560f5b53ebf703afed1cfe11dfb4dcea30795ce4a679c98a68a0f1e6"
+        },
+        "rykindo": {
+          "path": "/tmp/nas-drug-sources/rykindo.xml",
+          "sha256": "788993e347af80e89f76b28289084bc4ddeda8998b52e1aa420fbc8e265343fe"
+        },
+        "uzedy": {
+          "path": "/tmp/nas-drug-sources/uzedy.xml",
+          "sha256": "75d8abdff8691a467d095866f6769d90a426ee5c5987e53b07668d43ab60d641"
+        }
+      }
+    },
+    {
+      "drug": "colchicine",
+      "fileSha256": "02c5920598dbe5716a6acaa2d51a1f27cbcde4fe29de1015dce0a666e8671b90",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Adult gout prophylaxis 0.6 mg once or twice daily, maximum 1.2/day; acute 1.2 mg then 0.6 one hour later, total 1.8 over one hour. Wait twelve hours before resuming prophylaxis; no higher-dose efficacy inference. FMF 1.2–2.4 mg/day adults/adolescents over twelve, children four–six 0.3–1.8 and six–twelve 0.9–1.8; exact six overlap explicitly deferred to specialist.",
+          "sourceId": "label",
+          "sourceUrl": "https://content.takeda.com/?contenttype=PI&country=GBL&documentnumber=1&language=ENG&product=COL",
+          "sourceSection": "Sections 2.1–2.3",
+          "access": "Retained current-served complete Takeda manufacturer PDF and extracted full relevant PI sections independently read; document clinical revision May 2020 is not represented as a 2026 clinical revision.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Severe renal gout prophylaxis starts 0.3 mg/day, dialysis 0.3 mg twice weekly; dialysis flare 0.6 mg once, no repeat more often than two weeks. Severe renal and severe hepatic flare courses no more than once every two weeks; renal/hepatic impairment already on prophylaxis excludes flare treatment. Severe renal/dialysis FMF starts 0.3 mg/day, distinct from gout prophylaxis.",
+          "sourceId": "label",
+          "sourceUrl": "https://content.takeda.com/?contenttype=PI&country=GBL&documentnumber=1&language=ENG&product=COL",
+          "sourceSection": "Sections 2.5–2.6",
+          "access": "Retained current-served complete Takeda manufacturer PDF and extracted full relevant PI sections independently read; document clinical revision May 2020 is not represented as a 2026 clinical revision.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Renal OR hepatic impairment plus P-gp or strong CYP3A4 inhibitor contraindicated; interaction-dose tables do not bypass restriction. FMF regimen is not a pediatric gout regimen.",
+          "sourceId": "label",
+          "sourceUrl": "https://content.takeda.com/?contenttype=PI&country=GBL&documentnumber=1&language=ENG&product=COL",
+          "sourceSection": "Sections 2.3–2.4, 4",
+          "access": "Retained current-served complete Takeda manufacturer PDF and extracted full relevant PI sections independently read; document clinical revision May 2020 is not represented as a 2026 clinical revision.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Mitigare adult prophylaxis 0.6 mg once or twice daily maximum 1.2/day; BOTH renal and hepatic impairment contraindicated, also renal OR hepatic impairment plus drugs inhibiting BOTH CYP3A4 and P-gp. No Colcrys dialysis numerical schedule transplanted.",
+          "sourceId": "capsule",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb5f9d85-6b81-49f8-bcd6-17b7bfbc10f2",
+          "sourceSection": "Sections 2.1, 4",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Gloperba 0.6 mg per five mL: five mL once or twice daily maximum ten mL/day. Combined organ and dual-inhibitor formal restrictions agree with own label.",
+          "sourceId": "liquid",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=467cd83f-d695-4040-9434-10e80b4271da",
+          "sourceSection": "Sections 2.1, 4",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "LoDoCo adult cardiovascular regimen 0.5 mg once daily; any strong CYP3A4 OR P-gp inhibitor, CrCl below fifteen, severe hepatic impairment, pre-existing blood dyscrasias and hypersensitivity contraindicated. P-gp formal prohibition is not narrowed to strong-only.",
+          "sourceId": "cv",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ff06d68f-d65f-d097-e053-6294a90a7e5f",
+          "sourceSection": "Sections 2, 4",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "mitigare": {
+          "path": "/tmp/nas-drug-sources/mitigare.xml",
+          "sha256": "2f1b6cb1646bd6026ae7662ed9b3a4af86e3f46a3f90296b327540c8eb9cb100"
+        },
+        "lodoco": {
+          "path": "/tmp/nas-drug-sources/lodoco.xml",
+          "sha256": "0841d8d18df569458bfb12d90e05d397a2f075ae68d3f054338d087c811cd019"
+        },
+        "gloperba": {
+          "path": "/tmp/nas-drug-sources/gloperba.xml",
+          "sha256": "fc21a767e563cf62b3fdde4fd13d795894155424608f91ab65759d8089bf1c0f"
+        },
+        "colcrysTakeda": {
+          "path": "/tmp/nas-drug-sources/colcrys-takeda.pdf",
+          "sha256": "75e955e9c6a4f46b23ccc3321c49748f6d7cbd57f1cac31a6f5c23198e82af64"
+        }
+      }
+    },
+    {
+      "drug": "oxcarbazepine",
+      "fileSha256": "39be37828f208fce3e4fb5a449729790529c516bffc53819b3d9db3c779cf315",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Adult IR starts 600 mg total/day divided twice daily. Adjunctive increases at most 600 mg/day approximately weekly with recommended maximum 1200/day. Conversion monotherapy can reach 2400/day while withdrawing companions over 3–6 weeks; untreated monotherapy increases 300/day every third day toward 1200/day. These setting-specific targets are not interchangeable.",
+          "sourceId": "ir",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c5c86c8-ab7f-4fcf-bc1b-5a0b1fd0691b",
+          "sourceSection": "Sections 2.1–2.3",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Pediatric IR adjunctive ages 4–16 starts 8–10 mg/kg TOTAL daily in two doses, usually at most 600/day initially. Ages 2 to under 4 have distinct higher weight-based options and maximum 60 mg/kg/day. Current maintenance text literally gives 39 kg/1800 overlapping the preceding 29.1–39 kg/1200; affected higher-weight target explicitly withheld rather than inferred. Discrete monotherapy maintenance rows agree with own chart.",
+          "sourceId": "ir",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c5c86c8-ab7f-4fcf-bc1b-5a0b1fd0691b",
+          "sourceSection": "Sections 2.4–2.6",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "XR adult starts 600 once daily for one week, increases 600/day weekly, recommended 1200–2400 once daily. Ages 6 to under 17 start 8–10 mg/kg/day once daily maximum 600 in first week, same weight-based weekly increment maximum 600 per step; targets 900 at 20–29 kg, 1200 at 29.1–39, 1800 above 39 over 2–3 weeks.",
+          "sourceId": "er",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aa610e56-1d1d-11e1-8bc2-0800200c9a66",
+          "sourceSection": "Section 2.2",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Adult severe CrCl below 30 starts 300/day with weekly 300–450/day increments; older patients may start 300–450/day. Strong inducer start consideration 900 adult or 12–15 mg/kg/day pediatric maximum 900 first week. End-stage renal disease on dialysis label recommends IR rather than XR.",
+          "sourceId": "er",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aa610e56-1d1d-11e1-8bc2-0800200c9a66",
+          "sourceSection": "Sections 2.3–2.5, 8.6",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "IR severe renal starting dose is 300 mg TOTAL/day divided twice daily. Suspension is 300 mg/5 mL or 60 mg/mL, shaken and measured promptly; IR tablets and suspension may substitute equal milligrams.",
+          "sourceId": "ir",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c5c86c8-ab7f-4fcf-bc1b-5a0b1fd0691b",
+          "sourceSection": "Sections 2.7–2.8, 3",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "XR is taken at least one hour before or two hours after food; swallowed whole without cutting/crushing/chewing. Same daily IR/XR amount is not bioequivalent. Hypersensitivity to oxcarbazepine, components or eslicarbazepine acetate contraindicated in both selected labels.",
+          "sourceId": "er",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aa610e56-1d1d-11e1-8bc2-0800200c9a66",
+          "sourceSection": "Sections 2.1, 2.7, 4",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed-warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "oxcar-ir": {
+          "path": "/tmp/nas-drug-sources/oxcar-ir.xml",
+          "sha256": "62faa5a3746a9c757e14f602ffd2beb517d0138c42f7e81e439827049b73b005"
+        },
+        "oxcar-er": {
+          "path": "/tmp/nas-drug-sources/oxcar-er.xml",
+          "sha256": "b5248ef08a3ca82861856fb84cd71063816037bdcc5bd55f9f08618e10cbf9e0"
+        }
+      }
+    },
+    {
+      "drug": "promethazine",
+      "fileSha256": "f75e953211f2f9a11bea843db7ae545dea162f5217821511f2f43361000ec1ac",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Adult oral motion sickness 25 mg twice daily initially 30–60 minutes before travel then 8–12 hours later; nausea/vomiting usual 25 then 12.5–25 every 4–6 hours. Pediatric nausea/vomiting label unit is 0.5 mg per POUND, not per kg; profile retains clinician-supervised, cause-specific scope and under-two prohibition.",
+          "sourceId": "tablet",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6aa6bfcc-024b-4ee2-a586-6c4ca879cea4",
+          "sourceSection": "Dosage and Administration: Motion Sickness, Nausea and Vomiting",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Oral solution 6.25 mg/5 mL equals 1.25 mg/mL; published 5/10/20 mL conversions equal 6.25/12.5/25 mg. Under two, coma and phenothiazine hypersensitivity/idiosyncratic reaction contraindicated; lower respiratory tract symptom treatment including asthma separately contraindicated. Pediatric fatal respiratory depression box remains applicable.",
+          "sourceId": "liquid",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2ca17cd4-460e-4d54-8c53-a58a2b80e5cb",
+          "sourceSection": "How Supplied, Contraindications, boxed warning",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Rectal suppositories are for rectal use only. Motion sickness 25 mg twice daily and nausea/vomiting 12.5–25 every 4–6 hours agree; allergy paragraph literally says oral dose and is not republished as inferred rectal allergy regimen. Under-two fatal respiratory box and formal restrictions retained.",
+          "sourceId": "rectal",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ba7d9e82-9b13-4607-b2f9-25e575b8c73b",
+          "sourceSection": "Dosage and Administration, Contraindications, Warnings",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Deep IM preferred. Undiluted IV push, intra-arterial and subcutaneous use prohibited; IV concentration above 1 mg/mL contraindicated. Adult selected current preparation uses 12.5/25/50 mg in 50 mL saline maximum 2.5 mL/min or 75 mg in 100 mL maximum 5 mL/min, infusion 20–40 minutes, large vein preferably central, no hand/wrist catheter, stop immediately for pain.",
+          "sourceId": "injection",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=481866da-a712-48a5-853f-8e84aacaab6d",
+          "sourceSection": "Contraindications, Dosage and Administration adult Table 1, boxed warning",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Pediatric eligible age two or older doses no more than half suggested adult, with premedication example 1.1 mg/kg. Pediatric dilution table up to 25 mg/25 mL or 25–50 mg/50 mL maximum 1 mg/mL and 1.25 mL/min; exact 25 mg overlap explicitly acknowledged. Diluted storage four hours 20–25 C or 24 hours 2–8 C. Labor 100 mg/24 hours ceiling applies to labor, not all regimens.",
+          "sourceId": "injection",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=481866da-a712-48a5-853f-8e84aacaab6d",
+          "sourceSection": "Dosage and Administration: Pediatric Patients, Table 2, Labor, Preparation",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "FDA recommends deep IM rather than IV; if IV necessary, dilute only with 0.9% sodium chloride and infuse through a large vein preferably central, avoiding hand/wrist. Severe tissue injury risk remains despite dilution. Profile current product-specific rate table is attributed to Phenergan rather than assumed universal FDA rate.",
+          "sourceId": "fda",
+          "sourceUrl": "https://www.fda.gov/drugs/drug-alerts-and-statements/fda-requires-updates-labeling-promethazine-hydrochloride-injection-products",
+          "sourceSection": "FDA safety communication December 2023",
+          "access": "Official FDA communication opened and relevant full guidance read.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed-warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "prometh-oral": {
+          "path": "/tmp/nas-drug-sources/prometh-oral.xml",
+          "sha256": "1be67354975578edac4e31dd49b9ec2ce61f358124f74ac826f69100318015ed"
+        },
+        "prometh-liquid": {
+          "path": "/tmp/nas-drug-sources/prometh-liquid.xml",
+          "sha256": "083674ff0d81f0879fd62abf240daed9b642c3c0040b379a6a23196f1fe2450a"
+        },
+        "prometh-rectal": {
+          "path": "/tmp/nas-drug-sources/prometh-rectal.xml",
+          "sha256": "47269438ee471d6d9da7d8d2365a36a4c5deda9b8cda9110e2050107d65bfe16"
+        },
+        "prometh-inj": {
+          "path": "/tmp/nas-drug-sources/prometh-inj.xml",
+          "sha256": "dacccf6673cf58652022b1b926dd4d4cb4cfb1f4feed74e19fcdd83ed9e82b9d"
+        }
+      }
+    },
+    {
+      "drug": "lansoprazole",
+      "fileSha256": "588114b1ab72b68489e3c5f8fd57bb5be293ce446cd7269e2e19c84229ffbeef",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Adult duodenal ulcer 15 mg daily four weeks, gastric ulcer 30 daily up to eight, NSAID healing 30 daily eight and risk reduction 15 daily up to twelve, GERD 15 daily up to eight, erosive esophagitis 30 daily up to eight with selected repeat course and 15 maintenance. Hypersecretory initial 60 daily individualized, doses above 120/day divided; 90 twice daily studied is not universal target.",
+          "sourceId": "lansorx",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=71ba78cb-7e46-43eb-9425-fa130f537f84",
+          "sourceSection": "Section 2.1",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Pediatric ages 1–11 at most 30 kg 15 mg daily, above 30 kg 30 daily, up to twelve weeks. Ages 12–17 nonerosive 15 or erosive 30 daily up to eight weeks. Child-Pugh C 15 mg daily. Formal ingredient allergy and concomitant rilpivirine contraindications retained.",
+          "sourceId": "lansorx",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=71ba78cb-7e46-43eb-9425-fa130f537f84",
+          "sourceSection": "Sections 2.2–2.3, 4",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Labeled H. pylori triple therapy lansoprazole 30 mg/amoxicillin 1 g/clarithromycin 500 mg each twice daily ten or fourteen days; older dual 30 mg/1 g each three times daily fourteen days. Profile expressly separates labeled regimens from current empiric recommendations.",
+          "sourceId": "lansorx",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=71ba78cb-7e46-43eb-9425-fa130f537f84",
+          "sourceSection": "Section 2.1",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Prescription capsule intact granules in specified soft foods or 60 mL permitted juice; NG at least sixteen French uses 40 mL apple juice. SoluTab 15/30 mg oral syringe uses 4/10 mL water within fifteen minutes then 2/5 mL rinse; NG at least eight French same initial volumes then 5 mL rinse. Granules not crushed/chewed, SoluTab not broken/cut; sucralfate separation at least thirty minutes.",
+          "sourceId": "lansorx",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=71ba78cb-7e46-43eb-9425-fa130f537f84",
+          "sourceSection": "Section 2.4 and full patient IFU",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "OTC adults at least eighteen one 15 mg capsule every 24 hours before morning food with water for fourteen days, no more than one daily; repeat no more often than four months unless doctor directs. Prescription alternative preparation instructions not transplanted.",
+          "sourceId": "lansoOTC",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=205c9c1e-b422-4e86-a4b0-714b608adc19",
+          "sourceSection": "Drug Facts Directions",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Official public ACG summary recommends fourteen-day optimized bismuth quadruple therapy and advises against PPI-clarithromycin triple therapy unless proven clarithromycin susceptibility. Eradication confirmation at least four weeks after antibiotics, after at least two weeks off PPI/PCAB. Profile labels older combinations separately.",
+          "sourceId": "acg-hp",
+          "sourceUrl": "https://gi.org/journals-publications/ebgi/schoenfeld_sep2024/",
+          "sourceSection": "2024 official public guideline summary Results and key concepts",
+          "access": "Official complete public ACG summary opened and relevant recommendation/test-of-cure text independently read; no paywalled full guideline access claimed.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "lansorx": {
+          "path": "/tmp/nas-drug-sources/lansorx.xml",
+          "sha256": "25b11eeab5eb6d9357e71ebc874aaa81e010d7ac9d56b480c710524d9eba14b8"
+        },
+        "lansoOTC": {
+          "path": "/tmp/nas-drug-sources/lansoOTC.xml",
+          "sha256": "9ec4de481cf2a1503de83445938e7aaf4104ad74eaa443e7552c2c0db027dd0e"
+        }
+      }
+    },
+    {
+      "drug": "insulin-human-insulin-isophane-human",
+      "fileSha256": "9749cab51dbba60f58ca763a8bcc17f8db5fb35f52c7224a08f5de5e083a7c99",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Humulin fixed premix is seventy percent NPH and thirty percent regular human insulin, TOTAL U-100, ten mL vial or three mL pen. Current indication adults; individual component basal/prandial adjustment not possible. Subcutaneous only, no pump/IV, mixing or dilution. Meal interval thirty to forty-five minutes. Individualized glucose-based total units, no universal label initiation algorithm.",
+          "sourceId": "humulinmix",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e245e0c5-b2d6-418b-baa4-1c3324292885",
+          "sourceSection": "Sections 1, 2.1–2.2, 3",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Novolin current indication adults and children; same total U-100 ratio, subcutaneous only without IV/pump/mixing/dilution. Approximately thirty minutes before meals, typically twice daily each covering two meals or meal/snack; not generalized to every brand/patient. Hypoglycemia episode or product hypersensitivity contraindicated.",
+          "sourceId": "novolinmix",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=508a2763-3cb7-4be5-9e53-544e84cd9b1f",
+          "sourceSection": "Sections 1–4",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Humulin vial roll at least ten/invert at least ten; KwikPen roll ten/invert ten, prime two units, one-unit increments maximum sixty per injection, hold/count slowly five. Device limit is not a daily maximum. Uniformly cloudy inspection and single-patient safeguards retained.",
+          "sourceId": "humulinmix",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e245e0c5-b2d6-418b-baa4-1c3324292885",
+          "sourceSection": "Full vial/KwikPen IFUs, Sections 2.1, 16.1",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Novolin vial horizontal roll ten/repeat uniform. FlexPen first use twenty up/down, later at least ten per full IFU; prescribing Section 2.1 twenty movements explicitly disclosed. At least twelve units remain for mixing otherwise new pen; prime two, increments one/max sixty, needle remains at least six seconds with button depressed.",
+          "sourceId": "novolinmix",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=508a2763-3cb7-4be5-9e53-544e84cd9b1f",
+          "sourceSection": "Section 2.1 and complete vial/FlexPen IFU",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Humulin unopened refrigerated two to eight C until expiry. Vial room-temperature up to thirty C total thirty-one days including unopened time; opened may refrigerate. KwikPen room-temperature up to thirty C total ten days including unopened time, in-use no refrigeration. No frozen product use.",
+          "sourceId": "humulinmix",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e245e0c5-b2d6-418b-baa4-1c3324292885",
+          "sourceSection": "Section 16.2 storage table and footnotes",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Novolin vial room-temperature up to twenty-five C forty-two days and opened no refrigeration; FlexPen up to thirty C twenty-eight days and in-use no refrigeration. Refrigerated unopened two to eight C until expiry. Brand/device windows kept distinct.",
+          "sourceId": "novolinmix",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=508a2763-3cb7-4be5-9e53-544e84cd9b1f",
+          "sourceSection": "Section 16.2",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "humulinmix": {
+          "path": "/tmp/nas-drug-sources/humulinmix.xml",
+          "sha256": "99a6896ce0d3ab19cd5174d30e20fb2ec89603aab038c77d85125d7da9e0b8e8"
+        },
+        "novolinmix": {
+          "path": "/tmp/nas-drug-sources/novolinmix.xml",
+          "sha256": "2d8f828a4d28927c86af4382155f70f1b4b49097316b04ef9bef279aa5e33294"
+        }
+      }
+    },
+    {
+      "drug": "ketorolac",
+      "fileSha256": "5e7e20fc13a8a6d2bf08bc70db3089c921c826b2455d89629f4ea77f9d3c088a",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Oral only continues IV/IM initiation: age17–64 first20mg then10 every4–6hours maximum40/day; ageat least65, renal impairment or weightbelow50 first10 then10 every4–6 maximum40/day. Combined systemic course at most five days, route change does not restart it.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2837a082-3a34-6f81-5e43-45a70295686b",
+          "sourceSection": "Dosage and Administration",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Single adult IM60 or IV30; older/renal/under50kg IM30 or IV15. Repeated standard30 every6hours maximum120/day, restricted population15 every6 max60/day. IV bolus at least15seconds, IM slow/deep; 60mg/2mL product IM only. Correct hypovolemia, no neuraxial use.",
+          "sourceId": "injection",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8accbb78-fc64-45d5-69b0-35c23a1d2a2e",
+          "sourceSection": "Dosage and Administration, product front matter, Contraindications",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "SPRIX standard31.5mg means15.75 in EACH nostril every6–8hours max126/day; older/renal/under50kg15.75 in ONE nostril max63/day. Sequential systemic durationat mostfive days, no concurrentother ketorolac/NSAID; primefive once/no reprime, discardwithin24hours firstdose.",
+          "sourceId": "nasal",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=97005a1c-167e-4676-bae7-e49b38c36f9e",
+          "sourceSection": "Sections 2.1–2.5",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "ACULAR0.5 itchingone dropfour timesdaily; cataractinflammationonefour times starts24hours AFTER surgerythroughfirsttwo postoperativeweeks. No systemic five-day duration transplanted.",
+          "sourceId": "acular",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c94644d3-7b64-4f3d-a0c7-12c77466a0fc",
+          "sourceSection": "Sections 2.1–2.2",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "ACULAR LS0.4 refractivesurgeryone dropoperatedeyefour timesdailyas neededup tofour days.",
+          "sourceId": "ls",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4fad0873-f79c-4f07-9fac-5060be6b38fe",
+          "sourceSection": "Dosage and Administration",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "ACUVAIL0.45 cataractone droptwice daily startsone dayBEFORE surgery, surgeryday andfirsttwo postoperativeweeks; other eyedropsat leastfive minutesapart.",
+          "sourceId": "acuvail",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3cea5803-a446-4d2c-9747-f3fb034332c8",
+          "sourceSection": "Sections 2.1–2.2",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Formal systemic ulcer/historyGIbleeding, advancedrenal/volumedepletionrisk,aspirinNSAIDallergy,CABG,pre-major-surgery prophylaxis,labor,bleedingrisk,concurrentaspirinNSAID,probenecid,pentoxifylline andneuraxial restrictions retained. SPRIX separately prohibitsconcurrentNSAID in dosing section despiteotherlabelaspirin language.",
+          "sourceId": "injection",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8accbb78-fc64-45d5-69b0-35c23a1d2a2e",
+          "sourceSection": "Contraindications; SPRIX Section2.1",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "keto-oral": {
+          "path": "/tmp/nas-drug-sources/keto-oral.xml",
+          "sha256": "7d0d473d20c4ed4328042657b477a28650b6d7ebee348749c39f4dfb5200ddbd"
+        },
+        "keto-injection": {
+          "path": "/tmp/nas-drug-sources/keto-injection.xml",
+          "sha256": "c348050c2946f04d76f77ab49763bb5a8ce134433cba7c942e3e8ca47ac60599"
+        },
+        "keto-sprix": {
+          "path": "/tmp/nas-drug-sources/keto-sprix.xml",
+          "sha256": "7e80975a66a0737ee0459e8a5c5d18e74968302a5fee066cf3a7eebf15148064"
+        },
+        "keto-acular": {
+          "path": "/tmp/nas-drug-sources/keto-acular.xml",
+          "sha256": "1d4cd53d2566063cb04cf11276369728051a6740f2af060d492e55b7a12d75be"
+        },
+        "keto-ls": {
+          "path": "/tmp/nas-drug-sources/keto-ls.xml",
+          "sha256": "377a0ba3670135f39fc39de47fe9ca4c5f39656beafb058895025f8d4a72f0a0"
+        },
+        "keto-acuvail": {
+          "path": "/tmp/nas-drug-sources/keto-acuvail.xml",
+          "sha256": "94eee9c904d76d6f577ff863f910e43b2c14bcd94d011956dbed158c5f12bce3"
+        }
+      }
+    },
+    {
+      "drug": "flecainide",
+      "fileSha256": "db479d3b6c15afd98136880cb367b1e22335cb7533897493e2329abaf1bb4c39",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "PSVT/paroxysmalAF starts50mg every12hours, increases50mg twice dailyat leastfourdaysapart, maximum300/day. SustainedVT hospitalinitiation100every12, same increments,maximum400/day; no loadingdose recommended.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee9595d5-08a1-4529-9215-ddc3c7f929c4",
+          "sourceSection": "Dosage and Administration",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Severe renal label uses INDEXED CrClat most35mL/min/1.73m2: initial100once dailyor50twice, frequentlevels, waitplateaumayexceedfourdays. Less-severe renalparagraph100twice is explicitly reconciled withindication-specificstart rather than universalreplacement. Significanthepaticavoid unlessbenefitoutweighsrisk;frequentearlylevels. Amiodaronereduceusualflecainide50percent.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee9595d5-08a1-4529-9215-ddc3c7f929c4",
+          "sourceSection": "Dosage and Administration, Hepatic Impairment",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Pediatricunder6months50mg/m2 TOTALdaily dividedtwo/three,over6monthsinitial100total/max200total/day; exactsix-month boundarynotinferred. Specialist/hospital rhythm monitoring and growth/dose troughECG checks retained;milk removal mayincrease exposure.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee9595d5-08a1-4529-9215-ddc3c7f929c4",
+          "sourceSection": "Dosage and Administration, Clinical Pharmacology",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Formal second/third-degreeAVblock orRBBBwithlefthemiblock unlesssupportingpacemaker,cardiogenicshock,hypersensitivity agree. EmbeddedboxedCASTpostMI excessmortality/nonfatalarrest andchronicAFventricularproarrhythmia text correctly identified; notrepresented as universalindividualrisk.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee9595d5-08a1-4529-9215-ddc3c7f929c4",
+          "sourceSection": "Contraindications, WARNINGS ruled boxed text",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "OfficialAFguideline forbidsflecainide inpreviousMI/significantstructuraldisease includingHFrEFLVEFat most40. Eligiblemaintenance requires no priorMI/knownorsuspected significantstructuraldisease/scar/fibrosis; pill-in-pocket requiresconcomitantAVnodalblocker andprior monitoredtest.",
+          "sourceId": "guideline",
+          "sourceUrl": "https://www.acc.org/-/media/Clinical/Office-Files/PowerPoint/Approved-PowerPoint/2023/07/20/14/00/2023-Atrial-Fibrillation-Guideline-Slide-Set-gl-af.pptx",
+          "sourceSection": "Official slides155,162,164",
+          "access": "Retained original official ACC PowerPoint slides155/162/164 independently extracted and read. No full guideline PDF or paywalled access claimed.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "flecainide-amneal": {
+          "path": "/tmp/nas-drug-sources/flecainide-amneal.xml",
+          "sha256": "258f41507c436b8cea7f21c38fb5f8063ce7b755875a07a37d0e13f64827117c"
+        },
+        "guideline": {
+          "path": "/tmp/nas-drug-sources/flec-af-guideline.pptx",
+          "sha256": "fbd8f2eb0b8844d8f8ed42aeac24c215c915dbf4340697db584e81b73d6c99d4"
+        }
+      }
+    }
+  ],
+  "pending": [],
+  "limitations": []
+}

@@ -1,0 +1,1654 @@
+{
+  "drug": "promethazine",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Full relevant current selected tablet, oral solution, rectal and Phenergan injection labels plus FDA injection labeling communication; single ingredient only.",
+  "blueprint": {
+    "sections": [
+      [
+        "indications",
+        "Indications"
+      ],
+      [
+        "dosage",
+        "Dosage and administration"
+      ],
+      [
+        "safety",
+        "Safety"
+      ],
+      [
+        "interactions",
+        "Drug interactions"
+      ],
+      [
+        "populations",
+        "Use in specific populations"
+      ],
+      [
+        "pharmacology",
+        "Clinical pharmacology"
+      ],
+      [
+        "practice",
+        "Monitoring and counseling"
+      ],
+      [
+        "product",
+        "Product identification"
+      ]
+    ],
+    "essential_safety": true,
+    "hero_facts": 3,
+    "APAP_modified": false
+  },
+  "sources": [
+    {
+      "id": "tablet",
+      "title": "Promethazine tablets \u00b7 Full selected oral label",
+      "publisher": "A-S Medication Solutions / DailyMed",
+      "note": "Clinical 09/2022; SPL 8 effective October 21, 2024; published October 23, 2024.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6aa6bfcc-024b-4ee2-a586-6c4ca879cea4"
+    },
+    {
+      "id": "liquid",
+      "title": "Promethazine 6.25 mg/5 mL \u00b7 Current oral solution full label",
+      "publisher": "Chartwell / DailyMed",
+      "note": "Revised 01/2026; SPL 4 effective January 30, 2026; published February 2, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2ca17cd4-460e-4d54-8c53-a58a2b80e5cb"
+    },
+    {
+      "id": "rectal",
+      "title": "Promethazine suppositories \u00b7 Full selected label",
+      "publisher": "Camber / DailyMed",
+      "note": "Revised 07/2022; SPL 1 effective November 5, 2022; published November 7, 2022.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ba7d9e82-9b13-4607-b2f9-25e575b8c73b"
+    },
+    {
+      "id": "injection",
+      "title": "Phenergan \u00b7 Current injection full label",
+      "publisher": "Hikma / DailyMed",
+      "note": "Revised December 2023; SPL 8 effective May 20, 2024; published June 6, 2024. Adult/pediatric dilution tables separately verified.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=481866da-a712-48a5-853f-8e84aacaab6d"
+    },
+    {
+      "id": "fda",
+      "title": "FDA promethazine injection labeling update",
+      "publisher": "FDA",
+      "note": "December 27, 2023 communication reviewed. Current selected Phenergan PI has distinct adult/pediatric infusion tables; do not replace with another product\u2019s rate.",
+      "url": "https://www.fda.gov/drugs/drug-alerts-and-statements/fda-requires-updates-labeling-promethazine-hydrochloride-injection-products"
+    }
+  ],
+  "source_records": [
+    {
+      "id": "tablet",
+      "local_snapshot": "/tmp/nas-drug-sources/prometh-oral.xml",
+      "label_revision": "09/2022",
+      "set_id": "6aa6bfcc-024b-4ee2-a586-6c4ca879cea4",
+      "spl_version": "8",
+      "spl_effective_time": "20241021",
+      "dailymed_published_date": "2024-10-23",
+      "sha256": "1be67354975578edac4e31dd49b9ec2ce61f358124f74ac826f69100318015ed",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-21-thyroid-metformin/prometh-oral.xml"
+    },
+    {
+      "id": "liquid",
+      "local_snapshot": "/tmp/nas-drug-sources/prometh-liquid.xml",
+      "label_revision": "01/2026",
+      "set_id": "2ca17cd4-460e-4d54-8c53-a58a2b80e5cb",
+      "spl_version": "4",
+      "spl_effective_time": "20260130",
+      "dailymed_published_date": "2026-02-02",
+      "sha256": "083674ff0d81f0879fd62abf240daed9b642c3c0040b379a6a23196f1fe2450a",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-21-thyroid-metformin/prometh-liquid.xml"
+    },
+    {
+      "id": "rectal",
+      "local_snapshot": "/tmp/nas-drug-sources/prometh-rectal.xml",
+      "label_revision": "07/2022",
+      "set_id": "ba7d9e82-9b13-4607-b2f9-25e575b8c73b",
+      "spl_version": "1",
+      "spl_effective_time": "20221105",
+      "dailymed_published_date": "2022-11-07",
+      "sha256": "47269438ee471d6d9da7d8d2365a36a4c5deda9b8cda9110e2050107d65bfe16",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-21-thyroid-metformin/prometh-rectal.xml"
+    },
+    {
+      "id": "injection",
+      "local_snapshot": "/tmp/nas-drug-sources/prometh-inj.xml",
+      "label_revision": "December2023",
+      "set_id": "481866da-a712-48a5-853f-8e84aacaab6d",
+      "spl_version": "8",
+      "spl_effective_time": "20240520",
+      "dailymed_published_date": "2024-06-06",
+      "sha256": "dacccf6673cf58652022b1b926dd4d4cb4cfb1f4feed74e19fcdd83ed9e82b9d",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-21-thyroid-metformin/prometh-inj.xml"
+    },
+    {
+      "id": "fda",
+      "local_snapshot": "/tmp/nas-drug-sources/prometh-fda.html",
+      "revision": "2023-12-27",
+      "url": "https://www.fda.gov/drugs/drug-alerts-and-statements/fda-requires-updates-labeling-promethazine-hydrochloride-injection-products",
+      "sha256": "03a3c869af97fb4870dd82a5bf0bbc9a23c2d215b69350f979666d83ffe74da8",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-21-thyroid-metformin/prometh-fda.html"
+    }
+  ],
+  "assertion_map": [
+    {
+      "section": "indications",
+      "card": "Oral labeled uses",
+      "assertions": [
+        "Selected oral labels include allergic rhinitis/conjunctivitis, uncomplicated urticaria/angioedema and dermographism; selected transfusion reactions; active/preventive motion sickness; perioperative nausea/vomiting and sedation; and adjunctive postoperative analgesic use. Anaphylaxis use is adjunctive to epinephrine/standard measures after acute symptoms are controlled. Single-ingredient promethazine is not automatically a cough-combination or asthma treatment."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "INDICATIONS AND USAGE; CONTRAINDICATIONS"
+        },
+        {
+          "id": "liquid",
+          "sections": "INDICATIONS AND USAGE; CONTRAINDICATIONS"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Rectal and parenteral scope",
+      "assertions": [
+        "Rectal suppositories provide a separate administration option within their label. Injection is used for selected allergic conditions when oral therapy is not feasible, perioperative/obstetric sedation and nausea/vomiting, postoperative analgesic adjunct and active motion sickness. Hospital parenteral indications do not establish routine home IV administration or oral chronic-insomnia treatment. Reviewed products are prescription NDA/ANDA drugs; no controlled-substance status is inferred from combination products."
+      ],
+      "sources": [
+        {
+          "id": "rectal",
+          "sections": "Indications; DOSAGE; marketing"
+        },
+        {
+          "id": "injection",
+          "sections": "INDICATIONS AND USAGE; marketing"
+        },
+        {
+          "id": "tablet",
+          "sections": "marketing"
+        },
+        {
+          "id": "liquid",
+          "sections": "marketing"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Adult oral regimens",
+      "assertions": [
+        "Allergy: a usual example is 25 mg at bedtime; alternatives include 12.5 mg before meals/bedtime or 6.25\u201312.5 mg three times daily, individualized. Motion sickness: 25 mg twice daily, first dose 30\u201360 minutes before travel, repeat 8\u201312 hours later if needed. Nausea/vomiting: usual 25 mg; 12.5\u201325 mg may repeat every 4\u20136 hours as needed. Adult nighttime/presurgical/obstetric sedation examples are 25\u201350 mg; use only under an appropriate clinical plan, not routine OTC sleep treatment. Perioperative combinations require reduced companion-depressant doses."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "DOSAGE AND ADMINISTRATION, Allergy/Motion sickness/Nausea/Sedation/Pre-postoperative"
+        },
+        {
+          "id": "liquid",
+          "sections": "DOSAGE AND ADMINISTRATION, Allergy/Motion sickness/Nausea/Sedation/Pre-postoperative"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Adult oral purpose",
+          "Selected label example"
+        ],
+        "rows": [
+          [
+            "Allergy",
+            "25 mg at bedtime; alternatives individualized"
+          ],
+          [
+            "Motion sickness",
+            "25 mg twice daily; initial 30\u201360 minutes before travel"
+          ],
+          [
+            "Nausea/vomiting",
+            "12.5\u201325 mg every 4\u20136 hours as needed"
+          ],
+          [
+            "Sedation",
+            "25\u201350 mg under prescribed clinical plan"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Oral solution and rectal distinctions",
+      "assertions": [
+        "Selected oral liquid is 6.25 mg/5 mL (1.25 mg/mL): 6.25 mg = 5 mL, 12.5 mg = 10 mL, 25 mg = 20 mL. Measure with a calibrated oral device; do not inject. Selected rectal suppositories are 12.5 or 25 mg and are for rectal use only. Their label gives adult motion-sickness 25 mg twice daily and nausea/vomiting 12.5\u201325 mg every 4\u20136 hours as needed. The suppository label\u2019s allergy paragraph says \u201coral dose\u201d; do not turn that route mismatch into an inferred rectal allergy regimen or advise swallowing a suppository."
+      ],
+      "sources": [
+        {
+          "id": "liquid",
+          "sections": "DESCRIPTION; DOSAGE"
+        },
+        {
+          "id": "rectal",
+          "sections": "DESCRIPTION; DOSAGE, Motion sickness/Nausea/Allergy"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric limits and label examples",
+      "assertions": [
+        "Under two years is contraindicated at every reviewed route; weight-based dosing does not eliminate fatal respiratory risk. At age two or older use the lowest effective dose, avoid concurrent respiratory depressants and do not treat uncomplicated/unknown-cause vomiting. Oral/rectal labels give selected motion-sickness 12.5\u201325 mg twice daily and nausea/vomiting 0.5 mg per pound, individualized by age/weight/illness; these are not a universal self-treatment schedule. Injection label says no more than half the suggested adult dose and gives a premedication example 1.1 mg/kg with clinician-managed reduced companions. No pediatric home sedation or automatic repeat-frequency/max algorithm is inferred."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "WARNINGS Use in Pediatric Patients; DOSAGE"
+        },
+        {
+          "id": "liquid",
+          "sections": "BOXED WARNING; Pediatric warnings; DOSAGE"
+        },
+        {
+          "id": "rectal",
+          "sections": "WARNINGS; DOSAGE"
+        },
+        {
+          "id": "injection",
+          "sections": "Respiratory Depression; DOSAGE Pediatric Patients"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Adult injection doses and labor limit",
+      "assertions": [
+        "Deep IM is preferred. Selected injection adult examples: allergy 25 mg, repeat within two hours if needed then move to oral treatment as feasible; nausea/vomiting 12.5\u201325 mg no more frequently than every four hours; hospital sedation 25\u201350 mg. Pre/postoperative 25\u201350 mg requires reduced companion depressants. Labor-specific label permits 25\u201375 mg with reduced analgesic as appropriate, with MAXIMUM 100 mg/24 hours for patients in labor. This labor ceiling is not a universal maximum for every route or indication."
+      ],
+      "sources": [
+        {
+          "id": "injection",
+          "sections": "DOSAGE, Allergic Conditions/Sedation/Nausea/Pre-postoperative/Obstetrics"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "IV restrictions and adult preparation",
+      "assertions": [
+        "IV use requires dilution in 0.9% sodium chloride ONLY and infusion via a patent catheter in a large vein, preferably central; do not use hand/wrist veins, mix with other drugs or give an undiluted IV push. Concentrations above 1 mg/mL, intra-arterial and subcutaneous administration are contraindicated. The selected current adult Phenergan table specifies 12.5, 25 or 50 mg in 50 mL at at most 2.5 mL/min, and 75 mg in 100 mL at at most 5 mL/min; infuse over 20\u201340 minutes. The 1 mg/mL figure is a ceiling, not the target concentration for every dose. Stop immediately for site pain and evaluate arterial injection/extravasation."
+      ],
+      "sources": [
+        {
+          "id": "injection",
+          "sections": "BOXED WARNING; CONTRAINDICATIONS; DOSAGE, adult Preparation/Table1"
+        },
+        {
+          "id": "fda",
+          "sections": "Dilution/route safety"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Selected adult IV dose",
+          "0.9% saline volume / maximum rate"
+        ],
+        "rows": [
+          [
+            "12.5, 25 or 50 mg",
+            "50 mL /2.5 mL per minute"
+          ],
+          [
+            "75 mg",
+            "100 mL /5 mL per minute"
+          ],
+          [
+            "Concentration ceiling",
+            "1 mg/mL; no hand/wrist catheter"
+          ],
+          [
+            "Timing / pain",
+            "Infuse 20\u201340 minutes; stop immediately if site pain"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric IV preparation and stability",
+      "assertions": [
+        "For eligible patients age two and older, determine the clinical dose first. Selected Phenergan pediatric table uses up to 25 mg in 25 mL saline, or 25\u201350 mg in 50 mL; maximum 1 mg/mL and 1.25 mL/min. The overlapping 25 mg table wording is not permission to use the higher concentration or a faster adult rate. Use the required large-vein access, close observation and product/hospital protocol. Selected diluted solution may be stored up to four hours at 20\u201325\u00b0C or 24 hours refrigerated 2\u20138\u00b0C. Confirm actual product instructions; another manufacturer\u2019s rate is not automatically interchangeable."
+      ],
+      "sources": [
+        {
+          "id": "injection",
+          "sections": "DOSAGE Pediatric Patients; pediatric Preparation/Table2; diluted stability"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Avoid treatment with compromised respiration such as COPD or sleep apnea because potentially fatal respiratory depression can occur. Children age two and older remain vulnerable; avoid other respiratory depressants and unexplained vomiting/possible Reye syndrome. Sedation, impaired driving and paradoxical excitation can occur. Use caution with seizure disorders, bone-marrow suppression, cardiovascular/liver disease, narrow-angle glaucoma and urinary/GI obstruction.",
+        "Injection can cause necrosis/gangrene regardless of parenteral route and has required surgery/amputation. Deep IM is preferred; restricted diluted IV administration does not remove risk. Immediately stop for IV-site pain/burning and evaluate. Neuroleptic malignant syndrome, serious extrapyramidal reactions, blood-cell disorders and cholestatic jaundice require urgent assessment; injection contains sulfite with allergy/asthma risk in susceptible patients."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "WARNINGS; PRECAUTIONS; injection BOXED WARNING/Severe Tissue Injury/Sulfite"
+        },
+        {
+          "id": "liquid",
+          "sections": "WARNINGS; PRECAUTIONS; injection BOXED WARNING/Severe Tissue Injury/Sulfite"
+        },
+        {
+          "id": "rectal",
+          "sections": "WARNINGS; PRECAUTIONS; injection BOXED WARNING/Severe Tissue Injury/Sulfite"
+        },
+        {
+          "id": "injection",
+          "sections": "WARNINGS; PRECAUTIONS; injection BOXED WARNING/Severe Tissue Injury/Sulfite"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "All reviewed routes contraindicate age under two, coma and hypersensitivity/idiosyncratic reaction to promethazine or other phenothiazines. Oral/rectal labels also prohibit antihistamine treatment of lower-respiratory symptoms including asthma. Injection additionally prohibits IV concentration above 1 mg/mL, intra-arterial and subcutaneous routes. Distinguish treating asthma symptoms from the broader precaution to avoid use in respiratory compromise."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "CONTRAINDICATIONS"
+        },
+        {
+          "id": "liquid",
+          "sections": "CONTRAINDICATIONS"
+        },
+        {
+          "id": "rectal",
+          "sections": "Contraindications"
+        },
+        {
+          "id": "injection",
+          "sections": "CONTRAINDICATIONS"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "Oral tablets, solution and rectal suppositories carry the pediatric fatal-respiratory-depression boxed warning: do not use under two, and exercise caution above that age. Injection\u2019s box additionally warns about severe tissue injury/gangrene and specifies route/concentration restrictions. Neither a calculated mg/kg dose nor a diluted IV preparation guarantees safety."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "Boxed warning"
+        },
+        {
+          "id": "liquid",
+          "sections": "BOXED WARNING"
+        },
+        {
+          "id": "rectal",
+          "sections": "Boxed warning"
+        },
+        {
+          "id": "injection",
+          "sections": "BOXED WARNING"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Drowsiness is prominent; other effects include dizziness, blurred vision, dry mouth, confusion, BP/pulse changes and photosensitivity. Extrapyramidal symptoms or paradoxical agitation/hallucinations can occur, including in children. Serious reports include respiratory depression/apnea, NMS, blood-cell disorders, jaundice and hypersensitivity; injections add local vascular/nerve damage, thrombosis, necrosis and gangrene. No common incidence is extrapolated across all routes."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "ADVERSE REACTIONS; WARNINGS"
+        },
+        {
+          "id": "liquid",
+          "sections": "ADVERSE REACTIONS; WARNINGS"
+        },
+        {
+          "id": "rectal",
+          "sections": "ADVERSE REACTIONS; WARNINGS"
+        },
+        {
+          "id": "injection",
+          "sections": "ADVERSE REACTIONS; WARNINGS"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "CNS depressants",
+      "assertions": [
+        "Avoid or clinically reduce interacting alcohol, opioids, barbiturates, anesthetics and other sedatives. Labels specify that clinician-managed barbiturate doses may need at least half reduction and opioids one-quarter to one-half reduction, individualized. Those historical label proportions are not a safe self-adjustment algorithm; children should avoid concomitant respiratory depressants."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "Drug Interactions, CNS Depressants; pediatric warning"
+        },
+        {
+          "id": "liquid",
+          "sections": "Drug Interactions, CNS Depressants; pediatric warning"
+        },
+        {
+          "id": "rectal",
+          "sections": "Drug Interactions, CNS Depressants; pediatric warning"
+        },
+        {
+          "id": "injection",
+          "sections": "Drug Interactions, CNS Depressants; pediatric warning"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Anticholinergics and MAO inhibitors",
+      "assertions": [
+        "Other anticholinergic drugs add risks in susceptible glaucoma/urinary or GI-obstruction patients. MAO-inhibitor/phenothiazine combinations have reported increased extrapyramidal effects and need clinical review. Do not invent a universal MAOI washout or assume a routine antiemetic is harmless with all psychiatric drugs."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "Drug Interactions; General precautions"
+        },
+        {
+          "id": "liquid",
+          "sections": "Drug Interactions; General precautions"
+        },
+        {
+          "id": "rectal",
+          "sections": "Drug Interactions; General precautions"
+        },
+        {
+          "id": "injection",
+          "sections": "Drug Interactions; General precautions"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Epinephrine and laboratory effects",
+      "assertions": [
+        "Do not use epinephrine to treat hypotension from promethazine overdose because its vasopressor effect may reverse; this is distinct from epinephrine\u2019s standard role in anaphylaxis, where promethazine is only adjunctive afterward. Some immunologic pregnancy tests may be falsely positive/negative and glucose-tolerance results may change; inform the testing team."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "Drug Interactions Epinephrine; Laboratory Tests; INDICATIONS; Overdose treatment"
+        },
+        {
+          "id": "liquid",
+          "sections": "Drug Interactions Epinephrine; Laboratory Tests; INDICATIONS; Overdose treatment"
+        },
+        {
+          "id": "rectal",
+          "sections": "Drug Interactions Epinephrine; Laboratory Tests; INDICATIONS; Overdose treatment"
+        },
+        {
+          "id": "injection",
+          "sections": "Drug Interactions Epinephrine; Laboratory Tests; INDICATIONS; Overdose treatment"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and older patients",
+      "assertions": [
+        "Never use under two. Above that age, lowest effective doses and careful respiratory assessment remain necessary; dehydration can increase dystonia susceptibility, and unexplained vomiting can conceal serious disease. Older patients can develop confusion/oversedation and should generally start at lower doses with close observation, considering organ function and other drugs. Age alone does not establish a universally safe schedule."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "Pediatric warnings/use; Geriatric Use"
+        },
+        {
+          "id": "liquid",
+          "sections": "Pediatric warnings/use; Geriatric Use"
+        },
+        {
+          "id": "rectal",
+          "sections": "Pediatric warnings/use; Geriatric Use"
+        },
+        {
+          "id": "injection",
+          "sections": "Pediatric warnings/use; Geriatric Use"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal, hepatic and respiratory disease",
+      "assertions": [
+        "Use cautiously with liver dysfunction and cardiovascular disease; consider renal/hepatic/cardiac reserve and polypharmacy in older adults. No numerical eGFR/Child-Pugh adjustment or dialysis supplement appears in these selected labels. Avoid compromised respiratory function such as COPD/sleep apnea; absence of a renal table does not remove respiratory or sedation risk."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "General precautions; Geriatric Use; Respiratory Depression"
+        },
+        {
+          "id": "liquid",
+          "sections": "General precautions; Geriatric Use; Respiratory Depression"
+        },
+        {
+          "id": "rectal",
+          "sections": "General precautions; Geriatric Use; Respiratory Depression"
+        },
+        {
+          "id": "injection",
+          "sections": "General precautions; Geriatric Use; Respiratory Depression"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and labor",
+      "assertions": [
+        "Controlled pregnancy data are inadequate; use only when expected benefit justifies fetal risk. Old pregnancy letter-category wording is not proof of safety. Exposure within two weeks of delivery may inhibit newborn platelet aggregation. Labeled obstetric use requires specialist-managed doses and reduced companion analgesic/depressant exposure, not routine home treatment; long-term infant development effects are unknown."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "Pregnancy; Nonteratogenic Effects; Labor and Delivery; Obstetrics dosage"
+        },
+        {
+          "id": "liquid",
+          "sections": "Pregnancy; Nonteratogenic Effects; Labor and Delivery; Obstetrics dosage"
+        },
+        {
+          "id": "rectal",
+          "sections": "Pregnancy; Nonteratogenic Effects; Labor and Delivery; Obstetrics dosage"
+        },
+        {
+          "id": "injection",
+          "sections": "Pregnancy; Nonteratogenic Effects; Labor and Delivery; Obstetrics dosage"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Breastfeeding",
+      "assertions": [
+        "Selected labels state milk excretion is unknown and advise deciding between drug/feeding discontinuation based on maternal treatment importance because serious infant reactions are possible. This focused label-based profile does not establish lactation compatibility, infant dose or a universal pump-and-discard interval; discuss alternatives and the actual maternal/infant circumstances."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "Nursing Mothers"
+        },
+        {
+          "id": "liquid",
+          "sections": "Nursing Mothers"
+        },
+        {
+          "id": "rectal",
+          "sections": "Nursing Mothers"
+        },
+        {
+          "id": "injection",
+          "sections": "Nursing Mothers"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "assertions": [
+        "Promethazine is a phenothiazine H1 antagonist with anticholinergic and sedating effects; dopamine-antagonist activity is weaker than typical antipsychotic phenothiazines. It does not prevent histamine release or replace emergency anaphylaxis treatment. Mechanism alone does not establish an asthma, cough-combination or long-term psychiatric indication."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "CLINICAL PHARMACOLOGY; INDICATIONS"
+        },
+        {
+          "id": "liquid",
+          "sections": "CLINICAL PHARMACOLOGY; INDICATIONS"
+        },
+        {
+          "id": "rectal",
+          "sections": "CLINICAL PHARMACOLOGY; INDICATIONS"
+        },
+        {
+          "id": "injection",
+          "sections": "CLINICAL PHARMACOLOGY; INDICATIONS"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Onset and disposition",
+      "assertions": [
+        "Oral effects generally appear around 20 minutes and last 4\u20136 hours, sometimes 12. Injection label describes effects within about five minutes IV and 20 minutes IM; this is not permission for rapid undiluted IV push. It is metabolized in the liver, with sulfoxide/N-demethyl metabolites appearing in urine; IV half-life in healthy volunteers was 9\u201316 hours. A clinical effect lasting fewer hours does not justify faster redosing or prove complete clearance."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "liquid",
+          "sections": "CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "injection",
+          "sections": "CLINICAL PHARMACOLOGY; DOSAGE"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Route evidence limits",
+      "assertions": [
+        "Rectal dose availability does not establish equal absorption to oral/IV in every patient. The selected suppository clinical-pharmacology text largely repeats oral information; no precise rectal bioavailability/half-life is inferred. Oral solution\u2019s 1.25 mg/mL drug concentration differs from the maximum 1 mg/mL diluted IV restriction; oral excipients make it unsuitable for injection."
+      ],
+      "sources": [
+        {
+          "id": "rectal",
+          "sections": "CLINICAL PHARMACOLOGY; DESCRIPTION"
+        },
+        {
+          "id": "liquid",
+          "sections": "DESCRIPTION"
+        },
+        {
+          "id": "injection",
+          "sections": "CONTRAINDICATIONS; DOSAGE"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": [
+        "Assess alertness, breathing, BP, seizure history, anticholinergic vulnerability, liver/cardiac disease and all depressant drugs. Monitor therapeutic response, excess sedation, involuntary movements, fever/rigidity and breathing difficulty. Injection requires inspection, patent appropriate access, continuous clinical vigilance for tissue injury and strict preparation/rate checks. No universal routine laboratory interval is invented."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "WARNINGS; PRECAUTIONS; DOSAGE"
+        },
+        {
+          "id": "liquid",
+          "sections": "WARNINGS; PRECAUTIONS; DOSAGE"
+        },
+        {
+          "id": "rectal",
+          "sections": "WARNINGS; PRECAUTIONS; DOSAGE"
+        },
+        {
+          "id": "injection",
+          "sections": "WARNINGS; PRECAUTIONS; DOSAGE"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling and urgent symptoms",
+      "assertions": [
+        "Avoid alcohol and driving/hazardous activity until effects are known. Do not share, independently combine with opioids/sedatives or use for unknown-cause child vomiting. Breathing difficulty, unresponsiveness, severe abnormal movements or fever/rigidity needs urgent care. Report injection-site burning/pain immediately; do not wait for visible necrosis. Photosensitivity counseling includes avoiding prolonged sun exposure."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "Information for Patients; WARNINGS; ADVERSE REACTIONS"
+        },
+        {
+          "id": "liquid",
+          "sections": "Information for Patients; WARNINGS; ADVERSE REACTIONS"
+        },
+        {
+          "id": "rectal",
+          "sections": "Information for Patients; WARNINGS; ADVERSE REACTIONS"
+        },
+        {
+          "id": "injection",
+          "sections": "Information for Patients; WARNINGS; ADVERSE REACTIONS"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Measurement and route checks",
+      "assertions": [
+        "For liquid, confirm 6.25 mg/5 mL and prescribed mL using a calibrated device. Suppositories are rectal only and selected storage is refrigerated. Injectable 25/50 mg/mL stock is NOT ready for IV infusion and must follow the exact manufacturer preparation. Inspect for color/particles and discard abnormal solution; institutional administration safeguards are essential."
+      ],
+      "sources": [
+        {
+          "id": "liquid",
+          "sections": "DESCRIPTION; HOW SUPPLIED"
+        },
+        {
+          "id": "rectal",
+          "sections": "DESCRIPTION; HOW SUPPLIED"
+        },
+        {
+          "id": "injection",
+          "sections": "Visual Inspection; DOSAGE; Storage"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Selected Chartwell oral solution is green cherry-scented 6.25 mg/5 mL; 120 mL bottle NDC 62135-774-41, contains 7% alcohol and sucrose. Selected Camber 25 mg rectal suppository is white/off-white bullet-shaped, 12-count NDC 31722-041-31. Selected Phenergan 25 mg/mL stock is a clear colorless 1 mL vial; 25-count NDC 0641-6084-25. Appearance/NDC is manufacturer-specific and does not authenticate an unknown product."
+      ],
+      "sources": [
+        {
+          "id": "liquid",
+          "sections": "DESCRIPTION; HOW SUPPLIED; package"
+        },
+        {
+          "id": "rectal",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "injection",
+          "sections": "DESCRIPTION; HOW SUPPLIED"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Reviewed oral tablet labeling includes 12.5/25/50 mg promethazine hydrochloride strengths; selected repackaged tablet is 25 mg. Oral solution is 6.25 mg/5 mL. Selected rectal suppositories are 12.5/25 mg. Injection stock is 25 or 50 mg/mL, requiring dilution for permitted IV use. Promethazine-codeine, promethazine-DM and other combinations have separate ingredients/labels and are outside this profile."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "DESCRIPTION; product ingredient"
+        },
+        {
+          "id": "liquid",
+          "sections": "DESCRIPTION"
+        },
+        {
+          "id": "rectal",
+          "sections": "DESCRIPTION"
+        },
+        {
+          "id": "injection",
+          "sections": "DESCRIPTION; HOW SUPPLIED"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Selected oral solution: 20\u201325\u00b0C, tightly closed, protected from light; dispense in a tight light-resistant container. Selected rectal suppositories: refrigerate 2\u20138\u00b0C in a well-closed container. Phenergan injection: 20\u201325\u00b0C, protect from light in carton until use; reject discoloration/particles and follow diluted-solution limits separately. Tablet storage must follow the actual dispensed package; the selected repackaged text does not provide a complete manufacturer-specific storage statement. Keep every form away from children."
+      ],
+      "sources": [
+        {
+          "id": "liquid",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "rectal",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "injection",
+          "sections": "Storage; DOSAGE diluted stability"
+        },
+        {
+          "id": "tablet",
+          "sections": "HOW SUPPLIED; retained label scope"
+        }
+      ]
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Oral labeled uses",
+      "assertions": [
+        "Selected oral labels include allergic rhinitis/conjunctivitis, uncomplicated urticaria/angioedema and dermographism; selected transfusion reactions; active/preventive motion sickness; perioperative nausea/vomiting and sedation; and adjunctive postoperative analgesic use. Anaphylaxis use is adjunctive to epinephrine/standard measures after acute symptoms are controlled. Single-ingredient promethazine is not automatically a cough-combination or asthma treatment."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "INDICATIONS AND USAGE; CONTRAINDICATIONS"
+        },
+        {
+          "id": "liquid",
+          "sections": "INDICATIONS AND USAGE; CONTRAINDICATIONS"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Rectal and parenteral scope",
+      "assertions": [
+        "Rectal suppositories provide a separate administration option within their label. Injection is used for selected allergic conditions when oral therapy is not feasible, perioperative/obstetric sedation and nausea/vomiting, postoperative analgesic adjunct and active motion sickness. Hospital parenteral indications do not establish routine home IV administration or oral chronic-insomnia treatment. Reviewed products are prescription NDA/ANDA drugs; no controlled-substance status is inferred from combination products."
+      ],
+      "sources": [
+        {
+          "id": "rectal",
+          "sections": "Indications; DOSAGE; marketing"
+        },
+        {
+          "id": "injection",
+          "sections": "INDICATIONS AND USAGE; marketing"
+        },
+        {
+          "id": "tablet",
+          "sections": "marketing"
+        },
+        {
+          "id": "liquid",
+          "sections": "marketing"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Adult oral regimens",
+      "assertions": [
+        "Allergy: a usual example is 25 mg at bedtime; alternatives include 12.5 mg before meals/bedtime or 6.25\u201312.5 mg three times daily, individualized. Motion sickness: 25 mg twice daily, first dose 30\u201360 minutes before travel, repeat 8\u201312 hours later if needed. Nausea/vomiting: usual 25 mg; 12.5\u201325 mg may repeat every 4\u20136 hours as needed. Adult nighttime/presurgical/obstetric sedation examples are 25\u201350 mg; use only under an appropriate clinical plan, not routine OTC sleep treatment. Perioperative combinations require reduced companion-depressant doses."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "DOSAGE AND ADMINISTRATION, Allergy/Motion sickness/Nausea/Sedation/Pre-postoperative"
+        },
+        {
+          "id": "liquid",
+          "sections": "DOSAGE AND ADMINISTRATION, Allergy/Motion sickness/Nausea/Sedation/Pre-postoperative"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Adult oral purpose",
+          "Selected label example"
+        ],
+        "rows": [
+          [
+            "Allergy",
+            "25 mg at bedtime; alternatives individualized"
+          ],
+          [
+            "Motion sickness",
+            "25 mg twice daily; initial 30\u201360 minutes before travel"
+          ],
+          [
+            "Nausea/vomiting",
+            "12.5\u201325 mg every 4\u20136 hours as needed"
+          ],
+          [
+            "Sedation",
+            "25\u201350 mg under prescribed clinical plan"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Oral solution and rectal distinctions",
+      "assertions": [
+        "Selected oral liquid is 6.25 mg/5 mL (1.25 mg/mL): 6.25 mg = 5 mL, 12.5 mg = 10 mL, 25 mg = 20 mL. Measure with a calibrated oral device; do not inject. Selected rectal suppositories are 12.5 or 25 mg and are for rectal use only. Their label gives adult motion-sickness 25 mg twice daily and nausea/vomiting 12.5\u201325 mg every 4\u20136 hours as needed. The suppository label\u2019s allergy paragraph says \u201coral dose\u201d; do not turn that route mismatch into an inferred rectal allergy regimen or advise swallowing a suppository."
+      ],
+      "sources": [
+        {
+          "id": "liquid",
+          "sections": "DESCRIPTION; DOSAGE"
+        },
+        {
+          "id": "rectal",
+          "sections": "DESCRIPTION; DOSAGE, Motion sickness/Nausea/Allergy"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric limits and label examples",
+      "assertions": [
+        "Under two years is contraindicated at every reviewed route; weight-based dosing does not eliminate fatal respiratory risk. At age two or older use the lowest effective dose, avoid concurrent respiratory depressants and do not treat uncomplicated/unknown-cause vomiting. Oral/rectal labels give selected motion-sickness 12.5\u201325 mg twice daily and nausea/vomiting 0.5 mg per pound, individualized by age/weight/illness; these are not a universal self-treatment schedule. Injection label says no more than half the suggested adult dose and gives a premedication example 1.1 mg/kg with clinician-managed reduced companions. No pediatric home sedation or automatic repeat-frequency/max algorithm is inferred."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "WARNINGS Use in Pediatric Patients; DOSAGE"
+        },
+        {
+          "id": "liquid",
+          "sections": "BOXED WARNING; Pediatric warnings; DOSAGE"
+        },
+        {
+          "id": "rectal",
+          "sections": "WARNINGS; DOSAGE"
+        },
+        {
+          "id": "injection",
+          "sections": "Respiratory Depression; DOSAGE Pediatric Patients"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Adult injection doses and labor limit",
+      "assertions": [
+        "Deep IM is preferred. Selected injection adult examples: allergy 25 mg, repeat within two hours if needed then move to oral treatment as feasible; nausea/vomiting 12.5\u201325 mg no more frequently than every four hours; hospital sedation 25\u201350 mg. Pre/postoperative 25\u201350 mg requires reduced companion depressants. Labor-specific label permits 25\u201375 mg with reduced analgesic as appropriate, with MAXIMUM 100 mg/24 hours for patients in labor. This labor ceiling is not a universal maximum for every route or indication."
+      ],
+      "sources": [
+        {
+          "id": "injection",
+          "sections": "DOSAGE, Allergic Conditions/Sedation/Nausea/Pre-postoperative/Obstetrics"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "IV restrictions and adult preparation",
+      "assertions": [
+        "IV use requires dilution in 0.9% sodium chloride ONLY and infusion via a patent catheter in a large vein, preferably central; do not use hand/wrist veins, mix with other drugs or give an undiluted IV push. Concentrations above 1 mg/mL, intra-arterial and subcutaneous administration are contraindicated. The selected current adult Phenergan table specifies 12.5, 25 or 50 mg in 50 mL at at most 2.5 mL/min, and 75 mg in 100 mL at at most 5 mL/min; infuse over 20\u201340 minutes. The 1 mg/mL figure is a ceiling, not the target concentration for every dose. Stop immediately for site pain and evaluate arterial injection/extravasation."
+      ],
+      "sources": [
+        {
+          "id": "injection",
+          "sections": "BOXED WARNING; CONTRAINDICATIONS; DOSAGE, adult Preparation/Table1"
+        },
+        {
+          "id": "fda",
+          "sections": "Dilution/route safety"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Selected adult IV dose",
+          "0.9% saline volume / maximum rate"
+        ],
+        "rows": [
+          [
+            "12.5, 25 or 50 mg",
+            "50 mL /2.5 mL per minute"
+          ],
+          [
+            "75 mg",
+            "100 mL /5 mL per minute"
+          ],
+          [
+            "Concentration ceiling",
+            "1 mg/mL; no hand/wrist catheter"
+          ],
+          [
+            "Timing / pain",
+            "Infuse 20\u201340 minutes; stop immediately if site pain"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric IV preparation and stability",
+      "assertions": [
+        "For eligible patients age two and older, determine the clinical dose first. Selected Phenergan pediatric table uses up to 25 mg in 25 mL saline, or 25\u201350 mg in 50 mL; maximum 1 mg/mL and 1.25 mL/min. The overlapping 25 mg table wording is not permission to use the higher concentration or a faster adult rate. Use the required large-vein access, close observation and product/hospital protocol. Selected diluted solution may be stored up to four hours at 20\u201325\u00b0C or 24 hours refrigerated 2\u20138\u00b0C. Confirm actual product instructions; another manufacturer\u2019s rate is not automatically interchangeable."
+      ],
+      "sources": [
+        {
+          "id": "injection",
+          "sections": "DOSAGE Pediatric Patients; pediatric Preparation/Table2; diluted stability"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Avoid treatment with compromised respiration such as COPD or sleep apnea because potentially fatal respiratory depression can occur. Children age two and older remain vulnerable; avoid other respiratory depressants and unexplained vomiting/possible Reye syndrome. Sedation, impaired driving and paradoxical excitation can occur. Use caution with seizure disorders, bone-marrow suppression, cardiovascular/liver disease, narrow-angle glaucoma and urinary/GI obstruction.",
+        "Injection can cause necrosis/gangrene regardless of parenteral route and has required surgery/amputation. Deep IM is preferred; restricted diluted IV administration does not remove risk. Immediately stop for IV-site pain/burning and evaluate. Neuroleptic malignant syndrome, serious extrapyramidal reactions, blood-cell disorders and cholestatic jaundice require urgent assessment; injection contains sulfite with allergy/asthma risk in susceptible patients."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "WARNINGS; PRECAUTIONS; injection BOXED WARNING/Severe Tissue Injury/Sulfite"
+        },
+        {
+          "id": "liquid",
+          "sections": "WARNINGS; PRECAUTIONS; injection BOXED WARNING/Severe Tissue Injury/Sulfite"
+        },
+        {
+          "id": "rectal",
+          "sections": "WARNINGS; PRECAUTIONS; injection BOXED WARNING/Severe Tissue Injury/Sulfite"
+        },
+        {
+          "id": "injection",
+          "sections": "WARNINGS; PRECAUTIONS; injection BOXED WARNING/Severe Tissue Injury/Sulfite"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "All reviewed routes contraindicate age under two, coma and hypersensitivity/idiosyncratic reaction to promethazine or other phenothiazines. Oral/rectal labels also prohibit antihistamine treatment of lower-respiratory symptoms including asthma. Injection additionally prohibits IV concentration above 1 mg/mL, intra-arterial and subcutaneous routes. Distinguish treating asthma symptoms from the broader precaution to avoid use in respiratory compromise."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "CONTRAINDICATIONS"
+        },
+        {
+          "id": "liquid",
+          "sections": "CONTRAINDICATIONS"
+        },
+        {
+          "id": "rectal",
+          "sections": "Contraindications"
+        },
+        {
+          "id": "injection",
+          "sections": "CONTRAINDICATIONS"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "Oral tablets, solution and rectal suppositories carry the pediatric fatal-respiratory-depression boxed warning: do not use under two, and exercise caution above that age. Injection\u2019s box additionally warns about severe tissue injury/gangrene and specifies route/concentration restrictions. Neither a calculated mg/kg dose nor a diluted IV preparation guarantees safety."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "Boxed warning"
+        },
+        {
+          "id": "liquid",
+          "sections": "BOXED WARNING"
+        },
+        {
+          "id": "rectal",
+          "sections": "Boxed warning"
+        },
+        {
+          "id": "injection",
+          "sections": "BOXED WARNING"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Drowsiness is prominent; other effects include dizziness, blurred vision, dry mouth, confusion, BP/pulse changes and photosensitivity. Extrapyramidal symptoms or paradoxical agitation/hallucinations can occur, including in children. Serious reports include respiratory depression/apnea, NMS, blood-cell disorders, jaundice and hypersensitivity; injections add local vascular/nerve damage, thrombosis, necrosis and gangrene. No common incidence is extrapolated across all routes."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "ADVERSE REACTIONS; WARNINGS"
+        },
+        {
+          "id": "liquid",
+          "sections": "ADVERSE REACTIONS; WARNINGS"
+        },
+        {
+          "id": "rectal",
+          "sections": "ADVERSE REACTIONS; WARNINGS"
+        },
+        {
+          "id": "injection",
+          "sections": "ADVERSE REACTIONS; WARNINGS"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "CNS depressants",
+      "assertions": [
+        "Avoid or clinically reduce interacting alcohol, opioids, barbiturates, anesthetics and other sedatives. Labels specify that clinician-managed barbiturate doses may need at least half reduction and opioids one-quarter to one-half reduction, individualized. Those historical label proportions are not a safe self-adjustment algorithm; children should avoid concomitant respiratory depressants."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "Drug Interactions, CNS Depressants; pediatric warning"
+        },
+        {
+          "id": "liquid",
+          "sections": "Drug Interactions, CNS Depressants; pediatric warning"
+        },
+        {
+          "id": "rectal",
+          "sections": "Drug Interactions, CNS Depressants; pediatric warning"
+        },
+        {
+          "id": "injection",
+          "sections": "Drug Interactions, CNS Depressants; pediatric warning"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Anticholinergics and MAO inhibitors",
+      "assertions": [
+        "Other anticholinergic drugs add risks in susceptible glaucoma/urinary or GI-obstruction patients. MAO-inhibitor/phenothiazine combinations have reported increased extrapyramidal effects and need clinical review. Do not invent a universal MAOI washout or assume a routine antiemetic is harmless with all psychiatric drugs."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "Drug Interactions; General precautions"
+        },
+        {
+          "id": "liquid",
+          "sections": "Drug Interactions; General precautions"
+        },
+        {
+          "id": "rectal",
+          "sections": "Drug Interactions; General precautions"
+        },
+        {
+          "id": "injection",
+          "sections": "Drug Interactions; General precautions"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Epinephrine and laboratory effects",
+      "assertions": [
+        "Do not use epinephrine to treat hypotension from promethazine overdose because its vasopressor effect may reverse; this is distinct from epinephrine\u2019s standard role in anaphylaxis, where promethazine is only adjunctive afterward. Some immunologic pregnancy tests may be falsely positive/negative and glucose-tolerance results may change; inform the testing team."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "Drug Interactions Epinephrine; Laboratory Tests; INDICATIONS; Overdose treatment"
+        },
+        {
+          "id": "liquid",
+          "sections": "Drug Interactions Epinephrine; Laboratory Tests; INDICATIONS; Overdose treatment"
+        },
+        {
+          "id": "rectal",
+          "sections": "Drug Interactions Epinephrine; Laboratory Tests; INDICATIONS; Overdose treatment"
+        },
+        {
+          "id": "injection",
+          "sections": "Drug Interactions Epinephrine; Laboratory Tests; INDICATIONS; Overdose treatment"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and older patients",
+      "assertions": [
+        "Never use under two. Above that age, lowest effective doses and careful respiratory assessment remain necessary; dehydration can increase dystonia susceptibility, and unexplained vomiting can conceal serious disease. Older patients can develop confusion/oversedation and should generally start at lower doses with close observation, considering organ function and other drugs. Age alone does not establish a universally safe schedule."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "Pediatric warnings/use; Geriatric Use"
+        },
+        {
+          "id": "liquid",
+          "sections": "Pediatric warnings/use; Geriatric Use"
+        },
+        {
+          "id": "rectal",
+          "sections": "Pediatric warnings/use; Geriatric Use"
+        },
+        {
+          "id": "injection",
+          "sections": "Pediatric warnings/use; Geriatric Use"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal, hepatic and respiratory disease",
+      "assertions": [
+        "Use cautiously with liver dysfunction and cardiovascular disease; consider renal/hepatic/cardiac reserve and polypharmacy in older adults. No numerical eGFR/Child-Pugh adjustment or dialysis supplement appears in these selected labels. Avoid compromised respiratory function such as COPD/sleep apnea; absence of a renal table does not remove respiratory or sedation risk."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "General precautions; Geriatric Use; Respiratory Depression"
+        },
+        {
+          "id": "liquid",
+          "sections": "General precautions; Geriatric Use; Respiratory Depression"
+        },
+        {
+          "id": "rectal",
+          "sections": "General precautions; Geriatric Use; Respiratory Depression"
+        },
+        {
+          "id": "injection",
+          "sections": "General precautions; Geriatric Use; Respiratory Depression"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and labor",
+      "assertions": [
+        "Controlled pregnancy data are inadequate; use only when expected benefit justifies fetal risk. Old pregnancy letter-category wording is not proof of safety. Exposure within two weeks of delivery may inhibit newborn platelet aggregation. Labeled obstetric use requires specialist-managed doses and reduced companion analgesic/depressant exposure, not routine home treatment; long-term infant development effects are unknown."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "Pregnancy; Nonteratogenic Effects; Labor and Delivery; Obstetrics dosage"
+        },
+        {
+          "id": "liquid",
+          "sections": "Pregnancy; Nonteratogenic Effects; Labor and Delivery; Obstetrics dosage"
+        },
+        {
+          "id": "rectal",
+          "sections": "Pregnancy; Nonteratogenic Effects; Labor and Delivery; Obstetrics dosage"
+        },
+        {
+          "id": "injection",
+          "sections": "Pregnancy; Nonteratogenic Effects; Labor and Delivery; Obstetrics dosage"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Breastfeeding",
+      "assertions": [
+        "Selected labels state milk excretion is unknown and advise deciding between drug/feeding discontinuation based on maternal treatment importance because serious infant reactions are possible. This focused label-based profile does not establish lactation compatibility, infant dose or a universal pump-and-discard interval; discuss alternatives and the actual maternal/infant circumstances."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "Nursing Mothers"
+        },
+        {
+          "id": "liquid",
+          "sections": "Nursing Mothers"
+        },
+        {
+          "id": "rectal",
+          "sections": "Nursing Mothers"
+        },
+        {
+          "id": "injection",
+          "sections": "Nursing Mothers"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "assertions": [
+        "Promethazine is a phenothiazine H1 antagonist with anticholinergic and sedating effects; dopamine-antagonist activity is weaker than typical antipsychotic phenothiazines. It does not prevent histamine release or replace emergency anaphylaxis treatment. Mechanism alone does not establish an asthma, cough-combination or long-term psychiatric indication."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "CLINICAL PHARMACOLOGY; INDICATIONS"
+        },
+        {
+          "id": "liquid",
+          "sections": "CLINICAL PHARMACOLOGY; INDICATIONS"
+        },
+        {
+          "id": "rectal",
+          "sections": "CLINICAL PHARMACOLOGY; INDICATIONS"
+        },
+        {
+          "id": "injection",
+          "sections": "CLINICAL PHARMACOLOGY; INDICATIONS"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Onset and disposition",
+      "assertions": [
+        "Oral effects generally appear around 20 minutes and last 4\u20136 hours, sometimes 12. Injection label describes effects within about five minutes IV and 20 minutes IM; this is not permission for rapid undiluted IV push. It is metabolized in the liver, with sulfoxide/N-demethyl metabolites appearing in urine; IV half-life in healthy volunteers was 9\u201316 hours. A clinical effect lasting fewer hours does not justify faster redosing or prove complete clearance."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "liquid",
+          "sections": "CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "injection",
+          "sections": "CLINICAL PHARMACOLOGY; DOSAGE"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Route evidence limits",
+      "assertions": [
+        "Rectal dose availability does not establish equal absorption to oral/IV in every patient. The selected suppository clinical-pharmacology text largely repeats oral information; no precise rectal bioavailability/half-life is inferred. Oral solution\u2019s 1.25 mg/mL drug concentration differs from the maximum 1 mg/mL diluted IV restriction; oral excipients make it unsuitable for injection."
+      ],
+      "sources": [
+        {
+          "id": "rectal",
+          "sections": "CLINICAL PHARMACOLOGY; DESCRIPTION"
+        },
+        {
+          "id": "liquid",
+          "sections": "DESCRIPTION"
+        },
+        {
+          "id": "injection",
+          "sections": "CONTRAINDICATIONS; DOSAGE"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": [
+        "Assess alertness, breathing, BP, seizure history, anticholinergic vulnerability, liver/cardiac disease and all depressant drugs. Monitor therapeutic response, excess sedation, involuntary movements, fever/rigidity and breathing difficulty. Injection requires inspection, patent appropriate access, continuous clinical vigilance for tissue injury and strict preparation/rate checks. No universal routine laboratory interval is invented."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "WARNINGS; PRECAUTIONS; DOSAGE"
+        },
+        {
+          "id": "liquid",
+          "sections": "WARNINGS; PRECAUTIONS; DOSAGE"
+        },
+        {
+          "id": "rectal",
+          "sections": "WARNINGS; PRECAUTIONS; DOSAGE"
+        },
+        {
+          "id": "injection",
+          "sections": "WARNINGS; PRECAUTIONS; DOSAGE"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling and urgent symptoms",
+      "assertions": [
+        "Avoid alcohol and driving/hazardous activity until effects are known. Do not share, independently combine with opioids/sedatives or use for unknown-cause child vomiting. Breathing difficulty, unresponsiveness, severe abnormal movements or fever/rigidity needs urgent care. Report injection-site burning/pain immediately; do not wait for visible necrosis. Photosensitivity counseling includes avoiding prolonged sun exposure."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "Information for Patients; WARNINGS; ADVERSE REACTIONS"
+        },
+        {
+          "id": "liquid",
+          "sections": "Information for Patients; WARNINGS; ADVERSE REACTIONS"
+        },
+        {
+          "id": "rectal",
+          "sections": "Information for Patients; WARNINGS; ADVERSE REACTIONS"
+        },
+        {
+          "id": "injection",
+          "sections": "Information for Patients; WARNINGS; ADVERSE REACTIONS"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Measurement and route checks",
+      "assertions": [
+        "For liquid, confirm 6.25 mg/5 mL and prescribed mL using a calibrated device. Suppositories are rectal only and selected storage is refrigerated. Injectable 25/50 mg/mL stock is NOT ready for IV infusion and must follow the exact manufacturer preparation. Inspect for color/particles and discard abnormal solution; institutional administration safeguards are essential."
+      ],
+      "sources": [
+        {
+          "id": "liquid",
+          "sections": "DESCRIPTION; HOW SUPPLIED"
+        },
+        {
+          "id": "rectal",
+          "sections": "DESCRIPTION; HOW SUPPLIED"
+        },
+        {
+          "id": "injection",
+          "sections": "Visual Inspection; DOSAGE; Storage"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Selected Chartwell oral solution is green cherry-scented 6.25 mg/5 mL; 120 mL bottle NDC 62135-774-41, contains 7% alcohol and sucrose. Selected Camber 25 mg rectal suppository is white/off-white bullet-shaped, 12-count NDC 31722-041-31. Selected Phenergan 25 mg/mL stock is a clear colorless 1 mL vial; 25-count NDC 0641-6084-25. Appearance/NDC is manufacturer-specific and does not authenticate an unknown product."
+      ],
+      "sources": [
+        {
+          "id": "liquid",
+          "sections": "DESCRIPTION; HOW SUPPLIED; package"
+        },
+        {
+          "id": "rectal",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "injection",
+          "sections": "DESCRIPTION; HOW SUPPLIED"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Reviewed oral tablet labeling includes 12.5/25/50 mg promethazine hydrochloride strengths; selected repackaged tablet is 25 mg. Oral solution is 6.25 mg/5 mL. Selected rectal suppositories are 12.5/25 mg. Injection stock is 25 or 50 mg/mL, requiring dilution for permitted IV use. Promethazine-codeine, promethazine-DM and other combinations have separate ingredients/labels and are outside this profile."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "DESCRIPTION; product ingredient"
+        },
+        {
+          "id": "liquid",
+          "sections": "DESCRIPTION"
+        },
+        {
+          "id": "rectal",
+          "sections": "DESCRIPTION"
+        },
+        {
+          "id": "injection",
+          "sections": "DESCRIPTION; HOW SUPPLIED"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Selected oral solution: 20\u201325\u00b0C, tightly closed, protected from light; dispense in a tight light-resistant container. Selected rectal suppositories: refrigerate 2\u20138\u00b0C in a well-closed container. Phenergan injection: 20\u201325\u00b0C, protect from light in carton until use; reject discoloration/particles and follow diluted-solution limits separately. Tablet storage must follow the actual dispensed package; the selected repackaged text does not provide a complete manufacturer-specific storage statement. Keep every form away from children."
+      ],
+      "sources": [
+        {
+          "id": "liquid",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "rectal",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "injection",
+          "sections": "Storage; DOSAGE diluted stability"
+        },
+        {
+          "id": "tablet",
+          "sections": "HOW SUPPLIED; retained label scope"
+        }
+      ]
+    }
+  ],
+  "hero_assertions": {
+    "essential": {
+      "title": "Pediatric respiratory depression and injection injury can be fatal.",
+      "text": "Never use under age two. Deep IM is preferred for injection; restricted diluted IV infusion needs supervised preparation. Stop infusion immediately for site pain.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "facts": [
+      [
+        "Pediatric restriction",
+        "Contraindicated younger than two years"
+      ],
+      [
+        "Oral solution",
+        "6.25 mg/5 mL; not injectable"
+      ],
+      [
+        "IV concentration ceiling",
+        "1 mg/mL after label-directed saline dilution"
+      ]
+    ],
+    "sources": [
+      "tablet",
+      "liquid",
+      "rectal",
+      "injection",
+      "fda"
+    ]
+  },
+  "section_assertions": [
+    {
+      "section": "indications",
+      "summary": "Promethazine is a sedating prescription antihistamine with route-specific allergy, motion-sickness and perioperative uses.",
+      "takeaway": "It is adjunctive after anaphylaxis control, not a replacement for emergency epinephrine.",
+      "sources": [
+        "injection",
+        "liquid",
+        "rectal",
+        "tablet"
+      ]
+    },
+    {
+      "section": "dosage",
+      "summary": "Use the smallest effective route-specific dose with respiratory and sedation precautions.",
+      "takeaway": "Never give promethazine to children younger than two years.",
+      "sources": [
+        "fda",
+        "injection",
+        "liquid",
+        "rectal",
+        "tablet"
+      ]
+    },
+    {
+      "section": "safety",
+      "summary": "Fatal respiratory depression and severe injection tissue injury are central risks.",
+      "takeaway": "Injection-site pain requires immediate stopping and evaluation.",
+      "sources": [
+        "injection",
+        "liquid",
+        "rectal",
+        "tablet"
+      ]
+    },
+    {
+      "section": "interactions",
+      "summary": "Alcohol, opioids and other depressants can intensify sedation and breathing risk.",
+      "takeaway": "Review all sedating/anticholinergic medicines and perioperative combinations.",
+      "sources": [
+        "injection",
+        "liquid",
+        "rectal",
+        "tablet"
+      ]
+    },
+    {
+      "section": "populations",
+      "summary": "Children, frail older adults and patients with respiratory/organ disease need careful selection.",
+      "takeaway": "No validated renal or hepatic dose-adjustment table is supplied by these labels.",
+      "sources": [
+        "injection",
+        "liquid",
+        "rectal",
+        "tablet"
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "summary": "Promethazine blocks H1 receptors and also has sedative, anticholinergic and antiemetic effects.",
+      "takeaway": "Rapid symptom effects do not remove respiratory or tissue-injury risks.",
+      "sources": [
+        "injection",
+        "liquid",
+        "rectal",
+        "tablet"
+      ]
+    },
+    {
+      "section": "practice",
+      "summary": "Verify indication, route, child age, sedation risk and companion drugs before dosing.",
+      "takeaway": "Supervised injection needs active site and respiratory monitoring.",
+      "sources": [
+        "injection",
+        "liquid",
+        "rectal",
+        "tablet"
+      ]
+    },
+    {
+      "section": "product",
+      "summary": "Single-ingredient products differ from codeine/dextromethorphan combinations.",
+      "takeaway": "Verify exact route, strength and excipients on the actual package.",
+      "sources": [
+        "injection",
+        "liquid",
+        "rectal",
+        "tablet"
+      ]
+    }
+  ],
+  "limitations": [
+    "Selected current Phenergan adult table allows2.5/5mL/min per dose/volume; pediatric table uses1.25mL/min. FDA2023general communication/other products may differ; exact selected product governs, not a universal rate.",
+    "Rectal label allergy text says oral dose, and largely repeats oral PK; no inferred rectal allergy regimen or equal bioavailability supplied. Oral solution reassuring children-tolerate wording is not propagated against its boxed respiratory warning.",
+    "Repackaged tablet lacks complete manufacturer-specific storage statement; follow actual package, no invented tablet temperature. Tablet product identity narrowed to selected25mg.",
+    "No OTC insomnia/cough indication, pediatric home-sedation algorithm, combination-codeine/DM dosing, universal renal/hepatic/dialysis regimen or lactation-compatibility claim supplied."
+  ],
+  "unresolved_source_questions": [
+    {
+      "question": "Rectal label allergy-dose paragraph calls its dose oral",
+      "publication_handling": "No rectal allergy regimen inferred; rectal-only handling explicit",
+      "severity": "Scoped source route wording error"
+    },
+    {
+      "question": "Selected repackaged tablet omits complete storage statement",
+      "publication_handling": "Actual dispensed-package instructions required; no invented temperature",
+      "severity": "Scoped product-data gap"
+    },
+    {
+      "question": "Pediatric IV table shares25mg endpoint across dilution rows",
+      "publication_handling": "Both source rows accurately retained; specialist product/hospital protocol required, no inferred faster rate",
+      "severity": "Scoped source endpoint ambiguity"
+    }
+  ],
+  "validation": {
+    "schema": "Actual current validateMonograph returned[];8section contract,4Safety/3Product,3hero tuple facts",
+    "tests_build_lint": "Parent batch checks required",
+    "rendered_page": "Parent batch QA required",
+    "audit_consistency": "All actual card/table/assertion source IDs and monograph SHA256 checked"
+  },
+  "monograph_sha256": "f75e953211f2f9a11bea843db7ae545dea162f5217821511f2f43361000ec1ac",
+  "source_archive": {
+    "directory": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-21-thyroid-metformin",
+    "checked": "2026-10-01",
+    "verified": "Full selected DailyMed SPL XML/parsed sections/metadata; FDA injection safety communication HTML/text and Novartis publicPDF web-access provenance record copied with exact SHA256 verification. No blocked rawPDF falsely claimed. Existing divergent files preserved."
+  }
+}
