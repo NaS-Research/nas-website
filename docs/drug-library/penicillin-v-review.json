@@ -1,0 +1,457 @@
+{
+  "drug": "penicillin-v",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Full current Chartwell U.S. oral tablet/solution label, current FDA records, complete current CDC GAS guidance and web-read full2024AHAwalletcard; explicitly comparable UK approved primary safety/interaction/PK sections.",
+  "sources": [
+    {
+      "id": "penv",
+      "title": "Chartwell · current tablets and oral solution full label",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b0744674-ddf7-4022-be2f-2a22bef0d379",
+      "note": "Full public manufacturer label and patient instructions; SPL version 2, effective 20260723. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "2",
+      "effective_date": "20260723",
+      "xml_sha256": "7b7f285f5478eb1c3a07bd15da2ae62a833362f4099d20ba23ec17f6334b50d4",
+      "retrieved_xml": "/tmp/nas-drug-sources/penv.xml"
+    },
+    {
+      "id": "penv-cdc",
+      "title": "CDC · current group A streptococcal pharyngitis guidance",
+      "publisher": "Centers for Disease Control and Prevention",
+      "url": "https://www.cdc.gov/group-a-strep/hcp/clinical-guidance/strep-throat.html",
+      "note": "Full public current page retrieved/read; diagnosis, treatment, complete penicillin V dose and duration sections.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/penv-cdc2025.html",
+      "source_sha256": "f8ec5dcf65f52b98ef784f12a866b4fbcafaed882d75286ac75a640f02ab2544"
+    },
+    {
+      "id": "penv-uk",
+      "title": "Brown & Burk · UK phenoxymethylpenicillin SmPC",
+      "publisher": "Manufacturer-approved UK SmPC / eMC",
+      "url": "https://www.medicines.org.uk/emc/product/10628/smpc",
+      "note": "Current public manufacturer SmPC, text revision September9,2024; full relevant4.5,4.6,5.2 read. Comparable primary safety/PK reference where U.S. label lacks detail; no UK dose substituted for U.S. regimens.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/penv-uk.html",
+      "source_sha256": "92ba0806aee4eec74efd8c430e9ef5d2b7cb6765728c6c304d8acb4b7f255577"
+    },
+    {
+      "id": "penv-aha",
+      "title": "AHA · 2024 infective-endocarditis prevention wallet card",
+      "publisher": "American Heart Association",
+      "url": "https://www.heart.org/-/media/files/health-topics/infective-endocarditis/infective-endocarditis-wallet-card.pdf",
+      "note": "Full two-page public primary PDF read through webtool;2024version0824. Current prophylaxis differs from1984statement reproduced in current penicillinVlabel.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/penv-aha2024-access.json",
+      "source_sha256": "aee17f3022e3f8c85f3ce7f437c178aaf3bc40c57471f279e63a0824e60f6899"
+    },
+    {
+      "id": "ANDA060711",
+      "title": "FDA · ANDA060711 current product record",
+      "publisher": "U.S. Food and Drug Administration",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:ANDA060711&limit=1",
+      "note": "Current official FDA status checked October 1, 2026; status does not establish stock.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/ANDA060711.json",
+      "source_sha256": "595d765b59e313ecb9f1f23fece31e734319faaa81dc8ba0c5f9a1d8db251dd4"
+    },
+    {
+      "id": "ANDA060456",
+      "title": "FDA · ANDA060456 current product record",
+      "publisher": "U.S. Food and Drug Administration",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:ANDA060456&limit=1",
+      "note": "Current official FDA status checked October 1, 2026; status does not establish stock.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/ANDA060456.json",
+      "source_sha256": "9ca43a38af0ef2d619af1c273bbaf5ec13b965eff9102ebe7c8be8a75a1d609f"
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Labeled oral indications",
+      "assertions": {
+        "paragraphs": [
+          "Mild-to-moderately severe susceptible streptococcal infections without bacteremia, respiratory pneumococcal infections, proven penicillin-sensitive mild staphylococcal skin/soft-tissue infections and fusospirochetal oropharyngeal infection. Culture/susceptibility and local epidemiology guide selection; many staphylococci produce penicillinase. Acute severe pneumonia, empyema, bacteremia, pericarditis, meningitis or arthritis should not be treated with penicillin V."
+        ]
+      },
+      "source_sections": {
+        "penv": [
+          "INDICATIONS AND USAGE",
+          "MICROBIOLOGY"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Prophylaxis and outdated label context",
+      "assertions": {
+        "paragraphs": [
+          "Label secondary prophylaxis after rheumatic fever/chorea remains a distinct clinical indication. Its endocarditis prophylaxis cites a 1984 AHA/ADA statement and lists an old oral penicillinV algorithm. The current AHA 2024 card instead restricts dental prophylaxis to selected highest-risk cardiac conditions and lists a single preprocedure amoxicillin regimen, not penicillinV. Do not execute the old label endocarditis dose; verify contemporary cardiology/dental guidance."
+        ]
+      },
+      "source_sections": {
+        "penv": [
+          "INDICATIONS AND USAGE",
+          "DOSAGE AND ADMINISTRATION",
+          "REFERENCES"
+        ],
+        "penv-aha": [
+          "Full2024card eligibility and prophylactic regimens"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Current CDC confirmed GAS pharyngitis",
+      "assertions": {
+        "paragraphs": [
+          "Children: 250 mg twice or three times daily for 10 days. Adolescents/adults: 250 mg four times daily or 500 mg twice daily for 10 days. Confirm GAS by positive rapid antigen test or culture; do not treat viral pharyngitis. CDC recommends culture confirmation after a negative rapid test in symptomatic children older than 3. This guideline-specific regimen differs from some older label interval wording."
+        ]
+      },
+      "source_sections": {
+        "penv-cdc": [
+          "Full diagnosis/treatment and recommended antibiotics sections"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Selected label · age ≥ 12 infection regimens",
+      "assertions": {
+        "paragraphs": [
+          "Streptococcal upper-respiratory/scarlet-fever/erysipelas: 125–250 mg every 6–8 hours for 10 days. Pneumococcal respiratory infection: 250–500 mg every 6 hours until afebrile at least 2 days. Susceptible mild staphylococcal skin/soft-tissue or Vincent’s oropharyngeal infection: 250–500 mg every 6–8 hours, duration/response clinician-selected; necessary dental care accompanies gum infection. The label supplies no universal resistance-independent empiric course."
+        ]
+      },
+      "source_sections": {
+        "penv": [
+          "DOSAGE AND ADMINISTRATION"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Secondary prophylaxis and administration",
+      "assertions": {
+        "paragraphs": [
+          "Label recurrent rheumatic fever/chorea prevention: 125–250 mg twice daily on a continuing basis, with patient-specific duration/eligibility. May take with meals, although empty-stomach blood levels are somewhat higher. Complete the prescribed course and interval; do not share or save antibiotics. No new automatic repeat-course or home IV regimen is supplied."
+        ]
+      },
+      "source_sections": {
+        "penv": [
+          "DOSAGE AND ADMINISTRATION",
+          "CLINICAL PHARMACOLOGY",
+          "PRECAUTIONS"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Liquid preparation and organ considerations",
+      "assertions": {
+        "paragraphs": [
+          "125 mg/5 mL (25 mg/mL) and 250 mg/5 mL (50 mg/mL); verify before calculating volume. Selected 100 mL bottle requires 75 mL water,200 mL bottle 150 mL, added in stages with vigorous shaking by the dispenser. Refrigerate after mixing/discard 14 days. Renal dysfunction delays excretion; the selected U.S. label supplies no numeric renal/hepatic algorithm, so individualized clinical assessment is required rather than a guessed percentage reduction."
+        ]
+      },
+      "source_sections": {
+        "penv": [
+          "DESCRIPTION",
+          "DOSAGE AND ADMINISTRATION",
+          "HOW SUPPLIED",
+          "CLINICAL PHARMACOLOGY"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Obtain penicillin/cephalosporin/other-allergen history before therapy. Stop for allergy; anaphylaxis requires emergency epinephrine/airway care. Consider C. difficile for significant diarrhea, including > 2 months after antibiotics, and obtain directed assessment rather than suppress symptoms independently. Severe illness, vomiting or GI dysfunction can prevent therapeutic oral absorption. Prolonged use may select resistant organisms/fungi. Review potassium content in renal disease or potassium-retaining therapy."
+        ]
+      },
+      "source_sections": {
+        "penv": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "DESCRIPTION"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Previous hypersensitivity reaction to any penicillin. Susceptibility, severity and oral-absorption limitations require separate treatment selection; lack of a contraindication does not make penicillin V suitable for invasive infection."
+        ]
+      },
+      "source_sections": {
+        "penv": [
+          "CONTRAINDICATIONS",
+          "INDICATIONS AND USAGE"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "Selected U.S. label has no boxed warning. Its prominent anaphylaxis and C. difficile warnings remain clinically significant."
+        ]
+      },
+      "source_sections": {
+        "penv": [
+          "Complete label",
+          "WARNINGS"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Nausea/vomiting, epigastric discomfort, diarrhea and black hairy tongue are reported. Allergy ranges from rash/urticaria/serum-sickness-like reactions to laryngeal edema and fatal anaphylaxis. Some severe hematologic, neurologic or renal reports mainly concern high-dose parenteral penicillin and are not incidence estimates for this oral product. Excess/accidental dosing requires medical/Poison Help review; no “safe overdose” threshold is given."
+        ]
+      },
+      "source_sections": {
+        "penv": [
+          "ADVERSE REACTIONS",
+          "WARNINGS"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "assertions": {
+        "paragraphs": [
+          "Comparable UK primary SmPC: probenecid reduces penicillinV excretion; penicillins can increase methotrexate toxicity. Review warfarin/INR control, oral typhoid-vaccine timing, and potassium-sparing drugs because hyperkalemia is possible. Nonenzymatic urine-glucose tests may be falsely positive. These are interaction assessments, not imported UK dose instructions or a blanket claim that ordinary noninducing antibiotics disable hormonal contraception."
+        ]
+      },
+      "source_sections": {
+        "penv-uk": [
+          "4.5 complete interactions"
+        ],
+        "penv": [
+          "DESCRIPTION potassium content"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and older patients",
+      "assertions": {
+        "paragraphs": [
+          "U.S. label usual infection regimens are written for adults/children ≥ 12. Current CDC GAS regimen supplies a separate pediatric course, not a universal dose for every infant infection. Excretion is delayed in neonates/young infants and renal dysfunction. Older patients need organ-function/co-therapy assessment; no numeric age-only adjustment is supplied."
+        ]
+      },
+      "source_sections": {
+        "penv": [
+          "DOSAGE AND ADMINISTRATION",
+          "CLINICAL PHARMACOLOGY"
+        ],
+        "penv-cdc": [
+          "Recommended antibiotics"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "The selected U.S. label gives no dedicated modern reproductive-risk summary. Comparable manufacturer UK SmPC supports pregnancy use when clinically needed with caution; trace milk exposure can alter infant flora or cause allergy/sensitization. Discuss indication and infant symptoms rather than claim no risk or copy parenteral-penicillin advice."
+        ]
+      },
+      "source_sections": {
+        "penv-uk": [
+          "4.6 complete pregnancy/lactation"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "assertions": {
+        "paragraphs": [
+          "Renal impairment can substantially delay excretion. Evaluate kidney function, potassium load, infection response and tolerability; selected U.S. label does not define an eGFR-based adjustment or liver-dose formula. Potassium per tablet: 250 mg contains 0.71 mEq;500 mg 1.43 mEq. This is clinically relevant ingredient content, not the antibacterial dose."
+        ]
+      },
+      "source_sections": {
+        "penv": [
+          "CLINICAL PHARMACOLOGY",
+          "DESCRIPTION"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and disposition",
+      "assertions": {
+        "paragraphs": [
+          "Bactericidal during active multiplication through cell-wall synthesis inhibition; penicillinase-producing organisms resist. Oral absorption is incomplete; U.S. label protein binding about 80% with rapid renal elimination and delayed excretion in renal dysfunction. Comparable UK SmPC reports an approximately 30-minute half-life, prolonged in renal failure. No serum target or CNS-infection regimen is inferred."
+        ]
+      },
+      "source_sections": {
+        "penv": [
+          "CLINICAL PHARMACOLOGY"
+        ],
+        "penv-uk": [
+          "5.2 pharmacokinetic properties"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "assertions": {
+        "paragraphs": [
+          "Check microbiologic diagnosis/susceptibility when indicated, clinical response and oral intake. Assess allergy, significant diarrhea/superinfection and renal/potassium context. Obtain cultures/labs when clinically warranted; the label’s blanket post-strep culture language is older provenance and should be reconciled with current diagnosis/follow-up guidance rather than presented as a mandatory universal test."
+        ]
+      },
+      "source_sections": {
+        "penv": [
+          "PRECAUTIONS",
+          "WARNINGS",
+          "INDICATIONS AND USAGE"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling",
+      "assertions": {
+        "paragraphs": [
+          "Take exactly as prescribed and finish the indicated course; never treat a viral cold or share leftovers. Verify liquid concentration and measured dose, keep mixed solution refrigerated and discard 14 days. Breathing difficulty/swelling/collapse needs emergency care; watery/bloody diarrhea or fever/cramps warrants prompt review even after finishing. Report poor oral intake/vomiting or lack of improvement."
+        ]
+      },
+      "source_sections": {
+        "penv": [
+          "PRECAUTIONS patient information",
+          "DOSAGE AND ADMINISTRATION",
+          "HOW SUPPLIED"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "paragraphs": [
+          "Selected 500 mg mottled white/off-white oval scored tablet: 9/3 across one face,1174 reverse; NDC 62135-099-40,40-tablet bottle. Verify actual package; not evidence of stock."
+        ]
+      },
+      "source_sections": {
+        "penv": [
+          "HOW SUPPLIED"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Tablets 250 and 500 mg, corresponding 400,000 and 800,000 penicillinV units. Oral solutions 125 or 250 mg per 5 mL after reconstitution. Selected FDA ANDA 060711 tablets and ANDA 060456 solutions list Prescription products. Ingredient-potassium content and microbiological units are not alternative routes or mg-for-mg substitutes for penicillin G preparations."
+        ]
+      },
+      "source_sections": {
+        "penv": [
+          "DESCRIPTION",
+          "HOW SUPPLIED"
+        ],
+        "ANDA060711": [
+          "Current products"
+        ],
+        "ANDA060456": [
+          "Current products"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Tablets/dry powder 20–25°C, tightly closed containers; dispense tablets with required child-resistant closure. Add water only at dispensing. Mixed solution must be refrigerated and discarded after 14 days. Keep children away and follow actual bottle expiry and concentration."
+        ]
+      },
+      "source_sections": {
+        "penv": [
+          "HOW SUPPLIED",
+          "DOSAGE AND ADMINISTRATION"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "No historical1984endocarditis executable dose; current AHA protocol is separate.",
+    "No universal infant/renal adjustment, injectable substitution or resistance-independent invasive-infection regimen.",
+    "UK dose regimens and older contraception warning not imported."
+  ],
+  "resolved_source_findings": [
+    "Current2026U.S.label retains1984AHAprophylaxis; explicitly identified and withheld as current dosing.",
+    "Current CDC pediatric/adultGAS schedules kept separate from label age≥12intervals."
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, essential safety, three hero facts, cited disclosures, four safety cards and three product cards.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending"
+  },
+  "monograph_sha256": "6e9002a1ce5e27791543d0a1b01bc1b39f47194076589f903adfc9aa8a07a2a1",
+  "frontmatter_source_map": {
+    "fields": {
+      "name": "Penicillin V",
+      "synonym": "Penicillin V potassium · phenoxymethylpenicillin",
+      "description": "An oral penicillin for susceptible mild-to-moderate bacterial infections and selected prophylaxis. Current CDC strep-throat courses are separated from label regimens; historical 1984 endocarditis directions reproduced in the label are not offered as current clinical dosing.",
+      "facts": [
+        [
+          "Therapeutic class",
+          "Beta-lactam antibacterial · oral penicillin"
+        ],
+        [
+          "Representative product",
+          "Penicillin V potassium · 500 mg tablet"
+        ],
+        [
+          "Reference focus",
+          "Oral tablets and solutions · current strep guidance"
+        ]
+      ],
+      "essential": {
+        "title": "Confirm the infection and penicillin-allergy history.",
+        "text": "Serious anaphylaxis can occur with oral therapy. Stop and seek emergency care for breathing difficulty, swelling or collapse. Persistent watery/bloody diarrhea can indicate C. difficile even after treatment. Severe invasive disease needs another route/therapy; penicillin V is not an injectable penicillin substitute.",
+        "section": "safety",
+        "link": "Warnings and precautions"
+      }
+    },
+    "source_sections": {
+      "penv": [
+        "DESCRIPTION",
+        "INDICATIONS",
+        "WARNINGS",
+        "HOW SUPPLIED"
+      ],
+      "penv-cdc": [
+        "CurrentGASregimens"
+      ],
+      "penv-aha": [
+        "Current prophylaxis"
+      ]
+    }
+  },
+  "review_date": "2026-10-01"
+}

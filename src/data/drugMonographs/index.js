@@ -269,6 +269,16 @@ import { amiodarone } from "./amiodarone.js";
 import { ethinylEstradiolNorelgestromin } from "./ethinyl-estradiol-norelgestromin.js";
 import { desogestrel_ethinyl_estradiol } from "./desogestrel-ethinyl-estradiol.js";
 import { chlorhexidine } from "./chlorhexidine.js";
+import { nabumetone } from "./nabumetone.js";
+import { lidocaine } from "./lidocaine.js";
+import { hydroquinone } from "./hydroquinone.js";
+import { codeineGuaifenesin } from "./codeine-guaifenesin.js";
+import { dexamethasoneNeomycinPolymyxinB } from "./dexamethasone-neomycin-polymyxin-b.js";
+import { polyethyleneGlycol3350WithElectrolytes } from "./polyethylene-glycol-3350-with-electrolytes.js";
+import { penicillinV } from "./penicillin-v.js";
+import { diphenhydramine } from "./diphenhydramine.js";
+import { levalbuterol } from "./levalbuterol.js";
+import { lactate } from "./lactate.js";
 
 export const reviewedDrugMonographs = {
   "atorvastatin": atorvastatin,
@@ -541,4 +551,14 @@ export const reviewedDrugMonographs = {
   "ethinyl-estradiol-norelgestromin": ethinylEstradiolNorelgestromin,
   "desogestrel-ethinyl-estradiol": desogestrel_ethinyl_estradiol,
   "chlorhexidine": chlorhexidine,
+  "nabumetone": nabumetone,
+  "lidocaine": lidocaine,
+  "hydroquinone": hydroquinone,
+  "codeine-guaifenesin": codeineGuaifenesin,
+  "dexamethasone-neomycin-polymyxin-b": dexamethasoneNeomycinPolymyxinB,
+  "polyethylene-glycol-3350-with-electrolytes": polyethyleneGlycol3350WithElectrolytes,
+  "penicillin-v": penicillinV,
+  "diphenhydramine": diphenhydramine,
+  "levalbuterol": levalbuterol,
+  "lactate": lactate,
 };

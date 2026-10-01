@@ -1,0 +1,573 @@
+{
+  "reviewDate": "2026-10-01",
+  "scope": "Independent targeted critical-assertion primary-source review. Only enumerated assertions independently verified; not exhaustive second clinical signoff, browser QA or build verification.",
+  "status": "complete_targeted_review",
+  "profiles": [
+    {
+      "drug": "hydroquinone",
+      "fileSha256": "4ce6bb08c1a8729ebcca7bc01dc3bee70763d76b9f553034069872e177809f5d",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Selected4% cream40 mg/g manufacturer directions twice daily small affected areas; discontinue absent improvement2months. Sulfite serious-allergy and ochronosis stop/review warnings. Exact12 age wording contradictory/unestablished, no inferred pediatric regimen. Prior component sensitivity formal contraindication.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7844c308-e0a2-42e7-bd28-f68a59ebca83",
+          "sourceSection": "Description, Contraindications, Warnings, Dosage and Administration",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Retained selected SPL approval category explicitly UNAPPROVED DRUG OTHER; manufacturer indications not represented as approved FDA indications.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7844c308-e0a2-42e7-bd28-f68a59ebca83",
+          "sourceSection": "Approval metadata",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Current-served FDA communication identifies Tri-Luma only FDA-approved hydroquinone-containing drug; no legally marketed OTC hydroquinone skin-lightening product without approved application. Combination approval not transferred to plain cream.",
+          "sourceId": "fda",
+          "sourceUrl": "https://www.fda.gov/drugs/drug-safety-communications/fda-works-protect-consumers-potentially-harmful-otc-skin-lightening-products",
+          "sourceSection": "2022 communication regulatory-status paragraphs",
+          "access": "Current official FDA public communication independently opened and full relevant status text read; statement date distinguished from current retrieval.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "hydroquinone": {
+          "path": "/tmp/nas-drug-sources/hydroquinone.xml",
+          "sha256": "586ea271404ad1927cc46a3399b8b12e4952f2f8bd3c43de8de64d39f38682db"
+        }
+      }
+    },
+    {
+      "drug": "codeine-guaifenesin",
+      "fileSha256": "2328bcc4d93aae5c185f41d1876166f54eeb092d97685f6fe3979ea21acdec50",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Selected5mL codeine phosphate10mg/guaifenesin100mg: adult-scoped10mL every4h maximum6doses/24h\u219260mL/120mg/1,200mg. Pediatric legacy directions withheld from recommended profile. Retained approval identifierM012 rather than product-specific NDA.",
+          "sourceId": "otc",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3da3efd7-e278-4d79-9130-eef3992097e4",
+          "sourceSection": "Drug Facts Active Ingredients, Directions, approval metadata",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "FDA2018 adult18+ prescription opioid cough action explicitly excludes OTC codeine products from that action and says OTC regulatory action considered. Published profile preserves Rx versus OTC distinction without falsely amending selected Drug Facts.",
+          "sourceId": "fda",
+          "sourceUrl": "https://www.fda.gov/files/drugs/published/Drug-Safety-Communication--Opioid-Cough-and-Cold-Meds.pdf",
+          "sourceSection": "Full communication pages1\u20132",
+          "access": "Complete official FDA four-page public communication independently opened/read.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "FDA communication advises breastfeeding avoidance and explains CNS-depressant/alcohol respiratory/addiction/overdose risk; source attribution separate from selected OTC label.",
+          "sourceId": "fda",
+          "sourceUrl": "https://www.fda.gov/files/drugs/published/Drug-Safety-Communication--Opioid-Cough-and-Cold-Meds.pdf",
+          "sourceSection": "Additional Information pages2\u20133",
+          "access": "Complete official FDA four-page public communication independently read; no exact combination event rate or invented organ adjustment inferred.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "codeine-guai": {
+          "path": "/tmp/nas-drug-sources/codeine-guai.xml",
+          "sha256": "4105792da94345d3b3c31a1da7d2cb5291960845b17988c36823bd2c4fda9bf1"
+        }
+      }
+    },
+    {
+      "drug": "dexamethasone-neomycin-polymyxin-b",
+      "fileSha256": "ba20a22f634a7453ac24fe9e4e5df5c173ac21c1bfa15c1a89c58b5d76f96eb8",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Suspension1\u20132 drops conjunctival sac; mild4\u20136 times daily, severe hourly clinician-directed taper; initial\u226420mL and examination before renewal.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ecfb954f-5554-0ad2-e053-2995a90a7516",
+          "sourceSection": "Dosage and Administration",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Ointment approximately half-inch up to3\u20134 times daily; initial\u22648g and examination before renewal, no drop-to-ointment conversion.",
+          "sourceId": "ointment",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5776c435-ac60-49b6-8db1-23a3012b9155",
+          "sourceSection": "Dosage and Administration",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Viral corneal/conjunctival disease including epithelial HSV, mycobacterial/fungal ocular disease, ingredient or other corticosteroid allergy contraindicated; ointment lists its own component allergy scope.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ecfb954f-5554-0ad2-e053-2995a90a7516",
+          "sourceSection": "Contraindications",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning \u00b7 status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "maxitrol-susp": {
+          "path": "/tmp/nas-drug-sources/maxitrol-susp.xml",
+          "sha256": "c6a40f5cf2c935f93fdd8f4bdbb3515cb67fd5618ddc4865d1d6d9c0bf81c1c1"
+        },
+        "maxitrol-oint": {
+          "path": "/tmp/nas-drug-sources/maxitrol-oint.xml",
+          "sha256": "b0d0ad6d01e7eebeefe433881fe82592b1f13273ae6040c830d73d465c90db49"
+        }
+      }
+    },
+    {
+      "drug": "polyethylene-glycol-3350-with-electrolytes",
+      "fileSha256": "60657237c0695bb4eb7e0dad0e0aae14d1dd447a0f037b6682787e9dde5971b4",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Adult4L jug water only;240mL every10min until4L/clear effluent; NGT20\u201330mL/min. No oral medicines within1h before or during under consistent2.1; contradictory7.2 explicitly flagged not propagated.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7609ecf7-0ce0-4fbb-9c27-30987f689575",
+          "sourceSection": "Section2",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "GaviLyte-N pediatric\u22656months25mL/kg/HOUR orally/NGT until clear stool, no invented total cap; adults4L240mL/10min. Supplied optional flavor only; breakfast/MG and composition disagreements visibly scoped, no compounding.",
+          "sourceId": "sulfatefree",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=27195187-75a3-431f-90d9-84da1b94e849",
+          "sourceSection": "Section2",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Two separate PouchA+B doses each32oz consumed8oz/15min with additional fluids. Preferred split10\u201312h separation, second start\u22653.5h preprocedure and complete\u22652h; evening alternative\u22651.5h between starts plus32oz extra.",
+          "sourceId": "ascorbate",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8ff46193-2a3b-4de0-9572-775dda8cd8b2",
+          "sourceSection": "Sections2.1\u20132.3",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "No oral medicines1h before/after START each dose. Formal obstruction/perforation/retention/ileus/toxiccolitis/megacolon/allergy; renal impairment monitoring not universal formal contraindication.",
+          "sourceId": "ascorbate",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8ff46193-2a3b-4de0-9572-775dda8cd8b2",
+          "sourceSection": "Sections2.1,4",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning \u00b7 status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "golytely": {
+          "path": "/tmp/nas-drug-sources/golytely.xml",
+          "sha256": "159a2be285e0c1940159e36bbcb624cb1e0d66ecbbe0f85e537b56fa6de29dcc"
+        },
+        "gavilyten": {
+          "path": "/tmp/nas-drug-sources/gavilyten.xml",
+          "sha256": "df60a65467460c9b7c7dec848a5282f672b8c05fdd2b55998b9ac4df8a650eea"
+        },
+        "moviprep": {
+          "path": "/tmp/nas-drug-sources/moviprep.xml",
+          "sha256": "a12c6a69b8745ea2ae2c0636f41cacdfa8af8e1ba89424f77245dff3a4f5adc5"
+        }
+      },
+      "priorReviewedHash": "74d2d74278c64d531301e620aff7e3b9b85751cd5c0ecb9b34d06a6134863bad",
+      "revisionReview": "Source-note clinical revision metadata refined by author; existing independently checked clinical regimens unchanged. Exact current source notes reread; no new whole-profile clinical coverage claimed.",
+      "formattingPriorReviewedHash": "ef234a29a6ffba05b434c4b2ebe85baeb4a91cd3acc9a87e8ad6218282a167b7",
+      "formattingRevisionReview": "Current tube-rate, breakfast interval and pediatric age strings reread with added whitespace; numerical values and scope agree with existing independent primary-source checks. Author separately records whitespace-only text equivalence."
+    },
+    {
+      "drug": "nabumetone",
+      "fileSha256": "6ca72b503908248af506b156a937c04c5eb5e66003dfcc19822491de61559d57",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "OA/RA start1000mg once daily;1500\u20132000single/twice daily, >2000unstudied. CLcr30\u201349 maxSTART750daily/max1500 aftermonitoring; below30START500/max1000; advanced renal disease warning still not recommended.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dd0d2652-d335-45db-af43-5a2523f7299a",
+          "sourceSection": "Dosage; Clinical Pharmacology renal; Warnings",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Hypersensitivity/NSAID-allergic respiratory reactions and CABG formal contraindications; CV/GI boxed warnings retained.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dd0d2652-d335-45db-af43-5a2523f7299a",
+          "sourceSection": "Contraindications; Boxed warning",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "nabumetone-tablet": {
+          "path": "/tmp/nas-drug-sources/nabumetone-tablet.xml",
+          "sha256": "8d78613b35dd933e404ac873605e609d4d81940a119b96f1ae643a265da79491"
+        }
+      }
+    },
+    {
+      "drug": "lidocaine",
+      "fileSha256": "2c1b02f1c24d9e60b27b352e70878ca2916b12d54d0db79d2f80a3ba2b12e18c",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Lidoderm5% max3 intact-skin patches up to12hours/24, cut before liner removal; avoid water. ZTlido1.8% one-system exposure equivalent despite different drug loading, same3/12h ceiling, replacement old+new combined12h and brief water rules product-specific.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db0092f5-02a0-4076-ac32-969f075a6ab1",
+          "sourceSection": "Lidoderm Dosage; ZTlido2.1\u20132.2",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Healthy adult2% usual15mL but BOTH4.5mg/kg and300mg single ceilings,\u22653h spacing/max8doses24h. Selected Advagen shake. Under3max1.2mL immediate area cotton-tip,\u22653h,max4in12h; safer alternatives rule and boxed warning; exact3 branch unresolved explicitly.",
+          "sourceId": "viscous",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ae40021b-8df8-4b16-aac0-dcec88f76c7d",
+          "sourceSection": "Dosage; Boxed warning; supplied IFU",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Normal healthy adult local-anesthetic ceilings without epinephrine4.5mg/kg AND generally300mg; with epinephrine7mg/kg AND generally500mg. IV REGIONAL adultmax4mg/kg/pediatricinduction3mg/kg, not cardiac antiarrhythmic protocol. Appropriate preservative-free epidural forms distinct.",
+          "sourceId": "injection",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4dd52202-8eef-4136-92dd-ada573b7cf74",
+          "sourceSection": "Maximum Recommended Dosages; Dosage and Administration",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Amide anesthetic/product allergy formal contraindication; route-specific under3 oral viscous box not transferred to patches/injection.",
+          "sourceId": "viscous",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ae40021b-8df8-4b16-aac0-dcec88f76c7d",
+          "sourceSection": "Contraindications; Boxed warning",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "lidocaine-lidoderm": {
+          "path": "/tmp/nas-drug-sources/lidocaine-lidoderm.xml",
+          "sha256": "aed3b17b92c85316adc29a2c6ed3b99376ace119f59367456c9cf734255953e1"
+        },
+        "lidocaine-ztlido": {
+          "path": "/tmp/nas-drug-sources/lidocaine-ztlido.xml",
+          "sha256": "06dc74494d432dd2e327a1bf8ae9f0adab94e14543e2e25f93882c5cc19f32ad"
+        },
+        "lidocaine-viscous": {
+          "path": "/tmp/nas-drug-sources/lidocaine-viscous.xml",
+          "sha256": "1e931b031ea0ba95cfe4665679e23c589d10c7ce40625f471ff544672f52fd6e"
+        },
+        "lidocaine-injection": {
+          "path": "/tmp/nas-drug-sources/lidocaine-injection.xml",
+          "sha256": "ca56a6bdfab989fc4e8eabed0a42dc534e3ee86ab96c035386a7318a717ed08c"
+        }
+      }
+    },
+    {
+      "drug": "lactate",
+      "fileSha256": "98aac7eff376f3549ee5278eedfa83388c8301dd74abaeee57c317ce47e4149a",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Selected 12% ammonium-lactate cream treats xerosis and ichthyosis vulgaris, apply thoroughly twice daily; ingredient hypersensitivity contraindication and minimize sunlight. Skin route only, not IV fluid identity. Dermatology category supported.",
+          "sourceId": "cream",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9745b6ce-f532-4e80-b6e9-477ab9db4e30",
+          "sourceSection": "Indications, Dosage, Contraindications, Warnings",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Selected 12% lotion treats xerosis/ichthyosis and associated itching; shake then rub thoroughly twice daily. Ingredient allergy contraindication; minimize sunlight. No systemic salt conversion published.",
+          "sourceId": "lotion",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bb09bb3-5bbc-489d-96c1-ae97cb58381e",
+          "sourceSection": "Indications, Dosage, Contraindications, Warnings",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed-warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "lactate-cream": {
+          "path": "/tmp/nas-drug-sources/lactate-cream.xml",
+          "sha256": "bfdb13070030be95d00b63122e9e085457b249f741c53919dc1ebee7e7fb237c"
+        },
+        "lactate-lotion": {
+          "path": "/tmp/nas-drug-sources/lactate-lotion.xml",
+          "sha256": "4b5eed2ae6aa0c8aa6d206ee83c91b5617a81bb63856b1b6ff155b7bb49ef314"
+        }
+      }
+    },
+    {
+      "drug": "levalbuterol",
+      "fileSha256": "7e58b3ccfa22d72a3b99f6fa6b028072c6ab0c952c98652a80b046b7464b38e9",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Age4+:2 inhalations90mcg BASE every4\u20136hours, some1inhalation45mcg every4hours. Prime4sprays first or >3days unused; shake before use. Allergy to levalbuterol/racemic albuterol/ingredients formal restriction.",
+          "sourceId": "hfa",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=70a35706-d7a8-4a48-98c6-1cab1c42fe8d",
+          "sourceSection": "Sections2.1\u20132.2,4",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Ages6\u201311:0.31mg three times daily, routine ceiling0.63mg three times daily; \u226512start0.63mg three times daily6\u20138hour intervals, selected1.25mg three times daily with monitoring. Ready3mL solution differs from concentrate.",
+          "sourceId": "solution",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e2644e6-36c5-4988-8e52-bec90e2cd2f0",
+          "sourceSection": "Section2",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Concentrate1.25mg/0.5mL requires sterile normal-saline dilution; for doses below1.25mg use nonconcentrate formulation. No home splitting or invented racemic-albuterol conversion.",
+          "sourceId": "concentrate",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0c47c47d-45f7-4eb4-b1f8-7d6c633a1f69",
+          "sourceSection": "Sections2,3",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed-warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "xopenex-hfa": {
+          "path": "/tmp/nas-drug-sources/xopenex-hfa.xml",
+          "sha256": "4ea49c589989675870aeb25339aafb109fba40ea84ba25bcceb0ac7e51f23193"
+        },
+        "xopenex-sol": {
+          "path": "/tmp/nas-drug-sources/xopenex-sol.xml",
+          "sha256": "961f7b5d7be4a8a8859f496a69ecb6a0fd114c15049cd091670f7d0893a5a633"
+        },
+        "xopenex-conc": {
+          "path": "/tmp/nas-drug-sources/xopenex-conc.xml",
+          "sha256": "71b5f7e0d4667588ba64f818785a74c16767232e6469f2b8bbf0e9c56fb89d7a"
+        }
+      }
+    },
+    {
+      "drug": "penicillin-v",
+      "fileSha256": "6e9002a1ce5e27791543d0a1b01bc1b39f47194076589f903adfc9aa8a07a2a1",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Selected \u226512 label125\u2013250mg every6\u20138h10days streptococcal;250\u2013500mg6h pneumococcal until afebrile2days;125\u2013250mg BID recurring rheumatic fever prophylaxis. Penicillin allergy formal contraindication.",
+          "sourceId": "penv",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b0744674-ddf7-4022-be2f-2a22bef0d379",
+          "sourceSection": "Dosage; Contraindications",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Liquid125/250mg per5mL; selected100mL bottle75mL water or200mL150mL; refrigerate discard14days. No inferred numerical organ adjustment.",
+          "sourceId": "penv",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b0744674-ddf7-4022-be2f-2a22bef0d379",
+          "sourceSection": "Reconstitution",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Current confirmed GAS children250mg BID or TID10days; adolescents/adults250mg QID or500mg BID10days, distinct from older label.",
+          "sourceId": "penv-cdc",
+          "sourceUrl": "https://www.cdc.gov/group-a-strep/hcp/clinical-guidance/strep-throat.html",
+          "sourceSection": "Treatment",
+          "access": "Full current official CDC page independently read, diagnosis and complete treatment section.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "penv": {
+          "path": "/tmp/nas-drug-sources/penv.xml",
+          "sha256": "7b7f285f5478eb1c3a07bd15da2ae62a833362f4099d20ba23ec17f6334b50d4"
+        }
+      }
+    },
+    {
+      "drug": "diphenhydramine",
+      "fileSha256": "34b7fad5ef7da81f16f3b8d78a82b835b65db34528fe98732fe3dc80847eecb5",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Selected25mg capsules age\u226512 one/two every4\u20136h maximum6doses/day;6\u2013<12one,under6do not use.",
+          "sourceId": "diphcap",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bfeae100-e2d1-4607-be3b-2d9b15cd4f7f",
+          "sourceSection": "Drug Facts Directions",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "12.5mg/5mL:6\u201311 5\u201310mL every4\u20136h maximum6doses/day;2\u20135only doctor-directed,under2do not use. No adult liquid chart inferred.",
+          "sourceId": "diphliq",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fc9181b9-c92d-493e-8d7c-4a4239c6c092",
+          "sourceSection": "Drug Facts Directions",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "IV/deep IM adult10\u201350mg,100if required,max400/day; generally\u226425mg/min. Pediatric5mg/kg TOTAL24h or150mg/m\u00b2/day,max300/day divided4. Neonates/premature,nursing mothers,local anesthetic use,allergy contraindicated.",
+          "sourceId": "diphiv",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d32d074a-f1b6-4a9a-8e10-e19f0e67c61b",
+          "sourceSection": "Dosage; Contraindications",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "25mg SleepMinis\u226512 two50mg at bedtime ifneeded; formulation differs from other Unisom ingredients.",
+          "sourceId": "diphsleep",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a9a44c2f-65eb-4a5a-9e72-43652dce57f7",
+          "sourceSection": "Drug Facts Directions",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Selected2% diphenhydramine with0.1% zinc acetate\u22652 apply no more3\u20134times/day;under2ask doctor.",
+          "sourceId": "diphcream",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c89e3de8-7d71-485c-8fc5-2832d6024f16",
+          "sourceSection": "Drug Facts Directions",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "diphiv": {
+          "path": "/tmp/nas-drug-sources/diphiv.xml",
+          "sha256": "4ed2f096f66c1e62eae870c8a7c5399fb8aa2c947ee5a0328f7cf4066bdbb553"
+        },
+        "diphcap": {
+          "path": "/tmp/nas-drug-sources/diphcap.xml",
+          "sha256": "eff0bd4dbdea43f5330ddfb5304dd64f40f4eb38c2e7d570c8d113b25fcac73b"
+        },
+        "diphliq": {
+          "path": "/tmp/nas-drug-sources/diphliq.xml",
+          "sha256": "8e2c9a71b44c35297332df872217b366306686982c99366fd203de34fd466ae5"
+        },
+        "diphsleep": {
+          "path": "/tmp/nas-drug-sources/diphsleep.xml",
+          "sha256": "de8ce7fe7b19492c54a5babacf9c9c1330bbe43141ed96d0a44683cb65f6b188"
+        },
+        "diphcream": {
+          "path": "/tmp/nas-drug-sources/diphcream.xml",
+          "sha256": "bd388373678ee168126f7312c7b139672b31d9ccb3100fe5d318b4f79edfd910"
+        }
+      },
+      "priorReviewedHash": "1039d80304a5603354d36e6c30a5393c25935111c3c6f8a004bae766bd3f7692",
+      "formattingRevisionReview": "Current IV rate, pediatric TOTAL daily dose and oral concentration prose reread after separator spacing; original numeric primary-label checks preserved without claiming a new exhaustive review."
+    }
+  ],
+  "pending": [],
+  "limitations": []
+}

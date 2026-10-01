@@ -1,0 +1,854 @@
+{
+  "drug": "lactate",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Full current selected primary prescription cream/lotion clinical and product labels. Inventory identity resolved to selected topical12% products while broader umbrella remains explicitly limited.",
+  "blueprint": {
+    "sections": [
+      [
+        "indications",
+        "Indications"
+      ],
+      [
+        "dosage",
+        "Dosage and administration"
+      ],
+      [
+        "safety",
+        "Safety"
+      ],
+      [
+        "interactions",
+        "Drug interactions"
+      ],
+      [
+        "populations",
+        "Use in specific populations"
+      ],
+      [
+        "pharmacology",
+        "Clinical pharmacology"
+      ],
+      [
+        "practice",
+        "Monitoring and counseling"
+      ],
+      [
+        "product",
+        "Product identification"
+      ]
+    ],
+    "essential_safety": true,
+    "hero_facts": 3,
+    "APAP_modified": false
+  },
+  "sources": [
+    {
+      "id": "cream",
+      "title": "Ammonium lactate 12% cream \u00b7 Full prescription label",
+      "publisher": "Sun / DailyMed",
+      "note": "PI October 2025; SPL 9 effective August 17, 2026; ANDA075883.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9745b6ce-f532-4e80-b6e9-477ab9db4e30"
+    },
+    {
+      "id": "lotion",
+      "title": "Ammonium lactate 12% lotion \u00b7 Full prescription label",
+      "publisher": "Sun / DailyMed",
+      "note": "PI October 2025; SPL 7 effective July 30, 2026; ANDA076216.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bb09bb3-5bbc-489d-96c1-ae97cb58381e"
+    }
+  ],
+  "source_records": [
+    {
+      "id": "cream",
+      "local_snapshot": "/tmp/nas-drug-sources/lactate-cream.xml",
+      "label_revision": "October2025",
+      "set_id": "9745b6ce-f532-4e80-b6e9-477ab9db4e30",
+      "spl_version": "9",
+      "spl_effective_time": "20260817",
+      "dailymed_published_date": "2026-08-19",
+      "sha256": "bfdb13070030be95d00b63122e9e085457b249f741c53919dc1ebee7e7fb237c",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-28-thyroid-metformin/lactate-cream.xml"
+    },
+    {
+      "id": "lotion",
+      "local_snapshot": "/tmp/nas-drug-sources/lactate-lotion.xml",
+      "label_revision": "October2025",
+      "set_id": "8bb09bb3-5bbc-489d-96c1-ae97cb58381e",
+      "spl_version": "7",
+      "spl_effective_time": "20260730",
+      "dailymed_published_date": "2026-08-03",
+      "sha256": "4b5eed2ae6aa0c8aa6d206ee83c91b5617a81bb63856b1b6ff155b7bb49ef314",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-28-thyroid-metformin/lactate-lotion.xml"
+    }
+  ],
+  "assertion_map": [
+    {
+      "section": "indications",
+      "card": "Selected clinical identity",
+      "assertions": [
+        "This profile selects prescription 12% ammonium-lactate cream/lotion for xerosis and ichthyosis vulgaris; lotion also temporarily relieves associated itching. Public records identify ANDA products. The inventory umbrella does not authorize an IV sodium-lactate or Lactated Ringer\u2019s regimen."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "INDICATIONS; Description; Product information"
+        },
+        {
+          "id": "lotion",
+          "sections": "INDICATIONS; Description; Product information"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Scope boundary",
+      "assertions": [
+        "Confirm active ingredient, concentration, route and package. Other salts, OTC brands and fluid products require their own assessment; clinical interchangeability is not established by sharing the word lactate."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "DESCRIPTION; INDICATIONS"
+        },
+        {
+          "id": "lotion",
+          "sections": "DESCRIPTION; INDICATIONS"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Application",
+      "assertions": [
+        "Rub into affected skin twice daily or as prescribed. Shake lotion first. External skin use only; avoid eyes, lips and mucosa. No universal gram maximum or course length is established."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "DOSAGE; PRECAUTIONS"
+        },
+        {
+          "id": "lotion",
+          "sections": "DOSAGE; PRECAUTIONS"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Organ-function boundaries",
+      "assertions": [
+        "No kidney, liver or dialysis dose algorithm is supplied. Assess the actual skin condition and tolerability; do not transfer a fluid/electrolyte dosing protocol to these products."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "Full PI; DOSAGE"
+        },
+        {
+          "id": "lotion",
+          "sections": "Full PI; DOSAGE"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Minimize natural/artificial sunlight on treated areas; use protective clothing if exposure is unavoidable. Broken/shaved skin may sting; facial application needs caution. Stop if skin worsens or allergy occurs."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "WARNING; PRECAUTIONS"
+        },
+        {
+          "id": "lotion",
+          "sections": "WARNING; PRECAUTIONS"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "Prior hypersensitivity to a formulation ingredient contraindicates use."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "CONTRAINDICATIONS"
+        },
+        {
+          "id": "lotion",
+          "sections": "CONTRAINDICATIONS"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "No boxed warning in selected labels. Mouse ultraviolet-exposure findings do not establish a human cancer rate."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "Full PI; Carcinogenesis"
+        },
+        {
+          "id": "lotion",
+          "sections": "Full PI; Carcinogenesis"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Burning, stinging, rash, redness, dryness and itching occur; rates vary by formulation and skin diagnosis. Severe or persistent symptoms need assessment."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "ADVERSE REACTIONS"
+        },
+        {
+          "id": "lotion",
+          "sections": "ADVERSE REACTIONS"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Medication review",
+      "assertions": [
+        "Selected labels do not provide a systemic interaction algorithm. Discuss other topical treatments and irritation before combining; no validated CYP or separation-time rule is inferred."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "Full PI; PRECAUTIONS"
+        },
+        {
+          "id": "lotion",
+          "sections": "Full PI; PRECAUTIONS"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": [
+        "Cream evidence starts at age two; lotion describes infant/child effectiveness without a numerical minimum. Neither supplies a universal infant gram dose. Older-adult evidence is limited; select cautiously."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "Pediatric Use; Geriatric Use"
+        },
+        {
+          "id": "lotion",
+          "sections": "Pediatric Use; Geriatric Use"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and breastfeeding",
+      "assertions": [
+        "Controlled pregnancy data are inadequate; use only when clearly needed. Effects on milk lactate are unknown despite lactate\u2019s normal presence in the body; use caution and individual assessment."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "Pregnancy; Nursing Mothers"
+        },
+        {
+          "id": "lotion",
+          "sections": "Pregnancy; Nursing Mothers"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Kidney and liver disease",
+      "assertions": [
+        "No validated numerical adjustment is established for these topical products. This absence does not establish unrestricted systemic exposure or safety in every clinical setting."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "Full PI"
+        },
+        {
+          "id": "lotion",
+          "sections": "Full PI"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "assertions": [
+        "Supports outer-skin hydration and may reduce corneocyte cohesion; the complete mechanism is uncertain."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "lotion",
+          "sections": "CLINICAL PHARMACOLOGY"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Disposition limits",
+      "assertions": [
+        "Cadaver-skin studies found approximately 6.1% cream and 5.8% lotion absorption over 68 hours. These are in-vitro observations, not human systemic half-lives or dosing conversions."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "lotion",
+          "sections": "CLINICAL PHARMACOLOGY"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": [
+        "Assess dryness/scaling, itch and irritation. No routine serum-lactate monitoring schedule is established for labeled topical treatment."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "PRECAUTIONS; Full PI"
+        },
+        {
+          "id": "lotion",
+          "sections": "PRECAUTIONS; Full PI"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "assertions": [
+        "Keep the route clear: neither swallow nor apply intravaginally/ophthalmically. Protect treated skin from sunlight and stop for allergy or deterioration. Verify product-specific instructions."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "Patient Information; WARNING"
+        },
+        {
+          "id": "lotion",
+          "sections": "Patient Information; WARNING"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Cream 140 g tube: NDC 51672-1301-2. Lotion 225 g bottle: NDC 51672-1300-5. Cream\u2019s other package-panel NDC/size conflict remains unresolved; those examples are omitted."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "HOW SUPPLIED; package panels"
+        },
+        {
+          "id": "lotion",
+          "sections": "HOW SUPPLIED; package panels"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Selected cream/lotion contain 12% lactic acid as ammonium lactate, pH 4.5\u20135.5. This is not a salt-mass-to-IV conversion."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "DESCRIPTION"
+        },
+        {
+          "id": "lotion",
+          "sections": "DESCRIPTION"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Store 20\u201325\u00b0C. Retain product labeling and follow its expiry; no universal after-opening interval is provided."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "lotion",
+          "sections": "HOW SUPPLIED"
+        }
+      ]
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Selected clinical identity",
+      "assertions": [
+        "This profile selects prescription 12% ammonium-lactate cream/lotion for xerosis and ichthyosis vulgaris; lotion also temporarily relieves associated itching. Public records identify ANDA products. The inventory umbrella does not authorize an IV sodium-lactate or Lactated Ringer\u2019s regimen."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "INDICATIONS; Description; Product information"
+        },
+        {
+          "id": "lotion",
+          "sections": "INDICATIONS; Description; Product information"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Scope boundary",
+      "assertions": [
+        "Confirm active ingredient, concentration, route and package. Other salts, OTC brands and fluid products require their own assessment; clinical interchangeability is not established by sharing the word lactate."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "DESCRIPTION; INDICATIONS"
+        },
+        {
+          "id": "lotion",
+          "sections": "DESCRIPTION; INDICATIONS"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Application",
+      "assertions": [
+        "Rub into affected skin twice daily or as prescribed. Shake lotion first. External skin use only; avoid eyes, lips and mucosa. No universal gram maximum or course length is established."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "DOSAGE; PRECAUTIONS"
+        },
+        {
+          "id": "lotion",
+          "sections": "DOSAGE; PRECAUTIONS"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Organ-function boundaries",
+      "assertions": [
+        "No kidney, liver or dialysis dose algorithm is supplied. Assess the actual skin condition and tolerability; do not transfer a fluid/electrolyte dosing protocol to these products."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "Full PI; DOSAGE"
+        },
+        {
+          "id": "lotion",
+          "sections": "Full PI; DOSAGE"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Minimize natural/artificial sunlight on treated areas; use protective clothing if exposure is unavoidable. Broken/shaved skin may sting; facial application needs caution. Stop if skin worsens or allergy occurs."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "WARNING; PRECAUTIONS"
+        },
+        {
+          "id": "lotion",
+          "sections": "WARNING; PRECAUTIONS"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "Prior hypersensitivity to a formulation ingredient contraindicates use."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "CONTRAINDICATIONS"
+        },
+        {
+          "id": "lotion",
+          "sections": "CONTRAINDICATIONS"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "No boxed warning in selected labels. Mouse ultraviolet-exposure findings do not establish a human cancer rate."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "Full PI; Carcinogenesis"
+        },
+        {
+          "id": "lotion",
+          "sections": "Full PI; Carcinogenesis"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Burning, stinging, rash, redness, dryness and itching occur; rates vary by formulation and skin diagnosis. Severe or persistent symptoms need assessment."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "ADVERSE REACTIONS"
+        },
+        {
+          "id": "lotion",
+          "sections": "ADVERSE REACTIONS"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Medication review",
+      "assertions": [
+        "Selected labels do not provide a systemic interaction algorithm. Discuss other topical treatments and irritation before combining; no validated CYP or separation-time rule is inferred."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "Full PI; PRECAUTIONS"
+        },
+        {
+          "id": "lotion",
+          "sections": "Full PI; PRECAUTIONS"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": [
+        "Cream evidence starts at age two; lotion describes infant/child effectiveness without a numerical minimum. Neither supplies a universal infant gram dose. Older-adult evidence is limited; select cautiously."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "Pediatric Use; Geriatric Use"
+        },
+        {
+          "id": "lotion",
+          "sections": "Pediatric Use; Geriatric Use"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and breastfeeding",
+      "assertions": [
+        "Controlled pregnancy data are inadequate; use only when clearly needed. Effects on milk lactate are unknown despite lactate\u2019s normal presence in the body; use caution and individual assessment."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "Pregnancy; Nursing Mothers"
+        },
+        {
+          "id": "lotion",
+          "sections": "Pregnancy; Nursing Mothers"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Kidney and liver disease",
+      "assertions": [
+        "No validated numerical adjustment is established for these topical products. This absence does not establish unrestricted systemic exposure or safety in every clinical setting."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "Full PI"
+        },
+        {
+          "id": "lotion",
+          "sections": "Full PI"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "assertions": [
+        "Supports outer-skin hydration and may reduce corneocyte cohesion; the complete mechanism is uncertain."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "lotion",
+          "sections": "CLINICAL PHARMACOLOGY"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Disposition limits",
+      "assertions": [
+        "Cadaver-skin studies found approximately 6.1% cream and 5.8% lotion absorption over 68 hours. These are in-vitro observations, not human systemic half-lives or dosing conversions."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "lotion",
+          "sections": "CLINICAL PHARMACOLOGY"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": [
+        "Assess dryness/scaling, itch and irritation. No routine serum-lactate monitoring schedule is established for labeled topical treatment."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "PRECAUTIONS; Full PI"
+        },
+        {
+          "id": "lotion",
+          "sections": "PRECAUTIONS; Full PI"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "assertions": [
+        "Keep the route clear: neither swallow nor apply intravaginally/ophthalmically. Protect treated skin from sunlight and stop for allergy or deterioration. Verify product-specific instructions."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "Patient Information; WARNING"
+        },
+        {
+          "id": "lotion",
+          "sections": "Patient Information; WARNING"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Cream 140 g tube: NDC 51672-1301-2. Lotion 225 g bottle: NDC 51672-1300-5. Cream\u2019s other package-panel NDC/size conflict remains unresolved; those examples are omitted."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "HOW SUPPLIED; package panels"
+        },
+        {
+          "id": "lotion",
+          "sections": "HOW SUPPLIED; package panels"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Selected cream/lotion contain 12% lactic acid as ammonium lactate, pH 4.5\u20135.5. This is not a salt-mass-to-IV conversion."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "DESCRIPTION"
+        },
+        {
+          "id": "lotion",
+          "sections": "DESCRIPTION"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Store 20\u201325\u00b0C. Retain product labeling and follow its expiry; no universal after-opening interval is provided."
+      ],
+      "sources": [
+        {
+          "id": "cream",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "lotion",
+          "sections": "HOW SUPPLIED"
+        }
+      ]
+    }
+  ],
+  "hero_assertions": {
+    "essential": {
+      "title": "Verify topical identity before use",
+      "text": "Selected 12% ammonium-lactate products are for skin only. Stop for allergy or worsening skin and protect treated areas from sunlight. The inventory umbrella does not supply an IV-fluid regimen.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "facts": [
+      [
+        "Selected scope",
+        "Topical ammonium lactate 12%"
+      ],
+      [
+        "Formulations",
+        "Prescription cream and lotion"
+      ],
+      [
+        "Identity boundary",
+        "Not a systemic lactate dosing guide"
+      ]
+    ],
+    "sources": [
+      "cream",
+      "lotion"
+    ]
+  },
+  "section_assertions": [
+    {
+      "section": "indications",
+      "summary": "Verified topical ammonium lactate; inventory slug retained.",
+      "takeaway": "The umbrella word lactate does not uniquely identify a medicine.",
+      "sources": [
+        "cream",
+        "lotion"
+      ]
+    },
+    {
+      "section": "dosage",
+      "summary": "Apply the selected topical product as directed.",
+      "takeaway": "No systemic lactate conversion is supplied.",
+      "sources": [
+        "cream",
+        "lotion"
+      ]
+    },
+    {
+      "section": "safety",
+      "summary": "Irritation, allergy and sunlight precautions matter.",
+      "takeaway": "Stop for worsening skin or hypersensitivity.",
+      "sources": [
+        "cream",
+        "lotion"
+      ]
+    },
+    {
+      "section": "interactions",
+      "summary": "Review the entire skin-care plan.",
+      "takeaway": "Absence of a labeled interaction table is not proof of compatibility.",
+      "sources": [
+        "cream",
+        "lotion"
+      ]
+    },
+    {
+      "section": "populations",
+      "summary": "Pediatric wording differs between cream and lotion.",
+      "takeaway": "Do not copy one formulation\u2019s age evidence to another.",
+      "sources": [
+        "cream",
+        "lotion"
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "summary": "An alpha-hydroxy-acid humectant acts locally.",
+      "takeaway": "Laboratory skin absorption is not clinical bioavailability.",
+      "sources": [
+        "cream",
+        "lotion"
+      ]
+    },
+    {
+      "section": "practice",
+      "summary": "Follow skin response and tolerability.",
+      "takeaway": "Reassess worsening symptoms rather than escalating independently.",
+      "sources": [
+        "cream",
+        "lotion"
+      ]
+    },
+    {
+      "section": "product",
+      "summary": "Selected prescription examples; other brands differ.",
+      "takeaway": "12% describes lactic acid formulated as ammonium lactate.",
+      "sources": [
+        "cream",
+        "lotion"
+      ]
+    }
+  ],
+  "limitations": [
+    "Generic inventory lactate is not a unique active-ingredient/route identifier; current external inventory form distribution supports topical12% cream/lotion, but clinical content is drawn only from primary selected ammonium-lactate labels. Other salts/routes/OTC products excluded.",
+    "Cream HOW SUPPLIED gives NDC51672-1301-4 for two140 g tubes, while a principal panel labeled385 g bottle uses that code. Conflict not reconciled; selected140 g tube-2 is consistent and used.",
+    "No systemic lactate, fluid-resuscitation, lactic-acidosis treatment or fixed organ-failure algorithm supplied."
+  ],
+  "unresolved_source_questions": [],
+  "validation": {
+    "schema": [],
+    "tests_build_lint": "Parent batch checks required",
+    "rendered_page": "Parent batch QA required"
+  },
+  "monograph_sha256": "98aac7eff376f3549ee5278eedfa83388c8301dd74abaeee57c317ce47e4149a",
+  "source_archive": {
+    "directory": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-28-thyroid-metformin",
+    "checked": "2026-10-01",
+    "verified": "Full selected DailyMed SPL XML, parsed sections and public pages copied with exact SHA256 verification. Existing divergent files preserved."
+  }
+}
