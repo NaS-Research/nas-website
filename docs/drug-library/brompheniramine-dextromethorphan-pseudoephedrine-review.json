@@ -1,0 +1,691 @@
+{
+  "drug": "brompheniramine-dextromethorphan-pseudoephedrine",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "reviewScope": "U.S. oral syrup: brompheniramine 2 mg, dextromethorphan 10 mg, pseudoephedrine 30 mg per 5 mL",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Combination syrup · Full selected prescribing information",
+      "publisher": "DailyMed / Ascend / Alkem",
+      "note": "Current SPL version 7, effective 2026-01-02. January2026 SPL retains clinical revision January2025.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=036b587a-7bfe-4149-bd05-34a37e3e84b6"
+    },
+    {
+      "id": "fda",
+      "title": "FDA · Pediatric cough/cold safety guidance",
+      "publisher": "U.S. FDA",
+      "note": "Current public safety guidance read October 1, 2026; under-two risk and OTC under-four relabeling distinguished from this prescription label.",
+      "url": "https://www.fda.gov/drugs/safe-use-over-counter-otc-medicines-children/use-caution-when-giving-cough-and-cold-products-kids"
+    },
+    {
+      "id": "approval",
+      "title": "Drugs@FDA · ANDA 210647 approval and product record",
+      "publisher": "U.S. FDA",
+      "note": "Alkem oral syrup original approval July 14, 2020; prescription status. This page does not supply a downloadable clinical label.",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=210647"
+    }
+  ],
+  "labelMetadata": [
+    {
+      "sourceId": "label",
+      "product": "brompheniramine-combo",
+      "setid": "036b587a-7bfe-4149-bd05-34a37e3e84b6",
+      "version": "7",
+      "effectiveTime": "20260102",
+      "publishedDate": "Current public SPL retrieved October1,2026; no independent publication date claimed",
+      "clinicalRevisionWording": [],
+      "checked": "2026-10-01",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/036b587a-7bfe-4149-bd05-34a37e3e84b6.xml",
+      "xmlSha256": "f6e9d28f8bca79c59bf9b2afa616f59e7ed2df898105526803bb4a9b351f6c6d",
+      "marketingAuthorization": [
+        {
+          "category": "ANDA",
+          "application": "ANDA210647"
+        }
+      ],
+      "scope": "Actual selected public product labeling; SPL publication is distinguished from clinical revision, approval chronology and local stock."
+    },
+    {
+      "sourceId": "fda",
+      "url": "https://www.fda.gov/drugs/safe-use-over-counter-otc-medicines-children/use-caution-when-giving-cough-and-cold-products-kids",
+      "checked": "2026-10-01",
+      "access": "Current official page read via browser and actual public HTML retained with TLS verification. No paywalled access or missing clinical label access claimed."
+    },
+    {
+      "sourceId": "approval",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=210647",
+      "checked": "2026-10-01",
+      "access": "Current official page read via browser and actual public HTML retained with TLS verification. No paywalled access or missing clinical label access claimed."
+    }
+  ],
+  "reviewedSourceSections": {
+    "label": [
+      "DESCRIPTION",
+      "CLINICAL PHARMACOLOGY",
+      "INDICATIONS & USAGE",
+      "CONTRAINDICATIONS",
+      "WARNINGS",
+      "PRECAUTIONS",
+      "GENERAL PRECAUTIONS",
+      "INFORMATION FOR PATIENTS",
+      "DRUG INTERACTIONS",
+      "CARCINOGENESIS & MUTAGENESIS & IMPAIRMENT OF FERTILITY",
+      "PREGNANCY",
+      "NURSING MOTHERS",
+      "PEDIATRIC USE",
+      "GERIATRIC USE",
+      "ADVERSE REACTIONS",
+      "OVERDOSAGE",
+      "Signs and Symptoms",
+      "Toxic Doses",
+      "Treatment",
+      "DOSAGE & ADMINISTRATION",
+      "HOW SUPPLIED",
+      "PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"
+    ],
+    "fda": [
+      "FDA pediatric safety: below-two decongestant/antihistamine avoidance; voluntary OTC under-four labeling; ingredient duplication and supportive care"
+    ],
+    "approval": [
+      "ANDA210647 Alkem prescription oral syrup strength; original approval July14,2020; clinical label unavailable on Drugs@FDA"
+    ]
+  },
+  "assertionToSourceMap": [
+    {
+      "section": "indications",
+      "card": "Labeled use and status",
+      "assertions": {
+        "paragraphs": [
+          "Relief of cough and upper-respiratory symptoms, including nasal congestion, associated with allergy or common cold. Selected Alkem product is prescription oral syrup under ANDA 210647; FDA records original approval July 14, 2020. This status is product specific and does not establish approval for every similarly named syrup."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "approval"
+      ],
+      "sourceSections": {
+        "label": [
+          "INDICATIONS & USAGE",
+          "CONTRAINDICATIONS",
+          "WARNINGS"
+        ],
+        "approval": [
+          "ANDA210647 Alkem prescription oral syrup strength; original approval July14,2020; clinical label unavailable on Drugs@FDA"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "indications",
+      "card": "Scope and limits",
+      "assertions": {
+        "paragraphs": [
+          "This profile covers the precise 2 mg / 10 mg / 30 mg per 5 mL combination. Different concentrations, two-ingredient products, extended-release forms and OTC products have separate instructions. Antihistamines should not be used to treat lower-respiratory conditions, including asthma. Do not infer disease modification, antibiotic action or an infant benefit from a symptom-relief indication."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "INDICATIONS & USAGE",
+          "CONTRAINDICATIONS",
+          "WARNINGS"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "dosage",
+      "card": "Selected label oral doses",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Age",
+            "Label volume and interval"
+          ],
+          "rows": [
+            [
+              "Twelve years and older",
+              "10 mL every four hours; maximum six doses per twenty-four hours"
+            ],
+            [
+              "Six to under twelve",
+              "5 mL every four hours; maximum six doses per twenty-four hours"
+            ],
+            [
+              "Two to under six",
+              "2.5 mL every four hours; maximum six doses per twenty-four hours"
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "CLINICAL PHARMACOLOGY",
+          "DRUG INTERACTIONS",
+          "PEDIATRIC USE",
+          "OVERDOSAGE",
+          "DOSAGE & ADMINISTRATION"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "dosage",
+      "card": "Infant and young-child conflict",
+      "assertions": {
+        "paragraphs": [
+          "The label retains physician-established dosing for six months to under two and says below-six-month safety/effectiveness are unestablished. FDA advises against cough/cold products containing a decongestant or antihistamine below two because potentially fatal harm can occur. No infant dose is supplied here. Obtain pediatric review before treating a young child; the table records selected prescription labeling, not permission for caregiver self-selection. FDA also reports voluntary OTC under-four relabeling; do not silently apply that as a new formal contraindication in this prescription label."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "fda"
+      ],
+      "sourceSections": {
+        "label": [
+          "CLINICAL PHARMACOLOGY",
+          "DRUG INTERACTIONS",
+          "PEDIATRIC USE",
+          "OVERDOSAGE",
+          "DOSAGE & ADMINISTRATION"
+        ],
+        "fda": [
+          "FDA pediatric safety: below-two decongestant/antihistamine avoidance; voluntary OTC under-four labeling; ingredient duplication and supportive care"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "dosage",
+      "card": "Measuring and individualized use",
+      "assertions": {
+        "paragraphs": [
+          "Use a calibrated oral syringe/cup in mL, verify all three ingredients and avoid household teaspoon estimates. Do not exceed six doses, shorten intervals or combine another product with the same ingredients. Selected labeling gives no numeric renal/hepatic adjustment or universal duration/stopping algorithm; use the clinician’s plan, with reassessment for persistent/worsening symptoms. A missed dose does not justify doubling."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "fda"
+      ],
+      "sourceSections": {
+        "label": [
+          "CLINICAL PHARMACOLOGY",
+          "DRUG INTERACTIONS",
+          "PEDIATRIC USE",
+          "OVERDOSAGE",
+          "DOSAGE & ADMINISTRATION"
+        ],
+        "fda": [
+          "FDA pediatric safety: below-two decongestant/antihistamine avoidance; voluntary OTC under-four labeling; ingredient duplication and supportive care"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Antihistamine overdose in infants/children can produce hallucinations, seizures or death; use conservative pediatric review and avoid infant self-treatment. Brompheniramine can impair alertness or cause paradoxical excitement. Use caution with prior bronchial asthma, narrow-angle glaucoma, GI obstruction or bladder-neck obstruction, and with diabetes, hypertension, heart or thyroid disease because of pseudoephedrine. Avoid driving/hazardous tasks when affected. Duplicated ingredients or too-frequent dosing increase overdose risk."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "fda"
+      ],
+      "sourceSections": {
+        "label": [
+          "CONTRAINDICATIONS",
+          "WARNINGS",
+          "PRECAUTIONS",
+          "GENERAL PRECAUTIONS",
+          "ADVERSE REACTIONS"
+        ],
+        "fda": [
+          "FDA pediatric safety: below-two decongestant/antihistamine avoidance; voluntary OTC under-four labeling; ingredient duplication and supportive care"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Selected label excludes ingredient hypersensitivity, newborns, premature infants, nursing mothers, severe hypertension and severe coronary artery disease. Do not use dextromethorphan with MAO inhibitors. Antihistamines should not treat lower-respiratory conditions including asthma; history of bronchial asthma is separately listed as a precaution."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "CONTRAINDICATIONS",
+          "WARNINGS",
+          "PRECAUTIONS",
+          "GENERAL PRECAUTIONS",
+          "ADVERSE REACTIONS"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "The selected current label has no boxed warning. Its serious pediatric overdose, MAOI and cardiovascular contraindications still apply; absence of a box is not evidence of a safe infant regimen."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "CONTRAINDICATIONS",
+          "WARNINGS",
+          "PRECAUTIONS",
+          "GENERAL PRECAUTIONS",
+          "ADVERSE REACTIONS"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Most frequent effects are sedation, dryness of mouth/nose/throat, thickened bronchial secretions and dizziness. Other reported effects include insomnia or excitation, tremor, blurred vision, GI upset/constipation, urinary difficulty, BP changes, palpitations/arrhythmias, rash and wheezing. Serious blood disorders and seizures are also reported; the label supplies no dependable frequency for these less-common reports."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "CONTRAINDICATIONS",
+          "WARNINGS",
+          "PRECAUTIONS",
+          "GENERAL PRECAUTIONS",
+          "ADVERSE REACTIONS"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "interactions",
+      "card": "MAO inhibitors",
+      "assertions": {
+        "paragraphs": [
+          "Concurrent MAOI use is contraindicated: dextromethorphan combinations have produced hyperthermia, hypotension and death; MAO inhibition may also intensify antihistamine anticholinergic effects and pseudoephedrine effects. Selected label does not supply a precise washout interval. A prescriber/pharmacist must resolve current or recent MAOI treatment and any serotonergic medication combination rather than inferring safety from this label’s short list."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "GENERAL PRECAUTIONS",
+          "DRUG INTERACTIONS"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "interactions",
+      "card": "CNS depressants, BP medicines and duplication",
+      "assertions": {
+        "paragraphs": [
+          "Alcohol, hypnotics, sedatives, tranquilizers and other CNS depressants add to antihistamine effects. Pseudoephedrine may reduce antihypertensive effect. Review every prescription/OTC product for these agents and the three active ingredients to prevent duplication; do not add sleep aids or adult cold products to a child’s regimen."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "fda"
+      ],
+      "sourceSections": {
+        "label": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "GENERAL PRECAUTIONS",
+          "DRUG INTERACTIONS"
+        ],
+        "fda": [
+          "FDA pediatric safety: below-two decongestant/antihistamine avoidance; voluntary OTC under-four labeling; ingredient duplication and supportive care"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and breastfeeding",
+      "assertions": {
+        "paragraphs": [
+          "Combination reproduction studies and adequate human fetal-risk evidence are lacking; the label’s historical pregnancy-category wording does not establish safety. It directs use during pregnancy only if clearly needed. Nursing mothers are contraindicated because of infant antihistamine intolerance risk, particularly in newborns/prematures; do not replace this selected product restriction with an assumed class-wide compatible-with-breastfeeding claim."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "GENERAL PRECAUTIONS",
+          "PREGNANCY",
+          "NURSING MOTHERS",
+          "PEDIATRIC USE",
+          "GERIATRIC USE",
+          "OVERDOSAGE",
+          "DOSAGE & ADMINISTRATION"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": {
+        "paragraphs": [
+          "Below six months safety/effectiveness are unestablished and newborns/prematures are contraindicated. FDA under-two advice takes priority over uncritical reuse of the label’s physician-established infant language. Older adults are more susceptible to dizziness, sedation, hypotension and sympathomimetic adverse effects; cautious low-end selection is advised and trial numbers at sixty-five or older were insufficient to establish equivalent response."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "fda"
+      ],
+      "sourceSections": {
+        "label": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "GENERAL PRECAUTIONS",
+          "PREGNANCY",
+          "NURSING MOTHERS",
+          "PEDIATRIC USE",
+          "GERIATRIC USE",
+          "OVERDOSAGE",
+          "DOSAGE & ADMINISTRATION"
+        ],
+        "fda": [
+          "FDA pediatric safety: below-two decongestant/antihistamine avoidance; voluntary OTC under-four labeling; ingredient duplication and supportive care"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "assertions": {
+        "paragraphs": [
+          "The selected label gives no creatinine-clearance, dialysis or hepatic-severity dosing table. Decreased renal/hepatic/cardiac function contributes to cautious older-adult dosing. Absence of a numeric adjustment does not establish unchanged exposure or safety in severe impairment; arrange individual review rather than invent a percentage reduction."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "GENERAL PRECAUTIONS",
+          "PREGNANCY",
+          "NURSING MOTHERS",
+          "PEDIATRIC USE",
+          "GERIATRIC USE",
+          "OVERDOSAGE",
+          "DOSAGE & ADMINISTRATION"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "assertions": {
+        "paragraphs": [
+          "Brompheniramine antagonizes histamine H1 activity and also has anticholinergic/sedating effects. Pseudoephedrine promotes alpha-adrenergic nasal vasoconstriction. Dextromethorphan acts centrally to increase the cough threshold; this does not make it an asthma medicine."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "DESCRIPTION",
+          "CLINICAL PHARMACOLOGY"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Disposition",
+      "assertions": {
+        "paragraphs": [
+          "The label reports brompheniramine peak around five hours after a single 4 mg oral dose, mainly urinary elimination of metabolites and presumed hepatic metabolism. Pseudoephedrine effects begin within about thirty minutes, peak activity about one hour; antitussive onset is about fifteen to thirty minutes. It supplies no validated combination half-life or organ-impairment PK algorithm. No abuse-safety or absence-of-dependence claim is inferred from historical nonaddictive wording."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "DESCRIPTION",
+          "CLINICAL PHARMACOLOGY"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring and counseling",
+      "assertions": {
+        "paragraphs": [
+          "Verify concentration, age, written dose and calibrated measuring device. Review sedation/excitation, BP/palpitations, urinary problems and breathing symptoms; persistent or worsening illness needs clinical reassessment. Avoid alcohol/hazardous driving and duplicate cough/cold medicines. Review pregnancy, nursing and current/recent MAO inhibitors before dispensing. FDA describes cool-mist humidification, saline and fluids as supportive options for children; use age-appropriate care."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "fda"
+      ],
+      "sourceSections": {
+        "label": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "GENERAL PRECAUTIONS",
+          "INFORMATION FOR PATIENTS",
+          "OVERDOSAGE",
+          "DOSAGE & ADMINISTRATION"
+        ],
+        "fda": [
+          "FDA pediatric safety: below-two decongestant/antihistamine avoidance; voluntary OTC under-four labeling; ingredient duplication and supportive care"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "practice",
+      "card": "Overdose",
+      "assertions": {
+        "paragraphs": [
+          "Seek emergency or Poison Control advice for suspected extra doses or a child’s ingestion. Toxicity can involve CNS depression or agitation, anticholinergic effects, hypertension, arrhythmias and seizures. The selected older treatment text includes induced emesis and other interventions; these are not supplied as home instructions or a validated modern universal protocol. Do not interpret historical survived ingestions as safe doses."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "GENERAL PRECAUTIONS",
+          "INFORMATION FOR PATIENTS",
+          "OVERDOSAGE",
+          "DOSAGE & ADMINISTRATION"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "facts": [
+          [
+            "Manufacturer / distributor",
+            "Alkem Laboratories / Ascend Laboratories"
+          ],
+          [
+            "Appearance",
+            "Clear light pink, butterscotch-flavored oral syrup"
+          ],
+          [
+            "Small bottle",
+            "118 mL · NDC 67877-558-17"
+          ],
+          [
+            "Large bottle",
+            "473 mL · NDC 67877-558-16"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "approval"
+      ],
+      "sourceSections": {
+        "label": [
+          "DESCRIPTION",
+          "INFORMATION FOR PATIENTS",
+          "OVERDOSAGE",
+          "DOSAGE & ADMINISTRATION",
+          "HOW SUPPLIED",
+          "PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"
+        ],
+        "approval": [
+          "ANDA210647 Alkem prescription oral syrup strength; original approval July14,2020; clinical label unavailable on Drugs@FDA"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Each 5 mL contains brompheniramine maleate 2 mg, dextromethorphan hydrobromide 10 mg and pseudoephedrine hydrochloride 30 mg. Selected vehicle includes alcohol 0.95% v/v, sucrose and FD&C Red 40. Verify excipients for the actual product; do not substitute phenylephrine, dexbrompheniramine or a different concentration from the name alone."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "DESCRIPTION",
+          "INFORMATION FOR PATIENTS",
+          "OVERDOSAGE",
+          "DOSAGE & ADMINISTRATION",
+          "HOW SUPPLIED",
+          "PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Store selected product at 20–25°C, keep tightly closed and dispense in a tight light-resistant container. Secure from children; follow the actual expiration. No manufacturer-independent refrigeration rule, freezing permission or compounded beyond-use date is supplied."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "DESCRIPTION",
+          "INFORMATION FOR PATIENTS",
+          "OVERDOSAGE",
+          "DOSAGE & ADMINISTRATION",
+          "HOW SUPPLIED",
+          "PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    }
+  ],
+  "evidence": [
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/brompheniramine-combo.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/brompheniramine-dextromethorphan-pseudoephedrine/brompheniramine-combo.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/036b587a-7bfe-4149-bd05-34a37e3e84b6.xml",
+      "sha256": "f6e9d28f8bca79c59bf9b2afa616f59e7ed2df898105526803bb4a9b351f6c6d"
+    },
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/brompheniramine-combo-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/brompheniramine-dextromethorphan-pseudoephedrine/brompheniramine-combo-sections.json",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/036b587a-7bfe-4149-bd05-34a37e3e84b6.xml",
+      "sha256": "b9669f3f235bbd81cfd4fc98e0fdf58288e210ce74507e0dc5ad29c8b6e014a2"
+    },
+    {
+      "sourceId": "fda",
+      "localEvidence": "/tmp/nas-drug-sources/brompheniramine-fda-kids.html",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/brompheniramine-dextromethorphan-pseudoephedrine/brompheniramine-fda-kids.html",
+      "url": "https://www.fda.gov/drugs/safe-use-over-counter-otc-medicines-children/use-caution-when-giving-cough-and-cold-products-kids",
+      "sha256": "7b9665d47d17832136dd45c7956f86f651d173970a0fab85274594d48e202ae9"
+    },
+    {
+      "sourceId": "approval",
+      "localEvidence": "/tmp/nas-drug-sources/brompheniramine-fda-approval.html",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/brompheniramine-dextromethorphan-pseudoephedrine/brompheniramine-fda-approval.html",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=210647",
+      "sha256": "794ae6719a2f086a38f5290878828d805080d5ca8be46a9dc6da2a409e187016"
+    }
+  ],
+  "sourceDiscrepancies": [
+    "ActualselectedSPLANDA210647 verified against actualFDA productapproval July14,2020; not categorizedunapprovedfromgenericname orotherproductstatus.",
+    "Selectedlabelphysicianestablished6months–undertwo wording conflicts withFDAunder-two decongestant/antihistamineavoidance; no infant dose propagated and currentFDAguidance visible.",
+    "OTCvoluntaryunderfourlabel restriction distinguished fromselectedprescription formalcontra andrecorded2–under6dosetable.",
+    "SelectedMAOIcontra givesno precise washout interval; no14daynumberinvented or universalserotonergicpermission claimed.",
+    "Historicalnonaddictivedextromethorphanwording is not propagatedasabusesafetyevidence; historicalinducedemesisoverdoseinstructions notprovidedashomeprotocol."
+  ],
+  "materialErrors": [],
+  "unresolvedMaterialGaps": [],
+  "scopeExclusions": [
+    "Other manufacturers/foreign products not reviewed; current public label presence does not prove local stock.",
+    "Off-label regimens, compounded stability/crushing/tube protocols, universal organ algorithms and individualized emergency treatment are excluded.",
+    "Infantnumericaldosing,otherconcentrations/OTCforms,universalMAOIwashout/organ-dosealgorithm,homeemesis/reversalprocedures excluded."
+  ],
+  "verification": {
+    "schemaErrors": [],
+    "sectionIds": [
+      "indications",
+      "dosage",
+      "safety",
+      "interactions",
+      "populations",
+      "pharmacology",
+      "practice",
+      "product"
+    ],
+    "safetyCards": 4,
+    "productCards": 3,
+    "heroFacts": 3,
+    "monographSha256": "fe99a967da3168195968a442f727edfefdaa90d70db24332f9531c8c26893dd1",
+    "renderedQA": "Pending parent candidate build/desktop/mobile review; no live claim.",
+    "independentReview": "Pending actual-file independent reviewer."
+  },
+  "sourceAudit": "Full selected primary supporting sections read; current metadata retained separately from historical clinical wording. No paywalled access claimed."
+}

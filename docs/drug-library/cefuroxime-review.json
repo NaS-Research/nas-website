@@ -1,0 +1,947 @@
+{
+  "slug": "cefuroxime",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "A second-generation cephalosporin with distinct oral axetil and parenteral sodium formulations. This profile reviews current selected U.S. tablet and injection labels plus an explicitly legacy 2007/2013 oral-suspension comparison. Selected label gonorrhea regimens and 20-day Lyme course are distinguished from current-served CDC/IDSA guidance; no formulation is interchangeable milligram-for-milligram.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Cefuroxime axetil tablets · Ascend full label",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical PIJanuary 2025; SPL v 25 effective 20251003; API publication Nov 17, 2025. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dd11e4b9-7730-4d3a-81ca-16f15de09759"
+    },
+    {
+      "id": "injection",
+      "title": "Cefuroxime sodium injection · Sagent full label",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical PIJune 2021; APIApril 2026 publication distinct; SPL v 10 effective 20250327; API publication Apr 27, 2026. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a145288-733a-4966-b7ae-dc96eb103d8c"
+    },
+    {
+      "id": "legacy",
+      "title": "Cefuroxime axetil suspension · legacy Ranbaxy label",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical footerSeptember 2007, SPL/APIAugust 2013; comparison only, latest package/availability unverified; SPL v 1 effective 20130819; API publication Aug 21, 2013. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=135e2dfc-eb47-4d04-a903-a081d36c267e"
+    },
+    {
+      "id": "cdc",
+      "title": "CDC STI Treatment Guidelines · gonococcal infections",
+      "publisher": "Centers for Disease Control and Prevention",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/gonorrhea-adults.htm",
+      "note": "2021 guideline currently served; oral cefuroxime nonrecommendation full supporting section checked October 1, 2026."
+    },
+    {
+      "id": "lyme",
+      "title": "AAN/ACR/IDSA 2020 Lyme disease guideline",
+      "publisher": "IDSA / AAN / ACR",
+      "url": "https://www.idsociety.org/practice-guideline/lyme-disease/",
+      "note": "Current served 2020 primary guideline sectionsVI–VII and rationale checked October 1, 2026; erythema migrans duration distinct from product label."
+    }
+  ],
+  "sourceEvidence": {
+    "label": {
+      "splVersion": "25",
+      "effectiveTime": "20251003",
+      "apiPublishedDate": "Nov 17, 2025",
+      "clinicalRevision": "Clinical PIJanuary 2025; SPL v 25 effective 20251003; API publication Nov 17, 2025. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dd11e4b9-7730-4d3a-81ca-16f15de09759",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/dd11e4b9-7730-4d3a-81ca-16f15de09759.xml",
+      "localEvidence": "/tmp/nas-drug-sources/cefuro-tab.xml",
+      "sha256": "1af77918255fcf6bc65f8bce73649c67f88e1b5ff8cb2269054a80d50053a892",
+      "supportingSections": [
+        "1.1 Pharyngitis/Tonsillitis",
+        "1.2 Acute Bacterial Otitis Media",
+        "1.3 Acute Bacterial Maxillary Sinusitis",
+        "1.4 Acute Bacterial Exacerbations of Chronic Bronchitis ",
+        "1.5 Uncomplicated Skin and Skin-Structure Infections",
+        "1.6 Uncomplicated Urinary Tract Infections",
+        "1.7 Uncomplicated Gonorrhea",
+        "1.8 Early Lyme Disease (erythema migrans)",
+        "1.10 Usage",
+        "2.1 Important Administration Instructions",
+        "2.2 Dosage for Cefuroxime Axetil Tablets",
+        "2.5 Dosage in Patients with Impaired Renal Function",
+        "3 DOSAGE FORMS AND STRENGTHS",
+        "4 CONTRAINDICATIONS",
+        "5.1 Anaphylactic Reactions",
+        "5.2 Clostridioides difficile-Associated Diarrhea",
+        "5.3 Potential for Microbial Overgrowth",
+        "5.4 Development of Drug-Resistant Bacteria",
+        "5.6 Interference with Glucose Tests",
+        "6 ADVERSE REACTIONS",
+        "6.1 Clinical Trials Experience",
+        "6.2 Postmarketing Experience",
+        "7.1 Drugs that Reduce Gastric Acidity",
+        "7.2 Probenecid",
+        "7.3 Drug/Laboratory Test Interactions",
+        "8.1 Pregnancy",
+        "8.2 Lactation",
+        "8.4 Pediatric Use",
+        "8.5 Geriatric Use",
+        "8.6 Renal Impairment",
+        "10 OVERDOSAGE",
+        "11 DESCRIPTION",
+        "12.1 Mechanism of Action",
+        "12.3 Pharmacokinetics",
+        "12.4 Microbiology",
+        "14.1 Acute Bacterial Maxillary Sinusitis",
+        "14.2 Early Lyme Disease",
+        "16 HOW SUPPLIED/STORAGE AND HANDLING",
+        "17 PATIENT COUNSELING INFORMATION",
+        "PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"
+      ],
+      "access": "Full clinically relevant public supporting sections read; nonclinical carcinogenesis text not used for claims",
+      "checked": "2026-10-01"
+    },
+    "injection": {
+      "splVersion": "10",
+      "effectiveTime": "20250327",
+      "apiPublishedDate": "Apr 27, 2026",
+      "clinicalRevision": "Clinical PIJune 2021; APIApril 2026 publication distinct; SPL v 10 effective 20250327; API publication Apr 27, 2026. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a145288-733a-4966-b7ae-dc96eb103d8c",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/0a145288-733a-4966-b7ae-dc96eb103d8c.xml",
+      "localEvidence": "/tmp/nas-drug-sources/cefuro-iv.xml",
+      "sha256": "9d080f30626609c2056a422d76b98fad367a6ea5c9da20fc3f00a1cf922272f4",
+      "supportingSections": [
+        "",
+        "DESCRIPTION\n",
+        "CLINICAL PHARMACOLOGY\n",
+        "Mechanism of Action\n",
+        "Mechanism of Resistance\n",
+        "Interaction with Other Antimicrobials\n",
+        "Susceptibility Testing\n",
+        "INDICATIONS AND USAGE\n",
+        "Prevention\n",
+        "CONTRAINDICATIONS\n",
+        "WARNINGS\n",
+        "General\n",
+        "Information for Patients\n",
+        "Drug/Laboratory Test Interactions\n",
+        "Teratogenic Effects\n",
+        "Nursing Mothers\n",
+        "Pediatric Use\n",
+        "Geriatric Use\n",
+        "ADVERSE REACTIONS\n",
+        "Local Reactions\n",
+        "Gastrointestinal\n",
+        "Hypersensitivity Reactions\n",
+        "Blood\n",
+        "Hepatic\n",
+        "Kidney\n",
+        "Postmarketing Experience with Cefuroxime for Injection\n",
+        "Cephalosporin-class Adverse Reactions\n",
+        "OVERDOSAGE\n",
+        "Adults\n",
+        "Impaired Renal Function\n",
+        "Pediatric Patients Above 3 Months of Age\n",
+        "Preparation of Solution and Suspension\n",
+        "For Intramuscular Use\n",
+        "For Intravenous Use\n",
+        "Administration\n",
+        "Intravenous Administration\n",
+        "",
+        "",
+        "",
+        "Intramuscular\n",
+        "Intravenous\n",
+        "Frozen Stability\n",
+        "HOW SUPPLIED\n",
+        "Storage Conditions\n",
+        "REFERENCES\n",
+        "PACKAGE LABEL – PRINCIPAL DISPLAY PANEL – Vial Label\n",
+        "PACKAGE LABEL – PRINCIPAL DISPLAY PANEL – Vial Label\n"
+      ],
+      "access": "Full clinically relevant public supporting sections read; nonclinical carcinogenesis text not used for claims",
+      "checked": "2026-10-01"
+    },
+    "legacy": {
+      "splVersion": "1",
+      "effectiveTime": "20130819",
+      "apiPublishedDate": "Aug 21, 2013",
+      "clinicalRevision": "Clinical footerSeptember 2007, SPL/APIAugust 2013; comparison only, latest package/availability unverified; SPL v 1 effective 20130819; API publication Aug 21, 2013. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=135e2dfc-eb47-4d04-a903-a081d36c267e",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/135e2dfc-eb47-4d04-a903-a081d36c267e.xml",
+      "localEvidence": "/tmp/nas-drug-sources/cefuro-susp.xml",
+      "sha256": "1ca17082279777a09c1a3e122d9b90d280887e9528a214cdb28768fdde5bbcc3",
+      "supportingSections": [
+        "",
+        "DESCRIPTION",
+        "CLINICAL PHARMACOLOGY",
+        "INDICATIONS AND USAGE",
+        "CONTRAINDICATIONS",
+        "WARNINGS",
+        "General",
+        "Information for Patients/Caregivers (Pediatric)",
+        "Drug/Laboratory Test Interactions",
+        "Drug/Drug Interactions",
+        "Pregnancy",
+        "Labor and Delivery",
+        "Nursing Mothers",
+        "Pediatric Use",
+        "Geriatric Use",
+        "ADVERSE REACTIONS",
+        "POSTMARKETING EXPERIENCE WITH CEFUROXIME AXETIL PRODUCTS",
+        "CEPHALOSPORIN-CLASS ADVERSE REACTIONS",
+        "OVERDOSAGE",
+        "DOSAGE AND ADMINISTRATION",
+        "HOW SUPPLIED",
+        "CLINICAL STUDIES",
+        "REFERENCES",
+        "PACKAGE LABEL. PRINCIPAL DISPLAY PANEL. "
+      ],
+      "access": "Full clinically relevant public supporting sections read; nonclinical carcinogenesis text not used for claims",
+      "checked": "2026-10-01"
+    },
+    "cdc": {
+      "url": "https://www.cdc.gov/std/treatment-guidelines/gonorrhea-adults.htm",
+      "localEvidence": "/tmp/nas-drug-sources/cefuro-cdc-gon.html",
+      "sha256": "702be0b0b06aac0d05e38161932693645f23ddc02b4b096f9bfad7204ec3eebd",
+      "checked": "2026-10-01",
+      "version": "CDC2021 current-served / IDSA2020 current-served",
+      "supportingSections": [
+        "CDC gonorrhea alternative regimens and explicit oralcefuroxime nonrecommendation"
+      ],
+      "access": "Full relevant official primary guideline supporting sections read; contextual scope only"
+    },
+    "lyme": {
+      "url": "https://www.idsociety.org/practice-guideline/lyme-disease/",
+      "localEvidence": "/tmp/nas-drug-sources/cefuro-idsa-lyme.html",
+      "sha256": "1b09b9406bda156ac669ab8cb0d7a1694ff3f097c69e4bea968faec6a46c23ab",
+      "checked": "2026-10-01",
+      "version": "CDC2021 current-served / IDSA2020 current-served",
+      "supportingSections": [
+        "IDSA LymeVI–VII recommendations,full evidence/rationale"
+      ],
+      "access": "Full relevant official primary guideline supporting sections read; contextual scope only"
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Oral tablet indications",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Indications and usage"
+        ]
+      },
+      "claims": [
+        "Selected label: susceptible mild/moderate pharyngitis/tonsillitis, maxillary sinusitis, chronic-bronchitis bacterial exacerbation, uncomplicated skin/UTI, uncomplicated gonorrhea and early Lyme. Most adult/adolescent uses ≥13; pediatric otitis/sinusitis tablets require ability to swallow whole. Sinusitis evidence is limited to S. pneumoniae / non-beta-lactamase H. influenzae; not every organism or viral URI. Rheumatic-fever prevention unestablished."
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Injection and guideline context",
+      "sourceIds": [
+        "label",
+        "injection",
+        "cdc",
+        "lyme"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Indications and usage"
+        ],
+        "injection": [
+          "Indications and usage"
+        ],
+        "cdc": [
+          "CDC gonorrhea alternative regimens, explicit oralcefuroxime nonrecommendation"
+        ],
+        "lyme": [
+          "IDSA LymeVI–VII erythemamigrans recommendations/evidence/rationale"
+        ]
+      },
+      "claims": [
+        "Selected IV/IM label includes designated susceptible respiratory/urinary/skin infections, sepsis, meningitis, gonococcal and bone/joint infections and surgical prophylaxis. This does not make it preferred empiric treatment for every serious infection. CDC explicitly does not recommend oral cefuroxime for gonorrhea; IDSA erythema migrans guidance uses 14 days cefuroxime rather than label 20 days. Use current specialist/procedure guidance; no universal preference inferred from label."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Current tablet label regimens",
+      "sourceIds": [
+        "label",
+        "cdc",
+        "lyme"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Dosage and administration",
+          "Instructions for use",
+          "Population restrictions"
+        ],
+        "cdc": [
+          "CDC gonorrhea alternative regimens, explicit oralcefuroxime nonrecommendation"
+        ],
+        "lyme": [
+          "IDSA LymeVI–VII erythemamigrans recommendations/evidence/rationale"
+        ]
+      },
+      "claims": [
+        [
+          "≥13 years pharyngitis/sinusitis",
+          "250 mg every 12 hours 10 days."
+        ],
+        [
+          "≥13 years bronchitis exacerbation/skin",
+          "250 or 500 mg every 12 hours 10 days; no universal first-line guideline claim."
+        ],
+        [
+          "≥13 years uncomplicated UTI",
+          "250 mg every 12 hours 7–10 days."
+        ],
+        [
+          "Early Lyme≥13",
+          "Label 500 mg every 12 hours 20 days; current-served IDSA erythema migrans recommendation 14 days. Prescriber selects disease-specific course."
+        ],
+        [
+          "Gonorrhea≥13",
+          "Label 1,000 mg single oral dose; CDC does not recommend oral cefuroxime. This label comparator is not current treatment advice."
+        ],
+        [
+          "Below 13, can swallow whole",
+          "Label 250 mg every 12 hours 10 days for otitis/sinusitis; do not crush or extrapolate to children unable to swallow."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Tablet administration and renal intervals",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Dosage and administration",
+          "Instructions for use",
+          "Population restrictions"
+        ]
+      },
+      "claims": [
+        "Swallow whole with/without food; crushing gives persistent bitterness. Tablets and oral suspension are not bioequivalent/mg-for-mg substitutable. Adult CrCl ≥30 mL/min no adjustment; 10 to<30 standard individual dose every 24 hours; <10 without HD every 48 hours. Hemodialysis adds one standard dose after each session. This adult table is not an unverified pediatric renal algorithm."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Current injection dose contexts",
+      "sourceIds": [
+        "injection"
+      ],
+      "sourceSectionsById": {
+        "injection": [
+          "Dosage and administration",
+          "Instructions for use",
+          "Population restrictions"
+        ]
+      },
+      "claims": [
+        [
+          "Adults, usual susceptible infection",
+          "750 mg–1.5 g every 8 hours, usually 5–10 days; 750 mg for specified uncomplicated infections, 1.5 g for severe/bone-joint. Life-threatening/less-susceptible infection may require 1.5 g every 6 hours; meningitis≤3 g every 8 hours. Clinical/source control review essential."
+        ],
+        [
+          "Pediatric table above 3 months",
+          "Most infections 50–100 mg/kg/day divided every 6–8 hours; severe 100 mg/kg/day≤maximum adult. Bone/joint 150 mg/kg/day divided every 8 hours≤maximum adult; meningitis 200–240 mg/kg/day IV divided every 6–8 hours. Below 3 months unestablished; exact 3-month boundary needs product/prescriber review."
+        ],
+        [
+          "Adult renal dosing",
+          "CrCl >20: 750 mg–1.5 g every 8 hours; 10–20: 750 mg every 12 hours; <10: 750 mg every 24 hours. Further dose after HD. Pediatric renal insufficiency: modify frequency consistently with adult recommendations through clinical team, no extra formula."
+        ],
+        [
+          "Other label uses",
+          "Uncomplicated gonorrhea label 1.5 g IM once at 2 sites plus 1 g oral probenecid is legacy regimen context, not contemporary CDC recommendation. Surgical prophylaxis: 1.5 g IV 30–60 minutes preincision, 750 mg every 8 hours if prolonged; special cardiac label 1.5 g induction/every 12 hours total 6 g. Current procedure-specific prophylaxis review required; no blanket prolonged prophylaxis advice."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Injection administration and legacy liquid",
+      "sourceIds": [
+        "injection",
+        "legacy",
+        "label"
+      ],
+      "sourceSectionsById": {
+        "injection": [
+          "Dosage and administration",
+          "Instructions for use",
+          "Population restrictions"
+        ],
+        "legacy": [
+          "Dosage and administration",
+          "Instructions for use",
+          "Population restrictions"
+        ],
+        "label": [
+          "Dosage and administration",
+          "Instructions for use",
+          "Population restrictions"
+        ]
+      },
+      "claims": [
+        "Selected direct IV over 3–5 minutes; separate from aminoglycoside solutions, no sodium-bicarbonate diluent. Qualified aseptic preparation using exact vial/diluent instructions, not oral-tablet substitution. Legacy Ranbaxy suspension label (clinical 2007, API 2013) describes 125/250 mg per 5 mL, food/shake-before-use and pediatric 3 months–12 years 20 mg/kg/day divided BID (max 500 mg/day) for pharyngitis; 30 mg/kg/day divided BID (max 1,000 mg/day) for otitis/sinusitis/impetigo, 10 days. Historical comparison only: no verified latest package/current stock, obtain current formulation review before prescribing/preparing; do not extrapolate tablet renal table."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "label",
+        "injection"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ],
+        "injection": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ]
+      },
+      "claims": [
+        "Stop for serious allergy/anaphylaxis and institute urgent treatment. Review prior beta-lactam/other allergy before therapy; severe skin syndromes and allergic cardiac ischemia are reported.",
+        "C. difficile diarrhea can occur during therapy or>2 months afterward. Severe watery/bloody stools, pain/fever need prompt evaluation, not unreviewed antidiarrheal treatment.",
+        "Renal impairment requires correct interval/dose adjustment; excessive levels can cause seizures/encephalopathy. Injection renal-status monitoring particularly important with maximal doses/severe illness/nephrotoxic combinations.",
+        "Prolonged use can promote resistant bacteria/fungal superinfection. Use susceptibility/disease information and reassess nonresponse.",
+        "Injection: monitor prothrombin time if risk such as renal/hepatic impairment, malnutrition, prolonged therapy or anticoagulation; pediatric meningitis hearing loss/persistent CSF cultures reported. Do not infer preferred meningitis therapy."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "label",
+        "injection"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ],
+        "injection": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ]
+      },
+      "claims": [
+        "Current selected tablet: known hypersensitivity to cefuroxime axetil or other beta-lactam antibacterials. Injection formal contraindication: known cephalosporin allergy; penicillin sensitivity requires caution/review per warnings. Preserve label distinctions rather than invent one formal list for every product."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning · status",
+      "sourceIds": [
+        "label",
+        "injection",
+        "legacy"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ],
+        "injection": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ],
+        "legacy": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ]
+      },
+      "claims": [
+        "Selected current tablet/injection and legacy suspension labels have no boxed warning. Serious allergy, colitis and neurotoxicity/renal-adjustment risks remain significant."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "sourceIds": [
+        "label",
+        "injection"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ],
+        "injection": [
+          "Contraindications",
+          "Warnings",
+          "Precautions",
+          "Adverse reactions",
+          "Overdosage",
+          "Boxed warning status"
+        ]
+      },
+      "claims": [
+        "Oral diarrhea, nausea/vomiting, liver-enzyme abnormalities and occasional blood/skin/allergic effects; Lyme treatment may cause Jarisch–Herxheimer reaction. Injection local phlebitis, GI symptoms, allergy, blood-count/liver/renal abnormalities reported. Severe blistering skin reaction, hemolysis/seizures are reported. Overdose can cause convulsions/encephalopathy; urgent professional assessment, with HD/peritoneal dialysis capable of lowering levels. No home dialysis or antidote protocol."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Oral interaction instructions",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Drug interactions",
+          "Precautions",
+          "Clinical pharmacology"
+        ]
+      },
+      "claims": [
+        "Tablets ≥1 hour before or ≥2 hours after short-acting antacids; avoid H2 antagonists/PPIs per selected label because reduced absorption may negate food benefit. Oral probenecid coadministration not recommended due to increased cefuroxime exposure; do not generalize legacy parenteral gonorrhea co-use into all regimens."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Injection and laboratory interactions",
+      "sourceIds": [
+        "label",
+        "injection"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Drug interactions",
+          "Precautions",
+          "Clinical pharmacology"
+        ],
+        "injection": [
+          "Drug interactions",
+          "Precautions",
+          "Clinical pharmacology"
+        ]
+      },
+      "claims": [
+        "Potent diuretics/aminoglycosides increase renal-risk concern; monitor and administer aminoglycosides separately, not same solution. In-vitro chloramphenicol antagonism is laboratory evidence, not a quantified clinical dose rule. Copper-reduction urinary glucose tests can be falsely positive and ferricyanide blood glucose falsely negative; glucose oxidase/hexokinase methods recommended. Creatinine alkaline picrate assay not interfered with."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "sourceIds": [
+        "label",
+        "injection"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ],
+        "injection": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ]
+      },
+      "claims": [
+        "Adult oral interval adjustment starts CrCl <30; parenteral table uses>20, 10–20, <10 ranges. Do not combine tables. Injection pediatric renal frequency adjusted consistently with adult recommendations by clinical team; oral pediatric PK renal extrapolation unsupported. No numerical hepatic adjustment supplied; monitor coagulation risk/organ status as clinically indicated."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "sourceIds": [
+        "label",
+        "injection",
+        "legacy"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ],
+        "injection": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ],
+        "legacy": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ]
+      },
+      "claims": [
+        "Current tablet below 13 otitis/sinusitis only if can swallow whole; oral axetil pediatric approval support 3 months–12 years does not establish every tablet indication or mg conversion. Injection below 3 months unestablished; dose table above 3 months. Legacy liquid dose/status separately bounded. Older adults may have reduced renal function; adjust actual function, no age-only routine reduction."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "sourceIds": [
+        "label",
+        "injection"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ],
+        "injection": [
+          "Pregnancy",
+          "Nursing mothers",
+          "Pediatric use",
+          "Geriatric use",
+          "Clinical pharmacology"
+        ]
+      },
+      "claims": [
+        "Current oral observational cephalosporin pregnancy data have not identified associated major risks, but do not prove absence; injection human controlled data limited; use clearly needed. Cefuroxime enters human milk; current oral label balances breastfeeding benefit, maternal need / infant risk and notes limited infant-effect data; injection cautions. No absolute pregnancy guarantee or legacy automatic nursing interruptions transferred as universal current advice."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and resistance",
+      "sourceIds": [
+        "label",
+        "injection"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Clinical pharmacology",
+          "Microbiology",
+          "Description"
+        ],
+        "injection": [
+          "Clinical pharmacology",
+          "Microbiology",
+          "Description"
+        ]
+      },
+      "claims": [
+        "Bactericidal inhibition of cell-wall synthesis; some beta-lactamase stability does not mean ESBL/carbapenemase/MRSA coverage. Resistance can involve beta-lactamase hydrolysis, altered PBPs, permeability/efflux; local susceptibility varies. No universal organism coverage or old breakpoint copied."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Route-specific PK",
+      "sourceIds": [
+        "label",
+        "injection"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Clinical pharmacology",
+          "Microbiology",
+          "Description"
+        ],
+        "injection": [
+          "Clinical pharmacology",
+          "Microbiology",
+          "Description"
+        ]
+      },
+      "claims": [
+        "Oral axetil rapidly hydrolyzed by esterases; tablet absorption increases with food, bioavailability 37% fasted to 52% fed, despite with / without food labeling. Adult postmeal half-life about 1.2–1.3 hours; cefuroxime excreted unchanged in urine. IV / IM half-life about 80 minutes, approximately 89% renal excretion within 8 hours. Renal impairment prolongs exposure; tablets/suspension not bioequivalent. No universal oral-to-IV switch calculation."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "sourceIds": [
+        "label",
+        "injection",
+        "cdc",
+        "lyme"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Patient information",
+          "Warnings",
+          "Precautions",
+          "Instructions for use"
+        ],
+        "injection": [
+          "Patient information",
+          "Warnings",
+          "Precautions",
+          "Instructions for use"
+        ],
+        "cdc": [
+          "CDC gonorrhea alternative regimens, explicit oralcefuroxime nonrecommendation"
+        ],
+        "lyme": [
+          "IDSA LymeVI–VII erythemamigrans recommendations/evidence/rationale"
+        ]
+      },
+      "claims": [
+        "Review allergy, site, culture, renal function and exact formulation, dose/course. Monitor response, superinfection and severe delayed diarrhea; injection renal status and risk-based prothrombin time. Assess CBC/liver/renal abnormalities if clinically indicated, not an invented universal lab schedule. Use current CDC for gonorrhea and IDSA erythema migrans guidance versus label comparators."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "sourceIds": [
+        "label",
+        "injection",
+        "legacy"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Patient information",
+          "Warnings",
+          "Precautions",
+          "Instructions for use"
+        ],
+        "injection": [
+          "Patient information",
+          "Warnings",
+          "Precautions",
+          "Instructions for use"
+        ],
+        "legacy": [
+          "Patient information",
+          "Warnings",
+          "Precautions",
+          "Instructions for use"
+        ]
+      },
+      "claims": [
+        "Take exact prescribed course; do not share/use for viral illness. Swallow tablets whole, report inability to swallow and obtain verified alternative rather than crush. Review antacid/PPI/probenecid plan; no self-switch tablet to liquid/injection. Seek urgent care for allergy, severe rash, seizures or severe diarrhea even months later. Legacy liquid mixing/doses cannot identify current package."
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative oral tablets",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Description",
+          "How supplied",
+          "Storage",
+          "SPL product panels"
+        ]
+      },
+      "claims": [
+        [
+          "250 mg",
+          "Blue capsule-shaped biconvex film-coated, 204 debossed; 20-tablet bottle NDC 67877-215-20."
+        ],
+        [
+          "500 mg",
+          "Similar blue tablet, 203 debossed; 20-tablet bottle NDC 67877-216-20."
+        ],
+        [
+          "Strength basis",
+          "Cefuroxime equivalent as axetil; Ascend/Alkem prescription tablet."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "label",
+        "injection",
+        "legacy"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Description",
+          "How supplied",
+          "Storage",
+          "SPL product panels"
+        ],
+        "injection": [
+          "Description",
+          "How supplied",
+          "Storage",
+          "SPL product panels"
+        ],
+        "legacy": [
+          "Description",
+          "How supplied",
+          "Storage",
+          "SPL product panels"
+        ]
+      },
+      "claims": [
+        [
+          "Injection",
+          "Sagent 750 mg vial NDC 25021-118-10 or 1.5 g vial NDC 25021-119-20; cefuroxime equivalent as sodium, single-dose sterile powder. Sodium about 54.2 mg (2.4 mEq) per gram activity."
+        ],
+        [
+          "Legacy oral suspension",
+          "Ranbaxy 125/250 mg per 5 mL after reconstitution; historical 2007/2013 record, not latest availability verified. Not mg-for-mg tablet substitute. Selected label aspartame phenylalanine 4.5 mg per 5 mL."
+        ],
+        [
+          "Scope",
+          "Other brands, premixed frozen injection, intracameral/international/off-label uses and latest liquid status require separate exact source review. No current stock claim."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "label",
+        "injection",
+        "legacy"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Description",
+          "How supplied",
+          "Storage",
+          "SPL product panels"
+        ],
+        "injection": [
+          "Description",
+          "How supplied",
+          "Storage",
+          "SPL product panels"
+        ],
+        "legacy": [
+          "Description",
+          "How supplied",
+          "Storage",
+          "SPL product panels"
+        ]
+      },
+      "claims": [
+        "Current tablets 20–25°C, close cap securely. Injection powder 20–25°C protected from light; qualified reconstitution: concentrated IV / IM 24 hours room temperature/48 hours refrigerated 5°C per label; diluted IV stability depends on exact diluent/concentration (up to 7 days refrigerated in listed conditions), not universal sterility/BUD authorization. Legacy liquid 2–8°C after mixing/discard 10 days, not applicable to unverified current package. No household mixing/freezing protocol."
+      ]
+    },
+    {
+      "section": "hero/essential",
+      "card": "Scope, essential and three tuple facts",
+      "sourceIds": [
+        "label",
+        "injection",
+        "legacy",
+        "cdc",
+        "lyme"
+      ],
+      "sourceSections": [
+        "Indications",
+        "Strengths",
+        "Warnings",
+        "Product"
+      ],
+      "claims": [
+        "A second-generation cephalosporin with distinct oral axetil and parenteral sodium formulations. This profile reviews current selected U.S. tablet and injection labels plus an explicitly legacy 2007/2013 oral-suspension comparison. Selected label gonorrhea regimens and 20-day Lyme course are distinguished from current-served CDC/IDSA guidance; no formulation is interchangeable milligram-for-milligram.",
+        "Cephalosporin/beta-lactam allergy, kidney accumulation and severe delayed diarrhea require attention. Breathing difficulty, swelling, severe blistering rash or seizures need urgent care. Severe watery/bloody diarrhea can beC. difficile even months later; do not treat it as an ordinary nuisance.",
+        [
+          "Therapeutic class",
+          "Second-generation cephalosporin"
+        ],
+        [
+          "Oral formulation",
+          "Axetil tablets · not equivalent to suspension"
+        ],
+        [
+          "Injection formulation",
+          "Sodium salt · IV/IM product-specific dosing"
+        ]
+      ]
+    }
+  ],
+  "materialErrors": [],
+  "gaps": [
+    {
+      "material": false,
+      "topic": "Legacy oral-suspension source",
+      "finding": "Only retainedRanbaxyclinicalSeptember2007/SPLAugust2013 record identified;currentCeftinAPIqueryempty,no verified latestliquidpackage.",
+      "resolution": "Explicit historicalcomparison only, nocurrentstock/latestlabel assurance; current exactpackage review required before prescribing/preparing. No tablet-to-liquidmg substitution or extrapolated pediatricrenal regimen."
+    },
+    {
+      "material": false,
+      "topic": "Label vs guideline gonorrhea",
+      "resolution": "Oral1g/IM1.5g+probenecid retainedlabel context;CDCcurrent-served2021 expresslynotrecommend oralcefuroxime, specialist current-guideline review, no treatmentadvicefromlegacy comparator."
+    },
+    {
+      "material": false,
+      "topic": "Lyme duration",
+      "resolution": "Label20days distinguished from current-servedAAN/ACR/IDSA2020 erythemamigrans14day recommendation;no universalLyme-stagecourse."
+    },
+    {
+      "material": false,
+      "topic": "Surgical prophylaxis",
+      "resolution": "Current-servedlabelincluding oldcardiac6g regimen identified aslabel context, not universalcontemporaryprophylaxis endorsement. Procedure-specificguidance review required."
+    },
+    {
+      "material": false,
+      "topic": "Pediatric boundary/renal",
+      "resolution": "Injectiondose headingabove3months vsbelow3unestablished, exact3month clinicalreview; oralpediatricwhole-swallowtable and3months12yearsupport distinguished. AdultoralCrCl30vsIV20tables notmerged."
+    },
+    {
+      "material": false,
+      "topic": "Other safety updates",
+      "resolution": "No old10%beta-lactamcrossallergyrate,currentCdiffdrug ranking,universaloralcontraceptivefailure claim,legacyautomaticnursinginterruption oroldbreakpoints propagated."
+    },
+    {
+      "material": false,
+      "topic": "Injection storage",
+      "resolution": "Labelpotencystability distinguishesconcentrated/diluteIV;notuniversalsterileBUD authorization, pharmacyexactdiluent/asepticreview."
+    }
+  ],
+  "exclusions": [
+    "Unverified other manufacturers/combinations/non-U.S. regimens, off-label algorithms or preferred guideline rankings; current stock; universal laboratory schedules; independent switches or home overdose protocols."
+  ],
+  "validation": {
+    "schema": "validateMonograph: [] (verified after writing)",
+    "renderedPage": "Pending parent natural 390 px integration QA"
+  },
+  "monographSha256": "b829f8cc8b9a6d8e2685a1f2bea2b9d2fbc159eb398a730df738087bb0295131",
+  "sourceInterpretationNotes": [
+    "Clinical revision distinct from SPL effectiveTime/API publication. Original focused summaries of current full public supporting text.",
+    "Exact APAP eight sections, four core Safety cards, three Product cards and three tuple facts. No APAP-specific clinical content."
+  ]
+}

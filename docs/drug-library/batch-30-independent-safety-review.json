@@ -1,0 +1,564 @@
+{
+  "reviewDate": "2026-10-01",
+  "scope": "Independent targeted critical-assertion primary-source review. Only enumerated assertions independently verified; not exhaustive second clinical signoff, browser QA or build verification.",
+  "status": "complete_targeted_review",
+  "profiles": [
+    {
+      "drug": "benzoyl-peroxide",
+      "fileSha256": "3107aeed8175820adb03b3a5b821891f8d8a9b664a01ba8acda4ecb04f3127e2",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Selected4%/10%wash massage1–2min rinse/patdry initialonce/day increase2–3ifneeded/tolerated, reducedrynessonce/everyotherday. No printed numeric pediatric age cutoff invented. Leave-on10%gel distinct thin layer.",
+          "sourceId": "pan4",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7b301b94-3cc8-b05b-e053-2991aa0aa561",
+          "sourceSection": "Drug Facts Directions",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Epsolay approved adult inflammatoryrosacea5%cream once daily pea-sized EACH forehead/chin/nose/eachcheek, primefirstdrop, avoideyes/lips/mouth, discard60daysafterfirstuse. Component/benzoylperoxideallergy formal contraindication.",
+          "sourceId": "eps",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=641981e6-460b-44dd-8146-306c47e5367c",
+          "sourceSection": "Sections1–4",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Official March2025 testing resulted limited product/lot retailrecalls, no blanket withdrawal or class boxed warning. Selected OTCacne monograph and EpsolayNDA scope separate.",
+          "sourceId": "fda",
+          "sourceUrl": "https://www.fda.gov/drugs/drug-alerts-and-statements/limited-number-voluntary-recalls-initiated-after-fda-testing-acne-products-benzene-findings-show",
+          "sourceSection": "March11,2025 official statement",
+          "access": "Official full current-served FDA statement independently opened and read; no all-product assay claim.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "bpo-pan4": {
+          "path": "/tmp/nas-drug-sources/bpo-pan4.xml",
+          "sha256": "ea9cad10db8d9feb0886105c31b6a9ca1cbb9bf078ebf0b2c3b9086081242460"
+        },
+        "bpo-pan10": {
+          "path": "/tmp/nas-drug-sources/bpo-pan10.xml",
+          "sha256": "69c2b92e53d0ded9e0cc23a801fea1257c4338aeca8abe3daf11a918e641b7d7"
+        },
+        "bpo-gel": {
+          "path": "/tmp/nas-drug-sources/bpo-gel.xml",
+          "sha256": "655d21c15571933d70298aded14baf6485f95d763405e104b0f7c87983fcd559"
+        },
+        "bpo-epsolay": {
+          "path": "/tmp/nas-drug-sources/bpo-epsolay.xml",
+          "sha256": "e249283406c6b7430aa843d76cd8dd9f48d80f1af3323319e0d4da831bcf3346"
+        }
+      }
+    },
+    {
+      "drug": "ciprofloxacin-dexamethasone",
+      "fileSha256": "3bbdf5cc5fa9c35be8288110188801a5c0dcfe3f6b9f0dc520225e67a00ae4db",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Otic0.3%ciprofloxacin/0.1%dexamethasone FOUR dropsBID7days; AOMtubespediatric≥6months versus AOE≥6months/adults distinct. Fourdrops0.14mL=0.42mgcipro/0.14mgdex.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=780a5554-54ef-4294-b681-8c5300b028b6",
+          "sourceSection": "Sections1–3",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Warm1–2min/shake immediately; AOMtubes traguspump5, earup60seconds; AOEIFU upward/backward outer-earpull, no added requiredtube maneuver. Oticonly/noeyeorinjection/discardaftercourse.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=780a5554-54ef-4294-b681-8c5300b028b6",
+          "sourceSection": "Section2 and exact Instructions for Use",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Formal quinolone/componenthypersensitivity and viral/fungaloticinfection restrictions. No systemicfluoroquinolonebox transplant. Actual SportpharmrelabeledDrReddy source identity agrees current package record.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=780a5554-54ef-4294-b681-8c5300b028b6",
+          "sourceSection": "Sections4,16 and SPL metadata",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "cipro-dex": {
+          "path": "/tmp/nas-drug-sources/cipro-dex.xml",
+          "sha256": "c06d1af4bdc943220e14aecbdac45903e222784905d0767e30c64fd11812e2af"
+        }
+      }
+    },
+    {
+      "drug": "phenazopyridine",
+      "fileSha256": "80bd3f21fded303c10706cd702051ebef01e3bdfaea3139a05a79802a00e9169",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Adult prescription 200 mg three times daily after meals; with UTI antibacterial treatment no more than two days. Formal allergy and renal insufficiency contraindications; no invented numerical renal threshold.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=165d01d4-a9f7-2293-e054-00144ff8d46c",
+          "sourceSection": "Dosage, Indications, Contraindications",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Age 12 and older: two 95 mg tablets three times daily after meals with water for at most two days; under 12 ask clinician.",
+          "sourceId": "otc",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3d0298b7-eaec-488b-9cab-19af4614ff53",
+          "sourceSection": "Drug Facts Directions",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Maximum strength age 12 and older: two 99.5 mg tablets three times daily, at most two days. Listed unapproved drug other is not FDA approval.",
+          "sourceId": "max",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b4874fe2-d98b-4b5c-baad-d75070947842",
+          "sourceSection": "Drug Facts Directions; marketing category",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning · status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "pyridium": {
+          "path": "/tmp/nas-drug-sources/pyridium.xml",
+          "sha256": "c9ad2dbfae607e2b29dbbd8956845d06b90e6f8f2b6d0ddd66f88035b91a49f6"
+        },
+        "azo95": {
+          "path": "/tmp/nas-drug-sources/azo95.xml",
+          "sha256": "0ea8e189e8021312079380a9376b79b15fae3fcb4625e3c64270c585772f3f7a"
+        },
+        "azo995": {
+          "path": "/tmp/nas-drug-sources/azo995.xml",
+          "sha256": "4ff8f144341271aa54b445615653c660a00fbd751d4f96fb64dea6e7e12dfc91"
+        }
+      }
+    },
+    {
+      "drug": "cefuroxime",
+      "fileSha256": "b829f8cc8b9a6d8e2685a1f2bea2b9d2fbc159eb398a730df738087bb0295131",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Oral adult renal schedule CrCl at least30 usual; 10–less than30 usual individual dose every24h; below10 non-HD every48h; additional usual dose after HD. Whole-swallowed tablet and suspension not milligram-for-milligram substitutes.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dd11e4b9-7730-4d3a-81ca-16f15de09759",
+          "sourceSection": "Sections2.2–2.5",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "IV pediatric ABOVE3months total DAILY50–100mg/kg divided6–8h, joint150/day and meningitis200–240/day divided; not per-dose amounts. Adult renal greater20 usual,10–20 750mg12h,below10 750mg24h; additional post-HD dose.",
+          "sourceId": "injection",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a145288-733a-4966-b7ae-dc96eb103d8c",
+          "sourceSection": "Dosage and administration",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Explicit historical suspension reference ages3months–12years:20mg/kg/day divided BID max500/day pharyngitis;30mg/kg/day divided BID max1000/day other selected infections;10days. Shake, give with food, refrigerate and discard10days. No current stock claim.",
+          "sourceId": "legacy",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=135e2dfc-eb47-4d04-a903-a081d36c267e",
+          "sourceSection": "Legacy label Dosage and administration",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "CDC current gonorrhea guidance does not recommend oral cefuroxime; legacy label1g single-dose is not presented as contemporary recommended gonorrhea treatment.",
+          "sourceId": "cdc",
+          "sourceUrl": "https://www.cdc.gov/std/treatment-guidelines/gonorrhea-adults.htm",
+          "sourceSection": "Alternative regimens",
+          "access": "Current full official CDC page independently read, focused alternative-regimen paragraph.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "IDSA erythema migrans cefuroxime duration14days differs from label20days; separate disease scope and source attribution preserved.",
+          "sourceId": "lyme",
+          "sourceUrl": "https://www.idsociety.org/practice-guideline/lyme-disease/",
+          "sourceSection": "RecommendationVII",
+          "access": "Current full official IDSA guideline page independently read, recommendationVII and evidence.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning · status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "cefuro-tab": {
+          "path": "/tmp/nas-drug-sources/cefuro-tab.xml",
+          "sha256": "1af77918255fcf6bc65f8bce73649c67f88e1b5ff8cb2269054a80d50053a892"
+        },
+        "cefuro-iv": {
+          "path": "/tmp/nas-drug-sources/cefuro-iv.xml",
+          "sha256": "9d080f30626609c2056a422d76b98fad367a6ea5c9da20fc3f00a1cf922272f4"
+        },
+        "cefuro-susp": {
+          "path": "/tmp/nas-drug-sources/cefuro-susp.xml",
+          "sha256": "1ca17082279777a09c1a3e122d9b90d280887e9528a214cdb28768fdde5bbcc3"
+        }
+      }
+    },
+    {
+      "drug": "indomethacin",
+      "fileSha256": "bd0d99b7d28d7b8ddd47b627a050b0e99773ae902c376a3c63b2dcf0be6fad41",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "IR arthritis25mg BID/TID weekly total-day increments25/50 to150–200max200/day. Shoulder75–150/day divided3–4 usual7–14days; gout50TIDthen rapidly reduce after pain tolerable. Pediatric exceptional≥2years1–2mg/kg/day divided, usualmax3mg/kg/day or150–200whicheverless, not established≤14 or extrapolated IV.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3785c914-0037-49ef-b6f5-a5e868ae490b",
+          "sourceSection": "Sections2.2–2.4,8.4",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "75mg once may substitute IR25TID and75BID IR50TID with differing blood levels; no acute gout. IR200mg section is not ER200mg authorization.",
+          "sourceId": "er",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=12821a3a-b5f2-4415-84c9-0a30a4725f1e",
+          "sourceSection": "Section2.1",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "50mg suppository oral-dose guidance does not establish cut25mg dose; combined oral/rectal total≤200/day. Formal proctitis/recent rectal bleeding contraindications in addition to NSAID restrictions.",
+          "sourceId": "rectal",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b36645c-de5e-4263-ae06-2f6ff6a9add2",
+          "sourceSection": "Sections2.2–2.3,4",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "indomethacin-ir": {
+          "path": "/tmp/nas-drug-sources/indomethacin-ir.xml",
+          "sha256": "6618e899b18a636c148dbb18ae4d02a53c4673937bb62f48550df2f36431b955"
+        },
+        "indomethacin-er": {
+          "path": "/tmp/nas-drug-sources/indomethacin-er.xml",
+          "sha256": "d891b728eaba8fa94cc00fa94348cbc9cf1f84ac638fd9d396e5824099e23606"
+        },
+        "indomethacin-rectal": {
+          "path": "/tmp/nas-drug-sources/indomethacin-rectal.xml",
+          "sha256": "c00ac17dddea641c18c718178c15808f534c859f5c7a61cf471079bb06f8a402"
+        }
+      }
+    },
+    {
+      "drug": "brompheniramine-dextromethorphan-pseudoephedrine",
+      "fileSha256": "fe99a967da3168195968a442f727edfefdaa90d70db24332f9531c8c26893dd1",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Selected syrup each5mL2mg brompheniramine/30mg pseudoephedrine/10mg DM. ≥12 10mLq4h;6–<12 5mL;2–<6 2.5mL;max6doses/day. No infant numeric regimen supplied.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=036b587a-7bfe-4149-bd05-34a37e3e84b6",
+          "sourceSection": "Dosage; How supplied",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Formal newborn/premature,nursing,severe hypertension/severe coronary disease,allergy restrictions; no MAOI use. Lower-respiratory asthma treatment excluded; history asthma separate precaution. No invented washout number.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=036b587a-7bfe-4149-bd05-34a37e3e84b6",
+          "sourceSection": "Contraindications",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "FDA advises no cough/cold antihistamine/decongestant below2 due serious/fatal risk, distinct voluntary OTCunder4 relabeling. No executable infant dose published.",
+          "sourceId": "fda",
+          "sourceUrl": "https://www.fda.gov/drugs/safe-use-over-counter-otc-medicines-children/use-caution-when-giving-cough-and-cold-products-kids",
+          "sourceSection": "Pediatric safety",
+          "access": "Full current official FDA safety page independently read.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "ANDA210647 Alkem original approval2020-07-14 current prescription syrup2/10/30 per5mL; not misclassified unapproved. FDA does not supply clinical label on that record.",
+          "sourceId": "approval",
+          "sourceUrl": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=210647",
+          "sourceSection": "Product and original approvals",
+          "access": "Current official Drugs@FDA product/history page independently read.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "brompheniramine-combo": {
+          "path": "/tmp/nas-drug-sources/brompheniramine-combo.xml",
+          "sha256": "f6e9d28f8bca79c59bf9b2afa616f59e7ed2df898105526803bb4a9b351f6c6d"
+        }
+      }
+    },
+    {
+      "drug": "sulfacetamide-sulfur",
+      "fileSha256": "cad83c3160ecb2ff4ca514d94e88d8cbdd3e7cd4d545dfb54e523258086db781",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Selected10%/5% gram-based cleanser:wet skin,lather10–20seconds,rinse once/twice daily. Kidney disease and sulfonamide/sulfur/ingredient hypersensitivity restrictions; listed unapproved drug other not approval. Missing referenced booklet not falsely accessed.",
+          "sourceId": "cleanser",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2a8c6cc3-62b6-4682-9670-df9c0e6cb2e1",
+          "sourceSection": "Dosage,Contraindications,approval category",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Selected100/50mg per mL lotion:shake,cleanse,thin layer1–3times/day. Not gram-density substitute for wash; kidney disease/allergy restrictions and serious topical sulfonamide SJS/lupus warnings retained.",
+          "sourceId": "lotion",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1352eff6-8b9e-473d-9acf-c0086e1d0917",
+          "sourceSection": "Description,Dosage,Contraindications,Warnings",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Selected98/48mg per gram wash:shake,lather10–20seconds,rinse once/twice daily. Kidney disease/allergy restrictions and unapproved drug other status retained.",
+          "sourceId": "wash",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1ba8bb47-6f7a-28ec-e063-6394a90a8eb3",
+          "sourceSection": "Description,Dosage,Contraindications,approval category",
+          "access": "Retained full selected primary SPL XML and relevant sections independently read; no additional live page access claimed for this assertion.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed-warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "sulfs-cleanser": {
+          "path": "/tmp/nas-drug-sources/sulfs-cleanser.xml",
+          "sha256": "33b3e23436a32a047d6f79dcb2b401082184bd0d72b188e8b75557ba726361a2"
+        },
+        "sulfs-lotion": {
+          "path": "/tmp/nas-drug-sources/sulfs-lotion.xml",
+          "sha256": "1b32c271e97294578b26a6884526380863f4f5195edd037716e6383e19d99377"
+        },
+        "sulfs-emulsion": {
+          "path": "/tmp/nas-drug-sources/sulfs-emulsion.xml",
+          "sha256": "01e6d26dd33c9709fca5a6025ed91fc18ae7d82686935a4fb6790c78e8eb4d26"
+        }
+      }
+    },
+    {
+      "drug": "thiamine",
+      "fileSha256": "26f4c443c3f82db934ef5d1236de564d8f5341beaf085af6fbb1dfdabaed3ebb",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Selected Avet injection is 100 mg/mL for IM or slow IV administration. Beriberi label regimen is 10–20 mg IM three times daily up to two weeks; historical Wernicke label regimen is 100 mg IV initially then 50–100 mg IM daily, explicitly separated from current specialist guidance.",
+          "sourceId": "thiaminj",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=764d608a-d821-4447-85e1-6af297abb4c1",
+          "sourceSection": "Description; Dosage and Administration",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Ingredient hypersensitivity is contraindicated. IV/IM hypersensitivity deaths and aluminum accumulation with impaired kidney function/premature neonates are warned; a negative skin test does not assure safety.",
+          "sourceId": "thiaminj",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=764d608a-d821-4447-85e1-6af297abb4c1",
+          "sourceSection": "Contraindications; Warnings",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "ASAM prevention distinguishes ambulatory oral 100 mg daily and typical inpatient IV/IM 100 mg daily for 3–5 days; glucose may be given in either order or concurrently rather than delaying urgent glucose.",
+          "sourceId": "asam",
+          "sourceUrl": "https://downloads.asam.org/sitefinity-production-blobs/docs/default-source/quality-science/the_asam_clinical_practice_guideline_on_alcohol-1.pdf",
+          "sourceSection": "Recommendations IV.9 and V.7; supporting discussion",
+          "access": "Original full public ASAM PDF opened; relevant recommendations and supporting discussion independently read.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Adult high-risk prophylaxis is 200–300 mg IM/IV daily for 3–5 days. Suspected/established Wernicke treatment is 300–500 mg IV three times daily for 3–5 days; persistent symptoms after five days permit 300–500 mg IV once daily for another 3–5 days and while improving. Inpatient assessment, magnesium and anaphylaxis facilities are retained.",
+          "sourceId": "dhsc",
+          "sourceUrl": "https://www.gov.uk/guidance/clinical-guidelines-for-alcohol-treatment/16-alcohol-care-in-acute-hospitals",
+          "sourceSection": "Section 16.9.4",
+          "access": "Retained full official DHSC guidance HTML independently parsed and relevant complete section read; no claim of entire manual review.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Nutrition AI/RDA table matches infant 0.2/0.3 mg, childhood 0.5/0.6/0.9 mg, adolescent male/female 1.2/1.0 mg, adult male/female 1.2/1.1 mg and pregnancy/lactation 1.4 mg daily; these are nutritional requirements rather than acute deficiency treatment.",
+          "sourceId": "ods",
+          "sourceUrl": "https://ods.od.nih.gov/factsheets/Thiamin-HealthProfessional/",
+          "sourceSection": "Recommended Intakes Table 1",
+          "access": "Current public NIH ODS page independently opened and complete Table 1 read; no successful local HTML download claimed.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "thiaminj": {
+          "path": "/tmp/nas-drug-sources/thiaminj.xml",
+          "sha256": "396c8bcf5898b06c503b31df0305e0319375402feea97c11eddf59aa1f152613"
+        },
+        "asam": {
+          "path": "/tmp/nas-drug-sources/thiam-asam.pdf",
+          "sha256": "642629e657cbb438e25dd6201669d8f00be7c1e1cdc6c535469ae163419b5a70"
+        },
+        "dhsc": {
+          "path": "/tmp/nas-drug-sources/thiam-dhsc2026.html",
+          "sha256": "1fc1f1d9724b5e5f5333686a34c3af4328dbda5433ea18562988ba53e7a913e3"
+        }
+      }
+    },
+    {
+      "drug": "ethinyl-estradiol-norgestrel",
+      "fileSha256": "8be1017c40b3460e540f64a19abffd56ff1d2d9e60d52d0ffb273431ab813c09",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Cryselle active tablets contain norgestrel 0.3 mg/ethinyl estradiol 0.03 mg; 21 white active plus seven light-green inactive tablets. Formal vascular, migraine, liver, cancer, pregnancy, unexplained bleeding and specified HCV-combination contraindications remain product-specific; cigarette smoking above age 35 is boxed.",
+          "sourceId": "norgcrys",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5d48561-1aa1-4c9b-935f-6cf035225769",
+          "sourceSection": "Description; Boxed Warning; Contraindications",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Current patient label unusually requires seven-day backup after one missed active tablet. Two missed in weeks 1/2 require two pills on each of two days; two in week 3 or three or more use the Sunday new-pack algorithm. Inactive missed tablets do not require backup when next pack starts on time. Vomiting/diarrhea within 3–4 hours directs another same-color pill; illness longer than one day requires extra protection and consultation.",
+          "sourceId": "norgcrys",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5d48561-1aa1-4c9b-935f-6cf035225769",
+          "sourceSection": "FDA-approved Patient Labeling; missed tablets and GI instructions",
+          "access": "Retained full primary SPL XML and extracted sections independently read; matching current public DailyMed page opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "CDC 2024 missed-pill Figure 1 is attributed separately: one active pill less than 48 hours late needs no backup; two or more at least 48 hours late use only most recent missed pill, seven consecutive active days of backup and appropriate last-week omission/first-week emergency contraception consideration.",
+          "sourceId": "spr",
+          "sourceUrl": "https://www.cdc.gov/contraception/hcp/usspr/combined-hormonal-contraceptives.html",
+          "sourceSection": "Figure 1",
+          "access": "Current complete public CDC SPR CHC page independently opened and full Figure 1 text read.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "CDC GI Figure 4 differs from pack instructions: illness shorter than 48 hours needs no redose/backup; at least 48 hours requires seven consecutive active days after recovery, last-week hormone-free interval omission and appropriately scoped emergency contraception. Label and guideline instructions are not blended.",
+          "sourceId": "spr",
+          "sourceUrl": "https://www.cdc.gov/contraception/hcp/usspr/combined-hormonal-contraceptives.html",
+          "sourceSection": "Figure 4",
+          "access": "Current complete public CDC SPR CHC page independently opened and full Figure 4 text read.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "norgcrys": {
+          "path": "/tmp/nas-drug-sources/norgcrys.xml",
+          "sha256": "b97fe68d7139b1af0f4ed7843e1d0568fcf4c2ac1b523a495b170fbce0efb85f"
+        }
+      }
+    }
+  ],
+  "pending": [],
+  "limitations": [],
+  "finalInventoryReconciliation": {
+    "checked": "2026-10-01",
+    "totalIndependentProfiles": 299,
+    "uniqueProfiles": 299,
+    "batches01Through29": "Exactly 10 profiles each",
+    "batch30Profiles": 9,
+    "allMonographHashesCurrent": true,
+    "unclosedRecordedIssues": 0,
+    "allProfilesHaveBlueprintSectionOrder": true,
+    "allProfilesHaveFourSafetyThreeProductCardsAndThreeHeroTuples": true,
+    "acetaminophenContentPreservedAgainstOriginal": true,
+    "acetaminophenSha256": "50972dbe3eb307ae910f593345bce54368ad90d39a8215c6d414a1107696c78f",
+    "scope": "Integrity of targeted independent records and data structure only; not a claim of exhaustive second clinical review, rendered-page QA or live deployment."
+  }
+}

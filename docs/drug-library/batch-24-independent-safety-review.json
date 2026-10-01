@@ -5,7 +5,7 @@
   "profiles": [
     {
       "drug": "epinephrine",
-      "fileSha256": "8ae1699371a17f566c442dce2dbe26bba8d3b3ddfaf9a60219fa3d8c5fbd8718",
+      "fileSha256": "4e83ffd90ee8b038b865c1b642d078e3882635a79a5884988990aa5572be0e38",
       "result": "No material clinical mismatch identified in enumerated assertions.",
       "checks": [
         {
@@ -107,6 +107,15 @@
         "currentHash": "8ae1699371a17f566c442dce2dbe26bba8d3b3ddfaf9a60219fa3d8c5fbd8718",
         "authorDelta": "Readable spacing and explicit delivered-strength shorthand; source/audit metadata refreshed.",
         "independentRecheck": "Current dosage/product paragraphs reread and newly explicit strength values independently verified; no changed critical regimen identified."
+      },
+      "formattingRevisionRecheck": {
+        "checked": "2026-10-01",
+        "previousMonographSha256": "8ae1699371a17f566c442dce2dbe26bba8d3b3ddfaf9a60219fa3d8c5fbd8718",
+        "currentMonographSha256": "4e83ffd90ee8b038b865c1b642d078e3882635a79a5884988990aa5572be0e38",
+        "exactRequestedReplacementEquality": true,
+        "fullJavaScriptWhitespaceRemovalEquality": true,
+        "independentSourceRecheck": "Retained full Adrenalin SPL section 2.3 independently reread: 1 mL (1 mg) diluted to 1,000 mL dextrose or dextrose/sodium chloride yields 1 mcg/mL; saline alone not recommended for this vial. Removing separator whitespace does not change dose, volume, concentration or route meaning.",
+        "status": "closed_verified"
       }
     },
     {

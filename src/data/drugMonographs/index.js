@@ -289,6 +289,15 @@ import { loratadinePseudoephedrine } from "./loratadine-pseudoephedrine.js";
 import { ascorbicAcid } from "./ascorbic-acid.js";
 import { mycophenolate_mofetil } from "./mycophenolate-mofetil.js";
 import { olopatadine } from "./olopatadine.js";
+import { indomethacin } from "./indomethacin.js";
+import { brompheniramineDextromethorphanPseudoephedrine } from "./brompheniramine-dextromethorphan-pseudoephedrine.js";
+import { benzoylPeroxide } from "./benzoyl-peroxide.js";
+import { ciprofloxacinDexamethasone } from "./ciprofloxacin-dexamethasone.js";
+import { phenazopyridine } from "./phenazopyridine.js";
+import { cefuroxime } from "./cefuroxime.js";
+import { thiamine } from "./thiamine.js";
+import { ethinylEstradiolNorgestrel } from "./ethinyl-estradiol-norgestrel.js";
+import { sulfacetamide_sulfur } from "./sulfacetamide-sulfur.js";
 
 export const reviewedDrugMonographs = {
   "atorvastatin": atorvastatin,
@@ -581,4 +590,13 @@ export const reviewedDrugMonographs = {
   "ascorbic-acid": ascorbicAcid,
   "mycophenolate-mofetil": mycophenolate_mofetil,
   "olopatadine": olopatadine,
+  "indomethacin": indomethacin,
+  "brompheniramine-dextromethorphan-pseudoephedrine": brompheniramineDextromethorphanPseudoephedrine,
+  "benzoyl-peroxide": benzoylPeroxide,
+  "ciprofloxacin-dexamethasone": ciprofloxacinDexamethasone,
+  "phenazopyridine": phenazopyridine,
+  "cefuroxime": cefuroxime,
+  "thiamine": thiamine,
+  "ethinyl-estradiol-norgestrel": ethinylEstradiolNorgestrel,
+  "sulfacetamide-sulfur": sulfacetamide_sulfur,
 };
