@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-01",
+  "status": "content_commit_remote_verified",
+  "branch": "audit/rxprep-content-2026-09-24",
+  "remote": "https://github.com/NaS-Research/nas-website.git",
+  "baseCommit": "aa095f746bd6301262ffa3a801a94c52112b20bd",
+  "contentCommit": "c609559a5ddb0b5a2aa31428bff579d89a9130de",
+  "remoteHashVerified": "c609559a5ddb0b5a2aa31428bff579d89a9130de",
+  "logicalUnit": "parenteral-nutrition-calculations#fluid-requirements",
+  "kind": "verified section in existing module",
+  "wholeModuleVerified": false,
+  "source": {
+    "edition": 2023,
+    "fluidSection": {
+      "chapter": 11,
+      "printedPage": 150,
+      "pdfPage": 158
+    },
+    "chapterRead": {
+      "printedPages": [
+        149,
+        168
+      ],
+      "pdfPages": [
+        157,
+        176
+      ],
+      "allTextAndVisualRead": true,
+      "sourceExercises": 54
+    }
+  },
+  "changes": {
+    "newModules": 0,
+    "newLessons": 1,
+    "newFigures": 1,
+    "newEmbeddedChecks": 1,
+    "newOriginalQuestions": 16,
+    "unchangedPriorBankItems": 100,
+    "stableExistingModulePathIdsAnchors": true
+  },
+  "validation": {
+    "independentOriginalRetainedArithmetic": 95,
+    "separateSourceArithmetic": 58,
+    "all54SourceExercisesRecalculated": true,
+    "productionBuild": {
+      "passed": true,
+      "staticPages": 567,
+      "scope": "Exact four-clinical-file candidate"
+    },
+    "desktopMobileAll16NewQuestionsRenderedAndGraded": true,
+    "all7FiguresReviewedAtDesktopMobile": true,
+    "LibrarySearchAndStableLink": true,
+    "noOverflowAt390And320": true,
+    "scopedStagingGuard": true
+  },
+  "evidence": "parenteral-nutrition-calculations-review.json",
+  "completedChecklistEntries": 14,
+  "fullChapterClosure": false,
+  "remaining": "Entire existing PN calculation module remains reviewing for book coverage gaps and retained source reconciliation. Clinical PN/EN/fluid modules remain open.",
+  "nextStartingPoint": "Continue PN caloric needs, Harris-Benedict BEE/TEE at Chapter11 printed151/PDF159 before protein/nitrogen, weekly lipid, dual-ion and complete-order coverage. Do not advance checklist entry15 before whole-module verification.",
+  "production": "not verified",
+  "receiptCommit": "Recorded in the following Git documentation commit; avoids self-referential commit hash."
+}
