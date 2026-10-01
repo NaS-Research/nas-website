@@ -3167,11 +3167,17 @@
         },
         {
           "slug": "cf-nutrition-gi-endocrine",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "latestScopedEvidence": "enteral-nutrition-broader-cystic-fibrosis-review.json",
+          "embeddedCheckVerified": false,
+          "wholeLessonVerified": false
         },
         {
           "slug": "cf-systemic-complications",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "latestScopedEvidence": "enteral-nutrition-broader-cystic-fibrosis-review.json",
+          "embeddedCheckVerified": false,
+          "wholeLessonVerified": false
         },
         {
           "slug": "cf-longitudinal-advanced-care",
@@ -3179,8 +3185,48 @@
         }
       ],
       "questions": 120,
-      "status": "unreviewed",
-      "evidence": []
+      "status": "reviewing",
+      "evidence": [
+        "enteral-nutrition-broader-cystic-fibrosis-review.json"
+      ],
+      "broaderEnteralAdministrationReview": {
+        "evidence": "enteral-nutrition-broader-cystic-fibrosis-review.json",
+        "verifiedQuestionIds": [
+          "cf-088",
+          "cf-091",
+          "cf-092"
+        ],
+        "correctedQuestionIds": [
+          "cf-088",
+          "cf-091",
+          "cf-092"
+        ],
+        "originalPrimaryQuestionIdsPending": [
+          "cf-085",
+          "cf-086",
+          "cf-087",
+          "cf-089",
+          "cf-090",
+          "cf-093",
+          "cf-094",
+          "cf-095",
+          "cf-096",
+          "cf-097",
+          "cf-098",
+          "cf-099",
+          "cf-100"
+        ],
+        "expandedBodyHeadings": [
+          "Replace enzymes with every fat and protein exposure"
+        ],
+        "wholeExpandedBodyVerified": false,
+        "newClausesSourceVerified": true,
+        "verifiedEmbeddedCheckLessons": [],
+        "sourceVerifiedCumulativeIds": [],
+        "wholeModuleVerified": false,
+        "figuresVerified": 0,
+        "metadataVerified": false
+      }
     },
     {
       "slug": "drug-induced-pulmonary-disease",

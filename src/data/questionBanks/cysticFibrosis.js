@@ -32,4 +32,35 @@ const concepts=[
 ];
 const dimensions=[["principle","Which principle best characterizes"],["action","Which clinical action best applies to"],["assessment","Which assessment is most appropriate for"],["hazard","Which reasoning hazard is most important to prevent with"]];
 function distractors(i,f){return[6,11,17].map(o=>concepts[(i+o)%concepts.length][f])}
-export const cysticFibrosisQuestionBank=concepts.flatMap((c,i)=>dimensions.map(([f,p],d)=>({id:`cf-${String(i*4+d+1).padStart(3,"0")}`,question:`${p} ${c.name}?`,choices:[c[f],...distractors(i,f)],answer:0,rationale:c.why,reviewHref:`#${c.lesson}`})));
+const originalCysticFibrosisQuestionBank =concepts.flatMap((c,i)=>dimensions.map(([f,p],d)=>({id:`cf-${String(i*4+d+1).padStart(3,"0")}`,question:`${p} ${c.name}?`,choices:[c[f],...distractors(i,f)],answer:0,rationale:c.why,reviewHref:`#${c.lesson}`})));
+
+const sourceReviewedEnzymeSafetyQuestions = {
+  "cf-088": {
+    "choices": [
+      "Prescribing capsules without calculating total lipase exposure can hide severe underdosing or unsafe escalation.",
+      "Recording lipase units per capsule and the number of capsules taken",
+      "Checking each meal dose against the patient weight",
+      "Adding meal and snack exposures to review the daily lipase total"
+    ],
+    "rationale": "The book bases pancreatic-enzyme doses on the lipase component, not capsule count alone. Product strength, units per intake and the daily total must be connected to weight and the prescribed schedule to identify underdosing or unsafe escalation."
+  },
+  "cf-091": {
+    "choices": [
+      "Review weight, lipase per capsule, capsules per intake, meals, snacks, total daily units, symptoms, stool, growth, pain, and colon history.",
+      "Review only the capsule count and omit lipase strength and body weight",
+      "Review one meal dose but omit snacks and the daily total",
+      "Review nutritional intake but omit abdominal symptoms and the colonic-risk history"
+    ],
+    "rationale": "The book connects lipase-unit dose limits with rare fibrosing colonopathy and colonic strictures and monitors abdominal symptoms, intake, weight, height and stools. Capsule strength, intake count and body weight allow the meal and daily exposures to be checked; the colon history is a practical review of the stated safety risk."
+  },
+  "cf-092": {
+    "choices": [
+      "Escalating very high PERT for every abdominal symptom can increase fibrosing-colonopathy risk without treating the true cause.",
+      "Checking lipase units per meal and total daily exposure before a dose change",
+      "Reviewing stool, intake, growth and abdominal symptoms together",
+      "Recognizing abdominal pain as a possible treatment adverse effect"
+    ],
+    "rationale": "The book lists abdominal pain as an adverse effect and associates very high lipase exposure with fibrosing colonopathy and colonic strictures. More enzyme is therefore not a safe automatic response to every abdominal symptom. Review dose and the clinical findings before escalation."
+  }
+};
+export const cysticFibrosisQuestionBank = originalCysticFibrosisQuestionBank.map((question) => sourceReviewedEnzymeSafetyQuestions[question.id] ? { ...question, ...sourceReviewedEnzymeSafetyQuestions[question.id] } : question);
