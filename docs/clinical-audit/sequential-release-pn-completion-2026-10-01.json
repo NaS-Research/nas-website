@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-01",
+  "unit": "parenteral-nutrition:complete-adult-module-reconciliation",
+  "baseCommit": "70cebda7ceaf70006526643c02320af444308c43",
+  "contentCommit": "7c10ba348f4d76e0fe5442b7adc225abaea18b84",
+  "branch": "audit/rxprep-content-2026-09-24",
+  "contentRemoteHashObserved": "7c10ba348f4d76e0fe5442b7adc225abaea18b84",
+  "contentRemoteVerifiedAt": "2026-10-01T17:50:48.830269+00:00",
+  "scope": [
+    "src/data/modules/parenteralNutrition.js",
+    "docs/clinical-audit/parenteral-nutrition-completion-review.json",
+    "docs/clinical-audit/sequential-resume.json",
+    "docs/clinical-audit/module-ledger.json",
+    "docs/clinical-audit/chapter-ledger.json"
+  ],
+  "checks": {
+    "isolatedBuild567": true,
+    "focusedAssessment142": true,
+    "exactSourceEvidenceMatched": {
+      "bank": 142,
+      "bodies": 57,
+      "checks": 6
+    },
+    "currentCumulativeMatched": 5,
+    "metadataClaimFieldsReviewed": 42,
+    "figuresReviewedDesktopMobile": 6,
+    "metadataReviewedDesktopMobile": true,
+    "runtimeFeedbackRemediationProgress": true,
+    "scopedLedgerIndex": true
+  },
+  "coverage": {
+    "lessons": 6,
+    "bodies": 57,
+    "figures": 6,
+    "embeddedChecks": 6,
+    "bank": 142,
+    "currentCumulativeItems": 5,
+    "metadataClaimFields": 42,
+    "allCurrentSourceCoverageComplete": true,
+    "wholeModuleVerified": true,
+    "wholeChapterVerified": false,
+    "relatedLegacyPNEntries": 9
+  },
+  "wholeModuleVerified": true,
+  "wholeChapterVerified": false,
+  "production": "not verified",
+  "mainMerge": "not performed",
+  "nextAction": "Begin existing enteral-nutrition module audit at Chapter11 printed161/PDF169 introductory EN paragraph, then feeding routes and formulas from printed162/PDF170 through printed168/PDF176. Use the supplied book for new EN claims; the approved outside-source exception is scoped to PN. Complete EN, pediatric PN and clinical fluid/calcium dependencies before closing Chapter11 or Chapter1 fluid checklist entry15.",
+  "receiptCommitVerification": "Verify receipt commit remote hash after pushing; no self-referential commit hash stored."
+}
