@@ -1,0 +1,404 @@
+{
+  "drug": "levothyroxine",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "Thyroid hormone replacement with a narrow therapeutic index. A focused reference for Synthroid oral tablets, with separate guidance for emergency intravenous therapy.",
+  "blueprint": "acetaminophen.js unchanged; eight section IDs/titles/order, three hero facts, essential safety, original disclosure-card/table/fact/list/citation components",
+  "sources": [
+    {
+      "id": "oral",
+      "title": "Synthroid · Oral prescribing information",
+      "publisher": "DailyMed / AbbVie",
+      "note": "Full prescribing information; updated February 20, 2024. SPL version 1537.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e11ad30-1041-4520-10b0-8f9d30d30fcc"
+    },
+    {
+      "id": "iv",
+      "title": "Levothyroxine sodium injection · Ready-to-use solution",
+      "publisher": "DailyMed / Fresenius Kabi",
+      "note": "Adult myxedema coma, route-specific administration and strengths. Updated March 17, 2025.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=08f4b1f8-6807-47e7-bef8-8d1972aa0557"
+    },
+    {
+      "id": "lactation",
+      "title": "Levothyroxine · Lactation",
+      "publisher": "LactMed / National Library of Medicine",
+      "note": "Milk transfer, infant effects and maternal replacement. Revised September 15, 2026.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK501003/"
+    }
+  ],
+  "primary_label": {
+    "setid": "1e11ad30-1041-4520-10b0-8f9d30d30fcc",
+    "effective_time": "20240220",
+    "spl_version": "1537",
+    "xml_sha256": "de366bdd1a38c827eff6c082896ea88f8ffde929b647df38421f595d9437203a",
+    "reviewed_sections": "Full retrieved label: boxed warning; 1–8, 10, 12, 16, 17 and source product characteristics; dose tables read in full.",
+    "prescribing_information_revision": "February 2024",
+    "dailymed_updated": "2024-02-20",
+    "xml_archive": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/batch-01/levothyroxine.xml"
+  },
+  "assertion_map": [
+    {
+      "section": "indications",
+      "card": "Labeled oral indications",
+      "assertions": [
+        "Synthroid is prescription replacement therapy for congenital or acquired primary, secondary or tertiary hypothyroidism in adults and children, including neonates. It also supports surgery and radioiodine treatment of thyrotropin-dependent, well-differentiated thyroid cancer."
+      ],
+      "sources": [
+        "oral"
+      ],
+      "source_sections": "1",
+      "result": "verified"
+    },
+    {
+      "section": "indications",
+      "card": "Limitations of use",
+      "assertions": [
+        "It is not indicated for benign thyroid-nodule or nontoxic diffuse-goiter suppression in iodine-sufficient patients, or for the recovery phase of subacute thyroiditis. Do not prescribe for weight loss in a euthyroid patient."
+      ],
+      "sources": [
+        "oral"
+      ],
+      "source_sections": "1; Boxed warning",
+      "result": "verified"
+    },
+    {
+      "section": "indications",
+      "card": "Intravenous therapy",
+      "assertions": [
+        "The linked ready-to-use injection is labeled for adult myxedema coma. Oral-to-IV equivalence is not established; specialist emergency care and the exact IV label are required."
+      ],
+      "sources": [
+        "iv"
+      ],
+      "source_sections": "IV:1",
+      "result": "verified"
+    },
+    {
+      "section": "dosage",
+      "card": "Adults · Oral replacement",
+      "assertions": [
+        "Doses above 200 mcg/day are seldom needed. A poor response above 300 mcg/day warrants assessment of adherence, absorption and interactions. A dose may take 4–6 weeks to reach its peak effect.",
+        "Adults without a need for a reduced start | Full replacement is approximately 1.6 mcg/kg/day; individualize. Adjust by 12.5–25 mcg every 4–6 weeks.",
+        "Older adults, atrial-fibrillation risk or cardiac disease | Start below the full replacement dose; titrate every 6–8 weeks. The current Synthroid label does not specify a universal fixed low starting dose.",
+        "Thyroid-cancer TSH suppression | Individualize to the target TSH for cancer stage and clinical status."
+      ],
+      "sources": [
+        "oral"
+      ],
+      "source_sections": "2.2–2.3",
+      "result": "verified"
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric oral replacement",
+      "assertions": [
+        "Adjust to laboratory results and development; usual pediatric titration is every 2 weeks. Infants at cardiac-failure risk start lower and increase every 4–6 weeks. For hyperactivity risk, the label starts at one-quarter of full replacement and increases by one-quarter weekly.",
+        "0–3 months | 10–15 mcg/kg",
+        "3–6 months | 8–10 mcg/kg",
+        "6–12 months | 6–8 mcg/kg",
+        "1–5 years | 5–6 mcg/kg",
+        "6–12 years | 4–5 mcg/kg",
+        "Over 12 years; growth/puberty incomplete | 2–3 mcg/kg",
+        "Growth/puberty complete | 1.6 mcg/kg"
+      ],
+      "sources": [
+        "oral"
+      ],
+      "source_sections": "2.3 Table 2",
+      "result": "verified"
+    },
+    {
+      "section": "dosage",
+      "card": "Administration",
+      "assertions": [
+        "Take once daily on an empty stomach 30–60 minutes before breakfast. Separate absorption-interfering medicines by at least 4 hours; see the interaction card for resin-specific timing. For a child unable to swallow, freshly crush a tablet into 5–10 mL water, give immediately and ensure the full dose is swallowed. Do not store the mixture or mix into soy-based formula."
+      ],
+      "sources": [
+        "oral"
+      ],
+      "source_sections": "2.1",
+      "result": "verified"
+    },
+    {
+      "section": "dosage",
+      "card": "Pregnancy dosing",
+      "assertions": [
+        "Check TSH and free T4 promptly when pregnancy is confirmed. For pre-existing primary disease with TSH above the trimester range, the label uses 12.5–25 mcg/day increases and TSH testing every 4 weeks until stable. For newly diagnosed disease, its starting doses are 1.6 mcg/kg/day if TSH ≥10 mIU/L and 1.0 mcg/kg/day if TSH <10 mIU/L. Return to the pre-pregnancy dose after delivery and check TSH at 4–8 weeks postpartum; individualize further changes."
+      ],
+      "sources": [
+        "oral"
+      ],
+      "source_sections": "2.3 Table 3;8.1",
+      "result": "verified"
+    },
+    {
+      "section": "dosage",
+      "card": "Renal and hepatic considerations",
+      "assertions": [
+        "The reviewed oral label supplies no fixed renal or hepatic dose-reduction formula. Dose to the disease-specific thyroid tests and clinical response; comorbid illness and altered hormone binding can complicate interpretation."
+      ],
+      "sources": [
+        "oral"
+      ],
+      "source_sections": "2.2;7.10;12.3",
+      "result": "verified"
+    },
+    {
+      "section": "dosage",
+      "card": "Adult myxedema coma · Intravenous solution",
+      "assertions": [
+        "This is the Fresenius ready-to-use solution label, not a reconstitution instruction for powder products. Do not infer an exact oral-to-IV conversion.",
+        "Loading dose | 300–500 mcg IV; choose lower doses for older adults or cardiac disease.",
+        "Maintenance | 50–100 mcg IV daily until oral treatment is tolerated.",
+        "Administration | Do not exceed 100 mcg/min; do not add to IV fluids."
+      ],
+      "sources": [
+        "iv"
+      ],
+      "source_sections": "IV:2.1–2.2",
+      "result": "verified"
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Over- or under-replacement can harm cardiac function, bone, growth, cognition and reproductive or metabolic function. Excess dosing can precipitate angina or atrial fibrillation, especially in older adults or cardiac disease.",
+        "Treat concomitant adrenal insufficiency with glucocorticoids before thyroid replacement to prevent adrenal crisis.",
+        "Monitor glucose when starting, changing or stopping therapy in diabetes. Excess replacement can lower bone density, particularly after menopause.",
+        "Myxedema coma is an emergency requiring an IV thyroid product; oral absorption is unreliable."
+      ],
+      "sources": [
+        "oral"
+      ],
+      "source_sections": "5.1–5.6",
+      "result": "verified"
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "Uncorrected adrenal insufficiency is the reviewed label’s contraindication. Hypersensitivity reactions to inactive ingredients have been reported; select and evaluate formulations carefully after suspected allergy."
+      ],
+      "sources": [
+        "oral"
+      ],
+      "source_sections": "4;6",
+      "result": "verified"
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning",
+      "assertions": [
+        "Thyroid hormone must not be used for obesity or weight loss. Doses exceeding physiological needs can cause life-threatening toxicity, particularly with sympathomimetic appetite suppressants."
+      ],
+      "sources": [
+        "oral"
+      ],
+      "source_sections": "Boxed warning",
+      "result": "verified"
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "assertions": [
+        "Overdose-like hyperthyroid effects include tremor, heat intolerance, insomnia, sweating, diarrhea, palpitations and arrhythmias. Serious cardiac events, seizures and pediatric intracranial hypertension or growth-plate complications are reported. Excipient allergy can cause rash, wheezing or angioedema. Symptoms after an overdose may be delayed for days; seek urgent assessment and contact U.S. Poison Control at 1-800-222-1222."
+      ],
+      "sources": [
+        "oral"
+      ],
+      "source_sections": "6;10",
+      "result": "verified"
+    },
+    {
+      "section": "interactions",
+      "card": "Absorption and food interactions",
+      "assertions": [
+        "Calcium, iron and phosphate binders: separate by at least 4 hours. Bile-acid sequestrants and ion-exchange resins: take Synthroid at least 4 hours before them or monitor TSH as specified by the label.",
+        "Antacids, sucralfate and acid suppression can reduce absorption; review timing and monitor thyroid response. Orlistat also requires thyroid monitoring.",
+        "Soy, dietary fiber, walnuts and grapefruit can alter absorption; maintain a consistent routine and reassess after dietary changes."
+      ],
+      "sources": [
+        "oral"
+      ],
+      "source_sections": "7.1;7.9;17",
+      "result": "verified"
+    },
+    {
+      "section": "interactions",
+      "card": "Clinical interactions and actions",
+      "assertions": [
+        "Oral anticoagulants: thyroid correction can increase anticoagulant response; monitor coagulation and adjust treatment. Digoxin effects or levels can fall as euthyroidism is restored.",
+        "Insulin and glucose-lowering drugs: requirements can rise; monitor glucose.",
+        "Tricyclic/tetracyclic antidepressants, sympathomimetics and ketamine: cardiac or stimulatory toxicity can increase; monitor heart rate, pressure and symptoms. Sertraline may increase replacement requirements.",
+        "Rifampin, phenobarbital and tyrosine-kinase inhibitors can change requirements. Amiodarone and high-dose glucocorticoids or propranolol alter T4-to-T3 conversion. Estrogens, androgens, phenytoin and other binding modifiers can alter tests; interpret free hormone and clinical status."
+      ],
+      "sources": [
+        "oral"
+      ],
+      "source_sections": "7.1–7.8",
+      "result": "verified"
+    },
+    {
+      "section": "interactions",
+      "card": "Biotin and laboratory tests",
+      "assertions": [
+        "Biotin can distort thyroid immunoassays. Stop biotin-containing supplements for at least 2 days before TSH or T4 testing, as directed by the label, and disclose their use to the laboratory and clinician."
+      ],
+      "sources": [
+        "oral"
+      ],
+      "source_sections": "2.2;2.4;7.10",
+      "result": "verified"
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy",
+      "assertions": [
+        "Untreated maternal hypothyroidism poses maternal and fetal risks. Available clinical experience with replacement doses has not shown increased major birth defects or miscarriage. Continue treatment and promptly treat newly diagnosed disease; requirements commonly increase. Use trimester-specific TSH targets in primary disease and the pregnancy monitoring schedule above."
+      ],
+      "sources": [
+        "oral"
+      ],
+      "source_sections": "8.1;2.3",
+      "result": "verified"
+    },
+    {
+      "section": "populations",
+      "card": "Lactation",
+      "assertions": [
+        "T4 is a normal milk constituent. Limited data on replacement therapy have not shown adverse infant effects. Adequate maternal treatment can improve low milk production caused by hypothyroidism. Continue individualized postpartum thyroid testing; some patients with Hashimoto disease need more than their pre-pregnancy dose."
+      ],
+      "sources": [
+        "oral",
+        "lactation"
+      ],
+      "source_sections": "8.2; LactMed Summary of Use",
+      "result": "verified"
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric considerations",
+      "assertions": [
+        "Treat congenital disease promptly to protect growth and neurodevelopment. Follow both thyroid tests and growth/bone maturation; monitor infants for cardiac overload or arrhythmias during the first 2 weeks. Older adults need a reduced starting dose and careful cardiac assessment."
+      ],
+      "sources": [
+        "oral"
+      ],
+      "source_sections": "8.4–8.5",
+      "result": "verified"
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action and pharmacodynamics",
+      "assertions": [
+        "Levothyroxine has the physiological effects of endogenous T4. Peripheral deiodination supplies much of circulating T3; thyroid-hormone nuclear receptors regulate gene transcription and protein synthesis."
+      ],
+      "sources": [
+        "oral"
+      ],
+      "source_sections": "12.1–12.2",
+      "result": "verified"
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "assertions": [
+        "Oral absorption | Approximately 40–80%; fasting improves absorption, while food, medicines and malabsorption can reduce it.",
+        "Distribution / metabolism | More than 99% protein bound; deiodination plus glucuronide/sulfate conjugation.",
+        "Half-life / elimination | T4 half-life about 6–7 days when euthyroid, longer in hypothyroidism; renal and fecal elimination."
+      ],
+      "sources": [
+        "oral"
+      ],
+      "source_sections": "12.3 Table 10",
+      "result": "verified"
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring parameters",
+      "assertions": [
+        "Primary hypothyroidism in adults: measure TSH 6–8 weeks after a dose change; once stable, reassess every 6–12 months and with clinical changes.",
+        "Central hypothyroidism: TSH is unreliable for dose adequacy. Follow free T4, aiming for the upper half of its normal range with clinical euthyroidism.",
+        "Children: check TSH and total/free T4 at 2 and 4 weeks after initiation, 2 weeks after a dose change, then every 3–12 months once stable until growth completes; assess development and bone maturation.",
+        "Assess pulse, cardiac symptoms, glucose and relevant anticoagulation; investigate adherence, timing and absorption before escalating an unexpectedly high dose."
+      ],
+      "sources": [
+        "oral"
+      ],
+      "source_sections": "2.2–2.4;5.2;5.5;7.3",
+      "result": "verified"
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "assertions": [
+        "Confirm the tablet strength in micrograms and follow one consistent dosing routine. Improvement takes weeks; replacement is often lifelong.",
+        "Tell the clinician about pregnancy, breastfeeding, supplements, heart disease and adrenal/pituitary disease. Stop biotin before tests as directed.",
+        "Report palpitations, chest pain, shortness of breath, marked tremor or allergic symptoms promptly. Do not use thyroid hormone as a weight-loss medicine."
+      ],
+      "sources": [
+        "oral"
+      ],
+      "source_sections": "17;10",
+      "result": "verified"
+    },
+    {
+      "section": "product",
+      "card": "Representative oral product · Synthroid 50 mcg",
+      "assertions": [
+        "Dosage form / strength | Oral tablet · 50 mcg",
+        "Label packager | AbbVie Inc.",
+        "Appearance / imprint | White, round · SYNTHROID and 50",
+        "Example package NDC | 0074-4552-90 · Bottle of 90"
+      ],
+      "sources": [
+        "oral"
+      ],
+      "source_sections": "3;16; product characteristics",
+      "result": "verified"
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Synthroid tablets | 25, 50, 75, 88, 100, 112, 125, 137, 150, 175, 200 and 300 mcg.",
+        "Linked ready-to-use IV solution | 100, 200 or 500 mcg per 5 mL single-dose vial.",
+        "Other products | Oral liquid, capsule and injection products have separate labeling; do not apply tablet preparation instructions to them."
+      ],
+      "sources": [
+        "oral",
+        "iv"
+      ],
+      "source_sections": "3; IV:3; product-specific scope qualification",
+      "result": "verified"
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Store Synthroid at 20–25°C; excursions to 15–30°C are permitted. Protect from light and moisture. Follow the exact package instructions for other formulations."
+      ],
+      "sources": [
+        "oral"
+      ],
+      "source_sections": "16",
+      "result": "verified"
+    }
+  ],
+  "unresolved_material_errors": [],
+  "limitations": [
+    "Focused named-product reference; other manufacturers/forms require their own prescribing information. This is not an exhaustive off-label specialty-treatment compendium."
+  ],
+  "validation": {
+    "schema": "pass; validateMonograph returned []",
+    "rendered_page_qa": "pending parent integration",
+    "batch_build": "pending parent integration"
+  },
+  "review_notes": [
+    "Current Synthroid label lower starting-dose wording preserved rather than importing a fixed 12.5–25 mcg/day regimen from older/different labels.",
+    "Renal/hepatic label supplies no fixed adjustment formula; no invented algorithm.",
+    "IV label March 17, 2025 reviewed for sections 1–3; adult route-specific doses and non-equivalence kept distinct.",
+    "LactMed updated September 15, 2026 supports replacement during lactation and individualized postpartum needs."
+  ]
+}

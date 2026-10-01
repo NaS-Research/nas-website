@@ -1,0 +1,719 @@
+{
+  "slug": "amlodipine",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Focused US single-ingredient oral reference; original clinical summaries, with indication/population/formulation distinctions and no claim to reproduce every adverse-event report.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Norvasc · Prescribing information",
+      "publisher": "DailyMed / Viatris Specialty LLC",
+      "note": "Tablet label revised February 2023; SPL version 10, effective February 15, 2023.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7367289c-b0b0-466a-83e2-558e2985c29f",
+      "checked": "2026-10-01",
+      "version": "Tablet label revised February 2023; SPL version 10, effective February 15, 2023."
+    },
+    {
+      "id": "suspension",
+      "title": "Katerzia · 1 mg/mL oral suspension",
+      "publisher": "DailyMed / Azurity Pharmaceuticals",
+      "note": "Liquid-specific administration and storage; prescribing information revised April 2023, record updated December 16, 2025.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=df673a4d-acb8-444c-a472-c87ab8cbd366",
+      "checked": "2026-10-01",
+      "version": "Liquid-specific administration and storage; prescribing information revised April 2023, record updated December 16, 2025."
+    },
+    {
+      "id": "solution",
+      "title": "Norliqva · 1 mg/mL oral solution",
+      "publisher": "DailyMed / CMP Pharma",
+      "note": "Solution formulation, pregnancy and lactation, and storage. Prescribing information revised February 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=614d974f-51c7-4b18-8171-39eb6e8d4c03",
+      "checked": "2026-10-01",
+      "version": "Solution formulation, pregnancy and lactation, and storage. Prescribing information revised February 2026."
+    },
+    {
+      "id": "patient",
+      "title": "Amlodipine · Patient information",
+      "publisher": "MedlinePlus / National Library of Medicine",
+      "note": "Administration, missed-dose instructions, and urgent symptoms.",
+      "url": "https://medlineplus.gov/druginfo/meds/a692044.html",
+      "checked": "2026-10-01",
+      "version": "Administration, missed-dose instructions, and urgent symptoms."
+    },
+    {
+      "id": "lactation",
+      "title": "Amlodipine · Lactation",
+      "publisher": "LactMed / National Library of Medicine",
+      "note": "Milk transfer and infant outcomes. Revised September 15, 2026.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK500665/",
+      "checked": "2026-10-01",
+      "version": "Milk transfer and infant outcomes. Revised September 15, 2026."
+    }
+  ],
+  "assertion_to_source": [
+    {
+      "section_id": "indications",
+      "card_title": "Labeled oral indications",
+      "assertions": [
+        [
+          "Treatment of hypertension, alone or with other antihypertensives. Coronary indications include chronic stable angina and vasospastic angina, alone or with other antianginal medicines.",
+          "In angiographically documented coronary artery disease without heart failure or ejection fraction below 40%, Norvasc is indicated to reduce hospitalization for angina and the risk of coronary revascularization. This indication does not establish a mortality benefit."
+        ],
+        [],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "1.1",
+            "1.2",
+            "14.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "indications",
+      "card_title": "Acute symptoms and scope",
+      "assertions": [
+        [
+          "Regular therapy helps prevent angina but does not relieve an attack already in progress. Follow the prescribed rescue plan. This profile covers single-ingredient oral amlodipine; combination products require their own labels."
+        ],
+        [],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "patient",
+          "sections": [
+            "Why is this medication prescribed?"
+          ]
+        },
+        {
+          "source_id": "label",
+          "sections": [
+            "Relevant section cited by this card"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Adult oral dosing",
+      "assertions": [
+        [],
+        [],
+        [],
+        [
+          [
+            "Hypertension",
+            "Start 5 mg once daily; maximum 10 mg once daily."
+          ],
+          [
+            "Small, frail, elderly, or hepatic impairment",
+            "May start 2.5 mg once daily for hypertension."
+          ],
+          [
+            "Chronic stable or vasospastic angina",
+            "5–10 mg once daily; use the lower dose initially in elderly patients or hepatic insufficiency."
+          ],
+          [
+            "Documented coronary artery disease",
+            "5–10 mg once daily."
+          ],
+          [
+            "Titration",
+            "Usually wait 7–14 days between changes; faster titration requires frequent assessment."
+          ]
+        ]
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Pediatric hypertension",
+      "assertions": [
+        [
+          "2.5–5 mg orally once daily. Doses above 5 mg daily have not been studied for this pediatric indication. Effects below age 6 are not established; the adult 10 mg maximum is not a pediatric recommendation."
+        ],
+        [],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.2",
+            "8.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Oral liquids",
+      "assertions": [
+        [
+          "Katerzia suspension and Norliqva solution each contain 1 mg/mL and have formulation-specific directions. Measure the prescribed dose with an oral syringe or dosing cup, never a household spoon. Shake Katerzia before every dose. Their storage requirements differ; see Product identification."
+        ],
+        [],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "suspension",
+          "sections": [
+            "2",
+            "3",
+            "16"
+          ]
+        },
+        {
+          "source_id": "solution",
+          "sections": [
+            "2",
+            "3",
+            "16"
+          ]
+        },
+        {
+          "source_id": "patient",
+          "sections": [
+            "How should this medicine be used?",
+            "In case of emergency/overdose"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Hepatic and renal impairment",
+      "assertions": [
+        [
+          "Renal impairment does not significantly alter amlodipine pharmacokinetics; the usual initial dose can be used, subject to the patient’s other risks. Hepatic impairment reduces clearance: use a lower starting dose when appropriate and titrate slowly, especially in severe impairment."
+        ],
+        [],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.1",
+            "5.3",
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Warnings and precautions",
+      "assertions": [
+        [
+          "Symptomatic hypotension is possible, particularly with severe aortic stenosis. Angina or myocardial infarction can occur after initiation or dose escalation, especially with severe obstructive coronary disease. Severe hepatic impairment requires slow titration."
+        ],
+        [],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "5.1",
+            "5.2",
+            "5.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Contraindications",
+      "assertions": [
+        [
+          "Known sensitivity to amlodipine is a contraindication. Review the exact formulation’s ingredients when an excipient allergy is suspected."
+        ],
+        [],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Boxed warning",
+      "assertions": [
+        [
+          "The reviewed single-ingredient Norvasc label has no boxed warning. Its warnings about hypotension, coronary symptoms, and hepatic impairment still apply."
+        ],
+        [],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Full prescribing information; no boxed warning"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Adverse reactions",
+      "assertions": [
+        [
+          "Peripheral edema is dose related. Dizziness, flushing, and palpitations can also occur; fatigue, nausea, abdominal pain, and somnolence were reported in trials. Rare postmarketing reports include jaundice or elevated liver enzymes; report jaundice promptly. Trial rates and voluntary reports do not establish an individual patient’s risk."
+        ],
+        [],
+        [],
+        [],
+        [
+          "Overdose may produce severe, prolonged hypotension and requires immediate medical assessment. Call U.S. Poison Control at 1-800-222-1222; call 911 for collapse, seizure, difficulty breathing, or inability to awaken."
+        ],
+        [],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "6.1",
+            "6.2"
+          ]
+        },
+        {
+          "source_id": "label",
+          "sections": [
+            "10"
+          ]
+        },
+        {
+          "source_id": "patient",
+          "sections": [
+            "How should this medicine be used?",
+            "In case of emergency/overdose"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Clinically relevant interactions",
+      "assertions": [
+        [],
+        [
+          "Moderate or strong CYP3A inhibitors can increase exposure: monitor hypotension and edema; a lower amlodipine dose may be needed.",
+          "CYP3A inducers: monitor blood pressure closely because the quantitative interaction is uncertain.",
+          "Simvastatin: limit to 20 mg daily with amlodipine.",
+          "Cyclosporine or tacrolimus: check trough levels frequently and adjust the immunosuppressant as needed.",
+          "Sildenafil: monitor for additive hypotension."
+        ],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "7.1",
+            "7.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pregnancy",
+      "assertions": [
+        [
+          "Human pregnancy data are insufficient to define risks of birth defects or miscarriage. Poorly controlled maternal hypertension also carries risk. Review treatment with the obstetric clinician rather than changing therapy without a plan."
+        ],
+        [],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "solution",
+          "sections": [
+            "8.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Lactation",
+      "assertions": [
+        [
+          "Amlodipine enters milk. The label reports limited infant observations without adverse effects and no information on milk production. Current LactMed considers milk levels usually low and says required maternal treatment is not a reason to stop breastfeeding. Evidence remains limited; individualize care for the infant."
+        ],
+        [],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "lactation",
+          "sections": [
+            "Summary of Use during Lactation",
+            "Drug Levels",
+            "Effects in Breastfed Infants"
+          ]
+        },
+        {
+          "source_id": "label",
+          "sections": [
+            "8.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pediatric and geriatric considerations",
+      "assertions": [
+        [
+          "Pediatric hypertension dosing is established for ages 6–17, with a studied limit of 5 mg daily. Elderly patients may clear amlodipine more slowly; start cautiously at the lower end and reassess blood pressure, symptoms, and edema."
+        ],
+        [],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.2",
+            "8.4",
+            "8.5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Organ function",
+      "assertions": [
+        [
+          "Hepatic insufficiency increases exposure and may require 2.5 mg initially for hypertension with slow titration. Renal failure alone does not require the same adjustment. Other clinical factors can still justify a lower dose."
+        ],
+        [],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.1",
+            "5.3",
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Mechanism of action and pharmacodynamics",
+      "assertions": [
+        [
+          "Amlodipine inhibits calcium entry, predominantly in vascular smooth muscle. Reduced peripheral resistance lowers blood pressure; reduced afterload and inhibition of coronary spasm contribute to antianginal effects. Chronic oral dosing generally does not substantially change heart rate."
+        ],
+        [],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "12.1",
+            "12.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Pharmacokinetics",
+      "assertions": [
+        [],
+        [],
+        [
+          [
+            "Absorption",
+            "Peak plasma levels about 6–12 hours after an oral dose; food does not alter bioavailability."
+          ],
+          [
+            "Metabolism",
+            "Extensive hepatic conversion to inactive metabolites."
+          ],
+          [
+            "Elimination",
+            "Terminal half-life about 30–50 hours; steady state after 7–8 days. Renal impairment has little effect, whereas hepatic impairment prolongs elimination."
+          ]
+        ],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Monitoring parameters",
+      "assertions": [
+        [],
+        [
+          "Assess blood pressure and symptoms after initiation and dose changes; monitor edema, dizziness, and palpitations.",
+          "Reassess new or worsening angina immediately.",
+          "When interacting medicines are started or stopped, reassess blood pressure; obtain transplant-drug trough levels when relevant."
+        ],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.1",
+            "5",
+            "6",
+            "7"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Patient counseling information",
+      "assertions": [
+        [],
+        [
+          "Take once daily at a consistent time, with or without food, and continue as prescribed even when feeling well.",
+          "For a missed dose, take it when remembered unless the next dose is less than 12 hours away; then skip it. Do not double doses.",
+          "Shake suspension before use; measure either liquid with a suitable dosing device. Confirm refrigeration versus room-temperature storage with the pharmacist.",
+          "Amlodipine is preventive treatment for angina. Keep the prescribed rescue plan; seek urgent care for new or worsening chest pain."
+        ],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "patient",
+          "sections": [
+            "How should this medicine be used?",
+            "What should I do if I forget a dose?"
+          ]
+        },
+        {
+          "source_id": "suspension",
+          "sections": [
+            "2",
+            "3",
+            "16"
+          ]
+        },
+        {
+          "source_id": "solution",
+          "sections": [
+            "2",
+            "3",
+            "16"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Representative oral product · Norvasc 5 mg",
+      "assertions": [
+        [
+          "Generic tablets can have different imprints and appearance. A photograph alone does not safely establish identity."
+        ],
+        [],
+        [
+          [
+            "Dosage form / strength",
+            "Oral tablet · 5 mg amlodipine as the besylate salt"
+          ],
+          [
+            "Label distributor",
+            "Viatris Specialty LLC"
+          ],
+          [
+            "Appearance",
+            "White elongated octagon; flat-faced, beveled edge"
+          ],
+          [
+            "Imprint",
+            "NORVASC and 5 on one face; other face plain"
+          ],
+          [
+            "Example package NDC",
+            "58151-354-77 · bottle of 90"
+          ]
+        ],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "3",
+            "16",
+            "Ingredients and appearance"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Dosage forms and strengths",
+      "assertions": [
+        [],
+        [],
+        [
+          [
+            "Norvasc tablets",
+            "2.5, 5, and 10 mg"
+          ],
+          [
+            "Katerzia suspension",
+            "1 mg/mL; amlodipine benzoate; white to off-white aqueous suspension"
+          ],
+          [
+            "Norliqva solution",
+            "1 mg/mL; clear pale straw-colored mixed berry solution"
+          ]
+        ],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "3",
+            "16"
+          ]
+        },
+        {
+          "source_id": "suspension",
+          "sections": [
+            "2",
+            "3",
+            "16"
+          ]
+        },
+        {
+          "source_id": "solution",
+          "sections": [
+            "2",
+            "3",
+            "16"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Storage and handling",
+      "assertions": [
+        [
+          "Norvasc bottles: 15–30°C (59–86°F); dispense in tight, light-resistant containers. Katerzia: refrigerate at 2–8°C (36–46°F), protect from light, and avoid freezing or excessive heat. Norliqva: 20–25°C (68–77°F), permitted excursions 15–30°C; use a tight, light-resistant container. Follow the dispensed product’s exact label."
+        ],
+        [],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "16"
+          ]
+        },
+        {
+          "source_id": "suspension",
+          "sections": [
+            "2",
+            "3",
+            "16"
+          ]
+        },
+        {
+          "source_id": "solution",
+          "sections": [
+            "2",
+            "3",
+            "16"
+          ]
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    "Indication and labeled status",
+    "Adult and pediatric dose and route",
+    "Renal and hepatic dose considerations",
+    "Contraindications and boxed-warning status",
+    "Warnings and common/serious adverse reactions",
+    "Interactions with management actions",
+    "Pregnancy and breastfeeding",
+    "Mechanism and disposition",
+    "Monitoring and counseling",
+    "Exact representative product identity and storage"
+  ],
+  "exclusions": [
+    "Fixed-dose combination labels",
+    "Detailed overdose treatment algorithms",
+    "Unverified off-label regimens",
+    "Every manufacturer-specific NDC or imprint"
+  ],
+  "material_errors": [],
+  "material_gaps": [],
+  "blueprint_changed": false,
+  "validation": {
+    "schema_errors": [],
+    "rendered_page_qa": "Pending parent integration; schema validity does not establish rendered-page QA."
+  },
+  "reconciliations": [
+    "Tablet adult maximum 10 mg is not propagated to pediatric hypertension: ages 6–17 have studied dosing 2.5–5 mg.",
+    "Katerzia suspension must be refrigerated; Norliqva solution has room-temperature instructions.",
+    "LactMed currently supports continued breastfeeding when amlodipine is needed; limited infant data are distinguished from established safety."
+  ],
+  "nonblocking_limitations": [
+    "Pregnancy risk remains insufficiently characterized; no unsupported preferred-pregnancy claim or dose."
+  ]
+}

@@ -1,0 +1,432 @@
+{
+  "drug": "omeprazole",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Focused U.S. delayed-release oral therapy: Prilosec Rx suspension, selected generic Rx10mg capsule, and PrilosecOTC20mg tablet. H.pylori regimens explicitly separate labeled antibiotic combinations from ACG2024 preferred empirical treatment.",
+  "blueprint": "acetaminophen.js preserved; eight section IDs/titles/order, essential safety, 3 hero facts and citation-bearing disclosure blocks",
+  "sources": [
+    {
+      "id": "rx",
+      "title": "Prilosec · Delayed-release oral suspension",
+      "publisher": "DailyMed / National Library of Medicine",
+      "note": "Full prescribing information, Medication Guide and preparation instructions; version 8, effective March 19, 2024.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b6761f84-53ac-4745-a8c8-1e5427d7e179",
+      "checked": "2026-10-01",
+      "access": "public source; no paywalled access claimed",
+      "spl_version": "8",
+      "effective_date": "20240319",
+      "xml_sha256": "e0cab1df07d664405d45676c5375d8999f9e8c3ebb084fd620a60b871db96643",
+      "retrieved_xml": "/tmp/nas-drug-sources/omeprazole.xml"
+    },
+    {
+      "id": "cap",
+      "title": "Omeprazole · Delayed-release 10 mg capsule",
+      "publisher": "DailyMed / National Library of Medicine",
+      "note": "Selected Rx label; version 1, effective August 1, 2026. Capsule instructions and product-specific pediatric age limits.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=062800b1-790a-41c3-a8be-94143d2c7fb6",
+      "checked": "2026-10-01",
+      "access": "public source; no paywalled access claimed",
+      "spl_version": "1",
+      "effective_date": "20260801",
+      "xml_sha256": "cca8451bb64432543c5cd31e0f07173ab83a7c80709bdd96396d8a10a28907ba",
+      "retrieved_xml": "/tmp/nas-drug-sources/omeprazole-capsule.xml"
+    },
+    {
+      "id": "otc",
+      "title": "Prilosec OTC · 20 mg delayed-release tablet",
+      "publisher": "DailyMed / National Library of Medicine",
+      "note": "Drug Facts; version 2, effective July 29, 2026. Adult 14-day frequent-heartburn course.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=37291cab-e350-d8e3-e063-6294a90a9cb1",
+      "checked": "2026-10-01",
+      "access": "public source; no paywalled access claimed",
+      "spl_version": "2",
+      "effective_date": "20260729",
+      "xml_sha256": "8bb4e774cd922a4dd05d6a95cfa750e682afa244130abdc052f0a6708a0640df",
+      "retrieved_xml": "/tmp/nas-drug-sources/omeprazole-otc.xml"
+    },
+    {
+      "id": "acg",
+      "title": "H. pylori · ACG 2024 guideline summary",
+      "publisher": "American College of Gastroenterology",
+      "note": "Public professional summary of treatment recommendations and test-of-cure timing; September 17, 2024. Full paywalled guideline not accessed.",
+      "url": "https://gi.org/journals-publications/ebgi/schoenfeld_sep2024/",
+      "checked": "2026-10-01",
+      "access": "public source; no paywalled access claimed"
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "card": "Labeled prescription indications",
+      "assertions": "Adult ulcers, H. pylori antibiotic combinations, GERD, EE, maintenance, and hypersecretory indications.",
+      "source_sections": {
+        "rx": [
+          "1.1–1.7"
+        ],
+        "cap": [
+          "1.1–1.7"
+        ]
+      }
+    },
+    {
+      "card": "OTC frequent heartburn",
+      "assertions": "Adult age limit, frequent heartburn definition, and 1–4 day onset of full benefit.",
+      "source_sections": {
+        "otc": [
+          "Use",
+          "Directions"
+        ]
+      }
+    },
+    {
+      "card": "H. pylori · Label versus current professional guidance",
+      "assertions": "Labeled clarithromycin combinations distinguished from the 2024 ACG susceptibility requirement and preferred empiric 14-day bismuth quadruple therapy.",
+      "source_sections": {
+        "rx": [
+          "1.2",
+          "2.1"
+        ],
+        "acg": [
+          "Results",
+          "KeyStudyFindings"
+        ]
+      }
+    },
+    {
+      "card": "Prescription adult regimens",
+      "assertions": "Numeric adult doses and durations; specialist hypersecretory dosing and limits of EE maintenance evidence.",
+      "source_sections": {
+        "rx": [
+          "2.1"
+        ],
+        "cap": [
+          "2.1"
+        ]
+      }
+    },
+    {
+      "card": "H. pylori antibiotic combinations",
+      "assertions": "Exact labeled triple/dual combinations and ulcer continuation durations, qualified by current ACG guidance.",
+      "source_sections": {
+        "rx": [
+          "2.1"
+        ],
+        "acg": [
+          "Results",
+          "KeyStudyFindings"
+        ]
+      }
+    },
+    {
+      "card": "Pediatric Prilosec suspension",
+      "assertions": "Suspension-specific ages, weight bands, doses and durations; selected capsule indications from age 2 only.",
+      "source_sections": {
+        "rx": [
+          "1.4–1.6",
+          "2.2",
+          "8.4"
+        ],
+        "cap": [
+          "1.4–1.6",
+          "8.4"
+        ]
+      }
+    },
+    {
+      "card": "OTC delayed-release tablets · 20 mg",
+      "assertions": "OTC morning once-daily 14-day course, swallowing instructions, course spacing, and under-18 consultation.",
+      "source_sections": {
+        "otc": [
+          "Directions"
+        ]
+      }
+    },
+    {
+      "card": "Capsules and suspension administration",
+      "assertions": "Before-meal administration; capsule applesauce technique; packet water volumes, thickening time and use deadline; gastric tube size, syringe and flush requirements.",
+      "source_sections": {
+        "rx": [
+          "2.3",
+          "Instructions for Use"
+        ],
+        "cap": [
+          "2.3"
+        ]
+      }
+    },
+    {
+      "card": "Hepatic and renal considerations",
+      "assertions": "Maintenance-EE-only 10 mg dose adjustment in hepatic impairment and Asian patients; renal PK and nephritis distinction.",
+      "source_sections": {
+        "rx": [
+          "2.1",
+          "8.6",
+          "8.7",
+          "12.3",
+          "5.2"
+        ],
+        "cap": [
+          "2.1",
+          "8.6",
+          "8.7",
+          "12.3"
+        ]
+      }
+    },
+    {
+      "card": "Warnings and precautions",
+      "assertions": "Alarm features, malignancy, nephritis, persistent diarrhea, serious skin reactions, lupus, B12 and electrolyte risks, observational fracture associations, and fundic polyps.",
+      "source_sections": {
+        "rx": [
+          "5.1–5.13"
+        ],
+        "otc": [
+          "Do not use",
+          "Ask a doctor before use",
+          "Stop use and ask a doctor"
+        ]
+      }
+    },
+    {
+      "card": "Contraindications",
+      "assertions": "Formulation/benzimidazole hypersensitivity, rilpivirine contraindication, and antibiotic contraindication review.",
+      "source_sections": {
+        "rx": [
+          "4"
+        ],
+        "cap": [
+          "4"
+        ]
+      }
+    },
+    {
+      "card": "Boxed warning status",
+      "assertions": "No boxed warning in the selected complete prescription labels and OTC Drug Facts.",
+      "source_sections": {
+        "rx": [
+          "Full prescribing information"
+        ],
+        "cap": [
+          "Full prescribing information"
+        ],
+        "otc": [
+          "Drug Facts"
+        ]
+      }
+    },
+    {
+      "card": "Adverse reactions",
+      "assertions": "Common adult trial events and serious labeled reactions.",
+      "source_sections": {
+        "rx": [
+          "6.1",
+          "6.3"
+        ],
+        "cap": [
+          "6"
+        ]
+      }
+    },
+    {
+      "card": "Clinically relevant interactions",
+      "assertions": "Listed medicine combinations and actions; clopidogrel timing evidence; CgA, secretin, and THC testing interference.",
+      "source_sections": {
+        "rx": [
+          "Section 7, Tables 3–4",
+          "5.7",
+          "5.10–5.12",
+          "12.3"
+        ],
+        "cap": [
+          "Section 7, Tables 3–4"
+        ]
+      }
+    },
+    {
+      "card": "Pregnancy",
+      "assertions": "Epidemiologic pregnancy data, absence of controlled trials, and OTC professional consultation.",
+      "source_sections": {
+        "rx": [
+          "8.1"
+        ],
+        "cap": [
+          "8.1"
+        ],
+        "otc": [
+          "If pregnant or breastfeeding"
+        ]
+      }
+    },
+    {
+      "card": "Lactation",
+      "assertions": "Limited milk and infant data with individualized maternal benefit/risk review.",
+      "source_sections": {
+        "rx": [
+          "8.2"
+        ],
+        "cap": [
+          "8.2"
+        ],
+        "otc": [
+          "If pregnant or breastfeeding"
+        ]
+      }
+    },
+    {
+      "card": "Pediatric and geriatric considerations",
+      "assertions": "Product-specific pediatric restrictions and no age-only geriatric dose adjustment.",
+      "source_sections": {
+        "rx": [
+          "8.4",
+          "8.5"
+        ],
+        "cap": [
+          "8.4",
+          "8.5"
+        ],
+        "otc": [
+          "Directions"
+        ]
+      }
+    },
+    {
+      "card": "Hepatic impairment and exposure variation",
+      "assertions": "Hepatic and CYP2C19 exposure variation and indication-specific dose reduction.",
+      "source_sections": {
+        "rx": [
+          "8.6",
+          "8.7",
+          "12.3",
+          "12.5"
+        ],
+        "cap": [
+          "8.6",
+          "8.7",
+          "12.3",
+          "12.5"
+        ]
+      }
+    },
+    {
+      "card": "Mechanism of action and pharmacodynamics",
+      "assertions": "Parietal H+/K+-ATPase inhibition, basal/stimulated acid suppression, and repeated-dose plateau.",
+      "source_sections": {
+        "rx": [
+          "12.1",
+          "12.2"
+        ]
+      }
+    },
+    {
+      "card": "Pharmacokinetics",
+      "assertions": "Delayed-release absorption, CYP2C19/CYP3A4 metabolism and inhibition, half-life, and metabolite elimination.",
+      "source_sections": {
+        "rx": [
+          "12.3"
+        ],
+        "cap": [
+          "12.3"
+        ]
+      }
+    },
+    {
+      "card": "Monitoring parameters",
+      "assertions": "Response, duration, alarm features, risk-based laboratory assessment, interacting-drug monitoring, and H. pylori test-of-cure timing.",
+      "source_sections": {
+        "rx": [
+          "5",
+          "7"
+        ],
+        "otc": [
+          "Stop use and ask a doctor"
+        ],
+        "acg": [
+          "Results: proof of eradication"
+        ]
+      }
+    },
+    {
+      "card": "Patient counseling information",
+      "assertions": "Exact product directions, medication reconciliation, missed-dose handling, preparation deadline, and warning-symptom responses.",
+      "source_sections": {
+        "rx": [
+          "2.3",
+          "Medication Guide",
+          "Instructions for Use"
+        ],
+        "cap": [
+          "2.3",
+          "Medication Guide"
+        ],
+        "otc": [
+          "Drug Facts"
+        ]
+      }
+    },
+    {
+      "card": "Representative oral product · Prilosec suspension",
+      "assertions": "Suspension strength, granule appearance, and example package NDC.",
+      "source_sections": {
+        "rx": [
+          "16"
+        ]
+      }
+    },
+    {
+      "card": "Dosage forms and strengths",
+      "assertions": "Selected suspension, capsule and OTC tablet strengths; combination products excluded.",
+      "source_sections": {
+        "rx": [
+          "3",
+          "16"
+        ],
+        "cap": [
+          "3",
+          "16"
+        ],
+        "otc": [
+          "Active ingredient",
+          "Principal display panel"
+        ]
+      }
+    },
+    {
+      "card": "Storage and handling",
+      "assertions": "Exact product storage and protection, OTC carton retention and blister-integrity checks.",
+      "source_sections": {
+        "rx": [
+          "16"
+        ],
+        "cap": [
+          "16"
+        ],
+        "otc": [
+          "Other information",
+          "Safety feature"
+        ]
+      }
+    }
+  ],
+  "resolved_source_findings": [
+    {
+      "severity": "scope_distinction",
+      "detail": "Suspension: GERD, EE and maintenance from age 1 year; EE only from 1 month to less than 1 year. Selected capsule: indication minimum age 2 years; subsection 8.4 has inconsistent less-than-1-year wording and 2.2 is absent. Used the explicit indication minimum age of 2; numerical pediatric doses remain suspension-specific."
+    },
+    {
+      "severity": "clinical_reconciliation",
+      "detail": "Clarithromycin label regimens retained as labeled options with exact 10- and 14-day durations; not presented as preferred empiric regimens. ACG 2024 susceptibility and test-of-cure requirements included."
+    }
+  ],
+  "scope_exclusions": [
+    "Omeprazole/sodium-bicarbonate combinations and other manufacturers require separate labeling.",
+    "Selected capsule20260801 label omits pediatricdose subsection2.2; no capsulepediatricdose table inferred. Pediatricnumericdoses apply only to Prilosecsuspension.",
+    "Complete antibiotic monographs, full susceptibility algorithm and salvage combinations outside focus; clinician-directed fullregimen required. PublicACGsummary read; full paywalledguideline not accessed."
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published block checked against full relevant public label sections and the accessible professional references listed. Scope-limited source review, not an independent clinician sign-off.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending"
+  },
+  "monograph_sha256": "0c1d40d376e8789cfa2f6e082f97e80cd410fc8aba53fbee145f6a56440f4352"
+}

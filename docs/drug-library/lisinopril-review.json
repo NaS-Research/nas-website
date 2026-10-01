@@ -1,0 +1,724 @@
+{
+  "slug": "lisinopril",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Focused US single-ingredient oral reference; original clinical summaries, with indication/population/formulation distinctions and no claim to reproduce every adverse-event report.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Zestril · Prescribing information",
+      "publisher": "DailyMed / Upsher-Smith Laboratories",
+      "note": "Tablet label revised November 2024; SPL version 2, effective January 2, 2025.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=838c2d78-d2d8-4981-9ec9-e50ef9e1a5d8",
+      "checked": "2026-10-01",
+      "version": "Tablet label revised November 2024; SPL version 2, effective January 2, 2025."
+    },
+    {
+      "id": "solution",
+      "title": "Qbrelis · 1 mg/mL oral solution",
+      "publisher": "DailyMed / Azurity Pharmaceuticals",
+      "note": "Solution administration and storage. Prescribing information revised April 2023; DailyMed record updated December 16, 2025.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9f6e4e57-a489-4b36-b093-b93865d3717c",
+      "checked": "2026-10-01",
+      "version": "Solution administration and storage. Prescribing information revised April 2023; DailyMed record updated December 16, 2025."
+    },
+    {
+      "id": "patient",
+      "title": "Lisinopril · Patient information",
+      "publisher": "MedlinePlus / National Library of Medicine",
+      "note": "Administration, missed doses, and patient precautions.",
+      "url": "https://medlineplus.gov/druginfo/meds/a692051.html",
+      "checked": "2026-10-01",
+      "version": "Administration, missed doses, and patient precautions."
+    },
+    {
+      "id": "lactation",
+      "title": "Lisinopril · Lactation",
+      "publisher": "LactMed / National Library of Medicine",
+      "note": "Revised July 15, 2026; includes newer human milk data than the reviewed tablet label.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK501006/",
+      "checked": "2026-10-01",
+      "version": "Revised July 15, 2026; includes newer human milk data than the reviewed tablet label."
+    },
+    {
+      "id": "ckd",
+      "title": "KDIGO 2024 · Chronic kidney disease guideline",
+      "publisher": "Kidney Disease: Improving Global Outcomes",
+      "note": "Section 3.6: albuminuric CKD, RAS inhibitor monitoring, and avoiding dual blockade.",
+      "url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+      "checked": "2026-10-01",
+      "version": "Section 3.6: albuminuric CKD, RAS inhibitor monitoring, and avoiding dual blockade."
+    }
+  ],
+  "assertion_to_source": [
+    {
+      "section_id": "indications",
+      "card_title": "Labeled oral indications",
+      "assertions": [
+        [
+          "Zestril treats hypertension in adults and children age 6 years and older, alone or with other antihypertensives. It reduces signs and symptoms of systolic heart failure.",
+          "It is also labeled to reduce mortality in hemodynamically stable patients treated within 24 hours of acute myocardial infarction, alongside appropriate standard care. It is not a treatment for an unstable patient after MI."
+        ],
+        [],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "1.1",
+            "1.2",
+            "1.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "indications",
+      "card_title": "Albuminuric chronic kidney disease",
+      "assertions": [
+        [
+          "KDIGO recommends ACE inhibitor or ARB therapy in selected albuminuric CKD populations: G1–G4 with A3 albuminuria without diabetes, and A2–A3 with diabetes; it suggests treatment for A2 without diabetes. Kidney protection is a guideline-supported class use, not a separate Zestril-labeled indication. Select and monitor treatment according to renal function, potassium, and tolerability."
+        ],
+        [],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "ckd",
+          "sections": [
+            "Recommendations 3.6.1–3.6.3"
+          ]
+        },
+        {
+          "source_id": "label",
+          "sections": [
+            "Relevant section cited by this card"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Adult oral dosing",
+      "assertions": [
+        [],
+        [],
+        [],
+        [
+          [
+            "Hypertension",
+            "Start 10 mg once daily; usual maintenance 20–40 mg once daily. Doses of 80 mg have been used without greater apparent effect."
+          ],
+          [
+            "Hypertension while taking diuretics",
+            "Start 5 mg once daily."
+          ],
+          [
+            "Systolic heart failure",
+            "Start 5 mg once daily; if sodium <130 mEq/L, start 2.5 mg. Titrate as tolerated to maximum 40 mg once daily."
+          ],
+          [
+            "Acute MI · stable patient within 24 hours",
+            "5 mg initially, 5 mg after 24 hours, 10 mg after 48 hours, then 10 mg daily; continue at least 6 weeks."
+          ]
+        ]
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.1",
+            "2.2",
+            "2.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Acute MI · blood pressure precautions",
+      "assertions": [
+        [
+          "For systolic pressure ≤120 but >100 mmHg during the first 3 days after infarction, start 2.5 mg. If pressure falls to ≤100 mmHg, use 5 mg daily with temporary reduction to 2.5 mg when needed. Withdraw for systolic pressure <90 mmHg lasting more than 1 hour. Do not initiate in hemodynamic instability."
+        ],
+        [],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.3",
+            "5.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Renal impairment · adult initial doses",
+      "assertions": [
+        [
+          "For CrCl 10–30 mL/min, titrate as tolerated to no more than 40 mg daily. Subsequent dosing requires individualized blood pressure, kidney function, and potassium assessment."
+        ],
+        [],
+        [],
+        [
+          [
+            ">30 mL/min",
+            "No renal dose adjustment."
+          ],
+          [
+            "10–30 mL/min, inclusive",
+            "Half the usual starting dose: hypertension 5 mg; systolic heart failure 2.5 mg; acute MI 2.5 mg."
+          ],
+          [
+            "<10 mL/min or hemodialysis",
+            "2.5 mg once daily."
+          ]
+        ]
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Pediatric hypertension",
+      "assertions": [
+        [
+          "For GFR >30 mL/min/1.73 m², start 0.07 mg/kg once daily, up to 5 mg initially. Adjust by blood pressure to a maximum studied dose of 0.61 mg/kg, not exceeding 40 mg daily. Not recommended below age 6 or with GFR <30 mL/min/1.73 m². The label’s dosing data do not establish a regimen at exactly GFR 30; obtain specialist guidance at that boundary."
+        ],
+        [],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.1",
+            "8.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Administration and hepatic considerations",
+      "assertions": [
+        [
+          "Take orally once daily; food does not affect tablet bioavailability. Qbrelis is a ready-to-use 1 mg/mL solution: measure with an oral syringe. Do not apply its handling instructions to a pharmacy-compounded liquid.",
+          "The tablet label gives no specific hepatic adjustment regimen. Lisinopril is not metabolized, but rare ACE inhibitor-associated hepatic failure requires discontinuation for jaundice or marked liver enzyme elevation."
+        ],
+        [],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "5.6",
+            "12.3"
+          ]
+        },
+        {
+          "source_id": "solution",
+          "sections": [
+            "2",
+            "3",
+            "16"
+          ]
+        },
+        {
+          "source_id": "patient",
+          "sections": [
+            "How should this medicine be used?",
+            "In case of emergency/overdose"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Warnings and precautions",
+      "assertions": [
+        [
+          "Stop promptly when pregnancy is detected. Angioedema can occur at any time, may obstruct the airway, and requires immediate discontinuation and urgent assessment. Intestinal angioedema can cause abdominal pain with or without nausea or vomiting.",
+          "Volume depletion, diuretics, heart failure, renal disease, or renal artery stenosis increase the risk of hypotension or acute kidney injury. Monitor renal function and potassium; reassess treatment for clinically significant deterioration. Rare cholestatic hepatitis can progress to liver failure: stop and evaluate jaundice or marked liver enzyme elevations."
+        ],
+        [],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "5.1–5.6"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Contraindications",
+      "assertions": [
+        [],
+        [
+          "Prior ACE inhibitor-related angioedema or hypersensitivity; hereditary or idiopathic angioedema.",
+          "Concurrent neprilysin inhibitor therapy. Do not give lisinopril within 36 hours before or after sacubitril/valsartan.",
+          "Aliskiren together with lisinopril in a patient with diabetes."
+        ],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Boxed warning · Fetal toxicity",
+      "assertions": [
+        [
+          "The label warns that medicines acting on the renin–angiotensin system can injure or kill a developing fetus. Discontinue as soon as pregnancy is detected."
+        ],
+        [],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Boxed warning"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Adverse reactions and procedural precautions",
+      "assertions": [
+        [
+          "Cough, dizziness, headache, and hypotension can occur; renal dysfunction and hyperkalemia require laboratory assessment. Rare neutropenia is reported: assess fever or sore throat. Tell the care team before surgery or anesthesia. Life-threatening anaphylactoid reactions have occurred with certain high-flux dialysis membranes, LDL apheresis, and venom desensitization."
+        ],
+        [],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "5.2",
+            "5.4",
+            "6",
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Clinically relevant interactions",
+      "assertions": [
+        [],
+        [
+          "Sacubitril/valsartan or other neprilysin inhibitors: contraindicated overlap; at least 36 hours separating lisinopril and sacubitril/valsartan in either direction.",
+          "ARBs or aliskiren: generally avoid dual RAS blockade. Aliskiren is contraindicated with diabetes and should be avoided with GFR <60 mL/min.",
+          "Potassium supplements, potassium salt substitutes, or potassium-sparing diuretics: increased hyperkalemia risk; monitor potassium frequently if a combination is needed.",
+          "Diuretics: volume depletion can cause excessive hypotension; clinician-directed dose adjustment may be required.",
+          "NSAIDs, including selective COX-2 inhibitors: reduced antihypertensive effect and possible renal injury; monitor renal function, particularly with dehydration or impaired kidneys.",
+          "Lithium: possible toxicity; monitor serum lithium.",
+          "Insulin or oral antidiabetics: increased hypoglycemia risk; monitor closely, particularly during the first month.",
+          "mTOR inhibitors: increased angioedema risk. Injectable gold: rare flushing, nausea, vomiting, and hypotension reactions."
+        ],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "4",
+            "7.1–7.8",
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pregnancy",
+      "assertions": [
+        [
+          "Do not use during pregnancy. Exposure, particularly in the second and third trimesters, can cause fetal renal failure, oligohydramnios, pulmonary or skeletal complications, and death. Stop promptly and arrange replacement therapy when pregnancy is detected. In-utero exposure warrants specialist fetal and neonatal assessment."
+        ],
+        [],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Boxed warning",
+            "5.1",
+            "8.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Lactation",
+      "assertions": [
+        [
+          "The reviewed Zestril label states that human milk data are unavailable and advises women not to breastfeed during treatment. LactMed’s July 2026 review incorporates a five-woman study with very low milk transfer and considers adverse effects unlikely. Infant blood-level data remain unavailable; observations are small and do not establish safety for every infant. Discuss this discrepancy and treatment alternatives with the prescribing and infant-care clinicians."
+        ],
+        [],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "lactation",
+          "sections": [
+            "Summary of Use during Lactation",
+            "Drug Levels",
+            "Effects in Breastfed Infants"
+          ]
+        },
+        {
+          "source_id": "label",
+          "sections": [
+            "8.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pediatric and geriatric considerations",
+      "assertions": [
+        [
+          "Hypertension efficacy and safety were established in ages 6–16; the labeled indication and dosing apply to children 6 years and older with the renal limitations above. Pediatric heart failure or post-MI regimens are not established in this label. Age alone does not mandate a dose change in older adults, but renal function, volume status, and tolerability guide dosing."
+        ],
+        [],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.1",
+            "8.4",
+            "8.5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Renal and hepatic considerations",
+      "assertions": [
+        [
+          "Renal clearance drives exposure; reduce the starting dose at CrCl ≤30 mL/min or with hemodialysis. Renal artery stenosis or volume depletion increases acute kidney injury risk. No separate hepatic dosing schedule is supplied; promptly evaluate hepatic warning signs."
+        ],
+        [],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.4",
+            "5.3",
+            "5.6",
+            "8.7",
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Mechanism of action and pharmacodynamics",
+      "assertions": [
+        [
+          "Inhibition of ACE reduces angiotensin II formation and aldosterone secretion, lowering vascular resistance. ACE also degrades bradykinin. Blood pressure lowering begins about 1 hour after dosing and peaks around 6 hours; individual responses vary."
+        ],
+        [],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "12.1",
+            "12.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Pharmacokinetics",
+      "assertions": [
+        [],
+        [],
+        [
+          [
+            "Absorption",
+            "Mean oral absorption about 25%, with wide variability; food does not alter bioavailability."
+          ],
+          [
+            "Peak / effective half-life",
+            "Peak serum concentration around 7 hours; effective half-life with repeated dosing about 12 hours."
+          ],
+          [
+            "Metabolism / elimination",
+            "Not metabolized; excreted unchanged in urine. Renal impairment increases exposure, especially below GFR 30 mL/min; hemodialysis can remove lisinopril."
+          ]
+        ],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Monitoring parameters",
+      "assertions": [
+        [],
+        [
+          "Assess blood pressure, creatinine or eGFR, potassium, and volume status before treatment and after changes.",
+          "For CKD, KDIGO advises checking blood pressure, creatinine, and potassium within 2–4 weeks of initiation or dose increase, adjusted to baseline GFR and potassium. Higher-risk or symptomatic patients need closer assessment.",
+          "In CKD, a creatinine rise >30% within 4 weeks warrants evaluation and treatment reassessment; assess dehydration, NSAIDs, and other reversible contributors.",
+          "Follow heart failure symptoms or post-MI hemodynamics as appropriate; monitor glucose more closely with antidiabetic therapy and lithium levels with lithium."
+        ],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "ckd",
+          "sections": [
+            "Practice Points 3.6.2",
+            "3.6.4"
+          ]
+        },
+        {
+          "source_id": "label",
+          "sections": [
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Patient counseling information",
+      "assertions": [
+        [],
+        [
+          "Report pregnancy immediately; discuss an alternative before a planned pregnancy.",
+          "Stop and seek emergency care for lip, tongue, throat, or facial swelling, especially with breathing or swallowing difficulty.",
+          "Discuss potassium supplements, salt substitutes, and OTC NSAIDs before use. Report fainting, vomiting, diarrhea, or dehydration.",
+          "Take at the same time daily. If a dose is missed, take it when remembered unless nearly time for the next; skip then and never double.",
+          "Use an oral syringe for liquid. Tell surgical, dialysis, and desensitization teams about lisinopril."
+        ],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "patient",
+          "sections": [
+            "How should this medicine be used?",
+            "What should I do if I forget a dose?",
+            "What special precautions should I follow?"
+          ]
+        },
+        {
+          "source_id": "label",
+          "sections": [
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Representative oral product · Zestril 10 mg",
+      "assertions": [
+        [
+          "Other manufacturers’ lisinopril tablets can look different. Ask a pharmacist to verify an unexpected appearance; a photograph alone is insufficient."
+        ],
+        [],
+        [
+          [
+            "Dosage form / strength",
+            "Uncoated oral tablet · 10 mg"
+          ],
+          [
+            "Label distributor",
+            "Upsher-Smith Laboratories, LLC"
+          ],
+          [
+            "Appearance",
+            "Pink, round, biconvex; unscored"
+          ],
+          [
+            "Imprint",
+            "ZESTRIL 10 / 131"
+          ],
+          [
+            "Example package NDC",
+            "24979-240-07 · bottle of 90"
+          ]
+        ],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "3",
+            "16",
+            "Ingredients and appearance"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Dosage forms and strengths",
+      "assertions": [
+        [],
+        [],
+        [
+          [
+            "Zestril tablets",
+            "2.5, 5, 10, 20, 30, and 40 mg; only the 5 mg tablet is scored in this label."
+          ],
+          [
+            "Qbrelis oral solution",
+            "1 mg/mL, clear to slightly opalescent, colorless solution; 150 mL bottle."
+          ],
+          [
+            "Combination products",
+            "Lisinopril/hydrochlorothiazide products have separate dosing and safety labels."
+          ]
+        ],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "3",
+            "16"
+          ]
+        },
+        {
+          "source_id": "solution",
+          "sections": [
+            "2",
+            "3",
+            "16"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Storage and handling",
+      "assertions": [
+        [
+          "Zestril: 20–25°C (68–77°F); protect from moisture, freezing, and excessive heat and dispense in a tight container. Qbrelis: 20–25°C in a tightly closed container; protect from freezing and excessive heat. Compounded liquids need their pharmacy-specific storage and beyond-use instructions."
+        ],
+        [],
+        [],
+        []
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "16"
+          ]
+        },
+        {
+          "source_id": "solution",
+          "sections": [
+            "2",
+            "3",
+            "16"
+          ]
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    "Indication and labeled status",
+    "Adult and pediatric dose and route",
+    "Renal and hepatic dose considerations",
+    "Contraindications and boxed-warning status",
+    "Warnings and common/serious adverse reactions",
+    "Interactions with management actions",
+    "Pregnancy and breastfeeding",
+    "Mechanism and disposition",
+    "Monitoring and counseling",
+    "Exact representative product identity and storage"
+  ],
+  "exclusions": [
+    "Fixed-dose combination labels",
+    "Detailed overdose treatment algorithms",
+    "Unverified off-label regimens",
+    "Every manufacturer-specific NDC or imprint"
+  ],
+  "material_errors": [],
+  "material_gaps": [],
+  "blueprint_changed": false,
+  "validation": {
+    "schema_errors": [],
+    "rendered_page_qa": "Pending parent integration; schema validity does not establish rendered-page QA."
+  },
+  "reconciliations": [
+    "Zestril label lactation advice against breastfeeding is retained alongside LactMed July 2026 human milk evidence; limited infant outcome data are stated.",
+    "Kidney protection is explicitly KDIGO-supported class use rather than a Zestril labeled indication.",
+    "Label pediatric dose criteria specify GFR >30, while not-recommended criteria specify <30. No invented regimen at exactly 30 is supplied; page explicitly directs specialist guidance.",
+    "Age ≥6 labeled indication is distinguished from age6–16 trial evidence."
+  ],
+  "nonblocking_limitations": [
+    "Pediatric GFR exactly30 boundary is not resolved by the label; no dose is recommended at that boundary.",
+    "No infant blood-level data in LactMed."
+  ]
+}

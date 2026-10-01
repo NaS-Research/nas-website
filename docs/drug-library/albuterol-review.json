@@ -1,0 +1,381 @@
+{
+  "slug": "albuterol",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "A short-acting beta₂ agonist for bronchospasm. This reference focuses on Ventolin HFA, with device-specific directions and separate asthma guideline context.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Ventolin HFA · Prescribing information and instructions",
+      "publisher": "DailyMed / GlaxoSmithKline",
+      "note": "SPL version 30, effective April 26, 2024; prescribing information and device instructions revised April 2024. Product dosing, safety, populations, pharmacology, and device handling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d92c5d6b-ff10-4087-36a2-1cfc464cb967"
+    },
+    {
+      "id": "gina",
+      "title": "GINA 2026 · Summary Guide",
+      "publisher": "Global Initiative for Asthma",
+      "note": "Asthma treatment context for adults, adolescents and children aged 6–11; printed pages 21–28. Recommendations require local regulatory review.",
+      "url": "https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf"
+    }
+  ],
+  "sourceEvidence": {
+    "label": {
+      "setid": "d92c5d6b-ff10-4087-36a2-1cfc464cb967",
+      "splVersion": 30,
+      "effectiveTime": "20240426",
+      "read": "Full relevant prescribing-information sections plus patient labeling, device instructions/product panels; nested SPL sections inspected directly where parsed extract omitted them.",
+      "clinicalTextRevision": "2024-04",
+      "dateDistinction": "SPL effectiveTime is publication metadata; clinicalTextRevision is the revision printed in current DailyMed prescribing information."
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Labeled inhaled indications",
+      "claims": [
+        "Ventolin HFA treats or prevents bronchospasm in reversible obstructive airway disease and prevents exercise-induced bronchospasm in adults and children aged 4 years and older."
+      ],
+      "sourceIds": [
+        "label"
+      ],
+      "labelSections": [
+        "1.1–1.2",
+        "GINA 2026 printed pp21–28"
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Asthma guideline context",
+      "claims": [
+        "GINA 2026 recommends ICS-containing treatment rather than SABA alone for adults, adolescents and children aged 6–11. Its preferred adult/adolescent reliever is low-dose ICS-formoterol. Albuterol remains a reliever in alternative regimens with ICS coverage; guideline recommendations do not extend Ventolin’s product approval."
+      ],
+      "sourceIds": [
+        "gina",
+        "label"
+      ],
+      "labelSections": [
+        "1.1–1.2",
+        "GINA 2026 printed pp21–28"
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Ventolin HFA · Oral inhalation",
+      "claims": [
+        "['Bronchospasm', '2 inhalations every 4–6 hours; 1 every 4 hours may suffice in some patients.']",
+        "['Before exercise', '2 inhalations 15–30 minutes before exercise.']",
+        "['Dose escalation', 'More inhalations or shorter intervals are not recommended by this routine label.']"
+      ],
+      "sourceIds": [
+        "label"
+      ],
+      "labelSections": [
+        "2.1–2.3",
+        "8.4–8.5",
+        "12.3",
+        "Instructions for Use"
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Priming and administration",
+      "claims": [
+        "Shake well before every spray. Prime with four sprays away from the face before first use, after more than two weeks without use, or after dropping. Follow the illustrated inhalation instructions; wait one minute between prescribed puffs."
+      ],
+      "sourceIds": [
+        "label"
+      ],
+      "labelSections": [
+        "2.1–2.3",
+        "8.4–8.5",
+        "12.3",
+        "Instructions for Use"
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Formulation and organ-function limits",
+      "claims": [
+        "Nebulized solutions, dry-powder devices and oral products require their own labels; no dose conversion is supplied here. The Ventolin HFA label specifies no renal or hepatic adjustment regimen and provides no dedicated impairment pharmacokinetic study; individualize treatment rather than infer a universal adjustment."
+      ],
+      "sourceIds": [
+        "label"
+      ],
+      "labelSections": [
+        "2.1–2.3",
+        "8.4–8.5",
+        "12.3",
+        "Instructions for Use"
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "claims": [
+        "Immediate worsening of bronchospasm can be life-threatening. Increasing use signals deteriorating control; excessive sympathomimetic use has been associated with fatalities. Cardiovascular effects and transient hypokalemia may occur. Use cautiously with coronary disease, arrhythmias, hypertension, seizures, hyperthyroidism or diabetes."
+      ],
+      "sourceIds": [
+        "label"
+      ],
+      "labelSections": [
+        "4",
+        "5.1–5.8",
+        "6.1–6.2"
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "claims": [
+        "History of hypersensitivity to any Ventolin HFA ingredient. Stop and obtain urgent assessment for angioedema, anaphylaxis or other immediate allergic reactions."
+      ],
+      "sourceIds": [
+        "label"
+      ],
+      "labelSections": [
+        "4",
+        "5.1–5.8",
+        "6.1–6.2"
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "claims": [
+        "Throat irritation, cough and respiratory infections were reported in trials. Palpitations, tachycardia, tremor and nervousness can occur; postmarketing reports include arrhythmias and metabolic acidosis. Trial rates and voluntary reports do not establish an individual patient’s risk.",
+        "Excess albuterol can cause marked tachycardia, arrhythmias, seizures, potassium or glucose disturbances, and cardiac arrest. Obtain urgent medical assessment; stop further doses pending emergency guidance. Treatment is supportive; dialysis benefit is not established."
+      ],
+      "sourceIds": [
+        "label"
+      ],
+      "labelSections": [
+        "4",
+        "5.1–5.8",
+        "6.1–6.2",
+        "10 OVERDOSAGE"
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "claims": [
+        "Other short-acting sympathomimetic aerosol bronchodilators: avoid concomitant use; use additional adrenergic medicines cautiously.",
+        "Beta-blockers may prevent bronchodilation and provoke severe bronchospasm. If essential, a cardioselective agent may be considered cautiously.",
+        "Loop/thiazide diuretics may worsen hypokalemia or ECG effects; assess risk and potassium when appropriate.",
+        "Digoxin concentrations may decrease; consider level monitoring.",
+        "MAO inhibitors or tricyclic antidepressants, including within two weeks of stopping: extreme caution because vascular effects may increase."
+      ],
+      "sourceIds": [
+        "label"
+      ],
+      "labelSections": [
+        "7.1–7.4"
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy",
+      "claims": [
+        "Available human observations do not consistently show increased major birth defects or miscarriage, but cannot exclude risk. Poorly controlled asthma poses maternal and fetal risks; monitor and adjust therapy. Use during labor only when benefit outweighs risk; Ventolin is not approved for preterm labor."
+      ],
+      "sourceIds": [
+        "label"
+      ],
+      "labelSections": [
+        "8.1–8.5"
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Lactation",
+      "claims": [
+        "Human milk, infant-effect and milk-production data are unavailable. Low maternal plasma concentrations after inhalation suggest low milk exposure if present; weigh breastfeeding benefits and maternal treatment needs."
+      ],
+      "sourceIds": [
+        "label"
+      ],
+      "labelSections": [
+        "8.1–8.5"
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric considerations",
+      "claims": [
+        "Safety and effectiveness below age 4 are not established for Ventolin HFA. Evidence in adults aged 65 and older is limited; select doses cautiously in view of organ function, cardiac disease and other medicines."
+      ],
+      "sourceIds": [
+        "label"
+      ],
+      "labelSections": [
+        "8.1–8.5"
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action and pharmacodynamics",
+      "claims": [
+        "Beta₂ receptor activation increases cyclic AMP, reducing contractile signaling in airway smooth muscle. The label describes symptomatic action lasting up to 4–6 hours."
+      ],
+      "sourceIds": [
+        "label"
+      ],
+      "labelSections": [
+        "12.1",
+        "12.3",
+        "17"
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "claims": [
+        "['Systemic exposure', 'Low after recommended inhaled doses.']",
+        "['Half-life', 'Apparent terminal plasma half-life approximately 4.6 hours.']",
+        "['Evidence limits', 'No further Ventolin HFA PK trials in neonates, children or older adults; inhalation PK does not define other routes.']"
+      ],
+      "sourceIds": [
+        "label"
+      ],
+      "labelSections": [
+        "12.1",
+        "12.3",
+        "17"
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring parameters",
+      "claims": [
+        "Assess symptom relief, nocturnal symptoms and increasing rescue use; arrange immediate assessment if efficacy falls or breathing worsens.",
+        "Observe inhaler technique and adherence to prescribed anti-inflammatory therapy.",
+        "Assess pulse, blood pressure and symptomatic cardiac effects; check potassium when risk or concomitant medicines warrant."
+      ],
+      "sourceIds": [
+        "label",
+        "gina"
+      ],
+      "labelSections": [
+        "5.2–5.4",
+        "5.8",
+        "17",
+        "Instructions for Use",
+        "GINA 2026 pp21–28"
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "claims": [
+        "Use only the prescribed inhalations; do not independently increase frequency.",
+        "Remove the canister and wash the plastic actuator weekly with warm water; air-dry overnight. After reassembly, shake and spray once away from the face before use. Follow the illustrated instructions for cleaning and any urgent use before drying.",
+        "Order a replacement when the counter shows 020; discard at 000. Do not use past the expiration date printed on the packaging.",
+        "Use the matched actuator and canister. Read the full instructions with a clinician and follow the asthma action plan."
+      ],
+      "sourceIds": [
+        "label"
+      ],
+      "labelSections": [
+        "5.2–5.4",
+        "5.8",
+        "17",
+        "Instructions for Use",
+        "GINA 2026 pp21–28"
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative inhaler · Ventolin HFA",
+      "claims": [
+        "['Strength', '108 mcg albuterol sulfate = 90 mcg albuterol base per actuation.']",
+        "['Appearance', 'Pressurized canister; blue actuator and blue mouthpiece cap; dose counter.']",
+        "['Packager', 'GlaxoSmithKline LLC']",
+        "['Example NDC', '0173-0682-20 · 200 actuations; 0173-0682-24 · 60 actuations.']"
+      ],
+      "sourceIds": [
+        "label"
+      ],
+      "labelSections": [
+        "3",
+        "16",
+        "Patient Information/Instructions for Use"
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "claims": [
+        "Store mouthpiece down at 20–25°C, with permitted excursions to 15–30°C; bring to room temperature before use. The pressurized canister must not be punctured, burned or exposed to heat/open flame; temperatures above 120°F can cause bursting. Keep away from children."
+      ],
+      "sourceIds": [
+        "label"
+      ],
+      "labelSections": [
+        "3",
+        "16",
+        "Patient Information/Instructions for Use"
+      ]
+    },
+    {
+      "section": "hero/product",
+      "card": "Scope, essential safety and regulatory status",
+      "claims": [
+        "A short-acting beta₂ agonist for bronchospasm. This reference focuses on Ventolin HFA, with device-specific directions and separate asthma guideline context.",
+        "Seek immediate medical attention when relief decreases, symptoms worsen, or doses are needed more often. Stop the inhaler and obtain urgent treatment if breathing worsens immediately after a dose.",
+        "Prescription medicine; New Drug Application labeling."
+      ],
+      "sourceIds": [
+        "label"
+      ],
+      "labelSections": [
+        "1–5",
+        "Drug Label Information / marketing status"
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status · Ventolin HFA",
+      "claims": [
+        "The selected Ventolin HFA prescribing information has no boxed warning. Its warnings still include potentially fatal paradoxical bronchospasm, excessive sympathomimetic use, and worsening asthma that requires reassessment."
+      ],
+      "sourceIds": [
+        "label"
+      ],
+      "labelSections": [
+        "Full prescribing information / highlights: no boxed warning",
+        "5.1–5.5"
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "claims": [
+        [
+          "Ventolin HFA",
+          "Metered aerosol;90 mcg albuterol base (108 mcg sulfate) per actuation."
+        ],
+        [
+          "Other albuterol formulations",
+          "Nebulizer solutions, other inhalers and oral products have their own labels; no dosing conversion is provided here."
+        ]
+      ],
+      "sourceIds": [
+        "label"
+      ],
+      "labelSections": [
+        "3",
+        "Scope exclusion for non-Ventolin products"
+      ]
+    }
+  ],
+  "exclusions": [
+    "Nebulized, oral and other inhaler products; emergency exacerbation dosing; pediatric age below 4."
+  ],
+  "gaps": [],
+  "validation": {
+    "schema": "Passed validateMonograph with zero errors after standalone boxed-warning disclosure update, 2026-10-01.",
+    "renderedPage": "pending parent integration QA"
+  },
+  "reviewCaveat": "Focused educational summary of specified sources, not an exhaustive prescribing substitute."
+}
