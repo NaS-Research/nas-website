@@ -1,0 +1,706 @@
+{
+  "drug": "chlorthalidone",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Complete current selected U.S. Thalitone, Hemiclor and Ascend conventional standalone labels; product-specific hypertension/edema regimens and full safety/population/PK review.",
+  "sources": [
+    {
+      "id": "thalitone",
+      "title": "Thalitone · 15 and 25 mg tablets",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bc5a0299-115b-4e60-bb3f-c75a95c51c15",
+      "note": "Full public manufacturer label and patient instructions; SPL version 7, effective 20260625. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "7",
+      "effective_date": "20260625",
+      "xml_sha256": "b99a683447399eb647f5bd77c98eeb976a8b4f551f26c4b751ed3f2644efe75c",
+      "retrieved_xml": "/tmp/nas-drug-sources/thalitone.xml",
+      "published_date": "Jun 26, 2026"
+    },
+    {
+      "id": "hemiclor",
+      "title": "Hemiclor · 12.5 mg tablets",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3f0f3ee0-f5a6-4bda-8160-a77744e9fa46",
+      "note": "Full public manufacturer label and patient instructions; SPL version 1, effective 20250327. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "1",
+      "effective_date": "20250327",
+      "xml_sha256": "c9ea07734788a7de5378d271b10660cbaf284b655cc6d8fb8358addf628b03e6",
+      "retrieved_xml": "/tmp/nas-drug-sources/hemiclor.xml",
+      "published_date": "Apr 02, 2025"
+    },
+    {
+      "id": "chlorgeneric",
+      "title": "Ascend chlorthalidone · 25 and 50 mg tablets",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d104583e-e983-4230-b6d1-4455ee1060a5",
+      "note": "Full public manufacturer label and patient instructions; SPL version 7, effective 20250423. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "7",
+      "effective_date": "20250423",
+      "xml_sha256": "3da286fa84d6a93f90b73eeeba33c87c140690cba12f1271f01620d82f840158",
+      "retrieved_xml": "/tmp/nas-drug-sources/chlorgeneric.xml",
+      "published_date": "Apr 25, 2025"
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Labeled oral indications",
+      "assertions": {
+        "paragraphs": [
+          "Thalitone treats hypertension and is adjunctive therapy in adult edema associated with HF, liver cirrhosis or renal disease including nephrotic syndrome. Hemiclor specifically treats adult hypertension and has no labeled edema indication. The selected Ascend generic treats hypertension and adjunctive edema in CHF, hepatic cirrhosis, corticosteroid/estrogen therapy and selected renal disorders. Pediatric safety/effectiveness is not established for these products."
+        ]
+      },
+      "source_sections": {
+        "thalitone": [
+          "1.1",
+          "1.2",
+          "8.4"
+        ],
+        "hemiclor": [
+          "1.1",
+          "8.4"
+        ],
+        "chlorgeneric": [
+          "INDICATIONS & USAGE",
+          "PEDIATRIC USE"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Clinical role and boundaries",
+      "assertions": {
+        "paragraphs": [
+          "BP lowering belongs to comprehensive cardiovascular management; it is not a promise of unique formulation-specific event prevention. Thalitone explicitly states no controlled risk-reduction trials of that branded formulation. This profile summarizes selected labels, not a complete current hypertension/HF/CKD treatment algorithm. Routine diuresis for physiologic pregnancy edema or prevention of preeclampsia is inappropriate; pregnancy requires separate assessment."
+        ]
+      },
+      "source_sections": {
+        "thalitone": [
+          "1.1",
+          "8.1"
+        ],
+        "hemiclor": [
+          "1.1",
+          "8.1"
+        ],
+        "chlorgeneric": [
+          "INDICATIONS & USAGE: Usage in Pregnancy"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Adult hypertension doses · Product-specific labels",
+      "assertions": {
+        "paragraphs": [
+          "The regimens below are selected label directions; they do not establish mg-for-mg substitutability."
+        ],
+        "table": {
+          "headers": [
+            "Selected product",
+            "Initial / titration / ceiling"
+          ],
+          "rows": [
+            [
+              "Thalitone",
+              "15 mg once daily with food; after 2 weeks may increase to 25 mg if needed. Above 25 mg is not expected to improve BP lowering. Label explicitly says it cannot be substituted with other chlorthalidone formulations."
+            ],
+            [
+              "Hemiclor",
+              "12.5 or 25 mg once daily with food; double every 2–4 weeks as needed up to 100 mg/day. Above 100 mg usually adds no effectiveness. Supplied tablet is 12.5 mg."
+            ],
+            [
+              "Ascend conventional generic",
+              "25 mg once daily in the morning with food; after a suitable trial may increase to 50 mg, then 100 mg or add another antihypertensive. Above 100 mg usually adds no effectiveness. Maintenance may be lower."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "thalitone": [
+          "2.1",
+          "2.2",
+          "12.3"
+        ],
+        "hemiclor": [
+          "2.1"
+        ],
+        "chlorgeneric": [
+          "DOSAGE & ADMINISTRATION: Hypertension"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Adult edema doses · Not a Hemiclor indication",
+      "assertions": {
+        "paragraphs": [
+          "Thalitone: initial 50–100 mg daily or 100 mg on alternate days; adjust by response up to 200 mg daily. Selected Ascend generic: initial 50–100 mg daily or 100 mg on alternate days; some need 150–200 mg at those intervals or up to 200 mg/day, with no usual added response above that. Maintenance is often lower. These are supervised adjunctive edema directions, not hypertension titration targets or a routine pregnancy-edema prescription."
+        ]
+      },
+      "source_sections": {
+        "thalitone": [
+          "1.2",
+          "2.3"
+        ],
+        "chlorgeneric": [
+          "DOSAGE & ADMINISTRATION: Edema",
+          "INDICATIONS & USAGE: Usage in Pregnancy"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Organ impairment and treatment changes",
+      "assertions": {
+        "paragraphs": [
+          "No fixed eGFR/CrCl or hepatic dose-reduction algorithm is supplied by the selected labels. Anuria is contraindicated. Severe renal disease/CKD, HF or volume depletion increases AKI/accumulation risk; periodically monitor and consider withholding/discontinuing with significant worsening. Hepatic disease requires caution because small fluid/electrolyte shifts can precipitate coma. Start at the low end in older adults, and reassess BP/volume/labs after changes rather than applying another product’s dose ceiling."
+        ]
+      },
+      "source_sections": {
+        "thalitone": [
+          "4",
+          "5.1–5.3",
+          "8.5"
+        ],
+        "hemiclor": [
+          "5.1",
+          "8.5",
+          "8.6"
+        ],
+        "chlorgeneric": [
+          "WARNINGS",
+          "GENERAL"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and missed doses",
+      "assertions": {
+        "paragraphs": [
+          "Use the exact once-daily/morning-with-food directions and supervised alternate-day edema plan when prescribed. Selected labels do not supply a universal missed-dose algorithm; arrange individual instructions and avoid compensatory doubling. Vomiting, diarrhea, markedly reduced intake or dizziness can signal a need for timely volume/electrolyte and medicine review."
+        ]
+      },
+      "source_sections": {
+        "thalitone": [
+          "2",
+          "5",
+          "17"
+        ],
+        "hemiclor": [
+          "2.1",
+          "5",
+          "17"
+        ],
+        "chlorgeneric": [
+          "DOSAGE & ADMINISTRATION",
+          "LABORATORY TESTS",
+          "INFORMATION FOR PATIENTS"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Symptomatic/orthostatic hypotension and dehydration can occur, particularly with salt restriction, volume depletion or other BP-lowering drugs. Fainting or severe symptoms need prompt assessment.",
+          "Diuretics can cause acute kidney injury or worsening renal function; CKD, HF and low volume increase risk. Consider interruption if kidney function falls significantly. Anuria is contraindicated.",
+          "Low potassium, sodium, magnesium and hypochloremic alkalosis can occur. Low magnesium can make potassium replacement difficult; correct imbalances and monitor. Thalitone directs stopping if hypokalemia has clinical weakness/paresis or ECG changes.",
+          "Glucose intolerance/diabetes control, lipids and uric acid can worsen; gout can be precipitated. Reduced urinary calcium can raise serum calcium.",
+          "Hepatic disease: fluid/electrolyte changes can precipitate hepatic coma. The conventional generic advises caution with allergy/asthma; severe hypersensitivity/skin reactions are reported.",
+          "Hemiclor/generic labeling notes lupus activation with related thiazides; it specifically says this has not been reported after chlorthalidone in that source. Do not claim proven chlorthalidone-induced lupus from this precaution."
+        ]
+      },
+      "source_sections": {
+        "thalitone": [
+          "5.1–5.4",
+          "6"
+        ],
+        "hemiclor": [
+          "5.1–5.4",
+          "8.6"
+        ],
+        "chlorgeneric": [
+          "WARNINGS",
+          "GENERAL",
+          "LABORATORY TESTS",
+          "ADVERSE REACTIONS"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Anuria and hypersensitivity to chlorthalidone or other sulfonamide-derived drugs in all three selected labels. Severe renal disease, hepatic dysfunction and electrolyte abnormalities also require careful assessment, but are not converted into an invented universal eGFR contraindication."
+        ]
+      },
+      "source_sections": {
+        "thalitone": [
+          "4",
+          "5"
+        ],
+        "hemiclor": [
+          "4",
+          "5",
+          "8.6"
+        ],
+        "chlorgeneric": [
+          "CONTRAINDICATIONS",
+          "WARNINGS"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "The selected standalone chlorthalidone labels have no boxed warning. Do not transfer the pregnancy boxed warning of an azilsartan/chlorthalidone combination to standalone chlorthalidone; standalone pregnancy and fetal/neonatal precautions still matter."
+        ]
+      },
+      "source_sections": {
+        "thalitone": [
+          "Full prescribing information",
+          "8.1"
+        ],
+        "hemiclor": [
+          "Full prescribing information",
+          "8.1"
+        ],
+        "chlorgeneric": [
+          "Full labeling",
+          "PREGNANCY"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "assertions": {
+        "paragraphs": [
+          "Reported effects include orthostatic dizziness, headache, weakness/cramps, GI upset, electrolyte/metabolic disturbances and photosensitivity/rash. Serious reported effects include cholestatic jaundice, pancreatitis, blood-cell disorders, vasculitis and toxic epidermal necrolysis; systematic incidence estimates are unavailable. Overdose can cause weakness, dizziness and dangerous electrolyte/volume disturbances. Seek urgent clinical/Poison Help advice (U.S. 1-800-222-1222); there is no specific antidote, and supportive fluid/electrolyte treatment must be supervised. Label gastric-lavage language is not a home treatment instruction."
+        ]
+      },
+      "source_sections": {
+        "thalitone": [
+          "6",
+          "10"
+        ],
+        "hemiclor": [
+          "6",
+          "10"
+        ],
+        "chlorgeneric": [
+          "ADVERSE REACTIONS",
+          "OVERDOSAGE"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Combination",
+            "Action"
+          ],
+          "rows": [
+            [
+              "Lithium",
+              "Reduced renal lithium clearance can cause toxicity; monitor lithium concentrations and review the combination."
+            ],
+            [
+              "Other antihypertensives",
+              "Additive BP effects; review dizziness, volume status and dose needs."
+            ],
+            [
+              "Digitalis / digoxin",
+              "Potassium depletion increases cardiac toxicity risk; monitor electrolytes and clinical cardiac effects."
+            ],
+            [
+              "Corticosteroids / ACTH",
+              "Can intensify potassium loss; reassess electrolytes."
+            ],
+            [
+              "Insulin / oral diabetes medicines",
+              "Requirements can change; monitor glucose and adjust under the diabetes plan."
+            ],
+            [
+              "Alcohol / opioids / barbiturates",
+              "Conventional generic notes aggravated orthostatic hypotension; assess dizziness/falls."
+            ],
+            [
+              "Tubocurarine / anesthesia / norepinephrine",
+              "Related labels describe greater neuromuscular-blocker responsiveness and reduced pressor response to norepinephrine without precluding its therapeutic effect; inform the treating team."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "thalitone": [
+          "7"
+        ],
+        "hemiclor": [
+          "7",
+          "5.2",
+          "5.3"
+        ],
+        "chlorgeneric": [
+          "DRUG INTERACTIONS",
+          "GENERAL",
+          "ADVERSE REACTIONS",
+          "INFORMATION FOR PATIENTS"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Laboratory interpretation",
+      "assertions": {
+        "paragraphs": [
+          "Selected generic notes reduced serum protein-bound iodine without clinical thyroid disturbance; this is a legacy assay warning rather than a diagnosis of hypothyroidism. Chlorthalidone reduces calcium excretion, so interpret hypercalcemia/parathyroid-related findings clinically. Routine monitoring should focus on BP, volume, kidney function and electrolytes rather than a drug concentration target."
+        ]
+      },
+      "source_sections": {
+        "chlorgeneric": [
+          "DRUG & OR LABORATORY TEST INTERACTIONS",
+          "GENERAL",
+          "LABORATORY TESTS"
+        ],
+        "thalitone": [
+          "5.2–5.4"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Modern Thalitone/Hemiclor labels describe decades of pregnancy observations without an identified major-malformation/miscarriage signal, but thiazide exposure can cause fetal/neonatal jaundice, thrombocytopenia, hypoglycemia and electrolyte effects; placental hypoperfusion is a concern. They say not to use as first-line pregnancy hypertension therapy; thiazides do not prevent or alter the course of preeclampsia. Selected generic uses benefit/risk and clearly-needed language; normal dependent pregnancy edema should not be treated routinely. Chlorthalidone enters milk; modern labels advise against breastfeeding during treatment because of infant accumulation/serious effects, while generic advises choosing whether to stop nursing or drug."
+        ]
+      },
+      "source_sections": {
+        "thalitone": [
+          "8.1",
+          "8.2"
+        ],
+        "hemiclor": [
+          "8.1",
+          "8.2"
+        ],
+        "chlorgeneric": [
+          "INDICATIONS & USAGE: Usage in Pregnancy",
+          "PREGNANCY",
+          "NURSING MOTHERS"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric considerations",
+      "assertions": {
+        "paragraphs": [
+          "Safety/effectiveness in children is not established in all selected labels; no pediatric dose is supplied. Older adults should usually start at the low end with cautious titration, considering renal/hepatic/cardiac function and other drugs. Monitor renal function and electrolyte/BP effects; greater individual sensitivity is possible."
+        ]
+      },
+      "source_sections": {
+        "thalitone": [
+          "8.4",
+          "8.5"
+        ],
+        "hemiclor": [
+          "8.4",
+          "8.5"
+        ],
+        "chlorgeneric": [
+          "PEDIATRIC USE",
+          "WARNINGS"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Renal, hepatic and metabolic disease",
+      "assertions": {
+        "paragraphs": [
+          "Anuria is contraindicated; severe renal impairment and CKD require caution and closer follow-up, not an unsupported universal eGFR cutoff. Rising creatinine/BUN, dehydration or important electrolyte changes should trigger reassessment/possible interruption. Hepatic disease increases coma risk from fluid/electrolyte changes. Monitor diabetes, gout/hyperuricemia, lipids and high calcium according to individual risk."
+        ]
+      },
+      "source_sections": {
+        "thalitone": [
+          "4",
+          "5.2–5.4"
+        ],
+        "hemiclor": [
+          "4",
+          "5.1–5.3",
+          "8.6"
+        ],
+        "chlorgeneric": [
+          "WARNINGS",
+          "GENERAL"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "assertions": {
+        "paragraphs": [
+          "Chlorthalidone increases renal sodium/chloride and water excretion; reduced volume and sodium contribute to antihypertensive effects. Thalitone describes a distal convoluted tubular site, while Hemiclor/generic use older cortical-diluting-segment wording. This mechanistic wording does not establish product equivalence or a separate clinical dosing algorithm."
+        ]
+      },
+      "source_sections": {
+        "thalitone": [
+          "12.1",
+          "12.2"
+        ],
+        "hemiclor": [
+          "12.1",
+          "12.2"
+        ],
+        "chlorgeneric": [
+          "CLINICAL PHARMACOLOGY"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacodynamics and pharmacokinetics",
+      "assertions": {
+        "paragraphs": [],
+        "facts": [
+          [
+            "Duration",
+            "Diuresis starts on average around 2.6 hours and can persist up to 72 hours; effect varies and does not authorize arbitrary missed-dose doubling."
+          ],
+          [
+            "Disposition",
+            "Approximately 75% protein bound; long plasma half-life around 40–60 hours in these label studies."
+          ],
+          [
+            "Elimination",
+            "Primarily unchanged urinary drug; renal impairment can increase cumulative effects."
+          ],
+          [
+            "Thalitone formulation",
+            "Povidone is used as a bioavailability enhancer; label explicitly forbids substitution with other chlorthalidone formulations. Do not infer an mg-for-mg switch."
+          ]
+        ]
+      },
+      "source_sections": {
+        "thalitone": [
+          "12.2",
+          "12.3"
+        ],
+        "hemiclor": [
+          "12.2",
+          "12.3"
+        ],
+        "chlorgeneric": [
+          "CLINICAL PHARMACOLOGY"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring parameters",
+      "assertions": {
+        "paragraphs": [
+          "Assess baseline BP/volume, renal function, sodium/potassium/magnesium, interacting drugs and relevant diabetes/gout/liver history. Correct electrolyte deficits and monitor periodically, with added checks after dose changes, illness, excess vomiting or parenteral fluid treatment. Follow orthostatic symptoms, edema/weight when used for edema and renal-function deterioration. Check glucose/lipids, uric acid and calcium as indicated; serum lithium monitoring is required with co-therapy. No universal monitoring interval is supplied."
+        ]
+      },
+      "source_sections": {
+        "thalitone": [
+          "5",
+          "7",
+          "17"
+        ],
+        "hemiclor": [
+          "5",
+          "7",
+          "8.6",
+          "17"
+        ],
+        "chlorgeneric": [
+          "GENERAL",
+          "LABORATORY TESTS",
+          "INFORMATION FOR PATIENTS"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "assertions": {
+        "paragraphs": [
+          "Know the exact product and prescribed hypertension or edema schedule; Thalitone substitution needs specific prescriber review. Report marked thirst, cramps/weakness, unusual drowsiness, vomiting, palpitations, reduced urine or dizziness. Severe fainting, confusion or cardiac symptoms need urgent care. Discuss lithium, diabetes drugs, supplements/alcohol, kidney/liver disease, gout, allergies and pregnancy/nursing. Do not independently add potassium/salt or double a missed dose; use the individualized plan."
+        ]
+      },
+      "source_sections": {
+        "thalitone": [
+          "2.1",
+          "17",
+          "5"
+        ],
+        "hemiclor": [
+          "17",
+          "5"
+        ],
+        "chlorgeneric": [
+          "INFORMATION FOR PATIENTS",
+          "DOSAGE & ADMINISTRATION"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "paragraphs": [
+          "Thalitone 15 mg: white biconvex kidney-shaped tablet marked L / 96; example bottle of 30 NDC 70199-017-30. Manufacturer/distributor is Casper Pharma. The label says Thalitone cannot be substituted with other chlorthalidone formulations."
+        ]
+      },
+      "source_sections": {
+        "thalitone": [
+          "3",
+          "16",
+          "2.1"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Selected product",
+            "Tablet presentation"
+          ],
+          "rows": [
+            [
+              "Thalitone",
+              "15 mg · L / 96; 25 mg · L / 99; both white kidney-shaped."
+            ],
+            [
+              "Hemiclor",
+              "12.5 mg white/off-white modified rectangle · I; example bottle of 30 NDC 50742-285-30."
+            ],
+            [
+              "Ascend conventional generic",
+              "25 mg yellow round unscored · C25; 50 mg green round scored · C / 50; example 25 mg bottle of 100 NDC 67877-696-01."
+            ],
+            [
+              "Scope",
+              "Other manufacturers/strengths and atenolol/azilsartan combinations require their own label; no automatic interchange designation is made."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "thalitone": [
+          "3",
+          "16"
+        ],
+        "hemiclor": [
+          "3",
+          "16"
+        ],
+        "chlorgeneric": [
+          "HOW SUPPLIED"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "All three selected products: 20–25°C. Dispense in tight, light-resistant containers with child-resistant closures; selected generic also says protect from light. Keep away from children, check expiry and preserve product identification when tablets or regimens change."
+        ]
+      },
+      "source_sections": {
+        "thalitone": [
+          "16"
+        ],
+        "hemiclor": [
+          "16"
+        ],
+        "chlorgeneric": [
+          "HOW SUPPLIED"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "Not exhaustive of generics, fixed combinations, off-label pediatric use or contemporary hypertension/HF/CKD combination algorithms.",
+    "2025 AHA/ACC guideline full-text access attempted; official journal returned HTTP 403. No unverified guideline-dose ranking or recommendation is published.",
+    "No universal eGFR contraindication, renal/hepatic percentage adjustment or automatic formulation conversion inferred."
+  ],
+  "resolved_source_findings": [
+    "Thalitone 15→25 mg hypertension directions and non-substitution language explicitly separated from Hemiclor/generic higher label ceilings.",
+    "Hemiclor hypertension-only indication not conflated with Thalitone/generic edema use.",
+    "Older class renal-tubule/lupus/overdose wording retained only with precise boundaries; no proven chlorthalidone lupus causation or home gastric lavage suggested.",
+    "Standalone labels have no boxed warning; fixed-combination pregnancy boxes not propagated."
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, essential safety, three hero facts, cited disclosures, four safety cards and three product cards.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending"
+  },
+  "monograph_sha256": "5f2731c34007fb89fede38ee1d97ca7fa7534d333a4bf76ce27ce0becaf22624",
+  "access_limitations": [
+    {
+      "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001356",
+      "checked": "2026-10-01",
+      "result": "Official journal HTTP 403; full guideline not accessed. No claims attributed to its unread full text.",
+      "impact": "Current complete product-label review only; full guideline-algorithm comparison outside explicit focus."
+    }
+  ],
+  "front_matter_source_map": {
+    "name_synonym_description_facts": {
+      "thalitone": [
+        "Indications / description / dosage forms and strengths"
+      ],
+      "hemiclor": [
+        "Indications / description / dosage forms and strengths"
+      ],
+      "chlorgeneric": [
+        "Indications / description / dosage forms and strengths"
+      ]
+    },
+    "essential_safety": {
+      "thalitone": [
+        "2.1",
+        "5.1–5.4"
+      ],
+      "hemiclor": [
+        "5.1–5.3"
+      ],
+      "chlorgeneric": [
+        "WARNINGS",
+        "LABORATORY TESTS"
+      ]
+    }
+  },
+  "source_review_detail": "Complete current selected manufacturer SPL XML retrieved publicly and full supporting sections read; original concise product-specific summaries."
+}

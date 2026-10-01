@@ -1,0 +1,789 @@
+{
+  "slug": "azelastine",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "A histamine H1 antagonist with prescription and OTC nasal sprays and prescription eye drops. Route, concentration, approved ages, indications and pump instructions differ between selected products.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Azelastine HCl nasal spray 0.1% · Apotex full prescribing information",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical PI/IFU revised November 2021; current SPL v14 effective September 8,2026; API publication September 10,2026. Checked October 1,2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f58c203-f649-a18e-aaf3-70b0797652f4"
+    },
+    {
+      "id": "rx15",
+      "title": "Azelastine HCl nasal spray 0.15% · selected repackaged Apotex labeling",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical PI/IFU revised September 2019; selected current SPL v1 effective August 9,2021; API publication August 10,2021. Full PI 6-year minimum conflicts with appended leaflet 6-month wording; no infant-use inference. Checked October 1,2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c9239ce9-f77f-0db4-e053-2995a90aa4ec"
+    },
+    {
+      "id": "otc",
+      "title": "Astepro Allergy · Bayer current Drug Facts",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "OTC NDA213872; SPL v8 effective December 4,2025; API publication December 5,2025. Drug Facts age≥ 6/doses/precautions read in full. Checked October 1,2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0640846-19a6-7f79-e053-2995a90a8176"
+    },
+    {
+      "id": "eye",
+      "title": "Azelastine HCl ophthalmic solution 0.05% · Gland full labeling",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical label revised October 2025; SPL v 5 effective October 22,2025; API publication November 17,2025. Checked October 1,2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f358cecd-284f-4d0b-806c-039465220bd2"
+    },
+    {
+      "id": "device",
+      "title": "Astepro Allergy · manufacturer device instructions and FAQ",
+      "publisher": "Bayer / Astepro Allergy",
+      "note": "Current public manufacturer instructions read October 1,2026. Used only for pump technique/priming/cleaning; Drug Facts provides approved dosing. Direct HTML archive returned 403; complete browser-tool text archived instead.",
+      "url": "https://www.asteproallergy.com/faq"
+    }
+  ],
+  "sourceEvidence": {
+    "label": {
+      "splVersion": "14",
+      "effectiveTime": "20260908",
+      "apiPublishedDate": "Sep 10, 2026",
+      "localEvidence": "/tmp/nas-drug-sources/azel-01.xml",
+      "xmlSha256": "40d3f632eccfac462cf73ea9da527d3f3100af5a9e4b30b3d00fc2d6051066b4",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/4f58c203-f649-a18e-aaf3-70b0797652f4.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f58c203-f649-a18e-aaf3-70b0797652f4",
+      "revision": "Clinical PI/IFU revised November 2021; current SPL v14 effective September 8,2026; API publication September 10,2026. Checked October 1,2026.",
+      "checked": "2026-10-01",
+      "access": "Full supporting public primary sections read; no paywall access"
+    },
+    "rx15": {
+      "splVersion": "1",
+      "effectiveTime": "20210809",
+      "apiPublishedDate": "Aug 10, 2021",
+      "localEvidence": "/tmp/nas-drug-sources/azel-015.xml",
+      "xmlSha256": "b07f03e739322179b70e6e0cd23838bcba09c74e2fd07bf2a26b10e7730544d9",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/c9239ce9-f77f-0db4-e053-2995a90aa4ec.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c9239ce9-f77f-0db4-e053-2995a90aa4ec",
+      "revision": "Clinical PI/IFU revised September 2019; selected current SPL v1 effective August 9,2021; API publication August 10,2021. Full PI 6-year minimum conflicts with appended leaflet 6-month wording; no infant-use inference. Checked October 1,2026.",
+      "checked": "2026-10-01",
+      "access": "Full supporting public primary sections read; no paywall access"
+    },
+    "otc": {
+      "splVersion": "8",
+      "effectiveTime": "20251204",
+      "apiPublishedDate": "Dec 05, 2025",
+      "localEvidence": "/tmp/nas-drug-sources/astepro-otc.xml",
+      "xmlSha256": "4f38ece7799843485c388cf44ad68eb2a63e911e22b837f8cc2005aaced78bf4",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/e0640846-19a6-7f79-e053-2995a90a8176.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0640846-19a6-7f79-e053-2995a90a8176",
+      "revision": "OTC NDA213872; SPL v8 effective December 4,2025; API publication December 5,2025. Drug Facts age≥ 6/doses/precautions read in full. Checked October 1,2026.",
+      "checked": "2026-10-01",
+      "access": "Full supporting public primary sections read; no paywall access"
+    },
+    "eye": {
+      "splVersion": "5",
+      "effectiveTime": "20251022",
+      "apiPublishedDate": "Nov 17, 2025",
+      "localEvidence": "/tmp/nas-drug-sources/azel-eye.xml",
+      "xmlSha256": "9e764106751cc5a78a97b6aa9919f981110718a6b59dd25b4ee570ca2e96eab0",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/f358cecd-284f-4d0b-806c-039465220bd2.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f358cecd-284f-4d0b-806c-039465220bd2",
+      "revision": "Clinical label revised October 2025; SPL v 5 effective October 22,2025; API publication November 17,2025. Checked October 1,2026.",
+      "checked": "2026-10-01",
+      "access": "Full supporting public primary sections read; no paywall access"
+    },
+    "device": {
+      "localEvidence": "/tmp/nas-drug-sources/astepro-faq-web.json",
+      "browserTextSha256": "e73315ee452944f1587731ec339cca0d3bddc3c3defe97330a2a2d3b9390eceb",
+      "archiveMethod": "Complete browser-tool text; direct curl HTML returned403, no security bypass",
+      "url": "https://www.asteproallergy.com/faq",
+      "revision": "Current public manufacturer instructions read October 1,2026. Used only for pump technique/priming/cleaning; Drug Facts provides approved dosing. Direct HTML archive returned 403; complete browser-tool text archived instead.",
+      "checked": "2026-10-01",
+      "access": "Full supporting public primary sections read; no paywall access"
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Nasal products",
+      "sourceIds": [
+        "label",
+        "rx15",
+        "otc"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "1;OTC Uses/Directions;eye Indications/Pediatric/Patient information"
+        ],
+        "rx15": [
+          "1;OTC Uses/Directions;eye Indications/Pediatric/Patient information"
+        ],
+        "otc": [
+          "1;OTC Uses/Directions;eye Indications/Pediatric/Patient information"
+        ]
+      },
+      "claims": [
+        "Selected Rx 0.1% treats seasonal allergic-rhinitis symptoms from age 5 and vasomotor-rhinitis symptoms from age 12. Selected Rx 0.15% treats seasonal and perennial allergic rhinitis from age 6. OTC Astepro Allergy temporarily relieves nasal congestion, runny nose, sneezing and itchy nose due to hay fever/other upper-respiratory allergies from age 6; it is not an inferred treatment for a viral cold."
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Ophthalmic product",
+      "sourceIds": [
+        "eye"
+      ],
+      "sourceSectionsById": {
+        "eye": [
+          "1;OTC Uses/Directions;eye Indications/Pediatric/Patient information"
+        ]
+      },
+      "claims": [
+        "Selected 0.05% eye drops treat eye itching associated with allergic conjunctivitis; safety/effectiveness below age 3 have not been established. They do not treat contact-lens-related irritation. Combination nasal products containing another ingredient have their own label and are outside this single-ingredient dosing summary."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Nasal regimens · selected U.S. labels",
+      "sourceIds": [
+        "label",
+        "rx15",
+        "otc"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1–2.3;IFU;OTC Directions;manufacturer How to use/Priming;eye Dosage/Patient information"
+        ],
+        "rx15": [
+          "2.1–2.3;IFU;OTC Directions;manufacturer How to use/Priming;eye Dosage/Patient information"
+        ],
+        "otc": [
+          "2.1–2.3;IFU;OTC Directions;manufacturer How to use/Priming;eye Dosage/Patient information"
+        ]
+      },
+      "claims": [
+        [
+          "Rx 0.1% · seasonal rhinitis, age 5–11",
+          "1 spray in each nostril twice daily."
+        ],
+        [
+          "Rx 0.1% · seasonal rhinitis, age≥ 12",
+          "1 or 2 sprays in each nostril twice daily."
+        ],
+        [
+          "Rx 0.1% · vasomotor rhinitis, age≥ 12",
+          "2 sprays in each nostril twice daily."
+        ],
+        [
+          "Selected Rx 0.15% · seasonal rhinitis, age 6–11",
+          "1 spray in each nostril twice daily."
+        ],
+        [
+          "Selected Rx 0.15% · seasonal rhinitis, age≥ 12",
+          "1 or 2 sprays in each nostril twice daily, or 2 sprays in each nostril once daily."
+        ],
+        [
+          "Selected Rx 0.15% · perennial rhinitis, age 6–11",
+          "1 spray in each nostril twice daily."
+        ],
+        [
+          "Selected Rx 0.15% · perennial rhinitis, age≥ 12",
+          "2 sprays in each nostril twice daily."
+        ],
+        [
+          "OTC Astepro Allergy · age≥ 12",
+          "Once daily: 2 sprays per nostril; OR every 12 hours: 1 or 2 sprays per nostril. Maximum 4 sprays per nostril in 24 hours."
+        ],
+        [
+          "OTC Astepro Allergy · age 6–11",
+          "Adult-supervised 1 spray per nostril every 12 hours; maximum 2 per nostril in 24 hours. Under 6: do not use."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Device priming and nasal technique",
+      "sourceIds": [
+        "label",
+        "rx15",
+        "otc",
+        "device"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1–2.3;IFU;OTC Directions;manufacturer How to use/Priming;eye Dosage/Patient information"
+        ],
+        "rx15": [
+          "2.1–2.3;IFU;OTC Directions;manufacturer How to use/Priming;eye Dosage/Patient information"
+        ],
+        "otc": [
+          "2.1–2.3;IFU;OTC Directions;manufacturer How to use/Priming;eye Dosage/Patient information"
+        ],
+        "device": [
+          "2.1–2.3;IFU;OTC Directions;manufacturer How to use/Priming;eye Dosage/Patient information"
+        ]
+      },
+      "claims": [
+        "Apotex Rx 0.1%: prime with 4 sprays or until a fine mist. Selected Rx 0.15% and manufacturer Astepro instructions: 6 sprays or until a fine mist. After≥ 3 days without use, selected nasal instructions require reprime with 2 sprays or until fine mist. Prime away from the face. Blow the nose, keep head forward/down and bottle upright, insert the tip gently, spray while sniffing gently and alternate nostrils. Do not tilt back immediately or inhale forcefully; this helps avoid bitter drainage. Clean/wipe as directed and replace clip/cap. Use the exact bottle’s leaflet if device differs."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Ophthalmic regimen and lens timing",
+      "sourceIds": [
+        "eye"
+      ],
+      "sourceSectionsById": {
+        "eye": [
+          "2.1–2.3;IFU;OTC Directions;manufacturer How to use/Priming;eye Dosage/Patient information"
+        ]
+      },
+      "claims": [
+        "Instill 1 drop into each affected eye twice daily. Use only in the eyes; wash hands and keep the dropper from contacting eye/lids/other surfaces. Do not wear contacts when eyes are red and do not treat contact-lens irritation with these drops. For soft-lens users whose eyes are not red, remove lenses and wait at least 10 minutes after instillation before reinsertion because benzalkonium chloride can be absorbed by the lens."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Population and source limits",
+      "sourceIds": [
+        "label",
+        "rx15",
+        "eye"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1–2.3;IFU;OTC Directions;manufacturer How to use/Priming;eye Dosage/Patient information"
+        ],
+        "rx15": [
+          "2.1–2.3;IFU;OTC Directions;manufacturer How to use/Priming;eye Dosage/Patient information"
+        ],
+        "eye": [
+          "2.1–2.3;IFU;OTC Directions;manufacturer How to use/Priming;eye Dosage/Patient information"
+        ]
+      },
+      "claims": [
+        "No fixed renal/hepatic dose-adjustment schedule is supplied in these selected labels. The selected Rx 0.15% full PI specifies age≥ 6, while its appended patient information says safety/effectiveness unknown below 6 months. This conflicting leaflet wording does not authorize infant treatment; follow verified exact-product prescribing information and ask a pharmacist/prescriber before treating younger children."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "label",
+        "rx15",
+        "otc",
+        "eye"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "4;5.1;6;10;OTC Warnings;eye Contraindications/Warnings/Precautions/Adverse"
+        ],
+        "rx15": [
+          "4;5.1;6;10;OTC Warnings;eye Contraindications/Warnings/Precautions/Adverse"
+        ],
+        "otc": [
+          "4;5.1;6;10;OTC Warnings;eye Contraindications/Warnings/Precautions/Adverse"
+        ],
+        "eye": [
+          "4;5.1;6;10;OTC Warnings;eye Contraindications/Warnings/Precautions/Adverse"
+        ]
+      },
+      "claims": [
+        "Nasal azelastine can cause drowsiness and impaired coordination/alertness. Avoid alcohol and CNS depressants; be cautious with driving/machinery until effects are known.",
+        "OTC label requires doctor advice with recent nose ulcers/surgery or an unhealed nasal injury. Stop and ask a doctor for severe/frequent nosebleeds or allergic rash. Do not share the bottle.",
+        "Nasal formulations are intranasal only; ophthalmic solution is topical ocular only and is not for injection or oral use. Keep medicines away from children; swallowing an antihistamine preparation can cause serious pediatric toxicity.",
+        "Do not contaminate the sterile eye-drop tip; keep bottle closed. Red eyes/contact-lens irritation require appropriate assessment, with no contacts when red. Preservative-containing drops require lens separation.",
+        "Serious hypersensitivity, swelling or breathing difficulty needs urgent treatment. Persistent/worsening nasal or eye symptoms should prompt reassessment rather than automatic dose escalation."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "label",
+        "rx15",
+        "otc",
+        "eye"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "4;5.1;6;10;OTC Warnings;eye Contraindications/Warnings/Precautions/Adverse"
+        ],
+        "rx15": [
+          "4;5.1;6;10;OTC Warnings;eye Contraindications/Warnings/Precautions/Adverse"
+        ],
+        "otc": [
+          "4;5.1;6;10;OTC Warnings;eye Contraindications/Warnings/Precautions/Adverse"
+        ],
+        "eye": [
+          "4;5.1;6;10;OTC Warnings;eye Contraindications/Warnings/Precautions/Adverse"
+        ]
+      },
+      "claims": [
+        "Selected Rx nasal PI sections 4 state none; this is not proof that allergy is safe. OTC Astepro says do not use with a prior allergic reaction to the product/ingredients. Eye drops are contraindicated for known or suspected component hypersensitivity. Review the exact product’s excipients and previous reactions."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "sourceIds": [
+        "label",
+        "rx15",
+        "otc",
+        "eye"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "4;5.1;6;10;OTC Warnings;eye Contraindications/Warnings/Precautions/Adverse"
+        ],
+        "rx15": [
+          "4;5.1;6;10;OTC Warnings;eye Contraindications/Warnings/Precautions/Adverse"
+        ],
+        "otc": [
+          "4;5.1;6;10;OTC Warnings;eye Contraindications/Warnings/Precautions/Adverse"
+        ],
+        "eye": [
+          "4;5.1;6;10;OTC Warnings;eye Contraindications/Warnings/Precautions/Adverse"
+        ]
+      },
+      "claims": [
+        "The selected nasal and ophthalmic labels have no boxed warning. Nasal sedation, route-specific precautions and OTC age restrictions still apply."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "sourceIds": [
+        "label",
+        "rx15",
+        "otc",
+        "eye"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "4;5.1;6;10;OTC Warnings;eye Contraindications/Warnings/Precautions/Adverse"
+        ],
+        "rx15": [
+          "4;5.1;6;10;OTC Warnings;eye Contraindications/Warnings/Precautions/Adverse"
+        ],
+        "otc": [
+          "4;5.1;6;10;OTC Warnings;eye Contraindications/Warnings/Precautions/Adverse"
+        ],
+        "eye": [
+          "4;5.1;6;10;OTC Warnings;eye Contraindications/Warnings/Precautions/Adverse"
+        ]
+      },
+      "claims": [
+        "Nasal effects include bitter taste, headache, somnolence, burning/irritation, sneezing, dry mouth and epistaxis; rates vary by regimen. Serious postmarketing reports include allergy and other systemic effects without reliably established frequency. Eye drops can cause transient burning/stinging, headache, bitter taste or temporary blur; assess significant pain or persistent visual change. Overdose/ingestion needs immediate medical/Poison Help advice, particularly for a child; supportive care is used and no nasal azelastine antidote is known. Do not assume low routine ocular absorption makes ingestion harmless."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Alcohol and CNS depressants",
+      "sourceIds": [
+        "label",
+        "rx15",
+        "otc"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "7;12.3 interactions;OTC Warnings;eye Clinical pharmacology/Precautions"
+        ],
+        "rx15": [
+          "7;12.3 interactions;OTC Warnings;eye Clinical pharmacology/Precautions"
+        ],
+        "otc": [
+          "7;12.3 interactions;OTC Warnings;eye Clinical pharmacology/Precautions"
+        ]
+      },
+      "claims": [
+        "Avoid concurrent alcohol or other CNS depressants with nasal azelastine because alertness and CNS performance may worsen. Discuss other sedating antihistamines, sleep medicines or tranquilizers before combining them."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Systemic interaction evidence",
+      "sourceIds": [
+        "label",
+        "rx15",
+        "eye"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "7;12.3 interactions;OTC Warnings;eye Clinical pharmacology/Precautions"
+        ],
+        "rx15": [
+          "7;12.3 interactions;OTC Warnings;eye Clinical pharmacology/Precautions"
+        ],
+        "eye": [
+          "7;12.3 interactions;OTC Warnings;eye Clinical pharmacology/Precautions"
+        ]
+      },
+      "claims": [
+        "Cimetidine increased orally administered azelastine exposure by about 65% in a study; this is not an intranasal or ocular dose-adjustment algorithm. Oral erythromycin studies did not show a significant pharmacokinetic/QTc effect; ketoconazole interfered with the assay, so unchanged drug exposure cannot be inferred. No universal CYP-specific adjustment or no-interactions claim is supported. The selected eye label supplies no dedicated interaction study/regimen."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and older patients",
+      "sourceIds": [
+        "label",
+        "rx15",
+        "otc",
+        "eye"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8.1–8.5;12.3 special populations;OTC Directions/Pregnancy;eye Pregnancy/Nursing/Pediatric/Geriatric"
+        ],
+        "rx15": [
+          "8.1–8.5;12.3 special populations;OTC Directions/Pregnancy;eye Pregnancy/Nursing/Pediatric/Geriatric"
+        ],
+        "otc": [
+          "8.1–8.5;12.3 special populations;OTC Directions/Pregnancy;eye Pregnancy/Nursing/Pediatric/Geriatric"
+        ],
+        "eye": [
+          "8.1–8.5;12.3 special populations;OTC Directions/Pregnancy;eye Pregnancy/Nursing/Pediatric/Geriatric"
+        ]
+      },
+      "claims": [
+        "Selected 0.1% nasal seasonal use begins at 5, vasomotor at 12; selected 0.15% Rx/OTC nasal use begins at 6; eye-drop data below 3 are lacking. Do not extrapolate across brands or from contradictory Rx 0.15% leaflet text. Nasal geriatric trials were limited, so start cautiously based on organ function/co-medication; eye labeling observed no overall older-versus-younger difference."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "sourceIds": [
+        "label",
+        "rx15",
+        "eye"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8.1–8.5;12.3 special populations;OTC Directions/Pregnancy;eye Pregnancy/Nursing/Pediatric/Geriatric"
+        ],
+        "rx15": [
+          "8.1–8.5;12.3 special populations;OTC Directions/Pregnancy;eye Pregnancy/Nursing/Pediatric/Geriatric"
+        ],
+        "eye": [
+          "8.1–8.5;12.3 special populations;OTC Directions/Pregnancy;eye Pregnancy/Nursing/Pediatric/Geriatric"
+        ]
+      },
+      "claims": [
+        "Oral single-dose studies found higher azelastine exposure with CrCl< 50 mL/min; oral hepatic-impairment studies found no PK influence. These observations do not establish universal nasal/ocular safety or a fixed adjustment schedule. Assess sedation and comorbidity and use the exact product’s regimen; no selected eye-label impairment algorithm is provided."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "sourceIds": [
+        "label",
+        "rx15",
+        "otc",
+        "eye"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8.1–8.5;12.3 special populations;OTC Directions/Pregnancy;eye Pregnancy/Nursing/Pediatric/Geriatric"
+        ],
+        "rx15": [
+          "8.1–8.5;12.3 special populations;OTC Directions/Pregnancy;eye Pregnancy/Nursing/Pediatric/Geriatric"
+        ],
+        "otc": [
+          "8.1–8.5;12.3 special populations;OTC Directions/Pregnancy;eye Pregnancy/Nursing/Pediatric/Geriatric"
+        ],
+        "eye": [
+          "8.1–8.5;12.3 special populations;OTC Directions/Pregnancy;eye Pregnancy/Nursing/Pediatric/Geriatric"
+        ]
+      },
+      "claims": [
+        "Nasal-label limited postmarketing pregnancy experience has not identified a drug-associated adverse outcome signal; this does not establish absence of risk. Selected eye label lacks adequate controlled pregnancy studies and advises use when benefit justifies risk. Human milk/infant/milk-production data are lacking; nasal 0.1% labeling advises watching for infant milk rejection potentially related to bitterness. OTC requires health-professional advice in pregnancy/breastfeeding. Weigh maternal need and feeding benefits rather than assigning obsolete letter categories."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "sourceIds": [
+        "label",
+        "rx15",
+        "eye"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "12.1–12.3;eye Clinical pharmacology"
+        ],
+        "rx15": [
+          "12.1–12.3;eye Clinical pharmacology"
+        ],
+        "eye": [
+          "12.1–12.3;eye Clinical pharmacology"
+        ]
+      },
+      "claims": [
+        "Azelastine is a relatively selective H1 antagonist. Experimental effects also include suppression of histamine/other mediator release; these findings do not make it a corticosteroid or establish treatment for every inflammatory eye/nasal condition."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "sourceIds": [
+        "label",
+        "rx15",
+        "eye"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "12.1–12.3;eye Clinical pharmacology"
+        ],
+        "rx15": [
+          "12.1–12.3;eye Clinical pharmacology"
+        ],
+        "eye": [
+          "12.1–12.3;eye Clinical pharmacology"
+        ]
+      },
+      "claims": [
+        [
+          "Nasal absorption",
+          "Systemic bioavailability about 40%. Selected 0.1% peak 2–3 hours; selected 0.15% median peak 4 hours after the studied dose."
+        ],
+        [
+          "Ocular exposure",
+          "Low systemic levels after ocular treatment; these measurements do not apply to swallowed bottle contents."
+        ],
+        [
+          "Metabolism / binding",
+          "Oxidative CYP metabolism to active desmethylazelastine; specific responsible isoforms not identified. Approximate binding 88% parent,97% metabolite."
+        ],
+        [
+          "Half-life distinctions",
+          "Selected 0.15% intranasal study: parent 25 hours, metabolite 57 hours. The 22-hour value in other labeling is based on oral/IV administration, not an interchangeable route measurement."
+        ],
+        [
+          "Elimination",
+          "About 75% of an oral radiolabeled dose recovered in feces; this mass-balance route is distinct from topical administration."
+        ]
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "sourceIds": [
+        "label",
+        "rx15",
+        "otc",
+        "eye"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "17;IFU;OTC Warnings/Directions;manufacturer Cleaning;eye Patient information"
+        ],
+        "rx15": [
+          "17;IFU;OTC Warnings/Directions;manufacturer Cleaning;eye Patient information"
+        ],
+        "otc": [
+          "17;IFU;OTC Warnings/Directions;manufacturer Cleaning;eye Patient information"
+        ],
+        "eye": [
+          "17;IFU;OTC Warnings/Directions;manufacturer Cleaning;eye Patient information"
+        ]
+      },
+      "claims": [
+        "Assess symptom response, adherence and exact device/drop technique; review sedation, alcohol/sedatives, epistaxis/nasal injury and eye discomfort/blur or allergic symptoms. Confirm ages and OTC restrictions. No routine laboratory monitoring interval or drug-level target is specified by these labels."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Patient technique and counseling",
+      "sourceIds": [
+        "label",
+        "rx15",
+        "otc",
+        "eye",
+        "device"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "17;IFU;OTC Warnings/Directions;manufacturer Cleaning;eye Patient information"
+        ],
+        "rx15": [
+          "17;IFU;OTC Warnings/Directions;manufacturer Cleaning;eye Patient information"
+        ],
+        "otc": [
+          "17;IFU;OTC Warnings/Directions;manufacturer Cleaning;eye Patient information"
+        ],
+        "eye": [
+          "17;IFU;OTC Warnings/Directions;manufacturer Cleaning;eye Patient information"
+        ],
+        "device": [
+          "17;IFU;OTC Warnings/Directions;manufacturer Cleaning;eye Patient information"
+        ]
+      },
+      "claims": [
+        "Keep nasal head position downward and sniff gently; do not share spray or use in eyes. Prime the correct bottle and count labeled sprays; liquid remaining after the metered limit may not deliver a reliable dose. For a clogged selected spray, remove and soak the pump unit in warm water, pump to clear, air-dry, reassemble and reprime; never use a pin. Use eye drops with clean technique and lens precautions. Keep products away from children and contact Poison Help for ingestion."
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product · Apotex nasal 0.1%",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;11;16;SPL approval/pack;OTC Active ingredient/Other information;eye Description/How supplied"
+        ]
+      },
+      "claims": [
+        [
+          "Ingredient / route",
+          "Azelastine HCl 1 mg/mL (0.1%) · intranasal."
+        ],
+        [
+          "Delivered dose",
+          "137 mcg azelastine HCl in 0.137 mL per spray after priming."
+        ],
+        [
+          "Labeler / example NDC",
+          "Apotex · 60505-0833-5,200-metered-spray bottle."
+        ],
+        [
+          "U.S. status",
+          "Prescription ANDA product; no DEA schedule."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "label",
+        "rx15",
+        "otc",
+        "eye"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;11;16;SPL approval/pack;OTC Active ingredient/Other information;eye Description/How supplied"
+        ],
+        "rx15": [
+          "3;11;16;SPL approval/pack;OTC Active ingredient/Other information;eye Description/How supplied"
+        ],
+        "otc": [
+          "3;11;16;SPL approval/pack;OTC Active ingredient/Other information;eye Description/How supplied"
+        ],
+        "eye": [
+          "3;11;16;SPL approval/pack;OTC Active ingredient/Other information;eye Description/How supplied"
+        ]
+      },
+      "claims": [
+        [
+          "Selected Rx 0.1% nasal",
+          "137 mcg HCl per metered spray; 30 mg HCl in bottle."
+        ],
+        [
+          "Selected Rx 0.15% nasal",
+          "205.5 mcg HCl per 0.137 mL spray; 30 mL/200 sprays,45 mg HCl. Selected repack NDC 68071-2498-3; underlying Apotex ANDA labeling."
+        ],
+        [
+          "OTC Astepro Allergy",
+          "0.15%,205.5 mcg HCl (187.6 mcg azelastine base) per spray; Bayer NDA OTC product, ages≥ 6. Bottle counts/sizes vary; read package."
+        ],
+        [
+          "Selected ophthalmic 0.05%",
+          "0.5 mg/mL HCl (0.457 mg/mL base); Gland 6 mL bottle NDC 68083-287-01. Benzalkonium chloride 0.125 mg/mL preservative."
+        ],
+        [
+          "Product scope",
+          "No azelastine/fluticasone combination dose, non-U.S. oral product or exhaustive brand-stock claim is inferred."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "label",
+        "rx15",
+        "otc",
+        "eye"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;11;16;SPL approval/pack;OTC Active ingredient/Other information;eye Description/How supplied"
+        ],
+        "rx15": [
+          "3;11;16;SPL approval/pack;OTC Active ingredient/Other information;eye Description/How supplied"
+        ],
+        "otc": [
+          "3;11;16;SPL approval/pack;OTC Active ingredient/Other information;eye Description/How supplied"
+        ],
+        "eye": [
+          "3;11;16;SPL approval/pack;OTC Active ingredient/Other information;eye Description/How supplied"
+        ]
+      },
+      "claims": [
+        "Selected Rx nasal sprays: upright 20–25°C, protect from freezing, close cap; discard after 200 metered sprays even if liquid remains, and respect EXP. OTC Astepro: 20–25°C, protect from freezing; retain carton and User Guide and follow its count/expiry. Selected eye drops: upright 2–25°C, cap tightly and avoid tip contamination. Do not apply one product’s storage temperature or an invented after-opening discard interval to every brand."
+      ]
+    },
+    {
+      "section": "hero/essential",
+      "card": "Scope and essential safety",
+      "sourceIds": [
+        "label",
+        "rx15",
+        "otc",
+        "eye"
+      ],
+      "sourceSections": [
+        "1;OTC Uses/Directions;eye Indications/Pediatric/Patient information",
+        "4;5.1;6;10;OTC Warnings;eye Contraindications/Warnings/Precautions/Adverse",
+        "3;11;16;SPL approval/pack;OTC Active ingredient/Other information;eye Description/How supplied"
+      ],
+      "claims": [
+        "A histamine H1 antagonist with prescription and OTC nasal sprays and prescription eye drops. Route, concentration, approved ages, indications and pump instructions differ between selected products.",
+        "Nasal spray is not an eye medicine. Avoid alcohol and other CNS depressants with nasal azelastine, and assess driving impairment. Ophthalmic drops require clean handling and contact-lens precautions; any serious allergic reaction needs urgent care.",
+        [
+          "Therapeutic class",
+          "Histamine H1 receptor antagonist"
+        ],
+        [
+          "Representative formulation",
+          "Prescription nasal spray 0.1% · 137 mcg azelastine HCl per spray"
+        ],
+        [
+          "Reference focus",
+          "Selected U.S. nasal 0.1%/0.15% and ophthalmic 0.05% products"
+        ]
+      ]
+    }
+  ],
+  "exclusions": [
+    "Other manufacturers/combinations, non-U.S. oral/other products and unverified preferred-treatment or emergency algorithms; no stock inference."
+  ],
+  "gaps": [
+    {
+      "material": false,
+      "topic": "Selected Rx0.15% patient-leaflet age conflict",
+      "finding": "Current selected fullPI1.1/8.4 age≥6 contrasts with appended patient information unknown below6months.",
+      "resolution": "Profile supplies only age≥6 Rx0.15 regimens and explicitly flags conflict; no infant dose or lower-age approval inferred. Exact-package pharmacist review required for younger children."
+    },
+    {
+      "material": false,
+      "topic": "Topical renal/hepatic algorithms and older selected Rx0.15 record",
+      "resolution": "Rx0.15 current selected repack SPL remainsv1/2021 with2019clinicalrevision, transparently attributed; no invented updatedclinicalrevision. Oral PK impairment and interaction findings are not dose formulas for nasal/ocular use."
+    },
+    {
+      "material": false,
+      "topic": "OTC device archive",
+      "resolution": "Full manufacturer instructions verified with browser text after directHTML403. No bypass. Exact-package guide governs alternative pumps/counts; no universal200spraylimit applied to every OTC bottle."
+    }
+  ],
+  "materialErrors": [],
+  "validation": {
+    "schema": "Passed validateMonograph with zero errors, 2026-10-01.",
+    "renderedPage": "Pending parent integration QA"
+  },
+  "monographSha256": "909ab92a2c9de1ecf52e7f3d0862955e19bc778472dd2c8e7d8af3eafac896d3",
+  "sourceInterpretationNotes": [
+    "Clinical revision/major-change dates are separate from SPL effectiveTime, version and API publication; no present-stock inference.",
+    "Nasal RxPI4none is distinguished from OTC allergy do-not-use and eye hypersensitivitycontra.137/205.5mcg HCl,187.6mcg base andophthalmic0.5mg/mL HCl explicitly distinguished.",
+    "0.15%nasal25/57h half-life is intranasal;22h value in other labeling is oral/IV. Eye preserved contactlens≥10min/no-red-eye-lenses guidance; storage2–25°C differsnasal20–25°C."
+  ]
+}

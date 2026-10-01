@@ -1,0 +1,419 @@
+{
+  "reviewDate": "2026-10-01",
+  "scope": "Independent targeted critical-assertion primary-source review. Only enumerated assertions independently verified; not exhaustive second clinical signoff, browser QA or build verification.",
+  "status": "Complete: all ten profiles targeted-reviewed.",
+  "profiles": [
+    {
+      "drug": "azelastine",
+      "fileSha256": "909ab92a2c9de1ecf52e7f3d0862955e19bc778472dd2c8e7d8af3eafac896d3",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Rx0.1% seasonal age5–11 one spray/nostrilBID,≥12one/twoBID; vasomotor≥12twoBID; prime4/reprime2after≥3days agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f58c203-f649-a18e-aaf3-70b0797652f4",
+          "sourceSection": "Dosage;Contraindications",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Rx0.15% seasonal6–11oneBID,≥12one/twoBID or twoqd; perennial6–11oneBID/≥12twoBID. Prime6/reprime2after≥3days; clinicalPI≥6 versus leafletunder6months conflict flagged with no infant regimen.",
+          "sourceId": "rx15",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c9239ce9-f77f-0db4-e053-2995a90aa4ec",
+          "sourceSection": "Sections 2,4;Patient Instructions",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "OTC≥12twoqd or1–2q12h,max4sprays/nostril/day;6–11oneq12h,max2; under6do not use. OTC allergy exclusion versus Rx§4none correctly separated.",
+          "sourceId": "otc",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0640846-19a6-7f79-e053-2995a90a8176",
+          "sourceSection": "Drug Facts Directions",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Ophthalmic1dropaffectedeyeBID,pediatricunder3unestablished, no lenses in red eyes; remove lens otherwise and≥10minbefore reinsertion. Hypersensitivitycontra and storage2–25°C preserved.",
+          "sourceId": "eye",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f358cecd-284f-4d0b-806c-039465220bd2",
+          "sourceSection": "Dosage;Precautions;Storage",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [
+        "Rx0.15% age conflict explicitly scoped; no infant regimen published. Manufacturer FAQ device claims are outside independent checks."
+      ]
+    },
+    {
+      "drug": "sitagliptin",
+      "fileSha256": "32cad93b0d72a26c89d4ba09f7cde85ca4a106d99c26a9d15ba19b7647e6628b",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "AdultT2diabetes100mgqd eGFR≥45,50mg≥30–<45,25mg<30orHD/PD withoutdialysistiming. Serioushypersensitivitycontra; pancreatitisstop, renalmonitoring, hypoglycemia with insulin/secretagogues, class-other-memberHFwarning not invented sitagliptin-trial causality, no boxedwarning agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f85a48d0-0407-4c50-b0fa-7673a160bf01",
+          "sourceSection": "Sections 1–5,8",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [
+        "Severehepatic and pediatric gaps explicitly non-actionable; no invented regimen."
+      ]
+    },
+    {
+      "drug": "hydralazine",
+      "fileSha256": "c4fce143b0d8cac608ca5c0be5c588423a574caa2123a051529a9c966ab0d74e",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Oral10mgQID2–4days→25QIDremainderweek1→50QIDweek2, selectedresistantmaximum300/day; pediatric0.75mg/kg/DAYfourdivisions→max7.5mg/kg/dayor200/day. CAD/mitralrheumatic disease/hypersensitivity formalcontra; lupus/nephritis and myocardialstimulation warnings agree.",
+          "sourceId": "oral",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b3d1786d-c3ff-42f1-a09f-37a9c9021e5a",
+          "sourceSection": "Dosage;Pediatric use;Contraindications;Warnings",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Selectedhospital20–40mgIM/directIVbolusrepeatedasnecessary, no universalinterval; renal mayneedlowerdose,frequentBP/maxdecline10–80min; pediatric1.7–3.5mg/kg/DAY4–6divisions, no invented emergency bolus.",
+          "sourceId": "injection",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f1a10203-f027-4f9c-8dd6-907c6db24d47",
+          "sourceSection": "Dosage;Contraindications",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "adalimumab",
+      "fileSha256": "fd31a68d5f14e81bb63809831342729078bcc35e4b009ad747d3c5955664849d",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Adult rheumatology40mgqotherweek; RAwithoutMTX-specific escalation40weekly/80qotherweek. Adult psoriasis/uveitis80→40qotherweek1weeklater. AdultCD/UC160day1/80day15/40qotherweekday29, UCstopwithoutremissionweek8; HS40weekly/80qotherweek.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=608d4f0d-b19f-46d3-749a-7159aa5f933d",
+          "sourceSection": "Sections2.1–2.7,4,5;Box",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "JIA/uveitis≥2yr10–<15kg10mg/15–<30kg20/≥30kg40qotherweek. CD≥6yr17–<40kg80/40→20qotherweek;≥40kg160/80→40. UC≥5yr20–<40kg80/40/40days1/8/15→40qotherweekor20weekly;≥40kg160/80/80→80qotherweekor40weekly. HS≥12yr30–<60kg80day1→40qotherweekday8;≥60kgadultHS.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=608d4f0d-b19f-46d3-749a-7159aa5f933d",
+          "sourceSection": "Sections2.2–2.6",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "No formalcontra; do notstartactiveinfection, stopseriousinfection/sepsis; TBbefore/periodic,HBVrisk/reactivationmonitor,livevaccinesavoid; seriousinfection/malignancybox correctly scoped.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=608d4f0d-b19f-46d3-749a-7159aa5f933d",
+          "sourceSection": "Sections4–5;Box",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning · Serious infections and malignancy",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "glimepiride",
+      "fileSha256": "56fd4ecfff23ceb642780b6b18d7bf6569cac57be6911e069ee07bf29de8c18e",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "AdultT2only1/2mgqdwithfirstmeal,at-riskrenal/elder1mgstart,1/2mgincrements≥1–2weeks,max8mg/day; colesevelam≥4hafterdrug; sulfonamidederivativehypersensitivitycontra, severehypoglycemia/G6PDhemolysis caution, classUGDPmortalitywarningnotglimepiridetrial; stop≥2weeksbeforeexpecteddelivery.",
+          "sourceId": "glimepiride",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28eefc95-d92e-4555-b6c5-2933860b0610",
+          "sourceSection": "Sections2,4,5,7,8",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "chlorthalidone",
+      "fileSha256": "5f2731c34007fb89fede38ee1d97ca7fa7534d333a4bf76ce27ce0becaf22624",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Thalitone15mgqdwithfood→25after2weeks,>25noexpectedBPadvantage/notinterchangeable; edema50–100dailyor100alternatedays,max200daily. Anuria/sulfonamidederivativeallergycontra, renal/electrolytemonitor; no numericalrenalalgorithm.",
+          "sourceId": "thalitone",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bc5a0299-115b-4e60-bb3f-c75a95c51c15",
+          "sourceSection": "Sections2–5",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Hemiclor12.5/25qdwithfood,doubleq2–4weeks,max100daily; supplied12.5mg, hypertensiononly. Anuria/sulfonamidederivativeallergycontra.",
+          "sourceId": "hemiclor",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3f0f3ee0-f5a6-4bda-8160-a77744e9fa46",
+          "sourceSection": "Sections2–4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Conventional25qmorningwithfood→50→100aftertrial,edema50–100dailyor100alternatedays up to200; productceilingsnottransferred.",
+          "sourceId": "chlorgeneric",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d104583e-e983-4230-b6d1-4455ee1060a5",
+          "sourceSection": "Dosage;Contraindications",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "oxybutynin",
+      "fileSha256": "0afe5c2c23c15c954f3d5e98ebb75314d5487808a59570e53209735891079453",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "IRadult5mgBID/TIDmax5QID20/day;frailelder2.5BID/TID; pediatricover5years5BIDmax5TID, exactly5sourceboundarygapexplicit. Retention,GIretention/uncontrollednarrowangleglaucoma and hypersensitivityrestrictionsagree.",
+          "sourceId": "ir",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9578b6b8-5b9d-4263-9142-39b2c7216b85",
+          "sourceSection": "Dosage;Contraindications",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "ERadult5/10qd,5mgapproximatelyweeklyincrementsmax30; neurologicalpediatric≥6start5max20qd; swallowwhole, no inventedrenal/hepatic reduction.",
+          "sourceId": "er",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9d0e5c8-3a71-40a0-a7d3-44bc043392fa",
+          "sourceSection": "Sections2,4–5",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "RxOxytrol currentmenOAB3.9mg/daypatchchangeq3–4days,not36mgtotaldaily; Rxindicationandschedule distinctfromOTC.",
+          "sourceId": "patch",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=20dee37f-1412-44ed-9e8b-f4379ce23eb0",
+          "sourceSection": "Sections1–4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "OTCwomen≥18onepatchq4days;broaderanyglaucoma/male/under18 exclusions distinctfromRx.",
+          "sourceId": "otc",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8cdc5b4d-ff8d-4010-97d7-313422a0b868",
+          "sourceSection": "DrugFacts",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed-warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [
+        "IRexactage5wording discrepancy explicitly retained; discontinuedGelnique historicalidentity/currentFDAdata andAUAindexedguidelineclaims outside independentenumeratedchecks."
+      ]
+    },
+    {
+      "drug": "pioglitazone",
+      "fileSha256": "59bf76d71543531cfd88edafc16925aa853ba5fb7ab842215a2a4ae599c47813",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "AdultT2start15/30qd→45max;selectedNYHAI/II15start,III/IVinitiationcontra/symptomaticHFnotrecommended. StrongCYP2C8inhibitormax15; hypoglycemiaWITHinsulinconditional10–25%insulinreduction,notautomatic. No renaladjustment; fluidriskremains.",
+          "sourceId": "pi",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2ddc491-88a9-4063-9150-443b4fa4330c",
+          "sourceSection": "Sections2,4–5;Box",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "BaselineLFTs; symptomaticALT>3ULNinterrupt/investigate/no restartwithoutotherexplanation; ALT>3plusbilirubin>2withoutothercause no restart. Bladdercanceractiveavoidwarningdistinctfromformalcontra; CHFboxagree.",
+          "sourceId": "pi",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2ddc491-88a9-4063-9150-443b4fa4330c",
+          "sourceSection": "Section5.3",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning: congestive heart failure",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "insulin-degludec",
+      "fileSha256": "7504f0bfe631d46cb3d7c352cedeeff11b5ad86648d8ef06853caff9b1fcbf9f",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Tresibaage≥1basalSC;T1naiveone-third/halftotal0.2–0.4units/kg/DAYinitialestimateplusmealtime;T2naive10qd; adultbasalswitchsametotalunits/children80%. Adultmissedwakingdose≥8hbetween versuspediatriccall/monitor; increases3–4days.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=456c5e87-3dfd-46fa-8ac0-c6128d4c97c6",
+          "sourceSection": "Sections2–5,16;IFUs",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "U1001unitstepsmax80/injection,U2002stepsmax160;displayactualunits/no conversion/nopen-to-syringe; pediatric<5unitsuseU100vial. Hypoglycemia/hypersensitivitycontra; noIV/pump/mixing. Allselectedin-usedevices56days≤30°COR2–8°C; unopenedroom56days.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=456c5e87-3dfd-46fa-8ac0-c6128d4c97c6",
+          "sourceSection": "Sections2,4,16;IFUs",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "formattingRevisionIndependent": {
+        "checked": "2026-10-01",
+        "previousSha256": "351fd6f57bd5081fad9c4bc8882373372ed854c03f4fdffa998892e65ccc105d",
+        "currentSha256": "7504f0bfe631d46cb3d7c352cedeeff11b5ad86648d8ef06853caff9b1fcbf9f",
+        "proof": "Read previous committed monograph matching prior independent SHA and current actual JS. Independently reconstructed all four old three-column rows into current two-column rows; every starting dose, population and distinction retained in order. Entire remaining clinical object is identical ignoring whitespace.",
+        "rowsVerified": 4,
+        "clinicalValuesUnchanged": true,
+        "renderedPageQa": "Parent-owned; not independently claimed here."
+      }
+    },
+    {
+      "drug": "cyanocobalamin",
+      "fileSha256": "0ca84522d38d915c6f350db1a99cbcfc6543680393cfe939f4d127c4da648cb2",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Legacy100mcgIM/deepSCdaily6–7days→alternate7doses→q3–4days2–3weeks→100monthlylifelong,scopednotuniversalmodernalgorithm.1000mcg/mLmeans100mcg0.1mL; noIV, cobalt/B12contra,Leberoptic/hypokalemia/anaphylaxis/benzyl-alcoholaluminumwarnings agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54f088b1-7cf8-3837-e063-6294a90a88e7",
+          "sourceSection": "Dosage;Contraindications;Warnings",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "AdultNascobal500mcgONEnostrilweekly≥1hfromhotfood/liquid;perniciousmaintenanceonlyremissionafterIMwithoutneuroinvolvement. Singleuseno prime; labs1monththen3–6months; nasalillnessdefer,persistentlylowusealternativeroute.",
+          "sourceId": "nasal",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=697e0e52-c01b-4b53-9994-f79c46eb6b4f",
+          "sourceSection": "Sections1–5;IFU",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "NIHoral1000–2000mcgtriallow-qualityserumnormalizationevidence separatedfromnutritionanduniversalself-treatment.",
+          "sourceId": "nih",
+          "sourceUrl": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/",
+          "sourceSection": "DeficiencyTreatment",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [
+        "Legacyinjectionprotocolscoped; noinventedpediatricorrenal/hepaticadjustment."
+      ]
+    }
+  ],
+  "pending": [],
+  "limitations": [
+    "Targeted checks cover only enumerated assertions; no independent Astepro manufacturer FAQ verification claimed.",
+    "Hydralazine heart-failure guideline and adalimumab Purple Book regulatory-family claims are author-reviewed, outside independent enumerated label checks."
+  ]
+}

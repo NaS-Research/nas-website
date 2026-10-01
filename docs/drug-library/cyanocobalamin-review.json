@@ -1,0 +1,634 @@
+{
+  "slug": "cyanocobalamin",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "CurrentselectedHealthFirstrepackagedANDA2094291000mcgmL30mLIMSCcyanocobalamin andNascobalNDA021642adult500mcgsingle-useweeklynasal; NIHcurrentnutrition/oralreplacement/biomarkercontext only.",
+  "excludedRegimens": [
+    "Universalmoderninjection1000mcg-loading/maintenancealgorithm notverified/supplied; exactselectedlabel100mcgprotocolexplicitlyscoped",
+    "Neonatal/pediatricreplacementprotocol; preservedmultidosevialnotneonataldefault",
+    "Schillingtestprotocol/historical4mcgRDAs/obsoletepregnancycategoryCnotpropagated",
+    "Universaloralsubstitutionforactive neurologicdisease/PA ormalabsorption; currentprimaryNIHoralRCTcontextnotselfprescription",
+    "Hydroxocobalamin/othercobalamins/combinationvitamins/othermanufacturerpostpuncture dating",
+    "NICEguidelinewebsite/PDFreturned403/inaccessible; noNICEaccess/recommendationclaim"
+  ],
+  "sources": [
+    {
+      "id": "label",
+      "title": "Cyanocobalamin injection 1000 mcg/mL · Full label",
+      "publisher": "DailyMed / HealthFirst repackaged product",
+      "note": "Current SPL version 2, effective 2026-09-02. Current SPL September 2026 retains legacy-format injection labeling; exact listed protocol distinguished from a universal modern replacement regimen.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54f088b1-7cf8-3837-e063-6294a90a88e7"
+    },
+    {
+      "id": "nasal",
+      "title": "Nascobal 500 mcg single-use nasal spray · Prescribing information",
+      "publisher": "DailyMed / Par Health USA LLC",
+      "note": "Current SPL version 15, effective 2024-03-01. Current available SPL version 15, clinical PI and IFU March 2024; service publication May 2026 is not a new clinical revision.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=697e0e52-c01b-4b53-9994-f79c46eb6b4f"
+    },
+    {
+      "id": "nih",
+      "title": "Vitamin B12 · Health professional fact sheet",
+      "publisher": "NIH Office of Dietary Supplements",
+      "url": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/",
+      "note": "Current public NIH page read October 1, 2026. Nutrition, oral-replacement evidence, interaction and biomarker context; not a product approval or universal treatment protocol. Curl403; reviewed web snapshot archived."
+    }
+  ],
+  "labelMetadata": [
+    {
+      "sourceId": "label",
+      "product": "cyanocobalamin",
+      "setid": "54f088b1-7cf8-3837-e063-6294a90a88e7",
+      "version": "2",
+      "effectiveTime": "20260902",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/54f088b1-7cf8-3837-e063-6294a90a88e7.xml",
+      "xmlSha256": "bd414999b970e4c8d83960a7fed17497f117cfb3c5ef514a074ad1cb8794c029",
+      "marketingAuthorization": [
+        {
+          "category": "ANDA",
+          "application": "ANDA209429"
+        }
+      ],
+      "clinicalVersion": "InjectionlegacyformatretainedSept2026SPL"
+    },
+    {
+      "sourceId": "nasal",
+      "product": "nascobal",
+      "setid": "697e0e52-c01b-4b53-9994-f79c46eb6b4f",
+      "version": "15",
+      "effectiveTime": "20240301",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/697e0e52-c01b-4b53-9994-f79c46eb6b4f.xml",
+      "xmlSha256": "efdb8627c410c59a2d5c9d04fadaee629f2077d14d104048c9e99c5511315db3",
+      "marketingAuthorization": [
+        {
+          "category": "NDA",
+          "application": "NDA021642"
+        }
+      ],
+      "clinicalVersion": "PI/IFUMarch2024 retainedcurrentversion15May2026servicepublication"
+    }
+  ],
+  "evidence": [
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/cyanocobalamin.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/cyanocobalamin/cyanocobalamin.xml",
+      "sha256": "bd414999b970e4c8d83960a7fed17497f117cfb3c5ef514a074ad1cb8794c029",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/54f088b1-7cf8-3837-e063-6294a90a88e7.xml"
+    },
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/cyanocobalamin-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/cyanocobalamin/cyanocobalamin-sections.json",
+      "sha256": "dd1458fa18ff504385330a98477e05c140043310a6f919305a68b99ec4b9972a",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/54f088b1-7cf8-3837-e063-6294a90a88e7.xml"
+    },
+    {
+      "sourceId": "nasal",
+      "localEvidence": "/tmp/nas-drug-sources/nascobal.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/cyanocobalamin/nascobal.xml",
+      "sha256": "efdb8627c410c59a2d5c9d04fadaee629f2077d14d104048c9e99c5511315db3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/697e0e52-c01b-4b53-9994-f79c46eb6b4f.xml"
+    },
+    {
+      "sourceId": "nasal",
+      "localEvidence": "/tmp/nas-drug-sources/nascobal-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/cyanocobalamin/nascobal-sections.json",
+      "sha256": "e6c15dfdb25ed0ad4658a2c43d01c5010a7c3a24cec83fe94b45f0db90002df5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/697e0e52-c01b-4b53-9994-f79c46eb6b4f.xml"
+    },
+    {
+      "sourceId": "nih",
+      "localEvidence": "/tmp/nas-drug-sources/cyanocobalamin-nih-web.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/cyanocobalamin/cyanocobalamin-nih-web.json",
+      "sha256": "40cba2add55bb4993695096acf2b8671d64c63c34dc5556fe138c39953a33174",
+      "url": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/"
+    }
+  ],
+  "sourceEvidenceRoot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/cyanocobalamin",
+  "sourceManifest": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/cyanocobalamin/source-manifest.json",
+  "assertionToSourceMap": [
+    {
+      "section": "indications",
+      "card": "Selected injection indications",
+      "assertions": {
+        "paragraphs": [
+          "The injection label treats B12 deficiency due to malabsorption, including pernicious anemia and relevant GI disease/surgery. Correct the underlying reversible cause where possible. It is not a substitute for folate in isolated folate deficiency, despite legacy wording listing folate deficiency among associated conditions."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "InjectionfullIndicationsmalabsorption/PAunderlyingcauses;Warnings/Precautions isolatedfolateisnotB12indication"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "indications",
+      "card": "Nascobal indications and limits",
+      "assertions": {
+        "paragraphs": [
+          "Nascobal is labeled for adult pernicious-anemia maintenance after IM-induced remission when there is no nervous-system involvement; adult dietary, drug-induced or malabsorption deficiency not due to pernicious anemia; and prevention with above-normal B12 requirements. Defer use during symptomatic nasal congestion, allergic rhinitis or URI. It is not for the Schilling test; long-term benefit after correction of a temporary cause is unestablished."
+        ]
+      },
+      "sourceIds": [
+        "nasal"
+      ],
+      "sourceSections": {
+        "nasal": "Nascobal full§1 maintenanceadultPAremissionafterIMno neuro vs nonPA adultdietdrugmalabsorption/prevention, nasalillnessdefer/noSchilling/temporarycause"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "indications",
+      "card": "Oral supplements and scope",
+      "assertions": {
+        "paragraphs": [
+          "Oral/sublingual supplements differ from the selected prescription products. NIH summarizes low-quality evidence that high oral doses can normalize B12 similarly to injections; this does not make every oral preparation appropriate for urgent neurologic disease or every malabsorption cause. Hydroxocobalamin and combination vitamins require separate product assessment."
+        ]
+      },
+      "sourceIds": [
+        "nih"
+      ],
+      "sourceSections": {
+        "nih": "NIH PrescriptionMedications/Supplements/Status fullhighoral1000–2000lowqualityvsIM; no universalurgentneurouse"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "dosage",
+      "card": "Selected injection-label pernicious-anemia regimen",
+      "assertions": {
+        "paragraphs": [
+          "The selected legacy-format U.S. label specifies 100 mcg IM or deep SC daily for 6–7 days; after improvement/reticulocyte response, 100 mcg on alternate days for 7 doses, then every 3–4 days for 2–3 weeks, followed by 100 mcg monthly for life. This is that product’s listed regimen, not a universal current replacement algorithm. Confirm the clinician’s cause/severity-specific protocol; do not infer a 1000 mcg dose solely from vial concentration."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "InjectionfullDosage exact100mcg daily6–7thenqodalternate7thenq3–4d2–3weeks thenmonthly100life;listedlegacyprotocolnotuniversalmodern regimen"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "dosage",
+      "card": "Nascobal dosing and follow-up",
+      "assertions": {
+        "paragraphs": [
+          "Initial adult dose: one 500 mcg spray in ONE nostril once weekly. Give at least 1 hour before or after hot foods/liquids; defer until nasal illness resolves. Check B12 and peripheral blood count at 1 month, then every 3–6 months. If levels decline, consider dose increase under supervision and recheck a month later; persistently low levels warrant another route. Continue appropriate replacement indefinitely for pernicious anemia; stop Nascobal when a corrected temporary cause no longer creates risk."
+        ]
+      },
+      "sourceIds": [
+        "nasal"
+      ],
+      "sourceSections": {
+        "nasal": "Nascobal full§2.1–2.4 500weeklyonenostrilhot1hspacing;noseillness;1monththen3–6monthchecks/change1month/persistlowroute/PAindefinite/temporarystop"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "dosage",
+      "card": "Oral evidence and dose distinction",
+      "assertions": {
+        "paragraphs": [
+          "NIH describes trials of oral 1000–2000 mcg replacement, with low-quality evidence for similar serum normalization to IM treatment. These studied high doses are separate from healthy-adult dietary intake and are not a universal self-treatment prescription. Confirm formulation, adherence and response with the clinician."
+        ]
+      },
+      "sourceIds": [
+        "nih"
+      ],
+      "sourceSections": {
+        "nih": "NIHfullStatus oralRCT1000–2000lowqualityserumnormalization notuniversalprescription orRDA"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and organ-function boundaries",
+      "assertions": {
+        "paragraphs": [
+          "Selected injection is 1000 mcg/mL for IM or deep SC use; 100 mcg is 0.1 mL. Avoid IV use, which causes rapid urinary loss. Nascobal’s current device is single-use and needs no priming; discard after its single spray. No validated numerical renal/hepatic adjustment or pediatric injection-treatment table is supplied by these selected labels."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "nasal"
+      ],
+      "sourceSections": {
+        "label": "InjectionDescription/Dosage1000mcgmL100mcg0.1mL IMdeepSCavoidIV; NascobalIFUcurrentone-spraynoprime;organ/pedtableabsent",
+        "nasal": "InjectionDescription/Dosage1000mcgmL100mcg0.1mL IMdeepSCavoidIV; NascobalIFUcurrentone-spraynoprime;organ/pedtableabsent"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Delayed B12 treatment can leave irreversible neurologic injury. Folate can mask B12 anemia without preventing neurologic damage; B12 can also mask folate deficiency. Assess both and replace concomitant deficiencies appropriately. Cyanocobalamin is not recommended in Leber hereditary optic atrophy because severe/rapid optic deterioration has occurred.",
+          "Anaphylaxis, including fatal reactions after injection, is reported. Suspected hypersensitivity requires clinician assessment; label skin-test suggestions are not a home-testing protocol. Intense correction of severe megaloblastic anemia can cause hypokalemia, thrombocytosis or sudden death; monitor potassium/counts. Treatment may unmask polycythemia vera.",
+          "The selected injection contains benzyl alcohol and aluminum: premature infants are especially vulnerable, and renal impairment increases aluminum-accumulation risk. Do not treat this preserved multidose vial as an appropriate neonatal preparation."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "nasal"
+      ],
+      "sourceSections": {
+        "label": "InjectionfullWarnings/Precautions neurodamage/folatemask,LeberhypoKdeathanaphylaxisbenzylpremature/aluminumrenal;Nascobalfull§5.1–5.5 polycythemia/platelets",
+        "nasal": "InjectionfullWarnings/Precautions neurodamage/folatemask,LeberhypoKdeathanaphylaxisbenzylpremature/aluminumrenal;Nascobalfull§5.1–5.5 polycythemia/platelets"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Cobalt or vitamin B12 hypersensitivity is contraindicated for the injection. Nascobal also contraindicates hypersensitivity to any excipient. Leber optic atrophy is a not-recommended warning in Nascobal, rather than a separately listed formal contraindication."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "nasal"
+      ],
+      "sourceSections": {
+        "label": "InjectionContra cobaltB12;Nascobalfull§4excipientsand§5.1Lebernotrecommended distinct",
+        "nasal": "InjectionContra cobaltB12;Nascobalfull§4excipientsand§5.1Lebernotrecommended distinct"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "Neither selected U.S. product label has a boxed warning. Severe allergy, neurologic-diagnostic masking, rapid-treatment electrolyte effects and product-preservative risks still need assessment."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "nasal"
+      ],
+      "sourceSections": {
+        "label": "Bothcompletecurrentprimarylabels have noBox;warningsretained",
+        "nasal": "Bothcompletecurrentprimarylabels have noBox;warningsretained"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Injection reports include transient diarrhea, itching/rash, swelling sensation and early pulmonary edema/heart failure or vascular thrombosis; severe allergy is the major acute risk. The Nascobal label reports headache, rhinitis, nausea, weakness, paresthesia and glossitis, with data partly from another nasal formulation. Its small crossover trial does not establish a reliable route-to-route adverse-rate comparison."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "nasal"
+      ],
+      "sourceSections": {
+        "label": "InjectionfullAdverseReactions earlyedemaCHFthrombosisdiarrhearash/swell;Nascobalfull§6 anothernasalformulationtrial/limitedratecomparison",
+        "nasal": "InjectionfullAdverseReactions earlyedemaCHFthrombosisdiarrhearash/swell;Nascobalfull§6 anothernasalformulationtrial/limitedratecomparison"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "interactions",
+      "card": "Reduced response and assay effects",
+      "assertions": {
+        "paragraphs": [
+          "Chloramphenicol may reduce the hematologic response to Nascobal; monitor efficacy and consider another treatment if needed. The injection label lists antibiotic/methotrexate/pyrimethamine interference with folate/B12 assays; consider the actual test method and laboratory interpretation."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "nasal"
+      ],
+      "sourceSections": {
+        "label": "Nascobalfull§7chloramphenicolresponse;InjectionPrecautions DrugLaboratory assaysantibioticMTXpyrimethamine methodclinical synthesis",
+        "nasal": "Nascobalfull§7chloramphenicolresponse;InjectionPrecautions DrugLaboratory assaysantibioticMTXpyrimethamine methodclinical synthesis"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "interactions",
+      "card": "Medicines affecting B12 status",
+      "assertions": {
+        "paragraphs": [
+          "Metformin and acid-suppressing drugs can reduce B12 status or food-bound absorption. The injection label also identifies colchicine, para-aminosalicylic acid and prolonged heavy alcohol intake as malabsorption contributors. Assess deficiency rather than independently stopping necessary medicines."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "nih"
+      ],
+      "sourceSections": {
+        "label": "InjectionPrecautions malabsorptivecolchicine/PAS/alcohol;NIHmedicationinteractionsection fullmetformin/acid suppressors",
+        "nih": "InjectionPrecautions malabsorptivecolchicine/PAS/alcohol;NIHmedicationinteractionsection fullmetformin/acid suppressors"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "interactions",
+      "card": "Concurrent deficiencies",
+      "assertions": {
+        "paragraphs": [
+          "B12 is not a replacement for folate or iron. Treat confirmed concurrent folate/iron deficiency as directed; folate alone must not substitute for B12 treatment. Correct a reversible underlying cause along with replacement."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "nasal"
+      ],
+      "sourceSections": {
+        "label": "Nascobalfull§2.4 combinediron/folateunderlyingcauses;InjectionPrecautions/Dosage folatenotsubB12",
+        "nasal": "Nascobalfull§2.4 combinediron/folateunderlyingcauses;InjectionPrecautions/Dosage folatenotsubB12"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "B12 is essential during pregnancy and enters human milk. Current NIH dietary allowances are 2.6 mcg/day in pregnancy and 2.8 mcg/day during lactation, distinct from deficiency-treatment doses; the injection label’s older 4 mcg nutrition statements are not current RDAs. Nascobal pregnancy data are insufficient to define drug-associated risk, while its label describes minimal breastfeeding risk. Treat maternal deficiency and plan route/dose individually."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "nasal",
+        "nih"
+      ],
+      "sourceSections": {
+        "label": "Nascobalfull§8.1limitedpreg/8.2milklowrisk;InjectionlegacyPreg/Nursing4mcgdiscrepancy;NIHRDAtable current2.6/2.8nottherapy",
+        "nasal": "Nascobalfull§8.1limitedpreg/8.2milklowrisk;InjectionlegacyPreg/Nursing4mcgdiscrepancy;NIHRDAtable current2.6/2.8nottherapy",
+        "nih": "Nascobalfull§8.1limitedpreg/8.2milklowrisk;InjectionlegacyPreg/Nursing4mcgdiscrepancy;NIHRDAtable current2.6/2.8nottherapy"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": {
+        "paragraphs": [
+          "Nascobal pediatric safety/effectiveness are not established. Injection-label pediatric nutrition ranges do not define a validated neonatal/child replacement regimen; preserved-vial risks matter particularly in premature infants. Older adults may have malabsorption and require a cause-specific plan; the nasal trial had insufficient older participants for firm age-response conclusions."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "nasal"
+      ],
+      "sourceSections": {
+        "label": "Nascobal§8.4/8.5 pedunestablisheddoldinsufficient;InjectionPediatricnutritionalnotdose/Warnprematureneonate",
+        "nasal": "Nascobal§8.4/8.5 pedunestablisheddoldinsufficient;InjectionPediatricnutritionalnotdose/Warnprematureneonate"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "populations",
+      "card": "Kidney, liver and neurologic considerations",
+      "assertions": {
+        "paragraphs": [
+          "Selected labels give no numerical organ-adjustment table. Renal dysfunction increases concern about injection aluminum exposure and can complicate interpretation of metabolic markers. Active neurologic disease requires prompt assessment and an appropriate replacement route; Nascobal pernicious-anemia maintenance excludes nervous-system involvement."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "nasal",
+        "nih"
+      ],
+      "sourceSections": {
+        "label": "InjectionWarnings aluminumrenalkidneyrisk;Nascobal§1/§2 noactivePAneuro;NIHAssessingStatus MMArisesrenal; noinventedorgandose",
+        "nasal": "InjectionWarnings aluminumrenalkidneyrisk;Nascobal§1/§2 noactivePAneuro;NIHAssessingStatus MMArisesrenal; noinventedorgandose",
+        "nih": "InjectionWarnings aluminumrenalkidneyrisk;Nascobal§1/§2 noactivePAneuro;NIHAssessingStatus MMArisesrenal; noinventedorgandose"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "assertions": {
+        "paragraphs": [
+          "Cobalamin coenzymes support methylmalonate-to-succinate conversion and homocysteine-to-methionine synthesis. B12 deficiency disrupts folate handling, blood-cell production and myelin-related function. Hematologic abnormalities can improve while severe/longstanding neurologic lesions remain incompletely reversible."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "nasal"
+      ],
+      "sourceSections": {
+        "label": "Nascobalfull§12.1/12.2 biochemicalcoenzyme/neuroreversaldependsduration;InjectionClinicalPharmacology myelinblood",
+        "nasal": "Nascobalfull§12.1/12.2 biochemicalcoenzyme/neuroreversaldependsduration;InjectionClinicalPharmacology myelinblood"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Route-dependent pharmacokinetics",
+      "assertions": {
+        "paragraphs": [
+          "IM/SC cyanocobalamin is rapidly absorbed and transported by transcobalamins, with storage mainly in liver. Large injected doses produce substantial urinary loss; IV administration is rapidly excreted. Oral absorption normally involves intrinsic factor/ileum, with a small passive component at high doses. Intranasal delivery bypasses that gut step, but congestion and secretions affect practical reliability. These pathways do not establish equal milligram doses across routes."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "nasal"
+      ],
+      "sourceSections": {
+        "label": "FullInjectionClinicalPharmacology IM/SChighurinaryIV/transcobalamin/storage/IF ileum/passive;Nascobalfull§12.3 +§1nasalillnesscontext",
+        "nasal": "FullInjectionClinicalPharmacology IM/SChighurinaryIV/transcobalamin/storage/IF ileum/passive;Nascobalfull§12.3 +§1nasalillnesscontext"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": {
+        "paragraphs": [
+          "Before replacement obtain appropriate B12, blood count/hematocrit, reticulocytes, folate and iron assessment. The injection label calls for close potassium checks during the first 48 hours of initial pernicious-anemia treatment and reticulocyte/hematocrit follow-up around days 5–7. Nascobal follow-up is 1 month then every 3–6 months, with recheck after changes. Review symptoms, adherence and route adequacy. MMA can assist an uncertain diagnosis but rises with renal impairment."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "nasal",
+        "nih"
+      ],
+      "sourceSections": {
+        "label": "InjectionfullLabTests baseline/allKfirst48hCBCretic5–7d;Nascobal§2.1/2.3monththen3–6checks;NIHAssessingStatus MMArenal;clinicalfollowupsynthesis",
+        "nasal": "InjectionfullLabTests baseline/allKfirst48hCBCretic5–7d;Nascobal§2.1/2.3monththen3–6checks;NIHAssessingStatus MMArenal;clinicalfollowupsynthesis",
+        "nih": "InjectionfullLabTests baseline/allKfirst48hCBCretic5–7d;Nascobal§2.1/2.3monththen3–6checks;NIHAssessingStatus MMArenal;clinicalfollowupsynthesis"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "assertions": {
+        "paragraphs": [
+          "Maintain the long-term plan for irreversible causes; do not stop because anemia improves. Report progressive numbness/gait problems, severe allergy or treatment intolerance. For nasal dosing use one device/one nostril weekly, no priming, and keep hot-food/drink spacing. Defer during nasal illness and contact the team about alternative replacement rather than missing indefinitely."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "nasal"
+      ],
+      "sourceSections": {
+        "label": "InjectionPatientInformation continuedPAavoidfolatealone;Nascobal§17/IFU exactweeklyonenostrilnoprimehotspacing/nasalillnessdefer",
+        "nasal": "InjectionPatientInformation continuedPAavoidfolatealone;Nascobal§17/IFU exactweeklyonenostrilnoprimehotspacing/nasalillnessdefer"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "practice",
+      "card": "Excess doses and errors",
+      "assertions": {
+        "paragraphs": [
+          "The injection label reports no known overdose cases; this does not remove allergy or treatment-response risks. Contact the clinician or Poison Control for a significant dosing error and verify units/concentration. No antidote or universal emergency observation interval is established by these selected labels."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "InjectionOverdosage no cases reported; contactclinicianPoisonControlclinicaldosingerror counseling notspecificantidote"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "product",
+      "card": "Representative injection · HealthFirst repackaged vial",
+      "assertions": {
+        "facts": [
+          [
+            "Appearance",
+            "Clear, red solution"
+          ],
+          [
+            "Concentration / volume",
+            "1000 mcg/mL · 30 mL multidose vial"
+          ],
+          [
+            "Example identifier",
+            "NDC 51662-1703-1"
+          ],
+          [
+            "Route / preservative",
+            "IM or SC · benzyl alcohol 1.5%"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "CurrentInjectionXMLclearred/Description1000mcgmL1.5benzyl/HowSupplied30mL/NDC51662-1703-1androute"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Selected injection contains 1000 mcg/mL, with sodium chloride 0.9% and benzyl alcohol 1.5%. Current selected Nascobal supplies 500 mcg/0.1 mL per single-use actuation, in boxes of 4 devices (NDC 49884-270-82). Oral supplements have different strengths/excipients and do not inherit these prescription indications. Older multidose nasal priming instructions are not applicable."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "nasal"
+      ],
+      "sourceSections": {
+        "label": "InjectionDescription1000mcg0.9NaCl1.5benzyl;Nascobal§3/16 exact500mcg0.1mLsingleusebox4NDC;oldermultidoseexcluded",
+        "nasal": "InjectionDescription1000mcg0.9NaCl1.5benzyl;Nascobal§3/16 exact500mcg0.1mLsingleusebox4NDC;oldermultidoseexcluded"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Selected injection: 20–25°C, excursions 15–30°C; protect from light and use product/facility instructions for multidose-vial asepsis and dating. No universal post-puncture shelf life is stated in this label. Nascobal: store upright 15–30°C, protect from light/freezing and keep in carton until use. Each device gives one spray; dispose after use."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "nasal"
+      ],
+      "sourceSections": {
+        "label": "InjectionHowSupplied20–25exc15–30light,postpunctureintervalnotstated no28dayuniversal;Nascobalfull§16 upright15–30coveredcartonlightnofreeze/IFUdisposeone",
+        "nasal": "InjectionHowSupplied20–25exc15–30light,postpunctureintervalnotstated no28dayuniversal;Nascobalfull§16 upright15–30coveredcartonlightnofreeze/IFUdisposeone"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    }
+  ],
+  "materialErrors": [],
+  "unresolvedMaterialGaps": [],
+  "sourceDiscrepancies": [
+    {
+      "issue": "Injectionlegacytext4mcgpregnancylactationnutrition andcategoryC persistcurrentSPL.",
+      "resolution": "CurrentNIH2.6/2.8RDAsused,numericdietaryvsreplacementdistinctionexplicit;categoryCnotpropagated.",
+      "resolved": true
+    },
+    {
+      "issue": "InjectionlegacyoralundependablePA claim versuscurrentNIH highdoseoraltrial evidence.",
+      "resolution": "CurrentNIHlowqualityevidencecontext andselectedlisted100mcgIMSCprotocolseparated;no universaloral or1000mcgalgorithm invented.",
+      "resolved": true
+    },
+    {
+      "issue": "InjectionIndicationslistsfolatedeficiency amongassociatedconditions.",
+      "resolution": "B12notsolefolatetreatment;check/replacebothappropriately andavoidmaskingneurologicdamage.",
+      "resolved": true
+    },
+    {
+      "issue": "Nascobalcurrentdeviceissingle-use500mcg0.1mL versusoldermultidoseprimedbottle.",
+      "resolution": "ExactcurrentNDAversion15device/IFU used,adultPAmaintenancewithoutneuro andweekly/no-prime/hotspacing preserved.",
+      "resolved": true
+    },
+    {
+      "issue": "NIHcurl403andNICEHTML/PDFinaccessible.",
+      "resolution": "NIH reviewedaccessiblewebsnapshotarchived; noNICEorpaywalledaccessclaimed.",
+      "resolved": true
+    }
+  ],
+  "limitations": [
+    "Public primary labels and accessible public NIHprofessionalreference only; no paywalled original-studies access claimed.",
+    "Selectedproduct identifiers/status from actual SPL authorization metadata; no availability inferred from candidates alone.",
+    "Individual clinical dose, response, monitoring and route plan needed within stated scope.",
+    "Parent retains build/render/deployment QA."
+  ],
+  "reviewedSourceSections": [
+    "Fullselectedinjectionallclinicalsource sections includingdescription/pharm/indication/contra/warn/precaution/tests/ADR/dose/handling;fullNascobal§§1–8/11–12/16–17/PatientInfo/IFU;NIH fullsupportingRDA/Statushighoral/AssessingStatus/MedicationInteractions sections."
+  ],
+  "verification": {
+    "schemaErrors": [],
+    "monographSha256": "0ca84522d38d915c6f350db1a99cbcfc6543680393cfe939f4d127c4da648cb2",
+    "sectionIds": [
+      "indications",
+      "dosage",
+      "safety",
+      "interactions",
+      "populations",
+      "pharmacology",
+      "practice",
+      "product"
+    ],
+    "heroFacts": 3,
+    "safetyCardOrder": [
+      "Warnings and precautions",
+      "Contraindications",
+      "Boxed warning status",
+      "Adverse reactions"
+    ],
+    "productCardOrder": [
+      "Representative injection · HealthFirst repackaged vial",
+      "Dosage forms and strengths",
+      "Storage and handling"
+    ],
+    "renderedPageQA": "Pending parent batch QA"
+  }
+}

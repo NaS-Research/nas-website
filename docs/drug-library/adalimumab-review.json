@@ -1,0 +1,529 @@
+{
+  "slug": "adalimumab",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "A current Humira originator regimen reference with clearly separated biosimilar and interchangeability verification requirements. All eight blueprint sections reviewed. Product-specific focused monograph; not an exhaustive adverse-event catalog.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Humira · Current full U.S. prescribing information",
+      "publisher": "DailyMed / AbbVie",
+      "note": "SPL version 2154, effective 20251223; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=608d4f0d-b19f-46d3-749a-7159aa5f933d",
+      "checked": "2026-10-01",
+      "version": "SPL version 2154, effective 20251223; current public product labeling.",
+      "spl_version": "2154",
+      "spl_effective_time": "20251223",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/608d4f0d-b19f-46d3-749a-7159aa5f933d.xml",
+      "downloaded_xml_sha256": "06b13f288416565f3c781b85462751338a7df379d9036f10570bb1c0582e729a"
+    },
+    {
+      "id": "purple",
+      "title": "FDA Purple Book · Adalimumab product family",
+      "publisher": "U.S. Food and Drug Administration",
+      "note": "Current public query reviewed 2026-10-01; product/strength/device-specific reference, biosimilar and interchangeable records.",
+      "url": "https://purplebooksearch.fda.gov/index.cfm?event=simplesearch&proper=adalimumab&proprietary=Humira",
+      "checked": "2026-10-01",
+      "version": "Current public query reviewed 2026-10-01; product/strength/device-specific reference, biosimilar and interchangeable records.",
+      "access_method": "Public official guidance/regulatory website read directly on 2026-10-01; no paywalled access claimed."
+    },
+    {
+      "id": "fda",
+      "title": "Biosimilars and interchangeable biosimilars · Nine things to know",
+      "publisher": "U.S. Food and Drug Administration",
+      "note": "Current public FDA regulatory explanation; pharmacy substitution depends on product designation and state law.",
+      "url": "https://www.fda.gov/drugs/things-know-about/9-things-know-about-biosimilars-and-interchangeable-biosimilars",
+      "checked": "2026-10-01",
+      "version": "Current public FDA regulatory explanation; pharmacy substitution depends on product designation and state law.",
+      "access_method": "Public official guidance/regulatory website read directly on 2026-10-01; no paywalled access claimed."
+    }
+  ],
+  "assertion_to_source": [
+    {
+      "section_id": "indications",
+      "card_title": "Approved indications and ages",
+      "assertions": [
+        "Humira treats adult moderately/severely active rheumatoid arthritis, adult active psoriatic arthritis and ankylosing spondylitis, adult moderate/severe chronic plaque psoriasis when systemic therapy/phototherapy is appropriate and other systemic therapies are less appropriate, and noninfectious intermediate/posterior/panuveitis from age 2. It also treats polyarticular JIA from age 2, moderate/severe Crohn’s disease from age 6, ulcerative colitis from age 5, and hidradenitis suppurativa (HS) from age 12. Ulcerative-colitis effectiveness after loss of response or intolerance to TNF blockers is not established."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "1.1–1.9",
+            "8.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "indications",
+      "card_title": "Biosimilar and approval status",
+      "assertions": [
+        "Humira is the reference biologic. FDA’s current Purple Book distinguishes adalimumab biosimilars from designated interchangeable products by product and presentation; a shared core name does not establish identical approved indications, concentrations or devices. Pharmacy substitution for an interchangeable product is subject to state law. This profile supplies Humira regimens only; verify the full prescribed biosimilar label and current record before switching."
+      ],
+      "support": [
+        {
+          "source_id": "purple",
+          "sections": [
+            "Adalimumab family / reference, biosimilar and interchangeable records"
+          ]
+        },
+        {
+          "source_id": "fda",
+          "sections": [
+            "Prescribing and pharmacy substitution"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Adult rheumatology, psoriasis and uveitis",
+      "assertions": [
+        "RA/PsA/AS: 40 mg every other week. In RA without concomitant methotrexate, selected patients may benefit from 40 mg weekly or 80 mg every other week. Adult plaque psoriasis or uveitis: 80 mg initially, then 40 mg every other week beginning 1 week later. Do not transfer the RA escalation option to every indication."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.2",
+            "2.6"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Adult Crohn’s disease, colitis and HS",
+      "assertions": [
+        "Crohn’s disease or ulcerative colitis: 160 mg on day 1 (in one day or split over two consecutive days), 80 mg on day 15, then 40 mg every other week from day 29. Discontinue adult UC treatment without clinical remission by week 8 (day 57). Adult HS uses the same 160/80-mg loading schedule, then 40 mg weekly or 80 mg every other week from day 29."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.4",
+            "2.5",
+            "2.7"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Pediatric JIA and uveitis",
+      "assertions": [
+        "From age 2, every-other-week dosing is weight-based: 10–<15 kg, 10 mg; 15–<30 kg, 20 mg; ≥30 kg, 40 mg. These uses were not studied below age 2 or below 10 kg. Select a presentation that delivers the full prescribed dose; do not split a single-dose pen or syringe."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.3",
+            "2.8"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Pediatric gastrointestinal regimens",
+      "assertions": [
+        "Use the disease-specific loading and maintenance schedules below; UC includes an additional day-8 dose and higher maintenance exposure than Crohn’s disease. No dose below these weight bands is inferred. Continue the pediatric UC regimen in a well-controlled patient who turns 18, as directed by the label.",
+        "Crohn’s, age ≥6; 17–<40 kg | Day 1: 80 mg; day 15: 40 mg | 20 mg every other week",
+        "Crohn’s, age ≥6; ≥40 kg | Day 1: 160 mg; day 15: 80 mg | 40 mg every other week",
+        "UC, age ≥5; 20–<40 kg | Day 1: 80 mg; day 8: 40 mg; day 15: 40 mg | 40 mg every other week OR 20 mg weekly",
+        "UC, age ≥5; ≥40 kg | Day 1: 160 mg; day 8: 80 mg; day 15: 80 mg | 80 mg every other week OR 40 mg weekly"
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.4",
+            "2.5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Adolescent HS regimen",
+      "assertions": [
+        "From age 12 and ≥30 kg: 30–<60 kg receives 80 mg on day 1, then 40 mg every other week beginning day 8. At ≥60 kg, use 160 mg on day 1, 80 mg on day 15, then 40 mg weekly or 80 mg every other week from day 29. Where a 160-mg day-1 dose is specified, it may be split over two consecutive days. Do not extrapolate to children under 12 or under 30 kg."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.7"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Injection technique and missed dose",
+      "assertions": [
+        "Train the patient/caregiver and supervise the first injection. Let the capped device reach room temperature for 15–30 minutes; do not actively heat it. Inspect the clear colorless solution and do not use discolored or particulate product. Inject the full device into a separate thigh/abdominal site, rotating sites and avoiding tender, bruised, red or hard skin. For a missed dose, give it as soon as possible, then resume the regular schedule. Discard unused portions and used devices safely."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.8",
+            "17",
+            "Instructions for Use"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Warnings and precautions",
+      "assertions": [
+        "Do not initiate during an active infection, including localized infection; discontinue for serious infection or sepsis and promptly investigate new infection. Test for latent TB before and periodically during therapy, treat latent infection before starting, and monitor even with negative initial tests. Assess endemic fungal exposure and recurrent infection. Evaluate HBV risk before treatment; monitor carriers during and for months afterward and stop/treat reactivation. Review prior malignancy and inspect for nonmelanoma skin cancer. Serious allergy requires immediate withdrawal and treatment. New demyelination, significant cytopenia, lupus-like illness or autoimmune hepatitis may require discontinuation; worsening heart failure requires close assessment."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.1",
+            "5.1–5.11"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Contraindications",
+      "assertions": [
+        "The current Humira label lists no formal contraindications. This does not permit use during active infection or disregard serious hypersensitivity, live-vaccine avoidance and other warnings; those restrictions appear in warnings/interactions rather than a formal contraindication list."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "4",
+            "5.1",
+            "5.3",
+            "5.10",
+            "7.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Boxed warning · Serious infections and malignancy",
+      "assertions": [
+        "The box warns of infections leading to hospitalization or death, including tuberculosis, invasive fungal infection, sepsis and opportunistic infection. It also warns of lymphoma and other sometimes-fatal malignancies in children/adolescents and hepatosplenic T-cell lymphoma, often in adolescent/young adult males with IBD and prior/concurrent azathioprine or 6-mercaptopurine. Causation by TNF blockade alone versus combination immunosuppression is uncertain; explicitly review that combination’s risks."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Boxed warning",
+            "5.1",
+            "5.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Adverse reactions and overdose",
+      "assertions": [
+        "Common trial effects include injection-site reactions, infections such as upper respiratory infection/sinusitis, headache and rash. Serious effects are described above; postmarketing reports include severe skin reactions and hepatic injury, without reliable frequency estimates. Antidrug antibodies can affect exposure or response. Excess dosing warrants monitoring and immediate symptomatic treatment with poison-center/toxicology consultation as appropriate; high doses administered in trials do not establish a safe overdose threshold."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "6.1–6.3",
+            "10",
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Immunosuppressants and vaccines",
+      "assertions": [
+        "Do not routinely combine with other biologic DMARDs or other TNF blockers; anakinra/abatacept combinations increase serious infection without added RA benefit and are not recommended. Prior rituximab followed by TNF blockade also showed increased infection risk. Methotrexate reduces adalimumab clearance but label data do not require adjustment of either drug solely for that interaction. Thiopurine combinations need malignancy-risk review. Avoid live vaccines during treatment; bring pediatric immunizations up to date beforehand if possible."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "5.2",
+            "5.7",
+            "5.10",
+            "5.11",
+            "7.1–7.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "CYP substrate monitoring",
+      "assertions": [
+        "Suppressing inflammatory cytokines may normalize CYP enzyme formation and change exposure to narrow-therapeutic-index substrates. When starting or stopping Humira, monitor warfarin effect or concentrations of medicines such as cyclosporine/theophylline and adjust individually. This is not a fixed CYP inhibitor dose-reduction rule."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "7.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pregnancy and lactation",
+      "assertions": [
+        "Available pregnancy studies do not reliably establish an association with major birth defects; disease activity itself can worsen pregnancy outcomes. Placental transfer increases late in pregnancy and may affect the exposed infant’s immune response. Coordinate infant live-vaccine decisions with the pediatric team; the label does not supply a universal waiting interval. Limited milk reports suggest low infant systemic exposure, with no reported adverse infant or milk-production effects, but local gastrointestinal effects remain unknown. Balance maternal need and breastfeeding benefits."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "8.1",
+            "8.2",
+            "5.10",
+            "8.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Children and older adults",
+      "assertions": [
+        "Use only the indication/age/weight regimens above. Pediatric PsA, AS and plaque-psoriasis safety/effectiveness are not established in this U.S. label. In older adults, serious infection and malignancy were more frequent; assess benefits/risks and monitor closely rather than applying an automatic age-based dose change."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "8.4",
+            "8.5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Renal and hepatic impairment",
+      "assertions": [
+        "The label provides no pharmacokinetic data in renal or hepatic impairment and no numeric adjustment algorithm. Individualize clinical assessment and concomitant-drug management; lack of a required label adjustment is not evidence that every severe-impairment population has been studied. Monitor HBV, autoimmune hepatitis and other hepatic complications when relevant."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "12.3 / Specific populations",
+            "5.4",
+            "5.9",
+            "6.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Mechanism",
+      "assertions": [
+        "Adalimumab binds TNF-alpha and blocks its interaction with p55/p75 receptors, modifying inflammatory pathways. It does not neutralize TNF-beta. TNF blockade explains both therapeutic benefit and impaired host defense; it is not an antimicrobial treatment."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "11",
+            "12.1",
+            "5.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Disposition and immunogenicity",
+      "assertions": [
+        "The mean terminal half-life is approximately 2 weeks (range 10–20 days). Single-dose subcutaneous bioavailability is about 64%. Methotrexate and antidrug antibodies can alter clearance; assay-dependent antibody rates should not be used to rank different adalimumab products. Label IV pharmacokinetic studies do not make Humira approved for IV administration."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "12.3",
+            "6.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Monitoring",
+      "assertions": [
+        "Assess TB before and periodically during treatment and infection symptoms during/after exposure; evaluate HBV risk and monitor carriers. Review skin cancer, heart failure, neurologic symptoms, cytopenia symptoms and liver/autoimmune findings. Arrange indication-specific response follow-up, including the adult UC week-8 remission decision. The label gives no universal monthly CBC/LFT interval; select testing according to clinical risks and concomitant therapy."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.1",
+            "2.5",
+            "5",
+            "8.5",
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Patient counseling",
+      "assertions": [
+        "Report fever, persistent cough, weight loss, new infection, bruising/bleeding, neurologic change, swelling or breathlessness promptly. Seek immediate care for serious allergy. Discuss vaccines and pregnancy exposure with the clinical team. Read the Medication Guide and the exact device instructions, record scheduled doses, and dispose of used pens/syringes in an appropriate sharps container. Confirm brand/suffix, strength, concentration and device after a biosimilar switch."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "17",
+            "Medication Guide",
+            "Instructions for Use"
+          ]
+        },
+        {
+          "source_id": "fda",
+          "sections": [
+            "Product naming / prescribing and substitution"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Representative products",
+      "assertions": [
+        "Humira 40 mg/0.4 mL two-pen carton is NDC 0074-0554-02; its black needle cover is not made with natural rubber latex. The 40 mg/0.8 mL two-pen carton is NDC 0074-4339-02 and its needle cover may contain natural rubber latex. The higher-concentration 40/0.4 and 80/0.8 products are citrate-free in this label, while 40/0.8 contains citrate. Biosimilar devices/excipients must be checked separately."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "11",
+            "16"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Dosage forms and strengths",
+      "assertions": [
+        "Current Humira pens: 40 mg/0.8 mL, 40 mg/0.4 mL and 80 mg/0.8 mL. Current prefilled syringes: those three strengths plus 20 mg/0.2 mL and 10 mg/0.1 mL. These are single-dose subcutaneous devices, with indication-specific starter packs. Older 20/0.4 and 10/0.2 presentations and biosimilar vials/pens are not included in the selected current Humira forms list."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "3",
+            "16"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Storage and handling",
+      "assertions": [
+        "Refrigerate at 2–8°C in the original carton protected from light. Do not freeze or use a previously frozen device, even after thawing. If needed, Humira may be kept at up to 25°C for up to 14 days protected from light; record first removal and discard if unused within that period. Avoid extreme heat/cold and do not extend this interval by assuming re-refrigeration restarts it. A biosimilar’s room-temperature allowance may differ."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "16",
+            "2.8",
+            "Instructions for Use"
+          ]
+        }
+      ]
+    }
+  ],
+  "material_errors": [],
+  "gaps": [],
+  "limitations": [
+    "Individual biosimilar indication sets, pediatric approvals, device instructions, excipients, storage allowances and labeled regimens are excluded from Humira-specific claims; verify each full current product label and Purple Book presentation before use or substitution.",
+    "No renal/hepatic PK data, universal lab-monitoring interval, in-utero infant live-vaccine waiting interval or unlabeled dose escalation is invented.",
+    "Current Humira forms list is used; older 20 mg/0.4 mL and 10 mg/0.2 mL presentations are not silently carried over."
+  ],
+  "regulatory_identity": [
+    {
+      "source_id": "label",
+      "spl_set_id": "608d4f0d-b19f-46d3-749a-7159aa5f933d",
+      "marketing_categories": [
+        "BLA",
+        "OTC Monograph Drug",
+        "BLA",
+        "BLA",
+        "OTC Monograph Drug",
+        "BLA",
+        "BLA",
+        "OTC Monograph Drug",
+        "BLA",
+        "BLA",
+        "OTC Monograph Drug",
+        "BLA",
+        "BLA",
+        "OTC Monograph Drug",
+        "BLA",
+        "BLA",
+        "BLA",
+        "OTC Monograph Drug",
+        "BLA",
+        "BLA",
+        "OTC Monograph Drug",
+        "BLA",
+        "BLA",
+        "OTC Monograph Drug",
+        "BLA",
+        "BLA",
+        "BLA",
+        "OTC Monograph Drug",
+        "BLA",
+        "BLA",
+        "OTC Monograph Drug",
+        "BLA",
+        "BLA",
+        "OTC Monograph Drug",
+        "BLA"
+      ],
+      "application_identifiers": [
+        "BLA125057",
+        "M003"
+      ],
+      "interpretation": "Humira adalimumab component BLA125057; kit XML also includes OTC alcohol prep components with monograph M003. Those component codes do not describe adalimumab approval status.",
+      "drug_marketing_category": "BLA",
+      "drug_application": "BLA125057"
+    }
+  ],
+  "verification": {
+    "method": "Full downloaded primary product labels reviewed for all profile assertions; official FDA biosimilarity records and AHA guideline recommendations directly reviewed.",
+    "schema_check": "validateMonograph returned [] on 2026-10-01; eight sections, four safety cards, three product cards, three hero tuples and citations valid.",
+    "unresolved_material_errors": [],
+    "scoped_diff_check": "Passed git diff --check for four owned deliverables."
+  },
+  "reconciliations": [
+    "Formal Humira contraindications section says None; active infection and serious hypersensitivity restrictions preserved under warnings.",
+    "Pediatric UC day-8 loading and higher maintenance regimen distinguished from Crohn dosing; age and minimum labeled weight bands preserved.",
+    "Current high-concentration and low-concentration Humira device/excipient/latex distinctions preserved; older pediatric volumes excluded.",
+    "All dose claims scoped to current Humira label; no biosimilar indication/device/storage equivalence assumed."
+  ]
+}
