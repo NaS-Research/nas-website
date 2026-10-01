@@ -215,29 +215,41 @@
         {
           "slug": "fluid-requirements",
           "status": "verified",
-          "evidence": "parenteral-nutrition-calculations-review.json"
+          "evidence": "parenteral-nutrition-calculations-review.json",
+          "wholeLessonVerified": true,
+          "completionEvidence": "parenteral-nutrition-calculations-completion-review.json"
         },
         {
           "slug": "calculation-foundations",
-          "status": "reviewing"
+          "status": "verified",
+          "wholeLessonVerified": true,
+          "completionEvidence": "parenteral-nutrition-calculations-completion-review.json",
+          "evidence": "parenteral-nutrition-calculations-completion-review.json"
         },
         {
           "slug": "caloric-needs",
           "status": "verified",
-          "evidence": "parenteral-nutrition-energy-nitrogen-review.json"
+          "evidence": "parenteral-nutrition-energy-nitrogen-review.json",
+          "wholeLessonVerified": true,
+          "completionEvidence": "parenteral-nutrition-calculations-completion-review.json"
         },
         {
           "slug": "protein-energy-targets",
-          "status": "reviewing"
+          "status": "verified",
+          "wholeLessonVerified": true,
+          "completionEvidence": "parenteral-nutrition-calculations-completion-review.json",
+          "evidence": "parenteral-nutrition-calculations-completion-review.json"
         },
         {
           "slug": "nitrogen-intake-ratios",
           "status": "verified",
-          "evidence": "parenteral-nutrition-energy-nitrogen-review.json"
+          "evidence": "parenteral-nutrition-energy-nitrogen-review.json",
+          "wholeLessonVerified": true,
+          "completionEvidence": "parenteral-nutrition-calculations-completion-review.json"
         },
         {
           "slug": "dextrose-gir",
-          "status": "reviewing",
+          "status": "verified",
           "verifiedAddedSections": [
             "Allocate a stated nonprotein calorie goal",
             "Keep the two source delivery limits distinct",
@@ -246,22 +258,26 @@
             "Use the stated substrate energy value"
           ],
           "latestScopedEvidence": "parenteral-nutrition-delivery-review.json",
-          "wholeLessonVerified": false
+          "wholeLessonVerified": true,
+          "completionEvidence": "parenteral-nutrition-calculations-completion-review.json",
+          "evidence": "parenteral-nutrition-calculations-completion-review.json"
         },
         {
           "slug": "lipid-energy-ledger",
-          "status": "reviewing",
+          "status": "verified",
           "verifiedAddedSections": [
             "Distinguish source emulsion energy from food fat",
             "Calculate a weekly average without changing the schedule",
             "Subtract against the explicit calorie convention"
           ],
           "latestScopedEvidence": "parenteral-nutrition-delivery-review.json",
-          "wholeLessonVerified": false
+          "wholeLessonVerified": true,
+          "completionEvidence": "parenteral-nutrition-calculations-completion-review.json",
+          "evidence": "parenteral-nutrition-calculations-completion-review.json"
         },
         {
           "slug": "stock-solutions-additives",
-          "status": "reviewing",
+          "status": "verified",
           "verifiedAddedSections": [
             "Carry amino acid grams across source strengths",
             "Account for sodium supplied with acetate",
@@ -271,11 +287,13 @@
             "Match calcium and mass-based additive units"
           ],
           "latestScopedEvidence": "parenteral-nutrition-delivery-review.json",
-          "wholeLessonVerified": false
+          "wholeLessonVerified": true,
+          "completionEvidence": "parenteral-nutrition-calculations-completion-review.json",
+          "evidence": "parenteral-nutrition-calculations-completion-review.json"
         },
         {
           "slug": "rate-final-audit",
-          "status": "reviewing",
+          "status": "verified",
           "verifiedAddedSections": [
             "Read both percentages and the delivered volume",
             "Convert a calorie requirement into final solution volume",
@@ -283,15 +301,18 @@
             "Reconcile delivery and quantity sufficient to final volume"
           ],
           "latestScopedEvidence": "parenteral-nutrition-delivery-review.json",
-          "wholeLessonVerified": false
+          "wholeLessonVerified": true,
+          "completionEvidence": "parenteral-nutrition-calculations-completion-review.json",
+          "evidence": "parenteral-nutrition-calculations-completion-review.json"
         }
       ],
       "questions": 172,
-      "status": "reviewing",
+      "status": "verified",
       "evidence": [
         "parenteral-nutrition-calculations-review.json",
         "parenteral-nutrition-energy-nitrogen-review.json",
-        "parenteral-nutrition-delivery-review.json"
+        "parenteral-nutrition-delivery-review.json",
+        "parenteral-nutrition-calculations-completion-review.json"
       ],
       "latestScopedReview": {
         "date": "2026-09-30",
@@ -323,7 +344,16 @@
           "wholeModuleVerified": false
         }
       ],
-      "verificationNotes": "Fluid, caloric-needs and nitrogen-intake lessons plus 18 added dextrose/lipid/additive/order calculation sections are source/item/build/rendered verified. Whole module remains reviewing for complete retained teaching, question and historical source reconciliation. This unit adds 61 independent calculations without recounting prior source exercises."
+      "verificationNotes": "Complete nine-lesson PN calculation module source/item/arithmetic/build/rendered verified, including all 172 bank items and five derived cumulative items. Forty current bank objects revised; 132 unchanged; IDs/keys/anchors preserved. Related clinical modules and chapter/checklist closure remain open.",
+      "wholeModuleVerified": true,
+      "teachingSections": 64,
+      "figures": 9,
+      "wholeModuleReview": {
+        "date": "2026-10-01",
+        "status": "verified",
+        "evidence": "parenteral-nutrition-calculations-completion-review.json",
+        "allLessonsQuestionsChecksFiguresAndCumulativeItemsVerified": true
+      }
     },
     {
       "slug": "pediatric-parenteral-nutrition",

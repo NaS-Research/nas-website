@@ -41,8 +41,8 @@
   },
   "thisPass": {
     "guide": "Existing preparation guide expanded at use-quick-references",
-    "questionCoverage": "Six added guide checks, four standalone cumulative questions, 27 embedded checks and 188 new module-bank items; 12 PN prompts clarified and four lithium items repaired. Existing PN module additionally expanded with three checks and 72 original bank items (16 fluid, 26 energy/nitrogen, 30 delivery/additive/order); one retained rounding prompt clarified.",
-    "validation": "Seven new calculation modules and scoped additions in the existing PN module source/item/build/rendered verified. 575 independent original/retained checks in total, plus 81 separate source-example checks. Whole PN module remains reviewing.",
+    "questionCoverage": "Six added guide checks, four standalone cumulative questions, 27 embedded checks and 188 new module-bank items; earlier 12 PN concentration prompts clarified and four lithium items repaired. Existing PN module expanded with three checks and 72 original items (16 fluid, 26 energy/nitrogen, 30 delivery/additive/order), then fully reconciled at 172 items with 40 retained/current bank objects revised and all IDs, keys and anchors preserved.",
+    "validation": "Seven new calculation modules and the complete existing PN calculation module source/item/build/rendered verified. Running totals: 591 distinct original/retained checks and 98 separate source-example checks; 65 current reverifications not counted again.",
     "newModules": [
       "pharmacy-unit-conversions",
       "pharmacy-concentrations-specific-gravity",
@@ -70,7 +70,10 @@
       ],
       "allTextAndVisualRead": true,
       "status": "reviewing",
-      "note": "Whole chapter read and all 54 exercises recalculated; clinical module source reconciliation incomplete."
+      "note": "Whole Chapter 11 read and 54 source exercises recalculated; complete PN calculation module verified. Clinical chapter coverage remains open.",
+      "verifiedModules": [
+        "parenteral-nutrition-calculations"
+      ]
     },
     "completedEntries": 14,
     "correctedEntries": 0,
@@ -84,10 +87,10 @@
     "dependencyChapter": 11,
     "dependencyPrintedPage": 150,
     "dependencyPdfPage": 158,
-    "sectionAudit": "Fluid, energy and nitrogen lessons plus 18 added delivery/additive/order sections verified; full retained PN content remains reviewing",
-    "nextAction": "Complete retained content and question reconciliation in the existing PN calculation module. Start with body-size/weight dependencies at Chapter 12 printed 169-171 / PDF 177-179 and propofol at Chapter 53 printed 716 / PDF 724; finish all retained lesson, figure, check, bank and cumulative items. Resolve historical Mifflin/indirect-calorimetry source boundaries and other clinical claims. Whole PN calculation module, related PN/EN/fluid modules and checklist entry 15 remain reviewing; completed checklist count stays 14.",
-    "nextDependencyPrintedPage": 169,
-    "nextDependencyPdfPage": 177
+    "sectionAudit": "Complete PN calculation module verified; begin adult clinical PN module",
+    "nextAction": "Audit the entire existing adult clinical parenteral-nutrition module and its bank, checks, figures and cumulative items against Chapter 11, starting at printed 149 / PDF 157. The PN calculation module is fully verified; clinical PN, enteral nutrition, pediatric PN, fluid/electrolyte and calcium interpretation remain open. Keep checklist entry 15 reviewing and completed checklist count 14 until all corresponding coverage is verified.",
+    "nextDependencyPrintedPage": 149,
+    "nextDependencyPdfPage": 157
   },
   "otherChapter1Work": {
     "quickReferenceIntroduction": "verified",
@@ -122,9 +125,9 @@
     "Remaining Chapter 1 checklist entries and all reference tables require source review.",
     "Historical externally sourced modules must retain their discrepancy records; no blanket book-only completion claim.",
     "Pending unrelated clinical edits are preserved and excluded from this pass.",
-    "Audit-branch cumulative bank has 14 pre-existing duplicate prompt groups (83 repeated instances); new items are unique. Resolve in the associated chapter/module reviews.",
+    "Historical audit-branch snapshot recorded 14 pre-existing duplicate prompt groups (83 instances). This PN completion unit resolves two PN duplicate prompts; all current PN prompts/IDs are globally unique. Remaining modules require their own duplicate review; the older count is not a fresh global count.",
     "Global structural audit observed 34 pre-existing typographic violations in unchanged glaucoma, allergic-rhinitis and common-ear modules; retain for their chronological reviews. Focused PN audit passed.",
-    "PN fluid, energy and nitrogen lessons plus 18 added dextrose/lipid/additive/order calculation sections verified and pushed. Whole retained module and corresponding clinical modules remain reviewing; keep checklist count 14. Mifflin/calorimetry provenance remains unresolved despite no extracted-text search hits. Book weight formulas and exact propofol energy value located for the next reconciliation."
+    "Complete PN calculation module verified; broader adult/pediatric PN, EN, clinical fluid and calcium interpretation remain open. Keep checklist entry 15 reviewing and count 14. Chapter 12 and Chapter 53 reads are scoped dependencies, not chapter closure."
   ],
   "progressSnapshot": {
     "date": "2026-10-01",
@@ -134,16 +137,16 @@
       "chapterCountPercent": 7.32
     },
     "workingModuleLedger": {
-      "markedVerified": 49,
+      "markedVerified": 50,
       "total": 235,
-      "moduleCountPercent": 20.85
+      "moduleCountPercent": 21.28
     },
     "committedModuleLedger": {
-      "markedVerified": 54,
+      "markedVerified": 55,
       "total": 232,
-      "moduleCountPercent": 23.28
+      "moduleCountPercent": 23.71
     },
-    "interpretation": "Count-based snapshots include preserved historical flags, not an independent recheck of every earlier module/chapter. Chapter sizes vary. Working and committed ledgers differ because older unfinished corrections and three additional modules remain unstaged. Seven newly verified modules and fourteen checklist entries add partial chapter coverage, not new full-chapter closures."
+    "interpretation": "Count-based ledger snapshots include preserved historical flags, not independent reverification of earlier units. Working and committed ledgers differ because older unfinished corrections and three additional modules remain unstaged. Seven newly verified modules plus the existing PN calculation module and fourteen checklist entries add partial chapter coverage; no new whole chapter closure."
   },
   "lastVerifiedLogicalUnit": "parenteral-nutrition-calculations: 18 added delivery/additive/order sections",
   "lastVerifiedSections": [
@@ -151,5 +154,6 @@
     "lipid-energy-ledger: three added sections",
     "stock-solutions-additives: six added sections",
     "rate-final-audit: four added sections"
-  ]
+  ],
+  "pendingLogicalUnit": "parenteral-nutrition-calculations: complete module"
 }

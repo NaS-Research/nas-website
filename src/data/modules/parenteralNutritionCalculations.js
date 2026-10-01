@@ -73,20 +73,61 @@ export const parenteralNutritionCalculationsModule = {
   }
 },
     {
-      slug: "calculation-foundations",
-      title: "Units, Weights, and Requirement Estimates",
-      summary: "Reliable parenteral nutrition calculations begin with clean units, measured anthropometrics, and an explicit decision about which body weight belongs in each equation.",
-      concepts: ["Metric conversion and dimensional analysis", "BMI and interpretation", "Ideal and adjusted body weight conventions", "Energy and fluid estimation"],
-      visual: "pn-calc-foundations",
-      application: "Write the units at every step. Record actual weight, height, BMI, weight history, and the weight used for each calculation. A correct number without a defensible weight choice is not a complete answer.",
-      lesson: [
-        { heading: "Build a conversion line", body: "Convert pounds to kilograms by dividing by 2.2 and convert inches to centimeters by multiplying by 2.54. For adult BMI, divide kilograms by meters squared. Preserve extra precision during intermediate steps and round only the final clinical result according to local policy." },
-        { heading: "Use BMI as a screening signal", body: "Adult BMI categories provide a standardized description of weight relative to height. BMI is not a direct measure of muscle, fluid status, or nutrition reserve. Edema, ascites, amputation, pregnancy, and rapid weight change can make the raw value misleading." },
-        { heading: "Treat ideal and adjusted weights as conventions", body: "A common classroom convention estimates ideal body weight as 50 kg for a man or 45.5 kg for a woman at 5 feet, then adds 2.3 kg for each inch above 5 feet. A commonly taught adjusted body weight is ideal weight plus 0.4 times the difference between actual and ideal weight. These are estimation tools, not universal physiologic truths. The selected weight depends on the equation, population, clinical state, and local protocol." },
-        { heading: "Estimate, then test the estimate", body: "Indirect calorimetry is preferred when an accurate measurement is available and clinically appropriate. Otherwise, weight-based targets or a predictive equation can create a starting estimate. The Mifflin St Jeor equation estimates resting energy expenditure from kilograms, centimeters, age, and sex. Illness factors and total expenditure should not be added mechanically without a validated reason." },
+      "slug": "calculation-foundations",
+      "title": "Units, Weights, and Requirement Estimates",
+      "summary": "Reliable parenteral nutrition calculations begin with clean units, measured anthropometrics, and an explicit decision about which body weight belongs in each equation.",
+      "concepts": [
+        "Metric conversion and dimensional analysis",
+        "BMI and interpretation",
+        "Ideal and adjusted body weight conventions",
+        "Energy and fluid estimation"
       ],
-      keyPoints: ["Keep units visible through every step.", "BMI is a screening measure, not a nutrition diagnosis.", "State which weight an equation uses and why.", "Predictive equations are estimates that require clinical follow-up."],
-      check: { question: "A patient weighs 176 lb. What is the approximate weight in kilograms?", choices: ["80 kg", "64 kg", "97 kg", "118 kg"], answer: 0, rationale: "176 divided by 2.2 equals 80 kg.", reviewHref: "#calculation-foundations" },
+      "visual": "pn-calc-foundations",
+      "application": "Write the units at every step. Record actual weight, height, BMI, weight history, and the weight used for each calculation. A correct number without a defensible weight choice is not a complete answer.",
+      "lesson": [
+        {
+          "heading": "Build a conversion line",
+          "body": "Use the book conversions of pounds / 2.2 for kilograms and inches x 2.54 for centimeters. For adult BMI, use kg / height in meters squared. Its alternate formula is pounds / inches squared x 703. In an original example, 176 lb is 80 kg; at 1.80 m, BMI is 24.7 kg/m² to the nearest tenth. Follow the exercise rounding instruction."
+        },
+        {
+          "heading": "Read BMI together with its limitations",
+          "body": "The book lists adult BMI below 18.5 as underweight, 18.5 to 24.9 as normal weight, 25 to 29.9 as overweight and at least 30 as obese. It notes that BMI can overestimate body fat in muscular adults and underestimate it in frail older adults or others who have lost muscle. Height and weight do not directly identify which tissue contributed to the result."
+        },
+        {
+          "heading": "Use the stated waist comparison",
+          "body": "The book uses waist circumference alongside BMI because abdominal fat distribution changes disease risk. Its high-risk comparison is a waist greater than 35 inches for women or greater than 40 inches for men. An original arithmetic comparison of 36 inches against the supplied female threshold is above it; exactly 35 inches does not satisfy a strict greater-than instruction. This comparison does not replace the rest of the assessment."
+        },
+        {
+          "heading": "Calculate ideal and adjusted weight without changing their scope",
+          "body": "The source ideal-weight equations start at 50 kg for a man or 45.5 kg for a woman at 5 feet, then add 2.3 kg for each inch above 5 feet. The book notes alternate methods for children and adults below 5 feet; do not extrapolate this above-height equation to them. Its adjusted-weight equation is IBW + 0.4(TBW - IBW). For an original woman at 5 feet 6 inches with actual weight 90 kg, IBW is 59.3 kg and the stated adjusted formula gives 71.58 kg. Neither result automatically replaces the weight requested for a different calculation."
+        },
+        {
+          "heading": "Keep nutrition and drug-weight instructions distinct",
+          "body": "Chapter 12 selects weights for drug calculations with drug-specific exceptions. Chapter 11 uses total body weight, meaning scale weight, for most PN calculations unless the exercise specifies another basis. Some protein exercises explicitly request IBW. Record the requested basis; do not import a drug-dosing weight rule into a PN exercise or substitute adjusted weight solely because its formula is available."
+        },
+        {
+          "heading": "Name the book energy method",
+          "body": "The PN energy method taught here is the book Harris-Benedict BEE equation, followed by supplied activity and stress factors when TEE is requested. The separate basal-and-total-energy lesson gives both source coefficient sets. BEE and TEE are different endpoints; using an available equation does not justify adding factors to a question asking only for BEE."
+        }
+      ],
+      "keyPoints": [
+        "BMI uses height squared and the requested units.",
+        "BMI has source-described limits when muscle mass differs.",
+        "Use the requested weight; do not apply a drug-weight rule automatically to PN.",
+        "Use the book BEE/TEE method and exercise rounding instructions."
+      ],
+      "check": {
+        "question": "A patient weighs 176 lb. What is the approximate weight in kilograms?",
+        "choices": [
+          "80 kg",
+          "64 kg",
+          "97 kg",
+          "118 kg"
+        ],
+        "answer": 0,
+        "rationale": "176 divided by 2.2 equals 80 kg.",
+        "reviewHref": "#calculation-foundations"
+      }
     },
     {
       "slug": "caloric-needs",
@@ -146,22 +187,61 @@ export const parenteralNutritionCalculationsModule = {
       }
     },
     {
-      slug: "protein-energy-targets",
-      title: "Protein and Total Energy Targets",
-      summary: "Protein is prescribed in grams per kilogram, while the energy plan reconciles amino acid, dextrose, lipid, and every calorie delivered outside the PN bag.",
-      concepts: ["Protein target and calculation weight", "Amino acid energy", "Total versus nonprotein energy", "Energy reconciliation"],
-      visual: "pn-calc-protein-energy",
-      application: "Show protein grams per day, the weight and dose used, amino acid calories, total energy target, and the energy remaining for dextrose and lipid. Then compare the result with organ function, losses, metabolic stress, and the care goal.",
-      lesson: [
-        {"heading": "Use the stated protein requirement and weight", "body": "The book gives 0.8 to 1 g/kg/day for a non-stressed ambulatory patient and 1.2 to 2 g/kg/day for hospitalized or malnourished patients. Multiply the selected requirement by the weight explicitly requested by the exercise. Some source orders use ideal body weight. An original order specifying 55 kg IBW and 1.6 g/kg IBW/day gives 88 g/day; do not replace that specified basis with a different weight."},
-        {"heading": "Clarify whether the energy goal includes protein", "body": "The book discusses a protein-sparing approach in which the planned energy goal is assigned to dextrose and lipid, and notes differing conventions for whether amino acid calories are included in the target. State the convention rather than silently changing it. If an original exercise explicitly calls 2,000 kcal/day the NPC goal and adds 100 g amino acids at 4 kcal/g, NPC remains 2,000 and total delivered energy is 2,400. If its 2,000 goal explicitly includes those amino acid calories, the remaining NPC allowance is 1,600. These are different stated calculation plans."},
-        { heading: "Calculate protein directly", body: "Multiply the selected calculation weight by the prescribed grams per kilogram per day. Amino acids conventionally contribute 4 kcal per gram, but their primary purpose is protein delivery. Do not reduce or increase the protein target merely to make the calorie arithmetic look tidy." },
-        { heading: "Separate total and nonprotein calories", body: "Total PN energy includes amino acid, dextrose, and lipid energy. Nonprotein calories include dextrose and lipid only. The nonprotein calorie to nitrogen ratio is calculated by dividing nonprotein calories by grams of nitrogen, where nitrogen grams are commonly estimated as amino acid grams divided by 6.25." },
-        { heading: "Count energy outside the bag", body: "Propofol, clevidipine, intravenous dextrose, enteral formula, oral intake, and separately infused lipid can materially change total energy. Propofol in a 10 percent lipid emulsion contributes about 1.1 kcal per mL. The medication rate and actual delivered volume should be used rather than an assumed maximum." },
-        { heading: "Keep the target provisional", body: "A calculated target is the beginning of monitoring. Weight trend, nitrogen losses when measured, wound healing, strength, glycemia, triglycerides, carbon dioxide production, fluid status, organ function, and actual delivery determine whether the prescription remains appropriate." },
+      "slug": "protein-energy-targets",
+      "title": "Protein and Total Energy Targets",
+      "summary": "Protein is prescribed in grams per kilogram, while the energy plan reconciles amino acid, dextrose, lipid, and every calorie delivered outside the PN bag.",
+      "concepts": [
+        "Protein target and calculation weight",
+        "Amino acid energy",
+        "Total versus nonprotein energy",
+        "Energy reconciliation"
       ],
-      keyPoints: ["Protein grams equal calculation weight times the selected dose.", "Amino acids provide 4 kcal per gram.", "Nonprotein calories exclude amino acid energy.", "Medication and enteral calories belong in the same energy ledger."],
-      check: { question: "A 70 kg patient is prescribed 1.4 g/kg/day of amino acids. How many grams are required?", choices: ["98 g", "70 g", "50 g", "140 g"], answer: 0, rationale: "70 kg multiplied by 1.4 g/kg/day equals 98 g/day.", reviewHref: "#protein-energy-targets" },
+      "visual": "pn-calc-protein-energy",
+      "application": "Show protein grams per day, the weight and dose used, amino acid calories, total energy target, and the energy remaining for dextrose and lipid. Then compare the result with organ function, losses, metabolic stress, and the care goal.",
+      "lesson": [
+        {
+          "heading": "Use the stated protein requirement and weight",
+          "body": "The book gives 0.8 to 1 g/kg/day for a non-stressed ambulatory patient and 1.2 to 2 g/kg/day for hospitalized or malnourished patients. Multiply the selected requirement by the weight explicitly requested by the exercise. Some source orders use ideal body weight. An original order specifying 55 kg IBW and 1.6 g/kg IBW/day gives 88 g/day; do not replace that specified basis with a different weight."
+        },
+        {
+          "heading": "Clarify whether the energy goal includes protein",
+          "body": "The book discusses a protein-sparing approach in which the planned energy goal is assigned to dextrose and lipid, and notes differing conventions for whether amino acid calories are included in the target. State the convention rather than silently changing it. If an original exercise explicitly calls 2,000 kcal/day the NPC goal and adds 100 g amino acids at 4 kcal/g, NPC remains 2,000 and total delivered energy is 2,400. If its 2,000 goal explicitly includes those amino acid calories, the remaining NPC allowance is 1,600. These are different stated calculation plans."
+        },
+        {
+          "heading": "Calculate protein directly",
+          "body": "Multiply the selected calculation weight by the prescribed grams per kilogram per day. Amino acids conventionally contribute 4 kcal per gram, but their primary purpose is protein delivery. Do not reduce or increase the protein target merely to make the calorie arithmetic look tidy."
+        },
+        {
+          "heading": "Separate total and nonprotein calories",
+          "body": "Total PN energy includes amino acid, dextrose, and lipid energy. Nonprotein calories include dextrose and lipid only. The nonprotein calorie to nitrogen ratio is calculated by dividing nonprotein calories by grams of nitrogen, where nitrogen grams are commonly estimated as amino acid grams divided by 6.25."
+        },
+        {
+          "heading": "Count energy outside the bag",
+          "body": "The book directs counting calories from lipid-containing propofol and clevidipine alongside PN. Its critical-care propofol table gives 1.1 kcal/mL. Use the stated or actually delivered medication volume. Reconcile separately infused lipid, intravenous dextrose and stated oral/enteral intake with the same daily energy basis rather than counting only the PN container."
+        },
+        {
+          "heading": "Keep the target provisional",
+          "body": "The book requires careful PN monitoring, including glucose intolerance and refeeding risk, particularly phosphate shifts. It tailors fluid to accumulation concerns and electrolytes to patient needs; lipid frequency may be reduced when triglycerides are high. A calculation meets the supplied arithmetic plan, while clinical review must still consider these source-described issues."
+        }
+      ],
+      "keyPoints": [
+        "Protein grams equal calculation weight times the selected dose.",
+        "Amino acids provide 4 kcal per gram.",
+        "Nonprotein calories exclude amino acid energy.",
+        "Medication and enteral calories belong in the same energy ledger."
+      ],
+      "check": {
+        "question": "A 70 kg patient is prescribed 1.4 g/kg/day of amino acids. How many grams are required?",
+        "choices": [
+          "98 g",
+          "70 g",
+          "50 g",
+          "140 g"
+        ],
+        "answer": 0,
+        "rationale": "70 kg multiplied by 1.4 g/kg/day equals 98 g/day.",
+        "reviewHref": "#protein-energy-targets"
+      }
     },
     {
       "slug": "nitrogen-intake-ratios",
@@ -221,94 +301,280 @@ export const parenteralNutritionCalculationsModule = {
       }
     },
     {
-      slug: "dextrose-gir",
-      title: "Dextrose and Glucose Infusion Rate",
-      summary: "Dextrose calculations must agree in grams, calories, stock volume, infusion time, and milligrams per kilogram per minute.",
-      concepts: ["Dextrose energy", "Glucose infusion rate", "Continuous and cyclic delivery", "Glycemic and respiratory tolerance"],
-      visual: "pn-calc-dextrose",
-      application: "Calculate dextrose grams, multiply by 3.4 kcal per gram, then calculate GIR as grams times 1000 divided by kilograms and total infusion minutes. Recalculate whenever weight, dose, or infusion duration changes.",
-      lesson: [
-        {"heading": "Allocate a stated nonprotein calorie goal", "body": "The book describes a usual NPC distribution of 70 to 85% from carbohydrate and 15 to 30% from lipid. Use the exercise-selected proportion within its stated plan. In an original exercise assigning 80% of 1,530 NPC to PN dextrose, dextrose supplies 1,224 kcal, or 360 g at 3.4 kcal/g. A 50% w/v stock supplies this amount in 720 mL. These are calorie, mass and volume outputs from one allocation; do not add them together."},
-        {"heading": "Keep the two source delivery limits distinct", "body": "The book gives a conservative dextrose figure of 4 mg/kg/min and notes an alternate figure of 7 g/kg/day. They are not equivalent units for the same limit: 4 x 1,440/1,000 = 5.76 g/kg/day, while 7 x 1,000/1,440 is about 4.86 mg/kg/min. An arithmetic exercise must identify which limit it supplies. Passing that arithmetic comparison does not establish a patient-specific maximum or approve the prescription."},
-        {"heading": "Preserve dextrose grams when changing stock", "body": "The book source-volume exercises preserve the ordered dextrose amount when a different concentration is used. An original order of 420 mL of 50% w/v dextrose contains 210 g. At 70% w/v, the same amount requires 300 mL and still supplies 714 kcal. This changes source volume; it does not by itself establish final bag volume, which must be reconciled separately."},
-        {"heading": "Calculate a mixed concentration from total grams", "body": "For an original arithmetic mixture of 300 mL D20% and 200 mL D5%, both explicitly w/v, the contributions are 60 and 10 g. Seventy grams in a stated additive total volume of 500 mL gives 14% w/v. Average the contributed mass over total volume; do not simply average 20 and 5 without considering their volumes."},
-        {"heading": "Use the stated substrate energy value", "body": "The source distinguishes food/EN carbohydrate at 4 kcal/g, PN dextrose monohydrate at 3.4 kcal/g and glycerol at 4.3 kcal/g. Its glycerol discussion is a different substrate calculation. For a stated original glycerol exercise, 50 g at 4.3 kcal/g supplies 215 kcal; do not reuse the dextrose conversion for it."},
-        { heading: "Convert grams to energy", body: "Intravenous dextrose provides 3.4 kcal per gram. This differs from the conventional 4 kcal per gram used for oral carbohydrate because hydrated intravenous dextrose has a different energy value." },
-        { heading: "Calculate glucose infusion rate", body: "GIR in mg/kg/min equals dextrose grams per day times 1000, divided by calculation weight in kilograms, divided by infusion time in minutes. The formula is a delivery-rate calculation, not a substitute for glucose monitoring or a patient-specific maximum." },
-        { heading: "Recalculate when cycling", body: "Compressing the same grams into fewer hours increases GIR. A bag containing 240 g over 24 hours produces half the GIR of the same 240 g infused over 12 hours. Start and stop transitions, insulin exposure, and glycemic monitoring should be planned with the new hourly delivery." },
-        { heading: "Interpret the number clinically", body: "Hyperglycemia, increasing insulin need, hepatic fat accumulation, rising carbon dioxide production, and fluid limitations can signal poor tolerance or overfeeding. Review infection, corticosteroids, diabetes, dialysis solutions, medications, and all dextrose sources before changing only one component." },
+      "slug": "dextrose-gir",
+      "title": "Dextrose and Glucose Infusion Rate",
+      "summary": "Dextrose calculations must agree in grams, calories, stock volume, infusion time, and milligrams per kilogram per minute.",
+      "concepts": [
+        "Dextrose energy",
+        "Glucose infusion rate",
+        "Time and delivery rate",
+        "Source limits and glucose intolerance"
       ],
-      keyPoints: ["PN dextrose provides 3.4 kcal per gram.", "GIR uses milligrams, kilograms, and minutes.", "A shorter infusion raises GIR when grams stay constant.", "The calculated GIR must be paired with clinical tolerance."],
-      check: { question: "A 70 kg patient receives 252 g of dextrose over 24 hours. What is the GIR?", choices: ["2.5 mg/kg/min", "1.25 mg/kg/min", "3.4 mg/kg/min", "6 mg/kg/min"], answer: 0, rationale: "252,000 mg divided by 70 kg and 1,440 minutes equals 2.5 mg/kg/min.", reviewHref: "#dextrose-gir" },
+      "visual": "pn-calc-dextrose",
+      "application": "Calculate dextrose grams, multiply by 3.4 kcal per gram, then calculate GIR as grams times 1000 divided by kilograms and total infusion minutes. Recalculate whenever weight, dose, or infusion duration changes.",
+      "lesson": [
+        {
+          "heading": "Allocate a stated nonprotein calorie goal",
+          "body": "The book describes a usual NPC distribution of 70 to 85% from carbohydrate and 15 to 30% from lipid. Use the exercise-selected proportion within its stated plan. In an original exercise assigning 80% of 1,530 NPC to PN dextrose, dextrose supplies 1,224 kcal, or 360 g at 3.4 kcal/g. A 50% w/v stock supplies this amount in 720 mL. These are calorie, mass and volume outputs from one allocation; do not add them together."
+        },
+        {
+          "heading": "Keep the two source delivery limits distinct",
+          "body": "The book gives a conservative dextrose figure of 4 mg/kg/min and notes an alternate figure of 7 g/kg/day. They are not equivalent units for the same limit: 4 x 1,440/1,000 = 5.76 g/kg/day, while 7 x 1,000/1,440 is about 4.86 mg/kg/min. An arithmetic exercise must identify which limit it supplies. Passing that arithmetic comparison does not establish a patient-specific maximum or approve the prescription."
+        },
+        {
+          "heading": "Preserve dextrose grams when changing stock",
+          "body": "The book source-volume exercises preserve the ordered dextrose amount when a different concentration is used. An original order of 420 mL of 50% w/v dextrose contains 210 g. At 70% w/v, the same amount requires 300 mL and still supplies 714 kcal. This changes source volume; it does not by itself establish final bag volume, which must be reconciled separately."
+        },
+        {
+          "heading": "Calculate a mixed concentration from total grams",
+          "body": "For an original arithmetic mixture of 300 mL D20% and 200 mL D5%, both explicitly w/v, the contributions are 60 and 10 g. Seventy grams in a stated additive total volume of 500 mL gives 14% w/v. Average the contributed mass over total volume; do not simply average 20 and 5 without considering their volumes."
+        },
+        {
+          "heading": "Use the stated substrate energy value",
+          "body": "The source distinguishes food/EN carbohydrate at 4 kcal/g, PN dextrose monohydrate at 3.4 kcal/g and glycerol at 4.3 kcal/g. Its glycerol discussion is a different substrate calculation. For a stated original glycerol exercise, 50 g at 4.3 kcal/g supplies 215 kcal; do not reuse the dextrose conversion for it."
+        },
+        {
+          "heading": "Convert grams to energy",
+          "body": "Intravenous dextrose provides 3.4 kcal per gram. This differs from the conventional 4 kcal per gram used for oral carbohydrate because hydrated intravenous dextrose has a different energy value."
+        },
+        {
+          "heading": "Calculate glucose infusion rate",
+          "body": "GIR in mg/kg/min equals dextrose grams per day times 1000, divided by calculation weight in kilograms, divided by infusion time in minutes. The formula is a delivery-rate calculation, not a substitute for glucose monitoring or a patient-specific maximum."
+        },
+        {
+          "heading": "Recalculate when cycling",
+          "body": "Compressing the same grams into fewer hours increases the calculated delivery rate. A stated 240 g over 24 hours produces half the GIR of 240 g over 12 hours at the same weight. The source discusses PN being titrated on and off to facilitate glucose regulation. This rate comparison does not prescribe a start/stop protocol or insulin adjustment."
+        },
+        {
+          "heading": "Interpret the number clinically",
+          "body": "The book treats the stated dextrose figures as conservative limits, requires assessment of glucose intolerance and discusses reducing dextrose load or increasing insulin when hyperglycemia is present. A rate calculation describes delivery; it does not measure blood glucose or specify an insulin order. Compare only against the limit explicitly supplied by the exercise."
+        }
+      ],
+      "keyPoints": [
+        "PN dextrose provides 3.4 kcal per gram.",
+        "GIR uses milligrams, kilograms, and minutes.",
+        "A shorter infusion raises GIR when grams stay constant.",
+        "The calculated GIR must be paired with clinical tolerance."
+      ],
+      "check": {
+        "question": "A 70 kg patient receives 252 g of dextrose over 24 hours. What is the GIR?",
+        "choices": [
+          "2.5 mg/kg/min",
+          "1.25 mg/kg/min",
+          "3.4 mg/kg/min",
+          "6 mg/kg/min"
+        ],
+        "answer": 0,
+        "rationale": "252,000 mg divided by 70 kg and 1,440 minutes equals 2.5 mg/kg/min.",
+        "reviewHref": "#dextrose-gir"
+      }
     },
     {
-      slug: "lipid-energy-ledger",
-      title: "Lipid and the Complete Energy Ledger",
-      summary: "Lipid dosing is product specific and must be reconciled with triglyceride tolerance, essential fatty acid needs, and every non-PN lipid source.",
-      concepts: ["Grams per kilogram", "Concentration and volume", "Lipid energy", "Propofol and other non-PN calories"],
-      visual: "pn-calc-lipid",
-      application: "Calculate the ordered lipid grams, divide by the product concentration in grams per milliliter, verify product-specific calories and maximum rate, then subtract all non-PN calories from the daily energy plan.",
-      lesson: [
-        {"heading": "Distinguish source emulsion energy from food fat", "body": "The book assigns 9 kcal/g to food/EN fat, but uses kcal/mL for injectable emulsions because other emulsion components also contribute energy. Its calculation values are 1.1 kcal/mL for 10%, 2 for 20% and 3 for 30%. An original source-method exercise using 190 mL of 30% emulsion gives 570 kcal. These source examples do not override the exact product labeling already required in this lesson."},
-        {"heading": "Calculate a weekly average without changing the schedule", "body": "When a lipid dose is supplied once weekly, divide its weekly calories by seven to express average daily calories. An original exercise gives 280 mL of 10% emulsion at 1.1 kcal/mL: 308 kcal per dose and 44 kcal/day averaged over seven days. If the stated schedule instead gives that same dose three times weekly, average energy is 308 x 3/7 = 132 kcal/day. An average is not a new instruction to infuse the weekly dose every day."},
-        {"heading": "Subtract against the explicit calorie convention", "body": "If an original exercise explicitly assigns an NPC goal of 2,100 kcal/day and 1,530 kcal/day to dextrose, 570 kcal/day remains for lipid. Separately stated amino acid calories are not subtracted from an NPC goal. At a supplied 2 kcal/mL, 570 kcal requires 285 mL. For a goal explicitly including protein, the subtraction would use that different stated total-energy basis."},
-        { heading: "Move between dose, grams, and volume", body: "Multiply kilograms by the ordered grams per kilogram to obtain grams. A 20 percent lipid emulsion contains 0.2 g/mL, so grams divided by 0.2 g/mL gives milliliters. Verify the exact product because composition, age-based dosing, rate limits, allergy information, and energy density are labeling specific." },
-        { heading: "Use the labeled energy value", body: "Many 20 percent adult lipid emulsions provide about 2 kcal per mL, but the exact product label governs. A 250 mL container at 2 kcal per mL contributes 500 kcal. Do not apply the 9 kcal per gram food-fat value directly to an intravenous emulsion without accounting for its formulation." },
-        { heading: "Audit the lipid already present", body: "Propofol and clevidipine use lipid vehicles and can contribute substantial daily energy. Lipid may also be delivered separately from a two-in-one PN formulation. Add all sources before deciding whether the PN lipid dose and total energy remain appropriate." },
-        { heading: "Pair arithmetic with safety", body: "The correct volume can still be clinically inappropriate if the rate exceeds current labeling, triglycerides are elevated, lipid clearance is impaired, allergy risks are present, or the combined energy plan overfeeds the patient. Product labeling and contemporary adult lipid guidance remain part of the calculation." },
+      "slug": "lipid-energy-ledger",
+      "title": "Lipid and the Complete Energy Ledger",
+      "summary": "Calculate lipid mass, volume and energy using the stated product, schedule and medication lipid contributions.",
+      "concepts": [
+        "Grams per kilogram",
+        "Concentration and volume",
+        "Lipid energy",
+        "Propofol and other non-PN calories"
       ],
-      keyPoints: ["A 20 percent lipid emulsion contains 0.2 g/mL.", "Use the product label for calories and rate.", "Count medication lipid in the daily total.", "Correct arithmetic does not prove clinical tolerance."],
-      check: { question: "A 75 kg adult is prescribed 1 g/kg of a 20 percent lipid emulsion. What volume supplies 75 g?", choices: ["375 mL", "150 mL", "250 mL", "750 mL"], answer: 0, rationale: "Seventy-five grams divided by 0.2 g/mL equals 375 mL.", reviewHref: "#lipid-energy-ledger" },
+      "visual": "pn-calc-lipid",
+      "application": "Calculate ordered grams and source volume with explicit concentration units, then reconcile lipid calories and the supplied schedule with medication lipid calories.",
+      "lesson": [
+        {
+          "heading": "Distinguish source emulsion energy from food fat",
+          "body": "The book assigns 9 kcal/g to food/EN fat, but uses kcal/mL for injectable emulsions because other emulsion components also contribute energy. Its calculation values are 1.1 kcal/mL for 10%, 2 for 20% and 3 for 30%. An original source-method exercise using 190 mL of 30% emulsion gives 570 kcal. These source examples do not override the exact product labeling already required in this lesson."
+        },
+        {
+          "heading": "Calculate a weekly average without changing the schedule",
+          "body": "When a lipid dose is supplied once weekly, divide its weekly calories by seven to express average daily calories. An original exercise gives 280 mL of 10% emulsion at 1.1 kcal/mL: 308 kcal per dose and 44 kcal/day averaged over seven days. If the stated schedule instead gives that same dose three times weekly, average energy is 308 x 3/7 = 132 kcal/day. An average is not a new instruction to infuse the weekly dose every day."
+        },
+        {
+          "heading": "Subtract against the explicit calorie convention",
+          "body": "If an original exercise explicitly assigns an NPC goal of 2,100 kcal/day and 1,530 kcal/day to dextrose, 570 kcal/day remains for lipid. Separately stated amino acid calories are not subtracted from an NPC goal. At a supplied 2 kcal/mL, 570 kcal requires 285 mL. For a goal explicitly including protein, the subtraction would use that different stated total-energy basis."
+        },
+        {
+          "heading": "Move between dose, grams, and volume",
+          "body": "For a stated arithmetic order, multiply kilograms by ordered g/kg to obtain grams. A concentration explicitly expressed as 20% w/v contains 0.2 g/mL, so grams / 0.2 gives source milliliters. The book distinguishes traditional soybean-oil emulsion from the four-oil Smoflipid formulation and warns they are not interchangeable; identify the supplied product and units."
+        },
+        {
+          "heading": "Use the labeled energy value",
+          "body": "Many 20 percent adult lipid emulsions provide about 2 kcal per mL, but the exact product label governs. A 250 mL container at 2 kcal per mL contributes 500 kcal. Do not apply the 9 kcal per gram food-fat value directly to an intravenous emulsion without accounting for its formulation."
+        },
+        {
+          "heading": "Audit the lipid already present",
+          "body": "Propofol and clevidipine use lipid vehicles and can contribute substantial daily energy. Lipid may also be delivered separately from a two-in-one PN formulation. Add all sources before deciding whether the PN lipid dose and total energy remain appropriate."
+        },
+        {
+          "heading": "Pair arithmetic with safety",
+          "body": "The book notes that lipid administration may be reduced to three times weekly or once weekly when triglycerides are high. Count the prescribed schedule and calories from propofol or clevidipine before interpreting the daily average. A correct stock-volume result alone does not determine whether that product and schedule fit the patient."
+        }
+      ],
+      "keyPoints": [
+        "For a stated 20% w/v emulsion, concentration is 0.2 g/mL.",
+        "Use the supplied product energy value.",
+        "Count medication lipid in the daily total.",
+        "Correct arithmetic does not determine the patient-specific schedule."
+      ],
+      "check": {
+        "question": "An arithmetic exercise prescribes 1 g/kg for a 75 kg adult using a lipid emulsion explicitly labeled 20% w/v. What volume supplies 75 g?",
+        "choices": [
+          "375 mL",
+          "150 mL",
+          "250 mL",
+          "750 mL"
+        ],
+        "answer": 0,
+        "rationale": "Seventy-five grams divided by 0.2 g/mL equals 375 mL.",
+        "reviewHref": "#lipid-energy-ledger"
+      }
     },
     {
-      slug: "stock-solutions-additives",
-      title: "Stock Solutions, Additives, and Final Volume",
-      summary: "Every ordered nutrient must be translated into the volume of a specific source product, and every source volume must fit inside the final container.",
-      concepts: ["Percent strength", "Grams per milliliter", "mEq and mmol conversion", "Final volume and concentration"],
-      visual: "pn-calc-stock",
-      application: "For each source, write ordered amount divided by stock concentration. Add source volumes, sterile water, overfill requirements, and any separate infusions. Then verify final concentrations and compounding-system limits.",
-      lesson: [
-        {"heading": "Carry amino acid grams across source strengths", "body": "The book amino acid stock examples include 5%, 8.5%, 10% and 15%; their protein energy is 4 kcal/g. In an original w/v exercise, 600 mL of 10% supplies 60 g. The same protein amount requires 400 mL of 15% and supplies the same 240 kcal. Final volume still requires reconciliation after the stock-volume change."},
-        {"heading": "Account for sodium supplied with acetate", "body": "An original exercise requests 90 mEq sodium and 50 mEq acetate. Its sodium acetate stock supplies 2 mEq of each ion per mL; sodium chloride supplies 4 mEq sodium/mL. First provide acetate using 25 mL sodium acetate, which also supplies 50 mEq sodium. The remaining 40 mEq sodium requires 10 mL sodium chloride. Recheck both totals rather than ordering 90 mEq sodium chloride in addition."},
-        {"heading": "Account for potassium supplied with phosphate", "body": "An original exercise requests 24 mmol phosphate and 60 mEq potassium. It supplies potassium phosphate containing 3 mmol phosphate and 4.4 mEq potassium per mL, plus potassium chloride at 2 mEq potassium/mL. Eight mL phosphate stock supplies 24 mmol phosphate and 35.2 mEq potassium. The remaining 24.8 mEq potassium requires 12.4 mL potassium chloride. If the first stock already exceeds the potassium target, revise the stated plan instead of assigning negative potassium chloride volume. Use the supplied stock values; a phosphate formulation has no universal counterion factor."},
-        {"heading": "Separate source screening arithmetic from compatibility proof", "body": "The book includes a combined calcium/phosphate screening calculation, using matching units, an explicitly supplied phosphate conversion and final liters. For an original exercise supplying 15 mmol phosphate, 2 mEq/mmol, 8 mEq calcium and final volume 1 L, the combined number is 38 mEq/L. The source discusses a 45 mEq/L screen, but a number below that screen alone does not demonstrate compatibility. Retain the validated formulation, product, process and solubility checks already required for the actual bag."},
-        {"heading": "Keep corrected calcium as an exercise estimate", "body": "For the book corrected-calcium arithmetic, calculated mg/dL = reported calcium + 0.8(4 - albumin), with calcium in mg/dL and albumin in g/dL. A supplied original example of calcium 7.9 and albumin 2.5 yields 9.1 mg/dL. This is a calculated estimate, not a measured ionized calcium result or an automatic replacement order. The full clinical interpretation remains part of the corresponding calcium/fluid module review."},
-        {"heading": "Match calcium and mass-based additive units", "body": "An original order for 9.3 mEq calcium from a supplied calcium gluconate stock of 0.465 mEq/mL requires 20 mL. For a separate stated sodium chloride exercise with MW 58.5 and valence 1, 35 mEq requires 2,047.5 mg, or 2.0475 g. A 23.4% w/v stock supplies that in 8.75 mL, agreeing with a supplied 4 mEq/mL concentration. Compound grams, ionic mEq and milliliters are different quantities."},
-        { heading: "Translate percent into concentration", body: "A percent weight per volume solution contains that many grams in 100 mL. Dextrose 70 percent contains 0.7 g/mL, amino acids 10 percent contain 0.1 g/mL, and a 20 percent lipid emulsion contains 0.2 g/mL. Ordered grams divided by grams per milliliter gives the required source volume." },
-        { heading: "Respect the labeled unit", body: "Electrolyte products may be labeled in mEq/mL, mmol/mL, mEq per vial, or a combination. Ordered amount divided by concentration gives volume only when the units match. Phosphate products can contribute both phosphate and sodium or potassium, so both ions must be included in the final electrolyte total." },
-        { heading: "Reconcile the container", body: "Add the volume of amino acid, dextrose, lipid when admixed, electrolytes, vitamins, trace elements, medications when permitted, and sterile water. The result must fit the ordered final volume while satisfying validated concentration, compatibility, and container limits." },
-        { heading: "Use independent checks", body: "The calculation worksheet, electronic order, compounding record, final label, pump settings, and administration schedule should tell the same story. A discrepancy in weight, units, concentration, final volume, or infusion time is resolved before preparation or administration." },
+      "slug": "stock-solutions-additives",
+      "title": "Stock Solutions, Additives, and Final Volume",
+      "summary": "Every ordered nutrient must be translated into the volume of a specific source product, and every source volume must fit inside the final container.",
+      "concepts": [
+        "Percent strength",
+        "Grams per milliliter",
+        "mEq and mmol conversion",
+        "Final volume and concentration"
       ],
-      keyPoints: ["Percent weight per volume means grams per 100 mL.", "Match units before dividing.", "Count every ion contributed by a salt.", "Source volumes plus water must equal the final volume."],
-      check: { question: "How much dextrose 70 percent is required to provide 350 g?", choices: ["500 mL", "245 mL", "350 mL", "700 mL"], answer: 0, rationale: "Dextrose 70 percent contains 0.7 g/mL. Three hundred fifty grams divided by 0.7 g/mL equals 500 mL.", reviewHref: "#stock-solutions-additives" },
+      "visual": "pn-calc-stock",
+      "application": "For each source, write ordered amount / stock concentration with matching units. Count each stated ingredient volume and water toward the final container; count separately infused solutions in the overall fluid plan.",
+      "lesson": [
+        {
+          "heading": "Carry amino acid grams across source strengths",
+          "body": "The book amino acid stock examples include 5%, 8.5%, 10% and 15%; their protein energy is 4 kcal/g. In an original w/v exercise, 600 mL of 10% supplies 60 g. The same protein amount requires 400 mL of 15% and supplies the same 240 kcal. Final volume still requires reconciliation after the stock-volume change."
+        },
+        {
+          "heading": "Account for sodium supplied with acetate",
+          "body": "An original exercise requests 90 mEq sodium and 50 mEq acetate. Its sodium acetate stock supplies 2 mEq of each ion per mL; sodium chloride supplies 4 mEq sodium/mL. First provide acetate using 25 mL sodium acetate, which also supplies 50 mEq sodium. The remaining 40 mEq sodium requires 10 mL sodium chloride. Recheck both totals rather than ordering 90 mEq sodium chloride in addition."
+        },
+        {
+          "heading": "Account for potassium supplied with phosphate",
+          "body": "An original exercise requests 24 mmol phosphate and 60 mEq potassium. It supplies potassium phosphate containing 3 mmol phosphate and 4.4 mEq potassium per mL, plus potassium chloride at 2 mEq potassium/mL. Eight mL phosphate stock supplies 24 mmol phosphate and 35.2 mEq potassium. The remaining 24.8 mEq potassium requires 12.4 mL potassium chloride. If the first stock already exceeds the potassium target, revise the stated plan instead of assigning negative potassium chloride volume. Use the supplied stock values; a phosphate formulation has no universal counterion factor."
+        },
+        {
+          "heading": "Separate source screening arithmetic from compatibility proof",
+          "body": "The book includes a combined calcium/phosphate screening calculation, using matching units, an explicitly supplied phosphate conversion and final liters. For an original exercise supplying 15 mmol phosphate, 2 mEq/mmol, 8 mEq calcium and final volume 1 L, the combined number is 38 mEq/L. The source discusses a 45 mEq/L screen, but a number below that screen alone does not demonstrate compatibility. Retain the validated formulation, product, process and solubility checks already required for the actual bag."
+        },
+        {
+          "heading": "Keep corrected calcium as an exercise estimate",
+          "body": "For the book corrected-calcium arithmetic, calculated mg/dL = reported calcium + 0.8(4 - albumin), with calcium in mg/dL and albumin in g/dL. A supplied original example of calcium 7.9 and albumin 2.5 yields 9.1 mg/dL. This is a calculated estimate, not a measured ionized calcium result or an automatic replacement order. The full clinical interpretation remains part of the corresponding calcium/fluid module review."
+        },
+        {
+          "heading": "Match calcium and mass-based additive units",
+          "body": "An original order for 9.3 mEq calcium from a supplied calcium gluconate stock of 0.465 mEq/mL requires 20 mL. For a separate stated sodium chloride exercise with MW 58.5 and valence 1, 35 mEq requires 2,047.5 mg, or 2.0475 g. A 23.4% w/v stock supplies that in 8.75 mL, agreeing with a supplied 4 mEq/mL concentration. Compound grams, ionic mEq and milliliters are different quantities."
+        },
+        {
+          "heading": "Translate percent into concentration",
+          "body": "A percent weight per volume solution contains that many grams in 100 mL. Dextrose 70 percent contains 0.7 g/mL, amino acids 10 percent contain 0.1 g/mL, and a 20 percent lipid emulsion contains 0.2 g/mL. Ordered grams divided by grams per milliliter gives the required source volume."
+        },
+        {
+          "heading": "Respect the labeled unit",
+          "body": "Electrolyte products may be labeled in mEq/mL, mmol/mL, mEq per vial, or a combination. Ordered amount divided by concentration gives volume only when the units match. Phosphate products can contribute both phosphate and sodium or potassium, so both ions must be included in the final electrolyte total."
+        },
+        {
+          "heading": "Reconcile the container",
+          "body": "Add the volume of amino acid, dextrose, lipid when admixed, electrolytes, vitamins, trace elements, medications when permitted, and sterile water. The result must fit the ordered final volume while satisfying validated concentration, compatibility, and container limits."
+        },
+        {
+          "heading": "Use independent checks",
+          "body": "Reconstruct the stated order from nutrient amounts, source concentrations, final volume and delivery time. The book exercises require these quantities to agree, and Chapter 12 distinguishes volume added to a diluent from quantity sufficient to a final volume. Resolve a unit or final-volume discrepancy in the exercise before treating the calculated result as its answer."
+        }
+      ],
+      "keyPoints": [
+        "Percent weight per volume means grams per 100 mL.",
+        "Match units before dividing.",
+        "Count every ion contributed by a salt.",
+        "Source volumes plus water must equal the final volume."
+      ],
+      "check": {
+        "question": "How much dextrose 70 percent is required to provide 350 g?",
+        "choices": [
+          "500 mL",
+          "245 mL",
+          "350 mL",
+          "700 mL"
+        ],
+        "answer": 0,
+        "rationale": "Dextrose 70 percent contains 0.7 g/mL. Three hundred fifty grams divided by 0.7 g/mL equals 500 mL.",
+        "reviewHref": "#stock-solutions-additives"
+      }
     },
     {
-      slug: "rate-final-audit",
-      title: "Infusion Rate and Final Order Audit",
-      summary: "The final verification reconstructs the whole order from the patient outward and tests whether the prescription, container, pump, and monitoring plan agree.",
-      concepts: ["mL per hour", "Cyclic schedules", "Daily totals", "Independent order verification"],
-      visual: "pn-calc-audit",
-      application: "Before verification, recalculate at least one independent path from the original order. Confirm patient, dosing weight, daily grams, calories, source volumes, final volume, rate, duration, route, filter, laboratory plan, and changes from the prior order.",
-      lesson: [
-        {"heading": "Read both percentages and the delivered volume", "body": "A source premixed PN form specifies amino acid and dextrose percentages separately, along with rate or volume. In an original exercise, a 5% amino acid/15% dextrose w/v solution at a constant 60 mL/hour for 24 hours delivers 1,440 mL. It supplies 72 g amino acids and 216 g dextrose, or 288 and 734.4 kcal. Total energy including both is 1,022.4 kcal. Count a separately supplied lipid source only if the exercise includes one."},
-        {"heading": "Convert a calorie requirement into final solution volume", "body": "For an original stated 5% amino acid/20% dextrose w/v solution, each mL supplies 0.05 x 4 + 0.20 x 3.4 = 0.88 kcal including protein. A 1,584 kcal requirement on that same basis requires 1,800 mL. State whether protein is included before solving. A percent is grams per 100 mL, not kcal per 100 mL."},
-        {"heading": "Use all calories in a total-energy percentage", "body": "An original daily plan supplies 200 g dextrose, 75 g amino acids and 125 mL lipid at a stated 2 kcal/mL. Energy is 680 + 300 + 250 = 1,230 kcal. Protein represents 300/1,230 x 100, or about 24% when rounded to a whole percent. A total-energy denominator includes protein; an NPC denominator does not."},
-        {"heading": "Reconcile delivery and quantity sufficient to final volume", "body": "The book includes calculations based on delivered volume and an order made quantity sufficient to a final volume. If an original 5%/15% solution actually runs at 50 mL/hour for a stated 18 hours, 900 mL supplies 180 amino acid kcal plus 459 dextrose kcal, totaling 639. Do not assume a full 24-hour delivery. In a separate original bag exercise with final volume 1,200 mL and ingredient volumes 300, 750 and 50 mL, the remaining water allowance is 100 mL. Quantity sufficient to final volume does not mean adding the full final volume as water."},
-        { heading: "Calculate the base rate", body: "For a constant infusion, divide total volume by infusion hours. A 2,160 mL bag over 18 hours has a base average rate of 120 mL/hour. A tapered cyclic schedule requires the ramp volumes to be included, so the plateau rate cannot be calculated by dividing the full volume only by the plateau hours." },
-        { heading: "Reconcile daily and hourly delivery", body: "Daily grams may look unchanged while hourly dextrose, fluid, and electrolyte exposure changes substantially. Calculate the delivery during the actual schedule, including taper periods, interruptions, and any volume left in tubing or discarded according to policy." },
-        { heading: "Use a calculation checksum", body: "Recalculate total calories from the final grams and compare them with the intended target. Recalculate source volumes from the final label and compare them with the final volume. Recalculate GIR from the final dextrose grams and infusion time. These independent paths expose transcription and unit errors." },
-        { heading: "Finish with clinical plausibility", body: "Ask whether the result is plausible for this patient today. Review weight changes, fluid balance, glucose, triglycerides, electrolytes, kidney and liver function, respiratory status, medications, and actual intake. A mathematically balanced bag can still be the wrong treatment." },
+      "slug": "rate-final-audit",
+      "title": "Infusion Rate and Final Order Audit",
+      "summary": "The final verification reconstructs the whole order from the patient outward and tests whether the prescription, container, pump, and monitoring plan agree.",
+      "concepts": [
+        "mL per hour",
+        "Stated rate segments",
+        "Actual daily delivery",
+        "Independent calculation checks"
       ],
-      keyPoints: ["Average rate equals volume divided by hours only for a constant infusion.", "Cycling changes hourly exposure.", "Use more than one calculation path as a checksum.", "Clinical plausibility is the final verification step."],
-      check: { question: "A 2,400 mL PN bag infuses at a constant rate over 20 hours. What is the rate?", choices: ["120 mL/hour", "100 mL/hour", "144 mL/hour", "200 mL/hour"], answer: 0, rationale: "2,400 mL divided by 20 hours equals 120 mL/hour.", reviewHref: "#rate-final-audit" },
+      "visual": "pn-calc-audit",
+      "application": "Reconstruct the stated weight, daily grams, calorie basis, source volumes, final volume, rate and duration. Keep arithmetic verification separate from the book clinical monitoring and compounding requirements.",
+      "lesson": [
+        {
+          "heading": "Read both percentages and the delivered volume",
+          "body": "A source premixed PN form specifies amino acid and dextrose percentages separately, along with rate or volume. In an original exercise, a 5% amino acid/15% dextrose w/v solution at a constant 60 mL/hour for 24 hours delivers 1,440 mL. It supplies 72 g amino acids and 216 g dextrose, or 288 and 734.4 kcal. Total energy including both is 1,022.4 kcal. Count a separately supplied lipid source only if the exercise includes one."
+        },
+        {
+          "heading": "Convert a calorie requirement into final solution volume",
+          "body": "For an original stated 5% amino acid/20% dextrose w/v solution, each mL supplies 0.05 x 4 + 0.20 x 3.4 = 0.88 kcal including protein. A 1,584 kcal requirement on that same basis requires 1,800 mL. State whether protein is included before solving. A percent is grams per 100 mL, not kcal per 100 mL."
+        },
+        {
+          "heading": "Use all calories in a total-energy percentage",
+          "body": "An original daily plan supplies 200 g dextrose, 75 g amino acids and 125 mL lipid at a stated 2 kcal/mL. Energy is 680 + 300 + 250 = 1,230 kcal. Protein represents 300/1,230 x 100, or about 24% when rounded to a whole percent. A total-energy denominator includes protein; an NPC denominator does not."
+        },
+        {
+          "heading": "Reconcile delivery and quantity sufficient to final volume",
+          "body": "The book includes calculations based on delivered volume and an order made quantity sufficient to a final volume. If an original 5%/15% solution actually runs at 50 mL/hour for a stated 18 hours, 900 mL supplies 180 amino acid kcal plus 459 dextrose kcal, totaling 639. Do not assume a full 24-hour delivery. In a separate original bag exercise with final volume 1,200 mL and ingredient volumes 300, 750 and 50 mL, the remaining water allowance is 100 mL. Quantity sufficient to final volume does not mean adding the full final volume as water."
+        },
+        {
+          "heading": "Calculate the base rate",
+          "body": "For a constant infusion, divide total volume by infusion hours. An original 2,160 mL over 18 hours gives 120 mL/hour. If an arithmetic schedule explicitly supplies different rate segments, count each segment volume. For a stated total of 1,600 mL with 200 mL delivered in start/end segments and a 10-hour plateau, the plateau rate is (1,600 - 200) / 10 = 140 mL/hour. This supplied-segment exercise does not set a clinical taper protocol."
+        },
+        {
+          "heading": "Reconcile daily and hourly delivery",
+          "body": "Use the actual stated duration and volume to calculate delivered grams and calories. If the schedule has specified segments, sum their volumes; if some ordered volume was not delivered, do not count it as intake. The book actual-delivery example uses the amount received after an enteral spill rather than the full prescribed container."
+        },
+        {
+          "heading": "Use a calculation checksum",
+          "body": "Recalculate total calories from the final grams and compare them with the intended target. Recalculate source volumes from the final label and compare them with the final volume. Recalculate GIR from the final dextrose grams and infusion time. These independent paths expose transcription and unit errors."
+        },
+        {
+          "heading": "Finish with clinical plausibility",
+          "body": "The book requires monitoring of glucose intolerance and refeeding risk, patient-tailored fluid and electrolytes, and counting medication lipid calories. Check that the arithmetic reflects the stated weight, calorie convention, ingredients and actual delivery. Agreement among numbers does not remove these source-described clinical considerations."
+        }
+      ],
+      "keyPoints": [
+        "Volume / hours gives the constant rate.",
+        "Count every supplied rate segment and actual delivered volume.",
+        "Use more than one calculation path as a checksum.",
+        "The book clinical considerations still require review."
+      ],
+      "check": {
+        "question": "A 2,400 mL PN bag infuses at a constant rate over 20 hours. What is the rate?",
+        "choices": [
+          "120 mL/hour",
+          "100 mL/hour",
+          "144 mL/hour",
+          "200 mL/hour"
+        ],
+        "answer": 0,
+        "rationale": "2,400 mL divided by 20 hours equals 120 mL/hour.",
+        "reviewHref": "#rate-final-audit"
+      }
     },
   ],
+  referenceHeading: "Source for this calculation module.",
+  referenceIntroduction: "Calculation methods and teaching use the RxPrep 2023 course book. Examples use original values; source estimates and exercise inputs do not establish patient-specific orders.",
   references: [
-    { label: "RxPrep 2023 Course Book", locator: "Chapter 11, fluid needs, BEE/TEE, protein and nitrogen calculations, printed pages 150-168 (PDF pages 158-176); original exercises apply the supplied-book calculation methods, with source limitations recorded in the teaching." },
-    { label: "ASPEN. Parenteral Nutrition Clinical Resources and Appropriate Dosing Recommendations", href: "https://nutritioncare.org/clinical-resources/parenteral-nutrition/" },
-    { label: "CDC. Adult BMI Categories and BMI as a Screening Measure", href: "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html" },
-    { label: "Mifflin MD, et al. A New Predictive Equation for Resting Energy Expenditure", href: "https://pubmed.ncbi.nlm.nih.gov/2305711/" },
-    { label: "FDA. SMOFlipid Prescribing Information, 2025", href: "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/207648s013lbl.pdf" },
+    { label: "RxPrep 2023: Nutrition calculations", locator: "Chapter 11, Parenteral and Enteral Nutrition, printed pages 149-168 (PDF pages 157-176); original examples use the book methods with stated units and exercise limits." },
+    { label: "RxPrep 2023: Clinical calculation methods", locator: "Chapter 12, body mass index, weight formulas and flow-rate/final-volume methods, printed pages 169-174 (PDF pages 177-182)." },
+    { label: "RxPrep 2023: Propofol calorie contribution", locator: "Chapter 53, Acute and Critical Care Medicine, propofol table, printed page 716 (PDF page 724): medication-emulsion calorie contribution." },
   ],
   questionBank: parenteralNutritionCalculationsQuestionBank,
 };

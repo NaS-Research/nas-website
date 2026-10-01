@@ -39,7 +39,7 @@ const diagrams = {
     eyebrow: "Lipid ledger",
     title: "Dose, volume, energy, tolerance.",
     steps: [["1", "Dose", "kg × ordered g/kg"], ["2", "Volume", "grams ÷ product g/mL"], ["3", "Energy", "mL × labeled kcal/mL"], ["4", "Audit", "add propofol and other lipid"]],
-    formula: "20% lipid = 0.2 g/mL",
+    formula: "Stated 20% w/v lipid = 0.2 g/mL",
   },
   "pn-calc-stock": {
     eyebrow: "Compounding translation",
@@ -50,7 +50,7 @@ const diagrams = {
   "pn-calc-audit": {
     eyebrow: "Independent verification",
     title: "Rebuild the order before release.",
-    steps: [["A", "Daily totals", "grams, calories, electrolytes"], ["B", "Container", "source volumes and final volume"], ["C", "Pump", "hours, taper, mL/hour, GIR"], ["D", "Patient", "plausibility and monitoring"]],
+    steps: [["A", "Daily totals", "grams, calories, electrolytes"], ["B", "Container", "source volumes and final volume"], ["C", "Pump", "stated hours, mL/hour, GIR"], ["D", "Patient", "plausibility and monitoring"]],
     formula: "Constant rate = total mL ÷ infusion hours",
   },
 };

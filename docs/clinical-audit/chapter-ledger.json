@@ -739,7 +739,11 @@
           "evidence": "parenteral-nutrition-calculations-review.json",
           "verifiedLesson": "parenteral-nutrition-calculations#fluid-requirements",
           "wholeCorrespondingModulesVerified": false,
-          "note": "Fluid lesson/items verified; corresponding entire PN and clinical fluid modules remain open."
+          "note": "Whole PN calculation module verified; corresponding clinical fluid module remains open.",
+          "verifiedModuleEvidence": {
+            "parenteral-nutrition-calculations": "parenteral-nutrition-calculations-completion-review.json"
+          },
+          "wholePNCalculationModuleVerified": true
         },
         {
           "topic": "Caloric needs, BEE/TEE and energy accounting",
@@ -760,7 +764,11 @@
           "verifiedLessons": [
             "parenteral-nutrition-calculations#caloric-needs"
           ],
-          "wholeCorrespondingModuleVerified": false
+          "wholeCorrespondingModuleVerified": true,
+          "verifiedModuleEvidence": {
+            "parenteral-nutrition-calculations": "parenteral-nutrition-calculations-completion-review.json"
+          },
+          "wholePNCalculationModuleVerified": true
         },
         {
           "topic": "Protein, nitrogen intake, NPC:N and amino acids",
@@ -785,7 +793,11 @@
             "Use the stated protein requirement and weight",
             "Clarify whether the energy goal includes protein"
           ],
-          "wholeCorrespondingModuleVerified": false
+          "wholeCorrespondingModuleVerified": true,
+          "verifiedModuleEvidence": {
+            "parenteral-nutrition-calculations": "parenteral-nutrition-calculations-completion-review.json"
+          },
+          "wholePNCalculationModuleVerified": true
         },
         {
           "topic": "Dextrose proportions and stock calculations",
@@ -811,7 +823,11 @@
             "Use the stated substrate energy value"
           ],
           "latestScopedEvidence": "parenteral-nutrition-delivery-review.json",
-          "wholeCorrespondingModulesVerified": false
+          "wholeCorrespondingModulesVerified": true,
+          "verifiedModuleEvidence": {
+            "parenteral-nutrition-calculations": "parenteral-nutrition-calculations-completion-review.json"
+          },
+          "wholePNCalculationModuleVerified": true
         },
         {
           "topic": "Lipid calories, concentrations and weekly average",
@@ -835,7 +851,11 @@
             "Subtract against the explicit calorie convention"
           ],
           "latestScopedEvidence": "parenteral-nutrition-delivery-review.json",
-          "wholeCorrespondingModulesVerified": false
+          "wholeCorrespondingModulesVerified": true,
+          "verifiedModuleEvidence": {
+            "parenteral-nutrition-calculations": "parenteral-nutrition-calculations-completion-review.json"
+          },
+          "wholePNCalculationModuleVerified": true
         },
         {
           "topic": "Electrolytes, dual-ion additives, calcium and compatibility",
@@ -863,7 +883,11 @@
             "Match calcium and mass-based additive units"
           ],
           "latestScopedEvidence": "parenteral-nutrition-delivery-review.json",
-          "wholeCorrespondingModulesVerified": false
+          "wholeCorrespondingModulesVerified": false,
+          "verifiedModuleEvidence": {
+            "parenteral-nutrition-calculations": "parenteral-nutrition-calculations-completion-review.json"
+          },
+          "wholePNCalculationModuleVerified": true
         },
         {
           "topic": "Trace/vitamin/insulin additives and enteral nutrition",
@@ -906,7 +930,11 @@
             "Reconcile delivery and quantity sufficient to final volume"
           ],
           "latestScopedEvidence": "parenteral-nutrition-delivery-review.json",
-          "wholeCorrespondingModulesVerified": false
+          "wholeCorrespondingModulesVerified": true,
+          "verifiedModuleEvidence": {
+            "parenteral-nutrition-calculations": "parenteral-nutrition-calculations-completion-review.json"
+          },
+          "wholePNCalculationModuleVerified": true
         }
       ],
       "moduleSlugs": [
@@ -920,14 +948,19 @@
         "All 20 pages text/tables/figures read and 54 source exercises independently recalculated. This does not establish full clinical module verification.",
         "Existing PN calculation module expanded with source-verified fluid lesson and 16 original questions. Missing/source-unreconciled material remains; checklist count 14.",
         "Energy and nitrogen lessons, two protein target sections and26 original questions verified. Whole module/source reconciliation remains open; checklist count14.",
-        "18 calculation sections in existing dextrose, lipid, additive and order lessons plus 30 original questions verified. All 142 prior bank objects preserved; whole module remains reviewing and checklist count stays 14."
+        "18 calculation sections in existing dextrose, lipid, additive and order lessons plus 30 original questions verified. All 142 prior bank objects preserved; whole module remains reviewing and checklist count stays 14.",
+        "Whole PN calculation module (nine lessons, 64 sections, nine figures/checks, 172 bank and five cumulative items) verified. Clinical PN/EN/pediatric/fluid coverage remains open; chapter and checklist entry 15 not closed."
       ],
       "evidence": [
         "parenteral-nutrition-calculations-review.json",
         "parenteral-nutrition-energy-nitrogen-review.json",
-        "parenteral-nutrition-delivery-review.json"
+        "parenteral-nutrition-delivery-review.json",
+        "parenteral-nutrition-calculations-completion-review.json"
       ],
-      "pdfRangeStatus": "All 20 pages visually verified"
+      "pdfRangeStatus": "All 20 pages visually verified",
+      "verifiedModules": [
+        "parenteral-nutrition-calculations"
+      ]
     },
     {
       "chapter": 12,
@@ -937,12 +970,68 @@
         187
       ],
       "pdfPages": null,
-      "status": "unmapped",
+      "status": "reviewing",
       "subsectionsComplete": false,
-      "subsections": [],
-      "moduleSlugs": [],
-      "findings": [],
-      "evidence": []
+      "subsections": [
+        {
+          "topic": "BMI, waist, ideal/adjusted weight and weight-selection dependency",
+          "printedPages": [
+            169,
+            171
+          ],
+          "pdfPages": [
+            177,
+            179
+          ],
+          "status": "reviewing",
+          "targets": [
+            "parenteral-nutrition-calculations"
+          ],
+          "verifiedDependency": true,
+          "wholeCorrespondingModulesVerified": false,
+          "evidence": "parenteral-nutrition-calculations-completion-review.json",
+          "note": "PN calculation dependency verified; full chapter and other drug/renal-weight module mapping/reconciliation remain open."
+        },
+        {
+          "topic": "Initial flow-rate and final-volume methods dependency",
+          "printedPages": [
+            172,
+            174
+          ],
+          "pdfPages": [
+            180,
+            182
+          ],
+          "status": "reviewing",
+          "targets": [
+            "parenteral-nutrition-calculations"
+          ],
+          "verifiedDependency": true,
+          "wholeCorrespondingModulesVerified": false,
+          "evidence": "parenteral-nutrition-calculations-completion-review.json",
+          "note": "First flow examples and additive/final-volume distinctions read and independently recalculated. Later flow/drop-factor and other chapter material not closed."
+        }
+      ],
+      "moduleSlugs": [
+        "parenteral-nutrition-calculations"
+      ],
+      "findings": [
+        "Six dependency pages read visually and in text; 17 independent source-example checks for exercises 1-15 and intermediate/alternate outputs passed. This establishes PN dependency methods, not contemporary drug regimens or whole Chapter 12 verification."
+      ],
+      "evidence": [
+        "parenteral-nutrition-calculations-completion-review.json"
+      ],
+      "dependencyPagesRead": {
+        "printedPages": [
+          169,
+          174
+        ],
+        "pdfPages": [
+          177,
+          182
+        ],
+        "allTextTablesAndFiguresRead": true
+      }
     },
     {
       "chapter": 13,
@@ -3171,12 +3260,42 @@
         720
       ],
       "pdfPages": null,
-      "status": "unmapped",
+      "status": "reviewing",
       "subsectionsComplete": false,
-      "subsections": [],
-      "moduleSlugs": [],
-      "findings": [],
-      "evidence": []
+      "subsections": [
+        {
+          "topic": "ICU opioid and sedative safety table",
+          "printedPages": [
+            716,
+            716
+          ],
+          "pdfPages": [
+            724,
+            724
+          ],
+          "status": "reviewing",
+          "targets": [
+            "parenteral-nutrition-calculations"
+          ],
+          "evidence": "parenteral-nutrition-calculations-completion-review.json",
+          "note": "Only propofol calorie dependency verified; other table claims and full ICU module remain open.",
+          "scopedCalorieDependency": {
+            "status": "verified",
+            "value": "Propofol 1.1 kcal/mL",
+            "evidence": "parenteral-nutrition-calculations-completion-review.json",
+            "wholeTableVerified": false
+          }
+        }
+      ],
+      "moduleSlugs": [
+        "parenteral-nutrition-calculations"
+      ],
+      "findings": [
+        "Rendered printed 716/PDF 724 confirms propofol 1.1 kcal/mL for PN calculation dependency; this does not verify the sedative table or clinical ICU module."
+      ],
+      "evidence": [
+        "parenteral-nutrition-calculations-completion-review.json"
+      ]
     },
     {
       "chapter": 54,
