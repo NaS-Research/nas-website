@@ -1,0 +1,844 @@
+{
+  "drug": "mycophenolate-mofetil",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Full current CellCept clinical, Medication Guide, IFU and product sections reviewed; focus on labeled transplant use.",
+  "blueprint": {
+    "sections": [
+      [
+        "indications",
+        "Indications"
+      ],
+      [
+        "dosage",
+        "Dosage and administration"
+      ],
+      [
+        "safety",
+        "Safety"
+      ],
+      [
+        "interactions",
+        "Drug interactions"
+      ],
+      [
+        "populations",
+        "Use in specific populations"
+      ],
+      [
+        "pharmacology",
+        "Clinical pharmacology"
+      ],
+      [
+        "practice",
+        "Monitoring and counseling"
+      ],
+      [
+        "product",
+        "Product identification"
+      ]
+    ],
+    "essential_safety": true,
+    "hero_facts": 3,
+    "APAP_modified": false
+  },
+  "sources": [
+    {
+      "id": "pi",
+      "title": "CellCept · Current full prescribing information",
+      "publisher": "Genentech / DailyMed",
+      "note": "PI/Medication Guide July 2026; SPL 51 effective August 5, 2026; published August 10, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=37241e87-4af4-4dc3-a1aa-ea6f20d8dc40"
+    }
+  ],
+  "source_records": [
+    {
+      "id": "pi",
+      "local_snapshot": "/tmp/nas-drug-sources/cellcept.xml",
+      "label_revision": "July2026",
+      "set_id": "37241e87-4af4-4dc3-a1aa-ea6f20d8dc40",
+      "spl_version": "51",
+      "spl_effective_time": "20260805",
+      "dailymed_published_date": "2026-08-10",
+      "sha256": "13d3ed2851e73ec1c712590cad2ab3462ebcd8a50a890f2125d2d7ca2bade29d",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-29-thyroid-metformin/cellcept.xml"
+    }
+  ],
+  "assertion_map": [
+    {
+      "section": "indications",
+      "card": "Labeled uses",
+      "assertions": [
+        "With other immunosuppressants, prevents rejection after allogeneic kidney, heart or liver transplantation in adults and children from three months. This focused label reference does not provide autoimmune-disease or rejection-rescue protocols."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "1;2.1"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Formulation boundary",
+      "assertions": [
+        "Oral mofetil products must not be exchanged unsupervised with delayed-release mycophenolic acid tablets. Absorption differs; salt-name similarity is not a milligram conversion."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.1"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Adult transplant doses",
+      "assertions": [
+        "Give twice daily; every IV dose requires an infusion lasting at least two hours, never a bolus. Use IV temporarily when oral treatment cannot be tolerated, starting within 24 hours after transplant for up to 14 days; switch as soon as feasible. Specialist preparation is required."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.1–2.4"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Adult transplant",
+          "Dose per administration, twice daily"
+        ],
+        "rows": [
+          [
+            "Kidney",
+            "1 g oral or IV"
+          ],
+          [
+            "Heart",
+            "1.5 g oral or IV"
+          ],
+          [
+            "Liver",
+            "1.5 g oral; 1 g IV"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric oral doses",
+      "assertions": [
+        "From three months: kidney 600 mg/m² twice daily, maximum 2 g/day. Heart/liver start 600 mg/m² twice daily; if tolerated, may increase to 900 mg/m² twice daily, maximum 3 g/day. BSA 1.25 to under 1.5 m² permits 750 mg capsules twice daily; BSA ≥ 1.5 m² permits 1 g capsule/tablet twice daily (heart/liver starting doses). No pediatric IV dose is inferred."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.2–2.4;8.4"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Renal and hematologic adjustment",
+      "assertions": [
+        "For severe chronic kidney-graft impairment, GFR < 25 mL/min/1.73 m², avoid more than 1 g twice daily and monitor closely. Delayed kidney-graft function alone needs no adjustment. If ANC falls below 1,300/µL, interrupt/reduce with diagnostic assessment. These boundaries do not establish a universal renal algorithm for heart/liver recipients."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.5;5.4;8.6"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Oral administration",
+      "assertions": [
+        "Prefer an empty stomach; stable recipients may take with food if needed. Swallow tablets/capsules intact. Pharmacist prepares 200 mg/mL suspension; shake and use calibrated dispenser, without mixing into other liquids. Missed dose: take when remembered unless next dose is less than two hours away; then skip, never double."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.1;2.6; IFU;Medication Guide"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "IV preparation boundary",
+      "assertions": [
+        "Aseptic reconstitution and further dilution use 5% dextrose according to the full pharmacy instructions. No concurrent same-catheter admixtures; initiate infusion within four hours after preparation. Hazardous-drug handling and exact dose-dependent preparation remain pharmacy responsibilities."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.6;16.1"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Monitor serious/opportunistic infections, including BK, CMV, PML and viral hepatitis reactivation; balance any reduction against graft loss. Cytopenias/PRCA and GI bleeding/perforation occur. Evaluate acute inflammatory syndrome after initiation/escalation; discontinue if confirmed after benefit/risk assessment. Avoid HGPRT-deficiency syndromes and live vaccines. Suspension contains phenylalanine; assess PKU."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "5.1–5.15"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "Hypersensitivity to mofetil, mycophenolic acid or ingredients contraindicates treatment; IV formulation also contraindicated with polysorbate 80 allergy. Serious allergy requires discontinuation and urgent treatment."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "4;5.8"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "Boxed warning covers embryo-fetal toxicity, lymphoma/other cancers and serious infections. Avoid pregnancy exposure when safer alternatives are available; prevention/planning counseling is essential."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "Boxed warning;5.1–5.3"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Diarrhea, vomiting, abdominal symptoms, leukopenia/anemia and infections are prominent. Combination-regimen trial rates cannot isolate causation. Serious postmarketing marrow, pulmonary, allergy and congenital events have uncertain frequencies."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "6.1–6.2"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Absorption and recirculation",
+      "assertions": [
+        "Give aluminum/magnesium hydroxide antacids and calcium-free phosphate binders such as sevelamer at least two hours AFTER CellCept. PPIs, bile sequestrants, cyclosporine, rifampin and certain antimicrobials can lower exposure; monitor effectiveness. Glucuronidation modifiers such as telmisartan/isavuconazole can alter exposure."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "7.1"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Renal secretion and contraception",
+      "assertions": [
+        "Acyclovir-related antivirals/probenecid can compete with metabolite secretion, especially with renal impairment; monitor adverse effects. Oral contraceptive effectiveness may decrease; additional barrier contraception is required. Do not use absence of a numerical dose rule as permission to combine unsupervised."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "7.2;8.3"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Exposure monitoring",
+      "assertions": [
+        "MPA concentrations may be useful before/after regimen or interacting-drug changes. No universal therapeutic target, empiric multiplier or fixed interaction-adjustment algorithm is supplied here."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "5.14;7"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Reproductive potential",
+      "assertions": [
+        "Pregnancy testing immediately before starting and 8–10 days later, then routine follow-up. Acceptable contraception throughout treatment and six weeks afterward; oral pills need a barrier method. Sexually active men and/or female partners should use effective contraception through 90 days after cessation. No blood donation through six weeks or semen donation through 90 days afterward."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "8.3;5.12–5.13"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and breastfeeding",
+      "assertions": [
+        "Pregnancy exposure markedly increases miscarriage and congenital-malformation risk. Report pregnancy immediately, but do not independently stop graft-protective therapy. Human lactation data are limited and cannot exclude infant risk; weigh feeding benefits, maternal need and alternatives with specialists."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "8.1–8.2;Medication Guide"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Organ impairment and older adults",
+      "assertions": [
+        "Severe renal impairment increases metabolite exposure; heart/liver evidence is limited. Kidney recipients with severe hepatic parenchymal disease need no adjustment, but other etiologies and heart-recipient hepatic disease lack adequate data. Older recipients require comorbidity/drug review and may face greater infection/GI risks. No dialysis replacement dose is established."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "8.5–8.7;12.3"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "assertions": [
+        "MPA inhibits de-novo guanosine synthesis and lymphocyte proliferation; the immunosuppressive effect is reversible and increases infection risk."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "12.1"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Disposition",
+      "assertions": [
+        "Rapid conversion to MPA; glucuronidation and enterohepatic recirculation influence exposure. MPA is strongly protein bound and elimination mainly occurs as urinary glucuronide. Typical study mean MPA half-life is about 18 hours after oral dosing; dialysis usually removes neither MPA nor metabolite effectively. No plasma half-life determines an individual safe interruption interval."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "12.3"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": [
+        "Label suggests CBC weekly in month one, twice monthly in months two/three, then monthly for the rest of year one. Follow graft/organ function, infection, GI tolerance, inflammatory symptoms and indicated exposure measurements; tailor thereafter. Repeat pregnancy testing/counseling."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "5.3–5.4;5.7;5.14;8.3"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "assertions": [
+        "Read Medication Guide; preserve the prescribed schedule. Seek urgent care for allergy or severe bleeding/abdominal pain and contact the team for infection or new neurologic symptoms. Limit ultraviolet exposure with clothing/sunscreen. Avoid live vaccines, hazardous powder contact and driving when impaired."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "17;Medication Guide"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "CellCept 500 mg lavender caplet engraved CELLCEPT 500/Roche: 100-tablet bottle NDC 0004-0260-01. Other formulations/brands have distinct identifiers."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "3;16.3"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "250 mg capsules; 500 mg tablets; 35 g powder for 200 mg/mL suspension; 500 mg-equivalent IV single-dose vial (hydrochloride salt). No unsupervised delayed-release mycophenolic-acid substitution."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "3;11;16"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Selected products: 25°C with permitted 15–30°C excursions; tablets in light-resistant containers. Constituted suspension lasts 60 days, may refrigerate 2–8°C, never freeze. IV prepared solutions must begin infusion within four hours; discard leftovers. Use hazardous-drug handling procedures."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.6;16"
+        }
+      ]
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Labeled uses",
+      "assertions": [
+        "With other immunosuppressants, prevents rejection after allogeneic kidney, heart or liver transplantation in adults and children from three months. This focused label reference does not provide autoimmune-disease or rejection-rescue protocols."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "1;2.1"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Formulation boundary",
+      "assertions": [
+        "Oral mofetil products must not be exchanged unsupervised with delayed-release mycophenolic acid tablets. Absorption differs; salt-name similarity is not a milligram conversion."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.1"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Adult transplant doses",
+      "assertions": [
+        "Give twice daily; every IV dose requires an infusion lasting at least two hours, never a bolus. Use IV temporarily when oral treatment cannot be tolerated, starting within 24 hours after transplant for up to 14 days; switch as soon as feasible. Specialist preparation is required."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.1–2.4"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Adult transplant",
+          "Dose per administration, twice daily"
+        ],
+        "rows": [
+          [
+            "Kidney",
+            "1 g oral or IV"
+          ],
+          [
+            "Heart",
+            "1.5 g oral or IV"
+          ],
+          [
+            "Liver",
+            "1.5 g oral; 1 g IV"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric oral doses",
+      "assertions": [
+        "From three months: kidney 600 mg/m² twice daily, maximum 2 g/day. Heart/liver start 600 mg/m² twice daily; if tolerated, may increase to 900 mg/m² twice daily, maximum 3 g/day. BSA 1.25 to under 1.5 m² permits 750 mg capsules twice daily; BSA ≥ 1.5 m² permits 1 g capsule/tablet twice daily (heart/liver starting doses). No pediatric IV dose is inferred."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.2–2.4;8.4"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Renal and hematologic adjustment",
+      "assertions": [
+        "For severe chronic kidney-graft impairment, GFR < 25 mL/min/1.73 m², avoid more than 1 g twice daily and monitor closely. Delayed kidney-graft function alone needs no adjustment. If ANC falls below 1,300/µL, interrupt/reduce with diagnostic assessment. These boundaries do not establish a universal renal algorithm for heart/liver recipients."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.5;5.4;8.6"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Oral administration",
+      "assertions": [
+        "Prefer an empty stomach; stable recipients may take with food if needed. Swallow tablets/capsules intact. Pharmacist prepares 200 mg/mL suspension; shake and use calibrated dispenser, without mixing into other liquids. Missed dose: take when remembered unless next dose is less than two hours away; then skip, never double."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.1;2.6; IFU;Medication Guide"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "IV preparation boundary",
+      "assertions": [
+        "Aseptic reconstitution and further dilution use 5% dextrose according to the full pharmacy instructions. No concurrent same-catheter admixtures; initiate infusion within four hours after preparation. Hazardous-drug handling and exact dose-dependent preparation remain pharmacy responsibilities."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.6;16.1"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Monitor serious/opportunistic infections, including BK, CMV, PML and viral hepatitis reactivation; balance any reduction against graft loss. Cytopenias/PRCA and GI bleeding/perforation occur. Evaluate acute inflammatory syndrome after initiation/escalation; discontinue if confirmed after benefit/risk assessment. Avoid HGPRT-deficiency syndromes and live vaccines. Suspension contains phenylalanine; assess PKU."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "5.1–5.15"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "Hypersensitivity to mofetil, mycophenolic acid or ingredients contraindicates treatment; IV formulation also contraindicated with polysorbate 80 allergy. Serious allergy requires discontinuation and urgent treatment."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "4;5.8"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "Boxed warning covers embryo-fetal toxicity, lymphoma/other cancers and serious infections. Avoid pregnancy exposure when safer alternatives are available; prevention/planning counseling is essential."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "Boxed warning;5.1–5.3"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Diarrhea, vomiting, abdominal symptoms, leukopenia/anemia and infections are prominent. Combination-regimen trial rates cannot isolate causation. Serious postmarketing marrow, pulmonary, allergy and congenital events have uncertain frequencies."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "6.1–6.2"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Absorption and recirculation",
+      "assertions": [
+        "Give aluminum/magnesium hydroxide antacids and calcium-free phosphate binders such as sevelamer at least two hours AFTER CellCept. PPIs, bile sequestrants, cyclosporine, rifampin and certain antimicrobials can lower exposure; monitor effectiveness. Glucuronidation modifiers such as telmisartan/isavuconazole can alter exposure."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "7.1"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Renal secretion and contraception",
+      "assertions": [
+        "Acyclovir-related antivirals/probenecid can compete with metabolite secretion, especially with renal impairment; monitor adverse effects. Oral contraceptive effectiveness may decrease; additional barrier contraception is required. Do not use absence of a numerical dose rule as permission to combine unsupervised."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "7.2;8.3"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Exposure monitoring",
+      "assertions": [
+        "MPA concentrations may be useful before/after regimen or interacting-drug changes. No universal therapeutic target, empiric multiplier or fixed interaction-adjustment algorithm is supplied here."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "5.14;7"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Reproductive potential",
+      "assertions": [
+        "Pregnancy testing immediately before starting and 8–10 days later, then routine follow-up. Acceptable contraception throughout treatment and six weeks afterward; oral pills need a barrier method. Sexually active men and/or female partners should use effective contraception through 90 days after cessation. No blood donation through six weeks or semen donation through 90 days afterward."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "8.3;5.12–5.13"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and breastfeeding",
+      "assertions": [
+        "Pregnancy exposure markedly increases miscarriage and congenital-malformation risk. Report pregnancy immediately, but do not independently stop graft-protective therapy. Human lactation data are limited and cannot exclude infant risk; weigh feeding benefits, maternal need and alternatives with specialists."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "8.1–8.2;Medication Guide"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Organ impairment and older adults",
+      "assertions": [
+        "Severe renal impairment increases metabolite exposure; heart/liver evidence is limited. Kidney recipients with severe hepatic parenchymal disease need no adjustment, but other etiologies and heart-recipient hepatic disease lack adequate data. Older recipients require comorbidity/drug review and may face greater infection/GI risks. No dialysis replacement dose is established."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "8.5–8.7;12.3"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "assertions": [
+        "MPA inhibits de-novo guanosine synthesis and lymphocyte proliferation; the immunosuppressive effect is reversible and increases infection risk."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "12.1"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Disposition",
+      "assertions": [
+        "Rapid conversion to MPA; glucuronidation and enterohepatic recirculation influence exposure. MPA is strongly protein bound and elimination mainly occurs as urinary glucuronide. Typical study mean MPA half-life is about 18 hours after oral dosing; dialysis usually removes neither MPA nor metabolite effectively. No plasma half-life determines an individual safe interruption interval."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "12.3"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": [
+        "Label suggests CBC weekly in month one, twice monthly in months two/three, then monthly for the rest of year one. Follow graft/organ function, infection, GI tolerance, inflammatory symptoms and indicated exposure measurements; tailor thereafter. Repeat pregnancy testing/counseling."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "5.3–5.4;5.7;5.14;8.3"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "assertions": [
+        "Read Medication Guide; preserve the prescribed schedule. Seek urgent care for allergy or severe bleeding/abdominal pain and contact the team for infection or new neurologic symptoms. Limit ultraviolet exposure with clothing/sunscreen. Avoid live vaccines, hazardous powder contact and driving when impaired."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "17;Medication Guide"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "CellCept 500 mg lavender caplet engraved CELLCEPT 500/Roche: 100-tablet bottle NDC 0004-0260-01. Other formulations/brands have distinct identifiers."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "3;16.3"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "250 mg capsules; 500 mg tablets; 35 g powder for 200 mg/mL suspension; 500 mg-equivalent IV single-dose vial (hydrochloride salt). No unsupervised delayed-release mycophenolic-acid substitution."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "3;11;16"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Selected products: 25°C with permitted 15–30°C excursions; tablets in light-resistant containers. Constituted suspension lasts 60 days, may refrigerate 2–8°C, never freeze. IV prepared solutions must begin infusion within four hours; discard leftovers. Use hazardous-drug handling procedures."
+      ],
+      "sources": [
+        {
+          "id": "pi",
+          "sections": "2.6;16"
+        }
+      ]
+    }
+  ],
+  "hero_assertions": {
+    "essential": {
+      "title": "Pregnancy and infection precautions are essential",
+      "text": "Boxed embryo-fetal, malignancy and serious-infection risks require specialist monitoring. Arrange pregnancy prevention/planning and never independently interrupt transplant immunosuppression.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "facts": [
+      [
+        "Scope",
+        "Kidney/heart/liver rejection prophylaxis"
+      ],
+      [
+        "Pediatric label",
+        "From 3 months; oral BSA dosing"
+      ],
+      [
+        "Suspension",
+        "200 mg/mL after constitution"
+      ]
+    ],
+    "sources": [
+      "pi"
+    ]
+  },
+  "section_assertions": [
+    {
+      "section": "indications",
+      "summary": "Prescription transplant immunosuppression with specialist supervision.",
+      "takeaway": "Mofetil and delayed-release mycophenolic acid are different products.",
+      "sources": [
+        "pi"
+      ]
+    },
+    {
+      "section": "dosage",
+      "summary": "Transplant type, route and pediatric BSA determine dosing.",
+      "takeaway": "Adult liver oral and IV doses differ.",
+      "sources": [
+        "pi"
+      ]
+    },
+    {
+      "section": "safety",
+      "summary": "Pregnancy loss, malignancy and fatal infections are major risks.",
+      "takeaway": "Do not alter transplant immunosuppression without the transplant team.",
+      "sources": [
+        "pi"
+      ]
+    },
+    {
+      "section": "interactions",
+      "summary": "Review changes to all immunosuppressive and concurrent medicines.",
+      "takeaway": "Exposure can fall or rise when another medicine starts or stops.",
+      "sources": [
+        "pi"
+      ]
+    },
+    {
+      "section": "populations",
+      "summary": "Pregnancy prevention and transplant-specific organ assessment are essential.",
+      "takeaway": "Arrange alternatives before conception with the transplant team.",
+      "sources": [
+        "pi"
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "summary": "A prodrug generates the active IMPDH inhibitor mycophenolic acid.",
+      "takeaway": "PK varies with transplant phase and interacting treatment.",
+      "sources": [
+        "pi"
+      ]
+    },
+    {
+      "section": "practice",
+      "summary": "Monitor graft function, blood counts, infection and pregnancy prevention.",
+      "takeaway": "New fever, bruising, neurologic changes or severe abdominal symptoms need prompt review.",
+      "sources": [
+        "pi"
+      ]
+    },
+    {
+      "section": "product",
+      "summary": "Verify mofetil strength, route and dispensing preparation.",
+      "takeaway": "Suspension concentration is 200 mg/mL after pharmacy constitution.",
+      "sources": [
+        "pi"
+      ]
+    }
+  ],
+  "limitations": [
+    "No off-label autoimmune protocol, pediatric IV regimen, universal MPA target, fixed renal/dialysis replacement or delayed-release mycophenolic-acid conversion inferred.",
+    "Pediatric maximum suspension volumes in the label are TOTAL DAILY volumes: kidney10 mL/day and heart/liver15 mL/day; no per-dose reinterpretation published.",
+    "Current full label supports individualized lactation assessment despite more conservative Medication Guide patient wording; unknown human milk levels/limited infant outcomes preserved."
+  ],
+  "unresolved_source_questions": [],
+  "validation": {
+    "schema": [],
+    "tests_build_lint": "Parent batch checks required",
+    "rendered_page": "Parent batch QA required"
+  },
+  "monograph_sha256": "6710a7c79beb33dde78bee546fe029dd1011592d4ab92f62943155520abeb7e5",
+  "source_archive": {
+    "directory": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-29-thyroid-metformin",
+    "checked": "2026-10-01",
+    "verified": "Full selected DailyMed SPL XML, parsed sections and public pages copied with exact SHA256 verification. Existing divergent files preserved."
+  }
+}

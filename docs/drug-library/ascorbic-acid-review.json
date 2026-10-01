@@ -1,0 +1,463 @@
+{
+  "drug": "ascorbic-acid",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Full current approved ASCOR prescribing and handling sections; FDA current status; NIH nutrition/safety tables and FDA supplement regulatory scope.",
+  "sources": [
+    {
+      "id": "ascor",
+      "title": "McGuff · ASCOR IV injection",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=388aad52-fc01-4784-9791-1dbc80c69306",
+      "note": "Full public manufacturer label and patient instructions; SPL version 18, effective 20260529. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "18",
+      "effective_date": "20260529",
+      "xml_sha256": "6b52968a5521a49caa66650db8930ff42f0941bee68b33becb6cdfa72e7310ee",
+      "retrieved_xml": "/tmp/nas-drug-sources/ascor.xml"
+    },
+    {
+      "id": "ods",
+      "title": "NIH ODS · vitamin C nutrition and safety",
+      "publisher": "NIH Office of Dietary Supplements",
+      "url": "https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/",
+      "note": "Full relevant public web sections/tables reviewed October1,2026; local direct access403 recorded. Nutritional requirements/upper limits, not a scurvy treatment protocol.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/asc-ods-access.json",
+      "source_sha256": "cbda2a808baa6cbd6e53f74585d7c4ff082b9e7ed04d4f545fdee0f9d5efd0b4"
+    },
+    {
+      "id": "fda",
+      "title": "FDA · dietary supplement regulatory status",
+      "publisher": "U.S. FDA",
+      "url": "https://www.fda.gov/food/dietary-supplements/information-consumers-using-dietary-supplements",
+      "note": "Full public current FDA explanation retrieved October1,2026; supplements have no FDA premarket safety/effectiveness approval.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/supp-fda.html",
+      "source_sha256": "79299be58a653faee0818aa79463f9dd98763fa633a1e42a1c09c09134b3a119"
+    },
+    {
+      "id": "NDA209112",
+      "title": "FDA · NDA209112 current product status",
+      "publisher": "U.S. FDA",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA209112&limit=1",
+      "note": "Current official status checked October 1, 2026; status does not establish local stock.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/NDA209112.json",
+      "source_sha256": "e47e03f4765c0f8b100fcfda9f7470953f4e0f8104255d76ab8ed05cc28e76c5"
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "FDA-approved IV indication",
+      "assertions": {
+        "paragraphs": [
+          "Short-term, up to 1 week, scurvy treatment in adults and children ≥ 5 months when oral administration is impossible, insufficient or contraindicated. ASCOR is not indicated for vitamin C deficiency without scurvy signs/symptoms. FDA NDA 209112 currently lists it Prescription."
+        ]
+      },
+      "source_sections": {
+        "ascor": [
+          "1"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Nutrition and supplement scope",
+      "assertions": {
+        "paragraphs": [
+          "Vitamin C supports collagen synthesis and other physiological functions. Oral supplements can help supply nutritional intake, but FDA does not preapprove dietary supplements for safety/effectiveness. This reference supplies nutrient targets and approved ASCOR directions; it does not assert an approved infusion indication for immune enhancement, cancer or sepsis or a universal oral scurvy protocol."
+        ]
+      },
+      "source_sections": {
+        "ods": [
+          "Introduction; Recommended Intakes"
+        ],
+        "fda": [
+          "Regulatory authority"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Approved ASCOR daily dose and infusion rate",
+      "assertions": {
+        "paragraphs": [
+          "Slow diluted IV once daily. Ordinary age-specific directions are shown; restricted populations below require lower RDA/AI limits."
+        ],
+        "table": {
+          "headers": [
+            "Age",
+            "Daily dose / rate"
+          ],
+          "rows": [
+            [
+              "5 to < 12 months",
+              "50 mg; 1.3 mg/min"
+            ],
+            [
+              "1 to < 11 years",
+              "100 mg; 3.3 mg/min"
+            ],
+            [
+              "≥ 11 years and adults",
+              "200 mg; 33 mg/min"
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "ascor": [
+          "2.2",
+          "2.3"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Duration and restricted populations",
+      "assertions": {
+        "paragraphs": [
+          "Recommended maximum course is 7 days. If symptoms persist after a week, the label permits retreatment until resolution; repeat dosing is not recommended below 11 years. In pregnancy, breastfeeding or G6PD deficiency, do not exceed the age/condition-specific U.S. RDA or AI, even when the ordinary table shows a larger dose. The label supplies no fixed renal adjustment; renal/stone risk requires assessment."
+        ]
+      },
+      "source_sections": {
+        "ascor": [
+          "2.2",
+          "2.3",
+          "8.1",
+          "8.2",
+          "8.4",
+          "8.6"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Dilution and pharmacy preparation",
+      "assertions": {
+        "paragraphs": [
+          "Never administer undiluted or treat the entire vial as a patient dose. Dilute to 1–25 mg/mL using a suitable infusion solution such as D 5 W or sterile water, ensuring the final solution is isotonic; water alone does not guarantee tonicity. Avoid mixing with reducible elemental compounds such as copper. Inspect for particles/discoloration and minimize light exposure. Pharmacy bulk package: sterile transfer in an ISO 5 environment, single closure penetration, complete dispensing within 4 hours after entry; administer each prepared dose immediately and discard unused vial contents."
+        ]
+      },
+      "source_sections": {
+        "ascor": [
+          "2.1",
+          "3",
+          "16"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Nutritional intake targets · not scurvy-treatment doses",
+      "assertions": {
+        "paragraphs": [
+          "Daily RDA/AI in mg: 0–6 months 40 AI; 7–12 months 50 AI; ages 1–3:15,4–8:25,9–13:45. Ages 14–18: male 75, female 65, pregnancy 80, lactation 115. Adults≥ 19: male 90, female 75, pregnancy 85, lactation 120. Smokers need 35 mg extra daily. Healthy-population upper limits: ages 1–3:400,4–8:650,9–13:1,200,14–18:1,800, adults:2,000 mg/day. Infant UL is unestablished. These totals concern nutrition, not permission to exceed ASCOR’s restrictions."
+        ]
+      },
+      "source_sections": {
+        "ods": [
+          "Recommended Intakes Table1; Excess-risk Table3"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Acute/chronic oxalate nephropathy and stones can occur, especially with prolonged high-dose exposure, renal disease or stone history; older adults and children< 2 are at higher risk. Monitor renal function and discontinue if nephropathy develops. G6PD deficiency can cause severe hemolysis: restrict to RDA/AI, monitor hemoglobin/CBC and stop if hemolysis occurs. Ascorbate can distort oxidation-reduction tests, including glucose, nitrite, bilirubin and leukocyte testing; if feasible delay susceptible tests until 24 hours after infusion and alert the laboratory. Rapid infusion can cause transient faintness, nausea, flushing, dizziness/headache; use the approved age-specific rates."
+        ]
+      },
+      "source_sections": {
+        "ascor": [
+          "5.1–5.4",
+          "8.6"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "The current ASCOR PI lists no formal contraindications. Its indication limitations, G6PD dose restrictions and renal/oxalate precautions still require clinical screening; “none” does not mean risk-free. Supplement ingredient restrictions are product-specific."
+        ]
+      },
+      "source_sections": {
+        "ascor": [
+          "4",
+          "1",
+          "5",
+          "2.3"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "Current ASCOR has no boxed warning. Kidney injury, G6PD-associated hemolysis and laboratory interference remain significant warnings. Dietary supplements do not inherit an FDA-approved drug warning status."
+        ]
+      },
+      "source_sections": {
+        "ascor": [
+          "Full prescribing information",
+          "5"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "ASCOR can cause infusion-site pain/swelling; rapid administration produces transient systemic symptoms. Overdose may cause nausea, vomiting, diarrhea, flushing, headache, fatigue or rash; stop administration and obtain medical assessment. Excess oral vitamin C commonly causes GI upset; high intake can aggravate iron overload in hereditary hemochromatosis. Serious hemolysis/oxalate injury are discussed above, with no invented incidence estimate."
+        ]
+      },
+      "source_sections": {
+        "ascor": [
+          "6",
+          "10",
+          "5"
+        ],
+        "ods": [
+          "Health Risks from Excessive Vitamin C"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Drug and laboratory interactions",
+      "assertions": {
+        "paragraphs": [
+          "ASCOR may reduce activity of erythromycin, kanamycin, streptomycin, doxycycline or lincomycin; bleomycin inactivation is reported in vitro. Monitor suspected diminished effectiveness and consider discontinuation with the treating team. Urine acidification can reduce amphetamine/fluphenazine concentrations and efficacy. Warfarin reports are limited and inconsistent; continue standard INR monitoring rather than invent a universal dose change. Redox laboratory interference needs method-specific review and, if feasible,24-hour testing delay."
+        ]
+      },
+      "source_sections": {
+        "ascor": [
+          "7.1–7.4",
+          "5.3"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "ASCOR-specific human pregnancy and milk data are limited; oral supplementation findings cannot establish high-dose IV safety. Do not exceed age/condition-specific RDA/AI in pregnancy or breastfeeding. Review maternal need, infant exposure and alternative oral provision."
+        ]
+      },
+      "source_sections": {
+        "ascor": [
+          "8.1",
+          "8.2",
+          "2.3"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": {
+        "paragraphs": [
+          "Indicated from 5 months; below 5 months is unestablished. Children< 2 have higher oxalate-nephropathy risk and repeat dosing is not recommended below 11. Older adults may have reduced kidney function and need renal monitoring; no automatic age-only dose formula is supplied."
+        ]
+      },
+      "source_sections": {
+        "ascor": [
+          "8.4",
+          "8.5",
+          "2.2"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Renal, hepatic and G6PD considerations",
+      "assertions": {
+        "paragraphs": [
+          "Renal impairment, dialysis, diabetic nephropathy, transplantation or stone history heighten oxalate-nephropathy risk; assess and monitor rather than infer a fixed eGFR reduction. The PI gives no hepatic dose algorithm. G6PD deficiency requires at most RDA/AI and CBC/hemoglobin monitoring."
+        ]
+      },
+      "source_sections": {
+        "ascor": [
+          "8.6",
+          "5.1",
+          "5.2",
+          "2.3"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and pharmacokinetics",
+      "assertions": {
+        "paragraphs": [
+          "Vitamin C participates in collagen synthesis; ASCOR’s exact scurvy-treatment mechanism is not fully defined beyond restoration of body stores. Absorption from oral intake is dose-dependent and differs from IV delivery. The ASCOR PK study used 1,000 mg IV over 30 minutes—five times the ordinary maximum daily labeled dose—not an approved regimen. Renal elimination varies with concentration; metabolism includes oxalate. No universal half-life or oral-to-IV conversion is inferred from that study."
+        ]
+      },
+      "source_sections": {
+        "ascor": [
+          "12.1",
+          "12.3"
+        ],
+        "ods": [
+          "Introduction; Assessing vitamin C status"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "assertions": {
+        "paragraphs": [
+          "Confirm clinical scurvy and whether oral treatment is feasible. Review renal function, stone history, G6PD status and other vitamin C intake. Monitor kidney function; in G6PD deficiency monitor CBC/hemoglobin and hemolysis symptoms. Assess response at the end of the short course before any eligible repeat. Flag susceptible lab tests, infusion rate and site tolerance."
+        ]
+      },
+      "source_sections": {
+        "ascor": [
+          "1",
+          "2",
+          "5",
+          "17"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling",
+      "assertions": {
+        "paragraphs": [
+          "Explain that supplements and prescription IV treatment serve different purposes. Avoid extra unreviewed high-dose vitamin C. Report dark urine, reduced urination, flank pain, jaundice or marked fatigue promptly and tell testing staff about recent infusion. Pregnancy/breastfeeding/G6PD status affects the dose ceiling; only professionals prepare and administer ASCOR."
+        ]
+      },
+      "source_sections": {
+        "ascor": [
+          "2.3",
+          "5",
+          "17"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "paragraphs": [
+          "McGuff ASCOR injection:500 mg/mL,50 mL pharmacy bulk vial containing 25,000 mg; NDC 67157-101-50. It is an IV drug requiring dilution, not an oral supplement or direct undiluted injection."
+        ]
+      },
+      "source_sections": {
+        "ascor": [
+          "3",
+          "16"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "FDA-approved selected ASCOR is 500 mg/mL IV solution in a 50 mL pharmacy bulk package, current NDA 209112 Prescription. Oral dietary supplements have varied forms/strengths and product-specific serving instructions; this review does not verify every supplement brand or establish an FDA-approved oral indication."
+        ]
+      },
+      "source_sections": {
+        "ascor": [
+          "3",
+          "16"
+        ],
+        "NDA209112": [
+          "Products"
+        ],
+        "fda": [
+          "Supplement regulation"
+        ],
+        "ods": [
+          "Dietary supplements"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Refrigerate unopened ASCOR at 2–8°C, protect from light; label allows ambient-temperature excursions up to 30 days. This unopened excursion allowance does not extend the 4-hour pharmacy-bulk dispensing limit after penetration. No preservative; discard unused contents after the permitted window and administer diluted doses promptly. Follow an oral supplement’s own storage label rather than transferring injectable refrigeration directions."
+        ]
+      },
+      "source_sections": {
+        "ascor": [
+          "16",
+          "2.1"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "No universal oral scurvy protocol or off-label high-dose infusion regimen.",
+    "No claim to source-review all supplement brands/combination products.",
+    "NIH full relevant web sections reviewed; failed local access explicitly recorded."
+  ],
+  "resolved_source_findings": [],
+  "material_gaps": [],
+  "clinical_review": "Every published card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, essential safety, three hero facts, cited disclosures, four safety cards and three product cards.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending"
+  },
+  "monograph_sha256": "997dd16fa1712c5d170117f171c0c3ebb07c5b209f4ca6f3c346d98bc2a80c88",
+  "frontmatter_source_map": {
+    "fields": {
+      "name": "Ascorbic acid",
+      "synonym": "Vitamin C · ASCOR injection",
+      "description": "An essential nutrient available in foods and dietary supplements, with a separate FDA-approved IV drug for selected scurvy patients. Nutritional intake targets do not establish an IV indication or an interchangeable oral treatment regimen.",
+      "facts": [
+        [
+          "Therapeutic class",
+          "Water-soluble vitamin"
+        ],
+        [
+          "Representative product",
+          "ASCOR · 500 mg/mL pharmacy bulk package"
+        ],
+        [
+          "Reference focus",
+          "Nutrition versus approved IV scurvy treatment"
+        ]
+      ],
+      "essential": {
+        "title": "ASCOR must be diluted; kidney and G6PD risks require review.",
+        "text": "The 50 mL pharmacy bulk vial contains 25,000 mg and is not a patient dose. Use only appropriately diluted, isotonic slow IV infusion. Assess oxalate-nephropathy risk and G6PD deficiency; pregnancy, lactation and G6PD deficiency impose age/condition-specific RDA or AI dose limits.",
+        "section": "safety",
+        "link": "Warnings and precautions"
+      }
+    },
+    "source_sections": {
+      "ascor": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "16"
+      ],
+      "ods": [
+        "Introduction"
+      ],
+      "fda": [
+        "Regulatory authority"
+      ]
+    }
+  }
+}
