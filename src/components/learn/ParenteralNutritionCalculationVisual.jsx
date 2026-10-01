@@ -1,4 +1,10 @@
 const diagrams = {
+  "pn-calc-fluid": {
+    eyebrow: "Daily fluid calculation",
+    title: "Estimate the total, then count other fluids.",
+    steps: [["kg", "Weight", "52 kg; scope is above 20 kg"], ["Σ", "Daily estimate", "1,500 + 20(52 - 20) = 2,140 mL/day"], ["−", "Other fluids", "Medicines supply 290 mL/day"], ["PN", "Remaining", "2,140 - 290 = 1,850 mL/day"]],
+    formula: "Above 20 kg: daily mL = 1,500 + 20 × (weight in kg - 20)",
+  },
   "pn-calc-foundations": {
     eyebrow: "Calculation foundation",
     title: "Patient data becomes a defensible estimate.",

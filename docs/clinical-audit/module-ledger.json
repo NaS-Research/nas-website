@@ -213,39 +213,57 @@
       "area": "Calculations & Nutrition",
       "lessons": [
         {
+          "slug": "fluid-requirements",
+          "status": "verified",
+          "evidence": "parenteral-nutrition-calculations-review.json"
+        },
+        {
           "slug": "calculation-foundations",
-          "status": "unreviewed"
+          "status": "reviewing"
         },
         {
           "slug": "protein-energy-targets",
-          "status": "unreviewed"
+          "status": "reviewing"
         },
         {
           "slug": "dextrose-gir",
-          "status": "unreviewed"
+          "status": "reviewing"
         },
         {
           "slug": "lipid-energy-ledger",
-          "status": "unreviewed"
+          "status": "reviewing"
         },
         {
           "slug": "stock-solutions-additives",
-          "status": "unreviewed"
+          "status": "reviewing"
         },
         {
           "slug": "rate-final-audit",
-          "status": "unreviewed"
+          "status": "reviewing"
         }
       ],
-      "questions": 100,
-      "status": "unreviewed",
-      "evidence": [],
+      "questions": 116,
+      "status": "reviewing",
+      "evidence": [
+        "parenteral-nutrition-calculations-review.json"
+      ],
       "latestScopedReview": {
         "date": "2026-09-30",
         "scope": "Concentration arithmetic only: 15 bank items and two embedded checks; clarified w/v or supplied stock units in 12 bank prompts",
         "evidence": "pharmacy-concentrations-specific-gravity-review.json",
         "wholeModuleVerified": false
-      }
+      },
+      "embeddedChecks": 7,
+      "scopedSectionReviews": [
+        {
+          "date": "2026-10-01",
+          "scope": "Fluid-needs lesson, original figure, one check and 16 original questions; prior 100 bank objects retained",
+          "status": "verified",
+          "evidence": "parenteral-nutrition-calculations-review.json",
+          "wholeModuleVerified": false
+        }
+      ],
+      "verificationNotes": "Entire existing module and 100 retained questions read.95 independent original/retained arithmetic checks passed;54 Chapter 11 source exercises have58 separate checks. Missing Harris-Benedict/nitrogen/weekly-lipid/dual-ion coverage and historical source reconciliation remain. Only the fluid lesson is verified."
     },
     {
       "slug": "pediatric-parenteral-nutrition",

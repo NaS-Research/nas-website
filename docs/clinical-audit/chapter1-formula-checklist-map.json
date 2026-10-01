@@ -1,5 +1,5 @@
 {
-  "reviewDate": "2026-09-30",
+  "reviewDate": "2026-10-01",
   "source": {
     "edition": 2023,
     "chapter": 1,
@@ -164,7 +164,12 @@
         "calcium-phosphorus-homeostasis",
         "acid-base-interpretation"
       ],
-      "status": "mapped"
+      "status": "reviewing",
+      "evidence": "parenteral-nutrition-calculations-review.json",
+      "verifiedSections": [
+        "parenteral-nutrition-calculations#fluid-requirements"
+      ],
+      "note": "Fluid section verified; whole corresponding module/source reconciliation open. Entry15 is not marked complete and count stays 14."
     },
     {
       "group": "Biostatistics and cost-effectiveness calculations",
@@ -206,8 +211,8 @@
     }
   ],
   "nextStartingPoint": {
-    "bookLocation": "Chapter 1 printed page 7, fifteenth checklist entry: determining fluid needs",
-    "dependency": "Chapter 11, printed150/PDF158. Background and fluid-needs text extracted/read in a prior dependency pass; full source and corresponding module audit pending."
+    "bookLocation": "Chapter 1 printed 7/PDF 19, fifteenth checklist entry: determining fluid needs",
+    "dependency": "Continue the entire existing PN calculation module at Chapter 11 Determining Caloric Needs, printed 151/PDF 159: add/reconcile Harris-Benedict BEE and TEE, then protein/nitrogen, weekly lipids, dual-ion additives and complete-order calculations. Locate supplied-book dependencies for retained anthropometric, Mifflin, propofol and clinical GIR claims. Do not advance checklist entry 15 until the corresponding whole-module review is verified."
   },
   "limits": [
     "This is a coverage map, not verification of the complete formula checklist.",

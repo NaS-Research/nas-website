@@ -1,0 +1,3833 @@
+{
+  "date": "2026-10-01",
+  "status": "reviewing",
+  "module": "parenteral-nutrition-calculations",
+  "wholeModuleVerified": false,
+  "sourcePolicy": "Supplied RxPrep 2023 only for new educational claims. Existing historical external references retained, not refreshed or reverified from the book.",
+  "source": {
+    "checklist": {
+      "chapter": 1,
+      "printedPage": 7,
+      "pdfPage": 19,
+      "entry": 15,
+      "status": "reviewing"
+    },
+    "dependency": {
+      "chapter": 11,
+      "printedPages": [
+        149,
+        168
+      ],
+      "pdfPages": [
+        157,
+        176
+      ],
+      "all20PagesTextAndVisualRead": true,
+      "all54SourceExercisesRecalculated": true,
+      "readingIsNotWholeChapterVerification": true
+    }
+  },
+  "mappingSearch": {
+    "existingCorrespondingModule": "parenteral-nutrition-calculations",
+    "result": "Expanded the existing PN calculation module; no new module, route, numbering, catalog registration or architecture change.",
+    "searched": [
+      "All modules and question banks",
+      "pharmacyModules catalog",
+      "Learning Library topics/search",
+      "pharmacyLearning guides",
+      "pharmacyReview standalone questions",
+      "pharmacyCumulativeReview automatic selection"
+    ],
+    "broaderBank": "No relevant standalone PN fluid calculation item located. Five automatic PN selections retained; the final selection now includes the original liter-reconciliation fluid item. Underlying prior 100 IDs preserved."
+  },
+  "fluidSection": {
+    "status": "verified",
+    "verificationDate": "2026-10-01",
+    "slug": "fluid-requirements",
+    "sourcePrintedPage": 150,
+    "sourcePdfPage": 158,
+    "teachingSections": 6,
+    "originalFigure": "pn-calc-fluid",
+    "embeddedChecks": 1,
+    "newOriginalBankQuestions": 16,
+    "covered": [
+      "Scope above 20 kg",
+      "Total body weight unless specified",
+      "Pounds-to-kg conversion",
+      "Fixed term plus excess-weight increment",
+      "Separate institutional30-40 mL/kg/day method",
+      "Daily versus hourly volume",
+      "Concurrent medication-fluid ledger",
+      "Tailoring without invented fixed reduction",
+      "Negative allowance interpretation"
+    ],
+    "finalSourceComparison": "All six sections, the figure, embedded check and 16 questions compared again with printed 150/PDF 158 after authoring. Scope, units, method distinction and supplied values agree. No new clinical prescription or universal reduction rule added.",
+    "lessonSha256": "881cff66a3eba57aeaf0b81ea260af3b71871eeca82222b0f32097acab54d15d"
+  },
+  "scope": {
+    "lessons": 7,
+    "bankQuestions": 116,
+    "originalNewFluidQuestions": 16,
+    "unchangedPriorBankQuestions": 100,
+    "embeddedChecks": 7,
+    "figures": 7,
+    "newModules": 0,
+    "completedChecklistEntries": 14
+  },
+  "legacyLessonReview": [
+    {
+      "slug": "calculation-foundations",
+      "status": "reviewing",
+      "allTeachingRead": true,
+      "embeddedCheckRead": true,
+      "sha256": "2bfc912ea2c7afab48972a3cdbf5b7d74d64016d240771c1e209110b47c349d7",
+      "finding": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation."
+    },
+    {
+      "slug": "protein-energy-targets",
+      "status": "reviewing",
+      "allTeachingRead": true,
+      "embeddedCheckRead": true,
+      "sha256": "8631f31864549dbe34d2e145f7ae59a365606cfee9a37b73b09df0a44dec9811",
+      "finding": "Source energy/protein content read; Harris-Benedict BEE/TEE and focused nitrogen exercises missing. Mifflin arithmetic correct under supplied formula, source/clinical support remains unresolved."
+    },
+    {
+      "slug": "dextrose-gir",
+      "status": "reviewing",
+      "allTeachingRead": true,
+      "embeddedCheckRead": true,
+      "sha256": "13f2da6d9d0915fa8b4e39b60719694703720cc799b0ba7d85192c6ed7b15219",
+      "finding": "Numerical formula checks passed. Source proportion/limit distinctions and retained clinical claims require reconciliation; not a whole-lesson clinical verification."
+    },
+    {
+      "slug": "lipid-energy-ledger",
+      "status": "reviewing",
+      "allTeachingRead": true,
+      "embeddedCheckRead": true,
+      "sha256": "718d7f09f2fbb59f79fa99dc8cf9152c9a85df4bfeddcd43674e8062fad462de",
+      "finding": "Numerical energy checks passed; source weekly-average and 10/30-percent coverage missing. Exact propofol value/product-specific clinical claims need source reconciliation."
+    },
+    {
+      "slug": "stock-solutions-additives",
+      "status": "reviewing",
+      "allTeachingRead": true,
+      "embeddedCheckRead": true,
+      "sha256": "8ee645cab4ed1dd3b14c0b9ad302a23bcf25d93a05234c52d222842613f21025",
+      "finding": "Concentration arithmetic rechecked; historical September30 scoped review preserved. Source dual-ion and compatibility interpretation remain open."
+    },
+    {
+      "slug": "rate-final-audit",
+      "status": "reviewing",
+      "allTeachingRead": true,
+      "embeddedCheckRead": true,
+      "sha256": "9a3d4b2d0ba54c41f27f5f53d51bbbf1d5074f823b74ed8211609eb43c260ebe",
+      "finding": "Daily totals/rate methods read and embedded arithmetic checked. Complete source order coverage and clinical monitoring/release claims remain open."
+    }
+  ],
+  "remainingCoverageAndSourceIssues": [
+    {
+      "topic": "Caloric needs and historical Mifflin content",
+      "sourcePrintedPages": [
+        151,
+        152
+      ],
+      "finding": "Book uses Harris-Benedict BEE/TEE with activity/stress factors; current module teaches Mifflin and lacks that coverage. Existing Mifflin exercises have correct arithmetic under their stated equation, but source support and indirect-calorimetry claims remain unresolved. Preserve historical references without claiming book verification."
+    },
+    {
+      "topic": "Protein, nitrogen intake and NPC:N",
+      "sourcePrintedPages": [
+        152,
+        155
+      ],
+      "finding": "Expand protein requirement ranges, source-specific total/nonprotein calorie basis, nitrogen intake and NPC:N calculation exercises. This source section does not establish a full urinary-nitrogen balance equation."
+    },
+    {
+      "topic": "Dextrose proportions and GIR interpretation",
+      "sourcePrintedPages": [
+        155,
+        156
+      ],
+      "finding": "Add source proportions and reconcile source numerical limits. 4 mg/kg/min equals 5.76 g/kg/day, not 7 g/kg/day. Do not present both printed numbers as exact equivalents or universally current clinical limits. Retained clinical claims need supplied-book dependencies."
+    },
+    {
+      "topic": "Lipid concentrations, weekly average and vehicle calories",
+      "sourcePrintedPages": [
+        157,
+        158
+      ],
+      "finding": "Expand 10/20/30-percent energy distinctions and weekly-average calculations. Chapter 11 names propofol/clevidipine vehicle calories but does not supply the retained exact propofol energy value. Keep historical product-label reference and product/process qualifications; no outside source refreshed."
+    },
+    {
+      "topic": "Dual-ion additives and calcium/phosphate",
+      "sourcePrintedPages": [
+        158,
+        160
+      ],
+      "finding": "Add acetate/sodium and phosphate/potassium multicomponent stock examples. A supplied exercise conversion is not a universal phosphate factor. Source calcium/phosphate heuristic is not universal compatibility proof; preserve validated formulation/process warnings. Corrected-calcium/ionized-calcium interpretation remains for reconciliation."
+    },
+    {
+      "topic": "Mixed PN orders, premixed products, time and total calories",
+      "sourcePrintedPages": [
+        164,
+        168
+      ],
+      "finding": "Reconcile complete order calculations and calorie/volume percentages against source; prior rate and final-audit content is read but not whole-source verified."
+    },
+    {
+      "topic": "Anthropometric dependencies",
+      "sourcePrintedPages": null,
+      "finding": "BMI/IBW/adjusted-weight numerical bank items are arithmetically correct but related Chapter 9/reference-sheet source coverage needs locating and review."
+    },
+    {
+      "topic": "Clinical PN, EN and pediatric nutrition modules",
+      "sourcePrintedPages": [
+        149,
+        168
+      ],
+      "finding": "Full Chapter 11 text/tables/figures read and all 54 exercises recalculated. Clinical indications, trace elements, insulin, tube/medication interaction and monitoring material still require audits of their corresponding clinical modules. Existing NICE maintenance fluid estimates and this PN estimate have differing contexts; neither module is closed by this scoped section."
+    }
+  ],
+  "sourceDiscrepancies": [
+    "Chapter 11 examples4/5 use rounded BEE as the next TEE input; source check reproduces that explicit method rather than silently changing intermediate rounding.",
+    "Printed GIR numbers4 mg/kg/min and 7g/kg/day are not exact equivalents; numeric difference retained for next teaching reconciliation.",
+    "Compatibility heuristic and corrected-calcium interpretation are not marked clinically verified by a arithmetic pass.",
+    "Historical Mifflin, CDC, ASPEN and FDA references remain with unresolved supplied-book support; the new RxPrep reference is limited to the new fluid section."
+  ],
+  "questionReview": [
+    {
+      "id": "pncalc-001",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "10c6f9faff84889dd7565d3a6208c9e6cb3d075d6d00fd2f1d7526aef8e61011",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation."
+    },
+    {
+      "id": "pncalc-002",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "9627c4b367f0af6833a1697365bc91d594340e3c64b1c8b5633534637796619b",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation."
+    },
+    {
+      "id": "pncalc-003",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "c416ad499e04349caffc9c031325a89d7fc0eaa089b4cf91c3868e2e4a98a0cc",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation."
+    },
+    {
+      "id": "pncalc-004",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "b9a58f9e1b09fd554b5dea3257105b1bbd8739f5bd73d9d0a43b723d0537de64",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation."
+    },
+    {
+      "id": "pncalc-005",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "8a532ef7720a082bb1bb54a7f817db93c8f05e7d8f7b9804f588502e6910c6b6",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation."
+    },
+    {
+      "id": "pncalc-006",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "e37aec5be1ef1b6ff74415da4f6c395fa3462f03fc4514d6a9568eedab37f486",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation."
+    },
+    {
+      "id": "pncalc-007",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#lipid-energy-ledger",
+      "sha256": "706abc10063f0e816a2e06c4fd2b494369f9c18810345a945e641b00edd8c38b",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Numerical energy checks passed; source weekly-average and 10/30-percent coverage missing. Exact propofol value/product-specific clinical claims need source reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-007",
+        "value": "198.0",
+        "expected": "198",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-008",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#lipid-energy-ledger",
+      "sha256": "ba6cfe138b722dd245a4932585cce7d8717705aee6499234e5cb6a87c2083cf1",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Numerical energy checks passed; source weekly-average and 10/30-percent coverage missing. Exact propofol value/product-specific clinical claims need source reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-008",
+        "value": "830",
+        "expected": "830",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-009",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#rate-final-audit",
+      "sha256": "32b07556c354285dd50648c69e4310cefd2389f3c676f8d7e02d8bb5dff7dd12",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Daily totals/rate methods read and embedded arithmetic checked. Complete source order coverage and clinical monitoring/release claims remain open."
+    },
+    {
+      "id": "pncalc-010",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#rate-final-audit",
+      "sha256": "9bec992e42dae77599f68439f9ba889c5545278c28fa4f8ae9f5269629faa8ed",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Daily totals/rate methods read and embedded arithmetic checked. Complete source order coverage and clinical monitoring/release claims remain open."
+    },
+    {
+      "id": "pncalc-011",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#protein-energy-targets",
+      "sha256": "9f7ab1e0b91d6efb0392ae664445bd6b51772f3ad874adfc59ff489af8da2e22",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Source energy/protein content read; Harris-Benedict BEE/TEE and focused nitrogen exercises missing. Mifflin arithmetic correct under supplied formula, source/clinical support remains unresolved."
+    },
+    {
+      "id": "pncalc-012",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#protein-energy-targets",
+      "sha256": "7ad0af4b0af0fb9f032e59f3864a7dbd34aee591a92b3348f7637ae4225a03e3",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Source energy/protein content read; Harris-Benedict BEE/TEE and focused nitrogen exercises missing. Mifflin arithmetic correct under supplied formula, source/clinical support remains unresolved."
+    },
+    {
+      "id": "pncalc-013",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#protein-energy-targets",
+      "sha256": "6e648ff6e5f3fb85f3a1dba55610bb059ef3f5db95a6f5e88541a735d43fbd1c",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Source energy/protein content read; Harris-Benedict BEE/TEE and focused nitrogen exercises missing. Mifflin arithmetic correct under supplied formula, source/clinical support remains unresolved."
+    },
+    {
+      "id": "pncalc-014",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#protein-energy-targets",
+      "sha256": "85159fc7b52af97b7f03e9d525294786a8f985999c60545d7eff5146ed49c317",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Source energy/protein content read; Harris-Benedict BEE/TEE and focused nitrogen exercises missing. Mifflin arithmetic correct under supplied formula, source/clinical support remains unresolved."
+    },
+    {
+      "id": "pncalc-015",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#protein-energy-targets",
+      "sha256": "60813e15ca6fbb54b0fda01a9acd92dd638f932cb0cb676e7ed21c07c566e27b",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Source energy/protein content read; Harris-Benedict BEE/TEE and focused nitrogen exercises missing. Mifflin arithmetic correct under supplied formula, source/clinical support remains unresolved."
+    },
+    {
+      "id": "pncalc-016",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#protein-energy-targets",
+      "sha256": "2fb7d042de1a1d4f80e5257b4276f7b68b28991b353031a1dff154edc4b7df0d",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Source energy/protein content read; Harris-Benedict BEE/TEE and focused nitrogen exercises missing. Mifflin arithmetic correct under supplied formula, source/clinical support remains unresolved."
+    },
+    {
+      "id": "pncalc-017",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#protein-energy-targets",
+      "sha256": "36fd6084b3bf3c4153026ef690dc137a2459806c05b0f65878b5b905298267e4",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Source energy/protein content read; Harris-Benedict BEE/TEE and focused nitrogen exercises missing. Mifflin arithmetic correct under supplied formula, source/clinical support remains unresolved."
+    },
+    {
+      "id": "pncalc-018",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#protein-energy-targets",
+      "sha256": "19dd8ee1e3bbde3d316d056d568ffcd78421db806b63adff20b97a76e7e74c3f",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Source energy/protein content read; Harris-Benedict BEE/TEE and focused nitrogen exercises missing. Mifflin arithmetic correct under supplied formula, source/clinical support remains unresolved."
+    },
+    {
+      "id": "pncalc-019",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#dextrose-gir",
+      "sha256": "b915d5375edda4e2142e64e2962987c5449aeff0c69c24ba7a2d5774a36ef249",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Numerical formula checks passed. Source proportion/limit distinctions and retained clinical claims require reconciliation; not a whole-lesson clinical verification."
+    },
+    {
+      "id": "pncalc-020",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#dextrose-gir",
+      "sha256": "a411c136bdfbeabf64a8bcfc68632ed936782a5f11fbd22094bf27f8b06053b7",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Numerical formula checks passed. Source proportion/limit distinctions and retained clinical claims require reconciliation; not a whole-lesson clinical verification."
+    },
+    {
+      "id": "pncalc-021",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#dextrose-gir",
+      "sha256": "a7027af8f942372b273c8678d53feeea6061627c65a17caef108875c6eb613ef",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Numerical formula checks passed. Source proportion/limit distinctions and retained clinical claims require reconciliation; not a whole-lesson clinical verification."
+    },
+    {
+      "id": "pncalc-022",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#dextrose-gir",
+      "sha256": "39e5031a7209312f566ca311540c0ad827a9ed6872b9b791dcc57aae225bdc14",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Numerical formula checks passed. Source proportion/limit distinctions and retained clinical claims require reconciliation; not a whole-lesson clinical verification."
+    },
+    {
+      "id": "pncalc-023",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#dextrose-gir",
+      "sha256": "517cd84d3ad9b5bd859c3324557d4954279c63a9d8979d196fb4e89e786326f0",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Numerical formula checks passed. Source proportion/limit distinctions and retained clinical claims require reconciliation; not a whole-lesson clinical verification."
+    },
+    {
+      "id": "pncalc-024",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#dextrose-gir",
+      "sha256": "c7f89588355333a207fb62a266548564488f24f819d0d515fd0cd50ead4c83f3",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Numerical formula checks passed. Source proportion/limit distinctions and retained clinical claims require reconciliation; not a whole-lesson clinical verification."
+    },
+    {
+      "id": "pncalc-025",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#lipid-energy-ledger",
+      "sha256": "3780bedeec72b45f9ad2c208d835952f987783566e9d3e020de9da949b357ba6",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Numerical energy checks passed; source weekly-average and 10/30-percent coverage missing. Exact propofol value/product-specific clinical claims need source reconciliation."
+    },
+    {
+      "id": "pncalc-026",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#lipid-energy-ledger",
+      "sha256": "31ba204b8208c732778cb3c2ab5abd3ca43095fcbbd8218db768275646859465",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Numerical energy checks passed; source weekly-average and 10/30-percent coverage missing. Exact propofol value/product-specific clinical claims need source reconciliation."
+    },
+    {
+      "id": "pncalc-027",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#lipid-energy-ledger",
+      "sha256": "abab73ffc139cbed11d9bf889c48cb329a6d8d7f834ee52d254ed34e490511cb",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Numerical energy checks passed; source weekly-average and 10/30-percent coverage missing. Exact propofol value/product-specific clinical claims need source reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-027",
+        "value": "500",
+        "expected": "500",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-028",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#lipid-energy-ledger",
+      "sha256": "90f362ea7f96d2fc065721de889d86bcaa768a64b1ef3b66bfb8e3dd896132a0",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Numerical energy checks passed; source weekly-average and 10/30-percent coverage missing. Exact propofol value/product-specific clinical claims need source reconciliation."
+    },
+    {
+      "id": "pncalc-029",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#stock-solutions-additives",
+      "sha256": "30a06446c88b5adae31e3334b357df606b8c6adf5d77255239893d0fd13b97a1",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Concentration arithmetic rechecked; historical September30 scoped review preserved. Source dual-ion and compatibility interpretation remain open."
+    },
+    {
+      "id": "pncalc-030",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#stock-solutions-additives",
+      "sha256": "aaa2dd55588b39ef7de4e2c11c8771f9d485022b37a7e2613ab447d70e87bf7f",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Concentration arithmetic rechecked; historical September30 scoped review preserved. Source dual-ion and compatibility interpretation remain open."
+    },
+    {
+      "id": "pncalc-031",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#stock-solutions-additives",
+      "sha256": "3bf2d276455463da47310ad426e2393c105e2c94001ff5705a0bdd10647261a3",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Concentration arithmetic rechecked; historical September30 scoped review preserved. Source dual-ion and compatibility interpretation remain open."
+    },
+    {
+      "id": "pncalc-032",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#stock-solutions-additives",
+      "sha256": "e66d30c738304d809b62cc04735728c8e8e0750ffda828ec94492f93e7971d25",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Concentration arithmetic rechecked; historical September30 scoped review preserved. Source dual-ion and compatibility interpretation remain open."
+    },
+    {
+      "id": "pncalc-033",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#stock-solutions-additives",
+      "sha256": "22c1007a6a985a76f197e69ed81e17a63a2bd82ca47dd3d8d0160bdf3bd7bee2",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Concentration arithmetic rechecked; historical September30 scoped review preserved. Source dual-ion and compatibility interpretation remain open.",
+      "independentArithmetic": {
+        "label": "pncalc-033",
+        "value": "6",
+        "expected": "6",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-034",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#stock-solutions-additives",
+      "sha256": "9beb6ef40e81be971f08ea185c8c0eb2065a7c0ce7c6b880601105f812ff0a46",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Concentration arithmetic rechecked; historical September30 scoped review preserved. Source dual-ion and compatibility interpretation remain open."
+    },
+    {
+      "id": "pncalc-035",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#rate-final-audit",
+      "sha256": "ff0431d81cc1c67ea5c5e33ff68859a916b3ddeac985055ede4eaa00d1f0e006",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Daily totals/rate methods read and embedded arithmetic checked. Complete source order coverage and clinical monitoring/release claims remain open."
+    },
+    {
+      "id": "pncalc-036",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#rate-final-audit",
+      "sha256": "bb0d7c93ea55d0998296b68f46e2ffbd20bb62e9f532aa0c608eed051063b107",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Daily totals/rate methods read and embedded arithmetic checked. Complete source order coverage and clinical monitoring/release claims remain open."
+    },
+    {
+      "id": "pncalc-037",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#rate-final-audit",
+      "sha256": "b4e157ee5c1f505befbfd34123b660d055549122f2e775640ef701c8dcd60ccb",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Daily totals/rate methods read and embedded arithmetic checked. Complete source order coverage and clinical monitoring/release claims remain open."
+    },
+    {
+      "id": "pncalc-038",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#rate-final-audit",
+      "sha256": "2cf8958c8f8581a0c2ad5f191676b5a0ba26ea92698b01b3a2ba1e4a1372ff4f",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Daily totals/rate methods read and embedded arithmetic checked. Complete source order coverage and clinical monitoring/release claims remain open."
+    },
+    {
+      "id": "pncalc-039",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#rate-final-audit",
+      "sha256": "19105df98c1dd6c865de48597a5906162d3758388a0cc79684334aea0f758baa",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Daily totals/rate methods read and embedded arithmetic checked. Complete source order coverage and clinical monitoring/release claims remain open."
+    },
+    {
+      "id": "pncalc-040",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#rate-final-audit",
+      "sha256": "696b1c89cb80f241cf272681bc5452f2a78f0c77a3499dbb1b3642d1b24ad580",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Daily totals/rate methods read and embedded arithmetic checked. Complete source order coverage and clinical monitoring/release claims remain open."
+    },
+    {
+      "id": "pncalc-050",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "c68a946e2feb23a47b6b356cfd315424a62143032f14316bf158c98a3e448b64",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-050",
+        "value": "21.5",
+        "expected": "21.5",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-051",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "b39fcb6dc7dd380c5c5d4d820a8d292a79295fbbd00c82b314d2723cfc323d36",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-051",
+        "value": "23.5",
+        "expected": "23.5",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-052",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "333571b4d38d83fe28a2502fb4a804f363c1df65e3790f4cf3ed0a1da2590cd4",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-052",
+        "value": "23.5",
+        "expected": "23.5",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-053",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "accd338e2bf50e3a5202dbc1e56fa262fb367fbe0df0d9770972cc6d3c215811",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-053",
+        "value": "24.7",
+        "expected": "24.7",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-054",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "c5f1c637fd109aaa2a7dcaa8d23625e5e82dc0404339518632e3af53cbca6dc5",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-054",
+        "value": "33.1",
+        "expected": "33.1",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-055",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "f2b92152f710471f4bbbfccdffe0e664dc6ae6d479268eedc07a0ef36fb364a6",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-055",
+        "value": "27.7",
+        "expected": "27.7",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-056",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "b6a80de990b2a700b2530ffd082f6b0f054b0e34313c7460f987565a357a3bcd",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-056",
+        "value": "25.8",
+        "expected": "25.8",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-057",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "aafda794a1dcc678dbe04bc78ae03f9c463571921f3c85cf7b3cd4945cb16d1a",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-057",
+        "value": "28.7",
+        "expected": "28.7",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-058",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "b1db86b81031f8ceb13672cd2193e545beb72b9be88fa45373370cbbe8e199dc",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-058",
+        "value": "34.7",
+        "expected": "34.7",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-059",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "2f0d4ba297d23603f9ac284210e3e9bfc0b0fe651f6985a1a2817009a1a13618",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-059",
+        "value": "17.0",
+        "expected": "17",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-060",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "26c697a7d3f666c9a355239596fe982ec5ab52b57bcc66b06d46013133da5f89",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-060",
+        "value": "59.2",
+        "expected": "59.2",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-061",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "29da860abfbbf3d1300d9d7da4f0e4848029d933d6fb6ae8c17311c56df991e4",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-061",
+        "value": "52.4",
+        "expected": "52.4",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-062",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "745d803aedecb289b00afab76049938fd598327a888a8173f8ae7b01d87c1604",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-062",
+        "value": "68.4",
+        "expected": "68.4",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-063",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "54a8f0cf9ee4e625b057e3388072ff80f43885d70c960bc0744e27d3ed775994",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-063",
+        "value": "59.3",
+        "expected": "59.3",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-064",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "3f0a50bb87cb1ca1b7d3fb60635f6aa1147fd2873ed0fd61abd86eb7f52bc906",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-064",
+        "value": "75.3",
+        "expected": "75.3",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-065",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "ba1bf0a9b781fd1c5270a6db82d95456eeea764b176114dd05e20f35a4d1be32",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-065",
+        "value": "68.5",
+        "expected": "68.5",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-066",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "5df1e6f992e91d85b4b049e76cb3e6d730d9675320feeaa479eadf908789c3f6",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-066",
+        "value": "82.2",
+        "expected": "82.2",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-067",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "a48be794bdff2b5bb4a6a970cb9aa3e1716108b13484b8766a328858ae6ff2f9",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-067",
+        "value": "66.2",
+        "expected": "66.2",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-068",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "3eda8244547c6c66d3c5783e32d38c2e5582f1f1ba8e59f42d4c21106e4715a4",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-068",
+        "value": "63.8",
+        "expected": "63.8",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-069",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "0b0f3be3face52ad29178fbd5b57366418da243761f9e241de0de31d7faf2b8f",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-069",
+        "value": "73.1",
+        "expected": "73.1",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-070",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "3b31b37a7b522f053e2c3ac6fb8c031d6db8fbfeaf99daa2d80302dd23f9ca62",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-070",
+        "value": "72.0",
+        "expected": "72",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-071",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "64217d0c3e7a1b390a6da07c8f0cdc61c11c322667f91d4b74c301a8a4b9a751",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-071",
+        "value": "67.0",
+        "expected": "67",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-072",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "2d046b9ca63c927d781759ebf986c5d9803fb93ed797999eecb7fb1100598680",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-072",
+        "value": "86.0",
+        "expected": "86",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-073",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "02cc7dfcde264911bd177d2ce6dfbd3840c839df3a5da5da4cd1890d892fa376",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-073",
+        "value": "77.0",
+        "expected": "77",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-074",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "54be1ef583630b6650e209bd966e0514c7067616c15a3f39db46c0ff6991b76d",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-074",
+        "value": "62.0",
+        "expected": "62",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-075",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "59f6a4fbb31c1d9ecf9f8b54ee3bbf553d306439f648b3f0316276a9f59af671",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-075",
+        "value": "95.0",
+        "expected": "95",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-076",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "531ea54862c98ddacbf663a86ebbc136a353772492f7a2758211a9a10a5f704a",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-076",
+        "value": "78.0",
+        "expected": "78",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-077",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "00388892cb8b42d672e641c602815ed6f39fd5bb55175b3f9ae972710adb2dae",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-077",
+        "value": "66.0",
+        "expected": "66",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-078",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "cf0610a1d973a90666a347ef8a558736db54ae8ec57e1249f6d34ee58dca5fcb",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-078",
+        "value": "88.0",
+        "expected": "88",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-079",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "bb3f3ae1d9f6832481adf50e01714bbbf35fbd29e34572cc3483a4864786193c",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-079",
+        "value": "82.0",
+        "expected": "82",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-080",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "a054da195b28396fe7081b169ecbbf44e40bc379fcd383c2c2bb8264003cc05b",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-080",
+        "value": "1599",
+        "expected": "1599",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-081",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "03934e7f1092d917d2bae12ae992d63c4eda2cd6fb2e8896875323986742034d",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-081",
+        "value": "1295",
+        "expected": "1295",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-082",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "43acda8f76c5a23f38c7a22b09780953acb34e23e9b2b5a79721f8be57612f3b",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-082",
+        "value": "1755",
+        "expected": "1755",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-083",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "e3f45330806b0b0a0ffb5dcdab24740ed0e10cc4d5e8166728815886d02834af",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-083",
+        "value": "1452",
+        "expected": "1452",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-084",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "f705672da251ee3d5473cc4cde06e4252dec8f9e7a52d8e39927c4a2013104cf",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-084",
+        "value": "1580",
+        "expected": "1580",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-085",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "0a88cde0b4bbc8fb966f5edf40051268d7b5c5ea0416b5775e9c1c9e7366f8d5",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-085",
+        "value": "1219",
+        "expected": "1219",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-086",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "cae648176ed1aa5a5f866faa831c3d0447dc36437f00ecbfd6d2accc9fcdcf30",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-086",
+        "value": "2043",
+        "expected": "2043",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-087",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "c4be2016c147b1506d350d097308c39f05e59d09ffb22d9ef7ac4d918601b390",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-087",
+        "value": "1152",
+        "expected": "1152",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-088",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "0461b0aa2f4324feeb67960d360d458a66e18c1d4e2b9087e18bb12520b5f7d9",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-088",
+        "value": "1550",
+        "expected": "1550",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-089",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#calculation-foundations",
+      "sha256": "3342f4c1fd8c8232b13897e7b9e05a4ff3fd41c12d83b689b56703d567d6b315",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Conversions supported by previously reviewed calculation dependencies. BMI/IBW/adjusted-weight source and clinical weight-selection claims still need supplied-book reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-089",
+        "value": "1743",
+        "expected": "1743",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-090",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#dextrose-gir",
+      "sha256": "4ad3ef4c2a245a197ecb80be7e1f48d6c05889462194a4f6896112167ffa1d23",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Numerical formula checks passed. Source proportion/limit distinctions and retained clinical claims require reconciliation; not a whole-lesson clinical verification.",
+      "independentArithmetic": {
+        "label": "pncalc-090",
+        "value": "2.08",
+        "expected": "2.08",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-091",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#dextrose-gir",
+      "sha256": "555a5e51ec76e75a6052a132e7c65c349794bf88fd6a952109e484f26c020925",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Numerical formula checks passed. Source proportion/limit distinctions and retained clinical claims require reconciliation; not a whole-lesson clinical verification.",
+      "independentArithmetic": {
+        "label": "pncalc-091",
+        "value": "2.08",
+        "expected": "2.08",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-092",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#dextrose-gir",
+      "sha256": "36ce562a7af2b88041838bb9bcc14fa7fd00e0c6fbb05dd0685132a3ef0b67a5",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Numerical formula checks passed. Source proportion/limit distinctions and retained clinical claims require reconciliation; not a whole-lesson clinical verification.",
+      "independentArithmetic": {
+        "label": "pncalc-092",
+        "value": "2.08",
+        "expected": "2.08",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-093",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#dextrose-gir",
+      "sha256": "a89b180021f550a64acc52f6a720965f9153269d224f85eae4c6c337f98a6060",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Numerical formula checks passed. Source proportion/limit distinctions and retained clinical claims require reconciliation; not a whole-lesson clinical verification.",
+      "independentArithmetic": {
+        "label": "pncalc-093",
+        "value": "2.78",
+        "expected": "2.78",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-094",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#dextrose-gir",
+      "sha256": "93815e1bc621a1369578f083e2b5fabc379cd4e86b298c971d6e009f7846f24b",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Numerical formula checks passed. Source proportion/limit distinctions and retained clinical claims require reconciliation; not a whole-lesson clinical verification.",
+      "independentArithmetic": {
+        "label": "pncalc-094",
+        "value": "2.31",
+        "expected": "2.31",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-095",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#dextrose-gir",
+      "sha256": "abcc2ef31d18bcc512e42c7b36d4af952547736b827b5c2e6fabe3add0265a0c",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Numerical formula checks passed. Source proportion/limit distinctions and retained clinical claims require reconciliation; not a whole-lesson clinical verification.",
+      "independentArithmetic": {
+        "label": "pncalc-095",
+        "value": "2.42",
+        "expected": "2.42",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-096",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#dextrose-gir",
+      "sha256": "22eebf1b1bfeff6ccafb1fca9df840669c6d552f739f6f9c5cb95c99bb39e604",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Numerical formula checks passed. Source proportion/limit distinctions and retained clinical claims require reconciliation; not a whole-lesson clinical verification.",
+      "independentArithmetic": {
+        "label": "pncalc-096",
+        "value": "3.05",
+        "expected": "3.05",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-097",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#dextrose-gir",
+      "sha256": "942d0e9eae245234d9974eb588a7622ee18b630af68cc5ebdf9a4e95abd17dd0",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Numerical formula checks passed. Source proportion/limit distinctions and retained clinical claims require reconciliation; not a whole-lesson clinical verification.",
+      "independentArithmetic": {
+        "label": "pncalc-097",
+        "value": "3.53",
+        "expected": "3.53",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-098",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#dextrose-gir",
+      "sha256": "73680ae5fc60f7c8b85641f324be2d833095e84b7423ef566d9e1a21dc17876b",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Numerical formula checks passed. Source proportion/limit distinctions and retained clinical claims require reconciliation; not a whole-lesson clinical verification.",
+      "independentArithmetic": {
+        "label": "pncalc-098",
+        "value": "3.77",
+        "expected": "3.77",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-099",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#dextrose-gir",
+      "sha256": "bce7fb7df2db87a85d6323ffc0c39616d56a94e28f6ce6ac5d6d78a3048f99da",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Numerical formula checks passed. Source proportion/limit distinctions and retained clinical claims require reconciliation; not a whole-lesson clinical verification.",
+      "independentArithmetic": {
+        "label": "pncalc-099",
+        "value": "1.81",
+        "expected": "1.81",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-100",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#stock-solutions-additives",
+      "sha256": "cccff0bc7ea50d7e1c21df48a48137a1c68bf85445c4101e79a8f71716534395",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Concentration arithmetic rechecked; historical September30 scoped review preserved. Source dual-ion and compatibility interpretation remain open.",
+      "independentArithmetic": {
+        "label": "pncalc-100",
+        "value": "400.00",
+        "expected": "400",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-101",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#stock-solutions-additives",
+      "sha256": "0a1b6313a70d54ee3062fc4a0f4a0f2d0e9c0d8a9760d22bd3dad47defbea162",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Concentration arithmetic rechecked; historical September30 scoped review preserved. Source dual-ion and compatibility interpretation remain open.",
+      "independentArithmetic": {
+        "label": "pncalc-101",
+        "value": "500.00",
+        "expected": "500",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-102",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#stock-solutions-additives",
+      "sha256": "85f7364bc19462f875225d710930ca620bd5cab7fd6a2750536ff8b2721e9339",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Concentration arithmetic rechecked; historical September30 scoped review preserved. Source dual-ion and compatibility interpretation remain open.",
+      "independentArithmetic": {
+        "label": "pncalc-102",
+        "value": "900.00",
+        "expected": "900",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-103",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#stock-solutions-additives",
+      "sha256": "7edc7d7100d74d60122100c4dfb13fdecb665c0058415733f401c36c8967d493",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Concentration arithmetic rechecked; historical September30 scoped review preserved. Source dual-ion and compatibility interpretation remain open.",
+      "independentArithmetic": {
+        "label": "pncalc-103",
+        "value": "700.00",
+        "expected": "700",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-104",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#lipid-energy-ledger",
+      "sha256": "078436d57b2ac760c62e9a76d97860c0fbb93181ba819655670e1c347d0fb24a",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Numerical energy checks passed; source weekly-average and 10/30-percent coverage missing. Exact propofol value/product-specific clinical claims need source reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-104",
+        "value": "300.00",
+        "expected": "300",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-105",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#lipid-energy-ledger",
+      "sha256": "764a946d0db1c36683e0bf173237142ac6fcdce87b690ff6cfb6a3837c13e0cf",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Numerical energy checks passed; source weekly-average and 10/30-percent coverage missing. Exact propofol value/product-specific clinical claims need source reconciliation.",
+      "independentArithmetic": {
+        "label": "pncalc-105",
+        "value": "400.00",
+        "expected": "400",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-106",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#stock-solutions-additives",
+      "sha256": "ab92839f9b729224c52c80d49ddfafe51ae16e49114112a8d9128c9815b9ce0d",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Concentration arithmetic rechecked; historical September30 scoped review preserved. Source dual-ion and compatibility interpretation remain open.",
+      "independentArithmetic": {
+        "label": "pncalc-106",
+        "value": "20.00",
+        "expected": "20",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-107",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#stock-solutions-additives",
+      "sha256": "775cf4c86e09427c9ba46b19b234e80e2675f0b288e9cd06601cdbccd8f4315a",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Concentration arithmetic rechecked; historical September30 scoped review preserved. Source dual-ion and compatibility interpretation remain open.",
+      "independentArithmetic": {
+        "label": "pncalc-107",
+        "value": "6.00",
+        "expected": "6",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-108",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#stock-solutions-additives",
+      "sha256": "fe9eb1be91b7ab65861c63acfc207a5666cfe74363e8e55d53579e0f27dae226",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Concentration arithmetic rechecked; historical September30 scoped review preserved. Source dual-ion and compatibility interpretation remain open.",
+      "independentArithmetic": {
+        "label": "pncalc-108",
+        "value": "10.00",
+        "expected": "10",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-109",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "reviewHref": "#stock-solutions-additives",
+      "sha256": "6454430a39640f756e5d0b0e67ef3a15299a63607c2e2178d426ec73b395a8f4",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": true,
+      "remainingSourceReview": "Concentration arithmetic rechecked; historical September30 scoped review preserved. Source dual-ion and compatibility interpretation remain open.",
+      "independentArithmetic": {
+        "label": "pncalc-109",
+        "value": "15.00",
+        "expected": "15",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-fluid-001",
+      "status": "verified",
+      "answerIndex": 0,
+      "reviewHref": "#fluid-requirements",
+      "sha256": "dd0e1b1877239bb71ac59d1f8e27a3811f3c3822b79e71d11f60896b413035d5",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": false,
+      "sourcePrintedPage": 150,
+      "sourcePdfPage": 158,
+      "scope": "Original question applying the supplied fluid method or explicit exercise values; no copied book assessment."
+    },
+    {
+      "id": "pncalc-fluid-002",
+      "status": "verified",
+      "answerIndex": 1,
+      "reviewHref": "#fluid-requirements",
+      "sha256": "507d4e7b5c1ae2d7e9f9d1fa486e1b65eef76fc022872a578a9d1b489570fdc5",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": false,
+      "sourcePrintedPage": 150,
+      "sourcePdfPage": 158,
+      "scope": "Original question applying the supplied fluid method or explicit exercise values; no copied book assessment."
+    },
+    {
+      "id": "pncalc-fluid-003",
+      "status": "verified",
+      "answerIndex": 2,
+      "reviewHref": "#fluid-requirements",
+      "sha256": "03fbd9843f27ea7fa099fc2147de561cc7fe4a46e5d40d9b853be0179c863a08",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": false,
+      "sourcePrintedPage": 150,
+      "sourcePdfPage": 158,
+      "scope": "Original question applying the supplied fluid method or explicit exercise values; no copied book assessment.",
+      "independentArithmetic": {
+        "label": "pncalc-fluid-003",
+        "value": "2140",
+        "expected": "2140",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-fluid-004",
+      "status": "verified",
+      "answerIndex": 3,
+      "reviewHref": "#fluid-requirements",
+      "sha256": "876f5b0da5d46d604fb177f2b382c3f69dc7861d44c8f9b5afa532ff355f8695",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": false,
+      "sourcePrintedPage": 150,
+      "sourcePdfPage": 158,
+      "scope": "Original question applying the supplied fluid method or explicit exercise values; no copied book assessment.",
+      "independentArithmetic": {
+        "label": "pncalc-fluid-004",
+        "value": "1900",
+        "expected": "1900",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-fluid-005",
+      "status": "verified",
+      "answerIndex": 0,
+      "reviewHref": "#fluid-requirements",
+      "sha256": "e4eb7a2dbc2872f9a1acc313c8b0167dcd33a0cb8e877165f5507261bdf4fa91",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": false,
+      "sourcePrintedPage": 150,
+      "sourcePdfPage": 158,
+      "scope": "Original question applying the supplied fluid method or explicit exercise values; no copied book assessment.",
+      "independentArithmetic": {
+        "label": "pncalc-fluid-005",
+        "value": "1830.0",
+        "expected": "1830",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-fluid-006",
+      "status": "verified",
+      "answerIndex": 1,
+      "reviewHref": "#fluid-requirements",
+      "sha256": "342f17301c1d90f1b1c95d08bc27f4ae87bbc066b010202d582f80b36036b6dd",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": false,
+      "sourcePrintedPage": 150,
+      "sourcePdfPage": 158,
+      "scope": "Original question applying the supplied fluid method or explicit exercise values; no copied book assessment.",
+      "independentArithmetic": {
+        "label": "pncalc-fluid-006",
+        "value": "2600",
+        "expected": "2600",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-fluid-007",
+      "status": "verified",
+      "answerIndex": 2,
+      "reviewHref": "#fluid-requirements",
+      "sha256": "650eb3a21b19e7ff53aeddf033869affcbf8853011ff6bb3101c15d3259f8be8",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": false,
+      "sourcePrintedPage": 150,
+      "sourcePdfPage": 158,
+      "scope": "Original question applying the supplied fluid method or explicit exercise values; no copied book assessment."
+    },
+    {
+      "id": "pncalc-fluid-008",
+      "status": "verified",
+      "answerIndex": 3,
+      "reviewHref": "#fluid-requirements",
+      "sha256": "44723c9043ed594acc977521a4d0ed6f0785f45ed5511949738347ad10d93df7",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": false,
+      "sourcePrintedPage": 150,
+      "sourcePdfPage": 158,
+      "scope": "Original question applying the supplied fluid method or explicit exercise values; no copied book assessment.",
+      "independentArithmetic": {
+        "label": "pncalc-fluid-008",
+        "value": "2400",
+        "expected": "2400",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-fluid-009",
+      "status": "verified",
+      "answerIndex": 0,
+      "reviewHref": "#fluid-requirements",
+      "sha256": "ebe24c17e076a0e826de3d5ffb64ae5b92cf39f781c6ccd0791b3038d7e8ebd0",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": false,
+      "sourcePrintedPage": 150,
+      "sourcePdfPage": 158,
+      "scope": "Original question applying the supplied fluid method or explicit exercise values; no copied book assessment.",
+      "independentArithmetic": {
+        "label": "pncalc-fluid-009",
+        "value": "1850",
+        "expected": "1850",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-fluid-010",
+      "status": "verified",
+      "answerIndex": 1,
+      "reviewHref": "#fluid-requirements",
+      "sha256": "2c58843321130e9f07e0327d65210c372619bbe63dd707fbb391aaba6520cd36",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": false,
+      "sourcePrintedPage": 150,
+      "sourcePdfPage": 158,
+      "scope": "Original question applying the supplied fluid method or explicit exercise values; no copied book assessment.",
+      "independentArithmetic": {
+        "label": "pncalc-fluid-010",
+        "value": "2100",
+        "expected": "2100",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-fluid-011",
+      "status": "verified",
+      "answerIndex": 2,
+      "reviewHref": "#fluid-requirements",
+      "sha256": "ca086a93d0f57c3a18b2c687d1671661aca4d7ea7533420f96ee62e13b8d25cd",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": false,
+      "sourcePrintedPage": 150,
+      "sourcePdfPage": 158,
+      "scope": "Original question applying the supplied fluid method or explicit exercise values; no copied book assessment.",
+      "independentArithmetic": {
+        "label": "pncalc-fluid-011",
+        "value": "2350",
+        "expected": "2350",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-fluid-012",
+      "status": "verified",
+      "answerIndex": 3,
+      "reviewHref": "#fluid-requirements",
+      "sha256": "43797f5f9982c7b6417cc44e656d7237468fd31af2aeedd904f23553b1b302fd",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": false,
+      "sourcePrintedPage": 150,
+      "sourcePdfPage": 158,
+      "scope": "Original question applying the supplied fluid method or explicit exercise values; no copied book assessment."
+    },
+    {
+      "id": "pncalc-fluid-013",
+      "status": "verified",
+      "answerIndex": 0,
+      "reviewHref": "#fluid-requirements",
+      "sha256": "7016f8c5365c70cc11bcaed317a6f42f6b1533fb6441240c6747cae8c3539c01",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": false,
+      "sourcePrintedPage": 150,
+      "sourcePdfPage": 158,
+      "scope": "Original question applying the supplied fluid method or explicit exercise values; no copied book assessment.",
+      "independentArithmetic": {
+        "label": "pncalc-fluid-013",
+        "value": "2740",
+        "expected": "2740",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-fluid-014",
+      "status": "verified",
+      "answerIndex": 1,
+      "reviewHref": "#fluid-requirements",
+      "sha256": "e98f7bc9fff0eb4b9402fbdedd81bf67d0016c8bb35df5226fb8e06f2aece09e",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": false,
+      "sourcePrintedPage": 150,
+      "sourcePdfPage": 158,
+      "scope": "Original question applying the supplied fluid method or explicit exercise values; no copied book assessment.",
+      "independentArithmetic": {
+        "label": "pncalc-fluid-014",
+        "value": "100",
+        "expected": "100",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    },
+    {
+      "id": "pncalc-fluid-015",
+      "status": "verified",
+      "answerIndex": 2,
+      "reviewHref": "#fluid-requirements",
+      "sha256": "f9b89a5816c178bdd9c3d4de4274456527202987a7951e17c99f0749ecb08990",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": false,
+      "sourcePrintedPage": 150,
+      "sourcePdfPage": 158,
+      "scope": "Original question applying the supplied fluid method or explicit exercise values; no copied book assessment."
+    },
+    {
+      "id": "pncalc-fluid-016",
+      "status": "verified",
+      "answerIndex": 3,
+      "reviewHref": "#fluid-requirements",
+      "sha256": "fe627b0ff87cea07d5ecdd9a11a8496ec874310df017940f03d149d061ed427c",
+      "individualRead": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "preservedExistingItem": false,
+      "sourcePrintedPage": 150,
+      "sourcePdfPage": 158,
+      "scope": "Original question applying the supplied fluid method or explicit exercise values; no copied book assessment.",
+      "independentArithmetic": {
+        "label": "pncalc-fluid-016",
+        "value": "1.85",
+        "expected": "1.85",
+        "passed": true,
+        "kind": "original_or_retained"
+      }
+    }
+  ],
+  "embeddedReview": [
+    {
+      "lesson": "fluid-requirements",
+      "status": "verified",
+      "answerIndex": 1,
+      "sha256": "4ce5316f162a92c0f7de25b526eea699a6133bc47c120cb3a5d05214987b6a33",
+      "read": true,
+      "arithmeticChecked": true
+    },
+    {
+      "lesson": "calculation-foundations",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "sha256": "98e52f25a4ab8c25165d8f4f8c17dbac9bb07e2838957d495ce5326bca566d85",
+      "read": true,
+      "arithmeticChecked": true
+    },
+    {
+      "lesson": "protein-energy-targets",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "sha256": "676ddd04d5078509a31f523d12e2d06be500c2ac6d6a61cbb5cf6010cd0848ff",
+      "read": true,
+      "arithmeticChecked": true
+    },
+    {
+      "lesson": "dextrose-gir",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "sha256": "2e1073697471af030034f1ff84e29e07e14ea577924324e468abeeeb30ca786b",
+      "read": true,
+      "arithmeticChecked": true
+    },
+    {
+      "lesson": "lipid-energy-ledger",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "sha256": "635c702c1dc5d8ea6b78d4ce6d233a1dd127235742db1ee140580e72e8a88d64",
+      "read": true,
+      "arithmeticChecked": true
+    },
+    {
+      "lesson": "stock-solutions-additives",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "sha256": "081e0eec1bed86586a1a4652da6afc93443d1729fe23f6449275df45e25865f7",
+      "read": true,
+      "arithmeticChecked": true
+    },
+    {
+      "lesson": "rate-final-audit",
+      "status": "reviewing",
+      "answerIndex": 0,
+      "sha256": "89f02d5886bce86e2946f227e59e3a2c29faffd6e4aa24a9092e6ab8bf76c3ce",
+      "read": true,
+      "arithmeticChecked": true
+    }
+  ],
+  "validation": {
+    "independentOriginalOrRetainedArithmetic": {
+      "passed": true,
+      "count": 95,
+      "scope": "All 64 numerical retained bank items, all numerical new bank items, all seven checks and displayed numeric examples. Mifflin arithmetic uses the explicitly supplied equation; its educational source support remains unresolved.",
+      "checks": [
+        {
+          "label": "pncalc-007",
+          "value": "198.0",
+          "expected": "198",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-008",
+          "value": "830",
+          "expected": "830",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-027",
+          "value": "500",
+          "expected": "500",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-033",
+          "value": "6",
+          "expected": "6",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-050",
+          "value": "21.5",
+          "expected": "21.5",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-051",
+          "value": "23.5",
+          "expected": "23.5",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-052",
+          "value": "23.5",
+          "expected": "23.5",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-053",
+          "value": "24.7",
+          "expected": "24.7",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-054",
+          "value": "33.1",
+          "expected": "33.1",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-055",
+          "value": "27.7",
+          "expected": "27.7",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-056",
+          "value": "25.8",
+          "expected": "25.8",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-057",
+          "value": "28.7",
+          "expected": "28.7",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-058",
+          "value": "34.7",
+          "expected": "34.7",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-059",
+          "value": "17.0",
+          "expected": "17",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-060",
+          "value": "59.2",
+          "expected": "59.2",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-061",
+          "value": "52.4",
+          "expected": "52.4",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-062",
+          "value": "68.4",
+          "expected": "68.4",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-063",
+          "value": "59.3",
+          "expected": "59.3",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-064",
+          "value": "75.3",
+          "expected": "75.3",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-065",
+          "value": "68.5",
+          "expected": "68.5",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-066",
+          "value": "82.2",
+          "expected": "82.2",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-067",
+          "value": "66.2",
+          "expected": "66.2",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-068",
+          "value": "63.8",
+          "expected": "63.8",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-069",
+          "value": "73.1",
+          "expected": "73.1",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-070",
+          "value": "72.0",
+          "expected": "72",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-071",
+          "value": "67.0",
+          "expected": "67",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-072",
+          "value": "86.0",
+          "expected": "86",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-073",
+          "value": "77.0",
+          "expected": "77",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-074",
+          "value": "62.0",
+          "expected": "62",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-075",
+          "value": "95.0",
+          "expected": "95",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-076",
+          "value": "78.0",
+          "expected": "78",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-077",
+          "value": "66.0",
+          "expected": "66",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-078",
+          "value": "88.0",
+          "expected": "88",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-079",
+          "value": "82.0",
+          "expected": "82",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-080",
+          "value": "1599",
+          "expected": "1599",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-081",
+          "value": "1295",
+          "expected": "1295",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-082",
+          "value": "1755",
+          "expected": "1755",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-083",
+          "value": "1452",
+          "expected": "1452",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-084",
+          "value": "1580",
+          "expected": "1580",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-085",
+          "value": "1219",
+          "expected": "1219",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-086",
+          "value": "2043",
+          "expected": "2043",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-087",
+          "value": "1152",
+          "expected": "1152",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-088",
+          "value": "1550",
+          "expected": "1550",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-089",
+          "value": "1743",
+          "expected": "1743",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-090",
+          "value": "2.08",
+          "expected": "2.08",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-091",
+          "value": "2.08",
+          "expected": "2.08",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-092",
+          "value": "2.08",
+          "expected": "2.08",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-093",
+          "value": "2.78",
+          "expected": "2.78",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-094",
+          "value": "2.31",
+          "expected": "2.31",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-095",
+          "value": "2.42",
+          "expected": "2.42",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-096",
+          "value": "3.05",
+          "expected": "3.05",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-097",
+          "value": "3.53",
+          "expected": "3.53",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-098",
+          "value": "3.77",
+          "expected": "3.77",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-099",
+          "value": "1.81",
+          "expected": "1.81",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-100",
+          "value": "400.00",
+          "expected": "400",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-101",
+          "value": "500.00",
+          "expected": "500",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-102",
+          "value": "900.00",
+          "expected": "900",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-103",
+          "value": "700.00",
+          "expected": "700",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-104",
+          "value": "300.00",
+          "expected": "300",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-105",
+          "value": "400.00",
+          "expected": "400",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-106",
+          "value": "20.00",
+          "expected": "20",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-107",
+          "value": "6.00",
+          "expected": "6",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-108",
+          "value": "10.00",
+          "expected": "10",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-109",
+          "value": "15.00",
+          "expected": "15",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-fluid-003",
+          "value": "2140",
+          "expected": "2140",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-fluid-004",
+          "value": "1900",
+          "expected": "1900",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-fluid-005",
+          "value": "1830.0",
+          "expected": "1830",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-fluid-006",
+          "value": "2600",
+          "expected": "2600",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-fluid-008",
+          "value": "2400",
+          "expected": "2400",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-fluid-009",
+          "value": "1850",
+          "expected": "1850",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-fluid-010",
+          "value": "2100",
+          "expected": "2100",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-fluid-011",
+          "value": "2350",
+          "expected": "2350",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-fluid-013",
+          "value": "2740",
+          "expected": "2740",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-fluid-014",
+          "value": "100",
+          "expected": "100",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-fluid-016",
+          "value": "1.85",
+          "expected": "1.85",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-fluid-007 lower",
+          "value": "1800",
+          "expected": "1800",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "pncalc-fluid-007 upper",
+          "value": "2400",
+          "expected": "2400",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "check weight",
+          "value": "8E+1",
+          "expected": "80",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "check protein",
+          "value": "98.0",
+          "expected": "98",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "check GIR",
+          "value": "2.5",
+          "expected": "2.5",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "check lipid",
+          "value": "375",
+          "expected": "375",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "check dextrose",
+          "value": "5.0E+2",
+          "expected": "500",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "check rate",
+          "value": "120",
+          "expected": "120",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "check fluid/figure",
+          "value": "1850",
+          "expected": "1850",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "teaching lipid percent concentration",
+          "value": "0.2",
+          "expected": "0.2",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "teaching source percent AA",
+          "value": "0.1",
+          "expected": "0.1",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "teaching source percent dextrose",
+          "value": "0.7",
+          "expected": "0.7",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "teaching lipid energy",
+          "value": "500",
+          "expected": "500",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "teaching rate",
+          "value": "120",
+          "expected": "120",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "teaching GIR 240g24h /12h ratio",
+          "value": "2",
+          "expected": "2",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "teaching pound example",
+          "value": "4E+1",
+          "expected": "40",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "teaching fluid pound example",
+          "value": "1900",
+          "expected": "1900",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "teaching fluid 52 kg",
+          "value": "2140",
+          "expected": "2140",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "teaching adult range lower",
+          "value": "1800",
+          "expected": "1800",
+          "passed": true,
+          "kind": "original_or_retained"
+        },
+        {
+          "label": "teaching adult range upper",
+          "value": "2400",
+          "expected": "2400",
+          "passed": true,
+          "kind": "original_or_retained"
+        }
+      ]
+    },
+    "separateSourceExampleArithmetic": {
+      "passed": true,
+      "count": 58,
+      "sourceExamples": 54,
+      "scope": "All 54 chapter11 source exercises recalculated; multicomponent answers counted separately. Book4/5 carry rounded BEE into TEE; preserve that explicit method in source comparison.",
+      "checks": [
+        {
+          "example": 1,
+          "value": "2400",
+          "expected": "2400",
+          "passed": true
+        },
+        {
+          "example": 2,
+          "value": "2500",
+          "expected": "2500",
+          "passed": true
+        },
+        {
+          "example": 3,
+          "value": "1597",
+          "expected": "1597",
+          "passed": true
+        },
+        {
+          "example": 4,
+          "value": "2875",
+          "expected": "2875",
+          "passed": true
+        },
+        {
+          "example": "5 BEE",
+          "value": "1385",
+          "expected": "1385",
+          "passed": true
+        },
+        {
+          "example": "5 TEE uses rounded BEE",
+          "value": "2825",
+          "expected": "2825",
+          "passed": true
+        },
+        {
+          "example": 6,
+          "value": "82",
+          "expected": "82",
+          "passed": true
+        },
+        {
+          "example": 7,
+          "value": "122",
+          "expected": "122",
+          "passed": true
+        },
+        {
+          "example": 8,
+          "value": "10.8",
+          "expected": "10.8",
+          "passed": true
+        },
+        {
+          "example": 9,
+          "value": "102.00",
+          "expected": "102",
+          "passed": true
+        },
+        {
+          "example": 10,
+          "value": "1271",
+          "expected": "1271",
+          "passed": true
+        },
+        {
+          "example": 11,
+          "value": "432",
+          "expected": "432",
+          "passed": true
+        },
+        {
+          "example": 12,
+          "value": "1.22E+3",
+          "expected": "1220",
+          "passed": true
+        },
+        {
+          "example": 13,
+          "value": "1415",
+          "expected": "1415",
+          "passed": true
+        },
+        {
+          "example": 14,
+          "value": "388",
+          "expected": "388",
+          "passed": true
+        },
+        {
+          "example": 15,
+          "value": "533",
+          "expected": "533",
+          "passed": true
+        },
+        {
+          "example": 16,
+          "value": "8.1E+2",
+          "expected": "810",
+          "passed": true
+        },
+        {
+          "example": 17,
+          "value": "1260",
+          "expected": "1260",
+          "passed": true
+        },
+        {
+          "example": 18,
+          "value": "15.00",
+          "expected": "15",
+          "passed": true
+        },
+        {
+          "example": 19,
+          "value": "71.4",
+          "expected": "71.4",
+          "passed": true
+        },
+        {
+          "example": 20,
+          "value": "1088.00",
+          "expected": "1088",
+          "passed": true
+        },
+        {
+          "example": 21,
+          "value": "357",
+          "expected": "357",
+          "passed": true
+        },
+        {
+          "example": 22,
+          "value": "550.0",
+          "expected": "550",
+          "passed": true
+        },
+        {
+          "example": 23,
+          "value": "989",
+          "expected": "989",
+          "passed": true
+        },
+        {
+          "example": 24,
+          "value": "495",
+          "expected": "495",
+          "passed": true
+        },
+        {
+          "example": 25,
+          "value": "104",
+          "expected": "104",
+          "passed": true
+        },
+        {
+          "example": 26,
+          "value": "540",
+          "expected": "540",
+          "passed": true
+        },
+        {
+          "example": 27,
+          "value": "432",
+          "expected": "432",
+          "passed": true
+        },
+        {
+          "example": 28,
+          "value": "10",
+          "expected": "10",
+          "passed": true
+        },
+        {
+          "example": "29 acetate",
+          "value": "22.5",
+          "expected": "22.5",
+          "passed": true
+        },
+        {
+          "example": "29 NaCl",
+          "value": "8.75",
+          "expected": "8.75",
+          "passed": true
+        },
+        {
+          "example": "30 acetate",
+          "value": "15",
+          "expected": "15",
+          "passed": true
+        },
+        {
+          "example": "30 NaCl",
+          "value": "7.5",
+          "expected": "7.5",
+          "passed": true
+        },
+        {
+          "example": "31 K phosphate",
+          "value": "10",
+          "expected": "10",
+          "passed": true
+        },
+        {
+          "example": "31 KCl",
+          "value": "18.0",
+          "expected": "18",
+          "passed": true
+        },
+        {
+          "example": 32,
+          "value": "9.60",
+          "expected": "9.6",
+          "passed": true
+        },
+        {
+          "example": 33,
+          "value": "17",
+          "expected": "17",
+          "passed": true
+        },
+        {
+          "example": 34,
+          "value": "34",
+          "expected": "34",
+          "passed": true
+        },
+        {
+          "example": 35,
+          "value": "22",
+          "expected": "22",
+          "passed": true
+        },
+        {
+          "example": 36,
+          "value": "160",
+          "expected": "160",
+          "passed": true
+        },
+        {
+          "example": 37,
+          "value": "45",
+          "expected": "45",
+          "passed": true
+        },
+        {
+          "example": 38,
+          "value": "75",
+          "expected": "75",
+          "passed": true
+        },
+        {
+          "example": 39,
+          "value": "52",
+          "expected": "52",
+          "passed": true
+        },
+        {
+          "example": 40,
+          "value": "213.75",
+          "expected": "213.75",
+          "passed": true
+        },
+        {
+          "example": 41,
+          "value": "306.0000",
+          "expected": "306",
+          "passed": true
+        },
+        {
+          "example": 42,
+          "value": "612.00",
+          "expected": "612",
+          "passed": true
+        },
+        {
+          "example": 43,
+          "value": "2",
+          "expected": "2",
+          "passed": true
+        },
+        {
+          "example": 44,
+          "value": "1320.00",
+          "expected": "1320",
+          "passed": true
+        },
+        {
+          "example": 45,
+          "value": "19",
+          "expected": "19",
+          "passed": true
+        },
+        {
+          "example": 46,
+          "value": "357",
+          "expected": "357",
+          "passed": true
+        },
+        {
+          "example": 47,
+          "value": "6",
+          "expected": "6",
+          "passed": true
+        },
+        {
+          "example": 48,
+          "value": "6.8",
+          "expected": "6.8",
+          "passed": true
+        },
+        {
+          "example": 49,
+          "value": "26",
+          "expected": "26",
+          "passed": true
+        },
+        {
+          "example": 50,
+          "value": "5E+1",
+          "expected": "50",
+          "passed": true
+        },
+        {
+          "example": 51,
+          "value": "3",
+          "expected": "3",
+          "passed": true
+        },
+        {
+          "example": 52,
+          "value": "19",
+          "expected": "19",
+          "passed": true
+        },
+        {
+          "example": 53,
+          "value": "11",
+          "expected": "11",
+          "passed": true
+        },
+        {
+          "example": 54,
+          "value": "1E+1",
+          "expected": "10",
+          "passed": true
+        }
+      ]
+    },
+    "technical": {
+      "passed": true,
+      "module": "parenteral-nutrition-calculations",
+      "lessons": 7,
+      "questions": 116,
+      "newItems": 16,
+      "all100PriorItemsDeepEqual": true,
+      "uniqueNewIdsAndPrompts": true,
+      "validChoicesKeysAnchors": true,
+      "cumulativeItems": 5,
+      "newFluidArithmeticIncluded": true
+    },
+    "focusedAssessmentAudit": {
+      "modules": 1,
+      "questions": 116,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "parenteral-nutrition-calculations",
+          "lessons": 7,
+          "questions": 116,
+          "minimumLessonCoverage": 8
+        }
+      ]
+    },
+    "focusedAuditLimit": "Reference presence/lesson coverage is a structural check, not source accuracy or whole-module clinical verification.",
+    "productionBuild": {
+      "passed": true,
+      "staticPages": 567,
+      "scope": "Exact four-clinical-file candidate based on aa095f746bd6301262ffa3a801a94c52112b20bd",
+      "runtime": "Bundled Node; next build --webpack"
+    },
+    "browserQA": [
+      {
+        "build": "exact scoped production candidate",
+        "width": 1440,
+        "lessons": 7,
+        "figures": 7,
+        "checks": 7,
+        "all16NewQuestionsRenderedAndGradedCorrectly": true,
+        "prior100ItemsUnchanged": true,
+        "twoDistinctAttempts": true,
+        "incorrectOldItemFeedbackAndRemediation": true,
+        "testOnlyControlledShuffle": true,
+        "curriculum": true,
+        "sitemap": true,
+        "noOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "build": "exact scoped production candidate",
+        "width": 390,
+        "lessons": 7,
+        "figures": 7,
+        "checks": 7,
+        "all16NewQuestionsRenderedAndGradedCorrectly": true,
+        "prior100ItemsUnchanged": true,
+        "twoDistinctAttempts": true,
+        "incorrectOldItemFeedbackAndRemediation": true,
+        "testOnlyControlledShuffle": true,
+        "curriculum": true,
+        "sitemap": true,
+        "noOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "build": "current working Library integration",
+        "width": 390,
+        "narrowWidth": 320,
+        "fluidTopicSearch": true,
+        "stableModuleLink": true,
+        "figure": true,
+        "signedOutMemberBoundary": 401,
+        "noOverflow": true,
+        "pageErrors": []
+      }
+    ],
+    "renderedVisualReview": "All seven figures inspected at 1440 desktop and 390 mobile. Original viewport captures show the tops; additional complete mobile figure captures confirm bottom equations/units/wrapping. No horizontal overflow at 390/320. Sticky existing lesson navigation can overlap the top in element captures; complementary viewport captures were also inspected.",
+    "mobileFigureDimensions": [
+      {
+        "slug": "fluid-requirements",
+        "width": 350,
+        "height": 746.828125
+      },
+      {
+        "slug": "calculation-foundations",
+        "width": 350,
+        "height": 725.5
+      },
+      {
+        "slug": "protein-energy-targets",
+        "width": 350,
+        "height": 699.140625
+      },
+      {
+        "slug": "dextrose-gir",
+        "width": 350,
+        "height": 746.828125
+      },
+      {
+        "slug": "lipid-energy-ledger",
+        "width": 350,
+        "height": 725.5
+      },
+      {
+        "slug": "stock-solutions-additives",
+        "width": 350,
+        "height": 746.828125
+      },
+      {
+        "slug": "rate-final-audit",
+        "width": 350,
+        "height": 746.828125
+      }
+    ],
+    "preservation": "All 100 prior bank objects deep-equal HEAD. Prior six lessons/figures retained. Stable module path and existing IDs/anchors unchanged. Accounts/database/schema not changed."
+  },
+  "contentHashes": {
+    "src/data/modules/parenteralNutritionCalculations.js": "30880f5ff374d3258f1e0b89a548ebaaf62f8613406d378fb74cd1789c8c6d46",
+    "src/data/questionBanks/parenteralNutritionCalculations.js": "a1264e88a31812c8ec70bc02d7b12cbd3761c587d5b0fb84164892f230d003af",
+    "src/components/learn/ParenteralNutritionCalculationVisual.jsx": "20d927a1d0a0204e5f94cb16a3604f8fd9a6151613cd60c65089a0ddc61197ec",
+    "src/app/learn/pharmacy/modules/[slug]/page.jsx": "ab563735797af53ee1113a2520ed9719036056fb9facd53cd9682f458521a97f"
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "baseCommit": "aa095f746bd6301262ffa3a801a94c52112b20bd",
+    "commit": "pending",
+    "push": "pending",
+    "production": "not verified",
+    "receipt": "sequential-release-pn-2026-10-01.json"
+  },
+  "nextStartingPoint": "Continue the entire existing PN calculation module at Chapter 11 Determining Caloric Needs, printed 151/PDF 159: add/reconcile Harris-Benedict BEE and TEE, then protein/nitrogen, weekly lipids, dual-ion additives and complete-order calculations. Locate supplied-book dependencies for retained anthropometric, Mifflin, propofol and clinical GIR claims. Do not advance checklist entry 15 until the corresponding whole-module review is verified."
+}

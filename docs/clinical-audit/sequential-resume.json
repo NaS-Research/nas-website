@@ -41,8 +41,8 @@
   },
   "thisPass": {
     "guide": "Existing preparation guide expanded at use-quick-references",
-    "questionCoverage": "Six added guide checks, four standalone cumulative questions, 27 embedded checks and 188 new module-bank items; 12 PN prompts clarified and four existing lithium items repaired",
-    "validation": "Seven calculation units source/item/build/rendered and remote-push verified; 365 independent original-content/retained-question calculations passed in total, plus 23 separately recorded source-example checks.",
+    "questionCoverage": "Six added guide checks, four standalone cumulative questions,27 embedded checks and 188 new module-bank items;12 PN prompts clarified and four existing lithium items repaired. Existing PN module additionally expanded with one fluid check and 16 original fluid-bank questions; its prior 100 items preserved.",
+    "validation": "Seven calculation modules and one existing-module fluid section source/item/build/rendered verified;460 independent original-content/retained-question checks in total, plus81 separate source-example checks. Whole PN module remains reviewing.",
     "newModules": [
       "pharmacy-unit-conversions",
       "pharmacy-concentrations-specific-gravity",
@@ -59,16 +59,18 @@
     "pdfPage": 19,
     "section": "Required-formulas checklist",
     "dependencyRead": {
-      "chapter": 10,
+      "chapter": 11,
       "printedPages": [
-        146,
-        148
+        149,
+        168
       ],
       "pdfPages": [
-        154,
-        156
+        157,
+        176
       ],
-      "end": "Chapter 10 end"
+      "allTextAndVisualRead": true,
+      "status": "reviewing",
+      "note": "Whole chapter read and all 54 exercises recalculated; clinical module source reconciliation incomplete."
     },
     "completedEntries": 14,
     "correctedEntries": 0,
@@ -82,7 +84,10 @@
     "dependencyChapter": 11,
     "dependencyPrintedPage": 150,
     "dependencyPdfPage": 158,
-    "sectionAudit": "Prior dependency text read; full section/module audit pending."
+    "sectionAudit": "Fluid lesson verified; corresponding entire PN module remains reviewing",
+    "nextAction": "Continue the entire existing PN calculation module at Chapter 11 Determining Caloric Needs, printed 151/PDF 159: add/reconcile Harris-Benedict BEE and TEE, then protein/nitrogen, weekly lipids, dual-ion additives and complete-order calculations. Locate supplied-book dependencies for retained anthropometric, Mifflin, propofol and clinical GIR claims. Do not advance checklist entry 15 until the corresponding whole-module review is verified.",
+    "nextDependencyPrintedPage": 151,
+    "nextDependencyPdfPage": 159
   },
   "otherChapter1Work": {
     "quickReferenceIntroduction": "verified",
@@ -114,7 +119,8 @@
     "Remaining Chapter 1 checklist entries and all reference tables require source review.",
     "Historical externally sourced modules must retain their discrepancy records; no blanket book-only completion claim.",
     "Pending unrelated clinical edits are preserved and excluded from this pass.",
-    "Audit-branch cumulative bank has 14 pre-existing duplicate prompt groups (83 repeated instances); new items are unique. Resolve in the associated chapter/module reviews."
+    "Audit-branch cumulative bank has 14 pre-existing duplicate prompt groups (83 repeated instances); new items are unique. Resolve in the associated chapter/module reviews.",
+    "PN fluid section verified locally; whole existing PN module remains reviewing for missing Harris-Benedict/nitrogen/weekly-lipid/dual-ion/order coverage and retained source support. Keep checklist count 14."
   ],
   "progressSnapshot": {
     "date": "2026-10-01",
@@ -134,5 +140,6 @@
       "moduleCountPercent": 23.28
     },
     "interpretation": "Count-based snapshots include preserved historical flags, not an independent recheck of every earlier module/chapter. Chapter sizes vary. Working and committed ledgers differ because older unfinished corrections and three additional modules remain unstaged. Seven newly verified modules and fourteen checklist entries add partial chapter coverage, not new full-chapter closures."
-  }
+  },
+  "pendingLogicalUnit": "parenteral-nutrition-calculations#fluid-requirements"
 }

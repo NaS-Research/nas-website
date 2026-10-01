@@ -6,7 +6,7 @@ export const parenteralNutritionCalculationsModule = {
   title: "Parenteral Nutrition Calculations",
   source: "Clinical nutrition calculations",
   description: "Translate an adult nutrition assessment into a complete, traceable parenteral nutrition prescription and verify every unit before the order reaches the patient.",
-  topics: ["Weights and energy", "Protein and total energy", "Dextrose and GIR", "Lipid and non-PN calories", "Stock solutions and additives", "Rate and final audit"],
+  topics: ["Fluid requirements", "Weights and energy", "Protein and total energy", "Dextrose and GIR", "Lipid and non-PN calories", "Stock solutions and additives", "Rate and final audit"],
   outcomes: [
     "Convert anthropometric data accurately and select a defensible calculation weight.",
     "Estimate energy and protein targets while recognizing the limits of predictive equations.",
@@ -15,6 +15,63 @@ export const parenteralNutritionCalculationsModule = {
     "Reconcile final volume, infusion time, hourly rate, concentration, and the complete order before verification.",
   ],
   submodules: [
+    {
+  "slug": "fluid-requirements",
+  "title": "Estimate Fluid Needs and Count All Sources",
+  "summary": "Calculate the book estimate for a patient above 20 kg, then reconcile medicines and other fluids against the stated daily allowance.",
+  "concepts": [
+    "Daily fluid estimate",
+    "Total body weight",
+    "Alternative stated method",
+    "Medication-volume ledger"
+  ],
+  "visual": "pn-calc-fluid",
+  "application": "Identify the requested method, convert weight to kilograms and count all concurrent fluids before interpreting the remaining PN allowance.",
+  "lesson": [
+    {
+      "heading": "Apply the formula only within its stated scope",
+      "body": "The book first estimates fluid requirements when designing PN. For weight above 20 kg, its daily estimate is 1,500 mL + [20 mL/kg x (weight in kg - 20 kg)]. The extra 20 mL/kg applies only to weight above 20 kg. This particular source formula does not supply a method for a patient at or below 20 kg."
+    },
+    {
+      "heading": "Use the specified weight and consistent units",
+      "body": "The book uses total body weight, meaning scale weight, for most PN calculations unless the question specifies otherwise. Convert pounds to kg before substitution. An original 88 lb example is 40 kg using 2.2 lb/kg, giving 1,500 + 20(40 - 20) = 1,900 mL/day. Do not silently substitute ideal or adjusted weight."
+    },
+    {
+      "heading": "Calculate the daily total before dividing by time",
+      "body": "For an original 52 kg example, the book method gives 1,500 + 20(52 - 20) = 2,140 mL/day. That is a daily amount, not mL/hour and not a complete infusion prescription. Retain precision through the steps and use the rounding instruction given in the exercise."
+    },
+    {
+      "heading": "Keep the alternative estimate separate",
+      "body": "The book also describes an institutional adult estimate of 30 to 40 mL/kg/day. For an original 60 kg adult, that method gives a range of 1,800 to 2,400 mL/day. It is an alternative starting estimate; do not add it to the 1,500-plus-increment result. Use the method requested by the exercise or stated clinical plan."
+    },
+    {
+      "heading": "Include fluids supplied outside PN",
+      "body": "The book includes medication fluids, including intravenous piggybacks, in overall daily volume. If an original arithmetic plan sets total allowance at 2,140 mL/day and explicitly supplies 290 mL/day through medicines with no other fluids, the remaining allowance is 1,850 mL/day. Count each stated fluid once. A remaining allowance is not automatically the volume of a clinically suitable PN bag."
+    },
+    {
+      "heading": "Tailor the estimate to fluid tolerance",
+      "body": "The book states that fluid volume must be tailored and reduced when fluid accumulation is a concern, including heart failure or renal dysfunction. It does not specify one fixed percentage reduction in this section. If concurrent fluids already exceed a stated allowance, review the whole plan; a negative subtraction result is not an instruction to prepare negative PN volume."
+    }
+  ],
+  "keyPoints": [
+    "For weight above 20 kg, apply the increment only above 20 kg.",
+    "Use total body weight unless the exercise specifies another basis.",
+    "Subtract other stated fluids from a total allowance; do not double count.",
+    "An estimate requires tailoring and is not a complete prescription."
+  ],
+  "check": {
+    "question": "An exercise uses the book formula for an adult weighing 52 kg. Medicines supply 290 mL/day and there are no other fluids. What remains from the calculated daily allowance?",
+    "choices": [
+      "2,140 mL/day",
+      "1,850 mL/day",
+      "2,430 mL/day",
+      "1,040 mL/day"
+    ],
+    "answer": 1,
+    "rationale": "Total estimate = 1,500 + 20(52 - 20) = 2,140 mL/day. Subtract 290 mL/day already supplied to leave 1,850 mL/day.",
+    "reviewHref": "#fluid-requirements"
+  }
+},
     {
       slug: "calculation-foundations",
       title: "Units, Weights, and Requirement Estimates",
@@ -113,6 +170,7 @@ export const parenteralNutritionCalculationsModule = {
     },
   ],
   references: [
+    { label: "RxPrep 2023 Course Book", locator: "Chapter 11, Determining Fluid Needs, printed page 150 (PDF page 158); original fluid exercises apply the supplied-book method." },
     { label: "ASPEN. Parenteral Nutrition Clinical Resources and Appropriate Dosing Recommendations", href: "https://nutritioncare.org/clinical-resources/parenteral-nutrition/" },
     { label: "CDC. Adult BMI Categories and BMI as a Screening Measure", href: "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html" },
     { label: "Mifflin MD, et al. A New Predictive Equation for Resting Energy Expenditure", href: "https://pubmed.ncbi.nlm.nih.gov/2305711/" },

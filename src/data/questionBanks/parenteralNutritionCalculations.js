@@ -106,8 +106,219 @@ const compoundCases = [
   return q(`10${index}`, `${label} is the stated source concentration (${concentration} ${unit}/mL). What volume provides ${amount} ${unit}?`, [`${volume} mL`, `${Math.round((volume + 7) * 100) / 100} mL`, `${Math.round((volume * 1.5) * 100) / 100} mL`, `${Math.round((volume * 2.25) * 100) / 100} mL`], 0, `${amount} ${unit} divided by the stated ${concentration} ${unit}/mL equals ${volume} mL. Product selection and all contributed ions still require verification.`, lesson);
 });
 
-export const parenteralNutritionCalculationsQuestionBank = [...core, ...bmiCases, ...ibwCases, ...adjustedWeightCases, ...mifflinCases, ...girCases, ...compoundCases];
+const fluidRequirementCases = [
+  {
+    "id": "pncalc-fluid-001",
+    "question": "Which weight range is explicitly covered by the book formula 1,500 mL + 20 mL/kg x (weight - 20 kg)?",
+    "choices": [
+      "Weight above 20 kg",
+      "Every weight including newborns",
+      "Weight below 10 kg only",
+      "Exactly 20 kg only"
+    ],
+    "answer": 0,
+    "rationale": "The source labels this formula for weight above 20 kg. It does not provide the lower-weight method in this section.",
+    "reviewHref": "#fluid-requirements"
+  },
+  {
+    "id": "pncalc-fluid-002",
+    "question": "Unless an exercise specifies otherwise, what weight does the book use for most PN calculations?",
+    "choices": [
+      "Ideal weight selected without explanation",
+      "Total body weight measured on the scale",
+      "Adjusted weight automatically",
+      "Weight in pounds substituted directly"
+    ],
+    "answer": 1,
+    "rationale": "The book footnote specifies total body weight for most PN calculations unless the question specifies otherwise.",
+    "reviewHref": "#fluid-requirements"
+  },
+  {
+    "id": "pncalc-fluid-003",
+    "question": "Using the book formula for weight above 20 kg, what daily fluid estimate results for 52 kg?",
+    "choices": [
+      "1,040 mL/day",
+      "2,540 mL/day",
+      "2,140 mL/day",
+      "214 mL/day"
+    ],
+    "answer": 2,
+    "rationale": "1,500 + 20(52 - 20) = 2,140 mL/day. The increment applies to the 32 kg above 20 kg.",
+    "reviewHref": "#fluid-requirements"
+  },
+  {
+    "id": "pncalc-fluid-004",
+    "question": "An exercise specifies 88 lb and 2.2 lb/kg. What daily estimate results from the book formula for weight above 20 kg?",
+    "choices": [
+      "3,260 mL/day",
+      "800 mL/day",
+      "2,300 mL/day",
+      "1,900 mL/day"
+    ],
+    "answer": 3,
+    "rationale": "88/2.2 = 40 kg; 1,500 + 20(40 - 20) = 1,900 mL/day.",
+    "reviewHref": "#fluid-requirements"
+  },
+  {
+    "id": "pncalc-fluid-005",
+    "question": "Using the book formula for weight above 20 kg without intermediate rounding, what daily estimate results for 36.5 kg?",
+    "choices": [
+      "1,830 mL/day",
+      "1,730 mL/day",
+      "2,230 mL/day",
+      "730 mL/day"
+    ],
+    "answer": 0,
+    "rationale": "1,500 + 20(36.5 - 20) = 1,830 mL/day.",
+    "reviewHref": "#fluid-requirements"
+  },
+  {
+    "id": "pncalc-fluid-006",
+    "question": "Using the book formula for weight above 20 kg, what daily fluid estimate results for 75 kg?",
+    "choices": [
+      "1,500 mL/day",
+      "2,600 mL/day",
+      "3,000 mL/day",
+      "1,100 mL/day"
+    ],
+    "answer": 1,
+    "rationale": "The increment is 20 x 55 = 1,100 mL; add 1,500 mL to obtain 2,600 mL/day.",
+    "reviewHref": "#fluid-requirements"
+  },
+  {
+    "id": "pncalc-fluid-007",
+    "question": "An exercise explicitly requests the alternative adult estimate of 30 to 40 mL/kg/day for 60 kg. What range results?",
+    "choices": [
+      "30 to 40 mL/day",
+      "600 to 800 mL/day",
+      "1,800 to 2,400 mL/day",
+      "3,300 to 3,900 mL/day"
+    ],
+    "answer": 2,
+    "rationale": "60 x 30 = 1,800 and 60 x 40 = 2,400 mL/day. Do not add this alternative to the other formula.",
+    "reviewHref": "#fluid-requirements"
+  },
+  {
+    "id": "pncalc-fluid-008",
+    "question": "A stated plan uses 32 mL/kg/day for a 75 kg adult. What daily volume does that supplied plan yield?",
+    "choices": [
+      "2,600 mL/day",
+      "32 mL/day",
+      "750 mL/day",
+      "2,400 mL/day"
+    ],
+    "answer": 3,
+    "rationale": "75 kg x 32 mL/kg/day = 2,400 mL/day. This exercise supplies the selected method; it does not ask for the separate 1,500-plus-increment formula.",
+    "reviewHref": "#fluid-requirements"
+  },
+  {
+    "id": "pncalc-fluid-009",
+    "question": "An exercise calculates a total daily allowance of 2,140 mL. Medicines supply 290 mL/day and there are no other fluids. What remaining allowance is available?",
+    "choices": [
+      "1,850 mL/day",
+      "2,140 mL/day",
+      "2,430 mL/day",
+      "290 mL/day"
+    ],
+    "answer": 0,
+    "rationale": "Subtract fluids already supplied: 2,140 - 290 = 1,850 mL/day.",
+    "reviewHref": "#fluid-requirements"
+  },
+  {
+    "id": "pncalc-fluid-010",
+    "question": "A stated total allowance is 2,600 mL/day. Four medication piggybacks supply 125 mL each per day, with no other concurrent fluids. What remains for PN?",
+    "choices": [
+      "2,475 mL/day",
+      "2,100 mL/day",
+      "500 mL/day",
+      "3,100 mL/day"
+    ],
+    "answer": 1,
+    "rationale": "The four piggybacks supply 500 mL/day. 2,600 - 500 = 2,100 mL/day remains as an arithmetic allowance.",
+    "reviewHref": "#fluid-requirements"
+  },
+  {
+    "id": "pncalc-fluid-011",
+    "question": "A daily fluid ledger lists PN 1,800 mL, medication fluids 350 mL and another stated infusion 200 mL. What is the total?",
+    "choices": [
+      "1,800 mL/day",
+      "2,150 mL/day",
+      "2,350 mL/day",
+      "550 mL/day"
+    ],
+    "answer": 2,
+    "rationale": "Count each stated source once: 1,800 + 350 + 200 = 2,350 mL/day.",
+    "reviewHref": "#fluid-requirements"
+  },
+  {
+    "id": "pncalc-fluid-012",
+    "question": "Concurrent fluids already exceed a stated daily allowance before PN is added. What is the appropriate interpretation of a negative remaining allowance?",
+    "choices": [
+      "Prepare PN with negative volume",
+      "Ignore the concurrent fluids",
+      "Add another full allowance",
+      "Review and revise the whole fluid plan"
+    ],
+    "answer": 3,
+    "rationale": "A negative subtraction shows that the stated plan exceeds the allowance. It is not an instruction to compound negative PN volume.",
+    "reviewHref": "#fluid-requirements"
+  },
+  {
+    "id": "pncalc-fluid-013",
+    "question": "An exercise specifies total body weight 82 kg and also lists ideal weight 60 kg, without instructing use of ideal weight. What estimate follows the book formula for weight above 20 kg?",
+    "choices": [
+      "2,740 mL/day",
+      "2,300 mL/day",
+      "1,640 mL/day",
+      "3,140 mL/day"
+    ],
+    "answer": 0,
+    "rationale": "Use total body weight unless otherwise specified: 1,500 + 20(82 - 20) = 2,740 mL/day. The supplied ideal weight is not the instructed basis.",
+    "reviewHref": "#fluid-requirements"
+  },
+  {
+    "id": "pncalc-fluid-014",
+    "question": "For two weights both above 20 kg, what change in the book formula estimate follows a 5 kg increase?",
+    "choices": [
+      "5 mL/day",
+      "100 mL/day",
+      "1,500 mL/day",
+      "400 mL/day"
+    ],
+    "answer": 1,
+    "rationale": "The fixed term does not change. The added increment is 20 mL/kg/day x 5 kg = 100 mL/day. This describes the arithmetic, not an automatic clinical increase.",
+    "reviewHref": "#fluid-requirements"
+  },
+  {
+    "id": "pncalc-fluid-015",
+    "question": "Which statement best follows the book discussion of fluid accumulation in heart failure or renal dysfunction?",
+    "choices": [
+      "Use the estimate unchanged for everyone",
+      "Always reduce by exactly 50 percent",
+      "Tailor and reduce the fluid plan; this section supplies no single fixed reduction",
+      "Ignore medication fluid"
+    ],
+    "answer": 2,
+    "rationale": "The source calls for tailoring and reduction with fluid accumulation. It does not prescribe a universal percentage reduction.",
+    "reviewHref": "#fluid-requirements"
+  },
+  {
+    "id": "pncalc-fluid-016",
+    "question": "A stated daily allowance is 2.14 L. Medication fluids supply 290 mL/day, with no other concurrent fluids. What remaining allowance is expressed in liters per day?",
+    "choices": [
+      "2.43 L/day",
+      "2.14 L/day",
+      "0.29 L/day",
+      "1.85 L/day"
+    ],
+    "answer": 3,
+    "rationale": "Convert 290 mL to 0.29 L, then subtract: 2.14 - 0.29 = 1.85 L/day. Keep the volume units consistent.",
+    "reviewHref": "#fluid-requirements"
+  }
+];
 
-if (parenteralNutritionCalculationsQuestionBank.length !== 100) {
-  throw new Error(`Parenteral nutrition calculations question bank must contain 100 questions, found ${parenteralNutritionCalculationsQuestionBank.length}.`);
+export const parenteralNutritionCalculationsQuestionBank = [...core, ...bmiCases, ...ibwCases, ...adjustedWeightCases, ...mifflinCases, ...girCases, ...compoundCases, ...fluidRequirementCases];
+
+if (parenteralNutritionCalculationsQuestionBank.length !== 116) {
+  throw new Error(`Parenteral nutrition calculations question bank must contain 116 questions, found ${parenteralNutritionCalculationsQuestionBank.length}.`);
 }

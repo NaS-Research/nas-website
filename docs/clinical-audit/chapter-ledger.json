@@ -322,6 +322,24 @@
                 156
               ],
               "evidence": "pharmacy-milliequivalent-calculations-review.json"
+            },
+            {
+              "topic": "Determining fluid needs",
+              "status": "reviewing",
+              "verifiedLesson": "parenteral-nutrition-calculations#fluid-requirements",
+              "wholeModuleVerified": false,
+              "targets": [
+                "parenteral-nutrition-calculations"
+              ],
+              "sourcePrintedPages": [
+                150,
+                150
+              ],
+              "sourcePdfPages": [
+                158,
+                158
+              ],
+              "evidence": "parenteral-nutrition-calculations-review.json; fluid section verified; corresponding whole PN module remains reviewing, so checklist count stays 14"
             }
           ]
         },
@@ -380,7 +398,8 @@
         "pharmacy-osmolarity-calculations",
         "pharmacy-isotonicity-calculations",
         "pharmacy-moles-millimoles",
-        "pharmacy-milliequivalent-calculations"
+        "pharmacy-milliequivalent-calculations",
+        "parenteral-nutrition-calculations"
       ],
       "findings": [
         "Textbook six-area exam blueprint superseded by NABP five-domain outline effective 2025-05-01.",
@@ -398,7 +417,8 @@
         "pharmacy-osmolarity-calculations-review.json",
         "pharmacy-isotonicity-calculations-review.json",
         "pharmacy-moles-millimoles-review.json",
-        "pharmacy-milliequivalent-calculations-review.json"
+        "pharmacy-milliequivalent-calculations-review.json",
+        "parenteral-nutrition-calculations-review.json"
       ],
       "pdfRangeStatus": "start verified; end provisional"
     },
@@ -676,13 +696,188 @@
         149,
         168
       ],
-      "pdfPages": null,
-      "status": "unmapped",
+      "pdfPages": [
+        157,
+        176
+      ],
+      "status": "reviewing",
       "subsectionsComplete": false,
-      "subsections": [],
-      "moduleSlugs": [],
-      "findings": [],
-      "evidence": []
+      "subsections": [
+        {
+          "topic": "Background and PN formulation/route concepts",
+          "printedPages": [
+            149,
+            150
+          ],
+          "pdfPages": [
+            157,
+            158
+          ],
+          "status": "reviewing",
+          "targets": [
+            "parenteral-nutrition"
+          ],
+          "textAndFiguresRead": true,
+          "evidence": "parenteral-nutrition-calculations-review.json"
+        },
+        {
+          "topic": "Determining fluid needs",
+          "printedPages": [
+            150,
+            150
+          ],
+          "pdfPages": [
+            158,
+            158
+          ],
+          "status": "reviewing",
+          "targets": [
+            "parenteral-nutrition-calculations",
+            "fluid-electrolyte-therapy"
+          ],
+          "textAndFiguresRead": true,
+          "evidence": "parenteral-nutrition-calculations-review.json",
+          "verifiedLesson": "parenteral-nutrition-calculations#fluid-requirements",
+          "wholeCorrespondingModulesVerified": false,
+          "note": "Fluid lesson/items verified; corresponding entire PN and clinical fluid modules remain open."
+        },
+        {
+          "topic": "Caloric needs, BEE/TEE and energy accounting",
+          "printedPages": [
+            151,
+            152
+          ],
+          "pdfPages": [
+            159,
+            160
+          ],
+          "status": "reviewing",
+          "targets": [
+            "parenteral-nutrition-calculations"
+          ],
+          "textAndFiguresRead": true,
+          "evidence": "parenteral-nutrition-calculations-review.json"
+        },
+        {
+          "topic": "Protein, nitrogen intake, NPC:N and amino acids",
+          "printedPages": [
+            152,
+            155
+          ],
+          "pdfPages": [
+            160,
+            163
+          ],
+          "status": "reviewing",
+          "targets": [
+            "parenteral-nutrition-calculations"
+          ],
+          "textAndFiguresRead": true,
+          "evidence": "parenteral-nutrition-calculations-review.json"
+        },
+        {
+          "topic": "Dextrose proportions and stock calculations",
+          "printedPages": [
+            155,
+            156
+          ],
+          "pdfPages": [
+            163,
+            164
+          ],
+          "status": "reviewing",
+          "targets": [
+            "parenteral-nutrition-calculations"
+          ],
+          "textAndFiguresRead": true,
+          "evidence": "parenteral-nutrition-calculations-review.json"
+        },
+        {
+          "topic": "Lipid calories, concentrations and weekly average",
+          "printedPages": [
+            157,
+            158
+          ],
+          "pdfPages": [
+            165,
+            166
+          ],
+          "status": "reviewing",
+          "targets": [
+            "parenteral-nutrition-calculations"
+          ],
+          "textAndFiguresRead": true,
+          "evidence": "parenteral-nutrition-calculations-review.json"
+        },
+        {
+          "topic": "Electrolytes, dual-ion additives, calcium and compatibility",
+          "printedPages": [
+            158,
+            160
+          ],
+          "pdfPages": [
+            166,
+            168
+          ],
+          "status": "reviewing",
+          "targets": [
+            "parenteral-nutrition-calculations",
+            "parenteral-nutrition"
+          ],
+          "textAndFiguresRead": true,
+          "evidence": "parenteral-nutrition-calculations-review.json"
+        },
+        {
+          "topic": "Trace/vitamin/insulin additives and enteral nutrition",
+          "printedPages": [
+            161,
+            164
+          ],
+          "pdfPages": [
+            169,
+            172
+          ],
+          "status": "reviewing",
+          "targets": [
+            "parenteral-nutrition",
+            "enteral-nutrition"
+          ],
+          "textAndFiguresRead": true,
+          "evidence": "parenteral-nutrition-calculations-review.json"
+        },
+        {
+          "topic": "Complete PN practice/order forms",
+          "printedPages": [
+            164,
+            168
+          ],
+          "pdfPages": [
+            172,
+            176
+          ],
+          "status": "reviewing",
+          "targets": [
+            "parenteral-nutrition-calculations"
+          ],
+          "textAndFiguresRead": true,
+          "evidence": "parenteral-nutrition-calculations-review.json"
+        }
+      ],
+      "moduleSlugs": [
+        "parenteral-nutrition-calculations",
+        "parenteral-nutrition",
+        "enteral-nutrition",
+        "pediatric-parenteral-nutrition",
+        "fluid-electrolyte-therapy"
+      ],
+      "findings": [
+        "All 20 pages text/tables/figures read and 54 source exercises independently recalculated. This does not establish full clinical module verification.",
+        "Existing PN calculation module expanded with source-verified fluid lesson and 16 original questions. Missing/source-unreconciled material remains; checklist count 14."
+      ],
+      "evidence": [
+        "parenteral-nutrition-calculations-review.json"
+      ],
+      "pdfRangeStatus": "All 20 pages visually verified"
     },
     {
       "chapter": 12,

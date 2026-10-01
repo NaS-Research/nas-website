@@ -241,7 +241,7 @@ import { getPharmacyStudyContent } from "@/data/pharmacyStudyContent";
 const calciumVisualTypes = ["mineral-regulation", "calcium-fractions", "hypocalcemia-response", "hypercalcemia-response", "phosphate-balance", "ckd-mbd"];
 const enteralVisualTypes = ["enteral-decision", "access-route", "delivery-prescription", "formula-selection", "medication-administration", "monitoring-complications"];
 const parenteralVisualTypes = ["pn-decision", "venous-access", "macronutrient-design", "micronutrient-balance", "compounding-safety", "monitoring-transition"];
-const parenteralCalculationVisualTypes = ["pn-calc-foundations", "pn-calc-protein-energy", "pn-calc-dextrose", "pn-calc-lipid", "pn-calc-stock", "pn-calc-audit"];
+const parenteralCalculationVisualTypes = ["pn-calc-fluid", "pn-calc-foundations", "pn-calc-protein-energy", "pn-calc-dextrose", "pn-calc-lipid", "pn-calc-stock", "pn-calc-audit"];
 const pediatricParenteralVisualTypes = ["peds-pn-decision", "peds-pn-glucose", "peds-pn-macros", "peds-pn-micros", "peds-pn-safety", "peds-pn-audit"];
 const autonomicVisualTypes = ["ans-architecture", "ans-transmitter-map", "ans-receptor-signaling", "ans-cholinergic-cycle", "ans-adrenergic-cycle", "ans-reflex-integration"];
 const cholinergicVisualTypes = ["chol-classification", "chol-direct-agonists", "chol-clinical-selection", "chol-peripheral-inhibitors", "chol-central-inhibitors", "chol-safety"];
