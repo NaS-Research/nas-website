@@ -1,0 +1,996 @@
+{
+  "slug": "minoxidil",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "A formulation-specific reference for Par oral hypertension tablets and four labeled OTC Rogaine hair-regrowth products. All eight blueprint sections reviewed. Product-specific focused monograph; not an exhaustive adverse-event catalog.",
+  "sources": [
+    {
+      "id": "oral",
+      "title": "Minoxidil tablets · Full U.S. prescribing information",
+      "publisher": "DailyMed / Par Health USA, LLC",
+      "note": "SPL version 11, effective 20260611; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8f3800f0-b6da-4dfe-8c32-39bb5eb0262a",
+      "checked": "2026-10-01",
+      "version": "SPL version 11, effective 20260611; current public product labeling.",
+      "spl_version": "11",
+      "spl_effective_time": "20260611",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/8f3800f0-b6da-4dfe-8c32-39bb5eb0262a.xml",
+      "downloaded_xml_sha256": "3c9c08a6ecf4cea90b57682b698cda8639cf5ae1e0f92e5a42beaeeef6b7582c"
+    },
+    {
+      "id": "womenfoam",
+      "title": "Women’s Rogaine · 5% topical foam",
+      "publisher": "DailyMed / Kenvue Brands LLC",
+      "note": "SPL version 6, effective 20241113; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d328537-b7f5-43cc-9837-c5a0c6c390f8",
+      "checked": "2026-10-01",
+      "version": "SPL version 6, effective 20241113; current public product labeling.",
+      "spl_version": "6",
+      "spl_effective_time": "20241113",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/4d328537-b7f5-43cc-9837-c5a0c6c390f8.xml",
+      "downloaded_xml_sha256": "c2d3baa28b87c8ca70bb033be55372de934a6a817fea84e1d45b7b4a1f8293b2"
+    },
+    {
+      "id": "menfoam",
+      "title": "Men’s Rogaine · 5% topical foam",
+      "publisher": "DailyMed / Kenvue Brands LLC",
+      "note": "SPL version 7, effective 20241111; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b5e2860-6855-4a65-8bbc-e064172a1adf",
+      "checked": "2026-10-01",
+      "version": "SPL version 7, effective 20241111; current public product labeling.",
+      "spl_version": "7",
+      "spl_effective_time": "20241111",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/1b5e2860-6855-4a65-8bbc-e064172a1adf.xml",
+      "downloaded_xml_sha256": "361dbaf72d06353cc06e333c4ae91345f5d0448162cdf8ba80f8ccb3fab8cf6c"
+    },
+    {
+      "id": "womensolution",
+      "title": "Women’s Rogaine · 2% topical solution",
+      "publisher": "DailyMed / Kenvue Brands LLC",
+      "note": "SPL version 4, effective 20240906; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bf0000c-95f3-4a4d-830b-f5ac1539823d",
+      "checked": "2026-10-01",
+      "version": "SPL version 4, effective 20240906; current public product labeling.",
+      "spl_version": "4",
+      "spl_effective_time": "20240906",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/8bf0000c-95f3-4a4d-830b-f5ac1539823d.xml",
+      "downloaded_xml_sha256": "d9bc785d9e4cb9e12a453f4c9576ad560643e07ede6eeb48788b81c4c4bb696f"
+    },
+    {
+      "id": "mensolution",
+      "title": "Men’s Rogaine Extra Strength · 5% topical solution",
+      "publisher": "DailyMed / Kenvue Brands LLC",
+      "note": "SPL version 5, effective 20240906; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ccaecec5-5348-4b24-9190-5464c50f6d80",
+      "checked": "2026-10-01",
+      "version": "SPL version 5, effective 20240906; current public product labeling.",
+      "spl_version": "5",
+      "spl_effective_time": "20240906",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/ccaecec5-5348-4b24-9190-5464c50f6d80.xml",
+      "downloaded_xml_sha256": "ae1dd0a9212a51e86f0d1b66d2193525e8002f4d1605d99b2a2c459fc01473e3"
+    }
+  ],
+  "assertion_to_source": [
+    {
+      "section_id": "indications",
+      "card_title": "Oral hypertension indication",
+      "assertions": [
+        "Oral tablets are reserved for hypertension that is symptomatic or causing target-organ damage and remains uncontrolled despite maximum therapeutic doses of a diuretic and two other antihypertensive medicines. The label does not recommend use for milder hypertension. Oral minoxidil for hair growth is explicitly an unapproved indication; the antihypertensive doses below must not be used as a hair-loss regimen."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "Indications and usage",
+            "Precautions / Unapproved use"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "indications",
+      "card_title": "Topical hair-regrowth indications",
+      "assertions": [
+        "The selected Rogaine products are OTC scalp hair-regrowth treatments for adults age 18 and older with the labeled hair-loss pattern. Men’s 5% foam and solution are labeled for vertex/top-of-scalp loss, not frontal baldness or a receding hairline, and say not for women. Women’s products have their own directions. Sudden, patchy, postpartum, unexplained, or atypical hair loss needs assessment rather than self-treatment."
+      ],
+      "support": [
+        {
+          "source_id": "womenfoam",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "menfoam",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "womensolution",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "mensolution",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Oral hypertension dosing",
+      "assertions": [
+        "These are the label’s age-band words, not an individualized prescription. Pediatric experience is limited; the under-12 schedule is a rough guide requiring careful specialist titration. The label does not explicitly assign patients exactly age 12 to either band; obtain a pediatric regimen rather than inferring one.",
+        "Older than 12 years | Start 5 mg daily. Increase to 10, 20, then 40 mg/day as needed, in one or divided doses. Usual effective range 10–40 mg/day; maximum 100 mg/day.",
+        "Under 12 years | Start 0.2 mg/kg once daily; increase by 50–100% to response. Usual range 0.25–1 mg/kg/day; maximum 50 mg/day."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "Dosage and administration",
+            "Precautions / Pediatric use"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Oral titration and companion treatment",
+      "assertions": [
+        "Ordinary dose changes are at least 3 days apart; the label’s faster 6-hour adjustments require close monitored care. Divide daily dosing into two equal parts if supine diastolic BP reduction exceeds 30 mmHg; smaller reductions may permit once-daily dosing. Oral therapy usually requires an adequate diuretic, often a loop agent, plus a beta blocker or other sympathetic suppressant. Select and adjust these companions to fluid status, pulse, organ function, and tolerability. Hospitalize initial treatment for malignant hypertension or continued guanethidine exposure."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "Dosage / Dose frequency, Titration, Concomitant therapy",
+            "Boxed warnings"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Topical regimens",
+      "assertions": [
+        "Apply directly to the scalp area shown on the exact package. More product or more frequent use does not improve results. Continued treatment is needed to maintain regrowth. These four schedules must not be interchanged without reviewing the product. ",
+        "Women’s 5% foam | Half a capful once daily. Results may appear at 3 months; some need 6 months. Consult if no regrowth by 6 months.",
+        "Men’s 5% foam | Half a capful twice daily. Results may appear at 2 months; some need 4 months. Consult if no regrowth by 4 months.",
+        "Women’s 2% solution | 1 mL with dropper twice daily. At least 4 months may be needed; consult if no regrowth by 4 months.",
+        "Men’s 5% solution | 1 mL with dropper twice daily. Results may appear at 2 months; some need 4 months. Consult if no regrowth by 4 months."
+      ],
+      "support": [
+        {
+          "source_id": "womenfoam",
+          "sections": [
+            "Drug Facts / Directions, When using"
+          ]
+        },
+        {
+          "source_id": "menfoam",
+          "sections": [
+            "Drug Facts / Directions, When using"
+          ]
+        },
+        {
+          "source_id": "womensolution",
+          "sections": [
+            "Drug Facts / Directions, When using"
+          ]
+        },
+        {
+          "source_id": "mensolution",
+          "sections": [
+            "Drug Facts / Directions, When using"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Administration and missed treatment",
+      "assertions": [
+        "Topical products are external scalp treatments: avoid eyes and other body areas, and wash hands after foam application. Rinse accidental eye contact with plenty of cool water. Follow the package booklet for application technique. Do not increase application amount/frequency to compensate for missed treatment. Oral tablets are prescription therapy; changes or interruptions should be managed with the treating team rather than substituted with a topical product."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "Patient information",
+            "Dosage"
+          ]
+        },
+        {
+          "source_id": "womenfoam",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "menfoam",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "womensolution",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "mensolution",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Warnings and precautions",
+      "assertions": [
+        "Oral minoxidil can cause severe fluid retention, worsening heart failure, tachycardia, angina, pericarditis, and pericardial effusion that can progress to tamponade. Ensure diuretic and sympathetic-suppressant coverage, monitor weight closely, and evaluate suspected effusion with echocardiography. Rapid BP reduction can cause ischemic harm, so malignant hypertension needs hospital initiation. Use caution with recent MI; the label has no experience within the preceding month.",
+        "For topical treatment, ask a clinician first with heart disease. Do not use on red, infected, inflamed, painful, or irritated scalp, or with other scalp medicines. Stop and seek assessment for chest pain, rapid heartbeat, dizziness/faintness, sudden weight gain, swelling, persistent scalp irritation, or unwanted facial hair. Solutions are flammable and aerosol foams extremely flammable; avoid flame/smoking during and immediately after use."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "Boxed warnings",
+            "Warnings",
+            "Precautions"
+          ]
+        },
+        {
+          "source_id": "womenfoam",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "menfoam",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "womensolution",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "mensolution",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Contraindications",
+      "assertions": [
+        "Oral tablets are contraindicated in pheochromocytoma and hypersensitivity to their ingredients. Topical Drug Facts direct against use below age 18, with specified atypical hair-loss patterns or an unhealthy scalp, or with other scalp medicines; men’s products say not for women. These OTC do-not-use directions are not the oral formal contraindication list. Review ingredient allergy and avoid an implicated product."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "Contraindications"
+          ]
+        },
+        {
+          "source_id": "womenfoam",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "menfoam",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "womensolution",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "mensolution",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Boxed warning: oral cardiac toxicity",
+      "assertions": [
+        "The oral label’s boxed warning highlights pericardial effusion/tamponade and worsening angina, reserves treatment for severe resistant hypertension, and requires close supervision with usual beta-blocker and diuretic companion therapy. Malignant hypertension and continued guanethidine require hospital initiation. The selected OTC topical labels do not carry this prescription boxed warning, but retain cardiac-symptom warnings."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "Opening boxed WARNINGS"
+          ]
+        },
+        {
+          "source_id": "womenfoam",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "menfoam",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "womensolution",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "mensolution",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Adverse reactions and excessive exposure",
+      "assertions": [
+        "Oral treatment commonly causes hypertrichosis and can cause edema, nausea, or ECG T-wave changes; rare severe skin reactions and cytopenias are reported. Unwanted oral-related hair growth may take 1–6 months to resolve after stopping. Topical products can cause irritation, unwanted hair, or altered hair color/texture. Suspected tablet overdose or swallowed topical product requires immediate medical/poison-center assessment; severe hypotension needs monitored supportive care. The oral overdose label cautions against epinephrine/norepinephrine because excessive cardiac stimulation can occur."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "Adverse reactions",
+            "Overdosage"
+          ]
+        },
+        {
+          "source_id": "womenfoam",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "menfoam",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "womensolution",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "mensolution",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Oral interactions and companion selection",
+      "assertions": [
+        "Guanethidine can cause profound orthostatic hypotension with minoxidil; discontinue well before starting when possible, otherwise initiate in hospital. A diuretic is needed to manage retention and a beta blocker or other sympathetic suppressant usually limits tachycardia. If beta blockers cannot be used, the label describes methyldopa or limited clonidine experience; this is clinician-directed therapy, not a universal substitution. Review all antihypertensives during titration."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "Warnings / Guanethidine",
+            "Dosage / Concomitant therapy"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Topical co-treatment",
+      "assertions": [
+        "The selected OTC labels say not to use with other scalp medicines. Do not extrapolate safety to compounded mixtures or crushed-tablet scalp preparations: the oral label notes vehicle-dependent systemic absorption and warns that improvised topical formulations can share systemic risks. These labels do not provide an exhaustive metabolic-interaction study for topical use."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "Precautions / Unapproved use"
+          ]
+        },
+        {
+          "source_id": "womenfoam",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "menfoam",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "womensolution",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "mensolution",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pregnancy and lactation",
+      "assertions": [
+        "The oral label has inadequate controlled pregnancy data, describes fetal resorption in animals and reported neonatal hypertrichosis, and limits use to justified benefit-risk situations. It advises against administration to nursing women because milk transfer and infant absorption are possible. Topical labels warn of possible harm during pregnancy or breastfeeding. These are label-based statements, not evidence of a safe cosmetic regimen or a comprehensive lactation-outcome review."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "Precautions / Pregnancy, Nursing mothers"
+          ]
+        },
+        {
+          "source_id": "womenfoam",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "menfoam",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "womensolution",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "mensolution",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pediatric and older adults",
+      "assertions": [
+        "Topical products say not to use below 18. Oral hypertension has a labeled under-12 rough-guide regimen, but infant/pediatric experience is limited and careful titration is essential; the wording leaves exact age 12 unspecified. Older oral recipients need low-end cautious selection because organ dysfunction and polypharmacy are common. Do not infer topical efficacy for every older adult from trials largely involving younger adults."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "Precautions / Pediatric, Geriatric",
+            "Dosage"
+          ]
+        },
+        {
+          "source_id": "womenfoam",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "menfoam",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "womensolution",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "mensolution",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Renal and hepatic considerations",
+      "assertions": [
+        "Renal failure or dialysis may require smaller oral doses and close monitoring for renal or cardiac deterioration; no fixed CrCl algorithm is given. Older-patient dose selection includes hepatic function, but the label provides no specific hepatic dose table. Topical OTC labels supply no validated renal/hepatic adjustment schedule. Organ disease and cardiac symptoms require clinician assessment rather than unverified dose conversion."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "Precautions / General, Geriatric",
+            "Clinical pharmacology / Metabolism"
+          ]
+        },
+        {
+          "source_id": "womenfoam",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "menfoam",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "womensolution",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "mensolution",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Mechanism",
+      "assertions": [
+        "Oral minoxidil directly dilates peripheral arterioles, lowering resistance and BP. Reflex sympathetic and renal responses increase heart rate and fluid retention, explaining companion medicines. Topical labels establish hair-regrowth uses but do not define a complete molecular follicular mechanism; no specific hair-cycle or potassium-channel claim is assumed from their Drug Facts."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "Clinical pharmacology / General properties"
+          ]
+        },
+        {
+          "source_id": "womenfoam",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "menfoam",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "womensolution",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "mensolution",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Pharmacokinetics and response",
+      "assertions": [
+        "Oral absorption is at least 90%, peak parent-drug concentration occurs within an hour, and average plasma half-life is about 4.2 hours. Most drug is metabolized, mainly by glucuronidation; metabolites are principally excreted in urine. It is not protein-bound and can be removed by hemodialysis when functional renal tissue is absent. BP lowering can persist about 75 hours after a single effective dose. The topical labels do not give a numeric systemic exposure or half-life; skin/vehicle changes can affect absorption."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "Clinical pharmacology / Effects, Absorption and metabolism",
+            "Precautions / Unapproved use"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Monitoring",
+      "assertions": [
+        "Oral treatment needs BP, pulse, weight, fluid/electrolyte balance, and renal-function assessment; examine for pericardial disease and obtain echocardiography if suspected. Abnormal baseline renal tests, urinalysis, ECG, or imaging should be repeated as clinically appropriate; the label describes early 1–3-month and stable 6–12-month reassessment, not universal imaging for everyone. Topical users should reassess hair response at the product-specific 4- or 6-month point and stop for listed adverse symptoms."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "Warnings",
+            "Precautions / Laboratory tests"
+          ]
+        },
+        {
+          "source_id": "womenfoam",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "menfoam",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "womensolution",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "mensolution",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Counseling",
+      "assertions": [
+        "Keep oral and topical treatments clearly distinguished, and explain that oral hair-loss use is off-label. Take prescribed companion medicines and report rapid weight gain, edema, breathlessness, chest pain, or racing heartbeat promptly. Follow topical quantity and schedule, keep it away from eyes and children, and observe fire precautions. Hair response varies and maintenance requires continued topical use; absence of response warrants assessment rather than dose escalation."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "Patient information",
+            "Warnings",
+            "Precautions / Unapproved use"
+          ]
+        },
+        {
+          "source_id": "womenfoam",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "menfoam",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "womensolution",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        },
+        {
+          "source_id": "mensolution",
+          "sections": [
+            "Drug Facts / Warnings, Directions"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Representative products",
+      "assertions": [
+        "Par oral tablets are white, round, and bisected: 2.5 mg marked “par 256” / “MINOXIDIL 2 1/2,” bottle of 100 NDC 49884-256-01; 10 mg marked “par 257” / “MINOXIDIL 10,” bottle of 100 NDC 49884-257-01. Selected Rogaine labels describe 60 mL solution bottles and 60 g foam cans; current labeler metadata is Kenvue Brands LLC, while display text retains older Johnson & Johnson distributor wording. Other generic tablets/packages vary."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "How supplied"
+          ]
+        },
+        {
+          "source_id": "womenfoam",
+          "sections": [
+            "Principal display panel / SPL labeler and product metadata"
+          ]
+        },
+        {
+          "source_id": "menfoam",
+          "sections": [
+            "Principal display panel / SPL labeler and product metadata"
+          ]
+        },
+        {
+          "source_id": "womensolution",
+          "sections": [
+            "Principal display panel / SPL labeler and product metadata"
+          ]
+        },
+        {
+          "source_id": "mensolution",
+          "sections": [
+            "Principal display panel / SPL labeler and product metadata"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Dosage forms and strengths",
+      "assertions": [
+        "Covered oral tablets: 2.5 and 10 mg. Women’s topical solution: 2% w/v (20 mg/mL); men’s solution: 5% w/v (50 mg/mL). Both selected foams: 5% w/w without propellant. Product NDCs: women’s solution 69968-0090, men’s solution 69968-0089, women’s foam 69968-0030, men’s foam 69968-0031. Other compounded or combination products are outside this reference."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "Description / How supplied"
+          ]
+        },
+        {
+          "source_id": "womenfoam",
+          "sections": [
+            "Active ingredient / Product metadata"
+          ]
+        },
+        {
+          "source_id": "menfoam",
+          "sections": [
+            "Active ingredient / Product metadata"
+          ]
+        },
+        {
+          "source_id": "womensolution",
+          "sections": [
+            "Active ingredient / Product metadata"
+          ]
+        },
+        {
+          "source_id": "mensolution",
+          "sections": [
+            "Active ingredient / Product metadata"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Storage and handling",
+      "assertions": [
+        "All selected products specify controlled room temperature 20–25°C (68–77°F). Keep solutions away from fire/flame. Foam is pressurized: do not puncture or incinerate, and do not expose to heat or temperatures above 49°C (120°F). Retain package instructions, keep away from children, and follow exact dispensed-product handling."
+      ],
+      "support": [
+        {
+          "source_id": "oral",
+          "sections": [
+            "How supplied"
+          ]
+        },
+        {
+          "source_id": "womenfoam",
+          "sections": [
+            "Drug Facts / Warnings, Other information"
+          ]
+        },
+        {
+          "source_id": "menfoam",
+          "sections": [
+            "Drug Facts / Warnings, Other information"
+          ]
+        },
+        {
+          "source_id": "womensolution",
+          "sections": [
+            "Drug Facts / Warnings, Other information"
+          ]
+        },
+        {
+          "source_id": "mensolution",
+          "sections": [
+            "Drug Facts / Warnings, Other information"
+          ]
+        }
+      ]
+    }
+  ],
+  "material_errors": [],
+  "gaps": [],
+  "limitations": [
+    "No oral hair-loss dose is recommended; that use is unapproved and requires a separate prescriber assessment/evidence review.",
+    "Oral source age bands say over12 and under12, leaving exact age12 unassigned. This source limitation is explicitly disclosed; no inferred pediatric dose is supplied. Pediatric use is a rough guide requiring specialist titration.",
+    "No numeric renal/hepatic topical algorithm, compounded equivalence, follicular molecular mechanism, or universal older-adult topical efficacy is invented.",
+    "Pregnancy/lactation statements are selected labels; no comprehensive LactMed review is claimed."
+  ],
+  "source_discrepancies": [
+    {
+      "issue": "Oral dose section explicitly says over12 and under12, leaving exactly age12 unassigned.",
+      "resolution": "Exact age bands preserved; source limitation visible in dosage and populations. No inferred age12 regimen. Pediatric dosing expressly a rough guide with specialist titration."
+    },
+    {
+      "issue": "Current Rogaine SPL labeler is Kenvue; older display-label text says Johnson & Johnson Consumer Inc.",
+      "resolution": "Current regulatory metadata and historical printed distributor text distinguished; NDC/formulation claims sourced directly to the selected current records."
+    }
+  ],
+  "regulatory_identity": [
+    {
+      "source_file": "minoxidil-oral",
+      "labeler": [
+        "Par Health USA, LLC"
+      ],
+      "label_approval_records": [
+        {
+          "application": {
+            "extension": "ANDA071839",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73584",
+            "displayName": "ANDA",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1"
+          }
+        },
+        {
+          "application": {
+            "extension": "ANDA071826",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73584",
+            "displayName": "ANDA",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1"
+          }
+        }
+      ]
+    },
+    {
+      "source_file": "minoxidil-women-foam",
+      "labeler": [
+        "Kenvue Brands LLC"
+      ],
+      "label_approval_records": [
+        {
+          "application": {
+            "extension": "NDA021812",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "NDA"
+          }
+        }
+      ]
+    },
+    {
+      "source_file": "minoxidil-men-foam",
+      "labeler": [
+        "Kenvue Brands LLC"
+      ],
+      "label_approval_records": [
+        {
+          "application": {
+            "extension": "NDA021812",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "NDA"
+          }
+        }
+      ]
+    },
+    {
+      "source_file": "minoxidil-women-solution",
+      "labeler": [
+        "Kenvue Brands LLC"
+      ],
+      "label_approval_records": [
+        {
+          "application": {
+            "extension": "NDA019501",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "NDA"
+          }
+        }
+      ]
+    },
+    {
+      "source_file": "minoxidil-men-solution",
+      "labeler": [
+        "Kenvue Brands LLC"
+      ],
+      "label_approval_records": [
+        {
+          "application": {
+            "extension": "NDA020834",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "NDA"
+          }
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "schema": "validateMonograph: zero errors",
+    "blueprint_sections": "Exact eight IDs/titles/order, four Safety core cards, three Product core cards, and three hero tuples.",
+    "mobile_content": "Two-column short-heading dosing tables with natural wrapping; rendered QA delegated to release owner.",
+    "source_method": "Full current selected official product label clinical and administration sections read. Formulation/population exclusions and label limitations explicit; no paywalled access claimed."
+  },
+  "front_matter_assertion_map": {
+    "hero_facts": [
+      [
+        "Routes covered",
+        "Oral · Topical scalp"
+      ],
+      [
+        "Oral indication",
+        "Severe resistant hypertension"
+      ],
+      [
+        "Topical brand",
+        "Rogaine"
+      ]
+    ],
+    "essential": {
+      "title": "Separate oral cardiac risk from topical directions.",
+      "text": "Oral minoxidil is reserved for severe resistant hypertension with close supervision and usual diuretic/beta-blocker coverage. Hair-growth use of oral tablets is off-label. Topical cardiac symptoms, swelling, or swallowed product require prompt assessment.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "support": {
+      "oral": [
+        "Indications",
+        "Warnings",
+        "Dosage",
+        "Precautions / Unapproved use"
+      ],
+      "womenfoam": [
+        "Drug Facts / Uses, Directions, Warnings"
+      ],
+      "menfoam": [
+        "Drug Facts / Uses, Directions, Warnings"
+      ],
+      "womensolution": [
+        "Drug Facts / Uses, Directions, Warnings"
+      ],
+      "mensolution": [
+        "Drug Facts / Uses, Directions, Warnings"
+      ]
+    }
+  }
+}
