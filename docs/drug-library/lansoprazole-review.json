@@ -1,0 +1,632 @@
+{
+  "drug": "lansoprazole",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Current selected U.S. prescription capsules/SoluTab and OTC capsules; full relevant labels, product status and focused public ACG 2024 H. pylori summary.",
+  "sources": [
+    {
+      "id": "lansorx",
+      "title": "Prevacid / SoluTab · current full label",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=71ba78cb-7e46-43eb-9425-fa130f537f84",
+      "note": "Full public manufacturer label and patient instructions; SPL version 45, effective 20250708. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "45",
+      "effective_date": "20250708",
+      "xml_sha256": "25b11eeab5eb6d9357e71ebc874aaa81e010d7ac9d56b480c710524d9eba14b8",
+      "retrieved_xml": "/tmp/nas-drug-sources/lansorx.xml"
+    },
+    {
+      "id": "lansogeneric",
+      "title": "Teva · prescription delayed-release capsules",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=427cf924-be17-47dc-8f77-115fa2f3fe17",
+      "note": "Full public manufacturer label and patient instructions; SPL version 26, effective 20220301. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "26",
+      "effective_date": "20220301",
+      "xml_sha256": "c99d4910fc3659a2e0c162405e799b40f28364b1ec218b50438ed7d3331c3383",
+      "retrieved_xml": "/tmp/nas-drug-sources/lansogeneric.xml"
+    },
+    {
+      "id": "lansoOTC",
+      "title": "Prevacid 24HR · OTC Drug Facts",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=205c9c1e-b422-4e86-a4b0-714b608adc19",
+      "note": "Full public manufacturer label and patient instructions; SPL version 3, effective 20250624. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "3",
+      "effective_date": "20250624",
+      "xml_sha256": "9ec4de481cf2a1503de83445938e7aaf4104ad74eaa443e7552c2c0db027dd0e",
+      "retrieved_xml": "/tmp/nas-drug-sources/lansoOTC.xml"
+    },
+    {
+      "id": "acg-hp",
+      "title": "ACG · 2024 H. pylori guideline summary",
+      "publisher": "Official regulator or professional society",
+      "url": "https://gi.org/journals-publications/ebgi/schoenfeld_sep2024/",
+      "note": "Complete public professional-society summary, September 17, 2024, read October 1, 2026. No claim of paywalled full guideline access.",
+      "checked": "2026-10-01",
+      "access": "public primary source; exact scope in note",
+      "retrieved_source": "/tmp/nas-drug-sources/acg-hp2024.html",
+      "source_sha256": "cc74e08604ae5f2e54ad491ada19b877dbb1e7e35ef778fe9411065b73ad76d6"
+    },
+    {
+      "id": "NDA020406",
+      "title": "FDA · NDA020406 current products",
+      "publisher": "Official regulator or professional society",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA020406&limit=1",
+      "note": "Current official product array retrieved October 1, 2026; regulatory marketing status does not establish pharmacy stock.",
+      "checked": "2026-10-01",
+      "access": "public primary source; exact scope in note",
+      "retrieved_source": "/tmp/nas-drug-sources/NDA020406.json",
+      "source_sha256": "dd14664a8cd2e4405eeb94ecc21b63ca151646491d911608e67281bd3812a7b6"
+    },
+    {
+      "id": "NDA021428",
+      "title": "FDA · NDA021428 current products",
+      "publisher": "Official regulator or professional society",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA021428&limit=1",
+      "note": "Current official product array retrieved October 1, 2026; regulatory marketing status does not establish pharmacy stock.",
+      "checked": "2026-10-01",
+      "access": "public primary source; exact scope in note",
+      "retrieved_source": "/tmp/nas-drug-sources/NDA021428.json",
+      "source_sha256": "0447728b3c8c99e7cdde7db03b8770e3d949466d0bf7531a0de689375dc1a65b"
+    },
+    {
+      "id": "ANDA077255",
+      "title": "FDA · ANDA077255 current products",
+      "publisher": "Official regulator or professional society",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:ANDA077255&limit=1",
+      "note": "Current official product array retrieved October 1, 2026; regulatory marketing status does not establish pharmacy stock.",
+      "checked": "2026-10-01",
+      "access": "public primary source; exact scope in note",
+      "retrieved_source": "/tmp/nas-drug-sources/ANDA077255.json",
+      "source_sha256": "55272ef6933b618ca71a3d06fdc51098cf39c9c58451ad3b167f4c879bb56c92"
+    },
+    {
+      "id": "ANDA202319",
+      "title": "FDA · ANDA202319 current products",
+      "publisher": "Official regulator or professional society",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:ANDA202319&limit=1",
+      "note": "Current official product array retrieved October 1, 2026; regulatory marketing status does not establish pharmacy stock.",
+      "checked": "2026-10-01",
+      "access": "public primary source; exact scope in note",
+      "retrieved_source": "/tmp/nas-drug-sources/ANDA202319.json",
+      "source_sha256": "10ba69bfeaffdbf3a0be6373d3d2882200d8560e980a0470683ddf3693a74d60"
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Prescription indications",
+      "assertions": {
+        "paragraphs": [
+          "Adults: active duodenal ulcer; maintenance of healed duodenal ulcer; H. pylori eradication with selected antibiotics to reduce duodenal-ulcer recurrence; benign gastric ulcer; healing and risk reduction of NSAID-associated gastric ulcer; symptomatic GERD; erosive-esophagitis treatment and maintenance; pathological hypersecretion including Zollinger–Ellison syndrome. Ages 1–17: short-term symptomatic GERD and erosive esophagitis. Infants under one year are not approved. NSAID risk reduction is specifically for patients with documented prior gastric ulcer who require an NSAID; healing concerns patients continuing NSAIDs. Labeled H. pylori combinations concern active duodenal ulcer or a one-year history; dual therapy specifically addresses clarithromycin allergy/intolerance or known/suspected resistance."
+        ]
+      },
+      "source_sections": {
+        "lansorx": [
+          "1.1–1.10",
+          "8.4"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "OTC indication and antibiotic selection",
+      "assertions": {
+        "paragraphs": [
+          "OTC 15 mg capsules treat frequent heartburn occurring at least two days a week in adults ≥18; full effect can take 1–4 days. H. pylori label combinations are distinct from current empiric therapy: ACG 2024 recommends 14-day optimized bismuth quadruple therapy for treatment-naive adults and reserves clarithromycin triple therapy for demonstrated susceptibility."
+        ]
+      },
+      "source_sections": {
+        "lansoOTC": [
+          "Use",
+          "Directions"
+        ],
+        "lansorx": [
+          "1.2"
+        ],
+        "acg-hp": [
+          "Results and key concepts"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Adult prescription doses",
+      "assertions": {
+        "paragraphs": [
+          "All doses below are oral. Individualize hypersecretory treatment; study exposure is not a routine maximum."
+        ],
+        "table": {
+          "headers": [
+            "Indication",
+            "Label regimen"
+          ],
+          "rows": [
+            [
+              "Duodenal ulcer",
+              "15 mg once daily for 4 weeks; healed-ulcer maintenance 15 mg daily. Controlled maintenance studies did not extend beyond 12 months."
+            ],
+            [
+              "Benign gastric ulcer",
+              "30 mg daily for up to 8 weeks."
+            ],
+            [
+              "NSAID gastric ulcer",
+              "Healing: 30 mg daily for 8 weeks. Risk reduction: 15 mg daily for up to 12 weeks."
+            ],
+            [
+              "Symptomatic GERD",
+              "15 mg daily for up to 8 weeks."
+            ],
+            [
+              "Erosive esophagitis",
+              "30 mg daily for up to 8 weeks; selected unhealed/relapsed adults may receive another 8-week course. Maintenance: 15 mg daily; controlled studies did not exceed 12 months."
+            ],
+            [
+              "Pathological hypersecretion",
+              "Start 60 mg daily; individual adjustment. Divide daily doses >120 mg. Up to 90 mg twice daily has been administered."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "lansorx": [
+          "2.1"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric prescription and hepatic doses",
+      "assertions": {
+        "paragraphs": [
+          "Ages 1–11 with GERD/erosive esophagitis: ≤30 kg, 15 mg daily; >30 kg, 30 mg daily, up to 12 weeks. Ages 12–17: nonerosive GERD 15 mg daily or erosive esophagitis 30 mg daily, up to 8 weeks. Do not convert higher pediatric study doses into routine recommendations. Severe hepatic impairment (Child-Pugh C): 15 mg daily; A/B need no labeled adjustment."
+        ]
+      },
+      "source_sections": {
+        "lansorx": [
+          "2.2",
+          "2.3",
+          "8.4",
+          "8.6"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "OTC course",
+      "assertions": {
+        "paragraphs": [
+          "Adults ≥18: one 15 mg capsule before morning food with water every 24 hours for 14 days. Swallow whole; do not crush/chew. Maximum one capsule daily. Repeat no more often than every four months unless directed by a doctor. Children under 18 require medical review; persistent symptoms or a need for longer/more frequent use require assessment."
+        ]
+      },
+      "source_sections": {
+        "lansoOTC": [
+          "Directions",
+          "Stop use"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "H. pylori label regimens",
+      "assertions": {
+        "paragraphs": [
+          "Label triple therapy: lansoprazole 30 mg, amoxicillin 1 g and clarithromycin 500 mg, each twice daily for 10 or 14 days. Label dual therapy: lansoprazole 30 mg and amoxicillin 1 g, each three times daily for 14 days. These are labeled combinations, not endorsement of empirical clarithromycin or older dual therapy as current preferred care. Antibiotic allergies, interactions, organ dosing and susceptibility require separate review."
+        ]
+      },
+      "source_sections": {
+        "lansorx": [
+          "2.1",
+          "1.2"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Capsule preparation",
+      "assertions": {
+        "paragraphs": [
+          "Swallow whole before meals. If needed, open prescription capsules onto one tablespoon of applesauce, ENSURE pudding, cottage cheese, yogurt or strained pears; swallow intact granules immediately. Alternatively mix with 60 mL apple, orange or tomato juice, swallow immediately and rinse/swallow additional juice. NG tube ≥16 French: intact granules in 40 mL apple juice, administer promptly, then flush with apple juice (IFU specifies 40 mL). Do not substitute unstudied liquids, crush granules or transfer these instructions to OTC capsules."
+        ]
+      },
+      "source_sections": {
+        "lansorx": [
+          "2.4",
+          "Instructions for Use"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "SoluTab preparation",
+      "assertions": {
+        "paragraphs": [
+          "Do not cut, break, crush or chew. Disintegrate on the tongue with or without water and swallow intact microgranules. Oral syringe: 15 mg in 4 mL water or 30 mg in 10 mL; disperse and give within 15 minutes, then rinse with about 2 mL or 5 mL respectively. NG tube ≥8 French: same initial water volumes, shake and administer within 15 minutes, then flush with about 5 mL water. Do not save mixtures. Take ≥30 minutes before sucralfate. For missed prescription doses, take when remembered unless the next is due; never double."
+        ]
+      },
+      "source_sections": {
+        "lansorx": [
+          "2.4",
+          "Instructions for Use"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Investigate poor response or early relapse and alarm symptoms. Stop and evaluate suspected acute tubulointerstitial nephritis, severe skin reactions or lupus. Persistent diarrhea may represent C. difficile infection. Long-term/high-dose use is associated with fracture, B12 deficiency, low magnesium and fundic-gland polyps; low magnesium can cause low calcium/potassium, seizures or arrhythmia. Use the lowest appropriate dose/duration. SoluTab contains phenylalanine: 2.5 mg per 15 mg tablet and 5.1 mg per 30 mg tablet; assess total intake in PKU. Under-one-year use is unapproved, with juvenile-animal heart-valve/bone findings. OTC bleeding, painful swallowing or concerning chest symptoms require urgent evaluation."
+        ]
+      },
+      "source_sections": {
+        "lansorx": [
+          "5.1–5.13",
+          "Medication Guide"
+        ],
+        "lansoOTC": [
+          "Warnings",
+          "Do not use",
+          "Ask a doctor",
+          "Stop use"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Hypersensitivity to lansoprazole/formulation ingredients and concomitant rilpivirine-containing products. Antibiotic combination contraindications also apply and need the separate amoxicillin/clarithromycin labels. OTC alarm-symptom exclusions are additional self-treatment restrictions."
+        ]
+      },
+      "source_sections": {
+        "lansorx": [
+          "4"
+        ],
+        "lansoOTC": [
+          "Do not use"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "Selected prescription lansoprazole labels have no boxed warning. Their important kidney, skin, infection, mineral and infant precautions remain applicable. OTC Drug Facts is a different labeling format."
+        ]
+      },
+      "source_sections": {
+        "lansorx": [
+          "Full prescribing information",
+          "5"
+        ],
+        "lansoOTC": [
+          "Complete Drug Facts"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Common treatment-related reactions include diarrhea, abdominal pain, nausea and constipation; headache also occurs. Rare postmarketing events include severe allergy/skin reactions, kidney injury, hepatotoxicity, pancreatitis, cytopenias and electrolyte disorders; report frequencies cannot be inferred. For overdose seek poison-center/medical advice; lansoprazole is not removed by hemodialysis."
+        ]
+      },
+      "source_sections": {
+        "lansorx": [
+          "6",
+          "10"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant drug interactions",
+      "assertions": {
+        "paragraphs": [
+          "Review the full co-medication label, especially transplant and HIV treatment."
+        ],
+        "table": {
+          "headers": [
+            "Combination",
+            "Label action"
+          ],
+          "rows": [
+            [
+              "Rilpivirine / other HIV drugs",
+              "Rilpivirine contraindicated; avoid nelfinavir. Atazanavir dosing and saquinavir toxicity require their product-specific review."
+            ],
+            [
+              "Warfarin; digoxin; tacrolimus",
+              "Monitor INR/prothrombin time, digoxin levels or tacrolimus troughs respectively; adjustment may be needed."
+            ],
+            [
+              "High-dose methotrexate",
+              "Consider temporary PPI withdrawal under specialist direction."
+            ],
+            [
+              "pH-dependent drugs",
+              "Review iron, antifungals, kinase inhibitors and mycophenolate; reduced absorption/exposure may matter."
+            ],
+            [
+              "Theophylline",
+              "Additional titration may be needed when starting/stopping lansoprazole."
+            ],
+            [
+              "Rifampin / St. John’s wort",
+              "Avoid; CYP induction lowers exposure. Inhibitors such as voriconazole may raise exposure."
+            ],
+            [
+              "Sucralfate / antacids",
+              "Give lansoprazole at least 30 minutes before sucralfate; antacids may be coadministered."
+            ],
+            [
+              "Clopidogrel",
+              "Selected label study found reduced active-metabolite exposure not clinically important; do not infer a universal PPI prohibition."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "lansorx": [
+          "7",
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Diagnostic interference",
+      "assertions": {
+        "paragraphs": [
+          "For chromogranin A, stop at least 14 days before testing under a clinical plan; repeat if initially elevated and use the same laboratory for serial tests. Stop at least 28 days before secretin stimulation testing. Confirm positive urine THC screens with an alternative method when appropriate."
+        ]
+      },
+      "source_sections": {
+        "lansorx": [
+          "5.9",
+          "7"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Renal, hepatic and older patients",
+      "assertions": {
+        "paragraphs": [
+          "Renal PK is not clinically different across studied impairment; no renal dose adjustment is specified for lansoprazole alone, but suspected drug-induced nephritis requires stopping/evaluation. Child-Pugh C requires 15 mg daily; A/B no adjustment. Older patients can be more sensitive despite no overall trial safety/efficacy difference; evaluate alarm symptoms and ongoing need."
+        ]
+      },
+      "source_sections": {
+        "lansorx": [
+          "12.3 renal",
+          "8.5",
+          "8.6",
+          "5.2"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric considerations",
+      "assertions": {
+        "paragraphs": [
+          "Prescription symptomatic GERD/erosive-esophagitis evidence covers ages 1–17 with the dose/duration limits above. It was ineffective for symptomatic GERD in infants under one year; no infant regimen is supplied. Juvenile-animal findings must not be reported as a proven human injury rate."
+        ]
+      },
+      "source_sections": {
+        "lansorx": [
+          "8.4",
+          "5.13"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Observational human pregnancy data overall do not indicate an adverse-outcome association, but animal developmental findings warrant counseling and individual benefit/risk assessment. Antibiotic combinations have separate pregnancy considerations. Human milk/infant-effect data are unavailable; consider breastfeeding benefits, maternal need and potential risks. OTC pregnancy/breastfeeding use requires a health professional."
+        ]
+      },
+      "source_sections": {
+        "lansorx": [
+          "8.1",
+          "8.2"
+        ],
+        "lansoOTC": [
+          "If pregnant or breast-feeding"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and disposition",
+      "assertions": {
+        "paragraphs": [
+          "Lansoprazole blocks gastric parietal-cell H+/K+-ATPase, suppressing basal and stimulated acid secretion. Oral bioavailability exceeds 80%; peak concentration is about 1.7 hours, protein binding about 97% and plasma half-life about 1.5 hours. Hepatic CYP2C19/CYP3A metabolism produces largely inactive circulating metabolites; elimination is urinary and fecal. Acid suppression lasts >24 hours despite short plasma half-life. Postmeal dosing can substantially lower exposure, supporting before-meal administration."
+        ]
+      },
+      "source_sections": {
+        "lansorx": [
+          "12.1",
+          "12.2",
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "assertions": {
+        "paragraphs": [
+          "Review indication/duration and symptom response; investigate bleeding, dysphagia, early relapse or poor response. Monitor magnesium before/periodically during prolonged therapy or with digoxin/diuretics, and magnesium/calcium in patients at hypocalcemia risk. Evaluate B12 when deficiency symptoms/risk warrant; assess bone risk and suspected renal injury. Monitor specific interacting medicines."
+        ]
+      },
+      "source_sections": {
+        "lansorx": [
+          "5",
+          "7",
+          "17"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Counseling and H. pylori follow-up",
+      "assertions": {
+        "paragraphs": [
+          "Explain before-meal use, whole granules, missed doses and separate OTC limits. Report persistent diarrhea, severe rash, reduced urine, cramps/palpitations or new joint/rash symptoms. Complete prescribed antibiotics. ACG calls for proof of eradication at least four weeks after antibiotics, after withholding PPI/PCAB for at least two weeks under the treatment plan; breath/stool antigen or biopsy testing may be used."
+        ]
+      },
+      "source_sections": {
+        "lansorx": [
+          "17",
+          "Medication Guide"
+        ],
+        "lansoOTC": [
+          "Warnings",
+          "Directions"
+        ],
+        "acg-hp": [
+          "Proof-of-eradication key concept"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "paragraphs": [
+          "Prevacid SoluTab 15 mg: white to yellowish-white round tablet with orange/dark speckles, debossed 15; unit-dose package NDC 64764-543-11. This identifies the selected product, not local stock."
+        ]
+      },
+      "source_sections": {
+        "lansorx": [
+          "3",
+          "16"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Prescription delayed-release capsules: generic 15/30 mg and current branded Prevacid 30 mg. FDA lists branded 15 mg capsules Discontinued; Teva 15/30 mg capsules remain Prescription. SoluTab 15/30 mg are Prescription. Selected Prevacid 24HR 15 mg capsules are OTC. No current U.S. injectable or compounded suspension regimen is inferred."
+        ]
+      },
+      "source_sections": {
+        "lansorx": [
+          "3",
+          "16"
+        ],
+        "lansogeneric": [
+          "16"
+        ],
+        "NDA020406": [
+          "Current product array"
+        ],
+        "NDA021428": [
+          "Current product array"
+        ],
+        "ANDA077255": [
+          "Current product array"
+        ],
+        "ANDA202319": [
+          "Current product array"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Prevacid prescribing section: 25°C with excursions 15–30°C; patient IFU describes room temperature 20–25°C. Selected generic capsules: 20–25°C, protect from moisture, tight light-resistant container. OTC: 20–25°C, avoid heat/humidity, protect from moisture and close cap tightly. Follow actual package expiry; keep away from children."
+        ]
+      },
+      "source_sections": {
+        "lansorx": [
+          "16",
+          "Instructions for Use"
+        ],
+        "lansogeneric": [
+          "16"
+        ],
+        "lansoOTC": [
+          "Other information"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "No infant, IV, compounded-product or unverified off-label dosing.",
+    "No claim to access the paywalled full ACG guideline; public society summary supports the specific recommendations."
+  ],
+  "resolved_source_findings": [
+    "Branded 15 mg capsule discontinued while current generic 15 mg remains Prescription.",
+    "Historical label antibiotic regimens separated from current susceptibility-guided clinical recommendations."
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, essential safety, three hero facts, cited disclosures, four safety cards and three product cards.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending"
+  },
+  "monograph_sha256": "588114b1ab72b68489e3c5f8fd57bb5be293ce446cd7269e2e19c84229ffbeef",
+  "frontmatter_source_map": {
+    "fields": {
+      "name": "Lansoprazole",
+      "synonym": "Prevacid · Prevacid SoluTab · Prevacid 24HR",
+      "description": "A proton pump inhibitor with prescription delayed-release capsules and orally disintegrating tablets, plus distinct adult OTC heartburn directions. Indication, age, duration and preparation remain product specific.",
+      "facts": [
+        [
+          "Therapeutic class",
+          "Proton pump inhibitor"
+        ],
+        [
+          "Representative product",
+          "Prevacid SoluTab · 15 mg"
+        ],
+        [
+          "Reference focus",
+          "Prescription oral products and adult OTC capsules"
+        ]
+      ],
+      "essential": {
+        "title": "Separate OTC heartburn treatment from prescription regimens.",
+        "text": "OTC use is a 14-day adult course, not immediate rescue or a pediatric prescription. Evaluate bleeding, swallowing difficulty, chest pain and persistent symptoms. Rilpivirine is contraindicated; kidney injury, severe skin reactions and mineral disturbances require prompt assessment.",
+        "section": "safety",
+        "link": "Warnings and precautions"
+      }
+    },
+    "source_sections": {
+      "lansorx": [
+        "1–5",
+        "3",
+        "16"
+      ],
+      "lansoOTC": [
+        "Use",
+        "Warnings",
+        "Directions"
+      ]
+    }
+  },
+  "source_access_scope": "Full selected public SPL prescribing sections and patient IFUs, current FDA product arrays; lansoprazole additionally uses the public official ACG 2024 summary, not an unaccessed full guideline. XML effective date and current publication date are distinct.",
+  "review_date": "2026-10-01"
+}

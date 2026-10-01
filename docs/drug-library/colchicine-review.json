@@ -1,0 +1,1320 @@
+{
+  "slug": "colchicine",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "An oral anti-inflammatory alkaloid with different labeled products for gout flares, familial Mediterranean fever and adult cardiovascular risk reduction. The 0.5 mg cardiovascular tablet and 0.6 mg tablets, capsules and oral solution have different indications and interaction/organ-function restrictions.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Colcrys · Takeda complete manufacturer prescribing information",
+      "publisher": "Takeda Pharmaceuticals America",
+      "note": "Currently served manufacturer document COL243 R3 / FPI-0147, clinical PI and Medication Guide revised May 2020; retrieved October 1, 2026. Current retrieval is not a 2026 clinical revision.",
+      "url": "https://content.takeda.com/?contenttype=PI&country=GBL&documentnumber=1&language=ENG&product=COL"
+    },
+    {
+      "id": "fmf",
+      "title": "Colchicine 0.6 mg tablets · current FMF-only repackaged label",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Highlights revised September 2023; document display includes June 2026 repackaging/footer; not a new gout indication; SPL v7 effective 20260622; API publication Jun 23, 2026. Clinical revision differs from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f818ffe0-43df-4cc6-bc86-00b2c79b06fc"
+    },
+    {
+      "id": "capsule",
+      "title": "Mitigare 0.6 mg capsule · full label",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical label revised May 2024; SPL v18 effective 20240516; API publication May 23, 2024. Clinical revision differs from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb5f9d85-6b81-49f8-bcd6-17b7bfbc10f2"
+    },
+    {
+      "id": "cv",
+      "title": "LoDoCo 0.5 mg tablet · full label",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Highlights revised August 2024; patient information issued June 2023; August 2026 SPL publication distinct; SPL v4 effective 20260813; API publication Aug 17, 2026. Clinical revision differs from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ff06d68f-d65f-d097-e053-6294a90a7e5f"
+    },
+    {
+      "id": "liquid",
+      "title": "Gloperba 0.6 mg/5 mL · complete oral solution label",
+      "publisher": "DailyMed / Scilex official U.S. product labeling",
+      "note": "Highlights revised August 2022; full PI footer revised March 2023; Medication Guide issued July 2019; SPL v3 effective November 1, 2024; API publication November 5, 2024. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=467cd83f-d695-4040-9434-10e80b4271da"
+    }
+  ],
+  "sourceEvidence": {
+    "label": {
+      "url": "https://content.takeda.com/?contenttype=PI&country=GBL&documentnumber=1&language=ENG&product=COL",
+      "localEvidence": "/tmp/nas-drug-sources/colcrys-takeda.pdf",
+      "sha256": "75e955e9c6a4f46b23ccc3321c49748f6d7cbd57f1cac31a6f5c23198e82af64",
+      "clinicalRevision": "Currently served manufacturer document COL243 R3 / FPI-0147, clinical PI and Medication Guide revised May 2020; retrieved October 1, 2026. Current retrieval is not a 2026 clinical revision.",
+      "checked": "2026-10-01",
+      "access": "Full relevant public source read; no clinical publication date inferred"
+    },
+    "fmf": {
+      "splVersion": "7",
+      "effectiveTime": "20260622",
+      "apiPublishedDate": "Jun 23, 2026",
+      "clinicalRevision": "Highlights revised September 2023; document display includes June 2026 repackaging/footer; not a new gout indication; SPL v7 effective 20260622; API publication Jun 23, 2026. Clinical revision differs from publication. Checked October 1, 2026.",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/f818ffe0-43df-4cc6-bc86-00b2c79b06fc.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f818ffe0-43df-4cc6-bc86-00b2c79b06fc",
+      "localEvidence": "/tmp/nas-drug-sources/colch-tabs.xml",
+      "sha256": "8ab05e53ff49827bcab8ea12b808ed36623ddfacb858243bb80c7322719e3c84",
+      "supportingSections": [
+        "\n                        1.2 Familial Mediterranean Fever (FMF)\n                     ",
+        "\n                  2 DOSAGE AND ADMINISTRATION\n               ",
+        "\n                        2.2 FMF\n                     ",
+        "\n                        2.3 Recommended Pediatric Dosage\n                     ",
+        "\n                        2.4 Dose Modification for Co-administration of Interacting Drugs\n                     ",
+        "\n                        2.5 Dose Modification in Renal Impairment\n                     ",
+        "\n                        2.6 Dose Modification in Hepatic Impairment\n                     ",
+        "\n                  3 DOSAGE FORMS AND STRENGTHS\n               ",
+        "\n                  4 CONTRAINDICATIONS\n               ",
+        "\n                        5.1 Fatal Overdose\n                     ",
+        "\n                        5.2 Blood Dyscrasias\n                     ",
+        "\n                        5.3 Drug Interactions\n                     ",
+        "\n                        5.4 Neuromuscular Toxicity\n                     ",
+        "\n                  6 ADVERSE REACTIONS\n               ",
+        "\n                        6.2 Postmarketing Experience\n                     ",
+        "\n                  7 DRUG INTERACTIONS\n               ",
+        "\n                        8.1 Pregnancy\n                     ",
+        "\n                        8.2 Lactation\n                     ",
+        "\n                        8.3 Females and Males of Reproductive Potential\n                     ",
+        "\n                        8.4 Pediatric Use\n                     ",
+        "\n                        8.5 Geriatric Use\n                     ",
+        "\n                        8.6 Renal Impairment\n                     ",
+        "\n                        8.7 Hepatic Impairment\n                     ",
+        "\n                  9 DRUG ABUSE AND DEPENDENCE\n               ",
+        "\n                  10 OVERDOSAGE\n               ",
+        "\n                  11 DESCRIPTION\n               ",
+        "\n                        12.1 Mechanism of Action\n                     ",
+        "\n                        12.3 Pharmacokinetics\n                     ",
+        "\n                        13.1 Carcinogenesis, Mutagenesis, Impairment of Fertility\n                     ",
+        "\n                  14 CLINICAL STUDIES\n               ",
+        "",
+        "\n                  17 PATIENT COUNSELING INFORMATION\n               ",
+        "\n                  MEDICATION GUIDE\n               ",
+        ""
+      ],
+      "checked": "2026-10-01",
+      "access": "Full relevant public supporting label sections read"
+    },
+    "capsule": {
+      "splVersion": "18",
+      "effectiveTime": "20240516",
+      "apiPublishedDate": "May 23, 2024",
+      "clinicalRevision": "Clinical label revised May 2024; SPL v18 effective 20240516; API publication May 23, 2024. Clinical revision differs from publication. Checked October 1, 2026.",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/cb5f9d85-6b81-49f8-bcd6-17b7bfbc10f2.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb5f9d85-6b81-49f8-bcd6-17b7bfbc10f2",
+      "localEvidence": "/tmp/nas-drug-sources/mitigare.xml",
+      "sha256": "2f1b6cb1646bd6026ae7662ed9b3a4af86e3f46a3f90296b327540c8eb9cb100",
+      "supportingSections": [
+        "1 INDICATIONS AND USAGE",
+        "2.1.   Recommended Dosage for Gout Prophylaxis",
+        "3 DOSAGE FORMS AND STRENGTHS",
+        "4 CONTRAINDICATIONS",
+        "5.1  Fatal Overdose",
+        "5.2  Blood Dyscrasias",
+        "5.3  Interactions with CYP3A4 and P-gp Inhibitors",
+        "5.4  Neuromuscular Toxicity",
+        "6 ADVERSE REACTIONS",
+        "7 DRUG INTERACTIONS",
+        "7.1  CYP3A4",
+        "7.2  P-glycoprotein",
+        "7.3  HMG-CoA Reductase Inhibitors and Fibrates",
+        "7.4  Drug-Drug Interaction Studies",
+        "8.1 Pregnancy ",
+        "8.2 Lactation ",
+        "8.3 Females and Males of Reproductive Potential ",
+        "8.4 Pediatric Use ",
+        "8.5 Geriatric Use ",
+        "8.6 Renal Impairment ",
+        "8.7 Hepatic Impairment ",
+        "9 DRUG ABUSE AND DEPENDENCE",
+        "10 OVERDOSAGE",
+        "11 DESCRIPTION",
+        "12.1 Mechanism of Action",
+        "12.3 Pharmacokinetics",
+        "13.1 Carcinogenesis, Mutagenesis, Impairment of Fertility",
+        "14 CLINICAL STUDIES",
+        "16.1 How Supplied",
+        "16.2  Storage",
+        "17 PATIENT COUNSELING INFORMATION",
+        "Medication Guide\n               ",
+        "PRINCIPAL DISPLAY PANEL\n               "
+      ],
+      "checked": "2026-10-01",
+      "access": "Full relevant public supporting label sections read"
+    },
+    "cv": {
+      "splVersion": "4",
+      "effectiveTime": "20260813",
+      "apiPublishedDate": "Aug 17, 2026",
+      "clinicalRevision": "Highlights revised August 2024; patient information issued June 2023; August 2026 SPL publication distinct; SPL v4 effective 20260813; API publication Aug 17, 2026. Clinical revision differs from publication. Checked October 1, 2026.",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/ff06d68f-d65f-d097-e053-6294a90a7e5f.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ff06d68f-d65f-d097-e053-6294a90a7e5f",
+      "localEvidence": "/tmp/nas-drug-sources/lodoco.xml",
+      "sha256": "0841d8d18df569458bfb12d90e05d397a2f075ae68d3f054338d087c811cd019",
+      "supportingSections": [
+        "1. INDICATION AND USAGE",
+        "2. DOSAGE AND ADMINISTRATION",
+        "3. DOSAGE FORMS AND STRENGTHS",
+        "4. CONTRAINDICATIONS",
+        "5. WARNINGS AND PRECAUTIONS",
+        "6. ADVERSE REACTIONS",
+        "7. DRUG INTERACTIONS",
+        "8. USE IN SPECIFIC POPULATIONS",
+        "10. OVERDOSAGE",
+        "11. DESCRIPTION",
+        "12. CLINICAL PHARMACOLOGY",
+        "13. NONCLINICAL TOXICOLOGY",
+        "14. CLINICAL STUDIES",
+        "16. HOW SUPPLIED/STORAGE AND HANDLING",
+        "17. PATIENT COUNSELING INFORMATION",
+        "PATIENT INFORMATION",
+        "PRINCIPAL DISPLAY PANEL"
+      ],
+      "checked": "2026-10-01",
+      "access": "Full relevant public supporting label sections read"
+    },
+    "liquid": {
+      "splVersion": "3",
+      "effectiveTime": "20241101",
+      "apiPublishedDate": "Nov 05, 2024",
+      "clinicalRevision": "Highlights revised August 2022; full PI footer revised March 2023; Medication Guide issued July 2019; SPL v3 effective November 1, 2024; API publication November 5, 2024. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=467cd83f-d695-4040-9434-10e80b4271da",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/467cd83f-d695-4040-9434-10e80b4271da.xml",
+      "localEvidence": "/tmp/nas-drug-sources/gloperba.xml",
+      "sha256": "fc21a767e563cf62b3fdde4fd13d795894155424608f91ab65759d8089bf1c0f",
+      "supportingSections": [
+        "1 INDICATIONS AND USAGE",
+        "",
+        "2.1 Gout Prophylaxis",
+        "3 DOSAGE FORMS AND STRENGTHS",
+        "4 CONTRAINDICATIONS",
+        "5.1 Fatal Overdose",
+        "5.2 Blood Dyscrasias",
+        "5.3 Drug Interactions",
+        "5.4 Neuromuscular Toxicity",
+        "6 ADVERSE REACTIONS",
+        "7 DRUG INTERACTIONS",
+        "7.1 CYP3A4",
+        "7.2 P-Glycoprotein",
+        "7.3 HMG-CoA Reductase Inhibitors and Fibrates",
+        "7.4 Drug Interaction Studies",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "8.4 Pediatric Use",
+        "8.5 Geriatric Use",
+        "8.6 Renal Impairment",
+        "8.7 Hepatic Impairment",
+        "10 OVERDOSAGE",
+        "11 DESCRIPTION",
+        "12.1 Mechanism of Action",
+        "12.2 Pharmacodynamics",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "14 CLINICAL STUDIES",
+        "16.1 How Supplied",
+        "16.2 Storage",
+        "17 PATIENT COUNSELING INFORMATION",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "PRINCIPAL DISPLAY PANEL - 150 mL Bottle Carton"
+      ],
+      "checked": "2026-10-01",
+      "access": "Full public supporting label sections read"
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Gout and FMF",
+      "sourceIds": [
+        "label",
+        "fmf"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "1 Indications and usage",
+          "8.4 Pediatric use",
+          "14 clinical studies"
+        ],
+        "fmf": [
+          "1 Indications and usage",
+          "8.4 Pediatric use",
+          "14 clinical studies"
+        ]
+      },
+      "claims": [
+        "Colcrys treats acute gout flares at the first sign and prevents gout flares; it also treats FMF in adults and children ≥4 years. The reviewed June 2026 generic/repackaged tablet label is FMF-only: do not confer Colcrys gout approval on that package. Gout pediatric efficacy/safety is unestablished; Colcrys prophylaxis dose text includes adolescents older than 16 while section 2.3 says pediatric gout use is not recommended, requiring product/prescriber reconciliation."
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Capsule and cardiovascular indications",
+      "sourceIds": [
+        "capsule",
+        "cv",
+        "liquid"
+      ],
+      "sourceSectionsById": {
+        "capsule": [
+          "1 Indications and usage",
+          "8.4 Pediatric use",
+          "14 clinical studies"
+        ],
+        "cv": [
+          "1 Indications and usage",
+          "8.4 Pediatric use",
+          "14 clinical studies"
+        ],
+        "liquid": [
+          "1"
+        ]
+      },
+      "claims": [
+        "Mitigare capsules prevent gout flares in adults; acute flare treatment during prophylaxis is unstudied, and FMF/CV dosing is not inferred. LoDoCo reduces risk of MI, stroke, coronary revascularization and CV death in adults with established atherosclerotic disease or multiple CV risk factors. Its 0.5 mg regimen is not a gout rescue course or a substitute for comprehensive CV prevention. Gloperba ready-to-use oral solution is labeled for adult gout prophylaxis; acute flare treatment during prophylaxis is unstudied, and FMF/CV regimens are not inferred."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Colcrys adult gout regimens",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2 Dosage and administration; all applicable indication/renal/hepatic/interaction tables",
+          "8.6–8.7 organ impairment"
+        ]
+      },
+      "claims": [
+        [
+          "Prophylaxis",
+          "0.6 mg once or twice daily; maximum 1.2 mg/day. Uric-acid-lowering initiation may provoke flares; duration individualized, label notes benefit for at least first 6 months rather than a universal stop date."
+        ],
+        [
+          "Acute flare",
+          "1.2 mg at first sign, then 0.6 mg 1 hour later; maximum 1.8 mg over 1 hour. Higher doses have not improved efficacy."
+        ],
+        [
+          "Flare during prophylaxis",
+          "Same limited course, then wait 12 hours before resuming prophylactic dose. Not recommended with renal/hepatic impairment on prophylaxis, or with prophylaxis plus CYP3A4 inhibitors. Repeat treatment safety/efficacy not established universally."
+        ],
+        [
+          "Administration",
+          "Oral, with or without food. Not for other pain; do not repeat until clinician confirms product-specific interval and risks."
+        ],
+        [
+          "Colcrys missed dose",
+          "Acute flare alone: take missed dose as soon as possible. Flare during prophylaxis: take immediately, then wait 12 hours before prophylaxis. Prophylaxis or FMF: take when remembered then normal schedule; do not double. Above contraindications/repeat-course restrictions remain."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "FMF · selected 0.6 mg tablets",
+      "sourceIds": [
+        "label",
+        "fmf"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2 Dosage and administration; all applicable indication/renal/hepatic/interaction tables",
+          "8.6–8.7 organ impairment"
+        ],
+        "fmf": [
+          "2 Dosage and administration; all applicable indication/renal/hepatic/interaction tables",
+          "8.6–8.7 organ impairment"
+        ]
+      },
+      "claims": [
+        [
+          "Adults and adolescents >12 years",
+          "1.2–2.4 mg/day; adult titration up/down in 0.3 mg/day increments to response/tolerance, never above indicated maximum."
+        ],
+        [
+          "Children 4–6 years",
+          "0.3–1.8 mg/day."
+        ],
+        [
+          "Children 6–12 years",
+          "0.9–1.8 mg/day."
+        ],
+        [
+          "Frequency / age boundary",
+          "Daily total once or twice daily. Label age bands overlap at exactly 6; obtain specialist/product review, do not silently choose one start. No labeled dose below age 4 inferred."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Colcrys renal dosing · CrCl in mL/min",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2 Dosage and administration; all applicable indication/renal/hepatic/interaction tables",
+          "8.6–8.7 organ impairment"
+        ]
+      },
+      "claims": [
+        [
+          "Mild 50–80 or moderate 30–50",
+          "Gout prophylaxis/flare: no automatic adjustment, close toxicity monitoring. FMF: close monitoring, reduction may be necessary."
+        ],
+        [
+          "Severe <30 · gout prophylaxis",
+          "Start 0.3 mg/day; increases require close monitoring."
+        ],
+        [
+          "Severe <30 · gout flare",
+          "Single standard flare course need not be reduced, but no repeat more than once every 2 weeks; consider alternative with repeated-course need. Not recommended for renal-impaired patients already taking prophylaxis."
+        ],
+        [
+          "Dialysis · gout prophylaxis",
+          "0.3 mg twice a week with close monitoring, not daily."
+        ],
+        [
+          "Dialysis · gout flare",
+          "0.6 mg single dose; no repeat more than once every 2 weeks."
+        ],
+        [
+          "FMF · severe <30 or dialysis",
+          "Start 0.3 mg/day; any increase requires close monitoring. This differs from twice-weekly gout prophylaxis."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Colcrys hepatic dosing",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2 Dosage and administration; all applicable indication/renal/hepatic/interaction tables",
+          "8.6–8.7 organ impairment"
+        ]
+      },
+      "claims": [
+        "Mild/moderate hepatic impairment: gout regimens generally need no automatic change but close monitoring; FMF requires close monitoring. Severe disease: consider reduction for prophylaxis/FMF; acute course need not be reduced, but repeat no more than every 2 weeks and consider alternative for repeated courses. Flare treatment while already on prophylaxis is not recommended with hepatic impairment. Interaction contraindications still apply; this is not permission for an inhibitor combination."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Mitigare and LoDoCo regimens",
+      "sourceIds": [
+        "capsule",
+        "cv",
+        "liquid"
+      ],
+      "sourceSectionsById": {
+        "capsule": [
+          "2 Dosage and administration; all applicable indication/renal/hepatic/interaction tables",
+          "8.6–8.7 organ impairment"
+        ],
+        "cv": [
+          "2 Dosage and administration; all applicable indication/renal/hepatic/interaction tables",
+          "8.6–8.7 organ impairment"
+        ],
+        "liquid": [
+          "2.1",
+          "7.4",
+          "8.6–8.7",
+          "17/MedicationGuide"
+        ]
+      },
+      "claims": [
+        [
+          "Mitigare",
+          "Adult gout prophylaxis 0.6 mg once or twice daily, maximum 1.2 mg/day, with/without meals. Severe renal/hepatic disease: consider reduction or alternative; no specific Colcrys dialysis schedule transplanted to capsules. Combined renal AND hepatic impairment contraindicated."
+        ],
+        [
+          "LoDoCo",
+          "Adult CV risk reduction 0.5 mg orally once daily with/without food. CrCl <15 mL/min or severe hepatic impairment contraindicated; monitor lesser impairment, no invented dose-reduction algorithm."
+        ],
+        [
+          "LoDoCo missed dose",
+          "Take as soon as possible, then normal schedule; do not double next dose. Other products require their own package instructions."
+        ],
+        [
+          "Gloperba solution",
+          "0.6 mg/5 mL (0.12 mg/mL): adult gout prophylaxis 5 mL once or twice daily, maximum 1.2 mg/day (10 mL/day). With/without food; use accurate mL device, never household teaspoon. Severe renal/hepatic disease: consider reduction/alternative; combined renal AND hepatic impairment contraindicated."
+        ],
+        [
+          "Gloperba missed dose",
+          "Medication Guide: take when remembered unless almost next dose, then skip; never 2 doses together. No universal catch-up for other indication/product."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Interaction-dose planning",
+      "sourceIds": [
+        "label",
+        "fmf",
+        "capsule",
+        "cv",
+        "liquid"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2 Dosage and administration; all applicable indication/renal/hepatic/interaction tables",
+          "8.6–8.7 organ impairment"
+        ],
+        "fmf": [
+          "2 Dosage and administration; all applicable indication/renal/hepatic/interaction tables",
+          "8.6–8.7 organ impairment"
+        ],
+        "capsule": [
+          "2 Dosage and administration; all applicable indication/renal/hepatic/interaction tables",
+          "8.6–8.7 organ impairment"
+        ],
+        "cv": [
+          "2 Dosage and administration; all applicable indication/renal/hepatic/interaction tables",
+          "8.6–8.7 organ impairment"
+        ],
+        "liquid": [
+          "2.1",
+          "7.4",
+          "8.6–8.7",
+          "17/MedicationGuide"
+        ]
+      },
+      "claims": [
+        "Colcrys section 2.4 has indication-specific adjustment tables for current or recent (prior 14 days) CYP3A4/P-gp inhibitors, only when an alternative is unavailable and organ-function restrictions permit. A pharmacist must select exact table, drug, indication and repeat interval; normal doses above do not apply automatically. LoDoCo’s strong-inhibitor contraindications cannot be bypassed by using Colcrys dose reductions."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "label",
+        "fmf",
+        "capsule",
+        "cv",
+        "liquid"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning/status",
+          "4 Contraindications",
+          "5 warnings",
+          "6 adverse reactions",
+          "10 overdose"
+        ],
+        "fmf": [
+          "Boxed warning/status",
+          "4 Contraindications",
+          "5 warnings",
+          "6 adverse reactions",
+          "10 overdose"
+        ],
+        "capsule": [
+          "Boxed warning/status",
+          "4 Contraindications",
+          "5 warnings",
+          "6 adverse reactions",
+          "10 overdose"
+        ],
+        "cv": [
+          "Boxed warning/status",
+          "4 Contraindications",
+          "5 warnings",
+          "6 adverse reactions",
+          "10 overdose"
+        ],
+        "liquid": [
+          "4–6",
+          "10"
+        ]
+      },
+      "claims": [
+        "Fatal accidental/intentional overdoses occur in adults and children; keep securely away from children and do not duplicate products.",
+        "Myelosuppression, low white cells/platelets, pancytopenia and aplastic anemia may occur at therapeutic doses; assess new bleeding, pallor, weakness or infection.",
+        "Muscle/nerve toxicity and rhabdomyolysis occur with chronic dosing; risk rises with renal dysfunction, older age and interacting drugs including some statins/fibrates. Stop and obtain immediate assessment for muscle weakness/pain or numbness/tingling.",
+        "Severe or new diarrhea, vomiting or abdominal cramping may be early toxicity rather than a tolerable expected effect; prompt evaluation and dose interruption/discontinuation if suspected.",
+        "CYP3A4/P-gp inhibition or kidney/liver impairment can cause fatal accumulation. Check prescription, OTC, herbal medicines and grapefruit before every new antibiotic or other treatment."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "label",
+        "fmf",
+        "capsule",
+        "cv",
+        "liquid"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning/status",
+          "4 Contraindications",
+          "5 warnings",
+          "6 adverse reactions",
+          "10 overdose"
+        ],
+        "fmf": [
+          "Boxed warning/status",
+          "4 Contraindications",
+          "5 warnings",
+          "6 adverse reactions",
+          "10 overdose"
+        ],
+        "capsule": [
+          "Boxed warning/status",
+          "4 Contraindications",
+          "5 warnings",
+          "6 adverse reactions",
+          "10 overdose"
+        ],
+        "cv": [
+          "Boxed warning/status",
+          "4 Contraindications",
+          "5 warnings",
+          "6 adverse reactions",
+          "10 overdose"
+        ],
+        "liquid": [
+          "4–6",
+          "10"
+        ]
+      },
+      "claims": [
+        "Colcrys and selected FMF tablet: renal OR hepatic impairment together with P-gp or strong CYP3A4 inhibitors is contraindicated; label includes protease inhibitors except unboosted fosamprenavir wording, not permission for ritonavir combinations.",
+        "Mitigare and Gloperba: contraindicated with BOTH renal and hepatic impairment; also renal OR hepatic impairment with drugs inhibiting BOTH CYP3A4 and P-gp. Its avoidance warnings extend beyond this shorter formal list.",
+        "LoDoCo: any concurrent strong CYP3A4 inhibitor or P-gp inhibitor, CrCl <15 mL/min, severe hepatic impairment, pre-existing blood dyscrasias, or product hypersensitivity. Section 4 says P-gp inhibitors without a strength qualifier; do not narrow it to strong-only based on a table comment."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "sourceIds": [
+        "label",
+        "fmf",
+        "capsule",
+        "cv",
+        "liquid"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning/status",
+          "4 Contraindications",
+          "5 warnings",
+          "6 adverse reactions",
+          "10 overdose"
+        ],
+        "fmf": [
+          "Boxed warning/status",
+          "4 Contraindications",
+          "5 warnings",
+          "6 adverse reactions",
+          "10 overdose"
+        ],
+        "capsule": [
+          "Boxed warning/status",
+          "4 Contraindications",
+          "5 warnings",
+          "6 adverse reactions",
+          "10 overdose"
+        ],
+        "cv": [
+          "Boxed warning/status",
+          "4 Contraindications",
+          "5 warnings",
+          "6 adverse reactions",
+          "10 overdose"
+        ],
+        "liquid": [
+          "4–6",
+          "10"
+        ]
+      },
+      "claims": [
+        "Selected Colcrys, FMF tablet, Mitigare LoDoCo and Gloperba labels contain no boxed warning. Fatal toxicity and product-specific contraindications remain prominent full-label warnings."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "sourceIds": [
+        "label",
+        "fmf",
+        "capsule",
+        "cv",
+        "liquid"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning/status",
+          "4 Contraindications",
+          "5 warnings",
+          "6 adverse reactions",
+          "10 overdose"
+        ],
+        "fmf": [
+          "Boxed warning/status",
+          "4 Contraindications",
+          "5 warnings",
+          "6 adverse reactions",
+          "10 overdose"
+        ],
+        "capsule": [
+          "Boxed warning/status",
+          "4 Contraindications",
+          "5 warnings",
+          "6 adverse reactions",
+          "10 overdose"
+        ],
+        "cv": [
+          "Boxed warning/status",
+          "4 Contraindications",
+          "5 warnings",
+          "6 adverse reactions",
+          "10 overdose"
+        ],
+        "liquid": [
+          "4–6",
+          "10"
+        ]
+      },
+      "claims": [
+        "Diarrhea, nausea, vomiting, cramping/abdominal pain and muscle pain are reported; severe symptoms require toxicity assessment. Other reports include neuropathy, alopecia/rash, liver-enzyme abnormalities, cytopenias and reproductive effects; postmarketing frequency is uncertain. Any excess/accidental ingestion needs immediate emergency/Poison Help (1-800-222-1222), even before symptoms. No established safe overdose threshold or specific antidote; systemic poisoning may progress to multiorgan failure. Hemodialysis does not effectively remove colchicine; no home decontamination instructions."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "CYP3A4 and P-gp",
+      "sourceIds": [
+        "label",
+        "fmf",
+        "capsule",
+        "cv",
+        "liquid"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2 interaction adjustments",
+          "7 Drug interactions",
+          "12.3 PK"
+        ],
+        "fmf": [
+          "2 interaction adjustments",
+          "7 Drug interactions",
+          "12.3 PK"
+        ],
+        "capsule": [
+          "2 interaction adjustments",
+          "7 Drug interactions",
+          "12.3 PK"
+        ],
+        "cv": [
+          "2 interaction adjustments",
+          "7 Drug interactions",
+          "12.3 PK"
+        ],
+        "liquid": [
+          "4",
+          "5.3",
+          "7.1–7.4",
+          "12.3"
+        ]
+      },
+      "claims": [
+        "Examples include clarithromycin, azole antifungals and ritonavir combinations (CYP3A4), and cyclosporine/ranolazine (P-gp); combinations can be fatal. Colcrys/FMF tablet contraindications apply with renal/hepatic impairment; otherwise reduced/interrupted dosing may be necessary, using full section 2.4 tables. Mitigare advises avoiding CYP3A4 or P-gp inhibitors, with reduced dose/frequency and monitoring if unavoidable; dual-inhibitor plus organ impairment is prohibited. LoDoCo prohibits strong CYP3A4 or any P-gp inhibitor regardless of organ function. Gloperba likewise advises avoiding CYP3A4 or P-gp inhibitors, with product-specific reduced dosing/frequency if necessary; its dual-inhibitor/organ-impairment combinations are prohibited. Its selected section 7.4 posaconazole exception requires pharmacist review and is not a LoDoCo permission."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Moderate inhibitors and food",
+      "sourceIds": [
+        "label",
+        "fmf",
+        "capsule",
+        "cv",
+        "liquid"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2 interaction adjustments",
+          "7 Drug interactions",
+          "12.3 PK"
+        ],
+        "fmf": [
+          "2 interaction adjustments",
+          "7 Drug interactions",
+          "12.3 PK"
+        ],
+        "capsule": [
+          "2 interaction adjustments",
+          "7 Drug interactions",
+          "12.3 PK"
+        ],
+        "cv": [
+          "2 interaction adjustments",
+          "7 Drug interactions",
+          "12.3 PK"
+        ],
+        "liquid": [
+          "4",
+          "5.3",
+          "7.1–7.4",
+          "12.3"
+        ]
+      },
+      "claims": [
+        "Verapamil, diltiazem, erythromycin or fluconazole can increase exposure; review exact product. LoDoCo: monitor moderate inhibitors, avoid with existing renal/hepatic impairment. Mitigare studies at specified doses do not establish safety for every inhibitor or patient. Avoid grapefruit/grapefruit juice; mechanistic or volunteer-study findings do not override label warning. Gloperba section 7.4 specifies 0.24 mg (2 mL) with posaconazole but supplies no explicit dosing frequency in that exception; do not infer a regimen from this isolated statement. Formal contraindications still govern, and full prescription/pharmacy clarification is required before use."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Muscle-toxic combinations",
+      "sourceIds": [
+        "label",
+        "fmf",
+        "capsule",
+        "cv",
+        "liquid"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2 interaction adjustments",
+          "7 Drug interactions",
+          "12.3 PK"
+        ],
+        "fmf": [
+          "2 interaction adjustments",
+          "7 Drug interactions",
+          "12.3 PK"
+        ],
+        "capsule": [
+          "2 interaction adjustments",
+          "7 Drug interactions",
+          "12.3 PK"
+        ],
+        "cv": [
+          "2 interaction adjustments",
+          "7 Drug interactions",
+          "12.3 PK"
+        ],
+        "liquid": [
+          "4",
+          "5.3",
+          "7.1–7.4",
+          "12.3"
+        ]
+      },
+      "claims": [
+        "Statins and fibrates can add myopathy/rhabdomyolysis risk; digoxin also has reported rhabdomyolysis interactions. Weigh benefit/risk and monitor clinical muscle symptoms; normal CK or routine CK testing does not guarantee prevention. These risks do not amount to a universal ban on every statin."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Kidney, liver and older adults",
+      "sourceIds": [
+        "label",
+        "fmf",
+        "capsule",
+        "cv",
+        "liquid"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8 Use in specific populations",
+          "2 renal/hepatic/pediatric dosing"
+        ],
+        "fmf": [
+          "8 Use in specific populations",
+          "2 renal/hepatic/pediatric dosing"
+        ],
+        "capsule": [
+          "8 Use in specific populations",
+          "2 renal/hepatic/pediatric dosing"
+        ],
+        "cv": [
+          "8 Use in specific populations",
+          "2 renal/hepatic/pediatric dosing"
+        ],
+        "liquid": [
+          "8.1–8.7"
+        ]
+      },
+      "claims": [
+        "See separate dose tables and contraindications. Colchicine clearance falls with kidney/liver dysfunction; older patients require cautious selection and medicine review even with apparently normal function. LoDoCo has stricter CrCl <15/severe liver contraindications; Mitigare/Gloperba combined kidney/liver impairment is prohibited. Indexed eGFR is not silently substituted for label CrCl in mL/min."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric scope",
+      "sourceIds": [
+        "label",
+        "fmf",
+        "capsule",
+        "cv",
+        "liquid"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8 Use in specific populations",
+          "2 renal/hepatic/pediatric dosing"
+        ],
+        "fmf": [
+          "8 Use in specific populations",
+          "2 renal/hepatic/pediatric dosing"
+        ],
+        "capsule": [
+          "8 Use in specific populations",
+          "2 renal/hepatic/pediatric dosing"
+        ],
+        "cv": [
+          "8 Use in specific populations",
+          "2 renal/hepatic/pediatric dosing"
+        ],
+        "liquid": [
+          "8.1–8.7"
+        ]
+      },
+      "claims": [
+        "Selected tablets support FMF ≥4; overlapping age-6 bands need specialist resolution. No tablet gout dose is inferred for children from an FMF schedule. Colcrys prophylaxis older-than-16 wording conflicts with broader pediatric-gout caution; do not present an adolescent treatment recommendation. Mitigare, Gloperba and LoDoCo lack established pediatric dosing for their indications."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy, lactation and fertility",
+      "sourceIds": [
+        "label",
+        "fmf",
+        "capsule",
+        "cv",
+        "liquid"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8 Use in specific populations",
+          "2 renal/hepatic/pediatric dosing"
+        ],
+        "fmf": [
+          "8 Use in specific populations",
+          "2 renal/hepatic/pediatric dosing"
+        ],
+        "capsule": [
+          "8 Use in specific populations",
+          "2 renal/hepatic/pediatric dosing"
+        ],
+        "cv": [
+          "8 Use in specific populations",
+          "2 renal/hepatic/pediatric dosing"
+        ],
+        "liquid": [
+          "8.1–8.7"
+        ]
+      },
+      "claims": [
+        "Current manufacturer Colcrys, Mitigare, selected FMF tablet LoDoCo and Gloperba summaries report observational human data without identified major pregnancy-risk signals, with study limitations and animal developmental toxicity; colchicine crosses placenta. Balance disease-treatment benefit/risk, not a claim of proved zero risk. Present in milk; assess maternal need and feeding benefits/risks, evaluate infant diarrhea/other symptoms. Rare male infertility may be reversible; untreated FMF also has reproductive consequences."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "sourceIds": [
+        "label",
+        "fmf",
+        "capsule",
+        "cv",
+        "liquid"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "12.1 Mechanism",
+          "12.3 Pharmacokinetics"
+        ],
+        "fmf": [
+          "12.1 Mechanism",
+          "12.3 Pharmacokinetics"
+        ],
+        "capsule": [
+          "12.1 Mechanism",
+          "12.3 Pharmacokinetics"
+        ],
+        "cv": [
+          "12.1 Mechanism",
+          "12.3 Pharmacokinetics"
+        ],
+        "liquid": [
+          "12.1–12.3"
+        ]
+      },
+      "claims": [
+        "Binding tubulin inhibits microtubule assembly and neutrophil activation/migration; inflammasome/IL-1β pathways may contribute. Exact FMF benefit mechanism is incompletely understood. CV labeling describes anti-inflammatory effects rather than cholesterol reduction; no urate-lowering or universal pain-relief effect inferred."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "sourceIds": [
+        "label",
+        "fmf",
+        "capsule",
+        "cv",
+        "liquid"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "12.1 Mechanism",
+          "12.3 Pharmacokinetics"
+        ],
+        "fmf": [
+          "12.1 Mechanism",
+          "12.3 Pharmacokinetics"
+        ],
+        "capsule": [
+          "12.1 Mechanism",
+          "12.3 Pharmacokinetics"
+        ],
+        "cv": [
+          "12.1 Mechanism",
+          "12.3 Pharmacokinetics"
+        ],
+        "liquid": [
+          "12.1–12.3"
+        ]
+      },
+      "claims": [
+        "Oral absorption, CYP3A4 metabolism, P-gp transport and renal/biliary elimination shape exposure; enterohepatic recirculation can occur. Repeated 0.6 mg tablet doses in healthy volunteers had mean half-life roughly 27–31 hours; this is not every patient/product’s value. Organ impairment and inhibitors prolong/increase exposure; hemodialysis is ineffective for removal. Food is not a clinically required restriction for reviewed oral regimens."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "sourceIds": [
+        "label",
+        "fmf",
+        "capsule",
+        "cv",
+        "liquid"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "17 Patient counseling",
+          "Medication Guide/IFU",
+          "5 warnings"
+        ],
+        "fmf": [
+          "17 Patient counseling",
+          "Medication Guide/IFU",
+          "5 warnings"
+        ],
+        "capsule": [
+          "17 Patient counseling",
+          "Medication Guide/IFU",
+          "5 warnings"
+        ],
+        "cv": [
+          "17 Patient counseling",
+          "Medication Guide/IFU",
+          "5 warnings"
+        ],
+        "liquid": [
+          "5",
+          "17/MedicationGuide"
+        ]
+      },
+      "claims": [
+        "Check product, indication, renal/hepatic function and medicine list before treatment and each change. Assess GI tolerance, muscle/nerve symptoms, infection or bleeding; targeted CBC, renal/liver studies and CK can evaluate suspected toxicity. No label-backed universal monitoring frequency or safe CK threshold asserted. Follow FMF disease control, gout flare prevention and CV-risk care according to the prescriber plan."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "sourceIds": [
+        "label",
+        "fmf",
+        "capsule",
+        "cv",
+        "liquid"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "17 Patient counseling",
+          "Medication Guide/IFU",
+          "5 warnings"
+        ],
+        "fmf": [
+          "17 Patient counseling",
+          "Medication Guide/IFU",
+          "5 warnings"
+        ],
+        "capsule": [
+          "17 Patient counseling",
+          "Medication Guide/IFU",
+          "5 warnings"
+        ],
+        "cv": [
+          "17 Patient counseling",
+          "Medication Guide/IFU",
+          "5 warnings"
+        ],
+        "liquid": [
+          "5",
+          "17/MedicationGuide"
+        ]
+      },
+      "claims": [
+        "Take the exact prescribed regimen; 0.5 and 0.6 mg products are not automatically interchangeable. Acute Colcrys dose is a short limited course, not repeated until diarrhea. Avoid grapefruit and unreviewed new medicines. Stop and seek assessment for toxicity symptoms; call immediately for any overdose. Keep secure and never share. No off-label pericarditis, Behçet or other specialist dose algorithm supplied."
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative Colcrys product",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3 strength",
+          "11 description",
+          "16 supply/storage",
+          "SPL product panels"
+        ]
+      },
+      "claims": [
+        [
+          "Tablet",
+          "0.6 mg purple, capsule-shaped film-coated tablet; AR 374 and score."
+        ],
+        [
+          "Manufacturer package",
+          "Takeda label lists NDC 64764-119-01 (100) and 64764-119-07 (30); verify actual package."
+        ],
+        [
+          "Status",
+          "Prescription oral product; manufacturer PDF clinical revision May 2020, currently retrieved, not proof of stock."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "label",
+        "fmf",
+        "capsule",
+        "cv",
+        "liquid"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3 strength",
+          "11 description",
+          "16 supply/storage",
+          "SPL product panels"
+        ],
+        "fmf": [
+          "3 strength",
+          "11 description",
+          "16 supply/storage",
+          "SPL product panels"
+        ],
+        "capsule": [
+          "3 strength",
+          "11 description",
+          "16 supply/storage",
+          "SPL product panels"
+        ],
+        "cv": [
+          "3 strength",
+          "11 description",
+          "16 supply/storage",
+          "SPL product panels"
+        ],
+        "liquid": [
+          "3",
+          "11",
+          "16"
+        ]
+      },
+      "claims": [
+        [
+          "Tablets",
+          "Colcrys and selected FMF generic 0.6 mg scored tablets; generic G 02 appearance differs."
+        ],
+        [
+          "Capsules",
+          "Mitigare 0.6 mg dark/light-blue hard capsule, West-ward 118; do not infer tablet splitting."
+        ],
+        [
+          "CV tablet",
+          "LoDoCo 0.5 mg white to slightly yellow round biconvex L1 tablet; selected 30-tablet blister NDC 82867-001-01."
+        ],
+        [
+          "Solution",
+          "Gloperba ready-to-use 0.6 mg/5 mL (0.12 mg/mL), red/cherry odor; 150 mL bottle NDC 69557-222-01."
+        ],
+        [
+          "Scope",
+          "Selected U.S. oral tablet, capsule and solution products; no IV or non-U.S. regimen."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "label",
+        "fmf",
+        "capsule",
+        "cv",
+        "liquid"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3 strength",
+          "11 description",
+          "16 supply/storage",
+          "SPL product panels"
+        ],
+        "fmf": [
+          "3 strength",
+          "11 description",
+          "16 supply/storage",
+          "SPL product panels"
+        ],
+        "capsule": [
+          "3 strength",
+          "11 description",
+          "16 supply/storage",
+          "SPL product panels"
+        ],
+        "cv": [
+          "3 strength",
+          "11 description",
+          "16 supply/storage",
+          "SPL product panels"
+        ],
+        "liquid": [
+          "3",
+          "11",
+          "16"
+        ]
+      },
+      "claims": [
+        "Selected products generally store at 20–25°C. Colcrys/FMF tablets: tight light-resistant container; Mitigare protect light/moisture. LoDoCo keep original light-protective package, excursions 15–30°C permitted. Retain exact package instructions; keep all colchicine securely out of children’s reach. Gloperba solution: 20–25°C, excursions 15–30°C; no unsupported after-opening discard interval or compounded concentration."
+      ]
+    },
+    {
+      "section": "hero/essential",
+      "card": "Scope and essential safety",
+      "sourceIds": [
+        "label",
+        "fmf",
+        "capsule",
+        "cv",
+        "liquid"
+      ],
+      "sourceSections": [
+        "1 indications",
+        "2 dosage",
+        "4–5 safety",
+        "16 product/status"
+      ],
+      "claims": [
+        "An oral anti-inflammatory alkaloid with different labeled products for gout flares, familial Mediterranean fever and adult cardiovascular risk reduction. The 0.5 mg cardiovascular tablet and 0.6 mg tablets, capsules and oral solution have different indications and interaction/organ-function restrictions.",
+        "Review kidney/liver function and all medicines before treatment. Strong CYP3A4/P-gp inhibitors can cause fatal accumulation; contraindications differ by product. New severe GI symptoms, muscle pain/weakness, numbness, infection or unusual bleeding need prompt assessment; suspected toxicity requires stopping and urgent evaluation. Any overdose is an emergency.",
+        [
+          "Therapeutic class",
+          "Anti-inflammatory microtubule inhibitor"
+        ],
+        [
+          "Representative formulation",
+          "Colcrys 0.6 mg scored oral tablet"
+        ],
+        [
+          "CV-specific product",
+          "LoDoCo 0.5 mg once daily · adults"
+        ]
+      ]
+    }
+  ],
+  "materialErrors": [],
+  "gaps": [
+    {
+      "material": false,
+      "topic": "Colcrys chronology",
+      "finding": "ManufacturercurrentlyservedfullPIrevised05/2020. DailyMedrepackageSPLv4effective10/2022retainsNovember2012footerandoutdatedpregnancycategory.",
+      "resolution": "ManufacturercompleteMay2020source usedforclaims; oldrepackage notpublishedsource; no 2026clinicalrevision inferred."
+    },
+    {
+      "material": false,
+      "topic": "Generic FMF-only scope",
+      "finding": "CurrentRemedyrepackageFMF-only, highlights9/2023vsdocumentfooter6/2026.",
+      "resolution": "Goutnotattributed generic; bothdatecontexts explicit. Generic productdifferentG02identification."
+    },
+    {
+      "material": false,
+      "topic": "Pediatric gout / exact age6",
+      "finding": "Colcrysprophylaxisolderthan16vs2.3pediatricnotrecommended;FMF4–6and6–12bands overlap6.",
+      "resolution": "Conflictsnonactionable, seekexactproduct/specialistreview; no adolescentgoutrecommendation or chosenage6startingdose."
+    },
+    {
+      "material": false,
+      "topic": "Interaction algorithms",
+      "resolution": "FullColcrys2.4Tables1/2 reviewed; detailedreduceddosealgorithms linkedforpharmacistselection notreproducedasuniversalinstructions. Recent14dayswindow included. LoDoCo4anyPgpnotnarrowedstrongtable; Mitigaredualorgan/dual inhibitorformalcontra distinctavoidancewarnings."
+    },
+    {
+      "material": false,
+      "topic": "Overdose threshold",
+      "resolution": "Differentobservationaltoxic/fataldoseclaims notusedtoassertsafethreshold; emergencyalloverdose, nohomegastriclavageprotocol."
+    },
+    {
+      "material": false,
+      "topic": "Gloperba posaconazole exception",
+      "finding": "Full7.4specifies0.24mg(2mL)butnoexplicitfrequency in thatsentence; formalorgan/dual-inhibitorcontraapply.",
+      "resolution": "Nonactionablefrequencygap explicit, pharmacy prescription review; no dailyfrequencyinferred or LoDoCoexceptiontransplanted. Oral0.12mg/mLmeasuringrulesdose/max/storageverified."
+    },
+    {
+      "material": false,
+      "topic": "Other routes/guideline scope",
+      "resolution": "FullGloperbasolution included; noIV/non-U.S.orofflabelpericarditisalgorithms; no universal prophylaxisstop or preferred-treatmentranking."
+    },
+    {
+      "material": false,
+      "topic": "Gloperba chronology",
+      "resolution": "Highlights8/2022versusfullPIfooter03/2023andMedGuide7/2019 aredistinctfromSPL11/2024; no inferred new clinicalrevision."
+    }
+  ],
+  "exclusions": [
+    "IV/non-U.S. or compounded concentrations; off-label pericarditis/Behçet specialistregimens; unqualified adolescentgoutrecommendation; universal prophylaxisduration/CVguidelineranking; exactinhibitoradjustmenttables require pharmacist primaryPI selection; Gloperbaposaconazolefrequency requiresprescriptionclarification."
+  ],
+  "validation": {
+    "schema": "Passed: validateMonograph returned [] for all8sections, hero3facts, safety4/product3cards.",
+    "renderedPage": "Pending parent natural390px integration QA; data intrinsic width≤350px"
+  },
+  "monographSha256": "02c5920598dbe5716a6acaa2d51a1f27cbcde4fe29de1015dce0a666e8671b90",
+  "sourceInterpretationNotes": [
+    "Original concise clinical summaries; current public primary sources, supporting full sections read; no paywall access or reference invention.",
+    "Clinical revision/IFU date is distinct from SPL effectiveTime and API publication; older currently-served source is explicitly identified, not claimed new clinical revision.",
+    "No current-stock inference, automatic mg-for-mg or route conversion, self-directed switch, preferred-treatment ranking, universal monitoring interval or home overdose protocol."
+  ]
+}
