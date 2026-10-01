@@ -118,7 +118,7 @@ export const rosuvastatin = {
               ],
               [
                 "Severe renal impairment, without hemodialysis",
-                "Creatinine clearance <30 mL/min/1.73 m²: start 5 mg daily; maximum 10 mg daily."
+                "Creatinine clearance <30 mL / min / 1.73 m²: start 5 mg daily; maximum 10 mg daily."
               ]
             ]
           }
@@ -126,7 +126,7 @@ export const rosuvastatin = {
         {
           "title": "Administration and dose adjustment",
           "paragraphs": [
-            "Take tablets once daily at any time, with or without food; swallow whole. Do not take an extra dose after a missed dose. Take Crestor at least 2 hours before an aluminum/magnesium hydroxide antacid.",
+            "Take tablets once daily at any time, with or without food; swallow whole. Do not take an extra dose after a missed dose. Take Crestor at least 2 hours before an aluminum / magnesium hydroxide antacid.",
             "Assess LDL-C as clinically appropriate, as early as 4 weeks after starting, and adjust to response. Interaction-related limits may be lower than the usual maximum."
           ],
           "sources": [
@@ -224,7 +224,7 @@ export const rosuvastatin = {
             "rows": [
               [
                 "Avoid",
-                "Sofosbuvir/velpatasvir/voxilaprevir; ledipasvir/sofosbuvir."
+                "Sofosbuvir / velpatasvir / voxilaprevir; ledipasvir / sofosbuvir."
               ],
               [
                 "Avoid; restricted regimen if unavoidable",
@@ -236,7 +236,7 @@ export const rosuvastatin = {
               ],
               [
                 "Start 5 mg; maximum 10 mg daily",
-                "Simeprevir; dasabuvir/ombitasvir/paritaprevir/ritonavir; elbasvir/grazoprevir; sofosbuvir/velpatasvir; glecaprevir/pibrentasvir; atazanavir/ritonavir; lopinavir/ritonavir."
+                "Simeprevir; dasabuvir / ombitasvir / paritaprevir / ritonavir; elbasvir / grazoprevir; sofosbuvir / velpatasvir; glecaprevir / pibrentasvir; atazanavir / ritonavir; lopinavir / ritonavir."
               ],
               [
                 "Maximum 10 mg daily",
@@ -252,7 +252,7 @@ export const rosuvastatin = {
         {
           "title": "Other clinically relevant interactions",
           "paragraphs": [
-            "Fibrates, lipid-modifying niacin (≥1 g/day), and colchicine add muscle risk; weigh benefit and monitor if combined. Obtain INR before starting in warfarin users and check frequently after starting, dose changes, or discontinuation until stable. Separate aluminum/magnesium hydroxide antacids by giving Crestor at least 2 hours before them.",
+            "Fibrates, lipid-modifying niacin (≥1 g / day), and colchicine add muscle risk; weigh benefit and monitor if combined. Obtain INR before starting in warfarin users and check frequently after starting, dose changes, or discontinuation until stable. Separate aluminum / magnesium hydroxide antacids by giving Crestor at least 2 hours before them.",
             "These are the selected label’s interaction instructions, not a complete screen for every newly prescribed medicine. Check both drug labels before adding treatment."
           ],
           "sources": [

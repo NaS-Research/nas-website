@@ -31,7 +31,8 @@ for(const drug of ledger.drugs) {
   }
  }
  drug.monographSha256=hash;drug.sourceAuditRecord=record;drug.sources=audit.sources;drug.sourceAudit=map;
- drug.materialErrors=materialErrors;drug.gaps=materialGaps.length?materialGaps:(audit.gaps||[]);
+ drug.materialErrors=materialErrors;
+ drug.gaps=materialGaps.length?materialGaps:[...(audit.gaps||[]),...(audit.formulationReviewGaps||[])];
 }
 const counts={};for(const drug of ledger.drugs)counts[drug.status]=(counts[drug.status]||0)+1;
 const reviewed=(counts.source_reviewed||0)+(counts.verified||0)+(counts.deployed||0);

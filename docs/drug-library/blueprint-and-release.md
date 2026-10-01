@@ -2,7 +2,7 @@
 
 Task: NaS-Website-Drug Library. Inventory: **300**, including the immutable APAP reference; **299** migrations are tracked in 30 batches (29 of ten, then nine).
 
-This is an active, incomplete work record. Eleven batches (110 migrated profiles) have exact GitHub/Netlify production publication receipts and passed hosted checks; batch12 is source-reviewed and undergoing corrected-data integration QA. Candidate retrieval, clinical source review, schema validation, build/render checks, remote push, and verified publication remain distinct states in the completion ledger. A formatting revision to the previously published pregabalin dose tables is tracked separately, preserving its prior edition and source evidence. The remaining inventory is still being authored and reviewed; completion is never inferred from a candidate label or a passing schema.
+This is an active, incomplete work record. Thirteen batches (130 migrated profiles) have exact GitHub/Netlify production publication receipts and passed hosted checks. Batch13's degludec mobile table was corrected in its unpublished candidate with exact clinical content independently checked; corrected production publication is verified. Batch14 includes six data-only formatting revisions to earlier profiles, with prior editions preserved. Candidate retrieval, clinical source review, schema validation, build/render checks, remote push, and verified publication remain distinct states in the completion ledger. The remaining inventory is still being authored and reviewed; completion is never inferred from a candidate label or a passing schema.
 
 Earlier batch notes are retained as history; the completion ledger and production-verification entries record the current state.
 
@@ -135,3 +135,8 @@ Naproxen, sumatriptan, prednisolone, esomeprazole, mirtazapine, levetiracetam, n
 ### Batch13 validation
 
 Insulin degludec, cyanocobalamin, hydralazine, adalimumab, azelastine, sitagliptin, glimepiride, chlorthalidone, oxybutynin, and pioglitazone completed primary-source audits and targeted independent safety review. Required security/route/contract tests, zero-advisory dependency audit, production build and generated HTML checks passed. All ten passed twenty desktop/mobile interaction/article-bounds checks, and four representative hero/dosage/safety layouts plus mobile contents were visually inspected. APAP/shared presentation unchanged. Label metadata conflicts, historical product status, and inaccessible-source scope are retained accurately. Hosted publication is verified separately.
+
+
+### Batch13 production verification
+
+Ten profiles published through PR16, exact authoring correction `63e1c482f2a62917b9aa0edd5d3859e8f5696edd`, production merge `aadcb57ea9377970077ae21ea8b55a2f7e7a62c3`, Netlify `6abec3fa6f735c0008875fe2`, published October1,2026 at20:36:43.886UTC. Corrected exact preview and production each passed131 hosted HTML routes and20 strict desktop/mobile browser checks. Original unpublished candidate and corrected visual/source evidence are preserved externally.

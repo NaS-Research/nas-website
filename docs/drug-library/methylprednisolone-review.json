@@ -1,0 +1,891 @@
+{
+  "drug": "methylprednisolone",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Complete selected current U.S. Medrol oral, two Solu-Medrol sodium-succinate presentation labels, and single-/multidose Depo-Medrol acetate labels; current official ESE/Endocrine Society 2024 adrenal recommendations.",
+  "sources": [
+    {
+      "id": "medrol",
+      "title": "Medrol · oral tablets and 4 mg Dosepak",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=39d5270b-d957-4821-93d6-501b7b9f02d4",
+      "note": "Full public manufacturer label and patient instructions; SPL version 25, effective 20251114. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "25",
+      "effective_date": "20251114",
+      "xml_sha256": "d6f72278d8f008417457aaed9107f3100dbe50efe087326b2969556f5e80033f",
+      "retrieved_xml": "/tmp/nas-drug-sources/medrol.xml",
+      "published_date": "Nov 18, 2025"
+    },
+    {
+      "id": "solumedrol",
+      "title": "Solu-Medrol · selected current IV/IM formulations",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7271310c-7764-4812-aa30-a5e90987c7a9",
+      "note": "Full public manufacturer label and patient instructions; SPL version 12, effective 20260625. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "12",
+      "effective_date": "20260625",
+      "xml_sha256": "08e5d9ad668e87ee1951358aea04e9cde75f66207d5f323961b00f02bce6007a",
+      "retrieved_xml": "/tmp/nas-drug-sources/solumedrol.xml",
+      "published_date": "Jun 26, 2026"
+    },
+    {
+      "id": "solumedrol2",
+      "title": "Solu-Medrol · full selected strength/presentation label",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cd99be87-c8d9-48d6-a8e5-e081052e3f19",
+      "note": "Full public manufacturer label and patient instructions; SPL version 35, effective 20251202. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "35",
+      "effective_date": "20251202",
+      "xml_sha256": "114ab21894ef2555d484a23a0c7ba1fd8c74372f4c5613d0085427f16e301b01",
+      "retrieved_xml": "/tmp/nas-drug-sources/solumedrol2.xml",
+      "published_date": "Dec 16, 2025"
+    },
+    {
+      "id": "depomedrol",
+      "title": "Depo-Medrol · 40/80 mg/mL single-dose vials",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a7b3837-e038-48bf-97e9-78ad463760dc",
+      "note": "Full public manufacturer label and patient instructions; SPL version 27, effective 20260121. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "27",
+      "effective_date": "20260121",
+      "xml_sha256": "412068694e2a7f4ab3736514a55db3f1dad53f8d1ff21556f58f068a4e62837b",
+      "retrieved_xml": "/tmp/nas-drug-sources/depomedrol.xml",
+      "published_date": "Jan 26, 2026"
+    },
+    {
+      "id": "depomedrol2",
+      "title": "Depo-Medrol · 20/40/80 mg/mL benzyl-alcohol multidose vials",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=823b0010-2b57-4e76-b5ac-4a8c2963438f",
+      "note": "Full public manufacturer label and patient instructions; SPL version 22, effective 20260121. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "22",
+      "effective_date": "20260121",
+      "xml_sha256": "b379ff6c8dabfc584c352f85eff97f2ecc203fd685c193fe571962a9cc06f5b8",
+      "retrieved_xml": "/tmp/nas-drug-sources/depomedrol2.xml",
+      "published_date": "Jan 26, 2026"
+    },
+    {
+      "id": "hpa2024",
+      "title": "ESE/Endocrine Society 2024 · Glucocorticoid-induced adrenal insufficiency",
+      "publisher": "Endocrine Society / European Society of Endocrinology",
+      "url": "https://www.endocrine.org/clinical-practice-guidelines/glucocorticoid-induced-adrenal-insufficiency",
+      "note": "Official public recommendations dated May 13, 2024 read October 1, 2026; taper, non-oral exposure and stress-coverage recommendations. Full journal evidence tables not claimed accessed.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "retrieval_method": "official page/PDF read through web tool",
+      "retrieved_file": "/tmp/nas-drug-sources/hpa2024.html",
+      "html_sha256": "a9d4af10df45697a612a90fa6a798c64be139e000e7db417fa290b2b920e89e4",
+      "version": "ESE / Endocrine Society joint 2024 recommendations",
+      "publication_date": "2024-05-13",
+      "reviewed_sections": [
+        "Full official recommendation list R2.1–R2.9 and R3.1–R3.2; taper, combined/nonoral exposure, HPA assessment and stress coverage"
+      ],
+      "access_evidence": "Complete public official recommendation page read; journal evidence tables are not claimed accessed."
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Labeled systemic indications",
+      "assertions": {
+        "paragraphs": [
+          "Medrol has disease-specific endocrine, rheumatic/collagen, dermatologic/allergic, ophthalmic, respiratory, hematologic/neoplastic, nephrotic, gastrointestinal and acute-MS-exacerbation indications. Solu-Medrol IV/IM and Depo-Medrol IM have their own broad disease lists when oral therapy is not feasible and the formulation/route fits. Endocrine replacement generally favors hydrocortisone/cortisone, with mineralocorticoid supplementation when appropriate. Do not interpret the lists as permission to treat every rash, pain or infection with systemic steroids."
+        ]
+      },
+      "source_sections": {
+        "medrol": [
+          "INDICATIONS AND USAGE: 1–13"
+        ],
+        "solumedrol": [
+          "INDICATIONS AND USAGE"
+        ],
+        "depomedrol": [
+          "For Intramuscular Administration"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Labeled local acetate indications",
+      "assertions": {
+        "paragraphs": [
+          "Depo-Medrol intra-articular/soft-tissue use is short-term adjunctive treatment of selected arthritic, bursal or tendon-sheath inflammatory disorders. Intralesional indications include specified inflammatory dermatoses, keloids, alopecia areata and selected ganglia. Appropriate sterile placement and infection exclusion are essential; local injections can be systemically absorbed. Solu-Medrol powder is not the acetate suspension and does not inherit these local-use instructions."
+        ]
+      },
+      "source_sections": {
+        "depomedrol": [
+          "For Intra-articular Or Soft Tissue Administration",
+          "For Intralesional Administration",
+          "Parenteral Administration"
+        ],
+        "depomedrol2": [
+          "FOR INTRA-ARTICULAR OR SOFT TISSUE ADMINISTRATION",
+          "FOR INTRALESIONAL ADMINISTRATION"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Clinical limitations",
+      "assertions": {
+        "paragraphs": [
+          "Systemic high-dose methylprednisolone should not be used to treat traumatic brain injury; injection labels describe increased mortality in that setting. Steroids may speed MS relapse resolution without changing the ultimate disease course; label legacy relapse regimens are not a complete modern MS protocol. Antimicrobial treatment remains necessary for labeled adjunctive tuberculosis uses. Epidural use is unapproved and intrathecal administration is contraindicated. Solu-Medrol labeling also reports failure to establish benefit in sepsis/septic shock and possible increased mortality in selected patients; its broad high-dose example is not a recommendation for those conditions."
+        ]
+      },
+      "source_sections": {
+        "medrol": [
+          "General Precautions",
+          "INDICATIONS AND USAGE"
+        ],
+        "solumedrol": [
+          "General",
+          "Neurologic-psychiatric",
+          "Serious Neurologic Adverse Reactions with Epidural Administration",
+          "CONTRAINDICATIONS",
+          "Immunosuppression and Increased Risk of Infection: sepsis/septic shock"
+        ],
+        "depomedrol": [
+          "General",
+          "CONTRAINDICATIONS"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Oral and soluble injection dosing · Selected labels",
+      "assertions": {
+        "paragraphs": [
+          "The following label ranges are not substitute disease-specific protocols or universal ceilings."
+        ],
+        "table": {
+          "headers": [
+            "Product / situation",
+            "Directions / boundary"
+          ],
+          "rows": [
+            [
+              "Medrol oral",
+              "Usual initial label range 4–48 mg/day, individualized; some diseases need higher doses. Reduce toward the lowest effective maintenance dose by response."
+            ],
+            [
+              "Medrol 4 mg Dosepak",
+              "21 tablets over 6 days: daily tablet counts 6, 5, 4, 3, 2, 1 (24→4 mg/day). Follow the actual pack timing/prescriber; not a treatment regimen for every steroid indication."
+            ],
+            [
+              "Solu-Medrol usual IV/IM label range",
+              "Initial 10–40 mg depending on disease; severe life-threatening conditions can need larger individualized doses. IV is preferred for initial emergency use when appropriate."
+            ],
+            [
+              "Solu-Medrol label high-dose example",
+              "30 mg/kg IV over ≥ 30 minutes, potentially repeated every 4–6 hours for 48 hours. This is selected label language, not a blanket shock/trauma prescription; high-dose therapy usually stops after stabilization within 48–72 hours."
+            ],
+            [
+              "Rapid IV-dose hazard",
+              "Arrhythmia/cardiac arrest reported with > 0.5 g given in < 10 minutes. Use an indication-specific infusion plan and monitoring."
+            ],
+            [
+              "Pediatrics",
+              "Dose depends on disease, severity, response and exact formulation. Conflicting broad legacy range/floor wording in injection labeling is not reproduced as a universal pediatric schedule; use a verified disease-specific pediatric protocol."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "medrol": [
+          "DOSAGE AND ADMINISTRATION",
+          "Dose Pack display panel"
+        ],
+        "solumedrol": [
+          "DOSAGE AND ADMINISTRATION"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Acetate systemic and local dose examples",
+      "assertions": {
+        "paragraphs": [
+          "Depo-Medrol initial general parenteral range is 4–120 mg, with substantial disease/route variation. For temporary oral replacement, its label describes one daily IM dose equal to daily oral Medrol mg; for prolonged effect, a supervised weekly IM dose can use 7 times the oral daily dose. These label examples do not establish equivalence for every depot/route situation."
+        ],
+        "table": {
+          "headers": [
+            "Selected acetate route / indication",
+            "Label example"
+          ],
+          "rows": [
+            [
+              "Intra-articular · joint size",
+              "Large 20–80 mg; medium 10–40 mg; small 4–10 mg. Repeat intervals depend on response, commonly 1–5 or more weeks; clinician technique/infection evaluation required."
+            ],
+            [
+              "Tendon sheath / bursal / selected ganglion disorders",
+              "4–30 mg by condition; inject tendon sheath, not tendon substance."
+            ],
+            [
+              "Intralesional selected dermatoses",
+              "20–60 mg into lesions, with distribution/interval individualized. Avoid tissue blanching/slough."
+            ],
+            [
+              "Systemic IM examples",
+              "Rheumatoid arthritis weekly 40–120 mg; selected steroid-responsive skin disease 40–120 mg weekly for 1–4 weeks. These are label examples, not acute IV treatment."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "depomedrol": [
+          "DOSAGE AND ADMINISTRATION",
+          "Administration for Systemic Effect",
+          "Rheumatoid Arthritis and Osteoarthritis",
+          "Miscellaneous: Ganglion, Tendinitis, Epicondylitis",
+          "Injections for Local Effect in Dermatologic Conditions"
+        ],
+        "depomedrol2": [
+          "Administration for Systemic Effect"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Taper and stress coverage · Current guideline distinction",
+      "assertions": {
+        "paragraphs": [
+          "Long-term therapy needs gradual individualized reduction when disease is controlled. The 2024 ESE/Endocrine Society guidance generally does not require an HPA-prevention taper for a course shorter than 3–4 weeks; longer exposure needs a disease- and adrenal-aware plan near physiologic doses. Do not apply that short-course guidance automatically to repeated/depot exposures. Current/recent steroid users without documented adrenal recovery may need stress coverage; inability to retain oral medicine or hemodynamic instability requires urgent parenteral assessment. No universal daily taper decrement is supplied."
+        ]
+      },
+      "source_sections": {
+        "medrol": [
+          "DOSAGE AND ADMINISTRATION",
+          "General Precautions"
+        ],
+        "solumedrol": [
+          "Endocrine",
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "depomedrol": [
+          "Endocrine"
+        ],
+        "hpa2024": [
+          "R2.1–2.2",
+          "R2.6–2.9",
+          "R3.1–3.2"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Preparation, route and equivalent doses",
+      "assertions": {
+        "paragraphs": [
+          "Solu-Medrol: follow exact Act-O-Vial/vial diluent, asepsis and dilution instructions; do not casually mix with other drugs. Depo-Medrol: do not dilute/mix with other solutions; IV use is prohibited, avoid injecting tendon substance/deltoid skin leakage, and use skilled sterile local technique. Label anti-inflammatory comparison is methylprednisolone 4 mg ≈ prednisone/prednisolone 5 mg or hydrocortisone 20 mg for oral/IV use; IM/depot/joint effects may differ substantially. No validated universal renal/hepatic percentage adjustment is supplied."
+        ]
+      },
+      "source_sections": {
+        "solumedrol": [
+          "DESCRIPTION",
+          "DOSAGE AND ADMINISTRATION",
+          "DIRECTIONS FOR USING THE ACT-O-VIAL SYSTEM"
+        ],
+        "depomedrol": [
+          "DOSAGE AND ADMINISTRATION",
+          "Administration for Systemic Effect",
+          "General",
+          "Miscellaneous: Ganglion, Tendinitis, Epicondylitis"
+        ],
+        "medrol": [
+          "General Precautions"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Infections can be new, disseminated, reactivated or masked. Assess TB/HBV and exposure risks; systemic fungi, Strongyloides, amebiasis and varicella/measles can have severe consequences. Screen HBV before immunosuppressive/prolonged treatment and arrange indicated specialist prevention. Avoid use for cerebral malaria.",
+          "HPA suppression/adrenal insufficiency can persist after withdrawal. Plan illness/surgery stress coverage and a supervised taper after long-term use; local/depot exposure can also suppress the axis.",
+          "Hyperglycemia, Cushingoid effects, BP/edema/potassium changes, osteoporosis/osteonecrosis, muscle weakness, growth suppression and psychiatric reactions depend on exposure and patient risk.",
+          "Use caution in systemic sclerosis: scleroderma renal crisis is reported with corticosteroids including methylprednisolone. Monitor renal/BP changes; consider HF/renal disease, recent MI, thyroid disease and cirrhosis.",
+          "GI ulcers/perforation or bleeding can occur with muted signs; assess severe abdominal symptoms. Eye effects include cataract/glaucoma and infection; monitor prolonged therapy and avoid ocular herpes simplex risks.",
+          "High-dose pulsed IV methylprednisolone can cause delayed toxic hepatitis/liver failure; stop if it occurs and avoid high-dose IV rechallenge after methylprednisolone-induced toxic hepatitis. Rapid large IV dosing can cause bradycardia, arrhythmia or arrest.",
+          "Solu-Medrol 40 mg contains milk-derived lactose with possible milk-protein traces: cow’s-milk hypersensitivity is a specific contraindication, not ordinary lactose intolerance. Check benzyl alcohol; preserved formulations carry premature-infant/neonatal restrictions.",
+          "Depo-Medrol is not IV/intrathecal therapy. Epidural steroids are unapproved with reported stroke, paralysis, spinal-cord infarction and death. Exclude infection before local injection; post-injection pain/swelling/fever can signify septic arthritis.",
+          "Tumor lysis syndrome is reported with systemic steroids alone or with chemotherapy; high-proliferation, high-burden or highly treatment-sensitive malignancies require close monitoring and appropriate precautions."
+        ]
+      },
+      "source_sections": {
+        "medrol": [
+          "WARNINGS",
+          "General Precautions",
+          "General Precautions: Tumor lysis syndrome / WARNINGS: Cerebral malaria"
+        ],
+        "solumedrol": [
+          "WARNINGS",
+          "General",
+          "Cardio-renal",
+          "Drug-Induced Liver Injury",
+          "PRECAUTIONS",
+          "Tumor Lysis Syndrome / Immunosuppression and Increased Risk of Infection"
+        ],
+        "depomedrol": [
+          "WARNINGS",
+          "Parenteral Administration",
+          "Neuro-psychiatric"
+        ],
+        "depomedrol2": [
+          "General",
+          "Pediatric Use"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "All selected products: hypersensitivity; systemic fungal infections, with Depo-Medrol’s label exception for localized intra-articular treatment requiring careful assessment. Solu-Medrol adds intrathecal administration, IM use in idiopathic thrombocytopenic purpura, and cow’s-milk hypersensitivity for 40 mg. Depo-Medrol adds intrathecal and IM use in ITP; IV administration is prohibited. Benzyl-alcohol-containing presentations are contraindicated in premature infants and should not be used in neonates per relevant label warnings. Live/attenuated vaccines are contraindicated during immunosuppressive steroid doses."
+        ]
+      },
+      "source_sections": {
+        "medrol": [
+          "CONTRAINDICATIONS",
+          "WARNINGS: Vaccination"
+        ],
+        "solumedrol": [
+          "CONTRAINDICATIONS",
+          "Pediatric Use",
+          "Vaccination"
+        ],
+        "depomedrol": [
+          "CONTRAINDICATIONS",
+          "Vaccinations"
+        ],
+        "depomedrol2": [
+          "CONTRAINDICATIONS",
+          "General"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "These selected current U.S. labels have no boxed warning. Serious route-specific neurologic, milk-allergy/preservative and infection/adrenal risks remain important and are not inferred away by absence of a box."
+        ]
+      },
+      "source_sections": {
+        "medrol": [
+          "Full labeling"
+        ],
+        "solumedrol": [
+          "Full labeling",
+          "CONTRAINDICATIONS",
+          "WARNINGS"
+        ],
+        "solumedrol2": [
+          "Full labeling"
+        ],
+        "depomedrol": [
+          "Full labeling",
+          "CONTRAINDICATIONS",
+          "WARNINGS"
+        ],
+        "depomedrol2": [
+          "Full labeling"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "assertions": {
+        "paragraphs": [
+          "Effects include mood/insomnia changes, appetite/weight gain, hyperglycemia, fluid/BP/potassium effects, infection, bruising/skin atrophy, poor wound healing, cataract/glaucoma, osteoporosis/osteonecrosis and myopathy. Serious allergy, GI perforation/bleeding, adrenal crisis, psychiatric toxicity, thromboembolism and injection cardiac/liver/local complications are reported; many frequencies are uncertain. Acute overdose needs clinical/Poison Help advice (U.S. 1-800-222-1222) and supportive treatment. Chronic excess requires supervised adjustment rather than abrupt withdrawal of needed steroid therapy."
+        ]
+      },
+      "source_sections": {
+        "medrol": [
+          "ADVERSE REACTIONS",
+          "General Precautions"
+        ],
+        "solumedrol": [
+          "ADVERSE REACTIONS",
+          "OVERDOSAGE"
+        ],
+        "depomedrol": [
+          "ADVERSE REACTIONS",
+          "OVERDOSAGE"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Combination",
+            "Action"
+          ],
+          "rows": [
+            [
+              "CYP3A4 inhibitors · ketoconazole / macrolides",
+              "Can increase steroid exposure/toxicity; titrate and monitor the exact combination."
+            ],
+            [
+              "Enzyme inducers · phenytoin / carbamazepine / rifampin / barbiturates",
+              "Can increase clearance and reduce effect; reassess dose with initiation/withdrawal."
+            ],
+            [
+              "Cyclosporine",
+              "Mutual increased activity/exposure and reported convulsions; monitor carefully."
+            ],
+            [
+              "Warfarin / other oral anticoagulants",
+              "Response can increase or decrease; monitor coagulation indices frequently."
+            ],
+            [
+              "Diabetes medicines",
+              "Steroid-related hyperglycemia can alter requirements; monitor glucose and revise the plan."
+            ],
+            [
+              "Potassium-depleting diuretics / amphotericin B / digoxin",
+              "Monitor potassium and cardiac effects; hypokalemia can increase digitalis arrhythmia risk."
+            ],
+            [
+              "NSAIDs / aspirin",
+              "More GI toxicity; steroid withdrawal can increase salicylate exposure. Caution with hypoprothrombinemia."
+            ],
+            [
+              "Anticholinesterases / neuromuscular disease",
+              "Severe weakness/myopathy possible; specialist review of the exact combination."
+            ],
+            [
+              "Live vaccines / skin testing",
+              "Avoid live/attenuated vaccines at immunosuppressive doses; vaccine responses and skin-test reactivity may be diminished."
+            ],
+            [
+              "Estrogens / cholestyramine / isoniazid",
+              "Labels describe altered steroid metabolism/clearance or lower isoniazid concentrations; inspect the exact regimen rather than assuming no interaction."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "medrol": [
+          "DRUG INTERACTIONS"
+        ],
+        "solumedrol": [
+          "Drug Interactions"
+        ],
+        "depomedrol": [
+          "Drug Interactions"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Concurrent steroid exposure",
+      "assertions": {
+        "paragraphs": [
+          "Review all oral, injectable, inhaled, topical and local steroid use together. Recent joint injections or multiple formulations can increase HPA risk; strong CYP3A4 inhibitors can magnify exposure. Do not treat a local injection as unrelated to the systemic taper/stress assessment."
+        ]
+      },
+      "source_sections": {
+        "solumedrol": [
+          "Endocrine",
+          "Drug Interactions"
+        ],
+        "depomedrol": [
+          "Parenteral Administration",
+          "Endocrine"
+        ],
+        "hpa2024": [
+          "R2.9"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Selected labels require weighing maternal benefit against fetal risk; adequate controlled human studies are lacking, and animal developmental findings do not establish safety. Observe exposed newborns for hypoadrenalism after substantial maternal systemic treatment. Systemic steroids enter milk and can affect infant growth/endogenous steroid production; injectable labels advise choosing nursing versus drug continuation according to maternal need. Benzyl alcohol can cross the placenta in preserved formulations; check the exact preparation."
+        ]
+      },
+      "source_sections": {
+        "medrol": [
+          "Usage in Pregnancy"
+        ],
+        "solumedrol": [
+          "Teratogenic Effects",
+          "Nursing Mothers"
+        ],
+        "depomedrol": [
+          "Teratogenic Effects",
+          "Nursing Mothers"
+        ],
+        "depomedrol2": [
+          "Teratogenic Effects",
+          "Nursing Mothers"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric considerations",
+      "assertions": {
+        "paragraphs": [
+          "Pediatric roles are disease-specific; selected soluble-injection label discusses nephrotic syndrome evidence above 2 years and aggressive leukemia/lymphoma above 1 month, not a universal minimum for every steroid indication. Preserved products are unsuitable/contraindicated in the specified neonate/premature-infant groups. Use the lowest effective dose and monitor linear growth, BP, weight, eyes, infection and psychosocial effects. Premature infants can develop methylprednisolone-associated hypertrophic cardiomyopathy. Older adults need cautious selection considering organ function, bone, glucose, BP and other drugs."
+        ]
+      },
+      "source_sections": {
+        "medrol": [
+          "General Precautions"
+        ],
+        "solumedrol": [
+          "Pediatric Use",
+          "Geriatric Use"
+        ],
+        "depomedrol": [
+          "Pediatric Use",
+          "Geriatric Use"
+        ],
+        "depomedrol2": [
+          "Pediatric Use"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Renal, hepatic and endocrine disease",
+      "assertions": {
+        "paragraphs": [
+          "No universal renal dose algorithm is given. Sodium retention/potassium loss can worsen renal/HF/HTN disease; monitor response and labs. Cirrhosis and hypothyroidism can enhance steroid effects, while hyperthyroidism can increase clearance. Use cautious individualized doses and assess systemic sclerosis renal-crisis risk. HPA recovery is variable; no normal single test or short symptom-free interval automatically rules out risk after substantial/repeated exposure."
+        ]
+      },
+      "source_sections": {
+        "medrol": [
+          "General Precautions"
+        ],
+        "solumedrol": [
+          "Cardio-renal",
+          "Endocrine",
+          "Gastrointestinal"
+        ],
+        "depomedrol": [
+          "Cardio-renal",
+          "Endocrine",
+          "Gastrointestinal"
+        ],
+        "hpa2024": [
+          "Essential points",
+          "R2.9",
+          "R3.1"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "assertions": {
+        "paragraphs": [
+          "Glucocorticoids modify inflammatory/immune responses and carbohydrate, protein, lipid, fluid and electrolyte metabolism. Methylprednisolone has potent anti-inflammatory activity with less sodium-retaining tendency than hydrocortisone, but high doses still cause mineral/fluid effects. The soluble succinate and depot acetate retain glucocorticoid activity while their administration/absorption patterns differ."
+        ]
+      },
+      "source_sections": {
+        "medrol": [
+          "ACTIONS",
+          "WARNINGS"
+        ],
+        "solumedrol": [
+          "CLINICAL PHARMACOLOGY"
+        ],
+        "depomedrol": [
+          "CLINICAL PHARMACOLOGY"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacology and formulation kinetics",
+      "assertions": {
+        "paragraphs": [],
+        "facts": [
+          [
+            "Oral / soluble succinate",
+            "Oral glucocorticoids are readily absorbed; IV succinate can show effects within about 1 hour. Clinical duration varies and is not a universal fixed half-life."
+          ],
+          [
+            "Depot acetate",
+            "Suspension is practically insoluble in water and supports prolonged IM/local exposure; local injections can produce systemic effects."
+          ],
+          [
+            "Metabolism / interactions",
+            "Hepatic enzyme changes and CYP3A4 interacting drugs influence effect/exposure; cirrhosis or thyroid-status changes can change dose needs."
+          ],
+          [
+            "Conversion limits",
+            "Oral/IV anti-inflammatory equivalent doses are not a direct conversion algorithm for IM depot or joint injection. These selected U.S. labels do not establish one quantified elimination half-life for all formulations."
+          ]
+        ]
+      },
+      "source_sections": {
+        "solumedrol": [
+          "CLINICAL PHARMACOLOGY",
+          "Drug Interactions"
+        ],
+        "depomedrol": [
+          "CLINICAL PHARMACOLOGY",
+          "Parenteral Administration",
+          "Administration for Systemic Effect"
+        ],
+        "medrol": [
+          "DRUG INTERACTIONS",
+          "General Precautions"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring parameters",
+      "assertions": {
+        "paragraphs": [
+          "Track clinical response and lowest effective dose; assess BP/weight/edema, glucose, electrolytes, infection/exposure risks, mood/sleep, GI symptoms, bone/muscle and growth in children. Screen HBV before prolonged/immunosuppressive therapy and evaluate other infections by risk. Monitor eyes with prolonged treatment; soluble injection label specifies IOP assessment if treatment continues > 6 weeks. High-dose IV needs cardiovascular and delayed liver-injury vigilance; local injection needs aseptic/infection follow-up. HPA assessment and stress coverage are individualized; the guideline allows clinical taper or morning cortisol near physiologic dosing rather than indiscriminate routine testing."
+        ]
+      },
+      "source_sections": {
+        "medrol": [
+          "WARNINGS",
+          "General Precautions"
+        ],
+        "solumedrol": [
+          "WARNINGS",
+          "Ophthalmic",
+          "Drug-Induced Liver Injury",
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "depomedrol": [
+          "Parenteral Administration",
+          "Pediatric Use"
+        ],
+        "hpa2024": [
+          "R2.4",
+          "R2.6–2.8",
+          "R3.1"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "assertions": {
+        "paragraphs": [
+          "Know the exact tablet/ester/route and follow the individualized course rather than reusing a Dosepak for another illness. Do not stop prolonged steroid therapy without supervision; tell all treating clinicians about current/recent steroids, including local injections. Ask about illness/surgery stress dosing and urgent symptoms of adrenal crisis. Report infection/varicella-measles exposure, severe mood symptoms, black stools/severe abdominal pain, vision change or post-injection fever/swelling promptly. Discuss vaccines, pregnancy/nursing and all medicines; carry the prescribed steroid-alert information when appropriate."
+        ]
+      },
+      "source_sections": {
+        "medrol": [
+          "Information for the Patient",
+          "WARNINGS"
+        ],
+        "solumedrol": [
+          "Information for Patients"
+        ],
+        "depomedrol": [
+          "Information for Patients"
+        ],
+        "hpa2024": [
+          "R1.2–1.3",
+          "R3.1–3.2"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "paragraphs": [
+          "Medrol 4 mg: white elliptical scored tablet marked MEDROL 4; example bottle of 100 NDC 0009-0056-02. Dosepak NDC 0009-0056-04 contains 21 of the 4 mg tablets and is not child-resistant. Pharmacia & Upjohn, a Pfizer subsidiary, distributes the selected products."
+        ]
+      },
+      "source_sections": {
+        "medrol": [
+          "HOW SUPPLIED",
+          "Dose Pack display panel"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Selected product",
+            "Presentation / restrictions"
+          ],
+          "rows": [
+            [
+              "Medrol oral",
+              "2, 4, 8, 16 and 32 mg tablets; 4 mg 21-tablet Dosepak."
+            ],
+            [
+              "Solu-Medrol preservative-free Act-O-Vial",
+              "40 mg/1 mL, 125 mg/2 mL, 500 mg/4 mL and 1 g/8 mL after mixing in the respective reviewed presentations. Only 40 mg has the stated milk-derived lactose restriction."
+            ],
+            [
+              "Solu-Medrol preserved vial presentations",
+              "500 mg/8 mL, 1 g/16 mL and 2 g/30.6 mL after directed mixing; exact recommended diluent contains benzyl alcohol. Vial type and supplied diluent vary."
+            ],
+            [
+              "Depo-Medrol single-dose suspension",
+              "40 or 80 mg/mL · 1 mL vials; selected formulation lacks listed benzyl alcohol, but has other excipients."
+            ],
+            [
+              "Depo-Medrol benzyl-alcohol multidose suspension",
+              "20, 40 or 80 mg/mL · selected 5 mL/10 mL vials; exact strength/volume and preservative must be checked."
+            ],
+            [
+              "Route boundary",
+              "Solu-Medrol IV/IM; Depo-Medrol IM/intra-articular/soft-tissue/intralesional, never IV; neither is intrathecal or approved epidural therapy."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "medrol": [
+          "HOW SUPPLIED"
+        ],
+        "solumedrol": [
+          "DESCRIPTION",
+          "HOW SUPPLIED"
+        ],
+        "solumedrol2": [
+          "DESCRIPTION",
+          "HOW SUPPLIED"
+        ],
+        "depomedrol": [
+          "DESCRIPTION",
+          "HOW SUPPLIED"
+        ],
+        "depomedrol2": [
+          "DESCRIPTION",
+          "HOW SUPPLIED"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Medrol tablets and unreconstituted Solu-Medrol: 20–25°C; protect soluble powder from light. Reconstituted Solu-Medrol not further diluted: 20–25°C, use within 48 hours. Further dilution: microbiologically use immediately unless preparation precludes contamination; chemical/physical stability is 4 hours below 25°C or 24 hours at 2–8°C, not a blanket microbiological guarantee. Depo-Medrol: 20–25°C; do not autoclave or mix/dilute. Discard remaining single-dose suspension; preserved multidose vials require meticulous aseptic technique and the exact institutional/product in-use policy, not an invented universal discard interval."
+        ]
+      },
+      "source_sections": {
+        "medrol": [
+          "Storage"
+        ],
+        "solumedrol": [
+          "STORAGE CONDITIONS",
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "solumedrol2": [
+          "STORAGE CONDITIONS",
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "depomedrol": [
+          "Storage",
+          "General",
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "depomedrol2": [
+          "General",
+          "HOW SUPPLIED"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "Not a complete disease-specific asthma/MS/oncology/critical-care or pediatric dosing protocol.",
+    "Injection label broad pediatric range and separate minimum wording conflict; numerical universal pediatric algorithm excluded in favor of verified indication-specific specialist dosing.",
+    "No universal taper, renal/hepatic percentage reduction, IV/depot conversion or elimination half-life inferred.",
+    "Other manufacturers, generic injectable excipients and non-U.S. presentations require separate verification."
+  ],
+  "resolved_source_findings": [
+    "Milk hypersensitivity limited to Solu-Medrol 40 mg and distinct from lactose intolerance.",
+    "Single-dose Depo-Medrol without listed benzyl alcohol distinguished from preserved multidose preparations; neonatal restrictions not blindly applied to every vial.",
+    "Current adrenal guideline short-course taper guidance distinguished from legacy label more-than-a-few-days language; chronic/repeated/depot exposure requires individualized review.",
+    "Selected IV high-dose label example not presented as a general septic-shock/traumatic-brain-injury protocol.",
+    "Chemical diluted-solution stability is explicitly separate from microbiological use-immediately requirement.",
+    "Medrol systemic-sclerosis warning is directly present in current U.S. label, not inferred from another steroid.",
+    "Solu-Medrol sepsis/septic-shock mortality/evidence caution, cerebral-malaria avoidance and tumor-lysis monitoring are explicit; high-dose label example is not generalized to these settings."
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, essential safety, three hero facts, cited disclosures, four safety cards and three product cards.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending"
+  },
+  "monograph_sha256": "3bbfa23ae5473ca731a993846f00bd7d75f651d9991789c7d7e9b4d3afbd6439",
+  "front_matter_source_map": {
+    "name_synonym_description_facts": {
+      "medrol": [
+        "Indications / description / dosage forms and strengths"
+      ],
+      "solumedrol": [
+        "Indications / description / dosage forms and strengths"
+      ],
+      "solumedrol2": [
+        "Indications / description / dosage forms and strengths"
+      ],
+      "depomedrol": [
+        "Indications / description / dosage forms and strengths"
+      ],
+      "depomedrol2": [
+        "Indications / description / dosage forms and strengths"
+      ]
+    },
+    "essential_safety": {
+      "solumedrol": [
+        "CONTRAINDICATIONS",
+        "WARNINGS: General",
+        "Front warning: benzyl alcohol"
+      ],
+      "solumedrol2": [
+        "DESCRIPTION",
+        "CONTRAINDICATIONS"
+      ],
+      "depomedrol": [
+        "CONTRAINDICATIONS",
+        "WARNINGS: Epidural administration",
+        "DOSAGE AND ADMINISTRATION"
+      ],
+      "depomedrol2": [
+        "CONTRAINDICATIONS",
+        "Front warning: Not for neonates"
+      ],
+      "medrol": [
+        "DOSAGE AND ADMINISTRATION"
+      ]
+    }
+  },
+  "source_review_detail": "Full supporting sections of complete current public selected SPL records reviewed, including formulation-specific excipients, routes, populations, contraindications, dosing and storage. Guideline roles supported by public official slides or official full recommendation list; no inaccessible journal evidence tables claimed."
+}

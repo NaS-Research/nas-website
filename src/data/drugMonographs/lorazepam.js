@@ -3,7 +3,7 @@ export const lorazepam = {
   "slug": "lorazepam",
   "name": "Lorazepam",
   "synonym": "Ativan · Loreev XR · oral concentrate",
-  "description": "A benzodiazepine with formulation-specific anxiety and injectable seizure/preanesthetic uses. Oral immediate-release products, Loreev XR conversion therapy and Ativan injection require different prescribing instructions.",
+  "description": "A benzodiazepine with formulation-specific anxiety and injectable seizure / preanesthetic uses. Oral immediate-release products, Loreev XR conversion therapy and Ativan injection require different prescribing instructions.",
   "checked": "2026-10-01",
   "facts": [
     [
@@ -21,7 +21,7 @@ export const lorazepam = {
   ],
   "essential": {
     "title": "Respiratory depression and withdrawal can be life-threatening.",
-    "text": "Opioids, alcohol and other sedatives increase overdose risk. Do not abruptly stop regular therapy; use an individualized taper. Injection requires airway/resuscitation capability and has additional respiratory and excipient restrictions.",
+    "text": "Opioids, alcohol and other sedatives increase overdose risk. Do not abruptly stop regular therapy; use an individualized taper. Injection requires airway / resuscitation capability and has additional respiratory and excipient restrictions.",
     "section": "safety",
     "link": "Warnings and precautions"
   },
@@ -78,7 +78,7 @@ export const lorazepam = {
         {
           "title": "Clinical boundaries",
           "paragraphs": [
-            "Everyday stress ordinarily does not require a benzodiazepine. This focused reference gives adult injectable labeled dosing, not a pediatric status-epilepticus protocol or continuous sedation infusion regimen. Pediatric injection safety/effectiveness is not established by this label. No lorazepam autoinjector was established in the reviewed records; midazolam products must not be substituted as lorazepam."
+            "Everyday stress ordinarily does not require a benzodiazepine. This focused reference gives adult injectable labeled dosing, not a pediatric status-epilepticus protocol or continuous sedation infusion regimen. Pediatric injection safety / effectiveness is not established by this label. No lorazepam autoinjector was established in the reviewed records; midazolam products must not be substituted as lorazepam."
           ],
           "sources": [
             "ativanoral",
@@ -143,7 +143,7 @@ export const lorazepam = {
               ],
               [
                 "IV preparation",
-                "Dilute immediately with an equal volume of sterile water, 0.9% sodium chloride or 5% dextrose injection. Mix gently; inspect for particles/discoloration. Rate ≤2 mg/min; never intra-arterial."
+                "Dilute immediately with an equal volume of sterile water, 0.9% sodium chloride or 5% dextrose injection. Mix gently; inspect for particles / discoloration. Rate ≤2 mg/min; never intra-arterial."
               ]
             ]
           }
@@ -151,7 +151,7 @@ export const lorazepam = {
         {
           "title": "Tapering and organ-function review",
           "paragraphs": [
-            "After continued therapy, taper gradually using a patient-specific plan. Withdrawal may require pausing or returning to the preceding dose, then reducing more slowly; no universal taper is supplied. Injection’s acute-dose subsection requires no routine renal adjustment, but repeated doses need caution; its warnings advise against use in renal/hepatic failure. Severe hepatic disease/encephalopathy warrants careful oral dose reduction and monitoring."
+            "After continued therapy, taper gradually using a patient-specific plan. Withdrawal may require pausing or returning to the preceding dose, then reducing more slowly; no universal taper is supplied. Injection’s acute-dose subsection requires no routine renal adjustment, but repeated doses need caution; its warnings advise against use in renal/hepatic failure. Severe hepatic disease / encephalopathy warrants careful oral dose reduction and monitoring."
           ],
           "sources": [
             "ativanoral",
@@ -180,17 +180,17 @@ export const lorazepam = {
           "open": true,
           "tone": "warning",
           "items": [
-            "Assess misuse/addiction risk before and during treatment; use the lowest effective dose and duration. Opioids/alcohol/other sedatives can cause fatal respiratory depression. Monitor sedation, breathing, falls and impaired coordination.",
+            "Assess misuse/addiction risk before and during treatment; use the lowest effective dose and duration. Opioids / alcohol / other sedatives can cause fatal respiratory depression. Monitor sedation, breathing, falls and impaired coordination.",
             "Regular use can cause dependence; abrupt reduction may cause seizures and prolonged withdrawal. An individualized taper is essential. Depression, suicidality and paradoxical agitation require reassessment; lorazepam is not treatment for primary depression or psychosis.",
             "Ativan injection contains propylene glycol, polyethylene glycol and benzyl alcohol. Excessive/repeated doses can cause hyperosmolality, lactic acidosis, hypotension or kidney injury, especially with renal impairment. Not for neonates; account for benzyl alcohol from all sources.",
             "Compromised respiration requires close monitoring. Injection needs resuscitation equipment; intra-arterial injection can cause ischemia/gangrene.",
-            "Late-pregnancy exposure can cause neonatal sedation/withdrawal. Loreev XR 1 mg contains tartrazine, with allergy risk particularly in aspirin-sensitive patients."
+            "Late-pregnancy exposure can cause neonatal sedation / withdrawal. Loreev XR 1 mg contains tartrazine, with allergy risk particularly in aspirin-sensitive patients."
           ]
         },
         {
           "title": "Contraindications",
           "paragraphs": [
-            "All selected oral products: benzodiazepine/ingredient hypersensitivity and acute narrow-angle glaucoma. Ativan injection additionally contraindicates sleep apnea, severe respiratory insufficiency (except the specified mechanically ventilated preanesthetic context), intra-arterial use and premature-infant use because of benzyl alcohol. Its front-label instruction prohibits neonatal use. These injection restrictions must not be converted into a universal oral contraindication list."
+            "All selected oral products: benzodiazepine / ingredient hypersensitivity and acute narrow-angle glaucoma. Ativan injection additionally contraindicates sleep apnea, severe respiratory insufficiency (except the specified mechanically ventilated preanesthetic context), intra-arterial use and premature-infant use because of benzyl alcohol. Its front-label instruction prohibits neonatal use. These injection restrictions must not be converted into a universal oral contraindication list."
           ],
           "sources": [
             "ativanoral",
@@ -202,7 +202,7 @@ export const lorazepam = {
         {
           "title": "Boxed warning status",
           "paragraphs": [
-            "All four selected products carry boxed warnings for concomitant opioids, abuse/misuse/addiction and dependence/withdrawal. Reserve opioid combinations for inadequate alternatives and limit dose/duration with close observation. Injection is intended for intermittent use; more frequent use can still produce dependence and require tapering."
+            "All four selected products carry boxed warnings for concomitant opioids, abuse / misuse / addiction and dependence / withdrawal. Reserve opioid combinations for inadequate alternatives and limit dose/duration with close observation. Injection is intended for intermittent use; more frequent use can still produce dependence and require tapering."
           ],
           "sources": [
             "ativanoral",
@@ -256,8 +256,8 @@ export const lorazepam = {
                 "IR and injection labels reduce lorazepam dose by about 50%. If initiating a UGT inhibitor with XR, stop XR and switch to tablets for dose adjustment."
               ],
               [
-                "Clozapine and other antipsychotic/sedative combinations",
-                "Marked sedation/hypotension/respiratory events reported; careful clinical review and monitoring. Injection label also describes loxapine, haloperidol and scopolamine risks."
+                "Clozapine and other antipsychotic / sedative combinations",
+                "Marked sedation / hypotension / respiratory events reported; careful clinical review and monitoring. Injection label also describes loxapine, haloperidol and scopolamine risks."
               ],
               [
                 "Theophylline / aminophylline",
@@ -293,7 +293,7 @@ export const lorazepam = {
         {
           "title": "Pediatric and geriatric considerations",
           "paragraphs": [
-            "IR tablet/concentrate safety below 12 is not established; XR pediatric safety/effectiveness is not established. Injection pediatric status-epilepticus efficacy/safety is not established, and preanesthetic use below 18 is not recommended. Neonatal/premature infant excipient restrictions apply. Older adults are more prone to sedation, falls and breathing impairment; oral IR starts 1–2 mg/day divided, XR requires prior stabilization, and IV preanesthetic limits for >50 remain relevant."
+            "IR tablet/concentrate safety below 12 is not established; XR pediatric safety / effectiveness is not established. Injection pediatric status-epilepticus efficacy/safety is not established, and preanesthetic use below 18 is not recommended. Neonatal/premature infant excipient restrictions apply. Older adults are more prone to sedation, falls and breathing impairment; oral IR starts 1–2 mg/day divided, XR requires prior stabilization, and IV preanesthetic limits for >50 remain relevant."
           ],
           "sources": [
             "ativanoral",
@@ -305,7 +305,7 @@ export const lorazepam = {
         {
           "title": "Renal and hepatic impairment",
           "paragraphs": [
-            "Glucuronide is eliminated renally and accumulates with renal dysfunction; poor dialysis of parent drug does not imply safety. Oral labels call for caution and careful response-based reduction in severe hepatic insufficiency/encephalopathy. XR has no formal renal/hepatic PK studies. Injection warnings advise against renal/hepatic failure; acute renal-dose adjustment is not required by its dosing subsection, while repeated doses and excipient exposure require caution."
+            "Glucuronide is eliminated renally and accumulates with renal dysfunction; poor dialysis of parent drug does not imply safety. Oral labels call for caution and careful response-based reduction in severe hepatic insufficiency / encephalopathy. XR has no formal renal/hepatic PK studies. Injection warnings advise against renal/hepatic failure; acute renal-dose adjustment is not required by its dosing subsection, while repeated doses and excipient exposure require caution."
           ],
           "sources": [
             "ativanoral",

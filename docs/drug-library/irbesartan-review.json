@@ -1,0 +1,589 @@
+{
+  "slug": "irbesartan",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Current SanofiAvapro150/300single-agentoralNDA020757 and Macleods75/150/300ANDA202254; exactadultHTN/nephropathy/depletion dosing and clinical monitoring boundaries.",
+  "excludedRegimens": [
+    "Irbesartan/HCTZcombinationproductregimens",
+    "No pediatrictrialdose offeredasprescriptionrecommendation",
+    "No universalBPtarget/labinterval/creatininethreshold",
+    "Severehepatic protocolnotvalidated from mildmoderatecirrhosisdata",
+    "No Avapro75currentbrandavailability orsplit-tabletmethod assumed",
+    "No type1/normotensive/everyCKDnephropathyapproval extrapolation"
+  ],
+  "sources": [
+    {
+      "id": "label",
+      "title": "Avapro · Prescribing information",
+      "publisher": "DailyMed / Sanofi",
+      "note": "Current SPL version 22, effective 2026-08-24. Current NDA020757 label; selected brand supplies 150 and 300 mg tablets.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7885b2a8-be4e-48ab-8113-4e6ab791eb98"
+    },
+    {
+      "id": "generic",
+      "title": "Irbesartan · Generic prescribing information",
+      "publisher": "DailyMed / Macleods",
+      "note": "Current SPL version 13, effective 2026-08-06. ANDA202254; 75, 150 and 300 mg product checked separately to support the lower-strength distinction.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e8635a1c-ae06-4e23-99f7-e704f91d6f43"
+    }
+  ],
+  "labelMetadata": [
+    {
+      "sourceId": "label",
+      "product": "avapro",
+      "setid": "7885b2a8-be4e-48ab-8113-4e6ab791eb98",
+      "version": "22",
+      "effectiveTime": "20260824",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/7885b2a8-be4e-48ab-8113-4e6ab791eb98.xml",
+      "xmlSha256": "2aca9ee5a5223a745b68b3cd4323b88c4f43354ccd6a9a833373f8abbaeba608",
+      "marketingAuthorization": [
+        {
+          "category": "NDA",
+          "application": "NDA020757"
+        },
+        {
+          "category": "NDA",
+          "application": "NDA020757"
+        }
+      ],
+      "clinicalVersion": "Current Avapro effectiveAug24v22 and Macleods effectiveAug6v13; actualfullPI/physical/authorization checked."
+    },
+    {
+      "sourceId": "generic",
+      "product": "irbesartan-generic",
+      "setid": "e8635a1c-ae06-4e23-99f7-e704f91d6f43",
+      "version": "13",
+      "effectiveTime": "20260806",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/e8635a1c-ae06-4e23-99f7-e704f91d6f43.xml",
+      "xmlSha256": "1c590d2daf304f0387807c0417a1aad990fb76fa215aa2a7d6d8f6b836bdc201",
+      "marketingAuthorization": [
+        {
+          "category": "ANDA",
+          "application": "ANDA202254"
+        },
+        {
+          "category": "ANDA",
+          "application": "ANDA202254"
+        },
+        {
+          "category": "ANDA",
+          "application": "ANDA202254"
+        }
+      ],
+      "clinicalVersion": "Current Avapro effectiveAug24v22 and Macleods effectiveAug6v13; actualfullPI/physical/authorization checked."
+    }
+  ],
+  "evidence": [
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/avapro.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/irbesartan/avapro.xml",
+      "sha256": "2aca9ee5a5223a745b68b3cd4323b88c4f43354ccd6a9a833373f8abbaeba608",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/7885b2a8-be4e-48ab-8113-4e6ab791eb98.xml"
+    },
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/avapro-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/irbesartan/avapro-sections.json",
+      "sha256": "578b469e68732278c7340983b8c0d2028a68d151090e39228024f2c98ee32c38",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/7885b2a8-be4e-48ab-8113-4e6ab791eb98.xml"
+    },
+    {
+      "sourceId": "generic",
+      "localEvidence": "/tmp/nas-drug-sources/irbesartan-generic.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/irbesartan/irbesartan-generic.xml",
+      "sha256": "1c590d2daf304f0387807c0417a1aad990fb76fa215aa2a7d6d8f6b836bdc201",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/e8635a1c-ae06-4e23-99f7-e704f91d6f43.xml"
+    },
+    {
+      "sourceId": "generic",
+      "localEvidence": "/tmp/nas-drug-sources/irbesartan-generic-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/irbesartan/irbesartan-generic-sections.json",
+      "sha256": "705384f20e48539efbfeb51054e92c315b4422d9829c30bea1788a53625abec8",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/e8635a1c-ae06-4e23-99f7-e704f91d6f43.xml"
+    }
+  ],
+  "sourceEvidenceRoot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/irbesartan",
+  "sourceManifest": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/irbesartan/source-manifest.json",
+  "assertionToSourceMap": [
+    {
+      "section": "indications",
+      "card": "Hypertension",
+      "assertions": {
+        "paragraphs": [
+          "Avapro treats hypertension alone or with other antihypertensive agents. Blood-pressure lowering reduces cardiovascular risk, principally stroke and myocardial infarction; targets and accompanying risk-factor treatment need an individualized current clinical plan."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Avapro full §1.1/14.1 hypertension monotherapy/combination and cardiovascular BP benefit; targets not invented"
+      },
+      "review": "Full supporting source sections read; exact selected-product/route/population distinctions retained. Clinical counseling synthesis identified; no unavailable source access claimed."
+    },
+    {
+      "section": "indications",
+      "card": "Type 2 diabetic nephropathy",
+      "assertions": {
+        "paragraphs": [
+          "The labeled nephropathy population has type 2 diabetes, hypertension, elevated serum creatinine and proteinuria above 300 mg/day. In that population irbesartan reduces progression measured by doubled creatinine or end-stage renal disease requiring dialysis or transplant. This is not an unrestricted indication for type 1 diabetic kidney disease, normotensive albuminuria or every form of CKD."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§1.2/14.2 precise hypertensive T2DM elevated-creatinine proteinuria>300mg/day population and endpoints"
+      },
+      "review": "Full supporting source sections read; exact selected-product/route/population distinctions retained. Clinical counseling synthesis identified; no unavailable source access claimed."
+    },
+    {
+      "section": "indications",
+      "card": "Scope and population limits",
+      "assertions": {
+        "paragraphs": [
+          "This profile covers selected oral single-agent tablets. Irbesartan/hydrochlorothiazide combinations have separate doses and precautions. The pediatric study did not show effective blood-pressure lowering in ages 6–16, and children below 6 were not studied; the study dose is not a pediatric prescribing recommendation."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§8.4 exact ineffective trial age6–16/not studied<6; no approved dose extrapolation; selected single-agent product scope"
+      },
+      "review": "Full supporting source sections read; exact selected-product/route/population distinctions retained. Clinical counseling synthesis identified; no unavailable source access claimed."
+    },
+    {
+      "section": "dosage",
+      "card": "Labeled adult regimens",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Situation",
+            "Selected-label regimen"
+          ],
+          "rows": [
+            [
+              "Hypertension",
+              "Start 150 mg once daily; increase as needed to maximum 300 mg once daily"
+            ],
+            [
+              "Labeled type 2 diabetic nephropathy",
+              "300 mg once daily"
+            ],
+            [
+              "Intravascular volume or salt depletion",
+              "Initial 75 mg once daily, including vigorously diuresed or volume-depleted hemodialysis patients; correct depletion or use the lower start"
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§2.2/2.3/2.4 exact adult indication dose/max and volume/salt-depleted75 mg start"
+      },
+      "review": "Full supporting source sections read; exact selected-product/route/population distinctions retained. Clinical counseling synthesis identified; no unavailable source access claimed."
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and lower strength",
+      "assertions": {
+        "paragraphs": [
+          "Take orally with or without food; other antihypertensives can be combined when appropriate. Current Avapro labeling lists 150 and 300 mg unscored tablets, despite retaining the 75 mg initial-dose recommendation. The separately reviewed Macleods generic supplies a labeled 75 mg tablet; arrange the prescribed strength rather than assuming an Avapro 75 mg product or an approved split-tablet method."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic"
+      ],
+      "sourceSections": {
+        "label": "Avapro§2.1/2.4/3/16 actual current150/300; XML SPLSCORE1; generic§2.4/3/16 actual75mg",
+        "generic": "Avapro§2.1/2.4/3/16 actual current150/300; XML SPLSCORE1; generic§2.4/3/16 actual75mg"
+      },
+      "review": "Full supporting source sections read; exact selected-product/route/population distinctions retained. Clinical counseling synthesis identified; no unavailable source access claimed."
+    },
+    {
+      "section": "dosage",
+      "card": "Kidney, liver and age adjustments",
+      "assertions": {
+        "paragraphs": [
+          "No PK-based adjustment is required for mild to severe renal impairment unless also volume depleted; kidney function and potassium still require monitoring. Hemodialysis does not remove irbesartan. The hepatic data describe mild-to-moderate cirrhosis and no adjustment in that setting; do not infer a validated severe-hepatic-disease regimen. No automatic geriatric adjustment is required, but sensitivity, diuresis and comorbidity affect selection."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§12.3 Renal/Hepatic/Geriatric populations and §2.4 depletion; hepatic data mild/moderate not severe-dose extrapolation"
+      },
+      "review": "Full supporting source sections read; exact selected-product/route/population distinctions retained. Clinical counseling synthesis identified; no unavailable source access claimed."
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Discontinue as soon as pregnancy is recognized. Renin–angiotensin inhibition in the second or third trimester can cause oligohydramnios, fetal renal failure, lung/skull abnormalities and fetal or neonatal death.",
+          "Correct salt or volume depletion before treatment or use the labeled lower starting dose; marked hypotension is more likely after vigorous diuresis or dehydration. Renal artery stenosis, CKD, severe heart failure or volume depletion can make kidney function dependent on the renin–angiotensin system. Check renal function periodically and consider withholding or stopping for clinically significant decline.",
+          "Monitor serum potassium, especially in diabetic nephropathy or with potassium-raising medicines. Severe hyperkalemia may occur. Postmarketing angioedema/anaphylaxis requires urgent assessment; facial, tongue or airway swelling is an emergency. Intestinal angioedema has also been reported; persistent unexplained abdominal symptoms need assessment."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§5.1/8.1 fetal/neonatal toxicity;§5.2 depletion;§5.3 renal-risk/withhold;§7.1 potassium;§6.2 anaphylaxis/angioedema/intestinal angioedema; urgent symptom counseling synthesis"
+      },
+      "review": "Full supporting source sections read; exact selected-product/route/population distinctions retained. Clinical counseling synthesis identified; no unavailable source access claimed."
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Hypersensitivity to a component is contraindicated. Do not combine aliskiren with irbesartan in patients with diabetes. In renal impairment (GFR below 60 mL/min), the interaction section advises avoiding aliskiren; this is distinct from the diabetes contraindication. Pregnancy carries the boxed stop instruction and is not listed as a separate §4 contraindication."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§4 exact hypersensitivity/aliskiren diabetes;§7.4 GFR<60 avoid;§5.1 box pregnancy not listed§4contra"
+      },
+      "review": "Full supporting source sections read; exact selected-product/route/population distinctions retained. Clinical counseling synthesis identified; no unavailable source access claimed."
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning",
+      "assertions": {
+        "paragraphs": [
+          "The current Avapro box warns of fetal toxicity: stop promptly when pregnancy is detected because medicines acting directly on the renin–angiotensin system can injure or kill the developing fetus. Pregnancy planning requires a replacement-treatment discussion."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Current full Boxed warning exact pregnancy detect stop/fetalinjury"
+      },
+      "review": "Full supporting source sections read; exact selected-product/route/population distinctions retained. Clinical counseling synthesis identified; no unavailable source access claimed."
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Hypertension trials reported diarrhea, dyspepsia/heartburn and fatigue more often than placebo. In the diabetic-nephropathy trial, hyperkalemia and orthostatic symptoms were prominent; potassium above 6 mEq/L occurred in 18.6% versus 6.0% on placebo in that particular population. Postmarketing reports include angioedema, anaphylaxis, intestinal angioedema, hepatitis/jaundice, anemia, thrombocytopenia and hypoglycemia in diabetic patients; voluntary reports do not establish frequency."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§6.1 trials and IDNT potassium>6mEq/L18.6vs6.0%;§6.2 actual postmarketing including hypoglycemia/intestinal angioedema; trial-specific limits"
+      },
+      "review": "Full supporting source sections read; exact selected-product/route/population distinctions retained. Clinical counseling synthesis identified; no unavailable source access claimed."
+    },
+    {
+      "section": "interactions",
+      "card": "Potassium-raising agents",
+      "assertions": {
+        "paragraphs": [
+          "Other potassium-raising medicines, potassium supplements and potassium-containing salt substitutes can produce severe hyperkalemia. Review the full list, including potassium-sparing diuretics, and monitor serum potassium. Use supplements or salt substitutes only with the treating clinician’s advice."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§7.1 and17 potassium-raising agents/supplement/salt-substitute clinician permission"
+      },
+      "review": "Full supporting source sections read; exact selected-product/route/population distinctions retained. Clinical counseling synthesis identified; no unavailable source access claimed."
+    },
+    {
+      "section": "interactions",
+      "card": "NSAIDs and lithium",
+      "assertions": {
+        "paragraphs": [
+          "NSAIDs, including COX-2 inhibitors, may reduce antihypertensive benefit and worsen kidney function, especially with older age, diuresis, dehydration or renal impairment. Monitor renal function periodically when combined. Lithium levels and toxicity can rise; check lithium concentrations and clinical symptoms."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§7.2 lithium concentrations/toxicity and§7.3 NSAIDs BPattenuation/renal vulnerability"
+      },
+      "review": "Full supporting source sections read; exact selected-product/route/population distinctions retained. Clinical counseling synthesis identified; no unavailable source access claimed."
+    },
+    {
+      "section": "interactions",
+      "card": "Dual renin–angiotensin blockade",
+      "assertions": {
+        "paragraphs": [
+          "Combining an ARB with an ACE inhibitor or aliskiren increases hypotension, hyperkalemia and renal impairment without added benefit for most patients. Generally avoid combinations; if specifically warranted, closely monitor BP, renal function and electrolytes. Aliskiren is contraindicated with diabetes and should be avoided with GFR below 60 mL/min."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§7.4 dualRAS hypotension/K/AKI no added most benefit; aliskiren diabetescontra vsGFR<60 avoid"
+      },
+      "review": "Full supporting source sections read; exact selected-product/route/population distinctions retained. Clinical counseling synthesis identified; no unavailable source access claimed."
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Avoid fetal exposure and stop promptly when pregnancy is detected; discuss safer alternatives before planned pregnancy. The label does not establish safety in the first trimester. Exposed infants require observation for hypotension, low urine output, hyperkalemia and renal impairment. Human milk and infant-effect data are absent; Avapro use during breastfeeding is not recommended."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Full§8.1 pregnancy/firsttrimester limitations/neonatal follow-up;§8.2 humanmilk absence andnotrecommended"
+      },
+      "review": "Full supporting source sections read; exact selected-product/route/population distinctions retained. Clinical counseling synthesis identified; no unavailable source access claimed."
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": {
+        "paragraphs": [
+          "No effective pediatric regimen is established in the selected label: the ages-6–16 trial did not show effective BP reduction, and age below 6 was not studied. Older trial participants showed no overall safety/effectiveness difference, but some may be more sensitive. No age-only adjustment is needed; monitor orthostasis, volume status and interacting medicines."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§8.4 ineffective pediatric trial;§8.5 no overallgeriatric difference;sensitivity;§12.3 noageadjust"
+      },
+      "review": "Full supporting source sections read; exact selected-product/route/population distinctions retained. Clinical counseling synthesis identified; no unavailable source access claimed."
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic impairment",
+      "assertions": {
+        "paragraphs": [
+          "Mild-to-severe renal impairment does not itself require a PK dose reduction; volume depletion does call for the 75 mg start. The drug is not dialyzable, and dialysis alone is not a reason to invent a postdialysis replacement dose. Mild-to-moderate cirrhosis did not significantly alter PK; severe hepatic impairment lacks a separately validated regimen in this profile. Kidney decline and hyperkalemia may still require withholding or adjustment."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§12.3 full renal noadjustunlessvolume-depleted/noHDremoval,mildmoderatecirrhosis only;§2.4;§5.3 clinical monitoring despite PK"
+      },
+      "review": "Full supporting source sections read; exact selected-product/route/population distinctions retained. Clinical counseling synthesis identified; no unavailable source access claimed."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "assertions": {
+        "paragraphs": [
+          "Irbesartan competitively blocks angiotensin II at AT1 receptors, reducing vasoconstrictor and aldosterone-secreting effects. It does not inhibit ACE or renin. Renin and circulating angiotensin II rise after receptor blockade, but do not overcome the BP effect."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§12.1 AT1mechanism notACE/renin and§12.2 feedback"
+      },
+      "review": "Full supporting source sections read; exact selected-product/route/population distinctions retained. Clinical counseling synthesis identified; no unavailable source access claimed."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Kinetics",
+      "assertions": {
+        "paragraphs": [
+          "Absolute oral bioavailability averages 60–80%; peak levels occur after 1.5–2 hours, with no important food effect. Protein binding is about 90%, terminal half-life 11–15 hours and steady state about 3 days. Glucuronidation and primarily CYP2C9 oxidation form mostly inactive metabolites. Drug/metabolites leave through bile/feces and urine; about 20% of radiolabeled dose is recovered in urine. Hemodialysis does not clear irbesartan."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Full§12.3 bioavailability60–80/peak1.5–2h/protein90/half11–15/steady3d/CYP2C9/bileurine20/noHD"
+      },
+      "review": "Full supporting source sections read; exact selected-product/route/population distinctions retained. Clinical counseling synthesis identified; no unavailable source access claimed."
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": {
+        "paragraphs": [
+          "Assess BP, orthostatic symptoms, volume status, serum potassium and renal function before and during therapy, especially after initiation, dose changes or added NSAIDs/potassium-raising drugs. Periodic renal monitoring is explicit for vulnerable patients. Follow proteinuria and renal progression when treating the labeled nephropathy population. The selected label supplies no universal BP target, lab interval or percentage-creatinine stop rule."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§5.2/5.3/7 andindication §1.2 response: measuredBP/K/renal/volume and clinical follow-up synthesis; no invented universal target/interval/creatinine cutoff"
+      },
+      "review": "Full supporting source sections read; exact selected-product/route/population distinctions retained. Clinical counseling synthesis identified; no unavailable source access claimed."
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "assertions": {
+        "paragraphs": [
+          "Discuss pregnancy plans and report pregnancy immediately so irbesartan can be discontinued promptly. Avoid unapproved potassium supplements or salt substitutes; discuss OTC NSAIDs and new prescriptions. Report marked dizziness/fainting, reduced urine or vomiting/diarrhea that causes dehydration. Emergency care is needed for airway/facial swelling or severe allergic symptoms."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§17 pregnancy/supplements;§5/7/6.2 symptom counseling clinical synthesis"
+      },
+      "review": "Full supporting source sections read; exact selected-product/route/population distinctions retained. Clinical counseling synthesis identified; no unavailable source access claimed."
+    },
+    {
+      "section": "practice",
+      "card": "Overdose",
+      "assertions": {
+        "paragraphs": [
+          "Seek medical or Poison Control help for overdose. Hypotension and tachycardia are expected; bradycardia may also occur. Treatment is supportive and individualized; irbesartan is not removed by hemodialysis. Tolerability of high doses in studies does not increase the labeled 300 mg/day maximum."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§10 overdose hypotension/tachy/brady/noHD;§2.2 300mgcap unchanged despite tolerability study; supportive clinical counseling synthesis"
+      },
+      "review": "Full supporting source sections read; exact selected-product/route/population distinctions retained. Clinical counseling synthesis identified; no unavailable source access claimed."
+    },
+    {
+      "section": "product",
+      "card": "Representative Avapro product",
+      "assertions": {
+        "facts": [
+          [
+            "Product",
+            "Avapro 150 mg film-coated tablet"
+          ],
+          [
+            "Route",
+            "Oral; prescription only"
+          ],
+          [
+            "Appearance",
+            "White to off-white oval; heart / 2872; unscored"
+          ],
+          [
+            "Example package",
+            "30 tablets · NDC 0024-5851-30"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§3/16 selected150mgphysical/code/NDC30;XMLscore1"
+      },
+      "review": "Full supporting source sections read; exact selected-product/route/population distinctions retained. Clinical counseling synthesis identified; no unavailable source access claimed."
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Current Avapro supplies 150 mg (heart / 2872) and 300 mg (heart / 2873) tablets; the 300 mg 30-count bottle is NDC 0024-5852-30. The reviewed Macleods generic supplies 75, 150 and 300 mg, with ML 94, ML 95 and ML 96 respectively. Its 75 mg 30-count bottle is NDC 33342-047-07. Do not transfer these identifiers to another manufacturer or to irbesartan/hydrochlorothiazide combinations."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic"
+      ],
+      "sourceSections": {
+        "label": "Avapro§3/16 current150/300/codeNDC;generic§3/16 actual75/150/300 andML94/95/96/NDC75",
+        "generic": "Avapro§3/16 current150/300/codeNDC;generic§3/16 actual75/150/300 andML94/95/96/NDC75"
+      },
+      "review": "Full supporting source sections read; exact selected-product/route/population distinctions retained. Clinical counseling synthesis identified; no unavailable source access claimed."
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Avapro: store at 25°C (77°F), with excursions to 15–30°C (59–86°F). Selected Macleods generic: 20–25°C, with excursions to 15–30°C. Keep the dispensed product in its labeled container and out of children’s reach. No universal opened-bottle discard date or moisture instruction is stated for these selected labels."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "generic"
+      ],
+      "sourceSections": {
+        "label": "Avapro§16 25Cexc15–30; generic§16 20–25exc15–30; original full labels no uniform moisture/opened discard directions",
+        "generic": "Avapro§16 25Cexc15–30; generic§16 20–25exc15–30; original full labels no uniform moisture/opened discard directions"
+      },
+      "review": "Full supporting source sections read; exact selected-product/route/population distinctions retained. Clinical counseling synthesis identified; no unavailable source access claimed."
+    }
+  ],
+  "sourceDiscrepancies": [
+    {
+      "issue": "Current Avapro supplies150/300 only although§2.4recommends75mginitialdepletion.",
+      "resolution": "Currentgeneric75mg separately sourced; no obsoletebrand75 or approvedsplitting assumption.",
+      "resolved": true
+    },
+    {
+      "issue": "Nephropathy dose/indication versuspediatricineffective study/renalPK findings canbeovergeneralized.",
+      "resolution": "Precise labeled adultpopulation/300dose, no pediatricalgorithm and clinicalrenal/Krisk despitePKnoadjust.",
+      "resolved": true
+    },
+    {
+      "issue": "Hepatic label says noadjust aftermildmoderatecirrhosisdata.",
+      "resolution": "No validated severe-hepatic regimen inferred.",
+      "resolved": true
+    }
+  ],
+  "materialErrors": [],
+  "unresolvedMaterialGaps": [],
+  "limitations": [
+    "Public current primary labels read, no paywalled access claimed.",
+    "Source-review status applies only to explicit selected product/formulation scope; not universal product equivalence.",
+    "Parent retains rendered-page/build/release QA."
+  ],
+  "reviewedSourceSections": [
+    "Full supporting selected labels including all indications/doses/contra/warnings/interactions/pregnancy/lactation/peds/PK/monitoring/counseling/adverse/overdose/product/handling and actualXMLauthorizations/characteristics; exactcardmapabove."
+  ],
+  "verification": {
+    "schemaErrors": [],
+    "monographSha256": "1f88f418784bb939b79796681c0784c696c144804fbd5606ba7d3693ce2966bd",
+    "sectionIds": [
+      "indications",
+      "dosage",
+      "safety",
+      "interactions",
+      "populations",
+      "pharmacology",
+      "practice",
+      "product"
+    ],
+    "heroFacts": 3,
+    "safetyCardOrder": [
+      "Warnings and precautions",
+      "Contraindications",
+      "Boxed warning",
+      "Adverse reactions"
+    ],
+    "productCardOrder": [
+      "Representative Avapro product",
+      "Dosage forms and strengths",
+      "Storage and handling"
+    ],
+    "displayTextWrap": "Natural spacing in slash compounds; parent390pxarticle-bound QA pending.",
+    "renderedPageQA": "Pending parent batch QA"
+  }
+}
