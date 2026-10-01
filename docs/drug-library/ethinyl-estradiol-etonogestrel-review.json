@@ -1,0 +1,470 @@
+{
+  "slug": "ethinyl-estradiol-etonogestrel",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "A current NuvaRing contraceptive reference with separately identified CDC clinical-guideline differences. All eight blueprint sections reviewed. Product-specific focused monograph; not an exhaustive adverse-event catalog.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "NuvaRing · Current full prescribing information and patient instructions",
+      "publisher": "DailyMed / Organon",
+      "note": "SPL version 10, effective 20251114; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=55eb60e3-6f4d-40a3-8ee6-e7fd2d0c7d97",
+      "checked": "2026-10-01",
+      "version": "SPL version 10, effective 20251114; current public product labeling.",
+      "spl_version": "10",
+      "spl_effective_time": "20251114",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/55eb60e3-6f4d-40a3-8ee6-e7fd2d0c7d97.xml",
+      "downloaded_xml_sha256": "6daa6ee202cd991ef448830b21c479d8d032997509a801751944ce183668fe7c",
+      "regulatory_identity": {
+        "labeler": [
+          "Organon LLC"
+        ],
+        "approval_identifiers": [
+          "NDA021187"
+        ],
+        "status_note": "Exact formulation, route, human category and application identifier verified. Label/NDC does not guarantee current retail stock."
+      }
+    },
+    {
+      "id": "cdc",
+      "title": "CDC · Combined hormonal contraceptives, U.S. SPR 2024",
+      "publisher": "Centers for Disease Control and Prevention",
+      "note": "Current public guidance page dated November 19, 2024; initiation, postpartum eligibility and follow-up reviewed. Guideline distinctions identified separately from product label.",
+      "url": "https://www.cdc.gov/contraception/hcp/usspr/combined-hormonal-contraceptives.html",
+      "checked": "2026-10-01",
+      "version": "Current public guidance page dated November 19, 2024; initiation, postpartum eligibility and follow-up reviewed. Guideline distinctions identified separately from product label."
+    }
+  ],
+  "assertion_to_source": [
+    {
+      "section_id": "indications",
+      "card_title": "Approved indication and scope",
+      "assertions": [
+        "NuvaRing is a combined etonogestrel/ethinyl estradiol vaginal contraceptive for females of reproductive age, including postpubertal adolescents. It is not indicated before menarche or after menopause. This reference uses the current Organon NuvaRing label; generic equivalents require package verification. Nexplanon is a progestin implant, and Annovera is a different ring with different ingredients/reuse instructions. Neither regimen may be substituted here."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "1",
+            "8.4",
+            "8.5",
+            "11"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "indications",
+      "card_title": "Effectiveness and STI protection",
+      "assertions": [
+        "Correct continuous use and timely replacement determine effectiveness. The label’s pregnancy rates describe selected clinical trials, not a guarantee for every user; trials excluded BMI ≥30 kg/m². NuvaRing does not protect against HIV or other STIs. Discuss condoms and appropriate prevention separately from pregnancy protection."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "14",
+            "17",
+            "Patient information"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Standard label cycle",
+      "assertions": [
+        "Compress and insert one ring vaginally; its precise position is not critical. Keep it continuously for 21 days, remove on the same weekday/time, then insert a NEW ring exactly seven days later even if bleeding continues. Regularly check that it remains present, including around intercourse. It is not an annual reusable ring."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.1",
+            "2.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Starting and switching under the label",
+      "assertions": [
+        "Without hormonal use in the prior cycle: start on menstrual day 1; starting on days 2–5 requires a male-condom barrier backup for seven days. From another correctly used CHC, switch no later than the day after its usual hormone-free interval. From a POP, start the day after the last pill; from an implant/IUS, start on removal day; from injection, when the next injection is due. These progestin-only switches require seven days of backup. First-trimester completed abortion/miscarriage may start within five days without backup; later starts need the label initiation instructions. Second-trimester and postpartum timing require separate risk review."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Expulsion or time outside: label instructions",
+      "assertions": [
+        "If out for less than three hours, rinse with cool/lukewarm water and reinsert promptly. The label directs the following after more than three continuous hours; for an unknown interval, consider pregnancy and test before a new ring. Contact a clinician promptly after an error and recent intercourse to discuss pregnancy risk and emergency contraception; do not combine different algorithms yourself.",
+        "Weeks 1–2, out >3 hours | Reinsert promptly; use male-condom backup until seven continuous ring-use days.",
+        "Week 3, out >3 hours | Discard and insert a new ring immediately, or within seven days from expulsion only if the previous seven days were continuous use. Either option needs seven days backup with the new ring.",
+        "Ring-free interval >7 days | Consider pregnancy and use backup until seven continuous ring-use days.",
+        "Ring left in for 3–4 weeks | Remove; insert a new ring after the one-week break.",
+        "Ring left in >4 weeks | Remove and rule out pregnancy; after restarting, use backup for seven days."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.3 / Expulsion"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Other administration issues",
+      "assertions": [
+        "Replace a broken/disconnected ring with a new one; breakage can cause injury/discomfort or expulsion but does not release a larger hormone dose. Diaphragms, cervical caps, and internal/female condoms are not recommended as backup because the ring can interfere with placement. Tampons do not alter hormone absorption. Prolonged/continuous use protocols outside the labeled cycle require a separate clinician plan."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.3",
+            "2.5",
+            "10"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Guideline differences",
+      "assertions": [
+        "CDC 2024 permits CHC initiation whenever reasonably certain the patient is not pregnant, with seven-day backup when started more than five days after menstrual bleeding began; this differs from the label’s day 2–5 backup rule. CDC also provides its own delayed-ring algorithm. These are separately attributed clinical guidance, not a rewriting of the product label. Agree on one appropriate plan with the clinician."
+      ],
+      "support": [
+        {
+          "source_id": "cdc",
+          "sections": [
+            "Initiation / Timing and backup",
+            "Late or missed dosing"
+          ]
+        },
+        {
+          "source_id": "label",
+          "sections": [
+            "2.2",
+            "2.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Warnings and precautions",
+      "assertions": [
+        "Stop for thrombosis or suspected severe allergy and obtain urgent assessment for leg swelling/pain, sudden dyspnea/chest pain, focal neurologic symptoms, or visual loss. If feasible, stop at least four weeks before and through two weeks after major or other high-VTE-risk surgery, and during/following prolonged immobilization. Monitor BP; stop for significant elevation. New severe/recurrent headaches or increased migraine severity need evaluation. Jaundice, liver dysfunction, major mood deterioration, severe vaginal irritation/ulceration, or inability to locate/remove the ring need review.",
+        "Other concerns include gallbladder disease, glucose/lipid changes and hypertriglyceridemic pancreatitis, hormone-sensitive malignancy, and worsened hereditary angioedema. Toxic shock syndrome has been reported without an established causal relationship. Persistent urinary symptoms with an unlocated ring raise concern for inadvertent bladder placement. Persistent unexpected bleeding needs assessment for pregnancy or pathology."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "5.1–5.18"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Contraindications",
+      "assertions": [
+        "Do not use with high arterial/venous thrombotic risk: smoking over age 35; current/prior DVT or PE; cerebrovascular/coronary disease; thrombogenic valve/rhythm disease; hypercoagulopathy; uncontrolled hypertension; diabetes with vascular disease; focal-neurologic headache or migraine aura; or any migraine over age 35. Other formal contraindications include liver disease or benign/malignant liver tumors, unexplained uterine bleeding, pregnancy, current/prior breast cancer, ingredient hypersensitivity, and ombitasvir/paritaprevir/ritonavir with or without dasabuvir."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Boxed warning: smoking and cardiovascular events",
+      "assertions": [
+        "Smoking increases serious cardiovascular-event risk with combined hormonal contraception, and risk increases with age and cigarette quantity. NuvaRing must not be used by women over age 35 who smoke. Assess smoking and vascular risk before starting and throughout use."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Boxed warning",
+            "4",
+            "5.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Adverse reactions and overdose",
+      "assertions": [
+        "Commonly reported effects include vaginitis/discharge/discomfort, headache or migraine, mood changes, nausea, breast tenderness, bleeding changes, and ring-related discomfort/expulsion. Serious vascular/allergic events and device injury occur. Suspected overdose may cause nausea or withdrawal bleeding; remove all rings and obtain clinical advice. A broken ring does not deliver an increased hormone dose."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "6",
+            "10"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Reduced hormone exposure",
+      "assertions": [
+        "CYP3A4-inducing drugs/herbs—including rifampin/rifabutin, carbamazepine, phenytoin, some other antiseizure drugs, bosentan, griseofulvin, aprepitant, and St John’s wort—can cause breakthrough bleeding or contraceptive failure. Use an alternative nonhormonal method or suitable backup during exposure and for 28 days afterward. HIV/HCV drugs have variable effects, so consult each exact drug label. Standard-dose oral amoxicillin/doxycycline did not affect hormone concentrations in the cited studies; do not generalize enzyme-inducer precautions to all antibiotics."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "7.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Other interactions and actions",
+      "assertions": [
+        "Strong/moderate CYP3A4 inhibitors and vaginal miconazole can increase hormone exposure. CHCs can lower lamotrigine levels and worsen seizure control, while increasing some substrates including cyclosporine, tizanidine, and theophylline; coordinate monitoring and adjustments. Thyroid replacement may need adjustment due to binding-globulin changes. The contraindicated ombitasvir/paritaprevir/ritonavir regimen requires stopping NuvaRing before treatment; the label allows restarting approximately two weeks after completion. Other HCV regimens, including glecaprevir/pibrentasvir, require exact-product review for ALT risk."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "7.1–7.4",
+            "5.4",
+            "5.15"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pregnancy and product-label postpartum advice",
+      "assertions": [
+        "Stop if pregnancy is confirmed; it is contraindicated because contraception has no purpose during established pregnancy. Low-dose CHC early-exposure studies have not shown an increased malformation risk, but are not an indication to continue. The label starts no earlier than four weeks after delivery in nonbreastfeeding users, with seven-day backup and consideration of ovulation/pregnancy; also no earlier than four weeks after second-trimester loss. It advises avoiding use during breastfeeding until weaning where possible because milk production can decrease."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.2",
+            "5.1",
+            "8.1",
+            "8.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "CDC postpartum and breastfeeding distinction",
+      "assertions": [
+        "CDC 2024 contraindicates CHCs before postpartum day 21; later eligibility depends on breastfeeding and VTE risks. Breastfeeding users generally can use CHCs after day 42 (MEC 2), differing from label advice to wait until weaning. This is a clinician assessment of eligibility, milk supply, and alternatives, not permission for every postpartum user to start."
+      ],
+      "support": [
+        {
+          "source_id": "cdc",
+          "sections": [
+            "Postpartum / Breastfeeding and nonbreastfeeding"
+          ]
+        },
+        {
+          "source_id": "label",
+          "sections": [
+            "2.2",
+            "8.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Age, kidney, and liver considerations",
+      "assertions": [
+        "Efficacy is expected to be comparable in postpubertal adolescents under 18; premenarche and postmenopausal use are not indicated. Renal pharmacokinetics has not been studied, and no renal dose-adjustment scheme is established. Hepatic impairment can alter steroid metabolism; liver disease/tumors are contraindications, with cessation for relevant dysfunction or jaundice. Pregnancy prevention needs individual medical-eligibility review rather than extrapolated organ-dose adjustments."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "8.4–8.7",
+            "4",
+            "5.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Mechanism",
+      "assertions": [
+        "Combined hormones suppress gonadotropins and primarily inhibit ovulation; cervical-mucus and endometrial changes also contribute. A ring in place cannot provide STI protection through this mechanism."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "12.1",
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Pharmacokinetics",
+      "assertions": [
+        "Etonogestrel and ethinyl estradiol are absorbed systemically; etonogestrel vaginal bioavailability is approximately 100%. Both undergo hepatic metabolism, with CYP3A4 important for etonogestrel and interaction risk. Hormones/metabolites are eliminated through urine, bile, and feces. Vaginal delivery does not avoid thrombosis or hepatic-enzyme interactions."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "12.3",
+            "5.1",
+            "7"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Monitoring",
+      "assertions": [
+        "Measure BP before initiation and reassess smoking, vascular history, migraine, liver disease, breast cancer, interactions, and pregnancy possibility. The label recommends a yearly healthcare visit including BP; review major symptom changes sooner. CDC does not require routine pelvic examination or broad laboratory screening to initiate CHCs in healthy patients; known medical problems may require targeted assessment."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "4",
+            "5.16",
+            "17"
+          ]
+        },
+        {
+          "source_id": "cdc",
+          "sections": [
+            "Examinations and tests before initiation"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Patient counseling",
+      "assertions": [
+        "Record insertion/removal dates, check ring presence, and use a new ring each cycle. Explain label error/backup instructions and seek prompt advice after mistakes or intercourse when protection may be reduced. Report clot symptoms, severe headache/vision change, jaundice, allergy, serious depression, or vaginal injury immediately. Explain no STI protection, interaction backup, postpartum restrictions, and correct disposal. Do not use multiple rings or confuse this ring with a reusable or implant product."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2",
+            "5",
+            "7",
+            "10",
+            "17",
+            "Patient information"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Representative product",
+      "assertions": [
+        "Organon NuvaRing is a flexible transparent, colorless-to-almost-colorless non-biodegradable ring, 54 mm outer diameter and 4 mm cross-section, without natural rubber latex. Each contains 11.7 mg etonogestrel and 2.7 mg ethinyl estradiol. A box of three individually pouched rings is NDC 78206-146-03. Generic appearance/package instructions should be separately checked."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "3",
+            "11",
+            "16"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Dosage forms and strengths",
+      "assertions": [
+        "The vaginal ring releases on average etonogestrel 0.120 mg/day and ethinyl estradiol 0.015 mg/day over three weeks. These daily release rates are not the total hormone contents and must not be reversed. The labeled cycle uses one disposable ring followed by a seven-day ring-free interval; implant, oral pill, and other ring products are different formulations."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "3",
+            "11",
+            "2.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Storage and handling",
+      "assertions": [
+        "Before dispensing, refrigerate at 2–8°C. After dispensing, storage is allowed for up to four months at 25°C, with excursions 15–30°C; avoid direct sunlight or temperatures above 30°C. The dispenser’s expiry is the earlier of four months after dispensing or the package expiry. Place a used ring in its reclosable foil sachet and discard in household waste inaccessible to children/pets; do not flush."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "16",
+            "16.1"
+          ]
+        }
+      ]
+    }
+  ],
+  "material_errors": [],
+  "gaps": [],
+  "limitations": [
+    "Reference product is current Organon NuvaRing; generic labels and other hormone combinations/devices must be checked individually.",
+    "CDC 2024 initiation, postpartum and breastfeeding advice differs from product labeling; distinctions are explicit. No combined algorithm or universal postpartum approval is inferred.",
+    "The complete CDC emergency-contraception and missed-ring algorithms are linked for clinician use; label-specific error instructions are supplied here without claiming they are identical."
+  ],
+  "validation": {
+    "schema": "validateMonograph: []",
+    "contract": "Eight APAP sections, four Safety core cards, three Product cards, warnings open/tone warning and three hero fact tuples; dose tables have two spaced headings with wrapping prose.",
+    "independent_review": "Requested separately; approval not implied."
+  },
+  "full_source_review": {
+    "method": "Full public XML prescribing and relevant patient sections reviewed; current CDC primary guidance read where cited.",
+    "paywall_access": "None claimed.",
+    "checked_date": "2026-10-01"
+  },
+  "source_discrepancies": [
+    {
+      "issue": "CDC CHC initiation and postpartum/breastfeeding eligibility differs from current NuvaRing label; CDC also uses its own delayed-ring algorithm.",
+      "resolution": "Label instructions are explicitly named; CDC approach is separately attributed, with clinician selection of one coherent plan. No hybrid numerical algorithm is invented.",
+      "status": "reconciled_and_explicit"
+    }
+  ]
+}

@@ -1,0 +1,735 @@
+{
+  "slug": "memantine",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "A single-ingredient Alzheimer dementia reference separating immediate-release tablets/solution and extended-release capsules. All eight blueprint sections reviewed. Product-specific focused monograph; not an exhaustive adverse-event catalog.",
+  "sources": [
+    {
+      "id": "ir",
+      "title": "Memantine hydrochloride IR tablets · Prescribing information",
+      "publisher": "DailyMed / Lupin",
+      "note": "SPL version 13, effective 20251229; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b4a0162-9cb4-4ba6-8c02-95c2955734ae",
+      "checked": "2026-10-01",
+      "version": "SPL version 13, effective 20251229; current public product labeling.",
+      "spl_version": "13",
+      "spl_effective_time": "20251229",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/1b4a0162-9cb4-4ba6-8c02-95c2955734ae.xml",
+      "downloaded_xml_sha256": "5301eaf0865486f363c8a669c95a4bc7654edc8941f361bd8ab53ad97b53e90f",
+      "regulatory_identity": {
+        "labeler": [
+          "Lupin Pharmaceuticals, Inc."
+        ],
+        "approval_identifiers": [
+          "ANDA090051"
+        ],
+        "status_note": "Exact formulation, route, human category and application identifier verified. Label/NDC does not guarantee current retail stock."
+      }
+    },
+    {
+      "id": "xr",
+      "title": "Memantine hydrochloride XR capsules · Prescribing information",
+      "publisher": "DailyMed / Lupin",
+      "note": "SPL version 17, effective 20260115; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=24290655-47f3-4042-a977-a832c5161d2c",
+      "checked": "2026-10-01",
+      "version": "SPL version 17, effective 20260115; current public product labeling.",
+      "spl_version": "17",
+      "spl_effective_time": "20260115",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/24290655-47f3-4042-a977-a832c5161d2c.xml",
+      "downloaded_xml_sha256": "a291bd59eff077430c7377a0bad4b39f5f8cd45cef1f38bf37d9a2ac232a4bb0",
+      "regulatory_identity": {
+        "labeler": [
+          "Lupin Pharmaceuticals, Inc."
+        ],
+        "approval_identifiers": [
+          "ANDA206028"
+        ],
+        "status_note": "Exact formulation, route, human category and application identifier verified. Label/NDC does not guarantee current retail stock."
+      }
+    },
+    {
+      "id": "solution",
+      "title": "Memantine hydrochloride oral solution · Prescribing information",
+      "publisher": "DailyMed / Apotex",
+      "note": "SPL version 7, effective 20260914; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4076d3ef-d0a9-96c5-1a15-812c1e42929c",
+      "checked": "2026-10-01",
+      "version": "SPL version 7, effective 20260914; current public product labeling.",
+      "spl_version": "7",
+      "spl_effective_time": "20260914",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/4076d3ef-d0a9-96c5-1a15-812c1e42929c.xml",
+      "downloaded_xml_sha256": "d10db48d24a7a9ced810d76eccc6ce0485bcb831e863643999b798ec9d73e9a4",
+      "regulatory_identity": {
+        "labeler": [
+          "Apotex Corp."
+        ],
+        "approval_identifiers": [
+          "ANDA209955"
+        ],
+        "status_note": "Exact formulation, route, human category and application identifier verified. Label/NDC does not guarantee current retail stock."
+      }
+    }
+  ],
+  "assertion_to_source": [
+    {
+      "section_id": "indications",
+      "card_title": "Approved indication",
+      "assertions": [
+        "The selected single-ingredient IR tablets, XR capsules, and oral solution treat moderate to severe dementia of the Alzheimer’s type. They are not labeled here for mild cognitive impairment, prevention, autism, or other dementia etiologies. There is no label evidence that memantine prevents or slows Alzheimer neurodegeneration."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "1",
+            "12.1"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "1",
+            "12.1"
+          ]
+        },
+        {
+          "source_id": "solution",
+          "sections": [
+            "1",
+            "12.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "indications",
+      "card_title": "Treatment context",
+      "assertions": [
+        "The labels describe symptomatic cognitive/function outcomes and studies with concomitant cholinesterase-inhibitor therapy. Selection and continuing benefit need assessment with the patient/caregiver. A donepezil combination product has its own dosing, contraindications, and interactions; those cannot be inferred from this single-ingredient reference."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "12.3 / Cholinesterase inhibitors",
+            "14"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "12.3 / Cholinesterase inhibitors",
+            "14"
+          ]
+        },
+        {
+          "source_id": "solution",
+          "sections": [
+            "12.3 / Cholinesterase inhibitors",
+            "14"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Immediate-release tablet or 2-mg/mL solution",
+      "assertions": [
+        "Start 5 mg once daily, then increase total daily dose by 5 mg at intervals of at least one week if tolerated. Both may be taken with or without food. The solution’s volume must be measured using its supplied syringe.",
+        "Start | 5 mg once daily; solution 2.5 mL.",
+        "After ≥1 week | 5 mg twice daily; solution 2.5 mL twice daily.",
+        "After another ≥1 week | 5 mg and 10 mg as separate daily doses; solution 2.5 mL and 5 mL.",
+        "Target after further ≥1 week | 10 mg twice daily; solution 5 mL twice daily.",
+        "CrCl 5–29 mL/min | Target 5 mg twice daily; solution 2.5 mL twice daily."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "2"
+          ]
+        },
+        {
+          "source_id": "solution",
+          "sections": [
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Extended-release capsules and conversion",
+      "assertions": [
+        "XR starts 7 mg once daily, increasing by 7 mg no more often than weekly if the previous dose is tolerated; usual target/maximum 28 mg once daily. At Cockcroft–Gault CrCl 5–29 mL/min, target/maximum is 14 mg once daily. The XR label permits switching IR 10 mg twice daily to XR 28 mg once daily the next day; severe-renal IR 5 mg twice daily may switch to XR 14 mg the next day. Comparative efficacy of the two regimens has not been studied; they are not milligram-for-milligram substitutes."
+      ],
+      "support": [
+        {
+          "source_id": "xr",
+          "sections": [
+            "2.1–2.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Administration and missed doses",
+      "assertions": [
+        "Swallow XR whole, or open and sprinkle its entire contents on applesauce and swallow without chewing; never divide, crush, or chew the capsule/beads. Give oral solution using its supplied syringe and adapter, slowly into the corner of the mouth; do not mix with another liquid. Do not double a missed dose. After several days missed, contact the prescriber because lower-dose restarting and retitration may be needed."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "2"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "2.1"
+          ]
+        },
+        {
+          "source_id": "solution",
+          "sections": [
+            "2",
+            "Patient information / IFU"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Warnings and precautions",
+      "assertions": [
+        "Conditions that alkalinize urine can markedly reduce elimination and increase memantine exposure. Review urinary infection, renal tubular acidosis, bicarbonate, and carbonic-anhydrase inhibitors. Check severe renal dosing and use caution in severe hepatic impairment. Dizziness/confusion can affect function and safe activities. Seizure disorders were not systematically studied; report relevant history rather than interpreting trial events as proof of safety."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "5.1",
+            "7.1",
+            "8.6",
+            "8.7",
+            "6.1",
+            "Patient information"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "5.1",
+            "7.1",
+            "8.6",
+            "8.7",
+            "6.1",
+            "Patient information"
+          ]
+        },
+        {
+          "source_id": "solution",
+          "sections": [
+            "5.1",
+            "7.1",
+            "8.6",
+            "8.7",
+            "6.1",
+            "Patient information"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Contraindications",
+      "assertions": [
+        "Known hypersensitivity to memantine hydrochloride or a formulation excipient is the formal contraindication. Renal dose reduction, severe-hepatic caution, and urine-pH concerns retain their actual dosing/warning classifications."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "4",
+            "2",
+            "5"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "4",
+            "2",
+            "5"
+          ]
+        },
+        {
+          "source_id": "solution",
+          "sections": [
+            "4",
+            "2",
+            "5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Boxed warning status",
+      "assertions": [
+        "The selected single-ingredient memantine labels contain no boxed warning. This does not remove the need to verify dose, kidney function, tolerability, and formulation."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "Full label / highlights"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "Full label / highlights"
+          ]
+        },
+        {
+          "source_id": "solution",
+          "sections": [
+            "Full label / highlights"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Adverse reactions and overdose",
+      "assertions": [
+        "IR trial reports commonly include dizziness, headache, confusion, and constipation; XR commonly reports headache, diarrhea, and dizziness. Postmarketing events include severe skin reactions, cytopenias, renal failure, and suicidal ideation, with uncertain frequency/causality. Overdose can cause agitation, confusion, somnolence/coma, bradycardia, BP/ECG changes, hallucinations, vomiting, and unsteady gait. Obtain immediate poison-center/medical advice; treatment is supportive and clinician-directed, not home urine acidification."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "6.1",
+            "6.2",
+            "10"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "6.1",
+            "6.2",
+            "10"
+          ]
+        },
+        {
+          "source_id": "solution",
+          "sections": [
+            "6.1",
+            "6.2",
+            "10"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Urine pH and NMDA antagonists",
+      "assertions": [
+        "Alkaline urine around pH 8 reduced memantine clearance about 80% in label data. Diet, bicarbonate, carbonic-anhydrase inhibitors, renal tubular acidosis, and severe urinary infection may contribute. Use caution and assess exposure/toxicity risk. Concurrent amantadine, ketamine, or dextromethorphan has not been systematically evaluated and warrants caution."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "7.1",
+            "7.2"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "7.1",
+            "7.2"
+          ]
+        },
+        {
+          "source_id": "solution",
+          "sections": [
+            "7.1",
+            "7.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Other interaction evidence",
+      "assertions": [
+        "CYP enzymes are not a major clearance pathway, and routine CYP inhibitor/inducer dose rules are not established. Drugs sharing renal cationic secretion could theoretically alter exposure, but tested hydrochlorothiazide/triamterene and glyburide/metformin combinations did not change memantine pharmacokinetics. Label studies with donepezil did not alter either drug’s pharmacokinetics; this does not replace the other medicine’s safety review."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "12.3 / Drug-drug interactions"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "12.3 / Drug-drug interactions"
+          ]
+        },
+        {
+          "source_id": "solution",
+          "sections": [
+            "12.3 / Drug-drug interactions"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pregnancy and lactation",
+      "assertions": [
+        "Human pregnancy developmental-risk data are inadequate; animal developmental effects occurred at higher exposures. Human milk levels, infant effects, and effects on milk production are unknown. Assess clinical need and breastfeeding benefits with the clinician; neither label data nor low CYP involvement proves pregnancy or lactation safety."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "8.1",
+            "8.2"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "8.1",
+            "8.2"
+          ]
+        },
+        {
+          "source_id": "solution",
+          "sections": [
+            "8.1",
+            "8.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pediatric and geriatric use",
+      "assertions": [
+        "Pediatric safety/effectiveness is unestablished; controlled autism studies failed to show efficacy. Adult dementia trial populations were largely older, and age alone did not require a separate dose reduction; renal function, adherence, and adverse effects remain important in older adults."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "8.4",
+            "8.5",
+            "12.3"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "8.4",
+            "8.5",
+            "12.3"
+          ]
+        },
+        {
+          "source_id": "solution",
+          "sections": [
+            "8.4",
+            "8.5",
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Renal and hepatic impairment",
+      "assertions": [
+        "No adjustment is specified for mild/moderate renal impairment. Severe CrCl 5–29 mL/min requires IR/solution target 5 mg twice daily or XR maximum 14 mg/day. The selected labels do not establish a dialysis or CrCl below 5 mL/min regimen. Mild/moderate hepatic impairment needs no adjustment; severe impairment is unstudied and requires caution without an invented numerical reduction."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "2",
+            "8.6",
+            "8.7",
+            "12.3"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "2",
+            "8.6",
+            "8.7",
+            "12.3"
+          ]
+        },
+        {
+          "source_id": "solution",
+          "sections": [
+            "2",
+            "8.6",
+            "8.7",
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Mechanism",
+      "assertions": [
+        "Memantine is a low-to-moderate-affinity uncompetitive open-channel NMDA receptor antagonist. Persistent glutamate activation is a proposed contributor to Alzheimer symptoms, but the labels do not establish that this mechanism slows the underlying degeneration."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "12.1"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "12.1"
+          ]
+        },
+        {
+          "source_id": "solution",
+          "sections": [
+            "12.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Pharmacokinetics",
+      "assertions": [
+        "IR oral absorption is high, with peaks around 3–7 hours; elimination half-life is approximately 60–80 hours. A substantial fraction is excreted unchanged in urine, with active secretion and pH-dependent reabsorption. XR produces a distinct exposure profile; at 28 mg/day, exposure is higher than IR 10 mg twice daily, supporting the explicit labeled conversion rather than arithmetic dose equivalence."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "12.3"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "12.3"
+          ]
+        },
+        {
+          "source_id": "solution",
+          "sections": [
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Monitoring",
+      "assertions": [
+        "Review diagnosis/severity, cognition and daily functioning, caregiver observations, adherence, dizziness/confusion, bowel effects, and renal function to select the labeled dose. Recheck interacting drugs and urinary conditions that change pH or clearance. These labels do not supply a universal serum-concentration target or fixed laboratory interval."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "2",
+            "5",
+            "7",
+            "8",
+            "14",
+            "17"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "2",
+            "5",
+            "7",
+            "8",
+            "14",
+            "17"
+          ]
+        },
+        {
+          "source_id": "solution",
+          "sections": [
+            "2",
+            "5",
+            "7",
+            "8",
+            "14",
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Patient and caregiver counseling",
+      "assertions": [
+        "Use the correct daily schedule and formulation; do not substitute 28 mg XR for an equal IR milligram dose without a prescribed conversion. Follow solution/XR administration instructions, never double a missed dose, and ask about restarting after several missed days. Report new severe dizziness, confusion, urinary problems, allergy, or suspected overdose. Benefit is symptomatic, and functional response should be revisited with the clinician."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "2",
+            "5",
+            "10",
+            "17",
+            "Patient information"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "2",
+            "5",
+            "10",
+            "17",
+            "Patient information"
+          ]
+        },
+        {
+          "source_id": "solution",
+          "sections": [
+            "2",
+            "5",
+            "10",
+            "17",
+            "Patient information"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Representative products",
+      "assertions": [
+        "Lupin IR 5-mg tablets are tan, capsule-shaped, marked LU/W01; bottle of 60 NDC 68180-229-07. Lupin XR 14-mg capsules have yellow caps and dark-green bodies, marked LU/O62; bottle of 30 NDC 68180-247-06. Apotex 2-mg/mL solution is clear, peppermint flavored, alcohol-free and sugar-free; 360-mL bottle NDC 60505-6162-5. Verify the dispensed manufacturer."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "3",
+            "16"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "3",
+            "16"
+          ]
+        },
+        {
+          "source_id": "solution",
+          "sections": [
+            "3",
+            "16"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Dosage forms and strengths",
+      "assertions": [
+        "Covered IR tablets: 5 and 10 mg. XR capsules: 7, 14, 21, and 28 mg. Oral solution: 2 mg/mL with supplied oral dosing device. Other manufacturers and donepezil combination capsules have their own identities/instructions and are not covered by automatic substitution rules."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "3",
+            "16"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "3",
+            "16"
+          ]
+        },
+        {
+          "source_id": "solution",
+          "sections": [
+            "3",
+            "16"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Storage and handling",
+      "assertions": [
+        "Selected Lupin tablets/XR: 25°C, excursions 15–30°C; preserve tablets in tight containers. Apotex solution: 20–25°C. Keep medications secure from children, preserve the supplied oral measuring device, and follow the exact product container instructions."
+      ],
+      "support": [
+        {
+          "source_id": "ir",
+          "sections": [
+            "16"
+          ]
+        },
+        {
+          "source_id": "xr",
+          "sections": [
+            "16"
+          ]
+        },
+        {
+          "source_id": "solution",
+          "sections": [
+            "16",
+            "Patient information"
+          ]
+        }
+      ]
+    }
+  ],
+  "material_errors": [],
+  "gaps": [],
+  "limitations": [
+    "Dialysis and CrCl below 5 mL/min dosing are not established by these selected labels; severe hepatic impairment remains unstudied.",
+    "Combination donepezil products, other dementia etiologies, and pediatric/off-label protocols are explicitly excluded; no disease-modifying claim is made."
+  ],
+  "validation": {
+    "schema": "validateMonograph: []",
+    "contract": "Eight APAP sections, four Safety core cards, three Product cards, warnings open/tone warning and three hero fact tuples; dose tables have two spaced headings with wrapping prose.",
+    "independent_review": "Requested separately; approval not implied."
+  },
+  "full_source_review": {
+    "method": "Full public XML prescribing and relevant patient sections reviewed; current CDC primary guidance read where cited.",
+    "paywall_access": "None claimed.",
+    "checked_date": "2026-10-01"
+  }
+}

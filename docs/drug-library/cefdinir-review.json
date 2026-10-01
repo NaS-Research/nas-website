@@ -1,0 +1,1244 @@
+{
+  "drug": "cefdinir",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Current full U.S. Lupin capsule/suspension labels with current official Teva/AvKARE comparator for coherent dose-table mapping; full clinical sections and selected product identity reviewed.",
+  "blueprint": {
+    "sections": [
+      [
+        "indications",
+        "Indications"
+      ],
+      [
+        "dosage",
+        "Dosage and administration"
+      ],
+      [
+        "safety",
+        "Safety"
+      ],
+      [
+        "interactions",
+        "Drug interactions"
+      ],
+      [
+        "populations",
+        "Use in specific populations"
+      ],
+      [
+        "pharmacology",
+        "Clinical pharmacology"
+      ],
+      [
+        "practice",
+        "Monitoring and counseling"
+      ],
+      [
+        "product",
+        "Product identification"
+      ]
+    ],
+    "essential_safety": true,
+    "hero_facts": 3,
+    "APAP_modified": false
+  },
+  "sources": [
+    {
+      "id": "capsule",
+      "title": "Cefdinir capsules \u00b7 Current full label",
+      "publisher": "Lupin / DailyMed",
+      "note": "Clinical June 2024; current SPL 7 effective October 14, 2025. Adult table has shifted infection/alternative rows; coherent comparator verified.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb7366ce-1778-451f-aba5-65cf73c9b87a"
+    },
+    {
+      "id": "liquid",
+      "title": "Cefdinir oral suspension \u00b7 Current full label",
+      "publisher": "Lupin / DailyMed",
+      "note": "Current SPL 9 effective September 23, 2025; 125 and 250 mg/5 mL pediatric products.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7490df67-56c0-4a1c-8533-2107f3e8aea5"
+    },
+    {
+      "id": "comparator",
+      "title": "Cefdinir capsules \u00b7 Coherent adult/pediatric dose table",
+      "publisher": "AvKARE / Teva source label / DailyMed",
+      "note": "Current SPL 2 effective January 13, 2026; actual table row spans and complete clinical text checked.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1acc5d17-10a4-e23d-e063-6394a90a52c3"
+    }
+  ],
+  "source_records": [
+    {
+      "id": "capsule",
+      "local_snapshot": "/tmp/nas-drug-sources/cefdinir-capsule.xml",
+      "label_revision": "06/2024",
+      "set_id": "cb7366ce-1778-451f-aba5-65cf73c9b87a",
+      "spl_version": "7",
+      "spl_effective_time": "20251014",
+      "dailymed_published_date": "2025-11-17",
+      "sha256": "f6cf4097826906ac952ead23ad42b60a0c47877a3f0aa19c72b0ae01225a5903",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-17-thyroid-metformin/cefdinir-capsule.xml"
+    },
+    {
+      "id": "liquid",
+      "local_snapshot": "/tmp/nas-drug-sources/cefdinir-suspension.xml",
+      "label_revision": "08/2024",
+      "set_id": "7490df67-56c0-4a1c-8533-2107f3e8aea5",
+      "spl_version": "9",
+      "spl_effective_time": "20250923",
+      "dailymed_published_date": "2025-11-17",
+      "sha256": "7510878b87521e082dc8aab791b66b4be3cff6406ffb0508b6ac8f401b04a4a3",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-17-thyroid-metformin/cefdinir-suspension.xml"
+    },
+    {
+      "id": "comparator",
+      "local_snapshot": "/tmp/nas-drug-sources/cefdinir-capsule-comparator.xml",
+      "label_revision": "Manufacturer 08/2018; AvKARE repack footer AV 06/24 (M)",
+      "set_id": "1acc5d17-10a4-e23d-e063-6394a90a52c3",
+      "spl_version": "2",
+      "spl_effective_time": "20260113",
+      "dailymed_published_date": "2026-01-14",
+      "sha256": "e6f013a10c2e37c96bf8ddc7a4059a577a94435a11964bea65f411eeb8bcc1f4",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-17-thyroid-metformin/cefdinir-capsule-comparator.xml"
+    }
+  ],
+  "assertion_map": [
+    {
+      "section": "indications",
+      "card": "Adults and adolescents",
+      "assertions": [
+        "Selected mild/moderate indications include community-acquired pneumonia, acute bacterial exacerbation of chronic bronchitis, acute maxillary sinusitis, streptococcal pharyngitis/tonsillitis and uncomplicated skin/skin-structure infections. Relevant organisms include susceptible H. influenzae/H. parainfluenzae, M. catarrhalis, penicillin-susceptible S. pneumoniae, S. pyogenes and methicillin-susceptible S. aureus according to the indication. Do not generalize each organism to every infection."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "INDICATIONS AND USAGE; Microbiology"
+        },
+        {
+          "id": "liquid",
+          "sections": "INDICATIONS AND USAGE; Microbiology"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Children and evidence limits",
+      "assertions": [
+        "Pediatric uses from age 6 months include acute bacterial otitis media, acute maxillary sinusitis, S. pyogenes pharyngitis/tonsillitis and uncomplicated susceptible skin infections. Pediatric sinusitis approval is supported by adult evidence and pediatric PK; neonatal/younger-infant safety/effectiveness are not established. Cefdinir eradicates pharyngeal S. pyogenes, but prevention of rheumatic fever has not been studied."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "INDICATIONS AND USAGE; Pediatric Use"
+        },
+        {
+          "id": "liquid",
+          "sections": "INDICATIONS AND USAGE; Pediatric Use"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Spectrum and stewardship",
+      "assertions": [
+        "Use for proven or strongly suspected susceptible bacterial infection and reassess available cultures/local resistance. It does not treat viral colds. Most Pseudomonas, Enterococcus, Enterobacter, MRSA and penicillin-resistant streptococcal strains are not covered. In-vitro activity against some urinary organisms does not establish a UTI approval, and human CSF penetration is unstudied; no UTI or meningitis regimen is supplied."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "Microbiology; Distribution; INDICATIONS; Information for Patients"
+        },
+        {
+          "id": "liquid",
+          "sections": "Microbiology; Distribution; INDICATIONS; Information for Patients"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Adult and adolescent schedules",
+      "assertions": [
+        "Usual total is 600 mg/day for adults/adolescents age 13 and older with normal renal function. The schedules below are from the coherent current comparator; the selected Lupin adult table shifts some infection names onto alternative-dose rows, while its prose explicitly requires twice-daily dosing for pneumonia/skin infection. Both sources are retained rather than propagate a once-daily skin regimen. Doses may be taken without regard to meals."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "comparator",
+          "sections": "DOSAGE AND ADMINISTRATION, adult/adolescent table"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Adult/adolescent indication",
+          "Oral dose and label duration"
+        ],
+        "rows": [
+          [
+            "Community-acquired pneumonia",
+            "300 mg every 12 hours for 10 days"
+          ],
+          [
+            "Acute exacerbation of chronic bronchitis",
+            "300 mg every 12 hours for 5\u201310 days OR 600 mg every 24 hours for 10 days"
+          ],
+          [
+            "Acute maxillary sinusitis",
+            "300 mg every 12 hours OR 600 mg every 24 hours, each for 10 days"
+          ],
+          [
+            "Pharyngitis/tonsillitis",
+            "300 mg every 12 hours for 5\u201310 days OR 600 mg every 24 hours for 10 days"
+          ],
+          [
+            "Uncomplicated skin/skin-structure infection",
+            "300 mg every 12 hours for 10 days"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric schedules",
+      "assertions": [
+        "For ages 6 months through 12 years with normal renal function, usual total is 14 mg/kg/day, maximum 600 mg/day. Twice-daily means 7 mg/kg PERDOSE every 12 hours; once-daily means 14 mg/kg PERDOSE every 24 hours. Children \u2265 43 kg receive the 600 mg/day ceiling. Select frequency/duration by indication, not a universal interchangeable course."
+      ],
+      "sources": [
+        {
+          "id": "liquid",
+          "sections": "DOSAGE AND ADMINISTRATION, pediatric table"
+        },
+        {
+          "id": "comparator",
+          "sections": "DOSAGE AND ADMINISTRATION"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Pediatric indication",
+          "Per-dose regimen and label duration"
+        ],
+        "rows": [
+          [
+            "Acute bacterial otitis media",
+            "7 mg/kg every 12 hours for 5\u201310 days OR 14 mg/kg every 24 hours for 10 days"
+          ],
+          [
+            "Acute maxillary sinusitis",
+            "7 mg/kg every 12 hours OR 14 mg/kg every 24 hours, each for 10 days"
+          ],
+          [
+            "Pharyngitis/tonsillitis",
+            "7 mg/kg every 12 hours for 5\u201310 days OR 14 mg/kg every 24 hours for 10 days"
+          ],
+          [
+            "Uncomplicated skin infection",
+            "7 mg/kg every 12 hours for 10 days; no once-daily regimen"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Renal impairment and hemodialysis",
+      "assertions": [
+        "At adult CrCl < 30 mL/min, dose 300 mg once daily. At pediatric estimated clearance < 30 mL/min/1.73 m\u00b2, dose 7 mg/kg once daily, maximum 300 mg. Chronic hemodialysis labeling starts 300 mg or 7 mg/kg every other day, gives 300 mg or 7 mg/kg at the end of each session, then resumes every-other-day dosing. Dialysis timing must be coordinated with the prescriber/pharmacist; do not add unscheduled doses to an unchanged routine regimen. The pediatric renal value is indexed, unlike the adult CrCl threshold."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "Patients With Renal Insufficiency; Patients on Hemodialysis"
+        },
+        {
+          "id": "liquid",
+          "sections": "Patients With Renal Insufficiency; Patients on Hemodialysis"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Suspension concentration and preparation",
+      "assertions": [
+        "125 mg/5 mL is 25 mg/mL; 250 mg/5 mL is 50 mg/mL. Calculate the prescribed mg first, then measure the correct mL with an oral syringe; stronger suspension requires half the volume for the same mg. For either selected concentration, pharmacy reconstitution uses 38 mL water for a 60 mL final bottle or 61 mL for 100 mL, added in two portions with shaking after each. Shake before every administration; never use a kitchen spoon or another manufacturer\u2019s water instructions."
+      ],
+      "sources": [
+        {
+          "id": "liquid",
+          "sections": "DESCRIPTION; DOSAGE AND ADMINISTRATION, mixing; HOW SUPPLIED"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Review prior cephalosporin, penicillin and other drug reactions before treatment. Stop and urgently treat suspected anaphylaxis or serious allergic/skin reactions. The label\u2019s historical numerical beta-lactam cross-allergy estimate is not used here as an individualized probability; assess the actual reaction history.",
+        "C. difficile-associated diarrhea can range from mild illness to fatal colitis and can appear more than 2 months after antibiotics. Seek prompt assessment for severe, watery or bloody diarrhea, cramps or fever; alternative treatment/discontinuation decisions require clinical evaluation. Use caution with colitis history, and monitor prolonged treatment for superinfection. Renal impairment requires dose reduction; cephalosporin-associated seizures are particularly concerning when accumulated doses are not reduced."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "WARNINGS; PRECAUTIONS, General; Cephalosporin Class Adverse Events"
+        },
+        {
+          "id": "liquid",
+          "sections": "WARNINGS; PRECAUTIONS, General; Cephalosporin Class Adverse Events"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "Known allergy to the cephalosporin antibiotic class is a formal contraindication. Penicillin allergy is addressed as a cross-hypersensitivity precaution in these labels, requiring clinical evaluation rather than assuming all reported allergies are equivalent."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "CONTRAINDICATIONS; WARNINGS"
+        },
+        {
+          "id": "liquid",
+          "sections": "CONTRAINDICATIONS; WARNINGS"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "The selected current cefdinir labels do not contain a boxed warning. The prominent capitalized allergy warning and C. difficile warning remain important precautions even without a formal box."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "Full label; WARNINGS"
+        },
+        {
+          "id": "liquid",
+          "sections": "Full label; WARNINGS"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Common adult effects include diarrhea, nausea, headache, abdominal symptoms and vaginal candidiasis. Children commonly experience diarrhea, rash and vomiting; diarrhea/diaper rash are more frequent in younger children. Postmarketing reports include severe allergic/skin reactions, blood-cell disorders, hepatic injury and renal failure; these reports do not define a reliable incidence or prove causality for every listed event."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "ADVERSE EVENTS; Clinical Trials; Postmarketing Experience"
+        },
+        {
+          "id": "liquid",
+          "sections": "ADVERSE EVENTS; Clinical Trials; Postmarketing Experience"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Antacids and iron",
+      "assertions": [
+        "Give cefdinir at least 2 hours before or after magnesium/aluminum antacids or iron supplements, including iron-containing multivitamins. These combinations reduce absorption. Iron-fortified infant formula does not significantly alter exposure in the reviewed suspension evidence and can be given with cefdinir; that exception does not apply to iron supplements or all highly fortified foods."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "Drug Interactions, Antacids; Iron Supplements; Information for Patients"
+        },
+        {
+          "id": "liquid",
+          "sections": "Drug Interactions, Antacids; Iron Supplements; Information for Patients"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Probenecid and other medication review",
+      "assertions": [
+        "Probenecid inhibits renal cefdinir excretion and increases/prolongs exposure. Review treatment necessity, organ function and adverse effects rather than invent a fixed cefdinir reduction for that combination. The label\u2019s possible postmarketing diclofenac interaction is a report of uncertain relationship, not a quantified universal dose algorithm."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "Drug Interactions, Probenecid; Postmarketing Experience"
+        },
+        {
+          "id": "liquid",
+          "sections": "Drug Interactions, Probenecid; Postmarketing Experience"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Stool and laboratory effects",
+      "assertions": [
+        "Cefdinir with iron can form a nonabsorbed complex producing reddish stools; this does not rule out true bleeding or antibiotic-associated colitis. Some urine ketone/glucose methods can be falsely positive, while glucose-oxidase methods are preferred for urine glucose in the label. Cephalosporins can occasionally produce a positive direct Coombs test; inform the testing team."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "Drug Interactions, Iron Supplements; Drug/Laboratory Test Interactions"
+        },
+        {
+          "id": "liquid",
+          "sections": "Drug Interactions, Iron Supplements; Drug/Laboratory Test Interactions"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": [
+        "The pediatric suspension regimen is for 6 months through 12 years; younger infants/neonates lack established safety/effectiveness. The adult/adolescent schedule starts at 13 years in the coherent comparator. Older patients need no age-only adjustment, but reduced renal clearance can require the 300 mg daily regimen. Consider frailty, adverse effects and the ability to measure suspension accurately."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "Pediatric Use; Geriatric Use; DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "liquid",
+          "sections": "Pediatric Use; Geriatric Use; DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "comparator",
+          "sections": "DOSAGE AND ADMINISTRATION, Adults and Adolescents (Age 13 Years and Older)"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic disease",
+      "assertions": [
+        "Cefdinir exposure and half-life increase as renal function declines; reduce at the specified threshold and reassess transient/unstable renal dysfunction. Hemodialysis removes substantial drug and has a separate schedule. Hepatic studies were not performed because the drug is minimally metabolized and chiefly renally cleared; the label does not expect a hepatic-only adjustment, which is not evidence that severe combined organ disease needs no assessment."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "Special Populations; Patients With Renal Insufficiency; Patients on Hemodialysis"
+        },
+        {
+          "id": "liquid",
+          "sections": "Special Populations; Patients With Renal Insufficiency; Patients on Hemodialysis"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and breastfeeding",
+      "assertions": [
+        "Adequate controlled pregnancy studies are lacking; use when clearly needed after weighing infection/treatment risks. Animal findings do not establish absence of human risk, and the retained old pregnancy letter category is not presented as current risk certainty. Cefdinir was not detected in milk after a single 600 mg dose in the label; this limited result does not establish zero repeated-dose infant exposure or a universally safe lactation regimen. Labor/delivery use was not studied."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "Pregnancy; Labor and Delivery; Nursing Mothers"
+        },
+        {
+          "id": "liquid",
+          "sections": "Pregnancy; Labor and Delivery; Nursing Mothers"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Diabetes and excipients",
+      "assertions": [
+        "Selected Lupin suspension contains 2.86 g sucrose per 5 mL; account for this in diabetes and the prescribed volume. Excipients vary by manufacturer, so verify the actual product for allergies and dietary concerns."
+      ],
+      "sources": [
+        {
+          "id": "liquid",
+          "sections": "DESCRIPTION; Information for Patients"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and resistance",
+      "assertions": [
+        "Cefdinir is a cephalosporin with bactericidal activity from inhibition of cell-wall synthesis. It withstands some beta-lactamases, but resistance can occur through other beta-lactamases, altered penicillin-binding proteins and reduced permeability. MRSA and most Pseudomonas/Enterococcus are outside its reliable label spectrum."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "Microbiology"
+        },
+        {
+          "id": "liquid",
+          "sections": "Microbiology"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Absorption and disposition",
+      "assertions": [
+        "Peak plasma levels occur about 2\u20134 hours after an oral dose. Capsule absolute bioavailability is about 21% at 300 mg and 16% at 600 mg; suspension averages 25%. Protein binding is 60\u201370%, appreciable metabolism does not occur, and normal-function elimination half-life averages 1.7 hours. Parent drug is predominantly renally cleared; the short usual half-life is not a reason to override validated infection-specific schedules."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "Absorption; Distribution; Metabolism and Excretion"
+        },
+        {
+          "id": "liquid",
+          "sections": "Absorption; Distribution; Metabolism and Excretion"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Food, formulations and kidney function",
+      "assertions": [
+        "A high-fat meal reduces exposure but the labels permit dosing without regard to meals based on clinical data. Selected 125/250 mg per 5 mL suspensions were bioequivalent under studied fasting conditions; suspension exposure relative to capsules is not identical in every PK measure. Hemodialysis removed about 63% in a 4-hour study, reinforcing the need for a specific dialysis plan rather than casual formulation/interval substitution."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "Absorption; Special Populations"
+        },
+        {
+          "id": "liquid",
+          "sections": "Absorption; Special Populations"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": [
+        "Before treatment, assess allergy history, infection severity, culture/susceptibility information when available, renal function and interacting cation products. Follow response, diarrhea, rash and superinfection; repeat renal assessment when kidney function may change. The selected labels do not mandate one universal routine lab panel for every short uncomplicated course."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "INDICATIONS; WARNINGS; PRECAUTIONS; Information for Patients"
+        },
+        {
+          "id": "liquid",
+          "sections": "INDICATIONS; WARNINGS; PRECAUTIONS; Information for Patients"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling",
+      "assertions": [
+        "Take exactly as prescribed, including frequency and duration; do not share leftovers or use for viral colds. Discuss cation spacing and possible iron-related red stool. Seek prompt care for watery/bloody diarrhea even after completion, and immediate care for breathing difficulty, swelling or serious skin reactions. Do not self-assume red stool is harmless when accompanied by illness or bleeding concern."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "Information for Patients; WARNINGS; Drug Interactions; ADVERSE EVENTS"
+        },
+        {
+          "id": "liquid",
+          "sections": "Information for Patients; WARNINGS; Drug Interactions; ADVERSE EVENTS"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Suspension and follow-up",
+      "assertions": [
+        "Check both strength and prescribed mL, shake well, and use a calibrated oral syringe. Keep the reconstitution date/discard date visible; selected suspension expires 10 days after mixing. If doses are missed, the bottle is insufficient or symptoms worsen/fail to improve, contact the prescribing team for an individualized plan rather than doubling or extending treatment independently."
+      ],
+      "sources": [
+        {
+          "id": "liquid",
+          "sections": "DOSAGE AND ADMINISTRATION; HOW SUPPLIED; Information for Patients"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Lupin 300 mg capsule has a blue cap marked LUPIN and purple body marked CEFDINIR; 60 capsules are NDC 68180-711-60. Selected Lupin 250 mg/5 mL suspension 100 mL bottle is NDC 68180-723-05 and is strawberry-flavored/off-white to cream after mixing. Verify manufacturer and actual package; appearance alone is insufficient."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "liquid",
+          "sections": "HOW SUPPLIED"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Selected capsules contain 300 mg cefdinir; selected powder yields 125 mg/5 mL or 250 mg/5 mL oral suspension in 60 or 100 mL final bottles. It is a single-ingredient oral antibacterial, not an IV product. Capsule adult and liquid pediatric labels provide complementary instructions; do not infer an injectable dose."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "DESCRIPTION; HOW SUPPLIED; DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "liquid",
+          "sections": "DESCRIPTION; HOW SUPPLIED; DOSAGE AND ADMINISTRATION"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Store selected capsules and dry/reconstituted suspension at 20\u201325\u00b0C. Keep suspension tightly closed, shake before use, and discard unused liquid 10 days after preparation. Inspect the actual dispensed product\u2019s instructions for handling; do not apply a different manufacturer\u2019s refrigeration or reconstitution rule."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "liquid",
+          "sections": "DOSAGE AND ADMINISTRATION, mixing; HOW SUPPLIED"
+        }
+      ]
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Adults and adolescents",
+      "assertions": [
+        "Selected mild/moderate indications include community-acquired pneumonia, acute bacterial exacerbation of chronic bronchitis, acute maxillary sinusitis, streptococcal pharyngitis/tonsillitis and uncomplicated skin/skin-structure infections. Relevant organisms include susceptible H. influenzae/H. parainfluenzae, M. catarrhalis, penicillin-susceptible S. pneumoniae, S. pyogenes and methicillin-susceptible S. aureus according to the indication. Do not generalize each organism to every infection."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "INDICATIONS AND USAGE; Microbiology"
+        },
+        {
+          "id": "liquid",
+          "sections": "INDICATIONS AND USAGE; Microbiology"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Children and evidence limits",
+      "assertions": [
+        "Pediatric uses from age 6 months include acute bacterial otitis media, acute maxillary sinusitis, S. pyogenes pharyngitis/tonsillitis and uncomplicated susceptible skin infections. Pediatric sinusitis approval is supported by adult evidence and pediatric PK; neonatal/younger-infant safety/effectiveness are not established. Cefdinir eradicates pharyngeal S. pyogenes, but prevention of rheumatic fever has not been studied."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "INDICATIONS AND USAGE; Pediatric Use"
+        },
+        {
+          "id": "liquid",
+          "sections": "INDICATIONS AND USAGE; Pediatric Use"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Spectrum and stewardship",
+      "assertions": [
+        "Use for proven or strongly suspected susceptible bacterial infection and reassess available cultures/local resistance. It does not treat viral colds. Most Pseudomonas, Enterococcus, Enterobacter, MRSA and penicillin-resistant streptococcal strains are not covered. In-vitro activity against some urinary organisms does not establish a UTI approval, and human CSF penetration is unstudied; no UTI or meningitis regimen is supplied."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "Microbiology; Distribution; INDICATIONS; Information for Patients"
+        },
+        {
+          "id": "liquid",
+          "sections": "Microbiology; Distribution; INDICATIONS; Information for Patients"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Adult and adolescent schedules",
+      "assertions": [
+        "Usual total is 600 mg/day for adults/adolescents age 13 and older with normal renal function. The schedules below are from the coherent current comparator; the selected Lupin adult table shifts some infection names onto alternative-dose rows, while its prose explicitly requires twice-daily dosing for pneumonia/skin infection. Both sources are retained rather than propagate a once-daily skin regimen. Doses may be taken without regard to meals."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "comparator",
+          "sections": "DOSAGE AND ADMINISTRATION, adult/adolescent table"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Adult/adolescent indication",
+          "Oral dose and label duration"
+        ],
+        "rows": [
+          [
+            "Community-acquired pneumonia",
+            "300 mg every 12 hours for 10 days"
+          ],
+          [
+            "Acute exacerbation of chronic bronchitis",
+            "300 mg every 12 hours for 5\u201310 days OR 600 mg every 24 hours for 10 days"
+          ],
+          [
+            "Acute maxillary sinusitis",
+            "300 mg every 12 hours OR 600 mg every 24 hours, each for 10 days"
+          ],
+          [
+            "Pharyngitis/tonsillitis",
+            "300 mg every 12 hours for 5\u201310 days OR 600 mg every 24 hours for 10 days"
+          ],
+          [
+            "Uncomplicated skin/skin-structure infection",
+            "300 mg every 12 hours for 10 days"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric schedules",
+      "assertions": [
+        "For ages 6 months through 12 years with normal renal function, usual total is 14 mg/kg/day, maximum 600 mg/day. Twice-daily means 7 mg/kg PERDOSE every 12 hours; once-daily means 14 mg/kg PERDOSE every 24 hours. Children \u2265 43 kg receive the 600 mg/day ceiling. Select frequency/duration by indication, not a universal interchangeable course."
+      ],
+      "sources": [
+        {
+          "id": "liquid",
+          "sections": "DOSAGE AND ADMINISTRATION, pediatric table"
+        },
+        {
+          "id": "comparator",
+          "sections": "DOSAGE AND ADMINISTRATION"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Pediatric indication",
+          "Per-dose regimen and label duration"
+        ],
+        "rows": [
+          [
+            "Acute bacterial otitis media",
+            "7 mg/kg every 12 hours for 5\u201310 days OR 14 mg/kg every 24 hours for 10 days"
+          ],
+          [
+            "Acute maxillary sinusitis",
+            "7 mg/kg every 12 hours OR 14 mg/kg every 24 hours, each for 10 days"
+          ],
+          [
+            "Pharyngitis/tonsillitis",
+            "7 mg/kg every 12 hours for 5\u201310 days OR 14 mg/kg every 24 hours for 10 days"
+          ],
+          [
+            "Uncomplicated skin infection",
+            "7 mg/kg every 12 hours for 10 days; no once-daily regimen"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Renal impairment and hemodialysis",
+      "assertions": [
+        "At adult CrCl < 30 mL/min, dose 300 mg once daily. At pediatric estimated clearance < 30 mL/min/1.73 m\u00b2, dose 7 mg/kg once daily, maximum 300 mg. Chronic hemodialysis labeling starts 300 mg or 7 mg/kg every other day, gives 300 mg or 7 mg/kg at the end of each session, then resumes every-other-day dosing. Dialysis timing must be coordinated with the prescriber/pharmacist; do not add unscheduled doses to an unchanged routine regimen. The pediatric renal value is indexed, unlike the adult CrCl threshold."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "Patients With Renal Insufficiency; Patients on Hemodialysis"
+        },
+        {
+          "id": "liquid",
+          "sections": "Patients With Renal Insufficiency; Patients on Hemodialysis"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Suspension concentration and preparation",
+      "assertions": [
+        "125 mg/5 mL is 25 mg/mL; 250 mg/5 mL is 50 mg/mL. Calculate the prescribed mg first, then measure the correct mL with an oral syringe; stronger suspension requires half the volume for the same mg. For either selected concentration, pharmacy reconstitution uses 38 mL water for a 60 mL final bottle or 61 mL for 100 mL, added in two portions with shaking after each. Shake before every administration; never use a kitchen spoon or another manufacturer\u2019s water instructions."
+      ],
+      "sources": [
+        {
+          "id": "liquid",
+          "sections": "DESCRIPTION; DOSAGE AND ADMINISTRATION, mixing; HOW SUPPLIED"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Review prior cephalosporin, penicillin and other drug reactions before treatment. Stop and urgently treat suspected anaphylaxis or serious allergic/skin reactions. The label\u2019s historical numerical beta-lactam cross-allergy estimate is not used here as an individualized probability; assess the actual reaction history.",
+        "C. difficile-associated diarrhea can range from mild illness to fatal colitis and can appear more than 2 months after antibiotics. Seek prompt assessment for severe, watery or bloody diarrhea, cramps or fever; alternative treatment/discontinuation decisions require clinical evaluation. Use caution with colitis history, and monitor prolonged treatment for superinfection. Renal impairment requires dose reduction; cephalosporin-associated seizures are particularly concerning when accumulated doses are not reduced."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "WARNINGS; PRECAUTIONS, General; Cephalosporin Class Adverse Events"
+        },
+        {
+          "id": "liquid",
+          "sections": "WARNINGS; PRECAUTIONS, General; Cephalosporin Class Adverse Events"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "Known allergy to the cephalosporin antibiotic class is a formal contraindication. Penicillin allergy is addressed as a cross-hypersensitivity precaution in these labels, requiring clinical evaluation rather than assuming all reported allergies are equivalent."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "CONTRAINDICATIONS; WARNINGS"
+        },
+        {
+          "id": "liquid",
+          "sections": "CONTRAINDICATIONS; WARNINGS"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "The selected current cefdinir labels do not contain a boxed warning. The prominent capitalized allergy warning and C. difficile warning remain important precautions even without a formal box."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "Full label; WARNINGS"
+        },
+        {
+          "id": "liquid",
+          "sections": "Full label; WARNINGS"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Common adult effects include diarrhea, nausea, headache, abdominal symptoms and vaginal candidiasis. Children commonly experience diarrhea, rash and vomiting; diarrhea/diaper rash are more frequent in younger children. Postmarketing reports include severe allergic/skin reactions, blood-cell disorders, hepatic injury and renal failure; these reports do not define a reliable incidence or prove causality for every listed event."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "ADVERSE EVENTS; Clinical Trials; Postmarketing Experience"
+        },
+        {
+          "id": "liquid",
+          "sections": "ADVERSE EVENTS; Clinical Trials; Postmarketing Experience"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Antacids and iron",
+      "assertions": [
+        "Give cefdinir at least 2 hours before or after magnesium/aluminum antacids or iron supplements, including iron-containing multivitamins. These combinations reduce absorption. Iron-fortified infant formula does not significantly alter exposure in the reviewed suspension evidence and can be given with cefdinir; that exception does not apply to iron supplements or all highly fortified foods."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "Drug Interactions, Antacids; Iron Supplements; Information for Patients"
+        },
+        {
+          "id": "liquid",
+          "sections": "Drug Interactions, Antacids; Iron Supplements; Information for Patients"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Probenecid and other medication review",
+      "assertions": [
+        "Probenecid inhibits renal cefdinir excretion and increases/prolongs exposure. Review treatment necessity, organ function and adverse effects rather than invent a fixed cefdinir reduction for that combination. The label\u2019s possible postmarketing diclofenac interaction is a report of uncertain relationship, not a quantified universal dose algorithm."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "Drug Interactions, Probenecid; Postmarketing Experience"
+        },
+        {
+          "id": "liquid",
+          "sections": "Drug Interactions, Probenecid; Postmarketing Experience"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Stool and laboratory effects",
+      "assertions": [
+        "Cefdinir with iron can form a nonabsorbed complex producing reddish stools; this does not rule out true bleeding or antibiotic-associated colitis. Some urine ketone/glucose methods can be falsely positive, while glucose-oxidase methods are preferred for urine glucose in the label. Cephalosporins can occasionally produce a positive direct Coombs test; inform the testing team."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "Drug Interactions, Iron Supplements; Drug/Laboratory Test Interactions"
+        },
+        {
+          "id": "liquid",
+          "sections": "Drug Interactions, Iron Supplements; Drug/Laboratory Test Interactions"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": [
+        "The pediatric suspension regimen is for 6 months through 12 years; younger infants/neonates lack established safety/effectiveness. The adult/adolescent schedule starts at 13 years in the coherent comparator. Older patients need no age-only adjustment, but reduced renal clearance can require the 300 mg daily regimen. Consider frailty, adverse effects and the ability to measure suspension accurately."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "Pediatric Use; Geriatric Use; DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "liquid",
+          "sections": "Pediatric Use; Geriatric Use; DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "comparator",
+          "sections": "DOSAGE AND ADMINISTRATION, Adults and Adolescents (Age 13 Years and Older)"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic disease",
+      "assertions": [
+        "Cefdinir exposure and half-life increase as renal function declines; reduce at the specified threshold and reassess transient/unstable renal dysfunction. Hemodialysis removes substantial drug and has a separate schedule. Hepatic studies were not performed because the drug is minimally metabolized and chiefly renally cleared; the label does not expect a hepatic-only adjustment, which is not evidence that severe combined organ disease needs no assessment."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "Special Populations; Patients With Renal Insufficiency; Patients on Hemodialysis"
+        },
+        {
+          "id": "liquid",
+          "sections": "Special Populations; Patients With Renal Insufficiency; Patients on Hemodialysis"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and breastfeeding",
+      "assertions": [
+        "Adequate controlled pregnancy studies are lacking; use when clearly needed after weighing infection/treatment risks. Animal findings do not establish absence of human risk, and the retained old pregnancy letter category is not presented as current risk certainty. Cefdinir was not detected in milk after a single 600 mg dose in the label; this limited result does not establish zero repeated-dose infant exposure or a universally safe lactation regimen. Labor/delivery use was not studied."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "Pregnancy; Labor and Delivery; Nursing Mothers"
+        },
+        {
+          "id": "liquid",
+          "sections": "Pregnancy; Labor and Delivery; Nursing Mothers"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Diabetes and excipients",
+      "assertions": [
+        "Selected Lupin suspension contains 2.86 g sucrose per 5 mL; account for this in diabetes and the prescribed volume. Excipients vary by manufacturer, so verify the actual product for allergies and dietary concerns."
+      ],
+      "sources": [
+        {
+          "id": "liquid",
+          "sections": "DESCRIPTION; Information for Patients"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and resistance",
+      "assertions": [
+        "Cefdinir is a cephalosporin with bactericidal activity from inhibition of cell-wall synthesis. It withstands some beta-lactamases, but resistance can occur through other beta-lactamases, altered penicillin-binding proteins and reduced permeability. MRSA and most Pseudomonas/Enterococcus are outside its reliable label spectrum."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "Microbiology"
+        },
+        {
+          "id": "liquid",
+          "sections": "Microbiology"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Absorption and disposition",
+      "assertions": [
+        "Peak plasma levels occur about 2\u20134 hours after an oral dose. Capsule absolute bioavailability is about 21% at 300 mg and 16% at 600 mg; suspension averages 25%. Protein binding is 60\u201370%, appreciable metabolism does not occur, and normal-function elimination half-life averages 1.7 hours. Parent drug is predominantly renally cleared; the short usual half-life is not a reason to override validated infection-specific schedules."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "Absorption; Distribution; Metabolism and Excretion"
+        },
+        {
+          "id": "liquid",
+          "sections": "Absorption; Distribution; Metabolism and Excretion"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Food, formulations and kidney function",
+      "assertions": [
+        "A high-fat meal reduces exposure but the labels permit dosing without regard to meals based on clinical data. Selected 125/250 mg per 5 mL suspensions were bioequivalent under studied fasting conditions; suspension exposure relative to capsules is not identical in every PK measure. Hemodialysis removed about 63% in a 4-hour study, reinforcing the need for a specific dialysis plan rather than casual formulation/interval substitution."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "Absorption; Special Populations"
+        },
+        {
+          "id": "liquid",
+          "sections": "Absorption; Special Populations"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": [
+        "Before treatment, assess allergy history, infection severity, culture/susceptibility information when available, renal function and interacting cation products. Follow response, diarrhea, rash and superinfection; repeat renal assessment when kidney function may change. The selected labels do not mandate one universal routine lab panel for every short uncomplicated course."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "INDICATIONS; WARNINGS; PRECAUTIONS; Information for Patients"
+        },
+        {
+          "id": "liquid",
+          "sections": "INDICATIONS; WARNINGS; PRECAUTIONS; Information for Patients"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling",
+      "assertions": [
+        "Take exactly as prescribed, including frequency and duration; do not share leftovers or use for viral colds. Discuss cation spacing and possible iron-related red stool. Seek prompt care for watery/bloody diarrhea even after completion, and immediate care for breathing difficulty, swelling or serious skin reactions. Do not self-assume red stool is harmless when accompanied by illness or bleeding concern."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "Information for Patients; WARNINGS; Drug Interactions; ADVERSE EVENTS"
+        },
+        {
+          "id": "liquid",
+          "sections": "Information for Patients; WARNINGS; Drug Interactions; ADVERSE EVENTS"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Suspension and follow-up",
+      "assertions": [
+        "Check both strength and prescribed mL, shake well, and use a calibrated oral syringe. Keep the reconstitution date/discard date visible; selected suspension expires 10 days after mixing. If doses are missed, the bottle is insufficient or symptoms worsen/fail to improve, contact the prescribing team for an individualized plan rather than doubling or extending treatment independently."
+      ],
+      "sources": [
+        {
+          "id": "liquid",
+          "sections": "DOSAGE AND ADMINISTRATION; HOW SUPPLIED; Information for Patients"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Lupin 300 mg capsule has a blue cap marked LUPIN and purple body marked CEFDINIR; 60 capsules are NDC 68180-711-60. Selected Lupin 250 mg/5 mL suspension 100 mL bottle is NDC 68180-723-05 and is strawberry-flavored/off-white to cream after mixing. Verify manufacturer and actual package; appearance alone is insufficient."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "liquid",
+          "sections": "HOW SUPPLIED"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Selected capsules contain 300 mg cefdinir; selected powder yields 125 mg/5 mL or 250 mg/5 mL oral suspension in 60 or 100 mL final bottles. It is a single-ingredient oral antibacterial, not an IV product. Capsule adult and liquid pediatric labels provide complementary instructions; do not infer an injectable dose."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "DESCRIPTION; HOW SUPPLIED; DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "liquid",
+          "sections": "DESCRIPTION; HOW SUPPLIED; DOSAGE AND ADMINISTRATION"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Store selected capsules and dry/reconstituted suspension at 20\u201325\u00b0C. Keep suspension tightly closed, shake before use, and discard unused liquid 10 days after preparation. Inspect the actual dispensed product\u2019s instructions for handling; do not apply a different manufacturer\u2019s refrigeration or reconstitution rule."
+      ],
+      "sources": [
+        {
+          "id": "capsule",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "liquid",
+          "sections": "DOSAGE AND ADMINISTRATION, mixing; HOW SUPPLIED"
+        }
+      ]
+    }
+  ],
+  "hero_assertions": {
+    "essential": {
+      "title": "Allergy and severe diarrhea require action",
+      "text": "Known cephalosporin allergy contraindicates treatment. Seek prompt care for watery/bloody diarrhea even after therapy, and verify renal dosing plus iron/antacid spacing.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "facts": [
+      [
+        "Class",
+        "Oral cephalosporin antibacterial"
+      ],
+      [
+        "Usual daily ceiling",
+        "Adult 600 mg; pediatric 14 mg/kg up to 600 mg"
+      ],
+      [
+        "Key interaction",
+        "Separate iron/Mg\u2013Al antacids by 2 hours"
+      ]
+    ],
+    "sources": [
+      "capsule",
+      "liquid",
+      "comparator"
+    ]
+  },
+  "section_assertions": [
+    {
+      "section": "indications",
+      "summary": "Cefdinir is a prescription oral cephalosporin for selected susceptible bacterial infections.",
+      "takeaway": "Approved indication does not establish universal first-line treatment.",
+      "sources": [
+        "capsule",
+        "liquid"
+      ]
+    },
+    {
+      "section": "dosage",
+      "summary": "Usual total dosing differs by age, infection and renal function.",
+      "takeaway": "Once-daily dosing is not labeled for pneumonia or skin infection.",
+      "sources": [
+        "capsule",
+        "comparator",
+        "liquid"
+      ]
+    },
+    {
+      "section": "safety",
+      "summary": "Hypersensitivity, antibiotic-associated diarrhea and renal accumulation are key risks.",
+      "takeaway": "Do not dismiss watery/bloody diarrhea because antibiotic treatment has already ended.",
+      "sources": [
+        "capsule",
+        "liquid"
+      ]
+    },
+    {
+      "section": "interactions",
+      "summary": "Polyvalent-cation products reduce absorption, and renal-excretion inhibitors increase exposure.",
+      "takeaway": "Separate iron supplements and magnesium/aluminum antacids from cefdinir.",
+      "sources": [
+        "capsule",
+        "liquid"
+      ]
+    },
+    {
+      "section": "populations",
+      "summary": "Renal function determines dose reduction; pediatric approval begins at 6 months.",
+      "takeaway": "No age-only adjustment substitutes for renal assessment.",
+      "sources": [
+        "capsule",
+        "comparator",
+        "liquid"
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "summary": "Cefdinir inhibits bacterial cell-wall synthesis and is eliminated mainly by the kidneys.",
+      "takeaway": "Its spectrum and PK do not support treating all resistant or invasive infections.",
+      "sources": [
+        "capsule",
+        "liquid"
+      ]
+    },
+    {
+      "section": "practice",
+      "summary": "Verify the bacterial indication, allergy history, renal function and administration plan.",
+      "takeaway": "Use the prescribed course and reassess clinical failure or serious adverse effects.",
+      "sources": [
+        "capsule",
+        "liquid"
+      ]
+    },
+    {
+      "section": "product",
+      "summary": "The reviewed products are oral capsules and reconstituted suspension.",
+      "takeaway": "Color, concentration and water volume are manufacturer-specific.",
+      "sources": [
+        "capsule",
+        "liquid"
+      ]
+    }
+  ],
+  "limitations": [
+    "Current Lupin adult dose-table infection labels shift onto alternative-dose rows, inconsistent with its clear no-once-daily pneumonia/skin prose. Coherent current Teva/AvKARE table confirms the published regimens; malformed skin once-daily mapping is not propagated.",
+    "Historical label beta-lactam cross-allergy estimate and pregnancy category are not presented as current individualized probabilities/certainty.",
+    "Label approval does not establish first-line priority for every infection; local stewardship/guideline selection requires clinician assessment. No unverified UTI/meningitis regimen or paywalled guideline access asserted."
+  ],
+  "unresolved_source_questions": [
+    {
+      "issue": "Selected Lupin adult-dose table has shifted infection row labels.",
+      "published_resolution": "Current official Teva/AvKARE coherent table and explicit no-once-daily pneumonia/skin prose support all published doses; malformed skin alternative is excluded.",
+      "material_published_error": false
+    }
+  ],
+  "validation": {
+    "schema": "Actual validateMonograph result: []; APAP eight sections/order, four Safety core cards, three Product cards, three hero tuple arrays.",
+    "tests_build_lint": "Parent batch checks required",
+    "rendered_page": "Parent batch QA required"
+  },
+  "monograph_sha256": "df7ae9e88c33a6446ac1e5441747667b3849f5ae86ebabf762ed0ac62f1e5921",
+  "source_archive": {
+    "directory": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-17-thyroid-metformin",
+    "checked": "2026-10-01",
+    "verified": "Selected full SPL XML/parsed sections, DailyMed metadata pages and full public National Academies chapter HTML/text copied with exact SHA256 verification. NIH file records access provenance only, not a full-page snapshot. Existing divergent files preserved."
+  }
+}

@@ -1,0 +1,719 @@
+{
+  "reviewDate": "2026-10-01",
+  "scope": "Independent targeted critical-assertion primary-source review. Only enumerated assertions independently verified; not exhaustive second clinical signoff, browser QA or build verification.",
+  "status": "completed",
+  "profiles": [
+    {
+      "drug": "memantine",
+      "fileSha256": "f1d0d3d510eaacdb4f853cd0c7bfa16315a10fc2e12acd0712be487c7e8821f4",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "IR5mgonce→5BID→5plus10separate→10BID,5mg TOTAL increments≥weekly; CGCrCl5–29target5BID notnormal20mgday. Hypersensitivityformalcontra, urinealkalinization reduceselimination and severehepaticcaution.",
+          "sourceId": "ir",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b4a0162-9cb4-4ba6-8c02-95c2955734ae",
+          "sourceSection": "Sections2,4–5,7–8",
+          "access": "retained-full-primary-SPL-XML-and-extracted-sections-read; matching public DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "2mg/mLsolutionstart2.5mL daily→2.5BID→2.5and5→5BID; suppliedsyringe/adapter, nootherliquidmix; several missed daysmayneedlowerdose retitration, no double.",
+          "sourceId": "solution",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4076d3ef-d0a9-96c5-1a15-812c1e42929c",
+          "sourceSection": "Section2",
+          "access": "retained-full-primary-SPL-XML-and-extracted-sections-read; matching public DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "XR7mgdaily7mgincrements≥weeklymax28, CGCrCl5–29max14; IR10BID→XR28nextday orsevererenal5BID→XR14nextday, comparativeefficacyunstudied/notmgformg. WholeorENTIREapplesaucebeads no chew/divide/crush; interruptionmayneedretitration.",
+          "sourceId": "xr",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=24290655-47f3-4042-a977-a832c5161d2c",
+          "sourceSection": "Sections2.1–2.3",
+          "access": "retained-full-primary-SPL-XML-and-extracted-sections-read; matching public DailyMed page opened",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "memantine-ir": {
+          "path": "/tmp/nas-drug-sources/memantine-ir.xml",
+          "sha256": "5301eaf0865486f363c8a669c95a4bc7654edc8941f361bd8ab53ad97b53e90f"
+        },
+        "memantine-liquid": {
+          "path": "/tmp/nas-drug-sources/memantine-liquid.xml",
+          "sha256": "d10db48d24a7a9ced810d76eccc6ce0485bcb831e863643999b798ec9d73e9a4"
+        },
+        "memantine-xr": {
+          "path": "/tmp/nas-drug-sources/memantine-xr.xml",
+          "sha256": "a291bd59eff077430c7377a0bad4b39f5f8cd45cef1f38bf37d9a2ac232a4bb0"
+        }
+      }
+    },
+    {
+      "drug": "ethinyl-estradiol-etonogestrel",
+      "fileSha256": "3ea5e7707f4425607d4d36be8a19bbdf63c6ce7dcbee75eb97a3116109651aea",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Singlevaginalring21continuousdays then7daybreak/newring evenbleeding. Menstrualday1nobackup/day2–5sevenbackup; progestin-onlyswitches7backup; firsttrimesterwithin5daysnobackup separatefrompostpartum.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=55eb60e3-6f4d-40a3-8ee6-e7fd2d0c7d97",
+          "sourceSection": "Sections2.1–2.2",
+          "access": "retained-full-primary-SPL-XML-and-extracted-sections-read; matching public DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Expulsion<3hours rinse/reinsert;>3continuousweeks1–2reinsert7daybackup,week3discard/newimmediate orwithin7daysexpulsiononlyifprior7continuousdays/either7backup. Unknownintervalpregtest;ringleft3–4weeksoneweekbreak/>4weeksruleoutpregand7backup.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=55eb60e3-6f4d-40a3-8ee6-e7fd2d0c7d97",
+          "sourceSection": "Section2.3",
+          "access": "retained-full-primary-SPL-XML-and-extracted-sections-read; matching public DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Boxsmokingover35; formal highvascularrisk/aura/anymigraineover35,liverdisease/tumor,unexplainedbleeding,pregnancy,breastcancer,hypersensandselectedHCVdrugcontra. Surgery4weeksbeforethrough2after; labelnonbreastfeedingpostpartum≥4weeks andlactationnotrecommended distinctfromCDC.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=55eb60e3-6f4d-40a3-8ee6-e7fd2d0c7d97",
+          "sourceSection": "Box;Sections4–5,8",
+          "access": "retained-full-primary-SPL-XML-and-extracted-sections-read; matching public DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Current2024guidance initiationanytimereasonablynotpregnant/backup7if>5daysbleeding; breastfeeding>42daysgenerallyMEC2, notoverrideproductlabelnorhybridmissedringalgorithm.",
+          "sourceId": "cdc",
+          "sourceUrl": "https://www.cdc.gov/contraception/hcp/usspr/combined-hormonal-contraceptives.html",
+          "sourceSection": "Initiation;Postpartum breastfeeding",
+          "access": "direct-full-public-primary-CDC-guidance-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning: smoking and cardiovascular events",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "nuvaring": {
+          "path": "/tmp/nas-drug-sources/nuvaring.xml",
+          "sha256": "6daa6ee202cd991ef448830b21c479d8d032997509a801751944ce183668fe7c"
+        }
+      }
+    },
+    {
+      "drug": "nortriptyline",
+      "fileSha256": "07f501988149d363850aa953ecaf0892a1e0b2aa2038eaecdd9dd1c1c13e9ddd",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Adult25mgTID/QID usual butstartlow/titrate; same totalmayqd; above100mg/daymonitor50–150ng/mL; above150notrecommended. Elderly/adolescent30–50/daydivorqd historical adolescentdose does notestablishpediatricapproval.",
+          "sourceId": "nortripsun",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aee2c1a1-d848-4c3b-8c6d-8a4f6ce94c28",
+          "sourceSection": "Dosage;PediatricUse",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current capsule/oral-timolol DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Solution10mgBASE/5mL and4%alcohol, notsaltstrength conversion; systemicdose/concentration ranges matchcapsule.",
+          "sourceId": "nortripsol",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fcabf90-357a-4a06-b680-9572dc28bcfe",
+          "sourceSection": "Description;Dosage",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current capsule/oral-timolol DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "PsychMAOIbidir≥14daywashout; linez/IVMBnostart formalcontra. Urgentunavoidable clinicianusepromptstopnortripmonitor2wkor24hafterlastMAOIwhicheverfirst/resume≥24hafter. AcutepostMIrecoverycontra; dibenzazepinecrosssensitivitywarning distinctBrugadagenerallyavoidwarning.",
+          "sourceId": "nortripsun",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aee2c1a1-d848-4c3b-8c6d-8a4f6ce94c28",
+          "sourceSection": "Contraindications;DosageMAOI",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current capsule/oral-timolol DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Antidepressant suicidalitybox/pediatricunapproved/no universal numericrenalhepaticadjust/tapercourse; concentration/toxicityclinicallyindividualized.",
+          "sourceId": "nortripsun",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aee2c1a1-d848-4c3b-8c6d-8a4f6ce94c28",
+          "sourceSection": "Box;PediatricUse;Dosage",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current capsule/oral-timolol DailyMed page opened",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "nortripsun": {
+          "path": "/tmp/nas-drug-sources/nortripsun.xml",
+          "sha256": "f3b2a06a0ba3a0c1d159dbd6ba3010268e0f43dda64c895229556a4784203373"
+        },
+        "nortripsol": {
+          "path": "/tmp/nas-drug-sources/nortripsol.xml",
+          "sha256": "a28ecef18b74590a26944835c776c17a04f86c41bf9fb881eac257c1d3e4f69b"
+        }
+      }
+    },
+    {
+      "drug": "timolol",
+      "fileSha256": "a021ab2c50097800069fd0b29a1deddec6aa553caad1cc13154f036f2dd47e92",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Regularocular0.25%one dropBID→0.5BIDifinadequate/controlledmayqd withtime-of-dayIOPchecks/reassess~4weeks; doses>0.5oneBIDnoadditionalreduction; age≥2pediatricestablished.",
+          "sourceId": "timolregular",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2ed21930-1e05-46de-8acd-cb6f4798a7fa",
+          "sourceSection": "Dosage;PediatricUse",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current capsule/oral-timolol DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Ocudosepreservativefree0.25oneBID→0.5BID/controlledqd; useunitimmediatelyone/botheyesdiscardALLremainderimmediately.",
+          "sourceId": "timolocudose",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=16323b0e-78ae-40e5-be93-04f698dd672b",
+          "sourceSection": "Dosage",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current capsule/oral-timolol DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Gel-forming0.25or0.5oneqd/above0.5oneqdunstudied; invertandSHAKEONCE, otherdrops≥10minBEFORE; selectedlabelpediatric≥2.",
+          "sourceId": "timolgfs",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=272bb565-f099-4896-b2f6-48ab9180e941",
+          "sourceSection": "Dosage;PediatricUse",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current capsule/oral-timolol DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "HemihydrateBetimol0.25oneBID→0.5BID/controlledmayqd; pediatricunestablished notborrowedotherproducts.",
+          "sourceId": "betimol",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ae775f4-340c-4bf4-aa49-8a31daba0f8b",
+          "sourceSection": "Dosage;PediatricUse",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current capsule/oral-timolol DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Istalol0.5onedropAMqd/otherocular≥5minapart; pediatricunestablished.",
+          "sourceId": "istalol",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=258bbc8d-00ee-45b0-ac35-6f16c4e8d45f",
+          "sourceSection": "Sections2,8.4",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current capsule/oral-timolol DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "HTN10BIDusual20–40total/daymax60twodiv≥7daysbetweenincreases; stablepostMI10BID; migraine10BIDstartmaintenance20mayqd/10qdorupto30div, discontinueifmaxdosefails6–8wk. Chronicwithdrawaltaper1–2weeksclinicallymonitor.",
+          "sourceId": "timolrisingoral",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0bc40b2c-65eb-4095-87e6-4752d5b19a3a",
+          "sourceSection": "Dosage;Warnings",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current capsule/oral-timolol DailyMed page opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "FormalasthmaorHISTORY/severeCOPD/sinusbrady/2nd3rdAVblock/overtfailure/shock/hypersenscontra; systemicocularabsorptionpreservesmajorrisks; no fixed numericrenalhepadjust and oraldialysisstudydoesnotreadilyremove.",
+          "sourceId": "timolrisingoral",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0bc40b2c-65eb-4095-87e6-4752d5b19a3a",
+          "sourceSection": "Contraindications;Precautions;Pharmacokinetics",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current capsule/oral-timolol DailyMed page opened",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "timolregular": {
+          "path": "/tmp/nas-drug-sources/timolregular.xml",
+          "sha256": "ff60b17950a2f89a6570f55b705c3f5bc2201ca48a838373ec9db825959c820d"
+        },
+        "timolocudose": {
+          "path": "/tmp/nas-drug-sources/timolocudose.xml",
+          "sha256": "172a06b4b5a4067e67a822a4541088a1e32a7c9f27459d382d6f3314700ad158"
+        },
+        "timolgfs": {
+          "path": "/tmp/nas-drug-sources/timolgfs.xml",
+          "sha256": "26e74e13f1d44545310475ab71e0794c51466b8a1b0fc88a23e525933a3187fb"
+        },
+        "betimol": {
+          "path": "/tmp/nas-drug-sources/betimol.xml",
+          "sha256": "18f75ef3522ba8a21052de6fa7071056ebb891a6f9b7819358726aacab59da85"
+        },
+        "istalol": {
+          "path": "/tmp/nas-drug-sources/istalol.xml",
+          "sha256": "c366b36f93c0f91c6090f8f0abdca3e1169c6636a42ffd6fa9e1c08447c4ed24"
+        },
+        "timolrisingoral": {
+          "path": "/tmp/nas-drug-sources/timolrisingoral.xml",
+          "sha256": "e957b922622ef9a178d69a49a1332343dfb4ce07b51bbb1852cd61cd8b87171c"
+        }
+      }
+    },
+    {
+      "drug": "diazepam",
+      "fileSha256": "380264fb87dc1cf03b8fa56d54a46580c21cb3b32ac0ac81392fe276964f258f",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Selectedadultstatus5–10mgIVpreferred mayrepeat10–15minmax30cumulative/later2–4hresidualcaution; pediatric3months–17first0.2mg/kgmax8over1min→5minlater0.1max4over1min. OtherIV≥1minper5mg/nosmallvein/noartery/extravasation/no mixordilute; deepIM; resuscitationavailable.",
+          "sourceId": "iv",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e7dd743-a87b-4ab3-b6ae-f116cd0c8b0f",
+          "sourceSection": "Dosage and Administration",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current nasal-diazepam/IR-lithium DailyMed directly opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Currentclusterrescue≥2: ages2–5weights6–11→5/12–22→10/23–33→15mg NO≥34kgrow;6–11weights10–18→5/19–37→10/38–55→15/56–74→20;≥12weights14–27→5/28–50→10/51–75→15/≥76→20. Two7.5devices15/two10devices20 ONEdose,oneeachnostril.",
+          "sourceId": "nasal",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1a8bcc90-68fa-474d-832c-0df01e825f39",
+          "sourceSection": "Sections1,2.2Table2",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current nasal-diazepam/IR-lithium DailyMed directly opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Secondprescribed≥4hnewpack/max2dosesepisode/atmostoneepisode5days5permonth; neverprime/no secondwithconcerningbreathing/assistedbreathing/excesssedation. Hypersensitivity/acutenarrowglaucomaformalcontra; opioidabusewithdrawalbox.",
+          "sourceId": "nasal",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1a8bcc90-68fa-474d-832c-0df01e825f39",
+          "sourceSection": "Sections2.2–2.3,4;Box",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current nasal-diazepam/IR-lithium DailyMed directly opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Secondrectaldoseifprescribed4–12h distinctnasal≥4h; chartages2–5 .5mg/kg/6–11 .3/≥12 .2 androunduplabeleddose; maxoneepisode5days5month, lockedprescribeddose/greenREADY/singleuse notnasalchartcopied.",
+          "sourceId": "rectal",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d99b68aa-b3dc-49c8-8894-3da255cd26b0",
+          "sourceSection": "Dosage;Caregiverinstructions",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current nasal-diazepam/IR-lithium DailyMed directly opened",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warnings · opioids, abuse and withdrawal",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "diazepam-iv": {
+          "path": "/tmp/nas-drug-sources/diazepam-iv.xml",
+          "sha256": "257d81f24650778bad43682d722530c45a90540da851cd6eebc74ce60cce1a89"
+        },
+        "valtoco": {
+          "path": "/tmp/nas-drug-sources/valtoco.xml",
+          "sha256": "1740aa152a8ebe31aa9f83c2dc55a4a299b9468a238de93fa3e3ac2309a95099"
+        },
+        "diazepam-rectal": {
+          "path": "/tmp/nas-drug-sources/diazepam-rectal.xml",
+          "sha256": "ecdfd50e08b341046a46ae78dab1410bb4e651e8af42eb96541fc8354e37af90"
+        }
+      }
+    },
+    {
+      "drug": "lithium",
+      "fileSha256": "440b7169734e411921eb6d66d121a684217cd5a9678d82ac7434c71c747734fe",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "IRage7+>30kg/adult300TID start/titrateTOTALday300every3days;ped20–30kg300BID/day300weekly; acute0.8–1.2 usualadult600BID/TID,ped600–1500TOTALday;maint0.8–1.0adult300–600BID/TID,ped600–1200TOTALday, notuniversaldoseceilings; firstassayday3/12hpostdose.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b839ff4b-f62d-41ab-a823-550a756d58ec",
+          "sourceSection": "Sections2.2–2.3",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current nasal-diazepam/IR-lithium DailyMed directly opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "8mEq/5mL=300mgcarbonate lithiumcontent,150=4/2.5mL600=16/10mL; ped20–30kgacute16–40mEq10–25mL TOTALdaydivided/maint16–32mEq10–20TOTALday notperdose, start5mLBID/titratedailytotal5mLweekly. >30kgadult5mLTIDstart/acute10mLBID/TID/maint5–10mLBID/TID.",
+          "sourceId": "solution",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ff9baf45-830f-4a8a-8986-5caeaa1b38cf",
+          "sourceSection": "Sections2.2–2.3Tables1–2,3",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current nasal-diazepam/IR-lithium DailyMed directly opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "450ERusuallyBID~12h/whole;same-totalIRswitchifpossible otherwisenearestLOWER450multiple e.g1500→1350 with450AM900PM/largerPM,levels1–2wkuntilstable/useIRfiner. Notborrowed300Lithobidrounding.",
+          "sourceId": "er",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aa900d48-a99f-4309-ba29-ecc894162750",
+          "sourceSection": "Dosage",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current nasal-diazepam/IR-lithium DailyMed directly opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "LegacyERacute1800/day1.0–1.5goal versusIR0.8–1.2 andtoxicity≥1.5 explicitlynon-actionablediscrepancy requiring safecliniciantarget, notinstructiontoapproach1.5. Maint900–1200/0.6–1.2;8–12hpredose/btwiceweeklyacute≥q2monthsnormalstable;below12unestablished unlikeIR7+.",
+          "sourceId": "lithobid",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f7f5b69a-c2a1-4586-a189-1475d41387c0",
+          "sourceSection": "Dosage;Warnings;PediatricUse",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current nasal-diazepam/IR-lithium DailyMed directly opened",
+          "result": "agrees"
+        },
+        {
+          "assertion": "CGCrCl30–89lower/slower frequentmonitor/<30NOTrecommended notformalcontra; boxpromptserumfacilities/clinicaltoxicitycanoccurusuallevels/dehydrationrisk; noreinferredrenalpercentage.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b839ff4b-f62d-41ab-a823-550a756d58ec",
+          "sourceSection": "Section2.5;Box;5.1",
+          "access": "retained full primary SPL XML and extracted sections independently read; matching current nasal-diazepam/IR-lithium DailyMed directly opened",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning · lithium toxicity",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "lithium-ir": {
+          "path": "/tmp/nas-drug-sources/lithium-ir.xml",
+          "sha256": "0f451e9563256bf1aa2a09c19ea3058993540c30648182465ad363741deabf90"
+        },
+        "lithium-solution": {
+          "path": "/tmp/nas-drug-sources/lithium-solution.xml",
+          "sha256": "d30a8e44f29f2b67c75b235172d2e90165b968637145e1617fa719b77d269a5e"
+        },
+        "lithium-er": {
+          "path": "/tmp/nas-drug-sources/lithium-er.xml",
+          "sha256": "a32c1ba2eb0eac9001460d92f6d8cda288ca8c4469847d0fc8cc3fdec39e57d8"
+        },
+        "lithobid": {
+          "path": "/tmp/nas-drug-sources/lithobid.xml",
+          "sha256": "d892bcba9c7b751b313731f578806df08c396433154c12e5e8b8a8ec59063620"
+        }
+      }
+    },
+    {
+      "drug": "cefdinir",
+      "fileSha256": "df7ae9e88c33a6446ac1e5441747667b3849f5ae86ebabf762ed0ac62f1e5921",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Adult >=13 total600/day: pneumonia300q12 for10days; bronchitis300q12 5–10 or600q24 10; sinus300q12 or600q24 10; pharyngitis300q12 5–10 or600q24 10; skin300q12 10 only. Lupin shifted table discrepancy explicitly retained, coherent current AvKARE/Teva full table used.",
+          "sourceId": "comparator",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1acc5d17-10a4-e23d-e063-6394a90a52c3",
+          "sourceSection": "Dosage adult table",
+          "access": "Retained full primary SPL XML and extracted relevant sections independently read; current cefdinir comparator and sulfate-premix DailyMed directly opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Age6months–12 total14mg/kg/day max600: otitis7 per dose q12 5–10days or14q24 10; sinus7q12 or14q24 10; pharyngitis7q12 5–10 or14q24 10; skin7q12 10 only. >=43kg max600/day.",
+          "sourceId": "liquid",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7490df67-56c0-4a1c-8533-2107f3e8aea5",
+          "sourceSection": "Dosage pediatric table",
+          "access": "Retained full primary SPL XML and extracted relevant sections independently read; current cefdinir comparator and sulfate-premix DailyMed directly opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "AdultCrCl<30 300daily; pediatric indexedCrCl<30 7mg/kg daily max300; HDinitial300or7mg/kg everyotherday and after each session then everyotherday. Selected25/50mg/mL suspension38mLwater→60 or61→100, shake beforeeach.",
+          "sourceId": "liquid",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7490df67-56c0-4a1c-8533-2107f3e8aea5",
+          "sourceSection": "Renal/HD; mixing",
+          "access": "Retained full primary SPL XML and extracted relevant sections independently read; current cefdinir comparator and sulfate-premix DailyMed directly opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Cephalosporin class allergy formal contra; penicillin allergy precaution requiring actual history; antacids/iron >=2h before or after, iron-fortified infant formula exception does not mean supplement exception.",
+          "sourceId": "capsule",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb7366ce-1778-451f-aba5-65cf73c9b87a",
+          "sourceSection": "Contraindications; Drug Interactions",
+          "access": "Retained full primary SPL XML and extracted relevant sections independently read; current cefdinir comparator and sulfate-premix DailyMed directly opened.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed-warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "cefdinir-capsule": {
+          "path": "/tmp/nas-drug-sources/cefdinir-capsule.xml",
+          "sha256": "f6cf4097826906ac952ead23ad42b60a0c47877a3f0aa19c72b0ae01225a5903"
+        },
+        "cefdinir-suspension": {
+          "path": "/tmp/nas-drug-sources/cefdinir-suspension.xml",
+          "sha256": "7510878b87521e082dc8aab791b66b4be3cff6406ffb0508b6ac8f401b04a4a3"
+        },
+        "cefdinir-capsule-comparator": {
+          "path": "/tmp/nas-drug-sources/cefdinir-capsule-comparator.xml",
+          "sha256": "e6f013a10c2e37c96bf8ddc7a4059a577a94435a11964bea65f411eeb8bcc1f4"
+        }
+      }
+    },
+    {
+      "drug": "magnesium-salts",
+      "fileSha256": "d3705e9863752e391f944548c0d940b0b1a313b28664e89befe913c31044075c",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Selected1g/100mL bag: obstetric4–6g load15min then1–2g/hour, max30–40g/24h; severe renal/urine<0.5mL/kg/h4gload then1g/h adjusted frequently/lower often/max20g48h. No dilution needed; pump.",
+          "sourceId": "premix",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8da9c33f-e3cd-4026-b034-2b964401b346",
+          "sourceSection": "Sections2.1–2.3,3",
+          "access": "Retained full primary SPL XML and extracted relevant sections independently read; current cefdinir comparator and sulfate-premix DailyMed directly opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Discontinue infusion when urine<100mL/4h particularly rising creatinine; monitor reflexes/respiration/serum/BP/UO/calcium immediately available. Renal reduced maintenance does not override stop instruction. Formal heartblock/myocardialdamage/diabeticcoma/myasthenia; no unapprovedtocolytic co-use.",
+          "sourceId": "premix",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8da9c33f-e3cd-4026-b034-2b964401b346",
+          "sourceSection": "Sections4,5.2,5.4",
+          "access": "Retained full primary SPL XML and extracted relevant sections independently read; current cefdinir comparator and sulfate-premix DailyMed directly opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "50% means500mg sulfate heptahydrate per mL, 1g~8.12mEq magnesium, not elemental500. IV dilute<=20%, generally<=150mg salt/min except severe eclampsia; legacy mild1gIMq6xfour and severe5g1Lover3h/TPNadult8–24mEq infant2–10/day explicitly not universal modern replacement.",
+          "sourceId": "iv",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e175d329-315f-4f3b-bb4c-06ad4e042967",
+          "sourceSection": "Description; Dosage",
+          "access": "Retained full primary SPL XML and extracted relevant sections independently read; current cefdinir comparator and sulfate-premix DailyMed directly opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Phillips1200mg hydroxide/15mL contains500mg elemental; >=12 30–60mL/day,6–11 15–30,under6doctor; shake/full8oz each; no self-use beyond1wk/kidney advice.",
+          "sourceId": "hydroxide",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a57bb45-d4f7-443b-e054-00144ff8d46c",
+          "sourceSection": "DrugFacts Directions; Other Information",
+          "access": "Retained full primary SPL XML and extracted relevant sections independently read; current cefdinir comparator and sulfate-premix DailyMed directly opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "CareOne1.745g salt per fluidounce contains290mg elemental; >=12 6.5–10oz max10/24h,6–<12 3–7max7,2–<6 2–3max3,under2doctor; fullglass with each dose.",
+          "sourceId": "citrate",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2f6e9f87-4bff-482b-a54f-f51ca99aac8c",
+          "sourceSection": "DrugFacts Directions; Other Information",
+          "access": "Retained full primary SPL XML and extracted relevant sections independently read; current cefdinir comparator and sulfate-premix DailyMed directly opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "400mg magnesium oxide contains241.3mg elemental; one or two antacid tablets daily max2 unless physician-directed, kidney advice no inferred pediatric numerical dose.",
+          "sourceId": "oxide",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0af63651-f9d9-43b9-b6f0-4878466a82e6",
+          "sourceSection": "DrugFacts Active Ingredient; Directions; Warnings",
+          "access": "Retained full primary SPL XML and extracted relevant sections independently read; current cefdinir comparator and sulfate-premix DailyMed directly opened.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed-warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "magnesium-sulfate-premix": {
+          "path": "/tmp/nas-drug-sources/magnesium-sulfate-premix.xml",
+          "sha256": "ef2bb07878e0417885630ed339234147954d18dcc93f028d5c198998a9fcb0d5"
+        },
+        "magnesium-sulfate-concentrate": {
+          "path": "/tmp/nas-drug-sources/magnesium-sulfate-concentrate.xml",
+          "sha256": "6e6cf3fbdd7e11e1ba4745ae7e6cca177dd63a868f79791f2cfebdb42f347b43"
+        },
+        "magnesium-hydroxide": {
+          "path": "/tmp/nas-drug-sources/magnesium-hydroxide.xml",
+          "sha256": "c3b8124f199cf5c35d972ffee58070a3191eba5341d7cc227dc72603957df299"
+        },
+        "magnesium-citrate": {
+          "path": "/tmp/nas-drug-sources/magnesium-citrate.xml",
+          "sha256": "3a58d3690c2711f8eb51f5bb8ee00ead88e201af9b452802d77b129127523611"
+        },
+        "magnesium-oxide": {
+          "path": "/tmp/nas-drug-sources/magnesium-oxide.xml",
+          "sha256": "d92eb524efc4a7ab625ad837fc2daae8f09c8abc5df0d306dd4d44b3fb275feb"
+        }
+      }
+    },
+    {
+      "drug": "evolocumab",
+      "fileSha256": "ae0d8d70711a6fa16204fca7462d1a0b9827f55a4804a82e6e3d7a7ad97b00f2",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Current adult increasedCVrisk indication; adults hypercholesterolemia/HeFH>=10 140mgq2wk OR420monthly. HoFH>=10 initially420monthly→420q2wk ifinadequate12wk;apheresismaystart420q2wk AFTERsession. Newregimenfirstdosepriornextscheduleddate.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cd61e902-166d-4aa6-9f3c-a18c1008d07e",
+          "sourceSection": "Sections1,2.1",
+          "access": "Retained full current primary SPL XML and relevant extracted sections independently read; matching current Repatha and Rowasa DailyMed directly opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Current140devices420doseTHREEconsecutive injectionswithin30min; warm>=30min;latex variesselectedcarton ratherthanallcontain/allfree. Missedwithin7daysresumeoriginal;>7q2waitnextoriginal vsmonthlygive/new schedule.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cd61e902-166d-4aa6-9f3c-a18c1008d07e",
+          "sourceSection": "Sections2.2–2.3",
+          "access": "Retained full current primary SPL XML and relevant extracted sections independently read; matching current Repatha and Rowasa DailyMed directly opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "No renaladjustment/ChildA-BnoadjustmentCnodata; formalseriousallergy/excipienthistory,angioedemastoptreatmonitor.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cd61e902-166d-4aa6-9f3c-a18c1008d07e",
+          "sourceSection": "Sections4,5.1,8.6–8.7",
+          "access": "Retained full current primary SPL XML and relevant extracted sections independently read; matching current Repatha and Rowasa DailyMed directly opened.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "evolocumab": {
+          "path": "/tmp/nas-drug-sources/evolocumab.xml",
+          "sha256": "d9842fe364280107ed506d3adb39a602519d43dbb80c68a2e80aa48113e935b5"
+        }
+      }
+    },
+    {
+      "drug": "mesalamine",
+      "fileSha256": "fe01eee0943e23f38ec3dd8f8d27df08bb3aafb866bbe85b8483c6ed793a30a6",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Lialdaadultinduction2.4–4.8gQDmaint2.4 withfoodwhole; ped>=24kgcanwhole24–35 induction2.4→post8wk1.2;>35–50 3.6→2.4;>50 4.8→2.4. No dosetochildbelow24 inferred.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3098a080-be86-4265-9818-7fc4beab77b7",
+          "sourceSection": "Section2",
+          "access": "Retained full current primary SPL XML and relevant extracted sections independently read; matching current Repatha and Rowasa DailyMed directly opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Aprisoadultmaintenance1.5g FOUR0.375capsonceAMwithwithoutfoodwhole/avoidantacids. NotLialdainduction.",
+          "sourceId": "apriso",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7951139c-b271-45a4-b523-34b23800917b",
+          "sourceSection": "Section2",
+          "access": "Retained full current primary SPL XML and relevant extracted sections independently read; matching current Repatha and Rowasa DailyMed directly opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "AdultPentasa1gFOURtimesdaily/wholeoropenentirecontentontoapplesauce/yogurtconsumeimmediate; not interchangeable release/food advice.",
+          "sourceId": "pentasa",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e39d9a3d-5d3a-4bb6-aab1-fdbb2a598606",
+          "sourceSection": "Section2",
+          "access": "Retained full current primary SPL XML and relevant extracted sections independently read; matching current Repatha and Rowasa DailyMed directly opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Canasa1000mgrectalQDbed3–6wk retain1–3h+notcut;>6weeksunestablished;missedwhenrememberunlessnearlynext/nodouble.",
+          "sourceId": "canasa",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=89d91601-152b-4398-bebe-af1c023e9935",
+          "sourceSection": "Section2",
+          "access": "Retained full current primary SPL XML and relevant extracted sections independently read; matching current Repatha and Rowasa DailyMed directly opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Rowasa4g/60mLrectalQDbeds3–6wkretain~8h/shakegentleumbilicustip/position>=30min. Formal sulfite allergy unlike all mesalamine assumptions. Currentfull5.9 intracranial hypertension immediatelystop unusualheadacheorvisualdisturbance andevaluate; actual renal5.2ratherthanmismatchedhighlightscrossrefs.",
+          "sourceId": "rowasa",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e505ab99-1943-4216-a178-4d5dbe64e3b2",
+          "sourceSection": "Sections2,4,5.1–5.2,5.9",
+          "access": "Retained full current primary SPL XML and relevant extracted sections independently read; matching current Repatha and Rowasa DailyMed directly opened.",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Renalbefore/periodic,discontinueifdeteriorates; acuteintolerancecanmimicUCflare promptlystop; no fabricatedCrCl dosepercentage.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3098a080-be86-4265-9818-7fc4beab77b7",
+          "sourceSection": "Sections5.1–5.2",
+          "access": "Retained full current primary SPL XML and relevant extracted sections independently read; matching current Repatha and Rowasa DailyMed directly opened.",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "mesalamine-lialda": {
+          "path": "/tmp/nas-drug-sources/mesalamine-lialda.xml",
+          "sha256": "8081d81cc184eedca10fac5239efce2ea287449d266f1597c14acdf9ae8fd01d"
+        },
+        "mesalamine-apriso": {
+          "path": "/tmp/nas-drug-sources/mesalamine-apriso.xml",
+          "sha256": "566b9f48001f6788146a76d4e91037bd98b695cee6bc5784e85ff698e59d9e43"
+        },
+        "mesalamine-pentasa": {
+          "path": "/tmp/nas-drug-sources/mesalamine-pentasa.xml",
+          "sha256": "6fc9f0778ae3a973db812cefbb9de30be328001270dbe99a01cdecd49bdd7ef6"
+        },
+        "mesalamine-canasa": {
+          "path": "/tmp/nas-drug-sources/mesalamine-canasa.xml",
+          "sha256": "2efa5ecc9acccb3bdf2d0462522a4b97c39603a3bcc2307d623919721021bd64"
+        },
+        "mesalamine-rowasa": {
+          "path": "/tmp/nas-drug-sources/mesalamine-rowasa.xml",
+          "sha256": "f388bc904d8fca749b1e4c4e966df587221ffaf6bf03e510b7291f1aae53dbcf"
+        }
+      }
+    }
+  ],
+  "pending": [],
+  "limitations": []
+}

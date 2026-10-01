@@ -1,0 +1,552 @@
+{
+  "slug": "evolocumab",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "CurrentAmgenRepathaadultCVrisk/hypercholesterolemia andHeFHHoFH≥10;140mgpen/SureClick/syringe latex-specificcurrentpresentations.",
+  "excludedRegimens": [
+    "Historical420mgon-bodyinfusoravailability/IFU",
+    "IVadministrationnotinferredfromPK",
+    "OtherPCSK9conversion/universalLDLtarget",
+    "Pediatricnon-FH/below10dose",
+    "Severehepaticdosealgorithm"
+  ],
+  "sources": [
+    {
+      "id": "label",
+      "title": "Repatha · Prescribing information and device instructions",
+      "publisher": "DailyMed / Amgen",
+      "note": "Current SPL version 32, effective 2026-08-19. Clinical PI and new prefilled-pen instructions revised July 2026; includes latex and nonlatex presentations, not a historical on-body infusor regimen.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cd61e902-166d-4aa6-9f3c-a18c1008d07e"
+    }
+  ],
+  "labelMetadata": [
+    {
+      "sourceId": "label",
+      "product": "evolocumab",
+      "setid": "cd61e902-166d-4aa6-9f3c-a18c1008d07e",
+      "version": "32",
+      "effectiveTime": "20260819",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/cd61e902-166d-4aa6-9f3c-a18c1008d07e.xml",
+      "xmlSha256": "d9842fe364280107ed506d3adb39a602519d43dbb80c68a2e80aa48113e935b5",
+      "marketingAuthorization": [
+        {
+          "category": "BLA",
+          "application": "BLA125522"
+        },
+        {
+          "category": "BLA",
+          "application": "BLA125522"
+        },
+        {
+          "category": "BLA",
+          "application": "BLA125522"
+        },
+        {
+          "category": "BLA",
+          "application": "BLA125522"
+        },
+        {
+          "category": "BLA",
+          "application": "BLA125522"
+        },
+        {
+          "category": "BLA",
+          "application": "BLA125522"
+        },
+        {
+          "category": "BLA",
+          "application": "BLA125522"
+        }
+      ],
+      "clinicalVersion": "Clinical PI revised July2026;newpenIFUJuly2026;latex/nonlatexsyringeIFUNov2024 withincurrentAug19SPL"
+    }
+  ],
+  "evidence": [
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/evolocumab.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/evolocumab/evolocumab.xml",
+      "sha256": "d9842fe364280107ed506d3adb39a602519d43dbb80c68a2e80aa48113e935b5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/cd61e902-166d-4aa6-9f3c-a18c1008d07e.xml"
+    },
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/evolocumab-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/evolocumab/evolocumab-sections.json",
+      "sha256": "5ce5e69831dab4442b4f8bd45381b257a23bec6b08804ef4d661dd38fe0cfd11",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/cd61e902-166d-4aa6-9f3c-a18c1008d07e.xml"
+    }
+  ],
+  "sourceEvidenceRoot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/evolocumab",
+  "sourceManifest": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/evolocumab/source-manifest.json",
+  "assertionToSourceMap": [
+    {
+      "section": "indications",
+      "card": "Labeled uses",
+      "assertions": {
+        "paragraphs": [
+          "Repatha reduces major cardiovascular events in adults at increased risk: cardiovascular death, myocardial infarction, stroke, unstable angina requiring hospitalization or coronary revascularization. It is also an adjunct to diet and exercise to lower LDL-C in adults with hypercholesterolemia and in adults and children age 10 or older with heterozygous or homozygous familial hypercholesterolemia (HeFH or HoFH)."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§1 exact current increased-risk adult CV events anddiet/exerciseadult hypercholesterolemia/HeFHHoFHage10+"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "indications",
+      "card": "Treatment scope",
+      "assertions": {
+        "paragraphs": [
+          "Pediatric general hypercholesterolemia, children below 10 and an acute rescue treatment for chest pain or stroke are not established indications. Choose other lipid medicines and individualized goals with the treating clinician; approval does not set one universal LDL target or require stopping every statin. Current device scope is the selected 140 mg presentations; historical 420 mg infusor availability is not inferred."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§1/8.4 otherpediatric hypercholesterolemia and<10 unestablished;§2/3/16 current140presentations; nohistoricinfusoravailability"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "dosage",
+      "card": "Selected subcutaneous regimens",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Population",
+            "Regimen and distinction"
+          ],
+          "rows": [
+            [
+              "Adults at increased CV risk or with hypercholesterolemia; HeFH age 10 or older",
+              "140 mg every 2 weeks OR 420 mg once monthly"
+            ],
+            [
+              "HoFH age 10 or older",
+              "Start 420 mg once monthly; may increase to 420 mg every 2 weeks if no clinically meaningful response after 12 weeks"
+            ],
+            [
+              "HoFH with lipid apheresis",
+              "May start 420 mg every 2 weeks to match apheresis schedule; administer after the session"
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§2.1 exact adult/HeFH140q2weeksOR420monthly;HoFH420monthly→q2weeksifnoresponse12weeks;apheresisafter/session"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "dosage",
+      "card": "Delivery and schedule changes",
+      "assertions": {
+        "paragraphs": [
+          "Administer subcutaneously in abdomen, thigh or upper arm, rotating sites and avoiding tender, bruised, red, hard, scarred or stretched skin. With current 140 mg devices, a 420 mg dose is three injections consecutively within 30 minutes. When changing between every-2-week and monthly schedules, give the first new-regimen dose on the next scheduled date of the prior regimen. LDL response can be assessed as early as 4 weeks; for monthly dosing measure just before the next dose because levels can vary across the interval."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§2.1 switchon nextprior scheduleddate;LDL4weeks/monthlypredose;§2.3 three140consecutivewithin30min/SCalternatingacceptable sites"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "dosage",
+      "card": "Missed doses",
+      "assertions": {
+        "paragraphs": [
+          "Within 7 days of a missed dose, give it and resume the original schedule. More than 7 days late: every-2-week users wait for the next original scheduled dose; monthly users give the dose and establish a new schedule from that date. Do not use one missed-dose rule for both schedules."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§2.2 within7dayoriginalschedule;>7dayq2weekskipvsmonthlydose/newdate"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "dosage",
+      "card": "Preparation and organ impairment",
+      "assertions": {
+        "paragraphs": [
+          "Let refrigerated devices warm naturally for at least 30 minutes; do not heat. Inspect the solution and device, and follow the exact supplied instructions. No dose adjustment is required for renal impairment or mild to moderate hepatic impairment (Child-Pugh A or B); severe hepatic impairment has no data. Do not infer an IV regimen from the pharmacokinetic study."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§2.3 natural30minwarminspect/IFU;§8.6no renal and8.7A/Bnoadjust severeunknown"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Angioedema and other serious hypersensitivity can occur. Discontinue treatment, seek appropriate urgent care and monitor until symptoms resolve. Prior serious evolocumab or excipient hypersensitivity is contraindicated.",
+          "Some SureClick autoinjectors and syringes have dry natural rubber in the needle cover; other current presentations are not made with natural rubber latex. Prescribe and dispense the appropriate carton for latex-sensitive patients, checking its actual labeling. Do not assume all current devices contain latex or all are latex-free.",
+          "Patients or caregivers need training with the exact pen, SureClick or syringe. Do not use frozen, damaged or improperly stored devices or cloudy/particulate solution. Use each device once and dispose in a sharps container. Contact the clinician if a complete dose was not delivered instead of guessing the amount to repeat."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§4/5 serioushypersensitivitystopmonitor;§5/16drynaturalrubbervsnonlatex exactselection;§2.3/17andallIFU actualtraining/warming/sharps/incomplete-dosecontact"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "A history of serious hypersensitivity to evolocumab or any excipient is contraindicated. Latex sensitivity is a presentation-specific precaution requiring selection of an appropriate device, rather than a blanket contraindication to all evolocumab."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§4 seriousdrug/excipienthypersensitivity formalcontra;§5latex productprecaution"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "The selected current Repatha label has no boxed warning. Serious allergy and injection or storage errors remain clinically important."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Actual fullSPLabsenceBox;§4/5/2.3risk"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Trials reported nasopharyngitis, upper respiratory infection, influenza, back pain, injection-site pain/redness/bruising, headache and musculoskeletal symptoms. Diabetes mellitus was also reported in the cardiovascular-outcomes population. Hypersensitivity, including angioedema, and influenza-like illness have been reported after approval. Rates vary with trial population and do not establish causation or a universal patient probability."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§6.1 adult/pediatrictrialcommonreactions/outcomesdiabetescontext,§6.2 angioedema/influenza-like notuniversalcausation/rate"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "interactions",
+      "card": "Statins and exposure",
+      "assertions": {
+        "paragraphs": [
+          "A high-intensity statin regimen reduced evolocumab peak concentration and exposure by about 20% in studied adults; the label considers this clinically unimportant and supplies no corresponding dose adjustment. Do not discontinue a prescribed statin solely for this pharmacokinetic observation."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§12.3 highintensitystatinCmaxAUC~20%lower notclinicallymeaningful/noadjust"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "interactions",
+      "card": "Apheresis and other medicines",
+      "assertions": {
+        "paragraphs": [
+          "In HoFH receiving lipid apheresis, give evolocumab after the completed session and use the approved condition-specific schedule. Reconcile all lipid therapies and adherence; the selected label does not establish universal conversions to another PCSK9 inhibitor or a weight-based pediatric regimen."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§2.1afterapheresis and§1/2conditionspecificdose;noverifiedotherantibodyconversion"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "interactions",
+      "card": "Allergy and device components",
+      "assertions": {
+        "paragraphs": [
+          "Check previous biologic/excipient reactions and latex sensitivity against the actual carton and instructions. Device-material exposure is a product issue; it is not resolved by spacing doses from another medicine."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§4/5.1/16actuallatexexcipientdevices"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and breastfeeding",
+      "assertions": {
+        "paragraphs": [
+          "Human pregnancy data are insufficient to determine drug-associated risk. As an IgG antibody, evolocumab can cross the placenta, particularly near term. Animal findings do not exclude human risk. A pregnancy safety study accepts reported exposures through Amgen. Human-milk, infant-effect and milk-production data are lacking; weigh maternal need, breastfeeding benefits and potential infant effects."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§8.1 insufficienthumanrisk/IgGplacenta/reportstudy;§8.2humanmilkunknownclinicalbenefitrisk"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": {
+        "paragraphs": [
+          "HeFH and HoFH treatment is established from age 10; it is not established below 10 or for other pediatric hypercholesterolemia. Older-adult trials showed no overall age-related safety/effectiveness difference, but some individuals may be more sensitive. Fixed labeled doses are not automatically scaled by body weight."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§8.4HeFHHoFH≥10othernotestablished;§8.5noolderoverall difference but sensitivity;§12.3weightnondoseconversion"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic impairment",
+      "assertions": {
+        "paragraphs": [
+          "No renal dose adjustment is needed, including the label’s studied severe-impairment/hemodialysis populations. No adjustment is needed for Child-Pugh A or B. Severe hepatic impairment has no data, so the label cannot provide a verified dose algorithm for that population."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§8.6 and12.3severeESRDstudy/noadjust;8.7mildmoderateA/Bnoadjustsevereunknown"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "assertions": {
+        "paragraphs": [
+          "Evolocumab is a human IgG2 antibody that binds PCSK9, reducing PCSK9-mediated LDL-receptor degradation. More receptors remain available to clear circulating LDL. Response in familial disease depends on receptor biology; treatment and escalation require measured response."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§12.1 PCSK9/LDLRmechanism;§14HoFHresponsebiologicalvariable and§2clinicalresponseescalation"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "assertions": {
+        "paragraphs": [
+          "After studied subcutaneous doses, median serum peaks occur at 3–4 days and estimated bioavailability is 72%. Elimination involves saturable target binding and proteolytic pathways; effective half-life is approximately 11–17 days. Trough concentrations approach steady state by 12 weeks. These studied kinetics do not authorize delayed doses, IV administration or conversion to another antibody."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§12.3 nonlinear/peak3–4d72%bioavailability proteolytic/target11–17dsteady12weeks;studiedIVnotclinicalroute"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": {
+        "paragraphs": [
+          "Confirm indication, LDL baseline/response, schedule, other lipid therapy, prior allergy and latex status. LDL lowering can be measured from 4 weeks; check monthly-regimen LDL just before the next dose. Reassess HoFH response at 12 weeks before the labeled escalation decision. No universal visit interval, LDL target or routine antibody-testing program is specified."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§1/2.1/4/5/16 baselineclinicalassessment and4weekLDL/monthlypredose/HoFH12wk;noinventedtarget/universaltests"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "assertions": {
+        "paragraphs": [
+          "Allow natural warming, wash hands, clean and dry the injection site and follow the exact device instructions. The new prefilled pen has different activation/cap instructions from SureClick; its instructions require skin pinching for children below 12. Confirm completion by the device-specific indicator, keep used devices in a sharps container and contact the clinician for incomplete delivery. Seek prompt care for swelling of the face/throat or breathing difficulty."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§2.3/17 andexactpenIFU skinpinch<12/repathapen versusSureClick/syringe differentcapactivation;washcleanindicator/sharps/contactincomplete;§5allergy"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "practice",
+      "card": "Missed, damaged or incorrect doses",
+      "assertions": {
+        "paragraphs": [
+          "Use the schedule-specific missed-dose directions. Contact the clinician/pharmacist for an incomplete injection, wrong number of devices or damaged/frozen product; do not automatically repeat a full 420 mg dose. Serious allergic symptoms warrant emergency treatment. The selected label supplies no universal overdose reversal or replacement-dose algorithm."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§2.2 exactmisseddose;allIFUsdamagedfrozen/incompletecontact;§5seriousallergy;absenceuniversalreplacementdose"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "product",
+      "card": "Representative latex-free pen",
+      "assertions": {
+        "facts": [
+          [
+            "Product",
+            "Repatha 140 mg / mL prefilled single-dose pen"
+          ],
+          [
+            "Route",
+            "Subcutaneous; prescription biologic"
+          ],
+          [
+            "Appearance",
+            "Clear to opalescent, colorless to pale yellow solution"
+          ],
+          [
+            "Example package",
+            "2 pens · NDC 72511-143-02 · not made with natural rubber latex"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§3/11/16 andactualnewpenPDP140mgmL2NDC72511-143-02nonlatex"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Current selected label lists 140 mg / mL single-dose pen, SureClick autoinjector and syringe. Latex-free SureClick cartons include NDC 72511-393-02 (two) and latex-free syringe 72511-501-01 (one). Dry-natural-rubber presentations include SureClick 72511-760-02 (two) and syringe 72511-750-01 (one). Check the actual carton; this is not proof of stock or authorization for a historical 420 mg infusor."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§3/16currentthree140formspreciseNDCnonlatex393/501vsdryrubber760/750;noinfusorstockclaim"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Refrigerate at 2–8°C in the original carton protected from light. Do not freeze or shake. Devices may be kept at 20–25°C in the original carton for 30 days; record removal date and discard if unused within that period. Allow at least 30 minutes of natural warming before injection; never use external heat. Do not reuse devices."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§16andallIFUs2–8fridgeoriginalcarton30days20–25/no freezeshake/natural≥30minwarm/notreuse"
+      },
+      "review": "Full supporting public primary sections read; exact product/route/population and source-version distinctions preserved. Clinical monitoring/referral synthesis identified; no unverified conversion or availability claim."
+    }
+  ],
+  "sourceDiscrepancies": [
+    {
+      "issue": "July2026RepathaPI§3/16 adds140prefilledpen andlatex/nonlatexdeviceoptions;headline§2.3intro omitsnewpenwhilefulladministration/strengths/IFUincludeit.",
+      "resolution": "Actualcurrent§3/16andFDAapprovednewpenIFUused;allthree140presentations distinguished;nohistorical420infusoravailability claimed.",
+      "resolvedWithinPublishedScope": true
+    },
+    {
+      "issue": "CurrentadultCVindicationincludesadultsatincreasedrisk;olderestablishedCVD-onlysummariesare narrower.",
+      "resolution": "Current§1exactscopeused;noinventedCVriskcalculator/LDLtarget.",
+      "resolved": true
+    }
+  ],
+  "materialErrors": [],
+  "unresolvedMaterialGaps": [],
+  "limitations": [
+    "Source-reviewed only within explicit selected-product scope; excluded products require additional current-source review before prescribing guidance.",
+    "All reviewed sources public primary labels; no paywalled access claimed.",
+    "Parent retains rendered QA/build/release checks."
+  ],
+  "reviewedSourceSections": [
+    "All supporting full indication,dose,contra,warnings,ADR,interactions,organ,pregnancy,lactation,pediatric,older,PK,monitoring,counsel,overdose wherepresent,identification/storage and device/product instructions; exact per-card source maps above."
+  ],
+  "verification": {
+    "schemaErrors": [],
+    "monographSha256": "ae0d8d70711a6fa16204fca7462d1a0b9827f55a4804a82e6e3d7a7ad97b00f2",
+    "sectionIds": [
+      "indications",
+      "dosage",
+      "safety",
+      "interactions",
+      "populations",
+      "pharmacology",
+      "practice",
+      "product"
+    ],
+    "heroFacts": 3,
+    "safetyCardOrder": [
+      "Warnings and precautions",
+      "Contraindications",
+      "Boxed warning status",
+      "Adverse reactions"
+    ],
+    "productCardOrder": [
+      "Representative latex-free pen",
+      "Dosage forms and strengths",
+      "Storage and handling"
+    ],
+    "renderedPageQA": "Pending parent exact candidate390px QA",
+    "displayTextWrap": "Two-columntables/naturalspaceddata;parentboundsQA pending"
+  }
+}
