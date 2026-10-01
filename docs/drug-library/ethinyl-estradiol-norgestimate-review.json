@@ -1,0 +1,727 @@
+{
+  "slug": "ethinyl-estradiol-norgestimate",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "A combined oral contraceptive with monophasic and triphasic 28-day packs. Estrogen strength, tablet sequence and the acne indication depend on the exact product.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Sprintec · Teva full prescribing information",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical footer Rev.G December 2024; SPL v13 effective December 19, 2024; API publication January 30, 2025. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d9252820-131a-4870-8b11-945d1bfd5659"
+    },
+    {
+      "id": "tri",
+      "title": "Tri-Sprintec · Teva full prescribing information",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical footer Rev.I March 2025; SPL v17 effective March 12, 2025; API publication April 10, 2025. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=843cbef6-cbfb-4a44-bb80-22930753e4c0"
+    },
+    {
+      "id": "lo",
+      "title": "Tri-Lo-Sprintec · Teva full prescribing information",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical footer Rev.F December 2021; current selected SPL v9 effective December 31, 2021; API publication April 7, 2022. Older clinical revision retained transparently; no stock inference. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ddbeb312-af2b-4d22-ab7c-5ab2f3f8d5cb"
+    },
+    {
+      "id": "cdc",
+      "title": "U.S. Selected Practice Recommendations 2024 · Combined Hormonal Contraceptives",
+      "publisher": "CDC",
+      "note": "Current public professional page dated November 19, 2024; initiation, blood-pressure evaluation and Figure1 missed-active-pill guidance read October 1, 2026. Distinct from older package instructions.",
+      "url": "https://www.cdc.gov/contraception/hcp/usspr/combined-hormonal-contraceptives.html"
+    }
+  ],
+  "sourceEvidence": {
+    "label": {
+      "splVersion": "13",
+      "effectiveTime": "20241219",
+      "localEvidence": "/tmp/nas-drug-sources/sprintec.xml",
+      "xmlSha256": "1b437f692a956f0d9807ca86072bcabc0348bff1080cb79030237f11057266ec",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/d9252820-131a-4870-8b11-945d1bfd5659.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d9252820-131a-4870-8b11-945d1bfd5659",
+      "revision": "Clinical footer Rev.G December 2024; SPL v13 effective December 19, 2024; API publication January 30, 2025. Checked October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "Full supporting public primary sections read; no paywall access"
+    },
+    "tri": {
+      "splVersion": "17",
+      "effectiveTime": "20250312",
+      "localEvidence": "/tmp/nas-drug-sources/tri-sprintec.xml",
+      "xmlSha256": "d0648016fa68eaba05ef315a4ae308cc8b36ef1e75010608d77fbfcaaa68b552",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/843cbef6-cbfb-4a44-bb80-22930753e4c0.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=843cbef6-cbfb-4a44-bb80-22930753e4c0",
+      "revision": "Clinical footer Rev.I March 2025; SPL v17 effective March 12, 2025; API publication April 10, 2025. Checked October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "Full supporting public primary sections read; no paywall access"
+    },
+    "lo": {
+      "splVersion": "9",
+      "effectiveTime": "20211231",
+      "localEvidence": "/tmp/nas-drug-sources/tri-lo-sprintec.xml",
+      "xmlSha256": "b2ecbd8ce9673d62beba26c53a1724435c02aa5f516082667d8ecb2f5091c809",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/ddbeb312-af2b-4d22-ab7c-5ab2f3f8d5cb.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ddbeb312-af2b-4d22-ab7c-5ab2f3f8d5cb",
+      "revision": "Clinical footer Rev.F December 2021; current selected SPL v9 effective December 31, 2021; API publication April 7, 2022. Older clinical revision retained transparently; no stock inference. Checked October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "Full supporting public primary sections read; no paywall access"
+    },
+    "cdc": {
+      "localEvidence": "/tmp/nas-drug-sources/contraceptive-cdc.html",
+      "htmlSha256": "be0b17f7b38ca41423e839a21cf05eb2c59e83910163a8883af978b472d814a5",
+      "url": "https://www.cdc.gov/contraception/hcp/usspr/combined-hormonal-contraceptives.html",
+      "revision": "Current public professional page dated November 19, 2024; initiation, blood-pressure evaluation and Figure1 missed-active-pill guidance read October 1, 2026. Distinct from older package instructions.",
+      "checked": "2026-10-01",
+      "access": "Full supporting public primary sections read; no paywall access"
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Pregnancy prevention",
+      "sourceIds": [
+        "label",
+        "tri",
+        "lo"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "1.1–1.2;17"
+        ],
+        "tri": [
+          "1.1–1.2;17"
+        ],
+        "lo": [
+          "1.1–1.2;17"
+        ]
+      },
+      "claims": [
+        "All three selected oral products are indicated to prevent pregnancy in females of reproductive potential. They are not emergency contraception and do not protect against HIV or other sexually transmitted infections."
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Moderate acne · Tri-Sprintec only",
+      "sourceIds": [
+        "label",
+        "tri",
+        "lo"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "1.1–1.2;17"
+        ],
+        "tri": [
+          "1.1–1.2;17"
+        ],
+        "lo": [
+          "1.1–1.2;17"
+        ]
+      },
+      "claims": [
+        "The selected 35 mcg triphasic Tri-Sprintec label also treats moderate acne vulgaris in females aged at least 15 years who have achieved menarche, have no contraindication to oral contraceptives and desire contraception. This indication is not listed for selected Sprintec or 25 mcg Tri-Lo-Sprintec."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Daily pack sequence",
+      "sourceIds": [
+        "label",
+        "tri",
+        "lo"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1–2.3;3;16;patient IFU;CDC initiation/Figure1 and GI Figure4"
+        ],
+        "tri": [
+          "2.1–2.3;3;16;patient IFU;CDC initiation/Figure1 and GI Figure4"
+        ],
+        "lo": [
+          "2.1–2.3;3;16;patient IFU;CDC initiation/Figure1 and GI Figure4"
+        ]
+      },
+      "claims": [
+        [
+          "Sprintec · monophasic",
+          "21 active blue tablets: norgestimate 0.25 mg / ethinyl estradiol 35 mcg each; then 7 white placebos."
+        ],
+        [
+          "Tri-Sprintec · 35 mcg triphasic",
+          "7 gray: 0.18 mg / 35 mcg; 7 light blue: 0.215 mg / 35 mcg; 7 blue: 0.25 mg / 35 mcg; then 7 white placebos."
+        ],
+        [
+          "Tri-Lo-Sprintec · 25 mcg triphasic",
+          "7 gray: 0.18 mg / 25 mcg; 7 light blue: 0.215 mg / 25 mcg; 7 blue: 0.25 mg / 25 mcg; then 7 white placebos."
+        ],
+        [
+          "Next cycle",
+          "Start the next pack the day after the last placebo, even if still bleeding. Food is optional. Do not exchange phases or assume colors match other manufacturers."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Initiation and switching · label instructions",
+      "sourceIds": [
+        "label",
+        "tri",
+        "lo"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1–2.3;3;16;patient IFU;CDC initiation/Figure1 and GI Figure4"
+        ],
+        "tri": [
+          "2.1–2.3;3;16;patient IFU;CDC initiation/Figure1 and GI Figure4"
+        ],
+        "lo": [
+          "2.1–2.3;3;16;patient IFU;CDC initiation/Figure1 and GI Figure4"
+        ]
+      },
+      "claims": [
+        "Selected labels describe starting the first active pill on menstrual Day 1, or the first Sunday after bleeding starts (same day if Sunday). Sunday start needs nonhormonal backup for the first 7 days. When changing from another combined pill, begin when its next pack would begin; patch/ring start when the next application/insertion is due, injection when next due, and implant/IUD when removed. IUD removal outside menstrual Day 1 needs 7 days backup. Postpartum and postabortion initiation must first satisfy thrombotic and breastfeeding eligibility; selected labels advise at least 4 weeks after delivery for nonbreastfeeding users and after second-trimester abortion/miscarriage. Do not apply that interval as automatic eligibility for everyone. First-trimester abortion/miscarriage may start immediately; if not within 5 days, use backup for 7 days."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Current initiation guidance · CDC",
+      "sourceIds": [
+        "cdc"
+      ],
+      "sourceSectionsById": {
+        "cdc": [
+          "2.1–2.3;3;16;patient IFU;CDC initiation/Figure1 and GI Figure4"
+        ]
+      },
+      "claims": [
+        "CDC permits initiation when reasonably certain the patient is not pregnant and medically eligible. Starting more than 5 days after bleeding begins requires 7 days of abstinence or barrier protection. Postpartum and breastfeeding eligibility needs separate assessment."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Late or missed active pills · current CDC guidance",
+      "sourceIds": [
+        "cdc"
+      ],
+      "sourceSectionsById": {
+        "cdc": [
+          "2.1–2.3;3;16;patient IFU;CDC initiation/Figure1 and GI Figure4"
+        ]
+      },
+      "claims": [
+        "One late pill or one missed for <48 hours: take it promptly and continue; backup is unnecessary. At ≥ 48 hours (two or more consecutive missed active pills), take only the most recent missed pill, discard earlier misses, continue, and use backup until 7 consecutive active-pill days. If this occurs in the final active week, omit placebos and start the next pack immediately; if unavailable, continue backup until 7 active days from a new pack. First-week misses plus unprotected intercourse in the preceding 5 days warrant emergency-contraception assessment. CDC excludes ulipristal from its immediate missed-pill emergency recommendation; obtain a clinician plan. Other circumstances can also warrant emergency contraception."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Package instructions and GI illness",
+      "sourceIds": [
+        "label",
+        "tri",
+        "lo",
+        "cdc"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1–2.3;3;16;patient IFU;CDC initiation/Figure1 and GI Figure4"
+        ],
+        "tri": [
+          "2.1–2.3;3;16;patient IFU;CDC initiation/Figure1 and GI Figure4"
+        ],
+        "lo": [
+          "2.1–2.3;3;16;patient IFU;CDC initiation/Figure1 and GI Figure4"
+        ],
+        "cdc": [
+          "2.1–2.3;3;16;patient IFU;CDC initiation/Figure1 and GI Figure4"
+        ]
+      },
+      "claims": [
+        "Selected package sections 2.2 use older, different rules for multiple missed pills (including two-tablet catch-up days). Do not combine those rules with the CDC algorithm; ask a pharmacist/prescriber to reconcile the exact pack and emergency-contraception timing promptly. Labels treat vomiting within 3–4 hours of an active tablet as a missed pill and advise backup for severe vomiting/diarrhea. Current CDC GI-illness guidance differs by duration; obtain a plan rather than assuming every episode requires redosing. Missed placebos do not need replacement."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "label",
+        "tri",
+        "lo"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed;4;5.1–5.13 (Tri-Lo5.14);6;10"
+        ],
+        "tri": [
+          "Boxed;4;5.1–5.13 (Tri-Lo5.14);6;10"
+        ],
+        "lo": [
+          "Boxed;4;5.1–5.13 (Tri-Lo5.14);6;10"
+        ]
+      },
+      "claims": [
+        "Stop if an arterial or venous thrombotic event occurs. Sudden chest pain, dyspnea, severe leg pain/swelling, weakness, speech difficulty or acute vision loss need urgent care; unexplained visual symptoms require retinal assessment. Risk is greatest after initial use or restart following at least a 4-week interruption.",
+        "When feasible, stop at least 4 weeks before and through 2 weeks after major surgery with high thromboembolism risk, and during prolonged immobilization; arrange alternative contraception. Postpartum risk requires an individual initiation decision.",
+        "Stop for jaundice. Liver tumors and acute/severe liver disease require evaluation. Selected hepatitis-C combination therapy can cause marked ALT elevations with ethinyl estradiol.",
+        "Measure and monitor blood pressure; discontinue for a significant increase. Assess glucose intolerance, dyslipidemia and hypertriglyceridemia/pancreatitis risk; estrogen can worsen gallbladder/cholestatic disease.",
+        "Evaluate new, persistent or severe headaches; stop if migraine frequency/severity increases. Monitor depression and stop for serious recurrence. Persistent irregular bleeding requires pregnancy and other pathology assessment.",
+        "Assess current/past hormone-sensitive breast cancer. Observational breast/cervical cancer findings do not establish a single risk estimate for every user. Exogenous estrogen can worsen hereditary angioedema. Avoid sun/UV exposure if prone to chloasma."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "label",
+        "tri",
+        "lo"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed;4;5.1–5.13 (Tri-Lo5.14);6;10"
+        ],
+        "tri": [
+          "Boxed;4;5.1–5.13 (Tri-Lo5.14);6;10"
+        ],
+        "lo": [
+          "Boxed;4;5.1–5.13 (Tri-Lo5.14);6;10"
+        ]
+      },
+      "claims": [
+        "High arterial/venous thrombotic risk: smokers over 35; current/past DVT or PE; inherited/acquired hypercoagulopathy; cerebrovascular or coronary disease; thrombogenic valve/rhythm disease; uncontrolled hypertension; vascular diabetes; focal neurologic headaches or migraine with aura; and any migraine in women over 35. Also liver tumors or liver disease, unexplained abnormal uterine bleeding, current/past breast cancer, and ombitasvir/paritaprevir/ritonavir with or without dasabuvir. Tri-Lo-Sprintec separately lists pregnancy as contraindicated; newer Sprintec/Tri-Sprintec sections instead direct discontinuation in pregnancy. These lists require clinical screening, not self-certification."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning · cigarette smoking",
+      "sourceIds": [
+        "label",
+        "tri",
+        "lo"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed;4;5.1–5.13 (Tri-Lo5.14);6;10"
+        ],
+        "tri": [
+          "Boxed;4;5.1–5.13 (Tri-Lo5.14);6;10"
+        ],
+        "lo": [
+          "Boxed;4;5.1–5.13 (Tri-Lo5.14);6;10"
+        ]
+      },
+      "claims": [
+        "Cigarette smoking increases serious cardiovascular risk with combined oral contraceptives; the risk rises with age and smoking intensity. The selected boxed warnings say women over 35 who smoke should not use these products. Smoking cessation and individual eligibility assessment remain necessary at other ages."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "sourceIds": [
+        "label",
+        "tri",
+        "lo"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed;4;5.1–5.13 (Tri-Lo5.14);6;10"
+        ],
+        "tri": [
+          "Boxed;4;5.1–5.13 (Tri-Lo5.14);6;10"
+        ],
+        "lo": [
+          "Boxed;4;5.1–5.13 (Tri-Lo5.14);6;10"
+        ]
+      },
+      "claims": [
+        "Commonly reported effects include headache/migraine, nausea or abdominal symptoms, breast discomfort, bleeding changes and mood symptoms; rates differ between product trials. Serious reports include thrombosis, hypertension, liver injury, pancreatitis and hypersensitivity. Overdose can cause nausea and withdrawal bleeding; contact Poison Help/medical advice for unintended ingestion rather than assuming harmlessness. Evaluate pregnancy after a missed withdrawal bleed with incorrect use or two missed bleeds despite correct use."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Loss of contraceptive effectiveness",
+      "sourceIds": [
+        "label",
+        "tri",
+        "lo"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "7.1–7.4;5.3"
+        ],
+        "tri": [
+          "7.1–7.4;5.3"
+        ],
+        "lo": [
+          "7.1–7.4;5.3"
+        ]
+      },
+      "claims": [
+        "CYP-inducing drugs such as rifampin/rifabutin, carbamazepine, phenytoin, some other anticonvulsants, bosentan, certain other agents and St. John’s wort may cause breakthrough bleeding or reduced efficacy. Use alternative or backup contraception during treatment and for 28 days after stopping the inducer. Take the pill at least 4 hours before colesevelam. HIV/HCV therapies can increase or decrease hormone levels; check the exact combination rather than treating all antivirals alike."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Higher exposure and effects on co-medication",
+      "sourceIds": [
+        "label",
+        "tri",
+        "lo"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "7.1–7.4;5.3"
+        ],
+        "tri": [
+          "7.1–7.4;5.3"
+        ],
+        "lo": [
+          "7.1–7.4;5.3"
+        ]
+      },
+      "claims": [
+        "Strong/moderate CYP3A4 inhibitors and grapefruit can raise hormone exposure; review risk and symptoms. Estrogen-containing pills can lower lamotrigine concentrations and worsen seizure control; starting/stopping or changing the hormone-free interval needs clinician coordination. They can raise exposure to cyclosporine, prednisolone, theophylline, tizanidine or voriconazole. Increased thyroid-binding globulin may require adjustment of thyroid replacement. Coagulation, lipid, glucose and binding-protein laboratory results may change."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Contraindicated HCV regimen",
+      "sourceIds": [
+        "label",
+        "tri",
+        "lo"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "7.1–7.4;5.3"
+        ],
+        "tri": [
+          "7.1–7.4;5.3"
+        ],
+        "lo": [
+          "7.1–7.4;5.3"
+        ]
+      },
+      "claims": [
+        "Stop before ombitasvir/paritaprevir/ritonavir with or without dasabuvir, because of ALT elevations. Selected labels permit restarting approximately 2 weeks after completion; the treating team must verify the actual antiviral regimen and contraceptive plan."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy, postpartum and lactation",
+      "sourceIds": [
+        "label",
+        "tri",
+        "lo"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8.1–8.7;2.1 postpartum"
+        ],
+        "tri": [
+          "8.1–8.7;2.1 postpartum"
+        ],
+        "lo": [
+          "8.1–8.7;2.1 postpartum"
+        ]
+      },
+      "claims": [
+        "Discontinue if pregnancy occurs. Epidemiologic studies have not found increased major birth-defect risk from inadvertent early combined-pill exposure; this does not provide a reason to continue or use pills as a pregnancy test. Estrogen/progestin appear in milk and can reduce milk production; selected labels advise another method until weaning when possible. Breastfeeding and postpartum clot risk require individualized current eligibility assessment; ovulation can precede the first postpartum period."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and older patients",
+      "sourceIds": [
+        "label",
+        "tri",
+        "lo"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8.1–8.7;2.1 postpartum"
+        ],
+        "tri": [
+          "8.1–8.7;2.1 postpartum"
+        ],
+        "lo": [
+          "8.1–8.7;2.1 postpartum"
+        ]
+      },
+      "claims": [
+        "Contraceptive efficacy is expected to be similar in postpubertal adolescents under 18 and adults; use before menarche is not indicated. Only selected Tri-Sprintec has the moderate-acne indication at age≥ 15. These products have not been studied in postmenopausal women and are not indicated for that population."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic impairment",
+      "sourceIds": [
+        "label",
+        "tri",
+        "lo"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8.1–8.7;2.1 postpartum"
+        ],
+        "tri": [
+          "8.1–8.7;2.1 postpartum"
+        ],
+        "lo": [
+          "8.1–8.7;2.1 postpartum"
+        ]
+      },
+      "claims": [
+        "Renal and hepatic pharmacokinetics have not been studied in the selected products; do not infer an evidence-based renal dose adjustment or absence of renal risk. Steroid hormones may be poorly metabolized with liver impairment. Liver disease/tumors are contraindications; liver-function disturbances may require stopping until normalization and exclusion of pill causation."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "sourceIds": [
+        "label",
+        "tri",
+        "lo"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "12.1–12.3"
+        ],
+        "tri": [
+          "12.1–12.3"
+        ],
+        "lo": [
+          "12.1–12.3"
+        ]
+      },
+      "claims": [
+        "Combined estrogen/progestin contraception primarily suppresses ovulation. The lower-dose triphasic label also describes cervical-mucus and endometrial changes as additional contraceptive mechanisms."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "12.1–12.3"
+        ]
+      },
+      "claims": [
+        [
+          "Absorption",
+          "Oral norgestimate is rapidly converted by intestinal/hepatic first pass to active norelgestromin and norgestrel; Sprintec norelgestromin/ethinyl estradiol peaks generally occur by 2 hours."
+        ],
+        [
+          "Protein binding",
+          "Norelgestromin and norgestrel >97% bound; norgestrel primarily binds SHBG. Ethinyl estradiol is extensively albumin-bound and increases SHBG."
+        ],
+        [
+          "Metabolism / elimination",
+          "Hepatic metabolism and conjugation; metabolites leave through urinary and fecal pathways."
+        ],
+        [
+          "Formulation distinction",
+          "These selected Sprintec measurements do not establish equivalent exposure or interchangeable dosing for every estrogen strength or triphasic product."
+        ]
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "sourceIds": [
+        "label",
+        "tri",
+        "lo"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "17;5 BP/bleeding/mood/headache;2 IFU"
+        ],
+        "tri": [
+          "17;5 BP/bleeding/mood/headache;2 IFU"
+        ],
+        "lo": [
+          "17;5 BP/bleeding/mood/headache;2 IFU"
+        ]
+      },
+      "claims": [
+        "Before treatment assess pregnancy possibility, smoking, age, thrombotic/vascular and migraine history, liver disease, cancer history and co-medication; obtain blood pressure. During use reassess BP, new risk factors, bleeding pattern, mood and headaches, with relevant glucose/lipid or thyroid assessment when indicated. Label counseling calls for periodic/annual clinical assessment; follow-up frequency should match individual risk."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling",
+      "sourceIds": [
+        "label",
+        "tri",
+        "lo"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "17;5 BP/bleeding/mood/headache;2 IFU"
+        ],
+        "tri": [
+          "17;5 BP/bleeding/mood/headache;2 IFU"
+        ],
+        "lo": [
+          "17;5 BP/bleeding/mood/headache;2 IFU"
+        ]
+      },
+      "claims": [
+        "Take tablets in marked order at a consistent time. Read the exact pack’s instructions and agree on current missed-pill guidance; seek prompt help for multiple misses, vomiting/diarrhea or possible need for emergency contraception. Keep replacement packs available so the placebo interval is not extended. Use barrier protection for STI prevention. Report thrombotic symptoms, jaundice, severe headache, depression or persistent abnormal bleeding. Tell the team before surgery/immobilization and when medicines or smoking change."
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product · Sprintec",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;16.1–16.2;SPL marketing category;package panels"
+        ]
+      },
+      "claims": [
+        [
+          "Ingredient / route",
+          "Norgestimate 0.25 mg / ethinyl estradiol 0.035 mg (35 mcg) · oral."
+        ],
+        [
+          "Active appearance / imprint",
+          "Blue, round, unscored; stylized b / 987. White inert tablet: b / 143."
+        ],
+        [
+          "Labeler / example NDC",
+          "Teva Pharmaceuticals USA ·0555-9016-58, carton of six 28-tablet blister cards."
+        ],
+        [
+          "Status",
+          "Prescription U.S. combined oral contraceptive; selected current ANDA labeling."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "label",
+        "tri",
+        "lo"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;16.1–16.2;SPL marketing category;package panels"
+        ],
+        "tri": [
+          "3;16.1–16.2;SPL marketing category;package panels"
+        ],
+        "lo": [
+          "3;16.1–16.2;SPL marketing category;package panels"
+        ]
+      },
+      "claims": [
+        [
+          "Sprintec",
+          "21 identical 0.25 mg / 35 mcg active tablets + 7 placebos."
+        ],
+        [
+          "Tri-Sprintec",
+          "Three 7-tablet phases 0.18/0.215/0.25 mg with 35 mcg estrogen; imprints b/985, b/986, b/987; placebo b/143. Example NDC 0555-9018-58."
+        ],
+        [
+          "Tri-Lo-Sprintec",
+          "Three 7-tablet phases 0.18/0.215/0.25 mg with 25 mcg estrogen; imprints b/451, b/452, b/453; placebo b/208. Example NDC 0093-2140-62."
+        ],
+        [
+          "Other brands / formulations",
+          "These are selected pack examples, not an exhaustive brand/availability list. No patch, vaginal ring or emergency-contraception regimen is inferred."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "label",
+        "tri",
+        "lo"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;16.1–16.2;SPL marketing category;package panels"
+        ],
+        "tri": [
+          "3;16.1–16.2;SPL marketing category;package panels"
+        ],
+        "lo": [
+          "3;16.1–16.2;SPL marketing category;package panels"
+        ]
+      },
+      "claims": [
+        "Store selected packs at 20–25°C and protect from light; keep out of children’s reach. Retain marked blister sequence and patient instructions. Colors, imprints and NDCs are manufacturer-specific; verify the dispensed pack rather than substituting phases by appearance."
+      ]
+    },
+    {
+      "section": "hero/essential",
+      "card": "Scope and essential safety",
+      "sourceIds": [
+        "label",
+        "tri",
+        "lo"
+      ],
+      "sourceSections": [
+        "1.1–1.2;17",
+        "Boxed;4;5.1–5.13 (Tri-Lo5.14);6;10",
+        "3;16.1–16.2;SPL marketing category;package panels"
+      ],
+      "claims": [
+        "A combined oral contraceptive with monophasic and triphasic 28-day packs. Estrogen strength, tablet sequence and the acne indication depend on the exact product.",
+        "Estrogen-containing contraception increases venous and arterial thrombosis risk. The selected labels prohibit use in smokers over age 35 and other high-risk conditions; urgent chest pain, breathlessness, focal neurologic symptoms or vision loss need immediate assessment.",
+        [
+          "Therapeutic class",
+          "Estrogen / progestin combined oral contraceptive"
+        ],
+        [
+          "Representative formulation",
+          "Sprintec: norgestimate 0.25 mg / ethinyl estradiol 35 mcg"
+        ],
+        [
+          "Reference focus",
+          "Three selected U.S. 21-active / 7-placebo packs"
+        ]
+      ]
+    }
+  ],
+  "exclusions": [
+    "Other manufacturers, non-U.S. products/marketing and unverified clinical algorithms; no pharmacy stock claim."
+  ],
+  "gaps": [
+    {
+      "material": false,
+      "topic": "Legacy pack versus current CDC initiation/missed/GI instructions",
+      "finding": "Selected labels use older multiple-miss catch-up rules and vomiting redose advice. Current CDC SPR2024 differs. Tri-Lo2.2 prose gives day ranges8–15/16–21 inconsistent with three 7-tablet phases.",
+      "resolution": "Current CDC missed-active-pill algorithm explicitly identified separately; package rules not mixed. GI illness and unusual initiation require prompt clinician/pharmacist plan. Exact7+7+7 active sequence corroborated by3/16/pack, no inconsistent Tri-Lo day ranges reproduced."
+    },
+    {
+      "material": false,
+      "topic": "Scope and eligibility",
+      "resolution": "Selected labels prohibit smokers over35; this exact wording is not generalized to imply smoking at35 is safe. CDC MEC condition-by-condition eligibility, specialized postpartum/postabortion and emergency-contraception plans remain individualized; no universal initiation interval or acne indication inferred."
+    }
+  ],
+  "materialErrors": [],
+  "validation": {
+    "schema": "Passed validateMonograph with zero errors, 2026-10-01.",
+    "renderedPage": "Pending parent integration QA"
+  },
+  "monographSha256": "6c004ff14b68d1c89a78c751b706e77cc34991c7de70d277b259458c8b6bf356",
+  "sourceInterpretationNotes": [
+    "Clinical revision, SPL effectiveTime/version and API publication are separate dates. No present-stock inference.",
+    "All three exact strengths/sequences sourced separately; only35 mcg triphasic Tri-Sprintec has selected acne indication. Tri-Lo pregnancycontra older label differs from newer discontinuation advice; difference explicit.",
+    "CDC-derived clinical summary kept concise (under 200 words across initiation/missed cards); guideline attribution separate from label."
+  ]
+}

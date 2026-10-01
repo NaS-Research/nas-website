@@ -99,6 +99,16 @@ import { fenofibrate } from "./fenofibrate.js";
 import { triamcinolone } from "./triamcinolone.js";
 import { paroxetine } from "./paroxetine.js";
 import { ferrous_sulfate } from "./ferrous-sulfate.js";
+import { loratadine } from "./loratadine.js";
+import { warfarin } from "./warfarin.js";
+import { valacyclovir } from "./valacyclovir.js";
+import { budesonideFormoterol } from "./budesonide-formoterol.js";
+import { ethinylEstradiolNorgestimate } from "./ethinyl-estradiol-norgestimate.js";
+import { fluticasoneUmeclidiniumVilanterol } from "./fluticasone-umeclidinium-vilanterol.js";
+import { methocarbamol } from "./methocarbamol.js";
+import { diltiazem } from "./diltiazem.js";
+import { thyroid } from "./thyroid.js";
+import { baclofen } from "./baclofen.js";
 
 export const reviewedDrugMonographs = {
   "atorvastatin": atorvastatin,
@@ -201,4 +211,14 @@ export const reviewedDrugMonographs = {
   "triamcinolone": triamcinolone,
   "paroxetine": paroxetine,
   "ferrous-sulfate": ferrous_sulfate,
+  "loratadine": loratadine,
+  "warfarin": warfarin,
+  "valacyclovir": valacyclovir,
+  "budesonide-formoterol": budesonideFormoterol,
+  "ethinyl-estradiol-norgestimate": ethinylEstradiolNorgestimate,
+  "fluticasone-umeclidinium-vilanterol": fluticasoneUmeclidiniumVilanterol,
+  "methocarbamol": methocarbamol,
+  "diltiazem": diltiazem,
+  "thyroid": thyroid,
+  "baclofen": baclofen,
 };
