@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-01",
+  "status": "verified scoped release",
+  "scope": "Adult PN timing, refeeding, product-specific laboratory monitoring and current cumulative selections",
+  "evidence": "parenteral-nutrition-refeeding-timing-review.json",
+  "baseCommit": "c9e7c2f8e6669b38a54c9cd767ca40c534b71def",
+  "contentCommit": "43f5f39343ba252fe0d860e996f0c582d10a6440",
+  "branch": "audit/rxprep-content-2026-09-24",
+  "remoteContentCommitVerified": "43f5f39343ba252fe0d860e996f0c582d10a6440",
+  "verification": "git ls-remote origin refs/heads/audit/rxprep-content-2026-09-24 exactly matched contentCommit",
+  "contentFiles": {
+    "src/data/modules/parenteralNutrition.js": "588cc508f64ba35e8b5a8a7845fda1b924f6c586f153ab2a50b08560e86a0882",
+    "src/data/questionBanks/parenteralNutrition.js": "fb50441eaa4721e573e02f367590120ae22b6aad79c91fe6c5d500109084354f"
+  },
+  "coverage": {
+    "baseEvidence": "parenteral-nutrition-approved-safety-review.json",
+    "baseVerifiedBank": 110,
+    "bank": 138,
+    "currentVerifiedBank": 119,
+    "additionalVerifiedRetainedIds": [
+      "parenteral-nutrition-005",
+      "parenteral-nutrition-006",
+      "parenteral-nutrition-032",
+      "parenteral-nutrition-043",
+      "parenteral-nutrition-100"
+    ],
+    "newVerifiedIds": [
+      "parenteral-nutrition-timing-001",
+      "parenteral-nutrition-timing-002",
+      "parenteral-nutrition-refeeding-001",
+      "parenteral-nutrition-refeeding-002"
+    ],
+    "remainingBank": 19,
+    "remainingBankItemIds": [
+      "parenteral-nutrition-003",
+      "parenteral-nutrition-007",
+      "parenteral-nutrition-008",
+      "parenteral-nutrition-012",
+      "parenteral-nutrition-013",
+      "parenteral-nutrition-015",
+      "parenteral-nutrition-020",
+      "parenteral-nutrition-025",
+      "parenteral-nutrition-027",
+      "parenteral-nutrition-030",
+      "parenteral-nutrition-031",
+      "parenteral-nutrition-033",
+      "parenteral-nutrition-044",
+      "parenteral-nutrition-045",
+      "parenteral-nutrition-047",
+      "parenteral-nutrition-048",
+      "parenteral-nutrition-049",
+      "parenteral-nutrition-103",
+      "parenteral-nutrition-106"
+    ],
+    "embeddedVerified": 6,
+    "embedded": 6,
+    "currentCumulativeVerified": 5,
+    "cumulative": 5,
+    "originalTeachingFullyVerified": 8,
+    "originalTeachingRemaining": 16,
+    "newApprovedSourceSectionsThisUnit": 5,
+    "newApprovedSourceSectionsAcrossUnits": 7,
+    "bookAddedSectionsAcrossUnits": 23,
+    "totalSections": 54,
+    "totalFullySourceVerifiedSectionBodies": 38,
+    "figuresFullyVerified": 1,
+    "figuresRemainingPartlySupported": 5,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false
+  },
+  "validation": {
+    "exactScopedCandidateBuild": "567 static pages; next build --webpack passed",
+    "focusedAudit": "138 questions; no hard errors/source gaps/thin lessons",
+    "runtime": "All138 bank,6checks,6figures,54teaching bodies desktop1440/mobile390; current cumulative5correct/incorrect, remediation/local progress,320px no overflow; no console/runtime errors",
+    "visual": "All seven changed/new teaching headings and refeeding/cumulative feedback inspected on desktop/mobile"
+  },
+  "preservation": {
+    "prior134IdsKeysPromptsAnchors": true,
+    "prior129QuestionObjectsUnchanged": true,
+    "embeddedSixUnchanged": true,
+    "allNonTargetLedgerRecordsSemanticallyUnchanged": true,
+    "accountsBackendNavigationFrameworkCSSUnchanged": true,
+    "privateSourceOutsideGit": true
+  },
+  "releaseState": {
+    "mainMerge": "not performed",
+    "production": "not verified",
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false,
+    "checklistCompletedEntries": 14
+  },
+  "nextAction": "Complete remaining19 bank items,16 original sections, five partially supported figures, legacy monitoring and related PN/EN/pediatric/fluid coverage. Chapter11 and checklist entry15 stay reviewing; completed14."
+}
