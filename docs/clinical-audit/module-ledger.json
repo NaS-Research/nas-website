@@ -8468,11 +8468,22 @@
         },
         {
           "slug": "selection-guidelines",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "latestScopedEvidence": "enteral-nutrition-broader-fidaxomicin-review.json",
+          "verifiedBodyHeadings": [],
+          "embeddedCheckVerified": false,
+          "wholeLessonVerified": false
         },
         {
           "slug": "adult-dosing-response",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "latestScopedEvidence": "enteral-nutrition-broader-fidaxomicin-review.json",
+          "verifiedBodyHeadings": [
+            "The adult label is exact",
+            "Response remains clinical"
+          ],
+          "embeddedCheckVerified": true,
+          "wholeLessonVerified": false
         },
         {
           "slug": "pediatric-dosing",
@@ -8500,8 +8511,66 @@
         }
       ],
       "questions": 164,
-      "status": "unreviewed",
-      "evidence": []
+      "status": "reviewing",
+      "evidence": [
+        "enteral-nutrition-broader-fidaxomicin-review.json"
+      ],
+      "broaderEnteralAdministrationReview": {
+        "evidence": "enteral-nutrition-broader-fidaxomicin-review.json",
+        "verifiedQuestionIds": [
+          "fidaxomicin-pharmacology-042",
+          "fidaxomicin-pharmacology-049",
+          "fidaxomicin-pharmacology-050",
+          "fidaxomicin-pharmacology-052",
+          "fidaxomicin-pharmacology-057",
+          "fidaxomicin-pharmacology-058",
+          "fidaxomicin-pharmacology-059",
+          "fidaxomicin-pharmacology-060",
+          "fidaxomicin-pharmacology-061",
+          "fidaxomicin-pharmacology-062",
+          "fidaxomicin-pharmacology-063",
+          "fidaxomicin-pharmacology-064",
+          "fidaxomicin-pharmacology-case-156"
+        ],
+        "correctedQuestionIds": [
+          "fidaxomicin-pharmacology-042",
+          "fidaxomicin-pharmacology-049",
+          "fidaxomicin-pharmacology-050",
+          "fidaxomicin-pharmacology-052",
+          "fidaxomicin-pharmacology-057",
+          "fidaxomicin-pharmacology-058",
+          "fidaxomicin-pharmacology-059",
+          "fidaxomicin-pharmacology-060",
+          "fidaxomicin-pharmacology-061",
+          "fidaxomicin-pharmacology-062",
+          "fidaxomicin-pharmacology-063",
+          "fidaxomicin-pharmacology-064"
+        ],
+        "originalPrimaryQuestionIdsPending": [
+          "fidaxomicin-pharmacology-041",
+          "fidaxomicin-pharmacology-043",
+          "fidaxomicin-pharmacology-044",
+          "fidaxomicin-pharmacology-051",
+          "fidaxomicin-pharmacology-053",
+          "fidaxomicin-pharmacology-054",
+          "fidaxomicin-pharmacology-055",
+          "fidaxomicin-pharmacology-056",
+          "fidaxomicin-pharmacology-case-155"
+        ],
+        "verifiedBodyHeadingsByLesson": {
+          "adult-dosing-response": [
+            "The adult label is exact",
+            "Response remains clinical"
+          ]
+        },
+        "verifiedEmbeddedCheckLesson": "adult-dosing-response",
+        "sourceVerifiedCumulativeIds": [
+          "cumulative-fidaxomicin-pharmacology-fidaxomicin-pharmacology-042"
+        ],
+        "wholeModuleVerified": false,
+        "figuresVerified": 0,
+        "metadataVerified": false
+      }
     },
     {
       "slug": "rifaximin-pharmacology",

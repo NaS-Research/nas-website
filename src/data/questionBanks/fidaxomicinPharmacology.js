@@ -79,4 +79,114 @@ const cases = [
   ["160", "integration", "Which plan is most complete for fidaxomicin?", ["Confirm symptomatic nonfulminant CDI, identify episode history, secure access, prescribe the exact formulation and regimen, review safety, define response and recurrence follow-up, and coordinate infection control", "Treat every positive molecular test", "Use the drug intravenously for bacteremia", "Repeat testing after symptoms resolve"], "Complete use aligns diagnosis, severity, access, execution, monitoring, follow-up, and transmission prevention."],
 ].map(([id, lesson, question, choices, rationale]) => ({ id: `fidaxomicin-pharmacology-case-${id}`, lesson, question, choices, answer: 0, rationale, reviewHref: `#${lesson}` }));
 
-export const fidaxomicinPharmacologyQuestionBank = [...generated, ...cases];
+const sourceReviewedAdultDeliveryQuestions = {
+  "fidaxomicin-pharmacology-042": {
+    "choices": [
+      "Use the urgent fulminant-disease pathway rather than fidaxomicin monotherapy",
+      "Use fidaxomicin monotherapy unchanged despite shock and ileus",
+      "Delay the fulminant pathway until the routine ten-day course is over",
+      "Use IV fidaxomicin instead of the bowel-directed fulminant combination"
+    ],
+    "rationale": "The book separates fulminant/complicated CDI with shock, ileus or toxic megacolon from ordinary fidaxomicin regimens. Its fulminant pathway uses bowel-directed vancomycin plus IV metronidazole; it is not fidaxomicin monotherapy."
+  },
+  "fidaxomicin-pharmacology-049": {
+    "choices": [
+      "Adults receive fidaxomicin 200 mg orally twice daily for 10 days",
+      "Adults receive 200 mg orally once daily for five days",
+      "Adults receive 500 mg orally four times daily as the routine fidaxomicin course",
+      "Adults receive 200 mg intravenously twice daily for ten days"
+    ],
+    "rationale": "The book specifies fidaxomicin 200 mg by mouth twice daily for ten days. Dose, route, frequency and duration belong to the same prescription."
+  },
+  "fidaxomicin-pharmacology-050": {
+    "choices": [
+      "Write dose, route, interval, duration, and completion date",
+      "Record only the tablet strength and omit route and duration",
+      "Write a once-daily interval because the total course lasts ten days",
+      "Leave the completion date open and stop whenever the first symptoms improve"
+    ],
+    "rationale": "Translate the book regimen into an executable order: 200 mg orally twice daily for ten days. The completion date follows the prescribed course rather than a change to once-daily dosing or an unspecified duration."
+  },
+  "fidaxomicin-pharmacology-052": {
+    "choices": [
+      "Converting twice daily into once daily",
+      "Confirming that the interval is twice daily",
+      "Recording the oral route with the dose",
+      "Planning completion of the specified ten-day course"
+    ],
+    "rationale": "Changing twice daily to once daily fails to deliver the book regimen of 200 mg orally twice daily for ten days. The other actions preserve its specified route, interval or duration."
+  },
+  "fidaxomicin-pharmacology-057": {
+    "choices": [
+      "No fidaxomicin dose adjustment is recommended based on renal function",
+      "Every renal impairment category requires a once-daily fidaxomicin schedule",
+      "A low creatinine clearance requires replacing oral fidaxomicin with IV fidaxomicin",
+      "Renal impairment removes the need to identify the CDI episode and severity"
+    ],
+    "rationale": "The book lists minimal systemic absorption and explicitly states that fidaxomicin does not require renal dose adjustment. This dosing statement does not remove the need to assess CDI severity or the rest of the patient."
+  },
+  "fidaxomicin-pharmacology-058": {
+    "choices": [
+      "Preserve the labeled regimen while monitoring the whole patient",
+      "Reduce the routine frequency to once daily solely because creatinine clearance is low",
+      "Withhold all CDI assessment until kidney function returns to normal",
+      "Replace the oral regimen with IV fidaxomicin when renal function declines"
+    ],
+    "rationale": "Preserve the book dose of 200 mg orally twice daily for ten days because no renal adjustment is required. Continue the clinical review: kidney findings and fluid losses still help describe the patient and illness."
+  },
+  "fidaxomicin-pharmacology-059": {
+    "choices": [
+      "Assess kidney function, hydration, other drugs, and competing causes of illness",
+      "Review only tablet strength and omit fluid losses and kidney findings",
+      "Assume an unchanged drug dose means dehydration cannot matter",
+      "Use creatinine clearance alone and omit symptoms, other medicines and possible causes of diarrhea"
+    ],
+    "rationale": "No renal dose adjustment is required in the book, but that is not a complete patient assessment. Its CDI review uses the patient profile and severity findings, while the diarrhea section identifies fluid replacement and several possible causes."
+  },
+  "fidaxomicin-pharmacology-060": {
+    "choices": [
+      "Reducing the dose solely because creatinine clearance is low",
+      "Assessing fluid losses and kidney findings while retaining the book regimen",
+      "Confirming the oral dose and twice-daily interval",
+      "Reassessing severity when the patient deteriorates despite an unchanged dose"
+    ],
+    "rationale": "Reducing the dose solely for low creatinine clearance conflicts with the book no-adjustment statement. Assessing hydration, confirming the regimen and reviewing deterioration are compatible with that statement."
+  },
+  "fidaxomicin-pharmacology-061": {
+    "choices": [
+      "Response is judged by improving diarrhea and systemic findings, not an isolated assay",
+      "Declare recovery from a test result even when shock or ileus is developing",
+      "Judge improvement only by the number of tablets dispensed",
+      "Ignore the clinical course once the first assay is positive"
+    ],
+    "rationale": "The book combines CDI symptoms and diagnostic evidence with patient-profile review and separate severity pathways. Judge improvement by the course of diarrhea and systemic findings; a positive assay alone does not show that the illness is improving."
+  },
+  "fidaxomicin-pharmacology-062": {
+    "choices": [
+      "Reassess early for response, complications, and a wrong diagnosis",
+      "Wait until the last scheduled dose before evaluating new shock or ileus",
+      "Extend the same regimen indefinitely without reassessing disease severity",
+      "Treat the first positive assay as sufficient to dismiss worsening symptoms"
+    ],
+    "rationale": "The book describes progression to toxic megacolon, colectomy or death and a different fulminant pathway for shock, ileus or megacolon. New deterioration requires reassessment rather than waiting for the ordinary course to end."
+  },
+  "fidaxomicin-pharmacology-063": {
+    "choices": [
+      "Track stool frequency, pain, fever, hydration, WBC, creatinine, and hemodynamics",
+      "Track only the prescription end date and omit current clinical findings",
+      "Use one creatinine value without reviewing stool output, pain or hemodynamics",
+      "Count tablets dispensed but omit diarrhea, fluid losses and systemic findings"
+    ],
+    "rationale": "Review stool frequency, pain, fever, hydration, WBC, creatinine and hemodynamics together. These connect the book's CDI symptoms and severity findings with diarrhea-related fluid losses, rather than relying on a pill count or one laboratory value."
+  },
+  "fidaxomicin-pharmacology-064": {
+    "choices": [
+      "Waiting until day ten despite clinical deterioration",
+      "Reassessing shock, ileus or megacolon as a change in the treatment pathway",
+      "Reviewing fluid losses and other causes of diarrhea",
+      "Comparing current symptoms and systemic findings with the earlier profile"
+    ],
+    "rationale": "A ten-day ordinary course is not permission to ignore deterioration. The book separates fulminant shock, ileus or megacolon into a different combined regimen and identifies potentially life-threatening progression."
+  }
+};
+export const fidaxomicinPharmacologyQuestionBank = [...generated, ...cases].map((question) => sourceReviewedAdultDeliveryQuestions[question.id] ? { ...question, ...sourceReviewedAdultDeliveryQuestions[question.id] } : question);
