@@ -1,0 +1,1364 @@
+{
+  "drug": "carbamazepine",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Full current public oral Tegretol, Carbatrol and Equetro clinical sections, selected product identity/storage and current FDA IV product withdrawal notice. No unavailable IV current-label access or paywalled guideline asserted.",
+  "blueprint": {
+    "sections": [
+      [
+        "indications",
+        "Indications"
+      ],
+      [
+        "dosage",
+        "Dosage and administration"
+      ],
+      [
+        "safety",
+        "Safety"
+      ],
+      [
+        "interactions",
+        "Drug interactions"
+      ],
+      [
+        "populations",
+        "Use in specific populations"
+      ],
+      [
+        "pharmacology",
+        "Clinical pharmacology"
+      ],
+      [
+        "practice",
+        "Monitoring and counseling"
+      ],
+      [
+        "product",
+        "Product identification"
+      ]
+    ],
+    "essential_safety": true,
+    "hero_facts": 3,
+    "APAP_modified": false
+  },
+  "sources": [
+    {
+      "id": "tegretol",
+      "title": "Tegretol / Tegretol-XR \u00b7 Current full label",
+      "publisher": "Novartis / DailyMed",
+      "note": "PI July 2026; SPL 39 effective August 20, 2026; published August 21, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8d409411-aa9f-4f3a-a52c-fbcb0c3ec053"
+    },
+    {
+      "id": "carbatrol",
+      "title": "Carbatrol \u00b7 Current full label",
+      "publisher": "Takeda / DailyMed",
+      "note": "PI August 2026; SPL 41 effective August 17, 2026; published August 25, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bc03e499-5bac-4293-bff4-6864153a624d"
+    },
+    {
+      "id": "equetro",
+      "title": "Equetro \u00b7 Current full label",
+      "publisher": "Validus / DailyMed",
+      "note": "PI October 2022; current SPL 10 effective August 19, 2025; published August 21, 2025.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=be478f3c-40f6-47cc-8ab9-f420a9372b1c"
+    },
+    {
+      "id": "withdrawal",
+      "title": "Carnexiv NDA 206030 \u00b7 Approval withdrawal notice",
+      "publisher": "FDA / Federal Register via GovInfo",
+      "note": "FR 2026-13616, July 6, 2026, pages 41045\u201341046; effective August 5, 2026. Applicant-requested withdrawal for products no longer marketed; existing-inventory exception retained.",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-06/html/2026-13616.htm"
+    }
+  ],
+  "source_records": [
+    {
+      "id": "tegretol",
+      "local_snapshot": "/tmp/nas-drug-sources/tegretol.xml",
+      "label_revision": "July 2026",
+      "set_id": "8d409411-aa9f-4f3a-a52c-fbcb0c3ec053",
+      "spl_version": "39",
+      "spl_effective_time": "20260820",
+      "dailymed_published_date": "2026-08-21",
+      "sha256": "24932aff1e36c5d531347fb0a7c717960090c031353cd8c49c1a0e12a27e1471",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-23-thyroid-metformin/tegretol.xml"
+    },
+    {
+      "id": "carbatrol",
+      "local_snapshot": "/tmp/nas-drug-sources/carbatrol.xml",
+      "label_revision": "August 2026",
+      "set_id": "bc03e499-5bac-4293-bff4-6864153a624d",
+      "spl_version": "41",
+      "spl_effective_time": "20260817",
+      "dailymed_published_date": "2026-08-25",
+      "sha256": "16846395e34b735b0a5b7a938155dfb7e3576e660e0fadb92ace04161a93bba4",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-23-thyroid-metformin/carbatrol.xml"
+    },
+    {
+      "id": "equetro",
+      "local_snapshot": "/tmp/nas-drug-sources/equetro.xml",
+      "label_revision": "October 2022",
+      "set_id": "be478f3c-40f6-47cc-8ab9-f420a9372b1c",
+      "spl_version": "10",
+      "spl_effective_time": "20250819",
+      "dailymed_published_date": "2025-08-21",
+      "sha256": "cf2b77577692a2ad725410c28bef042d9fbd8dec98de0016c3d91d65022ad799",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-23-thyroid-metformin/equetro.xml"
+    },
+    {
+      "id": "withdrawal",
+      "local_snapshot": "/tmp/nas-drug-sources/carnexiv-withdrawal.html",
+      "revision": "July 6, 2026; effective August 5, 2026",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-06/html/2026-13616.htm",
+      "sha256": "b9bfb078675db3be202648adc5ea58373fd82330cfaca009870fb37f9d9e84df",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-23-thyroid-metformin/carnexiv-withdrawal.html"
+    }
+  ],
+  "assertion_map": [
+    {
+      "section": "indications",
+      "card": "Seizures and neuralgia",
+      "assertions": [
+        "Tegretol, Carbatrol and Equetro labels cover partial seizures with complex symptoms, generalized tonic-clonic seizures and selected mixed patterns. They also cover pain of true trigeminal neuralgia; reported glossopharyngeal benefit is distinguished from a general pain indication. Carbamazepine is unsuitable as a routine analgesic for minor aches. Absence seizures are not controlled; some mixed disorders including atypical absence can worsen."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "INDICATIONS AND USAGE; PRECAUTIONS, General"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "INDICATIONS AND USAGE"
+        },
+        {
+          "id": "equetro",
+          "sections": "1.2\u20131.3"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Bipolar and route status",
+      "assertions": [
+        "Equetro is labeled for acute manic or mixed episodes of bipolar I disorder; that indication is not automatically attached to Tegretol or Carbatrol. This does not establish bipolar-depression or maintenance approval. These reviewed products are oral prescription medicines. FDA withdrew Carnexiv IV NDA 206030 approval effective August 5, 2026 at the applicant\u2019s request after marketing stopped; the notice permits qualifying existing inventory until depletion or expiry. No historical IV regimen is presented as a current universal substitution instruction."
+      ],
+      "sources": [
+        {
+          "id": "equetro",
+          "sections": "1.1;14.1"
+        },
+        {
+          "id": "tegretol",
+          "sections": "DESCRIPTION; INDICATIONS"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "DESCRIPTION; INDICATIONS"
+        },
+        {
+          "id": "withdrawal",
+          "sections": "Summary; Dates; Table 1 NDA 206030; concluding inventory provision"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Tegretol epilepsy initiation",
+      "assertions": [
+        "These are label starting regimens, not a dose to reach independently. Increase weekly according to response and tolerability: up to 200 mg/day above age 12, and up to 100 mg/day at ages 6\u201312. IR maintenance is generally divided three or four times daily; XR is twice daily. Under six, titration and measured concentrations guide a specialist regimen; safety above 35 mg/kg/day is not established. The suspension is 100 mg/5 mL (20 mg/mL)."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "DOSAGE AND ADMINISTRATION; dose table"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Population",
+          "Initial daily regimen"
+        ],
+        "rows": [
+          [
+            "Over 12 years",
+            "IR or XR: 200 mg twice daily; suspension: 5 mL four times daily (400 mg/day)"
+          ],
+          [
+            "6\u201312 years",
+            "Tablets: 100 mg twice daily; suspension: 2.5 mL four times daily (200 mg/day)"
+          ],
+          [
+            "Under 6 years",
+            "10\u201320 mg/kg/day: IR tablets divided twice/three times daily, or suspension four times daily; no infant XR conversion inferred"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Epilepsy dose ceilings and ER capsules",
+      "assertions": [
+        "Tegretol and Carbatrol generally limit ages 12\u201315 to 1000 mg/day and above 15 to 1200 mg/day; adult doses to 1600 mg/day are exceptional rather than a routine goal. Tegretol ages 6\u201312 generally should not exceed 1000 mg/day. Carbatrol starts above age 12 at 200 mg twice daily with weekly increases up to 200 mg/day; under 12 its label describes conversion only when existing IR daily dose is at least 400 mg. Equetro adult epilepsy labeling allows up to 800 mg twice daily; pediatric ceilings and conversion eligibility remain product-specific. Its overlapping age-15 ceiling wording requires prescriber/pharmacist clarification rather than an inferred higher adolescent limit."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "equetro",
+          "sections": "2.4\u20132.5"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Trigeminal neuralgia and acute mania",
+      "assertions": [
+        "Tegretol neuralgia starts at 100 mg twice daily (IR/XR), or suspension 2.5 mL four times daily: total 200 mg/day. Increase only as needed, by up to 200 mg/day; maximum 1200 mg/day and usual maintenance 400\u2013800 mg/day. Equetro neuralgia starts with one 200 mg capsule once on the first day, with later increases up to 200 mg/day using 100 mg every-12-hour increments. Its acute mania regimen starts 200 mg twice daily and may increase by 200 mg/day; above 1600 mg/day was not studied. Reassess neuralgia dose reduction at least every three months. Pediatric Equetro bipolar/neuralgia effectiveness is not established."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "DOSAGE AND ADMINISTRATION, Trigeminal Neuralgia"
+        },
+        {
+          "id": "equetro",
+          "sections": "2.2\u20132.3;8.4"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and supervised conversion",
+      "assertions": [
+        "Take Tegretol with meals; shake its suspension and use a calibrated oral device. Do not administer the suspension simultaneously with other liquid medicines or diluents because precipitation occurs with some. Swallow Tegretol-XR intact; reject damaged tablets or those without the release portal. Its empty shell can appear in stool. Carbatrol/Equetro may be taken with or without food and opened onto a teaspoon of soft food; swallow every bead without chewing/crushing. IR-to-ER conversion usually retains total daily milligrams with twice-daily ER dosing and close reassessment. IR-to-suspension uses smaller, more frequent doses; do not perform a home substitution."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "DOSAGE AND ADMINISTRATION; PRECAUTIONS, Drug Interactions"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "equetro",
+          "sections": "2.5;2.8"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Organ function and discontinuation",
+      "assertions": [
+        "The selected oral labels give no validated CrCl-based or dialysis adjustment table. Hepatic disease requires cautious individualized selection; Equetro advises considering reduction, and active or worsening liver disease warrants clinician-directed discontinuation. Taper routine discontinuation to reduce seizure/status risk. Serious allergy or marrow/liver injury may require urgent withdrawal with an alternative seizure plan, rather than waiting through a routine taper."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "PRECAUTIONS, General/Laboratory Tests; WARNINGS"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "Special Populations; Laboratory Tests"
+        },
+        {
+          "id": "equetro",
+          "sections": "2.6;5.6;5.10;12.3"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Assess HLA-B*1502 before starting in genetically at-risk ancestry; avoid a positive result unless benefit clearly outweighs risk. Known HLA-A*3101 positivity also requires benefit-risk review. Negative testing does not rule out SJS/TEN or DRESS. Rash, blistering, mouth ulcers, fever, facial swelling or swollen nodes need immediate assessment; serious hypersensitivity may begin without rash.",
+        "Monitor for marrow suppression, hepatic injury, suicidal thoughts, hyponatremia/SIADH, sedation, imbalance and cardiac conduction disturbance. Older adults and diuretic users are more vulnerable to low sodium. Avoid in hepatic porphyria; assess glaucoma/increased IOP. Tegretol suspension contains propylene glycol 25 mg/mL and sorbitol: young children, especially neonates, need exposure/risk assessment; suspected propylene-glycol toxicity requires stopping that formulation. Rare hereditary fructose intolerance precludes its sorbitol-containing suspension."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "BOXED WARNING; WARNINGS; PRECAUTIONS, General"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "WARNING; WARNINGS; PRECAUTIONS"
+        },
+        {
+          "id": "equetro",
+          "sections": "5.1\u20135.13"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "Previous bone marrow depression, carbamazepine hypersensitivity or sensitivity to related tricyclic compounds preclude use in the selected labels. Avoid MAOI coadministration and allow at least 14 days after stopping an MAOI; Equetro lists this formally. Nefazodone coadministration is contraindicated. Carbatrol also contraindicates delavirdine; Equetro extends the restriction to other CYP3A4-substrate NNRTIs. Check the exact antiretroviral and product label rather than assume all antiviral agents have the same classification."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "CONTRAINDICATIONS"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "CONTRAINDICATIONS"
+        },
+        {
+          "id": "equetro",
+          "sections": "4;7.3"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "The reviewed oral labels carry boxed warnings for potentially fatal SJS/TEN with HLA-B*1502 screening considerations and for aplastic anemia/agranulocytosis. Obtain a baseline CBC and closely evaluate falling counts. A small count change is not automatically aplastic anemia, but significant marrow depression requires an urgent treatment decision."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "BOXED WARNING"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "WARNING"
+        },
+        {
+          "id": "equetro",
+          "sections": "BOXED WARNING;2.1"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Common problems include dizziness, drowsiness, unsteadiness, nausea, vomiting, blurred/double vision and coordination difficulty. Serious reactions include severe skin/hypersensitivity syndromes, blood dyscrasias, liver failure, hyponatremia, conduction abnormalities and mood/suicidality changes. Frequencies from adult Equetro mania trials are not universal pediatric or epilepsy rates."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "ADVERSE REACTIONS; WARNINGS"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "ADVERSE REACTIONS"
+        },
+        {
+          "id": "equetro",
+          "sections": "5\u20136"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Inhibitors, inducers and the epoxide metabolite",
+      "assertions": [
+        "Macrolides, azole antifungals, some calcium-channel blockers and grapefruit can raise carbamazepine exposure; rifampin, phenytoin and other inducers can lower it. Valproate and other epoxide-hydrolase inhibitors may raise the active epoxide metabolite even when parent concentration looks acceptable. Review levels, symptoms and dose after changes; no single fixed correction fits all interacting medicines."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "Drug Interactions, effects on Tegretol"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "Drug Interactions"
+        },
+        {
+          "id": "equetro",
+          "sections": "7.1;12.3"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Reduced co-medication exposure",
+      "assertions": [
+        "Strong enzyme induction can undermine hormonal contraception, anticoagulants, transplant medicines, antiretrovirals, some psychotropics, levothyroxine and corticosteroids. Consider effective alternative/back-up contraception; breakthrough bleeding is not a reliable indicator of protection. Generally avoid the direct oral anticoagulants apixaban, rivaroxaban, dabigatran and edoxaban with carbamazepine. Warfarin requires anticoagulation monitoring; tacrolimus requires level-guided management. Assess both initiation and withdrawal, when induction changes."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "Drug Interactions, effects on other agents"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "Drug Interactions"
+        },
+        {
+          "id": "equetro",
+          "sections": "7.2;8.3"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Additive toxicity and procedures",
+      "assertions": [
+        "Alcohol, opioids and other sedating medicines can add impairment and respiratory depression; lithium can add neurotoxicity, and isoniazid can add hepatic risk. Tell anesthesia teams about carbamazepine because nondepolarizing neuromuscular-blocker requirements can change. Do not mix Tegretol suspension with another oral liquid; spacing decisions require the pharmacist rather than an invented universal interval."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "Drug Interactions; Information for Patients"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "Drug Interactions, CNS Depressants"
+        },
+        {
+          "id": "equetro",
+          "sections": "7.3"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": [
+        "Tegretol provides pediatric epilepsy dosing; Carbatrol under-12 conversion has a 400 mg/day existing-IR threshold. These do not establish pediatric bipolar or neuralgia efficacy for Equetro. Younger children metabolize drug differently and Tegretol suspension excipients add risk; neonates should receive it only after careful review when no alternatives exist. Older adults often need cautious low-end selection and sodium, cognition/fall and interaction surveillance."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "WARNINGS, Propylene Glycol; Pediatric Use; DOSAGE"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "Pediatric Use; DOSAGE"
+        },
+        {
+          "id": "equetro",
+          "sections": "8.4\u20138.5;12.3"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Kidney and liver impairment",
+      "assertions": [
+        "Renal and hepatic PK effects are not well characterized in the selected oral labels. No blanket renal percentage reduction is validated; review organ function and drug levels individually. Consider hepatic reduction, perform baseline/periodic liver assessment and act on worsening dysfunction. This oral profile does not transfer historical IV excipient restrictions or doses onto tablets/capsules."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "PRECAUTIONS, General/Laboratory Tests"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "Special Populations"
+        },
+        {
+          "id": "equetro",
+          "sections": "5.10;12.3"
+        },
+        {
+          "id": "withdrawal",
+          "sections": "NDA 206030 withdrawal"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and contraception",
+      "assertions": [
+        "Carbamazepine crosses the placenta and is associated with major congenital malformations, including neural-tube defects. Plan pregnancy with the treating team, discuss alternatives, folic acid and pregnancy-registry participation, and balance untreated epilepsy/bipolar illness against exposure risks. Folate is advised but is not proven to eliminate drug-associated malformations. Do not abruptly stop seizure treatment after a positive pregnancy test. Review enzyme-induced contraceptive failure before conception."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "WARNINGS, Usage in Pregnancy; Drug Interactions"
+        },
+        {
+          "id": "equetro",
+          "sections": "5.5;8.1;8.3"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Breastfeeding",
+      "assertions": [
+        "Drug and epoxide enter human milk. Current Equetro wording supports individualized consideration of feeding benefits and maternal treatment, acknowledging reported infant liver/feeding/weight problems and unknown milk-production effects. Tegretol/Carbatrol retain more restrictive nursing language. Discuss the actual product and infant circumstances; milk transfer is not zero and these differences do not establish a universal breastfeeding prohibition or compatibility guarantee."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "Nursing Mothers"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "Nursing Mothers"
+        },
+        {
+          "id": "equetro",
+          "sections": "8.2"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and active metabolite",
+      "assertions": [
+        "Labels describe anticonvulsant effects on neuronal transmission but do not establish a complete human mechanism for every indication; Equetro\u2019s antimanic mechanism is unclear. CYP3A4 forms carbamazepine-10,11-epoxide, which has anticonvulsant activity; epoxide hydrolase further metabolizes it. Do not equate parent level alone with total active-metabolite toxicity."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "Mechanism of Action; Pharmacokinetics"
+        },
+        {
+          "id": "equetro",
+          "sections": "12.1;12.3"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Absorption and elimination",
+      "assertions": [
+        "Suspension has faster/higher peaks than an equivalent IR dose; release formulations use different peak times. Protein binding is about 76%. Tegretol initial half-life spans roughly 25\u201365 hours and falls to 12\u201317 hours with repeated use; autoinduction develops over about three to five weeks. Most urinary elimination is metabolites, not unchanged drug. The usual total concentration range is 4\u201312 mcg/mL, a clinical aid rather than a universal target for every indication or an instruction to redose."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "Pharmacokinetics; Pediatric Use"
+        },
+        {
+          "id": "equetro",
+          "sections": "12.3;2.7"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Baseline and follow-up",
+      "assertions": [
+        "Assess seizure type, blood counts, liver function, relevant HLA status and interacting medicines before treatment. Labels recommend periodic liver, renal/urinalysis and eye assessment; Carbatrol also recommends lipid review. Monitor sodium when risk or symptoms warrant, CBC abnormalities closely and mood/coordination throughout. Drug concentrations are useful for poor control, suspected toxicity, adherence questions and interaction/formulation changes; no one fixed interval applies to every patient."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "Laboratory Tests; WARNINGS"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "Laboratory Tests"
+        },
+        {
+          "id": "equetro",
+          "sections": "2.1;2.7;5.7;5.13"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling and urgent action",
+      "assertions": [
+        "Read the Medication Guide; take the prescribed formulation consistently and do not double or abruptly stop treatment without advice. Avoid driving until effects are known and discuss alcohol/sedatives. Seek immediate care for serious rash/blisters, mouth sores, fever, unusual bleeding, jaundice, swelling/breathing trouble or suicidal intent. Confusion, falls or increasing seizures may indicate low sodium or toxicity, not simply treatment failure. Suspected overdose needs emergency/poison-center care; do not induce vomiting at home."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "Information for Patients; Medication Guide"
+        },
+        {
+          "id": "equetro",
+          "sections": "10.2;17; Medication Guide"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Long-term coordination",
+      "assertions": [
+        "Recheck contraception, pregnancy plans and every new OTC/herbal or prescription medicine. Neuralgia treatment needs periodic attempts at clinician-directed minimum effective dosing; epilepsy or mania reassessment uses its own disease plan. Do not combine duplicate carbamazepine products to imitate a desired release formulation."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "DOSAGE, Trigeminal Neuralgia; Drug Interactions"
+        },
+        {
+          "id": "equetro",
+          "sections": "17;2.3"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Selected Tegretol 200 mg IR tablets are pink, capsule-shaped and scored, marked Tegretol and 27 twice; a 100-tablet bottle is NDC 0078-0509-05. XR 100/200/400 mg tablets are yellow/pink/brown, marked T and strength with a release portal. Carbatrol and Equetro capsule colors/imprints differ; appearance alone cannot establish interchangeability."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "HOW SUPPLIED"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Tegretol: 200 mg IR tablets, XR 100/200/400 mg tablets and 100 mg/5 mL oral suspension. Carbatrol/Equetro: 100/200/300 mg ER capsules with beads. The selected Tegretol suspension is yellow-orange, citrus-vanilla flavored and supplied in 450 mL bottles; check calibrated mL. Carnexiv\u2019s withdrawn NDA is a separate IV regulatory record, not permission to inject an oral product."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "DESCRIPTION; HOW SUPPLIED"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "DESCRIPTION; HOW SUPPLIED"
+        },
+        {
+          "id": "equetro",
+          "sections": "3;16"
+        },
+        {
+          "id": "withdrawal",
+          "sections": "Table 1"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Tegretol tablets/XR: 20\u201325\u00b0C, permitted excursions 15\u201330\u00b0C, protected from moisture in a tight container; suspension: do not store above 30\u00b0C, use a tight light-resistant container and shake well. Carbatrol/Equetro: 25\u00b0C with permitted 15\u201330\u00b0C excursions, protected from light/moisture. Keep ER beads intact, XR tablets uncrushed and the exact dispensing label with the medicine; no universal opened-liquid expiry is inferred."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "HOW SUPPLIED; DOSAGE"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "HOW SUPPLIED; DOSAGE"
+        },
+        {
+          "id": "equetro",
+          "sections": "2.8;16.2"
+        }
+      ]
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Seizures and neuralgia",
+      "assertions": [
+        "Tegretol, Carbatrol and Equetro labels cover partial seizures with complex symptoms, generalized tonic-clonic seizures and selected mixed patterns. They also cover pain of true trigeminal neuralgia; reported glossopharyngeal benefit is distinguished from a general pain indication. Carbamazepine is unsuitable as a routine analgesic for minor aches. Absence seizures are not controlled; some mixed disorders including atypical absence can worsen."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "INDICATIONS AND USAGE; PRECAUTIONS, General"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "INDICATIONS AND USAGE"
+        },
+        {
+          "id": "equetro",
+          "sections": "1.2\u20131.3"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Bipolar and route status",
+      "assertions": [
+        "Equetro is labeled for acute manic or mixed episodes of bipolar I disorder; that indication is not automatically attached to Tegretol or Carbatrol. This does not establish bipolar-depression or maintenance approval. These reviewed products are oral prescription medicines. FDA withdrew Carnexiv IV NDA 206030 approval effective August 5, 2026 at the applicant\u2019s request after marketing stopped; the notice permits qualifying existing inventory until depletion or expiry. No historical IV regimen is presented as a current universal substitution instruction."
+      ],
+      "sources": [
+        {
+          "id": "equetro",
+          "sections": "1.1;14.1"
+        },
+        {
+          "id": "tegretol",
+          "sections": "DESCRIPTION; INDICATIONS"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "DESCRIPTION; INDICATIONS"
+        },
+        {
+          "id": "withdrawal",
+          "sections": "Summary; Dates; Table 1 NDA 206030; concluding inventory provision"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Tegretol epilepsy initiation",
+      "assertions": [
+        "These are label starting regimens, not a dose to reach independently. Increase weekly according to response and tolerability: up to 200 mg/day above age 12, and up to 100 mg/day at ages 6\u201312. IR maintenance is generally divided three or four times daily; XR is twice daily. Under six, titration and measured concentrations guide a specialist regimen; safety above 35 mg/kg/day is not established. The suspension is 100 mg/5 mL (20 mg/mL)."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "DOSAGE AND ADMINISTRATION; dose table"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Population",
+          "Initial daily regimen"
+        ],
+        "rows": [
+          [
+            "Over 12 years",
+            "IR or XR: 200 mg twice daily; suspension: 5 mL four times daily (400 mg/day)"
+          ],
+          [
+            "6\u201312 years",
+            "Tablets: 100 mg twice daily; suspension: 2.5 mL four times daily (200 mg/day)"
+          ],
+          [
+            "Under 6 years",
+            "10\u201320 mg/kg/day: IR tablets divided twice/three times daily, or suspension four times daily; no infant XR conversion inferred"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Epilepsy dose ceilings and ER capsules",
+      "assertions": [
+        "Tegretol and Carbatrol generally limit ages 12\u201315 to 1000 mg/day and above 15 to 1200 mg/day; adult doses to 1600 mg/day are exceptional rather than a routine goal. Tegretol ages 6\u201312 generally should not exceed 1000 mg/day. Carbatrol starts above age 12 at 200 mg twice daily with weekly increases up to 200 mg/day; under 12 its label describes conversion only when existing IR daily dose is at least 400 mg. Equetro adult epilepsy labeling allows up to 800 mg twice daily; pediatric ceilings and conversion eligibility remain product-specific. Its overlapping age-15 ceiling wording requires prescriber/pharmacist clarification rather than an inferred higher adolescent limit."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "equetro",
+          "sections": "2.4\u20132.5"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Trigeminal neuralgia and acute mania",
+      "assertions": [
+        "Tegretol neuralgia starts at 100 mg twice daily (IR/XR), or suspension 2.5 mL four times daily: total 200 mg/day. Increase only as needed, by up to 200 mg/day; maximum 1200 mg/day and usual maintenance 400\u2013800 mg/day. Equetro neuralgia starts with one 200 mg capsule once on the first day, with later increases up to 200 mg/day using 100 mg every-12-hour increments. Its acute mania regimen starts 200 mg twice daily and may increase by 200 mg/day; above 1600 mg/day was not studied. Reassess neuralgia dose reduction at least every three months. Pediatric Equetro bipolar/neuralgia effectiveness is not established."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "DOSAGE AND ADMINISTRATION, Trigeminal Neuralgia"
+        },
+        {
+          "id": "equetro",
+          "sections": "2.2\u20132.3;8.4"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and supervised conversion",
+      "assertions": [
+        "Take Tegretol with meals; shake its suspension and use a calibrated oral device. Do not administer the suspension simultaneously with other liquid medicines or diluents because precipitation occurs with some. Swallow Tegretol-XR intact; reject damaged tablets or those without the release portal. Its empty shell can appear in stool. Carbatrol/Equetro may be taken with or without food and opened onto a teaspoon of soft food; swallow every bead without chewing/crushing. IR-to-ER conversion usually retains total daily milligrams with twice-daily ER dosing and close reassessment. IR-to-suspension uses smaller, more frequent doses; do not perform a home substitution."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "DOSAGE AND ADMINISTRATION; PRECAUTIONS, Drug Interactions"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "equetro",
+          "sections": "2.5;2.8"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Organ function and discontinuation",
+      "assertions": [
+        "The selected oral labels give no validated CrCl-based or dialysis adjustment table. Hepatic disease requires cautious individualized selection; Equetro advises considering reduction, and active or worsening liver disease warrants clinician-directed discontinuation. Taper routine discontinuation to reduce seizure/status risk. Serious allergy or marrow/liver injury may require urgent withdrawal with an alternative seizure plan, rather than waiting through a routine taper."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "PRECAUTIONS, General/Laboratory Tests; WARNINGS"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "Special Populations; Laboratory Tests"
+        },
+        {
+          "id": "equetro",
+          "sections": "2.6;5.6;5.10;12.3"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Assess HLA-B*1502 before starting in genetically at-risk ancestry; avoid a positive result unless benefit clearly outweighs risk. Known HLA-A*3101 positivity also requires benefit-risk review. Negative testing does not rule out SJS/TEN or DRESS. Rash, blistering, mouth ulcers, fever, facial swelling or swollen nodes need immediate assessment; serious hypersensitivity may begin without rash.",
+        "Monitor for marrow suppression, hepatic injury, suicidal thoughts, hyponatremia/SIADH, sedation, imbalance and cardiac conduction disturbance. Older adults and diuretic users are more vulnerable to low sodium. Avoid in hepatic porphyria; assess glaucoma/increased IOP. Tegretol suspension contains propylene glycol 25 mg/mL and sorbitol: young children, especially neonates, need exposure/risk assessment; suspected propylene-glycol toxicity requires stopping that formulation. Rare hereditary fructose intolerance precludes its sorbitol-containing suspension."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "BOXED WARNING; WARNINGS; PRECAUTIONS, General"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "WARNING; WARNINGS; PRECAUTIONS"
+        },
+        {
+          "id": "equetro",
+          "sections": "5.1\u20135.13"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "Previous bone marrow depression, carbamazepine hypersensitivity or sensitivity to related tricyclic compounds preclude use in the selected labels. Avoid MAOI coadministration and allow at least 14 days after stopping an MAOI; Equetro lists this formally. Nefazodone coadministration is contraindicated. Carbatrol also contraindicates delavirdine; Equetro extends the restriction to other CYP3A4-substrate NNRTIs. Check the exact antiretroviral and product label rather than assume all antiviral agents have the same classification."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "CONTRAINDICATIONS"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "CONTRAINDICATIONS"
+        },
+        {
+          "id": "equetro",
+          "sections": "4;7.3"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "The reviewed oral labels carry boxed warnings for potentially fatal SJS/TEN with HLA-B*1502 screening considerations and for aplastic anemia/agranulocytosis. Obtain a baseline CBC and closely evaluate falling counts. A small count change is not automatically aplastic anemia, but significant marrow depression requires an urgent treatment decision."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "BOXED WARNING"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "WARNING"
+        },
+        {
+          "id": "equetro",
+          "sections": "BOXED WARNING;2.1"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Common problems include dizziness, drowsiness, unsteadiness, nausea, vomiting, blurred/double vision and coordination difficulty. Serious reactions include severe skin/hypersensitivity syndromes, blood dyscrasias, liver failure, hyponatremia, conduction abnormalities and mood/suicidality changes. Frequencies from adult Equetro mania trials are not universal pediatric or epilepsy rates."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "ADVERSE REACTIONS; WARNINGS"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "ADVERSE REACTIONS"
+        },
+        {
+          "id": "equetro",
+          "sections": "5\u20136"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Inhibitors, inducers and the epoxide metabolite",
+      "assertions": [
+        "Macrolides, azole antifungals, some calcium-channel blockers and grapefruit can raise carbamazepine exposure; rifampin, phenytoin and other inducers can lower it. Valproate and other epoxide-hydrolase inhibitors may raise the active epoxide metabolite even when parent concentration looks acceptable. Review levels, symptoms and dose after changes; no single fixed correction fits all interacting medicines."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "Drug Interactions, effects on Tegretol"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "Drug Interactions"
+        },
+        {
+          "id": "equetro",
+          "sections": "7.1;12.3"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Reduced co-medication exposure",
+      "assertions": [
+        "Strong enzyme induction can undermine hormonal contraception, anticoagulants, transplant medicines, antiretrovirals, some psychotropics, levothyroxine and corticosteroids. Consider effective alternative/back-up contraception; breakthrough bleeding is not a reliable indicator of protection. Generally avoid the direct oral anticoagulants apixaban, rivaroxaban, dabigatran and edoxaban with carbamazepine. Warfarin requires anticoagulation monitoring; tacrolimus requires level-guided management. Assess both initiation and withdrawal, when induction changes."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "Drug Interactions, effects on other agents"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "Drug Interactions"
+        },
+        {
+          "id": "equetro",
+          "sections": "7.2;8.3"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Additive toxicity and procedures",
+      "assertions": [
+        "Alcohol, opioids and other sedating medicines can add impairment and respiratory depression; lithium can add neurotoxicity, and isoniazid can add hepatic risk. Tell anesthesia teams about carbamazepine because nondepolarizing neuromuscular-blocker requirements can change. Do not mix Tegretol suspension with another oral liquid; spacing decisions require the pharmacist rather than an invented universal interval."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "Drug Interactions; Information for Patients"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "Drug Interactions, CNS Depressants"
+        },
+        {
+          "id": "equetro",
+          "sections": "7.3"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": [
+        "Tegretol provides pediatric epilepsy dosing; Carbatrol under-12 conversion has a 400 mg/day existing-IR threshold. These do not establish pediatric bipolar or neuralgia efficacy for Equetro. Younger children metabolize drug differently and Tegretol suspension excipients add risk; neonates should receive it only after careful review when no alternatives exist. Older adults often need cautious low-end selection and sodium, cognition/fall and interaction surveillance."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "WARNINGS, Propylene Glycol; Pediatric Use; DOSAGE"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "Pediatric Use; DOSAGE"
+        },
+        {
+          "id": "equetro",
+          "sections": "8.4\u20138.5;12.3"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Kidney and liver impairment",
+      "assertions": [
+        "Renal and hepatic PK effects are not well characterized in the selected oral labels. No blanket renal percentage reduction is validated; review organ function and drug levels individually. Consider hepatic reduction, perform baseline/periodic liver assessment and act on worsening dysfunction. This oral profile does not transfer historical IV excipient restrictions or doses onto tablets/capsules."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "PRECAUTIONS, General/Laboratory Tests"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "Special Populations"
+        },
+        {
+          "id": "equetro",
+          "sections": "5.10;12.3"
+        },
+        {
+          "id": "withdrawal",
+          "sections": "NDA 206030 withdrawal"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and contraception",
+      "assertions": [
+        "Carbamazepine crosses the placenta and is associated with major congenital malformations, including neural-tube defects. Plan pregnancy with the treating team, discuss alternatives, folic acid and pregnancy-registry participation, and balance untreated epilepsy/bipolar illness against exposure risks. Folate is advised but is not proven to eliminate drug-associated malformations. Do not abruptly stop seizure treatment after a positive pregnancy test. Review enzyme-induced contraceptive failure before conception."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "WARNINGS, Usage in Pregnancy; Drug Interactions"
+        },
+        {
+          "id": "equetro",
+          "sections": "5.5;8.1;8.3"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Breastfeeding",
+      "assertions": [
+        "Drug and epoxide enter human milk. Current Equetro wording supports individualized consideration of feeding benefits and maternal treatment, acknowledging reported infant liver/feeding/weight problems and unknown milk-production effects. Tegretol/Carbatrol retain more restrictive nursing language. Discuss the actual product and infant circumstances; milk transfer is not zero and these differences do not establish a universal breastfeeding prohibition or compatibility guarantee."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "Nursing Mothers"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "Nursing Mothers"
+        },
+        {
+          "id": "equetro",
+          "sections": "8.2"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and active metabolite",
+      "assertions": [
+        "Labels describe anticonvulsant effects on neuronal transmission but do not establish a complete human mechanism for every indication; Equetro\u2019s antimanic mechanism is unclear. CYP3A4 forms carbamazepine-10,11-epoxide, which has anticonvulsant activity; epoxide hydrolase further metabolizes it. Do not equate parent level alone with total active-metabolite toxicity."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "Mechanism of Action; Pharmacokinetics"
+        },
+        {
+          "id": "equetro",
+          "sections": "12.1;12.3"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Absorption and elimination",
+      "assertions": [
+        "Suspension has faster/higher peaks than an equivalent IR dose; release formulations use different peak times. Protein binding is about 76%. Tegretol initial half-life spans roughly 25\u201365 hours and falls to 12\u201317 hours with repeated use; autoinduction develops over about three to five weeks. Most urinary elimination is metabolites, not unchanged drug. The usual total concentration range is 4\u201312 mcg/mL, a clinical aid rather than a universal target for every indication or an instruction to redose."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "Pharmacokinetics; Pediatric Use"
+        },
+        {
+          "id": "equetro",
+          "sections": "12.3;2.7"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Baseline and follow-up",
+      "assertions": [
+        "Assess seizure type, blood counts, liver function, relevant HLA status and interacting medicines before treatment. Labels recommend periodic liver, renal/urinalysis and eye assessment; Carbatrol also recommends lipid review. Monitor sodium when risk or symptoms warrant, CBC abnormalities closely and mood/coordination throughout. Drug concentrations are useful for poor control, suspected toxicity, adherence questions and interaction/formulation changes; no one fixed interval applies to every patient."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "Laboratory Tests; WARNINGS"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "Laboratory Tests"
+        },
+        {
+          "id": "equetro",
+          "sections": "2.1;2.7;5.7;5.13"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling and urgent action",
+      "assertions": [
+        "Read the Medication Guide; take the prescribed formulation consistently and do not double or abruptly stop treatment without advice. Avoid driving until effects are known and discuss alcohol/sedatives. Seek immediate care for serious rash/blisters, mouth sores, fever, unusual bleeding, jaundice, swelling/breathing trouble or suicidal intent. Confusion, falls or increasing seizures may indicate low sodium or toxicity, not simply treatment failure. Suspected overdose needs emergency/poison-center care; do not induce vomiting at home."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "Information for Patients; Medication Guide"
+        },
+        {
+          "id": "equetro",
+          "sections": "10.2;17; Medication Guide"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Long-term coordination",
+      "assertions": [
+        "Recheck contraception, pregnancy plans and every new OTC/herbal or prescription medicine. Neuralgia treatment needs periodic attempts at clinician-directed minimum effective dosing; epilepsy or mania reassessment uses its own disease plan. Do not combine duplicate carbamazepine products to imitate a desired release formulation."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "DOSAGE, Trigeminal Neuralgia; Drug Interactions"
+        },
+        {
+          "id": "equetro",
+          "sections": "17;2.3"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Selected Tegretol 200 mg IR tablets are pink, capsule-shaped and scored, marked Tegretol and 27 twice; a 100-tablet bottle is NDC 0078-0509-05. XR 100/200/400 mg tablets are yellow/pink/brown, marked T and strength with a release portal. Carbatrol and Equetro capsule colors/imprints differ; appearance alone cannot establish interchangeability."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "HOW SUPPLIED"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Tegretol: 200 mg IR tablets, XR 100/200/400 mg tablets and 100 mg/5 mL oral suspension. Carbatrol/Equetro: 100/200/300 mg ER capsules with beads. The selected Tegretol suspension is yellow-orange, citrus-vanilla flavored and supplied in 450 mL bottles; check calibrated mL. Carnexiv\u2019s withdrawn NDA is a separate IV regulatory record, not permission to inject an oral product."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "DESCRIPTION; HOW SUPPLIED"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "DESCRIPTION; HOW SUPPLIED"
+        },
+        {
+          "id": "equetro",
+          "sections": "3;16"
+        },
+        {
+          "id": "withdrawal",
+          "sections": "Table 1"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Tegretol tablets/XR: 20\u201325\u00b0C, permitted excursions 15\u201330\u00b0C, protected from moisture in a tight container; suspension: do not store above 30\u00b0C, use a tight light-resistant container and shake well. Carbatrol/Equetro: 25\u00b0C with permitted 15\u201330\u00b0C excursions, protected from light/moisture. Keep ER beads intact, XR tablets uncrushed and the exact dispensing label with the medicine; no universal opened-liquid expiry is inferred."
+      ],
+      "sources": [
+        {
+          "id": "tegretol",
+          "sections": "HOW SUPPLIED; DOSAGE"
+        },
+        {
+          "id": "carbatrol",
+          "sections": "HOW SUPPLIED; DOSAGE"
+        },
+        {
+          "id": "equetro",
+          "sections": "2.8;16.2"
+        }
+      ]
+    }
+  ],
+  "hero_assertions": {
+    "essential": {
+      "title": "Skin and blood-cell warnings",
+      "text": "Screen genetically at-risk ancestry before initiation, obtain baseline blood counts and urgently evaluate rash, mouth ulcers, fever or abnormal bleeding. Do not abruptly stop routine seizure treatment.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "facts": [
+      [
+        "Class",
+        "Anticonvulsant; indication-specific mood treatment"
+      ],
+      [
+        "Formulations",
+        "IR/XR tablets, ER capsules and 20 mg/mL suspension"
+      ],
+      [
+        "Key safety",
+        "SJS/TEN and marrow-toxicity boxed warnings"
+      ]
+    ],
+    "sources": [
+      "tegretol",
+      "carbatrol",
+      "equetro",
+      "withdrawal"
+    ]
+  },
+  "section_assertions": [
+    {
+      "section": "indications",
+      "summary": "Carbamazepine treats selected seizures and trigeminal neuralgia; bipolar approval is product-specific.",
+      "takeaway": "It does not treat absence seizures and can worsen some mixed seizure disorders.",
+      "sources": [
+        "carbatrol",
+        "equetro",
+        "tegretol",
+        "withdrawal"
+      ]
+    },
+    {
+      "section": "dosage",
+      "summary": "Start low and titrate by indication, age and release formulation.",
+      "takeaway": "The same daily milligrams do not imply identical dosing frequency or peak exposure.",
+      "sources": [
+        "carbatrol",
+        "equetro",
+        "tegretol"
+      ]
+    },
+    {
+      "section": "safety",
+      "summary": "Serious skin, blood-cell, liver and electrolyte toxicity can occur.",
+      "takeaway": "Genetic screening helps assess risk but cannot exclude a serious reaction.",
+      "sources": [
+        "carbatrol",
+        "equetro",
+        "tegretol"
+      ]
+    },
+    {
+      "section": "interactions",
+      "summary": "Carbamazepine changes its own exposure and many co-medication levels.",
+      "takeaway": "Adding or stopping another medicine can change seizure control, toxicity and contraceptive protection.",
+      "sources": [
+        "carbatrol",
+        "equetro",
+        "tegretol"
+      ]
+    },
+    {
+      "section": "populations",
+      "summary": "Pediatric formulation, older-age tolerance and reproductive planning need separate assessment.",
+      "takeaway": "Pregnancy requires a seizure/mood-treatment plan, not abrupt self-discontinuation.",
+      "sources": [
+        "carbatrol",
+        "equetro",
+        "tegretol",
+        "withdrawal"
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "summary": "Carbamazepine has formulation-dependent absorption and hepatic autoinduction.",
+      "takeaway": "A concentration must be interpreted with symptoms, timing, adherence and interacting drugs.",
+      "sources": [
+        "carbatrol",
+        "equetro",
+        "tegretol"
+      ]
+    },
+    {
+      "section": "practice",
+      "summary": "Monitor response, blood/liver indices, sodium risk and meaningful changes in exposure.",
+      "takeaway": "Keep exact release formulation and frequency visible on the medication list.",
+      "sources": [
+        "carbatrol",
+        "equetro",
+        "tegretol"
+      ]
+    },
+    {
+      "section": "product",
+      "summary": "IR tablets, XR tablets, ER beads and suspension have distinct handling.",
+      "takeaway": "Verify brand/manufacturer, concentration and release mechanism before substitution.",
+      "sources": [
+        "carbatrol",
+        "equetro",
+        "tegretol",
+        "withdrawal"
+      ]
+    }
+  ],
+  "limitations": [
+    "Equetro pediatric epilepsy ceiling language overlaps at age 15; no inferred higher boundary dose published. Carbatrol neuralgia titration sentence is ambiguously worded; published explicit initiation/titration uses Tegretol and Equetro instead.",
+    "Tegretol and Carbatrol restrictive older nursing text differs from current Equetro individualized lactation text; differences are preserved without universal compatibility claims.",
+    "Historical IV Carnexiv SPL ZIP retrieval returned 404. Current official withdrawal notice reviewed; historical IV regimen omitted, and no inference that every possible IV carbamazepine product has identical regulatory status.",
+    "Legacy Tegretol overdose emesis/forced-diuresis instructions are not propagated; modern Equetro poison-center/supportive-care guidance used. No quantitative folate protection or first-line guideline ranking claimed."
+  ],
+  "unresolved_source_questions": [
+    {
+      "question": "Equetro \u00a72.4 adolescent dose-ceiling groups both include age 15; Carbatrol neuralgia titration sentence is also ambiguous.",
+      "disposition": "No higher age-boundary or ambiguous Carbatrol escalation inference published; product-specific clinician clarification requested.",
+      "sources": [
+        "equetro",
+        "carbatrol"
+      ],
+      "sections": [
+        "2.4",
+        "DOSAGE AND ADMINISTRATION"
+      ]
+    }
+  ],
+  "validation": {
+    "schema": "Actual validateMonograph [] on 2026-10-01, with ordered eight sections, four Safety cards, three Product cards and three hero tuples.",
+    "tests_build_lint": "Parent batch checks required",
+    "rendered_page": "Parent batch QA required"
+  },
+  "monograph_sha256": "56677f6012aa7bc7bfa5a3d3c0e139feca664d0ccbdc9778d168580be1a50f0c",
+  "source_archive": {
+    "directory": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-23-thyroid-metformin",
+    "checked": "2026-10-01",
+    "verified": "Full selected DailyMed SPL XML, parsed sections and public pages plus official FDA/Federal Register Carnexiv withdrawal HTML/text copied with exact SHA256 verification. Existing divergent files preserved."
+  }
+}

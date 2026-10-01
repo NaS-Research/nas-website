@@ -219,6 +219,16 @@ import { oseltamivir } from "./oseltamivir.js";
 import { nystatin } from "./nystatin.js";
 import { dorzolamide_timolol } from "./dorzolamide-timolol.js";
 import { budesonide_glycopyrrolate_formoterol } from "./budesonide-glycopyrrolate-formoterol.js";
+import { terazosin } from "./terazosin.js";
+import { dexlansoprazole } from "./dexlansoprazole.js";
+import { acetaminophenCodeine } from "./acetaminophen-codeine.js";
+import { erythromycin } from "./erythromycin.js";
+import { dorzolamide } from "./dorzolamide.js";
+import { hydrocortisone } from "./hydrocortisone.js";
+import { bisoprolol } from "./bisoprolol.js";
+import { solifenacin } from "./solifenacin.js";
+import { carbamazepine } from "./carbamazepine.js";
+import { betamethasone_clotrimazole } from "./betamethasone-clotrimazole.js";
 
 export const reviewedDrugMonographs = {
   "atorvastatin": atorvastatin,
@@ -441,4 +451,14 @@ export const reviewedDrugMonographs = {
   "nystatin": nystatin,
   "dorzolamide-timolol": dorzolamide_timolol,
   "budesonide-glycopyrrolate-formoterol": budesonide_glycopyrrolate_formoterol,
+  "terazosin": terazosin,
+  "dexlansoprazole": dexlansoprazole,
+  "acetaminophen-codeine": acetaminophenCodeine,
+  "erythromycin": erythromycin,
+  "dorzolamide": dorzolamide,
+  "hydrocortisone": hydrocortisone,
+  "bisoprolol": bisoprolol,
+  "solifenacin": solifenacin,
+  "carbamazepine": carbamazepine,
+  "betamethasone-clotrimazole": betamethasone_clotrimazole,
 };
