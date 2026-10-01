@@ -1,0 +1,382 @@
+{
+  "reviewDate": "2026-10-01",
+  "scope": "Independent targeted primary-source critical-assertion review; only enumerated checks, not exhaustive secondclinicalsignoff or browser/buildQA.",
+  "status": "All ten profiles targeted-reviewed; identified reference defect closed.",
+  "profiles": [
+    {
+      "drug": "clonazepam",
+      "fileSha256": "a970b26b8b1873809b086a52ad88c9112debd5a63d037b8a8a4ebcdf3a28d7d3",
+      "result": "No material clinical error identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Adult seizures start≤1.5mg/day three doses,20mg/day maximum; panic0.25BID targetone afterthree days,maxfour and0.125–0.25BIDincrements; significant liverdisease/narrowangleglaucoma contra andopioid/dependence boxes agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cfa0d79a-843c-4b88-95a1-e9511d649ca1",
+          "sourceSection": "Dosage;Contraindications;Boxes",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "azithromycin",
+      "fileSha256": "b0d951debf7a1683dc2e1d2cd4b467a9087c9e2f20c336766b19558b81b712f7",
+      "result": "No material clinical error identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Pediatric AOM30single/10three-day/10→5five-day,sinus10three-day,CAPfive-day,pharyngitis12five-day; age scope,noautomatedvomitredose and100vs200mg/5mL distinctions agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db52b91e-79f7-4cc1-9564-f2eee8e31c45",
+          "sourceSection": "Sections2.2–2.4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "AdultCAP500dailyIVthenoral,PID500IVthen250oral,infusiononly/nobolus/IM andfurtherdilution requirementagree.",
+          "sourceId": "iv",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8d24bacb-feff-4c6a-b8df-625e1435387a",
+          "sourceSection": "Section2",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "pravastatin",
+      "fileSha256": "c5ced0d514e030c57a80d0c2833b0eec6a6e0ad87aa81b52d4e2fedf232097af",
+      "result": "No material clinical error identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Adult40–80start,pediatric8–13twenty/14–18forty,severerenalstarttenmaxforty,cyclosporinstarttenmax20,clarithro/erythromax40,acute-liver-failure/decompcirrhosis contra agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=678dfe58-3200-4c3d-9718-365aa47d070f",
+          "sourceSection": "Sections2,4,7",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "valsartan",
+      "fileSha256": "1e1930033329befba6ee298147e39cd4c17fe062e96c9799bbcb12f40ef968e2",
+      "result": "No material clinical error identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Commercialsolution4mg/mL adult40or80BID,pediatric6–16start0.65BIDup40totalmax1.35BIDup160total;HF40→160BID/postMI20→160BID andnonequivalenceagree.",
+          "sourceId": "prexx",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=508c5de8-9c70-57f5-e063-6394a90af295",
+          "sourceSection": "Sections2–4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Tabletonce-daily80/160startmax320; pediatrictitration/suspension distinction and fetalriskboxagree.",
+          "sourceId": "diovan",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5ddba454-f3e6-43c2-a7a6-58365d297213",
+          "sourceSection": "Section2",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning · Fetal toxicity",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "ezetimibe",
+      "fileSha256": "47cddaf8e5e3f73e428211fd059c95387838d6a41f201044ecd71623b22ff50e",
+      "result": "No material clinical error identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Ten mgdaily,≥two hoursbefore/fouraftersequestrant,norenaladjustment,moderate/severehepnotrecommended,allergy/companioncontradistinctionsagree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=174e45e0-45bb-48b7-9e60-8f6cfc1d22bb",
+          "sourceSection": "Sections2,4,8.7",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "diclofenac",
+      "fileSha256": "198cb9a798d7bdd473b006b21a753ac0096e30c768e76206c3bf042636e1383b",
+      "result": "No material clinical error identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "ER100daily andrare100BID onlybenefit/riskreview,formulationnonbioequivalence,CV/GI/CABGwarningsagree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d9b6f1d0-1710-46fb-8ea4-80b3ca60a575",
+          "sourceSection": "Dosage;Box/contra",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "TwentyfiveQID acute≥12 onlyapprovedregimen andbovineproteinhypersensitivity contraindication agree.",
+          "sourceId": "zipsor",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ed2a8868-78eb-47b8-8f46-0f70e2891e07",
+          "sourceSection": "Sections2,4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning · Cardiovascular and GI events",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "insulin-lispro",
+      "fileSha256": "85ab9d539b03259d7d97a62e11a0faf27e97d0291d5974fd33bafd661ef5d927",
+      "result": "No material clinical error identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Mealwithin15minbefore/immediatelyafter,U200notpump/IV,nopenunitconversion,standard60-unitvsjunior30-unit increments andU100IV0.1–1unit/mLsalineagree.",
+          "sourceId": "humalog",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c8ecbd7a-0e22-4fc7-a503-faa58c1b6f3f",
+          "sourceSection": "Section2",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "CurrentAdmelogSCdilutionequalpartssalineU50 explicitlyallowed;nootherinsulinmix,pump/IVrestrictionsagree.",
+          "sourceId": "admelog",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0691def8-4a7b-4de3-866f-a280989f47f1",
+          "sourceSection": "Section2",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Mealstartorwithin20min,U100pumpreservoirnine-daymaximumversusspecificsetmanual,U100IVexactoneunit/mLsaline/D5W,andU200restrictionsagree.",
+          "sourceId": "lyumjev",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c5a056e2-b568-4ca6-9ed8-79c010942d00",
+          "sourceSection": "Section2",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [
+        {
+          "id": "insulin-source-url-spaces",
+          "severity": "reference defect",
+          "status": "closed",
+          "description": "Humalog/Admelog published setid strings contain spaces. Independently retrieved exactnospaceURLs successfully; authorcorrectionpending.",
+          "resolution": "All top-level and nested Humalog/Admelog URLs reread after correction; no embedded set-ID spaces remain. Clinical assertions unchanged."
+        }
+      ],
+      "sourceGaps": [],
+      "typographyFollowup": "Current complete dosage/safety sections reread after typography correction; checked clinical values and source URLs unchanged. Earlier intermediate source snapshot was not retained for byte-diff verification."
+    },
+    {
+      "drug": "ethinyl-estradiol-norethindrone",
+      "fileSha256": "739af6c56f5730a0351c59b99e4d31f25dace8736cc2050606305da9a9c9a3d5",
+      "result": "No material clinical error identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "LoLo24bluecombination/twowhiteEE-only/twoinertFecycle,hormonalwhite distinction andpack-specificrulesagree.",
+          "sourceId": "loloestrin",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c33072cf-625d-4b4a-981e-ec049c5d78aa",
+          "sourceSection": "Sections2,3,4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "CDC>five daysafterbleedingneedsseven-daybackup; mostrecentmissedhormonalpill/skipinterval/EC caveatsdistinctfromlabelalgorithmsagree.",
+          "sourceId": "spr",
+          "sourceUrl": "https://www.cdc.gov/contraception/hcp/usspr/combined-hormonal-contraceptives.html",
+          "sourceSection": "Initiation/missedpillguidance",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Auracategoryfour,controlledor140–159/90–99categorythree,≥160/100four distinguishedfromformalproductcontraagree.",
+          "sourceId": "mec",
+          "sourceUrl": "https://www.cdc.gov/contraception/hcp/usmec/combined-hormonal-contraceptives.html",
+          "sourceSection": "Migraineandhypertension classifications",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "propranolol",
+      "fileSha256": "3dcf795b84f411e0f810ae8d67503df09b9520f5c887dba94d7408e6d35937b1",
+      "result": "No material clinical error identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Exact4.28mgHCl/mL infant0.15/0.3/0.4mL/kgPERDOSEBID≥9hfeed/sixmonths andtwo-hourobservationagree. Parentheticalmg/sourceunitambiguityexplicitlyflagged; no recalculatedmgregimenpublished.",
+          "sourceId": "hem",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f8341ee-dac6-1ca9-e063-6394a90ac960",
+          "sourceSection": "Sections2,3,11",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "IRhypertension40BIDusual120–240 selected640/day,andadultpheowithalpha-blockade differsinfantcontraagree.",
+          "sourceId": "ir",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14d0c95d-418f-40a8-bad3-e20c82424960",
+          "sourceSection": "Dosage",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "InnoPran80bedtime→120 distinctregimen/highernoadditionalBPbenefit andcurrentwithdrawalwarningpresentation agree.",
+          "sourceId": "xl",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cd5601b3-4d87-4c3b-acac-b476e787609d",
+          "sourceSection": "Sections2,4–5",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed-warning review and withdrawal",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [
+        {
+          "id": "hemangeol-parenthetical-unit-conflict",
+          "classification": "Accurately scoped source ambiguity outside supplied exact labeled volume regimen.",
+          "status": "unresolved-source-conversion-question-explicitlyflagged",
+          "evidence": "PI2exactvolumesretained;PI3/11HCl/baseconcentrationsdistinct; no inferredmgregimenpublished."
+        }
+      ],
+      "heroFormatFollowup": "Current hero facts reread after conversion to renderer-compatible [term,value] tuples; values are descriptive and agree with reviewed product scope. No new clinical regimen asserted."
+    },
+    {
+      "drug": "latanoprost",
+      "fileSha256": "77c44d645db13e523925dd7780512961f93842ba3b81073c545834856c060bf7",
+      "result": "No material clinical error identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "One0.005%dropaffectedeveningonce,skipmisseddose,nofrequentadministration,singleusediscard,twoeyeuse,lens15min/otherdropsfive-min agree.",
+          "sourceId": "iyu",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=192fc081-cc38-4e83-b779-9592e060b915",
+          "sourceSection": "Sections2,4–5",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Xalatanonceevening,knownhypersensincludingBAKcontradistinctpreservative-freeIyuzeh agree.",
+          "sourceId": "xal",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a98595b3-9f47-48e0-b18d-550a2095f264",
+          "sourceSection": "Sections2,4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed-warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "heroFormatFollowup": "Current hero facts reread after conversion to renderer-compatible [term,value] tuples; values are descriptive and agree with reviewed product scope. No new clinical regimen asserted."
+    }
+  ],
+  "pending": [],
+  "limitations": [
+    "Public primary sources retrieved directly. Source metadata not independentlycertifiedunlessexplicit; cachedrepresentationcanlagSPL.",
+    "Diclofenac independentchecks cover selected ER/Zipsor criticalclaims; otherformulations remain authorcompleteauditresponsibility.",
+    "No productionedits,commits,pushes,deployment."
+  ],
+  "unresolvedMaterialClinicalErrors": []
+}

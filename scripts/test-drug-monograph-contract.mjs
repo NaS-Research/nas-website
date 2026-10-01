@@ -27,12 +27,14 @@ test('Missing citations and incomplete sections cannot pass the presentation con
  const broken = structuredClone(acetaminophen);
  broken.sections[0].blocks[0].sources = ['nonexistent'];
  broken.sections.pop();
+ broken.facts[0] = {label: 'Class', value: 'Not a tuple'};
  broken.sections[0].blocks[0].links = [{title: 'Label', url: 'https://example.com/bad id'}];
  broken.sources[0].url = 'https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bad id';
  assert.ok(validateMonograph(broken).some(error => error.includes('unknown source')));
  assert.ok(validateMonograph(broken).some(error => error.includes('eight clinical sections')));
  assert.ok(validateMonograph(broken).some(error => error.includes('URL contains whitespace')));
  assert.ok(validateMonograph(broken).some(error => error.includes('invalid link title or whitespace URL')));
+ assert.ok(validateMonograph(broken).some(error => error.includes('Hero requires three fact rows')));
 });
 test('Every routed monograph has a complete source audit and follows the APAP contract', () => {
  for (const [slug, monograph] of Object.entries(reviewedDrugMonographs)) {

@@ -1,0 +1,709 @@
+{
+  "drug": "insulin-lispro",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Current standalone Humalog U100/U200, Admelog U100 and separately identified Lyumjev lispro-aabc U100/U200: full formulation/device/route review.",
+  "sources": [
+    {
+      "id": "humalog",
+      "title": "Humalog · U-100 and U-200 insulin lispro",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c8ecbd7a-0e22-4fc7-a503-faa58c1b6f3f",
+      "note": "Full public manufacturer label and patient instructions; SPL version 87, effective 20260616. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "87",
+      "effective_date": "20260616",
+      "xml_sha256": "ee41acc8513bbf94ebda27191e4b7ec8ba4af7cc1bc85a30f07b1516a8a33aac",
+      "retrieved_xml": "/tmp/nas-drug-sources/humalog.xml",
+      "published_date": "2026-08-10"
+    },
+    {
+      "id": "admelog",
+      "title": "Admelog · U-100 insulin lispro",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0691def8-4a7b-4de3-866f-a280989f47f1",
+      "note": "Full public manufacturer label and patient instructions; SPL version 14, effective 20250604. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "14",
+      "effective_date": "20250604",
+      "xml_sha256": "69fff81444c16f95af7b333ed039a61e0ec6b771bc7f418bec0ccd29bf584ec3",
+      "retrieved_xml": "/tmp/nas-drug-sources/admelog.xml",
+      "published_date": "2025-06-25"
+    },
+    {
+      "id": "lyumjev",
+      "title": "Lyumjev · U-100 and U-200 insulin lispro-aabc",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c5a056e2-b568-4ca6-9ed8-79c010942d00",
+      "note": "Full public manufacturer label and patient instructions; SPL version 12, effective 20260616. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "12",
+      "effective_date": "20260616",
+      "xml_sha256": "fab7f9fd403af8214414e1ee17892903d878fcf1f85f6c88eb41f26113b51390",
+      "retrieved_xml": "/tmp/nas-drug-sources/lyumjev.xml",
+      "published_date": "2026-08-10"
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Labeled indications and pediatric evidence",
+      "assertions": {
+        "paragraphs": [
+          "Humalog, Admelog and Lyumjev have adult/pediatric diabetes indication wording. Humalog and Admelog pediatric support includes type 1 diabetes ages ≥ 3 plus adult studies; Lyumjev pediatric support includes type 1 ages ≥ 1 plus adult/pediatric evidence. These are product-specific evidence ages, not one interchangeable minimum-age statement for the class."
+        ]
+      },
+      "source_sections": {
+        "humalog": [
+          "1",
+          "2",
+          "8.4"
+        ],
+        "admelog": [
+          "1",
+          "2",
+          "8.4"
+        ],
+        "lyumjev": [
+          "1",
+          "2",
+          "8.4"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Clinical role and scope",
+      "assertions": {
+        "paragraphs": [
+          "Subcutaneous injections generally accompany intermediate/long-acting insulin; pump delivery supplies basal and bolus insulin using its programmed regimen. No fixed basal-insulin starting algorithm or universal units/kg prescription is supplied. Protamine premixes (Humalog Mix75/25/Mix50/50), other brands and individualized DKA/critical-care protocols are outside this standalone-product reference."
+        ]
+      },
+      "source_sections": {
+        "humalog": [
+          "2.2",
+          "2.3"
+        ],
+        "admelog": [
+          "2.2",
+          "2.3"
+        ],
+        "lyumjev": [
+          "2.2",
+          "2.3"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Subcutaneous meal timing and switching",
+      "assertions": {
+        "paragraphs": [
+          "Inject in abdomen, thigh, upper arm or buttocks; rotate healthy sites and avoid thickened/depressed or amyloid areas. Adjust units using the prescribed mealtime/correction plan, glucose results and clinical circumstances."
+        ],
+        "table": {
+          "headers": [
+            "Product",
+            "Timing / switching"
+          ],
+          "rows": [
+            [
+              "Humalog U-100 or U-200",
+              "Within 15 minutes before a meal or immediately after. A different dose may be needed when switching other insulins."
+            ],
+            [
+              "Admelog U-100",
+              "Within 15 minutes before a meal or immediately after. Its label uses the same dose when switching another insulin lispro product; reassess under supervision."
+            ],
+            [
+              "Lyumjev U-100 or U-200",
+              "At meal start or within 20 minutes after starting. Another mealtime insulin can initially change unit-for-unit, with monitoring/titration."
+            ],
+            [
+              "Pen dosing",
+              "No concentration conversion: window displays units. Lilly standard KwikPen/Tempo/U-200 pens deliver up to 60 units/injection in1-unit steps; Junior U-100 pens up to 30 in0.5-unit steps. Admelog SoloStar uses1-unit steps."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "humalog": [
+          "2.1–2.3"
+        ],
+        "admelog": [
+          "2.1–2.3"
+        ],
+        "lyumjev": [
+          "2.1–2.3"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "U-100 pump and IV administration",
+      "assertions": {
+        "paragraphs": [
+          "Use only a pump whose instructions permit the exact product. U-200 must never be given by pump or IV. Pump users need training and an injectable backup plan."
+        ],
+        "items": [
+          "Change infusion set/site per the pump manufacturer; replace insulin exposed above37°C. Reservoir maximum is not an infusion-set replacement schedule.",
+          "IV use is only under medical supervision with close glucose and potassium monitoring; dose/rate follows the supervised protocol."
+        ],
+        "table": {
+          "headers": [
+            "Product",
+            "Pump / IV label instructions"
+          ],
+          "rows": [
+            [
+              "Humalog U-100",
+              "Reservoir change at least every 7 days or sooner per pump manual; do not mix/dilute. IV dilute to 0.1–1 unit/mL with 0.9% sodium chloride."
+            ],
+            [
+              "Admelog U-100",
+              "Reservoir change at least every 7 days or sooner per pump manual; do not mix/dilute. IV dilute to 0.1–1 unit/mL with 0.9% sodium chloride."
+            ],
+            [
+              "Lyumjev U-100",
+              "Reservoir change at least every 9 days or sooner per pump manual; do not mix/dilute. IV dilute to 1 unit/mL with 0.9% sodium chloride or 5% dextrose; lower concentrations are not recommended."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "humalog": [
+          "2.2"
+        ],
+        "admelog": [
+          "2.2"
+        ],
+        "lyumjev": [
+          "2.1",
+          "2.2"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Mixing and supervised subcutaneous dilution",
+      "assertions": {
+        "paragraphs": [
+          "Humalog U-100 may be mixed ONLY with NPH for injection: draw lispro first and inject immediately. Do not mix Humalog U-200, Admelog or Lyumjev with another insulin. Medical-supervised SC dilution differs: Humalog U-100 uses its Sterile Diluent to U-10 or U-50; current Admelog labeling permits equal parts U-100 and sterile0.9% sodium chloride to U-50. Lyumjev has no SC dilution regimen here. Never apply a dilution rule to a pen, pump or different product."
+        ]
+      },
+      "source_sections": {
+        "humalog": [
+          "2.2",
+          "2.5"
+        ],
+        "admelog": [
+          "2.2",
+          "2.4"
+        ],
+        "lyumjev": [
+          "2.1",
+          "2.2"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Organ impairment and changing requirements",
+      "assertions": {
+        "paragraphs": [
+          "Renal/hepatic impairment increases hypoglycemia risk and may require more frequent adjustment/glucose monitoring, without a fixed eGFR-based formula. Meal/activity changes, acute illness, medicines and switching sites/brands can alter needs. For forgotten Lyumjev mealtime dosing, its label instructs glucose assessment to decide whether a dose is needed and resumption of usual schedule next meal; do not automatically double doses."
+        ]
+      },
+      "source_sections": {
+        "humalog": [
+          "2.3",
+          "8.6",
+          "8.7"
+        ],
+        "admelog": [
+          "2.3",
+          "8.6",
+          "8.7"
+        ],
+        "lyumjev": [
+          "2.3",
+          "8.6",
+          "8.7"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Severe hypoglycemia can cause seizure, unconsciousness or death. Meals/activity, kidney/liver impairment and medicines alter risk; impaired warning awareness requires closer monitoring.",
+          "Never share pens, cartridges, syringes or needles, even with a changed needle. Check exact product/concentration before every dose. Never withdraw U-200 from a pen into a syringe.",
+          "Change strength/brand/site/delivery method only with supervision and more checks. Moving from abnormal repeatedly used sites to healthy tissue can cause hypoglycemia.",
+          "Pump/set malfunction or degraded insulin can rapidly cause hyperglycemia and ketoacidosis. Promptly identify/correct faults and use the prescribed injectable backup plan.",
+          "Insulin can lower potassium; monitor at-risk patients and all supervised IV regimens. Severe hypokalemia can cause arrhythmia or paralysis.",
+          "Anaphylaxis requires stopping the product and emergency treatment. TZD co-treatment can worsen fluid retention/HF.",
+          "Lyumjev injection/infusion-site reactions are more frequent with pump use and in pediatric patients; persistent reactions require an alternative insulin."
+        ]
+      },
+      "source_sections": {
+        "humalog": [
+          "5.1–5.8"
+        ],
+        "admelog": [
+          "5.1–5.8"
+        ],
+        "lyumjev": [
+          "5.1–5.8",
+          "8.4"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Do not administer during hypoglycemia or with hypersensitivity to insulin lispro/the exact Humalog or Admelog ingredients, or insulin lispro-aabc/the exact Lyumjev ingredients."
+        ]
+      },
+      "source_sections": {
+        "humalog": [
+          "4"
+        ],
+        "admelog": [
+          "4"
+        ],
+        "lyumjev": [
+          "4"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "No boxed warning appears in these selected labels. Severe hypoglycemia, medication errors, anaphylaxis, hypokalemia and pump-related ketoacidosis remain serious labeled risks."
+        ]
+      },
+      "source_sections": {
+        "humalog": [
+          "Full prescribing information",
+          "5"
+        ],
+        "admelog": [
+          "Full prescribing information",
+          "5"
+        ],
+        "lyumjev": [
+          "Full prescribing information",
+          "5"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "assertions": {
+        "paragraphs": [
+          "Hypoglycemia, weight gain, edema, local reactions, lipodystrophy/cutaneous amyloidosis and antibodies are reported. Site reactions differ across products/routes; trial rates should not be pooled. Excess insulin causes potentially recurrent hypoglycemia and hypokalemia. Treat a mild low with oral glucose when able to swallow; severe neurologic symptoms need emergency glucagon or IV glucose and observation. Do not give food/drink to an unconscious person."
+        ]
+      },
+      "source_sections": {
+        "humalog": [
+          "6",
+          "10"
+        ],
+        "admelog": [
+          "6",
+          "10"
+        ],
+        "lyumjev": [
+          "6",
+          "10"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Combination",
+            "Action"
+          ],
+          "rows": [
+            [
+              "Other antidiabetics, ACE inhibitors/ARBs, fluoxetine, salicylates, selected antibiotics",
+              "Low-glucose risk may rise; review dose and increase checks."
+            ],
+            [
+              "Corticosteroids, estrogen/progestin contraceptives, atypical antipsychotics, thyroid hormones, sympathomimetics",
+              "Glucose lowering may decrease; adjust according to results."
+            ],
+            [
+              "Alcohol, beta blockers, clonidine, lithium; pentamidine",
+              "Glucose response may increase/decrease; pentamidine may cause lows then highs."
+            ],
+            [
+              "Beta blockers, clonidine, guanethidine, reserpine",
+              "May blunt hypoglycemia warning symptoms; rely on increased monitoring."
+            ],
+            [
+              "TZDs",
+              "Monitor fluid retention/HF and review TZD reduction/discontinuation if HF develops."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "humalog": [
+          "7"
+        ],
+        "admelog": [
+          "7"
+        ],
+        "lyumjev": [
+          "7"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Published lispro pregnancy studies do not report an association with major birth defects/miscarriage/adverse outcomes, but methodological limitations prevent exclusion of all risk. Poorly controlled diabetes itself poses substantial maternal/fetal risk. Selected labels report insulin/lispro in milk without reported infant adverse reactions; milk-production effects are unknown. Balance maternal need and breastfeeding, with individualized glucose/dose review."
+        ]
+      },
+      "source_sections": {
+        "humalog": [
+          "8.1",
+          "8.2"
+        ],
+        "admelog": [
+          "8.1",
+          "8.2"
+        ],
+        "lyumjev": [
+          "8.1",
+          "8.2"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric considerations",
+      "assertions": {
+        "paragraphs": [
+          "Humalog/Admelog pediatric support includes type 1 age ≥ 3; Lyumjev type 1 age ≥ 1. Product indication wording is broader than those trial ages. Follow specialist meal/monitoring/device education; monitor Lyumjev sites closely, particularly with pediatric pump use. Older adults need careful recognition of lows, functional/device ability and changing comorbidity."
+        ]
+      },
+      "source_sections": {
+        "humalog": [
+          "8.4",
+          "8.5"
+        ],
+        "admelog": [
+          "8.4",
+          "8.5"
+        ],
+        "lyumjev": [
+          "8.4",
+          "8.5"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic impairment",
+      "assertions": {
+        "paragraphs": [
+          "No fixed unit adjustment is supplied. Declining kidney/liver function may reduce requirements and increase lows even when a study shows limited PK change. Increase glucose checks and adjust to clinical response rather than declaring no renal/hepatic effect."
+        ]
+      },
+      "source_sections": {
+        "humalog": [
+          "8.6",
+          "8.7",
+          "12.3"
+        ],
+        "admelog": [
+          "8.6",
+          "8.7",
+          "12.3"
+        ],
+        "lyumjev": [
+          "8.6",
+          "8.7",
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "assertions": {
+        "paragraphs": [
+          "Promotes glucose uptake in muscle/fat and inhibits hepatic glucose production. It also inhibits lipolysis/proteolysis and promotes protein synthesis. Lispro’s absorption is faster than regular human insulin; Lyumjev’s formulation changes early absorption."
+        ]
+      },
+      "source_sections": {
+        "humalog": [
+          "12.1",
+          "12.2"
+        ],
+        "admelog": [
+          "12.1",
+          "12.2"
+        ],
+        "lyumjev": [
+          "11",
+          "12.1",
+          "12.2"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics and time action",
+      "assertions": {
+        "paragraphs": [],
+        "facts": [
+          [
+            "Humalog absorption",
+            "SC serum peaks ~30–90 minutes in studied doses; onset/duration vary with site, exercise and dose."
+          ],
+          [
+            "Lyumjev absorption",
+            "In studied subjects appears in circulation ~1 minute after injection; peak ~57 minutes. These PK observations are not a dosing/redosing instruction."
+          ],
+          [
+            "Lyumjev effect",
+            "Clamp duration was dose-dependent (~4.6–7.3 hours at 7–30 units); no single duration applies to every patient."
+          ],
+          [
+            "Elimination",
+            "Humalog SC half-life ~1 hour; Lyumjev median IV half-life44 minutes in studied subjects. Product/route PK must not replace glucose monitoring."
+          ]
+        ]
+      },
+      "source_sections": {
+        "humalog": [
+          "12.2",
+          "12.3"
+        ],
+        "admelog": [
+          "12.2",
+          "12.3"
+        ],
+        "lyumjev": [
+          "12.2",
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring parameters",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Follow prescribed glucose/CGM plan and clinical glycemic progress; increase checks during regimen, meal/activity, illness or organ-function changes.",
+          "Review low-glucose events/awareness, meal timing, units, injection/infusion sites and device technique.",
+          "Monitor potassium for IV therapy or other risks; monitor weight/edema/HF with TZDs.",
+          "Investigate unexplained hyperglycemia/ketosis promptly, especially with pump faults."
+        ]
+      },
+      "source_sections": {
+        "humalog": [
+          "2",
+          "5",
+          "17"
+        ],
+        "admelog": [
+          "2",
+          "5",
+          "17"
+        ],
+        "lyumjev": [
+          "2",
+          "5",
+          "17"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Read the exact pen/pump instructions, prime as directed, use new needles and remove needles after pen injections. Check product/concentration and prescribed units.",
+          "Use the product-specific meal window and the prescribed correction plan; never calculate pen doses by concentration or transfer U-200 to a syringe.",
+          "Never share devices; rotate healthy sites. Carry low-glucose treatment and teach caregivers emergency glucagon.",
+          "Have an injectable backup for pump failure; discuss illness/missed meals/doses and driving safety with the care team."
+        ]
+      },
+      "source_sections": {
+        "humalog": [
+          "17",
+          "Patient Package Insert",
+          "Instructions for Use"
+        ],
+        "admelog": [
+          "17",
+          "Patient Information",
+          "Instructions for Use"
+        ],
+        "lyumjev": [
+          "17",
+          "Patient Package Insert",
+          "Instructions for Use"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative injectable product · Humalog U-100 KwikPen",
+      "assertions": {
+        "paragraphs": [],
+        "facts": [
+          [
+            "Dosage form / concentration",
+            "Clear/colorless solution · 100 units/mL"
+          ],
+          [
+            "Presentation",
+            "3 mL single-patient pen · 300 units"
+          ],
+          [
+            "Manufacturer",
+            "Eli Lilly and Company"
+          ],
+          [
+            "Example NDC",
+            "0002-8799-59 · five pens"
+          ]
+        ]
+      },
+      "source_sections": {
+        "humalog": [
+          "3",
+          "16.1"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Humalog U-100: 10/3 mL vials, 3 mL cartridges/KwikPen/Junior/Tempo; U-200: 3 mL KwikPen. Admelog U-100: 10/3 mL vials and 3 mL SoloStar. Lyumjev U-100: 10 mL vial, 3 mL cartridge/KwikPen/Junior/Tempo; U-200: 3 mL KwikPen. U-100 pens/cartridges contain 300 units; U-200 pen contains 600. Verify cartridge compatibility; premixes are separate."
+        ]
+      },
+      "source_sections": {
+        "humalog": [
+          "3",
+          "16.1"
+        ],
+        "admelog": [
+          "3",
+          "16.1"
+        ],
+        "lyumjev": [
+          "3",
+          "16.1"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Unopened: 2–8°C until expiry; do not freeze, use if frozen, or expose to direct heat/light. Selected vials/pens/cartridges have a 28-day room-temperature limit (Humalog/Admelog ≤ 30°C; Lyumjev < 30°C), including unopened time. In-use vials may be refrigerated; in-use pens/cartridges must not be. Write opening/discard dates."
+        ],
+        "table": {
+          "headers": [
+            "Prepared product",
+            "Selected label stability"
+          ],
+          "rows": [
+            [
+              "Humalog diluted SC",
+              "28 days at 5°C or 14 days ≤ 30°C, with its Sterile Diluent."
+            ],
+            [
+              "Admelog diluted SC U-50",
+              "24 hours at 2–8°C or 4 hours ≤ 30°C."
+            ],
+            [
+              "Humalog IV infusion",
+              "48 hours at 2–8°C then up to 48 additional hours at room temperature."
+            ],
+            [
+              "Admelog IV infusion",
+              "24 hours refrigerated or up to 4 hours at room temperature."
+            ],
+            [
+              "Lyumjev IV infusion",
+              "Up to 4 days refrigerated; same solution up to 12 hours at 20–25°C."
+            ],
+            [
+              "Pump reservoirs",
+              "Humalog/Admelog ≤ 7 days; Lyumjev ≤ 9 days, or shorter pump instructions; replace after > 37°C exposure."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "humalog": [
+          "2.2",
+          "16.2"
+        ],
+        "admelog": [
+          "2.2",
+          "16.2"
+        ],
+        "lyumjev": [
+          "2.2",
+          "16.2"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "Premixed/protamine suspensions, other brands and individualized DKA/critical-care dose algorithms excluded.",
+    "Pediatric trial/evidence ages explicitly separated from broad current indication wording.",
+    "No fixed renal adjustment, universal correction factor or basal-insulin initiation algorithm supplied."
+  ],
+  "resolved_source_findings": [
+    {
+      "severity": "formulation_precision",
+      "detail": "Current Admelog permits supervised SCU50 saline dilution; Humalog uses proprietary diluentU10/U50 and onlyU100 may mixwithNPH. Lyumjev timing/reservoir/IVdilution differ."
+    },
+    {
+      "severity": "dose_safety",
+      "detail": "U200 SCpen only, no pen-unit conversion and no transfer to syringe/pump/IV retained."
+    },
+    "Removed unintended embedded spaces from Humalog/Admelog source URLs; exact set IDs verified against downloaded official SPL setId and opened current official label pages. No clinical content changed."
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, essential safety, three hero facts, cited disclosures, four safety cards and three product cards.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending",
+    "audit_assertions_match_monograph": true
+  },
+  "monograph_sha256": "85ab9d539b03259d7d97a62e11a0faf27e97d0291d5974fd33bafd661ef5d927"
+}

@@ -1,0 +1,368 @@
+{
+  "slug": "ezetimibe",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "An oral lipid-lowering medicine that inhibits intestinal sterol absorption. The labeled disease, age and companion therapy determine use.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Zetia · Full prescribing information",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical PI revision July 2023; document footer uspi-og0653-t-2402r003. SPL v8/effective November 25, 2025; DailyMed API publication November 26, 2025. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=174e45e0-45bb-48b7-9e60-8f6cfc1d22bb"
+    }
+  ],
+  "sourceEvidence": {
+    "label": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=174e45e0-45bb-48b7-9e60-8f6cfc1d22bb",
+      "checked": "2026-10-01",
+      "revision": "Clinical PI revision July 2023; document footer uspi-og0653-t-2402r003. SPL v8/effective November 25, 2025; DailyMed API publication November 26, 2025. Checked October 1, 2026.",
+      "access": "Full public supporting primary sections read; no paywall access",
+      "splVersion": "8",
+      "effectiveTime": "20251125",
+      "xmlSha256": "d5b669730abf9c2a7f09443a44fc58443ef5170998727029c7f872b5270942b5",
+      "localEvidence": "/tmp/nas-drug-sources/zetia.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/174e45e0-45bb-48b7-9e60-8f6cfc1d22bb.xml"
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Labeled uses",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "1 Indications;8.4 Pediatric Use"
+        ]
+      },
+      "claims": [
+        [
+          "Adults · primary hyperlipidemia, including HeFH",
+          "Reduce LDL-C with a statin, or alone when additional LDL-C-lowering therapy is not possible."
+        ],
+        [
+          "Age ≥10 · HeFH",
+          "Reduce LDL-C in combination with a statin."
+        ],
+        [
+          "Adults · mixed hyperlipidemia",
+          "Reduce LDL-C in combination with fenofibrate."
+        ],
+        [
+          "Adults and age ≥10 · HoFH",
+          "Reduce LDL-C with a statin and other LDL-C-lowering therapies."
+        ],
+        [
+          "Adults and age ≥9 · homozygous familial sitosterolemia",
+          "Reduce elevated sitosterol and campesterol."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Labeled oral regimen",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2 Dosage and Administration;8.6 Renal;8.7 Hepatic;4 Combination contraindications"
+        ]
+      },
+      "claims": [
+        "10 mg once daily with or without food. Take at least 2 hours before or 4 hours after a bile acid sequestrant such as cholestyramine. If missed, take as soon as possible; do not double the next dose. Assess LDL-C when clinically appropriate, as early as 4 weeks after starting."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Dose considerations",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2 Dosage and Administration;8.6 Renal;8.7 Hepatic;4 Combination contraindications"
+        ]
+      },
+      "claims": [
+        "No renal adjustment is necessary. Moderate/severe hepatic impairment (Child-Pugh B/C): use is not recommended. Follow the exact statin, fenofibrate or other companion label for its doses, contraindications and organ-impairment restrictions; no universal combination regimen is supplied here."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "5 Warnings and Precautions"
+        ]
+      },
+      "claims": [
+        "Transaminases may rise; test liver enzymes as clinically indicated and consider withdrawal if ALT/AST ≥3 times the upper limit of normal persist. Myopathy and rhabdomyolysis can occur, often with statins or fibrates; discontinue ezetimibe and other relevant medicines if myopathy is suspected. Companion lipid-lowering drugs retain their own warnings."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "4 Contraindications"
+        ]
+      },
+      "claims": [
+        "Ezetimibe or ingredient hypersensitivity, including anaphylaxis, angioedema, rash or urticaria. A combination is contraindicated when its statin, fenofibrate or other LDL-C-lowering partner is contraindicated; check that partner’s current label."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning/status"
+        ]
+      },
+      "claims": [
+        "The reviewed Zetia label has no boxed warning. This does not remove liver, muscle, allergy or companion-drug risks."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "6 Adverse Reactions;10 Overdosage"
+        ]
+      },
+      "claims": [
+        "Monotherapy trials report upper respiratory infections, diarrhea, arthralgia, sinusitis, extremity pain and fatigue. With statins, myalgia and nasopharyngitis are reported. Serious postmarketing reactions include pancreatitis, hepatitis, gallstones/cholecystitis and hypersensitivity. For overdose, contact Poison Help or a medical toxicologist."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "7 Drug Interactions;5 Warnings"
+        ]
+      },
+      "claims": [
+        "Cholestyramine reduces total ezetimibe exposure: give ezetimibe ≥2 hours before or ≥4 hours after bile acid sequestrants.",
+        "Cyclosporine raises ezetimibe and cyclosporine concentrations; monitor cyclosporine levels and weigh exposure risk, especially with severe renal insufficiency.",
+        "Fenofibrate and ezetimibe can increase biliary cholesterol and gallstones. If suspected, obtain gallbladder studies and consider an alternative lipid plan.",
+        "Fibrates other than fenofibrate are not recommended with Zetia. Statins/fibrates can add muscle and liver risks."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8 Specific Populations;5 fetal/renal warnings;2"
+        ]
+      },
+      "claims": [
+        "Human pregnancy data are insufficient; use only when potential benefit justifies fetal risk. Review the companion statin’s current pregnancy guidance separately. Human-milk and infant-effect data are unavailable; the label advises against nursing use unless benefit justifies infant risk. Discuss pregnancy or feeding plans with the treating clinician."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric, geriatric and organ impairment",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8 Specific Populations;5 fetal/renal warnings;2"
+        ]
+      },
+      "claims": [
+        "HeFH/HoFH combination indications begin at age 10; homozygous sitosterolemia at 9. Other pediatric lipid disorders and younger ages are not established. No overall geriatric safety/effectiveness difference was observed. No renal dose adjustment; moderate/severe hepatic impairment is not recommended because increased exposure has uncertain effects."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and pharmacokinetics",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "12.1 Mechanism;12.3 PK"
+        ]
+      },
+      "claims": [
+        "Ezetimibe targets intestinal NPC1L1 at the brush border, reducing cholesterol/phytosterol absorption, hepatic cholesterol stores and increasing LDL-receptor clearance from blood. It is extensively glucuronidated in intestine/liver to an active metabolite; enterohepatic recycling contributes to exposure. Elimination is primarily fecal, with some urinary recovery.",
+        [
+          "Half-life",
+          "About 22 hours for ezetimibe and its active glucuronide."
+        ],
+        [
+          "Protein binding",
+          "Greater than 90% for both."
+        ],
+        [
+          "Food / metabolism",
+          "Food does not change extent of absorption; minimal oxidative metabolism."
+        ]
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring parameters",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "5 Warnings/lab monitoring;17 Counseling"
+        ]
+      },
+      "claims": [
+        "Assess LDL-C when appropriate, as early as 4 weeks after initiation; sterol response follows the specific sitosterolemia plan.",
+        "Check liver enzymes as clinically indicated; persistent ≥3×ULN elevations may warrant withdrawal.",
+        "Assess unexplained muscle symptoms for myopathy; CK testing is part of suspected myopathy assessment, not a universal scheduled test.",
+        "Monitor cyclosporine concentrations and gallbladder symptoms when relevant; apply companion-drug monitoring."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "5 Warnings/lab monitoring;17 Counseling"
+        ]
+      },
+      "claims": [
+        "Continue the prescribed diet and exact medication plan. Report muscle pain/weakness, fever, severe allergy or liver symptoms promptly. Separate cholestyramine and similar drugs by the stated interval. Do not double a missed dose. Disclose new prescriptions, supplements, pregnancy or breastfeeding."
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product · Zetia 10 mg tablet",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3 Forms;16 How Supplied/Storage;package panels"
+        ]
+      },
+      "claims": [
+        [
+          "Appearance / imprint",
+          "White to off-white, capsule-shaped; 414 on one side."
+        ],
+        [
+          "Manufacturer / distributor",
+          "Organon LLC."
+        ],
+        [
+          "Example NDC",
+          "78206-178-01 · bottle of 30."
+        ],
+        [
+          "U.S. status",
+          "Prescription."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3 Forms;16 How Supplied/Storage;package panels"
+        ]
+      },
+      "claims": [
+        [
+          "Selected form",
+          "10 mg oral tablet."
+        ],
+        [
+          "Outside scope",
+          "Fixed statin/ezetimibe or other combination products, other manufacturers and compounded forms; verify separate labeling."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3 Forms;16 How Supplied/Storage;package panels"
+        ]
+      },
+      "claims": [
+        "Store at 20–25°C and protect from moisture. Check exact inactive ingredients if an excipient allergy is suspected."
+      ]
+    },
+    {
+      "section": "hero/essential",
+      "card": "Scope and essential safety",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "1;5;12.1;Boxed warning/status"
+      ],
+      "claims": [
+        "An oral lipid-lowering medicine that inhibits intestinal sterol absorption. The labeled disease, age and companion therapy determine use.",
+        "Muscle pain, tenderness or weakness, especially with fever or malaise, warrants prompt assessment for myopathy/rhabdomyolysis. Combination therapies add their own risks.",
+        [
+          "Therapeutic class",
+          "Intestinal sterol absorption inhibitor"
+        ],
+        [
+          "Representative brand",
+          "Zetia"
+        ],
+        [
+          "Reference focus",
+          "U.S. 10 mg tablet; current combination indications"
+        ]
+      ]
+    }
+  ],
+  "exclusions": [
+    "Other manufacturers and fixed combinations; no off-label algorithm or non-U.S. marketing claim"
+  ],
+  "gaps": [],
+  "validation": {
+    "schema": "Passed: zero errors; exact eight APAP sections, four Safety cards and three Product cards; all source IDs and table shapes valid.",
+    "renderedPage": "Pending parent integration QA"
+  },
+  "monographSha256": "47cddaf8e5e3f73e428211fd059c95387838d6a41f201044ecd71623b22ff50e",
+  "sourceInterpretationNotes": [
+    "Clinical revision, SPL effectiveTime/version and API publication are distinguished; no stock inference.",
+    "Current label adult monotherapy conditional wording preserved; pediatric combination/disease ages not universalized. Partner-drug contraindications referenced without copying obsolete blanket statin pregnancy contraindication."
+  ]
+}

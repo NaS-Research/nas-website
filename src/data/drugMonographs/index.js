@@ -59,6 +59,16 @@ import { alprazolam } from "./alprazolam.js";
 import { citalopram } from "./citalopram.js";
 import { pregabalin } from "./pregabalin.js";
 import { cholecalciferol } from "./cholecalciferol.js";
+import { clonazepam } from "./clonazepam.js";
+import { azithromycin } from "./azithromycin.js";
+import { pravastatin } from "./pravastatin.js";
+import { valsartan } from "./valsartan.js";
+import { ezetimibe } from "./ezetimibe.js";
+import { diclofenac } from "./diclofenac.js";
+import { insulinLispro } from "./insulin-lispro.js";
+import { ethinylEstradiolNorethindrone } from "./ethinyl-estradiol-norethindrone.js";
+import { propranolol } from "./propranolol.js";
+import { latanoprost } from "./latanoprost.js";
 
 export const reviewedDrugMonographs = {
   "atorvastatin": atorvastatin,
@@ -121,4 +131,14 @@ export const reviewedDrugMonographs = {
   "citalopram": citalopram,
   "pregabalin": pregabalin,
   "cholecalciferol": cholecalciferol,
+  "clonazepam": clonazepam,
+  "azithromycin": azithromycin,
+  "pravastatin": pravastatin,
+  "valsartan": valsartan,
+  "ezetimibe": ezetimibe,
+  "diclofenac": diclofenac,
+  "insulin-lispro": insulinLispro,
+  "ethinyl-estradiol-norethindrone": ethinylEstradiolNorethindrone,
+  "propranolol": propranolol,
+  "latanoprost": latanoprost,
 };

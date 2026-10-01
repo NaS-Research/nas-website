@@ -26,7 +26,7 @@ export function validateMonograph(monograph) {
     try { if (new URL(source.url).protocol !== 'https:') errors.push(`Source ${source.id}: HTTPS required`); } catch { errors.push(`Source ${source.id}: invalid URL`); }
   }
   if (!sources.size) errors.push('No sources');
-  if (!Array.isArray(monograph.facts) || monograph.facts.length !== 3) errors.push('Hero requires three fact rows');
+  if (!Array.isArray(monograph.facts) || monograph.facts.length !== 3 || monograph.facts.some(row => !Array.isArray(row) || row.length !== 2 || row.some(value => typeof value !== 'string' || !value.trim()))) errors.push('Hero requires three fact rows');
   if (monograph.sections?.length !== monographSections.length) errors.push('All eight clinical sections are required');
   for (const [index, [id, title]] of monographSections.entries()) {
     const section = monograph.sections?.[index];

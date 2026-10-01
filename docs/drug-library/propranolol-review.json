@@ -1,0 +1,1627 @@
+{
+  "drug": "propranolol",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Current U.S. oral IR, Inderal LA, InnoPran XL and Hemangeol labels; no off-label portal hypertension regimen or IV dose supplied.",
+  "blueprint": {
+    "sections": [
+      [
+        "indications",
+        "Indications"
+      ],
+      [
+        "dosage",
+        "Dosage and administration"
+      ],
+      [
+        "safety",
+        "Safety"
+      ],
+      [
+        "interactions",
+        "Drug interactions"
+      ],
+      [
+        "populations",
+        "Use in specific populations"
+      ],
+      [
+        "pharmacology",
+        "Clinical pharmacology"
+      ],
+      [
+        "practice",
+        "Monitoring and counseling"
+      ],
+      [
+        "product",
+        "Product identification"
+      ]
+    ],
+    "essential_safety": true,
+    "hero_facts": 3,
+    "APAP_modified": false
+  },
+  "sources": [
+    {
+      "id": "ir",
+      "title": "Propranolol immediate-release tablets \u00b7 Current full prescribing information",
+      "publisher": "Amneal / DailyMed",
+      "note": "Current public product label; clinical revision Rev. 03-2026-04. SPL version/effective date audited separately.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14d0c95d-418f-40a8-bad3-e20c82424960"
+    },
+    {
+      "id": "la",
+      "title": "Inderal LA \u00b7 Current full prescribing information",
+      "publisher": "ANI / DailyMed",
+      "note": "Current public product label; clinical revision 04/26. SPL version/effective date audited separately.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35d28979-36b1-4630-b85e-a44e0a443734"
+    },
+    {
+      "id": "xl",
+      "title": "InnoPran XL \u00b7 Current full prescribing information",
+      "publisher": "ANI / DailyMed",
+      "note": "Current public product label; clinical revision 04/26. SPL version/effective date audited separately.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cd5601b3-4d87-4c3b-acac-b476e787609d"
+    },
+    {
+      "id": "hem",
+      "title": "Hemangeol oral solution \u00b7 Current full prescribing information",
+      "publisher": "Eton / DailyMed",
+      "note": "Current public product label; clinical revision 08/2026 (PI); 07/2026 (Medication Guide/IFU). SPL version/effective date audited separately.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f8341ee-dac6-1ca9-e063-6394a90ac960"
+    }
+  ],
+  "source_records": [
+    {
+      "id": "ir",
+      "local_snapshot": "/tmp/nas-drug-sources/propranolol-ir.xml",
+      "label_revision": "Rev. 03-2026-04",
+      "set_id": "14d0c95d-418f-40a8-bad3-e20c82424960",
+      "spl_version": "6",
+      "spl_effective_time": "20260610",
+      "dailymed_published_date": "2026-07-06",
+      "sha256": "a1502ee71df2a03693fb3b84c369ff7ad83b4a8c4caf9b547dd2eb08d680161c",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed."
+    },
+    {
+      "id": "la",
+      "local_snapshot": "/tmp/nas-drug-sources/inderalla.xml",
+      "label_revision": "04/26",
+      "set_id": "35d28979-36b1-4630-b85e-a44e0a443734",
+      "spl_version": "11",
+      "spl_effective_time": "20260824",
+      "dailymed_published_date": "2026-08-31",
+      "sha256": "0a5bb76b260b05af945cd78b71cc0584683ee0d04a8d468fd6c154c2e7514d49",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed."
+    },
+    {
+      "id": "xl",
+      "local_snapshot": "/tmp/nas-drug-sources/innopranxl.xml",
+      "label_revision": "04/26",
+      "set_id": "cd5601b3-4d87-4c3b-acac-b476e787609d",
+      "spl_version": "8",
+      "spl_effective_time": "20260827",
+      "dailymed_published_date": "2026-08-31",
+      "sha256": "06c6719c5455f3f193dad0ffe1f400f70c88c3818a0a479513cd4379aaca2d0a",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed."
+    },
+    {
+      "id": "hem",
+      "local_snapshot": "/tmp/nas-drug-sources/hemangeol.xml",
+      "label_revision": "08/2026 (PI); 07/2026 (Medication Guide/IFU)",
+      "set_id": "4f8341ee-dac6-1ca9-e063-6394a90ac960",
+      "spl_version": "5",
+      "spl_effective_time": "20260901",
+      "dailymed_published_date": "2026-09-14",
+      "sha256": "fa4dc656d8ce92900f2d1ce4d74673cfb0543df87231d949763c561353c0456c",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed."
+    }
+  ],
+  "assertion_map": [
+    {
+      "section": "indications",
+      "card": "Adult immediate-release indications",
+      "assertions": [
+        "The reviewed IR tablet label covers hypertension, coronary angina, ventricular-rate control in atrial fibrillation, reduced cardiovascular mortality after a clinically stable myocardial infarction, migraine prevention, essential tremor, symptomatic hypertrophic subaortic stenosis and pheochromocytoma as an adjunct to alpha blockade. It does not treat hypertensive emergencies or an active migraine attack."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "INDICATIONS AND USAGE"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Long-acting product limits",
+      "assertions": [
+        "Inderal LA is labeled for hypertension, coronary angina, migraine prevention and hypertrophic subaortic stenosis. InnoPran XL is labeled for hypertension only. Do not transfer all IR indications to either extended-release product."
+      ],
+      "sources": [
+        {
+          "id": "la",
+          "sections": "INDICATIONS AND USAGE"
+        },
+        {
+          "id": "xl",
+          "sections": "1"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Infant hemangioma and scope",
+      "assertions": [
+        "Hemangeol treats proliferating infantile hemangioma requiring systemic therapy. Initiate at age 5 weeks to 5 months using its own weight-based oral solution schedule. Portal-hypertension regimens and other off-label uses are outside this label-based profile."
+      ],
+      "sources": [
+        {
+          "id": "hem",
+          "sections": "1; 2; 8.4"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Adult immediate-release dosing",
+      "assertions": [
+        "Individualize response and tolerability. The following are label regimens, not interchangeable maximum doses. Divided daily doses must remain divided."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "DOSAGE AND ADMINISTRATION"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Indication",
+          "Labeled regimen / limits"
+        ],
+        "rows": [
+          [
+            "Hypertension",
+            "Start 40 mg twice daily; usual maintenance 120\u2013240 mg/day. Some patients require up to 640 mg/day; assess end-of-interval control and whether three daily doses are needed."
+          ],
+          [
+            "Angina",
+            "80\u2013320 mg/day divided into 2, 3 or 4 doses."
+          ],
+          [
+            "Atrial fibrillation",
+            "10\u201330 mg three or four times daily before meals and at bedtime."
+          ],
+          [
+            "After myocardial infarction",
+            "Recommended 180\u2013240 mg/day divided. Trial began 40 mg three times daily, then 60\u201380 mg three times daily after 1 month; higher-dose mortality benefit is unestablished."
+          ],
+          [
+            "Migraine prevention",
+            "Start 80 mg/day divided; usual 160\u2013240 mg/day. If ineffective 4\u20136 weeks after maximum dose, discontinue gradually."
+          ],
+          [
+            "Essential tremor",
+            "Start 40 mg twice daily; usual optimal response 120 mg/day, sometimes 240\u2013320 mg/day."
+          ],
+          [
+            "Hypertrophic subaortic stenosis",
+            "20\u201340 mg three or four times daily before meals and at bedtime."
+          ],
+          [
+            "Pheochromocytoma, with alpha blockade",
+            "Operable: 60 mg/day divided for 3 days before surgery. Inoperable: 30 mg/day divided as adjunctive therapy."
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Inderal LA once-daily regimens",
+      "assertions": [
+        "Inderal LA is not a simple mg-for-mg substitute for divided IR dosing. Blood levels differ; retitrate and assess response near the end of 24 hours. The label has not studied food effects."
+      ],
+      "sources": [
+        {
+          "id": "la",
+          "sections": "DOSAGE AND ADMINISTRATION; Clinical Pharmacology, Absorption"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Indication",
+          "Once-daily oral regimen"
+        ],
+        "rows": [
+          [
+            "Hypertension",
+            "Start 80 mg; usual maintenance 120\u2013160 mg. Some patients require 640 mg; individualize."
+          ],
+          [
+            "Angina",
+            "Start 80 mg; increase at 3\u20137-day intervals; average optimal 160 mg. Safety/value above 320 mg/day unestablished."
+          ],
+          [
+            "Migraine prevention",
+            "Start 80 mg; usual 160\u2013240 mg. Assess after 4\u20136 weeks at maximum."
+          ],
+          [
+            "Hypertrophic subaortic stenosis",
+            "80\u2013160 mg."
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "InnoPran XL bedtime regimen",
+      "assertions": [
+        "Start 80 mg once daily at bedtime and titrate to 120 mg if needed. Doses above 120 mg provide no additional blood-pressure effect. Take consistently either with food or on an empty stomach. Full blood-pressure response usually takes 2\u20133 weeks; this is a distinct release profile, not an IR dosing schedule."
+      ],
+      "sources": [
+        {
+          "id": "xl",
+          "sections": "2; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Hemangeol infant titration",
+      "assertions": [
+        "For the 4.28 mg/mL hydrochloride solution, doses below are mL/kg PER DOSE, twice daily at least 9 hours apart. Reassess weight and readjust the prescribed mL dose periodically. Maintain the final regimen for 6 months; recurrence may warrant a clinician-directed restart."
+      ],
+      "sources": [
+        {
+          "id": "hem",
+          "sections": "2; 3; 14"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Treatment stage",
+          "Volume per dose",
+          "Frequency"
+        ],
+        "rows": [
+          [
+            "Week 1",
+            "0.15 mL/kg",
+            "Twice daily"
+          ],
+          [
+            "Week 2",
+            "0.3 mL/kg",
+            "Twice daily"
+          ],
+          [
+            "From week 3",
+            "0.4 mL/kg",
+            "Twice daily"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Infant concentration and source conversion review",
+      "assertions": [
+        "The current Hemangeol label pairs its volume instructions with parenthetical mg/kg values that are not consistently reconciled with the stated hydrochloride/base concentration. This profile preserves the explicit labeled mL/kg schedule and does not supply a recalculated mg/kg regimen. Confirm the actual prescribed mL dose and concentration with the treating specialist/pharmacist; this discrepancy remains a source-review question."
+      ],
+      "sources": [
+        {
+          "id": "hem",
+          "sections": "2; 3; 11"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Feeding, observation and dose loss",
+      "assertions": [
+        "Give Hemangeol during or immediately after a feeding; skip when not feeding or vomiting, and resume only when feeding normally under the care plan. Observe heart rate and blood pressure for 2 hours after initiation or each increase. If an infant spits up or the full dose is uncertain, do not repeat it; wait for the next scheduled dose. Use the supplied oral syringe."
+      ],
+      "sources": [
+        {
+          "id": "hem",
+          "sections": "2; 5.1\u20135.2; Medication Guide; IFU"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Stopping adult treatment",
+      "assertions": [
+        "Abrupt withdrawal can worsen ischemia. For chronic InnoPran XL, taper over 1\u20132 weeks with monitoring. IR and Inderal LA labels advise reduction over at least a few weeks; migraine discontinuation also requires a gradual plan. Do not stop on your own, including before surgery."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "WARNINGS; DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "la",
+          "sections": "WARNINGS; DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "xl",
+          "sections": "5.1; 5.3; 17"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Monitor bradycardia, AV block, hypotension and worsening heart failure. Bronchospasm risk is important even beyond diagnosed asthma. Propranolol can mask hypoglycemia and provoke severe/prolonged events, especially with fasting, vomiting, infancy, diabetes or increased metabolic demand. It can mask hyperthyroidism; abrupt withdrawal may precipitate thyroid storm.",
+        "Hemangeol requires interruption for lower respiratory infection with dyspnea/wheezing. Stop and evaluate severe/symptomatic bradycardia or hypotension; its label uses heart rate <80/min and systolic pressure <50 mmHg as severe thresholds. PHACE-associated cerebrovascular abnormalities may increase stroke risk: assess infants with large facial hemangioma before treatment.",
+        "Serious allergy and severe skin reactions are reported. Beta blockade may reduce response to usual epinephrine doses during anaphylaxis. Inform the surgical/anesthesia team; do not independently withhold chronic therapy."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "WARNINGS; PRECAUTIONS"
+        },
+        {
+          "id": "la",
+          "sections": "WARNINGS; PRECAUTIONS"
+        },
+        {
+          "id": "xl",
+          "sections": "5.1\u20135.7"
+        },
+        {
+          "id": "hem",
+          "sections": "4; 5.1\u20135.5; 6"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "Adult IR/Inderal LA: cardiogenic shock, sinus bradycardia, greater-than-first-degree AV block, bronchial asthma or hypersensitivity. InnoPran XL additionally specifies decompensated heart failure and sick sinus syndrome, with a permanent-pacemaker exception for its conduction contraindication.",
+        "Hemangeol: corrected age <5 weeks after prematurity, weight <2 kg, asthma/history of bronchospasm, heart rate <80/min, greater-than-first-degree heart block, decompensated heart failure, blood pressure <50/30 mmHg, pheochromocytoma or hypersensitivity. Its pheochromocytoma contraindication differs from adult adjunctive IR use."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "CONTRAINDICATIONS"
+        },
+        {
+          "id": "la",
+          "sections": "CONTRAINDICATIONS"
+        },
+        {
+          "id": "xl",
+          "sections": "4"
+        },
+        {
+          "id": "hem",
+          "sections": "4"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning review and withdrawal",
+      "assertions": [
+        "The current reviewed labels place cardiac ischemia after abrupt withdrawal in their warnings sections; they do not display a separate boxed-warning section in these current SPLs. Earlier InnoPran XL labels used a box. The withdrawal risk remains clinically important regardless of presentation. Hemangeol has serious hypoglycemia warnings and a Medication Guide. Check the exact dispensed product label."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "WARNINGS, Angina Pectoris; complete current SPL"
+        },
+        {
+          "id": "la",
+          "sections": "WARNINGS, Angina Pectoris; complete current SPL"
+        },
+        {
+          "id": "xl",
+          "sections": "Highlights; 5.1; complete current SPL"
+        },
+        {
+          "id": "hem",
+          "sections": "5.1; Medication Guide; complete current SPL"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Adult reports include fatigue, dizziness, sleep/mood disturbances, GI symptoms, cold extremities, bradycardia and hypotension; bronchospasm, heart failure and severe skin/allergic reactions warrant urgent attention. InnoPran XL trials commonly reported fatigue, dizziness and constipation. Hemangeol trials commonly reported sleep disturbances, aggravated respiratory infections, diarrhea and vomiting."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "ADVERSE REACTIONS"
+        },
+        {
+          "id": "la",
+          "sections": "ADVERSE REACTIONS"
+        },
+        {
+          "id": "xl",
+          "sections": "6"
+        },
+        {
+          "id": "hem",
+          "sections": "6"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Conduction and cardiovascular combinations",
+      "assertions": [
+        "Verapamil/diltiazem, digoxin and antiarrhythmics can add bradycardia, block or cardiac failure risk. Propranolol can increase propafenone exposure. Monitor closely and avoid inappropriate combinations. If clonidine is also used, its withdrawal needs a coordinated plan: the XL label advises withdrawing the beta blocker several days before clonidine, while respecting propranolol taper requirements."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "PRECAUTIONS, Drug Interactions"
+        },
+        {
+          "id": "la",
+          "sections": "PRECAUTIONS, Drug Interactions"
+        },
+        {
+          "id": "xl",
+          "sections": "5.6; 7.1\u20137.2"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Metabolic interactions",
+      "assertions": [
+        "CYP2D6 inhibitors such as fluoxetine/paroxetine/quinidine, CYP1A2 inhibitors such as ciprofloxacin/fluvoxamine and CYP2C19 inhibitors such as fluconazole can raise exposure: monitor heart rate and pressure. Inducers such as rifampin/phenytoin and smoking can reduce effect. Cholestyramine/colestipol can reduce levels. Medication changes may require reassessment."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "CLINICAL PHARMACOLOGY; PRECAUTIONS, Drug Interactions"
+        },
+        {
+          "id": "la",
+          "sections": "Clinical Pharmacology, Drug Interactions"
+        },
+        {
+          "id": "xl",
+          "sections": "7.1; 12.7"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Other clinically important interactions",
+      "assertions": [
+        "Monitor prothrombin time/INR with warfarin. Alpha blockers and MAO inhibitors/tricyclic antidepressants can increase hypotension; NSAIDs can weaken antihypertensive response. IR/LA labels describe increased rizatriptan/zolmitriptan exposure; use their own product-specific interaction instructions."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "CLINICAL PHARMACOLOGY; PRECAUTIONS, Drug Interactions"
+        },
+        {
+          "id": "la",
+          "sections": "Clinical Pharmacology, Drug Interactions; PRECAUTIONS"
+        },
+        {
+          "id": "xl",
+          "sections": "7.1\u20137.2"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Infant and lactating-parent medication review",
+      "assertions": [
+        "Hemangeol interactions include medicines slowing cardiac conduction or changing propranolol metabolism. Corticosteroids can increase hypoglycemia risk. Review medications taken by a breastfeeding parent because milk exposure may interact with the infant\u2019s treatment; do not stop breastfeeding or medicines without advice."
+      ],
+      "sources": [
+        {
+          "id": "hem",
+          "sections": "7; 12.3; Medication Guide"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal, hepatic and older adults",
+      "assertions": [
+        "Adult IR/LA labels advise caution in renal or hepatic impairment without a fixed adjustment table. InnoPran XL specifies starting at its lowest dose, 80 mg once daily, in either impairment and monitoring marked bradycardia/hypotension. Exposure may rise in organ impairment; older adults require cautious dose selection. Propranolol is not significantly dialyzable."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "PRECAUTIONS; Geriatric Use; OVERDOSAGE"
+        },
+        {
+          "id": "la",
+          "sections": "PRECAUTIONS; Special Population; OVERDOSAGE"
+        },
+        {
+          "id": "xl",
+          "sections": "8.5\u20138.7; 10; 12.6"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric boundaries",
+      "assertions": [
+        "Adult IR, Inderal LA and InnoPran XL safety/effectiveness are not established for pediatric use in these labels. Hemangeol is the infant-specific approved product; use its initiation window, corrected-age/weight contraindications and monitoring. Safety/effectiveness beyond age 1 year and in infants with renal/hepatic impairment are not established."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "Pediatric Use"
+        },
+        {
+          "id": "la",
+          "sections": "Pediatric Use"
+        },
+        {
+          "id": "xl",
+          "sections": "8.4"
+        },
+        {
+          "id": "hem",
+          "sections": "2; 4; 8.4\u20138.7"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": [
+        "Current InnoPran XL labeling describes no identified drug-associated major-birth-defect or miscarriage signal in published studies, but fetal-growth reports vary. Near-delivery exposure warrants neonatal monitoring for bradycardia, hypoglycemia and respiratory depression. IR/LA labels also describe fetal/neonatal concerns. Propranolol enters milk; discuss maternal need and infant risk rather than assuming absence of exposure. Hemangeol is not an adult pregnancy product."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "Pregnancy; Nursing Mothers"
+        },
+        {
+          "id": "la",
+          "sections": "Pregnancy; Nursing Mothers"
+        },
+        {
+          "id": "xl",
+          "sections": "8.1\u20138.2"
+        },
+        {
+          "id": "hem",
+          "sections": "8.1\u20138.2"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and clinical effect",
+      "assertions": [
+        "Nonselective beta blockade lowers heart rate, contractility and AV conduction and reduces responses to sympathetic stimulation. Beta2 blockade contributes to bronchospasm. Antihypertensive and antimigraine mechanisms are incompletely established; Hemangeol\u2019s hemangioma mechanism is not fully understood."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "la",
+          "sections": "Mechanism of Action"
+        },
+        {
+          "id": "xl",
+          "sections": "12.1\u201312.2"
+        },
+        {
+          "id": "hem",
+          "sections": "12.1\u201312.2"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Absorption, metabolism and elimination",
+      "assertions": [
+        "Oral absorption is extensive, but hepatic first-pass metabolism leaves about 25% systemically available on average. Propranolol is about 90% protein-bound, crosses the brain/placenta and is metabolized through CYP2D6, CYP1A2 and CYP2C19 pathways; metabolites leave mainly in urine. Hemangeol\u2019s infant study found a median half-life around 3.5 hours."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "PHARMACOKINETICS AND DRUG METABOLISM"
+        },
+        {
+          "id": "la",
+          "sections": "Absorption; Distribution; Metabolism and Elimination"
+        },
+        {
+          "id": "xl",
+          "sections": "12.3"
+        },
+        {
+          "id": "hem",
+          "sections": "12.3"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Formulation timing",
+      "assertions": [
+        "Inderal LA peaks at about 6 hours and has an apparent plasma half-life about 10 hours; its daily exposure differs from divided IR. Bedtime InnoPran XL has a delayed release lag and fasting steady-state peak about 12\u201314 hours after dosing; a high-fat meal shifts timing. These kinetics support each product\u2019s instructions rather than a universal interchange rule."
+      ],
+      "sources": [
+        {
+          "id": "la",
+          "sections": "Absorption; Metabolism and Elimination"
+        },
+        {
+          "id": "xl",
+          "sections": "12.3"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Adult monitoring and counseling",
+      "assertions": [
+        "Assess pressure/pulse and indication-specific response, including end-of-interval control after a formulation change. Report worsening dyspnea, weight gain, fainting, wheezing or serious skin reactions. Learn low-glucose symptoms that remain detectable despite beta blockade, and discuss fasting/vomiting promptly. Tell clinicians about propranolol before procedures."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "WARNINGS; Information for Patients; DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "la",
+          "sections": "WARNINGS; Information for Patients; DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "xl",
+          "sections": "5; 17"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Infant safety plan",
+      "assertions": [
+        "Confirm weight, concentration and syringe mL markings; feed with each dose and maintain normal feeding. Parents need an explicit illness/fasting hold plan. Pale/blue skin, sweating, unusual sleepiness, poor feeding, breathing pauses or seizures may signal hypoglycemia: stop the medicine and get immediate care. Do not give anything by mouth to an unconscious infant."
+      ],
+      "sources": [
+        {
+          "id": "hem",
+          "sections": "2; 5.1; Medication Guide; IFU"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Overdose or severe beta blockade",
+      "assertions": [
+        "Suspected overdose requires emergency evaluation, glucose/cardiac monitoring and supportive treatment. Bradycardia, hypotension, block, bronchospasm or hypoglycemia may occur. Propranolol is not significantly removed by dialysis. Do not attempt home emesis or improvise antidote doses."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "OVERDOSAGE"
+        },
+        {
+          "id": "la",
+          "sections": "OVERDOSAGE"
+        },
+        {
+          "id": "xl",
+          "sections": "10"
+        },
+        {
+          "id": "hem",
+          "sections": "10"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Reviewed Amneal 10 mg IR tablet: orange, scored, PLIVA 467; 100-count NDC 69238-2077-1. Inderal LA 80 mg capsule is light blue, with three rings and INDERAL LA 80; 30-count NDC 62559-521-30. InnoPran XL 80 mg is gray/white, marked InnoPran XL, 80 and two bands; 30-count NDC 62559-590-30. Hemangeol current Eton 50 mL bottle NDC 71863-132-50 (120 mL: 71863-132-12)."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "la",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "xl",
+          "sections": "3; 16"
+        },
+        {
+          "id": "hem",
+          "sections": "16; Principal display panel"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Reviewed IR tablets: 10, 20, 40, 60 and 80 mg hydrochloride. Inderal LA capsules: 60, 80, 120 and 160 mg. InnoPran XL capsules: 80 and 120 mg. Hemangeol oral solution: 4.28 mg/mL hydrochloride, equivalent to 3.75 mg/mL propranolol base, supplied with a 5 mL oral syringe. Other liquids, injectable formulations and generics require their own labels."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "DESCRIPTION; HOW SUPPLIED"
+        },
+        {
+          "id": "la",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "xl",
+          "sections": "3; 16"
+        },
+        {
+          "id": "hem",
+          "sections": "3; 11; 16; IFU"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "IR: 20\u201325\u00b0C, light protection and a tight light-resistant container. Inderal LA: 20\u201325\u00b0C (excursions 15\u201330\u00b0C); protect from light, moisture, freezing and excessive heat. InnoPran XL: 25\u00b0C (excursions 15\u201330\u00b0C), tightly closed. Hemangeol: 20\u201325\u00b0C (excursions 15\u201330\u00b0C), original box; do not freeze or shake; discard opened bottle after 2 months and clean the oral syringe as directed."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "la",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "xl",
+          "sections": "16"
+        },
+        {
+          "id": "hem",
+          "sections": "16; IFU"
+        }
+      ]
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Adult immediate-release indications",
+      "assertions": [
+        "The reviewed IR tablet label covers hypertension, coronary angina, ventricular-rate control in atrial fibrillation, reduced cardiovascular mortality after a clinically stable myocardial infarction, migraine prevention, essential tremor, symptomatic hypertrophic subaortic stenosis and pheochromocytoma as an adjunct to alpha blockade. It does not treat hypertensive emergencies or an active migraine attack."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "INDICATIONS AND USAGE"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Long-acting product limits",
+      "assertions": [
+        "Inderal LA is labeled for hypertension, coronary angina, migraine prevention and hypertrophic subaortic stenosis. InnoPran XL is labeled for hypertension only. Do not transfer all IR indications to either extended-release product."
+      ],
+      "sources": [
+        {
+          "id": "la",
+          "sections": "INDICATIONS AND USAGE"
+        },
+        {
+          "id": "xl",
+          "sections": "1"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Infant hemangioma and scope",
+      "assertions": [
+        "Hemangeol treats proliferating infantile hemangioma requiring systemic therapy. Initiate at age 5 weeks to 5 months using its own weight-based oral solution schedule. Portal-hypertension regimens and other off-label uses are outside this label-based profile."
+      ],
+      "sources": [
+        {
+          "id": "hem",
+          "sections": "1; 2; 8.4"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Adult immediate-release dosing",
+      "assertions": [
+        "Individualize response and tolerability. The following are label regimens, not interchangeable maximum doses. Divided daily doses must remain divided."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "DOSAGE AND ADMINISTRATION"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Indication",
+          "Labeled regimen / limits"
+        ],
+        "rows": [
+          [
+            "Hypertension",
+            "Start 40 mg twice daily; usual maintenance 120\u2013240 mg/day. Some patients require up to 640 mg/day; assess end-of-interval control and whether three daily doses are needed."
+          ],
+          [
+            "Angina",
+            "80\u2013320 mg/day divided into 2, 3 or 4 doses."
+          ],
+          [
+            "Atrial fibrillation",
+            "10\u201330 mg three or four times daily before meals and at bedtime."
+          ],
+          [
+            "After myocardial infarction",
+            "Recommended 180\u2013240 mg/day divided. Trial began 40 mg three times daily, then 60\u201380 mg three times daily after 1 month; higher-dose mortality benefit is unestablished."
+          ],
+          [
+            "Migraine prevention",
+            "Start 80 mg/day divided; usual 160\u2013240 mg/day. If ineffective 4\u20136 weeks after maximum dose, discontinue gradually."
+          ],
+          [
+            "Essential tremor",
+            "Start 40 mg twice daily; usual optimal response 120 mg/day, sometimes 240\u2013320 mg/day."
+          ],
+          [
+            "Hypertrophic subaortic stenosis",
+            "20\u201340 mg three or four times daily before meals and at bedtime."
+          ],
+          [
+            "Pheochromocytoma, with alpha blockade",
+            "Operable: 60 mg/day divided for 3 days before surgery. Inoperable: 30 mg/day divided as adjunctive therapy."
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Inderal LA once-daily regimens",
+      "assertions": [
+        "Inderal LA is not a simple mg-for-mg substitute for divided IR dosing. Blood levels differ; retitrate and assess response near the end of 24 hours. The label has not studied food effects."
+      ],
+      "sources": [
+        {
+          "id": "la",
+          "sections": "DOSAGE AND ADMINISTRATION; Clinical Pharmacology, Absorption"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Indication",
+          "Once-daily oral regimen"
+        ],
+        "rows": [
+          [
+            "Hypertension",
+            "Start 80 mg; usual maintenance 120\u2013160 mg. Some patients require 640 mg; individualize."
+          ],
+          [
+            "Angina",
+            "Start 80 mg; increase at 3\u20137-day intervals; average optimal 160 mg. Safety/value above 320 mg/day unestablished."
+          ],
+          [
+            "Migraine prevention",
+            "Start 80 mg; usual 160\u2013240 mg. Assess after 4\u20136 weeks at maximum."
+          ],
+          [
+            "Hypertrophic subaortic stenosis",
+            "80\u2013160 mg."
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "InnoPran XL bedtime regimen",
+      "assertions": [
+        "Start 80 mg once daily at bedtime and titrate to 120 mg if needed. Doses above 120 mg provide no additional blood-pressure effect. Take consistently either with food or on an empty stomach. Full blood-pressure response usually takes 2\u20133 weeks; this is a distinct release profile, not an IR dosing schedule."
+      ],
+      "sources": [
+        {
+          "id": "xl",
+          "sections": "2; 12.3"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Hemangeol infant titration",
+      "assertions": [
+        "For the 4.28 mg/mL hydrochloride solution, doses below are mL/kg PER DOSE, twice daily at least 9 hours apart. Reassess weight and readjust the prescribed mL dose periodically. Maintain the final regimen for 6 months; recurrence may warrant a clinician-directed restart."
+      ],
+      "sources": [
+        {
+          "id": "hem",
+          "sections": "2; 3; 14"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Treatment stage",
+          "Volume per dose",
+          "Frequency"
+        ],
+        "rows": [
+          [
+            "Week 1",
+            "0.15 mL/kg",
+            "Twice daily"
+          ],
+          [
+            "Week 2",
+            "0.3 mL/kg",
+            "Twice daily"
+          ],
+          [
+            "From week 3",
+            "0.4 mL/kg",
+            "Twice daily"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Infant concentration and source conversion review",
+      "assertions": [
+        "The current Hemangeol label pairs its volume instructions with parenthetical mg/kg values that are not consistently reconciled with the stated hydrochloride/base concentration. This profile preserves the explicit labeled mL/kg schedule and does not supply a recalculated mg/kg regimen. Confirm the actual prescribed mL dose and concentration with the treating specialist/pharmacist; this discrepancy remains a source-review question."
+      ],
+      "sources": [
+        {
+          "id": "hem",
+          "sections": "2; 3; 11"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Feeding, observation and dose loss",
+      "assertions": [
+        "Give Hemangeol during or immediately after a feeding; skip when not feeding or vomiting, and resume only when feeding normally under the care plan. Observe heart rate and blood pressure for 2 hours after initiation or each increase. If an infant spits up or the full dose is uncertain, do not repeat it; wait for the next scheduled dose. Use the supplied oral syringe."
+      ],
+      "sources": [
+        {
+          "id": "hem",
+          "sections": "2; 5.1\u20135.2; Medication Guide; IFU"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Stopping adult treatment",
+      "assertions": [
+        "Abrupt withdrawal can worsen ischemia. For chronic InnoPran XL, taper over 1\u20132 weeks with monitoring. IR and Inderal LA labels advise reduction over at least a few weeks; migraine discontinuation also requires a gradual plan. Do not stop on your own, including before surgery."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "WARNINGS; DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "la",
+          "sections": "WARNINGS; DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "xl",
+          "sections": "5.1; 5.3; 17"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Monitor bradycardia, AV block, hypotension and worsening heart failure. Bronchospasm risk is important even beyond diagnosed asthma. Propranolol can mask hypoglycemia and provoke severe/prolonged events, especially with fasting, vomiting, infancy, diabetes or increased metabolic demand. It can mask hyperthyroidism; abrupt withdrawal may precipitate thyroid storm.",
+        "Hemangeol requires interruption for lower respiratory infection with dyspnea/wheezing. Stop and evaluate severe/symptomatic bradycardia or hypotension; its label uses heart rate <80/min and systolic pressure <50 mmHg as severe thresholds. PHACE-associated cerebrovascular abnormalities may increase stroke risk: assess infants with large facial hemangioma before treatment.",
+        "Serious allergy and severe skin reactions are reported. Beta blockade may reduce response to usual epinephrine doses during anaphylaxis. Inform the surgical/anesthesia team; do not independently withhold chronic therapy."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "WARNINGS; PRECAUTIONS"
+        },
+        {
+          "id": "la",
+          "sections": "WARNINGS; PRECAUTIONS"
+        },
+        {
+          "id": "xl",
+          "sections": "5.1\u20135.7"
+        },
+        {
+          "id": "hem",
+          "sections": "4; 5.1\u20135.5; 6"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "Adult IR/Inderal LA: cardiogenic shock, sinus bradycardia, greater-than-first-degree AV block, bronchial asthma or hypersensitivity. InnoPran XL additionally specifies decompensated heart failure and sick sinus syndrome, with a permanent-pacemaker exception for its conduction contraindication.",
+        "Hemangeol: corrected age <5 weeks after prematurity, weight <2 kg, asthma/history of bronchospasm, heart rate <80/min, greater-than-first-degree heart block, decompensated heart failure, blood pressure <50/30 mmHg, pheochromocytoma or hypersensitivity. Its pheochromocytoma contraindication differs from adult adjunctive IR use."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "CONTRAINDICATIONS"
+        },
+        {
+          "id": "la",
+          "sections": "CONTRAINDICATIONS"
+        },
+        {
+          "id": "xl",
+          "sections": "4"
+        },
+        {
+          "id": "hem",
+          "sections": "4"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning review and withdrawal",
+      "assertions": [
+        "The current reviewed labels place cardiac ischemia after abrupt withdrawal in their warnings sections; they do not display a separate boxed-warning section in these current SPLs. Earlier InnoPran XL labels used a box. The withdrawal risk remains clinically important regardless of presentation. Hemangeol has serious hypoglycemia warnings and a Medication Guide. Check the exact dispensed product label."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "WARNINGS, Angina Pectoris; complete current SPL"
+        },
+        {
+          "id": "la",
+          "sections": "WARNINGS, Angina Pectoris; complete current SPL"
+        },
+        {
+          "id": "xl",
+          "sections": "Highlights; 5.1; complete current SPL"
+        },
+        {
+          "id": "hem",
+          "sections": "5.1; Medication Guide; complete current SPL"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Adult reports include fatigue, dizziness, sleep/mood disturbances, GI symptoms, cold extremities, bradycardia and hypotension; bronchospasm, heart failure and severe skin/allergic reactions warrant urgent attention. InnoPran XL trials commonly reported fatigue, dizziness and constipation. Hemangeol trials commonly reported sleep disturbances, aggravated respiratory infections, diarrhea and vomiting."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "ADVERSE REACTIONS"
+        },
+        {
+          "id": "la",
+          "sections": "ADVERSE REACTIONS"
+        },
+        {
+          "id": "xl",
+          "sections": "6"
+        },
+        {
+          "id": "hem",
+          "sections": "6"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Conduction and cardiovascular combinations",
+      "assertions": [
+        "Verapamil/diltiazem, digoxin and antiarrhythmics can add bradycardia, block or cardiac failure risk. Propranolol can increase propafenone exposure. Monitor closely and avoid inappropriate combinations. If clonidine is also used, its withdrawal needs a coordinated plan: the XL label advises withdrawing the beta blocker several days before clonidine, while respecting propranolol taper requirements."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "PRECAUTIONS, Drug Interactions"
+        },
+        {
+          "id": "la",
+          "sections": "PRECAUTIONS, Drug Interactions"
+        },
+        {
+          "id": "xl",
+          "sections": "5.6; 7.1\u20137.2"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Metabolic interactions",
+      "assertions": [
+        "CYP2D6 inhibitors such as fluoxetine/paroxetine/quinidine, CYP1A2 inhibitors such as ciprofloxacin/fluvoxamine and CYP2C19 inhibitors such as fluconazole can raise exposure: monitor heart rate and pressure. Inducers such as rifampin/phenytoin and smoking can reduce effect. Cholestyramine/colestipol can reduce levels. Medication changes may require reassessment."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "CLINICAL PHARMACOLOGY; PRECAUTIONS, Drug Interactions"
+        },
+        {
+          "id": "la",
+          "sections": "Clinical Pharmacology, Drug Interactions"
+        },
+        {
+          "id": "xl",
+          "sections": "7.1; 12.7"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Other clinically important interactions",
+      "assertions": [
+        "Monitor prothrombin time/INR with warfarin. Alpha blockers and MAO inhibitors/tricyclic antidepressants can increase hypotension; NSAIDs can weaken antihypertensive response. IR/LA labels describe increased rizatriptan/zolmitriptan exposure; use their own product-specific interaction instructions."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "CLINICAL PHARMACOLOGY; PRECAUTIONS, Drug Interactions"
+        },
+        {
+          "id": "la",
+          "sections": "Clinical Pharmacology, Drug Interactions; PRECAUTIONS"
+        },
+        {
+          "id": "xl",
+          "sections": "7.1\u20137.2"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Infant and lactating-parent medication review",
+      "assertions": [
+        "Hemangeol interactions include medicines slowing cardiac conduction or changing propranolol metabolism. Corticosteroids can increase hypoglycemia risk. Review medications taken by a breastfeeding parent because milk exposure may interact with the infant\u2019s treatment; do not stop breastfeeding or medicines without advice."
+      ],
+      "sources": [
+        {
+          "id": "hem",
+          "sections": "7; 12.3; Medication Guide"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal, hepatic and older adults",
+      "assertions": [
+        "Adult IR/LA labels advise caution in renal or hepatic impairment without a fixed adjustment table. InnoPran XL specifies starting at its lowest dose, 80 mg once daily, in either impairment and monitoring marked bradycardia/hypotension. Exposure may rise in organ impairment; older adults require cautious dose selection. Propranolol is not significantly dialyzable."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "PRECAUTIONS; Geriatric Use; OVERDOSAGE"
+        },
+        {
+          "id": "la",
+          "sections": "PRECAUTIONS; Special Population; OVERDOSAGE"
+        },
+        {
+          "id": "xl",
+          "sections": "8.5\u20138.7; 10; 12.6"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric boundaries",
+      "assertions": [
+        "Adult IR, Inderal LA and InnoPran XL safety/effectiveness are not established for pediatric use in these labels. Hemangeol is the infant-specific approved product; use its initiation window, corrected-age/weight contraindications and monitoring. Safety/effectiveness beyond age 1 year and in infants with renal/hepatic impairment are not established."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "Pediatric Use"
+        },
+        {
+          "id": "la",
+          "sections": "Pediatric Use"
+        },
+        {
+          "id": "xl",
+          "sections": "8.4"
+        },
+        {
+          "id": "hem",
+          "sections": "2; 4; 8.4\u20138.7"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": [
+        "Current InnoPran XL labeling describes no identified drug-associated major-birth-defect or miscarriage signal in published studies, but fetal-growth reports vary. Near-delivery exposure warrants neonatal monitoring for bradycardia, hypoglycemia and respiratory depression. IR/LA labels also describe fetal/neonatal concerns. Propranolol enters milk; discuss maternal need and infant risk rather than assuming absence of exposure. Hemangeol is not an adult pregnancy product."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "Pregnancy; Nursing Mothers"
+        },
+        {
+          "id": "la",
+          "sections": "Pregnancy; Nursing Mothers"
+        },
+        {
+          "id": "xl",
+          "sections": "8.1\u20138.2"
+        },
+        {
+          "id": "hem",
+          "sections": "8.1\u20138.2"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and clinical effect",
+      "assertions": [
+        "Nonselective beta blockade lowers heart rate, contractility and AV conduction and reduces responses to sympathetic stimulation. Beta2 blockade contributes to bronchospasm. Antihypertensive and antimigraine mechanisms are incompletely established; Hemangeol\u2019s hemangioma mechanism is not fully understood."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "la",
+          "sections": "Mechanism of Action"
+        },
+        {
+          "id": "xl",
+          "sections": "12.1\u201312.2"
+        },
+        {
+          "id": "hem",
+          "sections": "12.1\u201312.2"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Absorption, metabolism and elimination",
+      "assertions": [
+        "Oral absorption is extensive, but hepatic first-pass metabolism leaves about 25% systemically available on average. Propranolol is about 90% protein-bound, crosses the brain/placenta and is metabolized through CYP2D6, CYP1A2 and CYP2C19 pathways; metabolites leave mainly in urine. Hemangeol\u2019s infant study found a median half-life around 3.5 hours."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "PHARMACOKINETICS AND DRUG METABOLISM"
+        },
+        {
+          "id": "la",
+          "sections": "Absorption; Distribution; Metabolism and Elimination"
+        },
+        {
+          "id": "xl",
+          "sections": "12.3"
+        },
+        {
+          "id": "hem",
+          "sections": "12.3"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Formulation timing",
+      "assertions": [
+        "Inderal LA peaks at about 6 hours and has an apparent plasma half-life about 10 hours; its daily exposure differs from divided IR. Bedtime InnoPran XL has a delayed release lag and fasting steady-state peak about 12\u201314 hours after dosing; a high-fat meal shifts timing. These kinetics support each product\u2019s instructions rather than a universal interchange rule."
+      ],
+      "sources": [
+        {
+          "id": "la",
+          "sections": "Absorption; Metabolism and Elimination"
+        },
+        {
+          "id": "xl",
+          "sections": "12.3"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Adult monitoring and counseling",
+      "assertions": [
+        "Assess pressure/pulse and indication-specific response, including end-of-interval control after a formulation change. Report worsening dyspnea, weight gain, fainting, wheezing or serious skin reactions. Learn low-glucose symptoms that remain detectable despite beta blockade, and discuss fasting/vomiting promptly. Tell clinicians about propranolol before procedures."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "WARNINGS; Information for Patients; DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "la",
+          "sections": "WARNINGS; Information for Patients; DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "xl",
+          "sections": "5; 17"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Infant safety plan",
+      "assertions": [
+        "Confirm weight, concentration and syringe mL markings; feed with each dose and maintain normal feeding. Parents need an explicit illness/fasting hold plan. Pale/blue skin, sweating, unusual sleepiness, poor feeding, breathing pauses or seizures may signal hypoglycemia: stop the medicine and get immediate care. Do not give anything by mouth to an unconscious infant."
+      ],
+      "sources": [
+        {
+          "id": "hem",
+          "sections": "2; 5.1; Medication Guide; IFU"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Overdose or severe beta blockade",
+      "assertions": [
+        "Suspected overdose requires emergency evaluation, glucose/cardiac monitoring and supportive treatment. Bradycardia, hypotension, block, bronchospasm or hypoglycemia may occur. Propranolol is not significantly removed by dialysis. Do not attempt home emesis or improvise antidote doses."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "OVERDOSAGE"
+        },
+        {
+          "id": "la",
+          "sections": "OVERDOSAGE"
+        },
+        {
+          "id": "xl",
+          "sections": "10"
+        },
+        {
+          "id": "hem",
+          "sections": "10"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Reviewed Amneal 10 mg IR tablet: orange, scored, PLIVA 467; 100-count NDC 69238-2077-1. Inderal LA 80 mg capsule is light blue, with three rings and INDERAL LA 80; 30-count NDC 62559-521-30. InnoPran XL 80 mg is gray/white, marked InnoPran XL, 80 and two bands; 30-count NDC 62559-590-30. Hemangeol current Eton 50 mL bottle NDC 71863-132-50 (120 mL: 71863-132-12)."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "la",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "xl",
+          "sections": "3; 16"
+        },
+        {
+          "id": "hem",
+          "sections": "16; Principal display panel"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Reviewed IR tablets: 10, 20, 40, 60 and 80 mg hydrochloride. Inderal LA capsules: 60, 80, 120 and 160 mg. InnoPran XL capsules: 80 and 120 mg. Hemangeol oral solution: 4.28 mg/mL hydrochloride, equivalent to 3.75 mg/mL propranolol base, supplied with a 5 mL oral syringe. Other liquids, injectable formulations and generics require their own labels."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "DESCRIPTION; HOW SUPPLIED"
+        },
+        {
+          "id": "la",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "xl",
+          "sections": "3; 16"
+        },
+        {
+          "id": "hem",
+          "sections": "3; 11; 16; IFU"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "IR: 20\u201325\u00b0C, light protection and a tight light-resistant container. Inderal LA: 20\u201325\u00b0C (excursions 15\u201330\u00b0C); protect from light, moisture, freezing and excessive heat. InnoPran XL: 25\u00b0C (excursions 15\u201330\u00b0C), tightly closed. Hemangeol: 20\u201325\u00b0C (excursions 15\u201330\u00b0C), original box; do not freeze or shake; discard opened bottle after 2 months and clean the oral syringe as directed."
+      ],
+      "sources": [
+        {
+          "id": "ir",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "la",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "xl",
+          "sections": "16"
+        },
+        {
+          "id": "hem",
+          "sections": "16; IFU"
+        }
+      ]
+    }
+  ],
+  "hero_assertions": {
+    "essential": {
+      "title": "Prevent hypoglycemia and abrupt withdrawal",
+      "text": "Feed infants with Hemangeol and hold doses during poor feeding/vomiting. Adults need a supervised taper; sudden withdrawal can worsen ischemia.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "facts": [
+      [
+        "Class",
+        "Nonselective beta blocker"
+      ],
+      [
+        "Adult forms",
+        "IR and distinct ER capsules"
+      ],
+      [
+        "Infant product",
+        "Hemangeol 4.28 mg/mL HCl"
+      ]
+    ],
+    "sources": [
+      "ir",
+      "la",
+      "xl",
+      "hem"
+    ]
+  },
+  "section_assertions": [
+    {
+      "section": "indications",
+      "summary": "Propranolol uses depend on the immediate-release, extended-release or infant product.",
+      "takeaway": "Confirm the product and indication before choosing a dose.",
+      "sources": [
+        "hem",
+        "ir",
+        "la",
+        "xl"
+      ]
+    },
+    {
+      "section": "dosage",
+      "summary": "Adult oral formulations and infant solution have separate schedules.",
+      "takeaway": "Do not substitute products or concentration units without a prescriber plan.",
+      "sources": [
+        "hem",
+        "ir",
+        "la",
+        "xl"
+      ]
+    },
+    {
+      "section": "safety",
+      "summary": "Nonselective beta blockade can impair breathing, circulation and recognition of low glucose.",
+      "takeaway": "Urgent symptoms include wheezing, fainting, severe low glucose and worsening heart failure.",
+      "sources": [
+        "hem",
+        "ir",
+        "la",
+        "xl"
+      ]
+    },
+    {
+      "section": "interactions",
+      "summary": "Check drugs affecting conduction, exposure, blood pressure and glucose.",
+      "takeaway": "Review the infant\u2019s medicines and the breastfeeding parent\u2019s medicines.",
+      "sources": [
+        "hem",
+        "ir",
+        "la",
+        "xl"
+      ]
+    },
+    {
+      "section": "populations",
+      "summary": "Age, organ function and pregnancy modify treatment decisions.",
+      "takeaway": "The adult tablet label does not establish infant dosing.",
+      "sources": [
+        "hem",
+        "ir",
+        "la",
+        "xl"
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "summary": "Propranolol blocks beta1 and beta2 receptors and undergoes extensive hepatic first-pass metabolism.",
+      "takeaway": "Release profile affects timing, exposure and product substitution.",
+      "sources": [
+        "hem",
+        "ir",
+        "la",
+        "xl"
+      ]
+    },
+    {
+      "section": "practice",
+      "summary": "Monitor response, circulation, breathing and glucose risk alongside adherence.",
+      "takeaway": "Do not independently stop treatment or repeat an uncertain infant dose.",
+      "sources": [
+        "hem",
+        "ir",
+        "la",
+        "xl"
+      ]
+    },
+    {
+      "section": "product",
+      "summary": "Identify strength, release technology and infant solution concentration explicitly.",
+      "takeaway": "An imprint or brand example does not identify every marketed product.",
+      "sources": [
+        "hem",
+        "ir",
+        "la",
+        "xl"
+      ]
+    }
+  ],
+  "limitations": [
+    "No universal product conversion or renal-adjustment table. Off-label indications and injectable formulations require separate review.",
+    "Hemangeol current label has inconsistent parenthetical mg/kg equivalents; volume-based schedule reproduced without inferred correction."
+  ],
+  "unresolved_source_questions": [
+    {
+      "material": false,
+      "source": "hem",
+      "sections": "2; 3; 11",
+      "issue": "Parenthetical mg/kg amounts are not internally consistent with 4.28 mg/mL hydrochloride / 3.75 mg/mL base. Explicit volume instructions retained; no corrected mg/kg asserted. Manufacturer clarification needed before any universal mg conversion is claimed.",
+      "classification": "Unresolved manufacturer source ambiguity; published volume regimen independently verified, no unsupported mg conversion published."
+    }
+  ],
+  "validation": {
+    "schema": "Passed actual validateMonograph on 2026-10-01; eight APAP sections, four safety cards, three product cards, three hero facts, citations/table shape/assertion-map coverage checked",
+    "tests_build_lint": "Parent batch checks required",
+    "rendered_page": "Parent batch QA required",
+    "author_string_review": "All rendered paragraphs, table cells, doses, units, spacing and product identifiers manually reviewed; no malformed number spacing found.",
+    "hero_fact_shape": "Corrected to APAP renderer [term,value] tuple arrays; no clinical content changed."
+  },
+  "monograph_sha256": "3dcf795b84f411e0f810ae8d67503df09b9520f5c887dba94d7408e6d35937b1",
+  "independent_clinical_review": "blueprint_safety_review independently reread final actual file 2026-10-01: exact labeled volume regimen plus explicit conversion gap supports source_reviewed within scope; conversion remains unresolved."
+}
