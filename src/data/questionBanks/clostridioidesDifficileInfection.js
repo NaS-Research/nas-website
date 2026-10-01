@@ -50,5 +50,106 @@ const cases = [
   ["special-populations", "A patient with severe immune compromise asks about microbiota therapy. What is best?", ["Use specialist review because current guidance suggests against routine use", "Assume immunocompetent evidence applies", "Use home donor stool", "Skip antibacterial therapy"], "Host immune status changes the safety boundary."],
 ].map((item, index) => ({ id: `clostridioides-difficile-infection-${String(generated.length + index + 1).padStart(3, "0")}`, lesson: item[0], question: item[1], choices: item[2], answer: 0, rationale: item[3], reviewHref: `#${item[0]}` }));
 
-export const clostridioidesDifficileInfectionQuestionBank = [...generated, ...cases];
+const sourceReviewedBowelDeliveryQuestions = {
+  "clostridioides-difficile-infection-041": {
+    "choices": [
+      "Oral vancomycin remains an acceptable initial nonfulminant regimen",
+      "IV vancomycin is interchangeable with oral therapy for colonic CDI",
+      "Oral vancomycin is used only for invasive bloodstream infection",
+      "Every initial CDI episode requires the fulminant high-dose combination"
+    ],
+    "rationale": "The book includes oral vancomycin as an initial CDI regimen. Its intestinal role differs from IV vancomycin, which is ineffective for colonic CDI."
+  },
+  "clostridioides-difficile-infection-042": {
+    "choices": [
+      "Use 125 mg orally four times daily for 10 days",
+      "Use 125 mg intravenously four times daily for 10 days",
+      "Use 500 mg orally four times daily as the routine dose for every initial episode",
+      "Use the fulminant combination without first considering disease severity"
+    ],
+    "rationale": "The standard oral regimen is 125 mg four times daily for 10 days. The 500 mg regimen belongs to severe complicated/fulminant disease with IV metronidazole; route and severity cannot be omitted."
+  },
+  "clostridioides-difficile-infection-043": {
+    "choices": [
+      "Assess enteral access, cost, formulation, adherence, and recurrence risk",
+      "Review only the capsule strength and assume the patient can receive and complete therapy",
+      "Treat IV and oral formulations as equivalent when enteral access is difficult",
+      "Ignore prior episodes and severity once a vancomycin product is available"
+    ],
+    "rationale": "Reconstruct the planned route, product availability and ability to complete the regimen, then review episode history and recurrence risk. The book separates initial, recurrent and fulminant treatment and asks for patient-profile review."
+  },
+  "clostridioides-difficile-infection-044": {
+    "choices": [
+      "Using IV vancomycin to treat colonic CDI",
+      "Confirming the prescribed vancomycin route before administration",
+      "Distinguishing the initial oral regimen from the fulminant combination",
+      "Checking episode history and whether the oral regimen can be delivered"
+    ],
+    "rationale": "IV vancomycin does not enter the gastrointestinal tract effectively for CDI. Oral/enteral and IV prescriptions therefore serve different disease compartments."
+  },
+  "clostridioides-difficile-infection-049": {
+    "choices": [
+      "Fulminant CDI requires high-dose vancomycin delivered to the bowel",
+      "Fulminant CDI uses IV vancomycin as the sole bowel-directed drug",
+      "The routine 125 mg oral regimen alone covers every fulminant presentation",
+      "Fidaxomicin prophylaxis replaces treatment of active fulminant disease"
+    ],
+    "rationale": "The book separates fulminant/complicated CDI from initial nonfulminant disease and specifies high-dose bowel-directed vancomycin together with IV metronidazole."
+  },
+  "clostridioides-difficile-infection-050": {
+    "choices": [
+      "Give 500 mg orally or by nasogastric tube four times daily",
+      "Give 500 mg intravenously four times daily as the bowel-directed drug",
+      "Use 125 mg orally four times daily alone without a fulminant regimen review",
+      "Delay bowel-directed vancomycin until ileus has resolved"
+    ],
+    "rationale": "The fulminant regimen lists vancomycin 500 mg by oral or nasogastric delivery four times daily, with a rectal route option and metronidazole 500 mg IV every 8 hours. IV vancomycin is not the bowel-directed substitute."
+  },
+  "clostridioides-difficile-infection-051": {
+    "choices": [
+      "Assess ileus, enteral access, distention, stool output, and trajectory",
+      "Assess the IV vancomycin infusion rate but omit the bowel-directed route",
+      "Use stool frequency alone and omit ileus and other fulminant findings",
+      "Check only the milligram amount without confirming access or disease trajectory"
+    ],
+    "rationale": "Fulminant assessment must connect the bowel condition and clinical course to the actual route of delivery. The book identifies hypotension, shock, ileus and toxic megacolon and distinguishes oral/nasogastric/rectal vancomycin from IV metronidazole."
+  },
+  "clostridioides-difficile-infection-052": {
+    "choices": [
+      "Using IV vancomycin as the bowel-directed drug",
+      "Checking the bowel-directed route and the systemic companion prescription",
+      "Recognizing shock or ileus as a reason for fulminant regimen review",
+      "Verifying that the regimen matches severity rather than copying the initial dose"
+    ],
+    "rationale": "IV vancomycin is ineffective for colonic CDI. The fulminant combination instead pairs bowel-directed vancomycin with IV metronidazole."
+  },
+  "clostridioides-difficile-infection-053": {
+    "choices": [
+      "IV metronidazole supports systemic delivery when bowel transit is impaired",
+      "IV metronidazole makes bowel-directed vancomycin unnecessary",
+      "Metronidazole and IV vancomycin are interchangeable systemic companions for CDI",
+      "Fulminant treatment uses the same oral monotherapy as every initial episode"
+    ],
+    "rationale": "The book includes IV metronidazole as the systemic component of the fulminant combination, including presentations with ileus. It accompanies bowel-directed vancomycin rather than replacing it."
+  },
+  "clostridioides-difficile-infection-054": {
+    "choices": [
+      "Give 500 mg IV every 8 hours with enteral vancomycin",
+      "Give 500 mg IV every 8 hours as the sole treatment and omit bowel-directed vancomycin",
+      "Replace the enteral vancomycin prescription with IV vancomycin",
+      "Copy the initial oral monotherapy regimen without reassessing fulminant disease"
+    ],
+    "rationale": "The fulminant/complicated regimen combines metronidazole 500 mg IV every 8 hours with vancomycin 500 mg by a bowel-directed route four times daily."
+  },
+  "clostridioides-difficile-infection-056": {
+    "choices": [
+      "Using IV metronidazole alone for fulminant disease",
+      "Reviewing the bowel-directed vancomycin prescription alongside IV metronidazole",
+      "Checking severity and episode history before copying an initial regimen",
+      "Confirming the actual oral or nasogastric route before administration"
+    ],
+    "rationale": "The book specifies a combination for fulminant CDI. IV metronidazole alone omits the required bowel-directed vancomycin component."
+  }
+};
+export const clostridioidesDifficileInfectionQuestionBank = [...generated, ...cases].map((question) => sourceReviewedBowelDeliveryQuestions[question.id] ? { ...question, ...sourceReviewedBowelDeliveryQuestions[question.id] } : question);
 if (clostridioidesDifficileInfectionQuestionBank.length < 100) throw new Error(`Clostridioides difficile infection question bank must contain at least 100 questions, found ${clostridioidesDifficileInfectionQuestionBank.length}.`);

@@ -7992,7 +7992,11 @@
         },
         {
           "slug": "route-selection",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "latestScopedEvidence": "enteral-nutrition-broader-cdi-vancomycin-review.json",
+          "verifiedBodyHeadings": [],
+          "embeddedCheckVerified": false,
+          "wholeLessonVerified": false
         },
         {
           "slug": "pk-dosing",
@@ -8016,7 +8020,13 @@
         },
         {
           "slug": "oral-cdi",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "latestScopedEvidence": "enteral-nutrition-broader-cdi-vancomycin-review.json",
+          "verifiedBodyHeadings": [
+            "Record the episode, dose and bowel-directed route"
+          ],
+          "embeddedCheckVerified": false,
+          "wholeLessonVerified": false
         },
         {
           "slug": "integration",
@@ -8024,8 +8034,59 @@
         }
       ],
       "questions": 136,
-      "status": "unreviewed",
-      "evidence": []
+      "status": "reviewing",
+      "evidence": [
+        "enteral-nutrition-broader-cdi-vancomycin-review.json"
+      ],
+      "broaderEnteralBowelDeliveryReview": {
+        "evidence": "enteral-nutrition-broader-cdi-vancomycin-review.json",
+        "verifiedQuestionIds": [
+          "vancomycin-pharmacology-034",
+          "vancomycin-pharmacology-036",
+          "vancomycin-pharmacology-042",
+          "vancomycin-pharmacology-044",
+          "vancomycin-pharmacology-121",
+          "vancomycin-pharmacology-122",
+          "vancomycin-pharmacology-123",
+          "vancomycin-pharmacology-124"
+        ],
+        "correctedQuestionIds": [
+          "vancomycin-pharmacology-034",
+          "vancomycin-pharmacology-036",
+          "vancomycin-pharmacology-042",
+          "vancomycin-pharmacology-044",
+          "vancomycin-pharmacology-121",
+          "vancomycin-pharmacology-122",
+          "vancomycin-pharmacology-123",
+          "vancomycin-pharmacology-124"
+        ],
+        "originalPrimaryQuestionIdsPending": [
+          "vancomycin-pharmacology-033",
+          "vancomycin-pharmacology-035",
+          "vancomycin-pharmacology-037",
+          "vancomycin-pharmacology-038",
+          "vancomycin-pharmacology-039",
+          "vancomycin-pharmacology-040",
+          "vancomycin-pharmacology-041",
+          "vancomycin-pharmacology-043",
+          "vancomycin-pharmacology-117",
+          "vancomycin-pharmacology-118",
+          "vancomycin-pharmacology-119",
+          "vancomycin-pharmacology-120",
+          "vancomycin-pharmacology-case-128"
+        ],
+        "verifiedBodyHeadingsByLesson": {
+          "oral-cdi": [
+            "Record the episode, dose and bowel-directed route"
+          ]
+        },
+        "verifiedEmbeddedCheckLesson": null,
+        "wholeModuleVerified": false,
+        "figuresVerified": 0,
+        "metadataVerified": false,
+        "cumulativeRuntimeItems": 5,
+        "cumulativeFullSourceClosurePending": true
+      }
     },
     {
       "slug": "daptomycin-pharmacology",
@@ -9257,7 +9318,11 @@
         },
         {
           "slug": "diagnostic-stewardship",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "latestScopedEvidence": "enteral-nutrition-broader-cdi-vancomycin-review.json",
+          "verifiedBodyHeadings": [],
+          "embeddedCheckVerified": false,
+          "wholeLessonVerified": false
         },
         {
           "slug": "severity-complications",
@@ -9265,11 +9330,22 @@
         },
         {
           "slug": "initial-nonfulminant",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "latestScopedEvidence": "enteral-nutrition-broader-cdi-vancomycin-review.json",
+          "verifiedBodyHeadings": [],
+          "embeddedCheckVerified": false,
+          "wholeLessonVerified": false
         },
         {
           "slug": "fulminant-disease",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "latestScopedEvidence": "enteral-nutrition-broader-cdi-vancomycin-review.json",
+          "verifiedBodyHeadings": [
+            "Use high-dose enteral vancomycin",
+            "Add systemic adjunctive therapy"
+          ],
+          "embeddedCheckVerified": true,
+          "wholeLessonVerified": false
         },
         {
           "slug": "first-recurrence",
@@ -9293,8 +9369,67 @@
         }
       ],
       "questions": 130,
-      "status": "unreviewed",
-      "evidence": []
+      "status": "reviewing",
+      "evidence": [
+        "enteral-nutrition-broader-cdi-vancomycin-review.json"
+      ],
+      "broaderEnteralBowelDeliveryReview": {
+        "evidence": "enteral-nutrition-broader-cdi-vancomycin-review.json",
+        "verifiedQuestionIds": [
+          "clostridioides-difficile-infection-041",
+          "clostridioides-difficile-infection-042",
+          "clostridioides-difficile-infection-043",
+          "clostridioides-difficile-infection-044",
+          "clostridioides-difficile-infection-049",
+          "clostridioides-difficile-infection-050",
+          "clostridioides-difficile-infection-051",
+          "clostridioides-difficile-infection-052",
+          "clostridioides-difficile-infection-053",
+          "clostridioides-difficile-infection-054",
+          "clostridioides-difficile-infection-056"
+        ],
+        "correctedQuestionIds": [
+          "clostridioides-difficile-infection-041",
+          "clostridioides-difficile-infection-042",
+          "clostridioides-difficile-infection-043",
+          "clostridioides-difficile-infection-044",
+          "clostridioides-difficile-infection-049",
+          "clostridioides-difficile-infection-050",
+          "clostridioides-difficile-infection-051",
+          "clostridioides-difficile-infection-052",
+          "clostridioides-difficile-infection-053",
+          "clostridioides-difficile-infection-054",
+          "clostridioides-difficile-infection-056"
+        ],
+        "originalPrimaryQuestionIdsPending": [
+          "clostridioides-difficile-infection-013",
+          "clostridioides-difficile-infection-014",
+          "clostridioides-difficile-infection-015",
+          "clostridioides-difficile-infection-016",
+          "clostridioides-difficile-infection-045",
+          "clostridioides-difficile-infection-046",
+          "clostridioides-difficile-infection-047",
+          "clostridioides-difficile-infection-048",
+          "clostridioides-difficile-infection-055",
+          "clostridioides-difficile-infection-057",
+          "clostridioides-difficile-infection-058",
+          "clostridioides-difficile-infection-059",
+          "clostridioides-difficile-infection-060",
+          "clostridioides-difficile-infection-123"
+        ],
+        "verifiedBodyHeadingsByLesson": {
+          "fulminant-disease": [
+            "Use high-dose enteral vancomycin",
+            "Add systemic adjunctive therapy"
+          ]
+        },
+        "verifiedEmbeddedCheckLesson": "fulminant-disease",
+        "wholeModuleVerified": false,
+        "figuresVerified": 0,
+        "metadataVerified": false,
+        "cumulativeRuntimeItems": 5,
+        "cumulativeFullSourceClosurePending": true
+      }
     },
     {
       "slug": "travelers-diarrhea",

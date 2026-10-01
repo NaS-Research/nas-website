@@ -47,4 +47,78 @@ const cases = [
   ["128", "oral-cdi", "A patient with severe colitis and renal failure receives high-dose oral vancomycin and develops tinnitus. What is the best response?", ["Evaluate possible systemic absorption and obtain a concentration when clinically appropriate", "Assume oral vancomycin cannot be absorbed", "Double the oral dose", "Give IV vancomycin for luminal delivery"], "Inflamed mucosa and renal failure can permit systemic accumulation from oral therapy."],
 ].map(([id, lesson, question, choices, rationale]) => ({ id: `vancomycin-pharmacology-case-${id}`, lesson, question, choices, answer: 0, rationale, reviewHref: `#${lesson}` }));
 
-export const vancomycinPharmacologyQuestionBank = [...generated, ...cases];
+const sourceReviewedBowelDeliveryQuestions = {
+  "vancomycin-pharmacology-034": {
+    "choices": [
+      "Use oral or enteral delivery for luminal disease rather than IV vancomycin",
+      "Use IV vancomycin alone when the treatment target is colonic CDI",
+      "Assume an oral capsule is an equivalent replacement for systemic IV treatment",
+      "Choose route from the ingredient name without identifying the disease compartment"
+    ],
+    "rationale": "Vancomycin oral products are used for intestinal CDI/enterocolitis, while systemic infections require IV exposure. IV vancomycin is ineffective for CDI because it does not reach the gastrointestinal compartment adequately."
+  },
+  "vancomycin-pharmacology-036": {
+    "choices": [
+      "Using IV vancomycin alone for CDI",
+      "Confirming that CDI treatment is prescribed by a bowel-directed route",
+      "Distinguishing an IV systemic prescription from an oral intestinal prescription",
+      "Reviewing the CDI episode and severity before choosing its regimen"
+    ],
+    "rationale": "The oral and IV routes are not interchangeable for CDI. IV vancomycin alone does not provide effective intestinal treatment."
+  },
+  "vancomycin-pharmacology-042": {
+    "choices": [
+      "Recognize shock, ileus, or megacolon and escalate urgently",
+      "Continue the initial oral monotherapy unchanged when shock develops",
+      "Treat ileus as a reason to defer all CDI treatment",
+      "Use IV vancomycin alone because the patient is critically ill"
+    ],
+    "rationale": "Hypotension or shock, ileus and toxic megacolon are fulminant/complicated findings in the book. They trigger a different combined regimen rather than continuation of ordinary initial oral monotherapy."
+  },
+  "vancomycin-pharmacology-044": {
+    "choices": [
+      "Using standard-dose oral monotherapy for fulminant disease",
+      "Checking the severity-appropriate vancomycin dose and IV metronidazole component",
+      "Recognizing shock or ileus before copying an initial CDI regimen",
+      "Distinguishing bowel-directed vancomycin from systemic IV vancomycin"
+    ],
+    "rationale": "Fulminant CDI has a separate high-dose bowel-directed vancomycin plus IV metronidazole regimen. Standard-dose oral monotherapy omits that escalation."
+  },
+  "vancomycin-pharmacology-121": {
+    "choices": [
+      "Oral vancomycin success depends on a confirmed CDI syndrome, reliable delivery to the infected colon, severity-appropriate companion care, and reassessment of response and recurrence risk",
+      "A vancomycin ingredient name alone proves the correct CDI route and regimen",
+      "A positive result removes the need to consider symptoms and episode history",
+      "Every CDI presentation uses the same route, dose and companion treatment"
+    ],
+    "rationale": "The book connects a compatible CDI syndrome and diagnostic testing with patient-profile review, episode history, severity and route-specific therapy. Confirm the actual delivery and reassess the clinical course rather than relying on the ingredient name alone."
+  },
+  "vancomycin-pharmacology-122": {
+    "choices": [
+      "Verify enteral delivery, escalate fulminant disease and ileus appropriately, remove avoidable inciting antibiotics when possible, and reassess the regimen when improvement does not occur",
+      "Increase the oral dose repeatedly without checking diagnosis or delivery",
+      "Continue every inciting antibiotic even when it is unnecessary",
+      "Use IV vancomycin as the intestinal substitute when the oral plan is difficult"
+    ],
+    "rationale": "Verify the bowel-directed route, review fulminant findings and episode history, and remove unnecessary inciting agents when possible. The book distinguishes those decisions from simply increasing a vancomycin dose."
+  },
+  "vancomycin-pharmacology-123": {
+    "choices": [
+      "Assess stool frequency and character, abdominal findings, hemodynamics, ileus or megacolon, enteral access, episode history, concurrent antibiotics, response timing, recurrence risk, and surgical need",
+      "Assess only the IV infusion rate and omit intestinal symptoms and delivery",
+      "Classify all episodes from a single stool result without reviewing clinical findings",
+      "Record only the current dose and omit prior episodes and concurrent antibiotics"
+    ],
+    "rationale": "The original assessment joins the book CDI symptoms, fulminant findings, diagnostic context, bowel-directed routes, recurrence framework and possible colectomy. Use the patient profile and clinical course to reassess the whole plan; no fixed response deadline is implied."
+  },
+  "vancomycin-pharmacology-124": {
+    "choices": [
+      "Increasing oral vancomycin indefinitely without checking diagnosis, delivery, fulminant features, or another cause of persistent diarrhea",
+      "Reviewing compatible symptoms and the diagnosis before changing treatment",
+      "Checking severity, episode history and bowel-directed drug delivery",
+      "Reassessing avoidable inciting antibiotics and the clinical course"
+    ],
+    "rationale": "The book requires diagnostic and patient-profile review and uses different regimens for initial, recurrent and fulminant CDI. Repeated dose escalation without those checks can miss the actual problem."
+  }
+};
+export const vancomycinPharmacologyQuestionBank = [...generated, ...cases].map((question) => sourceReviewedBowelDeliveryQuestions[question.id] ? { ...question, ...sourceReviewedBowelDeliveryQuestions[question.id] } : question);
