@@ -32,4 +32,71 @@ const concepts = [
 
 const dimensions = [["principle", "Which principle best characterizes"], ["action", "Which clinical action best applies to"], ["assessment", "Which assessment is most appropriate for"], ["hazard", "Which reasoning hazard is most important to prevent with"]];
 function distractors(index, field) { return [5, 11, 17].map((offset) => concepts[(index + offset) % concepts.length][field]); }
-export const directOralAnticoagulantsQuestionBank = concepts.flatMap((concept, conceptIndex) => dimensions.map(([field, prefix], dimensionIndex) => ({ id: `direct-oral-anticoagulants-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${prefix} ${concept.name}?`, choices: [concept[field], ...distractors(conceptIndex, field)], answer: 0, rationale: concept.why, reviewHref: `#${concept.lesson}` })));
+const generatedDirectOralAnticoagulantsQuestionBank = concepts.flatMap((concept, conceptIndex) => dimensions.map(([field, prefix], dimensionIndex) => ({ id: `direct-oral-anticoagulants-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${prefix} ${concept.name}?`, choices: [concept[field], ...distractors(conceptIndex, field)], answer: 0, rationale: concept.why, reviewHref: `#${concept.lesson}` })));
+
+const foodAndCapsuleQuestionRepairs = {
+  "direct-oral-anticoagulants-025": {
+    "choices": [
+      "Rivaroxaban NVAF dosing uses creatinine clearance and is administered once daily with the evening meal.",
+      "Rivaroxaban NVAF dosing is fixed at 20 mg daily regardless of creatinine clearance.",
+      "Every rivaroxaban tablet strength must be taken fasting.",
+      "The 15 mg and 20 mg NVAF doses can be taken without regard to meals."
+    ],
+    "rationale": "For NVAF, rivaroxaban dosing depends on creatinine clearance and the dose is taken with the evening meal. The 15 mg and 20 mg tablet strengths require food; the 10 mg strength has different food instructions."
+  },
+  "direct-oral-anticoagulants-027": {
+    "choices": [
+      "Review age, actual weight, serum creatinine, CrCl trend, evening-meal routine, adherence, interactions, bleeding, and indication.",
+      "Review the prescribed tablet strength alone and omit creatinine clearance and meal timing.",
+      "Review meal timing but assume a previously measured creatinine clearance never needs reassessment.",
+      "Review kidney function but omit the indication, actual dose, administration routine and bleeding."
+    ],
+    "rationale": "Match the indication and dose to kidney-function assessment and the actual administration routine. For rivaroxaban NVAF, the evening meal is part of the regimen. Measured age, weight and serum creatinine inform renal assessment; reviewing actual weight does not by itself select the product-specific weight convention for calculating CrCl."
+  },
+  "direct-oral-anticoagulants-030": {
+    "choices": [
+      "Schedule the day-22 transition explicitly and preserve food instructions for 15 and 20 mg doses.",
+      "Use the apixaban first-week transition date for rivaroxaban.",
+      "Continue the initial 15 mg twice-daily phase without scheduling its transition.",
+      "Schedule the transition to 20 mg daily but tell the patient that food is optional."
+    ],
+    "rationale": "Adult acute VTE treatment uses 15 mg twice daily with food for 21 days, then 20 mg once daily with food. Name the treatment day, write the transition and preserve the food instruction. This question does not establish eligibility or timing for a later extended-prevention dose."
+  },
+  "direct-oral-anticoagulants-031": {
+    "choices": [
+      "Review VTE start date, day of therapy, food, kidney function, adherence, bleeding, recurrence, and extended-treatment plan.",
+      "Review tablet strength and meal timing but omit the VTE date and treatment phase.",
+      "Review the VTE date but omit meal timing and kidney-function assessment.",
+      "Review the prior prescription alone and assume adherence, bleeding and the treatment-duration plan are unchanged."
+    ],
+    "rationale": "Review the VTE date and current phase alongside food, kidney function, adherence and bleeding. The initial 21-day regimen changes afterward; a later extended-prevention plan needs its own review rather than an automatic early switch."
+  },
+  "direct-oral-anticoagulants-032": {
+    "choices": [
+      "Continuing 15 mg twice daily beyond 21 days or switching early to 10 mg can cause serious harm.",
+      "Writing the day 22 transition from the initial regimen to 20 mg once daily with food.",
+      "Checking the indication and treatment phase before verifying the dose.",
+      "Confirming the prescribed later prevention pathway instead of switching to 10 mg during initial treatment."
+    ],
+    "rationale": "The hazard is applying the wrong intensity to the treatment phase. The other choices preserve the initial-to-maintenance transition, food instructions and phase review. No extended-prevention duration threshold is newly established here."
+  },
+  "direct-oral-anticoagulants-050": {
+    "choices": [
+      "Assess swallowing and storage before prescribing the capsule formulation.",
+      "Open the capsule into food whenever swallowing is difficult, without reviewing the dosage form.",
+      "Use the capsule contents through an NG tube because another oral anticoagulant tablet can be crushed.",
+      "Move capsules to any pill organizer if the daily dose is correct."
+    ],
+    "rationale": "Dabigatran capsules must remain whole and moisture protected in their original bottle or blister. Assess swallowing and route before use; do not administer the capsule through an NG tube. Packaging and administration checks cannot be replaced by a dose-only review."
+  },
+  "direct-oral-anticoagulants-051": {
+    "choices": [
+      "Review dysphagia, feeding tube, pill organizer use, bottle opening date, blister technique, humidity, adherence, and alternative formulations or agents.",
+      "Review adherence alone and assume swallowing and tube administration are suitable.",
+      "Review humidity but omit the original packaging, bottle-opening date and blister expiry.",
+      "Review the dose alone and assume opened capsules or a pill organizer preserve the product instructions."
+    ],
+    "rationale": "Check swallowing and the actual route, original moisture-protective packaging and dates. Pradaxa capsule bottles have a four-month use period after opening; blister packs use the date on the pack. Do not move capsules into a pill organizer or manipulate them for an NG tube. Open only one bottle at a time, and verify an appropriate alternative when the capsule cannot be used as directed."
+  }
+};
+export const directOralAnticoagulantsQuestionBank = generatedDirectOralAnticoagulantsQuestionBank.map((question) => ({ ...question, ...(foodAndCapsuleQuestionRepairs[question.id] || {}) }));

@@ -1,0 +1,657 @@
+{
+  "date": "2026-10-01",
+  "unit": "enteral-nutrition:broader-doac-feeding-dependency",
+  "baseCommit": "083eb523dc72a1a2df8f37cfaca25320ec727063",
+  "source": {
+    "privateBook": "Supplied private PDF;cover verified RxPrep2023,1032pages,not filename year",
+    "textAndRenderedPagesReviewed": [
+      186,
+      294,
+      513,
+      514,
+      515,
+      523
+    ],
+    "printedPages": [
+      178,
+      286,
+      505,
+      506,
+      507,
+      515
+    ],
+    "claims": {
+      "513": "Adult oral-Xa indication/renal/food/initialVTE phase table; crushing/NG statements apply to listed adult tablets only, not every formulation or route.",
+      "514": "Interaction and safety assessment context only; no new specific enzyme/transporter dose or conversion rule adopted.",
+      "515": "Dabigatran capsules whole,not opened/broken/crushed/chewed,noNG,original moisture-protective package;opened bottle4months,blister date. No capsule-opening PK magnitude established.",
+      "523": "Pradaxa capsule original bottle/blister,no pill organizer,one bottle at a time,opened bottle4months.",
+      "186 and294": "Measured age/weight/SCr and general CrCl weight conventions;not product-specific proof for rivaroxaban actual-weight calculation."
+    },
+    "fullBookLocatingOnly": {
+      "pagesSearched": 1032,
+      "matchedPdfPages": [
+        6,
+        19,
+        34,
+        69,
+        186,
+        187,
+        207,
+        294,
+        362,
+        385,
+        401,
+        421,
+        454,
+        459,
+        477,
+        513,
+        514,
+        515,
+        523,
+        913
+      ],
+      "status": "Text location aid only;not full-book clinical/visual verification or proof of absence."
+    },
+    "sourceDiscrepancies": [
+      {
+        "pdfPage": 513,
+        "claim": "Extended apixaban/rivaroxaban dose duration",
+        "finding": "Book at least3months differs from retained rivaroxaban6months;question029/fullbody pending. No outside EN product labeling opened."
+      },
+      {
+        "pdfPage": 186,
+        "claim": "SCr units",
+        "finding": "Parenthetical treats mg/dL as same as mmol/L;unit error not adopted. Formula expects mg/dL."
+      },
+      {
+        "pdfPage": 186,
+        "claim": "Source example27 hydration inference",
+        "finding": "Low BUN:SCr does not establish a general rule excluding dehydration;not adopted or counted as a new source calculation in this unit."
+      }
+    ],
+    "otherScopeNotAdopted": "Historical reversal availability, renal thresholds,current/pediatric dosing and exact tube-preparation rules are outside this verified feeding subset."
+  },
+  "questionReview": [
+    {
+      "sourcePdfPages": [
+        513,
+        514,
+        186,
+        294
+      ],
+      "id": "direct-oral-anticoagulants-025",
+      "question": "Which principle best characterizes rivaroxaban atrial fibrillation renal and food rules?",
+      "choices": [
+        "Rivaroxaban NVAF dosing uses creatinine clearance and is administered once daily with the evening meal.",
+        "Rivaroxaban NVAF dosing is fixed at 20 mg daily regardless of creatinine clearance.",
+        "Every rivaroxaban tablet strength must be taken fasting.",
+        "The 15 mg and 20 mg NVAF doses can be taken without regard to meals."
+      ],
+      "answer": 0,
+      "rationale": "For NVAF, rivaroxaban dosing depends on creatinine clearance and the dose is taken with the evening meal. The 15 mg and 20 mg tablet strengths require food; the 10 mg strength has different food instructions.",
+      "reviewHref": "#oral-factor-xa-inhibitor-regimens",
+      "review": "PDF513 oral-Xa table supports NVAF CrCl/evening meal and tablet15/20 food instruction. All three alternatives now directly conflict with that regimen rather than testing unrelated true principles."
+    },
+    {
+      "sourcePdfPages": [
+        513,
+        514,
+        186,
+        294
+      ],
+      "id": "direct-oral-anticoagulants-027",
+      "question": "Which assessment is most appropriate for rivaroxaban atrial fibrillation renal and food rules?",
+      "choices": [
+        "Review age, actual weight, serum creatinine, CrCl trend, evening-meal routine, adherence, interactions, bleeding, and indication.",
+        "Review the prescribed tablet strength alone and omit creatinine clearance and meal timing.",
+        "Review meal timing but assume a previously measured creatinine clearance never needs reassessment.",
+        "Review kidney function but omit the indication, actual dose, administration routine and bleeding."
+      ],
+      "answer": 0,
+      "rationale": "Match the indication and dose to kidney-function assessment and the actual administration routine. For rivaroxaban NVAF, the evening meal is part of the regimen. Measured age, weight and serum creatinine inform renal assessment; reviewing actual weight does not by itself select the product-specific weight convention for calculating CrCl.",
+      "reviewHref": "#oral-factor-xa-inhibitor-regimens",
+      "review": "PDF513/514 support indication, renal function, meals, interaction/adherence/bleeding review.186/294 support measured patient variables for renal assessment; reviewing actual weight is explicitly distinguished from choosing a product-specific CrCl weight convention. The three distractors are incomplete assessments."
+    },
+    {
+      "sourcePdfPages": [
+        513,
+        514,
+        186,
+        294
+      ],
+      "id": "direct-oral-anticoagulants-030",
+      "question": "Which clinical action best applies to rivaroxaban acute and extended VTE regimens?",
+      "choices": [
+        "Schedule the day-22 transition explicitly and preserve food instructions for 15 and 20 mg doses.",
+        "Use the apixaban first-week transition date for rivaroxaban.",
+        "Continue the initial 15 mg twice-daily phase without scheduling its transition.",
+        "Schedule the transition to 20 mg daily but tell the patient that food is optional."
+      ],
+      "answer": 0,
+      "rationale": "Adult acute VTE treatment uses 15 mg twice daily with food for 21 days, then 20 mg once daily with food. Name the treatment day, write the transition and preserve the food instruction. This question does not establish eligibility or timing for a later extended-prevention dose.",
+      "reviewHref": "#oral-factor-xa-inhibitor-regimens",
+      "review": "PDF513 supports15mg twice daily21days followed by20mg daily with food. Retained correct action namesday22; alternatives apply another drug schedule, fail to schedule transition or omit food. Later extended-dose eligibility/timing is expressly not established."
+    },
+    {
+      "sourcePdfPages": [
+        513,
+        514,
+        186,
+        294
+      ],
+      "id": "direct-oral-anticoagulants-031",
+      "question": "Which assessment is most appropriate for rivaroxaban acute and extended VTE regimens?",
+      "choices": [
+        "Review VTE start date, day of therapy, food, kidney function, adherence, bleeding, recurrence, and extended-treatment plan.",
+        "Review tablet strength and meal timing but omit the VTE date and treatment phase.",
+        "Review the VTE date but omit meal timing and kidney-function assessment.",
+        "Review the prior prescription alone and assume adherence, bleeding and the treatment-duration plan are unchanged."
+      ],
+      "answer": 0,
+      "rationale": "Review the VTE date and current phase alongside food, kidney function, adherence and bleeding. The initial 21-day regimen changes afterward; a later extended-prevention plan needs its own review rather than an automatic early switch.",
+      "reviewHref": "#oral-factor-xa-inhibitor-regimens",
+      "review": "PDF513/514 support treatment-phase, indication, renal, food and safety review. The three alternative assessments omit explicit essentials. No later prevention duration threshold is newly adopted."
+    },
+    {
+      "sourcePdfPages": [
+        513,
+        514,
+        186,
+        294
+      ],
+      "id": "direct-oral-anticoagulants-032",
+      "question": "Which reasoning hazard is most important to prevent with rivaroxaban acute and extended VTE regimens?",
+      "choices": [
+        "Continuing 15 mg twice daily beyond 21 days or switching early to 10 mg can cause serious harm.",
+        "Writing the day 22 transition from the initial regimen to 20 mg once daily with food.",
+        "Checking the indication and treatment phase before verifying the dose.",
+        "Confirming the prescribed later prevention pathway instead of switching to 10 mg during initial treatment."
+      ],
+      "answer": 0,
+      "rationale": "The hazard is applying the wrong intensity to the treatment phase. The other choices preserve the initial-to-maintenance transition, food instructions and phase review. No extended-prevention duration threshold is newly established here.",
+      "reviewHref": "#oral-factor-xa-inhibitor-regimens",
+      "review": "The original keyed initial-phase dose hazard is retained. Three alternative actions now preserve phase/food review rather than presenting competing hazardous actions. PDF513 supports the initial21-day transition; no later extended-duration threshold is adopted."
+    },
+    {
+      "sourcePdfPages": [
+        515,
+        523
+      ],
+      "id": "direct-oral-anticoagulants-050",
+      "question": "Which clinical action best applies to dabigatran capsule handling and storage?",
+      "choices": [
+        "Assess swallowing and storage before prescribing the capsule formulation.",
+        "Open the capsule into food whenever swallowing is difficult, without reviewing the dosage form.",
+        "Use the capsule contents through an NG tube because another oral anticoagulant tablet can be crushed.",
+        "Move capsules to any pill organizer if the daily dose is correct."
+      ],
+      "answer": 0,
+      "rationale": "Dabigatran capsules must remain whole and moisture protected in their original bottle or blister. Assess swallowing and route before use; do not administer the capsule through an NG tube. Packaging and administration checks cannot be replaced by a dose-only review.",
+      "reviewHref": "#dabigatran-pharmacology-and-use",
+      "review": "PDF515/523 support whole capsule/noNG/original moisture-protective packaging/no pill organizer. Swallowing and route assessment is the unique appropriate action; other anticoagulant tablet handling does not generalize to this capsule."
+    },
+    {
+      "sourcePdfPages": [
+        515,
+        523
+      ],
+      "id": "direct-oral-anticoagulants-051",
+      "question": "Which assessment is most appropriate for dabigatran capsule handling and storage?",
+      "choices": [
+        "Review dysphagia, feeding tube, pill organizer use, bottle opening date, blister technique, humidity, adherence, and alternative formulations or agents.",
+        "Review adherence alone and assume swallowing and tube administration are suitable.",
+        "Review humidity but omit the original packaging, bottle-opening date and blister expiry.",
+        "Review the dose alone and assume opened capsules or a pill organizer preserve the product instructions."
+      ],
+      "answer": 0,
+      "rationale": "Check swallowing and the actual route, original moisture-protective packaging and dates. Pradaxa capsule bottles have a four-month use period after opening; blister packs use the date on the pack. Do not move capsules into a pill organizer or manipulate them for an NG tube. Open only one bottle at a time, and verify an appropriate alternative when the capsule cannot be used as directed.",
+      "reviewHref": "#dabigatran-pharmacology-and-use",
+      "review": "PDF515/523 support capsule route/packaging/opening-date/blister-date/one-bottle-at-a-time assessment. Alternative agent/formulation suitability requires independent verification, not a claim of interchangeability."
+    }
+  ],
+  "pendingQuestionReview": [
+    {
+      "question": {
+        "id": "direct-oral-anticoagulants-026",
+        "question": "Which clinical action best applies to rivaroxaban atrial fibrillation renal and food rules?",
+        "choices": [
+          "Calculate creatinine clearance using actual weight and verify the dose is taken with the meal.",
+          "Recalculate CrCl and review every P-gp inhibitor or inducer during acute illness or medication change.",
+          "Avoid major inducers when the label recommends it and select a monitorable or noninteracting alternative.",
+          "Stop active exposure, resuscitate, obtain targeted laboratories and imaging, control the source, and use reversal when expected benefit justifies thrombosis risk."
+        ],
+        "answer": 0,
+        "rationale": "Food improves bioavailability of higher rivaroxaban tablet strengths.",
+        "reviewHref": "#oral-factor-xa-inhibitor-regimens"
+      },
+      "status": "retained unchanged/source pending",
+      "review": "Product-specific use of actual weight in rivaroxaban CrCl calculation is not established by the general186/294 weight algorithm; preserve question pending rather than substitute a general rule."
+    },
+    {
+      "question": {
+        "id": "direct-oral-anticoagulants-028",
+        "question": "Which reasoning hazard is most important to prevent with rivaroxaban atrial fibrillation renal and food rules?",
+        "choices": [
+          "Taking the 15 or 20 mg dose fasting can reduce exposure.",
+          "Looking at kidney function or P-gp in isolation can underestimate combined accumulation.",
+          "Increasing the DOAC dose empirically to overcome induction lacks a validated target and can become dangerous when the inducer stops.",
+          "Waiting for a routine coagulation test to become abnormal before controlling life-threatening bleeding can be fatal."
+        ],
+        "answer": 0,
+        "rationale": "Food improves bioavailability of higher rivaroxaban tablet strengths.",
+        "reviewHref": "#oral-factor-xa-inhibitor-regimens"
+      },
+      "status": "retained unchanged/source pending",
+      "review": "Book513 requires food for15/20mg but reviewed source does not establish the keyed reduction in exposure/bioavailability mechanism; unchanged pending."
+    },
+    {
+      "question": {
+        "id": "direct-oral-anticoagulants-029",
+        "question": "Which principle best characterizes rivaroxaban acute and extended VTE regimens?",
+        "choices": [
+          "Adult acute VTE uses rivaroxaban 15 mg twice daily with food for 21 days, then 20 mg once daily with food; selected extended prevention uses 10 mg after at least six months of standard treatment.",
+          "Dabigatran capsules must be swallowed whole and protected from moisture in the original bottle or blister because opening changes exposure and improper storage reduces product integrity.",
+          "Premature discontinuation without adequate alternative anticoagulation increases thrombotic risk.",
+          "Idarucizumab is indicated when dabigatran reversal is needed for emergency surgery or urgent procedures or for life-threatening or uncontrolled bleeding."
+        ],
+        "answer": 0,
+        "rationale": "Rivaroxaban intensity changes at defined VTE treatment phases.",
+        "reviewHref": "#oral-factor-xa-inhibitor-regimens"
+      },
+      "status": "retained unchanged/source pending",
+      "review": "Book513 says extended doses after at least3months while retained rivaroxaban question/body says6months. Preserve pending; do not change to the discrepant book value without resolution."
+    },
+    {
+      "question": {
+        "id": "direct-oral-anticoagulants-049",
+        "question": "Which principle best characterizes dabigatran capsule handling and storage?",
+        "choices": [
+          "Dabigatran capsules must be swallowed whole and protected from moisture in the original bottle or blister because opening changes exposure and improper storage reduces product integrity.",
+          "Strong P-gp or CYP3A induction can lower DOAC exposure and increase thrombotic risk.",
+          "Major bleeding care begins with stabilization, drug identification, last-dose and organ assessment, and definitive source control.",
+          "Apixaban, rivaroxaban, and edoxaban bind factor Xa directly and reduce thrombin generation without requiring antithrombin."
+        ],
+        "answer": 0,
+        "rationale": "The capsule formulation and packaging are integral to safe dabigatran delivery.",
+        "reviewHref": "#dabigatran-pharmacology-and-use"
+      },
+      "status": "retained unchanged/source pending",
+      "review": "Whole capsule/storage instructions are supported, but opening-induced exposure direction/magnitude/integrity mechanism is not established by reviewed book515/523. Retain harder question unchanged pending."
+    },
+    {
+      "question": {
+        "id": "direct-oral-anticoagulants-052",
+        "question": "Which reasoning hazard is most important to prevent with dabigatran capsule handling and storage?",
+        "choices": [
+          "Placing capsules into a weekly pillbox or opening them can create unreliable or excessive exposure.",
+          "Increasing the DOAC dose empirically to overcome induction lacks a validated target and can become dangerous when the inducer stops.",
+          "Waiting for a routine coagulation test to become abnormal before controlling life-threatening bleeding can be fatal.",
+          "Calling direct factor Xa inhibitors antiplatelet drugs confuses thrombosis biology and combination risk."
+        ],
+        "answer": 0,
+        "rationale": "The capsule formulation and packaging are integral to safe dabigatran delivery.",
+        "reviewHref": "#dabigatran-pharmacology-and-use"
+      },
+      "status": "retained unchanged/source pending",
+      "review": "Original capsule-opening/pillbox exposure key and competing hazards require full source support; retained unchanged, not replaced by easier packaging case."
+    }
+  ],
+  "teachingReview": [
+    {
+      "lesson": "dabigatran-pharmacology-and-use",
+      "heading": "Protect the dosage form",
+      "body": "Dabigatran capsules should be swallowed whole and stored according to the product instructions to protect them from moisture. Opening, crushing, or chewing a capsule can substantially increase exposure. Do not administer the capsule through an NG tube. Pradaxa capsules stay in their original bottle or blister, outside a pill organizer; open only one bottle at a time, use it within four months after opening, and check the date on a blister pack. Dyspepsia is common and should be distinguished from occult or overt gastrointestinal bleeding.",
+      "status": "Expanded new clauses verified;whole body not closed",
+      "sourcePdfPages": [
+        515,
+        523
+      ],
+      "pendingClaim": "Retained claim that opening/crushing/chewing substantially increases exposure is not established by reviewed book. Do not erase or soften it to fabricate closure.",
+      "newClauses": "No NG;original bottle/blister/no organizer;one bottle at a time;four months after opening;blister date."
+    }
+  ],
+  "embeddedCheckReview": {
+    "status": "All six unchanged;no new clinical closure. Dabigatran capsule-opening exposure mechanism check remains source-pending."
+  },
+  "broaderSelection": {
+    "expandedTopicGroups": "All12 original025-032/049-052 reviewed individually;seven repaired andfive pending.",
+    "earlierFourRowInventory": [
+      "direct-oral-anticoagulants-007",
+      "direct-oral-anticoagulants-031",
+      "direct-oral-anticoagulants-051",
+      "direct-oral-anticoagulants-099"
+    ],
+    "distractorOnlyRows007099": "Feeding/storage clause supported but primary topics/choices not fully source-audited;not counted closed.",
+    "remainingBodyClaims": "Full food/phase body includes pending6month/PK claims;delivery/absorption body includes pending bariatric/malabsorption claims."
+  },
+  "integration": {
+    "committedBank": 116,
+    "workingDraftBank": 59,
+    "collidingNumericIds": [
+      "direct-oral-anticoagulants-001",
+      "direct-oral-anticoagulants-005",
+      "direct-oral-anticoagulants-009",
+      "direct-oral-anticoagulants-013",
+      "direct-oral-anticoagulants-017",
+      "direct-oral-anticoagulants-021",
+      "direct-oral-anticoagulants-025",
+      "direct-oral-anticoagulants-029",
+      "direct-oral-anticoagulants-033",
+      "direct-oral-anticoagulants-037",
+      "direct-oral-anticoagulants-041",
+      "direct-oral-anticoagulants-045",
+      "direct-oral-anticoagulants-049",
+      "direct-oral-anticoagulants-053",
+      "direct-oral-anticoagulants-057",
+      "direct-oral-anticoagulants-061",
+      "direct-oral-anticoagulants-065",
+      "direct-oral-anticoagulants-069",
+      "direct-oral-anticoagulants-073",
+      "direct-oral-anticoagulants-077",
+      "direct-oral-anticoagulants-081",
+      "direct-oral-anticoagulants-085",
+      "direct-oral-anticoagulants-089",
+      "direct-oral-anticoagulants-093",
+      "direct-oral-anticoagulants-097",
+      "direct-oral-anticoagulants-101",
+      "direct-oral-anticoagulants-105",
+      "direct-oral-anticoagulants-109",
+      "direct-oral-anticoagulants-113"
+    ],
+    "newSemanticDraftIds": [
+      "direct-oral-anticoagulants-rivaroxaban-missed-low-dose",
+      "direct-oral-anticoagulants-dabigatran-missed-dose",
+      "direct-oral-anticoagulants-apixaban-single-criterion",
+      "direct-oral-anticoagulants-rivaroxaban-vte-renal-boundary",
+      "direct-oral-anticoagulants-edoxaban-vte-weight",
+      "direct-oral-anticoagulants-dabigatran-vte-renal",
+      "direct-oral-anticoagulants-idarucizumab-complete-dose",
+      "direct-oral-anticoagulants-apixaban-clarithromycin",
+      "direct-oral-anticoagulants-rivaroxaban-postpyloric",
+      "direct-oral-anticoagulants-warfarin-inr-threshold",
+      "direct-oral-anticoagulants-edoxaban-ufh-clock",
+      "direct-oral-anticoagulants-dabigatran-warfarin-overlap",
+      "direct-oral-anticoagulants-dabigatran-neuraxial-renal",
+      "direct-oral-anticoagulants-high-bleed-restart",
+      "direct-oral-anticoagulants-apixaban-knee-prevention",
+      "direct-oral-anticoagulants-dabigatran-delayed-hip-start",
+      "direct-oral-anticoagulants-edoxaban-nvaf-inhibitor",
+      "direct-oral-anticoagulants-aps-eligibility",
+      "direct-oral-anticoagulants-pregnancy-transition",
+      "direct-oral-anticoagulants-lactation-guideline-difference",
+      "direct-oral-anticoagulants-bariatric-af",
+      "direct-oral-anticoagulants-eldercare-boundary",
+      "direct-oral-anticoagulants-cancer-absorption",
+      "direct-oral-anticoagulants-api-cat-endpoint",
+      "direct-oral-anticoagulants-pediatric-apixaban-phase",
+      "direct-oral-anticoagulants-pediatric-pellet-partial",
+      "direct-oral-anticoagulants-pediatric-dabigatran-capsules",
+      "direct-oral-anticoagulants-medical-prophylaxis",
+      "direct-oral-anticoagulants-tavr-indication",
+      "direct-oral-anticoagulants-dialysis-evidence"
+    ],
+    "allCollidingObjectsDifferFromCommitted": true,
+    "committedIdsAbsentFromWorkingDraft": 87,
+    "workingBankByteIdentical": true,
+    "draftSha256": "704257848d40c9dba353ef1611d5f83ba5b3cff4c6063f50ac9fb4993909b7d8",
+    "candidateMethod": "HEAD-derived116-question bank with seven repairs;stage candidate blobs only. No integration/replacement of colliding draft IDs. Original local module changed only one shared body with appended verified clauses;all unrelated bytes retained.",
+    "draftLimits": "Localcase049 packaging question shares ID with harder committed049 mechanism;do not substitute. Exact tube volumes/postpyloric/pediatric pellet cases remain unreleased and source-pending."
+  },
+  "validation": {
+    "isolatedBuild": {
+      "staticPages": 567,
+      "exitCode": 0,
+      "logSha256": "f5ef6e0726882ae9cbea5a6efbe142750c1f3454dfc093190ba88eedbbaacab5"
+    },
+    "focusedStructural": {
+      "modules": 1,
+      "questions": 116,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "direct-oral-anticoagulants",
+          "lessons": 6,
+          "questions": 116,
+          "minimumLessonCoverage": 16
+        }
+      ]
+    },
+    "technical": {
+      "status": "passed",
+      "modules": [
+        {
+          "slug": "direct-oral-anticoagulants",
+          "bank": 116,
+          "bodies": 24,
+          "changedQuestions": [
+            {
+              "id": "direct-oral-anticoagulants-025",
+              "question": "Which principle best characterizes rivaroxaban atrial fibrillation renal and food rules?",
+              "choices": [
+                "Rivaroxaban NVAF dosing uses creatinine clearance and is administered once daily with the evening meal.",
+                "Rivaroxaban NVAF dosing is fixed at 20 mg daily regardless of creatinine clearance.",
+                "Every rivaroxaban tablet strength must be taken fasting.",
+                "The 15 mg and 20 mg NVAF doses can be taken without regard to meals."
+              ],
+              "answer": 0,
+              "rationale": "For NVAF, rivaroxaban dosing depends on creatinine clearance and the dose is taken with the evening meal. The 15 mg and 20 mg tablet strengths require food; the 10 mg strength has different food instructions.",
+              "reviewHref": "#oral-factor-xa-inhibitor-regimens"
+            },
+            {
+              "id": "direct-oral-anticoagulants-027",
+              "question": "Which assessment is most appropriate for rivaroxaban atrial fibrillation renal and food rules?",
+              "choices": [
+                "Review age, actual weight, serum creatinine, CrCl trend, evening-meal routine, adherence, interactions, bleeding, and indication.",
+                "Review the prescribed tablet strength alone and omit creatinine clearance and meal timing.",
+                "Review meal timing but assume a previously measured creatinine clearance never needs reassessment.",
+                "Review kidney function but omit the indication, actual dose, administration routine and bleeding."
+              ],
+              "answer": 0,
+              "rationale": "Match the indication and dose to kidney-function assessment and the actual administration routine. For rivaroxaban NVAF, the evening meal is part of the regimen. Measured age, weight and serum creatinine inform renal assessment; reviewing actual weight does not by itself select the product-specific weight convention for calculating CrCl.",
+              "reviewHref": "#oral-factor-xa-inhibitor-regimens"
+            },
+            {
+              "id": "direct-oral-anticoagulants-030",
+              "question": "Which clinical action best applies to rivaroxaban acute and extended VTE regimens?",
+              "choices": [
+                "Schedule the day-22 transition explicitly and preserve food instructions for 15 and 20 mg doses.",
+                "Use the apixaban first-week transition date for rivaroxaban.",
+                "Continue the initial 15 mg twice-daily phase without scheduling its transition.",
+                "Schedule the transition to 20 mg daily but tell the patient that food is optional."
+              ],
+              "answer": 0,
+              "rationale": "Adult acute VTE treatment uses 15 mg twice daily with food for 21 days, then 20 mg once daily with food. Name the treatment day, write the transition and preserve the food instruction. This question does not establish eligibility or timing for a later extended-prevention dose.",
+              "reviewHref": "#oral-factor-xa-inhibitor-regimens"
+            },
+            {
+              "id": "direct-oral-anticoagulants-031",
+              "question": "Which assessment is most appropriate for rivaroxaban acute and extended VTE regimens?",
+              "choices": [
+                "Review VTE start date, day of therapy, food, kidney function, adherence, bleeding, recurrence, and extended-treatment plan.",
+                "Review tablet strength and meal timing but omit the VTE date and treatment phase.",
+                "Review the VTE date but omit meal timing and kidney-function assessment.",
+                "Review the prior prescription alone and assume adherence, bleeding and the treatment-duration plan are unchanged."
+              ],
+              "answer": 0,
+              "rationale": "Review the VTE date and current phase alongside food, kidney function, adherence and bleeding. The initial 21-day regimen changes afterward; a later extended-prevention plan needs its own review rather than an automatic early switch.",
+              "reviewHref": "#oral-factor-xa-inhibitor-regimens"
+            },
+            {
+              "id": "direct-oral-anticoagulants-032",
+              "question": "Which reasoning hazard is most important to prevent with rivaroxaban acute and extended VTE regimens?",
+              "choices": [
+                "Continuing 15 mg twice daily beyond 21 days or switching early to 10 mg can cause serious harm.",
+                "Writing the day 22 transition from the initial regimen to 20 mg once daily with food.",
+                "Checking the indication and treatment phase before verifying the dose.",
+                "Confirming the prescribed later prevention pathway instead of switching to 10 mg during initial treatment."
+              ],
+              "answer": 0,
+              "rationale": "The hazard is applying the wrong intensity to the treatment phase. The other choices preserve the initial-to-maintenance transition, food instructions and phase review. No extended-prevention duration threshold is newly established here.",
+              "reviewHref": "#oral-factor-xa-inhibitor-regimens"
+            },
+            {
+              "id": "direct-oral-anticoagulants-050",
+              "question": "Which clinical action best applies to dabigatran capsule handling and storage?",
+              "choices": [
+                "Assess swallowing and storage before prescribing the capsule formulation.",
+                "Open the capsule into food whenever swallowing is difficult, without reviewing the dosage form.",
+                "Use the capsule contents through an NG tube because another oral anticoagulant tablet can be crushed.",
+                "Move capsules to any pill organizer if the daily dose is correct."
+              ],
+              "answer": 0,
+              "rationale": "Dabigatran capsules must remain whole and moisture protected in their original bottle or blister. Assess swallowing and route before use; do not administer the capsule through an NG tube. Packaging and administration checks cannot be replaced by a dose-only review.",
+              "reviewHref": "#dabigatran-pharmacology-and-use"
+            },
+            {
+              "id": "direct-oral-anticoagulants-051",
+              "question": "Which assessment is most appropriate for dabigatran capsule handling and storage?",
+              "choices": [
+                "Review dysphagia, feeding tube, pill organizer use, bottle opening date, blister technique, humidity, adherence, and alternative formulations or agents.",
+                "Review adherence alone and assume swallowing and tube administration are suitable.",
+                "Review humidity but omit the original packaging, bottle-opening date and blister expiry.",
+                "Review the dose alone and assume opened capsules or a pill organizer preserve the product instructions."
+              ],
+              "answer": 0,
+              "rationale": "Check swallowing and the actual route, original moisture-protective packaging and dates. Pradaxa capsule bottles have a four-month use period after opening; blister packs use the date on the pack. Do not move capsules into a pill organizer or manipulate them for an NG tube. Open only one bottle at a time, and verify an appropriate alternative when the capsule cannot be used as directed.",
+              "reviewHref": "#dabigatran-pharmacology-and-use"
+            }
+          ],
+          "retainedBodies": [
+            {
+              "lesson": "dabigatran-pharmacology-and-use",
+              "heading": "Protect the dosage form",
+              "body": "Dabigatran capsules should be swallowed whole and stored according to the product instructions to protect them from moisture. Opening, crushing, or chewing a capsule can substantially increase exposure. Do not administer the capsule through an NG tube. Pradaxa capsules stay in their original bottle or blister, outside a pill organizer; open only one bottle at a time, use it within four months after opening, and check the date on a blister pack. Dyspepsia is common and should be distinguished from occult or overt gastrointestinal bleeding."
+            }
+          ]
+        }
+      ],
+      "preservation": {
+        "all116CommittedIdsPromptsKeysCorrectTextsAnchors": true,
+        "unchangedOtherBankObjects": 109,
+        "unchangedOtherBodies": 23,
+        "expandedBodyOriginalClaimsRetained": true,
+        "allSixEmbeddedChecksAndOtherMetadataUnchanged": true,
+        "all1180CumulativeIdsPromptsKeysCorrectTextsAnchorsPreserved": true,
+        "unchangedOtherCumulativeObjects": 1179,
+        "changedCumulativeObject": "cumulative-direct-oral-anticoagulants-direct-oral-anticoagulants-030",
+        "local59QuestionDraftByteIdentical": true,
+        "unrelatedModuleWorkingBytesPreserved": true
+      },
+      "newDistinctAssessmentChecks": 0,
+      "runningAssessmentChecks": 674,
+      "runningSeparateSourceExamples": 98,
+      "contentHashes": {
+        "src/data/modules/directOralAnticoagulants.js": "f39190c170df6e6444ae1ca08a88201924469f4a6b3fa90453c880507ef0c376",
+        "src/data/questionBanks/directOralAnticoagulants.js": "a3e098a8efea909f43f97cd96a86a9cdbb81daf016493f3c0c9ed65c417f6540"
+      }
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "module": "direct-oral-anticoagulants",
+          "width": 1440,
+          "renderedBodies": 24,
+          "expandedBodyViews": 1,
+          "bankItemsCorrectWrong": 7,
+          "cumulativeRuntimeItems": 5,
+          "sourceVerifiedCumulativeInThisUnit": 1,
+          "cumulativeClinicalSourceClosure": false,
+          "groups": 1,
+          "remediationAndSavedProgress": true
+        },
+        {
+          "module": "direct-oral-anticoagulants",
+          "width": 390,
+          "renderedBodies": 24,
+          "expandedBodyViews": 1,
+          "bankItemsCorrectWrong": 7,
+          "cumulativeRuntimeItems": 5,
+          "sourceVerifiedCumulativeInThisUnit": 1,
+          "cumulativeClinicalSourceClosure": false,
+          "groups": 1,
+          "remediationAndSavedProgress": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "manualVisual": {
+      "questionFeedbackImages": 28,
+      "bodyImages": 2,
+      "nativePixelSheetsInitial": 15,
+      "finalSpacingRepairImagesReread": 4,
+      "findings": "All seven stems/options/right-and-wrong feedback and expanded full body read at1440/390. Finalq025spacing corrected and four final images reread. Final browser rerun passed after fresh567-page build.24bodyDOM equality,320overflow,remediation links,2savedattempts/best-latest scores andfive cumulative runtime items verified.",
+      "cumulativeSourceLimit": "Only030source-reviewed here;other four cumulative questions runtime-only.",
+      "sourceLimit": "No full-body/check clinical closure despite runtime validation."
+    }
+  },
+  "preservation": {
+    "all116CommittedIdsPromptsKeysCorrectTextsAnchors": true,
+    "unchangedOtherBankObjects": 109,
+    "unchangedOtherBodies": 23,
+    "expandedBodyOriginalClaimsRetained": true,
+    "allSixEmbeddedChecksAndOtherMetadataUnchanged": true,
+    "all1180CumulativeIdsPromptsKeysCorrectTextsAnchorsPreserved": true,
+    "unchangedOtherCumulativeObjects": 1179,
+    "changedCumulativeObject": "cumulative-direct-oral-anticoagulants-direct-oral-anticoagulants-030",
+    "local59QuestionDraftByteIdentical": true,
+    "unrelatedModuleWorkingBytesPreserved": true
+  },
+  "coverage": {
+    "sourceVerifiedBankIds": [
+      "direct-oral-anticoagulants-025",
+      "direct-oral-anticoagulants-027",
+      "direct-oral-anticoagulants-030",
+      "direct-oral-anticoagulants-031",
+      "direct-oral-anticoagulants-032",
+      "direct-oral-anticoagulants-050",
+      "direct-oral-anticoagulants-051"
+    ],
+    "sourceVerifiedBankCountThisUnit": 7,
+    "releasedBank": 116,
+    "workingDraftBank": 59,
+    "newQuestionIds": 0,
+    "expandedTeachingBodies": 1,
+    "newClausesSourceVerified": true,
+    "fullTeachingBodiesClosedThisUnit": 0,
+    "embeddedChecksClosedThisUnit": 0,
+    "cumulativeSourceVerifiedIds": [
+      "cumulative-direct-oral-anticoagulants-direct-oral-anticoagulants-030"
+    ],
+    "cumulativeRuntimeItems": 5,
+    "otherCumulativeObjectsUnchanged": 1179,
+    "wholeParentModuleVerified": false,
+    "wholeENModuleVerified": false,
+    "wholeChapterVerified": false,
+    "ENAggregateUnchanged": {
+      "bankVerified": 66,
+      "bank": 108,
+      "bodiesVerified": 16,
+      "bodies": 36,
+      "embeddedChecksVerified": 2,
+      "embeddedChecks": 6,
+      "figuresVerified": 0,
+      "figures": 6
+    },
+    "calculationTotalsUnchanged": {
+      "assessmentChecks": 674,
+      "separateSourceExamples": 98
+    }
+  },
+  "outsideENSourceApproval": "Human response pending;no outside EN sources opened",
+  "wholeModuleVerified": false,
+  "wholeChapterVerified": false,
+  "nextAction": "Continue the broader feeding inventory with thyroid-medicinal-chemistry levothyroxine/feed/cation questions, comparing each committed bank and local draft while preserving stable IDs and unrelated work. DOAC released116 contains seven source-verified repairs;local59 rewrite is unchanged and unreleased, with29 colliding numeric IDs and30 semantic drafts requiring later reconciliation. Five expanded-topic rows026/028/029/049/052 remain pending: product-specific CrCl weight convention, food/exposure mechanism, conflicting extended-prevention duration and capsule-opening exposure mechanism. Retained dosage-form body/check exposure claim and oral-Xa extended-duration/absorption bodies remain pending;007/099 incidental feeding distractors do not close their parent questions. Working-only exact tube volumes/postpyloric/pediatric pellet handling and current outside-label claims remain unreleased. Preserve tetracycline069 and incidental adsorption017/041/121 pending. Complete42 EN questions,20 bodies,four checks,six figures and metadata in enteral-nutrition-book-safety-coverage-review.json;outside ASPEN/SCCM/FDA EN approval remains unanswered and no outside EN sources opened. Then pediatric PN and clinical fluid/calcium dependencies. Chapter1 checklist15/Chapter11 reviewing;do not close full modules or advance sequentially yet.",
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "contentCommit": "pending",
+    "remoteHashVerified": false,
+    "receipt": "sequential-release-en-broader-doac-2026-10-01.json",
+    "mainMerge": "notperformed",
+    "production": "notverified"
+  }
+}

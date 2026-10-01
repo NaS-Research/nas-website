@@ -2164,11 +2164,22 @@
         },
         {
           "slug": "oral-factor-xa-inhibitor-regimens",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "latestScopedEvidence": "enteral-nutrition-broader-doac-review.json",
+          "wholeLessonVerified": false
         },
         {
           "slug": "dabigatran-pharmacology-and-use",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "latestScopedEvidence": "enteral-nutrition-broader-doac-review.json",
+          "wholeLessonVerified": false,
+          "partiallyVerifiedSectionHeadings": [
+            "Protect the dosage form"
+          ],
+          "verifiedClaimsBySection": {
+            "Protect the dosage form": "New route/storage clauses only;retained exposure mechanism pending"
+          },
+          "embeddedCheckVerified": false
         },
         {
           "slug": "doac-selection-interactions-and-implementation",
@@ -2184,8 +2195,53 @@
         }
       ],
       "questions": 116,
-      "status": "unreviewed",
-      "evidence": []
+      "status": "reviewing",
+      "evidence": [
+        "enteral-nutrition-broader-doac-review.json"
+      ],
+      "latestEnteralDependencyReview": {
+        "evidence": "enteral-nutrition-broader-doac-review.json",
+        "sourceVerifiedBankIds": [
+          "direct-oral-anticoagulants-025",
+          "direct-oral-anticoagulants-027",
+          "direct-oral-anticoagulants-030",
+          "direct-oral-anticoagulants-031",
+          "direct-oral-anticoagulants-032",
+          "direct-oral-anticoagulants-050",
+          "direct-oral-anticoagulants-051"
+        ],
+        "sourceVerifiedBankCountThisUnit": 7,
+        "releasedBank": 116,
+        "workingDraftBank": 59,
+        "newQuestionIds": 0,
+        "expandedTeachingBodies": 1,
+        "newClausesSourceVerified": true,
+        "fullTeachingBodiesClosedThisUnit": 0,
+        "embeddedChecksClosedThisUnit": 0,
+        "cumulativeSourceVerifiedIds": [
+          "cumulative-direct-oral-anticoagulants-direct-oral-anticoagulants-030"
+        ],
+        "cumulativeRuntimeItems": 5,
+        "otherCumulativeObjectsUnchanged": 1179,
+        "wholeParentModuleVerified": false,
+        "wholeENModuleVerified": false,
+        "wholeChapterVerified": false,
+        "ENAggregateUnchanged": {
+          "bankVerified": 66,
+          "bank": 108,
+          "bodiesVerified": 16,
+          "bodies": 36,
+          "embeddedChecksVerified": 2,
+          "embeddedChecks": 6,
+          "figuresVerified": 0,
+          "figures": 6
+        },
+        "calculationTotalsUnchanged": {
+          "assessmentChecks": 674,
+          "separateSourceExamples": 98
+        },
+        "workingLocalDraftPreservedUnreleased": false
+      }
     },
     {
       "slug": "parenteral-anticoagulants",
