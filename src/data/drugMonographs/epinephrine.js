@@ -170,7 +170,7 @@ export const epinephrine = {
         {
           "title": "Adult septic-shock infusion",
           "paragraphs": [
-            "Label IV infusion range is 0.05–2 mcg/kg/min, titrated to the desired MAP; suggested changes are 0.05–0.2 mcg/kg/min every 10–15 minutes, followed by gradual weaning once stable. The 1 mg/mL vial requires dilution: 1 mL into 1, 000 mL of 5% dextrose or 5% dextrose/sodium chloride gives 1 mcg/mL; saline alone is not recommended for THIS vial preparation. The separately labeled premixed sodium-chloride bags require no further dilution and must not have contents withdrawn or medicines added through their infusion port. Use a large vein where possible, check the site, and follow exact label compatibility instructions. Never interchange these preparation rules."
+            "Label IV infusion range is 0.05–2 mcg/kg/min, titrated to the desired MAP; suggested changes are 0.05–0.2 mcg/kg/min every 10–15 minutes, followed by gradual weaning once stable. The 1 mg/mL vial requires dilution: 1 mL into 1,000 mL of 5% dextrose or 5% dextrose/sodium chloride gives 1 mcg/mL; saline alone is not recommended for THIS vial preparation. The separately labeled premixed sodium-chloride bags require no further dilution and must not have contents withdrawn or medicines added through their infusion port. Use a large vein where possible, check the site, and follow exact label compatibility instructions. Never interchange these preparation rules."
           ],
           "sources": [
             "vial",

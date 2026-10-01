@@ -1,0 +1,463 @@
+{
+  "slug": "ciprofloxacin-dexamethasone",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Product-specific ear-drop antibiotic/corticosteroid reference for susceptible bacterial otitis externa and pediatric tube-associated otitis media. All eight blueprint sections reviewed. Product-specific focused monograph; not an exhaustive adverse-event catalog.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Ciprofloxacin 0.3% / dexamethasone 0.1% otic suspension",
+      "publisher": "DailyMed / Sportpharm, relabeled Dr. Reddy’s source product",
+      "note": "SPL version 1, effective 20260713; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=780a5554-54ef-4294-b681-8c5300b028b6",
+      "checked": "2026-10-01",
+      "version": "SPL version 1, effective 20260713; current public product labeling.",
+      "spl_version": "1",
+      "spl_effective_time": "20260713",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/780a5554-54ef-4294-b681-8c5300b028b6.xml",
+      "downloaded_xml_sha256": "c06d1af4bdc943220e14aecbdac45903e222784905d0767e30c64fd11812e2af",
+      "access_scope": "Complete current selected SPL clinical, product and population sections reviewed."
+    }
+  ],
+  "assertion_to_source": [
+    {
+      "section_id": "indications",
+      "card_title": "Approved infections",
+      "assertions": [
+        "The selected suspension treats acute otitis media in children age 6 months and older WITH tympanostomy tubes due to susceptible Staphylococcus aureus, Streptococcus pneumoniae, Haemophilus influenzae, Moraxella catarrhalis, or Pseudomonas aeruginosa. It also treats acute otitis externa from age 6 months through adults/older adults due to susceptible S. aureus or P. aeruginosa. The AOM indication is pediatric and tube-specific; do not extend it automatically to AOM behind an intact tympanic membrane."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "indications",
+      "card_title": "Scope and stewardship",
+      "assertions": [
+        "This profile covers ciprofloxacin 0.3% / dexamethasone 0.1% sterile otic suspension, commonly associated with the brand Ciprodex. It does not cover oral/IV ciprofloxacin, ophthalmic ciprofloxacin, ciprofloxacin/hydrocortisone, or other combinations. Treat an appropriate bacterial diagnosis and reassess failure; it is not therapy for viral or fungal canal infection."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "1",
+            "2.1",
+            "4",
+            "5.2",
+            "11"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Dose and duration",
+      "assertions": [
+        "Instill FOUR drops into the affected ear twice daily for 7 days for either labeled condition. Four drops equal approximately 0.14 mL, containing 0.42 mg ciprofloxacin and 0.14 mg dexamethasone. Repeat in the other ear only if it is also being treated. Use the prescribed full course, and discard the unused portion afterward.",
+        "AOM with tubes, age ≥6 months pediatric | 4 drops per affected ear twice daily for 7 days",
+        "AOE, age ≥6 months including adults | 4 drops per affected ear twice daily for 7 days"
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.2",
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Administration",
+      "assertions": [
+        "Hold the bottle in the hand for 1–2 minutes to reduce cold-drop dizziness, then shake well immediately before use. Lie with the affected ear upward and instill drops without touching the tip. For AOM with tubes, pump the tragus inward FIVE times to facilitate middle-ear penetration. Maintain the ear-up position for 60 seconds for either condition. For AOE the selected instructions describe gently pulling the outer ear lobe upward and backward. Do not add the tube-specific tragus maneuver as a required AOE step."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.1",
+            "2.2",
+            "Instructions for use"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Route and dose boundaries",
+      "assertions": [
+        "Use only in the ear; never in the eye or by injection. Children below 6 months have no established label efficacy/safety. The label does not provide a renal/hepatic adjustment, longer empiric course, or universal adult tube-AOM regimen; reassess rather than importing systemic ciprofloxacin doses."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "1",
+            "2",
+            "8.4",
+            "Full label"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Warnings and precautions",
+      "assertions": [
+        "Discontinue at the first rash or sign of hypersensitivity; the label notes serious/fatal anaphylaxis reported with systemic quinolones, including reactions after a first dose. Prolonged local use may allow nonsusceptible bacteria or fungi to overgrow; stop and use alternative therapy when this occurs. If infection is not improved after 1 week, obtain cultures to guide further treatment. Drainage persisting after a full course or at least two otorrhea episodes within 6 months requires evaluation for conditions such as cholesteatoma, foreign body, or tumor."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "5.1",
+            "5.2",
+            "5.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Contraindications",
+      "assertions": [
+        "Contraindicated with hypersensitivity to ciprofloxacin, other quinolones, or any component. Viral infections of the external canal, including herpes simplex, and fungal otic infections are also contraindications."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Boxed warning status",
+      "assertions": [
+        "The selected otic combination label has no boxed warning. Do not transfer the systemic fluoroquinolone boxed warning wholesale to this local product; its own hypersensitivity, overgrowth, and route restrictions still apply."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Full label",
+            "5.1",
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Adverse reactions and overdose",
+      "assertions": [
+        "AOM-tube trials commonly reported ear discomfort or pain; AOE trials reported itching, debris, superimposed infection, congestion, pain, or redness. Postmarketing reports include auricular swelling, headache, hypersensitivity, drainage, peeling, rash, or vomiting, without reliable frequency estimates. The label expects no toxic effects from an otic overdose based on preparation characteristics; this is not an ingestion, eye-use, or injection safety statement. Assess accidental wrong-route exposure separately."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "6.1",
+            "6.2",
+            "10",
+            "2.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Interaction evidence",
+      "assertions": [
+        "No dedicated drug-interaction section or numeric interaction-adjustment algorithm is supplied in this selected label. Systemic absorption is measurable but far below oral ciprofloxacin exposure in the small pediatric study. Do not automatically assign oral ciprofloxacin chelation restrictions, CYP effects, renal schedules, or steroid-interaction doses to an ear-drop course. This is a limit of product evidence, not proof that every combination has been studied."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Full prescribing information",
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Other otic products and treatment failure",
+      "assertions": [
+        "Confirm the exact active ingredients and route when reconciling other ear products; this sterile antibiotic/steroid suspension is not ciprofloxacin/hydrocortisone or an ophthalmic solution. For prolonged use or poor response, assess culture results and microbial overgrowth rather than simply layering more antimicrobial drops or extending treatment."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "11",
+            "2.1",
+            "5.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pregnancy and lactation",
+      "assertions": [
+        "There are no adequate human pregnancy-use data; the label expects minimal maternal/fetal toxicity because otic absorption is low. Human milk transfer after otic use is unknown. Breastfeeding is not expected to expose the infant to ciprofloxacin, but dexamethasone milk exposure is uncertain and systemic steroids can affect growth/adrenal production. Consider maternal need, breastfeeding benefits, and infant risk rather than declaring zero exposure."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "8.1",
+            "8.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pediatric and geriatric use",
+      "assertions": [
+        "Safety and efficacy are established from age 6 months for the specified labeled conditions. A small audiometry assessment in children age 4–12 found no clinically relevant hearing changes; this does not prove safety of every ear product or indefinite treatment. AOE indication includes older adults, while the selected label has no dedicated geriatric dose adjustment. Pediatric tube-AOM indication is not broadened by the adult AOE approval."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "1",
+            "8.4",
+            "Full label"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Renal and hepatic impairment",
+      "assertions": [
+        "The selected local-product label supplies no impairment-specific study or numeric renal/hepatic dosing algorithm. Use the labeled otic regimen for its indication and assess individual circumstances; do not borrow oral/IV ciprofloxacin adjustments or claim an impairment study established “no adjustment.”"
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.2",
+            "8",
+            "12.3",
+            "Full label"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Mechanism and resistance",
+      "assertions": [
+        "Ciprofloxacin inhibits bacterial DNA gyrase required for DNA synthesis. Dexamethasone suppresses inflammatory cytokines and associated edema/leakage. Cross-resistance can occur with other fluoroquinolones; susceptibility remains relevant. The steroid supports resolution of inflammation but does not create antiviral or antifungal coverage."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "12.1",
+            "12.4",
+            "4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Pharmacokinetics and clinical evidence",
+      "assertions": [
+        "After a single bilateral 4-drop dose in nine children after tube insertion, mean peak ciprofloxacin was 1.39 ng/mL, roughly 0.1% of the peak after a 250 mg oral dose; mean dexamethasone peak was 1.14 ng/mL, approximately 14% of the cited oral 0.5 mg peak. Peaks occurred within 15 minutes to 2 hours. These small-study comparisons are not dose conversions. Controlled trials support 7-day twice-daily treatment for the specified AOM-tube and AOE populations."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "12.3",
+            "14"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Monitoring",
+      "assertions": [
+        "Assess clinical response by 1 week, allergy, fungal/nonsusceptible overgrowth, and recurrent or persistent drainage. Obtain cultures for non-improvement and evaluate underlying pathology after persistent full-course drainage or repeated episodes. Review tube status, correct diagnosis, dosing, and technique. Routine systemic ciprofloxacin drug-level or organ-laboratory monitoring is not established by this otic label."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "1",
+            "5.1",
+            "5.2",
+            "5.3",
+            "Full label"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Patient counseling",
+      "assertions": [
+        "Use in ears only. Warm in the hand, shake, keep the tip from contacting fingers or ear material, and maintain position for the instructed interval. Do not stop early simply because symptoms improve; do not extend the course without reassessment. Stop for rash/allergy and contact the clinician promptly; severe airway or collapse symptoms require urgent help. Protect from light and discard leftover drops when the course ends."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2",
+            "5.1",
+            "17",
+            "Patient information",
+            "Instructions for use"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Representative product",
+      "assertions": [
+        "The current selected official SPL is Sportpharm relabeling of Dr. Reddy’s product: white/off-white suspension, 7.5 mL fill in a 10 mL plastic squeeze bottle with dropper and tamper-evident cap. Relabeler NDC 85766-245-75 is from source NDC 43598-326-75; SPL metadata lists ANDA205548. This is an identified generic-label product, not a claim that its bottle is branded Ciprodex or that every manufacturer shares its NDC."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "16",
+            "SPL marketing / labeler metadata"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Dosage forms and strengths",
+      "assertions": [
+        "Sterile otic suspension contains ciprofloxacin hydrochloride equivalent to 3 mg ciprofloxacin base/mL (0.3%) plus dexamethasone 1 mg/mL (0.1%). Benzalkonium chloride 0.1 mg/mL is the preservative. It is not an oral medicine, injectable preparation, or ophthalmic product; vehicle and route remain part of product identity."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "3",
+            "11",
+            "2.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Storage and handling",
+      "assertions": [
+        "Store at 20–25°C with 15–30°C excursions permitted. Avoid freezing and protect from light. Shake immediately before each use, avoid tip contamination, and discard the unused portion after completing therapy."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "16",
+            "2.1",
+            "2.2",
+            "17"
+          ]
+        }
+      ]
+    }
+  ],
+  "material_errors": [],
+  "gaps": [],
+  "limitations": [
+    "Selected current SPL is Sportpharm relabeling of Dr. Reddy’s source product; brand and generic identity clearly distinguished.",
+    "No oral/IV/ophthalmic or ciprofloxacin-hydrocortisone equivalence, universal adult tube-AOM regimen, unstudied age below6months, renal/hepatic algorithm, or systemic interaction-dose adjustment inferred.",
+    "No dedicated geriatric or interaction section supplied by the label; evidence limits stated explicitly rather than false contraindications or safety guarantees."
+  ],
+  "regulatory_identity": [
+    {
+      "source_file": "cipro-dex",
+      "labeler": [
+        "Sportpharm LLC"
+      ],
+      "label_approval_records": [
+        {
+          "application": {
+            "extension": "ANDA205548",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73584",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "ANDA"
+          }
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "schema": "validateMonograph returned [] on 2026-10-01",
+    "blueprint_sections": "Exact eight IDs/titles/order, four Safety cards, three Product cards, three hero tuples.",
+    "mobile_content": "Two-column tables where needed, readable spaced text. Release owner handles rendered QA.",
+    "source_method": "Current selected complete primary product labels and public official/guideline sources reviewed; explicit formulation and source-status boundaries."
+  },
+  "front_matter_assertion_map": {
+    "hero_facts": [
+      [
+        "Therapeutic class",
+        "Otic antibiotic / corticosteroid"
+      ],
+      [
+        "Selected concentration",
+        "Ciprofloxacin 0.3% / dexamethasone 0.1%"
+      ],
+      [
+        "Labeled age",
+        "6 months and older; indication-specific"
+      ]
+    ],
+    "essential": {
+      "title": "Use in ears only and reassess persistent drainage.",
+      "text": "Instill 4 drops twice daily for 7 days for the labeled indications. Shake immediately before use; pump the tragus 5 times for pediatric tube-associated AOM. Stop for hypersensitivity and obtain reassessment if not improving after a week.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "support": {
+      "label": [
+        "Indications",
+        "Dosage",
+        "Warnings",
+        "Contraindications"
+      ]
+    }
+  },
+  "monograph_sha256": "3bbdf5cc5fa9c35be8288110188801a5c0dcfe3f6b9f0dc520225e67a00ae4db",
+  "source_discrepancies": [
+    {
+      "issue": "Patient information broadly describes middle-ear use whereas professional indication specifies pediatric AOM with tubes.",
+      "resolution": "Professional indication population preserved; no universal adult tube-AOM regimen inferred."
+    },
+    {
+      "issue": "Selected current IFU describes outer-ear lobe upward/backward without age-specific alternative.",
+      "resolution": "Exact selected IFU retained; generic age-based downward technique not imported."
+    },
+    {
+      "issue": "Current SPL is Sportpharm relabeling, not manufacturer Ciprodex brand record.",
+      "resolution": "Relabeler NDC85766-245-75/source NDC43598-326-75 and ANDA205548 distinguished."
+    }
+  ]
+}
