@@ -34,8 +34,7 @@ export default function ProductsPage() {
           <Link className="products-button" href="/research/introducing-nas-denials">Explore the approach <Arrow /></Link>
         </div>
         <figure className="products-artwork">
-          <Image src="/research/denials/evidence-optics-v2.webp" alt="Layered glass and gold artwork representing a connected evidence record" width={1536} height={1024} sizes="(max-width: 760px) 100vw, 65vw" />
-          <figcaption>NaS Denials · Concept artwork</figcaption>
+          <Image src="/research/denials/evidence-optics-v2.webp" alt="Layered glass with a gold center against black" width={1536} height={1024} sizes="(max-width: 760px) 100vw, 65vw" />
         </figure>
       </div>
     </section>

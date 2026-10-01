@@ -36,7 +36,7 @@ const sections = [
     id: "nicole",
     title: "Nicole development status",
     paragraphs: [
-      "Nicole is in development. The public website does not currently offer a working Nicole chat service. Concept artwork and descriptions do not represent an available clinical or research service.",
+      "Nicole is in development. The public website does not currently offer a working Nicole chat service.",
     ],
   },
   {

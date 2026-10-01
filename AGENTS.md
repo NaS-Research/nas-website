@@ -7,3 +7,13 @@ This version has breaking changes — APIs, conventions, and file structure may 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
 <!-- END:nextjs-agent-rules -->
+
+# Public website image presentation
+
+Do not publish image-production labels such as "concept artwork", "conceptual
+illustration", generated-image commentary, temporary-layout notes, or internal
+visual-production details in page captions, image descriptions, or public asset
+notes. Use plain descriptions of what the image shows. Keep required source
+attribution and licenses, and preserve qualifications about scientific results,
+clinical use, product availability, and the distinction between diagrams and
+measured evidence.

@@ -110,7 +110,7 @@ export default function UrticariaVisual({ type }) {
           <h4>{label}</h4><strong>{focus}</strong><p>{detail}</p>
         </div>)}
       </div>
-      <p className={styles.note}>Conceptual teaching diagram. Apply the complete lesson and product-specific instructions.</p>
+      <p className={styles.note}>Apply the complete lesson and product-specific instructions.</p>
     </figure>
   );
 }

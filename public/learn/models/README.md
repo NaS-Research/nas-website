@@ -21,4 +21,4 @@ The default exterior view embeds the official Sketchfab viewer for “Realistic 
 
 ## Workspace heart illustration
 
-`realistic-heart-black.png` is a background-edited derivative of the existing `realistic-heart-preview-hd.jpeg`, depicting “Realistic Human Heart” by neshallads (CC BY 4.0; source above). NaS replaced the gray background with black using image editing. This is an illustrative preview; open the Visual Atlas for the interactive model.
+`realistic-heart-black.png` is a background-edited derivative of the existing `realistic-heart-preview-hd.jpeg`, depicting “Realistic Human Heart” by neshallads (CC BY 4.0; source above). NaS replaced the gray background with black using image editing. Open the Visual Atlas for the interactive model.

@@ -328,7 +328,7 @@ export const bbbRelease = {
       "paragraphs": [
         "The companion research package contains the original audit and follow-up reports, locally frozen protocols and amendments, pinned code and environments, source retrieval manifests, aggregate outputs, claims-to-evidence register and verification receipts. It includes verify_aggregates.py, replay_followup.py and release_diagnostics.py. Follow the included README and upstream conditions to retrieve source inputs and reproduce the analysis.",
         "Raw molecular records, record-level predictions, model checkpoints, private logs and publication machinery are excluded. The original source-license discrepancy remains unresolved; the package does not grant blanket redistribution or commercial-use permission for upstream data.",
-        "This report combines the original audit and follow-up studies and incorporates the dated methods addendum. The original study editions are preserved. The cover is a conceptual illustration."
+        "This report combines the original audit and follow-up studies and incorporates the dated methods addendum. The original study editions are preserved."
       ]
     }
   ],

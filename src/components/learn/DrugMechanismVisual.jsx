@@ -16,7 +16,7 @@ export function ReceptorVisual({ lesson, withDrug, motion }) {
       <text x="220" y="173" fill={blocked ? '#deb985' : '#a4d3bb'} fontSize="11" textAnchor="middle">{blocked ? 'Signal reduced' : withDrug ? 'β₂ → cAMP ↑' : 'Baseline tissue signaling'}</text>
       <text x="315" y="117" fill="#8a9b8e" fontSize="9">{lesson.receptor}</text>
     </svg>
-    <span>Receptor schematic · not molecular structure or receptor occupancy</span>
+    <span>Receptor schematic</span>
   </div>;
 }
 

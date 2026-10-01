@@ -3,7 +3,7 @@ import {OrbitControls} from 'three/addons/OrbitControls.js';
 const notify=(type)=>parent.postMessage({type},location.origin);
 try {
 const renderer=new THREE.WebGLRenderer({antialias:true,alpha:true});
-renderer.setPixelRatio(Math.min(devicePixelRatio,1.6));renderer.setClearColor(0x090e0c);renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.domElement.setAttribute("role","img");renderer.domElement.setAttribute("aria-label","Rotatable conceptual cell membrane and drug receptor scene; chapter explanations are provided alongside the scene.");document.body.append(renderer.domElement);document.getElementById('error').remove();
+renderer.setPixelRatio(Math.min(devicePixelRatio,1.6));renderer.setClearColor(0x090e0c);renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.domElement.setAttribute("role","img");renderer.domElement.setAttribute("aria-label","Rotatable cell membrane and drug receptor diagram; chapter explanations are provided alongside the diagram.");document.body.append(renderer.domElement);document.getElementById('error').remove();
 renderer.domElement.addEventListener('webglcontextlost',e=>{e.preventDefault();notify('nas-journey-error');});
 const scene=new THREE.Scene();scene.fog=new THREE.FogExp2(0x090e0c,.017);
 const camera=new THREE.PerspectiveCamera(40,1,.1,150);camera.position.set(13,11,18);

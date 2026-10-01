@@ -32,8 +32,8 @@ const nicoleSteps = [
 ];
 export function NicolePreview() {
   const [step, setStep] = useState(0);const current = nicoleSteps[step];
-  return <div className="workspace-nicole-example"><div className="workspace-preview-top"><span>Nicole</span><span>Concept walkthrough · In development</span></div>
-    <div className="workspace-nicole-example-body"><div className="workspace-nicole-steps" aria-label="Nicole concept steps">{nicoleSteps.map((s, i) => <button key={s.name} aria-pressed={step === i} onClick={() => setStep(i)}><span>0{i + 1}</span>{s.name}<span aria-hidden="true">→</span></button>)}</div>
+  return <div className="workspace-nicole-example"><div className="workspace-preview-top"><span>Nicole</span><span>In development</span></div>
+    <div className="workspace-nicole-example-body"><div className="workspace-nicole-steps" aria-label="Nicole workflow steps">{nicoleSteps.map((s, i) => <button key={s.name} aria-pressed={step === i} onClick={() => setStep(i)}><span>0{i + 1}</span>{s.name}<span aria-hidden="true">→</span></button>)}</div>
     <div className="workspace-nicole-example-detail" aria-live="polite"><span className="workspace-label">{current.label}</span><h3>{current.title}</h3><p>{current.text}</p>{step === 1 && <Link href="/research/pam50-technical-repeatability">Explore an example: PAM50 repeatability ↗</Link>}{step === 2 && <div className="workspace-project-outline"><span>Question</span><span>Sources</span><span>Notes</span></div>}</div></div>
   </div>;
 }
