@@ -37,7 +37,7 @@ export default function DrugMonograph({ monograph }) {
     <div data-page-main>
       <header className={styles.hero}>
         <Link href="/learn/pharmacy/drugs" className={styles.back}>← Drug library</Link>
-        <div className={styles.eyebrow}><span>NaS / Pharmacy</span><span>Drug reference</span></div>
+        <div className={styles.eyebrow}><span>Drug reference</span></div>
         <h1>{monograph.name}</h1>
         <p className={styles.synonym}>{monograph.synonym}</p>
         <p className={styles.intro}>{monograph.description}</p>
@@ -52,9 +52,8 @@ export default function DrugMonograph({ monograph }) {
             <div className={styles.details}>{section.blocks.map(block => <Detail key={block.title} block={block} sources={monograph.sources} />)}</div>
           </section>)}
           <section id="references" data-monograph-section className={styles.section} aria-labelledby="references-title">
-            <header className={styles.sectionHeader}><span className={styles.sectionNumber}>{String(contents.length).padStart(2, "0")}</span><div><h2 id="references-title">References and revision history</h2><p>Original sources for the clinical and product information.</p></div></header>
+            <header className={styles.sectionHeader}><span className={styles.sectionNumber}>{String(contents.length).padStart(2, "0")}</span><div><h2 id="references-title">References</h2><p>Original sources for the clinical and product information.</p></div></header>
             <ol className={styles.sourceList}>{monograph.sources.map(source => <li key={source.id} id={`reference-${source.id}`}><span>{source.publisher}</span><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} <span aria-hidden="true">↗</span></a><p>{source.note}</p></li>)}</ol>
-            <details className={styles.detail}><summary><h3>Revision history</h3><span className={styles.toggle} aria-hidden="true" /></summary><div className={styles.detailBody}><p><time dateTime={monograph.checked}>{checkedDate}</time> · {monograph.revision}</p><p>Educational reference. Verify current labeling and patient-specific factors before making clinical decisions. Source review does not imply endorsement by the linked organizations.</p></div></details>
           </section>
         </article>
         <DrugMonographContents sections={contents} />

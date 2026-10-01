@@ -8,7 +8,6 @@ export const acetaminophen = {
   description: "An analgesic and antipyretic for pain and fever. A focused reference for oral therapy, with formulation-specific guidance and links to current labeling.",
   checked: "2026-10-01",
   essential: { title: "One ingredient. Count every source.", text: "Avoid duplicate acetaminophen-containing medicines. Follow the exact product’s daily limit. Suspected overdose requires immediate medical assessment, even without symptoms.", section: "safety", link: "Warnings and precautions" },
-  revision: "First structured edition. Oral product directions, safety, populations, pharmacology, and product identification checked against the linked sources.",
   facts: [["Therapeutic class", "Nonopioid analgesic · Antipyretic"], ["Common brand", "Tylenol"], ["Reference focus", "Single-ingredient oral products"]],
   sources: [
     { id: "otc", title: "Tylenol Extra Strength · 500 mg", publisher: "DailyMed / Kenvue", note: "Drug Facts, product characteristics, and storage. Label updated January 21, 2026.", url: label("17cfa99d-abb2-4d77-9e0e-e77109fbb61a") },

@@ -65,9 +65,9 @@
 .rail { position: sticky; top: 112px; align-self: start; max-height: calc(100dvh - 140px); overflow-y: auto; scrollbar-width: thin; }
 .railTitle { color: #e3ded4; font-size: 11px; display: block; margin-bottom: 18px; }
 .rail nav { display: grid; }
-.rail nav a { border-left: 1px solid #ffffff20; display: flex; gap: 13px; color: #9d9e98; padding: 11px 0 11px 17px; font-size: 12px; line-height: 1.5; text-decoration: none; min-height: 40px; }
-.rail nav a > span { font-size: 9px; padding-top: 2px; color: #73736d; }
-.rail nav a[aria-current], .rail nav a:hover { color: #d5b883; border-left-color: var(--gold); background: linear-gradient(90deg, #c4a5750b, transparent); }
+.rail nav a { display: flex; gap: 13px; color: #9d9e98; padding: 11px 0 11px 17px; font-size: 12px; line-height: 1.5; text-decoration: none; min-height: 40px; transition: color 280ms ease; }
+.rail nav a > span { font-size: 9px; padding-top: 2px; color: #73736d; transition: color 280ms ease; }
+.rail nav a[aria-current], .rail nav a:hover { color: #d5b883; }
 .rail nav a[aria-current] > span { color: var(--gold); }
 .takeaway { margin-top: 30px; padding-top: 23px; border-top: 1px solid var(--border); }
 .takeaway > span { color: var(--gold); font-size: 9px; text-transform: uppercase; letter-spacing: .14em; }
@@ -127,3 +127,5 @@
   .page p, .page dd, .page td, .page li { color: #333; }
   .detail { break-inside: avoid; }
 }
+
+@media (prefers-reduced-motion: reduce) { .rail nav a, .rail nav a > span { transition: none; } }
