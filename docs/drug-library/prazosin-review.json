@@ -1,0 +1,555 @@
+{
+  "drug": "prazosin",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Current ANI/Novitium and Prasco oral capsule full labels, labeled hypertension doses and safety; off-label PTSD nightmare context from full 2023 VA/DoD recommendation/rationale and Appendix B dosing.",
+  "sources": [
+    {
+      "id": "prazani",
+      "title": "ANI / Novitium prazosin capsules",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35c7aa71-6171-4ba5-916c-384c28e5f5c1",
+      "note": "Full public manufacturer label and patient instructions; SPL version 8, effective 20260710. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "8",
+      "effective_date": "20260710",
+      "xml_sha256": "af9d64b94e7853112cd0439ca9c909f841285db769d750dc70ca345a494e88aa",
+      "retrieved_xml": "/tmp/nas-drug-sources/prazani.xml",
+      "published_date": "Jul 15, 2026"
+    },
+    {
+      "id": "prazprasco",
+      "title": "Prasco prazosin capsules · Authorized generic",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cbe89216-7dea-43d7-b12e-44ccfb69af3d",
+      "note": "Full public manufacturer label and patient instructions; SPL version 6, effective 20260306. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "6",
+      "effective_date": "20260306",
+      "xml_sha256": "6135df37969451ee286c2bb35143d257a266e8b959c972afd9ac3e6d51696b78",
+      "retrieved_xml": "/tmp/nas-drug-sources/prazprasco.xml",
+      "published_date": "Mar 09, 2026"
+    },
+    {
+      "id": "va2023",
+      "title": "2023 VA/DoD PTSD and acute stress disorder guideline",
+      "publisher": "Department of Veterans Affairs / Department of Defense",
+      "url": "https://healthquality.va.gov/HEALTHQUALITY/guidelines/MH/ptsd/VA-DoD-CPG-PTSD-Full-CPG-Edited-111624-V5-81825.pdf",
+      "note": "Full public guideline: recommendation 32 and complete rationale, recommendation 18, Appendix B table B-1; June 2023, amended public file. Checked October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public complete primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/va2023.pdf",
+      "source_sha256": "dee4846f80f105b497cad73c6f2361f1583193082b153e4f52ccaa4b74ddff92",
+      "version": "June 2023 VA/DoD full guideline, amended public file",
+      "reviewed_sections": [
+        "Recommendation 32 complete rationale, printed page 80",
+        "Recommendation 18 and complete rationale, printed pages 62–63",
+        "Appendix B Table B-1, printed page 102"
+      ]
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Labeled indication",
+      "assertions": {
+        "paragraphs": [
+          "Prazosin capsules treat hypertension and may be used alone or with other antihypertensives. Blood-pressure lowering is part of broader cardiovascular risk management. The selected labels do not approve PTSD, nightmares or benign prostatic hyperplasia."
+        ]
+      },
+      "source_sections": {
+        "prazani": [
+          "INDICATIONS & USAGE"
+        ],
+        "prazprasco": [
+          "INDICATIONS AND USAGE"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "PTSD-associated nightmares · Off-label",
+      "assertions": {
+        "paragraphs": [
+          "The 2023 VA/DoD guideline weakly suggests prazosin for PTSD-associated nightmares, with low confidence in the evidence; benefits and orthostatic risks require shared assessment. It suggests against prazosin monotherapy for overall PTSD treatment. Nightmare-specific use does not replace comprehensive PTSD care."
+        ]
+      },
+      "source_sections": {
+        "va2023": [
+          "Recommendation 32 and complete discussion, printed page 80",
+          "Recommendation 18"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Labeled hypertension dosing",
+      "assertions": {
+        "paragraphs": [
+          "Start 1 mg orally two or three times daily. Increase slowly according to blood pressure; usual effective total 6–15 mg/day in divided doses. The label permits titration to 20 mg/day; higher totals usually add no efficacy, although selected patients may benefit up to 40 mg/day. Some can use twice-daily maintenance after titration. The 2 mg and 5 mg capsules are not starting doses."
+        ]
+      },
+      "source_sections": {
+        "prazani": [
+          "DOSAGE & ADMINISTRATION",
+          "WARNINGS"
+        ],
+        "prazprasco": [
+          "DOSAGE AND ADMINISTRATION",
+          "Initial Dose",
+          "Maintenance Dose",
+          "WARNINGS"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Nightmare regimen · Guideline example, off-label",
+      "assertions": {
+        "paragraphs": [
+          "VA/DoD Appendix B starts 1 mg at bedtime and titrates to clinical response; its listed range is 3–20 mg at bedtime. This is a supervised off-label range, not an automatic escalation or universal target. Slow titration and orthostatic assessment are essential."
+        ]
+      },
+      "source_sections": {
+        "va2023": [
+          "Appendix B, Table B-1, printed page 102",
+          "Recommendation 32 discussion"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Adding antihypertensives or PDE-5 inhibitors",
+      "assertions": {
+        "paragraphs": [
+          "When adding a diuretic or another antihypertensive, selected labels reduce prazosin to 1–2 mg three times daily and then retitrate to blood-pressure response. A PDE-5 inhibitor such as sildenafil or tadalafil adds hypotension risk; initiate the PDE-5 inhibitor at its lowest appropriate dose and review the complete regimen."
+        ]
+      },
+      "source_sections": {
+        "prazani": [
+          "DRUG INTERACTIONS",
+          "DOSAGE & ADMINISTRATION"
+        ],
+        "prazprasco": [
+          "Drug Interactions",
+          "Use With Other Drugs"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Renal, hepatic and administration considerations",
+      "assertions": {
+        "paragraphs": [
+          "No fixed renal or hepatic adjustment algorithm is supplied in the selected labels. Individualize to blood-pressure response and tolerability; do not infer safety in organ dysfunction from the absence of a formula. Confirm the prescribed indication, strength and schedule before changing doses."
+        ]
+      },
+      "source_sections": {
+        "prazani": [
+          "DOSAGE & ADMINISTRATION",
+          "CLINICAL PHARMACOLOGY"
+        ],
+        "prazprasco": [
+          "DOSAGE AND ADMINISTRATION",
+          "CLINICAL PHARMACOLOGY"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Syncope often occurs 30–90 minutes after the first dose and can follow rapid titration or addition of another antihypertensive. Always initiate using the 1 mg capsule. Beta-blockers can also increase hypotension risk.",
+          "Dizziness, lightheadedness and drowsiness may impair activity. Avoid driving or hazardous work for 24 hours after starting or increasing the dose; rise slowly and take care with alcohol, heat, exercise or prolonged standing.",
+          "If fainting occurs, lie down and obtain medical assessment as needed; severe or persistent symptoms require urgent care.",
+          "An erection persisting over 4 hours requires immediate medical help to prevent permanent injury.",
+          "Alpha-1 blockers can cause intraoperative floppy iris syndrome. Tell the cataract surgeon about present or past use; label evidence does not show a benefit from stopping solely before surgery."
+        ]
+      },
+      "source_sections": {
+        "prazani": [
+          "WARNINGS",
+          "GENERAL PRECAUTIONS",
+          "INFORMATION FOR PATIENTS"
+        ],
+        "prazprasco": [
+          "WARNINGS",
+          "Priapism",
+          "General",
+          "Information for Patients"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Known sensitivity to quinazolines, prazosin or any selected product’s ingredients."
+        ]
+      },
+      "source_sections": {
+        "prazani": [
+          "CONTRAINDICATIONS"
+        ],
+        "prazprasco": [
+          "CONTRAINDICATIONS"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "The selected current U.S. labels have no boxed warning. Their first-dose syncope and priapism warnings remain clinically important."
+        ]
+      },
+      "source_sections": {
+        "prazani": [
+          "Full prescribing information",
+          "WARNINGS"
+        ],
+        "prazprasco": [
+          "Full prescribing information",
+          "WARNINGS"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "assertions": {
+        "paragraphs": [
+          "Dizziness, headache, drowsiness, low energy, weakness, palpitations and nausea are frequent reported reactions. Edema, orthostatic hypotension, syncope, gastrointestinal symptoms and other reactions occur. Overdose may cause severe drowsiness or hypotension; seek urgent medical or Poison Help advice. Medical management supports circulation and renal function; prazosin is not dialyzable because of protein binding."
+        ]
+      },
+      "source_sections": {
+        "prazani": [
+          "ADVERSE REACTIONS",
+          "OVERDOSAGE"
+        ],
+        "prazprasco": [
+          "ADVERSE REACTIONS",
+          "OVERDOSAGE"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Combination or test",
+            "Action"
+          ],
+          "rows": [
+            [
+              "Diuretics and other antihypertensives, including beta-blockers",
+              "Additive hypotension; cautiously introduce and retitrate the regimen."
+            ],
+            [
+              "PDE-5 inhibitors",
+              "Symptomatic hypotension risk; start the PDE-5 agent at its lowest appropriate dose."
+            ],
+            [
+              "Alcohol, heat or prolonged standing",
+              "May aggravate dizziness or fainting; use precautions."
+            ],
+            [
+              "Urinary VMA and norepinephrine metabolites",
+              "False-positive pheochromocytoma screening can occur. Arrange clinician-directed retesting; the label describes withdrawal and repeat testing after a month."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "prazani": [
+          "DRUG INTERACTIONS",
+          "DRUG & OR LABORATORY TEST INTERACTIONS",
+          "WARNINGS"
+        ],
+        "prazprasco": [
+          "Drug Interactions",
+          "Drug/Laboratory Test Interactions",
+          "WARNINGS"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "No adequate controlled pregnancy studies establish safety; use only when potential benefit justifies maternal/fetal risk. Small amounts appear in human milk and the labels advise caution during breastfeeding. Review indication and alternatives with the treating clinician."
+        ]
+      },
+      "source_sections": {
+        "prazani": [
+          "USAGE IN PREGNANCY",
+          "NURSING MOTHERS"
+        ],
+        "prazprasco": [
+          "Usage in Pregnancy",
+          "Nursing Mothers"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and older-adult considerations",
+      "assertions": {
+        "paragraphs": [
+          "Safety and effectiveness in children are unestablished. The selected labels provide no separate geriatric dosing schedule; response-based titration and protection against hypotension, sedation and falls are necessary."
+        ]
+      },
+      "source_sections": {
+        "prazani": [
+          "USAGE IN CHILDREN",
+          "DOSAGE & ADMINISTRATION",
+          "INFORMATION FOR PATIENTS"
+        ],
+        "prazprasco": [
+          "Usage in Children",
+          "DOSAGE AND ADMINISTRATION",
+          "Information for Patients"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "assertions": {
+        "paragraphs": [
+          "A quantitative organ-impairment regimen is not established in these labels. Monitor clinical response and co-treatment risks. Animal and limited human pharmacology describe extensive metabolism and mainly biliary/fecal elimination, but this does not establish a dosing rule for liver disease."
+        ]
+      },
+      "source_sections": {
+        "prazani": [
+          "CLINICAL PHARMACOLOGY",
+          "DOSAGE & ADMINISTRATION"
+        ],
+        "prazprasco": [
+          "CLINICAL PHARMACOLOGY",
+          "DOSAGE AND ADMINISTRATION"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and pharmacodynamics",
+      "assertions": {
+        "paragraphs": [
+          "Prazosin reduces peripheral resistance, with effects attributed in part to postsynaptic alpha-adrenoceptor blockade. Blood pressure falls while supine and standing; ordinary antihypertensive effects are usually not accompanied by reflex tachycardia, although tachycardia can occur around syncope."
+        ]
+      },
+      "source_sections": {
+        "prazani": [
+          "CLINICAL PHARMACOLOGY",
+          "WARNINGS"
+        ],
+        "prazprasco": [
+          "CLINICAL PHARMACOLOGY",
+          "WARNINGS"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "assertions": {
+        "paragraphs": [],
+        "facts": [
+          [
+            "Peak and half-life",
+            "Plasma peak about 3 hours; half-life about 2–3 hours."
+          ],
+          [
+            "Binding",
+            "Highly protein bound; no percentage is specified in the selected labels."
+          ],
+          [
+            "Metabolism",
+            "Extensive demethylation and conjugation described principally in animals, with limited human data suggesting similar handling."
+          ],
+          [
+            "Excretion",
+            "Mainly bile and feces; high binding limits dialysis removal."
+          ]
+        ]
+      },
+      "source_sections": {
+        "prazani": [
+          "CLINICAL PHARMACOLOGY"
+        ],
+        "prazprasco": [
+          "CLINICAL PHARMACOLOGY"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring parameters",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Follow blood pressure and orthostatic symptoms after initiation, dose changes and new antihypertensives.",
+          "Assess dizziness, drowsiness, fainting and falls; review alcohol, heat exposure and co-medication.",
+          "For off-label nightmare treatment, document nightmare response, sleep burden and tolerability without assuming overall PTSD benefit.",
+          "Review cataract surgery plans, pregnancy/breastfeeding and relevant laboratory testing."
+        ]
+      },
+      "source_sections": {
+        "prazani": [
+          "WARNINGS",
+          "INFORMATION FOR PATIENTS",
+          "DOSAGE & ADMINISTRATION"
+        ],
+        "va2023": [
+          "Recommendation 32",
+          "Appendix B Table B-1"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Confirm whether the prescription is for hypertension or nightmares; follow that schedule and contact the clinician before changing it.",
+          "Rise slowly. Avoid hazardous tasks for 24 hours after the first dose or a dose increase.",
+          "Report fainting or troublesome dizziness; seek immediate care for an erection lasting over 4 hours.",
+          "Tell the eye surgeon about alpha-blocker use and tell all prescribers about sildenafil, tadalafil and blood-pressure medicines."
+        ]
+      },
+      "source_sections": {
+        "prazani": [
+          "INFORMATION FOR PATIENTS",
+          "WARNINGS",
+          "GENERAL PRECAUTIONS"
+        ],
+        "prazprasco": [
+          "Information for Patients",
+          "WARNINGS",
+          "Priapism",
+          "General"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative oral product · Novitium 1 mg",
+      "assertions": {
+        "paragraphs": [],
+        "facts": [
+          [
+            "Dosage form",
+            "Hard gelatin capsule · 1 mg"
+          ],
+          [
+            "Appearance",
+            "Dark green cap and light brown body"
+          ],
+          [
+            "Imprint",
+            "019 on cap; novitium on body"
+          ],
+          [
+            "Example NDC",
+            "70954-019-50 · 90 capsules"
+          ]
+        ]
+      },
+      "source_sections": {
+        "prazani": [
+          "HOW SUPPLIED",
+          "DESCRIPTION"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Selected oral prazosin hydrochloride capsules contain 1, 2 or 5 mg prazosin equivalent. Prasco authorized-generic and Novitium packages have different colors and imprints; verify the dispensed manufacturer rather than identifying strength by color alone."
+        ]
+      },
+      "source_sections": {
+        "prazani": [
+          "DESCRIPTION",
+          "HOW SUPPLIED"
+        ],
+        "prazprasco": [
+          "DESCRIPTION",
+          "HOW SUPPLIED"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Selected Novitium capsules: store at 20–25°C, protect from moisture and light, and dispense in a tight, light-resistant container. Follow the specific dispensed label and keep out of children’s reach."
+        ]
+      },
+      "source_sections": {
+        "prazani": [
+          "HOW SUPPLIED"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "Other off-label BPH/Raynaud regimens are not supplied.",
+    "No pediatric, geriatric, renal or hepatic numeric adjustment formula asserted.",
+    "Historical Minipress name is not a current commercial-availability claim."
+  ],
+  "resolved_source_findings": [
+    "Hypertension total dose >20 mg usually adds no efficacy; selected benefit up to 40 mg is described without making 40 mg a routine target.",
+    "VA/DoD weak recommendation for nightmares is distinct from recommendation against prazosin for overall PTSD."
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, essential safety, three hero facts, cited disclosures, four safety cards and three product cards.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending",
+    "mobile_content_precheck": "All dose tables use two columns and breakable prose; parent 390 px rendered article-width gate pending."
+  },
+  "monograph_sha256": "4800fc8b60308fccb976feff8ad996e6c22efeddf6810edf380a31297b6c4070",
+  "front_matter_source_map": {
+    "name_synonym_description_facts": {
+      "prazani": [
+        "DESCRIPTION",
+        "HOW SUPPLIED",
+        "INDICATIONS & USAGE"
+      ],
+      "va2023": [
+        "Recommendation 32",
+        "Appendix B Table B-1"
+      ]
+    },
+    "essential_safety": {
+      "prazani": [
+        "WARNINGS",
+        "INFORMATION FOR PATIENTS"
+      ],
+      "prazprasco": [
+        "WARNINGS",
+        "Priapism",
+        "Information for Patients"
+      ]
+    }
+  },
+  "source_review_detail": "Full relevant primary selected prazosin label sections and complete VA/DoD nightmare recommendation/rationale and Appendix B dose table reviewed; no paywalled sources or invented dosing formulas."
+}

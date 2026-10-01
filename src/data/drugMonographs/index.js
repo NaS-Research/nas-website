@@ -149,6 +149,16 @@ import { ropinirole } from "./ropinirole.js";
 import { clobetasol } from "./clobetasol.js";
 import { fluticasone_vilanterol } from "./fluticasone-vilanterol.js";
 import { albuterol_ipratropium } from "./albuterol-ipratropium.js";
+import { phentermine } from "./phentermine.js";
+import { ofloxacin } from "./ofloxacin.js";
+import { mupirocin } from "./mupirocin.js";
+import { verapamil } from "./verapamil.js";
+import { olanzapine } from "./olanzapine.js";
+import { metronidazole } from "./metronidazole.js";
+import { prazosin } from "./prazosin.js";
+import { ciprofloxacin } from "./ciprofloxacin.js";
+import { sildenafil } from "./sildenafil.js";
+import { ethinyl_estradiol_levonorgestrel } from "./ethinyl-estradiol-levonorgestrel.js";
 
 export const reviewedDrugMonographs = {
   "atorvastatin": atorvastatin,
@@ -301,4 +311,14 @@ export const reviewedDrugMonographs = {
   "clobetasol": clobetasol,
   "fluticasone-vilanterol": fluticasone_vilanterol,
   "albuterol-ipratropium": albuterol_ipratropium,
+  "phentermine": phentermine,
+  "ofloxacin": ofloxacin,
+  "mupirocin": mupirocin,
+  "verapamil": verapamil,
+  "olanzapine": olanzapine,
+  "metronidazole": metronidazole,
+  "prazosin": prazosin,
+  "ciprofloxacin": ciprofloxacin,
+  "sildenafil": sildenafil,
+  "ethinyl-estradiol-levonorgestrel": ethinyl_estradiol_levonorgestrel,
 };
