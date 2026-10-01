@@ -21,12 +21,12 @@ const diagrams = {
   },
   "macronutrient-design": {
     eyebrow: "Prescription engine",
-    title: "Protein first, then safe energy.",
+    title: "Fluid, protein, and energy.",
     columns: [
+      ["Volume", "All sources", "Fit the nutrient plan inside the fluid prescription"],
       ["AA", "4 kcal per gram", "Match protein to illness, losses, organ support, and goals"],
       ["Dextrose", "3.4 kcal per gram", "Check glucose infusion rate and glycemic tolerance"],
       ["Lipid", "Product specific", "Account for essential fatty acids and non-PN calories"],
-      ["Volume", "All sources", "Fit the nutrient plan inside the fluid prescription"],
     ],
   },
   "micronutrient-balance": {

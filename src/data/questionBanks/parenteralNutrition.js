@@ -37,7 +37,7 @@ const core = [
   q("024", "Why should prolonged lipid omission be avoided?", ["It can produce essential fatty acid deficiency", "It always lowers glucose to zero", "It causes immediate catheter fracture", "It eliminates amino acid delivery"], 0, "Lipid supplies essential fatty acids in addition to energy.", "macronutrient-design"),
   q("025", "Which approach to protein in renal dysfunction is most defensible?", ["Individualize for illness, losses, renal replacement therapy, and goals rather than automatically restricting", "Eliminate amino acids in every patient", "Use the same dose regardless of dialysis", "Base the dose only on serum albumin"], 0, "Protein needs depend on the complete clinical context, including catabolism and renal replacement losses.", "macronutrient-design"),
 
-  q("026", "Why is acetate used in PN?", ["It can provide base equivalents after metabolism and help balance chloride delivery", "It directly replaces phosphate", "It sterilizes the admixture", "It is identical to bicarbonate in compatibility"], 0, "Acetate can help adjust the acid-base contribution without adding incompatible bicarbonate.", "micronutrient-balance"),
+  q("026", "Why is acetate used in PN?", ["It can provide base equivalents after metabolism and help balance chloride delivery", "It directly replaces phosphate", "It sterilizes the admixture", "It is identical to bicarbonate in compatibility"], 0, "The book describes sodium acetate being converted to sodium bicarbonate and helping correct acidosis. Choosing the acetate salt also changes how much chloride is supplied.", "micronutrient-balance"),
   q("027", "Which statement about PN electrolyte ranges is most accurate?", ["Published ranges are starting references that require patient-specific adjustment", "They are mandatory fixed doses", "Kidney function does not matter", "Gastrointestinal losses do not matter"], 0, "Electrolyte needs vary with losses, organ function, medicines, and laboratory trends.", "micronutrient-balance"),
   q("028", "What makes calcium-phosphate precipitation difficult to predict?", ["Multiple formulation and process variables interact", "Only serum phosphate matters", "Only the bag volume matters", "The risk is always visible before infusion"], 0, "Salts, products, concentrations, pH, temperature, sequence, and time all influence solubility.", "micronutrient-balance"),
   q("029", "Which calcium salt is generally preferred in PN because of lower dissociation and precipitation risk?", ["Calcium gluconate", "Calcium chloride", "Calcium carbonate tablets", "Calcium hydroxide"], 0, "Calcium gluconate is usually preferred in PN compatibility design.", "micronutrient-balance"),
@@ -101,13 +101,13 @@ const integrationCases = [
   ["A fluid-restricted patient needs full nutrition, but the peripheral formulation would require 3.5 L per day.", "Reassess for appropriate central access and a concentrated prescription", "Peripheral concentration limits can prevent adequate delivery within the fluid allowance.", "venous-access"],
   ["A patient receiving PN and propofol develops triglycerides of 520 mg/dL.", "Count all lipid calories and hold or limit ILE while evaluating causes and tolerance", "ASPEN advises limiting or holding ILE above 400 mg/dL, and propofol adds lipid exposure.", "macronutrient-design"],
   ["A patient with cholestasis has received a standard multi-trace product for months and develops neurologic changes.", "Review manganese exposure, cholestasis, concentrations, and the complete trace-element plan", "Manganese accumulation can cause neurologic toxicity when biliary elimination is impaired.", "micronutrient-balance"],
-  ["A new PN formula exceeds the compounding software's calcium-phosphate limit, but the bag appears clear.", "Do not dispense until a pharmacist resolves compatibility using validated formulation data", "Clear appearance cannot prove compatibility or prevent delayed precipitation.", "compounding-safety"],
+  ["A new PN formula exceeds the compounding software's calcium-phosphate limit, but the bag appears clear.", "Do not dispense until a pharmacist resolves compatibility using validated formulation data", "The source describes calcium-phosphate solubility data and compounding software as risk checks. A clear-looking bag does not override a formulation limit.", "compounding-safety", ["Do not dispense until a pharmacist resolves compatibility using validated formulation data", "Dispense because visual clarity overrides the software warning", "Refrigerate the bag and dispense without resolving the formulation warning", "Use central access to make the incompatible formulation acceptable"]],
   ["A unit requests a 0.22 micron filter for a lipid-free PN bag because that was the old protocol.", "Use the current 1.2 micron ASPEN recommendation and update the protocol", "Current ASPEN guidance uses a 1.2 micron filter for all PN formulations.", "compounding-safety"],
   ["A PN-dependent patient has recurrent fever only during connection and a damaged catheter hub.", "Stop and investigate a catheter-related infection while protecting access and obtaining appropriate cultures", "The infusion pattern and hub damage strongly suggest line-related risk.", "venous-access"],
-  ["A stable home PN patient is moving from 24-hour infusion to a 12-hour cycle.", "Recalculate hourly glucose and fluid exposure and monitor tolerance during the transition", "Cycling compresses the same daily delivery into fewer hours.", "monitoring-transition"],
-  ["A patient now receives 75 percent of needs enterally for three days with stable tolerance.", "Reduce PN while continuing to verify actual enteral delivery and clinical response", "Reliable gastrointestinal delivery supports a measured transition away from PN.", "monitoring-transition"],
+  ["A stable PN patient is moving the same daily PN prescription from a 24-hour infusion to a 12-hour cycle.", "Recalculate hourly glucose and fluid exposure and monitor tolerance during the transition", "Delivering the same daily amount over fewer hours increases hourly delivery. Recalculate the rate and assess tolerance; the scenario does not establish a universal home-PN or taper protocol.", "monitoring-transition", ["Recalculate hourly glucose and fluid exposure and monitor tolerance during the transition", "Keep the previous hourly rate for twelve hours and assume the daily amount is unchanged", "Keep the daily amount unchanged and assume the hourly delivery is unchanged", "Stop glucose monitoring because the daily dextrose amount is unchanged"]],
+  ["A patient now receives 75 percent of needs enterally for three days with stable tolerance.", "Reduce PN while continuing to verify actual enteral delivery and clinical response", "Reliable gastrointestinal delivery supports reducing the portion supplied by PN while checking intake and tolerance. The observed 75 percent and three days describe this case; they are not a universal stopping threshold.", "monitoring-transition", ["Reduce PN while continuing to verify actual enteral delivery and clinical response", "Stop PN completely because any enteral intake replaces all intravenous nutrition", "Continue the full PN prescription indefinitely despite reliable enteral delivery", "Reduce enteral nutrition solely to preserve the existing full PN prescription"]],
   ["An older handout assigns every compounded PN a five-day refrigerated beyond-use date.", "Replace the rule with current USP chapter 797, stability data, process, container, and storage assessment", "The former fixed risk categories and BUDs are obsolete.", "compounding-safety"],
-].map(([caseText, correct, rationale, lesson], index) => q(`10${index}`, `${caseText} What is the most defensible next action?`, [correct, "Continue unchanged without reassessment", "Use a fixed rule that ignores the patient's current state", "Delay action until after discharge"], 0, rationale, lesson));
+].map(([caseText, correct, rationale, lesson, choices], index) => q(`10${index}`, `${caseText} What is the most defensible next action?`, choices || [correct, "Continue unchanged without reassessment", "Use a fixed rule that ignores the patient's current state", "Delay action until after discharge"], 0, rationale, lesson));
 
 const bookReviewCases = [
   {
@@ -538,6 +538,19 @@ const bookReviewCases = [
     "answer": 0,
     "rationale": "The book prefers seeing the actual volume before transfer. The empty-syringe pull-back method relies on memory and is not recommended.",
     "reviewHref": "#compounding-safety"
+  },
+  {
+    "id": "parenteral-nutrition-book-034",
+    "question": "A compounded PN label lists ingredient names and concentrations. Which additional set of information does the source require?",
+    "choices": [
+      "Total volume and route only, because concentrations determine storage",
+      "Total volume, route, storage requirements, and a beyond-use date",
+      "Storage requirements and route only, because the beyond-use date is kept off the label",
+      "Total volume and storage only, because all PN products share one route and beyond-use date"
+    ],
+    "answer": 1,
+    "rationale": "The source label requirements include ingredient names and amounts or concentrations, total volume, beyond-use date, route and storage requirements. Listing a beyond-use date does not establish which date is appropriate for the actual preparation.",
+    "reviewHref": "#compounding-safety"
   }
 ];
 
@@ -551,6 +564,6 @@ export const parenteralNutritionQuestionBank = [
   ...bookReviewCases,
 ];
 
-if (parenteralNutritionQuestionBank.length !== 133) {
-  throw new Error(`Parenteral nutrition question bank must contain 133 questions, found ${parenteralNutritionQuestionBank.length}.`);
+if (parenteralNutritionQuestionBank.length !== 134) {
+  throw new Error(`Parenteral nutrition question bank must contain 134 questions, found ${parenteralNutritionQuestionBank.length}.`);
 }

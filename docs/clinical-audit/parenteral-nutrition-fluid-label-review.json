@@ -2,13 +2,13 @@
   "date": "2026-10-01",
   "module": "parenteral-nutrition",
   "status": "verified",
-  "statusScope": "Three supplied-book additions, fourteen retained assessment source reconciliations and one scenario-duration clarification; whole adult PN remains reviewing.",
+  "statusScope": "Fluid-first teaching/diagram alignment, label-content addition, four retained question repairs and individual remaining claim boundaries. Entire adult PN remains reviewing.",
   "wholeModuleVerified": false,
-  "baseCommit": "3c176ab7f29527facd829ff3d9d5d40d80c27b99",
-  "previousScopedEvidence": "parenteral-nutrition-book-expansion-review.json",
+  "baseCommit": "ea3f781def7e0e1632d46ff2c9f03f13947fdb17",
+  "previousScopedEvidence": "parenteral-nutrition-retained-source-review.json",
   "sourcePolicy": {
     "newEducationalClaims": "Supplied RxPrep 2023 only",
-    "outsideSourceVerification": "Pending explicit user answer to limited PN safety-source exception; no outside source opened in this unit.",
+    "outsideSourceVerification": "Expanded existing official PN clinical/safety reference exception requested; explicit user answer pending. No outside source opened.",
     "privateBookAndPages": "Excluded from Git and public assets"
   },
   "sourceRead": {
@@ -22,7 +22,10 @@
         113
       ],
       "textAndRenderedPagesRead": true,
-      "wholeChapterVerified": false
+      "wholeChapterVerified": false,
+      "currentRecomparisonPdfPages": [
+        110
+      ]
     },
     "chapter11": {
       "printedPages": [
@@ -37,11 +40,8 @@
       "currentRecomparisonPdfPages": [
         157,
         158,
-        159,
-        160,
-        165,
+        163,
         166,
-        167,
         168,
         169
       ],
@@ -50,15 +50,15 @@
     },
     "chapter17": {
       "printedPages": [
-        277,
-        277
+        278,
+        278
       ],
       "pdfPages": [
-        285,
-        285
+        286,
+        286
       ],
       "textAndRenderedPageRead": true,
-      "scope": "Measured ingredient verification and finished-product inspection only; old risk-category/BUD conflict retained separately.",
+      "scope": "Label fields only; adjacent pyrogen, sterilization, old category and BUD statements not adopted. Earlier measured-volume proof and category discrepancy retained in prior evidence.",
       "wholeChapterVerified": false
     },
     "chapter53": {
@@ -72,29 +72,45 @@
       ],
       "renderedPropofol1_1KcalPerMlRead": true,
       "wholeTableOrChapterVerified": false
+    },
+    "chapter76": {
+      "printedPages": [
+        945,
+        945
+      ],
+      "pdfPages": [
+        955,
+        955
+      ],
+      "textAndRenderedPageRead": true,
+      "scope": "Catheter insertion asepsis/hand-hygiene partial dependency only, not complete hub-care protocol. Old2-3-day peripheral replacement example not adopted.",
+      "chapterIdentity": "Medication Safety & Quality Improvement; Chapter76 title confirmed at PDF942.",
+      "wholeChapterVerified": false
     }
   },
   "inventory": {
     "lessons": 6,
-    "sections": 45,
-    "bookAddedSectionsAcrossTwoUnits": 21,
+    "sections": 47,
+    "bookAddedSectionsAcrossThreeUnits": 23,
     "preservedOriginalSections": 24,
-    "sectionsAddedThisUnit": 3,
+    "sectionsAddedThisUnit": 2,
+    "fullySourceVerifiedOriginalSections": 1,
+    "remainingOriginalSections": 23,
     "figures": 6,
+    "figuresCorrectedThisUnit": 1,
     "embeddedChecks": 6,
     "sourceVerifiedEmbeddedChecks": 4,
     "remainingEmbeddedChecks": 2,
-    "bankItems": 133,
-    "bookOriginalQuestionsAcrossTwoUnits": 33,
-    "newOriginalItemsThisUnit": 3,
-    "retainedItemsSourceVerifiedThisUnit": 14,
+    "bankItems": 134,
+    "bookOriginalQuestionsAcrossThreeUnits": 34,
+    "newOriginalItemsThisUnit": 1,
+    "retainedItemsRepairedAndSourceVerifiedThisUnit": 4,
     "priorItemsUnchangedThisUnit": 129,
-    "priorPromptsClarifiedThisUnit": 1,
-    "sourceVerifiedCurrentItems": 88,
-    "remainingSourceReviewItems": 45,
+    "sourceVerifiedCurrentItems": 93,
+    "remainingSourceReviewItems": 41,
     "cumulativeItems": 5,
-    "sourceVerifiedCumulativeItems": 3,
-    "remainingCumulativeItems": 2
+    "sourceVerifiedCumulativeItems": 4,
+    "remainingCumulativeItems": 1
   },
   "lessonReview": [
     {
@@ -199,27 +215,48 @@
       "preservedSections": [
         {
           "heading": "Require both need and route failure",
-          "status": "reviewing",
+          "status": "verified",
           "contentSHA256": "2280d2199bd412a1cb8f48adf08ad349385e466f5f6dd19ee425cbad43853c4e",
-          "boundary": "Book supports route need and examples; retained additional diagnoses, malnutrition timing, shock readiness and goals-of-care algorithm require complete provenance reconciliation."
+          "individualSourceComparison": "PN components, intravenous route, meaningful need and unusable/inadequate GI delivery are supported by Chapter 11 printed149-150/PDF157-158. This is a route/need statement, not a separate early-initiation algorithm.",
+          "wholeSectionVerified": true,
+          "source": [
+            {
+              "chapter": 11,
+              "printedPages": [
+                149,
+                150
+              ],
+              "pdfPages": [
+                157,
+                158
+              ]
+            }
+          ],
+          "sourceComparedAgain": true
         },
         {
           "heading": "Recognize common indications",
           "status": "reviewing",
           "contentSHA256": "1263c98318ae0f9a3726a551f53cca2144bbd6a2f986cd9a532de7472b22cf7f",
-          "boundary": "Book supports route need and examples; retained additional diagnoses, malnutrition timing, shock readiness and goals-of-care algorithm require complete provenance reconciliation."
+          "boundary": "Book supports route need and examples; retained additional diagnoses, malnutrition timing, shock readiness and goals-of-care algorithm require complete provenance reconciliation.",
+          "individualSourceComparison": "Obstruction, ileus and malabsorption are supported; specific short bowel, high-output fistula/distal access, pancreatitis/GI bleeding indication details remain open.",
+          "wholeSectionVerified": false
         },
         {
           "heading": "Time therapy to nutrition risk",
           "status": "reviewing",
           "contentSHA256": "3f1b8b6bc73a8e007f0347fe09f590c64c09a3e4b74326efb32bc964e9aefeca",
-          "boundary": "Book supports route need and examples; retained additional diagnoses, malnutrition timing, shock readiness and goals-of-care algorithm require complete provenance reconciliation."
+          "boundary": "Book supports route need and examples; retained additional diagnoses, malnutrition timing, shock readiness and goals-of-care algorithm require complete provenance reconciliation.",
+          "individualSourceComparison": "Contextual duration indication is supported; early severe-malnutrition timing and full individualized algorithm remain open.",
+          "wholeSectionVerified": false
         },
         {
           "heading": "Stabilize before aggressive delivery",
           "status": "reviewing",
           "contentSHA256": "7973a66b8ba1cd4cf3c70eadc86489a5af5239e04a3c9041f2f8c59cddd04e15",
-          "boundary": "Book supports route need and examples; retained additional diagnoses, malnutrition timing, shock readiness and goals-of-care algorithm require complete provenance reconciliation."
+          "boundary": "Book supports route need and examples; retained additional diagnoses, malnutrition timing, shock readiness and goals-of-care algorithm require complete provenance reconciliation.",
+          "individualSourceComparison": "Glucose/refeeding concern is supported; shock/full-dose stabilization, ethical goals and stopping criteria remain open.",
+          "wholeSectionVerified": false
         }
       ],
       "existingCheckAndMetadataPreserved": true
@@ -328,25 +365,33 @@
           "heading": "Use peripheral PN as a limited bridge",
           "status": "reviewing",
           "contentSHA256": "2ce863fb9ed5afade0315571a46240827d37c0d9c1bddafdbe2f23577455c982",
-          "boundary": "Book supports access location, dilution and short peripheral use; retained dialysis-vein preservation, dedicated lumen, catheter complication response and prevention protocols require complete provenance reconciliation."
+          "boundary": "Book supports access location, dilution and short peripheral use; retained dialysis-vein preservation, dedicated lumen, catheter complication response and prevention protocols require complete provenance reconciliation.",
+          "individualSourceComparison": "Short conditional peripheral use, vein damage and central osmolarity are supported; supplemental sufficiency and protocol-specific universal-cutoff discussion remain open.",
+          "wholeSectionVerified": false
         },
         {
           "heading": "Use central access for concentrated therapy",
           "status": "reviewing",
           "contentSHA256": "9de802080825c1541e3489721b456dc8b6353af04d2ada088b27b7eff02d06cc",
-          "boundary": "Book supports access location, dilution and short peripheral use; retained dialysis-vein preservation, dedicated lumen, catheter complication response and prevention protocols require complete provenance reconciliation."
+          "boundary": "Book supports access location, dilution and short peripheral use; retained dialysis-vein preservation, dedicated lumen, catheter complication response and prevention protocols require complete provenance reconciliation.",
+          "individualSourceComparison": "Central dilution and PICC/Hickman/Broviac/Groshong are supported; implanted port selection, patient-capacity criteria and dialysis-vein preservation remain open.",
+          "wholeSectionVerified": false
         },
         {
           "heading": "Confirm and protect the system",
           "status": "reviewing",
           "contentSHA256": "f75728e0a5cd777cb32bf70d7280fa5acdd121bea67f34dc3a698411a9b8b173",
-          "boundary": "Book supports access location, dilution and short peripheral use; retained dialysis-vein preservation, dedicated lumen, catheter complication response and prevention protocols require complete provenance reconciliation."
+          "boundary": "Book supports access location, dilution and short peripheral use; retained dialysis-vein preservation, dedicated lumen, catheter complication response and prevention protocols require complete provenance reconciliation.",
+          "individualSourceComparison": "PICC location confirmation is supported; fewest lumens, dedicated PN lumen, manipulation and broader line-protection process remain open.",
+          "wholeSectionVerified": false
         },
         {
           "heading": "Treat line findings as clinical signals",
           "status": "reviewing",
           "contentSHA256": "2297866ab45d8dd6104266ebed6c211684490e651bb6e6d621211570418c4b13",
-          "boundary": "Book supports access location, dilution and short peripheral use; retained dialysis-vein preservation, dedicated lumen, catheter complication response and prevention protocols require complete provenance reconciliation."
+          "boundary": "Book supports access location, dilution and short peripheral use; retained dialysis-vein preservation, dedicated lumen, catheter complication response and prevention protocols require complete provenance reconciliation.",
+          "individualSourceComparison": "General PN infection/thrombosis and insertion asepsis/hand hygiene are supported; exact signs/response, hub/dressing/line review, antibiotic and anticoagulant prevention claims remain open.",
+          "wholeSectionVerified": false
         }
       ],
       "existingCheckAndMetadataPreserved": true
@@ -356,6 +401,26 @@
       "status": "reviewing",
       "wholeLessonVerified": false,
       "verifiedAddedSections": [
+        {
+          "heading": "Set the fluid allowance before distributing nutrients",
+          "status": "verified",
+          "source": [
+            {
+              "chapter": 11,
+              "printedPages": [
+                150,
+                150
+              ],
+              "pdfPages": [
+                158,
+                158
+              ]
+            }
+          ],
+          "contentSHA256": "3e17a7ae3333c8d5a52064982d5882ccb829e9b8fbc67d58548cdbd699e2d9b0",
+          "sourceComparedAgain": true,
+          "desktopMobileRenderedInspected": true
+        },
         {
           "heading": "Name the protein basis and energy convention",
           "status": "verified",
@@ -455,25 +520,33 @@
           "heading": "Set protein from clinical demand",
           "status": "reviewing",
           "contentSHA256": "0fbfbbe926b5675e0ff2a4286a8fee8d829588c68065f1cdf8fe5fbd9ec60082",
-          "boundary": "Book supports energy values, protein basis, lipid schedule and non-PN calories; retained current TG >400 threshold, specific product restrictions, organ-disease protein and overfeeding claims require complete provenance reconciliation."
+          "boundary": "Book supports energy values, protein basis, lipid schedule and non-PN calories; retained current TG >400 threshold, specific product restrictions, organ-disease protein and overfeeding claims require complete provenance reconciliation.",
+          "individualSourceComparison": "4 kcal/g, protein repair and stress/weight targets are supported; RRT, obesity, liver/renal unrestricted-protein context and goals remain open.",
+          "wholeSectionVerified": false
         },
         {
           "heading": "Advance dextrose within metabolic capacity",
           "status": "reviewing",
           "contentSHA256": "7a8661fd854f00d71682cfcaf9db8cec16c369c5c1b8ed1645c5d70d7a9d34d5",
-          "boundary": "Book supports energy values, protein basis, lipid schedule and non-PN calories; retained current TG >400 threshold, specific product restrictions, organ-disease protein and overfeeding claims require complete provenance reconciliation."
+          "boundary": "Book supports energy values, protein basis, lipid schedule and non-PN calories; retained current TG >400 threshold, specific product restrictions, organ-disease protein and overfeeding claims require complete provenance reconciliation.",
+          "individualSourceComparison": "3.4 kcal/g, GIR and glucose intolerance are supported; CO2, fatty liver and whole overfeeding-pattern attribution remain open.",
+          "wholeSectionVerified": false
         },
         {
           "heading": "Prescribe lipid as a drug product",
           "status": "reviewing",
           "contentSHA256": "9d03cff090649bec5298648bb37085e74f21bb88003863d77561877b4fb79128",
-          "boundary": "Book supports energy values, protein basis, lipid schedule and non-PN calories; retained current TG >400 threshold, specific product restrictions, organ-disease protein and overfeeding claims require complete provenance reconciliation."
+          "boundary": "Book supports energy values, protein basis, lipid schedule and non-PN calories; retained current TG >400 threshold, specific product restrictions, organ-disease protein and overfeeding claims require complete provenance reconciliation.",
+          "individualSourceComparison": "Specific lipid differences and medication calories are supported; essential fatty acids, full label constraints and attributed adult TG>400 threshold remain open.",
+          "wholeSectionVerified": false
         },
         {
           "heading": "Make volume and route agree",
           "status": "reviewing",
           "contentSHA256": "d82b94f9b173003646c919ed5737ff5099aa24350a9033bb57cd36fb21f43a20",
-          "boundary": "Book supports energy values, protein basis, lipid schedule and non-PN calories; retained current TG >400 threshold, specific product restrictions, organ-disease protein and overfeeding claims require complete provenance reconciliation."
+          "boundary": "Book supports energy values, protein basis, lipid schedule and non-PN calories; retained current TG >400 threshold, specific product restrictions, organ-disease protein and overfeeding claims require complete provenance reconciliation.",
+          "individualSourceComparison": "Total PN solution and medication-fluid accounting, tailoring accumulation and central concentration are supported; separate replacement for specific high GI/renal losses remains open.",
+          "wholeSectionVerified": false
         }
       ],
       "existingCheckAndMetadataPreserved": true
@@ -644,25 +717,33 @@
           "heading": "Prescribe electrolytes as a pattern",
           "status": "reviewing",
           "contentSHA256": "ce5b1ce7509e286877771e263737c597ff4169d830b92bf8f7143607a4854cca",
-          "boundary": "Book supports salts, solubility precautions and attributed vitamin/trace groups; retained shortage guidance, neurotoxicity, selected high-loss supplementation and detailed product-specific claims require complete provenance reconciliation."
+          "boundary": "Book supports salts, solubility precautions and attributed vitamin/trace groups; retained shortage guidance, neurotoxicity, selected high-loss supplementation and detailed product-specific claims require complete provenance reconciliation.",
+          "individualSourceComparison": "Individualization, kidney adjustment, acetate conversion and salt choices are supported; complete urine/GI/medication replacement pattern and bicarbonate exclusion remain open.",
+          "wholeSectionVerified": false
         },
         {
           "heading": "Protect calcium and phosphate compatibility",
           "status": "reviewing",
           "contentSHA256": "c76254ddb43c549bff8d08a9cb52b9cdbc491fecd00855d4d625af3c4e376621",
-          "boundary": "Book supports salts, solubility precautions and attributed vitamin/trace groups; retained shortage guidance, neurotoxicity, selected high-loss supplementation and detailed product-specific claims require complete provenance reconciliation."
+          "boundary": "Book supports salts, solubility precautions and attributed vitamin/trace groups; retained shortage guidance, neurotoxicity, selected high-loss supplementation and detailed product-specific claims require complete provenance reconciliation.",
+          "individualSourceComparison": "Salt, pH, temperature, mixing sequence, larger final volume and software curve are supported; exact amino-acid-product/concentration validation details remain open.",
+          "wholeSectionVerified": false
         },
         {
           "heading": "Provide complete vitamins",
           "status": "reviewing",
           "contentSHA256": "1d33c0bfe1792e1eb4401ce41a7b8e6fa0698bb3e019b4e9eeb1eb2a41e97993",
-          "boundary": "Book supports salts, solubility precautions and attributed vitamin/trace groups; retained shortage guidance, neurotoxicity, selected high-loss supplementation and detailed product-specific claims require complete provenance reconciliation."
+          "boundary": "Book supports salts, solubility precautions and attributed vitamin/trace groups; retained shortage guidance, neurotoxicity, selected high-loss supplementation and detailed product-specific claims require complete provenance reconciliation.",
+          "individualSourceComparison": "Usual vitamin addition, mixtures and listed thiamine are supported; daily age-specific dosing, vitamin light instability, extra refeeding thiamine and current shortage protocol remain open.",
+          "wholeSectionVerified": false
         },
         {
           "heading": "Individualize trace elements",
           "status": "reviewing",
           "contentSHA256": "134aaafa8aa3f9b6d6049ab6cc105a8bd97e7476115f646cea9eae7070d73a56",
-          "boundary": "Book supports salts, solubility precautions and attributed vitamin/trace groups; retained shortage guidance, neurotoxicity, selected high-loss supplementation and detailed product-specific claims require complete provenance reconciliation."
+          "boundary": "Book supports salts, solubility precautions and attributed vitamin/trace groups; retained shortage guidance, neurotoxicity, selected high-loss supplementation and detailed product-specific claims require complete provenance reconciliation.",
+          "individualSourceComparison": "Mixture and organ-disease withholding examples are supported; selected high-loss/burn/wound/RRT adjustment, cholestatic accumulation and iron compatibility mechanism remain open.",
+          "wholeSectionVerified": false
         }
       ],
       "existingCheckAndMetadataPreserved": true
@@ -672,6 +753,26 @@
       "status": "reviewing",
       "wholeLessonVerified": false,
       "verifiedAddedSections": [
+        {
+          "heading": "Communicate the preparation on its label",
+          "status": "verified",
+          "source": [
+            {
+              "chapter": 17,
+              "printedPages": [
+                278,
+                278
+              ],
+              "pdfPages": [
+                286,
+                286
+              ]
+            }
+          ],
+          "contentSHA256": "27f168f636ac09e85fe0d24acfd49ec938a0f174745b797b2d25fa5150927067",
+          "sourceComparedAgain": true,
+          "desktopMobileRenderedInspected": true
+        },
         {
           "heading": "Verify the measured ingredient before transfer",
           "status": "verified",
@@ -780,25 +881,33 @@
           "heading": "Choose a formulation deliberately",
           "status": "reviewing",
           "contentSHA256": "b2cac5140f4d88466d7c52a5d7196bb6a69780b5eb2eab95ce1c77d4c3ca7e06",
-          "boundary": "Book supports admixture types, high-alert sterile preparation and incompatibility principles; filter and old USP categories conflict with retained modern claims. Current process and emulsion claims require complete provenance reconciliation."
+          "boundary": "Book supports admixture types, high-alert sterile preparation and incompatibility principles; filter and old USP categories conflict with retained modern claims. Current process and emulsion claims require complete provenance reconciliation.",
+          "individualSourceComparison": "2-in-1/3-in-1 composition is supported; particle obscuration and complete emulsion/hang-time/workflow consequences remain open.",
+          "wholeSectionVerified": false
         },
         {
           "heading": "Recognize emulsion failure",
           "status": "reviewing",
           "contentSHA256": "0a0cc98adc930398428becc914bf1ef6277d9848c33d5f1af8d6f4b722f1dd00",
-          "boundary": "Book supports admixture types, high-alert sterile preparation and incompatibility principles; filter and old USP categories conflict with retained modern claims. Current process and emulsion claims require complete provenance reconciliation."
+          "boundary": "Book supports admixture types, high-alert sterile preparation and incompatibility principles; filter and old USP categories conflict with retained modern claims. Current process and emulsion claims require complete provenance reconciliation.",
+          "individualSourceComparison": "Particulate, precipitate, color and leakage inspection are supported; electrostatic stabilization, coalescence/cracking/free oil and complete quarantine process remain open.",
+          "wholeSectionVerified": false
         },
         {
           "heading": "Apply current sterile-compounding standards",
           "status": "reviewing",
           "contentSHA256": "07022db96f179dc537defef34be76ab8bd47fc9f53a694200762beb014fe0d32",
-          "boundary": "Book supports admixture types, high-alert sterile preparation and incompatibility principles; filter and old USP categories conflict with retained modern claims. Current process and emulsion claims require complete provenance reconciliation."
+          "boundary": "Book supports admixture types, high-alert sterile preparation and incompatibility principles; filter and old USP categories conflict with retained modern claims. Current process and emulsion claims require complete provenance reconciliation.",
+          "individualSourceComparison": "PN CSP and USP applicability are supported; revised current categories/BUDs conflict with old source and remain open.",
+          "wholeSectionVerified": false
         },
         {
           "heading": "Filter every PN formulation",
           "status": "reviewing",
           "contentSHA256": "8a0ff73fa194acdf21e04081d13e47ef06eb25538c44f4d16c55b91200ac0c73",
-          "boundary": "Book supports admixture types, high-alert sterile preparation and incompatibility principles; filter and old USP categories conflict with retained modern claims. Current process and emulsion claims require complete provenance reconciliation."
+          "boundary": "Book supports admixture types, high-alert sterile preparation and incompatibility principles; filter and old USP categories conflict with retained modern claims. Current process and emulsion claims require complete provenance reconciliation.",
+          "individualSourceComparison": "The all-PN 1.2-micron statement conflicts with source lipid-free 0.22 rule; manufacturer priming and full coadministration/flushing process also remain open.",
+          "wholeSectionVerified": false
         }
       ],
       "existingCheckAndMetadataPreserved": true
@@ -874,25 +983,33 @@
           "heading": "Monitor by phase and acuity",
           "status": "reviewing",
           "contentSHA256": "d56e1ecd94447f0d901aaea9ef31d2557eb0e90e2557f172a27cd47ed4eecc08",
-          "boundary": "Book supports glucose/refeeding concerns and its attributed insulin example; retained all-phase monitoring, universal taper exception, home PN, cycling and long-term complication claims require complete provenance reconciliation."
+          "boundary": "Book supports glucose/refeeding concerns and its attributed insulin example; retained all-phase monitoring, universal taper exception, home PN, cycling and long-term complication claims require complete provenance reconciliation.",
+          "individualSourceComparison": "Glucose intolerance, refeeding/phosphate, fluid and renal considerations are supported; complete initiation panel, phase-specific frequency and home intervals remain open.",
+          "wholeSectionVerified": false
         },
         {
           "heading": "Separate overfeeding from intolerance",
           "status": "reviewing",
           "contentSHA256": "cb701ece4084f4d9e80afb0fd8d2792495d438d9d9f114e01aef3e11f6cda338",
-          "boundary": "Book supports glucose/refeeding concerns and its attributed insulin example; retained all-phase monitoring, universal taper exception, home PN, cycling and long-term complication claims require complete provenance reconciliation."
+          "boundary": "Book supports glucose/refeeding concerns and its attributed insulin example; retained all-phase monitoring, universal taper exception, home PN, cycling and long-term complication claims require complete provenance reconciliation.",
+          "individualSourceComparison": "Glucose, triglyceride and insulin discussion is supported; CO2/hepatic/fluid syndrome differential and compensatory treatment decision algorithm remain open.",
+          "wholeSectionVerified": false
         },
         {
           "heading": "Prevent and detect long-term complications",
           "status": "reviewing",
           "contentSHA256": "c87e8d2ddfa4bf3a01435db83b21e930e26ae671cb4823722d3d5f6135802735",
-          "boundary": "Book supports glucose/refeeding concerns and its attributed insulin example; retained all-phase monitoring, universal taper exception, home PN, cycling and long-term complication claims require complete provenance reconciliation."
+          "boundary": "Book supports glucose/refeeding concerns and its attributed insulin example; retained all-phase monitoring, universal taper exception, home PN, cycling and long-term complication claims require complete provenance reconciliation.",
+          "individualSourceComparison": "EN preference and reduced cholelithiasis/cholestasis risk are supported; PN metabolic bone, steatosis, tailored cycles and full surveillance/prevention protocol remain open.",
+          "wholeSectionVerified": false
         },
         {
           "heading": "Cycle and transition with intent",
           "status": "reviewing",
           "contentSHA256": "a9afeaeda741f04e92b7b3d1d0312068ff37020da3eb253c302a0ff8be62b3fb",
-          "boundary": "Book supports glucose/refeeding concerns and its attributed insulin example; retained all-phase monitoring, universal taper exception, home PN, cycling and long-term complication claims require complete provenance reconciliation."
+          "boundary": "Book supports glucose/refeeding concerns and its attributed insulin example; retained all-phase monitoring, universal taper exception, home PN, cycling and long-term complication claims require complete provenance reconciliation.",
+          "individualSourceComparison": "Rate/time implications and reliable enteral replacement are supported; home routines/competency, universal taper exception and complete home care requirements remain open.",
+          "wholeSectionVerified": false
         }
       ],
       "existingCheckAndMetadataPreserved": true
@@ -963,7 +1080,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports route need and examples; retained additional diagnoses, malnutrition timing, shock readiness and goals-of-care algorithm require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "The book lists untreatable malabsorption and intestinal disorders; it does not establish the complete retained short-bowel/resection explanation in the reviewed PN section.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-004",
@@ -1003,7 +1123,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports route need and examples; retained additional diagnoses, malnutrition timing, shock readiness and goals-of-care algorithm require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "The reviewed source gives a contextual greater-than-five-day indication; the complete early initiation rule for severe malnutrition is not established.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-006",
@@ -1015,7 +1138,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports route need and examples; retained additional diagnoses, malnutrition timing, shock readiness and goals-of-care algorithm require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "The source names glucose intolerance and refeeding risk; the retained shock-readiness/full-energy algorithm requires additional provenance.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-007",
@@ -1027,7 +1153,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports route need and examples; retained additional diagnoses, malnutrition timing, shock readiness and goals-of-care algorithm require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "Route failure is supported; the detailed high-output fistula/distal-access indication is not established by the reviewed PN discussion.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-008",
@@ -1039,7 +1168,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports route need and examples; retained additional diagnoses, malnutrition timing, shock readiness and goals-of-care algorithm require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "PN burdens are described, but the complete goals/preferences/stopping-criteria process is not established by that source section.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-009",
@@ -1127,7 +1259,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports access location, dilution and short peripheral use; retained dialysis-vein preservation, dedicated lumen, catheter complication response and prevention protocols require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "Compatibility distinction is supported; dedicated lumen and reduced contamination through fewer access events are not completely established.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-012",
@@ -1139,7 +1274,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports access location, dilution and short peripheral use; retained dialysis-vein preservation, dedicated lumen, catheter complication response and prevention protocols require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "The IV source describes thrombosis and extravasation; the exact PICC arm-swelling/resistance diagnostic differential is not established.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-013",
@@ -1151,7 +1289,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports access location, dilution and short peripheral use; retained dialysis-vein preservation, dedicated lumen, catheter complication response and prevention protocols require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "Central/PICC access is described; preservation of dialysis veins and the device-related stenosis consequence need their own provenance.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-014",
@@ -1163,7 +1304,23 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports access location, dilution and short peripheral use; retained dialysis-vein preservation, dedicated lumen, catheter complication response and prevention protocols require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "The limited catheter dependency supports insertion asepsis and hand hygiene; hub disinfection/minimal manipulation as the complete keyed prevention strategy remains unverified.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true,
+      "partialDependency": {
+        "chapter": 76,
+        "printedPages": [
+          945,
+          945
+        ],
+        "pdfPages": [
+          955,
+          955
+        ],
+        "textAndRenderedPageRead": true,
+        "supports": "Insertion asepsis, hand hygiene and minimizing unnecessary intravascular catheter use; complete hub/manipulation recommendation remains open."
+      }
     },
     {
       "id": "parenteral-nutrition-015",
@@ -1175,7 +1332,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports access location, dilution and short peripheral use; retained dialysis-vein preservation, dedicated lumen, catheter complication response and prevention protocols require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "PN infection risk is stated; stopping for fever/rigors during infusion and urgent catheter-infection evaluation need complete protocol provenance.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-016",
@@ -1187,7 +1347,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports access location, dilution and short peripheral use; retained dialysis-vein preservation, dedicated lumen, catheter complication response and prevention protocols require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "The exact CDC recommendation against routine anticoagulation solely for infection prevention is outside the reviewed book support.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-017",
@@ -1280,7 +1443,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports energy values, protein basis, lipid schedule and non-PN calories; retained current TG >400 threshold, specific product restrictions, organ-disease protein and overfeeding claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "Source glucose intolerance is supported; excessive carbon dioxide, hepatic fat and lipogenesis mechanism in the rationale need complete provenance.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-021",
@@ -1330,7 +1496,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports energy values, protein basis, lipid schedule and non-PN calories; retained current TG >400 threshold, specific product restrictions, organ-disease protein and overfeeding claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "The book distinguishes lipid products and high triglycerides; complete allergy/rate/compatibility/current-labeling and prolonged-omission implications remain open.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-023",
@@ -1342,7 +1511,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports energy values, protein basis, lipid schedule and non-PN calories; retained current TG >400 threshold, specific product restrictions, organ-disease protein and overfeeding claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "The retained attributed ASPEN greater-than-400 mg/dL adult limit is not established by the reviewed book source.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-024",
@@ -1354,7 +1526,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports energy values, protein basis, lipid schedule and non-PN calories; retained current TG >400 threshold, specific product restrictions, organ-disease protein and overfeeding claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "Lipid energy is supported; prolonged omission and PN essential-fatty-acid-deficiency causation need separate provenance.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-025",
@@ -1366,19 +1541,48 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports energy values, protein basis, lipid schedule and non-PN calories; retained current TG >400 threshold, specific product restrictions, organ-disease protein and overfeeding claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "The book gives protein needs by stress and weight basis; renal replacement losses, catabolic renal context and no automatic restriction require complete provenance.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-026",
-      "status": "reviewing",
-      "contentSHA256": "6ceb349a47db82fd5e77d672cd042354de2f4695b2d094b945fa72345b93df76",
+      "status": "verified",
+      "contentSHA256": "c224abf29ee3620a23272ee5b78ec195cce0a8e8558116073882bd4595adeb63",
       "reviewHref": "#micronutrient-balance",
       "answer": 0,
       "runtimeDesktopMobileGraded": true,
       "choicesAndRationaleReviewed": true,
-      "kind": "retained conceptual/integration item",
-      "sourceBoundary": "Book supports salts, solubility precautions and attributed vitamin/trace groups; retained shortage guidance, neurotoxicity, selected high-loss supplementation and detailed product-specific claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "kind": "retained assessment repaired and source reconciled",
+      "source": [
+        {
+          "chapter": 11,
+          "printedPages": [
+            158,
+            158
+          ],
+          "pdfPages": [
+            166,
+            166
+          ]
+        },
+        {
+          "chapter": 7,
+          "printedPages": [
+            102,
+            102
+          ],
+          "pdfPages": [
+            110,
+            110
+          ]
+        }
+      ],
+      "completeChoicesKeyRationaleReviewed": true,
+      "sourceComparedAgain": true,
+      "sourceProof": "Acetate conversion to bicarbonate and acidosis use are explicit. Sodium salt choice changes chloride contribution. Revised explanation states those source facts; it no longer treats a universal PN bicarbonate incompatibility claim as established. Same choices/key/anchor. Bicarbonate is not equivalent to acetate compatibility; IV chapter notes broad bicarbonate incompatibilities.",
+      "priorIdKeyAnchorPreserved": true
     },
     {
       "id": "parenteral-nutrition-027",
@@ -1390,7 +1594,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports salts, solubility precautions and attributed vitamin/trace groups; retained shortage guidance, neurotoxicity, selected high-loss supplementation and detailed product-specific claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "Source individualized electrolytes and renal-disease adjustment agree with the key in part; complete published-range, losses, medicines and laboratory-trend explanation remains open.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-028",
@@ -1467,7 +1674,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports salts, solubility precautions and attributed vitamin/trace groups; retained shortage guidance, neurotoxicity, selected high-loss supplementation and detailed product-specific claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "The book names zinc in the trace mixture; high-output ostomy zinc loss and increased requirements are not established by the reviewed trace section.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-031",
@@ -1479,7 +1689,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports salts, solubility precautions and attributed vitamin/trace groups; retained shortage guidance, neurotoxicity, selected high-loss supplementation and detailed product-specific claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "The source lists withholding manganese/copper in severe liver disease; impaired biliary elimination, cholestasis and neurologic mechanism need full provenance.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-032",
@@ -1491,7 +1704,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports salts, solubility precautions and attributed vitamin/trace groups; retained shortage guidance, neurotoxicity, selected high-loss supplementation and detailed product-specific claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "Thiamine is a listed vitamin and phosphate is emphasized in refeeding; the full added-thiamine/carbohydrate-demand recommendation is not established.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-033",
@@ -1503,7 +1719,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports salts, solubility precautions and attributed vitamin/trace groups; retained shortage guidance, neurotoxicity, selected high-loss supplementation and detailed product-specific claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "The time-sensitive ASPEN/ASHP multivitamin-shortage plan requires authorized current-source verification.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-034",
@@ -1515,7 +1734,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports salts, solubility precautions and attributed vitamin/trace groups; retained shortage guidance, neurotoxicity, selected high-loss supplementation and detailed product-specific claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "The source says iron is not routinely included; iron charge, emulsion destabilization and separate deficiency treatment rationale are not established.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-035",
@@ -1554,7 +1776,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports admixture types, high-alert sterile preparation and incompatibility principles; filter and old USP categories conflict with retained modern claims. Current process and emulsion claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "The source requires particulate/precipitate inspection and rejection; free oil and emulsion-cracking response require complete emulsion-source support.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-037",
@@ -1566,7 +1791,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports admixture types, high-alert sterile preparation and incompatibility principles; filter and old USP categories conflict with retained modern claims. Current process and emulsion claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "Source formulation checks and physical inspection support the key in part; retained subvisible-particle and delayed PN-precipitation mechanisms require complete provenance.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-038",
@@ -1578,7 +1806,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports admixture types, high-alert sterile preparation and incompatibility principles; filter and old USP categories conflict with retained modern claims. Current process and emulsion claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "Book 1.2-micron lipid/TNA filtering agrees with the keyed size; rationale extending this to every PN formulation is the recorded source conflict.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-039",
@@ -1590,7 +1821,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports admixture types, high-alert sterile preparation and incompatibility principles; filter and old USP categories conflict with retained modern claims. Current process and emulsion claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "The modern all-PN 1.2-micron replacement rule conflicts with the old source lipid-free 0.22-micron rule.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-040",
@@ -1602,7 +1836,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports admixture types, high-alert sterile preparation and incompatibility principles; filter and old USP categories conflict with retained modern claims. Current process and emulsion claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "Book additive/Y-site compatibility supports incompatibility review; entire coadministration infection/line-manipulation and separate-route safety explanation remains open.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-041",
@@ -1614,7 +1851,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports admixture types, high-alert sterile preparation and incompatibility principles; filter and old USP categories conflict with retained modern claims. Current process and emulsion claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "The old book categories/BUD rules conflict with the retained modern revised USP claim; no old dating rule adopted.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-042",
@@ -1626,7 +1866,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports admixture types, high-alert sterile preparation and incompatibility principles; filter and old USP categories conflict with retained modern claims. Current process and emulsion claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "Order review, measured quantities, appearance and labels are supported across rendered pages; entire validated order-to-product verification process still needs complete provenance.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-043",
@@ -1638,7 +1881,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports glucose/refeeding concerns and its attributed insulin example; retained all-phase monitoring, universal taper exception, home PN, cycling and long-term complication claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "The PN section emphasizes phosphate and glucose intolerance; complete potassium/magnesium follow-up set and insulin-shift explanation remain open.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-044",
@@ -1650,7 +1896,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports glucose/refeeding concerns and its attributed insulin example; retained all-phase monitoring, universal taper exception, home PN, cycling and long-term complication claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "Source discusses glucose intolerance, fluid adaptation and lipid adjustment; carbon dioxide and complete overfeeding syndrome attribution need full provenance.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-045",
@@ -1662,7 +1911,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports glucose/refeeding concerns and its attributed insulin example; retained all-phase monitoring, universal taper exception, home PN, cycling and long-term complication claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "Source glucose monitoring/insulin/rate discussion agrees in part; complete first-step review of illness/medicines/all energy before compensatory insulin is not established.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-046",
@@ -1723,7 +1975,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports glucose/refeeding concerns and its attributed insulin example; retained all-phase monitoring, universal taper exception, home PN, cycling and long-term complication claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "Book describes PN titration; the retained exception to mandatory taper in every stable adult requires current-source reconciliation.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-048",
@@ -1735,7 +1990,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports glucose/refeeding concerns and its attributed insulin example; retained all-phase monitoring, universal taper exception, home PN, cycling and long-term complication claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "Metabolic bone disease from long-term PN is not established in the reviewed PN source section.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-049",
@@ -1747,7 +2005,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports glucose/refeeding concerns and its attributed insulin example; retained all-phase monitoring, universal taper exception, home PN, cycling and long-term complication claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "Complete home-PN discharge competency, support and emergency-planning requirements need their own provenance.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-050",
@@ -2621,7 +2882,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports route need and examples; retained additional diagnoses, malnutrition timing, shock readiness and goals-of-care algorithm require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "Book refeeding warning supports concern; exact multiple-electrolyte action, thiamine and cautious energy strategy are not fully established by that warning.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-101",
@@ -2671,7 +2935,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports energy values, protein basis, lipid schedule and non-PN calories; retained current TG >400 threshold, specific product restrictions, organ-disease protein and overfeeding claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "Propofol energy is supported; retained adult ILE greater-than-400 mg/dL intervention is the unverified attributed ASPEN threshold.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-103",
@@ -2683,19 +2950,48 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports salts, solubility precautions and attributed vitamin/trace groups; retained shortage guidance, neurotoxicity, selected high-loss supplementation and detailed product-specific claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "Source liver trace-element withholding agrees in part; cholestatic manganese neurologic toxicity and complete evaluation are not established.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-104",
-      "status": "reviewing",
-      "contentSHA256": "148025f12d78d470a0eee32be4b461dffa40de5f4f07acda3b9c5564a497f3f0",
+      "status": "verified",
+      "contentSHA256": "45f6477ba7cfbc19763792fbb5f88e1d7600aed4529f068aca907ec909159f49",
       "reviewHref": "#compounding-safety",
       "answer": 0,
       "runtimeDesktopMobileGraded": true,
       "choicesAndRationaleReviewed": true,
-      "kind": "retained conceptual/integration item",
-      "sourceBoundary": "Book supports admixture types, high-alert sterile preparation and incompatibility principles; filter and old USP categories conflict with retained modern claims. Current process and emulsion claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "kind": "retained assessment repaired and source reconciled",
+      "source": [
+        {
+          "chapter": 11,
+          "printedPages": [
+            160,
+            160
+          ],
+          "pdfPages": [
+            168,
+            168
+          ]
+        },
+        {
+          "chapter": 7,
+          "printedPages": [
+            100,
+            102
+          ],
+          "pdfPages": [
+            108,
+            110
+          ]
+        }
+      ],
+      "completeChoicesKeyRationaleReviewed": true,
+      "sourceComparedAgain": true,
+      "sourceProof": "Source compounding software/solubility curve flags precipitation risk, and pharmacist compatibility resources address the actual formulation. Clear appearance does not override that check. Replaced generic repeated distractors with appearance, refrigeration and access misconceptions; no delayed/subvisible PN mechanism asserted as source-verified.",
+      "priorIdKeyAnchorPreserved": true
     },
     {
       "id": "parenteral-nutrition-105",
@@ -2707,7 +3003,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports admixture types, high-alert sterile preparation and incompatibility principles; filter and old USP categories conflict with retained modern claims. Current process and emulsion claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "The retained modern lipid-free 1.2-micron protocol replacement is the recorded old-book filter conflict.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-106",
@@ -2719,31 +3018,106 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports access location, dilution and short peripheral use; retained dialysis-vein preservation, dedicated lumen, catheter complication response and prevention protocols require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "The source states PN infection risk; recurrent connection fever, damaged hub, cultures and protection of access require complete catheter-protocol provenance.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-107",
-      "status": "reviewing",
-      "contentSHA256": "a37c4b28f2948d8912c2142d7baf147ebc46547b8d8aab4e78a089b161cc6292",
+      "status": "verified",
+      "contentSHA256": "aaff915528ff82a016e2cabc57417c758a44585c45c088190ae66db0be700b95",
       "reviewHref": "#monitoring-transition",
       "answer": 0,
       "runtimeDesktopMobileGraded": true,
       "choicesAndRationaleReviewed": true,
-      "kind": "retained conceptual/integration item",
-      "sourceBoundary": "Book supports glucose/refeeding concerns and its attributed insulin example; retained all-phase monitoring, universal taper exception, home PN, cycling and long-term complication claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "kind": "retained assessment repaired and source reconciled",
+      "source": [
+        {
+          "chapter": 11,
+          "printedPages": [
+            150,
+            150
+          ],
+          "pdfPages": [
+            158,
+            158
+          ]
+        },
+        {
+          "chapter": 11,
+          "printedPages": [
+            155,
+            155
+          ],
+          "pdfPages": [
+            163,
+            163
+          ]
+        },
+        {
+          "chapter": 11,
+          "printedPages": [
+            161,
+            161
+          ],
+          "pdfPages": [
+            169,
+            169
+          ]
+        }
+      ],
+      "completeChoicesKeyRationaleReviewed": true,
+      "sourceComparedAgain": true,
+      "sourceProof": "Clarified the same daily amount and removed the unsupported home-specific implication. Equal daily quantity over fewer hours raises hourly exposure; independently checked 24-to-12-hour ratio. Source glucose intolerance and rate/insulin discussion supports reassessment of tolerance. Replaced generic distractors; no universal taper/home protocol introduced.",
+      "priorIdKeyAnchorPreserved": true,
+      "independentRateCheck": {
+        "id": "parenteral-nutrition-107",
+        "suppliedEqualDailyAmount": 1,
+        "oldHours": 24,
+        "newHours": 12,
+        "newToOldHourlyRatio": "2",
+        "method": "Independent Decimal equal-daily-amount/time calculation",
+        "scope": "Rate/time implication only; no treatment protocol"
+      }
     },
     {
       "id": "parenteral-nutrition-108",
-      "status": "reviewing",
-      "contentSHA256": "107ca5eca92dc86e16435b40cca820c3af66f8e9cb899c8cf36f15ebd92823e4",
+      "status": "verified",
+      "contentSHA256": "ec854eb3d0c4d241ee887b53618e2417413426068d44179d2eb13f0d915d6c92",
       "reviewHref": "#monitoring-transition",
       "answer": 0,
       "runtimeDesktopMobileGraded": true,
       "choicesAndRationaleReviewed": true,
-      "kind": "retained conceptual/integration item",
-      "sourceBoundary": "Book supports glucose/refeeding concerns and its attributed insulin example; retained all-phase monitoring, universal taper exception, home PN, cycling and long-term complication claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "kind": "retained assessment repaired and source reconciled",
+      "source": [
+        {
+          "chapter": 11,
+          "printedPages": [
+            149,
+            150
+          ],
+          "pdfPages": [
+            157,
+            158
+          ]
+        },
+        {
+          "chapter": 11,
+          "printedPages": [
+            161,
+            161
+          ],
+          "pdfPages": [
+            169,
+            169
+          ]
+        }
+      ],
+      "completeChoicesKeyRationaleReviewed": true,
+      "sourceComparedAgain": true,
+      "sourceProof": "Adequate reliable GI nutrition supports measured reduction of PN. The observed 75 percent and three days are scenario data, explicitly not a universal stopping threshold. Partial GI intake does not justify automatic complete withdrawal. Replaced generic repeated distractors with actual route-transition errors.",
+      "priorIdKeyAnchorPreserved": true
     },
     {
       "id": "parenteral-nutrition-109",
@@ -2755,7 +3129,10 @@
       "choicesAndRationaleReviewed": true,
       "kind": "retained conceptual/integration item",
       "sourceBoundary": "Book supports admixture types, high-alert sterile preparation and incompatibility principles; filter and old USP categories conflict with retained modern claims. Current process and emulsion claims require complete provenance reconciliation.",
-      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review."
+      "note": "Existing item read and compared with the supplied-book scope. Runtime success does not complete the remaining clinical provenance review.",
+      "itemSpecificSourceBoundary": "Old fixed five-day PN BUD conflicts with retained revised USP guidance; current process-specific replacement requires authorized outside verification.",
+      "fullQuestionChoicesKeyRationaleCompared": true,
+      "absenceSearchDoesNotProveUnsupported": true
     },
     {
       "id": "parenteral-nutrition-book-001",
@@ -3479,6 +3856,28 @@
       "completeChoicesKeyRationaleReviewed": true,
       "sourceComparedAgain": true,
       "runtimeDesktopMobileGraded": true
+    },
+    {
+      "id": "parenteral-nutrition-book-034",
+      "status": "verified",
+      "contentSHA256": "980e75c1cafa07797017a8af14df5518b6c6453d145934e0cc6740ef015ae639",
+      "reviewHref": "#compounding-safety",
+      "answer": 1,
+      "kind": "new original label-content question",
+      "source": {
+        "chapter": 17,
+        "printedPages": [
+          278,
+          278
+        ],
+        "pdfPages": [
+          286,
+          286
+        ]
+      },
+      "completeChoicesKeyRationaleReviewed": true,
+      "sourceComparedAgain": true,
+      "runtimeDesktopMobileGraded": true
     }
   ],
   "embeddedReview": [
@@ -3609,7 +4008,8 @@
       "componentUnchanged": true,
       "desktopMobileRenderInspected": true,
       "scope": "Layout/function reviewed; all retained clinical caption claims await complete provenance reconciliation.",
-      "sourceBoundary": "Book supports route need and examples; retained additional diagnoses, malnutrition timing, shock readiness and goals-of-care algorithm require complete provenance reconciliation."
+      "sourceBoundary": "Book supports route need and examples; retained additional diagnoses, malnutrition timing, shock readiness and goals-of-care algorithm require complete provenance reconciliation.",
+      "individualClaimBoundary": "Need/route and duration supported; nutrition-risk timing and shock/metabolic-readiness algorithm remains open."
     },
     {
       "slug": "venous-access",
@@ -3618,16 +4018,35 @@
       "componentUnchanged": true,
       "desktopMobileRenderInspected": true,
       "scope": "Layout/function reviewed; all retained clinical caption claims await complete provenance reconciliation.",
-      "sourceBoundary": "Book supports access location, dilution and short peripheral use; retained dialysis-vein preservation, dedicated lumen, catheter complication response and prevention protocols require complete provenance reconciliation."
+      "sourceBoundary": "Book supports access location, dilution and short peripheral use; retained dialysis-vein preservation, dedicated lumen, catheter complication response and prevention protocols require complete provenance reconciliation.",
+      "individualClaimBoundary": "Central dilution and PICC tip supported; tunneled/port selection, home durability and complete surveillance details remain open."
     },
     {
       "slug": "macronutrient-design",
       "visual": "macronutrient-design",
       "status": "reviewing",
-      "componentUnchanged": true,
+      "componentUnchanged": false,
       "desktopMobileRenderInspected": true,
       "scope": "Layout/function reviewed; all retained clinical caption claims await complete provenance reconciliation.",
-      "sourceBoundary": "Book supports energy values, protein basis, lipid schedule and non-PN calories; retained current TG >400 threshold, specific product restrictions, organ-disease protein and overfeeding claims require complete provenance reconciliation."
+      "sourceBoundary": "Book supports energy values, protein basis, lipid schedule and non-PN calories; retained current TG >400 threshold, specific product restrictions, organ-disease protein and overfeeding claims require complete provenance reconciliation.",
+      "individualClaimBoundary": "Corrected title/volume-first order and energy numbers supported; losses/organ-support goals and essential-fatty-acid statements remain open.",
+      "scopedVerifiedCorrection": {
+        "title": "Fluid, protein, and energy.",
+        "existingVolumeColumnMovedFirst": true,
+        "source": {
+          "chapter": 11,
+          "printedPages": [
+            150,
+            150
+          ],
+          "pdfPages": [
+            158,
+            158
+          ]
+        },
+        "allColumnTextPreserved": true,
+        "wholeFigureVerified": false
+      }
     },
     {
       "slug": "micronutrient-balance",
@@ -3636,7 +4055,8 @@
       "componentUnchanged": true,
       "desktopMobileRenderInspected": true,
       "scope": "Layout/function reviewed; all retained clinical caption claims await complete provenance reconciliation.",
-      "sourceBoundary": "Book supports salts, solubility precautions and attributed vitamin/trace groups; retained shortage guidance, neurotoxicity, selected high-loss supplementation and detailed product-specific claims require complete provenance reconciliation."
+      "sourceBoundary": "Book supports salts, solubility precautions and attributed vitamin/trace groups; retained shortage guidance, neurotoxicity, selected high-loss supplementation and detailed product-specific claims require complete provenance reconciliation.",
+      "individualClaimBoundary": "Kidney/salt/vitamin/trace examples partly supported; complete daily age-specific provision, loss/medication/shortage strategies remain open."
     },
     {
       "slug": "compounding-safety",
@@ -3645,7 +4065,8 @@
       "componentUnchanged": true,
       "desktopMobileRenderInspected": true,
       "scope": "Layout/function reviewed; all retained clinical caption claims await complete provenance reconciliation.",
-      "sourceBoundary": "Book supports admixture types, high-alert sterile preparation and incompatibility principles; filter and old USP categories conflict with retained modern claims. Current process and emulsion claims require complete provenance reconciliation."
+      "sourceBoundary": "Book supports admixture types, high-alert sterile preparation and incompatibility principles; filter and old USP categories conflict with retained modern claims. Current process and emulsion claims require complete provenance reconciliation.",
+      "individualClaimBoundary": "Measured quantities, particles, leaks and labels partly supported; full independent review/emulsion/oiling process and all-PN filter claim remain open."
     },
     {
       "slug": "monitoring-transition",
@@ -3654,7 +4075,8 @@
       "componentUnchanged": true,
       "desktopMobileRenderInspected": true,
       "scope": "Layout/function reviewed; all retained clinical caption claims await complete provenance reconciliation.",
-      "sourceBoundary": "Book supports glucose/refeeding concerns and its attributed insulin example; retained all-phase monitoring, universal taper exception, home PN, cycling and long-term complication claims require complete provenance reconciliation."
+      "sourceBoundary": "Book supports glucose/refeeding concerns and its attributed insulin example; retained all-phase monitoring, universal taper exception, home PN, cycling and long-term complication claims require complete provenance reconciliation.",
+      "individualClaimBoundary": "Glucose/phosphate, rate/time and GI transition supported; complete electrolyte/organ/phase surveillance remains open."
     }
   ],
   "broaderReview": {
@@ -3665,8 +4087,7 @@
         "correctModuleRemediationLinks": 5,
         "preservedCumulativeRuntime": true,
         "clinicalSourcePendingIds": [
-          "parenteral-nutrition-034",
-          "parenteral-nutrition-109"
+          "parenteral-nutrition-034"
         ],
         "pageErrors": []
       },
@@ -3676,8 +4097,7 @@
         "correctModuleRemediationLinks": 5,
         "preservedCumulativeRuntime": true,
         "clinicalSourcePendingIds": [
-          "parenteral-nutrition-034",
-          "parenteral-nutrition-109"
+          "parenteral-nutrition-034"
         ],
         "pageErrors": []
       }
@@ -3685,16 +4105,16 @@
     "technicalDerivationConsistent": true,
     "allFiveClinicallyVerified": false,
     "reviewingItemIds": [
-      "parenteral-nutrition-034",
-      "parenteral-nutrition-109"
+      "parenteral-nutrition-034"
     ],
     "verifiedItemIds": [
       "parenteral-nutrition-001",
-      "parenteral-nutrition-076",
-      "parenteral-nutrition-book-033"
+      "parenteral-nutrition-077",
+      "parenteral-nutrition-book-001",
+      "parenteral-nutrition-book-034"
     ],
     "currentSelectionChangedWithBankLength": true,
-    "standaloneAndSupplementalCoverage": "Prior scoped search evidence retained; broader file bytes unchanged by this unit. No whole broader-bank closure.",
+    "standaloneAndSupplementalCoverage": "Prior scoped search retained; broader source files unchanged. No full broader-bank closure.",
     "legacySeparateStudySlug": "enteral-parenteral-nutrition",
     "relatedCurriculumOpen": [
       "enteral-nutrition",
@@ -3764,7 +4184,7 @@
   "validation": {
     "focusedAssessmentAudit": {
       "modules": 1,
-      "questions": 133,
+      "questions": 134,
       "hardErrors": [],
       "sourceGaps": [],
       "sizeAdvisories": [],
@@ -3773,7 +4193,7 @@
         {
           "module": "parenteral-nutrition",
           "lessons": 6,
-          "questions": 133,
+          "questions": 134,
           "minimumLessonCoverage": 12
         }
       ]
@@ -3781,32 +4201,51 @@
     "structuralPreservation": {
       "passed": true,
       "lessons": 6,
-      "sections": 45,
-      "newSections": 3,
-      "all42PriorSectionsPreserved": true,
-      "bankItems": 133,
-      "newOriginalItems": 3,
+      "sections": 47,
+      "newSections": 2,
+      "all45PriorSectionsPreserved": true,
+      "bankItems": 134,
+      "newOriginalItems": 1,
       "priorUnchangedItems": 129,
-      "onePriorPromptClarified": true,
+      "revisedPriorItems": 4,
       "allIdsKeysAnchorsPreserved": true,
-      "checksFiguresMetadataPreserved": true,
       "historicalEightExternalReferencesPreserved": true,
       "cumulativeIds": [
         "cumulative-parenteral-nutrition-parenteral-nutrition-001",
         "cumulative-parenteral-nutrition-parenteral-nutrition-034",
-        "cumulative-parenteral-nutrition-parenteral-nutrition-076",
-        "cumulative-parenteral-nutrition-parenteral-nutrition-109",
-        "cumulative-parenteral-nutrition-parenteral-nutrition-book-033"
+        "cumulative-parenteral-nutrition-parenteral-nutrition-077",
+        "cumulative-parenteral-nutrition-parenteral-nutrition-book-001",
+        "cumulative-parenteral-nutrition-parenteral-nutrition-book-034"
       ],
-      "all133PromptsIdsGloballyUnique": true,
-      "wholeModuleSourceVerified": false
+      "all134PromptsIdsGloballyUnique": true,
+      "wholeModuleSourceVerified": false,
+      "checksVisualIdsMetadataPreserved": true
+    },
+    "figurePreservation": {
+      "passed": true,
+      "fiveOtherDiagramsUnchanged": true,
+      "macronutrientDiagramOnlyTitleAndColumnOrderChanged": true,
+      "columnDataPreserved": true,
+      "renderComponentCssAndAriaSemanticsPreserved": true,
+      "source": {
+        "chapter": 11,
+        "printedPages": [
+          150,
+          150
+        ],
+        "pdfPages": [
+          158,
+          158
+        ]
+      },
+      "wholeFigureClinicalSourceVerified": false
     },
     "productionBuild": {
       "command": "next build --webpack",
       "exitCode": 0,
       "staticPages": 567,
-      "candidate": "HEAD plus exact two changed clinical files",
-      "finalBuildIncludesOneDayPromptClarification": true
+      "candidate": "HEAD plus exact three changed clinical files",
+      "includesFinalFluidFirstDiagram": true
     },
     "browser": [
       {
@@ -3815,10 +4254,10 @@
         "lessons": 6,
         "figures": 6,
         "checks": 6,
-        "all133BankItemsRuntimeGraded": true,
+        "all134BankItemsRuntimeGraded": true,
         "attempts": 14,
         "previousAttemptExclusion": true,
-        "all45TeachingSectionsRendered": true,
+        "all47TeachingSectionsRendered": true,
         "allSixEmbeddedChecksRuntimeGraded": true,
         "incorrectFeedbackRemediation": true,
         "testOnlyControlledShuffle": true,
@@ -3834,10 +4273,10 @@
         "lessons": 6,
         "figures": 6,
         "checks": 6,
-        "all133BankItemsRuntimeGraded": true,
+        "all134BankItemsRuntimeGraded": true,
         "attempts": 14,
         "previousAttemptExclusion": true,
-        "all45TeachingSectionsRendered": true,
+        "all47TeachingSectionsRendered": true,
         "allSixEmbeddedChecksRuntimeGraded": true,
         "incorrectFeedbackRemediation": true,
         "testOnlyControlledShuffle": true,
@@ -3860,49 +4299,59 @@
       }
     ],
     "visualInspection": {
-      "threeNewSectionsDesktopMobile": true,
-      "sixPreservedFiguresRendered": true,
-      "unchangedFigureSourceAndPreviousSixFigureDesktopMobileInspectionReused": true,
-      "currentCompoundingMobileAndMonitoringDesktopFullFiguresInspectedAgain": true,
+      "twoNewSectionsDesktopMobile": true,
+      "changedMacronutrientDiagramDesktopMobile": true,
+      "allSixFiguresRendered": true,
+      "fiveOtherFigureSourcesUnchangedAndPreviousPixelInspectionReused": true,
       "imagesPrivateOutsideGit": true,
-      "elementCaptureOnly": "Animations disabled and contents rail hidden for element inspection; normal navigation separately tested."
+      "elementCaptureOnly": "Animations disabled and contents rail hidden for element inspection; normal runtime separately tested. Existing floating tool can overlap viewport-edge crops; scrolling makes complete text readable."
     },
     "independentArithmetic": {
-      "newArithmeticChecks": 0,
-      "prior43NumericalBankObjectsUnchanged": true,
-      "priorProof": "parenteral-nutrition-book-expansion-review.json",
-      "embedded850KcalReusesQuestion066Proof": true
+      "passed": true,
+      "items": [
+        {
+          "id": "parenteral-nutrition-107",
+          "suppliedEqualDailyAmount": 1,
+          "oldHours": 24,
+          "newHours": 12,
+          "newToOldHourlyRatio": "2",
+          "method": "Independent Decimal equal-daily-amount/time calculation",
+          "scope": "Rate/time implication only; no treatment protocol"
+        }
+      ],
+      "newDistinctChecks": 1,
+      "runningDistinctChecks": 635,
+      "separateSourceExampleChecks": 98,
+      "prior43NumericalQuestionObjectsUnchanged": true
     },
-    "all133PromptsIdsGloballyUnique": true
+    "all134PromptsIdsGloballyUnique": true
   },
   "runningCalculations": {
-    "distinctOriginalOrRetainedChecks": 634,
+    "distinctOriginalOrRetainedChecks": 635,
     "separateSourceExampleChecks": 98,
-    "addedThisUnit": 0,
+    "addedThisUnit": 1,
+    "newCheckId": "parenteral-nutrition-107",
+    "prior43NumericalBankObjectsUnchanged": true,
     "priorReverificationNotRecounted": true
   },
   "contentHashes": {
-    "src/data/modules/parenteralNutrition.js": "991fd2bd1374709fbb49833505983ff070586cee9146a62996c818a758800415",
-    "src/data/questionBanks/parenteralNutrition.js": "2677161fabfe2bf901d0014677fc187968ff9af6943038d4c097200c4c6fc593"
+    "src/data/modules/parenteralNutrition.js": "98b9b1b117ae60bf896358e59669d01df2a6c52ca682c00143c8fed0b1b7b34a",
+    "src/data/questionBanks/parenteralNutrition.js": "7e60f8564758480dbdb85fd82d58e30d6371deaa41df1016c2b49032f0251b04",
+    "src/components/learn/ParenteralNutritionVisual.jsx": "b78f82de753af9f575015b882b85e31382edbb8c2e29fdcf66b1aec04ea51070"
   },
   "release": {
     "branch": "audit/rxprep-content-2026-09-24",
-    "commit": "1e1550274ace78b6c828f97b71bb86c401485958",
-    "push": "verified by exact ls-remote hash; whole adult PN remains reviewing",
-    "production": "not verified",
-    "receipt": "sequential-release-pn-retained-source-2026-10-01.json"
+    "commit": null,
+    "push": "pending",
+    "production": "not verified"
   },
   "limits": [
     "Whole adult PN and Chapter 11 remain reviewing.",
-    "Source verified 88/133 does not establish the other 45 items, all retained paragraphs or figures.",
-    "Two retained filter/USP discrepancies await explicit user source exception; no outside reference opened.",
-    "Checklist completed count remains 14; entry 15 remains reviewing.",
-    "Search absence and successful runtime grading are not clinical provenance proof."
-  ],
-  "subsequentScopedReviews": [
-    {
-      "evidence": "parenteral-nutrition-fluid-label-review.json",
-      "scope": "134-item follow-up; historical133-item snapshot, hashes and release retained."
-    }
+    "93/134 source-verified bank items; other41 and23 retained teaching sections require complete provenance.",
+    "All six figures retain some unresolved clinical claims despite scoped diagram correction.",
+    "Four/six embedded and four/five current cumulative items source-verified; runtime grading does not establish other claims.",
+    "Expanded authorization question asks to use the existing official PN clinical/safety sources; explicit answer still pending, no outside reference opened.",
+    "Checklist count14 and entry15 reviewing.",
+    "Negative searches are not proof of source absence."
   ]
 }
