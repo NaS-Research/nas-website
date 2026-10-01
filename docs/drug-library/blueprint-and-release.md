@@ -2,7 +2,7 @@
 
 Task: NaS-Website-Drug Library. Inventory: **300**, including the immutable APAP reference; **299** migrations are tracked in 30 batches (29 of ten, then nine).
 
-This is an active, incomplete work record. Thirteen batches (130 migrated profiles) have exact GitHub/Netlify production publication receipts and passed hosted checks. Batch13's degludec mobile table was corrected in its unpublished candidate with exact clinical content independently checked; corrected production publication is verified. Batch14 includes six data-only formatting revisions to earlier profiles, with prior editions preserved. Candidate retrieval, clinical source review, schema validation, build/render checks, remote push, and verified publication remain distinct states in the completion ledger. The remaining inventory is still being authored and reviewed; completion is never inferred from a candidate label or a passing schema.
+This is an active, incomplete work record. 14 batches (140 migrated profiles) have exact GitHub/Netlify production publication receipts and passed hosted checks. Batch15 is source-reviewed and undergoing integration/release QA. Candidate retrieval, clinical source review, schema validation, build/render checks, remote push, and verified publication remain distinct states in the completion ledger. All prior formatting editions are preserved. The remaining inventory is still being authored and reviewed; completion is never inferred from a candidate label or a passing schema.
 
 Earlier batch notes are retained as history; the completion ledger and production-verification entries record the current state.
 
@@ -140,3 +140,63 @@ Insulin degludec, cyanocobalamin, hydralazine, adalimumab, azelastine, sitaglipt
 ### Batch13 production verification
 
 Ten profiles published through PR16, exact authoring correction `63e1c482f2a62917b9aa0edd5d3859e8f5696edd`, production merge `aadcb57ea9377970077ae21ea8b55a2f7e7a62c3`, Netlify `6abec3fa6f735c0008875fe2`, published October1,2026 at20:36:43.886UTC. Corrected exact preview and production each passed131 hosted HTML routes and20 strict desktop/mobile browser checks. Original unpublished candidate and corrected visual/source evidence are preserved externally.
+
+
+### Batch1 production verification
+
+Profiles: atorvastatin, levothyroxine, metformin, amlodipine, lisinopril, albuterol, losartan, metoprolol, rosuvastatin, omeprazole. Production commit `5017b765e18c19c88c19659307397e86a6ca0f73`, Netlify `6abea59e8be9bf0008b69052`, published `2026-10-01T18:27:16.653Z` via https://github.com/NaS-Research/nas-website/pull/11. Exact preview and production HTML and strict desktop/mobile browser checks passed; receipts and route/browser evidence are recorded in the ledger and archived externally.
+
+
+### Batch2 production verification
+
+Profiles: gabapentin, sertraline, escitalopram, semaglutide, amphetamine-dextroamphetamine, pantoprazole, bupropion, hydrochlorothiazide, fluoxetine, trazodone. Production commit `5017b765e18c19c88c19659307397e86a6ca0f73`, Netlify `6abea59e8be9bf0008b69052`, published `2026-10-01T18:27:16.653Z` via https://github.com/NaS-Research/nas-website/pull/11. Exact preview and production HTML and strict desktop/mobile browser checks passed; receipts and route/browser evidence are recorded in the ledger and archived externally.
+
+
+### Batch3 production verification
+
+Profiles: montelukast, amoxicillin, fluticasone, tamsulosin, apixaban, simvastatin, insulin-glargine, empagliflozin, furosemide, meloxicam. Production commit `5017b765e18c19c88c19659307397e86a6ca0f73`, Netlify `6abea59e8be9bf0008b69052`, published `2026-10-01T18:27:16.653Z` via https://github.com/NaS-Research/nas-website/pull/11. Exact preview and production HTML and strict desktop/mobile browser checks passed; receipts and route/browser evidence are recorded in the ledger and archived externally.
+
+
+### Batch4 production verification
+
+Profiles: hydrocodone-acetaminophen, tirzepatide, methylphenidate, duloxetine, prednisone, carvedilol, famotidine, ibuprofen, buspirone, venlafaxine. Production commit `5017b765e18c19c88c19659307397e86a6ca0f73`, Netlify `6abea59e8be9bf0008b69052`, published `2026-10-01T18:27:16.653Z` via https://github.com/NaS-Research/nas-website/pull/11. Exact preview and production HTML and strict desktop/mobile browser checks passed; receipts and route/browser evidence are recorded in the ledger and archived externally.
+
+
+### Batch5 production verification
+
+Profiles: tramadol, potassium-chloride, hydroxyzine, allopurinol, clopidogrel, ergocalciferol, cetirizine, ondansetron, cyclobenzaprine, spironolactone. Production commit `5017b765e18c19c88c19659307397e86a6ca0f73`, Netlify `6abea59e8be9bf0008b69052`, published `2026-10-01T18:27:16.653Z` via https://github.com/NaS-Research/nas-website/pull/11. Exact preview and production HTML and strict desktop/mobile browser checks passed; receipts and route/browser evidence are recorded in the ledger and archived externally.
+
+
+### Batch6 production verification
+
+Profiles: oxycodone, estradiol, aspirin, glipizide, zolpidem, lamotrigine, alprazolam, citalopram, pregabalin, cholecalciferol. Production commit `5017b765e18c19c88c19659307397e86a6ca0f73`, Netlify `6abea59e8be9bf0008b69052`, published `2026-10-01T18:27:16.653Z` via https://github.com/NaS-Research/nas-website/pull/11. Exact preview and production HTML and strict desktop/mobile browser checks passed; receipts and route/browser evidence are recorded in the ledger and archived externally.
+
+
+### Batch7 production verification
+
+Profiles: clonazepam, azithromycin, pravastatin, valsartan, ezetimibe, diclofenac, insulin-lispro, ethinyl-estradiol-norethindrone, propranolol, latanoprost. Production commit `5017b765e18c19c88c19659307397e86a6ca0f73`, Netlify `6abea59e8be9bf0008b69052`, published `2026-10-01T18:27:16.653Z` via https://github.com/NaS-Research/nas-website/pull/11. Exact preview and production HTML and strict desktop/mobile browser checks passed; receipts and route/browser evidence are recorded in the ledger and archived externally.
+
+
+### Batch8 production verification
+
+Profiles: atenolol, lisdexamfetamine, doxycycline, amoxicillin-clavulanate, dulaglutide, hydrochlorothiazide-lisinopril, lorazepam, fluticasone-salmeterol, insulin-aspart, celecoxib. Production commit `5017b765e18c19c88c19659307397e86a6ca0f73`, Netlify `6abea59e8be9bf0008b69052`, published `2026-10-01T18:27:16.653Z` via https://github.com/NaS-Research/nas-website/pull/11. Exact preview and production HTML and strict desktop/mobile browser checks passed; receipts and route/browser evidence are recorded in the ledger and archived externally.
+
+
+### Batch9 production verification
+
+Profiles: finasteride, quetiapine, clonidine, aripiprazole, cephalexin, alendronate, topiramate, tizanidine, dapagliflozin, oxycodone-acetaminophen. Production commit `5017b765e18c19c88c19659307397e86a6ca0f73`, Netlify `6abea59e8be9bf0008b69052`, published `2026-10-01T18:27:16.653Z` via https://github.com/NaS-Research/nas-website/pull/11. Exact preview and production HTML and strict desktop/mobile browser checks passed; receipts and route/browser evidence are recorded in the ledger and archived externally.
+
+
+### Batch10 production verification
+
+Profiles: hydrochlorothiazide-losartan, olmesartan, testosterone, amitriptyline, folic-acid, rivaroxaban, fenofibrate, triamcinolone, paroxetine, ferrous-sulfate. Production commit `4573694aca725d2ec5632d85ca6f56a59e0734ab`, Netlify `6abeaa3f111d9d0008558a97`, published `2026-10-01T18:46:50.770Z` via https://github.com/NaS-Research/nas-website/pull/13. Exact preview and production HTML and strict desktop/mobile browser checks passed; receipts and route/browser evidence are recorded in the ledger and archived externally.
+
+
+### Batch12 production verification
+
+Profiles: naproxen, sumatriptan, prednisolone, esomeprazole, mirtazapine, levetiracetam, norethindrone, tadalafil, nifedipine, progesterone. Production commit `0de6716160af424544fbff6286137705a98898d4`, Netlify `6abeb8a65eaef70008af9199`, published `2026-10-01T19:48:26.218Z` via https://github.com/NaS-Research/nas-website/pull/15. Exact preview and production HTML and strict desktop/mobile browser checks passed; receipts and route/browser evidence are recorded in the ledger and archived externally.
+
+
+### Batch14 production verification
+
+Profiles: ketoconazole, irbesartan, hydroxychloroquine, sulfamethoxazole-trimethoprim, benzonatate, nitrofurantoin, isosorbide, methylprednisolone, hydrochlorothiazide-triamterene, levocetirizine. Production commit `118521b1f57a2c9ed79cc57567fd93d9e5c18510`, Netlify `6abec5e15eaef70008b3b6d6`, published `2026-10-01T20:44:38.738Z` via https://github.com/NaS-Research/nas-website/pull/17. Exact preview and production HTML and strict desktop/mobile browser checks passed; receipts and route/browser evidence are recorded in the ledger and archived externally.

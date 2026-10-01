@@ -1,0 +1,616 @@
+{
+  "slug": "donepezil",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "An acetylcholinesterase inhibitor for dementia of the Alzheimer’s type. Selected oral labels and the archived U.S. weekly-patch label have different doses, administration and storage; patch marketing ended in the selected record and current availability requires verification.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Aricept tablets and ODT · Eisai full U.S. prescribing information",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical PI and patient leaflet revised December 2021; latest returned SPL v33 effective December 30, 2021; API publication June 30, 2026. Publication is not a new clinical revision. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=98e451e1-e4d7-4439-a675-c5457ba20975"
+    },
+    {
+      "id": "odt",
+      "title": "Donepezil tablets and ODT · Unichem full prescribing information",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical leaflet/footer 06-R-01/2023; SPL v12 effective December 19, 2025; API publication December 22, 2025. Selected product supplies only 5/10 mg tablets and ODT despite inherited discussion of 23 mg studies. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1a8906ce-96dc-4bc8-81c1-5db67a187aac"
+    },
+    {
+      "id": "patch",
+      "title": "Adlarity · archived Corium full prescribing information and IFU",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical PI/IFU March 2022; returned official HTML SPL v4 effective December 19, 2025. Selected packaging record has marketing end September 19, 2025. Raw XML endpoint returned 404; complete public official HTML archived/read October 1, 2026. Historical label instructions, no current-stock or withdrawal-of-approval inference.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1cb44c65-00e8-4b5c-99c2-ad15173115a0"
+    }
+  ],
+  "sourceEvidence": {
+    "label": {
+      "splVersion": "33",
+      "effectiveTime": "20211230",
+      "apiPublishedDate": "Jun 30, 2026",
+      "localEvidence": "/tmp/nas-drug-sources/aricept.xml",
+      "sha256": "1eee0273df5fdeaeb1b401ae972d0c68179815e6fe58f97683b10b0ae92e5ed4",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/98e451e1-e4d7-4439-a675-c5457ba20975.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=98e451e1-e4d7-4439-a675-c5457ba20975",
+      "revision": "Clinical PI and patient leaflet revised December 2021; latest returned SPL v33 effective December 30, 2021; API publication June 30, 2026. Publication is not a new clinical revision. Checked October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "Full supporting public primary label sections read; no paywall access"
+    },
+    "odt": {
+      "splVersion": "12",
+      "effectiveTime": "20251219",
+      "apiPublishedDate": "Dec 22, 2025",
+      "localEvidence": "/tmp/nas-drug-sources/done-odt.xml",
+      "sha256": "be1935cbc4949049845540cce38a43cace612ce96a545910789ffbabc1ad32d3",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/1a8906ce-96dc-4bc8-81c1-5db67a187aac.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1a8906ce-96dc-4bc8-81c1-5db67a187aac",
+      "revision": "Clinical leaflet/footer 06-R-01/2023; SPL v12 effective December 19, 2025; API publication December 22, 2025. Selected product supplies only 5/10 mg tablets and ODT despite inherited discussion of 23 mg studies. Checked October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "Full supporting public primary label sections read; no paywall access"
+    },
+    "patch": {
+      "splVersion": "4",
+      "effectiveTime": "20251219",
+      "apiPublishedDate": "Unavailable: raw current XML endpoint404; not invented",
+      "localEvidence": "/tmp/nas-drug-sources/adlarity.html",
+      "sha256": "85d50cf29ee7fcb154484ee95e0a42a9c286bedbc1025a0e3d3876bf4dc41a30",
+      "recordMarketingEnd": "2025-09-19",
+      "clinicalRevision": "2022-03",
+      "archiveMethod": "Complete public official HTML read; historical label, no stock inference",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1cb44c65-00e8-4b5c-99c2-ad15173115a0",
+      "revision": "Clinical PI/IFU March 2022; returned official HTML SPL v4 effective December 19, 2025. Selected packaging record has marketing end September 19, 2025. Raw XML endpoint returned 404; complete public official HTML archived/read October 1, 2026. Historical label instructions, no current-stock or withdrawal-of-approval inference.",
+      "checked": "2026-10-01",
+      "access": "Full supporting public primary label sections read; no paywall access"
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Labeled indication and therapeutic limits",
+      "sourceIds": [
+        "label",
+        "odt",
+        "patch"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "1;12.1;Patient information"
+        ],
+        "odt": [
+          "1;12.1;Patient information"
+        ],
+        "patch": [
+          "1;12.1"
+        ]
+      },
+      "claims": [
+        "Selected oral and archived transdermal labels indicate dementia of the Alzheimer’s type, including mild, moderate and severe disease. Donepezil can help cognition and daily functioning, but the labels provide no evidence that it changes the underlying dementing process or cures Alzheimer’s disease. Other dementia diagnoses, preventive use and pediatric treatment are not inferred from this indication."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Oral tablet and ODT regimens",
+      "sourceIds": [
+        "label",
+        "odt"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1–2.3;Patient information missed/restart"
+        ],
+        "odt": [
+          "2.1–2.3;Patient information missed/restart"
+        ]
+      },
+      "claims": [
+        [
+          "Starting dose",
+          "5 mg once daily in the evening before retiring, with or without food."
+        ],
+        [
+          "Mild–moderate disease",
+          "Maximum 10 mg daily; increase from 5 mg only after 4–6 weeks."
+        ],
+        [
+          "Moderate–severe disease",
+          "Aricept oral maximum 23 mg daily; first use 5 mg for 4–6 weeks before 10 mg, then 10 mg for at least 3 months before 23 mg."
+        ],
+        [
+          "23 mg tablet",
+          "Swallow whole; do not split, crush or chew. Do not infer a 23 mg ODT or substitute several ODTs for this product."
+        ],
+        [
+          "ODT 5/10 mg",
+          "Allow to dissolve on the tongue, then drink water."
+        ],
+        [
+          "Missed oral dose",
+          "Wait for next scheduled dose; do not double. If missed for ≥7 days, ask the prescriber before restarting."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Archived Adlarity weekly regimen",
+      "sourceIds": [
+        "patch"
+      ],
+      "sourceSectionsById": {
+        "patch": [
+          "2.1–2.4;IFU;17"
+        ]
+      },
+      "claims": [
+        "The selected patch record has a marketing-end date in 2025; verify current product/status and package instructions before use. Its historical label starts one 5 mg/day system, replaced every 7 days, with increase to one 10 mg/day system after 4–6 weeks. Oral 5 mg daily may switch to a 5 mg/day system; after ≥4–6 weeks of oral 5 mg it may switch directly to 10 mg/day. Oral 10 mg daily may switch to 10 mg/day. Apply the first system with the last oral dose. No labeled switch from oral 23 mg or multiple-patch regimen is supplied."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Archived patch application and missed system",
+      "sourceIds": [
+        "patch"
+      ],
+      "sourceSectionsById": {
+        "patch": [
+          "2.1–2.4;IFU;17"
+        ]
+      },
+      "claims": [
+        "Wear only 1 system, remove the old one before applying another. Back away from spine is preferred; upper buttock or outer thigh may be used. Apply to clean, dry, healthy intact skin with little hair; avoid lotions, irritated/cut skin, shaving and tight-clothing friction. Rotate the exact site for ≥14 days after removal. Let the refrigerated pouch reach room temperature without external heat, apply within 24 hours of refrigeration removal, and press firmly for 30 seconds. Avoid prolonged external heat. If missed or detached, apply a new system immediately and replace it 7 days later; ask about retitration after interruption. Never cut a system."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "label",
+        "odt",
+        "patch"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "4;5.1–5.8;6.1–6.2;10"
+        ],
+        "odt": [
+          "4;5.1–5.8;6.1–6.2;10"
+        ],
+        "patch": [
+          "4;5.1–5.8;6;10;Patient information"
+        ]
+      },
+      "claims": [
+        "Vagotonic effects can cause bradycardia, heart block or syncope with or without preexisting conduction disease. Promptly assess fainting or concerning rhythm symptoms.",
+        "Nausea, vomiting and diarrhea occur more often with higher oral doses; observe closely at initiation and increases. Monitor appetite/weight, particularly at oral 23 mg and in patients under 55 kg.",
+        "Increased gastric acid can raise ulcer/bleeding concerns, especially with ulcer history or NSAIDs. Assess blood/coffee-ground vomit or black tarry stools urgently.",
+        "Cholinergic effects may cause bladder outflow obstruction or seizures; seizure may also reflect Alzheimer’s disease. Use caution with asthma or obstructive pulmonary disease. Tell the anesthesia team because succinylcholine-type relaxation may be exaggerated.",
+        "The archived patch can cause skin reactions. Spreading/intense redness, swelling, papules or blisters, or failure to improve within 48 hours after removal suggests allergic contact dermatitis; stop and obtain assessment. Avoid heat exposure that increases absorption."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "label",
+        "odt",
+        "patch"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "4;5.1–5.8;6.1–6.2;10"
+        ],
+        "odt": [
+          "4;5.1–5.8;6.1–6.2;10"
+        ],
+        "patch": [
+          "4;5.1–5.8;6;10;Patient information"
+        ]
+      },
+      "claims": [
+        "Known hypersensitivity to donepezil or piperidine derivatives. The archived Adlarity label additionally contraindicates a history of allergic contact dermatitis with Adlarity. Formulation-specific excipient allergy also needs exact-package assessment."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "sourceIds": [
+        "label",
+        "odt",
+        "patch"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "4;5.1–5.8;6.1–6.2;10"
+        ],
+        "odt": [
+          "4;5.1–5.8;6.1–6.2;10"
+        ],
+        "patch": [
+          "4;5.1–5.8;6;10;Patient information"
+        ]
+      },
+      "claims": [
+        "The selected oral and archived patch labels have no boxed warning. Serious bradycardia, GI bleeding, anesthesia interaction and formulation-specific skin risks still apply."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "sourceIds": [
+        "label",
+        "odt",
+        "patch"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "4;5.1–5.8;6.1–6.2;10"
+        ],
+        "odt": [
+          "4;5.1–5.8;6.1–6.2;10"
+        ],
+        "patch": [
+          "4;5.1–5.8;6;10;Patient information"
+        ]
+      },
+      "claims": [
+        "Common oral effects include nausea, diarrhea, insomnia, vomiting, cramps, fatigue and appetite loss. Patch studies additionally reported local itching/dermatitis and headache. Postmarketing reports include QTc prolongation/torsade de pointes, heart block, seizures, severe muscle injury and other reactions; incidence or causality cannot reliably be assigned. Overdose can produce cholinergic crisis with vomiting, salivation, sweating, slow pulse, hypotension, breathing suppression and convulsions. Obtain immediate emergency/Poison Help assessment; remove any patch. Professional supportive care and atropine may be used; dialysis removal is unknown and no home antidote protocol is supplied."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Pharmacodynamic combinations",
+      "sourceIds": [
+        "label",
+        "odt",
+        "patch"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "7.1–7.2;5.4;12.3 interaction studies"
+        ],
+        "odt": [
+          "7.1–7.2;5.4;12.3 interaction studies"
+        ],
+        "patch": [
+          "7.1–7.2;5.5;12.3"
+        ]
+      },
+      "claims": [
+        "Donepezil can interfere with anticholinergic medicines. Cholinergic agonists, other cholinesterase inhibitors and succinylcholine/similar neuromuscular blockers can have additive or synergistic effects. NSAIDs raise the GI-bleeding monitoring concern. Discuss these combinations and anesthesia plans before changes."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Metabolism and evidence limits",
+      "sourceIds": [
+        "label",
+        "odt",
+        "patch"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "7.1–7.2;5.4;12.3 interaction studies"
+        ],
+        "odt": [
+          "7.1–7.2;5.4;12.3 interaction studies"
+        ],
+        "patch": [
+          "7.1–7.2;5.5;12.3"
+        ]
+      },
+      "claims": [
+        "CYP2D6 and CYP3A4 contribute to metabolism. CYP2D6 inhibitors increased exposure in population analyses; ketoconazole increased oral donepezil concentrations in a small study, with uncertain clinical relevance. CYP3A inducers can increase elimination. These findings support individualized interaction/tolerance review, not a universal dose-reduction formula. Studied lack of PK effects with selected medicines does not establish absence of all interactions."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal, hepatic, age and weight",
+      "sourceIds": [
+        "label",
+        "odt",
+        "patch"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8.1–8.6;12.3 impairment studies"
+        ],
+        "odt": [
+          "8.1–8.6;12.3 impairment studies"
+        ],
+        "patch": [
+          "8.1–8.5;12.3"
+        ]
+      },
+      "claims": [
+        "Selected labels give no routine renal/hepatic dose-adjustment schedule. In small studies, clearance was unchanged with moderate–severe renal impairment and decreased about 20% in stable alcoholic cirrhosis; these do not prove safety in every advanced disease state. Older adults constituted much of the oral trial population. At oral 23 mg, patients under 55 kg had more GI effects, weight loss and withdrawals; no invented weight-based dose formula is supplied."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy, lactation and pediatrics",
+      "sourceIds": [
+        "label",
+        "odt",
+        "patch"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8.1–8.6;12.3 impairment studies"
+        ],
+        "odt": [
+          "8.1–8.6;12.3 impairment studies"
+        ],
+        "patch": [
+          "8.1–8.5;12.3"
+        ]
+      },
+      "claims": [
+        "Adequate pregnancy data are lacking and animal studies showed developmental harm during late pregnancy/lactation. Human milk presence, infant effects and milk-production data are unavailable; weigh breastfeeding benefits, maternal need and possible infant risks. Pediatric safety/effectiveness are unestablished. Neither oral nor patch adult dosing is a pediatric algorithm."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "sourceIds": [
+        "label",
+        "odt",
+        "patch"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "12.1;12.3"
+        ],
+        "odt": [
+          "12.1;12.3"
+        ],
+        "patch": [
+          "12.1;12.3"
+        ]
+      },
+      "claims": [
+        "Reversible acetylcholinesterase inhibition raises acetylcholine availability and supports cholinergic neurotransmission. The proposed symptomatic action does not establish alteration of the underlying Alzheimer’s disease process."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Formulation-specific pharmacokinetics",
+      "sourceIds": [
+        "label",
+        "odt",
+        "patch"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "12.1;12.3"
+        ],
+        "odt": [
+          "12.1;12.3"
+        ],
+        "patch": [
+          "12.1;12.3"
+        ]
+      },
+      "claims": [
+        [
+          "Oral timing",
+          "Elimination half-life about 70 hours; steady state within about 15 days. Oral 10 mg peaks around 3 hours, 23 mg around 8 hours."
+        ],
+        [
+          "ODT",
+          "Selected 5/10 mg ODT and corresponding tablets are bioequivalent; this does not create a 23 mg ODT product."
+        ],
+        [
+          "Metabolism / elimination",
+          "CYP2D6 and CYP3A4 plus glucuronidation; intact drug and metabolites recovered in urine. Approximately 96% protein-bound."
+        ],
+        [
+          "Archived patch",
+          "Weekly 10 mg/day exposure comparable to oral 10 mg/day at steady state in a study; patch mean half-life about 91 hours, steady state within 22 days. Heat/site affects exposure; no oral peak-time transplant."
+        ]
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "sourceIds": [
+        "label",
+        "odt",
+        "patch"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "5;17;Patient information"
+        ],
+        "odt": [
+          "5;17;Patient information"
+        ],
+        "patch": [
+          "5;17;Patient information;IFU"
+        ]
+      },
+      "claims": [
+        "Follow functional/cognitive response and adherence with the patient/caregiver, appetite/weight, GI symptoms or bleeding, pulse/syncope, respiratory symptoms, urinary obstruction and seizures. Review other medicines and surgery plans. With a patch, check skin, correct site, change date and absence of an old system. These labels do not establish a universal ECG/laboratory interval or automatic continuation/deprescribing algorithm."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Patient and caregiver counseling",
+      "sourceIds": [
+        "label",
+        "odt",
+        "patch"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "5;17;Patient information"
+        ],
+        "odt": [
+          "5;17;Patient information"
+        ],
+        "patch": [
+          "5;17;Patient information;IFU"
+        ]
+      },
+      "claims": [
+        "Use only the prescribed formulation/dose, once daily for oral treatment; do not independently escalate or restart after a long gap. Oral 23 mg must remain intact; ODT dissolves followed by water. Report fainting, black stool/bloody vomit, severe vomiting, weight loss, breathing changes or seizures. Archived patch instructions require one system at a time, a weekly log, site rotation, heat avoidance and secure disposal; seek pharmacist verification of current availability before relying on that historical product."
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product · Aricept 5 mg",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;11;16;SPL NDA/pack"
+        ]
+      },
+      "claims": [
+        [
+          "Ingredient / route",
+          "Donepezil hydrochloride 5 mg · oral film-coated tablet."
+        ],
+        [
+          "Appearance / imprint",
+          "White round tablet; 5 and ARICEPT on opposite faces."
+        ],
+        [
+          "Labeler / example NDC",
+          "Eisai · 62856-245-30, bottle of 30."
+        ],
+        [
+          "U.S. status",
+          "Prescription NDA020690 product; no DEA schedule."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "label",
+        "odt",
+        "patch"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;11;16;SPL NDA/pack"
+        ],
+        "odt": [
+          "3;11;16;SPL NDA/pack"
+        ],
+        "patch": [
+          "3;11;16;SPL NDA/pack/status"
+        ]
+      },
+      "claims": [
+        [
+          "Aricept tablets",
+          "5 mg white, 10 mg yellow, 23 mg reddish; brand and strength debossed."
+        ],
+        [
+          "Selected Unichem ODT",
+          "5 mg white round (250 / U), 10 mg yellow round (251 / U); NDCs 29300-250-87 and 29300-251-87, 30-tablet blister cartons. No 23 mg ODT supplied."
+        ],
+        [
+          "Archived Adlarity",
+          "Weekly systems labeled 5 mg/day or 10 mg/day; the daily delivery rate is not total system drug content. Selected record has marketing end September 19, 2025; do not assume present supply or approval withdrawal."
+        ],
+        [
+          "Other products",
+          "Current manufacturer-specific tablets, ODT or combination products need their exact label. No automatic oral-to-patch interchange, 23 mg patch or pediatric approval is inferred."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "label",
+        "odt",
+        "patch"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;11;16;SPL NDA/pack"
+        ],
+        "odt": [
+          "3;11;16;SPL NDA/pack"
+        ],
+        "patch": [
+          "3;11;16;SPL NDA/pack/status"
+        ]
+      },
+      "claims": [
+        "Selected Aricept tablets/ODT: 15–30°C. Selected Unichem oral tablets/ODT: 20–25°C; retain original labeled packaging. Archived Adlarity: refrigerate 2–8°C, do not freeze, keep sealed until use and follow its warming/application instructions. Fold used systems adhesive-to-adhesive and discard in trash out of children’s/pets’ reach; do not flush, and wash hands after handling. Confirm current exact package storage and status."
+      ]
+    },
+    {
+      "section": "hero/essential",
+      "card": "Scope and essential safety",
+      "sourceIds": [
+        "label",
+        "odt",
+        "patch"
+      ],
+      "sourceSections": [
+        "1;2;4;5;16;SPL marketing status"
+      ],
+      "claims": [
+        "An acetylcholinesterase inhibitor for dementia of the Alzheimer’s type. Selected oral labels and the archived U.S. weekly-patch label have different doses, administration and storage; patch marketing ended in the selected record and current availability requires verification.",
+        "Donepezil can cause bradycardia or heart block even without known conduction disease. Monitor tolerance, weight and GI bleeding, especially after dose increases or with NSAIDs. A daily oral dose is not a weekly patch amount; follow the exact product and caregiver plan.",
+        [
+          "Therapeutic class",
+          "Reversible acetylcholinesterase inhibitor"
+        ],
+        [
+          "Representative formulation",
+          "Aricept 5 mg oral tablet"
+        ],
+        [
+          "Titration distinction",
+          "Oral 5 → 10 mg after 4–6 weeks · 23 mg only after ≥3 months at 10 mg"
+        ]
+      ]
+    }
+  ],
+  "exclusions": [
+    "Unverified other brands, salts, combinations, routes and pediatric/off-label regimens; exhaustive present-stock assertions; independent disease-preferred or emergency algorithms."
+  ],
+  "gaps": [
+    {
+      "material": false,
+      "topic": "Archived Adlarity status and access",
+      "finding": "OfficialHTML v4eff20251219 contains marketingend20250919, PI/IFU03/2022; XMLAPI404.",
+      "resolution": "Publicly marked historical product throughout, with pharmacist current-availability check. Exact historical full label instructions retained, no current supply or approval-withdrawal claim."
+    },
+    {
+      "material": false,
+      "topic": "Selected oral brand record date and generic23mg discussion",
+      "resolution": "Ariceptreturnedv33effective2021 APIpubJune2026 is not relabeled2026clinicalrevision. Unichemsupplied5/10mgtablets/ODT butPIinherited23mgstudies; actionable23mgregimen/product mapped toAricept, no23mgUnichemODTinferred."
+    },
+    {
+      "material": false,
+      "topic": "Severe impairment and reproductive data",
+      "resolution": "Small impairment studies are not universal safety claims; no fixed dose algorithm. Pregnancy/milk and pediatric evidence limits explicit. No preferred treatment rank or deprescribing algorithm."
+    },
+    {
+      "material": false,
+      "topic": "Patch totaldrug versusdeliveryrate",
+      "resolution": "Label3/16system5/10mgperday distinguished fromcontaineddrug; no97/194mgHClor88.4/176.7mgbase inventory value used as delivered daily dose."
+    }
+  ],
+  "materialErrors": [],
+  "validation": {
+    "schema": "Passed validateMonograph: 0 errors; exact 8 sections, Safety4/Product3 cards and 3 hero tuples.",
+    "renderedPage": "Pending parent integration QA; 390px intrinsic table-width verification required"
+  },
+  "monographSha256": "6bd27f8f346dea586d3b305f83cff3ad5984eab9e7d246b3bbba5367f766e70e",
+  "sourceInterpretationNotes": [
+    "Clinical revision versus SPL effectiveTime/API publication are retained as separate facts. No present-stock or exhaustive availability claim.",
+    "No universal emergency-treatment, disease-preferred treatment or unsupported laboratory/visit timetable inferred."
+  ]
+}
