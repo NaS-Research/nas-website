@@ -1,0 +1,697 @@
+{
+  "slug": "naproxen",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "SelectedcurrentGlenmark/AHP500mgIRbase withfullPIbase/sodiumregimens;Aurobindo375/500delayed-release;ANI125mg5mLsuspension;BayerAleve220mgcaplet DrugFacts currentavailableSPL.",
+  "excludedRegimens": [
+    "ER naproxen/naproxen-esomprazole/sumatriptan-naproxen or other combinations",
+    "HistoricalNaprosynbrandmarketavailability (legacysetids unavailable);othermanufacturer strength identifiers",
+    "Other pediatric pain/fever efficacy inferred from JIA tolerability;under2dose;universalorganadjustment",
+    "Universalaspirintiming protection;homeemesis/activatedcharcoal/reversalprotocol"
+  ],
+  "sources": [
+    {
+      "id": "label",
+      "title": "Naproxen IR · Prescribing information",
+      "publisher": "DailyMed / American Health Packaging (Glenmark product)",
+      "note": "Current SPL version 6, effective 2026-09-24. Selected package is naproxen base 500 mg; full PI also provides naproxen sodium regimens. Package identifiers for sodium tablets are not inferred.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=86a3e612-3bfe-432f-9afd-972bb8a6644e"
+    },
+    {
+      "id": "ec",
+      "title": "Naproxen delayed-release · Prescribing information",
+      "publisher": "DailyMed / Aurobindo Pharma Limited",
+      "note": "Current SPL version 2, effective 2026-03-02. ",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=67815abd-5e97-4ccb-ac9b-28c2ef6123e7"
+    },
+    {
+      "id": "liquid",
+      "title": "Naproxen oral suspension 125 mg/5 mL · Prescribing information",
+      "publisher": "DailyMed / ANI Pharmaceuticals Inc.",
+      "note": "Current SPL version 3, effective 2025-03-25. ",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=252726a7-757a-4b97-b5b8-ffff4ac1d103"
+    },
+    {
+      "id": "otc",
+      "title": "Aleve 220 mg caplets · Drug Facts",
+      "publisher": "DailyMed / Bayer HealthCare LLC",
+      "note": "Current SPL version 2, effective 2022-06-07. Current available selected single-caplet product SPL retains June 2022 version; no new 2026 revision claimed.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c95dceed-4968-486f-aecf-2942eda41a95"
+    }
+  ],
+  "labelMetadata": [
+    {
+      "sourceId": "label",
+      "product": "naproxen-ir",
+      "setid": "86a3e612-3bfe-432f-9afd-972bb8a6644e",
+      "version": "6",
+      "effectiveTime": "20260924",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/86a3e612-3bfe-432f-9afd-972bb8a6644e.xml",
+      "xmlSha256": "bfe3eb69920310dc59fa92b77444d6d5334f752423dca210004dde77ce6e2b0e",
+      "documentRevisionSnippets": []
+    },
+    {
+      "sourceId": "ec",
+      "product": "naproxen-ec",
+      "setid": "67815abd-5e97-4ccb-ac9b-28c2ef6123e7",
+      "version": "2",
+      "effectiveTime": "20260302",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/67815abd-5e97-4ccb-ac9b-28c2ef6123e7.xml",
+      "xmlSha256": "5038ae774a147c18e6112feb9993b9cd059440c56ee710d73e25f852d3358a6f",
+      "documentRevisionSnippets": [
+        "e Number: 苏20210041 Revised: 03/2026",
+        "rug Administration. Revised: 03/2026"
+      ]
+    },
+    {
+      "sourceId": "liquid",
+      "product": "naproxen-liquid",
+      "setid": "252726a7-757a-4b97-b5b8-ffff4ac1d103",
+      "version": "3",
+      "effectiveTime": "20250325",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/252726a7-757a-4b97-b5b8-ffff4ac1d103.xml",
+      "xmlSha256": "363c89cd6bcf9ec8212692ed6c6db99a6c4926ff48b826b56e0b80e7964c7b85",
+      "documentRevisionSnippets": []
+    },
+    {
+      "sourceId": "otc",
+      "product": "aleve-text",
+      "setid": "c95dceed-4968-486f-aecf-2942eda41a95",
+      "version": "2",
+      "effectiveTime": "20220607",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/c95dceed-4968-486f-aecf-2942eda41a95.xml",
+      "xmlSha256": "a4bf5c215077ef7a318a033e01524826951fa7c3b242dfcb42655bfce681ee7e",
+      "documentRevisionSnippets": []
+    }
+  ],
+  "evidence": [
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/naproxen-ir.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/naproxen/naproxen-ir.xml",
+      "sha256": "bfe3eb69920310dc59fa92b77444d6d5334f752423dca210004dde77ce6e2b0e",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/86a3e612-3bfe-432f-9afd-972bb8a6644e.xml"
+    },
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/naproxen-ir-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/naproxen/naproxen-ir-sections.json",
+      "sha256": "8e085bd53f134907d2df46a81b5403168a8530719f63655c2dccbbc18440b2ac",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/86a3e612-3bfe-432f-9afd-972bb8a6644e.xml"
+    },
+    {
+      "sourceId": "ec",
+      "localEvidence": "/tmp/nas-drug-sources/naproxen-ec.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/naproxen/naproxen-ec.xml",
+      "sha256": "5038ae774a147c18e6112feb9993b9cd059440c56ee710d73e25f852d3358a6f",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/67815abd-5e97-4ccb-ac9b-28c2ef6123e7.xml"
+    },
+    {
+      "sourceId": "ec",
+      "localEvidence": "/tmp/nas-drug-sources/naproxen-ec-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/naproxen/naproxen-ec-sections.json",
+      "sha256": "41fb4ff514ba0d6f7d1a44956d32d1dce694e1d902a39d426f7dc225470ea969",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/67815abd-5e97-4ccb-ac9b-28c2ef6123e7.xml"
+    },
+    {
+      "sourceId": "liquid",
+      "localEvidence": "/tmp/nas-drug-sources/naproxen-liquid.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/naproxen/naproxen-liquid.xml",
+      "sha256": "363c89cd6bcf9ec8212692ed6c6db99a6c4926ff48b826b56e0b80e7964c7b85",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/252726a7-757a-4b97-b5b8-ffff4ac1d103.xml"
+    },
+    {
+      "sourceId": "liquid",
+      "localEvidence": "/tmp/nas-drug-sources/naproxen-liquid-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/naproxen/naproxen-liquid-sections.json",
+      "sha256": "8fca07fc5ef8177d21b0f6d5177076940a6a0972831ccd87970e62afa1251f4b",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/252726a7-757a-4b97-b5b8-ffff4ac1d103.xml"
+    },
+    {
+      "sourceId": "otc",
+      "localEvidence": "/tmp/nas-drug-sources/aleve-text.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/naproxen/aleve-text.xml",
+      "sha256": "a4bf5c215077ef7a318a033e01524826951fa7c3b242dfcb42655bfce681ee7e",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/c95dceed-4968-486f-aecf-2942eda41a95.xml"
+    },
+    {
+      "sourceId": "otc",
+      "localEvidence": "/tmp/nas-drug-sources/aleve-text-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/naproxen/aleve-text-sections.json",
+      "sha256": "a5e62016afe34d5203eb692b65e1e954924a386b52792c56e4973e612e1dbcd2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/c95dceed-4968-486f-aecf-2942eda41a95.xml"
+    }
+  ],
+  "sourceEvidenceRoot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/naproxen",
+  "sourceManifest": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/naproxen/source-manifest.json",
+  "assertionToSourceMap": [
+    {
+      "section": "indications",
+      "card": "Prescription indications",
+      "assertions": {
+        "paragraphs": [
+          "The selected IR label covers RA, OA, ankylosing spondylitis and polyarticular juvenile idiopathic arthritis, plus tendonitis, bursitis, acute gout, pain and primary dysmenorrhea. The suspension provides the corresponding uses with weight-flexible pediatric administration."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "liquid"
+      ],
+      "sourceSections": {
+        "label": "§1 full IR and suspension indications",
+        "liquid": "§1 full IR and suspension indications"
+      },
+      "review": "Full supporting product-specific sections reviewed; monitoring/urgent triage identified as clinical synthesis; no universal dose or product conversion invented."
+    },
+    {
+      "section": "indications",
+      "card": "OTC and delayed-release scope",
+      "assertions": {
+        "paragraphs": [
+          "Selected Aleve caplets temporarily relieve minor arthritis / muscle / back / menstrual / headache / toothache / common-cold pain and fever. The selected delayed-release product covers RA / OA / ankylosing spondylitis and polyarticular JIA, but is not recommended for initial acute pain or acute gout because absorption is delayed. Extended-release and fixed combinations require their own labels."
+        ]
+      },
+      "sourceIds": [
+        "otc",
+        "ec"
+      ],
+      "sourceSections": {
+        "otc": "OTC Uses; EC §1/2.4/2.5 acute-pain and gout exclusions",
+        "ec": "OTC Uses; EC §1/2.4/2.5 acute-pain and gout exclusions"
+      },
+      "review": "Full supporting product-specific sections reviewed; monitoring/urgent triage identified as clinical synthesis; no universal dose or product conversion invented."
+    },
+    {
+      "section": "dosage",
+      "card": "OTC Aleve 220 mg caplets",
+      "assertions": {
+        "paragraphs": [
+          "Adults and children age 12 or older: 1 caplet every 8–12 hours while symptoms last; the first dose may be 2 caplets within the first hour. Do not exceed 2 caplets in any 8–12-hour period or 3 caplets (660 mg sodium salt) in 24 hours. Drink a full glass of water with each dose. Under 12: ask a doctor. Stop and ask a doctor if pain lasts over 10 days or fever over 3 days, or symptoms worsen."
+        ]
+      },
+      "sourceIds": [
+        "otc"
+      ],
+      "sourceSections": {
+        "otc": "OTC Directions and Stop Use: age12,220q8–12,initial440,max440per8–12/max660per24h,water,pain10days/fever3days"
+      },
+      "review": "Full supporting product-specific sections reviewed; monitoring/urgent triage identified as clinical synthesis; no universal dose or product conversion invented."
+    },
+    {
+      "section": "dosage",
+      "card": "Adult prescription regimens",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Indication / formulation",
+            "Regimen",
+            "Limit or distinction"
+          ],
+          "rows": [
+            [
+              "RA / OA / ankylosing spondylitis · IR base",
+              "250 or 500 mg twice daily in selected IR PI; suspension also permits 375 mg twice daily",
+              "Individualize; selected 500 mg scored tablet allows 250 mg"
+            ],
+            [
+              "RA / OA / ankylosing spondylitis · sodium",
+              "275 or 550 mg twice daily",
+              "Salt doses; not the OTC self-care regimen"
+            ],
+            [
+              "RA / OA / ankylosing spondylitis · delayed release",
+              "375 or 500 mg twice daily",
+              "Swallow whole; do not break, crush or chew"
+            ],
+            [
+              "Pain / dysmenorrhea / tendonitis / bursitis · IR base or suspension",
+              "500 mg initially, then 250 mg every 6–8 hours as needed",
+              "Maximum 1250 mg / day; suspension 25 mg / mL"
+            ],
+            [
+              "Same acute-pain indications · sodium",
+              "550 mg initially, then 550 mg every 12 hours or 275 mg every 6–8 hours",
+              "Maximum 1375 mg first day; 1100 mg / day thereafter"
+            ],
+            [
+              "Acute gout · IR base or suspension",
+              "750 mg initially, then 250 mg every 8 hours until attack subsides",
+              "Delayed-release product not recommended"
+            ],
+            [
+              "Acute gout · sodium",
+              "825 mg initially, then 275 mg every 8 hours",
+              "Confirm salt and prescribed product"
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label",
+        "ec",
+        "liquid"
+      ],
+      "sourceSections": {
+        "label": "IR full§2.2/2.4/2.5 base vs sodium, exact initial/maintenance/daycaps;EC§2.2 whole375/500BID;suspension full§2",
+        "ec": "IR full§2.2/2.4/2.5 base vs sodium, exact initial/maintenance/daycaps;EC§2.2 whole375/500BID;suspension full§2",
+        "liquid": "IR full§2.2/2.4/2.5 base vs sodium, exact initial/maintenance/daycaps;EC§2.2 whole375/500BID;suspension full§2"
+      },
+      "review": "Full supporting product-specific sections reviewed; monitoring/urgent triage identified as clinical synthesis; no universal dose or product conversion invented."
+    },
+    {
+      "section": "dosage",
+      "card": "Higher anti-inflammatory dosing and pediatric JIA",
+      "assertions": {
+        "paragraphs": [
+          "Selected prescription labels permit increasing to naproxen 1500 mg / day for limited periods up to 6 months in patients tolerating lower doses when added benefit outweighs risk; this is not an OTC limit or routine target. For polyarticular JIA from age 2, the selected suspension gives about 10 mg / kg / day in 2 divided doses (5 mg / kg twice daily). The selected IR tablet label states tablets are inappropriate below 50 kg; do not extrapolate the arthritis regimen to every childhood pain / fever illness."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "ec",
+        "liquid"
+      ],
+      "sourceSections": {
+        "label": "IR/EC/suspension full§2.2 limited1500mgdayup6monthsbenefit/risk;§2.3/8.4 age2JIA10mgkgdaydivided2,IR<50kgnotappropriate",
+        "ec": "IR/EC/suspension full§2.2 limited1500mgdayup6monthsbenefit/risk;§2.3/8.4 age2JIA10mgkgdaydivided2,IR<50kgnotappropriate",
+        "liquid": "IR/EC/suspension full§2.2 limited1500mgdayup6monthsbenefit/risk;§2.3/8.4 age2JIA10mgkgdaydivided2,IR<50kgnotappropriate"
+      },
+      "review": "Full supporting product-specific sections reviewed; monitoring/urgent triage identified as clinical synthesis; no universal dose or product conversion invented."
+    },
+    {
+      "section": "dosage",
+      "card": "Suspension and organ-function safeguards",
+      "assertions": {
+        "paragraphs": [
+          "Selected suspension is 125 mg/5 mL (25 mg / mL): 250 mg = 10 mL; 500 mg = 20 mL; 750 mg = 30 mL. Shake gently before use and use a calibrated device, not a household spoon. Naproxen products are not recommended with CrCl below 30 mL / min; no validated numerical renal or hepatic adjustment algorithm is provided. Use the lowest effective dose and monitor closely in organ disease. Do not combine naproxen formulations."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "liquid"
+      ],
+      "sourceSections": {
+        "label": "Suspension§2.1/2.2 shake gently calibrated device,25mgmL arithmetic;IR§2.1/2.6/8.6/8.7 no combination/dose substitution/CrCl<30notrecommended",
+        "liquid": "Suspension§2.1/2.2 shake gently calibrated device,25mgmL arithmetic;IR§2.1/2.6/8.6/8.7 no combination/dose substitution/CrCl<30notrecommended"
+      },
+      "review": "Full supporting product-specific sections reviewed; monitoring/urgent triage identified as clinical synthesis; no universal dose or product conversion invented."
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Serious GI bleeding / ulcer / perforation may occur without warning, including during short courses. Older age, ulcer history, anticoagulants, steroids, aspirin, alcohol and poor health raise risk. Cardiovascular events can occur early; avoid recent-MI or severe-heart-failure use unless benefit outweighs risk, and monitor BP, edema and cardiac symptoms.",
+          "Renal injury and high potassium are possible, particularly with CKD, dehydration, heart / liver disease, diuretics or ACE inhibitors / ARBs. Correct volume depletion and assess renal function. Hepatotoxicity, anemia, asthma exacerbation, anaphylaxis, SJS / TEN, fixed drug eruptions and DRESS can occur. Stop and assess rash or systemic hypersensitivity; emergency care is needed for airway symptoms.",
+          "NSAIDs can mask fever / inflammation and delay recognition of infection. Pregnancy exposure from about 20 weeks can impair fetal renal function; avoid about 30 weeks onward because of ductal closure and renal risks. OTC use at 20 weeks or later requires explicit doctor direction."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "otc"
+      ],
+      "sourceSections": {
+        "label": "IR full§5.1–5.14 CV/GI/renal/K/hepatic/CBC/skinDRESS/fetal/masking;OTC Warnings",
+        "otc": "IR full§5.1–5.14 CV/GI/renal/K/hepatic/CBC/skinDRESS/fetal/masking;OTC Warnings"
+      },
+      "review": "Full supporting product-specific sections reviewed; monitoring/urgent triage identified as clinical synthesis; no universal dose or product conversion invented."
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Prescription products contraindicate naproxen / component hypersensitivity, prior asthma / urticaria or allergic-type reactions to aspirin / other NSAIDs, and use in the setting of CABG surgery. Selected Aleve Drug Facts also prohibit use after allergic reactions to other pain relievers / fever reducers and immediately before / after heart surgery."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "otc"
+      ],
+      "sourceSections": {
+        "label": "IR§4 fullformalcontra;OTC DoNotUse broaderallpainrelieverallergy andheart surgery",
+        "otc": "IR§4 fullformalcontra;OTC DoNotUse broaderallpainrelieverallergy andheart surgery"
+      },
+      "review": "Full supporting product-specific sections reviewed; monitoring/urgent triage identified as clinical synthesis; no universal dose or product conversion invented."
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning",
+      "assertions": {
+        "paragraphs": [
+          "Prescription naproxen labels warn of potentially fatal MI / stroke and serious GI bleeding, ulceration or perforation. CV risk may start early and increase with duration; older patients and those with ulcer / GI-bleeding history have greater GI risk. CABG use is contraindicated. OTC Drug Facts communicate corresponding serious risks without a prescription-style box."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "ec",
+        "liquid",
+        "otc"
+      ],
+      "sourceSections": {
+        "label": "FullRxBox acrossIR/EC/liquid;OTC Warning format distinction",
+        "ec": "FullRxBox acrossIR/EC/liquid;OTC Warning format distinction",
+        "liquid": "FullRxBox acrossIR/EC/liquid;OTC Warning format distinction",
+        "otc": "FullRxBox acrossIR/EC/liquid;OTC Warning format distinction"
+      },
+      "review": "Full supporting product-specific sections reviewed; monitoring/urgent triage identified as clinical synthesis; no universal dose or product conversion invented."
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Common reactions include dyspepsia, abdominal pain, nausea, headache, rash, bruising and edema; dizziness, drowsiness and tinnitus also occur. Serious postmarketing reports include liver injury, renal failure, severe skin reactions and hematologic or allergic reactions. Trial frequencies depend on population / dose and cannot establish universal rates."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "IR full§6 clinical/postmarketing symptom categories andreportedcausalitylimits"
+      },
+      "review": "Full supporting product-specific sections reviewed; monitoring/urgent triage identified as clinical synthesis; no universal dose or product conversion invented."
+    },
+    {
+      "section": "interactions",
+      "card": "Hemostasis and aspirin",
+      "assertions": {
+        "paragraphs": [
+          "Anticoagulants, antiplatelets, SSRIs / SNRIs and other NSAIDs increase bleeding risk. Naproxen can interfere with low-dose aspirin’s antiplatelet action, including during naproxen washout; no universally protective timing rule is supplied here. Review alternatives and monitor bleeding. Analgesic-dose aspirin or another NSAID adds GI toxicity with little additional benefit."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "IR full§7 hemostasis/Aspirin PD/washout/risk andno substitute;§12.2 no inventedtiming"
+      },
+      "review": "Full supporting product-specific sections reviewed; monitoring/urgent triage identified as clinical synthesis; no universal dose or product conversion invented."
+    },
+    {
+      "section": "interactions",
+      "card": "BP medicines and kidney-dependent interactions",
+      "assertions": {
+        "paragraphs": [
+          "ACE inhibitors / ARBs / beta-blockers can lose BP effect; diuretics can lose natriuretic effect. Dehydrated, older or renally impaired patients on ACE inhibitors / ARBs have increased kidney-injury risk. Naproxen can increase digoxin or lithium exposure, methotrexate toxicity and cyclosporine nephrotoxicity; monitor the relevant drug level, labs and clinical response."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "IR full§7 ACEARBbeta/diuretic/digoxin/lithium/MTX/cyclosporine exactclinicalmonitoring"
+      },
+      "review": "Full supporting product-specific sections reviewed; monitoring/urgent triage identified as clinical synthesis; no universal dose or product conversion invented."
+    },
+    {
+      "section": "interactions",
+      "card": "Other interactions and laboratory tests",
+      "assertions": {
+        "paragraphs": [
+          "Pemetrexed requires an oncology-specific interruption / monitoring plan, particularly with renal impairment; long-half-life NSAIDs may require interruption at least 5 days before, the day of and 2 days after treatment under the cited label. Probenecid increases naproxen exposure. Antacids / sucralfate or cholestyramine can delay absorption and are not recommended concomitantly in selected labels. Review highly protein-bound medicines. Naproxen can alter bleeding-time, some adrenal-function and urinary 5-HIAA tests; coordinate testing rather than stopping independently."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "IR full§7 Pemetrexed,longhalf-life5daysbefore/dayof/2after;antacid/sucralfate/cholestyramine/probenecid/protein-bound/test interferences"
+      },
+      "review": "Full supporting product-specific sections reviewed; monitoring/urgent triage identified as clinical synthesis; no universal dose or product conversion invented."
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy, lactation and fertility",
+      "assertions": {
+        "paragraphs": [
+          "Between about 20 and 30 weeks, use only if needed at the lowest dose / shortest duration; consider amniotic-fluid ultrasound beyond 48 hours and stop if oligohydramnios occurs. Avoid around 30 weeks and later. Earlier-pregnancy risk evidence is inconclusive. Naproxen enters milk; balance maternal need with breastfeeding / infant risks. NSAIDs may reversibly delay ovulation; consider withdrawal when investigating infertility."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "IR full§8.1–8.3/5.11 pregnancy20–30lowestshortest,30avoid,>48hUS/stopoligohydramnios,milkfertility;nomilkplasma1%infantdosemisrepresentation"
+      },
+      "review": "Full supporting product-specific sections reviewed; monitoring/urgent triage identified as clinical synthesis; no universal dose or product conversion invented."
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": {
+        "paragraphs": [
+          "Prescription safety / effectiveness below age 2 are unestablished. The supported pediatric regimen is polyarticular JIA, preferably with suspension for dose flexibility. OTC directions start at age 12. Older people have greater GI / CV / renal risk: start at the low end if treatment is justified and monitor closely."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "liquid",
+        "otc"
+      ],
+      "sourceSections": {
+        "label": "IR full§8.4/8.5 limitedpedindication andage<2;liquid§2.3;OTC Directions≥12",
+        "liquid": "IR full§8.4/8.5 limitedpedindication andage<2;liquid§2.3;OTC Directions≥12",
+        "otc": "IR full§8.4/8.5 limitedpedindication andage<2;liquid§2.3;OTC Directions≥12"
+      },
+      "review": "Full supporting product-specific sections reviewed; monitoring/urgent triage identified as clinical synthesis; no universal dose or product conversion invented."
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic impairment",
+      "assertions": {
+        "paragraphs": [
+          "Avoid routine use at CrCl below 30 mL / min; metabolites can accumulate. Advanced renal disease requires an exceptional benefit / risk assessment with monitoring. Hepatic disease may increase free drug despite lower total concentrations, and no validated dose table is supplied; use the lowest effective dose and assess toxicity. Correct dehydration before treatment."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "IR full§8.6/8.7/12.3 freefractionliver andrenalaccumulation;§5.6advancedrenalbenefitrisk/volume"
+      },
+      "review": "Full supporting product-specific sections reviewed; monitoring/urgent triage identified as clinical synthesis; no universal dose or product conversion invented."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "assertions": {
+        "paragraphs": [
+          "Naproxen inhibits COX-1/COX-2 and prostaglandin synthesis, producing analgesic, anti-inflammatory and antipyretic effects. The full mechanism is incompletely understood. Reduced protective prostaglandins help explain GI and renal toxicity."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "IR§12.1/12.2 mechanism,§5 prostaglandin-related toxicityclinicalexplanation"
+      },
+      "review": "Full supporting product-specific sections reviewed; monitoring/urgent triage identified as clinical synthesis; no universal dose or product conversion invented."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "assertions": {
+        "paragraphs": [
+          "Bioavailability is about 95%; half-life about 12–17 hours and steady state 4–5 days. IR base peaks around 2–4 hours, sodium around 1–2 hours; suspension around 1–4 hours. Delayed-release absorption is slower and food can further delay it. Protein binding exceeds 99%; liver metabolism and urinary elimination of metabolites / conjugates predominate. These differences prevent unreviewed formulation substitution."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "ec",
+        "liquid"
+      ],
+      "sourceSections": {
+        "label": "IRfull§12.3/suspensionfull§12.3 bioavail95half12–17steady4–5,IR2–4sodium1–2susp1–4,protein>99/metabolismurine;EC§12.3 slower/food",
+        "ec": "IRfull§12.3/suspensionfull§12.3 bioavail95half12–17steady4–5,IR2–4sodium1–2susp1–4,protein>99/metabolismurine;EC§12.3 slower/food",
+        "liquid": "IRfull§12.3/suspensionfull§12.3 bioavail95half12–17steady4–5,IR2–4sodium1–2susp1–4,protein>99/metabolismurine;EC§12.3 slower/food"
+      },
+      "review": "Full supporting product-specific sections reviewed; monitoring/urgent triage identified as clinical synthesis; no universal dose or product conversion invented."
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": {
+        "paragraphs": [
+          "Assess pain / function, BP, edema, kidney function / potassium and bleeding risk. Consider periodic CBC and chemistry for long-term treatment; check hemoglobin / hematocrit with anemia symptoms. Investigate visual disturbances. Increase assessment with organ disease or interacting medicines; no universal lab interval is specified."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "IR§5.4/5.6/5.12/5.14 BP/kidney/K/CBCchem/vision periodic;clinicalmonitoring synthesis no universalfrequency"
+      },
+      "review": "Full supporting product-specific sections reviewed; monitoring/urgent triage identified as clinical synthesis; no universal dose or product conversion invented."
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "assertions": {
+        "paragraphs": [
+          "Read the Medication Guide / Drug Facts and avoid duplicate NSAIDs. For selected Aleve, use a full glass of water; food or milk may help stomach upset but does not prevent bleeding. Seek urgent care for chest pain, focal weakness, GI bleeding, airway swelling or serious rash. Report jaundice, reduced urine or edema and discuss pregnancy before use."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "otc"
+      ],
+      "sourceSections": {
+        "label": "IR§17/MedicationGuide allurgenttoxicities andduplicateavoid;OTC fullglasswaterfoodmilk symptomreliefonly",
+        "otc": "IR§17/MedicationGuide allurgenttoxicities andduplicateavoid;OTC fullglasswaterfoodmilk symptomreliefonly"
+      },
+      "review": "Full supporting product-specific sections reviewed; monitoring/urgent triage identified as clinical synthesis; no universal dose or product conversion invented."
+    },
+    {
+      "section": "practice",
+      "card": "Overdose",
+      "assertions": {
+        "paragraphs": [
+          "Contact medical services or Poison Control promptly. Overdose can cause GI symptoms / bleeding, drowsiness, renal injury and severe neurologic / respiratory effects. There is no specific antidote; management is supportive. High protein binding limits dialysis usefulness. Historical label emesis suggestions are not instructions for home treatment."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "IRfull§10 overdose/noantidote/highbindingdialysislimited;OTC PoisonControl;homeemesisexcluded"
+      },
+      "review": "Full supporting product-specific sections reviewed; monitoring/urgent triage identified as clinical synthesis; no universal dose or product conversion invented."
+    },
+    {
+      "section": "product",
+      "card": "Representative IR tablet · 500 mg",
+      "assertions": {
+        "facts": [
+          [
+            "Appearance",
+            "Light orange, capsule-shaped, uncoated"
+          ],
+          [
+            "Debossing",
+            "G / 32 around break line · 500 reverse"
+          ],
+          [
+            "Example package",
+            "NDC 60687-491-01 · unit dose 100"
+          ],
+          [
+            "Distributor",
+            "American Health Packaging; Glenmark product"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "IR§16 exact500mgappearanceG32/500NDCunitdoseAHP;§17 Glenmark product/distributor"
+      },
+      "review": "Full supporting product-specific sections reviewed; monitoring/urgent triage identified as clinical synthesis; no universal dose or product conversion invented."
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Selected IR package contains 500 mg base tablets; its full PI also describes sodium 550 mg tablets/275 mg half-tablets. Selected delayed-release tablets are 375/500 mg and suspension is 125 mg/5 mL with 39 mg sodium per 5 mL. Selected OTC Aleve has 220 mg sodium salt (200 mg base), with 20 mg sodium per caplet. ER formulations and combinations, including sumatriptan / naproxen, require separate labels."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "ec",
+        "liquid",
+        "otc"
+      ],
+      "sourceSections": {
+        "label": "IR§3/16 actual500mgpackvsPI sodiumstrengths;EC§3;liquid§3 125mg5mL39mgsodium;OTCingredient220salt200base20sodium",
+        "ec": "IR§3/16 actual500mgpackvsPI sodiumstrengths;EC§3;liquid§3 125mg5mL39mgsodium;OTCingredient220salt200base20sodium",
+        "liquid": "IR§3/16 actual500mgpackvsPI sodiumstrengths;EC§3;liquid§3 125mg5mL39mgsodium;OTCingredient220salt200base20sodium",
+        "otc": "IR§3/16 actual500mgpackvsPI sodiumstrengths;EC§3;liquid§3 125mg5mL39mgsodium;OTCingredient220salt200base20sodium"
+      },
+      "review": "Full supporting product-specific sections reviewed; monitoring/urgent triage identified as clinical synthesis; no universal dose or product conversion invented."
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Selected Rx products: 20–25°C, excursions 15–30°C. Protect delayed-release tablets / suspension from light; shake suspension gently before dosing and avoid heat over 40°C. Do not use torn / broken IR unit-dose blisters. Selected Aleve: 20–25°C; avoid high humidity and heat over 40°C. Keep away from children."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "ec",
+        "liquid",
+        "otc"
+      ],
+      "sourceSections": {
+        "label": "IR§16 blisters20–25exc15–30;EC§16 light;liquid§16 light/shakegently/>40avoid;OTCOtherInfo20–25humidityheat",
+        "ec": "IR§16 blisters20–25exc15–30;EC§16 light;liquid§16 light/shakegently/>40avoid;OTCOtherInfo20–25humidityheat",
+        "liquid": "IR§16 blisters20–25exc15–30;EC§16 light;liquid§16 light/shakegently/>40avoid;OTCOtherInfo20–25humidityheat",
+        "otc": "IR§16 blisters20–25exc15–30;EC§16 light;liquid§16 light/shakegently/>40avoid;OTCOtherInfo20–25humidityheat"
+      },
+      "review": "Full supporting product-specific sections reviewed; monitoring/urgent triage identified as clinical synthesis; no universal dose or product conversion invented."
+    }
+  ],
+  "materialErrors": [],
+  "unresolvedMaterialGaps": [],
+  "sourceDiscrepancies": [
+    {
+      "issue": "LegacyNaprosynsetids8bff5df5 and68848217 returned404fromcurrentXML; nottreatedascurrentlabel.",
+      "resolution": "Selectedverifiedcurrentgenerics; nohistoricalbrandavailabilityclaim.",
+      "resolved": true
+    },
+    {
+      "issue": "SelectedAHPpackage500mgbase whilefullPIcontainsnaproxensodium550/275regimens.",
+      "resolution": "ClinicalregimenssourcedfullPI,packageidentificationrestricted500mg;noinferredsodiumpackages.",
+      "resolved": true
+    },
+    {
+      "issue": "RetrievedAleve2025tabletXMLwarningsimage-only; selectedavailableBayer2022capletfulltextDrugFacts.",
+      "resolution": "Exactselectedcapletversionandformulationscopeexplicit; no new2026clinicalrevisionclaim.",
+      "resolved": true
+    },
+    {
+      "issue": "LiquidPDPtexttitleerroneouslyreads125mg/mL,wherefull§3/11/16anddosingexplicit125mg/5mL.",
+      "resolution": "Actual125mg/5mLstrengthand25mg/mLarithmeticverifiedagainstfullsections; clippedPDPtitle notpropagated.",
+      "resolved": true
+    }
+  ],
+  "limitations": [
+    "Public official primary product labels only; no paywalled access claimed.",
+    "Selected-product scope; other manufacturers or devices need separate verification.",
+    "No universal monitoring frequency, emergency home protocol or conversion algorithm.",
+    "Parent retains build/render/release QA."
+  ],
+  "reviewedSourceSections": [
+    "FullIRBox/§§1–8/10–12/16–17/MedicationGuide;ECfull§§1–3/12.3/16 pluscorrespondingsafety;liquidfull§2/3/11/12/16 andsafetyorgancontra;AlevefullUses/Warnings/Directions/OtherInfo."
+  ],
+  "verification": {
+    "schemaErrors": [],
+    "sectionIds": [
+      "indications",
+      "dosage",
+      "safety",
+      "interactions",
+      "populations",
+      "pharmacology",
+      "practice",
+      "product"
+    ],
+    "heroFacts": 3,
+    "safetyCardOrder": [
+      "Warnings and precautions",
+      "Contraindications",
+      "Boxed warning",
+      "Adverse reactions"
+    ],
+    "productCardOrder": [
+      "Representative IR tablet · 500 mg",
+      "Dosage forms and strengths",
+      "Storage and handling"
+    ],
+    "renderedPageQA": "Pending parent batch QA",
+    "monographSha256": "a8bcf66141b1ae9049d6c8dd28437a4766bf0a9d21f1d608e7439b72c5323e10"
+  }
+}

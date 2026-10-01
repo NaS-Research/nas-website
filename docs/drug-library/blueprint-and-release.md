@@ -1,8 +1,10 @@
 # NaS Learn drug library — fixed APAP contract
 
-Task: NaS-Website-Drug Library. Inventory: **300**, including the immutable APAP reference; **299** migrations remain in 30 batches (29 of ten, then nine).
+Task: NaS-Website-Drug Library. Inventory: **300**, including the immutable APAP reference; **299** migrations are tracked in 30 batches (29 of ten, then nine).
 
-This is an incomplete work record. Candidate retrieval, schema validation, a passing build, remote push and verified production publication are separate states. The first ten drug profiles have been authored and have card-level source audits. Independent targeted clinical cross-review of all ten is complete; no material dosing/unit/contraindication error was identified in the checked assertions. The integrated build and required tests pass. The first ten profiles have passed build/tests, desktop/mobile route and interaction checks, and representative manual screenshot inspection. None has been published by this task.
+This is an active, incomplete work record. Eleven batches (110 migrated profiles) have exact GitHub/Netlify production publication receipts and passed hosted checks; batch12 is source-reviewed and undergoing corrected-data integration QA. Candidate retrieval, clinical source review, schema validation, build/render checks, remote push, and verified publication remain distinct states in the completion ledger. A formatting revision to the previously published pregabalin dose tables is tracked separately, preserving its prior edition and source evidence. The remaining inventory is still being authored and reviewed; completion is never inferred from a candidate label or a passing schema.
+
+Earlier batch notes are retained as history; the completion ledger and production-verification entries record the current state.
 
 ## Immutable blueprint
 
@@ -117,3 +119,15 @@ First production release verified: Netlify deploy6abea59e8be9bf0008b69052, commi
 ### Batch 11 validation
 
 Loratadine, warfarin, valacyclovir, budesonide/formoterol, ethinyl estradiol/norgestimate, fluticasone/umeclidinium/vilanterol, methocarbamol, diltiazem, desiccated thyroid, and baclofen completed primary-source audits and targeted independent safety review. Required security, route, monograph contract, dependency audit (zero advisories), production build, and generated HTML checks passed. All ten routes passed desktop/mobile browser checks; four representative profiles passed hero, dosage, safety, and mobile contents visual inspection. APAP and the shared renderer remain unchanged. Formulation, current-label, regulatory-status, and non-actionable source gaps are retained in the profiles and source audits. Production publication will be recorded separately after exact host verification.
+
+### Strengthened mobile geometry QA
+
+A full desktop/mobile article-bounds check of the first100 live profiles found one prior profile (pregabalin) with a wide dose matrix. A separate unpublished draft (naproxen, batch12) had a long slash-separated indication cell causing the same clipping. Both are being corrected through data-only formatting changes with exact dose/source preservation and independent hash review. The shared APAP renderer, CSS, and immutable APAP data remain unchanged. The new browser gate checks the article right edge against the viewport in addition to document overflow. Batch11 passed all20 strengthened checks on its exact Netlify preview before merge; the batch12 visual release remains held until corrected rebuild and inspection.
+
+### Batch11 production verification
+
+PR14 merged exact candidate d178a8bcf6aff51925e70922e5d9e173802b5b70 as production commit5d29740a3632e5e2e0e61015e0c379e9edf0a152. Existing Netlify deployment6abeb2102a2f4c0008f9d7b6 published2026-10-01T19:20:10.950Z, ready/production. All111 live HTML routes and twenty batch11 desktop/mobile interactions/article-bounds checks passed. Evidence is archived under batch11/production; publication ledger retains authoring and merge commits separately.
+
+### Batch12 validation and prior-profile correction
+
+Naproxen, sumatriptan, prednisolone, esomeprazole, mirtazapine, levetiracetam, norethindrone, tadalafil, nifedipine, and progesterone completed full source audits and targeted independent safety review. Required security/route/contract tests, dependency audit (zero advisories), production build, and generated HTML passed. Twenty-two desktop/mobile checks include the ten new profiles plus a formatting revision to pregabalin. Final naproxen wrapping and all three reshaped pregabalin dosing matrices passed actual desktop/mobile visual inspection and exact viewport bounds. Dose values and frequencies remain unchanged; independent hashes were refreshed. Prior published pregabalin JS/audits were preserved on the external drive. APAP/shared presentation unchanged. Exact hosted publication remains a separate verified step.

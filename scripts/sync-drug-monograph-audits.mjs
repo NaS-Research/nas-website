@@ -33,6 +33,18 @@ for(const drug of ledger.drugs) {
  drug.monographSha256=hash;drug.sourceAuditRecord=record;drug.sources=audit.sources;drug.sourceAudit=map;
  drug.materialErrors=materialErrors;drug.gaps=materialGaps.length?materialGaps:(audit.gaps||[]);
 }
-writeFileSync(path,JSON.stringify(ledger,null,2)+'\n');
 const counts={};for(const drug of ledger.drugs)counts[drug.status]=(counts[drug.status]||0)+1;
+const reviewed=(counts.source_reviewed||0)+(counts.verified||0)+(counts.deployed||0);
+ledger.clinicalVerificationSummary={
+ immutableBlueprint:counts.immutable_blueprint||0,
+ otherDrugsSourceReviewed:reviewed,
+ otherDrugsVerified:(counts.verified||0)+(counts.deployed||0),
+ otherDrugsDeployed:counts.deployed||0,
+ profilesWithPublicationHistory:ledger.publicationReleases?.reduce((total,release)=>total+release.profiles,0)||0,
+ pendingFormattingRevisions:ledger.drugs.filter(drug=>drug.pendingCorrectionBatch).map(drug=>drug.slug),
+ remainingToSourceReview:ledger.total-1-reviewed,
+ remaining:ledger.total-1-(counts.verified||0)-(counts.deployed||0),
+ remainingToPublish:ledger.total-1-(counts.deployed||0),
+};
+writeFileSync(path,JSON.stringify(ledger,null,2)+'\n');
 console.log(counts);

@@ -1,0 +1,1662 @@
+{
+  "drug": "progesterone",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Current selected U.S. oral Prometrium, vaginal Endometrin/Crinone and Hikma sesame-oil IM labels; full relevant clinical sections reviewed. Explicitly separated current public NICE vaginal obstetric contexts.",
+  "blueprint": {
+    "sections": [
+      [
+        "indications",
+        "Indications"
+      ],
+      [
+        "dosage",
+        "Dosage and administration"
+      ],
+      [
+        "safety",
+        "Safety"
+      ],
+      [
+        "interactions",
+        "Drug interactions"
+      ],
+      [
+        "populations",
+        "Use in specific populations"
+      ],
+      [
+        "pharmacology",
+        "Clinical pharmacology"
+      ],
+      [
+        "practice",
+        "Monitoring and counseling"
+      ],
+      [
+        "product",
+        "Product identification"
+      ]
+    ],
+    "essential_safety": true,
+    "hero_facts": 3,
+    "APAP_modified": false
+  },
+  "sources": [
+    {
+      "id": "oral",
+      "title": "Prometrium \u00b7 Current full prescribing information",
+      "publisher": "Acertis / DailyMed",
+      "note": "Clinical revision February 2026; oral micronized capsules, peanut oil.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1cf237ff-c4f8-4faa-a7aa-77599c856889"
+    },
+    {
+      "id": "insert",
+      "title": "Endometrin \u00b7 Current full prescribing information",
+      "publisher": "Ferring / DailyMed",
+      "note": "SPL27 effective July 29, 2026; current ART indication age <35.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2ba50fa9-b349-40cb-9a4b-1af8faa4ec09"
+    },
+    {
+      "id": "gel",
+      "title": "Crinone \u00b7 Current full label",
+      "publisher": "AbbVie / DailyMed",
+      "note": "Clinical content updated June 2017; SPL11 effective May 21, 2024.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=75e97aa1-daa4-45f9-b2e2-1a371302914e"
+    },
+    {
+      "id": "im",
+      "title": "Progesterone injection in sesame oil \u00b7 Current full label",
+      "publisher": "Hikma / DailyMed",
+      "note": "Clinical revision January 2021; SPL6 effective July 9, 2024. Intramuscular only.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=83cfc12e-75d1-4284-bcc3-beadcbd27171"
+    },
+    {
+      "id": "ng126",
+      "title": "Ectopic pregnancy and miscarriage \u00b7 NG126",
+      "publisher": "NICE",
+      "note": "Full current public guideline updated June 17, 2026; selected threatened-miscarriage recommendations now 1.9.2\u20131.9.3.",
+      "url": "https://www.nice.org.uk/guidance/ng126/resources/ectopic-pregnancy-and-miscarriage-diagnosis-and-initial-management-pdf-66141662244037"
+    },
+    {
+      "id": "ng25",
+      "title": "Preterm labour and birth \u00b7 NG25",
+      "publisher": "NICE",
+      "note": "Full public guideline updated June 10, 2022; selected prophylactic vaginal-progesterone context.",
+      "url": "https://www.nice.org.uk/guidance/ng25/resources/preterm-labour-and-birth-pdf-1837333576645"
+    }
+  ],
+  "source_records": [
+    {
+      "id": "oral",
+      "local_snapshot": "/tmp/nas-drug-sources/prometrium.xml",
+      "label_revision": "02/2026",
+      "set_id": "1cf237ff-c4f8-4faa-a7aa-77599c856889",
+      "spl_version": "4",
+      "spl_effective_time": "20260723",
+      "dailymed_published_date": null,
+      "sha256": "ef5fabc08d01f031699f245f996766de8df6d95f06c96f33254c0829d8c091f2",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-12-thyroid-metformin/prometrium.xml"
+    },
+    {
+      "id": "insert",
+      "local_snapshot": "/tmp/nas-drug-sources/endometrin.xml",
+      "label_revision": "No explicit clinical revision found in current SPL; effective time recorded separately",
+      "set_id": "2ba50fa9-b349-40cb-9a4b-1af8faa4ec09",
+      "spl_version": "27",
+      "spl_effective_time": "20260729",
+      "dailymed_published_date": null,
+      "sha256": "4eb3279cb7813406b7b4bacef1399cedd7147046854368d2020fc81908c86a84",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-12-thyroid-metformin/endometrin.xml"
+    },
+    {
+      "id": "gel",
+      "local_snapshot": "/tmp/nas-drug-sources/crinone.xml",
+      "label_revision": "Clinical content updated 06/2017; copyright 2024 is not clinical revision",
+      "set_id": "75e97aa1-daa4-45f9-b2e2-1a371302914e",
+      "spl_version": "11",
+      "spl_effective_time": "20240521",
+      "dailymed_published_date": null,
+      "sha256": "7be9627e05f70b967e8892568c52ca974430cf6c4c20af29902de445334abe89",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-12-thyroid-metformin/crinone.xml"
+    },
+    {
+      "id": "im",
+      "local_snapshot": "/tmp/nas-drug-sources/progesterone-im.xml",
+      "label_revision": "01/2021",
+      "set_id": "83cfc12e-75d1-4284-bcc3-beadcbd27171",
+      "spl_version": "6",
+      "spl_effective_time": "20240709",
+      "dailymed_published_date": null,
+      "sha256": "91af828ab5a7c0f68f4cacbc574b94e7a97ee77a4c9e2fc7578fbe41901a12a6",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-12-thyroid-metformin/progesterone-im.xml"
+    },
+    {
+      "id": "ng126",
+      "local_snapshot": "/tmp/nas-drug-sources/nice-ng126.pdf",
+      "guideline_revision": "2026-06-17",
+      "url": "https://www.nice.org.uk/guidance/ng126/resources/ectopic-pregnancy-and-miscarriage-diagnosis-and-initial-management-pdf-66141662244037",
+      "sha256": "f27f86a8779b2b1de7ede51e6c3d65564f656d3ec65a73ae3701fdda49833045",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-12-thyroid-metformin/nice-ng126.pdf"
+    },
+    {
+      "id": "ng25",
+      "local_snapshot": "/tmp/nas-drug-sources/nice-ng25.pdf",
+      "guideline_revision": "2022-06-10",
+      "url": "https://www.nice.org.uk/guidance/ng25/resources/preterm-labour-and-birth-pdf-1837333576645",
+      "sha256": "bb03c2e3107e9d3e4cce9156df6485b41dc5b6c643ed981d3179649bc5e3ee3f",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-12-thyroid-metformin/nice-ng25.pdf"
+    }
+  ],
+  "assertion_map": [
+    {
+      "section": "indications",
+      "card": "Oral micronized progesterone",
+      "assertions": [
+        "Prometrium is indicated to prevent endometrial hyperplasia in postmenopausal women with a uterus receiving conjugated estrogen tablets, and for secondary amenorrhea. Its oral label should not be read as approval of infertility treatment, miscarriage prevention or contraception."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "INDICATIONS AND USAGE; DOSAGE AND ADMINISTRATION"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Vaginal ART and amenorrhea products",
+      "assertions": [
+        "Current Endometrin is approved as part of ART to support implantation in infertile women less than 35 years old and maintain pregnancy after implantation up to 10 weeks. Crinone 8% is labeled for ART progesterone supplementation/replacement in progesterone-deficient infertile women; 4% is labeled for secondary amenorrhea, with an 8% trial for nonresponse. The products do not share an identical age restriction or schedule."
+      ],
+      "sources": [
+        {
+          "id": "insert",
+          "sections": "1; 14"
+        },
+        {
+          "id": "gel",
+          "sections": "INDICATIONS AND USAGE; DOSAGE AND ADMINISTRATION"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Intramuscular indication",
+      "assertions": [
+        "The selected Hikma injection is labeled for amenorrhea and abnormal uterine bleeding due to hormonal imbalance without organic pathology, such as fibroids or uterine cancer. This label does not approve an ART regimen; fertility-clinic IM use is a separate off-label protocol, not the labeled amenorrhea schedule."
+      ],
+      "sources": [
+        {
+          "id": "im",
+          "sections": "INDICATIONS AND USAGE; DOSAGE AND ADMINISTRATION"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Guideline-based pregnancy uses",
+      "assertions": [
+        "NICE recommends selected vaginal micronized progesterone for threatened miscarriage and prophylactic vaginal progesterone for selected preterm-birth risks. These guideline uses do not establish U.S. approval for every oral capsule, gel, insert or injection. Confirm the prescribed vaginal preparation, eligibility and duration with the obstetric team."
+      ],
+      "sources": [
+        {
+          "id": "ng126",
+          "sections": "1.9.1\u20131.9.3; rationale, Management of miscarriage"
+        },
+        {
+          "id": "ng25",
+          "sections": "1.2.1\u20131.2.3"
+        },
+        {
+          "id": "oral",
+          "sections": "Pregnancy"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Oral Prometrium schedules",
+      "assertions": [
+        "Take as a single daily bedtime dose. For endometrial protection with daily conjugated estrogens: 200 mg orally for 12 consecutive days of each 28-day cycle. For secondary amenorrhea: 400 mg at bedtime for 10 days. These are the selected product-label schedules, not a universal menopausal-hormone regimen. A patient with swallowing difficulty may use a glass of water while standing, as the label instructs."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "DOSAGE AND ADMINISTRATION; PRECAUTIONS, General"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Labeled oral purpose",
+          "Schedule"
+        ],
+        "rows": [
+          [
+            "Endometrial hyperplasia prevention with conjugated estrogens",
+            "200 mg at bedtime for 12 days per 28-day cycle"
+          ],
+          [
+            "Secondary amenorrhea",
+            "400 mg at bedtime for 10 days"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Vaginal ART schedules",
+      "assertions": [
+        "Endometrin: 100 mg vaginally two or three times daily, starting the day after oocyte retrieval, for up to 10 weeks total treatment. Crinone 8%: 90 mg vaginally once daily for supplementation, or twice daily for partial/complete ovarian failure requiring replacement; if pregnancy occurs, the label allows continuation to placental autonomy, up to 10\u201312 weeks. Do not treat Endometrin\u2019s total treatment duration as identical to a gestational-age cutoff."
+      ],
+      "sources": [
+        {
+          "id": "insert",
+          "sections": "2; 17"
+        },
+        {
+          "id": "gel",
+          "sections": "DOSAGE AND ADMINISTRATION, Assisted Reproductive Technology"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Vaginal amenorrhea and IM schedules",
+      "assertions": [
+        "Crinone 4% delivers 45 mg every other day for up to six doses; for nonresponse, an 8% 90 mg every-other-day trial up to six doses is labeled. Use the 8% product to increase strength, not additional gel volume. Selected IM amenorrhea dosing is 5\u201310 mg daily for 6\u20138 consecutive days; functional uterine bleeding dosing is 5\u201310 mg daily for six doses. If estrogen is also used, injections begin after two weeks of estrogen; stop injections if menstrual flow starts."
+      ],
+      "sources": [
+        {
+          "id": "gel",
+          "sections": "DOSAGE AND ADMINISTRATION, Secondary Amenorrhea"
+        },
+        {
+          "id": "im",
+          "sections": "DOSAGE AND ADMINISTRATION"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Threatened-miscarriage guideline dose",
+      "assertions": [
+        "Current NICE NG126 recommends vaginal micronized progesterone 400 mg twice daily when ultrasound confirms an intrauterine pregnancy, there is vaginal bleeding and a previous miscarriage. If a fetal heartbeat is confirmed, continue until 16 completed weeks. This specific vaginal regimen is not a recommendation to swallow Prometrium for pregnancy or substitute Endometrin 100 mg or Crinone 90 mg."
+      ],
+      "sources": [
+        {
+          "id": "ng126",
+          "sections": "1.9.2\u20131.9.3; rationale, Management of miscarriage"
+        },
+        {
+          "id": "oral",
+          "sections": "Pregnancy"
+        },
+        {
+          "id": "insert",
+          "sections": "2"
+        },
+        {
+          "id": "gel",
+          "sections": "DOSAGE"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Preterm-birth prevention and organ adjustments",
+      "assertions": [
+        "NICE considers vaginal progesterone with a prior spontaneous preterm birth/loss or a short cervix, and offers a choice with cerclage when both criteria are present; treatment starts at 16+0\u201324+0 weeks and continues to at least 34 weeks. No numerical dose is inferred here from NG25. None of these selected labels gives a renal-adjustment formula. Liver contraindications vary by product; do not invent a reduced dose to bypass them."
+      ],
+      "sources": [
+        {
+          "id": "ng25",
+          "sections": "1.2.1\u20131.2.3"
+        },
+        {
+          "id": "oral",
+          "sections": "Special Populations; CONTRAINDICATIONS"
+        },
+        {
+          "id": "insert",
+          "sections": "4; 8.7"
+        },
+        {
+          "id": "gel",
+          "sections": "CONTRAINDICATIONS"
+        },
+        {
+          "id": "im",
+          "sections": "Special Populations; CONTRAINDICATIONS"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Suspected DVT/PE, stroke, MI or retinal vascular events require immediate assessment and product-directed discontinuation. Review unexplained bleeding, hormone-sensitive malignancy and liver disease before treatment. Monitor depression and fluid retention where relevant; severe recurrence of depression with vaginal/IM therapy may require stopping.",
+        "Prometrium may cause marked dizziness/drowsiness, particularly early in treatment; take at bedtime and use caution driving. Its current label retains cardiovascular and malignancy warnings. WHI cardiovascular-risk findings discussed in the label came from conjugated estrogens plus medroxyprogesterone acetate, not a direct progesterone trial; do not assign those numerical risks to every progesterone route or assume other combinations are risk-free.",
+        "Prometrium contains peanut oil: peanut allergy is a contraindication. Selected IM progesterone contains sesame oil and can cause allergy and acute eosinophilic pneumonia, often reported 2\u20134 weeks after starting; fever, dyspnea or hypoxia needs prompt assessment and immediate discontinuation of that sesame-oil injection. These excipient-specific findings should not be assigned to all vaginal products."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "WARNINGS; PRECAUTIONS; DESCRIPTION"
+        },
+        {
+          "id": "insert",
+          "sections": "4; 5"
+        },
+        {
+          "id": "gel",
+          "sections": "WARNINGS; PRECAUTIONS"
+        },
+        {
+          "id": "im",
+          "sections": "WARNINGS; CONTRAINDICATIONS; DESCRIPTION"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "All reviewed products exclude relevant ingredient hypersensitivity and undiagnosed genital bleeding, but lists differ. Prometrium additionally excludes known/suspected/history of breast cancer, active/history DVT/PE or arterial thromboembolism, and known liver dysfunction/disease. Endometrin excludes missed abortion/ectopic pregnancy, hormone-sensitive malignancy/history, arterial/venous thromboembolism or severe thrombophlebitis/history, hepatic adenoma/carcinoma, acute hepatitis and severe decompensated cirrhosis. Crinone excludes liver dysfunction/disease, breast/genital malignancy, missed abortion and active thrombophlebitis/thromboembolic disorders or prior hormone-associated events. Selected IM excludes liver disease, breast/genital malignancy, missed abortion and current/past thromboembolic disorders/cerebral apoplexy, plus sesame allergy. Check the complete product-specific list before prescribing."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "CONTRAINDICATIONS"
+        },
+        {
+          "id": "insert",
+          "sections": "4"
+        },
+        {
+          "id": "gel",
+          "sections": "CONTRAINDICATIONS"
+        },
+        {
+          "id": "im",
+          "sections": "CONTRAINDICATIONS"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "The reviewed February 2026 Prometrium label and current Endometrin, Crinone and selected Hikma IM labels contain no formal boxed warning. Older Prometrium boxed-warning wording must not be represented as the current product box. Absence of a box does not remove current thromboembolic, cancer, sedation or injection pulmonary warnings."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Complete current label; WARNINGS; revision footer"
+        },
+        {
+          "id": "insert",
+          "sections": "Complete label; 5"
+        },
+        {
+          "id": "gel",
+          "sections": "Complete label; WARNINGS"
+        },
+        {
+          "id": "im",
+          "sections": "Complete label; WARNINGS"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Oral treatment may cause headache, breast tenderness, dizziness/drowsiness, bloating, nausea or irregular bleeding. Vaginal products may cause local irritation/discharge, abdominal pain/cramps, headache or bleeding. IM treatment may cause injection-site pain/irritation and allergic reactions. Serious risks include thromboembolic events and the route-specific warnings above. ART-study ovarian hyperstimulation and procedure-related symptoms are not automatically caused by progesterone."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "ADVERSE REACTIONS; Patient Information"
+        },
+        {
+          "id": "insert",
+          "sections": "6"
+        },
+        {
+          "id": "gel",
+          "sections": "ADVERSE REACTIONS"
+        },
+        {
+          "id": "im",
+          "sections": "ADVERSE REACTIONS; WARNINGS"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Local vaginal medicines",
+      "assertions": [
+        "Endometrin is not recommended with other vaginal products because release/absorption may be altered. Crinone should generally not be used concurrently with local vaginal therapy; if another local treatment is necessary, its label specifies separation by at least 6 hours before or after gel administration. Do not assume that spacing makes combination use acceptable with Endometrin."
+      ],
+      "sources": [
+        {
+          "id": "insert",
+          "sections": "7.2; 17"
+        },
+        {
+          "id": "gel",
+          "sections": "PRECAUTIONS, Information for Patients"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Enzyme interactions and food",
+      "assertions": [
+        "CYP3A4 inducers may increase Endometrin elimination and reduce effect; review rifampin and other inducers with the fertility team. Oral and IM labels describe in-vitro ketoconazole inhibition of progesterone metabolism with uncertain clinical relevance; no automatic dose adjustment is established by those data. Crinone has no assessed clinical drug-interaction studies. Food increases oral Prometrium bioavailability; follow the prescribed routine rather than importing a food rule from a vaginal product."
+      ],
+      "sources": [
+        {
+          "id": "insert",
+          "sections": "7.1"
+        },
+        {
+          "id": "oral",
+          "sections": "Drug Interaction; Food-Drug Interaction"
+        },
+        {
+          "id": "im",
+          "sections": "Drug Interactions"
+        },
+        {
+          "id": "gel",
+          "sections": "PRECAUTIONS, Drug Interactions"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Estrogen combinations and laboratory context",
+      "assertions": [
+        "The accompanying estrogen has its own contraindications/warnings. Inform clinicians and laboratories about hormone therapy: estrogen/progestin combinations may alter some coagulation, thyroid-binding and hepatic test results. This is not proof that isolated progesterone always produces the same changes, and does not replace evaluation of bleeding or thrombosis."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Drug-Laboratory Test Interactions; WARNINGS"
+        },
+        {
+          "id": "gel",
+          "sections": "PRECAUTIONS"
+        },
+        {
+          "id": "im",
+          "sections": "PRECAUTIONS"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy",
+      "assertions": [
+        "Prometrium\u2019s selected oral label says it should not be used during pregnancy; pregnancy is addressed in precautions rather than its current six-item formal contraindication list. Endometrin and Crinone 8% instead have labeled ART pregnancy support. Selected IM has no labeled ART indication. NICE\u2019s specific vaginal threatened-miscarriage/preterm-birth recommendations are separate from these U.S. product approvals; do not extrapolate benefit to all bleeding or recurrent miscarriage."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Pregnancy; CONTRAINDICATIONS"
+        },
+        {
+          "id": "insert",
+          "sections": "1; 8.1"
+        },
+        {
+          "id": "gel",
+          "sections": "INDICATIONS; Pregnancy"
+        },
+        {
+          "id": "im",
+          "sections": "INDICATIONS"
+        },
+        {
+          "id": "ng126",
+          "sections": "1.9.1\u20131.9.3; rationale"
+        },
+        {
+          "id": "ng25",
+          "sections": "1.2.1\u20131.2.3"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Breastfeeding",
+      "assertions": [
+        "Progesterone/progestins are detectable in milk. Prometrium advises caution, and Crinone/IM labels state infant effects are undetermined. Current Endometrin describes a study without adverse infant growth or milk-production effects but still directs individual assessment of breastfeeding benefits, maternal need and possible infant effects. That limited observation does not establish universal safety for every route/dose."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Nursing Women"
+        },
+        {
+          "id": "insert",
+          "sections": "8.2"
+        },
+        {
+          "id": "gel",
+          "sections": "Nursing Mothers"
+        },
+        {
+          "id": "im",
+          "sections": "Nursing Mothers"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children, older age and body size",
+      "assertions": [
+        "Prometrium is not indicated in children, and pediatric studies are lacking. Pediatric safety/effectiveness are not established for the reviewed vaginal/IM products. Endometrin is not indicated at age 65 or older and its current ART indication is limited to infertile women under 35; safety/efficacy at BMI >34 kg/m\u00b2 has not been studied. Other selected labels have limited or unestablished older-adult evidence rather than a new age-based dose."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Pediatric Use; Geriatric Use"
+        },
+        {
+          "id": "insert",
+          "sections": "1; 8.4\u20138.6; 14"
+        },
+        {
+          "id": "gel",
+          "sections": "Geriatric Use; Pediatric Use"
+        },
+        {
+          "id": "im",
+          "sections": "Geriatric Use; Pediatric Use"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal, hepatic and cardiometabolic disease",
+      "assertions": [
+        "No universal renal dosing schedule is established. Selected IM specifically calls for caution/monitoring with renal insufficiency; fluid retention can worsen cardiac/renal problems with oral, gel or IM therapy. Liver contraindications differ and require the actual label. Monitor glucose in susceptible patients receiving estrogen/progestin treatment and review depression history; do not equate limited pharmacokinetic data with proven safety in organ failure."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Special Populations; CONTRAINDICATIONS; General"
+        },
+        {
+          "id": "insert",
+          "sections": "4; 8.7"
+        },
+        {
+          "id": "gel",
+          "sections": "PRECAUTIONS, General; CONTRAINDICATIONS"
+        },
+        {
+          "id": "im",
+          "sections": "Special Populations; PRECAUTIONS; CONTRAINDICATIONS"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and identity",
+      "assertions": [
+        "Progesterone converts an estrogen-primed proliferative endometrium toward a secretory state, supporting implantation and pregnancy in the relevant reproductive setting. Micronized progesterone is chemically the human hormone; it is not medroxyprogesterone acetate. Its use for amenorrhea can produce withdrawal bleeding after an adequate course and appropriate endometrial priming."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "DESCRIPTION; CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "insert",
+          "sections": "12.1"
+        },
+        {
+          "id": "gel",
+          "sections": "CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "im",
+          "sections": "CLINICAL PHARMACOLOGY; DOSAGE"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Route-dependent absorption",
+      "assertions": [
+        "Oral Prometrium reaches peak concentrations within about 3 hours and food increases exposure. Endometrin delivers vaginal progesterone, with steady-state concentrations reached within about one day in its small PK study. Crinone\u2019s bioadhesive gel prolongs absorption; absorption duration and intrinsic elimination are not interchangeable half-life measures. Selected IM oil studies show prolonged absorption compared with rapid oral peaks; no oral/vaginal/IM milligram conversion is established here."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Pharmacokinetics; Food-Drug Interaction"
+        },
+        {
+          "id": "insert",
+          "sections": "12.3"
+        },
+        {
+          "id": "gel",
+          "sections": "Pharmacokinetics, Absorption; CLINICAL STUDIES"
+        },
+        {
+          "id": "im",
+          "sections": "Pharmacokinetics, Absorption"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Metabolism and exposure interpretation",
+      "assertions": [
+        "Progesterone is highly protein-bound and extensively metabolized, principally in the liver, to conjugated metabolites cleared through urine and bile. Route, food, delivery vehicle and organ disease affect exposure. Serum concentrations from a selected PK study do not establish a universal pregnancy-support target or justify unsupervised escalation."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Pharmacokinetics"
+        },
+        {
+          "id": "insert",
+          "sections": "12.3"
+        },
+        {
+          "id": "gel",
+          "sections": "Pharmacokinetics"
+        },
+        {
+          "id": "im",
+          "sections": "Pharmacokinetics; Special Populations"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring and follow-up",
+      "assertions": [
+        "Review abnormal bleeding, clot/cancer/liver history, relevant allergies, depression and fluid-retention risks before starting. Follow bleeding response and regimen adherence; persistent/unexpected bleeding needs assessment rather than dose escalation. During ART, follow the fertility team\u2019s pregnancy and duration plan. Assess worsening mood, edema, sedation and local injection/vaginal symptoms; evaluate serious clot or pulmonary symptoms urgently."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "CONTRAINDICATIONS; WARNINGS; PRECAUTIONS"
+        },
+        {
+          "id": "insert",
+          "sections": "4; 5; 17"
+        },
+        {
+          "id": "gel",
+          "sections": "WARNINGS; PRECAUTIONS"
+        },
+        {
+          "id": "im",
+          "sections": "WARNINGS; PRECAUTIONS"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Administration counseling",
+      "assertions": [
+        "Take oral capsules at bedtime because of dizziness/drowsiness. Use Endometrin\u2019s disposable applicator for the vaginal insert, and Crinone\u2019s single-use applicator only vaginally; do not swallow either. Crinone may leave small white gel globules/discharge for several days, but persistent irritation, malodor or pain needs review. IM injections require the prescribed technique and visual inspection for particles/discoloration; never inject a vaginal product."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "DOSAGE; Patient Information"
+        },
+        {
+          "id": "insert",
+          "sections": "17; Patient Information"
+        },
+        {
+          "id": "gel",
+          "sections": "Patient Information; PRECAUTIONS"
+        },
+        {
+          "id": "im",
+          "sections": "DOSAGE; Patient Information"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Urgent symptoms and planned surgery",
+      "assertions": [
+        "Seek immediate care for chest pain, sudden dyspnea, painful/swollen leg or sudden vision/neurologic symptoms. Fever/dyspnea after sesame-oil IM treatment needs urgent assessment for eosinophilic pneumonia. Discuss high-thrombosis-risk surgery or prolonged immobilization with the prescriber; Prometrium\u2019s label suggests stopping 4\u20136 weeks beforehand if feasible, but do not independently interrupt pregnancy support or apply that timing to every route."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "WARNINGS; Patient Information"
+        },
+        {
+          "id": "insert",
+          "sections": "5; 17"
+        },
+        {
+          "id": "gel",
+          "sections": "WARNINGS"
+        },
+        {
+          "id": "im",
+          "sections": "WARNINGS"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Prometrium 100 mg is a peach round capsule marked SV, NDC 72989-372-30; 200 mg is pale yellow oval marked SV2, NDC 72989-373-30. Endometrin 100 mg is a white/off-white insert marked FPI / 100, supplied with disposable applicators. Selected Hikma injection is 50 mg/mL in a 10 mL multidose vial, NDC 0143-9725-01."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "insert",
+          "sections": "3; 16"
+        },
+        {
+          "id": "im",
+          "sections": "HOW SUPPLIED"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Reviewed oral capsules contain 100 or 200 mg progesterone in peanut oil. Endometrin inserts contain 100 mg. Crinone 4% and 8% deliver 45 and 90 mg respectively in 1.125 g gel from each single-use applicator (the applicator holds 1.3 g). Selected IM solution contains 50 mg/mL progesterone with sesame oil and 10% benzyl alcohol preservative. Other compounded products require separate quality/formulation review."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "DESCRIPTION"
+        },
+        {
+          "id": "insert",
+          "sections": "3; 11"
+        },
+        {
+          "id": "gel",
+          "sections": "DESCRIPTION; HOW SUPPLIED"
+        },
+        {
+          "id": "im",
+          "sections": "DESCRIPTION; HOW SUPPLIED"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Prometrium: 25\u00b0C, permitted 15\u201330\u00b0C excursions, tight light-resistant container protected from moisture. Endometrin: 20\u201325\u00b0C with 15\u201330\u00b0C excursions; keep inserts/applicators in their supplied packaging until use. Crinone: 20\u201325\u00b0C, single-use prefilled applicators. Selected IM: 20\u201325\u00b0C; inspect before use and follow applicable multidose-vial handling instructions without inventing a product-specific open-vial expiration. Keep all products out of children\u2019s reach."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "HOW SUPPLIED, STORAGE"
+        },
+        {
+          "id": "insert",
+          "sections": "16; Patient Information"
+        },
+        {
+          "id": "gel",
+          "sections": "HOW SUPPLIED; Patient Information"
+        },
+        {
+          "id": "im",
+          "sections": "HOW SUPPLIED; DOSAGE"
+        }
+      ]
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Oral micronized progesterone",
+      "assertions": [
+        "Prometrium is indicated to prevent endometrial hyperplasia in postmenopausal women with a uterus receiving conjugated estrogen tablets, and for secondary amenorrhea. Its oral label should not be read as approval of infertility treatment, miscarriage prevention or contraception."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "INDICATIONS AND USAGE; DOSAGE AND ADMINISTRATION"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Vaginal ART and amenorrhea products",
+      "assertions": [
+        "Current Endometrin is approved as part of ART to support implantation in infertile women less than 35 years old and maintain pregnancy after implantation up to 10 weeks. Crinone 8% is labeled for ART progesterone supplementation/replacement in progesterone-deficient infertile women; 4% is labeled for secondary amenorrhea, with an 8% trial for nonresponse. The products do not share an identical age restriction or schedule."
+      ],
+      "sources": [
+        {
+          "id": "insert",
+          "sections": "1; 14"
+        },
+        {
+          "id": "gel",
+          "sections": "INDICATIONS AND USAGE; DOSAGE AND ADMINISTRATION"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Intramuscular indication",
+      "assertions": [
+        "The selected Hikma injection is labeled for amenorrhea and abnormal uterine bleeding due to hormonal imbalance without organic pathology, such as fibroids or uterine cancer. This label does not approve an ART regimen; fertility-clinic IM use is a separate off-label protocol, not the labeled amenorrhea schedule."
+      ],
+      "sources": [
+        {
+          "id": "im",
+          "sections": "INDICATIONS AND USAGE; DOSAGE AND ADMINISTRATION"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Guideline-based pregnancy uses",
+      "assertions": [
+        "NICE recommends selected vaginal micronized progesterone for threatened miscarriage and prophylactic vaginal progesterone for selected preterm-birth risks. These guideline uses do not establish U.S. approval for every oral capsule, gel, insert or injection. Confirm the prescribed vaginal preparation, eligibility and duration with the obstetric team."
+      ],
+      "sources": [
+        {
+          "id": "ng126",
+          "sections": "1.9.1\u20131.9.3; rationale, Management of miscarriage"
+        },
+        {
+          "id": "ng25",
+          "sections": "1.2.1\u20131.2.3"
+        },
+        {
+          "id": "oral",
+          "sections": "Pregnancy"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Oral Prometrium schedules",
+      "assertions": [
+        "Take as a single daily bedtime dose. For endometrial protection with daily conjugated estrogens: 200 mg orally for 12 consecutive days of each 28-day cycle. For secondary amenorrhea: 400 mg at bedtime for 10 days. These are the selected product-label schedules, not a universal menopausal-hormone regimen. A patient with swallowing difficulty may use a glass of water while standing, as the label instructs."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "DOSAGE AND ADMINISTRATION; PRECAUTIONS, General"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Labeled oral purpose",
+          "Schedule"
+        ],
+        "rows": [
+          [
+            "Endometrial hyperplasia prevention with conjugated estrogens",
+            "200 mg at bedtime for 12 days per 28-day cycle"
+          ],
+          [
+            "Secondary amenorrhea",
+            "400 mg at bedtime for 10 days"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Vaginal ART schedules",
+      "assertions": [
+        "Endometrin: 100 mg vaginally two or three times daily, starting the day after oocyte retrieval, for up to 10 weeks total treatment. Crinone 8%: 90 mg vaginally once daily for supplementation, or twice daily for partial/complete ovarian failure requiring replacement; if pregnancy occurs, the label allows continuation to placental autonomy, up to 10\u201312 weeks. Do not treat Endometrin\u2019s total treatment duration as identical to a gestational-age cutoff."
+      ],
+      "sources": [
+        {
+          "id": "insert",
+          "sections": "2; 17"
+        },
+        {
+          "id": "gel",
+          "sections": "DOSAGE AND ADMINISTRATION, Assisted Reproductive Technology"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Vaginal amenorrhea and IM schedules",
+      "assertions": [
+        "Crinone 4% delivers 45 mg every other day for up to six doses; for nonresponse, an 8% 90 mg every-other-day trial up to six doses is labeled. Use the 8% product to increase strength, not additional gel volume. Selected IM amenorrhea dosing is 5\u201310 mg daily for 6\u20138 consecutive days; functional uterine bleeding dosing is 5\u201310 mg daily for six doses. If estrogen is also used, injections begin after two weeks of estrogen; stop injections if menstrual flow starts."
+      ],
+      "sources": [
+        {
+          "id": "gel",
+          "sections": "DOSAGE AND ADMINISTRATION, Secondary Amenorrhea"
+        },
+        {
+          "id": "im",
+          "sections": "DOSAGE AND ADMINISTRATION"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Threatened-miscarriage guideline dose",
+      "assertions": [
+        "Current NICE NG126 recommends vaginal micronized progesterone 400 mg twice daily when ultrasound confirms an intrauterine pregnancy, there is vaginal bleeding and a previous miscarriage. If a fetal heartbeat is confirmed, continue until 16 completed weeks. This specific vaginal regimen is not a recommendation to swallow Prometrium for pregnancy or substitute Endometrin 100 mg or Crinone 90 mg."
+      ],
+      "sources": [
+        {
+          "id": "ng126",
+          "sections": "1.9.2\u20131.9.3; rationale, Management of miscarriage"
+        },
+        {
+          "id": "oral",
+          "sections": "Pregnancy"
+        },
+        {
+          "id": "insert",
+          "sections": "2"
+        },
+        {
+          "id": "gel",
+          "sections": "DOSAGE"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Preterm-birth prevention and organ adjustments",
+      "assertions": [
+        "NICE considers vaginal progesterone with a prior spontaneous preterm birth/loss or a short cervix, and offers a choice with cerclage when both criteria are present; treatment starts at 16+0\u201324+0 weeks and continues to at least 34 weeks. No numerical dose is inferred here from NG25. None of these selected labels gives a renal-adjustment formula. Liver contraindications vary by product; do not invent a reduced dose to bypass them."
+      ],
+      "sources": [
+        {
+          "id": "ng25",
+          "sections": "1.2.1\u20131.2.3"
+        },
+        {
+          "id": "oral",
+          "sections": "Special Populations; CONTRAINDICATIONS"
+        },
+        {
+          "id": "insert",
+          "sections": "4; 8.7"
+        },
+        {
+          "id": "gel",
+          "sections": "CONTRAINDICATIONS"
+        },
+        {
+          "id": "im",
+          "sections": "Special Populations; CONTRAINDICATIONS"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Suspected DVT/PE, stroke, MI or retinal vascular events require immediate assessment and product-directed discontinuation. Review unexplained bleeding, hormone-sensitive malignancy and liver disease before treatment. Monitor depression and fluid retention where relevant; severe recurrence of depression with vaginal/IM therapy may require stopping.",
+        "Prometrium may cause marked dizziness/drowsiness, particularly early in treatment; take at bedtime and use caution driving. Its current label retains cardiovascular and malignancy warnings. WHI cardiovascular-risk findings discussed in the label came from conjugated estrogens plus medroxyprogesterone acetate, not a direct progesterone trial; do not assign those numerical risks to every progesterone route or assume other combinations are risk-free.",
+        "Prometrium contains peanut oil: peanut allergy is a contraindication. Selected IM progesterone contains sesame oil and can cause allergy and acute eosinophilic pneumonia, often reported 2\u20134 weeks after starting; fever, dyspnea or hypoxia needs prompt assessment and immediate discontinuation of that sesame-oil injection. These excipient-specific findings should not be assigned to all vaginal products."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "WARNINGS; PRECAUTIONS; DESCRIPTION"
+        },
+        {
+          "id": "insert",
+          "sections": "4; 5"
+        },
+        {
+          "id": "gel",
+          "sections": "WARNINGS; PRECAUTIONS"
+        },
+        {
+          "id": "im",
+          "sections": "WARNINGS; CONTRAINDICATIONS; DESCRIPTION"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "All reviewed products exclude relevant ingredient hypersensitivity and undiagnosed genital bleeding, but lists differ. Prometrium additionally excludes known/suspected/history of breast cancer, active/history DVT/PE or arterial thromboembolism, and known liver dysfunction/disease. Endometrin excludes missed abortion/ectopic pregnancy, hormone-sensitive malignancy/history, arterial/venous thromboembolism or severe thrombophlebitis/history, hepatic adenoma/carcinoma, acute hepatitis and severe decompensated cirrhosis. Crinone excludes liver dysfunction/disease, breast/genital malignancy, missed abortion and active thrombophlebitis/thromboembolic disorders or prior hormone-associated events. Selected IM excludes liver disease, breast/genital malignancy, missed abortion and current/past thromboembolic disorders/cerebral apoplexy, plus sesame allergy. Check the complete product-specific list before prescribing."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "CONTRAINDICATIONS"
+        },
+        {
+          "id": "insert",
+          "sections": "4"
+        },
+        {
+          "id": "gel",
+          "sections": "CONTRAINDICATIONS"
+        },
+        {
+          "id": "im",
+          "sections": "CONTRAINDICATIONS"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "The reviewed February 2026 Prometrium label and current Endometrin, Crinone and selected Hikma IM labels contain no formal boxed warning. Older Prometrium boxed-warning wording must not be represented as the current product box. Absence of a box does not remove current thromboembolic, cancer, sedation or injection pulmonary warnings."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Complete current label; WARNINGS; revision footer"
+        },
+        {
+          "id": "insert",
+          "sections": "Complete label; 5"
+        },
+        {
+          "id": "gel",
+          "sections": "Complete label; WARNINGS"
+        },
+        {
+          "id": "im",
+          "sections": "Complete label; WARNINGS"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Oral treatment may cause headache, breast tenderness, dizziness/drowsiness, bloating, nausea or irregular bleeding. Vaginal products may cause local irritation/discharge, abdominal pain/cramps, headache or bleeding. IM treatment may cause injection-site pain/irritation and allergic reactions. Serious risks include thromboembolic events and the route-specific warnings above. ART-study ovarian hyperstimulation and procedure-related symptoms are not automatically caused by progesterone."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "ADVERSE REACTIONS; Patient Information"
+        },
+        {
+          "id": "insert",
+          "sections": "6"
+        },
+        {
+          "id": "gel",
+          "sections": "ADVERSE REACTIONS"
+        },
+        {
+          "id": "im",
+          "sections": "ADVERSE REACTIONS; WARNINGS"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Local vaginal medicines",
+      "assertions": [
+        "Endometrin is not recommended with other vaginal products because release/absorption may be altered. Crinone should generally not be used concurrently with local vaginal therapy; if another local treatment is necessary, its label specifies separation by at least 6 hours before or after gel administration. Do not assume that spacing makes combination use acceptable with Endometrin."
+      ],
+      "sources": [
+        {
+          "id": "insert",
+          "sections": "7.2; 17"
+        },
+        {
+          "id": "gel",
+          "sections": "PRECAUTIONS, Information for Patients"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Enzyme interactions and food",
+      "assertions": [
+        "CYP3A4 inducers may increase Endometrin elimination and reduce effect; review rifampin and other inducers with the fertility team. Oral and IM labels describe in-vitro ketoconazole inhibition of progesterone metabolism with uncertain clinical relevance; no automatic dose adjustment is established by those data. Crinone has no assessed clinical drug-interaction studies. Food increases oral Prometrium bioavailability; follow the prescribed routine rather than importing a food rule from a vaginal product."
+      ],
+      "sources": [
+        {
+          "id": "insert",
+          "sections": "7.1"
+        },
+        {
+          "id": "oral",
+          "sections": "Drug Interaction; Food-Drug Interaction"
+        },
+        {
+          "id": "im",
+          "sections": "Drug Interactions"
+        },
+        {
+          "id": "gel",
+          "sections": "PRECAUTIONS, Drug Interactions"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Estrogen combinations and laboratory context",
+      "assertions": [
+        "The accompanying estrogen has its own contraindications/warnings. Inform clinicians and laboratories about hormone therapy: estrogen/progestin combinations may alter some coagulation, thyroid-binding and hepatic test results. This is not proof that isolated progesterone always produces the same changes, and does not replace evaluation of bleeding or thrombosis."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Drug-Laboratory Test Interactions; WARNINGS"
+        },
+        {
+          "id": "gel",
+          "sections": "PRECAUTIONS"
+        },
+        {
+          "id": "im",
+          "sections": "PRECAUTIONS"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy",
+      "assertions": [
+        "Prometrium\u2019s selected oral label says it should not be used during pregnancy; pregnancy is addressed in precautions rather than its current six-item formal contraindication list. Endometrin and Crinone 8% instead have labeled ART pregnancy support. Selected IM has no labeled ART indication. NICE\u2019s specific vaginal threatened-miscarriage/preterm-birth recommendations are separate from these U.S. product approvals; do not extrapolate benefit to all bleeding or recurrent miscarriage."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Pregnancy; CONTRAINDICATIONS"
+        },
+        {
+          "id": "insert",
+          "sections": "1; 8.1"
+        },
+        {
+          "id": "gel",
+          "sections": "INDICATIONS; Pregnancy"
+        },
+        {
+          "id": "im",
+          "sections": "INDICATIONS"
+        },
+        {
+          "id": "ng126",
+          "sections": "1.9.1\u20131.9.3; rationale"
+        },
+        {
+          "id": "ng25",
+          "sections": "1.2.1\u20131.2.3"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Breastfeeding",
+      "assertions": [
+        "Progesterone/progestins are detectable in milk. Prometrium advises caution, and Crinone/IM labels state infant effects are undetermined. Current Endometrin describes a study without adverse infant growth or milk-production effects but still directs individual assessment of breastfeeding benefits, maternal need and possible infant effects. That limited observation does not establish universal safety for every route/dose."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Nursing Women"
+        },
+        {
+          "id": "insert",
+          "sections": "8.2"
+        },
+        {
+          "id": "gel",
+          "sections": "Nursing Mothers"
+        },
+        {
+          "id": "im",
+          "sections": "Nursing Mothers"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children, older age and body size",
+      "assertions": [
+        "Prometrium is not indicated in children, and pediatric studies are lacking. Pediatric safety/effectiveness are not established for the reviewed vaginal/IM products. Endometrin is not indicated at age 65 or older and its current ART indication is limited to infertile women under 35; safety/efficacy at BMI >34 kg/m\u00b2 has not been studied. Other selected labels have limited or unestablished older-adult evidence rather than a new age-based dose."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Pediatric Use; Geriatric Use"
+        },
+        {
+          "id": "insert",
+          "sections": "1; 8.4\u20138.6; 14"
+        },
+        {
+          "id": "gel",
+          "sections": "Geriatric Use; Pediatric Use"
+        },
+        {
+          "id": "im",
+          "sections": "Geriatric Use; Pediatric Use"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal, hepatic and cardiometabolic disease",
+      "assertions": [
+        "No universal renal dosing schedule is established. Selected IM specifically calls for caution/monitoring with renal insufficiency; fluid retention can worsen cardiac/renal problems with oral, gel or IM therapy. Liver contraindications differ and require the actual label. Monitor glucose in susceptible patients receiving estrogen/progestin treatment and review depression history; do not equate limited pharmacokinetic data with proven safety in organ failure."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Special Populations; CONTRAINDICATIONS; General"
+        },
+        {
+          "id": "insert",
+          "sections": "4; 8.7"
+        },
+        {
+          "id": "gel",
+          "sections": "PRECAUTIONS, General; CONTRAINDICATIONS"
+        },
+        {
+          "id": "im",
+          "sections": "Special Populations; PRECAUTIONS; CONTRAINDICATIONS"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and identity",
+      "assertions": [
+        "Progesterone converts an estrogen-primed proliferative endometrium toward a secretory state, supporting implantation and pregnancy in the relevant reproductive setting. Micronized progesterone is chemically the human hormone; it is not medroxyprogesterone acetate. Its use for amenorrhea can produce withdrawal bleeding after an adequate course and appropriate endometrial priming."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "DESCRIPTION; CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "insert",
+          "sections": "12.1"
+        },
+        {
+          "id": "gel",
+          "sections": "CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "im",
+          "sections": "CLINICAL PHARMACOLOGY; DOSAGE"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Route-dependent absorption",
+      "assertions": [
+        "Oral Prometrium reaches peak concentrations within about 3 hours and food increases exposure. Endometrin delivers vaginal progesterone, with steady-state concentrations reached within about one day in its small PK study. Crinone\u2019s bioadhesive gel prolongs absorption; absorption duration and intrinsic elimination are not interchangeable half-life measures. Selected IM oil studies show prolonged absorption compared with rapid oral peaks; no oral/vaginal/IM milligram conversion is established here."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Pharmacokinetics; Food-Drug Interaction"
+        },
+        {
+          "id": "insert",
+          "sections": "12.3"
+        },
+        {
+          "id": "gel",
+          "sections": "Pharmacokinetics, Absorption; CLINICAL STUDIES"
+        },
+        {
+          "id": "im",
+          "sections": "Pharmacokinetics, Absorption"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Metabolism and exposure interpretation",
+      "assertions": [
+        "Progesterone is highly protein-bound and extensively metabolized, principally in the liver, to conjugated metabolites cleared through urine and bile. Route, food, delivery vehicle and organ disease affect exposure. Serum concentrations from a selected PK study do not establish a universal pregnancy-support target or justify unsupervised escalation."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "Pharmacokinetics"
+        },
+        {
+          "id": "insert",
+          "sections": "12.3"
+        },
+        {
+          "id": "gel",
+          "sections": "Pharmacokinetics"
+        },
+        {
+          "id": "im",
+          "sections": "Pharmacokinetics; Special Populations"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring and follow-up",
+      "assertions": [
+        "Review abnormal bleeding, clot/cancer/liver history, relevant allergies, depression and fluid-retention risks before starting. Follow bleeding response and regimen adherence; persistent/unexpected bleeding needs assessment rather than dose escalation. During ART, follow the fertility team\u2019s pregnancy and duration plan. Assess worsening mood, edema, sedation and local injection/vaginal symptoms; evaluate serious clot or pulmonary symptoms urgently."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "CONTRAINDICATIONS; WARNINGS; PRECAUTIONS"
+        },
+        {
+          "id": "insert",
+          "sections": "4; 5; 17"
+        },
+        {
+          "id": "gel",
+          "sections": "WARNINGS; PRECAUTIONS"
+        },
+        {
+          "id": "im",
+          "sections": "WARNINGS; PRECAUTIONS"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Administration counseling",
+      "assertions": [
+        "Take oral capsules at bedtime because of dizziness/drowsiness. Use Endometrin\u2019s disposable applicator for the vaginal insert, and Crinone\u2019s single-use applicator only vaginally; do not swallow either. Crinone may leave small white gel globules/discharge for several days, but persistent irritation, malodor or pain needs review. IM injections require the prescribed technique and visual inspection for particles/discoloration; never inject a vaginal product."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "DOSAGE; Patient Information"
+        },
+        {
+          "id": "insert",
+          "sections": "17; Patient Information"
+        },
+        {
+          "id": "gel",
+          "sections": "Patient Information; PRECAUTIONS"
+        },
+        {
+          "id": "im",
+          "sections": "DOSAGE; Patient Information"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Urgent symptoms and planned surgery",
+      "assertions": [
+        "Seek immediate care for chest pain, sudden dyspnea, painful/swollen leg or sudden vision/neurologic symptoms. Fever/dyspnea after sesame-oil IM treatment needs urgent assessment for eosinophilic pneumonia. Discuss high-thrombosis-risk surgery or prolonged immobilization with the prescriber; Prometrium\u2019s label suggests stopping 4\u20136 weeks beforehand if feasible, but do not independently interrupt pregnancy support or apply that timing to every route."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "WARNINGS; Patient Information"
+        },
+        {
+          "id": "insert",
+          "sections": "5; 17"
+        },
+        {
+          "id": "gel",
+          "sections": "WARNINGS"
+        },
+        {
+          "id": "im",
+          "sections": "WARNINGS"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Prometrium 100 mg is a peach round capsule marked SV, NDC 72989-372-30; 200 mg is pale yellow oval marked SV2, NDC 72989-373-30. Endometrin 100 mg is a white/off-white insert marked FPI / 100, supplied with disposable applicators. Selected Hikma injection is 50 mg/mL in a 10 mL multidose vial, NDC 0143-9725-01."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "insert",
+          "sections": "3; 16"
+        },
+        {
+          "id": "im",
+          "sections": "HOW SUPPLIED"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Reviewed oral capsules contain 100 or 200 mg progesterone in peanut oil. Endometrin inserts contain 100 mg. Crinone 4% and 8% deliver 45 and 90 mg respectively in 1.125 g gel from each single-use applicator (the applicator holds 1.3 g). Selected IM solution contains 50 mg/mL progesterone with sesame oil and 10% benzyl alcohol preservative. Other compounded products require separate quality/formulation review."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "DESCRIPTION"
+        },
+        {
+          "id": "insert",
+          "sections": "3; 11"
+        },
+        {
+          "id": "gel",
+          "sections": "DESCRIPTION; HOW SUPPLIED"
+        },
+        {
+          "id": "im",
+          "sections": "DESCRIPTION; HOW SUPPLIED"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Prometrium: 25\u00b0C, permitted 15\u201330\u00b0C excursions, tight light-resistant container protected from moisture. Endometrin: 20\u201325\u00b0C with 15\u201330\u00b0C excursions; keep inserts/applicators in their supplied packaging until use. Crinone: 20\u201325\u00b0C, single-use prefilled applicators. Selected IM: 20\u201325\u00b0C; inspect before use and follow applicable multidose-vial handling instructions without inventing a product-specific open-vial expiration. Keep all products out of children\u2019s reach."
+      ],
+      "sources": [
+        {
+          "id": "oral",
+          "sections": "HOW SUPPLIED, STORAGE"
+        },
+        {
+          "id": "insert",
+          "sections": "16; Patient Information"
+        },
+        {
+          "id": "gel",
+          "sections": "HOW SUPPLIED; Patient Information"
+        },
+        {
+          "id": "im",
+          "sections": "HOW SUPPLIED; DOSAGE"
+        }
+      ]
+    }
+  ],
+  "hero_assertions": {
+    "essential": {
+      "title": "Match route and excipient safety",
+      "text": "Check peanut allergy for Prometrium and sesame allergy for the selected injection. Seek urgent care for clot symptoms or fever/breathing difficulty after sesame-oil injections; follow the prescribed route and treatment calendar.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "facts": [
+      [
+        "Reviewed routes",
+        "Oral / vaginal / intramuscular"
+      ],
+      [
+        "Oral product",
+        "Peanut oil; bedtime dosing"
+      ],
+      [
+        "Route equivalence",
+        "No universal mg-for-mg conversion"
+      ]
+    ],
+    "sources": [
+      "oral",
+      "insert",
+      "gel",
+      "im",
+      "ng126",
+      "ng25"
+    ]
+  },
+  "section_assertions": [
+    {
+      "section": "indications",
+      "summary": "Progesterone is one hormone supplied through several noninterchangeable treatment routes.",
+      "takeaway": "Match the product, route and clinical indication before selecting a regimen.",
+      "sources": [
+        "gel",
+        "im",
+        "insert",
+        "ng126",
+        "ng25",
+        "oral"
+      ]
+    },
+    {
+      "section": "dosage",
+      "summary": "Route-specific doses and treatment windows cannot be converted milligram for milligram.",
+      "takeaway": "Oral bedtime dosing, vaginal applicators and IM injection require different instructions.",
+      "sources": [
+        "gel",
+        "im",
+        "insert",
+        "ng126",
+        "ng25",
+        "oral"
+      ]
+    },
+    {
+      "section": "safety",
+      "summary": "Thromboembolism, unexplained bleeding and excipient allergy require active screening.",
+      "takeaway": "Safety instructions must remain specific to the route and actual product.",
+      "sources": [
+        "gel",
+        "im",
+        "insert",
+        "oral"
+      ]
+    },
+    {
+      "section": "interactions",
+      "summary": "Other vaginal treatments and metabolic interactions need product-specific review.",
+      "takeaway": "Do not borrow gel-spacing instructions for a vaginal insert.",
+      "sources": [
+        "gel",
+        "im",
+        "insert",
+        "oral"
+      ]
+    },
+    {
+      "section": "populations",
+      "summary": "The appropriateness of pregnancy use depends on the route and purpose.",
+      "takeaway": "An oral product\u2019s pregnancy restriction does not negate approved vaginal ART support.",
+      "sources": [
+        "gel",
+        "im",
+        "insert",
+        "ng126",
+        "ng25",
+        "oral"
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "summary": "Progesterone promotes secretory endometrial differentiation after estrogen priming.",
+      "takeaway": "Equal milligram amounts through different routes do not guarantee equal tissue effects.",
+      "sources": [
+        "gel",
+        "im",
+        "insert",
+        "oral"
+      ]
+    },
+    {
+      "section": "practice",
+      "summary": "Confirm the indication, allergy history and exact route before treatment.",
+      "takeaway": "Keep the fertility or menopause treatment calendar explicit.",
+      "sources": [
+        "gel",
+        "im",
+        "insert",
+        "oral"
+      ]
+    },
+    {
+      "section": "product",
+      "summary": "Strength, delivery vehicle and allergy-relevant ingredients identify the product.",
+      "takeaway": "Do not substitute capsules, inserts, gels or oil injections by nominal milligrams.",
+      "sources": [
+        "gel",
+        "im",
+        "insert",
+        "oral"
+      ]
+    }
+  ],
+  "limitations": [
+    "No systemic/vaginal/IM dose interchange or universal pregnancy-support serum target inferred.",
+    "No U.S.-approved ART claim or ART dose assigned to Hikma IM label; clinic protocols and compounded products require separate review.",
+    "Current Endometrin label no explicit clinical revision found; SPL version/effective time retained rather than invented revision.",
+    "Current Prometrium 02/2026 no boxed warning; full cardiovascular/cancer warnings retained, WHI CE/MPA risk not assigned numerically to progesterone.",
+    "NICE NG126 updated 2026 renumbered threatened miscarriage to 1.9.2\u20131.9.3; older 1.5 references not used.",
+    "NG25 defines eligibility/timing but no numerical prophylaxis dose is supplied here."
+  ],
+  "unresolved_source_questions": [
+    {
+      "material": false,
+      "source": "insert",
+      "sections": "label metadata",
+      "issue": "No explicit clinical revision date found in current Endometrin SPL. Current version27 and effective20260729 recorded; clinical claims reviewed against full current label, no invented revision date."
+    }
+  ],
+  "validation": {
+    "schema": "Passed current validateMonograph actual-file check (zero errors), 2026-10-01",
+    "tests_build_lint": "Parent batch checks required",
+    "rendered_page": "Parent batch QA required",
+    "formatting": "Manual final strings and dose/route/age tables reread; numeric spacing and three hero tuple arrays checked",
+    "assertion_map": "Card paragraphs and tables match final monograph; section summaries/takeaways and hero statements mapped to cited sources."
+  },
+  "monograph_sha256": "cc5ef05234c1acce2f856c15997e87e95acdd5acc60e83732e0f0b7251c66c83",
+  "source_archive": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-12-thyroid-metformin"
+}
