@@ -1,0 +1,1438 @@
+{
+  "date": "2026-10-01",
+  "status": "verified",
+  "scope": "Energy and nitrogen sections plus two source protein-target additions in the existing PN calculation module",
+  "module": "parenteral-nutrition-calculations",
+  "wholeModuleVerified": false,
+  "sourcePolicy": "Supplied RxPrep 2023 only for new claims. Historical outside-source references retained without refreshing or attributing them to this book.",
+  "source": {
+    "chapter": 11,
+    "printedPages": [
+      151,
+      154
+    ],
+    "pdfPages": [
+      159,
+      162
+    ],
+    "allFourPagesTextTablesAndFiguresRead": true,
+    "wholeChapterReadEvidence": "parenteral-nutrition-calculations-review.json",
+    "sourceExampleChecks": "Prior record already recalculated all 54 Chapter 11 exercises in 58 checks. This turn reuses that evidence; no duplicate source-example count added."
+  },
+  "mappingSearch": {
+    "result": "Existing corresponding PN module expanded. Search found no separate Harris-Benedict teaching/bank coverage. Existing protein/NPC formula lacked worked nitrogen questions. No new module or route created.",
+    "searched": [
+      "Module data and banks",
+      "pharmacyModules catalog",
+      "pharmacyLearning guides",
+      "pharmacyReview standalone items",
+      "pharmacyCumulativeReview automatic selection"
+    ],
+    "broaderBank": "No standalone Harris-Benedict or nitrogen-intake item found. Five automatic PN selections remain supported by the module bank; new final selection tests nitrogen-intake-versus-balance distinction."
+  },
+  "scopeCounts": {
+    "newLessons": 2,
+    "newTeachingSections": 12,
+    "addedSectionsInExistingProteinLesson": 2,
+    "newFigures": 2,
+    "newEmbeddedChecks": 2,
+    "newOriginalBankItems": 26,
+    "revisedPriorPrompts": 1,
+    "unchangedPriorBankItems": 115,
+    "retainedExistingItemsReverified": 4,
+    "moduleLessons": 9,
+    "moduleBankItems": 142,
+    "moduleEmbeddedChecks": 9
+  },
+  "verifiedCoverage": [
+    {
+      "lesson": "caloric-needs",
+      "status": "verified",
+      "sha256": "b456a2e85dc5ffc6ce78f4f76860562df0941c409ae5d2dfa37950c5fdbf120d",
+      "topics": [
+        "BEE versus TEE",
+        "Male/female source Harris-Benedict coefficients",
+        "Total weight unless specified and unit conversion",
+        "Supplied activity/stress factors and source table ranges",
+        "Rounding instructions including source rounded-BEE path",
+        "Rough BEE comparison and explicitly defined fever adjustment"
+      ],
+      "sourcePrintedPages": [
+        151,
+        152
+      ],
+      "sourcePdfPages": [
+        159,
+        160
+      ]
+    },
+    {
+      "lesson": "nitrogen-intake-ratios",
+      "status": "verified",
+      "sha256": "20ae9f327830aca10956a8ef6dc9a2776393e01acce6dfb18fe9d93b480bfea2",
+      "topics": [
+        "Protein from specified amino acid concentration",
+        "Nitrogen = protein/6.25",
+        "Intake versus gains-minus-losses balance",
+        "NPC excludes amino acids",
+        "NPC:N calculation and source comparison values",
+        "Stock volume, protein energy and nitrogen as separate outputs"
+      ],
+      "sourcePrintedPages": [
+        152,
+        154
+      ],
+      "sourcePdfPages": [
+        160,
+        162
+      ]
+    },
+    {
+      "lesson": "protein-energy-targets",
+      "status": "reviewing",
+      "verifiedAddedSections": [
+        "Use the stated protein requirement and weight",
+        "Clarify whether the energy goal includes protein"
+      ],
+      "sourcePrintedPages": [
+        152,
+        153
+      ],
+      "sourcePdfPages": [
+        160,
+        161
+      ],
+      "remaining": "Historical exact propofol value and broader clinical monitoring claims still require supplied-book support."
+    }
+  ],
+  "questionReview": [
+    {
+      "id": "pncalc-energy-001",
+      "status": "verified",
+      "answerIndex": 0,
+      "reviewHref": "#caloric-needs",
+      "sha256": "55661a2b0cdb26dce6c287aae96d23c3d788bbd54e7f8fed0382652582613b00",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "sourcePrintedPages": [
+        151,
+        152
+      ],
+      "sourcePdfPages": [
+        159,
+        160
+      ],
+      "originalQuestion": true
+    },
+    {
+      "id": "pncalc-energy-002",
+      "status": "verified",
+      "answerIndex": 1,
+      "reviewHref": "#caloric-needs",
+      "sha256": "903ed0dc97ccfc8761af14165ab86e13f2f64452eee30114a2b2d481e0b92717",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "sourcePrintedPages": [
+        151,
+        152
+      ],
+      "sourcePdfPages": [
+        159,
+        160
+      ],
+      "originalQuestion": true
+    },
+    {
+      "id": "pncalc-energy-003",
+      "status": "verified",
+      "answerIndex": 2,
+      "reviewHref": "#caloric-needs",
+      "sha256": "e5b34e6d488ea194df0c285473fbba1628242f7940a65166f59b8036bec73f0a",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "sourcePrintedPages": [
+        151,
+        152
+      ],
+      "sourcePdfPages": [
+        159,
+        160
+      ],
+      "originalQuestion": true,
+      "independentArithmetic": {
+        "label": "pncalc-energy-003",
+        "value": "1600",
+        "expected": "1600",
+        "passed": true
+      }
+    },
+    {
+      "id": "pncalc-energy-004",
+      "status": "verified",
+      "answerIndex": 3,
+      "reviewHref": "#caloric-needs",
+      "sha256": "280f638030dc8da89fa02ef6b6c59a569c409ff82c25e70bae93673538064141",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "sourcePrintedPages": [
+        151,
+        152
+      ],
+      "sourcePdfPages": [
+        159,
+        160
+      ],
+      "originalQuestion": true,
+      "independentArithmetic": {
+        "label": "pncalc-energy-004",
+        "value": "1349",
+        "expected": "1349",
+        "passed": true
+      }
+    },
+    {
+      "id": "pncalc-energy-005",
+      "status": "verified",
+      "answerIndex": 0,
+      "reviewHref": "#caloric-needs",
+      "sha256": "7c50d0ca5535af7b4f5c63fde4944f6a1371d2aa088112b9328736a75a9ec9e7",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "sourcePrintedPages": [
+        151,
+        152
+      ],
+      "sourcePdfPages": [
+        159,
+        160
+      ],
+      "originalQuestion": true,
+      "independentArithmetic": {
+        "label": "pncalc-energy-005",
+        "value": "1614",
+        "expected": "1614",
+        "passed": true
+      }
+    },
+    {
+      "id": "pncalc-energy-006",
+      "status": "verified",
+      "answerIndex": 1,
+      "reviewHref": "#caloric-needs",
+      "sha256": "5b0c64422f3da32dfecc5b82b7242c6bb38780789eea603b6d698ccebbf473a3",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "sourcePrintedPages": [
+        151,
+        152
+      ],
+      "sourcePdfPages": [
+        159,
+        160
+      ],
+      "originalQuestion": true,
+      "independentArithmetic": {
+        "label": "pncalc-energy-006",
+        "value": "1354",
+        "expected": "1354",
+        "passed": true
+      }
+    },
+    {
+      "id": "pncalc-energy-007",
+      "status": "verified",
+      "answerIndex": 2,
+      "reviewHref": "#caloric-needs",
+      "sha256": "799e5f22a83a3a336d5f4a8ceab5e5eab894efd678a1557f6a7e11c7ccf8b33e",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "sourcePrintedPages": [
+        151,
+        152
+      ],
+      "sourcePdfPages": [
+        159,
+        160
+      ],
+      "originalQuestion": true,
+      "independentArithmetic": {
+        "label": "pncalc-energy-007",
+        "value": "1728",
+        "expected": "1728",
+        "passed": true
+      }
+    },
+    {
+      "id": "pncalc-energy-008",
+      "status": "verified",
+      "answerIndex": 3,
+      "reviewHref": "#caloric-needs",
+      "sha256": "e9783bdfbc33a1946b971fdd69c28dfa7ae207701e0caf35f3dd00a0c5357e0d",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "sourcePrintedPages": [
+        151,
+        152
+      ],
+      "sourcePdfPages": [
+        159,
+        160
+      ],
+      "originalQuestion": true,
+      "independentArithmetic": {
+        "label": "pncalc-energy-008",
+        "value": "2688.00",
+        "expected": "2688",
+        "passed": true
+      }
+    },
+    {
+      "id": "pncalc-energy-009",
+      "status": "verified",
+      "answerIndex": 0,
+      "reviewHref": "#caloric-needs",
+      "sha256": "890bfb77c4f780a85f2c3cfd7b5802181106003f093df266c45fd90a13e71d96",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "sourcePrintedPages": [
+        151,
+        152
+      ],
+      "sourcePdfPages": [
+        159,
+        160
+      ],
+      "originalQuestion": true,
+      "independentArithmetic": {
+        "label": "pncalc-energy-009",
+        "value": "2184.00",
+        "expected": "2184",
+        "passed": true
+      }
+    },
+    {
+      "id": "pncalc-energy-010",
+      "status": "verified",
+      "answerIndex": 1,
+      "reviewHref": "#caloric-needs",
+      "sha256": "9457c18eea7378754d056a83ef58ccfd74ee55fa44106d316a97d230479ea215",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "sourcePrintedPages": [
+        151,
+        152
+      ],
+      "sourcePdfPages": [
+        159,
+        160
+      ],
+      "originalQuestion": true,
+      "independentArithmetic": {
+        "label": "pncalc-energy-010",
+        "value": "2752",
+        "expected": "2752",
+        "passed": true
+      }
+    },
+    {
+      "id": "pncalc-energy-011",
+      "status": "verified",
+      "answerIndex": 2,
+      "reviewHref": "#caloric-needs",
+      "sha256": "84976dc5f321ebd246e20a65f3980de147aeda0a230014570917a1c11d93ccd0",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "sourcePrintedPages": [
+        151,
+        152
+      ],
+      "sourcePdfPages": [
+        159,
+        160
+      ],
+      "originalQuestion": true,
+      "independentArithmetic": {
+        "label": "pncalc-energy-011",
+        "value": "2700.00",
+        "expected": "2700",
+        "passed": true
+      }
+    },
+    {
+      "id": "pncalc-energy-012",
+      "status": "verified",
+      "answerIndex": 3,
+      "reviewHref": "#caloric-needs",
+      "sha256": "d0120a879c48c3dc38c8f25d6823cb37fe7c88af91f033e15ec810f1dc73dde5",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "sourcePrintedPages": [
+        151,
+        152
+      ],
+      "sourcePdfPages": [
+        159,
+        160
+      ],
+      "originalQuestion": true,
+      "independentArithmetic": {
+        "label": "pncalc-energy-012",
+        "value": "1400.00",
+        "expected": "1400",
+        "passed": true
+      }
+    },
+    {
+      "id": "pncalc-energy-013",
+      "status": "verified",
+      "answerIndex": 0,
+      "reviewHref": "#caloric-needs",
+      "sha256": "d63bf5dafb62212d824b74cc7bdd16a89712fcf08cc08deb04f619b5451bf374",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "sourcePrintedPages": [
+        151,
+        152
+      ],
+      "sourcePdfPages": [
+        159,
+        160
+      ],
+      "originalQuestion": true,
+      "independentRangeChecks": [
+        {
+          "label": "pncalc-energy-013 lower",
+          "value": "1200",
+          "expected": "1200",
+          "passed": true
+        },
+        {
+          "label": "pncalc-energy-013 upper",
+          "value": "2000",
+          "expected": "2000",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "pncalc-energy-014",
+      "status": "verified",
+      "answerIndex": 1,
+      "reviewHref": "#caloric-needs",
+      "sha256": "690be16136c24c9b965ede97d61b38f81562bedccf5b2a6c681b4940bcfb77ad",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "sourcePrintedPages": [
+        151,
+        152
+      ],
+      "sourcePdfPages": [
+        159,
+        160
+      ],
+      "originalQuestion": true
+    },
+    {
+      "id": "pncalc-nitrogen-001",
+      "status": "verified",
+      "answerIndex": 0,
+      "reviewHref": "#nitrogen-intake-ratios",
+      "sha256": "1bed41c23f789e912215b095dbb4cf91175053f06342b168ccde8ba209eb1290",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "sourcePrintedPages": [
+        152,
+        154
+      ],
+      "sourcePdfPages": [
+        160,
+        162
+      ],
+      "originalQuestion": true,
+      "independentArithmetic": {
+        "label": "pncalc-nitrogen-001",
+        "value": "88.0",
+        "expected": "88",
+        "passed": true
+      }
+    },
+    {
+      "id": "pncalc-nitrogen-002",
+      "status": "verified",
+      "answerIndex": 1,
+      "reviewHref": "#nitrogen-intake-ratios",
+      "sha256": "b86412b39f4c998118ce418e5ff4b855c4d989bdf02310fa62a2054c5385ed3a",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "sourcePrintedPages": [
+        152,
+        154
+      ],
+      "sourcePdfPages": [
+        160,
+        162
+      ],
+      "originalQuestion": true,
+      "independentRangeChecks": [
+        {
+          "label": "pncalc-nitrogen-002 lower",
+          "value": "48.0",
+          "expected": "48",
+          "passed": true
+        },
+        {
+          "label": "pncalc-nitrogen-002 upper",
+          "value": "60",
+          "expected": "60",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "pncalc-nitrogen-003",
+      "status": "verified",
+      "answerIndex": 2,
+      "reviewHref": "#nitrogen-intake-ratios",
+      "sha256": "083e884ee97ab7f59985d2776c1979322005740811b573a6aefe29ad8117e786",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "sourcePrintedPages": [
+        152,
+        154
+      ],
+      "sourcePdfPages": [
+        160,
+        162
+      ],
+      "originalQuestion": true,
+      "independentArithmetic": {
+        "label": "pncalc-nitrogen-003",
+        "value": "304",
+        "expected": "304",
+        "passed": true
+      }
+    },
+    {
+      "id": "pncalc-nitrogen-004",
+      "status": "verified",
+      "answerIndex": 3,
+      "reviewHref": "#nitrogen-intake-ratios",
+      "sha256": "40ac326697db0c1ab4060f68c139b274840f885b86908aa32f256a15e0a2d6c3",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "sourcePrintedPages": [
+        152,
+        154
+      ],
+      "sourcePdfPages": [
+        160,
+        162
+      ],
+      "originalQuestion": true,
+      "independentArithmetic": {
+        "label": "pncalc-nitrogen-004",
+        "value": "11.2",
+        "expected": "11.2",
+        "passed": true
+      }
+    },
+    {
+      "id": "pncalc-nitrogen-005",
+      "status": "verified",
+      "answerIndex": 0,
+      "reviewHref": "#nitrogen-intake-ratios",
+      "sha256": "59715f84d406019aa6ad0de72351578930d1e8a2da09e77d93eb94cc98f77278",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "sourcePrintedPages": [
+        152,
+        154
+      ],
+      "sourcePdfPages": [
+        160,
+        162
+      ],
+      "originalQuestion": true,
+      "independentArithmetic": {
+        "label": "pncalc-nitrogen-005",
+        "value": "13",
+        "expected": "13",
+        "passed": true
+      }
+    },
+    {
+      "id": "pncalc-nitrogen-006",
+      "status": "verified",
+      "answerIndex": 1,
+      "reviewHref": "#nitrogen-intake-ratios",
+      "sha256": "17fa58e2ce2f6e5165c368892809492ff6dcadc5d692d47763cf01779e9dfc6a",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "sourcePrintedPages": [
+        152,
+        154
+      ],
+      "sourcePdfPages": [
+        160,
+        162
+      ],
+      "originalQuestion": true,
+      "independentArithmetic": {
+        "label": "pncalc-nitrogen-006",
+        "value": "1120",
+        "expected": "1120",
+        "passed": true
+      }
+    },
+    {
+      "id": "pncalc-nitrogen-007",
+      "status": "verified",
+      "answerIndex": 2,
+      "reviewHref": "#nitrogen-intake-ratios",
+      "sha256": "c472ff9d4aa7447d7b0845350dd6e0ff33caddbd9bd25f1c91934554a099fb8c",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "sourcePrintedPages": [
+        152,
+        154
+      ],
+      "sourcePdfPages": [
+        160,
+        162
+      ],
+      "originalQuestion": true,
+      "independentArithmetic": {
+        "label": "pncalc-nitrogen-007",
+        "value": "1.0E+2",
+        "expected": "100",
+        "passed": true
+      }
+    },
+    {
+      "id": "pncalc-nitrogen-008",
+      "status": "verified",
+      "answerIndex": 3,
+      "reviewHref": "#nitrogen-intake-ratios",
+      "sha256": "5d890175144ddb8964ea214bef84f27bcdfc87c81cc32f5d13d7362004039ac9",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "sourcePrintedPages": [
+        152,
+        154
+      ],
+      "sourcePdfPages": [
+        160,
+        162
+      ],
+      "originalQuestion": true,
+      "independentArithmetic": {
+        "label": "pncalc-nitrogen-008",
+        "value": "90",
+        "expected": "90",
+        "passed": true
+      }
+    },
+    {
+      "id": "pncalc-nitrogen-009",
+      "status": "verified",
+      "answerIndex": 0,
+      "reviewHref": "#nitrogen-intake-ratios",
+      "sha256": "5bd5828f5e42cc6a1ae419ae3f51d8290da6f768329a9e786c1f8e4da4fd70f1",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "sourcePrintedPages": [
+        152,
+        154
+      ],
+      "sourcePdfPages": [
+        160,
+        162
+      ],
+      "originalQuestion": true,
+      "independentArithmetic": {
+        "label": "pncalc-nitrogen-009",
+        "value": "1.2E+3",
+        "expected": "1200",
+        "passed": true
+      }
+    },
+    {
+      "id": "pncalc-nitrogen-010",
+      "status": "verified",
+      "answerIndex": 1,
+      "reviewHref": "#nitrogen-intake-ratios",
+      "sha256": "dea4d46dc8a9e16665a4d4dc126072623e630247625ed12325b19883a4e6e7cb",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "sourcePrintedPages": [
+        152,
+        154
+      ],
+      "sourcePdfPages": [
+        160,
+        162
+      ],
+      "originalQuestion": true,
+      "independentArithmetic": {
+        "label": "pncalc-nitrogen-010",
+        "value": "1400",
+        "expected": "1400",
+        "passed": true
+      }
+    },
+    {
+      "id": "pncalc-nitrogen-011",
+      "status": "verified",
+      "answerIndex": 2,
+      "reviewHref": "#nitrogen-intake-ratios",
+      "sha256": "c415a689f72056bae03f528b41a32c808f4c92e7191bb5a4182f2b96cf7a32aa",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "sourcePrintedPages": [
+        152,
+        154
+      ],
+      "sourcePdfPages": [
+        160,
+        162
+      ],
+      "originalQuestion": true,
+      "independentArithmetic": {
+        "label": "pncalc-nitrogen-011",
+        "value": "2400",
+        "expected": "2400",
+        "passed": true
+      }
+    },
+    {
+      "id": "pncalc-nitrogen-012",
+      "status": "verified",
+      "answerIndex": 3,
+      "reviewHref": "#nitrogen-intake-ratios",
+      "sha256": "746e8fae71a78a51cde68811e4658072a176f3802b9a913746fbc9be6523ff76",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale",
+        "lesson link"
+      ],
+      "sourcePrintedPages": [
+        152,
+        154
+      ],
+      "sourcePdfPages": [
+        160,
+        162
+      ],
+      "originalQuestion": true
+    }
+  ],
+  "retainedItemReview": [
+    {
+      "id": "pncalc-009",
+      "status": "verified",
+      "sha256": "95a868addcabce6ef6d9583674f2ab68abe610447e7c2698a949251484b8cffa",
+      "answerIndex": 0,
+      "reviewHref": "#rate-final-audit",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale"
+      ],
+      "change": "Added explicit exercise-rounding exception to prompt; prior key/choices/rationale/ID/anchor preserved",
+      "sourcePrintedPages": [
+        151,
+        152
+      ],
+      "sourcePdfPages": [
+        159,
+        160
+      ]
+    },
+    {
+      "id": "pncalc-011",
+      "status": "verified",
+      "sha256": "9f7ab1e0b91d6efb0392ae664445bd6b51772f3ad874adfc59ff489af8da2e22",
+      "answerIndex": 0,
+      "reviewHref": "#protein-energy-targets",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale"
+      ],
+      "change": "Retained unchanged after book comparison",
+      "sourcePrintedPages": [
+        152,
+        154
+      ],
+      "sourcePdfPages": [
+        160,
+        162
+      ]
+    },
+    {
+      "id": "pncalc-012",
+      "status": "verified",
+      "sha256": "7ad0af4b0af0fb9f032e59f3864a7dbd34aee591a92b3348f7637ae4225a03e3",
+      "answerIndex": 0,
+      "reviewHref": "#protein-energy-targets",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale"
+      ],
+      "change": "Retained unchanged after book comparison",
+      "sourcePrintedPages": [
+        152,
+        154
+      ],
+      "sourcePdfPages": [
+        160,
+        162
+      ]
+    },
+    {
+      "id": "pncalc-013",
+      "status": "verified",
+      "sha256": "6e648ff6e5f3fb85f3a1dba55610bb059ef3f5db95a6f5e88541a735d43fbd1c",
+      "answerIndex": 0,
+      "reviewHref": "#protein-energy-targets",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale"
+      ],
+      "change": "Retained unchanged after book comparison",
+      "sourcePrintedPages": [
+        152,
+        154
+      ],
+      "sourcePdfPages": [
+        160,
+        162
+      ]
+    },
+    {
+      "id": "pncalc-014",
+      "status": "verified",
+      "sha256": "85159fc7b52af97b7f03e9d525294786a8f985999c60545d7eff5146ed49c317",
+      "answerIndex": 0,
+      "reviewHref": "#protein-energy-targets",
+      "individuallyReviewed": [
+        "prompt",
+        "all choices",
+        "keyed answer",
+        "rationale"
+      ],
+      "change": "Retained unchanged after book comparison",
+      "sourcePrintedPages": [
+        152,
+        154
+      ],
+      "sourcePdfPages": [
+        160,
+        162
+      ]
+    }
+  ],
+  "embeddedReview": [
+    {
+      "lesson": "caloric-needs",
+      "answerIndex": 1,
+      "sha256": "d3d885ed8e471c3422857b998e4058dea4a11b5c23a002e0b74d5de5c82f5aed",
+      "status": "verified"
+    },
+    {
+      "lesson": "nitrogen-intake-ratios",
+      "answerIndex": 0,
+      "sha256": "48ed2028a482146edd3f69cb67b14bade7ba445bbcfab25d2f7a2e2484ac5b64",
+      "status": "verified"
+    }
+  ],
+  "sourceInterpretation": [
+    "BEE and TEE are different endpoints; extra factors listed in a BEE-only question are not automatically used.",
+    "Source examples carry rounded BEE into TEE when instructed. The revised legacy prompt now states the exercise-rounding exception.",
+    "Protein-sparing source target conventions and total delivered calories are distinguished with explicit exercise wording.",
+    "Nitrogen intake alone is not nitrogen balance; no unsupported urinary-loss formula introduced.",
+    "Stress, protein and NPC:N ranges are attributed to the supplied book, not presented as universal current patient orders.",
+    "Fever exercise explicitly supplies one 12-percent increase at 38 C and baseline; no invented stacking rule or unspecified range factor added."
+  ],
+  "finalSourceComparison": "After authoring, both six-section lessons, two protein additions, two figures, two embedded checks, all 26 new questions and five retained/revised items were compared again with the source text and rendered tables. Coefficients, units, endpoint, range limits, ratio numerator and rounding agree. All new examples/questions are original.",
+  "validation": {
+    "independentNewArithmetic": {
+      "passed": true,
+      "count": 54,
+      "scope": "All22 numerical new bank items, both range endpoints, both new embedded checks and every worked teaching/figure calculation. Previous source54-exercise evidence is retained separately, not counted again.",
+      "checks": [
+        {
+          "label": "pncalc-energy-003",
+          "value": "1600",
+          "expected": "1600",
+          "passed": true
+        },
+        {
+          "label": "pncalc-energy-004",
+          "value": "1349",
+          "expected": "1349",
+          "passed": true
+        },
+        {
+          "label": "pncalc-energy-005",
+          "value": "1614",
+          "expected": "1614",
+          "passed": true
+        },
+        {
+          "label": "pncalc-energy-006",
+          "value": "1354",
+          "expected": "1354",
+          "passed": true
+        },
+        {
+          "label": "pncalc-energy-007",
+          "value": "1728",
+          "expected": "1728",
+          "passed": true
+        },
+        {
+          "label": "pncalc-energy-008",
+          "value": "2688.00",
+          "expected": "2688",
+          "passed": true
+        },
+        {
+          "label": "pncalc-energy-009",
+          "value": "2184.00",
+          "expected": "2184",
+          "passed": true
+        },
+        {
+          "label": "pncalc-energy-010",
+          "value": "2752",
+          "expected": "2752",
+          "passed": true
+        },
+        {
+          "label": "pncalc-energy-011",
+          "value": "2700.00",
+          "expected": "2700",
+          "passed": true
+        },
+        {
+          "label": "pncalc-energy-012",
+          "value": "1400.00",
+          "expected": "1400",
+          "passed": true
+        },
+        {
+          "label": "pncalc-energy-013 lower",
+          "value": "1200",
+          "expected": "1200",
+          "passed": true
+        },
+        {
+          "label": "pncalc-energy-013 upper",
+          "value": "2000",
+          "expected": "2000",
+          "passed": true
+        },
+        {
+          "label": "pncalc-nitrogen-001",
+          "value": "88.0",
+          "expected": "88",
+          "passed": true
+        },
+        {
+          "label": "pncalc-nitrogen-003",
+          "value": "304",
+          "expected": "304",
+          "passed": true
+        },
+        {
+          "label": "pncalc-nitrogen-004",
+          "value": "11.2",
+          "expected": "11.2",
+          "passed": true
+        },
+        {
+          "label": "pncalc-nitrogen-005",
+          "value": "13",
+          "expected": "13",
+          "passed": true
+        },
+        {
+          "label": "pncalc-nitrogen-006",
+          "value": "1120",
+          "expected": "1120",
+          "passed": true
+        },
+        {
+          "label": "pncalc-nitrogen-007",
+          "value": "1.0E+2",
+          "expected": "100",
+          "passed": true
+        },
+        {
+          "label": "pncalc-nitrogen-008",
+          "value": "90",
+          "expected": "90",
+          "passed": true
+        },
+        {
+          "label": "pncalc-nitrogen-009",
+          "value": "1.2E+3",
+          "expected": "1200",
+          "passed": true
+        },
+        {
+          "label": "pncalc-nitrogen-010",
+          "value": "1400",
+          "expected": "1400",
+          "passed": true
+        },
+        {
+          "label": "pncalc-nitrogen-011",
+          "value": "2400",
+          "expected": "2400",
+          "passed": true
+        },
+        {
+          "label": "pncalc-nitrogen-002 lower",
+          "value": "48.0",
+          "expected": "48",
+          "passed": true
+        },
+        {
+          "label": "pncalc-nitrogen-002 upper",
+          "value": "60",
+          "expected": "60",
+          "passed": true
+        },
+        {
+          "label": "male weight coefficient",
+          "value": "962.50",
+          "expected": "962.5",
+          "passed": true
+        },
+        {
+          "label": "male height coefficient",
+          "value": "875",
+          "expected": "875",
+          "passed": true
+        },
+        {
+          "label": "male age coefficient",
+          "value": "304.20",
+          "expected": "304.2",
+          "passed": true
+        },
+        {
+          "label": "male teaching BEE",
+          "value": "1599.77",
+          "expected": "1599.77",
+          "passed": true
+        },
+        {
+          "label": "male teaching rounded BEE",
+          "value": "1600",
+          "expected": "1600",
+          "passed": true
+        },
+        {
+          "label": "female weight coefficient",
+          "value": "576.0",
+          "expected": "576",
+          "passed": true
+        },
+        {
+          "label": "female height coefficient",
+          "value": "305.25",
+          "expected": "305.25",
+          "passed": true
+        },
+        {
+          "label": "female age coefficient",
+          "value": "187.20",
+          "expected": "187.2",
+          "passed": true
+        },
+        {
+          "label": "female teaching BEE",
+          "value": "1349.15",
+          "expected": "1349.15",
+          "passed": true
+        },
+        {
+          "label": "female teaching rounded BEE",
+          "value": "1349",
+          "expected": "1349",
+          "passed": true
+        },
+        {
+          "label": "teaching TEE",
+          "value": "2688.00",
+          "expected": "2688",
+          "passed": true
+        },
+        {
+          "label": "rounded-input TEE exact",
+          "value": "2751.96",
+          "expected": "2751.96",
+          "passed": true
+        },
+        {
+          "label": "rounded-input TEE final",
+          "value": "2752",
+          "expected": "2752",
+          "passed": true
+        },
+        {
+          "label": "fever one increase",
+          "value": "1400.00",
+          "expected": "1400",
+          "passed": true
+        },
+        {
+          "label": "amino acid stock grams",
+          "value": "70",
+          "expected": "70",
+          "passed": true
+        },
+        {
+          "label": "nitrogen intake",
+          "value": "11.2",
+          "expected": "11.2",
+          "passed": true
+        },
+        {
+          "label": "amino acid calories",
+          "value": "280",
+          "expected": "280",
+          "passed": true
+        },
+        {
+          "label": "PN dextrose calories",
+          "value": "680.0",
+          "expected": "680",
+          "passed": true
+        },
+        {
+          "label": "NPC sum",
+          "value": "1120",
+          "expected": "1120",
+          "passed": true
+        },
+        {
+          "label": "total sum including AA",
+          "value": "1400",
+          "expected": "1400",
+          "passed": true
+        },
+        {
+          "label": "NPC nitrogen ratio",
+          "value": "1.0E+2",
+          "expected": "100",
+          "passed": true
+        },
+        {
+          "label": "8.5 percent AA stock volume",
+          "value": "1.2E+3",
+          "expected": "1200",
+          "passed": true
+        },
+        {
+          "label": "102g AA calories",
+          "value": "408",
+          "expected": "408",
+          "passed": true
+        },
+        {
+          "label": "102g AA nitrogen",
+          "value": "16.32",
+          "expected": "16.32",
+          "passed": true
+        },
+        {
+          "label": "specified IBW protein",
+          "value": "88.0",
+          "expected": "88",
+          "passed": true
+        },
+        {
+          "label": "100g AA calories",
+          "value": "400",
+          "expected": "400",
+          "passed": true
+        },
+        {
+          "label": "NPC goal plus protein",
+          "value": "2400",
+          "expected": "2400",
+          "passed": true
+        },
+        {
+          "label": "total goal less protein",
+          "value": "1600",
+          "expected": "1600",
+          "passed": true
+        },
+        {
+          "label": "new energy embedded check",
+          "value": "2688.00",
+          "expected": "2688",
+          "passed": true
+        },
+        {
+          "label": "new nitrogen embedded check",
+          "value": "1.0E+2",
+          "expected": "100",
+          "passed": true
+        }
+      ]
+    },
+    "technical": {
+      "passed": true,
+      "module": "parenteral-nutrition-calculations",
+      "lessons": 9,
+      "questions": 142,
+      "newItems": 26,
+      "unchangedPriorItems": 115,
+      "roundingPromptClarification": "pncalc-009",
+      "priorKeysChoicesRationalesAnchorsPreserved": true,
+      "priorSevenLessonsPreservedExceptTwoAddedProteinSections": true,
+      "uniqueNewIdsPrompts": true,
+      "validChoicesKeysAnchors": true,
+      "cumulativeItems": 5
+    },
+    "focusedAssessmentAudit": {
+      "modules": 1,
+      "questions": 142,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "parenteral-nutrition-calculations",
+          "lessons": 9,
+          "questions": 142,
+          "minimumLessonCoverage": 8
+        }
+      ]
+    },
+    "productionBuild": {
+      "passed": true,
+      "staticPages": 567,
+      "scope": "Exact four-clinical-file candidate from 53ad6cb4b39b4a944100ee38b92ac6897b439c60"
+    },
+    "browserQA": [
+      {
+        "build": "exact scoped production candidate",
+        "width": 1440,
+        "lessons": 9,
+        "figures": 9,
+        "checks": 9,
+        "all26NewItemsAndRevisedRoundingItemRenderedGraded": true,
+        "threeDistinctAttempts": true,
+        "incorrectFeedbackRemediation": true,
+        "testOnlyControlledShuffle": true,
+        "curriculum": true,
+        "sitemap": true,
+        "noOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "build": "exact scoped production candidate",
+        "width": 390,
+        "lessons": 9,
+        "figures": 9,
+        "checks": 9,
+        "all26NewItemsAndRevisedRoundingItemRenderedGraded": true,
+        "threeDistinctAttempts": true,
+        "incorrectFeedbackRemediation": true,
+        "testOnlyControlledShuffle": true,
+        "curriculum": true,
+        "sitemap": true,
+        "noOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "build": "current working Library integration",
+        "width": 390,
+        "narrowWidth": 320,
+        "HarrisBenedictTopicSearch": true,
+        "stableModuleLink": true,
+        "bothNewFigures": true,
+        "signedOutMemberBoundary": 401,
+        "noOverflow": true,
+        "pageErrors": []
+      }
+    ],
+    "visualReview": "Both new figures inspected at 1440 desktop and 390 mobile using top viewport and complete bottom captures. Existing protein and fluid figures also visually checked; all nine figures/checks render, prior seven diagrams preserved. No horizontal overflow at 390/320.",
+    "testRepair": "Third-attempt test setup originally excluded all previous selections, while the existing sampler excludes only the immediately previous attempt. Corrected the private test setup, then all 26 new items and the revised rounding item rendered and graded correctly. No runtime assessment code modified.",
+    "observedGlobalAudit": {
+      "hardErrors": 34,
+      "PNHardErrors": [],
+      "affectedUnchangedModules": [
+        "glaucoma-pharmacotherapy",
+        "allergic-rhinitis",
+        "common-ear-conditions"
+      ],
+      "reason": "Pre-existing em/en-dash typographic violations in unchanged modules. A mistaken positional selector first ran the global audit; rerun with supported --module selector passed. Full curriculum verification remains open."
+    },
+    "preservation": "115 prior bank objects deep-equal previous HEAD. The rounding item retains ID/key/choices/rationale/anchor. Prior seven lessons retain content except two added protein sections. Module path, accounts, backend and architecture unchanged."
+  },
+  "remainingWholeModuleIssues": [
+    "Retained Mifflin/indirect-calorimetry and anthropometric source support unresolved",
+    "Exact propofol vehicle energy and clinical monitoring source support pending",
+    "Dextrose proportion and printed GIR numerical-limit discrepancy still open",
+    "Weekly lipid/concentration and dual-ion/additive/complete-order coverage still open",
+    "Related full clinical PN/EN/pediatric/fluid modules remain open"
+  ],
+  "contentHashes": {
+    "src/data/modules/parenteralNutritionCalculations.js": "c8c3d325ff2a3c80948a697ee59bfc27a275b05f82eac13ea171362ecc23c497",
+    "src/data/questionBanks/parenteralNutritionCalculations.js": "29bf837bf5c54c37a66f04973cbb4ac6cd10bed302443a2e82e8cfd50ed9fc6f",
+    "src/components/learn/ParenteralNutritionCalculationVisual.jsx": "cff58615bdf7a76402b42e57a9744e2b0f2d705ce8290fbd8801b87f3f408686",
+    "src/app/learn/pharmacy/modules/[slug]/page.jsx": "0994e3abb1fe425664f6e2397a38e9cd9115f4bfd35ed64ebb2f599f0fc5256e"
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "baseCommit": "53ad6cb4b39b4a944100ee38b92ac6897b439c60",
+    "commit": "pending",
+    "push": "pending",
+    "production": "not verified",
+    "receipt": "sequential-release-pn-energy-2026-10-01.json"
+  },
+  "completedChecklistEntries": 14,
+  "nextStartingPoint": "Continue the existing PN calculation module at Chapter 11 carbohydrate/dextrose calculations, printed 155 / PDF 163, then lipid concentrations/weekly averages, dual-ion additives and complete PN orders. Resolve retained anthropometric, Mifflin, propofol and clinical source support from the supplied book. Whole-module and checklist entry 15 remain reviewing; completed checklist count stays 14."
+}

@@ -756,7 +756,11 @@
             "parenteral-nutrition-calculations"
           ],
           "textAndFiguresRead": true,
-          "evidence": "parenteral-nutrition-calculations-review.json"
+          "evidence": "parenteral-nutrition-energy-nitrogen-review.json",
+          "verifiedLessons": [
+            "parenteral-nutrition-calculations#caloric-needs"
+          ],
+          "wholeCorrespondingModuleVerified": false
         },
         {
           "topic": "Protein, nitrogen intake, NPC:N and amino acids",
@@ -773,7 +777,15 @@
             "parenteral-nutrition-calculations"
           ],
           "textAndFiguresRead": true,
-          "evidence": "parenteral-nutrition-calculations-review.json"
+          "evidence": "parenteral-nutrition-energy-nitrogen-review.json",
+          "verifiedLessons": [
+            "parenteral-nutrition-calculations#nitrogen-intake-ratios"
+          ],
+          "verifiedAddedSections": [
+            "Use the stated protein requirement and weight",
+            "Clarify whether the energy goal includes protein"
+          ],
+          "wholeCorrespondingModuleVerified": false
         },
         {
           "topic": "Dextrose proportions and stock calculations",
@@ -872,10 +884,12 @@
       ],
       "findings": [
         "All 20 pages text/tables/figures read and 54 source exercises independently recalculated. This does not establish full clinical module verification.",
-        "Existing PN calculation module expanded with source-verified fluid lesson and 16 original questions. Missing/source-unreconciled material remains; checklist count 14."
+        "Existing PN calculation module expanded with source-verified fluid lesson and 16 original questions. Missing/source-unreconciled material remains; checklist count 14.",
+        "Energy and nitrogen lessons, two protein target sections and26 original questions verified. Whole module/source reconciliation remains open; checklist count14."
       ],
       "evidence": [
-        "parenteral-nutrition-calculations-review.json"
+        "parenteral-nutrition-calculations-review.json",
+        "parenteral-nutrition-energy-nitrogen-review.json"
       ],
       "pdfRangeStatus": "All 20 pages visually verified"
     },

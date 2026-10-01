@@ -222,8 +222,18 @@
           "status": "reviewing"
         },
         {
+          "slug": "caloric-needs",
+          "status": "verified",
+          "evidence": "parenteral-nutrition-energy-nitrogen-review.json"
+        },
+        {
           "slug": "protein-energy-targets",
           "status": "reviewing"
+        },
+        {
+          "slug": "nitrogen-intake-ratios",
+          "status": "verified",
+          "evidence": "parenteral-nutrition-energy-nitrogen-review.json"
         },
         {
           "slug": "dextrose-gir",
@@ -242,10 +252,11 @@
           "status": "reviewing"
         }
       ],
-      "questions": 116,
+      "questions": 142,
       "status": "reviewing",
       "evidence": [
-        "parenteral-nutrition-calculations-review.json"
+        "parenteral-nutrition-calculations-review.json",
+        "parenteral-nutrition-energy-nitrogen-review.json"
       ],
       "latestScopedReview": {
         "date": "2026-09-30",
@@ -253,7 +264,7 @@
         "evidence": "pharmacy-concentrations-specific-gravity-review.json",
         "wholeModuleVerified": false
       },
-      "embeddedChecks": 7,
+      "embeddedChecks": 9,
       "scopedSectionReviews": [
         {
           "date": "2026-10-01",
@@ -261,9 +272,16 @@
           "status": "verified",
           "evidence": "parenteral-nutrition-calculations-review.json",
           "wholeModuleVerified": false
+        },
+        {
+          "date": "2026-10-01",
+          "status": "verified",
+          "scope": "Two new energy/nitrogen lessons, two protein sections,26 original items and rounding exception clarification; four retained protein/N items reverified",
+          "evidence": "parenteral-nutrition-energy-nitrogen-review.json",
+          "wholeModuleVerified": false
         }
       ],
-      "verificationNotes": "Entire existing module and 100 retained questions read.95 independent original/retained arithmetic checks passed;54 Chapter 11 source exercises have58 separate checks. Missing Harris-Benedict/nitrogen/weekly-lipid/dual-ion coverage and historical source reconciliation remain. Only the fluid lesson is verified."
+      "verificationNotes": "Fluid, caloric-needs and nitrogen-intake lessons are source/item/build/rendered verified. Whole module remains reviewing for historical source support and dextrose/lipid/additive/order coverage. This unit adds54 independent calculations without recounting prior source exercises."
     },
     {
       "slug": "pediatric-parenteral-nutrition",

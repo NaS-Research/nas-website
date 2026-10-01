@@ -1,4 +1,16 @@
 const diagrams = {
+  "pn-calc-energy": {
+    eyebrow: "Basal to total energy",
+    title: "Name the endpoint before applying factors.",
+    steps: [["WHA", "Inputs", "kg, cm and years; stated equation"], ["BEE", "Basal", "Supplied BEE: 1,600 kcal/day"], ["x", "Factors", "Activity 1.2; stress 1.4"], ["TEE", "Total", "1,600 x 1.2 x 1.4 = 2,688 kcal/day"]],
+    formula: "TEE = BEE x activity factor x stress factor",
+  },
+  "pn-calc-nitrogen": {
+    eyebrow: "Nitrogen and nonprotein calories",
+    title: "Keep protein, nitrogen and NPC separate.",
+    steps: [["AA", "Protein", "700 mL of 10% w/v = 70 g/day"], ["N", "Nitrogen", "70 / 6.25 = 11.2 g/day"], ["NPC", "Calories", "680 dextrose + 440 lipid = 1,120 kcal/day"], [":", "Ratio", "1,120 / 11.2 = 100:1"]],
+    formula: "NPC:N = daily nonprotein kcal / daily nitrogen g",
+  },
   "pn-calc-fluid": {
     eyebrow: "Daily fluid calculation",
     title: "Estimate the total, then count other fluids.",

@@ -9,7 +9,7 @@ const core = [
   q("006", "What does the common adjusted body weight equation attempt to do?", ["Include a fraction of weight above ideal body weight", "Replace height with age", "Measure edema directly", "Calculate nitrogen balance"], 0, "Adjusted body weight commonly adds 40 percent of the difference between actual and ideal weight to ideal weight.", "calculation-foundations"),
   q("007", "A patient receives 18 mL/hour of propofol for 10 hours. Using 1.1 kcal/mL, how much energy must be added to the daily ledger?", ["198 kcal", "180 kcal", "110 kcal", "19.8 kcal"], 0, "The patient receives 180 mL, and 180 mL multiplied by 1.1 kcal/mL equals 198 kcal.", "lipid-energy-ledger"),
   q("008", "A PN prescription provides 500 kcal from lipid, and propofol adds 330 kcal. What lipid-derived energy belongs in the complete daily ledger?", ["830 kcal", "500 kcal", "330 kcal", "1,500 kcal"], 0, "All lipid-containing sources must be reconciled, so 500 plus 330 equals 830 kcal.", "lipid-energy-ledger"),
-  q("009", "Why should intermediate PN calculations retain extra precision until the final order is audited?", ["Early rounding can compound error across ingredients and rates", "It changes kilograms into liters", "It removes the need for units", "It guarantees clinical accuracy"], 0, "Rounding at each step can produce a larger final discrepancy than rounding once at the clinically appropriate endpoint.", "rate-final-audit"),
+  q("009", "Unless an exercise explicitly instructs intermediate rounding, why should PN calculations retain extra precision until the final order is audited?", ["Early rounding can compound error across ingredients and rates", "It changes kilograms into liters", "It removes the need for units", "It guarantees clinical accuracy"], 0, "Rounding at each step can produce a larger final discrepancy than rounding once at the clinically appropriate endpoint.", "rate-final-audit"),
   q("010", "Which documentation makes a weight-based PN calculation reproducible during final-order review?", ["The weight value, weight type, dose, units, date, and calculation path", "The final number alone", "The patient's room number only", "A verbal estimate without units"], 0, "The full calculation basis allows another clinician to reproduce the result and reconcile it with the order, label, and pump schedule.", "rate-final-audit"),
 
   q("011", "How is a daily amino acid target calculated?", ["Calculation weight multiplied by prescribed g/kg/day", "Height multiplied by BMI", "Calories divided by infusion minutes", "Final volume multiplied by lipid concentration"], 0, "Protein grams per day equal the selected weight times the prescribed dose.", "protein-energy-targets"),
@@ -317,8 +317,349 @@ const fluidRequirementCases = [
   }
 ];
 
-export const parenteralNutritionCalculationsQuestionBank = [...core, ...bmiCases, ...ibwCases, ...adjustedWeightCases, ...mifflinCases, ...girCases, ...compoundCases, ...fluidRequirementCases];
+const energyNitrogenCases = [
+  {
+    "id": "pncalc-energy-001",
+    "question": "Which endpoint does the book Harris-Benedict equation estimate before activity or stress factors are applied?",
+    "choices": [
+      "Basal energy expenditure",
+      "Final PN volume",
+      "Total energy after all factors",
+      "Nitrogen intake"
+    ],
+    "answer": 0,
+    "rationale": "The source equation estimates BEE at rest. TEE is calculated by subsequent factor multiplication.",
+    "reviewHref": "#caloric-needs"
+  },
+  {
+    "id": "pncalc-energy-002",
+    "question": "Which units belong in the source Harris-Benedict weight, height and age inputs?",
+    "choices": [
+      "lb, inches and days",
+      "kg, cm and years",
+      "kg, meters and hours",
+      "grams, cm and months"
+    ],
+    "answer": 1,
+    "rationale": "Use kilograms, centimeters and years with the specified coefficients.",
+    "reviewHref": "#caloric-needs"
+  },
+  {
+    "id": "pncalc-energy-003",
+    "question": "Using the source male BEE equation 66.47 + 13.75W + 5H - 6.76A, calculate BEE for W 70 kg, H 175 cm and A 45 years. Round only the result to the nearest whole kcal/day.",
+    "choices": [
+      "2,688 kcal/day",
+      "1,349 kcal/day",
+      "1,600 kcal/day",
+      "1,296 kcal/day"
+    ],
+    "answer": 2,
+    "rationale": "66.47 + 962.5 + 875 - 304.2 = 1,599.77, rounded to 1,600 kcal/day.",
+    "reviewHref": "#caloric-needs"
+  },
+  {
+    "id": "pncalc-energy-004",
+    "question": "Using the source female BEE equation 655.1 + 9.6W + 1.85H - 4.68A, calculate BEE for W 60 kg, H 165 cm and A 40 years. Round only the result to a whole kcal/day.",
+    "choices": [
+      "1,600 kcal/day",
+      "1,536 kcal/day",
+      "1,162 kcal/day",
+      "1,349 kcal/day"
+    ],
+    "answer": 3,
+    "rationale": "655.1 + 576 + 305.25 - 187.2 = 1,349.15, rounded to 1,349 kcal/day.",
+    "reviewHref": "#caloric-needs"
+  },
+  {
+    "id": "pncalc-energy-005",
+    "question": "A 45-year-old male weighs 154 lb and is 70 inches tall. Use 2.2 lb/kg, 2.54 cm/inch and BEE = 66.47 + 13.75W + 5H - 6.76A. Round only the final BEE to a whole kcal/day.",
+    "choices": [
+      "1,614 kcal/day",
+      "2,769 kcal/day",
+      "1,322 kcal/day",
+      "1,600 kcal/day"
+    ],
+    "answer": 0,
+    "rationale": "154/2.2 = 70 kg and 70 x 2.54 = 177.8 cm. BEE = 66.47 + 962.5 + 889 - 304.2 = 1,613.77, or 1,614 kcal/day.",
+    "reviewHref": "#caloric-needs"
+  },
+  {
+    "id": "pncalc-energy-006",
+    "question": "A 40-year-old female weighs 132 lb and is 66 inches tall. Use 2.2 lb/kg, 2.54 cm/inch and BEE = 655.1 + 9.6W + 1.85H - 4.68A. Round only the final BEE to a whole kcal/day.",
+    "choices": [
+      "1,349 kcal/day",
+      "1,354 kcal/day",
+      "2,241 kcal/day",
+      "1,221 kcal/day"
+    ],
+    "answer": 1,
+    "rationale": "Weight is 60 kg and height is 167.64 cm. 655.1 + 576 + 310.134 - 187.2 = 1,354.034, rounded to 1,354 kcal/day.",
+    "reviewHref": "#caloric-needs"
+  },
+  {
+    "id": "pncalc-energy-007",
+    "question": "An exercise requests BEE only for a male aged 50 years, 80 kg and 180 cm. It also lists activity 1.2 and stress 1.5. Use BEE = 66.47 + 13.75W + 5H - 6.76A and round the final BEE to a whole kcal/day.",
+    "choices": [
+      "3,111 kcal/day",
+      "2,592 kcal/day",
+      "1,728 kcal/day",
+      "2,074 kcal/day"
+    ],
+    "answer": 2,
+    "rationale": "BEE = 66.47 + 1,100 + 900 - 338 = 1,728.47, rounded to 1,728. Do not multiply by activity or stress when BEE alone is requested.",
+    "reviewHref": "#caloric-needs"
+  },
+  {
+    "id": "pncalc-energy-008",
+    "question": "An exercise supplies BEE 1,600 kcal/day, activity 1.2 and stress 1.4. What TEE follows the source method?",
+    "choices": [
+      "1,600 kcal/day",
+      "2,240 kcal/day",
+      "4,160 kcal/day",
+      "2,688 kcal/day"
+    ],
+    "answer": 3,
+    "rationale": "1,600 x 1.2 x 1.4 = 2,688 kcal/day.",
+    "reviewHref": "#caloric-needs"
+  },
+  {
+    "id": "pncalc-energy-009",
+    "question": "An exercise supplies BEE 1,400 kcal/day, activity 1.3 and stress 1.2. What TEE follows the source method?",
+    "choices": [
+      "2,184 kcal/day",
+      "1,820 kcal/day",
+      "1,680 kcal/day",
+      "3,500 kcal/day"
+    ],
+    "answer": 0,
+    "rationale": "1,400 x 1.3 x 1.2 = 2,184 kcal/day.",
+    "reviewHref": "#caloric-needs"
+  },
+  {
+    "id": "pncalc-energy-010",
+    "question": "An exercise explicitly supplies rounded BEE 1,349 kcal/day and requires its use with activity 1.2 and stress 1.7. What TEE results, rounded to the nearest whole kcal/day?",
+    "choices": [
+      "1,349 kcal/day",
+      "2,752 kcal/day",
+      "2,753 kcal/day",
+      "2,293 kcal/day"
+    ],
+    "answer": 1,
+    "rationale": "Use the supplied rounded input: 1,349 x 1.2 x 1.7 = 2,751.96, rounded to 2,752. Do not replace it with another BEE value.",
+    "reviewHref": "#caloric-needs"
+  },
+  {
+    "id": "pncalc-energy-011",
+    "question": "BEE is supplied as 1,500 kcal/day, activity as 1.2 and stress as 1.5. Which TEE correctly multiplies both factors?",
+    "choices": [
+      "1,503 kcal/day",
+      "1,800 kcal/day",
+      "2,700 kcal/day",
+      "2,250 kcal/day"
+    ],
+    "answer": 2,
+    "rationale": "1,500 x 1.2 x 1.5 = 2,700 kcal/day. The factors multiply; they are not added to BEE.",
+    "reviewHref": "#caloric-needs"
+  },
+  {
+    "id": "pncalc-energy-012",
+    "question": "A stated exercise at 38 C requests one 12% increase to a supplied 1,250 kcal/day baseline, with no other adjustment. What result follows?",
+    "choices": [
+      "1,262 kcal/day",
+      "1,250 kcal/day",
+      "1,568 kcal/day",
+      "1,400 kcal/day"
+    ],
+    "answer": 3,
+    "rationale": "A single 12% increase is 1,250 x 1.12 = 1,400 kcal/day. The exercise explicitly defines the baseline and adjustment.",
+    "reviewHref": "#caloric-needs"
+  },
+  {
+    "id": "pncalc-energy-013",
+    "question": "Using only the book rough adult BEE comparison of 15 to 25 kcal/kg/day, what range results for 80 kg?",
+    "choices": [
+      "1,200 to 2,000 kcal/day",
+      "15 to 25 kcal/day",
+      "1,200 to 1,600 kcal/day",
+      "2,000 to 3,200 kcal/day"
+    ],
+    "answer": 0,
+    "rationale": "80 x 15 = 1,200 and 80 x 25 = 2,000 kcal/day. This is the stated rough BEE comparison, not an automatic TEE prescription.",
+    "reviewHref": "#caloric-needs"
+  },
+  {
+    "id": "pncalc-energy-014",
+    "question": "Which activity factor does the supplied book calculation discussion assign to an adult confined to bed?",
+    "choices": [
+      "1.3",
+      "1.2",
+      "2.0",
+      "0.8"
+    ],
+    "answer": 1,
+    "rationale": "The source gives activity 1.2 for confinement to bed and 1.3 for being out of bed.",
+    "reviewHref": "#caloric-needs"
+  },
+  {
+    "id": "pncalc-nitrogen-001",
+    "question": "An order explicitly uses ideal body weight 55 kg and 1.6 g/kg IBW/day of protein; actual weight is 80 kg. What protein amount follows the stated order?",
+    "choices": [
+      "88 g/day",
+      "128 g/day",
+      "55 g/day",
+      "100 g/day"
+    ],
+    "answer": 0,
+    "rationale": "Use the specified basis: 55 x 1.6 = 88 g/day. Do not silently substitute actual weight.",
+    "reviewHref": "#nitrogen-intake-ratios"
+  },
+  {
+    "id": "pncalc-nitrogen-002",
+    "question": "Using the book non-stressed ambulatory protein range of 0.8 to 1 g/kg/day and a stated calculation weight of 60 kg, what range results?",
+    "choices": [
+      "60 to 120 g/day",
+      "48 to 60 g/day",
+      "0.8 to 1 g/day",
+      "72 to 120 g/day"
+    ],
+    "answer": 1,
+    "rationale": "60 x 0.8 = 48 and 60 x 1 = 60 g/day under the source range.",
+    "reviewHref": "#nitrogen-intake-ratios"
+  },
+  {
+    "id": "pncalc-nitrogen-003",
+    "question": "Using the book amino acid conversion of 4 kcal/g, how much energy is provided by 76 g?",
+    "choices": [
+      "258.4 kcal",
+      "684 kcal",
+      "304 kcal",
+      "76 kcal"
+    ],
+    "answer": 2,
+    "rationale": "76 x 4 = 304 kcal.",
+    "reviewHref": "#nitrogen-intake-ratios"
+  },
+  {
+    "id": "pncalc-nitrogen-004",
+    "question": "A daily exercise supplies 700 mL of a 10% w/v amino acid solution. How much nitrogen intake follows the book factor of 6.25 g protein per gram nitrogen?",
+    "choices": [
+      "70 g nitrogen/day",
+      "437.5 g nitrogen/day",
+      "7 g nitrogen/day",
+      "11.2 g nitrogen/day"
+    ],
+    "answer": 3,
+    "rationale": "700 x 10/100 = 70 g amino acids. 70/6.25 = 11.2 g nitrogen/day.",
+    "reviewHref": "#nitrogen-intake-ratios"
+  },
+  {
+    "id": "pncalc-nitrogen-005",
+    "question": "An exercise supplies 81.25 g protein/day. Using protein grams divided by 6.25, what is nitrogen intake?",
+    "choices": [
+      "13 g nitrogen/day",
+      "6.25 g nitrogen/day",
+      "507.81 g nitrogen/day",
+      "81.25 g nitrogen/day"
+    ],
+    "answer": 0,
+    "rationale": "81.25/6.25 = 13 g nitrogen/day.",
+    "reviewHref": "#nitrogen-intake-ratios"
+  },
+  {
+    "id": "pncalc-nitrogen-006",
+    "question": "A daily exercise provides 680 kcal from dextrose, 440 kcal from lipid and 280 kcal from amino acids. What is the nonprotein calorie total?",
+    "choices": [
+      "1,400 kcal/day",
+      "1,120 kcal/day",
+      "680 kcal/day",
+      "280 kcal/day"
+    ],
+    "answer": 1,
+    "rationale": "NPC includes dextrose and lipid: 680 + 440 = 1,120 kcal/day. Amino acid calories are excluded from NPC.",
+    "reviewHref": "#nitrogen-intake-ratios"
+  },
+  {
+    "id": "pncalc-nitrogen-007",
+    "question": "A daily exercise supplies 1,120 nonprotein kcal and 11.2 g nitrogen. What is NPC:N?",
+    "choices": [
+      "125:1",
+      "16:1",
+      "100:1",
+      "11.2:1"
+    ],
+    "answer": 2,
+    "rationale": "1,120/11.2 = 100, expressed as 100:1.",
+    "reviewHref": "#nitrogen-intake-ratios"
+  },
+  {
+    "id": "pncalc-nitrogen-008",
+    "question": "A daily exercise supplies 1,170 nonprotein kcal and 13 g nitrogen. What is NPC:N?",
+    "choices": [
+      "100:1",
+      "150:1",
+      "13:1",
+      "90:1"
+    ],
+    "answer": 3,
+    "rationale": "1,170/13 = 90, expressed as 90:1.",
+    "reviewHref": "#nitrogen-intake-ratios"
+  },
+  {
+    "id": "pncalc-nitrogen-009",
+    "question": "An order requests 102 g protein from a stated 8.5% w/v amino acid stock. What source volume is needed?",
+    "choices": [
+      "1,200 mL",
+      "867 mL",
+      "120 mL",
+      "1,020 mL"
+    ],
+    "answer": 0,
+    "rationale": "8.5% w/v = 0.085 g/mL; 102/0.085 = 1,200 mL.",
+    "reviewHref": "#nitrogen-intake-ratios"
+  },
+  {
+    "id": "pncalc-nitrogen-010",
+    "question": "A daily exercise supplies 1,120 nonprotein kcal plus 70 g amino acids at 4 kcal/g. What is total energy including amino acid calories?",
+    "choices": [
+      "1,120 kcal/day",
+      "1,400 kcal/day",
+      "1,190 kcal/day",
+      "1,680 kcal/day"
+    ],
+    "answer": 1,
+    "rationale": "Amino acids add 280 kcal, giving 1,120 + 280 = 1,400 kcal/day. NPC itself remains 1,120.",
+    "reviewHref": "#nitrogen-intake-ratios"
+  },
+  {
+    "id": "pncalc-nitrogen-011",
+    "question": "An exercise explicitly assigns a 2,000 kcal/day goal to nonprotein calories and separately supplies 100 g amino acids at 4 kcal/g. What total energy includes both?",
+    "choices": [
+      "2,000 kcal/day",
+      "1,600 kcal/day",
+      "2,400 kcal/day",
+      "2,100 kcal/day"
+    ],
+    "answer": 2,
+    "rationale": "The supplied goal is explicitly NPC. Amino acids add 400 kcal, so total energy is 2,400. Do not reinterpret the stated NPC goal as already including protein.",
+    "reviewHref": "#nitrogen-intake-ratios"
+  },
+  {
+    "id": "pncalc-nitrogen-012",
+    "question": "What can nitrogen intake alone establish when nitrogen losses have not been supplied or measured?",
+    "choices": [
+      "A positive nitrogen balance automatically",
+      "A negative nitrogen balance automatically",
+      "Zero nitrogen losses",
+      "Nitrogen received, without proving overall nitrogen balance"
+    ],
+    "answer": 3,
+    "rationale": "The book defines balance as gains minus losses. Intake alone does not establish the balance.",
+    "reviewHref": "#nitrogen-intake-ratios"
+  }
+];
 
-if (parenteralNutritionCalculationsQuestionBank.length !== 116) {
-  throw new Error(`Parenteral nutrition calculations question bank must contain 116 questions, found ${parenteralNutritionCalculationsQuestionBank.length}.`);
+export const parenteralNutritionCalculationsQuestionBank = [...core, ...bmiCases, ...ibwCases, ...adjustedWeightCases, ...mifflinCases, ...girCases, ...compoundCases, ...fluidRequirementCases, ...energyNitrogenCases];
+
+if (parenteralNutritionCalculationsQuestionBank.length !== 142) {
+  throw new Error(`Parenteral nutrition calculations question bank must contain 142 questions, found ${parenteralNutritionCalculationsQuestionBank.length}.`);
 }

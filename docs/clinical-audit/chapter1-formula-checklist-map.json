@@ -167,9 +167,12 @@
       "status": "reviewing",
       "evidence": "parenteral-nutrition-calculations-review.json",
       "verifiedSections": [
-        "parenteral-nutrition-calculations#fluid-requirements"
+        "parenteral-nutrition-calculations#fluid-requirements",
+        "parenteral-nutrition-calculations#caloric-needs",
+        "parenteral-nutrition-calculations#nitrogen-intake-ratios"
       ],
-      "note": "Fluid section verified; whole corresponding module/source reconciliation open. Entry15 is not marked complete and count stays 14."
+      "note": "Fluid, energy and nitrogen lessons verified; whole corresponding module/source reconciliation remains open. Checklist entry 15 is not complete and count stays 14.",
+      "latestScopedEvidence": "parenteral-nutrition-energy-nitrogen-review.json"
     },
     {
       "group": "Biostatistics and cost-effectiveness calculations",
@@ -212,7 +215,7 @@
   ],
   "nextStartingPoint": {
     "bookLocation": "Chapter 1 printed 7/PDF 19, fifteenth checklist entry: determining fluid needs",
-    "dependency": "Continue the entire existing PN calculation module at Chapter 11 Determining Caloric Needs, printed 151/PDF 159: add/reconcile Harris-Benedict BEE and TEE, then protein/nitrogen, weekly lipids, dual-ion additives and complete-order calculations. Locate supplied-book dependencies for retained anthropometric, Mifflin, propofol and clinical GIR claims. Do not advance checklist entry 15 until the corresponding whole-module review is verified."
+    "dependency": "Continue the existing PN calculation module at Chapter 11 carbohydrate/dextrose calculations, printed 155 / PDF 163, then lipid concentrations/weekly averages, dual-ion additives and complete PN orders. Resolve retained anthropometric, Mifflin, propofol and clinical source support from the supplied book. Whole-module and checklist entry 15 remain reviewing; completed checklist count stays 14."
   },
   "limits": [
     "This is a coverage map, not verification of the complete formula checklist.",

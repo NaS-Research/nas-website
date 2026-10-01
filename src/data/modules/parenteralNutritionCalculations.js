@@ -6,7 +6,7 @@ export const parenteralNutritionCalculationsModule = {
   title: "Parenteral Nutrition Calculations",
   source: "Clinical nutrition calculations",
   description: "Translate an adult nutrition assessment into a complete, traceable parenteral nutrition prescription and verify every unit before the order reaches the patient.",
-  topics: ["Fluid requirements", "Weights and energy", "Protein and total energy", "Dextrose and GIR", "Lipid and non-PN calories", "Stock solutions and additives", "Rate and final audit"],
+  topics: ["Fluid requirements", "Weights and energy", "Harris-Benedict BEE and TEE", "Protein and total energy", "Nitrogen intake and NPC:N", "Dextrose and GIR", "Lipid and non-PN calories", "Stock solutions and additives", "Rate and final audit"],
   outcomes: [
     "Convert anthropometric data accurately and select a defensible calculation weight.",
     "Estimate energy and protein targets while recognizing the limits of predictive equations.",
@@ -89,6 +89,63 @@ export const parenteralNutritionCalculationsModule = {
       check: { question: "A patient weighs 176 lb. What is the approximate weight in kilograms?", choices: ["80 kg", "64 kg", "97 kg", "118 kg"], answer: 0, rationale: "176 divided by 2.2 equals 80 kg.", reviewHref: "#calculation-foundations" },
     },
     {
+      "slug": "caloric-needs",
+      "title": "Basal and Total Energy Expenditure",
+      "summary": "Apply the supplied Harris-Benedict equation, distinguish BEE from TEE and follow the exercise instructions for factors and rounding.",
+      "concepts": [
+        "Harris-Benedict BEE",
+        "Kilograms and centimeters",
+        "Activity and stress factors",
+        "Explicit rounding"
+      ],
+      "visual": "pn-calc-energy",
+      "application": "Write the requested endpoint, equation, units and factors before calculating. A supplied BEE is not already a TEE.",
+      "lesson": [
+        {
+          "heading": "Identify the requested endpoint",
+          "body": "The book defines basal energy expenditure (BEE), also called basal metabolic rate, as energy expenditure at rest excluding eating and activity. Its Harris-Benedict equations estimate this value. Total energy expenditure (TEE) additionally accounts for metabolic demands, feeding and activity. Calculate the endpoint requested by the exercise; do not apply activity or stress factors when it asks only for BEE."
+        },
+        {
+          "heading": "Use the source coefficients and units",
+          "body": "For the source male equation: BEE = 66.47 + 13.75W + 5H - 6.76A. For the source female equation: BEE = 655.1 + 9.6W + 1.85H - 4.68A. W is weight in kg, H is height in cm and A is age in years. The book uses total body weight unless the exercise specifies otherwise. Convert pounds by dividing by 2.2 and inches by multiplying by 2.54 before substitution. Do not exchange coefficients between equations."
+        },
+        {
+          "heading": "Work the male and female equations separately",
+          "body": "In an original male example, W = 70 kg, H = 175 cm and A = 45 years: 66.47 + 962.5 + 875 - 304.2 = 1,599.77 kcal/day, or 1,600 when rounded to a whole number. In an original female example, W = 60 kg, H = 165 cm and A = 40 years: 655.1 + 576 + 305.25 - 187.2 = 1,349.15 kcal/day, or 1,349. These are BEE estimates, without activity or stress multiplication."
+        },
+        {
+          "heading": "Multiply for the stated total-energy plan",
+          "body": "The source calculation is TEE = BEE x activity factor x stress factor. Its activity factors are 1.2 for confinement to bed and 1.3 for being out of bed. The source stress table lists 1.2 for minor surgery, 1.4 for infection, 1.5 for major trauma, sepsis or burns up to 30% of body surface area, and 1.5 to 2 for burns over 30%. These are the book calculation values; use the patient-specific factor supplied by an exercise rather than inventing a value inside a range. An original plan explicitly supplying BEE 1,600, activity 1.2 and stress 1.4 gives 2,688 kcal/day."
+        },
+        {
+          "heading": "Make intermediate rounding explicit",
+          "body": "Keep precision unless the exercise directs otherwise. The book examples round BEE and then use that rounded BEE for the next TEE step when the exercise refers back to that answer. A new exercise that explicitly supplies BEE 1,349 with factors 1.2 and 1.7 gives 2,751.96, or 2,752 kcal/day. Do not silently replace a supplied rounded input with another value or change the stated rounding path."
+        },
+        {
+          "heading": "Distinguish a rough estimate and fever adjustment",
+          "body": "The book describes 15 to 25 kcal/kg/day as an adult BEE estimate, useful as a rough comparison with the equation result. This range is not automatically a TEE prescription. It also states that energy requirements increase 12% for each degree of fever over 37 C. An exercise should state the baseline and how its adjustment is to be applied alongside other factors. For an original exercise explicitly requesting one 12% increase to a 1,250 kcal/day baseline at 38 C, the result is 1,400 kcal/day; do not add the same adjustment twice."
+        }
+      ],
+      "keyPoints": [
+        "BEE and TEE are different endpoints.",
+        "Use kg, cm and years with the stated coefficients.",
+        "TEE multiplies BEE by the supplied factors.",
+        "Follow explicit intermediate-rounding and adjustment instructions."
+      ],
+      "check": {
+        "question": "A calculation exercise supplies BEE 1,600 kcal/day, activity factor 1.2 and stress factor 1.4. What is TEE?",
+        "choices": [
+          "1,600 kcal/day",
+          "2,688 kcal/day",
+          "2,080 kcal/day",
+          "4,160 kcal/day"
+        ],
+        "answer": 1,
+        "rationale": "TEE = 1,600 x 1.2 x 1.4 = 2,688 kcal/day. The factors multiply.",
+        "reviewHref": "#caloric-needs"
+      }
+    },
+    {
       slug: "protein-energy-targets",
       title: "Protein and Total Energy Targets",
       summary: "Protein is prescribed in grams per kilogram, while the energy plan reconciles amino acid, dextrose, lipid, and every calorie delivered outside the PN bag.",
@@ -96,6 +153,8 @@ export const parenteralNutritionCalculationsModule = {
       visual: "pn-calc-protein-energy",
       application: "Show protein grams per day, the weight and dose used, amino acid calories, total energy target, and the energy remaining for dextrose and lipid. Then compare the result with organ function, losses, metabolic stress, and the care goal.",
       lesson: [
+        {"heading": "Use the stated protein requirement and weight", "body": "The book gives 0.8 to 1 g/kg/day for a non-stressed ambulatory patient and 1.2 to 2 g/kg/day for hospitalized or malnourished patients. Multiply the selected requirement by the weight explicitly requested by the exercise. Some source orders use ideal body weight. An original order specifying 55 kg IBW and 1.6 g/kg IBW/day gives 88 g/day; do not replace that specified basis with a different weight."},
+        {"heading": "Clarify whether the energy goal includes protein", "body": "The book discusses a protein-sparing approach in which the planned energy goal is assigned to dextrose and lipid, and notes differing conventions for whether amino acid calories are included in the target. State the convention rather than silently changing it. If an original exercise explicitly calls 2,000 kcal/day the NPC goal and adds 100 g amino acids at 4 kcal/g, NPC remains 2,000 and total delivered energy is 2,400. If its 2,000 goal explicitly includes those amino acid calories, the remaining NPC allowance is 1,600. These are different stated calculation plans."},
         { heading: "Calculate protein directly", body: "Multiply the selected calculation weight by the prescribed grams per kilogram per day. Amino acids conventionally contribute 4 kcal per gram, but their primary purpose is protein delivery. Do not reduce or increase the protein target merely to make the calorie arithmetic look tidy." },
         { heading: "Separate total and nonprotein calories", body: "Total PN energy includes amino acid, dextrose, and lipid energy. Nonprotein calories include dextrose and lipid only. The nonprotein calorie to nitrogen ratio is calculated by dividing nonprotein calories by grams of nitrogen, where nitrogen grams are commonly estimated as amino acid grams divided by 6.25." },
         { heading: "Count energy outside the bag", body: "Propofol, clevidipine, intravenous dextrose, enteral formula, oral intake, and separately infused lipid can materially change total energy. Propofol in a 10 percent lipid emulsion contributes about 1.1 kcal per mL. The medication rate and actual delivered volume should be used rather than an assumed maximum." },
@@ -103,6 +162,63 @@ export const parenteralNutritionCalculationsModule = {
       ],
       keyPoints: ["Protein grams equal calculation weight times the selected dose.", "Amino acids provide 4 kcal per gram.", "Nonprotein calories exclude amino acid energy.", "Medication and enteral calories belong in the same energy ledger."],
       check: { question: "A 70 kg patient is prescribed 1.4 g/kg/day of amino acids. How many grams are required?", choices: ["98 g", "70 g", "50 g", "140 g"], answer: 0, rationale: "70 kg multiplied by 1.4 g/kg/day equals 98 g/day.", reviewHref: "#protein-energy-targets" },
+    },
+    {
+      "slug": "nitrogen-intake-ratios",
+      "title": "Nitrogen Intake and Nonprotein Calorie Ratios",
+      "summary": "Convert amino acid solution into protein and nitrogen, then calculate NPC:N with a consistent daily calorie basis.",
+      "concepts": [
+        "Protein grams from stock solution",
+        "Nitrogen intake",
+        "Nonprotein calorie numerator",
+        "NPC:N ratio"
+      ],
+      "visual": "pn-calc-nitrogen",
+      "application": "Show protein grams, nitrogen grams and nonprotein calories as separate daily totals before dividing.",
+      "lesson": [
+        {
+          "heading": "Calculate delivered protein before nitrogen",
+          "body": "A specified percent w/v amino acid solution contains that many grams per 100 mL. In an original example, 700 mL/day of a 10% w/v solution supplies 70 g/day. The book describes amino acids as the protein source in PN and assigns 4 kcal per gram, so those 70 g also supply 280 kcal/day. A solution volume alone is not a protein amount."
+        },
+        {
+          "heading": "Convert intake with the source factor",
+          "body": "The book uses 1 g nitrogen for each 6.25 g protein. Nitrogen intake in g/day = protein intake in g/day divided by 6.25. The original 70 g/day example therefore supplies 11.2 g nitrogen/day. Nitrogen intake is one part of nitrogen balance, which compares gains with losses; intake alone does not establish positive, negative or neutral balance."
+        },
+        {
+          "heading": "Keep amino acid calories out of NPC",
+          "body": "Nonprotein calories (NPC) are dextrose plus lipid calories. For an original daily plan, 200 g of PN dextrose supplies 680 kcal using 3.4 kcal/g; a stated lipid allowance supplies 440 kcal. NPC is 1,120 kcal/day. Adding 280 amino acid kcal yields total energy of 1,400 kcal/day, but it does not change NPC to 1,400. Use the specified sources and count each once."
+        },
+        {
+          "heading": "Express the result as a ratio to one",
+          "body": "Divide daily NPC by daily nitrogen intake, then express the result as x:1. With 1,120 NPC and 11.2 g nitrogen, NPC:N = 100:1. Both inputs must describe the same time period. Use the full nitrogen value through division unless the exercise explicitly tells you to round it earlier."
+        },
+        {
+          "heading": "Attribute the source comparison values",
+          "body": "The book lists desirable NPC:N values of 80:1 for the most severely stressed, 100:1 for severely stressed and 150:1 for unstressed patients. They are source comparison values for this calculation discussion. A correct ratio does not alone approve a PN prescription or replace the stated protein and energy requirements."
+        },
+        {
+          "heading": "Connect protein stock volume, calories and nitrogen",
+          "body": "For an original order of 102 g protein from a specified 8.5% w/v amino acid solution, concentration is 0.085 g/mL and volume is 102/0.085 = 1,200 mL. Protein energy is 102 x 4 = 408 kcal and nitrogen intake is 102/6.25 = 16.32 g. These are separate outputs from the same protein order, not three additional ingredients."
+        }
+      ],
+      "keyPoints": [
+        "Nitrogen g/day = protein g/day divided by 6.25.",
+        "NPC excludes amino acid calories.",
+        "Divide NPC by nitrogen and state the result as x:1.",
+        "Intake alone is not a nitrogen-balance result."
+      ],
+      "check": {
+        "question": "A daily exercise supplies 70 g amino acids and 1,120 nonprotein kcal. What is NPC:N?",
+        "choices": [
+          "100:1",
+          "16:1",
+          "20:1",
+          "125:1"
+        ],
+        "answer": 0,
+        "rationale": "70/6.25 = 11.2 g nitrogen/day; 1,120/11.2 = 100, giving 100:1.",
+        "reviewHref": "#nitrogen-intake-ratios"
+      }
     },
     {
       slug: "dextrose-gir",
@@ -170,7 +286,7 @@ export const parenteralNutritionCalculationsModule = {
     },
   ],
   references: [
-    { label: "RxPrep 2023 Course Book", locator: "Chapter 11, Determining Fluid Needs, printed page 150 (PDF page 158); original fluid exercises apply the supplied-book method." },
+    { label: "RxPrep 2023 Course Book", locator: "Chapter 11, fluid needs, BEE/TEE, protein and nitrogen calculations, printed pages 150-154 (PDF pages 158-162); original exercises apply the supplied-book methods." },
     { label: "ASPEN. Parenteral Nutrition Clinical Resources and Appropriate Dosing Recommendations", href: "https://nutritioncare.org/clinical-resources/parenteral-nutrition/" },
     { label: "CDC. Adult BMI Categories and BMI as a Screening Measure", href: "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html" },
     { label: "Mifflin MD, et al. A New Predictive Equation for Resting Energy Expenditure", href: "https://pubmed.ncbi.nlm.nih.gov/2305711/" },

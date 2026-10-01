@@ -3829,5 +3829,15 @@
     "production": "not verified",
     "receipt": "sequential-release-pn-2026-10-01.json"
   },
-  "nextStartingPoint": "Continue the entire existing PN calculation module at Chapter 11 Determining Caloric Needs, printed 151/PDF 159: add/reconcile Harris-Benedict BEE and TEE, then protein/nitrogen, weekly lipids, dual-ion additives and complete-order calculations. Locate supplied-book dependencies for retained anthropometric, Mifflin, propofol and clinical GIR claims. Do not advance checklist entry 15 until the corresponding whole-module review is verified."
+  "nextStartingPoint": "Continue the entire existing PN calculation module at Chapter 11 Determining Caloric Needs, printed 151/PDF 159: add/reconcile Harris-Benedict BEE and TEE, then protein/nitrogen, weekly lipids, dual-ion additives and complete-order calculations. Locate supplied-book dependencies for retained anthropometric, Mifflin, propofol and clinical GIR claims. Do not advance checklist entry 15 until the corresponding whole-module review is verified.",
+  "subsequentScopedReviews": [
+    {
+      "date": "2026-10-01",
+      "evidence": "parenteral-nutrition-energy-nitrogen-review.json",
+      "status": "verified",
+      "wholeModuleVerified": false,
+      "scope": "Energy/nitrogen lessons and protein-target additions; current module: 9 lessons / 142 items"
+    }
+  ],
+  "sourceAndItemSnapshotNote": "This file preserves the original fluid-release hashes and initial 116-item review. The subsequent energy/nitrogen evidence identifies the current 142-item snapshot and revised rounding item. Earlier hashes refer to the earlier content commit."
 }
