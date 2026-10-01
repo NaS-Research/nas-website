@@ -802,7 +802,16 @@
             "parenteral-nutrition-calculations"
           ],
           "textAndFiguresRead": true,
-          "evidence": "parenteral-nutrition-calculations-review.json"
+          "evidence": "parenteral-nutrition-calculations-review.json",
+          "verifiedAddedSections": [
+            "Allocate a stated nonprotein calorie goal",
+            "Keep the two source delivery limits distinct",
+            "Preserve dextrose grams when changing stock",
+            "Calculate a mixed concentration from total grams",
+            "Use the stated substrate energy value"
+          ],
+          "latestScopedEvidence": "parenteral-nutrition-delivery-review.json",
+          "wholeCorrespondingModulesVerified": false
         },
         {
           "topic": "Lipid calories, concentrations and weekly average",
@@ -819,7 +828,14 @@
             "parenteral-nutrition-calculations"
           ],
           "textAndFiguresRead": true,
-          "evidence": "parenteral-nutrition-calculations-review.json"
+          "evidence": "parenteral-nutrition-calculations-review.json",
+          "verifiedAddedSections": [
+            "Distinguish source emulsion energy from food fat",
+            "Calculate a weekly average without changing the schedule",
+            "Subtract against the explicit calorie convention"
+          ],
+          "latestScopedEvidence": "parenteral-nutrition-delivery-review.json",
+          "wholeCorrespondingModulesVerified": false
         },
         {
           "topic": "Electrolytes, dual-ion additives, calcium and compatibility",
@@ -837,7 +853,17 @@
             "parenteral-nutrition"
           ],
           "textAndFiguresRead": true,
-          "evidence": "parenteral-nutrition-calculations-review.json"
+          "evidence": "parenteral-nutrition-calculations-review.json",
+          "verifiedAddedSections": [
+            "Carry amino acid grams across source strengths",
+            "Account for sodium supplied with acetate",
+            "Account for potassium supplied with phosphate",
+            "Separate source screening arithmetic from compatibility proof",
+            "Keep corrected calcium as an exercise estimate",
+            "Match calcium and mass-based additive units"
+          ],
+          "latestScopedEvidence": "parenteral-nutrition-delivery-review.json",
+          "wholeCorrespondingModulesVerified": false
         },
         {
           "topic": "Trace/vitamin/insulin additives and enteral nutrition",
@@ -872,7 +898,15 @@
             "parenteral-nutrition-calculations"
           ],
           "textAndFiguresRead": true,
-          "evidence": "parenteral-nutrition-calculations-review.json"
+          "evidence": "parenteral-nutrition-calculations-review.json",
+          "verifiedAddedSections": [
+            "Read both percentages and the delivered volume",
+            "Convert a calorie requirement into final solution volume",
+            "Use all calories in a total-energy percentage",
+            "Reconcile delivery and quantity sufficient to final volume"
+          ],
+          "latestScopedEvidence": "parenteral-nutrition-delivery-review.json",
+          "wholeCorrespondingModulesVerified": false
         }
       ],
       "moduleSlugs": [
@@ -885,11 +919,13 @@
       "findings": [
         "All 20 pages text/tables/figures read and 54 source exercises independently recalculated. This does not establish full clinical module verification.",
         "Existing PN calculation module expanded with source-verified fluid lesson and 16 original questions. Missing/source-unreconciled material remains; checklist count 14.",
-        "Energy and nitrogen lessons, two protein target sections and26 original questions verified. Whole module/source reconciliation remains open; checklist count14."
+        "Energy and nitrogen lessons, two protein target sections and26 original questions verified. Whole module/source reconciliation remains open; checklist count14.",
+        "18 calculation sections in existing dextrose, lipid, additive and order lessons plus 30 original questions verified. All 142 prior bank objects preserved; whole module remains reviewing and checklist count stays 14."
       ],
       "evidence": [
         "parenteral-nutrition-calculations-review.json",
-        "parenteral-nutrition-energy-nitrogen-review.json"
+        "parenteral-nutrition-energy-nitrogen-review.json",
+        "parenteral-nutrition-delivery-review.json"
       ],
       "pdfRangeStatus": "All 20 pages visually verified"
     },

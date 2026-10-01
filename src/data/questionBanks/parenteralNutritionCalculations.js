@@ -658,8 +658,401 @@ const energyNitrogenCases = [
   }
 ];
 
-export const parenteralNutritionCalculationsQuestionBank = [...core, ...bmiCases, ...ibwCases, ...adjustedWeightCases, ...mifflinCases, ...girCases, ...compoundCases, ...fluidRequirementCases, ...energyNitrogenCases];
+const deliveryCalculationCases = [
+  {
+    "id": "pncalc-dextrose-001",
+    "question": "An exercise assigns 80% of a stated 1,530 kcal/day NPC goal to PN dextrose. How much energy is assigned to dextrose?",
+    "choices": [
+      "1,224 kcal/day",
+      "306 kcal/day",
+      "1,530 kcal/day",
+      "360 kcal/day"
+    ],
+    "answer": 0,
+    "rationale": "1,530 x 0.80 = 1,224 kcal/day.",
+    "reviewHref": "#dextrose-gir"
+  },
+  {
+    "id": "pncalc-dextrose-002",
+    "question": "An exercise assigns 1,224 kcal/day to PN dextrose at 3.4 kcal/g. How many grams does that represent?",
+    "choices": [
+      "306 g/day",
+      "360 g/day",
+      "4,161.6 g/day",
+      "1,224 g/day"
+    ],
+    "answer": 1,
+    "rationale": "1,224 / 3.4 = 360 g/day.",
+    "reviewHref": "#dextrose-gir"
+  },
+  {
+    "id": "pncalc-dextrose-003",
+    "question": "How much stated 50% w/v dextrose stock supplies 360 g?",
+    "choices": [
+      "180 mL",
+      "360 mL",
+      "720 mL",
+      "7,200 mL"
+    ],
+    "answer": 2,
+    "rationale": "50% w/v is 0.5 g/mL; 360 / 0.5 = 720 mL.",
+    "reviewHref": "#dextrose-gir"
+  },
+  {
+    "id": "pncalc-dextrose-004",
+    "question": "Convert an explicitly supplied limit of 4 mg/kg/min to g/kg/day using 1,440 minutes/day and 1,000 mg/g.",
+    "choices": [
+      "7 g/kg/day",
+      "4 g/kg/day",
+      "0.00576 g/kg/day",
+      "5.76 g/kg/day"
+    ],
+    "answer": 3,
+    "rationale": "4 x 1,440 / 1,000 = 5.76 g/kg/day. This is not equivalent to the separate 7 g/kg/day figure.",
+    "reviewHref": "#dextrose-gir"
+  },
+  {
+    "id": "pncalc-dextrose-005",
+    "question": "Convert a separately supplied 7 g/kg/day to mg/kg/min using 1,000 mg/g and 1,440 minutes/day. Round to the nearest hundredth.",
+    "choices": [
+      "4.86 mg/kg/min",
+      "4.00 mg/kg/min",
+      "7.00 mg/kg/min",
+      "10.08 mg/kg/min"
+    ],
+    "answer": 0,
+    "rationale": "7 x 1,000 / 1,440 = 4.8611..., rounded to 4.86 mg/kg/min.",
+    "reviewHref": "#dextrose-gir"
+  },
+  {
+    "id": "pncalc-dextrose-006",
+    "question": "An exercise combines 300 mL of 20% w/v dextrose and 200 mL of 5% w/v dextrose, with a stated additive final volume of 500 mL. What is final percentage strength?",
+    "choices": [
+      "12.5% w/v",
+      "14% w/v",
+      "25% w/v",
+      "7% w/v"
+    ],
+    "answer": 1,
+    "rationale": "Contributed mass is 60 + 10 = 70 g; 70 / 500 x 100 = 14% w/v.",
+    "reviewHref": "#dextrose-gir"
+  },
+  {
+    "id": "pncalc-dextrose-007",
+    "question": "An exercise originally orders 420 mL of 50% w/v dextrose. What volume of 70% w/v stock supplies the same grams?",
+    "choices": [
+      "420 mL",
+      "588 mL",
+      "300 mL",
+      "210 mL"
+    ],
+    "answer": 2,
+    "rationale": "The original source contains 210 g. At 0.7 g/mL, 210 / 0.7 = 300 mL.",
+    "reviewHref": "#dextrose-gir"
+  },
+  {
+    "id": "pncalc-dextrose-008",
+    "question": "A supplied glycerol exercise uses 4.3 kcal/g. How many kcal come from 50 g?",
+    "choices": [
+      "170 kcal",
+      "200 kcal",
+      "450 kcal",
+      "215 kcal"
+    ],
+    "answer": 3,
+    "rationale": "50 x 4.3 = 215 kcal. Glycerol uses the explicitly supplied conversion, not PN dextrose 3.4 kcal/g.",
+    "reviewHref": "#dextrose-gir"
+  },
+  {
+    "id": "pncalc-lipid-001",
+    "question": "A source-method exercise supplies 280 mL of 10% lipid emulsion at 1.1 kcal/mL. How many kcal are delivered per dose?",
+    "choices": [
+      "308 kcal",
+      "280 kcal",
+      "560 kcal",
+      "2,520 kcal"
+    ],
+    "answer": 0,
+    "rationale": "280 x 1.1 = 308 kcal per dose.",
+    "reviewHref": "#lipid-energy-ledger"
+  },
+  {
+    "id": "pncalc-lipid-002",
+    "question": "An exercise supplies 190 mL of 30% lipid emulsion at 3 kcal/mL. How much energy is supplied?",
+    "choices": [
+      "190 kcal",
+      "570 kcal",
+      "380 kcal",
+      "513 kcal"
+    ],
+    "answer": 1,
+    "rationale": "190 x 3 = 570 kcal.",
+    "reviewHref": "#lipid-energy-ledger"
+  },
+  {
+    "id": "pncalc-lipid-003",
+    "question": "A stated weekly schedule supplies 308 lipid kcal once weekly. What is the average daily energy over seven days?",
+    "choices": [
+      "308 kcal/day",
+      "2,156 kcal/day",
+      "44 kcal/day",
+      "154 kcal/day"
+    ],
+    "answer": 2,
+    "rationale": "308 / 7 = 44 kcal/day. The average does not change the supplied weekly administration schedule.",
+    "reviewHref": "#lipid-energy-ledger"
+  },
+  {
+    "id": "pncalc-lipid-004",
+    "question": "A stated schedule supplies 308 lipid kcal per dose three times weekly. What is the average over seven days?",
+    "choices": [
+      "44 kcal/day",
+      "924 kcal/day",
+      "308 kcal/day",
+      "132 kcal/day"
+    ],
+    "answer": 3,
+    "rationale": "308 x 3 / 7 = 132 kcal/day.",
+    "reviewHref": "#lipid-energy-ledger"
+  },
+  {
+    "id": "pncalc-lipid-005",
+    "question": "An exercise explicitly sets an NPC goal of 2,100 kcal/day, including 1,530 dextrose kcal. It separately lists 400 amino acid kcal. How many NPC kcal remain for lipid?",
+    "choices": [
+      "570 kcal/day",
+      "170 kcal/day",
+      "970 kcal/day",
+      "2,500 kcal/day"
+    ],
+    "answer": 0,
+    "rationale": "NPC excludes protein. 2,100 - 1,530 = 570 kcal for lipid; do not subtract the separately listed amino acid calories from this NPC goal.",
+    "reviewHref": "#lipid-energy-ledger"
+  },
+  {
+    "id": "pncalc-lipid-006",
+    "question": "A stated lipid requirement is 570 kcal at a supplied 2 kcal/mL. What volume supplies it?",
+    "choices": [
+      "570 mL",
+      "285 mL",
+      "190 mL",
+      "1,140 mL"
+    ],
+    "answer": 1,
+    "rationale": "570 / 2 = 285 mL.",
+    "reviewHref": "#lipid-energy-ledger"
+  },
+  {
+    "id": "pncalc-additive-001",
+    "question": "An exercise requests 50 mEq acetate from a sodium acetate stock explicitly supplying 2 mEq acetate and 2 mEq sodium per mL. What volume supplies the acetate?",
+    "choices": [
+      "25 mL",
+      "50 mL",
+      "100 mL",
+      "12.5 mL"
+    ],
+    "answer": 0,
+    "rationale": "50 / 2 = 25 mL. This also supplies 50 mEq sodium.",
+    "reviewHref": "#stock-solutions-additives"
+  },
+  {
+    "id": "pncalc-additive-002",
+    "question": "A stated order requests 90 mEq total sodium. Its 25 mL sodium acetate stock already supplies 50 mEq sodium. Sodium chloride supplies 4 mEq sodium/mL. What additional sodium chloride volume is needed?",
+    "choices": [
+      "22.5 mL",
+      "10 mL",
+      "12.5 mL",
+      "35 mL"
+    ],
+    "answer": 1,
+    "rationale": "Remaining sodium is 90 - 50 = 40 mEq; 40 / 4 = 10 mL.",
+    "reviewHref": "#stock-solutions-additives"
+  },
+  {
+    "id": "pncalc-additive-003",
+    "question": "A stated order requests 24 mmol phosphate from stock supplying 3 mmol phosphate and 4.4 mEq potassium per mL. What phosphate-stock volume is required?",
+    "choices": [
+      "24 mL",
+      "5.45 mL",
+      "8 mL",
+      "12 mL"
+    ],
+    "answer": 2,
+    "rationale": "24 / 3 = 8 mL. The stock also contributes 35.2 mEq potassium.",
+    "reviewHref": "#stock-solutions-additives"
+  },
+  {
+    "id": "pncalc-additive-004",
+    "question": "A stated potassium goal is 60 mEq. Eight mL of phosphate stock supplies 4.4 mEq potassium/mL, and potassium chloride supplies 2 mEq/mL. What additional potassium chloride volume is needed?",
+    "choices": [
+      "30 mL",
+      "17.6 mL",
+      "24.8 mL",
+      "12.4 mL"
+    ],
+    "answer": 3,
+    "rationale": "Phosphate stock contributes 35.2 mEq; 60 - 35.2 = 24.8 mEq remains, requiring 12.4 mL KCl.",
+    "reviewHref": "#stock-solutions-additives"
+  },
+  {
+    "id": "pncalc-additive-005",
+    "question": "A supplied calcium stock contains 0.465 mEq/mL. What volume provides 9.3 mEq?",
+    "choices": [
+      "20 mL",
+      "9.3 mL",
+      "4.3245 mL",
+      "2 mL"
+    ],
+    "answer": 0,
+    "rationale": "9.3 / 0.465 = 20 mL. Use the supplied ionic concentration.",
+    "reviewHref": "#stock-solutions-additives"
+  },
+  {
+    "id": "pncalc-additive-006",
+    "question": "An exercise supplies calcium 7.9 mg/dL, albumin 2.5 g/dL and the book formula Ca + 0.8(4 - albumin). What calculated estimate results?",
+    "choices": [
+      "7.9 mg/dL",
+      "9.1 mg/dL",
+      "6.7 mg/dL",
+      "11.1 mg/dL"
+    ],
+    "answer": 1,
+    "rationale": "7.9 + 0.8(4 - 2.5) = 9.1 mg/dL. This calculated estimate is not a measured ionized calcium value.",
+    "reviewHref": "#stock-solutions-additives"
+  },
+  {
+    "id": "pncalc-additive-007",
+    "question": "A stated NaCl exercise supplies 35 mEq, MW 58.5, valence 1 and 23.4% w/v stock. What stock volume provides the required compound amount?",
+    "choices": [
+      "35 mL",
+      "2.0475 mL",
+      "8.75 mL",
+      "87.5 mL"
+    ],
+    "answer": 2,
+    "rationale": "35 x 58.5 / 1 = 2,047.5 mg = 2.0475 g. Divide by 0.234 g/mL to obtain 8.75 mL.",
+    "reviewHref": "#stock-solutions-additives"
+  },
+  {
+    "id": "pncalc-additive-008",
+    "question": "An exercise originally orders 600 mL of 10% w/v amino acid stock. What volume of 15% w/v stock preserves the same protein grams?",
+    "choices": [
+      "600 mL",
+      "900 mL",
+      "60 mL",
+      "400 mL"
+    ],
+    "answer": 3,
+    "rationale": "600 x 0.10 = 60 g; 60 / 0.15 = 400 mL. Final bag volume still requires reconciliation.",
+    "reviewHref": "#stock-solutions-additives"
+  },
+  {
+    "id": "pncalc-order-001",
+    "question": "A stated 5% w/v amino acid / 15% w/v dextrose solution runs at 60 mL/hour for 24 hours. Using 4 kcal/g amino acids, how many protein kcal are delivered?",
+    "choices": [
+      "288 kcal",
+      "72 kcal",
+      "734.4 kcal",
+      "1,022.4 kcal"
+    ],
+    "answer": 0,
+    "rationale": "Volume is 1,440 mL; amino acids are 72 g; 72 x 4 = 288 kcal.",
+    "reviewHref": "#rate-final-audit"
+  },
+  {
+    "id": "pncalc-order-002",
+    "question": "A stated 5% w/v amino acid / 15% w/v dextrose solution runs at 60 mL/hour for 24 hours. Using 3.4 kcal/g dextrose, how many dextrose kcal are delivered?",
+    "choices": [
+      "288 kcal",
+      "734.4 kcal",
+      "216 kcal",
+      "1,022.4 kcal"
+    ],
+    "answer": 1,
+    "rationale": "Volume is 1,440 mL and dextrose is 216 g; 216 x 3.4 = 734.4 kcal.",
+    "reviewHref": "#rate-final-audit"
+  },
+  {
+    "id": "pncalc-order-003",
+    "question": "A daily order explicitly supplies 288 amino acid kcal and 734.4 dextrose kcal, with no other calorie source. What total includes both?",
+    "choices": [
+      "734.4 kcal",
+      "288 kcal",
+      "1,022.4 kcal",
+      "446.4 kcal"
+    ],
+    "answer": 2,
+    "rationale": "288 + 734.4 = 1,022.4 kcal.",
+    "reviewHref": "#rate-final-audit"
+  },
+  {
+    "id": "pncalc-order-004",
+    "question": "A stated 5% w/v amino acid / 20% w/v dextrose solution supplies 0.88 kcal/mL including protein. What volume supplies 1,584 kcal on that same basis?",
+    "choices": [
+      "1,584 mL",
+      "1,393.92 mL",
+      "2,329.41 mL",
+      "1,800 mL"
+    ],
+    "answer": 3,
+    "rationale": "1,584 / 0.88 = 1,800 mL. The supplied calorie basis includes protein.",
+    "reviewHref": "#rate-final-audit"
+  },
+  {
+    "id": "pncalc-order-005",
+    "question": "A daily exercise supplies 200 g dextrose at 3.4 kcal/g, 75 g amino acids at 4 kcal/g and 125 mL lipid at 2 kcal/mL. What whole percentage of total calories comes from protein?",
+    "choices": [
+      "24%",
+      "30%",
+      "32%",
+      "75%"
+    ],
+    "answer": 0,
+    "rationale": "Total energy is 680 + 300 + 250 = 1,230 kcal. 300 / 1,230 x 100 = 24.39..., rounded to 24%.",
+    "reviewHref": "#rate-final-audit"
+  },
+  {
+    "id": "pncalc-order-006",
+    "question": "A stated 5% w/v amino acid / 15% w/v dextrose solution actually runs at 50 mL/hour for 18 hours. Using 4 kcal/g amino acids and 3.4 kcal/g dextrose, what total is delivered?",
+    "choices": [
+      "852 kcal",
+      "639 kcal",
+      "900 kcal",
+      "1,022.4 kcal"
+    ],
+    "answer": 1,
+    "rationale": "Actual volume is 900 mL; amino acids supply 180 kcal and dextrose 459 kcal, totaling 639. Do not assume 24 hours.",
+    "reviewHref": "#rate-final-audit"
+  },
+  {
+    "id": "pncalc-order-007",
+    "question": "An arithmetic bag exercise sets final volume at 1,200 mL. Stated ingredient volumes are 300 mL dextrose, 750 mL amino acids and 50 mL additives. What remaining water allowance reaches the stated final volume?",
+    "choices": [
+      "1,200 mL",
+      "1,100 mL",
+      "100 mL",
+      "2,300 mL"
+    ],
+    "answer": 2,
+    "rationale": "1,200 - (300 + 750 + 50) = 100 mL. Quantity sufficient to final volume does not mean adding 1,200 mL water.",
+    "reviewHref": "#rate-final-audit"
+  },
+  {
+    "id": "pncalc-order-008",
+    "question": "A stated phosphate stock already contributes 35.2 mEq potassium, exceeding a 20 mEq potassium goal. What does a negative additional KCl amount mean?",
+    "choices": [
+      "Prepare a negative volume of KCl",
+      "Ignore potassium from phosphate",
+      "Add the full 20 mEq again",
+      "The stated component plan must be reviewed and revised"
+    ],
+    "answer": 3,
+    "rationale": "The first stock already exceeds the goal. A negative result is a plan conflict, not a compounding volume.",
+    "reviewHref": "#rate-final-audit"
+  }
+];
 
-if (parenteralNutritionCalculationsQuestionBank.length !== 142) {
-  throw new Error(`Parenteral nutrition calculations question bank must contain 142 questions, found ${parenteralNutritionCalculationsQuestionBank.length}.`);
+export const parenteralNutritionCalculationsQuestionBank = [...core, ...bmiCases, ...ibwCases, ...adjustedWeightCases, ...mifflinCases, ...girCases, ...compoundCases, ...fluidRequirementCases, ...energyNitrogenCases, ...deliveryCalculationCases];
+
+if (parenteralNutritionCalculationsQuestionBank.length !== 172) {
+  throw new Error(`Parenteral nutrition calculations question bank must contain 172 questions, found ${parenteralNutritionCalculationsQuestionBank.length}.`);
 }
