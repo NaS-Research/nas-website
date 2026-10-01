@@ -186,7 +186,7 @@ const appliedDistractors = [
   ]
 ];
 
-export const adrenalInsufficiencyQuestionBank = concepts.map((concept, index) => {
+const originalAdrenalInsufficiencyQuestionBank = concepts.map((concept, index) => {
   const answer = index % 4;
   const choices = [...appliedDistractors[index]];
   choices.splice(answer, 0, concept.caseAnswer);
@@ -198,7 +198,7 @@ export const adrenalInsufficiencyQuestionBank = concepts.map((concept, index) =>
   };
 });
 
-adrenalInsufficiencyQuestionBank.push({
+originalAdrenalInsufficiencyQuestionBank.push({
   "id": "adrenal-insufficiency-granule-tube",
   "question": "A caregiver plans to mix Alkindi Sprinkle granules into liquid and deliver them through a gastric tube. Which correction follows the label?",
   "choices": [
@@ -213,7 +213,7 @@ adrenalInsufficiencyQuestionBank.push({
   "difficulty": "clinical"
 });
 
-adrenalInsufficiencyQuestionBank.push({
+originalAdrenalInsufficiencyQuestionBank.push({
   "id": "adrenal-insufficiency-diagnosis-versus-recovery",
   "question": "A stable adult being evaluated for new pituitary-related adrenal insufficiency has an 8 AM cortisol of 11 micrograms/dL. No recent steroid exposure confounds testing. Which interpretation is appropriate?",
   "choices": [
@@ -228,7 +228,7 @@ adrenalInsufficiencyQuestionBank.push({
   "difficulty": "clinical"
 });
 
-adrenalInsufficiencyQuestionBank.push({
+originalAdrenalInsufficiencyQuestionBank.push({
   "id": "adrenal-insufficiency-pediatric-crisis-dose",
   "question": "A small child needs emergency hydrocortisone for suspected adrenal crisis. Which dosing principle is correct?",
   "choices": [
@@ -243,7 +243,7 @@ adrenalInsufficiencyQuestionBank.push({
   "difficulty": "clinical"
 });
 
-adrenalInsufficiencyQuestionBank.push({
+originalAdrenalInsufficiencyQuestionBank.push({
   "id": "adrenal-insufficiency-actovial-volume",
   "question": "A prepared 100 mg Solu-Cortef Act-O-Vial contains 2 mL. A verified order calls for 25 mg. What volume corresponds to that dose?",
   "choices": [
@@ -258,7 +258,7 @@ adrenalInsufficiencyQuestionBank.push({
   "difficulty": "clinical"
 });
 
-adrenalInsufficiencyQuestionBank.push({
+originalAdrenalInsufficiencyQuestionBank.push({
   "id": "adrenal-insufficiency-salt-restriction",
   "question": "An adult with aldosterone-deficient primary adrenal insufficiency takes fludrocortisone and asks whether all replacement patients must restrict salt. Which response is appropriate?",
   "choices": [
@@ -272,3 +272,10 @@ adrenalInsufficiencyQuestionBank.push({
   "reviewHref": "#mineralocorticoid-replacement",
   "difficulty": "clinical"
 });
+
+const sourceReviewedReplacementQuestions = {
+  "adrenal-insufficiency-17-case": {
+    "rationale": "Exogenous glucocorticoids can produce Cushing-like effects, including weight gain and fragile skin that bruises easily. The book also lists increased blood pressure and directs monitoring of weight and blood pressure. These findings warrant review of the replacement exposure and clinical adverse effects before any dose escalation; an appropriate reduction must preserve needed cortisol replacement."
+  }
+};
+export const adrenalInsufficiencyQuestionBank = originalAdrenalInsufficiencyQuestionBank.map((question) => sourceReviewedReplacementQuestions[question.id] ? { ...question, ...sourceReviewedReplacementQuestions[question.id] } : question);

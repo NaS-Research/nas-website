@@ -3871,7 +3871,10 @@
         },
         {
           "slug": "glucocorticoid-replacement",
-          "status": "verified"
+          "status": "reviewing",
+          "latestScopedEvidence": "enteral-nutrition-broader-adrenal-perioperative-review.json",
+          "embeddedCheckVerified": false,
+          "wholeLessonVerified": false
         },
         {
           "slug": "mineralocorticoid-replacement",
@@ -3879,7 +3882,10 @@
         },
         {
           "slug": "formulations-administration",
-          "status": "verified"
+          "status": "reviewing",
+          "latestScopedEvidence": "enteral-nutrition-broader-adrenal-perioperative-review.json",
+          "embeddedCheckVerified": false,
+          "wholeLessonVerified": false
         },
         {
           "slug": "sick-day-preparedness",
@@ -3895,12 +3901,40 @@
         }
       ],
       "questions": 35,
-      "status": "verified",
+      "status": "reviewing",
       "evidence": [
         "adrenal-insufficiency.md",
-        "adrenal-pharmacology.md"
+        "adrenal-pharmacology.md",
+        "enteral-nutrition-broader-adrenal-perioperative-review.json"
       ],
-      "verificationNotes": "All 11 lessons/checks/figures and 35 focused cases reviewed; diagnostic/recovery and adult/pediatric boundaries, label-specific administration, sick-day/fluid and mineralocorticoid guidance reconciled. Desktop/mobile figures and interactions, scoring/reset, readability, structural audit and production build passed. See adrenal-insufficiency.md for source scope and sitewide floating-control limitation."
+      "verificationNotes": "All 11 lessons/checks/figures and 35 focused cases reviewed; diagnostic/recovery and adult/pediatric boundaries, label-specific administration, sick-day/fluid and mineralocorticoid guidance reconciled. Desktop/mobile figures and interactions, scoring/reset, readability, structural audit and production build passed. See adrenal-insufficiency.md for source scope and sitewide floating-control limitation.",
+      "broaderEnteralAdministrationReview": {
+        "evidence": "enteral-nutrition-broader-adrenal-perioperative-review.json",
+        "verifiedQuestionIds": [
+          "adrenal-insufficiency-17-case",
+          "adrenal-insufficiency-20-case",
+          "adrenal-insufficiency-23-case"
+        ],
+        "correctedQuestionIds": [
+          "adrenal-insufficiency-17-case"
+        ],
+        "originalPrimaryQuestionIdsPending": [
+          "adrenal-insufficiency-15-case",
+          "adrenal-insufficiency-16-case",
+          "adrenal-insufficiency-21-case",
+          "adrenal-insufficiency-22-case",
+          "adrenal-insufficiency-granule-tube",
+          "adrenal-insufficiency-actovial-volume"
+        ],
+        "newSourceVerifiedBodyHeadings": [
+          "Check food and timing instructions"
+        ],
+        "verifiedEmbeddedCheckLessons": [],
+        "sourceVerifiedCumulativeIds": [],
+        "wholeModuleVerified": false,
+        "figuresVerified": 0,
+        "metadataVerified": false
+      }
     },
     {
       "slug": "gonadal-hormone-pharmacology",
@@ -4534,7 +4568,10 @@
       "lessons": [
         {
           "slug": "perioperative-stress-ulcer",
-          "status": "verified"
+          "status": "reviewing",
+          "latestScopedEvidence": "enteral-nutrition-broader-adrenal-perioperative-review.json",
+          "embeddedCheckVerified": false,
+          "wholeLessonVerified": false
         },
         {
           "slug": "local-anesthetic-pharmacology",
@@ -4578,14 +4615,38 @@
         }
       ],
       "questions": 81,
-      "status": "verified",
+      "status": "reviewing",
       "evidence": [
         "2026-09-26: targeted pediatric BRIDION update linked from toxicology book-row review; two paragraphs/two original cases. Build43315 exit0, structural11/114 and desktop/mobile paragraph checks passed. Full clinical re-review not established by this change.",
         "2026-09-27: targeted reversal lesson now explicitly reconciles ASA minimal-block dosing with BLOXIVERZ label ceiling. Two original cases added; structural11/116 and desktop/mobile checks pass. Module moved to reviewing to reflect actual partial clinical review; not verified.",
         "2026-09-27: reviewed actual reversal-question output; replaced16 repetitive generated items with8 original cases, retaining4 prior originals.12 targeted reversal questions;108 total. Actual desktop/mobile recovery visual inspected. See toxicology-review.json.",
         "2026-09-27: targeted actual-content reviews now cover all11lessons;74original questions,zero generated. Detailed sources/corrections/validation in toxicology-review.json. Lesson statuses updated to reviewing; final assembled clinical audit and open discrepancies remain before verification.",
-        "2026-09-27: complete actual-content review, guideline/label/book discrepancies and original81-question bank reconciled. Build86665 exit0; structural noharderrors/sourcegaps; desktop/mobile and complete10-question practice interaction passed. See perioperative-completion-review.json for evidence, arithmetic, scope and limitations."
-      ]
+        "2026-09-27: complete actual-content review, guideline/label/book discrepancies and original81-question bank reconciled. Build86665 exit0; structural noharderrors/sourcegaps; desktop/mobile and complete10-question practice interaction passed. See perioperative-completion-review.json for evidence, arithmetic, scope and limitations.",
+        "enteral-nutrition-broader-adrenal-perioperative-review.json"
+      ],
+      "broaderEnteralAdministrationReview": {
+        "evidence": "enteral-nutrition-broader-adrenal-perioperative-review.json",
+        "verifiedQuestionIds": [
+          "periop-sup-reconcile"
+        ],
+        "correctedQuestionIds": [],
+        "originalPrimaryQuestionIdsPending": [
+          "periop-sup-fed-risk",
+          "periop-sup-neuro",
+          "periop-sup-dose",
+          "periop-sup-ventilation",
+          "periop-sup-route",
+          "periop-sup-sepsis"
+        ],
+        "newSourceVerifiedBodyHeadings": [
+          "Monitor the selected acid-suppressive treatment"
+        ],
+        "verifiedEmbeddedCheckLessons": [],
+        "sourceVerifiedCumulativeIds": [],
+        "wholeModuleVerified": false,
+        "figuresVerified": 0,
+        "metadataVerified": false
+      }
     },
     {
       "slug": "gastroesophageal-reflux-disease",

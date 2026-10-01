@@ -1,0 +1,1219 @@
+{
+  "date": "2026-10-01",
+  "unit": "enteral-nutrition:broader-adrenal-perioperative-administration-dependencies",
+  "baseCommit": "c9612150de0666e6c2be7b936bb7eae631932775",
+  "source": {
+    "identity": "Private supplied cover-verified RxPrep2023,1032pages.",
+    "completeTextAndRenderedPagesRead": [
+      95,
+      136,
+      642,
+      643,
+      644,
+      645,
+      726,
+      913,
+      914,
+      915
+    ],
+    "printedFootersFullyRead": [
+      87,
+      128,
+      634,
+      635,
+      636,
+      637,
+      718,
+      905
+    ],
+    "paginationNote": "PDF913/914 printed903/904 inferred between source chapter header/table and verified905 footer; edge-cropped footer digits not treated as fully read. Chapter72 full PDF boundaries not yet verified.",
+    "additionalTextReadOnlyNotAdopted": [
+      94,
+      98,
+      137,
+      138,
+      725,
+      727,
+      728,
+      910,
+      911,
+      912,
+      916,
+      917,
+      918
+    ],
+    "fullChapterReadThisUnit": false,
+    "locatingOnly": [
+      {
+        "pdfPage": 642,
+        "terms": [
+          "hydrocortisone"
+        ]
+      },
+      {
+        "pdfPage": 654,
+        "terms": [
+          "enteral"
+        ]
+      },
+      {
+        "pdfPage": 715,
+        "terms": [
+          "adrenal insufficiency"
+        ]
+      },
+      {
+        "pdfPage": 717,
+        "terms": [
+          "prophylaxis"
+        ]
+      },
+      {
+        "pdfPage": 725,
+        "terms": [
+          "adrenal insufficiency"
+        ]
+      },
+      {
+        "pdfPage": 726,
+        "terms": [
+          "stress ulcer",
+          "stress-related"
+        ]
+      }
+    ],
+    "additionalLocatingOnly": [
+      {
+        "pdfPage": 95,
+        "terms": [
+          "liquid"
+        ]
+      },
+      {
+        "pdfPage": 96,
+        "terms": [
+          "liquid"
+        ]
+      },
+      {
+        "pdfPage": 97,
+        "terms": [
+          "liquid",
+          "intravenous"
+        ]
+      },
+      {
+        "pdfPage": 98,
+        "terms": [
+          "liquid",
+          "syringe"
+        ]
+      },
+      {
+        "pdfPage": 910,
+        "terms": [
+          "concentration",
+          "syringe"
+        ]
+      },
+      {
+        "pdfPage": 913,
+        "terms": [
+          "erosive"
+        ]
+      },
+      {
+        "pdfPage": 915,
+        "terms": [
+          "liquid"
+        ]
+      },
+      {
+        "pdfPage": 917,
+        "terms": [
+          "stress ulcer"
+        ]
+      }
+    ],
+    "claims": {
+      "95": "Full formulation context and table read. Oral medication is unreliable with vomiting; injection can be useful in medical settings. Generic liquid/NG examples are not Alkindi label instructions.",
+      "136": "Concentration is ingredient amount divided by total product; dose/volume solved by proportion. Existing source method reapplied; no new concrete clinical liquid strength adopted.",
+      "642-645": "Complete systemic steroid subsection read, including figures, potency table and worked example. Cortisol/aldosterone replacement distinction; hydrocortisone oral/injected forms; HPA suppression and excess effects; food and once-daily7-8AM instructions; monitoring. Historical14day taper rule/immunosuppression/taper examples not adopted as current recovery policy.",
+      "726": "Stress-ulcer mechanism/risk box, H2RA/PPI prevention and adverse-effect text read. Historical ventilation>48h risk list does not settle newer guideline evidence; no modern low-dose or feeding policy adopted.",
+      "913-915": "GERD treatment algorithm, H2RA table, PPI administration/products/formulation tables and risk text fully read. PPIs heal erosive esophagitis; maintenance need/dose reassessed. Non-oral formulations available for NPO patients, but that alone does not establish cited SCCM/ASHP prophylactic route/dose guidance."
+    },
+    "qualifiedSynthesis": [
+      "Concentration changes require recalculating volume from the prescribed milligram dose.",
+      "Steroid-excess clinical findings warrant reviewing exposure while preserving needed replacement.",
+      "Continue a retained/absorbed route rather than relying on oral medication a vomiting patient cannot retain; no specific crisis regimen adopted.",
+      "Reconcile a documented independent esophageal treatment indication before stopping an ICU prophylaxis order.",
+      "Historical PPI associations are not proof of individual causation; duration/exposure qualifications preserved."
+    ],
+    "sourceGaps": [
+      "No Alkindi Sprinkle product/tube restriction or Act-O-Vial preparation rule in the reviewed source.",
+      "No full contemporary divided replacement/prednisolone alternative, pediatric protocol or recovery thresholds established here.",
+      "Explicit2024/2026 SCCM/ASHP, contextualized ventilation and Surviving Sepsis guideline claims not established by2023book.",
+      "Generic non-oral availability is not clinical source closure of the explicitly guideline-based IV prophylaxis question.",
+      "All original interactive figures and current references/metadata remain pending."
+    ]
+  },
+  "questionReview": [
+    {
+      "module": "adrenal-insufficiency-crisis",
+      "id": "adrenal-insufficiency-15-case",
+      "question": "A patient takes hydrocortisone 10 mg on waking, 5 mg at midday, and 5 mg in late afternoon. Which response is best?",
+      "choices": [
+        "Move the entire daily dose to bedtime regardless of symptoms.",
+        "Replace hydrocortisone with the same milligram dose of dexamethasone.",
+        "Keep the largest dose on waking and tailor later doses to symptoms and exposure.",
+        "Eliminate the morning dose to mimic the normal waking peak."
+      ],
+      "answer": 2,
+      "rationale": "Morning-weighted dosing better approximates circadian physiology.",
+      "reviewHref": "#glucocorticoid-replacement",
+      "difficulty": "application",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        642,
+        643,
+        644,
+        645,
+        95,
+        136
+      ],
+      "review": "Once-daily morning steroid timing is supported, but complete divided physiologic replacement ranges/tailoring or monitored low-dose prednisolone alternative is not established by the reviewed section. Original question retained;15-case sum20mg/day checked without closing the regimen."
+    },
+    {
+      "module": "adrenal-insufficiency-crisis",
+      "id": "adrenal-insufficiency-16-case",
+      "question": "A patient repeatedly misses afternoon hydrocortisone despite education. Which response is best?",
+      "choices": [
+        "Use high-dose dexamethasone as the routine physiologic substitute.",
+        "Stop replacement on days when the afternoon dose is difficult.",
+        "Use fludrocortisone alone to simplify the cortisol regimen.",
+        "Consider a carefully monitored low-dose prednisolone regimen."
+      ],
+      "answer": 3,
+      "rationale": "A longer-acting alternative may improve adherence while limiting exposure.",
+      "reviewHref": "#glucocorticoid-replacement",
+      "difficulty": "application",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        642,
+        643,
+        644,
+        645,
+        95,
+        136
+      ],
+      "review": "Once-daily morning steroid timing is supported, but complete divided physiologic replacement ranges/tailoring or monitored low-dose prednisolone alternative is not established by the reviewed section. Original question retained;15-case sum20mg/day checked without closing the regimen."
+    },
+    {
+      "module": "adrenal-insufficiency-crisis",
+      "id": "adrenal-insufficiency-17-case",
+      "question": "A patient gains weight, develops hypertension, and bruises easily while taking replacement hydrocortisone. Which response is best?",
+      "choices": [
+        "Assess for glucocorticoid over-replacement and reduce exposure if appropriate.",
+        "Increase hydrocortisone until a random cortisol reaches a chosen target.",
+        "Dismiss the symptoms because replacement can never cause glucocorticoid excess.",
+        "Assume bruising and weight gain always indicate cortisol deficiency."
+      ],
+      "answer": 0,
+      "rationale": "Exogenous glucocorticoids can produce Cushing-like effects, including weight gain and fragile skin that bruises easily. The book also lists increased blood pressure and directs monitoring of weight and blood pressure. These findings warrant review of the replacement exposure and clinical adverse effects before any dose escalation; an appropriate reduction must preserve needed cortisol replacement.",
+      "reviewHref": "#glucocorticoid-replacement",
+      "difficulty": "application",
+      "status": "verified",
+      "changed": true,
+      "sourcePdfPages": [
+        642,
+        643,
+        644,
+        645,
+        95,
+        136
+      ],
+      "review": "Book steroid-excess figure and table support weight gain, easy bruising and increased blood pressure. Revised explanation applies clinical adverse-effect assessment without treating a random cortisol as the dose target or eliminating required replacement."
+    },
+    {
+      "module": "adrenal-insufficiency-crisis",
+      "id": "adrenal-insufficiency-20-case",
+      "question": "A caregiver receives a new liquid hydrocortisone concentration but continues the old milliliter volume. Which response is best?",
+      "choices": [
+        "Keep the old volume because hydrocortisone concentrations are interchangeable.",
+        "Choose a household spoon and estimate the volume.",
+        "Adjust the prescribed milligram dose solely to preserve the old volume.",
+        "Stop and recalculate the volume from the prescribed milligram dose and new concentration."
+      ],
+      "answer": 3,
+      "rationale": "The same volume can deliver a different dose when the concentration changes.",
+      "reviewHref": "#formulations-administration",
+      "difficulty": "application",
+      "status": "verified",
+      "changed": false,
+      "sourcePdfPages": [
+        642,
+        643,
+        644,
+        645,
+        95,
+        136
+      ],
+      "review": "Book defines concentration as amount per total product and solves dose/volume by proportion. The original key recalculates volume from the prescribed dose and new concentration; no specific liquid product concentration or storage rule is asserted."
+    },
+    {
+      "module": "adrenal-insufficiency-crisis",
+      "id": "adrenal-insufficiency-21-case",
+      "question": "A child changes from tablets to granules and the caregiver has not received administration teaching. Which response is best?",
+      "choices": [
+        "Provide product-specific counseling and observe a return demonstration before relying on the new regimen.",
+        "Assume granules always use the same preparation method as crushed tablets.",
+        "Change the dose without reviewing the product instructions.",
+        "Skip counseling because the parent drug name is unchanged."
+      ],
+      "answer": 0,
+      "rationale": "The formulation changes the administration steps even when the prescribed milligram dose is unchanged.",
+      "reviewHref": "#formulations-administration",
+      "difficulty": "application",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        642,
+        643,
+        644,
+        645,
+        95,
+        136
+      ],
+      "review": "Complete product-specific granule/liquid preparation, return-demonstration/emergency device technique or Alkindi tube restriction is not established by the supplied-book section. Generic formulation considerations do not authorize a product-specific tube method. Original harder topic retained pending."
+    },
+    {
+      "module": "adrenal-insufficiency-crisis",
+      "id": "adrenal-insufficiency-22-case",
+      "question": "A patient's kit is unexpired, but neither the patient nor family can activate the vial system. Which response is best?",
+      "choices": [
+        "Rely on the unexpired date as proof that the kit can be used correctly.",
+        "Retrain with the dispensed device and confirm successful return demonstration.",
+        "Wait until a crisis to learn how to activate the vial.",
+        "Substitute a written prescription for a return demonstration."
+      ],
+      "answer": 1,
+      "rationale": "Time-critical emergency treatment depends on operational skill, not possession alone.",
+      "reviewHref": "#formulations-administration",
+      "difficulty": "application",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        642,
+        643,
+        644,
+        645,
+        95,
+        136
+      ],
+      "review": "Complete product-specific granule/liquid preparation, return-demonstration/emergency device technique or Alkindi tube restriction is not established by the supplied-book section. Generic formulation considerations do not authorize a product-specific tube method. Original harder topic retained pending."
+    },
+    {
+      "module": "adrenal-insufficiency-crisis",
+      "id": "adrenal-insufficiency-23-case",
+      "question": "A patient treated for adrenal crisis remains nauseated and cannot retain fluids despite improved blood pressure. Which response is best?",
+      "choices": [
+        "Switch to tablets solely because blood pressure has improved.",
+        "Stop glucocorticoid coverage until nausea resolves.",
+        "Continue parenteral coverage until oral absorption is dependable.",
+        "Use fludrocortisone alone while oral absorption is unreliable."
+      ],
+      "answer": 2,
+      "rationale": "A swallowed dose cannot protect the patient when it is not retained or absorbed.",
+      "reviewHref": "#formulations-administration",
+      "difficulty": "application",
+      "status": "verified",
+      "changed": false,
+      "sourcePdfPages": [
+        642,
+        643,
+        644,
+        645,
+        95,
+        136
+      ],
+      "review": "Book identifies cortisol replacement as necessary in adrenal insufficiency, includes injected hydrocortisone and explains that oral medication is ineffective when vomiting prevents retention. Continue a reliable route is operational synthesis; no crisis-dose or step-down schedule is newly adopted."
+    },
+    {
+      "module": "adrenal-insufficiency-crisis",
+      "id": "adrenal-insufficiency-granule-tube",
+      "question": "A caregiver plans to mix Alkindi Sprinkle granules into liquid and deliver them through a gastric tube. Which correction follows the label?",
+      "choices": [
+        "Proceed because every hydrocortisone formulation is tube-compatible",
+        "Crush the granules first",
+        "Do not use this method; arrange a suitable product and administration plan",
+        "Swallow the intact capsule instead"
+      ],
+      "answer": 2,
+      "rationale": "The granules should not be mixed into liquid or delivered through nasogastric or gastric tubes. Product-specific selection is needed to preserve dose delivery and avoid tube blockage.",
+      "reviewHref": "#formulations-administration",
+      "difficulty": "clinical",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        642,
+        643,
+        644,
+        645,
+        95,
+        136
+      ],
+      "review": "Complete product-specific granule/liquid preparation, return-demonstration/emergency device technique or Alkindi tube restriction is not established by the supplied-book section. Generic formulation considerations do not authorize a product-specific tube method. Original harder topic retained pending."
+    },
+    {
+      "module": "adrenal-insufficiency-crisis",
+      "id": "adrenal-insufficiency-actovial-volume",
+      "question": "A prepared 100 mg Solu-Cortef Act-O-Vial contains 2 mL. A verified order calls for 25 mg. What volume corresponds to that dose?",
+      "choices": [
+        "0.25 mL",
+        "1 mL",
+        "2 mL",
+        "0.5 mL"
+      ],
+      "answer": 3,
+      "rationale": "The concentration is 100 mg divided by 2 mL, or 50 mg/mL. A 25 mg dose therefore occupies 0.5 mL. Confirm the actual product concentration; other presentations differ.",
+      "reviewHref": "#formulations-administration",
+      "difficulty": "clinical",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        642,
+        643,
+        644,
+        645,
+        95,
+        136
+      ],
+      "review": "Conditional arithmetic independently verified: 100/2=50mg/mL and25/50=0.5mL. Actual100mgAct-O-Vial preparation/concentration and label instructions not established by reviewed book; whole question remains pending and is excluded from complete-assessment count."
+    },
+    {
+      "module": "perioperative-critical-care-pharmacology",
+      "id": "periop-sup-fed-risk",
+      "question": "An enterally fed ICU patient still has significant coagulopathy. Does feeding alone justify stopping stress-ulcer prophylaxis?",
+      "choices": [
+        "Yes; feeding removes bleeding risk",
+        "No; reassess the persistent risk and continue appropriate prophylaxis",
+        "Yes; replace the PPI with no preventive therapy regardless of risk",
+        "No; add an H2RA to every PPI"
+      ],
+      "answer": 1,
+      "rationale": "Feeding reduces risk but does not erase coagulopathy. Guidance supports prophylaxis in fed adults who remain at risk.",
+      "reviewHref": "#perioperative-stress-ulcer",
+      "difficulty": "clinical",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        726,
+        913,
+        914,
+        915
+      ],
+      "review": "The historical book supports H2RA/PPI prevention in at-risk ICU patients and describes non-oral acid-suppression formulations. It does not establish the full explicitly cited2024/2026 guideline claim, low-dose category, fed/neurocritical recommendation, ventilation evidence nuance, daily route rule or sepsis recommendation. Original current topic retained pending."
+    },
+    {
+      "module": "perioperative-critical-care-pharmacology",
+      "id": "periop-sup-neuro",
+      "question": "How should the 2024 SCCM/ASHP recommendation for neurocritical-care adults be represented?",
+      "choices": [
+        "A strong recommendation based on high-certainty evidence",
+        "A prohibition on acid suppression",
+        "A suggestion to use prophylaxis, supported by very low-certainty evidence",
+        "Proof that all neurologic outpatients need a PPI"
+      ],
+      "answer": 2,
+      "rationale": "The recommendation is conditional and the evidence is very uncertain; its population is neurocritical-care adults.",
+      "reviewHref": "#perioperative-stress-ulcer",
+      "difficulty": "clinical",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        726,
+        913,
+        914,
+        915
+      ],
+      "review": "The historical book supports H2RA/PPI prevention in at-risk ICU patients and describes non-oral acid-suppression formulations. It does not establish the full explicitly cited2024/2026 guideline claim, low-dose category, fed/neurocritical recommendation, ventilation evidence nuance, daily route rule or sepsis recommendation. Original current topic retained pending."
+    },
+    {
+      "module": "perioperative-critical-care-pharmacology",
+      "id": "periop-sup-dose",
+      "question": "Which pantoprazole daily total falls within the SCCM/ASHP low-dose category for stress-ulcer prophylaxis?",
+      "choices": [
+        "40 mg",
+        "80 mg",
+        "120 mg",
+        "192 mg"
+      ],
+      "answer": 0,
+      "rationale": "The guideline defines this category as no more than 40 mg daily. An active bleeding regimen addresses a different indication.",
+      "reviewHref": "#perioperative-stress-ulcer",
+      "difficulty": "clinical",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        726,
+        913,
+        914,
+        915
+      ],
+      "review": "The historical book supports H2RA/PPI prevention in at-risk ICU patients and describes non-oral acid-suppression formulations. It does not establish the full explicitly cited2024/2026 guideline claim, low-dose category, fed/neurocritical recommendation, ventilation evidence nuance, daily route rule or sepsis recommendation. Original current topic retained pending."
+    },
+    {
+      "module": "perioperative-critical-care-pharmacology",
+      "id": "periop-sup-reconcile",
+      "question": "An ICU patient no longer has stress-ulcer risk factors but was taking a PPI for documented erosive esophagitis before admission. What is the best reconciliation?",
+      "choices": [
+        "Stop every acid-suppressive medicine at ICU transfer",
+        "Add famotidine to replace the treatment indication",
+        "Continue ICU prophylaxis indefinitely without a diagnosis",
+        "Review and retain therapy appropriate for the independent esophageal indication"
+      ],
+      "answer": 3,
+      "rationale": "Stopping unnecessary prophylaxis does not mean stopping justified treatment of another condition.",
+      "reviewHref": "#perioperative-stress-ulcer",
+      "difficulty": "clinical",
+      "status": "verified",
+      "changed": false,
+      "sourcePdfPages": [
+        726,
+        913,
+        914,
+        915
+      ],
+      "review": "Book uses PPIs to heal erosive esophagitis and requires reassessing continuing maintenance need/lowest effective dose. Retain therapy appropriate for the documented independent indication is synthesis; no indefinite prescription or modern ICU risk threshold is adopted."
+    },
+    {
+      "module": "perioperative-critical-care-pharmacology",
+      "id": "periop-sup-ventilation",
+      "question": "What follows from the 2024 uncertainty about ventilation as an independent bleeding risk factor and the newer 2026 contextualized guidance?",
+      "choices": [
+        "No ventilated patient benefits from prophylaxis",
+        "Assess the ventilated patient individually, considering the full bleeding-risk profile",
+        "Every ventilated patient needs lifelong PPI therapy",
+        "Choose therapy solely by the ventilator model"
+      ],
+      "answer": 1,
+      "rationale": "Uncertainty about an independent risk factor is not proof of no treatment benefit. The newer guidance calls for individualized assessment.",
+      "reviewHref": "#perioperative-stress-ulcer",
+      "difficulty": "clinical",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        726,
+        913,
+        914,
+        915
+      ],
+      "review": "The historical book supports H2RA/PPI prevention in at-risk ICU patients and describes non-oral acid-suppression formulations. It does not establish the full explicitly cited2024/2026 guideline claim, low-dose category, fed/neurocritical recommendation, ventilation evidence nuance, daily route rule or sepsis recommendation. Original current topic retained pending."
+    },
+    {
+      "module": "perioperative-critical-care-pharmacology",
+      "id": "periop-sup-route",
+      "question": "A high-risk ICU patient cannot receive enteral medication and has no class-specific contraindication. Which plan fits SCCM/ASHP guidance?",
+      "choices": [
+        "Defer prophylaxis until oral intake resumes",
+        "Use a high-dose infusion solely because the patient is in the ICU",
+        "Use an appropriate low-dose IV PPI or H2RA with daily reassessment",
+        "Use both drug classes routinely"
+      ],
+      "answer": 2,
+      "rationale": "IV therapy is acceptable when indicated and enteral delivery is impractical. Organ function, interactions and the indication guide selection.",
+      "reviewHref": "#perioperative-stress-ulcer",
+      "difficulty": "clinical",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        726,
+        913,
+        914,
+        915
+      ],
+      "review": "The historical book supports H2RA/PPI prevention in at-risk ICU patients and describes non-oral acid-suppression formulations. It does not establish the full explicitly cited2024/2026 guideline claim, low-dose category, fed/neurocritical recommendation, ventilation evidence nuance, daily route rule or sepsis recommendation. Original current topic retained pending."
+    },
+    {
+      "module": "perioperative-critical-care-pharmacology",
+      "id": "periop-sup-sepsis",
+      "question": "An adult with septic shock and coagulopathy is being assessed for stress-ulcer prevention. Which statement accurately describes the 2026 Surviving Sepsis Campaign recommendation?",
+      "choices": [
+        "All patients with sepsis require lifelong acid suppression",
+        "H2 blockers are contraindicated in every septic patient",
+        "PPI prophylaxis is conditionally suggested over no prophylaxis when GI bleeding risk factors are present",
+        "The recommendation proves that PPIs are superior to H2 blockers"
+      ],
+      "answer": 2,
+      "rationale": "The recommendation addresses PPI versus no prophylaxis in adults with sepsis or septic shock and GI bleeding risk. It is conditional with moderate-certainty evidence; it is not a head-to-head PPI-versus-H2-blocker conclusion.",
+      "reviewHref": "#perioperative-stress-ulcer",
+      "difficulty": "advanced",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        726,
+        913,
+        914,
+        915
+      ],
+      "review": "The historical book supports H2RA/PPI prevention in at-risk ICU patients and describes non-oral acid-suppression formulations. It does not establish the full explicitly cited2024/2026 guideline claim, low-dose category, fed/neurocritical recommendation, ventilation evidence nuance, daily route rule or sepsis recommendation. Original current topic retained pending."
+    }
+  ],
+  "teachingReview": [
+    {
+      "module": "adrenal-insufficiency-crisis",
+      "lesson": "glucocorticoid-replacement",
+      "heading": "Use physiologic ranges",
+      "body": "Adults with primary adrenal insufficiency commonly use hydrocortisone 15 to 25 mg per day in two or three doses, with the largest dose on waking. Cortisone acetate 20 to 35 mg is another option where available.",
+      "status": "pending complete original body",
+      "review": "Original body preserved. Complete modern replacement/product-label/ICU-guideline claims remain pending; partial support does not verify the whole body."
+    },
+    {
+      "module": "adrenal-insufficiency-crisis",
+      "lesson": "glucocorticoid-replacement",
+      "heading": "Select an alternative carefully",
+      "body": "Prednisolone 3 to 5 mg daily can simplify dosing when adherence is difficult. Dexamethasone is generally avoided for routine replacement because high potency and long action make physiologic titration and recovery assessment difficult.",
+      "status": "pending complete original body",
+      "review": "Original body preserved. Complete modern replacement/product-label/ICU-guideline claims remain pending; partial support does not verify the whole body."
+    },
+    {
+      "module": "adrenal-insufficiency-crisis",
+      "lesson": "glucocorticoid-replacement",
+      "heading": "Monitor the person",
+      "body": "Routine replacement is titrated clinically rather than to serum cortisol targets. Fatigue, weight loss, nausea, and postural symptoms can suggest under-replacement, while weight gain, insomnia, bruising, hypertension, hyperglycemia, and osteoporosis can suggest excess.",
+      "status": "pending complete original body",
+      "review": "Original body preserved. Complete modern replacement/product-label/ICU-guideline claims remain pending; partial support does not verify the whole body."
+    },
+    {
+      "module": "adrenal-insufficiency-crisis",
+      "lesson": "formulations-administration",
+      "heading": "Choose an oral product deliberately",
+      "body": "Tablets support flexible divided dosing for many adults. Pediatric granules and compounded or marketed liquid formulations may support smaller doses or swallowing needs, but concentrations, measuring devices, storage, and preparation instructions are product specific and are not interchangeable by volume.",
+      "status": "pending complete original body",
+      "review": "Original body preserved. Complete modern replacement/product-label/ICU-guideline claims remain pending; partial support does not verify the whole body."
+    },
+    {
+      "module": "adrenal-insufficiency-crisis",
+      "lesson": "formulations-administration",
+      "heading": "Prevent measurement errors",
+      "body": "Write the dose in milligrams and confirm the concentration whenever a liquid is used. Use the supplied oral syringe or an appropriate calibrated device rather than household spoons. Granules should be administered according to their labeling, and caregivers should demonstrate the complete technique.",
+      "status": "pending complete original body",
+      "review": "Original body preserved. Complete modern replacement/product-label/ICU-guideline claims remain pending; partial support does not verify the whole body."
+    },
+    {
+      "module": "adrenal-insufficiency-crisis",
+      "lesson": "formulations-administration",
+      "heading": "Administer Alkindi Sprinkle correctly",
+      "body": "Open the capsule; do not swallow its shell or crush or chew the granules. Give the granules directly, from a spoon, or on a small spoonful of cool soft food, and swallow within five minutes. Follow with fluid, but do not mix the granules into liquid or administer through nasogastric or gastric tubes. Contact the care team if the full dose is not retained. Switching oral formulations requires close monitoring for under-replacement even when the initial total daily milligram dose is unchanged.",
+      "status": "pending complete original body",
+      "review": "Original body preserved. Complete modern replacement/product-label/ICU-guideline claims remain pending; partial support does not verify the whole body."
+    },
+    {
+      "module": "adrenal-insufficiency-crisis",
+      "lesson": "formulations-administration",
+      "heading": "Check food and timing instructions",
+      "body": "The book advises taking oral systemic steroid doses with food to reduce gastrointestinal upset. For a once-daily schedule, it places the dose between 7 and 8 AM to approximate natural cortisol timing. Keep the prescribed replacement schedule and the actual product instructions: this once-daily teaching does not replace divided hydrocortisone dosing or the separate preparation rules for pediatric granules.",
+      "status": "verified",
+      "review": "New source-supported food/once-daily timing or acid-suppressant adverse-effect teaching; qualifications prevent applying it as a granule protocol, divided replacement schedule or individual causal attribution."
+    },
+    {
+      "module": "adrenal-insufficiency-crisis",
+      "lesson": "formulations-administration",
+      "heading": "Prepare the emergency route",
+      "body": "Emergency hydrocortisone sodium succinate may require activation or reconstitution before IV or IM administration. Training should use the exact device dispensed, cover expiration and storage checks, and end with a return demonstration by the patient and a close contact.",
+      "status": "pending complete original body",
+      "review": "Original body preserved. Complete modern replacement/product-label/ICU-guideline claims remain pending; partial support does not verify the whole body."
+    },
+    {
+      "module": "adrenal-insufficiency-crisis",
+      "lesson": "formulations-administration",
+      "heading": "Distinguish the injection presentations",
+      "body": "A Solu-Cortef plain vial needs a separate compatible diluent; an Act-O-Vial contains its diluent in another compartment. For the 100 mg Act-O-Vial, the mixed volume is 2 mL (50 mg/mL). Activate the compartments, gently mix to dissolve, expose and disinfect the stopper, then withdraw the prescribed dose with the trained aseptic technique. Check the actual strength and instructions; this concentration must not be assumed for other presentations. Reconstitution is not an extra conversion from salt weight to hydrocortisone dose.",
+      "status": "pending complete original body",
+      "review": "Original body preserved. Complete modern replacement/product-label/ICU-guideline claims remain pending; partial support does not verify the whole body."
+    },
+    {
+      "module": "adrenal-insufficiency-crisis",
+      "lesson": "formulations-administration",
+      "heading": "Transition after stabilization",
+      "body": "Parenteral stress dosing continues while oral absorption or hemodynamics remain unreliable. Once the trigger is controlled and the patient is stable and absorbing medication, the regimen can step down toward oral stress dosing and then physiologic replacement under the treating team's direction.",
+      "status": "pending complete original body",
+      "review": "Original body preserved. Complete modern replacement/product-label/ICU-guideline claims remain pending; partial support does not verify the whole body."
+    },
+    {
+      "module": "perioperative-critical-care-pharmacology",
+      "lesson": "perioperative-stress-ulcer",
+      "heading": "Separate ICU location from bleeding risk",
+      "body": "The 2024 SCCM and ASHP guideline identifies coagulopathy, shock, and chronic liver disease as likely risk factors for clinically important stress-related upper gastrointestinal bleeding. Its evidence review did not establish ventilation alone as an independent risk factor. The 2026 Saudi/Nordic contextualized guideline incorporates newer evidence and advises individualized assessment of ventilated patients as potentially at risk. Do not interpret the earlier uncertainty as proof that ventilated patients cannot benefit.",
+      "status": "pending complete original body",
+      "review": "Original body preserved. Complete modern replacement/product-label/ICU-guideline claims remain pending; partial support does not verify the whole body."
+    },
+    {
+      "module": "perioperative-critical-care-pharmacology",
+      "lesson": "perioperative-stress-ulcer",
+      "heading": "Choose a low-dose preventive regimen",
+      "body": "The 2024 SCCM/ASHP guideline accepts either a proton pump inhibitor or histamine-2 receptor antagonist for adults who remain at risk. Enteral and intravenous routes are both acceptable when clinically feasible. Drug interactions, kidney function, enteral access, prior acid disease, and local protocol should determine the exact regimen.",
+      "status": "pending complete original body",
+      "review": "Original body preserved. Complete modern replacement/product-label/ICU-guideline claims remain pending; partial support does not verify the whole body."
+    },
+    {
+      "module": "perioperative-critical-care-pharmacology",
+      "lesson": "perioperative-stress-ulcer",
+      "heading": "Apply sepsis-specific guidance",
+      "body": "For adults with sepsis or septic shock and gastrointestinal bleeding risk factors, the 2026 Surviving Sepsis Campaign conditionally suggests PPI prophylaxis rather than no prophylaxis, with moderate-certainty evidence. This comparison does not establish PPI superiority over H2 blockers or make prophylaxis automatic for every patient with sepsis. Keep risk assessment, dose selection and stopping rules explicit.",
+      "status": "pending complete original body",
+      "review": "Original body preserved. Complete modern replacement/product-label/ICU-guideline claims remain pending; partial support does not verify the whole body."
+    },
+    {
+      "module": "perioperative-critical-care-pharmacology",
+      "lesson": "perioperative-stress-ulcer",
+      "heading": "Define low dose and distinguish active bleeding",
+      "body": "SCCM/ASHP defines low-dose daily totals as at most 40 mg for pantoprazole, omeprazole or esomeprazole; 30 mg for lansoprazole; and 40 mg for famotidine. These are preventive dose categories, not a universal prescription: renal function and product-specific administration still matter. Active gastrointestinal bleeding requires its own evaluation and treatment pathway.",
+      "status": "pending complete original body",
+      "review": "Original body preserved. Complete modern replacement/product-label/ICU-guideline claims remain pending; partial support does not verify the whole body."
+    },
+    {
+      "module": "perioperative-critical-care-pharmacology",
+      "lesson": "perioperative-stress-ulcer",
+      "heading": "Account for feeding and neurologic illness",
+      "body": "Enteral feeding does not cancel persistent bleeding risk. SCCM/ASHP suggests prophylaxis for at-risk adults even when fed, and separately suggests it in neurocritical-care adults, with very low certainty for both recommendations. A low-risk, fed patient is a different case from a fed patient with coagulopathy.",
+      "status": "pending complete original body",
+      "review": "Original body preserved. Complete modern replacement/product-label/ICU-guideline claims remain pending; partial support does not verify the whole body."
+    },
+    {
+      "module": "perioperative-critical-care-pharmacology",
+      "lesson": "perioperative-stress-ulcer",
+      "heading": "Monitor the selected acid-suppressive treatment",
+      "body": "The book describes thrombocytopenia and mental-status changes with H2 receptor antagonists, particularly in older patients or those with renal impairment, and notes that tolerance to their effect can occur. Its PPI tables list C. difficile-associated diarrhea and other adverse effects; fracture warnings concern high doses or prolonged exposure. Review new symptoms, renal function and the continuing indication. Reported associations with infection or pneumonia do not establish that acid suppression caused an individual patient's illness.",
+      "status": "verified",
+      "review": "New source-supported food/once-daily timing or acid-suppressant adverse-effect teaching; qualifications prevent applying it as a granule protocol, divided replacement schedule or individual causal attribution."
+    },
+    {
+      "module": "perioperative-critical-care-pharmacology",
+      "lesson": "perioperative-stress-ulcer",
+      "heading": "Preserve an independent treatment indication",
+      "body": "A PPI used before ICU admission may be treating recent bleeding, erosive esophagitis, a hypersecretory condition or active H. pylori infection. Reconcile that indication before stopping it. If the history is unclear, clarify it instead of assuming the drug was started solely for ICU prophylaxis.",
+      "status": "pending complete original body",
+      "review": "Original body preserved. Complete modern replacement/product-label/ICU-guideline claims remain pending; partial support does not verify the whole body."
+    },
+    {
+      "module": "perioperative-critical-care-pharmacology",
+      "lesson": "perioperative-stress-ulcer",
+      "heading": "Stop when the reason ends",
+      "body": "Enteral nutrition probably reduces bleeding risk, and low-risk patients receiving enteral nutrition should not receive routine prophylaxis. Review the indication daily, discontinue when the risk factor resolves, and avoid carrying prophylaxis through ICU transfer or discharge unless a separate indication remains.",
+      "status": "pending complete original body",
+      "review": "Original body preserved. Complete modern replacement/product-label/ICU-guideline claims remain pending; partial support does not verify the whole body."
+    }
+  ],
+  "embeddedCheckReview": [
+    {
+      "module": "adrenal-insufficiency-crisis",
+      "lesson": "glucocorticoid-replacement",
+      "question": {
+        "question": "Which regimen best approximates physiologic cortisol timing?",
+        "choices": [
+          "Hydrocortisone divided with the largest dose on waking",
+          "Dexamethasone with the largest dose at bedtime",
+          "Fludrocortisone alone",
+          "Random hydrocortisone dosing without a schedule"
+        ],
+        "answer": 0,
+        "rationale": "Morning-weighted hydrocortisone better approximates the normal circadian peak.",
+        "reviewHref": "#glucocorticoid-replacement"
+      },
+      "status": "pending unchanged",
+      "review": "Complete divided physiologic timing, calibrated-device prescribing guidance or modern low-risk-fed deprescribing rule not fully established by this source scope."
+    },
+    {
+      "module": "adrenal-insufficiency-crisis",
+      "lesson": "formulations-administration",
+      "question": {
+        "question": "What is the safest way to prescribe a liquid hydrocortisone dose?",
+        "choices": [
+          "Specify milligrams, verify the concentration, and use a calibrated device",
+          "Specify only a volume without naming the concentration",
+          "Measure with a household teaspoon",
+          "Assume every liquid has the same concentration"
+        ],
+        "answer": 0,
+        "rationale": "A milligram dose linked to a verified concentration and calibrated device reduces formulation and measurement errors.",
+        "reviewHref": "#formulations-administration"
+      },
+      "status": "pending unchanged",
+      "review": "Complete divided physiologic timing, calibrated-device prescribing guidance or modern low-risk-fed deprescribing rule not fully established by this source scope."
+    },
+    {
+      "module": "perioperative-critical-care-pharmacology",
+      "lesson": "perioperative-stress-ulcer",
+      "question": {
+        "question": "An extubated, stable, enterally fed ICU patient has no neurologic critical illness, coagulopathy, shock, chronic liver disease, or separate acid indication. What is the best action?",
+        "choices": [
+          "Discontinue routine stress-ulcer prophylaxis",
+          "Continue lifelong prophylaxis because the patient was ventilated",
+          "Double the acid-suppressive dose",
+          "Combine a PPI and H2RA"
+        ],
+        "answer": 0,
+        "rationale": "Current guidance discourages prophylaxis in low-risk enterally fed adults and emphasizes stopping when risk resolves.",
+        "reviewHref": "#perioperative-stress-ulcer"
+      },
+      "status": "pending unchanged",
+      "review": "Complete divided physiologic timing, calibrated-device prescribing guidance or modern low-risk-fed deprescribing rule not fully established by this source scope."
+    }
+  ],
+  "broaderSelection": {
+    "expandedOriginalPrimaryQuestions": 16,
+    "sourceVerifiedQuestions": 4,
+    "correctedQuestions": 1,
+    "retainedSourceVerifiedQuestions": 3,
+    "pendingOriginalPrimaryQuestions": 12,
+    "parents": [
+      {
+        "module": "adrenal-insufficiency-crisis",
+        "originalPrimaryQuestionsReviewed": 9,
+        "sourceVerifiedQuestions": 3,
+        "correctedQuestions": 1,
+        "pendingOriginalPrimaryQuestions": 6,
+        "pendingQuestionIds": [
+          "adrenal-insufficiency-15-case",
+          "adrenal-insufficiency-16-case",
+          "adrenal-insufficiency-21-case",
+          "adrenal-insufficiency-22-case",
+          "adrenal-insufficiency-granule-tube",
+          "adrenal-insufficiency-actovial-volume"
+        ],
+        "otherParentQuestionsPending": 26,
+        "wholeModuleVerified": false
+      },
+      {
+        "module": "perioperative-critical-care-pharmacology",
+        "originalPrimaryQuestionsReviewed": 7,
+        "sourceVerifiedQuestions": 1,
+        "correctedQuestions": 0,
+        "pendingOriginalPrimaryQuestions": 6,
+        "pendingQuestionIds": [
+          "periop-sup-fed-risk",
+          "periop-sup-neuro",
+          "periop-sup-dose",
+          "periop-sup-ventilation",
+          "periop-sup-route",
+          "periop-sup-sepsis"
+        ],
+        "otherParentQuestionsPending": 74,
+        "wholeModuleVerified": false
+      }
+    ],
+    "selectionMethod": "Complete original glucocorticoid-replacement and formulation/administration question groups (nine), plus all seven stress-ulcer questions, including both feeding and route candidates. Hard product/guideline topics preserved."
+  },
+  "integration": {
+    "parentBankQuestions": [
+      35,
+      81
+    ],
+    "originalBodies": 122,
+    "bodiesAfter": 124,
+    "originalChecks": 22,
+    "wholeParentModulesVerified": false,
+    "cumulative": "All1180cumulative objects unchanged. Ten parent cumulative items tested for runtime only; no cumulative clinical source closure this unit.",
+    "perioperativeWorkingDrafts": "Preserved byte-for-byte; reviewed HEAD-derived candidate receives only one new source-supported body. Unrelated working module/bank differences excluded from release.",
+    "metadataReferencesFiguresClinicallyVerified": false
+  },
+  "coverage": {
+    "questionsSourceVerified": 4,
+    "questionsCorrected": 1,
+    "questionsRetainedVerified": 3,
+    "wholeOriginalBodiesVerified": 0,
+    "newBodies": 2,
+    "newBodiesSourceVerified": 2,
+    "embeddedChecksVerified": 0,
+    "figuresVerified": 0,
+    "metadataVerified": false,
+    "wholeParentModulesVerified": false,
+    "broaderEnteralBookVerifiedQuestionCountAfter": 113,
+    "sourceVerifiedCumulativeItemsThisUnit": 0,
+    "runningAssessmentCalculations": 677,
+    "runningSeparateSourceExamples": 98,
+    "enteralNutritionCountsUnchanged": {
+      "questionsVerified": 66,
+      "questionsTotal": 108,
+      "bodiesVerified": 16,
+      "bodiesTotal": 36,
+      "checksVerified": 2,
+      "checksTotal": 6,
+      "figuresVerified": 0,
+      "figuresTotal": 6
+    }
+  },
+  "validation": {
+    "technical": {
+      "status": "passed",
+      "modules": [
+        {
+          "slug": "adrenal-insufficiency-crisis",
+          "bank": 35,
+          "bodies": 42,
+          "changedQuestions": [
+            {
+              "id": "adrenal-insufficiency-17-case",
+              "question": "A patient gains weight, develops hypertension, and bruises easily while taking replacement hydrocortisone. Which response is best?",
+              "choices": [
+                "Assess for glucocorticoid over-replacement and reduce exposure if appropriate.",
+                "Increase hydrocortisone until a random cortisol reaches a chosen target.",
+                "Dismiss the symptoms because replacement can never cause glucocorticoid excess.",
+                "Assume bruising and weight gain always indicate cortisol deficiency."
+              ],
+              "answer": 0,
+              "rationale": "Exogenous glucocorticoids can produce Cushing-like effects, including weight gain and fragile skin that bruises easily. The book also lists increased blood pressure and directs monitoring of weight and blood pressure. These findings warrant review of the replacement exposure and clinical adverse effects before any dose escalation; an appropriate reduction must preserve needed cortisol replacement.",
+              "reviewHref": "#glucocorticoid-replacement",
+              "difficulty": "application"
+            }
+          ],
+          "verifiedQuestions": [
+            {
+              "id": "adrenal-insufficiency-17-case",
+              "question": "A patient gains weight, develops hypertension, and bruises easily while taking replacement hydrocortisone. Which response is best?",
+              "choices": [
+                "Assess for glucocorticoid over-replacement and reduce exposure if appropriate.",
+                "Increase hydrocortisone until a random cortisol reaches a chosen target.",
+                "Dismiss the symptoms because replacement can never cause glucocorticoid excess.",
+                "Assume bruising and weight gain always indicate cortisol deficiency."
+              ],
+              "answer": 0,
+              "rationale": "Exogenous glucocorticoids can produce Cushing-like effects, including weight gain and fragile skin that bruises easily. The book also lists increased blood pressure and directs monitoring of weight and blood pressure. These findings warrant review of the replacement exposure and clinical adverse effects before any dose escalation; an appropriate reduction must preserve needed cortisol replacement.",
+              "reviewHref": "#glucocorticoid-replacement",
+              "difficulty": "application"
+            },
+            {
+              "id": "adrenal-insufficiency-20-case",
+              "question": "A caregiver receives a new liquid hydrocortisone concentration but continues the old milliliter volume. Which response is best?",
+              "choices": [
+                "Keep the old volume because hydrocortisone concentrations are interchangeable.",
+                "Choose a household spoon and estimate the volume.",
+                "Adjust the prescribed milligram dose solely to preserve the old volume.",
+                "Stop and recalculate the volume from the prescribed milligram dose and new concentration."
+              ],
+              "answer": 3,
+              "rationale": "The same volume can deliver a different dose when the concentration changes.",
+              "reviewHref": "#formulations-administration",
+              "difficulty": "application"
+            },
+            {
+              "id": "adrenal-insufficiency-23-case",
+              "question": "A patient treated for adrenal crisis remains nauseated and cannot retain fluids despite improved blood pressure. Which response is best?",
+              "choices": [
+                "Switch to tablets solely because blood pressure has improved.",
+                "Stop glucocorticoid coverage until nausea resolves.",
+                "Continue parenteral coverage until oral absorption is dependable.",
+                "Use fludrocortisone alone while oral absorption is unreliable."
+              ],
+              "answer": 2,
+              "rationale": "A swallowed dose cannot protect the patient when it is not retained or absorbed.",
+              "reviewHref": "#formulations-administration",
+              "difficulty": "application"
+            }
+          ],
+          "retainedBodies": [
+            {
+              "module": "adrenal-insufficiency-crisis",
+              "lesson": "formulations-administration",
+              "heading": "Check food and timing instructions",
+              "body": "The book advises taking oral systemic steroid doses with food to reduce gastrointestinal upset. For a once-daily schedule, it places the dose between 7 and 8 AM to approximate natural cortisol timing. Keep the prescribed replacement schedule and the actual product instructions: this once-daily teaching does not replace divided hydrocortisone dosing or the separate preparation rules for pediatric granules."
+            }
+          ]
+        },
+        {
+          "slug": "perioperative-critical-care-pharmacology",
+          "bank": 81,
+          "bodies": 82,
+          "changedQuestions": [],
+          "verifiedQuestions": [
+            {
+              "id": "periop-sup-reconcile",
+              "question": "An ICU patient no longer has stress-ulcer risk factors but was taking a PPI for documented erosive esophagitis before admission. What is the best reconciliation?",
+              "choices": [
+                "Stop every acid-suppressive medicine at ICU transfer",
+                "Add famotidine to replace the treatment indication",
+                "Continue ICU prophylaxis indefinitely without a diagnosis",
+                "Review and retain therapy appropriate for the independent esophageal indication"
+              ],
+              "answer": 3,
+              "rationale": "Stopping unnecessary prophylaxis does not mean stopping justified treatment of another condition.",
+              "reviewHref": "#perioperative-stress-ulcer",
+              "difficulty": "clinical"
+            }
+          ],
+          "retainedBodies": [
+            {
+              "module": "perioperative-critical-care-pharmacology",
+              "lesson": "perioperative-stress-ulcer",
+              "heading": "Monitor the selected acid-suppressive treatment",
+              "body": "The book describes thrombocytopenia and mental-status changes with H2 receptor antagonists, particularly in older patients or those with renal impairment, and notes that tolerance to their effect can occur. Its PPI tables list C. difficile-associated diarrhea and other adverse effects; fracture warnings concern high doses or prolonged exposure. Review new symptoms, renal function and the continuing indication. Reported associations with infection or pneumonia do not establish that acid suppression caused an individual patient's illness."
+            }
+          ]
+        }
+      ],
+      "preservation": {
+        "all116IdsPromptsKeysChoicesAnchorsPreserved": true,
+        "unchangedOtherBankObjects": 115,
+        "all122OriginalBodies22ChecksMetadataReferencesFiguresPreserved": true,
+        "twoNewSourceVerifiedBodies": true,
+        "all1180CumulativeObjectsUnchanged": true,
+        "perioperativeWorkingDraftsByteExact": true,
+        "onlyReviewedAdrenalChangesAppliedToWorkingCode": true
+      },
+      "runningAssessmentChecks": 677,
+      "runningSeparateSourceExamples": 98,
+      "newAssessmentCalculations": 0,
+      "newSourceExerciseExamples": 0,
+      "partialArithmetic": {
+        "adrenal-insufficiency-actovial-volume": {
+          "calculation": "100 mg / 2 mL = 50 mg/mL; 25 mg / 50 mg/mL = 0.5 mL",
+          "wholeQuestionVerified": false,
+          "reason": "Actual Act-O-Vial product preparation/concentration not established by the book source; conditional arithmetic alone is not product-label closure."
+        },
+        "adrenal-insufficiency-15-case": {
+          "calculation": "10 + 5 + 5 = 20 mg/day",
+          "wholeQuestionVerified": false,
+          "reason": "Complete divided replacement policy not established by reviewed once-daily steroid instructions."
+        },
+        "book-PDF644-example": {
+          "calculation": "40 mg methylprednisolone twice daily = 80 mg/day; 80 x 5/4 = 100 mg/day prednisone",
+          "adoptedAsNewAssessment": false,
+          "addedToGlobalCount": false,
+          "reason": "Read as source context; not a new adopted exercise or question in this administration unit."
+        }
+      },
+      "contentHashes": {
+        "src/data/modules/adrenalInsufficiency.js": "24adf0249e20041038b380e7e7703dabf12396bbeb89b1db71d5ce78c32aea81",
+        "src/data/questionBanks/adrenalInsufficiency.js": "72d66c162c0237f9036d3690ad67b9b7efc062eac3d9ab0a2575ad434c342adf",
+        "src/data/modules/perioperativeCriticalCarePharmacology.js": "84ebee668b7d9934e55f9524e9632cffbcaf4746bc70e70fae11470815f78c43"
+      }
+    },
+    "focusedChecks": [
+      {
+        "modules": 1,
+        "questions": 35,
+        "hardErrors": [],
+        "sourceGaps": [],
+        "sizeAdvisories": [
+          {
+            "module": "adrenal-insufficiency-crisis",
+            "questions": 35,
+            "review": "Confirm topic coverage in the clinical audit ledger"
+          }
+        ],
+        "thinLessons": [
+          {
+            "module": "adrenal-insufficiency-crisis",
+            "lesson": "levels-of-failure",
+            "count": 2
+          },
+          {
+            "module": "adrenal-insufficiency-crisis",
+            "lesson": "clinical-patterns",
+            "count": 2
+          },
+          {
+            "module": "adrenal-insufficiency-crisis",
+            "lesson": "special-populations-follow-up",
+            "count": 2
+          },
+          {
+            "module": "adrenal-insufficiency-crisis",
+            "lesson": "primary-adrenal-insufficiency",
+            "count": 3
+          },
+          {
+            "module": "adrenal-insufficiency-crisis",
+            "lesson": "central-glucocorticoid-induced",
+            "count": 3
+          },
+          {
+            "module": "adrenal-insufficiency-crisis",
+            "lesson": "glucocorticoid-replacement",
+            "count": 3
+          },
+          {
+            "module": "adrenal-insufficiency-crisis",
+            "lesson": "mineralocorticoid-replacement",
+            "count": 3
+          },
+          {
+            "module": "adrenal-insufficiency-crisis",
+            "lesson": "sick-day-preparedness",
+            "count": 3
+          },
+          {
+            "module": "adrenal-insufficiency-crisis",
+            "lesson": "adrenal-crisis",
+            "count": 3
+          },
+          {
+            "module": "adrenal-insufficiency-crisis",
+            "lesson": "morning-cortisol-testing",
+            "count": 5
+          },
+          {
+            "module": "adrenal-insufficiency-crisis",
+            "lesson": "formulations-administration",
+            "count": 6
+          }
+        ],
+        "weakestModules": [
+          {
+            "module": "adrenal-insufficiency-crisis",
+            "lessons": 11,
+            "questions": 35,
+            "minimumLessonCoverage": 2
+          }
+        ]
+      },
+      {
+        "modules": 1,
+        "questions": 81,
+        "hardErrors": [],
+        "sourceGaps": [],
+        "sizeAdvisories": [
+          {
+            "module": "perioperative-critical-care-pharmacology",
+            "questions": 81,
+            "review": "Confirm topic coverage in the clinical audit ledger"
+          }
+        ],
+        "thinLessons": [
+          {
+            "module": "perioperative-critical-care-pharmacology",
+            "lesson": "local-anesthetic-pharmacology",
+            "count": 4
+          },
+          {
+            "module": "perioperative-critical-care-pharmacology",
+            "lesson": "neuromuscular-blockade-foundations",
+            "count": 4
+          },
+          {
+            "module": "perioperative-critical-care-pharmacology",
+            "lesson": "succinylcholine-safety",
+            "count": 4
+          },
+          {
+            "module": "perioperative-critical-care-pharmacology",
+            "lesson": "nondepolarizing-agent-selection",
+            "count": 5
+          },
+          {
+            "module": "perioperative-critical-care-pharmacology",
+            "lesson": "local-anesthetic-toxicity",
+            "count": 6
+          },
+          {
+            "module": "perioperative-critical-care-pharmacology",
+            "lesson": "malignant-hyperthermia",
+            "count": 6
+          },
+          {
+            "module": "perioperative-critical-care-pharmacology",
+            "lesson": "neuromuscular-blockade-safety",
+            "count": 6
+          },
+          {
+            "module": "perioperative-critical-care-pharmacology",
+            "lesson": "perioperative-stress-ulcer",
+            "count": 7
+          }
+        ],
+        "weakestModules": [
+          {
+            "module": "perioperative-critical-care-pharmacology",
+            "lessons": 11,
+            "questions": 81,
+            "minimumLessonCoverage": 4
+          }
+        ]
+      }
+    ],
+    "build": "Isolated HEAD-derived 567-page production build passed.",
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "module": "adrenal-insufficiency-crisis",
+          "width": 1440,
+          "renderedBodies": 42,
+          "expandedBodyViews": 1,
+          "bankItemsCorrectWrong": 3,
+          "cumulativeRuntimeItems": 5,
+          "sourceVerifiedCumulativeInThisUnit": 0,
+          "cumulativeClinicalSourceClosure": false,
+          "groups": 1,
+          "remediationAndSavedProgress": true
+        },
+        {
+          "module": "adrenal-insufficiency-crisis",
+          "width": 390,
+          "renderedBodies": 42,
+          "expandedBodyViews": 1,
+          "bankItemsCorrectWrong": 3,
+          "cumulativeRuntimeItems": 5,
+          "sourceVerifiedCumulativeInThisUnit": 0,
+          "cumulativeClinicalSourceClosure": false,
+          "groups": 1,
+          "remediationAndSavedProgress": true
+        },
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "width": 1440,
+          "renderedBodies": 82,
+          "expandedBodyViews": 1,
+          "bankItemsCorrectWrong": 1,
+          "cumulativeRuntimeItems": 5,
+          "sourceVerifiedCumulativeInThisUnit": 0,
+          "cumulativeClinicalSourceClosure": false,
+          "groups": 1,
+          "remediationAndSavedProgress": true
+        },
+        {
+          "module": "perioperative-critical-care-pharmacology",
+          "width": 390,
+          "renderedBodies": 82,
+          "expandedBodyViews": 1,
+          "bankItemsCorrectWrong": 1,
+          "cumulativeRuntimeItems": 5,
+          "sourceVerifiedCumulativeInThisUnit": 0,
+          "cumulativeClinicalSourceClosure": false,
+          "groups": 1,
+          "remediationAndSavedProgress": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "manualRenderedReview": {
+      "status": "passed",
+      "pairs": 6,
+      "widths": [
+        1440,
+        390
+      ],
+      "viewsReviewed": [
+        "question-adrenal-insufficiency-17-case",
+        "question-adrenal-insufficiency-20-case",
+        "question-adrenal-insufficiency-23-case",
+        "body-adrenal-insufficiency-crisis-0",
+        "question-periop-sup-reconcile",
+        "body-perioperative-critical-care-pharmacology-0"
+      ],
+      "scope": "Four source-verified original question feedback states and two new teaching bodies viewed. All124bodies matchedDOM; correct/wrong feedback, lesson links, saved progress and320pxoverflow checks passed. Ten parent cumulative questions tested at runtime only; no clinical cumulative closure.",
+      "sourceRecomparison": "Replacement-excess explanation compared with PDF643figure and644table. Retained concentration question compared with136amount/product ratio; retained vomiting route question with95formulation text and642/644cortisol replacement/injection context; independent esophageal-indication question with913/914PPI treatment/maintenance text. New food/timing body compared with644table; acid-treatment monitoring with726/914/915. Hard granule/tube/Act-O-Vial and modern ICU guideline claims preserved pending."
+    },
+    "structuralScopeNote": "Focused structural checker covers116questions/anchors/references. Empty sourceGaps is not clinical closure. Sixteen original selected questions reviewed; twelve remain pending."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": "pending",
+    "push": "pending",
+    "production": "not verified"
+  },
+  "nextAction": "Continue the broader feeding inventory with toxicology lead/WHO-label boundary, genitourinary medicinal chemistry feeding candidates, and remaining antimicrobial administration groups. Expand each to complete original topic groups and full relevant book context. Twelve selected adrenal/perioperative questions, original teaching/checks/current metadata/figures and harder label/guideline claims remain pending. Full EN, pediatricPN and fluid/calcium dependencies remain; Chapter1entry15 andChapter11 reviewing. No outsideEN source opened."
+}
