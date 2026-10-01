@@ -1,0 +1,681 @@
+{
+  "slug": "lamotrigine",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "An oral antiseizure medicine; immediate-release forms also have an adult bipolar I maintenance indication. Slow, interaction-specific titration and supervised restart are essential.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Lamictal · Full prescribing information",
+      "publisher": "DailyMed / official product labeling",
+      "note": "Clinical labeling/Medication Guide October 2025; SPL v45/effective October 10, 2025. Current public label checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d7e3572d-56fe-4727-2bb4-013ccca22678"
+    },
+    {
+      "id": "xr",
+      "title": "Lamictal XR · Full prescribing information",
+      "publisher": "DailyMed / official product labeling",
+      "note": "Clinical labeling/Medication Guide October 2025; SPL v44/effective October 10, 2025. Current public label checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3e2c9a35-6a39-41d7-ad84-3c0bb8894b09"
+    },
+    {
+      "id": "cardiac",
+      "title": "Lamotrigine · FDA cardiac safety communication",
+      "publisher": "FDA",
+      "note": "March 31, 2021 primary safety communication; current public page checked October 1, 2026.",
+      "url": "https://www.fda.gov/drugs/drug-safety-and-availability/studies-show-increased-risk-heart-rhythm-problems-seizure-and-mental-health-medicine-lamotrigine"
+    }
+  ],
+  "sourceEvidence": {
+    "label": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d7e3572d-56fe-4727-2bb4-013ccca22678",
+      "checked": "2026-10-01",
+      "revision": "Clinical labeling/Medication Guide October 2025; SPL v45/effective October 10, 2025. Current public label checked October 1, 2026.",
+      "access": "Full public supporting primary sections read; no paywall access",
+      "splVersion": "45",
+      "effectiveTime": "20251010",
+      "xmlSha256": "8f685ccbdae666918ed3e8afc758097c9a149f691565aff1cd9ac30096b34ae5",
+      "localEvidence": "/tmp/nas-drug-sources/lamictal.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/d7e3572d-56fe-4727-2bb4-013ccca22678.xml"
+    },
+    "xr": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3e2c9a35-6a39-41d7-ad84-3c0bb8894b09",
+      "checked": "2026-10-01",
+      "revision": "Clinical labeling/Medication Guide October 2025; SPL v44/effective October 10, 2025. Current public label checked October 1, 2026.",
+      "access": "Full public supporting primary sections read; no paywall access",
+      "splVersion": "44",
+      "effectiveTime": "20251010",
+      "xmlSha256": "4f5efb5006857ce3ee9911a09031463b8224ce59c42ef19cca8a1fe80fc05f19",
+      "localEvidence": "/tmp/nas-drug-sources/lamictalxr.xml",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/3e2c9a35-6a39-41d7-ad84-3c0bb8894b09.xml"
+    },
+    "cardiac": {
+      "url": "https://www.fda.gov/drugs/drug-safety-and-availability/studies-show-increased-risk-heart-rhythm-problems-seizure-and-mental-health-medicine-lamotrigine",
+      "checked": "2026-10-01",
+      "revision": "March 31, 2021 primary safety communication; current public page checked October 1, 2026.",
+      "access": "Full public supporting primary sections read; no paywall access"
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Immediate-release, ODT and dispersible uses",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "1 Indications;8.4 Pediatric Use"
+        ]
+      },
+      "claims": [
+        "Adjunctive epilepsy treatment at age ≥2: partial-onset, primary generalized tonic-clonic and Lennox-Gastaut generalized seizures. Conversion to monotherapy at age ≥16 with partial-onset seizures applies when receiving a single carbamazepine, phenytoin, phenobarbital, primidone or valproate regimen. Adult bipolar I maintenance delays mood episodes after standard acute treatment; acute mood-episode efficacy is not established."
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Extended-release uses",
+      "sourceIds": [
+        "xr"
+      ],
+      "sourceSectionsById": {
+        "xr": [
+          "1 Indications;8.4 Pediatric Use"
+        ]
+      },
+      "claims": [
+        "XR: adjunctive PGTC or partial-onset seizures, with/without secondary generalization, at age ≥13. Conversion to monotherapy at age ≥13 applies to partial-onset seizures on a single AED. Initial monotherapy or simultaneous conversion from multiple AEDs is not established. XR has no labeled bipolar-maintenance indication."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Titration table context",
+      "sourceIds": [
+        "label",
+        "xr"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1 General Dosing Considerations;2.2 table footnotes;2.4 IR table footnotes"
+        ],
+        "xr": [
+          "2.1 General Dosing Considerations;2.2 table footnotes;2.4 IR table footnotes"
+        ]
+      },
+      "claims": [
+        "Columns refer to carbamazepine, phenytoin, phenobarbital or primidone as the listed inducing AEDs. Rifampin/lopinavir-ritonavir follow inducer guidance; estrogen-containing products and atazanavir-ritonavir require the separate label instructions. All numbers are total daily dose unless noted. These tables are label schedules for the stated indication, not a self-directed titration plan."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "IR adjunctive epilepsy · age >12",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.2 Table 1"
+        ]
+      },
+      "claims": [
+        [
+          "Weeks 1–2",
+          "25 mg every other day",
+          "25 mg/day",
+          "50 mg/day"
+        ],
+        [
+          "Weeks 3–4",
+          "25 mg/day",
+          "50 mg/day",
+          "100 mg/day in 2 doses"
+        ],
+        [
+          "Week 5 onward",
+          "Add 25–50 mg/day every 1–2 weeks",
+          "Add 50 mg/day every 1–2 weeks",
+          "Add 100 mg/day every 1–2 weeks"
+        ],
+        [
+          "Usual maintenance",
+          "100–200 mg/day with valproate alone; 100–400 with valproate + inducers, in 1–2 doses",
+          "225–375 mg/day in 2 doses",
+          "300–500 mg/day in 2 doses"
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "IR adjunctive epilepsy · age 2–12",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.2 Tables 2–3"
+        ]
+      },
+      "claims": [
+        "Use whole 2/5/25 mg dispersible tablets; round calculated starting doses and increments down to whole tablets. For low weights on valproate, follow the label’s Table 3 weight guide rather than a partial tablet/liquid quantity. Under 30 kg, maintenance may need up to 50% increase by response; label maxima and specialist plan still apply.",
+        [
+          "Weeks 1–2",
+          "0.15 mg/kg/day in 1–2 doses",
+          "0.3 mg/kg/day in 1–2 doses",
+          "0.6 mg/kg/day in 2 doses"
+        ],
+        [
+          "Weeks 3–4",
+          "0.3 mg/kg/day in 1–2 doses",
+          "0.6 mg/kg/day in 2 doses",
+          "1.2 mg/kg/day in 2 doses"
+        ],
+        [
+          "Week 5 onward · every 1–2 weeks",
+          "Add 0.3 mg/kg/day",
+          "Add 0.6 mg/kg/day",
+          "Add 1.2 mg/kg/day"
+        ],
+        [
+          "Usual maintenance",
+          "1–5 mg/kg/day, max 200 mg/day in 1–2 doses; valproate alone usually 1–3 mg/kg/day",
+          "4.5–7.5 mg/kg/day, max 300 mg/day in 2 doses",
+          "5–15 mg/kg/day, max 400 mg/day in 2 doses"
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "IR bipolar I maintenance · adults",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.4 Tables 5–6"
+        ]
+      },
+      "claims": [
+        "The 400 mg target applies to the specified inducer regimen, not routine monotherapy: trials showed no additional monotherapy benefit above 200 mg/day. Reassess ongoing maintenance, especially beyond 16 weeks.",
+        [
+          "Weeks 1–2",
+          "25 mg every other day",
+          "25 mg/day",
+          "50 mg/day"
+        ],
+        [
+          "Weeks 3–4",
+          "25 mg/day",
+          "50 mg/day",
+          "100 mg/day in divided doses"
+        ],
+        [
+          "Week 5",
+          "50 mg/day",
+          "100 mg/day",
+          "200 mg/day in divided doses"
+        ],
+        [
+          "Week 6",
+          "100 mg/day",
+          "200 mg/day",
+          "300 mg/day in divided doses"
+        ],
+        [
+          "Week 7 / target",
+          "100 mg/day",
+          "200 mg/day",
+          "Up to 400 mg/day in divided doses"
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "XR adjunctive epilepsy · age ≥13",
+      "sourceIds": [
+        "xr"
+      ],
+      "sourceSectionsById": {
+        "xr": [
+          "2.2 Table 1"
+        ]
+      },
+      "claims": [
+        "XR is once daily; week 8 or later increases must not exceed 100 mg/day at weekly intervals. Swallow whole without crushing, chewing or dividing.",
+        [
+          "Weeks 1–2",
+          "25 mg every other day",
+          "25 mg/day",
+          "50 mg/day"
+        ],
+        [
+          "Weeks 3–4",
+          "25 mg/day",
+          "50 mg/day",
+          "100 mg/day"
+        ],
+        [
+          "Week 5",
+          "50 mg/day",
+          "100 mg/day",
+          "200 mg/day"
+        ],
+        [
+          "Week 6",
+          "100 mg/day",
+          "150 mg/day",
+          "300 mg/day"
+        ],
+        [
+          "Week 7",
+          "150 mg/day",
+          "200 mg/day",
+          "400 mg/day"
+        ],
+        [
+          "Week 8 onward · maintenance",
+          "200–250 mg/day",
+          "300–400 mg/day",
+          "400–600 mg/day"
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Conversion, restart and discontinuation",
+      "sourceIds": [
+        "label",
+        "xr"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1 Restart/Discontinuation",
+          "2.3 Conversion;IR Table4 or XR Table2",
+          "XR2.4 IR conversion"
+        ],
+        "xr": [
+          "2.1 Restart/Discontinuation",
+          "2.3 Conversion;IR Table4 or XR Table2",
+          "XR2.4 IR conversion"
+        ]
+      },
+      "claims": [
+        "IR conversion-to-monotherapy maintenance is 500 mg/day in 2 doses; XR monotherapy maintenance is 250–300 mg once daily. Follow each label’s exact stepwise AED-withdrawal regimen; the adjunctive table alone is insufficient for conversion. IR→XR may begin at the same total daily dose, with close seizure monitoring, especially with enzyme inducers. After >5 half-lives off treatment, restart initial titration; half-life varies with other drugs, so there is no universal missed-day cutoff. Do not restart after a drug-related rash unless benefits clearly outweigh risks. Taper over ≥2 weeks, about 50% weekly, unless safety requires faster withdrawal."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and organ impairment",
+      "sourceIds": [
+        "label",
+        "xr"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "IR2.5–2.6;XR2",
+          "2.1 organ impairment;8.6–8.7"
+        ],
+        "xr": [
+          "IR2.5–2.6;XR2",
+          "2.1 organ impairment;8.6–8.7"
+        ]
+      },
+      "claims": [
+        "IR can be taken with or without food. Dispersible tablets may be swallowed, chewed with a little liquid or dispersed in enough water/diluted juice to cover them; consume the entire mixture promptly, never a partial quantity. ODT dissolves on the tongue and is swallowed with/without water. Mild hepatic impairment: no adjustment; moderate/severe without ascites: generally reduce starting/escalation/maintenance doses about 25%; severe with ascites: about 50%. Significant renal impairment may need lower maintenance doses; use caution in severe impairment."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "label",
+        "xr",
+        "cardiac"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "5 Warnings and Precautions"
+        ],
+        "xr": [
+          "5 Warnings and Precautions"
+        ],
+        "cardiac": "FDA March31,2021 safety announcement and patient/professional actions"
+      },
+      "claims": [
+        "HLH may cause fever, rash, enlarged nodes and organ dysfunction; evaluate immediately and discontinue if another cause is not established. DRESS, isolated organ failure, blood dyscrasias and aseptic meningitis are reported. Assess suicidality and seizure worsening. Clinically important structural/functional heart disease increases arrhythmia risk; weigh benefit/risk, particularly with other sodium-channel blockers. Hormonal-product changes and medication/formulation errors can alter exposure."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "label",
+        "xr"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "4 Contraindications"
+        ],
+        "xr": [
+          "4 Contraindications"
+        ]
+      },
+      "claims": [
+        "Known lamotrigine or ingredient hypersensitivity, including previous hypersensitivity rash, angioedema, urticaria, extensive itching or mucosal ulceration."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning · Serious skin rashes",
+      "sourceIds": [
+        "label",
+        "xr"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning;5.1"
+        ],
+        "xr": [
+          "Boxed warning;5.1"
+        ]
+      },
+      "claims": [
+        "Stevens-Johnson syndrome, toxic epidermal necrolysis and rash-related death can occur. Risk is higher in children, with valproate, excessive starting/escalation doses, and HLA-B*1502. Most life-threatening rashes occur at 2–8 weeks, but later reactions occur. Ordinarily discontinue at the first rash unless clearly unrelated. HLA testing cannot replace vigilance; negative status does not eliminate risk."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "sourceIds": [
+        "label",
+        "xr"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "6 Adverse Reactions;10 Overdosage"
+        ],
+        "xr": [
+          "6 Adverse Reactions;10 Overdosage"
+        ]
+      },
+      "claims": [
+        "Dizziness, ataxia, diplopia/blurred vision, headache, nausea, vomiting, somnolence and rash are prominent in epilepsy trials; patterns depend on regimen and population. Serious immune, blood, organ and cardiac events require urgent review. Overdose can cause seizures, coma, ataxia and conduction delay and has been fatal. Hospital/poison-center assessment and supportive care are needed; no specific antidote is known."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "sourceIds": [
+        "label",
+        "xr"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "7 Drug Interactions;2 dose considerations;12.3"
+        ],
+        "xr": [
+          "7 Drug Interactions;2 dose considerations;12.3"
+        ]
+      },
+      "claims": [
+        "Valproate more than doubles lamotrigine concentrations: lower, slower schedules are required. Carbamazepine, phenytoin, phenobarbital and primidone increase clearance; rifampin and selected protease inhibitors also lower exposure.",
+        "Estrogen-containing oral contraceptives can halve concentrations and levels can approximately double during the pill-free week. Starting/stopping requires a prescribed maintenance adjustment; do not adjust only during the pill-free week.",
+        "Without other glucuronidation inducers, estrogen-pill use may require up to a twofold maintenance increase. When starting pills, increases generally no faster than 50–100 mg/day weekly; when stopping, decrease up to 50%, generally no more than 25% of the total daily dose weekly over 2 weeks, unless response/levels justify otherwise. Initial titration is not altered solely for contraceptive use.",
+        "Other estrogen therapies need clinical monitoring; progestogen-only pills generally do not require this adjustment. Report breakthrough bleeding because reduced contraceptive efficacy cannot be excluded.",
+        "Other cardiac sodium-channel blockers may increase arrhythmia risk. Coadministration with narrow-therapeutic-index OCT2 substrates such as dofetilide is not recommended."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "sourceIds": [
+        "label",
+        "xr"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8 Use in Specific Populations;2 population dose;12.3"
+        ],
+        "xr": [
+          "8 Use in Specific Populations;2 population dose;12.3"
+        ]
+      },
+      "claims": [
+        "Pregnancy registries have not detected an overall increase or consistent malformation pattern; limitations and animal developmental toxicity remain. Encourage NAAED registry enrollment. Concentrations may fall during pregnancy and return after delivery, requiring clinical/level assessment and dose review. Lamotrigine enters milk; postpartum maternal increases can raise infant exposure. Monitor infant rash, apnea, sedation, poor sucking/weight gain; check infant levels if toxicity is suspected and stop human-milk feeding if toxicity occurs."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Age and organ impairment",
+      "sourceIds": [
+        "label",
+        "xr"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8 Use in Specific Populations;2 population dose;12.3"
+        ],
+        "xr": [
+          "8 Use in Specific Populations;2 population dose;12.3"
+        ]
+      },
+      "claims": [
+        "IR adjunctive epilepsy begins at age 2; IR conversion is ≥16 and bipolar maintenance is adult. XR epilepsy indications begin at ≥13. Pediatric bipolar efficacy is not established. Older adults need cautious dose selection. Hepatic reductions apply to the full starting/escalation/maintenance schedule; renal impairment may lower maintenance requirements, with limited severe-impairment experience."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and pharmacokinetics",
+      "sourceIds": [
+        "label",
+        "xr"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "12.1 Mechanism;12.3 Pharmacokinetics"
+        ],
+        "xr": [
+          "12.1 Mechanism;12.3 Pharmacokinetics"
+        ]
+      },
+      "claims": [
+        "The exact anticonvulsant mechanism is unknown; inhibition of voltage-sensitive sodium channels and reduced excitatory transmitter release are proposed. Bipolar therapeutic mechanism is not established. IR oral bioavailability is about 98%, unaffected by food; protein binding about 55%. Predominantly forms an inactive glucuronide, recovered mainly in urine. XR delays absorption and smooths exposure; release forms require the supervised conversion plan.",
+        [
+          "IR multiple-dose half-life examples",
+          "Healthy volunteers without other medicines: 25.4 hours; with valproate: 70.3 hours; epilepsy with listed inducing AEDs: 12.6 hours."
+        ],
+        [
+          "Clinical meaning",
+          "Interaction-dependent half-life governs restart assessment."
+        ],
+        [
+          "Plasma monitoring",
+          "Consider during interaction/dose changes; dose to clinical response."
+        ]
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring parameters",
+      "sourceIds": [
+        "label",
+        "xr",
+        "cardiac"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "5 Warnings;17 Patient Counseling;Medication Guide"
+        ],
+        "xr": [
+          "5 Warnings;17 Patient Counseling;Medication Guide"
+        ],
+        "cardiac": "FDA March31,2021 safety announcement and patient/professional actions"
+      },
+      "claims": [
+        "Assess rash/mucosal lesions, fever, lymphadenopathy, blood/organ or meningitis symptoms; investigate urgently when present.",
+        "Monitor seizure control, depression/suicidality, dizziness/ataxia and cardiac symptoms. Assess cardiac history and interacting drugs; no universal ECG schedule is supplied here.",
+        "Review adherence, interruptions, hormone/AED changes and pregnancy/postpartum concentrations/response. Plasma levels may help during changes, without a universally established therapeutic range.",
+        "Confirm positive rapid urine PCP screens with a specific test; lamotrigine can cause false positives."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "sourceIds": [
+        "label",
+        "xr",
+        "cardiac"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "5 Warnings;17 Patient Counseling;Medication Guide"
+        ],
+        "xr": [
+          "5 Warnings;17 Patient Counseling;Medication Guide"
+        ],
+        "cardiac": "FDA March31,2021 safety announcement and patient/professional actions"
+      },
+      "claims": [
+        "Follow the written titration exactly; contact the prescriber after interruptions and before restarting. Report rash, mouth sores, fever or swollen nodes immediately. Seek urgent help for palpitations/fainting, severe headache/stiff neck or self-harm thoughts. Avoid driving until effects are known. Verify tablet appearance and IR/XR/ODT/dispersible form, and disclose pregnancy, breastfeeding and hormonal contraception changes."
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product · Lamictal 25 mg IR tablet",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3 Dosage Forms;16 How Supplied/Storage;package panels"
+        ]
+      },
+      "claims": [
+        [
+          "Appearance / imprint",
+          "White, scored, shield-shaped; LAMICTAL / 25."
+        ],
+        [
+          "Manufacturer",
+          "GlaxoSmithKline."
+        ],
+        [
+          "Example NDC",
+          "0173-0633-02 · bottle of 100."
+        ],
+        [
+          "U.S. status",
+          "Prescription."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "label",
+        "xr"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3 Dosage Forms;16 How Supplied/Storage;package panels"
+        ],
+        "xr": [
+          "3 Dosage Forms;16 How Supplied/Storage;package panels"
+        ]
+      },
+      "claims": [
+        [
+          "IR compressed tablets",
+          "25, 100, 150 and 200 mg."
+        ],
+        [
+          "Chewable/dispersible tablets for oral suspension",
+          "2, 5 and 25 mg."
+        ],
+        [
+          "ODT",
+          "25, 50, 100 and 200 mg."
+        ],
+        [
+          "XR tablets",
+          "25, 50, 100, 200, 250 and 300 mg."
+        ],
+        [
+          "Titration kits",
+          "Different kits for valproate, no listed inducer/valproate, or listed inducer without valproate; choose with prescriber."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "label",
+        "xr"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3 Dosage Forms;16 How Supplied/Storage;package panels"
+        ],
+        "xr": [
+          "3 Dosage Forms;16 How Supplied/Storage;package panels"
+        ]
+      },
+      "claims": [
+        "IR/dispersible and XR: 25°C, excursions 15–30°C; IR/dispersible dry storage, with light protection as specified for the exact IR package. ODT: 20–25°C, excursions 15–30°C. Do not use torn, broken or missing blisters. XR must remain intact; do not split dispersed mixtures for dosing."
+      ]
+    },
+    {
+      "section": "hero/essential",
+      "card": "Scope and essential safety",
+      "sourceIds": [
+        "label",
+        "xr"
+      ],
+      "sourceSections": [
+        "Boxed warning;1;2;5;9;12.1"
+      ],
+      "claims": [
+        "An oral antiseizure medicine; immediate-release forms also have an adult bipolar I maintenance indication. Slow, interaction-specific titration and supervised restart are essential.",
+        "Serious rash can be fatal. Do not exceed the starting dose or escalation schedule, and do not restart after an interruption without the prescriber’s instructions.",
+        [
+          "Therapeutic class",
+          "Antiseizure medicine"
+        ],
+        [
+          "Key distinction",
+          "IR bipolar maintenance; XR epilepsy indications"
+        ],
+        [
+          "Reference focus",
+          "Current GSK IR/ODT/dispersible and XR labels"
+        ]
+      ]
+    }
+  ],
+  "exclusions": [
+    "Other manufacturers, compounded/liquid products; no off-label regimen or universal conversion algorithm"
+  ],
+  "gaps": [],
+  "validation": {
+    "schema": "Passed: 8 APAP sections; Safety 4 core cards; Product 3 cards; all citations/table shapes valid; zero schema errors.",
+    "renderedPage": "Pending parent integration QA"
+  },
+  "monographSha256": "144ea4df6287a5cdf2b1b69f6d2330ac52769a1c3edb6f2fe9874010aadfa900",
+  "sourceInterpretationNotes": [
+    "SPL effectiveTime/version distinguished from clinical revision; neither implies publication date or current stock.",
+    "Current Oct2025 labels include HLA-B*1502 in serious-rash risk; no invented screening mandate.",
+    "Exact IR epilepsy >12, IR pediatric2–12, IR adult bipolar and XR≥13 adjunctive tables verified separately. Conversion withdrawal algorithms not reproduced: exact label2.3 referenced. Pediatric low-weight valproate Table3 retained as label-linked specialist instruction, no invented calculator.",
+    "Hormonal-dose adjustments conditioned on absence of other glucuronidation inducers. No universal plasma target, ECG interval or fixed missed-day restart cutoff asserted."
+  ],
+  "reviewCorrections": [
+    {
+      "date": "2026-10-01",
+      "finding": "IR pediatric2–12 Table2 weeks3–4 neither valproate nor listed inducing AEDs had wrong division frequency.",
+      "correction": "0.6 mg/kg/day in 2 divided doses; total daily dose unchanged.",
+      "verification": "Re-read all rows/cells in exact SPL Table2, including weeks1–2, weeks3–4, escalation increments, maintenance doses/frequencies/maxima and <30kg footnote; remaining profile cells agree. Table3 weight guide also re-read.",
+      "source": "Lamictal SPL v45/effective20251010 section2.2 Table2",
+      "status": "corrected; ready for independent reviewer closure"
+    }
+  ]
+}

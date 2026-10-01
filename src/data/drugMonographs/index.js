@@ -39,6 +39,16 @@ import { cetirizine } from "./cetirizine.js";
 import { ondansetron } from "./ondansetron.js";
 import { cyclobenzaprine } from "./cyclobenzaprine.js";
 import { spironolactone } from "./spironolactone.js";
+import { oxycodone } from "./oxycodone.js";
+import { estradiol } from "./estradiol.js";
+import { aspirin } from "./aspirin.js";
+import { glipizide } from "./glipizide.js";
+import { zolpidem } from "./zolpidem.js";
+import { lamotrigine } from "./lamotrigine.js";
+import { alprazolam } from "./alprazolam.js";
+import { citalopram } from "./citalopram.js";
+import { pregabalin } from "./pregabalin.js";
+import { cholecalciferol } from "./cholecalciferol.js";
 
 export const reviewedDrugMonographs = {
   "atorvastatin": atorvastatin,
@@ -81,4 +91,14 @@ export const reviewedDrugMonographs = {
   "ondansetron": ondansetron,
   "cyclobenzaprine": cyclobenzaprine,
   "spironolactone": spironolactone,
+  "oxycodone": oxycodone,
+  "estradiol": estradiol,
+  "aspirin": aspirin,
+  "glipizide": glipizide,
+  "zolpidem": zolpidem,
+  "lamotrigine": lamotrigine,
+  "alprazolam": alprazolam,
+  "citalopram": citalopram,
+  "pregabalin": pregabalin,
+  "cholecalciferol": cholecalciferol,
 };

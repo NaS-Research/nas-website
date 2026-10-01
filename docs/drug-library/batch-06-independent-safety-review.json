@@ -1,0 +1,529 @@
+{
+  "reviewDate": "2026-10-01",
+  "scope": "Independent targeted primary-source critical-assertion review; not exhaustive second clinical signoff or rendered-page QA.",
+  "status": "Complete: ten profiles received targeted independent critical-assertion checks; corrected findings closed and source gaps explicitly scoped.",
+  "profiles": [
+    {
+      "drug": "aspirin",
+      "fileSha256": "238ce50d6aea15d409e4873e6587ee4667dbb3bab8463c56211f4c44afafc0bf",
+      "result": "No material safety error identified in selected checked assertions.",
+      "checks": [
+        {
+          "assertion": "81 mg chewable age 12+, four to eight tablets q4h maximum 48/day, chew/crush requirement, Reye viral-illness warning and surgery restriction agree.",
+          "sourceId": "chew",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7afce7b4-c86a-43f7-83cf-15ebffba2f35",
+          "sourceSection": "Drug Facts directions/warnings",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "325 mg immediate-release one to two q4h or three q6h maximum twelve/day, pain/fever scope, bleeding and hypersensitivity warnings agree.",
+          "sourceId": "ir",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=44a08904-68b9-4d06-a28d-21aae3d6140c",
+          "sourceSection": "Drug Facts directions/warnings",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "325 mg delayed-release one to two q4h maximum twelve/day; slower effect separated from immediate-release acute use.",
+          "sourceId": "ec",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0c6ae05f-7634-34d1-e054-00144ff88e88",
+          "sourceSection": "Drug Facts directions",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Individual primary-prevention decision age 40–59 with ≥10% risk, small benefit and no initiation age 60+; 81 mg/day when selected agree.",
+          "sourceId": "uspstf",
+          "sourceUrl": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/aspirin-to-prevent-cardiovascular-disease-preventive-medication",
+          "sourceSection": "Recommendation summary/implementation",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "CCD secondary prevention recommendation of low-dose 81 (75–100) mg with no OAC indication agrees and is distinct from primary-prevention recommendation.",
+          "sourceId": "ccd",
+          "sourceUrl": "https://professional.heart.org/en/-/media/PHD-Files-2/Science-News/2/2023/2023_chronic_coronary_disease_guideline_slide_set.pdf",
+          "sourceSection": "Antiplatelet therapy without oral anticoagulation, PDF page 79",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Single-dose ibuprofen 400 mg timing around IR81 aspirin and inability to generalize timing to enteric-coated/multiple-dose regimens agree.",
+          "sourceId": "ibu",
+          "sourceUrl": "https://www.fda.gov/media/76636/download",
+          "sourceSection": "FDA science paper, conclusions",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": []
+    },
+    {
+      "drug": "glipizide",
+      "fileSha256": "b9e1bf879e7b522e79b17978cce833f8d67a425dfea85d21866e6a09032efeb7",
+      "result": "No material safety error identified in selected checked assertions.",
+      "checks": [
+        {
+          "assertion": "IR 5 mg before breakfast, 30-minute meal timing, older/hepatic 2.5 mg start, 2.5–5 mg titration, single-dose fifteen and daily forty maxima, divided-dose rule and stop at least one month before delivery agree.",
+          "sourceId": "ir",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b2e5656-9da9-4fab-bf01-ed75896b836a",
+          "sourceSection": "Dosage; Contraindications; Pregnancy",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "XL 5 mg daily with breakfast/first main meal, hypoglycemia-risk 2.5 mg start, twenty daily maximum, swallow whole, G6PD avoid, GI narrowing caution, and at least two-week pregnancy discontinuation agree.",
+          "sourceId": "xl",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eed99b60-d043-4249-9b2a-f05e46fb588d",
+          "sourceSection": "Sections 2, 4–5, 7–8",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Miconazole/fluconazole increased hypoglycemia risk and XL at least four hours before colesevelam agree. CV mortality warning accurately attributed to sulfonylurea UGDP tolbutamide evidence, not a glipizide-specific trial.",
+          "sourceId": "xl",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eed99b60-d043-4249-9b2a-f05e46fb588d",
+          "sourceSection": "Sections 7.2–7.4; 12.3",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": []
+    },
+    {
+      "drug": "alprazolam",
+      "fileSha256": "d36899f9e3385beef7535ac7284c91bda43ff38a92c15b91063fa923ab4e3ddc",
+      "result": "No material safety error identified in selected checked assertions.",
+      "checks": [
+        {
+          "assertion": "IR anxiety 0.25–0.5 mg TID maximum four/day, panic 0.5 mg TID start and ≤1 mg/day titration q3–4d, geriatric/hepatic 0.25 mg BID/TID and taper ≤0.5 mg q3d agree; opioid/abuse/withdrawal boxes and strong CYP3A inhibitor contraindication with ritonavir exception agree.",
+          "sourceId": "alprazolam-ir",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bb5cf72e-3a41-41a8-9a38-80f974eca33f",
+          "sourceSection": "Sections 2, 4–5, 7–8; Boxed warning",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "XR panic-only scope, 0.5–1 mg daily start, three to six recommended range, selected ten maximum, geriatric/hepatic 0.5 mg start and swallow-whole rule agree.",
+          "sourceId": "alprazolam-xr",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c8990714-c2f5-4b0c-9f1c-91d77156d962",
+          "sourceSection": "Sections 2, 4–5, 7",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Ritonavir start halves alprazolam; after ten to fourteen days can return toward target, no reduction for patient already taking ritonavir >ten to fourteen days; direction and phase distinction agree.",
+          "sourceId": "alprazolam-ir",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bb5cf72e-3a41-41a8-9a38-80f974eca33f",
+          "sourceSection": "Dosage modification; ritonavir interaction",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": []
+    },
+    {
+      "drug": "citalopram",
+      "fileSha256": "65ffa323f884a0770ec6f29f1090ecd9f072e5231f2c58b89c70a240711eedde",
+      "result": "No material safety error identified in selected checked assertions.",
+      "checks": [
+        {
+          "assertion": "Adult depression 20 mg start, increase after at least week maximum forty; age >60, hepatic impairment, CYP2C19 poor metabolism/inhibitors maximum twenty agree. QT >500 ms persistent stopping threshold, fourteen-day MAOI separation and pimozide contraindication agree.",
+          "sourceId": "citalopram",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4259d9b1-de34-43a4-85a8-41dd214e9177",
+          "sourceSection": "Sections 2, 4–5, 8",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Thirty mg capsule is not suitable for twenty mg maximum populations or initial/taper doses requiring another formulation; no erroneous ER claim.",
+          "sourceId": "citalopram-capsule",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80af8ae8-c106-4895-bab3-0579b41f1e75",
+          "sourceSection": "Sections 2, 8",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Ten mg/five mL conversion, forty mg/twenty mL conversion and urgent linezolid/IV methylene-blue interruption with two-week-or-24-hour monitoring and 24-hour restart interval agree. Severe renal CrCl <20 evidence gap is appropriately acknowledged.",
+          "sourceId": "citalopram-solution",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b1f0c6e8-85eb-4368-8709-9cace32415cb",
+          "sourceSection": "Sections 2, 3, 5; Description",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": []
+    },
+    {
+      "drug": "lamotrigine",
+      "fileSha256": "144ea4df6287a5cdf2b1b69f6d2330ac52769a1c3edb6f2fe9874010aadfa900",
+      "result": "Pediatric frequency discrepancy corrected; no unresolved material error in checked assertions.",
+      "checks": [
+        {
+          "assertion": "Adult IR adjunctive and bipolar tables agree. Pediatric total daily doses and maxima agree; previous pediatric week-three/four division discrepancy corrected to two doses. HLA-B*1502 rash risk, first-rash stopping, restart >five half-lives, hepatic 25/50% reductions and contraception withdrawal ≤25% weekly agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d7e3572d-56fe-4727-2bb4-013ccca22678",
+          "sourceSection": "Sections 2.1–2.4, Tables 1,2,5; Boxed warning",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees except issues explicitly listed"
+        },
+        {
+          "assertion": "XR age ≥13 table every numeric cell agrees, once-daily administration, week-eight increments ≤100 mg/week, monotherapy 250–300 mg and same-total-daily-dose IR conversion monitoring agree.",
+          "sourceId": "xr",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3e2c9a35-6a39-41d7-ad84-3c0bb8894b09",
+          "sourceSection": "Sections 2.2–2.4, Table 1",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees except issues explicitly listed"
+        },
+        {
+          "assertion": "Risk in structural/functional cardiac disease and additional sodium-channel blockers, no abrupt self-discontinuation agree.",
+          "sourceId": "cardiac",
+          "sourceUrl": "https://www.fda.gov/drugs/drug-safety-and-availability/studies-show-increased-risk-heart-rhythm-problems-seizure-and-mental-health-medicine-lamotrigine",
+          "sourceSection": "Health professionals",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees except issues explicitly listed"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning · Serious skin rashes",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [
+        {
+          "id": "lamotrigine-pediatric-week34-frequency",
+          "severity": "material dose-frequency discrepancy",
+          "status": "closed-author-corrected-independently-reread",
+          "location": "Dosage IR adjunctive epilepsy age 2–12, Weeks 3–4, neither valproate nor listed inducing AEDs",
+          "observed": "0.6 mg/kg/day in 1–2 doses",
+          "required": "0.6 mg/kg/day in 2 divided doses",
+          "source": "Current Lamictal Table 2, DailyMed lines 553–556",
+          "note": "Total daily dose correct; administration division differs from exact pediatric label.",
+          "correctionVerified": "0.6 mg/kg/day in 2 doses"
+        }
+      ]
+    },
+    {
+      "drug": "zolpidem",
+      "fileSha256": "063d98f41bddda85f10e7e726964095d96055e853512ba4b045830064da208c0",
+      "result": "No unsupported material clinical claim in checked assertions; archived source conflict explicitly scoped and actionable count withdrawn.",
+      "checks": [
+        {
+          "assertion": "IR sex-specific 5/5–10 mg start, ten maximum, older/hepatic five, severe hepatic avoid, complex-sleep contraindication/boxed warning and optional nursing interruption twenty-three hours agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c36cadf4-65a4-4466-b409-c82020b42452",
+          "sourceSection": "Sections 2,4–5,7–8",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees except issues explicitly listed"
+        },
+        {
+          "assertion": "CR sex-specific 6.25/6.25–12.5 mg start,12.5 maximum,7–8 hours,whole tablet,6.25 older/hepatic and next-day driving caution agree.",
+          "sourceId": "cr",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d934da3-bd77-4470-e063-6294a90a64f5",
+          "sourceSection": "Sections 2,4–5",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees except issues explicitly listed"
+        },
+        {
+          "assertion": "Middle-night only with ≥four hours remaining,1.75 women/3.5 men,>65/hepatic/CNS-depressant1.75,once-night maximum and complete sublingual dissolution agree.",
+          "sourceId": "sl",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=44b34e58-114b-4774-9fab-4b188dfe0228",
+          "sourceSection": "Sections 1–5",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees except issues explicitly listed"
+        },
+        {
+          "assertion": "Bedtime sublingual five women/five or ten men,ten maximum,older/hepatic five and no whole-swallow administration agree.",
+          "sourceId": "edluar",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a32884d0-85b5-11de-8a39-0800200c9a66",
+          "sourceSection": "Sections 2,4–5",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees except issues explicitly listed"
+        },
+        {
+          "assertion": "Historical dose sex distinctions and five mg/spray,marketing end May 31 2023 and PI one-spray reprime agree; IFU conflicts as noted.",
+          "sourceId": "spray",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=7b99e2ac-ff5b-c07a-e053-2a91aa0a6ade&type=display",
+          "sourceSection": "Sections 2.1–2.4; Marketing Information; patient IFU",
+          "access": "retained-official-primary-HTML-inspected; web display and drugInfo inaccessible; HTML SHA256 6a1ee3df437dc4944a967ea0045e524d01fb52573814bedf2a49d55fd2ba0089",
+          "result": "agrees except issues explicitly listed"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning · Complex sleep behaviors",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [
+        {
+          "id": "zolpimist-archived-priming-source-conflict",
+          "severity": "source ambiguity for historical handling",
+          "status": "closed-as-explicit-source-gap-actionable-reprime-count-withdrawn",
+          "location": "Dosage administration by formulation",
+          "observed": "One spray after ≥14 days agrees with full PI2.4.",
+          "sourceConflict": "Appended IFU directs steps1–6 after14 days, implyingfive sprays.",
+          "recommendation": "Explicitly flag conflict for actual-package/pharmacist review; retain historical-marketing context.",
+          "resolution": "Current profile explicitly documents PI/IFU conflict and directs exact-package pharmacist review; profile must not choose reprime count."
+        }
+      ]
+    },
+    {
+      "drug": "oxycodone",
+      "fileSha256": "b24a4d15de58004a3277d2528b6b20d1bec09607d9d223f6e95efc916e1264c3",
+      "result": "No material error identified in selected checked critical assertions.",
+      "checks": [
+        {
+          "assertion": "IR five to fifteen mg q4–6h as needed and respiratory/asthma/GI/hypersensitivity restrictions agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5a8157d3-ba20-4abf-b0d4-6ad141b31d63",
+          "sourceSection": "Sections 2,4; Boxed warning",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "One mg/mL versus20 mg/mL concentration and tolerant-only concentrated solution distinctions agree; no household spoon, prescribed mg/mL accuracy emphasized.",
+          "sourceId": "liquid",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6869fec9-1837-4221-afd8-5cc6fadd025d",
+          "sourceSection": "Sections 2–4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Adult non-tolerant10q12,high-dose tolerance thresholds,whole-tablet requirement,age≥11 eligibility five opioid days plus precedingtwo≥20mg/day oxycodone-equivalent,pediatric one-way conversion scope agree.",
+          "sourceId": "oxycontin",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bfdfe235-d717-4855-a3c8-a13d26dadede",
+          "sourceSection": "Sections 2.1–2.4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Nine mg base=ten mgHCl, q12with consistentfood,tolerance>36single/>72daily, maximum288base/320HCl,NG/gastro directmicrospheres15mL plus two10mL flushes and hepaticthird–half withalternative<9 agree.",
+          "sourceId": "xtampza",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b0a5ded2-8ee2-49ca-a86c-2b28ae40f60c",
+          "sourceSection": "Sections 2.1–2.4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning · serious opioid risks",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": []
+    },
+    {
+      "drug": "pregabalin",
+      "fileSha256": "6e073222582d32a6c5395261583dd74ef8e1c481436362f76a4cefc1ca9ad6e7",
+      "result": "No material error identified in selected checked critical assertions.",
+      "checks": [
+        {
+          "assertion": "Adult indication ceilings DPN300,PHN600,fibromyalgia450,SCI600; pediatric seizure weight2.5/10or3.5/14mg/kg/day and underfour three-divided frequency agree. CrCl four columns and dialysis supplementary four tiers independently checked and agree; one-week taper, respiratory warning,hypersensitivity and20mg/mL agree.",
+          "sourceId": "ir",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4734e7d-5079-455e-8ff5-8f4539c998a9",
+          "sourceSection": "Sections 1–5; Tables1–2",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "CR165→330 eveningmeal,PHNonly660 selectedlater escalation,normal/30–60 renalcolumns and<30/hemodialysis IR requirement agree; explicit IR-to-CR conversions and indication restriction agree.",
+          "sourceId": "cr",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f280bbd8-2af2-444a-bd96-e409337ca6dd",
+          "sourceSection": "Sections 2–4; Tables1–2",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning and controlled status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": []
+    },
+    {
+      "drug": "estradiol",
+      "fileSha256": "14e2b2ef59c6fa3da4f4df90e71aeb0c902feefe58999f49a5724c75d202c11c",
+      "result": "No material error identified in selected checked critical assertions.",
+      "checks": [
+        {
+          "assertion": "Oral menopause/hypoestrogenism initialone–two mgdaily,cycliclabelcontext,tartrazinewarning and selectedolder riskbox agree. Web cached packagerPD-Rx differs authorcurrentGoldenState note; exactauthorSPLmetadata not independentlycertified.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0d1c2c8-b175-4250-9343-d7db65b72e8f",
+          "sourceSection": "Dosage; Contraindications; Boxed language",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Twice-weekly0.0375mg/day symptoms versus0.025osteoporosis initiation and mgdelivery versuspatchcontent distinction agree.",
+          "sourceId": "patch",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c4da6de7-9ab1-4fcf-88f3-fe785019e6e7",
+          "sourceSection": "Sections 2–4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Ten mcg insertdailytwo weeks then twiceweekly and selectedolder warninglanguage agree.",
+          "sourceId": "vagifem",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e5ad3cf6-dd96-4e64-af21-c1eee38d0b88",
+          "sourceSection": "Sections 2–4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Two mg reservoir delivering7.5mcg/day90days, replacement/rinseinstructions,currentupdatedlabelwithoutbox and currentcontraindication changes agree.",
+          "sourceId": "estring",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=110b9865-5a07-4d45-b560-e89947f12600",
+          "sourceSection": "Dosage; Contraindications; labeling",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "November2025 requested removalofspecifiedboxedrisks,retainendometrialboxsystemicestrogenalone,retainotherwarningsections matches profile; requestnotuniversalcompletedimplementation.",
+          "sourceId": "fda-request",
+          "sourceUrl": "https://www.fda.gov/drugs/drug-alerts-and-statements/fda-requests-labeling-changes-related-safety-information-clarify-benefitrisk-considerations",
+          "sourceSection": "Requested label changes for systemic/local therapies",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Product-by-producttransition andEstringupdatedstatus agree; no universalcurrentboxremovalclaim.",
+          "sourceId": "fda",
+          "sourceUrl": "https://www.fda.gov/drugs/drug-safety-and-availability/menopausal-hormone-therapies-updated-prescribing-information",
+          "sourceSection": "Updated products table",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status · current product transition",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": []
+    },
+    {
+      "drug": "cholecalciferol",
+      "fileSha256": "e50b204f8de30a0cfdc34eb1959bf32f08ccadcb28a39e02ca9ca4409de19887",
+      "result": "No material error identified in selected checked critical assertions.",
+      "checks": [
+        {
+          "assertion": "One mcg=fortyIU,intake400infant/600ageone–70/800>70 and pregnancy600; rounded38mcg/1500IU and63/2500 explicitlyidentified. AgeUL1000/1500/2500/3000/4000 agrees; ULnotrecommendedtreatmentdose,hypercalcemia/renaltoxicity and precursoractivation distinctions agree.",
+          "sourceId": "ods",
+          "sourceUrl": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/",
+          "sourceSection": "Recommended intakes Table2; Upperlimits Table4; Toxicity",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Prevention-scopeguideline notuniversalrepletion/disease-treatmentprotocol,selectriskgroups,age≥50 treatmentdaily-lowerdosepreference agree.",
+          "sourceId": "endo",
+          "sourceUrl": "https://www.endocrine.org/clinical-practice-guidelines/vitamin-d-for-prevention-of-disease",
+          "sourceSection": "2024 prevention recommendations",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Ten thousandIU capsulepackageone weekly—not daily—agrees; productnotgenericrepletionregimen.",
+          "sourceId": "supplement",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ad799f34-81df-460c-a760-2204ad776817",
+          "sourceSection": "Dosage/Serving",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Four hundredIU pertwo mL,adulttwo mL daily andnoinfantdose inference agree.",
+          "sourceId": "liquid",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5f0a70a1-0bfa-4a69-b5f4-ec0ab9880557",
+          "sourceSection": "Dosage; Strength",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning and regulatory context",
+          "Adverse reactions and excess-dose symptoms"
+        ],
+        "productCards": 3
+      },
+      "issues": []
+    }
+  ],
+  "pending": [],
+  "limitations": [
+    "Only assertions enumerated here were independently checked; author audits remain responsible for complete profile verification.",
+    "Primary sources were public and retrieved directly. Source publication/version metadata may differ in web cache; exact author SPL snapshots are not independently certified unless expressly noted.",
+    "No build, browser QA, commit or deployment performed by independent reviewer."
+  ],
+  "unresolvedMaterialClinicalErrors": []
+}
