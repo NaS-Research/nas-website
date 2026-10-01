@@ -38,10 +38,10 @@ const groups = [
     title: "Learning",
     links: [
       { label: "NaS Learn", href: "/learn", detail: "Connected educational guides across pharmacy and the life sciences" },
-      { label: "Pharmacy", href: "/learn/pharmacy", detail: "The Pharmacy curriculum and learning library" },
+      { label: "Learning Library", href: "/learn/library", detail: "Modules and study guides across the life sciences" },
       { label: "Human Atlas", href: "/learn/pharmacy/atlas", detail: "Interactive anatomy and connected medication knowledge" },
       { label: "Drug Library", href: "/learn/pharmacy/drugs", detail: "Alphabetical medication profiles and current RxNorm search" },
-      { label: "Cumulative Pharmacy Review", href: "/learn/pharmacy/review", detail: "Direct questions and patient cases across the full sequence" },
+      { label: "Knowledge Review", href: "/learn/pharmacy/review", detail: "Direct questions and patient cases across the full sequence" },
       ...pharmacyModules.map((module) => ({
         label: `${module.number}. ${module.title}`,
         href: `/learn/pharmacy/modules/${module.slug}`,

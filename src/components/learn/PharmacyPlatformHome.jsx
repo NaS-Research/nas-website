@@ -6,7 +6,7 @@ const platformAreas = [
     label: "Learn",
     title: "Curriculum",
     description: "Move through focused modules that connect foundational science, therapeutics, patient care, and current evidence.",
-    href: "/learn/pharmacy#curriculum",
+    href: "/learn/library",
     action: "View the curriculum",
   },
   {

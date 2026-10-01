@@ -22,16 +22,16 @@ export default function PharmacyToolMenu() {
   return (
 <details ref={menuRef} className="pharmacy-tool-menu">
         <summary>
-          <span>Pharmacy</span>
+          <span>Learn</span>
           <strong>Open tools</strong>
           <i aria-hidden="true">+</i>
         </summary>
-        <nav aria-label="Pharmacy tools">
-          <Link href="/learn/pharmacy"><span>01</span>Home</Link>
-          <Link href="/learn/pharmacy/atlas"><span>02</span>Visual atlas</Link>
+        <nav aria-label="Learning tools">
+          <Link href="/learn"><span>01</span>NaS Learn</Link>
+          <Link href="/learn/pharmacy/atlas"><span>02</span>Human Atlas</Link>
           <Link href="/learn/pharmacy/drugs"><span>03</span>Drug library</Link>
-          <Link href="/learn/pharmacy#curriculum"><span>04</span>Curriculum</Link>
-          <Link href="/learn/pharmacy#learning-library"><span>05</span>Study guides</Link>
+          <Link href="/learn/library"><span>04</span>Learning library</Link>
+          <Link href="/learn/pharmacy/review"><span>05</span>Knowledge review</Link>
         </nav>
       </details>
   );

@@ -72,7 +72,7 @@ export default async function PharmacyLessonPage({ params }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(learningResourceJsonLd).replace(/</g, "\\u003c") }} />
       <header className="lesson-hero">
         <div className="nas-shell lesson-hero__inner">
-          <Link href="/learn/pharmacy" className="learning-back">← Pharmacy</Link>
+          <Link href="/learn/library" className="learning-back">← Learning library</Link>
           <div className="lesson-hero__meta"><span>{lesson.collection}</span><span>{lesson.level}</span><span>{lesson.readTime}</span></div>
           <h1>{lesson.title}</h1>
           <p>{lesson.description}</p>

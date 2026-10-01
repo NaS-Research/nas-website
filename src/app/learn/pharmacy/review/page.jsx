@@ -15,7 +15,7 @@ export default function PharmacyReviewPage() {
     <div className="nas-page pharmacy-review-page">
       <header className="pharmacy-review-hero">
         <div className="nas-shell">
-          <Link href="/learn/pharmacy#curriculum" className="learning-back">← Pharmacy curriculum</Link>
+          <Link href="/learn/library" className="learning-back">← Learning library</Link>
           <p className="nas-kicker">Cumulative review</p>
           <h1>Bring the systems together.</h1>
           <p>This review moves between mechanisms, monitoring, patient counseling, calculations, and clinical cases across all {pharmacyModules.length} modules and {pharmacySubmoduleCount} lessons. New modules join the review automatically.</p>

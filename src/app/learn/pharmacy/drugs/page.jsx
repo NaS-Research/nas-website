@@ -12,7 +12,7 @@ export default function DrugLibraryPage() {
   return (
     <div className="nas-page drug-library-page">
       <div data-page-main className="nas-shell">
-        <Link href="/learn/pharmacy" className="learning-back drug-library-back">← Pharmacy</Link>
+        <Link href="/learn" className="learning-back drug-library-back">← NaS Learn</Link>
         <DrugLibrary />
       </div>
       <Footer />
