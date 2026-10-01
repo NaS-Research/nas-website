@@ -56,4 +56,65 @@ const cases = [
   ["136", "metabolic-cardiovascular", "A patient taking insulin becomes confused and diaphoretic after starting levofloxacin. What should happen first?", ["Check and treat glucose urgently while evaluating the antibiotic as a contributor", "Assume this is bacterial resistance", "Give the next dose early", "Stop glucose monitoring"], "Severe hypoglycemia can occur and may progress rapidly. Immediate glucose assessment and treatment take priority."],
 ].map(([id, lesson, question, choices, rationale]) => ({ id: `fluoroquinolone-pharmacology-${id}`, lesson, question, choices, answer: 0, rationale, reviewHref: `#${lesson}` }));
 
-export const fluoroquinolonePharmacologyQuestionBank = [...generated, ...cases];
+// Feeding-related rows are reviewed individually; preserve the remaining generated bank.
+const feedingQuestionRepairs = {
+  "fluoroquinolone-pharmacology-035": {
+    "choices": [
+      "Assess oral intake, vomiting, feeding tubes, cations, multivitamins, antacids, sucralfate, product instructions, and adherence",
+      "Check the prescribed dose and renal adjustment, and assume tube administration will provide the expected exposure",
+      "Confirm feeds meet calorie goals, and omit their mineral content from the antibiotic review",
+      "Assess vomiting and adherence, but ignore antacids and mineral supplements when oral intake is adequate"
+    ],
+    "rationale": "Oral exposure can fall when fluoroquinolones interact with cations in feeds, antacids, supplements, multivitamins, or sucralfate. Review these alongside gastrointestinal function, formulation, product instructions, and actual administration. A correct dose or adequate calorie delivery does not establish reliable absorption."
+  },
+  "fluoroquinolone-pharmacology-051": {
+    "choices": [
+      "Assess antacids, supplements, multivitamins, binders, enteral feeds, timing, route, and product-specific spacing",
+      "Use the same separation interval for every fluoroquinolone, mineral product, and phosphate binder",
+      "Check calcium and iron, but omit magnesium-containing antacids and mineral-containing feeds",
+      "Continue simultaneous administration because a water flush will prevent absorption interactions"
+    ],
+    "rationale": "Polyvalent cations can chelate oral fluoroquinolones, and phosphate binders can also reduce exposure. Include feeds and nonprescription products in the review, then apply the instructions for the exact drug and interacting product. Water flushing helps administration but does not establish that nutrient interactions have been prevented."
+  },
+  "fluoroquinolone-pharmacology-053": {
+    "choices": [
+      "Enteral nutrition and mineral content can reduce oral fluoroquinolone exposure, while some suspensions create tube-specific handling problems",
+      "A water flush eliminates nutrient-binding effects as well as preventing tube blockage",
+      "Changing a tablet to a liquid always solves both tube handling and absorption problems",
+      "Once the drug reaches the stomach through a tube, formula mineral content no longer affects absorption"
+    ],
+    "rationale": "Mineral-containing feeds can reduce fluoroquinolone bioavailability. Ciprofloxacin also illustrates a separate formulation problem: its oil-based oral suspension adheres to tubing. Flushing or choosing a liquid does not by itself establish adequate absorption or tube compatibility."
+  },
+  "fluoroquinolone-pharmacology-054": {
+    "choices": [
+      "Use a route and product-specific feed plan that preserves nutrition and antibacterial exposure",
+      "Stop all nutrition for the entire antibiotic course instead of planning individual administrations",
+      "Continue simultaneous feeding and double the antibiotic dose to compensate for possible absorption loss",
+      "Mix the antibiotic directly into the formula so feeding does not need to be interrupted"
+    ],
+    "rationale": "Reconcile the specific product, tube preparation, and feed-separation plan so that medication exposure and nutrition delivery are both addressed. Do not mix medication into the formula, assume a higher dose corrects the interaction, or replace a coordinated administration schedule with an indefinite feeding interruption."
+  },
+  "fluoroquinolone-pharmacology-055": {
+    "choices": [
+      "Assess tube location, formula minerals, continuous versus bolus feeding, dosage form, flushing, hold interval, and alternative route",
+      "Check the dose and renal function, but omit the feeding schedule and formula mineral content",
+      "Check tube location, but assume that all liquids are compatible and that feed separation is unnecessary",
+      "Check syringe size and liquid volume, but omit dosage-form integrity and nutrition timing"
+    ],
+    "rationale": "Tube location and dosage form affect the administration plan, while formula minerals and actual feeding times affect the absorption review. Check preparation, flushing, and the verified separation instructions for the selected product; assess an alternative formulation or route if a compatible plan cannot be established. Dose, location, or syringe checks alone are incomplete."
+  },
+  "fluoroquinolone-pharmacology-056": {
+    "choices": [
+      "Sending an oil-based suspension through tubing when the label warns against it",
+      "Reviewing the exact product before choosing a compatible immediate-release tablet preparation",
+      "Separating feeds according to a verified product plan and restarting nutrition afterward",
+      "Flushing a compatible tube-administered preparation with water before and after dosing"
+    ],
+    "rationale": "Ciprofloxacin's oil-based oral suspension adheres to feeding-tube tubing and should not be sent through it. An appropriate immediate-release tablet preparation can be crushed and mixed with water, with water flushing before and after administration. A verified compatible preparation and feed schedule address the problem; treating every liquid as tube-compatible does not."
+  }
+};
+
+export const fluoroquinolonePharmacologyQuestionBank = [...generated, ...cases].map((question) => {
+  const repair = feedingQuestionRepairs[question.id];
+  return repair ? { ...question, ...repair } : question;
+});

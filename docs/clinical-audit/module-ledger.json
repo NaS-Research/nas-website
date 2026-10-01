@@ -7582,11 +7582,21 @@
         },
         {
           "slug": "disposition-dosing",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "verifiedQuestionIds": [
+            "fluoroquinolone-pharmacology-035"
+          ],
+          "latestScopedEvidence": "enteral-nutrition-broader-fluoroquinolone-review.json"
         },
         {
           "slug": "administration-interactions",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "verifiedSectionHeadings": [
+            "Chelation lowers absorption",
+            "Tube delivery changes the problem",
+            "Spacing is product specific"
+          ],
+          "latestScopedEvidence": "enteral-nutrition-broader-fluoroquinolone-review.json"
         },
         {
           "slug": "tendon-neurologic",
@@ -7614,8 +7624,27 @@
         }
       ],
       "questions": 136,
-      "status": "unreviewed",
-      "evidence": []
+      "status": "reviewing",
+      "evidence": [
+        "enteral-nutrition-broader-fluoroquinolone-review.json"
+      ],
+      "latestEnteralDependencyReview": {
+        "evidence": "enteral-nutrition-broader-fluoroquinolone-review.json",
+        "verifiedBankIds": [
+          "fluoroquinolone-pharmacology-035",
+          "fluoroquinolone-pharmacology-051",
+          "fluoroquinolone-pharmacology-053",
+          "fluoroquinolone-pharmacology-054",
+          "fluoroquinolone-pharmacology-055",
+          "fluoroquinolone-pharmacology-056"
+        ],
+        "verifiedBodyHeadings": [
+          "Chelation lowers absorption",
+          "Tube delivery changes the problem",
+          "Spacing is product specific"
+        ],
+        "wholeModuleVerified": false
+      }
     },
     {
       "slug": "macrolide-pharmacology",

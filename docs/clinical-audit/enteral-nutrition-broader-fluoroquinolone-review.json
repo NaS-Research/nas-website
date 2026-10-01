@@ -1,0 +1,730 @@
+{
+  "date": "2026-10-01",
+  "unit": "enteral-nutrition:broader-fluoroquinolone-feeding-dependency",
+  "status": "verified scoped logical unit; no full module or chapter closure",
+  "baseCommit": "8c7a62c5c63d22a5fd3358757d6d3e23ae3d6367",
+  "bookIdentity": {
+    "edition": "RxPrep 2023",
+    "PDFPages": 1032,
+    "privateSourceKeptOutsideGit": true
+  },
+  "sequentialContext": {
+    "checkpointChapter": 1,
+    "checklistEntry": 15,
+    "dependencyChapter": 11,
+    "ENPrintedPages": [
+      161,
+      164
+    ],
+    "ENPDFPages": [
+      169,
+      172
+    ],
+    "reasonForChapter22Lookup": "Necessary cross-module drug-nutrient and formulation dependency, not sequential advancement to Chapter22."
+  },
+  "sourceReview": {
+    "completeTextAndRenderedPages": [
+      {
+        "pdf": 95,
+        "printed": 87,
+        "purpose": "Dosage-form suitability, vomiting and package-label consultation"
+      },
+      {
+        "pdf": 170,
+        "printed": 162,
+        "purpose": "Tube anatomy, drug-nutrient interactions, compatibility and water flushing"
+      },
+      {
+        "pdf": 360,
+        "printed": 352,
+        "purpose": "Complete quinolone table/notes read; only ciprofloxacin tube formulation notes adopted"
+      },
+      {
+        "pdf": 361,
+        "printed": 353,
+        "purpose": "Full quinolone interaction text/feature panel and adjacent macrolide table read; only cation/binder interaction distinction adopted"
+      }
+    ],
+    "locatingSearch": {
+      "extractedPDFPages": [
+        350,
+        379
+      ],
+      "status": "Locating aid only; not all30 pages clinically/visually audited"
+    },
+    "limits": "Current FDA/product labels and contemporary EN guidance were not opened. References to checking current instructions are recommended checks, not evidence those outside sources were reviewed. No new infection indication, antibiotic dose, renal table, safety ranking, nutrition protocol or fixed feed-hold interval adopted. Existing full-module FDA/IDSA source metadata is not reverified by this book-only dependency unit."
+  },
+  "questionReview": [
+    {
+      "PDFPages": [
+        95,
+        170,
+        361
+      ],
+      "id": "fluoroquinolone-pharmacology-035",
+      "lesson": "disposition-dosing",
+      "question": "Which assessment is most appropriate for oral absorption?",
+      "choices": [
+        "Assess oral intake, vomiting, feeding tubes, cations, multivitamins, antacids, sucralfate, product instructions, and adherence",
+        "Check the prescribed dose and renal adjustment, and assume tube administration will provide the expected exposure",
+        "Confirm feeds meet calorie goals, and omit their mineral content from the antibiotic review",
+        "Assess vomiting and adherence, but ignore antacids and mineral supplements when oral intake is adequate"
+      ],
+      "answer": 0,
+      "rationale": "Oral exposure can fall when fluoroquinolones interact with cations in feeds, antacids, supplements, multivitamins, or sucralfate. Review these alongside gastrointestinal function, formulation, product instructions, and actual administration. A correct dose or adequate calorie delivery does not establish reliable absorption.",
+      "reviewHref": "#disposition-dosing",
+      "review": "The complete intake/adherence/formulation/cation assessment remains the unique best choice. Dose/renal review alone, calories alone, and omission of mineral products do not establish absorption. Vomiting is supported by PDF95; EN/cations by170/361."
+    },
+    {
+      "PDFPages": [
+        170,
+        361
+      ],
+      "id": "fluoroquinolone-pharmacology-051",
+      "lesson": "administration-interactions",
+      "question": "Which assessment is most appropriate for polyvalent cation chelation?",
+      "choices": [
+        "Assess antacids, supplements, multivitamins, binders, enteral feeds, timing, route, and product-specific spacing",
+        "Use the same separation interval for every fluoroquinolone, mineral product, and phosphate binder",
+        "Check calcium and iron, but omit magnesium-containing antacids and mineral-containing feeds",
+        "Continue simultaneous administration because a water flush will prevent absorption interactions"
+      ],
+      "answer": 0,
+      "rationale": "Polyvalent cations can chelate oral fluoroquinolones, and phosphate binders can also reduce exposure. Include feeds and nonprescription products in the review, then apply the instructions for the exact drug and interacting product. Water flushing helps administration but does not establish that nutrient interactions have been prevented.",
+      "reviewHref": "#administration-interactions",
+      "review": "Cation sources and phosphate binders are reviewed without asserting that every binder chelates. PDF361 separately describes binder exposure effects and differing separation intervals. The product-specific key is retained; universal timing, incomplete cation review and flush-only reassurance are incorrect."
+    },
+    {
+      "PDFPages": [
+        95,
+        170,
+        360
+      ],
+      "id": "fluoroquinolone-pharmacology-053",
+      "lesson": "administration-interactions",
+      "question": "Which principle best characterizes enteral feeding interaction?",
+      "choices": [
+        "Enteral nutrition and mineral content can reduce oral fluoroquinolone exposure, while some suspensions create tube-specific handling problems",
+        "A water flush eliminates nutrient-binding effects as well as preventing tube blockage",
+        "Changing a tablet to a liquid always solves both tube handling and absorption problems",
+        "Once the drug reaches the stomach through a tube, formula mineral content no longer affects absorption"
+      ],
+      "answer": 0,
+      "rationale": "Mineral-containing feeds can reduce fluoroquinolone bioavailability. Ciprofloxacin also illustrates a separate formulation problem: its oil-based oral suspension adheres to tubing. Flushing or choosing a liquid does not by itself establish adequate absorption or tube compatibility.",
+      "reviewHref": "#administration-interactions",
+      "review": "The key distinguishes mineral-related bioavailability loss from a separate suspension/tubing problem. Liquid substitution or water flushing alone does not resolve both. Gastric delivery does not remove a nutrient interaction."
+    },
+    {
+      "PDFPages": [
+        95,
+        170,
+        360,
+        361
+      ],
+      "id": "fluoroquinolone-pharmacology-054",
+      "lesson": "administration-interactions",
+      "question": "Which clinical action best applies to enteral feeding interaction?",
+      "choices": [
+        "Use a route and product-specific feed plan that preserves nutrition and antibacterial exposure",
+        "Stop all nutrition for the entire antibiotic course instead of planning individual administrations",
+        "Continue simultaneous feeding and double the antibiotic dose to compensate for possible absorption loss",
+        "Mix the antibiotic directly into the formula so feeding does not need to be interrupted"
+      ],
+      "answer": 0,
+      "rationale": "Reconcile the specific product, tube preparation, and feed-separation plan so that medication exposure and nutrition delivery are both addressed. Do not mix medication into the formula, assume a higher dose corrects the interaction, or replace a coordinated administration schedule with an indefinite feeding interruption.",
+      "reviewHref": "#administration-interactions",
+      "review": "Coordinated product/route/feeding planning is a synthesis of PDF95/170/360/361. Mixing in formula is explicitly prohibited by170. Dose doubling or stopping nutrition for the full course does not implement the described separated-administration plan. No universal clinical hold duration is prescribed."
+    },
+    {
+      "PDFPages": [
+        95,
+        170,
+        360,
+        361
+      ],
+      "id": "fluoroquinolone-pharmacology-055",
+      "lesson": "administration-interactions",
+      "question": "Which assessment is most appropriate for enteral feeding interaction?",
+      "choices": [
+        "Assess tube location, formula minerals, continuous versus bolus feeding, dosage form, flushing, hold interval, and alternative route",
+        "Check the dose and renal function, but omit the feeding schedule and formula mineral content",
+        "Check tube location, but assume that all liquids are compatible and that feed separation is unnecessary",
+        "Check syringe size and liquid volume, but omit dosage-form integrity and nutrition timing"
+      ],
+      "answer": 0,
+      "rationale": "Tube location and dosage form affect the administration plan, while formula minerals and actual feeding times affect the absorption review. Check preparation, flushing, and the verified separation instructions for the selected product; assess an alternative formulation or route if a compatible plan cannot be established. Dose, location, or syringe checks alone are incomplete.",
+      "reviewHref": "#administration-interactions",
+      "review": "The key is an administration-assessment checklist synthesized from tube anatomy, formulation integrity, actual feed scheduling, package-label review and flushing in95/170/360/361. It does not prescribe a bolus/continuous regimen, a placement test, a fixed hold interval or a current product instruction."
+    },
+    {
+      "PDFPages": [
+        170,
+        360
+      ],
+      "id": "fluoroquinolone-pharmacology-056",
+      "lesson": "administration-interactions",
+      "question": "Which reasoning hazard is most important to prevent with enteral feeding interaction?",
+      "choices": [
+        "Sending an oil-based suspension through tubing when the label warns against it",
+        "Reviewing the exact product before choosing a compatible immediate-release tablet preparation",
+        "Separating feeds according to a verified product plan and restarting nutrition afterward",
+        "Flushing a compatible tube-administered preparation with water before and after dosing"
+      ],
+      "answer": 0,
+      "rationale": "Ciprofloxacin's oil-based oral suspension adheres to feeding-tube tubing and should not be sent through it. An appropriate immediate-release tablet preparation can be crushed and mixed with water, with water flushing before and after administration. A verified compatible preparation and feed schedule address the problem; treating every liquid as tube-compatible does not.",
+      "reviewHref": "#administration-interactions",
+      "review": "Sending the warned-against oil-based suspension is the hazard. All three new distractors are appropriate qualified preparation/separation/flushing actions, so do not answer a hazard question. Ciprofloxacin example is supported by170/360, not a freshly reviewed FDA label."
+    }
+  ],
+  "teachingReview": [
+    {
+      "PDFPages": [
+        170,
+        361
+      ],
+      "status": "source-verified in this scoped feeding dependency",
+      "revised": true,
+      "lesson": "administration-interactions",
+      "heading": "Chelation lowers absorption",
+      "body": "Aluminum, magnesium, calcium, iron, zinc, and cation-containing products such as sucralfate can chelate oral fluoroquinolones and reduce absorption. Review antacids, multivitamins, supplements, and mineral-containing feeds. Some phosphate binders also lower oral quinolone exposure; review their product instructions rather than assuming every binder has the same mechanism or separation interval."
+    },
+    {
+      "PDFPages": [
+        95,
+        170,
+        360,
+        361
+      ],
+      "status": "source-verified in this scoped feeding dependency",
+      "revised": true,
+      "lesson": "administration-interactions",
+      "heading": "Tube delivery changes the problem",
+      "body": "Verify tube location, formula composition, continuous or bolus feeding, product compatibility, crushing or suspension instructions, feed separation, and flushing. Mineral-containing feeds can reduce fluoroquinolone absorption. Ciprofloxacin's oil-based oral suspension adheres to tubing. For an appropriate immediate-release ciprofloxacin tablet, confirm the preparation instructions for crushing and mixing with water and for water flushing before and after administration. Coordinate the medication and feeding schedule rather than assuming every liquid or crushing method is suitable."
+    },
+    {
+      "PDFPages": [
+        95,
+        170,
+        360,
+        361
+      ],
+      "status": "source-verified in this scoped feeding dependency",
+      "revised": false,
+      "lesson": "administration-interactions",
+      "heading": "Spacing is product specific",
+      "body": "A class mechanism does not create one universal timing rule. Follow the current label for the exact fluoroquinolone and interacting product. Reschedule rather than doubling the antibiotic to compensate."
+    }
+  ],
+  "broaderSelection": {
+    "inventory": "enteral-nutrition-book-safety-coverage-review.json; committed232-module snapshot",
+    "parentModule": "fluoroquinolone-pharmacology",
+    "lexicalMatches": 15,
+    "feedingPromptKeyRationaleItemsSourceVerified": [
+      "fluoroquinolone-pharmacology-035",
+      "fluoroquinolone-pharmacology-051",
+      "fluoroquinolone-pharmacology-053",
+      "fluoroquinolone-pharmacology-054",
+      "fluoroquinolone-pharmacology-055",
+      "fluoroquinolone-pharmacology-056"
+    ],
+    "distractorOnly": [
+      {
+        "question": {
+          "id": "fluoroquinolone-pharmacology-001",
+          "lesson": "target-structure",
+          "question": "Which principle best characterizes quinolone pharmacophore?",
+          "choices": [
+            "The 4-quinolone-3-carboxylate core coordinates the bacterial type II topoisomerase DNA cleavage complex",
+            "A susceptible result predicts likely efficacy only with the associated organism, site, and recommended exposure",
+            "Enteral nutrition and mineral content can reduce oral fluoroquinolone exposure, while some suspensions create tube-specific handling problems",
+            "Fluoroquinolones can exacerbate muscle weakness in myasthenia gravis and are generally avoided in known disease"
+          ],
+          "answer": 0,
+          "rationale": "A common pharmacophore creates a class mechanism, while substitutions create meaningful agent differences",
+          "reviewHref": "#target-structure"
+        },
+        "feedingClauseStatus": "Book-supported shared feeding/cation assessment or principle; source compared with95/170/360/361. Retained unchanged.",
+        "wholeQuestionStatus": "Not fully verified in this unit; complete nonfeeding topic, one-best-answer/distractor review remains for the Chapter22 parent-module audit."
+      },
+      {
+        "question": {
+          "id": "fluoroquinolone-pharmacology-007",
+          "lesson": "target-structure",
+          "question": "Which assessment is most appropriate for DNA gyrase inhibition?",
+          "choices": [
+            "Assess organism, dominant target, gyrA or parC change, MIC shift, exposure, and emergence during therapy",
+            "Assess oral intake, vomiting, feeding tubes, cations, multivitamins, antacids, sucralfate, product instructions, and adherence",
+            "Assess tizanidine, theophylline, caffeine burden, clozapine, other substrates, symptoms, and alternatives",
+            "Assess diabetes, insulin or secretagogues, intake, kidney function, baseline glucose, monitoring access, and rescue plan"
+          ],
+          "answer": 0,
+          "rationale": "The trapped cleavage complex prevents normal DNA resealing and converts target engagement into lethal injury",
+          "reviewHref": "#target-structure"
+        },
+        "feedingClauseStatus": "Book-supported shared feeding/cation assessment or principle; source compared with95/170/360/361. Retained unchanged.",
+        "wholeQuestionStatus": "Not fully verified in this unit; complete nonfeeding topic, one-best-answer/distractor review remains for the Chapter22 parent-module audit."
+      },
+      {
+        "question": {
+          "id": "fluoroquinolone-pharmacology-023",
+          "lesson": "agent-spectrum",
+          "question": "Which assessment is most appropriate for moxifloxacin differentiation?",
+          "choices": [
+            "Assess infection site, renal function, hepatic status, QT risk, interacting drugs, and alternatives",
+            "Assess antacids, supplements, multivitamins, binders, enteral feeds, timing, route, and product-specific spacing",
+            "Assess seizure history, cognition, psychiatric history, renal function, interacting drugs, sleep, glucose, and symptom timing",
+            "Assess historical MICs, organism, mutation data if available, dosing, adherence, site, and clinical response"
+          ],
+          "answer": 0,
+          "rationale": "No renal adjustment does not mean adequate active urinary concentration",
+          "reviewHref": "#agent-spectrum"
+        },
+        "feedingClauseStatus": "Book-supported shared feeding/cation assessment or principle; source compared with95/170/360/361. Retained unchanged.",
+        "wholeQuestionStatus": "Not fully verified in this unit; complete nonfeeding topic, one-best-answer/distractor review remains for the Chapter22 parent-module audit."
+      },
+      {
+        "question": {
+          "id": "fluoroquinolone-pharmacology-025",
+          "lesson": "agent-spectrum",
+          "question": "Which principle best characterizes delafloxacin differentiation?",
+          "choices": [
+            "Delafloxacin has labeled oral and intravenous roles in acute bacterial skin infection and community-acquired bacterial pneumonia, including susceptible MRSA",
+            "Enteral nutrition and mineral content can reduce oral fluoroquinolone exposure, while some suspensions create tube-specific handling problems",
+            "Fluoroquinolones can exacerbate muscle weakness in myasthenia gravis and are generally avoided in known disease",
+            "Efflux, reduced permeability, and plasmid-mediated qnr or modifying mechanisms can add low-level resistance that facilitates further selection"
+          ],
+          "answer": 0,
+          "rationale": "Activity against MRSA does not erase narrower, safer, or better-established alternatives",
+          "reviewHref": "#agent-spectrum"
+        },
+        "feedingClauseStatus": "Book-supported shared feeding/cation assessment or principle; source compared with95/170/360/361. Retained unchanged.",
+        "wholeQuestionStatus": "Not fully verified in this unit; complete nonfeeding topic, one-best-answer/distractor review remains for the Chapter22 parent-module audit."
+      },
+      {
+        "question": {
+          "id": "fluoroquinolone-pharmacology-091",
+          "lesson": "metabolic-cardiovascular",
+          "question": "Which assessment is most appropriate for aortic aneurysm and dissection?",
+          "choices": [
+            "Assess known aneurysm, vascular disease, hypertension, advanced age, Marfan or Ehlers-Danlos syndrome, and alternatives",
+            "Assess tendon, nerve, CNS, glucose, ECG, aortic, hepatic, diarrhea, renal, interaction, culture, and response domains",
+            "Assess dose, interval, absorption, clearance, MIC, site penetration, organism, and adherence",
+            "Assess oral intake, vomiting, feeding tubes, cations, multivitamins, antacids, sucralfate, product instructions, and adherence"
+          ],
+          "answer": 0,
+          "rationale": "Aortic injury can be rapidly fatal and requires emergency evaluation",
+          "reviewHref": "#metabolic-cardiovascular"
+        },
+        "feedingClauseStatus": "Book-supported shared feeding/cation assessment or principle; source compared with95/170/360/361. Retained unchanged.",
+        "wholeQuestionStatus": "Not fully verified in this unit; complete nonfeeding topic, one-best-answer/distractor review remains for the Chapter22 parent-module audit."
+      },
+      {
+        "question": {
+          "id": "fluoroquinolone-pharmacology-107",
+          "lesson": "resistance-stewardship",
+          "question": "Which assessment is most appropriate for restricted uncomplicated indications?",
+          "choices": [
+            "Assess diagnostic certainty, severity, culture, allergies, alternatives, prior reactions, and patient-specific risks",
+            "Assess the exact agent, organism, MIC or AST category, infection site, formulation, renal function, and safety profile",
+            "Assess ABSSSI or CABP criteria, MRSA susceptibility, renal function, route, chelation, and class warnings",
+            "Assess antacids, supplements, multivitamins, binders, enteral feeds, timing, route, and product-specific spacing"
+          ],
+          "answer": 0,
+          "rationale": "A small expected benefit cannot justify disproportionate irreversible harm",
+          "reviewHref": "#resistance-stewardship"
+        },
+        "feedingClauseStatus": "Book-supported shared feeding/cation assessment or principle; source compared with95/170/360/361. Retained unchanged.",
+        "wholeQuestionStatus": "Not fully verified in this unit; complete nonfeeding topic, one-best-answer/distractor review remains for the Chapter22 parent-module audit."
+      },
+      {
+        "question": {
+          "id": "fluoroquinolone-pharmacology-109",
+          "lesson": "special-populations",
+          "question": "Which principle best characterizes pregnancy lactation and pediatrics?",
+          "choices": [
+            "Pregnancy, lactation, and pediatric use require agent-specific labeling, infection severity, exposure route, alternatives, and current evidence",
+            "Fluoroquinolones stabilize cleaved DNA complexes involving DNA gyrase and topoisomerase IV, producing lethal double-strand damage",
+            "A susceptible result predicts likely efficacy only with the associated organism, site, and recommended exposure",
+            "Enteral nutrition and mineral content can reduce oral fluoroquinolone exposure, while some suspensions create tube-specific handling problems"
+          ],
+          "answer": 0,
+          "rationale": "Population decisions require the exact product and disease context",
+          "reviewHref": "#special-populations"
+        },
+        "feedingClauseStatus": "Book-supported shared feeding/cation assessment or principle; source compared with95/170/360/361. Retained unchanged.",
+        "wholeQuestionStatus": "Not fully verified in this unit; complete nonfeeding topic, one-best-answer/distractor review remains for the Chapter22 parent-module audit."
+      },
+      {
+        "question": {
+          "id": "fluoroquinolone-pharmacology-115",
+          "lesson": "special-populations",
+          "question": "Which assessment is most appropriate for older adult risk stacking?",
+          "choices": [
+            "Assess age, frailty, vascular disease, corticosteroids, diabetes therapy, cognition, QT-active medicines, kidney function, mobility, prior class exposure, and monitoring access",
+            "Assess dose, interval, absorption, clearance, MIC, site penetration, organism, and adherence",
+            "Assess oral intake, vomiting, feeding tubes, cations, multivitamins, antacids, sucralfate, product instructions, and adherence",
+            "Assess tizanidine, theophylline, caffeine burden, clozapine, other substrates, symptoms, and alternatives"
+          ],
+          "answer": 0,
+          "rationale": "A population label does not replace an individualized risk stack, exposure plan, and benefit comparison",
+          "reviewHref": "#special-populations"
+        },
+        "feedingClauseStatus": "Book-supported shared feeding/cation assessment or principle; source compared with95/170/360/361. Retained unchanged.",
+        "wholeQuestionStatus": "Not fully verified in this unit; complete nonfeeding topic, one-best-answer/distractor review remains for the Chapter22 parent-module audit."
+      },
+      {
+        "question": {
+          "id": "fluoroquinolone-pharmacology-131",
+          "lesson": "clinical-integration",
+          "question": "Which assessment is most appropriate for time-boxed definitive review?",
+          "choices": [
+            "Assess elapsed active therapy, specimen quality, culture and MIC, source-control completion, symptoms, vital and laboratory trends, absorption, renal function, adverse effects, alternatives, and duration already received",
+            "Assess ABSSSI or CABP criteria, MRSA susceptibility, renal function, route, chelation, and class warnings",
+            "Assess antacids, supplements, multivitamins, binders, enteral feeds, timing, route, and product-specific spacing",
+            "Assess seizure history, cognition, psychiatric history, renal function, interacting drugs, sleep, glucose, and symptom timing"
+          ],
+          "answer": 0,
+          "rationale": "A scheduled review converts initial uncertainty into an explicit decision to narrow, change, stop, or continue",
+          "reviewHref": "#clinical-integration"
+        },
+        "feedingClauseStatus": "Book-supported shared feeding/cation assessment or principle; source compared with95/170/360/361. Retained unchanged.",
+        "wholeQuestionStatus": "Not fully verified in this unit; complete nonfeeding topic, one-best-answer/distractor review remains for the Chapter22 parent-module audit."
+      }
+    ],
+    "otherBroaderBanks": "Pending; working-only warfarin parent rewrite not staged."
+  },
+  "validation": {
+    "isolatedBuild": {
+      "staticPages": 567,
+      "exitCode": 0,
+      "logSha256": "fa142d7f9c492957959f7bca579b6918f41db80f787e28a6a247bb19f5f71242"
+    },
+    "focusedStructural": {
+      "modules": 1,
+      "questions": 136,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "fluoroquinolone-pharmacology",
+          "lessons": 10,
+          "questions": 136,
+          "minimumLessonCoverage": 8
+        }
+      ]
+    },
+    "technical": {
+      "status": "passed",
+      "bank": 136,
+      "bodies": 49,
+      "changedQuestions": [
+        {
+          "id": "fluoroquinolone-pharmacology-035",
+          "lesson": "disposition-dosing",
+          "question": "Which assessment is most appropriate for oral absorption?",
+          "choices": [
+            "Assess oral intake, vomiting, feeding tubes, cations, multivitamins, antacids, sucralfate, product instructions, and adherence",
+            "Check the prescribed dose and renal adjustment, and assume tube administration will provide the expected exposure",
+            "Confirm feeds meet calorie goals, and omit their mineral content from the antibiotic review",
+            "Assess vomiting and adherence, but ignore antacids and mineral supplements when oral intake is adequate"
+          ],
+          "answer": 0,
+          "rationale": "Oral exposure can fall when fluoroquinolones interact with cations in feeds, antacids, supplements, multivitamins, or sucralfate. Review these alongside gastrointestinal function, formulation, product instructions, and actual administration. A correct dose or adequate calorie delivery does not establish reliable absorption.",
+          "reviewHref": "#disposition-dosing"
+        },
+        {
+          "id": "fluoroquinolone-pharmacology-051",
+          "lesson": "administration-interactions",
+          "question": "Which assessment is most appropriate for polyvalent cation chelation?",
+          "choices": [
+            "Assess antacids, supplements, multivitamins, binders, enteral feeds, timing, route, and product-specific spacing",
+            "Use the same separation interval for every fluoroquinolone, mineral product, and phosphate binder",
+            "Check calcium and iron, but omit magnesium-containing antacids and mineral-containing feeds",
+            "Continue simultaneous administration because a water flush will prevent absorption interactions"
+          ],
+          "answer": 0,
+          "rationale": "Polyvalent cations can chelate oral fluoroquinolones, and phosphate binders can also reduce exposure. Include feeds and nonprescription products in the review, then apply the instructions for the exact drug and interacting product. Water flushing helps administration but does not establish that nutrient interactions have been prevented.",
+          "reviewHref": "#administration-interactions"
+        },
+        {
+          "id": "fluoroquinolone-pharmacology-053",
+          "lesson": "administration-interactions",
+          "question": "Which principle best characterizes enteral feeding interaction?",
+          "choices": [
+            "Enteral nutrition and mineral content can reduce oral fluoroquinolone exposure, while some suspensions create tube-specific handling problems",
+            "A water flush eliminates nutrient-binding effects as well as preventing tube blockage",
+            "Changing a tablet to a liquid always solves both tube handling and absorption problems",
+            "Once the drug reaches the stomach through a tube, formula mineral content no longer affects absorption"
+          ],
+          "answer": 0,
+          "rationale": "Mineral-containing feeds can reduce fluoroquinolone bioavailability. Ciprofloxacin also illustrates a separate formulation problem: its oil-based oral suspension adheres to tubing. Flushing or choosing a liquid does not by itself establish adequate absorption or tube compatibility.",
+          "reviewHref": "#administration-interactions"
+        },
+        {
+          "id": "fluoroquinolone-pharmacology-054",
+          "lesson": "administration-interactions",
+          "question": "Which clinical action best applies to enteral feeding interaction?",
+          "choices": [
+            "Use a route and product-specific feed plan that preserves nutrition and antibacterial exposure",
+            "Stop all nutrition for the entire antibiotic course instead of planning individual administrations",
+            "Continue simultaneous feeding and double the antibiotic dose to compensate for possible absorption loss",
+            "Mix the antibiotic directly into the formula so feeding does not need to be interrupted"
+          ],
+          "answer": 0,
+          "rationale": "Reconcile the specific product, tube preparation, and feed-separation plan so that medication exposure and nutrition delivery are both addressed. Do not mix medication into the formula, assume a higher dose corrects the interaction, or replace a coordinated administration schedule with an indefinite feeding interruption.",
+          "reviewHref": "#administration-interactions"
+        },
+        {
+          "id": "fluoroquinolone-pharmacology-055",
+          "lesson": "administration-interactions",
+          "question": "Which assessment is most appropriate for enteral feeding interaction?",
+          "choices": [
+            "Assess tube location, formula minerals, continuous versus bolus feeding, dosage form, flushing, hold interval, and alternative route",
+            "Check the dose and renal function, but omit the feeding schedule and formula mineral content",
+            "Check tube location, but assume that all liquids are compatible and that feed separation is unnecessary",
+            "Check syringe size and liquid volume, but omit dosage-form integrity and nutrition timing"
+          ],
+          "answer": 0,
+          "rationale": "Tube location and dosage form affect the administration plan, while formula minerals and actual feeding times affect the absorption review. Check preparation, flushing, and the verified separation instructions for the selected product; assess an alternative formulation or route if a compatible plan cannot be established. Dose, location, or syringe checks alone are incomplete.",
+          "reviewHref": "#administration-interactions"
+        },
+        {
+          "id": "fluoroquinolone-pharmacology-056",
+          "lesson": "administration-interactions",
+          "question": "Which reasoning hazard is most important to prevent with enteral feeding interaction?",
+          "choices": [
+            "Sending an oil-based suspension through tubing when the label warns against it",
+            "Reviewing the exact product before choosing a compatible immediate-release tablet preparation",
+            "Separating feeds according to a verified product plan and restarting nutrition afterward",
+            "Flushing a compatible tube-administered preparation with water before and after dosing"
+          ],
+          "answer": 0,
+          "rationale": "Ciprofloxacin's oil-based oral suspension adheres to feeding-tube tubing and should not be sent through it. An appropriate immediate-release tablet preparation can be crushed and mixed with water, with water flushing before and after administration. A verified compatible preparation and feed schedule address the problem; treating every liquid as tube-compatible does not.",
+          "reviewHref": "#administration-interactions"
+        }
+      ],
+      "newQuestions": [],
+      "changedBody": [
+        {
+          "lesson": "administration-interactions",
+          "heading": "Chelation lowers absorption",
+          "body": "Aluminum, magnesium, calcium, iron, zinc, and cation-containing products such as sucralfate can chelate oral fluoroquinolones and reduce absorption. Review antacids, multivitamins, supplements, and mineral-containing feeds. Some phosphate binders also lower oral quinolone exposure; review their product instructions rather than assuming every binder has the same mechanism or separation interval."
+        },
+        {
+          "lesson": "administration-interactions",
+          "heading": "Tube delivery changes the problem",
+          "body": "Verify tube location, formula composition, continuous or bolus feeding, product compatibility, crushing or suspension instructions, feed separation, and flushing. Mineral-containing feeds can reduce fluoroquinolone absorption. Ciprofloxacin's oil-based oral suspension adheres to tubing. For an appropriate immediate-release ciprofloxacin tablet, confirm the preparation instructions for crushing and mixing with water and for water flushing before and after administration. Coordinate the medication and feeding schedule rather than assuming every liquid or crushing method is suitable."
+        }
+      ],
+      "retainedBodies": [
+        {
+          "lesson": "administration-interactions",
+          "heading": "Spacing is product specific",
+          "body": "A class mechanism does not create one universal timing rule. Follow the current label for the exact fluoroquinolone and interacting product. Reschedule rather than doubling the antibiotic to compensate."
+        }
+      ],
+      "preservation": {
+        "all136IdsPromptsKeysCorrectAnswerTextsAnchors": true,
+        "130OtherBankObjectsUnchanged": true,
+        "47OtherBodiesUnchanged": true,
+        "allTenEmbeddedChecksAndAllMetadataUnchanged": true,
+        "fourCumulativeObjectsUnchangedOneChoiceRationaleSynchronized": true
+      },
+      "contentHashes": {
+        "src/data/questionBanks/fluoroquinolonePharmacology.js": "0570333b41e8a5ce6655a15d08164b82c531d4135eac09ec1e32c2bade08ca9e",
+        "src/data/modules/fluoroquinolonePharmacology.js": "e323bd7d62d77774487640b05045ed6174ef0a7c342e929578b14032be976023"
+      },
+      "calculationEvidence": {
+        "newDistinctAssessmentChecks": 0,
+        "runningAssessmentChecks": 674,
+        "runningSeparateSourceExamples": 98
+      }
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "renderedBodies": 49,
+          "newOrRevisedBodies": 2,
+          "retainedBody": 1,
+          "bankItemsCorrectAndWrong": 6,
+          "currentCumulativeRuntimeItems": 5,
+          "clinicalCumulativeItemsSourceVerifiedInThisUnit": [
+            "fluoroquinolone-pharmacology-035"
+          ],
+          "otherFourCumulativeClinicalClaimsNotVerifiedInThisUnit": true,
+          "remediationAndProgress": true
+        },
+        {
+          "width": 390,
+          "renderedBodies": 49,
+          "newOrRevisedBodies": 2,
+          "retainedBody": 1,
+          "bankItemsCorrectAndWrong": 6,
+          "currentCumulativeRuntimeItems": 5,
+          "clinicalCumulativeItemsSourceVerifiedInThisUnit": [
+            "fluoroquinolone-pharmacology-035"
+          ],
+          "otherFourCumulativeClinicalClaimsNotVerifiedInThisUnit": true,
+          "remediationAndProgress": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "manualVisual": {
+      "sourcePageImages": 4,
+      "scopedWrongFeedbackImages": 12,
+      "teachingImages": 6,
+      "nativePixelSheets": 6,
+      "findings": "All six stems, four-choice sets, correction states and explanations plus three linked teaching bodies read at1440/390. No clipping or overlap.320px overflow and49-body DOM equality passed. Correct and wrong attempts passed on both module/cumulative routes."
+    },
+    "interpretation": "Runtime/structural checks do not establish clinical accuracy of unreviewed parent content or four other cumulative items."
+  },
+  "preservation": {
+    "all136IdsPromptsKeysCorrectAnswerTextsAnchors": true,
+    "130OtherBankObjectsUnchanged": true,
+    "47OtherBodiesUnchanged": true,
+    "allTenEmbeddedChecksAndAllMetadataUnchanged": true,
+    "fourCumulativeObjectsUnchangedOneChoiceRationaleSynchronized": true
+  },
+  "calculationEvidence": {
+    "newDistinctAssessmentChecks": 0,
+    "runningAssessmentChecks": 674,
+    "runningSeparateSourceExamples": 98
+  },
+  "cumulativeReview": [
+    {
+      "question": {
+        "id": "cumulative-fluoroquinolone-pharmacology-fluoroquinolone-pharmacology-001",
+        "lesson": "target-structure",
+        "question": "Which principle best characterizes quinolone pharmacophore?",
+        "choices": [
+          "The 4-quinolone-3-carboxylate core coordinates the bacterial type II topoisomerase DNA cleavage complex",
+          "A susceptible result predicts likely efficacy only with the associated organism, site, and recommended exposure",
+          "Enteral nutrition and mineral content can reduce oral fluoroquinolone exposure, while some suspensions create tube-specific handling problems",
+          "Fluoroquinolones can exacerbate muscle weakness in myasthenia gravis and are generally avoided in known disease"
+        ],
+        "answer": 0,
+        "rationale": "A common pharmacophore creates a class mechanism, while substitutions create meaningful agent differences",
+        "reviewHref": "/learn/pharmacy/modules/fluoroquinolone-pharmacology",
+        "module": "Fluoroquinolone Pharmacology"
+      },
+      "status": "runtime checked unchanged; clinical question not verified in this scoped unit"
+    },
+    {
+      "question": {
+        "id": "cumulative-fluoroquinolone-pharmacology-fluoroquinolone-pharmacology-035",
+        "lesson": "disposition-dosing",
+        "question": "Which assessment is most appropriate for oral absorption?",
+        "choices": [
+          "Assess oral intake, vomiting, feeding tubes, cations, multivitamins, antacids, sucralfate, product instructions, and adherence",
+          "Check the prescribed dose and renal adjustment, and assume tube administration will provide the expected exposure",
+          "Confirm feeds meet calorie goals, and omit their mineral content from the antibiotic review",
+          "Assess vomiting and adherence, but ignore antacids and mineral supplements when oral intake is adequate"
+        ],
+        "answer": 0,
+        "rationale": "Oral exposure can fall when fluoroquinolones interact with cations in feeds, antacids, supplements, multivitamins, or sucralfate. Review these alongside gastrointestinal function, formulation, product instructions, and actual administration. A correct dose or adequate calorie delivery does not establish reliable absorption.",
+        "reviewHref": "/learn/pharmacy/modules/fluoroquinolone-pharmacology",
+        "module": "Fluoroquinolone Pharmacology"
+      },
+      "status": "source-verified synchronized question035"
+    },
+    {
+      "question": {
+        "id": "cumulative-fluoroquinolone-pharmacology-fluoroquinolone-pharmacology-069",
+        "lesson": "tendon-neurologic",
+        "question": "Which principle best characterizes peripheral neuropathy?",
+        "choices": [
+          "Peripheral neuropathy can begin rapidly and may be disabling or irreversible",
+          "Stepwise mutations in gyrA, gyrB, parC, or parE can reduce target binding and raise the MIC",
+          "Fluoroquinolone monitoring should be selected and timed from the patient's risk factors rather than ordered as one universal laboratory panel",
+          "Ciprofloxacin emphasizes gram-negative activity and can cover susceptible Pseudomonas but is not the preferred respiratory pneumococcal fluoroquinolone"
+        ],
+        "answer": 0,
+        "rationale": "Early recognition matters because persistence can continue after drug withdrawal",
+        "reviewHref": "/learn/pharmacy/modules/fluoroquinolone-pharmacology",
+        "module": "Fluoroquinolone Pharmacology"
+      },
+      "status": "runtime checked unchanged; clinical question not verified in this scoped unit"
+    },
+    {
+      "question": {
+        "id": "cumulative-fluoroquinolone-pharmacology-fluoroquinolone-pharmacology-102",
+        "lesson": "resistance-stewardship",
+        "question": "Which clinical action best applies to efflux permeability and qnr?",
+        "choices": [
+          "Interpret borderline susceptibility and treatment response with the full resistance context",
+          "At the review point, confirm the diagnosis and site, interpret microbiology, compare narrower active options, recalculate exposure, and document the revised endpoint",
+          "Avoid selecting it for a urinary tract infection and use its label, site exposure, and safety profile for other decisions",
+          "Reassess the whole patient before switching route, not just the tablet's bioavailability"
+        ],
+        "answer": 0,
+        "rationale": "Resistance is multilayered and can precede a high-level phenotype",
+        "reviewHref": "/learn/pharmacy/modules/fluoroquinolone-pharmacology",
+        "module": "Fluoroquinolone Pharmacology"
+      },
+      "status": "runtime checked unchanged; clinical question not verified in this scoped unit"
+    },
+    {
+      "question": {
+        "id": "cumulative-fluoroquinolone-pharmacology-fluoroquinolone-pharmacology-136",
+        "lesson": "metabolic-cardiovascular",
+        "question": "A patient taking insulin becomes confused and diaphoretic after starting levofloxacin. What should happen first?",
+        "choices": [
+          "Check and treat glucose urgently while evaluating the antibiotic as a contributor",
+          "Assume this is bacterial resistance",
+          "Give the next dose early",
+          "Stop glucose monitoring"
+        ],
+        "answer": 0,
+        "rationale": "Severe hypoglycemia can occur and may progress rapidly. Immediate glucose assessment and treatment take priority.",
+        "reviewHref": "/learn/pharmacy/modules/fluoroquinolone-pharmacology",
+        "module": "Fluoroquinolone Pharmacology"
+      },
+      "status": "runtime checked unchanged; clinical question not verified in this scoped unit"
+    }
+  ],
+  "coverage": {
+    "moduleBank": 136,
+    "verifiedBankInThisUnit": 6,
+    "verifiedBankIds": [
+      "fluoroquinolone-pharmacology-035",
+      "fluoroquinolone-pharmacology-051",
+      "fluoroquinolone-pharmacology-053",
+      "fluoroquinolone-pharmacology-054",
+      "fluoroquinolone-pharmacology-055",
+      "fluoroquinolone-pharmacology-056"
+    ],
+    "moduleBodies": 49,
+    "verifiedBodiesInThisUnit": 3,
+    "changedBodies": 2,
+    "retainedBodies": 1,
+    "currentCumulativeItems": 5,
+    "sourceVerifiedCumulativeInThisUnit": 1,
+    "wholeParentModuleVerified": false,
+    "ENBankSourceVerified": 66,
+    "ENBankTotal": 108,
+    "ENBodiesSourceVerified": 16,
+    "ENBodiesTotal": 36,
+    "ENEmbeddedChecksSourceVerified": 2,
+    "ENEmbeddedChecksTotal": 6,
+    "ENFiguresPending": 6,
+    "ENCurrentCumulativeSourceVerified": 4,
+    "ENCurrentCumulativeTotal": 5
+  },
+  "wholeModuleVerified": false,
+  "wholeChapterVerified": false,
+  "outsideENSourceApproval": "Pending human response; no outside EN sources opened.",
+  "nextAction": "Continue book-specific broader feeding review in clinical-drug-interactions (035,045-048) and tetracycline-pharmacology (inspect all four feeding-concept rows and cation assessments), then reconcile dirty working-only warfarin item with its committed parent. Nine fluoroquinolone distractor-only feeding clauses are book-supported but their full nonfeeding question/topic audits remain pending for Chapter22. Complete the exact42 EN bank items,20 bodies,four checks,six figures and metadata recorded in enteral-nutrition-book-safety-coverage-review.json. EN outside-source request remains unanswered; use only the supplied book unless the human approves. Then pediatricPN/fluid/calcium dependencies; Chapter1entry15 and Chapter11 remain reviewing.",
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "contentCommit": "pending",
+    "remoteHashVerified": false,
+    "receipt": "sequential-release-en-broader-fluoroquinolone-2026-10-01.json",
+    "production": "not verified",
+    "mainMerge": "not performed"
+  }
+}
