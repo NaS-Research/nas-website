@@ -1,0 +1,739 @@
+{
+  "slug": "nitrofurantoin",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "An oral urinary antibacterial with formulation-specific indications and schedules. This profile covers current selected U.S. Macrobid 100 mg, Amneal macrocrystal 50/100 mg capsules and Somerset 25 mg/5 mL suspension, with separate primary guideline context.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Macrobid · Almatica full U.S. prescribing information",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical PI revised February 2025; SPL v26 effective October 14, 2025; API publication November 17, 2025. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8f270a9f-12a1-44d4-bc7e-873613555801"
+    },
+    {
+      "id": "macro",
+      "title": "Nitrofurantoin macrocrystals · Amneal full prescribing information",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical footer Rev. 03-2026-01; SPL v15 effective April 14, 2026; API publication April 29, 2026. Selected 50/100 mg products. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=341c75ac-fba5-480d-a221-868c4195cb6f"
+    },
+    {
+      "id": "susp",
+      "title": "Nitrofurantoin oral suspension · Somerset full prescribing information",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical PI revised August 2025; SPL v3 effective January 22, 2026; API publication February 6, 2026. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dd99ba40-edff-47c3-9ee4-7e5b7774e5b5"
+    },
+    {
+      "id": "ags",
+      "title": "2023 AGS Beers Criteria · primary expert-panel manuscript",
+      "publisher": "American Geriatrics Society / Journal of the American Geriatrics Society",
+      "note": "Published May 4, 2023; author manuscript publicly available September 30, 2025. Tables 2/6 and scope read October 1, 2026. Professional older-adult criteria, not a U.S. label amendment.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12478568/"
+    },
+    {
+      "id": "idsa",
+      "title": "IDSA 2026 AMR treatment guidance · current primary guidance",
+      "publisher": "Infectious Diseases Society of America",
+      "note": "Current 2026 guidance, Question 1.1 and adult Table 1 read October 1, 2026. Applies to specified resistant organisms/syndromes; table assumes normal renal/hepatic function. Separate from U.S. product labeling.",
+      "url": "https://www.idsociety.org/practice-guideline/amr-guidance/"
+    }
+  ],
+  "sourceEvidence": {
+    "label": {
+      "splVersion": "26",
+      "effectiveTime": "20251014",
+      "apiPublishedDate": "Nov 17, 2025",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/8f270a9f-12a1-44d4-bc7e-873613555801.xml",
+      "localEvidence": "/tmp/nas-drug-sources/macrobid.xml",
+      "sha256": "3e56f44c7624fd6bee40438f5710282b6402bb411c6e182edf3453fcf4fb51d3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8f270a9f-12a1-44d4-bc7e-873613555801",
+      "revision": "Clinical PI revised February 2025; SPL v26 effective October 14, 2025; API publication November 17, 2025. Checked October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "Full public supporting primary sections read; no paywall access"
+    },
+    "macro": {
+      "splVersion": "15",
+      "effectiveTime": "20260414",
+      "apiPublishedDate": "Apr 29, 2026",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/341c75ac-fba5-480d-a221-868c4195cb6f.xml",
+      "localEvidence": "/tmp/nas-drug-sources/nitro-amneal.xml",
+      "sha256": "f81c5d8576b0b7bd1ee83f46b8b77dd12be731df6806ff9a7d8ee8e18502ca14",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=341c75ac-fba5-480d-a221-868c4195cb6f",
+      "revision": "Clinical footer Rev. 03-2026-01; SPL v15 effective April 14, 2026; API publication April 29, 2026. Selected 50/100 mg products. Checked October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "Full public supporting primary sections read; no paywall access"
+    },
+    "susp": {
+      "splVersion": "3",
+      "effectiveTime": "20260122",
+      "apiPublishedDate": "Feb 06, 2026",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/dd99ba40-edff-47c3-9ee4-7e5b7774e5b5.xml",
+      "localEvidence": "/tmp/nas-drug-sources/nitro-susp.xml",
+      "sha256": "0254e12cd38af30a7b1c76e84a10bc17bc2acee20b4b6f589f39faf9737dba78",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dd99ba40-edff-47c3-9ee4-7e5b7774e5b5",
+      "revision": "Clinical PI revised August 2025; SPL v3 effective January 22, 2026; API publication February 6, 2026. Checked October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "Full public supporting primary sections read; no paywall access"
+    },
+    "ags": {
+      "localEvidence": "/tmp/nas-drug-sources/beers-2023.html",
+      "sha256": "cd0fbfbaf5226f00956fb034ba5b9f710b40f34449418fe572da0f0613373b2f",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12478568/",
+      "revision": "Published May 4, 2023; author manuscript publicly available September 30, 2025. Tables 2/6 and scope read October 1, 2026. Professional older-adult criteria, not a U.S. label amendment.",
+      "checked": "2026-10-01",
+      "access": "Full public supporting primary sections read; no paywall access"
+    },
+    "idsa": {
+      "localEvidence": "/tmp/nas-drug-sources/idsa-amr-2026.html",
+      "sha256": "fcf1385b893ca300c4b38ca4d4869dcfcb0d636da4b3a5301f3ef27f54f484f1",
+      "additionalEvidence": {
+        "url": "https://www.idsociety.org/globalassets/idsa/practice-guidelines/amr-guidance/5.0/table-1.pdf",
+        "localEvidence": "/tmp/nas-drug-sources/idsa-amr-2026-table1.pdf",
+        "sha256": "64348f3836eddf90d5d00b4a99db628375e2f7823b2f20d485ad20ca7e488fac",
+        "read": "Table 1 pages 1/3/4: adult normal-organ-function scope and nitrofurantoin formulation rows"
+      },
+      "url": "https://www.idsociety.org/practice-guideline/amr-guidance/",
+      "revision": "Current 2026 guidance, Question 1.1 and adult Table 1 read October 1, 2026. Applies to specified resistant organisms/syndromes; table assumes normal renal/hepatic function. Separate from U.S. product labeling.",
+      "checked": "2026-10-01",
+      "access": "Full public supporting primary sections read; no paywall access"
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Selected U.S. indications",
+      "sourceIds": [
+        "label",
+        "macro",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Indications and Usage"
+        ],
+        "macro": [
+          "Indications and Usage / Microbiology"
+        ],
+        "susp": [
+          "1;12.4"
+        ]
+      },
+      "claims": [
+        "Macrobid is indicated only for acute uncomplicated cystitis caused by susceptible E. coli or S. saprophyticus. Selected macrocrystal capsules and suspension label UTIs caused by susceptible E. coli, enterococci, S. aureus and certain Klebsiella/Enterobacter strains; suspension includes adults and children from 1 month. None is indicated for pyelonephritis or perinephric abscess. Use susceptibility/local resistance information; an in-vitro organism list does not establish every clinical indication."
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Primary guideline context",
+      "sourceIds": [
+        "idsa"
+      ],
+      "sourceSectionsById": {
+        "idsa": [
+          "Question 1.1"
+        ]
+      },
+      "claims": [
+        "The 2026 IDSA AMR guidance includes nitrofurantoin among preferred options for susceptible ESBL-producing Enterobacterales uncomplicated UTI. This is a specific resistant-organism/lower-tract context, not a universal first-line recommendation, bloodstream-infection regimen or replacement for product age/renal restrictions."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Selected labeled regimens",
+      "sourceIds": [
+        "label",
+        "macro",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Dosage and Administration;Pediatric Use"
+        ],
+        "macro": [
+          "Dosage and Administration / Adults / Pediatric Patients"
+        ],
+        "susp": [
+          "2.1–2.2;16"
+        ]
+      },
+      "claims": [
+        [
+          "Macrobid · adults and children over 12 years",
+          "100 mg orally every 12 hours for 7 days, with food."
+        ],
+        [
+          "Selected macrocrystals · adults",
+          "50–100 mg orally 4 times daily with food; label recommends lower end for uncomplicated UTI."
+        ],
+        [
+          "Selected suspension · adults",
+          "50–100 mg orally 4 times daily with food = 10–20 mL per dose at 5 mg/mL."
+        ],
+        [
+          "Macrocrystals/suspension · children ≥1 month",
+          "5–7 mg/kg per 24 hours, divided into 4 doses; individualize and use an appropriate measurable formulation. This is not 5–7 mg/kg per dose."
+        ],
+        [
+          "Macrocrystal labeled treatment duration",
+          "1 week or at least 3 days after urine becomes sterile; persistent infection requires reevaluation. Selected suspension pediatric section supplies the same duration."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Suppression and professional-guideline limits",
+      "sourceIds": [
+        "macro",
+        "susp",
+        "ags",
+        "idsa",
+        "label"
+      ],
+      "sourceSectionsById": {
+        "macro": [
+          "Dosage and Administration / Adults / Pediatric Patients"
+        ],
+        "susp": [
+          "2.1–2.2;16"
+        ],
+        "ags": [
+          "Table 2; scope age≥65"
+        ],
+        "idsa": [
+          "Question 1.1; Table 1 p3"
+        ],
+        "label": [
+          "Dosage and Administration;Pediatric Use"
+        ]
+      },
+      "claims": [
+        "Macrocrystal and suspension adult labels describe 50–100 mg at bedtime for long-term suppression after weighing risks. The macrocrystal label describes pediatric suppression as low as 1 mg/kg per 24 hours in 1 or 2 doses; this is not a routine acute-UTI regimen or an inferred suspension pediatric suppression instruction. AGS criteria advise avoiding long-term suppression in older adults because of toxicity. IDSA 2026 adult Table 1 lists Macrobid 100 mg every 12 hours or suspension 50 mg every 6 hours for its specified AMR context with normal renal/hepatic function. Its discussion cites 5-day nitrofurantoin trials; the selected Macrobid label still specifies 7 days. The prescriber determines the indication-specific course; no blanket 5-day substitution is provided."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Age boundary and liquid measurement",
+      "sourceIds": [
+        "label",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Dosage and Administration;Pediatric Use"
+        ],
+        "susp": [
+          "2.1–2.2;16"
+        ]
+      },
+      "claims": [
+        "Macrobid’s dose section says over 12 years while its pediatric section says below 12 is unestablished; verify exact-product use at age 12 instead of inferring a regimen. Suspension is 25 mg/5 mL (5 mg/mL): shake vigorously and use an oral syringe. For the labeled pediatric daily mg/kg dose, divide by 4 to obtain each mg dose, then divide by 5 mg/mL for mL. A pharmacist must select and round the measurable dose. The selected printed weight-bucket table has a ≤4 kg row without a lower-weight bound; it is not copied as a universally safe infant volume chart."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "label",
+        "macro",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Contraindications;Warnings;Adverse Reactions;Overdosage"
+        ],
+        "macro": [
+          "Contraindications;Warnings pulmonary/hepatic/neuropathy/hemolysis/CDAD;Adverse reactions;Overdosage"
+        ],
+        "susp": [
+          "4;5.1–5.7;6;10"
+        ]
+      },
+      "claims": [
+        "Acute, subacute or chronic lung reactions can occur and have contributed to deaths. Stop treatment and assess suspected reaction. Chronic pneumonitis/fibrosis often develops during prolonged therapy, commonly ≥6 months; acute reactions may arise within the first week. Risk is not limited to long courses.",
+        "Hepatitis, cholestatic jaundice, chronic active hepatitis and hepatic necrosis can be fatal. Monitor biochemical evidence of liver injury periodically as appropriate; discontinue immediately for hepatitis.",
+        "Peripheral neuropathy can be irreversible or fatal. Renal impairment, anemia, diabetes, electrolyte imbalance, vitamin B deficiency and debilitating illness increase risk; periodically monitor renal function during long-term use.",
+        "Hemolysis is associated with G6PD deficiency; stop immediately if hemolytic anemia occurs. Term-pregnancy and neonatal restrictions protect against hemolysis from immature erythrocyte systems.",
+        "Severe allergy requires discontinuation and urgent care. C. difficile diarrhea may be serious and can appear more than 2 months after antibiotics. Persistent/recurrent symptomatic bacteriuria requires reevaluation and sometimes an agent with broader tissue distribution."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "label",
+        "macro",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Contraindications;Warnings;Adverse Reactions;Overdosage"
+        ],
+        "macro": [
+          "Contraindications;Warnings pulmonary/hepatic/neuropathy/hemolysis/CDAD;Adverse reactions;Overdosage"
+        ],
+        "susp": [
+          "4;5.1–5.7;6;10"
+        ]
+      },
+      "claims": [
+        "Selected U.S. labels contraindicate anuria, oliguria or significant renal impairment, explicitly including CrCl under 60 mL/min or clinically significant elevated serum creatinine; prior nitrofurantoin-related cholestatic jaundice/hepatic dysfunction; and hypersensitivity. Also contraindicated: pregnancy at term (38–42 weeks), labor/delivery or imminent labor, and infants under 1 month. The professional older-adult renal threshold is discussed separately; it does not silently change this labeled threshold."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "sourceIds": [
+        "label",
+        "macro",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Contraindications;Warnings;Adverse Reactions;Overdosage"
+        ],
+        "macro": [
+          "Contraindications;Warnings pulmonary/hepatic/neuropathy/hemolysis/CDAD;Adverse reactions;Overdosage"
+        ],
+        "susp": [
+          "4;5.1–5.7;6;10"
+        ]
+      },
+      "claims": [
+        "These selected labels have no boxed warning. Capitalized pulmonary warnings do not create a boxed warning; serious lung, liver, neuropathy, hemolysis and allergy risks still require action."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "sourceIds": [
+        "label",
+        "macro",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Contraindications;Warnings;Adverse Reactions;Overdosage"
+        ],
+        "macro": [
+          "Contraindications;Warnings pulmonary/hepatic/neuropathy/hemolysis/CDAD;Adverse reactions;Overdosage"
+        ],
+        "susp": [
+          "4;5.1–5.7;6;10"
+        ]
+      },
+      "claims": [
+        "Common effects include nausea, vomiting or appetite loss; Macrobid trials also reported headache and flatulence. Serious reports include pulmonary/liver injury, neuropathy, blood-count abnormalities, hemolysis, severe skin reactions and allergy; voluntary reports cannot establish a reliable incidence. Overdose often produces vomiting; no specific antidote is described and nitrofurantoin is dialyzable. Obtain immediate medical/Poison Help advice and individualized supportive care. Legacy label emesis instructions are not provided as home treatment; fluid decisions require assessment of renal/cardiac status."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Magnesium trisilicate and uricosurics",
+      "sourceIds": [
+        "label",
+        "macro",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Precautions Drug interactions / Laboratory tests;Clinical pharmacology quinolone interactions"
+        ],
+        "macro": [
+          "Drug Interactions;Drug/Laboratory Test Interactions;Microbiology interactions"
+        ],
+        "susp": [
+          "7.1–7.3;12.3 interactions;12.4"
+        ]
+      },
+      "claims": [
+        "Magnesium-trisilicate antacids reduce absorption. Capsule counseling advises avoiding them; suspension labeling advises monitoring effectiveness if coadministration cannot be avoided. Probenecid or sulfinpyrazone can reduce tubular secretion, increasing serum toxicity while lowering urinary antibacterial exposure; review alternatives or monitor response/adverse effects with the prescriber."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Laboratory and experimental interactions",
+      "sourceIds": [
+        "label",
+        "macro",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Precautions Drug interactions / Laboratory tests;Clinical pharmacology quinolone interactions"
+        ],
+        "macro": [
+          "Drug Interactions;Drug/Laboratory Test Interactions;Microbiology interactions"
+        ],
+        "susp": [
+          "7.1–7.3;12.3 interactions;12.4"
+        ]
+      },
+      "claims": [
+        "Copper-reduction urine-glucose tests such as Benedict/Fehling can be falsely positive; enzymatic glucose testing is not affected in the cited labels. Nitrofurantoin/quinolone antagonism was demonstrated in vitro, with unknown clinical significance, so no blanket clinical combination contraindication is inferred. Suspension PK studies found altered excretion with propantheline, but clinical significance was unknown and no dose-adjustment formula is supplied."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal, hepatic and older adults",
+      "sourceIds": [
+        "label",
+        "macro",
+        "susp",
+        "ags"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Contraindications;Pregnancy;Nursing/Pediatric/Geriatric;Carcinogenesis/Fertility"
+        ],
+        "macro": [
+          "Contraindications;Pregnancy;Nursing/Pediatric/Geriatric;Carcinogenesis/Fertility"
+        ],
+        "susp": [
+          "4;8.1–8.4;12.3"
+        ],
+        "ags": [
+          "Tables 2/6;Intent of Criteria age≥65"
+        ]
+      },
+      "claims": [
+        "All selected U.S. labels retain the CrCl <60 mL/min renal contraindication. Separately, 2023 AGS criteria for adults ≥65 advise avoiding nitrofurantoin below CrCl 30 mL/min and for long-term suppression. These sources differ; prescribing in the 30–<60 range requires clinician review of the exact label and applicable guidance rather than an automatic dose reduction. No hepatic adjustment formula is established; previous nitrofurantoin-related hepatic dysfunction is contraindicated and liver toxicity needs monitoring. Older adults need attention to renal function and long-term lung/liver toxicity."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and breastfeeding",
+      "sourceIds": [
+        "label",
+        "macro",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Contraindications;Pregnancy;Nursing/Pediatric/Geriatric;Carcinogenesis/Fertility"
+        ],
+        "macro": [
+          "Contraindications;Pregnancy;Nursing/Pediatric/Geriatric;Carcinogenesis/Fertility"
+        ],
+        "susp": [
+          "4;8.1–8.4;12.3"
+        ]
+      },
+      "claims": [
+        "Term pregnancy at 38–42 weeks, labor/delivery or imminent labor is contraindicated. Earlier pregnancy requires individualized assessment: the current suspension label describes inconsistent observational findings that cannot establish absence or presence of birth-defect risk. Nitrofurantoin enters milk. The current suspension label does not recommend breastfeeding an infant under 1 month or with G6PD deficiency at any age. For an infant older than 1 month with normal G6PD, weigh maternal need/feeding benefits and monitor vomiting, diarrhea and rash; capsule labels also emphasize the under-1-month risk."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pediatrics and reproductive data",
+      "sourceIds": [
+        "label",
+        "macro",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Contraindications;Pregnancy;Nursing/Pediatric/Geriatric;Carcinogenesis/Fertility"
+        ],
+        "macro": [
+          "Contraindications;Pregnancy;Nursing/Pediatric/Geriatric;Carcinogenesis/Fertility"
+        ],
+        "susp": [
+          "4;8.1–8.4;12.3"
+        ]
+      },
+      "claims": [
+        "Macrocrystal/suspension treatment has a labeled weight-based regimen from 1 month; neonates younger than this are contraindicated. Macrobid pediatric age wording has the dose-section boundary noted above. Capsule sizes are not a reason to invent a capsule-opening or homemade liquid procedure. Label studies describe reversible sperm-count suppression at high doses (≥10 mg/kg/day in some human observations); they do not establish infertility at every standard therapeutic dose."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and microbiology",
+      "sourceIds": [
+        "label",
+        "macro",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Clinical Pharmacology;Microbiology"
+        ],
+        "macro": [
+          "Clinical Pharmacology;Microbiology"
+        ],
+        "susp": [
+          "12.1–12.4"
+        ]
+      },
+      "claims": [
+        "Bacterial flavoproteins reduce nitrofurantoin to intermediates that damage multiple macromolecular targets, disrupting protein synthesis, metabolism and nucleic-acid/cell-wall processes. Urinary concentrations are antibacterial. Susceptibility is organism/strain-dependent; in-vitro activity is not a guarantee of clinical efficacy or resistance absence."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Formulation-dependent pharmacokinetics",
+      "sourceIds": [
+        "label",
+        "macro",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Clinical Pharmacology;Microbiology"
+        ],
+        "macro": [
+          "Clinical Pharmacology;Microbiology"
+        ],
+        "susp": [
+          "12.1–12.4"
+        ]
+      },
+      "claims": [
+        [
+          "Macrobid release",
+          "25 mg macrocrystals plus 75 mg monohydrate; monohydrate forms a gel matrix releasing drug over time. Food increases bioavailability by approximately 40%."
+        ],
+        [
+          "Macrocrystals / suspension",
+          "Food improves exposure; macrocrystals absorb more slowly than the smaller-crystal form. Do not exchange every-12-hour and 4-times-daily schedules automatically."
+        ],
+        [
+          "Distribution / elimination",
+          "Routine blood concentrations are low and tissue distribution is limited. Drug is excreted in urine and may turn it brown; renal function influences urinary recovery."
+        ],
+        [
+          "Data limits",
+          "Published urinary recovery values differ by formulation/study. No universal half-life, recovery percentage or hepatic/pediatric PK adjustment is extrapolated."
+        ]
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "sourceIds": [
+        "label",
+        "macro",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Warnings;Indications;Information for Patients;Geriatric"
+        ],
+        "macro": [
+          "Warnings;Indications;Information for Patients;Geriatric"
+        ],
+        "susp": [
+          "1;4;5;7;8.2;17"
+        ]
+      },
+      "claims": [
+        "Confirm lower-tract bacterial indication, renal function/urine output, allergy, previous nitrofurantoin liver injury, pregnancy stage and infant/G6PD considerations. Review culture/susceptibility and symptoms; capsule labels call for before/after cultures, with persistence/reappearance requiring reevaluation. For ongoing therapy reassess benefit versus harm and monitor pulmonary status, liver biochemistry and renal function; no universal monthly testing schedule is invented. Watch for neuropathy, hemolysis and severe diarrhea."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling",
+      "sourceIds": [
+        "label",
+        "macro",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Warnings;Indications;Information for Patients;Geriatric"
+        ],
+        "macro": [
+          "Warnings;Indications;Information for Patients;Geriatric"
+        ],
+        "susp": [
+          "1;4;5;7;8.2;17"
+        ]
+      },
+      "claims": [
+        "Take with food and verify the exact formulation/schedule; complete the prescribed course without independently shortening or prolonging it. Shake suspension vigorously and measure with the supplied appropriate oral syringe. Brown urine can reflect the drug, but breathing difficulty/new cough, jaundice, numbness/weakness, allergic swelling or watery/bloody diarrhea need prompt assessment. Avoid magnesium-trisilicate antacids and disclose gout medicines. Fever/flank pain, worsening symptoms or recurrence needs reassessment for infection beyond simple cystitis."
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product · Macrobid 100 mg",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Description;How Supplied;SPL NDA/pack"
+        ]
+      },
+      "claims": [
+        [
+          "Ingredient / route",
+          "Nitrofurantoin 100 mg: 25 mg macrocrystals + 75 mg monohydrate · oral capsule."
+        ],
+        [
+          "Appearance / imprint",
+          "Opaque black/yellow capsule; banded Macrobid and 52427-285."
+        ],
+        [
+          "Labeler / example NDC",
+          "Almatica Pharma · 52427-285-01, bottle of 100."
+        ],
+        [
+          "U.S. status",
+          "Prescription NDA020064 product; no DEA schedule. Current source records do not prove local stock."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "label",
+        "macro",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Description;How Supplied;SPL NDA/pack"
+        ],
+        "macro": [
+          "Description;How Supplied;SPL pack"
+        ],
+        "susp": [
+          "3;11;16;SPL pack"
+        ]
+      },
+      "claims": [
+        [
+          "Macrobid",
+          "100 mg monohydrate/macrocrystal capsule with twice-daily labeled regimen."
+        ],
+        [
+          "Selected Amneal macrocrystals",
+          "50 mg pink/white (Zenith 50 mg / 2130); 100 mg pink (Zenith 100 mg / 2131), manufacturer-specific markings. Example NDCs 0115-1643-01 and 0115-1645-01, 100-count bottles."
+        ],
+        [
+          "Selected Somerset suspension",
+          "25 mg/5 mL = 5 mg/mL, yellow flavored oral suspension; NDC 70069-829-01, amber PET bottle of 230 mL."
+        ],
+        [
+          "Scope",
+          "Other manufacturers/strengths, including historical Macrodantin 25 mg records, need their own exact label/status check. No injectable formulation, automatic interchange or exhaustive present-stock claim is made."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "label",
+        "macro",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Description;How Supplied;SPL NDA/pack"
+        ],
+        "macro": [
+          "Description;How Supplied;SPL pack"
+        ],
+        "susp": [
+          "3;11;16;SPL pack"
+        ]
+      },
+      "claims": [
+        "Selected Macrobid: 15–30°C. Selected Amneal macrocrystals: 20–25°C, tight light-resistant container with child-resistant closure. Selected suspension: 20–25°C (excursions 15–30°C), protect from strong light and freezing, shake vigorously, dispense in tight light-resistant PET/glass. Its label says use within 30 days without defining the clock here; have the dispensing pharmacist specify the start/discard date. Keep all medicines away from children."
+      ]
+    },
+    {
+      "section": "hero/essential",
+      "card": "Scope and essential safety",
+      "sourceIds": [
+        "label",
+        "macro",
+        "susp"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Indications and Usage",
+          "Contraindications;Warnings;Adverse Reactions;Overdosage",
+          "Description;How Supplied;SPL NDA/pack"
+        ],
+        "macro": [
+          "Indications and Usage / Microbiology",
+          "Contraindications;Warnings pulmonary/hepatic/neuropathy/hemolysis/CDAD;Adverse reactions;Overdosage",
+          "Description;How Supplied;SPL pack"
+        ],
+        "susp": [
+          "1;12.4",
+          "4;5.1–5.7;6;10",
+          "3;11;16;SPL pack"
+        ]
+      },
+      "claims": [
+        "An oral urinary antibacterial with formulation-specific indications and schedules. This profile covers current selected U.S. Macrobid 100 mg, Amneal macrocrystal 50/100 mg capsules and Somerset 25 mg/5 mL suspension, with separate primary guideline context.",
+        "These products are not indicated for pyelonephritis or perinephric abscess. Confirm the formulation and renal suitability before prescribing. Stop and urgently assess suspected lung reaction, liver injury, neuropathy, hemolysis or severe allergy; term pregnancy and young-infant restrictions apply.",
+        [
+          "Therapeutic class",
+          "Nitrofuran urinary antibacterial"
+        ],
+        [
+          "Representative formulation",
+          "Macrobid 100 mg oral capsule · 25 mg macrocrystals + 75 mg monohydrate"
+        ],
+        [
+          "Schedule distinction",
+          "Macrobid every 12 hours · selected macrocrystals/suspension 4 times daily"
+        ]
+      ]
+    }
+  ],
+  "exclusions": [
+    "Unverified other manufacturers/strengths/routes, non-U.S. regimens, present-stock claims, independent emergency algorithms and unsupported universal disease-management guidance."
+  ],
+  "gaps": [
+    {
+      "material": false,
+      "topic": "Renal product-label versus professional criteria",
+      "finding": "All exact current selected U.S. labels retain CrCl<60 contraindication; 2023 AGS older-adult criteria use<30 and advise against long-term suppression.",
+      "resolution": "Both attributed separately; 30–<60 requires prescriber resolution; no silent label rewrite or renal-dose formula."
+    },
+    {
+      "material": false,
+      "topic": "Macrobid age exactly12",
+      "finding": "Dosing says over12; safety below12 unestablished.",
+      "resolution": "Exact boundary flagged, no inferred age12 regimen."
+    },
+    {
+      "material": false,
+      "topic": "Suspension pediatric printed weight buckets",
+      "finding": "2.2Table1 includes ≤4kg1mLqid without lower-weight bound, cannot guarantee5–7mg/kg/day for all infants in bucket; ≥40 overlaps preceding≤40 row.",
+      "resolution": "Use verified5–7mg/kg/24h in4doses and5mg/mL conversion with pharmacist measurement/rounding. Unsafe/unbounded table not copied."
+    },
+    {
+      "material": false,
+      "topic": "Suspension30day clock and historical brand product status",
+      "resolution": "Source16 saysUsewithin30days without clock definition; pharmacist suppliesstart/discarddate. HistoricalMacrodantinHTMLv24eff20260806 retainsPI06/2023 andSPLmarketingend10/31/2024; XMLAPI404. Notusedascurrentstock/primaryregimen source; currentAmneal50/100selected instead.25mgbrandrecordexcludedfromactionabledosing/productavailability."
+    },
+    {
+      "material": false,
+      "topic": "Course length professional context",
+      "resolution": "Macrobidlabel7days retained;IDSA2026Q1.1discusses5daytrial evidence,notuniversal5dayinstruction.Table1 adultnormalorganfunctionMacrobid100q12/susp50q6contextexplicit.2011IDSAuUTIpagecurrentlyARCHIVEDINDEVELOPMENT,notpresentedascurrentuniversalstandard."
+    },
+    {
+      "material": false,
+      "topic": "Suspension chronic pulmonary ADR wording",
+      "finding": "Selectedsusp6saysfeverisprominent;capsuleADRstatesfeverrarelyprominent.",
+      "resolution": "Conflictingfevercharacterizationexcluded;allsourceconsistentseriouslungtoxicitysymptomsandstop/monitorinstructionsretained."
+    }
+  ],
+  "materialErrors": [],
+  "validation": {
+    "schema": "Passed validateMonograph: 0 errors; exact eight sections, four Safety cards, three Product cards and three hero tuples.",
+    "renderedPage": "Pending parent integration QA"
+  },
+  "monographSha256": "806e45ca9f4582e4f176173f1eecaa450df923bf40a3a92d5f1270df3be28a10",
+  "sourceInterpretationNotes": [
+    "Clinical PI revision is distinguished from SPL effectiveTime/API publication. Product status is limited to exact source; no pharmacy availability inference.",
+    "Selected legacy overdose label decontamination/emesis directions are not reproduced as a home-care protocol; urgent professional assessment is emphasized."
+  ]
+}

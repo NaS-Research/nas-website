@@ -129,6 +129,16 @@ import { glimepiride } from "./glimepiride.js";
 import { chlorthalidone } from "./chlorthalidone.js";
 import { oxybutynin } from "./oxybutynin.js";
 import { pioglitazone } from "./pioglitazone.js";
+import { ketoconazole } from "./ketoconazole.js";
+import { irbesartan } from "./irbesartan.js";
+import { hydroxychloroquine } from "./hydroxychloroquine.js";
+import { sulfamethoxazoleTrimethoprim } from "./sulfamethoxazole-trimethoprim.js";
+import { benzonatate } from "./benzonatate.js";
+import { nitrofurantoin } from "./nitrofurantoin.js";
+import { isosorbide } from "./isosorbide.js";
+import { methylprednisolone } from "./methylprednisolone.js";
+import { hydrochlorothiazide_triamterene } from "./hydrochlorothiazide-triamterene.js";
+import { levocetirizine } from "./levocetirizine.js";
 
 export const reviewedDrugMonographs = {
   "atorvastatin": atorvastatin,
@@ -261,4 +271,14 @@ export const reviewedDrugMonographs = {
   "chlorthalidone": chlorthalidone,
   "oxybutynin": oxybutynin,
   "pioglitazone": pioglitazone,
+  "ketoconazole": ketoconazole,
+  "irbesartan": irbesartan,
+  "hydroxychloroquine": hydroxychloroquine,
+  "sulfamethoxazole-trimethoprim": sulfamethoxazoleTrimethoprim,
+  "benzonatate": benzonatate,
+  "nitrofurantoin": nitrofurantoin,
+  "isosorbide": isosorbide,
+  "methylprednisolone": methylprednisolone,
+  "hydrochlorothiazide-triamterene": hydrochlorothiazide_triamterene,
+  "levocetirizine": levocetirizine,
 };

@@ -1,0 +1,769 @@
+{
+  "drug": "isosorbide",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Cardiovascular catalog scope: complete current selected U.S. oral mononitrate IR/ER and dinitrate IR labels; official 2022 HF guideline slides 77–78 for distinct accepted hydralazine/dinitrate role.",
+  "sources": [
+    {
+      "id": "monoir",
+      "title": "ANI isosorbide mononitrate · 10/20 mg immediate-release tablets",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=06839534-85b8-42aa-b0e3-079ed236be44",
+      "note": "Full public manufacturer label and patient instructions; SPL version 1, effective 20260327. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "1",
+      "effective_date": "20260327",
+      "xml_sha256": "4ad06c57fe13599b207816636f3a4a880758d19c1b74b682391288fb9eb1d707",
+      "retrieved_xml": "/tmp/nas-drug-sources/monoir.xml",
+      "published_date": "Apr 01, 2026"
+    },
+    {
+      "id": "monoer",
+      "title": "Torrent isosorbide mononitrate · 30/60/120 mg extended-release tablets",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a1e317a-7b05-4d30-9bbc-1d4ccd56ba3c",
+      "note": "Full public manufacturer label and patient instructions; SPL version 13, effective 20260511. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "13",
+      "effective_date": "20260511",
+      "xml_sha256": "ab9166c60df3c8114938c2a9286379517c977d624fa8015602c5772c6da11116",
+      "retrieved_xml": "/tmp/nas-drug-sources/monoer.xml",
+      "published_date": "May 13, 2026"
+    },
+    {
+      "id": "dinitrate",
+      "title": "Par Health isosorbide dinitrate · 5/10/20/30 mg oral tablets",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6df6a2fa-c56c-4eb6-a485-c16585420eb0",
+      "note": "Full public manufacturer label and patient instructions; SPL version 18, effective 20260731. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "18",
+      "effective_date": "20260731",
+      "xml_sha256": "1d7b14289e175fe9c3c15ff7707499f0e1edad98ead34cf3942ec38cdafe31cd",
+      "retrieved_xml": "/tmp/nas-drug-sources/dinitrate.xml",
+      "published_date": "Aug 07, 2026"
+    },
+    {
+      "id": "dinitrate2",
+      "title": "Par Health isosorbide dinitrate · 40 mg oral tablets",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3d6164d7-3083-41c5-a6a6-7e144fe29f7d",
+      "note": "Full public manufacturer label and patient instructions; SPL version 14, effective 20260722. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "14",
+      "effective_date": "20260722",
+      "xml_sha256": "288eed23b691d32192f04f3342d927aca568ecf109c11d5723226395961cfb54",
+      "retrieved_xml": "/tmp/nas-drug-sources/dinitrate2.xml",
+      "published_date": "Aug 06, 2026"
+    },
+    {
+      "id": "hf2022",
+      "title": "2022 AHA/ACC/HFSA heart-failure guideline · Official slides",
+      "publisher": "American Heart Association / American College of Cardiology / Heart Failure Society of America",
+      "url": "https://professional.heart.org/en/science-news/-/media/832EA0F4E73948848612F228F7FA2D35.ashx",
+      "note": "Official public slides 77–78 read October 1, 2026 for hydralazine/isosorbide dinitrate role; full journal evidence tables not claimed accessed.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "retrieval_method": "official page/PDF read through web tool",
+      "version": "2022 AHA/ACC/HFSA guideline · official public slides",
+      "publication_date": "2022-04-01",
+      "reviewed_sections": [
+        "Slides 77–78 (PDF pages 76–77, zero-based): full hydralazine/isosorbide dinitrate recommendations"
+      ],
+      "access_evidence": "Official PDF successfully opened/read through web tool on October 1, 2026; independent curl download returned HTTP 403, so no local PDF/hash is claimed."
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Labeled indications by nitrate product",
+      "assertions": {
+        "paragraphs": [
+          "ANI mononitrate IR is labeled for prevention and treatment of coronary-artery-disease angina; Torrent mononitrate ER and selected Par dinitrate oral tablets for prevention of angina due to coronary disease. None of these oral products acts rapidly enough to abort an acute attack. The catalog’s unsuffixed name is interpreted within its cardiovascular classification; non-nitrate isosorbide and other nitrate routes/products are outside this scope."
+        ]
+      },
+      "source_sections": {
+        "monoir": [
+          "INDICATIONS AND USAGE"
+        ],
+        "monoer": [
+          "INDICATIONS AND USAGE"
+        ],
+        "dinitrate": [
+          "INDICATIONS AND USAGE"
+        ],
+        "dinitrate2": [
+          "INDICATIONS AND USAGE"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Accepted HFrEF combination role · Separate from nitrate monotherapy",
+      "assertions": {
+        "paragraphs": [
+          "The 2022 AHA/ACC/HFSA guideline recommends hydralazine plus isosorbide dinitrate for self-identified African American patients with NYHA III–IV HFrEF on optimal therapy. It may be considered for symptomatic HFrEF when ARNI/ACE inhibitor/ARB therapy cannot be used because of intolerance or renal insufficiency. This is a combination role, not approval of mononitrate or single-nitrate monotherapy for all HF. Fixed-dose BiDil and its complete titration regimen require their own reference."
+        ]
+      },
+      "source_sections": {
+        "hf2022": [
+          "Official slides 77–78: hydralazine and isosorbide dinitrate"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Clinical limitations",
+      "assertions": {
+        "paragraphs": [
+          "Selected single-ingredient labels do not establish benefit in acute MI or acute CHF and advise against their oral formulations in those rapidly changing settings because effects are difficult to terminate. This does not negate the separate guideline HFrEF combination role. Routine continuous nitrate exposure can cause tolerance; dose escalation does not reliably reverse it."
+        ]
+      },
+      "source_sections": {
+        "monoir": [
+          "WARNINGS",
+          "Pharmacodynamics"
+        ],
+        "monoer": [
+          "WARNINGS",
+          "Pharmacodynamics"
+        ],
+        "dinitrate": [
+          "WARNINGS",
+          "CLINICAL PHARMACOLOGY"
+        ],
+        "hf2022": [
+          "Official slides 77–78"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Adult oral doses · Selected product labels",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Selected product",
+            "Label regimen"
+          ],
+          "rows": [
+            [
+              "Mononitrate IR · ANI",
+              "20 mg twice daily, 7 hours apart. Small-stature patients may start 5 mg (half the selected scored 10 mg tablet), increasing to ≥ 10 mg by day 2–3. Doses above 20 mg twice daily are inadequately studied in this label."
+            ],
+            [
+              "Mononitrate ER · Torrent",
+              "30 mg or 60 mg once daily on arising; after several days may increase to 120 mg once daily. Rarely 240 mg may be required under the label."
+            ],
+            [
+              "Dinitrate oral IR · Par",
+              "Start 5–20 mg two or three times daily; maintenance 10–40 mg two or three times daily, individualized. Some need higher doses; no universal maximum is supplied here. Provide a daily dose-free interval ≥ 14 hours for the antianginal regimen."
+            ],
+            [
+              "Scope",
+              "Schedules above describe angina products, not a complete HFrEF hydralazine/dinitrate combination prescription."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "monoir": [
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "monoer": [
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "dinitrate": [
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "dinitrate2": [
+          "DOSAGE AND ADMINISTRATION"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Dose-free intervals and administration",
+      "assertions": {
+        "paragraphs": [
+          "Mononitrate IR: the two doses 7 hours apart leave a 17-hour dosing gap; some tolerance can still occur, and 24-hour protection is not promised. Dinitrate IR: preserve the prescribed ≥ 14-hour daily gap for this antianginal label regimen. Mononitrate ER: use once each morning; do not chew/crush, and swallow with half a glass of fluid. The selected 60 mg ER tablet may be halved for 30 mg; do not extrapolate splitting permission to the unscored 120 mg tablet or another manufacturer. Do not add extra doses to fill the low-exposure interval."
+        ]
+      },
+      "source_sections": {
+        "monoir": [
+          "Pharmacodynamics",
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "monoer": [
+          "DOSAGE AND ADMINISTRATION",
+          "HOW SUPPLIED"
+        ],
+        "dinitrate": [
+          "DOSAGE AND ADMINISTRATION"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Renal/hepatic and older-adult considerations",
+      "assertions": {
+        "paragraphs": [
+          "Mononitrate IR label says renal/hepatic or age-only adjustment is unnecessary on its PK evidence, but older-adult guidance still recommends cautious low-end selection. Mononitrate ER disposition is similar in studied renal failure/cirrhosis; no fixed eGFR reduction is provided. Dinitrate labels provide no validated fixed renal/hepatic algorithm. For every form, BP, volume depletion, interacting drugs and clinical response matter; do not infer automatic dose conversion or a dialysis replacement dose."
+        ]
+      },
+      "source_sections": {
+        "monoir": [
+          "Pharmacokinetics",
+          "DOSAGE AND ADMINISTRATION",
+          "Geriatric Use"
+        ],
+        "monoer": [
+          "Pharmacokinetics and Metabolism",
+          "Geriatric Use"
+        ],
+        "dinitrate": [
+          "Pharmacokinetics",
+          "Geriatric Use"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Treatment changes and missed doses",
+      "assertions": {
+        "paragraphs": [
+          "Follow the product-specific schedule and a clinician-directed plan for missed doses, worsening angina or headache intolerance. Selected labels give no universal missed-dose doubling rule. Do not abruptly change frequency or substitute another nitrate/release form; sustained clinical benefit depends on planned exposure and response monitoring. Use the prescribed acute chest-pain rescue/emergency plan rather than waiting for these oral tablets to act."
+        ]
+      },
+      "source_sections": {
+        "monoir": [
+          "Information for Patients",
+          "INDICATIONS AND USAGE"
+        ],
+        "monoer": [
+          "Information for Patients",
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "dinitrate": [
+          "Information for Patients",
+          "INDICATIONS AND USAGE"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Do not combine with sildenafil, tadalafil, vardenafil or other PDE5 inhibitors, including PAH use, or with riociguat. Severe hypotension, syncope or ischemia may occur; do not invent a universal safe separation time.",
+          "Even small doses can cause profound postural hypotension, especially with low BP or volume depletion. Paradoxical bradycardia and worse angina can accompany the BP fall.",
+          "Nitrates may worsen angina in hypertrophic cardiomyopathy. Older adults can have impaired baroreflexes and increased hypotension/falls risk.",
+          "Tolerance develops with continuous nitrate exposure; raising the dose does not reliably restore benefit. Maintain the planned low-exposure interval and reassess loss of angina control.",
+          "Headache is common and dose-related; do not change the schedule solely to eliminate it. Discuss a suitable analgesic and assess unusually severe/persistent symptoms.",
+          "Methemoglobinemia is rare but can impair oxygen delivery; unexplained cyanosis, breathlessness or severe toxicity needs emergency assessment. Acute oral nitrate overdose can cause collapse, seizures or coma."
+        ]
+      },
+      "source_sections": {
+        "monoir": [
+          "WARNINGS",
+          "General",
+          "ADVERSE REACTIONS",
+          "Hemodynamic Effects",
+          "Methemoglobinemia"
+        ],
+        "monoer": [
+          "WARNINGS",
+          "General",
+          "Geriatric Use",
+          "OVERDOSAGE"
+        ],
+        "dinitrate": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "ADVERSE REACTIONS",
+          "OVERDOSAGE"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Current ANI mononitrate IR and Par dinitrate labels prohibit PDE5 inhibitors and riociguat, and specify nitrate/product hypersensitivity. Torrent ER section lists hypersensitivity/idiosyncrasy to nitrates/nitrites and warns about sildenafil; this narrower historical section wording does not erase the nitrate-class combination prohibition verified by the current nitrate labels. Avoid the contraindicated combinations with every nitrate form."
+        ]
+      },
+      "source_sections": {
+        "monoir": [
+          "CONTRAINDICATIONS",
+          "Drug Interactions"
+        ],
+        "monoer": [
+          "CONTRAINDICATIONS",
+          "WARNINGS"
+        ],
+        "dinitrate": [
+          "CONTRAINDICATIONS"
+        ],
+        "dinitrate2": [
+          "CONTRAINDICATIONS"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "The selected current U.S. oral nitrate labels have no boxed warning. Severe hypotension, contraindicated interactions and form-specific dosing/tolerance restrictions remain important."
+        ]
+      },
+      "source_sections": {
+        "monoir": [
+          "Full labeling"
+        ],
+        "monoer": [
+          "Full labeling"
+        ],
+        "dinitrate": [
+          "Full labeling"
+        ],
+        "dinitrate2": [
+          "Full labeling"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "assertions": {
+        "paragraphs": [
+          "Headache and lightheadedness/dizziness are prominent; flushing, nausea and fatigue can occur. Severe hypotension, syncope, worsening angina and rare methemoglobinemia are reported; rates differ between formulations and many reports have uncertain frequency/causality. Suspected overdose needs emergency/Poison Help care (U.S. 1-800-222-1222), with supervised hemodynamic support and assessment for methemoglobinemia. Mononitrate can be dialyzed; dinitrate/metabolite dialysis utility is uncertain. These observations are not a home overdose regimen."
+        ]
+      },
+      "source_sections": {
+        "monoir": [
+          "ADVERSE REACTIONS",
+          "Hemodynamic Effects",
+          "Methemoglobinemia"
+        ],
+        "monoer": [
+          "ADVERSE REACTIONS",
+          "Hemodynamic Effects",
+          "Methemoglobinemia"
+        ],
+        "dinitrate": [
+          "ADVERSE REACTIONS",
+          "Hemodynamic Effects",
+          "Methemoglobinemia"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Combination / test",
+            "Action"
+          ],
+          "rows": [
+            [
+              "PDE5 inhibitors · ED or PAH",
+              "Contraindicated with nitrate therapy; severe BP fall/syncope/ischemia. Specialist emergency decisions require the exact companion-drug label and timing."
+            ],
+            [
+              "Riociguat",
+              "Contraindicated; additive cGMP-related hypotension."
+            ],
+            [
+              "Other vasodilators / antihypertensives",
+              "Assess BP/orthostatic symptoms and volume status; doses may need review."
+            ],
+            [
+              "Calcium-channel blockers",
+              "Symptomatic orthostatic hypotension reported with organic nitrates; reassess one or both doses if needed."
+            ],
+            [
+              "Alcohol",
+              "Additive vasodilation and postural lightheadedness; discuss avoidance/restriction."
+            ],
+            [
+              "Legacy serum cholesterol assay",
+              "ER label notes falsely low readings with the Zlatkis–Zak color reaction; inform the laboratory rather than interpreting it as lipid improvement."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "monoir": [
+          "CONTRAINDICATIONS",
+          "Drug Interactions"
+        ],
+        "monoer": [
+          "WARNINGS",
+          "Drug Interactions",
+          "Drug/Laboratory Test Interactions"
+        ],
+        "dinitrate": [
+          "CONTRAINDICATIONS",
+          "Drug Interactions"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Interaction timing and product changes",
+      "assertions": {
+        "paragraphs": [
+          "Never use a blanket nitrate/PDE5 washout rule across all drugs or assume changing from dinitrate to mononitrate removes risk. Review every companion medicine and the last dose time; emergency nitrate use after a PDE5 inhibitor requires clinician assessment, not self-treatment."
+        ]
+      },
+      "source_sections": {
+        "monoir": [
+          "CONTRAINDICATIONS"
+        ],
+        "dinitrate": [
+          "CONTRAINDICATIONS"
+        ],
+        "monoer": [
+          "WARNINGS"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Mononitrate labels advise pregnancy use only if clearly needed; dinitrate requires benefit justifying fetal risk. Adequate controlled human pregnancy data are absent, and animal findings differ by dose/study. Do not turn legacy pregnancy letter categories into a safety ranking. Human milk transfer is unknown in the selected labels; use caution and discuss maternal need and potential infant exposure."
+        ]
+      },
+      "source_sections": {
+        "monoir": [
+          "Pregnancy",
+          "Nursing Mothers"
+        ],
+        "monoer": [
+          "Teratogenic Effects",
+          "Nonteratogenic Effects",
+          "Nursing Mothers"
+        ],
+        "dinitrate": [
+          "Pregnancy Category C",
+          "Nursing Mothers"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric considerations",
+      "assertions": {
+        "paragraphs": [
+          "Pediatric safety/effectiveness is not established; no pediatric dose is supplied. Older-adult data are limited. Choose cautiously at the low end where appropriate and assess volume status, low BP, polypharmacy and falls; mononitrate IR’s no age-only adjustment does not mean no individual sensitivity."
+        ]
+      },
+      "source_sections": {
+        "monoir": [
+          "Pediatric Use",
+          "Geriatric Use",
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "monoer": [
+          "Pediatric Use",
+          "Geriatric Use"
+        ],
+        "dinitrate": [
+          "Pediatric Use",
+          "Geriatric Use"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Renal/hepatic and cardiac disease",
+      "assertions": {
+        "paragraphs": [
+          "Studied mononitrate disposition is not markedly changed by renal impairment/cirrhosis; IR label provides no routine adjustment and no hemodialysis replacement dose. Dinitrate undergoes extensive first-pass metabolism but has no validated organ-based fixed regimen in selected labels. Low BP, hypovolemia, HCM and unstable acute cardiac disease require separate risk assessment regardless of clearance. The HFrEF dinitrate/hydralazine role remains a distinct supervised combination."
+        ]
+      },
+      "source_sections": {
+        "monoir": [
+          "Pharmacokinetics",
+          "WARNINGS",
+          "General"
+        ],
+        "monoer": [
+          "Pharmacokinetics and Metabolism",
+          "WARNINGS",
+          "General"
+        ],
+        "dinitrate": [
+          "Pharmacokinetics",
+          "WARNINGS",
+          "PRECAUTIONS"
+        ],
+        "hf2022": [
+          "Official slides 77–78"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "assertions": {
+        "paragraphs": [
+          "Organic nitrates relax vascular smooth muscle, especially veins, reducing venous return and cardiac preload; arterial/coronary dilation also contributes. Mononitrate is an active dinitrate metabolite. The relative contribution of preload, afterload and coronary effects varies; the molecules/release forms still need their own regimens."
+        ]
+      },
+      "source_sections": {
+        "monoir": [
+          "CLINICAL PHARMACOLOGY"
+        ],
+        "monoer": [
+          "Mechanism of Action"
+        ],
+        "dinitrate": [
+          "CLINICAL PHARMACOLOGY"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics and tolerance",
+      "assertions": {
+        "paragraphs": [],
+        "facts": [
+          [
+            "Mononitrate IR",
+            "Nearly 100% oral bioavailability, peak ~30–60 minutes and overall half-life ~5 hours; mainly inactive metabolites in urine."
+          ],
+          [
+            "Mononitrate ER",
+            "Slower formulation-dependent peak; food may slow the rate without changing overall exposure. Once-morning dosing does not imply 24-hour antianginal coverage."
+          ],
+          [
+            "Dinitrate oral",
+            "Extensive first pass; average bioavailability ~25% with wide variability, peak around 1 hour, parent half-life ~1 hour; active 5-mononitrate lasts ~5 hours."
+          ],
+          [
+            "Tolerance",
+            "Sustained continuous exposure loses effectiveness; prescribed low-exposure intervals are integral to chronic angina dosing."
+          ]
+        ]
+      },
+      "source_sections": {
+        "monoir": [
+          "Pharmacokinetics",
+          "Pharmacodynamics"
+        ],
+        "monoer": [
+          "Pharmacokinetics and Metabolism",
+          "Food Effects",
+          "Pharmacodynamics"
+        ],
+        "dinitrate": [
+          "Pharmacokinetics"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring parameters",
+      "assertions": {
+        "paragraphs": [
+          "Assess angina pattern, rescue use, BP/pulse, orthostatic symptoms, volume status and contraindicated/interacting medicines. Follow adherence to the correct interval, headache tolerance and loss of benefit; worsening/rest chest pain needs timely emergency assessment rather than unsupervised escalation. Review falls and organ/comorbidity changes. No routine nitrate concentration target or universal laboratory interval is established; investigate possible methemoglobinemia only when clinically indicated."
+        ]
+      },
+      "source_sections": {
+        "monoir": [
+          "WARNINGS",
+          "General",
+          "Information for Patients",
+          "OVERDOSAGE"
+        ],
+        "monoer": [
+          "General",
+          "Information for Patients",
+          "Geriatric Use"
+        ],
+        "dinitrate": [
+          "WARNINGS",
+          "Information for Patients",
+          "OVERDOSAGE"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "assertions": {
+        "paragraphs": [
+          "Know the full name, nitrate species and release form. Mononitrate IR uses doses 7 hours apart; selected ER uses a morning dose without crushing/chewing; dinitrate’s angina interval is different. Rise carefully and discuss alcohol. Do not use ED/PAH PDE5 medicines or riociguat with any nitrate. Discuss headache treatment, missed doses and changing therapy with the clinician. Keep the prescribed fast-acting rescue plan and seek emergency help for persistent or concerning chest pain."
+        ]
+      },
+      "source_sections": {
+        "monoir": [
+          "Information for Patients",
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "monoer": [
+          "Information for Patients",
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "dinitrate": [
+          "Information for Patients",
+          "DOSAGE AND ADMINISTRATION",
+          "CONTRAINDICATIONS"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "paragraphs": [
+          "Torrent isosorbide mononitrate ER 30 mg: white/off-white oval film-coated tablet with breakline and 3–0 on one side, 1104 on the other; example bottle of 100 NDC 13668-104-01. These are manufacturer-specific identifiers, not a substitute for checking the full label."
+        ]
+      },
+      "source_sections": {
+        "monoer": [
+          "HOW SUPPLIED"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Selected product",
+            "Presentation"
+          ],
+          "rows": [
+            [
+              "ANI mononitrate IR",
+              "10 mg white scored · ANI 252; 20 mg yellow scored · ANI 253."
+            ],
+            [
+              "Torrent mononitrate ER",
+              "30, 60 and 120 mg; selected 60 mg can be halved for 30 mg, 120 mg is unscored."
+            ],
+            [
+              "Par dinitrate oral IR",
+              "5, 10, 20 and 30 mg; separate current Par 40 mg label, tablet marked par 556 with functional score."
+            ],
+            [
+              "Scope",
+              "No sublingual, dinitrate SR, IV/non-U.S. nitrate, BiDil or non-nitrate osmotic isosorbide regimen is supplied."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "monoir": [
+          "HOW SUPPLIED"
+        ],
+        "monoer": [
+          "HOW SUPPLIED"
+        ],
+        "dinitrate": [
+          "HOW SUPPLIED"
+        ],
+        "dinitrate2": [
+          "HOW SUPPLIED"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "ANI IR and Torrent ER: 20–25°C; Torrent allows excursions 15–30°C. Par 5/10/20/30 mg: approximately 25°C, protect from light and keep tightly closed in tight light-resistant containers. Par 40 mg: 20–25°C, excursions 15–30°C, with the same light/tight-container protection. Keep away from children and retain release-form identification."
+        ]
+      },
+      "source_sections": {
+        "monoir": [
+          "HOW SUPPLIED"
+        ],
+        "monoer": [
+          "HOW SUPPLIED"
+        ],
+        "dinitrate": [
+          "HOW SUPPLIED"
+        ],
+        "dinitrate2": [
+          "HOW SUPPLIED"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "Unsuffixed catalog name interpreted as cardiovascular nitrates; non-nitrate osmotic isosorbide excluded explicitly.",
+    "Sublingual, dinitrate SR, injectable/non-U.S. nitrate products, BiDil dosing and complete HFrEF titration protocol excluded.",
+    "No universal nitrate conversion, continuous 24-hour efficacy or PDE5 washout interval inferred."
+  ],
+  "resolved_source_findings": [
+    "Current Torrent ER section 4 is narrower than current ANI/Par nitrate labels; PDE5/riociguat prohibitions retained as verified nitrate-class safety, not erased by older ER wording.",
+    "Mononitrate IR 7-hour spacing, dinitrate angina ≥14-hour gap and ER morning dosing kept distinct.",
+    "Single-nitrate acute HF warning distinguished from guideline chronic HFrEF hydralazine/dinitrate combination role.",
+    "Official HF PDF readable through web tool; curl download returned 403, so no local full-PDF hash claimed."
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, essential safety, three hero facts, cited disclosures, four safety cards and three product cards.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending"
+  },
+  "monograph_sha256": "65179aa154172215641df41f35834e02674cd7f828435f4d1efb4feb0e5ac018",
+  "front_matter_source_map": {
+    "name_synonym_description_facts": {
+      "monoir": [
+        "Indications / description / dosage forms and strengths"
+      ],
+      "monoer": [
+        "Indications / description / dosage forms and strengths"
+      ],
+      "dinitrate": [
+        "Indications / description / dosage forms and strengths"
+      ],
+      "dinitrate2": [
+        "Indications / description / dosage forms and strengths"
+      ]
+    },
+    "essential_safety": {
+      "monoir": [
+        "CONTRAINDICATIONS",
+        "DOSAGE AND ADMINISTRATION",
+        "INDICATIONS AND USAGE"
+      ],
+      "monoer": [
+        "DOSAGE AND ADMINISTRATION",
+        "INDICATIONS AND USAGE"
+      ],
+      "dinitrate": [
+        "CONTRAINDICATIONS",
+        "DOSAGE AND ADMINISTRATION"
+      ]
+    }
+  },
+  "source_review_detail": "Full supporting sections of complete current public selected SPL records reviewed, including formulation-specific excipients, routes, populations, contraindications, dosing and storage. Guideline roles supported by public official slides or official full recommendation list; no inaccessible journal evidence tables claimed.",
+  "inventory_mapping": {
+    "catalog_name": "isosorbide",
+    "category_evidence": "src/data/drugCategories.js:156 · Cardiovascular and renal",
+    "clinical_scope": "Selected isosorbide mononitrate and dinitrate oral nitrates; non-nitrate osmotic isosorbide excluded."
+  }
+}

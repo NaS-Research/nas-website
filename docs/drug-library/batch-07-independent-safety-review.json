@@ -243,7 +243,7 @@
     },
     {
       "drug": "ethinyl-estradiol-norethindrone",
-      "fileSha256": "739af6c56f5730a0351c59b99e4d31f25dace8736cc2050606305da9a9c9a3d5",
+      "fileSha256": "4aa16cf6623e25b3d740a246247f77ece9c80380b8a2acb0baa7edc488ccc809",
       "result": "No material clinical error identified in enumerated assertions.",
       "checks": [
         {
@@ -282,7 +282,14 @@
         "productCards": 3
       },
       "issues": [],
-      "sourceGaps": []
+      "sourceGaps": [],
+      "formattingRevisionIndependent": {
+        "checked": "2026-10-01",
+        "priorSha256": "739af6c56f5730a0351c59b99e4d31f25dace8736cc2050606305da9a9c9a3d5",
+        "currentSha256": "4aa16cf6623e25b3d740a246247f77ece9c80380b8a2acb0baa7edc488ccc809",
+        "proof": "Independently parsed prior git HEAD and current complete clinical objects; exact equality after whitespace removal; table shapes, values, sources and clinical statements unchanged.",
+        "renderedQa": "Parent owns rendered layout checks; not independently claimed here."
+      }
     },
     {
       "drug": "propranolol",

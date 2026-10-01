@@ -1,0 +1,1114 @@
+{
+  "drug": "hydrochlorothiazide-triamterene",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Current full selected U.S. tablet and capsule labels; dosing and composition corroborated across two independent current tablet SPLs. No pediatric, pregnancy-edema routine, or disease-modifying HF regimen supplied.",
+  "blueprint": {
+    "sections": [
+      [
+        "indications",
+        "Indications"
+      ],
+      [
+        "dosage",
+        "Dosage and administration"
+      ],
+      [
+        "safety",
+        "Safety"
+      ],
+      [
+        "interactions",
+        "Drug interactions"
+      ],
+      [
+        "populations",
+        "Use in specific populations"
+      ],
+      [
+        "pharmacology",
+        "Clinical pharmacology"
+      ],
+      [
+        "practice",
+        "Monitoring and counseling"
+      ],
+      [
+        "product",
+        "Product identification"
+      ]
+    ],
+    "essential_safety": true,
+    "hero_facts": 3,
+    "APAP_modified": false
+  },
+  "sources": [
+    {
+      "id": "tablet",
+      "title": "Triamterene/hydrochlorothiazide tablets \u00b7 Current full label",
+      "publisher": "Advagen / Rubicon / DailyMed",
+      "note": "January 2026 clinical revision; dose-strength typo is explicitly flagged and not used.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a5525a2a-d2c7-411b-9ffc-0cc4fe77f7c7"
+    },
+    {
+      "id": "confirm",
+      "title": "Triamterene/hydrochlorothiazide tablets \u00b7 Dose corroboration",
+      "publisher": "Preferred / Actavis source label / DailyMed",
+      "note": "Current SPL7 effective January 13, 2026; clinical revision November 2020. Correct higher-strength dosing confirms 75 mg/50 mg.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6c4cd90b-44c0-4da5-8f26-f0fa465acce4"
+    },
+    {
+      "id": "capsule",
+      "title": "Triamterene/hydrochlorothiazide capsules \u00b7 Current full label",
+      "publisher": "Preferred / Viona / Zydus / DailyMed",
+      "note": "Current SPL2 effective October 1, 2025; clinical revision October 2022. Oral 37.5 mg/25 mg capsules.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1fff8245-2b65-4ab1-aaa2-6bbbc6ac5fe8"
+    }
+  ],
+  "source_records": [
+    {
+      "id": "tablet",
+      "local_snapshot": "/tmp/nas-drug-sources/hctz-triamterene-advagen.xml",
+      "label_revision": "01/2026",
+      "set_id": "a5525a2a-d2c7-411b-9ffc-0cc4fe77f7c7",
+      "spl_version": "2",
+      "spl_effective_time": "20260107",
+      "dailymed_published_date": "2026-01-08",
+      "sha256": "7b842c0cb8eba864fd8cfd6f9f1d92aa503587ab276505536843c39a07c6eaa0",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "metadata_evidence": "Current DailyMed View Labeling Archives table read October1,2026; SPL effectiveTime read directly from retainedXML; clinical revision read from actuallabel.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-14-thyroid-metformin/hctz-triamterene-advagen.xml"
+    },
+    {
+      "id": "confirm",
+      "local_snapshot": "/tmp/nas-drug-sources/hctz-triamterene-tablet.xml",
+      "label_revision": "11/2020",
+      "set_id": "6c4cd90b-44c0-4da5-8f26-f0fa465acce4",
+      "spl_version": "7",
+      "spl_effective_time": "20260113",
+      "dailymed_published_date": "2026-01-14",
+      "sha256": "a3b28f3dd495d27a2d6a8b758f6ccd2ef32e647c9c12b0676d93fa00feed145f",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "metadata_evidence": "Current DailyMed View Labeling Archives table read October1,2026; SPL effectiveTime read directly from retainedXML; clinical revision read from actuallabel.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-14-thyroid-metformin/hctz-triamterene-tablet.xml"
+    },
+    {
+      "id": "capsule",
+      "local_snapshot": "/tmp/nas-drug-sources/hctz-triamterene-capsule.xml",
+      "label_revision": "10/2022",
+      "set_id": "1fff8245-2b65-4ab1-aaa2-6bbbc6ac5fe8",
+      "spl_version": "2",
+      "spl_effective_time": "20251001",
+      "dailymed_published_date": "2025-10-03",
+      "sha256": "160d27fb1559362e056ae8dfbcbc2c29cd50c6aca47ba32c984fabe80348968d",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "metadata_evidence": "Current DailyMed View Labeling Archives table read October1,2026; SPL effectiveTime read directly from retainedXML; clinical revision read from actuallabel.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-14-thyroid-metformin/hctz-triamterene-capsule.xml"
+    }
+  ],
+  "assertion_map": [
+    {
+      "section": "indications",
+      "card": "Labeled hypertension and edema use",
+      "assertions": [
+        "The combination is indicated when hydrochlorothiazide alone causes hypokalemia, or when a thiazide is needed and hypokalemia cannot be risked, such as selected patients with arrhythmias or digitalis therapy. It is generally not initial therapy for hypertension or edema outside that exception. Other antihypertensives may be used with individualized adjustment."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "INDICATIONS AND USAGE"
+        },
+        {
+          "id": "confirm",
+          "sections": "INDICATIONS AND USAGE"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Treatment-selection boundaries",
+      "assertions": [
+        "This is a diuretic combination, not a demonstrated disease-modifying heart-failure treatment. Evaluate blood pressure, edema cause, potassium, kidney function and companion medicines before selection. Severe renal impairment and hyperkalemia preclude use; diabetes and older age increase the need for caution. No pediatric or off-label dosing protocol is supplied."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "INDICATIONS; CONTRAINDICATIONS; WARNINGS; Pediatric Use"
+        },
+        {
+          "id": "confirm",
+          "sections": "INDICATIONS; CONTRAINDICATIONS; WARNINGS; Pediatric Use"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Selected tablet and capsule schedules",
+      "assertions": [
+        "Tablet labeling specifies a single daily administration rather than dividing the two lower-strength tablets. Higher tablet dosing has no labeled experience beyond the limits shown, and divided dosing has produced more electrolyte and renal problems. Selected capsules likewise use one or two capsules once daily. Adjust only with clinical and potassium monitoring; these product schedules do not certify automatic substitution between every formulation."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "confirm",
+          "sections": "DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "capsule",
+          "sections": "DOSAGE AND ADMINISTRATION"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Product: triamterene / hydrochlorothiazide",
+          "Labeled daily schedule"
+        ],
+        "rows": [
+          [
+            "Tablet 37.5 mg / 25 mg",
+            "1 or 2 tablets together once daily"
+          ],
+          [
+            "Tablet 75 mg / 50 mg",
+            "1 tablet once daily"
+          ],
+          [
+            "Capsule 37.5 mg / 25 mg",
+            "1 or 2 capsules once daily"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Changing from hydrochlorothiazide alone",
+      "assertions": [
+        "For hypokalemia during hydrochlorothiazide 25 mg/day, the reviewed tablet label permits a switch to triamterene 37.5 mg/hydrochlorothiazide 25 mg; for hydrochlorothiazide 50 mg/day, it permits the 75 mg/50 mg tablet. Recheck clinical response and potassium after a switch. Historical bioavailability comparisons do not support a universal capsule-to-tablet conversion."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "DOSAGE AND ADMINISTRATION; CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "confirm",
+          "sections": "DOSAGE AND ADMINISTRATION; CLINICAL PHARMACOLOGY"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Current-label strength discrepancy",
+      "assertions": [
+        "One escalation sentence in the January 2026 Advagen label prints \u201c75 mg/25 mg,\u201d although its composition, usual-dose paragraph and supplied product all identify the higher tablet as triamterene 75 mg/hydrochlorothiazide 50 mg. The separately reviewed current tablet label confirms the 75 mg/50 mg schedule. No 75 mg/25 mg product or regimen is inferred here; verify the actual dispensed strength with the pharmacist."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "DESCRIPTION; DOSAGE AND ADMINISTRATION; HOW SUPPLIED"
+        },
+        {
+          "id": "confirm",
+          "sections": "DOSAGE AND ADMINISTRATION"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Organ impairment and food",
+      "assertions": [
+        "The labels do not provide a numeric creatinine-clearance adjustment ladder: anuria, acute/chronic renal insufficiency or significant renal impairment are contraindications. Even mild impairment requires frequent continuing electrolyte surveillance. Tablet absorption is not affected by food; the capsule label describes a food effect on exposure, without requiring an after-meal regimen in its dose section. Follow the selected product and prescribed schedule rather than importing an unsupported food instruction."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "CONTRAINDICATIONS; WARNINGS; CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "capsule",
+          "sections": "CLINICAL PHARMACOLOGY; DOSAGE AND ADMINISTRATION"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Check potassium frequently when starting, changing dose, or during illness affecting renal function. Hyperkalemia is more likely with renal impairment, diabetes, older age or severe illness, and a normal ECG cannot exclude it. If hyperkalemia develops, stop the combination under urgent clinical management; severe cases require emergency treatment, not a home correction protocol.",
+        "Other electrolyte deficits, dehydration, hypotension and rising BUN/creatinine can occur despite potassium conservation; discontinue if azotemia worsens. Avoid potassium-conserving treatment in severe illness with metabolic/respiratory acidosis unless specialist monitoring makes use appropriate.",
+        "Hydrochlorothiazide can cause acute myopia/secondary angle-closure glaucoma within hours to weeks: sudden eye pain or blurred vision needs immediate evaluation and rapid discontinuation. Other cautions include hepatic decompensation, kidney stones, gout, glucose disturbances, low-folate megaloblastosis, hypersensitivity and lupus exacerbation. Protect skin from sun and maintain skin-cancer screening because hydrochlorothiazide is associated with non-melanoma skin cancer."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "WARNINGS; PRECAUTIONS; ADVERSE REACTIONS"
+        },
+        {
+          "id": "confirm",
+          "sections": "WARNINGS; PRECAUTIONS; Postmarketing Experience"
+        },
+        {
+          "id": "capsule",
+          "sections": "WARNINGS; PRECAUTIONS; Information for Patients"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "Do not use with potassium \u2265 5.5 mEq/L, anuria, acute/chronic renal insufficiency, significant renal impairment, or hypersensitivity to either ingredient/other sulfonamide-derived drugs. Other potassium-sparing agents and potassium-containing salt substitutes are prohibited. Reviewed tablet labeling also prohibits potassium supplementation and potassium-enriched diets. Capsule labeling describes a narrowly supervised severe-hypokalemia exception; it is not permission to self-add potassium."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "CONTRAINDICATIONS"
+        },
+        {
+          "id": "confirm",
+          "sections": "CONTRAINDICATIONS"
+        },
+        {
+          "id": "capsule",
+          "sections": "CONTRAINDICATIONS; Hypokalemia"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning: hyperkalemia",
+      "assertions": [
+        "Both reviewed tablet and capsule SPLs contain a boxed hyperkalemia warning. Potassium elevation can be fatal, particularly with renal impairment, diabetes, older age or severe illness. Frequent serum potassium checks are required during initiation, dose changes and illnesses that alter kidney function."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "Boxed warning / WARNINGS Hyperkalemia"
+        },
+        {
+          "id": "capsule",
+          "sections": "Boxed warning Hyperkalemia"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Reported effects include dizziness, fatigue, orthostatic hypotension, gastrointestinal upset and muscle cramps; important harms include high/low potassium, sodium/magnesium deficits, renal failure/stones, severe allergy/photosensitivity, pancreatitis, blood dyscrasias and hepatic reactions. Labels aggregate reports across components and combinations; they do not establish a reliable universal incidence for each event. Moderate or severe reactions require clinician-directed reduction or withdrawal."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "ADVERSE REACTIONS; Altered Laboratory Findings"
+        },
+        {
+          "id": "capsule",
+          "sections": "ADVERSE REACTIONS; Postmarketing Experience"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Potassium and ACE inhibitors",
+      "assertions": [
+        "Avoid other potassium-sparing diuretics and potassium-containing salt substitutes; do not add supplements without a product-specific supervised plan. ACE inhibitors greatly increase hyperkalemia risk; the tablet label advises very cautious use, if at all, with frequent potassium checks. Review all potassium-raising medicines and dietary products with the prescriber rather than treating the combination as a safeguard against interactions."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "CONTRAINDICATIONS; WARNINGS; Drug Interactions"
+        },
+        {
+          "id": "capsule",
+          "sections": "Antikaliuretic Therapy; Drug Interactions"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "NSAIDs and lithium",
+      "assertions": [
+        "Acute renal failure has been reported with indomethacin and this combination; use caution with NSAIDs and reassess renal function. Lithium generally should not be combined with diuretics because reduced renal clearance can produce toxicity. A supervised exception requires the lithium-specific label and monitoring, not a routine coadministration recommendation."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "Drug Interactions"
+        },
+        {
+          "id": "capsule",
+          "sections": "Drug Interactions"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Other treatment and laboratory effects",
+      "assertions": [
+        "Other antihypertensives can intensify blood-pressure reduction. Corticosteroids, ACTH and amphotericin B can worsen electrolyte loss; chlorpropamide increases severe-hyponatremia risk in the capsule label. Diabetes and antigout therapy may need reassessment. Notify anesthesia staff about altered pressor responsiveness/nondepolarizing neuromuscular blockade, and laboratories about potential interference with quinidine measurement. Clinician-directed withholding may be needed before parathyroid-function testing."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "Drug Interactions; Drug/Laboratory Test Interactions; Metabolic and Endocrine Effects"
+        },
+        {
+          "id": "capsule",
+          "sections": "Drug Interactions; Laboratory Tests; Drug/Laboratory Test Interactions"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Kidney disease, older adults and diabetes",
+      "assertions": [
+        "There is no validated label eGFR cutoff that replaces the contraindication to significant renal impairment. Mild renal impairment requires frequent ongoing monitoring; drug/metabolite clearance is reduced with renal dysfunction and older age. The tablet label recommends avoiding the combination in diabetes if possible; if it is used, monitor electrolytes frequently even without apparent renal impairment."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "CONTRAINDICATIONS; WARNINGS"
+        },
+        {
+          "id": "capsule",
+          "sections": "WARNINGS; Diabetes; Laboratory Tests"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Liver disease and children",
+      "assertions": [
+        "Fluid/electrolyte shifts can precipitate hepatic coma with impaired hepatic function or progressive liver disease; use cautiously and assess new confusion promptly. No numeric hepatic dose algorithm is supplied. Pediatric safety/effectiveness are not established; adult tablet or capsule limits are not pediatric doses."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "Hepatic Coma; Pediatric Use"
+        },
+        {
+          "id": "confirm",
+          "sections": "General; Pediatric Use"
+        },
+        {
+          "id": "capsule",
+          "sections": "Impaired Hepatic Function; Pediatric Use"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and breastfeeding",
+      "assertions": [
+        "Combination safety in pregnancy is not established; use only when anticipated benefit justifies fetal risk. Diuretics are not routine therapy for normal pregnancy edema or prevention of pregnancy toxemia. Components cross the placenta, with potential neonatal hazards including jaundice and thrombocytopenia. Combination lactation studies are absent; thiazides enter human milk, and the selected labels advise stopping nursing if the combination is essential. Discuss alternatives and an individualized feeding/treatment plan."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "Usage in Pregnancy; Pregnancy; Nonteratogenic Effects; Nursing Mothers"
+        },
+        {
+          "id": "capsule",
+          "sections": "Usage in Pregnancy; Pregnancy; Nursing Mothers"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Complementary renal actions",
+      "assertions": [
+        "Hydrochlorothiazide inhibits renal sodium/chloride reabsorption and promotes diuresis, with secondary potassium loss. Triamterene inhibits distal sodium exchange for potassium/hydrogen, reducing that loss; it is not a competitive aldosterone antagonist. Some patients still become hypokalemic, while others develop hyperkalemia."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "capsule",
+          "sections": "CLINICAL PHARMACOLOGY"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Absorption and elimination",
+      "assertions": [
+        "Reviewed tablets reach hydrochlorothiazide peak plasma levels in about 2 hours and triamterene peaks in about 1 hour; hydrochlorothiazide is excreted unchanged in urine, while triamterene is primarily converted to hydroxytriamterene sulfate. The capsule label describes diuresis beginning within about 1 hour and a food effect on exposure. Kidney impairment and older age reduce clearance of hydrochlorothiazide and the active triamterene metabolite; these findings reinforce monitoring rather than a fabricated adjustment formula."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "CLINICAL PHARMACOLOGY; WARNINGS"
+        },
+        {
+          "id": "capsule",
+          "sections": "CLINICAL PHARMACOLOGY; WARNINGS"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Before and during treatment",
+      "assertions": [
+        "Assess blood pressure/edema, potassium and other electrolytes, BUN/creatinine, hydration, renal/liver disease, diabetes/gout history and interacting medicines. Reassess frequently at initiation, after changes and with vomiting, poor intake or intercurrent illness; labels do not prescribe a universal fixed testing interval. Consider glucose, uric acid and blood counts when their specific risk factors apply."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "WARNINGS; PRECAUTIONS; DOSAGE"
+        },
+        {
+          "id": "capsule",
+          "sections": "WARNINGS; Laboratory Tests; Diabetes"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling and urgent symptoms",
+      "assertions": [
+        "Confirm both ingredient amounts and take only the selected prescribed daily schedule. Discuss dizziness and falls, dehydration, sun protection and skin screening. Seek urgent care for severe weakness, palpitations/fainting, marked reduction in urine, confusion, severe allergy, or sudden painful/blurred vision. Suspected overdose requires emergency/poison-center assessment for fluid and electrolyte disturbances; no home emesis or electrolyte-treatment regimen is provided."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "WARNINGS; PRECAUTIONS; Information for Patients; OVERDOSAGE"
+        },
+        {
+          "id": "capsule",
+          "sections": "WARNINGS; Information for Patients; OVERDOSAGE"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative products",
+      "assertions": [
+        "Selected Advagen/Rubicon tablets are yellow oval scored products: \u039b 134 identifies triamterene 37.5 mg/hydrochlorothiazide 25 mg (NDC family 72888-094), and \u039b 135 identifies 75 mg/50 mg (72888-095). Selected Preferred-repackaged Viona/Zydus 37.5 mg/25 mg capsules have a yellow cap marked 855 and white body (68788-8700). These are label examples, not a real-time stock or universal appearance claim."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "DESCRIPTION; HOW SUPPLIED; marketing record"
+        },
+        {
+          "id": "capsule",
+          "sections": "HOW SUPPLIED; package panel; marketing record"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Reviewed oral tablets contain triamterene 37.5 mg/hydrochlorothiazide 25 mg or triamterene 75 mg/hydrochlorothiazide 50 mg. Reviewed capsules contain triamterene 37.5 mg/hydrochlorothiazide 25 mg. There is no verified 75 mg/25 mg tablet in these selected composition/package records; single-ingredient products and historical formulations require their own labels."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "DESCRIPTION; HOW SUPPLIED"
+        },
+        {
+          "id": "confirm",
+          "sections": "DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "capsule",
+          "sections": "DESCRIPTION; HOW SUPPLIED"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Selected tablets and capsules are stored at 20\u201325\u00b0C (68\u201377\u00b0F), protected from light and dispensed in a tight, light-resistant container; the selected tablet label specifies a child-resistant closure. Verify the actual pharmacy package. Keep medicines out of children\u2019s reach and retain the labeled strength rather than identifying a pill by color alone."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "capsule",
+          "sections": "HOW SUPPLIED"
+        }
+      ]
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Labeled hypertension and edema use",
+      "assertions": [
+        "The combination is indicated when hydrochlorothiazide alone causes hypokalemia, or when a thiazide is needed and hypokalemia cannot be risked, such as selected patients with arrhythmias or digitalis therapy. It is generally not initial therapy for hypertension or edema outside that exception. Other antihypertensives may be used with individualized adjustment."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "INDICATIONS AND USAGE"
+        },
+        {
+          "id": "confirm",
+          "sections": "INDICATIONS AND USAGE"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Treatment-selection boundaries",
+      "assertions": [
+        "This is a diuretic combination, not a demonstrated disease-modifying heart-failure treatment. Evaluate blood pressure, edema cause, potassium, kidney function and companion medicines before selection. Severe renal impairment and hyperkalemia preclude use; diabetes and older age increase the need for caution. No pediatric or off-label dosing protocol is supplied."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "INDICATIONS; CONTRAINDICATIONS; WARNINGS; Pediatric Use"
+        },
+        {
+          "id": "confirm",
+          "sections": "INDICATIONS; CONTRAINDICATIONS; WARNINGS; Pediatric Use"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Selected tablet and capsule schedules",
+      "assertions": [
+        "Tablet labeling specifies a single daily administration rather than dividing the two lower-strength tablets. Higher tablet dosing has no labeled experience beyond the limits shown, and divided dosing has produced more electrolyte and renal problems. Selected capsules likewise use one or two capsules once daily. Adjust only with clinical and potassium monitoring; these product schedules do not certify automatic substitution between every formulation."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "confirm",
+          "sections": "DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "capsule",
+          "sections": "DOSAGE AND ADMINISTRATION"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Product: triamterene / hydrochlorothiazide",
+          "Labeled daily schedule"
+        ],
+        "rows": [
+          [
+            "Tablet 37.5 mg / 25 mg",
+            "1 or 2 tablets together once daily"
+          ],
+          [
+            "Tablet 75 mg / 50 mg",
+            "1 tablet once daily"
+          ],
+          [
+            "Capsule 37.5 mg / 25 mg",
+            "1 or 2 capsules once daily"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Changing from hydrochlorothiazide alone",
+      "assertions": [
+        "For hypokalemia during hydrochlorothiazide 25 mg/day, the reviewed tablet label permits a switch to triamterene 37.5 mg/hydrochlorothiazide 25 mg; for hydrochlorothiazide 50 mg/day, it permits the 75 mg/50 mg tablet. Recheck clinical response and potassium after a switch. Historical bioavailability comparisons do not support a universal capsule-to-tablet conversion."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "DOSAGE AND ADMINISTRATION; CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "confirm",
+          "sections": "DOSAGE AND ADMINISTRATION; CLINICAL PHARMACOLOGY"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Current-label strength discrepancy",
+      "assertions": [
+        "One escalation sentence in the January 2026 Advagen label prints \u201c75 mg/25 mg,\u201d although its composition, usual-dose paragraph and supplied product all identify the higher tablet as triamterene 75 mg/hydrochlorothiazide 50 mg. The separately reviewed current tablet label confirms the 75 mg/50 mg schedule. No 75 mg/25 mg product or regimen is inferred here; verify the actual dispensed strength with the pharmacist."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "DESCRIPTION; DOSAGE AND ADMINISTRATION; HOW SUPPLIED"
+        },
+        {
+          "id": "confirm",
+          "sections": "DOSAGE AND ADMINISTRATION"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Organ impairment and food",
+      "assertions": [
+        "The labels do not provide a numeric creatinine-clearance adjustment ladder: anuria, acute/chronic renal insufficiency or significant renal impairment are contraindications. Even mild impairment requires frequent continuing electrolyte surveillance. Tablet absorption is not affected by food; the capsule label describes a food effect on exposure, without requiring an after-meal regimen in its dose section. Follow the selected product and prescribed schedule rather than importing an unsupported food instruction."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "CONTRAINDICATIONS; WARNINGS; CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "capsule",
+          "sections": "CLINICAL PHARMACOLOGY; DOSAGE AND ADMINISTRATION"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Check potassium frequently when starting, changing dose, or during illness affecting renal function. Hyperkalemia is more likely with renal impairment, diabetes, older age or severe illness, and a normal ECG cannot exclude it. If hyperkalemia develops, stop the combination under urgent clinical management; severe cases require emergency treatment, not a home correction protocol.",
+        "Other electrolyte deficits, dehydration, hypotension and rising BUN/creatinine can occur despite potassium conservation; discontinue if azotemia worsens. Avoid potassium-conserving treatment in severe illness with metabolic/respiratory acidosis unless specialist monitoring makes use appropriate.",
+        "Hydrochlorothiazide can cause acute myopia/secondary angle-closure glaucoma within hours to weeks: sudden eye pain or blurred vision needs immediate evaluation and rapid discontinuation. Other cautions include hepatic decompensation, kidney stones, gout, glucose disturbances, low-folate megaloblastosis, hypersensitivity and lupus exacerbation. Protect skin from sun and maintain skin-cancer screening because hydrochlorothiazide is associated with non-melanoma skin cancer."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "WARNINGS; PRECAUTIONS; ADVERSE REACTIONS"
+        },
+        {
+          "id": "confirm",
+          "sections": "WARNINGS; PRECAUTIONS; Postmarketing Experience"
+        },
+        {
+          "id": "capsule",
+          "sections": "WARNINGS; PRECAUTIONS; Information for Patients"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "Do not use with potassium \u2265 5.5 mEq/L, anuria, acute/chronic renal insufficiency, significant renal impairment, or hypersensitivity to either ingredient/other sulfonamide-derived drugs. Other potassium-sparing agents and potassium-containing salt substitutes are prohibited. Reviewed tablet labeling also prohibits potassium supplementation and potassium-enriched diets. Capsule labeling describes a narrowly supervised severe-hypokalemia exception; it is not permission to self-add potassium."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "CONTRAINDICATIONS"
+        },
+        {
+          "id": "confirm",
+          "sections": "CONTRAINDICATIONS"
+        },
+        {
+          "id": "capsule",
+          "sections": "CONTRAINDICATIONS; Hypokalemia"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning: hyperkalemia",
+      "assertions": [
+        "Both reviewed tablet and capsule SPLs contain a boxed hyperkalemia warning. Potassium elevation can be fatal, particularly with renal impairment, diabetes, older age or severe illness. Frequent serum potassium checks are required during initiation, dose changes and illnesses that alter kidney function."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "Boxed warning / WARNINGS Hyperkalemia"
+        },
+        {
+          "id": "capsule",
+          "sections": "Boxed warning Hyperkalemia"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Reported effects include dizziness, fatigue, orthostatic hypotension, gastrointestinal upset and muscle cramps; important harms include high/low potassium, sodium/magnesium deficits, renal failure/stones, severe allergy/photosensitivity, pancreatitis, blood dyscrasias and hepatic reactions. Labels aggregate reports across components and combinations; they do not establish a reliable universal incidence for each event. Moderate or severe reactions require clinician-directed reduction or withdrawal."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "ADVERSE REACTIONS; Altered Laboratory Findings"
+        },
+        {
+          "id": "capsule",
+          "sections": "ADVERSE REACTIONS; Postmarketing Experience"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Potassium and ACE inhibitors",
+      "assertions": [
+        "Avoid other potassium-sparing diuretics and potassium-containing salt substitutes; do not add supplements without a product-specific supervised plan. ACE inhibitors greatly increase hyperkalemia risk; the tablet label advises very cautious use, if at all, with frequent potassium checks. Review all potassium-raising medicines and dietary products with the prescriber rather than treating the combination as a safeguard against interactions."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "CONTRAINDICATIONS; WARNINGS; Drug Interactions"
+        },
+        {
+          "id": "capsule",
+          "sections": "Antikaliuretic Therapy; Drug Interactions"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "NSAIDs and lithium",
+      "assertions": [
+        "Acute renal failure has been reported with indomethacin and this combination; use caution with NSAIDs and reassess renal function. Lithium generally should not be combined with diuretics because reduced renal clearance can produce toxicity. A supervised exception requires the lithium-specific label and monitoring, not a routine coadministration recommendation."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "Drug Interactions"
+        },
+        {
+          "id": "capsule",
+          "sections": "Drug Interactions"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Other treatment and laboratory effects",
+      "assertions": [
+        "Other antihypertensives can intensify blood-pressure reduction. Corticosteroids, ACTH and amphotericin B can worsen electrolyte loss; chlorpropamide increases severe-hyponatremia risk in the capsule label. Diabetes and antigout therapy may need reassessment. Notify anesthesia staff about altered pressor responsiveness/nondepolarizing neuromuscular blockade, and laboratories about potential interference with quinidine measurement. Clinician-directed withholding may be needed before parathyroid-function testing."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "Drug Interactions; Drug/Laboratory Test Interactions; Metabolic and Endocrine Effects"
+        },
+        {
+          "id": "capsule",
+          "sections": "Drug Interactions; Laboratory Tests; Drug/Laboratory Test Interactions"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Kidney disease, older adults and diabetes",
+      "assertions": [
+        "There is no validated label eGFR cutoff that replaces the contraindication to significant renal impairment. Mild renal impairment requires frequent ongoing monitoring; drug/metabolite clearance is reduced with renal dysfunction and older age. The tablet label recommends avoiding the combination in diabetes if possible; if it is used, monitor electrolytes frequently even without apparent renal impairment."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "CONTRAINDICATIONS; WARNINGS"
+        },
+        {
+          "id": "capsule",
+          "sections": "WARNINGS; Diabetes; Laboratory Tests"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Liver disease and children",
+      "assertions": [
+        "Fluid/electrolyte shifts can precipitate hepatic coma with impaired hepatic function or progressive liver disease; use cautiously and assess new confusion promptly. No numeric hepatic dose algorithm is supplied. Pediatric safety/effectiveness are not established; adult tablet or capsule limits are not pediatric doses."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "Hepatic Coma; Pediatric Use"
+        },
+        {
+          "id": "confirm",
+          "sections": "General; Pediatric Use"
+        },
+        {
+          "id": "capsule",
+          "sections": "Impaired Hepatic Function; Pediatric Use"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and breastfeeding",
+      "assertions": [
+        "Combination safety in pregnancy is not established; use only when anticipated benefit justifies fetal risk. Diuretics are not routine therapy for normal pregnancy edema or prevention of pregnancy toxemia. Components cross the placenta, with potential neonatal hazards including jaundice and thrombocytopenia. Combination lactation studies are absent; thiazides enter human milk, and the selected labels advise stopping nursing if the combination is essential. Discuss alternatives and an individualized feeding/treatment plan."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "Usage in Pregnancy; Pregnancy; Nonteratogenic Effects; Nursing Mothers"
+        },
+        {
+          "id": "capsule",
+          "sections": "Usage in Pregnancy; Pregnancy; Nursing Mothers"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Complementary renal actions",
+      "assertions": [
+        "Hydrochlorothiazide inhibits renal sodium/chloride reabsorption and promotes diuresis, with secondary potassium loss. Triamterene inhibits distal sodium exchange for potassium/hydrogen, reducing that loss; it is not a competitive aldosterone antagonist. Some patients still become hypokalemic, while others develop hyperkalemia."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "capsule",
+          "sections": "CLINICAL PHARMACOLOGY"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Absorption and elimination",
+      "assertions": [
+        "Reviewed tablets reach hydrochlorothiazide peak plasma levels in about 2 hours and triamterene peaks in about 1 hour; hydrochlorothiazide is excreted unchanged in urine, while triamterene is primarily converted to hydroxytriamterene sulfate. The capsule label describes diuresis beginning within about 1 hour and a food effect on exposure. Kidney impairment and older age reduce clearance of hydrochlorothiazide and the active triamterene metabolite; these findings reinforce monitoring rather than a fabricated adjustment formula."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "CLINICAL PHARMACOLOGY; WARNINGS"
+        },
+        {
+          "id": "capsule",
+          "sections": "CLINICAL PHARMACOLOGY; WARNINGS"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Before and during treatment",
+      "assertions": [
+        "Assess blood pressure/edema, potassium and other electrolytes, BUN/creatinine, hydration, renal/liver disease, diabetes/gout history and interacting medicines. Reassess frequently at initiation, after changes and with vomiting, poor intake or intercurrent illness; labels do not prescribe a universal fixed testing interval. Consider glucose, uric acid and blood counts when their specific risk factors apply."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "WARNINGS; PRECAUTIONS; DOSAGE"
+        },
+        {
+          "id": "capsule",
+          "sections": "WARNINGS; Laboratory Tests; Diabetes"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling and urgent symptoms",
+      "assertions": [
+        "Confirm both ingredient amounts and take only the selected prescribed daily schedule. Discuss dizziness and falls, dehydration, sun protection and skin screening. Seek urgent care for severe weakness, palpitations/fainting, marked reduction in urine, confusion, severe allergy, or sudden painful/blurred vision. Suspected overdose requires emergency/poison-center assessment for fluid and electrolyte disturbances; no home emesis or electrolyte-treatment regimen is provided."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "WARNINGS; PRECAUTIONS; Information for Patients; OVERDOSAGE"
+        },
+        {
+          "id": "capsule",
+          "sections": "WARNINGS; Information for Patients; OVERDOSAGE"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative products",
+      "assertions": [
+        "Selected Advagen/Rubicon tablets are yellow oval scored products: \u039b 134 identifies triamterene 37.5 mg/hydrochlorothiazide 25 mg (NDC family 72888-094), and \u039b 135 identifies 75 mg/50 mg (72888-095). Selected Preferred-repackaged Viona/Zydus 37.5 mg/25 mg capsules have a yellow cap marked 855 and white body (68788-8700). These are label examples, not a real-time stock or universal appearance claim."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "DESCRIPTION; HOW SUPPLIED; marketing record"
+        },
+        {
+          "id": "capsule",
+          "sections": "HOW SUPPLIED; package panel; marketing record"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Reviewed oral tablets contain triamterene 37.5 mg/hydrochlorothiazide 25 mg or triamterene 75 mg/hydrochlorothiazide 50 mg. Reviewed capsules contain triamterene 37.5 mg/hydrochlorothiazide 25 mg. There is no verified 75 mg/25 mg tablet in these selected composition/package records; single-ingredient products and historical formulations require their own labels."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "DESCRIPTION; HOW SUPPLIED"
+        },
+        {
+          "id": "confirm",
+          "sections": "DOSAGE AND ADMINISTRATION"
+        },
+        {
+          "id": "capsule",
+          "sections": "DESCRIPTION; HOW SUPPLIED"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Selected tablets and capsules are stored at 20\u201325\u00b0C (68\u201377\u00b0F), protected from light and dispensed in a tight, light-resistant container; the selected tablet label specifies a child-resistant closure. Verify the actual pharmacy package. Keep medicines out of children\u2019s reach and retain the labeled strength rather than identifying a pill by color alone."
+      ],
+      "sources": [
+        {
+          "id": "tablet",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "capsule",
+          "sections": "HOW SUPPLIED"
+        }
+      ]
+    }
+  ],
+  "hero_assertions": {
+    "essential": {
+      "title": "Prevent potassium toxicity",
+      "text": "Check potassium and kidney function. Avoid potassium-sparing combinations and salt substitutes; high potassium or significant renal impairment precludes treatment.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "facts": [
+      [
+        "Class",
+        "Thiazide + potassium-sparing diuretic"
+      ],
+      [
+        "Route",
+        "Oral tablets or capsules"
+      ],
+      [
+        "Boxed warning",
+        "Potentially fatal hyperkalemia"
+      ]
+    ],
+    "sources": [
+      "tablet",
+      "confirm",
+      "capsule"
+    ]
+  },
+  "section_assertions": [
+    {
+      "section": "indications",
+      "summary": "This prescription fixed combination treats selected hypertension or edema while conserving potassium.",
+      "takeaway": "Its potassium-sparing component does not eliminate either high- or low-potassium risk.",
+      "sources": [
+        "confirm",
+        "tablet"
+      ]
+    },
+    {
+      "section": "dosage",
+      "summary": "All schedules below are oral and list triamterene before hydrochlorothiazide.",
+      "takeaway": "Read both ingredient amounts; the catalog name lists the ingredients in the opposite order.",
+      "sources": [
+        "capsule",
+        "confirm",
+        "tablet"
+      ]
+    },
+    {
+      "section": "safety",
+      "summary": "Potentially fatal hyperkalemia is the boxed warning.",
+      "takeaway": "Weakness, abnormal heart rhythm or reduced urine output warrants urgent assessment.",
+      "sources": [
+        "capsule",
+        "confirm",
+        "tablet"
+      ]
+    },
+    {
+      "section": "interactions",
+      "summary": "Companion medicines can change potassium, kidney function and blood pressure.",
+      "takeaway": "Review prescriptions, OTC pain medicines and salt substitutes before starting.",
+      "sources": [
+        "capsule",
+        "tablet"
+      ]
+    },
+    {
+      "section": "populations",
+      "summary": "Renal disease, diabetes and frailty increase susceptibility to potassium toxicity.",
+      "takeaway": "Pregnancy edema and breastfeeding require a separate benefit-risk assessment.",
+      "sources": [
+        "capsule",
+        "confirm",
+        "tablet"
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "summary": "Hydrochlorothiazide increases natriuresis; triamterene limits distal potassium loss.",
+      "takeaway": "Potassium conservation can overshoot and does not guarantee a normal potassium level.",
+      "sources": [
+        "capsule",
+        "tablet"
+      ]
+    },
+    {
+      "section": "practice",
+      "summary": "Follow potassium, renal function, volume status and the indication being treated.",
+      "takeaway": "Do not self-correct weakness with potassium or a salt substitute.",
+      "sources": [
+        "capsule",
+        "tablet"
+      ]
+    },
+    {
+      "section": "product",
+      "summary": "Current selected products are prescription oral tablets and capsules.",
+      "takeaway": "The strength convention is triamterene / hydrochlorothiazide.",
+      "sources": [
+        "capsule",
+        "confirm",
+        "tablet"
+      ]
+    }
+  ],
+  "limitations": [
+    "Current Advagen escalation sentence prints75/25 despite composition/usual-dose/supplied75/50; discrepancy explicitly shown, numeric dosing independently supported by correct current comparison label.",
+    "Renal contraindication has no numeric label cutoff; no invented eGFR threshold or adjustment table.",
+    "Tablet potassium prohibition and narrowly supervised capsule severe-hypokalemia exception preserved; no self-supplement recommendation."
+  ],
+  "unresolved_source_questions": [
+    {
+      "material": false,
+      "source": "tablet",
+      "sections": "DOSAGE AND ADMINISTRATION",
+      "issue": "One escalation sentence prints75mg/25mg. Same label composition/usual-dose/package and independently reviewed current confirm label support75mg/50mg. Publication explicitly reports inconsistency and never offers75mg/25mg product/regimen. Manufacturer correction not presumed."
+    },
+    {
+      "material": false,
+      "source": "tablet",
+      "sections": "Hepatic Coma; Folic Acid Deficiency",
+      "issue": "January2026 source has truncated hepatic-coma phrase and apparent blood-elevations typo. Complete comparator and capsule sections independently support published hepatic-coma/blood-evaluation wording; source itself not silently repaired."
+    }
+  ],
+  "validation": {
+    "schema": "Actual current validateMonograph returned zero errors; exact8sectionorder,4Safety/3Productcards and3hero tuples confirmed",
+    "tests_build_lint": "Parent batch checks required",
+    "rendered_page": "Parent batch QA required"
+  },
+  "monograph_sha256": "b2ee561a878f66ced9690fd54eeabb782556cba25c365ebf3febe448ded461e7",
+  "source_archive": {
+    "directory": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-14-thyroid-metformin",
+    "checked": "2026-10-01",
+    "verified": "All retained selected full label XML/parsed sections and FDA PDF plus NIH access records copied with exactSHA256 verification. NIH fullPDF not locally retained; accessrecord explicitly identified."
+  }
+}

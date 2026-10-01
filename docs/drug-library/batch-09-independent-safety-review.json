@@ -156,7 +156,7 @@
     },
     {
       "drug": "topiramate",
-      "fileSha256": "46d96e835d77d30c21122549f0ef22e266df428d95585e367a6e88880514e256",
+      "fileSha256": "4671871bc9812cabb72a965e6933fe196fa8e1dd7e7b065b607c1297ebb2fe96",
       "result": "No material clinical mismatch identified in enumerated assertions.",
       "checks": [
         {
@@ -187,7 +187,14 @@
         "productCards": 3
       },
       "issues": [],
-      "sourceGaps": []
+      "sourceGaps": [],
+      "formattingRevisionIndependent": {
+        "checked": "2026-10-01",
+        "priorSha256": "46d96e835d77d30c21122549f0ef22e266df428d95585e367a6e88880514e256",
+        "currentSha256": "4671871bc9812cabb72a965e6933fe196fa8e1dd7e7b065b607c1297ebb2fe96",
+        "proof": "Independently applied documented word-separator mapping to complete prior git HEAD clinical object; exact equality with current parsed object, with all tables, numerical values and sources preserved.",
+        "renderedQa": "Parent owns rendered layout checks; not independently claimed here."
+      }
     },
     {
       "drug": "tizanidine",

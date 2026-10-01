@@ -56,7 +56,7 @@ export const estradiol = {
     },
     {
       "id": "estring",
-      "title": "Estring 7.5 mcg/day vaginal system · Updated prescribing information",
+      "title": "Estring 7.5 mcg / day vaginal system · Updated prescribing information",
       "publisher": "DailyMed / Pharmacia & Upjohn Company LLC",
       "note": "Current SPL version 7, effective 2026-04-23. Current 2026 label without boxed warning; also cross-checked FDA-approved 2026 supplement 22.",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=110b9865-5a07-4d45-b560-e89947f12600"
@@ -106,7 +106,7 @@ export const estradiol = {
           ],
           "open": true,
           "paragraphs": [
-            "Selected oral and twice-weekly patch labels include moderate-to-severe menopausal vasomotor symptoms, vulvar/vaginal atrophy, hypoestrogenism from hypogonadism/castration/primary ovarian failure, and osteoporosis prevention in appropriately selected patients. For vaginal symptoms alone, consider a local vaginal product first; for osteoporosis prevention alone, consider non-estrogen options and individual fracture risk."
+            "Selected oral and twice-weekly patch labels include moderate-to-severe menopausal vasomotor symptoms, vulvar / vaginal atrophy, hypoestrogenism from hypogonadism / castration / primary ovarian failure, and osteoporosis prevention in appropriately selected patients. For vaginal symptoms alone, consider a local vaginal product first; for osteoporosis prevention alone, consider non-estrogen options and individual fracture risk."
           ]
         },
         {
@@ -117,7 +117,7 @@ export const estradiol = {
             "guideline"
           ],
           "paragraphs": [
-            "Vagifem treats atrophic vaginitis due to menopause. Estring treats moderate-to-severe vulvar/vaginal atrophy symptoms due to menopause. These selected low-dose products treat local symptoms and are not systemic vasomotor regimens. Estring is distinct from systemic-dose vaginal rings such as Femring, which is outside this profile."
+            "Vagifem treats atrophic vaginitis due to menopause. Estring treats moderate-to-severe vulvar / vaginal atrophy symptoms due to menopause. These selected low-dose products treat local symptoms and are not systemic vasomotor regimens. Estring is distinct from systemic-dose vaginal rings such as Femring, which is outside this profile."
           ]
         },
         {
@@ -127,7 +127,7 @@ export const estradiol = {
             "oralcurrent"
           ],
           "paragraphs": [
-            "The oral label also lists palliation of metastatic breast cancer in selected women/men and advanced androgen-dependent prostate cancer. These legacy labeled oncology uses need specialist assessment and are not routine menopausal therapy; no oncology regimen is supplied here. Gender-affirming therapy, injectable estradiol esters, gels/sprays, contraceptive combinations, and other vaginal products require separate review."
+            "The oral label also lists palliation of metastatic breast cancer in selected women / men and advanced androgen-dependent prostate cancer. These legacy labeled oncology uses need specialist assessment and are not routine menopausal therapy; no oncology regimen is supplied here. Gender-affirming therapy, injectable estradiol esters, gels / sprays, contraceptive combinations, and other vaginal products require separate review."
           ]
         }
       ]
@@ -147,29 +147,29 @@ export const estradiol = {
           ],
           "table": {
             "headers": [
-              "Product/indication",
+              "Product / indication",
               "Selected label regimen",
               "Scope"
             ],
             "rows": [
               [
                 "Oral menopausal symptoms",
-                "Initial 1–2 mg/day; titrate to response; label example 3 weeks on/1 week off",
-                "Selected labels direct periodic reassessment/taper attempts"
+                "Initial 1–2 mg / day; titrate to response; label example 3 weeks on / 1 week off",
+                "Selected labels direct periodic reassessment / taper attempts"
               ],
               [
                 "Oral female hypoestrogenism",
-                "Initial 1–2 mg/day; individualize maintenance",
+                "Initial 1–2 mg / day; individualize maintenance",
                 "Specialist evaluation of cause"
               ],
               [
                 "Twice-weekly patch · symptoms",
-                "Start 0.0375 mg/day delivery; replace twice weekly",
+                "Start 0.0375 mg / day delivery; replace twice weekly",
                 "Response-guided adjustment"
               ],
               [
                 "Twice-weekly patch · osteoporosis prevention",
-                "Start 0.025 mg/day delivery; replace twice weekly",
+                "Start 0.025 mg / day delivery; replace twice weekly",
                 "Consider non-estrogen alternatives first"
               ]
             ]
@@ -183,7 +183,7 @@ export const estradiol = {
             "estring"
           ],
           "paragraphs": [
-            "Vagifem:one 10 mcg insert using the supplied applicator daily for 2 weeks, then twice weekly (for example Tuesday/Friday). Estring:one 2 mg reservoir ring delivering approximately 7.5 mcg/day, positioned in the upper third of the vagina continuously for 90 days; remove and replace if ongoing therapy is appropriate. The 2 mg reservoir is not a daily dose. If expelled, rinse Estring in lukewarm water and reinsert; retaining it beyond 90 days risks loss of effect and local complications."
+            "Vagifem:one 10 mcg insert using the supplied applicator daily for 2 weeks, then twice weekly (for example Tuesday / Friday). Estring:one 2 mg reservoir ring delivering approximately 7.5 mcg / day, positioned in the upper third of the vagina continuously for 90 days; remove and replace if ongoing therapy is appropriate. The 2 mg reservoir is not a daily dose. If expelled, rinse Estring in lukewarm water and reinsert; retaining it beyond 90 days risks loss of effect and local complications."
           ]
         },
         {
@@ -196,7 +196,7 @@ export const estradiol = {
             "guideline"
           ],
           "paragraphs": [
-            "For systemic estrogen with an intact uterus, provide an adequate progestogen plan to reduce endometrial hyperplasia/cancer risk. After hysterectomy, progestogen is generally unnecessary, although residual endometriosis may warrant it. The Menopause Society states that recommended low-dose vaginal estrogen generally does not require progestogen; long-term trial data beyond 1 year are limited. Older Vagifem labeling contains a broader instruction to consider progestogen, so distinguish this from systemic dosing and individualize the plan."
+            "For systemic estrogen with an intact uterus, provide an adequate progestogen plan to reduce endometrial hyperplasia / cancer risk. After hysterectomy, progestogen is generally unnecessary, although residual endometriosis may warrant it. The Menopause Society states that recommended low-dose vaginal estrogen generally does not require progestogen; long-term trial data beyond 1 year are limited. Older Vagifem labeling contains a broader instruction to consider progestogen, so distinguish this from systemic dosing and individualize the plan."
           ]
         },
         {
@@ -205,7 +205,7 @@ export const estradiol = {
             "patch"
           ],
           "paragraphs": [
-            "Apply the selected patch immediately after opening its pouch to clean, dry lower abdomen/buttocks; never breasts. Press firmly about 10 seconds, rotate sites with at least 1 week before reuse, and avoid oily/irritated skin or waistlines. Replace twice weekly; if detached, reapply or replace at another site and keep the original schedule. The selected label uses continuous estrogen after hysterectomy and describes 3 weeks on/1 week off with a uterus; coordinate the prescribed estrogen/progestogen regimen rather than changing schedules independently."
+            "Apply the selected patch immediately after opening its pouch to clean, dry lower abdomen / buttocks; never breasts. Press firmly about 10 seconds, rotate sites with at least 1 week before reuse, and avoid oily / irritated skin or waistlines. Replace twice weekly; if detached, reapply or replace at another site and keep the original schedule. The selected label uses continuous estrogen after hysterectomy and describes 3 weeks on / 1 week off with a uterus; coordinate the prescribed estrogen / progestogen regimen rather than changing schedules independently."
           ]
         }
       ]
@@ -228,9 +228,9 @@ export const estradiol = {
           "open": true,
           "tone": "warning",
           "paragraphs": [
-            "Systemic unopposed estrogen increases endometrial cancer risk in women with a uterus; investigate persistent or recurrent unexplained postmenopausal bleeding. Assess thromboembolic and cardiovascular risks and symptoms promptly. Breast/ovarian cancer considerations depend on regimen, duration and patient history; results from oral conjugated-estrogen WHI trials are not numerical risk estimates for every estradiol route or dose.",
-            "The selected Golden State 2 mg oral tablet contains tartrazine, which can cause allergic-type reactions in susceptible individuals, particularly with aspirin hypersensitivity. Other estrogen warnings include gallbladder disease, severe hypercalcemia in metastatic breast cancer, retinal vascular events, elevated blood pressure, hypertriglyceridemia/pancreatitis, cholestatic jaundice, thyroid-replacement changes, fluid retention, hypocalcemia, endometriosis, severe allergy and angioedema, and exacerbation of susceptible conditions such as migraine or epilepsy.",
-            "Local-product precautions matter: Vagifem applicators may abrade severely atrophic mucosa. Estring can cause irritation, ulceration or erosion and may be unsuitable with vaginal narrowing/prolapse; treat infection before use and remove the ring during an infection until treated. Estring has lower systemic exposure, but the extent to which systemic estrogen risks apply is uncertain."
+            "Systemic unopposed estrogen increases endometrial cancer risk in women with a uterus; investigate persistent or recurrent unexplained postmenopausal bleeding. Assess thromboembolic and cardiovascular risks and symptoms promptly. Breast / ovarian cancer considerations depend on regimen, duration and patient history; results from oral conjugated-estrogen WHI trials are not numerical risk estimates for every estradiol route or dose.",
+            "The selected Golden State 2 mg oral tablet contains tartrazine, which can cause allergic-type reactions in susceptible individuals, particularly with aspirin hypersensitivity. Other estrogen warnings include gallbladder disease, severe hypercalcemia in metastatic breast cancer, retinal vascular events, elevated blood pressure, hypertriglyceridemia / pancreatitis, cholestatic jaundice, thyroid-replacement changes, fluid retention, hypocalcemia, endometriosis, severe allergy and angioedema, and exacerbation of susceptible conditions such as migraine or epilepsy.",
+            "Local-product precautions matter: Vagifem applicators may abrade severely atrophic mucosa. Estring can cause irritation, ulceration or erosion and may be unsuitable with vaginal narrowing / prolapse; treat infection before use and remove the ring during an infection until treated. Estring has lower systemic exposure, but the extent to which systemic estrogen risks apply is uncertain."
           ]
         },
         {
@@ -244,7 +244,7 @@ export const estradiol = {
             "guideline"
           ],
           "paragraphs": [
-            "Selected products contraindicate unexplained genital bleeding, estrogen-dependent neoplasia, active/history of DVT or PE, specified arterial thromboembolic disease, hepatic disease, or hypersensitivity. Patch, Vagifem and current Estring also specify proteinC/proteinS/antithrombin deficiency or other thrombophilia. Oral labels specify active/recent arterial disease; patch/Vagifem/Estring include history. Oral and Vagifem/patch labels specify breast cancer/history (oral has a specialist metastatic-treatment exception). Current Estring no longer lists breast cancer history as a separate blanket contraindication; any cancer-survivor use requires individualized specialist discussion. Do not use for pregnancy."
+            "Selected products contraindicate unexplained genital bleeding, estrogen-dependent neoplasia, active / history of DVT or PE, specified arterial thromboembolic disease, hepatic disease, or hypersensitivity. Patch, Vagifem and current Estring also specify proteinC / proteinS / antithrombin deficiency or other thrombophilia. Oral labels specify active / recent arterial disease; patch / Vagifem / Estring include history. Oral and Vagifem / patch labels specify breast cancer / history (oral has a specialist metastatic-treatment exception). Current Estring no longer lists breast cancer history as a separate blanket contraindication; any cancer-survivor use requires individualized specialist discussion. Do not use for pregnancy."
           ]
         },
         {
@@ -260,7 +260,7 @@ export const estradiol = {
             "fda-approval"
           ],
           "paragraphs": [
-            "FDA began requesting changes in November 2025 and approved an initial group in February 2026. The updated Estring label has no boxed warning. The selected oral, Sandoz patch and Vagifem public labels still contain earlier boxed language, including endometrial/cardiovascular and dementia-related warnings. FDA retains the endometrial-cancer box for systemic estrogen-alone products while removing other specified boxed risk statements as individual labels are updated. Check the actual dispensed product’s current label; neither a universal old class box nor universal box removal is accurate."
+            "FDA began requesting changes in November 2025 and approved an initial group in February 2026. The updated Estring label has no boxed warning. The selected oral, Sandoz patch and Vagifem public labels still contain earlier boxed language, including endometrial / cardiovascular and dementia-related warnings. FDA retains the endometrial-cancer box for systemic estrogen-alone products while removing other specified boxed risk statements as individual labels are updated. Check the actual dispensed product’s current label; neither a universal old class box nor universal box removal is accurate."
           ]
         },
         {
@@ -272,7 +272,7 @@ export const estradiol = {
             "estring"
           ],
           "paragraphs": [
-            "Systemic therapy can cause headache, breast tenderness, nausea, bloating, edema, bleeding/spotting and patch-site reactions. Vagifem trials reported back pain, diarrhea, vaginal itching and yeast infection; Estring may cause discharge, irritation or local injury. Serious risks are described above; their likelihood depends on route, regimen and patient factors, and frequencies from different product trials are not directly comparable."
+            "Systemic therapy can cause headache, breast tenderness, nausea, bloating, edema, bleeding / spotting and patch-site reactions. Vagifem trials reported back pain, diarrhea, vaginal itching and yeast infection; Estring may cause discharge, irritation or local injury. Serious risks are described above; their likelihood depends on route, regimen and patient factors, and frequencies from different product trials are not directly comparable."
           ]
         }
       ]
@@ -307,7 +307,7 @@ export const estradiol = {
             "estring"
           ],
           "paragraphs": [
-            "Estrogens increase thyroid-binding globulin and other binding proteins. Patients dependent on thyroid replacement may need a dose change; monitor thyroid function. Total thyroid or sex-hormone measures and some coagulation/lipid tests may shift, so interpret results in context rather than treating a binding-protein change as a new disease."
+            "Estrogens increase thyroid-binding globulin and other binding proteins. Patients dependent on thyroid replacement may need a dose change; monitor thyroid function. Total thyroid or sex-hormone measures and some coagulation / lipid tests may shift, so interpret results in context rather than treating a binding-protein change as a new disease."
           ]
         },
         {
@@ -351,7 +351,7 @@ export const estradiol = {
             "estring"
           ],
           "paragraphs": [
-            "Estradiol menopausal products are not pregnancy treatments; oral labeling contraindicates known/suspected pregnancy, and Estring should not be used in pregnancy or lactation. Estrogens enter milk and can reduce milk production; other selected labels require clinical benefit-risk assessment. Patch/Vagifem/Estring are not indicated in children; oral pediatric safety/effectiveness is unestablished, and exposure before skeletal maturity can accelerate epiphyseal closure."
+            "Estradiol menopausal products are not pregnancy treatments; oral labeling contraindicates known / suspected pregnancy, and Estring should not be used in pregnancy or lactation. Estrogens enter milk and can reduce milk production; other selected labels require clinical benefit-risk assessment. Patch / Vagifem / Estring are not indicated in children; oral pediatric safety / effectiveness is unestablished, and exposure before skeletal maturity can accelerate epiphyseal closure."
           ]
         },
         {
@@ -364,7 +364,7 @@ export const estradiol = {
             "guideline"
           ],
           "paragraphs": [
-            "Hepatic impairment/disease is a contraindication in selected labels, not simply a reason to copy a reduced oral dose. Kidney/cardiac disease increases concern about fluid retention; no universal renal dosing algorithm is established, and Estring has no dedicated renal/hepatic PK studies. Any consideration of low-dose vaginal estrogen after breast cancer needs oncology coordination; do not override the selected product’s contraindications through a general guideline summary."
+            "Hepatic impairment / disease is a contraindication in selected labels, not simply a reason to copy a reduced oral dose. Kidney / cardiac disease increases concern about fluid retention; no universal renal dosing algorithm is established, and Estring has no dedicated renal / hepatic PK studies. Any consideration of low-dose vaginal estrogen after breast cancer needs oncology coordination; do not override the selected product’s contraindications through a general guideline summary."
           ]
         }
       ]
@@ -397,7 +397,7 @@ export const estradiol = {
             "estring"
           ],
           "paragraphs": [
-            "Oral therapy undergoes hepatic first-pass metabolism; skin and vaginal absorption bypass initial first-pass delivery. Estradiol interconverts with estrone and estriol, undergoes conjugation and enterohepatic recycling, and is excreted in urine as parent/metabolite conjugates. Route and product design change systemic exposure; a patch mg/day, oral mg, and vaginal mcg dose cannot be converted by simple arithmetic."
+            "Oral therapy undergoes hepatic first-pass metabolism; skin and vaginal absorption bypass initial first-pass delivery. Estradiol interconverts with estrone and estriol, undergoes conjugation and enterohepatic recycling, and is excreted in urine as parent / metabolite conjugates. Route and product design change systemic exposure; a patch mg / day, oral mg, and vaginal mcg dose cannot be converted by simple arithmetic."
           ]
         },
         {
@@ -408,7 +408,7 @@ export const estradiol = {
             "estring"
           ],
           "paragraphs": [
-            "Estring produces an initial absorption peak followed by relatively low steady systemic exposure while releasing about 7.5 mcg/day locally. Vagifem also has systemic absorption; neither is a zero-absorption product. Serum estradiol/FSH levels generally do not predict symptom response or establish safety for routine menopausal/local-atrophy management."
+            "Estring produces an initial absorption peak followed by relatively low steady systemic exposure while releasing about 7.5 mcg / day locally. Vagifem also has systemic absorption; neither is a zero-absorption product. Serum estradiol / FSH levels generally do not predict symptom response or establish safety for routine menopausal / local-atrophy management."
           ]
         }
       ]
@@ -430,7 +430,7 @@ export const estradiol = {
           ],
           "open": true,
           "paragraphs": [
-            "Review symptom response, adherence, uterine/progestogen plan, blood pressure, bleeding and breast findings at follow-up. Schedule breast screening according to age, risk and prior results; investigate unexplained persistent/recurrent bleeding. Monitor thyroid function when on replacement, triglycerides or calcium when clinically relevant, and fluid retention in cardiac/renal disease. Routine serum-hormone targeting is not established for these menopause regimens."
+            "Review symptom response, adherence, uterine / progestogen plan, blood pressure, bleeding and breast findings at follow-up. Schedule breast screening according to age, risk and prior results; investigate unexplained persistent / recurrent bleeding. Monitor thyroid function when on replacement, triglycerides or calcium when clinically relevant, and fluid retention in cardiac / renal disease. Routine serum-hormone targeting is not established for these menopause regimens."
           ]
         },
         {
@@ -442,7 +442,7 @@ export const estradiol = {
             "estring"
           ],
           "paragraphs": [
-            "Seek urgent care for chest pain, shortness of breath, unilateral leg swelling, stroke symptoms, severe allergy, or sudden visual change. Report unexplained genital bleeding, breast changes, jaundice, severe headache or new pelvic/vaginal pain. Explain the selected patch/application or vaginal insertion instructions, replacement calendar, and current product warning status; do not self-substitute routes."
+            "Seek urgent care for chest pain, shortness of breath, unilateral leg swelling, stroke symptoms, severe allergy, or sudden visual change. Report unexplained genital bleeding, breast changes, jaundice, severe headache or new pelvic / vaginal pain. Explain the selected patch / application or vaginal insertion instructions, replacement calendar, and current product warning status; do not self-substitute routes."
           ]
         },
         {
@@ -454,7 +454,7 @@ export const estradiol = {
             "estring"
           ],
           "paragraphs": [
-            "Excess estrogen may cause nausea, vomiting, breast tenderness, abdominal pain, drowsiness/fatigue or withdrawal bleeding. Obtain professional advice and stop the excessive exposure under clinical direction; treatment is supportive. An Estring kept longer than 90 days loses effective delivery rather than creating a standard overdose scenario."
+            "Excess estrogen may cause nausea, vomiting, breast tenderness, abdominal pain, drowsiness / fatigue or withdrawal bleeding. Obtain professional advice and stop the excessive exposure under clinical direction; treatment is supportive. An Estring kept longer than 90 days loses effective delivery rather than creating a standard overdose scenario."
           ]
         }
       ]
@@ -477,10 +477,10 @@ export const estradiol = {
             ],
             [
               "Delivery rate",
-              "0.0375 mg/day"
+              "0.0375 mg / day"
             ],
             [
-              "Reservoir/system area",
+              "Reservoir / system area",
               "0.585 mg estradiol ·3.75 cm² system"
             ],
             [
@@ -499,7 +499,7 @@ export const estradiol = {
             "estring"
           ],
           "paragraphs": [
-            "Reviewed representative oral tablet:2 mg; current comparison oral label describes 0.5/1/2 mg micronized estradiol. Selected twice-weekly patches deliver 0.025,0.0375,0.05,0.075,0.1 mg/day. Vagifem:10 mcg insert in disposable applicator. Estring:2 mg reservoir releasing 7.5 mcg/day over 90 days. Weekly patches, creams, Imvexxy, Femring, gels/sprays and injectable esters are not interchangeable regimens and are outside this focused profile."
+            "Reviewed representative oral tablet:2 mg; current comparison oral label describes 0.5 / 1 / 2 mg micronized estradiol. Selected twice-weekly patches deliver 0.025, 0.0375, 0.05, 0.075, 0.1 mg / day. Vagifem:10 mcg insert in disposable applicator. Estring:2 mg reservoir releasing 7.5 mcg / day over 90 days. Weekly patches, creams, Imvexxy, Femring, gels / sprays and injectable esters are not interchangeable regimens and are outside this focused profile."
           ]
         },
         {

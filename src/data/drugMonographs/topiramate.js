@@ -119,7 +119,7 @@ export const topiramate = {
               ],
               [
                 "Adjunctive epilepsy · ≥17",
-                "Start 25–50 mg/day; increase 25–50 mg/day weekly. Partial-onset/Lennox-Gastaut target 200–400 mg/day; primary generalized tonic-clonic target 400 mg/day. IR twice daily; XR once daily."
+                "Start 25–50 mg/day; increase 25–50 mg/day weekly. Partial-onset or Lennox-Gastaut target 200–400 mg/day; primary generalized tonic-clonic target 400 mg/day. IR twice daily; XR once daily."
               ],
               [
                 "Migraine prevention · ≥12",
@@ -244,18 +244,18 @@ export const topiramate = {
             "Acute myopia/secondary angle-closure glaucoma often appears within the first month; eye pain or decreased vision requires urgent assessment and clinician-directed rapid discontinuation. Visual-field defects can also occur without raised pressure.",
             "Reduced sweating/hyperthermia, particularly in children or heat, can require hospital care. Monitor temperature/sweating and review anticholinergic or carbonic-anhydrase-inhibitor co-therapy.",
             "Carbonic-anhydrase inhibition causes non-anion-gap metabolic acidosis. Check bicarbonate initially/periodically; persistent acidosis may require dose reduction/tapered cessation or consideration of alkali if treatment continues. Renal disease, diarrhea, ketogenic diets and other acidifying therapies increase risk.",
-            "Suicidality, depression, cognitive slowing, concentration/memory/word-finding difficulty and sedation warrant review. Faster titration/higher doses increase cognitive risk. Monitor weight/growth and pediatric bone-health concerns.",
+            "Suicidality, depression, cognitive slowing, concentration, memory and word-finding difficulty and sedation warrant review. Faster titration/higher doses increase cognitive risk. Monitor weight/growth and pediatric bone-health concerns.",
             "Fetal harm includes oral clefts and small-for-gestational-age birth. Discuss effective contraception and alternatives before pregnancy; do not abruptly stop seizure therapy.",
             "DRESS may begin with fever/swelling/lymph nodes before rash; urgently evaluate and discontinue if no alternate cause. Stop for suspected SJS/TEN or anaphylaxis; do not rechallenge SJS/TEN.",
             "Hyperammonemic encephalopathy can occur with or without valproate; unexplained lethargy/vomiting/mental change needs ammonia assessment. Valproate also increases hypothermia risk.",
             "Kidney stones: maintain appropriate hydration; avoid combinations/diets causing additive acidosis and monitor carbonic-anhydrase-inhibitor combinations closely.",
-            "Current Qudexy XR additionally warns, based on in-vitro topiramate findings, of potentially serious cardiac rhythm/conduction abnormalities, especially with existing heart disease/arrhythmias. Weigh benefit/risk and discontinue for significant conduction depression/arrhythmia. This specific current label precaution is retained even though the other selected versions lack that subsection."
+            "Current Qudexy XR additionally warns, based on in-vitro topiramate findings, of potentially serious cardiac rhythm or conduction abnormalities, especially with existing heart disease or arrhythmias. Weigh benefit/risk and discontinue for significant conduction depression or arrhythmia. This specific current label precaution is retained even though the other selected versions lack that subsection."
           ]
         },
         {
           "title": "Contraindications",
           "paragraphs": [
-            "Current selected labels contraindicate prior hypersensitivity to topiramate/the exact product or its inactive ingredients, including reported anaphylaxis/angioedema. Trokendi XR additionally contraindicates alcohol within six hours before or after administration. Reproductive risk is a serious U.S. warning; do not misrepresent a different jurisdiction’s pregnancy-prevention restrictions as this U.S. label’s formal contraindication list."
+            "Current selected labels contraindicate prior hypersensitivity to topiramate, the exact product or its inactive ingredients, including reported anaphylaxis or angioedema. Trokendi XR additionally contraindicates alcohol within six hours before or after administration. Reproductive risk is a serious U.S. warning; do not misrepresent a different jurisdiction’s pregnancy-prevention restrictions as this U.S. label’s formal contraindication list."
           ],
           "sources": [
             "topamax",
@@ -314,23 +314,23 @@ export const topiramate = {
             "rows": [
               [
                 "Phenytoin / carbamazepine",
-                "Lower topiramate exposure; initiation/withdrawal may require adjustment. Topiramate can raise phenytoin in some patients."
+                "Lower topiramate exposure; initiation or withdrawal may require adjustment. Topiramate can raise phenytoin in some patients."
               ],
               [
                 "Valproate",
-                "Hyperammonemia/encephalopathy and hypothermia; check ammonia with compatible symptoms."
+                "Hyperammonemia and encephalopathy and hypothermia; check ammonia with compatible symptoms."
               ],
               [
                 "Acetazolamide / zonisamide and other carbonic anhydrase inhibitors",
-                "Additive acidosis/stones; monitor closely. Review ketogenic diet/other acidifying therapies."
+                "Additive acidosis and stones; monitor closely. Review ketogenic diet or other acidifying therapies."
               ],
               [
                 "Estrogen-containing or progestin-only contraceptives",
-                "Potential decreased efficacy, sometimes without bleeding changes; review an effective method with prescriber. Exposure effects vary by dose/co-therapy."
+                "Potential decreased efficacy, sometimes without bleeding changes; review an effective method with prescriber. Exposure effects vary by dose and co-therapy."
               ],
               [
                 "Alcohol / CNS depressants",
-                "Extreme caution for cognitive/sedative effects; Trokendi specifically prohibits alcohol ±6 hours."
+                "Extreme caution for cognitive and sedative effects; Trokendi specifically prohibits alcohol ±6 hours."
               ],
               [
                 "Hydrochlorothiazide",
@@ -346,7 +346,7 @@ export const topiramate = {
               ],
               [
                 "Warfarin / vitamin K antagonists",
-                "Reduced INR/prothrombin time reported postmarketing; monitor anticoagulation when therapy changes."
+                "Reduced INR or prothrombin time reported postmarketing; monitor anticoagulation when therapy changes."
               ]
             ]
           }
@@ -466,7 +466,7 @@ export const topiramate = {
         {
           "title": "Counseling and urgent action",
           "paragraphs": [
-            "Do not abruptly stop or change release forms. Avoid driving until cognitive/sedative effects are understood. Maintain appropriate hydration and watch overheating. Acute eye symptoms, severe rash/blistering, fever with swelling, airway swelling, serious mental changes or suicidal thoughts need urgent/emergency assessment. Review missed-dose instructions for the dispensed product and contact the clinician after multiple missed doses; do not double. Follow calibrated solution measuring and product-specific sprinkle/intact rules."
+            "Do not abruptly stop or change release forms. Avoid driving until cognitive and sedative effects are understood. Maintain appropriate hydration and watch overheating. Acute eye symptoms, severe rash/blistering, fever with swelling, airway swelling, serious mental changes or suicidal thoughts need urgent/emergency assessment. Review missed-dose instructions for the dispensed product and contact the clinician after multiple missed doses; do not double. Follow calibrated solution measuring and product-specific sprinkle/intact rules."
           ],
           "sources": [
             "topamax",

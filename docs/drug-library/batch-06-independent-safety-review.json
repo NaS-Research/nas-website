@@ -197,7 +197,7 @@
     },
     {
       "drug": "lamotrigine",
-      "fileSha256": "144ea4df6287a5cdf2b1b69f6d2330ac52769a1c3edb6f2fe9874010aadfa900",
+      "fileSha256": "78eac8e16a03c018060e04690024398549974aa04fa53bef82cde79b30f620a6",
       "result": "Pediatric frequency discrepancy corrected; no unresolved material error in checked assertions.",
       "checks": [
         {
@@ -247,7 +247,14 @@
           "note": "Total daily dose correct; administration division differs from exact pediatric label.",
           "correctionVerified": "0.6 mg/kg/day in 2 doses"
         }
-      ]
+      ],
+      "formattingRevisionIndependent": {
+        "checked": "2026-10-01",
+        "priorSha256": "144ea4df6287a5cdf2b1b69f6d2330ac52769a1c3edb6f2fe9874010aadfa900",
+        "currentSha256": "78eac8e16a03c018060e04690024398549974aa04fa53bef82cde79b30f620a6",
+        "proof": "Independently compared original git HEAD and actual current tables: every original co-treatment column + stage + verbatim dose/frequency maps exactly to current two-column rows; remaining changes are column-context label and slash spacing.",
+        "renderedQa": "Parent owns rendered layout checks; not independently claimed here."
+      }
     },
     {
       "drug": "zolpidem",
@@ -410,7 +417,7 @@
     },
     {
       "drug": "estradiol",
-      "fileSha256": "14e2b2ef59c6fa3da4f4df90e71aeb0c902feefe58999f49a5724c75d202c11c",
+      "fileSha256": "c09d0cdd425da3b221540ff786aaaee405ee8ea8552a307ee8ab81deac7d2682",
       "result": "No material error identified in selected checked critical assertions.",
       "checks": [
         {
@@ -472,7 +479,14 @@
         ],
         "productCards": 3
       },
-      "issues": []
+      "issues": [],
+      "formattingRevisionIndependent": {
+        "checked": "2026-10-01",
+        "priorSha256": "14e2b2ef59c6fa3da4f4df90e71aeb0c902feefe58999f49a5724c75d202c11c",
+        "currentSha256": "c09d0cdd425da3b221540ff786aaaee405ee8ea8552a307ee8ab81deac7d2682",
+        "proof": "Independently parsed prior git HEAD and current complete clinical objects; exact equality after whitespace removal; table shapes, values, sources and clinical statements unchanged.",
+        "renderedQa": "Parent owns rendered layout checks; not independently claimed here."
+      }
     },
     {
       "drug": "cholecalciferol",

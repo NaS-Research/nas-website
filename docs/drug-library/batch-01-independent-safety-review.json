@@ -44,7 +44,7 @@
     },
     {
       "drug": "rosuvastatin",
-      "fileSha256": "70d1beb1982f23a6aa626f3666d09e865e906ada5f87daffdb9be7a5c46ce5e8",
+      "fileSha256": "3ce45b3e21bdbc70a8761dd491b1c9d8e369f115c88b8a699882554ea782d81b",
       "result": "No material dose/unit/contraindication error identified in assertions checked.",
       "checks": [
         {
@@ -79,7 +79,14 @@
           "access": "direct-public-source-retrieved",
           "result": "agrees-except-listed-issues"
         }
-      ]
+      ],
+      "formattingRevisionIndependent": {
+        "checked": "2026-10-01",
+        "priorSha256": "70d1beb1982f23a6aa626f3666d09e865e906ada5f87daffdb9be7a5c46ce5e8",
+        "currentSha256": "3ce45b3e21bdbc70a8761dd491b1c9d8e369f115c88b8a699882554ea782d81b",
+        "proof": "Independently parsed prior git HEAD and current complete clinical objects; exact equality after whitespace removal; table shapes, values, sources and clinical statements unchanged.",
+        "renderedQa": "Parent owns rendered layout checks; not independently claimed here."
+      }
     },
     {
       "drug": "levothyroxine",

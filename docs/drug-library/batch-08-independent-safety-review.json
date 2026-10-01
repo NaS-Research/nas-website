@@ -183,7 +183,7 @@
     },
     {
       "drug": "lorazepam",
-      "fileSha256": "4f5607c5f6535fdf538c0f59657eedd5a6f9db10a64d02c45aead91ffdc4246d",
+      "fileSha256": "c00a16e73ad64ef9188dd11645ff975518f6042d87400699c89a8c074ee0df49",
       "result": "No material clinical mismatch identified in enumerated assertions.",
       "checks": [
         {
@@ -222,7 +222,14 @@
         "productCards": 3
       },
       "issues": [],
-      "sourceGaps": []
+      "sourceGaps": [],
+      "formattingRevisionIndependent": {
+        "checked": "2026-10-01",
+        "priorSha256": "4f5607c5f6535fdf538c0f59657eedd5a6f9db10a64d02c45aead91ffdc4246d",
+        "currentSha256": "c00a16e73ad64ef9188dd11645ff975518f6042d87400699c89a8c074ee0df49",
+        "proof": "Independently parsed prior git HEAD and current complete clinical objects; exact equality after whitespace removal; table shapes, values, sources and clinical statements unchanged.",
+        "renderedQa": "Parent owns rendered layout checks; not independently claimed here."
+      }
     },
     {
       "drug": "fluticasone-salmeterol",

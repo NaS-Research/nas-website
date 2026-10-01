@@ -90,7 +90,7 @@ export const lamotrigine = {
           ],
           "open": true,
           "paragraphs": [
-            "Columns refer to carbamazepine, phenytoin, phenobarbital or primidone as the listed inducing AEDs. Rifampin/lopinavir-ritonavir follow inducer guidance; estrogen-containing products and atazanavir-ritonavir require the separate label instructions. All numbers are total daily dose unless noted. These tables are label schedules for the stated indication, not a self-directed titration plan."
+            "Co-treatment groups refer to carbamazepine, phenytoin, phenobarbital or primidone as the listed inducing AEDs. Rifampin/lopinavir-ritonavir follow inducer guidance; estrogen-containing products and atazanavir-ritonavir require the separate label instructions. All numbers are total daily dose unless noted. These tables are label schedules for the stated indication, not a self-directed titration plan."
           ]
         },
         {
@@ -100,34 +100,56 @@ export const lamotrigine = {
           ],
           "table": {
             "headers": [
-              "Stage",
-              "Taking valproate",
-              "Neither valproate nor listed inducing AEDs",
-              "Listed inducing AEDs without valproate"
+              "Co-treatment and stage",
+              "Dose"
             ],
             "rows": [
               [
-                "Weeks 1–2",
-                "25 mg every other day",
-                "25 mg/day",
+                "Taking valproate · Weeks 1–2",
+                "25 mg every other day"
+              ],
+              [
+                "Neither valproate nor listed inducing AEDs · Weeks 1–2",
+                "25 mg/day"
+              ],
+              [
+                "Listed inducing AEDs without valproate · Weeks 1–2",
                 "50 mg/day"
               ],
               [
-                "Weeks 3–4",
-                "25 mg/day",
-                "50 mg/day",
+                "Taking valproate · Weeks 3–4",
+                "25 mg/day"
+              ],
+              [
+                "Neither valproate nor listed inducing AEDs · Weeks 3–4",
+                "50 mg/day"
+              ],
+              [
+                "Listed inducing AEDs without valproate · Weeks 3–4",
                 "100 mg/day in 2 doses"
               ],
               [
-                "Week 5 onward",
-                "Add 25–50 mg/day every 1–2 weeks",
-                "Add 50 mg/day every 1–2 weeks",
+                "Taking valproate · Week 5 onward",
+                "Add 25–50 mg/day every 1–2 weeks"
+              ],
+              [
+                "Neither valproate nor listed inducing AEDs · Week 5 onward",
+                "Add 50 mg/day every 1–2 weeks"
+              ],
+              [
+                "Listed inducing AEDs without valproate · Week 5 onward",
                 "Add 100 mg/day every 1–2 weeks"
               ],
               [
-                "Usual maintenance",
-                "100–200 mg/day with valproate alone; 100–400 with valproate + inducers, in 1–2 doses",
-                "225–375 mg/day in 2 doses",
+                "Taking valproate · Usual maintenance",
+                "100–200 mg/day with valproate alone; 100–400 with valproate + inducers, in 1–2 doses"
+              ],
+              [
+                "Neither valproate nor listed inducing AEDs · Usual maintenance",
+                "225–375 mg/day in 2 doses"
+              ],
+              [
+                "Listed inducing AEDs without valproate · Usual maintenance",
                 "300–500 mg/day in 2 doses"
               ]
             ]
@@ -140,34 +162,56 @@ export const lamotrigine = {
           ],
           "table": {
             "headers": [
-              "Stage",
-              "Taking valproate",
-              "Neither valproate nor listed inducing AEDs",
-              "Listed inducing AEDs without valproate"
+              "Co-treatment and stage",
+              "Dose"
             ],
             "rows": [
               [
-                "Weeks 1–2",
-                "0.15 mg/kg/day in 1–2 doses",
-                "0.3 mg/kg/day in 1–2 doses",
+                "Taking valproate · Weeks 1–2",
+                "0.15 mg/kg/day in 1–2 doses"
+              ],
+              [
+                "Neither valproate nor listed inducing AEDs · Weeks 1–2",
+                "0.3 mg/kg/day in 1–2 doses"
+              ],
+              [
+                "Listed inducing AEDs without valproate · Weeks 1–2",
                 "0.6 mg/kg/day in 2 doses"
               ],
               [
-                "Weeks 3–4",
-                "0.3 mg/kg/day in 1–2 doses",
-                "0.6 mg/kg/day in 2 doses",
+                "Taking valproate · Weeks 3–4",
+                "0.3 mg/kg/day in 1–2 doses"
+              ],
+              [
+                "Neither valproate nor listed inducing AEDs · Weeks 3–4",
+                "0.6 mg/kg/day in 2 doses"
+              ],
+              [
+                "Listed inducing AEDs without valproate · Weeks 3–4",
                 "1.2 mg/kg/day in 2 doses"
               ],
               [
-                "Week 5 onward · every 1–2 weeks",
-                "Add 0.3 mg/kg/day",
-                "Add 0.6 mg/kg/day",
+                "Taking valproate · Week 5 onward · every 1–2 weeks",
+                "Add 0.3 mg/kg/day"
+              ],
+              [
+                "Neither valproate nor listed inducing AEDs · Week 5 onward · every 1–2 weeks",
+                "Add 0.6 mg/kg/day"
+              ],
+              [
+                "Listed inducing AEDs without valproate · Week 5 onward · every 1–2 weeks",
                 "Add 1.2 mg/kg/day"
               ],
               [
-                "Usual maintenance",
-                "1–5 mg/kg/day, max 200 mg/day in 1–2 doses; valproate alone usually 1–3 mg/kg/day",
-                "4.5–7.5 mg/kg/day, max 300 mg/day in 2 doses",
+                "Taking valproate · Usual maintenance",
+                "1–5 mg/kg/day, max 200 mg/day in 1–2 doses; valproate alone usually 1–3 mg/kg/day"
+              ],
+              [
+                "Neither valproate nor listed inducing AEDs · Usual maintenance",
+                "4.5–7.5 mg/kg/day, max 300 mg/day in 2 doses"
+              ],
+              [
+                "Listed inducing AEDs without valproate · Usual maintenance",
                 "5–15 mg/kg/day, max 400 mg/day in 2 doses"
               ]
             ]
@@ -183,40 +227,68 @@ export const lamotrigine = {
           ],
           "table": {
             "headers": [
-              "Stage",
-              "Taking valproate",
-              "Neither valproate nor listed inducing AEDs",
-              "Listed inducing AEDs without valproate"
+              "Co-treatment and stage",
+              "Dose"
             ],
             "rows": [
               [
-                "Weeks 1–2",
-                "25 mg every other day",
-                "25 mg/day",
+                "Taking valproate · Weeks 1–2",
+                "25 mg every other day"
+              ],
+              [
+                "Neither valproate nor listed inducing AEDs · Weeks 1–2",
+                "25 mg/day"
+              ],
+              [
+                "Listed inducing AEDs without valproate · Weeks 1–2",
                 "50 mg/day"
               ],
               [
-                "Weeks 3–4",
-                "25 mg/day",
-                "50 mg/day",
+                "Taking valproate · Weeks 3–4",
+                "25 mg/day"
+              ],
+              [
+                "Neither valproate nor listed inducing AEDs · Weeks 3–4",
+                "50 mg/day"
+              ],
+              [
+                "Listed inducing AEDs without valproate · Weeks 3–4",
                 "100 mg/day in divided doses"
               ],
               [
-                "Week 5",
-                "50 mg/day",
-                "100 mg/day",
+                "Taking valproate · Week 5",
+                "50 mg/day"
+              ],
+              [
+                "Neither valproate nor listed inducing AEDs · Week 5",
+                "100 mg/day"
+              ],
+              [
+                "Listed inducing AEDs without valproate · Week 5",
                 "200 mg/day in divided doses"
               ],
               [
-                "Week 6",
-                "100 mg/day",
-                "200 mg/day",
+                "Taking valproate · Week 6",
+                "100 mg/day"
+              ],
+              [
+                "Neither valproate nor listed inducing AEDs · Week 6",
+                "200 mg/day"
+              ],
+              [
+                "Listed inducing AEDs without valproate · Week 6",
                 "300 mg/day in divided doses"
               ],
               [
-                "Week 7 / target",
-                "100 mg/day",
-                "200 mg/day",
+                "Taking valproate · Week 7 / target",
+                "100 mg/day"
+              ],
+              [
+                "Neither valproate nor listed inducing AEDs · Week 7 / target",
+                "200 mg/day"
+              ],
+              [
+                "Listed inducing AEDs without valproate · Week 7 / target",
                 "Up to 400 mg/day in divided doses"
               ]
             ]
@@ -232,46 +304,80 @@ export const lamotrigine = {
           ],
           "table": {
             "headers": [
-              "Stage",
-              "Taking valproate",
-              "Neither valproate nor listed inducing AEDs",
-              "Listed inducing AEDs without valproate"
+              "Co-treatment and stage",
+              "Dose"
             ],
             "rows": [
               [
-                "Weeks 1–2",
-                "25 mg every other day",
-                "25 mg/day",
+                "Taking valproate · Weeks 1–2",
+                "25 mg every other day"
+              ],
+              [
+                "Neither valproate nor listed inducing AEDs · Weeks 1–2",
+                "25 mg/day"
+              ],
+              [
+                "Listed inducing AEDs without valproate · Weeks 1–2",
                 "50 mg/day"
               ],
               [
-                "Weeks 3–4",
-                "25 mg/day",
-                "50 mg/day",
+                "Taking valproate · Weeks 3–4",
+                "25 mg/day"
+              ],
+              [
+                "Neither valproate nor listed inducing AEDs · Weeks 3–4",
+                "50 mg/day"
+              ],
+              [
+                "Listed inducing AEDs without valproate · Weeks 3–4",
                 "100 mg/day"
               ],
               [
-                "Week 5",
-                "50 mg/day",
-                "100 mg/day",
+                "Taking valproate · Week 5",
+                "50 mg/day"
+              ],
+              [
+                "Neither valproate nor listed inducing AEDs · Week 5",
+                "100 mg/day"
+              ],
+              [
+                "Listed inducing AEDs without valproate · Week 5",
                 "200 mg/day"
               ],
               [
-                "Week 6",
-                "100 mg/day",
-                "150 mg/day",
+                "Taking valproate · Week 6",
+                "100 mg/day"
+              ],
+              [
+                "Neither valproate nor listed inducing AEDs · Week 6",
+                "150 mg/day"
+              ],
+              [
+                "Listed inducing AEDs without valproate · Week 6",
                 "300 mg/day"
               ],
               [
-                "Week 7",
-                "150 mg/day",
-                "200 mg/day",
+                "Taking valproate · Week 7",
+                "150 mg/day"
+              ],
+              [
+                "Neither valproate nor listed inducing AEDs · Week 7",
+                "200 mg/day"
+              ],
+              [
+                "Listed inducing AEDs without valproate · Week 7",
                 "400 mg/day"
               ],
               [
-                "Week 8 onward · maintenance",
-                "200–250 mg/day",
-                "300–400 mg/day",
+                "Taking valproate · Week 8 onward · maintenance",
+                "200–250 mg/day"
+              ],
+              [
+                "Neither valproate nor listed inducing AEDs · Week 8 onward · maintenance",
+                "300–400 mg/day"
+              ],
+              [
+                "Listed inducing AEDs without valproate · Week 8 onward · maintenance",
                 "400–600 mg/day"
               ]
             ]
@@ -297,7 +403,7 @@ export const lamotrigine = {
             "xr"
           ],
           "paragraphs": [
-            "IR can be taken with or without food. Dispersible tablets may be swallowed, chewed with a little liquid or dispersed in enough water/diluted juice to cover them; consume the entire mixture promptly, never a partial quantity. ODT dissolves on the tongue and is swallowed with/without water. Mild hepatic impairment: no adjustment; moderate/severe without ascites: generally reduce starting/escalation/maintenance doses about 25%; severe with ascites: about 50%. Significant renal impairment may need lower maintenance doses; use caution in severe impairment."
+            "IR can be taken with or without food. Dispersible tablets may be swallowed, chewed with a little liquid or dispersed in enough water/diluted juice to cover them; consume the entire mixture promptly, never a partial quantity. ODT dissolves on the tongue and is swallowed with/without water. Mild hepatic impairment: no adjustment; moderate/severe without ascites: generally reduce starting, escalation and maintenance doses about 25%; severe with ascites: about 50%. Significant renal impairment may need lower maintenance doses; use caution in severe impairment."
           ]
         }
       ]
@@ -400,7 +506,7 @@ export const lamotrigine = {
             "xr"
           ],
           "paragraphs": [
-            "IR adjunctive epilepsy begins at age 2; IR conversion is ≥16 and bipolar maintenance is adult. XR epilepsy indications begin at ≥13. Pediatric bipolar efficacy is not established. Older adults need cautious dose selection. Hepatic reductions apply to the full starting/escalation/maintenance schedule; renal impairment may lower maintenance requirements, with limited severe-impairment experience."
+            "IR adjunctive epilepsy begins at age 2; IR conversion is ≥16 and bipolar maintenance is adult. XR epilepsy indications begin at ≥13. Pediatric bipolar efficacy is not established. Older adults need cautious dose selection. Hepatic reductions apply to the full starting, escalation and maintenance schedule; renal impairment may lower maintenance requirements, with limited severe-impairment experience."
           ]
         }
       ]
