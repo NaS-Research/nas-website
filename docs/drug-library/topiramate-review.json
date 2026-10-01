@@ -1,0 +1,907 @@
+{
+  "drug": "topiramate",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Selected current U.S. standalone Topamax IR/sprinkle, Qudexy XR, Trokendi XR and Eprontia labels; labeled seizure/migraine prevention, pediatric titration and safety within these products.",
+  "sources": [
+    {
+      "id": "topamax",
+      "title": "Topamax · immediate-release tablets and sprinkle capsules",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=21628112-0c47-11df-95b3-498d55d89593",
+      "note": "Full public manufacturer label and patient instructions; SPL version 30, effective 20260312. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "30",
+      "effective_date": "20260312",
+      "xml_sha256": "00e8b524727b2198358fac296dd7132eb40ad4ac187fe84a596910d6d7874210",
+      "retrieved_xml": "/tmp/nas-drug-sources/topamax.xml",
+      "publication_date": "2026-03-16",
+      "version_selection": "Current manufacturer DailyMed API record retrieved October 1, 2026; publication date is distinct from SPL effective/revision date."
+    },
+    {
+      "id": "qudexy",
+      "title": "Qudexy XR · extended-release sprinkle-capable capsules",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=46f54677-3a22-4c38-9b92-923020164e15",
+      "note": "Full public manufacturer label and patient instructions; SPL version 30, effective 20260903. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "30",
+      "effective_date": "20260903",
+      "xml_sha256": "21558df613a6515862073ad0dcd2faf68e05bc683dc57944ef1d2a1386fe96db",
+      "retrieved_xml": "/tmp/nas-drug-sources/qudexy.xml",
+      "publication_date": "2026-09-10",
+      "version_selection": "Current manufacturer DailyMed API record retrieved October 1, 2026; publication date is distinct from SPL effective/revision date."
+    },
+    {
+      "id": "trokendi",
+      "title": "Trokendi XR · extended-release intact capsules",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2dc7957e-a3e5-46bb-aa66-f3250f872f5e",
+      "note": "Full public manufacturer label and patient instructions; SPL version 30, effective 20260915. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "30",
+      "effective_date": "20260915",
+      "xml_sha256": "4fc1beae8d73bdd348de50e0c5adbe6c3e61b84e625ccd1f39d2bdb5b4ee6316",
+      "retrieved_xml": "/tmp/nas-drug-sources/trokendi.xml",
+      "publication_date": "2026-09-17",
+      "version_selection": "Current manufacturer DailyMed API record retrieved October 1, 2026; publication date is distinct from SPL effective/revision date."
+    },
+    {
+      "id": "eprontia",
+      "title": "Eprontia · immediate-release oral solution",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2a4df59-fead-4a01-9021-9eda02c48010",
+      "note": "Full public manufacturer label and patient instructions; SPL version 8, effective 20251113. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "8",
+      "effective_date": "20251113",
+      "xml_sha256": "839f7388ffa35c98c25623aa814684ba6bc0a97872c96e81917b59e58fc4aefa",
+      "retrieved_xml": "/tmp/nas-drug-sources/eprontia.xml",
+      "publication_date": "2026-03-23",
+      "version_selection": "Current manufacturer DailyMed API record retrieved October 1, 2026; publication date is distinct from SPL effective/revision date."
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Labeled indications",
+      "assertions": {
+        "paragraphs": [
+          "Topamax, Qudexy XR and Eprontia: initial monotherapy for partial-onset or primary generalized tonic-clonic seizures age ≥2; adjunctive treatment of those seizures and Lennox-Gastaut seizures age ≥2. Trokendi XR uses the same seizure categories at age ≥6. All four prevent migraine at age ≥12."
+        ]
+      },
+      "source_sections": {
+        "topamax": [
+          "1",
+          "8.4"
+        ],
+        "qudexy": [
+          "1",
+          "8.4"
+        ],
+        "trokendi": [
+          "1",
+          "8.4"
+        ],
+        "eprontia": [
+          "1",
+          "8.4"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Clinical role and boundaries",
+      "assertions": {
+        "paragraphs": [
+          "Choice depends on seizure type, concomitant medicines, renal function, reproductive risk and ability to use the formulation. This U.S. standalone-topiramate reference does not supply dosing for off-label psychiatric/weight indications, phentermine/topiramate combinations or acute migraine rescue. Current manufacturer records are used rather than older repackager labels."
+        ]
+      },
+      "source_sections": {
+        "topamax": [
+          "1",
+          "2",
+          "11"
+        ],
+        "qudexy": [
+          "1",
+          "2",
+          "11"
+        ],
+        "trokendi": [
+          "1",
+          "2",
+          "11"
+        ],
+        "eprontia": [
+          "1",
+          "2",
+          "11"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Adult and older-child label targets",
+      "assertions": {
+        "paragraphs": [
+          "IR means Topamax/Eprontia; XR means the exact Qudexy or Trokendi product. These targets require individualized titration and organ-function review."
+        ],
+        "table": {
+          "headers": [
+            "Use / age",
+            "Label dose and titration"
+          ],
+          "rows": [
+            [
+              "Monotherapy epilepsy · ≥10",
+              "Target 400 mg/day. Weekly total mg: 50, 100, 150, 200, 300, 400. IR divides equally twice daily; XR once daily."
+            ],
+            [
+              "Adjunctive epilepsy · ≥17",
+              "Start 25–50 mg/day; increase 25–50 mg/day weekly. Partial-onset/Lennox-Gastaut target 200–400 mg/day; primary generalized tonic-clonic target 400 mg/day. IR twice daily; XR once daily."
+            ],
+            [
+              "Migraine prevention · ≥12",
+              "Target 100 mg/day. Weekly totals 25, 50, 75, 100 mg. IR morning/evening doses: 0/25, 25/25, 25/50, 50/50 mg; XR 25, 50, 75, 100 mg once daily. Longer adjustment intervals may be appropriate."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "topamax": [
+          "2.1–2.3"
+        ],
+        "qudexy": [
+          "2.1–2.3"
+        ],
+        "trokendi": [
+          "2.1–2.3"
+        ],
+        "eprontia": [
+          "2.1–2.3"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric monotherapy and adjunctive epilepsy",
+      "assertions": {
+        "paragraphs": [
+          "Monotherapy age 2–9 for Topamax/Eprontia/Qudexy or 6–9 for Trokendi: start 25 mg nightly in week one, then 50 mg/day in week two if tolerated; increase total by 25–50 mg weekly, attempting minimum maintenance over 5–7 weeks. IR divides into two doses; XR is once daily. Weight-based monotherapy targets below are total daily mg, not mg/kg."
+        ],
+        "table": {
+          "headers": [
+            "Weight / situation",
+            "Daily target / maximum"
+          ],
+          "rows": [
+            [
+              "Up to 11 kg",
+              "150–250 mg/day"
+            ],
+            [
+              "12–22 kg",
+              "200–300 mg/day"
+            ],
+            [
+              "23–31 kg",
+              "200–350 mg/day"
+            ],
+            [
+              "32–38 kg",
+              "250–350 mg/day"
+            ],
+            [
+              ">38 kg",
+              "250–400 mg/day"
+            ],
+            [
+              "Adjunctive · age 2–16 (Trokendi 6–16)",
+              "Start 25 mg nightly or less using 1–3 mg/kg/day; raise 1–3 mg/kg/day every 1–2 weeks toward 5–9 mg/kg/day; maximum 400 mg/day. IR divided twice daily; XR once daily."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "topamax": [
+          "2.1",
+          "2.2"
+        ],
+        "qudexy": [
+          "2.1",
+          "2.2"
+        ],
+        "trokendi": [
+          "2.1",
+          "2.2"
+        ],
+        "eprontia": [
+          "2.1",
+          "2.2"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Formulation-specific administration",
+      "assertions": {
+        "paragraphs": [
+          "All selected products may be taken without regard to meals. Do not assume two XR products have the same opening instructions.",
+          "Missed-dose instructions differ: Topamax/Eprontia take a single missed dose when remembered unless the next is within six hours, then skip; never double. Topamax and Eprontia Medication Guides advise contacting the clinician after more than one missed dose; Eprontia counseling text also advises contact after a missed dose. Qudexy says take a single missed dose as soon as possible and contact after multiple misses. Trokendi directs patients to ask their clinician for missed-dose instructions; do not impose the IR six-hour rule on it."
+        ],
+        "table": {
+          "headers": [
+            "Product",
+            "Directions"
+          ],
+          "rows": [
+            [
+              "Topamax tablets / sprinkles",
+              "Do not break tablets because of bitter taste. Sprinkles may be swallowed whole or all beads put on a teaspoon of soft food; swallow immediately without chewing, never store mixture."
+            ],
+            [
+              "Qudexy XR",
+              "Swallow whole or sprinkle all onto a teaspoon of soft food; swallow immediately without crushing/chewing; do not store mixture."
+            ],
+            [
+              "Trokendi XR",
+              "Swallow whole/intact; never sprinkle, chew or crush. Alcohol within 6 hours before/after dosing is contraindicated."
+            ],
+            [
+              "Eprontia",
+              "25 mg/mL: measure using a calibrated device, never a household spoon. Confirm both prescribed mg and measured mL."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "topamax": [
+          "2.4",
+          "17",
+          "Medication Guide"
+        ],
+        "qudexy": [
+          "2.6",
+          "17",
+          "Medication Guide"
+        ],
+        "trokendi": [
+          "2.4",
+          "2.7",
+          "17",
+          "Medication Guide"
+        ],
+        "eprontia": [
+          "2.4",
+          "3",
+          "17",
+          "Medication Guide"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Renal dosing, dialysis and withdrawal",
+      "assertions": {
+        "paragraphs": [
+          "CrCl <70 mL/min/1.73 m²: selected labels recommend half the usual adult dose. Hemodialysis can remove substantial drug; a supplemental dose may be needed according to dialysis duration/system and residual clearance, without a universal supplement. Hepatic dysfunction can reduce clearance but has no fixed adjustment algorithm. Withdraw gradually for any indication to reduce seizure risk; medically necessary rapid withdrawal requires monitoring."
+        ]
+      },
+      "source_sections": {
+        "topamax": [
+          "2.5",
+          "2.6",
+          "5.8",
+          "12.3"
+        ],
+        "qudexy": [
+          "2.4",
+          "2.5",
+          "5.9",
+          "12.3"
+        ],
+        "trokendi": [
+          "2.5",
+          "2.6",
+          "5.9",
+          "12.3"
+        ],
+        "eprontia": [
+          "2.5",
+          "2.6",
+          "5.8",
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Acute myopia/secondary angle-closure glaucoma often appears within the first month; eye pain or decreased vision requires urgent assessment and clinician-directed rapid discontinuation. Visual-field defects can also occur without raised pressure.",
+          "Reduced sweating/hyperthermia, particularly in children or heat, can require hospital care. Monitor temperature/sweating and review anticholinergic or carbonic-anhydrase-inhibitor co-therapy.",
+          "Carbonic-anhydrase inhibition causes non-anion-gap metabolic acidosis. Check bicarbonate initially/periodically; persistent acidosis may require dose reduction/tapered cessation or consideration of alkali if treatment continues. Renal disease, diarrhea, ketogenic diets and other acidifying therapies increase risk.",
+          "Suicidality, depression, cognitive slowing, concentration/memory/word-finding difficulty and sedation warrant review. Faster titration/higher doses increase cognitive risk. Monitor weight/growth and pediatric bone-health concerns.",
+          "Fetal harm includes oral clefts and small-for-gestational-age birth. Discuss effective contraception and alternatives before pregnancy; do not abruptly stop seizure therapy.",
+          "DRESS may begin with fever/swelling/lymph nodes before rash; urgently evaluate and discontinue if no alternate cause. Stop for suspected SJS/TEN or anaphylaxis; do not rechallenge SJS/TEN.",
+          "Hyperammonemic encephalopathy can occur with or without valproate; unexplained lethargy/vomiting/mental change needs ammonia assessment. Valproate also increases hypothermia risk.",
+          "Kidney stones: maintain appropriate hydration; avoid combinations/diets causing additive acidosis and monitor carbonic-anhydrase-inhibitor combinations closely.",
+          "Current Qudexy XR additionally warns, based on in-vitro topiramate findings, of potentially serious cardiac rhythm/conduction abnormalities, especially with existing heart disease/arrhythmias. Weigh benefit/risk and discontinue for significant conduction depression/arrhythmia. This specific current label precaution is retained even though the other selected versions lack that subsection."
+        ]
+      },
+      "source_sections": {
+        "topamax": [
+          "5"
+        ],
+        "qudexy": [
+          "5"
+        ],
+        "trokendi": [
+          "5"
+        ],
+        "eprontia": [
+          "5"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Current selected labels contraindicate prior hypersensitivity to topiramate/the exact product or its inactive ingredients, including reported anaphylaxis/angioedema. Trokendi XR additionally contraindicates alcohol within six hours before or after administration. Reproductive risk is a serious U.S. warning; do not misrepresent a different jurisdiction’s pregnancy-prevention restrictions as this U.S. label’s formal contraindication list."
+        ]
+      },
+      "source_sections": {
+        "topamax": [
+          "4",
+          "5",
+          "8.1"
+        ],
+        "qudexy": [
+          "4",
+          "5",
+          "8.1"
+        ],
+        "trokendi": [
+          "4",
+          "5",
+          "8.1"
+        ],
+        "eprontia": [
+          "4",
+          "5",
+          "8.1"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "No boxed warning appears in these selected current U.S. labels. Serious eye, metabolic, fetal, psychiatric, skin/allergic and other warnings still apply; absence of a box does not reduce the need for monitoring."
+        ]
+      },
+      "source_sections": {
+        "topamax": [
+          "Full prescribing information",
+          "5"
+        ],
+        "qudexy": [
+          "Full prescribing information",
+          "5"
+        ],
+        "trokendi": [
+          "Full prescribing information",
+          "5"
+        ],
+        "eprontia": [
+          "Full prescribing information",
+          "5"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "assertions": {
+        "paragraphs": [
+          "Paresthesia, appetite/weight loss, taste change, dizziness, fatigue/somnolence, memory/concentration/language effects and gastrointestinal symptoms are reported; rates depend on dose, indication, age and formulation and should not be pooled. Postmarketing reports include serious hepatic, skin and ocular events. Overdose can cause seizures, coma, hypotension and severe acidosis: stop excess dosing and seek urgent supportive/toxicology care (U.S. Poison Help 1-800-222-1222). Hemodialysis removes topiramate effectively."
+        ]
+      },
+      "source_sections": {
+        "topamax": [
+          "6",
+          "10"
+        ],
+        "qudexy": [
+          "6",
+          "10"
+        ],
+        "trokendi": [
+          "6",
+          "10"
+        ],
+        "eprontia": [
+          "6",
+          "10"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Combination",
+            "Action"
+          ],
+          "rows": [
+            [
+              "Phenytoin / carbamazepine",
+              "Lower topiramate exposure; initiation/withdrawal may require adjustment. Topiramate can raise phenytoin in some patients."
+            ],
+            [
+              "Valproate",
+              "Hyperammonemia/encephalopathy and hypothermia; check ammonia with compatible symptoms."
+            ],
+            [
+              "Acetazolamide / zonisamide and other carbonic anhydrase inhibitors",
+              "Additive acidosis/stones; monitor closely. Review ketogenic diet/other acidifying therapies."
+            ],
+            [
+              "Estrogen-containing or progestin-only contraceptives",
+              "Potential decreased efficacy, sometimes without bleeding changes; review an effective method with prescriber. Exposure effects vary by dose/co-therapy."
+            ],
+            [
+              "Alcohol / CNS depressants",
+              "Extreme caution for cognitive/sedative effects; Trokendi specifically prohibits alcohol ±6 hours."
+            ],
+            [
+              "Hydrochlorothiazide",
+              "Increases topiramate exposure; dose reduction may be needed, review potassium."
+            ],
+            [
+              "Lithium",
+              "Monitor levels with high-dose topiramate."
+            ],
+            [
+              "Pioglitazone / amitriptyline",
+              "Monitor diabetes control; adjust amitriptyline clinically if effects increase."
+            ],
+            [
+              "Warfarin / vitamin K antagonists",
+              "Reduced INR/prothrombin time reported postmarketing; monitor anticoagulation when therapy changes."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "topamax": [
+          "7",
+          "12.3",
+          "6.2 / Postmarketing Experience (Qudexy 6.3)"
+        ],
+        "qudexy": [
+          "7",
+          "12.3",
+          "6.2 / Postmarketing Experience (Qudexy 6.3)"
+        ],
+        "trokendi": [
+          "7",
+          "12.3",
+          "6.2 / Postmarketing Experience (Qudexy 6.3)"
+        ],
+        "eprontia": [
+          "7",
+          "12.3",
+          "6.2 / Postmarketing Experience (Qudexy 6.3)"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy, contraception and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Registry data link fetal exposure to oral clefts/other major malformations and small-for-gestational-age birth. Consider alternatives before conception and reassess benefit/risk promptly if pregnant, particularly for non-life-threatening indications. Use effective contraception and address the drug interaction. Monitor maternal and exposed newborn acidosis; pregnancy registry enrollment is encouraged. Topiramate enters milk; infant diarrhea/somnolence are reported and milk-production effects are unknown. Balance maternal need and breastfeeding benefit with infant monitoring."
+        ]
+      },
+      "source_sections": {
+        "topamax": [
+          "5",
+          "7",
+          "8.1–8.3"
+        ],
+        "qudexy": [
+          "5",
+          "7",
+          "8.1–8.3"
+        ],
+        "trokendi": [
+          "5",
+          "7",
+          "8.1–8.3"
+        ],
+        "eprontia": [
+          "5",
+          "7",
+          "8.1–8.3"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric considerations",
+      "assertions": {
+        "paragraphs": [
+          "Epilepsy minimum ages: Topamax/Eprontia/Qudexy ≥2, Trokendi ≥6. Migraine prevention ≥12 across selected products. Follow weight-based seizure regimens and growth/weight, bicarbonate, heat tolerance, cognition and bone-health monitoring. Younger-age studies do not expand approval. Older adults may need adjustment because renal function is reduced; limited geriatric trial data do not establish equivalence in every setting."
+        ]
+      },
+      "source_sections": {
+        "topamax": [
+          "8.4",
+          "8.5",
+          "2"
+        ],
+        "qudexy": [
+          "8.4",
+          "8.5",
+          "2"
+        ],
+        "trokendi": [
+          "8.4",
+          "8.5",
+          "2"
+        ],
+        "eprontia": [
+          "8.4",
+          "8.5",
+          "2"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic impairment",
+      "assertions": {
+        "paragraphs": [
+          "Reduced kidney function lowers clearance: use half the usual adult dose below CrCl 70 and individualize dialysis supplementation. Liver impairment reduced clearance (~26% in a studied moderate/severe population); monitor/titrate cautiously without inventing a numerical hepatic reduction. These adult recommendations are not a complete pediatric organ-failure algorithm."
+        ]
+      },
+      "source_sections": {
+        "topamax": [
+          "2",
+          "8.6",
+          "8.7",
+          "12.3"
+        ],
+        "qudexy": [
+          "2",
+          "8.6",
+          "8.7",
+          "12.3"
+        ],
+        "trokendi": [
+          "2",
+          "8.6",
+          "8.7",
+          "12.3"
+        ],
+        "eprontia": [
+          "2",
+          "8.6",
+          "8.7",
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "assertions": {
+        "paragraphs": [
+          "The precise clinical mechanisms are not fully established. Preclinical findings include voltage-dependent sodium-channel blockade, enhancement of selected GABA-A responses, AMPA/kainate glutamate antagonism and carbonic-anhydrase inhibition."
+        ]
+      },
+      "source_sections": {
+        "topamax": [
+          "12.1"
+        ],
+        "qudexy": [
+          "12.1"
+        ],
+        "trokendi": [
+          "12.1"
+        ],
+        "eprontia": [
+          "12.1"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "assertions": {
+        "paragraphs": [],
+        "facts": [
+          [
+            "Immediate-release",
+            "Topamax peak ~2 hours after a studied 400 mg dose; mean half-life ~21 hours; steady state ~4 days with normal kidney function."
+          ],
+          [
+            "Extended-release",
+            "Qudexy single-dose peak ~20 hours, effective half-life ~56 hours; Trokendi single-dose peak ~24 hours and repeat-dose elimination half-life ~31 hours. Different study definitions/formulations prevent treating these as one duration."
+          ],
+          [
+            "Elimination",
+            "Not extensively metabolized; ~70% eliminated unchanged in urine. Kidney dysfunction and enzyme-inducing seizure medicines alter exposure."
+          ],
+          [
+            "Formulation comparison",
+            "Topamax sprinkles/tablets are bioequivalent per its label; selected XR labels compare once-daily exposure with twice-daily IR. Switching remains product-specific and supervised."
+          ]
+        ]
+      },
+      "source_sections": {
+        "topamax": [
+          "12.3"
+        ],
+        "eprontia": [
+          "12.3"
+        ],
+        "qudexy": [
+          "12.3",
+          "12.6"
+        ],
+        "trokendi": [
+          "12.3",
+          "12.6"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": {
+        "paragraphs": [
+          "Track seizures or migraine days and functional benefit, renal function and baseline/periodic bicarbonate. Review cognition, mood/suicidality, vision, sweating/temperature, appetite/weight and pediatric growth/bone risks. Measure ammonia with unexplained lethargy/vomiting/mental change or hypothermia, especially with valproate. Review pregnancy plans/contraception and interacting medicines. With Qudexy, assess cardiac history and new syncope/palpitations or conduction concerns."
+        ]
+      },
+      "source_sections": {
+        "topamax": [
+          "5",
+          "8",
+          "17"
+        ],
+        "qudexy": [
+          "5",
+          "8",
+          "17"
+        ],
+        "trokendi": [
+          "5",
+          "8",
+          "17"
+        ],
+        "eprontia": [
+          "5",
+          "8",
+          "17"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Counseling and urgent action",
+      "assertions": {
+        "paragraphs": [
+          "Do not abruptly stop or change release forms. Avoid driving until cognitive/sedative effects are understood. Maintain appropriate hydration and watch overheating. Acute eye symptoms, severe rash/blistering, fever with swelling, airway swelling, serious mental changes or suicidal thoughts need urgent/emergency assessment. Review missed-dose instructions for the dispensed product and contact the clinician after multiple missed doses; do not double. Follow calibrated solution measuring and product-specific sprinkle/intact rules."
+        ]
+      },
+      "source_sections": {
+        "topamax": [
+          "Medication Guide",
+          "17",
+          "2"
+        ],
+        "qudexy": [
+          "Medication Guide",
+          "17",
+          "2"
+        ],
+        "trokendi": [
+          "Medication Guide",
+          "17",
+          "2"
+        ],
+        "eprontia": [
+          "Medication Guide",
+          "17",
+          "2"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "paragraphs": [
+          "Topamax immediate-release tablets are the representative product; the selected label also covers sprinkles. Exact pill/capsule appearance differs for generics; verify pharmacy packaging. This profile is not an exhaustive generic/repackager or international formulation inventory."
+        ]
+      },
+      "source_sections": {
+        "topamax": [
+          "3",
+          "11",
+          "16"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Product",
+            "Selected labeled forms"
+          ],
+          "rows": [
+            [
+              "Topamax",
+              "Tablets 25, 50, 100, 200 mg; sprinkle capsules 15, 25 mg."
+            ],
+            [
+              "Qudexy XR",
+              "Extended-release capsules 25, 50, 100, 150, 200 mg; sprinkle-capable."
+            ],
+            [
+              "Trokendi XR",
+              "Extended-release capsules 25, 50, 100, 200 mg; swallow intact."
+            ],
+            [
+              "Eprontia",
+              "25 mg/mL oral solution; selected bottles 120, 240, 473 mL."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "topamax": [
+          "3",
+          "16"
+        ],
+        "qudexy": [
+          "3",
+          "16"
+        ],
+        "trokendi": [
+          "3",
+          "16"
+        ],
+        "eprontia": [
+          "3",
+          "16"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Topamax tablets: tightly closed at 15–30°C; sprinkles: tightly closed at or below 25°C; protect both from moisture. Qudexy XR: tightly closed at 20–25°C, excursions 15–30°C, moisture protection. Trokendi XR: well closed at 25°C, excursions 15–30°C; protect from moisture/light. Eprontia: 20–25°C, excursions 15–30°C; discard unused solution 90 days after first opening. Sprinkle mixtures must be consumed immediately."
+        ]
+      },
+      "source_sections": {
+        "topamax": [
+          "16",
+          "2"
+        ],
+        "qudexy": [
+          "16",
+          "2"
+        ],
+        "trokendi": [
+          "16",
+          "2"
+        ],
+        "eprontia": [
+          "16",
+          "2"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "Off-label psychiatric/weight regimens, phentermine/topiramate combinations, international pregnancy-prevention rules and exhaustive generics/repackagers."
+  ],
+  "resolved_source_findings": [
+    "Qudexy v30 section 5.7 cardiac rhythm/conduction warning retained as a product/version-specific precaution; other selected versions do not contain the same subsection.",
+    "Current selected hypersensitivity contraindications replace obsolete archived none wording.",
+    "Trokendi age ≥6, no-sprinkle and alcohol ±6-hour restriction differ from Qudexy.",
+    "Product-specific missed-dose instructions retained; Eprontia section 17 contact-after-missed-dose wording differs from Medication Guide multiple-misses wording, both identified."
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, essential safety, three hero facts, cited disclosures, four safety cards and three product cards.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending",
+    "audit_assertions_match_monograph": true
+  },
+  "monograph_sha256": "46d96e835d77d30c21122549f0ef22e266df428d95585e367a6e88880514e256",
+  "front_matter_source_map": {
+    "facts": [
+      [
+        "Therapeutic class",
+        "Antiseizure medicine · migraine preventive"
+      ],
+      [
+        "Representative product",
+        "Topamax · immediate-release tablets"
+      ],
+      [
+        "Reference focus",
+        "Epilepsy and migraine prevention · four selected products"
+      ]
+    ],
+    "essential": {
+      "title": "Urgent visual, skin and metabolic symptoms need prompt assessment.",
+      "text": "Acute eye pain or blurred vision can signal secondary angle-closure glaucoma. Fever/rash/swelling may indicate serious hypersensitivity. Monitor bicarbonate and pregnancy risk. Do not abruptly stop therapy without a clinician-directed plan, even when prescribed for migraine.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "source_sections": {
+      "topamax": [
+        "1",
+        "2",
+        "4",
+        "5",
+        "3",
+        "11",
+        "16"
+      ],
+      "qudexy": [
+        "1",
+        "2",
+        "4",
+        "5",
+        "3",
+        "11",
+        "16"
+      ],
+      "trokendi": [
+        "1",
+        "2",
+        "4",
+        "5",
+        "3",
+        "11",
+        "16"
+      ],
+      "eprontia": [
+        "1",
+        "2",
+        "4",
+        "5",
+        "3",
+        "11",
+        "16"
+      ]
+    }
+  }
+}

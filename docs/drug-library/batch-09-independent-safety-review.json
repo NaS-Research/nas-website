@@ -1,0 +1,374 @@
+{
+  "reviewDate": "2026-10-01",
+  "scope": "Independent targeted critical-assertion primary-source review. Only enumerated assertions independently verified; not exhaustive second clinical signoff, browser QA or build verification.",
+  "status": "Ten profiles targeted-reviewed; complete within enumerated scope.",
+  "profiles": [
+    {
+      "drug": "clonidine",
+      "fileSha256": "510426276ed94df9e7e5b067ad61036e92b3c256c0275dc51f21fda10afb2664",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Nexiclon strengths are expressed as clonidine base. Start 0.17 mg nightly, increase by 0.09 mg weekly; doses above 0.52 mg were not evaluated and are not recommended. Specified HCl IR conversions and maintenance-dialysis 0.09 mg/day start agree.",
+          "sourceId": "nex",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dad35a6f-d57e-f302-e053-2995a90a9efb",
+          "sourceSection": "Sections 2–3",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Onyda0.1mg/mL nightly0.1→0.4maximum, gentlyshake≥tenseconds, no equal-mg substitute, taper≤0.1mg every3–7days and missed skip agree.",
+          "sourceId": "onyda",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4a15c850-9da5-4bdc-a34d-7f740a6149b7",
+          "sourceSection": "Sections 2–3",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Qlonilik0.05mg/mL, initial0.1BID=2mL/dose; weekly0.1mg/day increments and rare2.4maximum. Explicit CNS-depressant/conduction-drug avoidance table differs from older cautions.",
+          "sourceId": "qlon",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=826de1dc-378e-4c90-86d1-e33f7a4248cd",
+          "sourceSection": "Sections 2–3,7",
+          "access": "retained-exact-primary-SPL-sections-read; direct-web-open-internal-error",
+          "result": "agrees",
+          "retainedPath": "/tmp/nas-drug-sources/clon-qlon.xml",
+          "retainedSha256": "791d90a72becd055343a35dc366f0de1ec575c0fce758c568da8af9b51da5c29",
+          "retainedSetId": "826de1dc-378e-4c90-86d1-e33f7a4248cd"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "aripiprazole",
+      "fileSha256": "e8de81254b496f7cbad4912fe02cd37a4199c5f7f595b8231e2a623ab3b6e0b4",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Maintena 400 mg monthly, no sooner than 26 days. One-day initiation uses two separate-muscle 400 mg injections plus oral 20 mg; fourteen-day initiation uses oral 10–20 mg overlap. Reduction to 300 mg for adverse effects and restart thresholds (>5 weeks for second/third dose; >6 weeks thereafter) agree. CYP-adjustment caveats remain.",
+          "sourceId": "maint",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee49f3b1-1650-47ff-9fb1-ea53fe0b92b6",
+          "sourceSection": "Sections 2.2–2.4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Asimtufii gluteal-only 960 mg every two months, one-day initiation combining Maintena400 and oral20; selected missed-dose >fourteen-week restart and scheduling window agree.",
+          "sourceId": "asim",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da4c07fd-1130-4341-bb44-63acfa4162be",
+          "sourceSection": "Sections 2.2–2.4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Solution substitutes mg-for-mg only through25mg; thirty-mg tablet corresponds to25mg solution. CYP/MDD adjustment exceptions are distinctly stated.",
+          "sourceId": "solution",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14910dae-da81-3d73-d0a4-e98d13917c69",
+          "sourceSection": "Section 2.8",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warnings",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "cephalexin",
+      "fileSha256": "5c7a179dc937cb384012148e840e4dc82e6ce21c9b6aa18a15fa23d40407c3e9",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Suspension renal table: clearance ≥60 no adjustment; 30–59 maximum 1 g/day; 15–29 uses 250 mg every 8–12 hours; 5–14 every 24 hours; 1–4 every 48–60 hours. Inconsistent printed 40 kg lower-concentration twice-daily volume row is explicitly excluded. Exactly-age-one indication/dose-heading discrepancy is flagged.",
+          "sourceId": "susp",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=655f38e8-1c4d-4cbc-9f52-bb881f065b2d",
+          "sourceSection": "Sections 1–2",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "alendronate",
+      "fileSha256": "bee1a61c9f869af2eda935466a18e4d31a154baddc48d5e205e00b2207a9a836",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Binosto 70 mg weekly dissolved in four ounces room-temperature plain water; wait at least five minutes after effervescence then stir approximately ten seconds. Thirty-minute fasting and upright requirement plus remaining upright until first food agree.",
+          "sourceId": "eff",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=09765234-01bc-40f7-b9bb-c167056f3909",
+          "sourceSection": "Sections 2–4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Current Fosamax February2026 warns about atypical fractures in other bones as well as femur. Published renal <35 not recommended /35–60 no adjustment, hypocalcemia/esophageal/upright contraindications and formulation-specific doses agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14e931fd-2c5f-4d90-b7db-5980706f4a56",
+          "sourceSection": "Sections 2,4–5,8",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "topiramate",
+      "fileSha256": "46d96e835d77d30c21122549f0ef22e266df428d95585e367a6e88880514e256",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Indexed clearance <70: half usual adult dose. Current March 2026 hypersensitivity contraindication, baseline/periodic bicarbonate monitoring, and serious ocular/skin warnings are accurately published.",
+          "sourceId": "topamax",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=21628112-0c47-11df-95b3-498d55d89593",
+          "sourceSection": "Sections 2.5,4–5",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Current Qudexy September2026 cardiac rhythm/conduction warning is present and based on in-vitro topiramate findings; profile correctly scopes this additional warning to selected Qudexy label.",
+          "sourceId": "qudexy",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=46f54677-3a22-4c38-9b92-923020164e15",
+          "sourceSection": "Section 5.7",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "tizanidine",
+      "fileSha256": "388e37bf046060e5f8bd13d092b4b034d4d209c1b50a4d1d2e905688d3b7ea37",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Start 2 mg every 6–8 hours as needed, maximum three doses/day. Increase each dose 2–4 mg every 1–4 days, maximum 36 mg/day; single doses >16 mg not studied. Aminotransferases at baseline and one month after maximum; taper 2–4 mg/day. Strong CYP1A2 contraindications distinguished from other inhibitor avoidance advice.",
+          "sourceId": "zanaflex",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=60c27d35-7349-4fc6-86ad-70fffdbe3e08",
+          "sourceSection": "Sections 2,4,7",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "finasteride",
+      "fileSha256": "76d85d3fbd93fe34fde8cd62565559d7d8b609d47bc5eb001af64e3bec336fa8",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Propecia 1 mg daily for male androgenetic hair loss; pregnancy/potential pregnancy and hypersensitivity contraindications; current US postmarketing depression/suicidal ideation and behavior are accurately distinguished from causal incidence.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f904709-65aa-44ce-b144-b4c8a0416e36",
+          "sourceSection": "Sections 2,4–8",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Proscar 5 mg daily for BPH; PSA approximately halved by six months, establish new baseline and evaluate confirmed rise; isolated PSA doubling after six months and no fixed renal adjustment agree.",
+          "sourceId": "bph",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f988153-fc74-4ca4-b29a-111f750c4a4b",
+          "sourceSection": "Sections 2,5.1–5.2,8",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "EMA confirmed suicidal ideation risk with 1 mg and 5 mg tablets and advises stopping 1 mg for mood changes; profile preserves EU jurisdiction rather than implying a US label revision.",
+          "sourceId": "ema",
+          "sourceUrl": "https://www.ema.europa.eu/en/news/measures-minimise-risk-suicidal-thoughts-finasteride-dutasteride-medicines",
+          "sourceSection": "May 2025 regulatory communication",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "quetiapine",
+      "fileSha256": "279dde6bc1567ee0856bae6462f73cd7a238cf75c91d397d2c77e6da2837815e",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "IR adult schizophrenia starts 25 mg twice daily and targets 300–400 mg by day four, acute maximum 750 mg/day; pediatric schizophrenia 13–17 maximum 800, mania 10–17 maximum 600; hepatic start 25 mg/day and dose increase 25–50 mg/day agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8ae62aaf-f8c5-417f-baac-0098369ca322",
+          "sourceSection": "Sections 2.2–2.7,4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "XR schizophrenia adult start 300 mg/day, mania 300/600 then 400–800, MDD adjunct 50 days one/two then 150 day three and maximum 300; hepatic start 50/increase 50 per day, whole tablets with no food or light approximately 300-calorie meal agree.",
+          "sourceId": "xr",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab959a35-d0ba-4f18-8f2e-6619d88b16e3",
+          "sourceSection": "Sections 2.1–2.7,4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Strong CYP3A4 inhibitor reduces to one sixth; chronic strong inducer permits titration up to fivefold, returning to baseline over seven–fourteen days after withdrawal; more-than-one-week interruption restarts initial schedule. Formal contraindication is hypersensitivity, distinct from QT warnings.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8ae62aaf-f8c5-417f-baac-0098369ca322",
+          "sourceSection": "Sections 2.5–2.7,7",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "dapagliflozin",
+      "fileSha256": "c74128208d8f098a6d4bed40d656c3305e46a7a20d04c88a1794b02dd6a1837e",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Glycemic treatment age at least ten starts 5 mg daily, may increase to 10, and eGFR less than 45 is not recommended for glycemic purpose. Adult other indications 10 mg daily, initiation not recommended below eGFR 25 but existing treatment may continue. Hold at least three days before fasting/surgery, resume stable with oral intake; current formal contraindication only serious hypersensitivity agrees.",
+          "sourceId": "pi",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72ad22ae-efe6-4cd6-a302-98aaee423d69",
+          "sourceSection": "Sections 1–5,8.7",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed-warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "oxycodone-acetaminophen",
+      "fileSha256": "b78e54852cf38a1779e45d42e6f0d25a1bb95c7429162d5315d6f71490edffc2",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "First opioid 2.5/325 one–two every six hours PRN; product table maximal daily tablets 12/12/8/6 by increasing oxycodone strength. Profile explicitly distinguishes ceilings from frequency permission and includes total-source APAP 4 g ceiling without universal safety inference.",
+          "sourceId": "pi",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4dd36cf5-8f73-404a-8b1d-3bd53bd90c25",
+          "sourceSection": "Dosage and administration; Contraindications",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Example opioid-dependent taper no greater than 10–25 percent of total daily dose every two–four weeks is correctly individualized; respiratory/asthma/GI obstruction contraindications and opioid/APAP boxed risks are preserved.",
+          "sourceId": "pi",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4dd36cf5-8f73-404a-8b1d-3bd53bd90c25",
+          "sourceSection": "Safe reduction/discontinuation; Warnings",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning: opioid and hepatotoxicity risks",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    }
+  ],
+  "pending": [],
+  "limitations": [
+    "Direct public primary DailyMed pages retrieved. Only selected exact formulations independently checked; all other profiles/formulations and full coverage remain author audits responsibility.",
+    "Source metadata not independently certified except retrieved current page content/date where enumerated."
+  ],
+  "unresolvedMaterialClinicalErrors": []
+}

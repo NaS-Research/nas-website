@@ -1,0 +1,519 @@
+{
+  "drug": "tizanidine",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Current Legacy Pharma Zanaflex adult tablet/capsule prescribing label across all clinical sections; current Apotex tablet label for forms/strengths, ingredients and storage verification.",
+  "sources": [
+    {
+      "id": "zanaflex",
+      "title": "Zanaflex · current Legacy Pharma tablet/capsule label",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=60c27d35-7349-4fc6-86ad-70fffdbe3e08",
+      "note": "Full public manufacturer label and patient instructions; SPL version 2, effective 20260102. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "2",
+      "effective_date": "20260102",
+      "xml_sha256": "e5948ac3f53eaa3aa2364ea7a50e828ddafcf5743933b25163d677dd91c54202",
+      "retrieved_xml": "/tmp/nas-drug-sources/zanaflex.xml",
+      "publication_date": "2026-01-05",
+      "version_selection": "Current manufacturer DailyMed API record retrieved October 1, 2026; publication date is distinct from SPL effective/revision date."
+    },
+    {
+      "id": "tizageneric",
+      "title": "Apotex · tizanidine 2 mg and 4 mg tablets",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01c0d3d3-2373-a1b7-822a-80a66291a248",
+      "note": "Full public manufacturer label and patient instructions; SPL version 15, effective 20260918. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "15",
+      "effective_date": "20260918",
+      "xml_sha256": "0a81dac9eda710c630c4d98279fa6d4f0e39232c0e9564c093463705d41db4e9",
+      "retrieved_xml": "/tmp/nas-drug-sources/tizageneric.xml",
+      "publication_date": "2026-09-21",
+      "version_selection": "Current manufacturer DailyMed API record retrieved October 1, 2026; publication date is distinct from SPL effective/revision date."
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Labeled indication",
+      "assertions": {
+        "paragraphs": [
+          "Zanaflex is indicated for spasticity in adults. Its brief therapeutic effect favors selected activities/times when relief is most needed. Supporting trials included multiple sclerosis and spinal cord injury; reduced muscle tone did not consistently translate to improved daily-function measures. Do not imply approval for every acute musculoskeletal pain syndrome."
+        ]
+      },
+      "source_sections": {
+        "zanaflex": [
+          "1",
+          "2.2",
+          "14"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Clinical role and scope",
+      "assertions": {
+        "paragraphs": [
+          "Assess goals, useful residual tone, mobility, fall risk and sedative/antihypertensive therapy before treatment. Some patients rely on tone for standing or balance, so reduction can impair function. This focused profile covers selected oral tablets/capsules for adult spasticity; pediatric and off-label acute-pain protocols are outside scope. Tizanidine is not a controlled substance, but dependence/rebound can occur."
+        ]
+      },
+      "source_sections": {
+        "zanaflex": [
+          "17",
+          "8.4",
+          "9.1",
+          "9.3"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Adult oral dose and titration",
+      "assertions": {
+        "paragraphs": [
+          "Start 2 mg by mouth every 6–8 hours as needed, at most three doses in 24 hours. Increase each dose by 2–4 mg at intervals of 1–4 days according to response/tolerability. Maximum total 36 mg/day; single doses >16 mg have not been studied. Do not mistake that study ceiling for a routine target—higher single doses produce more hypotension/sedation. Use only the prescribed activity-related doses."
+        ]
+      },
+      "source_sections": {
+        "zanaflex": [
+          "2.2",
+          "6.1",
+          "17"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Food, formulation and capsule opening",
+      "assertions": {
+        "paragraphs": [
+          "May be taken with or without food, but consistently use the same relationship to meals and the prescribed form. Tablets/capsules are bioequivalent fasting, not fed. Food raises tablet exposure differently from capsules. Sprinkling capsule contents on applesauce also changes exposure versus the intact fasting capsule; do not open or switch without explicit prescribing/pharmacy instructions. Monitor response and adverse effects after any food/form change."
+        ]
+      },
+      "source_sections": {
+        "zanaflex": [
+          "2.2",
+          "2.6",
+          "12.3",
+          "17"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Renal/hepatic dose changes",
+      "assertions": {
+        "paragraphs": [
+          "CrCl <25 mL/min or hepatic impairment: use lower individual doses while titrating. If higher doses are required, increase individual doses rather than frequency, guided by tolerability; no fixed percentage reduction is specified. Monitor closely for excessive sedation, dizziness, dry mouth, weakness and hypotension. Obtain aminotransferases at baseline and one month after the maximum dose is reached, or when injury is suspected."
+        ]
+      },
+      "source_sections": {
+        "zanaflex": [
+          "2.1",
+          "2.3",
+          "2.4",
+          "5.2",
+          "8.6",
+          "8.7"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Discontinuation and missed doses",
+      "assertions": {
+        "paragraphs": [
+          "The label recommends lowering total daily dosage by 2–4 mg per day when discontinuing, especially after high doses/prolonged use or with opioids, to limit rebound. Individualize with the clinician; do not suddenly stop regular therapy. This often-as-needed medicine should not be doubled to replace an omitted dose or compressed into shorter intervals; follow the prescribed schedule and discuss interruptions of chronic use."
+        ]
+      },
+      "source_sections": {
+        "zanaflex": [
+          "2.2",
+          "2.5",
+          "5.6",
+          "17"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Hypotension, orthostatic effects, bradycardia and syncope can occur. Review blood pressure and symptoms before increasing; monitor with antihypertensives and rise carefully. Another alpha₂ agonist is not recommended.",
+          "Hepatocellular injury can occur. Check aminotransferases before treatment, one month after maximum dose and whenever injury is suspected; promptly assess jaundice/dark urine or other compatible symptoms.",
+          "Sedation can impair driving/activity and add to alcohol, opioids, benzodiazepines or other CNS depressants. Monitor falls, alertness and breathing when combinations are necessary.",
+          "Hallucinations/delusions or psychotic symptoms warrant reassessment and consideration of discontinuation.",
+          "Anaphylaxis or throat/tongue swelling requires stopping and immediate care.",
+          "Abrupt withdrawal can cause rebound hypertension, tachycardia and hypertonia, particularly after high/prolonged dosing or with narcotics. Use the clinician-directed reduction plan.",
+          "Reduced spasticity can compromise posture/balance in a patient who depends on tone; assess functional outcome, not only muscle-tone reduction."
+        ]
+      },
+      "source_sections": {
+        "zanaflex": [
+          "5.1–5.6",
+          "17"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Strong CYP1A2 inhibitors, including fluvoxamine and ciprofloxacin, are contraindicated. A history of hypersensitivity to tizanidine or the exact product’s ingredients is also contraindicated; anaphylaxis/angioedema have occurred. Other CYP1A2 inhibitors have avoidance/review recommendations, not the same blanket formal contraindication status."
+        ]
+      },
+      "source_sections": {
+        "zanaflex": [
+          "4",
+          "7.1",
+          "7.2"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "No boxed warning appears in the selected current Zanaflex label. Significant interaction-related hypotension/sedation, liver injury, severe allergy and withdrawal warnings still require careful prescribing."
+        ]
+      },
+      "source_sections": {
+        "zanaflex": [
+          "Full prescribing information",
+          "5"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "assertions": {
+        "paragraphs": [
+          "Common reported effects are dry mouth, somnolence/sedation, weakness/fatigue and dizziness; constipation, nausea/vomiting, liver-test changes and hypotension/bradycardia also occur. Serious postmarketing hepatic, allergic, skin, cardiac and neuropsychiatric reports cannot define incidence. Overdose can cause coma, respiratory depression, marked hypotension and bradycardia and may be fatal: emergency airway/cardiorespiratory support and Poison Help guidance (U.S. 1-800-222-1222). Dialysis is unlikely to remove tizanidine efficiently."
+        ]
+      },
+      "source_sections": {
+        "zanaflex": [
+          "6",
+          "10"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Combination",
+            "Action"
+          ],
+          "rows": [
+            [
+              "Strong CYP1A2 inhibitors: fluvoxamine, ciprofloxacin",
+              "Contraindicated; greatly increased exposure can cause severe hypotension, drowsiness and impaired function."
+            ],
+            [
+              "Moderate/weak CYP1A2 inhibitors",
+              "Avoid if possible: label examples include zileuton, selected antiarrhythmics (amiodarone, mexiletine, propafenone, verapamil), cimetidine/famotidine, acyclovir and ticlopidine. If necessary and hypotension/bradycardia/excess sedation develops, reduce or discontinue."
+            ],
+            [
+              "Oral contraceptives",
+              "Combination not recommended; may reduce clearance. If necessary, monitor and reduce/discontinue for hypotension, bradycardia or drowsiness."
+            ],
+            [
+              "Alcohol / opioids / benzodiazepines / tricyclics / other CNS depressants",
+              "Alcohol raises exposure and CNS effects are additive. Avoid alcohol; closely review necessary sedative combinations."
+            ],
+            [
+              "Other alpha₂ agonists",
+              "Not recommended due to cumulative hypotension."
+            ],
+            [
+              "Antihypertensives",
+              "Additive hypotension; monitor blood pressure and symptoms."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "zanaflex": [
+          "7.1–7.6",
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy, lactation and reproductive potential",
+      "assertions": {
+        "paragraphs": [
+          "Human pregnancy data are inadequate; animal studies show developmental mortality/growth effects, so discuss maternal need and alternatives before or during pregnancy. Human milk/infant/milk-production data are absent, although animal milk transfer occurs; balance breastfeeding benefit with maternal need and possible infant risk. Human fertility data are inadequate; animal fertility effects do not establish a quantified human risk."
+        ]
+      },
+      "source_sections": {
+        "zanaflex": [
+          "8.1–8.3"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric considerations",
+      "assertions": {
+        "paragraphs": [
+          "Pediatric safety/effectiveness is not established; no pediatric dose is supplied here. Older-adult trials were limited, and PK comparisons found slower clearance in older subjects. Review kidney function, start cautiously and monitor sedation, hypotension, falls and function; older adults with CrCl <25 need lower individual titration doses."
+        ]
+      },
+      "source_sections": {
+        "zanaflex": [
+          "8.4",
+          "8.5",
+          "2.3",
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic impairment",
+      "assertions": {
+        "paragraphs": [
+          "Clearance is reduced in severe renal insufficiency; in studied older patients with CrCl <25 it was more than 50% lower than healthy older subjects. Use lower doses and monitor rather than inferring an exact percentage dose conversion. Hepatic PK has not been evaluated, but extensive hepatic metabolism predicts important exposure changes; caution, lower doses and liver testing are recommended."
+        ]
+      },
+      "source_sections": {
+        "zanaflex": [
+          "8.6",
+          "8.7",
+          "2.3",
+          "2.4",
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "assertions": {
+        "paragraphs": [
+          "A central alpha₂ agonist thought to increase presynaptic inhibition of motor neurons, with effects greatest on polysynaptic pathways and reduced facilitation of spinal motor neurons. The same class activity contributes to hypotension and sedation."
+        ]
+      },
+      "source_sections": {
+        "zanaflex": [
+          "12.1",
+          "5.1",
+          "5.3"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "assertions": {
+        "paragraphs": [],
+        "facts": [
+          [
+            "Absorption",
+            "Essentially fully absorbed, but oral bioavailability ~40% from extensive first-pass metabolism. Fasting peak ~1 hour; food/form changes alter this."
+          ],
+          [
+            "Elimination",
+            "Parent half-life ~2–2.5 hours in studied conditions; ~95% metabolized, mainly by CYP1A2. Metabolites are not known to be active."
+          ],
+          [
+            "Excretion",
+            "Radiolabeled recovery ~60% in urine and ~20% in feces; this includes metabolites and is not 60% unchanged renal clearance."
+          ],
+          [
+            "Therapeutic timing",
+            "Peak tone reduction ~1–2 hours and effect wanes over several hours in trials; do not use PK averages to shorten the labeled 6–8-hour interval."
+          ]
+        ]
+      },
+      "source_sections": {
+        "zanaflex": [
+          "12.3",
+          "14"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": {
+        "paragraphs": [
+          "Follow spasticity relief, mobility/posture/balance, alertness, dizziness, blood pressure/pulse and falls, especially during titration or medicine changes. Review renal function in at-risk/older patients. Check aminotransferases at baseline, one month after maximum dose and if liver injury is suspected. Ask about hallucinations, sedatives, food/form consistency and withdrawal symptoms."
+        ]
+      },
+      "source_sections": {
+        "zanaflex": [
+          "2.1",
+          "5",
+          "8.5–8.7",
+          "17"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Counseling and urgent action",
+      "assertions": {
+        "paragraphs": [
+          "Take only the prescribed form/dose with a consistent meal pattern; tell every prescriber/pharmacist before starting or stopping a medicine. Avoid alcohol and hazardous activity until effects are known; rise slowly. Do not abruptly discontinue chronic use. Airway swelling, inability to wake, severe fainting or breathing impairment needs emergency care. Seek prompt review for jaundice, hallucinations or severe rebound symptoms."
+        ]
+      },
+      "source_sections": {
+        "zanaflex": [
+          "17",
+          "5",
+          "10"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "paragraphs": [
+          "Zanaflex 4 mg scored tablet is the representative product. Its current label covers tablets and 2/4/6 mg capsules; an Apotex tablet label separately verifies 2 mg and 4 mg generic tablets. Exact appearance/ingredients differ by manufacturer; use dispensing records rather than appearance alone."
+        ]
+      },
+      "source_sections": {
+        "zanaflex": [
+          "3",
+          "11",
+          "16"
+        ],
+        "tizageneric": [
+          "3",
+          "11",
+          "16"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Selected product",
+            "Forms / labeled strengths"
+          ],
+          "rows": [
+            [
+              "Zanaflex",
+              "4 mg quadrisected tablet (A594); capsules 2, 4 and 6 mg."
+            ],
+            [
+              "Apotex generic",
+              "2 mg bisected tablet (APO / TI-2); 4 mg quadrisected tablet (APO / TI-4)."
+            ],
+            [
+              "Strength expression",
+              "Label mg expresses tizanidine base supplied as hydrochloride. Confirm the prescribed base-equivalent mg and product."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "zanaflex": [
+          "3",
+          "16"
+        ],
+        "tizageneric": [
+          "3",
+          "16"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Zanaflex: 20–25°C, excursions 15–30°C, child-resistant container. Selected Apotex tablets: same temperature range, tight light-resistant container. Keep securely away from children and follow the dispensed product’s instructions; do not apply capsule/food-handling assumptions to every generic product."
+        ]
+      },
+      "source_sections": {
+        "zanaflex": [
+          "16.2"
+        ],
+        "tizageneric": [
+          "16.2"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "Pediatric/off-label acute-musculoskeletal-pain protocols, exhaustive generics/capsules and international presentations."
+  ],
+  "resolved_source_findings": [
+    "Current strong-CYP1A2 contraindication is broader than naming only ciprofloxacin/fluvoxamine; other inhibitor avoidance status separated.",
+    "Brand tablet strength 4 mg distinguished from verified generic 2/4 mg.",
+    "Capsule/tablet food differences and capsule-content applesauce exposure retained; no universal opening instruction inferred."
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, essential safety, three hero facts, cited disclosures, four safety cards and three product cards.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending",
+    "audit_assertions_match_monograph": true
+  },
+  "monograph_sha256": "388e37bf046060e5f8bd13d092b4b034d4d209c1b50a4d1d2e905688d3b7ea37",
+  "front_matter_source_map": {
+    "facts": [
+      [
+        "Therapeutic class",
+        "Central alpha₂ agonist · antispasticity medicine"
+      ],
+      [
+        "Representative product",
+        "Zanaflex · 4 mg tablet"
+      ],
+      [
+        "Reference focus",
+        "Adult spasticity · tablets and capsules"
+      ]
+    ],
+    "essential": {
+      "title": "Check interacting medicines before prescribing or dispensing.",
+      "text": "Strong CYP1A2 inhibitors, including ciprofloxacin and fluvoxamine, are contraindicated because severe hypotension and sedation can result. Keep food and formulation consistent; do not abruptly stop prolonged/high-dose therapy.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "source_sections": {
+      "zanaflex": [
+        "1",
+        "2",
+        "4",
+        "5",
+        "3",
+        "11",
+        "16"
+      ],
+      "tizageneric": [
+        "1",
+        "2",
+        "4",
+        "5",
+        "3",
+        "11",
+        "16"
+      ]
+    }
+  }
+}

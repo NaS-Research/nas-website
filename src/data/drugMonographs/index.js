@@ -79,6 +79,16 @@ import { lorazepam } from "./lorazepam.js";
 import { fluticasoneSalmeterol } from "./fluticasone-salmeterol.js";
 import { insulin_aspart } from "./insulin-aspart.js";
 import { celecoxib } from "./celecoxib.js";
+import { finasteride } from "./finasteride.js";
+import { quetiapine } from "./quetiapine.js";
+import { clonidine } from "./clonidine.js";
+import { aripiprazole } from "./aripiprazole.js";
+import { cephalexin } from "./cephalexin.js";
+import { alendronate } from "./alendronate.js";
+import { topiramate } from "./topiramate.js";
+import { tizanidine } from "./tizanidine.js";
+import { dapagliflozin } from "./dapagliflozin.js";
+import { oxycodone_acetaminophen } from "./oxycodone-acetaminophen.js";
 
 export const reviewedDrugMonographs = {
   "atorvastatin": atorvastatin,
@@ -161,4 +171,14 @@ export const reviewedDrugMonographs = {
   "fluticasone-salmeterol": fluticasoneSalmeterol,
   "insulin-aspart": insulin_aspart,
   "celecoxib": celecoxib,
+  "finasteride": finasteride,
+  "quetiapine": quetiapine,
+  "clonidine": clonidine,
+  "aripiprazole": aripiprazole,
+  "cephalexin": cephalexin,
+  "alendronate": alendronate,
+  "topiramate": topiramate,
+  "tizanidine": tizanidine,
+  "dapagliflozin": dapagliflozin,
+  "oxycodone-acetaminophen": oxycodone_acetaminophen,
 };

@@ -1,0 +1,634 @@
+{
+  "slug": "finasteride",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "U.S. Organon Propecia1mg and Proscar5mg oraltablets, all labeledindications/doses/populations; currentFDAcompoundedtopicalstatus andEMA2025psychiatriccontext separatelyidentified",
+  "excludedRegimens": [
+    "Compoundedtopical/combination and non-U.S.spray doses; noFDAapprovalinferredfromDailyMedlisting",
+    "Offlabelwomen/pediatricregimens; quartered5mgsubstitution for1mghairloss",
+    "Universal1mgPSAdoubling rule, absenceofpsychiatricrisk or guaranteedpersistent-symptomresolution",
+    "Doxazosindoseregimen requiresseparatealpha-blockerlabel"
+  ],
+  "sources": [
+    {
+      "id": "label",
+      "title": "Propecia 1 mg · Prescribing information",
+      "publisher": "DailyMed / Organon LLC",
+      "note": "Current SPL version 9, effective 2024-10-14. ",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f904709-65aa-44ce-b144-b4c8a0416e36"
+    },
+    {
+      "id": "bph",
+      "title": "Proscar 5 mg · Prescribing information",
+      "publisher": "DailyMed / Organon LLC",
+      "note": "Current SPL version 9, effective 2026-03-18. ",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f988153-fc74-4ca4-b29a-111f750c4a4b"
+    },
+    {
+      "id": "fda",
+      "title": "Compounded topical finasteride · Safety alert",
+      "publisher": "U.S. Food and Drug Administration",
+      "note": "April 22, 2025 alert; current public U.S. topical approval and exposure context.",
+      "url": "https://www.fda.gov/drugs/human-drug-compounding/fda-alerts-health-care-providers-compounders-and-consumers-potential-risks-associated-compounded"
+    },
+    {
+      "id": "ema",
+      "title": "Finasteride and suicidal thoughts · Safety review",
+      "publisher": "European Medicines Agency",
+      "note": "2025 EU review; jurisdiction-specific counseling, not a U.S. boxed warning.",
+      "url": "https://www.ema.europa.eu/en/news/measures-minimise-risk-suicidal-thoughts-finasteride-dutasteride-medicines"
+    }
+  ],
+  "labelMetadata": [
+    {
+      "sourceId": "label",
+      "product": "finasteride-1",
+      "setid": "6f904709-65aa-44ce-b144-b4c8a0416e36",
+      "effectiveTime": "20241014",
+      "version": "9",
+      "documentVersion": "PI identifier uspi-og0906-1t-2208r002; PatientInformation revised11/2023",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/6f904709-65aa-44ce-b144-b4c8a0416e36.xml",
+      "xmlSha256": "be74aa584c9752e0bc52c9d0c29afedcfa1a654777b167d0b8d36dce5931561d"
+    },
+    {
+      "sourceId": "bph",
+      "product": "finasteride-5",
+      "setid": "6f988153-fc74-4ca4-b29a-111f750c4a4b",
+      "effectiveTime": "20260318",
+      "version": "9",
+      "documentVersion": "PI identifier uspi-og0906-5t-2603r004; PatientInformation03/2026",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/6f988153-fc74-4ca4-b29a-111f750c4a4b.xml",
+      "xmlSha256": "4e48adb03435e14ed8e174be9da74e4896df1a3ff69dbc8f2a88aa21b62532c2"
+    }
+  ],
+  "evidence": [
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/finasteride-1.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/finasteride/finasteride-1.xml",
+      "sha256": "be74aa584c9752e0bc52c9d0c29afedcfa1a654777b167d0b8d36dce5931561d",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/6f904709-65aa-44ce-b144-b4c8a0416e36.xml"
+    },
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/finasteride-1-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/finasteride/finasteride-1-sections.json",
+      "sha256": "e3d0d5573dce5dc1fad2c9ab1661fe351a3eccb17726206e5273154a1bfce1ec",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/6f904709-65aa-44ce-b144-b4c8a0416e36.xml"
+    },
+    {
+      "sourceId": "bph",
+      "localEvidence": "/tmp/nas-drug-sources/finasteride-5.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/finasteride/finasteride-5.xml",
+      "sha256": "4e48adb03435e14ed8e174be9da74e4896df1a3ff69dbc8f2a88aa21b62532c2",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/6f988153-fc74-4ca4-b29a-111f750c4a4b.xml"
+    },
+    {
+      "sourceId": "bph",
+      "localEvidence": "/tmp/nas-drug-sources/finasteride-5-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/finasteride/finasteride-5-sections.json",
+      "sha256": "e077d41ae46de17c27d87e8d16b292cb8dfebf6ed2724b558743fa5aff4ae2b3",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/6f988153-fc74-4ca4-b29a-111f750c4a4b.xml"
+    },
+    {
+      "sourceId": "fda",
+      "localEvidence": "/tmp/nas-drug-sources/finasteride-fda-topical.html",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/finasteride/finasteride-fda-topical.html",
+      "sha256": "06df518ee449b1f5d7ac061566025b420de88f46ca9c722a66735af8d78285e5",
+      "url": "https://www.fda.gov/drugs/human-drug-compounding/fda-alerts-health-care-providers-compounders-and-consumers-potential-risks-associated-compounded"
+    },
+    {
+      "sourceId": "ema",
+      "localEvidence": "/tmp/nas-drug-sources/finasteride-ema-mood.html",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/finasteride/finasteride-ema-mood.html",
+      "sha256": "d1e9a5fbc62e166638aa658865e3c535cc17176ac9faa488cf53953bf06fb490",
+      "url": "https://www.ema.europa.eu/en/news/measures-minimise-risk-suicidal-thoughts-finasteride-dutasteride-medicines"
+    }
+  ],
+  "sourceEvidenceRoot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/finasteride",
+  "sourceManifest": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/finasteride/source-manifest.json",
+  "assertionToSourceMap": [
+    {
+      "section": "indications",
+      "card": "Male pattern hair loss",
+      "assertions": {
+        "paragraphs": [
+          "Propecia 1 mg treats androgenetic alopecia in men. Efficacy for bitemporal recession has not been established. The label does not indicate use in women or children."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§1 hair-loss indication/bitemporal limitation/women; §8.4 pediatric"
+      },
+      "review": "Supporting full primary label subsections reviewed; clinical counseling synthesis identified. Formulation, population and regulatory distinctions checked."
+    },
+    {
+      "section": "indications",
+      "card": "Enlarged prostate",
+      "assertions": {
+        "paragraphs": [
+          "Proscar 5 mg treats symptomatic benign prostatic hyperplasia in men with an enlarged prostate to improve symptoms and reduce acute urinary retention and surgery. With doxazosin, it reduces symptomatic BPH progression. It is not approved for prostate-cancer prevention."
+        ]
+      },
+      "sourceIds": [
+        "bph"
+      ],
+      "sourceSections": {
+        "bph": "§1.1–1.3 BPH enlarged prostate, endpoints/doxazosin, prevention limitation"
+      },
+      "review": "Supporting full primary label subsections reviewed; clinical counseling synthesis identified. Formulation, population and regulatory distinctions checked."
+    },
+    {
+      "section": "indications",
+      "card": "Topical and combination scope",
+      "assertions": {
+        "paragraphs": [
+          "FDA states that no topical finasteride product is FDA-approved. Compounded sprays can enter the bloodstream and transfer to others; topical use does not establish absence of systemic risk. Compounded topical, non-U.S. spray, and fixed-combination regimens are outside this oral dose reference."
+        ]
+      },
+      "sourceIds": [
+        "fda"
+      ],
+      "sourceSections": {
+        "fda": "Complete 2025 FDA review/discussion/conclusion/recommendations: no FDA-approved topical, expected skin absorption and transfer risks"
+      },
+      "review": "Supporting full primary label subsections reviewed; clinical counseling synthesis identified. Formulation, population and regulatory distinctions checked."
+    },
+    {
+      "section": "dosage",
+      "card": "Labeled oral doses",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Indication/product",
+            "Dose",
+            "Response and use"
+          ],
+          "rows": [
+            [
+              "Male pattern hair loss · Propecia",
+              "1 mg once daily",
+              "With or without meals; usually at least 3 months before benefit. Reassess periodically; stopping reverses the effect within 12 months."
+            ],
+            [
+              "Symptomatic BPH · Proscar",
+              "5 mg once daily",
+              "With or without meals; long-term response assessment is needed."
+            ],
+            [
+              "BPH with doxazosin · Proscar",
+              "5 mg once daily",
+              "Doxazosin requires its own dosing and hypotension assessment."
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label",
+        "bph"
+      ],
+      "sourceSections": {
+        "label": "§2 exact1mg/daily/food/3month/reversal/reassessment",
+        "bph": "§2 exact5mg monotherapy/doxazosin/food"
+      },
+      "review": "Supporting full primary label subsections reviewed; clinical counseling synthesis identified. Formulation, population and regulatory distinctions checked."
+    },
+    {
+      "section": "dosage",
+      "card": "Kidney, liver, and age",
+      "assertions": {
+        "paragraphs": [
+          "Neither selected oral label requires renal dose adjustment or an elderly pharmacokinetic dose adjustment. Use caution with hepatic abnormalities: hepatic impairment has not been studied and no validated numerical adjustment is supplied. Propecia efficacy in adults aged 65 or older has not been established."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "bph"
+      ],
+      "sourceSections": {
+        "label": "§8.5–8.7/12.3",
+        "bph": "§8.5–8.7/12.3 renal noadjustment; hepatic unstudied caution"
+      },
+      "review": "Supporting full primary label subsections reviewed; clinical counseling synthesis identified. Formulation, population and regulatory distinctions checked."
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and missed doses",
+      "assertions": {
+        "paragraphs": [
+          "Use the prescribed intact coated tablet. If a dose is missed, resume the next scheduled dose without adding an extra tablet. Do not improvise a crushed-tablet or topical formulation, especially where pregnant people could be exposed."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "bph"
+      ],
+      "sourceSections": {
+        "label": "PatientInformation HowShouldITake; §16/17 handling",
+        "bph": "PatientInformation HowShouldITake; §16/17 handling"
+      },
+      "review": "Supporting full primary label subsections reviewed; clinical counseling synthesis identified. Formulation, population and regulatory distinctions checked."
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Finasteride can lower PSA, including when prostate cancer is present. Any confirmed increase from the lowest on-treatment PSA warrants assessment. The 5 mg prevention trial showed more high-grade cancers; its implications for the 1 mg hair-loss dose are uncertain. Finasteride is not approved to prevent prostate cancer.",
+          "Evaluate other causes of urinary symptoms before BPH treatment. Prostate cancer can coexist with BPH; large residual urine or severely reduced flow needs monitoring for obstructive uropathy.",
+          "The U.S. labels report depression and suicidal ideation; Propecia also reports suicidal behavior. EMA’s 2025 review identifies suicidal thoughts with oral 1 mg and 5 mg tablets, frequency unknown. Its hair-loss advice is to stop 1 mg treatment and seek medical advice for mood changes. Suicidal thoughts require immediate help."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "bph",
+        "ema"
+      ],
+      "sourceSections": {
+        "label": "§5.1–5.4/6.2 PSA, 5mgPCPT evidence vs1mg uncertainclinical significance, psychiatric reports",
+        "bph": "§5.1–5.6/6.2 PSA, PCPT, obstructiveuropathy, psychiatric reports",
+        "ema": "2025public patients/professionals counseling stop1mgifmoodchanges; unknownfrequency bothoralstrengths"
+      },
+      "review": "Supporting full primary label subsections reviewed; clinical counseling synthesis identified. Formulation, population and regulatory distinctions checked."
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Hypersensitivity to the selected product and pregnancy or potential pregnancy are contraindications. Both selected products are indicated for men; pregnant people must not handle crushed or broken tablets because exposure can harm male fetal genital development."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "bph"
+      ],
+      "sourceSections": {
+        "label": "§4,5.1,8.1",
+        "bph": "§4,5.3,8.1"
+      },
+      "review": "Supporting full primary label subsections reviewed; clinical counseling synthesis identified. Formulation, population and regulatory distinctions checked."
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "The selected U.S. Propecia and Proscar labels do not contain a boxed warning. Their pregnancy, PSA, high-grade prostate-cancer and adverse-reaction information remains clinically important."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "bph"
+      ],
+      "sourceSections": {
+        "label": "Full currentlabel no BoxedWarning section",
+        "bph": "Full currentlabel no BoxedWarning section"
+      },
+      "review": "Supporting full primary label subsections reviewed; clinical counseling synthesis identified. Formulation, population and regulatory distinctions checked."
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Sexual effects include decreased libido, erectile dysfunction, ejaculation changes and reduced ejaculate volume. Postmarketing reports include sexual dysfunction persisting after discontinuation, infertility or poor semen quality, testicular pain, hematospermia, breast changes or male breast cancer, hypersensitivity including angioedema, and psychiatric symptoms. Frequency and causal attribution of voluntary reports are uncertain; persistent symptoms are not guaranteed to resolve after stopping."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "bph"
+      ],
+      "sourceSections": {
+        "label": "§6.1/6.2 complete sexual/reproductive/breast/hypersensitivity/psychiatric reports; uncertainpostmarketingcausality",
+        "bph": "§6.1/6.2 complete reportedreactions/population distinction"
+      },
+      "review": "Supporting full primary label subsections reviewed; clinical counseling synthesis identified. Formulation, population and regulatory distinctions checked."
+    },
+    {
+      "section": "interactions",
+      "card": "Metabolic interaction evidence",
+      "assertions": {
+        "paragraphs": [
+          "No clinically important interactions were identified in the selected labels. Finasteride does not appear to materially affect the CYP-linked drug-metabolizing system; tested drugs included warfarin, digoxin, propranolol and theophylline. This does not establish that every possible combination has been studied."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "bph"
+      ],
+      "sourceSections": {
+        "label": "§7.1/7.2",
+        "bph": "§7.1/7.2 clinicalinteractionevidence"
+      },
+      "review": "Supporting full primary label subsections reviewed; clinical counseling synthesis identified. Formulation, population and regulatory distinctions checked."
+    },
+    {
+      "section": "interactions",
+      "card": "Alpha-blocker combination",
+      "assertions": {
+        "paragraphs": [
+          "The selected 5 mg label supports combination with doxazosin for BPH progression. Apply the alpha-blocker’s own precautions and dosing; finasteride does not remove risks such as orthostatic hypotension from another medicine."
+        ]
+      },
+      "sourceIds": [
+        "bph"
+      ],
+      "sourceSections": {
+        "bph": "§1.2,2.2,14.2 doxazosincombination; orthostasiscombinationtrial context"
+      },
+      "review": "Supporting full primary label subsections reviewed; clinical counseling synthesis identified. Formulation, population and regulatory distinctions checked."
+    },
+    {
+      "section": "interactions",
+      "card": "PSA and concurrent products",
+      "assertions": {
+        "paragraphs": [
+          "Tell clinicians interpreting PSA about finasteride, dose, duration and missed doses. Review other hair-loss or BPH medicines and compounded products to avoid duplicate finasteride exposure or applying a separate product’s directions to these tablets."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "bph",
+        "fda"
+      ],
+      "sourceSections": {
+        "label": "§5.2 PSA/nonadherence",
+        "bph": "§5.1 PSA/nonadherence",
+        "fda": "topical/combinationunapprovedscope; duplicateproductreview counseling synthesis"
+      },
+      "review": "Supporting full primary label subsections reviewed; clinical counseling synthesis identified. Formulation, population and regulatory distinctions checked."
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy, handling, and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Exposure during pregnancy may disrupt development of male fetal external genitalia. Intact coatings prevent contact during normal handling; crushed or broken tablets must not be handled by people who are or may become pregnant. Wash accidental contact immediately with soap and water and obtain medical advice. Finasteride has been measured in semen at low levels; the labels discuss potential exposure rather than prescribing a universal contraception regimen. Propecia milk excretion is unknown; neither product is indicated for women."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "bph"
+      ],
+      "sourceSections": {
+        "label": "Full§8.1,8.3;§5.1/16/17 intactcoating,soapwater,semendata",
+        "bph": "Full§8.1–8.3;§5.3/16/17 pregnancyhandling,semen/lactation"
+      },
+      "review": "Supporting full primary label subsections reviewed; clinical counseling synthesis identified. Formulation, population and regulatory distinctions checked."
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and older adult use",
+      "assertions": {
+        "paragraphs": [
+          "Pediatric safety and effectiveness are not established. BPH studies included older men without an overall age-related efficacy or safety difference; no elderly dose adjustment is required. Propecia studies did not establish efficacy at age 65 or older."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "bph"
+      ],
+      "sourceSections": {
+        "label": "§8.4/8.5",
+        "bph": "§8.4/8.5"
+      },
+      "review": "Supporting full primary label subsections reviewed; clinical counseling synthesis identified. Formulation, population and regulatory distinctions checked."
+    },
+    {
+      "section": "populations",
+      "card": "Renal, hepatic, and fertility considerations",
+      "assertions": {
+        "paragraphs": [
+          "No renal adjustment is required in the selected labels. Hepatic metabolism is extensive, and caution is advised with liver abnormalities because hepatic impairment has not been studied. Decreased ejaculate volume and postmarketing poor semen quality or infertility have been reported; improvement after discontinuation has also been reported, without certainty for every patient."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "bph"
+      ],
+      "sourceSections": {
+        "label": "§8.6/8.7/6.2",
+        "bph": "§8.3/8.6/8.7/5.5/6.2"
+      },
+      "review": "Supporting full primary label subsections reviewed; clinical counseling synthesis identified. Formulation, population and regulatory distinctions checked."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "assertions": {
+        "paragraphs": [
+          "Finasteride inhibits the enzyme converting testosterone to dihydrotestosterone, predominantly Type II 5α-reductase. Reduced scalp DHT contributes to the hair-loss treatment pathway; reduced prostate DHT supports prostate shrinkage. It does not bind the androgen receptor."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "bph"
+      ],
+      "sourceSections": {
+        "label": "§12.1–12.2",
+        "bph": "§12.1–12.2"
+      },
+      "review": "Supporting full primary label subsections reviewed; clinical counseling synthesis identified. Formulation, population and regulatory distinctions checked."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Absorption and elimination",
+      "assertions": {
+        "paragraphs": [
+          "Oral peak concentrations occur in roughly 1–2 hours; food does not alter bioavailability meaningfully for the selected products. Protein binding is about 90%. Metabolism is mainly hepatic through CYP3A4; metabolites are eliminated in urine and feces. Plasma half-life is roughly 5–6 hours in younger adults and about 8 hours in men older than 70, while enzyme and clinical effects last longer."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "bph"
+      ],
+      "sourceSections": {
+        "label": "§12.3 fullPK food/protein/metabolism/half-life",
+        "bph": "§12.3 fullPK olderageandrenal/hepatic"
+      },
+      "review": "Supporting full primary label subsections reviewed; clinical counseling synthesis identified. Formulation, population and regulatory distinctions checked."
+    },
+    {
+      "section": "practice",
+      "card": "BPH and PSA monitoring",
+      "assertions": {
+        "paragraphs": [
+          "For Proscar, establish a new PSA baseline at least 6 months after initiation and monitor periodically. After at least 6 months, double an isolated PSA value for comparison with untreated-men reference ranges; percent-free PSA needs no adjustment. Evaluate any confirmed rise from the nadir. Propecia also lowers PSA, but its label does not supply the same universal six-month doubling rule. Assess urinary symptoms, flow, retention and possible alternative diagnoses."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "bph"
+      ],
+      "sourceSections": {
+        "label": "§5.2",
+        "bph": "§5.1 precise6months baseline/doubleisolated/percentfree/rise; §5.6 alternativeurology"
+      },
+      "review": "Supporting full primary label subsections reviewed; clinical counseling synthesis identified. Formulation, population and regulatory distinctions checked."
+    },
+    {
+      "section": "practice",
+      "card": "Counseling and follow-up",
+      "assertions": {
+        "paragraphs": [
+          "Reassess hair benefit and adherence over months. Discuss sexual function, fertility concerns, breast lumps or nipple discharge, and mood changes. For mood changes during 1 mg hair-loss treatment, follow the cited EMA stop-and-contact advice; obtain urgent help for suicidal thoughts. Seek emergency care for swelling affecting breathing. Do not assume compounded topical products are free of systemic or transfer risks."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "bph",
+        "ema",
+        "fda"
+      ],
+      "sourceSections": {
+        "label": "§17/6.2 breast/sexual/psych/hypersensitivity",
+        "bph": "§17/6.2",
+        "ema": "2025public stop1mgfor mood/seekadvice",
+        "fda": "complete topicalriskcommunication"
+      },
+      "review": "Supporting full primary label subsections reviewed; clinical counseling synthesis identified. Formulation, population and regulatory distinctions checked."
+    },
+    {
+      "section": "practice",
+      "card": "Excess dosing or accidental exposure",
+      "assertions": {
+        "paragraphs": [
+          "Do not use high-dose trial experience as a safe self-dosing limit. The labels identify no specific overdose antidote; obtain prompt poison-control or medical advice after accidental excess or pregnancy exposure. Management depends on circumstances and symptoms."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "bph"
+      ],
+      "sourceSections": {
+        "label": "§10,8.1,17; promptmedicalassessment is general clinical counseling",
+        "bph": "§10,8.1,17; no numericallysafe excess inference"
+      },
+      "review": "Supporting full primary label subsections reviewed; clinical counseling synthesis identified. Formulation, population and regulatory distinctions checked."
+    },
+    {
+      "section": "product",
+      "card": "Representative tablet · Propecia 1 mg",
+      "assertions": {
+        "facts": [
+          [
+            "Appearance",
+            "Tan, octagonal, convex, film-coated"
+          ],
+          [
+            "Imprint",
+            "Stylized P logo · PROPECIA"
+          ],
+          [
+            "Example package",
+            "NDC 78206-152-01 · bottle of 30 with desiccant"
+          ],
+          [
+            "Labeler",
+            "Organon LLC"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§16 exact1mgNDC/appearance/labeler"
+      },
+      "review": "Supporting full primary label subsections reviewed; clinical counseling synthesis identified. Formulation, population and regulatory distinctions checked."
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Selected Propecia is a 1 mg coated tablet. Selected Proscar is a blue, modified apple-shaped 5 mg coated tablet marked MSD 72 and PROSCAR. Different manufacturers and combination products may have different identifiers. No topical dose is supplied here."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "bph"
+      ],
+      "sourceSections": {
+        "label": "§3/16",
+        "bph": "§3/16 exactblueapple5mg/MSD72/PROSCAR"
+      },
+      "review": "Supporting full primary label subsections reviewed; clinical counseling synthesis identified. Formulation, population and regulatory distinctions checked."
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Propecia: store at 15–30°C, keep the container closed and protect from moisture. Proscar: store below 30°C, protect from light and keep the container tightly closed. Preserve intact coatings; follow the pregnancy handling precautions for broken or crushed tablets."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "bph"
+      ],
+      "sourceSections": {
+        "label": "§16 15–30C closed/moisture",
+        "bph": "§16 below30C/light/tightlyclosed"
+      },
+      "review": "Supporting full primary label subsections reviewed; clinical counseling synthesis identified. Formulation, population and regulatory distinctions checked."
+    }
+  ],
+  "materialErrors": [],
+  "unresolvedMaterialGaps": [],
+  "sourceDiscrepancies": [
+    {
+      "issue": "CurrentPropeciaSPLusesolderPIidentifier/PatientInformation; ProscarcurrentPIidentifierMarch2026. No newerPropeciaPIinvented.",
+      "resolved": true
+    },
+    {
+      "issue": "EMA2025psychiatricreviewandFDA2025topicalalert are distinctjurisdiction/formulation actions.",
+      "resolution": "U.S.labelspostmarketingpsychiatricreportsretained;EMA1mgstopcounselingidentified;noU.S.boxclaimed;FDAno-approvedtopicalstatement explicit.",
+      "resolved": true
+    },
+    {
+      "issue": "PSAsuppressionrules differ1mgvs5mg.",
+      "resolution": "Sixmonthbaseline/doubling/percentfreeguidance scopedonlytoProscar5mg;anyconfirmednadirrisebothlabels.",
+      "resolved": true
+    }
+  ],
+  "limitations": [
+    "Only public primary sources used; no paywalled access claimed.",
+    "Brand/product scope is explicit; individual response and other manufacturer directions require clinical assessment.",
+    "Rendered page, build and batch checks remain with parent integration."
+  ],
+  "reviewedSourceSections": [
+    "Propecia full§§1–8,10–12,16–17 andPatientInformation; supportingPK/populations/psychiatric postmarketing fullyread",
+    "Proscar full§§1–8,10–12,16–17 andPatientInformation; PSA/urologic distinctions andpostmarketing fullyread",
+    "FDA2025topicalriskcompletepubliccommunication; EMA2025publicreviewpatient/professionalcounseling"
+  ],
+  "verification": {
+    "schemaErrors": [],
+    "sectionIds": [
+      "indications",
+      "dosage",
+      "safety",
+      "interactions",
+      "populations",
+      "pharmacology",
+      "practice",
+      "product"
+    ],
+    "heroFacts": 3,
+    "safetyCardOrder": [
+      "Warnings and precautions",
+      "Contraindications",
+      "Boxed warning status",
+      "Adverse reactions"
+    ],
+    "productCardOrder": [
+      "Representative tablet · Propecia 1 mg",
+      "Dosage forms and strengths",
+      "Storage and handling"
+    ],
+    "renderedPageQA": "Pending parent batch QA"
+  }
+}
