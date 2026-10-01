@@ -1,4 +1,6 @@
 import Link from "next/link";
+import DrugMonograph from "@/components/learn/DrugMonograph";
+import { acetaminophen } from "@/data/drugMonographs/acetaminophen";
 import { drugPageGroups } from "@/data/drugPageSections";
 import "@/components/learn/drug-profile.css";
 import { notFound } from "next/navigation";
@@ -17,7 +19,9 @@ export async function generateMetadata({ params }) {
   if (!drug) return {};
   return {
     title: `${drug.generic.replace(/\b\w/g, (letter) => letter.toUpperCase())} | NaS Drug Library`,
-    description: drug.brand
+    description: slug === acetaminophen.slug
+      ? "Acetaminophen: indications, formulation-specific dosage, safety, interactions, monitoring, and referenced pharmacy information."
+      : drug.brand
       ? `Study ${drug.generic}, including common uses, mechanism, safety, monitoring, counseling, and current official medication references.`
       : `Review ${drug.generic} through its medication profile and current public medication label records.`,
     alternates: { canonical: `/learn/pharmacy/drugs/${drug.slug}` },
@@ -32,6 +36,7 @@ export default async function DrugProfilePage({ params }) {
   const { slug } = await params;
   const drug = getCoreDrug(slug);
   if (!drug) notFound();
+  if (slug === acetaminophen.slug) return <DrugMonograph monograph={acetaminophen} />;
   const hasReviewedCard = Boolean(drug.brand);
   const classification = drug.className || (drug.therapeuticClass !== "Miscellaneous agents" ? drug.therapeuticClass : null);
   const groups = drugPageGroups.filter(group => group.id === 'overview' || group.sections.some(([key]) => drug[key]?.length));
