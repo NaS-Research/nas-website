@@ -3503,7 +3503,10 @@
         },
         {
           "slug": "hhs-causes-overlap",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "latestScopedEvidence": "enteral-nutrition-broader-hhs-review.json",
+          "embeddedCheckVerified": false,
+          "wholeLessonVerified": false
         },
         {
           "slug": "hhs-initial-fluids",
@@ -3527,12 +3530,52 @@
         },
         {
           "slug": "hhs-transition-prevention",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "latestScopedEvidence": "enteral-nutrition-broader-hhs-review.json",
+          "embeddedCheckVerified": false,
+          "wholeLessonVerified": false
         }
       ],
       "questions": 120,
-      "status": "unreviewed",
-      "evidence": []
+      "status": "reviewing",
+      "evidence": [
+        "enteral-nutrition-broader-hhs-review.json"
+      ],
+      "broaderEnteralAdministrationReview": {
+        "evidence": "enteral-nutrition-broader-hhs-review.json",
+        "verifiedQuestionIds": [
+          "hhs-08-application",
+          "hhs-08-safety",
+          "hhs-08-case"
+        ],
+        "correctedQuestionIds": [
+          "hhs-08-application",
+          "hhs-08-safety",
+          "hhs-08-case"
+        ],
+        "originalPrimaryQuestionIdsPending": [
+          "hhs-08-principle",
+          "hhs-25-principle",
+          "hhs-25-application",
+          "hhs-25-safety",
+          "hhs-25-case",
+          "hhs-30-principle",
+          "hhs-30-application",
+          "hhs-30-safety",
+          "hhs-30-case"
+        ],
+        "newSourceVerifiedBodyHeadings": [
+          "Match inpatient insulin to oral intake"
+        ],
+        "verifiedEmbeddedCheckLessons": [],
+        "sourceVerifiedCumulativeIds": [
+          "cumulative-hyperosmolar-hyperglycemic-state-hhs-08-safety"
+        ],
+        "working32QuestionRewritePreservedUnreleased": true,
+        "wholeModuleVerified": false,
+        "figuresVerified": 0,
+        "metadataVerified": false
+      }
     },
     {
       "slug": "thyroid-disorders",

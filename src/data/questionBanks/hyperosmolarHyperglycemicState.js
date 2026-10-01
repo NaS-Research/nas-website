@@ -41,7 +41,7 @@ const dimensions = [
 ];
 const offsets = [5, 11, 17];
 
-export const hyperosmolarHyperglycemicStateQuestionBank = concepts.flatMap((concept, conceptIndex) => dimensions.map((dimension, dimensionIndex) => ({
+const originalHyperosmolarHyperglycemicStateQuestionBank = concepts.flatMap((concept, conceptIndex) => dimensions.map((dimension, dimensionIndex) => ({
   id: `hhs-${String(conceptIndex + 1).padStart(2, "0")}-${dimension.key}`,
   question: dimension.prompt(concept),
   choices: [concept[dimension.field], ...offsets.map(offset => concepts[(conceptIndex + offset) % concepts.length][dimension.field])],
@@ -50,3 +50,34 @@ export const hyperosmolarHyperglycemicStateQuestionBank = concepts.flatMap((conc
   reviewHref: `#${concept.lesson}`,
   difficulty: ["foundational", "application", "advanced", "clinical"][dimensionIndex],
 })));
+
+const sourceReviewedExposureQuestions = {
+  "hhs-08-application": {
+    "choices": [
+      "Reconcile medicines, recent dose changes, and nutrition delivery during the precipitant review.",
+      "Exclude medicines from review once infection is suspected",
+      "Record the usual feeding plan without checking what was actually delivered",
+      "Assume recent systemic steroid dose changes cannot affect glucose management"
+    ],
+    "rationale": "The book lists systemic steroids, selected antipsychotics and diuretics among medicines that can raise blood glucose, and makes intake central to inpatient insulin selection. Reconcile actual medicines, recent changes and delivered nutrition alongside the illness and hydration history. This review does not establish that any single exposure caused HHS or specify a tube-feeding insulin schedule."
+  },
+  "hhs-08-safety": {
+    "choices": [
+      "Automatically restarting every preadmission exposure can recreate the same metabolic pressure.",
+      "Reassessing whether a glucose-raising medicine remains necessary",
+      "Planning glucose management when a necessary glucose-raising medicine is continued",
+      "Checking actual nutritional intake before selecting the inpatient insulin regimen"
+    ],
+    "rationale": "The book prefers avoiding glucose-raising medicines when possible and managing the glucose increase when a necessary medicine cannot be avoided. It also matches inpatient insulin to intake. Reassessment before resuming prior exposures applies those principles; it does not mean stopping every medicine or withholding all nutrition."
+  },
+  "hhs-08-case": {
+    "choices": [
+      "Redesign glucose management while reassessing both exposures.",
+      "Assume the temporal association proves tube feeds were the only cause",
+      "Continue the previous glucose plan without reviewing the steroid dose or delivered feeds",
+      "Exclude infection and hydration from review because steroid treatment preceded HHS"
+    ],
+    "rationale": "Systemic steroids are listed as glucose-raising drugs, while inpatient insulin treatment depends on intake and should be proactive. The book describes illness, reduced fluid intake and osmotic diuresis in HHS. Reassess the actual steroid and nutrition exposures while treating the crisis and investigating illness and hydration. The chronology alone does not prove causation; these principles do not supply a tube-specific dosing or IV-transition protocol."
+  }
+};
+export const hyperosmolarHyperglycemicStateQuestionBank = originalHyperosmolarHyperglycemicStateQuestionBank.map((question) => sourceReviewedExposureQuestions[question.id] ? { ...question, ...sourceReviewedExposureQuestions[question.id] } : question);

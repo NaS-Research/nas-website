@@ -1,0 +1,773 @@
+{
+  "date": "2026-10-01",
+  "unit": "enteral-nutrition:broader-hhs-exposure-intake-dependency",
+  "baseCommit": "8833d31757284d2a64db13a07af1a73bed9a0b3f",
+  "source": {
+    "identity": "Private supplied cover-verified RxPrep 2023, 1032 pages.",
+    "completeTextAndRenderedPagesRead": [
+      631,
+      632
+    ],
+    "printedPages": [
+      623,
+      624
+    ],
+    "additionalTextReadNotAdopted": [
+      626
+    ],
+    "chapter": 44,
+    "fullChapterReadThisUnit": false,
+    "locatingOnly": {
+      "pdfPages": [
+        612,
+        634
+      ],
+      "matches": [
+        {
+          "pdfPage": 616,
+          "terms": [
+            "basal"
+          ]
+        },
+        {
+          "pdfPage": 622,
+          "terms": [
+            "basal"
+          ]
+        },
+        {
+          "pdfPage": 624,
+          "terms": [
+            "basal"
+          ]
+        },
+        {
+          "pdfPage": 625,
+          "terms": [
+            "basal"
+          ]
+        },
+        {
+          "pdfPage": 626,
+          "terms": [
+            "basal"
+          ]
+        },
+        {
+          "pdfPage": 627,
+          "terms": [
+            "basal"
+          ]
+        },
+        {
+          "pdfPage": 631,
+          "terms": [
+            "dextrose"
+          ]
+        },
+        {
+          "pdfPage": 632,
+          "terms": [
+            "hyperosmolar",
+            "hhs",
+            "basal"
+          ]
+        }
+      ],
+      "scope": "Locating only; not full clinical/visual review."
+    },
+    "claims": {
+      "631": "Full page and glucose-effect figure read. Systemic steroids, selected antipsychotics, thiazide/loop diuretics and beta-agonists appear among glucose-raising drugs. Avoid such drugs when possible; manage the glucose increase when a necessary drug cannot be avoided.",
+      "632": "Full page and treatment diagram read. Inpatient adequate oral intake: basal, prandial and correction; poor oral intake: basal plus correction; correction is patient-specific; sliding-scale insulin alone strongly discouraged. HHS associated with illness, reduced fluid intake, osmotic diuresis, dehydration and altered consciousness.",
+      "626": "Full text read only for insulin trend and meal-dose context; not used for new claims or closure."
+    },
+    "qualifiedSynthesis": [
+      "Reconcile actual medicines/dose changes/nutrition during precipitant review using drug glucose effects and intake-dependent treatment principles.",
+      "Reassess prior exposures rather than automatically restarting all of them; this does not authorize stopping all medicines or nutrition.",
+      "Case chronology does not prove steroid/feed causation. Keep illness and hydration in the differential and treat the acute crisis while reassessing exposures.",
+      "Place general inpatient oral-intake teaching after acute crisis stabilization without adding an acute HHS, tube-feed or IV-overlap protocol."
+    ],
+    "sourceDiscrepancies": [
+      {
+        "topic": "HHS diagnosis",
+        "book": "Glucose >600 mg/dL, osmolality >320 mOsm/L, pH >7.3, bicarbonate >15 mEq/L and no ketones in the historical description.",
+        "retainedModule": "Modern four-domain criteria, effective/total osmolality distinctions, ketone and acid-base thresholds.",
+        "resolution": "Original modern claims remain pending; not replaced by historical criteria."
+      },
+      {
+        "topic": "Dextrose and insulin in DKA/HHS diagram",
+        "book": "Diagram explicitly titled DKA and HHS treatment: fluids first, NS; change to D5W half-NS at glucose 200 mg/dL; regular IV insulin 0.1 units/kg bolus then 0.1 units/kg/h or 0.14 units/kg/h; potassium target 4-5; bicarbonate if pH <6.9.",
+        "retainedModule": "Pure-HHS 0.05 units/kg/h, dextrose below 250 and mixed-crisis distinctions/current potassium rules.",
+        "resolution": "Historical combined diagram does not establish the retained contemporary pure-HHS protocol. No acute protocol change or clinical closure in this unit."
+      }
+    ],
+    "sourceGaps": [
+      "Complete concentrated nutrition/all sympathomimetics as direct HHS precipitants not established by these pages.",
+      "Complete basal-overlap timing and stable IV requirement to maintenance-dose policy not established by the reviewed section.",
+      "Modern diagnostic, treatment, monitoring/resolution, complication and discharge rules remain pending full reconciliation.",
+      "Book glucose-effect figure is not source verification of existing interactive module figures."
+    ]
+  },
+  "questionReview": [
+    {
+      "module": "hyperosmolar-hyperglycemic-state",
+      "id": "hhs-08-principle",
+      "question": "Which statement best explains hyperglycemia-promoting exposures?",
+      "choices": [
+        "Glucocorticoids, sympathomimetics, selected antipsychotics, diuretics, and concentrated nutrition can contribute to HHS.",
+        "Serum osmolality should fall about 3 to 8 mOsm/kg each hour.",
+        "Dextrose is added below glucose 250 mg/dL to prevent hypoglycemia while controlled correction continues.",
+        "When ongoing insulin is required, subcutaneous basal insulin must be active before the IV infusion ends."
+      ],
+      "answer": 0,
+      "rationale": "Medication and nutrition changes can increase insulin requirements and water loss.",
+      "reviewHref": "#hhs-causes-overlap",
+      "difficulty": "foundational",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        631,
+        632
+      ],
+      "review": "The book lists systemic steroids, selected antipsychotics, diuretics and beta-agonists as glucose-raising medicines. The complete broader sympathomimetic/concentrated-nutrition HHS-precipitant statement and original alternatives/rationale are not established in this scope."
+    },
+    {
+      "module": "hyperosmolar-hyperglycemic-state",
+      "id": "hhs-08-application",
+      "question": "Which action best applies hyperglycemia-promoting exposures?",
+      "choices": [
+        "Reconcile medicines, recent dose changes, and nutrition delivery during the precipitant review.",
+        "Exclude medicines from review once infection is suspected",
+        "Record the usual feeding plan without checking what was actually delivered",
+        "Assume recent systemic steroid dose changes cannot affect glucose management"
+      ],
+      "answer": 0,
+      "rationale": "The book lists systemic steroids, selected antipsychotics and diuretics among medicines that can raise blood glucose, and makes intake central to inpatient insulin selection. Reconcile actual medicines, recent changes and delivered nutrition alongside the illness and hydration history. This review does not establish that any single exposure caused HHS or specify a tube-feeding insulin schedule.",
+      "reviewHref": "#hhs-causes-overlap",
+      "difficulty": "application",
+      "status": "verified",
+      "changed": true,
+      "sourcePdfPages": [
+        631,
+        632
+      ],
+      "review": "Complete original question and retained answer reviewed against systemic steroid/other drug glucose effects and intake-based inpatient insulin selection. New alternatives address the same decision. Clinical review is synthesis; no claim that temporal feed exposure proves HHS causation or establishes a tube-feeding dosing protocol."
+    },
+    {
+      "module": "hyperosmolar-hyperglycemic-state",
+      "id": "hhs-08-safety",
+      "question": "Which error creates the clearest safety problem in hyperglycemia-promoting exposures?",
+      "choices": [
+        "Automatically restarting every preadmission exposure can recreate the same metabolic pressure.",
+        "Reassessing whether a glucose-raising medicine remains necessary",
+        "Planning glucose management when a necessary glucose-raising medicine is continued",
+        "Checking actual nutritional intake before selecting the inpatient insulin regimen"
+      ],
+      "answer": 0,
+      "rationale": "The book prefers avoiding glucose-raising medicines when possible and managing the glucose increase when a necessary medicine cannot be avoided. It also matches inpatient insulin to intake. Reassessment before resuming prior exposures applies those principles; it does not mean stopping every medicine or withholding all nutrition.",
+      "reviewHref": "#hhs-causes-overlap",
+      "difficulty": "advanced",
+      "status": "verified",
+      "changed": true,
+      "sourcePdfPages": [
+        631,
+        632
+      ],
+      "review": "Complete original question and retained answer reviewed against systemic steroid/other drug glucose effects and intake-based inpatient insulin selection. New alternatives address the same decision. Clinical review is synthesis; no claim that temporal feed exposure proves HHS causation or establishes a tube-feeding dosing protocol."
+    },
+    {
+      "module": "hyperosmolar-hyperglycemic-state",
+      "id": "hhs-08-case",
+      "question": "HHS began after high-dose glucocorticoids and escalating tube feeds. Which response is best?",
+      "choices": [
+        "Redesign glucose management while reassessing both exposures.",
+        "Assume the temporal association proves tube feeds were the only cause",
+        "Continue the previous glucose plan without reviewing the steroid dose or delivered feeds",
+        "Exclude infection and hydration from review because steroid treatment preceded HHS"
+      ],
+      "answer": 0,
+      "rationale": "Systemic steroids are listed as glucose-raising drugs, while inpatient insulin treatment depends on intake and should be proactive. The book describes illness, reduced fluid intake and osmotic diuresis in HHS. Reassess the actual steroid and nutrition exposures while treating the crisis and investigating illness and hydration. The chronology alone does not prove causation; these principles do not supply a tube-specific dosing or IV-transition protocol.",
+      "reviewHref": "#hhs-causes-overlap",
+      "difficulty": "clinical",
+      "status": "verified",
+      "changed": true,
+      "sourcePdfPages": [
+        631,
+        632
+      ],
+      "review": "Complete original question and retained answer reviewed against systemic steroid/other drug glucose effects and intake-based inpatient insulin selection. New alternatives address the same decision. Clinical review is synthesis; no claim that temporal feed exposure proves HHS causation or establishes a tube-feeding dosing protocol."
+    },
+    {
+      "module": "hyperosmolar-hyperglycemic-state",
+      "id": "hhs-25-principle",
+      "question": "Which statement best explains subcutaneous insulin transition?",
+      "choices": [
+        "When ongoing insulin is required, subcutaneous basal insulin must be active before the IV infusion ends.",
+        "A maintenance insulin estimate should use representative stable exposure and account for nutrition, kidney function, hypoglycemia risk, and resolving glucotoxicity.",
+        "Total calculated osmolality adds the urea contribution to sodium and glucose.",
+        "Glucose should generally fall no faster than 90 to 120 mg/dL each hour in HHS."
+      ],
+      "answer": 0,
+      "rationale": "A planned overlap maintains insulin activity while the subcutaneous dose is absorbed.",
+      "reviewHref": "#hhs-transition-prevention",
+      "difficulty": "foundational",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        631,
+        632
+      ],
+      "review": "Reviewed inpatient glucose/HHS section does not establish the complete IV-to-subcutaneous basal-overlap or representative-stable-infusion/risk-adjusted dosing policy. General intake-based insulin teaching does not close this harder original question; retained unchanged."
+    },
+    {
+      "module": "hyperosmolar-hyperglycemic-state",
+      "id": "hhs-25-application",
+      "question": "Which action best applies subcutaneous insulin transition?",
+      "choices": [
+        "Select the regimen from prior therapy, inpatient insulin needs, nutrition, kidney function, hypoglycemia risk, the precipitant, and the patient's ability to use it safely.",
+        "Compare recent stable IV needs with prior therapy and weight-based estimates before choosing a practical regimen.",
+        "Add BUN divided by 2.8 when all values use conventional US units.",
+        "Reduce treatment intensity and reassess fluids and insulin if the decline exceeds the neurologic safety range."
+      ],
+      "answer": 0,
+      "rationale": "A planned overlap maintains insulin activity while the subcutaneous dose is absorbed.",
+      "reviewHref": "#hhs-transition-prevention",
+      "difficulty": "application",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        631,
+        632
+      ],
+      "review": "Reviewed inpatient glucose/HHS section does not establish the complete IV-to-subcutaneous basal-overlap or representative-stable-infusion/risk-adjusted dosing policy. General intake-based insulin teaching does not close this harder original question; retained unchanged."
+    },
+    {
+      "module": "hyperosmolar-hyperglycemic-state",
+      "id": "hhs-25-safety",
+      "question": "Which error creates the clearest safety problem in subcutaneous insulin transition?",
+      "choices": [
+        "Stopping IV insulin before basal coverage is active creates a treatment gap and allows severe hyperglycemia to recur.",
+        "Extrapolating a brief early high-dose period can substantially overestimate outpatient insulin needs.",
+        "Mixing mmol/L and mg/dL formulas produces a clinically misleading result.",
+        "Allowing a 220 mg/dL hourly fall can produce a dangerous osmotic shift."
+      ],
+      "answer": 0,
+      "rationale": "A planned overlap maintains insulin activity while the subcutaneous dose is absorbed.",
+      "reviewHref": "#hhs-transition-prevention",
+      "difficulty": "advanced",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        631,
+        632
+      ],
+      "review": "Reviewed inpatient glucose/HHS section does not establish the complete IV-to-subcutaneous basal-overlap or representative-stable-infusion/risk-adjusted dosing policy. General intake-based insulin teaching does not close this harder original question; retained unchanged."
+    },
+    {
+      "module": "hyperosmolar-hyperglycemic-state",
+      "id": "hhs-25-case",
+      "question": "Glucose, osmolality, urine output, and cognition have recovered, but the prescribed basal insulin has not yet been given. Which response is best?",
+      "choices": [
+        "Administer basal insulin and use the protocol-defined overlap before stopping IV insulin.",
+        "Use a conservative risk-adjusted transition estimate rather than the early peak rate alone.",
+        "Calculate total osmolality as 340 mOsm/kg.",
+        "Reassess and slow the correction trajectory."
+      ],
+      "answer": 0,
+      "rationale": "A planned overlap maintains insulin activity while the subcutaneous dose is absorbed.",
+      "reviewHref": "#hhs-transition-prevention",
+      "difficulty": "clinical",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        631,
+        632
+      ],
+      "review": "Reviewed inpatient glucose/HHS section does not establish the complete IV-to-subcutaneous basal-overlap or representative-stable-infusion/risk-adjusted dosing policy. General intake-based insulin teaching does not close this harder original question; retained unchanged."
+    },
+    {
+      "module": "hyperosmolar-hyperglycemic-state",
+      "id": "hhs-30-principle",
+      "question": "Which statement best explains representative transition exposure?",
+      "choices": [
+        "A maintenance insulin estimate should use representative stable exposure and account for nutrition, kidney function, hypoglycemia risk, and resolving glucotoxicity.",
+        "Effective osmolality estimates tonicity from sodium and glucose and excludes urea.",
+        "Heart failure, dialysis, frailty, pregnancy, and older age increase the risk of overload during fluid replacement.",
+        "Potassium below 3.5 mmol/L requires replacement and delay of insulin."
+      ],
+      "answer": 0,
+      "rationale": "Insulin sensitivity and clearance change as perfusion, stress, intake, and kidney function evolve.",
+      "reviewHref": "#hhs-transition-prevention",
+      "difficulty": "foundational",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        631,
+        632
+      ],
+      "review": "Reviewed inpatient glucose/HHS section does not establish the complete IV-to-subcutaneous basal-overlap or representative-stable-infusion/risk-adjusted dosing policy. General intake-based insulin teaching does not close this harder original question; retained unchanged."
+    },
+    {
+      "module": "hyperosmolar-hyperglycemic-state",
+      "id": "hhs-30-application",
+      "question": "Which action best applies representative transition exposure?",
+      "choices": [
+        "Compare recent stable IV needs with prior therapy and weight-based estimates before choosing a practical regimen.",
+        "Calculate two times sodium plus glucose divided by 18 when conventional units are used.",
+        "Use smaller increments such as 250 mL with frequent hemodynamic and respiratory assessment.",
+        "Replace potassium until it exceeds 3.5, then start insulin with close monitoring."
+      ],
+      "answer": 0,
+      "rationale": "Insulin sensitivity and clearance change as perfusion, stress, intake, and kidney function evolve.",
+      "reviewHref": "#hhs-transition-prevention",
+      "difficulty": "application",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        631,
+        632
+      ],
+      "review": "Reviewed inpatient glucose/HHS section does not establish the complete IV-to-subcutaneous basal-overlap or representative-stable-infusion/risk-adjusted dosing policy. General intake-based insulin teaching does not close this harder original question; retained unchanged."
+    },
+    {
+      "module": "hyperosmolar-hyperglycemic-state",
+      "id": "hhs-30-safety",
+      "question": "Which error creates the clearest safety problem in representative transition exposure?",
+      "choices": [
+        "Extrapolating a brief early high-dose period can substantially overestimate outpatient insulin needs.",
+        "Adding BUN to an effective osmolality formula changes the clinical quantity being calculated.",
+        "Applying a fixed large-volume protocol can cause pulmonary edema and mechanical ventilation.",
+        "Immediate insulin at potassium 3.0 can provoke arrhythmia and respiratory weakness."
+      ],
+      "answer": 0,
+      "rationale": "Insulin sensitivity and clearance change as perfusion, stress, intake, and kidney function evolve.",
+      "reviewHref": "#hhs-transition-prevention",
+      "difficulty": "advanced",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        631,
+        632
+      ],
+      "review": "Reviewed inpatient glucose/HHS section does not establish the complete IV-to-subcutaneous basal-overlap or representative-stable-infusion/risk-adjusted dosing policy. General intake-based insulin teaching does not close this harder original question; retained unchanged."
+    },
+    {
+      "module": "hyperosmolar-hyperglycemic-state",
+      "id": "hhs-30-case",
+      "question": "The infusion requirement drops after rehydration and acute kidney injury persists. Which response is best?",
+      "choices": [
+        "Use a conservative risk-adjusted transition estimate rather than the early peak rate alone.",
+        "Calculate effective osmolality as 332 mOsm/kg.",
+        "Use cautious small-volume resuscitation guided by repeated assessment.",
+        "Replace potassium and hold insulin temporarily."
+      ],
+      "answer": 0,
+      "rationale": "Insulin sensitivity and clearance change as perfusion, stress, intake, and kidney function evolve.",
+      "reviewHref": "#hhs-transition-prevention",
+      "difficulty": "clinical",
+      "status": "pending",
+      "changed": false,
+      "sourcePdfPages": [
+        631,
+        632
+      ],
+      "review": "Reviewed inpatient glucose/HHS section does not establish the complete IV-to-subcutaneous basal-overlap or representative-stable-infusion/risk-adjusted dosing policy. General intake-based insulin teaching does not close this harder original question; retained unchanged."
+    }
+  ],
+  "teachingReview": [
+    {
+      "lesson": "hhs-causes-overlap",
+      "heading": "Find acute illness",
+      "body": "Infection, myocardial infarction, stroke, pancreatitis, surgery, trauma, and other stressors raise counterregulatory hormones and can reduce intake. Evaluation should follow symptoms, examination, risk, and initial data.",
+      "status": "pending complete original body",
+      "sourcePdfPages": [
+        631,
+        632
+      ],
+      "review": "Original body retained. Full precipitant lists, modern mixed-crisis thresholds/insulin rate, IV overlap or complete discharge/access plan require further reconciliation; partial book support does not establish the whole body."
+    },
+    {
+      "lesson": "hhs-causes-overlap",
+      "heading": "Find treatment and access failures",
+      "body": "New diabetes, insufficient insulin, glucocorticoids, sympathomimetics, atypical antipsychotics, thiazide-like diuretics, enteral or parenteral nutrition, and limited access to water or diabetes care can contribute.",
+      "status": "pending complete original body",
+      "sourcePdfPages": [
+        631,
+        632
+      ],
+      "review": "Original body retained. Full precipitant lists, modern mixed-crisis thresholds/insulin rate, IV overlap or complete discharge/access plan require further reconciliation; partial book support does not establish the whole body."
+    },
+    {
+      "lesson": "hhs-causes-overlap",
+      "heading": "Recognize mixed DKA and HHS",
+      "body": "Significant ketonemia at least 3.0 mmol/L or metabolic acidosis indicates mixed DKA and HHS rather than pure HHS. Mixed crisis uses the higher 0.1 units/kg/h DKA insulin intensity after potassium safety is established.",
+      "status": "pending complete original body",
+      "sourcePdfPages": [
+        631,
+        632
+      ],
+      "review": "Original body retained. Full precipitant lists, modern mixed-crisis thresholds/insulin rate, IV overlap or complete discharge/access plan require further reconciliation; partial book support does not establish the whole body."
+    },
+    {
+      "lesson": "hhs-transition-prevention",
+      "heading": "Transition without an insulin gap",
+      "body": "Select subcutaneous therapy from prior treatment, inpatient requirements, nutrition, kidney function, hypoglycemia risk, and the reason for HHS. Give basal insulin with protocol-defined overlap before stopping IV insulin when ongoing insulin is required.",
+      "status": "pending complete original body",
+      "sourcePdfPages": [
+        631,
+        632
+      ],
+      "review": "Original body retained. Full precipitant lists, modern mixed-crisis thresholds/insulin rate, IV overlap or complete discharge/access plan require further reconciliation; partial book support does not establish the whole body."
+    },
+    {
+      "lesson": "hhs-transition-prevention",
+      "heading": "Correct the system that failed",
+      "body": "Treat infection or vascular disease, reassess hyperglycemia-promoting medicines, confirm insulin and device technique, and evaluate whether thirst, mobility, cognition, caregiving, food, housing, cost, or transportation limited care.",
+      "status": "pending complete original body",
+      "sourcePdfPages": [
+        631,
+        632
+      ],
+      "review": "Original body retained. Full precipitant lists, modern mixed-crisis thresholds/insulin rate, IV overlap or complete discharge/access plan require further reconciliation; partial book support does not establish the whole body."
+    },
+    {
+      "lesson": "hhs-transition-prevention",
+      "heading": "Match inpatient insulin to oral intake",
+      "body": "After acute-crisis stabilization, reassess the inpatient insulin regimen as oral intake changes. The book prefers basal, prandial and correction insulin when oral intake is adequate, and basal plus correction insulin when oral intake is poor. Correction doses reflect the individual patient's insulin sensitivity; sliding-scale insulin alone is strongly discouraged. These oral-intake principles do not specify an enteral-feed dosing schedule or the timing of IV-to-subcutaneous insulin overlap.",
+      "status": "verified",
+      "sourcePdfPages": [
+        631,
+        632
+      ],
+      "review": "Oral-intake regimen teaching and distinction between patient-specific correction and sliding scale alone are source-supported. The post-crisis placement is a teaching-context synthesis; no acute HHS or enteral-feed dosing policy added."
+    },
+    {
+      "lesson": "hhs-transition-prevention",
+      "heading": "Create a usable prevention plan",
+      "body": "Provide written glucose, medication, hydration, sick-day, emergency, and contact instructions. Ensure medicines, monitoring supplies, water access, caregiver support when needed, and early outpatient follow-up are available before discharge.",
+      "status": "pending complete original body",
+      "sourcePdfPages": [
+        631,
+        632
+      ],
+      "review": "Original body retained. Full precipitant lists, modern mixed-crisis thresholds/insulin rate, IV overlap or complete discharge/access plan require further reconciliation; partial book support does not establish the whole body."
+    }
+  ],
+  "embeddedCheckReview": [
+    {
+      "lesson": "hhs-causes-overlap",
+      "question": {
+        "question": "A hyperosmolar patient has beta-hydroxybutyrate 4.1 mmol/L and pH 7.24. How should the crisis be classified?",
+        "choices": [
+          "Mixed DKA and HHS",
+          "Pure HHS",
+          "Uncomplicated hyperglycemia",
+          "Starvation alone"
+        ],
+        "answer": 0,
+        "rationale": "Significant ketonemia and acidosis establish DKA features within the hyperosmolar crisis.",
+        "reviewHref": "#hhs-causes-overlap"
+      },
+      "status": "pending unchanged",
+      "review": "Complete modern mixed-crisis classification or full discharge-prevention policy is not established by the reviewed book section."
+    },
+    {
+      "lesson": "hhs-transition-prevention",
+      "question": {
+        "question": "Which discharge action most directly reduces recurrent HHS after dehydration and missed treatment?",
+        "choices": [
+          "Secure medicines, monitoring, hydration access, a written sick-day plan, and timely follow-up",
+          "Give only a diagnosis label",
+          "Avoid reviewing cognition or support",
+          "Stop diabetes therapy after discharge"
+        ],
+        "answer": 0,
+        "rationale": "Prevention requires a workable treatment and hydration system rather than information alone.",
+        "reviewHref": "#hhs-transition-prevention"
+      },
+      "status": "pending unchanged",
+      "review": "Complete modern mixed-crisis classification or full discharge-prevention policy is not established by the reviewed book section."
+    }
+  ],
+  "workingDraftReview": [
+    {
+      "id": "hhs-case-08",
+      "question": "HHS began after high-dose glucocorticoids and escalating tube feeds. Which response is best?",
+      "status": "pending unpublished working draft",
+      "review": "Independent 32-question rewrite preserved byte-for-byte and excluded from released candidate. Shared case semantics reviewed but draft IDs, answer positions and explanations were not transplanted into the stable released 120-item bank."
+    },
+    {
+      "id": "hhs-case-25",
+      "question": "Glucose, osmolality, urine output, and cognition have recovered, but the prescribed basal insulin has not yet been given. Which response is best?",
+      "status": "pending unpublished working draft",
+      "review": "Independent 32-question rewrite preserved byte-for-byte and excluded from released candidate. Shared case semantics reviewed but draft IDs, answer positions and explanations were not transplanted into the stable released 120-item bank."
+    },
+    {
+      "id": "hhs-case-26",
+      "question": "HHS followed infection, missed medicines, and inability to obtain water. Which response is best?",
+      "status": "pending unpublished working draft",
+      "review": "Independent 32-question rewrite preserved byte-for-byte and excluded from released candidate. Shared case semantics reviewed but draft IDs, answer positions and explanations were not transplanted into the stable released 120-item bank."
+    },
+    {
+      "id": "hhs-case-30",
+      "question": "The infusion requirement drops after rehydration and acute kidney injury persists. Which response is best?",
+      "status": "pending unpublished working draft",
+      "review": "Independent 32-question rewrite preserved byte-for-byte and excluded from released candidate. Shared case semantics reviewed but draft IDs, answer positions and explanations were not transplanted into the stable released 120-item bank."
+    }
+  ],
+  "broaderSelection": {
+    "expandedOriginalPrimaryQuestions": 12,
+    "sourceVerifiedQuestions": 3,
+    "correctedQuestions": 3,
+    "pendingOriginalPrimaryQuestions": 9,
+    "pendingQuestionIds": [
+      "hhs-08-principle",
+      "hhs-25-principle",
+      "hhs-25-application",
+      "hhs-25-safety",
+      "hhs-25-case",
+      "hhs-30-principle",
+      "hhs-30-application",
+      "hhs-30-safety",
+      "hhs-30-case"
+    ],
+    "allOtherParentQuestionsSourcePending": 108,
+    "selectionMethod": "Three complete original four-question groups: hyperglycemia-promoting exposures, subcutaneous transition and representative transition exposure. Four relevant cases in the separate working rewrite examined and retained unpublished."
+  },
+  "integration": {
+    "releasedBankQuestions": 120,
+    "workingDraftBankQuestions": 32,
+    "originalBodies": 28,
+    "bodiesAfter": 29,
+    "originalChecks": 9,
+    "wholeParentModuleVerified": false,
+    "cumulative": "One derived hhs-08-safety object repaired and source-verified; 1179 other cumulative objects unchanged. Four other HHS cumulative items remain pending.",
+    "metadataReferencesFiguresClinicallyVerified": false
+  },
+  "coverage": {
+    "questionsSourceVerified": 3,
+    "questionsCorrected": 3,
+    "wholeOriginalBodiesVerified": 0,
+    "newBodies": 1,
+    "newBodiesSourceVerified": 1,
+    "embeddedChecksVerified": 0,
+    "figuresVerified": 0,
+    "metadataVerified": false,
+    "wholeParentModuleVerified": false,
+    "broaderEnteralBookVerifiedQuestionCountAfter": 109,
+    "sourceVerifiedCumulativeItemsThisUnit": 1,
+    "sourceVerifiedCumulativeIds": [
+      "cumulative-hyperosmolar-hyperglycemic-state-hhs-08-safety"
+    ],
+    "runningAssessmentCalculations": 677,
+    "runningSeparateSourceExamples": 98,
+    "enteralNutritionCountsUnchanged": {
+      "questionsVerified": 66,
+      "questionsTotal": 108,
+      "bodiesVerified": 16,
+      "bodiesTotal": 36,
+      "checksVerified": 2,
+      "checksTotal": 6,
+      "figuresVerified": 0,
+      "figuresTotal": 6
+    }
+  },
+  "validation": {
+    "technical": {
+      "status": "passed",
+      "modules": [
+        {
+          "slug": "hyperosmolar-hyperglycemic-state",
+          "bank": 120,
+          "bodies": 29,
+          "changedQuestions": [
+            {
+              "id": "hhs-08-application",
+              "question": "Which action best applies hyperglycemia-promoting exposures?",
+              "choices": [
+                "Reconcile medicines, recent dose changes, and nutrition delivery during the precipitant review.",
+                "Exclude medicines from review once infection is suspected",
+                "Record the usual feeding plan without checking what was actually delivered",
+                "Assume recent systemic steroid dose changes cannot affect glucose management"
+              ],
+              "answer": 0,
+              "rationale": "The book lists systemic steroids, selected antipsychotics and diuretics among medicines that can raise blood glucose, and makes intake central to inpatient insulin selection. Reconcile actual medicines, recent changes and delivered nutrition alongside the illness and hydration history. This review does not establish that any single exposure caused HHS or specify a tube-feeding insulin schedule.",
+              "reviewHref": "#hhs-causes-overlap",
+              "difficulty": "application"
+            },
+            {
+              "id": "hhs-08-safety",
+              "question": "Which error creates the clearest safety problem in hyperglycemia-promoting exposures?",
+              "choices": [
+                "Automatically restarting every preadmission exposure can recreate the same metabolic pressure.",
+                "Reassessing whether a glucose-raising medicine remains necessary",
+                "Planning glucose management when a necessary glucose-raising medicine is continued",
+                "Checking actual nutritional intake before selecting the inpatient insulin regimen"
+              ],
+              "answer": 0,
+              "rationale": "The book prefers avoiding glucose-raising medicines when possible and managing the glucose increase when a necessary medicine cannot be avoided. It also matches inpatient insulin to intake. Reassessment before resuming prior exposures applies those principles; it does not mean stopping every medicine or withholding all nutrition.",
+              "reviewHref": "#hhs-causes-overlap",
+              "difficulty": "advanced"
+            },
+            {
+              "id": "hhs-08-case",
+              "question": "HHS began after high-dose glucocorticoids and escalating tube feeds. Which response is best?",
+              "choices": [
+                "Redesign glucose management while reassessing both exposures.",
+                "Assume the temporal association proves tube feeds were the only cause",
+                "Continue the previous glucose plan without reviewing the steroid dose or delivered feeds",
+                "Exclude infection and hydration from review because steroid treatment preceded HHS"
+              ],
+              "answer": 0,
+              "rationale": "Systemic steroids are listed as glucose-raising drugs, while inpatient insulin treatment depends on intake and should be proactive. The book describes illness, reduced fluid intake and osmotic diuresis in HHS. Reassess the actual steroid and nutrition exposures while treating the crisis and investigating illness and hydration. The chronology alone does not prove causation; these principles do not supply a tube-specific dosing or IV-transition protocol.",
+              "reviewHref": "#hhs-causes-overlap",
+              "difficulty": "clinical"
+            }
+          ],
+          "verifiedQuestions": [
+            {
+              "id": "hhs-08-application",
+              "question": "Which action best applies hyperglycemia-promoting exposures?",
+              "choices": [
+                "Reconcile medicines, recent dose changes, and nutrition delivery during the precipitant review.",
+                "Exclude medicines from review once infection is suspected",
+                "Record the usual feeding plan without checking what was actually delivered",
+                "Assume recent systemic steroid dose changes cannot affect glucose management"
+              ],
+              "answer": 0,
+              "rationale": "The book lists systemic steroids, selected antipsychotics and diuretics among medicines that can raise blood glucose, and makes intake central to inpatient insulin selection. Reconcile actual medicines, recent changes and delivered nutrition alongside the illness and hydration history. This review does not establish that any single exposure caused HHS or specify a tube-feeding insulin schedule.",
+              "reviewHref": "#hhs-causes-overlap",
+              "difficulty": "application"
+            },
+            {
+              "id": "hhs-08-safety",
+              "question": "Which error creates the clearest safety problem in hyperglycemia-promoting exposures?",
+              "choices": [
+                "Automatically restarting every preadmission exposure can recreate the same metabolic pressure.",
+                "Reassessing whether a glucose-raising medicine remains necessary",
+                "Planning glucose management when a necessary glucose-raising medicine is continued",
+                "Checking actual nutritional intake before selecting the inpatient insulin regimen"
+              ],
+              "answer": 0,
+              "rationale": "The book prefers avoiding glucose-raising medicines when possible and managing the glucose increase when a necessary medicine cannot be avoided. It also matches inpatient insulin to intake. Reassessment before resuming prior exposures applies those principles; it does not mean stopping every medicine or withholding all nutrition.",
+              "reviewHref": "#hhs-causes-overlap",
+              "difficulty": "advanced"
+            },
+            {
+              "id": "hhs-08-case",
+              "question": "HHS began after high-dose glucocorticoids and escalating tube feeds. Which response is best?",
+              "choices": [
+                "Redesign glucose management while reassessing both exposures.",
+                "Assume the temporal association proves tube feeds were the only cause",
+                "Continue the previous glucose plan without reviewing the steroid dose or delivered feeds",
+                "Exclude infection and hydration from review because steroid treatment preceded HHS"
+              ],
+              "answer": 0,
+              "rationale": "Systemic steroids are listed as glucose-raising drugs, while inpatient insulin treatment depends on intake and should be proactive. The book describes illness, reduced fluid intake and osmotic diuresis in HHS. Reassess the actual steroid and nutrition exposures while treating the crisis and investigating illness and hydration. The chronology alone does not prove causation; these principles do not supply a tube-specific dosing or IV-transition protocol.",
+              "reviewHref": "#hhs-causes-overlap",
+              "difficulty": "clinical"
+            }
+          ],
+          "retainedBodies": [
+            {
+              "lesson": "hhs-transition-prevention",
+              "heading": "Match inpatient insulin to oral intake",
+              "body": "After acute-crisis stabilization, reassess the inpatient insulin regimen as oral intake changes. The book prefers basal, prandial and correction insulin when oral intake is adequate, and basal plus correction insulin when oral intake is poor. Correction doses reflect the individual patient's insulin sensitivity; sliding-scale insulin alone is strongly discouraged. These oral-intake principles do not specify an enteral-feed dosing schedule or the timing of IV-to-subcutaneous insulin overlap."
+            }
+          ],
+          "unchangedOtherBankObjects": 117
+        }
+      ],
+      "preservation": {
+        "all120IdsPromptsKeysCorrectTextsAnchorsPreserved": true,
+        "unchangedOtherBankObjects": 117,
+        "all28OriginalBodiesNineChecksMetadataReferencesFiguresPreserved": true,
+        "oneNewSourceVerifiedBody": true,
+        "all1180CumulativeIdsPromptsKeysCorrectTextsAnchorsPreserved": true,
+        "oneDerivedCumulativeChoiceRationaleRepair": "cumulative-hyperosmolar-hyperglycemic-state-hhs-08-safety",
+        "unchangedOtherCumulativeObjects": 1179,
+        "existingDirtyWorkingCodeByteExact": true,
+        "working32QuestionRewriteNotReleased": true
+      },
+      "runningAssessmentChecks": 677,
+      "runningSeparateSourceExamples": 98,
+      "newAssessmentCalculations": 0,
+      "newSourceExerciseExamples": 0,
+      "contentHashes": {
+        "src/data/modules/hyperosmolarHyperglycemicState.js": "c5fab32321e4d1b5a9dcc63dab1495c468911ef9d3c9c3fbec1c961dcc890f40",
+        "src/data/questionBanks/hyperosmolarHyperglycemicState.js": "5090c2c1507ed3b1eccac4a29f562c02d4d2dcabb6b587fd89540035c4b75eb8"
+      }
+    },
+    "focusedChecks": {
+      "modules": 1,
+      "questions": 120,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "hyperosmolar-hyperglycemic-state",
+          "lessons": 9,
+          "questions": 120,
+          "minimumLessonCoverage": 8
+        }
+      ]
+    },
+    "build": "Isolated HEAD-derived 567-page production build passed.",
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "module": "hyperosmolar-hyperglycemic-state",
+          "width": 1440,
+          "renderedBodies": 29,
+          "expandedBodyViews": 1,
+          "bankItemsCorrectWrong": 3,
+          "cumulativeRuntimeItems": 5,
+          "sourceVerifiedCumulativeInThisUnit": 1,
+          "cumulativeClinicalSourceClosure": false,
+          "groups": 3,
+          "remediationAndSavedProgress": true
+        },
+        {
+          "module": "hyperosmolar-hyperglycemic-state",
+          "width": 390,
+          "renderedBodies": 29,
+          "expandedBodyViews": 1,
+          "bankItemsCorrectWrong": 3,
+          "cumulativeRuntimeItems": 5,
+          "sourceVerifiedCumulativeInThisUnit": 1,
+          "cumulativeClinicalSourceClosure": false,
+          "groups": 3,
+          "remediationAndSavedProgress": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "manualRenderedReview": {
+      "status": "passed",
+      "pairs": 4,
+      "widths": [
+        1440,
+        390
+      ],
+      "viewsReviewed": [
+        "question-hhs-08-application",
+        "question-hhs-08-safety",
+        "question-hhs-08-case",
+        "body-hyperosmolar-hyperglycemic-state-0"
+      ],
+      "scope": "Three repaired question feedback states and one new source-verified body viewed. All 29 bodies matched DOM; correct/wrong feedback, lesson links, saved progress and 320px overflow checks passed. Five HHS cumulative items tested at runtime; only derived hhs-08-safety clinically closed.",
+      "sourceRecomparison": "Final choices/explanations compared again with full PDF631 glucose-effect figure/text and PDF632 inpatient/HHS text and combined treatment diagram. Retained answers apply medication/intake review; temporal tube-feed exposure does not establish causation. No acute protocol, tube schedule or IV-overlap rule adopted."
+    },
+    "structuralScopeNote": "Focused structural checker covers 120 questions/anchors/references. Its empty sourceGaps array is not clinical source closure. Twelve original questions reviewed; nine remain pending."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": "pending",
+    "push": "pending",
+    "production": "not verified"
+  },
+  "nextAction": "Continue the broader feeding inventory with adrenal-insufficiency-crisis granule/tube and perioperative feeding-route candidates, expanding each to complete original topic groups and source context. Preserve nine selected HHS questions, all other original HHS teaching/checks/metadata/figures and contemporary protocol claims as pending. Keep the separate 32-question HHS working draft unreleased pending reconciliation. Full EN, pediatric PN and fluid/calcium dependencies remain; Chapter 1 entry 15 and Chapters 11/44 remain reviewing. No outside EN source opened."
+}
