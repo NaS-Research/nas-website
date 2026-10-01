@@ -1,0 +1,557 @@
+{
+  "slug": "ticagrelor",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "A prescription oral antiplatelet for selected coronary disease and acute ischemic stroke/high-risk TIA populations. This profile follows current Brilinta labeling, separating indication-specific regimens and evolving post-PCI aspirin decisions from universal dual-antiplatelet duration assumptions.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Brilinta · AstraZeneca full current prescribing information",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical highlights revised May 2026; SPL effective May 7, 2026 and API publication August 7, 2026 are separate metadata; SPL v56 effective 20260507; API publication Aug 07, 2026. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f7b3f443-e83d-4bf2-0e96-023448fed9a8"
+    }
+  ],
+  "sourceEvidence": {
+    "label": {
+      "splVersion": "56",
+      "effectiveTime": "20260507",
+      "apiPublishedDate": "Aug 07, 2026",
+      "clinicalRevision": "Clinical highlights revised May 2026; SPL effective May 7, 2026 and API publication August 7, 2026 are separate metadata; SPL v56 effective 20260507; API publication Aug 07, 2026. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f7b3f443-e83d-4bf2-0e96-023448fed9a8",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/f7b3f443-e83d-4bf2-0e96-023448fed9a8.xml",
+      "localEvidence": "/tmp/nas-drug-sources/brilinta.xml",
+      "sha256": "42556186f3b281e7b765ef8c8bbacd1757464ea775a3cd373b871105a43a9812",
+      "supportingSections": [
+        "WARNING: BLEEDING RISK",
+        "1.1 Acute Coronary Syndrome or a History of Myocardial Infarction ",
+        "1.2 Coronary Artery Disease but No Prior Stroke or Myocardial Infarction ",
+        "1.3 Acute Ischemic Stroke or Transient Ischemic Attack (TIA) ",
+        "2.1 General Instructions",
+        "2.2 Acute Coronary Syndrome or a History of Myocardial Infarction",
+        "2.3 Coronary Artery Disease but No Prior Stroke or Myocardial Infarction",
+        "2.4 Acute Ischemic Stroke or Transient Ischemic Attack (TIA) ",
+        "3 DOSAGE FORMS AND STRENGTHS ",
+        "4.1 History of Intracranial Hemorrhage",
+        "4.2 Active Bleeding",
+        "4.3 Hypersensitivity",
+        "5.1 Risk of Bleeding",
+        "5.2 Discontinuation of BRILINTA in Patients Treated for Coronary Artery Disease",
+        "5.3 Dyspnea",
+        "5.4 Bradyarrhythmias",
+        "5.5 Severe Hepatic Impairment ",
+        "5.6 Central Sleep Apnea",
+        "5.7 Laboratory Test Interferences",
+        "6 ADVERSE REACTIONS ",
+        "6.1 Clinical Trials Experience ",
+        "6.2 Postmarketing Experience ",
+        "7.1 Strong CYP3A Inhibitors",
+        "7.2 Strong CYP3A Inducers",
+        "7.3 Opioids",
+        "7.4 Simvastatin, Lovastatin, Rosuvastatin",
+        "7.5 Digoxin",
+        "8.1 Pregnancy ",
+        "8.2 Lactation ",
+        "8.4 Pediatric Use",
+        "8.5 Geriatric Use",
+        "8.6 Hepatic Impairment",
+        "8.7 Renal Impairment",
+        "10 OVERDOSAGE",
+        "11 DESCRIPTION",
+        "12.1 Mechanism of Action",
+        "12.2 Pharmacodynamics",
+        "12.3 Pharmacokinetics",
+        "12.5 Pharmacogenomics ",
+        "13.1 Carcinogenesis, Mutagenesis, Impairment of Fertility ",
+        "14.1 Acute Coronary Syndromes and Secondary Prevention after Myocardial Infarction ",
+        "14.2 Coronary Artery Disease but No Prior Stroke or Myocardial Infarction ",
+        "14.3 Acute Ischemic Stroke or Transient Ischemic Attack (TIA) ",
+        "16 HOW SUPPLIED/STORAGE AND HANDLING ",
+        "17 PATIENT COUNSELING INFORMATION",
+        "",
+        "PACKAGE/LABEL PRINCIPAL DISPLAY PANEL – 60 mg ",
+        "PACKAGE/LABEL PRINCIPAL DISPLAY PANEL – 90 mg "
+      ],
+      "access": "Full relevant public supporting sections read",
+      "checked": "2026-10-01"
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Labeled coronary indications",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Indications and usage"
+        ]
+      },
+      "claims": [
+        "Reduce CV death, MI and stroke after ACS or in patients with a history of MI; also reduce ACS-associated stent thrombosis. Reduce first MI or stroke in high-risk CAD without prior MI/stroke; efficacy in that setting was established in patients with type 2 diabetes, although the indication is not limited to that population."
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Labeled acute stroke / TIA scope",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Indications and usage"
+        ]
+      },
+      "claims": [
+        "Reduce stroke risk after acute ischemic stroke with NIHSS ≤5 or high-risk TIA. THALES excluded NIHSS >5 and thrombolysis recipients; use in those populations is not recommended by the label. This is not a regimen for hemorrhagic stroke or indefinite treatment of every TIA."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Adult indication-specific doses",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Dosage and administration",
+          "Instructions for use",
+          "Pediatric restrictions",
+          "5.2 discontinuation"
+        ]
+      },
+      "claims": [
+        [
+          "ACS / history of MI",
+          "180 mg loading dose; first 90 mg maintenance dose 6–12 hours later. 90 mg twice daily during first year after ACS; after 1 year, 60 mg twice daily."
+        ],
+        [
+          "High-risk CAD, no prior MI/stroke",
+          "60 mg twice daily."
+        ],
+        [
+          "Acute ischemic stroke / high-risk TIA",
+          "180 mg loading dose; first maintenance dose 6–12 hours later, then 90 mg twice daily for up to 30 days."
+        ],
+        [
+          "Aspirin in coronary regimens",
+          "Initiate ACS regimen with aspirin maintenance 75–100 mg/day; CAD generally also uses 75–100 mg/day. After PCI, clinician may consider ticagrelor alone as thrombotic/bleeding risks evolve."
+        ],
+        [
+          "Aspirin in stroke / TIA",
+          "Aspirin loading 300–325 mg, then maintenance 75–100 mg/day. No independent extension of the 30-day regimen."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and interruption",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Dosage and administration",
+          "Instructions for use",
+          "Pediatric restrictions",
+          "5.2 discontinuation"
+        ]
+      },
+      "claims": [
+        "With or without food. If swallowing is difficult, crush tablets, mix in water and drink; may administer into the stomach through an NG tube CH8 or larger. Skip the missed dose and take the next at its scheduled time. Do not coadminister another oral P2Y12 inhibitor. If clinically necessary and possible, interrupt 5 days before surgery with major bleeding risk; restart as soon as hemostasis permits. This is a prescriber-directed plan, not permission to stop for routine procedures."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning status",
+          "Contraindications",
+          "Warnings and precautions",
+          "Adverse reactions",
+          "Overdosage"
+        ]
+      },
+      "claims": [
+        "Antiplatelet effect can cause serious or fatal bleeding. If possible, clinicians manage bleeding without interruption; discontinuation in CAD increases MI, stroke and death.",
+        "New or worsening dyspnea requires evaluation; if attributable and tolerable, label supports continuation when possible. Intolerable symptoms may require another prescribed antiplatelet.",
+        "Ventricular pauses and AV block can occur. Sick sinus syndrome, second/third-degree AV block or bradycardia-related syncope without a pacemaker may increase risk.",
+        "Avoid severe hepatic impairment; moderate impairment needs careful benefit/risk assessment.",
+        "Central sleep apnea, including Cheyne–Stokes respiration, has been reported; suspected cases need assessment.",
+        "Ticagrelor can produce false-negative HIT platelet functional assays. Inform the laboratory; PF4 antibody testing is not expected to be affected.",
+        "Avoid unplanned aspirin dose increases or duplicate aspirin products. Patients receiving thrombolysis or with NIHSS >5 fall outside recommended acute-stroke use."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning status",
+          "Contraindications",
+          "Warnings and precautions",
+          "Adverse reactions",
+          "Overdosage"
+        ]
+      },
+      "claims": [
+        "History of intracranial hemorrhage; active pathological bleeding, such as intracranial bleeding or bleeding peptic ulcer; hypersensitivity to ticagrelor or any component, including angioedema. Severe hepatic impairment is labeled avoidance, distinct from the formal section 4 contraindications."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning · bleeding risk",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning status",
+          "Contraindications",
+          "Warnings and precautions",
+          "Adverse reactions",
+          "Overdosage"
+        ]
+      },
+      "claims": [
+        "Serious, sometimes fatal bleeding; active pathological bleeding or previous intracranial hemorrhage prohibit use. Do not initiate in patients undergoing urgent CABG. Manage bleeding without discontinuation when possible because stopping increases subsequent CV events."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning status",
+          "Contraindications",
+          "Warnings and precautions",
+          "Adverse reactions",
+          "Overdosage"
+        ]
+      },
+      "claims": [
+        "Bleeding and dyspnea are the main common reactions; ventricular pauses, rash, central sleep apnea and rare thrombotic thrombocytopenic purpura are reported. TTP requires prompt treatment. Excess dosing may cause bleeding, GI symptoms and ventricular pauses: obtain urgent professional assessment and ECG monitoring as indicated. Ticagrelor is not dialyzable; label states platelet transfusion did not reverse platelet inhibition in healthy volunteers and may not provide clinical benefit. No home reversal plan or contemporary antidote-availability claim inferred."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "CYP3A and antiplatelet combinations",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Drug interactions",
+          "Dosage combinations",
+          "Instructions for use"
+        ]
+      },
+      "claims": [
+        "Avoid strong CYP3A inhibitors, such as clarithromycin, azole antifungals or ritonavir, which increase exposure; avoid strong inducers, such as rifampin, carbamazepine, phenytoin or phenobarbital, which reduce efficacy. Do not use another oral P2Y12 inhibitor simultaneously. Adhere to indication-specific aspirin dosing and clinician-directed post-PCI monotherapy decisions."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Statins and digoxin",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Drug interactions",
+          "Dosage combinations",
+          "Instructions for use"
+        ]
+      },
+      "claims": [
+        "Avoid simvastatin or lovastatin doses >40 mg/day with ticagrelor. Rosuvastatin exposure can increase through BCRP inhibition; monitor statin-related adverse effects. Monitor digoxin levels when starting or changing ticagrelor because of P-glycoprotein inhibition."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Opioids",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Drug interactions",
+          "Dosage combinations",
+          "Instructions for use"
+        ]
+      },
+      "claims": [
+        "Opioids can delay/reduce ticagrelor absorption. In ACS requiring morphine or another opioid agonist, clinicians should consider a parenteral antiplatelet agent; this is not an independent outpatient substitute or switch algorithm."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Pregnancy/lactation/pediatrics/geriatrics",
+          "Renal/hepatic impairment",
+          "Clinical pharmacology specific populations"
+        ]
+      },
+      "claims": [
+        "No renal dose adjustment is required by labeling. ESRD dialysis patients were not enrolled in clinical efficacy/safety trials; pharmacokinetics/platelet inhibition do not prove similar outcomes, and dialysis does not remove the drug. No adjustment for mild hepatic impairment; moderate impairment has limited experience and needs risk/benefit review; avoid severe impairment."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Pregnancy/lactation/pediatrics/geriatrics",
+          "Renal/hepatic impairment",
+          "Clinical pharmacology specific populations"
+        ]
+      },
+      "claims": [
+        "Pediatric safety/effectiveness are unestablished; the sickle-cell trial did not demonstrate reduction in vaso-occlusive crises. Trials found no overall older-adult safety/effectiveness difference, but bleeding risk and comorbidity still require individual assessment. No pediatric dose inferred."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Pregnancy/lactation/pediatrics/geriatrics",
+          "Renal/hepatic impairment",
+          "Clinical pharmacology specific populations"
+        ]
+      },
+      "claims": [
+        "Available pregnancy case reports have not identified a drug-associated major-birth-defect or miscarriage signal; animal studies identified developmental toxicity at higher exposures. Human data remain limited and clinical benefit/risk needs assessment. Human milk data are absent; breastfeeding is not recommended during treatment. No pregnancy safety guarantee or universal post-treatment milk-discard interval."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Clinical pharmacology",
+          "Mechanism",
+          "Pharmacokinetics",
+          "Pharmacogenomics"
+        ]
+      },
+      "claims": [
+        "Ticagrelor and its active metabolite reversibly inhibit platelet P2Y12 ADP-receptor signaling, reducing activation and aggregation. CYP2C19 loss-of-function status did not determine thrombotic outcomes in the PLATO genetic substudy; no genotype-based ticagrelor dose adjustment inferred."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Clinical pharmacology",
+          "Mechanism",
+          "Pharmacokinetics",
+          "Pharmacogenomics"
+        ]
+      },
+      "claims": [
+        "Median parent peak about 1.5 hours; bioavailability about 36%. CYP3A4 produces an active metabolite; both are >99% protein bound. Elimination is mainly hepatic metabolism and fecal/biliary handling, with <1% unchanged parent/metabolite urinary recovery. Half-lives are about 7 hours parent and 9 hours active metabolite; these do not justify extra missed doses or dialysis removal."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Patient counseling / Instructions for use",
+          "Warnings",
+          "Interactions"
+        ]
+      },
+      "claims": [
+        "Assess bleeding history, active bleeding, organ disease, indication/time since event and prescribed aspirin plan. Review bruising, blood in stool/urine, prolonged bleeding, dyspnea, pulse/syncope and sleep-apnea symptoms. Obtain relevant clinical blood counts/organ testing as indicated; no universal laboratory timetable or routine INR target is established. Monitor digoxin or statin toxicity for relevant combinations and inform HIT-test laboratories."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Patient counseling / Instructions for use",
+          "Warnings",
+          "Interactions"
+        ]
+      },
+      "claims": [
+        "Take twice daily as prescribed; do not double after a missed dose or stop without the treating team. Report prolonged or unexpected bleeding and new/severe breathlessness promptly; severe bleeding, fainting or neurologic symptoms need emergency assessment. Avoid extra aspirin-containing products and report all medicines. Tell surgeons/dentists before procedures; breastfeeding is not recommended. Provide the Medication Guide."
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative Brilinta 90 mg",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Description / strengths",
+          "How supplied/storage",
+          "Package label and SPL approval"
+        ]
+      },
+      "claims": [
+        [
+          "Appearance",
+          "Round, biconvex yellow film-coated tablet; 90 above T on one side."
+        ],
+        [
+          "Package",
+          "60-tablet bottle NDC 0186-0777-60; hospital unit-dose 100 NDC 0186-0777-39."
+        ],
+        [
+          "Status",
+          "Prescription oral NDA product; clinical PI revised May 2026."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Description / strengths",
+          "How supplied/storage",
+          "Package label and SPL approval"
+        ]
+      },
+      "claims": [
+        [
+          "60 mg",
+          "Round, biconvex pink film-coated tablet; 60 above T. Bottle of 60, NDC 0186-0776-60."
+        ],
+        [
+          "90 mg",
+          "Oral tablet strength distinct from the 60 mg long-term regimen; no injectable ticagrelor inferred."
+        ],
+        [
+          "Product scope",
+          "Other manufacturers’ appearance/excipients require their labels. Crushed oral/NG preparation is supported for this product; no independent switching or blanket DAPT duration."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Description / strengths",
+          "How supplied/storage",
+          "Package label and SPL approval"
+        ]
+      },
+      "claims": [
+        "Store at 25°C, with permitted excursions 15–30°C. Provide the Medication Guide and follow the actual package expiration. No universal stored crushed-mixture stability period is supplied; prepare according to exact product instructions."
+      ]
+    },
+    {
+      "section": "hero/essential",
+      "card": "Scope, essential and three tuple facts",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Indications",
+        "Strengths",
+        "Warnings",
+        "Product"
+      ],
+      "claims": [
+        "A prescription oral antiplatelet for selected coronary disease and acute ischemic stroke/high-risk TIA populations. This profile follows current Brilinta labeling, separating indication-specific regimens and evolving post-PCI aspirin decisions from universal dual-antiplatelet duration assumptions.",
+        "Do not use with active pathological bleeding or previous intracranial hemorrhage, and do not start for urgent CABG. Significant bleeding needs urgent care; stopping independently can increase cardiovascular events. Surgery and aspirin changes require the treating team’s plan.",
+        [
+          "Therapeutic class",
+          "Reversible P2Y12 platelet inhibitor"
+        ],
+        [
+          "Oral strengths",
+          "60 mg and 90 mg tablets"
+        ],
+        [
+          "Boxed warning",
+          "Bleeding risk"
+        ]
+      ]
+    }
+  ],
+  "materialErrors": [],
+  "gaps": [
+    {
+      "material": false,
+      "topic": "Clinical duration and aspirin",
+      "resolution": "Label-specific stroke ≤30 days and coronary year-based doses; evolving PCI monotherapy acknowledged, no universal DAPT duration."
+    },
+    {
+      "material": false,
+      "topic": "Current reversal availability",
+      "resolution": "Full label overdose supportive management and non-dialyzability preserved; no current antidote-availability or home reversal claim. Regulatory approval/availability of reversal agents not evaluated."
+    },
+    {
+      "material": false,
+      "topic": "ESRD outcomes",
+      "resolution": "No renal adjustment distinct from absent clinical efficacy/safety data in dialysis."
+    },
+    {
+      "material": false,
+      "topic": "Internal cross-reference numbering",
+      "resolution": "Highlights numeric links differ from full sections in current SPL; source map uses actual full section titles, not erroneous cross-link numbers."
+    }
+  ],
+  "exclusions": [
+    "Unverified manufacturers/combinations and non-U.S. regimens; guideline rankings/off-label algorithms; current stock; universal laboratory schedules; independent switching or home overdose protocols."
+  ],
+  "validation": {
+    "schema": "validateMonograph passed: []",
+    "renderedPage": "Pending parent natural 390 px integration QA"
+  },
+  "monographSha256": "1f8f0acd49826958617a011ab599aad8857dc90d463d690dc38e7121ad8d1d81",
+  "sourceInterpretationNotes": [
+    "Clinical revision, SPL effective date and API publication date distinguished; original focused summaries of full public supporting text.",
+    "Exact eight sections, four Safety disclosures, three Product cards and three tuple facts retained; no APAP-specific claims."
+  ]
+}

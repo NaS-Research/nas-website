@@ -1,0 +1,913 @@
+{
+  "drug": "pancrelipase",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Full current primary labels for all five selected U.S. approved brands, including complete formulation-specific dosing, safety, population, pharmacology, storage and Pertzye tube IFU; current FDA product status.",
+  "sources": [
+    {
+      "id": "creon",
+      "title": "AbbVie · Creon delayed-release capsules",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=073201aa-556d-4a70-918e-84e9616fd88d",
+      "note": "Full public manufacturer label and patient instructions; SPL version 109, effective 20240228. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "109",
+      "effective_date": "20240228",
+      "xml_sha256": "fd612b8c92f874d806b25e600f106e1989c6087b60a903dc10f6e0cc387cf5f8",
+      "retrieved_xml": "/tmp/nas-drug-sources/creon.xml"
+    },
+    {
+      "id": "zenpep",
+      "title": "Aimmune · Zenpep delayed-release capsules",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f16f2d4-8df6-4bd7-ac10-56994fa257b0",
+      "note": "Full public manufacturer label and patient instructions; SPL version 8, effective 20251114. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "8",
+      "effective_date": "20251114",
+      "xml_sha256": "1e29e840049ee531e4086fd4e1e113b8642b916c8dde5eeea2e463998591955f",
+      "retrieved_xml": "/tmp/nas-drug-sources/zenpep.xml"
+    },
+    {
+      "id": "pancreaze",
+      "title": "VIVUS · Pancreaze delayed-release capsules",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e8f5d2fe-728d-42af-99a6-83dddc6539c5",
+      "note": "Full public manufacturer label and patient instructions; SPL version 17, effective 20250606. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "17",
+      "effective_date": "20250606",
+      "xml_sha256": "0bf041f36ee45804ceaff85cda6b31ce2573658f4267c14b9308afe5274e5081",
+      "retrieved_xml": "/tmp/nas-drug-sources/pancreaze.xml"
+    },
+    {
+      "id": "pertzye",
+      "title": "Digestive Care · Pertzye delayed-release capsules and gastrostomy IFU",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=481eec00-9abf-11dd-b71c-0002a5d5c51b",
+      "note": "Full public manufacturer label and patient instructions; SPL version 22, effective 20240311. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "22",
+      "effective_date": "20240311",
+      "xml_sha256": "dc5f34da08129e4e8f3e7645f4268bab7d1cc880c188e788438ab62574485c68",
+      "retrieved_xml": "/tmp/nas-drug-sources/pertzye.xml"
+    },
+    {
+      "id": "viokace",
+      "title": "Aimmune · Viokace non-enteric tablets",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=58bdb8de-582d-44e6-9b72-8d5a42fdf501",
+      "note": "Full public manufacturer label and patient instructions; SPL version 7, effective 20250814. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "7",
+      "effective_date": "20250814",
+      "xml_sha256": "05bef550d2ed96a24b57ff2d0203ada8ff5287613a359f6f3907be8505b67161",
+      "retrieved_xml": "/tmp/nas-drug-sources/viokace.xml"
+    },
+    {
+      "id": "BLA020725",
+      "title": "FDA · BLA020725 current product status",
+      "publisher": "U.S. Food and Drug Administration",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA020725&limit=1",
+      "note": "Official current product record checked October 1, 2026; marketed status does not establish pharmacy stock.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/BLA020725.json",
+      "source_sha256": "5f9fc41a972cb4df2495e170c4bcf56a423bbff5fc28b782911f03ff540842c2"
+    },
+    {
+      "id": "BLA022210",
+      "title": "FDA · BLA022210 current product status",
+      "publisher": "U.S. Food and Drug Administration",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA022210&limit=1",
+      "note": "Official current product record checked October 1, 2026; marketed status does not establish pharmacy stock.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/BLA022210.json",
+      "source_sha256": "16b2a122f3c66b142a45cc9612bc535a67edbcce627a2b52e75537009945cdd2"
+    },
+    {
+      "id": "BLA022523",
+      "title": "FDA · BLA022523 current product status",
+      "publisher": "U.S. Food and Drug Administration",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA022523&limit=1",
+      "note": "Official current product record checked October 1, 2026; marketed status does not establish pharmacy stock.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/BLA022523.json",
+      "source_sha256": "74f21642841eb53b6934813ff9f9aee3edbca2b4cccbade2a25fa1578f6fb116"
+    },
+    {
+      "id": "BLA022175",
+      "title": "FDA · BLA022175 current product status",
+      "publisher": "U.S. Food and Drug Administration",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA022175&limit=1",
+      "note": "Official current product record checked October 1, 2026; marketed status does not establish pharmacy stock.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/BLA022175.json",
+      "source_sha256": "835961d735cad5e7471289bfae25255c30e8d0acfbbf93b6587bdce6a80790db"
+    },
+    {
+      "id": "BLA022542",
+      "title": "FDA · BLA022542 current product status",
+      "publisher": "U.S. Food and Drug Administration",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA022542&limit=1",
+      "note": "Official current product record checked October 1, 2026; marketed status does not establish pharmacy stock.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/BLA022542.json",
+      "source_sha256": "f7200338e59c122b083f73b4d1ceeaebadf52d909fcd8470149ba2292b527571"
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Delayed-release capsule indications",
+      "assertions": {
+        "paragraphs": [
+          "Creon, Zenpep, Pancreaze and Pertzye indicate adult/pediatric exocrine pancreatic insufficiency. Labels include birth-to-12-month dosing despite different supporting trial ages. They are porcine lipase/protease/amylase preparations; no nonporcine or OTC digestive-supplement equivalence is inferred."
+        ]
+      },
+      "source_sections": {
+        "creon": [
+          "1",
+          "2.2",
+          "8.4"
+        ],
+        "zenpep": [
+          "1",
+          "2.2",
+          "8.4"
+        ],
+        "pancreaze": [
+          "1",
+          "2.2",
+          "8.4"
+        ],
+        "pertzye": [
+          "1",
+          "2.2",
+          "8.4"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Viokace adult indication",
+      "assertions": {
+        "paragraphs": [
+          "Viokace with a proton pump inhibitor treats EPI due to chronic pancreatitis or pancreatectomy in adults. It is not enteric coated, and pediatric safety/effectiveness are unestablished. Do not transfer broad capsule indications or infant dosing to Viokace."
+        ]
+      },
+      "source_sections": {
+        "viokace": [
+          "1",
+          "2.1",
+          "8.4"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Starting meal doses",
+      "assertions": {
+        "paragraphs": [
+          "Selected delayed-release capsules: at age ≥ 4 start 500 lipase units/kg/meal; age > 12 months to < 4 start 1,000 units/kg/meal. Creon additionally gives adult chronic-pancreatitis/pancreatectomy start 500–1,000 units/kg/meal. Viokace adult start is 500 units/kg/meal with a PPI. Titrate to malabsorption response and nutritional status; with snacks use about half the prescribed meal dose and count the entire daily total."
+        ]
+      },
+      "source_sections": {
+        "creon": [
+          "2.1",
+          "2.2"
+        ],
+        "zenpep": [
+          "2.1",
+          "2.2"
+        ],
+        "pancreaze": [
+          "2.1",
+          "2.2"
+        ],
+        "pertzye": [
+          "2.1",
+          "2.2"
+        ],
+        "viokace": [
+          "2.1",
+          "2.2"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Investigation thresholds and switching",
+      "assertions": {
+        "paragraphs": [
+          "At age > 12 months for capsules, and adult Viokace: do not exceed 2,500 lipase units/kg/meal, 10,000 units/kg/day or 4,000 units/g dietary fat/day without further investigation. Zenpep/Pancreaze dose-titration text uses “less than 4,000” for its fat-based target; preserve the prescriber’s exact plan. Higher doses need documented efficacy through fecal-fat or malabsorption/nutrition measures. Monitor symptoms and retitrate after a supervised product switch; do not assume the same capsule count or protease/amylase ratio."
+        ]
+      },
+      "source_sections": {
+        "creon": [
+          "2.1",
+          "2.2",
+          "5.1"
+        ],
+        "zenpep": [
+          "2.1",
+          "2.2",
+          "5.1"
+        ],
+        "pancreaze": [
+          "2.1",
+          "2.2",
+          "5.1"
+        ],
+        "pertzye": [
+          "2.1",
+          "2.2",
+          "5.1"
+        ],
+        "viokace": [
+          "2.1",
+          "2.2",
+          "5.1"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Infants · birth to 12 months",
+      "assertions": {
+        "paragraphs": [
+          "Give immediately before each breastfeeding session or each 120 mL formula feed, followed by breast milk/formula. The product-specific lipase units below differ; do not interchange the infant dose. Open the correct capsule, give entire contents directly into the mouth or approved acidic soft food, never crush and inspect the mouth for retained beads. Do not mix directly into a milk/formula bottle."
+        ],
+        "table": {
+          "headers": [
+            "Product",
+            "Lipase units per feed"
+          ],
+          "rows": [
+            [
+              "Creon",
+              "3,000"
+            ],
+            [
+              "Zenpep",
+              "3,000"
+            ],
+            [
+              "Pancreaze",
+              "2,600"
+            ],
+            [
+              "Pertzye",
+              "4,000"
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "creon": [
+          "2.2",
+          "2.3",
+          "Medication Guide"
+        ],
+        "zenpep": [
+          "2.2",
+          "2.3",
+          "Medication Guide"
+        ],
+        "pancreaze": [
+          "2.2",
+          "2.3",
+          "Medication Guide"
+        ],
+        "pertzye": [
+          "2.2",
+          "2.3",
+          "Medication Guide"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Oral administration and missed meals",
+      "assertions": {
+        "paragraphs": [
+          "Take with meals/snacks; swallow whole with adequate liquid. Delayed-release capsules can be opened onto a small amount of label-approved acidic soft food at pH ≤ 4.5 and swallowed immediately without chewing; do not save the mixture. Creon names applesauce, bananas/plain Greek yogurt; Zenpep applesauce, bananas/pears; Pancreaze/Pertzye applesauce. Viokace tablets must be swallowed whole with water and the prescribed PPI. If missed, take the next prescribed dose with the next meal/snack or infant feed; never double."
+        ]
+      },
+      "source_sections": {
+        "creon": [
+          "2.3",
+          "5.2",
+          "Medication Guide"
+        ],
+        "zenpep": [
+          "2.3",
+          "5.2",
+          "Medication Guide"
+        ],
+        "pancreaze": [
+          "2.3",
+          "5.2",
+          "Medication Guide"
+        ],
+        "pertzye": [
+          "2.3",
+          "5.2",
+          "Medication Guide"
+        ],
+        "viokace": [
+          "2.3",
+          "5.2",
+          "Medication Guide"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Pertzye gastrostomy · restricted approved method",
+      "assertions": {
+        "paragraphs": [
+          "Only Pertzye 4,000-unit capsule contents through a gastrostomy tube ≥ 14 French; no more than two capsules at a time. Mix one/two capsules with at least 10 mL applesauce without crushing; prepare immediately in a 35 mL slip-tip syringe, remove residual air and connect directly to the feeding port. Give with steady pressure (IFU about 10–12 seconds), then flush about 10 mL water; repeat for larger prescribed doses. Discard unused mixture. Other strengths, narrower tubes and other brands do not acquire this method by analogy."
+        ]
+      },
+      "source_sections": {
+        "pertzye": [
+          "2.3 gastrostomy",
+          "Full Instructions for Use"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Fibrosing colonopathy/strictures are associated with high/prolonged enzyme doses, particularly children with CF; > 6,000 lipase units/kg/meal has been associated with strictures below age 12 and warrants close assessment, not permission to exceed ordinary thresholds. Crushing/chewing or incorrect food pH can cause oral irritation and reduced activity. Purines can cause hyperuricemia; consider urate monitoring with gout, renal impairment or existing hyperuricemia. Severe porcine-protein allergy is possible. Viral transmission is theoretical with no reported associated illness in these labels. Viokace contains lactose and may worsen lactose-intolerance symptoms."
+        ]
+      },
+      "source_sections": {
+        "creon": [
+          "5.1–5.5 complete warnings"
+        ],
+        "zenpep": [
+          "5.1–5.5 complete warnings"
+        ],
+        "pancreaze": [
+          "5.1–5.5 complete warnings"
+        ],
+        "pertzye": [
+          "5.1–5.5 complete warnings"
+        ],
+        "viokace": [
+          "5.1–5.6 complete warnings including lactose"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "The five selected U.S. labels list no formal contraindications. This does not remove severe hypersensitivity precautions, fibrosing-colonopathy monitoring or product/age/administration limits. Viokace’s PPI must be assessed separately for its own suitability."
+        ]
+      },
+      "source_sections": {
+        "creon": [
+          "4",
+          "5",
+          "2.1"
+        ],
+        "zenpep": [
+          "4",
+          "5",
+          "2.1"
+        ],
+        "pancreaze": [
+          "4",
+          "5",
+          "2.1"
+        ],
+        "pertzye": [
+          "4",
+          "5",
+          "2.1"
+        ],
+        "viokace": [
+          "4",
+          "5",
+          "2.1"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "The selected current labels have no boxed warning. Fibrosing colonopathy, hyperuricemia, mucosal injury and severe allergy remain prominent labeled risks."
+        ]
+      },
+      "source_sections": {
+        "creon": [
+          "Complete prescribing information",
+          "5"
+        ],
+        "zenpep": [
+          "Complete prescribing information",
+          "5"
+        ],
+        "pancreaze": [
+          "Complete prescribing information",
+          "5"
+        ],
+        "pertzye": [
+          "Complete prescribing information",
+          "5"
+        ],
+        "viokace": [
+          "Complete prescribing information",
+          "5"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Clinical experiences differ: Creon vomiting/dizziness/cough and GI/glucose events in selected trials; Zenpep headache, bruising, cough/early satiety and pediatric GI symptoms; Pancreaze diarrhea/vomiting; Pertzye diarrhea/dyspepsia/cough; Viokace anal itching and biliary stones in a small adult trial. Do not compare rates across studies as product rankings. Postmarketing class reports include GI obstruction/colonopathy, allergy and skin/liver/muscle symptoms. High-dose overdose exposure may cause uric-acid and bowel complications; obtain medical/Poison Help review rather than self-treat or exceed the plan."
+        ]
+      },
+      "source_sections": {
+        "creon": [
+          "6",
+          "10"
+        ],
+        "zenpep": [
+          "6",
+          "10"
+        ],
+        "pancreaze": [
+          "6",
+          "10"
+        ],
+        "pertzye": [
+          "6",
+          "10"
+        ],
+        "viokace": [
+          "6",
+          "10"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Enzyme and PPI considerations",
+      "assertions": {
+        "paragraphs": [
+          "These enzymes are not CYP/transport substrates; such mediated interactions are not expected. Viokace requires a prescribed PPI to protect gastric enzyme activity, with that drug’s own interactions/risks reviewed. Delayed-release capsule labels do not automatically require a PPI for every patient. Food pH, crushing and unverified tube preparation can disrupt delivery; follow the exact product method."
+        ]
+      },
+      "source_sections": {
+        "creon": [
+          "12.3 Drug Interactions",
+          "2",
+          "5.2"
+        ],
+        "zenpep": [
+          "12.3 Drug Interactions",
+          "2",
+          "5.2"
+        ],
+        "pancreaze": [
+          "12.3 Drug Interactions",
+          "2",
+          "5.2"
+        ],
+        "pertzye": [
+          "12.3 Drug Interactions",
+          "2",
+          "5.2"
+        ],
+        "viokace": [
+          "12.3 Drug Interactions",
+          "2",
+          "5.2"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and older patients",
+      "assertions": {
+        "paragraphs": [
+          "The four delayed-release products establish pediatric EPI use with different supporting studies and birth-to-12-month directions. Viokace pediatric effectiveness/safety are unestablished and gastric degradation may yield inadequate nutrition. Children below 12 are particularly relevant to high-dose colonopathy reports. Geriatric trials were limited; no universal age-only adjustment is supplied, but disease, nutrition and tolerance need assessment."
+        ]
+      },
+      "source_sections": {
+        "creon": [
+          "8.4",
+          "8.5",
+          "5.1"
+        ],
+        "zenpep": [
+          "8.4",
+          "8.5",
+          "5.1"
+        ],
+        "pancreaze": [
+          "8.4",
+          "8.5",
+          "5.1"
+        ],
+        "pertzye": [
+          "8.4",
+          "8.5",
+          "5.1"
+        ],
+        "viokace": [
+          "8.4",
+          "8.5",
+          "5.1"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Published pancrelipase case reports have not identified a drug-associated major-birth-defect/miscarriage signal. Minimal systemic absorption makes fetal or clinically relevant milk exposure unlikely; milk/infant-effect data and reproductive studies are limited or absent. Balance breastfeeding benefits, maternal nutritional need and potential infant risks; do not claim absolute safety."
+        ]
+      },
+      "source_sections": {
+        "creon": [
+          "8.1",
+          "8.2"
+        ],
+        "zenpep": [
+          "8.1",
+          "8.2"
+        ],
+        "pancreaze": [
+          "8.1",
+          "8.2"
+        ],
+        "pertzye": [
+          "8.1",
+          "8.2"
+        ],
+        "viokace": [
+          "8.1",
+          "8.2"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "assertions": {
+        "paragraphs": [
+          "Selected labels provide no numeric renal/hepatic dose-adjustment algorithm; local digestion and nutritional response drive titration. Renal disease/gout/hyperuricemia increase concern about purine-related urate effects and justify consideration of monitoring. Do not infer that negligible systemic enzyme absorption removes all product risks."
+        ]
+      },
+      "source_sections": {
+        "creon": [
+          "2",
+          "5.3",
+          "12.3"
+        ],
+        "zenpep": [
+          "2",
+          "5.3",
+          "12.3"
+        ],
+        "pancreaze": [
+          "2",
+          "5.3",
+          "12.3"
+        ],
+        "pertzye": [
+          "2",
+          "5.3",
+          "12.3"
+        ],
+        "viokace": [
+          "2",
+          "5.3",
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and disposition",
+      "assertions": {
+        "paragraphs": [
+          "Lipases, proteases and amylases hydrolyze fats, proteins and starch in the duodenum/proximal small intestine, improving nutrient absorption. Enzymes are not absorbed from the GI tract in appreciable amounts; no clinically useful serum peak/protein-binding/half-life dose model is established in these labels. Enteric-coated beads delay release, whereas Viokace needs acid suppression. Lipase activity units and the product-specific enzyme ratios govern prescribing, not milligram interchangeability."
+        ]
+      },
+      "source_sections": {
+        "creon": [
+          "11",
+          "12.1–12.3",
+          "2.1"
+        ],
+        "zenpep": [
+          "11",
+          "12.1–12.3",
+          "2.1"
+        ],
+        "pancreaze": [
+          "11",
+          "12.1–12.3",
+          "2.1"
+        ],
+        "pertzye": [
+          "11",
+          "12.1–12.3",
+          "2.1"
+        ],
+        "viokace": [
+          "11",
+          "12.1–12.3",
+          "2.1"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "assertions": {
+        "paragraphs": [
+          "Follow stool quality/steatorrhea, pain/bloating, weight/growth and nutritional status with the clinical team. Review actual meal/snack doses, dietary fat, adherence, pH/whole-bead technique and changes after switching. Higher doses need efficacy documentation and colonopathy assessment. Consider blood uric acid in gout/renal impairment/hyperuricemia; inspect infant mouths for retained beads and assess severe-allergy symptoms. No routine serum enzyme-drug concentration is specified."
+        ]
+      },
+      "source_sections": {
+        "creon": [
+          "2",
+          "5",
+          "8.4",
+          "17"
+        ],
+        "zenpep": [
+          "2",
+          "5",
+          "8.4",
+          "17"
+        ],
+        "pancreaze": [
+          "2",
+          "5",
+          "8.4",
+          "17"
+        ],
+        "pertzye": [
+          "2",
+          "5",
+          "8.4",
+          "17"
+        ],
+        "viokace": [
+          "2",
+          "5",
+          "8.4",
+          "17"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling",
+      "assertions": {
+        "paragraphs": [
+          "Use the prescribed product and lipase-unit dose with food; do not independently switch, crush, chew or double. Follow the exact infant capsule and feeding method; Viokace requires its PPI, and only the restricted Pertzye method is described for tubes. Report persistent malabsorption, unusual/severe pain, distention, constipation, vomiting or joint inflammation. Breathing trouble/swelling/rash suggest severe allergy and need urgent assessment. Keep desiccant and moisture-protective packaging as instructed."
+        ]
+      },
+      "source_sections": {
+        "creon": [
+          "2",
+          "5",
+          "17",
+          "Medication Guide"
+        ],
+        "zenpep": [
+          "2",
+          "5",
+          "17",
+          "Medication Guide"
+        ],
+        "pancreaze": [
+          "2",
+          "5",
+          "17",
+          "Medication Guide"
+        ],
+        "pertzye": [
+          "2",
+          "5",
+          "17",
+          "Medication Guide"
+        ],
+        "viokace": [
+          "2",
+          "5",
+          "17",
+          "Medication Guide"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "paragraphs": [
+          "Creon 12,000 lipase / 38,000 protease / 60,000 amylase USP units: brown opaque cap marked CREON 1212, transparent body; selected 100-capsule package NDC 0032-1212-01. Verify actual package and shell variant; strength is enzyme activity, not 12,000 mg."
+        ]
+      },
+      "source_sections": {
+        "creon": [
+          "3",
+          "16"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Lipase USP-unit strengths: Creon 3,000, 6,000, 12,000, 24,000 and 36,000; Zenpep 3,000, 5,000, 10,000, 15,000, 20,000, 25,000, 40,000 and 60,000; Pancreaze 2,600, 4,200, 10,500, 16,800, 21,000 and 37,000; Pertzye 4,000, 8,000, 16,000 and 24,000, all delayed-release capsules. Viokace non-enteric tablets: 10,440 or 20,880 lipase units. Verify each product’s protease/amylase ratio from its label rather than substitute by lipase or capsule count alone. Current FDA application records list these selected strengths Prescription, not pharmacy stock."
+        ]
+      },
+      "source_sections": {
+        "creon": [
+          "3",
+          "16"
+        ],
+        "zenpep": [
+          "3",
+          "16"
+        ],
+        "pancreaze": [
+          "3",
+          "16"
+        ],
+        "pertzye": [
+          "3",
+          "16"
+        ],
+        "viokace": [
+          "3",
+          "16"
+        ],
+        "BLA020725": [
+          "Current product array"
+        ],
+        "BLA022210": [
+          "Current product array"
+        ],
+        "BLA022523": [
+          "Current product array"
+        ],
+        "BLA022175": [
+          "Current product array"
+        ],
+        "BLA022542": [
+          "Current product array"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Keep moisture-protective packaging tightly closed and retain the desiccant; do not eat it. Creon: 15–25°C; 25–40°C excursions up to 30 days, discard for higher temperature or moisture > 70%, original container. Zenpep original: 20–25°C; brief 15–40°C excursions for 24 hours; approved repackaged HDPE: up to 30°C for 6 months, 15–40°C excursions up to 30 days. Pancreaze: 15–25°C, up to 40°C for 24 hours, original bottle. Pertzye: 20–25°C, 15–40°C excursions up to 30 days, original/equivalent airtight container. Viokace: 20–25°C, up to 40°C for 24 hours, original bottle. Follow package expiry and do not store food mixtures."
+        ]
+      },
+      "source_sections": {
+        "creon": [
+          "16 full storage subsections",
+          "2.3",
+          "Medication Guide"
+        ],
+        "zenpep": [
+          "16 full storage subsections",
+          "2.3",
+          "Medication Guide"
+        ],
+        "pancreaze": [
+          "16 full storage subsections",
+          "2.3",
+          "Medication Guide"
+        ],
+        "pertzye": [
+          "16 full storage subsections",
+          "2.3",
+          "Medication Guide"
+        ],
+        "viokace": [
+          "16 full storage subsections",
+          "2.3",
+          "Medication Guide"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "No OTC supplement/nonporcine equivalence, automatic brand/capsule-count substitution or universal feeding-tube/compounding protocol.",
+    "No pediatric Viokace regimen or unsupported systemic PK/renal dose algorithm."
+  ],
+  "resolved_source_findings": [
+    "Infant lipase units differ: Creon/Zenpep3000, Pancreaze2600, Pertzye4000.",
+    "Current Viokace adult starting dose500 units/kg/meal with mandatory PPI; historical higher starts not propagated.",
+    "Zenpep/Pancreaze titration text says less than4000 units/g fat while warning threshold says do not exceed4000 without investigation; explicit distinction retained.",
+    "All current selected FDA applications are biologic BLA records, not assumed old NDA identifiers."
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, essential safety, three hero facts, cited disclosures, four safety cards and three product cards.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending"
+  },
+  "monograph_sha256": "0e5f9240c607526b98d526567f5644f83a2e01b03d36d4b462da073be886138f",
+  "frontmatter_source_map": {
+    "fields": {
+      "name": "Pancrelipase",
+      "synonym": "Creon · Zenpep · Pancreaze · Pertzye · Viokace",
+      "description": "Porcine digestive-enzyme replacement for exocrine pancreatic insufficiency. Doses are prescribed in lipase activity units, with product-specific infant doses, strengths, administration and storage; Viokace requires a proton pump inhibitor and has adult-only indications.",
+      "facts": [
+        [
+          "Therapeutic class",
+          "Pancreatic digestive-enzyme replacement"
+        ],
+        [
+          "Representative product",
+          "Creon · 12,000 USP lipase units capsule"
+        ],
+        [
+          "Reference focus",
+          "Four delayed-release capsule brands · Viokace tablets"
+        ]
+      ],
+      "essential": {
+        "title": "Dose by lipase units; do not exchange products unsupervised.",
+        "text": "High doses can cause fibrosing colonopathy. Count meals/snacks and follow investigation thresholds. Never crush/chew capsules, beads or Viokace tablets. Infant units differ by brand; Viokace is adult-only with a PPI. Severe allergy or persistent abdominal obstruction symptoms need urgent review.",
+        "section": "safety",
+        "link": "Warnings and precautions"
+      }
+    },
+    "source_sections": {
+      "creon": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "16"
+      ],
+      "zenpep": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "16"
+      ],
+      "pancreaze": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "16"
+      ],
+      "pertzye": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "16"
+      ],
+      "viokace": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "16"
+      ]
+    }
+  },
+  "review_date": "2026-10-01",
+  "source_access_scope": "Fully retrieved selected public manufacturer full labels and relevant complete prescribing/patient-instruction sections; official current FDA application product records. Historical fexofenadine sources are conspicuously distinguished from current OTC directions."
+}
