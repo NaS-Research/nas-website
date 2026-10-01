@@ -1,0 +1,629 @@
+{
+  "drug": "norethindrone",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Complete selected U.S. Nora-BE 0.35 mg contraceptive and Glenmark 5 mg acetate labels; current CDC 2024 SPR initiation/missed-dose guidance and MEC contraceptive eligibility distinctions.",
+  "sources": [
+    {
+      "id": "norabe",
+      "title": "Nora-BE · norethindrone 0.35 mg contraceptive tablets",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=426ac898-7745-4645-bf9b-bae319e260e8",
+      "note": "Full public manufacturer label and patient instructions; SPL version 4, effective 20220228. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "4",
+      "effective_date": "20220228",
+      "xml_sha256": "a86e3d8d9ec978b833fd1e715305468e7012bea895e021a0bfbc481994eb4e76",
+      "retrieved_xml": "/tmp/nas-drug-sources/norabe.xml",
+      "published_date": "Sep 28, 2026"
+    },
+    {
+      "id": "noreacetate",
+      "title": "Glenmark · norethindrone acetate 5 mg tablets",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0a94321-eb60-4aa6-a429-f0156f9f8e01",
+      "note": "Full public manufacturer label and patient instructions; SPL version 10, effective 20260129. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "10",
+      "effective_date": "20260129",
+      "xml_sha256": "0351d9c90a9c4fb2b38bd40d3aea424532d0f4ce2857b916de5de709f34e6010",
+      "retrieved_xml": "/tmp/nas-drug-sources/noreacetate.xml",
+      "published_date": "Jan 30, 2026"
+    },
+    {
+      "id": "cdc-pop-spr",
+      "title": "CDC U.S. Selected Practice Recommendations 2024 · Progestin-only pills",
+      "publisher": "Centers for Disease Control and Prevention",
+      "url": "https://www.cdc.gov/contraception/hcp/usspr/progestin-only-pills.html",
+      "note": "Public current guidance, updated November 19, 2024; initiation and missed-dose sections reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "retrieved_file": "/tmp/nas-drug-sources/cdc-pop-spr.html",
+      "html_sha256": "be39d6a3585d071ccb81b6344902f077530d935bf6268046e3e6178cc301b464",
+      "version": "U.S. CDC 2024 SPR",
+      "reviewed_sections": [
+        "Initiation, postpartum, missed norethindrone/norgestrel pills, vomiting/diarrhea"
+      ]
+    },
+    {
+      "id": "cdc-pop-mec",
+      "title": "CDC U.S. Medical Eligibility Criteria 2024 · Progestin-only contraceptives",
+      "publisher": "Centers for Disease Control and Prevention",
+      "url": "https://www.cdc.gov/contraception/hcp/usmec/progestin-only-contraceptives.html",
+      "note": "Public current eligibility tables reviewed October 1, 2026; applies to contraceptive POPs, not high-dose norethindrone acetate.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "retrieved_file": "/tmp/nas-drug-sources/cdc-pop-mec.html",
+      "html_sha256": "03711c5f2a2d5be5596c968b6222859de3f667398df9016c565695050de90a8c",
+      "version": "U.S. CDC 2024 MEC",
+      "reviewed_sections": [
+        "Smoking, obesity, breast disease"
+      ]
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Labeled indications by formulation",
+      "assertions": {
+        "paragraphs": [
+          "Nora-BE norethindrone 0.35 mg is a prescription progestin-only pill (POP) for pregnancy prevention. Selected norethindrone acetate 5 mg treats secondary amenorrhea, endometriosis and abnormal uterine bleeding due to hormonal imbalance after organic causes, such as fibroids or cancer, are excluded. Acetate is not approved as contraception or recommended for postmenopausal endometrial protection with estrogen."
+        ]
+      },
+      "source_sections": {
+        "norabe": [
+          "INDICATIONS AND USAGE"
+        ],
+        "noreacetate": [
+          "INDICATIONS AND USAGE"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Clinical role and boundaries",
+      "assertions": {
+        "paragraphs": [
+          "The contraceptive tablet contains no estrogen and does not protect against HIV or other sexually transmitted infections. CDC POP recommendations address contraceptive dosing, not high-dose acetate therapy. This profile excludes estrogen combinations, menopausal combination therapy, norgestrel OTC pills and drospirenone-only pills; each has different instructions."
+        ]
+      },
+      "source_sections": {
+        "norabe": [
+          "DESCRIPTION",
+          "Information for the Patient",
+          "DETAILED INFORMATION FOR THE PATIENT"
+        ],
+        "noreacetate": [
+          "INDICATIONS AND USAGE"
+        ],
+        "cdc-pop-spr": [
+          "Overview"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Oral doses · Selected product labels",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Product / indication",
+            "Regimen"
+          ],
+          "rows": [
+            [
+              "Nora-BE · contraception",
+              "One 0.35 mg tablet at the same time every day. All 28 pills are active; start the next pack immediately, without a pill-free interval, including during bleeding."
+            ],
+            [
+              "Acetate · amenorrhea or hormonal abnormal bleeding",
+              "2.5–10 mg once daily for 5–10 days, with an adequately estrogen-primed endometrium. Withdrawal bleeding commonly occurs 3–7 days after stopping; recurrent bleeding may need planned clinician-directed cycling."
+            ],
+            [
+              "Acetate · endometriosis",
+              "5 mg daily for 2 weeks, then increase by 2.5 mg every 2 weeks to 15 mg/day. Continue this dose for 6–9 months, or interrupt if troublesome breakthrough bleeding requires it. These are treatment doses, not contraceptive directions."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "norabe": [
+          "DOSAGE AND ADMINISTRATION",
+          "DETAILED INFORMATION FOR THE PATIENT"
+        ],
+        "noreacetate": [
+          "DOSAGE AND ADMINISTRATION: Secondary amenorrhea / abnormal uterine bleeding",
+          "DOSAGE AND ADMINISTRATION: Endometriosis"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Minipill start, late doses and vomiting · Label instructions",
+      "assertions": {
+        "paragraphs": [
+          "Nora-BE label prefers starting on the first menstrual day; another starting day requires backup for 48 hours. Professional counseling says 3 or more hours late requires backup; the patient leaflet uses more than 3 hours. Use the conservative backup threshold of 3 hours. For a late/missed pill: take one as soon as remembered, then resume the usual schedule and use backup for the next 48 hours. Two pills can fall on the same day. Vomiting soon after a pill requires 48-hour backup under the label. Do not create a placebo interval or stop merely for spotting."
+        ]
+      },
+      "source_sections": {
+        "norabe": [
+          "DOSAGE AND ADMINISTRATION",
+          "Information for the Patient",
+          "DETAILED INFORMATION FOR THE PATIENT"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Current CDC initiation and missed-dose guidance",
+      "assertions": {
+        "paragraphs": [
+          "CDC permits starting when reasonably certain pregnancy is absent: no backup within the first 5 menstrual days, otherwise 2 days. This differs from Nora-BE’s day-one instructions. CDC permits immediate postpartum initiation, with individualized breastfeeding and backup assessment, rather than the label’s later postpartum start. After vomiting within 3 hours, repeat the pill promptly and use backup through 2 days after illness resolves. Missed pills can require emergency contraception; CDC excludes ulipristal from this immediate POP-resumption advice. Use the current linked guide for switching and postpartum specifics."
+        ]
+      },
+      "source_sections": {
+        "cdc-pop-spr": [
+          "Initiation of POPs",
+          "Postpartum",
+          "Missed Norethindrone or Norgestrel POPs",
+          "Vomiting or Severe Diarrhea"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Organ impairment and individualized treatment",
+      "assertions": {
+        "paragraphs": [
+          "No validated fixed renal adjustment is supplied for either selected product. Renal PK of high-dose acetate has not been studied; data from lower-dose combined pills in dialysis do not establish an acetate regimen. Nora-BE is contraindicated with acute liver disease or liver tumors; acetate with impaired liver function or liver disease. Observe acetate-associated fluid retention in renal/cardiac disease and individualize treatment rather than applying a percentage dose reduction."
+        ]
+      },
+      "source_sections": {
+        "norabe": [
+          "CONTRAINDICATIONS",
+          "CLINICAL PHARMACOLOGY"
+        ],
+        "noreacetate": [
+          "Special Populations: Renal Insufficiency",
+          "Special Populations: Hepatic Insufficiency",
+          "General Precautions"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Minipill: assess sudden severe lower-abdominal pain or pregnancy for ectopic pregnancy. Past ectopic pregnancy alone is not the label’s contraindication. Ovarian follicles/cysts usually resolve but can rarely twist or rupture.",
+          "Evaluate persistent or unexplained bleeding for pregnancy, infection, malignancy or other organic disease. Acetate treatment is limited to appropriate diagnosed causes.",
+          "Acetate: manage cardiovascular/VTE risk factors; stop for sudden vision loss, diplopia, proptosis or migraine and evaluate retinal vascular lesions. Chest pain, dyspnea, unilateral leg symptoms or neurologic deficits need emergency care.",
+          "Acetate can cause fluid retention; observe cardiac/renal dysfunction, epilepsy or migraine. Closely watch a depression history; discontinue if serious depression returns.",
+          "Monitor diabetes/lipid disorders; stop the minipill and evaluate new recurrent, persistent or severe headache/migraine patterns and GI illness affecting minipill absorption. Encourage smoking cessation, while recognizing that this estrogen-free POP has different eligibility from combined pills."
+        ]
+      },
+      "source_sections": {
+        "norabe": [
+          "WARNINGS",
+          "General",
+          "Carbohydrate and Lipid Effects",
+          "Headache/Migraine",
+          "Gastrointestinal",
+          "Information for the Patient"
+        ],
+        "noreacetate": [
+          "WARNINGS",
+          "General Precautions"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Nora-BE: known/suspected pregnancy or breast cancer, undiagnosed genital bleeding, allergy, benign/malignant liver tumors or acute liver disease. Selected acetate: pregnancy, undiagnosed vaginal bleeding, known/suspected/history of breast cancer, active/history of DVT or PE, active/recent arterial thromboembolism (e.g. stroke or MI within the past year), impaired liver function/liver disease, hypersensitivity, or use as a diagnostic pregnancy test. Do not transfer acetate’s VTE contraindication to every contraceptive POP."
+        ]
+      },
+      "source_sections": {
+        "norabe": [
+          "CONTRAINDICATIONS"
+        ],
+        "noreacetate": [
+          "CONTRAINDICATIONS"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "Neither selected current U.S. label has a boxed warning. Nora-BE contains smoking counseling; the estrogen-combination smoking-over-35 boxed warning should not be copied to this estrogen-free product. Acetate’s thromboembolic contraindications remain important."
+        ]
+      },
+      "source_sections": {
+        "norabe": [
+          "Full labeling",
+          "WARNINGS",
+          "DETAILED INFORMATION FOR THE PATIENT"
+        ],
+        "noreacetate": [
+          "Full labeling",
+          "WARNINGS",
+          "CONTRAINDICATIONS"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "assertions": {
+        "paragraphs": [
+          "Minipill: unpredictable spotting/bleeding or amenorrhea, headache, breast tenderness, nausea and dizziness; acne, hirsutism or weight change are less frequent. Acetate adds edema, depression/mood changes, insomnia, cholestatic jaundice, liver/lipid abnormalities, allergic reactions and reported thromboembolism. Postmarketing frequencies are not reliably quantified. The Nora-BE label reports no serious effects from accidental large ingestions; this is not a reason to ignore an exposure. Obtain Poison Help/clinical advice (U.S. 1-800-222-1222); the selected acetate label provides no detailed overdose regimen."
+        ]
+      },
+      "source_sections": {
+        "norabe": [
+          "ADVERSE REACTIONS",
+          "OVERDOSAGE"
+        ],
+        "noreacetate": [
+          "ADVERSE REACTIONS"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Combination / test",
+            "Action"
+          ],
+          "rows": [
+            [
+              "Enzyme-inducing drugs",
+              "Nora-BE lists rifampin, certain antiseizure medicines (including carbamazepine, phenytoin, topiramate, oxcarbazepine and felbamate), barbiturates and griseofulvin. Reduced hormone exposure can impair contraception; review a reliable alternative/backup method."
+            ],
+            [
+              "St. John’s wort",
+              "Can reduce effectiveness and cause breakthrough bleeding; review noninteracting contraception."
+            ],
+            [
+              "HIV protease inhibitors",
+              "Can raise or lower hormone concentrations; inspect the exact antiretroviral regimen before relying on the pill."
+            ],
+            [
+              "High-dose acetate",
+              "No formal PK drug-interaction studies are reported in the selected label. Review interacting drugs without importing an unverified contraceptive failure rate or automatic acetate adjustment."
+            ],
+            [
+              "Laboratory interpretation",
+              "Nora-BE can lower SHBG/TBG and measured thyroxine; tell the laboratory. The acetate label’s extensive coagulation/endocrine/lipid test list explicitly describes estrogen/progestin combinations, so it should not be treated as a quantified effect of acetate alone."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "norabe": [
+          "Drug Interactions",
+          "Drug/Laboratory Test Interactions"
+        ],
+        "noreacetate": [
+          "Drug-Drug Interactions",
+          "Drug/Laboratory Test Interactions",
+          "Patient Information: who should not take / most important information"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Avoid broad antibiotic assumptions",
+      "assertions": {
+        "paragraphs": [
+          "The need for interaction review depends on the specific drug and enzyme effects; do not treat all antibiotics as equivalent to rifampin. Review the selected product and contraceptive plan when any new medicine or supplement is added."
+        ]
+      },
+      "source_sections": {
+        "norabe": [
+          "Drug Interactions",
+          "Information for the Patient"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Both selected products are contraindicated in known/suspected pregnancy; stop the contraceptive pill and contact the clinician if pregnancy is suspected. POP exposure studies do not establish a major fetal-development signal, but treatment is unnecessary in pregnancy. Acetate labeling warns of fetal harm and reported genital abnormalities with early progestational exposure. Small progestin amounts enter milk; Nora-BE reports rare reduced milk production/jaundice. Acetate professional labeling advises nursing caution, while its patient leaflet says not to use while breastfeeding; follow the stricter patient instruction pending clinician review of the exact product. Do not assume high-dose acetate has the contraceptive POP’s lactation evidence."
+        ]
+      },
+      "source_sections": {
+        "norabe": [
+          "Pregnancy",
+          "Nursing Mothers",
+          "DETAILED INFORMATION FOR THE PATIENT"
+        ],
+        "noreacetate": [
+          "Pregnancy",
+          "Nursing Mothers",
+          "CONTRAINDICATIONS",
+          "Patient Information: who should not take / most important information"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric, older-adult and reproductive considerations",
+      "assertions": {
+        "paragraphs": [
+          "Nora-BE is for reproductive-age patients after menarche; effectiveness/safety in postpubertal adolescents younger than 16 is expected to match older users. It is not indicated before menarche. Fertility generally returns rapidly after stopping. Selected acetate is not indicated in children and is not recommended as postmenopausal estrogen-associated endometrial protection. Neither label supplies a routine geriatric dose."
+        ]
+      },
+      "source_sections": {
+        "norabe": [
+          "Pediatric Use",
+          "Fertility Following Discontinuation"
+        ],
+        "noreacetate": [
+          "Pediatric Use",
+          "INDICATIONS AND USAGE"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "CDC contraceptive eligibility · Separate from acetate",
+      "assertions": {
+        "paragraphs": [
+          "CDC classifies contraceptive POP use with smoking or obesity as category 1 (no restriction); current breast cancer is category 4 (unacceptable risk), and past breast cancer without disease for 5 years is category 3. These contraceptive categories do not authorize high-dose acetate or erase an individual product’s contraindications. Use the full current eligibility tables for comorbidity decisions."
+        ]
+      },
+      "source_sections": {
+        "cdc-pop-mec": [
+          "Smoking",
+          "Obesity",
+          "Breast disease"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Renal/hepatic and comorbid disease",
+      "assertions": {
+        "paragraphs": [
+          "No fixed renal adjustment is established. Hepatic contraindications differ by selected product and require clinical assessment. With acetate, monitor fluid retention, diabetes, dyslipidemia, severe recurrent depression and cardiovascular/VTE risk; with the POP, assess absorption, bleeding and interacting medicines rather than adopting estrogen-combination restrictions automatically."
+        ]
+      },
+      "source_sections": {
+        "norabe": [
+          "CONTRAINDICATIONS",
+          "PRECAUTIONS"
+        ],
+        "noreacetate": [
+          "General Precautions",
+          "Special Populations",
+          "WARNINGS"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "assertions": {
+        "paragraphs": [
+          "Norethindrone POP thickens cervical mucus, modifies the endometrium and tubal transport, and suppresses ovulation in approximately half of users; consistent timing is important. Acetate is rapidly converted to norethindrone and produces progestational endometrial changes in estrogen-primed tissue. Its different dose/regimen supports the labeled gynecologic treatment roles."
+        ]
+      },
+      "source_sections": {
+        "norabe": [
+          "CLINICAL PHARMACOLOGY"
+        ],
+        "noreacetate": [
+          "CLINICAL PHARMACOLOGY",
+          "Pharmacokinetics: Absorption"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "assertions": {
+        "paragraphs": [],
+        "facts": [
+          [
+            "Norethindrone 0.35 mg",
+            "Peak ~1–2 hours; absolute bioavailability ~65%; elimination half-life ~8 hours."
+          ],
+          [
+            "Selected acetate 5 mg",
+            "Rapid deacetylation; norethindrone peaks around 2 hours and mean half-life around 9 hours in the label’s single-dose study."
+          ],
+          [
+            "Distribution / metabolism",
+            "Norethindrone is largely SHBG/albumin bound and undergoes hepatic reduction/conjugation."
+          ],
+          [
+            "Elimination / food",
+            "Metabolites leave in urine/feces; neither selected label establishes a food-effect dosing adjustment. PK does not justify mg-for-mg interchange."
+          ]
+        ]
+      },
+      "source_sections": {
+        "norabe": [
+          "CLINICAL PHARMACOLOGY"
+        ],
+        "noreacetate": [
+          "Pharmacokinetics: Absorption",
+          "Effect of Food",
+          "Distribution",
+          "Metabolism",
+          "Excretion"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring parameters",
+      "assertions": {
+        "paragraphs": [
+          "Confirm exact indication, pregnancy status, bleeding evaluation, liver/breast history, interacting drugs and relevant comorbidities. For the minipill, review daily timing, missed pills, GI illness, pregnancy symptoms and bleeding; assess diabetes control when applicable. For acetate, follow bleeding/endometriosis response, mood, edema, BP/cardiovascular risk and lipids/glucose in at-risk patients. Reassess unexpected bleeding or liver/visual/thrombotic symptoms promptly."
+        ]
+      },
+      "source_sections": {
+        "norabe": [
+          "PRECAUTIONS",
+          "Information for the Patient",
+          "WARNINGS"
+        ],
+        "noreacetate": [
+          "WARNINGS",
+          "General Precautions",
+          "Information for the Patient"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "assertions": {
+        "paragraphs": [
+          "Know whether the prescription is 0.35 mg norethindrone or 5 mg acetate. For the minipill, choose one daily time, arrange the next pack before finishing and use the documented backup plan after a missed/late pill. Contact the clinician for suspected pregnancy, severe abdominal pain or persistent abnormal bleeding. Condoms reduce STI risk; these pills do not. Discuss pregnancy intentions, breastfeeding, smoking and all drugs/supplements. Acetate course changes and treatment interruptions require an indication-specific plan."
+        ]
+      },
+      "source_sections": {
+        "norabe": [
+          "Information for the Patient",
+          "DETAILED INFORMATION FOR THE PATIENT"
+        ],
+        "noreacetate": [
+          "Information for the Patient",
+          "Patient labeling",
+          "DOSAGE AND ADMINISTRATION"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "paragraphs": [
+          "Nora-BE 0.35 mg norethindrone: white flat round tablet marked TV / N62; 28 active tablets per blister card. Teva example NDC 0480-3475-16 is a carton of six cards. Appearance is product-specific and is not a safe substitute for checking the labeled ingredient/strength."
+        ]
+      },
+      "source_sections": {
+        "norabe": [
+          "HOW SUPPLIED"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Selected product",
+            "Presentation"
+          ],
+          "rows": [
+            [
+              "Nora-BE norethindrone",
+              "0.35 mg tablet · 28 active pills per card"
+            ],
+            [
+              "Glenmark norethindrone acetate",
+              "5 mg scored white oval tablet · G / 304; example NDC 68462-304-50, bottle of 50"
+            ],
+            [
+              "Scope",
+              "Other manufacturers and estrogen combinations need their own label; combined-pill packs are not the minipill regimen."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "norabe": [
+          "DESCRIPTION",
+          "HOW SUPPLIED"
+        ],
+        "noreacetate": [
+          "DESCRIPTION",
+          "HOW SUPPLIED"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Store both selected tablets at 20–25°C. Keep in labeled packaging away from children and check expiry. Preserve the minipill’s daily pack sequence and uninterrupted next-pack supply; do not infer a placebo week from combined contraceptive packs."
+        ]
+      },
+      "source_sections": {
+        "norabe": [
+          "STORAGE",
+          "DETAILED INFORMATION FOR THE PATIENT"
+        ],
+        "noreacetate": [
+          "HOW SUPPLIED",
+          "Storage"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "Estrogen combinations, menopausal combination therapy, other progestins and off-label acetate contraception excluded.",
+    "Not a complete method-switching, emergency-contraception or postpartum algorithm; current CDC guide and individual product instructions are explicitly linked.",
+    "No universal renal adjustment, quantified POP cardiovascular risk or acetate drug-interaction regimen inferred."
+  ],
+  "resolved_source_findings": [
+    "Nora-BE label uses older initiation/postpartum directions; current CDC options are explicitly differentiated, not presented as the same label instruction.",
+    "Acetate VTE contraindications and contraceptive POP eligibility are kept distinct.",
+    "Older label contraceptive-failure estimates and historical emergency-contraception chart are not republished as current efficacy guidance.",
+    "Selected acetate professional nursing-caution language and patient leaflet do-not-use instruction differ; both retained explicitly with stricter patient instruction pending exact-product clinical review.",
+    "Minipill label professional counseling uses ≥3-hour backup threshold while patient leaflet/CDC use >3; conservative 3-hour backup threshold is clearly identified.",
+    "Acetate laboratory-interaction list describes estrogen/progestin combinations; not generalized as an acetate-alone coagulation effect."
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, essential safety, three hero facts, cited disclosures, four safety cards and three product cards.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending"
+  },
+  "monograph_sha256": "26a2805524a579bff25cfa90a3fd66bc8c9020596c4739f988d2110459bd4fe8",
+  "front_matter_source_map": {
+    "name_synonym_description_facts": {
+      "norabe": [
+        "Indications / description / dosage forms and strengths"
+      ],
+      "noreacetate": [
+        "Indications / description / dosage forms and strengths"
+      ]
+    },
+    "essential_safety": {
+      "norabe": [
+        "WARNINGS",
+        "Information for the Patient",
+        "DOSAGE AND ADMINISTRATION"
+      ],
+      "noreacetate": [
+        "CONTRAINDICATIONS",
+        "INDICATIONS AND USAGE"
+      ]
+    }
+  },
+  "source_review_detail": "Full supporting label sections read from retrieved public SPL XML; Amneal generic tadalafil separately supports supplied 2.5 mg tablet and product storage. Complete linked CDC guidance retrieved publicly; guideline-derived content limited to concise initiation/eligibility distinctions."
+}

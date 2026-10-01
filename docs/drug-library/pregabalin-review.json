@@ -45,21 +45,21 @@
   "sources": [
     {
       "id": "ir",
-      "title": "Lyrica capsules and oral solution · Current full prescribing information",
+      "title": "Lyrica capsules and oral solution \u00b7 Current full prescribing information",
       "publisher": "Viatris / DailyMed",
       "note": "Clinical PI April 2025; SPL18 effective April 15, 2025, published September 29, 2025. Current withdrawal and pregnancy updates.",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4734e7d-5079-455e-8ff5-8f4539c998a9"
     },
     {
       "id": "cr",
-      "title": "Lyrica CR · Current full prescribing information",
+      "title": "Lyrica CR \u00b7 Current full prescribing information",
       "publisher": "Viatris / DailyMed",
       "note": "Clinical PI April 2025; SPL7 effective March 12, 2026, published April 15, 2026. CR-specific renal restrictions and conversion.",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f280bbd8-2af2-444a-bd96-e409337ca6dd"
     },
     {
       "id": "milk",
-      "title": "Pregabalin · Lactation",
+      "title": "Pregabalin \u00b7 Lactation",
       "publisher": "NIH / LactMed",
       "note": "November 15, 2024 revision; limited human data and distinction from manufacturer recommendation.",
       "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK501821/"
@@ -108,7 +108,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "1; 2.2–2.6; 8.4"
+          "sections": "1; 2.2\u20132.6; 8.4"
         }
       ]
     },
@@ -129,12 +129,12 @@
       "section": "dosage",
       "card": "Adult immediate-release regimens",
       "assertions": [
-        "These regimens assume CrCl ≥60 mL/min. Adjust for renal function before applying any escalation. Escalate only for response and tolerability."
+        "These regimens assume CrCl \u226560 mL/min. Adjust for renal function before applying any escalation. Escalate only for response and tolerability."
       ],
       "sources": [
         {
           "id": "ir",
-          "sections": "2.1–2.6"
+          "sections": "2.1\u20132.6"
         }
       ],
       "table_assertions": {
@@ -152,7 +152,7 @@
           [
             "Postherpetic neuralgia",
             "75 mg twice daily or 50 mg three times daily; may reach 300 mg/day within 1 week",
-            "600 mg/day in 2 or 3 doses only after 2–4 weeks at 300 mg/day with ongoing pain and tolerance"
+            "600 mg/day in 2 or 3 doses only after 2\u20134 weeks at 300 mg/day with ongoing pain and tolerance"
           ],
           [
             "Fibromyalgia",
@@ -162,7 +162,7 @@
           [
             "Spinal cord injury pain",
             "75 mg twice daily; may reach 150 mg twice daily within 1 week",
-            "300 mg twice daily (600 mg/day) after 2–3 weeks at 300 mg/day if needed and tolerated"
+            "300 mg twice daily (600 mg/day) after 2\u20133 weeks at 300 mg/day if needed and tolerated"
           ]
         ]
       }
@@ -182,33 +182,28 @@
       "table_assertions": {
         "headers": [
           "Population",
-          "Initial total/day",
-          "Maximum total/day",
+          "Initial \u2192 maximum total/day",
           "Division"
         ],
         "rows": [
           [
-            "Adults ≥17 years",
-            "150 mg/day",
-            "600 mg/day",
+            "Adults \u226517 years",
+            "150 mg/day \u2192 600 mg/day",
             "2 or 3 doses"
           ],
           [
-            "Pediatric weight ≥30 kg",
-            "2.5 mg/kg/day",
-            "10 mg/kg/day, ≤600 mg/day",
+            "Pediatric weight \u226530 kg",
+            "2.5 mg/kg/day \u2192 10 mg/kg/day, \u2264600 mg/day",
             "2 or 3 doses"
           ],
           [
             "Pediatric weight <30 kg, age 1 month to <4 years",
-            "3.5 mg/kg/day",
-            "14 mg/kg/day",
+            "3.5 mg/kg/day \u2192 14 mg/kg/day",
             "3 doses"
           ],
           [
-            "Pediatric weight <30 kg, age ≥4 years",
-            "3.5 mg/kg/day",
-            "14 mg/kg/day",
+            "Pediatric weight <30 kg, age \u22654 years",
+            "3.5 mg/kg/day \u2192 14 mg/kg/day",
             "2 or 3 doses"
           ]
         ]
@@ -218,7 +213,7 @@
       "section": "dosage",
       "card": "Adult immediate-release renal adjustment",
       "assertions": [
-        "Estimate CrCl using the label’s Cockcroft–Gault approach. First choose the total daily dose allowed by the indication at normal renal function, then use its corresponding column below; do not select the highest column for every indication. Values are total mg/day, divided as stated; at CrCl ≥60, retain the indication-specific frequency above. The label presents boundary ranges as 30–60 and 15–30; a clinician should apply the intended renal stratum."
+        "Estimate CrCl using the label\u2019s Cockcroft\u2013Gault approach. First choose the total daily dose allowed by the indication at normal renal function, then use its corresponding mapping below; do not select the highest normal-function dose for every indication. Values are total mg/day, divided as stated; at CrCl \u226560, retain the indication-specific frequency above. The label presents boundary ranges as 30\u201360 and 15\u201330; a clinician should apply the intended renal stratum."
       ],
       "sources": [
         {
@@ -229,43 +224,88 @@
       "table_assertions": {
         "headers": [
           "CrCl (mL/min)",
-          "For normal 150/day",
-          "For normal 300/day",
-          "For normal 450/day",
-          "For normal 600/day",
+          "Normal \u2192 adjusted daily dose",
           "Division"
         ],
         "rows": [
           [
-            "≥60",
-            "150 mg",
-            "300 mg",
-            "450 mg",
-            "600 mg",
+            "\u226560",
+            "150 mg/day \u2192 150 mg/day",
             "2 or 3 doses"
           ],
           [
-            "30–60",
-            "75 mg",
-            "150 mg",
-            "225 mg",
-            "300 mg",
+            "\u226560",
+            "300 mg/day \u2192 300 mg/day",
             "2 or 3 doses"
           ],
           [
-            "15–30",
-            "25–50 mg",
-            "75 mg",
-            "100–150 mg",
-            "150 mg",
+            "\u226560",
+            "450 mg/day \u2192 450 mg/day",
+            "2 or 3 doses"
+          ],
+          [
+            "\u226560",
+            "600 mg/day \u2192 600 mg/day",
+            "2 or 3 doses"
+          ],
+          [
+            "30\u201360",
+            "150 mg/day \u2192 75 mg/day",
+            "2 or 3 doses"
+          ],
+          [
+            "30\u201360",
+            "300 mg/day \u2192 150 mg/day",
+            "2 or 3 doses"
+          ],
+          [
+            "30\u201360",
+            "450 mg/day \u2192 225 mg/day",
+            "2 or 3 doses"
+          ],
+          [
+            "30\u201360",
+            "600 mg/day \u2192 300 mg/day",
+            "2 or 3 doses"
+          ],
+          [
+            "15\u201330",
+            "150 mg/day \u2192 25\u201350 mg/day",
+            "1 or 2 doses"
+          ],
+          [
+            "15\u201330",
+            "300 mg/day \u2192 75 mg/day",
+            "1 or 2 doses"
+          ],
+          [
+            "15\u201330",
+            "450 mg/day \u2192 100\u2013150 mg/day",
+            "1 or 2 doses"
+          ],
+          [
+            "15\u201330",
+            "600 mg/day \u2192 150 mg/day",
             "1 or 2 doses"
           ],
           [
             "<15",
-            "25 mg",
-            "25–50 mg",
-            "50–75 mg",
-            "75 mg",
+            "150 mg/day \u2192 25 mg/day",
+            "Once daily"
+          ],
+          [
+            "<15",
+            "300 mg/day \u2192 25\u201350 mg/day",
+            "Once daily"
+          ],
+          [
+            "<15",
+            "450 mg/day \u2192 50\u201375 mg/day",
+            "Once daily"
+          ],
+          [
+            "<15",
+            "600 mg/day \u2192 75 mg/day",
             "Once daily"
           ]
         ]
@@ -298,11 +338,11 @@
             "25 or 50 mg"
           ],
           [
-            "25–50 mg once daily",
+            "25\u201350 mg once daily",
             "50 or 75 mg"
           ],
           [
-            "50–75 mg once daily",
+            "50\u201375 mg once daily",
             "75 or 100 mg"
           ],
           [
@@ -316,12 +356,12 @@
       "section": "dosage",
       "card": "Lyrica CR adult dosing and administration",
       "assertions": [
-        "At CrCl ≥60, start 165 mg once daily after the evening meal; may reach 330 mg once daily within 1 week. DPN maximum is 330 mg/day. For PHN only, persistent pain after 2–4 weeks at 330 mg/day with tolerance may justify up to 660 mg/day. Swallow whole; do not split, crush or chew."
+        "At CrCl \u226560, start 165 mg once daily after the evening meal; may reach 330 mg once daily within 1 week. DPN maximum is 330 mg/day. For PHN only, persistent pain after 2\u20134 weeks at 330 mg/day with tolerance may justify up to 660 mg/day. Swallow whole; do not split, crush or chew."
       ],
       "sources": [
         {
           "id": "cr",
-          "sections": "2.1–2.3"
+          "sections": "2.1\u20132.3"
         }
       ]
     },
@@ -329,7 +369,7 @@
       "section": "dosage",
       "card": "CR renal dosing",
       "assertions": [
-        "Match the indication-appropriate normal-function daily dose to its column. For CrCl <30 or hemodialysis, CR is not recommended; use an appropriate immediate-release regimen instead. All CR values are once-daily totals after the evening meal."
+        "Match the indication-appropriate normal-function daily dose to its mapping. For CrCl <30 or hemodialysis, CR is not recommended; use an appropriate immediate-release regimen instead. All CR values are once-daily totals after the evening meal."
       ],
       "sources": [
         {
@@ -340,32 +380,56 @@
       "table_assertions": {
         "headers": [
           "CrCl (mL/min)",
-          "Normal 165/day",
-          "Normal 330/day",
-          "Normal 495/day",
-          "Normal 660/day"
+          "Normal \u2192 adjusted daily dose"
         ],
         "rows": [
           [
-            "≥60",
-            "165 mg",
-            "330 mg",
-            "495 mg",
-            "660 mg"
+            "\u226560",
+            "165 mg/day \u2192 165 mg/day"
           ],
           [
-            "30–60",
-            "82.5 mg",
-            "165 mg",
-            "247.5 mg",
-            "330 mg"
+            "\u226560",
+            "330 mg/day \u2192 330 mg/day"
+          ],
+          [
+            "\u226560",
+            "495 mg/day \u2192 495 mg/day"
+          ],
+          [
+            "\u226560",
+            "660 mg/day \u2192 660 mg/day"
+          ],
+          [
+            "30\u201360",
+            "165 mg/day \u2192 82.5 mg/day"
+          ],
+          [
+            "30\u201360",
+            "330 mg/day \u2192 165 mg/day"
+          ],
+          [
+            "30\u201360",
+            "495 mg/day \u2192 247.5 mg/day"
+          ],
+          [
+            "30\u201360",
+            "660 mg/day \u2192 330 mg/day"
           ],
           [
             "<30 or hemodialysis",
-            "Use IR",
-            "Use IR",
-            "Use IR",
-            "Use IR"
+            "165 mg/day \u2192 Use IR"
+          ],
+          [
+            "<30 or hemodialysis",
+            "330 mg/day \u2192 Use IR"
+          ],
+          [
+            "<30 or hemodialysis",
+            "495 mg/day \u2192 Use IR"
+          ],
+          [
+            "<30 or hemodialysis",
+            "660 mg/day \u2192 Use IR"
           ]
         ]
       }
@@ -398,11 +462,11 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "5.1–5.13; 6.2"
+          "sections": "5.1\u20135.13; 6.2"
         },
         {
           "id": "cr",
-          "sections": "5.1–5.13; 6.2"
+          "sections": "5.1\u20135.13; 6.2"
         }
       ]
     },
@@ -449,11 +513,11 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "6.1–6.2"
+          "sections": "6.1\u20136.2"
         },
         {
           "id": "cr",
-          "sections": "6.1–6.2"
+          "sections": "6.1\u20136.2"
         }
       ]
     },
@@ -517,7 +581,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "2.7; 8.5–8.6; 12.3"
+          "sections": "2.7; 8.5\u20138.6; 12.3"
         },
         {
           "id": "cr",
@@ -601,7 +665,7 @@
       "section": "pharmacology",
       "card": "Absorption and elimination",
       "assertions": [
-        "IR bioavailability is ≥90%; fasting peak is about 1.5 hours, with food delaying the peak without meaningfully reducing total absorption. CR requires food and peaks about 8–10 hours after an evening meal; fasting lowers exposure. Pregabalin does not bind plasma protein, undergoes negligible metabolism and has a normal-renal-function half-life about 6.3 hours. Renal clearance tracks CrCl; 4-hour hemodialysis removes approximately half."
+        "IR bioavailability is \u226590%; fasting peak is about 1.5 hours, with food delaying the peak without meaningfully reducing total absorption. CR requires food and peaks about 8\u201310 hours after an evening meal; fasting lowers exposure. Pregabalin does not bind plasma protein, undergoes negligible metabolism and has a normal-renal-function half-life about 6.3 hours. Renal clearance tracks CrCl; 4-hour hemodialysis removes approximately half."
       ],
       "sources": [
         {
@@ -703,7 +767,7 @@
       "section": "product",
       "card": "Storage and handling",
       "assertions": [
-        "IR: store at 25°C, permitted excursions 15–30°C. CR: 20–25°C, excursions 15–30°C, in the original package. Keep controlled medication secure and out of children’s reach; never share it. No additional solution post-opening discard interval is invented."
+        "IR: store at 25\u00b0C, permitted excursions 15\u201330\u00b0C. CR: 20\u201325\u00b0C, excursions 15\u201330\u00b0C, in the original package. Keep controlled medication secure and out of children\u2019s reach; never share it. No additional solution post-opening discard interval is invented."
       ],
       "sources": [
         {
@@ -727,7 +791,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "1; 2.2–2.6; 8.4"
+          "sections": "1; 2.2\u20132.6; 8.4"
         }
       ]
     },
@@ -748,12 +812,12 @@
       "section": "dosage",
       "card": "Adult immediate-release regimens",
       "assertions": [
-        "These regimens assume CrCl ≥60 mL/min. Adjust for renal function before applying any escalation. Escalate only for response and tolerability."
+        "These regimens assume CrCl \u226560 mL/min. Adjust for renal function before applying any escalation. Escalate only for response and tolerability."
       ],
       "sources": [
         {
           "id": "ir",
-          "sections": "2.1–2.6"
+          "sections": "2.1\u20132.6"
         }
       ],
       "table_assertions": {
@@ -771,7 +835,7 @@
           [
             "Postherpetic neuralgia",
             "75 mg twice daily or 50 mg three times daily; may reach 300 mg/day within 1 week",
-            "600 mg/day in 2 or 3 doses only after 2–4 weeks at 300 mg/day with ongoing pain and tolerance"
+            "600 mg/day in 2 or 3 doses only after 2\u20134 weeks at 300 mg/day with ongoing pain and tolerance"
           ],
           [
             "Fibromyalgia",
@@ -781,7 +845,7 @@
           [
             "Spinal cord injury pain",
             "75 mg twice daily; may reach 150 mg twice daily within 1 week",
-            "300 mg twice daily (600 mg/day) after 2–3 weeks at 300 mg/day if needed and tolerated"
+            "300 mg twice daily (600 mg/day) after 2\u20133 weeks at 300 mg/day if needed and tolerated"
           ]
         ]
       }
@@ -801,33 +865,28 @@
       "table_assertions": {
         "headers": [
           "Population",
-          "Initial total/day",
-          "Maximum total/day",
+          "Initial \u2192 maximum total/day",
           "Division"
         ],
         "rows": [
           [
-            "Adults ≥17 years",
-            "150 mg/day",
-            "600 mg/day",
+            "Adults \u226517 years",
+            "150 mg/day \u2192 600 mg/day",
             "2 or 3 doses"
           ],
           [
-            "Pediatric weight ≥30 kg",
-            "2.5 mg/kg/day",
-            "10 mg/kg/day, ≤600 mg/day",
+            "Pediatric weight \u226530 kg",
+            "2.5 mg/kg/day \u2192 10 mg/kg/day, \u2264600 mg/day",
             "2 or 3 doses"
           ],
           [
             "Pediatric weight <30 kg, age 1 month to <4 years",
-            "3.5 mg/kg/day",
-            "14 mg/kg/day",
+            "3.5 mg/kg/day \u2192 14 mg/kg/day",
             "3 doses"
           ],
           [
-            "Pediatric weight <30 kg, age ≥4 years",
-            "3.5 mg/kg/day",
-            "14 mg/kg/day",
+            "Pediatric weight <30 kg, age \u22654 years",
+            "3.5 mg/kg/day \u2192 14 mg/kg/day",
             "2 or 3 doses"
           ]
         ]
@@ -837,7 +896,7 @@
       "section": "dosage",
       "card": "Adult immediate-release renal adjustment",
       "assertions": [
-        "Estimate CrCl using the label’s Cockcroft–Gault approach. First choose the total daily dose allowed by the indication at normal renal function, then use its corresponding column below; do not select the highest column for every indication. Values are total mg/day, divided as stated; at CrCl ≥60, retain the indication-specific frequency above. The label presents boundary ranges as 30–60 and 15–30; a clinician should apply the intended renal stratum."
+        "Estimate CrCl using the label\u2019s Cockcroft\u2013Gault approach. First choose the total daily dose allowed by the indication at normal renal function, then use its corresponding mapping below; do not select the highest normal-function dose for every indication. Values are total mg/day, divided as stated; at CrCl \u226560, retain the indication-specific frequency above. The label presents boundary ranges as 30\u201360 and 15\u201330; a clinician should apply the intended renal stratum."
       ],
       "sources": [
         {
@@ -848,43 +907,88 @@
       "table_assertions": {
         "headers": [
           "CrCl (mL/min)",
-          "For normal 150/day",
-          "For normal 300/day",
-          "For normal 450/day",
-          "For normal 600/day",
+          "Normal \u2192 adjusted daily dose",
           "Division"
         ],
         "rows": [
           [
-            "≥60",
-            "150 mg",
-            "300 mg",
-            "450 mg",
-            "600 mg",
+            "\u226560",
+            "150 mg/day \u2192 150 mg/day",
             "2 or 3 doses"
           ],
           [
-            "30–60",
-            "75 mg",
-            "150 mg",
-            "225 mg",
-            "300 mg",
+            "\u226560",
+            "300 mg/day \u2192 300 mg/day",
             "2 or 3 doses"
           ],
           [
-            "15–30",
-            "25–50 mg",
-            "75 mg",
-            "100–150 mg",
-            "150 mg",
+            "\u226560",
+            "450 mg/day \u2192 450 mg/day",
+            "2 or 3 doses"
+          ],
+          [
+            "\u226560",
+            "600 mg/day \u2192 600 mg/day",
+            "2 or 3 doses"
+          ],
+          [
+            "30\u201360",
+            "150 mg/day \u2192 75 mg/day",
+            "2 or 3 doses"
+          ],
+          [
+            "30\u201360",
+            "300 mg/day \u2192 150 mg/day",
+            "2 or 3 doses"
+          ],
+          [
+            "30\u201360",
+            "450 mg/day \u2192 225 mg/day",
+            "2 or 3 doses"
+          ],
+          [
+            "30\u201360",
+            "600 mg/day \u2192 300 mg/day",
+            "2 or 3 doses"
+          ],
+          [
+            "15\u201330",
+            "150 mg/day \u2192 25\u201350 mg/day",
+            "1 or 2 doses"
+          ],
+          [
+            "15\u201330",
+            "300 mg/day \u2192 75 mg/day",
+            "1 or 2 doses"
+          ],
+          [
+            "15\u201330",
+            "450 mg/day \u2192 100\u2013150 mg/day",
+            "1 or 2 doses"
+          ],
+          [
+            "15\u201330",
+            "600 mg/day \u2192 150 mg/day",
             "1 or 2 doses"
           ],
           [
             "<15",
-            "25 mg",
-            "25–50 mg",
-            "50–75 mg",
-            "75 mg",
+            "150 mg/day \u2192 25 mg/day",
+            "Once daily"
+          ],
+          [
+            "<15",
+            "300 mg/day \u2192 25\u201350 mg/day",
+            "Once daily"
+          ],
+          [
+            "<15",
+            "450 mg/day \u2192 50\u201375 mg/day",
+            "Once daily"
+          ],
+          [
+            "<15",
+            "600 mg/day \u2192 75 mg/day",
             "Once daily"
           ]
         ]
@@ -917,11 +1021,11 @@
             "25 or 50 mg"
           ],
           [
-            "25–50 mg once daily",
+            "25\u201350 mg once daily",
             "50 or 75 mg"
           ],
           [
-            "50–75 mg once daily",
+            "50\u201375 mg once daily",
             "75 or 100 mg"
           ],
           [
@@ -935,12 +1039,12 @@
       "section": "dosage",
       "card": "Lyrica CR adult dosing and administration",
       "assertions": [
-        "At CrCl ≥60, start 165 mg once daily after the evening meal; may reach 330 mg once daily within 1 week. DPN maximum is 330 mg/day. For PHN only, persistent pain after 2–4 weeks at 330 mg/day with tolerance may justify up to 660 mg/day. Swallow whole; do not split, crush or chew."
+        "At CrCl \u226560, start 165 mg once daily after the evening meal; may reach 330 mg once daily within 1 week. DPN maximum is 330 mg/day. For PHN only, persistent pain after 2\u20134 weeks at 330 mg/day with tolerance may justify up to 660 mg/day. Swallow whole; do not split, crush or chew."
       ],
       "sources": [
         {
           "id": "cr",
-          "sections": "2.1–2.3"
+          "sections": "2.1\u20132.3"
         }
       ]
     },
@@ -948,7 +1052,7 @@
       "section": "dosage",
       "card": "CR renal dosing",
       "assertions": [
-        "Match the indication-appropriate normal-function daily dose to its column. For CrCl <30 or hemodialysis, CR is not recommended; use an appropriate immediate-release regimen instead. All CR values are once-daily totals after the evening meal."
+        "Match the indication-appropriate normal-function daily dose to its mapping. For CrCl <30 or hemodialysis, CR is not recommended; use an appropriate immediate-release regimen instead. All CR values are once-daily totals after the evening meal."
       ],
       "sources": [
         {
@@ -959,32 +1063,56 @@
       "table_assertions": {
         "headers": [
           "CrCl (mL/min)",
-          "Normal 165/day",
-          "Normal 330/day",
-          "Normal 495/day",
-          "Normal 660/day"
+          "Normal \u2192 adjusted daily dose"
         ],
         "rows": [
           [
-            "≥60",
-            "165 mg",
-            "330 mg",
-            "495 mg",
-            "660 mg"
+            "\u226560",
+            "165 mg/day \u2192 165 mg/day"
           ],
           [
-            "30–60",
-            "82.5 mg",
-            "165 mg",
-            "247.5 mg",
-            "330 mg"
+            "\u226560",
+            "330 mg/day \u2192 330 mg/day"
+          ],
+          [
+            "\u226560",
+            "495 mg/day \u2192 495 mg/day"
+          ],
+          [
+            "\u226560",
+            "660 mg/day \u2192 660 mg/day"
+          ],
+          [
+            "30\u201360",
+            "165 mg/day \u2192 82.5 mg/day"
+          ],
+          [
+            "30\u201360",
+            "330 mg/day \u2192 165 mg/day"
+          ],
+          [
+            "30\u201360",
+            "495 mg/day \u2192 247.5 mg/day"
+          ],
+          [
+            "30\u201360",
+            "660 mg/day \u2192 330 mg/day"
           ],
           [
             "<30 or hemodialysis",
-            "Use IR",
-            "Use IR",
-            "Use IR",
-            "Use IR"
+            "165 mg/day \u2192 Use IR"
+          ],
+          [
+            "<30 or hemodialysis",
+            "330 mg/day \u2192 Use IR"
+          ],
+          [
+            "<30 or hemodialysis",
+            "495 mg/day \u2192 Use IR"
+          ],
+          [
+            "<30 or hemodialysis",
+            "660 mg/day \u2192 Use IR"
           ]
         ]
       }
@@ -1017,11 +1145,11 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "5.1–5.13; 6.2"
+          "sections": "5.1\u20135.13; 6.2"
         },
         {
           "id": "cr",
-          "sections": "5.1–5.13; 6.2"
+          "sections": "5.1\u20135.13; 6.2"
         }
       ]
     },
@@ -1068,11 +1196,11 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "6.1–6.2"
+          "sections": "6.1\u20136.2"
         },
         {
           "id": "cr",
-          "sections": "6.1–6.2"
+          "sections": "6.1\u20136.2"
         }
       ]
     },
@@ -1136,7 +1264,7 @@
       "sources": [
         {
           "id": "ir",
-          "sections": "2.7; 8.5–8.6; 12.3"
+          "sections": "2.7; 8.5\u20138.6; 12.3"
         },
         {
           "id": "cr",
@@ -1220,7 +1348,7 @@
       "section": "pharmacology",
       "card": "Absorption and elimination",
       "assertions": [
-        "IR bioavailability is ≥90%; fasting peak is about 1.5 hours, with food delaying the peak without meaningfully reducing total absorption. CR requires food and peaks about 8–10 hours after an evening meal; fasting lowers exposure. Pregabalin does not bind plasma protein, undergoes negligible metabolism and has a normal-renal-function half-life about 6.3 hours. Renal clearance tracks CrCl; 4-hour hemodialysis removes approximately half."
+        "IR bioavailability is \u226590%; fasting peak is about 1.5 hours, with food delaying the peak without meaningfully reducing total absorption. CR requires food and peaks about 8\u201310 hours after an evening meal; fasting lowers exposure. Pregabalin does not bind plasma protein, undergoes negligible metabolism and has a normal-renal-function half-life about 6.3 hours. Renal clearance tracks CrCl; 4-hour hemodialysis removes approximately half."
       ],
       "sources": [
         {
@@ -1322,7 +1450,7 @@
       "section": "product",
       "card": "Storage and handling",
       "assertions": [
-        "IR: store at 25°C, permitted excursions 15–30°C. CR: 20–25°C, excursions 15–30°C, in the original package. Keep controlled medication secure and out of children’s reach; never share it. No additional solution post-opening discard interval is invented."
+        "IR: store at 25\u00b0C, permitted excursions 15\u201330\u00b0C. CR: 20\u201325\u00b0C, excursions 15\u201330\u00b0C, in the original package. Keep controlled medication secure and out of children\u2019s reach; never share it. No additional solution post-opening discard interval is invented."
       ],
       "sources": [
         {
@@ -1350,7 +1478,7 @@
       ],
       [
         "Common products",
-        "Lyrica IR · Lyrica CR"
+        "Lyrica IR \u00b7 Lyrica CR"
       ],
       [
         "Key dosing factor",
@@ -1446,12 +1574,319 @@
   ],
   "unresolved_source_questions": [],
   "validation": {
-    "schema": "Passed validateMonograph on 2026-10-01",
+    "schema": "Passed final actual-file validateMonograph check after formatting-only correction (zero errors), 2026-10-01",
     "assertion_map": "All card paragraphs, tables and citations match current profile",
     "source_hashes": "All five local snapshots across these profiles match recorded SHA-256 hashes",
     "formatting": "All rendered card strings, dose tables, hero facts and section text manually reviewed",
     "scoped_whitespace": "Scoped git diff --check and explicit untracked-file trailing-whitespace check passed",
     "tests_build_lint": "Parent batch checks required",
-    "rendered_page": "Parent batch QA required"
-  }
+    "rendered_page": "Parent mobile bounds/render QA required after formatting correction",
+    "table_equivalence": "All prior IR renal matrix cells, CR renal cells and pediatric initial/max/frequency rows mechanically matched to final narrow tables; no dose/frequency change."
+  },
+  "monograph_sha256": "5dd12b9340eaacff147499c5fe79ce5a76d026142d3e77eddec15ed84b56f243",
+  "formatting_corrections": [
+    {
+      "checked": "2026-10-01",
+      "reason": "Live390pxviewport article/table overflow; preserve every clinical dose/CrCl/frequency while reducing columns.",
+      "changes": [
+        {
+          "card": "Partial-onset seizure adjunctive dosing",
+          "previous_table": {
+            "headers": [
+              "Population",
+              "Initial total/day",
+              "Maximum total/day",
+              "Division"
+            ],
+            "rows": [
+              [
+                "Adults \u226517 years",
+                "150 mg/day",
+                "600 mg/day",
+                "2 or 3 doses"
+              ],
+              [
+                "Pediatric weight \u226530 kg",
+                "2.5 mg/kg/day",
+                "10 mg/kg/day, \u2264600 mg/day",
+                "2 or 3 doses"
+              ],
+              [
+                "Pediatric weight <30 kg, age 1 month to <4 years",
+                "3.5 mg/kg/day",
+                "14 mg/kg/day",
+                "3 doses"
+              ],
+              [
+                "Pediatric weight <30 kg, age \u22654 years",
+                "3.5 mg/kg/day",
+                "14 mg/kg/day",
+                "2 or 3 doses"
+              ]
+            ]
+          },
+          "final_table": {
+            "headers": [
+              "Population",
+              "Initial \u2192 maximum total/day",
+              "Division"
+            ],
+            "rows": [
+              [
+                "Adults \u226517 years",
+                "150 mg/day \u2192 600 mg/day",
+                "2 or 3 doses"
+              ],
+              [
+                "Pediatric weight \u226530 kg",
+                "2.5 mg/kg/day \u2192 10 mg/kg/day, \u2264600 mg/day",
+                "2 or 3 doses"
+              ],
+              [
+                "Pediatric weight <30 kg, age 1 month to <4 years",
+                "3.5 mg/kg/day \u2192 14 mg/kg/day",
+                "3 doses"
+              ],
+              [
+                "Pediatric weight <30 kg, age \u22654 years",
+                "3.5 mg/kg/day \u2192 14 mg/kg/day",
+                "2 or 3 doses"
+              ]
+            ]
+          },
+          "clinical_values_unchanged": true
+        },
+        {
+          "card": "Adult immediate-release renal adjustment",
+          "previous_table": {
+            "headers": [
+              "CrCl (mL/min)",
+              "For normal 150/day",
+              "For normal 300/day",
+              "For normal 450/day",
+              "For normal 600/day",
+              "Division"
+            ],
+            "rows": [
+              [
+                "\u226560",
+                "150 mg",
+                "300 mg",
+                "450 mg",
+                "600 mg",
+                "2 or 3 doses"
+              ],
+              [
+                "30\u201360",
+                "75 mg",
+                "150 mg",
+                "225 mg",
+                "300 mg",
+                "2 or 3 doses"
+              ],
+              [
+                "15\u201330",
+                "25\u201350 mg",
+                "75 mg",
+                "100\u2013150 mg",
+                "150 mg",
+                "1 or 2 doses"
+              ],
+              [
+                "<15",
+                "25 mg",
+                "25\u201350 mg",
+                "50\u201375 mg",
+                "75 mg",
+                "Once daily"
+              ]
+            ]
+          },
+          "final_table": {
+            "headers": [
+              "CrCl (mL/min)",
+              "Normal \u2192 adjusted daily dose",
+              "Division"
+            ],
+            "rows": [
+              [
+                "\u226560",
+                "150 mg/day \u2192 150 mg/day",
+                "2 or 3 doses"
+              ],
+              [
+                "\u226560",
+                "300 mg/day \u2192 300 mg/day",
+                "2 or 3 doses"
+              ],
+              [
+                "\u226560",
+                "450 mg/day \u2192 450 mg/day",
+                "2 or 3 doses"
+              ],
+              [
+                "\u226560",
+                "600 mg/day \u2192 600 mg/day",
+                "2 or 3 doses"
+              ],
+              [
+                "30\u201360",
+                "150 mg/day \u2192 75 mg/day",
+                "2 or 3 doses"
+              ],
+              [
+                "30\u201360",
+                "300 mg/day \u2192 150 mg/day",
+                "2 or 3 doses"
+              ],
+              [
+                "30\u201360",
+                "450 mg/day \u2192 225 mg/day",
+                "2 or 3 doses"
+              ],
+              [
+                "30\u201360",
+                "600 mg/day \u2192 300 mg/day",
+                "2 or 3 doses"
+              ],
+              [
+                "15\u201330",
+                "150 mg/day \u2192 25\u201350 mg/day",
+                "1 or 2 doses"
+              ],
+              [
+                "15\u201330",
+                "300 mg/day \u2192 75 mg/day",
+                "1 or 2 doses"
+              ],
+              [
+                "15\u201330",
+                "450 mg/day \u2192 100\u2013150 mg/day",
+                "1 or 2 doses"
+              ],
+              [
+                "15\u201330",
+                "600 mg/day \u2192 150 mg/day",
+                "1 or 2 doses"
+              ],
+              [
+                "<15",
+                "150 mg/day \u2192 25 mg/day",
+                "Once daily"
+              ],
+              [
+                "<15",
+                "300 mg/day \u2192 25\u201350 mg/day",
+                "Once daily"
+              ],
+              [
+                "<15",
+                "450 mg/day \u2192 50\u201375 mg/day",
+                "Once daily"
+              ],
+              [
+                "<15",
+                "600 mg/day \u2192 75 mg/day",
+                "Once daily"
+              ]
+            ]
+          },
+          "clinical_values_unchanged": true
+        },
+        {
+          "card": "CR renal dosing",
+          "previous_table": {
+            "headers": [
+              "CrCl (mL/min)",
+              "Normal 165/day",
+              "Normal 330/day",
+              "Normal 495/day",
+              "Normal 660/day"
+            ],
+            "rows": [
+              [
+                "\u226560",
+                "165 mg",
+                "330 mg",
+                "495 mg",
+                "660 mg"
+              ],
+              [
+                "30\u201360",
+                "82.5 mg",
+                "165 mg",
+                "247.5 mg",
+                "330 mg"
+              ],
+              [
+                "<30 or hemodialysis",
+                "Use IR",
+                "Use IR",
+                "Use IR",
+                "Use IR"
+              ]
+            ]
+          },
+          "final_table": {
+            "headers": [
+              "CrCl (mL/min)",
+              "Normal \u2192 adjusted daily dose"
+            ],
+            "rows": [
+              [
+                "\u226560",
+                "165 mg/day \u2192 165 mg/day"
+              ],
+              [
+                "\u226560",
+                "330 mg/day \u2192 330 mg/day"
+              ],
+              [
+                "\u226560",
+                "495 mg/day \u2192 495 mg/day"
+              ],
+              [
+                "\u226560",
+                "660 mg/day \u2192 660 mg/day"
+              ],
+              [
+                "30\u201360",
+                "165 mg/day \u2192 82.5 mg/day"
+              ],
+              [
+                "30\u201360",
+                "330 mg/day \u2192 165 mg/day"
+              ],
+              [
+                "30\u201360",
+                "495 mg/day \u2192 247.5 mg/day"
+              ],
+              [
+                "30\u201360",
+                "660 mg/day \u2192 330 mg/day"
+              ],
+              [
+                "<30 or hemodialysis",
+                "165 mg/day \u2192 Use IR"
+              ],
+              [
+                "<30 or hemodialysis",
+                "330 mg/day \u2192 Use IR"
+              ],
+              [
+                "<30 or hemodialysis",
+                "495 mg/day \u2192 Use IR"
+              ],
+              [
+                "<30 or hemodialysis",
+                "660 mg/day \u2192 Use IR"
+              ]
+            ]
+          },
+          "clinical_values_unchanged": true
+        }
+      ],
+      "shared_renderer_or_APAP_changed": false
+    }
+  ]
 }

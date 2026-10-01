@@ -1,0 +1,585 @@
+{
+  "reviewDate": "2026-10-01",
+  "scope": "Independent targeted critical-assertion primary-source review. Only enumerated assertions independently verified; not exhaustive second clinical signoff, browser QA or build verification.",
+  "status": "Complete: all ten profiles targeted-reviewed.",
+  "profiles": [
+    {
+      "drug": "prednisolone",
+      "fileSha256": "6454653a9e2640c46d2888444b1110e70b42eb16e558783177ab67f15a62d239",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "ODT adult10\u201360mg/day base-equivalent, pediatric general0.14\u20132mg/kg/day divided3\u20134, no partial ODT and product-hypersensitivity formal contraindication agree.",
+          "sourceId": "odt",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e379543-c4cf-4e72-953b-db15b7f0c2a1",
+          "sourceSection": "Sections 2,3,4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Pred Forte1% ophthalmic1\u20132drops2\u20134daily, initial24\u201348h frequency flexibility, reassessafter2days, ocular infections contraindicated and IOPmonitor\u226510days agree.",
+          "sourceId": "eye",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00a5aa88-e361-4ea7-8922-530c738b726e",
+          "sourceSection": "Contraindications;Warnings;Dosage",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and excessive exposure"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "esomeprazole",
+      "fileSha256": "3ed321d81f86689051f01fceb1e298b3f14d1af2ce46c7e49f6dd5f4eac21d4d",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "EE20/40daily4\u20138weeks, adult other-indication distinctions and infant EE3\u20135kg2.5/>5\u20137.5kg5/>7.5\u201312kg10daily\u22646weeks agree; rilpivirine/formal hypersensitivity restrictions preserved.",
+          "sourceId": "rx",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4853677-1622-4037-688b-fdf533a11d96",
+          "sourceSection": "Sections 2,4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Adult post-endoscopy80mg30min then8mg/h71.5h; A/B6mg/h,C4mg/h with same load. Pediatric EE age1month\u2013<1yr0.5mg/kg,1\u201317<55kg10/\u226555kg20daily and10\u201330-minute infusion distinctions agree.",
+          "sourceId": "iv",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23395673-116d-4a8e-b0ce-59f9ca5b3daf",
+          "sourceSection": "Sections 2.1\u20132.3",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "norethindrone",
+      "fileSha256": "26a2805524a579bff25cfa90a3fd66bc8c9020596c4739f988d2110459bd4fe8",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Contraceptive0.35mg everydaysame time, all28active;>3h late catchup/48hbackup, pregnancy/breastca/liver/genitalbleeding contraindications agree.",
+          "sourceId": "norabe",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=426ac898-7745-4645-bf9b-bae319e260e8",
+          "sourceSection": "Directions;Contraindications",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Acetate amenorrhea2.5\u201310daily5\u201310days, endometriosis5daily2weeks then2.5increments every2weeks to15daily6\u20139months; route-indication/pregnancy/VTE/liver restrictions differ from POP, correctly preserved.",
+          "sourceId": "noreacetate",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0a94321-eb60-4aa6-a429-f0156f9f8e01",
+          "sourceSection": "Dosage;Contraindications",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Current first-five-menstrual-days start no backup, else2days; vomitingwithin3h repeatdose andbackupthrough2daysafter illness versus olderlabel distinctly attributed.",
+          "sourceId": "cdc-pop-spr",
+          "sourceUrl": "https://www.cdc.gov/contraception/hcp/usspr/progestin-only-pills.html",
+          "sourceSection": "Initiation;Vomiting",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "tadalafil",
+      "fileSha256": "a365bebf91cc7ecb7143cefc75b7aa81b47380612e541cb4002acd1546abc6cd",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "EDas-needed10\u21925/20maximumonce/day; dailyED2.5\u21925, BPH5. Renal30\u201350start5/max10q48h,<30max5q72h/dailyavoid; potentCYP3Aas-needed10q72h/daily2.5; nitrate/riociguat contraindications agree.",
+          "sourceId": "cialis",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bcd8f8ab-81a2-4891-83db-24a0b0e25895",
+          "sourceSection": "Sections 2.1\u20132.7,4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "PAH40daily, renal31\u201380start20/<30avoid,hepA/Bconsider20/Cavoid; ritonavironeweek staged20\u219240 andstop\u226524hbefore initiation agree.",
+          "sourceId": "adcirca",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ff61b237-be8e-461b-8114-78c52a8ad0ae",
+          "sourceSection": "Sections 2\u20134",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "PAH20mg/5mL supplies40mg/10mLdaily; shake30seconds. Distinct from ED/BPH and organ-boundaryexact30gap explicitly flagged.",
+          "sourceId": "tadliq",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7a909b25-3772-403e-a5fe-e4a040293fb7",
+          "sourceSection": "Sections 2,16;PatientInfo",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [
+        "PAH label CrCl exactly30 gap explicitly flagged without invented dosing."
+      ]
+    },
+    {
+      "drug": "mirtazapine",
+      "fileSha256": "1c7bcd52c92e80ffe8ca807f20787a2cb2bec1a0594d5f2a61c471f2cc311c49",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "AdultMDD15mg eveningstart maximum45, changes\u22651\u20132weeks, fourteen-daybidirectional MAOI interval, individualized impairedclearance dose reduction, no pediatric indication and suicidality box agree. ODTphenylalanine specificity preserved.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=98ad1917-a094-44f5-a28f-a64a8cfcd887",
+          "sourceSection": "Sections 2,4,5;Box",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Infection symptoms with low WBC require discontinuation; DRESS and serotonin syndrome urgent stopping, QT cautions and SolTab phenylalanine2.6/5.2/7.8mg agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=98ad1917-a094-44f5-a28f-a64a8cfcd887",
+          "sourceSection": "Sections 5.2\u20135.6,5.16",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning \u00b7 suicidal thoughts and behaviors",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "levetiracetam",
+      "fileSha256": "85109326558eec343cf913dbfdcb395cc826c6a678d1f40a32a7c3e173295b7e",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "IRpartial infants7\u219221mg/kgPERDOSEBID;6months\u2013<4years10\u219225;olderchildren10\u219230. Oral100mg/mL\u226420kg; adultBID500\u21921500. Adult BSA-CrCl table500\u20131500/500\u20131000/250\u2013750/250\u2013500q12h,dialysis500\u20131000q24h+250\u2013500post agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ca9df05-a506-4ec8-a4fe-320f1219ab21",
+          "sourceSection": "Sections 2.1\u20132.5",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "IRoral/IVequivalent total/frequency,100mg/mLconcentrate dilute\u226415mg/mL then15mininfusion. No unreviewedIVpush/loading regimen.",
+          "sourceId": "iv",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c6d5784d-abf9-45fe-ac5a-d5c53bd50f7e",
+          "sourceSection": "Sections 2.4\u20132.6",
+          "access": "retained-full-exact-primary-SPL-XML-read",
+          "result": "agrees"
+        },
+        {
+          "assertion": "XR1000daily1000incrementsq2weeksmax3000; moderate/severe renalnotrecommended, onlynormal/mildtable; notuniversalKeppraXRrenalalgorithm.",
+          "sourceId": "elepsia",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cac83d47-88a2-4447-a0c0-90b44ffda0ac",
+          "sourceSection": "Sections 2.1\u20132.2",
+          "access": "retained-full-exact-primary-SPL-XML-read",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Hypersensitivity contraindication; anaphylaxis permanent stopping if no alternative cause, first-rash discontinuation unless unrelated, no SJS/TEN rechallenge, and DRESS evaluation/discontinuation agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ca9df05-a506-4ec8-a4fe-320f1219ab21",
+          "sourceSection": "Sections 4,5.4\u20135.6",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [
+        "Printed adult CrCl50 overlap explicitly flagged; no fabricated boundary dosing. Spritam\u226420kg avoidance respected despite printed20\u201340 table."
+      ],
+      "retainedEvidence": {
+        "keppra-iv": {
+          "path": "/tmp/nas-drug-sources/keppra-iv.xml",
+          "sha256": "ed2a471fe06a6e5a7c04a12a2dec2c12c9d316c1ba2d060bd5b9b62a5e5393dd"
+        },
+        "elepsia": {
+          "path": "/tmp/nas-drug-sources/elepsia.xml",
+          "sha256": "21d376d84561ac3324e917da04504a0a634b2e68b85d11b8f30acaf62543d348"
+        }
+      }
+    },
+    {
+      "drug": "naproxen",
+      "fileSha256": "a8bcf66141b1ae9049d6c8dd28437a4766bf0a9d21f1d608e7439b72c5323e10",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "IR base arthritis 250/500 mg twice daily versus sodium 275/550 mg twice daily; acute base 500 then 250 every 6\u20138 hours maximum1250/day, sodium550 then550q12h/275q6\u20138h maximum1375firstday/1100subsequent; gout750\u2192250q8h versus sodium825\u2192275q8h. JIA approximately10mg/kg/DAY divided twice; selected tablets inappropriate below50kg. CrCl<30 not recommended; hypersensitivity/aspirin reactions/CABG contraindications; pregnancy20\u201330weeks limits and\u226530avoid agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=86a3e612-3bfe-432f-9afd-972bb8a6644e",
+          "sourceSection": "Sections 2,4,5,8",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Delayed-release375/500mg twice daily, do not break/crush/chew, limited1500mg/day up to6months in selected tolerant patients, not recommended for acute gout agree.",
+          "sourceId": "ec",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=67815abd-5e97-4ccb-ac9b-28c2ef6123e7",
+          "sourceSection": "Sections 2.2,2.5",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "125mg/5mL=25mg/mL; 250/500/750mg corresponds10/20/30mL; shake gently before use and labeled light/heat handling agree.",
+          "sourceId": "liquid",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=252726a7-757a-4b97-b5b8-ffff4ac1d103",
+          "sourceSection": "Sections 2,16",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Age\u226512 one220mg-sodium capletq8\u201312h, firstdose2within1h, maximum2per8\u201312h and3per24h; under12askdoctor agree.",
+          "sourceId": "otc",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c95dceed-4968-486f-aecf-2942eda41a95",
+          "sourceSection": "Drug Facts Directions",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "formattingRecheck": {
+        "checked": "2026-10-01",
+        "change": "Natural spaces at word/word display compounds in headings, indication labels and prose; dose and population assertions retained.",
+        "result": "Current table labels reread; clinical values in prior enumerated checks preserved."
+      }
+    },
+    {
+      "drug": "sumatriptan",
+      "fileSha256": "ab737b76de7bc50ed539bcc8cd8ba0850e3b9d930783f0e07af5c7d664ae8950",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Oral25/50/100mg, maximum200mg/24h with\u22652h interval; A/Bhepatic single maximum50mg; severehepatic contraindication. Published response-conditioned repeat follows highlights, while full-dose unresolved wording is explicitly flagged.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=584abe73-8290-4484-ff8e-5890831c095e",
+          "sourceSection": "Sections 2,4;Highlights",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "SC-only migraine/cluster6mg, migraine4mg if dose-limiting effects; cluster lower-dose efficacy unestablished; maximum12mg/24h two6mg\u22651h after some response. Vascular/24htriptan-ergot/2weekMAOA/severehepatic exclusions agree.",
+          "sourceId": "injection",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fee7d073-0b99-48f2-7985-0d8cf970894b",
+          "sourceSection": "Sections 2,4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Selected20mg single-use nasal device, repeat\u22652h maximum40mg/24h; source discussion of5/10mg does not establish supplied devices. Internal response/unresolved-repeat discrepancy explicitly acknowledged.",
+          "sourceId": "nasal",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=559cca31-c0d2-45bf-999d-e92fc49a4a89",
+          "sourceSection": "Sections 2,3,4;Highlights",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Adult migraine only;10mg nasal,\u22651h interval,max30mg/24h. Different sumatriptan product spacing is source-specific and does not authorize adding maxima.",
+          "sourceId": "tosymra",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=015a5cf9-f246-48bc-b91e-cd730a53d8aa",
+          "sourceSection": "Sections 1\u20134",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [
+        "Tablet and conventional-nasal highlights require some response before repeat; full dose text also permits unresolved headache. Profile flags inconsistency, retains response condition, requires prescriber plan; no fabricated harmonization."
+      ]
+    },
+    {
+      "drug": "nifedipine",
+      "fileSha256": "1b7ffb62c0d44e75a95a80e5f3303d2a06bf80d2ccbb597abc63bfc17b403db6",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "XL30/60mg once daily start,titrate7\u201314days,max120mg/day; angina>90mg limited experience; swallow whole. IR10mgTID\u2192nearest30mgXL conversion is narrowly labeled example. GITS GI obstruction and hypotension warnings preserved.",
+          "sourceId": "xl",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8ebcb33c-f43b-4b36-9f94-9774b2a59e06",
+          "sourceSection": "Dosage and Administration;Warnings",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "IR10mgTID start/usual10\u201320TID; selected spasm20\u201330TID/QID,>120rare/>180notrecommended; single dose rarely>30. Not acute home BP reduction; avoidACS/first1\u20132weeksafterMI. Hypersensitivity formal contraindication, no invented renal/hepatic numerical algorithm.",
+          "sourceId": "ir",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acb493a3-b8f2-41a9-8ab2-550d97c4592a",
+          "sourceSection": "Dosage and Administration;Warnings",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Intactmembrane suspectedpreterm24+0\u201325+6 consider;26+0\u201333+6 suspected/diagnosedoffer; infection/bleeding appropriateness assessed.",
+          "sourceId": "ng25",
+          "sourceUrl": "https://www.nice.org.uk/guidance/ng25/resources/preterm-labour-and-birth-pdf-1837333576645",
+          "sourceSection": "1.8.1\u20131.8.3",
+          "access": "retained-full-primary-guideline-PDF-extracted-text-read;direct-web403",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Nifedipine whenlabetalolunsuitable; severehypertensioncriticalcare immediateoral option+monitorresponse; breastfeedingcanadapt withinfantBP/symptomsobservation andselectedpostnataluse agree.",
+          "sourceId": "ng133",
+          "sourceUrl": "https://www.nice.org.uk/guidance/ng133/resources/hypertension-in-pregnancy-diagnosis-and-management-pdf-66141717671365",
+          "sourceSection": "1.3.10,1.8.6\u20131.8.7,1.9.1\u20131.9.6",
+          "access": "retained-full-primary-guideline-PDF-extracted-text-read;direct-web403",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Intact-membrane suspected labour24+0\u201325+6 consider;26+0\u201333+6 suspected/diagnosed offer nifedipine for tocolysis. No outpatient load inferred.",
+          "sourceId": "ng25",
+          "sourceUrl": "https://www.nice.org.uk/guidance/ng25/resources/preterm-labour-and-birth-pdf-1837333576645",
+          "sourceSection": "Recommendations1.8.2\u20131.8.3",
+          "access": "retained-full-official-guideline-PDF-text-read",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Nifedipine when labetalol unsuitable; oral severe-hypertension monitored critical care; postnatal breastfeeding can continue with vulnerable-infant symptom/BP assessment.",
+          "sourceId": "ng133",
+          "sourceUrl": "https://www.nice.org.uk/guidance/ng133/resources/hypertension-in-pregnancy-diagnosis-and-management-pdf-66141717671365",
+          "sourceSection": "Recommendations1.3.10,1.8.6\u20131.8.7,1.9.1\u20131.9.6",
+          "access": "retained-full-official-guideline-PDF-text-read",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed-warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "ng25": {
+          "path": "/tmp/nas-drug-sources/nice-ng25.pdf",
+          "sha256": "bb03c2e3107e9d3e4cce9156df6485b41dc5b6c643ed981d3179649bc5e3ee3f"
+        },
+        "ng133": {
+          "path": "/tmp/nas-drug-sources/nice-ng133.pdf",
+          "sha256": "e943ba2bdc31c772bb3b1332dfbcd36887e2f4308ac0f4163745f2c2fe6b78ec"
+        }
+      }
+    },
+    {
+      "drug": "progesterone",
+      "fileSha256": "cc5ef05234c1acce2f856c15997e87e95acdd5acc60e83732e0f0b7251c66c83",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Oral200mg bedtime12days/28daycycle with conjugatedestrogens versus amenorrhea400bedtime10days; peanut oil allergy, breastcancer/VTE/arterial/liver exclusions; WHI estrogen+MPA context not direct progesterone evidence; current label has no formal box.",
+          "sourceId": "oral",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1cf237ff-c4f8-4faa-a7aa-77599c856889",
+          "sourceSection": "Dosage;Contraindications;Warnings",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Current ART age<35 scope;100mg vaginal two/three times daily starting dayafterretrieval up to10weeks TOTALtreatment, not universal gestational cutoff; contraindications including missedabortion/ectopic and specified hepatic diseases preserved.",
+          "sourceId": "insert",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2ba50fa9-b349-40cb-9a4b-1af8faa4ec09",
+          "sourceSection": "Sections 1\u20134",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "8%90mg vaginal daily supplementation versus BIDovarianfailure replacement; pregnancyup to10\u201312weeks; amenorrhea4%45mgqod\u22646doses,8%90mgqod\u22646if nonresponse; not gel-volume dose increase.",
+          "sourceId": "gel",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=75e97aa1-daa4-45f9-b2e2-1a371302914e",
+          "sourceSection": "Dosage and Administration",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "IMonly50mg/mL;amenorrhea5\u201310mgdaily6\u20138days/AUBsixdoses,beginafter2weeksestrogenifused,stopifflowstarts; sesameallergy/eosinophilicpneumonia warning and route-specific disease exclusions agree.",
+          "sourceId": "im",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=83cfc12e-75d1-4284-bcc3-beadcbd27171",
+          "sourceSection": "Dosage;Contraindications;Warnings",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Vaginalmicronized400mgBID only scanconfirmedIUP+bleeding+previousmiscarriage,continue16completedweeksifheartbeat; no oral/substitute formulation transplant.",
+          "sourceId": "ng126",
+          "sourceUrl": "https://www.nice.org.uk/guidance/ng126/resources/ectopic-pregnancy-and-miscarriage-diagnosis-and-initial-management-pdf-66141662244037",
+          "sourceSection": "Recommendations 1.9.2\u20131.9.3",
+          "access": "retained-full-primary-guideline-PDF-extracted-text-read",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Vaginal prophylaxis priorpreterm/loss ORshortcervix,cerclagechoiceifboth;16+0\u201324+0startuntil\u226534weeks,no numericaldoseinferred.",
+          "sourceId": "ng25",
+          "sourceUrl": "https://www.nice.org.uk/guidance/ng25/resources/preterm-labour-and-birth-pdf-1837333576645",
+          "sourceSection": "Recommendations 1.2.1\u20131.2.3",
+          "access": "retained-full-primary-guideline-PDF-extracted-text-read",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Oral200mg bedtime12days/28cycle endometrial protection versus400bedtime10days amenorrhea; peanut-oil allergy contraindication, sedation and product-specific pregnancy restrictions preserved; current02/2026 no formalbox.",
+          "sourceId": "oral",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1cf237ff-c4f8-4faa-a7aa-77599c856889",
+          "sourceSection": "Dosage;Contraindications;Warnings",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Selected ART women<35; vaginal100mg two/three daily from dayafterretrieval up to10weeks total treatment; ectopic/missed abortion, severe specified liver disease, malignancy and thromboembolism exclusions agree.",
+          "sourceId": "insert",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2ba50fa9-b349-40cb-9a4b-1af8faa4ec09",
+          "sourceSection": "Sections1\u20134",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "ART8%90mgqd supplementation/BID ovarianfailure replacement up to10\u201312weeks; amenorrhea4%45mgqod6doses with8%90mgqodtrial fornonresponse; no volume-based increase.",
+          "sourceId": "gel",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=75e97aa1-daa4-45f9-b2e2-1a371302914e",
+          "sourceSection": "Dosage;Contraindications",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "IM50mg/mL sesameoil product5\u201310mgdaily6\u20138days amenorrhea or6doses functional bleeding; pulmonary/allergy warning remains route-specific.",
+          "sourceId": "im",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=83cfc12e-75d1-4284-bcc3-beadcbd27171",
+          "sourceSection": "Dosage;Warnings",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Vaginal micronized400mgBID for scanconfirmedIUP plusbleeding andprior miscarriage; if heartbeat continue16completedweeks, not substitute oral/other vaginal product.",
+          "sourceId": "ng126",
+          "sourceUrl": "https://www.nice.org.uk/guidance/ng126/resources/ectopic-pregnancy-and-miscarriage-diagnosis-and-initial-management-pdf-66141662244037",
+          "sourceSection": "Recommendations1.9.2\u20131.9.3",
+          "access": "retained-full-official-guideline-PDF-text-read",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Prior spontaneouspretermbirth/loss ORshortcervix permits consideration; bothofferchoicewithcerclage; start16+0\u201324+0,continueatleast34weeks; no dose invented.",
+          "sourceId": "ng25",
+          "sourceUrl": "https://www.nice.org.uk/guidance/ng25/resources/preterm-labour-and-birth-pdf-1837333576645",
+          "sourceSection": "Recommendations1.2.1\u20131.2.3",
+          "access": "retained-full-official-guideline-PDF-text-read",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed-warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "retainedEvidence": {
+        "ng126": {
+          "path": "/tmp/nas-drug-sources/nice-ng126.pdf",
+          "sha256": "f27f86a8779b2b1de7ede51e6c3d65564f656d3ec65a73ae3701fdda49833045"
+        },
+        "ng25": {
+          "path": "/tmp/nas-drug-sources/nice-ng25.pdf",
+          "sha256": "bb03c2e3107e9d3e4cce9156df6485b41dc5b6c643ed981d3179649bc5e3ee3f"
+        }
+      },
+      "auditReconciliation": {
+        "duplicateRowsMerged": 2,
+        "preservedAssertions": 12,
+        "reason": "Two independent targeted source-read records for the same exact file were appended; reconciled into one profile preserving all assertions and retained evidence."
+      }
+    }
+  ],
+  "pending": [],
+  "limitations": [
+    "Levetiracetam IV/Elepsia enumerated assertions read from actual retained exact full primary SPL; not claimed independently retrieved online.",
+    "NICE web recommendation pages returned403; exact retained full current official PDFs/extracted text used for enumerated nifedipine/progesterone guideline checks. No visual PDF QA claimed.",
+    "NICE live chapter retrieval403; enumerated recommendations independently read from actual retained full official PDF text with PDF hashes recorded, no screenshot inspection claimed."
+  ]
+}

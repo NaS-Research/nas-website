@@ -130,33 +130,28 @@ export const pregabalin = {
           "table": {
             "headers": [
               "Population",
-              "Initial total/day",
-              "Maximum total/day",
+              "Initial → maximum total/day",
               "Division"
             ],
             "rows": [
               [
                 "Adults ≥17 years",
-                "150 mg/day",
-                "600 mg/day",
+                "150 mg/day → 600 mg/day",
                 "2 or 3 doses"
               ],
               [
                 "Pediatric weight ≥30 kg",
-                "2.5 mg/kg/day",
-                "10 mg/kg/day, ≤600 mg/day",
+                "2.5 mg/kg/day → 10 mg/kg/day, ≤600 mg/day",
                 "2 or 3 doses"
               ],
               [
                 "Pediatric weight <30 kg, age 1 month to <4 years",
-                "3.5 mg/kg/day",
-                "14 mg/kg/day",
+                "3.5 mg/kg/day → 14 mg/kg/day",
                 "3 doses"
               ],
               [
                 "Pediatric weight <30 kg, age ≥4 years",
-                "3.5 mg/kg/day",
-                "14 mg/kg/day",
+                "3.5 mg/kg/day → 14 mg/kg/day",
                 "2 or 3 doses"
               ]
             ]
@@ -165,7 +160,7 @@ export const pregabalin = {
         {
           "title": "Adult immediate-release renal adjustment",
           "paragraphs": [
-            "Estimate CrCl using the label’s Cockcroft–Gault approach. First choose the total daily dose allowed by the indication at normal renal function, then use its corresponding column below; do not select the highest column for every indication. Values are total mg/day, divided as stated; at CrCl ≥60, retain the indication-specific frequency above. The label presents boundary ranges as 30–60 and 15–30; a clinician should apply the intended renal stratum."
+            "Estimate CrCl using the label’s Cockcroft–Gault approach. First choose the total daily dose allowed by the indication at normal renal function, then use its corresponding mapping below; do not select the highest normal-function dose for every indication. Values are total mg/day, divided as stated; at CrCl ≥60, retain the indication-specific frequency above. The label presents boundary ranges as 30–60 and 15–30; a clinician should apply the intended renal stratum."
           ],
           "sources": [
             "ir"
@@ -173,43 +168,88 @@ export const pregabalin = {
           "table": {
             "headers": [
               "CrCl (mL/min)",
-              "For normal 150/day",
-              "For normal 300/day",
-              "For normal 450/day",
-              "For normal 600/day",
+              "Normal → adjusted daily dose",
               "Division"
             ],
             "rows": [
               [
                 "≥60",
-                "150 mg",
-                "300 mg",
-                "450 mg",
-                "600 mg",
+                "150 mg/day → 150 mg/day",
+                "2 or 3 doses"
+              ],
+              [
+                "≥60",
+                "300 mg/day → 300 mg/day",
+                "2 or 3 doses"
+              ],
+              [
+                "≥60",
+                "450 mg/day → 450 mg/day",
+                "2 or 3 doses"
+              ],
+              [
+                "≥60",
+                "600 mg/day → 600 mg/day",
                 "2 or 3 doses"
               ],
               [
                 "30–60",
-                "75 mg",
-                "150 mg",
-                "225 mg",
-                "300 mg",
+                "150 mg/day → 75 mg/day",
+                "2 or 3 doses"
+              ],
+              [
+                "30–60",
+                "300 mg/day → 150 mg/day",
+                "2 or 3 doses"
+              ],
+              [
+                "30–60",
+                "450 mg/day → 225 mg/day",
+                "2 or 3 doses"
+              ],
+              [
+                "30–60",
+                "600 mg/day → 300 mg/day",
                 "2 or 3 doses"
               ],
               [
                 "15–30",
-                "25–50 mg",
-                "75 mg",
-                "100–150 mg",
-                "150 mg",
+                "150 mg/day → 25–50 mg/day",
+                "1 or 2 doses"
+              ],
+              [
+                "15–30",
+                "300 mg/day → 75 mg/day",
+                "1 or 2 doses"
+              ],
+              [
+                "15–30",
+                "450 mg/day → 100–150 mg/day",
+                "1 or 2 doses"
+              ],
+              [
+                "15–30",
+                "600 mg/day → 150 mg/day",
                 "1 or 2 doses"
               ],
               [
                 "<15",
-                "25 mg",
-                "25–50 mg",
-                "50–75 mg",
-                "75 mg",
+                "150 mg/day → 25 mg/day",
+                "Once daily"
+              ],
+              [
+                "<15",
+                "300 mg/day → 25–50 mg/day",
+                "Once daily"
+              ],
+              [
+                "<15",
+                "450 mg/day → 50–75 mg/day",
+                "Once daily"
+              ],
+              [
+                "<15",
+                "600 mg/day → 75 mg/day",
                 "Once daily"
               ]
             ]
@@ -261,7 +301,7 @@ export const pregabalin = {
         {
           "title": "CR renal dosing",
           "paragraphs": [
-            "Match the indication-appropriate normal-function daily dose to its column. For CrCl <30 or hemodialysis, CR is not recommended; use an appropriate immediate-release regimen instead. All CR values are once-daily totals after the evening meal."
+            "Match the indication-appropriate normal-function daily dose to its mapping. For CrCl <30 or hemodialysis, CR is not recommended; use an appropriate immediate-release regimen instead. All CR values are once-daily totals after the evening meal."
           ],
           "sources": [
             "cr"
@@ -269,32 +309,56 @@ export const pregabalin = {
           "table": {
             "headers": [
               "CrCl (mL/min)",
-              "Normal 165/day",
-              "Normal 330/day",
-              "Normal 495/day",
-              "Normal 660/day"
+              "Normal → adjusted daily dose"
             ],
             "rows": [
               [
                 "≥60",
-                "165 mg",
-                "330 mg",
-                "495 mg",
-                "660 mg"
+                "165 mg/day → 165 mg/day"
+              ],
+              [
+                "≥60",
+                "330 mg/day → 330 mg/day"
+              ],
+              [
+                "≥60",
+                "495 mg/day → 495 mg/day"
+              ],
+              [
+                "≥60",
+                "660 mg/day → 660 mg/day"
               ],
               [
                 "30–60",
-                "82.5 mg",
-                "165 mg",
-                "247.5 mg",
-                "330 mg"
+                "165 mg/day → 82.5 mg/day"
+              ],
+              [
+                "30–60",
+                "330 mg/day → 165 mg/day"
+              ],
+              [
+                "30–60",
+                "495 mg/day → 247.5 mg/day"
+              ],
+              [
+                "30–60",
+                "660 mg/day → 330 mg/day"
               ],
               [
                 "<30 or hemodialysis",
-                "Use IR",
-                "Use IR",
-                "Use IR",
-                "Use IR"
+                "165 mg/day → Use IR"
+              ],
+              [
+                "<30 or hemodialysis",
+                "330 mg/day → Use IR"
+              ],
+              [
+                "<30 or hemodialysis",
+                "495 mg/day → Use IR"
+              ],
+              [
+                "<30 or hemodialysis",
+                "660 mg/day → Use IR"
               ]
             ]
           }

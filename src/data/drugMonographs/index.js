@@ -109,6 +109,16 @@ import { methocarbamol } from "./methocarbamol.js";
 import { diltiazem } from "./diltiazem.js";
 import { thyroid } from "./thyroid.js";
 import { baclofen } from "./baclofen.js";
+import { naproxen } from "./naproxen.js";
+import { sumatriptan } from "./sumatriptan.js";
+import { prednisolone } from "./prednisolone.js";
+import { esomeprazole } from "./esomeprazole.js";
+import { mirtazapine } from "./mirtazapine.js";
+import { levetiracetam } from "./levetiracetam.js";
+import { norethindrone } from "./norethindrone.js";
+import { tadalafil } from "./tadalafil.js";
+import { nifedipine } from "./nifedipine.js";
+import { progesterone } from "./progesterone.js";
 
 export const reviewedDrugMonographs = {
   "atorvastatin": atorvastatin,
@@ -221,4 +231,14 @@ export const reviewedDrugMonographs = {
   "diltiazem": diltiazem,
   "thyroid": thyroid,
   "baclofen": baclofen,
+  "naproxen": naproxen,
+  "sumatriptan": sumatriptan,
+  "prednisolone": prednisolone,
+  "esomeprazole": esomeprazole,
+  "mirtazapine": mirtazapine,
+  "levetiracetam": levetiracetam,
+  "norethindrone": norethindrone,
+  "tadalafil": tadalafil,
+  "nifedipine": nifedipine,
+  "progesterone": progesterone,
 };
