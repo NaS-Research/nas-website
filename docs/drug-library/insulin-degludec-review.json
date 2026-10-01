@@ -1,0 +1,570 @@
+{
+  "slug": "insulin-degludec",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "CurrentpublicmanufacturerTresibaPIJuly2022matchingcurrentoriginalSPL; age1+T1/T2basalSC/U10010mLvialand3mLU100/200FlexTouch; fulladult/pediatricdose/missed/switch/organ/storage distinctions.",
+  "excludedRegimens": [
+    "Fixeddegludec/liraglutide ordegludec/aspartcombinationdose/indications",
+    "Pump/IVinsulin/DKA/rapidcorrectionuse; age<1 regimen",
+    "Universalrenal/hepaticdialysisdaydose/titrationincrement orrescuequantity",
+    "Otherdevices/manufacturers labels notinferred; noautomaticdailycapsfrompenmax"
+  ],
+  "sources": [
+    {
+      "id": "label",
+      "title": "Tresiba · Prescribing information and device instructions",
+      "publisher": "DailyMed / Novo Nordisk",
+      "note": "Current SPL version 14, effective 2022-07-01. Current available original SPL and clinical PI revision July 2022; manufacturer’s current public PDF checked and retains the same clinical revision.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=456c5e87-3dfd-46fa-8ac0-c6128d4c97c6"
+    },
+    {
+      "id": "manufacturer",
+      "title": "Tresiba · Current manufacturer prescribing information",
+      "publisher": "Novo Nordisk",
+      "url": "https://www.novo-pi.com/tresiba.pdf",
+      "note": "Public PDF checked October 1, 2026; PI revised July 2022. Product dosing/storage verified against full PI and device instructions, not a claimed 2026 revision."
+    }
+  ],
+  "labelMetadata": [
+    {
+      "sourceId": "label",
+      "product": "tresiba",
+      "setid": "456c5e87-3dfd-46fa-8ac0-c6128d4c97c6",
+      "version": "14",
+      "effectiveTime": "20220701",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/456c5e87-3dfd-46fa-8ac0-c6128d4c97c6.xml",
+      "xmlSha256": "169e3edfd6907dbd45085fadd96c466a38609531fcb133f09d68dc18a24eb68d",
+      "marketingAuthorization": [
+        {
+          "category": "BLA",
+          "application": "BLA203314"
+        },
+        {
+          "category": "BLA",
+          "application": "BLA203314"
+        },
+        {
+          "category": "BLA",
+          "application": "BLA203314"
+        }
+      ],
+      "clinicalVersion": "TresibaJuly2022manufacturerPDFcurrentmatched"
+    }
+  ],
+  "evidence": [
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/tresiba.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/insulin-degludec/tresiba.xml",
+      "sha256": "169e3edfd6907dbd45085fadd96c466a38609531fcb133f09d68dc18a24eb68d",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/456c5e87-3dfd-46fa-8ac0-c6128d4c97c6.xml"
+    },
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/tresiba-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/insulin-degludec/tresiba-sections.json",
+      "sha256": "ad162783ba9985218772dbda453b36610ce7e0522e6e0b93beb7d9f10cc3c13c",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/456c5e87-3dfd-46fa-8ac0-c6128d4c97c6.xml"
+    },
+    {
+      "sourceId": "manufacturer",
+      "localEvidence": "/tmp/nas-drug-sources/tresiba-current-pi.pdf",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/insulin-degludec/tresiba-current-pi.pdf",
+      "sha256": "2bba27745c8b61cbc15b5d92992d591c0e24fcf11a6457157b8d89e6ed63ffff",
+      "url": "https://www.novo-pi.com/tresiba.pdf"
+    },
+    {
+      "sourceId": "manufacturer",
+      "localEvidence": "/tmp/nas-drug-sources/tresiba-current-pi.txt",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/insulin-degludec/tresiba-current-pi.txt",
+      "sha256": "bec922479d30539d75b81b9f2da7839107a74270cdafde8d052c4fc7d0c2d2e8",
+      "url": "https://www.novo-pi.com/tresiba.pdf"
+    }
+  ],
+  "sourceEvidenceRoot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/insulin-degludec",
+  "sourceManifest": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/insulin-degludec/source-manifest.json",
+  "assertionToSourceMap": [
+    {
+      "section": "indications",
+      "card": "Labeled use",
+      "assertions": {
+        "paragraphs": [
+          "Tresiba improves glycemic control in patients age 1 or older with diabetes mellitus, including type 1 and type 2. Pediatric type 2 support includes extrapolation from adult evidence; the pediatric trial population had type 1 diabetes. In type 1 diabetes use concomitant short-acting insulin."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§1/2.2/8.4 adult andage1+diabetes;T1shortacting;T2pediatricextrapolation"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "indications",
+      "card": "Scope and limitations",
+      "assertions": {
+        "paragraphs": [
+          "It is not recommended for diabetic ketoacidosis. It is a subcutaneous basal product, not an IV insulin, insulin-pump infusion or rapid meal/correction dose. Fixed degludec/liraglutide or degludec/aspart combinations need separate doses and indications."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§1DKAnotrecommended;§2.1 SCnotIVpump/nodilutionmix;excludedcombinations"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "dosage",
+      "card": "Labeled initiation and switching",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Situation",
+            "Starting Tresiba dose",
+            "Clinical distinction"
+          ],
+          "rows": [
+            [
+              "Insulin-naive type 1 diabetes",
+              "About one-third to one-half of the total daily insulin dose",
+              "Label initial total insulin estimate: 0.2–0.4 units/kg/day; remainder short-acting with meals"
+            ],
+            [
+              "Insulin-naive type 2 diabetes",
+              "10 units once daily",
+              "Titrate to individual glucose goal"
+            ],
+            [
+              "Adults switching from long/intermediate-acting insulin",
+              "Same units as total daily long/intermediate-acting insulin dose",
+              "Supervised switch; further adjustments may be needed"
+            ],
+            [
+              "Children age 1 or older switching from basal insulin",
+              "80% of total daily long/intermediate-acting insulin units",
+              "Reduction minimizes hypoglycemia; use individualized follow-up"
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Full§2.3/2.4 initialT1one-third–halftotal0.2–0.4unitskgday vsT2tenunits;adultsamebasalunits vschild80%"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "dosage",
+      "card": "Timing, titration and missed doses",
+      "assertions": {
+        "paragraphs": [
+          "Adults inject once daily at any time of day; pediatric patients inject at the same time every day. The label recommends 3–4 days between dose increases. Adults who miss a dose inject during waking hours when discovered, keeping at least 8 hours between consecutive doses. Children who miss a dose contact the clinician and check glucose more often until the next scheduled dose; do not transfer adult flexibility to children."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Full§2.2 adultanytime/childsametime,titration3–4days,adultmissedwaking8hminimum/childcallmonitor"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "dosage",
+      "card": "Concentration and device",
+      "assertions": {
+        "paragraphs": [
+          "U-100 FlexTouch dials 1-unit increments up to 80 units per injection; U-200 dials 2-unit increments up to 160. The displayed units are the delivered units: no concentration conversion. U-200 is not a vial. For pediatric doses below 5 units/day, use the U-100 vial. Use an appropriate U-100 insulin syringe with the U-100 vial; never draw from any pen into a syringe."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Full§2.1/2.2/3/16 U100oneunit80/U200twounits160,noconvert/pensyringeprohibition,pediatric<5U100vial;U100vialIFUproperU100syringe"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "dosage",
+      "card": "Injection and organ-function safeguards",
+      "assertions": {
+        "paragraphs": [
+          "Inject subcutaneously into abdomen, thigh or upper arm; rotate sites and avoid lipodystrophy/amyloid lumps. Do not dilute, mix, give IV or use in a pump. Renal/hepatic impairment requires intensified glucose monitoring and individualized adjustment, without a fixed numerical adjustment table. Meal/activity changes and illness can change insulin needs."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Full§2.1/2.2 injectionregions/rotate/amyloidavoid,noIVpumpmix,dietactivityillnessorgandoseindividual"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Hypoglycemia may cause seizures, unconsciousness or death and impair driving. Symptoms can be blunted by recurrent episodes, neuropathy or antiadrenergic medicines. Increase monitoring during dose, diet, exercise, organ-function or medicine changes.",
+          "Never share pens, needles or syringes, even with a new needle. Check the insulin name and concentration before every dose; withdrawing pen insulin into a syringe can cause severe overdose. Switching from repeatedly injected abnormal tissue to normal tissue can precipitate hypoglycemia and requires closer monitoring.",
+          "Severe generalized allergy/anaphylaxis requires stopping and emergency treatment. Insulin can cause life-threatening hypokalemia; monitor potassium in susceptible patients. Combining insulin with TZDs can cause fluid retention or worsen heart failure; reassess the TZD if heart failure develops."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Full§5.1–5.7 hypoglycemialongaction,site-switchhypo,sharingbloodbornepathogens,labelchecks/withdrawerror,anaphylaxis,K/TZD"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Do not administer during an episode of hypoglycemia. Hypersensitivity to insulin degludec or an excipient is also contraindicated. A current low-glucose episode requires treatment and an individualized insulin plan; do not simply omit basal insulin indefinitely."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§4 exacthypoglycemia/hypersensitivity;do notindefinitelyomitbasalclinicalcounseling"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "The selected U.S. Tresiba label has no boxed warning. Severe/prolonged hypoglycemia, medication errors and potassium or allergic complications remain major risks."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "FullcurrentPI absenceBox andseriouswarnings"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Hypoglycemia is the principal adverse reaction. Other reported reactions include allergy, injection-site reactions, lipodystrophy, localized cutaneous amyloidosis, itching, rash, edema and weight gain. Trial definitions and populations affect reported frequencies; do not equate one trial’s rate with every patient’s risk."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Full§6 commonreactioncategories,§6.3 cutaneousamyloidosis; nottrialfrequencygeneralization"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "interactions",
+      "card": "Increased or decreased glucose-lowering effect",
+      "assertions": {
+        "paragraphs": [
+          "Other diabetes medicines, ACE inhibitors/ARBs, salicylates, some antibiotics and MAO inhibitors may increase hypoglycemia risk. Corticosteroids, atypical antipsychotics, thyroid hormones, sympathomimetics, some diuretics or reproductive hormones may reduce glucose-lowering effect. Insulin adjustment and extra glucose checks may be needed; no fixed adjustment percentage is supplied."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Full§7 tableeffectincrease/decrease exactexamples/interventions"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "interactions",
+      "card": "Variable effects and masked symptoms",
+      "assertions": {
+        "paragraphs": [
+          "Alcohol, beta-blockers, clonidine and lithium can increase or decrease insulin’s effect. Pentamidine may produce hypoglycemia followed by hyperglycemia. Beta-blockers, clonidine, guanethidine and reserpine may blunt warning symptoms; increase glucose monitoring."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Full§7 variablealcoholbetablockerclonidinelithium/pentamidine andmaskedantiadrenergicwarning"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "interactions",
+      "card": "TZDs and regimen changes",
+      "assertions": {
+        "paragraphs": [
+          "Pioglitazone and other PPAR-gamma agonists can add fluid retention/heart-failure risk with insulin. Monitor weight, edema and dyspnea. Changing basal insulin, concentration, manufacturer, site or delivery device needs supervised dose review and extra glucose checks."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§5.2/5.7/§7 TZDheartfailure andinsulinregimenswitchmonitor"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "The label’s trial of 185 pregnant women with type 1 diabetes found no significant pregnancy or newborn outcome differences versus detemir, but small sample size and poor glucose control limit conclusions. Poorly controlled diabetes itself poses maternal/fetal risk; manage with the diabetes/pregnancy team. Human milk/infant/milk-production data for degludec are absent; balance maternal need and breastfeeding benefits with close glucose/dose review."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Full§8.1 trial185pregnantT1,limitations/poorcontrol;§8.2 humanmilkdataabsence andmaternalbenefitrisk"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": {
+        "paragraphs": [
+          "Safety/effectiveness are established from age 1, not below 1. Children have a fixed daily timing, reduced switch dose and separate missed-dose instructions; use the U-100 vial below 5 units/day. Older patients may be more sensitive and have harder-to-recognize hypoglycemia; initiation, increments and maintenance should be conservative."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§8.4/8.5 pediatricage1/unestablished<1 andconservativeelderly;§2pedsmissed<5vial"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "populations",
+      "card": "Kidney and liver impairment",
+      "assertions": {
+        "paragraphs": [
+          "Studies found no clinically important renal PK difference and no hepatic PK difference across studied impairment categories. Nevertheless, intensify glucose monitoring and adjust individually because insulin needs and hypoglycemia susceptibility change. Hemodialysis did not affect degludec clearance in the small studied ESRD group; this is not a dialysis-day dosing algorithm."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Full§8.6/8.7 and§12.3 noimportantPKdifferences/dialysisclearancebutindividualglucosemonitoradjust"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "assertions": {
+        "paragraphs": [
+          "Insulin promotes peripheral glucose uptake and inhibits hepatic glucose production, lipolysis and proteolysis. Degludec forms multihexamers in subcutaneous tissue, slowing absorption; albumin binding contributes to prolonged action."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§12.1 multihexamerdepot/albumin andinsulinmetaboliceffects"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacodynamics and kinetics",
+      "assertions": {
+        "paragraphs": [
+          "A steady-state clamp study found glucose-lowering action lasting at least 42 hours after the last of 8 daily 0.4 units/kg doses; this does not mean every dose guarantees 42-hour control. Steady state is reached in 3–4 days, mean steady-state half-life about 25 hours and protein binding above 99%. U-100/U-200 exposure and glucose effect are comparable at the same units/kg. Insulin-like degradation forms inactive metabolites."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Full§12.2 42hafter8dosesclamp0.4unitskg vsnondailyinference;§12.3 steady3–4dayshalf25protein>99sameunitkgU100/200inactive metabolites"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": {
+        "paragraphs": [
+          "Use the prescribed glucose-monitoring plan and review fasting/overnight values, hypoglycemia, glycemic-control markers and injection sites. Increase checks during initiation, titration, switching, illness or organ/drug changes. Check potassium when risk factors warrant and monitor edema/heart-failure symptoms with TZDs."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§2.2/5/17 glucose/dose/site/K/TZDmonitor;HbA1candsickdayclinical synthesis"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "assertions": {
+        "paragraphs": [
+          "Verify label, concentration and displayed units before every dose. Never share or withdraw pen insulin. Rotate normal tissue sites, use a fresh needle, remove it after injection and dispose of sharps safely. Inspect for clear/colorless solution. Teach recognition/rescue of low glucose and protect driving safety; adult and pediatric missed-dose plans differ."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§17/PatientInfo/U100U200fullIFU labelcheckfreshneedle/removesharpsclearcolourlessthyporescue/missedplans"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "practice",
+      "card": "Overdose and severe hypoglycemia",
+      "assertions": {
+        "paragraphs": [
+          "Excess insulin can cause prolonged hypoglycemia and hypokalemia. Mild episodes are generally treated with oral glucose according to the patient’s plan; severe episodes with seizure/unconsciousness require emergency care and glucagon or IV glucose as appropriate. Continued observation/carbohydrate may be needed after initial recovery. No universal rescue quantity or observation interval is invented."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Full§10 mildoralglucose,severeglucagonIVglucoseprolonged/continuedcarb observation,Kcorrect;noinvented15/15or10hprotocol"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "product",
+      "card": "Representative pen · Tresiba U-200",
+      "assertions": {
+        "facts": [
+          [
+            "Appearance",
+            "Clear, colorless solution · FlexTouch pen"
+          ],
+          [
+            "Concentration / contents",
+            "200 units/mL · 3 mL · 600 units"
+          ],
+          [
+            "Delivery",
+            "2-unit increments · up to 160 units/injection"
+          ],
+          [
+            "Example package",
+            "NDC 0169-2550-13 · 3 pens"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§16.1 exactU2003mL6002increment160NDC3pen"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "U-100 is supplied as 3 mL FlexTouch pens (300 units; up to 80 per injection) and a 10 mL multidose vial (1000 units). U-200 is a 3 mL FlexTouch pen (600 units; up to 160 per injection). Pen maxima are per injection, not patient daily-dose ceilings. Fixed combinations and other devices require separate verification."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§3/16.1 U1003mL30080 and10mL1000vial,U2003mL600160;deviceperinjectionnotdailycap"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Unused refrigerated product: 2–8°C until expiry; do not freeze or place against the cooling element. Unopened at room temperature up to 30°C: 56 days. In-use vial or either FlexTouch: 56 days at up to 30°C or refrigerated 2–8°C. Discard after that window even if insulin remains. Protect from heat/light, keep vials in the carton and pens capped without a needle; do not use frozen product."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Full§16.2 unopenedfridgeuntil expiry/unopenedroom56days,inuseall3roomorfridge56days;IFUscappednoneedle/heatlightfrozenexclude"
+      },
+      "review": "Full supporting sections read; formulation/label versus general nutrition/evidence distinctions preserved; urgent clinical assessment/monitoring synthesis identified."
+    }
+  ],
+  "materialErrors": [],
+  "unresolvedMaterialGaps": [],
+  "sourceDiscrepancies": [
+    {
+      "issue": "CurrentNovoPIandoriginalSPLretainJuly2022revision.",
+      "resolution": "Datesexplicit; fullmanufacturerPDFcheckedcurrentratherthanassumingnewrevision oroldpagecandidate.",
+      "resolved": true
+    },
+    {
+      "issue": "Adultflexibletiming/miss8hminimum vs childfixedtiming/callprovider and80%switch.",
+      "resolution": "Separateage-specificplansand<5unitsU100vialretained.",
+      "resolved": true
+    },
+    {
+      "issue": "Long42hclampaction vsonce-dailytreatment; U200concentration vsactualpenunits/devicecaps.",
+      "resolution": "No doseconversion,nopensyringewithdrawal,nodailycapsandnoalternatedaysinference.",
+      "resolved": true
+    }
+  ],
+  "limitations": [
+    "Public primary labels and accessible public NIHprofessionalreference only; no paywalled original-studies access claimed.",
+    "Selectedproduct identifiers/status from actual SPL authorization metadata; no availability inferred from candidates alone.",
+    "Individual clinical dose, response, monitoring and route plan needed within stated scope.",
+    "Parent retains build/render/deployment QA."
+  ],
+  "reviewedSourceSections": [
+    "FullcurrentTresibaPI§§1–8/10–12/16–17 andvial/U100U200IFU supportingallclaims;currentmanufacturerPDF checkedsameJuly2022dose/storage."
+  ],
+  "verification": {
+    "schemaErrors": [],
+    "monographSha256": "351fd6f57bd5081fad9c4bc8882373372ed854c03f4fdffa998892e65ccc105d",
+    "sectionIds": [
+      "indications",
+      "dosage",
+      "safety",
+      "interactions",
+      "populations",
+      "pharmacology",
+      "practice",
+      "product"
+    ],
+    "heroFacts": 3,
+    "safetyCardOrder": [
+      "Warnings and precautions",
+      "Contraindications",
+      "Boxed warning status",
+      "Adverse reactions"
+    ],
+    "productCardOrder": [
+      "Representative pen · Tresiba U-200",
+      "Dosage forms and strengths",
+      "Storage and handling"
+    ],
+    "renderedPageQA": "Pending parent batch QA"
+  }
+}

@@ -119,6 +119,16 @@ import { norethindrone } from "./norethindrone.js";
 import { tadalafil } from "./tadalafil.js";
 import { nifedipine } from "./nifedipine.js";
 import { progesterone } from "./progesterone.js";
+import { insulinDegludec } from "./insulin-degludec.js";
+import { cyanocobalamin } from "./cyanocobalamin.js";
+import { hydralazine } from "./hydralazine.js";
+import { adalimumab } from "./adalimumab.js";
+import { azelastine } from "./azelastine.js";
+import { sitagliptin } from "./sitagliptin.js";
+import { glimepiride } from "./glimepiride.js";
+import { chlorthalidone } from "./chlorthalidone.js";
+import { oxybutynin } from "./oxybutynin.js";
+import { pioglitazone } from "./pioglitazone.js";
 
 export const reviewedDrugMonographs = {
   "atorvastatin": atorvastatin,
@@ -241,4 +251,14 @@ export const reviewedDrugMonographs = {
   "tadalafil": tadalafil,
   "nifedipine": nifedipine,
   "progesterone": progesterone,
+  "insulin-degludec": insulinDegludec,
+  "cyanocobalamin": cyanocobalamin,
+  "hydralazine": hydralazine,
+  "adalimumab": adalimumab,
+  "azelastine": azelastine,
+  "sitagliptin": sitagliptin,
+  "glimepiride": glimepiride,
+  "chlorthalidone": chlorthalidone,
+  "oxybutynin": oxybutynin,
+  "pioglitazone": pioglitazone,
 };

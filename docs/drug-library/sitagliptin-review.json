@@ -1,0 +1,464 @@
+{
+  "slug": "sitagliptin",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "An oral glucose-lowering medicine for adults with type 2 diabetes. Renal function determines the tablet dose; it is not a treatment for type 1 diabetes and has no established pediatric efficacy.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Januvia · Merck full prescribing information",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical document2307r029 (July 2023); current SPL v71 effective November 14,2024, API publication November 17,2025. Later SPL publication is distinguished from clinical revision. Checked October 1,2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f85a48d0-0407-4c50-b0fa-7673a160bf01"
+    }
+  ],
+  "sourceEvidence": {
+    "label": {
+      "splVersion": "71",
+      "effectiveTime": "20241114",
+      "apiPublishedDate": "Nov 17, 2025",
+      "localEvidence": "/tmp/nas-drug-sources/januvia.xml",
+      "xmlSha256": "fc8b2d3ff3a71c847a8aba2b25a6bd475d9df86e29ef92e14d3010c945a459e7",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/f85a48d0-0407-4c50-b0fa-7673a160bf01.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f85a48d0-0407-4c50-b0fa-7673a160bf01",
+      "revision": "Clinical document2307r029 (July 2023); current SPL v71 effective November 14,2024, API publication November 17,2025. Later SPL publication is distinguished from clinical revision. Checked October 1,2026.",
+      "checked": "2026-10-01",
+      "access": "Full supporting public primary sections read; no paywall access"
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Labeled use",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "1;8.4"
+        ]
+      },
+      "claims": [
+        "Januvia improves glycemic control in adults with type 2 diabetes as an adjunct to diet/exercise. The label studies include use alone or with other glucose-lowering medicines; medication selection must account for comorbidity and the full regimen."
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Limitations",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "1;8.4"
+        ]
+      },
+      "claims": [
+        "Do not use for type 1 diabetes. Patients with a pancreatitis history were not studied; their risk with sitagliptin is unknown. Pediatric safety/effectiveness have not been established. No weight-loss indication or cardiovascular/renal event-reduction claim is inferred from glycemic approval."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Adult renal-based regimen",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1–2.2;5.4;7.1;Medication Guide missed/illness"
+        ]
+      },
+      "claims": [
+        [
+          "eGFR≥ 45 mL/min/1.73 m²",
+          "100 mg orally once daily; no adjustment for 45 to< 90."
+        ],
+        [
+          "eGFR≥ 30 to< 45",
+          "50 mg once daily."
+        ],
+        [
+          "eGFR< 30",
+          "25 mg once daily."
+        ],
+        [
+          "ESRD with hemodialysis or peritoneal dialysis",
+          "25 mg once daily; may be given without regard to dialysis timing."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and missed doses",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1–2.2;5.4;7.1;Medication Guide missed/illness"
+        ]
+      },
+      "claims": [
+        "Take with or without food. If a dose is missed, take it when remembered; if not remembered until the next dose is due, skip it and resume the usual schedule. Do not take two doses together. Use the prescribed lower-strength tablet for renal impairment; do not extrapolate single-agent renal rules to a fixed combination containing metformin or another ingredient."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Combination and dose review",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1–2.2;5.4;7.1;Medication Guide missed/illness"
+        ]
+      },
+      "claims": [
+        "Insulin or sulfonylurea may need reduction when sitagliptin is added to limit hypoglycemia. Do not automatically reduce sitagliptin below the renal-appropriate dose for this purpose. Kidney-function decline or an acute illness warrants review of the whole diabetes regimen; no universal illness or insulin adjustment is supplied."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "4;5.1–5.7;6.1–6.2;10"
+        ]
+      },
+      "claims": [
+        "Acute pancreatitis, including hemorrhagic/necrotizing and fatal cases, has been reported. Stop promptly and assess persistent severe abdominal pain, with or without vomiting or radiation to the back. Prior-pancreatitis risk is unknown.",
+        "Heart-failure association was observed with two other DPP-4 inhibitors. Consider benefits/risks with prior HF or renal impairment, monitor symptoms and consider stopping if HF develops; the warning does not establish an identical sitagliptin-specific trial risk.",
+        "Worsening renal function/acute renal failure, sometimes requiring dialysis, has been reported; some patients received inappropriate doses. Assess kidneys before and periodically during therapy and use the correct eGFR dose.",
+        "Hypoglycemia risk rises with insulin or insulin secretagogues; their dose may need lowering and the patient needs a recognition/treatment plan.",
+        "Anaphylaxis, angioedema and severe exfoliative skin reactions can occur after the first dose or later. Stop for suspected hypersensitivity, assess and provide alternative diabetes treatment. Use caution after angioedema with another DPP-4 inhibitor.",
+        "Severe disabling joint pain may begin within days or years and recur on class rechallenge; consider drug causation and discontinue when appropriate.",
+        "Bullous pemphigoid can require hospitalization. New blisters/erosions need prompt assessment; stop if suspected and consider dermatology referral."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "4;5.1–5.7;6.1–6.2;10"
+        ]
+      },
+      "claims": [
+        "History of a serious hypersensitivity reaction to sitagliptin, such as anaphylaxis or angioedema. Renal impairment is managed by the labeled dose and is not itself a blanket contraindication."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "4;5.1–5.7;6.1–6.2;10"
+        ]
+      },
+      "claims": [
+        "The selected Januvia label has no boxed warning. It includes serious pancreatic, cardiac, renal, hypersensitivity and skin warnings; fixed combinations have additional ingredients and separate labeling."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "4;5.1–5.7;6.1–6.2;10"
+        ]
+      },
+      "claims": [
+        "Common trial reports include nasopharyngitis, upper-respiratory infection and headache; GI effects and combination-related hypoglycemia can occur. Postmarketing reports include serious allergy/skin disease, pancreatitis, renal injury/tubulointerstitial nephritis, arthralgia and hepatic-enzyme elevation, among others; reported frequency/cause cannot be reliably determined. For overdose obtain medical/Poison Help advice and supportive monitoring, including ECG when appropriate. Hemodialysis removed only about 13.5% of a dose over 3–4 hours in studies; peritoneal dialyzability is unknown."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Insulin and secretagogues",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "7.1;12.3 Tables4–5"
+        ]
+      },
+      "claims": [
+        "Coadministration with insulin or a sulfonylurea can increase hypoglycemia; the insulin/secretagogue dose may need lowering. Monitor glucose and symptoms during changes rather than assuming the single-agent hypoglycemia risk applies to combinations."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Pharmacokinetic evidence",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "7.1;12.3 Tables4–5"
+        ]
+      },
+      "claims": [
+        "Selected label studies found no clinically meaningful effect on metformin, glyburide, simvastatin, rosiglitazone, digoxin, warfarin or the studied contraceptive. Digoxin exposure increased modestly in its study but was classified as not clinically meaningful. Sitagliptin has limited metabolism and low CYP inhibition/induction propensity; it is a P-gp/hOAT-3 substrate. These findings do not prove absence of every interaction, particularly during kidney-function changes or polypharmacy."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal, hepatic and older adults",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8.1–8.6;12.3 special populations"
+        ]
+      },
+      "claims": [
+        "Renal impairment raises exposure; use 50 mg daily at eGFR 30–< 45 and 25 mg below 30/ESRD. Older adults need more frequent renal assessment, although no age-only adjustment is established. Moderate hepatic impairment (Child-Pugh 7–9) caused exposure changes considered not clinically meaningful; severe hepatic impairment (score> 9) lacks clinical experience. Do not claim universal hepatic safety."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8.1–8.6;12.3 special populations"
+        ]
+      },
+      "claims": [
+        "Pregnancy data are insufficient to define major-birth-defect/miscarriage risk; uncontrolled diabetes itself harms maternal/fetal outcomes. Arrange an individualized pregnancy glycemic plan rather than abruptly abandoning treatment. Human milk transfer, infant effects and milk-production data are unavailable; rat milk transfer suggests possible human transfer. Weigh breastfeeding benefits, maternal need and potential infant effects."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric use",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8.1–8.6;12.3 special populations"
+        ]
+      },
+      "claims": [
+        "Pediatric safety/effectiveness are not established. Studies in age 10–17 did not show a statistically significant glycemic benefit in the prespecified analyses; trial exposure does not supply an approved pediatric dose."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "12.1–12.3"
+        ]
+      },
+      "claims": [
+        "Sitagliptin slows DPP-4 inactivation of endogenous GLP-1/GIP, prolonging glucose-dependent insulin release and reducing glucagon/hepatic glucose production. This is distinct from delivering a GLP-1 receptor agonist."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "12.1–12.3"
+        ]
+      },
+      "claims": [
+        [
+          "Absorption",
+          "Peak 1–4 hours after 100 mg oral dose; absolute bioavailability about 87%. Food has no relevant PK effect."
+        ],
+        [
+          "Binding / half-life",
+          "Approximately 38% protein-bound; apparent terminal half-life about 12.4 hours."
+        ],
+        [
+          "Metabolism",
+          "Minor pathway; principally CYP3A4 with CYP2C8 contribution."
+        ],
+        [
+          "Elimination",
+          "Approximately 79% of dose excreted unchanged in urine; active tubular secretion contributes."
+        ],
+        [
+          "Impairment",
+          "Exposure rises about 2-fold with eGFR 30–< 45 and 4-fold with severe impairment/ESRD in studied groups; use the labeled dose table, not an exposure-based homemade formula."
+        ]
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.2;5;8.5;17;Medication Guide"
+        ]
+      },
+      "claims": [
+        "Assess glucose/HbA 1 c response and adherence with the diabetes team, renal function before treatment and periodically afterward (more frequently in older adults), hypoglycemia with insulin/secretagogues, and pancreatic/HF/allergy/skin/joint symptoms. Kidney-function changes or fever, infection, trauma or surgery may alter medication needs. No universal HbA 1 c target, testing interval or disease-preferred regimen is supplied by this product label."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.2;5;8.5;17;Medication Guide"
+        ]
+      },
+      "claims": [
+        "Continue prescribed diet/exercise and glucose checks. Confirm 100/50/25 mg according to kidney function and do not double a missed dose. Learn the hypoglycemia plan if also taking insulin or a secretagogue. Promptly report severe persistent abdominal pain, swelling/breathlessness/rapid weight gain, allergic swelling/rash, blisters or disabling joint pain. Tell the team about pregnancy, breastfeeding and acute stress/illness; read the Medication Guide."
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product · Januvia 100 mg",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;11;16;SPL NDA/pack"
+        ]
+      },
+      "claims": [
+        [
+          "Ingredient / route",
+          "Sitagliptin 100 mg, supplied as sitagliptin phosphate monohydrate · oral."
+        ],
+        [
+          "Appearance / imprint",
+          "Beige round film-coated tablet; 277 on one side."
+        ],
+        [
+          "Labeler / example NDC",
+          "Merck Sharp & Dohme · 0006-0277-31,30-tablet bottle."
+        ],
+        [
+          "U.S. status",
+          "Prescription NDA 021995 DPP-4 inhibitor; no DEA schedule."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;11;16;SPL NDA/pack"
+        ]
+      },
+      "claims": [
+        [
+          "100 mg",
+          "Beige round tablet,277."
+        ],
+        [
+          "50 mg",
+          "Light beige round tablet,112; example 30-count NDC 0006-0112-31."
+        ],
+        [
+          "25 mg",
+          "Pink round tablet,221; example 30-count NDC 0006-0221-31."
+        ],
+        [
+          "Scope",
+          "Other generic or fixed-combination products may differ. No injectable sitagliptin, XR single-agent regimen or exhaustive manufacturer availability claim is inferred."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;11;16;SPL NDA/pack"
+        ]
+      },
+      "claims": [
+        "Store selected Januvia tablets at 20–25°C, excursions 15–30°C. Keep in the dispensed labeled container and away from children. Verify exact ingredient/strength on refill; a combination medicine is not automatically equivalent to this single-agent regimen."
+      ]
+    },
+    {
+      "section": "hero/essential",
+      "card": "Scope and essential safety",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "1;8.4",
+        "4;5.1–5.7;6.1–6.2;10",
+        "3;11;16;SPL NDA/pack"
+      ],
+      "claims": [
+        "An oral glucose-lowering medicine for adults with type 2 diabetes. Renal function determines the tablet dose; it is not a treatment for type 1 diabetes and has no established pediatric efficacy.",
+        "Use lower doses below eGFR 45 mL/min/1.73 m² and reassess renal function periodically. Persistent severe abdominal pain, serious allergy, new heart-failure symptoms or blistering skin require prompt evaluation; insulin/sulfonylurea combinations increase hypoglycemia risk.",
+        [
+          "Therapeutic class",
+          "Dipeptidyl peptidase-4 (DPP-4) inhibitor"
+        ],
+        [
+          "Representative formulation",
+          "Januvia 100 mg oral film-coated tablet"
+        ],
+        [
+          "Reference focus",
+          "U.S. adult type 2 diabetes and eGFR-based dosing"
+        ]
+      ]
+    }
+  ],
+  "exclusions": [
+    "Other manufacturers/combinations, non-U.S. oral/other products and unverified preferred-treatment or emergency algorithms; no stock inference."
+  ],
+  "gaps": [
+    {
+      "material": false,
+      "topic": "Severe hepatic/pediatric efficacy and guideline selection",
+      "resolution": "SeverehepaticChildPugh>9data unavailable and pediatric efficacy unestablished explicitly stated. No ADApreferredclass/cardiorenalbenefit, universalHbA1ctarget/labinterval or combinationdose inferred. Productlabel dosing/safety complete within exact adult singleagent scope."
+    }
+  ],
+  "materialErrors": [],
+  "validation": {
+    "schema": "Passed validateMonograph with zero errors, 2026-10-01.",
+    "renderedPage": "Pending parent integration QA"
+  },
+  "monographSha256": "32cad93b0d72a26c89d4ba09f7cde85ca4a106d99c26a9d15ba19b7647e6628b",
+  "sourceInterpretationNotes": [
+    "Clinical revision/major-change dates are separate from SPL effectiveTime, version and API publication; no present-stock inference.",
+    "Renaldosebreaks≥45/≥30–<45/<30;ESRDHD/PD25mg independenttiming retained. Heartfailurewarning derives twootherDPP4members, not a fabricated Januvia-trialrisk. No blanketrenalcontra or falsepediatricapproval."
+  ]
+}
