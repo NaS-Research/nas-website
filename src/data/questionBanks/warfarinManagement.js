@@ -32,4 +32,62 @@ const concepts = [
 
 const dimensions = [["principle", "Which principle best characterizes"], ["action", "Which clinical action best applies to"], ["assessment", "Which assessment is most appropriate for"], ["hazard", "Which reasoning hazard is most important to prevent with"]];
 function distractors(index, field) { return [5, 11, 17].map((offset) => concepts[(index + offset) % concepts.length][field]); }
-export const warfarinManagementQuestionBank = concepts.flatMap((concept, conceptIndex) => dimensions.map(([field, prefix], dimensionIndex) => ({ id: `warfarin-management-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${prefix} ${concept.name}?`, choices: [concept[field], ...distractors(conceptIndex, field)], answer: 0, rationale: concept.why, reviewHref: `#${concept.lesson}` })));
+const generatedWarfarinManagementQuestionBank = concepts.flatMap((concept, conceptIndex) => dimensions.map(([field, prefix], dimensionIndex) => ({ id: `warfarin-management-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${prefix} ${concept.name}?`, choices: [concept[field], ...distractors(conceptIndex, field)], answer: 0, rationale: concept.why, reviewHref: `#${concept.lesson}` })));
+
+const feedingQuestionRepairs = {
+  "warfarin-management-053": {
+    "choices": [
+      "Consistent vitamin K intake is safer than eliminating nutritious vitamin K-containing foods.",
+      "A stable INR requires complete avoidance of all vitamin K-containing foods.",
+      "A low-vitamin-K enteral formula rules out any interaction with warfarin.",
+      "Water flushing alone prevents warfarin from interacting with enteral feeding."
+    ],
+    "rationale": "Maintain a consistent vitamin K pattern and review nutrition products for vitamin K content. Enteral products may also bind warfarin; formula vitamin K content alone does not explain every low INR."
+  },
+  "warfarin-management-054": {
+    "choices": [
+      "Teach patients to maintain a stable pattern and report major dietary, supplement, or nutrition-support changes.",
+      "Eliminate leafy vegetables rather than establish a consistent intake.",
+      "Keep the same INR follow-up plan after major nutrition changes because the prior INR was stable.",
+      "Use the vitamin K content alone to decide whether warfarin can be given during continuous feeds."
+    ],
+    "rationale": "Consistency and communication allow the anticoagulation plan to account for nutrition changes. Check supplements and formula vitamin K content, and coordinate administration when enteral feeding can reduce warfarin effect."
+  },
+  "warfarin-management-055": {
+    "choices": [
+      "Review greens, oils, nutrition shakes, enteral feeds, supplements, appetite, weight loss, diarrhea, alcohol, and INR trend.",
+      "Review only green vegetables and assume nutrition shakes, feeds and supplements have no vitamin K.",
+      "Review formula vitamin K content but exclude the actual warfarin administration and feeding schedule.",
+      "Review only the prescribed dose and prior INR, without asking what nutrition products changed."
+    ],
+    "rationale": "Review the overall intake and INR trend, including nutrition products and supplements. Enteral formulas vary in vitamin K content and can bind warfarin, so assess both vitamin K exposure and actual drug-feed delivery. Changes in intake warrant communication and INR reassessment."
+  },
+  "warfarin-management-056": {
+    "choices": [
+      "Telling patients to avoid all green vegetables can worsen nutrition and make future reintroduction destabilizing.",
+      "Establishing a consistent vitamin K pattern with the anticoagulation service.",
+      "Checking nutritional products and supplements for vitamin K before changing intake.",
+      "Reviewing the INR and administration plan when an enteral formula or feeding schedule changes."
+    ],
+    "rationale": "The hazard is imposing total vitamin K avoidance instead of consistency. The other choices support a coordinated intake, administration and monitoring plan."
+  }
+};
+const enteralFeedingQuestion = {
+  "id": "warfarin-management-enteral-feeding",
+  "question": "INR falls after continuous enteral feeding begins, even though the formula contains little vitamin K. What should be assessed before repeated warfarin escalation?",
+  "choices": [
+    "Escalate warfarin based only on the vitamin K amount, leaving drug-feed timing unchanged",
+    "Drug-feed timing, delivery and a coordinated feed-hold plan with INR monitoring",
+    "Keep feeds running during warfarin and use water flushing alone to prevent drug-feed binding",
+    "Change only the formula to a lower-vitamin-K product, without reviewing drug delivery or INR follow-up"
+  ],
+  "answer": 1,
+  "rationale": "Enteral products can bind warfarin and reduce its effect; vitamin K content is a separate contributor. A low-vitamin-K formula does not exclude a drug-feed interaction. Review the actual delivery and feeding schedule, coordinate a drug-specific hold and reassess INR when feeding changes. Flushing alone does not replace the interaction plan.",
+  "reviewHref": "#diet-illness-and-warfarin-interactions"
+};
+const reviewedWarfarinManagementQuestionBank = generatedWarfarinManagementQuestionBank.map((question) => ({ ...question, ...(feedingQuestionRepairs[question.id] || {}) }));
+export const warfarinManagementQuestionBank = [
+  ...reviewedWarfarinManagementQuestionBank.slice(0, 86),
+  enteralFeedingQuestion,
+  ...reviewedWarfarinManagementQuestionBank.slice(86),
+];

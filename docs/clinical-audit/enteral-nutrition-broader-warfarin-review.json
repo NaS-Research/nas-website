@@ -1,0 +1,523 @@
+{
+  "date": "2026-10-01",
+  "unit": "enteral-nutrition:broader-warfarin-feeding-dependency",
+  "status": "verified scoped logical unit; no whole module/chapter closure",
+  "baseCommit": "3db62da9bd3677a790190b557c454e806f80662a",
+  "bookIdentity": {
+    "edition": "RxPrep2023",
+    "pdfPages": 1032,
+    "privateSourceKeptOutsideGit": true
+  },
+  "sequentialContext": {
+    "chapter": 1,
+    "checklistEntry": 15,
+    "dependencyChapter": 11,
+    "dependencyTopic": "EN drug-feed delivery and vitamin K/warfarin; Chapter31 source dependency, not later-chapter advancement"
+  },
+  "sourceReview": {
+    "completeTextAndRenderedPages": [
+      {
+        "pdf": 170,
+        "printed": 162,
+        "scope": "Warfarin binding/lowINR, formula vitamin K, drug-specific1h before/after example; tube/product administration principles"
+      },
+      {
+        "pdf": 516,
+        "printed": 508,
+        "scope": "Warfarin nutrition-sensitive dosing and INR monitoring only; no new initiation/valve/CYP/contraindication claim adopted"
+      },
+      {
+        "pdf": 517,
+        "printed": 509,
+        "scope": "Diet/nutritional products/supplements/EN vitamin K consistency and repeatwarfarin1h before/after example; no new herb-specific interaction or dose claim adopted"
+      },
+      {
+        "pdf": 523,
+        "printed": 515,
+        "scope": "Warfarin consistency/INR counseling and general anticoagulant alcohol precaution only; no other anticoagulant dose/handling claim adopted"
+      }
+    ],
+    "contextLocatingSearch": {
+      "textPagesSearched": 1032,
+      "indexSha256": "66aa24376d6745fb986f313758c7efaf548d8115388e5402ddb0abd8c3f792bc",
+      "status": "Locating aid only, not full clinical/visual book audit"
+    },
+    "additionalTextOnlyPages": [
+      515,
+      518,
+      519,
+      520,
+      521
+    ],
+    "additionalPagesStatus": "Read for location/context; not adopted as new dose/indication/reversal evidence in this unit.515 rendered but not visually adopted.",
+    "qualifiedInference": "Plan communication and INR reassessment around changing actual drug/nutrition delivery. The stated assessment includes intake-context questions without asserting a specific direction of INR change from each symptom. The book timing is explicitly a warfarin example, not a universal medicine hold. Current labels/EN guidance were not opened."
+  },
+  "questionReview": [
+    {
+      "PDFPages": [
+        170,
+        516,
+        517,
+        523
+      ],
+      "id": "warfarin-management-053",
+      "question": "Which principle best characterizes consistent dietary vitamin K?",
+      "choices": [
+        "Consistent vitamin K intake is safer than eliminating nutritious vitamin K-containing foods.",
+        "A stable INR requires complete avoidance of all vitamin K-containing foods.",
+        "A low-vitamin-K enteral formula rules out any interaction with warfarin.",
+        "Water flushing alone prevents warfarin from interacting with enteral feeding."
+      ],
+      "answer": 0,
+      "rationale": "Maintain a consistent vitamin K pattern and review nutrition products for vitamin K content. Enteral products may also bind warfarin; formula vitamin K content alone does not explain every low INR.",
+      "reviewHref": "#diet-illness-and-warfarin-interactions",
+      "review": "The retained consistency principle is supported by517/523. All three distractors now test incorrect avoidance, low-vitamin-K immunity or flush-only handling rather than unrelated true principles."
+    },
+    {
+      "PDFPages": [
+        170,
+        516,
+        517,
+        523
+      ],
+      "id": "warfarin-management-054",
+      "question": "Which clinical action best applies to consistent dietary vitamin K?",
+      "choices": [
+        "Teach patients to maintain a stable pattern and report major dietary, supplement, or nutrition-support changes.",
+        "Eliminate leafy vegetables rather than establish a consistent intake.",
+        "Keep the same INR follow-up plan after major nutrition changes because the prior INR was stable.",
+        "Use the vitamin K content alone to decide whether warfarin can be given during continuous feeds."
+      ],
+      "answer": 0,
+      "rationale": "Consistency and communication allow the anticoagulation plan to account for nutrition changes. Check supplements and formula vitamin K content, and coordinate administration when enteral feeding can reduce warfarin effect.",
+      "reviewHref": "#diet-illness-and-warfarin-interactions",
+      "review": "Keep consistent intake and communicate changes. Each new distractor either imposes avoidance, fails to reassess a major change or treats formula vitamin K as the whole interaction."
+    },
+    {
+      "PDFPages": [
+        170,
+        516,
+        517,
+        523
+      ],
+      "id": "warfarin-management-055",
+      "question": "Which assessment is most appropriate for consistent dietary vitamin K?",
+      "choices": [
+        "Review greens, oils, nutrition shakes, enteral feeds, supplements, appetite, weight loss, diarrhea, alcohol, and INR trend.",
+        "Review only green vegetables and assume nutrition shakes, feeds and supplements have no vitamin K.",
+        "Review formula vitamin K content but exclude the actual warfarin administration and feeding schedule.",
+        "Review only the prescribed dose and prior INR, without asking what nutrition products changed."
+      ],
+      "answer": 0,
+      "rationale": "Review the overall intake and INR trend, including nutrition products and supplements. Enteral formulas vary in vitamin K content and can bind warfarin, so assess both vitamin K exposure and actual drug-feed delivery. Changes in intake warrant communication and INR reassessment.",
+      "reviewHref": "#diet-illness-and-warfarin-interactions",
+      "review": "Complete dietary/nutrition review is better than the three explicitly incomplete assessments.517 identifies foods/oils, supplements and EN vitamin K;170 establishes binding and actual drug-feed timing;516 establishes nutrition-sensitive dosing/INR monitoring;523 supports alcohol assessment and INR/consistency counseling. Appetite, weight loss and diarrhea are intake-context questions in this qualified assessment, not a newly asserted independent INR mechanism or direction of effect."
+    },
+    {
+      "PDFPages": [
+        170,
+        516,
+        517,
+        523
+      ],
+      "id": "warfarin-management-056",
+      "question": "Which reasoning hazard is most important to prevent with consistent dietary vitamin K?",
+      "choices": [
+        "Telling patients to avoid all green vegetables can worsen nutrition and make future reintroduction destabilizing.",
+        "Establishing a consistent vitamin K pattern with the anticoagulation service.",
+        "Checking nutritional products and supplements for vitamin K before changing intake.",
+        "Reviewing the INR and administration plan when an enteral formula or feeding schedule changes."
+      ],
+      "answer": 0,
+      "rationale": "The hazard is imposing total vitamin K avoidance instead of consistency. The other choices support a coordinated intake, administration and monitoring plan.",
+      "reviewHref": "#diet-illness-and-warfarin-interactions",
+      "review": "Only complete green-vegetable avoidance is the hazard. The three alternatives are appropriate consistency, product reconciliation and administration/INR review actions. Nutritional inadequacy/change is a qualified inference from consistency counseling and516 nutrition-sensitive dosing, not a new numeric dietary prescription."
+    },
+    {
+      "PDFPages": [
+        170,
+        516,
+        517,
+        523
+      ],
+      "id": "warfarin-management-enteral-feeding",
+      "question": "INR falls after continuous enteral feeding begins, even though the formula contains little vitamin K. What should be assessed before repeated warfarin escalation?",
+      "choices": [
+        "Escalate warfarin based only on the vitamin K amount, leaving drug-feed timing unchanged",
+        "Drug-feed timing, delivery and a coordinated feed-hold plan with INR monitoring",
+        "Keep feeds running during warfarin and use water flushing alone to prevent drug-feed binding",
+        "Change only the formula to a lower-vitamin-K product, without reviewing drug delivery or INR follow-up"
+      ],
+      "answer": 1,
+      "rationale": "Enteral products can bind warfarin and reduce its effect; vitamin K content is a separate contributor. A low-vitamin-K formula does not exclude a drug-feed interaction. Review the actual delivery and feeding schedule, coordinate a drug-specific hold and reassess INR when feeding changes. Flushing alone does not replace the interaction plan.",
+      "reviewHref": "#diet-illness-and-warfarin-interactions",
+      "review": "The local case is retained at the same ID/prompt/key/correct-answer text/anchor.170 states EN binding lowers INR separately from variable vitamin K. The new distractors focus on plausible but incomplete formula-only/dose-only/flush-only management rather than abandoning all nutrition or changing the monitoring test. A coordinated drug-specific plan with INR monitoring is the unique best answer."
+    }
+  ],
+  "teachingReview": [
+    {
+      "PDFPages": [
+        170,
+        516,
+        517,
+        523
+      ],
+      "lesson": "diet-illness-and-warfarin-interactions",
+      "heading": "Keep vitamin K consistent",
+      "body": "Patients do not need to eliminate green vegetables or other nutritious vitamin K sources. A stable intake can be incorporated into maintenance dosing. Major diet, appetite, supplement, enteral-feed, or weight changes require communication and closer INR monitoring.",
+      "status": "retained unchanged/source-reviewed",
+      "review": "Consistent nutrition and reassessment; preserve diet quality. For EN, separate binding fromvitaminK and coordinate the book-specific timing example with nutrition/INR follow-up."
+    },
+    {
+      "PDFPages": [
+        170,
+        516,
+        517,
+        523
+      ],
+      "lesson": "diet-illness-and-warfarin-interactions",
+      "heading": "Coordinate warfarin with enteral nutrition",
+      "body": "Enteral products can bind warfarin and reduce its effect. Formula vitamin K content is a separate contributor, so a low-vitamin-K formula does not exclude a feeding interaction. Review the formula, drug delivery and feeding schedule. Coordinate a warfarin-specific hold and INR follow-up with pharmacy and nutrition services, including how adequate nutrition will be delivered. The supplied review book describes holding feeds for one hour before and one hour after warfarin; this is a drug-specific example, not a hold for every medicine. Reassess the plan and INR when feeding changes or stops.",
+      "status": "added source-reviewed original synthesis",
+      "review": "Consistent nutrition and reassessment; preserve diet quality. For EN, separate binding fromvitaminK and coordinate the book-specific timing example with nutrition/INR follow-up."
+    }
+  ],
+  "embeddedCheckReview": {
+    "lesson": "diet-illness-and-warfarin-interactions",
+    "question": {
+      "question": "What is the best dietary instruction for a stable warfarin patient?",
+      "choices": [
+        "Maintain a consistent vitamin K intake and report major changes",
+        "Avoid every green vegetable forever",
+        "Double warfarin after eating spinach",
+        "Ignore nutrition supplements"
+      ],
+      "answer": 0,
+      "rationale": "Warfarin dosing can accommodate a consistent vitamin K pattern.",
+      "reviewHref": "#diet-illness-and-warfarin-interactions"
+    },
+    "PDFPages": [
+      517,
+      523
+    ],
+    "status": "retained unchanged/sourceverified;one best answer"
+  },
+  "broaderSelection": {
+    "priorLexicalSnapshot": "enteral-nutrition-book-safety-coverage-review.json;232committed-module snapshot",
+    "matchedParentRows": 4,
+    "expansion": "Full53-56 consistency concept reviewed, plus dirty local EN case;three other feeding-distractor rows retained with parent topic still pending",
+    "distractorOnlyRows": [
+      {
+        "id": "warfarin-management-011",
+        "question": {
+          "id": "warfarin-management-011",
+          "question": "Which assessment is most appropriate for protein C and S decline during warfarin initiation?",
+          "choices": [
+            "Review acute VTE, protein C or S deficiency, loading dose, overlap, obesity, breast tissue, skin pain, discoloration, and thrombosis.",
+            "Review VTE date, parenteral start, warfarin start, INR sequence, bleeding, platelets, kidney function, adherence, and discharge access.",
+            "Review greens, oils, nutrition shakes, enteral feeds, supplements, appetite, weight loss, diarrhea, alcohol, and INR trend.",
+            "Review hemodynamics, site, INR, hemoglobin, platelets, fibrinogen, last dose, indication, thrombosis risk, imaging, and procedural control."
+          ],
+          "answer": 0,
+          "rationale": "Protein C falls rapidly before the slower procoagulant factors are fully reduced.",
+          "reviewHref": "#vitamin-k-cycle-and-pharmacology"
+        },
+        "feedingClauseStatus": "Vitamin K/nutrition-assessment clause book-supported and retained unchanged",
+        "wholeQuestionStatus": "Nonfeeding primary topic/choices require full warfarin parent audit; not marked source-verified in this EN unit."
+      },
+      {
+        "id": "warfarin-management-035",
+        "question": {
+          "id": "warfarin-management-035",
+          "question": "Which assessment is most appropriate for warfarin initiation during acute HIT?",
+          "choices": [
+            "Review 4Ts probability, platelets, thrombosis, skin findings, INR, warfarin exposure, kidney and liver function, bleeding, and alternative agent.",
+            "Review greens, oils, nutrition shakes, enteral feeds, supplements, appetite, weight loss, diarrhea, alcohol, and INR trend.",
+            "Review hemodynamics, site, INR, hemoglobin, platelets, fibrinogen, last dose, indication, thrombosis risk, imaging, and procedural control.",
+            "Review CYP2C9 and VKORC1 results, tested alleles, ancestry, age, interacting drugs, liver function, nutrition, indication, initial dose, and INR trajectory."
+          ],
+          "answer": 0,
+          "rationale": "Rapid protein C depletion can intensify the severe thrombin generation of HIT.",
+          "reviewHref": "#warfarin-indications-and-initiation"
+        },
+        "feedingClauseStatus": "Vitamin K/nutrition-assessment clause book-supported and retained unchanged",
+        "wholeQuestionStatus": "Nonfeeding primary topic/choices require full warfarin parent audit; not marked source-verified in this EN unit."
+      },
+      {
+        "id": "warfarin-management-103",
+        "question": {
+          "id": "warfarin-management-103",
+          "question": "Which assessment is most appropriate for CYP2C9 and VKORC1 genotype interpretation?",
+          "choices": [
+            "Review CYP2C9 and VKORC1 results, tested alleles, ancestry, age, interacting drugs, liver function, nutrition, indication, initial dose, and INR trajectory.",
+            "Review indication, start date, INR, overlap duration, factor-turnover timing, thrombosis status, bleeding, and adherence.",
+            "Review VTE date, parenteral start, warfarin start, INR sequence, bleeding, platelets, kidney function, adherence, and discharge access.",
+            "Review greens, oils, nutrition shakes, enteral feeds, supplements, appetite, weight loss, diarrhea, alcohol, and INR trend."
+          ],
+          "answer": 0,
+          "rationale": "Genotype changes dose sensitivity and clearance but does not replace phenotype or INR-guided management.",
+          "reviewHref": "#warfarin-indications-and-initiation"
+        },
+        "feedingClauseStatus": "Vitamin K/nutrition-assessment clause book-supported and retained unchanged",
+        "wholeQuestionStatus": "Nonfeeding primary topic/choices require full warfarin parent audit; not marked source-verified in this EN unit."
+      }
+    ],
+    "otherLocalDietCase": {
+      "id": "warfarin-management-case-014",
+      "status": "Book-supported consistency case retained in the41-object draft; not published or counted as one of thefive released-source-verified items. No duplicate added to released bank."
+    }
+  },
+  "integration": {
+    "beforeCommittedBank": 116,
+    "beforeLocalRewrite": 42,
+    "allCommittedIDsMissingFromLocalRewrite": 116,
+    "afterReleasedCandidate": 117,
+    "afterWorkingIncludingDraft": 158,
+    "stableIDsRestoredToWorking": 116,
+    "newlyReleasedSemanticENCase": "warfarin-management-enteral-feeding",
+    "unrelatedLocalDraftObjectsPreserved": 41,
+    "workingDraftSha256Before": "09ee21e16b7f06ef737b075d92025590a8ea1a404fbb3cc6e46610d3ecd17f6d",
+    "cumulativePreservation": "Insert EN case before original087;existing across-bank sampler retains001/030/059/087/116 unchanged. No change to sampler,progress renderer,backends or lesson paths.",
+    "stageMethod": "Stage candidate bank/module blobs derived fromHEAD plus reviewed changes, not the complete dirty working files. Local41 semantic objects and unrelated module edits remain unstaged.",
+    "outsideDraftPassage": "Working-only EN lesson originally citedNHS1-2h before/after. Replaced only that teaching object with the supplied-book1h before/after example. No NHS page opened; the existing dirty reference remains part of the unreleased parent metadata and is not included in the candidate."
+  },
+  "validation": {
+    "isolatedBuild": {
+      "staticPages": 567,
+      "exitCode": 0,
+      "logSha256": "d740a1756141b6879ab028c1da9d887d9a3c63a817c9cbdaa04e55ef45140670"
+    },
+    "focusedStructural": {
+      "modules": 1,
+      "questions": 117,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "warfarin-management",
+          "lessons": 6,
+          "questions": 117,
+          "minimumLessonCoverage": 16
+        }
+      ]
+    },
+    "technical": {
+      "status": "passed",
+      "modules": [
+        {
+          "slug": "warfarin-management",
+          "bank": 117,
+          "bodies": 29,
+          "changedQuestions": [
+            {
+              "id": "warfarin-management-053",
+              "question": "Which principle best characterizes consistent dietary vitamin K?",
+              "choices": [
+                "Consistent vitamin K intake is safer than eliminating nutritious vitamin K-containing foods.",
+                "A stable INR requires complete avoidance of all vitamin K-containing foods.",
+                "A low-vitamin-K enteral formula rules out any interaction with warfarin.",
+                "Water flushing alone prevents warfarin from interacting with enteral feeding."
+              ],
+              "answer": 0,
+              "rationale": "Maintain a consistent vitamin K pattern and review nutrition products for vitamin K content. Enteral products may also bind warfarin; formula vitamin K content alone does not explain every low INR.",
+              "reviewHref": "#diet-illness-and-warfarin-interactions"
+            },
+            {
+              "id": "warfarin-management-054",
+              "question": "Which clinical action best applies to consistent dietary vitamin K?",
+              "choices": [
+                "Teach patients to maintain a stable pattern and report major dietary, supplement, or nutrition-support changes.",
+                "Eliminate leafy vegetables rather than establish a consistent intake.",
+                "Keep the same INR follow-up plan after major nutrition changes because the prior INR was stable.",
+                "Use the vitamin K content alone to decide whether warfarin can be given during continuous feeds."
+              ],
+              "answer": 0,
+              "rationale": "Consistency and communication allow the anticoagulation plan to account for nutrition changes. Check supplements and formula vitamin K content, and coordinate administration when enteral feeding can reduce warfarin effect.",
+              "reviewHref": "#diet-illness-and-warfarin-interactions"
+            },
+            {
+              "id": "warfarin-management-055",
+              "question": "Which assessment is most appropriate for consistent dietary vitamin K?",
+              "choices": [
+                "Review greens, oils, nutrition shakes, enteral feeds, supplements, appetite, weight loss, diarrhea, alcohol, and INR trend.",
+                "Review only green vegetables and assume nutrition shakes, feeds and supplements have no vitamin K.",
+                "Review formula vitamin K content but exclude the actual warfarin administration and feeding schedule.",
+                "Review only the prescribed dose and prior INR, without asking what nutrition products changed."
+              ],
+              "answer": 0,
+              "rationale": "Review the overall intake and INR trend, including nutrition products and supplements. Enteral formulas vary in vitamin K content and can bind warfarin, so assess both vitamin K exposure and actual drug-feed delivery. Changes in intake warrant communication and INR reassessment.",
+              "reviewHref": "#diet-illness-and-warfarin-interactions"
+            },
+            {
+              "id": "warfarin-management-056",
+              "question": "Which reasoning hazard is most important to prevent with consistent dietary vitamin K?",
+              "choices": [
+                "Telling patients to avoid all green vegetables can worsen nutrition and make future reintroduction destabilizing.",
+                "Establishing a consistent vitamin K pattern with the anticoagulation service.",
+                "Checking nutritional products and supplements for vitamin K before changing intake.",
+                "Reviewing the INR and administration plan when an enteral formula or feeding schedule changes."
+              ],
+              "answer": 0,
+              "rationale": "The hazard is imposing total vitamin K avoidance instead of consistency. The other choices support a coordinated intake, administration and monitoring plan.",
+              "reviewHref": "#diet-illness-and-warfarin-interactions"
+            },
+            {
+              "id": "warfarin-management-enteral-feeding",
+              "question": "INR falls after continuous enteral feeding begins, even though the formula contains little vitamin K. What should be assessed before repeated warfarin escalation?",
+              "choices": [
+                "Escalate warfarin based only on the vitamin K amount, leaving drug-feed timing unchanged",
+                "Drug-feed timing, delivery and a coordinated feed-hold plan with INR monitoring",
+                "Keep feeds running during warfarin and use water flushing alone to prevent drug-feed binding",
+                "Change only the formula to a lower-vitamin-K product, without reviewing drug delivery or INR follow-up"
+              ],
+              "answer": 1,
+              "rationale": "Enteral products can bind warfarin and reduce its effect; vitamin K content is a separate contributor. A low-vitamin-K formula does not exclude a drug-feed interaction. Review the actual delivery and feeding schedule, coordinate a drug-specific hold and reassess INR when feeding changes. Flushing alone does not replace the interaction plan.",
+              "reviewHref": "#diet-illness-and-warfarin-interactions"
+            }
+          ],
+          "retainedBodies": [
+            {
+              "lesson": "diet-illness-and-warfarin-interactions",
+              "heading": "Keep vitamin K consistent",
+              "body": "Patients do not need to eliminate green vegetables or other nutritious vitamin K sources. A stable intake can be incorporated into maintenance dosing. Major diet, appetite, supplement, enteral-feed, or weight changes require communication and closer INR monitoring."
+            },
+            {
+              "lesson": "diet-illness-and-warfarin-interactions",
+              "heading": "Coordinate warfarin with enteral nutrition",
+              "body": "Enteral products can bind warfarin and reduce its effect. Formula vitamin K content is a separate contributor, so a low-vitamin-K formula does not exclude a feeding interaction. Review the formula, drug delivery and feeding schedule. Coordinate a warfarin-specific hold and INR follow-up with pharmacy and nutrition services, including how adequate nutrition will be delivered. The supplied review book describes holding feeds for one hour before and one hour after warfarin; this is a drug-specific example, not a hold for every medicine. Reassess the plan and INR when feeding changes or stops."
+            }
+          ]
+        }
+      ],
+      "preservation": {
+        "originalBankIdsPromptsKeysCorrectTextsAnchors": 116,
+        "unchangedOriginalQuestionObjects": 112,
+        "localENSemanticIdPromptKeyCorrectTextAnchorPreserved": true,
+        "allOriginal28BodiesUnchanged": true,
+        "allSixEmbeddedChecksAndMetadataUnchanged": true,
+        "all1180CumulativeObjectsUnchanged": true,
+        "unrelatedLocalRewriteObjectsRetained": 41,
+        "unreleasedWorkingBankTotal": 158
+      },
+      "newDistinctAssessmentChecks": 0,
+      "runningAssessmentChecks": 674,
+      "runningSeparateSourceExamples": 98,
+      "contentHashes": {
+        "src/data/modules/warfarinManagement.js": "ddbf29c6dff79ea68ba28a5ad977cbab77104e396664d176950681ad13d2663b",
+        "src/data/questionBanks/warfarinManagement.js": "79fa50f2cf31673a7df1c8a192238e722b8368ac5991688d8d966909def13396"
+      }
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "module": "warfarin-management",
+          "width": 1440,
+          "renderedBodies": 29,
+          "retainedBodies": 2,
+          "bankItemsCorrectWrong": 5,
+          "unchangedCumulativeRuntimeItems": 5,
+          "cumulativeClinicalSourceClosure": false,
+          "groups": 1,
+          "remediationAndSavedProgress": true
+        },
+        {
+          "module": "warfarin-management",
+          "width": 390,
+          "renderedBodies": 29,
+          "retainedBodies": 2,
+          "bankItemsCorrectWrong": 5,
+          "unchangedCumulativeRuntimeItems": 5,
+          "cumulativeClinicalSourceClosure": false,
+          "groups": 1,
+          "remediationAndSavedProgress": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "embeddedBrowser": {
+      "status": "passed",
+      "results": [
+        {
+          "module": "warfarin-management",
+          "section": "diet-illness-and-warfarin-interactions",
+          "width": 1440,
+          "correctWrongFeedback": true
+        },
+        {
+          "module": "warfarin-management",
+          "section": "diet-illness-and-warfarin-interactions",
+          "width": 390,
+          "correctWrongFeedback": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "manualVisual": {
+      "questionFeedbackImages": 20,
+      "bodyImages": 4,
+      "embeddedFeedbackImages": 2,
+      "nativePixelSheets": 13,
+      "findings": "All five question stems/options/correct-and-incorrect feedback read at1440/390;two fullteaching bodies andone embedded wrong-answer correction read at1440/390. No clipping/overlap;320px overflow checks,29bodyDOM equality,remediation links,savedprogress,and five unchanged cumulative runtime checks passed."
+    },
+    "scopeMeaning": "Build/runtime status does not verify unreviewed parent claims, metadata, six figures, remaining checks or cumulative clinical content."
+  },
+  "preservation": {
+    "originalBankIdsPromptsKeysCorrectTextsAnchors": 116,
+    "unchangedOriginalQuestionObjects": 112,
+    "localENSemanticIdPromptKeyCorrectTextAnchorPreserved": true,
+    "allOriginal28BodiesUnchanged": true,
+    "allSixEmbeddedChecksAndMetadataUnchanged": true,
+    "all1180CumulativeObjectsUnchanged": true,
+    "unrelatedLocalRewriteObjectsRetained": 41,
+    "unreleasedWorkingBankTotal": 158
+  },
+  "calculationEvidence": {
+    "newDistinctAssessmentChecks": 0,
+    "runningAssessmentChecks": 674,
+    "runningSeparateSourceExamples": 98
+  },
+  "coverage": {
+    "moduleBank": 117,
+    "sourceVerifiedBankInThisUnit": 5,
+    "sourceVerifiedBankIds": [
+      "warfarin-management-053",
+      "warfarin-management-054",
+      "warfarin-management-055",
+      "warfarin-management-056",
+      "warfarin-management-enteral-feeding"
+    ],
+    "moduleBodies": 29,
+    "sourceVerifiedBodiesInThisUnit": 2,
+    "addedBodies": 1,
+    "retainedBodies": 1,
+    "sourceVerifiedEmbeddedInThisUnit": 1,
+    "workingBankIncludingUnreleasedDraft": 158,
+    "unreleasedDraftObjects": 41,
+    "ENBankSourceVerified": 66,
+    "ENBankTotal": 108,
+    "ENBodiesSourceVerified": 16,
+    "ENBodiesTotal": 36,
+    "ENEmbeddedChecksSourceVerified": 2,
+    "ENEmbeddedChecksTotal": 6,
+    "ENFiguresPending": 6,
+    "ENCurrentCumulativeSourceVerified": 4,
+    "ENCurrentCumulativeTotal": 5,
+    "wholeParentModuleVerified": false,
+    "wholeChapterVerified": false
+  },
+  "outsideENSourceApproval": "Pending human response; no outsideEN sources opened",
+  "wholeModuleVerified": false,
+  "wholeChapterVerified": false,
+  "nextAction": "Continue the broader feeding inventory with direct-oral-anticoagulant product/formulation questions, comparing the dirty local rewrite with the committed bank and preserving stableIDs and unrelated work. Warfarin source-reviewed candidate117 is released; working158 includes41 still-unreleased semantic objects, so do not copy/stage the full dirty bank or module. Full warfarin parent, metadata/current outside-source claims and six figures remain unverified. Tetracycline069 and shared adsorption017/041/121 remain source-pending. Complete42 EN bank items,20 bodies,four checks,six figures andmetadata in enteral-nutrition-book-safety-coverage-review.json; primaryASPEN/SCCM/FDA EN approval still unanswered and no outsideEN sources opened. Then pediatricPN and clinicalfluid/calcium dependencies. Chapter1 checklist15/Chapter11 reviewing; do not advance sequentially or close fullmodules yet.",
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "contentCommit": "pending",
+    "remoteHashVerified": false,
+    "receipt": "sequential-release-en-broader-warfarin-2026-10-01.json",
+    "production": "notverified",
+    "mainMerge": "notperformed"
+  }
+}

@@ -2110,7 +2110,13 @@
         },
         {
           "slug": "diet-illness-and-warfarin-interactions",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "verifiedSectionHeadings": [
+            "Keep vitamin K consistent",
+            "Coordinate warfarin with enteral nutrition"
+          ],
+          "embeddedCheckVerified": true,
+          "latestScopedEvidence": "enteral-nutrition-broader-warfarin-review.json"
         },
         {
           "slug": "elevated-inr-bleeding-and-reversal",
@@ -2121,9 +2127,31 @@
           "status": "unreviewed"
         }
       ],
-      "questions": 116,
-      "status": "unreviewed",
-      "evidence": []
+      "questions": 117,
+      "status": "reviewing",
+      "evidence": [
+        "enteral-nutrition-broader-warfarin-review.json"
+      ],
+      "latestEnteralDependencyReview": {
+        "evidence": "enteral-nutrition-broader-warfarin-review.json",
+        "verifiedBankIds": [
+          "warfarin-management-053",
+          "warfarin-management-054",
+          "warfarin-management-055",
+          "warfarin-management-056",
+          "warfarin-management-enteral-feeding"
+        ],
+        "verifiedBodyHeadings": [
+          "Keep vitamin K consistent",
+          "Coordinate warfarin with enteral nutrition"
+        ],
+        "verifiedEmbeddedCheckLessons": [
+          "diet-illness-and-warfarin-interactions"
+        ],
+        "releasedBank": 117,
+        "unreleasedDraftBankItems": 0,
+        "wholeModuleVerified": false
+      }
     },
     {
       "slug": "direct-oral-anticoagulants",
