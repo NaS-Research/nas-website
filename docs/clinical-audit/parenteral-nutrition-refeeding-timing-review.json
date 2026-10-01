@@ -1,0 +1,651 @@
+{
+  "date": "2026-10-01",
+  "module": "parenteral-nutrition",
+  "status": "verified",
+  "statusScope": "Adult nutrition timing, refeeding and product-specific laboratory monitoring; whole PN remains reviewing.",
+  "baseCommit": "c9e7c2f8e6669b38a54c9cd767ca40c534b71def",
+  "wholeModuleVerified": false,
+  "wholeChapterVerified": false,
+  "sourcePolicy": {
+    "primary": "Private supplied RxPrep2023 book",
+    "outsideSourcesAuthorized": true,
+    "authorizationQuote": "use that and complete the goal. I approve",
+    "scope": "Existing official ASPEN/USP/FDA/CDC PN sources and linked primary supporting material",
+    "privateSourceTextAndRendersOutsideGit": true
+  },
+  "sources": [
+    {
+      "key": "aspen-timing",
+      "url": "https://nutritioncare.org/wp-content/uploads/2024/12/Malnutrition-PN-Indication.pdf",
+      "date": "2022-08-29",
+      "sha256": "1a128fe17647a5050ad3cfdf1d80dff9f7e945ae93bcd6072154f1ddbc6d3108",
+      "readScope": "Complete two-page text and both rendered pages; adult appropriateness/timing used. Pediatric/neonatal timing not adopted in adult module."
+    },
+    {
+      "key": "aspen-refeeding",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1002/ncp.10474",
+      "date": "2020-03-02",
+      "readScope": "Pathophysiology, adult risk/normal-level limitations, complete adult Table6 and general-consensus caveats. Adult Table6 visually inspected in the official publisher browser in three overlapping views. No neonatal/pediatric dose adoption."
+    },
+    {
+      "key": "aspen-refeeding-erratum",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/ncp.10491",
+      "date": "2020-04-15",
+      "readScope": "Entire correction text: adult/pediatric risk Tables3/5 corrected; Table6 unchanged. Detailed risk table thresholds not added."
+    },
+    {
+      "key": "fda-smof-2025",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/207648s013lbl.pdf",
+      "date": "2025-07",
+      "readScope": "Sections5.6-5.10 and complete rendered pages9-10; new teaching derives only5.10. Earlier2.1/2.2 review retained; full allergy/hepatobiliary sections not yet verified."
+    },
+    {
+      "key": "book-PDF158",
+      "locator": "Chapter11 printed150/PDF158",
+      "readScope": "Complete text and freshly rendered page; route/formulation/short-term peripheral PN/refeeding context compared again."
+    },
+    {
+      "key": "book-PDF163",
+      "locator": "Chapter11 printed155/PDF163",
+      "readScope": "Dextrose energy and weight/time delivery context read again; cumulative079 independently recalculated."
+    }
+  ],
+  "questionCoverageUpdates": [
+    {
+      "id": "parenteral-nutrition-005",
+      "status": "verified",
+      "question": {
+        "id": "parenteral-nutrition-005",
+        "question": "How does severe malnutrition affect PN timing when the gut cannot be used?",
+        "choices": [
+          "It can support earlier initiation after safety issues are addressed",
+          "It always requires a fourteen-day delay",
+          "It removes refeeding risk",
+          "It guarantees tolerance of full energy"
+        ],
+        "answer": 0,
+        "rationale": "Baseline moderate or severe malnutrition with insufficient or impossible oral/enteral nutrition supports PN as soon as feasible. Severe metabolic instability and refeeding risk still require stabilization and a cautious calorie plan.",
+        "reviewHref": "#pn-decision"
+      },
+      "SHA256": "f4ecc2872f3fcfafb22ac19a2f82cfc4d45307c34b3bee29867175530fd15891",
+      "sourceKeys": [
+        "aspen-timing",
+        "aspen-refeeding"
+      ],
+      "allChoicesKeyExplanationComparedAgain": true,
+      "oneBestAnswer": true,
+      "proof": "Moderate/severe baseline malnutrition supports PN as soon as feasible, with metabolic and refeeding safeguards. Fixed delay, removal of refeeding risk and guaranteed full-energy tolerance are false.",
+      "kind": "retained revised"
+    },
+    {
+      "id": "parenteral-nutrition-006",
+      "status": "verified",
+      "question": {
+        "id": "parenteral-nutrition-006",
+        "question": "Which finding should delay aggressive PN advancement?",
+        "choices": [
+          "Uncontrolled shock with severe electrolyte abnormalities",
+          "A stable catheter and corrected electrolytes",
+          "A documented nutrition goal",
+          "Reliable monitoring capacity"
+        ],
+        "answer": 0,
+        "rationale": "Severe metabolic instability warrants delaying PN until the condition improves. Severely low phosphate, potassium or magnesium should be corrected before calorie initiation or advancement; a nutrition goal or patent line does not establish metabolic readiness.",
+        "reviewHref": "#pn-decision"
+      },
+      "SHA256": "c0a36683f6e6826a0483dd4dd57468c78d27cb1b1d02631961d085182c270674",
+      "sourceKeys": [
+        "aspen-timing",
+        "aspen-refeeding"
+      ],
+      "allChoicesKeyExplanationComparedAgain": true,
+      "oneBestAnswer": true,
+      "proof": "Severe metabolic instability and severely low electrolytes delay initiation/increases. A stable line, documented goal and monitoring capability do not by themselves create instability.",
+      "kind": "retained revised"
+    },
+    {
+      "id": "parenteral-nutrition-032",
+      "status": "verified",
+      "question": {
+        "id": "parenteral-nutrition-032",
+        "question": "Which micronutrient deserves additional attention when initiating nutrition in a patient at high refeeding risk?",
+        "choices": [
+          "Thiamine",
+          "Fluoride only",
+          "Vitamin K only",
+          "Manganese only"
+        ],
+        "answer": 0,
+        "rationale": "Thiamine supports carbohydrate metabolism, and renewed calorie delivery can expose deficiency. ASPEN recommends preventive thiamine before feeding or dextrose-containing IV fluids in adults at refeeding risk; vitamin K, manganese or fluoride alone cannot replace it.",
+        "reviewHref": "#micronutrient-balance"
+      },
+      "SHA256": "3b9f073ce35ac9bf4234e228e81c9fc441d5d64cb41f1a1aabad8e3dbf185ed1",
+      "sourceKeys": [
+        "aspen-refeeding"
+      ],
+      "allChoicesKeyExplanationComparedAgain": true,
+      "oneBestAnswer": true,
+      "proof": "Renewed carbohydrate metabolism increases thiamine demand. Vitamin K, manganese and fluoride alone do not provide thiamine; preventive thiamine precedes feeding/dextrose.",
+      "kind": "retained revised"
+    },
+    {
+      "id": "parenteral-nutrition-043",
+      "status": "verified",
+      "question": {
+        "id": "parenteral-nutrition-043",
+        "question": "Which laboratory values require especially close follow-up during refeeding risk?",
+        "choices": [
+          "Phosphate, potassium, magnesium, and glucose",
+          "LDL and HDL only",
+          "Amylase only",
+          "Troponin only"
+        ],
+        "answer": 0,
+        "rationale": "Refeeding can rapidly lower phosphate, potassium and magnesium while glucose exposure changes. Insulin promotes intracellular potassium and phosphate movement; the magnesium mechanism is less clearly established. Normal initial serum levels do not exclude depleted body stores.",
+        "reviewHref": "#monitoring-transition"
+      },
+      "SHA256": "3acc123a0212e7e03f25404ff559fa24f4d2179d53fe1047f18d3c77eeeb2060",
+      "sourceKeys": [
+        "aspen-refeeding",
+        "fda-smof-2025",
+        "book-PDF158"
+      ],
+      "allChoicesKeyExplanationComparedAgain": true,
+      "oneBestAnswer": true,
+      "proof": "All three electrolytes require follow-up; glucose exposure matters. Insulin-mediated potassium/phosphate movement is distinguished from the less-elucidated magnesium mechanism. LDL/HDL, amylase or troponin alone are inadequate.",
+      "kind": "retained revised"
+    },
+    {
+      "id": "parenteral-nutrition-100",
+      "status": "verified",
+      "question": {
+        "id": "parenteral-nutrition-100",
+        "question": "A malnourished patient with obstruction has phosphate 1.3 mg/dL, potassium 2.8 mEq/L, and magnesium 1.1 mg/dL before PN. What is the most defensible next action?",
+        "choices": [
+          "Correct deficits and reassess severity before cautiously starting calories; give thiamine and monitor closely",
+          "Start the full calorie target now and replace electrolytes only after the next bag",
+          "Start full-dose dextrose now because lipid omission prevents refeeding",
+          "Give thiamine alone and postpone electrolyte replacement until PN reaches its target"
+        ],
+        "answer": 0,
+        "rationale": "These prefeeding deficits require correction and close monitoring in a malnourished patient. Severely low levels warrant delaying calorie initiation or increases until corrected; thiamine does not replace electrolyte treatment. Full immediate energy is unsafe, and omitting lipid does not remove risk from dextrose.",
+        "reviewHref": "#pn-decision"
+      },
+      "SHA256": "aff8670eb85ecf13bad0e217fb8c3e8af59fa87a42c10f5c2e3dd4a3c4816c07",
+      "sourceKeys": [
+        "aspen-refeeding"
+      ],
+      "allChoicesKeyExplanationComparedAgain": true,
+      "oneBestAnswer": true,
+      "proof": "Correct deficits and assess severity before calorie initiation; severely low levels require delay until corrected. Full-dose calories, lipid omission and thiamine alone do not resolve these electrolyte deficits.",
+      "kind": "retained revised"
+    },
+    {
+      "id": "parenteral-nutrition-timing-001",
+      "status": "verified",
+      "question": {
+        "id": "parenteral-nutrition-timing-001",
+        "question": "A stable, well-nourished adult has received less than 50% of estimated needs orally or enterally for seven days, and adequate gastrointestinal delivery remains unavailable. Which ASPEN adult timing recommendation applies?",
+        "choices": [
+          "PN after seven days of inadequate intake in this setting",
+          "A universal five-day waiting period regardless of nutrition status",
+          "A mandatory fourteen-day wait regardless of intake",
+          "PN only when serum albumin crosses a fixed threshold"
+        ],
+        "answer": 0,
+        "rationale": "ASPEN recommends PN after seven days for a stable, well-nourished adult unable to receive at least 50% of estimated needs orally or enterally. A universal five-day rule, an obligatory fourteen-day delay and albumin alone do not describe this recommendation.",
+        "reviewHref": "#pn-decision"
+      },
+      "SHA256": "8894538b532427dbe0f6281db44429bd71ae2ed13d2d55eddb26de5e755e1e42",
+      "sourceKeys": [
+        "aspen-timing"
+      ],
+      "allChoicesKeyExplanationComparedAgain": true,
+      "oneBestAnswer": true,
+      "proof": "Seven days and inadequate <50% intake in a stable well-nourished adult match the recommendation. Universal five-day or fourteen-day waits and an albumin threshold do not.",
+      "kind": "new original"
+    },
+    {
+      "id": "parenteral-nutrition-timing-002",
+      "status": "verified",
+      "question": {
+        "id": "parenteral-nutrition-timing-002",
+        "question": "A nutritionally at-risk adult is unlikely to achieve adequate oral or enteral intake and has no severe metabolic instability. Which ASPEN timing window is appropriate?",
+        "choices": [
+          "After seven days using the stable, well-nourished adult recommendation",
+          "Within three to five days",
+          "Only after moderate or severe malnutrition develops",
+          "Immediately at the full calorie goal without assessing refeeding"
+        ],
+        "answer": 1,
+        "rationale": "ASPEN recommends PN within three to five days for nutritionally at-risk adults unlikely to achieve adequate oral/enteral intake. The seven-day recommendation describes stable, well-nourished adults, and moderate or severe baseline malnutrition supports initiation as soon as feasible.",
+        "reviewHref": "#pn-decision"
+      },
+      "SHA256": "c22ab3c2eb8830fb4c9a200060ac62347ff0685ef65d1a24ccc118cb7be4ed7d",
+      "sourceKeys": [
+        "aspen-timing",
+        "aspen-refeeding"
+      ],
+      "allChoicesKeyExplanationComparedAgain": true,
+      "oneBestAnswer": true,
+      "proof": "At-risk adults unlikely to meet oral/EN needs use three-to-five days. The well-nourished timing rule, waiting for worsened malnutrition and immediate full calories without refeeding assessment are inappropriate.",
+      "kind": "new original"
+    },
+    {
+      "id": "parenteral-nutrition-refeeding-001",
+      "status": "verified",
+      "question": {
+        "id": "parenteral-nutrition-refeeding-001",
+        "question": "A malnourished adult has normal serum potassium, magnesium and phosphate immediately before nutrition is restarted. What do these results establish?",
+        "choices": [
+          "Refeeding risk has been excluded",
+          "Full energy must be delivered immediately",
+          "Body stores may still be depleted, so risk assessment and monitoring remain necessary",
+          "Thiamine is unnecessary because phosphate is normal"
+        ],
+        "answer": 2,
+        "rationale": "Normal serum values do not exclude total-body depletion. Assess nutrition history and other risk factors, give indicated thiamine and monitor electrolytes during renewed calorie delivery.",
+        "reviewHref": "#monitoring-transition"
+      },
+      "SHA256": "541f7aad770b32d9b3105940d41ea44b640bf8d1b215de03278a5d43f8380ecb",
+      "sourceKeys": [
+        "aspen-refeeding"
+      ],
+      "allChoicesKeyExplanationComparedAgain": true,
+      "oneBestAnswer": true,
+      "proof": "Normal serum electrolytes do not exclude total-body depletion. They neither eliminate risk nor mandate full energy nor remove the need for thiamine risk assessment.",
+      "kind": "new original"
+    },
+    {
+      "id": "parenteral-nutrition-refeeding-002",
+      "status": "verified",
+      "question": {
+        "id": "parenteral-nutrition-refeeding-002",
+        "question": "For an adult at refeeding risk, when does ASPEN recommend the preventive 100 mg thiamine dose?",
+        "choices": [
+          "Only after glucose intolerance develops",
+          "Only after the first week of full PN",
+          "After the first dextrose bag has finished",
+          "Before feeding or dextrose-containing IV fluids"
+        ],
+        "answer": 3,
+        "rationale": "ASPEN recommends 100 mg thiamine before feeding or before starting dextrose-containing IV fluids in at-risk adults, followed by daily supplementation as indicated. This preventive step does not replace treatment of a suspected deficiency syndrome.",
+        "reviewHref": "#micronutrient-balance"
+      },
+      "SHA256": "02ae1b2bf2f9001a33954c40a2d8dc31a99c05c060d19fcd311dedb95d35f2d5",
+      "sourceKeys": [
+        "aspen-refeeding"
+      ],
+      "allChoicesKeyExplanationComparedAgain": true,
+      "oneBestAnswer": true,
+      "proof": "Preventive100mg thiamine precedes calories or IV dextrose in at-risk adults, not glucose intolerance, completion of the first bag or a week of full PN.",
+      "kind": "new original"
+    }
+  ],
+  "lessonCoverageUpdates": [
+    {
+      "lesson": "pn-decision",
+      "heading": "Time therapy to nutrition risk",
+      "kind": "retained original section",
+      "status": "verified",
+      "bodySHA256": "ef4156cecb53b11c8845edbc66897ff7be9e986651f3531ee1b2daff220259c0",
+      "sourceKeys": [
+        "aspen-timing",
+        "book-PDF158"
+      ],
+      "wholeSectionComparedAgain": true
+    },
+    {
+      "lesson": "micronutrient-balance",
+      "heading": "Give thiamine before refeeding",
+      "kind": "new approved-source teaching",
+      "status": "verified",
+      "bodySHA256": "55b6a592d096267582b21557f44d72cf8cbb67cc6d68c7fac48d31af0fd85334",
+      "sourceKeys": [
+        "aspen-refeeding"
+      ],
+      "wholeSectionComparedAgain": true
+    },
+    {
+      "lesson": "monitoring-transition",
+      "heading": "Assess depletion before calories return",
+      "kind": "new approved-source teaching",
+      "status": "verified",
+      "bodySHA256": "a242274558cce3f38ec5b9cbef4d81182741d45625ca7904d7eb04d6a1250d60",
+      "sourceKeys": [
+        "aspen-refeeding"
+      ],
+      "wholeSectionComparedAgain": true
+    },
+    {
+      "lesson": "monitoring-transition",
+      "heading": "Start adult refeeding with a measured plan",
+      "kind": "new approved-source teaching",
+      "status": "verified",
+      "bodySHA256": "bd293657742c0a3b97a942028e2053f7ae20950b7d64afc510449e94ea88e5be",
+      "sourceKeys": [
+        "aspen-refeeding"
+      ],
+      "wholeSectionComparedAgain": true
+    },
+    {
+      "lesson": "monitoring-transition",
+      "heading": "Respond to refeeding changes promptly",
+      "kind": "new approved-source teaching",
+      "status": "verified",
+      "bodySHA256": "d4cf0e508abf67c219e8593d356b5c51e19e5049ff6ab6b7b141dc63dc4258ae",
+      "sourceKeys": [
+        "aspen-refeeding"
+      ],
+      "wholeSectionComparedAgain": true
+    },
+    {
+      "lesson": "monitoring-transition",
+      "heading": "Match lipid laboratory tests to the product",
+      "kind": "new approved-source teaching",
+      "status": "verified",
+      "bodySHA256": "0b4b0ec7097ba41d0e901c3b0551c709e64bf846d6bb73e8a10fc94fa4a08198",
+      "sourceKeys": [
+        "fda-smof-2025"
+      ],
+      "wholeSectionComparedAgain": true
+    }
+  ],
+  "partiallyReconciledOriginalSection": {
+    "heading": "Stabilize before aggressive delivery",
+    "status": "reviewing",
+    "verifiedScope": "Metabolic readiness and low-electrolyte/energy hold advice strengthened using ASPEN.",
+    "remainingScope": "Complete shock/goals/preferences/stopping-criteria claim provenance; do not count whole section verified."
+  },
+  "coverage": {
+    "baseEvidence": "parenteral-nutrition-approved-safety-review.json",
+    "baseVerifiedBank": 110,
+    "bank": 138,
+    "currentVerifiedBank": 119,
+    "additionalVerifiedRetainedIds": [
+      "parenteral-nutrition-005",
+      "parenteral-nutrition-006",
+      "parenteral-nutrition-032",
+      "parenteral-nutrition-043",
+      "parenteral-nutrition-100"
+    ],
+    "newVerifiedIds": [
+      "parenteral-nutrition-timing-001",
+      "parenteral-nutrition-timing-002",
+      "parenteral-nutrition-refeeding-001",
+      "parenteral-nutrition-refeeding-002"
+    ],
+    "remainingBank": 19,
+    "remainingBankItemIds": [
+      "parenteral-nutrition-003",
+      "parenteral-nutrition-007",
+      "parenteral-nutrition-008",
+      "parenteral-nutrition-012",
+      "parenteral-nutrition-013",
+      "parenteral-nutrition-015",
+      "parenteral-nutrition-020",
+      "parenteral-nutrition-025",
+      "parenteral-nutrition-027",
+      "parenteral-nutrition-030",
+      "parenteral-nutrition-031",
+      "parenteral-nutrition-033",
+      "parenteral-nutrition-044",
+      "parenteral-nutrition-045",
+      "parenteral-nutrition-047",
+      "parenteral-nutrition-048",
+      "parenteral-nutrition-049",
+      "parenteral-nutrition-103",
+      "parenteral-nutrition-106"
+    ],
+    "embeddedVerified": 6,
+    "embedded": 6,
+    "currentCumulativeVerified": 5,
+    "cumulative": 5,
+    "originalTeachingFullyVerified": 8,
+    "originalTeachingRemaining": 16,
+    "newApprovedSourceSectionsThisUnit": 5,
+    "newApprovedSourceSectionsAcrossUnits": 7,
+    "bookAddedSectionsAcrossUnits": 23,
+    "totalSections": 54,
+    "totalFullySourceVerifiedSectionBodies": 38,
+    "figuresFullyVerified": 1,
+    "figuresRemainingPartlySupported": 5,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false
+  },
+  "broaderReview": {
+    "selectionChangedBecauseBankGrew": true,
+    "allPriorModuleQuestionIdsKeysPromptsAnchorsPreserved": true,
+    "priorBroaderProgressRecordsUnchanged": true,
+    "currentItems": [
+      {
+        "id": "cumulative-parenteral-nutrition-parenteral-nutrition-001",
+        "underlyingId": "parenteral-nutrition-001",
+        "status": "verified",
+        "SHA256": "6bf040579f2b9a0b6ed3a770d7f82cb72ccf0f972b8069138b79bc919360b553",
+        "sourceKeys": [
+          "book-PDF158"
+        ],
+        "allChoicesKeyExplanationReviewed": true,
+        "proof": "Meaningful need/unusableGIroute; TNA includes all three macronutrients; conditional peripheral tolerance; repeat GIR arithmetic; preventive thiamine timing, respectively."
+      },
+      {
+        "id": "cumulative-parenteral-nutrition-parenteral-nutrition-035",
+        "underlyingId": "parenteral-nutrition-035",
+        "status": "verified",
+        "SHA256": "34983bf0442847f84d29637b70aaf018125437ebd85190998fa8770eedcaeb5a",
+        "sourceKeys": [
+          "book-PDF158"
+        ],
+        "allChoicesKeyExplanationReviewed": true,
+        "proof": "Meaningful need/unusableGIroute; TNA includes all three macronutrients; conditional peripheral tolerance; repeat GIR arithmetic; preventive thiamine timing, respectively."
+      },
+      {
+        "id": "cumulative-parenteral-nutrition-parenteral-nutrition-079",
+        "underlyingId": "parenteral-nutrition-079",
+        "status": "verified",
+        "SHA256": "4440b0a88fbf90ff95d8cf01426af42032318e2c0a0ae4d6d6dde6752d51da62",
+        "sourceKeys": [
+          "book-PDF163",
+          "independent-Decimal"
+        ],
+        "allChoicesKeyExplanationReviewed": true,
+        "proof": "Meaningful need/unusableGIroute; TNA includes all three macronutrients; conditional peripheral tolerance; repeat GIR arithmetic; preventive thiamine timing, respectively."
+      },
+      {
+        "id": "cumulative-parenteral-nutrition-parenteral-nutrition-book-004",
+        "underlyingId": "parenteral-nutrition-book-004",
+        "status": "verified",
+        "SHA256": "4fe620574563a43e350d861e028f78d7a6817d77484245f5e113448adda95789",
+        "sourceKeys": [
+          "book-PDF158"
+        ],
+        "allChoicesKeyExplanationReviewed": true,
+        "proof": "Meaningful need/unusableGIroute; TNA includes all three macronutrients; conditional peripheral tolerance; repeat GIR arithmetic; preventive thiamine timing, respectively."
+      },
+      {
+        "id": "cumulative-parenteral-nutrition-parenteral-nutrition-refeeding-002",
+        "underlyingId": "parenteral-nutrition-refeeding-002",
+        "status": "verified",
+        "SHA256": "8af1adbffbbbe76c38a60063521ef1b74bdc4b005c70d6af46491356355e5450",
+        "sourceKeys": [
+          "aspen-refeeding"
+        ],
+        "allChoicesKeyExplanationReviewed": true,
+        "proof": "Meaningful need/unusableGIroute; TNA includes all three macronutrients; conditional peripheral tolerance; repeat GIR arithmetic; preventive thiamine timing, respectively."
+      }
+    ],
+    "legacyMonitoringStillOpen": true
+  },
+  "clinicalRecomparison": [
+    "Timing distinguishes stable well-nourished, at-risk and baseline moderate/severe malnutrition; book >5days is contextual, not universal.",
+    "Thiamine dose/frequency framed as prevention; daily5-7days or longer scoped to deficiency-risk populations in the consensus.",
+    "Severely low electrolytes require correction before calorie initiation/increase; normal serum levels do not rule out depletion.",
+    "All IV/medication dextrose sources count; energy start/advance/50% reduction are adult consensus guidance with renal/special-population caveats.",
+    "Magnesium mechanism qualified rather than equated categorically with insulin-mediated potassium/phosphate shifts.",
+    "Lipid-test six-hour sampling statement remains specific to July2025 SMOF label; no universal PN/life-threatening evaluation delay claim."
+  ],
+  "referenceMaintenance": {
+    "refeeding": "Link changed from abstract to official full consensus article.",
+    "fdaLabel": "Label explicitly dated July2025, without claiming newest label.",
+    "cdc": "Broken old index entry removed; previously verified CDC summary reference retained."
+  },
+  "validation": {
+    "build": {
+      "status": "passed",
+      "mode": "next build --webpack",
+      "staticPages": 567,
+      "candidate": "Current HEAD archive plus only two scoped content files; no environment/private source copied.",
+      "privateLogSHA256": "15d28369b079b235b51725d0bf611f31a3fa4edad878d7886c7fdca2c9fd3760"
+    },
+    "technical": {
+      "status": "passed",
+      "bank": 138,
+      "sections": 54,
+      "unchangedRetainedObjects": 129,
+      "retainedIdsKeysPromptsAnchorsPreserved": true,
+      "changedRetainedQuestions": [
+        "parenteral-nutrition-005",
+        "parenteral-nutrition-006",
+        "parenteral-nutrition-032",
+        "parenteral-nutrition-043",
+        "parenteral-nutrition-100"
+      ],
+      "newQuestions": [
+        "parenteral-nutrition-timing-001",
+        "parenteral-nutrition-timing-002",
+        "parenteral-nutrition-refeeding-001",
+        "parenteral-nutrition-refeeding-002"
+      ],
+      "embeddedChecksUnchanged": 6,
+      "cumulativeIds": [
+        "cumulative-parenteral-nutrition-parenteral-nutrition-001",
+        "cumulative-parenteral-nutrition-parenteral-nutrition-035",
+        "cumulative-parenteral-nutrition-parenteral-nutrition-079",
+        "cumulative-parenteral-nutrition-parenteral-nutrition-book-004",
+        "cumulative-parenteral-nutrition-parenteral-nutrition-refeeding-002"
+      ],
+      "cumulativeSelectionChangedByBankGrowth": true
+    },
+    "focusedAudit": {
+      "modules": 1,
+      "questions": 138,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "parenteral-nutrition",
+          "lessons": 6,
+          "questions": 138,
+          "minimumLessonCoverage": 14
+        }
+      ]
+    },
+    "moduleBrowser": {
+      "status": "passed",
+      "viewports": [
+        {
+          "width": 1440,
+          "all138CorrectGraded": true,
+          "correctAttempts": 14,
+          "wrongReviewedIds": [
+            "parenteral-nutrition-005",
+            "parenteral-nutrition-006",
+            "parenteral-nutrition-032",
+            "parenteral-nutrition-043",
+            "parenteral-nutrition-100",
+            "parenteral-nutrition-timing-001",
+            "parenteral-nutrition-timing-002",
+            "parenteral-nutrition-refeeding-001",
+            "parenteral-nutrition-refeeding-002",
+            "parenteral-nutrition-001"
+          ],
+          "embeddedAllSixCorrect": true,
+          "allSixFiguresRendered": true,
+          "all54TeachingBodiesRendered": true,
+          "horizontalOverflow": false
+        },
+        {
+          "width": 390,
+          "all138CorrectGraded": true,
+          "correctAttempts": 14,
+          "wrongReviewedIds": [
+            "parenteral-nutrition-005",
+            "parenteral-nutrition-006",
+            "parenteral-nutrition-032",
+            "parenteral-nutrition-043",
+            "parenteral-nutrition-100",
+            "parenteral-nutrition-timing-001",
+            "parenteral-nutrition-timing-002",
+            "parenteral-nutrition-refeeding-001",
+            "parenteral-nutrition-refeeding-002",
+            "parenteral-nutrition-001"
+          ],
+          "embeddedAllSixCorrect": true,
+          "allSixFiguresRendered": true,
+          "all54TeachingBodiesRendered": true,
+          "horizontalOverflow": false
+        }
+      ],
+      "consoleErrors": [],
+      "runtimeErrors": []
+    },
+    "supplementalBrowser": {
+      "status": "passed",
+      "viewports": [
+        {
+          "width": 1440,
+          "cumulativeAllFiveCorrectAndIncorrect": true,
+          "cumulativeRemediationNavigation": true,
+          "cumulativeLocalProgressSaved": true,
+          "embeddedTwoIncorrectWithRationalesAndAnchors": true,
+          "horizontalOverflow": false
+        },
+        {
+          "width": 390,
+          "cumulativeAllFiveCorrectAndIncorrect": true,
+          "cumulativeRemediationNavigation": true,
+          "cumulativeLocalProgressSaved": true,
+          "embeddedTwoIncorrectWithRationalesAndAnchors": true,
+          "horizontalOverflow": false
+        }
+      ],
+      "errors": [],
+      "narrow320Overflow": false
+    },
+    "visualInspection": {
+      "status": "passed",
+      "sevenRevisedOrAddedHeadingsDesktop1440Mobile390": true,
+      "refeedingCaseIncorrectFeedbackDesktopMobile": true,
+      "cumulativeThiamineCorrectIncorrectFeedbackDesktopMobile": true,
+      "unchangedFigureVerification": "All six rendered in runtime; prior safety-unit visual inspection retained; no figure/component changes.",
+      "layoutNote": "Existing sticky contents and floating tool button can overlap viewport edges at some scroll offsets; revised teaching is readable beneath the contents. No CSS or component changes."
+    }
+  },
+  "calculations": {
+    "newDistinctChecks": 0,
+    "repeatedCheck": "Cumulative079:260000mg/(100kg*1440min)=1.805555...=1.81mg/kg/min; distractors wrong units, double or half value.",
+    "runningDistinctChecks": 635,
+    "runningSeparateSourceExamples": 98
+  },
+  "contentHashes": {
+    "src/data/modules/parenteralNutrition.js": "588cc508f64ba35e8b5a8a7845fda1b924f6c586f153ab2a50b08560e86a0882",
+    "src/data/questionBanks/parenteralNutrition.js": "fb50441eaa4721e573e02f367590120ae22b6aad79c91fe6c5d500109084354f"
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": "pending scoped commit",
+    "push": "pending exact remote verification",
+    "production": "not verified"
+  },
+  "nextAction": "Complete remaining19 bank items,16 original sections, five partially supported figures, legacy monitoring and related PN/EN/pediatric/fluid coverage. Chapter11 and checklist entry15 stay reviewing; completed14.",
+  "limits": [
+    "No whole adult PN/module/Chapter11/82chapter completion claim.",
+    "No new distinct arithmetic count from repeating a known cumulative calculation.",
+    "No account/backend/navigation/route/component/CSS/deployment change.",
+    "Full2017 appropriateness article could not be retrieved by web;2022 official ASPEN summary was fully read/rendered and used instead.",
+    "FDA label version is July2025; no claim of latest2026 label or full product-label audit."
+  ]
+}

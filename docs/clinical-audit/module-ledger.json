@@ -187,7 +187,11 @@
             "Recognize the added route burden"
           ],
           "wholeLessonVerified": false,
-          "latestScopedEvidence": "parenteral-nutrition-fluid-label-review.json"
+          "latestScopedEvidence": "parenteral-nutrition-refeeding-timing-review.json",
+          "verifiedOriginalSections": [
+            "Time therapy to nutrition risk"
+          ],
+          "verifiedApprovedSourceAddedSections": []
         },
         {
           "slug": "venous-access",
@@ -231,11 +235,13 @@
             "Keep other medications from becoming routine ingredients"
           ],
           "wholeLessonVerified": false,
-          "latestScopedEvidence": "parenteral-nutrition-approved-safety-review.json",
+          "latestScopedEvidence": "parenteral-nutrition-refeeding-timing-review.json",
           "verifiedOriginalSections": [
             "Protect calcium and phosphate compatibility"
           ],
-          "verifiedApprovedSourceAddedSections": []
+          "verifiedApprovedSourceAddedSections": [
+            "Give thiamine before refeeding"
+          ]
         },
         {
           "slug": "compounding-safety",
@@ -268,10 +274,17 @@
             "Read the insulin example without turning it into a fixed order"
           ],
           "wholeLessonVerified": false,
-          "latestScopedEvidence": "parenteral-nutrition-fluid-label-review.json"
+          "latestScopedEvidence": "parenteral-nutrition-refeeding-timing-review.json",
+          "verifiedOriginalSections": [],
+          "verifiedApprovedSourceAddedSections": [
+            "Assess depletion before calories return",
+            "Start adult refeeding with a measured plan",
+            "Respond to refeeding changes promptly",
+            "Match lipid laboratory tests to the product"
+          ]
         }
       ],
-      "questions": 134,
+      "questions": 138,
       "status": "reviewing",
       "evidence": [
         "parenteral-nutrition-book-expansion-review.json",
@@ -279,7 +292,8 @@
         "parenteral-nutrition-fluid-label-review.json",
         "parenteral-nutrition-legacy-reader-review.json",
         "parenteral-nutrition-verification-workflow-review.json",
-        "parenteral-nutrition-approved-safety-review.json"
+        "parenteral-nutrition-approved-safety-review.json",
+        "parenteral-nutrition-refeeding-timing-review.json"
       ],
       "wholeModuleVerified": false,
       "verifiedExpansion": {
@@ -289,17 +303,17 @@
         "evidence": "parenteral-nutrition-book-expansion-review.json"
       },
       "latestSourceCoverage": {
-        "verifiedBankItems": 110,
-        "totalBankItems": 134,
-        "remainingBankItems": 24,
+        "verifiedBankItems": 119,
+        "totalBankItems": 138,
+        "remainingBankItems": 19,
         "verifiedEmbeddedChecks": 6,
         "verifiedCumulativeItems": 5,
-        "fullyVerifiedOriginalTeachingSections": 7,
-        "remainingOriginalTeachingSections": 17,
-        "newApprovedSourceSections": 2,
+        "fullyVerifiedOriginalTeachingSections": 8,
+        "remainingOriginalTeachingSections": 16,
+        "newApprovedSourceSections": 7,
         "fullyVerifiedFigures": 1,
         "remainingPartlySupportedFigures": 5,
-        "evidence": "parenteral-nutrition-approved-safety-review.json"
+        "evidence": "parenteral-nutrition-refeeding-timing-review.json"
       },
       "relatedLegacyReaderReview": {
         "status": "reviewing",
@@ -325,6 +339,33 @@
           "Former risk categories and BUD"
         ],
         "wholeModuleVerified": false
+      },
+      "latestApprovedNutritionReview": {
+        "status": "verified in scope",
+        "evidence": "parenteral-nutrition-refeeding-timing-review.json",
+        "remainingBankItemIds": [
+          "parenteral-nutrition-003",
+          "parenteral-nutrition-007",
+          "parenteral-nutrition-008",
+          "parenteral-nutrition-012",
+          "parenteral-nutrition-013",
+          "parenteral-nutrition-015",
+          "parenteral-nutrition-020",
+          "parenteral-nutrition-025",
+          "parenteral-nutrition-027",
+          "parenteral-nutrition-030",
+          "parenteral-nutrition-031",
+          "parenteral-nutrition-033",
+          "parenteral-nutrition-044",
+          "parenteral-nutrition-045",
+          "parenteral-nutrition-047",
+          "parenteral-nutrition-048",
+          "parenteral-nutrition-049",
+          "parenteral-nutrition-103",
+          "parenteral-nutrition-106"
+        ],
+        "wholeModuleVerified": false,
+        "cumulativeSelectionChangedByBankGrowth": true
       }
     },
     {
