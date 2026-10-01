@@ -1,0 +1,1174 @@
+{
+  "drug": "budesonide-glycopyrrolate-formoterol",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Full relevant current04/2026 clinical/product SPL and56-page FDA asthma-supplement label; exact per-puff versus two-puff strengths, age and device distinctions.",
+  "blueprint": {
+    "sections": [
+      [
+        "indications",
+        "Indications"
+      ],
+      [
+        "dosage",
+        "Dosage and administration"
+      ],
+      [
+        "safety",
+        "Safety"
+      ],
+      [
+        "interactions",
+        "Drug interactions"
+      ],
+      [
+        "populations",
+        "Use in specific populations"
+      ],
+      [
+        "pharmacology",
+        "Clinical pharmacology"
+      ],
+      [
+        "practice",
+        "Monitoring and counseling"
+      ],
+      [
+        "product",
+        "Product identification"
+      ]
+    ],
+    "essential_safety": true,
+    "hero_facts": 3,
+    "APAP_modified": false
+  },
+  "sources": [
+    {
+      "id": "label",
+      "title": "Breztri Aerosphere \u00b7 Current full label",
+      "publisher": "AstraZeneca / DailyMed",
+      "note": "Revised 04/2026; SPL 9 effective April 27, 2026; published June 23, 2026. Includes distinct COPD/asthma strengths and current device instructions.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=715433dc-cb2b-43ea-b6df-c5b4177adc6c"
+    },
+    {
+      "id": "fda",
+      "title": "Breztri Aerosphere \u00b72026 FDA approved asthma supplement label",
+      "publisher": "FDA",
+      "note": "NDA 212122 supplement 009; current 56-page approved label retained; clinical/device/formulation distinctions compared.",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/212122s009lbl.pdf"
+    }
+  ],
+  "source_records": [
+    {
+      "id": "label",
+      "local_snapshot": "/tmp/nas-drug-sources/breztri.xml",
+      "label_revision": "04/2026",
+      "set_id": "715433dc-cb2b-43ea-b6df-c5b4177adc6c",
+      "spl_version": "9",
+      "spl_effective_time": "20260427",
+      "dailymed_published_date": "2026-06-23",
+      "sha256": "7c427229394a25d31b89dc4651a6b8164a90fdf9d890ea06647291cdb083cc43",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-22-thyroid-metformin/breztri.xml"
+    },
+    {
+      "id": "fda",
+      "local_snapshot": "/tmp/nas-drug-sources/breztri-fda2026.pdf",
+      "revision": "04/2026 supplement009 / ReferenceID5788123",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/212122s009lbl.pdf",
+      "sha256": "a64373bcfe3720f859158c3fe91d14690353054f851c7459ea22517a6471380b",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-22-thyroid-metformin/breztri-fda2026.pdf"
+    }
+  ],
+  "assertion_map": [
+    {
+      "section": "indications",
+      "card": "Current approved indications",
+      "assertions": [
+        "The current U.S. 04/2026 label covers maintenance COPD treatment in adults and maintenance asthma treatment in adults/adolescents age 12 and older. COPD uses 160/9/4.8 mcg per inhalation; asthma uses 160/18/4.8 mcg. The order is budesonide/glycopyrrolate/formoterol fumarate. Older COPD-only statements are superseded for this current product, but the two strengths are not automatically interchangeable."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "1.1\u20131.2;2.2\u20132.3;3"
+        },
+        {
+          "id": "fda",
+          "sections": "1.1\u20131.2;2.2\u20132.3;3"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Limitations and evidence scope",
+      "assertions": [
+        "Breztri is a prescription metered-dose inhaler approved under NDA 212122. It is not indicated for acute bronchospasm, and primary treatment of status asthmaticus or acute episodes needing intensive measures is contraindicated. Formoterol\u2019s rapid onset does not make this triple product a rescue/MART inhaler. Label COPD and asthma trial benefits are population-specific; no universal risk-reduction or first-line claim is inferred."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "1.3;4;12.1;14; marketing"
+        },
+        {
+          "id": "fda",
+          "sections": "1.3;4;12.1;14; marketing"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Indication-specific regimen",
+      "assertions": [
+        "Take two inhalations in the morning and two in the evening by oral inhalation; never exceed two inhalations twice daily. The table distinguishes each puff from each TWO-PUFF administration. Rinse the mouth with water after each two-puff administration and spit rather than swallow. Do not add extra Breztri doses for symptoms."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2.1\u20132.3;3"
+        },
+        {
+          "id": "fda",
+          "sections": "2.1\u20132.3;3"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Indication / age",
+          "Per puff \u2192 per two-puff dose \u00b7 twice daily"
+        ],
+        "rows": [
+          [
+            "COPD \u00b7 adults",
+            "160/9/4.8 \u2192 320/18/9.6 mcg"
+          ],
+          [
+            "Asthma \u00b7 age 12+",
+            "160/18/4.8 \u2192 320/36/9.6 mcg"
+          ],
+          [
+            "Component order",
+            "Budesonide / glycopyrrolate / formoterol fumarate"
+          ],
+          [
+            "Maximum schedule",
+            "Two puffs morning plus two evening"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Priming and inhalation technique",
+      "assertions": [
+        "Prime a new inhaler with four test sprays into the air away from the face, shaking before each. Re-prime with two sprays after more than seven days unused, if dropped, or after weekly actuator rinsing. Use the matching Breztri actuator and follow the illustrated inhalation sequence in the actual pack. Shake before each puff; coordinate actuation with a slow deep breath and hold as instructed. Test sprays are not treatment inhalations."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2.1; Instructions for Use"
+        },
+        {
+          "id": "fda",
+          "sections": "2.1; Instructions for Use"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Cleaning and dose indicator",
+      "assertions": [
+        "For the 120-inhalation device, rinse the yellow actuator weekly after removing/keeping the metal canister dry. The FDA illustrated instructions specify 30 seconds warm-water rinsing through the mouthpiece and 30 through the actuator top, then air-dry fully, such as overnight; do not towel-dry or reinsert the canister while wet. Re-prime with two test sprays after reassembly. Follow the actual 28-puff institutional device leaflet, which differs in illustrated cleaning content. Replace when the indicator reaches zero; residual canister contents do not guarantee a full dose."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2.1;16;120- and28-inhalation Instructions for Use"
+        },
+        {
+          "id": "fda",
+          "sections": "2.1;16;120- and28-inhalation Instructions for Use"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Missed doses and rescue plan",
+      "assertions": [
+        "Patient Information directs taking a missed dose as soon as remembered, but not more than two inhalations twice daily. Do not double or use extra maintenance doses as rescue. Have the prescribed acute-relief inhaler and action plan: current label describes a short-acting beta-agonist/corticosteroid option for asthma or a short-acting beta agonist for asthma/COPD. Increased rescue need or declining benefit requires prompt reassessment."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Patient Information;5.2;17"
+        },
+        {
+          "id": "fda",
+          "sections": "Patient Information;5.2;17"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Organ function and corticosteroid transition",
+      "assertions": [
+        "No older-age-only adjustment is necessary in the label, although sensitivity can vary. Severe hepatic disease requires close monitoring. At the label\u2019s severe-renal threshold, or dialysis, use only when expected benefit outweighs risk; no numerical reduced-puff regimen is established. Taper prior systemic corticosteroids slowly under supervision and monitor lung function/rescue use and adrenal symptoms. Breztri does not supply the systemic steroid support needed during adrenal stress."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "8.5\u20138.7;5.7;12.3"
+        },
+        {
+          "id": "fda",
+          "sections": "8.5\u20138.7;5.7;12.3"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Do not initiate during acute deterioration, exceed the schedule or add another LABA. LABA monotherapy in asthma has serious-event/death risk; this ICS-containing combination does not establish zero risk. Paradoxical bronchospasm or immediate hypersensitivity requires stopping and immediate appropriate treatment. Formoterol can cause tachycardia/arrhythmia, BP/ECG effects, hypokalemia and hyperglycemia; use caution with relevant cardiovascular/metabolic disease.",
+        "Budesonide can cause thrush, pneumonia, infection susceptibility, adrenal suppression and systemic steroid effects. Systemic-steroid withdrawal/stress requires a specific plan. Monitor pediatric growth, bone risk, cataract/glaucoma symptoms and urinary retention; painful red eye/halos or trouble passing urine needs prompt care. Use caution with tuberculosis/untreated infections or ocular herpes and seek advice after measles/chickenpox exposure."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "5.1\u20135.18"
+        },
+        {
+          "id": "fda",
+          "sections": "5.1\u20135.18"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "Contraindicated for primary treatment of status asthmaticus or other acute COPD/asthma episodes requiring intensive measures, and with hypersensitivity to any active ingredient or excipient. Narrow-angle glaucoma, urinary retention and severe organ disease are separate cautions/benefit-risk restrictions, not automatically the same formal contraindication category."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "4;5.15\u20135.16;8.6\u20138.7"
+        },
+        {
+          "id": "fda",
+          "sections": "4;5.15\u20135.16;8.6\u20138.7"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "The current selected Breztri label has no formal boxed warning. It contains a serious asthma-event warning distinguishing LABA monotherapy from ICS/LABA therapy, plus important acute-deterioration, adrenal, infection and cardiovascular precautions. No absence-of-risk conclusion follows from boxed-warning status."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Full PI;5.1\u20135.18"
+        },
+        {
+          "id": "fda",
+          "sections": "Full PI;5.1\u20135.18"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "COPD trials report respiratory infections, pneumonia, back pain, oral candidiasis, influenza, muscle spasms, urinary infection, cough, sinusitis, diarrhea and dysphonia. Current asthma trials commonly report nasopharyngitis, pneumonia and headache. Component-associated reports also include palpitations, tremor, dry mouth, urinary retention and steroid effects. Trial frequencies from one indication/strength are not universal rates for the other."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "6.1;5"
+        },
+        {
+          "id": "fda",
+          "sections": "6.1;5"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Strong CYP3A4 inhibitors",
+      "assertions": [
+        "Strong CYP3A4 inhibitors such as ritonavir, ketoconazole, itraconazole or clarithromycin can increase budesonide exposure and systemic steroid effects. Use caution and individualize therapy/monitoring; the label does not supply a universal dose reduction or automatic safe combination. Review even short-course new medicines."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "7.1;5.9;12.3"
+        },
+        {
+          "id": "fda",
+          "sections": "7.1;5.9;12.3"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Adrenergic and potassium effects",
+      "assertions": [
+        "Additional adrenergic agents can potentiate formoterol effects; do not add another LABA. Xanthines, systemic steroids and diuretics can worsen hypokalemia; non-potassium-sparing diuretics can add ECG effects. MAO inhibitors, tricyclics and QT-prolonging drugs require extreme caution for cardiovascular effects. Check clinically appropriate potassium/ECG when risk warrants rather than routinely supplement every patient."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "5.3;7.2\u20137.5"
+        },
+        {
+          "id": "fda",
+          "sections": "5.3;7.2\u20137.5"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Beta blockers and anticholinergics",
+      "assertions": [
+        "Beta blockers can oppose bronchodilation and cause severe bronchospasm; generally avoid, while essential cardiac indications may require carefully selected cardioselective therapy. Include timolol eye drops in the actual medication history. Avoid other anticholinergic-containing medicines because urinary/ocular and other effects can add; do not independently stop prescribed emergency medicines without an action plan."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "7.6\u20137.7;5.15\u20135.16"
+        },
+        {
+          "id": "fda",
+          "sections": "7.6\u20137.7;5.15\u20135.16"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Adolescents and older adults",
+      "assertions": [
+        "Asthma use is established from age 12; below 12 safety/effectiveness are not established. ICS can reduce growth velocity, so monitor growth routinely and weigh long-term treatment benefits. Older patients need no routine age-only adjustment, but greater sensitivity cannot be excluded and comorbid cardiac/urinary/bone/ocular risks matter."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "8.4\u20138.5;5.14"
+        },
+        {
+          "id": "fda",
+          "sections": "8.4\u20138.5;5.14"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Kidney and liver disease",
+      "assertions": [
+        "Formal combination PK studies in renal/hepatic impairment were not performed. At severe renal impairment, labeled creatinine clearance \u2264 30 mL/min/1.73 m\u00b2, or dialysis, use only if expected benefit exceeds risk. This is the label\u2019s indexed wording, not an independently validated universal eGFR interchange. Severe liver disease may increase budesonide/formoterol exposure; monitor closely. No alternate-day or half-puff algorithm is established."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "8.6\u20138.7;12.3"
+        },
+        {
+          "id": "fda",
+          "sections": "8.6\u20138.7;12.3"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy",
+      "assertions": [
+        "Combination, glycopyrrolate and formoterol human data are inadequate; inhaled-budesonide observational data are more reassuring but do not prove the triple product risk-free. Poor asthma control also increases maternal/fetal risk; monitor and individualize therapy. During labor beta-agonist effects can interfere with uterine contractility, so use only when benefit clearly outweighs risk. Do not independently stop controller therapy for pregnancy."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "8.1;17"
+        },
+        {
+          "id": "fda",
+          "sections": "8.1;17"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Breastfeeding",
+      "assertions": [
+        "Budesonide is present in human milk; human milk information for glycopyrrolate/formoterol and effects on infant/milk production is lacking. Assess maternal respiratory-treatment needs, feeding benefits and infant circumstances. Budesonide-alone findings do not establish absence of exposure or universal safety for all three components."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "8.2"
+        },
+        {
+          "id": "fda",
+          "sections": "8.2"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanisms",
+      "assertions": [
+        "Budesonide is an inhaled glucocorticoid with anti-inflammatory effects. Glycopyrrolate is a long-acting muscarinic antagonist, reducing M3-mediated airway smooth-muscle contraction. Formoterol is a long-acting beta 2 agonist producing bronchodilation. These complementary actions do not establish a reliever or universal step-up strategy for every patient."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "12.1;1.3"
+        },
+        {
+          "id": "fda",
+          "sections": "12.1;1.3"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Disposition and clinical limits",
+      "assertions": [
+        "After inhalation, label plasma peaks occur about 20\u201340 minutes for budesonide, 2\u20136 minutes for glycopyrrolate and 20\u201390 minutes for formoterol. COPD population-analysis effective half-lives are approximately five, 15 and 10 hours, respectively; they are not a validated redosing schedule or universal asthma/organ-disease estimate. Budesonide is extensively CYP3A4-metabolized, formoterol has hepatic conjugation/oxidative pathways and glycopyrronium clearance is substantially renal."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "12.3"
+        },
+        {
+          "id": "fda",
+          "sections": "12.3"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Clinical evidence boundaries",
+      "assertions": [
+        "ETHOS/KRONOS support selected COPD lung-function/exacerbation findings; KALOS/LOGOS support current asthma maintenance approval. Regimens, comparison arms and study populations differ. Do not infer that the doubled glycopyrrolate asthma strength is superior for every COPD patient, or that old trial notation listing 320/18/9.6 mcg per two-puff COPD dose describes the new 160/18/4.8 mcg per-puff asthma inhaler."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "14.1\u201314.2;2.2\u20132.3"
+        },
+        {
+          "id": "fda",
+          "sections": "14.1\u201314.2;2.2\u20132.3"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": [
+        "Assess symptoms, exacerbations, lung function when appropriate, adherence, device technique and rescue use. Check thrush/infection, cardiovascular or urinary/ocular symptoms and adrenal effects. COPD label recommends baseline and periodic bone-density assessment; monitor pediatric growth and relevant eye/bone risks. Potassium/glucose or cardiac testing is risk-directed, not a mandatory universal fixed panel/interval."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "5;17"
+        },
+        {
+          "id": "fda",
+          "sections": "5;17"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling and urgent care",
+      "assertions": [
+        "Use the correct strength morning/evening, rinse/spit afterward, prime/re-prime and follow the pack-specific cleaning/discard rules. Keep the prescribed reliever/action plan available. Seek immediate care for serious breathing deterioration, paradoxical bronchospasm, severe allergy, acute painful red eye/halos or concerning cardiac symptoms. Contact the clinician for increased reliever need, pneumonia symptoms, thrush or urinary problems."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2;5;17; Patient Information; Instructions for Use"
+        },
+        {
+          "id": "fda",
+          "sections": "2;5;17; Patient Information; Instructions for Use"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Continuity and systemic steroids",
+      "assertions": [
+        "Do not independently stop maintenance treatment or substitute another inhaler\u2019s actuator. Check for duplicate LABA/LAMA products and CYP3A4 inhibitors. Patients transitioning from systemic steroids require a taper and stress-supplementation plan; carry the clinician-recommended warning information. A controlled cough or better spirometry does not by itself prove adrenal recovery."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "5.3;5.7;7;16\u201317"
+        },
+        {
+          "id": "fda",
+          "sections": "5.3;5.7;7;16\u201317"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Current 120-inhalation COPD pack 160/9/4.8 mcg is NDC 0310-4616-12; asthma 160/18/4.8 mcg is NDC 0310-6616-01. Each has 10.7 g fill, a yellow actuator, white mouthpiece, grey cap and attached dose indicator. Verify the printed strength/indication rather than color alone. Each canister belongs only with its Breztri actuator."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "3;16"
+        },
+        {
+          "id": "fda",
+          "sections": "3;16"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Current strengths are 160/9/4.8 and 160/18/4.8 mcg per inhalation, ordered budesonide/glycopyrrolate/formoterol fumarate. Each two-puff administration doubles those amounts, not the number of daily administrations. Both have 120-puff packs and 28-puff institutional packs; no nebulizer or dry-powder conversion is supplied. PK active-moiety names glycopyrronium/formoterol do not silently redefine the labeled strength units."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2\u20133;11;12.3;16"
+        },
+        {
+          "id": "fda",
+          "sections": "2\u20133;11;12.3;16"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Store 20\u201325\u00b0C with 15\u201330\u00b0C excursions, dry and away from heat/sunlight. Keep canister at room temperature before use; do not puncture, burn or expose above 49\u00b0C. Never use a float test. Discard at indicator zero OR three months after pouch removal for 120 puffs, three weeks for 28 puffs, whichever comes first. Record pouch-opening date; leftover contents do not extend usable dosing. Keep canister dry during actuator cleaning."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "16; Instructions for Use"
+        },
+        {
+          "id": "fda",
+          "sections": "16; Instructions for Use"
+        }
+      ]
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Current approved indications",
+      "assertions": [
+        "The current U.S. 04/2026 label covers maintenance COPD treatment in adults and maintenance asthma treatment in adults/adolescents age 12 and older. COPD uses 160/9/4.8 mcg per inhalation; asthma uses 160/18/4.8 mcg. The order is budesonide/glycopyrrolate/formoterol fumarate. Older COPD-only statements are superseded for this current product, but the two strengths are not automatically interchangeable."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "1.1\u20131.2;2.2\u20132.3;3"
+        },
+        {
+          "id": "fda",
+          "sections": "1.1\u20131.2;2.2\u20132.3;3"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Limitations and evidence scope",
+      "assertions": [
+        "Breztri is a prescription metered-dose inhaler approved under NDA 212122. It is not indicated for acute bronchospasm, and primary treatment of status asthmaticus or acute episodes needing intensive measures is contraindicated. Formoterol\u2019s rapid onset does not make this triple product a rescue/MART inhaler. Label COPD and asthma trial benefits are population-specific; no universal risk-reduction or first-line claim is inferred."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "1.3;4;12.1;14; marketing"
+        },
+        {
+          "id": "fda",
+          "sections": "1.3;4;12.1;14; marketing"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Indication-specific regimen",
+      "assertions": [
+        "Take two inhalations in the morning and two in the evening by oral inhalation; never exceed two inhalations twice daily. The table distinguishes each puff from each TWO-PUFF administration. Rinse the mouth with water after each two-puff administration and spit rather than swallow. Do not add extra Breztri doses for symptoms."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2.1\u20132.3;3"
+        },
+        {
+          "id": "fda",
+          "sections": "2.1\u20132.3;3"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Indication / age",
+          "Per puff \u2192 per two-puff dose \u00b7 twice daily"
+        ],
+        "rows": [
+          [
+            "COPD \u00b7 adults",
+            "160/9/4.8 \u2192 320/18/9.6 mcg"
+          ],
+          [
+            "Asthma \u00b7 age 12+",
+            "160/18/4.8 \u2192 320/36/9.6 mcg"
+          ],
+          [
+            "Component order",
+            "Budesonide / glycopyrrolate / formoterol fumarate"
+          ],
+          [
+            "Maximum schedule",
+            "Two puffs morning plus two evening"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Priming and inhalation technique",
+      "assertions": [
+        "Prime a new inhaler with four test sprays into the air away from the face, shaking before each. Re-prime with two sprays after more than seven days unused, if dropped, or after weekly actuator rinsing. Use the matching Breztri actuator and follow the illustrated inhalation sequence in the actual pack. Shake before each puff; coordinate actuation with a slow deep breath and hold as instructed. Test sprays are not treatment inhalations."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2.1; Instructions for Use"
+        },
+        {
+          "id": "fda",
+          "sections": "2.1; Instructions for Use"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Cleaning and dose indicator",
+      "assertions": [
+        "For the 120-inhalation device, rinse the yellow actuator weekly after removing/keeping the metal canister dry. The FDA illustrated instructions specify 30 seconds warm-water rinsing through the mouthpiece and 30 through the actuator top, then air-dry fully, such as overnight; do not towel-dry or reinsert the canister while wet. Re-prime with two test sprays after reassembly. Follow the actual 28-puff institutional device leaflet, which differs in illustrated cleaning content. Replace when the indicator reaches zero; residual canister contents do not guarantee a full dose."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2.1;16;120- and28-inhalation Instructions for Use"
+        },
+        {
+          "id": "fda",
+          "sections": "2.1;16;120- and28-inhalation Instructions for Use"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Missed doses and rescue plan",
+      "assertions": [
+        "Patient Information directs taking a missed dose as soon as remembered, but not more than two inhalations twice daily. Do not double or use extra maintenance doses as rescue. Have the prescribed acute-relief inhaler and action plan: current label describes a short-acting beta-agonist/corticosteroid option for asthma or a short-acting beta agonist for asthma/COPD. Increased rescue need or declining benefit requires prompt reassessment."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Patient Information;5.2;17"
+        },
+        {
+          "id": "fda",
+          "sections": "Patient Information;5.2;17"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Organ function and corticosteroid transition",
+      "assertions": [
+        "No older-age-only adjustment is necessary in the label, although sensitivity can vary. Severe hepatic disease requires close monitoring. At the label\u2019s severe-renal threshold, or dialysis, use only when expected benefit outweighs risk; no numerical reduced-puff regimen is established. Taper prior systemic corticosteroids slowly under supervision and monitor lung function/rescue use and adrenal symptoms. Breztri does not supply the systemic steroid support needed during adrenal stress."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "8.5\u20138.7;5.7;12.3"
+        },
+        {
+          "id": "fda",
+          "sections": "8.5\u20138.7;5.7;12.3"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Do not initiate during acute deterioration, exceed the schedule or add another LABA. LABA monotherapy in asthma has serious-event/death risk; this ICS-containing combination does not establish zero risk. Paradoxical bronchospasm or immediate hypersensitivity requires stopping and immediate appropriate treatment. Formoterol can cause tachycardia/arrhythmia, BP/ECG effects, hypokalemia and hyperglycemia; use caution with relevant cardiovascular/metabolic disease.",
+        "Budesonide can cause thrush, pneumonia, infection susceptibility, adrenal suppression and systemic steroid effects. Systemic-steroid withdrawal/stress requires a specific plan. Monitor pediatric growth, bone risk, cataract/glaucoma symptoms and urinary retention; painful red eye/halos or trouble passing urine needs prompt care. Use caution with tuberculosis/untreated infections or ocular herpes and seek advice after measles/chickenpox exposure."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "5.1\u20135.18"
+        },
+        {
+          "id": "fda",
+          "sections": "5.1\u20135.18"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "Contraindicated for primary treatment of status asthmaticus or other acute COPD/asthma episodes requiring intensive measures, and with hypersensitivity to any active ingredient or excipient. Narrow-angle glaucoma, urinary retention and severe organ disease are separate cautions/benefit-risk restrictions, not automatically the same formal contraindication category."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "4;5.15\u20135.16;8.6\u20138.7"
+        },
+        {
+          "id": "fda",
+          "sections": "4;5.15\u20135.16;8.6\u20138.7"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "The current selected Breztri label has no formal boxed warning. It contains a serious asthma-event warning distinguishing LABA monotherapy from ICS/LABA therapy, plus important acute-deterioration, adrenal, infection and cardiovascular precautions. No absence-of-risk conclusion follows from boxed-warning status."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "Full PI;5.1\u20135.18"
+        },
+        {
+          "id": "fda",
+          "sections": "Full PI;5.1\u20135.18"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "COPD trials report respiratory infections, pneumonia, back pain, oral candidiasis, influenza, muscle spasms, urinary infection, cough, sinusitis, diarrhea and dysphonia. Current asthma trials commonly report nasopharyngitis, pneumonia and headache. Component-associated reports also include palpitations, tremor, dry mouth, urinary retention and steroid effects. Trial frequencies from one indication/strength are not universal rates for the other."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "6.1;5"
+        },
+        {
+          "id": "fda",
+          "sections": "6.1;5"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Strong CYP3A4 inhibitors",
+      "assertions": [
+        "Strong CYP3A4 inhibitors such as ritonavir, ketoconazole, itraconazole or clarithromycin can increase budesonide exposure and systemic steroid effects. Use caution and individualize therapy/monitoring; the label does not supply a universal dose reduction or automatic safe combination. Review even short-course new medicines."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "7.1;5.9;12.3"
+        },
+        {
+          "id": "fda",
+          "sections": "7.1;5.9;12.3"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Adrenergic and potassium effects",
+      "assertions": [
+        "Additional adrenergic agents can potentiate formoterol effects; do not add another LABA. Xanthines, systemic steroids and diuretics can worsen hypokalemia; non-potassium-sparing diuretics can add ECG effects. MAO inhibitors, tricyclics and QT-prolonging drugs require extreme caution for cardiovascular effects. Check clinically appropriate potassium/ECG when risk warrants rather than routinely supplement every patient."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "5.3;7.2\u20137.5"
+        },
+        {
+          "id": "fda",
+          "sections": "5.3;7.2\u20137.5"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Beta blockers and anticholinergics",
+      "assertions": [
+        "Beta blockers can oppose bronchodilation and cause severe bronchospasm; generally avoid, while essential cardiac indications may require carefully selected cardioselective therapy. Include timolol eye drops in the actual medication history. Avoid other anticholinergic-containing medicines because urinary/ocular and other effects can add; do not independently stop prescribed emergency medicines without an action plan."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "7.6\u20137.7;5.15\u20135.16"
+        },
+        {
+          "id": "fda",
+          "sections": "7.6\u20137.7;5.15\u20135.16"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Adolescents and older adults",
+      "assertions": [
+        "Asthma use is established from age 12; below 12 safety/effectiveness are not established. ICS can reduce growth velocity, so monitor growth routinely and weigh long-term treatment benefits. Older patients need no routine age-only adjustment, but greater sensitivity cannot be excluded and comorbid cardiac/urinary/bone/ocular risks matter."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "8.4\u20138.5;5.14"
+        },
+        {
+          "id": "fda",
+          "sections": "8.4\u20138.5;5.14"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Kidney and liver disease",
+      "assertions": [
+        "Formal combination PK studies in renal/hepatic impairment were not performed. At severe renal impairment, labeled creatinine clearance \u2264 30 mL/min/1.73 m\u00b2, or dialysis, use only if expected benefit exceeds risk. This is the label\u2019s indexed wording, not an independently validated universal eGFR interchange. Severe liver disease may increase budesonide/formoterol exposure; monitor closely. No alternate-day or half-puff algorithm is established."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "8.6\u20138.7;12.3"
+        },
+        {
+          "id": "fda",
+          "sections": "8.6\u20138.7;12.3"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy",
+      "assertions": [
+        "Combination, glycopyrrolate and formoterol human data are inadequate; inhaled-budesonide observational data are more reassuring but do not prove the triple product risk-free. Poor asthma control also increases maternal/fetal risk; monitor and individualize therapy. During labor beta-agonist effects can interfere with uterine contractility, so use only when benefit clearly outweighs risk. Do not independently stop controller therapy for pregnancy."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "8.1;17"
+        },
+        {
+          "id": "fda",
+          "sections": "8.1;17"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Breastfeeding",
+      "assertions": [
+        "Budesonide is present in human milk; human milk information for glycopyrrolate/formoterol and effects on infant/milk production is lacking. Assess maternal respiratory-treatment needs, feeding benefits and infant circumstances. Budesonide-alone findings do not establish absence of exposure or universal safety for all three components."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "8.2"
+        },
+        {
+          "id": "fda",
+          "sections": "8.2"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanisms",
+      "assertions": [
+        "Budesonide is an inhaled glucocorticoid with anti-inflammatory effects. Glycopyrrolate is a long-acting muscarinic antagonist, reducing M3-mediated airway smooth-muscle contraction. Formoterol is a long-acting beta 2 agonist producing bronchodilation. These complementary actions do not establish a reliever or universal step-up strategy for every patient."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "12.1;1.3"
+        },
+        {
+          "id": "fda",
+          "sections": "12.1;1.3"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Disposition and clinical limits",
+      "assertions": [
+        "After inhalation, label plasma peaks occur about 20\u201340 minutes for budesonide, 2\u20136 minutes for glycopyrrolate and 20\u201390 minutes for formoterol. COPD population-analysis effective half-lives are approximately five, 15 and 10 hours, respectively; they are not a validated redosing schedule or universal asthma/organ-disease estimate. Budesonide is extensively CYP3A4-metabolized, formoterol has hepatic conjugation/oxidative pathways and glycopyrronium clearance is substantially renal."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "12.3"
+        },
+        {
+          "id": "fda",
+          "sections": "12.3"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Clinical evidence boundaries",
+      "assertions": [
+        "ETHOS/KRONOS support selected COPD lung-function/exacerbation findings; KALOS/LOGOS support current asthma maintenance approval. Regimens, comparison arms and study populations differ. Do not infer that the doubled glycopyrrolate asthma strength is superior for every COPD patient, or that old trial notation listing 320/18/9.6 mcg per two-puff COPD dose describes the new 160/18/4.8 mcg per-puff asthma inhaler."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "14.1\u201314.2;2.2\u20132.3"
+        },
+        {
+          "id": "fda",
+          "sections": "14.1\u201314.2;2.2\u20132.3"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": [
+        "Assess symptoms, exacerbations, lung function when appropriate, adherence, device technique and rescue use. Check thrush/infection, cardiovascular or urinary/ocular symptoms and adrenal effects. COPD label recommends baseline and periodic bone-density assessment; monitor pediatric growth and relevant eye/bone risks. Potassium/glucose or cardiac testing is risk-directed, not a mandatory universal fixed panel/interval."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "5;17"
+        },
+        {
+          "id": "fda",
+          "sections": "5;17"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling and urgent care",
+      "assertions": [
+        "Use the correct strength morning/evening, rinse/spit afterward, prime/re-prime and follow the pack-specific cleaning/discard rules. Keep the prescribed reliever/action plan available. Seek immediate care for serious breathing deterioration, paradoxical bronchospasm, severe allergy, acute painful red eye/halos or concerning cardiac symptoms. Contact the clinician for increased reliever need, pneumonia symptoms, thrush or urinary problems."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2;5;17; Patient Information; Instructions for Use"
+        },
+        {
+          "id": "fda",
+          "sections": "2;5;17; Patient Information; Instructions for Use"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Continuity and systemic steroids",
+      "assertions": [
+        "Do not independently stop maintenance treatment or substitute another inhaler\u2019s actuator. Check for duplicate LABA/LAMA products and CYP3A4 inhibitors. Patients transitioning from systemic steroids require a taper and stress-supplementation plan; carry the clinician-recommended warning information. A controlled cough or better spirometry does not by itself prove adrenal recovery."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "5.3;5.7;7;16\u201317"
+        },
+        {
+          "id": "fda",
+          "sections": "5.3;5.7;7;16\u201317"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Current 120-inhalation COPD pack 160/9/4.8 mcg is NDC 0310-4616-12; asthma 160/18/4.8 mcg is NDC 0310-6616-01. Each has 10.7 g fill, a yellow actuator, white mouthpiece, grey cap and attached dose indicator. Verify the printed strength/indication rather than color alone. Each canister belongs only with its Breztri actuator."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "3;16"
+        },
+        {
+          "id": "fda",
+          "sections": "3;16"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Current strengths are 160/9/4.8 and 160/18/4.8 mcg per inhalation, ordered budesonide/glycopyrrolate/formoterol fumarate. Each two-puff administration doubles those amounts, not the number of daily administrations. Both have 120-puff packs and 28-puff institutional packs; no nebulizer or dry-powder conversion is supplied. PK active-moiety names glycopyrronium/formoterol do not silently redefine the labeled strength units."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "2\u20133;11;12.3;16"
+        },
+        {
+          "id": "fda",
+          "sections": "2\u20133;11;12.3;16"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Store 20\u201325\u00b0C with 15\u201330\u00b0C excursions, dry and away from heat/sunlight. Keep canister at room temperature before use; do not puncture, burn or expose above 49\u00b0C. Never use a float test. Discard at indicator zero OR three months after pouch removal for 120 puffs, three weeks for 28 puffs, whichever comes first. Record pouch-opening date; leftover contents do not extend usable dosing. Keep canister dry during actuator cleaning."
+      ],
+      "sources": [
+        {
+          "id": "label",
+          "sections": "16; Instructions for Use"
+        },
+        {
+          "id": "fda",
+          "sections": "16; Instructions for Use"
+        }
+      ]
+    }
+  ],
+  "hero_assertions": {
+    "essential": {
+      "title": "Maintenance therapy needs a separate rescue plan.",
+      "text": "Do not use extra Breztri doses for acute symptoms or add another LABA. Seek prompt assessment for increasing rescue needs, sudden post-dose wheeze or severe allergic symptoms.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "facts": [
+      [
+        "COPD per puff",
+        "160/9/4.8 mcg \u00b7 adults"
+      ],
+      [
+        "Asthma per puff",
+        "160/18/4.8 mcg \u00b7 age 12+"
+      ],
+      [
+        "Schedule",
+        "Two inhalations twice daily"
+      ]
+    ],
+    "sources": [
+      "label",
+      "fda"
+    ]
+  },
+  "section_assertions": [
+    {
+      "section": "indications",
+      "summary": "Breztri is a fixed ICS/LAMA/LABA inhaler with separate COPD and asthma strengths.",
+      "takeaway": "Current asthma approval begins at age 12; it remains maintenance therapy.",
+      "sources": [
+        "fda",
+        "label"
+      ]
+    },
+    {
+      "section": "dosage",
+      "summary": "Use two inhalations twice daily of the strength prescribed for the indication.",
+      "takeaway": "Asthma and COPD differ in glycopyrrolate amount per puff.",
+      "sources": [
+        "fda",
+        "label"
+      ]
+    },
+    {
+      "section": "safety",
+      "summary": "Steroid, anticholinergic and beta-agonist risks require coordinated monitoring.",
+      "takeaway": "Sudden worsening after a puff needs prompt rescue assessment, not another Breztri dose.",
+      "sources": [
+        "fda",
+        "label"
+      ]
+    },
+    {
+      "section": "interactions",
+      "summary": "Avoid duplicate LABA/anticholinergic therapy and assess steroid-exposure and cardiac interactions.",
+      "takeaway": "Ophthalmic beta blockers also belong in the medication review.",
+      "sources": [
+        "fda",
+        "label"
+      ]
+    },
+    {
+      "section": "populations",
+      "summary": "Age, renal/hepatic status and reproductive needs require product-specific assessment.",
+      "takeaway": "Pediatric approval is asthma age 12+, not pediatric COPD or under 12.",
+      "sources": [
+        "fda",
+        "label"
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "summary": "Budesonide reduces inflammation while glycopyrrolate and formoterol bronchodilate through different receptors.",
+      "takeaway": "The fixed triple inhaler remains maintenance therapy despite rapid formoterol onset.",
+      "sources": [
+        "fda",
+        "label"
+      ]
+    },
+    {
+      "section": "practice",
+      "summary": "Check inhaler technique, disease control, rescue use and adverse-effect risk regularly.",
+      "takeaway": "Write both the indication and full per-puff strength on the regimen.",
+      "sources": [
+        "fda",
+        "label"
+      ]
+    },
+    {
+      "section": "product",
+      "summary": "Both current strengths use a pressurized metered-dose Aerosphere device.",
+      "takeaway": "Per-puff glycopyrrolate differs while inhalation count and main device appearance can match.",
+      "sources": [
+        "fda",
+        "label"
+      ]
+    }
+  ],
+  "limitations": [
+    "The 2026 asthma approval and different glycopyrrolate strength are verified. The product is not a MART or rescue regimen.",
+    "Renal \u00a78.7 uses indexed CrCl \u226430 mL/min/1.73 m\u00b2; no universal eGFR interchange or reduced-puff algorithm is inferred. COPD effective half-lives are not generalized to every population.",
+    "The DailyMed parsed IFU omits image-embedded steps. The full FDA illustrated PDF text was read for the 120-puff weekly rinse (30 + 30 seconds), air drying and repriming; the 28-puff IFU was reviewed separately without assuming an identical cleaning schedule.",
+    "No universal first-line or step-up recommendation, individual risk-reduction percentage, unreviewed nebulizer/spacer conversion or triple-product lactation compatibility is claimed."
+  ],
+  "unresolved_source_questions": [],
+  "validation": {
+    "schema": "Actual validateMonograph result [] on 2026-10-01; eight ordered sections, four ordered Safety cards, three ordered Product cards and three hero tuples verified.",
+    "tests_build_lint": "Parent batch checks required",
+    "rendered_page": "Parent batch QA required"
+  },
+  "monograph_sha256": "f5a71d9897d09b23344495a28c56fbf1700ca2ed31222fea8f1af3156dbede19",
+  "source_archive": {
+    "directory": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-22-thyroid-metformin",
+    "checked": "2026-10-01",
+    "verified": "Full selected DailyMed SPL XML, parsed sections and public pages plus current FDA Cosopt PF and Breztri approved PDFs/text copied with exact SHA256 verification. Existing divergent files preserved."
+  }
+}

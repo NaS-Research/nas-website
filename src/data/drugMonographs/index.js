@@ -209,6 +209,16 @@ import { lansoprazole } from "./lansoprazole.js";
 import { insulinHumanInsulinIsophaneHuman } from "./insulin-human-insulin-isophane-human.js";
 import { oxcarbazepine } from "./oxcarbazepine.js";
 import { promethazine } from "./promethazine.js";
+import { dicyclomine } from "./dicyclomine.js";
+import { calcium } from "./calcium.js";
+import { minoxidil } from "./minoxidil.js";
+import { linaclotide } from "./linaclotide.js";
+import { metoclopramide } from "./metoclopramide.js";
+import { rizatriptan } from "./rizatriptan.js";
+import { oseltamivir } from "./oseltamivir.js";
+import { nystatin } from "./nystatin.js";
+import { dorzolamide_timolol } from "./dorzolamide-timolol.js";
+import { budesonide_glycopyrrolate_formoterol } from "./budesonide-glycopyrrolate-formoterol.js";
 
 export const reviewedDrugMonographs = {
   "atorvastatin": atorvastatin,
@@ -421,4 +431,14 @@ export const reviewedDrugMonographs = {
   "insulin-human-insulin-isophane-human": insulinHumanInsulinIsophaneHuman,
   "oxcarbazepine": oxcarbazepine,
   "promethazine": promethazine,
+  "dicyclomine": dicyclomine,
+  "calcium": calcium,
+  "minoxidil": minoxidil,
+  "linaclotide": linaclotide,
+  "metoclopramide": metoclopramide,
+  "rizatriptan": rizatriptan,
+  "oseltamivir": oseltamivir,
+  "nystatin": nystatin,
+  "dorzolamide-timolol": dorzolamide_timolol,
+  "budesonide-glycopyrrolate-formoterol": budesonide_glycopyrrolate_formoterol,
 };

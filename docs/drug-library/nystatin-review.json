@@ -1,0 +1,848 @@
+{
+  "drug": "nystatin",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Current selected U.S. single-ingredient oral suspension/tablets and dermatologic cream/ointment/powder: full labels, current FDA status and focused public IDSA 2016 oropharyngeal/esophageal guidance.",
+  "sources": [
+    {
+      "id": "nystsusp",
+      "title": "PAI · nystatin oral suspension",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28b4e26e-206a-4e8a-abfe-774b780e91c3",
+      "note": "Full public manufacturer label and patient instructions; SPL version 9, effective 20260721. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "9",
+      "effective_date": "20260721",
+      "xml_sha256": "fddbdbe09f4e2bd5d073fd92f53c638682c33994aadbd3c07e8db9bde20a28cf",
+      "retrieved_xml": "/tmp/nas-drug-sources/nystsusp.xml"
+    },
+    {
+      "id": "nysttab",
+      "title": "Avet · nystatin 500,000-unit tablets",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e87b8480-987d-4f82-87bf-cf831d6984a1",
+      "note": "Full public manufacturer label and patient instructions; SPL version 11, effective 20250623. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "11",
+      "effective_date": "20250623",
+      "xml_sha256": "456098280913ae4b6430176352ef207e2aafd8b7838dd127a29755a6c4208e43",
+      "retrieved_xml": "/tmp/nas-drug-sources/nysttab.xml"
+    },
+    {
+      "id": "nystcream",
+      "title": "Torrent · nystatin cream",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=559b5bd4-3564-4437-8d0a-fa3a972f8b83",
+      "note": "Full public manufacturer label and patient instructions; SPL version 9, effective 20260501. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "9",
+      "effective_date": "20260501",
+      "xml_sha256": "20359cb83e1569d2a811565d6246b6104bd840cbcf33eb54a0fa16a53728c4f8",
+      "retrieved_xml": "/tmp/nas-drug-sources/nystcream.xml"
+    },
+    {
+      "id": "nystoint",
+      "title": "Torrent · nystatin ointment",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4949dea7-d2b9-4e0d-974a-39408fa174ba",
+      "note": "Full public manufacturer label and patient instructions; SPL version 8, effective 20260508. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "8",
+      "effective_date": "20260508",
+      "xml_sha256": "31bc70d2e9048b4706dc2a22b4198f074e1e6da00b03d64d756eaafd3ad59b21",
+      "retrieved_xml": "/tmp/nas-drug-sources/nystoint.xml"
+    },
+    {
+      "id": "nystpowder",
+      "title": "Padagis Nystop · topical powder",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e1b4622c-0f9f-4c00-b42c-2aa85a5e3d4f",
+      "note": "Full public manufacturer label and patient instructions; SPL version 11, effective 20241031. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "11",
+      "effective_date": "20241031",
+      "xml_sha256": "b52cb74716557da213e2b5c852539b3ac76f74eabaaa09593e781c5179a072e2",
+      "retrieved_xml": "/tmp/nas-drug-sources/nystpowder.xml"
+    },
+    {
+      "id": "idsa-candida",
+      "title": "IDSA · Candidiasis guideline, 2016",
+      "publisher": "Official regulator or professional society",
+      "url": "https://www.idsociety.org/practice-guideline/candidiasis/",
+      "note": "Public full professional guideline; complete focused oropharyngeal and esophageal recommendations/supporting sections read October 1, 2026. No claim of universal topical or neonatal guideline dosing.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/idsa-candidiasis2016.html",
+      "source_sha256": "4dc0f1195830047e52b2968086b28dd93a4354d1209e7a99912daf6d5b6f6a01"
+    },
+    {
+      "id": "ANDA203621",
+      "title": "FDA · ANDA203621 current products",
+      "publisher": "Official regulator or professional society",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:ANDA203621&limit=1",
+      "note": "Current official product array retrieved October 1, 2026. Marketing status is not pharmacy stock.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/ANDA203621.json",
+      "source_sha256": "92599402289bf2697f6d86e237d5a6a5597fbac01a525afb422e9611d35b8f7d"
+    },
+    {
+      "id": "ANDA062474",
+      "title": "FDA · ANDA062474 current products",
+      "publisher": "Official regulator or professional society",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:ANDA062474&limit=1",
+      "note": "Current official product array retrieved October 1, 2026. Marketing status is not pharmacy stock.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/ANDA062474.json",
+      "source_sha256": "8bee07b32eb0eaaa68284f5a6119521c184e373fa7aa09190096f0f1267fd032"
+    },
+    {
+      "id": "ANDA212557",
+      "title": "FDA · ANDA212557 current products",
+      "publisher": "Official regulator or professional society",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:ANDA212557&limit=1",
+      "note": "Current official product array retrieved October 1, 2026. Marketing status is not pharmacy stock.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/ANDA212557.json",
+      "source_sha256": "aa81b0608d1f583d3a44a9e38f0fd0a59e87877d295c764b873406ea6ed47c5a"
+    },
+    {
+      "id": "ANDA211838",
+      "title": "FDA · ANDA211838 current products",
+      "publisher": "Official regulator or professional society",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:ANDA211838&limit=1",
+      "note": "Current official product array retrieved October 1, 2026. Marketing status is not pharmacy stock.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/ANDA211838.json",
+      "source_sha256": "80f225ad26468d5fcd0fb0929e27496808775e0ae9c98571044242e77834d96e"
+    },
+    {
+      "id": "ANDA064118",
+      "title": "FDA · ANDA064118 current products",
+      "publisher": "Official regulator or professional society",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:ANDA064118&limit=1",
+      "note": "Current official product array retrieved October 1, 2026. Marketing status is not pharmacy stock.",
+      "checked": "2026-10-01",
+      "access": "public primary source",
+      "retrieved_source": "/tmp/nas-drug-sources/ANDA064118.json",
+      "source_sha256": "48dc6351b2e7ffa06fb9268a21fcbbf29e5b7f8b3dd28935f8a29352e0e42124"
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Labeled sites and status",
+      "assertions": {
+        "paragraphs": [
+          "Oral suspension treats candidiasis of the oral cavity. Swallowed tablets treat non-esophageal gastrointestinal mucosal candidiasis. Cream, ointment and topical powder treat cutaneous/mucocutaneous infections caused by susceptible Candida; they are not for systemic, oral, intravaginal or ophthalmic use. Selected products have FDA Prescription status; package records do not establish stock."
+        ]
+      },
+      "source_sections": {
+        "nystsusp": [
+          "Indications",
+          "Dosage and Administration"
+        ],
+        "nysttab": [
+          "Indications",
+          "Dosage and Administration"
+        ],
+        "nystcream": [
+          "Indications",
+          "Precautions",
+          "Dosage and Administration"
+        ],
+        "nystoint": [
+          "Indications",
+          "Precautions",
+          "Dosage and Administration"
+        ],
+        "nystpowder": [
+          "Indications",
+          "Precautions",
+          "Dosage and Administration"
+        ],
+        "ANDA203621": [
+          "Current product array"
+        ],
+        "ANDA062474": [
+          "Current product array"
+        ],
+        "ANDA212557": [
+          "Current product array"
+        ],
+        "ANDA211838": [
+          "Current product array"
+        ],
+        "ANDA064118": [
+          "Current product array"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Clinical role and limitations",
+      "assertions": {
+        "paragraphs": [
+          "IDSA’s 2016 guideline includes nystatin suspension as an alternative for mild oropharyngeal candidiasis. Moderate/severe oral disease needs a different plan; esophageal candidiasis requires systemic antifungal therapy. Skin labels’ laboratory activity statements are not an indication to treat every fungal rash or presumed dermatophyte infection."
+        ]
+      },
+      "source_sections": {
+        "idsa-candida": [
+          "XVI oropharyngeal; XVII esophageal"
+        ],
+        "nystcream": [
+          "Indications",
+          "Precautions"
+        ],
+        "nystoint": [
+          "Indications"
+        ],
+        "nystpowder": [
+          "Indications"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Oral suspension doses",
+      "assertions": {
+        "paragraphs": [
+          "Selected concentration: 100,000 units/mL. Give half the dose to each side of the mouth; retain as long as possible before swallowing. Shake well and measure with the calibrated device."
+        ],
+        "table": {
+          "headers": [
+            "Population",
+            "Selected label dose"
+          ],
+          "rows": [
+            [
+              "Infants",
+              "2 mL (200,000 units) four times daily; avoid feeding for 5–10 minutes afterward in infants/young children."
+            ],
+            [
+              "Premature/low-birth-weight infants",
+              "Limited studies report 1 mL four times daily effective; requires a neonatal clinical plan, not automatic extrapolation."
+            ],
+            [
+              "Children and adults",
+              "4–6 mL (400,000–600,000 units) four times daily."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "nystsusp": [
+          "Dosage and Administration",
+          "Principal display panel"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Oral duration and tablet distinction",
+      "assertions": {
+        "paragraphs": [
+          "Suspension label: continue at least 48 hours after perioral symptoms disappear and cultures demonstrate Candida eradication. IDSA mild-oropharyngeal guidance: 4–6 mL of 100,000 units/mL four times daily for 7–14 days, separately identified from the label. Tablets: one or two 500,000-unit tablets three times daily (500,000–1,000,000 units per dose); continue at least 48 hours after clinical cure. Tablets are for the gastrointestinal indication, not a substitute oral-contact formulation or esophageal treatment."
+        ]
+      },
+      "source_sections": {
+        "nystsusp": [
+          "Dosage and Administration"
+        ],
+        "nysttab": [
+          "Dosage and Administration",
+          "Indications"
+        ],
+        "idsa-candida": [
+          "XVI Recommendation 123"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Topical regimens",
+      "assertions": {
+        "paragraphs": [
+          "Adults and pediatric patients, neonates and older: cream or ointment applied liberally to affected areas twice daily or as directed until healing is complete. Powder: apply to candidal lesions two or three times daily until healed; the selected label favors powder for very moist lesions. For Candida infection of feet, powder can also be applied to footwear. This does not authorize powder for nonspecific athlete’s foot or oral ingestion."
+        ]
+      },
+      "source_sections": {
+        "nystcream": [
+          "Indications",
+          "Precautions",
+          "Dosage and Administration"
+        ],
+        "nystoint": [
+          "Indications",
+          "Precautions",
+          "Dosage and Administration"
+        ],
+        "nystpowder": [
+          "Indications",
+          "Precautions",
+          "Dosage and Administration"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and dose changes",
+      "assertions": {
+        "paragraphs": [
+          "Follow the exact prescription and complete the directed course even after early symptom relief. Keep skin products at the specified skin site; do not interchange units/mL suspension with units/g skin products. No standard systemic, renal/hepatic percentage adjustment or universal maximum is provided. Obtain product-specific missed-dose advice; avoid making up extra doses."
+        ]
+      },
+      "source_sections": {
+        "nystsusp": [
+          "Dosage and Administration",
+          "Patient Information",
+          "Precautions"
+        ],
+        "nysttab": [
+          "Dosage and Administration",
+          "Patient Information",
+          "Precautions"
+        ],
+        "nystcream": [
+          "Dosage and Administration",
+          "Patient Information",
+          "Precautions"
+        ],
+        "nystoint": [
+          "Dosage and Administration",
+          "Patient Information",
+          "Precautions"
+        ],
+        "nystpowder": [
+          "Dosage and Administration",
+          "Patient Information",
+          "Precautions"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Do not use oral nystatin for systemic mycoses; selected skin products exclude systemic, oral, intravaginal and eye use. Stop and reassess irritation or sensitization. Confirm the diagnosis with appropriate testing, especially persistent skin disease, and repeat testing if response is absent. Oral preparations may occasionally yield significant plasma concentrations in renal insufficiency despite ordinarily insignificant absorption. Check product excipients: the selected suspension includes sucrose, propylene glycol and ≤1% alcohol; unit-dose cups are not child-resistant."
+        ]
+      },
+      "source_sections": {
+        "nystcream": [
+          "Precautions",
+          "Indications"
+        ],
+        "nystoint": [
+          "Precautions",
+          "Indications"
+        ],
+        "nystpowder": [
+          "Precautions",
+          "Indications"
+        ],
+        "nystsusp": [
+          "General precautions",
+          "Pharmacokinetics",
+          "Description",
+          "Unit-dose package label"
+        ],
+        "nysttab": [
+          "General precautions",
+          "Pharmacokinetics"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "History of hypersensitivity to nystatin or any component of the selected formulation. Excipient composition varies; a tolerated oral product does not establish tolerance of every cream, ointment or powder."
+        ]
+      },
+      "source_sections": {
+        "nystsusp": [
+          "Contraindications",
+          "Description"
+        ],
+        "nysttab": [
+          "Contraindications",
+          "Description"
+        ],
+        "nystcream": [
+          "Contraindications",
+          "Description"
+        ],
+        "nystoint": [
+          "Contraindications",
+          "Description"
+        ],
+        "nystpowder": [
+          "Contraindications",
+          "Description"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "Selected current oral and dermatologic nystatin labels have no boxed warning. Infection-site restrictions and allergy/irritation precautions remain applicable. These labels do not establish safety of systemic or injected nystatin."
+        ]
+      },
+      "source_sections": {
+        "nystsusp": [
+          "Complete prescribing information",
+          "Precautions"
+        ],
+        "nysttab": [
+          "Complete prescribing information",
+          "Precautions"
+        ],
+        "nystcream": [
+          "Complete prescribing information",
+          "Precautions"
+        ],
+        "nystoint": [
+          "Complete prescribing information",
+          "Precautions"
+        ],
+        "nystpowder": [
+          "Complete prescribing information",
+          "Precautions"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Oral treatment can cause irritation, nausea, vomiting, diarrhea or gastrointestinal upset. Rare reports include urticaria, severe skin reactions, bronchospasm, facial swelling and tachycardia; stop and seek urgent care for severe allergy/skin symptoms. Skin products can cause burning, itching, rash, eczema or application pain. Oral doses above five million units/day have produced nausea/GI upset; this overdose observation is not a recommended maximum. For significant accidental ingestion or overdose seek poison-center/medical advice rather than assume topical products are safe to swallow."
+        ]
+      },
+      "source_sections": {
+        "nystsusp": [
+          "Adverse Reactions",
+          "Overdosage"
+        ],
+        "nysttab": [
+          "Adverse Reactions",
+          "Overdosage"
+        ],
+        "nystcream": [
+          "Adverse Reactions",
+          "Overdosage"
+        ],
+        "nystoint": [
+          "Adverse Reactions",
+          "Overdosage"
+        ],
+        "nystpowder": [
+          "Adverse Reactions",
+          "Overdosage"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Drug and formulation interactions",
+      "assertions": {
+        "paragraphs": [
+          "Selected single-ingredient labels do not provide a clinically established systemic drug-interaction table or routine interaction-driven dose algorithm. Review other antifungals, site products and excipient allergies with the pharmacist; do not mix preparations or replace a corticosteroid-containing combination with plain nystatin without a new plan. Minimal absorption supports a local role, but occasional oral systemic levels in renal insufficiency require clinical judgment."
+        ]
+      },
+      "source_sections": {
+        "nystsusp": [
+          "Complete prescribing information",
+          "Clinical Pharmacology",
+          "Description"
+        ],
+        "nysttab": [
+          "Complete prescribing information",
+          "Clinical Pharmacology",
+          "Description"
+        ],
+        "nystcream": [
+          "Complete prescribing information",
+          "Clinical Pharmacology",
+          "Description"
+        ],
+        "nystoint": [
+          "Complete prescribing information",
+          "Clinical Pharmacology",
+          "Description"
+        ],
+        "nystpowder": [
+          "Complete prescribing information",
+          "Clinical Pharmacology",
+          "Description"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and older patients",
+      "assertions": {
+        "paragraphs": [
+          "Suspension gives infant and child dosing, with limited lower-dose premature/low-birth-weight data. Selected topical labels establish pediatric safety/effectiveness from birth through age 16 and give neonatal-and-older application directions. The tablet label does not provide a distinct pediatric regimen; do not extrapolate adult tablets to neonates. Cream studies included too few patients ≥65 to establish differential response; greater sensitivity remains possible."
+        ]
+      },
+      "source_sections": {
+        "nystsusp": [
+          "Pediatric Use",
+          "Dosage and Administration"
+        ],
+        "nysttab": [
+          "Complete prescribing information: no separate pediatric regimen"
+        ],
+        "nystcream": [
+          "Pediatric Use",
+          "Geriatric Use",
+          "Dosage and Administration"
+        ],
+        "nystoint": [
+          "Pediatric Use",
+          "Dosage and Administration"
+        ],
+        "nystpowder": [
+          "Pediatric Use",
+          "Dosage and Administration"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "assertions": {
+        "paragraphs": [
+          "Oral absorption is usually insignificant, but significant plasma levels may occasionally occur in renal insufficiency. Skin absorption from intact skin/mucosa is not demonstrated in these labels. No quantified renal or hepatic adjustment is supplied; do not invent a creatinine-clearance table or assume severe organ disease has been fully studied. Local treatment still requires appropriate diagnosis and response assessment."
+        ]
+      },
+      "source_sections": {
+        "nystsusp": [
+          "Clinical Pharmacology",
+          "Dosage and Administration"
+        ],
+        "nysttab": [
+          "Clinical Pharmacology",
+          "Dosage and Administration"
+        ],
+        "nystcream": [
+          "Clinical Pharmacology",
+          "Dosage and Administration"
+        ],
+        "nystoint": [
+          "Clinical Pharmacology",
+          "Dosage and Administration"
+        ],
+        "nystpowder": [
+          "Clinical Pharmacology",
+          "Dosage and Administration"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Selected oral labels reserve use in pregnancy for clear need; topical labels call for benefit exceeding potential fetal risk. Reproduction data are limited/absent. Some current labels retain historical Category C wording; this is not a modern quantitative safety rating. Milk excretion is unknown in the selected labels, which advise caution in nursing patients. Assess product/site, maternal need and infant exposure individually."
+        ]
+      },
+      "source_sections": {
+        "nystsusp": [
+          "Pregnancy",
+          "Nursing Mothers"
+        ],
+        "nysttab": [
+          "Pregnancy",
+          "Nursing Mothers"
+        ],
+        "nystcream": [
+          "Pregnancy",
+          "Nursing Mothers"
+        ],
+        "nystoint": [
+          "Pregnancy",
+          "Nursing Mothers"
+        ],
+        "nystpowder": [
+          "Pregnancy",
+          "Nursing Mothers"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and disposition",
+      "assertions": {
+        "paragraphs": [
+          "Nystatin binds fungal membrane sterols, alters permeability and permits intracellular contents to leak. It is fungistatic/fungicidal in vitro against susceptible yeasts; activity and resistance vary by organism. It has no appreciable antibacterial, antiviral or antiprotozoal activity. Oral GI absorption is insignificant and most dose passes unchanged in stool; intact-skin/mucosal absorption is not shown for skin products. No numeric systemic Tmax, protein binding or half-life is established for these regimens."
+        ]
+      },
+      "source_sections": {
+        "nystsusp": [
+          "Clinical Pharmacology",
+          "Microbiology"
+        ],
+        "nysttab": [
+          "Clinical Pharmacology",
+          "Microbiology"
+        ],
+        "nystcream": [
+          "Clinical Pharmacology",
+          "Microbiology"
+        ],
+        "nystoint": [
+          "Clinical Pharmacology",
+          "Microbiology"
+        ],
+        "nystpowder": [
+          "Clinical Pharmacology",
+          "Microbiology"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "assertions": {
+        "paragraphs": [
+          "Follow lesions/symptoms, oral intake when relevant, tolerance and hypersensitivity. Persistent or recurrent disease warrants diagnostic reassessment, adherence/contact-time review and consideration of other infection sites rather than dose escalation alone. Skin labels recommend KOH smears/cultures or other tests initially and repetition with poor response. No routine therapeutic drug-level or laboratory-toxicity monitoring schedule is prescribed."
+        ]
+      },
+      "source_sections": {
+        "nystsusp": [
+          "Precautions",
+          "Laboratory Tests",
+          "Patient Information",
+          "Dosage and Administration"
+        ],
+        "nysttab": [
+          "Precautions",
+          "Laboratory Tests",
+          "Patient Information",
+          "Dosage and Administration"
+        ],
+        "nystcream": [
+          "Precautions",
+          "Laboratory Tests",
+          "Patient Information",
+          "Dosage and Administration"
+        ],
+        "nystoint": [
+          "Precautions",
+          "Laboratory Tests",
+          "Patient Information",
+          "Dosage and Administration"
+        ],
+        "nystpowder": [
+          "Precautions",
+          "Laboratory Tests",
+          "Patient Information",
+          "Dosage and Administration"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling",
+      "assertions": {
+        "paragraphs": [
+          "Shake suspension, verify units/mL, split across both sides of the mouth and retain before swallowing. Observe infant feeding delay and the prescribed duration. Keep powder/cream/ointment out of mouth, eyes and vagina; use only for the diagnosed site. Report irritation, allergy or lack of improvement. Painful swallowing, systemic illness or inability to eat/drink requires clinical assessment because local nystatin may be inadequate. Store securely, especially non-child-resistant unit-dose cups."
+        ]
+      },
+      "source_sections": {
+        "nystsusp": [
+          "Dosage and Administration",
+          "Precautions",
+          "Patient Information",
+          "Package panels"
+        ],
+        "nysttab": [
+          "Dosage and Administration",
+          "Precautions",
+          "Patient Information",
+          "Package panels"
+        ],
+        "nystcream": [
+          "Dosage and Administration",
+          "Precautions",
+          "Patient Information",
+          "Package panels"
+        ],
+        "nystoint": [
+          "Dosage and Administration",
+          "Precautions",
+          "Patient Information",
+          "Package panels"
+        ],
+        "nystpowder": [
+          "Dosage and Administration",
+          "Precautions",
+          "Patient Information",
+          "Package panels"
+        ],
+        "idsa-candida": [
+          "XVII esophageal disease and evidence summary: dysphagia/odynophagia and systemic treatment"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "paragraphs": [
+          "PAI oral suspension: ready-to-use light creamy-yellow cherry/peppermint preparation, 100,000 units/mL; 60 mL bottle with calibrated dropper NDC 0121-0868-02. Other listed supplies include 473 mL bottles and 5 mL unit-dose cups. Check the actual package and dose device."
+        ]
+      },
+      "source_sections": {
+        "nystsusp": [
+          "Description",
+          "How Supplied",
+          "Package panels"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Selected suspension: 100,000 units/mL. Avet film-coated tablets: 500,000 units, round brown, HP51. Selected cream, ointment and Nystop powder: 100,000 units/g; skin vehicles/package sizes differ. This profile excludes nystatin/corticosteroid combinations, veterinary products, unverified compounded preparations, vaginal products and historical pastilles as executable current U.S. regimens."
+        ]
+      },
+      "source_sections": {
+        "nystsusp": [
+          "Description",
+          "How Supplied"
+        ],
+        "nysttab": [
+          "Description",
+          "How Supplied"
+        ],
+        "nystcream": [
+          "Description",
+          "How Supplied"
+        ],
+        "nystoint": [
+          "Description",
+          "How Supplied"
+        ],
+        "nystpowder": [
+          "Description",
+          "How Supplied"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "PAI suspension: 20–25°C, avoid freezing. Avet tablets: 20–25°C. Torrent cream/ointment: 20–25°C, excursions 15–30°C; cream also specifies avoid freezing. Nystop powder: 15–30°C, avoid excessive heat at 40°C. Follow actual container/expiry, keep away from children and do not reuse expired or contaminated product."
+        ]
+      },
+      "source_sections": {
+        "nystsusp": [
+          "Storage"
+        ],
+        "nysttab": [
+          "How Supplied storage"
+        ],
+        "nystcream": [
+          "Storage"
+        ],
+        "nystoint": [
+          "How Supplied storage"
+        ],
+        "nystpowder": [
+          "Storage"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "No systemic/IV, ophthalmic, vaginal, veterinary, steroid-combination or unverified compounded regimen.",
+    "No current pastille availability inferred from a historical guideline option.",
+    "No adult-tablet-to-infant conversion, fixed renal/hepatic adjustment or generic safe-overdose threshold."
+  ],
+  "resolved_source_findings": [
+    "Non-esophageal GI tablet indication kept distinct from oral suspension and skin products.",
+    "In-vitro organism listings are not propagated as broad dermatophyte or nonspecific fungal-rash indications.",
+    "Historical Category C retained only as provenance, not a current pregnancy-risk rating."
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, essential safety, three hero facts, cited disclosures, four safety cards and three product cards.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending"
+  },
+  "monograph_sha256": "d291783c29fe4f278e09311eb5f1eb7ccb1e10529d7eed23472ed4cab3f653ee",
+  "frontmatter_source_map": {
+    "fields": {
+      "name": "Nystatin",
+      "synonym": "Oral suspension/tablets · Nystop and topical nystatin",
+      "description": "A polyene antifungal used locally against susceptible Candida. Oral suspension, gastrointestinal tablets and skin preparations have separate sites, doses and handling; minimal absorption does not make them systemic therapy.",
+      "facts": [
+        [
+          "Therapeutic class",
+          "Polyene antifungal"
+        ],
+        [
+          "Representative product",
+          "Oral suspension · 100,000 units/mL"
+        ],
+        [
+          "Reference focus",
+          "Oral suspension/tablets and skin cream, ointment, powder"
+        ]
+      ],
+      "essential": {
+        "title": "Match the formulation to the infection site.",
+        "text": "Skin products must not be used in the mouth, eyes or vagina. Oral nystatin is not treatment for systemic candidiasis or esophageal disease. Retain suspension in the mouth before swallowing; verify units/mL and measure accurately. Stop for sensitization or significant irritation and reassess persistent disease.",
+        "section": "safety",
+        "link": "Warnings and precautions"
+      }
+    },
+    "source_sections": {
+      "nystsusp": [
+        "Description",
+        "Indications",
+        "Dosage",
+        "Precautions",
+        "How Supplied"
+      ],
+      "nysttab": [
+        "Indications"
+      ],
+      "nystcream": [
+        "Indications"
+      ],
+      "nystoint": [
+        "Indications"
+      ],
+      "nystpowder": [
+        "Indications"
+      ],
+      "idsa-candida": [
+        "XVI–XVII"
+      ]
+    }
+  },
+  "review_date": "2026-10-01",
+  "source_access_scope": "Selected full public FDA manufacturer labels, relevant complete prescribing sections and patient instructions; official FDA current product arrays and public CDC/IDSA professional guidance. No inaccessible-source claim."
+}

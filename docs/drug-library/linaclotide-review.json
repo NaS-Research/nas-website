@@ -1,0 +1,487 @@
+{
+  "slug": "linaclotide",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "A current U.S. Linzess reference covering adult IBS-C/CIC and indication-specific pediatric IBS-C and functional constipation. All eight blueprint sections reviewed. Product-specific focused monograph; not an exhaustive adverse-event catalog.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Linzess · Current full U.S. label",
+      "publisher": "DailyMed / AbbVie and Ironwood Pharmaceuticals",
+      "note": "SPL version 39, effective 20260521; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=09beda19-56d6-4a56-afdc-9a77b70b2ef3",
+      "checked": "2026-10-01",
+      "version": "SPL version 39, effective 20260521; current public product labeling.",
+      "spl_version": "39",
+      "spl_effective_time": "20260521",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/09beda19-56d6-4a56-afdc-9a77b70b2ef3.xml",
+      "downloaded_xml_sha256": "0e36407b126e3d4b3c616c030ed28362be4484ad305e337e12c319145523082a"
+    },
+    {
+      "id": "fda",
+      "title": "Linzess · FDA approval label, May 2026",
+      "publisher": "U.S. Food and Drug Administration",
+      "note": "NDA 202811/S-023; reference ID 5802669. Pediatric FC expansion confirmed against original approval PDF.",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/202811s023lbl.pdf",
+      "checked": "2026-10-01",
+      "version": "FDA May2026 approval label, NDA202811/S-023, ReferenceID5802669",
+      "downloaded_pdf_sha256": "b58f26566451aeb698f5132f4c180dc162235464543ecf6c1dd69150e08a1e1e",
+      "access_scope": "Original FDA approval PDF indications/doses/contraindications compared to full current SPL; full SPL clinical and administration sections reviewed."
+    }
+  ],
+  "assertion_to_source": [
+    {
+      "section_id": "indications",
+      "card_title": "Approved indications",
+      "assertions": [
+        "Linzess treats IBS-C in adults and pediatric patients age 7 and older; CIC in adults; and functional constipation in pediatric patients age 2 and older. The May 2026 FDA label confirms the FC expansion to ages 2–5. This does not extend pediatric IBS-C to those younger than 7 or establish every unexplained constipation syndrome as an indication."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "1",
+            "8.4"
+          ]
+        },
+        {
+          "source_id": "fda",
+          "sections": [
+            "1",
+            "8.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Labeled oral regimens",
+      "assertions": [
+        "Take once daily at about the same time, at least 30 minutes before a meal. A missed dose is skipped; resume the next regular dose without doubling.",
+        "Adult IBS-C | 290 mcg",
+        "Pediatric IBS-C, age 7–17 | 145 mcg",
+        "Adult CIC | 145 mcg; 72 mcg may be used for presentation or tolerability.",
+        "Pediatric FC, age 2–17 | 72 mcg"
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.1",
+            "2.2"
+          ]
+        },
+        {
+          "source_id": "fda",
+          "sections": [
+            "2.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Whole capsule or applesauce",
+      "assertions": [
+        "Swallow whole; do not crush or chew the capsule or beads. If needed, open and sprinkle all beads on one teaspoon of room-temperature applesauce; swallow immediately without chewing and do not store the mixture. Other foods have not been tested. Meal timing remains at least 30 minutes afterward."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.2 / Oral administration in applesauce",
+            "Medication Guide"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Bottled water and feeding tube",
+      "assertions": [
+        "For oral water dosing, add all beads to 30 mL room-temperature bottled water, swirl at least 20 seconds, and swallow immediately; repeat with another 30 mL for remaining beads. For NG/gastrostomy use, prepare the same 30 mL mixture, swirl, and give with an appropriately sized catheter-tip syringe using rapid steady pressure (10 mL per 10 seconds); repeat with 30 mL for residue, then flush with at least 10 mL water. Do not store mixtures. Drug dissolves off the beads, which remain visible; delivery of every bead is not needed for the full dose. Follow the clinician’s tube instructions."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.2 / Water and NG or gastrostomy administration"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Warnings and precautions",
+      "assertions": [
+        "Never give below age 2. Severe diarrhea can cause dizziness, syncope, hypotension, or sodium/potassium abnormalities and may require hospitalization or IV fluids. Suspend dosing and rehydrate if severe diarrhea occurs. Monitor stool changes and hydration, especially early in treatment and in vulnerable children. Unusual/severe abdominal pain, rectal bleeding, or black stools needs prompt evaluation rather than extra laxative dosing."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "5.1",
+            "5.2",
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Contraindications",
+      "assertions": [
+        "Contraindicated in children younger than 2 because of serious dehydration risk, and in known or suspected mechanical GI obstruction. Lack of an IBS-C indication below age 7 is separate from the absolute under-2 contraindication."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "4",
+            "8.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Boxed warning: serious dehydration below age 2",
+      "assertions": [
+        "Neonatal animal studies showed rapid fatal dehydration from increased intestinal secretion. The U.S. boxed warning prohibits use in patients younger than 2. Keep medication securely away from young children to prevent accidental ingestion."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Boxed warning",
+            "5.1",
+            "17"
+          ]
+        },
+        {
+          "source_id": "fda",
+          "sections": [
+            "Boxed warning"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Adverse reactions and overdose",
+      "assertions": [
+        "Diarrhea is the main adverse reaction; abdominal pain, gas, and bloating are also common in adult trials. Postmarketing reports include anaphylaxis/angioedema, rash/hives, nausea, hematochezia, and rectal hemorrhage; frequency cannot be reliably determined. Higher single-dose exposure in healthy-subject studies mainly produced diarrhea and does not establish an overdose-safe threshold. Suspected excessive dosing or child ingestion needs prompt assessment, particularly for diarrhea and dehydration."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "6.1",
+            "6.2",
+            "10",
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Metabolic interactions",
+      "assertions": [
+        "No clinical drug–drug interaction studies have been conducted. Negligible systemic exposure and in-vitro findings support no anticipated CYP450 or common uptake/efflux-transporter interaction. The label provides no routine metabolic-interaction dose adjustment. Review all medicines and supplements rather than claiming an exhaustive absence of interactions."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "12.3 / Drug interaction studies",
+            "Medication Guide"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Food and medication review",
+      "assertions": [
+        "Taking immediately after a high-fat breakfast caused looser and more frequent stools than fasting, supporting the premeal directions. Review other treatment when diarrhea or dehydration develops; the label does not prescribe a blanket combination prohibition or a specific oral-drug spacing rule beyond its food instructions."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "12.2",
+            "2.2",
+            "5.2",
+            "Medication Guide"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pregnancy and lactation",
+      "assertions": [
+        "Maternal systemic and fetal exposure is expected to be negligible, but pregnancy outcome data are insufficient to define drug-associated risk. In lactating women treated for 3 days, linaclotide and metabolite were below quantitation in milk; infant exposure is not expected. Milk-production effects are unknown. Weigh maternal need, breastfeeding benefits, and underlying illness rather than declaring pregnancy or infant outcomes proven safe."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "8.1",
+            "8.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Children and older adults",
+      "assertions": [
+        "Pediatric FC is established from age 2 and IBS-C from age 7, at their distinct doses; below age 2 is contraindicated. Older adults were insufficiently represented to determine a different response, so choose cautiously with comorbidity and concomitant drugs. Pediatric and older patients still require diarrhea/hydration monitoring."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "8.4",
+            "8.5",
+            "5.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Renal and hepatic impairment",
+      "assertions": [
+        "Renal/hepatic impairment is not expected to change clearance because metabolism occurs in the gut and systemic concentrations are not measurable at recommended doses. No renal/hepatic dose-reduction algorithm is specified. This does not remove the need to manage dehydration and electrolyte disturbances if severe diarrhea occurs."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "12.3 / Specific populations",
+            "5.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Mechanism",
+      "assertions": [
+        "Linaclotide and its active metabolite activate guanylate cyclase-C on the luminal intestinal surface, increasing cGMP. Intracellular cGMP stimulates chloride and bicarbonate secretion through CFTR, increasing fluid and transit. Extracellular cGMP-associated pain signaling effects are supported by animal models; they should not be presented as a quantified human analgesic mechanism."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "12.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Pharmacokinetics",
+      "assertions": [
+        "Drug and metabolite are below plasma quantitation after recommended doses, so standard systemic AUC, peak concentration, and half-life cannot be calculated. GI metabolism removes a terminal tyrosine to produce an active metabolite, then degrades peptides to amino acids. Only a small portion of active peptide is recovered in stool, as metabolite. This local action explains low systemic interaction potential but not freedom from severe diarrhea."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "12.3",
+            "5.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Monitoring",
+      "assertions": [
+        "Confirm constipation diagnosis, age, dose, and lack of suspected obstruction. Reassess stool frequency, consistency, abdominal symptoms, tolerability, and adherence. Severe diarrhea or faintness warrants hydration/electrolyte assessment and suspended dosing; routine scheduled laboratory monitoring is not specified by the label. Review efficacy without independently escalating a pediatric dose."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "1",
+            "2",
+            "4",
+            "5.2",
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Patient counseling",
+      "assertions": [
+        "Take before a meal, never double a missed dose, and do not chew beads. Use only the tested applesauce/bottled-water or NG/gastrostomy methods when opening a capsule. Stop and call for severe diarrhea, unusual/severe abdominal pain, or blood/black stool. Breathing difficulty or facial/throat swelling needs urgent help. Keep the original moisture-protected bottle securely away from children."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.2",
+            "6.2",
+            "17",
+            "Medication Guide"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Representative product",
+      "assertions": [
+        "Linzess white-to-off-white opaque gelatin capsules have gray FL 72, FL 145, or FL 290 imprints. Bottles of 30 correspond to NDCs 0456-1203-30 (72 mcg), 0456-1201-30 (145 mcg), and 0456-1202-30 (290 mcg). The selected label is marketed by AbbVie and Ironwood Pharmaceuticals. Verify strength rather than relying on capsule color alone."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "3",
+            "16",
+            "17 / Marketed by"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Dosage forms and strengths",
+      "assertions": [
+        "Oral capsules contain 72, 145, or 290 mcg. There is no labeled injectable route. Opening the capsule by the specified method changes administration, not the prescribed strength; do not divide beads to improvise a smaller dose."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.2",
+            "3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Storage and handling",
+      "assertions": [
+        "Store at 25°C (77°F), permitting 15–30°C (59–86°F) excursions. Protect from moisture in the original tightly closed bottle; do not subdivide/repackage or remove the desiccant. Store dry and securely out of children’s reach. Prepared applesauce or water mixtures must be consumed immediately."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "16",
+            "2.2",
+            "17"
+          ]
+        }
+      ]
+    }
+  ],
+  "material_errors": [],
+  "gaps": [],
+  "limitations": [
+    "Current May2026 label/FDA approval reconciled; no obsolete age6 FC minimum retained.",
+    "No pediatric CIC regimen, IBS-C dose below age7, systemic half-life, untested food/liquid administration, or unsupported renal/hepatic algorithm is invented.",
+    "Low systemic exposure and milk quantitation data do not establish comprehensive pregnancy/infant outcome certainty."
+  ],
+  "source_discrepancies": [
+    {
+      "issue": "Older web-cached label snippets still report FC minimum age6.",
+      "resolution": "Current SPL v39 effective20260521 and FDA202811/S-023 label agree on FC from age2 at72mcg. Updated indication/dose/population sections use age2."
+    }
+  ],
+  "regulatory_identity": [
+    {
+      "source_file": "linzess",
+      "labeler": [
+        "Allergan, Inc."
+      ],
+      "label_approval_records": [
+        {
+          "application": {
+            "extension": "NDA202811",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "displayName": "NDA",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1"
+          }
+        },
+        {
+          "application": {
+            "extension": "NDA202811",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "displayName": "NDA",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1"
+          }
+        },
+        {
+          "application": {
+            "extension": "NDA202811",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73594",
+            "displayName": "NDA",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1"
+          }
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "schema": "validateMonograph: zero errors",
+    "blueprint_sections": "Exact eight IDs/titles/order, four Safety core cards, three Product core cards, and three hero tuples.",
+    "mobile_content": "Two-column short-heading dosing tables with natural wrapping; rendered QA delegated to release owner.",
+    "source_method": "Full current selected official product label clinical and administration sections read. Formulation/population exclusions and label limitations explicit; no paywalled access claimed."
+  },
+  "front_matter_assertion_map": {
+    "hero_facts": [
+      [
+        "Therapeutic class",
+        "Guanylate cyclase-C agonist"
+      ],
+      [
+        "Route covered",
+        "Oral capsule"
+      ],
+      [
+        "Common brand",
+        "Linzess"
+      ]
+    ],
+    "essential": {
+      "title": "Respect pediatric limits and stop for severe diarrhea.",
+      "text": "Never give below age 2 or with suspected mechanical obstruction. Pediatric FC uses 72 mcg from age 2; pediatric IBS-C uses 145 mcg from age 7. Severe diarrhea requires suspended dosing and rehydration.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "support": {
+      "label": [
+        "1",
+        "2",
+        "4",
+        "5",
+        "3"
+      ],
+      "fda": [
+        "1",
+        "2.1",
+        "4"
+      ]
+    }
+  }
+}
