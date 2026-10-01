@@ -323,7 +323,7 @@
     },
     {
       "drug": "insulin-degludec",
-      "fileSha256": "351fd6f57bd5081fad9c4bc8882373372ed854c03f4fdffa998892e65ccc105d",
+      "fileSha256": "7504f0bfe631d46cb3d7c352cedeeff11b5ad86648d8ef06853caff9b1fcbf9f",
       "result": "No material clinical mismatch identified in enumerated assertions.",
       "checks": [
         {
@@ -354,7 +354,16 @@
         "productCards": 3
       },
       "issues": [],
-      "sourceGaps": []
+      "sourceGaps": [],
+      "formattingRevisionIndependent": {
+        "checked": "2026-10-01",
+        "previousSha256": "351fd6f57bd5081fad9c4bc8882373372ed854c03f4fdffa998892e65ccc105d",
+        "currentSha256": "7504f0bfe631d46cb3d7c352cedeeff11b5ad86648d8ef06853caff9b1fcbf9f",
+        "proof": "Read previous committed monograph matching prior independent SHA and current actual JS. Independently reconstructed all four old three-column rows into current two-column rows; every starting dose, population and distinction retained in order. Entire remaining clinical object is identical ignoring whitespace.",
+        "rowsVerified": 4,
+        "clinicalValuesUnchanged": true,
+        "renderedPageQa": "Parent-owned; not independently claimed here."
+      }
     },
     {
       "drug": "cyanocobalamin",

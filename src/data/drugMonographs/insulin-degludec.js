@@ -37,7 +37,7 @@ export const insulinDegludec = {
       "title": "Tresiba · Current manufacturer prescribing information",
       "publisher": "Novo Nordisk",
       "url": "https://www.novo-pi.com/tresiba.pdf",
-      "note": "Public PDF checked October 1, 2026; PI revised July 2022. Product dosing/storage verified against full PI and device instructions, not a claimed 2026 revision."
+      "note": "Public PDF checked October 1, 2026; PI revised July 2022. Product dosing / storage verified against full PI and device instructions, not a claimed 2026 revision."
     }
   ],
   "sections": [
@@ -63,7 +63,7 @@ export const insulinDegludec = {
             "label"
           ],
           "paragraphs": [
-            "It is not recommended for diabetic ketoacidosis. It is a subcutaneous basal product, not an IV insulin, insulin-pump infusion or rapid meal/correction dose. Fixed degludec/liraglutide or degludec/aspart combinations need separate doses and indications."
+            "It is not recommended for diabetic ketoacidosis. It is a subcutaneous basal product, not an IV insulin, insulin-pump infusion or rapid meal / correction dose. Fixed degludec / liraglutide or degludec / aspart combinations need separate doses and indications."
           ]
         }
       ]
@@ -83,29 +83,24 @@ export const insulinDegludec = {
           "table": {
             "headers": [
               "Situation",
-              "Starting Tresiba dose",
-              "Clinical distinction"
+              "Starting Tresiba dose and clinical distinction"
             ],
             "rows": [
               [
                 "Insulin-naive type 1 diabetes",
-                "About one-third to one-half of the total daily insulin dose",
-                "Label initial total insulin estimate: 0.2–0.4 units/kg/day; remainder short-acting with meals"
+                "About one-third to one-half of the total daily insulin dose. Clinical distinction: Label initial total insulin estimate: 0.2–0.4 units / kg / day; remainder short-acting with meals"
               ],
               [
                 "Insulin-naive type 2 diabetes",
-                "10 units once daily",
-                "Titrate to individual glucose goal"
+                "10 units once daily. Clinical distinction: Titrate to individual glucose goal"
               ],
               [
-                "Adults switching from long/intermediate-acting insulin",
-                "Same units as total daily long/intermediate-acting insulin dose",
-                "Supervised switch; further adjustments may be needed"
+                "Adults switching from long / intermediate-acting insulin",
+                "Same units as total daily long / intermediate-acting insulin dose. Clinical distinction: Supervised switch; further adjustments may be needed"
               ],
               [
                 "Children age 1 or older switching from basal insulin",
-                "80% of total daily long/intermediate-acting insulin units",
-                "Reduction minimizes hypoglycemia; use individualized follow-up"
+                "80% of total daily long / intermediate-acting insulin units. Clinical distinction: Reduction minimizes hypoglycemia; use individualized follow-up"
               ]
             ]
           }
@@ -125,7 +120,7 @@ export const insulinDegludec = {
             "label"
           ],
           "paragraphs": [
-            "U-100 FlexTouch dials 1-unit increments up to 80 units per injection; U-200 dials 2-unit increments up to 160. The displayed units are the delivered units: no concentration conversion. U-200 is not a vial. For pediatric doses below 5 units/day, use the U-100 vial. Use an appropriate U-100 insulin syringe with the U-100 vial; never draw from any pen into a syringe."
+            "U-100 FlexTouch dials 1-unit increments up to 80 units per injection; U-200 dials 2-unit increments up to 160. The displayed units are the delivered units: no concentration conversion. U-200 is not a vial. For pediatric doses below 5 units / day, use the U-100 vial. Use an appropriate U-100 insulin syringe with the U-100 vial; never draw from any pen into a syringe."
           ]
         },
         {
@@ -134,7 +129,7 @@ export const insulinDegludec = {
             "label"
           ],
           "paragraphs": [
-            "Inject subcutaneously into abdomen, thigh or upper arm; rotate sites and avoid lipodystrophy/amyloid lumps. Do not dilute, mix, give IV or use in a pump. Renal/hepatic impairment requires intensified glucose monitoring and individualized adjustment, without a fixed numerical adjustment table. Meal/activity changes and illness can change insulin needs."
+            "Inject subcutaneously into abdomen, thigh or upper arm; rotate sites and avoid lipodystrophy / amyloid lumps. Do not dilute, mix, give IV or use in a pump. Renal / hepatic impairment requires intensified glucose monitoring and individualized adjustment, without a fixed numerical adjustment table. Meal / activity changes and illness can change insulin needs."
           ]
         }
       ]
@@ -155,7 +150,7 @@ export const insulinDegludec = {
           "paragraphs": [
             "Hypoglycemia may cause seizures, unconsciousness or death and impair driving. Symptoms can be blunted by recurrent episodes, neuropathy or antiadrenergic medicines. Increase monitoring during dose, diet, exercise, organ-function or medicine changes.",
             "Never share pens, needles or syringes, even with a new needle. Check the insulin name and concentration before every dose; withdrawing pen insulin into a syringe can cause severe overdose. Switching from repeatedly injected abnormal tissue to normal tissue can precipitate hypoglycemia and requires closer monitoring.",
-            "Severe generalized allergy/anaphylaxis requires stopping and emergency treatment. Insulin can cause life-threatening hypokalemia; monitor potassium in susceptible patients. Combining insulin with TZDs can cause fluid retention or worsen heart failure; reassess the TZD if heart failure develops."
+            "Severe generalized allergy / anaphylaxis requires stopping and emergency treatment. Insulin can cause life-threatening hypokalemia; monitor potassium in susceptible patients. Combining insulin with TZDs can cause fluid retention or worsen heart failure; reassess the TZD if heart failure develops."
           ]
         },
         {
@@ -173,7 +168,7 @@ export const insulinDegludec = {
             "label"
           ],
           "paragraphs": [
-            "The selected U.S. Tresiba label has no boxed warning. Severe/prolonged hypoglycemia, medication errors and potassium or allergic complications remain major risks."
+            "The selected U.S. Tresiba label has no boxed warning. Severe / prolonged hypoglycemia, medication errors and potassium or allergic complications remain major risks."
           ]
         },
         {
@@ -200,7 +195,7 @@ export const insulinDegludec = {
           ],
           "open": true,
           "paragraphs": [
-            "Other diabetes medicines, ACE inhibitors/ARBs, salicylates, some antibiotics and MAO inhibitors may increase hypoglycemia risk. Corticosteroids, atypical antipsychotics, thyroid hormones, sympathomimetics, some diuretics or reproductive hormones may reduce glucose-lowering effect. Insulin adjustment and extra glucose checks may be needed; no fixed adjustment percentage is supplied."
+            "Other diabetes medicines, ACE inhibitors / ARBs, salicylates, some antibiotics and MAO inhibitors may increase hypoglycemia risk. Corticosteroids, atypical antipsychotics, thyroid hormones, sympathomimetics, some diuretics or reproductive hormones may reduce glucose-lowering effect. Insulin adjustment and extra glucose checks may be needed; no fixed adjustment percentage is supplied."
           ]
         },
         {
@@ -218,7 +213,7 @@ export const insulinDegludec = {
             "label"
           ],
           "paragraphs": [
-            "Pioglitazone and other PPAR-gamma agonists can add fluid retention/heart-failure risk with insulin. Monitor weight, edema and dyspnea. Changing basal insulin, concentration, manufacturer, site or delivery device needs supervised dose review and extra glucose checks."
+            "Pioglitazone and other PPAR-gamma agonists can add fluid retention / heart-failure risk with insulin. Monitor weight, edema and dyspnea. Changing basal insulin, concentration, manufacturer, site or delivery device needs supervised dose review and extra glucose checks."
           ]
         }
       ]
@@ -235,7 +230,7 @@ export const insulinDegludec = {
             "label"
           ],
           "paragraphs": [
-            "The label’s trial of 185 pregnant women with type 1 diabetes found no significant pregnancy or newborn outcome differences versus detemir, but small sample size and poor glucose control limit conclusions. Poorly controlled diabetes itself poses maternal/fetal risk; manage with the diabetes/pregnancy team. Human milk/infant/milk-production data for degludec are absent; balance maternal need and breastfeeding benefits with close glucose/dose review."
+            "The label’s trial of 185 pregnant women with type 1 diabetes found no significant pregnancy or newborn outcome differences versus detemir, but small sample size and poor glucose control limit conclusions. Poorly controlled diabetes itself poses maternal / fetal risk; manage with the diabetes / pregnancy team. Human milk / infant / milk-production data for degludec are absent; balance maternal need and breastfeeding benefits with close glucose / dose review."
           ]
         },
         {
@@ -244,7 +239,7 @@ export const insulinDegludec = {
             "label"
           ],
           "paragraphs": [
-            "Safety/effectiveness are established from age 1, not below 1. Children have a fixed daily timing, reduced switch dose and separate missed-dose instructions; use the U-100 vial below 5 units/day. Older patients may be more sensitive and have harder-to-recognize hypoglycemia; initiation, increments and maintenance should be conservative."
+            "Safety / effectiveness are established from age 1, not below 1. Children have a fixed daily timing, reduced switch dose and separate missed-dose instructions; use the U-100 vial below 5 units / day. Older patients may be more sensitive and have harder-to-recognize hypoglycemia; initiation, increments and maintenance should be conservative."
           ]
         },
         {
@@ -280,7 +275,7 @@ export const insulinDegludec = {
             "label"
           ],
           "paragraphs": [
-            "A steady-state clamp study found glucose-lowering action lasting at least 42 hours after the last of 8 daily 0.4 units/kg doses; this does not mean every dose guarantees 42-hour control. Steady state is reached in 3–4 days, mean steady-state half-life about 25 hours and protein binding above 99%. U-100/U-200 exposure and glucose effect are comparable at the same units/kg. Insulin-like degradation forms inactive metabolites."
+            "A steady-state clamp study found glucose-lowering action lasting at least 42 hours after the last of 8 daily 0.4 units / kg doses; this does not mean every dose guarantees 42-hour control. Steady state is reached in 3–4 days, mean steady-state half-life about 25 hours and protein binding above 99%. U-100 / U-200 exposure and glucose effect are comparable at the same units / kg. Insulin-like degradation forms inactive metabolites."
           ]
         }
       ]
@@ -298,7 +293,7 @@ export const insulinDegludec = {
           ],
           "open": true,
           "paragraphs": [
-            "Use the prescribed glucose-monitoring plan and review fasting/overnight values, hypoglycemia, glycemic-control markers and injection sites. Increase checks during initiation, titration, switching, illness or organ/drug changes. Check potassium when risk factors warrant and monitor edema/heart-failure symptoms with TZDs."
+            "Use the prescribed glucose-monitoring plan and review fasting / overnight values, hypoglycemia, glycemic-control markers and injection sites. Increase checks during initiation, titration, switching, illness or organ / drug changes. Check potassium when risk factors warrant and monitor edema / heart-failure symptoms with TZDs."
           ]
         },
         {
@@ -307,7 +302,7 @@ export const insulinDegludec = {
             "label"
           ],
           "paragraphs": [
-            "Verify label, concentration and displayed units before every dose. Never share or withdraw pen insulin. Rotate normal tissue sites, use a fresh needle, remove it after injection and dispose of sharps safely. Inspect for clear/colorless solution. Teach recognition/rescue of low glucose and protect driving safety; adult and pediatric missed-dose plans differ."
+            "Verify label, concentration and displayed units before every dose. Never share or withdraw pen insulin. Rotate normal tissue sites, use a fresh needle, remove it after injection and dispose of sharps safely. Inspect for clear / colorless solution. Teach recognition / rescue of low glucose and protect driving safety; adult and pediatric missed-dose plans differ."
           ]
         },
         {
@@ -316,7 +311,7 @@ export const insulinDegludec = {
             "label"
           ],
           "paragraphs": [
-            "Excess insulin can cause prolonged hypoglycemia and hypokalemia. Mild episodes are generally treated with oral glucose according to the patient’s plan; severe episodes with seizure/unconsciousness require emergency care and glucagon or IV glucose as appropriate. Continued observation/carbohydrate may be needed after initial recovery. No universal rescue quantity or observation interval is invented."
+            "Excess insulin can cause prolonged hypoglycemia and hypokalemia. Mild episodes are generally treated with oral glucose according to the patient’s plan; severe episodes with seizure / unconsciousness require emergency care and glucagon or IV glucose as appropriate. Continued observation / carbohydrate may be needed after initial recovery. No universal rescue quantity or observation interval is invented."
           ]
         }
       ]
@@ -339,11 +334,11 @@ export const insulinDegludec = {
             ],
             [
               "Concentration / contents",
-              "200 units/mL · 3 mL · 600 units"
+              "200 units / mL · 3 mL · 600 units"
             ],
             [
               "Delivery",
-              "2-unit increments · up to 160 units/injection"
+              "2-unit increments · up to 160 units / injection"
             ],
             [
               "Example package",
@@ -366,7 +361,7 @@ export const insulinDegludec = {
             "label"
           ],
           "paragraphs": [
-            "Unused refrigerated product: 2–8°C until expiry; do not freeze or place against the cooling element. Unopened at room temperature up to 30°C: 56 days. In-use vial or either FlexTouch: 56 days at up to 30°C or refrigerated 2–8°C. Discard after that window even if insulin remains. Protect from heat/light, keep vials in the carton and pens capped without a needle; do not use frozen product."
+            "Unused refrigerated product: 2–8°C until expiry; do not freeze or place against the cooling element. Unopened at room temperature up to 30°C: 56 days. In-use vial or either FlexTouch: 56 days at up to 30°C or refrigerated 2–8°C. Discard after that window even if insulin remains. Protect from heat / light, keep vials in the carton and pens capped without a needle; do not use frozen product."
           ]
         }
       ]
