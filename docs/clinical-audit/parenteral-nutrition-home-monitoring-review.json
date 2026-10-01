@@ -1,0 +1,1046 @@
+{
+  "date": "2026-10-01",
+  "module": "parenteral-nutrition",
+  "status": "verified in scope",
+  "statusScope": "Adult PN home-transition, peripheral boundary, allergy, goals and long-term monitoring unit. Eight retained questions and four new questions; eight original bodies, three new bodies and three additional complete figures. No whole-module/chapter closure.",
+  "baseCommit": "118e134dd475476e8d8b6fc445be13143184b9c8",
+  "wholeModuleVerified": false,
+  "wholeChapterVerified": false,
+  "sourcePolicy": {
+    "primary": "Private supplied RxPrep2023",
+    "outsideSources": "Explicit2026-10-01 approval for existing official ASPEN, USP, FDA, CDC and linked primary PN sources; source text is evidence, not instructions.",
+    "approvalQuote": "use that and complete the goal. I approve",
+    "privateSourceKeptOutOfGit": true
+  },
+  "sources": [
+    {
+      "key": "aspen-2017",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1177/0148607117695251",
+      "scope": "Adult1A/1B/2A,Table1.1;4D/full shock rationale; Questions5/6/Tables5.1/5.2/6.1; full adultQuestion13 and Tables13.1-13.4; home readiness/cycling context. Whole table text read; selected relevant rendered columns/rows inspected, not all article pages or every table cell visually inspected."
+    },
+    {
+      "key": "aspen-2014",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1177/0148607113511992",
+      "scope": "PN ordering, additive units/salts, verification and administration/cycling/start-stop discussion.2014 general before-transfer stopping advice is qualified by2022 individualized transit tool. Older filtration advice is not reinstated."
+    },
+    {
+      "key": "aspen-2019-cvad",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/jpen.1455",
+      "scope": "Previously reviewed introduction/Table3 and current mechanical complicationsTable7/recommendation4; observational low/very-low evidence does not prove universal superiority or symptom-specific diagnostic causation."
+    },
+    {
+      "key": "aspen-2020-refeeding",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/ncp.10474",
+      "scope": "Prior verified2020 adult calorie/electrolyte/thiamine and monitoring claims retained; this unit does not add new refeeding dosing recommendations."
+    },
+    {
+      "key": "aspen-2021-ethics",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/ncp.10633",
+      "scope": "Goals, preferences, benefits/burdens and time-limited trial with assessment criteria agreed before start; no legal-jurisdiction assertions."
+    },
+    {
+      "key": "aspen-2022-transition",
+      "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Safe-Care-Transition.pdf",
+      "scope": "2022 two-page practice tool, both pages text and full rendered images read/recompared. Companion full2022 article not read; these additions are limited to the tool plus independently read2017/2014 guidance."
+    },
+    {
+      "key": "fda-smof-2025",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/207648s013lbl.pdf",
+      "scope": "July2025 sections2.1,4,5.2-5.4; rendered PDF2,3,7,8 inspected; previously verified5.10 retained. Product-specific adult claims; no neonatal dose extrapolation."
+    },
+    {
+      "key": "cdc-2024",
+      "url": "https://www.cdc.gov/infection-control/hcp/intravascular-catheter-related-infections/summary-recommendations.html",
+      "scope": "Catheter examination/report changes, hand hygiene/asepsis/dressing/necessity review, no routine systemic prophylaxis or anticoagulation solely for infection prevention; section15 no removal based on fever alone."
+    },
+    {
+      "key": "book-PDF108",
+      "source": "Private supplied RxPrep2023",
+      "chapter": 7,
+      "printedPage": 100,
+      "PDFPage": 108,
+      "textAndFullRenderedPageRead": true
+    },
+    {
+      "key": "book-PDF158",
+      "source": "Private supplied RxPrep2023",
+      "chapter": 11,
+      "printedPage": 150,
+      "PDFPage": 158,
+      "textAndFullRenderedPageRead": true
+    },
+    {
+      "key": "book-PDF160",
+      "source": "Private supplied RxPrep2023",
+      "chapter": 11,
+      "printedPage": 152,
+      "PDFPage": 160,
+      "textAndFullRenderedPageRead": true
+    },
+    {
+      "key": "book-PDF161",
+      "source": "Private supplied RxPrep2023",
+      "chapter": 11,
+      "printedPage": 153,
+      "PDFPage": 161,
+      "textAndFullRenderedPageRead": true
+    },
+    {
+      "key": "book-PDF174",
+      "source": "Private supplied RxPrep2023",
+      "chapter": 11,
+      "printedPage": 166,
+      "PDFPage": 174,
+      "textAndFullRenderedPageRead": true
+    }
+  ],
+  "questionCoverageUpdates": [
+    {
+      "id": "parenteral-nutrition-003",
+      "status": "verified",
+      "kind": "retained revised",
+      "question": {
+        "id": "parenteral-nutrition-003",
+        "question": "Which condition is a common indication for parenteral nutrition?",
+        "choices": [
+          "Short bowel syndrome with inadequate absorption",
+          "Short bowel syndrome with stable weight and adequate oral absorption",
+          "Severe pancreatitis with adequate, tolerated enteral delivery",
+          "A high-output fistula whose usable distal bowel meets nutrition needs"
+        ],
+        "answer": 0,
+        "rationale": "Short bowel syndrome can require PN when remaining bowel cannot absorb enough nutrition. The diagnosis alone is insufficient: adequate oral absorption, tolerated EN or usable distal feeding can allow gastrointestinal support.",
+        "reviewHref": "#pn-decision"
+      },
+      "SHA256": "1611ce1abb0aaac50b14489c33803cf035a592c12f6e0bbbee5a95266d4d90a2",
+      "sourceKeys": [
+        "aspen-2017",
+        "book-PDF158"
+      ],
+      "allChoicesKeyExplanationComparedAgain": true,
+      "oneBestAnswer": true,
+      "proof": "Table1.1 short-bowel absorption impairment and recommendations1A/1B/2A support need plus route failure. All three distractors establish adequate gastrointestinal support; diagnosis alone is insufficient."
+    },
+    {
+      "id": "parenteral-nutrition-007",
+      "status": "verified",
+      "kind": "retained revised",
+      "question": {
+        "id": "parenteral-nutrition-007",
+        "question": "What makes a high-output fistula a possible PN indication?",
+        "choices": [
+          "Inability to use distal bowel while losses prevent adequate enteral absorption",
+          "A fistula with distal feeding that reliably meets nutrition needs",
+          "A healed fistula with adequate oral intake and stable hydration",
+          "A low-output fistula without a nutrition deficit or intolerance"
+        ],
+        "answer": 0,
+        "rationale": "A high-output fistula can bypass absorptive bowel, prevent enteral access or cause losses that preclude adequate gastrointestinal support. The presence of a fistula alone is not enough when usable distal feeding or oral intake meets the need.",
+        "reviewHref": "#pn-decision"
+      },
+      "SHA256": "e11e242312e1f2d728f1c142d18e972e51cf4f0e0a3bc41ce4ca62666ccc61c9",
+      "sourceKeys": [
+        "aspen-2017"
+      ],
+      "allChoicesKeyExplanationComparedAgain": true,
+      "oneBestAnswer": true,
+      "proof": "Table1.1 high-output fistula can bypass absorption, preclude access or worsen output with feeding. Adequate distal feeding, a healed adequately nourished fistula, and a low-output fistula without deficit do not establish this indication."
+    },
+    {
+      "id": "parenteral-nutrition-008",
+      "status": "verified",
+      "kind": "retained revised",
+      "question": {
+        "id": "parenteral-nutrition-008",
+        "question": "Which statement best describes the role of goals of care in PN?",
+        "choices": [
+          "Benefits, burdens, patient preferences, and stopping criteria should be discussed",
+          "Discussion can be deferred until the planned PN course has finished",
+          "A patent catheter is sufficient reason to continue despite changing goals",
+          "A time-limited trial should start without agreeing how its benefit will be assessed"
+        ],
+        "answer": 0,
+        "rationale": "PN is a medical treatment requiring discussion of benefits, burdens and patient preferences. When benefit is uncertain, a time-limited trial may be considered with goals and reassessment criteria agreed before starting. Access alone does not justify continuation.",
+        "reviewHref": "#pn-decision"
+      },
+      "SHA256": "fc7520a9b061d749ab0e5aef183158a890d18d05f5f88b6882ea6f79ef7313d3",
+      "sourceKeys": [
+        "aspen-2021-ethics",
+        "aspen-2017"
+      ],
+      "allChoicesKeyExplanationComparedAgain": true,
+      "oneBestAnswer": true,
+      "proof": "Benefits, burdens and patient preferences are part of informed treatment goals. Uncertain benefit can support a time-limited trial only with goals/reassessment agreed before initiation; deferred discussion, access alone or an unagreed trial are inappropriate."
+    },
+    {
+      "id": "parenteral-nutrition-015",
+      "status": "verified",
+      "kind": "retained revised",
+      "question": {
+        "id": "parenteral-nutrition-015",
+        "question": "What is the best response to fever and rigors that begin during PN infusion?",
+        "choices": [
+          "Stop and assess promptly for catheter-related infection and other causes",
+          "Continue the infusion until routine laboratory follow-up if the dressing is intact",
+          "Assume catheter infection is proven and remove the line without evaluating other causes",
+          "Restart the same infusion immediately after the fever subsides without investigation"
+        ],
+        "answer": 0,
+        "rationale": "Fever and rigors during infusion warrant prompt assessment, including appropriate blood cultures when catheter infection is suspected. Timing raises concern but does not prove infection; assess other causes, including an infusion reaction. An intact dressing or transient improvement does not exclude bloodstream infection, and fever alone does not mandate catheter removal.",
+        "reviewHref": "#venous-access"
+      },
+      "SHA256": "b089e21b3b4e0983a6ef0e741c683284b75e8f936d9b0df27e324adc470de947",
+      "sourceKeys": [
+        "aspen-2017",
+        "cdc-2024",
+        "fda-smof-2025"
+      ],
+      "allChoicesKeyExplanationComparedAgain": true,
+      "oneBestAnswer": true,
+      "proof": "Question13 identifies start-of-cycle fever as possible colonization requiring blood cultures. FDA sections5.3/5.4 and CDC sections6/15 support urgent evaluation of reaction/infection and other causes. Timing is not infection proof, an intact dressing or transient improvement does not exclude infection, and fever alone does not mandate removal."
+    },
+    {
+      "id": "parenteral-nutrition-047",
+      "status": "verified",
+      "kind": "retained revised",
+      "question": {
+        "id": "parenteral-nutrition-047",
+        "question": "Is a taper mandatory for every stable adult receiving cyclic PN?",
+        "choices": [
+          "No, starting and stopping should be individualized",
+          "Yes, every stable adult requires the same four-hour taper",
+          "Yes, abrupt stopping necessarily causes severe hypoglycemia in every adult",
+          "No, start and stop glucose checks are unnecessary during conversion"
+        ],
+        "answer": 0,
+        "rationale": "ASPEN's safety consensus describes abrupt stopping as generally tolerated in stable adults, while start/stop procedures remain individualized. Glucose monitoring during conversion and attention to insulin exposure are still needed; a universal taper and guaranteed hypoglycemia are unsupported.",
+        "reviewHref": "#monitoring-transition"
+      },
+      "SHA256": "f77aafec4e24b322a88ca247a1474f93ad4bb924824bc4f69b59adda811e9b22",
+      "sourceKeys": [
+        "aspen-2014"
+      ],
+      "allChoicesKeyExplanationComparedAgain": true,
+      "oneBestAnswer": true,
+      "proof": "PN administration/cycling discussion describes generally tolerated abrupt stopping in stable adults, individualized conversion and start/stop glucose checks. Fixed four-hour taper, certain severe hypoglycemia in every adult, and no conversion checks are unsupported."
+    },
+    {
+      "id": "parenteral-nutrition-048",
+      "status": "verified",
+      "kind": "retained revised",
+      "question": {
+        "id": "parenteral-nutrition-048",
+        "question": "Which complication belongs in long-term PN surveillance?",
+        "choices": [
+          "Metabolic bone disease",
+          "Primary open-angle glaucoma",
+          "Seasonal allergic rhinitis",
+          "Congenital tooth agenesis"
+        ],
+        "answer": 0,
+        "rationale": "Metabolic bone disease belongs in long-term PN surveillance, along with liver, micronutrient and catheter risks. Assess bone health in context; this does not establish that PN is the sole cause. The other listed conditions are not characteristic PN-associated complications.",
+        "reviewHref": "#monitoring-transition"
+      },
+      "SHA256": "a2dcea3f48854e63652ebb9052e56498cdb4c72b962cc23f36221c5a8ffceb6f",
+      "sourceKeys": [
+        "aspen-2017"
+      ],
+      "allChoicesKeyExplanationComparedAgain": true,
+      "oneBestAnswer": true,
+      "proof": "Table13.3 includes long-term bone-health assessment. Metabolic bone disease is the characteristic PN-surveillance complication among the choices; this is not sole-cause attribution. The other three disorders are not characteristic PN-associated complications."
+    },
+    {
+      "id": "parenteral-nutrition-049",
+      "status": "verified",
+      "kind": "retained revised",
+      "question": {
+        "id": "parenteral-nutrition-049",
+        "question": "What is required before home PN discharge?",
+        "choices": [
+          "A trained patient or caregiver, coordinated team, supplies, line-care plan, monitoring, and emergency instructions",
+          "A stable catheter and normal baseline tests, with teaching deferred until a complication",
+          "A complete PN order and supplies, with follow-up responsibility left unassigned",
+          "Pump teaching alone, without demonstrated catheter-care skills or an emergency plan"
+        ],
+        "answer": 0,
+        "rationale": "Safe home PN requires clinical suitability, demonstrated patient or caregiver understanding, a coordinated team, supplies, catheter care, monitoring and emergency planning. Normal tests, a patent catheter, an order or pump teaching alone cannot replace these supports.",
+        "reviewHref": "#monitoring-transition"
+      },
+      "SHA256": "629586194c65d822cdae424e23cdfe787ae8eba57d8e26704171deca5d042a0a",
+      "sourceKeys": [
+        "aspen-2022-transition",
+        "aspen-2017"
+      ],
+      "allChoicesKeyExplanationComparedAgain": true,
+      "oneBestAnswer": true,
+      "proof": "Both pages of the transitions tool plus home-monitoring guidance require suitability, demonstrated caregiver understanding, accountable teams, supplies, catheter care, monitoring and emergency planning. Baseline tests, an order or pump teaching alone omit necessary safeguards."
+    },
+    {
+      "id": "parenteral-nutrition-106",
+      "status": "verified",
+      "kind": "retained revised",
+      "question": {
+        "id": "parenteral-nutrition-106",
+        "question": "A PN-dependent patient has recurrent fever only during connection and a damaged catheter hub. What is the most defensible next action?",
+        "choices": [
+          "Stop and investigate a catheter-related infection while protecting access and obtaining appropriate cultures",
+          "Continue PN through the damaged hub because the fever is intermittent",
+          "Treat the connection timing as proof of infection and remove access without further assessment",
+          "Replace the hub and restart immediately without investigating the fever"
+        ],
+        "answer": 0,
+        "rationale": "Connection-associated fever can signal catheter colonization, and a damaged hub adds a safety concern. Stop the affected infusion, assess the catheter and patient promptly, obtain appropriate cultures and evaluate other causes. Neither immediate restart nor automatic removal solely because of fever is justified; preserve needed access while the team determines management.",
+        "reviewHref": "#venous-access"
+      },
+      "SHA256": "7c9779052a3b8409dd87f0dce7f1181390cf7ab82d57f499e6ed3948dfa87936",
+      "sourceKeys": [
+        "aspen-2017",
+        "cdc-2024",
+        "fda-smof-2025",
+        "aspen-2019-cvad"
+      ],
+      "allChoicesKeyExplanationComparedAgain": true,
+      "oneBestAnswer": true,
+      "proof": "Connection fever prompts cultures/assessment rather than confirmed diagnosis; a damaged hub adds mechanical/contamination concern. Continued infusion through damage, removal based on timing alone and immediate uninvestigated restart are inappropriate."
+    },
+    {
+      "id": "parenteral-nutrition-care-001",
+      "status": "verified",
+      "kind": "new approved-source question",
+      "question": {
+        "id": "parenteral-nutrition-care-001",
+        "question": "An adult PN admixture containing SMOFlipid has a final osmolarity of exactly 900 mOsm/L. Which access requirement applies from its July 2025 label?",
+        "choices": [
+          "Peripheral access because the general ASPEN upper limit includes 900",
+          "Central access because this label requires it at 900 mOsm/L or above",
+          "Peripheral access whenever the course is shorter than one week",
+          "Either route without checking the actual admixture or product instructions"
+        ],
+        "answer": 1,
+        "rationale": "The SMOFlipid label requires central administration for an admixture at 900 mOsm/L or above. ASPEN's general adult peripheral ceiling does not override that product-specific requirement, and short duration alone cannot establish peripheral suitability.",
+        "reviewHref": "#venous-access"
+      },
+      "SHA256": "b3366309b1d7d89d7c4df086d4e96b5850bf9b17ec402fe000d8f5ce9e633c62",
+      "sourceKeys": [
+        "fda-smof-2025",
+        "aspen-2017"
+      ],
+      "allChoicesKeyExplanationComparedAgain": true,
+      "oneBestAnswer": true,
+      "proof": "FDA section2.1 requires central administration at exactly900mOsm/L or above, even though ASPEN general peripheral guidance has an upper900mOsm/L ceiling. Short duration and route indifference do not override actual product instructions."
+    },
+    {
+      "id": "parenteral-nutrition-care-002",
+      "status": "verified",
+      "kind": "new approved-source question",
+      "question": {
+        "id": "parenteral-nutrition-care-002",
+        "question": "A long-term PN patient develops abnormal liver tests and new biliary symptoms. Which interpretation best supports the review?",
+        "choices": [
+          "The PN bag is necessarily the sole cause",
+          "Changing lipid brands guarantees prevention of further liver or biliary disease",
+          "Review illness, infection, overfeeding, lipid exposure and lack of enteral stimulation, and evaluate the symptoms promptly",
+          "Normal baseline liver tests exclude a PN-associated hepatobiliary problem"
+        ],
+        "answer": 2,
+        "rationale": "PN-associated hepatobiliary abnormalities are multifactorial. Consider illness, infection, nutrient excess, lipid exposure and limited enteral stimulation; monitor liver tests and evaluate biliary symptoms. Neither the bag alone nor a guaranteed benefit from brand substitution is an adequate explanation.",
+        "reviewHref": "#monitoring-transition"
+      },
+      "SHA256": "c0eaeb85cf2d32fea8f451007cdb6511c5a9a35a7fbe34e1a002294e56fa1dfa",
+      "sourceKeys": [
+        "aspen-2017",
+        "fda-smof-2025"
+      ],
+      "allChoicesKeyExplanationComparedAgain": true,
+      "oneBestAnswer": true,
+      "proof": "Question13 and FDA section5.2 identify multifactorial hepatobiliary problems and prompt symptom/laboratory evaluation. Sole-bag causation, guaranteed protection from changing brands and exclusion by normal baseline tests are false."
+    },
+    {
+      "id": "parenteral-nutrition-care-003",
+      "status": "verified",
+      "kind": "new approved-source question",
+      "question": {
+        "id": "parenteral-nutrition-care-003",
+        "question": "An adult with a documented peanut allergy is being assessed for SMOFlipid. What does its July 2025 label require?",
+        "choices": [
+          "Proceed because peanut is not a listed active oil",
+          "Proceed if fish and egg allergies are absent",
+          "Ignore the allergy because the product contains several oils",
+          "Do not use SMOFlipid: known peanut hypersensitivity is a labeled contraindication"
+        ],
+        "answer": 3,
+        "rationale": "The label contraindicates known hypersensitivity to fish, egg, soybean, peanut or any ingredient. It lists soybean, fish and other oils, with egg phospholipids, and describes soybean-peanut cross-reactivity; absence of peanut as an active oil does not remove the contraindication.",
+        "reviewHref": "#macronutrient-design"
+      },
+      "SHA256": "9f99be3dac99a9174d363ab1f5a7443938b64d814fbd9f8e82cabdf0db4f5979",
+      "sourceKeys": [
+        "fda-smof-2025"
+      ],
+      "allChoicesKeyExplanationComparedAgain": true,
+      "oneBestAnswer": true,
+      "proof": "FDA section4 contraindicates known peanut hypersensitivity; section5.3 explains soybean-peanut cross-reactivity. Absence of peanut as an active oil, no fish/egg allergy or a mixed-oil formulation does not cancel this contraindication."
+    },
+    {
+      "id": "parenteral-nutrition-care-004",
+      "status": "verified",
+      "kind": "new approved-source question",
+      "question": {
+        "id": "parenteral-nutrition-care-004",
+        "question": "A home-infusion provider cannot obtain an electrolyte salt in the discharging PN order. What is the best receiving-order response?",
+        "choices": [
+          "Substitute another salt at the same stated volume without recalculating the ions",
+          "Review the actual products, salt, dose, units and compatibility, revise the order as needed and communicate it to the accountable teams",
+          "Keep the unavailable ingredient on the order and omit it silently during compounding",
+          "Use the discharging bag label as the complete plan and leave follow-up unassigned"
+        ],
+        "answer": 1,
+        "rationale": "A safe PN transition requires a complete receiving order and named follow-up responsibility. Product availability and formulary differences must be resolved through review and clearly communicated changes. Equal volumes do not establish equivalent electrolyte delivery or compatibility, and silent omission is unsafe.",
+        "reviewHref": "#monitoring-transition"
+      },
+      "SHA256": "6fec5eaaf899d920b3ed87fcd4a6eb40a08f6e39c7e9861fb0dc917f639fc4ca",
+      "sourceKeys": [
+        "aspen-2022-transition",
+        "book-PDF174",
+        "aspen-2014"
+      ],
+      "allChoicesKeyExplanationComparedAgain": true,
+      "oneBestAnswer": true,
+      "proof": "Transitions tool requires salt/dose/units and resolution of availability/formulary differences with communicated changes and accountable follow-up. Book order plus stock/dual-ion calculations show equal volume is not equal ion delivery. Silent omission and label-only/unassigned follow-up are unsafe."
+    }
+  ],
+  "lessonCoverageUpdates": [
+    {
+      "lesson": "pn-decision",
+      "heading": "Recognize common indications",
+      "kind": "retained original section",
+      "status": "verified",
+      "bodySHA256": "a636550dab89ff638c3b60ba1b2a79d2b6005deaebeb66f26483fbd6b02253c4",
+      "sourceKeys": [
+        "aspen-2017",
+        "book-PDF158"
+      ],
+      "wholeSectionComparedAgain": true,
+      "proof": "2017 Table1.1 covers all retained examples. Recommendations1A/1B/2A qualify diagnoses by absorption, enteral access/tolerance, severity and viable alternatives."
+    },
+    {
+      "lesson": "pn-decision",
+      "heading": "Stabilize before aggressive delivery",
+      "kind": "retained original section",
+      "status": "verified",
+      "bodySHA256": "b123d8a4705127e47bca76821f9ec7198df094645df0c7aa2880a1707cb33f84",
+      "sourceKeys": [
+        "aspen-2017",
+        "aspen-2020-refeeding",
+        "aspen-2021-ethics"
+      ],
+      "wholeSectionComparedAgain": true,
+      "proof": "2017 recommendation4D and full shock/hypovolemia rationale, preserved2020 severity-specific calorie holding advice, and2021 goals/time-limited-trial discussion cover the complete body."
+    },
+    {
+      "lesson": "venous-access",
+      "heading": "Use peripheral PN as a limited bridge",
+      "kind": "retained original section",
+      "status": "verified",
+      "bodySHA256": "ae643ea88c639c0550306bbcb75f8f3a9a9fd5f63acecf1ff518ef818eef6055",
+      "sourceKeys": [
+        "aspen-2017",
+        "fda-smof-2025",
+        "book-PDF158"
+      ],
+      "wholeSectionComparedAgain": true,
+      "proof": "Adult6A-6C and rationale provide bridge duration, osmolarity, dilution, renal/fluid allowance and venous injury limits. FDA2.1 makes exactly900central for SMOFlipid. Book short-course example is explicitly distinguished."
+    },
+    {
+      "lesson": "venous-access",
+      "heading": "Treat line findings as clinical signals",
+      "kind": "retained original section",
+      "status": "verified",
+      "bodySHA256": "592bc1813c2ee0a972553cedd642858774d576cc3522d82ffbde8bcc4d389667",
+      "sourceKeys": [
+        "aspen-2017",
+        "aspen-2019-cvad",
+        "cdc-2024",
+        "fda-smof-2025"
+      ],
+      "wholeSectionComparedAgain": true,
+      "proof": "2017 Table13.1 and catheter/fever discussion,2019 mechanical complication categories, CDC reporting/examination/prevention recommendations and FDA reaction/infection precautions support signs prompting assessment. Mechanical signs are assessment triggers, not proof of a named diagnosis; no forced-flushing, automatic-removal or universal salvage algorithm is added."
+    },
+    {
+      "lesson": "macronutrient-design",
+      "heading": "Screen the actual lipid product for allergy",
+      "kind": "new approved-source teaching",
+      "status": "verified",
+      "bodySHA256": "58daba6f1b6aca6f116ace9599100a468c9ea2550c1f69e0d438c0d14e95d3b1",
+      "sourceKeys": [
+        "fda-smof-2025"
+      ],
+      "wholeSectionComparedAgain": true,
+      "proof": "FDA4/5.3 actual ingredient/allergy contraindications, soybean-peanut cross-reactivity and immediate stopping/treatment. Peanut contraindication is distinguished from active oil composition."
+    },
+    {
+      "lesson": "macronutrient-design",
+      "heading": "Make volume and route agree",
+      "kind": "retained original section",
+      "status": "verified",
+      "bodySHA256": "c8b394508106b94afb317e99ec50205d68e9e1ec6eae39d610d872b4e5425372",
+      "sourceKeys": [
+        "book-PDF158",
+        "book-PDF174",
+        "aspen-2017",
+        "aspen-2022-transition"
+      ],
+      "wholeSectionComparedAgain": true,
+      "proof": "Book complete order includes stocks/additives/medicines/water to final volume; fluid allowance is individualized. 2017 peripheral constraints, Table13.1 urine/GI/drain/medication I/O and Table13.4 additional fluid/electrolyte needs, with2022 supplemental-fluid orders, support replacement outside PN when required. This is combined-source synthesis, not a fixed renal-loss replacement order."
+    },
+    {
+      "lesson": "monitoring-transition",
+      "heading": "Monitor by phase and acuity",
+      "kind": "retained original section",
+      "status": "verified",
+      "bodySHA256": "ffdc81f862a868eccb0e3d0edd5835cfa3cccfdaed53a27254c25254ffd12b5b",
+      "sourceKeys": [
+        "aspen-2017",
+        "aspen-2020-refeeding",
+        "fda-smof-2025"
+      ],
+      "wholeSectionComparedAgain": true,
+      "proof": "Full adultQuestion13 and Tables13.1-13.3 supply baseline/ongoing parameters, actual intake/losses, laboratory/line review and home stability. Expert-opinion frequency limitations are explicit; high-risk refeeding and product-specific monitoring retain their separate instructions."
+    },
+    {
+      "lesson": "monitoring-transition",
+      "heading": "Prevent and detect long-term complications",
+      "kind": "retained original section",
+      "status": "verified",
+      "bodySHA256": "f8e9b235fd5cd6c27d0b4cbc6a627c35abdacac59335771e093040553a9b1a4d",
+      "sourceKeys": [
+        "aspen-2017",
+        "fda-smof-2025"
+      ],
+      "wholeSectionComparedAgain": true,
+      "proof": "Full adultQuestion13 and Table13.3 support multifactorial liver/biliary, bone, micronutrient and catheter surveillance and prevention. FDA5.2 requires liver monitoring and consideration of reduction/discontinuation; no guaranteed brand-switch benefit is claimed."
+    },
+    {
+      "lesson": "monitoring-transition",
+      "heading": "Cycle and transition with intent",
+      "kind": "retained original section",
+      "status": "verified",
+      "bodySHA256": "45fa963431d93d1772e76d1f1e0806977c50212a5e78e840847fa1f245cff5aa",
+      "sourceKeys": [
+        "aspen-2014",
+        "aspen-2017",
+        "book-PDF158"
+      ],
+      "wholeSectionComparedAgain": true,
+      "proof": "2014 cycling/start-stop/late-insulin discussion supports hourly exposure, individualized conversion and glucose safeguards without a universal stable-adult taper. 2017 Question13B/Table13.4 supports actual GI tolerance/absorption, weight/hydration/electrolytes/replacement and follow-up after stopping; albumin is unreliable as a nutrition marker."
+    },
+    {
+      "lesson": "monitoring-transition",
+      "heading": "Confirm readiness for home care",
+      "kind": "new approved-source teaching",
+      "status": "verified",
+      "bodySHA256": "f208fb597dcf736b4b7ae77ed0674fcafd6bf3d4e50631e227429a06db1f6b20",
+      "sourceKeys": [
+        "aspen-2022-transition",
+        "aspen-2017"
+      ],
+      "wholeSectionComparedAgain": true,
+      "proof": "Both transition pages and2017 home/monitoring tables support stability, access, willing/able caregiver, safe home, demonstrated care/admin/storage, losses, supplies, laboratories, accountable contacts and readmission/emergency planning."
+    },
+    {
+      "lesson": "monitoring-transition",
+      "heading": "Reconcile each receiving prescription",
+      "kind": "new approved-source teaching",
+      "status": "verified",
+      "bodySHA256": "06bbb73f33daf1336f5fd8e7a13c7923fdb1e20dcfb9602d8f4eeec56b3da29b",
+      "sourceKeys": [
+        "aspen-2022-transition",
+        "aspen-2014",
+        "aspen-2017"
+      ],
+      "wholeSectionComparedAgain": true,
+      "proof": "Both transition pages require complete order, salt/dose/units, associated separate infusions/fluids/medicines/vitamins, shipping/monitoring/follow-up, available skilled receiving team and communicated changes. Actual compatibility review follows2014/2017 order safety.2022 expressly individualizes off-versus-continuing transit."
+    }
+  ],
+  "figureCoverageUpdates": [
+    {
+      "lesson": "pn-decision",
+      "status": "verified",
+      "sourceKeys": [
+        "book-PDF158",
+        "aspen-2017",
+        "aspen-2020-refeeding"
+      ],
+      "columnsCompared": [
+        "Need: inadequate actual GI intake",
+        "Function: digestion/absorption/access",
+        "Timing: nutrition risk and expected inadequacy",
+        "Readiness: hemodynamic/metabolic safety"
+      ],
+      "limits": "Summary figure does not prescribe a universal waiting interval."
+    },
+    {
+      "lesson": "venous-access",
+      "status": "verified",
+      "sourceKeys": [
+        "book-PDF108",
+        "book-PDF158",
+        "aspen-2017"
+      ],
+      "columnsCompared": [
+        "Peripheral: lower concentration/volume/site review and short bridge",
+        "PICC: central tip, thrombosis and vessel preservation",
+        "Tunneled: selected durable home use",
+        "Port: intermittent implanted access with needle/care requirements"
+      ],
+      "changes": "Title includes duration; PICC caption removes an implied intermediate-duration classification. No universal dwell time or device-superiority claim."
+    },
+    {
+      "lesson": "monitoring-transition",
+      "status": "verified",
+      "sourceKeys": [
+        "aspen-2017",
+        "aspen-2020-refeeding",
+        "aspen-2014"
+      ],
+      "columnsCompared": [
+        "Early: phosphate/potassium/magnesium/fluid/glucose",
+        "Ongoing: weight/actualI-O/liver/kidney/TG/line",
+        "Cycle: changed hourly exposure and start-stop checks",
+        "Transition: reliable oral/enteral delivery"
+      ],
+      "limits": "General summary, not fixed laboratory frequency or fixed cessation threshold."
+    }
+  ],
+  "coverage": {
+    "baseEvidence": "parenteral-nutrition-refeeding-timing-review.json",
+    "baseVerifiedBank": 119,
+    "bank": 142,
+    "currentVerifiedBank": 131,
+    "additionalVerifiedRetainedIds": [
+      "parenteral-nutrition-003",
+      "parenteral-nutrition-007",
+      "parenteral-nutrition-008",
+      "parenteral-nutrition-015",
+      "parenteral-nutrition-047",
+      "parenteral-nutrition-048",
+      "parenteral-nutrition-049",
+      "parenteral-nutrition-106"
+    ],
+    "newVerifiedIds": [
+      "parenteral-nutrition-care-001",
+      "parenteral-nutrition-care-002",
+      "parenteral-nutrition-care-003",
+      "parenteral-nutrition-care-004"
+    ],
+    "remainingBank": 11,
+    "remainingBankItemIds": [
+      "parenteral-nutrition-012",
+      "parenteral-nutrition-013",
+      "parenteral-nutrition-020",
+      "parenteral-nutrition-025",
+      "parenteral-nutrition-027",
+      "parenteral-nutrition-030",
+      "parenteral-nutrition-031",
+      "parenteral-nutrition-033",
+      "parenteral-nutrition-044",
+      "parenteral-nutrition-045",
+      "parenteral-nutrition-103"
+    ],
+    "embeddedVerified": 6,
+    "embedded": 6,
+    "currentCumulativeVerified": 5,
+    "cumulative": 5,
+    "originalTeachingFullyVerified": 16,
+    "originalTeachingRemaining": 8,
+    "newApprovedSourceSectionsThisUnit": 3,
+    "newApprovedSourceSectionsAcrossUnits": 10,
+    "bookAddedSectionsAcrossUnits": 23,
+    "totalSections": 57,
+    "totalFullySourceVerifiedSectionBodies": 49,
+    "figuresFullyVerified": 4,
+    "figuresRemainingPartlySupported": 2,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false,
+    "remainingOriginalTeachingBodies": [
+      {
+        "lesson": "venous-access",
+        "heading": "Use central access for concentrated therapy"
+      },
+      {
+        "lesson": "macronutrient-design",
+        "heading": "Set protein from clinical demand"
+      },
+      {
+        "lesson": "macronutrient-design",
+        "heading": "Advance dextrose within metabolic capacity"
+      },
+      {
+        "lesson": "micronutrient-balance",
+        "heading": "Prescribe electrolytes as a pattern"
+      },
+      {
+        "lesson": "micronutrient-balance",
+        "heading": "Provide complete vitamins"
+      },
+      {
+        "lesson": "micronutrient-balance",
+        "heading": "Individualize trace elements"
+      },
+      {
+        "lesson": "compounding-safety",
+        "heading": "Choose a formulation deliberately"
+      },
+      {
+        "lesson": "monitoring-transition",
+        "heading": "Separate overfeeding from intolerance"
+      }
+    ],
+    "remainingPartlySupportedFigureIds": [
+      "macronutrient-design",
+      "micronutrient-balance"
+    ]
+  },
+  "reviewedWithoutWholeClosure": [
+    {
+      "id": "parenteral-nutrition-012",
+      "status": "reviewing",
+      "unchanged": true,
+      "boundary": "2017 Table13.1 supports upper-extremity edema/displacement assessment;2019 supports mechanical complications. Complete symptom-specific provenance for the retained swelling/resistance differential (thrombosis, malposition, mechanical failure) is still pending. Not added to verified count."
+    }
+  ],
+  "baselineLedgerRepair": {
+    "heading": "Require both need and route failure",
+    "evidence": "parenteral-nutrition-fluid-label-review.json:lessonReview[pn-decision].preservedSections",
+    "reason": "Earlier evidence verified this body but the per-lesson array omitted it. Restore the array entry without counting a new verification; the119/138 and8/24 baseline totals remain unchanged."
+  },
+  "broaderReview": {
+    "currentSelectionIndices": [
+      0,
+      35,
+      71,
+      106,
+      141
+    ],
+    "actualCurrentPNItems": [
+      {
+        "id": "cumulative-parenteral-nutrition-parenteral-nutrition-001",
+        "status": "verified",
+        "question": {
+          "id": "cumulative-parenteral-nutrition-parenteral-nutrition-001",
+          "question": "Which finding most strongly supports parenteral nutrition?",
+          "choices": [
+            "Severe malnutrition with complete intestinal obstruction and no usable enteral route",
+            "A central line without a nutrition deficit",
+            "One missed meal",
+            "Adequate oral intake"
+          ],
+          "answer": 0,
+          "rationale": "PN is justified when a meaningful nutrition need cannot be met through the gastrointestinal tract.",
+          "reviewHref": "/learn/pharmacy/modules/parenteral-nutrition",
+          "module": "Parenteral Nutrition"
+        },
+        "SHA256": "6bf040579f2b9a0b6ed3a770d7f82cb72ccf0f972b8069138b79bc919360b553",
+        "sourceKeys": [
+          "book-PDF158",
+          "aspen-2017"
+        ],
+        "allChoicesKeyExplanationComparedAgain": true,
+        "proof": "Complete obstruction/no usable route plus severe nutritional need supports PN. A line alone, one missed meal or adequate oral intake does not."
+      },
+      {
+        "id": "cumulative-parenteral-nutrition-parenteral-nutrition-036",
+        "status": "verified",
+        "question": {
+          "id": "cumulative-parenteral-nutrition-parenteral-nutrition-036",
+          "question": "Which visual finding requires a PN admixture to be quarantined?",
+          "choices": [
+            "Visible precipitate or free oil",
+            "A complete label",
+            "An intact seal",
+            "A uniform appearance within validated specifications"
+          ],
+          "answer": 0,
+          "rationale": "Particles, precipitate, or emulsion cracking can be dangerous and require investigation.",
+          "reviewHref": "/learn/pharmacy/modules/parenteral-nutrition",
+          "module": "Parenteral Nutrition"
+        },
+        "SHA256": "03dfced92a60798933eb6bd6a076faa8288ce26d8bd6982dd07ed6df242ada7c",
+        "sourceKeys": [
+          "fda-smof-2025"
+        ],
+        "allChoicesKeyExplanationComparedAgain": true,
+        "proof": "FDA2.1 inspection instructions distinguish particles/free oil/phase separation from intact closure/complete label/appearance within validated specifications. Quarantine/investigate defects."
+      },
+      {
+        "id": "cumulative-parenteral-nutrition-parenteral-nutrition-081",
+        "status": "verified",
+        "question": {
+          "id": "cumulative-parenteral-nutrition-parenteral-nutrition-081",
+          "question": "A 55 kg adult has an individualized amino acid target of 1.5 g/kg/day. How many grams are prescribed daily?",
+          "choices": [
+            "82.5 g",
+            "41.3 g",
+            "165 g",
+            "55 g"
+          ],
+          "answer": 0,
+          "rationale": "55 kg multiplied by 1.5 g/kg/day equals 82.5 g per day.",
+          "reviewHref": "/learn/pharmacy/modules/parenteral-nutrition",
+          "module": "Parenteral Nutrition"
+        },
+        "SHA256": "999cc5decb9cc6aeda213d0af46c241644d94fd38ff6670cebb87727e1ae6a56",
+        "sourceKeys": [
+          "book-PDF160",
+          "book-PDF161"
+        ],
+        "allChoicesKeyExplanationComparedAgain": true,
+        "proof": "Stated individualized dose is arithmetic, not a universal dose recommendation:55kg*1.5g/kg/day=82.5g/day.41.3 is rounded half,165double,55ignores multiplier."
+      },
+      {
+        "id": "cumulative-parenteral-nutrition-parenteral-nutrition-book-007",
+        "status": "verified",
+        "question": {
+          "question": "Why can central access deliver a concentrated admixture in the source explanation?",
+          "choices": [
+            "It removes the need for sterility",
+            "It changes dextrose into lipid",
+            "Contents enter a large vessel and are rapidly diluted",
+            "It prevents all thrombosis"
+          ],
+          "answer": 2,
+          "rationale": "The IV-principles chapter explains rapid dilution in a large central vessel.",
+          "reviewHref": "/learn/pharmacy/modules/parenteral-nutrition",
+          "id": "cumulative-parenteral-nutrition-parenteral-nutrition-book-007",
+          "module": "Parenteral Nutrition"
+        },
+        "SHA256": "0cbcecbf41a4a050ebd788798d55db5e95b1070e4d4c24b95523a870ec0482ad",
+        "sourceKeys": [
+          "book-PDF108"
+        ],
+        "allChoicesKeyExplanationComparedAgain": true,
+        "proof": "Large central vessel gives rapid dilution. It neither removes sterility nor changes substrate nor prevents all thrombosis."
+      },
+      {
+        "id": "cumulative-parenteral-nutrition-parenteral-nutrition-care-004",
+        "status": "verified",
+        "question": {
+          "id": "cumulative-parenteral-nutrition-parenteral-nutrition-care-004",
+          "question": "A home-infusion provider cannot obtain an electrolyte salt in the discharging PN order. What is the best receiving-order response?",
+          "choices": [
+            "Substitute another salt at the same stated volume without recalculating the ions",
+            "Review the actual products, salt, dose, units and compatibility, revise the order as needed and communicate it to the accountable teams",
+            "Keep the unavailable ingredient on the order and omit it silently during compounding",
+            "Use the discharging bag label as the complete plan and leave follow-up unassigned"
+          ],
+          "answer": 1,
+          "rationale": "A safe PN transition requires a complete receiving order and named follow-up responsibility. Product availability and formulary differences must be resolved through review and clearly communicated changes. Equal volumes do not establish equivalent electrolyte delivery or compatibility, and silent omission is unsafe.",
+          "reviewHref": "/learn/pharmacy/modules/parenteral-nutrition",
+          "module": "Parenteral Nutrition"
+        },
+        "SHA256": "9ebb5832d52031dac216a856e2d72ae552d6da59c635b4c98bc0e531916534bc",
+        "sourceKeys": [
+          "aspen-2022-transition",
+          "book-PDF174",
+          "aspen-2014"
+        ],
+        "allChoicesKeyExplanationComparedAgain": true,
+        "proof": "Transitions tool requires salt/dose/units and resolution of availability/formulary differences with communicated changes and accountable follow-up. Book order plus stock/dual-ion calculations show equal volume is not equal ion delivery. Silent omission and label-only/unassigned follow-up are unsafe."
+      }
+    ],
+    "selectionChangedByBankGrowth": true,
+    "fiveSeparatelyRecompared": true
+  },
+  "discrepancies": [
+    {
+      "topic": "Peripheral duration/osmolarity",
+      "book": "Less-than-one-week example",
+      "approvedAdultGeneralGuidance": "ASPEN10-14days maximum and upper900mOsm/L",
+      "productSpecific": "SMOFlipid admixture at900mOsm/L or above requires central administration",
+      "resolution": "Teach the distinction and apply actual product/local constraints."
+    },
+    {
+      "topic": "Transfer infusion",
+      "olderSafetyDiscussion": "2014 advises stopping PN before discharge/transfer",
+      "2022Tool": "Determine whether transit can be safely off or must continue",
+      "resolution": "Individualize and communicate the transit plan."
+    },
+    {
+      "topic": "Monitoring evidence",
+      "resolution": "General frequency is largely expert opinion and individualized; do not turn table schedules into universal rules."
+    }
+  ],
+  "validation": {
+    "candidate": "HEAD archive plus exactly the three scoped content files; existing dependencies symlinked; no .env or unrelated working changes included.",
+    "candidateContentHashes": {
+      "src/data/modules/parenteralNutrition.js": "a126452325372ff479dd02353619f5361e8a72513f572741f0d8d08f54e6f338",
+      "src/data/questionBanks/parenteralNutrition.js": "f831dad108207dee07cb3470440f58377aaf04690fde491ac27f293c22149692",
+      "src/components/learn/ParenteralNutritionVisual.jsx": "5977f340ea6deaf06ceff6aa4589ebe9db4fde1b3bdc6f7126bdf761de680cad"
+    },
+    "build": {
+      "status": "passed",
+      "staticPages": 567,
+      "command": "next build --webpack",
+      "logSHA256": "5bbccb46d60ebd7058ae639de90abb5b7b19e9a223cebd04b0f5a034b71da920"
+    },
+    "focusedStructuralAudit": {
+      "status": "passed",
+      "questions": 142,
+      "hardErrors": [],
+      "scope": "Structural source-reference presence does not establish clinical accuracy.",
+      "logSHA256": "becfbdb4db7e8c0078cdbc7a9071df5355ef112596921ceea782fa97b7e06d69"
+    },
+    "technical": {
+      "status": "passed",
+      "bank": 142,
+      "sections": 57,
+      "changedRetained": [
+        "parenteral-nutrition-003",
+        "parenteral-nutrition-007",
+        "parenteral-nutrition-008",
+        "parenteral-nutrition-015",
+        "parenteral-nutrition-047",
+        "parenteral-nutrition-048",
+        "parenteral-nutrition-049",
+        "parenteral-nutrition-106"
+      ],
+      "retainedIDsKeysPromptsAnchorsPreserved": 138,
+      "retainedObjectsUnchanged": 130,
+      "embeddedChecksUnchanged": 6,
+      "architecturePreserved": true,
+      "newQuestions": [
+        "parenteral-nutrition-care-001",
+        "parenteral-nutrition-care-002",
+        "parenteral-nutrition-care-003",
+        "parenteral-nutrition-care-004"
+      ],
+      "cumulativeIDs": [
+        "cumulative-parenteral-nutrition-parenteral-nutrition-001",
+        "cumulative-parenteral-nutrition-parenteral-nutrition-036",
+        "cumulative-parenteral-nutrition-parenteral-nutrition-081",
+        "cumulative-parenteral-nutrition-parenteral-nutrition-book-007",
+        "cumulative-parenteral-nutrition-parenteral-nutrition-care-004"
+      ]
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "allBankGradedCorrect": 142,
+          "correctAttempts": 15,
+          "reviewedWrongAnswers": 13,
+          "embeddedChecks": 6,
+          "teachingBodies": 57,
+          "figures": 6,
+          "cumulativePNCorrect": 5,
+          "cumulativePNWrong": 5,
+          "remediationLinkPassed": true,
+          "localProgressPassed": true
+        },
+        {
+          "width": 390,
+          "allBankGradedCorrect": 142,
+          "correctAttempts": 15,
+          "reviewedWrongAnswers": 13,
+          "embeddedChecks": 6,
+          "teachingBodies": 57,
+          "figures": 6,
+          "cumulativePNCorrect": 5,
+          "cumulativePNWrong": 5,
+          "remediationLinkPassed": true,
+          "localProgressPassed": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "browserScope": "142bank items graded correct at1440/390, thirteen selected retained/new questions also wrong-answer tested, six embedded checks,57exact rendered bodies,6figures,current5PN cumulative correct/incorrect, remediation link and local-storage progress. Isolated candidate uses committed assessment architecture; dirty working account components excluded.",
+    "overflowWidths": [
+      1440,
+      390,
+      320
+    ],
+    "manualVisualReview": {
+      "teachingHeadings": [
+        "Recognize common indications",
+        "Stabilize before aggressive delivery",
+        "Use peripheral PN as a limited bridge",
+        "Treat line findings as clinical signals",
+        "Make volume and route agree",
+        "Monitor by phase and acuity",
+        "Prevent and detect long-term complications",
+        "Cycle and transition with intent",
+        "Screen the actual lipid product for allergy",
+        "Confirm readiness for home care",
+        "Reconcile each receiving prescription"
+      ],
+      "scope": "All nine changed/new body screenshots at1440/390 visually inspected; unchanged common-indication and volume bodies compared as source/DOM content, not nine additional screenshots. Three target figures at both widths visually inspected, currentcare004correct/incorrect both widths inspected.",
+      "findings": "Readable line wrapping, no cropped body text or choice labels, no page overflow. Some figure-element screenshot titles pass beneath the existing sticky navigation because of scroll framing; columns and page DOM fit without content overflow.",
+      "privateImageHashes": {
+        "cumulative-correct-1440.png": "647f429a8cd8dc06f3a1bb15e8801828599ac7d7aa7463431ec82406430b350b",
+        "cumulative-correct-390.png": "3786e0cdfec60a1bb648de1fe5d7b342c9253f268a280ad15c8354493093410e",
+        "cumulative-wrong-1440.png": "be2019e90db6706d2fa5b7012af3fbc36acc70fe77f5b650dff342a28cb8e947",
+        "cumulative-wrong-390.png": "3927ae5ecf270d12a19fca2a2898232d2afb393baae6b1e47aa8034c63628c33",
+        "figure-compounding-safety-1440.png": "c37494b537cfa2e240c9c15afb57f70f3d31b7e1c19b22d6a2533bc4a4b81201",
+        "figure-compounding-safety-390.png": "f38272718bee67f24231543ff8a7a5815e4978fc3807810e355b5ea78cac9b54",
+        "figure-macronutrient-design-1440.png": "6ba1f65a4c51de1fc2372767fb19f1eb1f6b447de4e64ad163bfb603dad4bf77",
+        "figure-macronutrient-design-390.png": "8329851d3472643f81b2b204bcaa9de0883439f45bbcf4bea0dedee283f1ccb7",
+        "figure-micronutrient-balance-1440.png": "c1e4b9ae59c96d25bd4a9ccbf8a5e907ede353eec3b860e9e5884d2b6723dd20",
+        "figure-micronutrient-balance-390.png": "9e7023597185285d7c59d5c83da5ca9a3870c07c9929313841c3053315056ce7",
+        "figure-monitoring-transition-1440.png": "80c9d9d6eb894c2e64f11b2c874fb031d9b206e4556b027d880aafff16289405",
+        "figure-monitoring-transition-390.png": "395d68a9071e7667d84649a238df20844dc43607012cd39d239c644d7faf9b23",
+        "figure-pn-decision-1440.png": "53f7e02c6e839afb762da1c30e21fbabc13a115b619a7c0f95551712d869e3b2",
+        "figure-pn-decision-390.png": "7c45c869b9444e1e5deaed00cc7301c32d9091391f596ae427ba1fc6d0dd16bf",
+        "figure-venous-access-1440.png": "0bb25fb901f61d1fb19f8f58e7decf02e2f5458e41bb240b89ef9501b32ee1f0",
+        "figure-venous-access-390.png": "596737f84822673b515c68dff3c1685f7a942c7a1625b642eaf4370353039d66",
+        "teaching-0-1440.png": "43992cead41c7cc5a1d967bce40ac88733cf474916eb6af0effe6fc93fbf650e",
+        "teaching-0-390.png": "6f903c5867520f9ee41c085369f75653614d61657295dc5839374a05a9e77e6b",
+        "teaching-1-1440.png": "a76ae1540fb45b2ebd6dd33f1bcd85fc571a655054ac1501571027569ec3ac61",
+        "teaching-1-390.png": "4c28c003ea43d008c8d260827a1f3796b47ec5c97510d8cfae0ca81d86629848",
+        "teaching-2-1440.png": "2ab613b8940a7b071da5e5c45671a139fc5c83f91e5bb75eabe2c11808e7e802",
+        "teaching-2-390.png": "16007fc24b7a443bb9b700145f72d8c687e419c568e6c73dbb7a896aa270bed4",
+        "teaching-3-1440.png": "407c44b51bd4291075c5b8677035233356165318520d2531118c623b6cfb83e3",
+        "teaching-3-390.png": "a7d81a0efb18d11fea2b404ba6c6fd7b98ed6810fb3edfdc5164fd818b788a3c",
+        "teaching-4-1440.png": "882c259d7ac6d1840e2c9352e8e1c9eefc766987b3e2af1872448531485e2820",
+        "teaching-4-390.png": "c63786e740c171823fc12dfbacfaa68f8cf58820baeee831ea968bcf51d20223",
+        "teaching-5-1440.png": "9fb202d2005a92d512a736baf1020e8d5f7e610f141c48ca23cc2b52dea431fe",
+        "teaching-5-390.png": "a36ba5ca2d0e0b7e3fcce7544c0a4bde3e9edb88b3ec88007ab07c1bfb55306b",
+        "teaching-6-1440.png": "f0a9588ae2daa07016c40a957b8b8e161742f97d11a2cd8db862014cd86955e8",
+        "teaching-6-390.png": "93a9c2a06a24f3fa8f9a55e37ca4df1c3cd669b54c53ff27bdade84b93442d43",
+        "teaching-7-1440.png": "eee562b1f4fb34172651a90320d19b43f12ec3406882bb690710e20aee5c6f6f",
+        "teaching-7-390.png": "a2ce89fa341b3ed5100bcdccd1076c72aa99cf625ba61785a4b7a616fbc0a90c",
+        "teaching-8-1440.png": "867f32cac9c9d525bc08556c4d41e44c1049db751630b05d3ee9a7bc7919bec0",
+        "teaching-8-390.png": "843086e18ca524a8e6c6b6db3542d92772fe04d543f7938ec91f418207b30a3f"
+      }
+    },
+    "harnessSHA256": {
+      "browser.cjs": "e20aba78220f803afbe626797679bafbae726080e672aa0f20caacfe8b4e9e69",
+      "technical.mjs": "8665383c3b5e679e1df4dd405d3867d72a56c22f745834cc9d831b3ca5230631"
+    },
+    "harnessCorrections": "Exact choice matching distinguishes4kcal from3.4kcal; distinct-ID tracking ignores assessment filler duplicates; generic non-PN filler questions do not require a reviewHref. Final complete runs passed; no production content change was needed for these harness fixes."
+  },
+  "calculations": {
+    "newDistinctChecks": 0,
+    "repeatedCheck": "Independent Decimal:55*1.5=82.5g/day for current cumulative081; doubled165, half41.25 rounds41.3.",
+    "runningDistinctChecks": 635,
+    "runningSeparateSourceExamples": 98
+  },
+  "contentHashes": {
+    "src/data/modules/parenteralNutrition.js": "a126452325372ff479dd02353619f5361e8a72513f572741f0d8d08f54e6f338",
+    "src/data/questionBanks/parenteralNutrition.js": "f831dad108207dee07cb3470440f58377aaf04690fde491ac27f293c22149692",
+    "src/components/learn/ParenteralNutritionVisual.jsx": "5977f340ea6deaf06ceff6aa4589ebe9db4fde1b3bdc6f7126bdf761de680cad"
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": "pending",
+    "push": "pending",
+    "production": "not verified"
+  },
+  "nextAction": "Complete remaining eleven bank questions, eight original bodies, two partially supported figures and legacy monitoring against already approved sources. Keep Chapter11, adult PN and checklist entry15 reviewing; fourteen checklist entries complete.",
+  "limits": [
+    "All142grading checks are behavior evidence, not142clinical verifications.",
+    "PN132/142 planned tally was reduced to131/142 because unchanged012remains open.",
+    "Unrelated worktree edits remain outside this unit and outside the candidate.",
+    "No private book pages, extracts or source screenshots are committed.",
+    "No account/backend/schema or deployment changes."
+  ]
+}

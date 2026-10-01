@@ -11,10 +11,10 @@ const diagrams = {
   },
   "venous-access": {
     eyebrow: "Access architecture",
-    title: "Concentration determines the route.",
+    title: "Match concentration and duration to access.",
     columns: [
       ["Peripheral", "Short bridge", "Lower osmolarity, larger volume, frequent site review"],
-      ["PICC", "Intermediate access", "Central tip with insertion and thrombosis considerations"],
+      ["PICC", "Vascular risk", "Central tip with thrombosis and vein-preservation considerations"],
       ["Tunneled", "Long horizon", "Durable external access for selected home therapy"],
       ["Port", "Implanted access", "Intermittent access with needle and care requirements"],
     ],

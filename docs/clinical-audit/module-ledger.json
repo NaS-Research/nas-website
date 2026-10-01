@@ -187,9 +187,12 @@
             "Recognize the added route burden"
           ],
           "wholeLessonVerified": false,
-          "latestScopedEvidence": "parenteral-nutrition-refeeding-timing-review.json",
+          "latestScopedEvidence": "parenteral-nutrition-home-monitoring-review.json",
           "verifiedOriginalSections": [
-            "Time therapy to nutrition risk"
+            "Time therapy to nutrition risk",
+            "Require both need and route failure",
+            "Recognize common indications",
+            "Stabilize before aggressive delivery"
           ],
           "verifiedApprovedSourceAddedSections": []
         },
@@ -202,9 +205,11 @@
             "Separate two compatibility questions"
           ],
           "wholeLessonVerified": false,
-          "latestScopedEvidence": "parenteral-nutrition-approved-safety-review.json",
+          "latestScopedEvidence": "parenteral-nutrition-home-monitoring-review.json",
           "verifiedOriginalSections": [
-            "Confirm and protect the system"
+            "Confirm and protect the system",
+            "Use peripheral PN as a limited bridge",
+            "Treat line findings as clinical signals"
           ],
           "verifiedApprovedSourceAddedSections": []
         },
@@ -218,11 +223,14 @@
             "Count energy actually supplied outside PN"
           ],
           "wholeLessonVerified": false,
-          "latestScopedEvidence": "parenteral-nutrition-approved-safety-review.json",
+          "latestScopedEvidence": "parenteral-nutrition-home-monitoring-review.json",
           "verifiedOriginalSections": [
-            "Prescribe lipid as a drug product"
+            "Prescribe lipid as a drug product",
+            "Make volume and route agree"
           ],
-          "verifiedApprovedSourceAddedSections": []
+          "verifiedApprovedSourceAddedSections": [
+            "Screen the actual lipid product for allergy"
+          ]
         },
         {
           "slug": "micronutrient-balance",
@@ -274,17 +282,23 @@
             "Read the insulin example without turning it into a fixed order"
           ],
           "wholeLessonVerified": false,
-          "latestScopedEvidence": "parenteral-nutrition-refeeding-timing-review.json",
-          "verifiedOriginalSections": [],
+          "latestScopedEvidence": "parenteral-nutrition-home-monitoring-review.json",
+          "verifiedOriginalSections": [
+            "Monitor by phase and acuity",
+            "Prevent and detect long-term complications",
+            "Cycle and transition with intent"
+          ],
           "verifiedApprovedSourceAddedSections": [
             "Assess depletion before calories return",
             "Start adult refeeding with a measured plan",
             "Respond to refeeding changes promptly",
-            "Match lipid laboratory tests to the product"
+            "Match lipid laboratory tests to the product",
+            "Confirm readiness for home care",
+            "Reconcile each receiving prescription"
           ]
         }
       ],
-      "questions": 138,
+      "questions": 142,
       "status": "reviewing",
       "evidence": [
         "parenteral-nutrition-book-expansion-review.json",
@@ -293,7 +307,8 @@
         "parenteral-nutrition-legacy-reader-review.json",
         "parenteral-nutrition-verification-workflow-review.json",
         "parenteral-nutrition-approved-safety-review.json",
-        "parenteral-nutrition-refeeding-timing-review.json"
+        "parenteral-nutrition-refeeding-timing-review.json",
+        "parenteral-nutrition-home-monitoring-review.json"
       ],
       "wholeModuleVerified": false,
       "verifiedExpansion": {
@@ -303,17 +318,19 @@
         "evidence": "parenteral-nutrition-book-expansion-review.json"
       },
       "latestSourceCoverage": {
-        "verifiedBankItems": 119,
-        "totalBankItems": 138,
-        "remainingBankItems": 19,
+        "verifiedBankItems": 131,
+        "totalBankItems": 142,
+        "remainingBankItems": 11,
         "verifiedEmbeddedChecks": 6,
         "verifiedCumulativeItems": 5,
-        "fullyVerifiedOriginalTeachingSections": 8,
-        "remainingOriginalTeachingSections": 16,
-        "newApprovedSourceSections": 7,
-        "fullyVerifiedFigures": 1,
-        "remainingPartlySupportedFigures": 5,
-        "evidence": "parenteral-nutrition-refeeding-timing-review.json"
+        "fullyVerifiedOriginalTeachingSections": 16,
+        "remainingOriginalTeachingSections": 8,
+        "newApprovedSourceSections": 10,
+        "totalTeachingSections": 57,
+        "fullyVerifiedSectionBodies": 49,
+        "fullyVerifiedFigures": 4,
+        "remainingPartlySupportedFigures": 2,
+        "evidence": "parenteral-nutrition-home-monitoring-review.json"
       },
       "relatedLegacyReaderReview": {
         "status": "reviewing",
@@ -366,6 +383,29 @@
         ],
         "wholeModuleVerified": false,
         "cumulativeSelectionChangedByBankGrowth": true
+      },
+      "latestApprovedHomeMonitoringReview": {
+        "status": "verified in scope",
+        "evidence": "parenteral-nutrition-home-monitoring-review.json",
+        "remainingBankItemIds": [
+          "parenteral-nutrition-012",
+          "parenteral-nutrition-013",
+          "parenteral-nutrition-020",
+          "parenteral-nutrition-025",
+          "parenteral-nutrition-027",
+          "parenteral-nutrition-030",
+          "parenteral-nutrition-031",
+          "parenteral-nutrition-033",
+          "parenteral-nutrition-044",
+          "parenteral-nutrition-045",
+          "parenteral-nutrition-103"
+        ],
+        "wholeModuleVerified": false,
+        "verifiedNewFigures": [
+          "pn-decision",
+          "venous-access",
+          "monitoring-transition"
+        ]
       }
     },
     {
