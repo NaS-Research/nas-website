@@ -85,13 +85,14 @@
           "targets": [
             "pharmacokinetics",
             "parenteral-nutrition-calculations",
-            "pharmacy-unit-conversions"
+            "pharmacy-unit-conversions",
+            "pharmacy-concentrations-specific-gravity"
           ],
           "pdfPages": [
             19,
             19
           ],
-          "evidence": "chapter1-formula-checklist-map.json; first four entries addressed through the Chapter 9 dependency, remainder unverified",
+          "evidence": "chapter1-formula-checklist-map.json; first eight checklist entries verified with completed modules/questions and source/build/desktop/mobile checks; remaining entries open",
           "topics": [
             {
               "topic": "Liquid-volume conversions",
@@ -156,6 +157,70 @@
                 127
               ],
               "evidence": "pharmacy-unit-conversions-review.json"
+            },
+            {
+              "topic": "Percentage strength",
+              "status": "verified",
+              "targets": [
+                "pharmacy-concentrations-specific-gravity"
+              ],
+              "sourcePrintedPages": [
+                128,
+                131
+              ],
+              "sourcePdfPages": [
+                136,
+                139
+              ],
+              "evidence": "pharmacy-concentrations-specific-gravity-review.json"
+            },
+            {
+              "topic": "Ratio strength",
+              "status": "verified",
+              "targets": [
+                "pharmacy-concentrations-specific-gravity"
+              ],
+              "sourcePrintedPages": [
+                132,
+                133
+              ],
+              "sourcePdfPages": [
+                140,
+                141
+              ],
+              "evidence": "pharmacy-concentrations-specific-gravity-review.json"
+            },
+            {
+              "topic": "Parts per million and billion",
+              "status": "verified",
+              "targets": [
+                "pharmacy-concentrations-specific-gravity"
+              ],
+              "sourcePrintedPages": [
+                134,
+                134
+              ],
+              "sourcePdfPages": [
+                142,
+                142
+              ],
+              "evidence": "pharmacy-concentrations-specific-gravity-review.json"
+            },
+            {
+              "topic": "Specific gravity",
+              "status": "verified",
+              "targets": [
+                "pharmacy-concentrations-specific-gravity"
+              ],
+              "sourcePrintedPages": [
+                135,
+                135
+              ],
+              "sourcePdfPages": [
+                143,
+                143
+              ],
+              "evidence": "pharmacy-concentrations-specific-gravity-review.json"
             }
           ]
         },
@@ -208,7 +273,8 @@
         }
       ],
       "moduleSlugs": [
-        "pharmacy-unit-conversions"
+        "pharmacy-unit-conversions",
+        "pharmacy-concentrations-specific-gravity"
       ],
       "findings": [
         "Textbook six-area exam blueprint superseded by NABP five-domain outline effective 2025-05-01.",
@@ -220,7 +286,8 @@
         "NABP Content Outline accessed 2026-09-24; see naplex-preparation.md",
         "quick-reference-introduction-review.json",
         "chapter1-formula-checklist-map.json",
-        "pharmacy-unit-conversions-review.json"
+        "pharmacy-unit-conversions-review.json",
+        "pharmacy-concentrations-specific-gravity-review.json"
       ],
       "pdfRangeStatus": "start verified; end provisional"
     },
@@ -373,12 +440,33 @@
         148
       ],
       "pdfPages": null,
-      "status": "unmapped",
+      "status": "reviewing",
       "subsectionsComplete": false,
-      "subsections": [],
-      "moduleSlugs": [],
+      "subsections": [
+        {
+          "topic": "Percentage and ratio strengths, ppm/ppb, and specific gravity",
+          "printedPages": [
+            128,
+            135
+          ],
+          "pdfPages": [
+            136,
+            143
+          ],
+          "status": "verified",
+          "targets": [
+            "pharmacy-concentrations-specific-gravity"
+          ],
+          "evidence": "pharmacy-concentrations-specific-gravity-review.json; dependency of Chapter 1 checklist; rest of Chapter 10 remains open"
+        }
+      ],
+      "moduleSlugs": [
+        "pharmacy-concentrations-specific-gravity"
+      ],
       "findings": [],
-      "evidence": []
+      "evidence": [
+        "pharmacy-concentrations-specific-gravity-review.json"
+      ]
     },
     {
       "chapter": 11,

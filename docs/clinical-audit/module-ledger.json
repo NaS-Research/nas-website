@@ -239,7 +239,13 @@
       ],
       "questions": 100,
       "status": "unreviewed",
-      "evidence": []
+      "evidence": [],
+      "latestScopedReview": {
+        "date": "2026-09-30",
+        "scope": "Concentration arithmetic only: 15 bank items and two embedded checks; clarified w/v or supplied stock units in 12 bank prompts",
+        "evidence": "pharmacy-concentrations-specific-gravity-review.json",
+        "wholeModuleVerified": false
+      }
     },
     {
       "slug": "pediatric-parenteral-nutrition",
@@ -11236,6 +11242,41 @@
       ],
       "sourcePolicy": "RxPrep 2023 only",
       "verificationNotes": "Book comparison and item/figure review complete; 38 independent Decimal calculations, focused structural audit, exact scoped production build and desktop/mobile browser checks passed. Commit/push recorded separately in release receipt."
+    },
+    {
+      "slug": "pharmacy-concentrations-specific-gravity",
+      "title": "Pharmacy Concentrations and Specific Gravity",
+      "area": "Calculations & Nutrition",
+      "lessons": [
+        {
+          "slug": "percentage-basis",
+          "status": "verified"
+        },
+        {
+          "slug": "finished-product",
+          "status": "verified"
+        },
+        {
+          "slug": "ratio-strength",
+          "status": "verified"
+        },
+        {
+          "slug": "ppm-ppb",
+          "status": "verified"
+        },
+        {
+          "slug": "specific-gravity",
+          "status": "verified"
+        }
+      ],
+      "questions": 35,
+      "embeddedChecks": 5,
+      "status": "verified",
+      "evidence": [
+        "docs/clinical-audit/pharmacy-concentrations-specific-gravity-review.json"
+      ],
+      "sourcePolicy": "RxPrep 2023 only",
+      "verificationNotes": "All source and assessment items reviewed; 79 independent arithmetic checks, focused structural audit, scoped production build and desktop/mobile rendering passed. Release recorded in sequential-resume.json."
     }
   ],
   "guides": [

@@ -41,9 +41,12 @@
   },
   "thisPass": {
     "guide": "Existing preparation guide expanded at use-quick-references",
-    "newModule": "pharmacy-unit-conversions",
-    "questionCoverage": "Six added guide checks, four standalone cumulative questions, four embedded checks and 25 new module-bank items",
-    "validation": "Book/source and all item reviews, 38 independent calculations, focused structural audit, scoped production build and desktop/mobile rendering passed."
+    "questionCoverage": "Six added guide checks, four standalone cumulative questions, nine embedded checks and 60 new module-bank items; 12 existing PN prompts clarified",
+    "validation": "Both new modules and guide passed source/item review, focused structural checks, scoped production builds and desktop/mobile verification. Unit conversions: 38 independent calculations; concentration and retained PN arithmetic: 79. First unit pushed; second commit/push to be recorded in a release receipt.",
+    "newModules": [
+      "pharmacy-unit-conversions",
+      "pharmacy-concentrations-specific-gravity"
+    ]
   },
   "currentBookLocation": {
     "chapter": 1,
@@ -51,27 +54,29 @@
     "pdfPage": 19,
     "section": "Required-formulas checklist",
     "dependencyRead": {
-      "chapter": 9,
+      "chapter": 10,
       "printedPages": [
-        116,
-        119
+        128,
+        135
       ],
       "pdfPages": [
-        124,
-        127
+        136,
+        143
       ]
     },
-    "completedEntries": 4,
+    "completedEntries": 8,
     "correctedEntries": 0,
     "note": "Do not advance the complete checklist to verified before all remaining entries are audited."
   },
   "nextStartingPoint": {
     "chapter": 1,
     "printedPage": 7,
-    "entry": "Fifth checklist item: percentage strength",
+    "pdfPage": 19,
+    "entry": "Ninth checklist entry: dilution and concentration",
     "dependencyChapter": 10,
-    "dependencyPrintedPage": 128,
-    "dependencyPdfPage": "not yet verified"
+    "dependencyPrintedPage": 136,
+    "dependencyPdfPage": 144,
+    "sectionAudit": "not begun; next page identity verified"
   },
   "otherChapter1Work": {
     "quickReferenceIntroduction": "verified",
@@ -85,9 +90,10 @@
     "branch": "audit/rxprep-content-2026-09-24",
     "baseCommit": "b38faea07f3cd78f04c513cb6e842bb8f6fccdbc",
     "remoteVerifiedAtStart": true,
-    "commit": "pending",
-    "push": "pending",
-    "production": "not verified"
+    "commit": "df630290c5abc8cd1dadeb5574fa0cec7c0ca582",
+    "push": "first logical unit verified on remote audit branch; second unit not yet committed",
+    "production": "not verified",
+    "pendingLogicalUnit": "pharmacy-concentrations-specific-gravity"
   },
   "openIssues": [
     "Remaining Chapter 1 checklist entries and all reference tables require source review.",

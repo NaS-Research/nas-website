@@ -8,12 +8,16 @@
     "visualRead": true
   },
   "status": "reviewing",
-  "completedEntryCount": 4,
+  "completedEntryCount": 8,
   "newModuleScope": [
     "Liquid-volume conversions",
     "Solid-mass conversions",
     "Monovalent/divalent mEq-to-mmol conversions",
-    "Height conversions"
+    "Height conversions",
+    "Percentage strength",
+    "Ratio strength",
+    "Parts per million and billion",
+    "Specific gravity"
   ],
   "validationPending": false,
   "mapping": [
@@ -36,11 +40,29 @@
       }
     },
     {
-      "group": "Concentration, strength, dilution and compounding calculations",
+      "group": "Percentage and ratio strengths, ppm/ppb, and specific gravity",
+      "targets": [
+        "pharmacy-concentrations-specific-gravity"
+      ],
+      "status": "verified",
+      "note": "Dedicated concentration module created; all source, items, arithmetic, build and rendered checks passed. Remaining compounding topics are unreviewed.",
+      "sourceDependency": {
+        "chapter": 10,
+        "printedPages": [
+          128,
+          135
+        ],
+        "pdfPages": [
+          136,
+          143
+        ]
+      }
+    },
+    {
+      "group": "Dilution, concentration, alligation and remaining compounding calculations",
       "targets": [],
       "status": "unreviewed",
-      "nextSourcePrintedPage": 128,
-      "note": "Search confirmed no standalone general concentration/strength module; existing nutrition stock-solution lessons cover only parts."
+      "nextSourcePrintedPage": 136
     },
     {
       "group": "Nutrition, electrolyte, body-size and kidney-function calculations",
@@ -93,8 +115,8 @@
     }
   ],
   "nextStartingPoint": {
-    "bookLocation": "Chapter 1 printed page 7, fifth checklist entry: percentage strength",
-    "dependency": "Chapter 10, printed page 128; verify PDF page before use"
+    "bookLocation": "Chapter 1 printed page 7, ninth checklist entry: dilution and concentration",
+    "dependency": "Chapter 10, printed page 136 / PDF page 144; next page identity verified, section not yet audited"
   },
   "limits": [
     "This is a coverage map, not verification of the complete formula checklist.",

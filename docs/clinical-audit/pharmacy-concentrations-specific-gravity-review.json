@@ -1,0 +1,650 @@
+{
+  "date": "2026-09-30",
+  "status": "verified",
+  "module": "pharmacy-concentrations-specific-gravity",
+  "sourcePolicy": "Supplied RxPrep 2023 only",
+  "source": {
+    "chapter1": {
+      "printedPage": 7,
+      "pdfPage": 19,
+      "purpose": "Checklist entries five through eight"
+    },
+    "dependency": {
+      "chapter": 10,
+      "printedPages": [
+        128,
+        135
+      ],
+      "pdfPages": [
+        136,
+        143
+      ],
+      "completeRelevantPagesTextAndVisualRead": true
+    }
+  },
+  "mappingSearch": {
+    "missingStandaloneConfirmed": true,
+    "existingPartial": [
+      "parenteral-nutrition-calculations#stock-solutions-additives",
+      "parenteral-nutrition-calculations#lipid-energy-ledger"
+    ],
+    "broaderBank": "No matching pre-existing standalone pharmacyFinalReview strength/ppm/SG questions; cumulative questions derive from module banks. Five selections from this new bank flow through automatically."
+  },
+  "scope": {
+    "lessons": 5,
+    "teachingSections": 22,
+    "originalFigures": 5,
+    "embeddedChecks": 5,
+    "assessmentQuestions": 35,
+    "cumulativeAutoSelection": 5
+  },
+  "coverage": [
+    {
+      "lesson": "percentage-basis",
+      "sourcePrintedPages": [
+        128,
+        129
+      ],
+      "subjects": [
+        "w/v, w/w, v/v",
+        "Finished-product denominator",
+        "Percent w/v and mg/mL",
+        "Separate fluid ingredient concentrations",
+        "Ingredient amount in stated measured volume and supplied drop size"
+      ]
+    },
+    {
+      "lesson": "finished-product",
+      "sourcePrintedPages": [
+        129,
+        131
+      ],
+      "subjects": [
+        "Ingredient and base mass",
+        "Total components",
+        "Ingredient already in base and added pure ingredient",
+        "Stock volume from required mass",
+        "Fractional percentage",
+        "Ingredient quantity from units"
+      ]
+    },
+    {
+      "lesson": "ratio-strength",
+      "sourcePrintedPages": [
+        132,
+        133
+      ],
+      "subjects": [
+        "One part within total parts",
+        "Percent/ratio conversion on same basis",
+        "Ingredient unit conversion"
+      ]
+    },
+    {
+      "lesson": "ppm-ppb",
+      "sourcePrintedPages": [
+        134,
+        134
+      ],
+      "subjects": [
+        "One million/billion denominators",
+        "Percent/ppm and ppm/ppb conversion",
+        "Explicit w/v and w/w bases",
+        "Mass and volume calculations"
+      ]
+    },
+    {
+      "lesson": "specific-gravity",
+      "sourcePrintedPages": [
+        135,
+        135
+      ],
+      "subjects": [
+        "Dimensionless density ratio",
+        "Equal-volume interpretation",
+        "Book water density convention",
+        "Mass and volume conversion"
+      ]
+    }
+  ],
+  "itemReview": {
+    "embeddedChecks": "All five prompts, choices, keys and rationales reviewed; all numerical checks independently calculated.",
+    "conceptualBankIds": [
+      "strength-001",
+      "strength-002",
+      "strength-007",
+      "strength-014",
+      "strength-026"
+    ],
+    "originality": "Original stems and quantities; no reproduced book assessment items.",
+    "distractors": "Unit, basis, denominator, scale, direction, rounding and prior-ingredient errors; one defensible best answer per item.",
+    "all35PromptsChoicesKeysExplanationsIndividuallyRead": true
+  },
+  "crossModuleReview": {
+    "module": "parenteral-nutrition-calculations",
+    "status": "scoped arithmetic review; whole module remains at its prior status",
+    "bankItems": [
+      "pncalc-025",
+      "pncalc-029",
+      "pncalc-030",
+      "pncalc-031",
+      "pncalc-033",
+      "pncalc-100",
+      "pncalc-101",
+      "pncalc-102",
+      "pncalc-103",
+      "pncalc-104",
+      "pncalc-105",
+      "pncalc-106",
+      "pncalc-107",
+      "pncalc-108",
+      "pncalc-109"
+    ],
+    "embeddedChecks": [
+      "lipid-energy-ledger",
+      "stock-solutions-additives"
+    ],
+    "changes": "Clarified the w/v basis in pncalc-025 and pncalc-030 and exposed the supplied stock concentration with units in ten existing generated questions. IDs, choices, answer keys and calculated quantities retained.",
+    "limits": "The book supports the concentration method; these arithmetic checks do not newly verify clinical PN indications, energy factors, dosing, product selection, or historical outside-source claims. Those remain for the nutrition chapter review. pncalc-034 is retained for later PN/final-volume reconciliation; this concentration pass does not verify its real-world volume/compounding assumptions."
+  },
+  "independentArithmetic": {
+    "method": "Independent Decimal calculations with literal problem inputs; compared against every numerical new-bank key and all worked/embedded/figure quantities. Five conceptual new-bank items separately reviewed against the source.",
+    "bank": [
+      {
+        "id": "strength-003",
+        "independentDecimal": "2.00",
+        "keyedChoice": "2% w/v",
+        "passed": true
+      },
+      {
+        "id": "strength-004",
+        "independentDecimal": "6.50",
+        "keyedChoice": "6.5 mg/mL",
+        "passed": true
+      },
+      {
+        "id": "strength-005",
+        "independentDecimal": "2.8",
+        "keyedChoice": "2.8% w/v",
+        "passed": true
+      },
+      {
+        "id": "strength-006",
+        "independentDecimal": "1.8000",
+        "keyedChoice": "1.8 g",
+        "passed": true
+      },
+      {
+        "id": "strength-008",
+        "independentDecimal": "4.500",
+        "keyedChoice": "4.5 g",
+        "passed": true
+      },
+      {
+        "id": "strength-009",
+        "independentDecimal": "86.4",
+        "keyedChoice": "86.4 g",
+        "passed": true
+      },
+      {
+        "id": "strength-010",
+        "independentDecimal": "15.00",
+        "keyedChoice": "15% w/w",
+        "passed": true
+      },
+      {
+        "id": "strength-011",
+        "independentDecimal": "2.94",
+        "keyedChoice": "2.94% w/w",
+        "passed": true
+      },
+      {
+        "id": "strength-012",
+        "independentDecimal": "4.00",
+        "keyedChoice": "4 mL",
+        "passed": true
+      },
+      {
+        "id": "strength-013",
+        "independentDecimal": "2.400",
+        "keyedChoice": "2.4% w/w",
+        "passed": true
+      },
+      {
+        "id": "strength-015",
+        "independentDecimal": "5.0E+3",
+        "keyedChoice": "1:5,000 w/v",
+        "passed": true
+      },
+      {
+        "id": "strength-016",
+        "independentDecimal": "0.04",
+        "keyedChoice": "0.04% w/w",
+        "passed": true
+      },
+      {
+        "id": "strength-017",
+        "independentDecimal": "5E+2",
+        "keyedChoice": "1:500 w/v",
+        "passed": true
+      },
+      {
+        "id": "strength-018",
+        "independentDecimal": "30.00",
+        "keyedChoice": "30 mg",
+        "passed": true
+      },
+      {
+        "id": "strength-019",
+        "independentDecimal": "50",
+        "keyedChoice": "1:50 w/w",
+        "passed": true
+      },
+      {
+        "id": "strength-020",
+        "independentDecimal": "4.80000",
+        "keyedChoice": "4.8 ppm w/v",
+        "passed": true
+      },
+      {
+        "id": "strength-021",
+        "independentDecimal": "0.0024",
+        "keyedChoice": "0.0024% w/w",
+        "passed": true
+      },
+      {
+        "id": "strength-022",
+        "independentDecimal": "350.00",
+        "keyedChoice": "350 ppb w/w",
+        "passed": true
+      },
+      {
+        "id": "strength-023",
+        "independentDecimal": "480.00",
+        "keyedChoice": "480 mcg",
+        "passed": true
+      },
+      {
+        "id": "strength-024",
+        "independentDecimal": "1.5E+2",
+        "keyedChoice": "150 mL",
+        "passed": true
+      },
+      {
+        "id": "strength-025",
+        "independentDecimal": "3.0",
+        "keyedChoice": "3 mg",
+        "passed": true
+      },
+      {
+        "id": "strength-027",
+        "independentDecimal": "1.2",
+        "keyedChoice": "1.2",
+        "passed": true
+      },
+      {
+        "id": "strength-028",
+        "independentDecimal": "102.00",
+        "keyedChoice": "102 g",
+        "passed": true
+      },
+      {
+        "id": "strength-029",
+        "independentDecimal": "4E+1",
+        "keyedChoice": "40 mL",
+        "passed": true
+      },
+      {
+        "id": "strength-030",
+        "independentDecimal": "630.000",
+        "keyedChoice": "630 g",
+        "passed": true
+      },
+      {
+        "id": "strength-031",
+        "independentDecimal": "19.23",
+        "keyedChoice": "19.23 mL",
+        "passed": true
+      },
+      {
+        "id": "strength-032",
+        "independentDecimal": "1.5000",
+        "keyedChoice": "1.5 g",
+        "passed": true
+      },
+      {
+        "id": "strength-033",
+        "independentDecimal": "1.20",
+        "keyedChoice": "1.2 mg",
+        "passed": true
+      },
+      {
+        "id": "strength-034",
+        "independentDecimal": "0.900",
+        "keyedChoice": "0.9 mg",
+        "passed": true
+      },
+      {
+        "id": "strength-035",
+        "independentDecimal": "2.00",
+        "keyedChoice": "2% w/v",
+        "passed": true
+      }
+    ],
+    "workedExamples": [
+      {
+        "label": "measured volume",
+        "value": "1.20",
+        "passed": true
+      },
+      {
+        "label": "stated drops repeated",
+        "value": "1.440",
+        "passed": true
+      },
+      {
+        "label": "fraction percent",
+        "value": "1.00000",
+        "passed": true
+      },
+      {
+        "label": "ingredient from units percent",
+        "value": "1.500",
+        "passed": true
+      },
+      {
+        "label": "ingredient from units mg/mL",
+        "value": "15",
+        "passed": true
+      },
+      {
+        "label": "percentage illustration",
+        "value": "20",
+        "passed": true
+      },
+      {
+        "label": "6 g in 300 mL",
+        "value": "2.00",
+        "passed": true
+      },
+      {
+        "label": "0.8 percent w/v",
+        "value": "8.0",
+        "passed": true
+      },
+      {
+        "label": "35 mg/mL",
+        "value": "3.5",
+        "passed": true
+      },
+      {
+        "label": "1.5 percent in 240 mL",
+        "value": "3.600",
+        "passed": true
+      },
+      {
+        "label": "80 g at 2.5 percent",
+        "value": "2.0",
+        "passed": true
+      },
+      {
+        "label": "base mass",
+        "value": "78",
+        "passed": true
+      },
+      {
+        "label": "component total",
+        "value": "40",
+        "passed": true
+      },
+      {
+        "label": "component strength",
+        "value": "20.0",
+        "passed": true
+      },
+      {
+        "label": "added pure ingredient",
+        "value": "4.85",
+        "passed": true
+      },
+      {
+        "label": "stock required mass",
+        "value": "120.00",
+        "passed": true
+      },
+      {
+        "label": "stock volume",
+        "value": "2",
+        "passed": true
+      },
+      {
+        "label": "0.08 percent ratio",
+        "value": "1.25E+3",
+        "passed": true
+      },
+      {
+        "label": "1:2000 percentage",
+        "value": "0.05",
+        "passed": true
+      },
+      {
+        "label": "120 mg in 60 mL ratio",
+        "value": "5E+2",
+        "passed": true
+      },
+      {
+        "label": "1:800 in 24 g",
+        "value": "30.00",
+        "passed": true
+      },
+      {
+        "label": "0.2 g plus 9.8 g ratio",
+        "value": "50",
+        "passed": true
+      },
+      {
+        "label": "percent to ppm",
+        "value": "3.60000",
+        "passed": true
+      },
+      {
+        "label": "ppm to percent",
+        "value": "0.0018",
+        "passed": true
+      },
+      {
+        "label": "ppm to ppb",
+        "value": "700.0",
+        "passed": true
+      },
+      {
+        "label": "0.12 ppm in 2.5 L",
+        "value": "300.000",
+        "passed": true
+      },
+      {
+        "label": "0.6 ppm and 90 mcg volume",
+        "value": "1.5E+2",
+        "passed": true
+      },
+      {
+        "label": "4 ppm w/w sample",
+        "value": "3.00",
+        "passed": true
+      },
+      {
+        "label": "density ratio",
+        "value": "0.8",
+        "passed": true
+      },
+      {
+        "label": "80 mL at 1.25 density",
+        "value": "100.00",
+        "passed": true
+      },
+      {
+        "label": "45 g at 1.25 density",
+        "value": "36",
+        "passed": true
+      },
+      {
+        "label": "0.4 L at 1.1 density",
+        "value": "440.00",
+        "passed": true
+      },
+      {
+        "label": "round final volume",
+        "value": "29.17",
+        "passed": true
+      }
+    ],
+    "existingPN": [
+      {
+        "id": "pncalc-025",
+        "value": "0.2",
+        "passed": true
+      },
+      {
+        "id": "pncalc-029",
+        "value": "70",
+        "passed": true
+      },
+      {
+        "id": "pncalc-030",
+        "value": "0.1",
+        "passed": true
+      },
+      {
+        "id": "pncalc-033",
+        "value": "6",
+        "passed": true
+      },
+      {
+        "id": "pncalc-100",
+        "value": "4.0E+2",
+        "passed": true
+      },
+      {
+        "id": "pncalc-101",
+        "value": "5.0E+2",
+        "passed": true
+      },
+      {
+        "id": "pncalc-102",
+        "value": "9.0E+2",
+        "passed": true
+      },
+      {
+        "id": "pncalc-103",
+        "value": "7E+2",
+        "passed": true
+      },
+      {
+        "id": "pncalc-104",
+        "value": "3.0E+2",
+        "passed": true
+      },
+      {
+        "id": "pncalc-105",
+        "value": "4.0E+2",
+        "passed": true
+      },
+      {
+        "id": "pncalc-106",
+        "value": "20",
+        "passed": true
+      },
+      {
+        "id": "pncalc-107",
+        "value": "6",
+        "passed": true
+      },
+      {
+        "id": "pncalc-108",
+        "value": "10",
+        "passed": true
+      },
+      {
+        "id": "pncalc-109",
+        "value": "15",
+        "passed": true
+      },
+      {
+        "id": "PN embedded lipid volume",
+        "value": "375",
+        "passed": true
+      },
+      {
+        "id": "PN embedded stock volume",
+        "value": "5.0E+2",
+        "passed": true
+      }
+    ],
+    "totalCalculations": 79,
+    "allPassed": true
+  },
+  "sourceFindings": [
+    "The source basis distinguishes ppm w/v from ppm w/w. The new teaching explicitly states the basis instead of silently treating every ppm number as mg/L.",
+    "The source defines SG as a density ratio but simplifies it numerically to g/mL under its water reference. The module preserves the numerical convention and makes the dimensionless ratio versus density-unit distinction explicit.",
+    "The book worked percentage example on page 130 rounds an intermediate repeating fractional percentage. The module follows Chapter 9 final-rounding instruction and preserves intermediate precision.",
+    "The book mentions historical ratio-labeling requirements; no newly verified contemporary regulatory claim was introduced."
+  ],
+  "unresolvedIssues": [],
+  "validation": {
+    "focusedAssessmentAudit": "passed; no hard errors/source gaps; size and per-lesson advisories reviewed as suitable for this source scope",
+    "build": "Passed: Next 16.3.5 webpack production build of current HEAD plus exactly 14 scoped files; 562 generated pages. Unrelated working changes excluded.",
+    "desktopMobile": [
+      {
+        "build": "scoped production candidate",
+        "width": 1440,
+        "lessons": 5,
+        "figures": 5,
+        "embeddedChecks": 5,
+        "assessmentCorrect": 10,
+        "secondAttemptDistinct": true,
+        "incorrectFeedbackAndRemediation": true,
+        "PNAssessmentCorrect": 10,
+        "curriculum": true,
+        "sitemap": true,
+        "noOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "build": "scoped production candidate",
+        "width": 390,
+        "lessons": 5,
+        "figures": 5,
+        "embeddedChecks": 5,
+        "assessmentCorrect": 10,
+        "secondAttemptDistinct": true,
+        "incorrectFeedbackAndRemediation": true,
+        "PNAssessmentCorrect": 10,
+        "curriculum": true,
+        "sitemap": true,
+        "noOverflow": true,
+        "pageErrors": []
+      },
+      {
+        "build": "current working Learn integration",
+        "width": 390,
+        "narrowWidth": 320,
+        "librarySearch": true,
+        "moduleLink": true,
+        "figures": 5,
+        "noOverflow": true,
+        "signedOutMemberBoundary": 401,
+        "pageErrors": []
+      }
+    ],
+    "candidateDiff": "Exact candidate prepared from HEAD plus scoped transformations; final staged diff check required immediately before commit.",
+    "technical": "Unique module number, IDs and all 35 new prompts; valid section links; cumulative selection includes one item from every new lesson. Existing PN generated stock amounts/keys preserved and checked.",
+    "visual": "All five original figures inspected at desktop and mobile sizes, including actual viewports beneath the fixed navigation; labels, units, equations and wrapping checked. Library result and assessment feedback inspected."
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": "pending",
+    "push": "pending",
+    "production": "not verified"
+  },
+  "remainingBookCoverage": "Chapter 1 checklist and Chapter 10 are both still open; dilution/concentration begins on printed page 136 / PDF page 144."
+}
