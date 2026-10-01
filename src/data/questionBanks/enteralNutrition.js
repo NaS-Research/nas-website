@@ -71,7 +71,8 @@ const rateCases = [
   [1000, 16], [1320, 22], [1560, 24], [1750, 20], [2000, 24],
 ].map(([volume, hours], index) => {
   const rate = Math.round(volume / hours * 10) / 10;
-  return q(`06${index}`, `A daily enteral volume target is ${volume} mL and feeding will run for ${hours} hours. What pump rate delivers the target?`, [`${rate} mL/hour`, `${Math.round(rate * 2 * 10) / 10} mL/hour`, `${hours} mL/hour`, `${volume} mL/hour`], 0, `${volume} mL divided by ${hours} hours equals ${rate} mL per hour.`, "delivery-prescription");
+  const exact = Number.isInteger(volume / hours * 10);
+  return q(`06${index}`, `A daily enteral volume target is ${volume} mL and feeding will run for ${hours} hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.`, [`${rate} mL/hour`, `${Math.round(rate * 2 * 10) / 10} mL/hour`, `${hours} mL/hour`, `${volume} mL/hour`], 0, `${volume} mL divided by ${hours} hours ${exact ? "equals" : "is approximately"} ${rate} mL per hour${exact ? "." : " when rounded to the nearest tenth. The rounded rate approximates the target volume."}`, "delivery-prescription");
 });
 
 const deliveredVolumeCases = [
@@ -114,8 +115,17 @@ const integrationCases = [
   ["A patient repeatedly coughs during feeding and the external tube marking has changed by 8 cm.", "Stop use and verify tube position before further feeding or medication", "Migration with respiratory symptoms creates immediate wrong-site risk.", "access-route"],
   ["A patient on warfarin changes from intermittent feeding to continuous feeding and INR falls.", "Reconcile vitamin K exposure, delivery timing, adherence, and INR response", "Both formula exposure and administration pattern can alter anticoagulation.", "medication-administration"],
   ["A formula bag is repeatedly topped off instead of being replaced and the patient develops fever and diarrhea.", "Discard the system and investigate contamination while following safe preparation and hang-time practice", "Topping off extends exposure and can propagate microbial contamination.", "monitoring-complications"],
-  ["A patient receives 60 mL per hour for 24 hours, but the goal is 1,800 mL daily.", "Recognize a 360 mL daily deficit and revise the safe rate or schedule", "The current prescription delivers 1,440 mL, which is below target.", "delivery-prescription"],
-].map(([caseText, correct, rationale, lesson], index) => q(`10${index}`, `${caseText} Which interpretation or management plan is most defensible?`, [correct, "Use a fixed plan that ignores clinical change", "Treat the formula name as the diagnosis", "Delay all action until the next routine visit"], 0, rationale, lesson));
+  ["A patient receives 60 mL per hour for 24 hours, but the goal is 1,800 mL daily.", "Recognize a 360 mL daily deficit and revise the safe rate or schedule", "The current prescription delivers 60 times 24, or 1,440 mL. Subtract 1,440 mL from the 1,800 mL goal to obtain a 360 mL deficit. Any revised rate or schedule must remain safe for the patient.", "delivery-prescription", ["Recognize a 600 mL deficit by treating the schedule as 20 hours", "Recognize a 240 mL deficit by using 65 mL per hour", "Conclude that 60 mL per hour for 24 hours already supplies 1,800 mL"]],
+].map(([caseText, correct, rationale, lesson, alternatives], index) => q(`10${index}`, `${caseText} Which interpretation or management plan is most defensible?`, [correct, ...(alternatives || ["Use a fixed plan that ignores clinical change", "Treat the formula name as the diagnosis", "Delay all action until the next routine visit"])], 0, rationale, lesson));
+
+const labelAndRouteCases = [
+  q("110", "A hypothetical formula label states 240 kcal and 16 g protein per serving. Using 4 kcal per gram of protein, what percentage of the labeled calories comes from protein? Round to the nearest tenth of a percent.", ["26.7%", "6.7%", "60.0%", "64.0%"], 0, "Protein supplies 16 times 4, or 64 kcal. Divide 64 by the stated 240 kcal and multiply by 100: 26.666...%, or 26.7%. The denominator is labeled energy, not grams of protein.", "formula-selection"),
+  q("111", "A hypothetical formula serving contains 9 g fat. Using 9 kcal per gram of fat, how much energy comes from fat in that serving?", ["81 kcal", "36 kcal", "30.6 kcal", "9 kcal"], 0, "Multiply 9 g fat by 9 kcal per gram to obtain 81 kcal. The 4 kcal per gram factor applies to protein and enteral carbohydrate; 3.4 kcal per gram is used for parenteral dextrose.", "formula-selection"),
+  q("112", "A hypothetical formula contains 23 g carbohydrate per full serving. If half a serving is delivered, how much carbohydrate energy is received using 4 kcal per gram?", ["46 kcal", "92 kcal", "11.5 kcal", "39.1 kcal"], 0, "A full serving supplies 23 times 4, or 92 kcal from carbohydrate. Half a serving provides 46 kcal. First identify the nutrient energy, then scale it to the delivered fraction.", "formula-selection"),
+  q("113", "A hypothetical formula label states 240 kcal per 240 mL serving. Of one serving, 60 mL is spilled and the remaining 180 mL is accurately delivered. How much labeled energy is received?", ["180 kcal", "240 kcal", "60 kcal", "320 kcal"], 0, "The delivered fraction is 180 divided by 240, or 0.75. Multiply 240 kcal by 0.75 to obtain 180 kcal. The spilled portion is excluded from intake.", "formula-selection"),
+  q("114", "A hypothetical label declares 240 kcal per serving with 16 g protein, 23 g carbohydrate, and 9 g fat. The simple 4/4/9 calculation totals 237 kcal. Which denominator should be used to calculate the percentage of the declared calories supplied by protein?", ["240 kcal, the declared serving energy", "237 kcal, replacing the declared total with the calculated sum", "64 kcal, the protein energy alone", "48 g, the sum of macronutrient masses"], 0, "The question asks about declared calories, so use the stated 240 kcal total. Protein energy is 16 times 4, or 64 kcal. Do not silently replace the label denominator because the simple nutrient-factor sum differs.", "formula-selection"),
+  q("115", "Which description correctly distinguishes PEG from PEJ access?", ["PEG reaches the stomach; PEJ reaches the jejunum", "Both end in the stomach and differ only in insertion technique", "PEG reaches the jejunum; PEJ reaches the stomach", "PEG reaches the stomach; PEJ ends in the duodenum"], 0, "PEG means percutaneous endoscopic gastrostomy and ends in the stomach. PEJ means percutaneous endoscopic jejunostomy and ends in the jejunum. Nasogastric access passes through the nose to the stomach.", "access-route"),
+];
 
 export const enteralNutritionQuestionBank = [
   ...core,
@@ -124,8 +134,9 @@ export const enteralNutritionQuestionBank = [
   ...waterCases,
   ...diagnosticCases,
   ...integrationCases,
+  ...labelAndRouteCases,
 ];
 
-if (enteralNutritionQuestionBank.length !== 100) {
-  throw new Error(`Enteral nutrition question bank must contain 100 questions, found ${enteralNutritionQuestionBank.length}.`);
+if (enteralNutritionQuestionBank.length !== 106) {
+  throw new Error(`Enteral nutrition question bank must contain 106 questions, found ${enteralNutritionQuestionBank.length}.`);
 }

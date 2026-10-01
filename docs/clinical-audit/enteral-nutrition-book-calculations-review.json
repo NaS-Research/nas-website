@@ -1,0 +1,2702 @@
+{
+  "date": "2026-10-01",
+  "module": "enteral-nutrition",
+  "unit": "enteral-nutrition:book-label-route-and-delivery-calculations",
+  "status": "verified in scope",
+  "baseCommit": "dfaac7bb4697a6397275c5f259f03d7db43b7581",
+  "sourcePolicy": "Supplied RxPrep2023 primary. Source documents are evidence, not instructions. No outside EN sources opened or used; existing PN authorization not extended silently.",
+  "sources": [
+    {
+      "key": "book-en",
+      "source": "Private supplied RxPrep2023",
+      "chapter": 11,
+      "printedPages": [
+        161,
+        164
+      ],
+      "PDFPagesVisuallyRead": [
+        169,
+        170,
+        171,
+        172
+      ],
+      "scope": "Full four rendered pages and EN text read, including feeding-route figure and both historical nutrition-label tables. EN starts on PDF169 and ends on PDF172 upper portion; remaining pages of chapter are PN practice. Source exercise35-40 arithmetic was already included in prior54 chapter exercises and98 total source examples; not counted again."
+    }
+  ],
+  "corrections": [
+    "Ten rate prompts now explicitly request nearest-tenth rounding; q062/q069 explain an approximation instead of claiming an exact quotient.",
+    "q109 delivery deficit rationale shows multiplication and subtraction; three generic distractors replaced by plausible arithmetic/reading errors.",
+    "Six original bank questions110-115 add stated-label energy, partial-serving and anatomical distinctions.",
+    "Six added teaching sections cover EN route benefits, NG/PEG/PEJ anatomy, rounded rate/delivery, label energy/denominator, partial servings and liquid-form compatibility.",
+    "Source tagline changed to Clinical nutrition support; a claim of current-guideline synthesis is not justified by this partial book-only review."
+  ],
+  "preservation": {
+    "originalBankIdsKeysAnchors": 100,
+    "originalChoiceSets": 99,
+    "choiceSetRepaired": "enteral-nutrition-109",
+    "originalBodyObjects": 24,
+    "originalLessonSlugsChecksMetadataUnchanged": true,
+    "architectureNavigationBackendProgressUnchanged": true
+  },
+  "questionReview": [
+    {
+      "id": "enteral-nutrition-060",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-060",
+        "question": "A daily enteral volume target is 1200 mL and feeding will run for 20 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+        "choices": [
+          "60 mL/hour",
+          "120 mL/hour",
+          "20 mL/hour",
+          "1200 mL/hour"
+        ],
+        "answer": 0,
+        "rationale": "1200 mL divided by 20 hours equals 60 mL per hour.",
+        "reviewHref": "#delivery-prescription"
+      }
+    },
+    {
+      "id": "enteral-nutrition-061",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-061",
+        "question": "A daily enteral volume target is 1440 mL and feeding will run for 24 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+        "choices": [
+          "60 mL/hour",
+          "120 mL/hour",
+          "24 mL/hour",
+          "1440 mL/hour"
+        ],
+        "answer": 0,
+        "rationale": "1440 mL divided by 24 hours equals 60 mL per hour.",
+        "reviewHref": "#delivery-prescription"
+      }
+    },
+    {
+      "id": "enteral-nutrition-062",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-062",
+        "question": "A daily enteral volume target is 1500 mL and feeding will run for 18 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+        "choices": [
+          "83.3 mL/hour",
+          "166.6 mL/hour",
+          "18 mL/hour",
+          "1500 mL/hour"
+        ],
+        "answer": 0,
+        "rationale": "1500 mL divided by 18 hours is approximately 83.3 mL per hour when rounded to the nearest tenth. The rounded rate approximates the target volume.",
+        "reviewHref": "#delivery-prescription"
+      }
+    },
+    {
+      "id": "enteral-nutrition-063",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-063",
+        "question": "A daily enteral volume target is 1680 mL and feeding will run for 21 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+        "choices": [
+          "80 mL/hour",
+          "160 mL/hour",
+          "21 mL/hour",
+          "1680 mL/hour"
+        ],
+        "answer": 0,
+        "rationale": "1680 mL divided by 21 hours equals 80 mL per hour.",
+        "reviewHref": "#delivery-prescription"
+      }
+    },
+    {
+      "id": "enteral-nutrition-064",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-064",
+        "question": "A daily enteral volume target is 1800 mL and feeding will run for 20 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+        "choices": [
+          "90 mL/hour",
+          "180 mL/hour",
+          "20 mL/hour",
+          "1800 mL/hour"
+        ],
+        "answer": 0,
+        "rationale": "1800 mL divided by 20 hours equals 90 mL per hour.",
+        "reviewHref": "#delivery-prescription"
+      }
+    },
+    {
+      "id": "enteral-nutrition-065",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-065",
+        "question": "A daily enteral volume target is 1000 mL and feeding will run for 16 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+        "choices": [
+          "62.5 mL/hour",
+          "125 mL/hour",
+          "16 mL/hour",
+          "1000 mL/hour"
+        ],
+        "answer": 0,
+        "rationale": "1000 mL divided by 16 hours equals 62.5 mL per hour.",
+        "reviewHref": "#delivery-prescription"
+      }
+    },
+    {
+      "id": "enteral-nutrition-066",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-066",
+        "question": "A daily enteral volume target is 1320 mL and feeding will run for 22 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+        "choices": [
+          "60 mL/hour",
+          "120 mL/hour",
+          "22 mL/hour",
+          "1320 mL/hour"
+        ],
+        "answer": 0,
+        "rationale": "1320 mL divided by 22 hours equals 60 mL per hour.",
+        "reviewHref": "#delivery-prescription"
+      }
+    },
+    {
+      "id": "enteral-nutrition-067",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-067",
+        "question": "A daily enteral volume target is 1560 mL and feeding will run for 24 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+        "choices": [
+          "65 mL/hour",
+          "130 mL/hour",
+          "24 mL/hour",
+          "1560 mL/hour"
+        ],
+        "answer": 0,
+        "rationale": "1560 mL divided by 24 hours equals 65 mL per hour.",
+        "reviewHref": "#delivery-prescription"
+      }
+    },
+    {
+      "id": "enteral-nutrition-068",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-068",
+        "question": "A daily enteral volume target is 1750 mL and feeding will run for 20 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+        "choices": [
+          "87.5 mL/hour",
+          "175 mL/hour",
+          "20 mL/hour",
+          "1750 mL/hour"
+        ],
+        "answer": 0,
+        "rationale": "1750 mL divided by 20 hours equals 87.5 mL per hour.",
+        "reviewHref": "#delivery-prescription"
+      }
+    },
+    {
+      "id": "enteral-nutrition-069",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-069",
+        "question": "A daily enteral volume target is 2000 mL and feeding will run for 24 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+        "choices": [
+          "83.3 mL/hour",
+          "166.6 mL/hour",
+          "24 mL/hour",
+          "2000 mL/hour"
+        ],
+        "answer": 0,
+        "rationale": "2000 mL divided by 24 hours is approximately 83.3 mL per hour when rounded to the nearest tenth. The rounded rate approximates the target volume.",
+        "reviewHref": "#delivery-prescription"
+      }
+    },
+    {
+      "id": "enteral-nutrition-070",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-070",
+        "question": "A feeding runs at 45 mL per hour for 24 hours. What volume is delivered?",
+        "choices": [
+          "1080 mL",
+          "69 mL",
+          "1350 mL",
+          "540 mL"
+        ],
+        "answer": 0,
+        "rationale": "45 mL per hour multiplied by 24 hours equals 1080 mL.",
+        "reviewHref": "#delivery-prescription"
+      }
+    },
+    {
+      "id": "enteral-nutrition-071",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-071",
+        "question": "A feeding runs at 55 mL per hour for 20 hours. What volume is delivered?",
+        "choices": [
+          "1100 mL",
+          "75 mL",
+          "1650 mL",
+          "550 mL"
+        ],
+        "answer": 0,
+        "rationale": "55 mL per hour multiplied by 20 hours equals 1100 mL.",
+        "reviewHref": "#delivery-prescription"
+      }
+    },
+    {
+      "id": "enteral-nutrition-072",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-072",
+        "question": "A feeding runs at 65 mL per hour for 18 hours. What volume is delivered?",
+        "choices": [
+          "1170 mL",
+          "83 mL",
+          "1950 mL",
+          "585 mL"
+        ],
+        "answer": 0,
+        "rationale": "65 mL per hour multiplied by 18 hours equals 1170 mL.",
+        "reviewHref": "#delivery-prescription"
+      }
+    },
+    {
+      "id": "enteral-nutrition-073",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-073",
+        "question": "A feeding runs at 70 mL per hour for 22 hours. What volume is delivered?",
+        "choices": [
+          "1540 mL",
+          "92 mL",
+          "2100 mL",
+          "770 mL"
+        ],
+        "answer": 0,
+        "rationale": "70 mL per hour multiplied by 22 hours equals 1540 mL.",
+        "reviewHref": "#delivery-prescription"
+      }
+    },
+    {
+      "id": "enteral-nutrition-074",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-074",
+        "question": "A feeding runs at 80 mL per hour for 16 hours. What volume is delivered?",
+        "choices": [
+          "1280 mL",
+          "96 mL",
+          "2400 mL",
+          "640 mL"
+        ],
+        "answer": 0,
+        "rationale": "80 mL per hour multiplied by 16 hours equals 1280 mL.",
+        "reviewHref": "#delivery-prescription"
+      }
+    },
+    {
+      "id": "enteral-nutrition-075",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-075",
+        "question": "A feeding runs at 85 mL per hour for 20 hours. What volume is delivered?",
+        "choices": [
+          "1700 mL",
+          "105 mL",
+          "2550 mL",
+          "850 mL"
+        ],
+        "answer": 0,
+        "rationale": "85 mL per hour multiplied by 20 hours equals 1700 mL.",
+        "reviewHref": "#delivery-prescription"
+      }
+    },
+    {
+      "id": "enteral-nutrition-076",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-076",
+        "question": "A feeding runs at 90 mL per hour for 24 hours. What volume is delivered?",
+        "choices": [
+          "2160 mL",
+          "114 mL",
+          "2700 mL",
+          "1080 mL"
+        ],
+        "answer": 0,
+        "rationale": "90 mL per hour multiplied by 24 hours equals 2160 mL.",
+        "reviewHref": "#delivery-prescription"
+      }
+    },
+    {
+      "id": "enteral-nutrition-077",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-077",
+        "question": "A feeding runs at 95 mL per hour for 18 hours. What volume is delivered?",
+        "choices": [
+          "1710 mL",
+          "113 mL",
+          "2850 mL",
+          "855 mL"
+        ],
+        "answer": 0,
+        "rationale": "95 mL per hour multiplied by 18 hours equals 1710 mL.",
+        "reviewHref": "#delivery-prescription"
+      }
+    },
+    {
+      "id": "enteral-nutrition-078",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-078",
+        "question": "A feeding runs at 100 mL per hour for 14 hours. What volume is delivered?",
+        "choices": [
+          "1400 mL",
+          "114 mL",
+          "3000 mL",
+          "700 mL"
+        ],
+        "answer": 0,
+        "rationale": "100 mL per hour multiplied by 14 hours equals 1400 mL.",
+        "reviewHref": "#delivery-prescription"
+      }
+    },
+    {
+      "id": "enteral-nutrition-079",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-079",
+        "question": "A feeding runs at 110 mL per hour for 12 hours. What volume is delivered?",
+        "choices": [
+          "1320 mL",
+          "122 mL",
+          "3300 mL",
+          "660 mL"
+        ],
+        "answer": 0,
+        "rationale": "110 mL per hour multiplied by 12 hours equals 1320 mL.",
+        "reviewHref": "#delivery-prescription"
+      }
+    },
+    {
+      "id": "enteral-nutrition-080",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-080",
+        "question": "A patient receives 1200 mL of formula that is 80 percent free water. The individualized water target is 1500 mL before other sources. How much additional water remains?",
+        "choices": [
+          "540 mL",
+          "960 mL",
+          "1500 mL",
+          "1200 mL"
+        ],
+        "answer": 0,
+        "rationale": "Formula provides 960 mL. Subtracting this from 1500 mL leaves 540 mL before medication, oral, and intravenous water are counted.",
+        "reviewHref": "#formula-selection"
+      }
+    },
+    {
+      "id": "enteral-nutrition-081",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-081",
+        "question": "A patient receives 1500 mL of formula that is 76 percent free water. The individualized water target is 1800 mL before other sources. How much additional water remains?",
+        "choices": [
+          "660 mL",
+          "1140 mL",
+          "1800 mL",
+          "1500 mL"
+        ],
+        "answer": 0,
+        "rationale": "Formula provides 1140 mL. Subtracting this from 1800 mL leaves 660 mL before medication, oral, and intravenous water are counted.",
+        "reviewHref": "#formula-selection"
+      }
+    },
+    {
+      "id": "enteral-nutrition-082",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-082",
+        "question": "A patient receives 1000 mL of formula that is 85 percent free water. The individualized water target is 1600 mL before other sources. How much additional water remains?",
+        "choices": [
+          "750 mL",
+          "850 mL",
+          "1600 mL",
+          "1000 mL"
+        ],
+        "answer": 0,
+        "rationale": "Formula provides 850 mL. Subtracting this from 1600 mL leaves 750 mL before medication, oral, and intravenous water are counted.",
+        "reviewHref": "#formula-selection"
+      }
+    },
+    {
+      "id": "enteral-nutrition-083",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-083",
+        "question": "A patient receives 1800 mL of formula that is 70 percent free water. The individualized water target is 2000 mL before other sources. How much additional water remains?",
+        "choices": [
+          "740 mL",
+          "1260 mL",
+          "2000 mL",
+          "1800 mL"
+        ],
+        "answer": 0,
+        "rationale": "Formula provides 1260 mL. Subtracting this from 2000 mL leaves 740 mL before medication, oral, and intravenous water are counted.",
+        "reviewHref": "#formula-selection"
+      }
+    },
+    {
+      "id": "enteral-nutrition-084",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-084",
+        "question": "A patient receives 1250 mL of formula that is 82 percent free water. The individualized water target is 1700 mL before other sources. How much additional water remains?",
+        "choices": [
+          "675 mL",
+          "1025 mL",
+          "1700 mL",
+          "1250 mL"
+        ],
+        "answer": 0,
+        "rationale": "Formula provides 1025 mL. Subtracting this from 1700 mL leaves 675 mL before medication, oral, and intravenous water are counted.",
+        "reviewHref": "#formula-selection"
+      }
+    },
+    {
+      "id": "enteral-nutrition-085",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-085",
+        "question": "A patient receives 1400 mL of formula that is 78 percent free water. The individualized water target is 1900 mL before other sources. How much additional water remains?",
+        "choices": [
+          "808 mL",
+          "1092 mL",
+          "1900 mL",
+          "1400 mL"
+        ],
+        "answer": 0,
+        "rationale": "Formula provides 1092 mL. Subtracting this from 1900 mL leaves 808 mL before medication, oral, and intravenous water are counted.",
+        "reviewHref": "#formula-selection"
+      }
+    },
+    {
+      "id": "enteral-nutrition-086",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-086",
+        "question": "A patient receives 1600 mL of formula that is 74 percent free water. The individualized water target is 2100 mL before other sources. How much additional water remains?",
+        "choices": [
+          "916 mL",
+          "1184 mL",
+          "2100 mL",
+          "1600 mL"
+        ],
+        "answer": 0,
+        "rationale": "Formula provides 1184 mL. Subtracting this from 2100 mL leaves 916 mL before medication, oral, and intravenous water are counted.",
+        "reviewHref": "#formula-selection"
+      }
+    },
+    {
+      "id": "enteral-nutrition-087",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-087",
+        "question": "A patient receives 1100 mL of formula that is 84 percent free water. The individualized water target is 1500 mL before other sources. How much additional water remains?",
+        "choices": [
+          "576 mL",
+          "924 mL",
+          "1500 mL",
+          "1100 mL"
+        ],
+        "answer": 0,
+        "rationale": "Formula provides 924 mL. Subtracting this from 1500 mL leaves 576 mL before medication, oral, and intravenous water are counted.",
+        "reviewHref": "#formula-selection"
+      }
+    },
+    {
+      "id": "enteral-nutrition-088",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-088",
+        "question": "A patient receives 1750 mL of formula that is 72 percent free water. The individualized water target is 2200 mL before other sources. How much additional water remains?",
+        "choices": [
+          "940 mL",
+          "1260 mL",
+          "2200 mL",
+          "1750 mL"
+        ],
+        "answer": 0,
+        "rationale": "Formula provides 1260 mL. Subtracting this from 2200 mL leaves 940 mL before medication, oral, and intravenous water are counted.",
+        "reviewHref": "#formula-selection"
+      }
+    },
+    {
+      "id": "enteral-nutrition-089",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-089",
+        "question": "A patient receives 1300 mL of formula that is 81 percent free water. The individualized water target is 1800 mL before other sources. How much additional water remains?",
+        "choices": [
+          "747 mL",
+          "1053 mL",
+          "1800 mL",
+          "1300 mL"
+        ],
+        "answer": 0,
+        "rationale": "Formula provides 1053 mL. Subtracting this from 1800 mL leaves 747 mL before medication, oral, and intravenous water are counted.",
+        "reviewHref": "#formula-selection"
+      }
+    },
+    {
+      "id": "enteral-nutrition-109",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-109",
+        "question": "A patient receives 60 mL per hour for 24 hours, but the goal is 1,800 mL daily. Which interpretation or management plan is most defensible?",
+        "choices": [
+          "Recognize a 360 mL daily deficit and revise the safe rate or schedule",
+          "Recognize a 600 mL deficit by treating the schedule as 20 hours",
+          "Recognize a 240 mL deficit by using 65 mL per hour",
+          "Conclude that 60 mL per hour for 24 hours already supplies 1,800 mL"
+        ],
+        "answer": 0,
+        "rationale": "The current prescription delivers 60 times 24, or 1,440 mL. Subtract 1,440 mL from the 1,800 mL goal to obtain a 360 mL deficit. Any revised rate or schedule must remain safe for the patient.",
+        "reviewHref": "#delivery-prescription"
+      }
+    },
+    {
+      "id": "enteral-nutrition-110",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-110",
+        "question": "A hypothetical formula label states 240 kcal and 16 g protein per serving. Using 4 kcal per gram of protein, what percentage of the labeled calories comes from protein? Round to the nearest tenth of a percent.",
+        "choices": [
+          "26.7%",
+          "6.7%",
+          "60.0%",
+          "64.0%"
+        ],
+        "answer": 0,
+        "rationale": "Protein supplies 16 times 4, or 64 kcal. Divide 64 by the stated 240 kcal and multiply by 100: 26.666...%, or 26.7%. The denominator is labeled energy, not grams of protein.",
+        "reviewHref": "#formula-selection"
+      }
+    },
+    {
+      "id": "enteral-nutrition-111",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-111",
+        "question": "A hypothetical formula serving contains 9 g fat. Using 9 kcal per gram of fat, how much energy comes from fat in that serving?",
+        "choices": [
+          "81 kcal",
+          "36 kcal",
+          "30.6 kcal",
+          "9 kcal"
+        ],
+        "answer": 0,
+        "rationale": "Multiply 9 g fat by 9 kcal per gram to obtain 81 kcal. The 4 kcal per gram factor applies to protein and enteral carbohydrate; 3.4 kcal per gram is used for parenteral dextrose.",
+        "reviewHref": "#formula-selection"
+      }
+    },
+    {
+      "id": "enteral-nutrition-112",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-112",
+        "question": "A hypothetical formula contains 23 g carbohydrate per full serving. If half a serving is delivered, how much carbohydrate energy is received using 4 kcal per gram?",
+        "choices": [
+          "46 kcal",
+          "92 kcal",
+          "11.5 kcal",
+          "39.1 kcal"
+        ],
+        "answer": 0,
+        "rationale": "A full serving supplies 23 times 4, or 92 kcal from carbohydrate. Half a serving provides 46 kcal. First identify the nutrient energy, then scale it to the delivered fraction.",
+        "reviewHref": "#formula-selection"
+      }
+    },
+    {
+      "id": "enteral-nutrition-113",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-113",
+        "question": "A hypothetical formula label states 240 kcal per 240 mL serving. Of one serving, 60 mL is spilled and the remaining 180 mL is accurately delivered. How much labeled energy is received?",
+        "choices": [
+          "180 kcal",
+          "240 kcal",
+          "60 kcal",
+          "320 kcal"
+        ],
+        "answer": 0,
+        "rationale": "The delivered fraction is 180 divided by 240, or 0.75. Multiply 240 kcal by 0.75 to obtain 180 kcal. The spilled portion is excluded from intake.",
+        "reviewHref": "#formula-selection"
+      }
+    },
+    {
+      "id": "enteral-nutrition-114",
+      "source": "Original quantitative application of source volume/time, nutrient-energy, delivered-fraction and hydration relationships; all premises supplied in question.",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-114",
+        "question": "A hypothetical label declares 240 kcal per serving with 16 g protein, 23 g carbohydrate, and 9 g fat. The simple 4/4/9 calculation totals 237 kcal. Which denominator should be used to calculate the percentage of the declared calories supplied by protein?",
+        "choices": [
+          "240 kcal, the declared serving energy",
+          "237 kcal, replacing the declared total with the calculated sum",
+          "64 kcal, the protein energy alone",
+          "48 g, the sum of macronutrient masses"
+        ],
+        "answer": 0,
+        "rationale": "The question asks about declared calories, so use the stated 240 kcal total. Protein energy is 16 times 4, or 64 kcal. Do not silently replace the label denominator because the simple nutrient-factor sum differs.",
+        "reviewHref": "#formula-selection"
+      }
+    },
+    {
+      "id": "enteral-nutrition-001",
+      "source": "book-en preference PDF169/170",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-001",
+        "question": "Which principle most strongly favors enteral over parenteral nutrition?",
+        "choices": [
+          "A usable gastrointestinal tract that cannot be supported adequately by oral intake",
+          "A need to bypass all intestinal function",
+          "Complete mechanical obstruction",
+          "Active bowel ischemia"
+        ],
+        "answer": 0,
+        "rationale": "Enteral nutrition is preferred when the gut can safely digest and absorb nutrients but oral intake is inadequate.",
+        "reviewHref": "#enteral-decision"
+      }
+    },
+    {
+      "id": "enteral-nutrition-115",
+      "source": "book-en route definition PDF170",
+      "review": "Prompt, every choice, key, explanation and anchor individually checked. Arithmetic distractors represent incorrect operators, duration/rate misreading, incorrect calorie factors, nominal rather than delivered intake, or incorrect denominator. No unstated clinical rate or water target inferred.",
+      "question": {
+        "id": "enteral-nutrition-115",
+        "question": "Which description correctly distinguishes PEG from PEJ access?",
+        "choices": [
+          "PEG reaches the stomach; PEJ reaches the jejunum",
+          "Both end in the stomach and differ only in insertion technique",
+          "PEG reaches the jejunum; PEJ reaches the stomach",
+          "PEG reaches the stomach; PEJ ends in the duodenum"
+        ],
+        "answer": 0,
+        "rationale": "PEG means percutaneous endoscopic gastrostomy and ends in the stomach. PEJ means percutaneous endoscopic jejunostomy and ends in the jejunum. Nasogastric access passes through the nose to the stomach.",
+        "reviewHref": "#access-route"
+      }
+    }
+  ],
+  "teachingReview": [
+    {
+      "lesson": "enteral-decision",
+      "heading": "Connect the route to its advantages",
+      "body": "Compared with parenteral nutrition, enteral nutrition generally costs less and uses the gastrointestinal tract, helping prevent intestinal atrophy. It also carries lower risks of infection, hyperglycemia, cholelithiasis, and cholestasis. These advantages favor using a usable gut; they do not remove aspiration risk or the need to monitor nutrition and hydration.",
+      "PDFPages": [
+        169,
+        170
+      ],
+      "sourceReview": "Complete heading/body individually compared with source. Numeric inputs are hypothetical; numerical outputs independently recalculated. No current branded product composition or patient-specific rate inferred."
+    },
+    {
+      "lesson": "access-route",
+      "heading": "Name where the tube ends",
+      "body": "A nasogastric tube passes through the nose into the stomach. A gastrostomy reaches the stomach through the skin; PEG denotes a percutaneous endoscopic gastrostomy. A jejunostomy reaches the jejunum, part of the small intestine; PEJ denotes a percutaneous endoscopic jejunostomy. Gastric and jejunal access are different destinations, so identify the actual tube tip rather than treating every feeding tube as a nasogastric tube.",
+      "PDFPages": [
+        170
+      ],
+      "sourceReview": "Complete heading/body individually compared with source. Numeric inputs are hypothetical; numerical outputs independently recalculated. No current branded product composition or patient-specific rate inferred."
+    },
+    {
+      "lesson": "delivery-prescription",
+      "heading": "State how a calculated rate is rounded",
+      "body": "Divide the prescribed daily volume by the actual feeding hours to calculate mL per hour. A hypothetical 1,800 mL target over 22 hours requires 81.818... mL per hour, or 81.8 mL per hour to the nearest tenth. That rounded rate delivers 1,799.6 mL over 22 hours, so it approximates the target rather than equaling it exactly. Use the stated rounding instruction and check the resulting volume; a calculation alone does not establish a safe patient-specific pump setting.",
+      "PDFPages": [
+        172
+      ],
+      "sourceReview": "Complete heading/body individually compared with source. Numeric inputs are hypothetical; numerical outputs independently recalculated. No current branded product composition or patient-specific rate inferred."
+    },
+    {
+      "lesson": "formula-selection",
+      "heading": "Read energy from the stated formula label",
+      "body": "For the nutrition-label calculations used here, carbohydrate and protein provide 4 kcal per gram and fat provides 9 kcal per gram. A hypothetical serving labeled 240 kcal with 16 g protein, 23 g carbohydrate, and 9 g fat supplies 64 kcal from protein, 92 kcal from carbohydrate, and 81 kcal from fat using those factors. Protein contributes 64 divided by the stated 240 kcal times 100, or 26.7% to the nearest tenth. Use the label's declared total when a question asks for the percentage of labeled calories; the simple 4/4/9 sum, 237 kcal in this example, need not exactly match that declared total. Enteral carbohydrate energy must not be confused with the 3.4 kcal per gram used for parenteral dextrose.",
+      "PDFPages": [
+        171,
+        172
+      ],
+      "sourceReview": "Complete heading/body individually compared with source. Numeric inputs are hypothetical; numerical outputs independently recalculated. No current branded product composition or patient-specific rate inferred."
+    },
+    {
+      "lesson": "formula-selection",
+      "heading": "Scale nutrients to the amount actually received",
+      "body": "Apply the delivered fraction of the labeled serving to its energy and nutrient amounts. If the hypothetical 240 kcal serving above is 240 mL and only 180 mL is delivered, the patient receives 180 divided by 240, or three quarters of a serving: 180 kcal and 12 g protein. Half of the full labeled serving supplies 46 kcal from carbohydrate. Count the amount received after spills or incomplete delivery. These are stated-label exercises; verify the actual product and serving information before calculating a clinical prescription.",
+      "PDFPages": [
+        171,
+        172
+      ],
+      "sourceReview": "Complete heading/body individually compared with source. Numeric inputs are hypothetical; numerical outputs independently recalculated. No current branded product composition or patient-specific rate inferred."
+    },
+    {
+      "lesson": "medication-administration",
+      "heading": "Check liquids as carefully as tablets",
+      "body": "A liquid oral formulation is not automatically suitable for a feeding tube. Both solid and liquid dosage forms can be incompatible, and drug or nutrient interactions can reduce effect or increase toxicity. Consult the exact product's labeling before choosing a formulation or altering it. Do not add a medication directly to the nutrition formula; an oral route designation alone does not establish tube compatibility.",
+      "PDFPages": [
+        170
+      ],
+      "sourceReview": "Complete heading/body individually compared with source. Numeric inputs are hypothetical; numerical outputs independently recalculated. No current branded product composition or patient-specific rate inferred."
+    },
+    {
+      "lesson": "enteral-decision",
+      "heading": "Prefer the gut when it is usable",
+      "body": "Enteral nutrition delivers nutrients through the gastrointestinal tract by mouth or feeding tube. It supports gut structure and function, avoids central venous access, and is generally preferred to parenteral nutrition when digestion and absorption are adequate. It does not replace an oral diet when safe oral intake can meet the patient's needs.",
+      "PDFPages": [
+        169,
+        170
+      ],
+      "sourceReview": "Preference with a usable gut and inadequate safe oral intake; route and gut-integrity benefits agree with book. Aspiration and hydration risks preserved elsewhere."
+    }
+  ],
+  "embeddedReview": [
+    {
+      "lesson": "delivery-prescription",
+      "method": "70*18=1260",
+      "expected": "1,260 mL",
+      "question": {
+        "question": "A formula runs at 70 mL per hour for 18 hours. What volume is delivered?",
+        "choices": [
+          "1,260 mL",
+          "1,680 mL",
+          "1,400 mL",
+          "980 mL"
+        ],
+        "answer": 0,
+        "rationale": "Seventy milliliters per hour multiplied by 18 hours equals 1,260 mL.",
+        "reviewHref": "#delivery-prescription"
+      }
+    },
+    {
+      "lesson": "formula-selection",
+      "method": "1500*.76=1140",
+      "expected": "1,140 mL",
+      "question": {
+        "question": "A patient receives 1,500 mL of a formula that is 76 percent free water. How much water comes from the formula?",
+        "choices": [
+          "1,140 mL",
+          "760 mL",
+          "1,500 mL",
+          "1,976 mL"
+        ],
+        "answer": 0,
+        "rationale": "One thousand five hundred milliliters multiplied by 0.76 equals 1,140 mL of free water.",
+        "reviewHref": "#formula-selection"
+      }
+    }
+  ],
+  "calculationEvidence": {
+    "newDistinctAssessmentChecks": 38,
+    "bank": [
+      {
+        "id": "enteral-nutrition-060",
+        "method": "1200/20 = 60; nearest tenth 60.0",
+        "expected": "60 mL/hour",
+        "question": {
+          "id": "enteral-nutrition-060",
+          "question": "A daily enteral volume target is 1200 mL and feeding will run for 20 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+          "choices": [
+            "60 mL/hour",
+            "120 mL/hour",
+            "20 mL/hour",
+            "1200 mL/hour"
+          ],
+          "answer": 0,
+          "rationale": "1200 mL divided by 20 hours equals 60 mL per hour.",
+          "reviewHref": "#delivery-prescription"
+        }
+      },
+      {
+        "id": "enteral-nutrition-061",
+        "method": "1440/24 = 60; nearest tenth 60.0",
+        "expected": "60 mL/hour",
+        "question": {
+          "id": "enteral-nutrition-061",
+          "question": "A daily enteral volume target is 1440 mL and feeding will run for 24 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+          "choices": [
+            "60 mL/hour",
+            "120 mL/hour",
+            "24 mL/hour",
+            "1440 mL/hour"
+          ],
+          "answer": 0,
+          "rationale": "1440 mL divided by 24 hours equals 60 mL per hour.",
+          "reviewHref": "#delivery-prescription"
+        }
+      },
+      {
+        "id": "enteral-nutrition-062",
+        "method": "1500/18 = 83.33333333333333333333333333; nearest tenth 83.3",
+        "expected": "83.3 mL/hour",
+        "question": {
+          "id": "enteral-nutrition-062",
+          "question": "A daily enteral volume target is 1500 mL and feeding will run for 18 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+          "choices": [
+            "83.3 mL/hour",
+            "166.6 mL/hour",
+            "18 mL/hour",
+            "1500 mL/hour"
+          ],
+          "answer": 0,
+          "rationale": "1500 mL divided by 18 hours is approximately 83.3 mL per hour when rounded to the nearest tenth. The rounded rate approximates the target volume.",
+          "reviewHref": "#delivery-prescription"
+        }
+      },
+      {
+        "id": "enteral-nutrition-063",
+        "method": "1680/21 = 80; nearest tenth 80.0",
+        "expected": "80 mL/hour",
+        "question": {
+          "id": "enteral-nutrition-063",
+          "question": "A daily enteral volume target is 1680 mL and feeding will run for 21 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+          "choices": [
+            "80 mL/hour",
+            "160 mL/hour",
+            "21 mL/hour",
+            "1680 mL/hour"
+          ],
+          "answer": 0,
+          "rationale": "1680 mL divided by 21 hours equals 80 mL per hour.",
+          "reviewHref": "#delivery-prescription"
+        }
+      },
+      {
+        "id": "enteral-nutrition-064",
+        "method": "1800/20 = 90; nearest tenth 90.0",
+        "expected": "90 mL/hour",
+        "question": {
+          "id": "enteral-nutrition-064",
+          "question": "A daily enteral volume target is 1800 mL and feeding will run for 20 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+          "choices": [
+            "90 mL/hour",
+            "180 mL/hour",
+            "20 mL/hour",
+            "1800 mL/hour"
+          ],
+          "answer": 0,
+          "rationale": "1800 mL divided by 20 hours equals 90 mL per hour.",
+          "reviewHref": "#delivery-prescription"
+        }
+      },
+      {
+        "id": "enteral-nutrition-065",
+        "method": "1000/16 = 62.5; nearest tenth 62.5",
+        "expected": "62.5 mL/hour",
+        "question": {
+          "id": "enteral-nutrition-065",
+          "question": "A daily enteral volume target is 1000 mL and feeding will run for 16 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+          "choices": [
+            "62.5 mL/hour",
+            "125 mL/hour",
+            "16 mL/hour",
+            "1000 mL/hour"
+          ],
+          "answer": 0,
+          "rationale": "1000 mL divided by 16 hours equals 62.5 mL per hour.",
+          "reviewHref": "#delivery-prescription"
+        }
+      },
+      {
+        "id": "enteral-nutrition-066",
+        "method": "1320/22 = 60; nearest tenth 60.0",
+        "expected": "60 mL/hour",
+        "question": {
+          "id": "enteral-nutrition-066",
+          "question": "A daily enteral volume target is 1320 mL and feeding will run for 22 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+          "choices": [
+            "60 mL/hour",
+            "120 mL/hour",
+            "22 mL/hour",
+            "1320 mL/hour"
+          ],
+          "answer": 0,
+          "rationale": "1320 mL divided by 22 hours equals 60 mL per hour.",
+          "reviewHref": "#delivery-prescription"
+        }
+      },
+      {
+        "id": "enteral-nutrition-067",
+        "method": "1560/24 = 65; nearest tenth 65.0",
+        "expected": "65 mL/hour",
+        "question": {
+          "id": "enteral-nutrition-067",
+          "question": "A daily enteral volume target is 1560 mL and feeding will run for 24 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+          "choices": [
+            "65 mL/hour",
+            "130 mL/hour",
+            "24 mL/hour",
+            "1560 mL/hour"
+          ],
+          "answer": 0,
+          "rationale": "1560 mL divided by 24 hours equals 65 mL per hour.",
+          "reviewHref": "#delivery-prescription"
+        }
+      },
+      {
+        "id": "enteral-nutrition-068",
+        "method": "1750/20 = 87.5; nearest tenth 87.5",
+        "expected": "87.5 mL/hour",
+        "question": {
+          "id": "enteral-nutrition-068",
+          "question": "A daily enteral volume target is 1750 mL and feeding will run for 20 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+          "choices": [
+            "87.5 mL/hour",
+            "175 mL/hour",
+            "20 mL/hour",
+            "1750 mL/hour"
+          ],
+          "answer": 0,
+          "rationale": "1750 mL divided by 20 hours equals 87.5 mL per hour.",
+          "reviewHref": "#delivery-prescription"
+        }
+      },
+      {
+        "id": "enteral-nutrition-069",
+        "method": "2000/24 = 83.33333333333333333333333333; nearest tenth 83.3",
+        "expected": "83.3 mL/hour",
+        "question": {
+          "id": "enteral-nutrition-069",
+          "question": "A daily enteral volume target is 2000 mL and feeding will run for 24 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+          "choices": [
+            "83.3 mL/hour",
+            "166.6 mL/hour",
+            "24 mL/hour",
+            "2000 mL/hour"
+          ],
+          "answer": 0,
+          "rationale": "2000 mL divided by 24 hours is approximately 83.3 mL per hour when rounded to the nearest tenth. The rounded rate approximates the target volume.",
+          "reviewHref": "#delivery-prescription"
+        }
+      },
+      {
+        "id": "enteral-nutrition-070",
+        "method": "45*24",
+        "expected": "1080 mL",
+        "question": {
+          "id": "enteral-nutrition-070",
+          "question": "A feeding runs at 45 mL per hour for 24 hours. What volume is delivered?",
+          "choices": [
+            "1080 mL",
+            "69 mL",
+            "1350 mL",
+            "540 mL"
+          ],
+          "answer": 0,
+          "rationale": "45 mL per hour multiplied by 24 hours equals 1080 mL.",
+          "reviewHref": "#delivery-prescription"
+        }
+      },
+      {
+        "id": "enteral-nutrition-071",
+        "method": "55*20",
+        "expected": "1100 mL",
+        "question": {
+          "id": "enteral-nutrition-071",
+          "question": "A feeding runs at 55 mL per hour for 20 hours. What volume is delivered?",
+          "choices": [
+            "1100 mL",
+            "75 mL",
+            "1650 mL",
+            "550 mL"
+          ],
+          "answer": 0,
+          "rationale": "55 mL per hour multiplied by 20 hours equals 1100 mL.",
+          "reviewHref": "#delivery-prescription"
+        }
+      },
+      {
+        "id": "enteral-nutrition-072",
+        "method": "65*18",
+        "expected": "1170 mL",
+        "question": {
+          "id": "enteral-nutrition-072",
+          "question": "A feeding runs at 65 mL per hour for 18 hours. What volume is delivered?",
+          "choices": [
+            "1170 mL",
+            "83 mL",
+            "1950 mL",
+            "585 mL"
+          ],
+          "answer": 0,
+          "rationale": "65 mL per hour multiplied by 18 hours equals 1170 mL.",
+          "reviewHref": "#delivery-prescription"
+        }
+      },
+      {
+        "id": "enteral-nutrition-073",
+        "method": "70*22",
+        "expected": "1540 mL",
+        "question": {
+          "id": "enteral-nutrition-073",
+          "question": "A feeding runs at 70 mL per hour for 22 hours. What volume is delivered?",
+          "choices": [
+            "1540 mL",
+            "92 mL",
+            "2100 mL",
+            "770 mL"
+          ],
+          "answer": 0,
+          "rationale": "70 mL per hour multiplied by 22 hours equals 1540 mL.",
+          "reviewHref": "#delivery-prescription"
+        }
+      },
+      {
+        "id": "enteral-nutrition-074",
+        "method": "80*16",
+        "expected": "1280 mL",
+        "question": {
+          "id": "enteral-nutrition-074",
+          "question": "A feeding runs at 80 mL per hour for 16 hours. What volume is delivered?",
+          "choices": [
+            "1280 mL",
+            "96 mL",
+            "2400 mL",
+            "640 mL"
+          ],
+          "answer": 0,
+          "rationale": "80 mL per hour multiplied by 16 hours equals 1280 mL.",
+          "reviewHref": "#delivery-prescription"
+        }
+      },
+      {
+        "id": "enteral-nutrition-075",
+        "method": "85*20",
+        "expected": "1700 mL",
+        "question": {
+          "id": "enteral-nutrition-075",
+          "question": "A feeding runs at 85 mL per hour for 20 hours. What volume is delivered?",
+          "choices": [
+            "1700 mL",
+            "105 mL",
+            "2550 mL",
+            "850 mL"
+          ],
+          "answer": 0,
+          "rationale": "85 mL per hour multiplied by 20 hours equals 1700 mL.",
+          "reviewHref": "#delivery-prescription"
+        }
+      },
+      {
+        "id": "enteral-nutrition-076",
+        "method": "90*24",
+        "expected": "2160 mL",
+        "question": {
+          "id": "enteral-nutrition-076",
+          "question": "A feeding runs at 90 mL per hour for 24 hours. What volume is delivered?",
+          "choices": [
+            "2160 mL",
+            "114 mL",
+            "2700 mL",
+            "1080 mL"
+          ],
+          "answer": 0,
+          "rationale": "90 mL per hour multiplied by 24 hours equals 2160 mL.",
+          "reviewHref": "#delivery-prescription"
+        }
+      },
+      {
+        "id": "enteral-nutrition-077",
+        "method": "95*18",
+        "expected": "1710 mL",
+        "question": {
+          "id": "enteral-nutrition-077",
+          "question": "A feeding runs at 95 mL per hour for 18 hours. What volume is delivered?",
+          "choices": [
+            "1710 mL",
+            "113 mL",
+            "2850 mL",
+            "855 mL"
+          ],
+          "answer": 0,
+          "rationale": "95 mL per hour multiplied by 18 hours equals 1710 mL.",
+          "reviewHref": "#delivery-prescription"
+        }
+      },
+      {
+        "id": "enteral-nutrition-078",
+        "method": "100*14",
+        "expected": "1400 mL",
+        "question": {
+          "id": "enteral-nutrition-078",
+          "question": "A feeding runs at 100 mL per hour for 14 hours. What volume is delivered?",
+          "choices": [
+            "1400 mL",
+            "114 mL",
+            "3000 mL",
+            "700 mL"
+          ],
+          "answer": 0,
+          "rationale": "100 mL per hour multiplied by 14 hours equals 1400 mL.",
+          "reviewHref": "#delivery-prescription"
+        }
+      },
+      {
+        "id": "enteral-nutrition-079",
+        "method": "110*12",
+        "expected": "1320 mL",
+        "question": {
+          "id": "enteral-nutrition-079",
+          "question": "A feeding runs at 110 mL per hour for 12 hours. What volume is delivered?",
+          "choices": [
+            "1320 mL",
+            "122 mL",
+            "3300 mL",
+            "660 mL"
+          ],
+          "answer": 0,
+          "rationale": "110 mL per hour multiplied by 12 hours equals 1320 mL.",
+          "reviewHref": "#delivery-prescription"
+        }
+      },
+      {
+        "id": "enteral-nutrition-080",
+        "method": "1200*0.80=960.00; 1500-960.00=540.00",
+        "expected": "540 mL",
+        "question": {
+          "id": "enteral-nutrition-080",
+          "question": "A patient receives 1200 mL of formula that is 80 percent free water. The individualized water target is 1500 mL before other sources. How much additional water remains?",
+          "choices": [
+            "540 mL",
+            "960 mL",
+            "1500 mL",
+            "1200 mL"
+          ],
+          "answer": 0,
+          "rationale": "Formula provides 960 mL. Subtracting this from 1500 mL leaves 540 mL before medication, oral, and intravenous water are counted.",
+          "reviewHref": "#formula-selection"
+        }
+      },
+      {
+        "id": "enteral-nutrition-081",
+        "method": "1500*0.76=1140.00; 1800-1140.00=660.00",
+        "expected": "660 mL",
+        "question": {
+          "id": "enteral-nutrition-081",
+          "question": "A patient receives 1500 mL of formula that is 76 percent free water. The individualized water target is 1800 mL before other sources. How much additional water remains?",
+          "choices": [
+            "660 mL",
+            "1140 mL",
+            "1800 mL",
+            "1500 mL"
+          ],
+          "answer": 0,
+          "rationale": "Formula provides 1140 mL. Subtracting this from 1800 mL leaves 660 mL before medication, oral, and intravenous water are counted.",
+          "reviewHref": "#formula-selection"
+        }
+      },
+      {
+        "id": "enteral-nutrition-082",
+        "method": "1000*0.85=850.00; 1600-850.00=750.00",
+        "expected": "750 mL",
+        "question": {
+          "id": "enteral-nutrition-082",
+          "question": "A patient receives 1000 mL of formula that is 85 percent free water. The individualized water target is 1600 mL before other sources. How much additional water remains?",
+          "choices": [
+            "750 mL",
+            "850 mL",
+            "1600 mL",
+            "1000 mL"
+          ],
+          "answer": 0,
+          "rationale": "Formula provides 850 mL. Subtracting this from 1600 mL leaves 750 mL before medication, oral, and intravenous water are counted.",
+          "reviewHref": "#formula-selection"
+        }
+      },
+      {
+        "id": "enteral-nutrition-083",
+        "method": "1800*0.70=1260.00; 2000-1260.00=740.00",
+        "expected": "740 mL",
+        "question": {
+          "id": "enteral-nutrition-083",
+          "question": "A patient receives 1800 mL of formula that is 70 percent free water. The individualized water target is 2000 mL before other sources. How much additional water remains?",
+          "choices": [
+            "740 mL",
+            "1260 mL",
+            "2000 mL",
+            "1800 mL"
+          ],
+          "answer": 0,
+          "rationale": "Formula provides 1260 mL. Subtracting this from 2000 mL leaves 740 mL before medication, oral, and intravenous water are counted.",
+          "reviewHref": "#formula-selection"
+        }
+      },
+      {
+        "id": "enteral-nutrition-084",
+        "method": "1250*0.82=1025.00; 1700-1025.00=675.00",
+        "expected": "675 mL",
+        "question": {
+          "id": "enteral-nutrition-084",
+          "question": "A patient receives 1250 mL of formula that is 82 percent free water. The individualized water target is 1700 mL before other sources. How much additional water remains?",
+          "choices": [
+            "675 mL",
+            "1025 mL",
+            "1700 mL",
+            "1250 mL"
+          ],
+          "answer": 0,
+          "rationale": "Formula provides 1025 mL. Subtracting this from 1700 mL leaves 675 mL before medication, oral, and intravenous water are counted.",
+          "reviewHref": "#formula-selection"
+        }
+      },
+      {
+        "id": "enteral-nutrition-085",
+        "method": "1400*0.78=1092.00; 1900-1092.00=808.00",
+        "expected": "808 mL",
+        "question": {
+          "id": "enteral-nutrition-085",
+          "question": "A patient receives 1400 mL of formula that is 78 percent free water. The individualized water target is 1900 mL before other sources. How much additional water remains?",
+          "choices": [
+            "808 mL",
+            "1092 mL",
+            "1900 mL",
+            "1400 mL"
+          ],
+          "answer": 0,
+          "rationale": "Formula provides 1092 mL. Subtracting this from 1900 mL leaves 808 mL before medication, oral, and intravenous water are counted.",
+          "reviewHref": "#formula-selection"
+        }
+      },
+      {
+        "id": "enteral-nutrition-086",
+        "method": "1600*0.74=1184.00; 2100-1184.00=916.00",
+        "expected": "916 mL",
+        "question": {
+          "id": "enteral-nutrition-086",
+          "question": "A patient receives 1600 mL of formula that is 74 percent free water. The individualized water target is 2100 mL before other sources. How much additional water remains?",
+          "choices": [
+            "916 mL",
+            "1184 mL",
+            "2100 mL",
+            "1600 mL"
+          ],
+          "answer": 0,
+          "rationale": "Formula provides 1184 mL. Subtracting this from 2100 mL leaves 916 mL before medication, oral, and intravenous water are counted.",
+          "reviewHref": "#formula-selection"
+        }
+      },
+      {
+        "id": "enteral-nutrition-087",
+        "method": "1100*0.84=924.00; 1500-924.00=576.00",
+        "expected": "576 mL",
+        "question": {
+          "id": "enteral-nutrition-087",
+          "question": "A patient receives 1100 mL of formula that is 84 percent free water. The individualized water target is 1500 mL before other sources. How much additional water remains?",
+          "choices": [
+            "576 mL",
+            "924 mL",
+            "1500 mL",
+            "1100 mL"
+          ],
+          "answer": 0,
+          "rationale": "Formula provides 924 mL. Subtracting this from 1500 mL leaves 576 mL before medication, oral, and intravenous water are counted.",
+          "reviewHref": "#formula-selection"
+        }
+      },
+      {
+        "id": "enteral-nutrition-088",
+        "method": "1750*0.72=1260.00; 2200-1260.00=940.00",
+        "expected": "940 mL",
+        "question": {
+          "id": "enteral-nutrition-088",
+          "question": "A patient receives 1750 mL of formula that is 72 percent free water. The individualized water target is 2200 mL before other sources. How much additional water remains?",
+          "choices": [
+            "940 mL",
+            "1260 mL",
+            "2200 mL",
+            "1750 mL"
+          ],
+          "answer": 0,
+          "rationale": "Formula provides 1260 mL. Subtracting this from 2200 mL leaves 940 mL before medication, oral, and intravenous water are counted.",
+          "reviewHref": "#formula-selection"
+        }
+      },
+      {
+        "id": "enteral-nutrition-089",
+        "method": "1300*0.81=1053.00; 1800-1053.00=747.00",
+        "expected": "747 mL",
+        "question": {
+          "id": "enteral-nutrition-089",
+          "question": "A patient receives 1300 mL of formula that is 81 percent free water. The individualized water target is 1800 mL before other sources. How much additional water remains?",
+          "choices": [
+            "747 mL",
+            "1053 mL",
+            "1800 mL",
+            "1300 mL"
+          ],
+          "answer": 0,
+          "rationale": "Formula provides 1053 mL. Subtracting this from 1800 mL leaves 747 mL before medication, oral, and intravenous water are counted.",
+          "reviewHref": "#formula-selection"
+        }
+      },
+      {
+        "id": "enteral-nutrition-109",
+        "method": "60*24=1440; 1800-1440=360",
+        "expected": "360 mL deficit",
+        "question": {
+          "id": "enteral-nutrition-109",
+          "question": "A patient receives 60 mL per hour for 24 hours, but the goal is 1,800 mL daily. Which interpretation or management plan is most defensible?",
+          "choices": [
+            "Recognize a 360 mL daily deficit and revise the safe rate or schedule",
+            "Recognize a 600 mL deficit by treating the schedule as 20 hours",
+            "Recognize a 240 mL deficit by using 65 mL per hour",
+            "Conclude that 60 mL per hour for 24 hours already supplies 1,800 mL"
+          ],
+          "answer": 0,
+          "rationale": "The current prescription delivers 60 times 24, or 1,440 mL. Subtract 1,440 mL from the 1,800 mL goal to obtain a 360 mL deficit. Any revised rate or schedule must remain safe for the patient.",
+          "reviewHref": "#delivery-prescription"
+        }
+      },
+      {
+        "id": "enteral-nutrition-110",
+        "method": "16*4/240*100; nearest tenth",
+        "expected": "26.7%",
+        "question": {
+          "id": "enteral-nutrition-110",
+          "question": "A hypothetical formula label states 240 kcal and 16 g protein per serving. Using 4 kcal per gram of protein, what percentage of the labeled calories comes from protein? Round to the nearest tenth of a percent.",
+          "choices": [
+            "26.7%",
+            "6.7%",
+            "60.0%",
+            "64.0%"
+          ],
+          "answer": 0,
+          "rationale": "Protein supplies 16 times 4, or 64 kcal. Divide 64 by the stated 240 kcal and multiply by 100: 26.666...%, or 26.7%. The denominator is labeled energy, not grams of protein.",
+          "reviewHref": "#formula-selection"
+        }
+      },
+      {
+        "id": "enteral-nutrition-111",
+        "method": "9*9",
+        "expected": "81 kcal",
+        "question": {
+          "id": "enteral-nutrition-111",
+          "question": "A hypothetical formula serving contains 9 g fat. Using 9 kcal per gram of fat, how much energy comes from fat in that serving?",
+          "choices": [
+            "81 kcal",
+            "36 kcal",
+            "30.6 kcal",
+            "9 kcal"
+          ],
+          "answer": 0,
+          "rationale": "Multiply 9 g fat by 9 kcal per gram to obtain 81 kcal. The 4 kcal per gram factor applies to protein and enteral carbohydrate; 3.4 kcal per gram is used for parenteral dextrose.",
+          "reviewHref": "#formula-selection"
+        }
+      },
+      {
+        "id": "enteral-nutrition-112",
+        "method": "23*4/2",
+        "expected": "46 kcal",
+        "question": {
+          "id": "enteral-nutrition-112",
+          "question": "A hypothetical formula contains 23 g carbohydrate per full serving. If half a serving is delivered, how much carbohydrate energy is received using 4 kcal per gram?",
+          "choices": [
+            "46 kcal",
+            "92 kcal",
+            "11.5 kcal",
+            "39.1 kcal"
+          ],
+          "answer": 0,
+          "rationale": "A full serving supplies 23 times 4, or 92 kcal from carbohydrate. Half a serving provides 46 kcal. First identify the nutrient energy, then scale it to the delivered fraction.",
+          "reviewHref": "#formula-selection"
+        }
+      },
+      {
+        "id": "enteral-nutrition-113",
+        "method": "240*(240-60)/240",
+        "expected": "180 kcal",
+        "question": {
+          "id": "enteral-nutrition-113",
+          "question": "A hypothetical formula label states 240 kcal per 240 mL serving. Of one serving, 60 mL is spilled and the remaining 180 mL is accurately delivered. How much labeled energy is received?",
+          "choices": [
+            "180 kcal",
+            "240 kcal",
+            "60 kcal",
+            "320 kcal"
+          ],
+          "answer": 0,
+          "rationale": "The delivered fraction is 180 divided by 240, or 0.75. Multiply 240 kcal by 0.75 to obtain 180 kcal. The spilled portion is excluded from intake.",
+          "reviewHref": "#formula-selection"
+        }
+      },
+      {
+        "id": "enteral-nutrition-114",
+        "method": "Use declared label denominator; 16*4+23*4+9*9=237",
+        "expected": "240 kcal, the declared serving energy",
+        "question": {
+          "id": "enteral-nutrition-114",
+          "question": "A hypothetical label declares 240 kcal per serving with 16 g protein, 23 g carbohydrate, and 9 g fat. The simple 4/4/9 calculation totals 237 kcal. Which denominator should be used to calculate the percentage of the declared calories supplied by protein?",
+          "choices": [
+            "240 kcal, the declared serving energy",
+            "237 kcal, replacing the declared total with the calculated sum",
+            "64 kcal, the protein energy alone",
+            "48 g, the sum of macronutrient masses"
+          ],
+          "answer": 0,
+          "rationale": "The question asks about declared calories, so use the stated 240 kcal total. Protein energy is 16 times 4, or 64 kcal. Do not silently replace the label denominator because the simple nutrient-factor sum differs.",
+          "reviewHref": "#formula-selection"
+        }
+      }
+    ],
+    "embedded": [
+      {
+        "lesson": "delivery-prescription",
+        "method": "70*18=1260",
+        "expected": "1,260 mL",
+        "question": {
+          "question": "A formula runs at 70 mL per hour for 18 hours. What volume is delivered?",
+          "choices": [
+            "1,260 mL",
+            "1,680 mL",
+            "1,400 mL",
+            "980 mL"
+          ],
+          "answer": 0,
+          "rationale": "Seventy milliliters per hour multiplied by 18 hours equals 1,260 mL.",
+          "reviewHref": "#delivery-prescription"
+        }
+      },
+      {
+        "lesson": "formula-selection",
+        "method": "1500*.76=1140",
+        "expected": "1,140 mL",
+        "question": {
+          "question": "A patient receives 1,500 mL of a formula that is 76 percent free water. How much water comes from the formula?",
+          "choices": [
+            "1,140 mL",
+            "760 mL",
+            "1,500 mL",
+            "1,976 mL"
+          ],
+          "answer": 0,
+          "rationale": "One thousand five hundred milliliters multiplied by 0.76 equals 1,140 mL of free water.",
+          "reviewHref": "#formula-selection"
+        }
+      }
+    ],
+    "workedSections": {
+      "prescriptionExample": {
+        "20Hours": 1200,
+        "24Hours": 1440
+      },
+      "roundedExample": {
+        "rate": "81.8",
+        "delivered": "1799.6"
+      },
+      "labelExample": {
+        "protein": 64,
+        "carbohydrate": 92,
+        "fat": 81,
+        "sum": 237,
+        "declared": 240,
+        "proteinPercent": "26.7"
+      },
+      "partialExample": {
+        "deliveredFraction": "0.75",
+        "energy": "180",
+        "protein": "12",
+        "halfServingCarbohydrate": 46.0
+      }
+    },
+    "runningAssessmentChecks": 673,
+    "runningSeparateSourceExamples": 98,
+    "countPolicy": "Previous635 plus38 EN assessment/check identities. Four worked sections independently recomputed and recorded separately; no additional running-count claim for those sections. Prior six book EN exercises not counted again."
+  },
+  "sourceDiscrepancies": [
+    {
+      "topic": "Label energy denominator",
+      "finding": "Book historical labels give356 and285 kcal; simple4/4/9 sums are364.6 and285.2. Questions use stated label energy as denominator. No exact cause for difference inferred and no branded current-label claim added.",
+      "status": "Resolved for stated-label arithmetic; contemporary product claims not verified."
+    },
+    {
+      "topic": "Phenytoin feed hold",
+      "finding": "Book PDF170 gives2-hour separation; PDF905 and949 search text gives1-2 hours before/after. Those dependency text excerpts identified, not a complete rendered dependency-page review in this unit. No universal hold interval added.",
+      "status": "Pending drug-specific reconciliation; existing general mechanism prose retained."
+    }
+  ],
+  "wholeBookSearch": {
+    "literalSearchPerformed": true,
+    "variantSearchPerformed": true,
+    "terms": [
+      "gastric residual",
+      "ENFit",
+      "post-pyloric/postpyloric",
+      "polymeric",
+      "peptide-based",
+      "elemental formula",
+      "24-48 hours",
+      "head of bed",
+      "enteral feeding"
+    ],
+    "interpretation": "Search identifies candidate passages only; negative terms do not prove absence. No supporting source located for the existing ICU timing/GRV500/ENFit/formula-complexity claims in reviewed EN section. Other contexts such as urinary residual and stroke head elevation not used as EN proof."
+  },
+  "cumulativeReview": [
+    {
+      "id": "cumulative-enteral-nutrition-enteral-nutrition-001",
+      "status": "source verified in scope",
+      "question": {
+        "id": "cumulative-enteral-nutrition-enteral-nutrition-001",
+        "question": "Which principle most strongly favors enteral over parenteral nutrition?",
+        "choices": [
+          "A usable gastrointestinal tract that cannot be supported adequately by oral intake",
+          "A need to bypass all intestinal function",
+          "Complete mechanical obstruction",
+          "Active bowel ischemia"
+        ],
+        "answer": 0,
+        "rationale": "Enteral nutrition is preferred when the gut can safely digest and absorb nutrients but oral intake is inadequate.",
+        "reviewHref": "/learn/pharmacy/modules/enteral-nutrition",
+        "module": "Enteral Nutrition"
+      }
+    },
+    {
+      "id": "cumulative-enteral-nutrition-enteral-nutrition-027",
+      "status": "pending source review",
+      "question": {
+        "id": "cumulative-enteral-nutrition-enteral-nutrition-027",
+        "question": "What is the major hydration implication of a 2 kcal per mL formula?",
+        "choices": [
+          "It usually provides less free water per calorie and may require additional flushes",
+          "It is entirely water",
+          "It cannot be used with a pump",
+          "It eliminates renal solute load"
+        ],
+        "answer": 0,
+        "rationale": "Greater caloric density concentrates nutrients and reduces formula water relative to energy.",
+        "reviewHref": "/learn/pharmacy/modules/enteral-nutrition",
+        "module": "Enteral Nutrition"
+      }
+    },
+    {
+      "id": "cumulative-enteral-nutrition-enteral-nutrition-063",
+      "status": "source verified in scope",
+      "question": {
+        "id": "cumulative-enteral-nutrition-enteral-nutrition-063",
+        "question": "A daily enteral volume target is 1680 mL and feeding will run for 21 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+        "choices": [
+          "80 mL/hour",
+          "160 mL/hour",
+          "21 mL/hour",
+          "1680 mL/hour"
+        ],
+        "answer": 0,
+        "rationale": "1680 mL divided by 21 hours equals 80 mL per hour.",
+        "reviewHref": "/learn/pharmacy/modules/enteral-nutrition",
+        "module": "Enteral Nutrition"
+      }
+    },
+    {
+      "id": "cumulative-enteral-nutrition-enteral-nutrition-089",
+      "status": "source verified in scope",
+      "question": {
+        "id": "cumulative-enteral-nutrition-enteral-nutrition-089",
+        "question": "A patient receives 1300 mL of formula that is 81 percent free water. The individualized water target is 1800 mL before other sources. How much additional water remains?",
+        "choices": [
+          "747 mL",
+          "1053 mL",
+          "1800 mL",
+          "1300 mL"
+        ],
+        "answer": 0,
+        "rationale": "Formula provides 1053 mL. Subtracting this from 1800 mL leaves 747 mL before medication, oral, and intravenous water are counted.",
+        "reviewHref": "/learn/pharmacy/modules/enteral-nutrition",
+        "module": "Enteral Nutrition"
+      }
+    },
+    {
+      "id": "cumulative-enteral-nutrition-enteral-nutrition-115",
+      "status": "source verified in scope",
+      "question": {
+        "id": "cumulative-enteral-nutrition-enteral-nutrition-115",
+        "question": "Which description correctly distinguishes PEG from PEJ access?",
+        "choices": [
+          "PEG reaches the stomach; PEJ reaches the jejunum",
+          "Both end in the stomach and differ only in insertion technique",
+          "PEG reaches the jejunum; PEJ reaches the stomach",
+          "PEG reaches the stomach; PEJ ends in the duodenum"
+        ],
+        "answer": 0,
+        "rationale": "PEG means percutaneous endoscopic gastrostomy and ends in the stomach. PEJ means percutaneous endoscopic jejunostomy and ends in the jejunum. Nasogastric access passes through the nose to the stomach.",
+        "reviewHref": "/learn/pharmacy/modules/enteral-nutrition",
+        "module": "Enteral Nutrition"
+      }
+    }
+  ],
+  "broaderBankInventory": {
+    "status": "inventory only; related claims not source-verified by this search",
+    "workingTreeLiteralHitLines": 144,
+    "filteredCandidateHitLines": 67,
+    "candidateFiles": [
+      "src/data/questionBanks/acuteBacterialMeningitis.js",
+      "src/data/questionBanks/acuteLiverFailure.js",
+      "src/data/questionBanks/adrenalInsufficiency.js",
+      "src/data/questionBanks/alcoholAssociatedLiverDisease.js",
+      "src/data/questionBanks/aneurysmalSubarachnoidHemorrhage.js",
+      "src/data/questionBanks/calciumPhosphorusHomeostasis.js",
+      "src/data/questionBanks/chronicHeartFailure.js",
+      "src/data/questionBanks/clinicalDrugInteractions.js",
+      "src/data/questionBanks/clostridioidesDifficileInfection.js",
+      "src/data/questionBanks/cysticFibrosis.js",
+      "src/data/questionBanks/cytomegalovirusPharmacotherapy.js",
+      "src/data/questionBanks/dietarySupplementsComplementaryMedicine.js",
+      "src/data/questionBanks/directOralAnticoagulants.js",
+      "src/data/questionBanks/fidaxomicinPharmacology.js",
+      "src/data/questionBanks/fluidElectrolyteTherapy.js",
+      "src/data/questionBanks/fluoroquinolonePharmacology.js",
+      "src/data/questionBanks/genitourinaryMedicinalChemistry.js",
+      "src/data/questionBanks/hospitalVentilatorAssociatedPneumonia.js",
+      "src/data/questionBanks/hyperosmolarHyperglycemicState.js",
+      "src/data/questionBanks/hypertensionFoundations.js",
+      "src/data/questionBanks/influenzaAntiviralPharmacology.js",
+      "src/data/questionBanks/insulinTherapy.js",
+      "src/data/questionBanks/lefamulinPharmacology.js",
+      "src/data/questionBanks/lymeDisease.js",
+      "src/data/questionBanks/perioperativeCriticalCarePharmacology.js",
+      "src/data/questionBanks/rickettsialEhrlichialAnaplasma.js",
+      "src/data/questionBanks/systemicAntifungalFoundations.js",
+      "src/data/questionBanks/tetracyclinePharmacology.js",
+      "src/data/questionBanks/toxicologyAntidotes.js",
+      "src/data/questionBanks/triazoleAntifungalPharmacology.js",
+      "src/data/questionBanks/tularemia.js",
+      "src/data/questionBanks/vancomycinPharmacology.js",
+      "src/data/questionBanks/warfarinManagement.js"
+    ],
+    "candidateFileHashes": {
+      "src/data/questionBanks/acuteBacterialMeningitis.js": "3ba0d5e9f4e70709609a3d6609a77b8ecd548b22816d99f3058186b0d46b067d",
+      "src/data/questionBanks/acuteLiverFailure.js": "b5eb7cd324b353aef980a30ef88a637aaa4f7613babcbae77c6f222e313173ec",
+      "src/data/questionBanks/adrenalInsufficiency.js": "83b6fb10a801d5d822083a722fac46a1793d9b3f70fa2ee01757e8275e3b265c",
+      "src/data/questionBanks/alcoholAssociatedLiverDisease.js": "da6e4116488babb01d664ba2619c38a4b2cebd160022eec3cd048cdc7f944b96",
+      "src/data/questionBanks/aneurysmalSubarachnoidHemorrhage.js": "e6b0928af4bfc60b5493ae6af41233c64b88198561a19afd309ccdb19a2e7d4a",
+      "src/data/questionBanks/calciumPhosphorusHomeostasis.js": "da14d992ba93b22da06241e281ac90147d269f95ea6ccf785f61867c34070b44",
+      "src/data/questionBanks/chronicHeartFailure.js": "3bfad08c67bc0bf8fff47b1cc20e495f204f8c0908cf6390adcd0edb9abfd51d",
+      "src/data/questionBanks/clinicalDrugInteractions.js": "5abfce64eaa1440a3f60f1c41287eeaa4bc0f9962d3ee6de091a0e52a84ec3e2",
+      "src/data/questionBanks/clostridioidesDifficileInfection.js": "c96e3717049a1da1e7ad6cb72e22cc4f9e05d0e74e4abf1c519b70d90e660b0f",
+      "src/data/questionBanks/cysticFibrosis.js": "fd1d1a77087fd2c511f3b6c3eb5d402127b5e259c84cfaf0f2d8fd76855fabb1",
+      "src/data/questionBanks/cytomegalovirusPharmacotherapy.js": "4b45e025e57e3a09cf2b5b5635cc6d3647a9d2ce02eee4d8f719d94b4b14ec4e",
+      "src/data/questionBanks/dietarySupplementsComplementaryMedicine.js": "b6ad0fc6ad094c0e0188816d2cf7dd013862847a7f0345d32573bfb61420ba82",
+      "src/data/questionBanks/directOralAnticoagulants.js": "704257848d40c9dba353ef1611d5f83ba5b3cff4c6063f50ac9fb4993909b7d8",
+      "src/data/questionBanks/fidaxomicinPharmacology.js": "06c6c347f9769f4abf71a0dbd9e3f1b01bfdc7e9b1bd4141061d2b33366555ee",
+      "src/data/questionBanks/fluidElectrolyteTherapy.js": "311a63418e1e66a0aed22f94ff93f309dd25d18086bf6dfa2e30376ec6220c7f",
+      "src/data/questionBanks/fluoroquinolonePharmacology.js": "639b9bdf5f4a7fa9dc8f5f99147350bb9f5d61b2359d93d905b4aa59cc5ec263",
+      "src/data/questionBanks/genitourinaryMedicinalChemistry.js": "4cce08a0848772eae9ba33ab0338434a7574688dc8da00641800842527353259",
+      "src/data/questionBanks/hospitalVentilatorAssociatedPneumonia.js": "d0ae03ec10fc99c15a753c89136a4faefb338faf993cfe60aa519ee6b1a60591",
+      "src/data/questionBanks/hyperosmolarHyperglycemicState.js": "02f5656138a1f73b9810917ddb658dec2278be6709a762bb95fa26dadb8fce6f",
+      "src/data/questionBanks/hypertensionFoundations.js": "068bc6778790dcf3c1c901f2b5215b1fec26dca28824f4083615e10c5719ad6d",
+      "src/data/questionBanks/influenzaAntiviralPharmacology.js": "2fdd8a0c4ca6310c4062df9833544e65323b130c3be4a08605696d636f6a03b0",
+      "src/data/questionBanks/insulinTherapy.js": "c712a74e9d49b516dec31b3c8c47614a8eebdc9b8ee9cefaac039a4fd426e575",
+      "src/data/questionBanks/lefamulinPharmacology.js": "40c7be98994f0bda2fb2ca9179d68f4805c5176bbac31f2c718ba48a95b108f5",
+      "src/data/questionBanks/lymeDisease.js": "e18711c6e46643d195f37e094a796e7961029832bef20d3ba59c8f621d7ac3a1",
+      "src/data/questionBanks/perioperativeCriticalCarePharmacology.js": "8e8a6156fe502da916962acf9508a22d24526bef231a27d880e22e2138eb6553",
+      "src/data/questionBanks/rickettsialEhrlichialAnaplasma.js": "77ff00391b2ff6011f122b21444edd8868d32ac2f3a193cb1ad57fbc385b0c17",
+      "src/data/questionBanks/systemicAntifungalFoundations.js": "2c269c2606c1ac53cdf19cd9e21c3852930a3a755d01ebcd2bea1312a71e1cc5",
+      "src/data/questionBanks/tetracyclinePharmacology.js": "c7494fdf7f3b9cd29e4de0e3d41f191e28ba45622f636baa4a0a5abf135ba2bf",
+      "src/data/questionBanks/toxicologyAntidotes.js": "71c15e9429b7ac18097d1911a9b2ce38aa43ca36bb5daf9e715aae0844319c79",
+      "src/data/questionBanks/triazoleAntifungalPharmacology.js": "29bc01f56520c8db1a71c4139edc021ff41c076cd10efa8f626868c4396660b9",
+      "src/data/questionBanks/tularemia.js": "0e66f1506e5a825a4673adc98aa620e6233e1c40f6a0bd123fc209daee7b3f3f",
+      "src/data/questionBanks/vancomycinPharmacology.js": "a35bd35c65b793ee9a8377b86db2f7e69816a7864977dd8f005ca62e119f7582",
+      "src/data/questionBanks/warfarinManagement.js": "09ee21e16b7f06ef737b075d92025590a8ea1a404fbb3cc6e46610d3ecd17f6d"
+    },
+    "standalonePharmacyFinalReview": "No enteral/tube-feeding literal hits in src/data/pharmacyReview.js; semantic mapping still required.",
+    "legacyReader": "Existing gut-use entry at enteral-parenteral-nutrition unchanged; prior PN evidence retained. Whole legacy parent not closed."
+  },
+  "validation": {
+    "isolatedCandidate": "Committed HEAD plus only the two EN content files; no unrelated working edits or environment files.",
+    "build": {
+      "staticPages": 567,
+      "exitCode": 0,
+      "finalOptimizationComplete": true,
+      "logSha256": "01d3863f94c40e40bbc9ee4cb40c9c4fff9a590b8f3f11c250c683f188ca1778"
+    },
+    "focusedStructuralAssessment": {
+      "modules": 1,
+      "questions": 106,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "enteral-nutrition",
+          "lessons": 6,
+          "questions": 106,
+          "minimumLessonCoverage": 9
+        }
+      ]
+    },
+    "clinicalMeaningOfStructuralSourceGaps": "Empty structural sourceGaps means references present, not that their medical claims are verified.",
+    "technical": {
+      "status": "passed",
+      "bankCount": 106,
+      "originalIdsKeysAnchorsPreserved": 100,
+      "originalChoiceSetsPreserved": 99,
+      "revisedQuestionIds": [
+        "enteral-nutrition-060",
+        "enteral-nutrition-061",
+        "enteral-nutrition-062",
+        "enteral-nutrition-063",
+        "enteral-nutrition-064",
+        "enteral-nutrition-065",
+        "enteral-nutrition-066",
+        "enteral-nutrition-067",
+        "enteral-nutrition-068",
+        "enteral-nutrition-069",
+        "enteral-nutrition-109"
+      ],
+      "newQuestionIds": [
+        "enteral-nutrition-110",
+        "enteral-nutrition-111",
+        "enteral-nutrition-112",
+        "enteral-nutrition-113",
+        "enteral-nutrition-114",
+        "enteral-nutrition-115"
+      ],
+      "originalBodiesPreserved": 24,
+      "addedBodies": [
+        {
+          "lesson": "enteral-decision",
+          "heading": "Connect the route to its advantages",
+          "body": "Compared with parenteral nutrition, enteral nutrition generally costs less and uses the gastrointestinal tract, helping prevent intestinal atrophy. It also carries lower risks of infection, hyperglycemia, cholelithiasis, and cholestasis. These advantages favor using a usable gut; they do not remove aspiration risk or the need to monitor nutrition and hydration."
+        },
+        {
+          "lesson": "access-route",
+          "heading": "Name where the tube ends",
+          "body": "A nasogastric tube passes through the nose into the stomach. A gastrostomy reaches the stomach through the skin; PEG denotes a percutaneous endoscopic gastrostomy. A jejunostomy reaches the jejunum, part of the small intestine; PEJ denotes a percutaneous endoscopic jejunostomy. Gastric and jejunal access are different destinations, so identify the actual tube tip rather than treating every feeding tube as a nasogastric tube."
+        },
+        {
+          "lesson": "delivery-prescription",
+          "heading": "State how a calculated rate is rounded",
+          "body": "Divide the prescribed daily volume by the actual feeding hours to calculate mL per hour. A hypothetical 1,800 mL target over 22 hours requires 81.818... mL per hour, or 81.8 mL per hour to the nearest tenth. That rounded rate delivers 1,799.6 mL over 22 hours, so it approximates the target rather than equaling it exactly. Use the stated rounding instruction and check the resulting volume; a calculation alone does not establish a safe patient-specific pump setting."
+        },
+        {
+          "lesson": "formula-selection",
+          "heading": "Read energy from the stated formula label",
+          "body": "For the nutrition-label calculations used here, carbohydrate and protein provide 4 kcal per gram and fat provides 9 kcal per gram. A hypothetical serving labeled 240 kcal with 16 g protein, 23 g carbohydrate, and 9 g fat supplies 64 kcal from protein, 92 kcal from carbohydrate, and 81 kcal from fat using those factors. Protein contributes 64 divided by the stated 240 kcal times 100, or 26.7% to the nearest tenth. Use the label's declared total when a question asks for the percentage of labeled calories; the simple 4/4/9 sum, 237 kcal in this example, need not exactly match that declared total. Enteral carbohydrate energy must not be confused with the 3.4 kcal per gram used for parenteral dextrose."
+        },
+        {
+          "lesson": "formula-selection",
+          "heading": "Scale nutrients to the amount actually received",
+          "body": "Apply the delivered fraction of the labeled serving to its energy and nutrient amounts. If the hypothetical 240 kcal serving above is 240 mL and only 180 mL is delivered, the patient receives 180 divided by 240, or three quarters of a serving: 180 kcal and 12 g protein. Half of the full labeled serving supplies 46 kcal from carbohydrate. Count the amount received after spills or incomplete delivery. These are stated-label exercises; verify the actual product and serving information before calculating a clinical prescription."
+        },
+        {
+          "lesson": "medication-administration",
+          "heading": "Check liquids as carefully as tablets",
+          "body": "A liquid oral formulation is not automatically suitable for a feeding tube. Both solid and liquid dosage forms can be incompatible, and drug or nutrient interactions can reduce effect or increase toxicity. Consult the exact product's labeling before choosing a formulation or altering it. Do not add a medication directly to the nutrition formula; an oral route designation alone does not establish tube compatibility."
+        }
+      ],
+      "arithmeticAssessmentChecks": [
+        {
+          "id": "enteral-nutrition-060",
+          "method": "1200/20 = 60; nearest tenth 60.0",
+          "expected": "60 mL/hour",
+          "question": {
+            "id": "enteral-nutrition-060",
+            "question": "A daily enteral volume target is 1200 mL and feeding will run for 20 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+            "choices": [
+              "60 mL/hour",
+              "120 mL/hour",
+              "20 mL/hour",
+              "1200 mL/hour"
+            ],
+            "answer": 0,
+            "rationale": "1200 mL divided by 20 hours equals 60 mL per hour.",
+            "reviewHref": "#delivery-prescription"
+          }
+        },
+        {
+          "id": "enteral-nutrition-061",
+          "method": "1440/24 = 60; nearest tenth 60.0",
+          "expected": "60 mL/hour",
+          "question": {
+            "id": "enteral-nutrition-061",
+            "question": "A daily enteral volume target is 1440 mL and feeding will run for 24 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+            "choices": [
+              "60 mL/hour",
+              "120 mL/hour",
+              "24 mL/hour",
+              "1440 mL/hour"
+            ],
+            "answer": 0,
+            "rationale": "1440 mL divided by 24 hours equals 60 mL per hour.",
+            "reviewHref": "#delivery-prescription"
+          }
+        },
+        {
+          "id": "enteral-nutrition-062",
+          "method": "1500/18 = 83.33333333333333333333333333; nearest tenth 83.3",
+          "expected": "83.3 mL/hour",
+          "question": {
+            "id": "enteral-nutrition-062",
+            "question": "A daily enteral volume target is 1500 mL and feeding will run for 18 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+            "choices": [
+              "83.3 mL/hour",
+              "166.6 mL/hour",
+              "18 mL/hour",
+              "1500 mL/hour"
+            ],
+            "answer": 0,
+            "rationale": "1500 mL divided by 18 hours is approximately 83.3 mL per hour when rounded to the nearest tenth. The rounded rate approximates the target volume.",
+            "reviewHref": "#delivery-prescription"
+          }
+        },
+        {
+          "id": "enteral-nutrition-063",
+          "method": "1680/21 = 80; nearest tenth 80.0",
+          "expected": "80 mL/hour",
+          "question": {
+            "id": "enteral-nutrition-063",
+            "question": "A daily enteral volume target is 1680 mL and feeding will run for 21 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+            "choices": [
+              "80 mL/hour",
+              "160 mL/hour",
+              "21 mL/hour",
+              "1680 mL/hour"
+            ],
+            "answer": 0,
+            "rationale": "1680 mL divided by 21 hours equals 80 mL per hour.",
+            "reviewHref": "#delivery-prescription"
+          }
+        },
+        {
+          "id": "enteral-nutrition-064",
+          "method": "1800/20 = 90; nearest tenth 90.0",
+          "expected": "90 mL/hour",
+          "question": {
+            "id": "enteral-nutrition-064",
+            "question": "A daily enteral volume target is 1800 mL and feeding will run for 20 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+            "choices": [
+              "90 mL/hour",
+              "180 mL/hour",
+              "20 mL/hour",
+              "1800 mL/hour"
+            ],
+            "answer": 0,
+            "rationale": "1800 mL divided by 20 hours equals 90 mL per hour.",
+            "reviewHref": "#delivery-prescription"
+          }
+        },
+        {
+          "id": "enteral-nutrition-065",
+          "method": "1000/16 = 62.5; nearest tenth 62.5",
+          "expected": "62.5 mL/hour",
+          "question": {
+            "id": "enteral-nutrition-065",
+            "question": "A daily enteral volume target is 1000 mL and feeding will run for 16 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+            "choices": [
+              "62.5 mL/hour",
+              "125 mL/hour",
+              "16 mL/hour",
+              "1000 mL/hour"
+            ],
+            "answer": 0,
+            "rationale": "1000 mL divided by 16 hours equals 62.5 mL per hour.",
+            "reviewHref": "#delivery-prescription"
+          }
+        },
+        {
+          "id": "enteral-nutrition-066",
+          "method": "1320/22 = 60; nearest tenth 60.0",
+          "expected": "60 mL/hour",
+          "question": {
+            "id": "enteral-nutrition-066",
+            "question": "A daily enteral volume target is 1320 mL and feeding will run for 22 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+            "choices": [
+              "60 mL/hour",
+              "120 mL/hour",
+              "22 mL/hour",
+              "1320 mL/hour"
+            ],
+            "answer": 0,
+            "rationale": "1320 mL divided by 22 hours equals 60 mL per hour.",
+            "reviewHref": "#delivery-prescription"
+          }
+        },
+        {
+          "id": "enteral-nutrition-067",
+          "method": "1560/24 = 65; nearest tenth 65.0",
+          "expected": "65 mL/hour",
+          "question": {
+            "id": "enteral-nutrition-067",
+            "question": "A daily enteral volume target is 1560 mL and feeding will run for 24 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+            "choices": [
+              "65 mL/hour",
+              "130 mL/hour",
+              "24 mL/hour",
+              "1560 mL/hour"
+            ],
+            "answer": 0,
+            "rationale": "1560 mL divided by 24 hours equals 65 mL per hour.",
+            "reviewHref": "#delivery-prescription"
+          }
+        },
+        {
+          "id": "enteral-nutrition-068",
+          "method": "1750/20 = 87.5; nearest tenth 87.5",
+          "expected": "87.5 mL/hour",
+          "question": {
+            "id": "enteral-nutrition-068",
+            "question": "A daily enteral volume target is 1750 mL and feeding will run for 20 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+            "choices": [
+              "87.5 mL/hour",
+              "175 mL/hour",
+              "20 mL/hour",
+              "1750 mL/hour"
+            ],
+            "answer": 0,
+            "rationale": "1750 mL divided by 20 hours equals 87.5 mL per hour.",
+            "reviewHref": "#delivery-prescription"
+          }
+        },
+        {
+          "id": "enteral-nutrition-069",
+          "method": "2000/24 = 83.33333333333333333333333333; nearest tenth 83.3",
+          "expected": "83.3 mL/hour",
+          "question": {
+            "id": "enteral-nutrition-069",
+            "question": "A daily enteral volume target is 2000 mL and feeding will run for 24 hours. What calculated pump rate corresponds to the target? Round to the nearest tenth of a mL per hour.",
+            "choices": [
+              "83.3 mL/hour",
+              "166.6 mL/hour",
+              "24 mL/hour",
+              "2000 mL/hour"
+            ],
+            "answer": 0,
+            "rationale": "2000 mL divided by 24 hours is approximately 83.3 mL per hour when rounded to the nearest tenth. The rounded rate approximates the target volume.",
+            "reviewHref": "#delivery-prescription"
+          }
+        },
+        {
+          "id": "enteral-nutrition-070",
+          "method": "45*24",
+          "expected": "1080 mL",
+          "question": {
+            "id": "enteral-nutrition-070",
+            "question": "A feeding runs at 45 mL per hour for 24 hours. What volume is delivered?",
+            "choices": [
+              "1080 mL",
+              "69 mL",
+              "1350 mL",
+              "540 mL"
+            ],
+            "answer": 0,
+            "rationale": "45 mL per hour multiplied by 24 hours equals 1080 mL.",
+            "reviewHref": "#delivery-prescription"
+          }
+        },
+        {
+          "id": "enteral-nutrition-071",
+          "method": "55*20",
+          "expected": "1100 mL",
+          "question": {
+            "id": "enteral-nutrition-071",
+            "question": "A feeding runs at 55 mL per hour for 20 hours. What volume is delivered?",
+            "choices": [
+              "1100 mL",
+              "75 mL",
+              "1650 mL",
+              "550 mL"
+            ],
+            "answer": 0,
+            "rationale": "55 mL per hour multiplied by 20 hours equals 1100 mL.",
+            "reviewHref": "#delivery-prescription"
+          }
+        },
+        {
+          "id": "enteral-nutrition-072",
+          "method": "65*18",
+          "expected": "1170 mL",
+          "question": {
+            "id": "enteral-nutrition-072",
+            "question": "A feeding runs at 65 mL per hour for 18 hours. What volume is delivered?",
+            "choices": [
+              "1170 mL",
+              "83 mL",
+              "1950 mL",
+              "585 mL"
+            ],
+            "answer": 0,
+            "rationale": "65 mL per hour multiplied by 18 hours equals 1170 mL.",
+            "reviewHref": "#delivery-prescription"
+          }
+        },
+        {
+          "id": "enteral-nutrition-073",
+          "method": "70*22",
+          "expected": "1540 mL",
+          "question": {
+            "id": "enteral-nutrition-073",
+            "question": "A feeding runs at 70 mL per hour for 22 hours. What volume is delivered?",
+            "choices": [
+              "1540 mL",
+              "92 mL",
+              "2100 mL",
+              "770 mL"
+            ],
+            "answer": 0,
+            "rationale": "70 mL per hour multiplied by 22 hours equals 1540 mL.",
+            "reviewHref": "#delivery-prescription"
+          }
+        },
+        {
+          "id": "enteral-nutrition-074",
+          "method": "80*16",
+          "expected": "1280 mL",
+          "question": {
+            "id": "enteral-nutrition-074",
+            "question": "A feeding runs at 80 mL per hour for 16 hours. What volume is delivered?",
+            "choices": [
+              "1280 mL",
+              "96 mL",
+              "2400 mL",
+              "640 mL"
+            ],
+            "answer": 0,
+            "rationale": "80 mL per hour multiplied by 16 hours equals 1280 mL.",
+            "reviewHref": "#delivery-prescription"
+          }
+        },
+        {
+          "id": "enteral-nutrition-075",
+          "method": "85*20",
+          "expected": "1700 mL",
+          "question": {
+            "id": "enteral-nutrition-075",
+            "question": "A feeding runs at 85 mL per hour for 20 hours. What volume is delivered?",
+            "choices": [
+              "1700 mL",
+              "105 mL",
+              "2550 mL",
+              "850 mL"
+            ],
+            "answer": 0,
+            "rationale": "85 mL per hour multiplied by 20 hours equals 1700 mL.",
+            "reviewHref": "#delivery-prescription"
+          }
+        },
+        {
+          "id": "enteral-nutrition-076",
+          "method": "90*24",
+          "expected": "2160 mL",
+          "question": {
+            "id": "enteral-nutrition-076",
+            "question": "A feeding runs at 90 mL per hour for 24 hours. What volume is delivered?",
+            "choices": [
+              "2160 mL",
+              "114 mL",
+              "2700 mL",
+              "1080 mL"
+            ],
+            "answer": 0,
+            "rationale": "90 mL per hour multiplied by 24 hours equals 2160 mL.",
+            "reviewHref": "#delivery-prescription"
+          }
+        },
+        {
+          "id": "enteral-nutrition-077",
+          "method": "95*18",
+          "expected": "1710 mL",
+          "question": {
+            "id": "enteral-nutrition-077",
+            "question": "A feeding runs at 95 mL per hour for 18 hours. What volume is delivered?",
+            "choices": [
+              "1710 mL",
+              "113 mL",
+              "2850 mL",
+              "855 mL"
+            ],
+            "answer": 0,
+            "rationale": "95 mL per hour multiplied by 18 hours equals 1710 mL.",
+            "reviewHref": "#delivery-prescription"
+          }
+        },
+        {
+          "id": "enteral-nutrition-078",
+          "method": "100*14",
+          "expected": "1400 mL",
+          "question": {
+            "id": "enteral-nutrition-078",
+            "question": "A feeding runs at 100 mL per hour for 14 hours. What volume is delivered?",
+            "choices": [
+              "1400 mL",
+              "114 mL",
+              "3000 mL",
+              "700 mL"
+            ],
+            "answer": 0,
+            "rationale": "100 mL per hour multiplied by 14 hours equals 1400 mL.",
+            "reviewHref": "#delivery-prescription"
+          }
+        },
+        {
+          "id": "enteral-nutrition-079",
+          "method": "110*12",
+          "expected": "1320 mL",
+          "question": {
+            "id": "enteral-nutrition-079",
+            "question": "A feeding runs at 110 mL per hour for 12 hours. What volume is delivered?",
+            "choices": [
+              "1320 mL",
+              "122 mL",
+              "3300 mL",
+              "660 mL"
+            ],
+            "answer": 0,
+            "rationale": "110 mL per hour multiplied by 12 hours equals 1320 mL.",
+            "reviewHref": "#delivery-prescription"
+          }
+        },
+        {
+          "id": "enteral-nutrition-080",
+          "method": "1200*0.80=960.00; 1500-960.00=540.00",
+          "expected": "540 mL",
+          "question": {
+            "id": "enteral-nutrition-080",
+            "question": "A patient receives 1200 mL of formula that is 80 percent free water. The individualized water target is 1500 mL before other sources. How much additional water remains?",
+            "choices": [
+              "540 mL",
+              "960 mL",
+              "1500 mL",
+              "1200 mL"
+            ],
+            "answer": 0,
+            "rationale": "Formula provides 960 mL. Subtracting this from 1500 mL leaves 540 mL before medication, oral, and intravenous water are counted.",
+            "reviewHref": "#formula-selection"
+          }
+        },
+        {
+          "id": "enteral-nutrition-081",
+          "method": "1500*0.76=1140.00; 1800-1140.00=660.00",
+          "expected": "660 mL",
+          "question": {
+            "id": "enteral-nutrition-081",
+            "question": "A patient receives 1500 mL of formula that is 76 percent free water. The individualized water target is 1800 mL before other sources. How much additional water remains?",
+            "choices": [
+              "660 mL",
+              "1140 mL",
+              "1800 mL",
+              "1500 mL"
+            ],
+            "answer": 0,
+            "rationale": "Formula provides 1140 mL. Subtracting this from 1800 mL leaves 660 mL before medication, oral, and intravenous water are counted.",
+            "reviewHref": "#formula-selection"
+          }
+        },
+        {
+          "id": "enteral-nutrition-082",
+          "method": "1000*0.85=850.00; 1600-850.00=750.00",
+          "expected": "750 mL",
+          "question": {
+            "id": "enteral-nutrition-082",
+            "question": "A patient receives 1000 mL of formula that is 85 percent free water. The individualized water target is 1600 mL before other sources. How much additional water remains?",
+            "choices": [
+              "750 mL",
+              "850 mL",
+              "1600 mL",
+              "1000 mL"
+            ],
+            "answer": 0,
+            "rationale": "Formula provides 850 mL. Subtracting this from 1600 mL leaves 750 mL before medication, oral, and intravenous water are counted.",
+            "reviewHref": "#formula-selection"
+          }
+        },
+        {
+          "id": "enteral-nutrition-083",
+          "method": "1800*0.70=1260.00; 2000-1260.00=740.00",
+          "expected": "740 mL",
+          "question": {
+            "id": "enteral-nutrition-083",
+            "question": "A patient receives 1800 mL of formula that is 70 percent free water. The individualized water target is 2000 mL before other sources. How much additional water remains?",
+            "choices": [
+              "740 mL",
+              "1260 mL",
+              "2000 mL",
+              "1800 mL"
+            ],
+            "answer": 0,
+            "rationale": "Formula provides 1260 mL. Subtracting this from 2000 mL leaves 740 mL before medication, oral, and intravenous water are counted.",
+            "reviewHref": "#formula-selection"
+          }
+        },
+        {
+          "id": "enteral-nutrition-084",
+          "method": "1250*0.82=1025.00; 1700-1025.00=675.00",
+          "expected": "675 mL",
+          "question": {
+            "id": "enteral-nutrition-084",
+            "question": "A patient receives 1250 mL of formula that is 82 percent free water. The individualized water target is 1700 mL before other sources. How much additional water remains?",
+            "choices": [
+              "675 mL",
+              "1025 mL",
+              "1700 mL",
+              "1250 mL"
+            ],
+            "answer": 0,
+            "rationale": "Formula provides 1025 mL. Subtracting this from 1700 mL leaves 675 mL before medication, oral, and intravenous water are counted.",
+            "reviewHref": "#formula-selection"
+          }
+        },
+        {
+          "id": "enteral-nutrition-085",
+          "method": "1400*0.78=1092.00; 1900-1092.00=808.00",
+          "expected": "808 mL",
+          "question": {
+            "id": "enteral-nutrition-085",
+            "question": "A patient receives 1400 mL of formula that is 78 percent free water. The individualized water target is 1900 mL before other sources. How much additional water remains?",
+            "choices": [
+              "808 mL",
+              "1092 mL",
+              "1900 mL",
+              "1400 mL"
+            ],
+            "answer": 0,
+            "rationale": "Formula provides 1092 mL. Subtracting this from 1900 mL leaves 808 mL before medication, oral, and intravenous water are counted.",
+            "reviewHref": "#formula-selection"
+          }
+        },
+        {
+          "id": "enteral-nutrition-086",
+          "method": "1600*0.74=1184.00; 2100-1184.00=916.00",
+          "expected": "916 mL",
+          "question": {
+            "id": "enteral-nutrition-086",
+            "question": "A patient receives 1600 mL of formula that is 74 percent free water. The individualized water target is 2100 mL before other sources. How much additional water remains?",
+            "choices": [
+              "916 mL",
+              "1184 mL",
+              "2100 mL",
+              "1600 mL"
+            ],
+            "answer": 0,
+            "rationale": "Formula provides 1184 mL. Subtracting this from 2100 mL leaves 916 mL before medication, oral, and intravenous water are counted.",
+            "reviewHref": "#formula-selection"
+          }
+        },
+        {
+          "id": "enteral-nutrition-087",
+          "method": "1100*0.84=924.00; 1500-924.00=576.00",
+          "expected": "576 mL",
+          "question": {
+            "id": "enteral-nutrition-087",
+            "question": "A patient receives 1100 mL of formula that is 84 percent free water. The individualized water target is 1500 mL before other sources. How much additional water remains?",
+            "choices": [
+              "576 mL",
+              "924 mL",
+              "1500 mL",
+              "1100 mL"
+            ],
+            "answer": 0,
+            "rationale": "Formula provides 924 mL. Subtracting this from 1500 mL leaves 576 mL before medication, oral, and intravenous water are counted.",
+            "reviewHref": "#formula-selection"
+          }
+        },
+        {
+          "id": "enteral-nutrition-088",
+          "method": "1750*0.72=1260.00; 2200-1260.00=940.00",
+          "expected": "940 mL",
+          "question": {
+            "id": "enteral-nutrition-088",
+            "question": "A patient receives 1750 mL of formula that is 72 percent free water. The individualized water target is 2200 mL before other sources. How much additional water remains?",
+            "choices": [
+              "940 mL",
+              "1260 mL",
+              "2200 mL",
+              "1750 mL"
+            ],
+            "answer": 0,
+            "rationale": "Formula provides 1260 mL. Subtracting this from 2200 mL leaves 940 mL before medication, oral, and intravenous water are counted.",
+            "reviewHref": "#formula-selection"
+          }
+        },
+        {
+          "id": "enteral-nutrition-089",
+          "method": "1300*0.81=1053.00; 1800-1053.00=747.00",
+          "expected": "747 mL",
+          "question": {
+            "id": "enteral-nutrition-089",
+            "question": "A patient receives 1300 mL of formula that is 81 percent free water. The individualized water target is 1800 mL before other sources. How much additional water remains?",
+            "choices": [
+              "747 mL",
+              "1053 mL",
+              "1800 mL",
+              "1300 mL"
+            ],
+            "answer": 0,
+            "rationale": "Formula provides 1053 mL. Subtracting this from 1800 mL leaves 747 mL before medication, oral, and intravenous water are counted.",
+            "reviewHref": "#formula-selection"
+          }
+        },
+        {
+          "id": "enteral-nutrition-109",
+          "method": "60*24=1440; 1800-1440=360",
+          "expected": "360 mL deficit",
+          "question": {
+            "id": "enteral-nutrition-109",
+            "question": "A patient receives 60 mL per hour for 24 hours, but the goal is 1,800 mL daily. Which interpretation or management plan is most defensible?",
+            "choices": [
+              "Recognize a 360 mL daily deficit and revise the safe rate or schedule",
+              "Recognize a 600 mL deficit by treating the schedule as 20 hours",
+              "Recognize a 240 mL deficit by using 65 mL per hour",
+              "Conclude that 60 mL per hour for 24 hours already supplies 1,800 mL"
+            ],
+            "answer": 0,
+            "rationale": "The current prescription delivers 60 times 24, or 1,440 mL. Subtract 1,440 mL from the 1,800 mL goal to obtain a 360 mL deficit. Any revised rate or schedule must remain safe for the patient.",
+            "reviewHref": "#delivery-prescription"
+          }
+        },
+        {
+          "id": "enteral-nutrition-110",
+          "method": "16*4/240*100; nearest tenth",
+          "expected": "26.7%",
+          "question": {
+            "id": "enteral-nutrition-110",
+            "question": "A hypothetical formula label states 240 kcal and 16 g protein per serving. Using 4 kcal per gram of protein, what percentage of the labeled calories comes from protein? Round to the nearest tenth of a percent.",
+            "choices": [
+              "26.7%",
+              "6.7%",
+              "60.0%",
+              "64.0%"
+            ],
+            "answer": 0,
+            "rationale": "Protein supplies 16 times 4, or 64 kcal. Divide 64 by the stated 240 kcal and multiply by 100: 26.666...%, or 26.7%. The denominator is labeled energy, not grams of protein.",
+            "reviewHref": "#formula-selection"
+          }
+        },
+        {
+          "id": "enteral-nutrition-111",
+          "method": "9*9",
+          "expected": "81 kcal",
+          "question": {
+            "id": "enteral-nutrition-111",
+            "question": "A hypothetical formula serving contains 9 g fat. Using 9 kcal per gram of fat, how much energy comes from fat in that serving?",
+            "choices": [
+              "81 kcal",
+              "36 kcal",
+              "30.6 kcal",
+              "9 kcal"
+            ],
+            "answer": 0,
+            "rationale": "Multiply 9 g fat by 9 kcal per gram to obtain 81 kcal. The 4 kcal per gram factor applies to protein and enteral carbohydrate; 3.4 kcal per gram is used for parenteral dextrose.",
+            "reviewHref": "#formula-selection"
+          }
+        },
+        {
+          "id": "enteral-nutrition-112",
+          "method": "23*4/2",
+          "expected": "46 kcal",
+          "question": {
+            "id": "enteral-nutrition-112",
+            "question": "A hypothetical formula contains 23 g carbohydrate per full serving. If half a serving is delivered, how much carbohydrate energy is received using 4 kcal per gram?",
+            "choices": [
+              "46 kcal",
+              "92 kcal",
+              "11.5 kcal",
+              "39.1 kcal"
+            ],
+            "answer": 0,
+            "rationale": "A full serving supplies 23 times 4, or 92 kcal from carbohydrate. Half a serving provides 46 kcal. First identify the nutrient energy, then scale it to the delivered fraction.",
+            "reviewHref": "#formula-selection"
+          }
+        },
+        {
+          "id": "enteral-nutrition-113",
+          "method": "240*(240-60)/240",
+          "expected": "180 kcal",
+          "question": {
+            "id": "enteral-nutrition-113",
+            "question": "A hypothetical formula label states 240 kcal per 240 mL serving. Of one serving, 60 mL is spilled and the remaining 180 mL is accurately delivered. How much labeled energy is received?",
+            "choices": [
+              "180 kcal",
+              "240 kcal",
+              "60 kcal",
+              "320 kcal"
+            ],
+            "answer": 0,
+            "rationale": "The delivered fraction is 180 divided by 240, or 0.75. Multiply 240 kcal by 0.75 to obtain 180 kcal. The spilled portion is excluded from intake.",
+            "reviewHref": "#formula-selection"
+          }
+        },
+        {
+          "id": "enteral-nutrition-114",
+          "method": "Use declared label denominator; 16*4+23*4+9*9=237",
+          "expected": "240 kcal, the declared serving energy",
+          "question": {
+            "id": "enteral-nutrition-114",
+            "question": "A hypothetical label declares 240 kcal per serving with 16 g protein, 23 g carbohydrate, and 9 g fat. The simple 4/4/9 calculation totals 237 kcal. Which denominator should be used to calculate the percentage of the declared calories supplied by protein?",
+            "choices": [
+              "240 kcal, the declared serving energy",
+              "237 kcal, replacing the declared total with the calculated sum",
+              "64 kcal, the protein energy alone",
+              "48 g, the sum of macronutrient masses"
+            ],
+            "answer": 0,
+            "rationale": "The question asks about declared calories, so use the stated 240 kcal total. Protein energy is 16 times 4, or 64 kcal. Do not silently replace the label denominator because the simple nutrient-factor sum differs.",
+            "reviewHref": "#formula-selection"
+          }
+        }
+      ],
+      "arithmeticEmbeddedChecks": [
+        {
+          "lesson": "delivery-prescription",
+          "method": "70*18=1260",
+          "expected": "1,260 mL",
+          "question": {
+            "question": "A formula runs at 70 mL per hour for 18 hours. What volume is delivered?",
+            "choices": [
+              "1,260 mL",
+              "1,680 mL",
+              "1,400 mL",
+              "980 mL"
+            ],
+            "answer": 0,
+            "rationale": "Seventy milliliters per hour multiplied by 18 hours equals 1,260 mL.",
+            "reviewHref": "#delivery-prescription"
+          }
+        },
+        {
+          "lesson": "formula-selection",
+          "method": "1500*.76=1140",
+          "expected": "1,140 mL",
+          "question": {
+            "question": "A patient receives 1,500 mL of a formula that is 76 percent free water. How much water comes from the formula?",
+            "choices": [
+              "1,140 mL",
+              "760 mL",
+              "1,500 mL",
+              "1,976 mL"
+            ],
+            "answer": 0,
+            "rationale": "One thousand five hundred milliliters multiplied by 0.76 equals 1,140 mL of free water.",
+            "reviewHref": "#formula-selection"
+          }
+        }
+      ],
+      "newDistinctAssessmentCalculationCount": 38,
+      "workedExamples": {
+        "prescriptionExample": {
+          "20Hours": 1200,
+          "24Hours": 1440
+        },
+        "roundedExample": {
+          "rate": "81.8",
+          "delivered": "1799.6"
+        },
+        "labelExample": {
+          "protein": 64,
+          "carbohydrate": 92,
+          "fat": 81,
+          "sum": 237,
+          "declared": 240,
+          "proteinPercent": "26.7"
+        },
+        "partialExample": {
+          "deliveredFraction": "0.75",
+          "energy": "180",
+          "protein": "12",
+          "halfServingCarbohydrate": 46.0
+        }
+      },
+      "cumulativeIds": [
+        "cumulative-enteral-nutrition-enteral-nutrition-001",
+        "cumulative-enteral-nutrition-enteral-nutrition-027",
+        "cumulative-enteral-nutrition-enteral-nutrition-063",
+        "cumulative-enteral-nutrition-enteral-nutrition-089",
+        "cumulative-enteral-nutrition-enteral-nutrition-115"
+      ],
+      "contentHashes": {
+        "src/data/modules/enteralNutrition.js": "c40bcea22fa402cdc22cb5d7684c4f242e321fc8963b430774c219bdb5c86e68",
+        "src/data/questionBanks/enteralNutrition.js": "51123c353108901b6be5076abc2d3b9ea26bb7ca64a93f49feb5f21a923a6c25"
+      }
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "renderedBodies": 30,
+          "addedBodies": 6,
+          "bankItemsCorrectAndWrong": 37,
+          "embeddedArithmeticChecks": 2,
+          "currentCumulativeRuntimeItems": 5,
+          "clinicalCumulativeItemPendingSource": "enteral-nutrition-027",
+          "remediationAndProgress": true
+        },
+        {
+          "width": 390,
+          "renderedBodies": 30,
+          "addedBodies": 6,
+          "bankItemsCorrectAndWrong": 37,
+          "embeddedArithmeticChecks": 2,
+          "currentCumulativeRuntimeItems": 5,
+          "clinicalCumulativeItemPendingSource": "enteral-nutrition-027",
+          "remediationAndProgress": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "manualVisual": {
+      "bodyScreenshotsDesktopMobile": 12,
+      "questionWrongFeedbackScreenshots": 18,
+      "questionCorrectFeedbackScreenshots": 4,
+      "questionIdsVisuallyRead": [
+        "enteral-nutrition-062",
+        "enteral-nutrition-069",
+        "enteral-nutrition-109",
+        "enteral-nutrition-110",
+        "enteral-nutrition-111",
+        "enteral-nutrition-112",
+        "enteral-nutrition-113",
+        "enteral-nutrition-114",
+        "enteral-nutrition-115"
+      ],
+      "findings": "Readable headings, body copy, units, options, keyed/wrong feedback and remediation; no clipping at1440/390. Automated320-width overflow also passed. Current six figures not source-closed by this unit."
+    }
+  },
+  "coverage": {
+    "bank": 106,
+    "verifiedBank": 38,
+    "remainingBank": 68,
+    "remainingBankIds": [
+      "enteral-nutrition-002",
+      "enteral-nutrition-003",
+      "enteral-nutrition-004",
+      "enteral-nutrition-005",
+      "enteral-nutrition-006",
+      "enteral-nutrition-007",
+      "enteral-nutrition-008",
+      "enteral-nutrition-009",
+      "enteral-nutrition-010",
+      "enteral-nutrition-011",
+      "enteral-nutrition-012",
+      "enteral-nutrition-013",
+      "enteral-nutrition-014",
+      "enteral-nutrition-015",
+      "enteral-nutrition-016",
+      "enteral-nutrition-017",
+      "enteral-nutrition-018",
+      "enteral-nutrition-019",
+      "enteral-nutrition-020",
+      "enteral-nutrition-021",
+      "enteral-nutrition-022",
+      "enteral-nutrition-023",
+      "enteral-nutrition-024",
+      "enteral-nutrition-025",
+      "enteral-nutrition-026",
+      "enteral-nutrition-027",
+      "enteral-nutrition-028",
+      "enteral-nutrition-029",
+      "enteral-nutrition-030",
+      "enteral-nutrition-031",
+      "enteral-nutrition-032",
+      "enteral-nutrition-033",
+      "enteral-nutrition-034",
+      "enteral-nutrition-035",
+      "enteral-nutrition-036",
+      "enteral-nutrition-037",
+      "enteral-nutrition-038",
+      "enteral-nutrition-039",
+      "enteral-nutrition-040",
+      "enteral-nutrition-041",
+      "enteral-nutrition-042",
+      "enteral-nutrition-043",
+      "enteral-nutrition-044",
+      "enteral-nutrition-045",
+      "enteral-nutrition-046",
+      "enteral-nutrition-047",
+      "enteral-nutrition-048",
+      "enteral-nutrition-049",
+      "enteral-nutrition-050",
+      "enteral-nutrition-090",
+      "enteral-nutrition-091",
+      "enteral-nutrition-092",
+      "enteral-nutrition-093",
+      "enteral-nutrition-094",
+      "enteral-nutrition-095",
+      "enteral-nutrition-096",
+      "enteral-nutrition-097",
+      "enteral-nutrition-098",
+      "enteral-nutrition-099",
+      "enteral-nutrition-100",
+      "enteral-nutrition-101",
+      "enteral-nutrition-102",
+      "enteral-nutrition-103",
+      "enteral-nutrition-104",
+      "enteral-nutrition-105",
+      "enteral-nutrition-106",
+      "enteral-nutrition-107",
+      "enteral-nutrition-108"
+    ],
+    "bodies": 30,
+    "verifiedBodies": 7,
+    "remainingBodies": 23,
+    "embeddedChecks": 6,
+    "verifiedEmbeddedChecks": 2,
+    "remainingEmbeddedChecks": 4,
+    "figures": 6,
+    "verifiedFiguresThisUnit": 0,
+    "cumulative": 5,
+    "sourceVerifiedCumulative": 4,
+    "pendingCumulative": [
+      "enteral-nutrition-027"
+    ],
+    "metadata": "source tagline corrected; full lesson/module metadata review pending"
+  },
+  "outsideENSourceRequest": {
+    "status": "pending human response",
+    "requestedScope": "Primary ASPEN/SCCM EN clinical guidance and FDA connector guidance",
+    "authorized": false,
+    "sourcesOpened": false
+  },
+  "wholeModuleVerified": false,
+  "wholeChapterVerified": false,
+  "nextAction": "Continue enteral-nutrition complete-module review from Chapter11 printed161-164/PDF169-172; PDF172 lower section and PDF173-176 are additional PN practice already read/recalculated. Verify remaining68 bank items,23 bodies,four embedded checks,six figures and metadata; resolve book drug-hold discrepancy and missing drug/formula detail. Outside-source approval requested for EN ASPEN/SCCM and FDA connector guidance; no answer yet and no outside EN sources opened. PN-only authorization remains scoped to PN. Classify/review the33-file cross-module feeding-related inventory and current cumulative q027 density/water claim before whole EN closure; then pediatric PN and clinical fluid/calcium dependencies, preserving Chapter1 checklist entry15 reviewing.",
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "contentCommit": "pending",
+    "remoteHashVerified": false,
+    "receipt": "sequential-release-en-book-calculations-2026-10-01.json",
+    "production": "not verified",
+    "mainMerge": "not performed"
+  }
+}

@@ -964,7 +964,9 @@
             "enteral-nutrition"
           ],
           "textAndFiguresRead": true,
-          "evidence": "parenteral-nutrition-calculations-review.json"
+          "evidence": "parenteral-nutrition-calculations-review.json",
+          "enteralBookCalculationEvidence": "enteral-nutrition-book-calculations-review.json",
+          "wholeENModuleVerified": false
         },
         {
           "topic": "Complete PN practice/order forms",
@@ -1219,6 +1221,26 @@
           "bankSourceVerified": 142,
           "bankTotal": 142,
           "remainingBankItems": 0
+        },
+        {
+          "topic": "Enteral book labels, access anatomy and delivery calculations",
+          "printedPages": [
+            161,
+            164
+          ],
+          "pdfPages": [
+            169,
+            172
+          ],
+          "targets": [
+            "enteral-nutrition"
+          ],
+          "status": "reviewing",
+          "textAndFiguresRead": true,
+          "evidence": "enteral-nutrition-book-calculations-review.json",
+          "verifiedScope": "EN book/calculation unit verified: six added bodies, one retained body, 38 bank objects including 36 arithmetic items, two embedded arithmetic checks; 11 retained questions clarified/repaired and six original questions added. Whole EN/module/chapter remain reviewing.",
+          "wholeCorrespondingModuleVerified": false,
+          "outsideSourcesUsed": false
         }
       ],
       "moduleSlugs": [
@@ -1244,7 +1266,8 @@
         "PN home/long-term unit:131/142 bank,6/6 checks,5/5 current cumulative,16/24 original sections,10 approved-source added sections and4/6 complete figures verified;49/57 body coverage. Remaining11bank,8original bodies,2partial figures and legacy monitoring open. Whole adult PN/Chapter11/checklist15 remain reviewing; completed14. parenteral-nutrition-home-monitoring-review.json",
         "PN access unit:133/142 bank,6/6 embedded checks,5/5 current cumulative,17/24 original teaching bodies and50/57 total bodies verified. Ninebank,sevenoriginal bodies,two partial figures and legacy monitoring remain. AdultPN/Chapter11/checklist15 remain reviewing;14 checklist entries complete. parenteral-nutrition-access-review.json",
         "PN nutrient/monitoring unit:142/142 bank,6/6 embedded checks,5/5 current cumulative,24/24 original and57/57 total bodies,6/6 figures and9/9 scoped legacy PN entries source-verified. Whole-module reconciliation remains before closure; Chapter11/checklist15 reviewing and14 checklist entries complete. parenteral-nutrition-nutrient-monitoring-review.json",
-        "Complete adult PN module verified:6 lessons,57 bodies,6 figures/checks,142 bank,5 current cumulative and42 metadata fields; two key points corrected. EN/pediatric/fluid dependencies and checklist15 remain open. parenteral-nutrition-completion-review.json"
+        "Complete adult PN module verified:6 lessons,57 bodies,6 figures/checks,142 bank,5 current cumulative and42 metadata fields; two key points corrected. EN/pediatric/fluid dependencies and checklist15 remain open. parenteral-nutrition-completion-review.json",
+        "EN book/calculation unit verified: six added bodies, one retained body, 38 bank objects including 36 arithmetic items, two embedded arithmetic checks; 11 retained questions clarified/repaired and six original questions added. Whole EN/module/chapter remain reviewing. enteral-nutrition-book-calculations-review.json"
       ],
       "evidence": [
         "parenteral-nutrition-calculations-review.json",
@@ -1261,7 +1284,8 @@
         "parenteral-nutrition-home-monitoring-review.json",
         "parenteral-nutrition-access-review.json",
         "parenteral-nutrition-nutrient-monitoring-review.json",
-        "parenteral-nutrition-completion-review.json"
+        "parenteral-nutrition-completion-review.json",
+        "enteral-nutrition-book-calculations-review.json"
       ],
       "pdfRangeStatus": "All 20 pages visually verified",
       "verifiedModules": [
