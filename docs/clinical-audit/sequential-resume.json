@@ -104,10 +104,10 @@
     "branch": "audit/rxprep-content-2026-09-24",
     "baseCommit": "b38faea07f3cd78f04c513cb6e842bb8f6fccdbc",
     "remoteVerifiedAtStart": true,
-    "commit": "d480c93ce20f07ca16c74b6ebfd9770daa22052a",
-    "push": "verified: seven new calculation modules and scoped PN calculation additions pushed to the audit branch",
+    "commit": "1a1cfdfe03e89c6d8d019396bc99cfe45aa3a73c",
+    "push": "verified: seven new calculation modules and the complete existing PN calculation module pushed to the audit branch",
     "production": "not verified",
-    "receipt": "sequential-release-pn-delivery-2026-10-01.json",
+    "receipt": "sequential-release-pn-calculations-completion-2026-10-01.json",
     "contentCommits": [
       "df630290c5abc8cd1dadeb5574fa0cec7c0ca582",
       "30d14a7e36d030e32340ff04a6ef28971253a060",
@@ -118,7 +118,8 @@
       "558db5dcd37b4055175745932c4e5759edfd919e",
       "c609559a5ddb0b5a2aa31428bff579d89a9130de",
       "8027bf41d320493c7666f252d3f45512caf8d8b1",
-      "d480c93ce20f07ca16c74b6ebfd9770daa22052a"
+      "d480c93ce20f07ca16c74b6ebfd9770daa22052a",
+      "1a1cfdfe03e89c6d8d019396bc99cfe45aa3a73c"
     ]
   },
   "openIssues": [
@@ -127,7 +128,7 @@
     "Pending unrelated clinical edits are preserved and excluded from this pass.",
     "Historical audit-branch snapshot recorded 14 pre-existing duplicate prompt groups (83 instances). This PN completion unit resolves two PN duplicate prompts; all current PN prompts/IDs are globally unique. Remaining modules require their own duplicate review; the older count is not a fresh global count.",
     "Global structural audit observed 34 pre-existing typographic violations in unchanged glaucoma, allergic-rhinitis and common-ear modules; retain for their chronological reviews. Focused PN audit passed.",
-    "Complete PN calculation module verified; broader adult/pediatric PN, EN, clinical fluid and calcium interpretation remain open. Keep checklist entry 15 reviewing and count 14. Chapter 12 and Chapter 53 reads are scoped dependencies, not chapter closure."
+    "Complete PN calculation module verified and pushed; broader adult/pediatric PN, EN, clinical fluid and calcium interpretation remain open. Keep checklist entry 15 reviewing and count 14. Chapter 12 and Chapter 53 reads are scoped dependencies, not chapter closure."
   ],
   "progressSnapshot": {
     "date": "2026-10-01",
@@ -148,12 +149,16 @@
     },
     "interpretation": "Count-based ledger snapshots include preserved historical flags, not independent reverification of earlier units. Working and committed ledgers differ because older unfinished corrections and three additional modules remain unstaged. Seven newly verified modules plus the existing PN calculation module and fourteen checklist entries add partial chapter coverage; no new whole chapter closure."
   },
-  "lastVerifiedLogicalUnit": "parenteral-nutrition-calculations: 18 added delivery/additive/order sections",
+  "lastVerifiedLogicalUnit": "parenteral-nutrition-calculations: complete nine-lesson/172-item module",
   "lastVerifiedSections": [
-    "dextrose-gir: five added sections",
-    "lipid-energy-ledger: three added sections",
-    "stock-solutions-additives: six added sections",
-    "rate-final-audit: four added sections"
-  ],
-  "pendingLogicalUnit": "parenteral-nutrition-calculations: complete module"
+    "fluid-requirements",
+    "calculation-foundations",
+    "caloric-needs",
+    "protein-energy-targets",
+    "nitrogen-intake-ratios",
+    "dextrose-gir",
+    "lipid-energy-ledger",
+    "stock-solutions-additives",
+    "rate-final-audit"
+  ]
 }

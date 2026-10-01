@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-01",
+  "status": "content_commit_remote_verified",
+  "branch": "audit/rxprep-content-2026-09-24",
+  "remote": "https://github.com/NaS-Research/nas-website.git",
+  "baseCommit": "8bce211781aabd744cb024eb2d27297b2bb9f77a",
+  "contentCommit": "1a1cfdfe03e89c6d8d019396bc99cfe45aa3a73c",
+  "remoteHashVerified": "1a1cfdfe03e89c6d8d019396bc99cfe45aa3a73c",
+  "module": "parenteral-nutrition-calculations",
+  "wholeModuleVerified": true,
+  "wholeChapterVerified": false,
+  "source": {
+    "edition": 2023,
+    "chapter11": {
+      "printedPages": [
+        149,
+        168
+      ],
+      "pdfPages": [
+        157,
+        176
+      ],
+      "allTextTablesFiguresRead": true,
+      "prior54ExerciseChecks": "58 separately counted checks in parenteral-nutrition-calculations-review.json"
+    },
+    "chapter12Dependency": {
+      "printedPages": [
+        169,
+        174
+      ],
+      "pdfPages": [
+        177,
+        182
+      ],
+      "allSixDependencyPagesTextAndFiguresRead": true,
+      "wholeChapterVerified": false
+    },
+    "chapter53Dependency": {
+      "printedPages": [
+        716,
+        716
+      ],
+      "pdfPages": [
+        724,
+        724
+      ],
+      "renderedPropofolCalorieValue": "1.1 kcal/mL",
+      "wholeSedativeTableVerified": false
+    },
+    "sourceMaterialPrivate": true
+  },
+  "changes": {
+    "lessons": 9,
+    "teachingSections": 64,
+    "figures": 9,
+    "embeddedChecks": 9,
+    "bankItems": 172,
+    "cumulativeItems": 5,
+    "netNewTeachingSectionsThisUnit": 2,
+    "authoredOrReconciledTeachingSectionsThisUnit": 16,
+    "revisedBankObjectsThisUnit": 40,
+    "unchangedBankObjectsFromBase": 132,
+    "newBankItemsThisUnit": 0,
+    "prior72AddedObjectsExactlyUnchanged": true
+  },
+  "validation": {
+    "all172ItemsAndNineEmbeddedChecksRenderedAndGradedAtDesktopMobile": true,
+    "allFiveDerivedCumulativeItemsRenderedAndGradedAtDesktopMobile": true,
+    "allNineFiguresVisuallyInspectedAtDesktopMobile": true,
+    "allSixteenAuthoredReconciledSectionsVisuallyInspectedAtMobile": true,
+    "all64ActualTeachingSectionsPresent": true,
+    "sourceComparisonComplete": true,
+    "independentCurrentArithmeticChecks": 81,
+    "newDistinctArithmeticCount": 16,
+    "newSeparateSourceExampleChecks": 17,
+    "runningDistinctOriginalRetainedChecks": 591,
+    "runningSeparateSourceExampleChecks": 98,
+    "productionBuild": {
+      "passed": true,
+      "staticPages": 567,
+      "scope": "Exact three-clinical-file candidate"
+    },
+    "focusedAssessmentAuditPassed": true,
+    "allPrior72AddedQuestionObjectsUnchanged": true,
+    "allIDsKeysAndLessonAnchorsPreserved": true,
+    "all172PromptsIDsGloballyUnique": true,
+    "incorrectFeedbackDistinctAttemptsAndRemediationPassed": true,
+    "LibrarySearchStableRouteAndSignedOut401Preserved": true,
+    "noOverflow390AndWorkingLibrary320": true,
+    "exactTenFileStagingGuard": true
+  },
+  "contentHashes": {
+    "src/data/modules/parenteralNutritionCalculations.js": "88b46cd2020ee9357e45f756ec318ec71f63491e9beae92c5c7b53a3771dc41a",
+    "src/data/questionBanks/parenteralNutritionCalculations.js": "b711f424917f58fc53bf0d84de88a3d5e8d031c853de6649c17642b35512c2c7",
+    "src/components/learn/ParenteralNutritionCalculationVisual.jsx": "f5d3511edb15185708ee201808c9c19fbba7d9edecc3a9976638ae2b5f47b100"
+  },
+  "evidence": "parenteral-nutrition-calculations-completion-review.json",
+  "completedChecklistEntries": 14,
+  "nextStartingPoint": "Audit the entire existing adult clinical parenteral-nutrition module and its bank, checks, figures and cumulative items against Chapter 11, starting at printed 149 / PDF 157. The PN calculation module is fully verified; clinical PN, enteral nutrition, pediatric PN, fluid/electrolyte and calcium interpretation remain open. Keep checklist entry 15 reviewing and completed checklist count 14 until all corresponding coverage is verified.",
+  "production": "not verified",
+  "receiptCommit": "Following Git documentation commit; no self-referential hash."
+}
