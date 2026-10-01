@@ -1,0 +1,913 @@
+{
+  "drug": "terazosin",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "reviewScope": "Selected current U.S.1 mg and 5 mg repackaged capsule labels",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Terazosin5mg capsules · Full labeling",
+      "publisher": "DailyMed / Remedy Repack",
+      "note": "Current SPL version 12, effective 2026-09-22. Actual selected5mg product only; September2026 SPL.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=854b64ff-c138-45af-9cdf-6c23323d8490"
+    },
+    {
+      "id": "initial",
+      "title": "Terazosin1mg capsules · Full labeling",
+      "publisher": "DailyMed / Remedy Repack",
+      "note": "Current SPL version 14, effective 2026-05-19. Actual1mg starting-strength product separately verified.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=242589f0-0c79-4ea1-b900-10bccfec2b82"
+    }
+  ],
+  "labelMetadata": [
+    {
+      "sourceId": "label",
+      "product": "terazosin-teva",
+      "setid": "854b64ff-c138-45af-9cdf-6c23323d8490",
+      "version": "12",
+      "effectiveTime": "20260922",
+      "publishedDate": "Current public SPL retrieved October1,2026; no independent publication date claimed",
+      "clinicalRevisionWording": [],
+      "checked": "2026-10-01",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/854b64ff-c138-45af-9cdf-6c23323d8490.xml",
+      "xmlSha256": "c37878ba0f8c3ad312c9b9371e65d3bcaa8f3714ec291587f780154373d38028",
+      "marketingAuthorization": [
+        {
+          "category": "ANDA",
+          "application": "ANDA075317"
+        }
+      ],
+      "scope": "Actual selected public product labeling; SPL publication is distinguished from clinical revision, approval chronology and local stock."
+    },
+    {
+      "sourceId": "initial",
+      "product": "terazosin-generic",
+      "setid": "242589f0-0c79-4ea1-b900-10bccfec2b82",
+      "version": "14",
+      "effectiveTime": "20260519",
+      "publishedDate": "Current public SPL retrieved October1,2026; no independent publication date claimed",
+      "clinicalRevisionWording": [],
+      "checked": "2026-10-01",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/242589f0-0c79-4ea1-b900-10bccfec2b82.xml",
+      "xmlSha256": "5cf9170e5012683976c39da85a48403da9ffb45cb793e507f4a1a8c0bfcb1408",
+      "marketingAuthorization": [
+        {
+          "category": "ANDA",
+          "application": "ANDA075317"
+        }
+      ],
+      "scope": "Actual selected public product labeling; SPL publication is distinguished from clinical revision, approval chronology and local stock."
+    }
+  ],
+  "reviewedSourceSections": {
+    "label": [
+      "DESCRIPTION",
+      "CLINICAL PHARMACOLOGY",
+      "Pharmacodynamics",
+      "A. Benign Prostatic Hyperplasia (BPH)",
+      "B. Hypertension",
+      "Pharmacokinetics",
+      "INDICATIONS AND USAGE",
+      "CONTRAINDICATIONS",
+      "WARNINGS",
+      "Syncope and “First-dose” Effect",
+      "Priapism",
+      "PRECAUTIONS",
+      "General",
+      "Prostatic Cancer",
+      "Intraoperative Floppy Iris Syndrome (IFIS)",
+      "Orthostatic Hypotension",
+      "Information for Patients (see Patient Package Insert)",
+      "Laboratory Tests",
+      "Drug Interactions",
+      "Use With Other Drugs",
+      "Carcinogenesis, Mutagenesis, Impairment of Fertility :",
+      "Pregnancy",
+      "Teratogenic Effects :",
+      "Pregnancy Category C",
+      "Nonteratogenic Effects :",
+      "Nursing Mothers :",
+      "Pediatric Use :",
+      "ADVERSE REACTIONS",
+      "Benign Prostatic Hyperplasia",
+      "Hypertension",
+      "Body as a Whole :",
+      "Cardiovascular System :",
+      "Digestive System :",
+      "Metabolic/Nutritional Disorders",
+      "Musculoskeletal System :",
+      "Nervous System :",
+      "Respiratory System :",
+      "Skin and Appendages :",
+      "Special Senses :",
+      "Urogenital System :",
+      "Post-marketing Experience",
+      "OVERDOSAGE",
+      "DOSAGE AND ADMINISTRATION",
+      "Initial Dose :",
+      "Subsequent Doses :",
+      "Use With Other Drugs :",
+      "Initial Dose",
+      "Subsequent Doses",
+      "PATIENT INFORMATION ABOUT",
+      "HOW SUPPLIED"
+    ],
+    "initial": [
+      "DESCRIPTION",
+      "CLINICAL PHARMACOLOGY",
+      "Pharmacodynamics",
+      "A. Benign Prostatic Hyperplasia (BPH)",
+      "B. Hypertension",
+      "Pharmacokinetics",
+      "INDICATIONS AND USAGE",
+      "CONTRAINDICATIONS",
+      "WARNINGS",
+      "Syncope and “First-dose” Effect",
+      "Priapism",
+      "PRECAUTIONS",
+      "General",
+      "Prostatic Cancer",
+      "Intraoperative Floppy Iris Syndrome (IFIS)",
+      "Orthostatic Hypotension",
+      "Information for Patients (see Patient Package Insert)",
+      "Laboratory Tests",
+      "Drug Interactions",
+      "Use With Other Drugs",
+      "Carcinogenesis, Mutagenesis, Impairment of Fertility :",
+      "Pregnancy",
+      "Teratogenic Effects :",
+      "Pregnancy Category C",
+      "Nonteratogenic Effects :",
+      "Nursing Mothers :",
+      "Pediatric Use :",
+      "ADVERSE REACTIONS",
+      "Benign Prostatic Hyperplasia",
+      "Hypertension",
+      "Body as a Whole :",
+      "Cardiovascular System :",
+      "Digestive System :",
+      "Metabolic/Nutritional Disorders",
+      "Musculoskeletal System :",
+      "Nervous System :",
+      "Respiratory System :",
+      "Skin and Appendages :",
+      "Special Senses :",
+      "Urogenital System :",
+      "Post-marketing Experience",
+      "OVERDOSAGE",
+      "DOSAGE AND ADMINISTRATION",
+      "Initial Dose :",
+      "Subsequent Doses :",
+      "Use With Other Drugs :",
+      "Initial Dose",
+      "Subsequent Doses",
+      "PATIENT INFORMATION ABOUT",
+      "HOW SUPPLIED"
+    ]
+  },
+  "assertionToSourceMap": [
+    {
+      "section": "indications",
+      "card": "Labeled uses",
+      "assertions": {
+        "paragraphs": [
+          "Terazosin capsules treat symptomatic benign prostatic hyperplasia and hypertension, alone or with other antihypertensives. Relief of urinary symptoms does not establish prevention of BPH surgery, acute obstruction or other long-term complications, whose effects are undetermined in the label."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "initial"
+      ],
+      "sourceSections": {
+        "label": [
+          "INDICATIONS AND USAGE",
+          "CONTRAINDICATIONS",
+          "WARNINGS"
+        ],
+        "initial": [
+          "INDICATIONS AND USAGE",
+          "CONTRAINDICATIONS",
+          "WARNINGS"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "indications",
+      "card": "Scope",
+      "assertions": {
+        "paragraphs": [
+          "This profile covers selected current U.S. immediate-release capsules. BPH evaluation should exclude prostate cancer or other causes; coexistence is possible. Pediatric / off-label, compounded, other-manufacturer identification and disease-specific first-line-treatment claims are outside the reviewed scope."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "initial"
+      ],
+      "sourceSections": {
+        "label": [
+          "INDICATIONS AND USAGE",
+          "CONTRAINDICATIONS",
+          "WARNINGS"
+        ],
+        "initial": [
+          "INDICATIONS AND USAGE",
+          "CONTRAINDICATIONS",
+          "WARNINGS"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "dosage",
+      "card": "BPH adult regimen",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Stage",
+            "Selected label directions"
+          ],
+          "rows": [
+            [
+              "Start",
+              "1 mg at bedtime, close follow-up"
+            ],
+            [
+              "Titrate",
+              "Stepwise to 2 mg,5 mg or 10 mg once daily according to symptoms / flow"
+            ],
+            [
+              "Assess response",
+              "10 mg daily is generally required;4–6 weeks at 10 mg may be needed to assess benefit"
+            ],
+            [
+              "Higher-dose evidence",
+              "Some responded at 20 mg / day but evidence is insufficient for definitive conclusions; higher doses after inadequate 20 mg response lack support"
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label",
+        "initial"
+      ],
+      "sourceSections": {
+        "label": [
+          "Drug Interactions",
+          "Pediatric Use :",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "initial": [
+          "Drug Interactions",
+          "Pediatric Use :",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "dosage",
+      "card": "Hypertension adult regimen",
+      "assertions": {
+        "paragraphs": [
+          "Start 1 mg at bedtime; slowly titrate to BP response. Usual 1–5 mg once daily; some benefit up to 20 mg / day. Above 20 mg does not appear to add BP effect; above 40 mg was not studied, which is not a recommended 40 mg cap. Monitor end-of-interval BP;2–3 hour post-dose measurements can assess excessive peak response. If effect wanes by 24 hours, the prescriber may consider adjusted dose or divided twice-daily treatment; do not independently shorten intervals."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "initial"
+      ],
+      "sourceSections": {
+        "label": [
+          "Drug Interactions",
+          "Pediatric Use :",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "initial": [
+          "Drug Interactions",
+          "Pediatric Use :",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "dosage",
+      "card": "Restart and other BP drugs",
+      "assertions": {
+        "paragraphs": [
+          "After interruption for several days or longer, restart the initial dosing regimen rather than the previous higher dose. Adding antihypertensives, particularly verapamil, may require dose reduction / retitration of either treatment. PDE5-inhibitor co-use can cause hypotension. No fixed titration-day schedule or missed-single-dose double-up rule is supplied; consult the prescribing plan."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "initial"
+      ],
+      "sourceSections": {
+        "label": [
+          "Drug Interactions",
+          "Pediatric Use :",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "initial": [
+          "Drug Interactions",
+          "Pediatric Use :",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Marked postural hypotension and syncope can occur at initiation, first days, escalation, added BP treatment or restart. Initial risk is greatest during the first 7 days but persists. Drowsiness, dizziness and palpitations can impair safety. Priapism can lead to permanent erectile dysfunction if untreated. Cataract surgery can be complicated by intraoperative floppy iris syndrome with current or previous alpha-blocker exposure; tell the ophthalmologist. The label does not show benefit from automatic preoperative stopping."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "initial"
+      ],
+      "sourceSections": {
+        "label": [
+          "CONTRAINDICATIONS",
+          "WARNINGS",
+          "PRECAUTIONS",
+          "ADVERSE REACTIONS"
+        ],
+        "initial": [
+          "CONTRAINDICATIONS",
+          "WARNINGS",
+          "PRECAUTIONS",
+          "ADVERSE REACTIONS"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Known hypersensitivity to terazosin hydrochloride is the selected formal contraindication. Severe orthostatic risk requires careful selection and dosing; it is not inaccurately substituted for a different formal contraindication list."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "initial"
+      ],
+      "sourceSections": {
+        "label": [
+          "CONTRAINDICATIONS",
+          "WARNINGS",
+          "PRECAUTIONS",
+          "ADVERSE REACTIONS"
+        ],
+        "initial": [
+          "CONTRAINDICATIONS",
+          "WARNINGS",
+          "PRECAUTIONS",
+          "ADVERSE REACTIONS"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "Selected labels have no boxed warning. The prominent first-dose syncope warning and mandatory 1 mg start still apply."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "initial"
+      ],
+      "sourceSections": {
+        "label": [
+          "CONTRAINDICATIONS",
+          "WARNINGS",
+          "PRECAUTIONS",
+          "ADVERSE REACTIONS"
+        ],
+        "initial": [
+          "CONTRAINDICATIONS",
+          "WARNINGS",
+          "PRECAUTIONS",
+          "ADVERSE REACTIONS"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Reports include dizziness, weakness / fatigue, somnolence, headache, nasal congestion, nausea, edema, palpitations, blurred vision and sexual-function effects. Serious events include syncope, priapism and rare hypersensitivity / anaphylaxis; postmarketing atrial fibrillation and thrombocytopenia are reported. BPH and hypertension trial frequencies differ and are not pooled into a universal risk estimate."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "initial"
+      ],
+      "sourceSections": {
+        "label": [
+          "CONTRAINDICATIONS",
+          "WARNINGS",
+          "PRECAUTIONS",
+          "ADVERSE REACTIONS"
+        ],
+        "initial": [
+          "CONTRAINDICATIONS",
+          "WARNINGS",
+          "PRECAUTIONS",
+          "ADVERSE REACTIONS"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "interactions",
+      "card": "Antihypertensives and PDE5 inhibitors",
+      "assertions": {
+        "paragraphs": [
+          "Other BP medicines, especially verapamil, require caution and possible dose reduction / retitration. PDE5 inhibitors have caused hypotension with terazosin. Review timing, BP and symptoms with the clinician; no universal separation interval or combination dose is supplied."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "initial"
+      ],
+      "sourceSections": {
+        "label": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "Drug Interactions",
+          "Use With Other Drugs",
+          "Use With Other Drugs :"
+        ],
+        "initial": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "Drug Interactions",
+          "Use With Other Drugs",
+          "Use With Other Drugs :"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "interactions",
+      "card": "Other medicines",
+      "assertions": {
+        "paragraphs": [
+          "Selected labels describe co-use with many medicines without unexpected interactions, but some observations were not formal interaction studies. Review OTC decongestants, sedatives, alcohol and all new prescriptions for BP or impairment concerns rather than claim that the historical drug list proves universal compatibility."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "initial"
+      ],
+      "sourceSections": {
+        "label": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "Drug Interactions",
+          "Use With Other Drugs",
+          "Use With Other Drugs :"
+        ],
+        "initial": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "Drug Interactions",
+          "Use With Other Drugs",
+          "Use With Other Drugs :"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and breastfeeding",
+      "assertions": {
+        "paragraphs": [
+          "Selected labels lack adequate controlled pregnancy studies and report adverse developmental findings at high animal exposure; use is not recommended unless benefit justifies maternal / fetal risk. HistoricalCategoryC wording is not a current quantitative risk estimate. Human milk transfer is unknown and nursing use needs caution."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "initial"
+      ],
+      "sourceSections": {
+        "label": [
+          "PRECAUTIONS",
+          "Pregnancy",
+          "Pregnancy Category C",
+          "Nursing Mothers :",
+          "Pediatric Use :",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "initial": [
+          "PRECAUTIONS",
+          "Pregnancy",
+          "Pregnancy Category C",
+          "Nursing Mothers :",
+          "Pediatric Use :",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": {
+        "paragraphs": [
+          "Pediatric safety / effectiveness is undetermined; no dose is supplied. Older subjects showed reduced clearance / longer half-life in label PK studies. Review falls, orthostatic symptoms, other BP medicines and organ status; no age-only higher-dose allowance is inferred."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "initial"
+      ],
+      "sourceSections": {
+        "label": [
+          "PRECAUTIONS",
+          "Pregnancy",
+          "Pregnancy Category C",
+          "Nursing Mothers :",
+          "Pediatric Use :",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "initial": [
+          "PRECAUTIONS",
+          "Pregnancy",
+          "Pregnancy Category C",
+          "Nursing Mothers :",
+          "Pediatric Use :",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "assertions": {
+        "paragraphs": [
+          "Renal impairment had no significant effect on elimination in selected label data; compensatory dosing for the approximately 10% removal during hemodialysis does not appear necessary. No numeric hepatic adjustment table or advanced-organ dosing algorithm is supplied. Individual BP / tolerance and the initial / restart regimen remain essential."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "initial"
+      ],
+      "sourceSections": {
+        "label": [
+          "PRECAUTIONS",
+          "Pregnancy",
+          "Pregnancy Category C",
+          "Nursing Mothers :",
+          "Pediatric Use :",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "initial": [
+          "PRECAUTIONS",
+          "Pregnancy",
+          "Pregnancy Category C",
+          "Nursing Mothers :",
+          "Pediatric Use :",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "assertions": {
+        "paragraphs": [
+          "Terazosin blocks alpha-1 adrenoceptors. Relaxation of bladder-neck / prostatic smooth muscle improves urinary flow and symptoms; vascular effects reduce BP. The selected label’s clinical response findings do not establish prevention of all BPH complications."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "initial"
+      ],
+      "sourceSections": {
+        "label": [
+          "DESCRIPTION",
+          "CLINICAL PHARMACOLOGY",
+          "Pharmacokinetics"
+        ],
+        "initial": [
+          "DESCRIPTION",
+          "CLINICAL PHARMACOLOGY",
+          "Pharmacokinetics"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "assertions": {
+        "paragraphs": [
+          "Capsules are nearly completely absorbed; meals minimally affect extent but delay peak. Plasma peaks around 1 hour, with half-life about 12 hours and somewhat longer in older subjects. Protein binding is 90–94%; parent plus metabolites leave through urine and feces. Minimal first-pass metabolism and kidney PK findings do not create a universal hepatic-safe claim."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "initial"
+      ],
+      "sourceSections": {
+        "label": [
+          "DESCRIPTION",
+          "CLINICAL PHARMACOLOGY",
+          "Pharmacokinetics"
+        ],
+        "initial": [
+          "DESCRIPTION",
+          "CLINICAL PHARMACOLOGY",
+          "Pharmacokinetics"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": {
+        "paragraphs": [
+          "Before BPH treatment assess other urinary pathology / prostate cancer. Follow urinary symptoms / flow and BP, especially standing symptoms after initiation / escalation / restart. For hypertension assess trough BP and excessive peak effect as above. Review fall risk, medicines and need for dose changes. Trial hemodilution-related lab changes do not establish a universal CBC-monitoring schedule or a guaranteed unchanged PSA for every patient."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "initial"
+      ],
+      "sourceSections": {
+        "label": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "Information for Patients (see Patient Package Insert)",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION",
+          "PATIENT INFORMATION ABOUT"
+        ],
+        "initial": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "Information for Patients (see Patient Package Insert)",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION",
+          "PATIENT INFORMATION ABOUT"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "assertions": {
+        "paragraphs": [
+          "Take the initial 1 mg at bedtime. Avoid driving / hazardous tasks for 12 hours after the first dose, an increase or resumption after interruption; drowsiness can require additional caution. Rise carefully; sit or lie down if dizzy and report bothersome symptoms. Seek immediate help for syncope or prolonged painful erection. Tell eye surgeons about any past use. Consult before restarting after several days; do not double an uncertain dose."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "initial"
+      ],
+      "sourceSections": {
+        "label": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "Information for Patients (see Patient Package Insert)",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION",
+          "PATIENT INFORMATION ABOUT"
+        ],
+        "initial": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "Information for Patients (see Patient Package Insert)",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION",
+          "PATIENT INFORMATION ABOUT"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "practice",
+      "card": "Overdose",
+      "assertions": {
+        "paragraphs": [
+          "Seek emergency / Poison Control help for overdose or severe hypotension. Clinical care supports BP / heart rate and renal function; supine positioning while awaiting care may help if safe. Volume / vasopressor treatment belongs to medical care. High protein binding makes dialysis unlikely to help substantially."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "initial"
+      ],
+      "sourceSections": {
+        "label": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "Information for Patients (see Patient Package Insert)",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION",
+          "PATIENT INFORMATION ABOUT"
+        ],
+        "initial": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "Information for Patients (see Patient Package Insert)",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION",
+          "PATIENT INFORMATION ABOUT"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "product",
+      "card": "Representative starting product",
+      "assertions": {
+        "facts": [
+          [
+            "Product",
+            "Remedy Repack terazosin 1 mg capsule"
+          ],
+          [
+            "Route",
+            "Oral prescription capsule"
+          ],
+          [
+            "Appearance",
+            "Iron-gray opaque; TL 383 black print"
+          ],
+          [
+            "Example package",
+            "30-capsule blister · NDC 70518-0342-00"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "initial"
+      ],
+      "sourceSections": {
+        "initial": [
+          "DESCRIPTION",
+          "Information for Patients (see Patient Package Insert)",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION",
+          "PATIENT INFORMATION ABOUT",
+          "HOW SUPPLIED"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "The reviewed label regimen discusses 1 / 2 / 5 / 10 mg strengths. Actual selected packages reviewed here are 1 mg above and 5 mg (orange opaque TL 385),30-capsule blister NDC 70518-0317-00. Other strengths / manufacturers require the actual label for identification; strength reflects terazosin supplied as hydrochloride."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "initial"
+      ],
+      "sourceSections": {
+        "label": [
+          "DESCRIPTION",
+          "Information for Patients (see Patient Package Insert)",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION",
+          "PATIENT INFORMATION ABOUT",
+          "HOW SUPPLIED"
+        ],
+        "initial": [
+          "DESCRIPTION",
+          "Information for Patients (see Patient Package Insert)",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION",
+          "PATIENT INFORMATION ABOUT",
+          "HOW SUPPLIED"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Both selected repackaged products:20–25°C, protect from light / moisture and dispense in a tight light-resistant container. Follow the actual dispensing expiry. No reviewed compounded-liquid, crushing or feeding-tube stability instructions are supplied."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "initial"
+      ],
+      "sourceSections": {
+        "label": [
+          "DESCRIPTION",
+          "Information for Patients (see Patient Package Insert)",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION",
+          "PATIENT INFORMATION ABOUT",
+          "HOW SUPPLIED"
+        ],
+        "initial": [
+          "DESCRIPTION",
+          "Information for Patients (see Patient Package Insert)",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION",
+          "PATIENT INFORMATION ABOUT",
+          "HOW SUPPLIED"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    }
+  ],
+  "evidence": [
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/terazosin-teva.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/terazosin/terazosin-teva.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/854b64ff-c138-45af-9cdf-6c23323d8490.xml",
+      "sha256": "c37878ba0f8c3ad312c9b9371e65d3bcaa8f3714ec291587f780154373d38028"
+    },
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/terazosin-teva-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/terazosin/terazosin-teva-sections.json",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/854b64ff-c138-45af-9cdf-6c23323d8490.xml",
+      "sha256": "0d34995dd607773e1145c6c79c4f844262f535fb9eea38f2abbcfee747c2cf2b"
+    },
+    {
+      "sourceId": "initial",
+      "localEvidence": "/tmp/nas-drug-sources/terazosin-generic.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/terazosin/terazosin-generic.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/242589f0-0c79-4ea1-b900-10bccfec2b82.xml",
+      "sha256": "5cf9170e5012683976c39da85a48403da9ffb45cb793e507f4a1a8c0bfcb1408"
+    },
+    {
+      "sourceId": "initial",
+      "localEvidence": "/tmp/nas-drug-sources/terazosin-generic-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/terazosin/terazosin-generic-sections.json",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/242589f0-0c79-4ea1-b900-10bccfec2b82.xml",
+      "sha256": "55be0a53accdae4aab9ff82a57a6562318007a4420b751d505dfbd8860814729"
+    }
+  ],
+  "sourceDiscrepancies": [
+    "Actual primary current repackaged product5mg only; initial1mg product separately verified. Other strengths are label-regimen discussion, not claimed identified packages.",
+    "BPH20mg response evidence insufficient; hypertension above20mg lacks furtherBPbenefit/above40unstudied is not recommendationfor40mg.",
+    "No numeric hepaticadjustment supplied; renalPK/dialysisobservation doesnot replaceBP/syncope monitoring."
+  ],
+  "materialErrors": [],
+  "unresolvedMaterialGaps": [],
+  "scopeExclusions": [
+    "Other manufacturers/foreign products not reviewed; current public label presence does not prove local stock.",
+    "Off-label regimens, compounded stability/crushing/tube protocols, universal organ algorithms and individualized emergency treatment are excluded.",
+    "Pediatric/off-label terazosin and fixed hepatic-dose algorithms excluded."
+  ],
+  "verification": {
+    "schemaErrors": [],
+    "sectionIds": [
+      "indications",
+      "dosage",
+      "safety",
+      "interactions",
+      "populations",
+      "pharmacology",
+      "practice",
+      "product"
+    ],
+    "safetyCards": 4,
+    "productCards": 3,
+    "heroFacts": 3,
+    "monographSha256": "ef87326420badacf03e264ec82e150f2f24cc2a6609addc6040ce587e7c41ba9",
+    "renderedQA": "Pending parent candidate build/desktop/mobile review; no live claim.",
+    "independentReview": "Pending actual-file independent reviewer."
+  },
+  "sourceAudit": "Full selected primary supporting sections read; current metadata retained separately from historical clinical wording. No paywalled access claimed."
+}

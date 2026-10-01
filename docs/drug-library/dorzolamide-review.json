@@ -1,0 +1,504 @@
+{
+  "slug": "dorzolamide",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "A prescription 2% ophthalmic solution for elevated intraocular pressure in ocular hypertension or open-angle glaucoma. This standalone profile follows the current Bausch & Lomb single-ingredient label; dorzolamide/timolol fixed combinations require their own labeling.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Dorzolamide 2% · Bausch & Lomb full label and IFU",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical highlights and IFU revised December 2022; SPL v13 effective 20260629; API publication Jul 01, 2026. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8417d162-65a1-4266-bca7-707af1193bf3"
+    }
+  ],
+  "sourceEvidence": {
+    "label": {
+      "splVersion": "13",
+      "effectiveTime": "20260629",
+      "apiPublishedDate": "Jul 01, 2026",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/8417d162-65a1-4266-bca7-707af1193bf3.xml",
+      "supportingSections": [
+        "1 INDICATIONS AND USAGE",
+        "2 DOSAGE AND ADMINISTRATION",
+        "3 DOSAGE FORMS AND STRENGTHS",
+        "4 CONTRAINDICATIONS",
+        "5.1 Sulfonamide Hypersensitivity",
+        "5.2 Bacterial Keratitis",
+        "5.3 Corneal Endothelium",
+        "5.4 Allergic Reactions",
+        "5.5 Acute Angle-Closure Glaucoma",
+        "6.1 Clinical Trials Experience",
+        "6.2 Postmarketing Experience",
+        "7.1 Oral Carbonic Anhydrase Inhibitors",
+        "7.2 High-Dose Salicylate Therapy",
+        "8.1 Pregnancy",
+        "8.2 Lactation",
+        "8.4 Pediatric Use",
+        "8.5 Geriatric Use",
+        "8.6 Renal and Hepatic Impairment",
+        "10 OVERDOSAGE",
+        "11 DESCRIPTION",
+        "12.1 Mechanism of Action",
+        "12.3 Pharmacokinetics",
+        "13.1 Carcinogenesis, Mutagenesis, Impairment of Fertility",
+        "14 CLINICAL STUDIES",
+        "16 HOW SUPPLIED/STORAGE AND HANDLING",
+        "17 PATIENT COUNSELING INFORMATION",
+        "INSTRUCTIONS FOR USE",
+        "PACKAGE/LABEL PRINCIPAL DISPLAY PANEL"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8417d162-65a1-4266-bca7-707af1193bf3",
+      "localEvidence": "/tmp/nas-drug-sources/dorzolamide.xml",
+      "sha256": "950e68fcb4f38c9d10ae515512bad84da331057743714ecad2c02ce45c5f4311",
+      "clinicalRevision": "Clinical highlights and IFU revised December 2022; SPL v13 effective 20260629; API publication Jul 01, 2026. Clinical revision is distinct from publication. Checked October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "Full relevant supporting public primary sections read"
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Labeled use and scope",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Indications and usage",
+          "Pediatric use",
+          "SPL regulatory/marketing category"
+        ]
+      },
+      "claims": [
+        "Treatment of elevated intraocular pressure in ocular hypertension or open-angle glaucoma. It may be combined with other separately prescribed topical IOP-lowering products. Acute angle-closure glaucoma requires interventions beyond ocular hypotensive drops; this is not a standalone acute-angle-closure treatment or a demonstrated cure for optic-nerve damage."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Selected ophthalmic regimen",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Dosage and administration, route/product-specific regimens",
+          "Preparation and IFU",
+          "Warnings stress/withdrawal"
+        ]
+      },
+      "claims": [
+        [
+          "Dose",
+          "One drop in affected eye(s) three times daily. Efficacy with less frequent dosing, alone or in combination, is unestablished in this label."
+        ],
+        [
+          "Other topical eye medicines",
+          "Separate administration by at least 5 minutes."
+        ],
+        [
+          "Contact lenses",
+          "Remove soft lenses before dosing; reinsert after 15 minutes because benzalkonium chloride can be absorbed by lenses."
+        ],
+        [
+          "Technique",
+          "Wash hands; confirm intact initial safety seal. Tilt head back, form lower-lid pocket and instill one drop without touching eye/lid/other surface. Replace cap; never enlarge dropper opening."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Adjustment and product limits",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Dosage and administration, route/product-specific regimens",
+          "Preparation and IFU",
+          "Warnings stress/withdrawal"
+        ]
+      },
+      "claims": [
+        "Not recommended with severe renal impairment, CrCl <30 mL/min; no validated reduced-drop regimen substitutes for this restriction. Hepatic impairment is unstudied: use caution. Pediatric safety/effectiveness are supported by a three-month trial; the label supplies no age-specific titration or weight-based formula. No dedicated geriatric adjustment is specified. Dorzolamide/timolol is a distinct product with beta-blocker contraindications and a different regimen; it is excluded here. No swallowed/oral dorzolamide treatment regimen inferred from PK studies."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Contraindications",
+          "Warnings and precautions",
+          "Adverse reactions",
+          "Overdosage"
+        ]
+      },
+      "claims": [
+        "Dorzolamide is a sulfonamide and is systemically absorbed despite ocular delivery. Severe sulfonamide-type reactions, including Stevens-Johnson syndrome, toxic epidermal necrolysis, severe hepatic injury and blood dyscrasias, can occur; discontinue if serious reactions or hypersensitivity develop.",
+        "Contaminated multidose containers have caused bacterial keratitis. Avoid all tip contact; corneal disease or epithelial disruption increases the concern. Infection can lead to serious damage or vision loss.",
+        "Low corneal endothelial-cell counts increase corneal-edema risk; use caution and assess corneal status when relevant.",
+        "Chronic conjunctivitis or eyelid reactions may be allergic. Discontinue and have the patient evaluated before considering restart.",
+        "Acute angle closure requires additional interventions; a pressure-lowering drop should not delay urgent eye assessment."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Contraindications",
+          "Warnings and precautions",
+          "Adverse reactions",
+          "Overdosage"
+        ]
+      },
+      "claims": [
+        "Hypersensitivity to any product component. The sulfonamide warning requires clinical allergy assessment; the label does not create a blanket formal contraindication to every unrelated sulfur-containing compound."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Contraindications",
+          "Warnings and precautions",
+          "Adverse reactions",
+          "Overdosage"
+        ]
+      },
+      "claims": [
+        "The selected standalone dorzolamide label has no boxed warning. Serious sulfonamide-type reactions, eye contamination risks and the severe-renal-impairment restriction still apply."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Contraindications",
+          "Warnings and precautions",
+          "Adverse reactions",
+          "Overdosage"
+        ]
+      },
+      "claims": [
+        "Common trial effects include immediate burning/stinging/discomfort and bitter taste; superficial punctate keratitis, ocular allergy, redness, blurred vision, tearing/dryness and photophobia may occur. Uncommon systemic reports include fatigue, headache, nausea, rash and stones. Postmarketing reports include angioedema/bronchospasm, severe skin reactions, choroidal detachment after filtration surgery and dyspnea; frequencies are uncertain. Overdose may cause electrolyte imbalance, acidosis and CNS effects: seek emergency/Poison Help (1-800-222-1222). Professionals monitor electrolytes, particularly potassium, and blood pH; no home neutralization or invented antidote."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Oral carbonic anhydrase inhibitors",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Drug interactions",
+          "Warnings/precautions",
+          "Metabolism"
+        ]
+      },
+      "claims": [
+        "Concomitant oral carbonic anhydrase inhibitors, such as acetazolamide, are not recommended because systemic carbonic anhydrase effects can add. Review all glaucoma medicines; separately prescribed topical products require ≥5-minute spacing."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "High-dose salicylates",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Drug interactions",
+          "Warnings/precautions",
+          "Metabolism"
+        ]
+      },
+      "claims": [
+        "Oral carbonic anhydrase inhibitors have caused acid-base/electrolyte disturbances and toxicity interactions with high-dose salicylates. Such disturbances were not reported in dorzolamide trials, but the label advises considering the potential interaction. No unsupported low-dose-aspirin prohibition or dose-adjustment formula supplied."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Specific populations / Pregnancy / Lactation",
+          "Pediatric and geriatric use",
+          "Renal/hepatic precautions"
+        ]
+      },
+      "claims": [
+        "CrCl <30 mL/min: not studied and not recommended because parent/metabolite are primarily renally excreted. Hepatic impairment: unstudied, use caution. No validated dialysis clearance, dialysis supplement or renal reduced-frequency regimen is supplied."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Specific populations / Pregnancy / Lactation",
+          "Pediatric and geriatric use",
+          "Renal/hepatic precautions"
+        ]
+      },
+      "claims": [
+        "Pediatric efficacy and safety demonstrated in a three-month active-controlled trial; no exact pediatric minimum-age boundary is stated in the selected section, so none is invented. No overall safety/effectiveness differences were observed between older and younger patients; individual eye and organ comorbidities still matter."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Specific populations / Pregnancy / Lactation",
+          "Pediatric and geriatric use",
+          "Renal/hepatic precautions"
+        ]
+      },
+      "claims": [
+        "Adequate controlled pregnancy studies are absent; animal studies found developmental toxicity at higher systemic exposures. Individualize benefit/risk without asserting human teratogenicity or zero risk. Human-milk presence, infant effects and milk-production effects are unknown; consider maternal need and feeding benefits/risks. Rat milk data do not prove human transfer magnitude or a required milk-discard interval."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Actions / Clinical pharmacology",
+          "Mechanism",
+          "PK"
+        ]
+      },
+      "claims": [
+        "Inhibits carbonic anhydrase II in the ciliary processes, reducing bicarbonate formation and associated sodium/fluid transport, thereby decreasing aqueous-humor secretion and intraocular pressure. Elevated pressure is a risk factor for optic-nerve damage and visual-field loss."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Actions / Clinical pharmacology",
+          "Mechanism",
+          "PK"
+        ]
+      },
+      "claims": [
+        "Ocular doses enter systemic circulation. Parent binds CA-II and accumulates in RBCs; N-desethyl metabolite accumulates mainly through CA-I binding. Plasma concentrations are generally very low, protein binding about 33%. Parent and metabolite are excreted in urine. After stopping, RBC washout is nonlinear, with a slow terminal phase of about four months; this is not a dosing interval or guaranteed duration of clinical IOP lowering."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Patient counseling/IFU",
+          "Warnings and monitoring",
+          "Dose reassessment"
+        ]
+      },
+      "claims": [
+        "Assess IOP response, prescribed frequency, adherence, corneal disease/endothelial concerns, allergy symptoms, renal suitability and interacting oral drugs. Follow the ophthalmologist’s glaucoma/ocular-hypertension examination plan; no universal IOP target, visit interval or routine laboratory schedule inferred from trials."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Patient counseling/IFU",
+          "Warnings and monitoring",
+          "Dose reassessment"
+        ]
+      },
+      "claims": [
+        "Use only in the prescribed eye(s), never share drops, keep tip away from eye/lids/surfaces and do not enlarge its opening. Remove soft contact lenses, observe 15-minute reinsertion and 5-minute other-drop spacing. Stop and report conjunctivitis/eyelid reactions; seek prompt advice after eye surgery, injury or infection about continued container use. Severe skin or systemic allergy symptoms need immediate assessment."
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative Bausch & Lomb product",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Description / strengths",
+          "How supplied/storage",
+          "SPL product panels/marketing category"
+        ]
+      },
+      "claims": [
+        [
+          "Strength / route",
+          "Sterile 2% ophthalmic solution, 20 mg/mL dorzolamide equivalent."
+        ],
+        [
+          "Selected bottle",
+          "10 mL, NDC 24208-485-10; white LDPE bottle with controlled drop tip and orange cap."
+        ],
+        [
+          "Status",
+          "Prescription standalone product, ANDA090143; label listing does not prove current stock."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Description / strengths",
+          "How supplied/storage",
+          "SPL product panels/marketing category"
+        ]
+      },
+      "claims": [
+        [
+          "Salt distinction",
+          "20 mg/mL dorzolamide equals 22.3 mg/mL dorzolamide hydrochloride."
+        ],
+        [
+          "Preservative",
+          "Benzalkonium chloride 0.0075% in this selected product; do not infer preservative-free status."
+        ],
+        [
+          "Package scope",
+          "Full PI also lists 5 mL fill in 7.5 mL bottle, NDC 24208-485-05; current SPL product panel focuses on 10 mL. No stock inference."
+        ],
+        [
+          "Excluded combinations",
+          "Dorzolamide/timolol and compounded combinations require their own dosing, contraindications and regulatory review."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Description / strengths",
+          "How supplied/storage",
+          "SPL product panels/marketing category"
+        ]
+      },
+      "claims": [
+        "Store at 20–25°C and protect from light. Selected Bausch & Lomb IFU permits use after opening until the bottle expiration date; do not substitute an invented universal 28-day rule or transplant this to every manufacturer. Safely discard expired/unneeded product and protect the sterile drop tip."
+      ]
+    },
+    {
+      "section": "hero/essential",
+      "card": "Scope, essential safety and three tuple facts",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Indications",
+        "Strengths",
+        "Safety/counseling"
+      ],
+      "claims": [
+        "A prescription 2% ophthalmic solution for elevated intraocular pressure in ocular hypertension or open-angle glaucoma. This standalone profile follows the current Bausch & Lomb single-ingredient label; dorzolamide/timolol fixed combinations require their own labeling.",
+        "Stop and seek immediate assessment for severe rash, blistering, airway swelling or breathing difficulty. Avoid dropper contamination. New eye pain, infection, injury or surgery requires clinician advice about continued use. Severe renal impairment changes suitability.",
+        [
+          "Therapeutic class",
+          "Carbonic anhydrase II inhibitor"
+        ],
+        [
+          "Representative strength",
+          "2% · 20 mg/mL dorzolamide"
+        ],
+        [
+          "Selected regimen",
+          "One drop in affected eye(s) three times daily"
+        ]
+      ]
+    }
+  ],
+  "materialErrors": [],
+  "gaps": [
+    {
+      "material": false,
+      "topic": "Pediatric age boundary",
+      "finding": "Selected8.4states pediatric efficacy/safety3monthtrial without exact minimum age.",
+      "resolution": "No invented neonatal/age-limit or weight formula; exact ophthalmology review."
+    },
+    {
+      "material": false,
+      "topic": "Package panel vs full PI",
+      "finding": "FullPI lists5/10mL;currentSPL productpanel focuses10mL.",
+      "resolution": "Representative10mL,5mLidentified aslabel listing only;nostockclaim."
+    },
+    {
+      "material": false,
+      "topic": "Opening interval",
+      "resolution": "BauschfullPI/IFUuntilbottleexpiry;notuniversal28dayorothermanufacturer extrapolation."
+    },
+    {
+      "material": false,
+      "topic": "Combination scope",
+      "resolution": "Standaloneonly;timolol fixedcombination excluded without transplanting beta-blocker restrictions."
+    },
+    {
+      "material": false,
+      "topic": "Organ/reproductive limits",
+      "resolution": "CrCl<30notrecommended;hepaticcaution;nohumanmilkmagnitude/severeliverdose/dialysis clearance inferred."
+    }
+  ],
+  "exclusions": [
+    "Unverified other manufacturers/combination and non-U.S. regimens; present-stock claims; universal lab/taper/stress-dose or home-overdose algorithms."
+  ],
+  "validation": {
+    "schema": "validateMonograph returned [] October 1, 2026; exact eight ordered sections, four Safety cards, three Product cards, three hero tuple facts.",
+    "renderedPage": "Pending parent natural390px integration QA; clinical data designed for intrinsic width≤350px"
+  },
+  "monographSha256": "17bae2197e9d3998d95101342ec30d27561ddf68b9fa728a61d3c1d7d577797b",
+  "sourceInterpretationNotes": [
+    "Clinical revision/IFU/footer dates differ from SPL effectiveTime and API publication; metadata contexts explicitly separated.",
+    "Original focused summaries; relevant full current public primary supporting sections read, not snippets. No invented/paywalled references or current-stock inference.",
+    "Approved, OTC-monograph and unapproved-product status are distinguished; no cross-route/regimen equivalence inferred."
+  ]
+}
