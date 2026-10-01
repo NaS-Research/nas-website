@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-01",
+  "status": "content_commit_remote_verified",
+  "branch": "audit/rxprep-content-2026-09-24",
+  "remote": "https://github.com/NaS-Research/nas-website.git",
+  "baseCommit": "6fcadae0392ab73523e9d53b3cc3c103a07d3a1b",
+  "contentCommit": "d480c93ce20f07ca16c74b6ebfd9770daa22052a",
+  "remoteHashVerified": "d480c93ce20f07ca16c74b6ebfd9770daa22052a",
+  "module": "parenteral-nutrition-calculations",
+  "verifiedAddedSections": {
+    "dextrose-gir": [
+      "Allocate a stated nonprotein calorie goal",
+      "Keep the two source delivery limits distinct",
+      "Preserve dextrose grams when changing stock",
+      "Calculate a mixed concentration from total grams",
+      "Use the stated substrate energy value"
+    ],
+    "lipid-energy-ledger": [
+      "Distinguish source emulsion energy from food fat",
+      "Calculate a weekly average without changing the schedule",
+      "Subtract against the explicit calorie convention"
+    ],
+    "stock-solutions-additives": [
+      "Carry amino acid grams across source strengths",
+      "Account for sodium supplied with acetate",
+      "Account for potassium supplied with phosphate",
+      "Separate source screening arithmetic from compatibility proof",
+      "Keep corrected calcium as an exercise estimate",
+      "Match calcium and mass-based additive units"
+    ],
+    "rate-final-audit": [
+      "Read both percentages and the delivered volume",
+      "Convert a calorie requirement into final solution volume",
+      "Use all calories in a total-energy percentage",
+      "Reconcile delivery and quantity sufficient to final volume"
+    ]
+  },
+  "wholeModuleVerified": false,
+  "source": {
+    "chapter": 11,
+    "printedPages": [
+      153,
+      168
+    ],
+    "pdfPages": [
+      161,
+      176
+    ],
+    "relevantTextTablesAndFiguresRead": true,
+    "currentTurnPagesReread": [
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      172,
+      173,
+      174,
+      175,
+      176
+    ],
+    "wholeChapterReadEvidence": "parenteral-nutrition-calculations-review.json",
+    "sourceExamples": "Earlier record independently recalculated all 54 Chapter 11 exercises in 58 checks; reused without adding another source-example count."
+  },
+  "changes": {
+    "newModules": 0,
+    "newLessons": 0,
+    "newTeachingSections": 18,
+    "newFigures": 0,
+    "newEmbeddedChecks": 0,
+    "newOriginalBankItems": 30,
+    "unchangedPriorBankItems": 142,
+    "currentModuleLessons": 9,
+    "currentModuleFigures": 9,
+    "currentModuleEmbeddedChecks": 9,
+    "currentModuleBankItems": 172
+  },
+  "validation": {
+    "independentNewArithmetic": 61,
+    "newSourceExampleCount": 0,
+    "prior54SourceExerciseEvidenceRetained": true,
+    "productionBuild": {
+      "passed": true,
+      "staticPages": 567,
+      "scope": "Exact two-clinical-file candidate"
+    },
+    "all30NewItemsRenderedAndGradedAtDesktopMobile": true,
+    "all18NewTeachingSectionsVisuallyInspectedAtMobile": true,
+    "fourPreservedDiagramsInspectedAtDesktopMobile": true,
+    "fourDistinctAttemptsAndIncorrectRemediation": true,
+    "LibraryDextroseTopicSearchAndStableLink": true,
+    "noOverflow390And320": true,
+    "focusedAssessmentAuditPassed": true,
+    "all142PriorBankObjectsUnchanged": true,
+    "exactNineFileStagingGuard": true
+  },
+  "evidence": "parenteral-nutrition-delivery-review.json",
+  "completedChecklistEntries": 14,
+  "chapterAndModuleClosure": false,
+  "nextStartingPoint": "Complete retained content and question reconciliation in the existing PN calculation module. Start with body-size/weight dependencies at Chapter 12 printed 169-171 / PDF 177-179 and propofol at Chapter 53 printed 716 / PDF 724; finish all retained lesson, figure, check, bank and cumulative items. Resolve historical Mifflin/indirect-calorimetry source boundaries and other clinical claims. Whole PN calculation module, related PN/EN/fluid modules and checklist entry 15 remain reviewing; completed checklist count stays 14.",
+  "production": "not verified",
+  "receiptCommit": "Following Git documentation commit; no self-referential hash."
+}

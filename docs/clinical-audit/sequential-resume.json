@@ -101,10 +101,10 @@
     "branch": "audit/rxprep-content-2026-09-24",
     "baseCommit": "b38faea07f3cd78f04c513cb6e842bb8f6fccdbc",
     "remoteVerifiedAtStart": true,
-    "commit": "8027bf41d320493c7666f252d3f45512caf8d8b1",
-    "push": "verified: seven new calculation modules and three sections in the existing PN module pushed to the audit branch",
+    "commit": "d480c93ce20f07ca16c74b6ebfd9770daa22052a",
+    "push": "verified: seven new calculation modules and scoped PN calculation additions pushed to the audit branch",
     "production": "not verified",
-    "receipt": "sequential-release-pn-energy-2026-10-01.json",
+    "receipt": "sequential-release-pn-delivery-2026-10-01.json",
     "contentCommits": [
       "df630290c5abc8cd1dadeb5574fa0cec7c0ca582",
       "30d14a7e36d030e32340ff04a6ef28971253a060",
@@ -114,7 +114,8 @@
       "5fac513a015e67b87482ffec90a54095e726769d",
       "558db5dcd37b4055175745932c4e5759edfd919e",
       "c609559a5ddb0b5a2aa31428bff579d89a9130de",
-      "8027bf41d320493c7666f252d3f45512caf8d8b1"
+      "8027bf41d320493c7666f252d3f45512caf8d8b1",
+      "d480c93ce20f07ca16c74b6ebfd9770daa22052a"
     ]
   },
   "openIssues": [
@@ -123,7 +124,7 @@
     "Pending unrelated clinical edits are preserved and excluded from this pass.",
     "Audit-branch cumulative bank has 14 pre-existing duplicate prompt groups (83 repeated instances); new items are unique. Resolve in the associated chapter/module reviews.",
     "Global structural audit observed 34 pre-existing typographic violations in unchanged glaucoma, allergic-rhinitis and common-ear modules; retain for their chronological reviews. Focused PN audit passed.",
-    "PN fluid, energy and nitrogen lessons plus 18 added dextrose/lipid/additive/order calculation sections verified. Whole retained module and corresponding clinical modules remain reviewing; keep checklist count 14. Mifflin/calorimetry provenance remains unresolved despite no extracted-text search hits. Book weight formulas and exact propofol energy value located for the next reconciliation."
+    "PN fluid, energy and nitrogen lessons plus 18 added dextrose/lipid/additive/order calculation sections verified and pushed. Whole retained module and corresponding clinical modules remain reviewing; keep checklist count 14. Mifflin/calorimetry provenance remains unresolved despite no extracted-text search hits. Book weight formulas and exact propofol energy value located for the next reconciliation."
   ],
   "progressSnapshot": {
     "date": "2026-10-01",
@@ -144,10 +145,11 @@
     },
     "interpretation": "Count-based snapshots include preserved historical flags, not an independent recheck of every earlier module/chapter. Chapter sizes vary. Working and committed ledgers differ because older unfinished corrections and three additional modules remain unstaged. Seven newly verified modules and fourteen checklist entries add partial chapter coverage, not new full-chapter closures."
   },
-  "lastVerifiedLogicalUnit": "parenteral-nutrition-calculations: caloric-needs and nitrogen-intake-ratios",
+  "lastVerifiedLogicalUnit": "parenteral-nutrition-calculations: 18 added delivery/additive/order sections",
   "lastVerifiedSections": [
-    "caloric-needs",
-    "nitrogen-intake-ratios"
-  ],
-  "pendingLogicalUnit": "parenteral-nutrition-calculations#delivery-additives-orders"
+    "dextrose-gir: five added sections",
+    "lipid-energy-ledger: three added sections",
+    "stock-solutions-additives: six added sections",
+    "rate-final-audit: four added sections"
+  ]
 }
