@@ -1,0 +1,47 @@
+{
+  "date": "2026-09-30",
+  "branch": "audit/rxprep-content-2026-09-24",
+  "remote": "origin",
+  "status": "content_commits_pushed",
+  "units": [
+    {
+      "commit": "df630290c5abc8cd1dadeb5574fa0cec7c0ca582",
+      "scope": "Chapter 1 quick-reference introduction plus foundational conversions and rounding",
+      "pushVerified": true
+    },
+    {
+      "commit": "30d14a7e36d030e32340ff04a6ef28971253a060",
+      "scope": "Chapter 1 checklist percentage/ratio strengths, ppm/ppb, specific gravity; scoped PN concentration question clarifications",
+      "pushVerified": true
+    }
+  ],
+  "remoteContentHeadAtReceiptCreation": "30d14a7e36d030e32340ff04a6ef28971253a060",
+  "receiptCommit": "This JSON is committed separately after the successful content pushes. Find its receipt commit in Git history; the content hash above is not claimed to be the repository HEAD after this receipt.",
+  "validation": {
+    "source": "Relevant book pages read as text and visually; teaching, original questions and worked examples re-compared with the source.",
+    "arithmetic": 117,
+    "arithmeticNote": "38 conversion checks plus 79 concentration/retained PN checks; all passed.",
+    "structural": "Focused conversion, concentration and affected PN assessment audits passed.",
+    "build": "Both exact scoped production candidates passed; latest generated 562 pages.",
+    "desktopMobile": "Guide, both new modules, original figures, assessments and working Library checked; no JS page errors or horizontal overflow.",
+    "scope": "Initial unrelated edits preserved; only intended transformations staged, staged diff and semantic ledger scope checks passed."
+  },
+  "bookCoverage": {
+    "chapter1": "still reviewing",
+    "formulaChecklistEntriesVerified": 8,
+    "nextEntry": "Dilution and concentration",
+    "dependencyChapter": 10,
+    "nextPrintedPage": 136,
+    "nextPdfPage": 144,
+    "limits": "Whole checklist, Chapter 1, Chapters 9-10 and the full book remain incomplete."
+  },
+  "production": {
+    "status": "not verified",
+    "note": "An audit-branch push is not a main-branch merge or verified production publication. No merge, branch protection or deployment-infrastructure change performed."
+  },
+  "openIssues": [
+    "Prior unrelated clinical edits remain excluded from these content commits.",
+    "Historical outside-source evidence retains its original status and dates.",
+    "Fourteen pre-existing cumulative duplicate-prompt groups with 83 repeated instances remain for their associated topic audits."
+  ]
+}
