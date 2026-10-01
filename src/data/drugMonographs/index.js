@@ -259,6 +259,16 @@ import { terbinafine } from "./terbinafine.js";
 import { isotretinoin } from "./isotretinoin.js";
 import { insulin_isophane } from "./insulin-isophane.js";
 import { calcium_phosphate_cholecalciferol } from "./calcium-phosphate-cholecalciferol.js";
+import { insulinDetemir } from "./insulin-detemir.js";
+import { letrozole } from "./letrozole.js";
+import { sodiumFluoride } from "./sodium-fluoride.js";
+import { acetaminophenButalbitalCaffeine } from "./acetaminophen-butalbital-caffeine.js";
+import { ciclopirox } from "./ciclopirox.js";
+import { cyproheptadine } from "./cyproheptadine.js";
+import { amiodarone } from "./amiodarone.js";
+import { ethinylEstradiolNorelgestromin } from "./ethinyl-estradiol-norelgestromin.js";
+import { desogestrel_ethinyl_estradiol } from "./desogestrel-ethinyl-estradiol.js";
+import { chlorhexidine } from "./chlorhexidine.js";
 
 export const reviewedDrugMonographs = {
   "atorvastatin": atorvastatin,
@@ -521,4 +531,14 @@ export const reviewedDrugMonographs = {
   "isotretinoin": isotretinoin,
   "insulin-isophane": insulin_isophane,
   "calcium-phosphate-cholecalciferol": calcium_phosphate_cholecalciferol,
+  "insulin-detemir": insulinDetemir,
+  "letrozole": letrozole,
+  "sodium-fluoride": sodiumFluoride,
+  "acetaminophen-butalbital-caffeine": acetaminophenButalbitalCaffeine,
+  "ciclopirox": ciclopirox,
+  "cyproheptadine": cyproheptadine,
+  "amiodarone": amiodarone,
+  "ethinyl-estradiol-norelgestromin": ethinylEstradiolNorelgestromin,
+  "desogestrel-ethinyl-estradiol": desogestrel_ethinyl_estradiol,
+  "chlorhexidine": chlorhexidine,
 };

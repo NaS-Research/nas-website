@@ -1,0 +1,888 @@
+{
+  "drug": "insulin-detemir",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "reviewScope": "Retained U.S. U-100 labeling and FDA June 2026 status list",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Levemir · Retained full prescribing information and patient instructions",
+      "publisher": "DailyMed / A-S Medication Solutions",
+      "note": "Current SPL version 24, effective 2024-10-09. ",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=82192527-99aa-4b53-8ce9-9173668d309c"
+    },
+    {
+      "id": "status",
+      "title": "CDER therapeutic/discontinued biologic products · June 2026 list",
+      "publisher": "U.S. FDA",
+      "url": "https://www.fda.gov/media/186099/download",
+      "note": "Current June 2026 list, discontinued-product page 21 of 30 (PDF page 131); retrieved October 1, 2026. Marketing status is separate from clinical labeling."
+    }
+  ],
+  "labelMetadata": [
+    {
+      "sourceId": "label",
+      "product": "detemir-levemir",
+      "setid": "82192527-99aa-4b53-8ce9-9173668d309c",
+      "version": "24",
+      "effectiveTime": "20241009",
+      "publishedDate": "Current public SPL retrieved October1,2026; no independent publication date claimed",
+      "clinicalRevisionWording": [
+        "Revised: 12/2022",
+        "Revised: 07/2022"
+      ],
+      "checked": "2026-10-01",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/82192527-99aa-4b53-8ce9-9173668d309c.xml",
+      "xmlSha256": "c3a84e9ee895f87b7a9e084e43757ae382249d553fe7aa9a114b8c3c6f2fb42d",
+      "marketingAuthorization": [
+        {
+          "category": "BLA",
+          "application": "BLA021536"
+        },
+        {
+          "category": "BLA",
+          "application": "BLA021536"
+        }
+      ],
+      "scope": "Actual selected public product labeling; SPL publication is distinguished from clinical revision, approval chronology and local stock."
+    },
+    {
+      "sourceId": "status",
+      "url": "https://www.fda.gov/media/186099/download",
+      "checked": "2026-10-01",
+      "version": "June2026 FDA therapeutic/discontinued biologic list",
+      "access": "Actual full140pagePDF downloaded; frontmatter and exact discontinued productpage read. Marketingstatus not licensewithdrawal. Manufacturer currentSPLAPI404; available actual repackagedSPL is clinical reference, not proof of currentstock."
+    }
+  ],
+  "reviewedSourceSections": {
+    "label": [
+      "1 INDICATIONS AND USAGE",
+      "2 DOSAGE AND ADMINISTRATION",
+      "2.1 Important Administration Instructions",
+      "2.2 General Dosing Instructions",
+      "2.3 Starting Dose in Insulin Naïve Patients",
+      "2.4 Switching to LEVEMIR from Other Insulin Therapies",
+      "3 DOSAGE FORMS AND STRENGTHS",
+      "4 CONTRAINDICATIONS",
+      "5 WARNINGS AND PRECAUTIONS",
+      "5.1 Never Share a LEVEMIR FlexPen, Needle, or Insulin Syringe between Patients",
+      "5.2 Hyperglycemia or Hypoglycemia with Changes in Insulin Regimen",
+      "5.3 Hypoglycemia",
+      "5.4 Hypoglycemia Due to Medication Errors",
+      "5.5 Hypersensitivity Reactions",
+      "5.6 Hypokalemia",
+      "5.7 Fluid Retention and Heart Failure with Concomitant Use of PPAR-gamma Agonists",
+      "6 ADVERSE REACTIONS",
+      "6.1 Clinical Trial Experience",
+      "6.2 Postmarketing Experience",
+      "7 DRUG INTERACTIONS",
+      "8 USE IN SPECIFIC POPULATIONS",
+      "8.1 Pregnancy",
+      "8.2 Lactation",
+      "8.4 Pediatric Use",
+      "8.5 Geriatric Use",
+      "8.6 Renal Impairment",
+      "8.7 Hepatic Impairment",
+      "10 OVERDOSAGE",
+      "11 DESCRIPTION",
+      "12 CLINICAL PHARMACOLOGY",
+      "12.1 Mechanism of Action",
+      "12.2 Pharmacodynamics",
+      "12.3 Pharmacokinetics",
+      "13 NONCLINICAL TOXICOLOGY",
+      "13.1 Carcinogenesis, Mutagenesis, Impairment of Fertility",
+      "14 CLINICAL STUDIES",
+      "14.1 Clinical Studies in Adult Patients with Type 1 Diabetes",
+      "14.2 Clinical Studies in Pediatric Patients with Type 1 Diabetes",
+      "14.3 Clinical Studies in Adult Patients with Type 2 Diabetes",
+      "16 HOW SUPPLIED/STORAGE AND HANDLING",
+      "17 PATIENT COUNSELING INFORMATION",
+      "Patient Information",
+      "insulin detemir"
+    ],
+    "status": [
+      "June2026 frontmatter: discontinuedfrommarketing butstilllicensed distinction",
+      "Discontinuedlist page21of30/PDFpage131: Levemirvial12/31/2024,FlexPen4/1/2024,otherhistoricalpresentations"
+    ]
+  },
+  "assertionToSourceMap": [
+    {
+      "section": "indications",
+      "card": "Labeled clinical use",
+      "assertions": {
+        "paragraphs": [
+          "The retained label covers improvement of glycemic control in adults and pediatric patients with diabetes mellitus. Pediatric support includes ages 2–17 with type 1 diabetes. It is not recommended for diabetic ketoacidosis; in type 1 diabetes it must accompany rapid/short-acting insulin, not replace all insulin."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "1 INDICATIONS AND USAGE",
+          "4 CONTRAINDICATIONS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "5.1 Never Share a LEVEMIR FlexPen, Needle, or Insulin Syringe between Patients",
+          "5.2 Hyperglycemia or Hypoglycemia with Changes in Insulin Regimen",
+          "5.3 Hypoglycemia",
+          "5.4 Hypoglycemia Due to Medication Errors",
+          "5.5 Hypersensitivity Reactions",
+          "5.6 Hypokalemia",
+          "5.7 Fluid Retention and Heart Failure with Concomitant Use of PPAR-gamma Agonists"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "indications",
+      "card": "Current U.S. status",
+      "assertions": {
+        "paragraphs": [
+          "FDA’s June 2026 discontinued biologic list includes Levemir U-100 vial added December 31, 2024 and FlexPen added April 1, 2024. Other historical presentations have separate entries. The list can include still-licensed products discontinued from marketing; it does not establish a safety-based withdrawal or available local stock. Arrange replacement with the prescriber/pharmacist rather than stop basal insulin."
+        ]
+      },
+      "sourceIds": [
+        "status",
+        "label"
+      ],
+      "sourceSections": {
+        "status": [
+          "June2026 frontmatter: discontinuedfrommarketing butstilllicensed distinction",
+          "Discontinuedlist page21of30/PDFpage131: Levemirvial12/31/2024,FlexPen4/1/2024,otherhistoricalpresentations"
+        ],
+        "label": [
+          "1 INDICATIONS AND USAGE",
+          "4 CONTRAINDICATIONS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "5.1 Never Share a LEVEMIR FlexPen, Needle, or Insulin Syringe between Patients",
+          "5.2 Hyperglycemia or Hypoglycemia with Changes in Insulin Regimen",
+          "5.3 Hypoglycemia",
+          "5.4 Hypoglycemia Due to Medication Errors",
+          "5.5 Hypersensitivity Reactions",
+          "5.6 Hypokalemia",
+          "5.7 Fluid Retention and Heart Failure with Concomitant Use of PPAR-gamma Agonists"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "dosage",
+      "card": "Retained starting regimens",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Setting",
+            "Label starting framework"
+          ],
+          "rows": [
+            [
+              "Insulin-naïve type 1",
+              "Detemir about one-third to one-half of total daily insulin; remainder short-acting pre-meal insulin. Initial TOTAL daily insulin may be estimated at 0.2–0.4 units/kg"
+            ],
+            [
+              "Type 2 inadequately controlled on oral agents/GLP-1 therapy",
+              "10 units or 0.1–0.2 units/kg; once daily evening or divided twice daily"
+            ],
+            [
+              "Once daily timing",
+              "Evening meal or bedtime"
+            ],
+            [
+              "Twice daily timing",
+              "Evening dose with evening meal, bedtime, or twelve hours after morning dose"
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Important Administration Instructions",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "7 DRUG INTERACTIONS",
+          "8.4 Pediatric Use",
+          "8.6 Renal Impairment",
+          "8.7 Hepatic Impairment",
+          "10 OVERDOSAGE",
+          "14.2 Clinical Studies in Pediatric Patients with Type 1 Diabetes",
+          "2.2 General Dosing Instructions",
+          "2.3 Starting Dose in Insulin Naïve Patients",
+          "2.4 Switching to LEVEMIR from Other Insulin Therapies",
+          "8 USE IN SPECIFIC POPULATIONS",
+          "8.1 Pregnancy",
+          "8.2 Lactation",
+          "8.5 Geriatric Use",
+          "12 CLINICAL PHARMACOLOGY",
+          "12.1 Mechanism of Action",
+          "12.2 Pharmacodynamics",
+          "12.3 Pharmacokinetics"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and adjustment",
+      "assertions": {
+        "paragraphs": [
+          "Inject subcutaneously in thigh, upper arm or abdomen; rotate within the region and avoid abnormal lipodystrophy/amyloid sites. Use only clear/colorless solution. Do not mix or dilute, administer IV or use an insulin pump. Adjust for glucose goals, meal/activity changes, illness, interacting drugs and renal/hepatic function under supervision; no universal daily maximum or missed-dose algorithm is supplied."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Important Administration Instructions",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "7 DRUG INTERACTIONS",
+          "8.4 Pediatric Use",
+          "8.6 Renal Impairment",
+          "8.7 Hepatic Impairment",
+          "10 OVERDOSAGE",
+          "14.2 Clinical Studies in Pediatric Patients with Type 1 Diabetes",
+          "2.2 General Dosing Instructions",
+          "2.3 Starting Dose in Insulin Naïve Patients",
+          "2.4 Switching to LEVEMIR from Other Insulin Therapies",
+          "8 USE IN SPECIFIC POPULATIONS",
+          "8.1 Pregnancy",
+          "8.2 Lactation",
+          "8.5 Geriatric Use",
+          "12 CLINICAL PHARMACOLOGY",
+          "12.1 Mechanism of Action",
+          "12.2 Pharmacodynamics",
+          "12.3 Pharmacokinetics"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "dosage",
+      "card": "Switching direction matters",
+      "assertions": {
+        "paragraphs": [
+          "The retained label says conversion FROM glargine or NPH TO detemir can be unit-to-unit with recommended adjustments/monitoring; some type 2 patients need more detemir than NPH. That does not validate the reverse switch to every replacement insulin after discontinuation. Verify the exact new product/strength and clinician’s plan. FlexPen’s one-unit increments and device delivery limit are device features, not a clinical dose ceiling."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Important Administration Instructions",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "7 DRUG INTERACTIONS",
+          "8.4 Pediatric Use",
+          "8.6 Renal Impairment",
+          "8.7 Hepatic Impairment",
+          "10 OVERDOSAGE",
+          "14.2 Clinical Studies in Pediatric Patients with Type 1 Diabetes",
+          "2.2 General Dosing Instructions",
+          "2.3 Starting Dose in Insulin Naïve Patients",
+          "2.4 Switching to LEVEMIR from Other Insulin Therapies",
+          "8 USE IN SPECIFIC POPULATIONS",
+          "8.1 Pregnancy",
+          "8.2 Lactation",
+          "8.5 Geriatric Use",
+          "12 CLINICAL PHARMACOLOGY",
+          "12.1 Mechanism of Action",
+          "12.2 Pharmacodynamics",
+          "12.3 Pharmacokinetics"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Regimen or site changes can cause hypoglycemia or hyperglycemia; monitor more frequently when changing to healthy skin from abnormal injection sites. Severe hypoglycemia can cause seizures/death and impair driving; awareness may be reduced with neuropathy, recurrent episodes or beta blockade. Insulin shifts potassium intracellularly and can cause dangerous hypokalemia. Serious allergy/anaphylaxis can occur. TZD/PPAR-gamma therapy with insulin can cause fluid retention/heart failure. Check the label before every injection; never share devices even with a new needle."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "4 CONTRAINDICATIONS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "5.5 Hypersensitivity Reactions",
+          "6 ADVERSE REACTIONS",
+          "5.1 Never Share a LEVEMIR FlexPen, Needle, or Insulin Syringe between Patients",
+          "5.2 Hyperglycemia or Hypoglycemia with Changes in Insulin Regimen",
+          "5.3 Hypoglycemia",
+          "5.4 Hypoglycemia Due to Medication Errors",
+          "5.6 Hypokalemia",
+          "5.7 Fluid Retention and Heart Failure with Concomitant Use of PPAR-gamma Agonists",
+          "6.1 Clinical Trial Experience",
+          "6.2 Postmarketing Experience"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Do not use during an episode of hypoglycemia or with hypersensitivity to insulin detemir or an excipient, including prior anaphylaxis."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "4 CONTRAINDICATIONS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "5.5 Hypersensitivity Reactions",
+          "6 ADVERSE REACTIONS",
+          "5.1 Never Share a LEVEMIR FlexPen, Needle, or Insulin Syringe between Patients",
+          "5.2 Hyperglycemia or Hypoglycemia with Changes in Insulin Regimen",
+          "5.3 Hypoglycemia",
+          "5.4 Hypoglycemia Due to Medication Errors",
+          "5.6 Hypokalemia",
+          "5.7 Fluid Retention and Heart Failure with Concomitant Use of PPAR-gamma Agonists",
+          "6.1 Clinical Trial Experience",
+          "6.2 Postmarketing Experience"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "The retained selected label has no boxed warning. Severe hypoglycemia, potassium disturbances and product/device errors remain major risks."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "4 CONTRAINDICATIONS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "5.5 Hypersensitivity Reactions",
+          "6 ADVERSE REACTIONS",
+          "5.1 Never Share a LEVEMIR FlexPen, Needle, or Insulin Syringe between Patients",
+          "5.2 Hyperglycemia or Hypoglycemia with Changes in Insulin Regimen",
+          "5.3 Hypoglycemia",
+          "5.4 Hypoglycemia Due to Medication Errors",
+          "5.6 Hypokalemia",
+          "5.7 Fluid Retention and Heart Failure with Concomitant Use of PPAR-gamma Agonists",
+          "6.1 Clinical Trial Experience",
+          "6.2 Postmarketing Experience"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Hypoglycemia is the most common insulin reaction. Other reported effects include injection-site reactions, allergy, rash/pruritus and lipodystrophy; localized cutaneous amyloidosis has been reported. Rates depend on regimen and trial definitions and are not directly comparable across insulin products."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "4 CONTRAINDICATIONS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "5.5 Hypersensitivity Reactions",
+          "6 ADVERSE REACTIONS",
+          "5.1 Never Share a LEVEMIR FlexPen, Needle, or Insulin Syringe between Patients",
+          "5.2 Hyperglycemia or Hypoglycemia with Changes in Insulin Regimen",
+          "5.3 Hypoglycemia",
+          "5.4 Hypoglycemia Due to Medication Errors",
+          "5.6 Hypokalemia",
+          "5.7 Fluid Retention and Heart Failure with Concomitant Use of PPAR-gamma Agonists",
+          "6.1 Clinical Trial Experience",
+          "6.2 Postmarketing Experience"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "interactions",
+      "card": "Glucose-lowering and opposing medicines",
+      "assertions": {
+        "paragraphs": [
+          "Other antidiabetic agents, ACE inhibitors/ARBs and selected antimicrobials can increase hypoglycemia risk. Corticosteroids, some antipsychotics, thyroid hormones, sympathomimetics and hormonal medicines can reduce glucose-lowering effect. Review the actual full interaction list; adjustments and increased monitoring may be needed."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "5 WARNINGS AND PRECAUTIONS",
+          "7 DRUG INTERACTIONS",
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Important Administration Instructions",
+          "2.2 General Dosing Instructions",
+          "2.3 Starting Dose in Insulin Naïve Patients",
+          "2.4 Switching to LEVEMIR from Other Insulin Therapies",
+          "5.1 Never Share a LEVEMIR FlexPen, Needle, or Insulin Syringe between Patients",
+          "5.2 Hyperglycemia or Hypoglycemia with Changes in Insulin Regimen",
+          "5.3 Hypoglycemia",
+          "5.4 Hypoglycemia Due to Medication Errors",
+          "5.5 Hypersensitivity Reactions",
+          "5.6 Hypokalemia",
+          "5.7 Fluid Retention and Heart Failure with Concomitant Use of PPAR-gamma Agonists"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "interactions",
+      "card": "Bidirectional effects and masking",
+      "assertions": {
+        "paragraphs": [
+          "Alcohol, beta blockers, clonidine and lithium can increase or decrease glucose lowering; pentamidine may cause hypoglycemia then hyperglycemia. Beta blockers and other antiadrenergic medicines can blunt warning symptoms. TZDs add fluid-retention/failure risk; their reduction/discontinuation may be considered if failure develops."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "5 WARNINGS AND PRECAUTIONS",
+          "7 DRUG INTERACTIONS",
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Important Administration Instructions",
+          "2.2 General Dosing Instructions",
+          "2.3 Starting Dose in Insulin Naïve Patients",
+          "2.4 Switching to LEVEMIR from Other Insulin Therapies",
+          "5.1 Never Share a LEVEMIR FlexPen, Needle, or Insulin Syringe between Patients",
+          "5.2 Hyperglycemia or Hypoglycemia with Changes in Insulin Regimen",
+          "5.3 Hypoglycemia",
+          "5.4 Hypoglycemia Due to Medication Errors",
+          "5.5 Hypersensitivity Reactions",
+          "5.6 Hypokalemia",
+          "5.7 Fluid Retention and Heart Failure with Concomitant Use of PPAR-gamma Agonists"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Published pregnancy/postmarketing data have not identified a developmental-risk signal, and the randomized type 1 pregnancy study found no clear additional risk; this does not establish zero risk. Poor glucose control itself harms mother/fetus. Exogenous insulin products including detemir enter milk; no published infant adverse-reaction reports are identified, while milk-production effects are unknown. Consider maternal need, feeding benefits and changing insulin requirements."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "8.1 Pregnancy",
+          "8.2 Lactation",
+          "8.4 Pediatric Use",
+          "8.5 Geriatric Use",
+          "8.6 Renal Impairment",
+          "8.7 Hepatic Impairment",
+          "10 OVERDOSAGE",
+          "14.2 Clinical Studies in Pediatric Patients with Type 1 Diabetes",
+          "2.1 Important Administration Instructions",
+          "2.2 General Dosing Instructions",
+          "2.3 Starting Dose in Insulin Naïve Patients",
+          "2.4 Switching to LEVEMIR from Other Insulin Therapies",
+          "8 USE IN SPECIFIC POPULATIONS",
+          "12 CLINICAL PHARMACOLOGY",
+          "12.1 Mechanism of Action",
+          "12.2 Pharmacodynamics",
+          "12.3 Pharmacokinetics"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": {
+        "paragraphs": [
+          "Pediatric efficacy support includes type 1 ages 2–17; no infant regimen is supplied. Older adults require conservative starts/increments and careful monitoring because hypoglycemia may be difficult to recognize. Marketing discontinuation requires supervised alternatives for all ages."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "status"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "8.1 Pregnancy",
+          "8.2 Lactation",
+          "8.4 Pediatric Use",
+          "8.5 Geriatric Use",
+          "8.6 Renal Impairment",
+          "8.7 Hepatic Impairment",
+          "10 OVERDOSAGE",
+          "14.2 Clinical Studies in Pediatric Patients with Type 1 Diabetes",
+          "2.1 Important Administration Instructions",
+          "2.2 General Dosing Instructions",
+          "2.3 Starting Dose in Insulin Naïve Patients",
+          "2.4 Switching to LEVEMIR from Other Insulin Therapies",
+          "8 USE IN SPECIFIC POPULATIONS",
+          "12 CLINICAL PHARMACOLOGY",
+          "12.1 Mechanism of Action",
+          "12.2 Pharmacodynamics",
+          "12.3 Pharmacokinetics"
+        ],
+        "status": [
+          "June2026 frontmatter: discontinuedfrommarketing butstilllicensed distinction",
+          "Discontinuedlist page21of30/PDFpage131: Levemirvial12/31/2024,FlexPen4/1/2024,otherhistoricalpresentations"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "assertions": {
+        "paragraphs": [
+          "Single-dose studies found similar detemir PK across renal function and lower exposure in severe hepatic impairment, but broader insulin physiology can still increase circulating insulin and hypoglycemia risk. Carefully monitor and adjust in either impairment; no fixed CrCl/Child-Pugh percentage or dialysis conversion is established."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "8.1 Pregnancy",
+          "8.2 Lactation",
+          "8.4 Pediatric Use",
+          "8.5 Geriatric Use",
+          "8.6 Renal Impairment",
+          "8.7 Hepatic Impairment",
+          "10 OVERDOSAGE",
+          "14.2 Clinical Studies in Pediatric Patients with Type 1 Diabetes",
+          "2.1 Important Administration Instructions",
+          "2.2 General Dosing Instructions",
+          "2.3 Starting Dose in Insulin Naïve Patients",
+          "2.4 Switching to LEVEMIR from Other Insulin Therapies",
+          "8 USE IN SPECIFIC POPULATIONS",
+          "12 CLINICAL PHARMACOLOGY",
+          "12.1 Mechanism of Action",
+          "12.2 Pharmacodynamics",
+          "12.3 Pharmacokinetics"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and effect",
+      "assertions": {
+        "paragraphs": [
+          "Insulin promotes peripheral glucose uptake and inhibits hepatic glucose output, lipolysis and proteolysis. Detemir self-association at the site and albumin binding slow absorption/distribution. It has a relatively constant basal profile with action up to twenty-four hours; measured duration varies and twice-daily regimens can be needed."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "11 DESCRIPTION",
+          "12 CLINICAL PHARMACOLOGY",
+          "12.1 Mechanism of Action",
+          "12.3 Pharmacokinetics",
+          "12.2 Pharmacodynamics"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Disposition",
+      "assertions": {
+        "paragraphs": [
+          "Serum peaks are around six to eight hours; absolute bioavailability about 60%. More than 98% is albumin bound. Terminal half-life after subcutaneous dosing is about five to seven hours and is not the same as duration of glucose lowering. Injection region, age and organ function can alter exposure/effect."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "11 DESCRIPTION",
+          "12 CLINICAL PHARMACOLOGY",
+          "12.1 Mechanism of Action",
+          "12.3 Pharmacokinetics",
+          "12.2 Pharmacodynamics"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring and counseling",
+      "assertions": {
+        "paragraphs": [
+          "Follow glucose measurements and the prescribed glycemic goal; increase checks during switching, illness or organ changes. Monitor potassium when at risk and signs of fluid retention with TZDs. Review meals/activity, injection sites, label/strength and device technique. Use a new needle, never share and remove a pen needle after use; obtain trained help with visual impairment. Arrange safe sharps disposal and a supervised replacement plan because U.S. presentations are discontinued."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.3 Starting Dose in Insulin Naïve Patients",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "5.1 Never Share a LEVEMIR FlexPen, Needle, or Insulin Syringe between Patients",
+          "10 OVERDOSAGE",
+          "14.1 Clinical Studies in Adult Patients with Type 1 Diabetes",
+          "14.2 Clinical Studies in Pediatric Patients with Type 1 Diabetes",
+          "14.3 Clinical Studies in Adult Patients with Type 2 Diabetes",
+          "17 PATIENT COUNSELING INFORMATION",
+          "Patient Information",
+          "2.1 Important Administration Instructions",
+          "2.2 General Dosing Instructions",
+          "2.4 Switching to LEVEMIR from Other Insulin Therapies",
+          "5.2 Hyperglycemia or Hypoglycemia with Changes in Insulin Regimen",
+          "5.3 Hypoglycemia",
+          "5.4 Hypoglycemia Due to Medication Errors",
+          "5.5 Hypersensitivity Reactions",
+          "5.6 Hypokalemia",
+          "5.7 Fluid Retention and Heart Failure with Concomitant Use of PPAR-gamma Agonists"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "practice",
+      "card": "Hypoglycemia and overdose",
+      "assertions": {
+        "paragraphs": [
+          "Use the clinician-taught oral-glucose plan for mild episodes when safely able to swallow. Seizures, unconsciousness or severe impairment need emergency help and trained glucagon/IV glucose management; do not give oral intake to an unconscious person. Excess insulin can cause prolonged/recurrent hypoglycemia and hypokalemia even after apparent recovery; no safe excess dose or self-directed replacement conversion is supplied."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.3 Starting Dose in Insulin Naïve Patients",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "5.1 Never Share a LEVEMIR FlexPen, Needle, or Insulin Syringe between Patients",
+          "10 OVERDOSAGE",
+          "14.1 Clinical Studies in Adult Patients with Type 1 Diabetes",
+          "14.2 Clinical Studies in Pediatric Patients with Type 1 Diabetes",
+          "14.3 Clinical Studies in Adult Patients with Type 2 Diabetes",
+          "17 PATIENT COUNSELING INFORMATION",
+          "Patient Information",
+          "2.1 Important Administration Instructions",
+          "2.2 General Dosing Instructions",
+          "2.4 Switching to LEVEMIR from Other Insulin Therapies",
+          "5.2 Hyperglycemia or Hypoglycemia with Changes in Insulin Regimen",
+          "5.3 Hypoglycemia",
+          "5.4 Hypoglycemia Due to Medication Errors",
+          "5.5 Hypersensitivity Reactions",
+          "5.6 Hypokalemia",
+          "5.7 Fluid Retention and Heart Failure with Concomitant Use of PPAR-gamma Agonists"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "product",
+      "card": "Representative retained product",
+      "assertions": {
+        "facts": [
+          [
+            "Product",
+            "Levemir insulin detemir U-100"
+          ],
+          [
+            "Route",
+            "Subcutaneous injection only"
+          ],
+          [
+            "Appearance",
+            "Clear, colorless solution"
+          ],
+          [
+            "Retained repackaged vial",
+            "10 mL · NDC 50090-1276-0"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.3 Starting Dose in Insulin Naïve Patients",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "5.1 Never Share a LEVEMIR FlexPen, Needle, or Insulin Syringe between Patients",
+          "10 OVERDOSAGE",
+          "11 DESCRIPTION",
+          "14.1 Clinical Studies in Adult Patients with Type 1 Diabetes",
+          "14.2 Clinical Studies in Pediatric Patients with Type 1 Diabetes",
+          "14.3 Clinical Studies in Adult Patients with Type 2 Diabetes",
+          "16 HOW SUPPLIED/STORAGE AND HANDLING",
+          "17 PATIENT COUNSELING INFORMATION",
+          "Patient Information",
+          "2.1 Important Administration Instructions",
+          "2.2 General Dosing Instructions",
+          "2.4 Switching to LEVEMIR from Other Insulin Therapies"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "U-100 is 100 units/mL: a 10 mL vial has 1,000 units; historical 3 mL pens contain 300 units. The retained full text names FlexPen, while the embedded patient instructions also include older FlexTouch. Their single-injection limits differ; follow the actual device’s instructions. These historical instructions do not establish current U.S. supply."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.3 Starting Dose in Insulin Naïve Patients",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "5.1 Never Share a LEVEMIR FlexPen, Needle, or Insulin Syringe between Patients",
+          "10 OVERDOSAGE",
+          "11 DESCRIPTION",
+          "14.1 Clinical Studies in Adult Patients with Type 1 Diabetes",
+          "14.2 Clinical Studies in Pediatric Patients with Type 1 Diabetes",
+          "14.3 Clinical Studies in Adult Patients with Type 2 Diabetes",
+          "16 HOW SUPPLIED/STORAGE AND HANDLING",
+          "17 PATIENT COUNSELING INFORMATION",
+          "Patient Information",
+          "2.1 Important Administration Instructions",
+          "2.2 General Dosing Instructions",
+          "2.4 Switching to LEVEMIR from Other Insulin Therapies"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Retained vial instructions: unopened at 2–8°C until labeled expiry; room-temperature storage up to 30°C limits unopened use to forty-two days. Opened vials may be refrigerated or kept up to 30°C, but discard after forty-two days. In-use FlexPen/FlexTouch instructions require storage outside the refrigerator up to 30°C and disposal after forty-two days. Protect from heat/light, never freeze or use previously frozen insulin; follow actual expiry and do not use expired residual stock."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.3 Starting Dose in Insulin Naïve Patients",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "5.1 Never Share a LEVEMIR FlexPen, Needle, or Insulin Syringe between Patients",
+          "10 OVERDOSAGE",
+          "11 DESCRIPTION",
+          "14.1 Clinical Studies in Adult Patients with Type 1 Diabetes",
+          "14.2 Clinical Studies in Pediatric Patients with Type 1 Diabetes",
+          "14.3 Clinical Studies in Adult Patients with Type 2 Diabetes",
+          "16 HOW SUPPLIED/STORAGE AND HANDLING",
+          "17 PATIENT COUNSELING INFORMATION",
+          "Patient Information",
+          "2.1 Important Administration Instructions",
+          "2.2 General Dosing Instructions",
+          "2.4 Switching to LEVEMIR from Other Insulin Therapies"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    }
+  ],
+  "evidence": [
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/detemir-levemir.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/insulin-detemir/detemir-levemir.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/82192527-99aa-4b53-8ce9-9173668d309c.xml",
+      "sha256": "c3a84e9ee895f87b7a9e084e43757ae382249d553fe7aa9a114b8c3c6f2fb42d"
+    },
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/detemir-levemir-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/insulin-detemir/detemir-levemir-sections.json",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/82192527-99aa-4b53-8ce9-9173668d309c.xml",
+      "sha256": "69d146d8815850fb6200239611402d80620b8877674e7559f4462f536411eaea"
+    },
+    {
+      "sourceId": "status",
+      "localEvidence": "/tmp/nas-drug-sources/detemir-fda-discontinued.pdf",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/insulin-detemir/detemir-fda-discontinued.pdf",
+      "url": "https://www.fda.gov/media/186099/download",
+      "sha256": "e99e69e8490e55044a11aad3c54d578d5faf098c189459188e052d6f6ab9a864"
+    },
+    {
+      "sourceId": "status",
+      "localEvidence": "/tmp/nas-drug-sources/detemir-fda-discontinued.txt",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/insulin-detemir/detemir-fda-discontinued.txt",
+      "url": "https://www.fda.gov/media/186099/download",
+      "sha256": "96da865eb856c67f4106623b4995e9bbdf1bc239cf828ca24c00b83ec5e31ca6"
+    }
+  ],
+  "sourceDiscrepancies": [
+    "Actual current FDAJune2026 list shows discontinuedmarketing Levemirvial12/31/2024 andFlexPen4/1/2024; stilllicensed distinction explicit, no safetywithdrawal orlocalstock assertion.",
+    "ManufacturerSPLAPI returned404; actual availableA-Srepackaged2024 SPL retains2022clinicalinstructions. Scope not falsely labeled new2026clinicalrevision.",
+    "Retained fullbody saysFlexPen while embeddedIFU also includes olderFlexTouch withdifferentdevicelimits. Devices notuniversalized.",
+    "Type1 initial0.2–0.4units/kg isTOTAL insulin notdetemir alone; detemir fractionone-third-to-one-half andpremeal remainder explicit.",
+    "Labelconversion FROMNPH/glargine TOdetemir isnotautomatically reversed to replacementinsulin afterdiscontinuation."
+  ],
+  "materialErrors": [],
+  "unresolvedMaterialGaps": [],
+  "scopeExclusions": [
+    "Other manufacturers/foreign products not reviewed; current public label presence does not prove local stock.",
+    "Off-label regimens, compounded stability/crushing/tube protocols, universal organ algorithms and individualized emergency treatment are excluded.",
+    "Reverse-switch replacementinsulin algorithm, infants, currentlocalstock, devicecrossconversion andindividualmisseddoseprotocol excluded."
+  ],
+  "verification": {
+    "schemaErrors": [],
+    "sectionIds": [
+      "indications",
+      "dosage",
+      "safety",
+      "interactions",
+      "populations",
+      "pharmacology",
+      "practice",
+      "product"
+    ],
+    "safetyCards": 4,
+    "productCards": 3,
+    "heroFacts": 3,
+    "monographSha256": "0d8b5a48acfc02d3f7a75d97b83e071857f89583aa8eb29ba8f5a92e3d849ae5",
+    "renderedQA": "Pending parent candidate build/desktop/mobile review; no live claim.",
+    "independentReview": "Pending actual-file independent reviewer."
+  },
+  "sourceAudit": "Full selected primary supporting sections read; current metadata retained separately from historical clinical wording. No paywalled access claimed."
+}

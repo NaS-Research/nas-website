@@ -1,0 +1,1205 @@
+{
+  "drug": "desogestrel-ethinyl-estradiol",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Full relevant current selected Enskyce/Kariva clinical labels, pack identity and missed-dose instructions; primary CDC 2024 initiation/BP/follow-up and targeted eligibility, postpartum, renal, migraine and interaction sections.",
+  "blueprint": {
+    "sections": [
+      [
+        "indications",
+        "Indications"
+      ],
+      [
+        "dosage",
+        "Dosage and administration"
+      ],
+      [
+        "safety",
+        "Safety"
+      ],
+      [
+        "interactions",
+        "Drug interactions"
+      ],
+      [
+        "populations",
+        "Use in specific populations"
+      ],
+      [
+        "pharmacology",
+        "Clinical pharmacology"
+      ],
+      [
+        "practice",
+        "Monitoring and counseling"
+      ],
+      [
+        "product",
+        "Product identification"
+      ]
+    ],
+    "essential_safety": true,
+    "hero_facts": 3,
+    "APAP_modified": false
+  },
+  "sources": [
+    {
+      "id": "enskyce",
+      "title": "Enskyce \u00b7 Current full combination-pill label",
+      "publisher": "Lupin / DailyMed",
+      "note": "PI December 2024; SPL 4 effective December 12, 2025; published December 16, 2025.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=799fa1d8-4e7b-4b5e-844d-d638896a4b02"
+    },
+    {
+      "id": "kariva",
+      "title": "Kariva \u00b7 Current full combination/estrogen-tail label",
+      "publisher": "Teva / DailyMed",
+      "note": "Current SPL 15 effective March 26, 2024; published April 22, 2024; revision metadata not equated to a new clinical dose.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7b11e11f-6977-4109-b9bd-a066e5d1278a"
+    },
+    {
+      "id": "spr",
+      "title": "Combined hormonal contraceptives \u00b7 U.S. SPR 2024",
+      "publisher": "CDC",
+      "note": "Current primary initiation, BP, follow-up and missed-dose guidance; relevant full sections read.",
+      "url": "https://www.cdc.gov/contraception/hcp/usspr/combined-hormonal-contraceptives.html"
+    },
+    {
+      "id": "mec",
+      "title": "Combined hormonal contraceptives \u00b7 U.S. MEC 2024 Appendix D",
+      "publisher": "CDC",
+      "note": "Current primary eligibility, postpartum/renal, migraine and interaction classifications; targeted full sections read.",
+      "url": "https://www.cdc.gov/contraception/hcp/usmec/combined-hormonal-contraceptives.html"
+    }
+  ],
+  "source_records": [
+    {
+      "id": "enskyce",
+      "local_snapshot": "/tmp/nas-drug-sources/enskyce.xml",
+      "label_revision": "December 2024",
+      "set_id": "799fa1d8-4e7b-4b5e-844d-d638896a4b02",
+      "spl_version": "4",
+      "spl_effective_time": "20251212",
+      "dailymed_published_date": "2025-12-16",
+      "sha256": "00531843d5ab149ca978f5fc2a6eb515801e373b2a553c931318b4706ac61a67",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-27-thyroid-metformin/enskyce.xml"
+    },
+    {
+      "id": "kariva",
+      "local_snapshot": "/tmp/nas-drug-sources/kariva.xml",
+      "label_revision": "Current selected label; no clinical revision date confirmed separately",
+      "set_id": "7b11e11f-6977-4109-b9bd-a066e5d1278a",
+      "spl_version": "15",
+      "spl_effective_time": "20240326",
+      "dailymed_published_date": "2024-04-22",
+      "sha256": "c67ce97c220080a192ef35576b87e913cd53893494daf04c35a8964ac9f1a7b2",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-27-thyroid-metformin/kariva.xml"
+    },
+    {
+      "id": "spr",
+      "local_snapshot": "/tmp/nas-drug-sources/cdc-spr-chc.html",
+      "revision": "U.S. SPR 2024; current web index November 19, 2024",
+      "url": "https://www.cdc.gov/contraception/hcp/usspr/combined-hormonal-contraceptives.html",
+      "sha256": "be0b17f7b38ca41423e839a21cf05eb2c59e83910163a8883af978b472d814a5",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-27-thyroid-metformin/cdc-spr-chc.html"
+    },
+    {
+      "id": "mec",
+      "local_snapshot": "/tmp/nas-drug-sources/cdc-mec-chc.html",
+      "revision": "U.S. MEC 2024; current web appendix November 18, 2024",
+      "url": "https://www.cdc.gov/contraception/hcp/usmec/combined-hormonal-contraceptives.html",
+      "sha256": "9378ebd663d8d683a27fd471a0f27e2a53b1a5a2999201a36a5197ccab6db541",
+      "review_method": "Relevant full public clinical sections read; dose, age, route, safety and product distinctions checked. No paywalled or unaccessed full guideline claimed.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-27-thyroid-metformin/cdc-mec-chc.html"
+    }
+  ],
+  "assertion_map": [
+    {
+      "section": "indications",
+      "card": "Contraceptive purpose",
+      "assertions": [
+        "Selected Enskyce and Kariva prevent pregnancy in patients electing oral contraception. These are not progestin-only desogestrel pills or established emergency-contraception products. Neither protects against HIV or other sexually transmitted infections; use appropriate STI prevention. This review focuses on these two verified monophasic/estrogen-tail packs, not every triphasic brand or off-label treatment."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "INDICATIONS; Information for Patients"
+        },
+        {
+          "id": "kariva",
+          "sections": "INDICATIONS; General; Patient Counseling"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Eligibility and real-world effectiveness",
+      "assertions": [
+        "Reliable daily use matters. Current CDC estimates approximately seven pregnancies per hundred CHC users in the first year of typical use, which differs from older selected-label study tables. Discuss goals, contraindications and alternatives rather than promise a universal one-percent failure rate or automatically select this progestin for every patient."
+      ],
+      "sources": [
+        {
+          "id": "spr",
+          "sections": "Overview"
+        },
+        {
+          "id": "enskyce",
+          "sections": "INDICATIONS"
+        },
+        {
+          "id": "kariva",
+          "sections": "INDICATIONS"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Pack-specific daily schedules",
+      "assertions": [
+        "Take one tablet by mouth at the same time daily. Enskyce uses 21 combination tablets followed by seven inactive reminders; Kariva uses 21 combination tablets, two inactive tablets and five estrogen-only tablets. Start the next pack the day after the last tablet. Do not infer that every green/blue/white tablet has the same ingredients across manufacturers."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "DESCRIPTION; DOSAGE"
+        },
+        {
+          "id": "kariva",
+          "sections": "DESCRIPTION; DOSAGE"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Selected 28-day pack",
+          "Daily sequence"
+        ],
+        "rows": [
+          [
+            "Enskyce",
+            "21 tablets desogestrel 0.15 mg + EE 0.03 mg; then 7 inactive tablets"
+          ],
+          [
+            "Kariva",
+            "21 tablets desogestrel 0.15 mg + EE 0.02 mg; then 2 inactive; then 5 EE-only 0.01 mg"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Starting and switching",
+      "assertions": [
+        "Selected labels describe Day 1 and Sunday starts; Sunday start requires an additional contraceptive method through the first seven consecutive combination-tablet days. Day 1 begins with normal menstrual onset after pregnancy assessment. Current CDC permits assessed initiation whenever pregnancy can reasonably be excluded, using seven-day back-up when starting more than five days after bleeding began. Switching and postpartum initiation need a written clinician plan based on the exact product and eligibility."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "DOSAGE, Day 1/Sunday Start"
+        },
+        {
+          "id": "kariva",
+          "sections": "DOSAGE, Day 1/Sunday Start"
+        },
+        {
+          "id": "spr",
+          "sections": "Initiation; need for back-up contraception"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Late or missed pills and GI illness",
+      "assertions": [
+        "Obtain the exact pack\u2019s missed-tablet instructions and prompt clinician/pharmacist advice after misses, vomiting or severe diarrhea. Current CDC addresses hormonally active missed pills; extending the hormone-free interval is particularly risky and seven continuous CHC days are needed for reliable ovulation prevention. Label week/start-day catch-up rules differ from the current simplified CDC approach, and Kariva has an estrogen-only tail. This profile does not merge them into an unvalidated tail-tablet algorithm. Assess back-up, emergency contraception and pregnancy testing promptly when indicated."
+      ],
+      "sources": [
+        {
+          "id": "spr",
+          "sections": "Late or missed doses; vomiting/severe diarrhea"
+        },
+        {
+          "id": "enskyce",
+          "sections": "DOSAGE; patient missed-pill/GI instructions"
+        },
+        {
+          "id": "kariva",
+          "sections": "DOSAGE; patient instructions"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Organ impairment and high-risk conditions",
+      "assertions": [
+        "There is no validated renal/hepatic dose-reduction table; lowering a tablet dose does not correct estrogen-related contraindications. Current CDC considers nephrotic syndrome and hemodialysis/peritoneal dialysis unacceptable-risk CHC settings. Liver disease eligibility depends on severity and diagnosis. Obtain an alternative-method assessment rather than invent half-tablet or dialysis supplements."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "CONTRAINDICATIONS; Liver Function"
+        },
+        {
+          "id": "kariva",
+          "sections": "Special Populations; CONTRAINDICATIONS; Liver Function"
+        },
+        {
+          "id": "mec",
+          "sections": "CKD; liver disease"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "VTE, stroke and MI risks increase with smoking and relevant comorbidity; VTE risk is especially high during initial use/restart after a prolonged gap. Labels discuss higher VTE risk with desogestrel than some older progestins, with inconsistent comparative studies; no fixed individual excess-risk guarantee is supplied. Plan interruption around high-risk surgery/prolonged immobilization. Evaluate new/severe migraine, vision loss, jaundice, persistent abnormal bleeding, major depression and BP elevation. Breast malignancy, hepatic tumors, glucose/lipid effects and gallbladder disease require context."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "WARNINGS; PRECAUTIONS"
+        },
+        {
+          "id": "kariva",
+          "sections": "WARNINGS; PRECAUTIONS"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "Do not use with known/current-history thromboembolic disease, relevant cerebrovascular/coronary disease, current/history breast cancer, listed liver tumors/cholestatic conditions, unexplained genital bleeding or the contraindicated ombitasvir/paritaprevir/ritonavir\u00b1dasabuvir regimen. Enskyce also explicitly lists thrombophilia, complicated valvular disease, severe persistent hypertension, vascular diabetes, focal neurologic headaches, major surgery with prolonged immobility, pregnancy and ingredient allergy. Current CDC additionally makes migraine with aura and specified high-risk CKD settings unacceptable risk; older Kariva \u00a7Contraindications omissions do not establish safety in those conditions."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "CONTRAINDICATIONS"
+        },
+        {
+          "id": "kariva",
+          "sections": "CONTRAINDICATIONS; boxed warning; WARNINGS"
+        },
+        {
+          "id": "mec",
+          "sections": "Table D1, migraine/CKD/cardiovascular/liver"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "Both selected labels carry the cigarette-smoking/serious cardiovascular-events warning: patients over thirty-five who smoke should not use these COCs. Risk rises with age and smoking exposure. Current CDC smoking classifications and the actual product warning guide selection; absence of heavy smoking does not negate other estrogen contraindications."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "BOXED WARNING"
+        },
+        {
+          "id": "kariva",
+          "sections": "BOXED WARNING"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Possible effects include nausea, breast symptoms, spotting/bleeding changes, headache, mood changes, edema and pigment changes. Serious events include thrombosis, stroke/MI, liver complications and significant hypertension. Pregnancy must be considered with missed bleeding and adherence lapses; do not automatically treat prolonged bleeding or amenorrhea by raising estrogen exposure. Historical class rates and study formulations are not exact personal predictions."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "ADVERSE REACTIONS; Bleeding Irregularities"
+        },
+        {
+          "id": "kariva",
+          "sections": "ADVERSE REACTIONS; Bleeding Irregularities"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Inducers and back-up",
+      "assertions": [
+        "Rifampin/rifabutin, carbamazepine, phenytoin, other relevant anticonvulsants and St. John\u2019s wort can reduce contraceptive exposure/effectiveness. Enskyce explicitly advises alternate/back-up contraception during inducer use and for 28 days after stopping; apply the exact co-medication and contraceptive plan. Older Kariva wording suggests ampicillin/tetracycline effects, but current CDC states most broad-spectrum antibiotics do not reduce CHC efficacy. Do not universalize antibiotic failure or apply that reassurance to rifamycins."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "Drug Interactions"
+        },
+        {
+          "id": "kariva",
+          "sections": "Drug Interactions"
+        },
+        {
+          "id": "mec",
+          "sections": "Drug Interactions, broad-spectrum antibiotics/rifamycins/anticonvulsants"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Lamotrigine and other exposure changes",
+      "assertions": [
+        "Estrogen-containing COCs can substantially lower lamotrigine concentrations and impair seizure control; starting/stopping or hormone-interval changes require coordinated monitoring/dose management. Other interactions can raise hormone/substrate levels or alter thyroid replacement needs. Enskyce describes reduced interaction when colesevelam is separated by four hours. Review actual drug labels rather than assume contraceptive efficacy is fixed by a generic spacing rule."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "Drug Interactions; Laboratory Tests"
+        },
+        {
+          "id": "kariva",
+          "sections": "Drug Interactions; Laboratory Tests"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Hepatitis C regimens",
+      "assertions": [
+        "Ombitasvir/paritaprevir/ritonavir with or without dasabuvir is contraindicated because of ALT elevations; labels advise discontinuation before treatment and possible restart about two weeks after completion under clinical direction. Kariva also says glecaprevir/pibrentasvir co-use is not recommended. Dose-dependent co-medication labeling can evolve: check the exact HCV product before selecting contraception rather than extrapolate from an old class list."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "WARNINGS, HCV; Drug Interactions"
+        },
+        {
+          "id": "kariva",
+          "sections": "WARNINGS, HCV; Drug Interactions"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Adolescents and older patients",
+      "assertions": [
+        "Use is intended after menarche in patients of reproductive potential, with expected adolescent efficacy similar to adults. Not indicated before menarche. Enskyce is not indicated over sixty-five; neither selected contraceptive is a menopausal hormone-therapy substitute. Evaluate age plus smoking/BP/migraine and clot risks, not age alone."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "Pediatric/Geriatric Use; BOXED WARNING"
+        },
+        {
+          "id": "kariva",
+          "sections": "Pediatric Use; BOXED WARNING"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and postpartum",
+      "assertions": [
+        "Stop contraceptive treatment if pregnancy occurs; inadvertent early exposure does not establish a pregnancy-treatment indication. Labels describe nonbreastfeeding initiation no earlier than four weeks postpartum; current CDC excludes CHCs below twenty-one days and stratifies days 21\u201342 by VTE risk and feeding. The reviewed label\u2019s four-week sentence is not a universal safe restart: clinicians must assess eligibility and back-up. Confirm pregnancy when missed bleeding and adherence history warrant it."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "WARNINGS, Pregnancy; DOSAGE"
+        },
+        {
+          "id": "kariva",
+          "sections": "Pregnancy; DOSAGE"
+        },
+        {
+          "id": "spr",
+          "sections": "Postpartum initiation"
+        },
+        {
+          "id": "mec",
+          "sections": "Postpartum classifications"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Breastfeeding",
+      "assertions": [
+        "Selected older labels favor another method until weaning because hormones enter milk and COCs can reduce milk production. Current CDC distinguishes feeding establishment and timing: breastfeeding patients generally should not use CHCs before thirty days; days 30\u201342 depend on VTE risk, and after forty-two days use is generally acceptable with assessment. These frameworks are stated separately; no claim of absent milk transfer or automatic safety at four weeks is made."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "Nursing Mothers"
+        },
+        {
+          "id": "kariva",
+          "sections": "Lactation; Patient Counseling"
+        },
+        {
+          "id": "spr",
+          "sections": "Postpartum breastfeeding"
+        },
+        {
+          "id": "mec",
+          "sections": "Breastfeeding/postpartum"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal, hepatic and metabolic disease",
+      "assertions": [
+        "No numeric organ adjustment or dialysis regimen is validated. Severe kidney/mineral or thrombotic conditions, vascular diabetes, hypertension and certain liver disease/tumors can make estrogen inappropriate. Current CDC: controlled or 140\u2013159/90\u201399 hypertension generally should not use CHCs; \u2265 160/100 or vascular disease should not use. Consider diagnostic severity and all coexisting risks instead of lowering the hormone tablet dose."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "CONTRAINDICATIONS; WARNINGS; PRECAUTIONS"
+        },
+        {
+          "id": "kariva",
+          "sections": "Special Populations; WARNINGS; PRECAUTIONS"
+        },
+        {
+          "id": "mec",
+          "sections": "Hypertension; CKD; diabetes; liver"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and metabolism",
+      "assertions": [
+        "Gonadotropin suppression inhibits ovulation, with additional cervical-mucus/endometrial changes. Desogestrel rapidly becomes active etonogestrel (3-keto-desogestrel), with hepatic/intestine metabolism and protein binding; EE undergoes conjugation and enterohepatic cycling. Low intrinsic androgenic activity in receptor/animal studies does not prove absence of thrombotic or metabolic risk."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "kariva",
+          "sections": "CLINICAL PHARMACOLOGY"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Product-specific disposition",
+      "assertions": [
+        "Enskyce reports steady-state active-metabolite half-life about 38 hours and EE about 26 hours; Kariva reports about 28 and 24 hours for its combination tablet, with different EE-only-tail data. These variable study estimates are not a safe missed-dose window, an organ-impairment reduction table or grounds to interchange the 20/30-mcg packs."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "Pharmacokinetics"
+        },
+        {
+          "id": "kariva",
+          "sections": "Pharmacokinetics; Special Populations"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring and screening",
+      "assertions": [
+        "Measure BP before initiation and reassess BP and relevant health/medication changes during routine visits. Evaluate clot risk, smoking, migraine/aura, liver/renal history, bleeding, mood and adherence. Current CDC does not require a routine pelvic examination, glucose/lipid/liver panel or thrombophilia screening solely to initiate in otherwise healthy patients; diagnosed conditions may need targeted tests. Older annual-exam label prose is not converted into a barrier to initiation."
+      ],
+      "sources": [
+        {
+          "id": "spr",
+          "sections": "Examinations/tests; routine follow-up"
+        },
+        {
+          "id": "mec",
+          "sections": "Eligibility"
+        },
+        {
+          "id": "enskyce",
+          "sections": "Physical Examination; WARNINGS"
+        },
+        {
+          "id": "kariva",
+          "sections": "Physical Examination; WARNINGS"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling and urgent symptoms",
+      "assertions": [
+        "Keep tablet order, start-day, missed-dose/back-up plan and refills clear. Obtain prompt advice after missed pills/GI illness or interacting-drug changes. Urgent care is needed for chest pain/dyspnea, painful swollen leg, sudden severe headache/focal signs, or vision loss; report jaundice, major depression and persistent abnormal bleeding. Discuss STI protection and reliable alternatives when daily adherence is difficult."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "Information for Patients; warning signals; DOSAGE"
+        },
+        {
+          "id": "kariva",
+          "sections": "Patient Counseling; patient warning signals; DOSAGE"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Enskyce 28-tablet blister NDC 68180-739-71: light-orange active L/J7, green inactive LU/L22. Kariva six-blister carton NDC 0555-9050-58: white combination dp/021, light-green inactive dp/331, light-blue EE-only dp/022. Kariva counseling contains a light-orange-tablet reference inconsistent with its own description/pack; identity here follows actual description and How Supplied. Verify dispensing package."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "kariva",
+          "sections": "DESCRIPTION; HOW SUPPLIED; Patient Counseling"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Enskyce combination tablet contains desogestrel 0.15 mg and EE 0.03 mg (30 mcg), with seven inert tablets. Kariva contains 0.15 mg/0.02 mg (20 mcg) combination tablets, two inert tablets and five EE-only 0.01 mg (10 mcg) tablets. Different triphasic packs/brands are not assumed interchangeable and require their exact label."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "DESCRIPTION; HOW SUPPLIED"
+        },
+        {
+          "id": "kariva",
+          "sections": "DESCRIPTION; HOW SUPPLIED"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Enskyce: 25\u00b0C with permitted 15\u201330\u00b0C excursions. Kariva: 20\u201325\u00b0C controlled room temperature. Keep the pack intact to preserve order, out of children\u2019s reach and use the labeled expiry. No universal after-opening discard period or pill-splitting regimen is supplied."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "kariva",
+          "sections": "HOW SUPPLIED"
+        }
+      ]
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Contraceptive purpose",
+      "assertions": [
+        "Selected Enskyce and Kariva prevent pregnancy in patients electing oral contraception. These are not progestin-only desogestrel pills or established emergency-contraception products. Neither protects against HIV or other sexually transmitted infections; use appropriate STI prevention. This review focuses on these two verified monophasic/estrogen-tail packs, not every triphasic brand or off-label treatment."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "INDICATIONS; Information for Patients"
+        },
+        {
+          "id": "kariva",
+          "sections": "INDICATIONS; General; Patient Counseling"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Eligibility and real-world effectiveness",
+      "assertions": [
+        "Reliable daily use matters. Current CDC estimates approximately seven pregnancies per hundred CHC users in the first year of typical use, which differs from older selected-label study tables. Discuss goals, contraindications and alternatives rather than promise a universal one-percent failure rate or automatically select this progestin for every patient."
+      ],
+      "sources": [
+        {
+          "id": "spr",
+          "sections": "Overview"
+        },
+        {
+          "id": "enskyce",
+          "sections": "INDICATIONS"
+        },
+        {
+          "id": "kariva",
+          "sections": "INDICATIONS"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Pack-specific daily schedules",
+      "assertions": [
+        "Take one tablet by mouth at the same time daily. Enskyce uses 21 combination tablets followed by seven inactive reminders; Kariva uses 21 combination tablets, two inactive tablets and five estrogen-only tablets. Start the next pack the day after the last tablet. Do not infer that every green/blue/white tablet has the same ingredients across manufacturers."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "DESCRIPTION; DOSAGE"
+        },
+        {
+          "id": "kariva",
+          "sections": "DESCRIPTION; DOSAGE"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Selected 28-day pack",
+          "Daily sequence"
+        ],
+        "rows": [
+          [
+            "Enskyce",
+            "21 tablets desogestrel 0.15 mg + EE 0.03 mg; then 7 inactive tablets"
+          ],
+          [
+            "Kariva",
+            "21 tablets desogestrel 0.15 mg + EE 0.02 mg; then 2 inactive; then 5 EE-only 0.01 mg"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Starting and switching",
+      "assertions": [
+        "Selected labels describe Day 1 and Sunday starts; Sunday start requires an additional contraceptive method through the first seven consecutive combination-tablet days. Day 1 begins with normal menstrual onset after pregnancy assessment. Current CDC permits assessed initiation whenever pregnancy can reasonably be excluded, using seven-day back-up when starting more than five days after bleeding began. Switching and postpartum initiation need a written clinician plan based on the exact product and eligibility."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "DOSAGE, Day 1/Sunday Start"
+        },
+        {
+          "id": "kariva",
+          "sections": "DOSAGE, Day 1/Sunday Start"
+        },
+        {
+          "id": "spr",
+          "sections": "Initiation; need for back-up contraception"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Late or missed pills and GI illness",
+      "assertions": [
+        "Obtain the exact pack\u2019s missed-tablet instructions and prompt clinician/pharmacist advice after misses, vomiting or severe diarrhea. Current CDC addresses hormonally active missed pills; extending the hormone-free interval is particularly risky and seven continuous CHC days are needed for reliable ovulation prevention. Label week/start-day catch-up rules differ from the current simplified CDC approach, and Kariva has an estrogen-only tail. This profile does not merge them into an unvalidated tail-tablet algorithm. Assess back-up, emergency contraception and pregnancy testing promptly when indicated."
+      ],
+      "sources": [
+        {
+          "id": "spr",
+          "sections": "Late or missed doses; vomiting/severe diarrhea"
+        },
+        {
+          "id": "enskyce",
+          "sections": "DOSAGE; patient missed-pill/GI instructions"
+        },
+        {
+          "id": "kariva",
+          "sections": "DOSAGE; patient instructions"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Organ impairment and high-risk conditions",
+      "assertions": [
+        "There is no validated renal/hepatic dose-reduction table; lowering a tablet dose does not correct estrogen-related contraindications. Current CDC considers nephrotic syndrome and hemodialysis/peritoneal dialysis unacceptable-risk CHC settings. Liver disease eligibility depends on severity and diagnosis. Obtain an alternative-method assessment rather than invent half-tablet or dialysis supplements."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "CONTRAINDICATIONS; Liver Function"
+        },
+        {
+          "id": "kariva",
+          "sections": "Special Populations; CONTRAINDICATIONS; Liver Function"
+        },
+        {
+          "id": "mec",
+          "sections": "CKD; liver disease"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "VTE, stroke and MI risks increase with smoking and relevant comorbidity; VTE risk is especially high during initial use/restart after a prolonged gap. Labels discuss higher VTE risk with desogestrel than some older progestins, with inconsistent comparative studies; no fixed individual excess-risk guarantee is supplied. Plan interruption around high-risk surgery/prolonged immobilization. Evaluate new/severe migraine, vision loss, jaundice, persistent abnormal bleeding, major depression and BP elevation. Breast malignancy, hepatic tumors, glucose/lipid effects and gallbladder disease require context."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "WARNINGS; PRECAUTIONS"
+        },
+        {
+          "id": "kariva",
+          "sections": "WARNINGS; PRECAUTIONS"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "Do not use with known/current-history thromboembolic disease, relevant cerebrovascular/coronary disease, current/history breast cancer, listed liver tumors/cholestatic conditions, unexplained genital bleeding or the contraindicated ombitasvir/paritaprevir/ritonavir\u00b1dasabuvir regimen. Enskyce also explicitly lists thrombophilia, complicated valvular disease, severe persistent hypertension, vascular diabetes, focal neurologic headaches, major surgery with prolonged immobility, pregnancy and ingredient allergy. Current CDC additionally makes migraine with aura and specified high-risk CKD settings unacceptable risk; older Kariva \u00a7Contraindications omissions do not establish safety in those conditions."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "CONTRAINDICATIONS"
+        },
+        {
+          "id": "kariva",
+          "sections": "CONTRAINDICATIONS; boxed warning; WARNINGS"
+        },
+        {
+          "id": "mec",
+          "sections": "Table D1, migraine/CKD/cardiovascular/liver"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "Both selected labels carry the cigarette-smoking/serious cardiovascular-events warning: patients over thirty-five who smoke should not use these COCs. Risk rises with age and smoking exposure. Current CDC smoking classifications and the actual product warning guide selection; absence of heavy smoking does not negate other estrogen contraindications."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "BOXED WARNING"
+        },
+        {
+          "id": "kariva",
+          "sections": "BOXED WARNING"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Possible effects include nausea, breast symptoms, spotting/bleeding changes, headache, mood changes, edema and pigment changes. Serious events include thrombosis, stroke/MI, liver complications and significant hypertension. Pregnancy must be considered with missed bleeding and adherence lapses; do not automatically treat prolonged bleeding or amenorrhea by raising estrogen exposure. Historical class rates and study formulations are not exact personal predictions."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "ADVERSE REACTIONS; Bleeding Irregularities"
+        },
+        {
+          "id": "kariva",
+          "sections": "ADVERSE REACTIONS; Bleeding Irregularities"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Inducers and back-up",
+      "assertions": [
+        "Rifampin/rifabutin, carbamazepine, phenytoin, other relevant anticonvulsants and St. John\u2019s wort can reduce contraceptive exposure/effectiveness. Enskyce explicitly advises alternate/back-up contraception during inducer use and for 28 days after stopping; apply the exact co-medication and contraceptive plan. Older Kariva wording suggests ampicillin/tetracycline effects, but current CDC states most broad-spectrum antibiotics do not reduce CHC efficacy. Do not universalize antibiotic failure or apply that reassurance to rifamycins."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "Drug Interactions"
+        },
+        {
+          "id": "kariva",
+          "sections": "Drug Interactions"
+        },
+        {
+          "id": "mec",
+          "sections": "Drug Interactions, broad-spectrum antibiotics/rifamycins/anticonvulsants"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Lamotrigine and other exposure changes",
+      "assertions": [
+        "Estrogen-containing COCs can substantially lower lamotrigine concentrations and impair seizure control; starting/stopping or hormone-interval changes require coordinated monitoring/dose management. Other interactions can raise hormone/substrate levels or alter thyroid replacement needs. Enskyce describes reduced interaction when colesevelam is separated by four hours. Review actual drug labels rather than assume contraceptive efficacy is fixed by a generic spacing rule."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "Drug Interactions; Laboratory Tests"
+        },
+        {
+          "id": "kariva",
+          "sections": "Drug Interactions; Laboratory Tests"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Hepatitis C regimens",
+      "assertions": [
+        "Ombitasvir/paritaprevir/ritonavir with or without dasabuvir is contraindicated because of ALT elevations; labels advise discontinuation before treatment and possible restart about two weeks after completion under clinical direction. Kariva also says glecaprevir/pibrentasvir co-use is not recommended. Dose-dependent co-medication labeling can evolve: check the exact HCV product before selecting contraception rather than extrapolate from an old class list."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "WARNINGS, HCV; Drug Interactions"
+        },
+        {
+          "id": "kariva",
+          "sections": "WARNINGS, HCV; Drug Interactions"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Adolescents and older patients",
+      "assertions": [
+        "Use is intended after menarche in patients of reproductive potential, with expected adolescent efficacy similar to adults. Not indicated before menarche. Enskyce is not indicated over sixty-five; neither selected contraceptive is a menopausal hormone-therapy substitute. Evaluate age plus smoking/BP/migraine and clot risks, not age alone."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "Pediatric/Geriatric Use; BOXED WARNING"
+        },
+        {
+          "id": "kariva",
+          "sections": "Pediatric Use; BOXED WARNING"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and postpartum",
+      "assertions": [
+        "Stop contraceptive treatment if pregnancy occurs; inadvertent early exposure does not establish a pregnancy-treatment indication. Labels describe nonbreastfeeding initiation no earlier than four weeks postpartum; current CDC excludes CHCs below twenty-one days and stratifies days 21\u201342 by VTE risk and feeding. The reviewed label\u2019s four-week sentence is not a universal safe restart: clinicians must assess eligibility and back-up. Confirm pregnancy when missed bleeding and adherence history warrant it."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "WARNINGS, Pregnancy; DOSAGE"
+        },
+        {
+          "id": "kariva",
+          "sections": "Pregnancy; DOSAGE"
+        },
+        {
+          "id": "spr",
+          "sections": "Postpartum initiation"
+        },
+        {
+          "id": "mec",
+          "sections": "Postpartum classifications"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Breastfeeding",
+      "assertions": [
+        "Selected older labels favor another method until weaning because hormones enter milk and COCs can reduce milk production. Current CDC distinguishes feeding establishment and timing: breastfeeding patients generally should not use CHCs before thirty days; days 30\u201342 depend on VTE risk, and after forty-two days use is generally acceptable with assessment. These frameworks are stated separately; no claim of absent milk transfer or automatic safety at four weeks is made."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "Nursing Mothers"
+        },
+        {
+          "id": "kariva",
+          "sections": "Lactation; Patient Counseling"
+        },
+        {
+          "id": "spr",
+          "sections": "Postpartum breastfeeding"
+        },
+        {
+          "id": "mec",
+          "sections": "Breastfeeding/postpartum"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal, hepatic and metabolic disease",
+      "assertions": [
+        "No numeric organ adjustment or dialysis regimen is validated. Severe kidney/mineral or thrombotic conditions, vascular diabetes, hypertension and certain liver disease/tumors can make estrogen inappropriate. Current CDC: controlled or 140\u2013159/90\u201399 hypertension generally should not use CHCs; \u2265 160/100 or vascular disease should not use. Consider diagnostic severity and all coexisting risks instead of lowering the hormone tablet dose."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "CONTRAINDICATIONS; WARNINGS; PRECAUTIONS"
+        },
+        {
+          "id": "kariva",
+          "sections": "Special Populations; WARNINGS; PRECAUTIONS"
+        },
+        {
+          "id": "mec",
+          "sections": "Hypertension; CKD; diabetes; liver"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and metabolism",
+      "assertions": [
+        "Gonadotropin suppression inhibits ovulation, with additional cervical-mucus/endometrial changes. Desogestrel rapidly becomes active etonogestrel (3-keto-desogestrel), with hepatic/intestine metabolism and protein binding; EE undergoes conjugation and enterohepatic cycling. Low intrinsic androgenic activity in receptor/animal studies does not prove absence of thrombotic or metabolic risk."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "CLINICAL PHARMACOLOGY"
+        },
+        {
+          "id": "kariva",
+          "sections": "CLINICAL PHARMACOLOGY"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Product-specific disposition",
+      "assertions": [
+        "Enskyce reports steady-state active-metabolite half-life about 38 hours and EE about 26 hours; Kariva reports about 28 and 24 hours for its combination tablet, with different EE-only-tail data. These variable study estimates are not a safe missed-dose window, an organ-impairment reduction table or grounds to interchange the 20/30-mcg packs."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "Pharmacokinetics"
+        },
+        {
+          "id": "kariva",
+          "sections": "Pharmacokinetics; Special Populations"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring and screening",
+      "assertions": [
+        "Measure BP before initiation and reassess BP and relevant health/medication changes during routine visits. Evaluate clot risk, smoking, migraine/aura, liver/renal history, bleeding, mood and adherence. Current CDC does not require a routine pelvic examination, glucose/lipid/liver panel or thrombophilia screening solely to initiate in otherwise healthy patients; diagnosed conditions may need targeted tests. Older annual-exam label prose is not converted into a barrier to initiation."
+      ],
+      "sources": [
+        {
+          "id": "spr",
+          "sections": "Examinations/tests; routine follow-up"
+        },
+        {
+          "id": "mec",
+          "sections": "Eligibility"
+        },
+        {
+          "id": "enskyce",
+          "sections": "Physical Examination; WARNINGS"
+        },
+        {
+          "id": "kariva",
+          "sections": "Physical Examination; WARNINGS"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling and urgent symptoms",
+      "assertions": [
+        "Keep tablet order, start-day, missed-dose/back-up plan and refills clear. Obtain prompt advice after missed pills/GI illness or interacting-drug changes. Urgent care is needed for chest pain/dyspnea, painful swollen leg, sudden severe headache/focal signs, or vision loss; report jaundice, major depression and persistent abnormal bleeding. Discuss STI protection and reliable alternatives when daily adherence is difficult."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "Information for Patients; warning signals; DOSAGE"
+        },
+        {
+          "id": "kariva",
+          "sections": "Patient Counseling; patient warning signals; DOSAGE"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Enskyce 28-tablet blister NDC 68180-739-71: light-orange active L/J7, green inactive LU/L22. Kariva six-blister carton NDC 0555-9050-58: white combination dp/021, light-green inactive dp/331, light-blue EE-only dp/022. Kariva counseling contains a light-orange-tablet reference inconsistent with its own description/pack; identity here follows actual description and How Supplied. Verify dispensing package."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "kariva",
+          "sections": "DESCRIPTION; HOW SUPPLIED; Patient Counseling"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Enskyce combination tablet contains desogestrel 0.15 mg and EE 0.03 mg (30 mcg), with seven inert tablets. Kariva contains 0.15 mg/0.02 mg (20 mcg) combination tablets, two inert tablets and five EE-only 0.01 mg (10 mcg) tablets. Different triphasic packs/brands are not assumed interchangeable and require their exact label."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "DESCRIPTION; HOW SUPPLIED"
+        },
+        {
+          "id": "kariva",
+          "sections": "DESCRIPTION; HOW SUPPLIED"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Enskyce: 25\u00b0C with permitted 15\u201330\u00b0C excursions. Kariva: 20\u201325\u00b0C controlled room temperature. Keep the pack intact to preserve order, out of children\u2019s reach and use the labeled expiry. No universal after-opening discard period or pill-splitting regimen is supplied."
+      ],
+      "sources": [
+        {
+          "id": "enskyce",
+          "sections": "HOW SUPPLIED"
+        },
+        {
+          "id": "kariva",
+          "sections": "HOW SUPPLIED"
+        }
+      ]
+    }
+  ],
+  "hero_assertions": {
+    "essential": {
+      "title": "Screen estrogen risk and preserve pack order",
+      "text": "Patients over thirty-five who smoke should not use these COCs. Assess BP, aura and clot/liver/renal risks; Kariva\u2019s final five pills contain estrogen, and missed doses need the exact plan.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "facts": [
+      [
+        "Enskyce active",
+        "Desogestrel 0.15 mg + EE 30 mcg"
+      ],
+      [
+        "Kariva active",
+        "Desogestrel 0.15 mg + EE 20 mcg"
+      ],
+      [
+        "Kariva tail",
+        "2 inactive pills, then 5 EE-only 10 mcg pills"
+      ]
+    ],
+    "sources": [
+      "enskyce",
+      "kariva",
+      "spr",
+      "mec"
+    ]
+  },
+  "section_assertions": [
+    {
+      "section": "indications",
+      "summary": "Prescription combined oral contraception containing desogestrel and ethinyl estradiol.",
+      "takeaway": "The two reviewed pack designs have different active/placebo sequences.",
+      "sources": [
+        "enskyce",
+        "kariva",
+        "spr"
+      ]
+    },
+    {
+      "section": "dosage",
+      "summary": "Take the exact product\u2019s tablets in order every day and begin the next pack without an extra gap.",
+      "takeaway": "Kariva\u2019s final five tablets contain estrogen; they are not five more placebos.",
+      "sources": [
+        "enskyce",
+        "kariva",
+        "mec",
+        "spr"
+      ]
+    },
+    {
+      "section": "safety",
+      "summary": "Estrogen-related thrombotic, cardiovascular and hepatic risks require eligibility screening.",
+      "takeaway": "Urgent chest, neurologic, leg or visual symptoms need immediate assessment.",
+      "sources": [
+        "enskyce",
+        "kariva",
+        "mec"
+      ]
+    },
+    {
+      "section": "interactions",
+      "summary": "Enzyme induction, lamotrigine and certain HCV regimens are major concerns.",
+      "takeaway": "Most ordinary broad-spectrum antibiotics do not have the same interaction as rifampin.",
+      "sources": [
+        "enskyce",
+        "kariva",
+        "mec"
+      ]
+    },
+    {
+      "section": "populations",
+      "summary": "Menarche, postpartum feeding and thrombotic/organ risk determine eligibility.",
+      "takeaway": "Current postpartum guidance is more specific than a blanket four-week restart.",
+      "sources": [
+        "enskyce",
+        "kariva",
+        "mec",
+        "spr"
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "summary": "Desogestrel is converted to active etonogestrel; combined hormones suppress ovulation.",
+      "takeaway": "PK from one pack cannot certify another pack\u2019s missed-dose protection.",
+      "sources": [
+        "enskyce",
+        "kariva"
+      ]
+    },
+    {
+      "section": "practice",
+      "summary": "Assess BP, eligibility, adherence and medicine changes before and during use.",
+      "takeaway": "Routine pelvic examination is not required solely to start a CHC in a healthy patient.",
+      "sources": [
+        "enskyce",
+        "kariva",
+        "mec",
+        "spr"
+      ]
+    },
+    {
+      "section": "product",
+      "summary": "Verify hormone strengths, active sequence, tablet identity and actual package.",
+      "takeaway": "Kariva\u2019s two placebos and five estrogen-only tablets are distinct.",
+      "sources": [
+        "enskyce",
+        "kariva"
+      ]
+    }
+  ],
+  "limitations": [
+    "Older label missed-pill, postpartum, annual-exam and antibiotic wording differs from current CDC guidance; frameworks are separated, and no merged unsafe tail-pill algorithm or blanket antibiotic failure claim is supplied.",
+    "Kariva counseling refers to a light-orange combination tablet while actual selected description/How Supplied identifies white; profile uses verified pack identity and documents discrepancy.",
+    "Focus is two verified 30-mcg and 20-mcg/10-mcg-tail packs, not all triphasic brands, every specialty regimen or emergency contraception.",
+    "Kariva clinical revision date separately unconfirmed; SPL update and publication accurately recorded without inventing a PI revision."
+  ],
+  "unresolved_source_questions": [],
+  "validation": {
+    "schema": [],
+    "tests_build_lint": "Parent batch checks required",
+    "rendered_page": "Parent batch QA required",
+    "assertion_map": "Actual authored paragraphs, table cells and card source IDs match audit maps; SHA256 verified."
+  },
+  "monograph_sha256": "a7350054bfc8fc605a8ef630e2d3721ef1029579add9490ac93b49d8f5ed1d43",
+  "source_archive": {
+    "directory": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-27-thyroid-metformin",
+    "checked": "2026-10-01",
+    "verified": "Full selected DailyMed SPL XML, parsed sections and public pages plus primary CDC CHC guidance HTML/text copied with exact SHA256 verification. Existing divergent files preserved."
+  }
+}
