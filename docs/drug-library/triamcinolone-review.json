@@ -1,0 +1,904 @@
+{
+  "drug": "triamcinolone",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "Selected six U.S. acetonide labels: Encube 0.1% skin cream/ointment; Sun 0.1% dental paste; OTC Nasacort; Amneal 40 mg/mL IM/IA suspension; Zilretta IA knee-only extended-release product. All relevant full clinical sections and product handling reviewed.",
+  "sources": [
+    {
+      "id": "tricream",
+      "title": "Encube triamcinolone acetonide · 0.1% cream",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db87426f-124c-4ea9-bb15-fc3a0da10a4e",
+      "note": "Full public manufacturer label and patient instructions; SPL version 4, effective 20260707. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "4",
+      "effective_date": "20260707",
+      "xml_sha256": "c0faead1d0fd5fd68bb2fd791f1d9a2c1d249baf92804d027950e16e50c29050",
+      "retrieved_xml": "/tmp/nas-drug-sources/tricream.xml",
+      "published_date": "Jul 23, 2026"
+    },
+    {
+      "id": "triont",
+      "title": "Encube triamcinolone acetonide · 0.1% ointment",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a31a0c3-2b6e-40e3-b5ea-5c665afd3567",
+      "note": "Full public manufacturer label and patient instructions; SPL version 4, effective 20260706. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "4",
+      "effective_date": "20260706",
+      "xml_sha256": "a8fe3638a5bd591419dd3b4caa2a6787a9af8c90235f01e0e50a607015b86392",
+      "retrieved_xml": "/tmp/nas-drug-sources/triont.xml",
+      "published_date": "Jul 23, 2026"
+    },
+    {
+      "id": "tripaste",
+      "title": "Sun triamcinolone acetonide · 0.1% dental paste",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b353c8b1-9088-4969-8199-37876f2461cc",
+      "note": "Full public manufacturer label and patient instructions; SPL version 6, effective 20250915. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "6",
+      "effective_date": "20250915",
+      "xml_sha256": "e4b6293a15f185f330a689f5043d4dd42d1812a24b2c3d6fe06bbf5c53ae7a96",
+      "retrieved_xml": "/tmp/nas-drug-sources/tripaste.xml",
+      "published_date": "Sep 17, 2025"
+    },
+    {
+      "id": "nasacort",
+      "title": "Nasacort Allergy 24HR · OTC 55 mcg/spray",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4bff57a5-cce0-401c-a0fe-23c65c1b7ddc",
+      "note": "Full public manufacturer label and patient instructions; SPL version 38, effective 20260114. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "38",
+      "effective_date": "20260114",
+      "xml_sha256": "28ba6cfd8e64e1117a6d50559a9db311e40d4f0a0e673c39171a964625b41584",
+      "retrieved_xml": "/tmp/nas-drug-sources/nasacort.xml",
+      "published_date": "Jan 14, 2026"
+    },
+    {
+      "id": "triinj",
+      "title": "Amneal triamcinolone acetonide · 40 mg/mL immediate-release injection",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c38dcd37-9840-4f71-a5c9-97380c8107f2",
+      "note": "Full public manufacturer label and patient instructions; SPL version 22, effective 20260212. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "22",
+      "effective_date": "20260212",
+      "xml_sha256": "3f900cec259c33e7e2923c59057f2171db431e4db7b606cbda2decb86a1c2368",
+      "retrieved_xml": "/tmp/nas-drug-sources/triinj.xml",
+      "published_date": "Mar 27, 2026"
+    },
+    {
+      "id": "zilretta",
+      "title": "Zilretta · extended-release knee injection",
+      "publisher": "DailyMed / National Library of Medicine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cd5c4673-21f2-4126-9556-da847b3a228b",
+      "note": "Full public manufacturer label and patient instructions; SPL version 7, effective 20260603. Product-specific directions reviewed October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public",
+      "spl_version": "7",
+      "effective_date": "20260603",
+      "xml_sha256": "73ca2f986c03e966f09614d7cf5aabbc7f4c9864e37f5ba5b790e214f146c10f",
+      "retrieved_xml": "/tmp/nas-drug-sources/zilretta.xml",
+      "published_date": "Jun 05, 2026"
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Skin, oral mucosa and nasal indications",
+      "assertions": {
+        "paragraphs": [
+          "Selected 0.1% skin cream/ointment relieve inflammatory and itchy manifestations of corticosteroid-responsive dermatoses. Sun dental paste is adjunctive temporary relief for oral inflammatory lesions and traumatic ulcerative lesions; skin products must not replace it. OTC Nasacort temporarily relieves allergic nasal congestion, rhinorrhea, sneezing and itchy nose at age ≥ 2; it is not for the common cold."
+        ]
+      },
+      "source_sections": {
+        "tricream": [
+          "INDICATIONS AND USAGE"
+        ],
+        "triont": [
+          "INDICATIONS & USAGE"
+        ],
+        "tripaste": [
+          "INDICATIONS AND USAGE",
+          "Information for the Patient"
+        ],
+        "nasacort": [
+          "Uses",
+          "Directions"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Selected injectable indications and limits",
+      "assertions": {
+        "paragraphs": [
+          "Amneal 40 mg/mL suspension: IM treatment when oral therapy is not feasible for listed severe allergic, inflammatory, rheumatic, endocrine, hematologic, renal and other disorders; IA/soft-tissue use is short-term adjunctive treatment for acute gouty arthritis, bursitis, nonspecific tenosynovitis, epicondylitis, rheumatoid arthritis and osteoarthritis synovitis. Zilretta is IA management of knee osteoarthritis pain; repeat-dose safety/efficacy is not demonstrated, and shoulder/hip OA is not evaluated. This overview is not a disease-specific systemic steroid protocol."
+        ]
+      },
+      "source_sections": {
+        "triinj": [
+          "INDICATIONS AND USAGE"
+        ],
+        "zilretta": [
+          "1",
+          "2.1"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "Product scope and clinical boundaries",
+      "assertions": {
+        "paragraphs": [
+          "This reference covers six selected U.S. acetonide labels. Other skin strengths/vehicles, 10/80 mg/mL injections, dedicated ophthalmic formulations and triamcinolone hexacetonide need their own labels and specialist directions. The selected 40 mg/mL suspension is IM/IA only, not IV, intradermal or an ophthalmic substitute. Zilretta is not substitutable with other triamcinolone injections."
+        ]
+      },
+      "source_sections": {
+        "triinj": [
+          "DESCRIPTION",
+          "WARNINGS"
+        ],
+        "zilretta": [
+          "2.1",
+          "2.3"
+        ],
+        "tricream": [
+          "DESCRIPTION"
+        ],
+        "nasacort": [
+          "Active ingredient"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Skin and dental application",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Selected product",
+            "Directions"
+          ],
+          "rows": [
+            [
+              "0.1% skin cream / ointment",
+              "Apply thinly to affected skin 2–3 times daily; cream rubs in gently. External use, avoid eyes. Cover/occlude only when directed; tight diapers/plastic pants can act as occlusion. No universal treatment duration or maximum grams is supplied in these labels."
+            ],
+            [
+              "0.1% dental paste",
+              "Press a small dab (~¼ inch) onto the lesion until a thin film forms; do not rub/spread. Apply at bedtime; if needed 2–3 times daily, preferably after meals. Investigate if repair is inadequate after 7 days; patient section also says contact dentist/physician if no improvement within 2 weeks. Stop when controlled."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "tricream": [
+          "DOSAGE AND ADMINISTRATION",
+          "Information for the Patient"
+        ],
+        "triont": [
+          "DOSAGE & ADMINISTRATION",
+          "Information for the Patient"
+        ],
+        "tripaste": [
+          "DOSAGE AND ADMINISTRATION",
+          "General",
+          "Information for the Patient"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "OTC nasal dosing by age",
+      "assertions": {
+        "paragraphs": [
+          "Shake well before every use. Prime new bottle and re-prime after > 2 weeks unused per enclosed insert; read spray/cleaning directions. Spray while sniffing gently; do not spray into eyes/mouth or share bottle. No doubled missed dose."
+        ],
+        "table": {
+          "headers": [
+            "Age",
+            "Once-daily sprays into EACH nostril"
+          ],
+          "rows": [
+            [
+              "≥ 12 years",
+              "2 sprays initially; reduce to 1 when symptoms improve."
+            ],
+            [
+              "6 to < 12 years",
+              "1 spray; may increase to 2 if not improving, then reduce to 1 when improved. Adult supervision."
+            ],
+            [
+              "2 to < 6 years",
+              "1 spray; adult supervision."
+            ],
+            [
+              "< 2 years",
+              "Do not use."
+            ],
+            [
+              "Review threshold",
+              "If symptoms fail to improve after 1 week, stop and consult. Child use > 2 months/year needs clinician discussion because of growth risk."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "nasacort": [
+          "Directions",
+          "When using this product"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Clinician-administered injection dosing",
+      "assertions": {
+        "paragraphs": [
+          "These selected doses require trained aseptic administration, individual indication/risk assessment and the exact product. They are not repeat-injection schedules."
+        ],
+        "table": {
+          "headers": [
+            "Product / route",
+            "Selected labeled dosing"
+          ],
+          "rows": [
+            [
+              "Amneal 40 mg/mL · systemic IM",
+              "Suggested adult initial 60 mg deep gluteal; usually adjusted 40–80 mg according to response/duration, some respond to ≤ 20 mg. Avoid deltoid because of local atrophy. Disease-specific high-dose regimens require specialist review."
+            ],
+            [
+              "Amneal · IA / local",
+              "Initial 2.5–5 mg smaller joints or 5–15 mg larger joints. Adult doses up to 10 mg smaller areas / 40 mg larger areas usually sufficient; up to 80 mg total across several joints has been given. Do not equate that historical total with a universal dose."
+            ],
+            [
+              "Zilretta · IA knee only",
+              "Single 32 mg delivered in 5 mL using supplied diluent/adapter and full IFU. Not for small joints; no established repeat-dose regimen. Not IM, IV, intradermal, SC, epidural, intrathecal or intraocular."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "triinj": [
+          "DOSAGE AND ADMINISTRATION",
+          "Dosage"
+        ],
+        "zilretta": [
+          "2.1–2.3",
+          "Instructions for Use"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Organ function, withdrawal and preparation",
+      "assertions": {
+        "paragraphs": [
+          "No fixed renal/hepatic dose algorithm is provided for these selected forms. Systemic steroids require caution with renal insufficiency, HF/hypertension, electrolyte disturbance and cirrhosis (enhanced effects). Individualize dose/duration; prolonged systemic treatment needs gradual clinician-directed withdrawal and stress-dose planning, not an arbitrary universal taper. Amneal suspension: shake, inspect for clumping/agglomeration (discard if present), inject promptly after withdrawal. Zilretta: only supplied diluent, strict asepsis, prompt injection; prepared vial may be held up to 4 hours ambient and gently resuspended before withdrawal."
+        ]
+      },
+      "source_sections": {
+        "triinj": [
+          "PRECAUTIONS: General",
+          "DOSAGE AND ADMINISTRATION",
+          "Dosage"
+        ],
+        "zilretta": [
+          "2.2",
+          "5.6–5.8"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Skin/dental products: systemic absorption can cause HPA suppression, Cushing effects, hyperglycemia and growth effects; risk rises with large areas, prolonged use, damaged barriers or occlusion. Irritation, sensitization or uncontrolled infection requires reassessment/discontinuation.",
+          "Nasal spray: discuss unhealed nasal injury/surgery/ulcers, other steroids, eye infection, glaucoma/cataracts before use. Stop and consult for severe/frequent nosebleeds, vision change, persistent infection symptoms or exposure to chickenpox/measles/TB.",
+          "Injection: anaphylaxis can be fatal; check ingredients including benzyl alcohol. The selected Amneal injection is not IV; epidural corticosteroid use is unapproved and associated with stroke, paralysis and death. Avoid unapproved intrathecal/ocular routes.",
+          "Systemic/IA exposure can suppress immunity, mask infection and reactivate latent disease. Amneal warns about TB, hepatitis B (screen before prolonged immunosuppression), fungal infection, amebiasis and Strongyloides hyperinfection. Avoid infection-site injection; assess hot, swollen, painful joint with fever for septic arthritis.",
+          "Adrenal suppression can persist after treatment; illness, surgery or trauma may require rapidly acting replacement steroid under clinician direction. Long-acting IM suspension is unsuitable for acute stress replacement. Do not abruptly stop prolonged therapy.",
+          "Injection precautions include fluid retention, hypertension, hypokalemia, glucose elevation, GI perforation/bleeding, mood/psychotic effects, osteoporosis/necrosis, myopathy, ocular pressure/cataracts and impaired wound healing. Review cardiac/renal, ulcer, bone, psychiatric and eye risks.",
+          "Live/live-attenuated vaccines are contraindicated during immunosuppressive corticosteroid doses; other vaccine response may be reduced. Pediatric benzyl-alcohol exposure can be toxic, particularly in premature/neonatal patients; consider all sources."
+        ]
+      },
+      "source_sections": {
+        "tricream": [
+          "General",
+          "Pediatric Use"
+        ],
+        "triont": [
+          "General",
+          "Pediatric Use"
+        ],
+        "tripaste": [
+          "General"
+        ],
+        "nasacort": [
+          "Warnings",
+          "Ask a doctor before use",
+          "Stop use and ask a doctor if"
+        ],
+        "triinj": [
+          "WARNINGS",
+          "General",
+          "Vaccination",
+          "Neurologic",
+          "PRECAUTIONS"
+        ],
+        "zilretta": [
+          "5.1–5.12"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "All selected products preclude hypersensitivity to their ingredients; Zilretta also specifies corticosteroid hypersensitivity. Dental paste is additionally contraindicated with fungal, viral or bacterial infection of the mouth/throat. OTC Nasacort: do not use below age 2. Amneal IM corticosteroid use is contraindicated in idiopathic thrombocytopenic purpura; live vaccines are contraindicated during immunosuppressive doses. Infection-site injection and unapproved routes remain important restrictions even when listed in warnings rather than section 4."
+        ]
+      },
+      "source_sections": {
+        "tricream": [
+          "CONTRAINDICATIONS"
+        ],
+        "triont": [
+          "CONTRAINDICATIONS"
+        ],
+        "tripaste": [
+          "CONTRAINDICATIONS"
+        ],
+        "nasacort": [
+          "Do not use"
+        ],
+        "triinj": [
+          "CONTRAINDICATIONS",
+          "Vaccination",
+          "General"
+        ],
+        "zilretta": [
+          "4",
+          "5.1",
+          "5.4"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "These selected current U.S. labels have no boxed warning. The selected immediate-release injection prominently warns about serious neurologic events with epidural administration; absence of a box does not establish that route as safe or approved."
+        ]
+      },
+      "source_sections": {
+        "tricream": [
+          "Full labeling"
+        ],
+        "triont": [
+          "Full labeling"
+        ],
+        "tripaste": [
+          "Full labeling"
+        ],
+        "nasacort": [
+          "Drug Facts"
+        ],
+        "triinj": [
+          "WARNINGS"
+        ],
+        "zilretta": [
+          "Full prescribing information",
+          "5.2"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and excess exposure",
+      "assertions": {
+        "paragraphs": [
+          "Skin/dental effects include burning, itching, dryness, contact dermatitis, infection and tissue atrophy; skin effects also include striae, folliculitis, pigment changes and acne-like eruptions. Injection can cause post-injection flare, joint/tendon injury and systemic steroid reactions above. Zilretta trial reactions include sinusitis, cough and contusions. Nasal labeling highlights nosebleeds, vision change and growth risk without assigning trial incidence. Excess local or injected steroid exposure can cause systemic toxicity; contact medical care/Poison Help (U.S. 1-800-222-1222) for overdose. Chronic excess needs a supervised reduction plan."
+        ]
+      },
+      "source_sections": {
+        "tricream": [
+          "ADVERSE REACTIONS",
+          "OVERDOSAGE"
+        ],
+        "triont": [
+          "ADVERSE REACTIONS",
+          "OVERDOSAGE"
+        ],
+        "tripaste": [
+          "ADVERSE REACTIONS",
+          "General"
+        ],
+        "nasacort": [
+          "Warnings",
+          "Keep out of reach of children"
+        ],
+        "triinj": [
+          "ADVERSE REACTIONS",
+          "OVERDOSAGE"
+        ],
+        "zilretta": [
+          "6.1–6.3"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "assertions": {
+        "paragraphs": [
+          "Selected injection labels describe systemic corticosteroid interactions; topical/OTC nasal labels do not provide an equivalent full interaction table. Review all steroid routes together."
+        ],
+        "table": {
+          "headers": [
+            "Combination",
+            "Clinical action"
+          ],
+          "rows": [
+            [
+              "Strong CYP3A4 inhibitors, including ritonavir/cobicistat",
+              "Amneal warns increased triamcinolone concentrations/systemic toxicity; assess benefit/risk and monitor. Enzyme inducers can reduce exposure."
+            ],
+            [
+              "Insulin / other antidiabetics",
+              "Monitor glucose; doses may need clinician adjustment."
+            ],
+            [
+              "Warfarin",
+              "Effects vary; monitor INR/coagulation frequently."
+            ],
+            [
+              "Potassium-depleting diuretics / amphotericin B / digoxin",
+              "Monitor potassium; hypokalemia can raise arrhythmia risk."
+            ],
+            [
+              "NSAIDs / aspirin",
+              "More GI toxicity; review bleeding/ulcer risk and salicylate changes."
+            ],
+            [
+              "Cyclosporine / estrogens / macrolides / cholestyramine",
+              "Can alter exposure/activity; review regimen and toxicity/response."
+            ],
+            [
+              "Anticholinesterases / aminoglutethimide / isoniazid",
+              "Specialist review for severe weakness or altered steroid/drug effect."
+            ],
+            [
+              "Vaccines / skin tests / multiple steroids",
+              "Immunosuppressive doses preclude live vaccines, may reduce vaccine response and suppress skin-test responses; assess cumulative exposure."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "triinj": [
+          "Drug Interactions",
+          "Vaccination"
+        ],
+        "zilretta": [
+          "7"
+        ],
+        "nasacort": [
+          "Ask a doctor before use",
+          "When using this product"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "Skin/dental labels lack adequate pregnancy studies and advise use only when benefit justifies risk; avoid extensive/prolonged skin exposure. Injectable pregnancy data are limited and animal studies identify developmental risks; infants exposed to systemic maternal steroids need assessment for adrenal effects. Zilretta has no direct human pregnancy data, and other-route evidence has limited applicability. Milk/infant effects are incompletely characterized for local forms; systemic steroids enter milk. Discuss route-specific benefits/risks. OTC Nasacort directs pregnant/breastfeeding users to a health professional."
+        ]
+      },
+      "source_sections": {
+        "tricream": [
+          "Pregnancy: Teratogenic Effects",
+          "Nursing Mothers"
+        ],
+        "triont": [
+          "Pregnancy: Teratogenic Effects",
+          "Nursing Mothers"
+        ],
+        "tripaste": [
+          "Teratogenic effects",
+          "Nursing Mothers"
+        ],
+        "triinj": [
+          "Pregnancy",
+          "Nursing Mothers"
+        ],
+        "zilretta": [
+          "8.1",
+          "8.2"
+        ],
+        "nasacort": [
+          "If pregnant or breast-feeding"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric and geriatric considerations",
+      "assertions": {
+        "paragraphs": [
+          "Skin treatment in children uses the least effective amount and monitors growth/systemic effects; no universal minimum age is specified. Dental-paste pediatric safety/efficacy is unknown. Nasacort is for age ≥ 2 with age-specific dosing and review beyond 2 months/year. Selected IM/IA steroid pediatric regimens are disease-specific; label class divided-dose ranges are not converted here into a depot-injection schedule. Zilretta pediatric safety/effectiveness is not established. Older adults may be more sensitive despite no overall injection-trial differences; dental-paste trials had insufficient older participants."
+        ]
+      },
+      "source_sections": {
+        "tricream": [
+          "Pediatric Use"
+        ],
+        "triont": [
+          "Pediatric Use"
+        ],
+        "tripaste": [
+          "Pediatric Use",
+          "Geriatric Use"
+        ],
+        "nasacort": [
+          "Directions"
+        ],
+        "triinj": [
+          "Pediatric Use",
+          "Geriatric Use",
+          "Dosage"
+        ],
+        "zilretta": [
+          "8.4",
+          "8.5"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic impairment",
+      "assertions": {
+        "paragraphs": [
+          "The selected skin, dental and nasal labels give no fixed renal/hepatic adjustment. Absorbed corticosteroids are primarily hepatically metabolized with renal/biliary excretion. Injection requires attention to renal fluid/electrolyte effects, BP/edema and enhanced effects in cirrhosis; individualize rather than applying an unvalidated percentage reduction."
+        ]
+      },
+      "source_sections": {
+        "tricream": [
+          "CLINICAL PHARMACOLOGY"
+        ],
+        "triont": [
+          "Pharmacokinetics"
+        ],
+        "tripaste": [
+          "Pharmacokinetics"
+        ],
+        "nasacort": [
+          "Drug Facts"
+        ],
+        "triinj": [
+          "PRECAUTIONS: General"
+        ],
+        "zilretta": [
+          "5.7",
+          "5.8"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "assertions": {
+        "paragraphs": [
+          "Triamcinolone acetonide activates glucocorticoid-receptor pathways with anti-inflammatory/immunomodulating effects; topical labels also describe antipruritic and vasoconstrictive effects. Exact topical anti-inflammatory mechanisms are incompletely established. Zilretta’s PLGA microspheres provide prolonged local release."
+        ]
+      },
+      "source_sections": {
+        "tricream": [
+          "CLINICAL PHARMACOLOGY"
+        ],
+        "tripaste": [
+          "CLINICAL PHARMACOLOGY"
+        ],
+        "zilretta": [
+          "11",
+          "12.1"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics and pharmacodynamics",
+      "assertions": {
+        "paragraphs": [],
+        "facts": [
+          [
+            "Skin / oral mucosa",
+            "Absorption varies with vehicle, barrier damage/inflammation, area, duration and skin occlusion. No universal plasma half-life predicts safety for every local product."
+          ],
+          [
+            "Immediate-release IM suspension",
+            "Effect can last weeks. Studied single IM 60–100 mg caused adrenal suppression within 24–48 hours, usually recovering in 30–40 days; this is not a repeat-dose instruction."
+          ],
+          [
+            "Zilretta IA",
+            "Systemically absorbed despite local delivery; study cortisol suppression began within 12–24 hours and normalized within 30–42 days."
+          ],
+          [
+            "Formulation distinction",
+            "Extended-release IA exposure differs from conventional IA suspension; label expressly prohibits substitution. Adrenal effects can outlast symptom benefit."
+          ]
+        ]
+      },
+      "source_sections": {
+        "tricream": [
+          "CLINICAL PHARMACOLOGY"
+        ],
+        "triont": [
+          "Pharmacokinetics"
+        ],
+        "tripaste": [
+          "Pharmacokinetics"
+        ],
+        "triinj": [
+          "CLINICAL PHARMACOLOGY"
+        ],
+        "zilretta": [
+          "12.2",
+          "12.3"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring parameters",
+      "assertions": {
+        "paragraphs": [],
+        "items": [
+          "Skin/dental: response, irritation, infection and atrophy; evaluate HPA suppression when large/prolonged/occluded exposure warrants (urinary free cortisol or ACTH stimulation per label).",
+          "Nasal: response by 1 week, nosebleeds, vision and child growth/use duration; review all steroid products.",
+          "Injection: infection/septic joint, glucose, BP/edema, electrolytes, mood, bone/muscle and ocular effects according to exposure/risk. Amneal recommends intraocular-pressure monitoring if systemic therapy continues > 6 weeks.",
+          "Before prolonged immunosuppression assess hepatitis B and relevant latent infections per current Amneal warnings; arrange withdrawal and stress-dose plans."
+        ]
+      },
+      "source_sections": {
+        "tricream": [
+          "General",
+          "Laboratory Tests",
+          "Pediatric Use"
+        ],
+        "tripaste": [
+          "General",
+          "Laboratory Tests"
+        ],
+        "nasacort": [
+          "Directions",
+          "Stop use and ask a doctor if"
+        ],
+        "triinj": [
+          "General",
+          "Pediatric Use",
+          "PRECAUTIONS"
+        ],
+        "zilretta": [
+          "5",
+          "17"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling information",
+      "assertions": {
+        "paragraphs": [
+          "Use the exact form only for its prescribed route/condition. Do not cover skin without instructions or rub dental paste in. Read Nasacort insert, avoid sharing and do not double a missed dose. Inform clinicians of all steroid use and injections; do not abruptly stop prolonged systemic therapy. Seek urgent care for airway swelling, severe infection, post-injection hot/swollen painful joint with fever, marked mood disturbance or serious eye symptoms. Avoid chickenpox/measles exposure during systemic immunosuppression and seek prompt advice if exposed."
+        ]
+      },
+      "source_sections": {
+        "tricream": [
+          "Information for the Patient"
+        ],
+        "tripaste": [
+          "Information for the Patient",
+          "DOSAGE AND ADMINISTRATION"
+        ],
+        "nasacort": [
+          "Directions",
+          "Warnings"
+        ],
+        "triinj": [
+          "Information for Patients"
+        ],
+        "zilretta": [
+          "17"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "paragraphs": [
+          "Encube triamcinolone acetonide 0.1% skin cream contains 1 mg/g. Example 15 g tube NDC 21922-062-04; also 30/80 g tubes and 454 g jar. Skin cream is not dental paste, nasal spray or injection."
+        ]
+      },
+      "source_sections": {
+        "tricream": [
+          "DESCRIPTION",
+          "HOW SUPPLIED"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Selected form",
+            "Strength / route"
+          ],
+          "rows": [
+            [
+              "Encube cream / ointment",
+              "0.1% = 1 mg/g · skin only"
+            ],
+            [
+              "Sun dental paste",
+              "0.1% = 1 mg/g · oral mucosal lesion"
+            ],
+            [
+              "Nasacort Allergy 24HR",
+              "55 mcg per spray · intranasal"
+            ],
+            [
+              "Amneal suspension",
+              "40 mg/mL · IM/IA; selected vials 1, 5 and 10 mL; contains benzyl alcohol"
+            ],
+            [
+              "Zilretta kit",
+              "32 mg delivered in 5 mL · IA knee only; powder vial contains 40 mg in microspheres, not all deliverable."
+            ],
+            [
+              "Other forms",
+              "Other concentrations, vehicles, ophthalmic injections and hexacetonide are outside these selected-label directions."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "tricream": [
+          "DESCRIPTION",
+          "HOW SUPPLIED"
+        ],
+        "triont": [
+          "DESCRIPTION",
+          "HOW SUPPLIED"
+        ],
+        "tripaste": [
+          "DESCRIPTION",
+          "HOW SUPPLIED"
+        ],
+        "nasacort": [
+          "Active ingredient"
+        ],
+        "triinj": [
+          "DESCRIPTION",
+          "HOW SUPPLIED"
+        ],
+        "zilretta": [
+          "3",
+          "11",
+          "16"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Skin cream: 15–30°C, avoid excess heat and protect from freezing. Selected skin ointment: 20–25°C. Dental paste: tightly closed at 20–25°C. Nasacort: 20–25°C; keep package/insert. Amneal 40 mg/mL: 20–25°C in carton, upright, do not refrigerate; allowed excursions 15–30°C, avoid temperatures below 20°C as label directs; discard single-dose remainder, opened multidose maximum 28 days at 15–25°C per label. Zilretta unopened kit: 2–8°C; if refrigeration unavailable, sealed kit ≤ 25°C up to 3 weeks then discard; no freezing or > 25°C exposure. Prepared-vial hold is separate: up to 4 hours ambient, resuspend. Keep securely away from children."
+        ]
+      },
+      "source_sections": {
+        "tricream": [
+          "HOW SUPPLIED"
+        ],
+        "triont": [
+          "HOW SUPPLIED"
+        ],
+        "tripaste": [
+          "Storage"
+        ],
+        "nasacort": [
+          "Other information"
+        ],
+        "triinj": [
+          "HOW SUPPLIED"
+        ],
+        "zilretta": [
+          "16",
+          "2.2"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "Not exhaustive of skin strengths/vehicles, 10/80 mg/mL injections, ophthalmic products, hexacetonide or international products.",
+    "No specialist systemic disease protocol, pediatric depot schedule, unaccessed guideline regimen or universal steroid taper supplied.",
+    "OTC nasal Drug Facts reviewed; enclosed consumer insert is not reproduced, and exact priming spray counts are not inferred. Follow package insert for device priming/cleaning."
+  ],
+  "resolved_source_findings": [
+    "Skin versus dental route and dental infection contraindication explicitly separated.",
+    "Zilretta repeat-dose evidence and non-substitutability retained.",
+    "Amneal label pediatric divided-dose class range not misrepresented as a depot IM schedule.",
+    "Dental label 7-day repair assessment and 2-week patient-contact wording both retained.",
+    "Amneal storage contains both protect-below-20 and allowed-15–30 excursion wording; preserved rather than inventing a unified threshold."
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, essential safety, three hero facts, cited disclosures, four safety cards and three product cards.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending"
+  },
+  "monograph_sha256": "b0b431c9c035bb341a4691a24cae5728a8745413d85206ec00c8561af21cd87d",
+  "front_matter_source_map": {
+    "name_synonym_description_facts": {
+      "tricream": [
+        "DESCRIPTION / indications / dosage forms / strengths"
+      ],
+      "triont": [
+        "DESCRIPTION / indications / dosage forms / strengths"
+      ],
+      "tripaste": [
+        "DESCRIPTION / indications / dosage forms / strengths"
+      ],
+      "nasacort": [
+        "DESCRIPTION / indications / dosage forms / strengths"
+      ],
+      "triinj": [
+        "DESCRIPTION / indications / dosage forms / strengths"
+      ],
+      "zilretta": [
+        "DESCRIPTION / indications / dosage forms / strengths"
+      ]
+    },
+    "essential_safety": {
+      "tricream": [
+        "Contraindications / warnings / precautions / administration"
+      ],
+      "triont": [
+        "Contraindications / warnings / precautions / administration"
+      ],
+      "tripaste": [
+        "Contraindications / warnings / precautions / administration"
+      ],
+      "nasacort": [
+        "Contraindications / warnings / precautions / administration"
+      ],
+      "triinj": [
+        "Contraindications / warnings / precautions / administration"
+      ],
+      "zilretta": [
+        "Contraindications / warnings / precautions / administration"
+      ]
+    }
+  }
+}

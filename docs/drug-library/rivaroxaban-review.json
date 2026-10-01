@@ -1,0 +1,622 @@
+{
+  "slug": "rivaroxaban",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "An oral anticoagulant with indication-specific adult and pediatric regimens. Dose, food requirement, organ-function restrictions and duration must match the exact treatment goal.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Xarelto \u00b7 Janssen full prescribing information",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Prescribing information warnings/precautions revision March 2026; Medication Guide revised June 2025; current SPL v65 effective September 10, 2026, API publication September 11, 2026. Current text says no specific reversal agent is available; IFU separately issued November 2024. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=10db92f9-2300-4a80-836b-673e1ae91610"
+    },
+    {
+      "id": "fda",
+      "title": "Update on the Safety of Andexxa \u00b7 FDA Safety Communication",
+      "publisher": "U.S. FDA",
+      "note": "December 2025 communication; current page states U.S. AstraZeneca commercial sales/manufacture ended December 22, 2025. Checked October 1, 2026. No non-U.S. availability inference.",
+      "url": "https://www.fda.gov/safety/medical-product-safety-information/update-safety-andexxa-astrazeneca-fda-safety-communication"
+    }
+  ],
+  "sourceEvidence": {
+    "label": {
+      "splVersion": "65",
+      "effectiveTime": "20260910",
+      "localEvidence": "/tmp/nas-drug-sources/xarelto.xml",
+      "xmlSha256": "207a11f71e526a8a1e8ebbd50df2e69ee65f8f9a90ded525af0a8d06b9e6e9d4",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/10db92f9-2300-4a80-836b-673e1ae91610.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=10db92f9-2300-4a80-836b-673e1ae91610",
+      "revision": "Prescribing information warnings/precautions revision March 2026; Medication Guide revised June 2025; current SPL v65 effective September 10, 2026, API publication September 11, 2026. Current text says no specific reversal agent is available; IFU separately issued November 2024. Checked October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "Full supporting public primary sections read; no paywall access"
+    },
+    "fda": {
+      "localEvidence": "/tmp/nas-drug-sources/andexxa-fda.html",
+      "htmlSha256": "f92014cba6c1ecf7b2d34b320974c80e26d9f50b9e7b1c43c955ec0af3d40357",
+      "url": "https://www.fda.gov/safety/medical-product-safety-information/update-safety-andexxa-astrazeneca-fda-safety-communication",
+      "revision": "December 2025 communication; current page states U.S. AstraZeneca commercial sales/manufacture ended December 22, 2025. Checked October 1, 2026. No non-U.S. availability inference.",
+      "checked": "2026-10-01",
+      "access": "Full supporting public primary sections read; no paywall access"
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Labeled uses",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "1.1\u20131.10"
+        ]
+      },
+      "claims": [
+        [
+          "Adults",
+          "Reduce stroke/systemic embolism in nonvalvular atrial fibrillation; treat DVT/PE; reduce recurrent DVT/PE after \u22656 months initial treatment."
+        ],
+        [
+          "Adults \u00b7 prophylaxis",
+          "DVT prophylaxis after hip/knee replacement; VTE/related death prophylaxis during/after acute medical illness with restricted mobility and added VTE risks, without high bleeding risk."
+        ],
+        [
+          "Adults \u00b7 CAD/PAD",
+          "With aspirin, reduce major cardiovascular events in CAD or major thrombotic vascular events in PAD, including after lower-extremity revascularization."
+        ],
+        [
+          "Birth to <18 years",
+          "Treat VTE and reduce recurrent VTE after \u22655 days initial parenteral anticoagulation, subject to infant eligibility."
+        ],
+        [
+          "Age \u22652 after Fontan procedure",
+          "Thromboprophylaxis with congenital heart disease; separate weight regimen."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Adult oral regimens",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1/Table1;2.2/Tables2\u20134;2.3\u20132.6"
+        ]
+      },
+      "claims": [
+        [
+          "Nonvalvular AF \u00b7 CrCl >50 mL/min",
+          "20 mg once daily with evening meal."
+        ],
+        [
+          "Nonvalvular AF \u00b7 CrCl \u226450 mL/min",
+          "15 mg once daily with evening meal. CrCl <30 was not studied in the pivotal trial; dialysis outcome benefit/risk is unknown, requiring specialist assessment."
+        ],
+        [
+          "DVT/PE treatment \u00b7 CrCl \u226515",
+          "15 mg twice daily with food for 21 days, then 20 mg once daily with food. Avoid when CrCl <15."
+        ],
+        [
+          "Recurrent DVT/PE risk reduction \u00b7 CrCl \u226515",
+          "10 mg once daily, with/without food, after \u22656 months standard anticoagulant treatment. Avoid CrCl <15."
+        ],
+        [
+          "Hip/knee replacement \u00b7 CrCl \u226515",
+          "10 mg daily with/without food, start 6\u201310 hours after surgery once hemostasis established: 35 days hip / 12 days knee. Avoid CrCl <15."
+        ],
+        [
+          "Eligible acutely ill medical patients \u00b7 CrCl \u226515",
+          "10 mg daily with/without food for 31\u201339 total days in hospital and after discharge. Avoid CrCl <15 and high bleeding risk."
+        ],
+        [
+          "CAD/PAD",
+          "2.5 mg twice daily with/without food plus aspirin 75\u2013100 mg daily. No renal dose adjustment in table; very low clearance/dialysis outcome data are limited/absent. After revascularization, start once hemostasis established."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric VTE \u00b7 doses per administration",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1/Table1;2.2/Tables2\u20134;2.3\u20132.6"
+        ]
+      },
+      "claims": [
+        "Begin after \u22655 days parenteral anticoagulation. All doses are with feeding/food. Suspension is 1 mg/mL: numeric mg equals mL, not a total-day volume. Below 6 months, birth gestation must be \u226537 weeks, oral feeding \u226510 days and current weight \u22652.6 kg. Review weight regularly, especially <12 kg. Twice-daily doses are about 12 hours apart; three-times-daily about 8 hours apart.",
+        [
+          "2.6\u20132.9 kg",
+          "0.8 mg three times daily",
+          "Suspension only."
+        ],
+        [
+          "3\u20133.9 kg",
+          "0.9 mg three times daily",
+          "Suspension only."
+        ],
+        [
+          "4\u20134.9 kg",
+          "1.4 mg three times daily",
+          "Suspension only."
+        ],
+        [
+          "5\u20136.9 kg",
+          "1.6 mg three times daily",
+          "Suspension only."
+        ],
+        [
+          "7\u20137.9 kg",
+          "1.8 mg three times daily",
+          "Suspension only."
+        ],
+        [
+          "8\u20138.9 kg",
+          "2.4 mg three times daily",
+          "Suspension only."
+        ],
+        [
+          "9\u20139.9 kg",
+          "2.8 mg three times daily",
+          "Suspension only."
+        ],
+        [
+          "10\u201311.9 kg",
+          "3 mg three times daily",
+          "Suspension only."
+        ],
+        [
+          "12\u201329.9 kg",
+          "5 mg twice daily",
+          "Suspension only."
+        ],
+        [
+          "30\u201349.9 kg",
+          "15 mg once daily",
+          "Suspension or whole tablet."
+        ],
+        [
+          "\u226550 kg",
+          "20 mg once daily",
+          "Suspension or whole tablet."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric Fontan prophylaxis \u00b7 age \u22652",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1/Table1;2.2/Tables2\u20134;2.3\u20132.6"
+        ]
+      },
+      "claims": [
+        "This is a separate regimen and may be taken with or without food. Each entry is the dose per administration, not a daily total. No pediatric regimen is inferred from the adult 2.5 mg tablet.",
+        [
+          "7\u20137.9 kg",
+          "1.1 mg twice daily",
+          "Suspension only."
+        ],
+        [
+          "8\u20139.9 kg",
+          "1.6 mg twice daily",
+          "Suspension only."
+        ],
+        [
+          "10\u201311.9 kg",
+          "1.7 mg twice daily",
+          "Suspension only."
+        ],
+        [
+          "12\u201319.9 kg",
+          "2 mg twice daily",
+          "Suspension only."
+        ],
+        [
+          "20\u201329.9 kg",
+          "2.5 mg twice daily",
+          "Suspension only."
+        ],
+        [
+          "30\u201349.9 kg",
+          "7.5 mg once daily",
+          "Suspension only."
+        ],
+        [
+          "\u226550 kg",
+          "10 mg once daily",
+          "Suspension or whole tablet."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Pediatric duration, vomiting and missed doses",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1/Table1;2.2/Tables2\u20134;2.3\u20132.6"
+        ]
+      },
+      "claims": [
+        "VTE generally continues \u22653 months, with extension to 12 months if needed; for catheter-related thrombosis below age 2, \u22651 month with possible extension to 3 months. Individualize further treatment by bleeding/recurrence risk. If vomiting/spitting within 30 minutes, give a new dose; after >30 minutes do not repeat. Contact the clinician if repeated. Once-daily missed doses: give only the same day, otherwise skip, never double. Twice daily: a missed morning dose may be given with the evening dose; a missed evening dose may be given only that evening. Three times daily: skip a missed dose and resume usual timing."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Adult missed doses and formulation delivery",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1/Table1;2.2/Tables2\u20134;2.3\u20132.6"
+        ]
+      },
+      "claims": [
+        "Adult 2.5 mg twice daily: take the next scheduled single dose. Adult 15 mg twice daily: take promptly to achieve 30 mg that day; two 15 mg tablets may be taken together. Adult once daily: take promptly that day, without doubling. Adults unable to swallow may crush tablets in applesauce; 15/20 mg must be followed by food. Gastric tube: confirm gastric placement, crush in 50 mL water; 15/20 mg requires immediate enteral feed. Avoid delivery distal to the stomach. Pediatric tablets must not be split; use suspension if unable to swallow the appropriate whole tablet. Suspension gastric-tube dosing requires flushing, with feeding for VTE but not necessarily Fontan."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Switching and procedures",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1/Table1;2.2/Tables2\u20134;2.3\u20132.6"
+        ]
+      },
+      "claims": [
+        "A prescriber must plan transitions. Warfarin\u2192rivaroxaban: start after warfarin cessation when INR <3.0 adults / <2.5 children. Adult reverse transition may use parenteral anticoagulant plus warfarin when the next rivaroxaban dose is due; pediatric reverse transition uses \u22652 days overlap, INR before the next rivaroxaban dose, continuing until INR \u22652.0. INR is reliable \u226524 hours after stopping rivaroxaban. Other rapid-onset anticoagulants generally replace rivaroxaban at its next scheduled dose; start rivaroxaban 0\u20132 hours before the next other-agent dose and omit that dose, or at stopping continuous IV heparin. If interruption is needed for surgery, the label specifies \u226524 hours before and restart after adequate hemostasis; neuraxial procedures require their own individualized protocol, not a universal 24-hour rule."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed;4;5.1\u20135.10;6;10;FDA Andexxa U.S. commercial status"
+        ]
+      },
+      "claims": [
+        "Serious/fatal bleeding can occur in any organ; promptly assess blood loss and discontinue for active pathological hemorrhage. Antiplatelets, NSAIDs, other anticoagulants and SSRIs/SNRIs increase risk.",
+        "Premature interruption without another appropriate anticoagulant increases thrombosis risk. Coordinate interruption, surgery and transitions.",
+        "Spinal/epidural puncture or catheters can cause hematoma and permanent paralysis. Concomitant hemostasis-altering medicines, traumatic/repeated puncture and spinal abnormalities increase risk; urgently assess back pain, numbness/weakness or bowel/bladder changes. Exact optimal timing is unknown.",
+        "Renal impairment raises exposure; monitor more often if function may decline. Acute renal failure requires reassessment/discontinuation according to indication. Avoid adult Child-Pugh B/C liver impairment or hepatic coagulopathy.",
+        "For acute-medical-illness primary prophylaxis, do not use with high bleeding-risk conditions such as bronchiectasis/pulmonary hemorrhage, active in-hospital cancer treatment, recent active GI ulcer or bleeding, or dual antiplatelet treatment.",
+        "Not recommended with prosthetic heart valves (including TAVR), triple-positive antiphospholipid syndrome, or as the acute substitute for IV heparin in hemodynamically unstable PE/possible thrombolysis or embolectomy."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed;4;5.1\u20135.10;6;10;FDA Andexxa U.S. commercial status"
+        ]
+      },
+      "claims": [
+        "Active pathological bleeding or severe rivaroxaban hypersensitivity, such as anaphylaxis. Renal/hepatic and interaction restrictions are additional label warnings, not silently recategorized as contraindications."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning \u00b7 Thrombosis and spinal/epidural hematoma",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed;4;5.1\u20135.10;6;10;FDA Andexxa U.S. commercial status"
+        ]
+      },
+      "claims": [
+        "Premature cessation increases thrombotic events; consider another anticoagulant when stopping for reasons other than pathological bleeding or completing treatment. Neuraxial procedures can produce spinal/epidural hematoma and permanent paralysis; monitor for neurologic impairment and obtain urgent treatment."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "sourceIds": [
+        "label",
+        "fda"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed;4;5.1\u20135.10;6;10;FDA Andexxa U.S. commercial status"
+        ],
+        "fda": [
+          "Boxed;4;5.1\u20135.10;6;10;FDA Andexxa U.S. commercial status"
+        ]
+      },
+      "claims": [
+        "Bleeding is the most common adverse effect; clinically important uterine/menstrual bleeding can occur. Pediatric trials also reported vomiting, limb pain/fatigue or cough/rash depending on indication. Serious postmarketing reports include allergy, liver injury, blood-cell disorders, anticoagulant-related kidney injury and severe skin reactions. Overdose requires urgent medical care; stop for associated bleeding and use specialist supportive/hemostatic management, with charcoal considered for recent ingestion. Dialysis is ineffective; vitamin K/protamine do not reverse its effect. Current U.S. label states no specific reversal agent is available; FDA states AstraZeneca ended U.S. Andexxa sales/manufacture December 22, 2025. Do not rely on older availability claims."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "7.1\u20137.4;5.2"
+        ]
+      },
+      "claims": [
+        "Avoid combined P-gp/strong CYP3A inhibitors such as ketoconazole or ritonavir; they raise exposure/bleeding risk. The label gives a clarithromycin exception based on PK data, not a universal rule for every inhibitor.",
+        "With CrCl 15 to <80 mL/min, combined P-gp/moderate CYP3A inhibitors (e.g., erythromycin) should not be used unless benefit justifies risk.",
+        "Avoid combined P-gp/strong CYP3A inducers such as carbamazepine, phenytoin, rifampin and St. John\u2019s wort: reduced exposure can increase thrombosis.",
+        "Other anticoagulants, aspirin/other antiplatelets, NSAIDs and SSRIs/SNRIs increase bleeding risk. CAD/PAD aspirin combination is indication-specific; do not independently add or remove it."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Adult renal and hepatic considerations",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.2 renal Table4;8.1\u20138.7;5.4\u20135.5"
+        ]
+      },
+      "claims": [
+        "Calculate adult creatinine clearance using actual weight. VTE treatment/recurrent-risk reduction and surgical/medical prophylaxis avoid CrCl <15; at 15\u2013<30, clinical data are limited and close bleeding observation is needed. AF pivotal evidence below 30 is absent; dialysis dosing is based on exposure, with clinical stroke/bleeding benefit unknown. CAD/PAD trials excluded CrCl <15 and provide no dialysis outcome evidence despite the no-adjustment table. These limitations require specialist assessment. Avoid Child-Pugh B/C or any liver disease with coagulopathy."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric organ and age limits",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.2 renal Table4;8.1\u20138.7;5.4\u20135.5"
+        ]
+      },
+      "claims": [
+        "Age \u22651: no adjustment for mild renal impairment (eGFR 50 to \u226480 mL/min/1.73 m\u00b2); avoid eGFR <50. Below age 1, avoid serum creatinine above the label\u2019s age-specific 97.5th percentile; exact age/table assessment is required, not an adult CrCl substitution. Pediatric hepatic-impairment data are absent. Infant gestation/feeding/weight eligibility applies below 6 months, and Fontan prophylaxis begins at age 2. The 2.5 mg tablet is not recommended for pediatric use."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy, lactation and older age",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.2 renal Table4;8.1\u20138.7;5.4\u20135.5"
+        ]
+      },
+      "claims": [
+        "Pregnancy dose is unstudied; limited data do not establish developmental safety. Use only when benefit justifies maternal/fetal risks, including pregnancy/delivery hemorrhage, with a specialist plan. Rivaroxaban is detected in human milk; infant-effect/milk-production data are insufficient, so discuss feeding benefits and risks. Discuss pregnancy plans and abnormal uterine bleeding. Older adults have higher absolute bleeding and thrombotic event rates; assess renal function and comorbidity rather than using an age-only dose reduction."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "12.1\u201312.3"
+        ]
+      },
+      "claims": [
+        "Selectively inhibits free factor Xa and prothrombinase without an antithrombin cofactor, reducing thrombin generation. It has no direct platelet-aggregation effect."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "12.1\u201312.3"
+        ]
+      },
+      "claims": [
+        [
+          "Adult peak / food",
+          "Peak ~2\u20134 hours. 2.5/10 mg bioavailability ~80\u2013100%, food independent; 15/20 mg must be taken with food."
+        ],
+        [
+          "Protein binding",
+          "Approximately 92\u201395%; high binding makes dialysis ineffective."
+        ],
+        [
+          "Metabolism / elimination",
+          "CYP3A4/5, CYP2J2 and hydrolysis; P-gp/BCRP substrate. About 36% recovered unchanged in urine in a radiolabeled-dose study."
+        ],
+        [
+          "Adult half-life",
+          "5\u20139 hours in younger adults; 11\u201313 hours in older studied adults."
+        ],
+        [
+          "Pediatric exposure",
+          "Weight/frequency schedules are indication-specific; half-life decreases with younger age."
+        ]
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "5.2/5.4;12.2;17;IFU"
+        ]
+      },
+      "claims": [
+        "Assess signs of bleeding, hemoglobin/hematocrit when blood loss is suspected, renal function periodically and more often with possible decline, hepatic restrictions and interactions. Review dose/food/timing and adherence at each transition. Monitor pediatric weight and adjust the applicable table. Standard clotting tests are not reliable dose targets; the label does not recommend routine anti-Xa monitoring. Notify the team before surgery, dental or spinal procedures."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Patient and caregiver counseling",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "5.2/5.4;12.2;17;IFU"
+        ]
+      },
+      "claims": [
+        "Do not stop without a plan. Obtain urgent care for uncontrolled bleeding, black stools, vomiting blood, fainting or new neurologic symptoms after a spinal procedure. Confirm whether food is required and use the schedule-specific missed-dose rule. For suspension, use only the supplied oral syringe; shake slowly for 10 seconds before dosing, avoid foam and repeat if lumps/granules remain. The caregiver should verify mg/mL and give the full dose; seek advice for repeated vomiting. Review all prescription, OTC and herbal medicines."
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product \u00b7 Xarelto 20 mg tablet",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;16;2.7;IFU;package panels"
+        ]
+      },
+      "claims": [
+        [
+          "Ingredient / route",
+          "Rivaroxaban 20 mg \u00b7 oral tablet."
+        ],
+        [
+          "Appearance / imprint",
+          "Dark red triangle, film coated; downward triangle / 20 and Xa."
+        ],
+        [
+          "Manufacturer for label",
+          "Janssen Pharmaceuticals; licensed from Bayer."
+        ],
+        [
+          "Example NDC",
+          "50458-579-30 \u00b7 bottle of 30."
+        ],
+        [
+          "U.S. status",
+          "Prescription anticoagulant; current NDA product labeling."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;16;2.7;IFU;package panels"
+        ]
+      },
+      "claims": [
+        [
+          "Tablets",
+          "2.5, 10, 15 and 20 mg. Pediatric use requires the exact whole-tablet regimen; never split to construct small doses."
+        ],
+        [
+          "Oral suspension",
+          "1 mg/mL after pharmacy reconstitution; granule bottle contains 155 mg, NDC 50458-575-01, with two oral syringes."
+        ],
+        [
+          "Adult VTE starter pack",
+          "NDC 50458-584-51: 42 tablets of 15 mg plus 9 tablets of 20 mg; a 30-day pack does not determine total treatment duration."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;16;2.7;IFU;package panels"
+        ]
+      },
+      "claims": [
+        "Tablets/granules/reconstituted liquid: 20\u201325\u00b0C, excursions 15\u201330\u00b0C; do not freeze granules/liquid. Pharmacist adds 150 mL purified water to granules and shakes 60 seconds; do not add flavor. Dispense upright in original bottle with supplied syringes and a discard date 60 days after reconstitution. At home shake slowly 10 seconds before use. Crushed adult tablets are stable in water/applesauce for up to 4 hours; follow food/gastric-tube instructions."
+      ]
+    },
+    {
+      "section": "hero/essential",
+      "card": "Scope and essential safety",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "1.1\u20131.10",
+        "Boxed;4;5.1\u20135.10;6;10;FDA Andexxa U.S. commercial status",
+        "3;16;2.7;IFU;package panels"
+      ],
+      "claims": [
+        "An oral anticoagulant with indication-specific adult and pediatric regimens. Dose, food requirement, organ-function restrictions and duration must match the exact treatment goal.",
+        "Premature discontinuation raises thrombosis risk; active bleeding needs urgent assessment. New back pain, leg weakness/numbness or bowel/bladder dysfunction after a spinal procedure may indicate a hematoma requiring emergency care.",
+        [
+          "Therapeutic class",
+          "Direct factor Xa inhibitor"
+        ],
+        [
+          "Representative brand",
+          "Xarelto"
+        ],
+        [
+          "Reference focus",
+          "Current U.S. tablets and pediatric 1 mg/mL suspension"
+        ]
+      ]
+    }
+  ],
+  "exclusions": [
+    "Non-U.S. marketing/doses; other manufacturers\u2019 packages; no unverified guideline or emergency-management algorithm"
+  ],
+  "gaps": [
+    {
+      "material": false,
+      "topic": "Highly specialized procedural/emergency or infant renal algorithms",
+      "resolution": "No universal neuraxial interval or PCC/reversal dose is supplied. Infant renal exclusion refers to exact age-specific Table4 rather than inventing one creatinine cutoff. Full source/table links retained; clinical team must use exact age and procedural risk."
+    }
+  ],
+  "materialErrors": [],
+  "validation": {
+    "schema": "Passed validateMonograph with zero errors, 2026-10-01.",
+    "renderedPage": "Pending parent integration QA"
+  },
+  "monographSha256": "91ec82138ef43508c697f8291b03dcf5a83f521db57e329d494455c70d98bd4b",
+  "sourceInterpretationNotes": [
+    "Clinical revision and SPL effectiveTime/version/API publication are distinguished. Public package status does not establish stock availability.",
+    "Current SPL v65 text says no specific reversal agent is available with the warnings/precautions change dated March 2026; the June 2025 date belongs to the Medication Guide; the FDA December 2025 U.S. commercial cessation is independently verified. Older Andexxa availability claims are not imported.",
+    "Pediatric VTE Table2 and Fontan Table3 original XML cells reviewed with empty frequency cells preserved; per-dose/frequency/total-day columns distinguished.",
+    "Adult AF table \u226450 and CAD/PAD no-adjustment statements accompanied by below30/dialysis lack of clinical outcome evidence; adult renal restrictions not universalized across indications or copied to children."
+  ]
+}

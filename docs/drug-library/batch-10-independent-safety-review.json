@@ -1,0 +1,496 @@
+{
+  "reviewDate": "2026-10-01",
+  "scope": "Independent targeted critical-assertion primary-source review. Only enumerated assertions independently verified; not exhaustive second clinical signoff, browser QA or build verification.",
+  "status": "Ten profiles targeted-reviewed; complete within enumerated scope.",
+  "profiles": [
+    {
+      "drug": "testosterone",
+      "fileSha256": "bc1570fd2563471e72734e27217d332bb4758250b20c32632293060bb16b8e91",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Jatenzo starts 237 mg twice daily with food; specified equal twice-daily steps are 158/198/237/316/396 mg. Serum sample six hours after morning dose after at least seven days, 425–970 ng/dL maintenance range, and absence of current BP boxed warning agree.",
+          "sourceId": "jat",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ed7b5d41-7475-4c10-99b9-b62b3434ae60",
+          "sourceSection": "Sections 2,4–5",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "HHS June 18, 2026 communication explicitly describes requested/proposed testosterone-label changes. Profile preserves existing product-specific contraindications rather than asserting implementation.",
+          "sourceId": "hhs2026",
+          "sourceUrl": "https://www.hhs.gov/press-room/fda-requests-updates-testosterone-therapy-labeling.html",
+          "sourceSection": "June18,2026 requested changes",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Current Depo explicitly retains serious cardiac/hepatic/renal disease contraindication and uncontrolled-hypertension avoid-use wording; distinction from other products is accurate.",
+          "sourceId": "depo",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cfbb53d4-b868-4a28-8436-f9112eb01c39",
+          "sourceSection": "Contraindications;Warnings",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Xyosted trough measured seven days after dose following six weeks; <350 increase25 mg, ≥650 decrease25, intermediate maintain. SC abdomen only.",
+          "sourceId": "xy",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a3d204c-be26-49e0-8599-0ac12a272e81",
+          "sourceSection": "Section 2",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Aveed supervised deep gluteal slow sixty-to-ninety-second injection and thirty-minute observation after every administration match current box/REMS.",
+          "sourceId": "aveed",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f80f025b-17d8-40af-8739-20ce07902045",
+          "sourceSection": "Sections 2,Box/REMS",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warnings: gel transfer and Aveed injection reactions",
+          "Adverse reactions and excessive exposure"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "amitriptyline",
+      "fileSha256": "8c849cabf9837d792e9b8af259daa77a0feca5258a36b8be49aaaf052cd07d2e",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Outpatient 75 mg divided or 50–100 mg bedtime, 150 mg/day limit; exceptional hospitalized 300 mg/day distinguished. Cisapride/MAOI restrictions, acute-MI recovery wording and unapproved pediatric status agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4e520c63-1cf6-40f6-a51c-3f9b0e181342",
+          "sourceSection": "Dosage;Contraindications;Box",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning: suicidality and pediatric status",
+          "Adverse reactions, withdrawal, and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "fenofibrate",
+      "fileSha256": "3b68bd455959cb2a02bfa968f382ec533cd2d58426b02f249926ac1d53991299",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Antara 43 or 130 mg daily, primary hyperlipidemia 130 mg, with or without food; eGFR 30 to <60 starts 43 mg. Severe impairment/ESRD/dialysis contraindicated. Repeat TG at 4–8 weeks and stop inadequate response after two months agree.",
+          "sourceId": "antara",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=24790a18-0291-4b88-a724-acac43b616ce",
+          "sourceSection": "Sections 2–5",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Lupin48/145 once daily with or without food, eGFR30–<60 starts48 mg; eGFR<30/ESRD/dialysis contraindicated and resin spacing one hour before/four–six after agree.",
+          "sourceId": "feno48",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45364845-c3b4-40a1-a677-82202ffaa5ad",
+          "sourceSection": "Sections 2–4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Amneal 54/160 mg tablets require meals, severe hypertriglyceridemia 54–160 daily, primary dyslipidemia start 160 and renal start 54. Nursing-mother formal contraindication is correctly distinguished from selected newer labels.",
+          "sourceId": "feno145",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=65f5dcad-5073-4347-9ec9-e7f350b134c4",
+          "sourceSection": "Sections 2,4",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Glenmark micronized capsules require meals, primary start 200, hypertriglyceridemia 67–200 daily, renal impairment and older patients start 67. Product-specific renal/food doses agree.",
+          "sourceId": "fenomic",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e7204052-02cf-4b38-835b-d8754c74b2cd",
+          "sourceSection": "Dosage and administration",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "triamcinolone",
+      "fileSha256": "b0b431c9c035bb341a4691a24cae5728a8745413d85206ec00c8561af21cd87d",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Zilretta single 32 mg/5 mL intra-articular knee injection; no demonstrated repeat regimen and no substitution. Prepared vial may remain up to four hours ambient, with resuspension and supplied diluent; these instructions agree.",
+          "sourceId": "zilretta",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cd5c4673-21f2-4126-9556-da847b3a228b",
+          "sourceSection": "Sections 2,IFU",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Amneal 40 mg/mL systemic deep gluteal start 60 with individualized usual 40–80; small joint initial 2.5–5 and large 5–15 mg, historical adult multi-joint total 80 explicitly described, not a repeat permission.",
+          "sourceId": "triinj",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c38dcd37-9840-4f71-a5c9-97380c8107f2",
+          "sourceSection": "Dosage and administration",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "55 mcg/spray nasal age at least twelve two each nostril daily reduced to one after response; six–under twelve one may increase to two then reduce; two–under six one and below two no use. Shake each use and stop/review after one week without improvement agree.",
+          "sourceId": "nasacort",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4bff57a5-cce0-401c-a0fe-23c65c1b7ddc",
+          "sourceSection": "Directions",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and excess exposure"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "folic-acid",
+      "fileSha256": "46f249598723ee38d550ec46e9f5b6d79b5308fe5b98914e4f4a292765e18264",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Oral 0.2 mg/mL solution equals 5 mL per prescribed 1 mg; initial up to 1 mg daily, maintenance birth–23 months 0.1 mg, age two–under four up to 0.3, age at least four/adult 0.4, pregnancy/lactation anemia maintenance 0.8. Rule out pernicious anemia above 0.4 except pregnancy/lactation and masking warning above 0.1 agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=96618bf8-6c03-4df3-9896-b7ef27ca392a",
+          "sourceSection": "Sections 2–5",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Selected tablet has stricter above-0.1-mg B12 exclusion/adequate cobalamin instruction, correctly distinguished from oral-solution threshold.",
+          "sourceId": "tablet",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7778ac96-7817-455a-a177-22ecb276c67f",
+          "sourceSection": "Dosage and administration; Precautions",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Selected injection 5 mg/mL and IM/IV/SC routes are distinguished from oral liquid; benzyl alcohol 15 mg/mL and aluminum accumulation risks above 4–5 mcg/kg/day parenteral exposure agree.",
+          "sourceId": "injection",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c5b2b84d-9f5e-4b81-ba10-9f2854e5dce9",
+          "sourceSection": "Description; Warnings; Dosage and administration",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "CDC 400 mcg daily applies to women capable of pregnancy; prior NTD-affected pregnancy planning recurrence prevention 4000 mcg daily one month before conception through first three pregnancy months agrees. Profile distinguishes prevention from anemia maintenance.",
+          "sourceId": "cdc",
+          "sourceUrl": "https://www.cdc.gov/folic-acid/hcp/clinical-overview/index.html",
+          "sourceSection": "Prevention recommendations",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning status",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": []
+    },
+    {
+      "drug": "rivaroxaban",
+      "fileSha256": "91ec82138ef43508c697f8291b03dcf5a83f521db57e329d494455c70d98bd4b",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Adult indication-specific renal, food and timing regimens agree. Pediatric VTE table per-administration doses from 0.8 mg three times daily at 2.6–2.9 kg to 20 mg once daily at at least 50 kg, five-day parenteral prerequisite, infant eligibility and food requirements agree; Fontan separate seven-weight-band doses and optional food agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=10db92f9-2300-4a80-836b-673e1ae91610",
+          "sourceSection": "Sections 2.1–2.2",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Pediatric renal eGFR below 50 avoid and infant age-specific creatinine threshold, adult Child-Pugh B/C or hepatic coagulopathy avoid; no pediatric split tablets; gastric administration/food rules and strong P-gp/CYP interactions with clarithromycin exception agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=10db92f9-2300-4a80-836b-673e1ae91610",
+          "sourceSection": "Sections 2.2–2.7,7.2–7.3,8.6–8.7",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Current March 2026 label states a specific anti-factor-Xa reversal agent is not available; dialysis ineffective, specialist hemostatic care and vitamin K/protamine limitations agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=10db92f9-2300-4a80-836b-673e1ae91610",
+          "sourceSection": "Sections 5.2,10",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "FDA confirms AstraZeneca ended US manufacture/sale of Andexxa December 22, 2025; profile does not infer non-US availability.",
+          "sourceId": "fda",
+          "sourceUrl": "https://www.fda.gov/safety/medical-product-safety-information/update-safety-andexxa-astrazeneca-fda-safety-communication",
+          "sourceSection": "December 2025 safety communication",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning · Thrombosis and spinal/epidural hematoma",
+          "Adverse reactions and overdose"
+        ],
+        "productCards": 3
+      },
+      "issues": [
+        {
+          "severity": "source_metadata",
+          "status": "closed-author-corrected-and-current-file-reread",
+          "claim": "Source note calls clinical PI June 2025.",
+          "evidence": "Exact current DailyMed highlights Revised 3/2026 and recent §5.2 change March 2026; June 2025 is Medication Guide revision.",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=10db92f9-2300-4a80-836b-673e1ae91610",
+          "resolution": "Reference note now distinguishes March 2026 prescribing-information warnings/precautions revision from June 2025 Medication Guide; direct current label agrees. Clinical assertions unchanged."
+        }
+      ],
+      "sourceGaps": []
+    },
+    {
+      "drug": "hydrochlorothiazide-losartan",
+      "fileSha256": "0f328f829eebafd1f0ec815f588a12b2699a50cf9995b1be2dcb5feb0e6cd7a4",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Losartan-first/HCTZ-second dose order, usual 50/12.5 once daily and approximately three-week escalation to maximum 100/25; monotherapy pathways and separate LVH 50/12.5→100/12.5→100/25 agree. CrCl greater than 30 usual regimens versus less than 30 unestablished is scoped without inventing exact-30 instruction. Hepatic initiation not recommended because losartan 25 mg unavailable; formal contraindications hypersensitivity, anuria and aliskiren/diabetes agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4116ccde-2e23-45f4-b12f-6337df877744",
+          "sourceSection": "Sections 2,4,8.7,12.3",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "HCTZ at least four hours before or four–six hours after cholestyramine/colestipol resin agrees.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4116ccde-2e23-45f4-b12f-6337df877744",
+          "sourceSection": "Section 7.5",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "authorFinalization": "Author finalization complete; current dose text reread and SHA recorded."
+    },
+    {
+      "drug": "olmesartan",
+      "fileSha256": "aa55e93c4d34b191f8dbcee93f5c7ab84eaa3695ff8317c900e722b267b785fb",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Adult 20 daily→40 after two weeks and no benefit above 40/twice-daily split; age six-plus 20–under35 kg starts10 maximum20, at least35 starts20 maximum40; chart not extrapolated under20 kg. No initial moderate-to-marked renal/hepatic adjustment, dialysis PK gap, and formal aliskiren/diabetes contraindication agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c49a7f23-2af0-4607-9f21-114970f8630d",
+          "sourceSection": "Sections 2,4,8.6–8.7",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Exact 200 mL 2 mg/mL suspension twenty20mg tablets/50mL purified water, five-minute stand and five one-minute shake/stand cycles, add100mL Ora-Sweet plus50mL Ora-Plus then one-minute shake; refrigerated2–8C four weeks with resuspension agrees.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c49a7f23-2af0-4607-9f21-114970f8630d",
+          "sourceSection": "Section 2.2",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Sprue-like enteropathy warning, colesevelam at least four hours after olmesartan, and distinct lactation decision versus no-breastfeeding counseling wording agree.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c49a7f23-2af0-4607-9f21-114970f8630d",
+          "sourceSection": "Sections 5.5,7.5,8.2,17",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [],
+      "authorFinalization": "Author finalization complete; current dose text reread and SHA recorded."
+    },
+    {
+      "drug": "paroxetine",
+      "fileSha256": "cacdc86382ec0f8b583156aac0c39712a3494b3a634cb055bc88c2dfebff1714",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "IR MDD/PTSD start20 maximum50, OCD20 maximum60, PD10 maximum60; SAD/GAD recommended20 and studied ranges60/50 are distinguished from efficacy above20. Elder/severe renal/hepatic start10 maximum40, fourteen-day MAOI separation, thioridazine/pimozide/hypersensitivity contraindications and tamoxifen/CYP2D6 warning agree.",
+          "sourceId": "ir",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ef3b5cbe-f9e1-c1ac-79da-cfe14e3a7e7e",
+          "sourceSection": "Sections 2.2–2.5,4,5.11,7",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "CR MDD25→maximum62.5, PD12.5→75, SAD12.5→37.5, PMDD12.5→25 and continuous/luteal fourteen-days-before-through-onset schedule; severe renal/hepatic or elder start12.5 with maximum50 MDD/PD and37.5 SAD agree. Whole tablets and separate release-form strengths correctly preserved.",
+          "sourceId": "cr",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=483bd97f-c4d0-4e23-aaa8-6334f4471e0c",
+          "sourceSection": "Sections 2.2–2.5,3,16",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Brisdelle menopause VMS only 7.5 mg bedtime; same dose for elderly and renal/hepatic impairment despite exposure increases, separate pregnancy contraindication, no psychiatric indication and fourteen-day MAOI separation agree.",
+          "sourceId": "vms",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=502311b3-b617-4cbd-a3ab-a60f2c62880a",
+          "sourceSection": "Sections 1–4,8.5–8.7",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Paxil highlights incorrectly name 10–40mg tablets extended-release. Profile explicitly flags discrepancy and correctly uses full ordinary-tablet formulation distinct from CR; no propagation.",
+          "sourceId": "ir",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ef3b5cbe-f9e1-c1ac-79da-cfe14e3a7e7e",
+          "sourceSection": "Highlights versus full Sections 3,11",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed warning: suicidal thoughts and behaviors",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [
+        "Current Brisdelle source lacks substantive lactation section. Actual profile explicitly flags this and supplies no inferred low-dose breastfeeding safety claim.",
+        "Paxil highlights release-form inconsistency and CR Fahrenheit storage typo are explicitly flagged; correct full formulation/Celsius values used."
+      ]
+    },
+    {
+      "drug": "ferrous-sulfate",
+      "fileSha256": "b99ee3bf3e1f2f2bfd4bd025ce7e5060102118c06bba1f4d1b454e43d3c6c07b",
+      "result": "No material clinical mismatch identified in enumerated assertions.",
+      "checks": [
+        {
+          "assertion": "Selected Richmond325 mg sulfate supplies65 mg elemental per tablet, adult one daily preferably after meals, child dosing clinician-directed; prominent child-poisoning warning and tetracycline two-hour separation agree. Supplement panel/unapproved OTC metadata are not claimed as FDA approval or prescription boxed warning.",
+          "sourceId": "label",
+          "sourceUrl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5514d582-19b5-4f1e-b794-f790afb8211c",
+          "sourceSection": "Supplement Facts; Directions; Warnings; listing metadata",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Pediatric guidance older than one month prevention1–2 mg elemental/kg/day maximum30, treatment3–6, neonatal local guidance, distinct Ferro-liquid6 mg/mL and Ferro-grad325 mg→105 elemental agree; not extrapolated from US65mg product.",
+          "sourceId": "rch",
+          "sourceUrl": "https://www.rch.org.au/clinicalguide/guideline_index/iron_deficiency/",
+          "sourceSection": "Treatment; product tables",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Adult initial one tablet daily/approximately50–100 mg elemental, alternate-day option for intolerance, monitoring first four weeks and approximately three months after Hb normalization agree with retained full public primary HTML.",
+          "sourceId": "bsg",
+          "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8515119/",
+          "sourceSection": "2021 guideline treatment recommendation18 and oral iron discussion",
+          "access": "retained-full-public-primary-HTML-read; current-web-retrieval-reCAPTCHA",
+          "result": "agrees"
+        },
+        {
+          "assertion": "Healthy-person UL40 through13 and45 from14 distinguished from medically supervised treatment; pregnancy27/lactationadult9/adolescent10 dietary totals, levothyroxine separation at least four hours and PPI absorption warning agree.",
+          "sourceId": "ods",
+          "sourceUrl": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/",
+          "sourceSection": "Health risks; UL/RDA tables; medication interactions",
+          "access": "direct-public-primary-source-retrieved",
+          "result": "agrees"
+        }
+      ],
+      "structureRecheck": {
+        "safetyCards": 4,
+        "safetyCardOrder": [
+          "Warnings and precautions",
+          "Contraindications",
+          "Boxed-warning status",
+          "Adverse reactions"
+        ],
+        "productCards": 3
+      },
+      "issues": [],
+      "sourceGaps": [
+        "Selected supplement label inconsistent DV percentages excluded; product-specific elemental amount preserved."
+      ],
+      "retainedEvidence": {
+        "bsgHtmlPath": "/tmp/nas-drug-sources/iron-bsg.html",
+        "bsgHtmlSha256": "494e10d99418f06ac3e3da8d428177bf955e6c97365729a0e6de5e4d294a4076"
+      }
+    }
+  ],
+  "pending": [],
+  "limitations": [
+    "Direct public primary sources retrieved. Full-profile and other-formulation verification remains author audit responsibility.",
+    "Testosterone independently checked selected Jatenzo/Depo/Xyosted/Aveed critical claims and HHS requested-change distinction; fenofibrate selected Antara/Lupin; triamcinolone selected Zilretta. No full second audit of every product claimed.",
+    "BSG current web open encountered reCAPTCHA; retained full primary HTML was actually read for enumerated treatment recommendations, with SHA recorded. No blocked-page access is claimed."
+  ],
+  "unresolvedMaterialClinicalErrors": []
+}

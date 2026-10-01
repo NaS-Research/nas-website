@@ -1,0 +1,424 @@
+{
+  "slug": "amitriptyline",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "A U.S. oral-tablet reference for labeled depression treatment, with explicit pediatric and off-label scope boundaries. All eight blueprint sections reviewed. Product-specific focused monograph; not an exhaustive adverse-event catalog.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Amitriptyline hydrochloride tablets · Current full prescribing information",
+      "publisher": "DailyMed / Sun Pharmaceutical Industries",
+      "note": "SPL version 10, effective 20260908; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4e520c63-1cf6-40f6-a51c-3f9b0e181342",
+      "checked": "2026-10-01",
+      "version": "SPL version 10, effective 20260908; current public product labeling.",
+      "spl_version": "10",
+      "spl_effective_time": "20260908",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/4e520c63-1cf6-40f6-a51c-3f9b0e181342.xml",
+      "downloaded_xml_sha256": "f4bada6ce1967d4cd0767028156f06e40dc2b107b966f87f109b4ad4545a5e7d"
+    }
+  ],
+  "assertion_to_source": [
+    {
+      "section_id": "indications",
+      "card_title": "Approved indication and scope",
+      "assertions": [
+        "Amitriptyline tablets are labeled for relief of symptoms of depression. The label does not approve treatment of bipolar depression or pediatric patients. This profile focuses on the U.S. oral tablet label; off-label neuropathic-pain or migraine regimens, non-U.S. liquid products, and compounded preparations require separate current guidance and formulation verification."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "INDICATIONS AND USAGE",
+            "WARNINGS / Screening for Bipolar Disorder",
+            "BOXED WARNING",
+            "Pediatric use"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Adult depression regimens",
+      "assertions": [
+        "The label’s usual outpatient start is 75 mg/day in divided doses, increased if needed to 150 mg/day, preferably by increasing late-afternoon or bedtime doses. Its alternative is 50–100 mg at bedtime, increasing by 25 or 50 mg if needed to 150 mg/day. These are labeled ranges, not an instruction for every patient to start at the same dose; older or sensitive patients need lower starts. Sedation may precede benefit, and an adequate antidepressant response can take up to 30 days."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "DOSAGE AND ADMINISTRATION / Initial Dosage for Adults",
+            "Geriatric Use"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Inpatient and maintenance treatment",
+      "assertions": [
+        "Hospitalized patients may begin at 100 mg/day, increasing gradually to 200 mg/day; the label reserves up to 300 mg/day for a small number of hospitalized patients. Maintenance is usually 50–100 mg/day, sometimes 40 mg/day, often as a single bedtime dose. Use the lowest dose preserving response. The label recommends maintenance for at least 3 months to reduce relapse; actual duration depends on clinical assessment. Do not abruptly stop established treatment."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "DOSAGE AND ADMINISTRATION / Initial Dosage for Adults, Maintenance",
+            "ADVERSE REACTIONS / Withdrawal Symptoms"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Older adults, pediatric limits, and impaired clearance",
+      "assertions": [
+        "Older adults should start at the low end and be observed closely. The label gives 10 mg three times daily plus 20 mg at bedtime as one lower-dose example for older patients unable to tolerate higher doses; it is not a required initial regimen. Although the historical dosage section also mentions adolescents, the boxed warning and pediatric section say pediatric use is not approved and safety/efficacy are unestablished; use below age 12 is not recommended. No validated renal/hepatic dose table is provided. Account for impaired hepatic function, age, interacting drugs, and clinical response rather than inventing a fixed adjustment."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Geriatric Use",
+            "DOSAGE AND ADMINISTRATION / Adolescent and Elderly Patients, Usage in Pediatric Patients",
+            "BOXED WARNING",
+            "Pediatric Use",
+            "Drug Interactions"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Warnings and precautions",
+      "assertions": [
+        "Monitor worsening depression, suicidal thoughts, agitation, and unusual behavior, particularly early in therapy or after dose changes. Screen for bipolar disorder before treating depressive symptoms; mania, hypomania, or psychosis can emerge. Use caution with seizure history, cardiovascular disease, thyroid disease or thyroid medicines, urinary retention, and anatomically narrow angles. Cardiac conduction changes and arrhythmias are important, especially at high doses. New eye pain/vision changes, severe palpitations, or syncope warrant urgent assessment.",
+        "Serotonin syndrome can occur alone or with serotonergic agents; suspected toxicity requires discontinuation and urgent treatment. Symptoms include mental-status changes, fever, sweating, tremor/rigidity, rapid heart rate, and GI symptoms. SIADH/hyponatremia may occur, especially in older adults, people taking diuretics, or those depleted of volume; assess confusion, weakness, or seizures promptly. Sedation and anticholinergic effects increase fall risk. Prescribe the smallest practical quantity when intentional overdose is a concern. Use caution in impaired liver function. Coordinate electroconvulsive therapy and elective surgery with the treating team; the label advises withholding several days before elective surgery when possible. Glucose can rise or fall. The selected 50-mg tablet contains tartrazine, which can cause allergy including bronchial asthma, particularly with aspirin hypersensitivity; check strength-specific excipients."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "WARNINGS / Clinical Worsening and Suicide Risk, Serotonin Syndrome, Screening for Bipolar Disorder, SIADH, Angle-Closure Glaucoma",
+            "Geriatric Use",
+            "PRECAUTIONS / General",
+            "DESCRIPTION"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Contraindications",
+      "assertions": [
+        "Prior hypersensitivity, concomitant monoamine oxidase inhibitor use, and concomitant cisapride are directed against in the contraindications section. Wait at least 14 days after discontinuing an MAOI before starting amitriptyline, then titrate cautiously. Do not initiate with linezolid or intravenous methylene blue; urgent use of such MAOIs requires coordinated interruption and monitoring. The label states that use during acute recovery after myocardial infarction is not recommended; this wording should not be converted into a prohibition for every remote infarction."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "CONTRAINDICATIONS",
+            "WARNINGS / Serotonin Syndrome"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Boxed warning: suicidality and pediatric status",
+      "assertions": [
+        "Antidepressant trials found increased suicidal thinking/behavior versus placebo in children, adolescents, and young adults; the risk must be balanced against clinical need. Monitor all ages for clinical worsening, suicidality, and behavior changes, and involve caregivers when appropriate. Depression itself increases suicide risk. Amitriptyline is not approved for pediatric use; the presence of adolescent doses elsewhere in this older-format label does not change that status."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "BOXED WARNING",
+            "WARNINGS / Clinical Worsening and Suicide Risk",
+            "Pediatric Use"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Adverse reactions, withdrawal, and overdose",
+      "assertions": [
+        "Dry mouth, constipation, blurred vision, urinary retention, sedation, dizziness, cognitive effects, and orthostasis are important tolerability problems. The label also lists arrhythmias, seizures, blood-count abnormalities, hepatic reactions, and other serious events, including some reported with related tricyclics rather than specifically this drug; do not assign an invented incidence. Abrupt discontinuation can cause nausea, headache, malaise, sleep disturbance, or restlessness; taper under clinical supervision. Overdose can rapidly cause life-threatening arrhythmias, hypotension, seizures, or coma. Suspected overdose requires immediate emergency/poison-center assessment and ECG/cardiac monitoring; a reassuring drug level does not exclude danger. Do not attempt home decontamination."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "ADVERSE REACTIONS",
+            "Withdrawal Symptoms",
+            "OVERDOSAGE / Manifestations, Management"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "MAOIs and serotonergic medicines",
+      "assertions": [
+        "Avoid concurrent MAOIs, including linezolid and intravenous methylene blue. Other serotonergic agents—including SSRIs/SNRIs, tramadol, fentanyl, lithium, buspirone, triptans, and St. John’s wort—can increase serotonin-syndrome risk. Assess the combination and monitor closely rather than inventing a universal dose reduction. Observe the MAOI washout and specialist instructions when switching."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "CONTRAINDICATIONS",
+            "WARNINGS / Serotonin Syndrome"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "CYP2D6 inhibitors and topiramate",
+      "assertions": [
+        "CYP2D6 poor metabolism or inhibitors such as fluoxetine, paroxetine, quinidine, cimetidine, and some antiarrhythmics can increase tricyclic exposure and toxicity. Lower doses and plasma-level monitoring may be needed when an inhibitor is added; reassess when it is removed. Fluoxetine’s long persistence means at least 5 weeks may be necessary before starting a tricyclic after stopping it. Topiramate can markedly increase amitriptyline concentrations; adjust according to clinical response rather than plasma level alone."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Drug Interactions / Drugs Metabolized by P450 2D6, Topiramate"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Sedative, anticholinergic, and cardiovascular combinations",
+      "assertions": [
+        "Alcohol and other CNS depressants add impairment; alcohol also increases danger from intentional overdose. Anticholinergics can add urinary retention, ileus, or hyperpyrexia, especially in hot weather. Sympathomimetics, including epinephrine in local anesthetics, need close supervision and careful dose adjustment. Review thyroid medicines, other conduction/QT-affecting agents, and antihypertensives; amitriptyline can block guanethidine-type effects. Cisapride is specifically prohibited because of QT/arrhythmia risk. Disulfiram-associated delirium is also described."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "CONTRAINDICATIONS",
+            "WARNINGS / General precautions",
+            "Drug Interactions"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pregnancy and lactation",
+      "assertions": [
+        "Amitriptyline crosses the placenta; adequate controlled pregnancy studies are absent, and the label advises use only when maternal benefit justifies fetal risk. It enters breast milk. The selected label advises deciding whether to discontinue nursing or the medicine, considering maternal need; this is precautionary labeling rather than a formal breastfeeding contraindication. An individualized assessment should account for the infant’s age and clinical monitoring; no unverified claim of zero infant risk is supplied."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Usage in Pregnancy / accompanying narrative",
+            "Nursing Mothers"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pediatric and older-adult use",
+      "assertions": [
+        "Pediatric safety/efficacy are unestablished and the product is not approved for pediatric use; under age 12 is not recommended. Older adults are especially susceptible to anticholinergic cognitive effects, delirium, urinary retention, constipation, blurred vision, sedation, and falls. Start low, observe closely, and reassess whether benefit outweighs these effects."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "BOXED WARNING",
+            "Pediatric Use",
+            "Geriatric Use",
+            "Usage in Pediatric Patients"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Renal, hepatic, and comorbid disease",
+      "assertions": [
+        "The label provides no numerical renal-adjustment or hepatic-adjustment algorithm. Hepatic metabolism and CYP2D6 interactions can raise exposure; cautious selection and clinical/plasma-level review may be appropriate. Assess cardiovascular disease, seizure history, narrow angles, urinary obstruction, thyroid disease, and hyponatremia risk. Serious impairment requires individualized prescribing, not an inference of no adjustment from missing guidance."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "METABOLISM",
+            "Drug Interactions",
+            "Geriatric Use",
+            "WARNINGS",
+            "PRECAUTIONS / General"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Mechanism",
+      "assertions": [
+        "Amitriptyline inhibits neuronal uptake of norepinephrine and serotonin. The label regards this action as a proposed contributor to antidepressant activity rather than a completely established human mechanism. Sedation can appear before mood improves. Anticholinergic effects contribute both to tolerability problems and toxicity."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "CLINICAL PHARMACOLOGY",
+            "DOSAGE AND ADMINISTRATION",
+            "ADVERSE REACTIONS"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Absorption, metabolism, and concentration assessment",
+      "assertions": [
+        "Oral amitriptyline is rapidly absorbed and metabolized through pathways including N-demethylation and hydroxylation; little unchanged drug appears in urine. CYP2D6 activity and interacting inhibitors can markedly change tricyclic exposure. The label does not give a universal therapeutic concentration target or a simple dose-to-level relationship. Levels can help assess nonresponse, adherence, or toxicity in selected patients, but dose decisions and overdose treatment depend on clinical findings."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "METABOLISM",
+            "Drug Interactions",
+            "DOSAGE AND ADMINISTRATION / Plasma Levels",
+            "OVERDOSAGE"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Monitoring",
+      "assertions": [
+        "Assess suicide risk and bipolar history before treatment; monitor closely early and after dose changes. Review sedation, orthostasis/falls, cognitive changes, constipation, urinary retention, and cardiac symptoms. Evaluate ECG/cardiac status when disease or symptoms warrant, and assess sodium when hyponatremia is suspected or risk is high. Reconcile CYP2D6 inhibitors and serotonergic medicines; consider levels for the specific label-described clinical situations. Review treatment response over weeks rather than escalating solely because sedation occurs before antidepressant benefit."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "WARNINGS",
+            "Geriatric Use",
+            "Drug Interactions",
+            "DOSAGE AND ADMINISTRATION / Plasma Levels, Initial Dosage for Adults"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Patient and caregiver counseling",
+      "assertions": [
+        "Report new suicidal thoughts, agitation, mania, or unusual behavior promptly; obtain urgent help for serotonin toxicity, seizures, fainting, severe palpitations, acute eye pain, or overdose. Avoid alcohol and hazardous tasks until the effect on alertness is known. Tell clinicians and dentists about treatment and all other medicines. Do not stop abruptly; discuss a supervised taper. Keep tablets secure and use only the prescribed quantity. Families/caregivers should communicate concerning changes rather than waiting for the next routine visit."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Information for Patients",
+            "Clinical Worsening and Suicide Risk",
+            "Serotonin Syndrome",
+            "Angle-Closure Glaucoma",
+            "Withdrawal Symptoms",
+            "OVERDOSAGE"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Representative product",
+      "assertions": [
+        "The selected Sun label identifies a 10-mg pink, round tablet imprinted MP 10, supplied in a 100-count bottle under NDC 57664-687-88. Other manufacturers and strengths have different appearances and NDCs; use the imprint and dispensed label together. Check strength-specific inactive ingredients when allergy matters."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "DESCRIPTION",
+            "HOW SUPPLIED"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Dosage forms and strengths",
+      "assertions": [
+        "This selected U.S. product supplies oral tablets containing amitriptyline hydrochloride 10, 25, 50, 75, 100, or 150 mg. These strengths do not establish a pediatric indication or a safe maximum for every patient. Non-U.S. liquids or compounded preparations need their own concentration and administration verification."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "DESCRIPTION",
+            "HOW SUPPLIED",
+            "BOXED WARNING"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Storage and handling",
+      "assertions": [
+        "Store at 20–25°C (68–77°F), in a tight, light-resistant container as specified by the label. Keep out of children’s reach and secure tablets when overdose risk is present; prescription quantity should reflect the safety assessment."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "HOW SUPPLIED / Storage",
+            "Clinical Worsening and Suicide Risk"
+          ]
+        }
+      ]
+    }
+  ],
+  "material_errors": [],
+  "gaps": [],
+  "limitations": [
+    "Focus is the U.S. Sun oral tablet label; no off-label neuropathic-pain/migraine dosing, non-U.S. liquid, or compounded-product extrapolation. Public NICE and LactMed page access was attempted but returned access errors; no claim of reading them or evidence derived from them is made.",
+    "Historical adolescent dosing text is reconciled with the boxed warning and pediatric section: pediatric safety/efficacy unestablished and not approved.",
+    "No fixed renal/hepatic dosing table, therapeutic drug-level range, or taper schedule is invented where the selected label does not establish one. Lactation wording is explicitly the current product-label precaution, not a universal contraindication or a LactMed conclusion.",
+    "Overdose management is summarized as immediate emergency/poison-center assessment; no obsolete or potentially unsafe home decontamination instruction is propagated."
+  ],
+  "regulatory_records": [
+    {
+      "source_file": "amitriptyline",
+      "spl_metadata_approval_records": [
+        {
+          "application": "ANDA089399",
+          "type": "ANDA"
+        },
+        {
+          "application": "ANDA089399",
+          "type": "ANDA"
+        },
+        {
+          "application": "ANDA089399",
+          "type": "ANDA"
+        },
+        {
+          "application": "ANDA089399",
+          "type": "ANDA"
+        },
+        {
+          "application": "ANDA089399",
+          "type": "ANDA"
+        },
+        {
+          "application": "ANDA089399",
+          "type": "ANDA"
+        }
+      ],
+      "interpretation": "Official SPL product metadata; not an assertion that every indication, population, or off-label use is approved."
+    }
+  ]
+}

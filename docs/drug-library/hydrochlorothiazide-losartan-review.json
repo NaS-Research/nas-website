@@ -1,0 +1,590 @@
+{
+  "slug": "hydrochlorothiazide-losartan",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "CurrentU.S.OrganonHyzaar50/12.5,100/12.5,100/25mg adultcombinationtablets; fullHTN/LVHlabels,componentinteractions/organ/volume/electrolyte/populationlimits",
+  "excludedRegimens": [
+    "Standalonecomponent/otherARB indicationsorregimens; pediatriccombinationuse",
+    "Hepatic-initiation25mglosartanregimen unavailableinfixedstrengths",
+    "SevererenalimpairmentCrCl<30unestablished; exact30boundarynotresolvedinlabel",
+    "Universalinitialcombinationtreatment despitevolume/labelprecautions; numericcritical-careoverdoseprotocol"
+  ],
+  "sources": [
+    {
+      "id": "label",
+      "title": "Hyzaar · Prescribing information",
+      "publisher": "DailyMed / Organon LLC",
+      "note": "Current SPL version 10, effective 2025-11-26. PI identifier uspi-og0954a-t-2506r002; Patient Information March 2023.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4116ccde-2e23-45f4-b12f-6337df877744"
+    },
+    {
+      "id": "guideline",
+      "title": "2025 High Blood Pressure Guideline · Public summary",
+      "publisher": "American Heart Association / ACC and collaborating societies",
+      "note": "August 14, 2025 public Top Things to Know; combination-treatment and standardized home-BP context only. Full guideline access not claimed.",
+      "url": "https://professional.heart.org/en/science-news/2025-high-blood-pressure-guideline/top-things-to-know"
+    }
+  ],
+  "labelMetadata": [
+    {
+      "sourceId": "label",
+      "product": "hyzaar",
+      "setid": "4116ccde-2e23-45f4-b12f-6337df877744",
+      "effectiveTime": "20251126",
+      "version": "10",
+      "documentVersion": "PIidentifieruspi-og0954a-t-2506r002;PatientInformation03/2023",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/4116ccde-2e23-45f4-b12f-6337df877744.xml",
+      "xmlSha256": "741c002685616cad7a9b7c4d7d390e603ca29ddb341a2304bd334a0832cb8627"
+    }
+  ],
+  "evidence": [
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/hyzaar.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/hydrochlorothiazide-losartan/hyzaar.xml",
+      "sha256": "741c002685616cad7a9b7c4d7d390e603ca29ddb341a2304bd334a0832cb8627",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/4116ccde-2e23-45f4-b12f-6337df877744.xml"
+    },
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/hyzaar-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/hydrochlorothiazide-losartan/hyzaar-sections.json",
+      "sha256": "5901c52468746bb467079ecf10aeaf161b85ecd8d557c817d8f2485fbce095d6",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/4116ccde-2e23-45f4-b12f-6337df877744.xml"
+    },
+    {
+      "sourceId": "guideline",
+      "localEvidence": "/tmp/nas-drug-sources/batch10-htn2025-web.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/hydrochlorothiazide-losartan/batch10-htn2025-web.json",
+      "sha256": "af86581f53434006a9bcb333d5e1a0932910d4e59da7e6cb08a5eae48ba6c9d9",
+      "url": "https://professional.heart.org/en/science-news/2025-high-blood-pressure-guideline/top-things-to-know"
+    }
+  ],
+  "sourceEvidenceRoot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/hydrochlorothiazide-losartan",
+  "sourceManifest": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/hydrochlorothiazide-losartan/source-manifest.json",
+  "assertionToSourceMap": [
+    {
+      "section": "indications",
+      "card": "Hypertension",
+      "assertions": {
+        "paragraphs": [
+          "Hyzaar lowers blood pressure and can be given with other antihypertensives. Its label generally excludes initial therapy except severe hypertension when prompt control is judged to outweigh the risks of starting combination therapy. It must not be initial treatment in intravascular volume depletion."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§1.1 generalHTN/initialtherapyexception and§5.2 volume-depletion prohibition"
+      },
+      "review": "Reviewed full supporting current product-label subsections. General monitoring/urgent assessment counseling identified as clinical synthesis. Public guideline claims narrowly scoped."
+    },
+    {
+      "section": "indications",
+      "card": "Hypertension with left ventricular hypertrophy",
+      "assertions": {
+        "paragraphs": [
+          "The combination is labeled to reduce stroke risk in people with hypertension and left ventricular hypertrophy. The LIFE study did not provide evidence that the cardiovascular benefit applies to Black patients; this is a specific outcome-evidence limitation, not a prohibition on treating their blood pressure."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§1.2/8.6 fullLIFEsubgroup outcome limitation notBPcontraindication"
+      },
+      "review": "Reviewed full supporting current product-label subsections. General monitoring/urgent assessment counseling identified as clinical synthesis. Public guideline claims narrowly scoped."
+    },
+    {
+      "section": "indications",
+      "card": "Current treatment context",
+      "assertions": {
+        "paragraphs": [
+          "The 2025 adult hypertension guideline favors two first-line agents in one pill for stage 2 hypertension, alongside individualized assessment. That general recommendation does not replace Hyzaar’s product-specific initiation precautions or authorize pediatric use. Standalone losartan/HCTZ, other ARBs and other combinations require their own labels."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "guideline"
+      ],
+      "sourceSections": {
+        "label": "§1.1/5.2/8.4 productscope",
+        "guideline": "2025public summaryitem8stage2two-firstline-singlepillpreference; scopecontextonly"
+      },
+      "review": "Reviewed full supporting current product-label subsections. General monitoring/urgent assessment counseling identified as clinical synthesis. Public guideline claims narrowly scoped."
+    },
+    {
+      "section": "dosage",
+      "card": "Adult hypertension dose pathways",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Starting situation",
+            "Initial combination once daily",
+            "If response remains inadequate"
+          ],
+          "rows": [
+            [
+              "Usual labeled starting regimen",
+              "50 mg / 12.5 mg",
+              "After about 3 weeks, increase to 100/25 mg once daily as needed."
+            ],
+            [
+              "Uncontrolled on losartan 50 mg/day",
+              "50 mg / 12.5 mg",
+              "After about 3 weeks: one 100/25 mg tablet or two 50/12.5 mg tablets together once daily."
+            ],
+            [
+              "Uncontrolled on losartan 100 mg/day",
+              "100 mg / 12.5 mg",
+              "After about 3 weeks: one 100/25 mg tablet or two 50/12.5 mg tablets together once daily."
+            ],
+            [
+              "HCTZ 25 mg inadequate, or controlled but causes hypokalemia",
+              "50 mg / 12.5 mg",
+              "Reassess; after about 3 weeks may increase to 100/25 mg."
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Full§2.1 allmonotherapytransitionpaths,three-weekescalation,max100/25/two50/12.5"
+      },
+      "review": "Reviewed full supporting current product-label subsections. General monitoring/urgent assessment counseling identified as clinical synthesis. Public guideline claims narrowly scoped."
+    },
+    {
+      "section": "dosage",
+      "card": "Hypertension/LVH pathway",
+      "assertions": {
+        "paragraphs": [
+          "If BP remains uncontrolled on losartan 50 mg, initiate 50/12.5 mg; if further reduction is needed, increase to 100/12.5 mg and then 100/25 mg once daily. Add another suitable antihypertensive when further lowering is needed. The stroke-evidence limitation in Black patients remains relevant."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§2.2 exactLVH50/12.5→100/12.5→100/25sequence;§8.6"
+      },
+      "review": "Reviewed full supporting current product-label subsections. General monitoring/urgent assessment counseling identified as clinical synthesis. Public guideline claims narrowly scoped."
+    },
+    {
+      "section": "dosage",
+      "card": "Renal, hepatic, and volume constraints",
+      "assertions": {
+        "paragraphs": [
+          "Correct volume/salt depletion before use. The PK section permits usual regimens when creatinine clearance is greater than 30 mL/min; safety/effectiveness below 30 mL/min are not established. Do not infer an exact 30 mL/min boundary recommendation. Initiation in hepatic impairment is not recommended because the appropriate losartan 25 mg starting dose is unavailable in these fixed strengths. Pediatric safety and effectiveness are not established."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§5.2/8.4/8.7/8.8/12.3 >30usual,<30unestablished,25mglosartanliverstartnotavailable"
+      },
+      "review": "Reviewed full supporting current product-label subsections. General monitoring/urgent assessment counseling identified as clinical synthesis. Public guideline claims narrowly scoped."
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and missed doses",
+      "assertions": {
+        "paragraphs": [
+          "Take with or without food. If a dose is missed, take it when remembered unless close to the next dose, then skip it and resume the usual schedule. Do not double doses. Two 50/12.5 mg tablets equal 100/25 mg; two 100/12.5 mg tablets would exceed the labeled losartan maximum and are not the labeled escalation."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "PatientInformation HowShouldITake food/missed dose;§2.1 exacttwo50/12.5—nottwo100/12.5—arithmetic"
+      },
+      "review": "Reviewed full supporting current product-label subsections. General monitoring/urgent assessment counseling identified as clinical synthesis. Public guideline claims narrowly scoped."
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Hypotension may follow dehydration or salt depletion. Renal artery stenosis, CKD, severe heart failure and volume depletion increase vulnerability to acute renal failure; monitor renal function and reassess a clinically important decline.",
+          "HCTZ can cause low potassium, sodium and magnesium; losartan can cause high potassium. Monitor electrolytes including calcium. Thiazides can worsen glucose tolerance, raise lipid or urate levels, precipitate gout and activate/exacerbate lupus. Losartan may attenuate HCTZ-related urate elevation, but does not eliminate gout risk.",
+          "Sudden eye pain or reduced vision may signal HCTZ-related acute myopia/angle-closure glaucoma, which can cause permanent vision loss. Stop the HCTZ-containing product and seek immediate care. Hypersensitivity can occur with or without prior allergy/asthma. HCTZ is associated with non-melanoma skin cancer; protect skin from sunlight and arrange skin screening."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Full§5.1–5.7;§6.2nonmelanomaskincancer;§17 sunscreen/exam; noincidencegeneralization"
+      },
+      "review": "Reviewed full supporting current product-label subsections. General monitoring/urgent assessment counseling identified as clinical synthesis. Public guideline claims narrowly scoped."
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Hypersensitivity to a product component, anuria, and coadministration with aliskiren in a patient with diabetes are formal contraindications. The selected Hyzaar contraindication list does not separately list every sulfonamide allergy; allergy history remains relevant to HCTZ hypersensitivity and eye-event risk."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§4exactcomponenthypersensitivity/anuria/aliskirendiabetes;§5.4/5.6 allergyeyecontext"
+      },
+      "review": "Reviewed full supporting current product-label subsections. General monitoring/urgent assessment counseling identified as clinical synthesis. Public guideline claims narrowly scoped."
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning",
+      "assertions": {
+        "paragraphs": [
+          "Fetal toxicity: discontinue Hyzaar as soon as pregnancy is detected. Drugs acting directly on the renin-angiotensin system can injure or kill the developing fetus. Discuss another regimen before planned pregnancy."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "FullBox/§5.1/8.1"
+      },
+      "review": "Reviewed full supporting current product-label subsections. General monitoring/urgent assessment counseling identified as clinical synthesis. Public guideline claims narrowly scoped."
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Common reported reactions include dizziness, upper respiratory infection, cough and back pain. Component or combination reports include orthostasis, electrolyte disorders, renal dysfunction, gastrointestinal symptoms and photosensitivity. Serious postmarketing reports include angioedema/anaphylaxis with airway involvement or pulmonary manifestations, hepatitis, thrombocytopenia, rhabdomyolysis and skin reactions. Reported non-melanoma skin-cancer risk is associated with HCTZ. Voluntary reports do not establish incidence or causality."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§6.1/6.2 fulladverseclinical/postmarketing/componentattributionandcausalitylimits"
+      },
+      "review": "Reviewed full supporting current product-label subsections. General monitoring/urgent assessment counseling identified as clinical synthesis. Public guideline claims narrowly scoped."
+    },
+    {
+      "section": "interactions",
+      "card": "Potassium and dual RAS blockade",
+      "assertions": {
+        "paragraphs": [
+          "Potassium-raising drugs, supplements or salt substitutes can cause hyperkalemia. Combining RAS inhibitors increases hypotension, syncope, hyperkalemia and kidney injury. Aliskiren with this product is contraindicated in diabetes and should be avoided with renal impairment (GFR below 60 mL/min). Closely monitor BP, kidney function and electrolytes when another RAS-active medicine is involved."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§7.1/7.4 exactaliskirendiabetescontra vsGFR<60avoid;§17 potassium"
+      },
+      "review": "Reviewed full supporting current product-label subsections. General monitoring/urgent assessment counseling identified as clinical synthesis. Public guideline claims narrowly scoped."
+    },
+    {
+      "section": "interactions",
+      "card": "NSAIDs and lithium",
+      "assertions": {
+        "paragraphs": [
+          "NSAIDs, including COX-2 inhibitors, can reduce BP/diuretic response and cause acute kidney injury, particularly with older age, dehydration or CKD. Monitor kidney function and clinical response. Losartan and thiazides may raise lithium concentrations; monitor lithium carefully."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Full§7.2/7.3 renal/BPeffects/NSAID/lithium"
+      },
+      "review": "Reviewed full supporting current product-label subsections. General monitoring/urgent assessment counseling identified as clinical synthesis. Public guideline claims narrowly scoped."
+    },
+    {
+      "section": "interactions",
+      "card": "Resins, diabetes treatment, and other diuretic interactions",
+      "assertions": {
+        "paragraphs": [
+          "HCTZ should be given at least 4 hours before or 4–6 hours after cholestyramine/colestipol resins to limit impaired absorption. Diabetes medicines may need adjustment. Alcohol, barbiturates or opioids can worsen orthostasis; corticosteroids, ACTH or licorice-derived glycyrrhizin can intensify electrolyte loss. Other antihypertensives add BP effects; nondepolarizing muscle relaxant responsiveness may increase."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§7.5 exactresinseparation;§12.2 druginteractions all relevantHCTZdrugclasses"
+      },
+      "review": "Reviewed full supporting current product-label subsections. General monitoring/urgent assessment counseling identified as clinical synthesis. Public guideline claims narrowly scoped."
+    },
+    {
+      "section": "interactions",
+      "card": "Losartan metabolism",
+      "assertions": {
+        "paragraphs": [
+          "Rifampin lowers losartan and active-metabolite exposure; fluconazole raises parent losartan but lowers active-metabolite exposure. Clinical consequences of CYP 2 C 9 inhibition were not established in the label; review response rather than inventing a fixed adjustment."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Full§12.3 DrugInteractions losartanrifampin/fluconazole effect anduncertainPDconsequences"
+      },
+      "review": "Reviewed full supporting current product-label subsections. General monitoring/urgent assessment counseling identified as clinical synthesis. Public guideline claims narrowly scoped."
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "RAS blockade can cause oligohydramnios, fetal renal failure, lung/skull abnormalities and death, especially with later-pregnancy exposure; this does not imply safe first-trimester use. HCTZ crosses the placenta and can cause neonatal jaundice or thrombocytopenia. Stop on pregnancy recognition and arrange assessment. Losartan human milk data are unknown, while thiazides enter milk. The label directs a decision to discontinue nursing or discontinue the drug, considering maternal need."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Complete§8.1/8.2 risk/data/clinicalconsiderations,drugvsnursing;Box/PatientInformation"
+      },
+      "review": "Reviewed full supporting current product-label subsections. General monitoring/urgent assessment counseling identified as clinical synthesis. Public guideline claims narrowly scoped."
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": {
+        "paragraphs": [
+          "Pediatric safety and effectiveness of Hyzaar are not established; single-ingredient losartan pediatric dosing cannot be applied to this fixed combination. Older adults in outcome studies had similar overall effectiveness but more adverse events; assess orthostasis, volume status, kidney function and medication burden."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§8.4/8.5 productpediatricnotestablished andelderlyoutcomestudyadverseeffects"
+      },
+      "review": "Reviewed full supporting current product-label subsections. General monitoring/urgent assessment counseling identified as clinical synthesis. Public guideline claims narrowly scoped."
+    },
+    {
+      "section": "populations",
+      "card": "Kidney, liver, and population evidence",
+      "assertions": {
+        "paragraphs": [
+          "Renal impairment increases exposure to both components, particularly HCTZ; monitor carefully even when usual regimens are allowed. Severe renal impairment is not an established-use population. Do not initiate this fixed combination for hepatic impairment when a lower losartan start is needed. The Black-patient LIFE subgroup limitation concerns stroke/CV evidence; BP treatment still requires individualized assessment."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§8.6–8.8/12.3 fullorgan/populationcontext"
+      },
+      "review": "Reviewed full supporting current product-label subsections. General monitoring/urgent assessment counseling identified as clinical synthesis. Public guideline claims narrowly scoped."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "assertions": {
+        "paragraphs": [
+          "Losartan and its active metabolite block angiotensin II AT1 receptors without inhibiting ACE. HCTZ increases renal sodium and chloride excretion, reducing volume and increasing potassium loss through RAS/aldosterone responses. Adding an ARB can attenuate potassium loss, but both hypokalemia and hyperkalemia remain possible."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§12.1/12.2 mechanismsbothcomponents andpotassiumcontext;§5.5"
+      },
+      "review": "Reviewed full supporting current product-label subsections. General monitoring/urgent assessment counseling identified as clinical synthesis. Public guideline claims narrowly scoped."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics and time course",
+      "assertions": {
+        "paragraphs": [
+          "Losartan peaks near 1 hour; its active metabolite near 3–4 hours. Parent half-life is about 2 hours and active-metabolite half-life 6–9 hours. CYP-mediated first-pass metabolism produces the active metabolite; losartan/metabolite are not removed by hemodialysis. HCTZ is not metabolized and is cleared by the kidneys, with a plasma half-life about 5.6–14.8 hours. Diuresis begins within 2 hours, peaks about 4 hours and lasts 6–12 hours; BP reassessment spans weeks."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Full§12.2/12.3 active-metabolitePK,HCTZrenal/half-life/diuresis;nohigherdosePKapprovals extrapolated"
+      },
+      "review": "Reviewed full supporting current product-label subsections. General monitoring/urgent assessment counseling identified as clinical synthesis. Public guideline claims narrowly scoped."
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": {
+        "paragraphs": [
+          "Document baseline and follow-up BP, creatinine/renal function and potassium, sodium and other electrolytes according to risk; assess calcium, glucose and urate/gout concerns. Reassess after dose or interacting-drug changes and during vomiting, diarrhea or poor intake. Current adult guidance supports standardized home BP monitoring with a reliable cuff and clinician feedback; cuffless watches should not substitute for validated measurements."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "guideline"
+      ],
+      "sourceSections": {
+        "label": "§5.2/5.3/5.5/7/17 labandvolume/clinicalmonitoring synthesis",
+        "guideline": "2025publicsummary item9 cuff/homeBP/clinicianfeedback"
+      },
+      "review": "Reviewed full supporting current product-label subsections. General monitoring/urgent assessment counseling identified as clinical synthesis. Public guideline claims narrowly scoped."
+    },
+    {
+      "section": "practice",
+      "card": "Counseling and urgent symptoms",
+      "assertions": {
+        "paragraphs": [
+          "Discuss pregnancy plans and report pregnancy immediately. Avoid unapproved potassium supplements/salt substitutes or OTC NSAID use. Report lightheadedness; dehydration can intensify hypotension. New eye pain or sudden vision reduction requires stopping and urgent assessment. Seek emergency care for swelling affecting breathing. Use sun protection and arrange skin examinations; report new skin lesions."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§17 fullpregnancy/symptom/potassium/eye/skincounseling;PatientInformationairwayemergency"
+      },
+      "review": "Reviewed full supporting current product-label subsections. General monitoring/urgent assessment counseling identified as clinical synthesis. Public guideline claims narrowly scoped."
+    },
+    {
+      "section": "practice",
+      "card": "Overdose",
+      "assertions": {
+        "paragraphs": [
+          "Excess dosing can produce hypotension, tachycardia or bradycardia, dehydration and dangerous electrolyte depletion; hypokalemia may worsen digitalis-related arrhythmias. Obtain urgent medical or poison-control help. Supportive management includes BP, fluid, renal and electrolyte assessment; losartan/metabolite are not dialyzable and HCTZ dialytic removal is uncertain."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "Full§10 bothcomponents andPatientInformationexcess-doseadvice; digitalis/hypokalemia/dialyzability"
+      },
+      "review": "Reviewed full supporting current product-label subsections. General monitoring/urgent assessment counseling identified as clinical synthesis. Public guideline claims narrowly scoped."
+    },
+    {
+      "section": "product",
+      "card": "Representative tablet · Hyzaar 50/12.5 mg",
+      "assertions": {
+        "facts": [
+          [
+            "Appearance",
+            "Yellow, oval, film-coated"
+          ],
+          [
+            "Engraving",
+            "717"
+          ],
+          [
+            "Example package",
+            "NDC 78206-139-01 · bottle of 30"
+          ],
+          [
+            "Labeler",
+            "Organon LLC"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§16exact50/12.5appearance717NDC30/Organon"
+      },
+      "review": "Reviewed full supporting current product-label subsections. General monitoring/urgent assessment counseling identified as clinical synthesis. Public guideline claims narrowly scoped."
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Selected Hyzaar tablets contain losartan potassium/HCTZ 50/12.5 mg, 100/12.5 mg or 100/25 mg. Selected 100/12.5 mg is white, oval, engraved 745; 100/25 mg is light yellow, oval, engraved 747. Generic appearances vary; no pediatric liquid or standalone-component regimen is provided."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§3/11/16 exactcomponentstrengthorder/otherstrengthappearance"
+      },
+      "review": "Reviewed full supporting current product-label subsections. General monitoring/urgent assessment counseling identified as clinical synthesis. Public guideline claims narrowly scoped."
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Store at 25°C; excursions permitted 15–30°C. Keep the container tightly closed and protect from light. Keep away from children and check both strengths when changing the prescription."
+        ]
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": "§16 25C/excursions15–30/light/tightlyclosed;PatientInformationchildsafety"
+      },
+      "review": "Reviewed full supporting current product-label subsections. General monitoring/urgent assessment counseling identified as clinical synthesis. Public guideline claims narrowly scoped."
+    }
+  ],
+  "materialErrors": [],
+  "unresolvedMaterialGaps": [],
+  "sourceDiscrepancies": [
+    {
+      "issue": "Hyzaar§1.1 generallynotinitialtherapyexceptsevereHTN;2025guideline preferscombinationforstage2.",
+      "resolution": "Guidelinecontextdistinctfromproductlabel; novolumedepletedinitialusepermission; fullselecteddosingpathsretained.",
+      "resolved": true
+    },
+    {
+      "issue": "HyzaarCrCl>30usualvs<30unestablished leavesexact30boundaryunspecified.",
+      "resolution": "Literalboundariesretained; no inventedexact30recommendation. Thisis a scope boundary needingindividualclinicalassessment.",
+      "resolved": true
+    },
+    {
+      "issue": "Lower25mglosartanliverstartunavailableinfixedproduct; twotabletsstrengthcanexceedlosartancap.",
+      "resolution": "Nohepaticinitiationrecommended;exacttwo50/12.5=100/25only,not100/12.5x2.",
+      "resolved": true
+    },
+    {
+      "issue": "LIFEspecificBlacksubgroupstrokeevidencelimitnotgeneralBPcontraindication.",
+      "resolution": "Outcomeevidencelimitcontextpreservedwithpediatric/combinationapprovaldistinctions.",
+      "resolved": true
+    }
+  ],
+  "limitations": [
+    "Publicprimarysourcesonly;nopaywalledaccessclaimed.",
+    "AHApublicsummarysnapshotused; full2025guidelineaccessnotclaimed. OldlabelJNCreferencesnotpresentedascurrentguidance.",
+    "Selectedproductscope; othermanufactureridentifiers/directionsrequireverification.",
+    "Build/render/batchreleaseQA remainwithparentintegration."
+  ],
+  "reviewedSourceSections": [
+    "CurrentfullBox,§§1–8,10–12,16–17 supportingallclaims, exactdosepaths/strengthsandformulation/populationboundaries; HyzaarPatientInformation additionallyreviewed",
+    "AHA2025publicTopThingsToKnow completeitems8and9supportingcombination/homeBPcontext; nofulldocumentaccessclaimed"
+  ],
+  "verification": {
+    "schemaErrors": [],
+    "sectionIds": [
+      "indications",
+      "dosage",
+      "safety",
+      "interactions",
+      "populations",
+      "pharmacology",
+      "practice",
+      "product"
+    ],
+    "heroFacts": 3,
+    "safetyCardOrder": [
+      "Warnings and precautions",
+      "Contraindications",
+      "Boxed warning",
+      "Adverse reactions"
+    ],
+    "productCardOrder": [
+      "Representative tablet · Hyzaar 50/12.5 mg",
+      "Dosage forms and strengths",
+      "Storage and handling"
+    ],
+    "renderedPageQA": "Pending parent batch QA"
+  }
+}

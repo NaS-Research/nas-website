@@ -1,0 +1,619 @@
+{
+  "slug": "folic-acid",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "A vitamin used to treat folate-deficiency megaloblastic anemia. Prescription treatment, public-health pregnancy prevention and preservative-containing injection have different dose and safety contexts.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Folic acid oral solution · Ayurax full prescribing information",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical document R0126 (January 2026). SPL v3 effective February 11, 2026; API publication February 13, 2026. NDA authorized-generic marketing category. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=96618bf8-6c03-4df3-9896-b7ef27ca392a"
+    },
+    {
+      "id": "tablet",
+      "title": "Folic acid 1 mg tablets · Major/Amneal full labeling",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical footer Rev.03-2026-01. SPL v5 effective May 26, 2026; API publication June 8, 2026. ANDA marketing category. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7778ac96-7817-455a-a177-22ecb276c67f"
+    },
+    {
+      "id": "injection",
+      "title": "Folic acid injection · XGen full labeling",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical PI revised August 2025. SPL v5 effective January 21, 2026; API publication February 9, 2026. ANDA marketing category. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c5b2b84d-9f5e-4b81-ba10-9f2854e5dce9"
+    },
+    {
+      "id": "cdc",
+      "title": "Folic Acid: Facts for Clinicians",
+      "publisher": "CDC",
+      "note": "Current public professional guidance dated July 15, 2026; checked October 1, 2026. Prevention recommendations are distinguished from anemia-treatment labeling.",
+      "url": "https://www.cdc.gov/folic-acid/hcp/clinical-overview/index.html"
+    }
+  ],
+  "sourceEvidence": {
+    "label": {
+      "splVersion": "3",
+      "effectiveTime": "20260211",
+      "localEvidence": "/tmp/nas-drug-sources/folic-solution.xml",
+      "xmlSha256": "659637bdb90e4eccd89d3be8e445d2be1ae56e9f6d7cc829423368c0f3c6cab2",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/96618bf8-6c03-4df3-9896-b7ef27ca392a.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=96618bf8-6c03-4df3-9896-b7ef27ca392a",
+      "revision": "Clinical document R0126 (January 2026). SPL v3 effective February 11, 2026; API publication February 13, 2026. NDA authorized-generic marketing category. Checked October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "Full supporting public primary sections read; no paywall access"
+    },
+    "tablet": {
+      "splVersion": "5",
+      "effectiveTime": "20260526",
+      "localEvidence": "/tmp/nas-drug-sources/folic-tablet.xml",
+      "xmlSha256": "34c7be9bd2c98a6eba078b0b1119ca739586603e0036d62d51099b8f3b4d9fed",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/7778ac96-7817-455a-a177-22ecb276c67f.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7778ac96-7817-455a-a177-22ecb276c67f",
+      "revision": "Clinical footer Rev.03-2026-01. SPL v5 effective May 26, 2026; API publication June 8, 2026. ANDA marketing category. Checked October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "Full supporting public primary sections read; no paywall access"
+    },
+    "injection": {
+      "splVersion": "5",
+      "effectiveTime": "20260121",
+      "localEvidence": "/tmp/nas-drug-sources/folic-injection.xml",
+      "xmlSha256": "e8f3977e488833d95340d7970d26facdb66ce5b9cbdb97c282a69373d8a3da66",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/c5b2b84d-9f5e-4b81-ba10-9f2854e5dce9.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c5b2b84d-9f5e-4b81-ba10-9f2854e5dce9",
+      "revision": "Clinical PI revised August 2025. SPL v5 effective January 21, 2026; API publication February 9, 2026. ANDA marketing category. Checked October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "Full supporting public primary sections read; no paywall access"
+    },
+    "cdc": {
+      "localEvidence": "/tmp/nas-drug-sources/folic-cdc.html",
+      "htmlSha256": "e53e598c329d3fced1618744a1db70b2546965e1b571e446cc0be560199b5077",
+      "url": "https://www.cdc.gov/folic-acid/hcp/clinical-overview/index.html",
+      "revision": "Current public professional guidance dated July 15, 2026; checked October 1, 2026. Prevention recommendations are distinguished from anemia-treatment labeling.",
+      "checked": "2026-10-01",
+      "access": "Full supporting public primary sections read; no paywall access"
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Prescription treatment",
+      "sourceIds": [
+        "label",
+        "tablet",
+        "injection"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "1;tablet/injection Indications;CDC Prevention"
+        ],
+        "tablet": [
+          "1;tablet/injection Indications;CDC Prevention"
+        ],
+        "injection": [
+          "1;tablet/injection Indications;CDC Prevention"
+        ]
+      },
+      "claims": [
+        "The selected oral solution is indicated for folate-deficiency megaloblastic anemia in adult and pediatric patients. Tablet and injection labeling describes such anemia in nutritional deficiency, pregnancy, infancy/childhood and sprue. Folic acid alone does not treat B12-deficiency anemia."
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Neural-tube-defect prevention · CDC guidance",
+      "sourceIds": [
+        "cdc"
+      ],
+      "sourceSectionsById": {
+        "cdc": [
+          "1;tablet/injection Indications;CDC Prevention"
+        ]
+      },
+      "claims": [
+        "CDC recommends 400 mcg (0.4 mg) folic acid daily for women capable of pregnancy, before and during early pregnancy. A prior neural-tube-defect-affected pregnancy requires a clinician-guided recurrence-prevention plan; this is a public-health recommendation rather than the selected anemia product’s indication."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Oral anemia treatment and maintenance",
+      "sourceIds": [
+        "label",
+        "tablet"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1–2.2;tablet/injection Dosage;CDC Prevention/recurrence;3 concentration"
+        ],
+        "tablet": [
+          "2.1–2.2;tablet/injection Dosage;CDC Prevention/recurrence;3 concentration"
+        ]
+      },
+      "claims": [
+        [
+          "Initial treatment · adult and pediatric",
+          "Up to 1 mg orally daily; may be taken with or without food."
+        ],
+        [
+          "Maintenance after symptoms and blood picture normalize · birth–23 months",
+          "0.1 mg (100 mcg) daily."
+        ],
+        [
+          "Age 2 to <4 years",
+          "Up to 0.3 mg (300 mcg) daily."
+        ],
+        [
+          "Age ≥4 / adults",
+          "0.4 mg (400 mcg) daily."
+        ],
+        [
+          "Pregnant or lactating · anemia maintenance",
+          "0.8 mg (800 mcg) daily. Label states never less than 0.1 mg/day."
+        ],
+        [
+          "Relapse risks",
+          "Alcoholism, hemolysis, anticonvulsants or chronic infection may require adjusted maintenance; monitor and individualize."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Route and measuring distinctions",
+      "sourceIds": [
+        "label",
+        "tablet",
+        "injection"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2.1–2.2;tablet/injection Dosage;CDC Prevention/recurrence;3 concentration"
+        ],
+        "tablet": [
+          "2.1–2.2;tablet/injection Dosage;CDC Prevention/recurrence;3 concentration"
+        ],
+        "injection": [
+          "2.1–2.2;tablet/injection Dosage;CDC Prevention/recurrence;3 concentration"
+        ]
+      },
+      "claims": [
+        "Oral solution is 0.2 mg/mL (200 mcg/mL): a prescribed 1 mg equals 5 mL. Use an oral syringe for the actual dose, especially children; a 1 mg tablet does not automatically deliver small infant doses. Selected injection is 5 mg/mL: IM, IV or SC may be used when exceptionally severe disease or impaired GI absorption warrants parenteral treatment. Its labeled therapeutic dose is up to 1 mg/day, with individualized higher doses for resistant cases; preservatives impose separate neonatal risks. Do not confuse its concentration with the oral liquid."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Prevention doses · CDC guidance",
+      "sourceIds": [
+        "cdc"
+      ],
+      "sourceSectionsById": {
+        "cdc": [
+          "2.1–2.2;tablet/injection Dosage;CDC Prevention/recurrence;3 concentration"
+        ]
+      },
+      "claims": [
+        "General prevention is 400 mcg/day. For women planning another pregnancy after a neural-tube-defect-affected pregnancy, CDC recommends 4,000 mcg (4 mg) daily beginning 1 month before conception through the first 3 months of pregnancy, under clinician guidance. This higher-risk plan is not a universal pregnancy dose. Check the actual folic-acid amount; mcg dietary folate equivalents (DFE) are different units."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "label",
+        "tablet",
+        "injection"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "4;5.1;6;tablet Warning/Precautions/Adverse/Overdose;injection Warnings"
+        ],
+        "tablet": [
+          "4;5.1;6;tablet Warning/Precautions/Adverse/Overdose;injection Warnings"
+        ],
+        "injection": [
+          "4;5.1;6;tablet Warning/Precautions/Adverse/Overdose;injection Warnings"
+        ]
+      },
+      "claims": [
+        "Folic acid alone is inadequate for pernicious anemia/B12-deficiency megaloblastic anemia. Doses above 0.1 mg/day may mask blood abnormalities while neurologic injury progresses; investigate unexplained anemia and provide adequate B12 when deficient.",
+        "Oral solution dosing instructs ruling out pernicious anemia before >0.4 mg/day except pregnancy/lactation; the tablet dosage section is stricter (>0.1 mg unless B12 deficiency is excluded or adequately treated). These cutoffs do not make lower-dose masking impossible.",
+        "Allergy, including rash or bronchospasm and rare serious reactions, can occur after oral or injectable treatment. Stop and obtain treatment for serious hypersensitivity.",
+        "Selected injection contains benzyl alcohol 15 mg/mL, associated with fatal gasping syndrome in premature infants. Do not extrapolate the age-independent dose text to an appropriate neonatal formulation.",
+        "Parenteral aluminum can accumulate during prolonged treatment, particularly with renal impairment or premature neonates; assess total parenteral exposure. The label associates >4–5 mcg/kg/day aluminum exposure with CNS/bone toxicity and notes accumulation can occur at lower rates.",
+        "Folate can lower phenytoin levels and increase seizures in susceptible patients; review anticonvulsant therapy before a new dose."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "label",
+        "tablet",
+        "injection"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "4;5.1;6;tablet Warning/Precautions/Adverse/Overdose;injection Warnings"
+        ],
+        "tablet": [
+          "4;5.1;6;tablet Warning/Precautions/Adverse/Overdose;injection Warnings"
+        ],
+        "injection": [
+          "4;5.1;6;tablet Warning/Precautions/Adverse/Overdose;injection Warnings"
+        ]
+      },
+      "claims": [
+        "Oral solution: prior hypersensitivity to folic acid or ingredients. Selected tablet: previous intolerance to the drug. B12-deficiency anemia is a warning against folic acid alone, not a reason to omit needed B12 treatment. The reviewed injectable label does not provide a separately titled contraindications section; allergy and preservative risks must still be assessed."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "sourceIds": [
+        "label",
+        "tablet",
+        "injection"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "4;5.1;6;tablet Warning/Precautions/Adverse/Overdose;injection Warnings"
+        ],
+        "tablet": [
+          "4;5.1;6;tablet Warning/Precautions/Adverse/Overdose;injection Warnings"
+        ],
+        "injection": [
+          "4;5.1;6;tablet Warning/Precautions/Adverse/Overdose;injection Warnings"
+        ]
+      },
+      "claims": [
+        "The reviewed formulations have no boxed warning. The injection has prominent aluminum and benzyl-alcohol warnings, and all forms can obscure untreated B12-deficiency disease."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "sourceIds": [
+        "label",
+        "tablet",
+        "injection"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "4;5.1;6;tablet Warning/Precautions/Adverse/Overdose;injection Warnings"
+        ],
+        "tablet": [
+          "4;5.1;6;tablet Warning/Precautions/Adverse/Overdose;injection Warnings"
+        ],
+        "injection": [
+          "4;5.1;6;tablet Warning/Precautions/Adverse/Overdose;injection Warnings"
+        ]
+      },
+      "claims": [
+        "Reported reactions include allergy/rash/bronchospasm, GI upset and altered sleep/concentration or other neuropsychiatric symptoms. Some legacy GI/neuropsychiatric reports followed 15 mg/day for a month and should not be presented as rates at ordinary replacement doses. Prolonged therapy may reduce measured B12 and some anticonvulsant-treated patients have increased seizures. For overdose or an unintended high dose, contact Poison Help/medical advice; reassess B12 risk rather than assuming vitamin therapy is harmless."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Clinically relevant interactions",
+      "sourceIds": [
+        "label",
+        "tablet"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "7 drug-effect/level sections;tablet Precautions;Clinical Pharmacology leucovorin identity"
+        ],
+        "tablet": [
+          "7 drug-effect/level sections;tablet Precautions;Clinical Pharmacology leucovorin identity"
+        ]
+      },
+      "claims": [
+        "Folate replacement may decrease phenytoin concentrations or antagonize seizure control; monitor clinically and review levels/dose when appropriate. Anticonvulsants and agents such as sulfasalazine, trimethoprim, pyrimethamine or methotrexate can reduce folate activity/availability; review response and treatment goals. The oral-solution label describes interference with methotrexate/tetracycline absorption and advises separating administration; it does not establish one universal interval. Methotrexate-associated supplementation schedules require the prescriber’s plan. Folic acid is not leucovorin (folinic acid) rescue."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Laboratory considerations",
+      "sourceIds": [
+        "tablet"
+      ],
+      "sourceSectionsById": {
+        "tablet": [
+          "7 drug-effect/level sections;tablet Precautions;Clinical Pharmacology leucovorin identity"
+        ]
+      },
+      "claims": [
+        "Some antibiotics can give falsely low serum/red-cell folate results with older microbiologic assays by suppressing the assay organism. Tell the laboratory about treatment; do not interpret a single result without the clinical and B12 context."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "sourceIds": [
+        "label",
+        "cdc"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8.1;8.2;8.4;tablet Precautions;injection Warnings"
+        ],
+        "cdc": [
+          "8.1;8.2;8.4;tablet Precautions;injection Warnings"
+        ]
+      },
+      "claims": [
+        "Long clinical experience has not identified a drug-associated pregnancy risk at appropriate supplementation; folate deficiency early in pregnancy raises neural-tube-defect risk. Distinguish prevention guidance from the 0.8 mg anemia-maintenance regimen. Folic acid is present in milk; recommended supplementation has not produced reported infant adverse effects across decades of use, while milk-production data are lacking. Assess maternal need and deficiency."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pediatric, geriatric and organ considerations",
+      "sourceIds": [
+        "label",
+        "tablet",
+        "injection"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8.1;8.2;8.4;tablet Precautions;injection Warnings"
+        ],
+        "tablet": [
+          "8.1;8.2;8.4;tablet Precautions;injection Warnings"
+        ],
+        "injection": [
+          "8.1;8.2;8.4;tablet Precautions;injection Warnings"
+        ]
+      },
+      "claims": [
+        "The oral-solution label includes pediatric anemia treatment and age-specific maintenance from birth. Use accurate liquid measurement; the selected benzyl-alcohol injection requires special neonatal assessment. No separate fixed geriatric, renal or hepatic adjustment algorithm is supplied by these labels. Kidney impairment increases concern for prolonged parenteral aluminum exposure; dialysis and other disease may also contribute to folate deficiency, so adjust to clinical response."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "12.1;12.3;tablet Clinical Pharmacology;CDC units"
+        ]
+      },
+      "claims": [
+        "Folic acid is reduced to active tetrahydrofolate derivatives that participate in purine/thymidylate synthesis. Replacement can restore effective DNA synthesis and normal erythropoiesis in folate-deficient megaloblastic marrow."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "sourceIds": [
+        "label",
+        "tablet",
+        "cdc"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "12.3 Pharmacokinetics"
+        ],
+        "tablet": [
+          "Clinical Pharmacology: leucovorin identity"
+        ],
+        "cdc": [
+          "Changes in Nutrition and Supplement Facts labels: actual folic acid versus mcg DFE"
+        ]
+      },
+      "claims": [
+        [
+          "Absorption",
+          "Primarily proximal small intestine; plasma appearance about 15–30 minutes, peak generally within 1 hour."
+        ],
+        [
+          "Metabolism / distribution",
+          "Converted to dihydrofolate, tetrahydrofolate and active folate derivatives; tissue distribution with major liver storage."
+        ],
+        [
+          "Elimination",
+          "Folate/metabolites appear in urine; amount excreted varies with dose and stores."
+        ],
+        [
+          "Units / related compounds",
+          "Folic acid mass, food folates and mcg DFE are distinct; folic acid and leucovorin are not interchangeable medicines."
+        ]
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "sourceIds": [
+        "label",
+        "tablet",
+        "injection"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2;5.1;17;tablet Precautions/Dosage;CDC Patient counseling/units"
+        ],
+        "tablet": [
+          "2;5.1;17;tablet Precautions/Dosage;CDC Patient counseling/units"
+        ],
+        "injection": [
+          "2;5.1;17;tablet Precautions/Dosage;CDC Patient counseling/units"
+        ]
+      },
+      "claims": [
+        "Evaluate the anemia’s cause, folate status and B12 before treatment; follow CBC/blood response and neurologic symptoms. Monitor frequently for relapse and adjust maintenance in high-risk states. Review seizure control and relevant anticonvulsant levels, antifolate therapy, and total parenteral excipient exposure. No universal lab interval is invented."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Patient counseling",
+      "sourceIds": [
+        "label",
+        "tablet",
+        "cdc"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "2;5.1;17;tablet Precautions/Dosage;CDC Patient counseling/units"
+        ],
+        "tablet": [
+          "2;5.1;17;tablet Precautions/Dosage;CDC Patient counseling/units"
+        ],
+        "cdc": [
+          "2;5.1;17;tablet Precautions/Dosage;CDC Patient counseling/units"
+        ]
+      },
+      "claims": [
+        "Use prescribed mg/mcg and exact concentration; obtain a syringe for oral liquid. Report rash, breathing trouble, new neurologic symptoms or seizure changes. Discuss pregnancy plans early and review supplements/fortified foods as well as prescriptions. Read the actual folic-acid amount in parentheses on a DFE supplement label; do not take multiple multivitamins to construct a high-risk prevention regimen."
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product · Ayurax 0.2 mg/mL oral solution",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;11;16;package panels;SPL approval category;tablet/injection How supplied"
+        ]
+      },
+      "claims": [
+        [
+          "Ingredient / route",
+          "Folic acid 0.2 mg/mL · oral solution."
+        ],
+        [
+          "Presentation",
+          "Yellow, mixed-berry flavored; amber PET bottle with child-resistant closure."
+        ],
+        [
+          "Labeler",
+          "Ayurax, LLC."
+        ],
+        [
+          "Example NDC",
+          "69499-501-75 · 75 mL."
+        ],
+        [
+          "U.S. status",
+          "Prescription; SPL category NDA authorized generic, not a dietary supplement."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "label",
+        "tablet",
+        "injection"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;11;16;package panels;SPL approval category;tablet/injection How supplied"
+        ],
+        "tablet": [
+          "3;11;16;package panels;SPL approval category;tablet/injection How supplied"
+        ],
+        "injection": [
+          "3;11;16;package panels;SPL approval category;tablet/injection How supplied"
+        ]
+      },
+      "claims": [
+        [
+          "Selected oral solution",
+          "0.2 mg/mL (200 mcg/mL)."
+        ],
+        [
+          "Selected tablet",
+          "1 mg; yellow round convex AN 361 / bisect; Major NDC 0904-7224-61 institutional unit-dose carton of 100; ANDA label."
+        ],
+        [
+          "Selected injection",
+          "5 mg/mL (50 mg/10 mL) multidose vial; XGen NDC 39822-1100-1; IM/IV/SC, ANDA label, benzyl alcohol 15 mg/mL."
+        ],
+        [
+          "Scope",
+          "Other supplements, methylfolate, folinic acid, prenatal combinations and preservative-free preparations require their exact products; no category is inferred for all folic acid products."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "label",
+        "tablet",
+        "injection"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;11;16;package panels;SPL approval category;tablet/injection How supplied"
+        ],
+        "tablet": [
+          "3;11;16;package panels;SPL approval category;tablet/injection How supplied"
+        ],
+        "injection": [
+          "3;11;16;package panels;SPL approval category;tablet/injection How supplied"
+        ]
+      },
+      "claims": [
+        "Selected oral liquid: 20–25°C, original container/light protection; discard unused solution 30 days after first opening. Tablet: 20–25°C, protect light/moisture; the selected institutional unit-dose pack is not child resistant and needs appropriate dispensing protection. Injection: 20–25°C, protect light and retain carton until use; inspect for particles/discoloration. Follow exact vial handling rather than inventing an after-opening limit."
+      ]
+    },
+    {
+      "section": "hero/essential",
+      "card": "Scope and essential safety",
+      "sourceIds": [
+        "label",
+        "tablet",
+        "injection"
+      ],
+      "sourceSections": [
+        "1;tablet/injection Indications;CDC Prevention",
+        "4;5.1;6;tablet Warning/Precautions/Adverse/Overdose;injection Warnings",
+        "3;11;16;package panels;SPL approval category;tablet/injection How supplied"
+      ],
+      "claims": [
+        "A vitamin used to treat folate-deficiency megaloblastic anemia. Prescription treatment, public-health pregnancy prevention and preservative-containing injection have different dose and safety contexts.",
+        "Folic acid can improve the blood count while untreated B12 deficiency continues to cause neurologic damage. It is not adequate single-agent treatment of pernicious anemia or other B12-deficiency megaloblastic anemia.",
+        [
+          "Therapeutic class",
+          "Folate vitamin replacement"
+        ],
+        [
+          "Representative formulation",
+          "Prescription oral solution 0.2 mg/mL"
+        ],
+        [
+          "Reference focus",
+          "U.S. oral liquid/tablet and selected injection"
+        ]
+      ]
+    }
+  ],
+  "exclusions": [
+    "Non-U.S. marketing/doses; other manufacturers’ packages; no unverified guideline or emergency-management algorithm"
+  ],
+  "gaps": [
+    {
+      "material": false,
+      "topic": "Label oral-solution name / methotrexate schedule",
+      "finding": "Generic oral-liquid contraindication text retains QUIOFIC name; current source is NDA authorized generic with same folic acid ingredient. Oral-label methotrexate/tetracycline advice supplies no exact universal separation interval.",
+      "resolution": "Ingredient hypersensitivity summarized; no unique QUIOFIC-only clinical claim. Profile requires coordinated prescriber schedule and supplies no invented interval, anticancer rescue regimen or neonatal injection recommendation."
+    }
+  ],
+  "materialErrors": [],
+  "validation": {
+    "schema": "Passed validateMonograph with zero errors, 2026-10-01.",
+    "renderedPage": "Pending parent integration QA"
+  },
+  "monographSha256": "46f249598723ee38d550ec46e9f5b6d79b5308fe5b98914e4f4a292765e18264",
+  "sourceInterpretationNotes": [
+    "Clinical revision and SPL effectiveTime/version/API publication are distinguished. Public package status does not establish stock availability.",
+    "Selected prescription tablet/injection show ANDA category; oral liquid shows NDA authorized generic. No blanket unapproved status or inferred dietary-supplement category.",
+    "B12 masking >0.1 mg warning and >0.4 mg pre-use rule are both retained; tablet dose section >0.1 mg restriction is not replaced by a universal >0.4 mg threshold.",
+    "CDC prevention is separate from folate-anemia maintenance; actual folic acid mcg and mcg DFE are not interchangeable. Injection benzyl alcohol 15 mg/mL is explicitly retained."
+  ]
+}
