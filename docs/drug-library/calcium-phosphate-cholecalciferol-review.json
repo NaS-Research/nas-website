@@ -1,0 +1,1116 @@
+{
+  "drug": "calcium-phosphate-cholecalciferol",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "scope": "Full one-page current manufacturer tricalcium-phosphate/D3 Supplement Facts and current product-page notice; primary NIH nutrient intake, mechanism, absorption, toxicity, interactions and population sections. Nutritional scope, not universal treatment or all brands.",
+  "blueprint": {
+    "sections": [
+      [
+        "indications",
+        "Indications"
+      ],
+      [
+        "dosage",
+        "Dosage and administration"
+      ],
+      [
+        "safety",
+        "Safety"
+      ],
+      [
+        "interactions",
+        "Drug interactions"
+      ],
+      [
+        "populations",
+        "Use in specific populations"
+      ],
+      [
+        "pharmacology",
+        "Clinical pharmacology"
+      ],
+      [
+        "practice",
+        "Monitoring and counseling"
+      ],
+      [
+        "product",
+        "Product identification"
+      ]
+    ],
+    "essential_safety": true,
+    "hero_facts": 3,
+    "APAP_modified": false
+  },
+  "sources": [
+    {
+      "id": "product",
+      "title": "Citracal Calcium +D3 Gummies \u00b7 Current manufacturer Supplement Facts",
+      "publisher": "Bayer / Citracal",
+      "note": "Manufacturer-hosted PDF version 001 dated September 20, 2023, linked as current on product page; all one-page directions/ingredients/warnings read via public web tool.",
+      "url": "https://www.citracal.com/document/2916"
+    },
+    {
+      "id": "page",
+      "title": "Citracal Calcium Gummies \u00b7 Current manufacturer product page",
+      "publisher": "Bayer / Citracal",
+      "note": "Current page accessed October 1, 2026; distinguishes current online label from purchased package.",
+      "url": "https://www.citracal.com/products/gummies"
+    },
+    {
+      "id": "calcium",
+      "title": "Calcium \u00b7 Health Professional Fact Sheet",
+      "publisher": "NIH Office of Dietary Supplements",
+      "note": "Current primary government intake/absorption/toxicity/interaction sections read through public web tool.",
+      "url": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/"
+    },
+    {
+      "id": "vitamind",
+      "title": "Vitamin D \u00b7 Health Professional Fact Sheet",
+      "publisher": "NIH Office of Dietary Supplements",
+      "note": "Current primary government intake/activation/toxicity/interaction sections read through public web tool.",
+      "url": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/"
+    }
+  ],
+  "source_records": [
+    {
+      "id": "product",
+      "local_snapshot": "/tmp/nas-drug-sources/citracal-gummies-label-access-note.txt",
+      "revision": "Manufacturer PDF version 001 September 20, 2023 read in full by public web tool; direct local download HTTP403",
+      "url": "https://www.citracal.com/document/2916",
+      "sha256": "4dc7a749625997e622703d8774b3f055ac87a69791e5883ab7cbc29786a10bfb",
+      "review_method": "Successful public web-tool read of identified source sections; direct-download HTTP403 access record only, not a complete source snapshot.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-26-thyroid-metformin/citracal-gummies-label-access-note.txt"
+    },
+    {
+      "id": "page",
+      "local_snapshot": "/tmp/nas-drug-sources/citracal-gummies-page-access-note.txt",
+      "revision": "Current public manufacturer page read; direct download HTTP403",
+      "url": "https://www.citracal.com/products/gummies",
+      "sha256": "d5b6ec3237b85a09208ef283f93a489513b15ca2983c8a84d4f95c3bd3a15698",
+      "review_method": "Successful public web-tool read of identified source sections; direct-download HTTP403 access record only, not a complete source snapshot.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-26-thyroid-metformin/citracal-gummies-page-access-note.txt"
+    },
+    {
+      "id": "calcium",
+      "local_snapshot": "/tmp/nas-drug-sources/calcium-ods-access-note.txt",
+      "revision": "Current relevant full clinical sections read via public web tool; direct local download HTTP403",
+      "url": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/",
+      "sha256": "41c10236da696373fecd15152addc2ab6a4673a1bffa592b488605d7aadfdd92",
+      "review_method": "Successful public web-tool read of identified source sections; direct-download HTTP403 access record only, not a complete source snapshot.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-26-thyroid-metformin/calcium-ods-access-note.txt"
+    },
+    {
+      "id": "vitamind",
+      "local_snapshot": "/tmp/nas-drug-sources/vitamind-ods26-access-note.txt",
+      "revision": "Current relevant full clinical sections read via public web tool; direct local download HTTP403",
+      "url": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/",
+      "sha256": "61a8d4f1a401f05f1d56a78fcf1fa15be222c2d39b25bbce87c7b95fc90a0efe",
+      "review_method": "Successful public web-tool read of identified source sections; direct-download HTTP403 access record only, not a complete source snapshot.",
+      "archived_local_snapshot": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-26-thyroid-metformin/vitamind-ods26-access-note.txt"
+    }
+  ],
+  "assertion_map": [
+    {
+      "section": "indications",
+      "card": "Nutritional purpose and status",
+      "assertions": [
+        "Selected Citracal gummies supply calcium as tricalcium phosphate plus cholecalciferol to support calcium intake and bone health. They carry Supplement Facts rather than prescription Drug Facts and the manufacturer disclaims disease diagnosis/treatment/prevention approval. Do not confuse the brand\u2019s name with calcium citrate: this selected gummy uses phosphate."
+      ],
+      "sources": [
+        {
+          "id": "product",
+          "sections": "Supplement Facts"
+        },
+        {
+          "id": "page",
+          "sections": "Product Benefits; regulatory disclaimer"
+        },
+        {
+          "id": "calcium",
+          "sections": "Dietary supplements"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Clinical scope",
+      "assertions": [
+        "Use supplements to address an assessed dietary shortfall or clinician-directed need. A fixed calcium/vitamin D supplement is not a universal treatment for osteoporosis, hypocalcemia, diagnosed vitamin D deficiency or CKD mineral/bone disorder. Product strengths, age directions and phosphorus content matter; no injectable calcium-phosphate or prescription vitamin D protocol is supplied."
+      ],
+      "sources": [
+        {
+          "id": "product",
+          "sections": "Directions; warnings; Supplement Facts"
+        },
+        {
+          "id": "calcium",
+          "sections": "Healthful Diets; Calcium and Health"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Recommended Intakes; healthful diets"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Selected product directions",
+      "assertions": [
+        "Adults and children twelve years and older fully chew two gummies twice daily, with or without food, or as advised by the health professional. One two-gummy serving supplies calcium 500 mg, vitamin D3 25 mcg (1,000 IU) and phosphorus 225 mg. The full labeled daily four-gummy amount therefore supplies 1,000 mg calcium, 50 mcg (2,000 IU) D3 and 450 mg phosphorus, before food/other products. Do not exceed recommended intake or apply these gummy instructions to another tablet."
+      ],
+      "sources": [
+        {
+          "id": "product",
+          "sections": "Directions; Supplement Facts"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Selected amount",
+          "Nutrients supplied"
+        ],
+        "rows": [
+          [
+            "2 gummies: one serving",
+            "500 mg elemental calcium; 25 mcg (1,000 IU) D3; 225 mg phosphorus"
+          ],
+          [
+            "4 gummies: labeled full day",
+            "1,000 mg elemental calcium; 50 mcg (2,000 IU) D3; 450 mg phosphorus"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Healthy-population intake context",
+      "assertions": [
+        "Dietary reference values are TOTAL daily intake goals, not automatic supplement doses. Calcium goals: 1,300 mg at ages 9\u201318; 1,000 mg for ages 19\u201350 and men 51\u201370; 1,200 mg for women 51\u201370 and all adults over seventy. Vitamin D goals: 15 mcg (600 IU) at ages 1\u201370, 20 mcg (800 IU) over seventy; infants use separate 10 mcg (400 IU) adequate intake and an age-appropriate product. Assess food first; the selected gummy is not for under-twelves."
+      ],
+      "sources": [
+        {
+          "id": "calcium",
+          "sections": "Recommended Intakes, Table 1"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Recommended Intakes, Table 2"
+        },
+        {
+          "id": "product",
+          "sections": "Warnings"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Upper limits and dose planning",
+      "assertions": [
+        "Calcium total-intake UL is 3,000 mg/day for ages 9\u201318, 2,500 mg for ages 19\u201350 and 2,000 mg above fifty; vitamin D UL is 100 mcg (4,000 IU) from age nine. These limits are not goals or proof of safety with kidney disease, high calcium or interacting medicines. Calcium absorption is more efficient at individual amounts \u2264 500 mg, supporting divided intake rather than a single large unsupervised dose."
+      ],
+      "sources": [
+        {
+          "id": "calcium",
+          "sections": "Health Risks, Table 3; Dietary supplements"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Health Risks, Table 4"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Renal/hepatic and deficiency boundaries",
+      "assertions": [
+        "The selected panel has no validated renal/hepatic reduction or dialysis dose. Medical conditions, pregnancy, breastfeeding and medicines require professional advice. Renal disease can complicate calcium/phosphorus balance and vitamin D activation; do not convert this combination into a phosphate-binder or calcitriol regimen. Diagnosed deficiency/abnormal calcium needs individualized assessment, not automatic escalation of a supplement serving."
+      ],
+      "sources": [
+        {
+          "id": "product",
+          "sections": "Warnings"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Introduction; Groups at Risk; Health Risks"
+        },
+        {
+          "id": "calcium",
+          "sections": "Health Risks; Recommended Intakes"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Do not exceed the selected intake or use under age twelve. Consult a professional with medical conditions, pregnancy, breastfeeding or medicines. Excess vitamin D can cause hypercalcemia/hypercalciuria, kidney injury and serious cardiac/soft-tissue complications; excessive supplemental calcium can also be problematic and stone-risk evidence varies. The gummy contains wheat and added sugar. Severe weakness, confusion, persistent vomiting, marked thirst/urination or suspected overdose requires assessment."
+      ],
+      "sources": [
+        {
+          "id": "product",
+          "sections": "Warnings; ingredients; Supplement Facts"
+        },
+        {
+          "id": "calcium",
+          "sections": "Health Risks"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Health Risks"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "This supplement panel does not contain an Rx-style formal contraindication list. Avoid a product containing an ingredient to which the patient is allergic; the selected label declares wheat. Existing hypercalcemia, hypercalciuria, kidney/stone disease or disturbed mineral balance calls for clinical assessment before adding calcium/D3. Do not mistake absence of a formal list for unrestricted use."
+      ],
+      "sources": [
+        {
+          "id": "product",
+          "sections": "Ingredients; warnings"
+        },
+        {
+          "id": "calcium",
+          "sections": "Health Risks"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Health Risks"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "The selected dietary-supplement panel has no FDA prescription boxed warning. It also does not confer FDA disease-treatment approval; its intake, age, allergen and medical-consultation warnings remain relevant."
+      ],
+      "sources": [
+        {
+          "id": "product",
+          "sections": "Full Supplement Facts/warnings"
+        },
+        {
+          "id": "page",
+          "sections": "Regulatory disclaimer"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Calcium supplements can cause gas, bloating or constipation. Excess calcium/D3 can produce nausea, weakness, thirst, frequent urination or renal complications. There is no controlled product-specific adverse-event frequency table for these gummies in the reviewed panel; vitamin D toxicity usually reflects excessive supplement exposure, not ordinary dietary intake."
+      ],
+      "sources": [
+        {
+          "id": "calcium",
+          "sections": "Dietary supplements; Health Risks"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Health Risks"
+        },
+        {
+          "id": "product",
+          "sections": "Full panel"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Absorption interactions",
+      "assertions": [
+        "Calcium can reduce absorption of certain medicines, including levothyroxine, quinolone antibiotics and dolutegravir. Have the pharmacist apply the specific medicine\u2019s label and food instructions; the NIH levothyroxine example concerns calcium carbonate, so this profile does not invent a phosphate-specific tested four-hour interaction study. Dolutegravir and antibiotic rules can depend on product/food and should not be collapsed into a universal two-hour gap."
+      ],
+      "sources": [
+        {
+          "id": "calcium",
+          "sections": "Interactions with Medications"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Calcium and vitamin D effects",
+      "assertions": [
+        "Lithium can increase calcium and combined supplementation may add risk. Thiazides reduce calcium excretion and vitamin D may add hypercalcemia risk, especially with renal impairment or hyperparathyroidism. Orlistat can reduce vitamin D absorption; corticosteroids can impair calcium absorption/vitamin D metabolism. Review duplicate calcium, phosphorus, vitamin D and active vitamin D therapy before use."
+      ],
+      "sources": [
+        {
+          "id": "calcium",
+          "sections": "Interactions, Lithium"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Interactions, Orlistat/Steroids/Thiazides"
+        },
+        {
+          "id": "product",
+          "sections": "Medical-consultation warning"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": [
+        "Manufacturer directions begin at twelve; under-twelves need a different assessed product, not a fraction of this gummy serving. Healthy older adults have age-specific intake goals and individual swallowing/diet/renal considerations. Reference goals do not justify automatically adding the full manufacturer dose on top of an already adequate diet."
+      ],
+      "sources": [
+        {
+          "id": "product",
+          "sections": "Directions; warnings"
+        },
+        {
+          "id": "calcium",
+          "sections": "Recommended Intakes"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Recommended Intakes"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and breastfeeding",
+      "assertions": [
+        "Ask a health professional before using the selected supplement. Healthy pregnancy/lactation calcium goals are 1,300 mg/day at ages 14\u201318 or 1,000 mg at ages 19\u201350; vitamin D goal is 15 mcg (600 IU). Include prenatal and dietary intake. These are total nutritional reference amounts, not a mandate for four gummies or proof that higher-dose treatment is appropriate."
+      ],
+      "sources": [
+        {
+          "id": "product",
+          "sections": "Warnings"
+        },
+        {
+          "id": "calcium",
+          "sections": "Table 1"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Table 2"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal/hepatic or absorption disorders",
+      "assertions": [
+        "No product-specific renal/hepatic adjustment is established. Impaired kidneys can change activation and mineral handling; liver/intestinal disease can affect vitamin D metabolism or absorption. A phosphate-containing combination may not fit a prescribed phosphorus plan; clinicians must assess the exact 225 mg phosphorus per serving. It is not an automatic replacement for calcitriol or a renal phosphate binder."
+      ],
+      "sources": [
+        {
+          "id": "product",
+          "sections": "Supplement Facts; medical warning"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Introduction; Groups at Risk"
+        },
+        {
+          "id": "calcium",
+          "sections": "Health Risks"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Physiology and activation",
+      "assertions": [
+        "Calcium contributes to bone/teeth, neuromuscular function and signaling. Vitamin D supports intestinal calcium absorption; D3 is activated first to 25-hydroxyvitamin D in liver and then principally to calcitriol in kidney. Nutritional D3 is not already-active calcitriol, and dose equivalence cannot be inferred from matching micrograms."
+      ],
+      "sources": [
+        {
+          "id": "calcium",
+          "sections": "Introduction"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Introduction"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Absorption and disposition limits",
+      "assertions": [
+        "Calcium absorption varies with amount, diet and physiology; larger single supplement doses are less efficiently absorbed. The manufacturer gives no product-specific PK half-life or renal-clearance model. Serum calcium is tightly regulated and does not by itself measure adequacy of calcium intake. If vitamin D testing is clinically indicated, 25(OH)D is the principal status marker, not routine calcitriol measurement."
+      ],
+      "sources": [
+        {
+          "id": "calcium",
+          "sections": "Introduction, Assessing status; Dietary supplements"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Assessing vitamin D status"
+        },
+        {
+          "id": "product",
+          "sections": "Full panel"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": [
+        "Review food, fortified products, other supplements, calcium/D3/phosphorus totals, medicines, kidney/stone history and symptoms. Clinical concerns may require calcium, renal/mineral assessment and indicated 25(OH)D testing; no universal healthy-user lab schedule or fixed target is supplied. Unexplained abnormal calcium needs diagnosis rather than simply more supplementation."
+      ],
+      "sources": [
+        {
+          "id": "calcium",
+          "sections": "Assessing status; Health Risks; Healthful Diets"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Assessing status; Health Risks"
+        },
+        {
+          "id": "product",
+          "sections": "Warnings"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "assertions": [
+        "Fully chew the age-appropriate labeled serving; keep out of children\u2019s reach and do not treat gummies as candy. Verify wheat/allergen and sugar content. Ask about medication timing, pregnancy/feeding and medical conditions; report suspected adverse effects/overdose and bring the exact bottle to assessment. Check the actual purchased package because manufacturer online facts can change."
+      ],
+      "sources": [
+        {
+          "id": "product",
+          "sections": "Directions; warnings; ingredients"
+        },
+        {
+          "id": "page",
+          "sections": "Current label/package notice"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Selected Bayer/Citracal Calcium +D3 Gummies are natural raspberry flavor with a two-gummy serving. Current linked manufacturer panel is version 001 dated September 20, 2023. This review supplies no invented NDC, tablet imprint or universal fixed package count for a dietary supplement."
+      ],
+      "sources": [
+        {
+          "id": "product",
+          "sections": "Identity; dated header; serving definition"
+        },
+        {
+          "id": "page",
+          "sections": "Product identity; current panel notice"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Per two gummies: calcium 500 mg as tricalcium phosphate, phosphorus 225 mg and vitamin D3 25 mcg (1,000 IU). D3 conversion is 1 mcg = 40 IU. The 500 mg is elemental calcium, not 500 mg total phosphate salt. One gummy contributes half the serving nutrients arithmetically, but the labeled serving remains two gummies. Other tablets/gummies need their own verified facts."
+      ],
+      "sources": [
+        {
+          "id": "product",
+          "sections": "Supplement Facts"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Recommended Intakes, unit conversion"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Keep the child-resistant package out of children\u2019s reach and follow the actual bottle\u2019s storage/expiry instructions. The reviewed current online panel does not state a numeric storage-temperature or opening-expiry limit; no borrowed drug-label rule is supplied. Manufacturer notes color may change without altering potency/flavor."
+      ],
+      "sources": [
+        {
+          "id": "product",
+          "sections": "Warnings; packaging/color note; full panel"
+        },
+        {
+          "id": "page",
+          "sections": "Purchased-package notice"
+        }
+      ]
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "Nutritional purpose and status",
+      "assertions": [
+        "Selected Citracal gummies supply calcium as tricalcium phosphate plus cholecalciferol to support calcium intake and bone health. They carry Supplement Facts rather than prescription Drug Facts and the manufacturer disclaims disease diagnosis/treatment/prevention approval. Do not confuse the brand\u2019s name with calcium citrate: this selected gummy uses phosphate."
+      ],
+      "sources": [
+        {
+          "id": "product",
+          "sections": "Supplement Facts"
+        },
+        {
+          "id": "page",
+          "sections": "Product Benefits; regulatory disclaimer"
+        },
+        {
+          "id": "calcium",
+          "sections": "Dietary supplements"
+        }
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Clinical scope",
+      "assertions": [
+        "Use supplements to address an assessed dietary shortfall or clinician-directed need. A fixed calcium/vitamin D supplement is not a universal treatment for osteoporosis, hypocalcemia, diagnosed vitamin D deficiency or CKD mineral/bone disorder. Product strengths, age directions and phosphorus content matter; no injectable calcium-phosphate or prescription vitamin D protocol is supplied."
+      ],
+      "sources": [
+        {
+          "id": "product",
+          "sections": "Directions; warnings; Supplement Facts"
+        },
+        {
+          "id": "calcium",
+          "sections": "Healthful Diets; Calcium and Health"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Recommended Intakes; healthful diets"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Selected product directions",
+      "assertions": [
+        "Adults and children twelve years and older fully chew two gummies twice daily, with or without food, or as advised by the health professional. One two-gummy serving supplies calcium 500 mg, vitamin D3 25 mcg (1,000 IU) and phosphorus 225 mg. The full labeled daily four-gummy amount therefore supplies 1,000 mg calcium, 50 mcg (2,000 IU) D3 and 450 mg phosphorus, before food/other products. Do not exceed recommended intake or apply these gummy instructions to another tablet."
+      ],
+      "sources": [
+        {
+          "id": "product",
+          "sections": "Directions; Supplement Facts"
+        }
+      ],
+      "table_assertions": {
+        "headers": [
+          "Selected amount",
+          "Nutrients supplied"
+        ],
+        "rows": [
+          [
+            "2 gummies: one serving",
+            "500 mg elemental calcium; 25 mcg (1,000 IU) D3; 225 mg phosphorus"
+          ],
+          [
+            "4 gummies: labeled full day",
+            "1,000 mg elemental calcium; 50 mcg (2,000 IU) D3; 450 mg phosphorus"
+          ]
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Healthy-population intake context",
+      "assertions": [
+        "Dietary reference values are TOTAL daily intake goals, not automatic supplement doses. Calcium goals: 1,300 mg at ages 9\u201318; 1,000 mg for ages 19\u201350 and men 51\u201370; 1,200 mg for women 51\u201370 and all adults over seventy. Vitamin D goals: 15 mcg (600 IU) at ages 1\u201370, 20 mcg (800 IU) over seventy; infants use separate 10 mcg (400 IU) adequate intake and an age-appropriate product. Assess food first; the selected gummy is not for under-twelves."
+      ],
+      "sources": [
+        {
+          "id": "calcium",
+          "sections": "Recommended Intakes, Table 1"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Recommended Intakes, Table 2"
+        },
+        {
+          "id": "product",
+          "sections": "Warnings"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Upper limits and dose planning",
+      "assertions": [
+        "Calcium total-intake UL is 3,000 mg/day for ages 9\u201318, 2,500 mg for ages 19\u201350 and 2,000 mg above fifty; vitamin D UL is 100 mcg (4,000 IU) from age nine. These limits are not goals or proof of safety with kidney disease, high calcium or interacting medicines. Calcium absorption is more efficient at individual amounts \u2264 500 mg, supporting divided intake rather than a single large unsupervised dose."
+      ],
+      "sources": [
+        {
+          "id": "calcium",
+          "sections": "Health Risks, Table 3; Dietary supplements"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Health Risks, Table 4"
+        }
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Renal/hepatic and deficiency boundaries",
+      "assertions": [
+        "The selected panel has no validated renal/hepatic reduction or dialysis dose. Medical conditions, pregnancy, breastfeeding and medicines require professional advice. Renal disease can complicate calcium/phosphorus balance and vitamin D activation; do not convert this combination into a phosphate-binder or calcitriol regimen. Diagnosed deficiency/abnormal calcium needs individualized assessment, not automatic escalation of a supplement serving."
+      ],
+      "sources": [
+        {
+          "id": "product",
+          "sections": "Warnings"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Introduction; Groups at Risk; Health Risks"
+        },
+        {
+          "id": "calcium",
+          "sections": "Health Risks; Recommended Intakes"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": [
+        "Do not exceed the selected intake or use under age twelve. Consult a professional with medical conditions, pregnancy, breastfeeding or medicines. Excess vitamin D can cause hypercalcemia/hypercalciuria, kidney injury and serious cardiac/soft-tissue complications; excessive supplemental calcium can also be problematic and stone-risk evidence varies. The gummy contains wheat and added sugar. Severe weakness, confusion, persistent vomiting, marked thirst/urination or suspected overdose requires assessment."
+      ],
+      "sources": [
+        {
+          "id": "product",
+          "sections": "Warnings; ingredients; Supplement Facts"
+        },
+        {
+          "id": "calcium",
+          "sections": "Health Risks"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Health Risks"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": [
+        "This supplement panel does not contain an Rx-style formal contraindication list. Avoid a product containing an ingredient to which the patient is allergic; the selected label declares wheat. Existing hypercalcemia, hypercalciuria, kidney/stone disease or disturbed mineral balance calls for clinical assessment before adding calcium/D3. Do not mistake absence of a formal list for unrestricted use."
+      ],
+      "sources": [
+        {
+          "id": "product",
+          "sections": "Ingredients; warnings"
+        },
+        {
+          "id": "calcium",
+          "sections": "Health Risks"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Health Risks"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed-warning status",
+      "assertions": [
+        "The selected dietary-supplement panel has no FDA prescription boxed warning. It also does not confer FDA disease-treatment approval; its intake, age, allergen and medical-consultation warnings remain relevant."
+      ],
+      "sources": [
+        {
+          "id": "product",
+          "sections": "Full Supplement Facts/warnings"
+        },
+        {
+          "id": "page",
+          "sections": "Regulatory disclaimer"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": [
+        "Calcium supplements can cause gas, bloating or constipation. Excess calcium/D3 can produce nausea, weakness, thirst, frequent urination or renal complications. There is no controlled product-specific adverse-event frequency table for these gummies in the reviewed panel; vitamin D toxicity usually reflects excessive supplement exposure, not ordinary dietary intake."
+      ],
+      "sources": [
+        {
+          "id": "calcium",
+          "sections": "Dietary supplements; Health Risks"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Health Risks"
+        },
+        {
+          "id": "product",
+          "sections": "Full panel"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Absorption interactions",
+      "assertions": [
+        "Calcium can reduce absorption of certain medicines, including levothyroxine, quinolone antibiotics and dolutegravir. Have the pharmacist apply the specific medicine\u2019s label and food instructions; the NIH levothyroxine example concerns calcium carbonate, so this profile does not invent a phosphate-specific tested four-hour interaction study. Dolutegravir and antibiotic rules can depend on product/food and should not be collapsed into a universal two-hour gap."
+      ],
+      "sources": [
+        {
+          "id": "calcium",
+          "sections": "Interactions with Medications"
+        }
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Calcium and vitamin D effects",
+      "assertions": [
+        "Lithium can increase calcium and combined supplementation may add risk. Thiazides reduce calcium excretion and vitamin D may add hypercalcemia risk, especially with renal impairment or hyperparathyroidism. Orlistat can reduce vitamin D absorption; corticosteroids can impair calcium absorption/vitamin D metabolism. Review duplicate calcium, phosphorus, vitamin D and active vitamin D therapy before use."
+      ],
+      "sources": [
+        {
+          "id": "calcium",
+          "sections": "Interactions, Lithium"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Interactions, Orlistat/Steroids/Thiazides"
+        },
+        {
+          "id": "product",
+          "sections": "Medical-consultation warning"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": [
+        "Manufacturer directions begin at twelve; under-twelves need a different assessed product, not a fraction of this gummy serving. Healthy older adults have age-specific intake goals and individual swallowing/diet/renal considerations. Reference goals do not justify automatically adding the full manufacturer dose on top of an already adequate diet."
+      ],
+      "sources": [
+        {
+          "id": "product",
+          "sections": "Directions; warnings"
+        },
+        {
+          "id": "calcium",
+          "sections": "Recommended Intakes"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Recommended Intakes"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and breastfeeding",
+      "assertions": [
+        "Ask a health professional before using the selected supplement. Healthy pregnancy/lactation calcium goals are 1,300 mg/day at ages 14\u201318 or 1,000 mg at ages 19\u201350; vitamin D goal is 15 mcg (600 IU). Include prenatal and dietary intake. These are total nutritional reference amounts, not a mandate for four gummies or proof that higher-dose treatment is appropriate."
+      ],
+      "sources": [
+        {
+          "id": "product",
+          "sections": "Warnings"
+        },
+        {
+          "id": "calcium",
+          "sections": "Table 1"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Table 2"
+        }
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal/hepatic or absorption disorders",
+      "assertions": [
+        "No product-specific renal/hepatic adjustment is established. Impaired kidneys can change activation and mineral handling; liver/intestinal disease can affect vitamin D metabolism or absorption. A phosphate-containing combination may not fit a prescribed phosphorus plan; clinicians must assess the exact 225 mg phosphorus per serving. It is not an automatic replacement for calcitriol or a renal phosphate binder."
+      ],
+      "sources": [
+        {
+          "id": "product",
+          "sections": "Supplement Facts; medical warning"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Introduction; Groups at Risk"
+        },
+        {
+          "id": "calcium",
+          "sections": "Health Risks"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Physiology and activation",
+      "assertions": [
+        "Calcium contributes to bone/teeth, neuromuscular function and signaling. Vitamin D supports intestinal calcium absorption; D3 is activated first to 25-hydroxyvitamin D in liver and then principally to calcitriol in kidney. Nutritional D3 is not already-active calcitriol, and dose equivalence cannot be inferred from matching micrograms."
+      ],
+      "sources": [
+        {
+          "id": "calcium",
+          "sections": "Introduction"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Introduction"
+        }
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Absorption and disposition limits",
+      "assertions": [
+        "Calcium absorption varies with amount, diet and physiology; larger single supplement doses are less efficiently absorbed. The manufacturer gives no product-specific PK half-life or renal-clearance model. Serum calcium is tightly regulated and does not by itself measure adequacy of calcium intake. If vitamin D testing is clinically indicated, 25(OH)D is the principal status marker, not routine calcitriol measurement."
+      ],
+      "sources": [
+        {
+          "id": "calcium",
+          "sections": "Introduction, Assessing status; Dietary supplements"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Assessing vitamin D status"
+        },
+        {
+          "id": "product",
+          "sections": "Full panel"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring",
+      "assertions": [
+        "Review food, fortified products, other supplements, calcium/D3/phosphorus totals, medicines, kidney/stone history and symptoms. Clinical concerns may require calcium, renal/mineral assessment and indicated 25(OH)D testing; no universal healthy-user lab schedule or fixed target is supplied. Unexplained abnormal calcium needs diagnosis rather than simply more supplementation."
+      ],
+      "sources": [
+        {
+          "id": "calcium",
+          "sections": "Assessing status; Health Risks; Healthful Diets"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Assessing status; Health Risks"
+        },
+        {
+          "id": "product",
+          "sections": "Warnings"
+        }
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "assertions": [
+        "Fully chew the age-appropriate labeled serving; keep out of children\u2019s reach and do not treat gummies as candy. Verify wheat/allergen and sugar content. Ask about medication timing, pregnancy/feeding and medical conditions; report suspected adverse effects/overdose and bring the exact bottle to assessment. Check the actual purchased package because manufacturer online facts can change."
+      ],
+      "sources": [
+        {
+          "id": "product",
+          "sections": "Directions; warnings; ingredients"
+        },
+        {
+          "id": "page",
+          "sections": "Current label/package notice"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative product identity",
+      "assertions": [
+        "Selected Bayer/Citracal Calcium +D3 Gummies are natural raspberry flavor with a two-gummy serving. Current linked manufacturer panel is version 001 dated September 20, 2023. This review supplies no invented NDC, tablet imprint or universal fixed package count for a dietary supplement."
+      ],
+      "sources": [
+        {
+          "id": "product",
+          "sections": "Identity; dated header; serving definition"
+        },
+        {
+          "id": "page",
+          "sections": "Product identity; current panel notice"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": [
+        "Per two gummies: calcium 500 mg as tricalcium phosphate, phosphorus 225 mg and vitamin D3 25 mcg (1,000 IU). D3 conversion is 1 mcg = 40 IU. The 500 mg is elemental calcium, not 500 mg total phosphate salt. One gummy contributes half the serving nutrients arithmetically, but the labeled serving remains two gummies. Other tablets/gummies need their own verified facts."
+      ],
+      "sources": [
+        {
+          "id": "product",
+          "sections": "Supplement Facts"
+        },
+        {
+          "id": "vitamind",
+          "sections": "Recommended Intakes, unit conversion"
+        }
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": [
+        "Keep the child-resistant package out of children\u2019s reach and follow the actual bottle\u2019s storage/expiry instructions. The reviewed current online panel does not state a numeric storage-temperature or opening-expiry limit; no borrowed drug-label rule is supplied. Manufacturer notes color may change without altering potency/flavor."
+      ],
+      "sources": [
+        {
+          "id": "product",
+          "sections": "Warnings; packaging/color note; full panel"
+        },
+        {
+          "id": "page",
+          "sections": "Purchased-package notice"
+        }
+      ]
+    }
+  ],
+  "hero_assertions": {
+    "essential": {
+      "title": "Avoid duplicate mineral/vitamin dosing",
+      "text": "Count elemental calcium, phosphorus and vitamin D across diet and supplements. Kidney/mineral disorders, pregnancy, breastfeeding and interacting medicines require assessment; the selected gummy contains wheat and is for age twelve and older.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "facts": [
+      [
+        "Selected serving",
+        "2 gummies: 500 mg elemental calcium"
+      ],
+      [
+        "Vitamin D3",
+        "25 mcg = 1,000 IU per serving"
+      ],
+      [
+        "Phosphorus",
+        "225 mg per serving"
+      ]
+    ],
+    "sources": [
+      "product",
+      "page",
+      "calcium",
+      "vitamind"
+    ]
+  },
+  "section_assertions": [
+    {
+      "section": "indications",
+      "summary": "Calcium phosphate with vitamin D3 is a product-specific nutritional supplement.",
+      "takeaway": "Supplement status does not establish an FDA-approved disease-treatment indication.",
+      "sources": [
+        "calcium",
+        "page",
+        "product",
+        "vitamind"
+      ]
+    },
+    {
+      "section": "dosage",
+      "summary": "Count elemental calcium and vitamin D across food and every supplement.",
+      "takeaway": "A serving is two gummies; the listed nutrient amounts are not per gummy.",
+      "sources": [
+        "calcium",
+        "product",
+        "vitamind"
+      ]
+    },
+    {
+      "section": "safety",
+      "summary": "Excess calcium/vitamin D, allergy and inappropriate renal use are the key concerns.",
+      "takeaway": "Count nutrients from every product before adding this combination.",
+      "sources": [
+        "calcium",
+        "page",
+        "product",
+        "vitamind"
+      ]
+    },
+    {
+      "section": "interactions",
+      "summary": "Calcium can bind medicines and vitamin D can alter calcium balance.",
+      "takeaway": "Use the co-medication\u2019s exact interval; there is no universal cation-spacing rule.",
+      "sources": [
+        "calcium",
+        "product",
+        "vitamind"
+      ]
+    },
+    {
+      "section": "populations",
+      "summary": "Age directions and mineral physiology determine whether this product fits.",
+      "takeaway": "The selected gummy is not an infant or young-child formulation.",
+      "sources": [
+        "calcium",
+        "product",
+        "vitamind"
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "summary": "Calcium supplies mineral and D3 supports calcium/phosphate regulation after activation.",
+      "takeaway": "Elemental nutrient mass is different from calcium salt mass.",
+      "sources": [
+        "calcium",
+        "product",
+        "vitamind"
+      ]
+    },
+    {
+      "section": "practice",
+      "summary": "Match the supplement to an assessed dietary gap and medication plan.",
+      "takeaway": "Keep the serving size and daily total visible.",
+      "sources": [
+        "calcium",
+        "page",
+        "product",
+        "vitamind"
+      ]
+    },
+    {
+      "section": "product",
+      "summary": "The selected phosphate gummy illustrates a verified formulation, not every calcium/D3 brand.",
+      "takeaway": "Citracal gummies contain tricalcium phosphate despite the brand name.",
+      "sources": [
+        "page",
+        "product",
+        "vitamind"
+      ]
+    }
+  ],
+  "limitations": [
+    "Direct local retrieval of current manufacturer PDF/page and NIH pages returned HTTP403; successful public web-tool reads are documented. Archived access records are not falsely described as full source PDF/HTML snapshots.",
+    "Selected manufacturer panel does not give numeric storage temperature, after-opening expiry, NDC or tablet imprint; none invented.",
+    "No universal deficiency, osteoporosis, CKD-mineral/bone, dialysis, injectable calcium-phosphate, infant/young-child or medication-spacing protocol supplied. Selected phosphate product is not substituted with a carbonate supplement."
+  ],
+  "unresolved_source_questions": [],
+  "validation": {
+    "schema": [],
+    "tests_build_lint": "Parent batch checks required",
+    "rendered_page": "Parent batch QA required",
+    "assertion_map": "Actual authored paragraphs, tables and card source IDs match audit maps; SHA256 verified."
+  },
+  "monograph_sha256": "51b881da9570a71b6cb93867ba3fc3eda399b60a2afe7f9a0eaa89de96b4caca",
+  "source_archive": {
+    "directory": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/source-snapshots-recovered/batch-26-thyroid-metformin",
+    "checked": "2026-10-01",
+    "verified": "Full selected insulin DailyMed SPL XML, parsed sections and pages plus accurately identified supplement/NIH HTTP403 access records copied with exact SHA256 verification. Existing divergent files preserved."
+  }
+}

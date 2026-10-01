@@ -1,0 +1,997 @@
+{
+  "drug": "labetalol",
+  "status": "source_reviewed",
+  "checked": "2026-10-01",
+  "reviewScope": "U.S. oral hypertension and hospital IV severe hypertension",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Labetalol oral tablets · Full prescribing information",
+      "publisher": "DailyMed / Remedy Repack",
+      "note": "Current SPL version 5, effective 2026-08-31. ",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2e50571-d8c1-43e7-b90f-877ba1c35c9b"
+    },
+    {
+      "id": "iv",
+      "title": "Labetalol injection · Full prescribing information",
+      "publisher": "DailyMed / Hospira",
+      "note": "Current SPL version 30, effective 2026-09-14. ",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=abfc6b75-1ed5-41f1-0484-4597488237bc"
+    }
+  ],
+  "labelMetadata": [
+    {
+      "sourceId": "label",
+      "product": "labetalol-oral",
+      "setid": "e2e50571-d8c1-43e7-b90f-877ba1c35c9b",
+      "version": "5",
+      "effectiveTime": "20260831",
+      "publishedDate": "Current public SPL retrieved October1,2026; no independent publication date claimed",
+      "clinicalRevisionWording": [],
+      "checked": "2026-10-01",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/e2e50571-d8c1-43e7-b90f-877ba1c35c9b.xml",
+      "xmlSha256": "de1fc642b98f0d9ffaa53e6e746ac96317a8ac16db939e91c99fd43bc1fc09f0",
+      "marketingAuthorization": [
+        {
+          "category": "ANDA",
+          "application": "ANDA075215"
+        }
+      ],
+      "scope": "Actual selected public product labeling; SPL publication is distinguished from clinical revision, approval chronology and local stock."
+    },
+    {
+      "sourceId": "iv",
+      "product": "labetalol-iv",
+      "setid": "abfc6b75-1ed5-41f1-0484-4597488237bc",
+      "version": "30",
+      "effectiveTime": "20260914",
+      "publishedDate": "Current public SPL retrieved October1,2026; no independent publication date claimed",
+      "clinicalRevisionWording": [
+        "Revised: 11/2022"
+      ],
+      "checked": "2026-10-01",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/abfc6b75-1ed5-41f1-0484-4597488237bc.xml",
+      "xmlSha256": "6f7e65b0d3ea9c62ba02f7085a93d037125033e00f1d812ebb11823e278dede5",
+      "marketingAuthorization": [
+        {
+          "category": "ANDA",
+          "application": "ANDA075240"
+        },
+        {
+          "category": "ANDA",
+          "application": "ANDA075240"
+        }
+      ],
+      "scope": "Actual selected public product labeling; SPL publication is distinguished from clinical revision, approval chronology and local stock."
+    }
+  ],
+  "reviewedSourceSections": {
+    "label": [
+      "1 INDICATIONS AND USAGE",
+      "2 DOSAGE AND ADMINISTRATION",
+      "2.1 Recommended Dosage",
+      "3 DOSAGE FORMS AND STRENGTHS",
+      "4 CONTRAINDICATIONS",
+      "5 WARNINGS AND PRECAUTIONS",
+      "5.1 Hypotension",
+      "5.2 Bradycardia",
+      "5.3 Cardiac Failure",
+      "5.4 Ischemic Heart Disease",
+      "5.5 Reactive Airway Disease and Nonallergic Bronchospasm",
+      "5.6 Hypoglycemia",
+      "5.7 Use in Patients with Pheochromocytoma",
+      "5.8 Hepatic Injury",
+      "5.9 Use in Patients at Risk of Severe Acute Hypersensitivity Reactions",
+      "5.10 Major Surgery",
+      "5.11 Intraoperative Floppy Iris Syndrome (IFIS)",
+      "6 ADVERSE REACTIONS",
+      "6.1 Clinical Trials Experience",
+      "7 DRUG INTERACTIONS",
+      "7.1 Negative Chronotopes",
+      "7.2 Bronchodilators",
+      "7.3 Anesthesia",
+      "7.4 Nitroglycerin",
+      "7.5 Drug/Laboratory Test Interactions",
+      "8 USE IN SPECIFIC POPULATIONS",
+      "8.1 Pregnancy",
+      "8.2 Lactation",
+      "8.4 Pediatric Use",
+      "8.5 Geriatric Use",
+      "10 OVERDOSAGE",
+      "11 DESCRIPTION",
+      "12 CLINICAL PHARMACOLOGY",
+      "12.1 Mechanism of Action",
+      "12.2 Pharmacodynamics",
+      "12.3 Pharmacokinetics and Metabolism",
+      "13 NONCLINICAL TOXICOLOGY",
+      "17 PATIENT COUNSELING INFORMATION"
+    ],
+    "iv": [
+      "DESCRIPTION",
+      "CLINICAL PHARMACOLOGY",
+      "INDICATIONS AND USAGE",
+      "CONTRAINDICATIONS",
+      "WARNINGS",
+      "PRECAUTIONS",
+      "ADVERSE REACTIONS",
+      "OVERDOSAGE",
+      "DOSAGE AND ADMINISTRATION",
+      "HOW SUPPLIED",
+      "PRINCIPAL DISPLAY PANEL - 100 mg/20 mL Vial Label",
+      "PRINCIPAL DISPLAY PANEL - 100 mg/20 mL Vial Carton",
+      "PRINCIPAL DISPLAY PANEL - 200 mg/40 mL Vial Label",
+      "PRINCIPAL DISPLAY PANEL - 200 mg/40 mL Vial Carton",
+      "PRINCIPAL DISPLAY PANEL - 100 mg/20 mL Vial Label 0409-0125",
+      "PRINCIPAL DISPLAY PANEL - 100 mg/20 mL Vial Tray 0409-0125"
+    ]
+  },
+  "assertionToSourceMap": [
+    {
+      "section": "indications",
+      "card": "Labeled indications",
+      "assertions": {
+        "paragraphs": [
+          "Oral tablets treat hypertension to lower blood pressure. The selected IV product controls blood pressure in severe hypertension and is intended for hospitalized patients. Pediatric safety and effectiveness are not established. Pregnancy-specific emergency algorithms and off-label indications are not supplied here."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "iv"
+      ],
+      "sourceSections": {
+        "label": [
+          "1 INDICATIONS AND USAGE",
+          "4 CONTRAINDICATIONS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "5.1 Hypotension",
+          "5.2 Bradycardia",
+          "5.3 Cardiac Failure",
+          "5.4 Ischemic Heart Disease",
+          "5.5 Reactive Airway Disease and Nonallergic Bronchospasm",
+          "5.6 Hypoglycemia",
+          "5.7 Use in Patients with Pheochromocytoma",
+          "5.8 Hepatic Injury",
+          "5.9 Use in Patients at Risk of Severe Acute Hypersensitivity Reactions",
+          "5.10 Major Surgery",
+          "5.11 Intraoperative Floppy Iris Syndrome (IFIS)"
+        ],
+        "iv": [
+          "INDICATIONS AND USAGE",
+          "CONTRAINDICATIONS",
+          "WARNINGS"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "dosage",
+      "card": "Oral hypertension",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Setting",
+            "Selected regimen"
+          ],
+          "rows": [
+            [
+              "Initial / usual titration",
+              "100 mg twice daily; increase by 100 mg twice daily every 2–3 days according to response"
+            ],
+            [
+              "Usual maintenance",
+              "200–400 mg twice daily"
+            ],
+            [
+              "Severe hypertension: label highlights",
+              "May require 1,200–2,400 mg/day; titration increments not over 200 mg twice daily"
+            ],
+            [
+              "Older adults: label highlights",
+              "Start 100 mg twice daily; many require 100–200 mg twice daily maintenance"
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Recommended Dosage",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "5.8 Hepatic Injury",
+          "7 DRUG INTERACTIONS",
+          "8.4 Pediatric Use",
+          "10 OVERDOSAGE",
+          "8 USE IN SPECIFIC POPULATIONS",
+          "8.1 Pregnancy",
+          "8.2 Lactation",
+          "8.5 Geriatric Use",
+          "12 CLINICAL PHARMACOLOGY",
+          "12.1 Mechanism of Action",
+          "12.2 Pharmacodynamics",
+          "12.3 Pharmacokinetics and Metabolism"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "dosage",
+      "card": "Hospital IV injection",
+      "assertions": {
+        "table": {
+          "headers": [
+            "Step",
+            "Regimen / monitoring"
+          ],
+          "rows": [
+            [
+              "Initial",
+              "20 mg slow IV over two minutes; check supine BP before and at five and ten minutes"
+            ],
+            [
+              "Repeat",
+              "40 mg or 80 mg at ten-minute intervals to response or cumulative 300 mg"
+            ],
+            [
+              "Position",
+              "Keep supine; establish upright tolerance before any ambulation"
+            ]
+          ]
+        }
+      },
+      "sourceIds": [
+        "iv"
+      ],
+      "sourceSections": {
+        "iv": [
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "dosage",
+      "card": "IV infusion and transition",
+      "assertions": {
+        "paragraphs": [
+          "Selected vial solution is 5 mg/mL. One label preparation adds 200 mg in 40 mL to 160 mL compatible fluid, giving 200 mL at 1 mg/mL; 2 mL/min delivers 2 mg/min. Titrate infusion to pressure response; usual effective IV total is 50–200 mg, with up to 300 mg required in some patients. The label also has a distinct approximate-concentration preparation; pump settings are concentration specific. Hospital transition begins when supine diastolic pressure rises: initial oral 200 mg, then 200 or 400 mg after 6–12 hours by response; inpatient titration differs from routine outpatient starts."
+        ]
+      },
+      "sourceIds": [
+        "iv"
+      ],
+      "sourceSections": {
+        "iv": [
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "dosage",
+      "card": "Scope and source limitations",
+      "assertions": {
+        "paragraphs": [
+          "The selected oral SPL gives severe-hypertension and older-adult details in highlights while its full dosage body contains only the ordinary-start subsection; these highlighted rules are identified above. No age/weight pediatric schedule, universal renal/hepatic adjustment or pregnancy emergency conversion is invented."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "iv"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Recommended Dosage",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "5.8 Hepatic Injury",
+          "7 DRUG INTERACTIONS",
+          "8.4 Pediatric Use",
+          "10 OVERDOSAGE",
+          "8 USE IN SPECIFIC POPULATIONS",
+          "8.1 Pregnancy",
+          "8.2 Lactation",
+          "8.5 Geriatric Use",
+          "12 CLINICAL PHARMACOLOGY",
+          "12.1 Mechanism of Action",
+          "12.2 Pharmacodynamics",
+          "12.3 Pharmacokinetics and Metabolism"
+        ],
+        "iv": [
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Monitor postural hypotension, syncope, bradycardia and rhythm; beta blockade can worsen failure and bronchospasm. Abrupt cessation can worsen coronary ischemia. Severe hepatocellular injury, necrosis and death have occurred; investigate symptoms immediately and stop/not restart if injury is attributable or unexplained. Beta blockade may mask tachycardia during hypoglycemia, especially diabetes, fasting or vomiting. Paradoxical hypertension can occur with pheochromocytoma. Anaphylaxis may respond poorly to usual epinephrine doses. Inform anesthesia and cataract teams; do not routinely withdraw before surgery. Avoid excessively rapid IV pressure reduction and first unobserved ambulation."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "iv"
+      ],
+      "sourceSections": {
+        "label": [
+          "4 CONTRAINDICATIONS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "5.9 Use in Patients at Risk of Severe Acute Hypersensitivity Reactions",
+          "6 ADVERSE REACTIONS",
+          "5.1 Hypotension",
+          "5.2 Bradycardia",
+          "5.3 Cardiac Failure",
+          "5.4 Ischemic Heart Disease",
+          "5.5 Reactive Airway Disease and Nonallergic Bronchospasm",
+          "5.6 Hypoglycemia",
+          "5.7 Use in Patients with Pheochromocytoma",
+          "5.8 Hepatic Injury",
+          "5.10 Major Surgery",
+          "5.11 Intraoperative Floppy Iris Syndrome (IFIS)",
+          "6.1 Clinical Trials Experience"
+        ],
+        "iv": [
+          "CONTRAINDICATIONS",
+          "WARNINGS",
+          "PRECAUTIONS",
+          "ADVERSE REACTIONS"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Oral labeling lists asthma/obstructive airway disease, decompensated heart failure, greater-than-first-degree block, cardiogenic shock, severe bradycardia, labetalol hypersensitivity and non-dihydropyridine calcium-channel antagonists. IV labeling lists asthma, overt failure, advanced block, shock, severe bradycardia, severe/prolonged hypotension and ingredient hypersensitivity; it also warns against obstructive airway disease. Formal interaction wording differs; do not treat an older IV caution as permission to combine contraindicated oral therapy."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "iv"
+      ],
+      "sourceSections": {
+        "label": [
+          "4 CONTRAINDICATIONS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "5.9 Use in Patients at Risk of Severe Acute Hypersensitivity Reactions",
+          "6 ADVERSE REACTIONS",
+          "5.1 Hypotension",
+          "5.2 Bradycardia",
+          "5.3 Cardiac Failure",
+          "5.4 Ischemic Heart Disease",
+          "5.5 Reactive Airway Disease and Nonallergic Bronchospasm",
+          "5.6 Hypoglycemia",
+          "5.7 Use in Patients with Pheochromocytoma",
+          "5.8 Hepatic Injury",
+          "5.10 Major Surgery",
+          "5.11 Intraoperative Floppy Iris Syndrome (IFIS)",
+          "6.1 Clinical Trials Experience"
+        ],
+        "iv": [
+          "CONTRAINDICATIONS",
+          "WARNINGS",
+          "PRECAUTIONS",
+          "ADVERSE REACTIONS"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "Neither selected label has a boxed warning. Withdrawal-related ischemia, serious liver injury and cardiac/airway contraindications remain clinically important."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "iv"
+      ],
+      "sourceSections": {
+        "label": [
+          "4 CONTRAINDICATIONS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "5.9 Use in Patients at Risk of Severe Acute Hypersensitivity Reactions",
+          "6 ADVERSE REACTIONS",
+          "5.1 Hypotension",
+          "5.2 Bradycardia",
+          "5.3 Cardiac Failure",
+          "5.4 Ischemic Heart Disease",
+          "5.5 Reactive Airway Disease and Nonallergic Bronchospasm",
+          "5.6 Hypoglycemia",
+          "5.7 Use in Patients with Pheochromocytoma",
+          "5.8 Hepatic Injury",
+          "5.10 Major Surgery",
+          "5.11 Intraoperative Floppy Iris Syndrome (IFIS)",
+          "6.1 Clinical Trials Experience"
+        ],
+        "iv": [
+          "CONTRAINDICATIONS",
+          "WARNINGS",
+          "PRECAUTIONS",
+          "ADVERSE REACTIONS"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "Common reported oral effects include fatigue, nausea and dizziness; headache, dyspepsia, nasal stuffiness and dyspnea also occur. IV treatment can cause marked postural hypotension, scalp tingling, nausea and infusion-related hemodynamic changes. Serious reported events include bradycardia/block, syncope, failure, bronchospasm, allergy and liver injury. Rates across settings are not directly comparable."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "iv"
+      ],
+      "sourceSections": {
+        "label": [
+          "4 CONTRAINDICATIONS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "5.9 Use in Patients at Risk of Severe Acute Hypersensitivity Reactions",
+          "6 ADVERSE REACTIONS",
+          "5.1 Hypotension",
+          "5.2 Bradycardia",
+          "5.3 Cardiac Failure",
+          "5.4 Ischemic Heart Disease",
+          "5.5 Reactive Airway Disease and Nonallergic Bronchospasm",
+          "5.6 Hypoglycemia",
+          "5.7 Use in Patients with Pheochromocytoma",
+          "5.8 Hepatic Injury",
+          "5.10 Major Surgery",
+          "5.11 Intraoperative Floppy Iris Syndrome (IFIS)",
+          "6.1 Clinical Trials Experience"
+        ],
+        "iv": [
+          "CONTRAINDICATIONS",
+          "WARNINGS",
+          "PRECAUTIONS",
+          "ADVERSE REACTIONS"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "interactions",
+      "card": "Pharmacologic interactions",
+      "assertions": {
+        "paragraphs": [
+          "Oral co-use with non-dihydropyridine calcium antagonists such as verapamil is contraindicated; other negative chronotropes increase bradycardia/hypotension risk. Beta blockade antagonizes beta-agonist bronchodilation. Nitroglycerin adds hypotension; the oral label advises avoiding initiation in patients with angina on nitroglycerin and monitoring established combinations. Cimetidine can increase oral bioavailability; anesthesia can augment hypotension."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "iv"
+      ],
+      "sourceSections": {
+        "label": [
+          "5 WARNINGS AND PRECAUTIONS",
+          "7 DRUG INTERACTIONS",
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Recommended Dosage",
+          "5.1 Hypotension",
+          "5.2 Bradycardia",
+          "5.3 Cardiac Failure",
+          "5.4 Ischemic Heart Disease",
+          "5.5 Reactive Airway Disease and Nonallergic Bronchospasm",
+          "5.6 Hypoglycemia",
+          "5.7 Use in Patients with Pheochromocytoma",
+          "5.8 Hepatic Injury",
+          "5.9 Use in Patients at Risk of Severe Acute Hypersensitivity Reactions",
+          "5.10 Major Surgery",
+          "5.11 Intraoperative Floppy Iris Syndrome (IFIS)",
+          "7.1 Negative Chronotopes",
+          "7.2 Bronchodilators",
+          "7.3 Anesthesia",
+          "7.4 Nitroglycerin",
+          "7.5 Drug/Laboratory Test Interactions"
+        ],
+        "iv": [
+          "WARNINGS",
+          "PRECAUTIONS"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "interactions",
+      "card": "Compatibility and laboratory effects",
+      "assertions": {
+        "paragraphs": [
+          "The selected injection is incompatible with 5% sodium bicarbonate; alkaline drugs such as furosemide can precipitate in the same line. Use only verified admixture compatibility. Labetalol can cause false-positive amphetamine screens and interfere with some urinary catecholamine assays; confirm with a specific method rather than infer substance use or pheochromocytoma from an affected screening assay."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "iv"
+      ],
+      "sourceSections": {
+        "label": [
+          "5 WARNINGS AND PRECAUTIONS",
+          "7 DRUG INTERACTIONS",
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Recommended Dosage",
+          "5.1 Hypotension",
+          "5.2 Bradycardia",
+          "5.3 Cardiac Failure",
+          "5.4 Ischemic Heart Disease",
+          "5.5 Reactive Airway Disease and Nonallergic Bronchospasm",
+          "5.6 Hypoglycemia",
+          "5.7 Use in Patients with Pheochromocytoma",
+          "5.8 Hepatic Injury",
+          "5.9 Use in Patients at Risk of Severe Acute Hypersensitivity Reactions",
+          "5.10 Major Surgery",
+          "5.11 Intraoperative Floppy Iris Syndrome (IFIS)",
+          "7.1 Negative Chronotopes",
+          "7.2 Bronchodilators",
+          "7.3 Anesthesia",
+          "7.4 Nitroglycerin",
+          "7.5 Drug/Laboratory Test Interactions"
+        ],
+        "iv": [
+          "WARNINGS",
+          "PRECAUTIONS"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and lactation",
+      "assertions": {
+        "paragraphs": [
+          "The current oral label summarizes extensive pregnancy use without an identified major-malformation signal, while acknowledging study limitations and inconsistent other outcomes. The older clinical IV text uses a limited-controlled-evidence benefit/risk formulation; no zero-risk claim follows. Placental exposure can cause neonatal hypotension, bradycardia, hypoglycemia or respiratory depression. Labetalol occurs in milk at low levels; oral infant/milk-production outcome data remain lacking and IV labeling advises caution. Consider maternal need and feeding benefits with clinical review."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "iv"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Recommended Dosage",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "5.8 Hepatic Injury",
+          "8.1 Pregnancy",
+          "8.2 Lactation",
+          "8.4 Pediatric Use",
+          "8.5 Geriatric Use",
+          "10 OVERDOSAGE",
+          "8 USE IN SPECIFIC POPULATIONS",
+          "12 CLINICAL PHARMACOLOGY",
+          "12.1 Mechanism of Action",
+          "12.2 Pharmacodynamics",
+          "12.3 Pharmacokinetics and Metabolism"
+        ],
+        "iv": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": {
+        "paragraphs": [
+          "Pediatric safety/effectiveness are unestablished in the selected labels. Older adults eliminate labetalol more slowly and often need lower maintenance doses; monitor orthostatic symptoms closely."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "iv"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Recommended Dosage",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "5.8 Hepatic Injury",
+          "8.1 Pregnancy",
+          "8.2 Lactation",
+          "8.4 Pediatric Use",
+          "8.5 Geriatric Use",
+          "10 OVERDOSAGE",
+          "8 USE IN SPECIFIC POPULATIONS",
+          "12 CLINICAL PHARMACOLOGY",
+          "12.1 Mechanism of Action",
+          "12.2 Pharmacodynamics",
+          "12.3 Pharmacokinetics and Metabolism"
+        ],
+        "iv": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "assertions": {
+        "paragraphs": [
+          "No numeric organ-adjustment table is supplied. Hepatic impairment can increase oral bioavailability by reducing first-pass metabolism; IV labeling advises caution with impaired hepatic function. Monitor renal/clinical status where relevant. Hemodialysis and peritoneal dialysis remove less than 1% and are not effective routine clearance methods."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "iv"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Recommended Dosage",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "5.8 Hepatic Injury",
+          "8.1 Pregnancy",
+          "8.2 Lactation",
+          "8.4 Pediatric Use",
+          "8.5 Geriatric Use",
+          "10 OVERDOSAGE",
+          "8 USE IN SPECIFIC POPULATIONS",
+          "12 CLINICAL PHARMACOLOGY",
+          "12.1 Mechanism of Action",
+          "12.2 Pharmacodynamics",
+          "12.3 Pharmacokinetics and Metabolism"
+        ],
+        "iv": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism",
+      "assertions": {
+        "paragraphs": [
+          "Labetalol competitively blocks alpha-1 and nonselective beta receptors; estimated alpha-to-beta effects differ after oral versus IV administration. Standing pressure can fall more than supine pressure."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "iv"
+      ],
+      "sourceSections": {
+        "label": [
+          "11 DESCRIPTION",
+          "12 CLINICAL PHARMACOLOGY",
+          "12.1 Mechanism of Action",
+          "12.3 Pharmacokinetics and Metabolism",
+          "12.2 Pharmacodynamics"
+        ],
+        "iv": [
+          "DESCRIPTION",
+          "CLINICAL PHARMACOLOGY"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "pharmacology",
+      "card": "Disposition",
+      "assertions": {
+        "paragraphs": [
+          "Oral peaks occur around one to two hours and absolute bioavailability is about 25%; food increases bioavailability. Oral half-life is about six to eight hours; IV infusion half-life about 5.5 hours. Approximately half is protein bound; glucuronidation predominates, with urinary and biliary elimination. Hepatic impairment can change oral exposure despite similar reported half-life."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "iv"
+      ],
+      "sourceSections": {
+        "label": [
+          "11 DESCRIPTION",
+          "12 CLINICAL PHARMACOLOGY",
+          "12.1 Mechanism of Action",
+          "12.3 Pharmacokinetics and Metabolism",
+          "12.2 Pharmacodynamics"
+        ],
+        "iv": [
+          "DESCRIPTION",
+          "CLINICAL PHARMACOLOGY"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring and counseling",
+      "assertions": {
+        "paragraphs": [
+          "Monitor BP/pulse/rhythm and signs of failure or bronchospasm; review glucose risks and liver symptoms such as jaundice, dark urine or persistent anorexia. IV labeling supports hepatic tests and immediate testing for suggestive symptoms. Keep patients supine during and immediately after IV therapy, up to three hours, then observe first ambulation. Review medication adherence and avoid unsupervised interruption; inform surgical teams."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "iv"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Recommended Dosage",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "5.7 Use in Patients with Pheochromocytoma",
+          "5.9 Use in Patients at Risk of Severe Acute Hypersensitivity Reactions",
+          "10 OVERDOSAGE",
+          "17 PATIENT COUNSELING INFORMATION",
+          "5.1 Hypotension",
+          "5.2 Bradycardia",
+          "5.3 Cardiac Failure",
+          "5.4 Ischemic Heart Disease",
+          "5.5 Reactive Airway Disease and Nonallergic Bronchospasm",
+          "5.6 Hypoglycemia",
+          "5.8 Hepatic Injury",
+          "5.10 Major Surgery",
+          "5.11 Intraoperative Floppy Iris Syndrome (IFIS)"
+        ],
+        "iv": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "practice",
+      "card": "Overdose and legacy wording",
+      "assertions": {
+        "paragraphs": [
+          "Excess dosing can cause profound posture-sensitive hypotension, bradycardia and other beta-blockade toxicity; seek emergency/Poison Control assessment. Dialysis removes little drug. Selected labels contain older induced-emesis and emergency-treatment wording; this profile does not endorse home emesis or replace a current toxicology protocol."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "iv"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Recommended Dosage",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "5 WARNINGS AND PRECAUTIONS",
+          "5.7 Use in Patients with Pheochromocytoma",
+          "5.9 Use in Patients at Risk of Severe Acute Hypersensitivity Reactions",
+          "10 OVERDOSAGE",
+          "17 PATIENT COUNSELING INFORMATION",
+          "5.1 Hypotension",
+          "5.2 Bradycardia",
+          "5.3 Cardiac Failure",
+          "5.4 Ischemic Heart Disease",
+          "5.5 Reactive Airway Disease and Nonallergic Bronchospasm",
+          "5.6 Hypoglycemia",
+          "5.8 Hepatic Injury",
+          "5.10 Major Surgery",
+          "5.11 Intraoperative Floppy Iris Syndrome (IFIS)"
+        ],
+        "iv": [
+          "WARNINGS",
+          "PRECAUTIONS",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "product",
+      "card": "Representative products",
+      "assertions": {
+        "facts": [
+          [
+            "Oral product",
+            "Remedy 100 mg tablet · NDC 70518-4201-00, bottle 180"
+          ],
+          [
+            "Oral appearance",
+            "Round beige, scored; I / 126"
+          ],
+          [
+            "Injection",
+            "Hospira 5 mg/mL IV multiple-dose vial"
+          ],
+          [
+            "Example IV package",
+            "100 mg / 20 mL · NDC 0409-2267-20"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "iv"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Recommended Dosage",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "5.7 Use in Patients with Pheochromocytoma",
+          "5.9 Use in Patients at Risk of Severe Acute Hypersensitivity Reactions",
+          "10 OVERDOSAGE",
+          "11 DESCRIPTION",
+          "17 PATIENT COUNSELING INFORMATION"
+        ],
+        "iv": [
+          "DESCRIPTION",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION",
+          "HOW SUPPLIED",
+          "PRINCIPAL DISPLAY PANEL - 100 mg/20 mL Vial Label",
+          "PRINCIPAL DISPLAY PANEL - 100 mg/20 mL Vial Carton",
+          "PRINCIPAL DISPLAY PANEL - 200 mg/40 mL Vial Label",
+          "PRINCIPAL DISPLAY PANEL - 200 mg/40 mL Vial Carton",
+          "PRINCIPAL DISPLAY PANEL - 100 mg/20 mL Vial Label 0409-0125",
+          "PRINCIPAL DISPLAY PANEL - 100 mg/20 mL Vial Tray 0409-0125"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "Oral section three describes 100, 200 and 300 mg tablets, while this selected repackaged supply record supplies 100 mg. The selected injection supplies 100 mg / 20 mL and 200 mg / 40 mL at 5 mg/mL. Ready-made premix products, their concentrations and container instructions are not reviewed here."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "iv"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Recommended Dosage",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "5.7 Use in Patients with Pheochromocytoma",
+          "5.9 Use in Patients at Risk of Severe Acute Hypersensitivity Reactions",
+          "10 OVERDOSAGE",
+          "11 DESCRIPTION",
+          "17 PATIENT COUNSELING INFORMATION"
+        ],
+        "iv": [
+          "DESCRIPTION",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION",
+          "HOW SUPPLIED",
+          "PRINCIPAL DISPLAY PANEL - 100 mg/20 mL Vial Label",
+          "PRINCIPAL DISPLAY PANEL - 100 mg/20 mL Vial Carton",
+          "PRINCIPAL DISPLAY PANEL - 200 mg/40 mL Vial Label",
+          "PRINCIPAL DISPLAY PANEL - 200 mg/40 mL Vial Carton",
+          "PRINCIPAL DISPLAY PANEL - 100 mg/20 mL Vial Label 0409-0125",
+          "PRINCIPAL DISPLAY PANEL - 100 mg/20 mL Vial Tray 0409-0125"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "Selected tablets: 20–25°C in a tight light-resistant container with required child-resistant closure. Injection: 20–25°C; protect from light and freezing. Selected compatible diluted admixtures are labeled stable twenty-four hours refrigerated or at room temperature; this is not universal compatibility or a beyond-use date for every preparation."
+        ]
+      },
+      "sourceIds": [
+        "label",
+        "iv"
+      ],
+      "sourceSections": {
+        "label": [
+          "2 DOSAGE AND ADMINISTRATION",
+          "2.1 Recommended Dosage",
+          "3 DOSAGE FORMS AND STRENGTHS",
+          "5.7 Use in Patients with Pheochromocytoma",
+          "5.9 Use in Patients at Risk of Severe Acute Hypersensitivity Reactions",
+          "10 OVERDOSAGE",
+          "11 DESCRIPTION",
+          "17 PATIENT COUNSELING INFORMATION"
+        ],
+        "iv": [
+          "DESCRIPTION",
+          "OVERDOSAGE",
+          "DOSAGE AND ADMINISTRATION",
+          "HOW SUPPLIED",
+          "PRINCIPAL DISPLAY PANEL - 100 mg/20 mL Vial Label",
+          "PRINCIPAL DISPLAY PANEL - 100 mg/20 mL Vial Carton",
+          "PRINCIPAL DISPLAY PANEL - 200 mg/40 mL Vial Label",
+          "PRINCIPAL DISPLAY PANEL - 200 mg/40 mL Vial Carton",
+          "PRINCIPAL DISPLAY PANEL - 100 mg/20 mL Vial Label 0409-0125",
+          "PRINCIPAL DISPLAY PANEL - 100 mg/20 mL Vial Tray 0409-0125"
+        ]
+      },
+      "review": "Read actual full supporting primary label sections; exact route, population and product limits retained. All displayed assertions are preserved above for independent comparison. Clinical risk/referral synthesis does not create a universal regimen."
+    }
+  ],
+  "evidence": [
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/labetalol-oral.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/labetalol/labetalol-oral.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/e2e50571-d8c1-43e7-b90f-877ba1c35c9b.xml",
+      "sha256": "de1fc642b98f0d9ffaa53e6e746ac96317a8ac16db939e91c99fd43bc1fc09f0"
+    },
+    {
+      "sourceId": "label",
+      "localEvidence": "/tmp/nas-drug-sources/labetalol-oral-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/labetalol/labetalol-oral-sections.json",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/e2e50571-d8c1-43e7-b90f-877ba1c35c9b.xml",
+      "sha256": "ba979a2eeaaa586749cf2cd4fe2e06ecb715d33be3c55051c5a46af4f5965296"
+    },
+    {
+      "sourceId": "iv",
+      "localEvidence": "/tmp/nas-drug-sources/labetalol-iv.xml",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/labetalol/labetalol-iv.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/abfc6b75-1ed5-41f1-0484-4597488237bc.xml",
+      "sha256": "6f7e65b0d3ea9c62ba02f7085a93d037125033e00f1d812ebb11823e278dede5"
+    },
+    {
+      "sourceId": "iv",
+      "localEvidence": "/tmp/nas-drug-sources/labetalol-iv-sections.json",
+      "archivedEvidence": "/Volumes/AGNDJ 6TB/NaS-Website-Assets/drug-library/2026-10-01/labetalol/labetalol-iv-sections.json",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/abfc6b75-1ed5-41f1-0484-4597488237bc.xml",
+      "sha256": "71ebddfda35bdf462968c5512706cde0fdec8a5100daef6246b9a3287026ad42"
+    }
+  ],
+  "sourceDiscrepancies": [
+    "Current selected oral SPL severe/geriatric dosage details are in highlights, with full body only ordinary2.1 subsection; indicated explicitly and not portrayed as independently read full2.2/2.3.",
+    "Oral formal non-dihydropyridine calcium antagonist contraindication differs from selected IV older caution; profile retains both and does not infer safe co-use.",
+    "Selected IV SPL September2026 publication retains November2022 clinical revision; no new2026 clinical adoption inferred.",
+    "Legacy induced-emesis and antidote algorithms not endorsed; overdose referral/no home emesis explicit."
+  ],
+  "materialErrors": [],
+  "unresolvedMaterialGaps": [],
+  "scopeExclusions": [
+    "Other manufacturers/foreign products not reviewed; current public label presence does not prove local stock.",
+    "Off-label regimens, compounded stability/crushing/tube protocols, universal organ algorithms and individualized emergency treatment are excluded.",
+    "Pregnancy emergency protocols, pediatric dosing, premix concentration/administration and universal IV-to-oral conversion excluded."
+  ],
+  "verification": {
+    "schemaErrors": [],
+    "sectionIds": [
+      "indications",
+      "dosage",
+      "safety",
+      "interactions",
+      "populations",
+      "pharmacology",
+      "practice",
+      "product"
+    ],
+    "safetyCards": 4,
+    "productCards": 3,
+    "heroFacts": 3,
+    "monographSha256": "6d7603695a317938b5c1d19223b24031f3b918fb38e361642c9b5b0ee72409b3",
+    "renderedQA": "Pending parent candidate build/desktop/mobile review; no live claim.",
+    "independentReview": "Pending actual-file independent reviewer."
+  },
+  "sourceAudit": "Full selected primary supporting sections read; current metadata retained separately from historical clinical wording. No paywalled access claimed."
+}
