@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-01",
+  "unit": "enteral-nutrition:broader-hhs-exposure-intake-dependency",
+  "baseCommit": "8833d31757284d2a64db13a07af1a73bed9a0b3f",
+  "contentCommit": "89704aab4cab97423a7e248084f238d78b028aa3",
+  "branch": "audit/rxprep-content-2026-09-24",
+  "remoteDestination": "github.com/NaS-Research/nas-website.git",
+  "contentRemoteHashObserved": "89704aab4cab97423a7e248084f238d78b028aa3",
+  "contentRemoteVerifiedAt": "2026-10-01T23:40:19.608708+00:00",
+  "scope": [
+    "src/data/modules/hyperosmolarHyperglycemicState.js",
+    "src/data/questionBanks/hyperosmolarHyperglycemicState.js",
+    "docs/clinical-audit/module-ledger.json",
+    "docs/clinical-audit/chapter-ledger.json",
+    "docs/clinical-audit/enteral-nutrition-broader-hhs-review.json",
+    "docs/clinical-audit/sequential-resume.json"
+  ],
+  "checks": {
+    "isolatedBuildStaticPages": 567,
+    "focusedStructuralBankQuestions": 120,
+    "sourceClosedQuestionsCorrectWrongDesktopMobile": 3,
+    "newWholeSourceVerifiedBodies": 1,
+    "renderedBodyDOMEquality": 29,
+    "manualDesktopMobilePairsReviewed": 4,
+    "embeddedChecksSourceVerifiedThisUnit": 0,
+    "runtime320Overflow": true,
+    "remediationAndSavedProgress": true,
+    "moduleSavedAttemptsPerViewport": 6,
+    "moduleBestScore": 10,
+    "moduleLatestScore": 0,
+    "sampling": "Three separate correct/wrong attempts per viewport, with one question per concept group, matching the existing application. Initial harness failed because all three selected questions shared a concept; no app change needed.",
+    "cumulativeRuntimeItems": 5,
+    "cumulativeSourceVerifiedItemsThisUnit": 1,
+    "unchangedOtherCumulativeObjects": 1179,
+    "targetOnlyModuleLedgerEntry": true,
+    "targetOnlyChapterLedgerEntries": [
+      11,
+      44
+    ],
+    "candidateCodeExactlyMatchesReviewedBuildAndCommittedBlobs": true,
+    "working32QuestionRewriteUnreleased": true
+  },
+  "preservation": {
+    "all120IdsPromptsKeysCorrectTextsAnchorsPreserved": true,
+    "unchangedOtherBankObjects": 117,
+    "all28OriginalBodiesNineChecksMetadataReferencesFiguresPreserved": true,
+    "oneNewSourceVerifiedBody": true,
+    "all1180CumulativeIdsPromptsKeysCorrectTextsAnchorsPreserved": true,
+    "oneDerivedCumulativeChoiceRationaleRepair": "cumulative-hyperosmolar-hyperglycemic-state-hhs-08-safety",
+    "unchangedOtherCumulativeObjects": 1179,
+    "existingDirtyWorkingCodeByteExact": true,
+    "working32QuestionRewriteNotReleased": true
+  },
+  "coverage": {
+    "questionsSourceVerified": 3,
+    "questionsCorrected": 3,
+    "wholeOriginalBodiesVerified": 0,
+    "newBodies": 1,
+    "newBodiesSourceVerified": 1,
+    "embeddedChecksVerified": 0,
+    "figuresVerified": 0,
+    "metadataVerified": false,
+    "wholeParentModuleVerified": false,
+    "broaderEnteralBookVerifiedQuestionCountAfter": 109,
+    "sourceVerifiedCumulativeItemsThisUnit": 1,
+    "sourceVerifiedCumulativeIds": [
+      "cumulative-hyperosmolar-hyperglycemic-state-hhs-08-safety"
+    ],
+    "runningAssessmentCalculations": 677,
+    "runningSeparateSourceExamples": 98,
+    "enteralNutritionCountsUnchanged": {
+      "questionsVerified": 66,
+      "questionsTotal": 108,
+      "bodiesVerified": 16,
+      "bodiesTotal": 36,
+      "checksVerified": 2,
+      "checksTotal": 6,
+      "figuresVerified": 0,
+      "figuresTotal": 6
+    }
+  },
+  "newBroaderSourceVerifiedQuestionIds": [
+    "hhs-08-application",
+    "hhs-08-safety",
+    "hhs-08-case"
+  ],
+  "cumulativeBroaderENSourceVerifiedQuestionCount": 109,
+  "broaderParentCount": 15,
+  "originalPrimaryQuestionsReviewed": 12,
+  "originalPrimaryQuestionsPending": 9,
+  "contentBlobSHA256": {
+    "src/data/modules/hyperosmolarHyperglycemicState.js": "c5fab32321e4d1b5a9dcc63dab1495c468911ef9d3c9c3fbec1c961dcc890f40",
+    "src/data/questionBanks/hyperosmolarHyperglycemicState.js": "5090c2c1507ed3b1eccac4a29f562c02d4d2dcabb6b587fd89540035c4b75eb8",
+    "docs/clinical-audit/module-ledger.json": "c15d4f014b3162a16fa269006260ed152fcb46a8209dfbcb3542d82b150b5337",
+    "docs/clinical-audit/chapter-ledger.json": "2c2e51e55405ececb8610d6dcfc5ed1fb705af7725adcd6c19b1ee1c61d84356",
+    "docs/clinical-audit/enteral-nutrition-broader-hhs-review.json": "cfa1e0e85b1cd36062bb106e9b6adec628a60e1d79cbaf058d458314b542cb01",
+    "docs/clinical-audit/sequential-resume.json": "83d72d14fb92f50e9078dc625b071f91fd70c0ea15017ce9da8705a01106ba05"
+  },
+  "bookAssetsPublished": false,
+  "outsideENSourcesUsed": false,
+  "wholeParentModuleVerified": false,
+  "wholeENModuleVerified": false,
+  "wholeChapterVerified": false,
+  "mainMerge": "not performed",
+  "production": "not verified",
+  "unrelatedWorkingChanges": "Existing HHS module and 32-question bank draft preserved byte-for-byte. Only reviewed HEAD-derived candidate code released. Unrelated dirty ledger bytes preserved in the working tree and excluded from staged HEAD-derived ledger blobs. Private PDF/extracts/source images excluded.",
+  "nextAction": "Continue the broader feeding inventory with adrenal-insufficiency-crisis granule/tube and perioperative feeding-route candidates, expanding each to complete original topic groups and source context. Preserve nine selected HHS questions, all other original HHS teaching/checks/metadata/figures and contemporary protocol claims as pending. Keep the separate 32-question HHS working draft unreleased pending reconciliation. Full EN, pediatric PN and fluid/calcium dependencies remain; Chapter 1 entry 15 and Chapters 11/44 remain reviewing. No outside EN source opened."
+}
