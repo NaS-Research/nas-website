@@ -1,0 +1,541 @@
+{
+  "slug": "dupilumab",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "A current nine-indication U.S. dupilumab reference with indication-specific ages, weight bands, loading doses and injection devices. All eight blueprint sections reviewed. Product-specific focused monograph; not an exhaustive adverse-event catalog.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Dupixent · Current full prescribing information and injection instructions",
+      "publisher": "DailyMed / Sanofi–Regeneron",
+      "note": "SPL version 60, effective 20260422; current public product labeling.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=595f437d-2729-40bb-9c62-c8ece1f82780",
+      "checked": "2026-10-01",
+      "version": "SPL version 60, effective 20260422; current public product labeling.",
+      "spl_version": "60",
+      "spl_effective_time": "20260422",
+      "xml_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/595f437d-2729-40bb-9c62-c8ece1f82780.xml",
+      "downloaded_xml_sha256": "f318381342f96c049e46f2263caa501ea21800231ab3a810df10d6939a5a89f7"
+    }
+  ],
+  "assertion_to_source": [
+    {
+      "section_id": "indications",
+      "card_title": "Skin and urticaria indications",
+      "assertions": [
+        "Moderate-to-severe atopic dermatitis from age six months when topical prescription therapies inadequately control disease or are inadvisable; may use with/without topical corticosteroids. Adult prurigo nodularis and bullous pemphigoid are separate indications. Chronic spontaneous urticaria is labeled from age two in patients symptomatic despite H1 antihistamines; other urticarias are excluded. Respect labeled weight bands rather than extrapolating to smaller children."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "1.1",
+            "1.5",
+            "1.7",
+            "1.8",
+            "8.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "indications",
+      "card_title": "Respiratory, sinonasal and esophageal indications",
+      "assertions": [
+        "Add-on moderate/severe asthma maintenance from age six with eosinophilic phenotype or oral-corticosteroid dependence; add-on inadequately controlled CRSwNP from age 12; adult inadequately controlled COPD with eosinophilic phenotype; AFRS from age six after prior sino-nasal surgery. Eosinophilic esophagitis is labeled from age one and weight ≥15 kg. It does not treat acute bronchospasm/status asthmaticus or acute COPD exacerbations."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "1.2–1.4",
+            "1.6",
+            "1.9",
+            "5.4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Adult regimens",
+      "assertions": [
+        "Each 600-mg loading dose uses two separate 300-mg injections at different sites; do not inject a doubled volume from one device. Every two weeks means a two-week interval, not twice weekly.",
+        "Atopic dermatitis / Prurigo nodularis / CSU | 600 mg loading, then 300 mg every 2 weeks.",
+        "Bullous pemphigoid | 600 mg loading, then 300 mg every 2 weeks with tapering oral corticosteroids; after control/taper, continue dupilumab alone. Relapse may require readding steroids.",
+        "Asthma | 400 mg loading → 200 mg every 2 weeks, or 600 mg → 300 mg every 2 weeks. OCS-dependent or specified comorbid AD/CRSwNP/AFRS uses 600 → 300.",
+        "CRSwNP / COPD / AFRS | 300 mg every 2 weeks; no loading dose specified.",
+        "EoE, weight ≥40 kg | 300 mg every week; no loading dose specified. Lower weight bands below."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.3–2.11",
+            "2.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Pediatric AD and CSU",
+      "assertions": [
+        "AD age six months–five years and CSU age two–five years use the same below-five-year weight schedule WITHOUT loading. AD/CSU age six–17 use the same older-child loading schedule. The shared table does not erase their different indication ages. For AD, topical calcineurin inhibitors may be reserved for problem areas such as face/folds as the label describes.",
+        "AD 6 months–5 years or CSU 2–5 years: 5 to <15 kg | No loading → 200 mg every 4 weeks.",
+        "Same ages: 15 to <30 kg | No loading → 300 mg every 4 weeks.",
+        "AD or CSU age 6–17: 15 to <30 kg | 600 mg → 300 mg every 4 weeks.",
+        "Age 6–17: 30 to <60 kg | 400 mg → 200 mg every 2 weeks.",
+        "Age 6–17: ≥60 kg | 600 mg → 300 mg every 2 weeks."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.3",
+            "2.9"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Pediatric asthma",
+      "assertions": [
+        "Age 6–11: weight 15 to <30 kg, 300 mg every four weeks; ≥30 kg, 200 mg every two weeks; no loading dose. With comorbid moderate/severe AD, use the AD older-child regimen, including loading. Age ≥12 follows the labeled adolescent/adult asthma options; for comorbid AFRS the table’s 600→300-mg option specifically concerns adolescent weight ≥60 kg and adults. Do not infer a loading dose for every young asthma patient."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.4 / Tables 3–4"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "EoE and AFRS weight bands",
+      "assertions": [
+        "For EoE at age ≥1: 15 to <30 kg, 200 mg every two weeks; 30 to <40 kg, 300 mg every two weeks; ≥40 kg, 300 mg every week. No loading dose. For AFRS age 6–17 after surgery: 15 to <30 kg, 300 mg every four weeks; 30 to <60 kg, 200 mg every two weeks; ≥60 kg, 300 mg every two weeks. No loading specified for AFRS alone; adults receive 300 mg every two weeks. These bands are not borrowed from AD."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.6 / Table 5",
+            "2.11 / Table 8"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Devices and injection administration",
+      "assertions": [
+        "Syringe: age ≥6 months; pen: age ≥2 years. A caregiver administers for children <12; age ≥12 patients may inject under adult supervision after training. Inject thigh or abdomen away from the 5-cm navel area; upper arm if a caregiver injects. Rotate sites and avoid tender/damaged/bruised/scarred skin. Warm naturally with cap on: 300-mg device 45 minutes, 200-mg device 30 minutes. Inspect for particles/discoloration/cloudiness and follow the exact pen/syringe IFU; do not heat, shake, reuse or partially save a device."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.1",
+            "2.13",
+            "Instructions for Use"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Missed-dose rules",
+      "assertions": [
+        "Weekly regimen: give as soon as possible and begin a new weekly schedule from that date. Every-two-week or every-four-week regimen: if given within seven days of the missed dose, resume the original schedule; if later, give it and start a new schedule based on that date. Do not use an obsolete rule telling every-two-week users to skip automatically after seven days."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.12"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "dosage",
+      "card_title": "Concomitant treatment and dose scope",
+      "assertions": [
+        "Complete age-appropriate vaccines before treatment when feasible. Keep indicated background asthma/COPD/sinonasal treatment; corticosteroid reductions are gradual and supervised. BP specifically uses an initial tapering oral-steroid course. The label supplies no universal renal/hepatic dose-reduction table and no dose for a child below the indication’s age/weight eligibility."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.2",
+            "2.10",
+            "5.4–5.6",
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Warnings and precautions",
+      "assertions": [
+        "Serious hypersensitivity—including anaphylaxis, serum sickness-like reactions, angioedema and AGEP—requires discontinuation and appropriate treatment. Promptly report eye pain, redness or vision changes; conjunctivitis/keratitis/blepharitis can cause serious impairment. Consider discontinuation and prompt ophthalmology assessment for suspected keratitis or persistent eye inflammation; use caution with significant dry-eye/lid/nasolacrimal history.",
+        "Asthma patients can develop eosinophilic pneumonia or EGPA, sometimes around oral-steroid reduction: watch vasculitic rash, worsening lungs, cardiac/kidney injury or neuropathy and consider withholding if suspected. New psoriasis, persistent/worsening arthralgia or psoriatic arthritis may require specialist assessment or discontinuation. Treat preexisting helminths; if infection during treatment fails antihelminth therapy, stop dupilumab until resolution. Avoid live vaccines during treatment. Never abruptly stop systemic/topical/inhaled steroids or other asthma therapy."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "5.1–5.10"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Contraindications",
+      "assertions": [
+        "Known hypersensitivity to dupilumab or any product excipient is the formal contraindication. Eye disease, helminths, vaccine timing and steroid withdrawal are warning/management issues, not automatically added formal contraindications."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "4",
+            "5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Boxed warning status",
+      "assertions": [
+        "The current U.S. Dupixent label has no boxed warning. Its severe hypersensitivity, eye, eosinophilic and other inflammatory warnings still require active follow-up."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "Full prescribing information / 5"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "safety",
+      "card_title": "Adverse reactions and overdose",
+      "assertions": [
+        "Injection-site reactions are common across several indications. Eye inflammation/dryness and herpes infections are prominent in AD; other trial reports vary by disease and include eosinophilia, respiratory symptoms/infections, joint pain and gastrointestinal symptoms. Do not assign one indication’s rates to all users. Serious postmarketing eye, inflammatory and allergic reactions are described. No specific overdose antidote exists: obtain medical/Poison Help advice, monitor adverse symptoms and treat supportively."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "6.1",
+            "6.2",
+            "10"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Vaccines, steroids and other therapy",
+      "assertions": [
+        "Avoid live vaccines during treatment; complete indicated vaccines beforehand where feasible. Evidence for non-live vaccine co-use is limited, rather than a universal contraindication. Do not abruptly discontinue corticosteroids at initiation, and do not independently stop asthma controllers. Other biologics or off-label immunosuppressive combinations are not approved by inference from the mechanism."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.2",
+            "5.5",
+            "5.6",
+            "5.10",
+            "12.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "interactions",
+      "card_title": "Pharmacokinetic interaction evidence",
+      "assertions": [
+        "Label studies with representative CYP3A4/2C9/2C19/2D6/1A2 substrates found no clinically significant exposure changes, and an effect on co-medication PK is not expected. This limited evidence does not prove every drug combination safe or establish a universal combination regimen. Review each new medicine’s own risks and disease context."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "12.3 / Drug interaction studies, Cytochrome P450 substrates"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Pregnancy and lactation",
+      "assertions": [
+        "Available pregnancy case reports/series have not identified a drug-associated major-malformation, miscarriage or adverse-outcome signal, but data remain limited; IgG can cross the placenta. Poorly controlled asthma itself carries pregnancy risk. Discuss clinical need and the label’s pregnancy registry. The label has no human milk, infant-effect or milk-production data; balance breastfeeding benefits, maternal need and infant risk rather than claiming milk absence or established safety."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "8.1",
+            "8.2"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Children and older adults",
+      "assertions": [
+        "Respect AD ≥6 months, asthma/AFRS ≥6 years, CRSwNP ≥12, EoE ≥1 year and ≥15 kg, CSU ≥2 years and supported weight bands, and adult-only PN/COPD/BP. Syringe versus pen age limits are separate. Older-adult evidence varies across indications; some trials were too small for different-response conclusions. COPD older groups had no overall difference; BP elderly eye/vision findings warrant attention."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "8.4",
+            "8.5",
+            "2.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "populations",
+      "card_title": "Renal and hepatic considerations",
+      "assertions": [
+        "The current U.S. label does not provide dedicated severe renal/hepatic studies or a numerical organ-dose algorithm. Antibody catabolism is expected rather than classic CYP/unchanged renal elimination, but this does not prove safety in every severe impairment or justify extrapolated dialysis doses. Individualize complex organ-disease treatment with the specialist."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "12.3 / Elimination, Specific populations",
+            "8"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Mechanism",
+      "assertions": [
+        "This human IgG4 monoclonal antibody binds IL-4Rα and inhibits IL-4 and IL-13 signaling through their receptor complexes, affecting type-2 inflammatory pathways. The label states the clinical mechanism is not definitively established. Shared inflammatory pathways do not broaden its approved indications or replace diagnosis."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "12.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pharmacology",
+      "card_title": "Pharmacokinetics",
+      "assertions": [
+        "After an initial subcutaneous dose, peak concentration is reached at approximately one week. Bioavailability is about 61–66%; weight influences exposure. As an IgG4 antibody it is expected to be broken down to peptides/amino acids through catabolic pathways; the full metabolic pathway is not characterized. After the last steady-state dose, adult/adolescent concentrations typically become nondetectable over 9–13 weeks, with longer modeled persistence in younger children. This is not a fixed elimination half-life or permission to extend scheduled intervals."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "12.3"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Monitoring",
+      "assertions": [
+        "Confirm diagnosis/eligibility, age/weight, loading need, device, vaccine and helminth history, eye disease and background therapies. Follow disease-specific symptoms/control and corticosteroid taper, adherence and reactions. Promptly evaluate eye symptoms, new skin/joint inflammation and eosinophilic-organ features. Target laboratory or specialist evaluation to the clinical situation; do not invent universal drug levels or mandatory fixed CBC/renal/liver intervals from another immunomodulator."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "1",
+            "2",
+            "5",
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "practice",
+      "card_title": "Patient counseling",
+      "assertions": [
+        "Explain the prescribed weekly/two-week/four-week schedule, loading injections and current missed-dose rule. Train with the exact device IFU; caregiver use depends on age. Keep rescue inhaler/controller plans, taper steroids only with clinician guidance and review vaccines. Seek urgent help for severe allergy or major vision changes and report worsening lungs, neurologic symptoms, rash or joint pain. Follow cold-chain/14-day limits, never inject a damaged/cloudy device, and use an approved sharps container."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2",
+            "5",
+            "17",
+            "Patient information",
+            "Instructions for Use"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Representative product",
+      "assertions": [
+        "Sanofi–Regeneron Dupixent is clear to slightly opalescent, colorless to pale yellow. Carton of two 300-mg/2-mL prefilled syringes: NDC 0024-5914-01; carton of two 300-mg/2-mL pens: NDC 0024-5915-02. A dose requiring two injections uses two devices, with separate injection sites."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "16 / How supplied",
+            "2.1"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Dosage forms and strengths",
+      "assertions": [
+        "Prefilled syringe and pen each offer 300 mg/2 mL (150 mg/mL) or 200 mg/1.14 mL (175 mg/mL). Both are SC single-dose devices; syringe eligibility starts at six months, pen at two years. Do not confuse concentration with dose or invent IV/oral administration or partial-device dosing."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "3",
+            "2.1",
+            "16"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "product",
+      "card_title": "Storage and handling",
+      "assertions": [
+        "Refrigerate 2–8°C in original carton protected from light. After removal, use within 14 days at room temperature ≤25°C or discard. Do not freeze, shake, heat or expose to direct sunlight. Warm naturally for 45 minutes (300 mg) or 30 minutes (200 mg), cap still on; inspect before use. Discard unused remainder and place used devices/caps in appropriate sharps disposal according to the IFU/local rules."
+      ],
+      "support": [
+        {
+          "source_id": "label",
+          "sections": [
+            "2.13",
+            "16 / Storage",
+            "Instructions for Use"
+          ]
+        }
+      ]
+    }
+  ],
+  "material_errors": [],
+  "gaps": [],
+  "limitations": [
+    "Detailed disease-specific guideline placement and combination-biologic protocols are excluded; current label indications and dose bands are supplied without extrapolation to smaller/younger populations.",
+    "Pregnancy/lactation statements are the current product-label evidence summary, not a comprehensive review of every newer case report or LactMed entry.",
+    "Dedicated severe renal/hepatic/dialysis dose algorithms are not established by this U.S. label; no invented adjustment or assured safety is supplied."
+  ],
+  "regulatory_identity": [
+    {
+      "source_file": "dupixent",
+      "label_approval_records": [
+        {
+          "application": {
+            "extension": "BLA761055",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73585",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "BLA"
+          }
+        },
+        {
+          "application": {
+            "extension": "BLA761055",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73585",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "BLA"
+          }
+        },
+        {
+          "application": {
+            "extension": "BLA761055",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73585",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "BLA"
+          }
+        },
+        {
+          "application": {
+            "extension": "BLA761055",
+            "root": "2.16.840.1.113883.3.150"
+          },
+          "marketing_category": {
+            "code": "C73585",
+            "codeSystem": "2.16.840.1.113883.3.26.1.1",
+            "displayName": "BLA"
+          }
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "schema": "validateMonograph: zero errors",
+    "blueprint_sections": "Exact eight IDs/titles/order, four Safety core cards, three Product core cards and three hero tuples.",
+    "mobile_content": "Two-column prose tables with short spaced headings and natural wrapping; rendered QA delegated to release owner.",
+    "source_method": "Current public full selected product-label clinical sections reviewed, including administration/IFUs. Formulation-specific scope and unsupported populations explicitly limited; no paywalled access claimed."
+  },
+  "front_matter_assertion_map": {
+    "hero_facts": [
+      [
+        "Therapeutic class",
+        "IL-4Rα monoclonal antibody"
+      ],
+      [
+        "Route",
+        "Subcutaneous injection"
+      ],
+      [
+        "Devices",
+        "Syringe ≥6 months · Pen ≥2 years"
+      ]
+    ],
+    "essential": {
+      "title": "Match indication, age, weight and device.",
+      "text": "Dupixent is not rescue treatment. Keep background therapy and taper steroids only as directed. Report eye/vision changes, serious allergy or eosinophilic-organ symptoms promptly; avoid live vaccines and follow the exact dosing and storage schedule.",
+      "section": "safety",
+      "link": "Warnings and precautions"
+    },
+    "support": {
+      "label": [
+        "1",
+        "2",
+        "5",
+        "3"
+      ]
+    }
+  }
+}

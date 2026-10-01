@@ -1,0 +1,507 @@
+{
+  "slug": "anastrozole",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "scope": "An oral endocrine treatment for selected breast cancers in postmenopausal women. This profile follows current Arimidex labeling, including treatment setting, bone/cardiovascular risk, reproductive precautions and interactions; off-label prevention or fertility regimens are outside this reviewed scope.",
+  "sources": [
+    {
+      "id": "label",
+      "title": "Arimidex 1 mg · ANI full prescribing information",
+      "publisher": "DailyMed / official U.S. product labeling",
+      "note": "Clinical highlights and patient labeling revised December 2025; full clinical sections checked; SPL v12 effective 20260302; API publication Mar 05, 2026. Clinical revision is distinct from publication/effectiveTime. Checked October 1, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acbfaaa9-503c-4691-9828-76a7146ed6de"
+    }
+  ],
+  "sourceEvidence": {
+    "label": {
+      "splVersion": "12",
+      "effectiveTime": "20260302",
+      "apiPublishedDate": "Mar 05, 2026",
+      "clinicalRevision": "Clinical highlights and patient labeling revised December 2025; full clinical sections checked; SPL v12 effective 20260302; API publication Mar 05, 2026. Clinical revision is distinct from publication/effectiveTime. Checked October 1, 2026.",
+      "xmlUrl": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/acbfaaa9-503c-4691-9828-76a7146ed6de.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acbfaaa9-503c-4691-9828-76a7146ed6de",
+      "localEvidence": "/tmp/nas-drug-sources/arimidex.xml",
+      "sha256": "c25afd781103e40566af371f29d824d2fca4e24ff4e70a0f557caefa46841589",
+      "supportingSections": [
+        "1.1  Adjuvant Treatment",
+        "1.2  First-Line Treatment",
+        "1.3  Second-Line Treatment",
+        "2.1  Recommended Dose",
+        "2.2  Patients with Hepatic Impairment ",
+        "3  DOSAGE FORMS AND STRENGTHS ",
+        "4  CONTRAINDICATIONS",
+        "5.1  Ischemic Cardiovascular Events",
+        "5.2  Bone Effects",
+        "5.3  Cholesterol",
+        "5.4  Embryo-Fetal Toxicity ",
+        "6  ADVERSE REACTIONS",
+        "\n                              Adjuvant Therapy\n                           ",
+        "\n                              First-Line Therapy\n                           ",
+        "\n                              Second-Line Therapy\n                           ",
+        "6.2  Post-Marketing Experience",
+        "7.1  Tamoxifen",
+        "7.2  Estrogen",
+        "7.3  Warfarin",
+        "7.4  Cytochrome P450",
+        "8.1  Pregnancy",
+        "8.2  Lactation ",
+        "8.3  Females and Males of Reproductive Potential ",
+        "8.4  Pediatric Use",
+        "8.5  Geriatric Use",
+        "8.6  Renal Impairment",
+        "8.7  Hepatic Impairment",
+        "10  OVERDOSAGE",
+        "11  DESCRIPTION",
+        "12.1  Mechanism of Action",
+        "\n                              Effect on Estradiol\n                           ",
+        "\n                              Effect on Corticosteroids\n                           ",
+        "\n                              Other Endocrine Effects\n                           ",
+        "\n                              Absorption\n                           ",
+        "\n                              Distribution\n                           ",
+        "\n                              Metabolism\n                           ",
+        "\n                              Excretion\n                           ",
+        "\n                              Effect of Gender and Age\n                           ",
+        "\n                              Effect of Race\n                           ",
+        "\n                              Effect of Renal Impairment\n                           ",
+        "\n                              Effect of Hepatic Impairment\n                           ",
+        "13.1  Carcinogenesis, Mutagenesis, Impairment of Fertility",
+        "14.1  Adjuvant Treatment of Breast Cancer in Postmenopausal Women",
+        "14.2  First-Line Therapy in Postmenopausal Women with Advanced Breast Cancer",
+        "14.3  Second-Line Therapy in Postmenopausal Women with Advanced Breast Cancer who had Disease Progression following Tamoxifen Therapy",
+        "16  HOW SUPPLIED/STORAGE AND HANDLING",
+        "17  PATIENT COUNSELING INFORMATION",
+        "Patient Information",
+        "PACKAGE/LABEL PRINCIPAL DISPLAY PANEL"
+      ],
+      "checked": "2026-10-01",
+      "access": "Full relevant public primary supporting sections read"
+    }
+  },
+  "assertionMap": [
+    {
+      "section": "indications",
+      "card": "Labeled treatment settings",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Indications;1;Pediatric use"
+        ]
+      },
+      "claims": [
+        [
+          "Adjuvant treatment",
+          "Postmenopausal women with hormone receptor-positive early breast cancer."
+        ],
+        [
+          "First-line advanced",
+          "Postmenopausal women with hormone receptor-positive OR hormone receptor-unknown locally advanced/metastatic breast cancer."
+        ],
+        [
+          "Following tamoxifen progression",
+          "Advanced breast cancer in postmenopausal women after progression on tamoxifen. ER-negative disease or no prior tamoxifen response rarely responded."
+        ]
+      ]
+    },
+    {
+      "section": "indications",
+      "card": "Scope limits",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Indications;1;Pediatric use"
+        ]
+      },
+      "claims": [
+        "This label does not establish anastrozole-alone efficacy in premenopausal breast cancer, pediatric gynecomastia/precocious puberty, infertility, male hormonal use or primary prevention. Do not infer those doses or confuse absence from labeling with a complete review of every specialist off-label guideline."
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Selected adult regimen",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Dose;2;Dosage and administration;renal/HF/pediatric tables;Suspension preparation"
+        ]
+      },
+      "claims": [
+        [
+          "Dose",
+          "1 mg orally once daily, with or without food."
+        ],
+        [
+          "Advanced disease",
+          "Continue until tumor progression per label, with oncology assessment."
+        ],
+        [
+          "Adjuvant early cancer",
+          "Optimal duration is unknown in selected label; ATAC administered 5 years. This is not a universal 5-year stop or an independently verified extended-therapy guideline."
+        ],
+        [
+          "Missed dose",
+          "Take when remembered unless almost next-dose time; then skip. Never take 2 doses together."
+        ],
+        [
+          "Renal / age",
+          "No dose adjustment required for renal impairment or older age."
+        ],
+        [
+          "Hepatic",
+          "No dose change for mild-to-moderate impairment/stable cirrhosis; severe impairment unstudied."
+        ]
+      ]
+    },
+    {
+      "section": "dosage",
+      "card": "Treatment continuity",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Dose;2;Dosage and administration;renal/HF/pediatric tables;Suspension preparation"
+        ]
+      },
+      "claims": [
+        "Follow the oncology plan and reassess progression or intolerance before changing treatment. No weight-based pediatric algorithm, ovarian-suppression combination regimen or automatic switch schedule with other endocrine drugs is supplied."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning;Contraindications;4;Warnings/Precautions;5–6;Adverse reactions;10 Overdosage"
+        ]
+      },
+      "claims": [
+        "In ATAC women with pre-existing ischemic heart disease, ischemic cardiovascular events occurred more often with anastrozole than tamoxifen (17% versus 10%); weigh risks/benefits and promptly assess new/worsening chest pain or dyspnea. This is not a comparison with no treatment or every endocrine regimen.",
+        "Bone mineral density can decrease and fractures/osteoporosis can occur. Consider BMD monitoring and individual bone-health management; no universal DXA interval or prophylactic drug dose is specified.",
+        "Elevated cholesterol was more often reported than with tamoxifen in ATAC; assess lipid risk during therapy.",
+        "Embryo-fetal toxicity: verify pregnancy status when relevant; effective contraception during treatment and≥3 weeks afterward. Severe allergy, serious skin reactions, liver injury and tendon disorders including rupture have been reported."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning;Contraindications;4;Warnings/Precautions;5–6;Adverse reactions;10 Overdosage"
+        ]
+      },
+      "claims": [
+        "Hypersensitivity to anastrozole or excipients; reported reactions include anaphylaxis, angioedema and urticaria. Current selected formal section 4 is hypersensitivity only; fetal toxicity is a warning and pregnancy use is inappropriate for this postmenopausal indication, rather than an invented additional formal contraindication."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning;Contraindications;4;Warnings/Precautions;5–6;Adverse reactions;10 Overdosage"
+        ]
+      },
+      "claims": [
+        "The selected Arimidex label has no boxed warning. Bone, ischemic and fetal-risk warnings remain clinically significant."
+      ]
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions and overdose",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Boxed warning;Contraindications;4;Warnings/Precautions;5–6;Adverse reactions;10 Overdosage"
+        ]
+      },
+      "claims": [
+        "Common reports include hot flashes, weakness, arthralgia/arthritis, pain, nausea/vomiting, rash, depression, headache, insomnia, osteoporosis/fractures and edema. Postmarketing reports include hepatitis, severe mucocutaneous reactions, anaphylaxis/angioedema, hypercalcemia and tendon disorders; frequencies/causality may be uncertain. Overdose requires Poison Help/medical assessment, supportive treatment and observation; no specific antidote. Label high-dose studies do not establish a safe overdose or self-escalation regimen; do not induce vomiting at home."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Tamoxifen and estrogen",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Drug interactions;7;PK;Precautions"
+        ]
+      },
+      "claims": [
+        "Do not coadminister tamoxifen: combination reduced anastrozole concentrations and did not provide benefit in ATAC. Estrogen-containing therapies should not be used because they may diminish its pharmacologic action. Do not infer that all sequential endocrine therapy is prohibited or self-stop a prescribed transition plan."
+      ]
+    },
+    {
+      "section": "interactions",
+      "card": "Other drugs",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Drug interactions;7;PK;Precautions"
+        ]
+      },
+      "claims": [
+        "Selected volunteer study did not show a warfarin exposure/anticoagulation change. At 1 mg/day, clinically important CYP inhibition affecting other drugs is unlikely based on label data. These findings do not guarantee safety of every oncology combination, supplement or anticoagulant; retain normal indicated monitoring and medication review."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Renal, hepatic and older patients",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8;Renal tables;Pregnancy;Nursing;Pediatric/Geriatric"
+        ]
+      },
+      "claims": [
+        "No renal dose adjustment is required; renal impairment reduces unchanged-drug clearance but has small total-clearance effect. No age-only adjustment. Stable hepatic cirrhosis/mild-to-moderate impairment requires no change; severe hepatic impairment has not been studied and needs oncology/pharmacy review."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy, lactation and fertility",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8;Renal tables;Pregnancy;Nursing;Pediatric/Geriatric"
+        ]
+      },
+      "claims": [
+        "Can cause fetal harm based on animal findings/mechanism; no pregnancy trials. Verify pregnancy status before therapy in females of reproductive potential, and use effective contraception during and for at least 3 weeks after last dose. Do not breastfeed during treatment and for 2 weeks afterward. Animal data suggest impaired female fertility; no human fertility guarantee is supplied."
+      ]
+    },
+    {
+      "section": "populations",
+      "card": "Children and premenopausal patients",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "8;Renal tables;Pregnancy;Nursing;Pediatric/Geriatric"
+        ]
+      },
+      "claims": [
+        "Pediatric efficacy was not demonstrated in adolescent gynecomastia or girls with McCune-Albright syndrome/precocious puberty. Selected label does not establish anastrozole alone for premenopausal breast cancer; specialist ovarian-suppression regimens are not reviewed here. Do not transplant adult 1 mg dosing into a pediatric/off-label algorithm."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism of action",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Clinical pharmacology;12;Mechanism;PK"
+        ]
+      },
+      "claims": [
+        "Anastrozole selectively inhibits aromatase, which converts adrenal androgens to estrone/estradiol in peripheral and breast-cancer tissue. It lowers estrogen without detectable adrenal corticosteroid/aldosterone suppression at studied doses; routine steroid replacement is not required by the label."
+      ]
+    },
+    {
+      "section": "pharmacology",
+      "card": "Pharmacokinetics",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "Clinical pharmacology;12;Mechanism;PK"
+        ]
+      },
+      "claims": [
+        "Fasted peak typically about 2 hours; food slows absorption but not overall extent, permitting dosing with/without meals. Protein binding about 40%, steady state about 7 days, mean elimination half-life about 50 hours. Hepatic metabolism via N-dealkylation, hydroxylation and glucuronidation predominates; about 10% total clearance is renal unchanged drug. No automatic dose reduction is justified solely by the long half-life."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "17;Information for patients;Warnings/Precautions"
+        ]
+      },
+      "claims": [
+        "Oncology follows disease response/progression and treatment adherence. Consider BMD monitoring, fracture risk and cholesterol, and assess ischemic history, liver/skin/tendon symptoms and troublesome joint pain. Pregnancy testing when relevant precedes treatment. No universal laboratory/scan interval, vitamin D/calcium dose or antiresorptive regimen is asserted."
+      ]
+    },
+    {
+      "section": "practice",
+      "card": "Counseling",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "17;Information for patients;Warnings/Precautions"
+        ]
+      },
+      "claims": [
+        "Take 1 mg once daily and follow missed-dose rules. Discuss joint pain/hot flashes rather than independently stop. Seek immediate help for severe swelling, rash or chest pain/dyspnea. Report numbness/tingling suggesting carpal tunnel and tendon pain. Avoid unreviewed estrogen/tamoxifen combinations; follow contraception≥3 weeks and breastfeeding avoidance 2 weeks after stopping."
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Representative Arimidex product",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;11;16;How supplied/storage;Description;SPL product panels"
+        ]
+      },
+      "claims": [
+        [
+          "Tablet",
+          "White biconvex film-coated 1 mg; stylized A/arrow logo on one side, Adx 1 on reverse."
+        ],
+        [
+          "Package",
+          "ANI Pharmaceuticals · NDC 62559-670-30, bottle 30."
+        ],
+        [
+          "Status",
+          "Prescription oral endocrine therapy; selected postmenopausal breast-cancer indications."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;11;16;How supplied/storage;Description;SPL product panels"
+        ]
+      },
+      "claims": [
+        [
+          "Selected product",
+          "1 mg oral tablet."
+        ],
+        [
+          "Formulation limits",
+          "No labeled injectable, liquid or pediatric preparation reviewed. Generic appearances/excipients differ; no identification from brand color alone."
+        ],
+        [
+          "Ingredient distinction",
+          "Anastrozole is distinct from letrozole/exemestane; no mg-for-mg aromatase-inhibitor conversion inferred."
+        ]
+      ]
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSectionsById": {
+        "label": [
+          "3;11;16;How supplied/storage;Description;SPL product panels"
+        ]
+      },
+      "claims": [
+        "Store at controlled room temperature 20–25°C. Keep out of children’s reach and retain exact-package instructions; no unsupported after-opening discard interval, refrigeration or tablet-splitting regimen is supplied."
+      ]
+    },
+    {
+      "section": "hero/essential",
+      "card": "Scope and essential safety",
+      "sourceIds": [
+        "label"
+      ],
+      "sourceSections": [
+        "Indications;Dose;Warnings;Products"
+      ],
+      "claims": [
+        "An oral endocrine treatment for selected breast cancers in postmenopausal women. This profile follows current Arimidex labeling, including treatment setting, bone/cardiovascular risk, reproductive precautions and interactions; off-label prevention or fertility regimens are outside this reviewed scope.",
+        "Anastrozole lowers estrogen and can reduce bone density and increase fractures. Patients with pre-existing ischemic heart disease had more ischemic events than those receiving tamoxifen in ATAC. New chest pain or dyspnea needs urgent care. It can harm a fetus and requires exact reproductive precautions.",
+        [
+          "Therapeutic class",
+          "Nonsteroidal aromatase inhibitor"
+        ],
+        [
+          "Representative formulation",
+          "Arimidex 1 mg oral tablet"
+        ],
+        [
+          "Labeled daily dose",
+          "1 mg once daily · with or without food"
+        ]
+      ]
+    }
+  ],
+  "materialErrors": [],
+  "gaps": [
+    {
+      "material": false,
+      "topic": "Adjuvant duration",
+      "resolution": "Labeloptimaldurationunknown; ATAC5yearstudy not universal5yearstop. No unverifiedextendedtherapy regimen or guideline claim."
+    },
+    {
+      "material": false,
+      "topic": "Indication and reproductive scope",
+      "resolution": "PostmenopausaladjuvantHRpositive vsadvancedHRpositive/unknown andposttamoxifen progression kept. No premenopausal-alone/pediatric/fertility/prevention dose. Currentformalcontra onlyhypersensitivity; fetalwarning not falselylistedadditionalformalcontra."
+    },
+    {
+      "material": false,
+      "topic": "Renal/hepatic/population scope",
+      "resolution": "No renal/age adjustment; stablecirrhosis/mildmoderate nochange, severeliverunstudied. No unsupporteddialysis/pediatricalgorithm."
+    },
+    {
+      "material": false,
+      "topic": "Reproductive timing",
+      "resolution": "Contraception≥3weeks, no breastfeedingduring+2weeks; not conflated. Pregnancytestbeforeifreproductivepotential. Male use not inferred."
+    },
+    {
+      "material": false,
+      "topic": "Monitoring/guideline scope",
+      "resolution": "BMD/lipidsriskandclinicalmonitoringlabelbased; no unverifiedDXAinterval, calcium/vitaminDdose orboneprotective drugalgorithm. Currentclinicalrevision12/2025distinct fromSPL03/2026publication."
+    }
+  ],
+  "exclusions": [
+    "Off-label risk-reduction, infertility, male endocrine/pediatric algorithms, premenopausal ovarian-suppression or other oncology combination protocols, universal extended adjuvant duration or antiresorptive regimen; non-U.S./compounded products."
+  ],
+  "validation": {
+    "schema": "validateMonograph returned []; exact eight sections, four Safety cards, three Product cards, three hero tuples",
+    "renderedPage": "Pending parent natural390px integration QA; intrinsic data width≤350px"
+  },
+  "monographSha256": "7b6d481bf909477822f08d05586b9085c20ce0099e0d820bbc684b4867ba4665",
+  "sourceInterpretationNotes": [
+    "Original focused summaries; full supporting primary public sections read, no paywall access. Clinical revision is distinct from SPL effectiveTime/API publication.",
+    "No unverified preferred-treatment guideline ranking, current inventory inference, arbitrary formulation conversion, universal lab schedule or home compounding/overdose instructions."
+  ]
+}

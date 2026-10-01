@@ -1,0 +1,631 @@
+{
+  "drug": "melatonin",
+  "checked": "2026-10-01",
+  "status": "source_reviewed",
+  "review_scope": "U.S. supplement status/evidence and selected NOW product directions, clearly separate from current public EU Circadin and Slenyto SmPC/leaflets; focused full AASM adult recommendation/pediatric advisory.",
+  "sources": [
+    {
+      "id": "nccih",
+      "title": "NIH · Melatonin evidence and safety overview",
+      "publisher": "National Center for Complementary and Integrative Health",
+      "url": "https://www.nccih.nih.gov/health/melatonin-what-you-need-to-know",
+      "note": "Current public U.S. supplement evidence/safety overview read October 1, 2026; institutional overview distinguished from trial reports and regulatory product labels.",
+      "checked": "2026-10-01",
+      "access": "public primary source; see access_scope",
+      "retrieved_source": "/tmp/nas-drug-sources/melatonin-nccih.html",
+      "source_sha256": "3ceee2f288ea735410e9c10b3853098e9537c671372496a389e8970b2104fa0a",
+      "access_scope": "Public complete relevant institutional regulation/evidence/safety guidance; distinct from inaccessible/paywalled clinical trial claims."
+    },
+    {
+      "id": "fda-supp",
+      "title": "FDA · Dietary supplement regulation for consumers",
+      "publisher": "U.S. Food and Drug Administration",
+      "url": "https://www.fda.gov/food/dietary-supplements/information-consumers-using-dietary-supplements",
+      "note": "Current public FDA guidance: supplements are not approved for safety/effectiveness before marketing; retrieved October 1, 2026.",
+      "checked": "2026-10-01",
+      "access": "public primary source; see access_scope",
+      "retrieved_source": "/tmp/nas-drug-sources/fda-supplement-consumer.html",
+      "source_sha256": "79299be58a653faee0818aa79463f9dd98763fa633a1e42a1c09c09134b3a119",
+      "access_scope": "Public complete relevant institutional regulation/evidence/safety guidance; distinct from inaccessible/paywalled clinical trial claims."
+    },
+    {
+      "id": "aasm-insomnia",
+      "title": "AASM · Adult chronic insomnia guideline, 2017",
+      "publisher": "American Academy of Sleep Medicine",
+      "url": "https://aasm.org/wp-content/uploads/2017/07/PharmacologicTreatmentofInsomnia.pdf",
+      "note": "Full public guideline; focused complete melatonin Recommendation 12 and supporting discussion, printed 335–337. Weak recommendation distinguished from EU product approval.",
+      "checked": "2026-10-01",
+      "access": "public primary source; see access_scope",
+      "retrieved_source": "/tmp/nas-drug-sources/aasm-insomnia2017.pdf",
+      "source_sha256": "9f99af379dd49ccea8e4291a5ea477a66aaa07e11e63d19cef484269aa2d8dbd",
+      "version": "2017;13(2):307–349",
+      "access_scope": "Full public PDF retrieved; complete focused Recommendation12/remarks/supporting melatonin discussion printed335–337 read, not updated-year guidance invented."
+    },
+    {
+      "id": "aasm-child",
+      "title": "AASM · Pediatric melatonin health advisory, 2022",
+      "publisher": "American Academy of Sleep Medicine",
+      "url": "https://aasm.org/wp-content/uploads/2022/09/melatonin-children-adolescents-health-advisory.pdf",
+      "note": "Complete public advisory adopted September 9, 2022, reviewed October 1, 2026. No claim that its historical product-count statistic remains current.",
+      "checked": "2026-10-01",
+      "access": "public primary source; see access_scope",
+      "retrieved_source": "/tmp/nas-drug-sources/aasm-melatonin-children.pdf",
+      "source_sha256": "595aa413c0f31d0e8ee058fc436358b8a959a9758d7ac6a7ae537b1d102d685e",
+      "version": "Adopted2022-09-09",
+      "access_scope": "Complete public advisory read; historical four-product count not represented as current."
+    },
+    {
+      "id": "now",
+      "title": "NOW · Melatonin 3 mg capsule Supplement Facts",
+      "publisher": "NOW Foods",
+      "url": "https://www.nowfoods.com/products/supplements/melatonin-3-mg-veg-capsules",
+      "note": "Official current manufacturer page read through public web tool October 1, 2026: Supplement Facts, adult directions, caution, storage and package identifiers. Curl returned 403; no complete downloaded HTML claimed. Manufacturer direction is not disease approval.",
+      "checked": "2026-10-01",
+      "access": "public primary source; see access_scope",
+      "retrieved_source": "/tmp/nas-drug-sources/now-melatonin-verified-fields.json",
+      "source_sha256": "827662fd9526747761d4f12d3fcbfc6dfc647409cdc77124daa04dc4ef721680",
+      "access_scope": "Official manufacturer web-tool render: full Supplement Facts, suggested usage, caution, storage and selected product identifiers. Direct curl403; saved reviewer field snapshot is original factual extraction, not full HTML download.",
+      "retrieval_limitation": "No retrieved HTML or independent chemical content/certification assay claimed."
+    },
+    {
+      "id": "circadin",
+      "title": "EMA · Circadin current product information",
+      "publisher": "European Medicines Agency",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/circadin-epar-product-information_en.pdf",
+      "note": "Current public EU SmPC and leaflet retrieved October 1, 2026. Adult 2 mg prolonged-release prescription product; EU approval is not U.S. supplement approval.",
+      "checked": "2026-10-01",
+      "access": "public primary source; see access_scope",
+      "retrieved_source": "/tmp/nas-drug-sources/circadin.pdf",
+      "source_sha256": "3017f870241dac3ebcc1e9e3316286f78f9cbb94c80634571ffcb14a78331107",
+      "version": "Exact current EMA product-information PDF snapshot; no blank PDF revision date invented",
+      "access_scope": "Complete public SmPC supporting sections4.1–4.9,5.1–5.2,6.1–6.6 and patient leaflet; EU prescription format/indication scope.",
+      "approval_page": "https://www.ema.europa.eu/en/medicines/human/EPAR/circadin",
+      "approval_page_snapshot": "/tmp/nas-drug-sources/circadin-epar.html",
+      "approval_page_sha256": "2712003ef9f12a085983d1b559b84e07098f2ba90efd0acf7d203f6a540e5e64"
+    },
+    {
+      "id": "slenyto",
+      "title": "EMA · Slenyto current product information",
+      "publisher": "European Medicines Agency",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/slenyto-epar-product-information_en.pdf",
+      "note": "Current public EU SmPC and leaflet retrieved October 1, 2026. Product-specific pediatric populations and regimens; blank/placeholder PDF revision date is not an invented date.",
+      "checked": "2026-10-01",
+      "access": "public primary source; see access_scope",
+      "retrieved_source": "/tmp/nas-drug-sources/slenyto.pdf",
+      "source_sha256": "17494391b1b166184a1056469270f628e4597dda5631ec4cd470a78d59405d08",
+      "version": "Exact current EMA product-information PDF snapshot; no blank PDF revision date invented",
+      "access_scope": "Complete public SmPC supporting sections4.1–4.9,5.1–5.2,6.1–6.6 and patient leaflet; EU prescription format/indication scope.",
+      "approval_page": "https://www.ema.europa.eu/en/medicines/human/EPAR/slenyto",
+      "approval_page_snapshot": "/tmp/nas-drug-sources/slenyto-epar.html",
+      "approval_page_sha256": "a63374ab6938e7952075c4a714779bbeefa56f962c1cb4582923e1bfd05ab2f9"
+    }
+  ],
+  "assertion_source_map": [
+    {
+      "section": "indications",
+      "card": "U.S. status and clinical evidence",
+      "assertions": {
+        "paragraphs": [
+          "Melatonin is marketed in the U.S. as a dietary supplement; FDA does not preapprove supplements for safety/effectiveness. NIH describes possible benefit for selected circadian/jet-lag settings, with condition-specific uncertainty. AASM’s 2017 adult chronic-insomnia guideline weakly recommends against melatonin for sleep-onset or maintenance insomnia based on limited, very-low-quality evidence. A sleep diagnosis and behavioral treatment assessment remain important; a retail sleep-support claim is not an approved disease indication."
+        ]
+      },
+      "source_sections": {
+        "nccih": [
+          "U.S. supplement status; jet lag and circadian evidence"
+        ],
+        "fda-supp": [
+          "Regulation and premarket approval"
+        ],
+        "aasm-insomnia": [
+          "Recommendation 12 complete melatonin section"
+        ]
+      }
+    },
+    {
+      "section": "indications",
+      "card": "EU product-specific indications",
+      "assertions": {
+        "paragraphs": [
+          "Circadin: short-term primary insomnia with poor sleep quality, as monotherapy at age ≥55. Current Slenyto: insomnia after insufficient sleep-hygiene measures in ages 2–18 with ASD and/or neurogenetic disorders involving abnormal daily melatonin secretion and/or nocturnal awakenings; a separate indication covers ages 6–17 with ADHD. These are EU-authorized prescription-product indications, not blanket approval for childhood insomnia or for U.S. supplements."
+        ]
+      },
+      "source_sections": {
+        "circadin": [
+          "SmPC 4.1",
+          "Annex II prescription supply"
+        ],
+        "slenyto": [
+          "SmPC 4.1",
+          "Annex II prescription supply"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Verified directions by product",
+      "assertions": {
+        "paragraphs": [
+          "No single U.S. FDA-approved insomnia dose, pediatric supplement dose or maximum is supplied here. Prescriber-selected circadian timing may differ from bedtime use; do not escalate a gummy or capsule to reproduce a foreign prescription regimen."
+        ],
+        "table": {
+          "headers": [
+            "Product and setting",
+            "Verified direction and limits"
+          ],
+          "rows": [
+            [
+              "NOW 3 mg capsule · U.S. supplement",
+              "Manufacturer: adults take one capsule near bedtime with water. This is a product direction, not established treatment for every sleep disorder."
+            ],
+            [
+              "Circadin · EU primary insomnia, age ≥55",
+              "2 mg once daily, 1–2 hours before bedtime, after food; up to 13 weeks."
+            ],
+            [
+              "Slenyto · EU ASD/neurogenetic indication, age 2–18",
+              "Start 2 mg once daily, 30–60 minutes before bedtime, with/after food. If inadequate, increase to 5 mg; maximum 10 mg."
+            ],
+            [
+              "Slenyto · EU ADHD indication, age 6–17",
+              "Start 1–2 mg once daily, 30–60 minutes before bedtime with/after food. Individual adjustment to 5 mg; maximum 10 mg if clinically needed. Lowest effective dose for the shortest period."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "now": [
+          "Suggested usage and caution"
+        ],
+        "circadin": [
+          "4.2"
+        ],
+        "slenyto": [
+          "4.2"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Slenyto response review and missed dose",
+      "assertions": {
+        "paragraphs": [
+          "Assess effect after at least three months for the ASD/neurogenetic indication, and approximately three months for ADHD; consider stopping if no clinically relevant benefit. Review ongoing suitability at least every six months. The ADHD label additionally calls for regular discontinuation attempts at least yearly, particularly when benefit is uncertain. A missed dose may be taken before going to sleep that night; after that, wait until the next scheduled dose. Do not double. If a higher dose worsens effect, consider supervised reduction before abandonment."
+        ]
+      },
+      "source_sections": {
+        "slenyto": [
+          "4.2 complete indication-specific follow-up and missed-dose text"
+        ]
+      }
+    },
+    {
+      "section": "dosage",
+      "card": "Administration and formulation changes",
+      "assertions": {
+        "paragraphs": [
+          "Circadin/Slenyto tablets must remain whole to preserve prolonged release; do not crush or chew. Slenyto whole tablets may be placed in yogurt, orange juice or ice cream and taken immediately; do not store the mixture. Supplement capsules, gummies, liquids and sustained-release tablets are not automatically equivalent to either EU medicine. Check mg per unit/serving and liquid concentration; a change in brand or release design needs a new plan."
+        ]
+      },
+      "source_sections": {
+        "circadin": [
+          "4.2",
+          "Patient leaflet 3"
+        ],
+        "slenyto": [
+          "4.2"
+        ],
+        "nccih": [
+          "Supplement forms and content variability"
+        ],
+        "now": [
+          "Supplement Facts"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Warnings and precautions",
+      "assertions": {
+        "paragraphs": [
+          "Avoid driving or hazardous activity when sleepy. EU prolonged-release labels do not recommend use in autoimmune disease or hepatic impairment because of limited data. Their lactose-containing products have restrictions for specific inherited sugar-handling disorders. Slenyto can cause residual daytime fatigue that worsens attention/behavior in ADHD; reassess timing or continuation. Supplement content can differ from the label. Secure all products, especially candy-like forms, from children. Long-term U.S. supplement safety is insufficiently characterized; EU product study data do not establish safety of every formulation."
+        ]
+      },
+      "source_sections": {
+        "circadin": [
+          "4.2",
+          "4.4",
+          "4.7"
+        ],
+        "slenyto": [
+          "4.2",
+          "4.4",
+          "4.7"
+        ],
+        "nccih": [
+          "Safety, content variability and pediatric ingestion"
+        ],
+        "aasm-child": [
+          "Complete safety advisory"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Contraindications",
+      "assertions": {
+        "paragraphs": [
+          "Circadin and Slenyto list hypersensitivity to melatonin or product excipients as the formal contraindication. Autoimmune/liver restrictions and inherited lactose-related restrictions appear in warnings/precautions, and should still be respected. The selected NOW capsule cautions against pregnancy/nursing and limits use to adults; these manufacturer restrictions do not constitute a standardized FDA contraindication list for all melatonin supplements."
+        ]
+      },
+      "source_sections": {
+        "circadin": [
+          "4.3",
+          "4.4"
+        ],
+        "slenyto": [
+          "4.3",
+          "4.4"
+        ],
+        "now": [
+          "Caution"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Boxed warning status",
+      "assertions": {
+        "paragraphs": [
+          "The selected U.S. supplement has no FDA prescription-drug boxed-warning label. Circadin/Slenyto EU SmPCs are a different regulatory format and do not use an FDA boxed-warning designation. Absence of that format does not establish harmlessness or U.S. drug approval."
+        ]
+      },
+      "source_sections": {
+        "fda-supp": [
+          "Supplement regulatory framework"
+        ],
+        "now": [
+          "Supplement disclaimer/caution"
+        ],
+        "circadin": [
+          "Complete current SmPC"
+        ],
+        "slenyto": [
+          "Complete current SmPC"
+        ]
+      }
+    },
+    {
+      "section": "safety",
+      "card": "Adverse reactions",
+      "assertions": {
+        "paragraphs": [
+          "NIH describes headache, dizziness, nausea and sleepiness in short-term supplement studies. Slenyto reports somnolence, fatigue, headache, mood swings, irritability, aggression and next-day effects; frequency cannot be transferred to gummies. Circadin’s labeled reactions include sleepiness/dizziness and mood/dream changes, among others. Seek care for severe allergy or major behavioral change. Suspected accidental ingestion/overdose needs poison-center or urgent clinical assessment; marked drowsiness or breathing difficulty warrants emergency help. Do not assume every product mixture has the same overdose course as prescription melatonin alone."
+        ]
+      },
+      "source_sections": {
+        "nccih": [
+          "Reported adverse effects and pediatric ingestion"
+        ],
+        "slenyto": [
+          "4.8",
+          "4.9"
+        ],
+        "circadin": [
+          "4.8",
+          "4.9"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Exposure and sedation interactions",
+      "assertions": {
+        "paragraphs": [
+          "Confirm the actual product and all medicines/supplements with the prescriber or pharmacist."
+        ],
+        "table": {
+          "headers": [
+            "Co-treatment or factor",
+            "Product-label action or concern"
+          ],
+          "rows": [
+            [
+              "Fluvoxamine",
+              "Avoid the combination: substantially increased melatonin exposure."
+            ],
+            [
+              "Ciprofloxacin/other CYP1A2 inhibitors, estrogens, cimetidine or methoxypsoralens",
+              "May increase exposure; review tolerability and treatment plan."
+            ],
+            [
+              "Carbamazepine, rifampicin or smoking changes",
+              "May reduce exposure through enzyme induction; starting/stopping smoking can change effect."
+            ],
+            [
+              "Benzodiazepines and Z-drug hypnotics",
+              "Additive sedation and impairment. Slenyto recommends avoiding these combinations; Circadin describes enhanced sedative effects."
+            ],
+            [
+              "Alcohol",
+              "Avoid with selected products; can reduce sleep benefit and worsen impairment."
+            ],
+            [
+              "Imipramine or thioridazine",
+              "Added task impairment despite no major demonstrated PK interaction; Slenyto recommends avoiding co-use."
+            ]
+          ]
+        }
+      },
+      "source_sections": {
+        "circadin": [
+          "4.5 complete interaction section"
+        ],
+        "slenyto": [
+          "4.4",
+          "4.5 complete interaction section"
+        ]
+      }
+    },
+    {
+      "section": "interactions",
+      "card": "Additional clinical review",
+      "assertions": {
+        "paragraphs": [
+          "People with epilepsy or taking anticoagulants should use supplements under medical supervision. Do not independently change a beta blocker, evening NSAID or other essential medicine to manipulate melatonin; discuss the Slenyto label’s endogenous-secretion interaction observations with its prescriber. The NOW capsule also advises review with sedatives/antidepressants and relevant medical conditions."
+        ]
+      },
+      "source_sections": {
+        "nccih": [
+          "Medicine interactions: epilepsy and anticoagulants"
+        ],
+        "slenyto": [
+          "4.5 NSAIDs and beta blockers"
+        ],
+        "now": [
+          "Caution"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Children and older adults",
+      "assertions": {
+        "paragraphs": [
+          "Use the exact EU indication/age range when prescribing those products. Circadin has no established pediatric efficacy/safety; Slenyto ADHD use below six is not established and use below two for insomnia is not relevant. AASM advises pediatric clinician review before supplements and consideration of sleep schedules/behavior; when used, dose/timing and product quality should be assessed. Older patients can have greater next-day exposure/drowsiness, even where Circadin has an age ≥55 indication."
+        ]
+      },
+      "source_sections": {
+        "circadin": [
+          "4.1",
+          "4.2",
+          "5.2"
+        ],
+        "slenyto": [
+          "4.1",
+          "4.2"
+        ],
+        "aasm-child": [
+          "Complete advisory"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Pregnancy and breastfeeding",
+      "assertions": {
+        "paragraphs": [
+          "Human safety information is insufficient. The selected U.S. capsule excludes pregnancy/nursing. Circadin does not recommend use in pregnancy or when planning pregnancy and does not recommend breastfeeding during treatment. Slenyto advises avoiding pregnancy use as a precaution and an individualized choice between breastfeeding and therapy. Do not infer safety from the fact that endogenous melatonin is a hormone present in milk."
+        ]
+      },
+      "source_sections": {
+        "circadin": [
+          "4.6"
+        ],
+        "slenyto": [
+          "4.6"
+        ],
+        "now": [
+          "Caution"
+        ]
+      }
+    },
+    {
+      "section": "populations",
+      "card": "Renal and hepatic considerations",
+      "assertions": {
+        "paragraphs": [
+          "Both EU products note renal PK data gaps and recommend caution; neither supplies a validated eGFR-based adjustment table. They do not recommend hepatic-impairment use because liver metabolism and limited clinical experience raise uncertainty/exposure concerns. These restrictions must not be relaxed by copying a generic supplement dose or by treating inactive renal metabolites as proof of safety."
+        ]
+      },
+      "source_sections": {
+        "circadin": [
+          "4.2",
+          "5.2"
+        ],
+        "slenyto": [
+          "4.2",
+          "5.2"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Mechanism and clinical interpretation",
+      "assertions": {
+        "paragraphs": [
+          "Melatonin-receptor signaling, principally MT1/MT2, participates in circadian and sleep regulation. Circadin/Slenyto provide exogenous prolonged-release melatonin for their specific settings. Timing relative to biological night matters; sedation alone does not establish successful treatment of a circadian disorder or correction of its cause."
+        ]
+      },
+      "source_sections": {
+        "circadin": [
+          "5.1"
+        ],
+        "slenyto": [
+          "5.1"
+        ]
+      }
+    },
+    {
+      "section": "pharmacology",
+      "card": "Absorption and disposition",
+      "assertions": {
+        "paragraphs": [
+          "EU prolonged-release information describes substantial hepatic first-pass metabolism, about 15% bioavailability and predominant CYP1A metabolism, with possible CYP2C19 contribution. Metabolites are mainly excreted in urine. Circadin’s fed-state peak is around three hours and its terminal half-life about 3.5–4 hours; Slenyto also reports a prolonged-release terminal half-life around 3.5–4 hours, distinct from shorter elimination estimates discussed in its metabolism section. Do not apply those values to an untested IR capsule, gummy or liquid."
+        ]
+      },
+      "source_sections": {
+        "circadin": [
+          "5.2"
+        ],
+        "slenyto": [
+          "5.2"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Monitoring priorities",
+      "assertions": {
+        "paragraphs": [
+          "Record bedtime, sleep latency, awakenings and next-day function; assess whether the underlying diagnosis and treatment plan fit. Check drowsiness, mood/behavior and interaction changes. For Slenyto, review response around three months and ongoing need at least every six months; ADHD treatment includes the labeled periodic discontinuation review. Do not imply routine melatonin blood levels or laboratory testing validates an OTC sleep regimen."
+        ]
+      },
+      "source_sections": {
+        "slenyto": [
+          "4.2",
+          "4.4"
+        ],
+        "circadin": [
+          "4.4",
+          "4.7"
+        ]
+      }
+    },
+    {
+      "section": "practice",
+      "card": "Counseling and product quality",
+      "assertions": {
+        "paragraphs": [
+          "Use a clinician-selected timing plan and behavioral sleep measures. Compare mg per serving and ingredients at every purchase; keep products secured and away from children. AASM advises considering a USP-verified product when a clinician recommends pediatric supplementation; quality verification does not prove clinical efficacy or FDA disease approval, and no such certification is claimed for the example NOW capsule. Report unexpected effects and disclose supplements before procedures or medication changes."
+        ]
+      },
+      "source_sections": {
+        "aasm-child": [
+          "Complete advisory: clinician review, secure storage and USP mark"
+        ],
+        "fda-supp": [
+          "Supplement risk/quality and disclosure"
+        ],
+        "now": [
+          "Adult caution"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Representative product",
+      "assertions": {
+        "paragraphs": [
+          "NOW 3 mg vegetarian capsule lists 3 mg melatonin per capsule, with rice flour and hypromellose; selected 60-count SKU 3255, UPC 733739032553. This is a representative U.S. supplement, not a treatment endorsement, FDA approval or verified stock claim."
+        ]
+      },
+      "source_sections": {
+        "now": [
+          "Supplement Facts; available sizes/identifiers"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Dosage forms and strengths",
+      "assertions": {
+        "paragraphs": [
+          "U.S. supplements include tablets, capsules, gummies and liquids with variable strengths/release systems. EU Circadin is a 2 mg prolonged-release tablet; Slenyto has 1 and 5 mg prolonged-release tablets. Slenyto 1 mg tablets are small pink round tablets, 5 mg tablets yellow; package identity does not replace verification. Other ingredients and serving sizes differ, including combination supplements not covered here."
+        ]
+      },
+      "source_sections": {
+        "nccih": [
+          "Supplement dosage forms"
+        ],
+        "circadin": [
+          "SmPC 1–3"
+        ],
+        "slenyto": [
+          "SmPC 1–3"
+        ]
+      }
+    },
+    {
+      "section": "product",
+      "card": "Storage and handling",
+      "assertions": {
+        "paragraphs": [
+          "NOW’s selected capsule calls for cool, dry storage after opening. Circadin: do not store above 25°C; keep in the original package to protect from light. Slenyto: do not store above 30°C. Preserve prescription prolonged-release tablets whole, respect expiry and promptly use any Slenyto whole-tablet food mixture. Keep all products away from children; use local medicine/supplement disposal guidance."
+        ]
+      },
+      "source_sections": {
+        "now": [
+          "Storage"
+        ],
+        "circadin": [
+          "6.4",
+          "Patient leaflet 5"
+        ],
+        "slenyto": [
+          "4.2",
+          "6.4",
+          "6.6"
+        ]
+      }
+    }
+  ],
+  "scope_exclusions": [
+    "No U.S. disease approval inferred from supplement marketing; no universal pediatric supplement dose.",
+    "EU prescription regimens apply only to stated product/jurisdiction/indications, not U.S. gummies or other brands.",
+    "No claimed access to paywalled trials or universal long-term supplement safety."
+  ],
+  "resolved_source_findings": [
+    "Current Slenyto indication includes ASD/neurogenetic group age2–18 and separate ADHD group6–17; regimen differences retained.",
+    "Selected NOW3mg product is single-active supplement; NOW1mg tablet candidate had additional active nutrients and was not selected.",
+    "Current Slenyto PDF contains a placeholder revision date; exact downloaded content/hash plus current EPAR page retained rather than assigning fictitious revision.",
+    "EMA current pediatric indication includes broader neurogenetic wording; not narrowed to Smith-Magenis syndrome from an older approval summary.",
+    "Slenyto response review distinguishes ≥3months ASD/neurogenetic from approximately3months ADHD; at least6-month ongoing review and annual ADHD discontinuation assessment retained."
+  ],
+  "material_gaps": [],
+  "clinical_review": "Every published card reviewed against full relevant primary label sections. Source-reviewed within stated scope; not an independent clinician sign-off.",
+  "blueprint": "Immutable APAP eight sections, essential safety, three hero facts, cited disclosures, four safety cards and three product cards.",
+  "validation": {
+    "validateMonograph": [],
+    "build": "parent integration pending",
+    "rendered_page_qa": "parent integration pending",
+    "mobile_content_precheck": "Two-column naturally wrapping tables; strict390px rendered article QA remains parent integration task."
+  },
+  "monograph_sha256": "058403942638c788a57c5643d908ed0f78704f013663d4e488d7c894e4799e29",
+  "front_matter_source_map": {
+    "identity_and_facts": {
+      "now": [
+        "Supplement Facts and package identifier"
+      ],
+      "fda-supp": [
+        "Supplement regulatory status"
+      ],
+      "circadin": [
+        "SmPC 1–4.1"
+      ],
+      "slenyto": [
+        "SmPC 1–4.1"
+      ]
+    },
+    "essential": {
+      "fda-supp": [
+        "No premarket safety/effectiveness approval"
+      ],
+      "aasm-child": [
+        "Complete advisory"
+      ],
+      "slenyto": [
+        "4.1–4.4"
+      ]
+    }
+  }
+}

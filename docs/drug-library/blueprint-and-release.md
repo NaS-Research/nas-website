@@ -2,7 +2,7 @@
 
 Task: NaS-Website-Drug Library. Inventory: **300**, including the immutable APAP reference; **299** migrations are tracked in 30 batches (29 of ten, then nine).
 
-This is an active, incomplete work record. 18 batches (180 migrated profiles) have exact GitHub/Netlify production publication receipts and passed hosted checks. Batch19 is source-reviewed and undergoing integration/release QA. Candidate retrieval, clinical source review, schema validation, build/render checks, remote push, and verified publication remain distinct states in the completion ledger. All prior formatting editions are preserved. The remaining inventory is still being authored and reviewed; completion is never inferred from a candidate label or a passing schema.
+This is an active, incomplete work record. 19 batches (190 migrated profiles) have exact GitHub/Netlify production publication receipts and passed hosted checks. Batch20 is source-reviewed and undergoing integration/release QA. Candidate retrieval, clinical source review, schema validation, build/render checks, remote push, and verified publication remain distinct states in the completion ledger. All prior formatting editions are preserved. The remaining inventory is still being authored and reviewed; completion is never inferred from a candidate label or a passing schema.
 
 Earlier batch notes are retained as history; the completion ledger and production-verification entries record the current state.
 
@@ -220,3 +220,8 @@ Profiles: evolocumab, mesalamine, memantine, ethinyl-estradiol-etonogestrel, dia
 ### Batch18 production verification
 
 Profiles: meclizine, cyclosporine, fluconazole, rimegepant, tretinoin, lovastatin, drospirenone-ethinyl-estradiol, tiotropium, docusate, temazepam. Production commit `287df8fbf0cc4cd72896a0bc5882862f46cab163`, Netlify `6abecdc4c08454000844010a`, published `2026-10-01T21:18:27.268Z` via https://github.com/NaS-Research/nas-website/pull/21. Exact preview and production HTML and strict desktop/mobile browser checks passed; receipts and route/browser evidence are recorded in the ledger and archived externally.
+
+
+### Batch19 production verification
+
+Profiles: benazepril, brimonidine, sacubitril-valsartan, valproate, nebivolol, acyclovir, morphine, doxazosin, amlodipine-benazepril, nirmatrelvir-ritonavir. Production commit `dc62456b88b561e77fbec9774ef5b7aa4541fac8`, Netlify `6abed11a503e2a000805824f`, published `2026-10-01T21:32:52.402Z` via https://github.com/NaS-Research/nas-website/pull/22. Exact preview and production HTML and strict desktop/mobile browser checks passed; receipts and route/browser evidence are recorded in the ledger and archived externally.
