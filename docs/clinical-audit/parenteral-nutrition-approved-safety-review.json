@@ -1,0 +1,1016 @@
+{
+  "date": "2026-10-01",
+  "module": "parenteral-nutrition",
+  "status": "verified",
+  "statusScope": "Approved PN compatibility, filter, BUD, lipid and catheter-care safety reconciliation; whole module remains reviewing.",
+  "wholeModuleVerified": false,
+  "wholeChapterVerified": false,
+  "baseCommit": "d7d4e223d2d8a2a24ce5f3239e36035ce9232537",
+  "sourcePolicy": {
+    "primary": "Supplied private RxPrep2023 book",
+    "outsideSourcesAuthorized": true,
+    "authorizationQuote": "use that and complete the goal. I approve",
+    "authorizedScope": "Existing official ASPEN, USP, FDA and CDC PN references and linked primary supporting material",
+    "privateBookTextAndRendersOutsideGit": true
+  },
+  "sourceRead": {
+    "officialDocuments": [
+      {
+        "key": "filters",
+        "url": "https://nutritioncare.org/wp-content/uploads/2024/12/IV-Filters-For-PN-Factsheet.pdf",
+        "sha256": "10e361366689f648395c62d1d9771cd34a984728c41fe5f97669b22f41a1aef7",
+        "readScope": "Complete two-page text and both rendered pages."
+      },
+      {
+        "key": "lipids",
+        "url": "https://nutritioncare.org/wp-content/uploads/2024/12/ILE-Safety-Recommendations-Adult.pdf",
+        "sha256": "0a40c872f5909c3f706231b84de2142de15d1086b340e274841ed88f70cdb83f",
+        "readScope": "Complete two-page text and both rendered pages."
+      },
+      {
+        "key": "usp-faq",
+        "url": "https://pages.usp.org/rs/711-SXF-172/images/USP_HQS_797_FAQs_December2023_V6__002.pdf?version=0",
+        "sha256": "2c5a874251cc93dd38d06f6e4a486f95480c6eb0431a187eba0b41e1f1eaef97",
+        "readScope": "FAQs8,11,12,155,166-172,174-177,181-183; relevant rendered pages2,3,30,33-36."
+      },
+      {
+        "key": "fda-smof",
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/207648s013lbl.pdf",
+        "sha256": "fb05ffac9ee712d58281bf9fb3564182c808147531db52a3703ab90625f45130",
+        "readScope": "July2025 label sections2.1/2.2 and rendered pages2-4 only. Entire monitoring/allergy sections remain open."
+      },
+      {
+        "key": "order-review",
+        "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-02-Order-Review.pdf",
+        "sha256": "13e7e27f9fb85bdced5a63b2301895d84f4811ef1051456117fcf45176723b1e",
+        "readScope": "Complete two-page text and both rendered pages."
+      },
+      {
+        "key": "cdc-recommendations",
+        "url": "https://www.cdc.gov/infection-control/hcp/intravascular-catheter-related-infections/summary-recommendations.html",
+        "sha256": "e5e57783ad783d1692c976fc33926265122aa5ba3ff63c8ecde713f9ef4c015a",
+        "readScope": "Relevant VAD, asepsis, hub care, anticoagulation and dedicated-lumen recommendations; February2024 summary of2011 guidance."
+      },
+      {
+        "key": "compounding",
+        "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-03-Compounding.pdf",
+        "sha256": "7ccfb196fa3474e9ce753b623232229978224cbfff395d9a655731d36df149ec",
+        "readScope": "Both pages, complete text and rendered checklist."
+      },
+      {
+        "key": "compatibility-2022",
+        "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/jpen.2306",
+        "readScope": "Relevant emulsion mechanism, calcium/phosphate factors, iron, stability and medication-coadministration sections; not entire article verification."
+      },
+      {
+        "key": "safety-2014",
+        "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1177/0148607113511992",
+        "readScope": "Relevant administration Table3, VAD/infusion precautions, order/final checks and ACD software sections. Older filter/risk-category advice is superseded."
+      },
+      {
+        "key": "usp-chapter-2023",
+        "url": "https://doi.usp.org/USPNF/USPNF_M99925_07_01.html",
+        "readScope": "Public chapter preview and bibliographic version only; full subscription chapter was not read."
+      }
+    ],
+    "bookRecomparison": {
+      "freshRenderedPDFPages": [
+        111,
+        157,
+        165,
+        168,
+        169,
+        287
+      ],
+      "printedPages": [
+        103,
+        149,
+        157,
+        160,
+        161,
+        279
+      ],
+      "onlyRelevantClaimsReviewed": true,
+      "oldFilterAndRiskTableUsedAsDiscrepancyEvidenceOnly": true
+    },
+    "finishedTeachingAndAll16QuestionsComparedAgain": true
+  },
+  "questionCoverageUpdates": [
+    {
+      "id": "parenteral-nutrition-011",
+      "status": "verified",
+      "question": {
+        "id": "parenteral-nutrition-011",
+        "question": "Why is a dedicated PN lumen preferred when feasible?",
+        "choices": [
+          "It reduces manipulations, incompatibility exposure, and contamination opportunities",
+          "It eliminates hand hygiene",
+          "It makes every medication compatible",
+          "It prevents all thrombosis"
+        ],
+        "answer": 0,
+        "rationale": "A dedicated lumen can reduce unnecessary access and incompatible coadministration. Its infection-prevention benefit is not established by CDC; aseptic technique and the full catheter-care bundle remain necessary.",
+        "reviewHref": "#venous-access"
+      },
+      "contentSHA256": "b8ab9c15f1ec372759e155bb74cb5e3d07747d6c28bfb2d369aaf451d61772e0",
+      "sources": [
+        "safety-2014",
+        "cdc-recommendations"
+      ],
+      "allChoicesKeyRationaleReviewed": true,
+      "oneBestAnswer": true,
+      "comparison": "Dedicated access limits avoidable manipulations and incompatibility exposure; infection benefit remains unresolved. Other options falsely remove asepsis, guarantee compatibility or abolish thrombosis.",
+      "revisedThisUnit": true
+    },
+    {
+      "id": "parenteral-nutrition-014",
+      "status": "verified",
+      "question": {
+        "id": "parenteral-nutrition-014",
+        "question": "Which practice reduces catheter-related infection risk?",
+        "choices": [
+          "Aseptic hub access and minimizing unnecessary line manipulation",
+          "Routine systemic antibiotics for every patient",
+          "Opening the line for frequent sampling",
+          "Using extra lumens without a clinical need"
+        ],
+        "answer": 0,
+        "rationale": "Hub disinfection, hand hygiene, and fewer access events reduce contamination opportunities.",
+        "reviewHref": "#venous-access"
+      },
+      "contentSHA256": "e4a817e1aecac107ee61b9328deb038970b6894d849633d1ece0bc08e06cf27e",
+      "sources": [
+        "cdc-recommendations",
+        "safety-2014"
+      ],
+      "allChoicesKeyRationaleReviewed": true,
+      "oneBestAnswer": true,
+      "comparison": "Aseptic hub access and fewer manipulations support infection prevention; routine antibiotics, unnecessary sampling and extra lumens contradict the prevention guidance.",
+      "revisedThisUnit": false
+    },
+    {
+      "id": "parenteral-nutrition-016",
+      "status": "verified",
+      "question": {
+        "id": "parenteral-nutrition-016",
+        "question": "Which statement about catheter anticoagulation is most accurate?",
+        "choices": [
+          "Routine anticoagulation is not recommended solely to prevent catheter infection",
+          "Every PN bag should contain heparin",
+          "Anticoagulation eliminates biofilm",
+          "Heparin is compatible with every formulation"
+        ],
+        "answer": 0,
+        "rationale": "CDC guidance does not support routine anticoagulant therapy solely for infection prevention.",
+        "reviewHref": "#venous-access"
+      },
+      "contentSHA256": "ccc6ccaef0217df77b8c05f75164acea07481e5f7009fe2d867f514a2fc9f68a",
+      "sources": [
+        "cdc-recommendations",
+        "compatibility-2022"
+      ],
+      "allChoicesKeyRationaleReviewed": true,
+      "oneBestAnswer": true,
+      "comparison": "CDC does not recommend routine anticoagulation solely for infection prevention. Heparin is not universally indicated/compatible and does not eliminate biofilm.",
+      "revisedThisUnit": false
+    },
+    {
+      "id": "parenteral-nutrition-022",
+      "status": "verified",
+      "question": {
+        "id": "parenteral-nutrition-022",
+        "question": "Which statement about adult lipid injectable emulsions is most accurate?",
+        "choices": [
+          "Dose, composition, allergy information, rate, and compatibility are product specific",
+          "All products are interchangeable at any rate",
+          "Lipid never affects triglycerides",
+          "Lipid can be omitted indefinitely without consequence"
+        ],
+        "answer": 0,
+        "rationale": "ILE products differ and must be prescribed using current labeling and patient factors.",
+        "reviewHref": "#macronutrient-design"
+      },
+      "contentSHA256": "df124ec812760a984ab80875e305991a2b48ac68be3c048353e768bbd6d93238",
+      "sources": [
+        "lipids",
+        "fda-smof"
+      ],
+      "allChoicesKeyRationaleReviewed": true,
+      "oneBestAnswer": true,
+      "comparison": "Product-specific labeling determines dose, composition, allergy, rate and compatibility. Interchangeability at any rate, no TG effect and indefinite omission are unsupported.",
+      "revisedThisUnit": false
+    },
+    {
+      "id": "parenteral-nutrition-023",
+      "status": "verified",
+      "question": {
+        "id": "parenteral-nutrition-023",
+        "question": "What triglyceride threshold does ASPEN adult guidance use to consider holding or limiting ILE?",
+        "choices": [
+          "Greater than 400 mg per dL",
+          "Greater than 40 mg per dL",
+          "Greater than 100 mg per dL",
+          "Greater than 10 mg per dL"
+        ],
+        "answer": 0,
+        "rationale": "ASPEN adult ILE guidance advises holding or limiting lipid when triglycerides exceed 400 mg per dL.",
+        "reviewHref": "#macronutrient-design"
+      },
+      "contentSHA256": "590a82d5cb6206b82083d609242bc41bc5482dfa33f7156a278726a72ed58b8a",
+      "sources": [
+        "lipids"
+      ],
+      "allChoicesKeyRationaleReviewed": true,
+      "oneBestAnswer": true,
+      "comparison": "ASPEN adult factsheet explicitly uses TG >400 mg/dL for hold/limit consideration; lower alternative thresholds are not its stated recommendation.",
+      "revisedThisUnit": false
+    },
+    {
+      "id": "parenteral-nutrition-024",
+      "status": "verified",
+      "question": {
+        "id": "parenteral-nutrition-024",
+        "question": "Why should prolonged lipid omission be avoided?",
+        "choices": [
+          "It can produce essential fatty acid deficiency",
+          "It always lowers glucose to zero",
+          "It causes immediate catheter fracture",
+          "It eliminates amino acid delivery"
+        ],
+        "answer": 0,
+        "rationale": "Lipid supplies essential fatty acids in addition to energy.",
+        "reviewHref": "#macronutrient-design"
+      },
+      "contentSHA256": "6ee90de6e0dd5c071b0fabe47145375b1209bb176b8fa4b0f62d060beb614bb5",
+      "sources": [
+        "lipids"
+      ],
+      "allChoicesKeyRationaleReviewed": true,
+      "oneBestAnswer": true,
+      "comparison": "Prolonged ILE omission risks EFAD; omission does not make glucose zero, fracture a catheter or remove amino acid delivery.",
+      "revisedThisUnit": false
+    },
+    {
+      "id": "parenteral-nutrition-034",
+      "status": "verified",
+      "question": {
+        "id": "parenteral-nutrition-034",
+        "question": "Why is routine iron addition to a total nutrient admixture avoided?",
+        "choices": [
+          "Iron can destabilize the emulsion and has compatibility and safety concerns",
+          "Iron has no clinical use",
+          "Iron provides too much protein",
+          "Iron always causes hypocalcemia"
+        ],
+        "answer": 0,
+        "rationale": "Trivalent iron can weaken the electrostatic barrier that keeps lipid droplets apart. Iron products also have formulation-specific compatibility and safety concerns; assess deficiency and replacement separately rather than routinely adding iron to a TNA.",
+        "reviewHref": "#micronutrient-balance"
+      },
+      "contentSHA256": "5864a4b8465e0585e96fb23789287a57e8ab47586a65c96b3941dd452f3c6a66",
+      "sources": [
+        "compatibility-2022"
+      ],
+      "allChoicesKeyRationaleReviewed": true,
+      "oneBestAnswer": true,
+      "comparison": "Trivalent iron can impair emulsion repulsion; formulation-specific compatibility and safety prevent routine TNA addition. Iron replacement remains clinically useful; protein delivery and universal hypocalcemia do not explain the concern.",
+      "revisedThisUnit": true
+    },
+    {
+      "id": "parenteral-nutrition-036",
+      "status": "verified",
+      "question": {
+        "id": "parenteral-nutrition-036",
+        "question": "Which visual finding requires a PN admixture to be quarantined?",
+        "choices": [
+          "Visible precipitate or free oil",
+          "A complete label",
+          "An intact seal",
+          "A uniform appearance within validated specifications"
+        ],
+        "answer": 0,
+        "rationale": "Particles, precipitate, or emulsion cracking can be dangerous and require investigation.",
+        "reviewHref": "#compounding-safety"
+      },
+      "contentSHA256": "8c4daa3f114b2c482dd6ffe31c795c93b02728f6ab3ef103fca3565c12dcde86",
+      "sources": [
+        "lipids",
+        "filters",
+        "compounding",
+        "usp-faq"
+      ],
+      "allChoicesKeyRationaleReviewed": true,
+      "oneBestAnswer": true,
+      "comparison": "Visible precipitate/free oil requires quarantine and investigation. A complete label, intact seal and specification-conforming appearance do not themselves require quarantine.",
+      "revisedThisUnit": false
+    },
+    {
+      "id": "parenteral-nutrition-037",
+      "status": "verified",
+      "question": {
+        "id": "parenteral-nutrition-037",
+        "question": "Can a normal visual inspection prove calcium-phosphate compatibility?",
+        "choices": [
+          "No, validated formulation data and process controls are still required",
+          "Yes, appearance proves molecular stability",
+          "Yes, if the bag is cold",
+          "Yes, if a central line is used"
+        ],
+        "answer": 0,
+        "rationale": "Subvisible particles and delayed precipitation can occur even when the bag initially appears normal.",
+        "reviewHref": "#compounding-safety"
+      },
+      "contentSHA256": "f433d50a4c8a546d5a06d198d7864958a6f9656e4dc5f4684929c0870525806b",
+      "sources": [
+        "compatibility-2022",
+        "filters",
+        "order-review"
+      ],
+      "allChoicesKeyRationaleReviewed": true,
+      "oneBestAnswer": true,
+      "comparison": "Subvisible/delayed precipitates prevent normal appearance from proving compatibility. Cold storage or central access does not establish molecular stability.",
+      "revisedThisUnit": false
+    },
+    {
+      "id": "parenteral-nutrition-038",
+      "status": "verified",
+      "question": {
+        "id": "parenteral-nutrition-038",
+        "question": "Which filter should be used for current administration of a total nutrient admixture?",
+        "choices": [
+          "A 1.2 micron in-line filter",
+          "A 0.22 micron filter",
+          "No filter",
+          "A 10 micron filter"
+        ],
+        "answer": 0,
+        "rationale": "ASPEN recommends a 1.2 micron filter for TNA and all other PN formulations.",
+        "reviewHref": "#compounding-safety"
+      },
+      "contentSHA256": "f40fb657011ca8c2176115d46ca52489566e5a2c67f8bec565970b9f4772d6e5",
+      "sources": [
+        "filters"
+      ],
+      "allChoicesKeyRationaleReviewed": true,
+      "oneBestAnswer": true,
+      "comparison": "All PN formulations use the recommended 1.2 micron filter. 0.22 micron, no filter and 10 micron do not match this recommendation.",
+      "revisedThisUnit": false
+    },
+    {
+      "id": "parenteral-nutrition-039",
+      "status": "verified",
+      "question": {
+        "id": "parenteral-nutrition-039",
+        "question": "Which old practice was replaced by ASPEN's current filtration recommendation?",
+        "choices": [
+          "Using a 0.22 micron filter for lipid-free PN",
+          "Using aseptic technique",
+          "Inspecting the final bag",
+          "Verifying the order"
+        ],
+        "answer": 0,
+        "rationale": "Current guidance simplifies filtration to a 1.2 micron filter for all PN formulations.",
+        "reviewHref": "#compounding-safety"
+      },
+      "contentSHA256": "aa6fd88a4359aeb5805d36f14b9440331da752834ac6348fa126a7106ebff556",
+      "sources": [
+        "filters"
+      ],
+      "allChoicesKeyRationaleReviewed": true,
+      "oneBestAnswer": true,
+      "comparison": "The all-PN 1.2 micron recommendation replaces the old lipid-free 0.22 convention; asepsis, inspection and order verification remain required.",
+      "revisedThisUnit": false
+    },
+    {
+      "id": "parenteral-nutrition-040",
+      "status": "verified",
+      "question": {
+        "id": "parenteral-nutrition-040",
+        "question": "Why should medication coadministration with PN generally be avoided?",
+        "choices": [
+          "It adds incompatibility, line manipulation, and infection risk",
+          "Every medication increases calories",
+          "PN blocks all receptors",
+          "A filter makes every drug inactive"
+        ],
+        "answer": 0,
+        "rationale": "A separate route is safer when available; unavoidable coadministration requires pharmacist review.",
+        "reviewHref": "#compounding-safety"
+      },
+      "contentSHA256": "300a996d72ff2fd17e8bd4a0f4dedd06756d2480ee913abe4c36abed2bf08e54",
+      "sources": [
+        "lipids",
+        "filters",
+        "safety-2014"
+      ],
+      "allChoicesKeyRationaleReviewed": true,
+      "oneBestAnswer": true,
+      "comparison": "Medication coadministration adds compatibility/manipulation/infection concerns; unrelated calories/receptor effects or universal filter inactivation do not explain the precaution.",
+      "revisedThisUnit": false
+    },
+    {
+      "id": "parenteral-nutrition-041",
+      "status": "verified",
+      "question": {
+        "id": "parenteral-nutrition-041",
+        "question": "Which statement about USP chapter 797 is current?",
+        "choices": [
+          "The former low, medium, and high risk categories and their fixed BUDs are obsolete",
+          "Every PN has a five-day refrigerated BUD",
+          "All sterile preparations share one BUD",
+          "Visual inspection replaces sterility controls"
+        ],
+        "answer": 0,
+        "rationale": "Current USP chapter 797 uses Category 1, 2 and 3 requirements. Beyond-use dating must account for the applicable category, sterility assurance, formulation stability, container and storage.",
+        "reviewHref": "#compounding-safety"
+      },
+      "contentSHA256": "b2d0427ff21bfbe7a53ad094e9885d56eb6438b3f6021bb7a1ebc839049bfac0",
+      "sources": [
+        "usp-faq",
+        "usp-chapter-2023"
+      ],
+      "allChoicesKeyRationaleReviewed": true,
+      "oneBestAnswer": true,
+      "comparison": "Category1/2/3 replaced former risk categories. BUD requires preparation-specific sterility/stability controls; universal durations and appearance alone are inadequate.",
+      "revisedThisUnit": true
+    },
+    {
+      "id": "parenteral-nutrition-102",
+      "status": "verified",
+      "question": {
+        "id": "parenteral-nutrition-102",
+        "question": "A patient receiving PN and propofol develops triglycerides of 520 mg/dL. What is the most defensible next action?",
+        "choices": [
+          "Count all lipid calories and hold or limit ILE while evaluating causes and tolerance",
+          "Reduce dextrose alone and continue both lipid sources without reassessment",
+          "Switch ILE brands at the same dose without reviewing total lipid exposure",
+          "Omit ILE indefinitely without reassessing essential fatty acid provision"
+        ],
+        "answer": 0,
+        "rationale": "ASPEN advises limiting or holding ILE above 400 mg/dL, and propofol adds lipid exposure. Changing brands or reducing dextrose alone does not remove the need to review total lipid delivery. Prolonged lipid omission also requires reassessment because of essential fatty acid deficiency risk.",
+        "reviewHref": "#macronutrient-design"
+      },
+      "contentSHA256": "8fe32874d49d88615bd52f398532969d2c6451a4b978ecf6c529ac3afb6135d5",
+      "sources": [
+        "lipids",
+        "book-PDF165"
+      ],
+      "allChoicesKeyRationaleReviewed": true,
+      "oneBestAnswer": true,
+      "comparison": "520 exceeds the ASPEN400 threshold; include propofol lipid. Dextrose reduction or brand substitution alone omits total exposure review, while indefinite ILE omission creates EFAD risk.",
+      "revisedThisUnit": true
+    },
+    {
+      "id": "parenteral-nutrition-105",
+      "status": "verified",
+      "question": {
+        "id": "parenteral-nutrition-105",
+        "question": "A unit requests a 0.22 micron filter for a lipid-free PN bag because that was the old protocol. What is the most defensible next action?",
+        "choices": [
+          "Use the current 1.2 micron ASPEN recommendation and update the protocol",
+          "Continue the 0.22 micron protocol because this bag contains no lipid",
+          "Remove the filter from lipid-free PN to prevent filter occlusion",
+          "Add a 1.2 micron filter only after precipitate becomes visible"
+        ],
+        "answer": 0,
+        "rationale": "ASPEN recommends a 1.2 micron filter for all PN formulations, including lipid-free PN. Filtering is required from the start; removing the filter or waiting for visible precipitate defeats particulate protection.",
+        "reviewHref": "#compounding-safety"
+      },
+      "contentSHA256": "f07a123d0ed1bc00ad6023424f51e80aa776f8e856adc8eb3f602166f4918b73",
+      "sources": [
+        "filters"
+      ],
+      "allChoicesKeyRationaleReviewed": true,
+      "oneBestAnswer": true,
+      "comparison": "Lipid-free PN also uses1.2 micron from initiation. Old0.22, unfiltered PN and waiting for precipitate conflict with particulate protection.",
+      "revisedThisUnit": true
+    },
+    {
+      "id": "parenteral-nutrition-109",
+      "status": "verified",
+      "question": {
+        "id": "parenteral-nutrition-109",
+        "question": "An older handout assigns every compounded PN a five-day refrigerated beyond-use date. What is the most defensible next action?",
+        "choices": [
+          "Replace the rule with current USP chapter 797, stability data, process, container, and storage assessment",
+          "Assign five refrigerated days whenever the bag passes visual inspection",
+          "Use the category maximum even when formulation stability permits less time",
+          "Extend the original BUD by moving a room-temperature bag into refrigeration"
+        ],
+        "answer": 0,
+        "rationale": "The former risk categories have been replaced by Category 1, 2 and 3 requirements. An assigned BUD must also respect formulation stability and storage; a clear appearance does not establish sterility or stability. A category maximum cannot override a shorter stability limit, and colder storage does not extend the original assigned BUD.",
+        "reviewHref": "#compounding-safety"
+      },
+      "contentSHA256": "7f42a9e4f6e3bfaa48965a12e158bd6d240e30ad46f2828242daa21741725bf7",
+      "sources": [
+        "usp-faq"
+      ],
+      "allChoicesKeyRationaleReviewed": true,
+      "oneBestAnswer": true,
+      "comparison": "Reassess category, process and actual stability. Inspection cannot assign a universal five-day BUD; shorter stability overrides a maximum; colder storage cannot extend the original BUD.",
+      "revisedThisUnit": true
+    }
+  ],
+  "lessonCoverageUpdates": [
+    {
+      "lesson": "venous-access",
+      "heading": "Confirm and protect the system",
+      "kind": "retained original section",
+      "status": "verified",
+      "contentSHA256": "e8a8cc008c60ff3e78bbb3d37e3b546b4d6cbd0bdf886d09e21adb5150f156c6",
+      "sources": [
+        "safety-2014",
+        "cdc-recommendations"
+      ],
+      "comparison": "Table3 verifies tip/patency before infusion; fewest lumens, asepsis, practical separation and unresolved dedicated-lumen infection benefit are distinguished.",
+      "wholeSectionSourceComparedAgain": true
+    },
+    {
+      "lesson": "macronutrient-design",
+      "heading": "Prescribe lipid as a drug product",
+      "kind": "retained original section",
+      "status": "verified",
+      "contentSHA256": "9d03cff090649bec5298648bb37085e74f21bb88003863d77561877b4fb79128",
+      "sources": [
+        "lipids",
+        "fda-smof",
+        "book-PDF165"
+      ],
+      "comparison": "Generic product-specific labeling and TG/EFAD precautions; book supplies propofol/clevidipine contribution. No new universal dose/rate or product-age claim.",
+      "wholeSectionSourceComparedAgain": true
+    },
+    {
+      "lesson": "micronutrient-balance",
+      "heading": "Protect calcium and phosphate compatibility",
+      "kind": "retained original section",
+      "status": "verified",
+      "contentSHA256": "c76254ddb43c549bff8d08a9cb52b9cdbc491fecd00855d4d625af3c4e376621",
+      "sources": [
+        "compatibility-2022",
+        "order-review",
+        "compounding",
+        "safety-2014"
+      ],
+      "comparison": "Formulation factors, validated limits/curves, software limitations, mixing sequence and inspection all reviewed. No universal cutoff adopted.",
+      "wholeSectionSourceComparedAgain": true
+    },
+    {
+      "lesson": "compounding-safety",
+      "heading": "Recognize emulsion failure",
+      "kind": "retained original section",
+      "status": "verified",
+      "contentSHA256": "684a673eb6d8fe17d94a787522675eec286d609a3264abdfe4e41ae9d8bd6d0d",
+      "sources": [
+        "compatibility-2022",
+        "lipids",
+        "fda-smof",
+        "compounding",
+        "usp-faq"
+      ],
+      "comparison": "Emulsifier/cation/pH mechanism, reversible early changes versus unsafe coalescence/free oil, inspection and quarantine reviewed.",
+      "wholeSectionSourceComparedAgain": true
+    },
+    {
+      "lesson": "compounding-safety",
+      "heading": "Apply current sterile-compounding standards",
+      "kind": "retained original section",
+      "status": "verified",
+      "contentSHA256": "7f6095c0bbd6de0f63e826bb57660c85ec64c35c04dabb7f296b00af9bdca786",
+      "sources": [
+        "usp-faq",
+        "usp-chapter-2023",
+        "fda-smof"
+      ],
+      "comparison": "Current categories, additional Category3 controls and conservative preparation-specific BUD with shorter stability/manufacturer limits.",
+      "wholeSectionSourceComparedAgain": true
+    },
+    {
+      "lesson": "compounding-safety",
+      "heading": "Filter every PN formulation",
+      "kind": "retained original section",
+      "status": "verified",
+      "contentSHA256": "dbaa9653344b7193decec87b337e1a8ba95b14103924d09e43a8901a075b5beb",
+      "sources": [
+        "filters"
+      ],
+      "comparison": "All-PN pore size, formulation-specific placement, priming/change schedule, particulate purpose and medication precautions compared against both pages.",
+      "wholeSectionSourceComparedAgain": true
+    },
+    {
+      "lesson": "compounding-safety",
+      "heading": "Distinguish dating from administration time",
+      "kind": "new approved-source teaching",
+      "status": "verified",
+      "contentSHA256": "d0ef4495b217da897bfb71c4c4b74c8658478e83b50d34907f3a1151c4019185",
+      "sources": [
+        "usp-faq",
+        "fda-smof"
+      ],
+      "comparison": "FAQs166-170 distinguish latest administration start from infusion duration and prohibit cumulative/extended BUD by colder storage.",
+      "wholeSectionSourceComparedAgain": true
+    },
+    {
+      "lesson": "compounding-safety",
+      "heading": "Investigate an occluded filter without bypassing it",
+      "kind": "new approved-source teaching",
+      "status": "verified",
+      "contentSHA256": "4a7e357325d8b9d92cede3350013bccb7f6091bff92e9ab8c8e09c31f82bda18",
+      "sources": [
+        "filters"
+      ],
+      "comparison": "Mechanical checks, correct pore size, delayed precipitate, same-size replacement and pharmaceutical review; no unfiltered continuation.",
+      "wholeSectionSourceComparedAgain": true
+    }
+  ],
+  "coverage": {
+    "baseEvidence": "parenteral-nutrition-verification-workflow-review.json",
+    "baseVerifiedBank": 94,
+    "currentVerifiedBank": 110,
+    "bank": 134,
+    "remainingBank": 24,
+    "additionalVerifiedIds": [
+      "parenteral-nutrition-011",
+      "parenteral-nutrition-014",
+      "parenteral-nutrition-016",
+      "parenteral-nutrition-022",
+      "parenteral-nutrition-023",
+      "parenteral-nutrition-024",
+      "parenteral-nutrition-034",
+      "parenteral-nutrition-036",
+      "parenteral-nutrition-037",
+      "parenteral-nutrition-038",
+      "parenteral-nutrition-039",
+      "parenteral-nutrition-040",
+      "parenteral-nutrition-041",
+      "parenteral-nutrition-102",
+      "parenteral-nutrition-105",
+      "parenteral-nutrition-109"
+    ],
+    "remainingBankItemIds": [
+      "parenteral-nutrition-003",
+      "parenteral-nutrition-005",
+      "parenteral-nutrition-006",
+      "parenteral-nutrition-007",
+      "parenteral-nutrition-008",
+      "parenteral-nutrition-012",
+      "parenteral-nutrition-013",
+      "parenteral-nutrition-015",
+      "parenteral-nutrition-020",
+      "parenteral-nutrition-025",
+      "parenteral-nutrition-027",
+      "parenteral-nutrition-030",
+      "parenteral-nutrition-031",
+      "parenteral-nutrition-032",
+      "parenteral-nutrition-033",
+      "parenteral-nutrition-043",
+      "parenteral-nutrition-044",
+      "parenteral-nutrition-045",
+      "parenteral-nutrition-047",
+      "parenteral-nutrition-048",
+      "parenteral-nutrition-049",
+      "parenteral-nutrition-100",
+      "parenteral-nutrition-103",
+      "parenteral-nutrition-106"
+    ],
+    "embeddedVerified": 6,
+    "embedded": 6,
+    "cumulativeVerified": 5,
+    "cumulative": 5,
+    "originalTeachingFullyVerified": 7,
+    "originalTeachingRemaining": 17,
+    "newApprovedSourceSectionsVerified": 2,
+    "totalSections": 49,
+    "figuresFullyVerified": 1,
+    "figuresRemainingPartlySupported": 5,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false
+  },
+  "embeddedCoverageUpdates": [
+    {
+      "lesson": "micronutrient-balance",
+      "status": "verified",
+      "sources": [
+        "compatibility-2022",
+        "order-review",
+        "compounding"
+      ],
+      "proof": "Exact formulation/process factors are needed; serum calcium alone, bag color and a universal cutoff cannot establish compatibility.",
+      "contentSHA256": "b9c0293c28acfbfba301ed4081be06b612cd4e9e41db448e4e081091612379a3"
+    },
+    {
+      "lesson": "compounding-safety",
+      "status": "verified",
+      "sources": [
+        "filters"
+      ],
+      "proof": "1.2 micron applies to dextrose-AA PN; no filter, coffee filter and5 micron blood filter do not match ASPEN PN guidance.",
+      "contentSHA256": "6f930f267244df388a84883ad557749f2d36fb0c5ef7cec63b056e7e611bcc4c"
+    }
+  ],
+  "figureCoverageUpdates": [
+    {
+      "visual": "compounding-safety",
+      "status": "verified",
+      "componentUnchanged": true,
+      "sources": [
+        "order-review",
+        "compounding",
+        "filters",
+        "compatibility-2022"
+      ],
+      "columnMapping": {
+        "ORDER": "Independent dose/unit/route/sequence/allergy/clinical review.",
+        "ADMIX": "Product-specific calcium/phosphate/pH and emulsion limits.",
+        "INSPECT": "Order/work-record/product/label reconciliation and appearance/container review; visual inspection alone does not establish final composition.",
+        "FILTER": "1.2 micron for all PN."
+      },
+      "wholeOtherFiveFiguresVerified": false
+    }
+  ],
+  "broaderReview": {
+    "cumulativeCurrentIds": [
+      "cumulative-parenteral-nutrition-parenteral-nutrition-001",
+      "cumulative-parenteral-nutrition-parenteral-nutrition-034",
+      "cumulative-parenteral-nutrition-parenteral-nutrition-077",
+      "cumulative-parenteral-nutrition-parenteral-nutrition-book-001",
+      "cumulative-parenteral-nutrition-parenteral-nutrition-book-034"
+    ],
+    "additionalVerifiedUnderlyingId": "parenteral-nutrition-034",
+    "allFiveSourceVerified": true,
+    "priorFourSourceEvidence": "parenteral-nutrition-fluid-label-review.json",
+    "stableSelectionAndAnswerKeys": true,
+    "otherBroaderAndLegacyClinicalCoverage": "Unchanged; legacy monitoring and related PN/EN/pediatric/fluid modules remain open."
+  },
+  "discrepancyResolutions": [
+    {
+      "topic": "Lipid-free PN filtration",
+      "bookPDFPage": 111,
+      "bookRule": "0.22 micron for lipid-free PN",
+      "approvedSource": "filters",
+      "status": "resolved with explicitly approved source exception",
+      "resolution": "Retain1.2 micron for all PN; placement, occlusion and coadministration precautions expanded."
+    },
+    {
+      "topic": "Former risk categories and BUD",
+      "bookPDFPage": 287,
+      "bookRule": "Old low/medium/high categories; table gives medium-risk PN refrigerated9 days.",
+      "approvedSource": "usp-faq",
+      "status": "resolved with explicitly approved source exception",
+      "resolution": "Use Category1/2/3 and actual sterility/stability/process/container/storage requirements. Question109 five-day handout is a fictional scenario, not the book table."
+    }
+  ],
+  "validation": {
+    "build": {
+      "status": "passed",
+      "staticPages": 567,
+      "mode": "next build --webpack",
+      "candidate": "HEAD archive plus only the two scoped content files",
+      "privateLogSHA256": "f34cf7a112b2e2c9d93fb4e0eac719bc5a3d525c0c9f6f395f2ac4f0098066df"
+    },
+    "focusedAudit": {
+      "modules": 1,
+      "questions": 134,
+      "hardErrors": [],
+      "sourceGaps": [],
+      "sizeAdvisories": [],
+      "thinLessons": [],
+      "weakestModules": [
+        {
+          "module": "parenteral-nutrition",
+          "lessons": 6,
+          "questions": 134,
+          "minimumLessonCoverage": 12
+        }
+      ]
+    },
+    "technicalInvariants": {
+      "status": "passed",
+      "bank": 134,
+      "sections": 49,
+      "embedded": 6,
+      "changedRationales": [
+        "parenteral-nutrition-011",
+        "parenteral-nutrition-034",
+        "parenteral-nutrition-041",
+        "parenteral-nutrition-102",
+        "parenteral-nutrition-105",
+        "parenteral-nutrition-109"
+      ],
+      "unchangedOtherBankObjects": 128,
+      "allIdsKeysPromptsAnchorsPreserved": true,
+      "threeCaseDistractorSetsRevised": true,
+      "cumulativeIds": [
+        "cumulative-parenteral-nutrition-parenteral-nutrition-001",
+        "cumulative-parenteral-nutrition-parenteral-nutrition-034",
+        "cumulative-parenteral-nutrition-parenteral-nutrition-077",
+        "cumulative-parenteral-nutrition-parenteral-nutrition-book-001",
+        "cumulative-parenteral-nutrition-parenteral-nutrition-book-034"
+      ],
+      "cumulativeQuestionCount": 5,
+      "newArithmeticChecks": 0
+    },
+    "moduleBrowser": {
+      "status": "passed",
+      "viewports": [
+        {
+          "width": 1440,
+          "all134CorrectGraded": true,
+          "correctAttempts": 14,
+          "wrongReviewedIds": [
+            "parenteral-nutrition-011",
+            "parenteral-nutrition-034",
+            "parenteral-nutrition-041",
+            "parenteral-nutrition-036",
+            "parenteral-nutrition-037",
+            "parenteral-nutrition-038",
+            "parenteral-nutrition-039",
+            "parenteral-nutrition-040",
+            "parenteral-nutrition-105",
+            "parenteral-nutrition-109"
+          ],
+          "embeddedAllSixCorrect": true,
+          "allSixFiguresRendered": true,
+          "all49TeachingBodiesRendered": true,
+          "horizontalOverflow": false
+        },
+        {
+          "width": 390,
+          "all134CorrectGraded": true,
+          "correctAttempts": 14,
+          "wrongReviewedIds": [
+            "parenteral-nutrition-011",
+            "parenteral-nutrition-034",
+            "parenteral-nutrition-041",
+            "parenteral-nutrition-036",
+            "parenteral-nutrition-037",
+            "parenteral-nutrition-038",
+            "parenteral-nutrition-039",
+            "parenteral-nutrition-040",
+            "parenteral-nutrition-105",
+            "parenteral-nutrition-109"
+          ],
+          "embeddedAllSixCorrect": true,
+          "allSixFiguresRendered": true,
+          "all49TeachingBodiesRendered": true,
+          "horizontalOverflow": false
+        }
+      ],
+      "consoleErrors": [],
+      "runtimeErrors": []
+    },
+    "supplementalBrowser": {
+      "status": "passed",
+      "viewports": [
+        {
+          "width": 1440,
+          "cumulativeAllFiveCorrectAndIncorrect": true,
+          "cumulativeRemediationNavigation": true,
+          "cumulativeLocalProgressSaved": true,
+          "embeddedTwoIncorrectWithRationalesAndAnchors": true,
+          "horizontalOverflow": false
+        },
+        {
+          "width": 390,
+          "cumulativeAllFiveCorrectAndIncorrect": true,
+          "cumulativeRemediationNavigation": true,
+          "cumulativeLocalProgressSaved": true,
+          "embeddedTwoIncorrectWithRationalesAndAnchors": true,
+          "horizontalOverflow": false
+        }
+      ],
+      "errors": [],
+      "narrow320Overflow": false
+    },
+    "visualInspection": {
+      "allSixFiguresDesktopMobile": true,
+      "revisedTeachingDesktopMobile": true,
+      "ironFeedbackDesktopMobile": true,
+      "note": "Screenshots taken after scroll settled; existing sticky contents overlaps the top of a viewport at some scroll offsets but reviewed content is readable when scrolled below it. No CSS or component change."
+    }
+  },
+  "runningCalculations": {
+    "distinctOriginalOrRetainedChecks": 635,
+    "separateSourceExamples": 98,
+    "newChecksThisUnit": 0
+  },
+  "contentHashes": {
+    "src/data/modules/parenteralNutrition.js": "3f5a7af3425148f1497b61410177a8f738a23c9b6304e2230ed0b67a4d2e9b62",
+    "src/data/questionBanks/parenteralNutrition.js": "e568138229f60a357adcdc9ad1c5f8195f2c33aaca9935634853876f85c1e937"
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": "pending scoped commit",
+    "push": "pending exact remote verification",
+    "production": "not verified"
+  },
+  "nextAction": "Continue remaining24 bank items and17 original sections, five partially supported figures and legacy monitoring against approved PN sources; refeeding043 mechanism needs qualification. Choose-a-formulation section still requires full opacity/inspection provenance. Chapter11 and checklist entry15 stay reviewing; completed14.",
+  "limits": [
+    "No entire PN, Chapter11, broader-bank or whole82-chapter completion claim.",
+    "Full USP subscription chapter and full FDA monitoring/allergy sections not read.",
+    "No universal BUD, nutrient dose, or hang-time limit introduced.",
+    "No new arithmetic count; no account/backend/navigation/CSS changes."
+  ],
+  "remainingOriginalTeachingSections": [
+    {
+      "lesson": "pn-decision",
+      "heading": "Recognize common indications",
+      "status": "reviewing",
+      "boundary": "Obstruction, ileus and malabsorption are supported; specific short bowel, high-output fistula/distal access, pancreatitis/GI bleeding indication details remain open."
+    },
+    {
+      "lesson": "pn-decision",
+      "heading": "Time therapy to nutrition risk",
+      "status": "reviewing",
+      "boundary": "Contextual duration indication is supported; early severe-malnutrition timing and full individualized algorithm remain open."
+    },
+    {
+      "lesson": "pn-decision",
+      "heading": "Stabilize before aggressive delivery",
+      "status": "reviewing",
+      "boundary": "Glucose/refeeding concern is supported; shock/full-dose stabilization, ethical goals and stopping criteria remain open."
+    },
+    {
+      "lesson": "venous-access",
+      "heading": "Use peripheral PN as a limited bridge",
+      "status": "reviewing",
+      "boundary": "Short conditional peripheral use, vein damage and central osmolarity are supported; supplemental sufficiency and protocol-specific universal-cutoff discussion remain open."
+    },
+    {
+      "lesson": "venous-access",
+      "heading": "Use central access for concentrated therapy",
+      "status": "reviewing",
+      "boundary": "Central dilution and PICC/Hickman/Broviac/Groshong are supported; implanted port selection, patient-capacity criteria and dialysis-vein preservation remain open."
+    },
+    {
+      "lesson": "venous-access",
+      "heading": "Treat line findings as clinical signals",
+      "status": "reviewing",
+      "boundary": "General PN infection/thrombosis and insertion asepsis/hand hygiene are supported; exact signs/response, hub/dressing/line review, antibiotic and anticoagulant prevention claims remain open."
+    },
+    {
+      "lesson": "macronutrient-design",
+      "heading": "Set protein from clinical demand",
+      "status": "reviewing",
+      "boundary": "4 kcal/g, protein repair and stress/weight targets are supported; RRT, obesity, liver/renal unrestricted-protein context and goals remain open."
+    },
+    {
+      "lesson": "macronutrient-design",
+      "heading": "Advance dextrose within metabolic capacity",
+      "status": "reviewing",
+      "boundary": "3.4 kcal/g, GIR and glucose intolerance are supported; CO2, fatty liver and whole overfeeding-pattern attribution remain open."
+    },
+    {
+      "lesson": "macronutrient-design",
+      "heading": "Make volume and route agree",
+      "status": "reviewing",
+      "boundary": "Total PN solution and medication-fluid accounting, tailoring accumulation and central concentration are supported; separate replacement for specific high GI/renal losses remains open."
+    },
+    {
+      "lesson": "micronutrient-balance",
+      "heading": "Prescribe electrolytes as a pattern",
+      "status": "reviewing",
+      "boundary": "Individualization, kidney adjustment, acetate conversion and salt choices are supported; complete urine/GI/medication replacement pattern and bicarbonate exclusion remain open."
+    },
+    {
+      "lesson": "micronutrient-balance",
+      "heading": "Provide complete vitamins",
+      "status": "reviewing",
+      "boundary": "Usual vitamin addition, mixtures and listed thiamine are supported; daily age-specific dosing, vitamin light instability, extra refeeding thiamine and current shortage protocol remain open."
+    },
+    {
+      "lesson": "micronutrient-balance",
+      "heading": "Individualize trace elements",
+      "status": "reviewing",
+      "boundary": "Mixture and organ-disease withholding examples are supported; selected high-loss/burn/wound/RRT adjustment, cholestatic accumulation and iron compatibility mechanism remain open."
+    },
+    {
+      "lesson": "compounding-safety",
+      "heading": "Choose a formulation deliberately",
+      "status": "reviewing",
+      "boundary": "2-in-1/3-in-1 composition is supported; particle obscuration and complete emulsion/hang-time/workflow consequences remain open."
+    },
+    {
+      "lesson": "monitoring-transition",
+      "heading": "Monitor by phase and acuity",
+      "status": "reviewing",
+      "boundary": "Glucose intolerance, refeeding/phosphate, fluid and renal considerations are supported; complete initiation panel, phase-specific frequency and home intervals remain open."
+    },
+    {
+      "lesson": "monitoring-transition",
+      "heading": "Separate overfeeding from intolerance",
+      "status": "reviewing",
+      "boundary": "Glucose, triglyceride and insulin discussion is supported; CO2/hepatic/fluid syndrome differential and compensatory treatment decision algorithm remain open."
+    },
+    {
+      "lesson": "monitoring-transition",
+      "heading": "Prevent and detect long-term complications",
+      "status": "reviewing",
+      "boundary": "EN preference and reduced cholelithiasis/cholestasis risk are supported; PN metabolic bone, steatosis, tailored cycles and full surveillance/prevention protocol remain open."
+    },
+    {
+      "lesson": "monitoring-transition",
+      "heading": "Cycle and transition with intent",
+      "status": "reviewing",
+      "boundary": "Rate/time implications and reliable enteral replacement are supported; home routines/competency, universal taper exception and complete home care requirements remain open."
+    }
+  ]
+}

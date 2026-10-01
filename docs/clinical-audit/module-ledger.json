@@ -198,7 +198,11 @@
             "Separate two compatibility questions"
           ],
           "wholeLessonVerified": false,
-          "latestScopedEvidence": "parenteral-nutrition-fluid-label-review.json"
+          "latestScopedEvidence": "parenteral-nutrition-approved-safety-review.json",
+          "verifiedOriginalSections": [
+            "Confirm and protect the system"
+          ],
+          "verifiedApprovedSourceAddedSections": []
         },
         {
           "slug": "macronutrient-design",
@@ -210,7 +214,11 @@
             "Count energy actually supplied outside PN"
           ],
           "wholeLessonVerified": false,
-          "latestScopedEvidence": "parenteral-nutrition-fluid-label-review.json"
+          "latestScopedEvidence": "parenteral-nutrition-approved-safety-review.json",
+          "verifiedOriginalSections": [
+            "Prescribe lipid as a drug product"
+          ],
+          "verifiedApprovedSourceAddedSections": []
         },
         {
           "slug": "micronutrient-balance",
@@ -223,7 +231,11 @@
             "Keep other medications from becoming routine ingredients"
           ],
           "wholeLessonVerified": false,
-          "latestScopedEvidence": "parenteral-nutrition-fluid-label-review.json"
+          "latestScopedEvidence": "parenteral-nutrition-approved-safety-review.json",
+          "verifiedOriginalSections": [
+            "Protect calcium and phosphate compatibility"
+          ],
+          "verifiedApprovedSourceAddedSections": []
         },
         {
           "slug": "compounding-safety",
@@ -236,7 +248,16 @@
             "Connect sterile preparation and physical compatibility"
           ],
           "wholeLessonVerified": false,
-          "latestScopedEvidence": "parenteral-nutrition-fluid-label-review.json"
+          "latestScopedEvidence": "parenteral-nutrition-approved-safety-review.json",
+          "verifiedOriginalSections": [
+            "Recognize emulsion failure",
+            "Apply current sterile-compounding standards",
+            "Filter every PN formulation"
+          ],
+          "verifiedApprovedSourceAddedSections": [
+            "Distinguish dating from administration time",
+            "Investigate an occluded filter without bypassing it"
+          ]
         },
         {
           "slug": "monitoring-transition",
@@ -257,7 +278,8 @@
         "parenteral-nutrition-retained-source-review.json",
         "parenteral-nutrition-fluid-label-review.json",
         "parenteral-nutrition-legacy-reader-review.json",
-        "parenteral-nutrition-verification-workflow-review.json"
+        "parenteral-nutrition-verification-workflow-review.json",
+        "parenteral-nutrition-approved-safety-review.json"
       ],
       "wholeModuleVerified": false,
       "verifiedExpansion": {
@@ -267,14 +289,17 @@
         "evidence": "parenteral-nutrition-book-expansion-review.json"
       },
       "latestSourceCoverage": {
-        "verifiedBankItems": 94,
+        "verifiedBankItems": 110,
         "totalBankItems": 134,
-        "remainingBankItems": 40,
-        "verifiedEmbeddedChecks": 4,
-        "verifiedCumulativeItems": 4,
-        "fullyVerifiedOriginalTeachingSections": 1,
-        "remainingOriginalTeachingSections": 23,
-        "evidence": "parenteral-nutrition-verification-workflow-review.json"
+        "remainingBankItems": 24,
+        "verifiedEmbeddedChecks": 6,
+        "verifiedCumulativeItems": 5,
+        "fullyVerifiedOriginalTeachingSections": 7,
+        "remainingOriginalTeachingSections": 17,
+        "newApprovedSourceSections": 2,
+        "fullyVerifiedFigures": 1,
+        "remainingPartlySupportedFigures": 5,
+        "evidence": "parenteral-nutrition-approved-safety-review.json"
       },
       "relatedLegacyReaderReview": {
         "status": "reviewing",
@@ -290,6 +315,16 @@
         "id": "parenteral-nutrition-042",
         "scope": "Order, in-process and final checks source reconciled",
         "evidence": "parenteral-nutrition-verification-workflow-review.json"
+      },
+      "latestApprovedSourceSafetyReview": {
+        "status": "verified in scope",
+        "evidence": "parenteral-nutrition-approved-safety-review.json",
+        "authorizationDate": "2026-10-01",
+        "sourceExceptionResolvedTopics": [
+          "Lipid-free PN filtration",
+          "Former risk categories and BUD"
+        ],
+        "wholeModuleVerified": false
       }
     },
     {

@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-01",
+  "status": "source research in progress; no new clinical coverage marked verified",
+  "authorization": {
+    "quote": "use that and complete the goal. I approve",
+    "scope": "Existing official ASPEN, USP, FDA and CDC PN references and their linked primary supporting material"
+  },
+  "baseCommit": "d7d4e223d2d8a2a24ce5f3239e36035ce9232537",
+  "privateEvidenceLocation": "/private/tmp/nas-pn-approved",
+  "sourceDocuments": [
+    {
+      "key": "filters",
+      "url": "https://nutritioncare.org/wp-content/uploads/2024/12/IV-Filters-For-PN-Factsheet.pdf",
+      "sha256": "10e361366689f648395c62d1d9771cd34a984728c41fe5f97669b22f41a1aef7",
+      "scope": "See findings; retrieved document is not itself full claim verification."
+    },
+    {
+      "key": "lipids",
+      "url": "https://nutritioncare.org/wp-content/uploads/2024/12/ILE-Safety-Recommendations-Adult.pdf",
+      "sha256": "0a40c872f5909c3f706231b84de2142de15d1086b340e274841ed88f70cdb83f",
+      "scope": "See findings; retrieved document is not itself full claim verification."
+    },
+    {
+      "key": "usp-faq",
+      "url": "https://pages.usp.org/rs/711-SXF-172/images/USP_HQS_797_FAQs_December2023_V6__002.pdf?version=0",
+      "sha256": "2c5a874251cc93dd38d06f6e4a486f95480c6eb0431a187eba0b41e1f1eaef97",
+      "scope": "See findings; retrieved document is not itself full claim verification."
+    },
+    {
+      "key": "fda-smof",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/207648s013lbl.pdf",
+      "sha256": "fb05ffac9ee712d58281bf9fb3564182c808147531db52a3703ab90625f45130",
+      "scope": "See findings; retrieved document is not itself full claim verification."
+    },
+    {
+      "key": "order-review",
+      "url": "https://nutritioncare.org/wp-content/uploads/2024/12/PN-Checklist-02-Order-Review.pdf",
+      "sha256": "13e7e27f9fb85bdced5a63b2301895d84f4811ef1051456117fcf45176723b1e",
+      "scope": "See findings; retrieved document is not itself full claim verification."
+    },
+    {
+      "key": "cdc-recommendations",
+      "url": "https://www.cdc.gov/infection-control/hcp/intravascular-catheter-related-infections/summary-recommendations.html",
+      "sha256": "e5e57783ad783d1692c976fc33926265122aa5ba3ff63c8ecde713f9ef4c015a",
+      "scope": "See findings; retrieved document is not itself full claim verification."
+    }
+  ],
+  "findings": [
+    "ASPEN filter factsheet, both pages text and renders reviewed: 1.2 micron for all PN, downstream of the lipid/AA-dextrose Y-site, manufacturer priming, no unfiltered bypass, delayed precipitation and medication compatibility precautions.",
+    "ASPEN adult ILE factsheet, both pages text and renders reviewed: product-specific composition, rate and allergy review; hold/limit ILE above 400 mg/dL; prolonged lipid omission risks EFAD; irreversible coalescence/oiling differs from reversible early aggregation/creaming.",
+    "ASPEN order-review checklist, both pages text and renders reviewed: independent calculations/transcription checks, clinical and pharmaceutical review; calcium/phosphate solubility and TNA emulsion constraints can compete.",
+    "USP current chapter DOI is version 07_01 (2023); module currently links older 06_01 (2022). Official December2023 FAQ explains Category1/2/3, individualized BUD with stability/sterility controls and manufacturer instructions. BUD and administration hang time are distinct. Relevant FAQ text read; rendered relevant pages still pending.",
+    "CDC February2024 summary of 2011 guidelines read: aseptic access, hub disinfection, minimum necessary lumens and no routine anticoagulation solely for infection prevention. Dedicated PN lumen infection-prevention evidence is unresolved; retain practical compatibility rationale without implying established reduction in infection.",
+    "ASPEN2014 safety consensus acknowledges inconsistent evidence for dedicated-lumen infection reduction while preferring a reserved infusion route to avoid coadministration. Its older filter and USP recommendations must be superseded by approved updated sources.",
+    "ASPEN2020 refeeding consensus adult Table6 and pathophysiology text read: potassium/phosphate shifts driven by insulin; magnesium decline mechanism less well elucidated. Current bank043 rationale implies the same defined insulin mechanism for all three and should be qualified after full corresponding-section review.",
+    "FDA July2025 SMOFlipid label sections2.1/2.2 reviewed for dedicated line, 1.2 micron filter, manufacturer-specific timing, admixture destabilization and discard instructions. Full monitoring/allergy sections and rendered pages still pending.",
+    "ASPEN2022 compatibility review calcium/phosphate and electrostatic mechanisms read. Further iron, trace, micronutrient and complete context review remains pending."
+  ],
+  "nextAction": "Complete one coherent PN safety reconciliation including current USP link, filter placement/occlusion teaching, BUD versus hang-time distinction, catheter-care evidence qualification, and compatibility checks. Individually remap supported questions/sections/figures; exact scoped production build and desktop/mobile grading/render QA must pass before increasing verified counts or release.",
+  "coverageUnchanged": {
+    "verifiedBank": 94,
+    "totalBank": 134,
+    "remainingBank": 40,
+    "verifiedEmbedded": 4,
+    "totalEmbedded": 6,
+    "verifiedCumulative": 4,
+    "totalCumulative": 5,
+    "chapterVerified": 6,
+    "totalChapters": 82
+  },
+  "limits": [
+    "No new content edits, new independent arithmetic, build, rendered application QA, commit or push in this research unit.",
+    "No entire PN module, Chapter11 or formula-checklist entry15 closure.",
+    "Private source PDFs/text/images remain outside Git/public assets."
+  ],
+  "subsequentVerifiedUnit": "parenteral-nutrition-approved-safety-review.json"
+}

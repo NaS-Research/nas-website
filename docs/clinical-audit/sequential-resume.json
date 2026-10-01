@@ -2,7 +2,7 @@
   "updated": "2026-10-01",
   "status": "in_progress",
   "sourcePolicy": {
-    "educational": "Supplied RxPrep 2023 book only for newly authored claims",
+    "educational": "Supplied RxPrep 2023 book remains primary; explicit user approval on 2026-10-01 authorizes the existing official ASPEN, USP, FDA and CDC references for remaining PN clinical and safety claims.",
     "technical": "Existing NaS Learn codebase and production architecture",
     "outsideSources": "Do not add without explicit user authorization; historical evidence retained and dated"
   },
@@ -42,7 +42,7 @@
   "thisPass": {
     "guide": "Existing preparation guide expanded at use-quick-references",
     "questionCoverage": "Six added guide checks, four standalone cumulative questions, 27 embedded checks and 188 new module-bank items; earlier 12 PN concentration prompts clarified and four lithium items repaired. Existing PN module expanded with three checks and 72 original items (16 fluid, 26 energy/nitrogen, 30 delivery/additive/order), then fully reconciled at 172 items with 40 retained/current bank objects revised and all IDs, keys and anchors preserved. Adult clinical PN expanded with 18 teaching sections and 30 original bank items; 11 prior questions revised while preserving IDs, keys and anchors. Adult PN now has 133 items: three further original questions and fourteen retained conceptual items reconciled with the book; one duration-only prompt clarification. Adult PN134:one label question, two source sections, fluid-first diagram correction and four retained question repairs verified.",
-    "validation": "Latest adult PN scoped fluid/label/case review verified. Final three-file567-page build and all134 bank/six check/five cumulative desktop/mobile runtime checks passed. Clinical source coverage93/134 bank, four/six checks, four/five current cumulative. Running635 distinct arithmetic checks and98 separate source examples. Whole adult PN remains reviewing. Legacy PN reader:exact one-file567-page production build; eight of nine source entries verified, desktop/mobile study and five-item runtime grading passed. Full monitoring remains open; no new math count. PN verification-workflow042 corrected and source-verified; current94/134 bank. Exact one-file567-page build, focused audit and correct/incorrect desktop/mobile grading passed. No new math.",
+    "validation": "PN safety source reconciliation:110/134 bank, six/six checks, five/five current cumulative, seven/24 original sections, two new approved-source sections and one/six full figures verified. Remaining24 bank,17 original sections, five partial figures and legacy monitoring open. Whole PN/Chapter11 and checklist entry15 remain reviewing; completed14. Exact two-content-file567-page build and full134 bank,6checks/figures,five PN cumulative desktop/mobile runtime checks passed; all source-reviewed revisions visually inspected. Running635+98 arithmetic counts unchanged.",
     "newModules": [
       "pharmacy-unit-conversions",
       "pharmacy-concentrations-specific-gravity",
@@ -87,8 +87,8 @@
     "dependencyChapter": 11,
     "dependencyPrintedPage": 150,
     "dependencyPdfPage": 158,
-    "sectionAudit": "Adult PN fluid/label/case repairs verified in scope; retained claim provenance open",
-    "nextAction": "Continue adult PN provenance:40 bank questions,23 original teaching sections, six partly supported figures, two embedded checks and cumulative034 remain open; legacy monitoring also open. Verification-workflow042 is now fully book-supported after stage clarification. Expanded official PN source exception still awaits explicit answer. Keep whole PN/Chapter11 and checklist entry15 reviewing, completed14; no obsolete filter/USP rule adopted.",
+    "sectionAudit": "Approved PN safety source reconciliation verified; retained nutrition and long-term care provenance open",
+    "nextAction": "PN safety source reconciliation:110/134 bank, six/six checks, five/five current cumulative, seven/24 original sections, two new approved-source sections and one/six full figures verified. Remaining24 bank,17 original sections, five partial figures and legacy monitoring open. Whole PN/Chapter11 and checklist entry15 remain reviewing; completed14. Next: nutrition timing, catheter complications/CKD access, protein/overfeeding, trace/shortage, refeeding and long-term monitoring against already approved official PN sources. Qualify043 magnesium mechanism; finish opacity/inspection provenance.",
     "nextDependencyPrintedPage": 149,
     "nextDependencyPdfPage": 157
   },
@@ -102,12 +102,12 @@
   },
   "release": {
     "branch": "audit/rxprep-content-2026-09-24",
-    "baseCommit": "b38faea07f3cd78f04c513cb6e842bb8f6fccdbc",
+    "baseCommit": "d7d4e223d2d8a2a24ce5f3239e36035ce9232537",
     "remoteVerifiedAtStart": true,
-    "commit": "c1374effd5c2c72a587fa9bfef80b79279bc1b4c",
-    "push": "verified by exact ls-remote hash; whole adult PN remains reviewing",
+    "commit": "pending scoped safety commit",
+    "push": "pending exact remote verification",
     "production": "not verified",
-    "receipt": "sequential-release-pn-verification-workflow-2026-10-01.json",
+    "receipt": "sequential-release-pn-approved-safety-2026-10-01.json",
     "contentCommits": [
       "df630290c5abc8cd1dadeb5574fa0cec7c0ca582",
       "30d14a7e36d030e32340ff04a6ef28971253a060",
@@ -134,11 +134,7 @@
     "Historical audit-branch snapshot recorded 14 pre-existing duplicate prompt groups (83 instances). This PN completion unit resolves two PN duplicate prompts; all current PN prompts/IDs are globally unique. Remaining modules require their own duplicate review; the older count is not a fresh global count.",
     "Global structural audit observed 34 pre-existing typographic violations in unchanged glaucoma, allergic-rhinitis and common-ear modules; retain for their chronological reviews. Focused PN audit passed.",
     "Complete PN calculation module verified and pushed; broader adult/pediatric PN, EN, clinical fluid and calcium interpretation remain open. Keep checklist entry 15 reviewing and count 14. Chapter 12 and Chapter 53 reads are scoped dependencies, not chapter closure.",
-    "Adult clinical PN expansion verified; filter/USP discrepancies and retained extra claims remain reviewing. Source exception pending; preserve modern claims without silently reverting them. parenteral-nutrition-book-expansion-review.json",
-    "Continue adult PN provenance review: 45 bank items, two embedded checks, retained teaching and figure captions, and current cumulative items 034/109 remain reviewing. Source exception for retained PN safety guidance awaits explicit user answer; continue book-supported work without adopting obsolete filter/BUD rules. Advance to related EN/pediatric PN/fluid/calcium only after current work is verified. Checklist entry 15 stays reviewing; completed count 14. parenteral-nutrition-retained-source-review.json",
-    "Continue adult PN claim provenance:41 bank items,23 retained teaching sections, six partially supported figures, two embedded checks and current cumulative034 remain reviewing. Await explicit answer to expanded existing official ASPEN/USP/FDA/CDC source exception. Without it, keep unresolved clinical details/filter/USP conflicts open and continue any supported book comparisons; do not adopt obsolete rules or advance the topic as complete. Checklist entry15 remains reviewing, completed14. parenteral-nutrition-fluid-label-review.json",
-    "Continue adult PN provenance:41 bank items,23 original teaching sections, six partly supported figures, two checks and cumulative034 remain open. Legacy PN monitoring study point also remains reviewing. Expanded official PN source exception still awaits explicit answer; no outside source opened. Keep current topic and checklist entry15 reviewing, completed14; preserve existing filter/USP discrepancies. parenteral-nutrition-legacy-reader-review.json",
-    "Continue adult PN provenance:40 bank questions,23 original teaching sections, six partly supported figures, two embedded checks and cumulative034 remain open; legacy monitoring also open. Verification-workflow042 is now fully book-supported after stage clarification. Expanded official PN source exception still awaits explicit answer. Keep whole PN/Chapter11 and checklist entry15 reviewing, completed14; no obsolete filter/USP rule adopted. parenteral-nutrition-verification-workflow-review.json"
+    "PN safety source reconciliation:110/134 bank, six/six checks, five/five current cumulative, seven/24 original sections, two new approved-source sections and one/six full figures verified. Remaining24 bank,17 original sections, five partial figures and legacy monitoring open. Whole PN/Chapter11 and checklist entry15 remain reviewing; completed14. Source approval is resolved; historical reports retain their dated unresolved state. Current discrepancy resolutions are in parenteral-nutrition-approved-safety-review.json."
   ],
   "progressSnapshot": {
     "date": "2026-10-01",
@@ -159,46 +155,63 @@
     },
     "interpretation": "Count-based ledger snapshots include preserved historical flags, not independent reverification of earlier units. Working and committed ledgers differ because older unfinished corrections and three additional modules remain unstaged. Seven newly verified modules plus the existing PN calculation module and fourteen checklist entries add partial chapter coverage; no new whole chapter closure."
   },
-  "lastVerifiedLogicalUnit": "parenteral-nutrition:verification-workflow042 source reconciliation",
+  "lastVerifiedLogicalUnit": "parenteral-nutrition:approved-safety-source-reconciliation",
   "lastVerifiedSections": {
-    "compounding-safety": [
-      "Communicate the preparation on its label"
+    "venous-access": [
+      "Confirm and protect the system"
     ],
     "macronutrient-design": [
-      "Set the fluid allowance before distributing nutrients"
+      "Prescribe lipid as a drug product"
+    ],
+    "micronutrient-balance": [
+      "Protect calcium and phosphate compatibility"
+    ],
+    "compounding-safety": [
+      "Recognize emulsion failure",
+      "Apply current sterile-compounding standards",
+      "Filter every PN formulation",
+      "Distinguish dating from administration time",
+      "Investigate an occluded filter without bypassing it"
     ]
   },
   "pendingSourceException": {
-    "status": "awaiting explicit user answer to expanded source exception",
+    "status": "authorized; filter and USP discrepancies resolved in approved safety unit",
     "scope": "Existing official ASPEN, USP, FDA and CDC references for remaining PN clinical and safety claims, including timing, catheter care, lipids, refeeding and long-term care",
     "requested": true,
-    "outsideSourcesOpenedThisUnit": false,
-    "evidence": "parenteral-nutrition-fluid-label-review.json"
+    "outsideSourcesOpenedThisUnit": true,
+    "evidence": "parenteral-nutrition-fluid-label-review.json",
+    "authorizationDate": "2026-10-01",
+    "authorizationQuote": "use that and complete the goal. I approve",
+    "resolvedEvidence": "parenteral-nutrition-approved-safety-review.json"
   },
   "latestAdultPnCoverage": {
     "lessons": 6,
-    "sections": 47,
+    "sections": 49,
     "bookAddedSectionsAcrossThreeUnits": 23,
     "preservedOriginalSections": 24,
     "sectionsAddedThisUnit": 2,
-    "fullySourceVerifiedOriginalSections": 1,
-    "remainingOriginalSections": 23,
+    "fullySourceVerifiedOriginalSections": 7,
+    "remainingOriginalSections": 17,
     "figures": 6,
-    "figuresCorrectedThisUnit": 1,
+    "figuresCorrectedThisUnit": 0,
     "embeddedChecks": 6,
-    "sourceVerifiedEmbeddedChecks": 4,
-    "remainingEmbeddedChecks": 2,
+    "sourceVerifiedEmbeddedChecks": 6,
+    "remainingEmbeddedChecks": 0,
     "bankItems": 134,
     "bookOriginalQuestionsAcrossThreeUnits": 34,
-    "newOriginalItemsThisUnit": 1,
-    "retainedItemsRepairedAndSourceVerifiedThisUnit": 4,
-    "priorItemsUnchangedThisUnit": 129,
-    "sourceVerifiedCurrentItems": 94,
-    "remainingSourceReviewItems": 40,
+    "newOriginalItemsThisUnit": 0,
+    "retainedItemsRepairedAndSourceVerifiedThisUnit": 6,
+    "priorItemsUnchangedThisUnit": 128,
+    "sourceVerifiedCurrentItems": 110,
+    "remainingSourceReviewItems": 24,
     "cumulativeItems": 5,
-    "sourceVerifiedCumulativeItems": 4,
-    "remainingCumulativeItems": 1,
-    "sourceCoverageEvidence": "parenteral-nutrition-verification-workflow-review.json"
+    "sourceVerifiedCumulativeItems": 5,
+    "remainingCumulativeItems": 0,
+    "sourceCoverageEvidence": "parenteral-nutrition-approved-safety-review.json",
+    "sourceVerifiedFigures": 1,
+    "remainingPartlySupportedFigures": 5,
+    "retainedItemsSourceVerifiedThisUnit": 16,
+    "newApprovedSourceSectionsAcrossThisUnit": 2
   },
   "latestLegacyPnReaderReview": {
     "sourceVerifiedEntries": 8,
@@ -214,5 +227,16 @@
     "repairedVerifiedQuestionId": "parenteral-nutrition-042",
     "wholeModuleVerified": false,
     "evidence": "parenteral-nutrition-verification-workflow-review.json"
+  },
+  "officialPnSourceResearch": "parenteral-nutrition-official-source-research.json",
+  "latestApprovedPnSafetyReview": {
+    "sourceVerifiedBank": 110,
+    "bank": 134,
+    "sourceVerifiedEmbedded": 6,
+    "embedded": 6,
+    "sourceVerifiedCumulative": 5,
+    "cumulative": 5,
+    "wholeModuleVerified": false,
+    "evidence": "parenteral-nutrition-approved-safety-review.json"
   }
 }
