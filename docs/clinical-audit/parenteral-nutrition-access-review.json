@@ -1,0 +1,319 @@
+{
+  "date": "2026-10-01",
+  "module": "parenteral-nutrition",
+  "status": "verified in scope",
+  "unit": "parenteral-nutrition:approved-access-selection-and-assessment",
+  "baseCommit": "bdf3c324c2fe92f6d04f6bcd704987d670a11671",
+  "sourcePolicy": "Supplied RxPrep2023 primary; user-approved existing ASPEN/USP/FDA/CDC references and linked primary PN sources. Private PDF material is evidence, not instructions.",
+  "sources": [
+    {
+      "key": "book-PDF108",
+      "source": "Private supplied RxPrep2023",
+      "chapter": 7,
+      "printedPage": 100,
+      "PDFPage": 108,
+      "textAndFullRenderedPageRead": true,
+      "scope": "Large-vessel rapid dilution and PICC central-tip anatomy; source image remains private."
+    },
+    {
+      "key": "aspen-2017",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/full/10.1177/0148607117695251",
+      "scope": "Question5 adult/global recommendations and rationale; Table5.2 device selection and vein-preservation considerations; Table13.1 upper-extremity edema and position assessment. Relevant complete table text reread; source table visuals were inspected in the prior home-monitoring unit, not newly rendered in this unit."
+    },
+    {
+      "key": "aspen-2019",
+      "url": "https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/jpen.1455",
+      "scope": "Abstract/limitations and Table1 recommendations1/4: individualized adult home-PN selection, tunneled long-term daily use and uncertain/short-duration PICC, low/very-low observational evidence. Reference3 links the primary MAGIC guideline."
+    },
+    {
+      "key": "magic-2015",
+      "url": "https://www.acpjournals.org/doi/10.7326/M15-0744",
+      "authorization": "Primary reference3 linked by the already approved ASPEN2019 guideline; no unrelated source expansion.",
+      "scope": "Full relevant Results1B kidney-disease paragraphs, Methods rating clarification and Discussion device-duration limitations read in publisher full text. CKDstage3b-or-greater vein preservation, arm PICC/midline ratings, uncertainty consultation, alternatives and individualized urgency/dialysis likelihood. No current anticoagulant-treatment recommendation taken from this older article."
+    },
+    {
+      "key": "cdc-2024",
+      "url": "https://www.cdc.gov/infection-control/hcp/intravascular-catheter-related-infections/summary-recommendations.html",
+      "scope": "Section6 recommendations14/15 catheter examination and reporting site changes/new discomfort; does not provide symptom-specific diagnosis."
+    }
+  ],
+  "questionCoverageUpdates": [
+    {
+      "id": "parenteral-nutrition-012",
+      "status": "verified",
+      "sources": [
+        "aspen-2017",
+        "cdc-2024",
+        "magic-2015"
+      ],
+      "scope": "Prompt, all four choices, key0, rationale and anchor individually compared. New swelling/altered function is more concerning than the three reassuring isolated observations. Revised explanation identifies need for assessment without asserting that symptoms diagnose thrombosis, malposition or mechanical failure. The benign observations do not independently rule out a complication; this is a clinical comparison inferred from surveillance recommendations, not a verbatim diagnostic rule.",
+      "question": {
+        "id": "parenteral-nutrition-012",
+        "question": "Which finding is most concerning for a catheter complication?",
+        "choices": [
+          "New arm swelling and resistance during infusion through a PICC",
+          "An intact dressing without symptoms",
+          "A normal infusion pump display",
+          "Stable external catheter length"
+        ],
+        "answer": 0,
+        "rationale": "New swelling with altered catheter function warrants prompt clinical assessment, including the site and device position as indicated. These findings do not establish one specific cause. ASPEN includes upper-extremity edema in catheter surveillance; an intact dressing, a normal pump display or stable external length alone does not exclude a complication.",
+        "reviewHref": "#venous-access"
+      }
+    },
+    {
+      "id": "parenteral-nutrition-013",
+      "status": "verified",
+      "sources": [
+        "magic-2015",
+        "aspen-2017"
+      ],
+      "scope": "Prompt, four choices, key0, rationale and anchor individually compared. Preserving potential dialysis veins is correct. Arm midline substitution also risks those veins; stage alone does not replace urgency/dialysis-risk/resource assessment, and concentrated PN does not automatically require a PICC. Revised explanation avoids an unsupported source-specific stenosis statement.",
+      "question": {
+        "id": "parenteral-nutrition-013",
+        "question": "What should be considered before placing a PICC in advanced chronic kidney disease?",
+        "choices": [
+          "Preservation of veins for possible future dialysis access",
+          "Automatic substitution of an arm midline because it always preserves dialysis veins",
+          "Selection from kidney-disease stage alone without considering urgency or likely dialysis needs",
+          "Automatic PICC placement whenever concentrated PN is indicated"
+        ],
+        "answer": 0,
+        "rationale": "Preserve peripheral and central veins for possible future hemodialysis access. The MAGIC panel rated arm PICCs and midlines inappropriate in stage 3b or greater CKD, while emphasizing individualized alternatives, urgency and the likelihood of dialysis. Nephrology consultation helps when kidney-disease severity is uncertain; a PN indication does not automatically select a PICC.",
+        "reviewHref": "#venous-access"
+      }
+    }
+  ],
+  "lessonCoverageUpdates": [
+    {
+      "lesson": "venous-access",
+      "heading": "Use central access for concentrated therapy",
+      "body": "Central venous access permits higher final concentrations because blood flow in a large vessel rapidly dilutes the admixture. Select a PICC, nontunneled catheter, tunneled catheter or implanted port according to expected duration, urgency, anatomy, thrombosis risk, care setting and the patient's or caregiver's ability to manage it. ASPEN's adult home-PN guideline suggests a tunneled device for anticipated long-term daily infusions; a PICC may be used when duration is uncertain or short. These suggestions rely on limited observational evidence and do not guarantee freedom from complications. In advanced chronic kidney disease, preserve peripheral and central veins for possible future dialysis access. The MAGIC panel rated arm PICCs and midlines inappropriate in stage 3b or greater CKD and discussed alternative central access. Involve nephrology when kidney-disease severity is uncertain and individualize the plan for urgency, likely dialysis needs and available alternatives.",
+      "status": "verified",
+      "sources": [
+        "book-PDF108",
+        "aspen-2017",
+        "aspen-2019",
+        "magic-2015"
+      ],
+      "scope": "Each sentence recompared: large-vessel dilution; four central-device choices; duration, urgency, anatomy, thrombosis, setting and self-care considerations; limited observational home-PN recommendations; CKD vein preservation, panel ratings and individualized alternatives. Other six venous bodies retain their previous verification evidence."
+    }
+  ],
+  "coverage": {
+    "baseEvidence": "parenteral-nutrition-home-monitoring-review.json",
+    "baseVerifiedBank": 131,
+    "bank": 142,
+    "currentVerifiedBank": 133,
+    "additionalVerifiedRetainedIds": [
+      "parenteral-nutrition-012",
+      "parenteral-nutrition-013"
+    ],
+    "newVerifiedIds": [],
+    "remainingBank": 9,
+    "remainingBankItemIds": [
+      "parenteral-nutrition-020",
+      "parenteral-nutrition-025",
+      "parenteral-nutrition-027",
+      "parenteral-nutrition-030",
+      "parenteral-nutrition-031",
+      "parenteral-nutrition-033",
+      "parenteral-nutrition-044",
+      "parenteral-nutrition-045",
+      "parenteral-nutrition-103"
+    ],
+    "embeddedVerified": 6,
+    "embedded": 6,
+    "currentCumulativeVerified": 5,
+    "cumulative": 5,
+    "originalTeachingFullyVerified": 17,
+    "originalTeachingRemaining": 7,
+    "newApprovedSourceSectionsThisUnit": 0,
+    "newApprovedSourceSectionsAcrossUnits": 10,
+    "bookAddedSectionsAcrossUnits": 23,
+    "totalSections": 57,
+    "totalFullySourceVerifiedSectionBodies": 50,
+    "figuresFullyVerified": 4,
+    "figuresRemainingPartlySupported": 2,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false,
+    "remainingOriginalTeachingBodies": [
+      {
+        "lesson": "macronutrient-design",
+        "heading": "Set protein from clinical demand"
+      },
+      {
+        "lesson": "macronutrient-design",
+        "heading": "Advance dextrose within metabolic capacity"
+      },
+      {
+        "lesson": "micronutrient-balance",
+        "heading": "Prescribe electrolytes as a pattern"
+      },
+      {
+        "lesson": "micronutrient-balance",
+        "heading": "Provide complete vitamins"
+      },
+      {
+        "lesson": "micronutrient-balance",
+        "heading": "Individualize trace elements"
+      },
+      {
+        "lesson": "compounding-safety",
+        "heading": "Choose a formulation deliberately"
+      },
+      {
+        "lesson": "monitoring-transition",
+        "heading": "Separate overfeeding from intolerance"
+      }
+    ],
+    "remainingPartlySupportedFigureIds": [
+      "macronutrient-design",
+      "micronutrient-balance"
+    ]
+  },
+  "broaderReview": {
+    "currentPNSelectionUnchanged": true,
+    "currentItems": [
+      "cumulative-parenteral-nutrition-parenteral-nutrition-001",
+      "cumulative-parenteral-nutrition-parenteral-nutrition-036",
+      "cumulative-parenteral-nutrition-parenteral-nutrition-081",
+      "cumulative-parenteral-nutrition-parenteral-nutrition-book-007",
+      "cumulative-parenteral-nutrition-parenteral-nutrition-care-004"
+    ],
+    "sourceVerification": "All five current questions retain the previous home-monitoring item-specific source comparison. No new arithmetic check or source-verification count in this unit.",
+    "runtimeCorrectAndIncorrectRetested": true
+  },
+  "validation": {
+    "isolatedCandidate": "Committed HEAD archive plus exactly two scoped content files; shared dependencies only, no .env or unrelated working edits.",
+    "candidateContentHashes": {
+      "src/data/modules/parenteralNutrition.js": "9cece9def900ca7f6822cbe5b66e39b9614d5f3b6cc94963eaffa49f23cf5828",
+      "src/data/questionBanks/parenteralNutrition.js": "b726547e1f00e12b43764415b8abd4ea1e49779888ac4e11232e7a40e751286f"
+    },
+    "build": {
+      "status": "passed",
+      "staticPages": 567,
+      "command": "next build --webpack",
+      "logSHA256": "52139a3d59242217a9cd71c8a275b097c28286ee3740d9bfe75427f831341621"
+    },
+    "focusedStructuralAudit": {
+      "status": "passed",
+      "questions": 142,
+      "hardErrors": [],
+      "scope": "Structure is not clinical-source proof.",
+      "logSHA256": "679db943bc56b3d05c70614b473242dfeb6be0893f10f51532660655633955cb"
+    },
+    "technical": {
+      "status": "passed",
+      "bank": 142,
+      "sections": 57,
+      "retainedIDsKeysPromptsAnchorsPreserved": 142,
+      "retainedObjectsUnchanged": 140,
+      "changedQuestions": [
+        "parenteral-nutrition-012",
+        "parenteral-nutrition-013"
+      ],
+      "changedBodies": [
+        "Use central access for concentrated therapy"
+      ],
+      "embeddedChecksUnchanged": 6,
+      "cumulativeIDsUnchanged": 5,
+      "architecturePreserved": true
+    },
+    "browser": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 1440,
+          "renderedBodies": 57,
+          "figuresPresent": 6,
+          "embeddedChecks": 6,
+          "repairedQuestionsCorrectAndWrong": 2,
+          "moduleFillerQuestions": 8,
+          "currentPNCumulativeCorrectAndWrong": 5,
+          "remediationLinkPassed": true,
+          "localProgressPassed": true
+        },
+        {
+          "width": 390,
+          "renderedBodies": 57,
+          "figuresPresent": 6,
+          "embeddedChecks": 6,
+          "repairedQuestionsCorrectAndWrong": 2,
+          "moduleFillerQuestions": 8,
+          "currentPNCumulativeCorrectAndWrong": 5,
+          "remediationLinkPassed": true,
+          "localProgressPassed": true
+        }
+      ],
+      "pageErrors": []
+    },
+    "manualVisualReview": {
+      "scope": "Revised central-access body and both repaired questions graded correct/incorrect at1440/390 inspected. Full central-access body fits the mobile teaching capture. Additional framed mobile captures show complete question headings, all choices and rationale below sticky navigation.",
+      "status": "passed",
+      "imageHashes": {
+        "framed-parenteral-nutrition-013-wrong-390.png": "d260b4d717e7c48037683a272234c0d15a5c26d6c60da685102f856f9ec3ef2e",
+        "parenteral-nutrition-012-wrong-1440.png": "b74e6591a91adb9ff9f9030f62dd9f446007c1dc582b9bc00b7c5b94521139b3",
+        "parenteral-nutrition-013-correct-1440.png": "2e2ffb4f9ae80536c090aee000035239448fbe5b82cd0edf3f3891dbc4700b95",
+        "framed-parenteral-nutrition-013-correct-390.png": "07ace7da0aabca567cbdfef572f4bc9af0a4867b32ee4d72b2f8c48cd2f5f837",
+        "parenteral-nutrition-012-correct-390.png": "50304891870abc5f93e9e879f6ab226c8bb53ab8473b7e077fe6390d685b3df1",
+        "parenteral-nutrition-013-wrong-1440.png": "451007a2d286a2c15ce3cfff721b68cc366fe13b2093be1c8d8db8cb718e41c1",
+        "teaching-390.png": "252bb35f7fd6ba80b3ee07cf27581a54826a8e6fad3fc1223e1157f0dc6b0861",
+        "framed-parenteral-nutrition-012-correct-390.png": "d35513725dad6c27cbe0f4f6ff30e6dd9f1b19cc845ad26b1f900b8ab4b59ea8",
+        "parenteral-nutrition-013-correct-390.png": "4bd51f3d25f192252ac3cbdc04617d7e02d5b1bcb5c20f36d64cdbeebdecc2cd",
+        "framed-teaching-390.png": "b260948bbdd4f3217c3834cfbeb6213d1fafb9cb5266afd254ed71597d91d2c7",
+        "parenteral-nutrition-012-correct-1440.png": "929643637886fbe1a512528c19f88f4f45fb0b24bb8154854ebbc1770f2db8ea",
+        "parenteral-nutrition-013-wrong-390.png": "91d86cfdad212c7bdfe04b8d47e26d7abc8e339b9a3aafd0886bf45fbcd0571c",
+        "teaching-1440.png": "941ba4d21f2439d1e7fb66c3e5d8270c27bea12f4af8c35160d0eca718d6a685",
+        "parenteral-nutrition-012-wrong-390.png": "3bcde5c50310b2a26c9feaf54e6893e37b7ce329b091f2989d98252074ec9ceb",
+        "framed-parenteral-nutrition-012-wrong-390.png": "2cf9b413c142dccee5da2cde58a4c400386ae12114d7eae9da022e36add474d8"
+      },
+      "findings": "Legible wrapping and feedback, no cropped choice or rationale text, no horizontal overflow. Original mobile013 captures crossed sticky navigation; additional framed captures resolve the screenshot framing. No site CSS/layout change."
+    },
+    "harnessSHA256": {
+      "technical.mjs": "b08030a1e5b130af977990b42a7b355d802c9ef96da7829ec9d24c8d893887b4",
+      "browser.cjs": "303ae5e8f5d7a4be343c68d434bdafa8a9fdf30f806bd1c950f230289f39eb1a",
+      "framed-browser.cjs": "84b8f94b24b8b6153fc64f8cd1f5e8c7360234db883147315608e6dfa1bec502"
+    },
+    "harnessSetupCorrection": "Alias loader uses candidate working directory; initial wrong-cwd invocation failed resolution, corrected invocation passed. No source-code fix required.",
+    "mobileFramingRun": {
+      "status": "passed",
+      "results": [
+        {
+          "width": 390,
+          "renderedBodies": 57,
+          "figuresPresent": 6,
+          "embeddedChecks": 6,
+          "repairedQuestionsCorrectAndWrong": 2,
+          "moduleFillerQuestions": 8,
+          "currentPNCumulativeCorrectAndWrong": 5,
+          "remediationLinkPassed": true,
+          "localProgressPassed": true
+        }
+      ],
+      "pageErrors": []
+    }
+  },
+  "calculations": {
+    "newDistinctChecks": 0,
+    "runningDistinctChecks": 635,
+    "runningSeparateSourceExamples": 98
+  },
+  "contentHashes": {
+    "src/data/modules/parenteralNutrition.js": "9cece9def900ca7f6822cbe5b66e39b9614d5f3b6cc94963eaffa49f23cf5828",
+    "src/data/questionBanks/parenteralNutrition.js": "b726547e1f00e12b43764415b8abd4ea1e49779888ac4e11232e7a40e751286f"
+  },
+  "release": {
+    "branch": "audit/rxprep-content-2026-09-24",
+    "commit": "pending",
+    "push": "pending",
+    "production": "not verified"
+  },
+  "nextAction": "Finish remaining nine PN questions, seven original bodies, two partial figures and legacy monitoring; then complete full-module reconciliation. Chapter11 and checklist entry15 remain reviewing;14 checklist entries complete.",
+  "limits": [
+    "This is access evidence, not complete adult PN verification.",
+    "No new chapter closure, figure verification or arithmetic count.",
+    "142 stable existing IDs/prompts/keys/anchors and six embedded checks preserved.",
+    "Unrelated work and private source assets remain outside this release.",
+    "Audit branch release does not establish production publication."
+  ]
+}
